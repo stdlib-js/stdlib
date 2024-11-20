@@ -1,0 +1,86 @@
+From spamassassin-commits-admin@lists.sourceforge.net  Wed Aug 21 17:28:32 2002
+Return-Path: <spamassassin-commits-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A0AAB43C32
+	for <jm@localhost>; Wed, 21 Aug 2002 12:28:32 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 21 Aug 2002 17:28:32 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7LGRwZ01354 for <jm@jmason.org>; Wed, 21 Aug 2002 17:27:58 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17hYKx-0005xV-00; Wed,
+    21 Aug 2002 09:28:03 -0700
+Received: from usw-sf-sshgate.sourceforge.net ([216.136.171.253]
+    helo=usw-sf-netmisc.sourceforge.net) by usw-sf-list1.sourceforge.net with
+    esmtp (Cipher TLSv1:DES-CBC3-SHA:168) (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17hYK5-00036z-00 for <spamassassin-commits@lists.sourceforge.net>;
+    Wed, 21 Aug 2002 09:27:09 -0700
+Received: from usw-pr-cvs1-b.sourceforge.net ([10.5.1.7]
+    helo=usw-pr-cvs1.sourceforge.net) by usw-sf-netmisc.sourceforge.net with
+    esmtp (Exim 3.22 #1 (Debian)) id 17hYK5-0005KD-00 for
+    <spamassassin-commits@lists.sourceforge.net>; Wed, 21 Aug 2002 09:27:09
+    -0700
+Received: from msquadrat by usw-pr-cvs1.sourceforge.net with local (Exim
+    3.22 #1 (Debian)) id 17hYK5-0003XO-00 for
+    <spamassassin-commits@lists.sourceforge.net>; Wed, 21 Aug 2002 09:27:09
+    -0700
+To: spamassassin-commits@example.sourceforge.net
+Message-Id: <E17hYK5-0003XO-00@usw-pr-cvs1.sourceforge.net>
+From: "Malte S. Stretz" <msquadrat@users.sourceforge.net>
+Subject: [SACVS] CVS: spamassassin/lib/Mail/SpamAssassin Conf.pm,1.92,1.93
+Sender: spamassassin-commits-admin@example.sourceforge.net
+Errors-To: spamassassin-commits-admin@example.sourceforge.net
+X-Beenthere: spamassassin-commits@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-commits-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-commits@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-commits>,
+    <mailto:spamassassin-commits-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <spamassassin-commits.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-commits>,
+    <mailto:spamassassin-commits-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-commits>
+X-Original-Date: Wed, 21 Aug 2002 09:27:09 -0700
+Date: Wed, 21 Aug 2002 09:27:09 -0700
+
+Update of /cvsroot/spamassassin/spamassassin/lib/Mail/SpamAssassin
+In directory usw-pr-cvs1:/tmp/cvs-serv13563/lib/Mail/SpamAssassin
+
+Modified Files:
+	Conf.pm 
+Log Message:
+restricted version_tag
+
+Index: Conf.pm
+===================================================================
+RCS file: /cvsroot/spamassassin/spamassassin/lib/Mail/SpamAssassin/Conf.pm,v
+retrieving revision 1.92
+retrieving revision 1.93
+diff -b -w -u -d -r1.92 -r1.93
+--- Conf.pm	21 Aug 2002 16:01:08 -0000	1.92
++++ Conf.pm	21 Aug 2002 16:27:06 -0000	1.93
+@@ -263,6 +263,7 @@
+ 
+     if(/^version[-_]tag\s+(.*)$/) {
+       my $tag = lc($1);
++      $tag =~ tr/a-z0-9./_/c;
+       foreach (@Mail::SpamAssassin::EXTRA_VERSION) {
+         if($_ eq $tag) {
+           $tag = undef;
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-commits mailing list
+Spamassassin-commits@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-commits
+

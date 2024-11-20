@@ -1,0 +1,60 @@
+From fork-admin@xent.com  Mon Aug 26 16:57:05 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9B45F44156
+	for <jm@localhost>; Mon, 26 Aug 2002 11:57:02 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 16:57:02 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7QFqfZ31604 for <jm@jmason.org>;
+    Mon, 26 Aug 2002 16:52:42 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id E2431294171; Mon, 26 Aug 2002 08:50:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mlug.missouri.edu (mlug.missouri.edu [128.206.61.230]) by
+    xent.com (Postfix) with ESMTP id 7371B29416F for <fork@xent.com>;
+    Mon, 26 Aug 2002 08:49:33 -0700 (PDT)
+Received: from mlug.missouri.edu (mogmios@localhost [127.0.0.1]) by
+    mlug.missouri.edu (8.12.3/8.12.3/Debian -4) with ESMTP id g7QFpTKL021128
+    (version=TLSv1/SSLv3 cipher=EDH-RSA-DES-CBC3-SHA bits=168 verify=FAIL);
+    Mon, 26 Aug 2002 10:51:30 -0500
+Received: from localhost (mogmios@localhost) by mlug.missouri.edu
+    (8.12.3/8.12.3/Debian -4) with ESMTP id g7QFpTIt021124; Mon,
+    26 Aug 2002 10:51:29 -0500
+From: Michael <mogmios@mlug.missouri.edu>
+To: Lucas Gonze <lgonze@panix.com>
+Cc: FoRK <fork@spamassassin.taint.org>
+Subject: Re: The GOv gets tough on Net Users.....er Pirates..
+In-Reply-To: <Pine.LNX.4.44.0208241002330.17440-100000@localhost.localdomain>
+Message-Id: <Pine.LNX.4.44.0208261049170.19073-100000@mlug.missouri.edu>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 26 Aug 2002 10:51:29 -0500 (CDT)
+
+Hire a really talented skywriter to doodle nudie pics in the sky and see
+if they figure out what to charge you with. Exactly how far into the sky
+does the border of your local district reach?
+
+> > If the creator didnt say you could have it without paying, it's theft,
+> > so simple, hell that's even in all the major holy books.
+>
+> Wow, I've got a great idea!  I'll hire a skywriter to write "you can't
+> look at this without paying," then lock up everybody who looked at it
+> and didn't pay!  It can't fail -- Jesus is on my side!
+
+http://xent.com/mailman/listinfo/fork
+

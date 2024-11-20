@@ -1,0 +1,28 @@
+
+{{alias}}( value )
+    Tests if a value is the current year.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    out: boolean
+        Boolean indicating whether a value is the current year.
+
+    Examples
+    --------
+    > var bool = {{alias}}( new Date() )
+    true
+    > bool = {{alias}}( {{alias:@stdlib/time/current-year}}() )
+    true
+    > bool = {{alias}}( 2021 )
+    false
+    > bool = {{alias}}( null )
+    false
+
+    See Also
+    --------
+

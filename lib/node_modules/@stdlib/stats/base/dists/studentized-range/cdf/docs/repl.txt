@@ -1,0 +1,68 @@
+
+{{alias}}( x, r, v[, nranges] )
+    Evaluates the cumulative distribution function (CDF) of a studentized range
+    distribution.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `r < 2` or `v < 2`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    r: number
+        Sample size for range (same for each group).
+
+    v: number
+        Degrees of freedom.
+
+    nranges: integer
+        Number of groups whose maximum range is considered. Default: 1.
+
+    Returns
+    -------
+    out: number
+        Evaluated CDF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.5, 3.0, 2.0 )
+    ~0.0644
+
+    > y = {{alias}}( 12.1, 17.0, 2.0 )
+    ~0.913
+
+
+{{alias}}.factory( r, v[, nranges] )
+    Returns a function for evaluating the cumulative distribution function (CDF)
+    of a studentized range distribution.
+
+    Parameters
+    ----------
+    r: number
+        Number of samples.
+
+    v: number
+        Degrees of freedom.
+
+    nranges: integer
+        Number of groups whose maximum range is considered. Default: 1.
+
+    Returns
+    -------
+    cdf: Function
+        Cumulative distribution function (CDF).
+
+    Examples
+    --------
+    > var mycdf = {{alias}}.factory( 3.0, 2.0 );
+    > var y = mycdf( 3.0 )
+    ~0.712
+    > y = mycdf( 1.0 )
+    ~0.216
+
+    See Also
+    --------
+

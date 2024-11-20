@@ -1,0 +1,24 @@
+
+assignin( workspace, variable, value )
+    Assigns a value to a variable in a specified workspace.
+
+    Parameters
+    ----------
+    workspace: string
+        Workspace name.
+
+    variable: string|symbol
+        Variable name.
+
+    value: any
+        Value to assign.
+
+    Examples
+    --------
+    > assignin( 'base', 'x', 3.14 );
+    > x
+
+    See Also
+    --------
+    assignfrom, varsWorkspace, workspace, workspaces
+

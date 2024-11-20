@@ -1,0 +1,213 @@
+From fork-admin@xent.com  Mon Sep  9 19:27:49 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 1863516EFC
+	for <jm@localhost>; Mon,  9 Sep 2002 19:27:48 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 19:27:48 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g89FrJC21961 for <jm@jmason.org>;
+    Mon, 9 Sep 2002 16:53:26 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 01F7D2940AD; Mon,  9 Sep 2002 08:50:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from blount.mail.mindspring.net (blount.mail.mindspring.net
+    [207.69.200.226]) by xent.com (Postfix) with ESMTP id 9F98C2940AD for
+    <fork@xent.com>; Mon,  9 Sep 2002 08:49:09 -0700 (PDT)
+Received: from user-119ac86.biz.mindspring.com ([66.149.49.6]) by
+    blount.mail.mindspring.net with esmtp (Exim 3.33 #1) id 17oQpI-0007U4-00;
+    Mon, 09 Sep 2002 11:51:49 -0400
+MIME-Version: 1.0
+X-Sender: rahettinga@pop.earthlink.net
+Message-Id: <p05111a0cb9a24e159476@[66.149.49.6]>
+To: Digital Bearer Settlement List <dbs@philodox.com>, fork@spamassassin.taint.org
+From: "R. A. Hettinga" <rah@shipwright.com>
+Subject: [CYBERIA] [Final CfP]: Int. J. on IT Standards Research
+Content-Type: text/plain; charset="us-ascii"
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 9 Sep 2002 09:09:47 -0400
+
+
+--- begin forwarded text
+
+
+Priority: normal
+Date:         Mon, 9 Sep 2002 08:56:49 +0000
+Reply-To:     Law & Policy of Computer Communications
+<CYBERIA-L@LISTSERV.AOL.COM>
+Sender:       Law & Policy of Computer Communications
+<CYBERIA-L@LISTSERV.AOL.COM>
+Comments:     Authenticated sender is jakobs@i4mail.informatik.rwth-aachen.de
+From:         Kai Jakobs <Kai.Jakobs@I4.INFORMATIK.RWTH-AACHEN.DE>
+Subject: [CYBERIA] [Final CfP]: Int. J. on IT Standards Research
+To:           CYBERIA-L@LISTSERV.AOL.COM
+
+Hello,
+
+Just a brief reminder that the deadline for submisisons for issue 2
+of the
+
+'International Journal of IT Standards & Standardization Research' (JITSR)
+
+is October 1.
+
+JITSR is a  new, multi-disciplinary publication outlet for everyone who
+is doing research into IT standards and standardisation (from whichever
+perspective).
+
+So if you think you've got a paper that might fit - why not submit
+it for JITSR?
+
+And please do ask if you need any further information.
+
+
+Greetings from Aachen.
+
+Cheers,
+Kai.
+
+
+-----------------------------
+
+
+Call for Papers
+
+for Issue 2 of the
+
+International Journal of
+IT Standards & Standardization Research
+
+
+This new journal aims to be a platform for presenting, and
+discussing, the broad variety of aspects that make up IT standards
+research. This includes, but is certainly not limited to,
+contributions from the disciplines of computer science, information
+systems, management, business, social sciences (especially science
+and technology studies), economics, engineering, political science,
+public policy, sociology, communication, and human factors/
+usability. In particular, the journal wants to both support and
+promote multi-disciplinary research on IT standards; 'IT'
+should be understood in a very broad sense.
+
+Topics to be covered include, but are not limited to:
+
+ - Technological innovation and standardisation
+ - Standards for information infrastructures
+ - Standardisation and economic development
+ - Open Source and standardisation
+ - Intellectual property rights
+ - Economics of standardisation
+ - Emerging roles of formal standards organisations and consortia
+ - Conformity assessment
+ - National, regional, international and corporate standards
+   strategies
+ - Standardisation and regulation
+ - Standardisation as a form of the Public Sphere
+ - Standardisation and public policy formation
+ - Analyses of standards setting processes, products, and
+   organisation
+ - Case studies of standardisation
+ - Impacts of market-driven standardisation and emerging players
+ - The future of standardisation
+ - Multinational and transnational perspectives and impacts
+ - Commercial value of proprietary specifications
+ - Descriptive & prescriptive theories of standardisation
+ - Standards research and education activities
+ - Tools and services supporting improved standardisation
+ - User related issues
+ - Risks of standardisation
+ - Management of standards
+ - History of Standards
+ - Standards and technology transfer
+
+Authors are requested to submit their manuscripts as an e-mail
+attachment in RTF or PDF to the editor-in-chief at
+Kai.Jakobs@i4.informatik.rwth-aachen.de.
+
+If this form of submission is not possible, please send one hardcopy
+of the manuscript together with a disk containing the electronic
+version of the manuscript in RTF or PDF to:
+Kai Jakobs,
+Technical University of Aachen, Computer Science Department,
+Informatik IV
+Ahornstr. 55, D-52074 Aachen, Germany.
+
+Manuscripts must be written in English on letter-size or A4 paper,
+one side only, double-spaced throughout, and include at least 1"
+(2.54 cm) of margin on all sides. The cover page should contain the
+paper title, and the name, affiliation, address, phone number, fax
+number, and e-mail address of each author. The second page should
+start with the paper title at the top and be immediately followed by
+the abstract. Except on the cover page, the authors' names and
+affiliations must NOT appear in the manuscript. The abstract of 100-
+150 words should clearly summarise the objectives and content of the
+manuscript. Submitted manuscript should normally be 4000-6000 words
+long; longer ones will be considered but may be subject to editorial
+revision.
+
+Submission of a paper implies that its content is original and that
+it has not been published previously, and that it is not under
+consideration for publication elsewhere. Yet, significantly extended
+papers previously presented at conferences may be acceptable.
+
+For more information please see
+http://www-i4.informatik.rwth-aachen.de/~jakobs/standards_journal/journal_home.html
+
+or visit the publisher's web site at
+http://www.idea-group.com/journals/details.asp?id=497
+
+
+Important Dates for the Inaugural Issue:
+
+Submission Deadline for Issue 2:   October 1, 2002
+Notification of Acceptance:        December 1, 2002
+Camera-ready Paper Due:            January 15, 2003
+
+
+________________________________________________________________
+
+
+Kai Jakobs
+
+Technical University of Aachen
+Computer Science Department
+Informatik IV (Communication and Distributed Systems)
+Ahornstr. 55, D-52074 Aachen, Germany
+Tel.: +49-241-80-21405
+Fax:  +49-241-80-22220
+Kai.Jakobs@i4.informatik.rwth-aachen.de
+http://www-i4.informatik.rwth-aachen.de/~jakobs/kai/kai_home.html
+
+
+**********************************************************************
+For Listserv Instructions, see http://www.lawlists.net/cyberia
+Off-Topic threads: http://www.lawlists.net/mailman/listinfo/cyberia-ot
+Need more help? Send mail to: Cyberia-L-Request@listserv.aol.com
+**********************************************************************
+
+--- end forwarded text
+
+
+-- 
+-----------------
+R. A. Hettinga <mailto: rah@ibuc.com>
+The Internet Bearer Underwriting Corporation <http://www.ibuc.com/>
+44 Farquhar Street, Boston, MA 02131 USA
+"... however it may deserve respect for its usefulness and antiquity,
+[predicting the end of the world] has not been found agreeable to
+experience." -- Edward Gibbon, 'Decline and Fall of the Roman Empire'
+
+

@@ -1,0 +1,59 @@
+From ilug-admin@linux.ie  Mon Aug 12 11:06:49 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4E2E04415A
+	for <jm@localhost>; Mon, 12 Aug 2002 05:56:02 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:56:02 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7BALWb30227 for
+    <jm-ilug@jmason.org>; Sun, 11 Aug 2002 11:21:32 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA18407; Sun, 11 Aug 2002 11:18:31 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail02.svc.cra.dublin.eircom.net
+    (mail02.svc.cra.dublin.eircom.net [159.134.118.18]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id LAA18371 for <ilug@linux.ie>; Sun,
+    11 Aug 2002 11:18:19 +0100
+Message-Id: <200208111018.LAA18371@lugh.tuatha.org>
+Received: (qmail 11532 messnum 33762 invoked from
+    network[159.134.237.75/jimbo.eircom.net]); 11 Aug 2002 10:17:47 -0000
+Received: from jimbo.eircom.net (HELO webmail.eircom.net) (159.134.237.75)
+    by mail02.svc.cra.dublin.eircom.net (qp 11532) with SMTP; 11 Aug 2002
+    10:17:47 -0000
+From: "wintermute" <cout@eircom.net>
+To: ilug@linux.ie
+Subject: Re: [ILUG] Alan Cox doesn't like 2.5 so far!
+Date: Sun, 11 Aug 2002 11:17:47 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 8bit
+X-Originating-Ip: 213.202.165.44
+X-Mailer: Eircom Net CRC Webmail (http://www.eircom.net/)
+Organization: Eircom Net (http://www.eircom.net/)
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+> The impression I get from reading lkml the odd time is
+> that IDE has gone downhill since Andre Hedrick was 
+> effectively removed as maintainer. Martin Dalecki seems
+> to have been unable to further development without 
+> much breakage. 
+
+Hmm... begs the question, why remove Handrick?
+If it ain't broke, don't fix it.
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

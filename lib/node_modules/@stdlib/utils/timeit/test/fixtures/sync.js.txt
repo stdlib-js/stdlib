@@ -1,0 +1,20 @@
+"use strict";
+
+var __ctx$0__ = this;
+var __t$0__, __d$0__, __i$0__;
+
+var beep = 'boop';;
+
+__t$0__ = __ctx$0__.tic();
+
+for ( __i$0__ = 0; __i$0__ < 1000; __i$0__++ ) {
+	console.log( beep );;
+}
+
+__d$0__ = __ctx$0__.toc( __t$0__ );
+
+console.log( beep+'!' );;
+
+__ctx$0__.done( null, __d$0__ );
+
+return 0;

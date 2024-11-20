@@ -1,0 +1,71 @@
+From rpm-list-admin@freshrpms.net  Wed Jul 31 10:07:46 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 39DC44406D
+	for <jm@localhost>; Wed, 31 Jul 2002 05:07:46 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 31 Jul 2002 10:07:46 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6V90Q212158 for
+    <jm-rpm@jmason.org>; Wed, 31 Jul 2002 10:00:27 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6V8s2822287; Wed, 31 Jul 2002 10:54:02
+    +0200
+Received: from mail.addix.net (kahless.addix.net [195.179.139.19]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g6V8rD821915 for
+    <rpm-list@freshrpms.net>; Wed, 31 Jul 2002 10:53:13 +0200
+Received: from wolf359 (cic.ision-kiel.de [195.179.139.139]) by
+    mail.addix.net (8.9.3/8.9.3) with SMTP id KAA10687 for
+    <rpm-list@freshrpms.net>; Wed, 31 Jul 2002 10:52:35 +0200
+From: Ralf Ertzinger <ralf@camperquake.de>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: OpenGL
+Message-Id: <20020731105351.1d4fb004.ralf@camperquake.de>
+In-Reply-To: <200207310534.37053.johnhinsley@blueyonder.co.uk>
+References: <200207310534.37053.johnhinsley@blueyonder.co.uk>
+Organization: [NDC] ;-)
+X-Mailer: Sylpheed version 0.8.1 (GTK+ 1.2.10; i386-redhat-linux)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Wed, 31 Jul 2002 10:53:51 +0200
+Date: Wed, 31 Jul 2002 10:53:51 +0200
+
+Hi.
+
+John Hinsley <johnhinsley@blueyonder.co.uk> wrote:
+
+> Querying the rpm database for OpenGL gets me nowhere fast. Can anyone
+> point me in the right direction? What, in RedHat, provides OpenGL?
+
+The X server itself does (or does not, depending on your driver). There
+is a software fallback called Mesa compiled in the X server, which
+is used as a fallback. So, if you have installed X, you have OpenGL.
+Try the glxinfo command to see the capabilities provided by your
+X system.
+
+-- 
+R!
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

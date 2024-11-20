@@ -1,0 +1,37 @@
+
+{{alias}}( fcn, clbk[, thisArg] )
+    Returns a function that applies arguments to a provided function after
+    transforming arguments according to a callback function.
+
+    The callback function is provided the following arguments:
+
+    - value: argument value.
+    - index: argument index.
+
+    Parameters
+    ----------
+    fcn: Function
+        Input function.
+
+    clbk: Function
+        Callback function.
+
+    thisArg: any (optional)
+        Input function context.
+
+    Returns
+    -------
+    out: Function
+        Function wrapper.
+
+    Examples
+    --------
+    > function foo( a, b, c ) { return [ a, b, c ]; };
+    > function clbk( v ) { return v * 2; };
+    > var bar = {{alias}}( foo, clbk );
+    > var out = bar( 1, 2, 3 )
+    [ 2, 4, 6 ]
+
+    See Also
+    --------
+

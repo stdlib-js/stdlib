@@ -1,0 +1,32 @@
+
+{{alias}}()
+    Returns an accumulator function which incrementally computes the mean
+    absolute percentage error (MAPE).
+
+    If provided input values, the accumulator function returns an updated mean
+    absolute percentage error. If not provided input values, the accumulator
+    function returns the current mean absolute percentage error.
+
+    If provided `NaN` or a value which, when used in computations, results in
+    `NaN`, the accumulated value is `NaN` for all future invocations.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}();
+    > var m = accumulator()
+    null
+    > m = accumulator( 2.0, 3.0 )
+    ~33.33
+    > m = accumulator( 5.0, 2.0 )
+    ~91.67
+    > m = accumulator()
+    ~91.67
+
+    See Also
+    --------
+

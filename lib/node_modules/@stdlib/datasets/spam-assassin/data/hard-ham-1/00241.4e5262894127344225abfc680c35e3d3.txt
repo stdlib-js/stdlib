@@ -1,0 +1,268 @@
+From razor-users-admin@lists.sourceforge.net  Wed Nov 13 22:19:36 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 1982116F17
+	for <jm@localhost>; Wed, 13 Nov 2002 22:19:32 +0000 (GMT)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 13 Nov 2002 22:19:32 +0000 (GMT)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    gADKZ7W01401 for <jm-razor@jmason.org>; Wed, 13 Nov 2002 20:35:07 GMT
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 18C4BN-0000PE-00; Wed,
+    13 Nov 2002 12:32:17 -0800
+Received: from four.fidnet.com ([216.229.64.74] helo=mail.fidnet.com) by
+    usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    18C4Ag-00032l-00 for <razor-users@lists.sourceforge.net>; Wed,
+    13 Nov 2002 12:31:34 -0800
+Received: (qmail 14643 invoked from network); 13 Nov 2002 20:31:30 -0000
+Received: from 64-251-145-11-cablemodem-roll.fidnet.com (HELO gabriels)
+    (64.251.145.11) by four.fidnet.com with SMTP; 13 Nov 2002 20:31:30 -0000
+From: Jon Gabrielson <jon@directfreight.com>
+To: Matt Kettler <mkettler@evi-inc.com>
+Subject: Re: [Razor-users] razor-revoke, trust levels, slashdot is not  spam.
+User-Agent: KMail/1.4.3
+References: <5.1.1.6.0.20021113130812.01e9ee30@192.168.50.2>
+In-Reply-To: <5.1.1.6.0.20021113130812.01e9ee30@192.168.50.2>
+Cc: razor-users@example.sourceforge.net
+MIME-Version: 1.0
+Content-Type: Multipart/Mixed;
+    boundary="------------Boundary-00=_AN7JYJQ1YNHGZ79H1WRP"
+Message-Id: <200211131430.46546.jon@directfreight.com>
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=razor-users>
+X-Original-Date: Wed, 13 Nov 2002 14:30:46 -0600
+Date: Wed, 13 Nov 2002 14:30:46 -0600
+
+
+--------------Boundary-00=_AN7JYJQ1YNHGZ79H1WRP
+Content-Type: text/plain;
+  charset="iso-8859-1"
+Content-Transfer-Encoding: 8bit
+
+Attached is the slashdot digest.
+It seems to be plain text.
+
+Jon.
+
+On Wednesday 13 November 2002 12:20, you wrote:
+> 1) You cannot look up your trust level at present. They are working on this
+> however.
+>
+> 2) I don't think it would be wise for razor to even tell you which users
+> reported a piece as spam, much less what their confidence is. That sounds
+> WAY too easy to abuse by spammers to me. (ie: I'm a spammer, let me work on
+> driving down the confidence values of those who report me by submitting
+> nonspam to their trolls and revoke it)
+>
+> 3) you should be able to see what the cf score for a given email is with
+> razor's debug output. I know running SA in debug mode causes razor to spew
+> a ton of debug output, including the scores for each part of the message
+> and what cf values they had.
+>
+> and as a side question, is the slashdot digest a multi-part mime message?
+> By default razor calls it spam if any mime part matches. This is currently
+> causing problems because a lot of spam and nonspam out there tends to
+> contain an empty mime block. I've personally made some changes to my
+> razor-agent.conf to try to prevent some false alarms, at the expense of
+> missing some spam:
+>
+> #flag only if all parts listed
+> logic_method           = 5
+> #require a bit more than "average" confidence.
+> min_cf                 = ac + 10
+>
+> This seems to have quelled some false alarm problems I was having, but also
+> makes the razor hit-rate somewhat lower.
+>
+> At 09:52 AM 11/13/2002 -0600, you wrote:
+> >I just installed razor2, and one of the first message i
+> >receive as "spam" is the daily slashdot digest.
+> >I revoked this message, but it still shows up as spam.
+> >Is there a way to see what my trust level is, what the
+> >confidence level of a given piece of spam is, and what
+> >the trust levels are of anyone who reported the given
+> >"spam''.
+> >
+> >Thanks.
+> >
+> >Jon.
+
+--------------Boundary-00=_AN7JYJQ1YNHGZ79H1WRP
+Content-Type: text/plain;
+  charset="iso-8859-1";
+  name="notspam.txt"
+Content-Transfer-Encoding: 8bit
+Content-Disposition: attachment; filename="notspam.txt"
+
+>>From slashdot@slashdot.org Wed Nov 13 01:37:23 2002
+Return-Path: <slashdot@slashdot.org>
+Delivered-To: jon+.umr@directfreight.com
+Received: from smtp.umr.edu (mrelay1.cc.umr.edu [131.151.1.120])
+	by www.directfreight.com (Postfix) with ESMTP id A84BA2E06C
+	for <jon.umr@directfreight.com>; Wed, 13 Nov 2002 01:36:36 -0600 (CST)
+Received: from sc8-osdn-mail-1.osdn.com (sc8-osdn-mail.osdn.com [66.35.250.105]) via ESMTP by mrelay1.cc.umr.edu (8.12.1/) id gAD7aaLZ016074; Wed, 13 Nov 2002 01:36:36 -0600
+Received: from sc8-slashdot-nfs.slashdot.org ([10.2.150.1] helo=slashdot.org)
+	by localhost with smtp (Exim 3.35 #1 (Debian))
+	id 18Bs5U-0004VQ-04
+	for <gabriels@umr.edu>; Tue, 12 Nov 2002 23:37:24 -0800
+Date: Wed, 13 Nov 2002 07:37:23 +0000
+From: slashdot@slashdot.org
+Subject: [Slashdot] Headlines for 2002-11-13
+To: gabriels@umr.edu
+Precedence: list
+X-Bulkmail: 2.051
+Message-Id: <E18Bs5U-0004VQ-04@localhost>
+X-Status: N
+
+Slashdot Daily Headline Mailer
+
+======================================================================
+SECURE YOUR APACHE SERVERS WITH 128-BIT SSL ENCRYPTION
+Guarantee transmitted data integrity, secure all communication sessions and more 
+with SSL encryption from Thawte— a leading global certificate provider for the 
+Open Source community. Learn more in our FREE GUIDE--click here to get it now:
+http://www.gothawte.com/rd515.html
+======================================================================
+
+Classic Computer Magazine Archive
+    from the days-gone-by dept.
+    posted by chrisd on Monday November 11, @20:18 (tech)
+    http://slashdot.org/article.pl?sid=02/11/11/2227249
+
+Secure Wireless Through Infrared Antennas
+    from the wires-in-the-sky dept.
+    posted by CowboyNeal on Monday November 11, @21:29 (tech)
+    http://slashdot.org/article.pl?sid=02/11/12/0031227
+
+Newton's "Principia" stolen
+    from the dirty-filthy-tasteful-thiefs dept.
+    posted by chrisd on Monday November 11, @22:28 (science)
+    http://slashdot.org/article.pl?sid=02/11/12/0013242
+
+US Busts Military Network Hacker
+    from the crime-and-punishment dept.
+    posted by CowboyNeal on Monday November 11, @23:56 (security)
+    http://slashdot.org/article.pl?sid=02/11/12/0159203
+
+10-TFlop Computer Built from Standard PC Parts
+    from the economic-supercomputing dept.
+    posted by CowboyNeal on Tuesday November 12, @02:47 (hardware)
+    http://slashdot.org/article.pl?sid=02/11/12/0252217
+
+PKWare Zips to Growth
+    from the old-school-compression-algorithms dept.
+    posted by CowboyNeal on Tuesday November 12, @04:51 (news)
+    http://slashdot.org/article.pl?sid=02/11/12/0319202
+
+Boosting Battery Life For RISC Processors
+    from the staying-unplugged-longer dept.
+    posted by CowboyNeal on Tuesday November 12, @07:39 (announce)
+    http://slashdot.org/article.pl?sid=02/11/12/0513217
+
+Stanford Researchers Trying to Protect P2P Networks
+    from the trusted-file-sharing dept.
+    posted by CowboyNeal on Tuesday November 12, @08:36 (internet)
+    http://yro.slashdot.org/article.pl?sid=02/11/12/0438222
+
+Mplayer Adds Sorenson v3 To the Linux Roster
+    from the celebrate-good-times-come-on dept.
+    posted by CmdrTaco on Tuesday November 12, @09:28 (linux)
+    http://slashdot.org/article.pl?sid=02/11/12/1338238
+
+Zaurus 5600 Announced
+    from the coming-at-you dept.
+    posted by Hemos on Tuesday November 12, @10:04 (pilot)
+    http://slashdot.org/article.pl?sid=02/11/12/1434226
+
+Teach Yourself UNIX System Administration In 24 Hours
+    from the next-week-how-to-end-world-hunger dept.
+    posted by timothy on Tuesday November 12, @10:40 (unix)
+    http://books.slashdot.org/article.pl?sid=02/11/06/202252
+
+Harry Potter & The Chamber of Secrets Leaked
+    from the gotta-hate-when-that-happens dept.
+    posted by CmdrTaco on Tuesday November 12, @11:39 (movies)
+    http://slashdot.org/article.pl?sid=02/11/12/1549256
+
+Oracle's GPL Linux Firewire Clustering
+    from the not-a-bad-idea dept.
+    posted by CmdrTaco on Tuesday November 12, @12:20 (tech)
+    http://developers.slashdot.org/article.pl?sid=02/11/12/161219
+
+Have Fujitsu Harddrives Been Failing in Record Numbers?
+    from the check-your-hardware dept.
+    posted by Cliff on Tuesday November 12, @13:06 (tech)
+    http://ask.slashdot.org/article.pl?sid=02/11/12/116241
+
+Bind 4 and 8 Vulnerabilities
+    from the who-uses-BIND4-anymore dept.
+    posted by michael on Tuesday November 12, @14:10 (security)
+    http://developers.slashdot.org/article.pl?sid=02/11/12/1823213
+
+Supreme Court to Hear CIPA Case
+    from the justice-is-nearsighted dept.
+    posted by michael on Tuesday November 12, @15:22 (doj)
+    http://yro.slashdot.org/article.pl?sid=02/11/12/1810209
+
+Jedi Archives In Dublin Library?
+    from the acknowledge-the-creators dept.
+    posted by Hemos on Tuesday November 12, @16:27 (starwars)
+    http://slashdot.org/article.pl?sid=02/11/12/1548249
+
+Antibiotic Resistant Staph Infections
+    from the supergerm-kills-25-million dept.
+    posted by michael on Tuesday November 12, @17:31 (science)
+    http://science.slashdot.org/article.pl?sid=02/11/12/1931243
+
+NSA Approves First 802.11b Product for Secret Data
+    from the modprobe-orinoco dept.
+    posted by michael on Tuesday November 12, @18:34 (security)
+    http://slashdot.org/article.pl?sid=02/11/12/1934247
+
+
+
+
+Copyright 1997-2002 OSDN.  All rights reserved.
+
+======================================================================
+
+You have received this message because you subscribed to it
+on Slashdot.  To stop receiving this and other
+messages from Slashdot, or to add more messages
+or change your preferences, please go to your user page.
+
+	http://slashdot.org/my/messages/
+
+You can log in and change your preferences from there.
+
+
+--------------Boundary-00=_AN7JYJQ1YNHGZ79H1WRP--
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Are you worried about 
+your web server security? Click here for a FREE Thawte 
+Apache SSL Guide and answer your Apache SSL security 
+needs: http://www.gothawte.com/rd523.html
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

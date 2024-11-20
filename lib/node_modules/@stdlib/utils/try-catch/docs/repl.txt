@@ -1,0 +1,32 @@
+
+{{alias}}( x, y )
+    If a function does not throw, returns the function return value; otherwise,
+    returns `y`.
+
+    Parameters
+    ----------
+    x: Function
+        Function to try invoking.
+
+    y: any
+        Value to return if a function throws an error.
+
+    Returns
+    -------
+    z: any
+        Either the return value of `x` or the provided argument `y`.
+
+    Examples
+    --------
+    > function x() {
+    ...     if ( {{alias:@stdlib/random/base/randu}}() < 0.5 ) {
+    ...         throw new Error( 'beep' );
+    ...     }
+    ...     return 1.0;
+    ... };
+    > var z = {{alias}}( x, -1.0 )
+    <number>
+
+    See Also
+    --------
+

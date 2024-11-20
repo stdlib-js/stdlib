@@ -1,0 +1,27 @@
+From rssfeeds@jmason.org  Mon Sep 30 13:44:13 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 0FCD516F03
+	for <jm@localhost>; Mon, 30 Sep 2002 13:44:13 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 30 Sep 2002 13:44:13 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8U81wg21409 for
+    <jm@jmason.org>; Mon, 30 Sep 2002 09:01:58 +0100
+Message-Id: <200209300801.g8U81wg21409@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: zawodny <rssfeeds@spamassassin.taint.org>
+Subject: Early Start and Peter Gabriel
+Date: Mon, 30 Sep 2002 08:01:58 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://jeremy.zawodny.com/blog/archives/000200.html
+Date: 2002-09-29T10:59:19-08:00
+
+Strangely, I managed to get up before 9am (on a Sunday!) without the aid of an 
+alarm clock. Not sure how that happened. I had some breakfast (muffin with 
+jelly and peanut butter, and strawberry drink) while catching up on...
+
+

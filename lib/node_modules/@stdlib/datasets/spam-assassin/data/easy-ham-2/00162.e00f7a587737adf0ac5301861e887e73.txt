@@ -1,0 +1,69 @@
+From ilug-admin@linux.ie  Tue Jul 30 15:57:43 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 54C1B440F3
+	for <jm@localhost>; Tue, 30 Jul 2002 10:57:38 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 30 Jul 2002 15:57:38 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6UEtDq00499 for
+    <jm-ilug@jmason.org>; Tue, 30 Jul 2002 15:55:13 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA12736; Tue, 30 Jul 2002 15:53:42 +0100
+Received: from hawk.dcu.ie (mail.dcu.ie [136.206.1.5]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA12701; Tue, 30 Jul 2002 15:53:36 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host mail.dcu.ie [136.206.1.5]
+    claimed to be hawk.dcu.ie
+Received: from prodigy.redbrick.dcu.ie (136.206.15.10) by hawk.dcu.ie
+    (6.0.040) id 3D36BB4A000452A1; Tue, 30 Jul 2002 15:53:35 +0100
+Received: by prodigy.redbrick.dcu.ie (Postfix, from userid 666) id
+    B64ABDA4A; Tue, 30 Jul 2002 15:53:35 +0100 (IST)
+Date: Tue, 30 Jul 2002 15:53:35 +0100
+From: =?iso-8859-1?Q?Colm_MacC=E1rthaigh?= <colmmacc@redbrick.dcu.ie>
+To: Niall O Broin <niall@linux.ie>, ilug@linux.ie
+Subject: Re: [ILUG] Installing lilo on another disk.
+Message-Id: <20020730155335.A8413@prodigy.Redbrick.DCU.IE>
+References: <20020730144740.GA3482@bagend.makalumedia.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <20020730144740.GA3482@bagend.makalumedia.com>;
+    from niall@linux.ie on Tue, Jul 30, 2002 at 03:47:40PM +0100
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Tue, Jul 30, 2002 at 03:47:40PM +0100, Niall O Broin wrote:
+> I'm installing warm standby disks on a number of boxes. These disks will be
+> the same size (sometimes bigger) than the main disk. The idea is that every
+> night I'll rsync the partitions on the main disk to the standby disk so that
+> in the case of disaster, the first port of call, before the tapes, is the
+> standby disk. (We did consider running Linux md RAID on the disks but RAID
+> gives you no protection against slips of the finger)
+
+actually, on a related note, has anyone tried snapfs ?
+
+> Unfortunately suck and it and see is rather tricky - the machines concerned
+> are not to hand.
+
+just keep root as hda, you can change boot all you want, that's
+where it will get written when you run lilo from the prompt.
+just have a sane lilo.conf (with root=/dev/hda) and use lilo -b
+to write to different devices.
+
+-- 
+colmmacc@redbrick.dcu.ie        PubKey: colmmacc+pgp@redbrick.dcu.ie  
+Web:                                 http://devnull.redbrick.dcu.ie/ 
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

@@ -1,0 +1,36 @@
+
+{{alias}}( s1, s2 )
+    Calculates the Hamming distance between two equal-length input strings.
+
+    The function returns a sentinel value of -1 if the input string lengths
+    differ.
+
+    Parameters
+    ----------
+    s1: string
+        First input string.
+
+    s2: string
+        Second input string.
+
+    Returns
+    -------
+    out: number
+        Hamming distance.
+
+    Examples
+    --------
+    > var d = {{alias}}( 'algorithms', 'altruistic' )
+    7
+    > d = {{alias}}( 'elephant', 'hippopod' )
+    7
+    > d = {{alias}}( 'javascript', 'typescript' )
+    4
+    > d = {{alias}}( 'levenshtein', 'levitations' )
+    8
+    > d = {{alias}}( 'sacrifice', 'paradisal' )
+    8
+
+    See Also
+    --------
+

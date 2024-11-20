@@ -1,0 +1,55 @@
+
+{{alias}}( x, μ )
+    Evaluates the probability density function (PDF) for a degenerate
+    distribution with mean `μ`.
+
+    If provided `NaN` for any argument, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    μ: number
+        Constant value of distribution.
+
+    Returns
+    -------
+    out: number
+        Evaluated PDF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 2.0, 3.0 )
+    0.0
+    > y = {{alias}}( 3.0, 3.0 )
+    Infinity
+    > y = {{alias}}( NaN, 0.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN )
+    NaN
+
+
+{{alias}}.factory( μ )
+    Returns a function for evaluating the probability density function (PDF) of
+    a degenerate distribution with mean `μ`.
+
+    Parameters
+    ----------
+    μ: number
+        Constant value of distribution.
+
+    Returns
+    -------
+    pdf: Function
+        Probability density function (PDF).
+
+    Examples
+    --------
+    > var myPDF = {{alias}}.factory( 10.0 );
+    > var y = myPDF( 10.0 )
+    Infinity
+
+    See Also
+    --------
+

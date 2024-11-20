@@ -1,0 +1,30 @@
+From rssfeeds@spamassassin.taint.org  Tue Oct  8 10:55:41 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id 5047616F19
+	for <zzzz@localhost>; Tue,  8 Oct 2002 10:55:38 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Tue, 08 Oct 2002 10:55:38 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9880UK06069 for
+    <zzzz@spamassassin.taint.org>; Tue, 8 Oct 2002 09:00:30 +0100
+Message-Id: <200210080800.g9880UK06069@dogma.slashnull.org>
+To: zzzz@spamassassin.taint.org
+From: boingboing <rssfeeds@spamassassin.taint.org>
+Subject: How the other half gives
+Date: Tue, 08 Oct 2002 08:00:30 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://boingboing.net/#85534328
+Date: Not supplied
+
+The new Neiman Marcus Christmas catalog is out (in October!), including 
+you-as-an-action-figure ($7,500), a bamboo hut ($15,000) and a leather frisbee 
+($30). Link[1] Discuss[2]
+
+[1] http://www.neimanmarcus.com/store/sitelets/christmasbook2002/fc.htm?navAction=jump&promo=home2
+[2] http://www.quicktopic.com/boing/H/sWabFeGyB5u4C
+
+

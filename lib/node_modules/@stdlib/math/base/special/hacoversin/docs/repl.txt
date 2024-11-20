@@ -1,0 +1,32 @@
+
+{{alias}}( x )
+    Computes the half-value coversed sine.
+
+    The half-value coversed sine is defined as `(1 - sin(x)) / 2`.
+
+    Parameters
+    ----------
+    x: number
+        Input value (in radians).
+
+    Returns
+    -------
+    y: number
+        Half-value coversed sine.
+
+    Examples
+    --------
+    > var y = {{alias}}( 3.14 )
+    ~0.4992
+    > y = {{alias}}( -4.2 )
+    ~0.0642
+    > y = {{alias}}( -4.6 )
+    ~0.0032
+    > y = {{alias}}( 9.5 )
+    ~0.538
+    > y = {{alias}}( -0.0 )
+    0.5
+
+    See Also
+    --------
+

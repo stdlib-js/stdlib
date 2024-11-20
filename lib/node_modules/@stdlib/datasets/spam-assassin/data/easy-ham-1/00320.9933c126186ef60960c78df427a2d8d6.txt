@@ -1,0 +1,126 @@
+From fork-admin@xent.com  Mon Aug 26 21:57:50 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id CBCAE43F99
+	for <jm@localhost>; Mon, 26 Aug 2002 16:57:49 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 21:57:49 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7QKsKZ09118 for <jm@jmason.org>;
+    Mon, 26 Aug 2002 21:54:21 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 3DEFE2941C6; Mon, 26 Aug 2002 13:38:33 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from plato.einstein (unknown [65.170.226.173]) by xent.com
+    (Postfix) with ESMTP id A6CBF294099 for <fork@xent.com>; Tue,
+    20 Aug 2002 23:34:52 -0700 (PDT)
+Received: from RSHAVELL ([63.101.39.6]) by plato.einstein with Microsoft
+    SMTPSVC(5.0.2195.3779); Tue, 20 Aug 2002 23:36:30 -0700
+From: "Rob Shavell" <rob@mobiusvc.com>
+To: "'Eugen Leitl'" <eugen@leitl.org>,
+	"'Mike Masnick'" <mike@techdirt.com>,
+	"'Joseph S. Barrera III'" <joe@barrera.org>,
+	"'Ian Andrew Bell'" <fork@ianbell.com>
+Cc: <fork@spamassassin.taint.org>
+Subject: RE: sprint delivers the next big thing??
+Message-Id: <00dc01c248dd$0c740ea0$6765010a@einstein>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook CWS, Build 9.0.2416 (9.0.2910.0)
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4522.1200
+Importance: Normal
+In-Reply-To: <Pine.LNX.4.33.0208191032320.16603-100000@hydrogen.leitl.org>
+X-Originalarrivaltime: 21 Aug 2002 06:36:30.0964 (UTC) FILETIME=[15BF8340:01C248DD]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 20 Aug 2002 23:36:13 -0700
+
+thx for the thoughts gentlemen (yes as someone said i use terms loosely) -
+
+more than cool --->
+
+quality: snobs only care about mpixels. this is about communications.  the
+general public cares about speed not quality.  how is akamai doing these
+days? not to mention any other QOS businesses that come to mind.
+
+implementation: point about hooking to usb, wires, etc. AGREE 100%. these
+implementations are super clunky, attachable camera needs to be integrated a
+la nokia model.  basically useless until better handsets are released i
+think.
+
+adoption: ian brought up the 'fax' problem.  brilliant thing is, this is far
+more personal than faxes so can be justified more easily and marketed in
+family packs etc. but yes, the usual rules apply as MMS phones have network
+efx.
+
+content: who cares about content?  that no one can think of 'useful' content
+is always the business persons mistake. the content is the users
+communications.  its anything and everything.  avg person could easily send
+half dozen pics to a dozen people a day.  mainly humorous i'd guess. who
+cares if content is trivial in nature. picture speaks a thousand words.
+
+display: why are dig camera displays better than cell phones?  does anyone
+know who makes these small displays and what the trends are around them?
+
+misc ramblings: i suppose you skeptical forkers would have said the same
+thing about '1 hour photo' processing.  trivial, who needs it, i get better
+resultion elswhere.  and yet, it had great decentralizing impact - the plant
+had to be downsized and pushed to the retail operation - the digital camera,
+and finally the integrated digital camera phone brings this cycle of
+decentralization in photography to a logical conclusion (which will put the
+photo giants to bed) and change the world in a meaningful way.  also, SMS
+didn't take off because its easy, it took off because it costs less.  its
+greatly ironic the carriers often trumpet the 'profitabilty' of their SMS
+traffic over others because of its ratio of cost to bandwidth.  in reality,
+SMS cannibilizes the voice rev's they bought their networks to handle.
+
+ps:  it is relatively amusing that one 'low resolution' complaint dropped
+just after Joe watched a CARTOON on his television..
+
+You're right. Or at least, I don't. I saw an advert for it on TV last
+night (can't miss Futurama :-) and I thought, "boy, that's dumb."
+If I wanted to share pictures with someone, I'd email them to them,
+where they could see them on a 1024x or 1600x display, instead of
+
+rob
+
+
+-----Original Message-----
+From: Eugen Leitl [mailto:eugen@leitl.org]
+Sent: Monday, August 19, 2002 1:34 AM
+To: Rob Shavell
+Cc: fork@spamassassin.taint.org
+Subject: Re: sprint delivers the next big thing??
+
+
+On Sun, 18 Aug 2002, Rob Shavell wrote:
+
+> down in the tech world than mobile visual communications.. and yet no one
+> seems to give much of a damn that right now that 2 persons can take photos
+> and share them instantly across space.  this is one of the biggest - and
+
+The word "trivial" comes to mind.
+
+> last - fundamental changes in human communications.  will be as big as the
+> browser.
+
+Remote realtime streaming video is neat, but sharing pictures? You invoke
+big words rather readily.
+
+http://xent.com/mailman/listinfo/fork
+

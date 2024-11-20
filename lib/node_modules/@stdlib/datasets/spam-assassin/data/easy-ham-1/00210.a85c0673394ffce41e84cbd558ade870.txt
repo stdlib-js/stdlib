@@ -1,0 +1,69 @@
+From ilug-admin@linux.ie  Wed Aug 28 10:48:51 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3448844159
+	for <zzzz@localhost>; Wed, 28 Aug 2002 05:47:59 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 28 Aug 2002 10:47:59 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7S8UiZ16366 for
+    <zzzz-ilug@spamassassin.taint.org>; Wed, 28 Aug 2002 09:30:45 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA10413; Wed, 28 Aug 2002 09:29:33 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from motgate4.mot.com (motgate4.mot.com [144.189.100.102]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id JAA10378 for <ilug@linux.ie>;
+    Wed, 28 Aug 2002 09:29:25 +0100
+Received: [from mothost.mot.com (mothost.mot.com [129.188.137.101]) by
+    motgate4.mot.com (motgate4 2.1) with ESMTP id BAA25720 for <ilug@linux.ie>;
+    Wed, 28 Aug 2002 01:29:22 -0700 (MST)]
+Received: [from zei02exm02.cork.cig.mot.com (zei02exm02.cork.cig.mot.com
+    [175.3.80.202]) by mothost.mot.com (MOT-pobox 2.0) with ESMTP id BAA21939
+    for <ilug@linux.ie>; Wed, 28 Aug 2002 01:29:49 -0700 (MST)]
+Received: by zei02exm02.cork.cig.mot.com with Internet Mail Service
+    (5.5.2654.52) id <M82N0FTN>; Wed, 28 Aug 2002 09:29:20 +0100
+Message-Id: <496E31A690F7D311B93C0008C789494C07F08AC1@zei02exm01.cork.cig.mot.com>
+From: Aherne Peter-pahern02 <peter.aherne@motorola.com>
+To: "'ilug@linux.ie'" <ilug@linux.ie>
+Date: Wed, 28 Aug 2002 09:29:19 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2654.52)
+Content-Type: text/plain; charset="iso-8859-1"
+Subject: [ILUG] [OT] Dell machine giving me hassle.
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Ok, Iknow this is blatantly OT but I'm beginning to go insane.
+Had an old Dell Dimension XPS sitting in the corner and decided to
+put it to use, I know it was working pre being stuck in the
+corner, but when I plugged it in, hit the power nothing happened.
+I opened her up and had a look and say nothing much. A little orange
+LED comes on when I plug her in but that's it, after some googling
+I found some reference to re-seating all the parts, but no change.
+The problem I'm having is that since the power supply is some Dell
+specific one, ATX block with what looks like one of the old AT
+power connectors, I cant figure out weather this is a Mobo prob
+or a PSU prob. Just to futily try and drag this back OT, I want
+to install Linux on it when I get it working. If anyone knows
+what the problem might be give me a shout.
+
+Cheers,
+Peter.
+
+--
+Peter Aherne, Software Engineer, 
+Motorola Ireland Ltd.
+Ph: +353 21 4511234 Mobile: +353 87 2246834
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

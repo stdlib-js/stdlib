@@ -1,0 +1,55 @@
+From fork-admin@xent.com  Thu Aug 29 11:04:11 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 766AF44159
+	for <jm@localhost>; Thu, 29 Aug 2002 06:03:52 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:03:52 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7T42lZ28532 for <jm@jmason.org>;
+    Thu, 29 Aug 2002 05:02:47 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id EBF752940A5; Wed, 28 Aug 2002 21:00:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from barrera.org (unknown [63.145.31.2]) by xent.com (Postfix)
+    with ESMTP id 8E53B294099 for <FoRK@xent.com>; Wed, 28 Aug 2002 20:59:05
+    -0700 (PDT)
+Received: from  (127.0.0.1 [127.0.0.1]) by MailEnable Inbound Mail Agent
+    with ESMTP; Thu, 29 Aug 2002 04:00:33 -08:00
+Message-Id: <3D6D9C61.3020108@barrera.org>
+From: "Joseph S. Barrera III" <joe@barrera.org>
+Organization: Wings over the World
+User-Agent: Mutt 5.00.2919.6900 DM (Nigerian Scammer Special Edition)
+X-Accept-Language: en-us, en, ja
+MIME-Version: 1.0
+To: Eirikur Hallgrimsson <eh@mad.scientist.com>
+Cc: FoRK <FoRK@xent.com>
+Subject: Re: "Holiday Season" 2002 begins
+References: <200208282039.25043.eh@mad.scientist.com>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 28 Aug 2002 21:00:33 -0700
+
+Eirikur Hallgrimsson wrote:
+> It's official, the holidays are here.
+
+For which year, 2003 or 2004?
+
+- Joe
+
+
+

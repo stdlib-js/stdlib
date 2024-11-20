@@ -1,0 +1,65 @@
+From ilug-admin@linux.ie  Fri Jul 19 15:40:36 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 248A043FAD
+	for <jm@localhost>; Fri, 19 Jul 2002 10:40:35 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 15:40:35 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JEZeJ05090 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 15:35:40 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA10057; Fri, 19 Jul 2002 15:31:50 +0100
+Received: from mail.magicgoeshere.com (nw152-60.indigo.ie [194.125.152.60]
+    (may be forged)) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id PAA10024
+    for <ilug@linux.ie>; Fri, 19 Jul 2002 15:31:44 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host nw152-60.indigo.ie
+    [194.125.152.60] (may be forged) claimed to be mail.magicgoeshere.com
+Received: from bagend.magicgoeshere.com (ts15-233.dublin.indigo.ie
+    [194.125.176.233]) by mail.magicgoeshere.com (Postfix) with ESMTP id
+    3FB81F8E6 for <ilug@linux.ie>; Fri, 19 Jul 2002 15:16:38 +0100 (IST)
+Received: by bagend.magicgoeshere.com (Postfix, from userid 501) id
+    838F43C0CC; Fri, 19 Jul 2002 15:35:36 +0100 (IST)
+Date: Fri, 19 Jul 2002 15:35:36 +0100
+From: Niall O Broin <niall@linux.ie>
+To: ilug@linux.ie
+Message-Id: <20020719143536.GC2506@bagend.makalumedia.com>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: Niall O Broin <niall@linux.ie>, ilug@linux.ie
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.3.27i
+Subject: [ILUG] OSI protocol
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+There's been some discussion just now on the ILUG IRC channel about OSI and
+protocol layers. This reminded me of a poster produced by Wandel &
+Goltermann (manufactureres of fine protocol decoders and testers) which
+illustrates this admirably. The poster is in the form of a PDF file and to
+be honest, is best appreciated if you have access to a HP DesignJet or
+somesuch device. Wandel & Goltermann has now become/been taken over by
+acterna and I couldn't find the poster there. However, it's available at
+http://www.pb.bib.de/~dozloh/fachinfo/sdn_16/decodes.pdf and some of you ma
+find it interesting.
+
+The top of the poster refers you to www.decodes.com for a more up to date
+online copy of the poster. However, www.decodes.com now is redirected to the
+aforementioned acterna and . . . .
+
+
+Niall
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

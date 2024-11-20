@@ -1,0 +1,263 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6NH2EhY084072
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Tue, 23 Jul 2002 12:02:15 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6NH2EgP084065
+	for cypherpunks-forward@ds.pro-ns.net; Tue, 23 Jul 2002 12:02:14 -0500 (CDT)
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6NH28hY084026
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks@ds.pro-ns.net>; Tue, 23 Jul 2002 12:02:09 -0500 (CDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: from waste.minder.net (daemon@waste [66.92.53.73])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6NH27J31988
+	for <cypherpunks@ds.pro-ns.net>; Tue, 23 Jul 2002 13:02:08 -0400 (EDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: (from cpunks@localhost)
+	by waste.minder.net (8.11.6/8.11.6) id g6NH27L18691
+	for cypherpunks@ds.pro-ns.net; Tue, 23 Jul 2002 13:02:07 -0400
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by waste.minder.net (8.11.6/8.11.6) with ESMTP id g6NH25R18662
+	for <cpunks@minder.net>; Tue, 23 Jul 2002 13:02:05 -0400
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6NH22J31966
+	for <cpunks@minder.net>; Tue, 23 Jul 2002 13:02:02 -0400 (EDT)
+	(envelope-from cpunks@einstein.ssz.com)
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id MAA14655
+	for cpunks@minder.net; Tue, 23 Jul 2002 12:10:40 -0500
+Received: (from mdom@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id MAA14647
+	for cypherpunks-outgoing; Tue, 23 Jul 2002 12:10:36 -0500
+Received: from appsales.net ([65.168.244.19])
+	by einstein.ssz.com (8.8.8/8.8.8) with SMTP id MAA14639
+	for <cypherpunks@ssz.com>; Tue, 23 Jul 2002 12:10:19 -0500
+Message-Id: <200207231710.MAA14639@einstein.ssz.com>
+Received: (qmail 2356 invoked by uid 502); 23 Jul 2002 16:15:43 -0000
+Received: from unknown (HELO appsales.net) (65.168.244.26)
+  by 0 with SMTP; 23 Jul 2002 16:15:43 -0000
+From: Link It Software <sendout@appsales.net>
+Old-Subject: CDR: Maintenance Tracking/Scheduling Software, $1495
+Date: 23 Jul 2002 09:11:48 -0700
+MIME-Version: 1.0
+Content-Type: multipart/related; boundary="----=_BkymKzPF_EOQL8qx8_MR"
+Sender: owner-cypherpunks@einstein.ssz.com
+Precedence: bulk
+Reply-To: cypherpunks@einstein.ssz.com
+X-Mailing-List: cypherpunks@ssz.com
+X-Unsubscription-Info: http://einstein.ssz.com/cdr
+X-List-Admin: list@ssz.com
+X-Loop: ssz.com
+X-Acceptable-Languages: English, Russian, German, French, Spanish
+To: undisclosed-recipients:;
+Subject: Maintenance Tracking/Scheduling Software, $1495
+
+
+------=_BkymKzPF_EOQL8qx8_MR
+Content-Type: text/html
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META content="text/html; charset=iso-8859-1" http-equiv=Content-Type>
+<META content="MSHTML 5.00.3315.2870" name=GENERATOR>
+<title>Maintenance Tracking/Scheduling Software, $1495</title>
+</HEAD>
+<BODY bgColor=#ffffff link=blue vlink=blue>
+<FONT face=Arial>
+<TABLE border=0 width="95%" cellPadding=0 cellSpacing=0>
+  <TBODY>
+   <TR>
+     <TD vAlign=top>
+      <IMG border=0 src="cid:ezm.jpg"></TD>
+    <TD><FONT color=red size=6>Complete Maintenance Scheduling and Tracking Software for any equipment or vehicle, $1,495.00</FONT></TD>
+  </TR>
+  <TR>
+    <TD colSpan=2 vAlign=top>
+      <FONT size=5 color=red><B>Order by July 31st and receive two additional user licenses at no charge--a $300.00 value!</b></font>
+      <BR>
+      <P><FONT size=4><B><font color=red>EZ Maintenance</font></B> is a complete software package designed to schedule, manage and track all maintenance and repairs on any type of equipment and all vehicles, including tires!
+      <p><font color=red>EZ Maintenance</font> is Network/Multi user ready out of the box. In addition to scheduling, tracking, keeping histories of and producing work orders for all maintenance on equipment or vehicles,  EZ Maintenance also tracks costs, hours, and downtime for repairs.  It includes over 80 reports and has available a link to Excel for the creation of specialized reports.  Along with many other features, EZ Maintenance produces maintenance calendars and complete maintenance histories.  Equipment to be maintained can be bar coded, allowing a maintenance procedure to begin with a simple reading of the bar code.  On the vehicle side, EZ Maintenance also tracks both vehicle and driver license information and license expiration dates and produces a report showing all expiring licenses 30 days in advance.  It records all driver information, and allows for entry and tracking of all driver incidents
+      <u>EZ Maintenance is everything you need to maintain equipment or vehicles in one complete software package.</u>
+      <p>For more information, please call (661) 286-0041 or email <a href="mailto:info@linkitsoftware.com">info@linkitsoftware.com</a></font>
+      <font size=3><P>To be removed from this mailing list 
+      please place the word "remove" in the subject line <A 
+      href="mailto:remove@linkitsoftware.com">remove@linkitsoftware.com</A></P>
+      </TD>
+   </TR>
+</TBODY></TABLE>
+</FONT></BODY></HTML>
+
+
+
+------=_BkymKzPF_EOQL8qx8_MR
+Content-Type: image/jpeg; name="ezm.jpg"
+Content-Transfer-Encoding: base64
+Content-ID: <ezm.jpg>
+
+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
+BQFAUBQFAUBQFAUBQf/Z
+
+------=_BkymKzPF_EOQL8qx8_MR--
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

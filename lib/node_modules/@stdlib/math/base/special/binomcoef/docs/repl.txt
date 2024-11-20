@@ -1,0 +1,41 @@
+
+{{alias}}( n, k )
+    Computes the binomial coefficient of two integers.
+
+    If `k < 0`, the function returns `0`.
+
+    The function returns `NaN` for non-integer `n` or `k`.
+
+    Parameters
+    ----------
+    n: integer
+        First input value.
+
+    k: integer
+        Second input value.
+
+    Returns
+    -------
+    out: number
+        Function value.
+
+    Examples
+    --------
+    > var v = {{alias}}( 8, 2 )
+    28
+    > v = {{alias}}( 0, 0 )
+    1
+    > v = {{alias}}( -4, 2 )
+    10
+    > v = {{alias}}( 5, 3 )
+    10
+    > v = {{alias}}( NaN, 3 )
+    NaN
+    > v = {{alias}}( 5, NaN )
+    NaN
+    > v = {{alias}}( NaN, NaN )
+    NaN
+
+    See Also
+    --------
+

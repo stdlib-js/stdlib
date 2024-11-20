@@ -1,0 +1,58 @@
+From ilug-admin@linux.ie  Fri Aug 16 15:02:29 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C89F743C61
+	for <jm@localhost>; Fri, 16 Aug 2002 09:59:01 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 16 Aug 2002 14:59:01 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7GDtLa20173 for
+    <jm-ilug@jmason.org>; Fri, 16 Aug 2002 14:55:21 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id OAA14050 for <jm-ilug@jmason.org>;
+    Fri, 16 Aug 2002 14:19:38 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id OAA29223; Fri, 16 Aug 2002 14:18:29 +0100
+Received: from claymore.diva.ie (diva.ie [195.218.115.17] (may be forged))
+    by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id OAA29198 for
+    <ilug@linux.ie>; Fri, 16 Aug 2002 14:18:22 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host diva.ie [195.218.115.17]
+    (may be forged) claimed to be claymore.diva.ie
+Received: from cunniffe.net (p579.as1.exs.dublin.eircom.net
+    [159.134.226.67]) by claymore.diva.ie (8.9.3/8.9.3) with ESMTP id OAA13640
+    for <ilug@linux.ie>; Fri, 16 Aug 2002 14:18:19 +0100
+Message-Id: <3D5CFB9A.6060209@cunniffe.net>
+Date: Fri, 16 Aug 2002 14:18:18 +0100
+From: Vincent Cunniffe <vincent@cunniffe.net>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.0.0)
+    Gecko/20020530
+X-Accept-Language: en, en-us
+MIME-Version: 1.0
+To: ilug@linux.ie
+Content-Type: text/plain; charset=ISO-8859-15; format=flowed
+Content-Transfer-Encoding: 7bit
+Subject: [ILUG] replacement xircom dongle?
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Anyone know where in Ireland I can get a replacement external dongle
+for a Xircom CE3B-100 PCMCIA NIC?
+
+Failing that, who delivers fastest to Ireland?
+
+Regards,
+
+Vin
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

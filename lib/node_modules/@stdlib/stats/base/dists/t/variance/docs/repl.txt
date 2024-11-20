@@ -1,0 +1,30 @@
+
+{{alias}}( v )
+    Returns the variance of a Student's t distribution.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `1 < v <= 2`, the function returns positive infinity.
+
+    If provided `v <= 1`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    v: number
+        Degrees of freedom.
+
+    Returns
+    -------
+    out: number
+        Variance.
+
+    Examples
+    --------
+    > var v = {{alias}}( 9.0 )
+    ~1.286
+    > v = {{alias}}( 4.5 )
+    ~1.8
+
+    See Also
+    --------
+

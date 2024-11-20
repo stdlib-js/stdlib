@@ -1,0 +1,29 @@
+
+{{alias}}( x, offset )
+    Returns a typed array view having the same data type as a provided input
+    typed array and starting at a specified index offset.
+
+    Parameters
+    ----------
+    x: TypedArray
+        Input array.
+
+    offset: integer
+        Starting index of the view relative to the input array.
+
+    Returns
+    -------
+    out: TypedArray
+        Typed array view having the same data type as the input array.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/float64}}( 10 );
+    > var out = {{alias}}( x, 0 )
+    <Float64Array>
+    > var bool = ( out.buffer === x.buffer )
+    true
+
+    See Also
+    --------
+

@@ -1,0 +1,81 @@
+From razor-users-admin@lists.sourceforge.net  Wed Aug 14 10:48:36 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7FECA43C56
+	for <jm@localhost>; Wed, 14 Aug 2002 05:46:04 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 14 Aug 2002 10:46:04 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7DJEY414900 for <jm-razor@jmason.org>; Tue, 13 Aug 2002 20:14:34 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17egxh-0005RG-00; Tue,
+    13 Aug 2002 12:04:13 -0700
+Received: from dhcp024-208-195-177.indy.rr.com ([24.208.195.177]
+    helo=burgers.bubbanfriends.org) by usw-sf-list1.sourceforge.net with esmtp
+    (Cipher TLSv1:DES-CBC3-SHA:168) (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17egww-0007lS-00 for <razor-users@lists.sourceforge.net>; Tue,
+    13 Aug 2002 12:03:27 -0700
+Received: from localhost (localhost.localdomain [127.0.0.1]) by
+    burgers.bubbanfriends.org (Postfix) with ESMTP id 914BE400088;
+    Tue, 13 Aug 2002 14:03:21 -0500 (EST)
+Received: by burgers.bubbanfriends.org (Postfix, from userid 500) id
+    55F66401A40; Tue, 13 Aug 2002 14:03:20 -0500 (EST)
+Received: from localhost (localhost [127.0.0.1]) by
+    burgers.bubbanfriends.org (Postfix) with ESMTP id 540E7C00CE0;
+    Tue, 13 Aug 2002 14:03:20 -0500 (EST)
+From: Mike Burger <mburger@bubbanfriends.org>
+To: David Raistrick <drais@wow.atlasta.net>
+Cc: Justin Shore <listuser@neo.pittstate.edu>,
+	<razor-users@lists.sourceforge.net>
+Subject: Re: [Razor-users] Stripping the SpamAssassin report
+In-Reply-To: <Pine.BSF.4.21.0208131031280.48923-100000@wow.atlasta.net>
+Message-Id: <Pine.LNX.4.44.0208131402170.4408-100000@burgers.bubbanfriends.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+X-Virus-Scanned: by AMaViS new-20020517
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Tue, 13 Aug 2002 14:03:20 -0500 (EST)
+Date: Tue, 13 Aug 2002 14:03:20 -0500 (EST)
+
+On Tue, 13 Aug 2002, David Raistrick wrote:
+
+> To actually answer Justin's question, (one can assume that he has
+> rewrite_subject and report_header turned on because he wants them..and
+> that he would like to be able to strip the added bits off before he sends
+> them to razor) something as simple as the following would probably work
+> just fine.  Just pipe your message through this, then on into
+> razor-report:
+
+I wouldn't make that assumption.  I'd assume that rewrite_subject was on, 
+and report_header was off, because that's the default configuration, and 
+not everyone knows to go look in the user_prefs file to make those 
+changes.
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Dice - The leading online job board
+for high-tech professionals. Search and apply for tech jobs today!
+http://seeker.dice.com/seeker.epl?rel_code=31
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

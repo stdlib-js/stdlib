@@ -1,0 +1,73 @@
+Return-Path: yyyy
+Delivery-Date: Tue Aug  6 17:06:12 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 17:06:12 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g76G5Uk08546 for <jm-sa@jmason.org>; Tue, 6 Aug 2002 17:05:30 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17c6nY-0000CX-00; Tue,
+    06 Aug 2002 09:03:04 -0700
+Received: from [194.165.165.199] (helo=mandark.labs.netnoteinc.com) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17c6n2-00057Y-00 for <SpamAssassin-talk@lists.sourceforge.net>;
+    Tue, 06 Aug 2002 09:02:33 -0700
+Received: from phobos.labs.netnoteinc.com (phobos.labs.netnoteinc.com
+    [192.168.2.14]) by mandark.labs.netnoteinc.com (8.11.6/8.11.6) with ESMTP
+    id g76G2Np24016 for <SpamAssassin-talk@lists.sourceforge.net>;
+    Tue, 6 Aug 2002 17:02:23 +0100
+Received: by phobos.labs.netnoteinc.com (Postfix, from userid 500) id
+    EE6CA44126; Tue,  6 Aug 2002 10:06:32 -0400 (EDT)
+Received: from phobos (localhost [127.0.0.1]) by
+    phobos.labs.netnoteinc.com (Postfix) with ESMTP id E9C7333F85 for
+    <SpamAssassin-talk@lists.sf.net>; Tue,  6 Aug 2002 15:06:32 +0100 (IST)
+To: SpamAssassin-talk@example.sourceforge.net
+From: yyyy@spamassassin.taint.org (Justin Mason)
+X-GPG-Key-Fingerprint: 0A48 2D8B 0B52 A87D 0E8A  6ADD 4137 1B50 6E58 EF0A
+X-Image-Url: http://spamassassin.taint.org/me.jpg
+Message-Id: <20020806140632.EE6CA44126@phobos.labs.netnoteinc.com>
+Subject: [SAtalk] BIG CHANGE coming up in cvs
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Tue, 06 Aug 2002 15:06:27 +0100
+Date: Tue, 06 Aug 2002 15:06:27 +0100
+
+CVS users: heads up! I think we've been talking about it long enough, so
+we might as well check it in now.  It's about time to check in
+http://bugzilla.spamassassin.org/show_bug.cgi?id=546
+
+This change will *remove* support for delivery to a local mailbox (ie the
+default mode of operation when "spamassassin" is run).
+
+In addition, the "From " line will no longer be added to mails as a
+result.
+
+--j.
+
+-- 
+'Justin Mason' => { url => http://jmason.org/ , blog => http://taint.org/ }
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

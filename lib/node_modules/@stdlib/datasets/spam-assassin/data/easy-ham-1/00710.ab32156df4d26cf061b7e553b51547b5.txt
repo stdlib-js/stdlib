@@ -1,0 +1,76 @@
+From fork-admin@xent.com  Sun Sep 22 23:59:01 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 3494216F03
+	for <jm@localhost>; Sun, 22 Sep 2002 23:59:01 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sun, 22 Sep 2002 23:59:01 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8MMssC18527 for <jm@jmason.org>;
+    Sun, 22 Sep 2002 23:54:54 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id BB1302940A8; Sun, 22 Sep 2002 15:51:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mail.evergo.net (unknown [206.191.151.2]) by xent.com
+    (Postfix) with SMTP id B3EF729409A for <fork@xent.com>; Sun,
+    22 Sep 2002 15:50:06 -0700 (PDT)
+Received: (qmail 32383 invoked from network); 22 Sep 2002 22:53:43 -0000
+Received: from dsl.206.191.151.102.evergo.net (HELO JMHALL)
+    (206.191.151.102) by mail.evergo.net with SMTP; 22 Sep 2002 22:53:43 -0000
+Reply-To: <johnhall@evergo.net>
+From: "John Hall" <johnhall@evergo.net>
+To: "FoRK" <fork@spamassassin.taint.org>
+Subject: RE: sed /s/United States/Roman Empire/g
+Message-Id: <000f01c2628a$e71a61f0$0200a8c0@JMHALL>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.2627
+Importance: Normal
+In-Reply-To: <DAV53oPB2EWrO8lxy4D00001559@hotmail.com>
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 22 Sep 2002 15:53:43 -0700
+
+
+> From: fork-admin@xent.com [mailto:fork-admin@xent.com] On Behalf Of
+Mr.
+> FoRK
+
+> Also, the lifestyle of the remnants of those
+> societies is on average only marginally above poverty even today.
+
+As I understand it, there is a huge difference between native Americans
+who speak english at home and those who do not.  I don't have figures
+that separate those at hand, though.
+
+1989 American Indians (US Pop as a whole) -- Families below poverty
+27.2% (10%), Persons below poverty 31.2 (13.1), Speak a language other
+than English 23 (13.8) Married couple families 65.8 (79.5) Median family
+income $21,619 ($35,225) Per Capita $8,284 ($14,420).
+
+Note: High Income countries in 1989 were defined as having over $6,000
+per capita.  American Indians separated from the rest of the US society
+would still be considered a high-income society.
+
+
+
+
+
+
+

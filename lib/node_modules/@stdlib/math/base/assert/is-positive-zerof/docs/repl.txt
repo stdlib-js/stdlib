@@ -1,0 +1,24 @@
+
+{{alias}}( x )
+    Tests if a single-precision floating-point numeric value is positive zero.
+
+    Parameters
+    ----------
+    x: number
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether the value is positive zero.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 0.0 )
+    true
+    > bool = {{alias}}( -0.0 )
+    false
+
+    See Also
+    --------
+

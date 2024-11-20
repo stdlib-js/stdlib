@@ -1,0 +1,82 @@
+
+{{alias}}( [k] )
+    Returns a chi distribution object.
+
+    Parameters
+    ----------
+    k: number (optional)
+        Degrees of freedom. Must be greater than `0`. Default: `1.0`.
+
+    Returns
+    -------
+    chi: Object
+        Distribution instance.
+
+    chi.k: number
+        Degrees of freedom. If set, the value must be greater than `0`.
+
+    chi.entropy: number
+        Read-only property which returns the differential entropy.
+
+    chi.kurtosis: number
+        Read-only property which returns the excess kurtosis.
+
+    chi.mean: number
+        Read-only property which returns the expected value.
+
+    chi.mode: number
+        Read-only property which returns the mode.
+
+    chi.skewness: number
+        Read-only property which returns the skewness.
+
+    chi.stdev: number
+        Read-only property which returns the standard deviation.
+
+    chi.variance: number
+        Read-only property which returns the variance.
+
+    chi.cdf: Function
+        Evaluates the cumulative distribution function (CDF).
+
+    chi.logpdf: Function
+        Evaluates the natural logarithm of the probability density function
+        (PDF).
+
+    chi.pdf: Function
+        Evaluates the probability density function (PDF).
+
+    chi.quantile: Function
+        Evaluates the quantile function at probability `p`.
+
+    Examples
+    --------
+    > var chi = {{alias}}( 6.0 );
+    > chi.k
+    6.0
+    > chi.entropy
+    ~1.04
+    > chi.kurtosis
+    ~0.025
+    > chi.mean
+    ~2.35
+    > chi.mode
+    ~2.236
+    > chi.skewness
+    ~0.318
+    > chi.stdev
+    ~0.691
+    > chi.variance
+    ~0.478
+    > chi.cdf( 1.0 )
+    ~0.014
+    > chi.logpdf( 1.5 )
+    ~-1.177
+    > chi.pdf( 1.5 )
+    ~0.308
+    > chi.quantile( 0.5 )
+    ~2.313
+
+    See Also
+    --------
+

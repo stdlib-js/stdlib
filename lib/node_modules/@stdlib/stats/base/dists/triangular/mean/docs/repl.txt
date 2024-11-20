@@ -1,0 +1,36 @@
+
+{{alias}}( a, b, c )
+    Returns the expected value of a triangular distribution.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If the condition `a <= c <= b` is not satisfied, the function returns `NaN`.
+
+    Parameters
+    ----------
+    a: number
+        Minimum support.
+
+    b: number
+        Maximum support.
+
+    c: number
+        Mode.
+
+    Returns
+    -------
+    out: number
+        Expected value.
+
+    Examples
+    --------
+    > var v = {{alias}}( 0.0, 1.0, 0.8 )
+    ~0.6
+    > v = {{alias}}( 4.0, 12.0, 5.0 )
+    7.0
+    > v = {{alias}}( 2.0, 8.0, 5.0 )
+    5.0
+
+    See Also
+    --------
+

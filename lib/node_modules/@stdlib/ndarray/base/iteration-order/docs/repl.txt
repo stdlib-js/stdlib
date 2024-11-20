@@ -1,0 +1,35 @@
+
+{{alias}}( strides )
+    Returns the iteration order, given a stride array.
+
+    Possible return values:
+
+    0: unordered (strides of varying sign).
+    1: left-to-right iteration order (all nonnegative strides).
+    -1: right-to-left iteration order (all negative strides).
+
+    Parameters
+    ----------
+    strides: ArrayLike
+        Stride array.
+
+    Returns
+    -------
+    out: integer
+        Iteration order.
+
+    Examples
+    --------
+    > var s = [ 30, -10, 1 ];
+    > var out = {{alias}}( s )
+    0
+    > s = [ 30, 10, 1 ];
+    > out = {{alias}}( s )
+    1
+    > s = [ -30, -10, -1 ];
+    > out = {{alias}}( s )
+    -1
+
+    See Also
+    --------
+

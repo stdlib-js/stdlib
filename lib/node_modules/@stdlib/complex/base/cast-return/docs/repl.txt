@@ -1,0 +1,45 @@
+
+{{alias}}( fcn, nargs, ctor )
+    Wraps a function and casts a function's return value to a complex number.
+
+    The returned function *assumes* that the wrapped function returns either a
+    real or complex number.
+
+    The returned function *assumes* that, if a return value is non-numeric
+    (i.e., not of type `number`), then the return value is a complex number.
+
+    The returned function does *not* verify that non-numeric return values are,
+    in fact, complex number objects.
+
+    The returned function returns non-numeric return values from the wrapped
+    function without modification.
+
+    Parameters
+    ----------
+    fcn: Function
+        Function to wrap.
+
+    nargs: integer
+        Number of arguments.
+
+    ctor: Function
+        Complex number constructor.
+
+    Returns
+    -------
+    f: Function
+        Wrapped function.
+
+    Examples
+    --------
+    > var f = {{alias}}( {{alias:@stdlib/math/base/ops/addf}}, 2, {{alias:@stdlib/complex/float32/ctor}} );
+    > var z = f( 3.0, 4.0 )
+    <Complex64>
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
+    7.0
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
+    0.0
+
+    See Also
+    --------
+

@@ -1,0 +1,33 @@
+
+{{alias}}( x )
+    Computes an absolute value.
+
+    This implementation is not IEEE 754 compliant. If provided `-0`, the
+    function returns `-0`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    out: number
+        Absolute value.
+
+    Examples
+    --------
+    > var v = {{alias}}( -1.0 )
+    1.0
+    > v = {{alias}}( 2.0 )
+    2.0
+    > v = {{alias}}( 0.0 )
+    0.0
+    > v = {{alias}}( -0.0 )
+    -0.0
+    > v = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+

@@ -1,0 +1,40 @@
+From rssfeeds@jmason.org  Sat Oct  5 10:37:37 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 7121516F86
+	for <jm@localhost>; Sat,  5 Oct 2002 10:36:59 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 05 Oct 2002 10:36:59 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9580YK02544 for
+    <jm@jmason.org>; Sat, 5 Oct 2002 09:00:34 +0100
+Message-Id: <200210050800.g9580YK02544@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: boingboing <rssfeeds@spamassassin.taint.org>
+Subject: Sidekick's browser blows
+Date: Sat, 05 Oct 2002 08:00:33 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://boingboing.net/#85524549
+Date: Not supplied
+
+Anil Dash discovers that the T-Mobile Sidekick's web-browser is pretty 
+arbitrary in which pages it will load and which pages it will throw up its 
+hands at: 
+
+    So I decided I was going to modify my page to conform to your browser's 
+    idiocy. I went looking for technical docs on what you do to mangle web 
+    pages. None. I went looking for a desktop emulator that I could run to 
+    simulate your device on my computer. None. I went looking to see an 
+    acknowledgement of the shortcomings of your device, indicating that the 
+    situation would be improved. None.  
+
+Link[1] Discuss[2] (_Thanks, Joe[3]!_)
+
+[1] http://www.dashes.com/anil/index.php?archives/003378.php
+[2] http://www.quicktopic.com/boing/H/gQqkijtv3NhWZ
+[3] http://joeclark.org/access/
+
+

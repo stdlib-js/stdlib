@@ -1,0 +1,77 @@
+
+{{alias}}( p, μ, c )
+    Evaluates the quantile function for a Lévy distribution with location
+    parameter `μ` and scale parameter `c` at a probability `p`.
+
+    If `p < 0` or `p > 1`, the function returns `NaN`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `c <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    p: number
+        Input probability.
+
+    μ: number
+        Location parameter.
+
+    c: number
+        Scale parameter.
+
+    Returns
+    -------
+    out: number
+        Evaluated quantile function.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.8, 0.0, 1.0 )
+    ~15.58
+    > y = {{alias}}( 0.5, 4.0, 2.0 )
+    ~8.396
+
+    > y = {{alias}}( 1.1, 0.0, 1.0 )
+    NaN
+    > y = {{alias}}( -0.2, 0.0, 1.0 )
+    NaN
+
+    > y = {{alias}}( NaN, 0.0, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, 0.0, NaN )
+    NaN
+
+    // Negative scale parameter:
+    > y = {{alias}}( 0.5, 0.0, -1.0 )
+    NaN
+
+
+{{alias}}.factory( μ, c )
+    Returns a function for evaluating the quantile function of a Lévy
+    distribution with location parameter `μ` and scale parameter `c`.
+
+    Parameters
+    ----------
+    μ: number
+        Location parameter.
+
+    c: number
+        Scale parameter.
+
+    Returns
+    -------
+    quantile: Function
+        Quantile function.
+
+    Examples
+    --------
+    > var myQuantile = {{alias}}.factory( 10.0, 2.0 );
+    > var y = myQuantile( 0.5 )
+    ~14.396
+
+    See Also
+    --------
+

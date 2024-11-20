@@ -1,0 +1,32 @@
+
+{{alias}}( bool, x, y )
+    If a condition is truthy, invoke `x`; otherwise, invoke `y`.
+
+    Parameters
+    ----------
+    bool: boolean
+        Condition.
+
+    x: Function
+        Function to invoke if a condition is truthy.
+
+    y: Function
+        Function to invoke if a condition is falsy.
+
+    Returns
+    -------
+    z: any
+        Return value of either `x` or `y`.
+
+    Examples
+    --------
+    > function x() { return 1.0; };
+    > function y() { return -1.0; };
+    > var z = {{alias}}( true, x, y )
+    1.0
+    > z = {{alias}}( false, x, y )
+    -1.0
+
+    See Also
+    --------
+

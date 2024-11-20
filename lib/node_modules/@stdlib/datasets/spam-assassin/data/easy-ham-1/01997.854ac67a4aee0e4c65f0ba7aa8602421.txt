@@ -1,0 +1,27 @@
+From rssfeeds@jmason.org  Thu Sep 26 16:43:22 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id B706316F7D
+	for <jm@localhost>; Thu, 26 Sep 2002 16:42:22 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 16:42:22 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8QFVjg25048 for
+    <jm@jmason.org>; Thu, 26 Sep 2002 16:31:45 +0100
+Message-Id: <200209261531.g8QFVjg25048@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: zawodny <rssfeeds@spamassassin.taint.org>
+Subject: Y! Finance RSS Feeds Update
+Date: Thu, 26 Sep 2002 15:31:45 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://jeremy.zawodny.com/blog/archives/000193.html
+Date: 2002-09-25T22:51:45-08:00
+
+First of all, thanks for all the great feedback. I see that a lot of folks are 
+pulling it now. I'm working on some stats. It'll be interesting to see which 
+stocks bloggers tend to watch, which aggregators they use,...
+
+

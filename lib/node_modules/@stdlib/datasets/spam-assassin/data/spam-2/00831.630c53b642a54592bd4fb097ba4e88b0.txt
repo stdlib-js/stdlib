@@ -1,0 +1,179 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6LJEFCU088070
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Sun, 21 Jul 2002 14:14:16 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6LJEF6o088064
+	for cypherpunks-forward@ds.pro-ns.net; Sun, 21 Jul 2002 14:14:15 -0500 (CDT)
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6LJECCU088005
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks@ds.pro-ns.net>; Sun, 21 Jul 2002 14:14:14 -0500 (CDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: from waste.minder.net (daemon@waste [66.92.53.73])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6LJEAJ77863
+	for <cypherpunks@ds.pro-ns.net>; Sun, 21 Jul 2002 15:14:11 -0400 (EDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: (from cpunks@localhost)
+	by waste.minder.net (8.11.6/8.11.6) id g6LJE9629743
+	for cypherpunks@ds.pro-ns.net; Sun, 21 Jul 2002 15:14:09 -0400
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by waste.minder.net (8.11.6/8.11.6) with ESMTP id g6LJE6R29699
+	for <cpunks@minder.net>; Sun, 21 Jul 2002 15:14:06 -0400
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6LJE4J77822
+	for <cpunks@minder.net>; Sun, 21 Jul 2002 15:14:04 -0400 (EDT)
+	(envelope-from cpunks@einstein.ssz.com)
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id OAA11797
+	for cpunks@minder.net; Sun, 21 Jul 2002 14:22:09 -0500
+Received: (from mdom@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id OAA11784
+	for cypherpunks-outgoing; Sun, 21 Jul 2002 14:21:19 -0500
+Received: from mkt1.verticalresponse.com (mkt1.verticalresponse.com [130.94.4.19])
+	by einstein.ssz.com (8.8.8/8.8.8) with SMTP id OAA11775
+	for <cypherpunks@einstein.ssz.com>; Sun, 21 Jul 2002 14:21:10 -0500
+Message-Id: <200207211921.OAA11775@einstein.ssz.com>
+Received: (qmail 2710 invoked from network); 21 Jul 2002 19:12:58 -0000
+Received: from unknown (130.94.4.23)
+  by 0 with QMQP; 21 Jul 2002 19:12:58 -0000
+From: "Special Deals" <unsubs-fdf2d323b4-cypherpunks=einstein.ssz.com@b.verticalresponse.com>
+To: cypherpunks@einstein.ssz.com
+Old-Subject: CDR: Are you a little behind the times?
+Date: Sun, 21 Jul 2002 19:12:58 +0000
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: multipart/alternative;
+    boundary="__________MIMEboundary__________"
+Sender: owner-cypherpunks@einstein.ssz.com
+Precedence: bulk
+Reply-To: cypherpunks@einstein.ssz.com
+X-Mailing-List: cypherpunks@ssz.com
+X-Unsubscription-Info: http://einstein.ssz.com/cdr
+X-List-Admin: list@ssz.com
+X-Loop: ssz.com
+X-Acceptable-Languages: English, Russian, German, French, Spanish
+Subject: Are you a little behind the times?
+
+This is a multi-part message in MIME format.
+
+--__________MIMEboundary__________
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+
+Are you a little behind the times? Not to worry, 123 Turnkey has your web
+building and web hosting solution, all at a a great price.
+
+Even better, you need no technical experience. Simply follow our simple
+steps and you've got your professional-looking website, it's as easy as
+123.
+
+http://r.vresp.com/?A/c4e3aadfd2
+
+***************************************************************
+Get up to date now, and build a FREE WEBSITE!
+
+**************************************************************
+Our Revolutionary Web Site Builder Includes:
+
+*WebSite updater
+
+*Hundreds of Designer Templates
+
+*Free 30 day Hosting Trial
+
+*Easy-to-build Flash Animations
+
+*Content and Promotion Tools
+
+*$10 Web Address (your site.com)
+
+*And much, much, more!
+
+CLICK HERE AND GET YOUR NEW WEB SITE!
+http://r.vresp.com/?A/1ddc718f1e
+ 
+ 
+
+
+______________________________________________________________________
+You have signed up with one of our network partners to receive email
+providing you with special offers that may appeal to you. If you do not
+wish to receive these offers in the future, reply to this email with
+"unsubscribe" in the subject or simply click on the following link:
+http://unsubscribe.verticalresponse.com/u.html?fdf2d323b4/aa3b97bcc2
+
+
+
+--__________MIMEboundary__________
+Content-Type: text/html
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> <html>
+<head>  <title>123Turnkey.COM</title> </head> <body> <STYLE
+type=text/css>.bdr {  BORDER-COLLAPSE: collapse } .ftr {  FONT-SIZE: 9pt }
+.ftr {  COLOR: Navy; } .fnt {  FONT-FAMILY: arial }  </STYLE> <table
+cellspacing="0" cellpadding="0" border="0" width="551" height="554"> <tr> 
+   <td colspan="2"><A href="http://r.vresp.com/?A/73bc136c4f"><img
+src="http://www.123turnkey.com/emailpics/c_t1.jpg" width="310" height="63"
+alt="" border="0"><img src="http://www.123turnkey.com/emailpics/c_t2.jpg"
+width="241" height="63" alt="" border="0"></A></td> </td> </tr> <tr>    
+<td><A href="http://r.vresp.com/?A/f25bad94c8"><img
+src="http://www.123turnkey.com/emailpics/c_l.jpg" width="310" height="443"
+alt="" border="0"></A></td>     <td><A
+href="http://r.vresp.com/?A/7f7443d922"><img
+src="http://www.123turnkey.com/emailpics/c_r.jpg" width="241" height="443"
+alt="" border="0"></A></td> </tr> <tr>     <td colspan="2"><A
+href="http://r.vresp.com/?A/837a1b6f4f"><img
+src="http://www.123turnkey.com/emailpics/c_b.jpg" width="551" height="48"
+alt="" border="0"></A></td> </tr> <tr>   <td colspan="2" 
+valign="middle"><br><br>   <br>   <table cellspacing="0" cellpadding="0"
+border="1" width="551" height="100" bordercolor="#FFB225"> <tr>  <td> 
+<FONT size=1 ><SPAN class=ftr>*If you cannot view Html, please read
+below.</FONT></SPAN><br>  <SPAN class=ftr><B>  <br><FONT size=4>Are you a
+little behind the times?</B></FONT><br>  Get up to date now, and build a
+<BR><FONT size=2><B>FREE WEBSITE!</B></FONT><BR>  <B><h4>Our Revolutionary
+Web Site Builder Includes:</h4></B></SPAN><FONT size=2 color="#000080">   
+  <li>WebSite updater<br>   <li>Hundreds of Designer Templates<br>  
+<li>Free 30 day Hosting Trial<br>   <li>Easy-to-build Flash Animations<br>
+  <li>Content and Promotion Tools<br>   <li>$10 Web Address (your
+site.com)<br>   <li>And much, much, more!<br><br>   <B>CLICK HERE</B><br> 
+ </FONT><FONT size=4 color="#00CCFF">   <A
+href="http://r.vresp.com/?A/731b301be8">www.123turnkey.com</A></FONT></td>
+</tr> </table>  </td> </tr> </table> </body> </html> 
+
+<br>
+                     <hr color=e0e0e0>
+                     <table border=0 cellpadding=5 cellspacing=0
+width=100%>
+                     <tr>
+                           <td><font face="arial,verdana" size=1>You have
+signed up with one of our network partners to receive email providing you
+with special offers that may appeal to you. If you do not wish to receive
+these offers in the future, reply to this email with "unsubscribe" in the
+subject or simply click on the following link: <a
+href="http://unsubscribe.verticalresponse.com/u.html?fdf2d323b4/aa3b97bcc2">Unsubscribe</a></td>
+                     </tr>
+                     </table>
+
+<img src=http://i.verticalresponse.com/blank.gif?fdf2d323b4/aa3b97bcc2>
+
+
+--__________MIMEboundary__________--
+
+.
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

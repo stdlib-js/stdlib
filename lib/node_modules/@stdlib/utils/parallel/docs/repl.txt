@@ -1,0 +1,68 @@
+
+{{alias}}( files, [options,] clbk )
+    Executes scripts in parallel.
+
+    Relative file paths are resolved relative to the current working directory.
+
+    Ordered script output does not imply that scripts are executed in order. To
+    preserve script order, execute the scripts sequentially via some other
+    means.
+
+    Parameters
+    ----------
+    files: Array<string>
+        Script file paths.
+
+    options: Object (optional)
+        Options.
+
+    options.cmd: string (optional)
+        Executable file/command. Default: `'node'`.
+
+    options.concurrency: integer (optional)
+        Number of scripts to execute concurrently. Script concurrency cannot
+        exceed the number of scripts. By specifying a concurrency greater than
+        the number of workers, a worker may be executing more than `1` script at
+        any one time. While not likely to be advantageous for synchronous
+        scripts, setting a higher concurrency may be advantageous for scripts
+        performing asynchronous tasks. If the script concurrency is less than
+        the number of workers, the number of workers is reduced to match the
+        specified concurrency. Default: `options.workers`.
+
+    options.workers: integer (optional)
+        Number of workers. Default: number of CPUs minus `1`.
+
+    options.ordered: boolean (optional)
+        Boolean indicating whether to preserve the order of script output. By
+        default, the `stdio` output for each script is interleaved; i.e., the
+        `stdio` output from one script may be interleaved with the `stdio`
+        output from one or more other scripts. To preserve the `stdio` output
+        order for each script, set the `ordered` option to `true`. Default:
+        `false`.
+
+    options.uid: integer (optional)
+        Process user identity.
+
+    options.gid: integer (optional)
+        Process group identity.
+
+    options.maxBuffer: integer (optional)
+        Max child process `stdio` buffer size. This option is only applied when
+        `options.ordered = true`. Default: `200*1024*1024`.
+
+    clbk: Function
+        Callback to invoke after executing all scripts.
+
+    Examples
+    --------
+    > function done( error ) { if ( error ) { throw error; } };
+    > var files = [ './a.js', './b.js' ];
+    > {{alias}}( files, done );
+
+    // Specify the number of workers:
+    > var opts = { 'workers': 8 };
+    > {{alias}}( files, opts, done );
+
+    See Also
+    --------
+

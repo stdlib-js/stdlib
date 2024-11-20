@@ -1,0 +1,123 @@
+From updates-admin@ximian.com  Wed Aug  7 10:31:12 2002
+Return-Path: <updates-admin@ximian.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B83EA440A8
+	for <jm@localhost>; Wed,  7 Aug 2002 05:31:11 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 07 Aug 2002 10:31:11 +0100 (IST)
+Received: from trna.ximian.com (trna.ximian.com [141.154.95.22]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g779Rtk19671;
+    Wed, 7 Aug 2002 10:27:56 +0100
+Received: from trna.ximian.com (localhost [127.0.0.1]) by trna.ximian.com
+    (8.11.6/8.11.6) with ESMTP id g76LcM300402; Tue, 6 Aug 2002 17:38:22 -0400
+Received: from peabody.ximian.com (peabody.ximian.com [141.154.95.10]) by
+    trna.ximian.com (8.11.6/8.11.6) with ESMTP id g76JfN319421 for
+    <updates@ximian.com>; Tue, 6 Aug 2002 15:41:23 -0400
+Date: Tue, 6 Aug 2002 15:41:23 -0400
+From: distribution@ximian.com
+Message-Id: <200208061941.g76JfN319421@trna.ximian.com>
+Received: (qmail 13900 invoked from network); 6 Aug 2002 19:41:56 -0000
+Received: from localhost (127.0.0.1) by localhost with SMTP;
+    6 Aug 2002 19:41:56 -0000
+Severity: Security
+Product: gaim
+Keywords: gaim jabber buffer overflow
+Url: http://support.ximian.com/q?286
+References: 
+Subject: [Ximian Updates] (no subject)
+Sender: updates-admin@ximian.com
+Errors-To: updates-admin@ximian.com
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Announcements about updates to the Ximian GNOME distribution.
+    <updates.ximian.com>
+X-Beenthere: updates@ximian.com
+To: undisclosed-recipients:;
+
+CAN-2002-0384  http://cve.mitre.org/cgi-bin/cvename.cgi?name=CAN-2002-0384
+RHSA-2002-098  http://rhn.redhat.com/errata/RHSA-2002-098.html
+Gaim Changelog http://gaim.sourceforge.net/ChangeLog
+
+Gaim is an instant messaging client based on the published TOC
+protocol from AOL. Versions of Gaim prior to 0.58 contain a buffer
+overflow in the Jabber plug-in module.
+
+Please download Gaim 0.59 or later using Red Carpet. You may also
+obtain this update from the Ximian FTP site.
+
+Debian Potato
+ftp://ftp.ximian.com/pub/ximian-gnome/debian-potato-i386/gaim_0.59-1.ximian.1_i386.deb
+ftp://ftp.ximian.com/pub/ximian-gnome/debian-potato-i386/gaim-common_0.59-1.ximian.1_i386.deb
+ftp://ftp.ximian.com/pub/ximian-gnome/debian-potato-i386/gaim-gnome_0.59-1.ximian.1_i386.deb
+
+Mandrake 8.0
+ftp://ftp.ximian.com/pub/ximian-gnome/mandrake-80-i586/gaim-0.59-1.ximian.1.i586.rpm
+
+Mandrake 8.1
+ftp://ftp.ximian.com/pub/ximian-gnome/mandrake-81-i586/gaim-0.59-1.ximian.1.i586.rpm
+
+Mandrake 8.2
+ftp://ftp.ximian.com/pub/ximian-gnome/mandrake-82-i586/gaim-0.59-1.ximian.1.i586.rpm
+
+Redhat 6.2
+ftp://ftp.ximian.com/pub/ximian-gnome/redhat-62-i386/gaim-0.59-1.ximian.1.i386.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/redhat-62-i386/gaim-applet-0.59-1.ximian.1.i386.rpm
+
+Redhat 7.0
+ftp://ftp.ximian.com/pub/ximian-gnome/redhat-70-i386/gaim-0.59-1.ximian.1.i386.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/redhat-70-i386/gaim-applet-0.59-1.ximian.1.i386.rpm
+
+Redhat 7.1
+ftp://ftp.ximian.com/pub/ximian-gnome/redhat-71-i386/gaim-0.59-1.ximian.1.i386.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/redhat-71-i386/gaim-applet-0.59-1.ximian.1.i386.rpm
+
+Redhat 7.2
+ftp://ftp.ximian.com/pub/ximian-gnome/redhat-72-i386/gaim-0.59-1.ximian.1.i386.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/redhat-72-i386/gaim-applet-0.59-1.ximian.1.i386.rpm
+
+Redhat 7.3
+ftp://ftp.ximian.com/pub/ximian-gnome/redhat-73-i386/gaim-0.59-1.ximian.1.i386.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/redhat-73-i386/gaim-applet-0.59-1.ximian.1.i386.rpm
+
+Solaris 7/8
+ftp://ftp.ximian.com/pub/ximian-gnome/solaris-7-sun4/gaim-0.59-1.ximian.1.sparc.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/solaris-7-sun4/gaim-applet-0.59-1.ximian.1.sparc.rpm
+
+SuSE 7.1
+ftp://ftp.ximian.com/pub/ximian-gnome/suse-71-i386/gaim-0.59-1.ximian.1.i386.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/suse-71-i386/gaim-applet-0.59-1.ximian.1.i386.rpm
+
+SuSE 7.2
+ftp://ftp.ximian.com/pub/ximian-gnome/suse-72-i386/gaim-0.59-1.ximian.1.i386.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/suse-72-i386/gaim-applet-0.59-1.ximian.1.i386.rpm
+
+SuSE 7.3
+ftp://ftp.ximian.com/pub/ximian-gnome/suse-73-i386/gaim-0.59-1.ximian.1.i386.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/suse-73-i386/gaim-applet-0.59-1.ximian.1.i386.rpm
+
+SuSE 8.0
+ftp://ftp.ximian.com/pub/ximian-gnome/suse-80-i386/gaim-0.59-1.ximian.1.i386.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/suse-80-i386/gaim-applet-0.59-1.ximian.1.i386.rpm
+
+Yellowdog 2.0
+ftp://ftp.ximian.com/pub/ximian-gnome/yellowdog-20-ppc/gaim-0.59-1.ximian.1.ppc.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/yellowdog-20-ppc/gaim-applet-0.59-1.ximian.1.ppc.rpm
+
+Yellowdog 2.1
+ftp://ftp.ximian.com/pub/ximian-gnome/yellowdog-21-ppc/gaim-0.59-1.ximian.1.ppc.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/yellowdog-21-ppc/gaim-applet-0.59-1.ximian.1.ppc.rpm
+
+Yellowdog 2.2
+ftp://ftp.ximian.com/pub/ximian-gnome/yellowdog-22-ppc/gaim-0.59-1.ximian.1.ppc.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/yellowdog-22-ppc/gaim-applet-0.59-1.ximian.1.ppc.rpm
+
+
+
+_______________________________________________
+updates maillist  -  updates@ximian.com
+http://lists.ximian.com/mailman/listinfo/updates
+Please DO NOT reply to this list!  Use bugs@helixcode.com or hello@helixcode.com instead.
+
+

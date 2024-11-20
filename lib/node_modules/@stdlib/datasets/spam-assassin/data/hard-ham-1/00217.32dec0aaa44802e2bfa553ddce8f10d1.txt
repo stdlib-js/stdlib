@@ -1,0 +1,79 @@
+Return-Path: ler@lerami.lerctr.org
+Delivery-Date: Fri Sep 13 18:08:13 2002
+Received: via dmail-2002(12) for +lists/openssl-users; Fri, 13 Sep 2002 18:08:13 -0500 (CDT)
+Return-Path: <owner-mmx-openssl-users@mmx.engelschall.com>
+Received: from mmx.engelschall.com (mmx.engelschall.com [195.27.130.252])
+	by lerami.lerctr.org (8.12.2/8.12.2/20020902/$Revision: 1.30 $) with ESMTP id g8DN85E9016862
+	for <ler@lerctr.org>; Fri, 13 Sep 2002 18:08:06 -0500 (CDT)
+Received: by mmx.engelschall.com (Postfix)
+	id 70F60193A6; Sat, 14 Sep 2002 01:07:09 +0200 (CEST)
+Received: from opensource.ee.ethz.ch (opensource-01.ee.ethz.ch [129.132.7.153])
+	by mmx.engelschall.com (Postfix) with ESMTP id 0F1AE19336
+	for <mmx-openssl-users@mmx.engelschall.com>; Sat, 14 Sep 2002 01:07:09 +0200 (CEST)
+Received: by en5.engelschall.com (Sendmail 8.9.2) for openssl-users-L
+	id BAA14536; Sat, 14 Sep 2002 01:06:22 +0200 (MET DST)
+Received: by en5.engelschall.com (Sendmail 8.9.2) via ESMTP for <openssl-users@openssl.org>
+	from gordy.ucdavis.edu id BAA14187; Sat, 14 Sep 2002 01:05:18 +0200 (MET DST)
+Received: from AE3130LW (ae-3130-lw.ucdavis.edu [169.237.57.172])
+	by gordy.ucdavis.edu (8.9.3/8.9.3) with SMTP id QAA16776
+	for <openssl-users@openssl.org>; Fri, 13 Sep 2002 16:05:16 -0700 (PDT)
+From: "Laurie Warren" <laurie@primal.ucdavis.edu>
+To: <openssl-users@openssl.org>
+Subject: Securing multiple virtual hosts
+Date: Fri, 13 Sep 2002 16:07:47 -0700
+Message-ID: <EBEDJOALNPEIOACFPPNLEEIACJAA.laurie@primal.ucdavis.edu>
+MIME-Version: 1.0
+Content-Type: text/plain;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2910.0)
+X-MimeOLE: Produced By Microsoft MimeOLE V5.50.4910.0300
+Importance: Normal
+Sender: owner-openssl-users@openssl.org
+Precedence: bulk
+Reply-To: openssl-users@openssl.org
+X-Sender: "Laurie Warren" <laurie@primal.ucdavis.edu>
+X-List-Manager: OpenSSL Majordomo [version 1.94.4]
+X-List-Name: openssl-users
+X-Virus-Scanned: by amavisd-milter (http://amavis.org/)
+X-Status: 
+X-Keywords: 
+
+I am trying to secure three of four virtual hostnames on our Apache server.
+We are not taking credit card orders or user's personal information, but are
+merely hoping to secure email and calendar web transactions for our users.
+We are not running any secure applications on the root host.
+
+I have been testing this week with CA, client, and host certificate
+requests, certificates, and keys, and think I have a fairly good beginner's
+grasp of the commands and command line options.
+
+
+My questions are:
+
+1.  Is it necessary to create a CA certificate for each of the secure
+virtual hosts, or can one CA certificate for the root be used to sign each
+of the keys for all three common names we are trying to secure?
+
+2.  Even though the root host is not conducting secure transactions, am I
+correct in configuring the server with a CACertificateFile in the main body
+of httpsd.conf and then setting the CACertificateFile for each virtual host
+in the <Virtual . . .> section of httpsd.conf?  This sort of assumes the
+answer to 1. is  - you need a CA for each virtual host.
+
+3.  Is it necessary to create a client certificate to distribute to our
+users, or is it sufficient to have the CA certificate and a server
+certificate for the virtual hosts?  Wouldn't a client certificate only be
+necessary if we were trying to verify the client's identity?  Would that be
+a good idea given our scenario?
+
+Thanks in advance for your help.
+
+
+______________________________________________________________________
+OpenSSL Project                                 http://www.openssl.org
+User Support Mailing List                    openssl-users@openssl.org
+Automated List Manager                           majordomo@openssl.org
+

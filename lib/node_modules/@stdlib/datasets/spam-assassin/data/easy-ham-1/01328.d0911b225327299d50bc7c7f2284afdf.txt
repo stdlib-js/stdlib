@@ -1,0 +1,76 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Mon Aug 26 18:01:29 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 037BD44157
+	for <jm@localhost>; Mon, 26 Aug 2002 13:01:23 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 18:01:23 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7QGroZ01354 for <jm-sa@jmason.org>; Mon, 26 Aug 2002 17:53:50 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17jN6t-00043a-00; Mon,
+    26 Aug 2002 09:53:03 -0700
+Received: from moon.campus.luth.se ([130.240.202.158]) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17jN5x-0008MY-00 for
+    <spamassassin-talk@lists.sourceforge.net>; Mon, 26 Aug 2002 09:52:05 -0700
+Received: from moon.campus.luth.se (tony@moon.campus.luth.se
+    [130.240.202.158]) by moon.campus.luth.se (8.12.3/8.12.3) with ESMTP id
+    g7QGppMg098356; Mon, 26 Aug 2002 18:51:51 +0200 (CEST) (envelope-from
+    tony@svanstrom.com)
+From: "Tony L. Svanstrom" <tony@svanstrom.com>
+X-X-Sender: tony@moon.campus.luth.se
+To: CertaintyTech <ed.henderson@certainty.net>
+Cc: satalk <spamassassin-talk@example.sourceforge.net>
+Subject: Re: [SAtalk] From: and To: are my address
+In-Reply-To: <003501c24d1c$25a83980$6400a8c0@pnt004>
+Message-Id: <20020826185114.J97541-100000@moon.campus.luth.se>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Mon, 26 Aug 2002 18:51:51 +0200 (CEST)
+Date: Mon, 26 Aug 2002 18:51:51 +0200 (CEST)
+
+On Mon, 26 Aug 2002 the voices made CertaintyTech write:
+
+> Recently I have been receiving Spam where both the From: and To: address are
+> set to my address therefore getting thru due to AWL.  Any suggestions on
+> this one?  I could turn off AWL but it does have advantages.  BTW, I use a
+> site-wide AWL.
+
+ Use cron to remove your address from the AWL daily...?!
+
+	/Tony
+-- 
+# Per scientiam ad libertatem! // Through knowledge towards freedom! #
+# Genom kunskap mot frihet! =*= (c) 1999-2002 tony@svanstrom.com =*= #
+
+     perl -e'print$_{$_} for sort%_=`lynx -dump svanstrom.com/t`'
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

@@ -1,0 +1,83 @@
+From rpm-list-admin@freshrpms.net  Wed Oct  9 10:53:15 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id 7447D16F7F
+	for <zzzz@localhost>; Wed,  9 Oct 2002 10:52:16 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 09 Oct 2002 10:52:16 +0100 (IST)
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9999BK27619 for
+    <zzzz-rpm@spamassassin.taint.org>; Wed, 9 Oct 2002 10:09:11 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g99941f25722; Wed, 9 Oct 2002 11:04:01
+    +0200
+Received: from python (gw01.es3.egwn.net [212.9.66.13]) (authenticated) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g9993Df23422 for
+    <rpm-list@freshrpms.net>; Wed, 9 Oct 2002 11:03:13 +0200
+From: Matthias Saou <matthias@rpmforge.net>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: Apt repository authentication: it's time
+Message-Id: <20021009110311.32c22ea5.matthias@rpmforge.net>
+In-Reply-To: <20021008175452.581c0e50.kilroy@kamakiriad.com>
+References: <20021008175452.581c0e50.kilroy@kamakiriad.com>
+Organization: freshrpms.net / rpmforge.net
+X-Mailer: Sylpheed version 0.8.3claws (GTK+ 1.2.10; i386-redhat-linux)
+X-Operating-System: Red Hat GNU/Linux forever!
+X-Subliminal-Message: Use Linux... use Linux... use Linux...
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Wed, 9 Oct 2002 11:03:11 +0200
+Date: Wed, 9 Oct 2002 11:03:11 +0200
+
+Once upon a time, Brian wrote :
+
+>      OK, it's now time to work out the PGP securing of apt repository
+>      traffic. I've never gotten anything but "sitename.whatever will not
+>      be authenticated" until running Redhat 8.0 when I get something
+>      about having "No Key" for various files.
+
+I don't think gpg signing my repositories will help anything, as it will
+just ensure that my passphrase was typed to confirm the md5 signatures of
+all pgklists and srclists. Basically, you'll then just be sure that it's me
+who generated the files, and this will of course prevent automating the
+process of updating the apt repository when Red Hat updates show up.
+
+In Red Hat Linux 8.0 though, the warnings about "No Key" appear until you
+import the right gpg public keys directly with rpm, for example :
+rpm --import /usr/share/doc/apt-0.5.4cnc7/RPM-GPG-KEY
+(this will import my key, which is used to sign all freshrpms.net packages)
+
+Hopefully it is possible to the tell rpm to install *only* packages who
+verify against an imported gpg key? This for me would be the optimal way to
+ensure integrity with the way things curently work.
+
+Matthias
+
+-- 
+Clean custom Red Hat Linux rpm packages : http://freshrpms.net/
+Red Hat Linux release 7.3 (Valhalla) running Linux kernel 2.4.18-10acpi
+Load : 0.14 0.18 0.17
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

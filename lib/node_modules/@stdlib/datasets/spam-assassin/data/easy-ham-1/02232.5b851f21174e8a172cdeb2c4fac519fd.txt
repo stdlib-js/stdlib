@@ -1,0 +1,42 @@
+From rssfeeds@jmason.org  Thu Oct  3 12:25:14 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id E81C716F7C
+	for <jm@localhost>; Thu,  3 Oct 2002 12:24:16 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 03 Oct 2002 12:24:16 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g93810K19959 for
+    <jm@jmason.org>; Thu, 3 Oct 2002 09:01:00 +0100
+Message-Id: <200210030801.g93810K19959@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: boingboing <rssfeeds@spamassassin.taint.org>
+Subject: Blog de jeanpoole interviews Mark
+Date: Thu, 03 Oct 2002 08:01:00 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://boingboing.net/#85516609
+Date: Not supplied
+
+Here's a brief interview with me.  
+
+    *Interviewer:* If the Boing Boing zine and blog were TV characters, who'd 
+    they be, and how'd they get on? 
+
+    *Mark:* The zine would be Jethro Bodine of "The Beverly Hillbillies" -- 
+    curious, neophilic, xenophilic, gleeful, and eager to adopt any new theory 
+    or conspiracy as the absolute truth. The Blog would be Sherman from 
+    "Peabody's Improbable History" -- a traveler of time and space in search of 
+    beauty, truth, and the outre. I think Jethro bOING bOING and Sherman Boing 
+    Boing would be great pals. Jethro would invite Sherman's dog, Mr. Peabody, 
+    to go raccoon hunting with him, and Sherman would send Jethro 40 years into 
+    the future to hang out at the Playboy Mansion.  
+
+Link[1] Discuss[2]
+
+[1] http://www.octapod.org/jeanpoole/archives/000203.html#000203
+[2] http://www.quicktopic.com/16/H/kymC9LzuB2bHM
+
+

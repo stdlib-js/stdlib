@@ -1,0 +1,806 @@
+Return-Path: <fool@motleyfool.com>
+Received: (qmail 18981 invoked by alias); 25 Jul 2002 18:17:17 -0000
+Received: (qmail 18972 invoked by uid 82); 25 Jul 2002 18:17:17 -0000
+Received: from fool@motleyfool.com by mailhost with qmail-scanner-1.00 (uvscan: v4.1.40/v4214. . Clean. Processed in 22.559397 secs); 25 Jul 2002 18:17:17 -0000
+Received: from mail7.motleyfool.com (HELO ironport2.motleyfool.com) (63.251.90.77)
+  by mi-1.rz.ruhr-uni-bochum.de with SMTP; 25 Jul 2002 18:16:54 -0000
+Received: from [63.251.90.15]
+	by mail7.motleyfool.com (63.251.90.17) with QMQP; 25 Jul 2002 14:16:08 +0000
+To: xxxxxx.yyyyyyyyyy@ruhr-uni-bochum.de
+From: The Motley Fool <Fool@MotleyFool.com>
+Reply-To: The Motley Fool <CS@FoolMart.com>
+Subject: When to Sell Online Seminar, Lesson 2: Companies Gone Wrong
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary=Groovy-Foolish-Boundary-2A6F4DA4EE1F4ABCB782
+Priority: 5
+Date: Thu, 25 Jul 2002 14:16:03 -0400
+Message-ID: <20020725141603.4431.16.90@mail5.motleyfool.com>
+
+******************************************************************* 
+IF YOU ARE READING THIS, YOU MAY NOT HAVE A MIME VERSION 1.0
+COMPATIBLE MAIL READER. TO CONVERT YOUR SUBSCRIPTION TO PLAIN
+TEXT OR TO UNSUBSCRIBE, SEND AN EMAIL TO otto@fool.com OR VISIT
+http://www.fool.com/community/freemail/freemaillogin.asp
+*******************************************************************
+
+--Groovy-Foolish-Boundary-2A6F4DA4EE1F4ABCB782
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+
+=================================================================
+                 THE MOTLEY FOOL ONLINE SEMINAR
+           WHEN TO SELL: THE FOOLISH SELLING STRATEGY
+
+=================================================================
+SEMINAR RESOURCES
+=================================================================
+
+START PAGE
+http://www.fool.com/m.asp?i=690047
+
+ORIENTATION
+http://www.fool.com/m.asp?i=690048
+
+DOWNLOADS
+http://www.fool.com/m.asp?i=690049
+
+LESSON RESOURCES
+http://www.fool.com/m.asp?i=690050
+
+DISCUSSION BOARD INTRO
+http://www.fool.com/m.asp?i=690051
+
+DISCUSSION BOARD FAQ
+http://www.fool.com/m.asp?i=690052
+
+HOW DO I...?
+http://www.fool.com/m.asp?i=690053
+
+CHOOSE YOUR TEAM
+http://www.fool.com/m.asp?i=690054
+
+=================================================================
+
+LESSON 2: COMPANIES GONE WRONG
+
+Instructors: Bill Mann, TMF Otter (with Matt Richey, TMF Matt)
+http://www.fool.com/m.asp?i=690055
+http://www.fool.com/m.asp?i=690056
+
+In Lesson 1, we offered a list of red flags that trigger instant
+sales. These things are pretty easy to spot, if you keep up with
+current events surrounding the companies you hold.
+
+Notice that we didn't spend much (meaning any) time discussing
+Wall Street analyst upgrades or downgrades. This is for one
+reason: We don't care what analysts think, and we certainly
+don't put any credence in their deeply compromised ratings systems.
+
+Sure, we read analyst research. After all, many analysts have
+significantly more access to business management than we ever
+will as individual investors, so they can have some valuable
+insights. But if you want to watch a much better predictor of
+company trouble than analyst rating systems, watch the bond
+market (more on this later). "Strong buy?" Pfffffft.
+
+In this lesson, we look specifically at signs that a company is
+slipping. Investors need to remember one key point: For highly
+valued companies, it only takes a small slip to lead to a large
+share price decline. For example, a company priced at a multiple
+of 30 times earnings is expected to grow faster than one that is
+priced at 15 times. As a result, investors in the high-multiple
+company are much more likely to be traumatized if its business
+starts to show slowing growth (in earnings, sales, cash flows,
+whatever). Thus, with highly valued companies in particular,
+it's important to be vigilant in monitoring any slips. Even a
+company that's growing nicely may be sending clear sell signals.
+
+So let's look at a few instances where companies have started to
+go wrong. Our goal here is to learn how to recognize the warning
+signs of an impending stock collapse before it happens.
+
+WARNING SIGN 1: SLOWING SALES GROWTH
+Through 2000, Nokia (NYSE: NOK) could do no wrong. It was one of
+the fastest-growing stocks in the '90s and the largest, best
+capitalized participant in one of the hottest sectors of the
+market: wireless telecommunications. In 2000, Nokia posted
+revenue gains well in excess of 50% each quarter. Then, in April
+2001, it hit a clunker -- 22% growth, followed by 5% growth the
+next quarter. For investors in a high-multiple (high P/E)
+company, this is rough. For most companies, a second quarter in
+a row of dramatically slowing sales is enough. Get out. For a
+barnburner like Nokia, one is enough.
+
+Some words of wisdom: Keep companies in one of the hottest
+sectors on a very short leash. Hot sectors cool off -- they
+always do. Remember, railroads were once the hot sector, then
+canals, car companies, radios, and so on. It ends. Be ready. If
+you're expecting sales to continue roaring full-steam ahead and
+they don't, it's time to position your finger on the sell
+trigger. If sales growth slows unexpectedly, be prepared to give
+a company one quarter to bring up its performance. But unload on
+the second straight quarter of slowing sales, measured on a
+year-over-year basis. (Always compare the quarterly growth on a
+year-over-year basis -- a comparison of sequential quarterly
+growth is a worthless measure. Seasonal effects can skew
+sequential growth.)
+
+WARNING SIGN 2: DIVERGENT SALES AND PROFIT GROWTH
+By April 2001, Nokia had shed some 60% of its peak value. Signs
+were surely evident in advance, right? Why, yes. Companies
+growing top lines (sales) should generally be growing bottom
+lines (earnings) at a similar clip. Even though Nokia's sales
+were growing through 2000 at 50%-plus per quarter, at the end
+of the year, net profit growth dropped suddenly from around 70%
+to 40%.
+
+Profits recovered slightly in the fourth quarter, only to
+collapse in the first two quarters of 2001. The economics
+changed quickly, and with a hyper-growth company, the stock
+reacted just as fast. Even those not deeply versed in the
+technology and economics of the mobile phone industry could see
+signs that something was wrong.
+
+WARNING SIGN 3: PLUMMETING CASH FLOWS
+In 1999, Lucent (NYSE: LU) looked beautiful from an earnings
+perspective, but horrible from a cash flow perspective. We look
+at two numbers: operating cash flow and free cash flow. Free
+cash flow can be low for growing companies, as they have
+significant capital investment demands, but low operating cash
+flow is inexcusable. Lucent's experiences are telling. In 1999,
+Lucent's full-year earnings came out at a gaudy $4.7 billion,
+based upon $38 billion in revenue. The company was on top of the
+world, and it was, at the time, the largest telecommunications
+equipment company by market cap, at $260 billion.
+http://www.fool.com/m.asp?i=690057
+http://www.fool.com/m.asp?i=690058
+
+But as Matt and I detailed in January 2000, big troubles were
+afoot, lurking in the company's cash flow statement. On an
+operating cash flow basis for fiscal 1999, the company lost
+$276 million. That's a far cry from the $4.7 billion in
+reported net income. And on top of that, Lucent had more than
+$2.2 billion in capital expenditures. Thus, the difference
+between Lucent's earnings and its free cash flow (operating
+cash flow minus capital expenditures) was an amazing $7.3
+billion, and not in a good way.
+http://www.fool.com/m.asp?i=690059
+
+The investor who picked up on this scary dichotomy could have
+saved herself losses in excess of 98%. (As an aside, since 1999,
+Lucent has gone on to restate its 1999 cash flow not once, but
+twice, and in the most recent 10-K, the 1999 operating cash flow
+is reported as a loss of $1.8 billion.)
+
+And get this -- you'll see nearly the exact same thing on
+Enron's old financial statements. Cooked books or no, they
+weren't generating much cash. In fact, they were destroying it.
+
+WARNING SIGN 4: WATCH THOSE BONDS
+Remember what we said about ignoring analysts? Well, it's
+because their information can be quite conflicted, and it's
+almost impossible to tell if any one individual has your best
+interests in mind. Fortunately, another group can give you the
+same type of signals: investors who hold a company's bonds.
+
+Bondholders buy a piece of a company's debt and are generally
+paid interest on this obligation by the company. Watch the
+current price of a bond, and it will tell you the current odds
+bondholders are giving to that obligation being paid. I
+recommend keeping a log sheet where you write down the price of
+the bond. Download it here. If you see a drop, the bondholders
+are growing pessimistic. You might even see this at the same
+time analysts are shouting, "Strong buy!"
+http://www.fool.com/m.asp?i=690060
+http://www.fool.com/m.asp?i=690061
+
+I recommend the Yahoo! Bond Center. You can search on any company
+and get a list of existing bonds. Find a bond with a maturity
+between five and 10 years hence. Check the price. A bond priced
+at 100 is at "par," which means that the bond's face-value
+interest rate fairly compensates the investor for the risk. Some
+bonds are priced above 100, meaning the interest yield will be
+lower than face value. These are considered to be very low risk.
+But some are priced below face value, even way below.
+http://www.lnksrv.com/m.asp?i=690062
+
+As of this writing, WorldCom (Nasdaq: WCOME) bonds are priced at
+18, which means that bondholders assume there's little chance
+they'll be paid. Tyco (NYSE: TYC), for all of its recent
+problems and high levels of debt, has 6.75% interest bonds, with
+2011 maturity priced at 83. That's a discount to face, but not
+one that alludes to an imminent default. Qwest (NYSE: Q) sports
+a price of 85 on its 7.25% 2011 bonds, even closer to par than
+Tyco. These prices don't indicate healthy companies, but they
+don't insinuate imminent default or bankruptcy either.
+
+WARNING SIGN 5: "IT JUST DOESN'T GET ANY BETTER"
+For a brief time in 2000, Cisco Systems (Nasdaq: CSCO) was the
+largest company in the world by market capitalization. This
+should have been a warning. As I wrote in May 2000 when the
+stock was around $57, Cisco's valuation of nearly $400 billion
+implied that investors expected the company's earnings to reach
+$34 billion in 2010. Yet no company had ever generated earnings
+higher than $12 billion in a single year.
+http://www.fool.com/m.asp?i=690063
+
+As it turned out, I almost perfectly called the top for Cisco --
+it has shed nearly $300 billion in market cap since that
+article. Only those that decided it couldn't possibly get any
+better achieved a sale near the high watermark. Cisco showed no
+signs of a decline. For the quarter that ended Jan. 29, 2000,
+Cisco turned in sales of $4.3 billion, as compared to $2.8
+billion for the same quarter the year before -- a growth rate of
+53%. The following quarter was 58% higher, then 62% higher, then
+66% higher.
+
+Only Cisco's stock price rise could beat these numbers. Imagine
+a $385 billion company with a P/E of 156! The assumptions for
+future growth were mind-bending, though at the time, in the
+midst of the data revolution, they seemed plausible. As
+investors, we must be on the correct side of probabilities.
+Taking a portion of our Cisco investment off the table, at this
+point, would've been a smart choice. Remember, Cisco's business
+was fine in 2000, but the enterprising investor knows that a lot
+has to be right for the situation to work out.
+
+HOMEWORK
+For this lesson, we ask you to do the same thing as we did after
+Lesson 1. Pick a company -- maybe even the same company you
+looked at last time -- to continue studying. For your company,
+do the following:
+
+- Track the year-over-year sales growth for each of the past four
+  quarters and three fiscal years. Is growth accelerating,
+  staying about the same, or weakening?
+
+- Track the year-over-year net income growth for each of the past
+  four quarters and three fiscal years. Is net income growing
+  slower or faster than sales? Is there a trend to these figures?
+
+- Track your company's operating cash flow for each of the past
+  three fiscal years. Is it lower or higher than reported net
+  income for the corresponding year? (We're not having you look
+  at quarterly cash flow because those figures can bounce around
+  due to the timing of payments. Annual cash flow data is much
+  more indicative of real cash flow trends.)
+
+- If your company has long-term debt, go the Yahoo! Bond Center
+  and check the price of your company's bonds. (If you don't know
+  whether your company has any debt, just type your company name
+  into the bond center and see if any debt shows up.)
+  http://www.lnksrv.com/m.asp?i=690064
+
+- Finally, examine your company's market cap relative to its
+  current net income over the past year. What's the P/E ratio? Is
+  there reason to believe your company has every rosy scenario
+  already priced into its stock? (In the current bear market,
+  this is much less likely than it was a few years ago, but it's
+  still a question you should consider.)
+
+To help you out, we've put together the Foolish Stock Information
+Form to track all of your research and information about your
+stocks. You can get to by clicking here. We've also outlined how
+to find all of the information above, here.
+http://www.fool.com/m.asp?i=690065
+http://www.fool.com/m.asp?i=690066
+
+So dust off the old calculator, find your company's financials,
+and get to work. Quarterly financial data is best found in
+company 10-Qs, and annual data is best found in company 10-Ks.
+You should be able to find all of this information using
+financials from either the company website or at Fool.com on the
+Quotes & Data area.
+http://www.fool.com/m.asp?i=690067
+
+FEELING A LITTLE LOST?
+If you're new to using SEC filings, read this overview of
+financial statements. Above all else, just do your best. Once
+you've done what you can, report your findings to your teammates!
+We've also put together an ongoing list of resources so you can
+dive in a little deeper. You can click on the "Lesson Resources"
+link in the right column or click here to find more resources to
+help you better understand financial statements, general
+investing equations, and stock options.
+http://www.fool.com/m.asp?i=690068
+http://www.fool.com/m.asp?i=690069
+
+Matt and I will be joining you on the boards with our own
+analyses, so you can examine our processes.
+http://www.fool.com/m.asp?i=690070
+
+Fool on!
+
+Bill and Matt
+
+
+=================================================================
+LESSON PLAN
+=================================================================
+Lesson 1: On Selling
+http://www.fool.com/m.asp?i=690071
+
+Lesson 2: Companies Gone Wrong
+http://www.fool.com/m.asp?i=690072
+
+Lesson 3: Gut Checks and Safety Valves
+
+Lesson 4: When a Company Becomes Overvalued
+
+Lesson 5: Report Card Part 1 - Business Prospects
+
+Lesson 6: Report Card Part 2 - Valuation
+
+Lesson 7: Panning for Panera
+
+Lesson 8: The Report in Action - Johnson & Johnson
+
+=================================================================
+This Seminar contains the opinions and ideas of The Motley Fool.
+It is provided with the understanding that The Motley Fool is not
+engaged in rendering financial or other professional services.
+The Motley Fool specifically disclaims any responsibility for
+any liability, loss, or risk, personal or otherwise, which is
+incurred as a consequence, directly or indirectly, of the use
+and application of any of the contents of this Seminar.
+Copyright (c) 1995-2002 The Motley Fool. All rights reserved.
+Legal Information: http://www.fool.com/m.asp?i=554475
+--Groovy-Foolish-Boundary-2A6F4DA4EE1F4ABCB782
+Content-Type: text/html
+Content-Disposition: inline
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html" />
+<title>The Motley Fool Online Seminar: When To Sell: The Foolish Selling Strategy</title>
+<meta name="STORY_UID" content="188082" />
+<map name="Seminar_EV_navbar_Map">
+<area shape="rect" coords="473,0,624,27" href="http://www.fool.com/m.asp?i=690007" />
+<area shape="rect" coords="315,0,470,27" href="http://www.fool.com/m.asp?i=690008" />
+<area shape="rect" coords="157,0,312,27" href="http://www.fool.com/m.asp?i=690027">
+</area>
+<area shape="rect" coords="0,0,155,27" href="http://www.fool.com/m.asp?i=690009" />
+</map>
+<map name="Seminar_EV_navbar_Map_sm">
+<area shape="rect" coords="396,3,546,22" href="http://www.fool.com/m.asp?i=690010" />
+<area shape="rect" coords="236,4,389,22" href="http://www.fool.com/m.asp?i=690011" />
+<area shape="rect" coords="78,3,231,23" href="http://www.fool.com/m.asp?i=690028">
+</area>
+</map>
+</head>
+<body bgcolor="#003366" link="#003366" vlink="#003366" alink="#ff0000">
+<div align="center">
+<table width="638" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td><img src="http://g.fool.com/art/new/seminars/templates/EV_TL.gif" width="6" height="7" /></td>
+<td background="http://g.fool.com/art/new/seminars/templates/EV_Top.gif" height="7"><img src="http://g.fool.com/art/spacer.gif" width="1" height="7" alt="" /></td>
+<td><img src="http://g.fool.com/art/new/seminars/templates/EV_TR.gif" width="6" height="7" /></td>
+</tr>
+<tr bgcolor="#336699">
+<td><img src="http://g.fool.com/art/new/seminars/templates/EV_Title_L.gif" width="6" height="64" /></td>
+<td>
+<table width="624" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td><img src="http://g.fool.com/art/new/seminars/templates/EV_logo.gif" width="161" height="64" /></td>
+<td><img src="http://g.fool.com/art/new/seminars/titles/WTSTitle.gif" border="0" alt="When To Sell: The Foolish Selling Strategy" /></td>
+<td width="100%" />
+</tr>
+</table>
+</td>
+<td><img src="http://g.fool.com/art/new/seminars/templates/EV_Title_R.gif" width="6" height="64" /></td>
+</tr>
+<tr>
+<td valign="top"><img src="http://g.fool.com/art/new/seminars/templates/EV_navbar_L.gif" width="6" height="27" /></td>
+<td bgcolor="#999966" align="center"><img src="http://g.fool.com/art/new/seminars/templates/EV_navbar.gif" width="626" height="27" border="0" alt="" usemap="#Seminar_EV_navbar_Map" /></td>
+<td valign="top"><img src="http://g.fool.com/art/new/seminars/templates/EV_navbar_R.gif" width="6" height="27" /></td>
+</tr>
+<tr>
+<td width="6" bgcolor="#ffffff"><img src="http://g.fool.com/art/spacer.gif" width="6" height="1" alt="" /></td>
+<td valign="top" bgcolor="#ffffff">
+<table width="626" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td bgcolor="#ffffff" valign="top">
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td><img src="http://g.fool.com/art/spacer.gif" width="1" height="12" alt="" /></td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="10" border="0">
+<tr>
+<td>
+<font face="arial,helvetica,geneva,sans-serif" size="+1">
+<b>Lesson 2: Companies Gone Wrong</b>
+</font>
+<br />
+<font face="arial,helvetica,geneva,sans-serif" size="3">
+<b></b>
+</font>
+<br />
+<font face="verdana,arial,geneva,sans-serif" size="-1">
+<b>Instructors:</b>
+<a href="http://www.fool.com/m.asp?i=690012">
+Bill Mann, TMF Otter</a> (with <a href="http://www.fool.com/m.asp?i=690013">Matt Richey, TMF Matt</a>)
+
+<br /><br />
+<P>In Lesson 1, we offered a list of red flags that trigger instant sales. These things are pretty easy to spot, if you keep up with current events surrounding the companies you hold.
+<BR><BR>Notice that we didn't spend much (meaning any) time discussing Wall Street analyst upgrades or downgrades. This is for one reason: We don't care what analysts think, and we certainly don't put any credence in their deeply compromised ratings systems.</P>
+<P></P>
+<P>Sure, we read analyst research. After all, many analysts have significantly more access to business management than we ever will as individual investors, so they can have some valuable insights. But if you want to watch a much better predictor of company trouble than analyst rating systems, watch the bond market (more on this later). "Strong buy?" Pfffffft.</P>
+<P></P>
+<P>In this lesson, we look specifically at signs that a company is slipping. Investors need to remember one key point: For highly valued companies, it only takes a small slip to lead to a large share price decline. For example, a company priced at a multiple of 30 times earnings is expected to grow faster than one that is priced at 15 times. As a result, investors in the high-multiple company are much more likely to be traumatized if its business starts to show slowing growth (in earnings, sales, cash flows, whatever). Thus, with highly valued companies in particular, it's important to be vigilant in monitoring any slips. Even a company that's growing nicely may be sending clear sell signals.</P>
+<P></P>
+<P>So let's look at a few instances where companies have started to go wrong. Our goal here is to learn how to recognize the warning signs of an impending stock collapse before it happens.</P>
+<P><STRONG><STRONG></STRONG></STRONG></P>
+<P><STRONG>Warning sign 1: Slowing sales growth <BR></STRONG>Through 2000, <STRONG>Nokia</STRONG> (NYSE: NOK) could do no wrong. It was one of the fastest-growing stocks in the '90s and the largest, best capitalized participant in one of the hottest sectors of the market: wireless telecommunications. In 2000, Nokia posted revenue gains well in excess of 50% each quarter. Then, in April 2001, it hit a clunker -- 22% growth, followed by 5% growth the next quarter. For investors in a high-multiple (high P/E) company, this is rough. For most companies, a second quarter in a row of dramatically slowing sales is enough. Get out. For a barnburner like Nokia, one is enough.</P>
+<P></P>
+<P>Some words of wisdom: Keep companies in one of the hottest sectors on a very short leash. Hot sectors cool off -- they always do. Remember, railroads were once the hot sector, then canals, car companies, radios, and so on. It ends. Be ready. If you're expecting sales to continue roaring full-steam ahead and they don't, it's time to position your finger on the sell trigger. If sales growth slows unexpectedly, be prepared to give a company one quarter to bring up its performance. But unload on the second straight quarter of slowing sales, measured on a year-over-year basis. (Always compare the quarterly growth on a year-over-year basis -- a comparison of sequential quarterly growth is a worthless measure. Seasonal effects can skew sequential growth.)</P>
+<P></P>
+<P><STRONG>Warning sign 2: Divergent sales and profit growth <BR></STRONG>By April 2001, Nokia had shed some 60% of its peak value. Signs were surely evident in advance, right? Why, yes. Companies growing top lines (sales) should generally be growing bottom lines (earnings) at a similar clip. Even though Nokia's sales were growing through 2000 at 50%-plus per quarter, at the end of the year, net profit growth dropped suddenly from around 70% to 40%.</P>
+<P></P>
+<P>Profits recovered slightly in the fourth quarter, only to collapse in the first two quarters of 2001. The economics changed quickly, and with a hyper-growth company, the stock reacted just as fast. Even those not deeply versed in the technology and economics of the mobile phone industry could see signs that something was wrong. <EM><EM></EM></EM></P>
+<P></P>
+<P><STRONG>Warning sign 3: Plummeting cash flows<BR></STRONG>In 1999, <STRONG>Lucent</STRONG> (NYSE: LU) looked beautiful from an earnings perspective, but horrible from a cash flow perspective. We look at two numbers: <A href="http://www.fool.com/m.asp?i=690014">operating cash flow</A> and <A href="http://www.fool.com/m.asp?i=690015">free cash flow</A>. Free cash flow can be low for growing companies, as they have significant capital investment demands, but low operating cash flow is inexcusable. Lucent's experiences are telling. In 1999, Lucent's full-year earnings came out at a gaudy $4.7 billion, based upon $38 billion in revenue. The company was on top of the world, and it was, at the time, the largest telecommunications equipment company by market cap, at $260 billion.</P>
+<P></P>
+<P>But as Matt and I <A href="http://www.fool.com/m.asp?i=690016">detailed in January 2000</A>, big troubles were afoot, lurking in the company's cash flow statement. On an operating cash flow basis for fiscal 1999, the company <EM>lost</EM> $276 million. That's a far cry from the $4.7 billion in reported net income. And on top of that, Lucent had more than $2.2 billion in capital expenditures. Thus, the difference between Lucent's earnings and its free cash flow (operating cash flow minus capital expenditures) was an amazing $7.3 billion, and not in a good way.</P>
+<P></P>
+<P>The investor who picked up on this scary dichotomy could have saved herself losses in excess of 98%. (As an aside, since 1999, Lucent has gone on to restate its 1999 cash flow not once, but twice, and in the most recent 10-K, the 1999 operating cash flow is reported as a loss of <EM>$1.8 billion</EM>.)</P>
+<P></P>
+<P>And get this -- you'll see nearly the exact same thing on Enron's old financial statements. Cooked books or no, they weren't generating much cash. In fact, they were destroying it.</P>
+<P></P>
+<P><STRONG>Warning sign 4: Watch those bonds</STRONG> <BR>Remember what we said about ignoring analysts? Well, it's because their information can be quite conflicted, and it's almost impossible to tell if any one individual has your best interests in mind. Fortunately, another group can give you the same type of signals: investors who hold a company's bonds.</P>
+<P></P>
+<P>Bondholders buy a piece of a company's debt and are generally paid interest on this obligation by the company. Watch the current price of a bond, and it will tell you the current odds bondholders are giving to that obligation being paid. I recommend keeping a <A href="http://www.fool.com/m.asp?i=690017">log sheet</A> where you write down the price of the bond. <A href="http://www.fool.com/m.asp?i=690018">Download it here</A>. If you see a drop, the bondholders are growing pessimistic. You might even see this at the same time analysts are shouting, "Strong buy!"</P>
+<P></P>
+<P>I recommend the <A href="http://www.lnksrv.com/m.asp?i=690019">Yahoo! Bond Center</A>. You can search on any company and get a list of existing bonds. Find a bond with a maturity between five and 10 years hence. Check the price. A bond priced at 100 is at "par," which means that the bond's face-value interest rate fairly compensates the investor for the risk. Some bonds are priced above 100, meaning the interest yield will be lower than face value. These are considered to be very low risk. But some are priced below face value, even <EM>way</EM> below.</P>
+<P></P>
+<P>As of this writing, <STRONG>WorldCom</STRONG> (Nasdaq: WCOME) bonds are priced at 18, which means that bondholders assume there's little chance they'll be paid. <STRONG>Tyco</STRONG> (NYSE: TYC), for all of its recent problems and high levels of debt, has 6.75% interest bonds, with 2011 maturity priced at 83. That's a discount to face, but not one that alludes to an imminent default. <STRONG>Qwest</STRONG> (NYSE: Q) sports a price of 85 on its 7.25% 2011 bonds, even closer to par than Tyco. These prices don't indicate healthy companies, but they don't insinuate imminent default or bankruptcy either.</P>
+<P></P>
+<P><STRONG>Warning sign 5: "It just doesn't get any better"</STRONG> <BR>For a brief time in 2000, <STRONG>Cisco Systems</STRONG> (Nasdaq: CSCO) was the largest company in the world by market capitalization. This should have been a warning. <A href="http://www.fool.com/m.asp?i=690020">As I wrote</A> in May 2000 when the stock was around $57, Cisco's valuation of nearly $400 billion implied that investors expected the company's earnings to reach $34 billion in 2010. Yet no company had <EM>ever</EM> generated earnings higher than $12 billion in a single year.</P>
+<P></P>
+<P>As it turned out, I almost perfectly called the top for Cisco -- it has shed nearly $300 billion in market cap since that article. Only those that decided it couldn't possibly get any better achieved a sale near the high watermark. Cisco showed no signs of a decline. For the quarter that ended Jan. 29, 2000, Cisco turned in sales of $4.3 billion, as compared to $2.8 billion for the same quarter the year before -- a growth rate of 53%. The following quarter was 58% higher, then 62% higher, then 66% higher.</P>
+<P></P>
+<P>Only Cisco's stock price rise could beat these numbers. Imagine a $385 billion company with a P/E of 156! The assumptions for future growth were mind-bending, though at the time, in the midst of the data revolution, they seemed plausible. As investors, we must be on the correct side of probabilities. Taking a portion of our Cisco investment off the table, at this point, would've been a smart choice. Remember, Cisco's business was fine in 2000, but the enterprising investor knows that a lot has to be right for the situation to work out.</P>
+<P></P>
+<P><STRONG>Homework<BR></STRONG>For this lesson, we ask you to do the same thing as we did after Lesson 1. Pick a company -- maybe even the same company you looked at last time -- to continue studying. For your company, do the following:</P>
+<P></P>
+<UL>
+<LI>Track the year-over-year sales growth for each of the past four quarters and three fiscal years. Is growth accelerating, staying about the same, or weakening?
+<BR><BR>
+<LI>Track the year-over-year net income growth for each of the past four quarters and three fiscal years. Is net income growing slower or faster than sales? Is there a trend to these figures?
+<BR><BR>
+<LI>Track your company's operating cash flow for each of the past three fiscal years. Is it lower or higher than reported net income for the corresponding year? (We're not having you look at quarterly cash flow because those figures can bounce around due to the timing of payments. Annual cash flow data is much more indicative of real cash flow trends.)
+<BR><BR>
+<LI>If your company has long-term debt, go the <A href="http://www.lnksrv.com/m.asp?i=690021">Yahoo! Bond Center</A> and check the price of your company's bonds. (If you don't know whether your company has any debt, just type your company name into the bond center and see if any debt shows up.)
+<BR><BR>
+<LI>Finally, examine your company's market cap relative to its current net income over the past year. What's the P/E ratio? Is there reason to believe your company has every rosy scenario already priced into its stock? (In the current bear market, this is much less likely than it was a few years ago, but it's still a question you should consider.) </LI></UL>
+<P></P>
+<P>To help you out, we've put together the <STRONG>Foolish Stock Information Form</STRONG> to track all of your research and information about your stocks. You can get to by <A href="http://www.fool.com/m.asp?i=690022">clicking here</A>. We've also outlined how to find all of the information above, <a href="http://www.fool.com/m.asp?i=690023">here</a>.</P>
+<P></P>
+<P>So dust off the old calculator, find your company's financials, and get to work. Quarterly financial data is best found in company 10-Qs, and annual data is best found in company 10-Ks. You should be able to find all of this information using financials from either the company website or at Fool.com on the <A href="http://www.fool.com/m.asp?i=690024">Quotes & Data</A> area. </P>
+<P><STRONG>Feeling a little lost?<BR></STRONG>If you're new to using SEC filings, read this <A href="http://www.fool.com/m.asp?i=690025">overview of financial statements</A>. Above all else, just do your best. Once you've done what you can, report your findings to your teammates! We've also put together an ongoing list of resources so you can dive in a little deeper. You can click on the "Lesson Resources" link in the right column or <A href="http://www.fool.com/m.asp?i=690026">click here</A> to find more resources to help you better understand financial statements, general investing equations, and stock options.</P>
+<P></P>
+<P>Matt and I will be joining you on <A href="http://boards.fool.com/Boards.asp?fid=10075">the boards</A> with our own analyses, so you can examine our processes.</P>
+<P></P>
+<P>Fool on!</P>
+<P>Bill and Matt</P>
+</font>
+<br /><br />
+</td>
+</tr>
+</table>
+</td>
+<td width="176" bgcolor="#CCCC99" valign="top">
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td><img src="http://g.fool.com/art/spacer.gif" width="1" height="24" alt="" /></td>
+</tr>
+<tr>
+<td><img src="http://g.fool.com/art/new/seminars/templates/EV_announcements.gif" width="176" height="13" border="0" alt="" /></td>
+</tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0" width="176">
+<tr>
+<td><img src="http://g.fool.com/art/spacer.gif" width="1" height="1" alt="" /></td>
+<td width="100%">
+<table cellspacing="0" cellpadding="4" border="0" width="100%">
+<tr>
+<td bgcolor="#ffffcc">
+<font face="arial,geneva, sans-serif" size="-2">
+<P>In case you missed this week's earlier announcement, please note that there is a correction to Lesson 1.</P>
+<P></P>
+<P>The fifth automatic sell rule regarding stock option grants should read:</P>
+<P></P>
+<P dir=ltr style="MARGIN-RIGHT: 0px"><EM>We set <STRONG>3%</STRONG> as our maximum for developed companies, <STRONG>5%</STRONG> for developing ones (use $500 million in sales as a rough boundary between the two).</EM></P>
+<P dir=ltr style="MARGIN-RIGHT: 0px"></P>
+<P dir=ltr style="MARGIN-RIGHT: 0px">You can read the correct lesson in its entirety by clicking on "Lesson 1" below.</P>
+<P></P>
+<P>If you have any questions, hit your <A href="http://boards.fool.com/Boards.asp?fid=10075">team board </A>and ask away!</P>
+</font>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td><img src="http://g.fool.com/art/spacer.gif" width="1" height="20" alt="" /></td>
+</tr>
+<tr>
+<td><img src="http://g.fool.com/art/new/seminars/templates/EV_lessonplan.gif" width="176" height="13" border="0" alt="" /></td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="4" border="0">
+<tr>
+<td colspan="3"><img src="http://g.fool.com/art/spacer.gif" width="1" height="1" alt="" /></td>
+</tr>
+<tr>
+<td rowspan="20"><img src="http://g.fool.com/art/spacer.gif" width="1" height="1" alt="" /></td>
+</tr>
+<tr>
+<td valign="top"><img src="http://g.fool.com/art/new/seminars/templates/EV_caret.gif" width="6" height="10" border="0" alt="" /></td>
+<td>
+<font face="arial,geneva,sans-serif" size="-2">
+<b><a href="http://www.fool.com/m.asp?i=690029">Lesson 1: On Selling</a></b>
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top"><img src="http://g.fool.com/art/new/seminars/templates/EV_caret.gif" width="6" height="10" border="0" alt="" /></td>
+<td>
+<font face="arial,geneva,sans-serif" size="-2">
+<b><a href="http://www.fool.com/m.asp?i=690030">Lesson 2: Companies Gone Wrong</a></b>
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top"><img src="http://g.fool.com/art/new/seminars/templates/EV_caret.gif" width="6" height="10" border="0" alt="" /></td>
+<td>
+<font face="arial,geneva,sans-serif" size="-2">
+<b>
+Lesson 3: Gut Checks and Safety Valves
+</b>
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top"><img src="http://g.fool.com/art/new/seminars/templates/EV_caret.gif" width="6" height="10" border="0" alt="" /></td>
+<td>
+<font face="arial,geneva,sans-serif" size="-2">
+<b>
+Lesson 4: When a Company Becomes Overvalued
+</b>
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top"><img src="http://g.fool.com/art/new/seminars/templates/EV_caret.gif" width="6" height="10" border="0" alt="" /></td>
+<td>
+<font face="arial,geneva,sans-serif" size="-2">
+<b>
+Lesson 5: Report Card Part 1 - Business Prospects
+</b>
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top"><img src="http://g.fool.com/art/new/seminars/templates/EV_caret.gif" width="6" height="10" border="0" alt="" /></td>
+<td>
+<font face="arial,geneva,sans-serif" size="-2">
+<b>
+Lesson 6: Report Card Part 2 - Valuation
+</b>
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top"><img src="http://g.fool.com/art/new/seminars/templates/EV_caret.gif" width="6" height="10" border="0" alt="" /></td>
+<td>
+<font face="arial,geneva,sans-serif" size="-2">
+<b>
+Lesson 7: Panning for Panera
+</b>
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top"><img src="http://g.fool.com/art/new/seminars/templates/EV_caret.gif" width="6" height="10" border="0" alt="" /></td>
+<td>
+<font face="arial,geneva,sans-serif" size="-2">
+<b>
+Lesson 8: The Report in Action - Johnson & Johnson
+</b>
+</font>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td><img src="http://g.fool.com/art/spacer.gif" width="1" height="20" alt="" /></td>
+</tr>
+<tr>
+<td><img src="http://g.fool.com/art/new/seminars/templates/EV_seminarhelp.gif" width="176" height="13" border="0" alt="" /></td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="4" border="0">
+<tr>
+<td colspan="2"><img src="http://g.fool.com/art/spacer.gif" width="1" height="1" alt="" /></td>
+</tr>
+<tr>
+<td rowspan="20"><img src="http://g.fool.com/art/spacer.gif" width="1" height="1" alt="" /></td>
+</tr>
+<tr>
+<td valign="top"><img src="http://g.fool.com/art/new/seminars/templates/EV_caret.gif" width="6" height="10" border="0" alt="" /></td>
+<td>
+<font face="arial,geneva,sans-serif" size="-2">
+<a href="http://www.fool.com/m.asp?i=690031"><b>Start Page</b></a>
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top"><img src="http://g.fool.com/art/new/seminars/templates/EV_caret.gif" width="6" height="10" border="0" alt="" /></td>
+<td>
+<font face="arial,geneva,sans-serif" size="-2">
+<a href="http://www.fool.com/m.asp?i=690032"><b>Orientation</b></a>
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top"><img src="http://g.fool.com/art/new/seminars/templates/EV_caret.gif" width="6" height="10" border="0" alt="" /></td>
+<td>
+<font face="arial,geneva,sans-serif" size="-2">
+<a href="http://www.fool.com/m.asp?i=690033"><b>Downloads</b></a>
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top"><img src="http://g.fool.com/art/new/seminars/templates/EV_caret.gif" width="6" height="10" border="0" alt="" /></td>
+<td>
+<font face="arial,geneva,sans-serif" size="-2">
+<a href="http://www.fool.com/m.asp?i=690034"><b>Lesson Resources</b></a>
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top"><img src="http://g.fool.com/art/new/seminars/templates/EV_caret.gif" width="6" height="10" border="0" alt="" /></td>
+<td>
+<font face="arial,geneva,sans-serif" size="-2">
+<a href="http://www.fool.com/m.asp?i=690035"><b>Discussion Board Intro</b></a>
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top"><img src="http://g.fool.com/art/new/seminars/templates/EV_caret.gif" width="6" height="10" border="0" alt="" /></td>
+<td>
+<font face="arial,geneva,sans-serif" size="-2">
+<a href="http://www.fool.com/m.asp?i=690036"><b>Discussion Board FAQ</b></a>
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top"><img src="http://g.fool.com/art/new/seminars/templates/EV_caret.gif" width="6" height="10" border="0" alt="" /></td>
+<td>
+<font face="arial,geneva,sans-serif" size="-2">
+<a href="http://www.fool.com/m.asp?i=690037"><b>How Do I...?</b></a>
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top"><img src="http://g.fool.com/art/new/seminars/templates/EV_caret.gif" width="6" height="10" border="0" alt="" /></td>
+<td>
+<font face="arial,geneva,sans-serif" size="-2">
+<a href="http://www.fool.com/m.asp?i=690038"><b>Choose Your Team</b></a>
+</font>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td><img src="http://g.fool.com/art/spacer.gif" width="1" height="20" alt="" /></td>
+</tr>
+<tr>
+<td><img src="http://g.fool.com/art/new/seminars/templates/EV_lessonresources.gif" width="176" height="13" border="0" alt="" /></td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="4" border="0">
+<tr>
+<td colspan="2"><img src="http://g.fool.com/art/spacer.gif" width="1" height="1" alt="" /></td>
+</tr>
+<tr>
+<td rowspan="20"><img src="http://g.fool.com/art/spacer.gif" width="1" height="1" alt="" /></td>
+</tr>
+<tr>
+<td valign="top"><img src="http://g.fool.com/art/new/seminars/templates/EV_caret.gif" width="6" height="10" border="0" alt="" /></td>
+<td>
+<font face="arial,geneva,sans-serif" size="-2">
+<b><a href="http://www.fool.com/m.asp?i=690039">Operating Cash Flow</a></b>
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top"><img src="http://g.fool.com/art/new/seminars/templates/EV_caret.gif" width="6" height="10" border="0" alt="" /></td>
+<td>
+<font face="arial,geneva,sans-serif" size="-2">
+<b><a href="http://www.fool.com/m.asp?i=690040">Free cash flow</a></b>
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top"><img src="http://g.fool.com/art/new/seminars/templates/EV_caret.gif" width="6" height="10" border="0" alt="" /></td>
+<td>
+<font face="arial,geneva,sans-serif" size="-2">
+<b><a href="http://www.fool.com/m.asp?i=690041">Lessons from Lucent</a></b>
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top"><img src="http://g.fool.com/art/new/seminars/templates/EV_caret.gif" width="6" height="10" border="0" alt="" /></td>
+<td>
+<font face="arial,geneva,sans-serif" size="-2">
+<b><a href="http://www.fool.com/m.asp?i=690042">Log Sheet</a></b>
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top"><img src="http://g.fool.com/art/new/seminars/templates/EV_caret.gif" width="6" height="10" border="0" alt="" /></td>
+<td>
+<font face="arial,geneva,sans-serif" size="-2">
+<b><a href="http://www.lnksrv.com/m.asp?i=690043">Yahoo! Bond Center</a></b>
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top"><img src="http://g.fool.com/art/new/seminars/templates/EV_caret.gif" width="6" height="10" border="0" alt="" /></td>
+<td>
+<font face="arial,geneva,sans-serif" size="-2">
+<b><a href="http://www.fool.com/m.asp?i=690044">Do Big-Cap Tech Stocks Mean Big Risk?</a></b>
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top"><img src="http://g.fool.com/art/new/seminars/templates/EV_caret.gif" width="6" height="10" border="0" alt="" /></td>
+<td>
+<font face="arial,geneva,sans-serif" size="-2">
+<b><a href="http://www.fool.com/m.asp?i=690045">Overview of Financial Statements</a></b>
+</font>
+</td>
+</tr>
+<tr>
+<td colspan="2"><img src="http://g.fool.com/art/spacer.gif" width="1" height="1" alt="" /></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td background="http://g.fool.com/art/new/seminars/templates/EV_rightside.gif" width="6"><img src="http://g.fool.com/art/spacer.gif" width="6" height="1" alt="" /></td>
+</tr>
+<tr>
+<td background="http://g.fool.com/art/new/seminars/templates/EV_Footer_L.gif"><img src="http://g.fool.com/art/new/seminars/templates/EV_Footer_L.gif" width="6" height="21" /></td>
+<td bgcolor="#336699">
+<table cellspacing="0" cellpadding="4" border="0">
+<tr>
+<td>
+<font face="verdana,arial,helvetica,geneva,sans-serif" size="-2" color="#e5e5e5">
+							This Seminar contains the opinions and ideas of The Motley Fool. It is provided with the understanding that The Motley Fool is not engaged in rendering financial or other professional services. The Motley Fool specifically disclaims any responsibility for any liability, loss, or risk, personal or otherwise, which is incurred as a consequence, directly or indirectly, of the use and application of any of the contents of this Seminar.<br /><br />
+<a href="http://www.fool.com/m.asp?i=690046"><font color="#e5e5e5">Legal Information</font></a>. Copyright © 1995-2002 The Motley Fool. All rights reserved.
+							<img src="http://g.fool.com/art/free/Seminars/events/wts__1x1.gif" border="0" width="1" height="1" />
+</font>
+</td>
+</tr>
+</table>
+</td>
+<td background="http://g.fool.com/art/new/seminars/templates/EV_Footer_R.gif"><img src="http://g.fool.com/art/new/seminars/templates/EV_Footer_R.gif" width="6" height="21" /></td>
+</tr>
+<tr>
+<td><img src="http://g.fool.com/art/new/seminars/templates/EV_BL.gif" width="6" height="6" /></td>
+<td background="http://g.fool.com/art/new/seminars/templates/EV_Bottom.gif"><img src="http://g.fool.com/art/spacer.gif" width="1" height="1" alt="" /></td>
+<td><img src="http://g.fool.com/art/new/seminars/templates/EV_BR.gif" width="6" height="6" /></td>
+</tr>
+</table>
+</div>
+</body>
+</html>
+
+--Groovy-Foolish-Boundary-2A6F4DA4EE1F4ABCB782--
+

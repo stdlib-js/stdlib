@@ -1,0 +1,30 @@
+
+{{alias}}( value )
+    Tests if a value is a URIError object.
+
+    This function should *not* be considered robust. While the function should
+    always return `true` if provided a URIError (or a descendant) object,
+    false positives may occur due to the fact that the URIError constructor
+    inherits from Error and has no internal class of its own. Hence, URIError
+    impersonation is possible.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is a URIError object.
+
+    Examples
+    --------
+    > var bool = {{alias}}( new URIError( 'beep' ) )
+    true
+    > bool = {{alias}}( {} )
+    false
+
+    See Also
+    --------
+

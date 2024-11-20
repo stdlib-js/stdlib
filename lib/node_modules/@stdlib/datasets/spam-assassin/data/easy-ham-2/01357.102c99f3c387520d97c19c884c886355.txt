@@ -1,0 +1,87 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug  8 15:54:15 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7216244118
+	for <jm@localhost>; Thu,  8 Aug 2002 10:03:05 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 08 Aug 2002 15:03:05 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g78E2u211245 for <jm-sa@jmason.org>; Thu, 8 Aug 2002 15:02:56 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17cnoc-0000VF-00; Thu,
+    08 Aug 2002 06:59:02 -0700
+Received: from otis1-177561-dp.dhcp.fnal.gov ([131.225.95.152]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17cnnk-00022v-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Thu, 08 Aug 2002 06:58:08 -0700
+Received: (from wellner@localhost) by otis1-177561-dp.dhcp.fnal.gov
+    (8.11.6/8.11.6) id g78Dw2u01868; Thu, 8 Aug 2002 08:58:02 -0500
+X-Authentication-Warning: otis1-177561-dp.dhcp.fnal.gov: wellner set
+    sender to spamassassin@objenv.com using -f
+To: "Tony L. Svanstrom" <tony@svanstrom.com>
+Cc: Justin Mason <yyyy@spamassassin.taint.org>,
+	"Craig R.Hughes" <craig@deersoft.com>,
+	Christopher Crowley <ccrowley@tulane.edu>,
+	<spamassassin-talk@lists.sourceforge.net>
+Subject: Re: [SAtalk] Is this a violation of TRADEMARK?
+References: <20020806183451.X54243-100000@moon.campus.luth.se>
+X-Stock-Tip: PTN
+X-Mbti: ESTJ
+From: Rich Wellner <spamassassin@objenv.com>
+In-Reply-To: <20020806183451.X54243-100000@moon.campus.luth.se>
+    ("Tony L. Svanstrom"'s
+    message of
+    "Tue, 6 Aug 2002 18:39:50 +0200 (CEST)")
+Message-Id: <t2mfzxpv4eu.fsf@otis1-177561-dp.dhcp.fnal.gov>
+User-Agent: Gnus/5.090006 (Oort Gnus v0.06) XEmacs/21.1 (Cuyahoga Valley,
+    i386-redhat-linux)
+Organization: Spam For All
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Thu, 08 Aug 2002 08:58:01 -0500
+Date: Thu, 08 Aug 2002 08:58:01 -0500
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g78E2u211245
+
+"Tony L. Svanstrom" <tony@svanstrom.com> writes:
+
+> IMHO it's wrong that any company is allowed to use the name of a public
+> project commercially, while others aren't´; esp. when it's a name that tells
+> Average Joe that that version is so much better than the free one.
+
+Dude, take that one up with Redhat, Suse, IBM or any of the other folks using
+the name of a public project (i.e. Linux) for a commercial product.  ;-)
+
+This is not only a concept with precedent it's actually quite common.
+
+rw2
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

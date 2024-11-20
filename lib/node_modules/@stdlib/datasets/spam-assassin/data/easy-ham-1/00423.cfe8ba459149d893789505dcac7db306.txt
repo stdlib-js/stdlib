@@ -1,0 +1,110 @@
+From fork-admin@xent.com  Wed Sep  4 19:11:32 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id B7C6416F1F
+	for <jm@localhost>; Wed,  4 Sep 2002 19:11:30 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 04 Sep 2002 19:11:30 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g84I75Z13842 for <jm@jmason.org>;
+    Wed, 4 Sep 2002 19:07:06 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 43A7B29420F; Wed,  4 Sep 2002 11:04:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from cats.ucsc.edu (cats-mx1.ucsc.edu [128.114.129.36]) by
+    xent.com (Postfix) with ESMTP id AE02C2941DD for <FoRK@xent.com>;
+    Wed,  4 Sep 2002 11:03:09 -0700 (PDT)
+Received: from Tycho (dhcp-60-118.cse.ucsc.edu [128.114.60.118]) by
+    cats.ucsc.edu (8.10.1/8.10.1) with SMTP id g84I5JT12707 for
+    <FoRK@xent.com>; Wed, 4 Sep 2002 11:05:20 -0700 (PDT)
+From: "Jim Whitehead" <ejw@cse.ucsc.edu>
+To: "FoRK" <FoRK@xent.com>
+Subject: CD player UI for toddlers
+Message-Id: <AMEPKEBLDJJCCDEJHAMIIECDFGAA.ejw@cse.ucsc.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+Importance: Normal
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4133.2400
+X-Ucsc-Cats-Mailscanner: Found to be clean
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 4 Sep 2002 11:03:03 -0700
+
+So, like many young children, my daughter Tatum (age 21 months) *really*
+likes music. She also likes to have control over her environment, and this
+means she wants to be the one putting CDs into the CD player, and getting
+the music playing.
+
+By watching Tatum, I've discovered that you can learn a lot about UI design
+from watching 21-month-olds use technology. There is definitely a market
+niche for a toddler-friendly CD/MP3 player.
+
+The CD player we have combines play and pause in a single button, but
+doesn't provide *instantaneous* feedback that the button was pushed, instead
+requiring you to wait until the music starts, 5-10 seconds. This is a UI
+disaster. Since Tatum doesn't get feedback right away, she presses the
+button again, thereby pausing the CD before it even plays. She'll only ever
+get music if she presses the button an odd number of times. This happens a
+surprising amount of the time, since she eventually hits the button again
+when the music doesn't play.
+
+For toddlers, pressing play must cause the music to start immediately,
+within half a second, for the toddler to get the causality and not press the
+button multiple times. As well, pressing the button multiple times shouldn't
+change the semantics, like an elevator button. No matter how many times you
+press, the elevator still comes to that floor. The play button needs to be
+the same.
+
+The back-hinged door mechanism feeding the CD into the player is also a UI
+disaster for Tatum. Since the door hinges on the back, Tatum has to angle
+CDs to put them in, and take them out. Putting CDs in isn't much of a
+problem, but taking them out is. Since Tatum grabs CDs by the back edge,
+that edge comes out first, hitting the lid. Tatum eventually forces and
+wiggles the CD out, a process that's hard on the CD and the player (but
+which hasn't yet resulted in the CD player being broken). Surprisingly, it
+hasn't been a problem getting the CD hole onto the spindle -- Tatum seems to
+understand this concept, and the CD load area geometry naturally guides the
+CD.
+
+Tatum's CD player also plays tapes and has FM radio. For a toddler, this is
+a mistake. Tatum doesn't understand the need to flick a switch to put the
+player into a specific mode. She understands putting a CD in, and pressing
+the play button. She sometimes understands the buttons for advancing a song,
+but uses them erratically. As well, the radio feature has both FM mono and
+FM stero, a distinction totally lost on Tatum. Tatum only understands the
+binary distinction of music/no music.
+
+What would the ideal toddler CD player be like? It would immediately start
+playing a CD after it was loaded. As soon as the CD load door was closed, it
+would give some audible feedback. It would have a single large play button.
+The other typical CD controls would be larger than normal, but at least half
+the size of the play button, and located far away from the play button, so
+there is no chance of them getting accidentally pressed on the way to play.
+The play button would be a bright color that is different from the color of
+the player, and different from the color of the other CD control keys. The
+device would only play CDs, no other functions. The CD load area would flip
+open at least 80 degrees. It should be small, approachable for a toddler. It
+should be possible to repeatedly drop the player from a height of 1-2'
+without affecting the player.
+
+- Jim
+
+
+
+

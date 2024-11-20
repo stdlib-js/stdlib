@@ -1,0 +1,64 @@
+From fork-admin@xent.com  Mon Aug 19 11:03:39 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3672A441A3
+	for <jm@localhost>; Mon, 19 Aug 2002 05:55:00 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:55:00 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7H4rC619195 for <jm@jmason.org>;
+    Sat, 17 Aug 2002 05:53:12 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 3B7232940C1; Fri, 16 Aug 2002 21:51:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.auracom.net (smtp1.auracom.net [165.154.140.23]) by
+    xent.com (Postfix) with ESMTP id 028272940C1 for <fork@xent.com>;
+    Fri, 16 Aug 2002 21:50:05 -0700 (PDT)
+Received: from maya.dyndns.org (ts5-033.ptrb.interhop.net
+    [165.154.190.97]) by smtp1.auracom.net (8.11.2/8.11.2) with ESMTP id
+    g7H4Phn19351 for <fork@xent.com>; Sat, 17 Aug 2002 00:25:43 -0400 (EDT)
+Received: by maya.dyndns.org (Postfix, from userid 501) id BCCF31C336;
+    Sat, 17 Aug 2002 00:50:37 -0400 (EDT)
+To: fork@spamassassin.taint.org
+Subject: Re: Al'Qaeda's fantasy ideology:  Policy Review no. 114
+References: <58113821767.20020816230818@magnesium.net>
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m21y8ydr6q.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 17 Aug 2002 00:50:37 -0400
+
+>>>>> "b" == bitbitch  <bitbitch@magnesium.net> writes:
+
+    b> My only problem with this article ...
+
+I know I'll get my share of flames for saying so, but my only problem
+with this article is that it is some of the scariest subtext hate-lit
+propaganda I've seen come out of the US since the March of Tears, and
+twice scarier that it is not seen as such.
+
+-- 
+Gary Lawrence Murphy <garym@teledyn.com> TeleDynamics Communications Inc
+ Business Advantage through Community Software : http://www.teledyn.com
+"Computers are useless.  They can only give you answers."(Pablo Picasso)
+
+http://xent.com/mailman/listinfo/fork
+

@@ -1,0 +1,43 @@
+
+{{alias}}( α, s, m )
+    Returns the mode of a Fréchet distribution with shape parameter `α`, scale
+    parameter `s`, and location `m`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `α <= 0` or `s <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    α: number
+        Shape parameter.
+
+    s: number
+        Scale parameter.
+
+    m: number
+        Location parameter.
+
+    Returns
+    -------
+    out: number
+        Mode.
+
+    Examples
+    --------
+    > var y = {{alias}}( 4.0, 2.0, 1.0 )
+    ~2.891
+    > var y = {{alias}}( 4.0, 2.0, -3.0 )
+    ~-1.109
+    > y = {{alias}}( 0.5, 2.0, 1.0 )
+    ~1.222
+    > y = {{alias}}( NaN, 1.0, 0.0 )
+    NaN
+    > y = {{alias}}( 1.0, NaN, 0.0 )
+    NaN
+    > y = {{alias}}( 1.0, 1.0, NaN )
+    NaN
+
+    See Also
+    --------
+

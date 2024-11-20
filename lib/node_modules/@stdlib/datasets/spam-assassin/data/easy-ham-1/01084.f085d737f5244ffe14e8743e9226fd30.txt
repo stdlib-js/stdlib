@@ -1,0 +1,127 @@
+From rpm-list-admin@freshrpms.net  Mon Sep  9 18:01:41 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id F2D1C16EFC
+	for <jm@localhost>; Mon,  9 Sep 2002 18:01:40 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 18:01:40 +0100 (IST)
+Received: from auth02.nl.egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g14EhS812292 for
+    <jm-rpm@jmason.org>; Mon, 4 Feb 2002 14:43:28 GMT
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by
+    auth02.nl.egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g14Eh1324509;
+    Mon, 4 Feb 2002 15:43:01 +0100
+Received: from porsta.cs.Helsinki.FI (root@porsta.cs.Helsinki.FI
+    [128.214.48.124]) by auth02.nl.egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g14Eg9324446 for <rpm-list@freshrpms.net>; Mon, 4 Feb 2002 15:42:09 +0100
+Received: from melkki.cs.Helsinki.FI (sslwrap@localhost [127.0.0.1]) by
+    porsta.cs.Helsinki.FI (8.11.6/8.11.6) with ESMTP id g14EgAp17164 for
+    <rpm-list@freshrpms.net>; Mon, 4 Feb 2002 16:42:10 +0200
+Received: (from hhaataja@localhost) by melkki.cs.Helsinki.FI
+    (8.11.6/8.11.2) id g14Eg5A26662 for rpm-list@freshrpms.net; Mon,
+    4 Feb 2002 16:42:05 +0200
+From: Harri Haataja <harri.haataja@cs.Helsinki.FI>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: http://apt.nixia.no/
+Message-Id: <20020204164205.A20308@cs.helsinki.fi>
+References: <20020201150022.B11472@cs.helsinki.fi>
+    <20020201153541.1321cd9b.matthias@egwn.net>
+    <20020201165435.C11472@cs.helsinki.fi>
+    <20020201161552.3497fbfd.matthias@egwn.net>
+    <20020201174132.A8690@cs.helsinki.fi>
+    <20020204143329.B2626@pihlaja.kotilo>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-15
+Content-Disposition: inline
+Content-Transfer-Encoding: 8bit
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <20020204143329.B2626@pihlaja.kotilo>; from pisara@iki.fi on
+    Mon, Feb 04, 2002 at 02:33:29PM +0200
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Mon, 4 Feb 2002 16:42:05 +0200
+Date: Mon, 4 Feb 2002 16:42:05 +0200
+
+On Mon, Feb 04, 2002 at 02:33:29PM +0200, Peter Peltonen wrote:
+> On Fri, Feb 01, 2002 at 05:41:32PM +0200, Harri Haataja wrote:
+> > I have a local one for the main and upgrades from somewhere plus my own
+> > at $ORKPLACE.
+> 
+> Olen ajatellut pystyttää itselleni lokaalin apt-varaston, kun Suomesta ei 
+> tunnu löytyvän julkista peiliä. Osaisitko avittaa hiukan asiassa, eli 
+> kuinka lähteä liikkeelle? Ensin kannattanee peilata varsinainen RH:n rpm:t 
+> jostain, vaan millä softalla (rsync?) ja mistä (funet?) tuo kannattaa 
+> tehdä, ajatuksia?
+
+I'll post my own repository story here anyway, hope no-one minds.
+It may freely be commented on or used in another text.
+
+I have a directory like this:
+$ tree  -d
+.
+|-- current7
+|   |-- SRPMS.current
+|   |-- SRPMS.gcc3
+|   `-- redhat
+|       |-- RPMS.current
+|       |-- RPMS.gcc3
+|       `-- base
+|-- redhat-7_2
+|   |-- SRPMS.os
+|   `-- redhat
+|       |-- RPMS.os -> <link to RH network install image>
+|       `-- base
+`-- testing
+    |-- SRPMS.testing
+    `-- redhat
+        |-- RPMS.testing
+        `-- base
+
+27 directories
+
+I throw updates to current7's rpms and my own stuff (with makefile :) to
+testing.
+After each new package, 
+nice genbasedir -s --progress --topdir=$TOPDIR/ \
+testing/redhat testing
+
+(for -s to work, you need to make release files, pinch someones for
+exmple)
+
+This stuff is found under apache. I put that url, my keys and all that
+into apt conf on the machines on the network and apt away.
+
+As for .fi mirrors, funet is very slow. I think I use tuxfamily for
+updates but when I see errata I usually also put that to my own one so
+rest of the machines have a shorter path to it.
+Funet hosts a whole load of mirrors and projects (it used to be (is?)
+the main mirror for Linux. It was one of the big pub ftp sites). If
+there was a definite apt repository, maybe they might mirror that as
+well. I doubt RH would be very keen on using apt and forking a
+distribution doesn't seem like an easy option, someone should just start
+a project.
+
+-- 
+"Barry also was quick to point out that the Titanium uses torque screws as
+opposed to Phillips screws. We're not sure why this matters even a little
+bit, but Barry sure seemed to think it was interesting.
+That's why Mac geeks scare us." 	-- ZDNet Powerbook Titanium review 
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

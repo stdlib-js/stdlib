@@ -1,0 +1,76 @@
+From rpm-list-admin@freshrpms.net  Fri Oct  4 11:00:41 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id A535616F03
+	for <jm@localhost>; Fri,  4 Oct 2002 11:00:40 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 04 Oct 2002 11:00:40 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g941oUK29944 for
+    <jm-rpm@jmason.org>; Fri, 4 Oct 2002 02:50:30 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g941m1f31311; Fri, 4 Oct 2002 03:48:01
+    +0200
+Received: from smtprelay9.dc2.adelphia.net (smtprelay9.dc2.adelphia.net
+    [64.8.50.53]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g941lXf28542
+    for <rpm-list@freshrpms.net>; Fri, 4 Oct 2002 03:47:34 +0200
+Received: from [192.168.1.2] ([24.50.195.5]) by
+    smtprelay9.dc2.adelphia.net (Netscape Messaging Server 4.15) with ESMTP id
+    H3FOZ301.09V for <rpm-list@freshrpms.net>; Thu, 3 Oct 2002 21:47:27 -0400
+Subject: Re: K3B
+From: Dale Kosan <dale_kosan@fastmail.fm>
+To: rpm-zzzlist <rpm-zzzlist@freshrpms.net>
+In-Reply-To: <20021003163343.606db2bf.hosting@j2solutions.net>
+References: <3D9CCF54.5070909@free.fr>
+    <20021003142457.77f1d07b.hosting@j2solutions.net>
+    <3D9CEE0A.9030400@free.fr>
+    <20021003163343.606db2bf.hosting@j2solutions.net>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8 (1.0.8-10)
+Message-Id: <1033696039.2551.0.camel@gandalf>
+MIME-Version: 1.0
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: 03 Oct 2002 21:47:18 -0400
+Date: 03 Oct 2002 21:47:18 -0400
+
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking target system type... Invalid configuration
+`athalon-redhat-linux': machine `athalon-redhat' not recognized
+configure: error: /bin/sh admin/config.sub athalon-redhat-linux failed
+error: Bad exit status from /home/dale/rpmbuild/tmp/rpm-tmp.26673
+(%prep)
+
+
+RPM build errors:
+    user jkeating does not exist - using root
+    group jkeating does not exist - using root
+    user jkeating does not exist - using root
+    group jkeating does not exist - using root
+    Bad exit status from /home/dale/rpmbuild/tmp/rpm-tmp.26673 (%prep)
+[dale@gandalf dale]$
+
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

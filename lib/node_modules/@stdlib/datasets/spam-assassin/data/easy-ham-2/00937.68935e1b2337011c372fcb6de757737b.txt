@@ -1,0 +1,88 @@
+From fork-admin@xent.com  Wed Jul 31 20:25:25 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E4D99440C9
+	for <jm@localhost>; Wed, 31 Jul 2002 15:25:22 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 31 Jul 2002 20:25:22 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6VJPY206347 for <jm@jmason.org>;
+    Wed, 31 Jul 2002 20:25:36 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 168FF2940A2; Wed, 31 Jul 2002 12:23:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mail.cybermesa.com (mail.cybermesa.com [198.59.109.2]) by
+    xent.com (Postfix) with ESMTP id 5B80929409C for <fork@xent.com>;
+    Wed, 31 Jul 2002 12:22:12 -0700 (PDT)
+Received: from HalCor.halvorson.us (sf-du223.cybermesa.com [65.19.16.223])
+    by mail.cybermesa.com (8.11.6/8.11.6) with ESMTP id g6VJMTW27190 for
+    <fork@xent.com>; Wed, 31 Jul 2002 13:22:30 -0600 (MDT)
+Message-Id: <5.1.0.14.0.20020731130214.00a66600@mail.cybermesa.com>
+X-Sender: marty@mail.cybermesa.com
+X-Mailer: QUALCOMM Windows Eudora Version 5.1
+To: fork@spamassassin.taint.org
+From: Marty Halvorson <marty@halvorson.us>
+Subject: Re: What's cool about doing nothing
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"; format=flowed
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 31 Jul 2002 13:22:19 -0600
+
+Ned Jackson Lovely wrote:
+ > On Wed, Jul 31, 2002 at 10:37:31AM -0600, Marty Halvorson wrote:
+ > > A Forest Service official has stated flat out that the tree lovers 
+need to
+ > > understand their responsibility in contributing to the number of
+ > > uncontrollable (i.e., crown fires caused by very dense tree stands and
+ > > under growth) fires by their suits to stop any tree removal from the
+ > > forests managed by the Forest Service.
+ >
+ > Boy, that is rather strange. I've always been under the impression that
+ > the uncontrollable forest fires were the result of the Forest Service's
+ > long-standing "10:00 A.M. policy"
+
+If you'll look closely, I said the Forest Service official claimed it was 
+the tree lovers lawsuits that prevented removal of trees by any means as at 
+least partially responsible.  The lawsuits prevented the Forest Service 
+from implementation of any project that involved tree removal.  These 
+projects were designed to address the tree and undergrowth density that 
+resulted from previous management policies.
+
+In other words, Forest Service projects to clean up the mess resulting from 
+their previous forest management practices are prevented by tree lover 
+lawsuits.
+
+ > 40 years after the end of the containment policy there is still a lot of 
+stuff
+ > left to burn.
+
+Exactly, and tree lover lawsuits are preventing the removal of that 
+stuff.  The result:  Fires like Cerro Grande.
+
+ > I can't imagine that artificially planted replacement
+ > forests ...
+
+There are very few replacement forests planted these days.  Those that are, 
+are mostly planted on private land as commercial tree farms.
+
+Peace,
+
+Marty Halvorson
+marty@halvorson.us
+
+http://xent.com/mailman/listinfo/fork
+
+

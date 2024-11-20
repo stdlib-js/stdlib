@@ -1,0 +1,32 @@
+
+{{alias}}()
+    Returns an accumulator function which incrementally computes the mean
+    directional accuracy (MDA).
+
+    If provided input values, the accumulator function returns an updated mean
+    directional accuracy. If not provided input values, the accumulator function
+    returns the current mean directional accuracy.
+
+    If provided `NaN` or a value which, when used in computations, results in
+    `NaN`, the accumulated value is `NaN` for all future invocations.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}();
+    > var m = accumulator()
+    null
+    > m = accumulator( 2.0, 3.0 )
+    1.0
+    > m = accumulator( -5.0, 4.0 )
+    0.5
+    > m = accumulator()
+    0.5
+
+    See Also
+    --------
+

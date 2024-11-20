@@ -1,0 +1,35 @@
+
+{{alias}}()
+    Returns an accumulator function which incrementally computes a geometric
+    mean.
+
+    If provided a value, the accumulator function returns an updated geometric
+    mean. If not provided a value, the accumulator function returns the current
+    geometric mean.
+
+    If provided `NaN` or a value which, when used in computations, results in
+    `NaN`, the accumulated value is `NaN` for all future invocations.
+
+    If provided a negative value, the accumulated value is `NaN` for all future
+    invocations.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}();
+    > var v = accumulator()
+    null
+    > v = accumulator( 2.0 )
+    2.0
+    > v = accumulator( 5.0 )
+    ~3.16
+    > v = accumulator()
+    ~3.16
+
+    See Also
+    --------
+

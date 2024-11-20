@@ -1,0 +1,131 @@
+From promos@famtriptravel.com  Thu Jul 25 11:18:56 2002
+Return-Path: <promos@famtriptravel.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 330C9440D0
+	for <jm@localhost>; Thu, 25 Jul 2002 06:18:53 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 11:18:53 +0100 (IST)
+Received: from mandark.labs.netnoteinc.com ([213.105.180.140]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6OMtr412835 for
+    <jm@jmason.org>; Wed, 24 Jul 2002 23:55:53 +0100
+Received: from mandark.labs.netnoteinc.com ([64.251.4.178]) by
+    mandark.labs.netnoteinc.com (8.11.6/8.11.6) with SMTP id g6OMt7p19895 for
+    <jm@netnoteinc.com>; Wed, 24 Jul 2002 23:55:08 +0100
+From: "promos@famtriptravel.com" <promos@famtriptravel.com>
+Date: Wed, 24 Jul 2002 18:55:14
+To: yyyy@netnoteinc.com
+Subject: $99 for 5 Nights in Magical Orlando with 2 Disney Tickets
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Message-Id: PM20006:55:14 PM
+Content-Type: multipart/related; boundary="----=_NextPart_MABVCXIMXO"
+
+This is an HTML email message.  If you see this, your mail client does not support HTML messages.
+
+------=_NextPart_MABVCXIMXO
+Content-Type: text/html;charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>New Page 1</title>
+</head>
+
+<body>
+
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" width="640" height="480">
+    <tr>
+      <td width="638" valign="bottom" align="center" colspan="2" height="71">
+        <p style="word-spacing: 0; margin-top: 0; margin-bottom: 0"><u><b><font face="Bradley Hand ITC" color="#0000FF" size="4">&quot;MAGICAL&quot;
+        ORLANDO / &quot;FABULOUS&quot; FT. LAUDERDALE</font></b></u></p>
+        <p style="word-spacing: 0; margin-top: 0; margin-bottom: 0"><b><font face="Bradley Hand ITC" size="2">EXPERIENCE
+        ALL THE SPLENDOR AND MAGIC... THAT IS FLORIDA!!!</font></b></td>
+    </tr>
+    <tr>
+      <td width="278" align="center" height="99" valign="top">
+        <p style="word-spacing: 0; margin-top: 0; margin-bottom: 0"><img border="0" src="http://www.famtriptravel.com/images/front1.jpg" width="300" height="91"></p>
+        <p style="word-spacing: 0; margin-top: 0; margin-bottom: 0"><img border="0" src="http://www.famtriptravel.com/images/front2.jpg" width="300" height="91"></p>
+      </td>
+      <td width="347" align="center" height="179">
+        <p style="word-spacing: 0; margin-top: 0; margin-bottom: 0"><b><font face="Bradley Hand ITC" color="#0000FF" size="4">&nbsp;6
+        DAYS / 5 NIGHTS</font></b></p>
+        <p style="word-spacing: 0; margin-top: 0; margin-bottom: 0"><u><font size="3" face="Bradley Hand ITC" color="#0000FF"><b>FIRST
+        CLASS ACCOMMODATIONS</b></font></u></p>
+        <p style="word-spacing: 0; margin-top: 0; margin-bottom: 0"><font size="2" face="Bradley Hand ITC">3NIGHTS
+        IN &quot;MAGICAL&quot; ORLANDO</font></p>
+        <p style="word-spacing: 0; margin-top: 0; margin-bottom: 0"><font size="2" face="Bradley Hand ITC">2
+        NIGHTS IN &quot;FABULOUS&quot; FT. LAUDERDALE</font></p>
+        <p style="word-spacing: 0; margin-top: 0; margin-bottom: 0"><font size="2" face="Bradley Hand ITC">2
+        PASSES TO DISNEY, EPCOT, OR UNIVERSAL</font></p>
+        <p style="word-spacing: 0; margin-top: 11; margin-bottom: 0"><b><font size="5" face="Bradley Hand ITC" color="#0000FF">ONLY
+        </font><font size="5" face="Bradley Hand ITC" color="#FF0000">
+        $99.00</font><font size="5" face="Bradley Hand ITC" color="#0000FF"> PER PERSON</font></b><p style="word-spacing: 0; margin-top: 0; margin-bottom: 0"><b><font face="Bradley Hand ITC" size="3">CONFIRMATION
+        NUMBER: </font><font size="3" face="Arial Black" color="#FF0000">1ST1LV</font></b></td>
+    </tr>
+    <tr>
+      <td width="638" colspan="2" valign="middle" align="center" height="230">
+        <p style="word-spacing: 0; margin-top: 0; margin-bottom: 0"><font face="Bradley Hand ITC" size="5"><b>CALL
+        OUR TOLL FREE NUMBER TO RESERVE YOUR</b></font></p>
+        <p style="word-spacing: 0; margin-top: 0; margin-bottom: 0"><font face="Bradley Hand ITC" color="#FF0000" size="6"><b>&quot;FABULOUS&nbsp;
+        FAMILY&nbsp; GETAWAY&quot;</b></font></p>
+        <p style="word-spacing: 0; margin-top: 0; margin-bottom: 0"><font size="6" face="Bradley Hand ITC" color="#FF0000"><b>TOLL
+        FREE... 1-866-345-7402</b></font></p>
+        <p style="word-spacing: 0; margin-top: 0; margin-bottom: 0"><b><i><font face="Bradley Hand ITC" color="#FF0000" size="5">Please...
+        one call per email notification</font></i></b></p>
+        <p style="word-spacing: 0; margin-top: 0; margin-bottom: 0"><a href="http://www.famtriptravel.com/promooffers.html#99"><font face="Arial">If
+        you are too busy to call... please leave us your information by</font></a></p>
+        <p style="word-spacing: 0; margin-top: 0; margin-bottom: 0"><a href="http://www.famtriptravel.com/promooffers.html#99"><font face="Arial">clicking
+        here and we will contact you at the time and number you specify</font></a></p>
+        <p style="word-spacing: 0; margin-top: 0; margin-bottom: 0"><font face="Bradley Hand ITC"><b><font size="5">BONUS...</font>
+        ORDER WITHIN 72 HOURS AND ALSO RECEIVE</b> </font></p>
+        <p style="word-spacing: 0; margin-top: 0; margin-bottom: 0"><font face="Bradley Hand ITC"><b>4
+        DAYS AND 3 NIGHTS FIRST CLASS ACCOMMODATIONS IN...</b></font></p>
+        <p style="word-spacing: 0; margin-top: 0; margin-bottom: 0"><font face="Bradley Hand ITC">LAS
+        VEGAS, NV.&nbsp; PUERTO VALLARTA, MEXICO&nbsp; WILLIAMSBURG, VA.</font>
+        <p style="word-spacing: 0; margin-top: 0; margin-bottom: 0">&nbsp;
+        <p style="word-spacing: 0; margin-top: 0; margin-bottom: 0">&nbsp;</td>
+    </tr>
+  </table>
+  </center>
+</div>
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" width="640">
+    <tr>
+      <td width="100%" valign="middle" align="center">
+        <p style="word-spacing: 0; margin-top: 0; margin-bottom: 0"><u><a href="http://www.rprpromos.com/adv/termsandcon.htm" target="_blank">TERMS
+        AND CONDITIONS OF PROMOTION</a></u></p>
+        <p style="word-spacing: 0; margin-top: 0; margin-bottom: 0"><font size="2">TO
+        BE REMOVED&nbsp; <a href="mailto:removeme@famtriptravel.com &subject=remove me">CLICK HERE</a> OR EMAIL &quot;<a href="mailto:removeme@famtriptravel.com">removeme@famtriptravel.com</a>&quot;
+        with the subject &quot;REMOVE ME&quot;.</font></p>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%" valign="middle" align="center">
+        <img border="0" src="http://www.famtriptravel.com/images/imperial.jpg" width="274" height="75">&nbsp;&nbsp;
+        <img border="0" src="http://www.famtriptravel.com/images/universal_studios_logo.gif" width="130" height="68">&nbsp;&nbsp;
+        <img border="0" src="http://www.famtriptravel.com/images/clia.gif" width="74" height="84">&nbsp;&nbsp;
+        <img border="0" src="http://www.famtriptravel.com/images/amerihost.gif" width="70" height="56">
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+</body>
+
+</html>
+
+
+------=_NextPart_MABVCXIMXO--
+
+

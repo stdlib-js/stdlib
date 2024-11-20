@@ -1,0 +1,29 @@
+
+{{alias}}( idx, max )
+    Restricts an index to the interval [0,max].
+
+    Parameters
+    ----------
+    idx: integer
+        Index to clamp.
+
+    max: integer
+        Maximum index value.
+
+    Returns
+    -------
+    out: integer
+        Clamped index.
+
+    Examples
+    --------
+    > var idx = {{alias}}( 2, 10 )
+    2
+    > idx = {{alias}}( -5, 10 )
+    0
+    > idx = {{alias}}( 15, 10 )
+    10
+
+    See Also
+    --------
+

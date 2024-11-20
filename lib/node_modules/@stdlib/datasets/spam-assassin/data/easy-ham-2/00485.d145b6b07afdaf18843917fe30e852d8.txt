@@ -1,0 +1,52 @@
+From iiu-admin@taint.org  Fri Jul 19 15:39:22 2002
+Return-Path: <iiu-admin@taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9E8FE43FAD
+	for <jm@localhost>; Fri, 19 Jul 2002 10:39:20 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 15:39:20 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JET1J04575 for
+    <jm@jmason.org>; Fri, 19 Jul 2002 15:29:01 +0100
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JES1J04499 for
+    <iiu-admin@iiu.taint.org>; Fri, 19 Jul 2002 15:28:02 +0100
+Date: Fri, 19 Jul 2002 15:28:01 +0100
+Message-Id: <20020719142801.4497.78836.Mailman@dogma.slashnull.org>
+Subject: Irish Internet Users post from yyyycc@hackwatch.com requires approval
+From: iiu-admin@taint.org
+To: iiu-admin@taint.org
+X-Ack: no
+X-Beenthere: iiu@iiu.taint.org
+X-Mailman-Version: 2.0.10
+Precedence: bulk
+Sender: iiu-owner@taint.org
+Errors-To: iiu-owner@taint.org
+X-Beenthere: iiu@iiu.taint.org
+List-Unsubscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=unsubscribe>
+List-Id: Irish Internet Users List. See http://iiu.taint.org/
+    <iiu.iiu.taint.org>
+List-Post: <mailto:iiu@iiu.taint.org>
+List-Help: <mailto:iiu-request@iiu.taint.org?subject=help>
+List-Subscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=subscribe>
+List-Archive: <http://iiu.taint.org/pipermail/iiu/>
+
+As list administrator, your authorization is requested for the
+following mailing list posting:
+
+    List:    Irish Internet Users@iiu.taint.org
+    From:    yyyycc@hackwatch.com
+    Subject: Re: [IIU] IE nameserver problems
+    Reason:  Post to moderated list
+
+At your convenience, visit:
+
+    http://iiu.taint.org/mailman/admindb/iiu
+        
+to approve or deny the request.
+
+

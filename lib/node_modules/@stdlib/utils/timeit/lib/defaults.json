@@ -1,0 +1,7 @@
+{
+	"iterations": 1000000,
+	"repeats": 3,
+	"before": "",
+	"after": "",
+	"asynchronous": false
+}

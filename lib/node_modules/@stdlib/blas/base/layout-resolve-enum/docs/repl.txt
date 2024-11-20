@@ -1,0 +1,29 @@
+
+{{alias}}( layout )
+    Returns the enumeration constant associated with a supported BLAS memory
+    layout value.
+
+    Downstream consumers of this function should *not* rely on specific integer
+    values (e.g., `ROW_MAJOR == 0`). Instead, the function should be used in an
+    opaque manner.
+
+    Parameters
+    ----------
+    layout: any
+        Layout value.
+
+    Returns
+    -------
+    out: integer|null
+        Enumeration constant.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'row-major' )
+    <number>
+    > out = {{alias}}( {{alias:@stdlib/blas/base/layout-str2enum}}( 'row-major' ) )
+    <number>
+
+    See Also
+    --------
+

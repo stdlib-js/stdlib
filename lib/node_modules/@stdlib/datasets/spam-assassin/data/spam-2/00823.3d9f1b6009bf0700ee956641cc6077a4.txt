@@ -1,0 +1,147 @@
+From Programmers@netscape.net  Mon Jul 22 18:39:34 2002
+Return-Path: <Programmers@netscape.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id F3C1E440C9
+	for <jm@localhost>; Mon, 22 Jul 2002 13:39:30 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:39:30 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MG14Y16358 for
+    <sales@jmason.org>; Mon, 22 Jul 2002 17:01:04 +0100
+Received: from gateway (mailserv.franclair.com [217.109.166.53]) by
+    webnote.net (8.9.3/8.9.3) with SMTP id OAA27635 for <sales@jmason.org>;
+    Sun, 21 Jul 2002 14:08:29 +0100
+Received: from smtp0412.mail.yahoo.com ([203.186.145.243]) by gateway
+    (Mail-Gear 2.0.0) with SMTP id M2002072115040324597 ; Sun, 21 Jul 2002
+    15:04:10 +0200
+Date: Sun, 21 Jul 2002 06:22:01 -0700
+From: "Girija Billingsley" <Programmers@netscape.net>
+X-Priority: 3
+To: sales@spamassassin.taint.org
+Subject: Custom Software Development Services Available Right Now..
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Message-Id: <M2002072115040324597>
+Content-Type: text/html; charset=us-ascii
+
+<html><head><title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+.txt { font-family: Arial, Helvetica, sans-serif; font-size: 8pt}
+.orng { font-family: Arial, Helvetica, sans-serif; font-size: 12pt; color: #FF3300; font-weight: bold}
+.red { font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: bold; color: #006699}
+.wh { font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #ffffff}
+.gr { font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: bold; color: #666666}
+-->
+</style>
+</head>
+<body bgcolor="#99CCFF" leftmargin="0" topmargin="10" marginwidth="0" marginheight="0">
+<table width="600" border="0" cellspacing="2" cellpadding="5" align="center" bgcolor="#336699">
+  <tr valign="top"> 
+    <td bgcolor="#FFFFFF" rowspan="2"> 
+      <p class="txt"><span class="red">Dear Sir or Madam,</span><br>
+        <br>
+        We are glad to deliver cutting-edge solutions to your IT challenges at 
+        a quality that is equivalent or superior to that offered by domestic companies, 
+        but at a fraction of the cost of domestic development.<br>
+        <br>
+        We represent a number of well-established companies staffed with over 
+        1000 qualified developers with a record of successfully completing hundreds 
+        of small and midsize projects and tens of wide-scale projects for Fortune 
+        100 corporations.</p>
+      <center>
+        <span class=red>From business analysis and consulting to web design, from 
+        coding to testing and porting we provide a full cycle of IT services.<br>
+        </span> <br>
+      </center>
+      <p class=txt>Working both on-site and offshore our specialists develop and 
+        integrate</p>
+      <ul class=red>
+        <li>Internet/Intranet/Extranet applications</li>
+        <li>Business applications</li>
+        <li>ERP, CRM systems</li>
+        <li> e-Business (B2B, B2C) solutions</li>
+        <li>Mobile and Wireless applications 
+        <li>Desktop applications 
+        <li>Data Warehouses 
+        <li>Security and Cryptography systems 
+      </ul>
+      <p align="right"  class=red>and more...</p>
+      <p class=txt>Our quality is based on developed partnerships with leading 
+        IT technology providers, modern project and quality management and exclusive 
+        human resources.</p>
+    </td>
+    <td bgcolor="#FFFFFF"> 
+      <p align="center"><br>
+        <span class="orng"> Rates only $20 an hour!</span><br>
+        <br>
+        <span class="txt"><font size="2">For more info...<b><a href="mailto:Raymond2@btamail.net.cn,Mr777@libero.it?subject=Please send more info!">CLICK HERE!!!</a></b></font></span><BR>
+		<FONT SIZE="-2">Please include your phone number,<BR>and we will be happy to call you!</FONT><BR>
+      <p align=center><span class=orng><font color="#000000">Or Call:</font> 602-640-0095<br>
+        <br>
+        Cost effective IT solutions<br>
+        Experienced teams of specialists<br>
+        Fair rates</span></p>
+      
+    </td>
+  </tr>
+  <tr valign="top"> 
+    <td bgcolor="#FFFFFF" valign="top"> 
+      <p class="red">Here is a list of some of the technologies 
+        and platforms that our specialists employ to bring you only the best, 
+        most efficient and cost-effective solution:<br>
+      </p>
+      <table width="100%" border="0" cellspacing="1" cellpadding="2" class=txt>
+        <tr valign="top" bgcolor="#FFFFFF"> 
+          <td width="137"> 
+            <p><b> Application Platforms<br>
+              </b> <span class="gr">.: .Net<br>
+              .: Java2EE<br>
+              .: IBM WebSphere Suite<br>
+              .: Lotus Domino<br>
+              .: BEA WebLogic<br>
+              .: ColdFusion<br>
+              .: Enhydra</span></p>
+          </td>
+          <td width="124"> 
+            <center>
+              <b> Operating Systems<br>
+              </b>
+            </center>
+            <span class="gr">.: all Windows, Mac,<br>
+            and Unix platforms<br>
+            .: Epoc<br>
+            .: Windows CE<br>
+            .: Palm OS<br>
+            .: Java2Microedition</span></td>
+        </tr>
+        <tr valign="top" bgcolor="#FFFFFF"> 
+          <td width="137"><b>Databases<br>
+            </b><span class="gr">.: MS SQL<br>
+            .: Oracle<br>
+            .: DB2<br>
+            .: FoxPro<br>
+            .: Informix<br>
+            .: Sybase</span><b> </b></td>
+          <td width="124"> 
+            <p><b> <b class=txt>Real time embedded systems<br>
+              <span class="gr">.: QNX 4RT<br>
+              .: QNX Neutrio RT</span></b></b></p>
+            <p>&nbsp;</p>
+          </td>
+        </tr>
+      </table>
+    
+      <p align="center"><span class=orng><i><A HREF="mailto:Raymond2@btamail.net.cn,Mr777@libero.it?subject=I would like a Free quote!">Free quotes!</a></i></span><BR>
+	  <FONT SIZE="-2">Please include your phone number,<BR>and we will be happy to call you!</FONT><BR>
+    </td>
+  </tr>
+  <tr valign="middle" align="center"> 
+    <td bgcolor="#6699CC" colspan="2"><span class="txt">If you received this letter 
+      by mistake please click <A HREF="mailto:Remove-Please@btamail.net.cn?subject=Remove">Unsubscribe</a></span> 
+    </td></tr></table></body></html>
+
+

@@ -1,0 +1,64 @@
+From ilug-admin@linux.ie  Tue Aug 13 12:13:09 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id F25BD43C32
+	for <jm@localhost>; Tue, 13 Aug 2002 07:13:08 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 12:13:09 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7DBARe29011 for
+    <jm-ilug@jmason.org>; Tue, 13 Aug 2002 12:10:27 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA09817; Tue, 13 Aug 2002 12:08:59 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail.it-tallaght.ie (mail.it-tallaght.ie [193.1.120.163])
+    by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id MAA09789 for
+    <ilug@linux.ie>; Tue, 13 Aug 2002 12:08:52 +0100
+Received: by mail.it-tallaght.ie with Internet Mail Service (5.5.2656.59)
+    id <QSA34ZJ7>; Tue, 13 Aug 2002 12:07:00 +0100
+Message-Id: <A357A6B62E30D511804500B0D0AA789C0112E493@mail.it-tallaght.ie>
+From: "Smith, Graham - Computing Technician" <Graham.Smith@it-tallaght.ie>
+To: ilug@linux.ie
+Subject: RE: [ILUG] I hate noise!
+Date: Tue, 13 Aug 2002 12:06:59 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2656.59)
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    MAA09789
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+I ususally disconnect the internal speaker - thats pretty sure to stop any
+beeping!
+
+G.
+___________________________
+ Graham Smith,
+ Network Administrator,
+ Department of Computing,
+ Institute of Technology,
+ Tallaght, Dublin 24
+ Phone: + 353 (01) 4042840
+
+-----Original Message-----
+From: Éibhear [mailto:eibhear.geo@yahoo.com]
+Sent: 12 August 2002 16:49
+To: Éibhear; Padraig Brady; ilug@linux.ie
+Subject: Re: [ILUG] I hate noise!
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

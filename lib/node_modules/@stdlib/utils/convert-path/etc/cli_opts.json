@@ -1,0 +1,21 @@
+{
+	"string": [
+		"out",
+		"split"
+	],
+	"boolean": [
+		"help",
+		"version"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		],
+		"out": [
+			"o"
+		]
+	}
+}

@@ -1,0 +1,64 @@
+From ilug-admin@linux.ie  Wed Jul 31 16:33:55 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 802AD440C8
+	for <jm@localhost>; Wed, 31 Jul 2002 11:33:54 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 31 Jul 2002 16:33:54 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6VFTw230935 for
+    <jm-ilug@jmason.org>; Wed, 31 Jul 2002 16:29:58 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA13014; Wed, 31 Jul 2002 16:27:18 +0100
+Received: from homer.jinny.ie ([193.120.171.3]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA12986 for <ilug@linux.ie>; Wed,
+    31 Jul 2002 16:27:13 +0100
+Received: from jlooney.jinny.ie (fw [193.120.171.2]) by homer.jinny.ie
+    (8.9.3/8.11.2) with ESMTP id QAA13090 for <ilug@linux.ie>; Wed,
+    31 Jul 2002 16:26:42 +0100
+Received: (from john@localhost) by jlooney.jinny.ie (8.11.6/8.11.6) id
+    g6VFRSW06021 for ilug@linux.ie; Wed, 31 Jul 2002 16:27:28 +0100
+X-Authentication-Warning: jlooney.jinny.ie: john set sender to
+    jlooney@jinny.ie using -f
+Date: Wed, 31 Jul 2002 16:27:28 +0100
+From: "John P. Looney" <valen@tuatha.org>
+To: ilug@linux.ie
+Subject: Re: [ILUG] sysctl.conf
+Message-Id: <20020731152728.GF5178@jinny.ie>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: ilug@linux.ie
+References: <20020731152211.GE5178@jinny.ie>
+    <NBBBIGEGHIGMPCNKHCECAEFHEAAA.kenn@bluetree.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <NBBBIGEGHIGMPCNKHCECAEFHEAAA.kenn@bluetree.ie>
+User-Agent: Mutt/1.4i
+X-Os: Red Hat Linux 7.3/Linux 2.4.18-3
+X-Url: http://www.redbrick.dcu.ie/~valen
+X-Gnupg-Publickey: http://www.redbrick.dcu.ie/~valen/public.asc
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Wed, Jul 31, 2002 at 04:24:17PM +0100, Kenn Humborg mentioned:
+> man sysctl
+>    # sysctl -p
+
+ Ah right. Actually, sysctl -a was more helpful - shows why setting
+sys.fs.files-nr didn't work..
+
+KAte
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

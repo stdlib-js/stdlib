@@ -1,0 +1,26 @@
+
+{{alias}}( value )
+    Tests if a value is an empty array.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if a value is an empty array.
+
+    Examples
+    --------
+    > var bool = {{alias}}( [] )
+    true
+    > bool = {{alias}}( [ 1, 2, 3 ] )
+    false
+    > bool = {{alias}}( {} )
+    false
+
+    See Also
+    --------
+

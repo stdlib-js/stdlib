@@ -1,0 +1,36 @@
+
+{{alias}}( iterator )
+    Returns an iterator which iteratively computes the inverse cotangent.
+
+    If an environment supports Symbol.iterator and a provided iterator is
+    iterable, the returned iterator is iterable.
+
+    Parameters
+    ----------
+    iterator: Object
+        Input iterator.
+
+    Returns
+    -------
+    iterator: Object
+        Iterator.
+
+    iterator.next(): Function
+        Returns an iterator protocol-compliant object containing the next
+        iterated value (if one exists) and a boolean flag indicating whether the
+        iterator is finished.
+
+    iterator.return( [value] ): Function
+        Finishes an iterator and returns a provided value.
+
+    Examples
+    --------
+    > var it = {{alias}}( {{alias:@stdlib/random/iter/uniform}}( -5.0, 5.0 ) );
+    > var r = it.next().value
+    <number>
+    > r = it.next().value
+    <number>
+
+    See Also
+    --------
+

@@ -1,0 +1,16 @@
+
+{{alias}}
+    Number of seconds in a minute.
+
+    The value is a generalization and does **not** take into account
+    inaccuracies arising due to complications with time and dates.
+
+    Examples
+    --------
+    > var mins = 3.14;
+    > var secs = mins * {{alias}}
+    188.4
+
+    See Also
+    --------
+

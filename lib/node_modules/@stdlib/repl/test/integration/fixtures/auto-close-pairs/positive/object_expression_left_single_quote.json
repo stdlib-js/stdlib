@@ -1,0 +1,59 @@
+{
+  "expression": "x = {'}",
+  "cursor": 5,
+  "ast": {
+    "type": "Program",
+    "start": 0,
+    "end": 7,
+    "body": [
+      {
+        "type": "ExpressionStatement",
+        "start": 0,
+        "end": 7,
+        "expression": {
+          "type": "AssignmentExpression",
+          "start": 0,
+          "end": 7,
+          "operator": "=",
+          "left": {
+            "type": "Identifier",
+            "start": 0,
+            "end": 1,
+            "name": "x"
+          },
+          "right": {
+            "type": "ObjectExpression",
+            "start": 4,
+            "end": 7,
+            "properties": [
+              {
+                "type": "Property",
+                "start": 5,
+                "end": 7,
+                "method": false,
+                "shorthand": true,
+                "computed": false,
+                "key": {
+                  "type": "Literal",
+                  "start": 5,
+                  "end": 7,
+                  "value": "}",
+                  "raw": "'}"
+                },
+                "kind": "init",
+                "value": {
+                  "type": "Literal",
+                  "start": 5,
+                  "end": 7,
+                  "value": "}",
+                  "raw": "'}"
+                }
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "sourceType": "script"
+  }
+}

@@ -1,0 +1,107 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Wed Sep 11 19:43:23 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 0EC3D16F03
+	for <jm@localhost>; Wed, 11 Sep 2002 19:43:23 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 11 Sep 2002 19:43:23 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8BHgWC24927 for <jm-sa@jmason.org>; Wed, 11 Sep 2002 18:42:32 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17pBQJ-0005k2-00; Wed,
+    11 Sep 2002 10:37:07 -0700
+Received: from sccrmhc01.attbi.com ([204.127.202.61]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17pBPe-0000WG-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 11 Sep 2002 10:36:26 -0700
+Received: from blossom.cjclark.org ([12.234.91.48]) by sccrmhc01.attbi.com
+    (InterMail vM.4.01.03.27 201-229-121-127-20010626) with ESMTP id
+    <20020911173620.FTHS16673.sccrmhc01.attbi.com@blossom.cjclark.org> for
+    <spamassassin-talk@lists.sourceforge.net>; Wed, 11 Sep 2002 17:36:20 +0000
+Received: from blossom.cjclark.org (localhost. [127.0.0.1]) by
+    blossom.cjclark.org (8.12.3/8.12.3) with ESMTP id g8BHaJJK087114 for
+    <spamassassin-talk@lists.sourceforge.net>; Wed, 11 Sep 2002 10:36:19 -0700
+    (PDT) (envelope-from crist.clark@attbi.com)
+Received: (from cjc@localhost) by blossom.cjclark.org
+    (8.12.3/8.12.3/Submit) id g8BHaJpX087113 for
+    spamassassin-talk@lists.sourceforge.net; Wed, 11 Sep 2002 10:36:19 -0700
+    (PDT)
+X-Authentication-Warning: blossom.cjclark.org: cjc set sender to
+    crist.clark@attbi.com using -f
+From: "Crist J. Clark" <crist.clark@attbi.com>
+To: spamassassin-talk@example.sourceforge.net
+Message-Id: <20020911173618.GA86845@blossom.cjclark.org>
+Reply-To: cjclark@alum.mit.edu
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.4i
+X-Url: http://people.freebsd.org/~cjc/
+Subject: [SAtalk] Reject, Blackhole, or Fake No-User?
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 11 Sep 2002 10:36:18 -0700
+Date: Wed, 11 Sep 2002 10:36:18 -0700
+
+This is not directly SpamAssassin related, but more of a general
+dealing-with-SPAM issue.
+
+What is the best way to deal with SPAM during the SMTP transaction?
+There are domains and addresses that I know are SPAM at the 'MAIL
+FROM' and can deal with at the SMTP level. I have been, and I think
+most people, respond with a 5.7.1 code, a "permanent" error. That
+pretty much means, "Don't bother to try from that address again,
+you'll get the same error." People often add cathartic messages to
+accompany the 550 like, "Spammers must die."
+
+But this might not be the best way to go. You are telling the spammers
+that you are on to them. This may cause them to try other methods to
+get around your blocks. Is it perhaps better to blackhole the mail?
+That is, act like everything is OK during the SMTP transaction, but
+then just drop the mail into the bitbucket. (This is generally how
+SpamAssassin works since almost everyone uses it after the SMTP
+transaction has completed successfully.) Spammer thinks everything is
+going fine and has no reason to try new methods.
+
+Then there is a third possibility. Instead of returning a 550 code
+indicating you're on to the spammer, fake a 5.1.1 response which is
+saying "mailbox does not exist." This would be in the hopes that some
+spammers out there actually remove names reported as non-existent from
+their lists. I know, a slim hope, but even if only a few do, it can
+lower the incidence.
+
+So, what are the arguments for each? Do spammers even look at _any_ of
+the bounce messages they get? The volume of bounces must be
+huge. Personally, I'm starting to think blackholes are the way to
+go... But sending back that "Spammer die, die, die," or stock "Access
+DEE-NIED!" (my ephasis added) message can be pretty satisfying. ;)
+-- 
+Crist J. Clark                     |     cjclark@alum.mit.edu
+                                   |     cjclark@jhu.edu
+http://people.freebsd.org/~cjc/    |     cjc@freebsd.org
+
+
+-------------------------------------------------------
+In remembrance
+www.osdn.com/911/
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

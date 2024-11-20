@@ -1,0 +1,81 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Tue Aug 27 17:34:54 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8689D44155
+	for <jm@localhost>; Tue, 27 Aug 2002 12:34:51 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 27 Aug 2002 17:34:51 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7RGYLZ16888 for <jm-sa@jmason.org>; Tue, 27 Aug 2002 17:34:21 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17jjGE-0004va-00; Tue,
+    27 Aug 2002 09:32:10 -0700
+Received: from moon.campus.luth.se ([130.240.202.158]) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17jjFg-0003AV-00 for
+    <spamassassin-talk@lists.sourceforge.net>; Tue, 27 Aug 2002 09:31:36 -0700
+Received: from moon.campus.luth.se (tony@moon.campus.luth.se
+    [130.240.202.158]) by moon.campus.luth.se (8.12.3/8.12.3) with ESMTP id
+    g7RGV2Mg007050; Tue, 27 Aug 2002 18:31:02 +0200 (CEST) (envelope-from
+    tony@svanstrom.com)
+From: "Tony L. Svanstrom" <tony@svanstrom.com>
+X-X-Sender: tony@moon.campus.luth.se
+To: Matt Sergeant <msergeant@startechgroup.co.uk>
+Cc: "Craig R.Hughes" <craig@deersoft.com>,
+	"Malte S. Stretz" <msquadrat.nospamplease@gmx.net>,
+	<spamassassin-talk@lists.sourceforge.net>
+Subject: MacOS X (Re: [SAtalk] [OT] Habeas-talk (was: 2.40 RELEASE: oops
+    -- newer freqs.))
+In-Reply-To: <3D6B9BFD.9040307@startechgroup.co.uk>
+Message-Id: <20020827182710.A6871-100000@moon.campus.luth.se>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Tue, 27 Aug 2002 18:31:02 +0200 (CEST)
+Date: Tue, 27 Aug 2002 18:31:02 +0200 (CEST)
+
+On Tue, 27 Aug 2002 the voices made Matt Sergeant write:
+
+> I've got 6C115 (I think) the current developer release (though not the same
+> as gold).
+
+ The only difference AFAIK is the path to a single helpfile, which we don't use
+anyways, right? *G*
+
+
+	/Tony
+PS I also have a problem with that stupid helpprogram crasching whenever I
+search for "windows"; not sure if that's a feature or not. =)
+-- 
+# Per scientiam ad libertatem! // Through knowledge towards freedom! #
+# Genom kunskap mot frihet! =*= (c) 1999-2002 tony@svanstrom.com =*= #
+
+     perl -e'print$_{$_} for sort%_=`lynx -dump svanstrom.com/t`'
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

@@ -1,0 +1,64 @@
+From fork-admin@xent.com  Wed Jul 31 00:58:23 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 256BF4406D
+	for <jm@localhost>; Tue, 30 Jul 2002 19:58:23 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 31 Jul 2002 00:58:23 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6UNqg225281 for <jm@jmason.org>;
+    Wed, 31 Jul 2002 00:52:44 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 9A9602940E0; Tue, 30 Jul 2002 16:50:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from nycsmtp1out.rdc-nyc.rr.com (nycsmtp1out.rdc-nyc.rr.com
+    [24.29.99.226]) by xent.com (Postfix) with ESMTP id 178DA2940BB for
+    <fork@xent.com>; Tue, 30 Jul 2002 16:49:09 -0700 (PDT)
+Received: from R2D2 (24-90-220-88.nyc.rr.com [24.90.220.88]) by
+    nycsmtp1out.rdc-nyc.rr.com (8.12.1/Road Runner SMTP Server 1.0) with ESMTP
+    id g6UNmKZa006922 for <fork@xent.com>; Tue, 30 Jul 2002 19:48:20 -0400
+    (EDT)
+Message-Id: <4121-220027230234921841@R2D2>
+From: "" <dylan6830@msn.com>
+To: fork@spamassassin.taint.org
+Subject: Time Share
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 30 Jul 2002 19:49:21 -0400
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g6UNqg225281
+Content-Transfer-Encoding: 8bit
+
+Interested in Renting or Selling your
+Timeshare or Vacation Membership?
+ 
+We can help!
+ 
+For a FREE consultation, simply reply
+with your name and telephone number.
+Also include the name of your resort.
+We will be in touch with you shortly!
+ 
+	     Have a great day!  
+
+Removal instructions:
+*************************
+To be removed from this list please reply with "remove" in the subject.
+
+http://xent.com/mailman/listinfo/fork
+
+

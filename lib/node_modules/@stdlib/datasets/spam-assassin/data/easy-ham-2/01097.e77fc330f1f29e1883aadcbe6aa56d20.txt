@@ -1,0 +1,74 @@
+From fork-admin@xent.com  Tue Aug 20 20:16:00 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E459B43C32
+	for <jm@localhost>; Tue, 20 Aug 2002 15:15:59 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 20:15:59 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7KJFLZ20954 for <jm@jmason.org>;
+    Tue, 20 Aug 2002 20:15:21 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id ECA36294148; Tue, 20 Aug 2002 12:10:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mlug.missouri.edu (mlug.missouri.edu [128.206.61.230]) by
+    xent.com (Postfix) with ESMTP id EE9DD294146 for <fork@xent.com>;
+    Tue, 20 Aug 2002 12:09:59 -0700 (PDT)
+Received: from mlug.missouri.edu (mogmios@localhost [127.0.0.1]) by
+    mlug.missouri.edu (8.12.3/8.12.3/Debian -4) with ESMTP id g7KJBZKL022804
+    (version=TLSv1/SSLv3 cipher=EDH-RSA-DES-CBC3-SHA bits=168 verify=FAIL);
+    Tue, 20 Aug 2002 14:11:35 -0500
+Received: from localhost (mogmios@localhost) by mlug.missouri.edu
+    (8.12.3/8.12.3/Debian -4) with ESMTP id g7KJBZfe022800; Tue,
+    20 Aug 2002 14:11:35 -0500
+From: Michael <mogmios@mlug.missouri.edu>
+To: CDale <cdale@techmonkeys.net>
+Cc: fork@spamassassin.taint.org
+Subject: Re: Snag Ware
+In-Reply-To: <Pine.LNX.4.44.0208200335130.32191-100000@isolnetsux.techmonkeys.net>
+Message-Id: <Pine.LNX.4.44.0208201400150.19617-100000@mlug.missouri.edu>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 20 Aug 2002 14:11:34 -0500 (CDT)
+
+I develop software and my pricing is that I charge the first set of
+customers that drive the features included quite a bit, then charge the
+majority of the customers a small fee, and when I've earned back what I
+invested (including my hourly wage) then I release that software for free
+and either start working on a newer version (again back to the adding
+features step) or on a new product. If you can't find someone willing to
+pay your costs of development then most likely there really isn't a need
+for the product you're trying to sell and you shouldn't develop it. If you
+have to resort to free versions with lame ass ads and stuff then that is a
+strong indication to get a new project IMO.  :)
+
+
+> We were sitting here talking about Opera, and the fact that it's not
+> free anymore (unless you want the scrollypollies), and how that sucked
+> and stuff, and someone said something about nagware, and I
+> misinterpretted it as snag ware, which mainly means, oh yeh, right, I'm
+> gonna buy this -eyeroll- where's someone with a key?  LOL So who is it
+> again who's on this list who's associated with Opera?  Why's the free
+> one using the same LAME idea netzero, etc useD?  I know what kind of
+> costs are involved in creating software like this, and I understand
+> everyone needs to eat, but if someone can get netscape for free, and
+> opera isn't free, then, hmmm...  I imagine this email is going to bring
+> some bricks down on my head, but well, go for it, I gots my helmet.  (:
+> Cindy P.S. GregB, you there?  (:
+
+http://xent.com/mailman/listinfo/fork
+

@@ -1,0 +1,80 @@
+
+{{alias}}( x, μ, σ )
+    Evaluates the probability density function (PDF) for a lognormal
+    distribution with location parameter `μ` and scale parameter `σ` at a value
+    `x`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `σ <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    μ: number
+        Location parameter.
+
+    σ: number
+        Scale parameter.
+
+    Returns
+    -------
+    out: number
+        Evaluated PDF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 2.0, 0.0, 1.0 )
+    ~0.157
+    > y = {{alias}}( 1.0, 0.0, 1.0 )
+    ~0.399
+    > y = {{alias}}( 1.0, 3.0, 1.0 )
+    ~0.004
+    > y = {{alias}}( -1.0, 4.0, 2.0 )
+    0.0
+
+    > y = {{alias}}( NaN, 0.0, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, 0.0, NaN )
+    NaN
+
+    // Non-positive scale parameter `σ`:
+    > y = {{alias}}( 2.0, 0.0, -1.0 )
+    NaN
+    > y = {{alias}}( 2.0, 0.0, 0.0 )
+    NaN
+
+
+{{alias}}.factory( μ, σ )
+    Returns a function for evaluating the probability density function (PDF) of
+    a lognormal distribution with location parameter `μ` and scale parameter
+    `σ`.
+
+    Parameters
+    ----------
+    μ: number
+        Location parameter.
+
+    σ: number
+        Scale parameter.
+
+    Returns
+    -------
+    pdf: Function
+        Probability density function (PDF).
+
+    Examples
+    --------
+    > var myPDF = {{alias}}.factory( 4.0, 2.0 );
+    > var y = myPDF( 10.0 )
+    ~0.014
+    > y = myPDF( 2.0 )
+    ~0.025
+
+    See Also
+    --------
+

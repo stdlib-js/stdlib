@@ -1,0 +1,66 @@
+From fork-admin@xent.com  Mon Sep  2 13:15:14 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B13D947C85
+	for <jm@localhost>; Mon,  2 Sep 2002 07:46:24 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 02 Sep 2002 12:46:24 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g81NewZ08629 for <jm@jmason.org>;
+    Mon, 2 Sep 2002 00:40:59 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 0AF062940A2; Sun,  1 Sep 2002 16:38:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from sccrmhc01.attbi.com (sccrmhc01.attbi.com [204.127.202.61])
+    by xent.com (Postfix) with ESMTP id 6DCFA294099 for <fork@xent.com>;
+    Sun,  1 Sep 2002 16:37:18 -0700 (PDT)
+Received: from h00e098788e1f.ne.client2.attbi.com ([24.61.143.15]) by
+    sccrmhc01.attbi.com (InterMail vM.4.01.03.27 201-229-121-127-20010626)
+    with ESMTP id
+    <20020901233938.WYKD11061.sccrmhc01.attbi.com@h00e098788e1f.ne.client2.attbi.com>;
+    Sun, 1 Sep 2002 23:39:38 +0000
+From: bitbitch@magnesium.net
+X-Mailer: The Bat! (v1.52f) Educational
+Reply-To: bitbitch@magnesium.net
+X-Priority: 3 (Normal)
+Message-Id: <6464589899.20020901193917@magnesium.net>
+To: "Adam L. Beberg" <beberg@mithral.com>
+Cc: fork@spamassassin.taint.org
+Subject: Re: revocation of grlygrl201@
+In-Reply-To: <Pine.LNX.4.33.0209010758070.1078-100000@watcher.mithral.com>
+References: <Pine.LNX.4.33.0209010758070.1078-100000@watcher.mithral.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 1 Sep 2002 19:39:17 -0400
+
+
+Well Beberg, unless you're really into Anime and actually hold true
+that dead people can send email, I think Geege's subject is just dandy.
+Especially since she removed herself from the hive that is aol (and
+placed herself unto another, but hey :-))
+
+Geege:  I think its cute when he worries like that, don't you?
+:)
+
+*ducks and runs*
+
+(bonus FoRK points if Adam knows what anime i'm refering to)
+
+BB
+
+

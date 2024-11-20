@@ -1,0 +1,62 @@
+From fork-admin@xent.com  Mon Aug 12 11:11:39 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3890F4417E
+	for <jm@localhost>; Mon, 12 Aug 2002 05:57:22 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:57:22 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7C5JFb30674 for <jm@jmason.org>;
+    Mon, 12 Aug 2002 06:19:16 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 7561F2941A3; Sun, 11 Aug 2002 22:15:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hotmail.com (oe34.law12.hotmail.com [64.4.18.91]) by
+    xent.com (Postfix) with ESMTP id D9CE62941A2 for <fork@xent.com>;
+    Sun, 11 Aug 2002 22:14:00 -0700 (PDT)
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Sun, 11 Aug 2002 22:15:06 -0700
+X-Originating-Ip: [66.92.145.79]
+Reply-To: "Bill Kearney" <wkearney99@hotmail.com>
+From: "Bill Kearney" <wkearney99@hotmail.com>
+To: <fork@spamassassin.taint.org>
+References: <20020811211003.3718.26806.Mailman@lair.xent.com>
+Subject: Re: Forged whitelist spam
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.50.4807.1700
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4910.0300
+Message-Id: <OE34qP02iZVWmLqLi0x0001fbb1@hotmail.com>
+X-Originalarrivaltime: 12 Aug 2002 05:15:06.0688 (UTC) FILETIME=[38C66400:01C241BF]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 12 Aug 2002 01:13:04 -0400
+
+> > You mean like on mac keyboards :-)
+
+Or any of the Microsoft USB keyboards.  I've an MS Internet Pro unit with two
+ports off it's hub.
+
+I've considered using the 64mb flash unit in one of them as storage for keys.
+Unfortunately the KVM switching would drive the client programs crazy when
+switching between the machines.
+
+-Bill Kearney
+http://xent.com/mailman/listinfo/fork
+
+

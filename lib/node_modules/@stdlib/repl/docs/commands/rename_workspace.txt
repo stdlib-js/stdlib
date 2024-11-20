@@ -1,0 +1,52 @@
+
+renameWorkspace( oldName, newName )
+    Renames a workspace.
+
+    The new workspace name must not already exist. The only exception is when
+    the old name and the new name are the same; in which case, invoking this
+    function is a non-operation.
+
+    As a 'base' workspace must always exist, when renaming the 'base' workspace,
+    variables from the 'base' workspace are simply copied to a new workspace and
+    the 'base' workspace cleared of user-defined variables.
+
+    Parameters
+    ----------
+    oldName: string
+        Name of workspace to rename.
+
+    newName: string
+        New workspace name.
+
+    Examples
+    --------
+    // Create a new workspace:
+    > workspace( 'foobar' );
+    > var x = 3.14;
+
+    // List current workspaces:
+    > workspaces()
+
+    // Switch to another workspace:
+    > workspace( 'barfoo' );
+
+    // List current workspaces:
+    > workspaces()
+
+    // Rename the first workspace:
+    > renameWorkspace( 'foobar', 'beepboop' );
+
+    // Check the updated list of workspaces:
+    > workspaces()
+
+    // Switch to the renamed workspace:
+    > workspace( 'beepboop' );
+
+    // Confirm that workspace contains previously defined variables:
+    > x
+
+
+    See Also
+    --------
+    currentWorkspace, deleteWorkspace, loadWorkspace, workspace, workspaces
+

@@ -1,0 +1,64 @@
+From rpm-list-admin@freshrpms.net  Wed Sep  4 11:39:33 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id E8ADA16F72
+	for <jm@localhost>; Wed,  4 Sep 2002 11:37:35 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 04 Sep 2002 11:37:35 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g84657Z21740 for
+    <jm-rpm@jmason.org>; Wed, 4 Sep 2002 07:05:07 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g84633J17390; Wed, 4 Sep 2002 08:03:03
+    +0200
+Received: from basket.ball.reliam.net (basket.ball.reliam.net
+    [213.91.6.7]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g8462ZJ17321
+    for <rpm-list@freshrpms.net>; Wed, 4 Sep 2002 08:02:35 +0200
+Received: from localhost.localdomain (pD9EB4D1B.dip.t-dialin.net
+    [217.235.77.27]) by basket.ball.reliam.net (Postfix) with SMTP id
+    E8BBC3F51 for <rpm-list@freshrpms.net>; Wed,  4 Sep 2002 08:02:28 +0200
+    (CEST)
+From: che <che666@uni.de>
+To: rpm-zzzlist@freshrpms.net
+Subject: d4x 2.03 package
+Message-Id: <20020904075504.391d7319.che666@uni.de>
+Organization: che
+X-Mailer: Sylpheed version 0.8.2 (GTK+ 1.2.10; i386-redhat-linux)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Wed, 4 Sep 2002 07:55:04 -0400
+Date: Wed, 4 Sep 2002 07:55:04 -0400
+
+Hello!
+
+i have just found a small issue with the downloader 4 x update. the ftp search engines are missing something like:
+
+%{_datadir}/d4x/ftpsearch.xml 
+
+thanks in advance,
+che
+
+p.s. i love the xmms-xosd plugin :)
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

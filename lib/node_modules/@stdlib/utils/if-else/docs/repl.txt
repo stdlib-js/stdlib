@@ -1,0 +1,30 @@
+
+{{alias}}( bool, x, y )
+    If a condition is truthy, returns `x`; otherwise, returns `y`.
+
+    Parameters
+    ----------
+    bool: boolean
+        Condition.
+
+    x: any
+        Value to return if a condition is truthy.
+
+    y: any
+        Value to return if a condition is falsy.
+
+    Returns
+    -------
+    z: any
+        Either `x` or `y`.
+
+    Examples
+    --------
+    > var z = {{alias}}( true, 1.0, -1.0 )
+    1.0
+    > z = {{alias}}( false, 1.0, -1.0 )
+    -1.0
+
+    See Also
+    --------
+

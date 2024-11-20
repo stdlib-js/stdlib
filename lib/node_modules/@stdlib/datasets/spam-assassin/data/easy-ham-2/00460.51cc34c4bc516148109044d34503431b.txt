@@ -1,0 +1,80 @@
+From ilug-admin@linux.ie  Tue Aug 20 11:52:36 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7D0D043C4B
+	for <jm@localhost>; Tue, 20 Aug 2002 06:51:46 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 11:51:46 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7K9HjZ32192 for
+    <jm-ilug@jmason.org>; Tue, 20 Aug 2002 10:17:45 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA24090; Tue, 20 Aug 2002 10:15:50 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail00.svc.cra.dublin.eircom.net
+    (mail00.svc.cra.dublin.eircom.net [159.134.118.16]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id KAA24047 for <ilug@linux.ie>; Tue,
+    20 Aug 2002 10:15:40 +0100
+Received: (qmail 25477 messnum 528591 invoked from
+    network[159.134.147.60/pc828.as1.galway1.eircom.net]); 20 Aug 2002
+    09:15:09 -0000
+Received: from pc828.as1.galway1.eircom.net (HELO ciaran) (159.134.147.60)
+    by mail00.svc.cra.dublin.eircom.net (qp 25477) with SMTP; 20 Aug 2002
+    09:15:09 -0000
+Message-Id: <002e01c2482a$0f166f30$ac0305c0@ciaran>
+From: "Ciaran Mac Lochlainn" <ciaran17@eircom.net>
+To: <ilug-admin@linux.ie>, <ilug@linux.ie>
+References: <200208200754.IAA20270@lugh.tuatha.org>
+Subject: Re: [ILUG] Mail sent to ILUG
+Date: Tue, 20 Aug 2002 10:14:59 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-15"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2462.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2462.0000
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+is it really necessary to send these to the list?
+----- Original Message -----
+From: <ilug-admin@linux.ie>
+To: <ilug@linux.ie>
+Sent: Tuesday, August 20, 2002 8:54 AM
+Subject: [ILUG] Mail sent to ILUG
+
+
+> Your mail to 'ILUG' with the subject:
+>
+>     Audio plays a critical part in the Web surfer's consciousness rvxa
+>
+> Is being held until the list moderator can review it for approval.
+>
+> The reason it is being held:
+>
+>     Suspicious header
+>
+> Either the message will get posted to the list, or you will receive
+> notification of the moderator's decision.
+>
+> --
+> Irish Linux Users' Group: ilug@linux.ie
+> http://www.linux.ie/mailman/listinfo/ilug for (un)subscription
+information.
+> List maintainer: listmaster@linux.ie
+>
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

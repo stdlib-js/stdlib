@@ -1,0 +1,33 @@
+From rssfeeds@spamassassin.taint.org  Tue Oct  8 10:55:27 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id CCC0116F17
+	for <zzzz@localhost>; Tue,  8 Oct 2002 10:55:22 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Tue, 08 Oct 2002 10:55:22 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g98804K06008 for
+    <zzzz@spamassassin.taint.org>; Tue, 8 Oct 2002 09:00:04 +0100
+Message-Id: <200210080800.g98804K06008@dogma.slashnull.org>
+To: zzzz@spamassassin.taint.org
+From: diveintomark <rssfeeds@spamassassin.taint.org>
+Subject: Teach a man to fish
+Date: Tue, 08 Oct 2002 08:00:04 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://diveintomark.org/archives/2002/10/08.html#teach_a_man_to_fish
+Date: 2002-10-08T00:22:08-05:00
+
+_Kevin Hemenway_: Finding More Channels[1]. &#8220;In simple terms, there are 
+thousands of web sites that are actively providing their news and headlines in 
+a format AmphetaDesk can understand [RSS]. And while AmphetaDesk knows about a 
+good number of these sites, it'd be impossible to hunt down each and every 
+single possibility. So, this page is here to teach you how to fish.&#8221;
+
+
+
+[1] http://www.disobey.com/amphetadesk/finding_more.html
+
+

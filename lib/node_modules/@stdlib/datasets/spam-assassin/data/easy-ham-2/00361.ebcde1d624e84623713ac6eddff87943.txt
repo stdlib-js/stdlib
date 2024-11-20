@@ -1,0 +1,124 @@
+From ilug-admin@linux.ie  Tue Aug 13 10:28:55 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4F6DD4412C
+	for <jm@localhost>; Tue, 13 Aug 2002 05:21:50 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:21:50 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7D0kdb11193 for
+    <jm-ilug@jmason.org>; Tue, 13 Aug 2002 01:46:39 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id BAA15703; Tue, 13 Aug 2002 01:45:48 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail2.mail.iol.ie (mail2.mail.iol.ie [194.125.2.193]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id BAA15673 for <ilug@linux.ie>;
+    Tue, 13 Aug 2002 01:45:40 +0100
+Received: from [213.202.164.73] (helo=excalibur.research.wombat.ie) by
+    mail2.mail.iol.ie with esmtp (Exim 3.35 #1) id 17ePh8-0005lC-00;
+    Tue, 13 Aug 2002 01:37:59 +0100
+Received: (from kenn@localhost) by excalibur.research.wombat.ie
+    (8.11.6/8.11.6) id g7D0jbA14622; Tue, 13 Aug 2002 01:45:37 +0100
+Date: Tue, 13 Aug 2002 01:45:37 +0100
+From: Kenn Humborg <kenn@linux.ie>
+To: Paul Linehan <plinehan@yahoo.com>
+Cc: ilug@linux.ie
+Subject: Re: [ILUG] SUSE 8 disks? (thread changed slightly)
+Message-Id: <20020813014537.B14435@excalibur.research.wombat.ie>
+References: <20020812204603.GK25331@linuxmafia.com>
+    <20020812234021.17803.qmail@web13901.mail.yahoo.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Disposition: inline
+Content-Transfer-Encoding: 8bit
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <20020812234021.17803.qmail@web13901.mail.yahoo.com>;
+    from plinehan@yahoo.com on Tue, Aug 13, 2002 at 01:40:21AM +0200
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Tue, Aug 13, 2002 at 01:40:21AM +0200, Paul Linehan wrote:
+> 
+> Rick Moen <rick@linuxmafia.com> a écrit:
+...
+> > You're further confused if you think the GNU 
+> > GPL gives you the right to get covered software
+> > for free.  It does not.  
+> 
+> All I want is the OS and GNU apps. I was under
+> the impression that for *_those_* all one
+> needed was to pay for the media and not for the
+> code itself?
+> 
+> Ai-je tort?
+> 
+> 
+> > It provides that _if_ you've lawfully received
+> > a copy of the covered binary version, you have
+> > rights to also receive the matching source code.
+> 
+> My understanding was that binaries or whatever
+> could be received for the cost of the media plus
+> a token of one's appreciation (the latter being
+> subject to agreement between the parties) - I was
+> offering a bottle of wine plus maybe a pint or two
+> and a chat for a copy - I don't know what the going
+> rate is.
+
+The GPL makes no stipulations about charging for binaries.
+In fact, you can go get the sources for, say, GNU's /bin/true,
+compile it yourself and try selling the resulting binary
+for EUR 1000.  (And, with a good enough sales pitch, you
+just might get away with it!)
+
+However, what the GPL does stipulate is that you must 
+provide the sources for that binary if asked.  So I might
+buy it from you for EUR 1000, compile it myself and sell
+that binary for EUR 1.  Of course, I'll need to provide
+the sources to anyone that asks as well.  But, I just
+might make money at this, since there might be a market of
+10000 people who would pay 1 euro for the convenience of
+getting a binary.
+
+But then, John Looney would step in, buy it from me for
+1 euro, burn it and the sources and some of his favourite
+/bin/true patches on a CD and duplicate it for the cost of
+the media or a cream bun, depending on how hungry he is.
+
+You see, the GPL doesn't force the binaries to be zero-cost
+(or cost-of-media), but it puts a really big hole in any
+business plan that solely resells GPL software.  You _can_
+charge for it if you want, but you bloody well better be
+providing some value for that money, or you'll go out of
+business faster than a dot-com in 2001.
+
+And there are real ways to provide this value for money
+(convenience of getting it on one CD, convenience of a
+friendly installer, convenience of vendor-supplied updates,
+convenience of having what lots of other people have,
+posting a CD and paying a few euro is cheaper than downloading
+over a modem, warm fuzzy feeling of getting something from
+a "real" company, etc).
+
+There will be segments of the market that will pay various
+amounts for GPL software and there will be others that don't.
+Thankfully, the GPL allows for both, _by_design_.  But the
+source will always be free (or minimal cost).
+
+Later,
+Kenn
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

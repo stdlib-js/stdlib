@@ -1,0 +1,25 @@
+Return-Path: gward@python.net
+Delivery-Date: Fri Sep  6 14:57:18 2002
+From: gward@python.net (Greg Ward)
+Date: Fri, 6 Sep 2002 09:57:18 -0400
+Subject: [Spambayes] Re: [Python-Dev] Getting started with GBayes testing
+In-Reply-To: <200209060806.g8686ve03964@localhost.localdomain>
+References: <BIEJKCLHCIOIHAGOKOLHGEEMDKAA.tim.one@comcast.net>
+	<200209060806.g8686ve03964@localhost.localdomain>
+Message-ID: <20020906135718.GC16820@cthulhu.gerg.ca>
+
+On 06 September 2002, Anthony Baxter said:
+> A snippet, hopefully not enough to trigger the spam-filters.
+
+As an aside: one of the best ways to dodge SpamAssassin is by having an
+In-Reply-To header.  Most list traffic should meet this criterion.
+
+Alternately, I can whitelist mail to spambayes@python.org -- that'll
+work until spammers get ahold of the list address, which usually seems
+to take a few months.
+
+        Greg
+-- 
+Greg Ward <gward@python.net>                         http://www.gerg.ca/
+Gee, I feel kind of LIGHT in the head now, knowing I can't make my
+satellite dish PAYMENTS!

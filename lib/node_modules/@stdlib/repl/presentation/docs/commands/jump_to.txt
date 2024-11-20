@@ -1,0 +1,17 @@
+
+jumpTo( n )
+    Jumps to a specified slide, where `n` is the nominal slide number.
+
+    Parameters
+    ----------
+    n: integer
+    	Nominal slide number (one-based).
+
+    Examples
+    --------
+    > jumpTo( 2 );
+
+    See Also
+    --------
+    jump, next, prev
+

@@ -1,0 +1,140 @@
+From fork-admin@xent.com  Wed Oct  2 18:18:54 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id E68B216F03
+	for <jm@localhost>; Wed,  2 Oct 2002 18:18:52 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 02 Oct 2002 18:18:52 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g92GpiK17868 for <jm@jmason.org>;
+    Wed, 2 Oct 2002 17:51:48 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 7E5B7294176; Wed,  2 Oct 2002 09:47:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from barry.mail.mindspring.net (barry.mail.mindspring.net
+    [207.69.200.25]) by xent.com (Postfix) with ESMTP id 8E1E7294175 for
+    <fork@xent.com>; Wed,  2 Oct 2002 09:46:13 -0700 (PDT)
+Received: from user-119ac86.biz.mindspring.com ([66.149.49.6]) by
+    barry.mail.mindspring.net with esmtp (Exim 3.33 #1) id 17wmdg-0005BM-00;
+    Wed, 02 Oct 2002 12:46:20 -0400
+MIME-Version: 1.0
+X-Sender: rahettinga@pop.earthlink.net
+Message-Id: <p05111a10b9c0b4fbbb2d@[66.149.49.6]>
+To: Digital Bearer Settlement List <dbs@philodox.com>, fork@spamassassin.taint.org
+From: "R. A. Hettinga" <rah@shipwright.com>
+Subject: Re: Optical analog computing?
+Content-Type: text/plain; charset="us-ascii"
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 2 Oct 2002 10:37:02 -0400
+
+
+--- begin forwarded text
+
+
+Date: Wed, 02 Oct 2002 01:30:24 -0400
+From: "John S. Denker" <jsd@monmouth.com>
+Subject: Re: Optical analog computing?
+Sender: jsd@no.domain.spam
+To: "R. A. Hettinga" <rah@shipwright.com>
+Cc: Digital Bearer Settlement List <dbs@philodox.com>,
+ cryptography@wasabisystems.com
+
+"R. A. Hettinga" wrote:
+...
+> "the first computer to crack enigma was optical"
+> "the first synthetic-aperture-radar processor was optical"
+> "but all these early successes were classified -- 100 to 200 projects,
+> and I probably know of less than half."
+>
+> --> Do these claims compute?! is this really a secret history, or does
+> this mean holography, of am I just completely out of the loop?1
+
+Gimme a break.  This is remarkable for its lack of
+newsworthiness.
+
+1) Bletchley Park used optical sensors, which were (and
+still are) the best way to read paper tape at high speed.
+You can read about it in the standard accounts, e.g.
+  http://www.picotech.com/applications/colossus.html
+
+2) For decades before that, codebreakers were using optical
+computing in the form of superposed masks to find patterns.
+You can read about it in Kahn.
+
+3) People have been doing opto-electronic computing for
+decades.  There's a lot more to it than just holography.
+I get 14,000 hits from
+  http://www.google.com/search?q=optical-computing
+
+> Optical info is a complex-valued wave (spatial frequency, amplitude and
+> phase)
+
+It isn't right to make it sound like three numbers (frequency,
+amplitude, and phase);  actually there are innumerable
+frequencies, each of which has its own amplitude and phase.
+
+> lenses, refractions, and interference are the computational operators.
+> (add, copy, multiply, fft, correlation, convolution) of 1D and 2D arrays
+>
+> and, of course, massively parallel by default.
+>
+> and, of course, allows free-space interconnects.
+
+Some things that are hard with wires are easy with
+light-waves.  But most things that are easy with wires
+are hard with light-waves.
+
+> Here's a commercialized effort from israel: a "space integrating
+> vector-matric multiplier"  [ A ] B = [ C ]
+> laser-> 512-gate modulator -> spread over 2D
+> "256 Teraflop equivalent" for one multiply per nanosecond.
+
+People were doing smaller versions of that in
+the 1980s.
+
+> Unclassified example: acousto-optic spectrometer, 500 Gflops equivalent
+> (for 12 watts!) doing continuous FFTs.  Launched in 1998 on a 2-year
+> mission. Submillimeter wave observatory.
+
+Not "FFTs".  FTs.  Fourier Transforms.  All you need for
+taking a D=2 Fourier Transform is a lens.  It's undergrad
+physics-lab stuff.  I get 6,000 hits from:
+  http://www.google.com/search?q=fourier-optics
+
+> Of course, the rest of the talk is about the promise of moving from
+> optoelectronic to all-optical processors (on all-optical nets & with
+> optical encryption, & so on).
+
+All optical???  No optoelectronics anywhere???
+That's medicinal-grade pure snake oil, USP.
+
+Photons are well known for not interacting with
+each other.  It's hard to do computing without
+interactions.
+
+--- end forwarded text
+
+
+-- 
+-----------------
+R. A. Hettinga <mailto: rah@ibuc.com>
+The Internet Bearer Underwriting Corporation <http://www.ibuc.com/>
+44 Farquhar Street, Boston, MA 02131 USA
+"... however it may deserve respect for its usefulness and antiquity,
+[predicting the end of the world] has not been found agreeable to
+experience." -- Edward Gibbon, 'Decline and Fall of the Roman Empire'
+
+

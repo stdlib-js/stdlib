@@ -1,0 +1,72 @@
+From ilug-admin@linux.ie  Tue Aug 13 10:29:38 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5113E43C45
+	for <jm@localhost>; Tue, 13 Aug 2002 05:22:03 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:22:03 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7D7nqb22036 for
+    <jm-ilug@jmason.org>; Tue, 13 Aug 2002 08:49:52 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id IAA31329; Tue, 13 Aug 2002 08:49:17 +0100
+Received: from homer.jinny.ie ([193.120.171.3]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id IAA31305 for <ilug@linux.ie>; Tue,
+    13 Aug 2002 08:49:11 +0100
+Received: from jlooney.jinny.ie (fw [193.120.171.2]) by homer.jinny.ie
+    (8.9.3/8.11.2) with ESMTP id IAA04741 for <ilug@linux.ie>; Tue,
+    13 Aug 2002 08:48:41 +0100
+Received: (from john@localhost) by jlooney.jinny.ie (8.11.6/8.11.6) id
+    g7D7mtv05052 for ilug@linux.ie; Tue, 13 Aug 2002 08:48:55 +0100
+X-Authentication-Warning: jlooney.jinny.ie: john set sender to
+    jlooney@jinny.ie using -f
+Date: Tue, 13 Aug 2002 08:48:55 +0100
+From: "John P. Looney" <valen@tuatha.org>
+To: ilug@linux.ie
+Subject: Re: [ILUG] SUSE 8 disks? (thread changed slightly)
+Message-Id: <20020813074855.GF1858@jinny.ie>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: ilug@linux.ie
+References: <200208122348.AAA13536@lugh.tuatha.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <200208122348.AAA13536@lugh.tuatha.org>
+User-Agent: Mutt/1.4i
+X-Os: Red Hat Linux 7.3/Linux 2.4.18-3
+X-Url: http://www.redbrick.dcu.ie/~valen
+X-Gnupg-Publickey: http://www.redbrick.dcu.ie/~valen/public.asc
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Tue, Aug 13, 2002 at 12:48:18AM +0100, wintermute mentioned:
+> How unimaginably difficult is this to do?  There are as far as I know,
+> no Linux kernel hackers, nor distros that originate from this fair
+> island right?  Right.
+
+ Antefacto Embedded Linux...did.
+
+ Nice little distro that'd run on a 64MB flash card (with 12MB free), with
+a read-only root filesystem. Perfect for little embedded systems. It was a
+very cut down version of RedHat 7.2.
+
+ Must see can we release the build system & everything. That was the
+interesting bit. Distros, in general, are a waste of time. You've no idea
+how much better something like Debian or RedHat could be than something
+you did yourself, unless you picked a niche area.
+
+Kate
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

@@ -1,0 +1,123 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6PAYpi5068503
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Thu, 25 Jul 2002 05:34:52 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6PAYowt068499
+	for cypherpunks-forward@ds.pro-ns.net; Thu, 25 Jul 2002 05:34:50 -0500 (CDT)
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6PAYRi4068300
+	for <cypherpunks@ds.pro-ns.net>; Thu, 25 Jul 2002 05:34:42 -0500 (CDT)
+	(envelope-from cpunks@einstein.ssz.com)
+X-Authentication-Warning: hq.pro-ns.net: Host cpunks@[207.200.56.4] claimed to be einstein.ssz.com
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id FAA13831
+	for cypherpunks@ds.pro-ns.net; Thu, 25 Jul 2002 05:43:20 -0500
+Received: (from mdom@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id FAA13807
+	for cypherpunks-outgoing; Thu, 25 Jul 2002 05:42:45 -0500
+Received: from sng-exchange.skynetglobal.com ([203.53.129.8])
+	by einstein.ssz.com (8.8.8/8.8.8) with ESMTP id FAA13800
+	for <cypherpunks@ssz.com>; Thu, 25 Jul 2002 05:42:28 -0500
+Received: from mx06.hotmail.com (ACC24F6E.ipt.aol.com [172.194.79.110]) by sng-exchange.skynetglobal.com with SMTP (Microsoft Exchange Internet Mail Service Version 5.5.2653.13)
+	id 3W1SDNM1; Thu, 25 Jul 2002 18:34:40 +1000
+Message-ID: <000076161b3b$000005a7$00005db9@mx06.hotmail.com>
+To: <wngnuts@aol.com>
+Cc: <jfwee@aol.com>, <jerrygri@earthlink.com>, <kdivito@aol.com>,
+   <ssteinhardt@websolutions.com>, <soccer7xx@aol.com>,
+   <cypherpunks@einstein.ssz.com>, <ddike@digitalskylight.com>
+From: "Julia" <xy2fiww2h4684@hotmail.com>
+Subject: Toners and inkjet cartridges for less....                   P
+Date: Thu, 25 Jul 2002 01:34:47 -1900
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Sender: owner-cypherpunks@einstein.ssz.com
+Precedence: bulk
+Reply-To: cypherpunks@einstein.ssz.com
+X-Mailing-List: cypherpunks@ssz.com
+X-Unsubscription-Info: http://einstein.ssz.com/cdr
+X-List-Admin: list@ssz.com
+X-Loop: ssz.com
+X-Acceptable-Languages: English, Russian, German, French, Spanish
+
+<HR>
+<html>
+<div bgcolor=3D"#FFFFCC">
+
+  <p align=3D"center"><a
+href=3D"http://www.fabulousmail.com"><img border=3D"0"
+src=3D"http://www.fabulousmail.com/Toners2goLogo.jpg"
+width=3D"349" height=3D"96"></a></p>
+<p align=3D"center"><font size=3D"6" face=3D"Arial MT
+Black"><i>Tremendous Savings</i>
+on Toners,&nbsp;</font></p>
+<p align=3D"center"><font size=3D"6" face=3D"Arial MT
+Black">
+Inkjets, FAX, and Thermal Replenishables!!</font></p>
+<p><a href=3D"http://www.fabulousmail.com">Toners 2 Go
+</a>is your secret
+weapon to lowering your cost for <a
+href=3D"http://www.fabulousmail.com">High Quality,
+Low-Cost</a> printer
+supplies!&nbsp; We have been in the printer
+replenishables business since 1992,
+and pride ourselves on rapid response and outstanding
+customer service.&nbsp;
+What we sell are 100% compatible replacements for
+Epson, Canon, Hewlett Packard,
+Xerox, Okidata, Brother, and Lexmark; products that
+meet and often exceed
+original manufacturer's specifications.</p>
+<p><i><font size=3D"4">Check out these
+prices!</font></i></p>
+<p>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Epson Stylus
+Color inkjet cartridge
+(SO20108):&nbsp;&nbsp;&nbsp;&nbsp; Epson's Price:
+$27.99&nbsp; <font face=3D"Arial MT Black">&nbsp;&nbsp;
+Toners2Go price: $9.95!</font></p>
+  <p>&nbsp;&nbsp; <font face=3D"Arial MT
+Black">&nbsp;&nbsp;&nbsp; </font>HP
+LaserJet 4 Toner Cartridge
+(92298A):&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;
+HP's
+Price:
+$88.99&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font face=3D"Arial MT Black">Toners2Go
+  price: $41.75!</font></p>
+<p align=3D"center">&nbsp;</p>
+<p>Come visit us on the web to check out our hundreds
+of similar bargains at <a
+href=3D"http://www.fabulousmail.com">Toners
+2 Go</a>!
+</p>
+
+<hr>
+  
+  request to be removed by clicking <a
+href=3D"http://www.fabulousmail.com/unsubscribe.htm">HERE</a></span></font=
+><br>
+ 
+</div>
+</html>
+c.l.kyle
+
+
+
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

@@ -1,0 +1,81 @@
+From razor-users-admin@lists.sourceforge.net  Mon Sep  2 12:22:44 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3643543F99
+	for <jm@localhost>; Mon,  2 Sep 2002 07:22:44 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 02 Sep 2002 12:22:44 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7TNfsZ01475 for <jm-razor@jmason.org>; Fri, 30 Aug 2002 00:41:54 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17kYnd-0002Im-00; Thu,
+    29 Aug 2002 16:34:05 -0700
+Received: from 208-150-110-21-adsl.precisionet.net ([208.150.110.21]
+    helo=neofelis.ixazon.lan) by usw-sf-list1.sourceforge.net with esmtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17kYnY-0005zK-00 for
+    <razor-users@lists.sourceforge.net>; Thu, 29 Aug 2002 16:34:00 -0700
+Received: by neofelis.ixazon.lan (Postfix, from userid 504) id A33003C47A;
+    Thu, 29 Aug 2002 19:33:53 -0400 (EDT)
+Content-Type: text/plain; charset="iso-8859-1"
+From: "cmeclax po'u le cmevi'u ke'umri" <cmeclax@gmx.co.uk>
+Reply-To: cmeclax@ixazon.dynip.com
+To: <razor-users@example.sourceforge.net>
+Subject: Re: [Razor-users] Collision of hashes?
+X-Mailer: KMail [version 1.2]
+References: <Pine.LNX.4.44.0208201746330.23681-100000@r2-pc.dcs.qmul.ac.uk>
+    <010501c24f82$947b3340$7c640f0a@mfc.corp.mckee.com>
+In-Reply-To: <010501c24f82$947b3340$7c640f0a@mfc.corp.mckee.com>
+Comment: li 0x18080B5EBAEAEC17619A6B51DFF93585D986F633 cu sevzi le mi ckiku
+MIME-Version: 1.0
+Message-Id: <02082919334401.04648@neofelis>
+Content-Transfer-Encoding: 8bit
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Thu, 29 Aug 2002 19:33:44 -0400
+Date: Thu, 29 Aug 2002 19:33:44 -0400
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+de'i Thursday 29 August 2002 13:36 la Fox cusku di'e
+> The following was personal correspondence between two people.  I can't
+>
+> fathom how Razor thinks it is spam:
+
+Was it sent in HTML? If so, and it had a background, the background may have 
+been sent in a spam.
+
+cmeclax
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.7 (GNU/Linux)
+
+iD8DBQE9bq9f3/k1hdmG9jMRAk4XAJ9CheEA+/hLIU9zTzfJbPyoPUm+XwCfXgZ1
+tg7Fn8JcG9Q13UlKVfaOJzk=
+=Mw8+
+-----END PGP SIGNATURE-----
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+

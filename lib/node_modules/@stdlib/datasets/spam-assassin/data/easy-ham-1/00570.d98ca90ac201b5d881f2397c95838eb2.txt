@@ -1,0 +1,868 @@
+From fork-admin@xent.com  Thu Sep 12 13:39:57 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 1551816F03
+	for <jm@localhost>; Thu, 12 Sep 2002 13:39:49 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 12 Sep 2002 13:39:49 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8C9BtC24644 for <jm@jmason.org>;
+    Thu, 12 Sep 2002 10:12:04 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id D667E2940B0; Thu, 12 Sep 2002 02:08:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from alumnus.caltech.edu (alumnus.caltech.edu [131.215.49.51])
+    by xent.com (Postfix) with ESMTP id 1846129409A; Thu, 12 Sep 2002 02:07:52
+    -0700 (PDT)
+Received: from localhost (localhost [127.0.0.1]) by alumnus.caltech.edu
+    (8.12.3/8.12.3) with ESMTP id g8C9AnSV012069; Thu, 12 Sep 2002 02:10:49
+    -0700 (PDT)
+Subject: CBS News' interview w/Bush & reconstruction of his peregrinations
+Content-Type: text/plain; charset=WINDOWS-1252; format=flowed
+MIME-Version: 1.0 (Apple Message framework v482)
+From: Rohit Khare <khare@alumni.caltech.edu>
+To: fork@spamassassin.taint.org
+Message-Id: <A6B394CA-C627-11D6-B334-000393A46DEA@alumni.caltech.edu>
+X-Mailer: Apple Mail (2.482)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 12 Sep 2002 01:14:22 -0700
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g8C9BtC24644
+
+
+"60 Minutes II" Bush Interview:
+
+(CBS) No president since Abraham Lincoln has seen such horrific loss of 
+life in a war on American soil. No president since James Madison, nearly 
+200 years ago, has seen the nation’s capital city successfully attacked. 
+But, one year ago, President George W. Bush was thrown into the first 
+great crisis of the 21st century.
+
+This is the president’s story of September 11th and the week America 
+went to war. 60 Minutes II spent two hours with Mr. Bush, one, on Air 
+Force One and another in the Oval Office last week. Even after a year, 
+the president is still moved, sometimes to the point of tears, when he 
+remembers Sept. 11.
+
+“I knew, the farther we get away from Sept.11, the more likely it is for 
+some around the world to forget the mission, but not me,” Mr. Bush says 
+during the Air Force One interview. “Not me. I made the pledge to myself 
+and to people that I’m not going to forget what happened on Sept. 11. So 
+long as I’m president, we will pursue the killers and bring them to 
+justice. We owe that to those who have lost their lives.”
+
+The memories come back sharp and clear on Air Force One, where Pelley 
+joined the president for a recent trip across country. 60 Minutes II 
+wanted to talk to him there because that is where he spent the first 
+hours after the attack.
+
+Not since Lyndon Johnson was sworn in on Air Force One has the airplane 
+been so central to America in a crisis.
+
+For President Bush, Sept. 11 2001, started with the usual routine. 
+Before dawn, the president was on his four-mile run. It was just before 
+6 a.m. and, at the same moment, another man was on the move: Mohammad 
+Atta. Two hours later, as Mr. Bush drove to an elementary school, 
+hijackers on four planes were murdering the flight crews and turning the 
+airliners east. As the motorcade neared the school at 8:45 a.m., jet 
+engines echoed in Manhattan.
+
+Atta plunged the 767 jumbo jet into World Trade Center Tower One.
+
+“I thought it was an accident,” says Mr. Bush. “I thought it was a pilot 
+error. I thought that some foolish soul had gotten lost and - and made a 
+terrible mistake.”
+
+Mr. Bush was told about the first plane just before sitting down with a 
+class of second graders. He was watching a reading drill when, just 
+after nine, United Flight 175 exploded into the second tower. There was 
+the sudden realization that what had seemed like a terrible mistake was 
+a coordinated attack.
+
+Back in the Florida classroom, press secretary Ari Fleischer got the 
+news on his pager. The president’s chief-of-staff, Andy Card stepped in.
+
+“A second plane hit the second tower; America is under attack,” Card 
+told the president
+
+When he said those words, what did he see in the President’s face?
+
+“I saw him coming to recognition of what I had said,” Card recalls. “I 
+think he understood that he was going to have to take command as 
+commander-in-chief, not just as president.”
+
+What was going through Bush’s mind when he heard the news?
+
+“We’re at war and somebody has dared attack us and we’re going to do 
+something about it,” Mr. Bush recalls. “I realized I was in a unique 
+setting to receive a message that somebody attacked us, and I was 
+looking at these little children and all of the sudden we were at war. I 
+can remember noticing the press pool and the press corps beginning to 
+get the calls and seeing the look on their face. And it became evident 
+that we were, you know, that the world had changed.”
+
+Mr. Bush walked into a classroom set up with a secure phone. He called 
+the vice president, pulling the phone cord tight as he spun to see the 
+attack on TV. Then he grabbed a legal pad and quickly wrote his first 
+words to the nation.
+
+"Ladies and gentlemen, this is a difficult moment for America,” he said 
+in the speech. “Today, we’ve had a national tragedy.”
+
+It was 9:30 a.m. As he spoke, Mr. Bush didn’t know that two more 
+hijacked jets were streaking toward Washington. Vice Pesident Dick 
+Cheney was in his office at the White House when a Secret Service agent 
+ran in.
+
+“He said to me, ‘Sir, we have to leave immediately’ and grabbed, put a 
+hand on my belt, another hand on my shoulder and propelled me out the 
+door of my office,” Cheney recalls. “I’m not sure how they do it, but 
+they sort of levitate you down the hallway, you move very fast.”
+
+“There wasn’t a lot of time for chitchat, you know, with the vice 
+president,” says Secret Service Director Brian Stafford, who was in his 
+command center ordering the round-up of top officials and the First 
+Family. He felt that he had only minutes to work with. “We knew there 
+were unidentified planes tracking in our direction,” he says.
+
+Cheney was rushed deep under the White House into a bunker called the 
+Presidential Emergency Operations Center. It was built for war, and this 
+was it. On her way down, National Security Advisor Condoleezza Rice 
+called Mr. Bush.
+
+“It was brief because I was being pushed to get off the phone and get 
+out of the West Wing,” says Rice. “They were hurrying me off the phone 
+with the president and I just said, he said, ‘I’m coming back’ and we 
+said ‘Mr. President that may not be wise.’ I remember stopping briefly 
+to call my family, my aunt and uncle in Alabama and say, ‘I’m fine. You 
+have to tell everybody that I’m fine’ but then settling into trying to 
+deal with the enormity of that moment, and in the first few hours, I 
+think the thing that was on everybody’s mind was how many more planes 
+are coming.”
+
+The Capitol was evacuated. And for the first time ever, the Secret 
+Service executed the emergency plan to ensure the presidential line of 
+succession. Agents swept up the 15 officials who stood to become 
+president if the others were killed. They wanted to move Vice President 
+Cheney, fearing he was in danger even in the bunker. But Cheney says 
+when he heard the other officials were safe, he decided to stay at the 
+White House, no matter what.
+
+“It’s important to emphasize it's not personal, you don’t think of it in 
+personal terms, you’ve got a professional job to do,” says Cheney.
+
+Cheney was joined by transportation secretary Norm Mineta who remembers 
+hearing the FAA counting down the hijacked jets closing in on the 
+capital.
+
+Says Mineta: “Someone came in and said ‘Mr. Vice president there’s a 
+plane 50 miles out,’ then he came in and said ‘Its now 10 miles out, we 
+don’t know where it is exactly, but it’s coming in low and fast.’”
+
+It was American Flight 77. At 9:38 a.m., it exploded into the Pentagon, 
+the first successful attack on Washington since the War of 1812.
+
+As the Pentagon burned, Mr. Bush’s limousine sped toward Air Force One 
+in Florida. At that moment, United Flight 93 - the last hijacked plane - 
+was taking dead aim at Washington. At the White House, the staff was in 
+the West Wing cafeteria, watching on TV. Press Secretary Jennifer 
+Millerwise was in the crowd when the order came to evacuate.
+
+“I no sooner walked outside when someone from the Secret Service yelled 
+‘Women drop your heels and run, drop your heels and run,’ and suddenly 
+the gates that never open except for authorized vehicles just opened and 
+the whole White House just flooded out,” she recalls.
+
+In Florida, as Mr. Bush boarded Air Force One, he was overheard telling 
+a Secret Service agent “Be sure to get the First Lady and my daughters 
+protected.” At 9:57 a.m., Air Force One thundered down the runway, 
+blasting smoke and dust in a full -hrust take off. Communications 
+Director Dan Bartlett was on board.
+
+“It was like a rocket,” he remembers. “For a good ten minutes, the plane 
+was going almost straight up.”
+
+At the same moment, 56 minutes after it was hit, World Trade Center 
+Tower Two began to falter, then cascade in an incomprehensible avalanche 
+of steel, concrete and human lives.
+
+“Someone said to me, ‘Look at that’ I remember that, ‘Look at that’ and 
+I looked up and I saw and I just remember a cloud of dust and smoke and 
+the horror of that moment,” recalls Rice of the TV newscast.
+
+She also felt something in her gut: “That we’ve lost a lot of Americans 
+and that eventually we would get these people. I felt the anger. Of 
+course I felt the anger.”
+
+Down in the bunker, Cheney was trying to figure out how many hijacked 
+planes there were. Officials feared there could be as many as 11.
+
+As the planes track toward Washington, a discussion begins about whether 
+to shoot them down. “I discussed it with the president,” Cheney 
+recalls. “‘Are we prepared to order our aircraft to shoot down these 
+airliners that have been hijacked?’ He said yes.”
+
+“It was my advice. It was his decision,” says Cheney.
+
+“That’s a sobering moment to order your own combat aircraft to shoot 
+down your own civilian aircraft,” says Bush. “But it was an easy 
+decision to make given the – given the fact that we had learned that a 
+commercial aircraft was being used as a weapon. I say easy decision, it 
+was, I didn’t hesitate, let me put it that way. I knew what had to be 
+done.”
+
+The passengers on United Flight 93 also knew what had to be done. They 
+fought for control and sacrificed themselves in a Pennsylvania meadow. 
+The flight was 15 minutes from Washington.
+
+“Clearly, the terrorists were trying to take out as many symbols of 
+government as they could: the Pentagon, perhaps the Capitol, perhaps the 
+White House. These people saved us not only physically but they saved us 
+psychologically and symbolically in a very important way, too,” says 
+Rice.
+
+Meanwhile, Tower One was weakening. It had stood for an hour and 43 
+minutes. At 10:29 a.m., it buckled in a mirror image of the collapse of 
+its twin.
+
+The image that went round the world reached the First Lady in a secure 
+location somewhere in Washington. “I was horrified,” she says. “I 
+thought, ‘Dear God, protect as many citizens as you can.’ It was a 
+nightmare.”
+
+By 10:30 a.m., America’s largest city was devastated, its military 
+headquarters were burning. Air force One turned west along the Gulf 
+Coast.
+
+“I can remember sitting right here in this office thinking about the 
+consequences of what had taken place and realizing it was the defining 
+moment in the history of the United States,” says President Bush. “I 
+didn’t need any legal briefs, I didn’t need any consultations, I knew we 
+were at war.”
+
+Mr. Bush says the first hours were frustrating. He watched the 
+horrifying pictures, but the TV signal was breaking up. His calls to 
+Cheney were cutting out. Mr. Bush says he pounded his desk shouting, 
+“This is inexcusable; get me the vice president.”
+
+“I was trying to clear the fog of war, and there is a fog of war, says 
+the president. "Information was just flying from all directions.”
+
+Chief of staff Card brought in the reports. There was word Camp David 
+had been hit. A jet was thought to be targeting Mr. Bush’s ranch.
+
+“I remember hearing that the State Department might have been hit, or 
+that the White House had a fire in it. So we were hearing lots of 
+different information,” says Card.
+
+They also feared that Air Force One itself was a target. Cheney told the 
+president there was a credible threat against the plane. Using the code 
+name for Air Force One, Mr. Bush told an aide, “Angel is next.” The 
+threat was passed to presidential pilot Colonel Mark Tillman.
+
+“It was serious before that but now it is -no longer is it a time to get 
+the president home,” Tillman says. “We actually have to consider 
+everything we say, everything we do could be intercepted, and we have to 
+make sure that no one knows what our position is.”
+
+Tillman asked for an armed guard at his cockpit door while Secret 
+Service agents double-checked the identity of everyone on board. The 
+crew reviewed the emergency evacuation plan. Then came a warning from 
+air traffic control – a suspect airliner was dead ahead.
+
+“Coming out of Sarasota there was one call that said there was an 
+airliner off our nose that they did not have contact with,” Tillman 
+remembers.
+
+Tillman took evasive action, pulling his plane high above normal 
+traffic. They were on course for Washington, but by now no one thought 
+that was a good idea, except the president.
+
+“I wanted to come back to Washington, but the circumstances were such 
+that it was just impossible for the Secret Service or the national 
+security team to clear the way for Air Force One to come back,” says 
+Bush.
+
+So Air Force One set course for an underground command center in 
+Nebraska. Back in Washington, the president’s closest advisor, Karen 
+Hughes, heard about the threat to the plane and placed a call to Mr. 
+Bush.
+
+“And the military operator came back to me and in a voice that, to me, 
+sounded very shaken said, ‘Ma’am, I’m sorry, we can’t reach Air Force 
+One.’” Hughes recalls. Hughes was out of the White House during the 
+attacks. When she came back, it was a place she didn’t recognize.
+
+“There were either military, or maybe Secret Service, dressed all in 
+black, holding machine guns as, as we drove up. And I never expected to 
+see something like that in, in our nation's capital,” says Hughes.
+
+When she walked into the White House, no one was inside. “I knew it was 
+a day that you didn't want to surprise anybody, and so I yelled, 
+‘Hello?’ and two, again, kind of SWAT team members came running, running 
+through the, the hall with, again, guns drawn, and then took me to, to 
+the location where I met the vice president.”
+
+On Air Force One, Col. Tillman had a problem. He needed to hide the most 
+visible plane in the world, a 747 longer than the White House itself. He 
+didn’t want to use his radio, because the hijackers could be listening 
+to air traffic control. So he called air traffic control on the 
+telephone.
+
+“We actually didn't tell them our destination or what directions we were 
+heading,” says Tillman. “We, we basically just talked to 'em and said, 
+'OK, fine, we have no clearance at this time, we are just going to fly 
+across the United States.'”
+
+Controllers passed Air Force One from one sector to another, warning 
+each other to keep the route secret.
+
+“OK, where’s he going?” one tower radioed to another.
+
+“Just watch him,” a second tower responded. “Don’t question him where’s 
+he's going. Just work him and watch him, there’s no flight plan in and 
+we’re not going to put anything in. Ok, sir?”
+
+Air Force One ordered a fighter escort, and air traffic control radioed 
+back: “Air Force One, got two F-16s at about your 10 o’clock position.”
+
+“The staff, and the president and us, were filed out along the outside 
+hallway of his presidential cabin there and looking out the windows,” 
+says Bartlett. “And the president gives them a signal of salute, and the 
+pilot kind of tips his wing, and fades off and backs into formation.”
+
+The men in the F-16s were Shane Brotherton and Randy Roberts, from the 
+Texas Air National Guard. Their mission was so secret their commander 
+wouldn’t tell them where they were going.
+
+“He just said, 'You’ll know when you see it,' and that was my first 
+clue, I didn’t have any idea what we were going up until that point,” 
+says Brotherton. He knew when he saw it.
+
+“We, we were trying to keep an 80-mile bubble, bubble around Air Force 
+One, and we'd investigate anything that was within 80 miles,” says 
+Roberts.
+
+Bush says he was not worried about the safety of the people on this 
+aircraft, or for his own safety: “I looked out the airplane and saw two 
+F-16s on each wing. It was going to have to be a pretty good pilot to 
+get us.”
+
+We now know that the threat to Air Force One was part of the fog of war, 
+a false alarm. But it had a powerful effect at the time. Some wondered, 
+with the president out of sight, was he still running the government? He 
+hadn’t appeared after the attack on Washington. Mr. Bush was clearly 
+worried about it. At one point he was overheard saying, “The American 
+people want to know where their dang president is.” The staff considered 
+an address to the nation by phone but instead Mr. Bush ordered Air Force 
+One to land somewhere within 30 minutes so he could appear on TV. At 
+11:45 a.m., they landed at Barksdale Air Force Base in Louisiana.
+
+“The resolve of our great nation is being tested. But make no mistake, 
+we will show the world that we will pass this test. God bless,” Bush 
+said to the nation from Barksdale.
+
+At Barksdale, the Secret Service believed the situation in Washington 
+was still unsafe. So the plane continued on to Nebraska, to the command 
+center where Mr. Bush would be secure and have all the communications 
+gear he needed to run the government. Aboard Air Force One, Mr. Bush had 
+a job for press secretary Fleischer.
+
+“The president asked me to make sure that I took down everything that 
+was said. I think he wanted to make certain that a record existed,” says 
+Fleischer
+
+Fleischer’s notes capture Mr. Bush’s language, plain and unguarded. To 
+the vice president he said: “We’re at war, Dick, we’re going to find out 
+who did this and kick their ass.” Another time, Mr. Bush said, “We’re 
+not going to have any slap-on-the-wrist crap this time.”
+
+The President adds, “I can remember telling the Secretary of Defense, I 
+said, ‘We’re going to find out who did this and then Mr. Secretary, you 
+and Dick Myers,’ who we just named as chairman of the joint chiefs, ‘are 
+going to go get them.’”
+
+By 3 p.m., Air Force One touched down at Offutt Air Force Base in 
+Nebraska. Mr. Bush and his team were herded into a small brick hut that 
+gave no hint of what they would find below.
+
+At the bottom of the stairs was the U.S. Strategic Command Underground 
+Command Center. It was built to transmit a president’s order to go to 
+nuclear war. But when Mr. Bush walked in, the battle staff was watching 
+the skies over the United States. Many airplanes had still not landed. 
+After a short briefing, Mr. Bush and Card were taken to a teleconference 
+center which connected them to the White House, the Pentagon, the FBI 
+and the CIA. Mr. Bush had a question for his CIA Director George Tenent.
+
+According to Rice, Bush asked Tenent who had done this. Rice recalls 
+that Tenent answered: “Sir, I believe its al Qaeda. We’re doing the 
+assessment but it looks like, it feels like, it smells like al Qaeda.”
+
+The evidence would build. FBI Director Robert Mueller says that an 
+essential clue came from one of the hijacked planes before it crashed.
+
+A flight attendant on American Flight 11, Amy Sweeney, had the presence 
+of mind to call her office as the plane was hijacked and give them the 
+seat numbers of the hijackers. “That was the first piece of hard 
+evidence. We could then go to the manifest, find out who was sitting in 
+those seats and immediately conduct an investigation of those 
+individuals, as opposed to taking all the passengers on the plane and 
+going through a process of elimination,” says Mueller.
+
+In Nebraska, the White House staff was preparing for an address to the 
+nation from the Air Force bunker, but by then the president had had 
+enough. He decided to come back.
+
+“At one point, he said he didn’t want any tinhorn terrorist keeping him 
+out of Washington,” Fleischer says. “That verbatim.”
+
+On board, he was already thinking of issuing an ultimatum to the world: 
+“I had time to think and a couple of thoughts emerged. One was that 
+you're guilty if you harbor a terrorist, because I knew these terrorists 
+like al-Qaeda liked to prey on weak government and weak people. The 
+other thought that came was the opportunity to fashion a vast coalition 
+of countries that would either be with us or with the terrorists.”
+
+As Air Force One sped east, the last casualty of the attack on America 
+collapsed, one of the nation’s worst days wore into evening. At the 
+World Trade Center, 2,801 were killed; at the Pentagon, 184; and in 
+Pennsylvania 40. Altogether, there were 3,025 dead.
+
+“Anybody who would attack America the way they did, anybody who would 
+take innocent life the way they did, anybody who's so devious, is evil,” 
+Bush said recently.
+
+Mr. Bush would soon see that evil face to face. After arriving in 
+Washington, he boarded his helicopter and flew past the Pentagon on the 
+way to the White House.
+
+Was there a time when he was afraid that there might not be a White 
+House to return to? “I don’t remember thinking about whether or not the 
+White House would have been obliterated," he recalls. "I think I might 
+have thought they took their best shot, and now it was time for us to 
+take our best shot.”
+
+Mr. Bush arrived back at the White House nine hours after the attacks. 
+His next step was an address to the nation. Karen Hughes and her staff 
+were already working on the speech.
+
+“He decided that the primary tone he wanted to strike that night was 
+reassurance,” remembers Hughes. “We had to show resolve, we had to 
+reassure people, we had to let them know that we would be OK.”
+
+Just off the Oval Office, Mr. Bush added the words that would become 
+known as the Bush Doctrine - no distinction between terrorists and those 
+who harbor them. The staff wanted to add a declaration of war but Mr. 
+Bush didn’t think the American people wanted to hear it that night and 
+he was emphatic about that.
+
+He prepared to say it from the same desk where Franklin Roosevelt first 
+heard the news of Pearl Harbor. Now Bush was commander in chief. Eighty 
+million Americans were watching.
+
+“Today our fellow citizens, our way of life, our very freedom came under 
+attack in a series of deliberate and deadly terrorist acts,” he said 
+from the Oval Office that night.
+
+The Oval Office speech came at the end of the bloodiest day in American 
+history since the Civil War. Before he walked to the White House 
+residence for the night, Mr. Bush dictated these words for the White 
+House daily log: “The Pearl Harbor of the 21st century took place today. 
+We think it's Osama bin Laden.”
+
+(CBS) When Sept. 12 dawned, President Bush was demanding a war plan. No 
+one in the White House or the Pentagon could be sure of what the 
+president would do. In office for just eight months, he’d never been 
+tested as commander-in-chief.
+
+“I never asked them what they thought,” President Bush said of the 
+Pentagon brass, “because I didn’t really – because I knew what I was 
+gonna do. I knew exactly what had to be done, Scott. And that was to set 
+a strategy to seek justice. Find out who did it, hunt them down and 
+bring them to justice.”
+
+In the cabinet room, the president made clear what was next: “The 
+deliberate and deadly attacks which were carried out yesterday against 
+our country were more than acts of terror, they were acts of war,” he 
+said.
+
+To the war cabinet, al Qaeda was no surprise. National Security Advisor 
+Condoleezza Rice says the administration had been at work on a plan to 
+strike bin Laden’s organization well before Sept. 11.
+
+“The president said, ‘You know I’m tired of swatting at flies, I need a 
+strategy to eliminate these guys,’” Rice recalls.
+
+In one of the worst intelligence failures ever, the CIA and FBI didn’t 
+pick up clues that an attack in the United States was imminent. Without 
+a sense of urgency, the White House strategy the president had asked for 
+came too late.
+
+Chief of Staff Andrew Card recalls that the plan Mr. Bush had asked for 
+was “literally headed to the president’s desk, I think, on the eleventh, 
+tenth or eleventh, of September.”
+
+On Sept. 12, the war cabinet was debating the full range of options - 
+who to hit and how to hit them. There were some at the Pentagon who 
+worried in the early hours that Mr. Bush would order up an immediate 
+cruise missile strike, of the kind that had not deterred bin Laden in 
+the past.
+
+“Well, there’s a lot of nervous Nellies at the Pentagon, anyway,” Mr. 
+Bush tells Pelley. “A lot of people like to chatter, you know, more than 
+they should. But no, I appreciate that very much. Secretary of Defense 
+(Donald) Rumsfeld early on discussed the idea of making sure we had what 
+we called ‘boots on the ground.’ That if you’re gonna go to war, then 
+you’ve gotta go to war with all your assets.”
+
+The president says he wanted to “fight and win a guerilla war with 
+conventional means.”
+
+It was an innovative but risky idea being proposed by CIA Director 
+George Tenent. Tenent wanted to combine American technology and 
+intelligence with the brute force of Afghan fighters hostile to the 
+Taliban government.
+
+Secretary of State Colin Powell, noting that the CIA had already 
+developed a long relationship with the Afghan resistance, called it an 
+unconventional solution to an unconventional problem.
+
+“As I like to describe it to my friends,” Powell says, “we had on the 
+ground a Fourth World army riding horses and living in tents with some 
+CIA and special forces with them and we had a First World air force, the 
+best in the world. How do you connect it all?”
+
+The president gave them 48 hours to figure it out.
+
+Meanwhile, Mr. Bush went to the battlefield himself. Just the day 
+before, he had called the Pentagon the “mightiest building in the 
+world.” Now one-fifth of it was in ruins. The wreckage of American 
+Flight 77 was being examined by Navy investigators. And before Mr. Bush 
+left, he made a point of speaking personally with the team recovering 
+the remains of the first casualties of war on his watch.
+The next day, Sept. 13, there was another warning of attack that the 
+public never heard about. Threats had been were coming in constantly but 
+this one sounded credible: a large truck bomb headed to the White House. 
+The Secret Service wanted the president back in the bunker.
+
+“He wasn’t real receptive to that, to that recommendation,” remembers 
+Brian Stafford, director of the Secret Service. “And he ordered a 
+hamburger and said he was going to stay in the White House that evening 
+and that’s what he did.”
+
+The next day, would be one of the longest and the most difficult for the 
+president. On Friday, Sept. 14, Mr. Bush started the day with a cabinet 
+meeting, but he wept when he walked in and was surprised by applause.
+
+“He sat down, slightly overcome, for a moment but he recaptured it,” 
+says Powell who remembers being worried that the president might have 
+trouble getting through his speech at the national memorial service 
+later that morning.
+
+“And I just scribbled a little note to him,” Powell recalls, “and I 
+said, ‘Mr. President, I’ve learned over the years when you are going to 
+give a very emotional speech, watch out for certain words that will 
+cause you to start to tear up.’ He looked at me and he smiled and then 
+at the next break in the conversation he said, ‘The Secretary of State 
+told me not to break down at the memorial service,’ and that broke the 
+tension and everybody started laughing and I felt embarrassed.”
+
+First Lady Laura Bush was involved in planning the memorial service and 
+she says she wanted it to be both dignified and comforting. “I wanted 
+the Psalms and everything to be read to be comforting, because I think 
+we were a country, that needed, everyone of us, needed comforting.”
+
+It also stirred the mourners’ resolve, as Rice remember. “As we stood to 
+sing the Battle Hymn of the Republic,” she says, “you could feel the 
+entire congregation and I could certainly feel myself stiffen, the kind 
+of spine, and this deep sadness was being replaced by resolve.
+
+“We all felt that we still had mourning to do for our countrymen who had 
+been lost but that we also had a new purpose in not just avenging what 
+had happened to them but making certain that the world was eventually 
+going to be safe from this kind of attack ever again.”
+
+Next came a visit to ground zero. The president was not prepared for 
+what he encountered there.
+
+“You couldn’t brief me, you couldn’t brief anybody on ground zero until 
+you saw it," Mr. Bush says. “It was like – it was ghostly. Like you’re 
+having a bad dream and you’re walking through the dream.”
+
+The president found the scene very powerful, particularly when the men 
+and women at ground zero began to chant, “USA! USA!.”
+
+“There was a lot of bloodlust,” the president recalls. “People were, you 
+know, pointing their big old hands at me saying, ‘Don’t you ever forget 
+this, Mr. President. Don’t let us down.’ The scene was very powerful. 
+Very powerful.”
+
+When Mr. Bush tried to speak, the crowd kept shouting, “We can’t hear 
+you.”
+
+The president responded, “I can hear you. I can hear you. The rest of 
+the world hears you. And the people who knocked these buildings down 
+will hear all of us soon.”
+
+Mr. Bush had been in New York just a few weeks before; he’d posed with 
+the firemen who always stood by whenever the president’s helicopter 
+landed there. Now, five of the men who stood with the president in the 
+picture were dead – lost at ground zero.
+
+When the president arrived Sept. 14, Manhattan was papered with the 
+faces of the lost. Families, unable to believe that so many had vanished 
+in an instant, held onto the hope that their loved ones were just 
+missing. It was a place where a child comforted a grieving mother.
+
+At a meeting the public never saw, the president spoke with several 
+hundred of these families in a convention hall.
+
+“People said to me, ‘He’ll come out. Don’t worry, Mr. president, we’ll 
+see him soon. I know my loved one, he will - he’ll find a place to 
+survive underneath the rubble and we’ll get him out.’ I, on the other 
+hand had been briefed about the realities, and my job was to hug and 
+cry, but I remember the whole time thinking, ‘This is incredibly sad 
+because the loved ones won’t come out.’”
+
+One little boy handed the president a picture of his father in his 
+firefighter uniform and as he signed it, Mr. Bush remembers, he told the 
+boy, “Your daddy won’t believe that I was here, so you show him that 
+autograph.”
+
+It was an effort “to provide a little hope,” the president recalls. “I 
+still get emotional thinking about it because we’re dealing with people 
+who loved their dads or loved their mom, or loved their…wives who loved 
+their husbands. It was a tough time, you know, it was a tough time for 
+all of us because we were a very emotional, and I was emotional at 
+times. I felt, I felt the same now as I did then, which is sad. And I 
+still feel sad for those who grieve for their families, but through my 
+tears, I see opportunity.”
+
+The president was supposed to be with the families for about 30 minutes; 
+he stayed for two and a half hours. It was there he met Arlene Howard. 
+The body of her son, George, was among the first to be found at ground 
+zero.
+
+“I called the police department,” Howard remembers, “ and they said he 
+hadn’t called in for roll call and to call back in an hour and I said, 
+‘No, I don’t need to call back.’ If he hadn’t called in, I knew where he 
+was.”
+
+George Howard had rescued children trapped in an elevator back in 1993 
+when the World Trade Center was bombed. He had been off duty that day, 
+and he was off duty on Sept. 11, but couldn’t stay away. The police 
+department gave his badge to his mother and she gave it to the president.
+
+“He (the president) he leaned over to talk to me,” Howard recalls. “And 
+he extends his sympathy to me and that’s when I asked him I’d like to 
+present George’s shield to him in honor of all the men and women who 
+were killed over there.”
+
+By the end of that day, Mr. Bush flew to Camp David visibly drained.
+
+“He was physically exhausted, he was mentally exhausted, he was 
+emotionally exhausted, he was spiritually exhausted,” recalls Card..
+
+The next day – Saturday, Sept. 15 - Mr. Bush met members of his war 
+cabinet at the presidential retreat for a last decisive meeting.
+
+“My message is for everybody who wears the uniform – get ready. The 
+United States will do what it takes,” Mr. Bush told them.
+
+As Powell remembers it, “He was encouraging us to think boldly. He was 
+listening to all ideas; he was not constrained to any one idea; he 
+wanted to hear his advisors talk and argue and debate with each other.”
+
+President Bush was pleased with the progress that had been made. “On the 
+other hand,” he says, “I wanted to clarify plans and I went around the 
+room and I asked everybody what they thought ought to happen.”
+
+When he left that meeting on Saturday night, he still had not told the 
+cabinet what he was planning.
+
+“I wanted to just think it through,” Mr. Bush remembers. “Any time you 
+commit troops to harm’s way, a president must make sure that he fully 
+understands all the consequences and ramifications. And I wanted to just 
+spend some time on it alone. And did.”
+
+What were his reservations?
+
+Mr. Bush says, “Could we win? I didn’t want to be putting our troops in 
+there unless I was certain we could win. And I was certain we could win.”
+
+Nine days after the attacks on America, before a joint session of 
+Congress the president committed the nation to the war on terror.
+
+“Each of us will remember what happened that day and to whom it 
+happened,” Mr. Bush told the Congress and the nation. “We’ll remember 
+the moment the news came, where we were and what we were doing. Some 
+will remember an image of a fire or a story of rescue. Some will carry 
+memories of a face and a voice gone forever. And I will carry this. It 
+is the police shield of a man named George Howard, who died at the World 
+Trade Center trying to save others. It was given to me by his mom, 
+Arlene, as a proud memorial to her son. It is my reminder of lives that 
+ended and a task that does not end.”
+
+A year has passed since then, but the president says his job is still to 
+remind Americans of what happened and of the war that is still being 
+waged, a war he reminds himself of every day in the Oval Office, 
+literally keeping score, one terrorist at a time.
+
+In his desk, the president says, “I have a classified document that 
+might have some pictures on there, just to keep reminding me about who’s 
+out there, where they might be”
+
+And as the terrorists are captures or killed? “I might make a little 
+check there, yeah,” Mr. Bush admits.
+
+But there is no check by the name that must be on the top of that list – 
+Osama bin Laden.
+
+(CBS) A lot has happened in the year since Sept. 11. One year ago, the 
+president was new on the job, with little experience in foreign policy. 
+He had wanted to pull the military back from foreign entanglements. Now, 
+on his orders, U.S. forces are engaged around the globe in a war he did 
+not expect, in a world completely changed. In the Oval Office last week, 
+CBS News Correspondent Scott Pelley asked the president about Iraq, 
+about whether Americans are safe at home and about Osama bin Laden.
+------------------------------------------------------------------------
+
+
+Scott Pelley: You must be frustrated, maybe angry. After a year, we 
+still don’t have Osama Bin Laden?
+
+President Bush: How do you know that? I don’t know whether Osama bin 
+Laden is dead or alive. I don’t know that. He’s not leading a lot of 
+parades. And he’s not nearly the hero that a lot of people thought he 
+was. This is much bigger than one person anyway. This is — we’re slowly 
+but surely dismantling and disrupting the al Qaeda network that, that 
+hates America. And we will stay on task until we complete the task. I 
+always knew this was a different kind of war, Scott. See, in the old 
+days, you measure the size and the strength of the enemy by counting his 
+tanks or his airplanes and his ships. This is an international manhunt. 
+We’re after these people one at the time. They’re killers. Period.
+
+Pelley: But have you won the war before you find Osama bin Laden dead or 
+alive?
+
+Mr. Bush: If he were dead, there’s somebody else to replace him. And we 
+would find that person. But slowly but surely, we will dismantle the al 
+Qaeda network. And those who sponsor them and those who harbor them. And 
+at the same time, hopefully lay the seeds for, the conditions necessary 
+so that people don’t feel like they’ve got to conduct terror to achieve 
+objectives.
+
+Pelley: Do you look back on the Afghan campaign with any doubts? 
+Certainly, we’ve overthrown the Taliban government. Certainly, al Qaeda 
+has been scattered. But some of the Taliban leaders appear to have 
+gotten away. And there have been many civilian casualties as well.
+
+Mr. Bush: Uh huh. Well, you know, I am sad that civilians lost their 
+life. But I understand war. We did everything we can to — everything we 
+could to protect people. When civilians did die, it was because of a 
+mistake. Certainly not because of intention. We liberated a country for 
+which I’m extremely proud. No, — I don’t second guess things. It’s — 
+things never go perfect in a time of war.
+
+Pelley: Are you committed to ending the rule of Saddam Hussein?
+
+Mr. Bush: I’m committed to regime change.
+
+Pelley: There are those who have been vocal in their advice against war 
+in Iraq. Some of our allies in the Gulf War, Saudi Arabia, Turkey for 
+example. Even your father’s former national security advisor, Mr. 
+Scowcroft has written about it in the paper. What is it in your 
+estimation that they don’t understand about the Iraq question that you 
+do appreciate?
+
+Mr. Bush: The policy of the government is regime change, Scott, hasn’t 
+changed. I get all kinds of advice. I’m listening to the advice. I 
+appreciate the consultations. And we’ll consult with a lot of people but 
+our policy hasn’t changed.
+
+Pelley: On Air Force One you described the terrorists as evil.
+
+Mr. Bush: Yeah.
+
+Pelley: I don’t think anyone would disagree with that, but at the same 
+time, many in the Arab world are angry at the United States for 
+political reasons because of our policy in Israel or our troops in the 
+oil region of the Middle East. Is there any change in foreign policy 
+that you’re considering that might reduce Arab anger against the United 
+States.
+
+Mr. Bush: Hmm. Well, I’m working for peace in the Middle East. I’m the 
+first president that ever went to the United Nations and publicly 
+declared the need to have a Palestinian state living side-by-side with 
+Israel in peace. I’ve made it clear that in order for there to be peace 
+the Palestinians have gotta to get some leadership that renounces terror 
+and believes in peaces and quits using the Palestinian people as pawns. 
+I've also made it clear to the other Arab nations in the region that 
+they’ve got responsibilities. If you want peace they gotta work toward 
+it. We’re more than willing to work for it, but they have to work for it 
+as well. But all this business isn’t going to happen as long as a few 
+are willing to blow up the hopes of many. So we all gotta work to fight 
+off terror.
+
+Pelley: Arafat has to go?
+
+Mr. Bush: Either, he’s, he’s been a complete failure as far as I am 
+concerned. Utter disappointment.
+
+Pelley: There has been some concern over the year about civil liberties.
+
+Mr. Bush: Yeah…
+
+Pelley: In fact, an appeals court recently was harsh about your 
+administration’s decision to close certain deportation hearings. They 
+said, quote, “A government operating in secrecy stands in opposition to 
+the Constitution.” Where do you draw the line sir?
+
+Mr. Bush: I draw the line at the Constitution. We will protect America. 
+But we will do so on, within the guidelines of the Constitution, 
+confines of the Constitution, spirit of the Constitution.
+
+Pelley: Is there anything that the Justice Department has brought to you 
+as an idea that you’ve thought, “No, that’s too far. I don’t wanna go…"
+
+Mr. Bush: Nah, not that that I remember. And I am pleased with the 
+Justice Department. I think that Attorney General’s doing a fine job, by 
+the way...and to the extent that our courts are willing to make sure 
+that they review decisions we make, I think that’s fine. I mean, that’s 
+good. It’s healthy. It’s part of America.
+
+Pelley: Franklin Roosevelt said that America should stand in defense of 
+four freedoms. Freedom of speech, freedom of religion, freedom from want 
+and freedom from fear. Do we have that today Mr. President? Freedom from 
+fear?
+
+Mr. Bush: I think more than we did, in retrospect. The fact that we are 
+on alert, the fact that we understand the new circumstances makes us 
+more free from fear than on that fateful day of September the 11th. 
+We’ve got more work to do.
+
+Pelley: And Americans should not live their lives in fear?
+
+Mr. Bush: I don’t think so. No. I think Americans oughta know their 
+government’s doing everything possible to help. And obviously if we get 
+information that relates directly a particular attack we’ll deal with 
+it. And if we get noise that deals with a general attack, we’ll alert 
+people. There are a lot of good folks working hard to disrupt and deny 
+and run down leads. And the American people need to go about their 
+lives. It seems like they are.
+
+

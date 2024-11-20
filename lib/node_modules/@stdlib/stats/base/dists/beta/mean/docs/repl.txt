@@ -1,0 +1,33 @@
+
+{{alias}}( α, β )
+    Returns the expected value of a beta distribution.
+
+    If `α <= 0` or `β <= 0`, the function returns `NaN`.
+
+    If `α` or `β` is `NaN`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    α: number
+        First shape parameter.
+
+    β: number
+        Second shape parameter.
+
+    Returns
+    -------
+    out: number
+        Expected value.
+
+    Examples
+    --------
+    > var v = {{alias}}( 1.0, 1.0 )
+    0.5
+    > v = {{alias}}( 4.0, 12.0 )
+    0.25
+    > v = {{alias}}( 8.0, 2.0 )
+    0.8
+
+    See Also
+    --------
+

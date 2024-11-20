@@ -1,0 +1,92 @@
+From rpm-list-admin@freshrpms.net  Fri Jul 26 11:15:10 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5962F440E9
+	for <jm@localhost>; Fri, 26 Jul 2002 06:15:07 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 26 Jul 2002 11:15:07 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6QAEX408036 for
+    <jm-rpm@jmason.org>; Fri, 26 Jul 2002 11:14:33 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6QA81j13709; Fri, 26 Jul 2002 12:08:01
+    +0200
+Received: from web21404.mail.yahoo.com (web21404.mail.yahoo.com
+    [216.136.232.74]) by egwn.net (8.11.6/8.11.6/EGWN) with SMTP id
+    g6QA6rj02283 for <rpm-list@freshrpms.net>; Fri, 26 Jul 2002 12:06:53 +0200
+Message-Id: <20020726100652.61150.qmail@web21404.mail.yahoo.com>
+Received: from [141.228.156.225] by web21404.mail.yahoo.com via HTTP;
+    Fri, 26 Jul 2002 11:06:52 BST
+From: =?iso-8859-1?q?Mich=E8l=20Alexandre=20Salim?= <salimma1@yahoo.co.uk>
+Subject: Re: req: Falcon's eye
+To: Freshrpms list <rpm-zzzlist@freshrpms.net>
+In-Reply-To: <20020726125254.B11334@azrael.smilehouse.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Fri, 26 Jul 2002 11:06:52 +0100 (BST)
+Date: Fri, 26 Jul 2002 11:06:52 +0100 (BST)
+
+FYI,
+
+I modified the Mandrake package a few months ago -
+rather a nightmare to package, I must say. Some
+stability issues but that might be my flaky ATI
+drivers.
+
+My Linux box is sitting in storage this summer though,
+so I don't have the .spec with me.
+
+Anyone else tried running Falcon's Eye on Red Hat?
+
+Regards,
+
+Michel
+
+ --- Harri Haataja <harri.haataja@cs.helsinki.fi>
+wrote: > Another thing I see in debian but not in my
+RH
+> boxen.
+> 
+> http://falconseye.sourceforge.net/
+> 
+> It's a GL(?) interface to nethack :)
+> 
+> -- 
+> "And don't even think of quoting me out of context
+> ;)"
+> 	-- Michael Hinz in the Monastery
+> 
+> 
+> _______________________________________________
+> RPM-List mailing list <RPM-List@freshrpms.net>
+> http://lists.freshrpms.net/mailman/listinfo/rpm-list 
+
+__________________________________________________
+Do You Yahoo!?
+Everything you'll ever need on one web page
+from News and Sport to Email and Music Charts
+http://uk.my.yahoo.com
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

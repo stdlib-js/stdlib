@@ -1,0 +1,49 @@
+<snippet>
+    <content><![CDATA[## Checklist
+
+> Please ensure the following tasks are completed before submitting a feature request.
+
+-   [x] Read and understood the [Code of Conduct][code-of-conduct].
+-   [x] Searched for existing issues and pull requests.
+-   [x] The issue name begins with `RFC:`.
+
+## Description
+
+> Description of the feature request.
+
+This RFC proposes ${1:TODO}
+
+## Related Issues
+
+> Does this feature request have any related issues?
+
+${2:None.}
+
+## Questions
+
+> Any questions for reviewers?
+
+${3:No.}
+
+## Other
+
+> Any other information relevant to this feature request? This may include screenshots, references, sample output, and/or implementation notes.
+
+${4:No.}
+
+<!-- <links> -->
+
+[code-of-conduct]: https://github.com/stdlib-js/stdlib/blob/develop/CODE_OF_CONDUCT.md
+
+<!-- </links> -->
+]]></content>
+
+    <!-- Tab trigger to activate the snippet -->
+    <tabTrigger>stdlib.rfc</tabTrigger>
+
+    <!-- Scope the tab trigger will be active in -->
+    <scope></scope>
+
+    <!-- Description to show in the menu -->
+    <description>stdlib feature request</description>
+</snippet>

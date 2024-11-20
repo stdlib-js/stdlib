@@ -1,0 +1,116 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2022 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# formatInterpolate
+
+> Generate string from a token array by interpolating values.
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var formatInterpolate = require( '@stdlib/string/base/format-interpolate' );
+```
+
+#### formatInterpolate( tokens, ...args )
+
+Generates string from a token array by interpolating values.
+
+```javascript
+var formatTokenize = require( '@stdlib/string/base/format-tokenize' );
+
+var str = 'Hello, %s! My name is %s.';
+var tokens = formatTokenize( str );
+var out = formatInterpolate( tokens, 'World', 'Bob' );
+// returns 'Hello, World! My name is Bob.'
+```
+
+The array of `tokens` should contain string parts and format identifier objects. 
+
+```javascript
+var tokens = [ 'beep ', { 'specifier': 's' } ];
+var out = formatInterpolate( tokens, 'boop' );
+// returns 'beep boop'
+```
+
+Format identifier objects can have the following properties:
+
+| property  | description                                                                                         |
+| --------- | --------------------------------------------------------------------------------------------------- |
+| specifier | format specifier (one of 's', 'c', 'd', 'i', 'u', 'b', 'o', 'x', 'X', 'e', 'E', 'f', 'F', 'g', 'G') |
+| flags     | format flags (string with any of '0', ' ', '+', '-', '#')                                           |
+| width     | minimum field width (integer or `'*'`)                                                              |
+| precision | precision (integer or `'*'`)                                                                        |
+| mapping   | positional mapping from format specifier to argument index                                          |
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var formatTokenize = require( '@stdlib/string/base/format-tokenize' );
+var PI = require( '@stdlib/constants/float64/pi' );
+var formatInterpolate = require( '@stdlib/string/base/format-interpolate' );
+
+var tokens = formatTokenize( 'Hello %s!' );
+var out = formatInterpolate( tokens, 'World' );
+// returns 'Hello World!'
+
+tokens = formatTokenize( 'Pi: ~%.2f' );
+out = formatInterpolate( tokens, PI );
+// returns 'Pi: ~3.14'
+
+tokens = formatTokenize( 'Index: %d, Value: %s' );
+out = formatInterpolate( tokens, 0, 'foo' );
+// returns 'Index: 0, Value: foo'
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+</section>
+
+<!-- /.links -->

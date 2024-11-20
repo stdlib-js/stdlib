@@ -1,0 +1,101 @@
+
+{{alias}}( [a, b] )
+    Returns an arcsine distribution object.
+
+    Parameters
+    ----------
+    a: number (optional)
+        Minimum support. Must be less than `b`. Default: `0.0`.
+
+    b: number (optional)
+        Maximum support. Must be greater than `a`. Default: `1.0`.
+
+    Returns
+    -------
+    arcsine: Object
+        Distribution instance.
+
+    arcsine.a: number
+        Minimum support. If set, the value must be less than `b`.
+
+    arcsine.b: number
+        Maximum support. If set, the value must be greater than `a`.
+
+    arcsine.entropy: number
+        Read-only property which returns the differential entropy.
+
+    arcsine.kurtosis: number
+        Read-only property which returns the excess kurtosis.
+
+    arcsine.mean: number
+        Read-only property which returns the expected value.
+
+    arcsine.median: number
+        Read-only property which returns the median.
+
+    arcsine.mode: number
+        Read-only property which returns the mode.
+
+    arcsine.skewness: number
+        Read-only property which returns the skewness.
+
+    arcsine.stdev: number
+        Read-only property which returns the standard deviation.
+
+    arcsine.variance: number
+        Read-only property which returns the variance.
+
+    arcsine.cdf: Function
+        Evaluates the cumulative distribution function (CDF).
+
+    arcsine.logcdf: Function
+        Evaluates the natural logarithm of the cumulative distribution function
+        (CDF).
+
+    arcsine.logpdf: Function
+        Evaluates the natural logarithm of the probability density function
+        (PDF).
+
+    arcsine.pdf: Function
+        Evaluates the probability density function (PDF).
+
+    arcsine.quantile: Function
+        Evaluates the quantile function at probability `p`.
+
+    Examples
+    --------
+    > var arcsine = {{alias}}( 0.0, 1.0 );
+    > arcsine.a
+    0.0
+    > arcsine.b
+    1.0
+    > arcsine.entropy
+    ~-0.242
+    > arcsine.kurtosis
+    -1.5
+    > arcsine.mean
+    0.5
+    > arcsine.median
+    0.5
+    > arcsine.mode
+    0.0
+    > arcsine.skewness
+    0.0
+    > arcsine.stdev
+    ~0.354
+    > arcsine.variance
+    0.125
+    > arcsine.cdf( 0.8 )
+    ~0.705
+    > arcsine.logcdf( 0.8 )
+    ~-0.35
+    > arcsine.logpdf( 0.4 )
+    ~-0.431
+    > arcsine.pdf( 0.8 )
+    ~0.796
+    > arcsine.quantile( 0.8 )
+    ~0.905
+
+    See Also
+    --------
+

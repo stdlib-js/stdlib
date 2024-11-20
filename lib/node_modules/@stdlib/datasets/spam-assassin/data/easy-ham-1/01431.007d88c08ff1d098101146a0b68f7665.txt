@@ -1,0 +1,52 @@
+From steveo@syslang.net  Tue Sep  3 14:31:15 2002
+Return-Path: <steveo@syslang.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 57BEF16F43
+	for <jm@localhost>; Tue,  3 Sep 2002 14:25:48 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 03 Sep 2002 14:25:48 +0100 (IST)
+Received: from saturn.syslang.net
+    (IDENT:obG5Nws8VWZCvcnnFtu7UaD4+vA7HJu5@146-115-228-77.c3-0.frm-ubr1.sbo-frm.ma.cable.rcn.com
+    [146.115.228.77]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g82N6HZ25128 for <jm@jmason.org>; Tue, 3 Sep 2002 00:06:18 +0100
+Received: from saturn.syslang.net
+    (IDENT:mPurBmlWDfHHE0WnbcP94X5rLnPsm3R+@localhost.localdomain [127.0.0.1])
+    by saturn.syslang.net (8.12.2/8.12.2) with ESMTP id g82N6WPE007746;
+    Mon, 2 Sep 2002 19:06:32 -0400
+Received: from localhost (steveo@localhost) by saturn.syslang.net
+    (8.12.2/8.12.2/Submit) with ESMTP id g82N6UW7007742; Mon, 2 Sep 2002
+    19:06:32 -0400
+X-Authentication-Warning: saturn.syslang.net: steveo owned process doing -bs
+Date: Mon, 2 Sep 2002 19:06:30 -0400 (EDT)
+From: "Steven W. Orr" <steveo@syslang.net>
+To: Justin Mason <yyyy@spamassassin.taint.org>
+Cc: spamassassin talk <SpamAssassin-talk@example.sourceforge.net>,
+	<SpamAssassin-devel@lists.sourceforge.net>
+Subject: Re: [SAtalk] SpamAssassin v2.40 released (finally)!
+In-Reply-To: <20020902175329.E20EC43F99@phobos.labs.netnoteinc.com>
+Message-Id: <Pine.LNX.4.44.0209021905230.7477-100000@saturn.syslang.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+
+On Mon, 2 Sep 2002, Justin Mason wrote:
+
+=>http://spamassassin.org/released/ :
+=>
+=>  508284 Sep  2 18:27 Mail-SpamAssassin-2.40.tar.gz
+=>  561425 Sep  2 18:27 Mail-SpamAssassin-2.40.zip
+=>
+Not that I'm not grateful, but..... :-)
+
+I'd really like to install from a src rpm. Any takers? :-)
+
+TIA
+
+-- 
+-Time flies like the wind. Fruit flies like a banana. Stranger things have -
+-happened but none stranger than this. Does your driver's license say Organ
+-Donor?Black holes are where God divided by zero. Listen to me! We are all-
+-individuals! What if this weren't a hypothetical question? steveo@syslang.net
+
+

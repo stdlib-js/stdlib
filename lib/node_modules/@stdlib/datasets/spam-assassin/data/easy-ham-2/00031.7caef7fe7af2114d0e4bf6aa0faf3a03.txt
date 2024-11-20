@@ -1,0 +1,58 @@
+From social-admin@linux.ie  Sat Jul 20 00:53:54 2002
+Return-Path: <social-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 08692440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 19:53:54 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 20 Jul 2002 00:53:54 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JNojJ15484 for
+    <jm+ilug-social@jmason.org>; Sat, 20 Jul 2002 00:50:45 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id AAA07367; Sat, 20 Jul 2002 00:49:55 +0100
+Received: from ie.suberic.net (owsla.ie.suberic.net [62.17.162.83]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id AAA07330 for <social@linux.ie>;
+    Sat, 20 Jul 2002 00:49:49 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host owsla.ie.suberic.net
+    [62.17.162.83] claimed to be ie.suberic.net
+Received: from owsla.ie.suberic.net (owsla [127.0.0.1]) by ie.suberic.net
+    (8.11.6/8.11.6) with ESMTP id g6JNnm914504 for <social@linux.ie>;
+    Sat, 20 Jul 2002 00:49:48 +0100
+Date: Sat, 20 Jul 2002 00:49:47 +0100
+To: ilug social <social@linux.ie>
+Message-Id: <20020720004947.A14480@ie.suberic.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+X-Operating-System: Linux 2.4.18-5 i686
+X-GPG-Fingerprint: 9C1D 16F4 11F1 6BD2 933C  048D ACC7 9840 89D0 7646
+From: kevin lyda <kevin+dated+1027554588.4a2cc4@ie.suberic.net>
+X-Delivery-Agent: TMDA/0.57
+Subject: [ILUG-Social] geek cuisine...
+Sender: social-admin@linux.ie
+Errors-To: social-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group social events <social.linux.ie>
+X-Beenthere: social@linux.ie
+
+hm, looks good:
+http://books.slashdot.org/article.pl?sid=02/07/19/1411209&mode=thread&tid=134
+
+kevin
+
+-- 
+kevin@suberic.net     that a believer is happier than a skeptic is no more to
+fork()'ed on 37058400    the point than the fact that a drunken man is happier
+meatspace place: home       than a sober one. the happiness of credulity is a
+http://ie.suberic.net/~kevin   cheap & dangerous quality -- g.b. shaw
+
+-- 
+Irish Linux Users' Group Social Events: social@linux.ie
+http://www.linux.ie/mailman/listinfo/social for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

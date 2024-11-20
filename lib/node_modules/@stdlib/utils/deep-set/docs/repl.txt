@@ -1,0 +1,86 @@
+
+{{alias}}( obj, path, value[, options] )
+    Sets a nested property value.
+
+    Parameters
+    ----------
+    obj: ObjectLike
+        Input object.
+
+    path: string|Array
+        Key path.
+
+    value: any
+        Value to set.
+
+    options: Object (optional)
+        Options.
+
+    options.create: boolean (optional)
+        Boolean indicating whether to create a path if the key path does not
+        already exist. Default: false.
+
+    options.sep: string (optional)
+        Key path separator. Default: '.'.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if the property was successfully set.
+
+    Examples
+    --------
+    > var obj = { 'a': { 'b': { 'c': 'd' } } };
+    > var bool = {{alias}}( obj, 'a.b.c', 'beep' )
+    true
+
+    // Specify an alternative separator via the sep option:
+    > obj = { 'a': { 'b': { 'c': 'd' } } };
+    > bool = {{alias}}( obj, 'a/b/c', 'beep', { 'sep': '/' } );
+    > obj
+    { 'a': { 'b': { 'c': 'beep' } } }
+
+    // To create a key path which does not exist, set the create option to true:
+    > bool = {{alias}}( obj, 'a.e.c', 'boop', { 'create': true } );
+    > obj
+    { 'a': { 'b': { 'c': 'beep' }, 'e': { 'c': 'boop' } } }
+
+
+{{alias}}.factory( path[, options] )
+    Creates a reusable deep set function.
+
+    Parameters
+    ----------
+    path: string|Array
+        Key path.
+
+    options: Object (optional)
+        Options.
+
+    options.create: boolean (optional)
+        Boolean indicating whether to create a path if the key path does not
+        already exist. Default: false.
+
+    options.sep: string (optional)
+        Key path separator. Default: '.'.
+
+    Returns
+    -------
+    out: Function
+        Deep get function.
+
+    Examples
+    --------
+    > var dset = {{alias}}.factory( 'a/b/c', {
+    ...     'create': true,
+    ...     'sep': '/'
+    ... });
+    > var obj = { 'a': { 'b': { 'c': 'd' } } };
+    > var bool = dset( obj, 'beep' )
+    true
+    > obj
+    { 'a': { 'b': { 'c': 'beep' } } }
+
+    See Also
+    --------
+

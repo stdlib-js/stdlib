@@ -1,0 +1,93 @@
+From exmh-users-admin@redhat.com  Mon Sep 23 12:06:29 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 3AF7416F03
+	for <jm@localhost>; Mon, 23 Sep 2002 12:06:29 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 23 Sep 2002 12:06:29 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8N5D4C01928 for
+    <jm-exmh@jmason.org>; Mon, 23 Sep 2002 06:13:08 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id BE64D3ECD6; Mon, 23 Sep 2002
+    01:13:25 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id C0F243F77B
+    for <exmh-users@listman.redhat.com>; Mon, 23 Sep 2002 01:11:10 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g8N5BAw20351 for exmh-users@listman.redhat.com; Mon, 23 Sep 2002
+    01:11:10 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g8N5BAh20347 for
+    <exmh-users@redhat.com>; Mon, 23 Sep 2002 01:11:10 -0400
+Received: from blackcomb.panasas.com (gw2.panasas.com [65.194.124.178]) by
+    mx1.redhat.com (8.11.6/8.11.6) with SMTP id g8N4rVi23135 for
+    <exmh-users@redhat.com>; Mon, 23 Sep 2002 00:53:31 -0400
+Received: from medlicott.panasas.com (IDENT:welch@medlicott.panasas.com
+    [172.17.132.188]) by blackcomb.panasas.com (8.9.3/8.9.3) with ESMTP id
+    BAA10303 for <exmh-users@redhat.com>; Mon, 23 Sep 2002 01:11:04 -0400
+Message-Id: <200209230511.BAA10303@blackcomb.panasas.com>
+To: exmh-users@spamassassin.taint.org
+Subject: Re: bad focus/click behaviours
+In-Reply-To: <26402.1031939696@dimebox>
+References: <200209131130.g8DBUZL24217@hobbit.linuxworks.com.au.nospam>
+    <200209131705.g8DH5Or30284@lin12.triumf.ca> <26402.1031939696@dimebox>
+Comments: In-reply-to Hal DeVore <haldevore@acm.org> message dated "Fri,
+    13 Sep 2002 12:54:56 -0500."
+From: Brent Welch <welch@panasas.com>
+X-Url: http://www.panasas.com/
+X-Face: "HxE|?EnC9fVMV8f70H83&{fgLE.|FZ^$>@Q(yb#N,Eh~N]e&]=>r5~UnRml1:4EglY{9B+
+    :'wJq$@c_C!l8@<$t,{YUr4K,QJGHSvS~U]H`<+L*x?eGzSk>XH\W:AK\j?@?c1o<k;j'Ei/UL)!*0
+    ILwSR)J\bc)gjz!rrGQ2#i*f:M:ydhK}jp4dWQW?;0{,#iWrCV$4~%e/3)$1/D
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Sun, 22 Sep 2002 22:11:03 -0700
+
+>>>Hal DeVore said:
+ >     "Brent said in his book"
+ >     This Paste function can be convenient, but it turns out that
+ >     users still need to keep track of the difference between the
+ >     two selections.  If a user only understands the CLIPBOARD,
+ >     then the user of PRIMARY is only surprising.  I learned that
+ >     it is best to have a separate paste user action for the two
+ >     selections.  The convention is that <ButtonRelease-2> sets
+ >     the insert point and inserts the PRIMARY selection. ... The
+ >     <<Paste>> event (e.g., the Paste key) simply inserts the
+ >     CLIPBOARD selection at the current insert point. ...
+
+Yeah, I learned by hearing exmh users scream in agony.  Sorry about
+all that.  We should be able to clean this up.  If you grep for
+"bind" in seditBind you quickly find the Text_Selection proc
+I described in the previous email.
+
+--
+Brent Welch
+Software Architect, Panasas Inc
+Pioneering the World's Most Scalable and Agile Storage Network
+www.panasas.com
+welch@panasas.com
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

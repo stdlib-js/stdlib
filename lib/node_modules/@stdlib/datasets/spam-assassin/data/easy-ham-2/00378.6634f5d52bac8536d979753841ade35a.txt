@@ -1,0 +1,76 @@
+From ilug-admin@linux.ie  Tue Aug 13 10:30:17 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3B60244137
+	for <jm@localhost>; Tue, 13 Aug 2002 05:22:16 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:22:16 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7D96Nb24458 for
+    <jm-ilug@jmason.org>; Tue, 13 Aug 2002 10:06:23 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA03114; Tue, 13 Aug 2002 10:05:17 +0100
+Received: from corvil.com. (k100-159.bas1.dbn.dublin.eircom.net
+    [159.134.100.159]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id KAA03070
+    for <ilug@linux.ie>; Tue, 13 Aug 2002 10:05:09 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host k100-159.bas1.dbn.dublin.eircom.net
+    [159.134.100.159] claimed to be corvil.com.
+Received: from corvil.com (pixelbeat.local.corvil.com [172.18.1.170]) by
+    corvil.com. (8.12.5/8.12.5) with ESMTP id g7D957n4060771 for
+    <ilug@linux.ie>; Tue, 13 Aug 2002 10:05:08 +0100 (IST) (envelope-from
+    padraig.brady@corvil.com)
+Message-Id: <3D58CBB7.4040006@corvil.com>
+Date: Tue, 13 Aug 2002 10:04:55 +0100
+From: Padraig Brady <padraig.brady@corvil.com>
+Organization: Corvil Networks
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:0.9.9) Gecko/20020408
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: ilug@linux.ie
+Subject: Re: [ILUG] RH7.3 on Cobalt - the saga continues
+References: <214A52C16E44D51186FB00508BB83E0F7C0D67@w2k-server.bcs.ie>
+    <20020813085741.GB2019@jinny.ie>
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 8bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+John P. Looney wrote:
+> On Tue, Aug 13, 2002 at 09:53:55AM +0100, Damian O' Sullivan mentioned:
+> 
+>>> Curiously, when I go into the boot prom, an use
+>>> "set_params" I can tell it to mount /dev/hda2 as root. But 
+>>>then it uses the PROM copy of the kernel (dodgy 2.2.16 
+>>>kernel), which doesn't know ext3, so wants to fsck up my disk.
+>>
+>>Boot prom on a cobalt? Is this an old mips based one? How did you get to it?
+
+serial I would guess
+
+> 
+>  This is actually a raq3. Though, I do have an old raq2 that Liam was
+> helping me get netbsd on (about all you'll get on a 16MB machine these
+> days).
+> 
+>  Anyway, I wussed out, and copied hda1:/ to hda2:/boot and set the bootfs
+> to be hda2. It worked, though it's mounting an ext3fs as ext2. But I'm
+> getting there.
+> 
+
+http://list.cobalt.com/pipermail/cobalt-developers/2001-February/026056.html
+
+Pádraig.
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

@@ -1,0 +1,67 @@
+From fork-admin@xent.com  Thu Jul 25 11:08:20 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id CB7DB440D3
+	for <jm@localhost>; Thu, 25 Jul 2002 06:07:35 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 11:07:35 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6OITY400409 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 19:29:35 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 3FB6929414E; Wed, 24 Jul 2002 11:28:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from crank.slack.net (slack.net [166.84.151.181]) by xent.com
+    (Postfix) with ESMTP id 5BC1329414C for <fork@xent.com>; Wed,
+    24 Jul 2002 11:27:09 -0700 (PDT)
+Received: by crank.slack.net (Postfix, from userid 596) id 7AFAB3ED52;
+    Wed, 24 Jul 2002 14:27:11 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1]) by crank.slack.net
+    (Postfix) with ESMTP id 73E843EC45 for <fork@xent.com>; Wed,
+    24 Jul 2002 14:27:11 -0400 (EDT)
+From: Tom <tomwhore@slack.net>
+To: fork@spamassassin.taint.org
+Subject: USA USA WE ARE NUMBER ....six.
+Message-Id: <Pine.BSO.4.44.0207241312010.357-100000@crank.slack.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 24 Jul 2002 14:27:11 -0400 (EDT)
+
+
+http://news.bbc.co.uk/2/hi/americas/2147882.stm#table
+
+
+
+"Around the world, there is a growing sense that democracy has not
+delivered development" Sakiko Fukuda-Parr UN report author
+
+HDI rank 2002    LifeEXp InfantMort/1000  GDP$percapita  AdultLit%
+1 Norway           78.5      4               29,918       99%*
+2 Sweden           79.7      3               24,277       99%*
+3 Canada           78.8      6               27,840       99%*
+4 Belgium          78.4      6               27,178       99%*
+5 Australia        78.9      6               25,693       99%*
+6 United States    77        7               34,142       99%*
+7 Iceland          79.2      4               29,581       99%*
+8 Netherlands      78.1      5               25,657       99%*
+9 Japan            81        4               26,755       99%*
+10 Finland         77.6      4               24,996       99%*
+
+
+http://xent.com/mailman/listinfo/fork
+
+

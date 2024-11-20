@@ -1,0 +1,28 @@
+
+{{alias}}( array )
+    Returns the data type of an array.
+
+    If provided an argument having an unknown or unsupported type, the function
+    returns `null`.
+
+    Parameters
+    ----------
+    array: any
+        Input value.
+
+    Returns
+    -------
+    out: string|null
+        Data type.
+
+    Examples
+    --------
+    > var arr = new {{alias:@stdlib/array/float64}}( 10 );
+    > var dt = {{alias}}( arr )
+    'float64'
+    > dt = {{alias}}( 'beep' )
+    null
+
+    See Also
+    --------
+

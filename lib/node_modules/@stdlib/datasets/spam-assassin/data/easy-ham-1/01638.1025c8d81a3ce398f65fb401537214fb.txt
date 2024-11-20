@@ -1,0 +1,25 @@
+Return-Path: barry@python.org
+Delivery-Date: Fri Sep  6 15:23:19 2002
+From: barry@python.org (Barry A. Warsaw)
+Date: Fri, 6 Sep 2002 10:23:19 -0400
+Subject: [Spambayes] test sets?
+References: <15735.50243.135743.32180@12-248-11-90.client.attbi.com>
+	<LNBBLJKPBEHFEDALKOLCIEFEBCAB.tim.one@comcast.net>
+Message-ID: <15736.47703.689156.538539@anthem.wooz.org>
+
+
+>>>>> "TP" == Tim Peters <tim.one@comcast.net> writes:
+
+    >> Any thought to wrapping up your spam and ham test sets for
+    >> inclusion w/ the spambayes project?
+
+    TP> I gave it all the thought it deserved <wink>.  It would be
+    TP> wonderful to get several people cranking on the same test
+    TP> data, and I'm all in favor of that.  OTOH, my Data/ subtree
+    TP> currently has more than 35,000 files slobbering over 134
+    TP> million bytes -- even if I had a place to put that much stuff,
+    TP> I'm not sure my ISP would let me email it in one msg <wink>.
+
+Check it into the spambayes project.  SF's disks are cheap <wink>.
+
+-Barry

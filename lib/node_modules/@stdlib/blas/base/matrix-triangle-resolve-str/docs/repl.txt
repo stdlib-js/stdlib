@@ -1,0 +1,25 @@
+
+{{alias}}( value )
+    Returns the matrix triangle string associated with a supported BLAS matrix
+    triangle value.
+
+    Parameters
+    ----------
+    value: any
+        Matrix triangle value.
+
+    Returns
+    -------
+    out: string|null
+        Matrix triangle string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'upper' )
+    'upper'
+    > out = {{alias}}( {{alias:@stdlib/blas/base/matrix-triangle-str2enum}}( 'upper' ) )
+    'upper'
+
+    See Also
+    --------
+

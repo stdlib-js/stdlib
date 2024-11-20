@@ -1,0 +1,157 @@
+From fork-admin@xent.com  Wed Sep 18 11:52:29 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 5CDB816F03
+	for <jm@localhost>; Wed, 18 Sep 2002 11:52:28 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 18 Sep 2002 11:52:28 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8I7UpC19432 for <jm@jmason.org>;
+    Wed, 18 Sep 2002 08:30:54 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id CFB012940CB; Wed, 18 Sep 2002 00:27:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from relay.pair.com (relay1.pair.com [209.68.1.20]) by xent.com
+    (Postfix) with SMTP id 1207F29409F for <fork@xent.com>; Wed,
+    18 Sep 2002 00:26:08 -0700 (PDT)
+Received: (qmail 17500 invoked from network); 18 Sep 2002 07:29:22 -0000
+Received: from adsl-66-124-227-84.dsl.snfc21.pacbell.net (HELO golden)
+    (66.124.227.84) by relay1.pair.com with SMTP; 18 Sep 2002 07:29:22 -0000
+X-Pair-Authenticated: 66.124.227.84
+Message-Id: <008201c25ee5$1285de40$640a000a@golden>
+From: "Gordon Mohr" <gojomo@usa.net>
+To: <fork@spamassassin.taint.org>
+References: <20020917172627.A1DBDC44D@argote.ch>
+Subject: Defending Unliked Speech Re: Hanson's Sept 11 message in the
+    National Review
+MIME-Version: 1.0
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: 8bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 18 Sep 2002 00:29:01 -0700
+
+Robert Harley writes:
+> Chuck Murcko wrote:
+
+> > But I must feel obligated to defend to the death your right to do so.
+>
+> «Je désapprouve ce que vous dites, mais je défendrai jusqu'à ma mort votre
+> droit de le dire»
+> - Arouet Le Jeune, dit «Voltaire» (1694-1778).
+
+Here's hoping that tradition perseveres for the novelist
+currently on trial in Paris for calling Islam "the stupidest
+religion"...
+
+http://ca.news.yahoo.com/020917/5/ozxa.html
+
+# Tuesday September 17 11:07 AM EST
+#
+# French Writer Tried As Anti-Islam, Protest Erupts
+# By Caroline Brothers
+#
+# PARIS (Reuters) - Provocative French novelist Michel Houellebecq
+# faced a Paris court on Tuesday for allegedly inciting racial hatred
+# by calling Islam "the stupidest religion" and its holy book the
+# Koran a depressing read.
+#
+# The case, brought against him by four Muslim groups, is a cause
+# celebre reminiscent of the Salman Rushdie affair, pitting freedom of
+# expression against religious sensitivities.
+#
+# The Muslim groups, which include the Mecca-based World Islamic
+# League and the Paris Mosque, accuse the writer of insulting Islam in
+# an interview with the literary magazine "Lire" during last year's
+# launch of his novel "Plateforme."
+#
+# Lire is also on trial over the remarks, which have taken on an added
+# significance in France in the atmosphere of heightened sensitivity
+# and concern about Islam following the September 11 attacks by Muslim
+# radicals in the United States.
+#
+# Shortly after the trial started, 11 people in the courtroom stripped
+# off their shirts to reveal T-shirts saying "No to the censure of the
+# imams" and "Marianne veiled, Marianne raped" -- a reference to the
+# female symbol of the French republic.
+#
+# "Freedom of expression! freedom of expression!" they and other
+# Houellebecq supporters chanted after they were thrown out of the
+# courtroom at the main law courts in central Paris.
+#
+# While intellectuals argued before the trial that Houellebecq should
+# be free to write what he wants, Lyon Mosque rector Kamel Kabtan
+# retorted: "We are for freedom of expression, but not for insulting
+# communities."
+#
+# BETE NOIRE
+#
+# Houellebecq, 45, the bete noire of contemporary French literature,
+# is no stranger to controversy. He offended conservatives and the
+# politically correct left with his 1998 novel "Les Particules
+# Elementaires" ("Atomised" in English).
+#
+# Paris Mosque rector Dalil Boubakeur says Muslims have been insulted
+# once before by Houellebecq, who had the main character in Plateforme
+# admit he felt "a quiver of glee" every time a "Palestinian
+# terrorist" was killed.
+#
+# The World Islamic League, the Lyon Mosque and the National
+# Federation of Muslims in France have joined the Paris Mosque in
+# bringing Houellebecq to trial.
+#
+# France's Human Rights League joined them as a civil party, saying
+# Houellebecq's comments amounted to "Islamophobia" and deserved to be
+# sanctioned as part of the league's struggle against discrimination
+# and racism.
+#
+# The Paris Mosque has hired Jean-Marc Varaut, one of France's leading
+# trial lawyers, whose past clients include Maurice Papon, the former
+# official condemned in 1998 for Nazi-era crimes against humanity for
+# sending Jews to death camps.
+#
+# RESTORING BLASPHEMY?
+#
+# Houellebecq's lawyer Emmanuel Pierrat argues that the case
+# effectively re-establishes the notion of blasphemy, despite the fact
+# that France as a secular state has no such law, and says
+# Houellebecq's opponents want to deny him freedom of expression.
+#
+# He also argues that the interview in Lire truncated a six-hour
+# conversation and Houellebecq was not given the chance to approve the
+# article before it appeared.
+#
+# Houellebecq's publisher Flammarion has distanced itself from the
+# author, whose comments some say may have cost him France's
+# prestigious Goncourt prize -- for which he had been a contender.
+#
+# The novelist, who lives outside Cork, Ireland, writes in a detached
+# style about a bleak world in which people have forgotten how to
+# love.
+#
+# Translated into 25 languages, "Atomised" incensed France's 1968
+# generation with its scathing descriptions of the hippie era but won
+# him France's November prize in 1998 and the Impac award, one of the
+# world's biggest fiction prizes.
+#
+# Losing his case may mean a year in jail or a $51,000 fine.
+
+- Gordon
+
+

@@ -1,0 +1,83 @@
+From fork-admin@xent.com  Wed Oct  9 10:55:10 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id A521A16F18
+	for <zzzz@localhost>; Wed,  9 Oct 2002 10:52:53 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 09 Oct 2002 10:52:53 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g98K4PK32066 for <zzzz@spamassassin.taint.org>;
+    Tue, 8 Oct 2002 21:04:25 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id B76262940BB; Tue,  8 Oct 2002 13:04:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from blount.mail.mindspring.net (blount.mail.mindspring.net
+    [207.69.200.226]) by xent.com (Postfix) with ESMTP id 55BAB29409A for
+    <fork@xent.com>; Tue,  8 Oct 2002 13:03:35 -0700 (PDT)
+Received: from user-119ac86.biz.mindspring.com ([66.149.49.6]) by
+    blount.mail.mindspring.net with esmtp (Exim 3.33 #1) id 17z0aJ-0005I4-00;
+    Tue, 08 Oct 2002 16:04:03 -0400
+MIME-Version: 1.0
+X-Sender: rahettinga@pop.earthlink.net
+Message-Id: <p05111a08b9c8e129087d@[66.149.49.6]>
+In-Reply-To: <20021008152513.C1063@ibu.internal.qu.to>
+References: <Pine.LNX.4.44.0210080759560.2906-100000@isolnetsux.techmonkeys.net>
+    <3DA3294A.8000209@cse.ucsc.edu> <20021008152513.C1063@ibu.internal.qu.to>
+To: Ned Jackson Lovely <fork@qu.to>, fork@spamassassin.taint.org
+From: "R. A. Hettinga" <rah@shipwright.com>
+Subject: Re: The absurdities of life.
+Cc: Digital Bearer Settlement List <dbs@philodox.com>
+Content-Type: text/plain; charset="us-ascii"
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 8 Oct 2002 15:26:28 -0400
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+At 3:25 PM -0400 on 10/8/02, Ned Jackson Lovely wrote:
+
+
+> I've been waiting for Hettinga to regale us with one of his
+> well-tuned micro-cash-bearer-settlement-geodesic-finance rants.
+> Bob, you are SO  disappointing me.
+
+How about if I include it by reference...
+
+<http://www.ibuc.com/pdfs/geoecon.pdf>
+
+:-).
+
+Blue in the face,
+RAH
+
+-----BEGIN PGP SIGNATURE-----
+Version: PGP 7.5
+
+iQA/AwUBPaMxL8PxH8jf3ohaEQJOvwCgwLjDfcRLc/15ohgtx/Y7Vvrl/5IAn0iA
+eEFqCWCvykjwv+8jPA/PpDsf
+=vNcJ
+-----END PGP SIGNATURE-----
+
+-- 
+-----------------
+R. A. Hettinga <mailto: rah@ibuc.com>
+The Internet Bearer Underwriting Corporation <http://www.ibuc.com/>
+44 Farquhar Street, Boston, MA 02131 USA
+"... however it may deserve respect for its usefulness and antiquity,
+[predicting the end of the world] has not been found agreeable to
+experience." -- Edward Gibbon, 'Decline and Fall of the Roman Empire'
+
+

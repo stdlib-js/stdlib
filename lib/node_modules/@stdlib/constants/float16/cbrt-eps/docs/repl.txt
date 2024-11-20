@@ -1,0 +1,12 @@
+
+{{alias}}
+    Cube root of half-precision floating-point epsilon.
+
+    Examples
+    --------
+    > {{alias}}
+    0.09921256574801247
+
+    See Also
+    --------
+

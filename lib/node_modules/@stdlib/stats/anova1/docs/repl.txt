@@ -1,0 +1,82 @@
+
+{{alias}}( x, factor[, options] )
+    Performs a one-way analysis of variance.
+
+    Parameters
+    ----------
+    x: Array<number>
+        Measured values.
+
+    factor: Array
+        Array of treatments.
+
+    options: Object (optional)
+        Options.
+
+    options.alpha: number (optional)
+        Number in the interval `[0,1]` giving the significance level of the
+        hypothesis test. Default: `0.05`.
+
+    Returns
+    -------
+    out: Object
+        Test result object.
+
+    out.alpha: number
+        Significance level.
+
+    out.rejected: boolean
+        Test decision.
+
+    out.pValue: number
+        p-value of the test.
+
+    out.statistic: number
+        Value of test statistic.
+
+    out.method: string
+        Name of test.
+
+    out.means: Object
+        Group means alongside sample sizes and standard errors.
+
+    out.treatment: Object
+        Treatment results.
+
+    out.treatment.df: number
+        Treatment degrees of freedom.
+
+    out.treatment.ss: number
+        Treatment sum of squares.
+
+    out.treatment.ms: number
+        Treatment mean sum of squares.
+
+    out.error: Object
+        Error results.
+
+    out.error.df: number
+        Error degrees of freedom.
+
+    out.error.ss: number
+        Error sum of squares.
+
+    out.error.ms: number
+        Error mean sum of squares.
+
+    out.print: Function
+        Function to print formatted output.
+
+    Examples
+    --------
+    > var x = [1, 3, 5, 2, 4, 6, 8, 7, 10, 11, 12, 15];
+    > var f = [
+    ... 'control', 'treatA', 'treatB', 'treatC', 'control',
+    ... 'treatA', 'treatB', 'treatC', 'control', 'treatA', 'treatB', 'treatC'
+    ... ];
+    > var out = {{alias}}( x, f )
+    {...}
+
+    See Also
+    --------
+

@@ -1,0 +1,52 @@
+{
+  "name": "stdlib-datasets-spache-revised",
+  "version": "",
+  "title": "Simple American-English Words",
+  "description": "A list of simple American-English words (revised Spache).",
+  "resources": [
+    {
+      "name": "spache-revised-json",
+      "title": "Simple American-English Words",
+      "description": "A list of simple American-English words (revised Spache).",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/words.json"
+    },
+    {
+      "name": "spache-revised-txt",
+      "title": "Simple American-English Words",
+      "description": "A list of simple American-English words.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/words.txt"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Assessing Readability",
+      "web": "http://www.jstor.org/stable/747086"
+    }
+  ],
+  "keywords": [
+    "list",
+    "words",
+    "simple",
+    "complex",
+    "readability",
+    "readable",
+    "comprehension",
+    "grade-school",
+    "reading",
+    "revised",
+    "spache",
+    "klare",
+    "american",
+    "english",
+    "en"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}

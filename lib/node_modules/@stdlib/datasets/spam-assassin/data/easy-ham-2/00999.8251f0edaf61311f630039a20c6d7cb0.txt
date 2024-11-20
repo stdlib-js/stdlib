@@ -1,0 +1,64 @@
+From fork-admin@xent.com  Fri Aug  9 16:07:21 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6D671440E7
+	for <jm@localhost>; Fri,  9 Aug 2002 11:01:11 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 16:01:11 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79EYEb08096 for
+    <jm@jmason.org>; Fri, 9 Aug 2002 15:34:15 +0100
+Received: from xent.com ([64.161.22.236]) by webnote.net (8.9.3/8.9.3)
+    with ESMTP id WAA01353 for <jm@jmason.org>; Thu, 8 Aug 2002 22:35:37 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 2550E2940F7; Thu,  8 Aug 2002 14:20:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from crank.slack.net (slack.net [166.84.151.181]) by xent.com
+    (Postfix) with ESMTP id 537EF2940EE for <fork@xent.com>; Thu,
+    8 Aug 2002 14:19:48 -0700 (PDT)
+Received: by crank.slack.net (Postfix, from userid 596) id 235543ED5F;
+    Thu,  8 Aug 2002 17:21:16 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1]) by crank.slack.net
+    (Postfix) with ESMTP id 21B613ECE7; Thu,  8 Aug 2002 17:21:16 -0400 (EDT)
+From: Tom <tomwhore@slack.net>
+To: "Adam L. Beberg" <beberg@mithral.com>
+Cc: fork@spamassassin.taint.org
+Subject: Re: Perhaps Apple isn't as user-friendly as we thought...
+In-Reply-To: <Pine.LNX.4.33.0208081348001.12296-100000@watcher.mithral.com>
+Message-Id: <Pine.BSO.4.44.0208081718230.5877-100000@crank.slack.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 8 Aug 2002 17:21:16 -0400 (EDT)
+
+On Thu, 8 Aug 2002, Adam L. Beberg wrote:
+
+--]Yea, Apple sucks, my crappy iMac hasn't crashed once in 2 years.
+
+When all you do on it is pout on emaillists and watch asain bukaky porn
+wheres the strain?
+
+Striken as anecdotal...oh and I had a win98 box running wsmf server stuffs
+(apache, dbs, shoutcast etc) up on dsl without so much as a hicup for over 1.5 years
+other than the various game realted hijinks tribes would pull. So if its
+raw uptime ou want,....tools and craftsman time. Thus once again uptime
+fawl down go boom.
+
+-tom
+
+http://xent.com/mailman/listinfo/fork
+
+

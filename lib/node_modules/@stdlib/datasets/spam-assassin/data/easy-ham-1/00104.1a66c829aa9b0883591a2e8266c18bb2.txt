@@ -1,0 +1,75 @@
+From ilug-admin@linux.ie  Mon Oct  7 12:06:30 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id 60E9616F6C
+	for <zzzz@localhost>; Mon,  7 Oct 2002 12:04:50 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 07 Oct 2002 12:04:50 +0100 (IST)
+Received: from lugh.tuatha.org (postfix@lugh.tuatha.org [194.125.145.45])
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g978QRK24206 for
+    <zzzz-ilug@spamassassin.taint.org>; Mon, 7 Oct 2002 09:26:27 +0100
+Received: from lugh.tuatha.org (localhost [127.0.0.1]) by lugh.tuatha.org
+    (Postfix) with ESMTP id BE70F34204; Mon,  7 Oct 2002 09:27:11 +0100 (IST)
+Delivered-To: linux.ie-ilug@localhost
+Received: from dspsrv.com (vir.dspsrv.com [193.120.211.34]) by
+    lugh.tuatha.org (Postfix) with ESMTP id 8072F341F2 for <ilug@linux.ie>;
+    Mon,  7 Oct 2002 09:26:11 +0100 (IST)
+Received: from [195.17.199.3] (helo=waider.ie) by dspsrv.com with asmtp
+    (Exim 3.36 #1) id 17yTDP-0001gv-00 for ilug@linux.ie; Mon, 07 Oct 2002
+    09:26:11 +0100
+Message-Id: <3DA144C8.2060707@waider.ie>
+From: Waider <waider@waider.ie>
+MIME-Version: 1.0
+To: Irish Linux Users Group <ilug@linux.ie>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Subject: [ILUG] serial port transient failure
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Beenthere: ilug@linux.ie
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:ilug-request@linux.ie?subject=help>
+List-Post: <mailto:ilug@linux.ie>
+List-Subscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=subscribe>
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+List-Unsubscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=unsubscribe>
+List-Archive: <http://www.linux.ie/pipermail/ilug/>
+X-Original-Date: Mon, 07 Oct 2002 10:24:40 +0200
+Date: Mon, 07 Oct 2002 10:24:40 +0200
+
+Here's a weird and wacky problem:
+
+I'm currently out of the country with my trusty Evo N600c laptop. When I 
+tried to use the serial port to talk to my mobile phone, Linux behaved 
+pretty much as if the port was fried. Bizarre, I thought, because I'd 
+used it successfully while in the office. The only difference was that I 
+was trying the thing in the hotel. I entertained brief notions of having 
+somehow fried the serial drivers, then rebooted the laptop to Windows 
+and tried again. Worked perfectly. Back to Linux. Still not talking. 
+Considered that it might be flaky power, so I ran the laptop on battery. 
+Nope. Tried moving the laptop to a differnet part of the room where 
+there might be less bogon flux. Still not working. Eventually I gave up 
+and used the IrDA port instead - which is usually the serial connection 
+of doom, grief, and teeth-grinding.
+
+This morning, in the office, the damn thing is working without a hitch.
+
+Anyone like to suggest what mystery technology is in use in the hotel 
+that prevents serial ports from working under Linux?
+
+Cheers,
+Waider.
+-- 
+waider@waider.ie / Yes, it /is/ very personal of me
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

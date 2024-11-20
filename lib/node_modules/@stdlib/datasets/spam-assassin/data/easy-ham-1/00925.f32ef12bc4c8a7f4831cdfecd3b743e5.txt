@@ -1,0 +1,93 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug 22 16:27:30 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 772C543F99
+	for <jm@localhost>; Thu, 22 Aug 2002 11:27:26 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 22 Aug 2002 16:27:26 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7MFLfZ11996 for <jm-sa@jmason.org>; Thu, 22 Aug 2002 16:21:41 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17htlf-00036z-00; Thu,
+    22 Aug 2002 08:21:03 -0700
+Received: from neo.pittstate.edu ([198.248.208.13]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17htky-0007J7-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Thu, 22 Aug 2002 08:20:21 -0700
+Received: from [198.248.208.11] (macdaddy.pittstate.edu [198.248.208.11])
+    by neo.pittstate.edu (8.12.2/8.12.2) with ESMTP id g7MFJfW7024986;
+    Thu, 22 Aug 2002 10:19:42 -0500
+MIME-Version: 1.0
+Message-Id: <p0431010eb98aafd3ab3b@[198.248.208.11]>
+In-Reply-To: <20020822145952.A3C2E43F99@phobos.labs.netnoteinc.com>
+References: <20020822145952.A3C2E43F99@phobos.labs.netnoteinc.com>
+To: yyyy@spamassassin.taint.org (Justin Mason)
+From: Justin Shore <listuser@neo.pittstate.edu>
+Subject: Re: [SAtalk] Highest-scoring false positive
+Cc: SpamAssassin List <spamassassin-talk@example.sourceforge.net>
+Content-Type: text/plain; charset="us-ascii" ; format="flowed"
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Thu, 22 Aug 2002 10:20:06 -0500
+Date: Thu, 22 Aug 2002 10:20:06 -0500
+
+At 3:59 PM +0100 8/22/02, Justin Mason wrote:
+>Justin Shore said:
+>
+>>  I just ran across a false positive that scored 8.6.  The message was
+>>  a solicited ad from Apple.com on educator deals.  I can send a copy
+>>  if anyone wants it.
+>
+>Yes, please do send it on, and I'll add it to the non-spam corpus.
+
+To any particular address?  I checked the lists page but didn't see 
+an address to see a FP to.
+
+>To date, the scores evolved by SpamAssassin are very biased towards
+>non-HTML, non-newsletter-ish mail.  This release should be different, as
+>I've been spending the last month signing up a "nonspamtrap" to every
+>legit newsletter I can find ;)
+
+That's understandable.  HTML mail is the worst thing since female 
+shoe sales at the mall. ;-)  Signup for the cruisercustomizing.com 
+newsletter.  Great place to find and review motorcycle parts. :)
+
+>This should mean that tests which match common-enough newsletter practices
+>will no longer get such high scores once we re-run the GA.
+
+Sound pretty slick.  If I come across any more legit newsletters, 
+I'll send them your way.
+
+Thanks for the info
+  Justin
+-- 
+
+--
+Justin Shore, ES-SS ES-SSR                Pittsburg State University
+Network & Systems Manager                 http://www.pittstate.edu/ois/
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

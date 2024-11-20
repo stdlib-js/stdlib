@@ -1,0 +1,113 @@
+From exmh-users-admin@redhat.com  Tue Sep 10 11:23:33 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id D7ADF16F03
+	for <jm@localhost>; Tue, 10 Sep 2002 11:23:32 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 10 Sep 2002 11:23:32 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8A60fC19383 for
+    <jm-exmh@jmason.org>; Tue, 10 Sep 2002 07:00:41 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id BB6323EA77; Tue, 10 Sep 2002
+    02:01:03 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id E26FD3EA24
+    for <exmh-users@listman.redhat.com>; Tue, 10 Sep 2002 02:00:32 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g8A60RP01628 for exmh-users@listman.redhat.com; Tue, 10 Sep 2002
+    02:00:27 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g8A60Rm01624 for
+    <exmh-users@redhat.com>; Tue, 10 Sep 2002 02:00:27 -0400
+Received: from ratree.psu.ac.th ([202.28.97.6]) by mx1.spamassassin.taint.org
+    (8.11.6/8.11.6) with SMTP id g8A5b9v24994 for <exmh-users@redhat.com>;
+    Tue, 10 Sep 2002 01:43:43 -0400
+Received: from delta.cs.mu.OZ.AU (delta.coe.psu.ac.th [172.30.0.98]) by
+    ratree.psu.ac.th (8.11.6/8.11.6) with ESMTP id g8A5qYg11224 for
+    <exmh-users@redhat.com>; Tue, 10 Sep 2002 12:52:37 +0700 (ICT)
+Received: from munnari.OZ.AU (localhost [127.0.0.1]) by delta.cs.mu.OZ.AU
+    (8.11.6/8.11.6) with ESMTP id g8A5qG805307 for <exmh-users@redhat.com>;
+    Tue, 10 Sep 2002 12:52:30 +0700 (ICT)
+From: Robert Elz <kre@munnari.OZ.AU>
+To: exmh-users@spamassassin.taint.org
+Subject: Patch to complete a change...
+MIME-Version: 1.0
+Content-Type: multipart/mixed ; boundary="==_Exmh_16073047980"
+Message-Id: <5305.1031637136@munnari.OZ.AU>
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Tue, 10 Sep 2002 12:52:16 +0700
+
+This is a multipart MIME message.
+
+--==_Exmh_16073047980
+Content-Type: text/plain; charset=us-ascii
+
+I suspect that as part of Chris' set of changes, he cleaned up the
+use of the variable that was named "L" in FtocCommit (in ftoc.tcl).
+Its name got changed from L to lineno
+
+But there's one reference of $L left.   That causes tracebacks if
+you attempt to use "link" with the current CVS version of exmh.
+
+I guess that most of us don't use "link" very often ... I noticed it
+last week, but only got time to look and see why today.
+
+If someone with the ability to commit to the CVS repository would
+apply the following patch (to lib/ftoc.tcl) that would be nice.
+(It works... and is trivial, and you could perhaps just apply it by
+making the change with an editor faster than saving this patch and
+applying it - there's only one instance of $L in the file, that
+should be changed to $lineno)
+
+kre
+
+
+
+--==_Exmh_16073047980
+Content-Type: text/plain ; name="patch"; charset=us-ascii
+Content-Description: patch
+Content-Disposition: attachment; filename="PATCH"
+
+--- ftoc.tcl.PREV	Wed Aug 21 15:01:48 2002
++++ ftoc.tcl	Tue Sep 10 12:47:06 2002
+@@ -1131,9 +1131,9 @@
+ 		}
+ 	    }
+ 	    incr ftoc(numMsgs) -1
+ 	} else {
+-	    FtocUnmarkInner $L
++	    FtocUnmarkInner $lineno
+ 	}
+ 	incr ftoc(changed) -1
+     }
+     if {$delmsgs != {}} {
+
+--==_Exmh_16073047980--
+
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

@@ -1,0 +1,107 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6MA41hY045136
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Mon, 22 Jul 2002 05:04:02 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6MA40ZZ045116
+	for cypherpunks-forward@ds.pro-ns.net; Mon, 22 Jul 2002 05:04:00 -0500 (CDT)
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6MA3vhY045079
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks@ds.pro-ns.net>; Mon, 22 Jul 2002 05:03:58 -0500 (CDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: from waste.minder.net (daemon@waste [66.92.53.73])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6MA3uJ26511
+	for <cypherpunks@ds.pro-ns.net>; Mon, 22 Jul 2002 06:03:56 -0400 (EDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: (from cpunks@localhost)
+	by waste.minder.net (8.11.6/8.11.6) id g6MA3sS11302
+	for cypherpunks@ds.pro-ns.net; Mon, 22 Jul 2002 06:03:55 -0400
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by waste.minder.net (8.11.6/8.11.6) with ESMTP id g6MA3pR11283
+	for <cpunks@minder.net>; Mon, 22 Jul 2002 06:03:51 -0400
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6MA2UJ26461
+	for <cpunks@minder.net>; Mon, 22 Jul 2002 06:02:30 -0400 (EDT)
+	(envelope-from cpunks@einstein.ssz.com)
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id FAA02782
+	for cpunks@minder.net; Mon, 22 Jul 2002 05:10:32 -0500
+Received: (from mdom@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id FAA02729
+	for cypherpunks-outgoing; Mon, 22 Jul 2002 05:08:32 -0500
+Received: from dnvrpop9.dnvr.uswest.net (dnvrpop9.dnvr.uswest.net [206.196.128.11])
+	by einstein.ssz.com (8.8.8/8.8.8) with SMTP id FAA02701
+	for <cypherpunks@ssz.com>; Mon, 22 Jul 2002 05:07:03 -0500
+Received: (qmail 94130 invoked by uid 0); 22 Jul 2002 09:58:32 -0000
+Received: from ddslppp221.dnvr.uswest.net (HELO tadserv.traveladvocateinc.com) (216.160.163.221)
+  by dnvrpop9.dnvr.uswest.net with SMTP; 22 Jul 2002 09:58:32 -0000
+Received: from mx06.hotmail.com (ACBE97CA.ipt.aol.com [172.190.151.202]) by tadserv.traveladvocateinc.com with SMTP (Microsoft Exchange Internet Mail Service Version 5.5.2653.13)
+	id PDHY2PW8; Mon, 22 Jul 2002 03:55:59 -0600
+Date: Mon, 22 Jul 2002 02:59:55 -1900
+Message-ID: <0000373c47ac$00007c7b$0000347c@mx06.hotmail.com>
+From: "Brianna" <ie9mugg9p0681@hotmail.com>
+To: barklage@earthlink.com
+Cc: roerig@worldnet.att.net, fdr@fdrholidays.com, jfwee@aol.com,
+   liz@lizlawrence.com, wade@dundee.net, stevem@janessa.com,
+   cypherpunks@einstein.ssz.com, ddike@digitalskylight.com
+Old-Subject: CDR: Herbal Viagra 30 day trial....                  
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Sender: owner-cypherpunks@einstein.ssz.com
+Precedence: bulk
+Reply-To: cypherpunks@einstein.ssz.com
+X-Mailing-List: cypherpunks@ssz.com
+X-Unsubscription-Info: http://einstein.ssz.com/cdr
+X-List-Admin: list@ssz.com
+X-Loop: ssz.com
+X-Acceptable-Languages: English, Russian, German, French, Spanish
+Subject: Herbal Viagra 30 day trial....                  
+
+<html>
+<head>
+<title></title>
+</head>
+<body bgcolor=3D"#FFFFFF">
+
+<table width=3D500 cellpadding=3D10 border=3D0><tr>
+<td><font  face=3D"bankgothic, western" color=3D"#6600FF"  size=3D5><p><b>
+<a href=3D"http://www.mailcomesandgoes.com/ang/index.asp?id=3D609">
+Mother Natures all Natural Marital Aid<br> for Men and Women - Your's Risk=
+ Free!</b></p></font>
+<font face=3D"arial black" color=3D"#000000" size=3D3><p>The all natural s=
+afe formula for men and women your's risk free for 30 days. Mother Nature'=
+s wonder pill of the 21st century.<p>
+<li>Increased Sensation</li><br><li>Increased Frequency</li><br>
+<li>Increased Pleasure</li><br><li>Increased Desire</li><br>
+<li>Increased Stamina</li><br><li>Increased Libido</li></font><br><br>
+Both male and female formulas!<br><p><body bgcolor=3D"#FFFFFF">
+Order Your  Trial Today !</a></p></font>
+</td></tr></table>
+<table width=3D500 cellpadding=3D10 border=3D0><tr><td>
+<font face=3Darial size=3D1.5><br><br><br><p>to depart from further contac=
+ts
+<a href=3D"http://www.mailcomesandgoes.com/ang/service.html">visit here</a=
+></p></font>
+</td></tr></table>
+</body>
+</html>
+jrennie
+
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

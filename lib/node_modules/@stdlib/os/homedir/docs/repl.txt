@@ -1,0 +1,19 @@
+
+{{alias}}()
+    Returns the current user's home directory.
+
+    If unable to locate a home directory, the function returns `null`.
+
+    Returns
+    -------
+    out: string|null
+        Home directory.
+
+    Examples
+    --------
+    > var home = {{alias}}()
+    e.g., '/Users/<username>'
+
+    See Also
+    --------
+

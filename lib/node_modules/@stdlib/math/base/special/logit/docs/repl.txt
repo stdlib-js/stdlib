@@ -1,0 +1,35 @@
+
+{{alias}}( p )
+    Evaluates the logit function.
+
+    Let `p` be the probability of some event. The logit function is defined as
+    the logarithm of the odds `p / (1-p)`.
+
+    If `p < 0` or `p > 1`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    p: number
+        Input value.
+
+    Returns
+    -------
+    y: number
+        Function value.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.2 )
+    ~-1.386
+    > y = {{alias}}( 0.9 )
+    ~2.197
+    > y = {{alias}}( -4.0 )
+    NaN
+    > y = {{alias}}( 1.5 )
+    NaN
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+

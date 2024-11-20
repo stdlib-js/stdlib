@@ -1,0 +1,72 @@
+From spambayes-bounces+jm=jmason.org@python.org  Mon Nov 25 20:49:29 2002
+Return-Path: <spambayes-bounces+yyyy=spamassassin.taint.org@python.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 4C55516F17
+	for <jm@localhost>; Mon, 25 Nov 2002 20:49:29 +0000 (GMT)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 25 Nov 2002 20:49:29 +0000 (GMT)
+Received: from mail.python.org (mail.python.org [12.155.117.29]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id gAPKT7W23898 for
+    <jm@jmason.org>; Mon, 25 Nov 2002 20:29:07 GMT
+Received: from localhost.localdomain ([127.0.0.1] helo=mail.python.org) by
+    mail.python.org with esmtp (Exim 4.05) id 18GPsJ-0004FX-02 for
+    jm@jmason.org; Mon, 25 Nov 2002 15:30:35 -0500
+Received: from manatee.mojam.com ([199.249.165.175]) by mail.python.org
+    with esmtp (Exim 4.05) id 18GPsE-0004AT-00 for spambayes@python.org;
+    Mon, 25 Nov 2002 15:30:30 -0500
+Received: from montanaro.dyndns.org (kansas.rd.imagescape.com
+    [66.100.151.131]) by manatee.mojam.com (8.12.1/8.12.1) with ESMTP id
+    gAPKUTM3027054; Mon, 25 Nov 2002 14:30:29 -0600
+Received: from montanaro.dyndns.org (localhost [127.0.0.1]) by
+    montanaro.dyndns.org (8.12.2/8.12.2) with ESMTP id gAPKUY2v004608;
+    Mon, 25 Nov 2002 14:30:34 -0600 (CST)
+Received: by montanaro.dyndns.org (8.12.2/8.12.2/Submit) id gAPKUXGM004605;
+    Mon, 25 Nov 2002 14:30:33 -0600 (CST)
+From: Skip Montanaro <skip@pobox.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Message-Id: <15842.34920.583131.72086@montanaro.dyndns.org>
+Date: Mon, 25 Nov 2002 14:30:32 -0600
+To: richie@entrian.com
+Subject: Re: [Spambayes] Current version
+In-Reply-To: <luo4uugdble02ipu1keho1fmn9v50t71tn@4ax.com>
+References: <16E1010E4581B049ABC51D4975CEDB88619957@UKDCX001.uk.int.atosorigin.com>
+    <luo4uugdble02ipu1keho1fmn9v50t71tn@4ax.com>
+X-Mailer: VM 7.07 under 21.5  (beta9) "brussels sprouts" XEmacs Lucid
+Cc: spambayes@python.org
+X-Beenthere: spambayes@python.org
+X-Mailman-Version: 2.1b5
+Precedence: list
+Reply-To: skip@pobox.com
+List-Id: Discussion list for Pythonic Bayesian classifier <spambayes.python.org>
+List-Help: <mailto:spambayes-request@python.org?subject=help>
+List-Post: <mailto:spambayes@python.org>
+List-Subscribe: <http://mail.python.org/mailman/listinfo/spambayes>,
+    <mailto:spambayes-request@python.org?subject=subscribe>
+List-Archive: <http://mail.python.org/pipermail/spambayes>
+List-Unsubscribe: <http://mail.python.org/mailman/listinfo/spambayes>,
+    <mailto:spambayes-request@python.org?subject=unsubscribe>
+Sender: spambayes-bounces+yyyy=spamassassin.taint.org@python.org
+Errors-To: spambayes-bounces+yyyy=spamassassin.taint.org@python.org
+
+
+    Richie> As I understand it, post-1.8x versions of the core bsddb code
+    Richie> ship under the Sleepycat license, which demands that projects
+    Richie> using it must be published-source.  
+
+Don't use bsddb in a closed-source product.  Use dbm or dumdbm or use
+pickles or roll your own thang.  I doubt the presence of bsddb would be the
+only barrier to creating a closed-source product based upon the spambayes
+code.
+
+Skip
+
+_______________________________________________
+Spambayes mailing list
+Spambayes@python.org
+http://mail.python.org/mailman/listinfo/spambayes
+
+

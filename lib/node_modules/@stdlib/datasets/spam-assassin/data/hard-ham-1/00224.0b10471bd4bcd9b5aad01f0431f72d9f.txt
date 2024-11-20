@@ -1,0 +1,357 @@
+From fork-admin@xent.com  Mon Sep 30 13:53:26 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: zzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id A9C0016F6C
+	for <zzz@localhost>; Mon, 30 Sep 2002 13:49:06 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzz@localhost (single-drop); Mon, 30 Sep 2002 13:49:06 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8TE3Pg14029 for <zzz@spamassassin.taint.org>;
+    Sun, 29 Sep 2002 15:03:27 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 0047D2940B0; Sun, 29 Sep 2002 07:03:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mailer3.bulk.scd.yahoo.com (mailer3.bulk.scd.yahoo.com
+    [66.218.69.3]) by xent.com (Postfix) with SMTP id 451A92940A9 for
+    <fork@xent.com>; Sun, 29 Sep 2002 07:03:01 -0700 (PDT)
+From: Yahoo!News <refertofriend@reply.yahoo.com>
+To: fork@spamassassin.taint.org
+Cc: 
+Reply-To: garym@canada.com
+Subject: Yahoo! News Story - Top Stories
+MIME-Version: 1.0
+Message-Id: <20020929140301.451A92940A9@xent.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 29 Sep 2002 07:03:02 PDT
+Content-Type: text/html
+
+<html>
+<head><base href="http://story.news.yahoo.com"></base>
+<script language=javascript type=text/javascript src="http://us.js1.yimg.com/us.yimg.com/lib/cmrc/tare.js"></script>
+<link rel=StyleSheet href="http://story.news.yahoo.com/css/user.css" type="text/css">
+</head>
+<body bgcolor=ffffff>
+
+
+<font SIZE="2" FACE="Arial,Helvetica">
+<b>Gary Murphy (garym@canada.com)</b> has sent you a news article. (Email address has not been verified.)
+<p>
+<b>Personal message:</b>
+<p>
+
+<p>
+<i>Top Stories</i><br>
+<a href="http://story.news.yahoo.com/news?tmpl=story2&u=/020928/161/2c9nb.html">http://story.news.yahoo.com/news?tmpl=story2&u=/020928/161/2c9nb.html</a>
+</font>
+<hr size=0 width="80%">
+      
+   <html>
+<head>
+<title>
+Yahoo! News - Top Stories
+</title>
+
+<script type="text/javascript" src="http://us.js1.yimg.com/us.yimg.com/lib/common/yg_csstare.js"></script>
+
+<style>
+<!--/**/.whitebg { background-color:#ffffff }
+a:visited { color:#990099; }
+a.regs { font-weight:normal; font-size:8pt } 
+a.regb { font-weight:bold }
+a.topstory { font-weight:bold; font-size:12pt; line-height:100% }
+a.leftcolindent { font-weight:bold; margin-left:12px }
+a.regblk { color:#000000 }
+a.regblkb { font-weight:bold; color:#000000 }/**/.regb { font-weight:bold }/**/.regs { font-weight:normal; font-size:8pt }/**/.regl { font-size:12pt; color:#ffffff }/**/.reglb { font-weight:bold; font-size:12pt; color:#ffffff }/**/.regblk { color:#000000 }/**/.regsblk { font-weight:normal; font-size:8pt; color:#000000 }/**/.regblkb { font-weight:bold; color:#000000 }/**/.reglblkb { font-weight:bold; font-size:12pt; color:#000000 }/**/.timedate { font-weight:normal; font-size:8pt; color:#999999 }/**/.sectiontitle { font-weight:bold; font-size:12pt; color:#000000; vertical-align:middle; background-color: #a7b6d2 }/**/.sectiontitled { font-weight:bold; font-size:12pt; color:#ffffff; vertical-align:middle; background-color: #48669f }/**/.sectiontitlel { font-weight:bold; font-size:12pt; color:#ffffff; vertical-align:middle; background-color: #a7b6d2 }/**/.sectiontitles { font-weight:normal; color:#ffffff; vertical-align:middle; background-color: #a7b6d2 }/**/.sectiontitlesb { fon
+ t-weight:bold; color:#ffffff; vertical-align:middle; background-color: #a7b6d2 }/**/.welcome { color:#000000; background-color:#cccccc }/**/.leftcolumn { color:#000000 ; vertical-align:top; background-color:#e4ecf6 }/**/.leftcolumnmain { background-color:#e4ecf6 }/**/.articletitle { font-weight:bold; font-size:12pt; color:#000000; vertical-align:top; line-height:100%}/**/.article { color:#000000 ; vertical-align:top }/**/.storyheadline { font-weight:bold; font-size:14pt; color:#000000; line-height:100% }
+-->
+</style></head>
+<body bgcolor=white>
+<center>
+<table cellpadding=2 cellspacing=0 BORDER=0 width=750>
+<tr valign=top><td>
+<table cellpadding=2 cellspacing=0 BORDER=0 width=100%>
+<tr valign=middle>
+<td width=1%>
+<!-- robot ads1 --></TD>
+<td width=1%>
+</td>
+<TD nowrap align=right width=97%><A href="http://dailynews.yahoo.com/h/?u"><FONT face=arial size=2>News Home</FONT></A><FONT face=arial size=2> - <A href=http://www.yahoo.com>Yahoo!</A> - <A href=http://help.yahoo.com/help/news/>Help</A></FONT><BR>
+<HR size=1 noshade></TD>
+<td width="1%">
+<a href="http://rd.yahoo.com/dailynews/reuters/brand/*http://www.reuters.com">
+<img src="http://us.i1.yimg.com/us.yimg.com/i/dn/reuters5.gif" border=0 alt="Reuters" width=137 height=30></a>
+</td>
+</tr></table></td></tr></table><table width=750 border=0 cellpadding=5 cellspacing=0 height=100>
+<tr valign=middle>
+<td align="center">
+
+<nolayer>
+<iframe
+src="http://adserver.yahoo.com/a?f=12790524&p=news&l=N&c=hs&bg=ffffff"
+marginwidth=0 marginheight=0 hspace=0 vspace=0 width=740 height=100
+frameborder=0 scrolling=no>
+</iframe>
+</nolayer>
+<ilayer
+src="http://adserver.yahoo.com/a?f=12790524&p=news&l=N&c=hs&bg=ffffff"
+bgcolor="#ffffff" width=470 height=80>
+</ilayer>
+<!-- MTFSID 0:2718085:7645365:7663531:7666521:12790524 -->
+<!-- NB: 0:2718085:7645365:39780830 -->
+<!-- NBT: 0:2718085:7645365:39780830:39780837:39780856:39780843 -->
+</td></tr></table><table width=750 cellpadding=3 cellspacing=0 border=0>
+<tr>
+<td class=welcome> <span class=reglblkb>Welcome, Guest</span></td>
+<td class=welcome align=right>
+<a href="http://rd.yahoo.com/dailynews/front/welcome/cst/*http://edit.news.yahoo.com/news?tmpl=s&u=/static/customize/set_content&.done=http%3a//news.yahoo.com/%3ftmpl=story2%26u=/020928/161/2c9nb.html"><b>Personalize News Home Page</b></a>
+<img alt=New src=http://us.i1.yimg.com/us.yimg.com/i/new2.gif border=0 width=28 height=11>&nbsp;
+-
+&nbsp; 
+<a href="http://rd.yahoo.com/dailynews/front/welcome/signin/*http://edit.yahoo.com/config/login?.src=yn&.done=http%3a//news.yahoo.com/%3ftmpl=story2%26u=/020928/161/2c9nb.html">Sign In</a></td>
+</tr></table>
+<table width=750 cellpadding=3 cellspacing=0 border=0 class=sectiontitled>
+<tr valign=bottom>
+<td class=sectiontitled valign=bottom>
+<span style="font:bold 14pt arial">Yahoo! News</span> &nbsp; <span class=regs>
+Sun, Sep 29, 2002
+</span></td>
+<td align=right nowrap valign=bottom>
+<table border=0 cellpadding=0 cellspacing=0><tr valign=middle>
+<form action="http://search.news.yahoo.com/search/news">
+<td valign=bottom>
+</td>
+<td nowrap class=sectiontitled valign=bottom><span class=regs style="font-weight:bold">Search</span></td>
+<td nowrap class=sectiontitled>&nbsp;<select name=c><option value=>News Stories<option value=news_photos selected>News Photos<option value=av>Audio/Video<option value=fullcov>Full Coverage<option value=news_nytp>The New York Times<option value=all>All of Yahoo!</select></td><td nowrap class=sectiontitled>&nbsp;<span class=regs>for</span>&nbsp;</td>
+<td nowrap valign=bottom><input size=15 name=p value="">&nbsp;<input type=submit value="Search">
+</td>
+<td></td>
+</form>
+<td class=sectiontitled valign=bottom>&nbsp;<a class=regs href="http://search.news.yahoo.com/search/news/options?p="><font face=arial size=-2 color=ffffff>Advanced</font></a></td></tr></table></td>
+</tr>
+</table>
+<table width=100% border=0 cellpadding=0 cellspacing=0><tr><td height=8></td></tr></table>
+<table width=750 border=0 cellpadding=0 cellspacing=0>
+<tr valign=top>
+<td class=leftcolumnmain width=160>
+<table width=100% cellpadding=0 cellspacing=4 border=0>
+<tr><td width=1%> </td>
+ <td>
+ <a href="/news?tmpl=s&u=/static/homepage"
+ class=regb>News Front Page</a>
+ </td>
+</tr>
+<tr>
+<td width=1%>
+ </td>
+ <td>
+<a href=/news?tmpl=index2&cid=702 class=regb>News Photos</a>
+</td>
+</tr>
+<tr>
+<td width=1%> </td>
+ <td>
+<img src=http://us.i1.yimg.com/us.yimg.com/i/sr/ar.gif
+ width=8 height=9>
+ <a href="/news?tmpl=index2&cid=705" class=regb>Top Stories</a>
+ </td>
+</tr>
+<tr>
+<td width=1%> </td>
+ <td>
+ <a href=/news?tmpl=index2&cid=708 class=leftcolindent>World</a>
+</td>
+</tr>
+<tr>
+<td width=1%> </td>
+ <td>
+ <a href=/news?tmpl=index2&cid=707 class=leftcolindent>Entertainment</a>
+</td>
+</tr>
+<tr>
+<td width=1%> </td>
+ <td>
+ <a href=/news?tmpl=index2&cid=706 class=leftcolindent>Sports</a>
+</td>
+</tr>
+<tr>
+<td width=1%> </td>
+ <td>
+ <a href=/news?tmpl=index2&cid=832 class=leftcolindent>Science</a>
+</td>
+</tr>
+<tr>
+<td width=1%> </td>
+ <td>
+ <a href=/news?tmpl=index2&cid=1007 class=leftcolindent>Lifestyle</a>
+</td>
+</tr>
+<tr>
+<td width=1%> </td>
+ <td>
+<a href="/news?tmpl=index2&cid=27" class=leftcolindent>Politics</a>
+</td>
+</tr>
+<tr>
+<td width=1%> </td>
+ <td>
+<a href=/news?tmpl=s&u=/h/slideshow2/index class=leftcolindent>Slideshows</a>
+</td>
+</tr>
+<tr>
+<td width=1%> </td>
+ <td>
+ <a href="/news?tmpl=index2&cid=441" class=leftcolindent>Editors' Picks</a>
+ </td>
+</tr>
+<tr>
+<td width=1%> </td>
+ <td>
+ <a href="/news?tmpl=index2&cid=996" class=leftcolindent>Most Popular</a>
+ </td>
+</tr>
+</table>
+<br>
+<table width=100% cellpadding=2 cellspacing=0 border=0>
+<tr><td class=sectiontitled nowrap>Slideshows</td></tr>
+<tr><td>
+<table width=100% cellpadding=2 cellspacing=0 border=0>
+<tr valign=top><td>
+<center><a href='javascript:
+ rs("ss","http://story.news.yahoo.com/news?p=news&g=events/ts/081202sept11&e=1&tmpl=sl&nosum=0&large=0&t=1033307900", 750,580);'><img border=1 align="MIDDLE" width=130 height=85 src="http://us.news1.yimg.com/us.yimg.com/p/rids/20020929/t/1033307900.3892387931.jpg" alt="Photo"></a>
+ <br><a href='javascript: rs("ss","http://story.news.yahoo.com/news?p=news&g=events/ts/081202sept11&e=1&tmpl=sl&nosum=0&large=0&t=1033307900",750,580);'>Sept. 11 Attacks & Terrorism Slideshow</a></center>
+<span class=regsblk>A Jordanian youth tours on a camel through the ancient city of Petra in Jordan, September 29, ...</span></td></tr>
+</table>
+<table width=100% cellpadding=2 cellspacing=0 border=0>
+<tr valign=top><td width=1%><b>·</b></td><td width=99%>
+<a href='javascript: rs("ss",
+"http://story.news.yahoo.com/news?p=news&g=events/ts/080601mideast&e=1&tmpl=sl&nosum=0&large=0&t=1033307429",750,580);' class=regs>Mideast Conflict</a>
+</td></tr></table>
+<table width=100% cellpadding=2 cellspacing=0 border=0>
+<tr valign=top><td width=1%><b>·</b></td><td width=99%>
+<a href='javascript: rs("ss",
+"http://story.news.yahoo.com/news?p=news&g=events/ts/092802senegalferry&e=1&tmpl=sl&nosum=0&large=0&t=1033304349",750,580);' class=regs>Ferry Capsizes Off W. Africa</a>
+</td></tr></table>
+<table width=100% cellpadding=2 cellspacing=0 border=0>
+<tr valign=top><td width=1%><b>·</b></td><td width=99%>
+<a href='javascript: rs("ss",
+"http://story.news.yahoo.com/news?p=news&g=events/ts/092702beirut&e=1&tmpl=sl&nosum=0&large=0&t=1033155159",750,580);' class=regs>Thousands Mark Palestinian Uprising in Beirut</a>
+</td></tr></table>
+<table width=100% cellpadding=2 cellspacing=0 border=0>
+<tr valign=top><td width=1%><b>·</b></td><td width=99%>
+<a href='javascript: rs("ss",
+"http://story.news.yahoo.com/news?p=news&g=events/ts/092702malaysia&e=1&tmpl=sl&nosum=0&large=0&t=1033131364",750,580);' class=regs>Malaysia Police Arrest Militant Leader</a>
+</td></tr></table>
+<table width=100% cellpadding=2 cellspacing=0 border=0>
+<tr valign=top><td align=right>
+<a
+href="/news?tmpl=s&u=/static/slideshow_archive2&ga=ts" class=regs>More Top Stories Photos Slideshows</a>
+</td></tr></table>
+</td></tr></table>
+<br>
+</td>
+<td width=5>&nbsp;</td>
+<td width=585 class=article>
+<table width=100% cellpadding=2 cellspacing=0 border=0>
+<tr><td class=sectiontitle>Top Stories</td></tr></table>
+<table width=100% border=0 cellpadding=0 cellspacing=0><tr><td height=8></td></tr></table>
+<center>
+<br>
+        <table width=100% cellpadding=0 cellspacing=0 border=0>
+<tr valign=middle>
+<td><center>
+Prev. 
+| 
+<a href="http://rd.yahoo.com/dailynews/prevnext/photos/start/*http://story.news.yahoo.com/news?tmpl=index2&cid=23">Start</a>
+| 
+<a href="http://rd.yahoo.com/dailynews/prevnext/photos/next/*http://story.news.yahoo.com/news?tmpl=story2&u=/020929/161/2cf6p.html&e=1&ncid=">Next</a>
+</td></tr></table>
+<br>
+<table width=585 cellpadding=0 cellspacing=0 border=0>
+<tr valign=top>
+<td width=470>
+<center>
+<table width=1% cellpadding=0 cellspacing=0 border=0>
+<tr valign=top>
+<td>
+ <img src=http://us.news2.yimg.com/us.yimg.com/p/nm/20020928/mdf116174.jpg align=middle border=1 alt="Captured weapons-grade uranium weighing more than 33 pounds is on display at the paramilitary police headquarters of southeast province of Sanliurfa, Turkey, September 28, 2002. Turkish gendarmes seized the uranium and detained two men accused of smuggling the material, Anatolian Agency said. Authorities believe the uranium came from an eastern European country and has a value about &#36;5 million. (Anatolian via Reuters)" width=450 height=195>
+</td>
+</tr>
+<tr valign=top>
+<td width=100% align=right>
+<span class=timedate>Sat Sep 28,11:26 AM ET</span></td></tr>
+<tr valign=top>
+<td class=regblk>
+<br>
+<font size=-1>
+Captured weapons-grade uranium weighing more than 33 pounds is on display at the paramilitary police headquarters of southeast province of Sanliurfa, Turkey, September 28, 2002. Turkish gendarmes seized the uranium and detained two men accused of smuggling the material, Anatolian Agency said. Authorities believe the uranium came from an eastern European country and has a value about &#36;5 million. (Anatolian via Reuters)
+</font>
+</td>
+</tr>
+</table>
+<br>
+<table width=100% cellpadding=0 cellspacing=0 border=0>
+<tr valign=middle>
+<td><center><img src=http://us.i1.yimg.com/us.yimg.com/i/buzz/mail.gif width=16 height=16 align=top alt="Mail to Friend">&nbsp;
+<a href="http://mtf.news.yahoo.com/mailto?url=http%3a//story.news.yahoo.com/news%3ftmpl=story2%26u=/020928/161/2c9nb.html&title=Reuters+Photo&prop=dailynews&locale=us">Email Photo</a></center>
+</td></tr></table>
+<br>
+</center>
+<br> 
+<center> 
+<table width=420 cellpadding=3 cellspacing=0 border=0> 
+<tr valign=bottom> 
+<td valign=bottom> 
+ 
+<table border=0 cellpadding=0 cellspacing=0><tr valign=middle> 
+ 
+<td valign=bottom><form action="http://search.news.yahoo.com/search/news"> 
+</td> 
+<td nowrap valign=middle><span class=regblks>Search:</span></td> 
+<td nowrap> <select name=c><option value="">News Stories<option value=news_photos selected>News Photos<option value=av>Audio/Video<option value=fullcov>Full Coverage<option value=news_nytp>New York Times<option value=all>All of Yahoo!</select></td><td nowrap>&nbsp;<span class=regblks>for</span>&nbsp;</td> 
+<td nowrap valign=bottom><input size=13 name=p value=""> <input type=submit value="Search"> 
+</td> 
+<td></form></td> 
+ 
+<td valign=middle> <a class=regs href="http://search.news.yahoo.com/search/news/options?p="><font face=arial size=-2 color=black>Advanced</font></a></td></tr></table></td> 
+</tr> 
+</table> 
+</center>
+
+</td>
+<td width=5></td>
+<td width=120>
+<center>
+
+</center>
+</td>
+</tr>
+</table>
+
+</td></tr></table>
+<table width=750 cellpadding=0 cellspacing=0 border=0>
+<tr><td class=regsblk align=center>
+<hr width=750 size=1 noshade>
+Copyright © 2002 Reuters Limited. All rights reserved. Republication or redistribution of Reuters content is expressly prohibited without the prior written consent of Reuters. Reuters shall not be liable for any errors or delays in the content, or for any actions taken in reliance thereon.
+<br>
+<br>
+</td></tr></table>
+</center> 
+</body>
+</html>
+</body>
+</html>
+
+

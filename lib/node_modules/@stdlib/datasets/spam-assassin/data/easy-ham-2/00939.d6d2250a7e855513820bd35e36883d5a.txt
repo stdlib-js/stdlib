@@ -1,0 +1,109 @@
+From fork-admin@xent.com  Wed Jul 31 23:12:55 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9BE5F440C8
+	for <jm@localhost>; Wed, 31 Jul 2002 18:12:55 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 31 Jul 2002 23:12:55 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6VMBT211312 for <jm@jmason.org>;
+    Wed, 31 Jul 2002 23:11:32 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 2CD6D2940C5; Wed, 31 Jul 2002 15:09:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from isolnetsux.techmonkeys.net (isolnetsux.techmonkeys.net
+    [64.243.46.20]) by xent.com (Postfix) with SMTP id 563A52940C4 for
+    <fork@xent.com>; Wed, 31 Jul 2002 15:07:59 -0700 (PDT)
+Received: (qmail 23622 invoked by uid 501); 31 Jul 2002 22:08:07 -0000
+Received: from localhost (sendmail-bs@127.0.0.1) by localhost with SMTP;
+    31 Jul 2002 22:08:07 -0000
+From: CDale <cdale@techmonkeys.net>
+To: Marty Halvorson <martyh@nmcourts.com>
+Cc: fork@spamassassin.taint.org
+Subject: Re: What's cool about doing nothing
+In-Reply-To: <5.1.0.14.0.20020731100838.00ac34e0@jidmail.nmcourts.com>
+Message-Id: <Pine.LNX.4.44.0207311705290.19500-100000@isolnetsux.techmonkeys.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 31 Jul 2002 17:08:07 -0500 (CDT)
+
+Okay, I'll ammend that to LIVE OLD tree saving, like the thousands of 
+acres of virgin pine forest that was razed here in MS so that our military 
+can practice desert warfare?  Fought it for years, lost, now there is a 
+stand of trees up and down Hwy 49 that's supposed to try to hide the fact 
+that a huge portion of the Desoto Ntl. Forest is gone.
+C
+
+On Wed, 31 Jul 2002, Marty Halvorson wrote:
+
+>  > So my thanks to those who are active in:
+>  > tree saving (okay, I help some here, but never enough)
+>  > drug rehabilitation (-smirk-  shut up, I'm serious)
+>  > keeping some of our freedoms intact (see tree saving)
+>  > health care reform
+>  > puppy dog rescue
+>  > education (move this one to the top of the list)
+>  > etc (lots and lots of etc)
+> 
+> I can agree with most of this list except tree saving.
+> 
+> Please understand, I'm in favor of forests.  I'm not in favor of messing 
+> with natural processes that forests and trees have evolved over millions of 
+> years.
+> 
+> Every time I look toward the west from my house I see the result of overly 
+> aggressive tree saving.  The Cerro Grande fire that destroyed many (200+) 
+> houses and an area bigger than Boston.
+> 
+> The Santa Fe watershed, which has as many as 1200 trees per acre in an area 
+> that if left to nature would have 30-60 trees per acre.  When the Forest 
+> Service attempted to cull trees in their part of the watershed, the tree 
+> lovers stopped the program with law suits.
+> 
+> A number of other projects have been stopped by similar suits.  For 
+> example, a fire south of Los Alamos that left many usable, but partially 
+> burned, trees standing.  The Forest Service started a project to allow 
+> loggers to take those trees.  Hah!  The tree lovers stopped that.  Can't 
+> have the loggers go into the forest even if the trees being taken are 
+> already burned and the roads necessary to get to the trees are already built.
+> 
+> A Forest Service official has stated flat out that the tree lovers need to 
+> understand their responsibility in contributing to the number of 
+> uncontrollable (i.e., crown fires caused by very dense tree stands and 
+> under growth) fires by their suits to stop any tree removal from the 
+> forests managed by the Forest Service.
+> 
+> I am writing having survived another season of forest fires.  One that saw 
+> many more fires than normal because of the severe drought occurring here in 
+> the Southwest (even though there are still quite a few fires burning).
+> 
+> Peace,
+> 
+> Marty Halvorson
+> marty@halvorson.us
+> 
+> http://xent.com/mailman/listinfo/fork
+> 
+
+-- 
+"My theology, briefly, is that the universe was dictated but not
+          signed."  (Christopher Morley) 
+
+
+http://xent.com/mailman/listinfo/fork
+
+

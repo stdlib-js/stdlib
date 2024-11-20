@@ -1,0 +1,31 @@
+
+{{alias}}( str[, fromIndex] )
+    Returns the previous extended grapheme cluster break in a string before a
+    specified position.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    fromIndex: integer (optional)
+        Position. Default: str.length-1.
+
+    Returns
+    -------
+    out: integer
+        Previous extended grapheme cluster break position.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'last man standing', 4 )
+    3
+    > out = {{alias}}( 'presidential election', 8 )
+    7
+    > out = {{alias}}( 'अनुच्छेद', 2 )
+    0
+    > out = {{alias}}( '🌷', 1 )
+    -1
+
+    See Also
+    --------

@@ -1,0 +1,68 @@
+From rpm-list-admin@freshrpms.net  Mon Sep  9 18:02:18 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 6A07E16EFC
+	for <jm@localhost>; Mon,  9 Sep 2002 18:02:18 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 18:02:18 +0100 (IST)
+Received: from auth02.nl.egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g15E84806717 for
+    <jm-rpm@jmason.org>; Tue, 5 Feb 2002 14:08:05 GMT
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by
+    auth02.nl.egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g15E72316923;
+    Tue, 5 Feb 2002 15:07:02 +0100
+Received: from gaupe.sunnmore.net (c188s126h1.upc.chello.no
+    [62.179.177.188]) by auth02.nl.egwn.net (8.11.6/8.11.6/EGWN) with SMTP id
+    g15E6T316911 for <rpm-list@freshrpms.net>; Tue, 5 Feb 2002 15:06:29 +0100
+Received: (qmail 32560 invoked from network); 5 Feb 2002 14:06:29 -0000
+Received: from ekorn.sunnmore.no (HELO sunnmore.net) (10.0.0.1) by
+    gaupe.sunnmore.net with SMTP; 5 Feb 2002 14:06:29 -0000
+Message-Id: <3C5FE6E4.6040608@sunnmore.net>
+From: Roy-Magne Mo <rmo@sunnmore.net>
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:0.9.8+) Gecko/20020203
+X-Accept-Language: nn, no, en-us
+MIME-Version: 1.0
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: Problem with an rpm...
+References: <1740000.1012898468@spawn.se7en.org>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Tue, 05 Feb 2002 15:06:28 +0100
+Date: Tue, 05 Feb 2002 15:06:28 +0100
+
+Mark Derricutt wrote:
+> Hiya, I just myself an rpm, and when I did -Uvh to upgrade the earlier 
+> version I had installed (also from my rpm) I got:
+> 
+> [root@spawn i386]# rpm -Uvh mulberry-2.2-b1.i386.rpm
+> Preparing...                ########################################### 
+> [100%]
+>   1:mulberry               ########################################### 
+> [100%]
+> error: db3 error(-30998) from db->close: DB_INCOMPLETE: Cache flush was 
+> unable to complete
+
+It's not the rpm, it's the rpm-system with you. The cache seems to have 
+rottened. Try removing /var/lib/rpm/__db*
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

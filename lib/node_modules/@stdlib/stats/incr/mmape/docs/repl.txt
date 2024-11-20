@@ -1,0 +1,46 @@
+
+{{alias}}( W )
+    Returns an accumulator function which incrementally computes a moving
+    mean absolute percentage error (MAPE).
+
+    The `W` parameter defines the number of values over which to compute the
+    moving mean absolute percentage error.
+
+    If provided input values, the accumulator function returns an updated moving
+    mean absolute percentage error. If not provided input values, the
+    accumulator function returns the current moving mean absolute percentage
+    error.
+
+    As `W` (f,a) pairs are needed to fill the window buffer, the first `W-1`
+    returned values are calculated from smaller sample sizes. Until the window
+    is full, each returned value is calculated from all provided values.
+
+    Parameters
+    ----------
+    W: integer
+        Window size.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}( 3 );
+    > var m = accumulator()
+    null
+    > m = accumulator( 2.0, 3.0 )
+    ~33.33
+    > m = accumulator( 5.0, 2.0 )
+    ~91.67
+    > m = accumulator( 3.0, 2.0 )
+    ~77.78
+    > m = accumulator( 2.0, 5.0 )
+    ~86.67
+    > m = accumulator()
+    ~86.67
+
+    See Also
+    --------
+

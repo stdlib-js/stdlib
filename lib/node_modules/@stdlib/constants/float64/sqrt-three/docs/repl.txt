@@ -1,0 +1,12 @@
+
+{{alias}}
+    Square root of `3`.
+
+    Examples
+    --------
+    > {{alias}}
+    1.7320508075688772
+
+    See Also
+    --------
+

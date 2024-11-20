@@ -1,0 +1,108 @@
+From rpm-list-admin@freshrpms.net  Thu Jul 25 11:07:15 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 87256440DC
+	for <jm@localhost>; Thu, 25 Jul 2002 06:06:46 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 11:06:46 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6P6lj402559 for
+    <jm-rpm@jmason.org>; Thu, 25 Jul 2002 07:47:46 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6P6g2C32076; Thu, 25 Jul 2002 08:42:03
+    +0200
+Received: from imf20bis.bellsouth.net (mail120.mail.bellsouth.net
+    [205.152.58.80]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g6P6fLC28043 for <rpm-list@freshrpms.net>; Thu, 25 Jul 2002 08:41:21 +0200
+Received: from adsl-157-22-166.msy.bellsouth.net ([66.157.22.166]) by
+    imf20bis.bellsouth.net (InterMail vM.5.01.04.19
+    201-253-122-122-119-20020516) with ESMTP id
+    <20020725064115.OMKC8138.imf20bis.bellsouth.net@adsl-157-22-166.msy.bellsouth.net>
+    for <rpm-list@freshrpms.net>; Thu, 25 Jul 2002 02:41:15 -0400
+Subject: Re: Ximian apt repos?
+From: Lance <lance_tt@bellsouth.net>
+To: rpm-zzzlist@freshrpms.net
+In-Reply-To: <1027537563.18947.12.camel@fuggles>
+References: <20020724.FRs.59646600@www.dudex.net>
+    <1027537563.18947.12.camel@fuggles>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8
+Message-Id: <1027579516.15921.18.camel@localhost.localdomain>
+MIME-Version: 1.0
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: 25 Jul 2002 01:45:15 -0500
+Date: 25 Jul 2002 01:45:15 -0500
+
+Well, from the looks of things, I can import all my mail settings from
+Evolution to Sylpheed.  Has anyone successfully run Sylpheed in Gnome
+2.0?  I noticed with 'apt-get install gnome-session' from the 'rpm
+http://apt.sunnmore.net gnome2 73' repository, Sylpheed isn't one of the
+packages selected for deletion.
+
+Lance
+
+On Wed, 2002-07-24 at 14:05, Julian Missig wrote:
+> On Wed, 2002-07-24 at 03:50, Angles Puglisi wrote:
+> > Lance (lance_tt@bellsouth.net) wrote*:
+> > >
+> > >well, from the looks of things, Evolution mail client isn't supported
+> > >just yet, so I reckon I'll wait a bit.  Whoever posted these gnome2 apt
+> > >repositories, thanks!!!
+> > >
+> > 
+> > I'm uising Havoc Pennington's Gnomehide and it rocks. I installed it before I
+> > knew about apt, but one of the previous emails had an apt repository that
+> > claimed to have gnomehide. Just remember there is one kew file that makes the
+> > difference between Gnome1 and Gnome2 being used. I *think* it is "gnome-core"
+> > vs. "gnome-session" but I can not remember.
+> > 
+> > Note that that those same files are probably in the Limbo beta, except
+> > updated. There has not been a major change to "gnomehide" in a while, I
+> > suspect Havoc's work went into Limbo then.
+> 
+> Right, gnomehide is only updated when it's been a while since the last
+> red hat release, and the next beta isn't out yet. Since the beta is out
+> now, gnomehide won't be updated again for a while.
+> 
+> Julian
+> 
+> 
+> _______________________________________________
+> RPM-List mailing list <RPM-List@freshrpms.net>
+> http://lists.freshrpms.net/mailman/listinfo/rpm-list
+-- 
+:
+####[ Linux One Stanza Tip (LOST) ]###########################
+
+Sub : Monitoring su attempts                         LOST #115
+
+In a multiuser system you may like to monitor all su attempts.
+Edit /etc/login.defs and edit SULOG_FILE as follows:
+SULOG_FILE    /var/log/sulog   ... (name of file to hold info)
+
+####<bish@nde.vsnl.net.in>####################################
+:
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

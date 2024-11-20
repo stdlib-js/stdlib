@@ -1,0 +1,59 @@
+
+{{alias}}( x )
+    Converts an integer-valued double-precision floating-point number to a
+    signed 64-bit integer byte array according to host byte order (endianness).
+
+    This function assumes that the input value is less than the maximum safe
+    double-precision floating-point integer plus one (i.e., `2**53`).
+
+    Parameters
+    ----------
+    x: integer
+        Integer-valued double-precision floating-point number.
+
+    Returns
+    -------
+    out: Uint8Array
+        Byte array.
+
+    Examples
+    --------
+    > var y = {{alias}}( 4294967297.0 )
+    <Uint8Array>
+
+
+{{alias}}.assign( x, out, stride, offset )
+    Converts an integer-valued double-precision floating-point number to a
+    signed 64-bit integer byte array according to host byte order (endianness)
+    and assigns results to a provided output array.
+
+    This function assumes that the input value is less than the maximum safe
+    double-precision floating-point integer plus one (i.e., `2**53`).
+
+    Parameters
+    ----------
+    x: integer
+        Integer-valued double-precision floating-point number.
+
+    out: Array|TypedArray|Object
+        Output array.
+
+    stride: integer
+        Output array stride.
+
+    offset: integer
+        Output array index offset.
+
+    Returns
+    -------
+    out: Array|TypedArray|Object
+        Output array.
+
+    Examples
+    --------
+    > var out = new {{alias:@stdlib/array/uint8}}( 16 );
+    > var y = {{alias}}( 4294967297.0, out, 2, 1 )
+    <Uint8Array>
+
+    See Also
+    --------

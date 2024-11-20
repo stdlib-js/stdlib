@@ -1,0 +1,51 @@
+From rssfeeds@jmason.org  Wed Oct  2 11:44:31 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 50B4B16F03
+	for <jm@localhost>; Wed,  2 Oct 2002 11:44:31 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 02 Oct 2002 11:44:31 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g92815K31702 for
+    <jm@jmason.org>; Wed, 2 Oct 2002 09:01:05 +0100
+Message-Id: <200210020801.g92815K31702@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: boingboing <rssfeeds@spamassassin.taint.org>
+Subject: Bloodhag interviewed
+Date: Wed, 02 Oct 2002 08:01:05 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://boingboing.net/#85513616
+Date: Not supplied
+
+The new ish of Strange Horizons in out, with an interview with Bloodhag, the 
+most metal of the all the science fiction metal bands. 
+
+    Soon, the spotlight comes up again. The lead singer grabs the microphone. 
+    "This is Frank Bellknap Long!" he yells, and, feverish, launches into a 
+    lecture on Long's oeuvre. There can't be more than a handful of people on 
+    this earth who could get a beer-sodden thrash crowd to listen to an English 
+    Lit lecture. Thirty seconds later, the audience is sufficiently educated, 
+    and the guys begin to wail. Jake the singer holds the microphone over his 
+    head and belts out the song in a growling voice that's monster-movie low. 
+    "No reason! No corners!" he shouts. Two minutes later, they're done with 
+    the pulps and ready to move on to the New Wave. "Our next song is about 
+    Harlan Ellison!" Jake bellows, and the geeks, the hipsters, the metalheads, 
+    and the drunks let out a howl of mutual joy. 
+
+    Blöödhag -- note the dual umlauts -- hails from Seattle. Describing 
+    themselves as "edu-core," the band performs nothing but two-minute thrash 
+    tributes to science fiction writers. Between songs, the band pelts the 
+    audience with paperback books, quizzes them on book titles, and demands 
+    that the audience show their library cards. Their motto: "The Faster You Go 
+    Deaf, the More Time You Have to Read."  
+
+Link[1] Discuss[2] (_Thanks, Zed[3]!_)
+
+[1] http://www.strangehorizons.com/2002/20020930/bloodhag.shtml
+[2] http://www.quicktopic.com/boing/H/kfFeZdnp8NE
+[3] http://www.mememachinego.com/
+
+

@@ -1,0 +1,153 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2018 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# isColumnMajorContiguous
+
+> Determine if an array is column-major contiguous.
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+An array is **contiguous** if the memory address of each array element is adjacent to the memory address of the next array element.
+
+</section>
+
+<!-- /.intro -->
+
+<!-- Package usage documentation. -->
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var isColumnMajorContiguous = require( '@stdlib/ndarray/base/assert/is-column-major-contiguous' );
+```
+
+#### isColumnMajorContiguous( shape, strides, offset )
+
+Returns a `boolean` indicating if an array is column-major contiguous.
+
+```javascript
+var shape = [ 2, 2 ];
+var strides = [ 1, 2 ];
+var offset = 25;
+
+var bool = isColumnMajorContiguous( shape, strides, offset );
+// returns true
+
+shape = [ 10 ];
+strides = [ 3 ]; // every third memory element
+offset = 0;
+
+bool = isColumnMajorContiguous( shape, strides, offset );
+// returns false
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- Package usage examples. -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
+var shape2strides = require( '@stdlib/ndarray/base/shape2strides' );
+var strides2offset = require( '@stdlib/ndarray/base/strides2offset' );
+var randu = require( '@stdlib/random/base/randu' );
+var isColumnMajorContiguous = require( '@stdlib/ndarray/base/assert/is-column-major-contiguous' );
+
+var strides;
+var offset;
+var shape;
+var bool;
+var i;
+var j;
+
+shape = [ 0, 0, 0 ];
+
+for ( i = 0; i < 100; i++ ) {
+    // Generate a random array shape:
+    shape[ 0 ] = discreteUniform( 1, 10 );
+    shape[ 1 ] = discreteUniform( 1, 10 );
+    shape[ 2 ] = discreteUniform( 1, 10 );
+
+    // Generate strides:
+    if ( randu() < 0.5 ) {
+        strides = shape2strides( shape, 'row-major' );
+    } else {
+        strides = shape2strides( shape, 'column-major' );
+    }
+    j = discreteUniform( 0, shape.length-1 );
+    strides[ j ] *= ( randu() < 0.5 ) ? -1 : 1;
+
+    strides[ 0 ] *= discreteUniform( 1, 2 ); // if scaled by 1, then single segment
+
+    // Compute the index offset:
+    offset = strides2offset( shape, strides ) + 25; // include a view offset
+
+    // Determine if the array is column-major contiguous:
+    bool = isColumnMajorContiguous( shape, strides, offset );
+    console.log( 'Shape: %s. Strides: %s. Offset: %d. Contiguous: %s.', shape.join( 'x' ), strides.join( ',' ), offset, bool );
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="references">
+
+</section>
+
+<!-- /.references -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+</section>
+
+<!-- /.links -->

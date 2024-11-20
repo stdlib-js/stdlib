@@ -1,0 +1,51 @@
+From ilug-admin@linux.ie  Tue Aug 20 12:43:52 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6607743C34
+	for <jm@localhost>; Tue, 20 Aug 2002 07:43:52 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 12:43:52 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7KBjIZ04448 for
+    <jm-ilug@jmason.org>; Tue, 20 Aug 2002 12:45:18 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA00734; Tue, 20 Aug 2002 12:44:07 +0100
+Received: from milexc01.maxtor.com ([134.6.205.206]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA00681 for <ilug@linux.ie>; Tue,
+    20 Aug 2002 12:43:50 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [134.6.205.206] claimed to
+    be milexc01.maxtor.com
+Received: by milexc01.maxtor.com with Internet Mail Service (5.5.2653.19)
+    id <RHPLX0WP>; Tue, 20 Aug 2002 12:43:47 +0100
+Message-Id: <0D443C91DCE9CD40B1C795BA222A729E01885610@milexc01.maxtor.com>
+From: "Wynne, Conor" <conor_wynne@maxtor.com>
+To: "'ilug@linux.ie'" <ilug@linux.ie>
+Subject: RE: [ILUG] mirroring on a running system
+Date: Tue, 20 Aug 2002 12:43:46 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Sound. I'll be there at 7ish so. 
+
+CW
+
+-----------
+ I've to leave the girlfriend home first. So, I'll be there sometime just
+after seven.
+
+Kate
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

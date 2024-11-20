@@ -1,0 +1,72 @@
+From fork-admin@xent.com  Mon Aug 26 15:32:06 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 291E04415F
+	for <jm@localhost>; Mon, 26 Aug 2002 10:26:12 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 15:26:12 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7OFZXZ07798 for <jm@jmason.org>;
+    Sat, 24 Aug 2002 16:35:34 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 2BA432940DA; Sat, 24 Aug 2002 08:33:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mail2.panix.com (mail2.panix.com [166.84.1.73]) by xent.com
+    (Postfix) with ESMTP id D8F952940BF for <fork@xent.com>; Sat,
+    24 Aug 2002 08:32:22 -0700 (PDT)
+Received: from 159-98.nyc.dsl.access.net (159-98.nyc.dsl.access.net
+    [166.84.159.98]) by mail2.panix.com (Postfix) with ESMTP id 972AC91F0 for
+    <fork@xent.com>; Sat, 24 Aug 2002 11:34:12 -0400 (EDT)
+From: Lucas Gonze <lgonze@panix.com>
+X-X-Sender: lgonze@localhost.localdomain
+Cc: FoRK <fork@spamassassin.taint.org>
+Subject: Re: The case for spam
+In-Reply-To: <F199JycMIRpE6qCJTyt00005abe@hotmail.com>
+Message-Id: <Pine.LNX.4.44.0208241111100.17440-100000@localhost.localdomain>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sat, 24 Aug 2002 11:26:34 -0400 (EDT)
+
+Russell Turpin wrote:
+> On the receiving side,
+> my email client distinguishes between messages
+> that are read, and messages that are not. I like
+> to mark or save messages that are particularly
+> interresting or important to me. And even if I
+> make a point to delete "suspicious material"
+> immediately upon reading it, even THAT might
+> leave an interesting kind of trace on my machine.
+
+You choose to have your email client do that.  You don't have to.  Short
+of Palladium, you can do whatever you want with bytes you hold, including
+reading messages and erasing the traces.  I'll buy a chocolate sundae for
+anyone who can show otherwise.
+
+An attacker might be able to verify that you *have* read a message (e.g.  
+by seeing that you saved and edited a copy) but not that you *haven't*.  
+If your email client was compromised you could put a packet sniffer on the
+line before downloading mail.  If an attacker installed a packet sniffer
+sniffer, you could run it in a spoofing VM.
+
+The only exception to the rule that your machine belongs to you is --
+maybe -- Palladium.
+
+- Lucas
+
+
+http://xent.com/mailman/listinfo/fork
+

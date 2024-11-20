@@ -1,0 +1,100 @@
+From ilug-admin@linux.ie  Tue Aug 13 10:29:27 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6BA4F4412D
+	for <jm@localhost>; Tue, 13 Aug 2002 05:21:59 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:21:59 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7D5wQb19159 for
+    <jm-ilug@jmason.org>; Tue, 13 Aug 2002 06:58:26 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id GAA27326; Tue, 13 Aug 2002 06:57:37 +0100
+Received: from puma.dub0.ie.cp.net ([62.17.137.250]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id GAA27284 for <ilug@linux.ie>; Tue,
+    13 Aug 2002 06:57:29 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [62.17.137.250] claimed to
+    be puma.dub0.ie.cp.net
+Received: from localhost.localdomain (10.40.2.34) by puma.dub0.ie.cp.net
+    (6.7.009) id 3D4AB188000093C9 for ilug@linux.ie; Tue, 13 Aug 2002 06:56:58
+    +0100
+Subject: Re: [ILUG] RH7.3 on Cobalt - the saga continues
+From: Anders Holm <anders.holm@criticalpath.net>
+To: ilug@linux.ie
+In-Reply-To: <20020812164951.GB1858@jinny.ie>
+References: <20020812164951.GB1858@jinny.ie>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.5
+Date: 13 Aug 2002 06:54:28 +0100
+Message-Id: <1029218068.4889.9.camel@aholm>
+MIME-Version: 1.0
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+John,
+
+let me guess, you haven't tried the boot parameter root=/dev/hda2 if you
+are using lilo??
+
+//Anders//
+
+On Mon, 2002-08-12 at 17:49, John P. Looney wrote:
+>  I'm getting places.
+> 
+>  Turns out that you can't have your /boot filesystem ext3, and the
+> /boot/vmlinux.gz file has to be a gzipped vmlinux file (not a vmlinuz one,
+> which though obvious...isn't, when you've been hitting your head off a
+> wall for a few days).
+> 
+>  Also, when you mkfs a filesystem that's called "/boot", as far as the
+> redhat /etc/fstab is concerned, it wipes that, so when you boot a rescue
+> CD, it doesn't mount /dev/hda1 as /boot, and doesn't inform you of this.
+> 
+>  (so, it's dead easy to work away on /mnt/sysimage/boot thinking you are
+> working on /dev/hda1, and wondering why no matter what you do, nothing
+> changes).
+> 
+>  Aaaaanyway. I have it booting the redhat kernel. But, the kernel isn't
+> loading root as /dev/hda2 - it keeps mounting /dev/hda1.
+> 
+>  Curiously, when I go into the boot prom, an use
+> 
+>  "set_params" I can tell it to mount /dev/hda2 as root. But then it uses
+> the PROM copy of the kernel (dodgy 2.2.16 kernel), which doesn't know
+> ext3, so wants to fsck up my disk.
+> 
+>  rdev on the vmlinux file, before gzipping doesn't work. I assume you
+> can't run rdev on the gzipped version. Any other ideas on how to tell a
+> kernel where it's root fs is ?
+> 
+> Kate
+> 
+> 
+> -- 
+> Irish Linux Users' Group: ilug@linux.ie
+> http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+> List maintainer: listmaster@linux.ie
+-- 
+Best Regards
+Anders Holm
+Critical Path Technical Support Engineer
+========================================
+Tel USA/Canada: 1 800 353 8437
+Tel Worldwide:  +1 801 736 0806
+E-mail:         technical.support@cp.net
+Internet:       http://support.cp.net
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

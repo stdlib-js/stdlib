@@ -1,0 +1,26 @@
+From rssfeeds@jmason.org  Sat Oct  5 10:37:33 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 8BFAC16F82
+	for <jm@localhost>; Sat,  5 Oct 2002 10:36:52 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 05 Oct 2002 10:36:52 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9580uK02614 for
+    <jm@jmason.org>; Sat, 5 Oct 2002 09:00:56 +0100
+Message-Id: <200210050800.g9580uK02614@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: newscientist <rssfeeds@spamassassin.taint.org>
+Subject: Cosmic crash of speeding jets tracked
+Date: Sat, 05 Oct 2002 08:00:56 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.newsisfree.com/click/-5,8553541,1440/
+Date: Not supplied
+
+A collision is seen from start to finish for the first time - it may provide 
+clues to how the Universe's largest single objects are formed
+
+

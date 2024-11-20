@@ -1,0 +1,75 @@
+From ilug-admin@linux.ie  Tue Aug  6 14:17:36 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 66B9A44122
+	for <jm@localhost>; Tue,  6 Aug 2002 09:16:54 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 14:16:54 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g76DFUk31068 for
+    <jm-ilug@jmason.org>; Tue, 6 Aug 2002 14:15:30 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id OAA31884; Tue, 6 Aug 2002 14:13:35 +0100
+Received: from ie.suberic.net (owsla.ie.suberic.net [62.17.162.83]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id OAA31861 for <ilug@linux.ie>;
+    Tue, 6 Aug 2002 14:13:30 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host owsla.ie.suberic.net
+    [62.17.162.83] claimed to be ie.suberic.net
+Received: from owsla.ie.suberic.net (owsla [127.0.0.1]) by ie.suberic.net
+    (8.11.6/8.11.6) with ESMTP id g76DDTY19099 for <ilug@linux.ie>;
+    Tue, 6 Aug 2002 14:13:29 +0100
+Date: Tue, 6 Aug 2002 14:13:27 +0100
+To: ilug@linux.ie
+Subject: Re: [ILUG] Sparc Solaris (was: Dell GX260 V Redhat 7.3)
+Message-Id: <20020806141327.C18018@ie.suberic.net>
+References: <20020806125617.F17211@ie.suberic.net>
+    <200208061404.aa38271@salmon.maths.tcd.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <200208061404.aa38271@salmon.maths.tcd.ie>; from
+    bradyn@maths.tcd.ie on Tue, Aug 06, 2002 at 02:04:11PM +0100
+X-Operating-System: Linux 2.4.18-5 i686
+X-GPG-Fingerprint: 9C1D 16F4 11F1 6BD2 933C  048D ACC7 9840 89D0 7646
+From: kevin lyda <kevin+dated+1029071609.d28773@ie.suberic.net>
+Mail-Followup-To: kevin+dated+1029071609.d28773@ie.suberic.net,
+	ilug@linux.ie
+X-Delivery-Agent: TMDA/0.57
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Tue, Aug 06, 2002 at 02:04:11PM +0100, Niall Brady wrote:
+> >(guess who inspired them?).  pc hardware is dumb, so you'll need to use
+> >a floppy.  otoh, every jumpstart config i've seen required rarp plus
+> >plugging the new box's ethernet+ip into a file.  a kickstart boot can
+> >just use a dhcp server.
+> Aye, but it'll still need a /boot/kickstart/$VER/$IP-kickstart won't it
+> to proceed automatically?  [or am I completely off track there?]
+
+it's been a while since i did a kickstart install.  my memory is that
+you put a file on a standard redhat boot disk that essentially scripts
+the install.  there are a slew of options - you can have it fetch it's
+install script from a tftpd server for instance (similar to jumpstart),
+or it can all be on the floppy.
+
+kevin
+
+-- 
+kevin@suberic.net     that a believer is happier than a skeptic is no more to
+fork()'ed on 37058400    the point than the fact that a drunken man is happier
+meatspace place: home       than a sober one. the happiness of credulity is a
+http://ie.suberic.net/~kevin   cheap & dangerous quality -- g.b. shaw
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

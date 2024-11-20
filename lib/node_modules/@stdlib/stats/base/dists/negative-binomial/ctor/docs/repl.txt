@@ -1,0 +1,92 @@
+
+{{alias}}( [r, p] )
+    Returns a negative binomial distribution object.
+
+    Parameters
+    ----------
+    r: number (optional)
+        Number of successes until experiment is stopped. Must be a positive
+        number. Default: `1`.
+
+    p: number (optional)
+        Success probability. Must be a number between `0` and `1`. Default:
+        `0.5`.
+
+    Returns
+    -------
+    nbinomial: Object
+        Distribution instance.
+
+    nbinomial.r: number
+        Number of trials. If set, the value must be a positive number.
+
+    nbinomial.p: number
+        Success probability. If set, the value must be a number between `0` and
+        `1`.
+
+    nbinomial.kurtosis: number
+        Read-only property which returns the excess kurtosis.
+
+    nbinomial.mean: number
+        Read-only property which returns the expected value.
+
+    nbinomial.mode: number
+        Read-only property which returns the mode.
+
+    nbinomial.skewness: number
+        Read-only property which returns the skewness.
+
+    nbinomial.stdev: number
+        Read-only property which returns the standard deviation.
+
+    nbinomial.variance: number
+        Read-only property which returns the variance.
+
+    nbinomial.cdf: Function
+        Evaluates the cumulative distribution function (CDF).
+
+    nbinomial.logpmf: Function
+        Evaluates the natural logarithm of the probability mass function (PMF).
+
+    nbinomial.mgf: Function
+        Evaluates the moment-generating function (MGF).
+
+    nbinomial.pmf: Function
+        Evaluates the probability mass function (PMF).
+
+    nbinomial.quantile: Function
+        Evaluates the quantile function at probability `p`.
+
+    Examples
+    --------
+    > var nbinomial = {{alias}}( 8.0, 0.5 );
+    > nbinomial.r
+    8.0
+    > nbinomial.p
+    0.5
+    > nbinomial.kurtosis
+    0.8125
+    > nbinomial.mean
+    8.0
+    > nbinomial.mode
+    7.0
+    > nbinomial.skewness
+    0.75
+    > nbinomial.stdev
+    4.0
+    > nbinomial.variance
+    16.0
+    > nbinomial.cdf( 2.9 )
+    ~0.055
+    > nbinomial.logpmf( 3.0 )
+    ~-2.837
+    > nbinomial.mgf( 0.2 )
+    ~36.675
+    > nbinomial.pmf( 3.0 )
+    ~0.059
+    > nbinomial.quantile( 0.8 )
+    11.0
+
+    See Also
+    --------
+

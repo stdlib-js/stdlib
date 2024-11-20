@@ -1,0 +1,32 @@
+
+{{alias}}()
+    Returns an accumulator function which incrementally computes a corrected
+    sample excess kurtosis.
+
+    If provided a value, the accumulator function returns an updated corrected
+    sample excess kurtosis. If not provided a value, the accumulator function
+    returns the current corrected sample excess kurtosis.
+
+    If provided `NaN` or a value which, when used in computations, results in
+    `NaN`, the accumulated value is `NaN` for all future invocations.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}();
+    > var v = accumulator( 2.0 )
+    null
+    > v = accumulator( 2.0 )
+    null
+    > v = accumulator( -4.0 )
+    null
+    > v = accumulator( -4.0 )
+    -6.0
+
+    See Also
+    --------
+

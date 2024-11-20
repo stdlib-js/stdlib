@@ -1,0 +1,236 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6O8EmhY042650
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Wed, 24 Jul 2002 03:14:48 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6O8EmuB042636
+	for cypherpunks-forward@ds.pro-ns.net; Wed, 24 Jul 2002 03:14:48 -0500 (CDT)
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6O8EihY042616
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks@ds.pro-ns.net>; Wed, 24 Jul 2002 03:14:45 -0500 (CDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: from waste.minder.net (daemon@waste [66.92.53.73])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6O8EhJ77850
+	for <cypherpunks@ds.pro-ns.net>; Wed, 24 Jul 2002 04:14:43 -0400 (EDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: (from cpunks@localhost)
+	by waste.minder.net (8.11.6/8.11.6) id g6O8Eh227029
+	for cypherpunks@ds.pro-ns.net; Wed, 24 Jul 2002 04:14:43 -0400
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by waste.minder.net (8.11.6/8.11.6) with ESMTP id g6O8EgR27011
+	for <cpunks@minder.net>; Wed, 24 Jul 2002 04:14:42 -0400
+Received: from mail.acol.net (IDENT:root@adsl-66-121-13-2.dsl.snfc21.pacbell.net [66.121.13.2])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6O8EdJ77838
+	for <cpunks@minder.net>; Wed, 24 Jul 2002 04:14:40 -0400 (EDT)
+	(envelope-from jzlin@ba.no)
+Received: from mx02.263.net.cn (host213-123-215-19.in-addr.btopenworld.com [213.123.215.19])
+	by mail.acol.net (8.11.0/8.11.0) with ESMTP id g6O7xWi08317;
+	Wed, 24 Jul 2002 00:59:35 -0700
+Message-ID: <000049c87990$000058b4$00006364@mail2.ictnet.es>
+To: <jzlin@ba.no>
+From: "Int. Properties" <jzlin@ba.no>
+Subject: Refinance Your Existing Mortgage
+Date: Wed, 24 Jul 2002 01:14:39 -1900
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Mailer: Microsoft Outlook Express
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=3D(0022)http://internet.e-mail --><HTML><HEAD><TITLE>N=
+ew Web Technology</TITLE>
+<META http-equiv=3DContent-Type content=3D"text/html; charset=3Dwindows-12=
+52">
+<META content=3D"MSHTML 6.00.2713.1100" name=3DGENERATOR></HEAD>
+<BODY vLink=3D#c0c0c0 link=3D#c0c0c0 bgColor=3D#ffffff leftMargin=3D0><FON=
+T face=3DArial>
+<P>
+<CENTER>
+<TABLE width=3D500 border=3D0>
+  <TBODY>
+  <TR>
+    <TD align=3Dmiddle><B><FONT color=3D#336633 size=3D5>Mortgage Rates Sl=
+ashed For 
+      The Last Time!</FONT></B> 
+      <HR>
+      <FONT color=3D#000000 size=3D2><B>Let us help you get a new mortgage=
+ for up to 
+      100% of your home=FFFFFF92s value</B> 
+      <P>
+      <TABLE width=3D300 border=3D0>
+        <TBODY>
+        <TR>
+          <TD align=3Dleft><FONT color=3D#000000 size=3D4>
+            <LI>Lower your monthly payment! 
+            <LI>Consolidate your debt! 
+            <LI>Shorten the term of your loan! 
+            <LI>Reduce your interest rate! </FONT></LI></TD></TR></TBODY><=
+/TABLE>
+      <P><FONT color=3D#ff0000 size=3D3><B>National Average Mortgage 
+      Rates</B></FONT> <BR><BR>
+      <TABLE cellSpacing=3D2 cellPadding=3D5 border=3D4>
+        <TBODY>
+        <TR bgColor=3D#cccccc>
+          <TD><B>Program</B></TD>
+          <TD><B>Rates</B></TD></TR></B>
+        <TR bgColor=3D#ffffff>
+          <TD>30 Yr Fixed</TD>
+          <TD>6.50%</TD></TR>
+        <TR bgColor=3D#ffffff>
+          <TD>15 Yr Fixed</TD>
+          <TD>6.25%</TD></TR>
+        <TR bgColor=3D#ffffff>
+          <TD>1 Yr Arm</TD>
+          <TD>5.51%</TD></TR></TBODY></TABLE>
+      <P>
+      <TABLE width=3D350 border=3D0>
+        <TBODY>
+        <TR>
+          <TD align=3Dmiddle><FONT color=3D#336633 size=3D4>Choose From Hu=
+ndreds of 
+            <BR>Loan Programs Like: </FONT></TD></TR></TBODY></TABLE>
+      <P>
+      <TABLE width=3D200 border=3D0>
+        <TBODY>
+        <TR>
+          <TD align=3Dleft><FONT color=3D#000000 size=3D3><B>
+            <LI>Purchase Loans 
+            <LI>Refinance 
+            <LI>Debt Consolidation 
+            <LI>Home Improvement 
+            <LI>Interest Only Jumbo's 
+            <LI>No Income Verification </B></FONT></LI></TD></TR></TBODY><=
+/TABLE>
+      <P>
+      <TABLE width=3D350 border=3D0>
+        <TBODY>
+        <TR>
+          <TD align=3Dmiddle><FONT color=3D#336633 size=3D4>Fill Out This =
+Simple 
+            Form and We Will Compete For Your Business... 
+      </FONT></TD></TR></TBODY></TABLE>
+      <P><FONT color=3D#000000 size=3D2><B>Required Input Field<FONT color=
+=3D#ff0000 
+      size=3D2>*</FONT></B> 
+      <P>
+      <TABLE cellSpacing=3D0 borderColorDark=3D#333300 cellPadding=3D3 wid=
+th=3D600 
+      borderColorLight=3D#ffffcc>
+        <TBODY>
+        <TR>
+          <TD align=3Dmiddle>
+            <FORM action=3Dmailto:glmortgage1006@firemail.de?subject=3DMor=
+tgage_Inquiry 
+            method=3Dpost encType=3Dtext/plain>
+            <TABLE width=3D"100%">
+              <TBODY>
+              <TR>
+                <TD align=3Dright width=3D"50%"><FONT 
+                  face=3D"Arial, Helvetica, sans-serif" color=3D#000000 
+                  size=3D2><B>Name</B></FONT><FONT 
+                  face=3D"Arial, Helvetica, sans-serif" color=3D#ff0000 
+                  size=3D2>*</FONT></TD>
+                <TD><INPUT name=3DNAME></TD></TR>
+              <TR>
+                <TD align=3Dright width=3D"50%"><FONT 
+                  face=3D"Arial, Helvetica, sans-serif" color=3D#000000 
+                  size=3D2><B>Address</B></FONT></TD>
+                <TD><INPUT name=3DURL></TD></TR>
+              <TR>
+                <TD align=3Dright width=3D"50%"><FONT 
+                  face=3D"Arial, Helvetica, sans-serif" color=3D#000000 
+                  size=3D2><B>City </B></FONT></TD>
+                <TD><INPUT name=3DCOMPANY_NAME></TD></TR>
+              <TR>
+                <TD align=3Dright width=3D"50%"><FONT 
+                  face=3D"Arial, Helvetica, sans-serif" color=3D#000000 
+                  size=3D2><B>State</B></FONT><FONT 
+                  face=3D"Arial, Helvetica, sans-serif" color=3D#ff0000 
+                  size=3D2>*</FONT></TD>
+                <TD><INPUT size=3D2 name=3DSTATE></TD></TR>
+              <TR>
+                <TD align=3Dright width=3D"50%"><FONT 
+                  face=3D"Arial, Helvetica, sans-serif" color=3D#000000 
+                  size=3D2><B>Zip Code </B></FONT><FONT 
+                  face=3D"Arial, Helvetica, sans-serif" color=3D#ff0000 
+                  size=3D2>*</FONT></TD>
+                <TD><INPUT name=3DBUS_PHONE></TD></TR>
+              <TR>
+                <TD align=3Dright width=3D"50%"><FONT 
+                  face=3D"Arial, Helvetica, sans-serif" color=3D#000000 
+                  size=3D2><B>Buiness Phone</B></FONT><FONT 
+                  face=3D"Arial, Helvetica, sans-serif" color=3D#ff0000 
+                  size=3D2>*</FONT></TD></FONT>
+                <TD><INPUT name=3DHOME_PHONE></TD></TR>
+              <TR>
+                <TD align=3Dright width=3D"50%"><FONT 
+                  face=3D"Arial, Helvetica, sans-serif" color=3D#000000 
+                  size=3D2><B>Home Phone </B></FONT></TD>
+                <TD><INPUT name=3DEMAIL></TD></TR>
+              <TR>
+                <TD align=3Dright width=3D"50%"><FONT face=3DArial color=3D=
+#000000 
+                  size=3D2><B>Best time to contact</FONT></B></TD>
+                <TD width=3D"56%"><FONT color=3D#000000><SELECT size=3D1 n=
+ame=3DBest 
+                  contact to time> <OPTION selected></OPTION> <OPTION 
+                    value=3DMorning>Morning</OPTION> <OPTION 
+                    value=3DAfternoon>Afternoon</OPTION> <OPTION 
+                    value=3DEvening>Evening</OPTION></SELECT></FONT></TD><=
+/TR></B>
+              <TR>
+                <TD align=3Dright width=3D"50%"><FONT 
+                  face=3D"Arial, Helvetica, sans-serif" color=3D#000000 
+                  size=3D2><B>Total Loan Request </B></FONT></TD>
+                <TD><INPUT name=3DEMAIL></TD></TR>
+              <TR>
+                <TD align=3Dright width=3D"50%"><FONT 
+                  face=3D"Arial, Helvetica, sans-serif" color=3D#000000 
+                  size=3D2><B>Approx. Home Value </B></FONT></TD>
+                <TD><INPUT name=3DEMAIL></TD></TR></TBODY></TABLE>
+            <P><INPUT type=3Dsubmit value=3D"Submit Information" name=3Dsu=
+bmit> 
+            </FORM></P></TD></TR></TBODY></TABLE><BR>
+      <P>
+      <TABLE width=3D350 border=3D0>
+        <TBODY>
+        <TR>
+          <TD align=3Dmiddle><FONT color=3D#000000 size=3D4>
+            <MARQUEE>A consultant will contact you soon. 
+        </FONT></FONT></TD></TR></TBODY></MARQUEE></TABLE>
+      <TABLE width=3D350>
+        <TBODY>
+        <TR>
+          <TD align=3Dmiddle><FONT color=3D#000000 size=3D1><B>All informa=
+tion given 
+            herein is strictly confidential and will not be re-distributed=
+ for 
+            any reason other than for the specific use 
+            intended.</FONT></B><BR><FONT face=3DArial color=3D#000000 siz=
+e=3D1>To be 
+            removed from our distribution lists, please <A 
+            href=3D"mailto:d_lete106@lycos.co.uk?subject=3DRemove_Mortgage=
+">Click 
+            here.<FONT color=3D#666600></A></FONT>.</FONT></TD></TR></TBOD=
+Y></TABLE></P>
+      <CENTER></CENTER></FONT></FONT></TR></TBODY></TABLE></CENTER></FONT>=
+</BODY></HTML>
+
+
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

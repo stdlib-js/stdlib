@@ -1,0 +1,55 @@
+From fork-admin@xent.com  Sat Sep 21 10:43:21 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 2F3E116F03
+	for <jm@localhost>; Sat, 21 Sep 2002 10:43:21 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 21 Sep 2002 10:43:21 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8L68oC11240 for <jm@jmason.org>;
+    Sat, 21 Sep 2002 07:08:51 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 7AA5329418A; Fri, 20 Sep 2002 23:05:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from crank.slack.net (slack.net [166.84.151.181]) by xent.com
+    (Postfix) with ESMTP id 53CF229409C for <fork@xent.com>; Fri,
+    20 Sep 2002 23:04:35 -0700 (PDT)
+Received: by crank.slack.net (Postfix, from userid 596) id 6FCD43ECD9;
+    Sat, 21 Sep 2002 02:12:25 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1]) by crank.slack.net
+    (Postfix) with ESMTP id 6E35C3EC10; Sat, 21 Sep 2002 02:12:25 -0400 (EDT)
+From: Tom <tomwhore@slack.net>
+To: "Mr. FoRK" <fork_list@hotmail.com>
+Cc: fork@spamassassin.taint.org
+Subject: SunMSapple meta4 of the day
+In-Reply-To: <DAV27m1u2mQPoHEpxSf000010f9@hotmail.com>
+Message-Id: <Pine.BSO.4.44.0209210205540.1828-100000@crank.slack.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sat, 21 Sep 2002 02:12:25 -0400 (EDT)
+
+
+Im feeling a bit farklempt having spent the night at Todais with the
+family so talk amongst yourself..here Ill give you a topic
+
+The current state of IT can be thought of in terms of the Cold war with
+the US and the UUSR being MS and Sun/IBM/OSS (does it matter which side
+is which?), Apple as Cuba and the US legal system as the UN.
+
+Discuss.
+
+

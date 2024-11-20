@@ -1,0 +1,80 @@
+
+{{alias}}( oldPath, newPath, clbk )
+    Asynchronously renames a file.
+
+    The old path can specify a directory. In this case, the new path must either
+    not exist, or it must specify an empty directory.
+
+    The old pathname should not name an ancestor directory of the new pathname.
+
+    If the old path points to the pathname of a file that is not a directory,
+    the new path should not point to the pathname of a directory.
+
+    Write access permission is required for both the directory containing the
+    old path and the directory containing the new path.
+
+    If the link named by the new path exists, the new path is removed and the
+    old path is renamed to the new path. The link named by the new path will
+    remain visible to other threads throughout the renaming operation and refer
+    to either the file referred to by the new path or to the file referred to by
+    the old path before the operation began.
+
+    If the old path and the new path resolve to either the same existing
+    directory entry or to different directory entries for the same existing
+    file, no action is taken, and no error is returned.
+
+    If the old path points to a pathname of a symbolic link, the symbolic link
+    is renamed. If the new path points to a pathname of a symbolic link, the
+    symbolic link is removed.
+
+    If a link named by the new path exists and the file's link count becomes 0
+    when it is removed and no process has the file open, the space occupied by
+    the file is freed and the file is no longer accessible. If one or more
+    processes have the file open when the last link is removed, the link is
+    removed before the function returns, but the removal of file contents is
+    postponed until all references to the file are closed.
+
+    Parameters
+    ----------
+    oldPath: string|Buffer
+        Old path.
+
+    newPath: string|Buffer
+        New path.
+
+    clbk: Function
+        Callback to invoke upon renaming a file.
+
+    Examples
+    --------
+    > function done( error ) {
+    ...     if ( error ) {
+    ...         console.error( error.message );
+    ...     }
+    ... };
+    > {{alias}}( './beep/boop.txt', './beep/foo.txt', done );
+
+
+{{alias}}.sync( oldPath, newPath )
+    Synchronously renames a file.
+
+    Parameters
+    ----------
+    oldPath: string|Buffer
+        Old path.
+
+    newPath: string|Buffer
+        New path.
+
+    Returns
+    -------
+    err: Error|null
+        Error object or null.
+
+    Examples
+    --------
+    > var err = {{alias}}.sync( './beep/boop.txt', './beep/foo.txt' );
+
+    See Also
+    --------
+

@@ -1,0 +1,74 @@
+From rpm-list-admin@freshrpms.net  Tue Sep 10 18:14:45 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id D63F816F03
+	for <jm@localhost>; Tue, 10 Sep 2002 18:14:43 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 10 Sep 2002 18:14:43 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8AGhKC07686 for
+    <jm-rpm@jmason.org>; Tue, 10 Sep 2002 17:43:20 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g8AGe4K18740; Tue, 10 Sep 2002 18:40:05
+    +0200
+Received: from python (gw01.es3.egwn.net [212.9.66.13]) (authenticated) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g8AGdTK16936 for
+    <rpm-list@freshrpms.net>; Tue, 10 Sep 2002 18:39:30 +0200
+From: Matthias Saou <matthias@egwn.net>
+To: RPM-List <rpm-zzzlist@freshrpms.net>
+Subject: Holidays for freshrpms.net :-)
+Message-Id: <20020910183907.2310f32c.matthias@egwn.net>
+Organization: Electronic Group Interactive
+X-Mailer: Sylpheed version 0.8.2claws (GTK+ 1.2.10; i386-redhat-linux)
+Reply-BY: Tue, 24 Jul 2000 19:02:00 +1000
+X-Operating-System: GNU/Linux power!
+X-Message-Flag: Try using a real operating system : GNU/Linux power!
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Tue, 10 Sep 2002 18:39:07 +0200
+Date: Tue, 10 Sep 2002 18:39:07 +0200
+
+Hi all,
+
+I'll be leaving this evening until next Monday, with no access to
+whatsoever to a single computer until then, woohoo, real holidays! :-)
+
+So don't be worried if there's a new release of <insert your favorite
+freshrpms package here> and that it's not updated quickly despite your many
+requests to the list ;-)
+
+Before going, I did repackage the latest hackedbox and lbreakout2 that both
+came out today.
+
+Have fun! (I will!! ;-))
+Matthias
+
+-- 
+Matthias Saou                                World Trade Center
+-------------                                Edificio Norte 4 Planta
+System and Network Engineer                  08039 Barcelona, Spain
+Electronic Group Interactive                 Phone : +34 936 00 23 23
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

@@ -1,0 +1,90 @@
+From fork-admin@xent.com  Fri Sep  6 11:42:43 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 3E1CA16F6E
+	for <jm@localhost>; Fri,  6 Sep 2002 11:40:00 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 11:40:00 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g86A2wC30579 for <jm@jmason.org>;
+    Fri, 6 Sep 2002 11:02:58 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 47990294295; Fri,  6 Sep 2002 03:00:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from isolnetsux.techmonkeys.net (isolnetsux.techmonkeys.net
+    [64.243.46.20]) by xent.com (Postfix) with SMTP id 95CCF294294 for
+    <fork@xent.com>; Fri,  6 Sep 2002 02:59:19 -0700 (PDT)
+Received: (qmail 30958 invoked by uid 501); 6 Sep 2002 10:01:51 -0000
+Received: from localhost (sendmail-bs@127.0.0.1) by localhost with SMTP;
+    6 Sep 2002 10:01:51 -0000
+From: CDale <cdale@techmonkeys.net>
+To: Eugen Leitl <eugen@leitl.org>
+Cc: bitbitch@magnesium.net, "Adam L. Beberg" <beberg@mithral.com>,
+	<fork@xent.com>
+Subject: Re[2]: Selling Wedded Bliss (was Re: Ouch...)
+In-Reply-To: <Pine.LNX.4.33.0209061122540.30472-100000@hydrogen.leitl.org>
+Message-Id: <Pine.LNX.4.44.0209060454450.13901-100000@isolnetsux.techmonkeys.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 6 Sep 2002 05:01:51 -0500 (CDT)
+
+On Fri, 6 Sep 2002, Eugen Leitl wrote:
+
+> On Thu, 5 Sep 2002 bitbitch@magnesium.net wrote:
+> 
+> > If guys still have silly antequated ideas about 'women's role' then
+> > their opportunities for finding women _will_ be scarce.  
+> 
+> What is silly and antiquated depends a lot on which country you live in.
+
+It also depends on what the fad is or what is in style.  (:
+
+> I don't have statistics on the love half life, but it seems long-term 
+> relationships use something else for glue.
+> 
+> Clearly our non-silly non-antiquated ideas about relationships have
+> resulted in mostly short-duration relationships and single-parented,
+> dysfunctional kids (not enough of them too boot, so to keep our
+> demographics from completely keeling over we're importing them from places
+> with mostly silly and antiquated ideas).
+
+Actualy our silly antiquated ideas about relationships and love have 
+resulted in the bleedings of many upon many a page (and musical  instrumnet, 
+and canvas)  What's the problem if we dash a little Mrs. Dash on them?  (:  
+Or cayenne.  Or ginger. (mm ask me about ginger root play).  
+
+And let me tell you this: just because a child happens to be 
+single-parented (what a word), does not mean that child is dysfunctional 
+or lives in a dysfunctional home.  The govt/media/church has tried to make 
+it look like there is a disintegration, when in fact, there is a coming 
+together of other family members and friends to raise children.  It's not 
+decaying -- it's changing.  Nothing wrong with change.
+
+
+> At least from the viewpoint of demographics sustainability and
+> counterpressure to gerontocracy and resulting innovatiophobia we're doing
+> something wrong.
+> 
+> Maybe we should really go dirty Tleilaxu all the way.
+> 
+
+Maybe y'all should buy m-w some more bandwidth.
+C
+-- 
+"I don't take no stocks in mathematics, anyway" --Huckleberry Finn
+
+

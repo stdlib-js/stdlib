@@ -1,0 +1,69 @@
+{
+  "name": "@stdlib/datasets/img-nagasaki-boats",
+  "version": "0.0.0",
+  "description": "Image of boats in a river in Nagasaki.",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "bin": {
+    "img-nagasaki-boats": "./bin/cli"
+  },
+  "main": "./lib",
+  "browser": "./lib/browser.js",
+  "directories": {
+    "benchmark": "./benchmark",
+    "data": "./data",
+    "doc": "./docs",
+    "example": "./examples",
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "scripts": {},
+  "homepage": "https://github.com/stdlib-js/stdlib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stdlib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
+  "keywords": [
+    "stdlib",
+    "datasets",
+    "dataset",
+    "data",
+    "image",
+    "img",
+    "boat",
+    "village",
+    "river",
+    "nagasaki",
+    "japan"
+  ]
+}

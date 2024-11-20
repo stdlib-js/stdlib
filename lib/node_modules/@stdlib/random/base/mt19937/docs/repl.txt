@@ -1,0 +1,182 @@
+
+{{alias}}()
+    Returns a pseudorandom integer on the interval `[0, 4294967295]`.
+
+    This pseudorandom number generator (PRNG) is a 32-bit Mersenne Twister
+    pseudorandom number generator.
+
+    The PRNG is *not* a cryptographically secure PRNG.
+
+    The PRNG has a period of 2^19937 - 1.
+
+    Returns
+    -------
+    r: integer
+        Pseudorandom number.
+
+    Examples
+    --------
+    > var r = {{alias}}();
+
+
+{{alias}}.normalized()
+    Returns a pseudorandom number on the interval `[0,1)` with 53-bit precision.
+
+    Returns
+    -------
+    r: number
+        Pseudorandom number.
+
+    Examples
+    --------
+    > var r = {{alias}}.normalized();
+
+
+{{alias}}.factory( [options] )
+    Returns a 32-bit Mersenne Twister pseudorandom number generator.
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Options.
+
+    options.seed: integer|ArrayLikeObject<integer> (optional)
+        Pseudorandom number generator seed. The seed may be either a positive
+        unsigned 32-bit integer or, for arbitrary length seeds, an array-like
+        object containing unsigned 32-bit integers.
+
+    options.state: Uint32Array (optional)
+        Pseudorandom number generator state. If provided, the `seed` option is
+        ignored.
+
+    options.copy: boolean (optional)
+        Boolean indicating whether to copy a provided pseudorandom number
+        generator state. Setting this option to `false` allows sharing state
+        between two or more pseudorandom number generators. Setting this option
+        to `true` ensures that a returned generator has exclusive control over
+        its internal state. Default: true.
+
+    Returns
+    -------
+    rand: Function
+        Pseudorandom number generator (PRNG).
+
+    Examples
+    --------
+    // Basic usage:
+    > var rand = {{alias}}.factory();
+    > r = rand();
+    > r = rand();
+
+    // Provide a seed:
+    > rand = {{alias}}.factory( { 'seed': 1234 } );
+    > r = rand()
+    822569775
+
+
+{{alias}}.NAME
+    Generator name.
+
+    Examples
+    --------
+    > var str = {{alias}}.NAME
+    'mt19937'
+
+
+{{alias}}.MIN
+    Minimum possible value.
+
+    Examples
+    --------
+    > var v = {{alias}}.MIN
+    0
+
+
+{{alias}}.MAX
+    Maximum possible value.
+
+    Examples
+    --------
+    > var v = {{alias}}.MAX
+    4294967295
+
+
+{{alias}}.seed
+    Pseudorandom number generator seed.
+
+    Examples
+    --------
+    > var seed = {{alias}}.seed;
+
+
+{{alias}}.seedLength
+    Length of generator seed.
+
+    Examples
+    --------
+    > var len = {{alias}}.seedLength;
+
+
+{{alias}}.state
+    Generator state.
+
+    Examples
+    --------
+    > var r = {{alias}}()
+    <number>
+    > r = {{alias}}()
+    <number>
+    > r = {{alias}}()
+    <number>
+
+    // Get a copy of the current state:
+    > var state = {{alias}}.state
+    <Uint32Array>
+
+    > r = {{alias}}()
+    <number>
+    > r = {{alias}}()
+    <number>
+
+    // Set the state:
+    > {{alias}}.state = state;
+
+    // Replay the last two pseudorandom numbers:
+    > r = {{alias}}()
+    <number>
+    > r = {{alias}}()
+    <number>
+
+
+{{alias}}.stateLength
+    Length of generator state.
+
+    Examples
+    --------
+    > var len = {{alias}}.stateLength;
+
+
+{{alias}}.byteLength
+    Size (in bytes) of generator state.
+
+    Examples
+    --------
+    > var sz = {{alias}}.byteLength;
+
+
+{{alias}}.toJSON()
+    Serializes the pseudorandom number generator as a JSON object.
+
+    Returns
+    -------
+    out: Object
+        JSON representation.
+
+    Examples
+    --------
+    > var o = {{alias}}.toJSON()
+    { 'type': 'PRNG', 'name': '...', 'state': {...}, 'params': [] }
+
+    See Also
+    --------
+

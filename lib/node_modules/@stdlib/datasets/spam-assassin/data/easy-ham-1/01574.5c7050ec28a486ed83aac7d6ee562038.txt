@@ -1,0 +1,73 @@
+From razor-users-admin@lists.sourceforge.net  Fri Sep  6 11:38:50 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id F02D316F6C
+	for <jm@localhost>; Fri,  6 Sep 2002 11:37:31 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 11:37:31 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g869pxC29081 for
+    <jm-razor@jmason.org>; Fri, 6 Sep 2002 10:51:59 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id AAA19281 for
+    <jm-razor@jmason.org>; Fri, 6 Sep 2002 00:37:58 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17n66Y-00063u-00; Thu,
+    05 Sep 2002 16:32:06 -0700
+Received: from [208.48.139.185] (helo=forty.greenhydrant.com) by
+    usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17n662-000214-00 for <razor-users@lists.sourceforge.net>; Thu,
+    05 Sep 2002 16:31:34 -0700
+Received: (qmail 3337 invoked by uid 501); 5 Sep 2002 23:31:28 -0000
+From: David Rees <dbr@greenhydrant.com>
+To: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] Problem with Razor 2.14 and Spamassassin 2.41
+Message-Id: <20020905163128.A3322@greenhydrant.com>
+Mail-Followup-To: David Rees <dbr@greenhydrant.com>,
+	razor-users@lists.sourceforge.net
+References: <20020905160808.B2932@greenhydrant.com>
+    <Pine.LNX.4.44.0209051816270.22445-100000@burgers.bubbanfriends.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <Pine.LNX.4.44.0209051816270.22445-100000@burgers.bubbanfriends.org>;
+    from mburger@bubbanfriends.org on Thu, Sep 05, 2002 at 06:16:57PM -0500
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Thu, 5 Sep 2002 16:31:28 -0700
+Date: Thu, 5 Sep 2002 16:31:28 -0700
+
+On Thu, Sep 05, 2002 at 06:16:57PM -0500, Mike Burger wrote:
+> You might be better asking this on the spamassassin-talk list.  The folks 
+> there will almost definitely have an answer for this.
+
+Thanks, I just posted a similar message there.
+
+-Dave
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

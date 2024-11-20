@@ -1,0 +1,503 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2017 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Build script to run continuous integration on [Circle CI][1].
+#
+# [1]: https://circleci.com
+
+# shellcheck disable=SC2181,SC2034,SC1091
+
+
+# DEPENDENCIES #
+
+# Source nvm to ensure that the `nvm` command is available:
+. /opt/circleci/.nvm/nvm.sh
+
+
+# VARIABLES #
+
+# Define a username:
+username="${CIRCLE_USERNAME}"
+
+# Get the total number of VMs (parallelism):
+total_nodes="${CIRCLE_NODE_TOTAL}"
+
+# Get the VM index:
+index="${CIRCLE_NODE_INDEX}"
+
+# Define an output directory to store unit test results:
+tests_log_dir="${CIRCLE_TEST_REPORTS}/junit"
+
+# Define an output file to store log output:
+log_file='/var/log/circle-ci.log'
+
+# Determine the root project directory:
+root_dir=$(dirname "$0")/../../..
+root_dir=$(cd "${root_dir}" && echo "$PWD")
+
+# Define the project source code directory:
+base_dir="${root_dir}/lib/node_modules"
+
+# Define the pattern for test filenames:
+tests_pattern='test*.js'
+
+# Define the pattern for filtering tests based on their file path:
+tests_filter='.*/.*'
+
+# Define the folder name for tests:
+tests_folder='test'
+
+# Define the folder name for test fixtures:
+tests_fixtures_folder="${tests_folder}/fixtures"
+
+# Define the directory path of top-level node module dependencies:
+node_modules="${root_dir}/node_modules"
+
+# Define the directory path for build artifacts:
+build_dir="${root_dir}/build"
+
+# Define the directory path for distributable files:
+dist_dir="${root_dir}/dist"
+
+# Define the directory path for external library dependencies:
+deps_dir="${root_dir}/deps"
+
+# Define the directory path for documentation:
+docs_dir="${root_dir}/docs"
+
+# Define the directory path for reports:
+reports_dir="${root_dir}/reports"
+
+# Define the directory for top-level tools:
+tools_dir="${root_dir}/tools"
+
+# Define the directory for project tools which are Node.js packages:
+tools_pkgs_dir="${base_dir}/@stdlib/_tools"
+
+# Define a heartbeat interval to periodically print messages in order to prevent Circle CI from prematurely ending a build due to long running commands:
+heartbeat_interval='30s'
+
+# Declare a variable for storing the heartbeat process id:
+heartbeat_pid=""
+
+
+# FUNCTIONS #
+
+# Defines an error handler.
+#
+# $1 - error status
+on_error() {
+	echo 'ERROR: An error was encountered during execution.' >&2
+	cleanup
+	exit "$1"
+}
+
+# Runs clean-up tasks.
+cleanup() {
+	stop_heartbeat
+}
+
+# Starts a heartbeat.
+#
+# $1 - heartbeat interval
+start_heartbeat() {
+	echo 'Starting heartbeat...' >&2
+
+	# Create a heartbeat and send to background:
+	heartbeat "$1" &
+
+	# Capture the heartbeat pid:
+	heartbeat_pid=$!
+	echo "Heartbeat pid: ${heartbeat_pid}" >&2
+}
+
+# Runs an infinite print loop.
+#
+# $1 - heartbeat interval
+heartbeat() {
+	while true; do
+		echo "$(date) - heartbeat..." >&2;
+		sleep "$1";
+	done
+}
+
+# Stops the heartbeat print loop.
+stop_heartbeat() {
+	echo 'Stopping heartbeat...' >&2
+	kill "${heartbeat_pid}"
+}
+
+# Creates a directory.
+#
+# $1 - directory path
+create_dir() {
+	mkdir -p "$1"
+}
+
+# Creates an output log file.
+#
+# $1 - log file path
+create_log_file() {
+	local owner
+	owner=$(whoami)
+	echo "Creating an output log file: $1." >&2
+	sudo touch "$1"
+	sudo chown "${owner}:${owner}" "$1"
+}
+
+# Prints a success message.
+print_success() {
+	echo 'Success!' >&2
+}
+
+# Sets the Node.js version.
+#
+# $1 - version
+node_version() {
+	echo "Switching to Node.js version: $1..." >&2
+	nvm use "$1"
+	if [[ "$?" -ne 0 ]]; then
+		echo "Unable to set Node.js version to $1." >&2
+		return 1
+	fi
+	echo "Node.js version set to $1." >&2
+	return 0
+}
+
+# Remove node modules.
+#
+# $1 - log file
+clean_node() {
+	echo 'Removing node module dependencies...' >&2
+	make clean-node >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Error when attempting to remove dependencies.' >&2
+		return 1
+	fi
+	echo 'Dependencies successfully removed.' >&2
+	return 0
+}
+
+# Retries a command a maximum number of times.
+#
+# $1 - number of retries
+# $2 - command to retry
+retry() {
+	local code
+	for i in $(seq 1 "$1"); do
+		# By way of operator precedence, the clause after `||` only gets executed if one of the prior commands fails...
+		"$2" && code=0 && break || code="$?" && sleep 15;
+	done
+	return "${code}"
+}
+
+# Performs install tasks.
+#
+# $1 - log file
+install() {
+	echo 'Installing...' >&2
+	make FC=gfortran FORTRAN_COMPILER=gfortran install >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Error occurred during install.' >&2
+		echo 'Retry 1 of 2...' >&2
+		sleep 15s
+		echo 'Installing...' >&2
+		make FC=gfortran FORTRAN_COMPILER=gfortran install >> "$1" 2>&1
+		if [[ "$?" -ne 0 ]]; then
+			echo 'Error occurred during install.' >&2
+			echo 'Retry 2 of 2...' >&2
+			sleep 30s
+			echo 'Installing...' >&2
+			make FC=gfortran FORTRAN_COMPILER=gfortran install >> "$1" 2>&1
+			if [[ "$?" -ne 0 ]]; then
+				echo 'Error occurred during install.' >&2
+				echo 'Failed to install 3 times. Aborting install.' >&2
+				return 1
+			fi
+		fi
+	fi
+	echo 'Install successful.' >&2
+	return 0
+}
+
+# Performs development environment initialization tasks.
+#
+# $1 - log file
+dev_init() {
+	echo 'Initializing development environment...' >&2
+	make init >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Error occurred during initialization.' >&2
+		return 1
+	fi
+	echo 'Initialization successful.' >&2
+	return 0
+}
+
+# Initializes the environment.
+#
+# $1 - Node.js version
+# $2 - log file
+init() {
+	node_version "$1"
+	if [[ "$?" -ne 0 ]]; then
+		return 1
+	fi
+	clean_node "$2"
+	if [[ "$?" -ne 0 ]]; then
+		return 1
+	fi
+	install "$2"
+	if [[ "$?" -ne 0 ]]; then
+		return 1
+	fi
+	dev_init "$2"
+	if [[ "$?" -ne 0 ]]; then
+		return 1
+	fi
+	return 0
+}
+
+# Checks dependencies.
+#
+# $1 - log file
+check_deps() {
+	echo 'Checking dependencies...' >&2
+	make check-deps >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Dependencies are out-of-date.' >&2
+		return 1
+	fi
+	echo 'Dependencies are up-to-date.' >&2
+	return 0
+}
+
+# Checks licenses.
+#
+# $1 - log file
+check_licenses() {
+	echo 'Checking licenses...' >&2
+	make check-licenses-production >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Detected dependency licensing issues.' >&2
+		return 1
+	fi
+	echo 'No dependency licensing issues detected.' >&2
+	return 0
+}
+
+# Performs lint tasks.
+#
+# $1 - log file
+lint() {
+	echo 'Linting filenames...' >&2
+	make lint-filenames >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Linting filenames failed.' >&2
+		return 1
+	fi
+	make lint-header-filenames >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Linting filenames failed.' >&2
+		return 1
+	fi
+	echo 'Linting package.json files...' >&2
+	make lint-pkg-json >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Linting package.json failed.' >&2
+		return 1
+	fi
+	# FIXME: linting of Markdown files takes too long; need to speed-up via distributed tasks or only linting files which changed
+	# echo 'Linting Markdown files...' >&2
+	# make lint-markdown >> "$1" 2>&1
+	# if [[ "$?" -ne 0 ]]; then
+	# 	echo 'Linting Markdown failed.' >&2
+	# 	return 1
+	# fi
+	echo 'Linting passed.' >&2
+	return 0
+}
+
+# Tests the ability to install the project via npm.
+#
+# $1 - log file
+test_npm_install() {
+	echo 'Testing npm install...' >&2
+	make test-npm-install >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'npm install failed.' >&2
+		return 1
+	fi
+	echo 'Successfully performed npm install.' >&2
+
+	echo 'Testing npm install (via GitHub)...' >&2
+	make test-npm-install-github >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'npm install (via GitHub) failed.' >&2
+		return 1
+	fi
+	echo 'Successfully performed npm install (via GitHub).' >&2
+
+	return 0
+}
+
+# Finds test files.
+find_tests() {
+	local kernel
+	local tests
+
+	kernel=$(uname -s)
+
+	# On Mac OSX, in order to use `|` and other regular expression operators, we need to use enhanced regular expression syntax (-E); see https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man7/re_format.7.html#//apple_ref/doc/man/7/re_format.
+	if [[ "${kernel}" = "Darwin" ]]; then
+		tests=$(find -E "${root_dir}" -name "${tests_pattern}" -regex "${tests_filter}" '!' -path "${root_dir}/.*" '!' -path "${node_modules}/*" '!' -path "${tools_dir}/*" '!' -path "${tools_pkgs_dir}/*" '!' -path "${deps_dir}/*" '!' -path "${docs_dir}/*" '!' -path "${build_dir}/*" '!' -path "${dist_dir}/*" '!' -path "${reports_dir}/*" '!' -path "${root_dir}/**/{tests_fixtures_folder}/*")
+	else
+		tests=$(find "${root_dir}" -regextype posix-extended -name "${tests_pattern}" -regex "${tests_filter}" '!' -path "${root_dir}/.*" '!' -path "${node_modules}/*" '!' -path "${tools_dir}/*" '!' -path "${tools_pkgs_dir}/*" '!' -path "${deps_dir}/*" '!' -path "${docs_dir}/*" '!' -path "${build_dir}/*" '!' -path "${dist_dir}/*" '!' -path "${reports_dir}/*" '!' -path "${root_dir}/**/{tests_fixtures_folder}/*")
+	fi
+	echo "${tests}"
+}
+
+# Allocates tests based on the node (VM) index.
+#
+# $1 - total number of nodes
+# $2 - node index
+allocate_tests() {
+	local tests
+
+	# Keep those tests (rows) where the VM index equals the modulo:
+	tests=$(find_tests | sort | awk -v "n=$1" -v "i=$2" '{if (NR % n == i) printf "%s ", $0} END {print ""}')
+	echo "${tests}"
+}
+
+# Runs unit tests.
+#
+# $1 - tests
+# $2 - log directory
+run_tests() {
+	local log_file
+	local path
+	local slug
+
+	echo 'Running tests...' >&2
+
+	# shellcheck disable=SC2116
+	for test in $(echo "$1"); do
+		echo "Running test: ${test}" >&2
+
+		# Remove the base source code directory path from the test path (using POSIX shell variable expansion):
+		path="${test#${base_dir}/}"
+
+		# Slugify the path (basic algorithm):
+		slug=$(echo "${path}" | sed -e 's/[^[:alnum:]]/_/g' | tr -s '-' | tr '[:upper:]' '[:lower:]')
+
+		# Define the output log file path:
+		log_file="$2/test-results.${slug}.xml"
+
+		# Create the log file:
+		create_log_file "${log_file}"
+		if [[ "$?" -ne 0 ]]; then
+			echo "Unable to create log file: ${log_file}." >&2
+			return 1
+		fi
+		# Run the tests, writing the results to the created log file:
+		make FILES="${test}" test-files-xunit >> "${log_file}" 2>&1
+		if [[ "$?" -ne 0 ]]; then
+			echo 'Tests failed.' >&2
+			return 1
+		fi
+		echo 'Tests passed.' >&2
+	done
+	echo 'All tests passed.' >&2
+	return 0
+}
+
+# Main execution sequence.
+main() {
+	local TASKS
+	local tests
+	local task
+	local len
+	local i
+
+	TASKS=(check_deps check_licenses lint test_npm_install)
+	len="${#TASKS[@]}"
+
+	create_log_file "${log_file}"
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+	create_dir "${tests_log_dir}"
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+
+	# Start the heartbeat:
+	start_heartbeat "${heartbeat_interval}"
+
+	# Initialize the environment:
+	init stable "${log_file}"
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+
+	echo 'Assigning initial tasks...' >&2
+	i="${index}"
+	while [[ "${i}" -lt "${len}" ]]; do
+		task="${TASKS[${i}]}"
+		echo "Task: ${task}." >&2
+		if [[ "${task}" = "check_deps" ]]; then
+			check_deps "${log_file}"
+			if [[ "$?" -ne 0 ]]; then
+				on_error 1
+			fi
+		elif [[ "${task}" = "check_licenses" ]]; then
+			check_licenses "${log_file}"
+			if [[ "$?" -ne 0 ]]; then
+				on_error 1
+			fi
+		elif [[ "${task}" = "lint" ]]; then
+			lint "${log_file}"
+			if [[ "$?" -ne 0 ]]; then
+				on_error 1
+			fi
+		elif [[ "${task}" = "test_npm_install" ]]; then
+			test_npm_install "${log_file}"
+			if [[ "$?" -ne 0 ]]; then
+				on_error 1
+			fi
+		fi
+		# shellcheck disable=SC2003
+		i=$(expr "${i}" + "${len}")
+	done
+
+	echo 'Allocating tests...' >&2
+	tests=$(allocate_tests "${total_nodes}" "${index}")
+	echo "${tests}" >&2
+
+	run_tests "${tests}" "${tests_log_dir}"
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+
+	print_success
+	cleanup
+	exit 0
+}
+
+# Run main:
+main

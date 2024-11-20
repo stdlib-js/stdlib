@@ -1,0 +1,129 @@
+From fork-admin@xent.com  Fri Aug 23 11:08:31 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BE9C147C69
+	for <jm@localhost>; Fri, 23 Aug 2002 06:06:48 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 23 Aug 2002 11:06:48 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7MK4SZ22618 for <jm@jmason.org>;
+    Thu, 22 Aug 2002 21:04:29 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id E6AD62940D8; Thu, 22 Aug 2002 13:02:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mail.evergo.net (unknown [206.191.151.2]) by xent.com
+    (Postfix) with SMTP id 790A7294099 for <fork@xent.com>; Thu,
+    22 Aug 2002 13:01:08 -0700 (PDT)
+Received: (qmail 21546 invoked from network); 22 Aug 2002 20:02:51 -0000
+Received: from dsl.206.191.151.102.evergo.net (HELO JMHALL)
+    (206.191.151.102) by mail.evergo.net with SMTP; 22 Aug 2002 20:02:51 -0000
+Reply-To: <johnhall@evergo.net>
+From: "John Hall" <johnhall@evergo.net>
+To: <fork@spamassassin.taint.org>
+Subject: Property rights in the 3rd World (De Soto's Mystery of Capital)
+Message-Id: <008701c24a16$e3443830$0200a8c0@JMHALL>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.2627
+In-Reply-To: <200208221811.LAA21283@maltesecat>
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Importance: Normal
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 22 Aug 2002 13:02:45 -0700
+
+
+
+> From: fork-admin@xent.com [mailto:fork-admin@xent.com] On Behalf Of
+Dave
+> Long
+> Sent: Thursday, August 22, 2002 11:12 AM
+> To: fork@spamassassin.taint.org
+> Subject: RE: The Curse of India's Socialism
+> 
+> 
+> 
+> When I'd read that "getting legal title
+> can take 20 years", when I believe that
+> 1 year ought to be more than sufficient,
+> (and helped by the Cairo reference) I'd
+> assumed that we were talking about the
+> urban poor.
+> 
+> If I see people living in mansions, or
+> even in suburban subdivisions, I assume
+> they didn't have too much trouble with
+> their titles.
+
+Pg 177:
+In another country, a local newspaper, intrigued by our evidence of
+extralegal real estate holdings, checked to see if the head of state's
+official residence had a recorded title.  It did not.
+
+Pg 92:
+The value of land in the formal sector of Lima averages US$50 per square
+meter, whereas in the area of Gamarra, where a great deal of Peru's
+informal manufacturing sector resides, the value per square meter can go
+as high as US$3,000.
+
+==========
+
+I'd have made the same assumption you did.  De Soto says that isn't
+correct.  You can find mansions that don't have title.  A lot of them,
+in fact.  But they can't be used for collateral for a loan, or otherwise
+participate as 'capital' because of their extra-legal status.
+
+ 
+> > Mr. Long, I think you'd particularly enjoy the De Soto work.
+> 
+> On the "to find" list.  Any chance of
+> an explanation of that "Bell Jar" in
+> the meantime?
+
+French historian Fernand Braudel (so Braudel's Bell Jar, not De Soto's)
+
+==>
+
+The key problem is to find out why that sector of society of the past,
+which I would not hesitate to call capitalist, should have lived as if
+in a bell jar, cut off from the rest; why was it not able to expand and
+conquer the whole of society? ... [Why was it that] a significant rate
+of capital formation was possible only in certain sectors and not in the
+whole market economy of the time? ... It would perhaps be teasingly
+paradoxial to say that whatever was in short supply, money certainly was
+not ... so this was an age where poor land was bought up and magnificent
+country residents built ... [How do we] resolve the contradiction ...
+between the depressed economic climate and the splendors of Florence
+under Lorenzo the Magnificent?
+ 
+
+--------------
+
+De Soto's theory is that the Bell Jar is formed when you segregate those
+who have *practical* access to legal property rights and those who do
+not.  The poor[1] have property -- lots and lots of property.  What they
+don't have is access to the systems where we turn property into capital
+and allow it to start growing.  Their property can only be exchanged
+with a small section of people who know them personally.
+
+[1] Actual poor people, not 'poor' Americans with a living standard that
+is the envy of most of the world.
+
+
+http://xent.com/mailman/listinfo/fork
+

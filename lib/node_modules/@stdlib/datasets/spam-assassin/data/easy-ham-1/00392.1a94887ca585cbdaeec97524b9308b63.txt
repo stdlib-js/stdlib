@@ -1,0 +1,86 @@
+From exmh-users-admin@redhat.com  Mon Aug 26 15:24:35 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 325104415B
+	for <jm@localhost>; Mon, 26 Aug 2002 10:22:40 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 15:22:40 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7Q359Z07072 for
+    <jm-exmh@jmason.org>; Mon, 26 Aug 2002 04:05:10 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 0C69A3F8A7; Sun, 25 Aug 2002
+    23:03:13 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 74B213FAB7
+    for <exmh-users@listman.redhat.com>; Sun, 25 Aug 2002 22:58:34 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g7Q2wV113287 for exmh-users@listman.redhat.com; Sun, 25 Aug 2002
+    22:58:31 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g7Q2wUY13283 for
+    <exmh-users@redhat.com>; Sun, 25 Aug 2002 22:58:30 -0400
+Received: from dimebox.bmc.com (adsl-66-140-152-233.dsl.hstntx.swbell.net
+    [66.140.152.233]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id
+    g7Q2hfl13432 for <exmh-users@redhat.com>; Sun, 25 Aug 2002 22:43:41 -0400
+Received: by dimebox.bmc.com (Postfix, from userid 1205) id D73FF38DA9;
+    Sun, 25 Aug 2002 21:58:29 -0500 (CDT)
+Received: from dimebox (localhost [127.0.0.1]) by dimebox.bmc.com
+    (Postfix) with ESMTP id CD30B38DA2 for <exmh-users@redhat.com>;
+    Sun, 25 Aug 2002 21:58:29 -0500 (CDT)
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4
+In-Reply-To: <20020824133127.25B6E6F982@washington.bellatlantic.net>
+References: <20020824133127.25B6E6F982@washington.bellatlantic.net>
+Comments: In-reply-to Harlan Feinstein <harlan@feinsteins.net> message
+    dated "Sat, 24 Aug 2002 09:31:22 -0400."
+To: exmh-users@spamassassin.taint.org
+Subject: Re: defaulting to showing plaintext versions of e-mails
+MIME-Version: 1.0
+From: Hal DeVore <haldevore@acm.org>
+X-Image-Url: http://www.geocities.com/hal_devore_ii/haleye48.gif
+Content-Type: text/plain; charset=us-ascii
+Message-Id: <29947.1030330704@dimebox>
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Sun, 25 Aug 2002 21:58:24 -0500
+
+
+
+>>>>> On Sat, 24 Aug 2002, "Harlan" == Harlan Feinstein wrote:
+
+  Harlan> What's the trick again to have it default to showing
+  Harlan> text/plain instead of html?
+
+In ~/.exmh/exmh-defaults add:
+
+*mime_alternative_prefs: text/plain text/enriched text/richtext text/html
+
+Order possible alternatives from _your_ most preferred to least
+preferred.
+
+--Hal
+
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+

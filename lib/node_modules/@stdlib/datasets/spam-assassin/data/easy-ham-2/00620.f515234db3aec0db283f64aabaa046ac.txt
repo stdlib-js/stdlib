@@ -1,0 +1,82 @@
+From razor-users-admin@lists.sourceforge.net  Tue Aug 13 10:23:06 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id F2612440FC
+	for <jm@localhost>; Tue, 13 Aug 2002 05:19:29 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:19:30 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7D111b11672 for <jm-razor@jmason.org>; Tue, 13 Aug 2002 02:01:01 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17ePpu-00087R-00; Mon,
+    12 Aug 2002 17:47:02 -0700
+Received: from h-66-166-21-186.snvacaid.covad.net ([66.166.21.186]
+    helo=nexus.cloudmark.com) by usw-sf-list1.sourceforge.net with esmtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17ePow-0000x0-00 for
+    <razor-users@lists.sourceforge.net>; Mon, 12 Aug 2002 17:46:02 -0700
+Received: (from chad@localhost) by nexus.cloudmark.com (8.11.6/8.11.6) id
+    g7D0iLq01546; Mon, 12 Aug 2002 17:44:21 -0700
+X-Authentication-Warning: nexus.cloudmark.com: chad set sender to
+    chad@cloudmark.com using -f
+From: Chad Norwood <chad@cloudmark.com>
+To: Chip Paswater <turk182@chipware.net>
+Cc: razor-users@example.sourceforge.net
+Message-Id: <20020813004420.GB11270@nexus.cloudmark.com>
+References: <20020808111842.J1593@rover.vipul.net>
+    <FB680A85-AB10-11D6-BCF2-00039396ECF2@deersoft.com>
+    <20020808152638.A32536@frontier.limbo.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20020808152638.A32536@frontier.limbo.net>
+User-Agent: Mutt/1.4i
+Subject: [Razor-users] Re: keep submitting known spam?
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Mon, 12 Aug 2002 17:44:20 -0700
+Date: Mon, 12 Aug 2002 17:44:20 -0700
+
+On 08/08/02 15:26 -0700, Chip Paswater wrote:
+) > 
+) > Well, a little more than one bit -- you have to transmit the 
+) > signature, plus now the entire message body.  Plus your ID.  
+) > Plus the rights to all intellectual property contained in any 
+) > email message you submit (I guess technically there are no bits 
+) > in the rights assignment)
+) 
+) Perhaps a feature can be added to razor-report, so that it checks whether a
+) message is spam before it submits it.  If it is spam, then don't send the
+) body, 4 signatures, etc, just up the "rating" for that individual spam.
+
+  razor-report only sends the body if the server does not have
+  a copy already.  When it does, and the server just notes who also
+  thinks that mail is spam, and uses that info in TeS.  
+  
+  -chad
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Dice - The leading online job board
+for high-tech professionals. Search and apply for tech jobs today!
+http://seeker.dice.com/seeker.epl?rel_code=31
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

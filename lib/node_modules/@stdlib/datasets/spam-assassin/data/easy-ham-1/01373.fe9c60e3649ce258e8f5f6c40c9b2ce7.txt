@@ -1,0 +1,87 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug 29 11:07:46 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 115D644161
+	for <jm@localhost>; Thu, 29 Aug 2002 06:05:55 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:05:55 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7SNgEZ15659 for <jm-sa@jmason.org>; Thu, 29 Aug 2002 00:42:14 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17kCOu-0002mF-00; Wed,
+    28 Aug 2002 16:39:04 -0700
+Received: from adsl-216-103-211-240.dsl.snfc21.pacbell.net
+    ([216.103.211.240] helo=proton.pathname.com) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17kCOD-0000uN-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 28 Aug 2002 16:38:21 -0700
+Received: from quinlan by proton.pathname.com with local (Exim 3.35 #1
+    (Debian)) id 17kCOB-0008Rl-00; Wed, 28 Aug 2002 16:38:19 -0700
+To: Matthew Cline <matt@nightrealms.com>
+Cc: spamassassin-talk@example.sourceforge.net
+Subject: Re: [SAtalk] O.T. Habeus -- Why?
+References: <829DCAD0-BAC5-11D6-AD60-003065C182B0@radparker.com>
+    <1030567825.3271.TMDA@omega.paradigm-omega.net>
+    <200208281548.21264.matt@nightrealms.com>
+From: Daniel Quinlan <quinlan@pathname.com>
+In-Reply-To: Matthew Cline's message of "Wed, 28 Aug 2002 15:48:21 -0700"
+Message-Id: <yf2n0r6k104.fsf@proton.pathname.com>
+X-Mailer: Gnus v5.7/Emacs 20.7
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: 28 Aug 2002 16:38:19 -0700
+Date: 28 Aug 2002 16:38:19 -0700
+
+Matthew Cline <matt@nightrealms.com> writes:
+
+> There must be *some* way of tracking a spammer down, since they are
+> planning on making money from the spam.  What a court would consider
+> evidence of being the spammer is another question.
+
+Haha!!!
+
+Just a few notes:
+
+ - It will be difficult to find, prosecute, and win money from someone
+   in various non-friendly countries where spam originates (China is a
+   good example) even if they do officially "respect" copyright law.
+
+ - Law suits take time. Between now and conclusion of the first court
+   case, we could have years of spam in our mail boxes!
+
+ - Contact information can change: phone numbers, PO boxes, stolen
+   cell phones, temporary email addresses, etc.
+
+ - Spammers do not always remember to include contact information!  I
+   don't understand it either, but nobody said they were bright.  Also,
+   some spam is non-commercial or sent by a third-party (for example,
+   "pump and dump" stock scams), so contact information is not strictly
+   required for the spammer to get their way.
+
+Dan
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

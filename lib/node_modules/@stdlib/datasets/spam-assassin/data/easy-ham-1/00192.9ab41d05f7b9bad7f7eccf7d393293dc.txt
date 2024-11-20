@@ -1,0 +1,76 @@
+From fork-admin@xent.com  Wed Aug 28 10:50:15 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 235A143F9B
+	for <zzzz@localhost>; Wed, 28 Aug 2002 05:49:50 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 28 Aug 2002 10:49:50 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7RInkZ21336 for <zzzz@spamassassin.taint.org>;
+    Tue, 27 Aug 2002 19:49:46 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 33F332940D2; Tue, 27 Aug 2002 11:47:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.auracom.net (smtp1.auracom.net [165.154.140.23]) by
+    xent.com (Postfix) with ESMTP id 33AAF29409A for <fork@xent.com>;
+    Tue, 27 Aug 2002 11:46:35 -0700 (PDT)
+Received: from maya.dyndns.org (ts5-007.ptrb.interhop.net
+    [165.154.190.71]) by smtp1.auracom.net (8.11.2/8.11.2) with ESMTP id
+    g7RIMMS12577 for <fork@xent.com>; Tue, 27 Aug 2002 14:22:23 -0400 (EDT)
+Received: by maya.dyndns.org (Postfix, from userid 501) id 032861C388;
+    Tue, 27 Aug 2002 14:28:18 -0400 (EDT)
+To: <fork@spamassassin.taint.org>
+Subject: Re: The GOv gets tough on Net Users.....er Pirates..
+References: <Pine.LNX.4.33.0208270202170.7689-100000@watcher.mithral.com>
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m2hehgnr8y.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 27 Aug 2002 13:30:53 -0400
+
+>>>>> "A" == Adam L Beberg <beberg@mithral.com> writes:
+
+    A> I'm not displeased you're trying to help, just frustrated that
+    A> employers can demand such rediculous combinations of skills
+    A> with insane years of experience.
+
+>>>From my 25+ years in the playing field, IMHO the art of job-hunting
+(for those not yet de-jobbed) is the art of getting past the HR-stage
+interview and into the engineer-to-engineer interview.  HR is not
+being honest with you so there's no ethical quandry to be totally
+honest with them: If they want experience numbers that would place you
+in the OAK project, lead them to believe that you have "something
+roughly equivalent" (ie "it wasn't 5 years, but it was three intense
+years with plenty of overtime") -- they are playing a bluff in saying
+/they/ know the job requirements so you're perfectly within poker
+rules to bluff back to say you have it.
+
+If you /don't/ have the requisite Right Stuff, the engineers can
+usually suss it out pretty fast during the second interview.  Most
+often, their choice is based 90% on "who can I work with" and only
+maybe 10% on "how much/little will we have to tutor this candidate?"
+
+-- 
+Gary Lawrence Murphy <garym@teledyn.com> TeleDynamics Communications Inc
+ Business Advantage through Community Software : http://www.teledyn.com
+"Computers are useless.  They can only give you answers."(Pablo Picasso)
+
+

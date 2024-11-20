@@ -1,0 +1,47 @@
+
+{{alias}}( x, y, slice, strict )
+    Assigns element values from a broadcasted input ndarray to corresponding
+    elements in an output ndarray view.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array. The input array must be broadcast compatible with the
+        output array view and must have a data type which can be safely cast to
+        the output array data type. Floating-point data types (both real and
+        complex) are allowed to downcast to a lower precision data type of the
+        same kind (e.g., element values from a 'float64' input array can be
+        assigned to corresponding elements in a 'float32' output array).
+
+    y: ndarray
+        Output array.
+
+    slice: MultiSlice
+        Multi-slice object specifying the output array view.
+
+    strict: boolean
+        Boolean indicating whether to enforce strict bounds checking.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var y = {{alias:@stdlib/ndarray/zeros}}( [ 2, 2 ] )
+    <ndarray>
+    > var x = {{alias:@stdlib/ndarray/from-scalar}}( 3.0 )
+    <ndarray>
+    > var s = new {{alias:@stdlib/slice/multi}}( null, 1 )
+    <MultiSlice>
+    > var out = {{alias}}( x, y, s, false )
+    <ndarray>
+    > var bool = ( out === y )
+    true
+    > {{alias:@stdlib/ndarray/to-array}}( y )
+    [ [ 0.0, 3.0 ], [ 0.0, 3.0 ] ]
+
+    See Also
+    --------
+

@@ -1,0 +1,23 @@
+
+{{alias}}( pkg )
+    Returns the standalone package name associated with a provided internal
+    package name.
+
+    Parameters
+    ----------
+    pkg: string
+        Package name.
+
+    Returns
+    -------
+    out: string|null
+        Standalone package name.
+
+    Examples
+    --------
+    > var v = {{alias}}( '@stdlib/math/base/special/sin' )
+    '@stdlib/math-base-special-sin'
+
+    See Also
+    --------
+

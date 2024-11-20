@@ -1,0 +1,29 @@
+
+{{alias}}( value, property )
+    Returns a property descriptor for an object's own property.
+
+    If provided `null` or `undefined` or provided a non-existent property, the
+    function returns `null`.
+
+    Parameters
+    ----------
+    value: any
+        Input value.
+
+    property: string|symbol
+        Property name.
+
+    Returns
+    -------
+    desc: Object|null
+        Property descriptor.
+
+    Examples
+    --------
+    > var obj = { 'a': 'b' };
+    > var desc = {{alias}}( obj, 'a' )
+    {...}
+
+    See Also
+    --------
+

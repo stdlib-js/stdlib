@@ -1,0 +1,29 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2021 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+contact_links:
+  - name: 👩‍🏫 Frequently Asked Questions
+    url:  https://github.com/stdlib-js/stdlib/blob/develop/FAQ.md
+    about: Consult the FAQ in case we have already answered your question there.
+  - name: 💬 Question
+    url:  https://gitter.im/stdlib-js/stdlib
+    about: Got a (non-bug related) question we haven't already answered? Ask us on Gitter! 🤗
+  - name: 👏 Support Us
+    url: https://github.com/stdlib-js/stdlib/blob/develop/docs/support_the_project.md
+    about: Want to help support the project? 😍
+

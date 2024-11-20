@@ -1,0 +1,93 @@
+From ilug-admin@linux.ie  Mon Jul 22 18:12:53 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2385B440DA
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:27 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:27 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFIV903109 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 16:18:31 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id KAA31180 for <jm-ilug@jmason.org>;
+    Mon, 22 Jul 2002 10:42:04 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA19400; Mon, 22 Jul 2002 10:41:00 +0100
+Received: from ie.suberic.net (owsla.ie.suberic.net [62.17.162.83]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id KAA19364 for <ilug@linux.ie>;
+    Mon, 22 Jul 2002 10:40:48 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host owsla.ie.suberic.net
+    [62.17.162.83] claimed to be ie.suberic.net
+Received: from owsla.ie.suberic.net (owsla [127.0.0.1]) by ie.suberic.net
+    (8.11.6/8.11.6) with ESMTP id g6M9ek923178 for <ilug@linux.ie>;
+    Mon, 22 Jul 2002 10:40:46 +0100
+Date: Mon, 22 Jul 2002 10:40:44 +0100
+To: Paul Jakma <paul@clubi.ie>
+Cc: irish linux users group <ilug@linux.ie>
+Subject: tmda (was: Re: [ILUG] jpeg patented...)
+Message-Id: <20020722104044.B22647@ie.suberic.net>
+References: <20020719041127.A29748@ie.suberic.net>
+    <Pine.LNX.4.44.0207190449520.16137-100000@fogarty.jakma.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <Pine.LNX.4.44.0207190449520.16137-100000@fogarty.jakma.org>;
+    from paul@clubi.ie on Sun, Jul 21, 2002 at 11:12:34PM +0100
+X-Operating-System: Linux 2.4.18-5 i686
+X-GPG-Fingerprint: 9C1D 16F4 11F1 6BD2 933C  048D ACC7 9840 89D0 7646
+From: kevin lyda <kevin+dated+1027849246.18f3b4@linux.ie>
+X-Delivery-Agent: TMDA/0.57
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Sun, Jul 21, 2002 at 11:12:34PM +0100, Paul Jakma wrote:
+> oh yes, see you've setup that tdma thingy, so here's a thought. do
+> you reckon spammers (or the software they use) is/are smart enough to
+> 
+> 	s/\(.\)+\+.*@\([a-zA-Z\.0-9\-]\)/\1@\2/
+> 
+> on email addresses? it's a fairly old trick, so i dont see why they
+> wouldnt.
+
+the dated address that my from appears as is a good address for five days
+for anyone.  after that it requires a confirm message from the sender.
+my regular email address requires a confirm address if i haven't
+explicitly given permission to the sender.
+
+and yes, spammers could try to set up a system to reply to my confirm
+messages, but that would require them to a) give out a valid email address
+in their From headers, and b) use a lot more bandwidth then they do now
+(thereby costing them more money).
+
+oh, and they can't forge confirm messages.  the confirm message system
+works something like this:
+
+    message goes in the pending q and is assigned an id.
+    that id is encrypted and used to create the from address of the
+	outgoing confirm mail - kevin+confirm+kghdsfg@ie.suberic.net
+    only a message to that address will work to free the message from
+	the q (or i can free it using tmda-pending).
+
+all of this is discussed on http://tmda.sf.net/
+
+kevin
+
+-- 
+kevin@suberic.net     that a believer is happier than a skeptic is no more to
+fork()'ed on 37058400    the point than the fact that a drunken man is happier
+meatspace place: home       than a sober one. the happiness of credulity is a
+http://ie.suberic.net/~kevin   cheap & dangerous quality -- g.b. shaw
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

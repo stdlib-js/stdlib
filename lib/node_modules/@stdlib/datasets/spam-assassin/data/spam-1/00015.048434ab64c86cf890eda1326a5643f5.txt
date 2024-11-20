@@ -1,0 +1,154 @@
+From weseloh@bibsam.kb.se  Fri Aug 23 11:03:26 2002
+Return-Path: <weseloh@bibsam.kb.se>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.spamassassin.taint.org (Postfix) with ESMTP id 40B354415A
+	for <zzzz@localhost>; Fri, 23 Aug 2002 06:02:54 -0400 (EDT)
+Received: from mail.webnote.net [193.120.211.219]
+	by localhost with POP3 (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Fri, 23 Aug 2002 11:02:54 +0100 (IST)
+Received: from 203186114131.ctinets.com (203186114131.ctinets.com [203.186.114.131])
+	by webnote.net (8.9.3/8.9.3) with SMTP id FAA08472
+	for <zzzz@spamassassin.taint.org>; Fri, 23 Aug 2002 05:50:33 +0100
+Received: from mail.AETNA.CO.NZ ([200.24.85.9] <servidor2.partidoliberal.org.co.>) by 203186114131.ctinets.com (AppleShare IP Mail Server 6.3.1) id 69737 via TCP with SMTP; Fri, 23 Aug 2002 09:21:37 +0800
+Message-ID: <000043de651d$000038c1$00005639@mfwjs01.mfw.is.co.za>
+To: <weseloh@bibsam.kb.se>
+From: "E-Business Update" <weseloh@bibsam.kb.se>
+Subject: Conference calls/best quality/$.18 per minute!
+Date: Thu, 22 Aug 2002 16:44:26 -1900
+MIME-Version: 1.0
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<HTML><HEAD><TITLE>Lowest Rate Services</TITLE>
+<META http-equiv=3DContent-Type content=3D"text/html; charset=3Dwindows-12=
+52">
+<META content=3D"MSHTML 5.50.4134.600" name=3DGENERATOR></HEAD>
+<BODY vLink=3D#c0c0c0 link=3D#c0c0c0 bgColor=3D#000033 leftMargin=3D0><FON=
+T 
+face=3Darial,helvetica>
+<P>
+<CENTER>
+<TABLE width=3D600 border=3D0>
+  <TBODY>
+  <TR>
+    <TD align=3Dmiddle><B><FONT color=3D#999999 size=3D6>Conferencing Made=
+ Easy</FONT><BR>
+<FONT color=3D#999999 size=3D5>Only <U>18 Cents</U> Per Minute!</B></FONT>=
+</TD></TR></TBODY></TABLE>
+<P><FONT color=3D#ff0000 size=3D5><B>(Including Long Distance!)</B></FONT>=
+ 
+<P>
+<TABLE width=3D350 border=3D0>
+  <TBODY>
+  <TR>
+    <TD><FONT color=3D#999999 size=3D3><B>
+      <LI>No setup fees 
+      <LI>No contracts or monthly fees 
+      <LI>Call anytime, from anywhere, to anywhere 
+      <LI>Connects up to 100 Participants 
+      <LI>Simplicity in set up and administration 
+      <LI>Operator Help available 24/7 </B></FONT></LI></TD></TR></TBODY><=
+/TABLE>
+<P>
+<TABLE width=3D500 border=3D0>
+  <TBODY>
+  <TR>
+    <TD align=3Dmiddle><FONT color=3D#ff0000 size=3D60><B><FONT size=3D5>T=
+he Highest Quality Service For The Lowest Rate In The Industry!</B></FONT>=
+</FONT></TD></TR></TBODY></TABLE>
+<P>
+<TABLE width=3D400 border=3D0>
+  <TBODY>
+  <TR>
+    <TD align=3Dmiddle><FONT color=3D#999999 size=3D4>Fill out the form be=
+low to find out how you can lower your phone bill every month.</FONT></TD>=
+</TR></TBODY></TABLE>
+<P><FONT color=3D#999999 size=3D2>Required Input Field<FONT color=3D#ff000=
+0 
+size=3D2>*</FONT></FONT> 
+<P>
+<TABLE cellSpacing=3D0 borderColorDark=3D#333300 cellPadding=3D3 width=3D6=
+00 
+borderColorLight=3D#ffffcc>
+  <TBODY>
+  <TR>
+    <TD align=3Dmiddle>
+      <FORM action=3Dmailto:aud.conf@marketing401.com?subject=3DAudioc_Inq=
+uiry 
+      method=3Dpost encType=3Dtext/plain>
+      <TABLE width=3D"100%">
+        <TBODY>
+        <TR>
+          <TD align=3Dright width=3D"50%"><FONT 
+            face=3D"Arial, Helvetica, sans-serif" color=3D#999999
+          size=3D2>Name</FONT><FONT 
+            face=3D"Arial, Helvetica, sans-serif" color=3D#ff0000 
+            size=3D2>*</FONT></TD>
+          <TD><INPUT name=3DNAME></TD></TR>
+        <TR>
+          <TD align=3Dright width=3D"50%"><FONT 
+            face=3D"Arial, Helvetica, sans-serif" color=3D#999999 size=3D2=
+>Web 
+            Address</FONT></TD>
+          <TD><INPUT value=3Dhttp:// name=3DURL></TD></TR>
+        <TR>
+          <TD align=3Dright width=3D"50%"><FONT 
+            face=3D"Arial, Helvetica, sans-serif" color=3D#999999 size=3D2=
+>Company 
+            Name</FONT><FONT 
+            face=3D"Arial, Helvetica, sans-serif" color=3D#ff0000 
+            size=3D2>*</FONT></TD>
+          <TD><INPUT name=3DCOMPANY_NAME></TD></TR>
+        <TR>
+          <TD align=3Dright width=3D"50%"><FONT 
+            face=3D"Arial, Helvetica, sans-serif" color=3D#999999 size=3D2=
+>
+            State</FONT><FONT 
+            face=3D"Arial, Helvetica, sans-serif" color=3D#ff0000 
+            size=3D2>*</FONT></TD>
+          <TD><INPUT size=3D2 name=3DSTATE></TD></TR>
+        <TR>
+          <TD align=3Dright width=3D"50%"><FONT 
+            face=3D"Arial, Helvetica, sans-serif" color=3D#999999 size=3D2=
+>Business 
+            Phone</FONT><FONT 
+            face=3D"Arial, Helvetica, sans-serif" color=3D#ff0000 
+            size=3D2>*</FONT></TD>
+          <TD><INPUT name=3DBUS_PHONE></TD></TR>
+        <TR>
+          <TD align=3Dright width=3D"50%"><FONT 
+            face=3D"Arial, Helvetica, sans-serif" color=3D#999999 size=3D2=
+>Home 
+            Phone</FONT></TD>
+          <TD><INPUT name=3DHOME_PHONE></TD></TR>
+        <TR>
+          <TD align=3Dright width=3D"50%"><FONT 
+            face=3D"Arial, Helvetica, sans-serif" color=3D#999999 size=3D2=
+>Email 
+            Address</FONT><FONT 
+            face=3D"Arial, Helvetica, sans-serif" color=3D#ff0000 
+            size=3D2>*</FONT></TD>
+          <TD><INPUT name=3DEMAIL></TD></TR>
+        <TR>
+          <TD align=3Dright width=3D"50%"><FONT 
+            face=3D"Arial, Helvetica, sans-serif" color=3D#999999 size=3D2=
+>Type of 
+            Business</FONT></TD>
+          <TD><INPUT name=3DTYPE_OF_BUSINESS></TD></TR></TBODY></TABLE>
+      <P><INPUT type=3Dsubmit value=3D"Submit Information" name=3Dsubmit> 
+    </FORM></P></TD></TR></TBODY></TABLE>
+<BR><BR>
+<TABLE width=3D500>
+  <TBODY>
+  <TR>
+    <TD align=3Dmiddle><FONT face=3D"Arial, Helvetica, sans-serif" color=3D=
+#999999 
+      size=3D1>To be removed from our distribution lists, please  
+      <FONT color=3D#666666><A href=3D"mailto:delete@marketing401.com?subj=
+ect=3DRemove_Conferencing">Click 
+      here</A></FONT>.</FONT></TD></TR></TBODY></TABLE></P></CENTER></BODY=
+></HTML>
+
+
+

@@ -1,0 +1,175 @@
+From ilug-admin@linux.ie  Wed Jul 31 18:34:00 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BC1024410E
+	for <jm@localhost>; Wed, 31 Jul 2002 13:33:20 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 31 Jul 2002 18:33:20 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6VHZD203399 for
+    <jm-ilug@jmason.org>; Wed, 31 Jul 2002 18:35:13 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id SAA19781; Wed, 31 Jul 2002 18:32:47 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail2.mail.iol.ie (mail2.mail.iol.ie [194.125.2.193]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id SAA19711; Wed, 31 Jul 2002
+    18:32:34 +0100
+Received: from dialup138-b.ts551.cwt.esat.net ([193.203.141.138]
+    helo=Hobbiton.cod.ie) by mail2.mail.iol.ie with esmtp (Exim 3.35 #1) id
+    17ZxE1-0000ZA-00; Wed, 31 Jul 2002 18:25:29 +0100
+Received: (from cdaly@localhost) by Hobbiton.cod.ie (8.11.6/8.9.3) id
+    g6VGv2005232; Wed, 31 Jul 2002 17:57:02 +0100
+Date: Wed, 31 Jul 2002 17:57:01 +0100
+From: Conor Daly <conor.daly@oceanfree.net>
+To: ilug@linux.ie
+Cc: Niall O Broin <niall@linux.ie>
+Subject: Re: [ILUG] Installing lilo on another disk.
+Message-Id: <20020731175701.B4779@Hobbiton.cod.ie>
+Mail-Followup-To: ilug@linux.ie, Niall O Broin <niall@linux.ie>
+References: <20020730144740.GA3482@bagend.makalumedia.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <20020730144740.GA3482@bagend.makalumedia.com>;
+    from niall@linux.ie on Tue, Jul 30, 2002 at 03:47:40PM +0100
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Tue, Jul 30, 2002 at 03:47:40PM +0100 or so it is rumoured hereabouts, 
+Niall O Broin thought:
+> I'm installing warm standby disks on a number of boxes. These disks will be
+> the same size (sometimes bigger) than the main disk. The idea is that every
+> night I'll rsync the partitions on the main disk to the standby disk so that
+> in the case of disaster, the first port of call, before the tapes, is the
+> standby disk. (We did consider running Linux md RAID on the disks but RAID
+> gives you no protection against slips of the finger)
+> 
+> So, in the event of finger slips we can mount the relevant partition and
+> retrieve the banjaxed file. In the case of a disk crash, the plan is that
+> we'll put the standby disk in place of the main disk and the workstation
+> will be back up ASAP. Then we can deal with replacing the disk without the
+> pressure of a broken box on our back.
+> 
+> However, I'm stumped as to how to install LILO on the backup disk. Let's say
+> the master disk is /dev/hda and the backup disk is /dev/hdb. lilo.conf
+> currently looks like this:
+> 
+> boot    = /dev/hda
+> change-rules
+> reset
+> read-only
+> menu-scheme = Wg:kw:Wg:Wg
+> lba32
+> prompt
+> timeout = 80
+> message = /boot/message
+> 
+>   image  = /boot/vmlinuz
+>   label  = linux
+>   root   = /dev/hda3
+>   vga    = 791
+>   initrd = /boot/initrd
+> 
+> 
+> 
+> There are a couple more boot stanzas, but they're not germane. As you can
+> see, / is on /dev/hda3 and /boot is on /dev/hda1. So if for instance I had
+> booted from a CD and wanted to re-install LILO on this disk I'd do something
+> like
+> 
+> mount /dev/hda3 /mnt
+> mount /dev/hda1 /mnt/boot
+> lilo -r /mnt
+> 
+> which is OK because I'm installing lilo on /dev/hda and I want it to boot
+> from /dev/hda so it'll plug in all the right numbers.
+> 
+> However, in the case of the standby disk, I'll have to do something like
+> 
+> mount /dev/hdb3 /mnt
+> mount /dev/hdb1 /mnt/boot
+> lilo -r /mnt
+> 
+> But I'm obviously going to have to do something different here because I
+> want to install onto /dev/hdb in such a way that the disk will boot when it
+> becomes /dev/hda after a disaster (like the one I had this morning :-( -
+> shutting the stable door was on the to-do list, but the bloody horse decided
+> to do a bunk early). The machine already has its spare disk - just hadn't
+> yet been used :-(
+> 
+> I thought perhaps I should just do   lilo -b /dev/hdb -r /mnt  but I think
+> that -b is analogous to the boot keyword in lilo.conf. Or will this just
+> work automagically ?  i.e. boot = /dev/hda tells lilo what numbers to poke
+> where, and it figures out where the disk is from the -r ?
+
+ from the Hard Disk Upgrade Mini HOWTO :
+
+8. Prepare LILO to boot the new disk
+
+   (Thanks to Rick Masters for helping with this.)
+
+   We're  assuming  that LILO is installed on the hard disk's Master Boot
+   Record (MBR); this seems to be the most common configuration. You want
+   to  install  LILO  on  what's  presently the second hard disk but will
+   become the first hard disk.
+
+   Edit the file /new-disk/etc/lilo.conf as follows:
+
+        disk=/dev/hdb bios=0x80       # Tell LILO to treat the second
+                                      # disk as if it were the first
+                                      # disk (BIOS ID 0x80).
+        boot=/dev/hdb                 # Install LILO on second hard
+                                      # disk.
+        map=/new-disk/boot/map        # Location of "map file".
+        install=/new-disk/boot/boot.b # File to copy to hard disk's
+                                      # boot sector.
+        prompt                        # Have LILO show "LILO boot:"
+                                      # prompt.
+        timeout=50                    # Boot default system after 5
+                                      # seconds. (Value is in tenths of
+                                      # seconds.)
+        image=/new-disk/boot/vmlinuz  # Location of Linux kernel. The
+                                      # actual name may include a version
+                                      # number, for example
+                                      # "vmlinuz-2.0.35".
+            label=linux               # Label for Linux system.
+            root=/dev/hda1            # Location of root partition on
+                                      # new hard disk. Modify this as
+                                      # appropriate for your system.
+                                      # Note that you must use the name
+                                      # of the future location, once the
+                                      # old disk has been removed.
+            read-only                 # Mount partition read-only at
+                                      # first, to run fsck.
+
+Conor
+
+PS.  Um, what does 
+
+> menu-scheme = Wg:kw:Wg:Wg
+
+do?
+-- 
+Conor Daly <conor.daly@oceanfree.net>
+
+Domestic Sysadmin :-)
+---------------------
+Faenor.cod.ie
+  6:04pm  up 69 days,  3:22,  0 users,  load average: 0.00, 0.00, 0.00
+Hobbiton.cod.ie
+  5:50pm  up 12 days, 27 min,  1 user,  load average: 0.00, 0.00, 0.00
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

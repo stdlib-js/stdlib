@@ -1,0 +1,68 @@
+From fork-admin@xent.com  Wed Oct  2 17:52:36 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 43CCD16F19
+	for <jm@localhost>; Wed,  2 Oct 2002 17:51:20 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 02 Oct 2002 17:51:20 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g92GlMK17657 for <jm@jmason.org>;
+    Wed, 2 Oct 2002 17:47:22 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id D819E294172; Wed,  2 Oct 2002 09:44:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hotmail.com (dav75.law15.hotmail.com [64.4.22.210]) by
+    xent.com (Postfix) with ESMTP id D326029416D for <fork@xent.com>;
+    Wed,  2 Oct 2002 09:43:24 -0700 (PDT)
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Wed, 2 Oct 2002 09:43:33 -0700
+X-Originating-Ip: [207.202.171.254]
+From: "Mr. FoRK" <fork_list@hotmail.com>
+To: "fork" <fork@spamassassin.taint.org>
+References: <20021002103833.700FC1B624@maya.dyndns.org>
+    <m2heg4ri1h.fsf@maya.dyndns.org>
+Subject: Re: Polit-spam
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.50.4133.2400
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4133.2400
+Message-Id: <DAV75xqGfT4V3PNLbos00008e1b@hotmail.com>
+X-Originalarrivaltime: 02 Oct 2002 16:43:33.0124 (UTC) FILETIME=[D8659440:01C26A32]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 2 Oct 2002 09:48:45 -0700
+
+
+----- Original Message -----
+From: "Gary Lawrence Murphy" <garym@canada.com>
+
+>
+> >>>>> "w" == wpin  <lslifriend> writes:
+>
+>     w> Those who want to leave for the Netherlands to carry on any
+>     w> kind of education,including for PHD, must be careful
+>     w> . Especially the university of Groningen(RUG) should be
+>     w> avoided. This university was once a good one but now it has
+>     w> lost its reputation. ... Studying is a good investment in time
+>     w> and money. So invest in the right place and time. You are
+>     w> warned.
+
+Dear gawd - 'lost its reputation' - how horrible for those Northern
+Europeans. What could possibly be worse than that?
+
+

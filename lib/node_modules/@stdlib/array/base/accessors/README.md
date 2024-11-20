@@ -1,0 +1,149 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2022 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# accessors
+
+> Return element accessors for a provided array-like object.
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- Package usage documentation. -->
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var accessors = require( '@stdlib/array/base/accessors' );
+```
+
+#### accessors( x )
+
+Returns element accessors for a provided array-like object.
+
+```javascript
+var obj = accessors( [ 1, 2, 3, 4 ] );
+// returns {...}
+
+var bool = obj.accessorProtocol;
+// returns false
+
+var fcns = obj.accessors;
+// returns [ <Function>, <Function> ]
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+## Notes
+
+-   The returned object has the following properties:
+
+    -   **accessorProtocol**: `boolean` indicating whether the provided array-like object supports the get/set protocol (i.e., uses accessors for getting and setting elements).
+    -   **accessors**: a two-element array whose first element is an accessor for retrieving an array element (i.e., a getter) and whose second element is an accessor for setting an array element (i.e., a setter).
+
+-   The getter accessor accepts two arguments:
+
+    -   **arr**: array-like object.
+    -   **idx**: element index.
+
+-   The setter accessor accepts three arguments:
+
+    -   **arr**: array-like object.
+    -   **idx**: element index.
+    -   **value**: value to set.
+
+-   The intent of this function is to provide a minimal abstraction over how elements are accessed when operating on indexed (i.e., array-like objects supporting element accesss via integer indices using bracket `[]` syntax) and accessor (i.e., array-like objects supporting the get/set protocol in which explicit `get` and `set` methods are used for element access) array-like objects.
+
+</section>
+
+<!-- /.notes -->
+
+<!-- Package usage examples. -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var Complex64Array = require( '@stdlib/array/complex64' );
+var zeroTo = require( '@stdlib/array/base/zero-to' );
+var accessors = require( '@stdlib/array/base/accessors' );
+
+// Create an array:
+var x = new Complex64Array( zeroTo( 10 ) );
+
+// Get accessor functions for retrieving array elements:
+var obj = accessors( x );
+// returns {...}
+
+// Check whether the array supports the accessor protocol:
+var bool = obj.accessorProtocol;
+// returns true
+
+console.log( 'Accessor protocol: %s', bool );
+
+// Retrieve an array element:
+var v = obj.accessors[ 0 ]( x, 1 );
+// returns <Complex64>
+
+console.log( 'x[1] = %s', v.toString() );
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="references">
+
+</section>
+
+<!-- /.references -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+</section>
+
+<!-- /.links -->

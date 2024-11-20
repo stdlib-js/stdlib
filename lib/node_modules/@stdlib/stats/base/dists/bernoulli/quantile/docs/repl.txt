@@ -1,0 +1,74 @@
+
+{{alias}}( r, p )
+    Evaluates the quantile function for a Bernoulli distribution with success
+    probability `p` at a probability `r`.
+
+    If `r < 0` or `r > 1`, the function returns `NaN`.
+
+    If `p < 0` or `p > 1`, the function returns `NaN`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    Parameters
+    ----------
+    r: number
+        Input probability.
+
+    p: number
+        Success probability.
+
+    Returns
+    -------
+    out: number
+        Evaluated quantile function.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.8, 0.4 )
+    1
+    > y = {{alias}}( 0.5, 0.4 )
+    0
+    > y = {{alias}}( 0.9, 0.1 )
+    0
+
+    > y = {{alias}}( -0.2, 0.1 )
+    NaN
+
+    > y = {{alias}}( NaN, 0.8 )
+    NaN
+    > y = {{alias}}( 0.4, NaN )
+    NaN
+
+    > y = {{alias}}( 0.5, -1.0 )
+    NaN
+    > y = {{alias}}( 0.5, 1.5 )
+    NaN
+
+
+{{alias}}.factory( p )
+    Returns a function for evaluating the quantile function of a Bernoulli
+    distribution with success probability `p`.
+
+    Parameters
+    ----------
+    p: number
+        Success probability.
+
+    Returns
+    -------
+    quantile: Function
+        Quantile function.
+
+    Examples
+    --------
+    > var myquantile = {{alias}}.factory( 0.4 );
+    > var y = myquantile( 0.4 )
+    0
+    > y = myquantile( 0.8 )
+    1
+    > y = myquantile( 1.0 )
+    1
+
+    See Also
+    --------
+

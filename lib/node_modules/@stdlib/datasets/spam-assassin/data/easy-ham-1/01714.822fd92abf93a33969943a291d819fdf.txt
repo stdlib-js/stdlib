@@ -1,0 +1,75 @@
+Return-Path: guido@python.org
+Delivery-Date: Sun Sep  8 06:38:45 2002
+From: guido@python.org (Guido van Rossum)
+Date: Sun, 08 Sep 2002 01:38:45 -0400
+Subject: [Spambayes] test sets?
+In-Reply-To: Your message of "Sun, 08 Sep 2002 01:02:32 EDT."
+             <LNBBLJKPBEHFEDALKOLCEEOGBCAB.tim.one@comcast.net> 
+References: <LNBBLJKPBEHFEDALKOLCEEOGBCAB.tim.one@comcast.net> 
+Message-ID: <200209080538.g885cjk17553@pcp02138704pcs.reston01.va.comcast.net>
+
+> > I also looked in more detail at some f-p's in my geeks traffic.  The
+> > first one's a doozie (that's the term, right? :-).  It has lots of
+> > HTML clues that are apparently ignored.
+> 
+> ?? The clues below are *loaded* with snippets unique to HTML (like '<br>').
+
+I *meant* to say that they were 0.99 clues cancelled out by 0.01
+clues.  But that's wrong too!  It looks I haven't grokked this part of
+your code yet; this one has way more than 16 clues, and it seems the
+classifier basically ended up counting way more 0.99 than 0.01 clues,
+and no others made it into the list.  I thought it was looking for
+clues with values in between; apparently it found none that weren't
+exactly 0.5?
+
+> That sure sets the record for longest list of cancelling extreme clues!
+
+This happened to be the longest one, but there were quite a few
+similar ones.  I wonder if there's anything we can learn from looking
+at the clues and the HTML.  It was heavily marked-up HTML, with ads in
+the sidebar, but the body text was a serious discussion of "OO and
+soft coding" with lots of highly technical words as clues (including
+Zope and ZEO).
+
+> That there are *any* 0.50 clues in here means the scheme ran out of
+> anything interesting to look at.  Adding in more header lines should
+> cure that.
+
+Are there any minable-but-unmined header lines in your corpus left?
+Or do we have to start with a different corpus before we can make
+progress there?
+
+> > The seventh was similar.
+> >
+> > I scanned a bunch more until I got bored, and most of them were either
+> > of the first form (brief text with URL followed by quoted HTML from
+> > website)
+> 
+> If those were text/plain, the HTML tags should have been stripped.  I'm
+> still confused about this part.
+
+No, sorry.  These were all of the following structure:
+
+  multipart/mixed
+      text/plain        (brief text plus URL(s))
+      text/html         (long HTML copied from website)
+
+I guess you get this when you click on "mail this page" in some
+browsers.
+
+> That HTML tags aren't getting stripped remains the biggest mystery to me.
+
+Still?
+
+> This seems confused: Jeremy didn't use my trained classifier pickle,
+> he trained his own classifier from scratch on his own corpora.
+> That's an entirely different kind of experiment from the one you're
+> trying (indeed, you're the only one so far to report results from
+> trying my pickle on their own email, and I never expected *that* to
+> work well; it's a much bigger mystery to me why Jeremy got such
+> relatively worse results from training his own -- and he's the only
+> one so far to report results from *that* experiment).
+
+I think it's still corpus size.
+
+--Guido van Rossum (home page: http://www.python.org/~guido/)

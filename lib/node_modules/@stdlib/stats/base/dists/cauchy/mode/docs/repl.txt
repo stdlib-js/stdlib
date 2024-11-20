@@ -1,0 +1,33 @@
+
+{{alias}}( x0, Ɣ )
+    Returns the mode of a Cauchy distribution.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `Ɣ <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x0: number
+        Location parameter.
+
+    Ɣ: number
+        Scale parameter.
+
+    Returns
+    -------
+    out: number
+        Mode.
+
+    Examples
+    --------
+    > var v = {{alias}}( 10.0, 5.0 )
+    10.0
+    > v = {{alias}}( 7.0, 0.5 )
+    7.0
+    > v = {{alias}}( 10.3, -0.5 )
+    NaN
+
+    See Also
+    --------
+

@@ -1,0 +1,31 @@
+
+{{alias}}( x )
+    Computes the arccosecant (in degrees) of a single-precision floating-point
+    number.
+
+    If `x` does not satisy `x >= 1` or `x <= -1`, the function returns NaN.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    y: number
+        Arccosecant (in degrees).
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.0 )
+    NaN
+    > y = {{alias}}( 3.1415927410125732 / 6.0 )
+    NaN
+    > y = {{alias}}( 1.0 )
+    90.0
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+

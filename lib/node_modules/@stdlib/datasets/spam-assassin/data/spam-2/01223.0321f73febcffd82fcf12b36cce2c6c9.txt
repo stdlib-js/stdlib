@@ -1,0 +1,76 @@
+From cwc02@mail.hz.zj.cn  Thu Aug  1 23:40:28 2002
+Return-Path: <cwc02@mail.hz.zj.cn>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C4269440F0
+	for <jm@localhost>; Thu,  1 Aug 2002 18:40:27 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 01 Aug 2002 23:40:27 +0100 (IST)
+Received: from rs04.singnet.com.sg (rs04.singnet.com.sg [165.21.101.94])
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g71McZ232243 for
+    <jm@jmason.org>; Thu, 1 Aug 2002 23:38:36 +0100
+Received: from mail.hz.zj.cn (netpc14.ie.cuhk.edu.hk [137.189.96.44] (may
+    be forged)) by rs04.singnet.com.sg (8.12.3/8.12.3) with ESMTP id
+    g715JGX4021585; Thu, 1 Aug 2002 13:19:16 +0800
+Message-Id: <3D48C4C1.CE967A1E@mail.hz.zj.cn>
+Date: Thu, 01 Aug 2002 13:18:57 +0800
+From: CWC02-HZ Office <cwc02@mail.hz.zj.cn>
+X-Mailer: Mozilla 4.79 [en] (Windows NT 5.0; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+Subject: ADV: 2002 China Wireless Congress - Oct. 15-17, 2002
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+To: undisclosed-recipients:;
+
+[Sorry for Multiple Copies of This Message. Welcome to CWC02 in China]
+
+Dear wireless colleagues:
+
+By the end of 2002, China will have over 200 MLN mobile users. From late
+of 2003, China will issue 3G licenses and full 3G services will be
+available in 2005. Currently, there is still over 5 MLN new mobile users
+coming every month, and the mobile revenue is increasing over 25% every
+year.
+
+China is so far the world's largest wireless market, and the most
+potential business partner in the coming several years. To get involved
+in this huge business, 2002 China Wireless Congress is the best platform
+which focuses on the following issues:
+
+1. The New Business Models of China's Mobile Communications
+2. Infrastructure of Nationwide Wireless Access Systems
+3. Convergence of Wireless Local Access and Mobile Networks
+4. Evolution of 2G networks to 2.5G and 3G networks
+5. Emerging R&D on 4G Mobile and 4G Mobile Forum
+6. Investment Strategies towards 2008 OlympiTek
+7. New Spectrum Management and Sharing Policies
+8. All-Hands Meeting and Marketing Events
+
+In addition, this congress will be together with the famous West-Lake
+Expo'2002, and really a best combination of business and leisure in
+Hangzhou - the most beautiful city of China.
+
+To join this professional gathering, please visit the website at:
+http://delson.org/cwc02 or http://china.wirelesscongress.com
+
+This 2002 China Wireless Congress will be very busy, please register
+ASAP before the door is closed. For more information about this congress
+or about Hangzhou,etc, please also check the website.
+
+On behalf of the congress committee, welcome to Hangzhou, the garden of
+Shanghai !
+
+Thank you.
+
+Hangzhou Office of CWC'2002
+http://delson.org/cwc02
+http://china.wirelesscongress.com
+
+[sorry for copy of this message, removal is automatically. This is for
+conference information only, not for commercial sale. Thanks a lot!]
+
+
+
+

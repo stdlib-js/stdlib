@@ -1,0 +1,85 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug 29 13:00:56 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B7DF643F99
+	for <jm@localhost>; Thu, 29 Aug 2002 08:00:55 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 13:00:55 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7TBs4Z10782 for <jm-sa@jmason.org>; Thu, 29 Aug 2002 12:54:04 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17kNoJ-000192-00; Thu,
+    29 Aug 2002 04:50:03 -0700
+Received: from hippo.star.co.uk ([195.216.14.9]) by
+    usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17kNo7-0005WZ-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Thu, 29 Aug 2002 04:49:51 -0700
+Received: from MATT_LINUX by hippo.star.co.uk via smtpd (for
+    usw-sf-lists.sourceforge.net [216.136.171.198]) with SMTP; 29 Aug 2002
+    11:40:46 UT
+Received: (qmail 18788 invoked from network); 27 Aug 2002 11:45:28 -0000
+Received: from unknown (HELO startechgroup.co.uk) (10.2.100.178) by
+    matt?dev.int.star.co.uk with SMTP; 27 Aug 2002 11:45:28 -0000
+Message-Id: <3D6E0984.5030708@startechgroup.co.uk>
+From: Matt Sergeant <msergeant@startechgroup.co.uk>
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.0rc1) Gecko/20020426
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: Urban Boquist <urban@boquist.net>
+Cc: spamassassin-talk@example.sourceforge.net
+Subject: Re: [SAtalk] SA very slow (hangs?) on this message, or is it just me?
+References: <15726.1821.102072.86673@iller.crt.se>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Thu, 29 Aug 2002 12:46:12 +0100
+Date: Thu, 29 Aug 2002 12:46:12 +0100
+
+Urban Boquist wrote:
+> If I run spamassassin on this message:
+> 
+>    http://www.boquist.net/stort-sup-brev
+> 
+> it seems to hang. Memory usage goes up to 73MB and stays there. I have
+> let it run for an hour before I killed it. This was on a
+> Pentium-II-366. Yes, I know, a bit slow, but still...
+> 
+> Can anyone else confirm this hang? Maybe I should just upgrade...
+
+Don't run SA on mails this large. Most people tend to ignore mails 
+larger than about 250K in spamassassin processing, because it just kills 
+performance. There are some known issues with the parsing (such as the 
+HTML parsing stuff which is much improved in 2.40 which we're soon to 
+release), but nothing that's too likely to be fixed by 2.40. Perhaps in 
+2.50 though.
+
+Matt.
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

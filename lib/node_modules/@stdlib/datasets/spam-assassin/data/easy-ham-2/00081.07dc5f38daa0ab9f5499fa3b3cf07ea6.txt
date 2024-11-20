@@ -1,0 +1,83 @@
+From ilug-admin@linux.ie  Mon Jul 22 18:12:00 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 59B7F440C9
+	for <jm@localhost>; Mon, 22 Jul 2002 13:11:59 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:11:59 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFGL901396 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 16:16:21 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id PAA32552 for <jm-ilug@jmason.org>;
+    Mon, 22 Jul 2002 15:55:24 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA31959; Mon, 22 Jul 2002 15:54:31 +0100
+Received: from homer.jinny.ie ([193.120.171.3]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA31911 for <ilug@linux.ie>; Mon,
+    22 Jul 2002 15:54:17 +0100
+Received: from jlooney.jinny.ie (fw [193.120.171.2]) by homer.jinny.ie
+    (8.9.3/8.11.2) with ESMTP id PAA09175 for <ilug@linux.ie>; Mon,
+    22 Jul 2002 15:18:58 +0100
+Received: (from john@localhost) by jlooney.jinny.ie (8.11.6/8.11.6) id
+    g6MErr715897 for ilug@linux.ie; Mon, 22 Jul 2002 15:53:53 +0100
+X-Authentication-Warning: jlooney.jinny.ie: john set sender to
+    jlooney@jinny.ie using -f
+Date: Mon, 22 Jul 2002 15:53:53 +0100
+From: "John P. Looney" <valen@tuatha.org>
+To: irish linux users group <ilug@linux.ie>
+Subject: Re: [ILUG] bind + lex + yacc...
+Message-Id: <20020722145353.GC14543@jinny.ie>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: irish linux users group <ilug@linux.ie>
+References: <20020722153905.A27790@ie.suberic.net>
+    <OFEGLPGPCHPACFLJPAILAEENDNAA.macarthy@iol.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <OFEGLPGPCHPACFLJPAILAEENDNAA.macarthy@iol.ie>
+User-Agent: Mutt/1.4i
+X-Os: Red Hat Linux 7.3/Linux 2.4.18-3
+X-Url: http://www.redbrick.dcu.ie/~valen
+X-Gnupg-Publickey: http://www.redbrick.dcu.ie/~valen/public.asc
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Mon, Jul 22, 2002 at 03:48:54PM +0100, Justin MacCarthy mentioned:
+> Never having to support a large network myself, I know very little about
+> this..  but what do lex & yacc have to do with anything ?
+> These are language parsers, used to build complilers / interptreters  and
+> the like???!!!
+
+ Bind configs are one sort of file.
+
+ I think the person asking Kevin the question would like to have a nice
+config language like:
+
+ domain: "bing.com"
+ hosts:  www mail arse smeg twitter
+ ttl:    20000
+
+ and then using lex & yacc, they could write a program that converts
+between that config file, and the tedious bind configs, and maybe even
+auto-generate a reverse DNS config file while they are at it.
+
+ Personally, I think they are demented. It's much more a job for something
+simple like Sed or Awk. People using lex & yacc just because they can make
+baby jesus cry.
+
+Kate
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

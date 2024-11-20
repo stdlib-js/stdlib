@@ -1,0 +1,97 @@
+From exmh-workers-admin@redhat.com  Wed Aug 28 15:08:10 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5E3CC44155
+	for <jm@localhost>; Wed, 28 Aug 2002 10:08:07 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 28 Aug 2002 15:08:07 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7SEA6Z27663 for
+    <jm-exmh@jmason.org>; Wed, 28 Aug 2002 15:10:07 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id C8E3F40A57; Wed, 28 Aug 2002
+    10:10:14 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id BFD1B40A05
+    for <exmh-workers@listman.redhat.com>; Wed, 28 Aug 2002 10:09:21 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g7SE9Iq22132 for exmh-workers@listman.redhat.com; Wed, 28 Aug 2002
+    10:09:18 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g7SE9IY22128 for
+    <exmh-workers@redhat.com>; Wed, 28 Aug 2002 10:09:18 -0400
+Received: from ratree.psu.ac.th ([202.28.97.6]) by mx1.spamassassin.taint.org
+    (8.11.6/8.11.6) with SMTP id g7SDs9l32404 for <exmh-workers@redhat.com>;
+    Wed, 28 Aug 2002 09:54:11 -0400
+Received: from delta.cs.mu.OZ.AU (dhcp253.cc.psu.ac.th [192.168.2.253]) by
+    ratree.psu.ac.th (8.11.6/8.11.6) with ESMTP id g7SE96U06027;
+    Wed, 28 Aug 2002 21:09:06 +0700 (ICT)
+Received: from munnari.OZ.AU (localhost [127.0.0.1]) by delta.cs.mu.OZ.AU
+    (8.11.6/8.11.6) with ESMTP id g7SE6UW21101; Wed, 28 Aug 2002 21:06:30
+    +0700 (ICT)
+From: Robert Elz <kre@munnari.OZ.AU>
+To: Chris Garrigues <cwg-dated-1030460647.7351a3@DeepEddy.Com>
+Cc: exmh-workers@spamassassin.taint.org
+Subject: Re: New Sequences Window
+In-Reply-To: <1030028647.6462.TMDA@deepeddy.vircio.com>
+References: <1030028647.6462.TMDA@deepeddy.vircio.com>
+    <1029945287.4797.TMDA@deepeddy.vircio.com>
+    <1029882468.3116.TMDA@deepeddy.vircio.com> <9627.1029933001@munnari.OZ.AU>
+    <1029943066.26919.TMDA@deepeddy.vircio.com>
+    <1029944441.398.TMDA@deepeddy.vircio.com> <13277.1030015920@munnari.OZ.AU>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Message-Id: <21099.1030543590@munnari.OZ.AU>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Wed, 28 Aug 2002 21:06:30 +0700
+
+    Date:        Thu, 22 Aug 2002 10:04:06 -0500
+    From:        Chris Garrigues <cwg-dated-1030460647.7351a3@DeepEddy.Com>
+    Message-ID:  <1030028647.6462.TMDA@deepeddy.vircio.com>
+
+  | hmmm, I assume you're going to report this to the nmh folks?
+
+It turns out, when I did some investigation, that my memory of how MH
+worked here was wrong (that's not unusual) - the -seq switch seems to
+have always done -nolist (requiring a subsequent -list to turn it on
+again).
+
+Given that, I have no idea how the pick code as it was ever worked.  In
+fact, it quite possibly never did the way it was intended to (I have just
+been browsing the 2.5 sources, and that seems to be attempting to do things
+that I never saw happen).
+
+It may be that your new sequence method just exposed the bug that had been
+there all along.
+
+Given this, I won't be sending any bug reports to the nmh people.  If nmh
+ever seems to be showing any signs further progress, and if I remember this
+then, I might send them a change request.   The code to make the change is
+trivial.
+
+kre
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+

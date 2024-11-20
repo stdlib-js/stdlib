@@ -1,0 +1,94 @@
+From fork-admin@xent.com  Fri Sep  6 18:35:54 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id C343816F03
+	for <jm@localhost>; Fri,  6 Sep 2002 18:35:53 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 18:35:53 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g86HO6C16793 for <jm@jmason.org>;
+    Fri, 6 Sep 2002 18:24:12 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id D61E22940BD; Fri,  6 Sep 2002 10:21:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from venus.phpwebhosting.com (venus.phpwebhosting.com
+    [64.29.16.27]) by xent.com (Postfix) with SMTP id 7796729409E for
+    <fork@xent.com>; Fri,  6 Sep 2002 10:20:47 -0700 (PDT)
+Received: (qmail 32622 invoked by uid 508); 6 Sep 2002 17:19:18 -0000
+Received: from unknown (HELO hydrogen.leitl.org) (217.80.40.31) by
+    venus.phpwebhosting.com with SMTP; 6 Sep 2002 17:19:18 -0000
+Received: from localhost (eugen@localhost) by hydrogen.leitl.org
+    (8.11.6/8.11.6) with ESMTP id g86HJEt13411; Fri, 6 Sep 2002 19:19:14 +0200
+X-Authentication-Warning: hydrogen.leitl.org: eugen owned process doing -bs
+From: Eugen Leitl <eugen@leitl.org>
+To: Russell Turpin <deafbox@hotmail.com>
+Cc: <fork@spamassassin.taint.org>
+Subject: Re: Selling Wedded Bliss (was Re: Ouch...)
+In-Reply-To: <F66Cl9FopYC98Bi89Qt00000219@hotmail.com>
+Message-Id: <Pine.LNX.4.33.0209061907540.12977-100000@hydrogen.leitl.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 6 Sep 2002 19:19:14 +0200 (CEST)
+
+On Fri, 6 Sep 2002, Russell Turpin wrote:
+
+> You seem not to know what a "poor man's divorce" is.
+
+I know very little in general. I hope you can excuse me for that.
+
+> It is an old term, from the time when divorce was
+> difficult, but walking was easy, and identity was
+> not so locked down as it is today. Not every widow
+> had a dead husband.
+
+Yeah, you could always run away, strangle your wife, your wife could
+always poison you, scooby dooby doo. It wasn't the rule, and I don't feel 
+like desintegrating into a nitpicking orgy. You win.
+ 
+> >I'm seeing lack of innovation ..
+> 
+> That doesn't tell us anything except what is
+> happening in Eugen Leitl's life. The more common
+
+Yeah, I happen to live in a small hole, under the roots of an old oak 
+tree. You don't, so innovation is a global phenomenon.
+
+> observation is that the rate of change is increasing.
+> Do you have any data that might persuade us that what
+> you see is more telling than what others see?
+> 
+> >gerontocracy favors gerontocracy.
+> 
+> I would have thought that gerontocracy favors biotech
+> research and plenty of young workers to pay taxes.
+
+So thought I, but apparently all it favours is a lot of whining about good
+old times, the inability of youngn's to pay for your pension and the
+health insurance, and the generic influx of uncouth furriners, which must 
+be stopped, Somehow.
+
+> Note that the fertility rate doesn't result from
+> decisions made by the old, but by the young. If we
+
+Uh, I'm kinda aware of that.
+
+> want more kids, we have to convince people who are
+> in their twenties to become parents.
+
+Now we're talking. Got a plan?
+
+

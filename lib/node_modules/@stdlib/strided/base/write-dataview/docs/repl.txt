@@ -1,0 +1,99 @@
+
+{{alias}}( N, x, sx, view, sv, littleEndian )
+    Copies elements from an input strided array to elements in a strided
+    DataView.
+
+    The `N` and stride parameters determine which elements are accessed at
+    runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    x: ArrayLikeObject
+        Input array.
+
+    sx: integer
+        Index increment for `x`.
+
+    view: DataView
+        Output DataView.
+
+    sv: integer
+        Index increment (in bytes) for `view`.
+
+    littleEndian: boolean
+        Boolean indicating whether to store the data in little-endian format.
+
+    Returns
+    -------
+    view: DataView
+        Output DataView.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/float32}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var buf = new {{alias:@stdlib/array/buffer}}( x.length*x.BYTES_PER_ELEMENT );
+    > var v = new {{alias:@stdlib/array/dataview}}( buf );
+    > {{alias}}( x.length, x, 1, v, x.BYTES_PER_ELEMENT, true )
+    <DataView>
+    > v.getFloat32( 0, true )
+    1.0
+
+
+{{alias}}.ndarray( N, x, sx, ox, view, sv, ov, littleEndian )
+    Copies elements from an input strided array to elements in a strided
+    DataView using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    x: ArrayLikeObject
+        Input array.
+
+    sx: integer
+        Index increment for `x`.
+
+    ox: integer
+        Starting index for `x`.
+
+    view: DataView
+        Output DataView.
+
+    sv: integer
+        Index increment (in bytes) for `view`.
+
+    ov: integer
+        Starting index (in bytes) for `view`.
+
+    littleEndian: boolean
+        Boolean indicating whether to store the data in little-endian format.
+
+    Returns
+    -------
+    view: DataView
+        Output DataView.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/float32}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var buf = new {{alias:@stdlib/array/buffer}}( x.length*x.BYTES_PER_ELEMENT );
+    > var v = new {{alias:@stdlib/array/dataview}}( buf );
+    > {{alias}}.ndarray( x.length, x, 1, 0, v, x.BYTES_PER_ELEMENT, 0, true )
+    <DataView>
+    > v.getFloat32( 0, true )
+    1.0
+
+    See Also
+    --------
+

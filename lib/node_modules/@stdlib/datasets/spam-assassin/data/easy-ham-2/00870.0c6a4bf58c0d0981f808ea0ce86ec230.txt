@@ -1,0 +1,104 @@
+From fork-admin@xent.com  Thu Jul 25 11:09:15 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 90AE3440D6
+	for <jm@localhost>; Thu, 25 Jul 2002 06:08:41 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 11:08:41 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6OMDZ411101 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 23:13:36 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 9043D294159; Wed, 24 Jul 2002 15:12:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mail.evergo.net (unknown [206.191.151.2]) by xent.com
+    (Postfix) with SMTP id 06D85294157 for <fork@xent.com>; Wed,
+    24 Jul 2002 15:11:47 -0700 (PDT)
+Received: (qmail 14624 invoked from network); 24 Jul 2002 22:11:46 -0000
+Received: from dsl.206.191.151.102.evergo.net (HELO JMHALL)
+    (206.191.151.102) by mail.evergo.net with SMTP; 24 Jul 2002 22:11:46 -0000
+Reply-To: <johnhall@evergo.net>
+From: "John Hall" <johnhall@evergo.net>
+To: "'Karl Anderson'" <kra@monkey.org>, <fork@spamassassin.taint.org>
+Subject: RE: [Baseline] Raising chickens the high-tech way
+Message-Id: <000b01c2335f$19fff630$0200a8c0@JMHALL>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.2627
+In-Reply-To: <m37kjkzxvo.fsf@localhost.localdomain>
+Importance: Normal
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 24 Jul 2002 15:11:46 -0700
+
+My take: if genetic engineering includes selective breeding, then it
+also includes human pairs that are not randomly grouped.
+
+It doesn't matter if those two intend what they are doing, they are
+engaged in a 'selected sort'.  It has been brought up that a boss no
+longer marries his secretary.  Now the female law partner selects
+another high earning mate (at least associate law).  So instead of two
+couples making $140K a piece (100K + 40K) you have one pair with $200
+and one pair with $80 and this has some interesting social effects.  And
+one of those effects is the difference in their children (on average).
+
+
+> -----Original Message-----
+> From: fork-admin@xent.com [mailto:fork-admin@xent.com] On Behalf Of
+Karl
+> Anderson
+> Sent: Wednesday, July 24, 2002 1:15 PM
+> To: fork@spamassassin.taint.org
+> Subject: Re: [Baseline] Raising chickens the high-tech way
+> 
+> Elias Sinderson <elias@cse.ucsc.edu> writes:
+> 
+> > Sorry, Karl, your confusing things.
+> 
+> No, it's just a silly discussion, but that's what picky semantic
+> discussions turn into :)
+> 
+> > Thos is saying that selective
+> > breeding should be counted as genetic engineering, whereas you are
+> > extending his definition to include the attration that your parents
+> felt...
+> 
+> Yes, I'm saying that if he extends "genetic engineering" to include
+> selecting animals to breed, he must extend it to include selecting
+> people to breed with.
+> 
+> > Unless your parents were selectively bred like livestock to produce
+you,
+> > I don't think you can make that case...  :-)
+> 
+> I'm saying that my parents selected each other, and that they did so
+> because (among other reasons) each wanted the other's genes to be
+> mixed with their own in the offspring that they were planning.
+> 
+> What does it matter that they were selecting to produce their own
+> offspring, rather than the offspring of two unrelated animals?
+> 
+> --
+> Karl Anderson      kra@monkey.org
+http://www.monkey.org/~kra/
+> http://xent.com/mailman/listinfo/fork
+
+http://xent.com/mailman/listinfo/fork
+
+

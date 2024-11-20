@@ -1,0 +1,89 @@
+#!/usr/bin/env node
+
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2018 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+'use strict';
+
+// MODULES //
+
+var resolve = require( 'path' ).resolve;
+var readFileSync = require( '@stdlib/fs/read-file' ).sync;
+var CLI = require( '@stdlib/cli/ctor' );
+var cwd = require( '@stdlib/process/cwd' );
+var rename = require( './../lib' );
+
+
+// MAIN //
+
+/**
+* Main execution sequence.
+*
+* @private
+* @returns {void}
+*/
+function main() {
+	var oldPath;
+	var newPath;
+	var flags;
+	var args;
+	var cli;
+	var dir;
+
+	// Create a command-line interface:
+	cli = new CLI({
+		'pkg': require( './../package.json' ),
+		'options': require( './../etc/cli_opts.json' ),
+		'help': readFileSync( resolve( __dirname, '..', 'docs', 'usage.txt' ), {
+			'encoding': 'utf8'
+		})
+	});
+
+	// Get any provided command-line options:
+	flags = cli.flags();
+	if ( flags.help || flags.version ) {
+		return;
+	}
+
+	// Get any provided command-line arguments:
+	args = cli.args();
+
+	if ( args.length !== 2 ) {
+		return cli.error( new Error( 'invalid invocation. Must provide two arguments: an old path and a new path.' ) );
+	}
+	dir = cwd();
+	oldPath = resolve( dir, args[ 0 ] );
+	newPath = resolve( dir, args[ 1 ] );
+
+	rename( oldPath, newPath, done );
+
+	/**
+	* Callback invoked upon renaming a file.
+	*
+	* @private
+	* @param {Error} [error] - error object
+	* @returns {void}
+	*/
+	function done( error ) {
+		if ( error ) {
+			return cli.error( error );
+		}
+	}
+}
+
+main();

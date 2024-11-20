@@ -1,0 +1,79 @@
+From rpm-list-admin@freshrpms.net  Sun Oct  6 22:52:10 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 758EC16F1E
+	for <jm@localhost>; Sun,  6 Oct 2002 22:51:31 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sun, 06 Oct 2002 22:51:31 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g95MTCK26314 for
+    <jm-rpm@jmason.org>; Sat, 5 Oct 2002 23:29:12 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g95MO2f16687; Sun, 6 Oct 2002 00:24:02
+    +0200
+Received: from swampfox.owlriver.com (swampfox.owlriver.com
+    [206.21.107.147]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g95MMmf10832 for <rpm-list@freshrpms.net>; Sun, 6 Oct 2002 00:22:49 +0200
+Received: from localhost (localhost [127.0.0.1]) by swampfox.owlriver.com
+    (8.11.6/8.11.6) with ESMTP id g95MMkU13081 for <rpm-list@freshrpms.net>;
+    Sat, 5 Oct 2002 18:22:47 -0400
+From: R P Herrold <herrold@owlriver.com>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: f-rpm] Re: Problem building lame-3.92-fr5.src.rpm on RH8
+In-Reply-To: <200210051256.03011.coy.krill@verizon.net>
+Message-Id: <Pine.LNX.4.44.0210051821380.10287-100000@swampfox.owlriver.com>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Sat, 5 Oct 2002 18:22:46 -0400 (EDT)
+Date: Sat, 5 Oct 2002 18:22:46 -0400 (EDT)
+
+On Sat, 5 Oct 2002, Coy Krill wrote:
+
+> Sure. I used the following command to rebuild the package:
+> 
+> rpmbuild --rebuild --target i586 lame-3.92-fr5.src.rpm
+> 
+> And here is the error output for the files:
+> 
+> RPM build errors:
+>     user dude does not exist - using root
+>     user dude does not exist - using root
+
+harmless ...
+
+>     Installed (but unpackaged) file(s) found:
+>    /usr/share/doc/lame/html/basic.html
+>    /usr/share/doc/lame/html/contributors.html
+>    /usr/share/doc/lame/html/examples.html
+>    /usr/share/doc/lame/html/history.html
+<snip>
+
+This is a problem with the .spec file not accounting for all 
+the files produced.  see: 
+  http://www.rpm.org/hintskinks/unpackaged-files/   
+
+-- Russ Herrold
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

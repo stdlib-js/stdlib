@@ -1,0 +1,45 @@
+
+{{alias}}( W )
+    Returns an accumulator function which incrementally computes a moving
+    harmonic mean.
+
+    The `W` parameter defines the number of values over which to compute the
+    moving harmonic mean.
+
+    If provided a value, the accumulator function returns an updated moving
+    harmonic mean. If not provided a value, the accumulator function returns the
+    current moving harmonic mean.
+
+    As `W` values are needed to fill the window buffer, the first `W-1` returned
+    values are calculated from smaller sample sizes. Until the window is full,
+    each returned value is calculated from all provided values.
+
+    Parameters
+    ----------
+    W: integer
+        Window size.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}( 3 );
+    > var v = accumulator()
+    null
+    > v = accumulator( 2.0 )
+    2.0
+    > v = accumulator( 5.0 )
+    ~2.86
+    > v = accumulator( 3.0 )
+    ~2.90
+    > v = accumulator( 5.0 )
+    ~4.09
+    > v = accumulator()
+    ~4.09
+
+    See Also
+    --------
+

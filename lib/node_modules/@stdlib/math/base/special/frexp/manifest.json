@@ -1,0 +1,47 @@
+{
+  "options": {},
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-infinite",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/number/float64/base/normalize",
+        "@stdlib/number/float64/base/exponent",
+        "@stdlib/number/float64/base/from-words",
+        "@stdlib/number/float32/base/to-word"
+      ]
+    }
+  ]
+}
+

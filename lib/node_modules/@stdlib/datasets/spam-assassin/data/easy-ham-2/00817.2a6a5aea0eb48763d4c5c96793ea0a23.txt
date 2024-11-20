@@ -1,0 +1,160 @@
+From fork-admin@xent.com  Wed Jul 24 01:57:58 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 62115440CC
+	for <jm@localhost>; Tue, 23 Jul 2002 20:57:58 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 01:57:58 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6O0xp408090 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 01:59:51 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 9222B2940ED; Tue, 23 Jul 2002 17:49:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from relay.pair.com (relay1.pair.com [209.68.1.20]) by xent.com
+    (Postfix) with SMTP id E86B82940A8 for <fork@xent.com>; Tue,
+    23 Jul 2002 17:48:19 -0700 (PDT)
+Received: (qmail 32188 invoked from network); 24 Jul 2002 00:57:30 -0000
+Received: from dsl-64-195-248-145.telocity.com (HELO golden)
+    (64.195.248.145) by relay1.pair.com with SMTP; 24 Jul 2002 00:57:30 -0000
+X-Pair-Authenticated: 64.195.248.145
+Message-Id: <01fb01c232ad$16a7ec70$640a000a@golden>
+From: "Gordon Mohr" <gojomo@usa.net>
+To: <fork@spamassassin.taint.org>
+References: <F568C0CD-9E71-11D6-B583-000393A46DEA@alumni.caltech.edu>
+Subject: Re: HD/ID: High-Def Independence Day
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 23 Jul 2002 17:57:29 -0700
+
+"SpamAssassin Killed My Independence Day Party"
+
+With all the spam that gets through, I had no idea
+a filter was in effect at the FoRK listserv. 
+
+Turn it off! It not only risks silent false 
+positives, but suffers them in such a way that 
+individuals cannot adjust/detect/remedy them. 
+
+Also, anti-spam startups need end-users. 
+Centralized spam fighting takes food out
+of those coders' mouths!
+
+I still think self-add whitelists are underrated. 
+A FoRK whitelist would presumably start with
+all subscribers, and grow from there. Bouncing
+problem mail, in a way that humans can understand
+how to whitelist themselves for a resend, avoids 
+the problem of silent failures without opening the 
+door to lazy, forged-"from" spammers. 
+
+- Gordon
+
+----- Original Message ----- 
+From: "Rohit Khare" <khare@alumni.caltech.edu>
+To: <fork@spamassassin.taint.org>
+Sent: Tuesday, July 23, 2002 12:25 PM
+Subject: Re: HD/ID: High-Def Independence Day
+
+
+> On Sunday, June 30, 2002, at 12:18 AM, Rohit Khare wrote:
+> > You're all invited to join me for a South Bay Hi-Def spectacle at my 
+> > apartment in Sunnyvale on the Fourth!
+> 
+> So here's the final report on the HD/ID party. As no less than TEN 
+> forkers pointed out, the invitation, while sent on Sunday 6/30, was only 
+> delivered ten days later on 7/9.
+> 
+> It got flagged as spam.
+> 
+> Yes, on a mailing list awash in crap -- and some it is even unsolicited 
+> commercial email, heavens! -- our trusty mailman filters captured and 
+> quarantined just two posts that week, one from me that was > 100K (the 
+> fat articles) and one that was bcc:d (the invite).
+> 
+> Now, it was a little difficult to recalibrate self-esteem, which as you 
+> can imagine was proportional to the two-digit attendance  -- in binary!
+> 
+> According to the George Washington documentary, I almost had as much 
+> alcohol on hand than he did -- Virginia tradition being to copiously 
+> lubricate each voter. Election day was a public festival day, and it 
+> cost poor George an average of SIXTY-FOUR shots of hard liquor PER VOTER 
+> that day...
+> 
+> So, herewith is the prize for most appropriate flame my delayed invite 
+> got:
+> 
+> > I unfortunately will have had other plans and thus will
+> > not be able to have made it.  Yes.
+> >
+> > -faisal
+> 
+> One of our competitors added:
+> > Wow - I just got this now - I guess that was KnowLate!
+> 
+> And there is no prize for guessing which cold, dark forks emitted these 
+> two plaints:
+> 
+>  From Whiny Dwarf:
+> > Fix your mail server! just a bit late!
+> 
+> And Angry Dwarf:
+> > God DAAAAAMMMMMNNNNN IIIIITTT! I didn't see your message until now! 
+> > Fuck! Fuck! Fuck!
+> >
+> > We would have been there if I had seen the message before. Kuso! (as 
+> > the Japanese would say).
+> >
+> > Fuck.
+> > Fuck.
+> > Fuck.
+> > Fuck.
+> > Fuck.
+> > Fuck.
+> 
+> Perhaps I should remind the latter gently that it was not in any way his 
+> fault. The universe *was* out to get him!
+> 
+> And finally, here's an object lesson for all ye of little faith to learn 
+> from my sins:
+> 
+> > SpamAssassin rated it spam (barely). Gotta stop
+> > using those "words and phrases which indicate porn" :-)
+> 
+> Yes, boys and girls, Mr. Assassin, like Mr. Lott, gets very annoyed if 
+> you call the Great American Shrine a... "boob tube"
+> 
+> :-)
+>    Rohit
+> 
+> PS. This is the obscure footnote where I actually hide the bits in this 
+> post. What we just encountered here is that an event-processing system 
+> with a 10-day RTT cannot be used to reliably handle events more often 
+> than once every 20 days. That's why I waited to reply. six bonus points 
+> to anyone who can prove this hunch of mine. Hint: try analyzing the 
+> problem in frequency-domain.
+> 
+> http://xent.com/mailman/listinfo/fork
+
+http://xent.com/mailman/listinfo/fork
+
+

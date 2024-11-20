@@ -1,0 +1,57 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2021 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: cancel
+
+# Workflow triggers:
+on:
+  # Allow the workflow to be manually run:
+  workflow_dispatch:
+
+# Workflow jobs:
+jobs:
+
+  # Define a job to cancel existing workflow runs:
+  cancel:
+
+    # Define a display name:
+    name: 'Cancel workflow runs'
+
+    # Define the type of virtual host machine:
+    runs-on: 'ubuntu-latest'
+
+    # Time limit:
+    timeout-minutes: 3
+
+    # Define the sequence of job steps...
+    steps:
+
+      # Cancel existing workflow runs:
+      - name: 'Cancel existing workflow runs'
+        # Pin action to full length commit SHA
+        uses: styfle/cancel-workflow-action@85880fa0301c86cca9da44039ee3bb12d3bedbfa # v0.12.1
+        with:
+          workflow_id: >-
+            benchmark.yml,
+            examples.yml,
+            test.yml,
+            test_coverage.yml,
+            test_install.yml,
+            publish.yml
+          access_token: ${{ github.token }}

@@ -1,0 +1,248 @@
+Return-Path: guido@python.org
+Delivery-Date: Sun Sep  8 04:38:47 2002
+From: guido@python.org (Guido van Rossum)
+Date: Sat, 07 Sep 2002 23:38:47 -0400
+Subject: [Spambayes] test sets?
+In-Reply-To: Your message of "Sat, 07 Sep 2002 22:55:12 EDT."
+             <LNBBLJKPBEHFEDALKOLCOEOBBCAB.tim.one@comcast.net> 
+References: <LNBBLJKPBEHFEDALKOLCOEOBBCAB.tim.one@comcast.net> 
+Message-ID: <200209080338.g883clw17223@pcp02138704pcs.reston01.va.comcast.net>
+
+> > But it also identified as spam everything in my inbox that had any
+> > MIME structure or HTML parts, and several messages in my saved 'zope
+> > geeks' list that happened to be using MIME and/or HTML.
+> 
+> Do you know why?  The strangest implied claim there is that it hates MIME
+> independent of HTML.  For example, the spamprob of 'content-type:text/plain'
+> in that pickle is under 0.21.  'content-type:multipart/alternative' gets
+> 0.93, but that's not a killer clue, and one bit of good content will more
+> than cancel it out.
+
+I reran the experiment (with the new SpamHam1.pik, but it doesn't seem
+to make a difference).  Here are the clues for the two spams in my
+inbox (in hammie.py's output format, which sorts the clues by
+probability; the first two numbers are the message number and overall
+probability; then line-folded):
+
+    66 1.00 S 'facility': 0.01; 'speaker': 0.01; 'stretch': 0.01;
+    'thursday': 0.01; 'young,': 0.01; 'mistakes': 0.12; 'growth':
+    0.85; '>content-type:text/plain': 0.85; 'please': 0.85; 'capital':
+    0.92; 'series': 0.92; 'subject:Don': 0.94; 'companies': 0.96;
+    '>content-type:text/html': 0.96; 'fee': 0.96; 'money': 0.96;
+    '8:00am': 0.99; '9:00am': 0.99; '>content-type:image/gif': 0.99;
+    '>content-type:multipart/alternative': 0.99; 'attend': 0.99;
+    'companies,': 0.99; 'content-type/type:multipart/alternative':
+    0.99; 'content-type:multipart/related': 0.99; 'economy': 0.99;
+    'economy"': 0.99
+
+This has 6 content-types as spam clues, only one of which is related
+to HTML, despite there being an HTML alternative (and 12 other spam
+clues, vs. only 6 ham clues).  This was an announcement of a public
+event by our building owners, with a text part that was the same as
+the HTML (AFAICT).  Its language may be spammish, but the content-type
+clues didn't help.  (BTW, it makes me wonder about the wisdom of
+keeping punctuation -- 'economy' and 'economy"' to me don't seem to
+deserve two be counted as clues.)
+
+    76 1.00 S '(near': 0.01; 'alexandria': 0.01; 'conn': 0.01;
+    'from:adam': 0.01; 'from:email addr:panix': 0.01; 'poked': 0.01;
+    'thorugh': 0.01; 'though': 0.03; "i'm": 0.03; 'reflect': 0.05;
+    "i've": 0.06; 'wednesday': 0.07; 'content-disposition:inline':
+    0.10; 'contacting': 0.93; 'sold': 0.96; 'financially': 0.98;
+    'prices': 0.98; 'rates': 0.99; 'discount.': 0.99; 'hotel': 0.99;
+    'hotels': 0.99; 'hotels.': 0.99; 'nights,': 0.99; 'plaza': 0.99;
+    'rates,': 0.99; 'rates.': 0.99; 'rooms': 0.99; 'season': 0.99;
+    'stations': 0.99; 'subject:Hotel': 0.99
+
+Here is the full message (Received: headers stripped), with apologies
+to Ziggy and David:
+
+"""
+Date: Fri, 06 Sep 2002 17:17:13 -0400
+From: Adam Turoff <ziggy@panix.com>
+Subject: Hotel information
+To: guido@python.org, davida@activestate.com
+Message-id: <20020906211713.GK7451@panix.com>
+MIME-version: 1.0
+Content-type: text/plain; charset=us-ascii
+Content-disposition: inline
+User-Agent: Mutt/1.4i
+
+I've been looking into hotels.  I poked around expedia for availability
+from March 26 to 29 (4 nights, wednesday thorugh saturday).  
+
+I've also started contacting hotels for group rates; some of the group
+rates are no better than the regular rates, and they require signing a
+contract with a minimum number of rooms sold (with someone financially
+responsible for unbooked rooms).  Most hotels are less than responsive...
+
+	Radission - Barcelo Hotel (DuPont Circle)
+	$125/night, $99/weekend
+
+	State Plaza hotel (Foggy Bottom; near GWU)
+	$119/night, $99/weekend
+
+	Hilton Silver Spring (Near Metro, in suburban MD)
+	$99/hight, $74/weekend
+
+	Windsor Park Hotel
+	Conn Ave, between DuPont Circle/Woodley Park Metro stations
+	$95/night; needs a car
+
+	Econo Lodge Alexandria (Near Metro, in suburban VA)
+	$95/night
+
+This is a hand picked list; I ignored anything over $125/night, even
+though there are some really well situated hotels nearby at higher rates.
+Also, I'm not sure how much these prices reflect an expedia-only
+discount.  I can't vouch for any of these hotels, either.
+
+I also found out that the down season for DC Hotels are mid-june through
+mid-september, and mid-november through mid-january.
+
+Z.
+"""
+
+This one has no MIME structure nor HTML!  It even has a
+Content-disposition which is counted as a non-spam clue.  It got
+f-p'ed because of the many hospitality-related and money-related
+terms.  I'm surprised $125/night and similar aren't clues too.  (And
+again, several spam clues are duplicated with different variations:
+'hotel', 'hotels', 'hotels.', 'subject:Hotel', 'rates,', 'rates.'.
+
+> WRT hating HTML, possibilities include:
+> 
+> 1. It really had to do with something other than MIME/HTML.
+> 
+> 2. These are pure HTML (not multipart/alternative with a text/plain part),
+>    so that the tags aren't getting stripped.  The pickled classifier
+>    despises all hints of HTML due to its c.l.py heritage.
+> 
+> 3. These are multipart/alternative with a text/plain part, but the
+>    latter doesn't contain the same text as the text/html part (for
+>    example, as Anthony reported, perhaps the text/plain part just
+>    says something like "This is an HMTL message.").
+> 
+> If it's #2, it would be easy to add an optional bool argument to tokenize()
+> meaning "even if it is pure HTML, strip the tags anyway".  In fact, I'd like
+> to do that and default it to True.  The extreme hatred of HTML on tech lists
+> strikes me as, umm, extreme <wink>.
+
+I also looked in more detail at some f-p's in my geeks traffic.  The
+first one's a doozie (that's the term, right? :-).  It has lots of
+HTML clues that are apparently ignored.  It was a multipart/mixed with
+two parts: a brief text/plain part containing one or two sentences, a
+mondo weird URL:
+
+http://x60.deja.com/[ST_rn=ps]/getdoc.xp?AN=687715863&CONTEXT=973121507.1408827441&hitnum=23
+
+and some employer-generated spammish boilerplate; the second part was
+the HTML taken directly from the above URL.  Clues:
+
+    43 1.00 S '"main"': 0.01; '(later': 0.01; '(lots': 0.01; '--paul':
+    0.01; '1995-2000': 0.01; 'adopt': 0.01; 'apps': 0.01; 'commands':
+    0.01; 'deja.com': 0.01; 'dejanews,': 0.01; 'discipline': 0.01;
+    'duct': 0.01; 'email addr:digicool': 0.01; 'email name:paul':
+    0.01; 'everitt': 0.01; 'exist,': 0.01; 'forwards': 0.01;
+    'framework': 0.01; 'from:email addr:digicool': 0.01; 'from:email
+    name:<paul': 0.01; 'from:paul': 0.01; 'height': 0.01;
+    'hodge-podge': 0.01; 'http0:deja': 0.01; 'http0:zope': 0.01;
+    'http1:[st_rn': 0.01; 'http1:comp': 0.01; 'http1:getdoc': 0.01;
+    'http1:ps]': 0.01; 'http>1:22': 0.01; 'http>1:24': 0.01;
+    'http>1:57': 0.01; 'http>1:an': 0.01; 'http>1:author': 0.01;
+    'http>1:fmt': 0.01; 'http>1:getdoc': 0.01; 'http>1:pr': 0.01;
+    'http>1:products': 0.01; 'http>1:query': 0.01; 'http>1:search':
+    0.01; 'http>1:viewthread': 0.01; 'http>1:xp': 0.01; 'http>1:zope':
+    0.01; 'inventing': 0.01; 'jsp': 0.01; 'jsp.': 0.01; 'logic': 0.01;
+    'maps': 0.01; 'neo': 0.01; 'newsgroup,': 0.01; 'object': 0.01;
+    'popup': 0.01; 'probable': 0.01; 'query': 0.01; 'query,': 0.01;
+    'resizes': 0.01; 'servlet': 0.01; 'skip:? 20': 0.01; 'stems':
+    0.01; 'subject:JSP': 0.01; 'sucks!': 0.01; 'templating': 0.01;
+    'tempted': 0.01; 'url.': 0.01; 'usenet': 0.01; 'usenet,': 0.01;
+    'wrote': 0.01; 'x-mailer:mozilla 4.74 [en] (windows nt 5.0; u)':
+    0.01; 'zope': 0.01; '#000000;': 0.99; '#cc0000;': 0.99;
+    '#ff3300;': 0.99; '#ff6600;': 0.99; '#ffffff;': 0.99; '&copy;':
+    0.99; '&gt;': 0.99; '&nbsp;&nbsp;': 0.99; '&quot;no': 0.99;
+    '.med': 0.99; '.small': 0.99; '0pt;': 0.99; '0px;': 0.99; '10px;':
+    0.99; '11pt;': 0.99; '12px;': 0.99; '18pt;': 0.99; '18px;': 0.99;
+    '1pt;': 0.99; '2px;': 0.99; '640;': 0.99; '8pt;': 0.99; '<!--':
+    0.99; '</b>': 0.99; '</body>': 0.99; '</head>': 0.99; '</html>':
+    0.99; '</script>': 0.99; '</select>': 0.99; '</span>': 0.99;
+    '</style>': 0.99; '</table>': 0.99; '</td>': 0.99; '</td></tr>':
+    0.99; '</tr>': 0.99; '</tr><tr': 0.99; '<b><a': 0.99; '<base':
+    0.99; '<body': 0.99; '<br>': 0.99; '<br>&nbsp;': 0.99; '<br><a':
+    0.99; '<br><span': 0.99; '<font': 0.99; '<form': 0.99; '<head>':
+    0.99; '<html>': 0.99; '<img': 0.99; '<input': 0.99; '<meta': 0.99;
+    '<option': 0.99; '<p>': 0.99; '<p>a': 0.99; '<script>': 0.99;
+    '<select': 0.99; '<span': 0.99; '<style>': 0.99; '<table': 0.99;
+    '<td': 0.99; '<td>': 0.99; '<td></td>': 0.99; '<td><img': 0.99;
+    '<tr': 0.99; '<tr>': 0.99; '<tr><td': 0.99; '<tr><td><img': 0.99;
+    'absolute;': 0.99; 'align="left"': 0.99; 'align=center': 0.99;
+    'align=left': 0.99; 'align=middle': 0.99; 'align=right': 0.99;
+    'align=right>': 0.99; 'alt=""': 0.99; 'bold;': 0.99; 'border=0':
+    0.99; 'border=0>': 0.99; 'color:': 0.99; 'colspan=2': 0.99;
+    'colspan=2>': 0.99; 'colspan=4': 0.99; 'face="arial"': 0.99;
+    'font-family:': 0.99; 'font-size:': 0.99; 'font-weight:': 0.99;
+    'footer': 0.99; 'for<br>': 0.99; 'fucking<br>': 0.99;
+    'height="1"': 0.99; 'height="16"': 0.99; 'height=1': 0.99;
+    'height=12': 0.99; 'height=125': 0.99; 'height=17': 0.99;
+    'height=18': 0.99; 'height=21': 0.99; 'height=4': 0.99;
+    'height=57': 0.99; 'height=60': 0.99; 'height=8': 0.99;
+    'hspace=0': 0.99; 'http0:g': 0.99; 'http0:web2': 0.99; 'http1:0':
+    0.99; 'http1:ads': 0.99; 'http1:d': 0.99; 'http1:page': 0.99;
+    'http1:site': 0.99; 'http>1:article': 0.99; 'http>1:back': 0.99;
+    'http>1:com': 0.99; 'http>1:d': 0.99; 'http>1:gif': 0.99;
+    'http>1:go': 0.99; 'http>1:group': 0.99; 'http>1:http': 0.99;
+    'http>1:post': 0.99; 'http>1:ps': 0.99; 'http>1:site': 0.99;
+    'http>1:st': 0.99; 'http>1:title': 0.99; 'http>1:yahoo': 0.99;
+    'inc.</a>': 0.99; 'jobs!': 0.99; 'normal;': 0.99; 'nowrap': 0.99;
+    'nowrap>': 0.99; 'nowrap><font': 0.99; 'padding:': 0.99;
+    'rowspan=2': 0.99; 'rowspan=3': 0.99; 'servlets,': 0.99;
+    'size=15': 0.99; 'size=35': 0.99; 'skip:< 10': 0.99; 'skip:b 60':
+    0.99; 'skip:h 110': 0.99; 'skip:h 170': 0.99; 'skip:h 200': 0.99;
+    'skip:h 240': 0.99; 'skip:h 250': 0.99; 'skip:h 290': 0.99;
+    'skip:v 40': 0.99; 'solid;': 0.99; 'text=#000000': 0.99; 'to<br>':
+    0.99; 'type="image"': 0.99; 'type="text"': 0.99; 'type=hidden':
+    0.99; 'type=image': 0.99; 'type=radio': 0.99; 'type=submit': 0.99;
+    'type=text': 0.99; 'valign=top': 0.99; 'valign=top>': 0.99;
+    'value="">': 0.99; 'visibility:': 0.99; 'width:': 0.99;
+    'width="33"': 0.99; 'width=1': 0.99; 'width=100%': 0.99;
+    'width=100%>': 0.99; 'width=12': 0.99; 'width=125': 0.99;
+    'width=130': 0.99; 'width=137': 0.99; 'width=2': 0.99; 'width=20':
+    0.99; 'width=25': 0.99; 'width=4': 0.99; 'width=468': 0.99;
+    'width=6': 0.99; 'width=72': 0.99; 'works<br>': 0.99
+
+The second f-p had the same structure (and sender :-); the third f-p
+had the same structure and a different sender.  Ditto the fifth, sixth.  (Not posting clues for
+brevity.)
+
+The fourth was different: plaintext with one very short sentence and a
+URL.  Clues:
+
+   300 1.00 S 'from:email addr:digicool': 0.01; 'http1:news': 0.24;
+   'from:email addr:com>': 0.32; 'from:tres': 0.50; 'http>1:1114digi':
+   0.50; 'proto:http': 0.50; 'subject:Geeks': 0.50; 'x-mailer:mozilla
+   4.75 [en] (x11; u; linux 2.2.14-5.0smp i686)': 0.50; 'take': 0.54;
+   'bool:noorg': 0.61; 'http0:com': 0.66; 'skip:h 50': 0.83;
+   'http>1:htm': 0.90; 'subject:Software': 0.96; 'http>1:business':
+   0.99; 'http>1:local': 0.99; 'subject:firm': 0.99; 'us:': 0.99
+
+The seventh was similar.
+
+I scanned a bunch more until I got bored, and most of them were either
+of the first form (brief text with URL followed by quoted HTML from
+website) or the second (brief text with one or more URLs).
+
+It's up to you to decide what to call this, but I think these are none
+of your #1, #2 or #3 (they're close to #3, but all are multipart/mixed
+rather than multipart/alternative).
+
+> > So I guess I'll have to retrain it (yes, you told me so :-).
+> 
+> That would be a different experiment.  I'm certainly curious to see whether
+> Jeremy's much-worse-than-mine error rates are typical or aberrant.
+
+It's possible that the corpus you've trained on is more homogeneous
+than you thought.
+
+--Guido van Rossum (home page: http://www.python.org/~guido/)

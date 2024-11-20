@@ -1,0 +1,117 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Fri Aug 23 11:12:17 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B566847C66
+	for <jm@localhost>; Fri, 23 Aug 2002 06:08:21 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 23 Aug 2002 11:08:21 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7MIAvZ19008 for <jm-sa@jmason.org>; Thu, 22 Aug 2002 19:10:57 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17hwPF-0002MC-00; Thu,
+    22 Aug 2002 11:10:05 -0700
+Received: from eclectic.kluge.net ([66.92.69.221]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17hwOY-0000GN-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Thu, 22 Aug 2002 11:09:22 -0700
+Received: (from felicity@localhost) by eclectic.kluge.net (8.11.6/8.11.6)
+    id g7MI97Q22397; Thu, 22 Aug 2002 14:09:07 -0400
+From: Theo Van Dinter <felicity@kluge.net>
+To: Ken Scott <admin@shellworld.net>
+Cc: spamassassin-talk@example.sourceforge.net
+Subject: Re: [SAtalk] Some Stupid Questions
+Message-Id: <20020822180907.GE16421@kluge.net>
+References: <Pine.BSF.4.44.0208221259380.24381-100000@server1.shellworld.net>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+    protocol="application/pgp-signature";
+    boundary="lteA1dqeVaWQ9QQl"
+Content-Disposition: inline
+In-Reply-To: <Pine.BSF.4.44.0208221259380.24381-100000@server1.shellworld.net>
+User-Agent: Mutt/1.4i
+X-GPG-Keyserver: http://wwwkeys.pgp.net
+X-GPG-Keynumber: 0xE580B363
+X-GPG-Fingerprint: 75B1 F6D0 8368 38E7 A4C5  F6C2 02E3 9051 E580 B363
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Thu, 22 Aug 2002 14:09:07 -0400
+Date: Thu, 22 Aug 2002 14:09:07 -0400
+
+
+--lteA1dqeVaWQ9QQl
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+On Thu, Aug 22, 2002 at 01:01:44PM -0500, Ken Scott wrote:
+> whitelist_from *@yahoogroups.com
+>=20
+> in his .spamassassin/user_prefs file, does that line not, in effect,
+> tell the program to take no action at all against any mail coming in from
+> yahoogroups.com, or is there still checking being done against it?  And if
+
+It still gets checked, but a negative score is added in.  And it doesn't
+mean "coming in from" it means "From: address is @yahoogroups.com".
+There's a Yahoo Groups compensation rule in 2.40 though. :)
+
+> the latter, what does he need to place in user_prefs to cause such mail
+> to be ignored?  I'm testing SA here with a few users who happen to be on
+
+ignored completely?  you can't do that, put in a procmail rule.
+
+> yahoogroups lists, before deploying it system-wide, and although the above
+> line has been added to their user_prefs files, much of their list mail is
+> still going to the spam folder due to all the usual things you would
+> expect to trigger SA.
+
+You'd want to either add your own compensation rule or up (negatively)
+the whitelist score.
+
+--=20
+Randomly Generated Tagline:
+There are perfectly good answers to those questions, but they'll have
+ to wait for another night.
+=20
+ 		-- Homer Simpson
+ 		   Homers Barbershop Quartet
+
+--lteA1dqeVaWQ9QQl
+Content-Type: application/pgp-signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE9ZSjDAuOQUeWAs2MRAk7zAKDCQJ8EQx5520TfLqgL+AogSqPOGwCg9fG4
+XMAdFMmo1slLu/d8Sqj44U0=
+=QHHd
+-----END PGP SIGNATURE-----
+
+--lteA1dqeVaWQ9QQl--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

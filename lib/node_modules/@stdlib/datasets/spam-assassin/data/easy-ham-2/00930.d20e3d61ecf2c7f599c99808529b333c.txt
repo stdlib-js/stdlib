@@ -1,0 +1,72 @@
+From fork-admin@xent.com  Tue Jul 30 08:30:04 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4F040440F0
+	for <jm@localhost>; Tue, 30 Jul 2002 03:30:03 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 30 Jul 2002 08:30:03 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6U7RFq12944 for <jm@jmason.org>;
+    Tue, 30 Jul 2002 08:27:16 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 59AC62940F1; Tue, 30 Jul 2002 00:25:12 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from t2.serverbox.net (64-71-187-101.ip.serverbox.net
+    [64.71.187.101]) by xent.com (Postfix) with SMTP id 53A562940F0 for
+    <fork@xent.com>; Tue, 30 Jul 2002 00:24:52 -0700 (PDT)
+Received: (qmail 2756 invoked from network); 30 Jul 2002 07:25:09 -0000
+Received: from unknown (HELO techdirt.techdirt.com) (12.236.16.241) by
+    t2.serverbox.net with SMTP; 30 Jul 2002 07:25:09 -0000
+Message-Id: <5.1.1.6.0.20020730001727.0498be60@techdirt.com>
+X-Sender: mike@techdirt.com
+X-Mailer: QUALCOMM Windows Eudora Version 5.1.1
+To: bitbitch@magnesium.net, fork@spamassassin.taint.org
+From: Mike Masnick <mike@techdirt.com>
+Subject: Re: One scam to rule them all..
+In-Reply-To: <15922161406.20020730000528@magnesium.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"; format=flowed
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 30 Jul 2002 00:23:07 -0700
+
+At 12:05 AM 7/30/02 -0700, bitbitch@magnesium.net wrote:
+>common.   The origination, at least to NPR's knowledge, starts with the 
+>scam elements being transposed from Nigeria,
+>to London, England.   Instead of the bereved widow of a Nigerian national, 
+>the originating con was directed to the 'heirs'
+>of Sir Frances Drake's estate.   If you were 'chosen' as an heir, you 
+>could contribute a portion of your money so that a
+>fellow heir (and scam artist) could reclaim the monetary largess in the 
+>Court of England, by proving that Elizabeth I had
+>nulled Sir Drake's will and taken his fortune as her own.   Oscar
+>Hartzell, the gent who started this scam, way back in the early 1800s,
+>managed to gain quite a fortune, all on the backs of idiots.   Sound familiar?
+
+Coincidentally enough, I'm currently in the middle of a pretty good book 
+about the Francis Drake scam called "Drake's Fortune" by Richard Raynor.
+
+Despite being pretty familiar with the whole 419 scam stuff (see my earlier 
+FoRK post from a few months back about how the whole scam works: 
+http://www.xent.com/pipermail/fork/2002-May/011928.html) I never put the 
+two together as being related.
+
+Apparently, I suck at pattern matching.
+
+-Mike
+
+http://xent.com/mailman/listinfo/fork
+
+

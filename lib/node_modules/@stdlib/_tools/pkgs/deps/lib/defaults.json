@@ -1,0 +1,8 @@
+{
+	"pattern": "**/*.js",
+	"ignore": [
+		"node_modules/**"
+	],
+	"builtins": false,
+	"dev": false
+}

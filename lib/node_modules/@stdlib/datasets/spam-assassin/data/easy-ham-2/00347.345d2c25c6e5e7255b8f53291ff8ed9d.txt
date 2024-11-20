@@ -1,0 +1,114 @@
+From ilug-admin@linux.ie  Tue Aug 13 10:28:08 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 1CD2344121
+	for <jm@localhost>; Tue, 13 Aug 2002 05:21:32 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:21:32 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7CIS9b29079 for
+    <jm-ilug@jmason.org>; Mon, 12 Aug 2002 19:28:09 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id TAA32291; Mon, 12 Aug 2002 19:26:34 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from linuxmafia.com (linuxmafia.COM [198.144.195.186]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id TAA32260 for <ilug@linux.ie>;
+    Mon, 12 Aug 2002 19:26:27 +0100
+Received: from rick by linuxmafia.com with local (Exim 3.35 #1 (Debian))
+    id 17eJtZ-0000xe-00 for <ilug@linux.ie>; Mon, 12 Aug 2002 11:26:25 -0700
+Date: Mon, 12 Aug 2002 11:26:25 -0700
+To: ilug@linux.ie
+Subject: Re: [ILUG] SUSE 8 disks? (thread changed slightly)
+Message-Id: <20020812182625.GA25331@linuxmafia.com>
+References: <20020812174932.58511.qmail@web13904.mail.yahoo.com>
+    <NBBBIGEGHIGMPCNKHCECOEGJEAAA.kenn@bluetree.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <NBBBIGEGHIGMPCNKHCECOEGJEAAA.kenn@bluetree.ie>
+User-Agent: Mutt/1.4i
+From: Rick Moen <rick@linuxmafia.com>
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Quoting Kenn Humborg (kenn@bluetree.ie):
+
+> Not everything on the SuSE CDs is GPL-ed.  IIRC, YAST has a more
+> "proprietary" license.  There may be other third-party commercial
+> products on there as well, which cannot be freely copied under the
+> GPL.
+
+Indeed.
+
+The ftp'able tree (e.g., 8.0 for i386) contains to my knowledge only
+items whose licences allow public redistribution, even where they aren't
+open source.  The retail boxed sets (Personal Edition, Professional
+Edition, and Enterprise Edition) _add_ a number of additional
+proprietary apps that are very much _not_ freely redistributable.
+I made a list, a while back:
+
+Freely redistributable proprietary apps in SuSE
+----------------------------------------------
+UofW pine/pico/pilot
+John Bradley's xv graphics tool
+T.C. Zhao and Mark Overmars's xforms/xformsd graphics toolkit
+(some others)  
+
+NON-freely redistributable apps (in boxed sets):
+-----------------------------------------------
+Siemens AG's DB4Web middleware
+Poet Software Corp. FastObjects SDK for Java and C++
+IBM Java 2
+Intel-v92ham winmodem driver
+MainConcept GmbH's MainActor video-editing package
+www.mimer.com's MimerSQL
+MGE UPS Systems's Personal Solution Pac (MGE power management software)
+Real Networks's RealPlayer
+Adobe Acrobat Reader
+Software AG's ADABAS D
+H+BEDV Datentechnik GmbH's AntiVir V
+Knox Sofware Comm.'s Arkeia
+Datan's dataplore digital-signal analysis package
+Enterprise Solution Server (ESS) ERP system
+Sun Microsystems Java2
+Borland Kylix Open Edition
+Moneydance
+OpenEIS enterprise information system
+Opera Software's Opera browser
+Heisch Automatisierungstechnik's rk512 serial interface to Simatic S5 /
+    S7 plcs
+SAP database
+Sun Microsystems Star Office
+VMware, Inc's VMware
+http://www.vshop.org/'s vshop e-commerce software for MySQL
+  
+
+All of the latter category either are available only via retail sale, or
+are available lawfully on the public Internet only from authorised
+distribution sites or on CDs from authorised distributors.  The exact
+terms differ.
+
+For example, you can download Borland Kylix Open Edition from
+borland.com, free of charge -- but you'll notice there's no mention of
+any right to redistribute.  That right is reserved by default to the
+copyright owners, and Borland doesn't include it in the Kylix
+proprietary licence.
+
+-- 
+Cheers,               "We're sorry; you have reached an imaginary number.
+Rick Moen             Please rotate your 'phone ninety degrees and try again."
+rick@linuxmafia.com
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

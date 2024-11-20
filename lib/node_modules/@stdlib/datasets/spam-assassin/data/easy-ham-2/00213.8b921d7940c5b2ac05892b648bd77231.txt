@@ -1,0 +1,60 @@
+From ilug-admin@linux.ie  Fri Aug  2 06:39:28 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C4EFD440F0
+	for <jm@localhost>; Fri,  2 Aug 2002 01:39:26 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 02 Aug 2002 06:39:26 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g725Xk209159 for
+    <jm-ilug@jmason.org>; Fri, 2 Aug 2002 06:33:46 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id GAA19274; Fri, 2 Aug 2002 06:31:18 +0100
+Received: from UKExt5.uk.exel.com ([193.132.29.98]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id GAA19222 for <ilug@linux.ie>; Fri,
+    2 Aug 2002 06:31:03 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [193.132.29.98] claimed to
+    be UKExt5.uk.exel.com
+From: "Dermot Beirne" <Dermot.Beirne@exel.com>
+To: "ilug" <ilug@linux.ie>
+Message-Id: <OFEA0082AC.CB847BB8-ON80256C09.001DF1FB@uk.exel.com>
+Date: Fri, 2 Aug 2002 06:27:04 +0100
+X-Mimetrack: Serialize by Router on UKExt5/Exel-External(Release 5.0.9a
+    |January 7, 2002) at 02/08/2002 06:31:02
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Subject: [ILUG] Dermot Beirne/Dublin/IE/Exel is out of the office.
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+I will be out of the office starting  02/08/2002 and will not return until
+06/08/2002.
+
+I am out of the office until Tuesday 6th August.   I will reply to messages
+on my return.
+
+Thank you.
+DermotImportant Email Information
+
+The information in this email is confidential and may be legally
+privileged. It is intended solely for the addressee. Access to this email
+by anyone else is unauthorized. If you are not the intended recipient, any
+disclosure, copying, distribution or any action taken or omitted to be
+taken in reliance on it, is prohibited and may be unlawful. If you are not
+the intended addressee please contact the sender and dispose of this
+e-mail.
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

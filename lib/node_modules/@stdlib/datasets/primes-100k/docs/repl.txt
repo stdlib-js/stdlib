@@ -1,0 +1,17 @@
+
+{{alias}}()
+    Returns an array containing the first 100,000 prime numbers.
+
+    Returns
+    -------
+    out: Array<number>
+        List of primes.
+
+    Examples
+    --------
+    > var list = {{alias}}()
+    [ 2, 3, 5, ... ]
+
+    See Also
+    --------
+

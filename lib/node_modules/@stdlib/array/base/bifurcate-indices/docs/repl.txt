@@ -1,0 +1,39 @@
+
+{{alias}}( x, filter )
+    Splits array element indices into two groups.
+
+    If an element in `filter` is truthy, then the corresponding element in the
+    input array belongs to the first group; otherwise, the array element belongs
+    to the second group.
+
+    If provided an empty array, the function returns an empty array.
+
+    Parameters
+    ----------
+    x: ArrayLike
+        Input array.
+
+    filter: ArrayLike
+        An array indicating which group an element in the input array
+        belongs to. If an element in `filter` is truthy, the corresponding
+        element in the input array belongs to the first group; otherwise, the
+        array element belongs to the second group.
+
+    Returns
+    -------
+    out: Array<Array>
+        Group results.
+
+    Examples
+    --------
+    > var x = [ 'beep', 'boop', 'foo', 'bar' ];
+    > var f = [ true, true, false, true ];
+    > var out = {{alias}}( x, f )
+    [ [ 0, 1, 3 ], [ 2 ] ]
+    > f = [ 1, 1, 0, 1 ];
+    > out = {{alias}}( x, f )
+    [ [ 0, 1, 3 ], [ 2 ] ]
+
+    See Also
+    --------
+

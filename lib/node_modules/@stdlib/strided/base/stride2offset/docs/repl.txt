@@ -1,0 +1,28 @@
+
+{{alias}}( N, stride )
+    Returns the index offset which specifies the location of the first indexed
+    value in a strided array.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    stride: integer
+        Index increment.
+
+    Returns
+    -------
+    offset: integer
+        Index offset.
+
+    Examples
+    --------
+    > var out = {{alias}}( 10, -10 )
+    90
+    > out = {{alias}}( 10, 10 )
+    0
+
+    See Also
+    --------
+

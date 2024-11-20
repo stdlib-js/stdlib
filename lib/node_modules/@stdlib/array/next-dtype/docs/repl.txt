@@ -1,0 +1,29 @@
+
+{{alias}}( [dtype] )
+    Returns the next larger array data type of the same kind.
+
+    If not provided a data type, the function returns a table.
+
+    If a data type does not have a next larger data type or the next larger type
+    is not supported, the function returns `-1`.
+
+    If provided an unrecognized data type, the function returns `null`.
+
+    Parameters
+    ----------
+    dtype: string (optional)
+        Array data type.
+
+    Returns
+    -------
+    out: Object|string|integer|null
+        Next larger type(s).
+
+    Examples
+    --------
+    > var out = {{alias}}( 'float32' )
+    'float64'
+
+    See Also
+    --------
+

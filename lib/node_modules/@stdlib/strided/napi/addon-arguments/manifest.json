@@ -1,0 +1,43 @@
+{
+	"options": {},
+	"fields": [
+		{
+			"field": "src",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "include",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "libraries",
+			"resolve": false,
+			"relative": false
+		},
+		{
+			"field": "libpath",
+			"resolve": true,
+			"relative": false
+		}
+	],
+	"confs": [
+		{
+			"src": [
+				"./src/main.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [],
+			"libpath": [],
+			"dependencies": [
+				"@stdlib/math/base/assert/is-finite",
+				"@stdlib/math/base/special/floor",
+				"@stdlib/ndarray/base/bytes-per-element",
+        "@stdlib/ndarray/base/napi/typedarray-type-to-dtype"
+			]
+		}
+	]
+}

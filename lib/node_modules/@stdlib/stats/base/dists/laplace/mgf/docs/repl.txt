@@ -1,0 +1,79 @@
+
+{{alias}}( t, μ, b )
+    Evaluates the moment-generating function (MGF) for a Laplace
+    distribution with scale parameter `b` and location parameter `μ` at a
+    value `t`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `b <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    t: number
+        Input value.
+
+    μ: number
+        Location parameter.
+
+    b: number
+        Scale parameter.
+
+    Returns
+    -------
+    out: number
+        Evaluated MGF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.5, 0.0, 1.0 )
+    ~1.333
+    > y = {{alias}}( 0.0, 0.0, 1.0 )
+    1.0
+    > y = {{alias}}( -1.0, 4.0, 0.2 )
+    ~0.019
+    > y = {{alias}}( NaN, 0.0, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, 0.0, NaN )
+    NaN
+    > y = {{alias}}( 1.0, 0.0, 2.0 )
+    NaN
+    > y = {{alias}}( -0.5, 0.0, 4.0 )
+    NaN
+    > y = {{alias}}( 2.0, 0.0, 0.0 )
+    NaN
+    > y = {{alias}}( 2.0, 0.0, -1.0 )
+    NaN
+
+
+{{alias}}.factory( μ, b )
+    Returns a function for evaluating the moment-generating function (MGF)
+    of a Laplace distribution with scale parameter `b` and location parameter
+    `μ`.
+
+    Parameters
+    ----------
+    μ: number
+        Location parameter.
+
+    b: number
+        Scale parameter.
+
+    Returns
+    -------
+    mgf: Function
+        Moment-generating function (MGF).
+
+    Examples
+    --------
+    > var mymgf = {{alias}}.factory( 4.0, 2.0 );
+    > var y = mymgf( 0.2 )
+    ~2.649
+    > y = mymgf( 0.4 )
+    ~13.758
+
+    See Also
+    --------
+

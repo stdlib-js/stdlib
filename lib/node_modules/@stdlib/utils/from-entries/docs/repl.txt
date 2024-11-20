@@ -1,0 +1,23 @@
+
+{{alias}}( entries )
+    Creates an object from an array of key-value pairs.
+
+    Parameters
+    ----------
+    entries: Array<Array>
+        Input object.
+
+    Returns
+    -------
+    out: Object
+        Object created from `[key, value]` pairs.
+
+    Examples
+    --------
+    > var entries = [ [ 'beep', 'boop' ], [ 'foo', 'bar' ] ];
+    > var obj = {{alias}}( entries )
+    { 'beep': 'boop', 'foo': 'bar' }
+
+    See Also
+    --------
+

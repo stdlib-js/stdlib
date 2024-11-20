@@ -1,0 +1,66 @@
+From fork-admin@xent.com  Mon Aug 19 11:05:52 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 22C04441B9
+	for <jm@localhost>; Mon, 19 Aug 2002 05:55:53 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:55:53 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7J4Sa607489 for <jm@jmason.org>;
+    Mon, 19 Aug 2002 05:28:39 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 6D7E02940F8; Sun, 18 Aug 2002 21:26:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.auracom.net (smtp1.auracom.net [165.154.140.23]) by
+    xent.com (Postfix) with ESMTP id 8928A29409D for <fork@xent.com>;
+    Sun, 18 Aug 2002 21:25:27 -0700 (PDT)
+Received: from maya.dyndns.org (ts5-038.ptrb.interhop.net
+    [165.154.190.102]) by smtp1.auracom.net (8.11.2/8.11.2) with ESMTP id
+    g7J40vE17080; Mon, 19 Aug 2002 00:00:58 -0400 (EDT)
+Received: by maya.dyndns.org (Postfix, from userid 501) id 8B4F41C388;
+    Mon, 19 Aug 2002 00:25:46 -0400 (EDT)
+To: harley@argote.ch (Robert Harley)
+Cc: fork@spamassassin.taint.org
+Subject: Re: Al'Qaeda's fantasy ideology: Policy Review no. 114
+References: <20020818211215.7BF7AC44E@argote.ch>
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m2ptwf8ofp.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 19 Aug 2002 00:25:46 -0400
+
+>>>>> "R" == Robert Harley <harley@argote.ch> writes:
+
+    R> Well IIRC, Cortez arrived in 1519, and DeSoto was born circa
+    R> 1500.  You do the math.
+
+Ah, I suppose so. If it wasn't DeSoto ... then who was it that landed
+in Southern Florida to be greeted by great cities of millions of
+mound-dwellers who had completely vanished by the time Cortez arrived
+to kill as many as he could?
+
+-- 
+Gary Lawrence Murphy <garym@teledyn.com> TeleDynamics Communications Inc
+ Business Advantage through Community Software : http://www.teledyn.com
+"Computers are useless.  They can only give you answers."(Pablo Picasso)
+
+http://xent.com/mailman/listinfo/fork
+

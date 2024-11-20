@@ -1,0 +1,22 @@
+
+{{alias}}( x )
+    Returns the strides of a provided ndarray.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray.
+
+    Returns
+    -------
+    out: Array<integer>
+        Strides.
+
+    Examples
+    --------
+    > var out = {{alias}}( {{alias:@stdlib/ndarray/zeros}}( [ 3, 3, 3 ] ) )
+    [ 9, 3, 1 ]
+
+    See Also
+    --------
+

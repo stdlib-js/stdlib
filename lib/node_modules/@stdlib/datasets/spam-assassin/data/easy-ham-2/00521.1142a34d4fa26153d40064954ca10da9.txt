@@ -1,0 +1,75 @@
+From webdev-admin@linux.ie  Thu Aug 22 10:46:32 2002
+Return-Path: <webdev-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 215D343C41
+	for <jm@localhost>; Thu, 22 Aug 2002 05:46:07 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 22 Aug 2002 10:46:07 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7LIjdZ05536 for
+    <jm-webdev@jmason.org>; Wed, 21 Aug 2002 19:45:39 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id TAA16297; Wed, 21 Aug 2002 19:45:09 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail02.svc.cra.dublin.eircom.net
+    (mail02.svc.cra.dublin.eircom.net [159.134.118.18]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id TAA16226 for <webdev@linux.ie>; Wed,
+    21 Aug 2002 19:44:58 +0100
+From: elvin@eircom.net
+Message-Id: <200208211844.TAA16226@lugh.tuatha.org>
+Received: (qmail 38756 messnum 33833 invoked from
+    network[159.134.237.78/wendell.eircom.net]); 21 Aug 2002 18:44:28 -0000
+Received: from wendell.eircom.net (HELO webmail.eircom.net)
+    (159.134.237.78) by mail02.svc.cra.dublin.eircom.net (qp 38756) with SMTP;
+    21 Aug 2002 18:44:28 -0000
+To: webdev@linux.ie
+Date: Wed, 21 Aug 2002 19:44:28 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 8bit
+X-Originating-Ip: 143.239.65.188
+X-Mailer: Eircom Net CRC Webmail (http://www.eircom.net/)
+Organization: Eircom Net (http://www.eircom.net/)
+Subject: [Webdev] PHP/MySQL Virtual Hosting Recommendations?
+Sender: webdev-admin@linux.ie
+Errors-To: webdev-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: <webdev.linux.ie>
+X-Beenthere: webdev@linux.ie
+
+Hi,
+
+I am looking at the options for a UNIX/Linux Virtual Server capable of holding multiple domains - preferably not tooo expensive as I am not a business. I wish to build a few PHP/MySQL sites and host them...
+
+A rough list of features I am after are
+
+Circa 50MB-100MB web space for now
+POP email accounts 
+Account Control Panel 
+Perl 
+PHP 
+MySQL 
+FTP and Telnet Access 24/7
+Own CGI-BIN
+Webalizer Graphical Stats 
+Server Side Includes 
+Good Reachable Technical Support
+
+I have seen a great looking 300MB solution in the region of 600Euro p.a. which at the moment is a bit over my financial head in one payment - I haven't completed any sites yet, but have a few potential jobs coming up.
+
+Any tips/pointers much appreciated!
+
+Regards,
+Elvin 
+
+
+
+_______________________________________________
+Webdev mailing list
+Webdev@linux.ie
+http://www.linux.ie/mailman/listinfo/webdev
+

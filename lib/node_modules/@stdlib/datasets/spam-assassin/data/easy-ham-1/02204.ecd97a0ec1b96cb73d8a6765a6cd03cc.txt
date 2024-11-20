@@ -1,0 +1,57 @@
+From rssfeeds@jmason.org  Thu Oct  3 12:24:22 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id AAE9616F56
+	for <jm@localhost>; Thu,  3 Oct 2002 12:23:24 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 03 Oct 2002 12:23:24 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g93817K19976 for
+    <jm@jmason.org>; Thu, 3 Oct 2002 09:01:07 +0100
+Message-Id: <200210030801.g93817K19976@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: boingboing <rssfeeds@spamassassin.taint.org>
+Subject: Mathematics film-festival in October in Berkeley
+Date: Thu, 03 Oct 2002 08:01:06 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://boingboing.net/#85516333
+Date: Not supplied
+
+All through October, Berkeley's Mathematical Sciences Research Institute is 
+hosting Cinemath, a mathematics film festival: 
+
+    Permutations and Configurations: A Calculated Cinema 
+
+    In this avant-garde subset of Cinemath, we explore films that have been 
+    constructed using mathematical concepts both simple and complex- geometric 
+    permutations, musical frameworks, even topography are among the strategies 
+    that have been employed to compose and sequence film frames. Filmmakers 
+    such as Oskar Fischinger and Walther Ruttmann created some of the earliest 
+    avant-garde films by multiplying, dividing, and otherwise transforming 
+    abstract images- including spirals, rectangles, and circles to produce 
+    dynamic rhythms and harmonies. Today such visual music and motion graphics 
+    are the currency of digital graphics. Anthony McCall's film performances 
+    such as Line Describing a Cone create 3-D geometric shapes into which the 
+    viewer can literally step. We also explore films by pioneers of 
+    machine-generated and computer-produced animation (Norman McLaren, James 
+    and John Whitney, Stan Vanderbeek) as well as works by contemporary 
+    animators who use the computer to either generate or pattern images (Larry 
+    Cuba, Paul Glabicki, James Otis). Peter Kubelka, Taka Iimura, and Standish 
+    Lawder use the frame as the unit with which they create editing patterns, 
+    while Kurt Kren and Paul Sharits reckon on arithmetic systems to variously 
+    calculate compositional or editing patterns. Bette Gordon, Hollis Frampton, 
+    and Bruce Elder figure in algorithms, group theory, and set theory to 
+    graphically enliven the frame or to structure their films. While no 
+    mathematical knowledge is required to enjoy these films, we count on you to 
+    try to calculate the mathematical systems employed!  
+
+Link[1] Discuss[2] (_Thanks, Jef[3]!_)
+
+[1] http://www.msri.org/20thanniversary/cinemath.html
+[2] http://www.quicktopic.com/boing/H/Adiw2xL5kw8ug
+[3] http://www.acme.com
+
+

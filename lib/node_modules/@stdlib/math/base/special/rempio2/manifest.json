@@ -1,0 +1,100 @@
+{
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-double",
+        "@stdlib/napi/argv-float64array",
+        "@stdlib/napi/create-double",
+        "@stdlib/napi/export",
+        "@stdlib/math/base/special/round",
+        "@stdlib/math/base/special/floor",
+        "@stdlib/math/base/special/ldexp",
+        "@stdlib/number/float64/base/get-high-word",
+        "@stdlib/number/float64/base/get-low-word",
+        "@stdlib/number/float64/base/from-words",
+        "@stdlib/constants/float64/high-word-abs-mask",
+        "@stdlib/constants/float64/high-word-exponent-mask",
+        "@stdlib/constants/float64/high-word-significand-mask"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/round",
+        "@stdlib/math/base/special/floor",
+        "@stdlib/math/base/special/ldexp",
+        "@stdlib/number/float64/base/get-high-word",
+        "@stdlib/number/float64/base/get-low-word",
+        "@stdlib/number/float64/base/from-words",
+        "@stdlib/constants/float64/high-word-abs-mask",
+        "@stdlib/constants/float64/high-word-exponent-mask",
+        "@stdlib/constants/float64/high-word-significand-mask"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/round",
+        "@stdlib/math/base/special/floor",
+        "@stdlib/math/base/special/ldexp",
+        "@stdlib/number/float64/base/get-high-word",
+        "@stdlib/number/float64/base/get-low-word",
+        "@stdlib/number/float64/base/from-words",
+        "@stdlib/constants/float64/high-word-abs-mask",
+        "@stdlib/constants/float64/high-word-exponent-mask",
+        "@stdlib/constants/float64/high-word-significand-mask"
+      ]
+    }
+  ]
+}

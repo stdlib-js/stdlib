@@ -1,0 +1,71 @@
+From fork-admin@xent.com  Mon Aug 26 15:32:00 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id AF7494416E
+	for <jm@localhost>; Mon, 26 Aug 2002 10:26:08 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 15:26:08 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7OF4eZ06772 for <jm@jmason.org>;
+    Sat, 24 Aug 2002 16:04:40 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id D60FB2940FF; Sat, 24 Aug 2002 07:59:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hotmail.com (f199.law15.hotmail.com [64.4.23.199]) by
+    xent.com (Postfix) with ESMTP id 447D92940FF for <fork@xent.com>;
+    Sat, 24 Aug 2002 07:58:25 -0700 (PDT)
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Sat, 24 Aug 2002 08:00:15 -0700
+Received: from 216.30.74.2 by lw15fd.law15.hotmail.msn.com with HTTP;
+    Sat, 24 Aug 2002 15:00:15 GMT
+X-Originating-Ip: [216.30.74.2]
+From: "Russell Turpin" <deafbox@hotmail.com>
+To: fork@spamassassin.taint.org
+Subject: Re: The case for spam
+MIME-Version: 1.0
+Content-Type: text/plain; format=flowed
+Message-Id: <F199JycMIRpE6qCJTyt00005abe@hotmail.com>
+X-Originalarrivaltime: 24 Aug 2002 15:00:15.0691 (UTC) FILETIME=[F45419B0:01C24B7E]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sat, 24 Aug 2002 15:00:15 +0000
+
+Lucas Gonze:
+>Senders should vary the recipient list to include non-targets, like party 
+>officials, and to exclude targets enough to give them plausible 
+>deniability.
+
+Which means the sender has a list of who the true
+targets are, and who the fake targets are, and
+scripts for mixing these. On the receiving side,
+my email client distinguishes between messages
+that are read, and messages that are not. I like
+to mark or save messages that are particularly
+interresting or important to me. And even if I
+make a point to delete "suspicious material"
+immediately upon reading it, even THAT might
+leave an interesting kind of trace on my machine.
+
+Sorry, but I don't buy the argument that spam
+protects people who want to distribute or see
+material the government disapproves.
+
+
+_________________________________________________________________
+MSN Photos is the easiest way to share and print your photos: 
+http://photos.msn.com/support/worldwide.aspx
+
+http://xent.com/mailman/listinfo/fork
+

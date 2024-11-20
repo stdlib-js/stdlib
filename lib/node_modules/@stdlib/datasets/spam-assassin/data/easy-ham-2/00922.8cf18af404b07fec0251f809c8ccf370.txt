@@ -1,0 +1,59 @@
+From fork-admin@xent.com  Mon Jul 29 11:29:24 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8C87C44169
+	for <jm@localhost>; Mon, 29 Jul 2002 06:25:39 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 11:25:39 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6S479i18625 for <jm@jmason.org>;
+    Sun, 28 Jul 2002 05:07:10 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 4CED32940A2; Sat, 27 Jul 2002 21:05:11 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from crank.slack.net (slack.net [166.84.151.181]) by xent.com
+    (Postfix) with ESMTP id 83BA829409C for <fork@xent.com>; Sat,
+    27 Jul 2002 21:04:37 -0700 (PDT)
+Received: by crank.slack.net (Postfix, from userid 596) id 0106A3EDEA;
+    Sun, 28 Jul 2002 00:05:08 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1]) by crank.slack.net
+    (Postfix) with ESMTP id EAE573EDE8; Sun, 28 Jul 2002 00:05:08 -0400 (EDT)
+From: Tom <tomwhore@slack.net>
+To: CDale <cdale@techmonkeys.net>
+Cc: fork@spamassassin.taint.org, <vox@mindvox.com>
+Subject: Re: And Away We go
+In-Reply-To: <Pine.LNX.4.44.0207270621280.27125-100000@isolnetsux.techmonkeys.net>
+Message-Id: <Pine.BSO.4.44.0207280004290.24840-100000@crank.slack.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 28 Jul 2002 00:05:08 -0400 (EDT)
+
+On Sat, 27 Jul 2002, CDale wrote:
+
+--]A true geek.  Runs to the puter to post before taking a laboring wife to
+--]the hospital.  I'd kill you.  LOL
+
+Scripts baby:)-
+
+One key and I was off.well a few more than one but well under .30 secs of
+time.
+
+
+
+http://xent.com/mailman/listinfo/fork
+
+

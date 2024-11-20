@@ -1,0 +1,142 @@
+From GlennEverhart@firstusa.com  Thu Sep  5 11:26:32 2002
+Return-Path: <GlennEverhart@firstusa.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 3BC3316F1F
+	for <jm@localhost>; Thu,  5 Sep 2002 11:26:27 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 05 Sep 2002 11:26:27 +0100 (IST)
+Received: from outgoing.securityfocus.com (outgoing3.securityfocus.com
+    [66.38.151.27]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g84K5EZ17306 for <jm@jmason.org>; Wed, 4 Sep 2002 21:05:14 +0100
+Received: from lists.securityfocus.com (lists.securityfocus.com
+    [66.38.151.19]) by outgoing.securityfocus.com (Postfix) with QMQP id
+    F07E1A30F7; Wed,  4 Sep 2002 13:58:15 -0600 (MDT)
+Mailing-List: contact secprog-help@securityfocus.com; run by ezmlm
+Precedence: bulk
+List-Id: <secprog.list-id.securityfocus.com>
+List-Post: <mailto:secprog@securityfocus.com>
+List-Help: <mailto:secprog-help@securityfocus.com>
+List-Unsubscribe: <mailto:secprog-unsubscribe@securityfocus.com>
+List-Subscribe: <mailto:secprog-subscribe@securityfocus.com>
+Delivered-To: mailing list secprog@securityfocus.com
+Delivered-To: moderator for secprog@securityfocus.com
+Received: (qmail 11927 invoked from network); 4 Sep 2002 18:56:23 -0000
+Message-Id: <EA7C77F97CC73F4AAC856A4595DF34E21265EE@swilnts801.wil.fusa.com>
+From: "Everhart, Glenn (FUSA)" <GlennEverhart@firstusa.com>
+To: "'bmord@icon-nicholson.com'" <bmord@icon-nicholson.com>,
+	"Webappsec Securityfocus.Com" <webappsec@securityfocus.com>,
+	SECPROG Securityfocus <SECPROG@securityfocus.com>
+Subject: RE: use of base image / delta image for automated recovery from a
+    ttacks
+Date: Wed, 4 Sep 2002 15:11:55 -0400
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2656.59)
+Content-Type: text/plain; charset="iso-8859-1"
+
+I did something crudely along those lines for VMS VAX maybe 13 years
+ago; there is at least one product that does it for PC though I don't
+recall its name. It is also handy for cases where you have a CD image
+of some filesystem (or some other image of a filesystem) that is
+intrinsically readonly but whose filesystem will not accept (or is
+not graceful) readonly storage. It is also more or less necessary
+if you want to work with WORM file structures, which are older still.
+There have been a number of filesystems for those dating back to the
+early 1980s if not before.
+
+A generic facility of the type you mention is also one way to implement
+snapshots on top of an existing filesystem. The written information
+must (obviously!) be seekable so you can provide the illusion that you
+wrote to the storage. A device level implementation is however perfectly
+adequate.
+
+It does not, of course, distinguish for you what should have been changed
+and what should not. If you truly know a device (or perhaps a partition)
+must not be written, it can be simpler to either return error on writes,
+or to just return a fake success on writes yet discard the data. (NTFS
+lives with the latter strategy just fine from my experiments. I have not
+tried it on extf3 or reiser.) 
+
+BTW, think about your mention of RAID and consider the complexity of
+writing to RAID4 or RAID5...
+I would contend that with cheaper storage these days, it makes little sense
+to use RAID, save for shadowing and possibly striping. Those at least do
+not have the complexity and slowup dangers that higher RAID levels have, and
+there is not a need to save the cost of disk so much where a single disk
+may hold 200 gigs and up. Why not dedicate another whole disk to fault
+recovery
+and lose the complexity and slow write (sometimes) of RAID?
+
+Glenn Everhart
+
+
+-----Original Message-----
+From: bmord@icon-nicholson.com [mailto:bmord@icon-nicholson.com]
+Sent: Tuesday, September 03, 2002 3:04 PM
+To: Webappsec Securityfocus.Com; SECPROG Securityfocus
+Subject: use of base image / delta image for automated recovery from
+attacks
+
+
+Hi,
+
+I was inspired by a mode of operation supported by VMWare. You can have a
+base disk image shared by multiple virtual machine (vm) instances. That base
+image is never altered by a vm instance. Instead, each vm instance writes
+changes to its own "redo" log. Future hard disk reads from that vm instance
+incorporate both the base image and the appropriate redo log to present the
+current disk image for that specific virtual machine.
+
+This is described here (thanks to Duane for providing this link on the
+honeypots mailing list)
+http://www.vmware.com/support/reference/common/disk_sharing.html
+
+Could this basic concept be used to easily make self-fixing client/server
+applications that efficiently and automatically recover from most attacks,
+even before those attacks have been discovered? Here is what I imagine.
+
+The physical architectures of most production client/server systems are
+layered. For example, your basic web application might have a web server
+running Apache, connected to an application server running some J2EE or .Net
+business logic, connected to a database server for persistence. The only one
+of these whose disk image really should evolve over time is the database
+server, and even here you often put the static RDBMS software on one
+partition and the changeable datafiles on another partition. It is only the
+partition with the volatile datafiles that must be allowed to change from
+one boot to the next. Other paritions may need to be writable for, say, swap
+space, but these changes could be eliminated on each reboot.
+
+When someone cracks this system, they will probably change an image that
+shouldn't be changed. E.g., they might leverage a buffer overflow in IIS or
+Apache to install a trojan or a backdoor on the more exposed web server. But
+what if the web server ran off a base image, writing changes to a "delta" or
+"redo" partition? And then what if every night it automatically erased the
+redo partition and rebooted? The downtime involved for each machine would be
+minimal, because it is only deleting data - rather than restoring from
+backup. In a system with redundant web servers for load balancing or high
+availability, this could be scheduled in a way such that the system is
+always accessible. This base/redo partition concept could be implemented at
+the same level as a feature of hardware RAID, allowing for greater
+performance, reliability, and hack resistance. This concept could also be
+applied to the application servers, and even the database server partitions
+(except for those partitions which contain the table data files, of course.)
+
+Does anyone do this already? Or is this a new concept? Or has this concept
+been discussed before and abandoned for some reasons that I don't yet know?
+I use the physical architecture of a basic web application as an example in
+this post, but this concept could of course be applied to most server
+systems. It would allow for the hardware-separation of volatile and
+non-volatile disk images. It would be analogous to performing nightly
+ghosting operations, only it would be more efficient and involve less (or
+no) downtime.
+
+Thanks for any opinions,
+Ben
+
+
+**********************************************************************
+This transmission may contain information that is privileged, confidential and/or exempt from disclosure under applicable law. If you are not the intended recipient, you are hereby notified that any disclosure, copying, distribution, or use of the information contained herein (including any reliance thereon) is STRICTLY PROHIBITED. If you received this transmission in error, please immediately contact the sender and destroy the material in its entirety, whether in electronic or hard copy format. Thank you
+**********************************************************************
+
+

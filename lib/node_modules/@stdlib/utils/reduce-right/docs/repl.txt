@@ -1,0 +1,54 @@
+
+{{alias}}( arr, initial, reducer[, thisArg] )
+    Applies a function against an accumulator and each element in an array while
+    iterating from right to left and returns the accumulated result.
+
+    When invoked, the reduction function is provided four arguments:
+
+    - accumulator: accumulated value.
+    - value: array element.
+    - index: element index.
+    - arr: input array.
+
+    If provided an empty array, the function returns the initial value.
+
+    When provided an ndarray, the function performs a reduction over the entire
+    input ndarray (i.e., higher-order ndarray dimensions are flattened to a
+    single-dimension).
+
+    Parameters
+    ----------
+    arr: ArrayLikeObject|ndarray
+        Input array.
+
+    initial: any
+        Accumulator value used in the first invocation of the reduction
+        function.
+
+    reducer: Function
+        Function to invoke for each element in the input array.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    out: any
+        Accumulated result.
+
+    Examples
+    --------
+    // array-like object:
+    > var f = {{alias:@stdlib/utils/nary-function}}( {{alias:@stdlib/math/base/ops/add}}, 2 );
+    > var arr = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
+    > var out = {{alias}}( arr, 0.0, f )
+    21.0
+
+    // ndarray:
+    > arr = {{alias:@stdlib/ndarray/array}}( arr, { 'shape': [ 2, 3 ] } );
+    > out = {{alias}}( arr, 0.0, f )
+    21.0
+
+    See Also
+    --------
+

@@ -1,0 +1,121 @@
+From rpm-list-admin@freshrpms.net  Mon Sep  9 18:00:01 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 87D0B16EFC
+	for <jm@localhost>; Mon,  9 Sep 2002 18:00:00 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 18:00:00 +0100 (IST)
+Received: from auth02.nl.egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g11IdX805308 for
+    <jm-rpm@jmason.org>; Fri, 1 Feb 2002 18:39:33 GMT
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by
+    auth02.nl.egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g11Ic1328696;
+    Fri, 1 Feb 2002 19:38:01 +0100
+Received: from ematic.com (ematic-ecdc-191-64.digisle.net
+    [167.216.191.64]) by auth02.nl.egwn.net (8.11.6/8.11.6/EGWN) with SMTP id
+    g11IWm328332 for <rpm-list@freshrpms.net>; Fri, 1 Feb 2002 19:32:49 +0100
+Received: from bfrench ([65.213.202.212]) by ematic.com ; Fri,
+    01 Feb 2002 13:32:49 -0500
+From: "Brian French" <bfrench@ematic.com>
+To: <rpm-zzzlist@freshrpms.net>
+Subject: RE: Prob. w/ install/uninstall
+Message-Id: <KMENLMHDMGGFAAEMCCNKCEFGCCAA.bfrench@ematic.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+Importance: Normal
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+In-Reply-To: <20020201191747.4ca19d1a.matthias@egwn.net>
+X-RCPT-To: <rpm-zzzlist@freshrpms.net>
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Fri, 1 Feb 2002 13:39:31 -0500
+Date: Fri, 1 Feb 2002 13:39:31 -0500
+
+oh ok, thanx alot!! i was puttin the entire rpm package name like
+php-4.0.4pl1.i386.rpm
+that's why it wasn't working.
+
+-----Original Message-----
+From: rpm-zzzlist-admin@freshrpms.net
+[mailto:rpm-list-admin@freshrpms.net]On Behalf Of Matthias Saou (by way
+of Matthias Saou <matthias@egwn.net>)
+Sent: Friday, February 01, 2002 1:18 PM
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: Prob. w/ install/uninstall
+
+
+Once upon a time, Brian wrote :
+
+> hey i have a problem:
+> i have a rpms that i have installed that i want to uninstall, i do it
+> like so:
+> rpm -e [rpm package]
+> and it gives the error: package not installed, so i install it like
+> so:
+> rpm -i [rpm package]
+> and it gives the error: package already installed, so i force it to
+> install like so:
+> rpm -i --force [rpm package]
+> this installs it and then i try to uninstall it again and it still
+> gives me the same error: package not installed.
+>
+> How can i get it to recognize that the package is indeed installed it,
+> and/or get it to unstall it?
+
+You're a bit too vague on your "[rpm package]" here...
+Maybe this will help you :
+
+[root@python apg]# rpm -e apg
+[root@python apg]# rpm -ivh apg-1.2.13-fr1.i386.rpm
+Preparing...                ###########################################
+[100%]   1:apg
+########################################### [100%][root@python apg]# rpm -e
+apg[root@python apg]# rpm -ivh apg-1.2.13-fr1.i386.rpm
+Preparing...                ###########################################
+[100%]   1:apg
+########################################### [100%][root@python apg]# rpm -e
+apg-1.2.13-fr1[root@python apg]# rpm -ivh apg-1.2.13-fr1.i386.rpm
+Preparing...                ###########################################
+[100%]   1:apg
+########################################### [100%][root@python apg]# rpm -e
+apg-1.2.13-fr1.i386.rpm error: package apg-1.2.13-fr1.i386.rpm is not
+installed[root@python apg]#
+
+You can just put the name, of the name and version, and even the release,
+but the entire filename will not work!
+
+Matthias
+
+--
+Matthias Saou                                World Trade Center
+-------------                                Edificio Norte 4 Planta
+System and Network Engineer                  08039 Barcelona, Spain
+Electronic Group Interactive                 Phone : +34 936 00 23 23
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

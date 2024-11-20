@@ -1,0 +1,38 @@
+
+{{alias}}( x, n )
+    Rounds a numeric value to the nearest multiple of `10^n` toward zero.
+
+    When operating on floating-point numbers in bases other than `2`, rounding
+    to specified digits can be inexact.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    n: integer
+        Integer power of 10.
+
+    Returns
+    -------
+    y: number
+        Rounded value.
+
+    Examples
+    --------
+    // Round to 4 decimal places:
+    > var y = {{alias}}( 3.14159, -4 )
+    3.1415
+
+    // If `n = 0`, standard round behavior:
+    > y = {{alias}}( 3.14159, 0 )
+    3.0
+
+    // Round to nearest thousand:
+    > y = {{alias}}( 12368.0, 3 )
+    12000.0
+
+
+    See Also
+    --------
+

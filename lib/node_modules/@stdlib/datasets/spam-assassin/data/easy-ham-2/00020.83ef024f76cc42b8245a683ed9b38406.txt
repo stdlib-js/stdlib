@@ -1,0 +1,82 @@
+From ilug-admin@linux.ie  Wed Aug 21 16:52:04 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3E9FC43C32
+	for <jm@localhost>; Wed, 21 Aug 2002 11:52:04 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 21 Aug 2002 16:52:04 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7LFnNZ32063 for
+    <jm-ilug@jmason.org>; Wed, 21 Aug 2002 16:49:23 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA07631; Wed, 21 Aug 2002 16:47:11 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from relay07.indigo.ie (relay07.indigo.ie [194.125.133.231]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with SMTP id QAA07597 for <ilug@linux.ie>;
+    Wed, 21 Aug 2002 16:47:03 +0100
+Received: (qmail 7353 messnum 1016263 invoked from
+    network[80.247.160.141/unknown]); 21 Aug 2002 15:47:02 -0000
+Received: from unknown (HELO isgtwomem) (80.247.160.141) by
+    relay07.indigo.ie (qp 7353) with SMTP; 21 Aug 2002 15:47:02 -0000
+Message-Id: <002d01c24929$fe26d600$8da0f750@corp.emc.com>
+From: "Mark Twomey" <bauwolf@indigo.ie>
+To: <ilug@linux.ie>
+Date: Wed, 21 Aug 2002 16:47:02 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 8bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.50.4522.1200
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4522.1200
+Subject: [ILUG] Re: [OT] MacOSX mailing list?
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+>Sorry for the OT. Just wondering if anybody knows of a similar type mailing
+>list specifically dealing with MacOSX?  (which, FYI is a version of BSD)
+
+>Slán,
+
+>Tim
+
+Hi Tim,
+It isn't a "version" of anything except NeXTSTEP, with a Mac hackjob.
+It has a bastardised, but functional BSD -layer- which sit's atop Mach and
+uses case insensitive HFS+ but it isn't really a BSD.
+
+(Here's a neat trick, touch "Makefile" and "makefile", notice the lack of
+error message but the absence of "makefile", and don't bother formatting for
+UFS. The Apple UFS implementation performs like a dog, was frozen in 97,
+implemented badly and has not been updated since. HFS+ get's tweaked every
+now and then, but enough screaming has them looking at shoving UFS2 in there
+somewhere down the road. )
+
+Then there's the holdover NeXT inherent weirdness, such as multiple versions
+of common Unix files, but none of them do anything, and all changes you
+would usually append to them have to go through NetInfo Manager.
+
+All in all, I find it to be a functional, if not overly quirky desktop
+environment.
+
+As for your initial question,
+http://www.omnigroup.com/developer/mailinglists/
+
+Regards,
+Mark.
+
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

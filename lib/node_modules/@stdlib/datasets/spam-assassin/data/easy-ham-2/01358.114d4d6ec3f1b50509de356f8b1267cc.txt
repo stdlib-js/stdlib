@@ -1,0 +1,79 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug  8 15:54:22 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 74C9544100
+	for <jm@localhost>; Thu,  8 Aug 2002 09:32:51 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 08 Aug 2002 14:32:51 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g78DXS208994 for
+    <jm-sa@jmason.org>; Thu, 8 Aug 2002 14:33:28 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id OAA30801 for
+    <jm-sa@jmason.org>; Thu, 8 Aug 2002 14:30:26 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17cnLd-0002VG-00; Thu,
+    08 Aug 2002 06:29:05 -0700
+Received: from [194.165.165.199] (helo=mandark.labs.netnoteinc.com) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17cnL2-0001sf-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Thu, 08 Aug 2002 06:28:29 -0700
+Received: from phobos.labs.netnoteinc.com (phobos.labs.netnoteinc.com
+    [192.168.2.14]) by mandark.labs.netnoteinc.com (8.11.6/8.11.6) with ESMTP
+    id g78DRYp25088; Thu, 8 Aug 2002 14:27:34 +0100
+Received: by phobos.labs.netnoteinc.com (Postfix, from userid 500) id
+    5AD82440FC; Thu,  8 Aug 2002 09:27:15 -0400 (EDT)
+Received: from phobos (localhost [127.0.0.1]) by
+    phobos.labs.netnoteinc.com (Postfix) with ESMTP id 55BA033F85;
+    Thu,  8 Aug 2002 14:27:15 +0100 (IST)
+To: Ross Vandegrift <ross@willow.seitz.com>
+Cc: Justin Mason <yyyy@spamassassin.taint.org>,
+	Jonas Pasche <spamassassin@jonaspasche.de>,
+	spamassassin-talk@lists.sourceforge.net
+Subject: Re: [SAtalk] whitelisting mailing lists
+In-Reply-To: Message from Ross Vandegrift <ross@willow.seitz.com> of
+    "Wed, 07 Aug 2002 14:39:26 EDT."
+    <20020807183926.GA16333@willow.seitz.com>
+From: yyyy@spamassassin.taint.org (Justin Mason)
+X-GPG-Key-Fingerprint: 0A48 2D8B 0B52 A87D 0E8A  6ADD 4137 1B50 6E58 EF0A
+Message-Id: <20020808132715.5AD82440FC@phobos.labs.netnoteinc.com>
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Thu, 08 Aug 2002 14:27:10 +0100
+Date: Thu, 08 Aug 2002 14:27:10 +0100
+
+
+Ross Vandegrift said:
+
+> Won't this whitelist spams sent to mailing lists though?
+
+only if you've whitelisted the mailing list.  In that case, c'est la vie
+;)
+
+--j.
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

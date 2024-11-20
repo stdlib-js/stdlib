@@ -1,0 +1,83 @@
+From exmh-workers-admin@redhat.com  Thu Jul 25 11:02:07 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BFC4B440D0
+	for <jm@localhost>; Thu, 25 Jul 2002 06:02:01 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 11:02:01 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6OMGX411172 for
+    <jm-exmh@jmason.org>; Wed, 24 Jul 2002 23:16:33 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 2662C3F4E2; Wed, 24 Jul 2002
+    18:15:42 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 6F4C3405CE
+    for <exmh-workers@listman.redhat.com>; Wed, 24 Jul 2002 18:13:11 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g6OMDB932223 for exmh-workers@listman.redhat.com; Wed, 24 Jul 2002
+    18:13:11 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g6OMDAR32217 for
+    <exmh-workers@redhat.com>; Wed, 24 Jul 2002 18:13:10 -0400
+Received: from dimebox.bmc.com (adsl-66-140-152-233.dsl.hstntx.swbell.net
+    [66.140.152.233]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id
+    g6OM1Qs18479 for <exmh-workers@redhat.com>; Wed, 24 Jul 2002 18:01:26
+    -0400
+Received: by dimebox.bmc.com (Postfix, from userid 1205) id E7C9038DA9;
+    Wed, 24 Jul 2002 17:13:08 -0500 (CDT)
+Received: from dimebox (localhost [127.0.0.1]) by dimebox.bmc.com
+    (Postfix) with ESMTP id D9BBD38DA2; Wed, 24 Jul 2002 17:13:08 -0500 (CDT)
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4
+In-Reply-To: <1027546301.610.TMDA@deepeddy.vircio.com>
+References: <1027546301.610.TMDA@deepeddy.vircio.com>
+Comments: In-reply-to Chris Garrigues <cwg-exmh@DeepEddy.Com> message
+    dated "Wed, 24 Jul 2002 16:31:40 -0500."
+To: Chris Garrigues <cwg-dated-1027978302.cb328a@DeepEddy.Com>
+Cc: exmh-workers@spamassassin.taint.org
+Subject: Re: [fwd: error exmh 2.5 07/13/2001 ]
+MIME-Version: 1.0
+From: Hal DeVore <haldevore@acm.org>
+X-Image-Url: http://www.geocities.com/hal_devore_ii/haleye48.gif
+Content-Type: text/plain; charset=us-ascii
+Message-Id: <5378.1027548783@dimebox>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Wed, 24 Jul 2002 17:13:03 -0500
+
+
+>>>>> On Wed, 24 Jul 2002, "Chris" == Chris Garrigues wrote:
+
+  Chris> Am I the only one for whom typing control-L to the main
+  Chris> window causes this error?
+
+Getting it here too on a copy I haven't updated from CVS since 
+about May sometime.
+
+--Hal
+
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+

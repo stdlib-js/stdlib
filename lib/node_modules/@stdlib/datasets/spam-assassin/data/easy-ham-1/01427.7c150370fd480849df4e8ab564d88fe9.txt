@@ -1,0 +1,93 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Tue Sep  3 00:14:54 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (unknown [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id AF20F16F38
+	for <jm@localhost>; Tue,  3 Sep 2002 00:14:25 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 03 Sep 2002 00:14:25 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g82M5PZ22938 for <jm-sa@jmason.org>; Mon, 2 Sep 2002 23:05:25 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17lzJU-0001AY-00; Mon,
+    02 Sep 2002 15:04:52 -0700
+Received: from moonbase.zanshin.com ([167.160.213.139]) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17lzF8-0000Ty-00 for
+    <spamassassin-talk@lists.sourceforge.net>; Mon, 02 Sep 2002 15:00:22 -0700
+Received: from aztec.zanshin.com (IDENT:schaefer@aztec.zanshin.com
+    [167.160.213.132]) by moonbase.zanshin.com (8.11.0/8.11.0) with ESMTP id
+    g82M0JJ08146; Mon, 2 Sep 2002 15:00:19 -0700
+From: Bart Schaefer <schaefer@zanshin.com>
+To: Richard Kimber <rkimber@ntlworld.com>
+Cc: spamassassin <spamassassin-talk@example.sourceforge.net>
+Subject: Re: [SAtalk] SpamAssassin v2.40 released (finally)!
+In-Reply-To: <20020902220216.51777fd2.rkimber@ntlworld.com>
+Message-Id: <Pine.LNX.4.44.0209021444400.8543-100000@aztec.zanshin.com>
+Mail-Followup-To: spamassassin-talk@example.sourceforge.net
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Mon, 2 Sep 2002 15:00:19 -0700 (PDT)
+Date: Mon, 2 Sep 2002 15:00:19 -0700 (PDT)
+
+On Mon, 2 Sep 2002, Richard Kimber wrote:
+
+> On Mon, 2 Sep 2002 13:20:46 -0700 (PDT)
+> Bart Schaefer <schaefer@zanshin.com> wrote:
+> 
+> > If you're using "fetchmail --mda spamassassin" or the equivlent, then
+> > this change means your current setup will no longer work. 
+> 
+> Oh well, I guess there are other anti-spam options out there.
+
+Well, (a) you don't HAVE to upgrade, and (b) what you are doing has never
+been safe in the first place because SpamAssassin 2.31-and-before doesn't
+do any kind of file locking while it writes to the mailbox and doesn't
+promise to return the proper failure code on disk-full conditions, etc.
+
+If you're still willing to live with (b), all you need is a little shell
+script to run spamassassin:
+
+----------
+#!/bin/sh
+# call this file "spamassassin-wrapper" and chmod +x it
+{
+echo "From $1 `date`"
+sed -e '1{/^From /d;}' | spamassassin
+echo ''
+} >> $MAIL
+----------
+
+And then use
+
+fetchmail --mda 'spamassassin-wrapper %F'
+
+and you should be all set.
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

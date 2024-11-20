@@ -1,0 +1,13 @@
+{
+	"label": "change",
+	"numTicks": "change",
+	"orientation": "change",
+	"scale": "change",
+	"tickFormat": "change",
+	"tickPadding": "change",
+	"ticks": "change",
+	"tickSize": "change",
+	"innerTickSize": "change",
+	"outerTickSize": "change",
+	"autoRender": "change"
+}

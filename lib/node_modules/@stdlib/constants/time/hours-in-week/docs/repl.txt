@@ -1,0 +1,17 @@
+
+{{alias}}
+    Number of hours in a week.
+
+    The value is a generalization and does **not** take into account
+    inaccuracies due to daylight savings conventions, crossing timezones, or
+    other complications with time and dates.
+
+    Examples
+    --------
+    > var wks = 3.14;
+    > var hrs = wks * {{alias}}
+    527.52
+
+    See Also
+    --------
+

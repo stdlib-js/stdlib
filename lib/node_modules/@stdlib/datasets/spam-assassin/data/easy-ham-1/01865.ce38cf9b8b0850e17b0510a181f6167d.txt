@@ -1,0 +1,48 @@
+From rssfeeds@jmason.org  Wed Sep 25 10:23:17 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 0725816F03
+	for <jm@localhost>; Wed, 25 Sep 2002 10:23:17 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 25 Sep 2002 10:23:17 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8P80EC18031 for
+    <jm@jmason.org>; Wed, 25 Sep 2002 09:00:14 +0100
+Message-Id: <200209250800.g8P80EC18031@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: diveintomark <rssfeeds@spamassassin.taint.org>
+Subject: Stark raving sane
+Date: Wed, 25 Sep 2002 08:00:13 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://diveintomark.org/archives/2002/09/24.html#stark_raving_sane
+Date: 2002-09-24T22:05:32-05:00
+
+_Sam Ruby_: Stark raving mad[1]. 
+
+    This post was entered in Radio, extracted using a batch file via some 
+    UserTalk, parsed using Perl, cleaned up by tidy and a C program of my own 
+    design, transferred to intertwingly using scp, and then ssh triggers 
+    unpacking on the destination site, where a shell script takes over: invokes 
+    indexing using Jakarta's Lucene, and then a python script pings weblogs.com 
+    and blo.gs. 
+
+Tom Stoppard (_Rosencrantz and Guildenstern are Dead_): 
+
+    Guildenstern: &#8220;A man talking sense to himself is no madder than a man 
+    talking nonsense not to himself.&#8221;
+    Rosencrantz: &#8220;Or just as mad.&#8221;
+    Guildenstern: &#8220;Or just as mad.&#8221;
+    Rosencrantz: &#8220;And he does both.&#8221;
+    Guildenstern: &#8220;So there you are.&#8221;
+    Rosencrantz: &#8220;Stark raving sane.&#8221; 
+
+
+
+
+
+[1] http://www.intertwingly.net/blog/844.html
+
+

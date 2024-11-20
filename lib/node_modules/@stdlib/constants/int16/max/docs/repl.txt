@@ -1,0 +1,14 @@
+
+{{alias}}
+    Maximum signed 16-bit integer.
+
+    The maximum signed 16-bit integer is given by `2^15 - 1`.
+
+    Examples
+    --------
+    > {{alias}}
+    32767
+
+    See Also
+    --------
+

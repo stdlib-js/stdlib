@@ -1,0 +1,26 @@
+
+{{alias}}( value )
+    Tests if a value is Node readable stream-like.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is Node readable stream-like.
+
+    Examples
+    --------
+    > var Stream = require( 'stream' ).Readable;
+    > s = new Stream();
+    > var bool = {{alias}}( s )
+    true
+    > bool = {{alias}}( {} )
+    false
+
+    See Also
+    --------
+

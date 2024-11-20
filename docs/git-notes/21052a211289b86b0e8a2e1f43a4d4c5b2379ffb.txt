@@ -1,0 +1,15 @@
+---
+type: amend-message
+---
+feat!: add boolean dtype support to ndarray/min-dtype
+
+This commit changes the return value when provided a boolean primitive. Previously, the function returned "generic", and now the function returns "bool".
+
+BREAKING CHANGE: return "bool" when provided a boolean
+
+To migrate, users explicitly handle "bool" return values. If "generic" is still desired, users should consolidate accordingly.
+
+PR-URL: #2552
+Ref: #2547
+Co-authored-by: Athan Reines <kgryte@gmail.com>
+Reviewed-by: Athan Reines <kgryte@gmail.com>

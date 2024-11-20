@@ -1,0 +1,30 @@
+
+{{alias}}( s )
+    Evaluates the Dirichlet eta function as a function of a real variable `s`.
+
+    Parameters
+    ----------
+    s: number
+        Input value.
+
+    Returns
+    -------
+    y: number
+        Function value.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.0 )
+    0.5
+    > y = {{alias}}( -1.0 )
+    0.25
+    > y = {{alias}}( 1.0 )
+    ~0.6931
+    > y = {{alias}}( 3.14 )
+    ~0.9096
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+

@@ -1,0 +1,28 @@
+
+{{alias}}( x )
+    Computes the cosine of a number.
+
+    Parameters
+    ----------
+    x: number
+        Input value (in radians).
+
+    Returns
+    -------
+    y: number
+        Cosine.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.0 )
+    1.0
+    > y = {{alias}}( {{alias:@stdlib/constants/float64/pi}}/4.0 )
+    ~0.707
+    > y = {{alias}}( -{{alias:@stdlib/constants/float64/pi}}/6.0 )
+    ~0.866
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+

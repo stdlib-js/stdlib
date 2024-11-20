@@ -1,0 +1,12 @@
+
+quit()
+    Exits the REPL.
+
+    Examples
+    --------
+    > quit()
+
+    See Also
+    --------
+    clear, save
+

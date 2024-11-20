@@ -1,0 +1,34 @@
+
+{{alias}}()
+    Returns a string array containing two or three letter abbreviations for each
+    card in a standard 52-card deck.
+
+    Abbreviation format: <card><suit>
+
+    Cards: A, 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, where
+
+    - A: ace
+    - J: jack
+    - Q: queen
+    - K: king
+
+    Suit abbreviations:
+
+    - C: clubs
+    - D: diamonds
+    - H: hearts
+    - S: spades
+
+    Returns
+    -------
+    out: Array<string>
+        List of cards.
+
+    Examples
+    --------
+    > var list = {{alias}}()
+    [ 'AC', '2C', '3C', ... ]
+
+    See Also
+    --------
+

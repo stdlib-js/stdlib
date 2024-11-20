@@ -1,0 +1,138 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6P57Bi5040575
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Thu, 25 Jul 2002 00:07:11 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6P57BCF040571
+	for cypherpunks-forward@ds.pro-ns.net; Thu, 25 Jul 2002 00:07:11 -0500 (CDT)
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6P573i5040550
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks@ds.pro-ns.net>; Thu, 25 Jul 2002 00:07:04 -0500 (CDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: from waste.minder.net (daemon@waste [66.92.53.73])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6P572J66942
+	for <cypherpunks@ds.pro-ns.net>; Thu, 25 Jul 2002 01:07:03 -0400 (EDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: (from cpunks@localhost)
+	by waste.minder.net (8.11.6/8.11.6) id g6P572E25396
+	for cypherpunks@ds.pro-ns.net; Thu, 25 Jul 2002 01:07:02 -0400
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by waste.minder.net (8.11.6/8.11.6) with ESMTP id g6P56wR25355
+	for <cpunks@minder.net>; Thu, 25 Jul 2002 01:06:58 -0400
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6P56uJ66928
+	for <cpunks@minder.net>; Thu, 25 Jul 2002 01:06:56 -0400 (EDT)
+	(envelope-from cpunks@einstein.ssz.com)
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id AAA30869
+	for cpunks@minder.net; Thu, 25 Jul 2002 00:15:53 -0500
+Received: (from mdom@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id AAA30862
+	for cypherpunks-outgoing; Thu, 25 Jul 2002 00:15:47 -0500
+Received: from msn.com ([210.237.167.71])
+	by einstein.ssz.com (8.8.8/8.8.8) with SMTP id AAA30848
+	for <cypherpunks@ssz.com>; Thu, 25 Jul 2002 00:15:38 -0500
+From: Dale0110f17@msn.com
+Received: from [132.26.216.69] by f64.law4.hottestmale.com with QMQP; 25 Jul 2002 12:11:40 -0200
+Received: from unknown (HELO hd.ressort.net) (23.178.206.18)
+	by rly-yk05.pesdets.com with asmtp; Thu, 25 Jul 2002 10:03:13 -0900
+Received: from unknown (93.143.242.10)
+	by rly-xw05.oxyeli.com with esmtp; Thu, 25 Jul 2002 00:54:46 +0400
+Message-ID: <035b72b71b7b$2453e1a3$2ec23ee5@espxkt>
+To: Netizen@aol.com
+Old-Subject: CDR: You Only THINK You're U.S. Citizen!!                                                              8403ZmSX2-110-12
+Date: Thu, 25 Jul 2002 03:54:29 +0100
+MiME-Version: 1.0
+Content-Type: text/html; charset="iso-8859-1"
+X-Priority: 3 (Normal)
+X-MSMail-Priority: Normal
+X-Mailer: eGroups Message Poster
+Importance: Normal
+Sender: owner-cypherpunks@einstein.ssz.com
+Precedence: bulk
+Reply-To: cypherpunks@einstein.ssz.com
+X-Mailing-List: cypherpunks@ssz.com
+X-Unsubscription-Info: http://einstein.ssz.com/cdr
+X-List-Admin: list@ssz.com
+X-Loop: ssz.com
+X-Acceptable-Languages: English, Russian, German, French, Spanish
+Subject: You Only THINK You're U.S. Citizen!!                                                              8403ZmSX2-110-12
+
+<html><H3><B>You only <I><font color=red>THINK</font> </font> you're a
+<font color=blue>U.S. citizen!!</font><P>
+
+If you were born in <font color=green>Washington D.C., Puerto Rico,<BR>
+Guam, the Virgin Islands</font> or some other <font 
+color=green>U.S.<BR>
+possession</font>; you're right and I'm wrong.<P>
+
+<I>BUT</I> - - If you were born in one of the 50 united<BR>
+States of America, you <font color=blue>ARE NOT</font> a U.S. 
+citizen.<BR>
+
+Rather, you are a <font color=red>Citizen </font> of <font
+color=green>Idaho, Ohio, Maine,</font><BR>
+etc.; the <font color=green>state of the Union</font> in which you were
+<font color=red><I><U>BORN!</U></I></font><P>
+
+This simple reality holds serious benefits for you!<P>
+
+Since you <font color=red>ARE NOT</font> a "federal" citizen, you 
+owe<BR>
+<font color=blue><I><U>NO federal income taxes</U></I></font>.  The IRS
+can only demand<BR>
+income tax payments from <U>3 kinds of citizens:</U><P>
+
+1. Those who are <font color=blue>citizens of the U.S.</font>!<BR>
+2. Anyone who receives <font color=blue>"income" from a U.S.
+source</font><BR>
+(and wait until you find out what <font color=blue>"income"</font> really
+is!).<BR>
+3. Any Citizen of one of the 50 united States of America<BR>
+who <font color=blue>VOLUNTEERS</font> to pay it!<P>
+
+Believe it or not, - - When you sign an IRS W4 form for<BR>
+your "employer" you have entered into a "hidden"<BR>
+contract and have <font color=red>VOLUNTEERED</font> to pay!<P>
+
+Our web site is <I>FILLED</I> with <font color=blue>educational and
+eye<BR>
+opening information</font> on how you've been <I><U>tricked</U></I>
+into<BR>
+this - AND how  you can <font color=red>free yourself</font> from the
+treachery.<P>
+
+For ONLY ONE MORE e-mail to point you to our web site:<BR>
+Reply with <font color=red>"Citizen"</font> in the subject box.<P>
+
+<p class=MsoNormal>
+<a href="mailto:tim1@btamail.net.cn?subject=Citizen">
+Click Here</a></p>
+
+PS: To be removed from the list, just put <font color=blue>
+"Remove"</font> in subject line.<P>
+
+<p class=MsoNormal>
+<a href="mailto:kittylas23@yahoo.com?subject=Remove">
+Click Here</a></p>
+</B></H3></html>
+
+
+
+0489xPJK9-7l10
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

@@ -1,0 +1,44 @@
+From rssfeeds@jmason.org  Wed Oct  2 11:44:38 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 187F016F16
+	for <jm@localhost>; Wed,  2 Oct 2002 11:44:38 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 02 Oct 2002 11:44:38 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9281LK31730 for
+    <jm@jmason.org>; Wed, 2 Oct 2002 09:01:21 +0100
+Message-Id: <200210020801.g9281LK31730@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: boingboing <rssfeeds@spamassassin.taint.org>
+Subject: Distributed.net cracks the RC5-64 cipher
+Date: Wed, 02 Oct 2002 08:01:20 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://boingboing.net/#85512053
+Date: Not supplied
+
+The Distributed.net project -- a precursor to SETI@Home that used volunteer 
+computer-time to attack giant, sophisticated ciphers -- has cracked RC564. I 
+used to have half a dozen computers working on this. 
+
+    On 14-Jul-2002, a relatively characterless PIII-450 in Tokyo returned the 
+    winning key to the distributed.net keyservers. The key 0x63DE7DC154F4D039 
+    produces the plaintext output: 
+
+    The unknown message is: some things are better left unread 
+
+    Unfortunately, due to breakage in scripts (dbaker's fault, naturally) on 
+    the keymaster, this successful submission was not automatically detected. 
+    It sat undiscovered until 12-Aug-2002. The key was immediately submitted to 
+    RSA Labs and was verified as the winning key.  
+
+Link[1] Discuss[2] (_Thanks, Dave[3]!_)
+
+[1] http://www.distributed.net/pressroom/news-20020926.html
+[2] http://www.quicktopic.com/boing/H/wf6mvUdf3xfR
+[3] http://www.seizethedave.com/
+
+

@@ -1,0 +1,81 @@
+{
+	"options": {
+		"task": "build"
+	},
+	"fields": [
+		{
+			"field": "src",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "include",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "libraries",
+			"resolve": false,
+			"relative": false
+		},
+		{
+			"field": "libpath",
+			"resolve": true,
+			"relative": false
+		}
+	],
+	"confs": [
+		{
+			"task": "build",
+			"src": [
+				"./src/clampf.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [
+				"-lm"
+			],
+			"libpath": [],
+			"dependencies": [
+				"@stdlib/math/base/napi/ternary",
+				"@stdlib/math/base/assert/is-nanf",
+				"@stdlib/math/base/assert/is-negative-zerof"
+			]
+		},
+		{
+			"task": "benchmark",
+			"src": [
+				"./src/clampf.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [
+				"-lm"
+			],
+			"libpath": [],
+			"dependencies": [
+				"@stdlib/math/base/assert/is-nanf",
+				"@stdlib/math/base/assert/is-negative-zerof"
+			]
+		},
+		{
+			"task": "examples",
+			"src": [
+				"./src/clampf.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [
+				"-lm"
+			],
+			"libpath": [],
+			"dependencies": [
+				"@stdlib/math/base/assert/is-nanf",
+				"@stdlib/math/base/assert/is-negative-zerof"
+			]
+		}
+	]
+}

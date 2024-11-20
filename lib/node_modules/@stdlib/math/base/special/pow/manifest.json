@@ -1,0 +1,126 @@
+{
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/napi/binary",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/constants/float64/high-word-abs-mask",
+        "@stdlib/number/float64/base/get-high-word",
+        "@stdlib/math/base/assert/is-odd",
+        "@stdlib/math/base/special/copysign",
+        "@stdlib/constants/float64/ninf",
+        "@stdlib/number/float64/base/set-high-word",
+        "@stdlib/number/float64/base/set-low-word",
+        "@stdlib/math/base/special/ldexp",
+        "@stdlib/constants/float64/ln-two",
+        "@stdlib/constants/float64/exponent-bias",
+        "@stdlib/constants/float64/high-word-significand-mask",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/assert/is-infinite",
+        "@stdlib/math/base/assert/is-integer",
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/number/float64/base/to-words",
+        "@stdlib/constants/float64/num-high-word-significand-bits"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/abs",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/constants/float64/high-word-abs-mask",
+        "@stdlib/number/float64/base/get-high-word",
+        "@stdlib/math/base/assert/is-odd",
+        "@stdlib/math/base/special/copysign",
+        "@stdlib/constants/float64/ninf",
+        "@stdlib/number/float64/base/set-high-word",
+        "@stdlib/number/float64/base/set-low-word",
+        "@stdlib/math/base/special/ldexp",
+        "@stdlib/constants/float64/ln-two",
+        "@stdlib/constants/float64/exponent-bias",
+        "@stdlib/constants/float64/high-word-significand-mask",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/assert/is-infinite",
+        "@stdlib/math/base/assert/is-integer",
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/number/float64/base/to-words",
+        "@stdlib/constants/float64/num-high-word-significand-bits"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/abs",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/constants/float64/high-word-abs-mask",
+        "@stdlib/number/float64/base/get-high-word",
+        "@stdlib/math/base/assert/is-odd",
+        "@stdlib/math/base/special/copysign",
+        "@stdlib/constants/float64/ninf",
+        "@stdlib/number/float64/base/set-high-word",
+        "@stdlib/number/float64/base/set-low-word",
+        "@stdlib/math/base/special/ldexp",
+        "@stdlib/constants/float64/ln-two",
+        "@stdlib/constants/float64/exponent-bias",
+        "@stdlib/constants/float64/high-word-significand-mask",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/assert/is-infinite",
+        "@stdlib/math/base/assert/is-integer",
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/number/float64/base/to-words",
+        "@stdlib/constants/float64/num-high-word-significand-bits"
+      ]
+    }
+  ]
+}

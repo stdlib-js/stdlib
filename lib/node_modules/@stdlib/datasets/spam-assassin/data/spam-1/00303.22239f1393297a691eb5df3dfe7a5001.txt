@@ -1,0 +1,66 @@
+From acy3154a17@teleweb.at  Sun Sep 15 12:22:00 2002
+Return-Path: <acy3154a17@teleweb.at>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id 164E516F03
+	for <zzzz@localhost>; Sun, 15 Sep 2002 12:21:59 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Sun, 15 Sep 2002 12:21:59 +0100 (IST)
+Received: from teleweb.at (200-207-55-243.dsl.telesp.net.br
+    [200.207.55.243]) by dogma.slashnull.org (8.11.6/8.11.6) with SMTP id
+    g8F0foC26875 for <webmaster@efi.ie>; Sun, 15 Sep 2002 01:41:52 +0100
+Received: from unknown (HELO mta21.bigpong.com) (154.156.51.77) by
+    pet.vosni.net with SMTP; 15 Sep 2002 04:36:52 -0900
+Received: from unknown (15.222.127.32) by symail.kustanai.co.kr with smtp;
+    Sat, 14 Sep 2002 19:36:33 +1200
+Received: from unknown (181.217.164.102) by web.mail.halfeye.com with SMTP;
+    15 Sep 2002 07:36:14 -0100
+Received: from 168.150.26.213 ([168.150.26.213]) by rly-xr02.nikavo.net
+    with local; Sun, 15 Sep 2002 06:35:55 -0600
+Reply-To: <acy3154a17@teleweb.at>
+Message-Id: <033c86b80b6a$4484d0c1$2ee65be0@yhuxjt>
+From: <acy3154a17@teleweb.at>
+To: <webmaster@efi.ie>
+Subject: Go get em gadgets of 2002 4497VLNz2--9
+Date: Sat, 14 Sep 2002 14:29:28 +1000
+MIME-Version: 1.0
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Internet Mail Service (5.5.2650.21)
+Importance: Normal
+Content-Type: multipart/mixed; boundary="----=_NextPart_000_00E4_17A73C2D.E7104E07"
+
+------=_NextPart_000_00E4_17A73C2D.E7104E07
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: base64
+
+
+SGVyZSdzIHRoZSBob3R0ZXN0IHRoaW5nIGluIERWRHMuIE5vdyB5b3UgY2Fu
+IG1ha2UgYSBwZXJzb25hbCBiYWNrdXANCmNvcHkgb2YgYSBEVkQgcmlnaHQg
+b250byBDRC1SLiAgT3VyICJIb3QiIG5ldyBzb2Z0d2FyZSBlYXNpbHkgdGFr
+ZXMgeW91IHRocm91Z2gNCnRoZSBzdGVwcyB0byBtYWtlIGEgY29weSBvZiB5
+b3VyIG93biBEVkRzLg0KDQpOT1cgSU5DTFVERUQgRk9SIEZSRUUhIENvcHkg
+UExBWVNUQVRJT04sIE1VU0lDL01QM3MgYW5kIGFsbCBTb2Z0d2FyZS4NCg0K
+LSBTdGVwIGJ5IFN0ZXAgSW50ZXJhY3RpdmUgSW5zdHJ1Y3Rpb25zIA0KLSBB
+bGwgU29mdHdhcmUgVG9vbHMgSW5jbHVkZWQgT24gQ0QgDQotIE5vIERWRCBC
+dXJuZXIgUmVxdWlyZWQgDQotIEZSRUUgTGl2ZSBUZWNobmljYWwgU3VwcG9y
+dCANCi0gMzAgRGF5IFJpc2sgRnJlZSBUcmlhbCBBdmFpbGFibGUgDQotIEZS
+RUUgRHZkIE1vdmllIG9mIHlvdXIgY2hvaWNlIChMSU1JVEVEIFRJTUUgT0ZG
+RVIhKQ0KDQpXZSBoYXZlIEFsbCB0aGUgc29mdHdhcmUgeW91IG5lZWQgdG8g
+Q09QWSB5b3VyIG93biBEVkQgTW92aWVzLg0KDQpodHRwOi8vZHZkLnNwZWNp
+YWxkaXNjb3VudHM0dS5jb20vDQorKysrKysrKysrKysrKysrKysrKysrKysr
+KysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysr
+KysrKysrDQpUaGlzIGVtYWlsIGhhcyBiZWVuIHNjcmVlbmVkIGFuZCBmaWx0
+ZXJlZCBieSBvdXIgaW4gaG91c2UgIiJPUFQtT1VUIiIgc3lzdGVtIGluIA0K
+Y29tcGxpYW5jZSB3aXRoIHN0YXRlIGxhd3MuIElmIHlvdSB3aXNoIHRvICJP
+UFQtT1VUIiBmcm9tIHRoaXMgbWFpbGluZyBhcyB3ZWxsIA0KYXMgdGhlIGxp
+c3RzIG9mIHRob3VzYW5kcyAgb2Ygb3RoZXIgZW1haWwgcHJvdmlkZXJzIHBs
+ZWFzZSB2aXNpdCAgDQoNCmh0dHA6Ly9kdmQuc3BlY2lhbGRpc2NvdW50czR1
+LmNvbS9vcHRvdXRkLmh0bWwNCisrKysrKysrKysrKysrKysrKysrKysrKysr
+KysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysr
+KysrKysNCg0KOTY1OXNoUGE1LTgyNUNob3k3NzMySUx2bzItODg5YWd1STEy
+MjZTSmRNMS00NjllT1N6NDMyMlNwVXcyLWw1Nw0KNzQyNERhZ2w3LTA5NGZn
+d3IwODk3Z1FPSDItbDI1
+
+

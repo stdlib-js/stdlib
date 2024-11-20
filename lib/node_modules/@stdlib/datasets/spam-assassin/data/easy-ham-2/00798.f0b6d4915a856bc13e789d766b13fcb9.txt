@@ -1,0 +1,63 @@
+From fork-admin@xent.com  Fri Jul 19 20:20:11 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A1902440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 15:20:09 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 20:20:09 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6JJKFJ27780 for <jm@jmason.org>;
+    Fri, 19 Jul 2002 20:20:16 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id A3AC32940AB; Fri, 19 Jul 2002 12:09:48 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from venus.phpwebhosting.com (venus.phpwebhosting.com
+    [64.29.16.27]) by xent.com (Postfix) with SMTP id 3C6A7294098 for
+    <fork@xent.com>; Fri, 19 Jul 2002 12:09:46 -0700 (PDT)
+Received: (qmail 9210 invoked by uid 508); 19 Jul 2002 19:18:41 -0000
+Received: from unknown (HELO hydrogen.leitl.org) (62.155.144.57) by
+    venus.phpwebhosting.com with SMTP; 19 Jul 2002 19:18:41 -0000
+Received: from localhost (eugen@localhost) by hydrogen.leitl.org
+    (8.11.6/8.11.6) with ESMTP id g6JJIar00906; Fri, 19 Jul 2002 21:18:36
+    +0200
+X-Authentication-Warning: hydrogen.leitl.org: eugen owned process doing -bs
+Date: Fri, 19 Jul 2002 21:18:35 +0200 (CEST)
+From: Eugen Leitl <eugen@leitl.org>
+To: "Adam L. Beberg" <beberg@mithral.com>
+Cc: Tom <tomwhore@slack.net>, Robert Harley <harley@argote.ch>,
+	<fork@xent.com>
+Subject: Re: JPEGs patented
+In-Reply-To: <Pine.LNX.4.33.0207191128230.9037-100000@watcher.mithral.com>
+Message-Id: <Pine.LNX.4.33.0207192111130.32028-100000@hydrogen.leitl.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Friends of Rohit Khare <fork.xent.com>
+X-Beenthere: fork@spamassassin.taint.org
+
+On Fri, 19 Jul 2002, Adam L. Beberg wrote:
+
+> So far, but it's not even noon yet. Stealth patents are definately
+> gaining in popularity, maybe we can get this included in the new death
+> penalty for hackers law.
+
+Just ignore the laws completely. You cannot win the legal way, because the
+geek is a minority, and even not a lobby-toting minority at that. You
+Cannot Win That Way. Really.
+
+We need an uncensorable, hardened P2P infrastructure to distribute such
+staples as open source software.  Software patents are tragedy of the
+commons all over again. The collateral damage done by pirating is a
+complete footnote in comparison to the radioactive glass iron-fisted IP
+rights enforcement habitually produces.
+
+
+
+http://xent.com/mailman/listinfo/fork
+
+

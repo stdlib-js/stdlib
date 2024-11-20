@@ -1,0 +1,140 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Wed Jul 24 05:05:01 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D74CC440CC
+	for <jm@localhost>; Wed, 24 Jul 2002 00:04:57 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 05:04:57 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6O41m418945 for <jm-sa-listinfo@jmason.org>; Wed, 24 Jul 2002 05:01:48
+    +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17XDKg-0001Lp-00 for
+    <jm-sa-listinfo@jmason.org>; Tue, 23 Jul 2002 21:01:02 -0700
+Received: from kci.kcilink.com ([206.112.95.6]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17XDJo-0006JL-00 for <spamassassin-talk-admin@lists.sourceforge.net>;
+    Tue, 23 Jul 2002 21:00:08 -0700
+Received: by kci.kciLink.com (Postfix) id 0A43B3F78; Wed, 24 Jul 2002
+    00:00:06 -0400 (EDT)
+Date: Wed, 24 Jul 2002 00:00:06 -0400 (EDT)
+From: MAILER-DAEMON@kciLink.com (Mail Delivery System)
+Subject: Delayed Mail (still being retried)
+To: spamassassin-talk-admin@example.sourceforge.net
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+    boundary="0A47D3EA4.1027483206/kci.kciLink.com"
+Message-Id: <20020724040006.0A43B3F78@kci.kciLink.com>
+Sender: spamassassin-talk-owner@example.sourceforge.net
+Errors-To: spamassassin-talk-owner@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+
+This is a MIME-encapsulated message.
+
+--0A47D3EA4.1027483206/kci.kciLink.com
+Content-Description: Notification
+Content-Type: text/plain
+
+This is the Postfix program at host kci.kciLink.com.
+
+####################################################################
+# THIS IS A WARNING ONLY.  YOU DO NOT NEED TO RESEND YOUR MESSAGE. #
+####################################################################
+
+Your message could not be delivered for 4.0 hours.
+It will be retried until it is 5.0 days old.
+
+For further assistance, please send mail to <postmaster>
+
+			The Postfix program
+
+<khera@kcilink.com>: connect to yertle.kcilink.com[216.194.193.105]: Operation
+    timed out
+
+--0A47D3EA4.1027483206/kci.kciLink.com
+Content-Description: Delivery error report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; kci.kciLink.com
+Arrival-Date: Tue, 23 Jul 2002 19:43:18 -0400 (EDT)
+
+Final-Recipient: rfc822; khera@kcilink.com
+Action: delayed
+Diagnostic-Code: X-Postfix; connect to yertle.kcilink.com[216.194.193.105]:
+    Operation timed out
+Will-Retry-Until: Sun, 28 Jul 2002 19:43:18 -0400 (EDT)
+
+--0A47D3EA4.1027483206/kci.kciLink.com
+Content-Description: Undelivered Message Headers
+Content-Type: text/rfc822-headers
+
+Received: from localhost (localhost [127.0.0.1])
+	by kci.kciLink.com (Postfix) with ESMTP id 0A47D3EA4
+	for <khera@kcilink.com>; Tue, 23 Jul 2002 19:43:18 -0400 (EDT)
+Received: from kci.kciLink.com ([206.112.95.6]) by localhost (lorax.kciLink.com [127.0.0.1]) (amavisd-new) with SMTP id 50275-07 for <khera@kcilink.com>; Tue, 1e Jul 2002 19:43:17 -0000 (EDT)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net [216.136.171.252])
+	by kci.kciLink.com (Postfix) with ESMTP id 056483E44
+	for <khera@kcilink.com>; Tue, 23 Jul 2002 19:43:16 -0400 (EDT)
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13] helo=usw-sf-list1.sourceforge.net)
+	by usw-sf-list2.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian))
+	id 17X9G9-0002hQ-00; Tue, 23 Jul 2002 16:40:05 -0700
+Received: from mail.t-intra.de ([62.156.147.75] helo=mailc0911.dte2k.de)
+	by usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian))
+	id 17X9Fx-0003Nt-00
+	for <spamassassin-talk@lists.sourceforge.net>; Tue, 23 Jul 2002 16:39:54 -0700
+Received: from mailc0908.dte2k.de ([10.50.185.8]) by mailc0911.dte2k.de with Microsoft SMTPSVC(5.0.2195.4453);
+	 Wed, 24 Jul 2002 01:38:54 +0200
+Received: from nebukadnezar.msquadrat.de ([62.226.214.36]) by mailc0908.dte2k.de with Microsoft SMTPSVC(5.0.2195.4453);
+	 Wed, 24 Jul 2002 01:38:54 +0200
+Received: from otherland (otherland.msquadrat.de [10.10.10.10])
+	by nebukadnezar.msquadrat.de (Postfix on SuSE Linux 7.3 (i386)) with ESMTP
+	id 357113FC; Wed, 24 Jul 2002 01:39:46 +0200 (CEST)
+Content-Type: text/plain;
+  charset="iso-8859-1"
+From: "Malte S. Stretz" <msquadrat.nospamplease@gmx.net>
+To: SpamAssassin Talk ML <spamassassin-talk@example.sourceforge.net>
+User-Agent: KMail/1.4.2
+References: <3D3DDEE7.2A07C357@cnc.bc.ca> <20020723231313.GB14564@kluge.net>
+In-Reply-To: <20020723231313.GB14564@kluge.net>
+Cc: Kevin Gagel <gagel@cnc.bc.ca>
+X-Accept-Language: de, en
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Message-Id: <200207240142.23673@malte.stretz.eu.org>
+X-OriginalArrivalTime: 23 Jul 2002 23:38:54.0735 (UTC) FILETIME=[1B8161F0:01C232A2]
+Subject: [SAtalk] Why not upgrade to 2.40 today? (was: Re: [Fwd: Re: [Razor-users] can't find Razor/Client.pm])
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-BeenThere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+	<mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+	<mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 24 Jul 2002 01:42:23 +0200
+Date: Wed, 24 Jul 2002 01:42:23 +0200
+X-Virus-Scanned: by amavisd-new amavisd-new-20020630 (@kci)
+X-Razor-id: 1aefed7c18b89a0962d66a6bd77b4df015ff0dc8
+
+--0A47D3EA4.1027483206/kci.kciLink.com--
+
+

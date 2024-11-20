@@ -1,0 +1,89 @@
+
+{{alias}}( α, β[, options] )
+    Returns an iterator for generating pseudorandom numbers drawn from a
+    beta prime distribution.
+
+    If an environment supports Symbol.iterator, the returned iterator is
+    iterable.
+
+    The function throws an error if `α <= 0` or `β <= 0`.
+
+    Parameters
+    ----------
+    α: number
+        First shape parameter.
+
+    β: number
+        Second shape parameter.
+
+    options: Object (optional)
+        Options.
+
+    options.prng: Function (optional)
+        Pseudorandom number generator (PRNG) for generating uniformly
+        distributed pseudorandom numbers on the interval `[0,1)`. If provided,
+        the `state` and `seed` options are ignored. In order to seed the
+        returned iterator, one must seed the provided `prng` (assuming the
+        provided `prng` is seedable).
+
+    options.seed: integer|ArrayLikeObject<integer> (optional)
+        Pseudorandom number generator seed. The seed may be either a positive
+        unsigned 32-bit integer or, for arbitrary length seeds, an array-like
+        object containing unsigned 32-bit integers.
+
+    options.state: Uint32Array (optional)
+        Pseudorandom number generator state. If provided, the `seed` option is
+        ignored.
+
+    options.copy: boolean (optional)
+        Boolean indicating whether to copy a provided pseudorandom number
+        generator state. Setting this option to `false` allows sharing state
+        between two or more pseudorandom number generators. Setting this option
+        to `true` ensures that a returned iterator has exclusive control over
+        its internal state. Default: true.
+
+    options.iter: integer (optional)
+        Number of iterations.
+
+    Returns
+    -------
+    iterator: Object
+        Iterator.
+
+    iterator.next(): Function
+        Returns an iterator protocol-compliant object containing the next
+        iterated value (if one exists) and a boolean flag indicating whether the
+        iterator is finished.
+
+    iterator.return( [value] ): Function
+        Finishes an iterator and returns a provided value.
+
+    iterator.PRNG: Function
+        Underlying pseudorandom number generator.
+
+    iterator.seed: Uint32Array|null
+        Pseudorandom number generator seed.
+
+    iterator.seedLength: integer|null
+        Length of generator seed.
+
+    iterator.state: Uint32Array|null
+        Generator state.
+
+    iterator.stateLength: integer|null
+        Length of generator state.
+
+    iterator.byteLength: integer|null
+        Size (in bytes) of generator state.
+
+    Examples
+    --------
+    > var it = {{alias}}( 1.0, 1.0 );
+    > var r = it.next().value
+    <number>
+    > r = it.next().value
+    <number>
+
+    See Also
+    --------
+

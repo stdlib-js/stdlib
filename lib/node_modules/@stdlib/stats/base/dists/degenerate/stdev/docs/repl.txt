@@ -1,0 +1,25 @@
+
+{{alias}}( μ )
+    Returns the standard deviation of a degenerate distribution with constant
+    value `μ`.
+
+    Parameters
+    ----------
+    μ: number
+        Constant value of distribution.
+
+    Returns
+    -------
+    out: number
+        Standard deviation.
+
+    Examples
+    --------
+    > var v = {{alias}}( 20.0 )
+    0.0
+    > v = {{alias}}( -10.0 )
+    0.0
+
+    See Also
+    --------
+

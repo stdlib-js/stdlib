@@ -1,0 +1,34 @@
+
+{{alias}}( shape, clbk[, thisArg] )
+    Returns a filled four-dimensional nested array according to a provided
+    callback function.
+
+    The callback function is provided one argument:
+
+    - indices: current array element indices.
+
+    Parameters
+    ----------
+    shape: Array<integer>
+        Array shape.
+
+    clbk: Function
+        Callback function.
+
+    thisArg: any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    out: Array
+        Output array.
+
+    Examples
+    --------
+    > function clbk() { return 1.0; };
+    > var out = {{alias}}( [ 1, 1, 1, 3 ], clbk )
+    [ [ [ [ 1.0, 1.0, 1.0 ] ] ] ]
+
+    See Also
+    --------
+

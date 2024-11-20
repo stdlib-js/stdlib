@@ -1,0 +1,47 @@
+From fork-admin@xent.com  Tue Aug 27 00:53:25 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0480643F99
+	for <jm@localhost>; Mon, 26 Aug 2002 19:53:25 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 27 Aug 2002 00:53:25 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7QNnfZ15088 for <jm@jmason.org>;
+    Tue, 27 Aug 2002 00:49:42 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 4CF8F2941C9; Mon, 26 Aug 2002 16:47:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from argote.ch (argote.ch [80.65.224.17]) by xent.com (Postfix)
+    with ESMTP id 4F1B129417F for <fork@xent.com>; Mon, 26 Aug 2002 16:46:53
+    -0700 (PDT)
+Received: by argote.ch (Postfix, from userid 500) id 4DAC7C44D;
+    Tue, 27 Aug 2002 01:40:02 +0200 (CEST)
+To: fork@spamassassin.taint.org
+Subject: Re: A biblical digression
+Message-Id: <20020826234002.4DAC7C44D@argote.ch>
+From: harley@argote.ch (Robert Harley)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 27 Aug 2002 01:40:02 +0200 (CEST)
+
+John Hall:
+>Ran across a site which claimed to explain the original meaning of the
+>Ten Commandments.  It seems some of those meanings have evolved a bit, too.
+
+You mean that "Thou shalt not covet thy neighbour's ass" used to be
+about donkeys???  Inconceivable!!!
+
+R
+

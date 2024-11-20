@@ -1,0 +1,1128 @@
+Return-Path: <Online#3.20224.c4-ddW5l6ay9S9K-sRR.1.b@newsletter.online.com>
+Received: from abv-sfo-acmta2.cnet.com (abv-sfo1-acmta2.cnet.com [206.16.1.161])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6HB9BJ13138
+	for <qqqqqqqqqq-zdnet@spamassassin.taint.org>; Wed, 17 Jul 2002 12:09:11 +0100
+Received: from abv-sfo1-ac-agent5 (206.16.0.240) by abv-sfo-acmta2.cnet.com (PowerMTA(TM) v1.5); Wed, 17 Jul 2002 07:11:15 -0700 (envelope-from <Online#3.20224.c4-ddW5l6ay9S9K-sRR.1.b@newsletter.online.com>)
+Message-ID: <4512630.1026904145018.JavaMail.root@abv-sfo1-ac-agent5>
+Date: Wed, 17 Jul 2002 04:09:05 -0700 (PDT)
+From: "CNET Download.com for PC" <Online#3.20224.c4-ddW5l6ay9S9K-sRR.1@newsletter.online.com>
+To: qqqqqqqqqq-zdnet@spamassassin.taint.org
+Subject: This week: Rhapsody rules
+Mime-Version: 1.0
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+X-Mailer: Accucast (http://www.accucast.com)
+X-Mailer-Version: 2.8.4-2
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Download Dispatch - PC Edition</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="MSHTML 5.50.4522.1800" name=GENERATOR></HEAD>
+<BODY bgColor=#eeeeee>
+<CENTER>
+<!-- header -->
+<TABLE cellSpacing=0 cellPadding=0 width=612 bgColor=#ffffff border=0>
+   <TBODY>
+   <TR vAlign=top>
+     <TD width=442 colSpan=4><IMG height=60
+       alt="Download Dispatch - PC Edition"
+       src="http://www.cnet.com/i/nl/dl/hd_pc.gif" width=442><BR>
+       <TABLE cellSpacing=0 cellPadding=0 width=442 bgColor=#ffcc00 border=0>
+         <TBODY>
+         <TR>
+           <TD bgColor=#000000 colSpan=3><IMG height=1
+             src="http://www.cnet.com/b.gif" width=1></TD></TR>
+         <TR>
+           <TD width=1 bgColor=#000000 rowSpan=2><IMG height=10
+             src="http://www.cnet.com/b.gif" width=1></TD>
+           <TD width=10 rowSpan=2><IMG height=10
+             src="http://www.cnet.com/b.gif" width=1></TD>
+           <TD width=430><IMG height=10 src="http://www.cnet.com/b.gif"
+           width=1></TD></TR>
+         <TR>
+           <TD bgColor=#000000><IMG height=1 src="http://www.cnet.com/b.gif"
+             width=1></TD></TR></TBODY>
+       </TABLE>
+      </TD>
+
+<!-- Accucast ad -->
+
+<td width=160 rowspan=2>
+<iframe src="http://www.zdnet.com/include/ads/ifc/RGROUP=2560" scrolling="no" frameborder="0" hspace="0" vspace="0" height="600" width="160" marginheight="0" marginwidth="0">
+<script language="JavaScript" src="http://www.zdnet.com/include/ads/js/RGROUP=2560">
+</script>
+</iframe>
+
+<!-- /Accucast ad -->
+
+<!-- search form -->
+
+<br><table cellspacing=0 cellpadding=0 width=160 border=0><form
+method=get action="http://www.search.com/redirect">
+<tr valign=top><td><font size="-1" face="arial,helvetica,sans-serif">
+<img src="http://www.cnet.com/i/nl/dl/dispatch_hd.gif" height=20
+width=150 alt="Search Download.com" border=0><br>
+<img src="http://cnet.com/b.gif" width=1 height=1><br><input
+type=text name=q size=17 value=""><br>
+<select name=target class=frmel>
+  <option
+value="http://download.cnet.com/downloads/0,10150,0-10000-103-0-1-7,00.html?tag=srch&qt=%%q%%&cn=&ca=10000">Downloads
+  <option
+value="http://cnet.search.com/search?tag=ex.downloadpc.dispatch.srch.cnet">All
+CNET
+  <option
+value="http://www.search.com/search?tag=ex.downloadpc.dispatch.srch.web">The
+Web
+</select> <input type=submit value="Go!"></font></td></tr></form></table><p>
+
+<!-- /search form -->
+
+<!-- right column content -->
+
+<!-- updates & drivers -->
+
+<IMG height=20 alt="Updates & Drivers"
+       src="http://www.cnet.com/i/nl/dl/rhc_up.gif" width=150><BR>
+       <TABLE cellSpacing=0 cellPadding=2 width=160 border=0>
+         <TBODY>
+
+<TR><TD>
+<FONT face="arial, helvetica" size=-1>
+<FONT size=-2>In Utilities:</FONT><BR>
+<B><a href="http://clickthru.online.com/Click?q=da-dT8jQUPq2iK59d5bjsMVKpv3DxnR" >CloneCD 4.0</A></B><P>
+
+<FONT size=-2>In Audio:</FONT><BR>
+<B><a href="http://clickthru.online.com/Click?q=ef-04uYQmkH9uW_1HIqBxDVAmoBameR" >Sound Forge 6.0a build 150</A></B><p>
+<B><a href="http://clickthru.online.com/Click?q=04-k9W0IFQXAWVZUsS98BbBL7kOi_yR" >Media Jukebox 8.0.32</A></B><p>
+
+<FONT size=-2>In Internet:</FONT><BR>
+<B><a href="http://clickthru.online.com/Click?q=19-BLe0I2rXwP8MMLFKMZ2Fz8IR7XlR" >Accelerate 2K2 3</A></B><P>
+
+<FONT size=-2>In Multimedia:</FONT><BR>
+<B><a href="http://clickthru.online.com/Click?q=2e-eMTGIiK89wqCWxQktQ3DlPfP8N4R" >FotoTime FotoAlbum 3.0.2</A></B><P>
+
+<FONT size=-2>In Web Authoring:</FONT><BR>
+<B><a href="http://clickthru.online.com/Click?q=43-coL5IBJAW1Ag_rS9Z5VKc-3P0BcR" >J-Perk 6.04</A></B><P>
+<B><a href="http://clickthru.online.com/Click?q=58-mr2xIdJHOQ9u9CjYjKHbtbXYzHRR" >TextSOAP 1.5.2</A></B><P>
+
+<FONT size=-2>In Business & Finance:</FONT><BR>
+<B><a href="http://clickthru.online.com/Click?q=6d-e8plIDEI0tAv1po7Bc1bJBykEmZR" >FileMaker Pro 6.0v2</A></B><P>
+
+<FONT size=-2>In Games:</FONT><BR>
+<B><a href="http://clickthru.online.com/Click?q=82-P0EYQXK14auJLUi6gJLkjCXMZHnR" >Balls of Steel Patch 1.3</A></B><P>
+
+
+</TD></TR></TBODY></TABLE>
+
+<!-- /updates & drivers -->
+
+<!-- catchup -->
+
+<!-- /catchup -->
+
+<!-- shopper upgrades --><IMG height=20
+       alt="Software &#13;&#10;Upgrades"
+       src="http://a.r.tv.com/cnet.1d/i/nl/cu/rhc_shopper.gif" width=160
+       NOSEND="1"><BR>
+       <TABLE cellSpacing=0 cellPadding=2 width=150 border=0>
+         <TBODY>
+         <TR>
+           <TD>
+             <P>
+             <TABLE cellSpacing=0 cellPadding=2 width=150 border=0>
+               <TBODY>
+               <TR>
+                 <TD colSpan=2><FONT
+                   face="Arial, Helvetica, &#13;&#10;sans-serif"
+                   size=2><B>Most Popular Upgrades:</B></FONT><BR></TD></TR>
+
+               <TR vAlign=top>
+                 <TD><FONT face="arial, helvetica"
+                   size=-1><B>&nbsp;1.</B></FONT></TD>
+
+                 <TD><FONT face="arial, helvetica" size=-1>
+<a href="http://clickthru.online.com/Click?q=98-FTaOQ_za61WKq9lCW5CH7esbKRiR" >
+ZoneAlarm Pro 3.0</A></FONT></TD></TR>
+
+               <TR vAlign=top>
+                 <TD><FONT face="arial, helvetica"
+                   size=-1><B>&nbsp;2.</B></FONT></TD>
+
+                 <TD><FONT face="arial, helvetica" size=-1>
+<a href="http://clickthru.online.com/Click?q=ad-_4IAQzEBSOiMNH4QhaIHsSzky0PR" >
+Norton AntiVirus 2002</A></FONT></TD></TR>
+
+               <TR vAlign=top>
+                 <TD><FONT face="arial, helvetica"
+                   size=-1><B>&nbsp;3.</B></FONT></TD>
+
+                 <TD><FONT face="arial, helvetica" size=-1>
+<a href="http://clickthru.online.com/Click?q=c2-oXxLQUEkRhXZoi4gVnxXFZcIuInR" >
+AdSubtract Pro 2.5</A></FONT></TD></TR>
+
+               <TR vAlign=top>
+                 <TD><FONT face="arial, helvetica"
+                   size=-1><B>&nbsp;4.</B></FONT></TD>
+
+                 <TD><FONT face="arial, helvetica" size=-1>
+<a href="http://clickthru.online.com/Click?q=d7-wk3ZQLWkDhzIDz9RmBekeVktk2eR" >
+Microsoft Windows XP - Professional</A></FONT></TD></TR>
+
+              <TR vAlign=top>
+		                  <TD><FONT face="arial, helvetica"
+                   size=-1><B>&nbsp;5.</B></FONT></TD>
+
+                 <TD><FONT face="arial, helvetica" size=-1>
+<a href="http://clickthru.online.com/Click?q=ec-MHyXQVy2FgXSurk1kOqFb2GVaGyR" >
+Nero Burning ROM 5.5</A></FONT></TD></TR>
+
+
+               <TR vAlign=top>
+                 <TD><FONT face="arial, helvetica"
+                   size=-1><B>&nbsp;6.</B></FONT></TD>
+
+                 <TD><FONT face="arial, helvetica" size=-1>
+                 <a href="http://clickthru.online.com/Click?q=01-9oXDI2jHs5wF8rMvurMPGPxZ6RlR" >
+Reason 2.0</A></FONT></TD></TR>
+
+                   <TR vAlign=top>
+                 <TD><FONT face="arial, helvetica"
+	                       size=-1><B>&nbsp;7.</B></FONT></TD>
+
+	                     <TD><FONT face="arial, helvetica" size=-1>
+	                     <a href="http://clickthru.online.com/Click?q=16-T_cjI4cFDOiDiQADblRuaBDxRU4R" >
+Microsoft Windows XP - Home Edition</A></FONT></TD></TR>
+
+
+              <TR vAlign=top>
+		                  <TD><FONT face="arial, helvetica"
+		                    size=-1><B>&nbsp;8.</B></FONT></TD>
+
+		                  <TD><FONT face="arial, helvetica" size=-1>
+		                  <a href="http://clickthru.online.com/Click?q=2c-DatOIc0DRUHS1KHc-r7MBvWpjuyR" >
+QuickBooks Pro 2002</A> </FONT></TD></TR>
+
+
+               <TR vAlign=top>
+                 <TD><FONT face="arial, helvetica"
+                   size=-1><B>&nbsp;9.</B></FONT></TD>
+
+                 <TD><FONT face="arial, helvetica" size=-1>
+<a href="http://clickthru.online.com/Click?q=41-qqJ1IEKIeDqXE8fU5CfCkxHB0FFR" >
+Adobe Photoshop 7.0</A></FONT></TD></TR>
+
+               <TR vAlign=top>
+                 <TD><FONT face="arial, helvetica"
+size=-1><B>10.</B></FONT></TD>
+
+                <TD><FONT face="arial, helvetica" size=-1>
+<a href="http://clickthru.online.com/Click?q=56-NwKYInnsvJVSpcErctPQDwwaMC9R" >
+WinZip 8.1</A></FONT></TD></TR>
+
+               <TR>
+
+                 <TD colSpan=2>
+                   <FONT face="Arial, Helvetica, sans-serif" size=-2><BR>Find a
+                   complete list of the 50 most popular software products at
+                   <a href="http://clickthru.online.com/Click?q=6b-8g5ZIHEcOAe5gIK80ywQ-4d0P6cR" ><B>CNET
+Shopper.com</B></A>.</FONT></TD></TR></TBODY></TABLE>
+
+             <P><!-- /shopper upgrades -->
+
+<!-- Vertical Brick: July 1 2002-->
+
+ <IMG alt="Also from CNET" height=20 src="http://home.cnet.com/Ads/Media/Images/RHC_ALSOfromCNETnet.gif" width=150 NOSEND="1"><BR> <TABLE border=0 cellPadding=2 cellSpacing=0 width=150><TBODY><TR vAlign=top> <TD><FONT face="arial, helvetica" size=-1><B>
+
+<a href="http://clickthru.online.com/Click?q=80-KTKvQQ0KYevlFaIoaDkjVsTLZ8iR" >Summer 2002 software</a><p>
+<a href="http://clickthru.online.com/Click?q=95-XdwrQvdJfeUG9lor1yZeU_u_KnPR" >Test your bandwidth</a><p>
+<a href="http://clickthru.online.com/Click?q=aa-gBteQXUr_tWDl8FWLXZBXqONOVnR" >New jobs, click here!</a><p>
+<a href="http://clickthru.online.com/Click?q=bf-JtRfQ8Zrg9kL4G45w8PF_jEuwteR" >Inside HP</a> <p>
+<a href="http://clickthru.online.com/Click?q=d4-E0SqQ0ExoPjrJ0W_4Mc3148lk6yR" >Bluetooth: speeds up</a>
+
+</B></FONT></TD>
+</TR></TBODY></TABLE></P>
+
+<!-- End Vertical Brick-->
+
+</FONT></TD></TR></TBODY></TABLE></P></TD>
+
+<!-- /right column content -->
+
+<!-- Main body content -->
+
+     <TD width=9 rowSpan=2><IMG height=60
+       src="http://www.cnet.com/i/nl/dd_c.gif" width=9><BR>
+       <TABLE cellSpacing=0 cellPadding=0 width=9 border=0>
+         <TBODY>
+         <TR>
+           <TD bgColor=#000000><IMG height=1 src="http://www.cnet.com/b.gif"
+             width=9></TD></TR>
+         <TR>
+           <TD bgColor=#ffcc00><IMG height=10 src="http://www.cnet.com/b.gif"
+             width=1></TD></TR>
+         <TR>
+           <TD bgColor=#000000><IMG height=1 src="http://www.cnet.com/b.gif"
+             width=1></TD></TR></TBODY></TABLE></TD>
+     <TD width=1 bgColor=#000000 rowSpan=2>
+       <TABLE cellSpacing=0 cellPadding=0 width=1 border=0>
+         <TBODY>
+         <TR>
+           <TD bgColor=#eeeeee><IMG height=60 src="http://www.cnet.com/b.gif"
+             width=1></TD></TR></TBODY></TABLE></TD></TR>
+   <TR vAlign=top>
+     <TD width=1 bgColor=#000000><IMG height=1 src="http://www.cnet.com/b.gif"
+       width=1></TD>
+     <TD width=10 bgColor=#ffcc00><IMG height=1 src="http://www.cnet.com/b.gif"
+       width=10></TD>
+     <TD width=1 bgColor=#000000><IMG height=1 src="http://www.cnet.com/b.gif"
+       width=1></TD>
+       <!-- ?? -->
+     <TD width=430 bgColor=#ffffff>
+       <TABLE cellSpacing=0 cellPadding=0 width=100% bgColor=#ffffef border=0>
+         <TBODY>
+         <TR vAlign=top>
+           <TD width=10 rowSpan=2><IMG height=1 src="http://www.cnet.com/b.gif"
+             width=10></TD>
+           <TD colSpan=2>
+
+    <!-- Date -->
+
+    <font face="arial, helvetica" size="-2"><b>July 9, 2002</b></font><br>
+
+    <!-- /Date -->
+
+     <IMG height=8 src="http://www.cnet.com/b.gif"
+             width=1><BR></TD></TR>
+         <TR vAlign=top>
+           <TD align=left width=410><IMG height=86
+             src="http://download.com.com/i/dl/scr/66x86kellyg.gif"
+             width=66 border=0 align=left hspace=15 vspace=5><!--BR></TD>
+           <TD width=315-->
+<!-- title -->
+<p>
+<font face="arial, helvetica" size=-1><FONT color=#333333
+size=3><b>Rhapsody rules</b></font><br>
+
+<!-- /title -->
+
+<!-- letter -->
+
+<FONT face="arial, helvetica" size=-1>
+I never thought I&#146;d say it, but I&#146;m changing my tune about subscription music services.<p>
+
+When MusicNet and Pressplay launched their monthly subscription services late last year, I was unimpressed. Their music catalogs were limited, the software was clunky, and the copyright protection features seemed unduly restrictive. I wondered how they could ever compete with the seductive (read: free) charms of file sharing. But last week I decided to try out Listen.com&#146;s <a href="http://clickthru.online.com/Click?q=ea-fjLyQhV4XV2SrBzAwQ4lAUw-5WnR" >Rhapsody</a>, a subscription streaming music service that recently managed to secure recordings from all five major labels. And now I&#146;m rethinking my stance.<p>
+
+Rhapsody is not for everyone. If you like to burn your MP3s to CD or download them to a portable player, you&#146;ll want to look elsewhere; Rhapsody allows CD burning only for a small portion of its catalog, and only for an extra charge, and you can&#146;t download MP3s at all. But what Rhapsody does have is music, and lots of it--thousands of albums of all major genres on demand as well as tons of preprogrammed radio stations. I think Listen.com might be onto something with its streaming service. Would you pay 10 bucks a month for a service that has all the music you could ask for, but won't allow you to actually download MP3s? Let me know at <a href="mailto:edit@download.com?subject=rhapsody%20rules">edit@download.com</a><p>
+
+<p>Kelly Green<br>
+
+Director, CNET Download.com<p>
+
+
+<!-- /letter -->
+
+           <TD width=10><IMG height=1 src="http://www.cnet.com/b.gif"
+           width=10></TD></TR></TBODY></TABLE>
+           <!-- was 430-->
+       <TABLE cellSpacing=0 cellPadding=0 width=100% border=0>
+         <TBODY>
+         <TR>
+           <TD bgColor=#ffcc00><IMG height=1 src="http://www.cnet.com/b.gif"
+             width=1></TD></TR></TBODY></TABLE>
+       <TABLE cellSpacing=0 cellPadding=10 width=100% border=0>
+         <TBODY>
+         <TR>
+           <TD><FONT face="arial, helvetica" size=-1>
+
+<!-- FEATURES & REVIEWS -->
+
+  <TABLE border=0 cellPadding= cellSpacing=0 width=100%>
+         <TBODY>
+         <TR>
+           <TD><FONT face="arial, helvetica" size=-1><IMG
+             alt="Reviews &amp; Features"
+             src="http://www.cnet.com/i/nl/lx/sub_rev.gif"
+             border=0><BR><IMG height=8
+             src="http://www.cnet.com/i/nl/rule.gif" width=410
+             border=0><BR>
+             <TABLE align=left border=0 cellPadding=0 cellSpacing=0 width=95>
+               <TBODY>
+               <TR>
+                 <TD><a href="http://clickthru.online.com/Click?q=ff-sVoVQms4myisiMnZxrhBm0WHtheR" ><IMG
+                   border=0 src="http://download.com.com/i/dl/scr/powerdownloader_promo21.gif">
+               </A></TD></TR></TBODY></TABLE><FONT
+face=arial,helvetica size=-1><A
+             name=h1><B>
+
+<a href="http://clickthru.online.com/Click?q=14-5MRAIF-zGNmryZd8ZvQIzTKtR1yR" >
+Power Downloader fixes his computer
+</A></B></A><BR>Sometimes even a superhero has to handle mundane computer
+   maintenance. Power Downloader's Weekly Picks returns with
+   four apps that will save your PC from itself.
+<FONT face=arial,helvetica size=-1><A
+             name=h1><br><br><br><br><B>
+
+<a href="http://clickthru.online.com/Click?q=29-Sg_rIjMAh2JKeqdNyGEI9rCM8vlR" >
+Protect your PC
+</A></B></A><BR>It almost seems like there's a new virus in the news every
+   week. Of course, you want to protect your PC. But
+   how? CNET Software editors walk you through 10 antivirus options.
+</font>
+             <br><br></TABLE>
+
+             <!-- /FEATURES & REVIEWS -->
+
+
+
+<!-- DOWNLOAD LAUNCHPAD -->
+
+<A name=h1><IMG height=19 alt="CNET's Exclusive Downloads"
+src="http://www.cnet.com/i/nl/dl/HEAD_dwnld_launch.gif"
+width=175></A><BR>
+<IMG height=8 src="http://www.cnet.com/i/nl/rule.gif" width=410><BR>
+<!-- <font face="arial,helvetica" size=+0
+color=#666666><b><i>Download Launchpad</i></b></font><br>
+<table width=410 cellpadding=0 cellspacing=0 border=0>
+<tr><td bgcolor=#cccccc><IMG height=1
+src="http://www.cnet.com/i/b.gif" width=410></td></tr>
+</table> -->
+<font face="verdana,geneva,helvetica" size=-2>New products from our
+sponsors<br></font>
+<IMG height=8 src="http://www.cnet.com/i/b.gif" width=1><br>
+
+<B> <a href="http://clickthru.online.com/Click?q=3f-4sAEIqMWSIVspnSHcoh57BymNzeR" >New Window Washer 4.7</A></B>
+<BR>What you do online is nobody's business. Take control with
+   Window Washer. Protect your privacy, clean unwanted files, and
+   boost PC performance. Download a free trial version today.<br><br>
+
+<B> <a href="http://clickthru.online.com/Click?q=54-l6ovIZKA72QW4AZ0O9U4lR0vdksR" >Magic: The Gathering Online
+</A></B><BR>Have the deadliest strategies all at your control. Experience the most
+   competition. There's always a game on.
+   As your game grows, new challenges await.<br><br>
+
+<font face="verdana,geneva,helvetica" size=-2>All Download Launchpad
+titles powered by Download Express--CNET's new speedy download
+service!</font><br>
+
+<!-- /DOWNLOAD LAUNCHPAD -->
+
+<!-- top ten -->
+
+<BR>
+<A name=h2><IMG height=19 alt="This Week's Top Ten Downloads"
+src="http://www.cnet.com/i/nl/dl/sub_top10.gif"
+width=250></A><BR><IMG height=8
+src="http://www.cnet.com/i/nl/rule.gif" width=410><br>
+
+<!-- Top 10 intro -->
+
+KaZaA remains at the top, our very own CNET CatchUp moves up
+   a couple spots to No. 8, and Download Accelerator drops 2
+   spots to round out the list at No. 10
+
+<!-- /Top 10 intro -->
+
+<TABLE cellSpacing=0 cellPadding=4 width="100%"
+border=0><TBODY><TR><TD width="6%" height=36><FONT face="arial,
+helvetica" size=-1> </FONT></TD>
+
+<TD width="39%"><FONT face="arial, helvetica" size=-1>
+
+<B>Most Popular Titles</B><BR>
+
+<!-- Week Ending Date -->
+
+         <FONT size=-2>Week ending July 14</FONT></FONT></TD>
+
+<!-- /Week Ending Date -->
+
+                 <TD width="13%"><FONT face="arial, helvetica"
+                   size=-1>  <B>Last<BR>  Week</B> </FONT></TD>
+                 <TD width="16%"><FONT face="arial, helvetica"
+                   size=-1>  <B>Weeks<BR>  on Chart</B> </FONT></TD>
+                 <TD width="26%"><FONT face="arial, helvetica"
+                   size=-1>  <B>Downloads<BR>  This
+                   Week</B> </FONT></TD></TR>
+               <TR>
+                 <TD colSpan=5>
+                   <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                     <TBODY>
+                     <TR>
+                       <TD bgColor=#cccccc><IMG height=1
+                         src="http://www.cnet.com/b.gif"
+                   width=1></TD></TR></TBODY></TABLE></TD></TR>
+               <TR align=middle>
+                 <TD width="6%" height=32><FONT face="ms sans serif, geneva"
+                   size=-2>1.</FONT></TD>
+                 <TD align=left width="39%"><FONT face="arial, helvetica"
+                   size=-1>
+
+<B><a href="http://clickthru.online.com/Click?q=69-CY-iIoWgaO4k_fuMoAH4OpRzLxFR" >KaZaA
+Media Desktop</A></B></FONT></TD>
+	<!-- Last week -->
+		<TD width="13%"><FONT face="ms sans serif, geneva"
+size=-2>1</FONT></TD>
+	<!-- /Last week -->
+
+	<!-- Weeks on -->
+		<TD width="16%"><FONT face="ms sans serif, geneva"
+size=-2>11</FONT></TD>
+	<!-- /Weeks on -->
+
+	<!-- Download count -->
+		<TD width="26%"><FONT face="ms sans serif, geneva"
+size=-2>2,251,808</FONT></TD></TR>
+	<!-- /Download count -->
+
+               <TR>
+                 <TD colSpan=5>
+                   <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                     <TBODY>
+                     <TR>
+                       <TD bgColor=#cccccc><IMG height=1
+                         src="http://www.cnet.com/b.gif"
+                   width=1></TD></TR></TBODY></TABLE></TD></TR>
+                <TR align=middle>
+                 <TD width="6%" height=32><FONT face="ms sans serif, geneva"
+                   size=-2>2.</FONT></TD>
+                 <TD align=left width="39%"><FONT face="arial, helvetica"
+                   size=-1>
+
+
+<B><a href="http://clickthru.online.com/Click?q=7e-XDXeInptF7HbF_ti6pURwMpopr9R" >ICQ
+2002a</A></B></FONT></TD>
+	<!-- Last week -->
+		<TD width="13%"><FONT face="ms sans serif, geneva"
+size=-2>3</FONT></TD>
+	<!-- /Last week -->
+	<!-- Weeks on -->
+		<TD width="16%"><FONT face="ms sans serif, geneva"
+size=-2>251</FONT></TD>
+	<!-- /Weeks on -->
+	<!-- Download count -->
+		<TD width="26%"><FONT face="ms sans serif, geneva"
+size=-2>609,430</FONT></TD></TR>
+	<!-- /Download count -->
+
+
+              <TR>
+                 <TD colSpan=5>
+                   <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                     <TBODY>
+                     <TR>
+                       <TD bgColor=#cccccc><IMG height=1
+                         src="http://www.cnet.com/b.gif"
+                   width=1></TD></TR></TBODY></TABLE></TD></TR>
+               <TR align=middle>
+                 <TD width="6%" height=32><FONT face="ms sans serif, geneva"
+                   size=-2>3.</FONT></TD>
+                 <TD align=left width="39%"><FONT face="arial, helvetica"
+                   size=-1>
+
+
+<B><a href="http://clickthru.online.com/Click?q=93-V4PmQSdQ3Vja0NGcTYjvQ8Rgn5rR" >Morpheus</A></B></FONT></TD>
+	<!-- Last week -->
+		<TD width="13%"><FONT face="ms sans serif, geneva"
+size=-2>2</FONT></TD>
+	<!-- /Last week -->
+	<!-- Weeks on -->
+		<TD width="16%"><FONT face="ms sans serif, geneva"
+size=-2>63</FONT></TD>
+	<!-- /Weeks on -->
+	<!-- Download count -->
+		<TD width="26%"><FONT face="ms sans serif, geneva"
+size=-2>565,410</FONT></TD></TR>
+	<!-- /Download count -->
+
+               <TR>
+                 <TD colSpan=5>
+                   <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                     <TBODY>
+                     <TR>
+                       <TD bgColor=#cccccc><IMG height=1
+                         src="http://www.cnet.com/b.gif"
+                   width=1></TD></TR></TBODY></TABLE></TD></TR>
+               <TR align=middle>
+                 <TD width="6%" height=32><FONT face="ms sans serif, geneva"
+                   size=-2>4.</FONT></TD>
+                 <TD align=left width="39%"><FONT face="arial, helvetica"
+                   size=-1>
+
+<B><a href="http://clickthru.online.com/Click?q=a8-02XZQQZkruy-L3TDtZs6swzdONiR" >WinZip</A></B></FONT></TD>
+  	<!-- Last week -->
+  		<TD width="13%"><FONT face="ms sans serif, geneva"
+size=-2>4</FONT></TD>
+  	<!-- /Last week -->
+  	<!-- Weeks on -->
+  		<TD width="16%"><FONT face="ms sans serif, geneva"
+size=-2>300</FONT></TD>
+  	<!-- /Weeks on -->
+  	<!-- Download count -->
+  		<TD width="26%"><FONT face="ms sans serif, geneva"
+size=-2>452,540</FONT></TD></TR>
+  	<!-- /Download count -->
+
+
+               <TR>
+                 <TD colSpan=5>
+                   <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                     <TBODY>
+                     <TR>
+                       <TD bgColor=#cccccc><IMG height=1
+                         src="http://www.cnet.com/b.gif"
+                   width=1></TD></TR></TBODY></TABLE></TD></TR>
+               <TR align=middle>
+                 <TD width="6%" height=32><FONT face="ms sans serif, geneva"
+                   size=-2>5.</FONT></TD>
+                 <TD align=left width="39%"><FONT face="arial, helvetica"
+                   size=-1>
+
+<B><a href="http://clickthru.online.com/Click?q=be-B7ixQCpTpl-yNWvbnY9y52GfwH4R" >iMesh</A></B></FONT></TD>
+	<!-- Last week -->
+		<TD width="13%"><FONT face="ms sans serif, geneva"
+size=-2>5</FONT></TD>
+	<!-- /Last week -->
+	<!-- Weeks on -->
+		<TD width="16%"><FONT face="ms sans serif, geneva"
+size=-2>116</FONT></TD>
+	<!-- /Weeks on -->
+	<!-- Download count -->
+		<TD width="26%"><FONT face="ms sans serif, geneva"
+size=-2>353,287</FONT></TD></TR>
+	<!-- /Download count -->
+
+               <TR>
+                 <TD colSpan=5>
+                   <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                     <TBODY>
+                     <TR>
+                       <TD bgColor=#cccccc><IMG height=1
+                         src="http://www.cnet.com/b.gif"
+                   width=1></TD></TR></TBODY></TABLE></TD></TR>
+               <TR align=middle>
+                 <TD width="6%" height=32><FONT face="ms sans serif, geneva"
+                   size=-2>6.</FONT></TD>
+                 <TD align=left width="39%"><FONT face="arial, helvetica"
+                   size=-1>
+
+<B><a href="http://clickthru.online.com/Click?q=d3-GZHkQJPaYBmbHaKK74p01K7fy3rR" >BearShare</A></B></FONT></TD>
+	<!-- Last week -->
+		<TD width="13%"><FONT face="ms sans serif, geneva"
+size=-2>6</FONT></TD>
+	<!-- /Last week -->
+	<!-- Weeks on -->
+		<TD width="16%"><FONT face="ms sans serif, geneva"
+size=-2>74</FONT></TD>
+	<!-- /Weeks on -->
+	<!-- Download count -->
+		<TD width="26%"><FONT face="ms sans serif, geneva"
+size=-2>177,000</FONT></TD></TR>
+	<!-- /Download count -->
+
+
+               <TR>
+                 <TD colSpan=5>
+                   <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                     <TBODY>
+                     <TR>
+                       <TD bgColor=#cccccc><IMG height=1
+                         src="http://www.cnet.com/b.gif"
+                   width=1></TD></TR></TBODY></TABLE></TD></TR>
+               <TR align=middle>
+                 <TD width="6%" height=32><FONT face="ms sans serif, geneva"
+                   size=-2>7.</FONT></TD>
+                 <TD align=left width="39%"><FONT face="arial, helvetica"
+                   size=-1>
+
+
+<B><a href="http://clickthru.online.com/Click?q=e8-DOJMQfk8UQBPe0crAP_kMFIM55iR" >Ad-aware</A></B></FONT></TD>
+	<!-- Last week -->
+		<TD width="13%"><FONT face="ms sans serif, geneva"
+size=-2>7</FONT></TD>
+	<!-- /Last week -->
+	<!-- Weeks on -->
+		<TD width="16%"><FONT face="ms sans serif, geneva"
+size=-2>44</FONT></TD>
+	<!-- /Weeks on -->
+	<!-- Download count -->
+		<TD width="26%"><FONT face="ms sans serif, geneva"
+size=-2>156,911</FONT></TD></TR>
+	<!-- /Download count -->
+
+
+               <TR>
+                 <TD colSpan=5>
+                   <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                     <TBODY>
+                     <TR>
+                       <TD bgColor=#cccccc><IMG height=1
+                         src="http://www.cnet.com/b.gif"
+                   width=1></TD></TR></TBODY></TABLE></TD></TR>
+               <TR align=middle>
+                 <TD width="6%" height=32><FONT face="ms sans serif, geneva"
+                   size=-2>8.</FONT></TD>
+                 <TD align=left width="39%"><FONT face="arial, helvetica"
+                   size=-1>
+
+
+
+<B><a href="http://clickthru.online.com/Click?q=fd-BXDMQgOr1reKyPQO_Iti64Q9t8PR" >CNET CatchUp 1.31</A></B></FONT></TD>
+	<!-- Last week -->
+		<TD width="13%"><FONT face="ms sans serif, geneva"
+size=-2>10</FONT></TD>
+	<!-- /Last week -->
+	<!-- Weeks on -->
+		<TD width="16%"><FONT face="ms sans serif, geneva"
+size=-2>115</FONT></TD>
+	<!-- /Weeks on -->
+	<!-- Download count -->
+		<TD width="26%"><FONT face="ms sans serif, geneva"
+size=-2>114,250</FONT></TD></TR>
+	<!-- /Download count -->
+
+
+
+               <TR>
+                 <TD colSpan=5>
+                   <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                     <TBODY>
+                     <TR>
+                       <TD bgColor=#cccccc><IMG height=1
+                         src="http://www.cnet.com/b.gif"
+                   width=1></TD></TR></TBODY></TABLE></TD></TR>
+               <TR align=middle>
+                 <TD width="6%" height=32><FONT face="ms sans serif, geneva"
+                   size=-2>9.</FONT></TD>
+                 <TD align=left width="39%"><FONT face="arial, helvetica"
+                   size=-1>
+
+
+<B><a href="http://clickthru.online.com/Click?q=12-jaAKIl-XYrd-cKr-pEvKY-qkCKnR" >Qtraxmax</A></B></FONT></TD>
+	<!-- Last week -->
+		<TD width="13%"><FONT face="ms sans serif, geneva"
+size=-2>9</FONT></TD>
+	<!-- /Last week -->
+	<!-- Weeks on -->
+		<TD width="16%"><FONT face="ms sans serif, geneva"
+size=-2>4</FONT></TD>
+	<!-- /Weeks on -->
+	<!-- Download count -->
+		<TD width="26%"><FONT face="ms sans serif, geneva"
+size=-2>110,923</FONT></TD></TR>
+	<!-- /Download count -->
+
+               <TR>
+                  <TD colSpan=5>
+                    <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                      <TBODY>
+                      <TR>
+                        <TD bgColor=#cccccc><IMG height=1
+                          src="http://www.cnet.com/b.gif"
+                    width=1></TD></TR></TBODY></TABLE></TD></TR>
+                <TR align=middle>
+                  <TD width="6%" height=32><FONT face="ms sans serif, geneva"
+                    size=-2>10.</FONT></TD>
+                  <TD align=left width="39%"><FONT face="arial, helvetica"
+                   size=-1>
+
+
+<B><a href="http://clickthru.online.com/Click?q=27-z9ZmIqI2G9ZKMucSkMRUVolYrBeR" >Download Accelerator</A></B></FONT></TD>
+	<!-- Last week -->
+		<TD width="13%"><FONT face="ms sans serif, geneva"
+size=-2>8</FONT></TD>
+	<!-- /Last week -->
+	<!-- Weeks on -->
+		<TD width="16%"><FONT face="ms sans serif, geneva"
+size=-2>135</FONT></TD>
+	<!-- /Weeks on -->
+	<!-- Download count -->
+		<TD width="26%"><FONT face="ms sans serif, geneva"
+size=-2>109,139</FONT></TD></TR>
+	<!-- /Download count -->
+
+
+               <TR>
+                 <TD colSpan=5>
+                   <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                     <TBODY>
+                     <TR>
+                       <TD bgColor=#cccccc><IMG height=1
+                         src="http://www.cnet.com/b.gif"
+                   width=1></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+             <P><FONT face="arial, helvetica"
+             size=-1>
+
+  <!-- /top ten -->
+
+  <!-- TOP 5 MOVERS -->
+
+           <A name=h3><IMG height=19
+           alt="This Week's Top Movers"
+           src="http://www.cnet.com/i/nl/dl/sub_topmv.gif" width=300></A><BR>
+           <IMG height=8 src="http://www.cnet.com/i/nl/rule.gif" width=410><BR>
+           <FONT face="arial, helvetica" size=-1>
+
+           Here are some of the
+fastest-rising downloads on our Most Popular list.
+           <BR>
+           </FONT>
+           <BR>
+           <TABLE cellSpacing=0 cellPadding=4 width="100%" border=0><TBODY>
+           <TR>
+           <TD width="6%" height=36><FONT face="arial, helvetica"
+size=-1> </FONT></TD>
+           <TD width="39%"><FONT face="arial, helvetica"
+size=-1><B>Top Movers</B>
+
+           <TD width="55%"><FONT face="arial, helvetica"
+size=-1><B>The Rundown</B> </FONT></TD>
+           </TR>
+           <TR><TD colSpan=3>
+           	<TABLE cellSpacing=0 cellPadding=0 width="100%"
+border=0><TBODY>
+           	<TR>
+           	<TD bgColor=#cccccc><IMG height=1
+src="http://www.cnet.com/b.gif" width=1></TD>
+           	</TR>
+           	</TBODY></TABLE>
+           </TD></TR>
+           <TR>
+           <TD width="6%" height="32" align="middle"><FONT face="ms
+sans serif, geneva" size=-2>1.</FONT></TD>
+           <TD align=left width="39%"><FONT face="arial, helvetica"
+size=-1 align="middle"><B><a href="http://clickthru.online.com/Click?q=3d-oi9NIbz4YTQ0aYcvwlGWUTnaNtPR" >LimeWire
+</A></B></FONT></TD>
+           <TD width="55%"><FONT face="ms sans serif, geneva" size=-2
+align="left">As always, people continue to search for the perfect
+      file-swapping client as this P2P tool moves up 3 spots to
+      No. 13.</FONT></TD>
+           </TR>
+           <TR><TD colSpan=3>
+           	<TABLE cellSpacing=0 cellPadding=0 width="100%"
+border=0><TBODY>
+           	<TR>
+           	<TD bgColor=#cccccc><IMG height=1
+src="http://www.cnet.com/b.gif" width=1></TD>
+           	</TR>
+           	</TBODY></TABLE>
+           </TD></TR>
+           <TR>
+           <TD width="6%" height="32" align="middle"><FONT face="ms
+sans serif, geneva" size=-2>2.</FONT></TD>
+           <TD align=left width="39%" align="middle"><FONT
+face="arial, helvetica" size=-1><B><a href="http://clickthru.online.com/Click?q=52-LUXoIrJtd9GPUw9MWz8AtIQwjjnR" >QuickTime
+</A></B></FONT></TD>
+           <TD width="55%" align="left"><FONT face="ms sans serif,
+geneva" size=-2>MPEG-4 technology, skip protection, and several other features in the latest update move Apple's media player up the list 5 spots to No. 29.
+       </FONT></TD>
+           </TR>
+           <TR><TD colSpan=3>
+           	<TABLE cellSpacing=0 cellPadding=0 width="100%"
+border=0><TBODY>
+           	<TR>
+           	<TD bgColor=#cccccc><IMG height=1
+src="http://www.cnet.com/b.gif" width=1></TD>
+           	</TR>
+           	</TBODY></TABLE>
+           </TD></TR>
+           <TR>
+           <TD width="6%" height="32" align="middle"><FONT face="ms
+sans serif, geneva" size=-2>3.</FONT></TD>
+           <TD align=left width="39%"><FONT face="arial, helvetica"
+size=-1 align="middle"><B><a href="http://clickthru.online.com/Click?q=67-PnDkIOEDqyTkwA9WhKPAKa1CPIuR" >Tony Hawk's Pro Skater
+</A></B></FONT></TD>
+           <TD width="55%"><FONT face="ms sans serif, geneva" size=-2
+align="left">One of the most popular games on
+      any platform, this classic provides
+      great gameplay as it volleys up the list 13 spots to No. 36.</FONT></TD>
+           </TR>
+           <TR><TD colSpan=3>
+           	<TABLE cellSpacing=0 cellPadding=0 width="100%"
+border=0><TBODY>
+           	<TR>
+           	<TD bgColor=#cccccc><IMG height=1
+src="http://www.cnet.com/b.gif" width=1></TD>
+           	</TR>
+           	</TBODY></TABLE>
+           </TD></TR>
+           <TR>
+           <TD width="6%" height="32" align="middle"><FONT face="ms
+sans serif, geneva" size=-2>4.</FONT></TD>
+           <TD align=left width="39%"><FONT face="arial, helvetica"
+size=-1 align="middle"><B><a href="http://clickthru.online.com/Click?q=7c-7NCZIZWcc35xphgfLHDx1984BOsR" >WindowBlinds
+</A></B></FONT></TD>
+           <TD width="55%"><FONT face="ms sans serif, geneva" size=-2
+align="left">Custom desktop skins prove popular
+      as this utility rises up 4 spots to No. 41.</FONT></TD>
+           </TR>
+           <TR><TD colSpan=3>
+           	<TABLE cellSpacing=0 cellPadding=0 width="100%"
+border=0><TBODY>
+           	<TR>
+           	<TD bgColor=#cccccc><IMG height=1
+src="http://www.cnet.com/b.gif" width=1></TD>
+           	</TR>
+           	</TBODY></TABLE>
+           </TD></TR>
+           <TR>
+           <TD width="6%" height="32" align="middle"><FONT face="ms
+sans serif, geneva" size=-2>5.</FONT></TD>
+           <TD align=left width="39%"><FONT face="arial, helvetica"
+size=-1 align="middle"><B><a href="http://clickthru.online.com/Click?q=91-EZnpQAzyNQKp40uMzb-Byo4hJdlR" >FlashGet
+</A></B></FONT></TD>
+           <TD width="55%"><FONT face="ms sans serif, geneva" size=-2
+align="left">The latest update for this utility, which splits
+      up files for faster downloading, makes a showing at No. 45.</FONT></TD>
+           </TR>
+           <TR><TD colSpan=3>
+           	<TABLE cellSpacing=0 cellPadding=0 width="100%"
+border=0><TBODY>
+           	<TR>
+           	<TD bgColor=#cccccc><IMG height=1
+src="http://www.cnet.com/b.gif" width=1></TD>
+           	</TR>
+           	</TBODY></TABLE>
+           </TD></TR>
+
+           </TBODY></TABLE>
+           <FONT face="arial, helvetica" size=-1>
+           <BR>
+           Want more? See our <a href="http://clickthru.online.com/Click?q=a6-9zw4QCUBWOfNRwWOvAKcnvjbgw4R" ><b>Top 50</b></a>
+downloads.
+           <P>
+           </FONT>
+
+  <!-- /TOP 5 MOVERS -->
+
+  <!-- OTB ad block -->
+
+       
+
+  <!-- /OTB ad block -->
+
+  <!-- picks of the week -->
+
+    <P><FONT face="arial, helvetica"
+               size=-1>
+    <A name=h3><IMG height=19
+      alt="Picks of the Week"
+      src="http://www.cnet.com/i/nl/dl/sub_picks.gif"
+      width=250></A><BR><IMG height=8
+      src="http://www.cnet.com/i/nl/rule.gif" width=410><BR>
+
+      <FONT size=-1><B>In Audio</B></FONT><BR><BR>
+
+      <B><a href="http://clickthru.online.com/Click?q=bb-yT94QYZB7wviFcTRaT-Dc13yE_rR" >DFX Collection 6.1
+      </A></B><BR> <FONT size=-2>Free to try; $20 to buy<BR>File size:
+      Varies by file<BR>Minimum requirements: Windows (all); Winamp, Sonique, Media Jukebox,
+                         MusicMatch Jukebox, or RealPlayer/RealOne/RealJukebox
+      </FONT><BR><BR>Give your software music player a little more bounce to the
+   ounce with this set of audio enhancement utilities. The
+   settings in DFX give you controls for adjusting fidelity,
+   ambience, 3D surround, dynamic gain, and bass boost. New
+   additions include processing that optimizes your music for
+   headphone listening and a flexible skinning system with
+   hundreds of customizable skins to choose from. There are
+   separate versions of DFX available for Winamp, Sonique, Media
+   Jukebox, MusicMatch, and Realmedia audio players.<p>
+
+      <FONT size=-1><B>In Internet</B></FONT><BR><BR>
+
+      <B><a href="http://clickthru.online.com/Click?q=d0-vjDhQWWF8jpt0mH7c7YuNDxuyCiR" >Opera 6.04
+</A></B><BR> <FONT size=-2>Free to try; $39 to buy<BR>File size:
+3.41MB<BR>Minimum requirements: Windows 95/98/Me/NT/2000/XP
+</FONT><BR><BR>Surf like a pro with the latest update of this high-performance Web browser. Opera gives you SLL support, tons of
+   keyboard shortcuts, the choice of a single- or multiple-document interface, and a lot of other useful features. This
+   update includes minor enhancements and bug fixes.<p>
+
+      Want to review Opera? Submit your opinion <a href="http://clickthru.online.com/Click?q=e5-9Z7OQgyw2tqlOMBjnbcumX6cvbPR" >here</A>.<p>
+
+
+      <FONT size=-1><B>In Multimedia</B></FONT><br><br>
+
+      <B><a href="http://clickthru.online.com/Click?q=fa-FmqNQhO2iIVBUIdtvDA4oSMpoLnR" >3D Canvas 5.7
+</A></B><BR><FONT size=-2>Free<BR>File size:
+6.69MB<BR>Minimum requirements: Windows 95/98/Me/2000/XP, DirectX 8.0
+</FONT><BR><BR>
+Bring pixels to life with this intuitive 3D modeling and
+   animation tool. 3D Canvas incorporates a drag-and-drop
+   approach to 3D modeling and gives you tools to deform,
+   sculpt, and paint 3D objects. You can also create animated
+   scenes simply by positioning the objects within keyframes.
+   Other features let you save your
+   animated scenes as AVI files, customize the interface so only
+   those items you use most frequently are visible, and more. Best of all, the
+   standard version of 3D Canvas is a free product--learn to use
+   it, then get the enhanced version for game development and
+   rendering photo-realistic images.<P>
+
+      Want to review 3D Canvas? Submit your opinion <a href="http://clickthru.online.com/Click?q=10-YU9qI9NwJAl9HOoPffACEH5fCAiR" >here</A>.<p>
+
+      <FONT size=-1><B>In Utilities</B></FONT><br><br>
+
+      <B><a href="http://clickthru.online.com/Click?q=25-inepIbdXXmgAvxGZTscR7jeQrFPR" >PrintMagic 1.0
+</A></B><BR><FONT size=-2>Free to try; $24.95 to buy<BR>File size:
+592K<BR>Minimum requirements: Windows 98/NT/2000/Me/XP
+</FONT><BR><BR>
+Make quick work of your clipboard notations and printing tasks
+   with this simple and very handy app. PrintMagic allows you to
+   quickly and easily select and print content from almost any
+   application using a drag-and-drop interface or its innovative
+   Printboard. Plus, the cost savings and productivity
+   enhancements provided by PrintMagic are multiplied for any
+   organization that uses many computers.<P>
+
+      Want to review PrintMagic? Submit your opinion <a href="http://clickthru.online.com/Click?q=3a-QAmgIrzDr8bBoyS7JR1rqAFZcCnR" >here</A>.<p>
+
+      <FONT size=-1><B>In Games</B></FONT><br><br>
+
+      <B><a href="http://clickthru.online.com/Click?q=4f-Iar4IIU81vQySE88g-rrsLKFK0uR" >ChessRally 2.4
+</A></B><BR><FONT size=-2>Free to try; $20 to buy<BR>File size:
+8.58MB<BR>Minimum requirements: Windows 95/98/Me/NT/2000/XP
+</FONT><BR><BR>
+Play chess over the Internet, against the computer, or through
+   e-mail with this full-featured game, which offers a
+   customizable interface with free downloadable themes. If you
+   get stuck, ChessRally even delivers move suggestions. Blue
+   has nothing on you.<P>
+
+      Want to review ChessRally? Submit your opinion <a href="http://clickthru.online.com/Click?q=64-UBOhIuLfNZ0IM_iNGWF8w6YrPhsR" >here</A>.<p>
+
+
+<!-- /picks of the week -->
+
+<!-- Leads Module -->
+<!-- /Leads Module -->
+
+<!-- buzzworthy -->
+
+
+<!-- /buzzworthy -->
+
+<!-- overheard -->
+
+<A name=h4><IMG height=19 alt="Overheard on Download.com" src=
+			 "http://www.cnet.com/i/nl/dl/sub_overh.gif" width=250></A><BR><IMG
+			 height=8 src="http://www.cnet.com/i/nl/rule.gif" width=410><BR>
+
+<b>Here are some representative responses from last week's question on who should take the blame for Web sites not being compatible in every browser:</b>
+
+<p><FONT size="-1" color=006633><i>"Web builders should be doing as much as possible to support the broadest possible usage by their target audience"</i></font><p>
+A little over half the responses put the onus of compatibility on builders.
+
+<p><FONT size="-1" color=006633><i>"There are far less browser makers than there are Web builders and users. So it doesn't make sense for users or Web builders to do that job does it?."</i></font><p>
+After Web builders, browser manufacturers got the most blame, although this response makes the best argument.
+
+<p><FONT size="-1" color=006633><i>"The ordinary users are one group most at fault since they tend to stick to only one browser."</i></font><p>
+Few responses said users should take responsibility, as most respondents fall into the Web user category.
+
+<p><FONT size="-1" color=006633><i>"As a professional designer, I say proprietary code is downright evil, no matter who it comes from--and no matter what nifty trick it does."</i></font><p>
+Quite a number of Web builders wrote in, with many taking responsibility while noting the difficulty of testing in every browser.
+
+<p><FONT size="-1" color=006633><i>"Because Web pages are viewed 90 percent of the time by IE it is understandable that the time spent to make a site compatible with the remaining tiny minority has to be justified."</i></font><p>
+A few responses quoted server logs, making the point that it's not cost efficient to make sites compatible for people who choose a low-market share browser.
+
+
+
+<!-- /overheard -->
+
+
+        <p></TD></TR></TBODY></TABLE></TD></TR>
+
+</table>
+<!-- /Main body content -->
+
+<!-- ### footer ### -->
+<table width=616 bgcolor="#000000" cellpadding="0" cellspacing="0"
+border="0">
+<tr><td width="1"><img src="http://www.cnet.com/b.gif" width="1"
+height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif"
+width="10" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="599" bgcolor="#cccccc"><img
+src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1"
+height="1"></td></tr>
+</table>
+<table width=616 bgcolor="#eeeeee" cellpadding="0" cellspacing="0"
+border="0">
+<tr><td width="1" bgcolor="#000000"><img
+src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif"
+width="10" height="1"></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif"
+width="1" height="1"></td>
+<td width="12"><img src="http://www.cnet.com/b.gif" width="12" height="1"></td>
+<td width="575"><img src="http://www.cnet.com/b.gif" width="1" height="10"><br>
+<a href="http://clickthru.online.com/Click?q=79-rsQHIEBf9L2-XiQmFz_e0CvgpaFR" >
+<img src="http://a.r.tv.com/cnet.1d/i/nl/ft.gif" width="375"
+height="18" border="0" alt="Sign up for more free newsletters from
+CNET!"></a><br>
+
+<!-- subscription management -->
+
+<font face="ms sans serif, geneva" size="-2">
+The e-mail address for your subscription is&nbsp;<p>
+
+<A NOTRACK HREF="http://clickthru.online.com/Click?q=8e-VezcrMnFnTUQdia0kcLEkaU3EijOqdRR">Unsubscribe</A>&nbsp;|
+&nbsp;<a href='http://nl.com.com/servlet/url_login?email='>Manage My Subscriptions</a>
+&nbsp;|&nbsp;<a
+href="http://www.cnet.com/subscription/0-16335-7-6770019.html">FAQ</A>&nbsp;|
+&nbsp;<a href="http://clickthru.online.com/Click?q=a3-qXf6QYU1qYKHGl7fQffN5r5ls4rR" >Advertise</A><br></font>
+
+<!-- /subscription management-->
+
+</font><img src="http://www.cnet.com/b.gif" width="1" height="8"></td>
+<td width="12"><img src="http://www.cnet.com/b.gif" width="12" height="1"></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif"
+width="1" height="1"></td></tr>
+</table>
+<table width=616 bgcolor="#000000" cellpadding="0" cellspacing="0"
+border="0">
+<tr><td width="1"><img src="http://www.cnet.com/b.gif" width="1"
+height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif"
+width="10" height="1"></td>
+<td width="601"><img src="http://www.cnet.com/b.gif" width="1"
+height="1"></td></tr>
+</table>
+<table width=616 bgcolor="#ffcc00" cellpadding="0" cellspacing="0"
+border="0">
+<tr><td width="1" bgcolor="#000000"><img
+src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="37"><a href="http://clickthru.online.com/Click?q=b9-WWcsQ-BazXLHBpSh8FdMkmoOwzlR" ><img
+src="http://www.cnet.com/i/dp/smrb.gif" width="37" height="37"
+border="0"></a></td>
+<td width="563" nowrap><font face="arial, helvetica" size="-1">
+<a href="http://clickthru.online.com/Click?q=ce-Sd0CQMsxOozUDku3ufz1Jey2fP4R" ><font
+color="#000000">Price comparisons</font></a> |
+<a href="http://clickthru.online.com/Click?q=e3-ze2WQkVk8ASAY8N-JM2mPpt29erR" ><font
+color="#000000">Product reviews</font></a> |
+<a href="http://clickthru.online.com/Click?q=f8-57BSQfsXnXRRFQHpiaRL6DCwoliR" ><font color="#000000">Tech news</font></a> |
+<a href="http://clickthru.online.com/Click?q=0d-3aGuIbr2qGSTCo_Nv0T0QkY6b7PR" ><font
+color="#000000">Downloads</font></a> |
+<a href="http://clickthru.online.com/Click?q=22-xNrrIrdA8_FRyUfuo4I9yc99NcnR" ><font
+color="#000000">All CNET services</font></a>
+</font></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif"
+width="1" height="1"></td></tr>
+</table>
+<table width=616 cellpadding="0" cellspacing="0" border="0">
+<tr><td bgcolor="#000000"><img src="http://www.cnet.com/b.gif"
+width="1" height="1"></td></tr>
+<tr><td height="25"><font face="ms sans serif, geneva"
+size="-2"><table width=100% border=0 cellspacing=2 cellpadding=1> <tr valign=bottom> <td width=75% height=31> <p></font> <br><b><font face=Arial, Helvetica, sans-serif size=2>    Copyright 2002 CNET Networks, Inc. All rights reserved.    </font></b> </p></td><td height=31 valign=top> <div align=right> <img src="http://gserv-cnet.zdnet.com/clear/outbound.gif?APPID=2&EMID=25136482&NL=e415-03&ISSUE=2002-07-17" height=1 width=1>    </div></td></tr><tr>  <td colspan=2><font face=Arial, Helvetica, sans-serif size=2>    </font></td></tr></table></font></td></tr>
+</table>
+<!-- ### /footer ### -->
+
+</TBODY></TABLE>
+
+
+</body>
+</html>
+
+
+<IMG HEIGHT=1 WIDTH=1 SRC="http://clickthru.online.com/Click?q=39-7QkMnoICVpM1FTXcS8dXVNFfXdRR">
+

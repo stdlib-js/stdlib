@@ -1,0 +1,172 @@
+From bounce-neatnettricks-2424157@silver.lyris.net  Sun Dec  1 16:16:22 2002
+Return-Path: <bounce-neatnettricks-2424157@silver.lyris.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id EE12716F16
+	for <jm@localhost>; Sun,  1 Dec 2002 16:16:20 +0000 (GMT)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sun, 01 Dec 2002 16:16:20 +0000 (GMT)
+Received: from silver.lyris.net (silver.lyris.net [216.91.57.32]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with SMTP id gB100l817733 for
+    <legit-list-neatnettricks@jmason.org>; Sun, 1 Dec 2002 00:00:47 GMT
+Message-Id: <LYRIS-2424157-1479308-2002.11.30-16.00.02--legit-list-neatnettricks#spamassassin.taint.org@silver.lyris.net>
+X-Sender: jteems@earthlink.net
+X-Mailer: QUALCOMM Windows Eudora Version 5.1
+Date: Sat, 30 Nov 2002 16:00:00 -0800
+To: legit-list-neatnettricks@spamassassin.taint.org
+From: NNT@silver.lyris.net
+Subject: Neat Net Tricks Standard Issue #138, December 1, 2002
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"; format=flowed
+List-Unsubscribe: <mailto:leave-neatnettricks-2424157K@silver.lyris.net>
+Reply-To: NNT@silver.lyris.net
+
+IN THIS ISSUE:
+
+01. Readers write
+02. Extension search
+03. Dumb messages revisited
+04. XP Tweak
+05. Hardware Diagnostic Tool
+06. Training Windows
+07. Hold that button
+08. Hagai's freeware
+09. Online help
+
+And Coming Next Week!
+
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Make Internet Explorer Faster, More Capable, and Secure! 
+NNT's reviewers called Secure IE great, easy-to-use,awesome,
+impressive, a total "thumbs up"!  Read what they're raving 
+about and get yours at http://www.secureie.com/p/nnt1/
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+01. READERS WRITE.  A Wisconsin subscriber wrote to express his displeasure 
+with the links contained in Neat Net Tricks.  It seems he is bothered by 
+the frequent pop-up ads and he felt that only those sites without the ads 
+should be featured in NNT, particularly in the Premium issue. We replied 
+that pop-ups can be annoying but, while not defending them, we must realize 
+that they are a form of marketing in which the site owner hopes to recover 
+his costs and possibly make a profit.  We suggested using a pop-up stopper 
+(there are lots of them on the Web) and ALT F4 will quickly close active 
+pop-up windows.  Finally, we pointed out that no publication can guarantee 
+only sites without pop-up ads.  As we've often said in the past, the 
+Internet isn't free and never was.  Someone has to pay the freight and if 
+those ads are unprofitable, they will cease to exist.
+
+02. EXTENSION SEARCH.  Next time a file extension has you puzzled, try the 
+database at http://extsearch.com/ information.
+
+03. DUMB MESSAGES REVISITED.  Not long ago we mentioned a few dumb messages 
+we see from our computer and invited others to share their favorite 
+"dumbness."  A reader frequently gets a banner ad that asks "Do you click 
+on banner ads."  She asks, if you don't, how do you click "No" without 
+clicking on the banner ad? Others galled at their computers crashing, then 
+sitting through the Scandisk operation and being reminded "To avoid seeing 
+this screen again, always shut down Windows properly" as if it was their 
+fault. Another reader nominates the download site at 
+http://www.microsoft.com/NTWorkstation/downloads/PowerToys/Networking/NTTweakUI.asp 
+for having a really dumb comment.  After downloading a Windows update, it 
+says:  "How to Get Started -- You don't need to do anything after 
+downloading" and he asks, "what's the point of downloading?"  Still another 
+reader nominates the instruction manual for the Windows Internet 
+Information Server (ILS) accessible only when ILS is operating.  Thus, the 
+entire section on troubleshooting a nonfunctional installation is 
+inaccessible at precisely the moment one needs to consult it.  But judging 
+by the sheer quantity of email, the top dumb instruction has to be the 
+message that "Keyboard not detected, Press (whatever key) to 
+Continue."  Keep them coming and we'll do it again in a future issue!
+
+04. XP TWEAK.  A recent article reminded readers of the neat things that 
+can be done with TweakUI, but the XP operating system was not supported by 
+the Tweak at that link.  Never fear, XP folks, you'll find a whole array of 
+power tools included Tweak - all for XP - at 
+http://www.microsoft.com/windowsxp/pro/downloads/powertoys.asp .
+
+. . . . .
+
+1, 400+ Neat Net Tricks tips updated 4 times yearly for the word processing 
+format of your choice, also in ebook format, plus extra features, 
+downloadable and just $20 a year, a bargain (and a nice stocking stuffer 
+for Santa) at http://www.NeatNetTricks.com/store.
+
+. . . . .
+
+05. HARDWARE DIAGNOSTICS TOOL.  Windows98 users have a neat tool at their 
+fingertips without downloading.  Click on Start and Run and enter "hwinfo 
+/ui" without quotes.  The information displayed is color-coded.  Error 
+messages are in red, warnings are in blue.  Green denotes registry entries, 
+Configuration Manager information is in brown and file attributes are shown 
+in magenta.
+
+06. TRAINING WINDOWS.  One pet peeve is Windows' determination to identify 
+a shortcut icon as "Shortcut to (whatever)"  This is pure redundancy, since 
+shortcuts are identified by an arrow.  And, with the added verbage of 
+"Short cut to" you can't jump from one icon to another by pressing the 
+first letter (since they would all start with an "s".  If you keep removing 
+"Shortcut to," Windows will eventually understand your intent and future 
+shortcuts won't include "Shortcut to".
+
+07. HOLD THAT BUTTON.  The site at http://www.holdthebutton.com/ invites 
+you to hold the mouse key down.  Now, before you hastily jump to 
+conclusions that there's nothing more to this site, when you release the 
+button, you are told how you rank in stamina with other button 
+holders.  And when I took my turn at the controls, I found that the longest 
+record was a little over six hours, proving once again that some folks need 
+to get a life.
+
+08. HAGAI'S FREEWARE.  A baker's dozen (13) freeware programs are at 
+http://www.hagai.com/download.asp?ProgType=Freeware . They include a bug 
+checker, screen saver loader, clock, shutdown utility, CD autorun, boot 
+editor, menu, counter,icon viewer and editor, and more.
+
+09. ONLINE HELP.  Of limited scope, but considering that you can never get 
+enough help with your computer, try http://www.computerhope.com/oh.htm .
+
+. . . . .
+
+Apologies to those readers who were inconvenienced with multiple issues of 
+NNT Issue #137.  As luck would have it, Lyris (our mail server) had 
+hardware failure causing some of the repeated distribution. We'd like to 
+tell you that there will never be another problem in future mailings, and 
+if you'll buy that, as the song goes, we have some oceanfront property in 
+Arizona for sale.
+
+. . . . .
+
+IN NEXT WEEK'S NEAT NET TRICKS PREMIUM:  Google is generally accepted as 
+the most popular search engine, but we show you another free download that 
+enhances Google, along with a way to "Google" without a browser.  Learn a 
+neat trick with text manipulation, a Winamp plugin that you need if you 
+have a taste for MP3 music, and a slick trick with your cursor.  Our 
+Software Pick-Of-The-Issue is a great image manipulator.  And our feature 
+is an in-depth tutorial on how to handle Microsoft Words' sometimes weird 
+formatting and styles.  All that awaits you if you're a Premium subscriber 
+and it costs just $10 a year for 24 fact-packed issues.  Subscribe at the 
+NNT Store, http://www.NeatNetTricks.com/store and get on the cutting edge.
+
+. . . . . .
+
+NNT makes no endorsement or warranty, expressed or implied, with regard to 
+featured products or services. Results may vary based on operating systems 
+and other variables beyond our control.
+
+For info on how to subscribe, unsubscribe, or change your address, send a 
+blank email to info-neatnettricks@silver.lyris.net .
+
+Comments or questions about your computer and the Internet? Visit the NNT 
+Bulletin Board at http://escribe.com/computing/neatnettricks/bb/ .
+
+NNT is hosted by Lyris.com, the best in email list management.
+
+Copyright 2002 by Jack Teems. All rights reserved. Neat Net Tricks is 
+registered with the U.S. Library of Congress ISSN: 1533-4619. 
+
+
+---
+You are currently subscribed to neatnettricks as: legit-list-neatnettricks@spamassassin.taint.org
+To unsubscribe send a blank email to leave-neatnettricks-2424157K@silver.lyris.net
+
+

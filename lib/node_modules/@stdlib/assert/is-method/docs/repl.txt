@@ -1,0 +1,34 @@
+
+{{alias}}( value, property )
+    Tests if an object has a specified method name.
+
+    Value arguments other than `null` or `undefined` are coerced to objects.
+
+    Property arguments are coerced to strings.
+
+    The function only searches own properties.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    property: any
+        Property to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an object has a specified method name.
+
+    Examples
+    --------
+    > var beep = { 'boop': function beep() { return 'beep'; } };
+    > var bool = {{alias}}( beep, 'boop' )
+    true
+    > bool = {{alias}}( beep, 'toString' )
+    false
+
+    See Also
+    --------
+

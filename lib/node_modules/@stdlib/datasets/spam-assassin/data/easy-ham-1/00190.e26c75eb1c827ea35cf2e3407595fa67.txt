@@ -1,0 +1,134 @@
+From fork-admin@xent.com  Wed Aug 28 10:50:03 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E8BC743F99
+	for <zzzz@localhost>; Wed, 28 Aug 2002 05:49:37 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 28 Aug 2002 10:49:37 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7RIKgZ20480 for <zzzz@spamassassin.taint.org>;
+    Tue, 27 Aug 2002 19:20:43 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 4E9BD2940C3; Tue, 27 Aug 2002 11:18:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.superb.net (smtp1.superb.net [207.228.225.14]) by
+    xent.com (Postfix) with SMTP id C557E2940C3 for <fork@xent.com>;
+    Tue, 27 Aug 2002 11:17:58 -0700 (PDT)
+Received: (qmail 1107 invoked from network); 27 Aug 2002 18:19:59 -0000
+Received: from unknown (HELO maya.dyndns.org) (165.154.190.88) by
+    smtp1.superb.net with SMTP; 27 Aug 2002 18:19:59 -0000
+Received: by maya.dyndns.org (Postfix, from userid 501) id 16A5F1C388;
+    Tue, 27 Aug 2002 13:49:26 -0400 (EDT)
+To: Mike Masnick <mike@techdirt.com>
+Cc: "Adam L. Beberg" <beberg@mithral.com>, Tom <tomwhore@slack.net>,
+	<fork@xent.com>
+Subject: Re: The GOv gets tough on Net Users.....er Pirates..
+References: <Pine.BSO.4.44.0208231900430.16631-100000@crank.slack.net>
+    <5.1.1.6.0.20020826113243.034de5d0@techdirt.com>
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m2elcknqe2.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 27 Aug 2002 13:49:25 -0400
+
+>>>>> "M" == Mike Masnick <mike@techdirt.com> writes:
+
+    M> In which world are we talking about?  That may be true for the
+    M> first sale, but once something is out in the world, the
+    M> "creator" loses control... If I buy a chair you built, and then
+    M> decide to give it away to my neighbor, by you're definition, he
+    M> just stole from you.
+
+I don't endorse the whole RIAA thing, but to be accurate, you would
+have to duplicate the chair so that both you and your neighbour could
+continue to sit down, and yes, I suppose that would be more serious.
+
+They can sit on /your/ copy, but if you start churning out exact dups
+of a name-brand artifact, people with law degrees start to smell
+money.  For example, I could copy a Gibson Guitar /exactly/ so long as
+(a) I don't put Orville's name on the headstock and (b) I license the
+patented bracing methods.  If I instead try to sell a homebuilt guitar
+on eBay with "Gibson" written in crayon on the headstock, and then
+claim it is a true Les Paul limited edition, I expect people would get
+upset.
+
+    M> Why is it that people don't understand that giving stuff away
+    M> is a perfectly acceptable tactic in capitalist businesses?  
+
+To play the Devil's Advocate here, it's not about giving /stuff/ away,
+it is about granting endless and cascading duplication/distribution
+rights.  Even if _I_ only make the copy I give to you, that doesn't
+stop you from making 10000 copies to sell.
+
+    M> Access to free stuff often helps to sell other stuff.  
+
+This is the difficult question:  How will they draw the distinction?
+The "other stuff" is just as easy to duplicate as the free stuff.
+This is why MS is hunting people with illegal Windows; it's no harder
+to dup than a Linux CD, only what is there that actually prevents
+people from doing it?
+
+Personally, I don't think the issue should have anything to do with
+sales or units.  The issue is that basic phallacy that says a suit
+should be able to "own" someone else's intellectual property.  Sarah
+McLaughlin isn't suing you, it's her label's legal dept because it's
+the label who stands to lose; Sarah's already fat beyond her wildest
+dreams, so a few bucks here or there, or even if the well dried up
+tomorrow, it's not going to really traumatize her (unless she's been
+blazingly stupid with her money)
+
+But the label ... like Disney and Mickey, they need the cash cow so
+they can keep all sorts of uncreative hangers-on in limos and coke.
+If you thought only Elvis or Brian Jones or Dennis Wilson had problems
+with beautiful-people deadbeat leech "friends" draining their riches,
+think again.
+
+The problem is really very simple because it is semantic, and until we
+make the semantic flip, it's unsolvable, but like trisecting an angle,
+all it takes is looking at the same situation in a different
+way.  Here's the revelation: Elvis never ever made a hit record.
+
+Elvis didn't make the hits, his /fans/ made the hits.  His fans did
+the work cleaning toilets, manning the convenience stores, driving
+milk trucks, sitting at endless office desks, they did the /real/
+labour that paid for every last one of Elvis Presley's pills.  All
+Elvis did was sing into a microphone every so often, and pen or
+collect the odd song that all those /people/ liked and wanted as
+something of their own.  But it's not _Elvis_ who made them universal
+statements, it is the universe of fans who slurped the songs into
+their own lives, it was pull-technology, not push.
+
+Therefore the question becomes: how many times must these fans pay
+before they own what they themselves have created?  They pay royalties
+for listening to the radio, for blank tapes, for concert tickets, for
+a beer in a bar with a cover band ... they pay over and over and over
+again for the /right/ to make some hack writer's song /their/
+favourite song????  That's where the whole system has been seriously
+warped by the record companies and ad companies reframing it into your
+thinking that it is the Elvis who makes the Elvis.  It's not.  It's
+the people who make them; the songs are already theirs.
+
+-- 
+Gary Lawrence Murphy <garym@teledyn.com> TeleDynamics Communications Inc
+ Business Advantage through Community Software : http://www.teledyn.com
+"Computers are useless.  They can only give you answers."(Pablo Picasso)
+
+

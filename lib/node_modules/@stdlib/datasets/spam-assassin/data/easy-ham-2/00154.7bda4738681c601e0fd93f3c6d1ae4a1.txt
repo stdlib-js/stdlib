@@ -1,0 +1,67 @@
+From ilug-admin@linux.ie  Tue Jul 30 11:02:29 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0E374440EF
+	for <jm@localhost>; Tue, 30 Jul 2002 06:02:29 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 30 Jul 2002 11:02:29 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6UA2dq19722 for
+    <jm-ilug@jmason.org>; Tue, 30 Jul 2002 11:02:39 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA30918; Tue, 30 Jul 2002 11:00:55 +0100
+Received: from homer.jinny.ie ([193.120.171.3]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA30881 for <ilug@linux.ie>; Tue,
+    30 Jul 2002 11:00:45 +0100
+Received: from jlooney.jinny.ie (fw [193.120.171.2]) by homer.jinny.ie
+    (8.9.3/8.11.2) with ESMTP id LAA18859 for <ilug@linux.ie>; Tue,
+    30 Jul 2002 11:00:14 +0100
+Received: (from john@localhost) by jlooney.jinny.ie (8.11.6/8.11.6) id
+    g6UA0k605827 for ilug@linux.ie; Tue, 30 Jul 2002 11:00:46 +0100
+X-Authentication-Warning: jlooney.jinny.ie: john set sender to
+    jlooney@jinny.ie using -f
+Date: Tue, 30 Jul 2002 11:00:45 +0100
+From: "John P. Looney" <valen@tuatha.org>
+To: ilug@linux.ie
+Subject: Re: [ILUG] Mutt reply hooks
+Message-Id: <20020730100045.GL4594@jinny.ie>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: ilug@linux.ie
+References: <20020730112811.A32231@wanadoo.fr>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20020730112811.A32231@wanadoo.fr>
+User-Agent: Mutt/1.4i
+X-Os: Red Hat Linux 7.3/Linux 2.4.18-3
+X-Url: http://www.redbrick.dcu.ie/~valen
+X-Gnupg-Publickey: http://www.redbrick.dcu.ie/~valen/public.asc
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Tue, Jul 30, 2002 at 11:28:11AM +0200, David Neary mentioned:
+> For example, say I have a company, and sales@company.com,
+> info@company.com and tech@company.com arrive in the same mailbox.
+> I don't want to reply to sales@company.com mails with the From:
+> set to dave@company.com, I would like the mail to come from
+> sales@company.com.
+
+ Best thing to do would be to have each of those addresses going to a
+different folder, then set your "from" address based on the folder you are
+in, when replying.
+
+john
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

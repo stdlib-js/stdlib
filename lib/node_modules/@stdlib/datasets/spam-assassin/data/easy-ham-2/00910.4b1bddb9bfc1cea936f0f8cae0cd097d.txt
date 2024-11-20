@@ -1,0 +1,119 @@
+From fork-admin@xent.com  Mon Jul 29 11:28:53 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C3FD74415F
+	for <jm@localhost>; Mon, 29 Jul 2002 06:25:28 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 11:25:28 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6QJq0r21212 for <jm@jmason.org>;
+    Fri, 26 Jul 2002 20:52:00 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id A1CD42940AC; Fri, 26 Jul 2002 12:50:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from axiom.braindust.com (axiom.braindust.com [64.69.71.79]) by
+    xent.com (Postfix) with ESMTP id AFA5D2940A9 for <fork@xent.com>;
+    Fri, 26 Jul 2002 12:49:11 -0700 (PDT)
+X-Envelope-To: fork@spamassassin.taint.org
+Received: from chimp.vancouver.com (muses.westel.com [204.244.110.7])
+    (authenticated (0 bits)) by axiom.braindust.com (8.12.5/8.11.6) with ESMTP
+    id g6QJnVds009963 (using TLSv1/SSLv3 with cipher EDH-RSA-DES-CBC3-SHA (168
+    bits) verified NO); Fri, 26 Jul 2002 12:49:32 -0700
+Subject: Re: USA USA WE ARE NUMBER ....six.
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+MIME-Version: 1.0 (Apple Message framework v482)
+Cc: fork@spamassassin.taint.org
+To: James Rogers <jamesr@best.com>
+From: Ian Andrew Bell <hello@ianbell.com>
+In-Reply-To: <1027711160.10358.6.camel@avalon>
+Message-Id: <BD557489-A0D0-11D6-8F70-0030657C53EA@ianbell.com>
+Content-Transfer-Encoding: 7bit
+X-Mailer: Apple Mail (2.482)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 26 Jul 2002 12:49:04 -0700
+
+On Friday, July 26, 2002, at 12:19 PM, James Rogers wrote:
+
+> On Fri, 2002-07-26 at 11:50, Ian Andrew Bell wrote:
+>> The ruling class, whether you define them as government or business
+>> (what's the difference?) knows full well where that money is.  It's
+>> lining their pockets, buying their hobby ranches, and financing
+>> their private jets.
+>>
+>> Neither has any interest in the welfare of the working class.
+>
+> Yes, and the working class deserves what it gets, and possibly not even
+> that.  For the most part, people become wealthy by not being stupid.  I
+> always thought "not being stupid (most of the time)" was a fairly low
+> bar, but apparently most people can't even manage that.
+
+This isn't particularly well-founded logic.  What you're saying is 
+that "most rich people are smart" and that the latter is causal to 
+the former.  By implication, then, you would say that "most poor 
+people are stupid".  This is true, statistically, because most 
+people are poor and most people are also stupid.  However there's 
+nothing to indicate a causal link there.  So being smart isn't the 
+only mechanical requirement to eternal wealth because, obviously, 
+most of the members of this list would be rich.
+
+Being smart, for example, has made Stephen Hawking famous and 
+respected, but he's not particularly rich.  Jennifer Lopez is by 
+all accounts a complete moron.  In fact, spend a weekend in Beverly 
+Hills and you will encounter vast numbers of people who are 
+profoundly stupid driving Rolls Royces and shopping at PRADA.
+
+The working class IS the market and the working class IS where 
+wealth is created.  The working class makes long-distance calls, 
+buys food processors and computers and clothes, and attaches the 
+value to goods which allows them to be commodified.  The working 
+class saves money, buys Retirement Savings Plans, and invests in 
+mutual funds which increases the flow of capital through the 
+investment funnel.
+
+The economic system of the first world is designed to strike a 
+delicate balance between incentivizing the ruling class to support 
+wealth-expanding through technological innovation or the 
+development of new markets.  At the 100,000 foot level, recessions 
+and depressions are created when more wealth is sucked from the 
+whirlpool than can be supported by the working class through 
+investment and consumption.
+
+And the people draining the hot tub are the folks in the ruling 
+class -- people like Ken Lay, Dick Cheney, Bernie Ebbers, et al -- 
+and they simply got too greedy and caused a bubble in the 
+hydraulics that increased the pressure for a time, but ultimately 
+wasn't sustainable.
+
+And the money that was lost did not come from the ruling class.  It 
+came from the RSP's and the Equity funds and the Investments of 
+individual working class -- people who believed these reports and 
+invested.  The wealth of the ruling class was largely pulled out by 
+the time such investments were exposed to the workers.
+
+So, is the lower caste necessarily stupid for saving money or 
+investing in retirement plans?  I don't think so.  Are they stupid 
+for buying clothes and automobiles?  I don't think so.
+
+At the granular level, the notion that "most rich people are rich 
+because they're smart" is so anecdotal and naive that it's not 
+worth arguing about, so I won't.  Still, a compelling point worth 
+some clarification.
+
+-Ian.
+
+http://xent.com/mailman/listinfo/fork
+
+

@@ -1,0 +1,80 @@
+From ilug-admin@linux.ie  Mon Jul 22 18:12:52 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9094C440D9
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:26 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:26 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MG3TY17504 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 17:03:29 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id TAA24602 for <jm-ilug@jmason.org>;
+    Sat, 20 Jul 2002 19:04:03 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id TAA28461; Sat, 20 Jul 2002 19:03:29 +0100
+Received: from ie.suberic.net (owsla.ie.suberic.net [62.17.162.83]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id TAA28423 for <ilug@linux.ie>;
+    Sat, 20 Jul 2002 19:03:20 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host owsla.ie.suberic.net
+    [62.17.162.83] claimed to be ie.suberic.net
+Received: from owsla.ie.suberic.net (owsla [127.0.0.1]) by ie.suberic.net
+    (8.11.6/8.11.6) with ESMTP id g6KI3J925905 for <ilug@linux.ie>;
+    Sat, 20 Jul 2002 19:03:19 +0100
+Date: Sat, 20 Jul 2002 19:03:17 +0100
+To: Niall O Broin <niall@linux.ie>, ilug@linux.ie
+Subject: Re: [ILUG] [OT] GPL & PHP Question
+Message-Id: <20020720190317.F23917@ie.suberic.net>
+References: <200207192053.VAA32306@lugh.tuatha.org>
+    <20020719224739.GC3854@bagend.makalumedia.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <20020719224739.GC3854@bagend.makalumedia.com>;
+    from niall@linux.ie on Fri, Jul 19, 2002 at 11:47:39PM +0100
+X-Operating-System: Linux 2.4.18-5 i686
+X-GPG-Fingerprint: 9C1D 16F4 11F1 6BD2 933C  048D ACC7 9840 89D0 7646
+From: kevin lyda <kevin+dated+1027620199.79af71@linux.ie>
+X-Delivery-Agent: TMDA/0.57
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Fri, Jul 19, 2002 at 11:47:39PM +0100, Niall O Broin wrote:
+> > I know this is not strictly a 'Linux' issue but any help would be appreciated
+> Microsoft has very much made this a Linux issue - it has attempted to imply
+> that any company using GPL software must make everything it owns public and
+> it must be true - that nice man from Microsoft wouldn't lie, would he ?
+
+but that's just stupid.  microsoft s/w covers a subset of applications
+that are under the gpl.  there are gpl word processors, there's a
+microsoft wp; there are various language compilers and interpreters under
+the gpl, microsoft has their visual compilers.  and so on.  and just
+like the gpl apps, the microsoft apps are distributed under a license.
+that license says lots of things, and there are various licenses used by
+microsoft, but in a nutshell they all pretty much say: you can't copy,
+distribute or modify their s/w; you can't sell it multiple times.
+
+so does anyone think that applies to their wp documents or their visual
+c++ code?
+
+kevin
+
+-- 
+kevin@suberic.net     that a believer is happier than a skeptic is no more to
+fork()'ed on 37058400    the point than the fact that a drunken man is happier
+meatspace place: home       than a sober one. the happiness of credulity is a
+http://ie.suberic.net/~kevin   cheap & dangerous quality -- g.b. shaw
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

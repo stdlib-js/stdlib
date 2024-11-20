@@ -1,0 +1,31 @@
+
+{{alias}}( value )
+    Tests if a value is a JavaScript boxed primitive.
+
+    Boxed primitive objects can be created with one of the following:
+
+    - new Boolean()
+    - new Number()
+    - new String()
+    - Object( Symbol() ) (ES6/ES2015)
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a value is a JavaScript boxed primitive.
+
+    Examples
+    --------
+    > var bool = {{alias}}( new {{alias:@stdlib/boolean/ctor}}( false ) )
+    true
+    > bool = {{alias}}( true )
+    false
+
+    See Also
+    --------
+

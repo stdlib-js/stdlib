@@ -1,0 +1,94 @@
+From rpm-list-admin@freshrpms.net  Fri Jul 19 18:15:43 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9A8A2440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 13:15:43 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 18:15:43 +0100 (IST)
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JHBdJ17676 for
+    <jm-rpm@jmason.org>; Fri, 19 Jul 2002 18:11:39 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6JGl1C15548; Fri, 19 Jul 2002 18:47:01
+    +0200
+Received: from python (gw01.es3.egwn.net [212.9.66.13]) (authenticated) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g6JGkQC13297; Fri,
+    19 Jul 2002 18:46:27 +0200
+From: Matthias Saou <matthias@egwn.net>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: gentoo 0.11.28 is out..
+Message-Id: <20020719184052.0f2df4e1.matthias@egwn.net>
+In-Reply-To: <20020719183016.3297b423.matthias_haase@bennewitz.com>
+References: <7uit3eljnp.fsf@allele2.biol.berkeley.edu>
+    <20020718102254.0664d716.matthias@egwn.net>
+    <20020718122654.1604541d.matthias_haase@bennewitz.com>
+    <20020718130029.523aa992.matthias@egwn.net>
+    <20020719183016.3297b423.matthias_haase@bennewitz.com>
+Organization: Electronic Group Interactive
+X-Mailer: Sylpheed version 0.7.8claws (GTK+ 1.2.10; i386-redhat-linux)
+Reply-BY: Tue, 24 Jul 2000 19:02:00 +1000
+X-Operating-System: GNU/Linux power!
+X-Message-Flag: Try using a real operating system : GNU/Linux power!
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Fri, 19 Jul 2002 18:40:52 +0200
+Date: Fri, 19 Jul 2002 18:40:52 +0200
+
+Once upon a time, Matthias wrote :
+
+> On Thu, 18 Jul 2002 13:00:29 +0200
+> Matthias Saou <matthias@egwn.net> wrote:
+> 
+> > Once upon a time, Matthias wrote :
+> > > ..see subject.
+> > ..see valhalla.freshrpms.net ;-)
+> 
+> Hi, Matthias,
+> 
+> You should temporarly remove gentoo 0.11.29 from valhalla.freshrpms.net.
+> This build (and 0.11.28) has a strong bug: Problems with copying "deep"
+> directories.
+> 
+> Have reported this to Emil, he looks currently into it, a fix should be
+> available soon..
+> 
+> Sorry
+
+Done.
+Well, I feel especially sorry for him since he already qualified 0.11.28 of
+"brown paper bag" release because of the column header clicking bug :-((
+
+I'll put up the next version as soon as it's out hoping it'll fix all
+current issues!
+
+Matthias
+
+-- 
+Matthias Saou                                World Trade Center
+-------------                                Edificio Norte 4 Planta
+System and Network Engineer                  08039 Barcelona, Spain
+Electronic Group Interactive                 Phone : +34 936 00 23 23
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

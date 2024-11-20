@@ -1,0 +1,74 @@
+From fork-admin@xent.com  Tue Jul 23 23:54:39 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8976E440CC
+	for <jm@localhost>; Tue, 23 Jul 2002 18:54:39 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 23 Jul 2002 23:54:39 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6NMqj401386 for <jm@jmason.org>;
+    Tue, 23 Jul 2002 23:52:45 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 864E22940B1; Tue, 23 Jul 2002 15:42:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from 10-0-0-223.boston.ximian.com (gateway.ximian.com
+    [141.154.95.125]) by xent.com (Postfix) with ESMTP id 42B922940A2 for
+    <fork@xent.com>; Tue, 23 Jul 2002 15:41:33 -0700 (PDT)
+Received: (from louie@localhost) by 10-0-0-223.boston.ximian.com
+    (8.11.6/8.11.6) id g6NMnaZ15941; Tue, 23 Jul 2002 18:49:36 -0400
+X-Authentication-Warning: 10-0-0-223.boston.ximian.com: louie set sender
+    to louie@ximian.com using -f
+Subject: Re: [Baseline] Raising chickens the high-tech way
+From: Luis Villa <louie@ximian.com>
+To: fork@spamassassin.taint.org
+In-Reply-To: <m3y9c2yrr1.fsf@localhost.localdomain>
+References: <200207232205.PAA04796@maltesecat>
+    <m3y9c2yrr1.fsf@localhost.localdomain>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8.99
+Message-Id: <1027464575.14880.191.camel@10-0-0-223.boston.ximian.com>
+MIME-Version: 1.0
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 23 Jul 2002 18:49:35 -0400
+
+On Tue, 2002-07-23 at 19:00, Karl Anderson wrote:
+> Dave Long <dl@silcom.com> writes:
+> 
+> > > It also strikes me that it will not be very long before livestock is
+> > > genetically engineered to be dumber and meatier, and better adapted to
+> > > living in industrial conditions.
+> > 
+> > If we're willing to count artificial
+> > selection as genetic engineering, it
+> > has been happening since pre-literate
+> > times, and is called "domestication".
+> 
+> But we're not willing to count it, I hope, since it isn't, any more
+> than natural selection is genetic engineering.
+
+It's quite a bit more than natural selection; the times had a
+fascinating article a few months back (possibly posted as bits here)
+that note that one Holstein bull who died in the 70s is paternally
+related to something like 40% of the world's cattle. That's way, way
+more than natural selection, and (given the difficulty and expense of
+isolating specific genes for size, industrial-living-ness, etc.) more
+expansive than raw gene manipulation will be for some time.
+
+Luis
+http://xent.com/mailman/listinfo/fork
+
+

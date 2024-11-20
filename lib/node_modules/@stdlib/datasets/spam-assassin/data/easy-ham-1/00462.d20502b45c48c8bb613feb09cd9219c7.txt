@@ -1,0 +1,95 @@
+From fork-admin@xent.com  Fri Sep  6 11:42:50 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 453DE16F22
+	for <jm@localhost>; Fri,  6 Sep 2002 11:40:07 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 11:40:07 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g86AI4C31652 for <jm@jmason.org>;
+    Fri, 6 Sep 2002 11:18:04 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 958CC294299; Fri,  6 Sep 2002 03:15:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from venus.phpwebhosting.com (venus.phpwebhosting.com
+    [64.29.16.27]) by xent.com (Postfix) with SMTP id 5B8F9294298 for
+    <fork@xent.com>; Fri,  6 Sep 2002 03:14:50 -0700 (PDT)
+Received: (qmail 10193 invoked by uid 508); 6 Sep 2002 10:16:34 -0000
+Received: from unknown (HELO hydrogen.leitl.org) (217.80.40.31) by
+    venus.phpwebhosting.com with SMTP; 6 Sep 2002 10:16:34 -0000
+Received: from localhost (eugen@localhost) by hydrogen.leitl.org
+    (8.11.6/8.11.6) with ESMTP id g86AGUi01401; Fri, 6 Sep 2002 12:16:30 +0200
+X-Authentication-Warning: hydrogen.leitl.org: eugen owned process doing -bs
+From: Eugen Leitl <eugen@leitl.org>
+To: CDale <cdale@techmonkeys.net>
+Cc: <bitbitch@magnesium.net>, "Adam L. Beberg" <beberg@mithral.com>,
+	<fork@xent.com>
+Subject: Re[2]: Selling Wedded Bliss (was Re: Ouch...)
+In-Reply-To: <Pine.LNX.4.44.0209060454450.13901-100000@isolnetsux.techmonkeys.net>
+Message-Id: <Pine.LNX.4.33.0209061204450.30472-100000@hydrogen.leitl.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 6 Sep 2002 12:16:29 +0200 (CEST)
+
+On Fri, 6 Sep 2002, CDale wrote:
+
+> It also depends on what the fad is or what is in style.  (:
+
+DNA's idea of fads is on the 100 kiloyear scale, unfortunately. As long as
+current fads don't involve in-vivo rewrite of the genome, homeoboxes
+including (now there's a problem for you, homeoboxing the adult), they're
+not all that smart an idear.
+ 
+> Actualy our silly antiquated ideas about relationships and love have
+> resulted in the bleedings of many upon many a page (and musical
+> instrumnet, and canvas)  What's the problem if we dash a little Mrs.
+
+Art is sure nice. However, if art is our first priority we're kinda
+fux0red, if we've set our sight on a sustainable culture.
+
+> Dash on them?  (:  Or cayenne.  Or ginger. (mm ask me about ginger
+> root play).
+> 
+> And let me tell you this: just because a child happens to be
+> single-parented (what a word), does not mean that child is
+> dysfunctional or lives in a dysfunctional home.  The govt/media/church
+
+Our firmware is not built to be single-parented. You can counteract that
+somewhat by exposing the kid to a community of close friends, but not too
+many do that.
+
+> has tried to make it look like there is a disintegration, when in
+> fact, there is a coming together of other family members and friends
+> to raise children.  It's not decaying -- it's changing.  Nothing wrong
+> with change.
+
+I don't know what exactly is wrong, but something is definitely wrong.  
+This is way too important to be left to just our intuition of what is
+right and what is wrong.
+  
+> > At least from the viewpoint of demographics sustainability and
+> > counterpressure to gerontocracy and resulting innovatiophobia we're doing
+> > something wrong.
+> > 
+> > Maybe we should really go dirty Tleilaxu all the way.
+> > 
+> 
+> Maybe y'all should buy m-w some more bandwidth.
+
+m-w?
+
+

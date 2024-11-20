@@ -1,0 +1,36 @@
+{
+  "name": "stdlib-aliases",
+  "version": "",
+  "title": "Standard Library Aliases",
+  "description": "A list of standard library aliases.",
+  "resources": [
+    {
+      "name": "stdlib-aliases-json",
+      "title": "Standard Library Aliases",
+      "description": "A list of standard library aliases.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.json"
+    },
+    {
+      "name": "stdlib-aliases-txt",
+      "title": "Standard Library Aliases",
+      "description": "A list of standard library aliases.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.txt"
+    }
+  ],
+  "sources": [],
+  "keywords": [
+    "list",
+    "stdlib",
+    "namespace",
+    "aliases"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}

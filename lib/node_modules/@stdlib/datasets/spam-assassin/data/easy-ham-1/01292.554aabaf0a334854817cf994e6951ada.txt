@@ -1,0 +1,74 @@
+From rpm-list-admin@freshrpms.net  Mon Sep  2 12:34:24 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5ACF843F9B
+	for <jm@localhost>; Mon,  2 Sep 2002 07:34:24 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 02 Sep 2002 12:34:24 +0100 (IST)
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7VAwsZ31826 for
+    <jm-rpm@jmason.org>; Sat, 31 Aug 2002 11:58:55 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7VAu1J15451; Sat, 31 Aug 2002 12:56:01
+    +0200
+Received: from python (80-24-132-206.uc.nombres.ttd.es [80.24.132.206])
+    (authenticated) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g7VAtIJ15223 for <rpm-list@freshrpms.net>; Sat, 31 Aug 2002 12:55:21 +0200
+From: Matthias Saou <matthias@egwn.net>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: alsa-driver rebuild fails with undeclared USB symbol
+Message-Id: <20020831125333.4574373b.matthias@egwn.net>
+In-Reply-To: <1030790671.1963.97.camel@bobcat.ods.org>
+References: <3D70306F.8090201@eecs.berkeley.edu>
+    <1030763168.15592.1.camel@localhost.localdomain>
+    <3D704193.3050003@eecs.berkeley.edu> <3D705411.9090606@eecs.berkeley.edu>
+    <1030790671.1963.97.camel@bobcat.ods.org>
+Organization: Electronic Group Interactive
+X-Mailer: Sylpheed version 0.8.2claws (GTK+ 1.2.10; i386-redhat-linux)
+Reply-BY: Tue, 24 Jul 2000 19:02:00 +1000
+X-Operating-System: GNU/Linux power!
+X-Message-Flag: Try using a real operating system : GNU/Linux power!
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Sat, 31 Aug 2002 12:53:33 +0200
+Date: Sat, 31 Aug 2002 12:53:33 +0200
+
+Once upon a time, Ville wrote :
+
+> Not me, but IMHO it's kind of offtopic to put it in freshrpms.net RPMs. 
+> Upstream is the way to go...
+
+Agreed, especially since my packages are primarily meant for the original
+Red Hat Linux kernels. And someone removing USB support from his kernel is
+probably not going to recompile ALSA with *all* the drivers anyway ;-)
+
+Matthias
+
+-- 
+Matthias Saou                                World Trade Center
+-------------                                Edificio Norte 4 Planta
+System and Network Engineer                  08039 Barcelona, Spain
+Electronic Group Interactive                 Phone : +34 936 00 23 23
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

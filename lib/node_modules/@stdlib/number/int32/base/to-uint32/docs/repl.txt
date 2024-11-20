@@ -1,0 +1,24 @@
+
+{{alias}}( x )
+    Converts a signed 32-bit integer to an unsigned 32-bit integer.
+
+    Parameters
+    ----------
+    x: integer
+        Signed 32-bit integer.
+
+    Returns
+    -------
+    out: integer
+        Unsigned 32-bit integer.
+
+    Examples
+    --------
+    > var y = {{alias}}( {{alias:@stdlib/number/float64/base/to-int32}}( -32 ) )
+    4294967264
+    > y = {{alias}}( {{alias:@stdlib/number/float64/base/to-int32}}( 3 ) )
+    3
+
+    See Also
+    --------
+

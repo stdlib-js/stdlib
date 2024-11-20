@@ -1,0 +1,28 @@
+
+{{alias}}( x )
+    Returns a boolean indicating if the sign bit is on (true) or off (false).
+
+    Parameters
+    ----------
+    x: number
+        Double-precision floating-point number.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if sign bit is on or off.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 4.0 )
+    false
+    > bool = {{alias}}( -9.14e-34 )
+    true
+    > bool = {{alias}}( 0.0 )
+    false
+    > bool = {{alias}}( -0.0 )
+    true
+
+    See Also
+    --------
+

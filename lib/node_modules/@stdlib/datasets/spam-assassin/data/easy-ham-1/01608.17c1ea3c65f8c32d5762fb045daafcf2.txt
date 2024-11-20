@@ -1,0 +1,75 @@
+From razor-users-admin@lists.sourceforge.net  Thu Oct  3 19:28:37 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id E934A16F03
+	for <jm@localhost>; Thu,  3 Oct 2002 19:28:36 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 03 Oct 2002 19:28:36 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g93HdJK07490 for <jm-razor@jmason.org>; Thu, 3 Oct 2002 18:39:19 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17x9cy-0002GM-00; Thu,
+    03 Oct 2002 10:19:08 -0700
+Received: from smtp-gw-cl-a.dmv.com ([64.45.128.110]) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17x9c1-00071s-00 for
+    <razor-users@lists.sourceforge.net>; Thu, 03 Oct 2002 10:18:09 -0700
+Received: from landshark (landshark.dmv.com [64.45.129.242]) by
+    smtp-gw-cl-a.dmv.com (8.12.3/8.12.3) with SMTP id g93HI6Yl083547 for
+    <razor-users@lists.sourceforge.net>; Thu, 3 Oct 2002 13:18:06 -0400 (EDT)
+    (envelope-from sven@dmv.com)
+Message-Id: <016601c26b00$e23f0c70$f2812d40@landshark>
+From: "Sven Willenberger" <sven@dmv.com>
+To: <razor-users@example.sourceforge.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2800.1106
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2800.1106
+Subject: [Razor-users] problems with hubris and/or discovery
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchives/forum.php?forum=razor-users>
+X-Original-Date: Thu, 3 Oct 2002 13:18:25 -0400
+Date: Thu, 3 Oct 2002 13:18:25 -0400
+
+trying to report spam [razor chooses hubris] I timeout on the connection
+(which seems to have gotten slower all morning) and receive the following
+error message:
+
+razor-report error: connect4: nextserver: discover1: Error reading socket
+connect4: nextserver: discover1: Error reading socket
+
+I then try to run razor-admin -discover and receive the same error .....
+problems with the servers today? only one discovery server?
+
+Sven
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

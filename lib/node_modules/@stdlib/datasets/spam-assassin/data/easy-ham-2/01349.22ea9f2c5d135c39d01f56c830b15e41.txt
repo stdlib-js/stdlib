@@ -1,0 +1,138 @@
+From bugtraq-return-5951-legit-lists-secfocus=jmason.org@securityfocus.com  Tue Aug  6 18:32:08 2002
+Return-Path: <bugtraq-return-5951-legit-lists-secfocus=spamassassin.taint.org@securityfocus.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2B17B440CD
+	for <jm@localhost>; Tue,  6 Aug 2002 13:32:02 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 18:32:02 +0100 (IST)
+Received: from outgoing.securityfocus.com (outgoing2.securityfocus.com
+    [66.38.151.26]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g76HWck12384 for <legit-lists-secfocus@jmason.org>; Tue, 6 Aug 2002
+    18:32:38 +0100
+Received: from lists.securityfocus.com (lists.securityfocus.com
+    [66.38.151.19]) by outgoing.securityfocus.com (Postfix) with QMQP id
+    CEDFB8F371; Tue,  6 Aug 2002 09:16:23 -0600 (MDT)
+Mailing-List: contact bugtraq-help@securityfocus.com; run by ezmlm
+Precedence: bulk
+List-Id: <bugtraq.list-id.securityfocus.com>
+List-Post: <mailto:bugtraq@securityfocus.com>
+List-Help: <mailto:bugtraq-help@securityfocus.com>
+List-Unsubscribe: <mailto:bugtraq-unsubscribe@securityfocus.com>
+List-Subscribe: <mailto:bugtraq-subscribe@securityfocus.com>
+Delivered-To: mailing list bugtraq@securityfocus.com
+Delivered-To: moderator for bugtraq@securityfocus.com
+Received: (qmail 10791 invoked from network); 6 Aug 2002 00:35:59 -0000
+Date: Mon, 5 Aug 2002 16:50:07 -0700 (PDT)
+Message-Id: <200208052350.g75No7Yw097463@freefall.freebsd.org>
+X-Authentication-Warning: freefall.freebsd.org: nectar set sender to
+    security-advisories@freebsd.org using -f
+From: FreeBSD Security Advisories <security-advisories@freebsd.org>
+To: Bugtraq <bugtraq@securityfocus.com>
+Subject: FreeBSD Security Advisory FreeBSD-SA-02:36.nfs
+Reply-To: security-advisories@freebsd.org
+
+-----BEGIN PGP SIGNED MESSAGE-----
+
+=============================================================================
+FreeBSD-SA-02:36.nfs                                        Security Advisory
+                                                          The FreeBSD Project
+
+Topic:          Bug in NFS server code allows remote denial of service
+
+Category:       core
+Module:         nfs
+Announced:      2002-08-05
+Credits:        Mike Junk <junk@isilon.com>
+Affects:        All releases prior to 4.6.1-RELEASE-p7
+                4.6-STABLE prior to the correction date
+Corrected:      2002-07-19 17:19:53 UTC (RELENG_4)
+                2002-08-01 19:31:55 UTC (RELENG_4_6)
+                2002-08-01 19:31:54 UTC (RELENG_4_5)
+                2002-08-01 19:31:54 UTC (RELENG_4_4)
+FreeBSD only:   NO
+
+I.   Background
+
+The Network File System (NFS) allows a host to export some or all of
+its filesystems, or parts of them, so that other hosts can access them
+over the network and mount them as if they were on local disks.  NFS is
+built on top of the Sun Remote Procedure Call (RPC) framework.
+
+II.  Problem Description
+
+A part of the NFS server code charged with handling incoming RPC
+messages had an error which, when the server received a message with a
+zero-length payload, would cause it to reference the payload from the
+previous message, creating a loop in the message chain.  This would
+later cause an infinite loop in a different part of the NFS server
+code which tried to traverse the chain.
+
+III. Impact
+
+Certain Linux implementations of NFS produce zero-length RPC messages
+in some cases.  A FreeBSD system running an NFS server may lock up
+when such clients connect.
+
+An attacker in a position to send RPC messages to an affected FreeBSD
+system can construct a sequence of malicious RPC messages that cause
+the target system to lock up.
+
+IV.  Workaround
+
+1) Disable the NFS server: set the nfs_server_enable variable to "NO"
+   in /etc/rc.conf, and reboot.
+
+   Alternatively, if there are no active NFS clients (as listed by the
+   showmount(8) utility), just killing the mountd and nfsd processes
+   should suffice.
+
+2) Add firewall rules to block RPC traffic to the NFS server from
+   untrusted hosts.
+
+V.   Solution
+
+The following patch has been verified to apply to FreeBSD 4.4, 4.5, and
+4.6 systems.
+
+a) Download the relevant patch from the location below, and verify the
+detached PGP signature using your PGP utility.
+
+# fetch ftp://ftp.FreeBSD.org/pub/FreeBSD/CERT/patches/SA-02:36/nfs.patch
+# fetch ftp://ftp.FreeBSD.org/pub/FreeBSD/CERT/patches/SA-02:36/nfs.patch.asc
+
+b) Apply the patch.
+
+# cd /usr/src
+# patch < /path/to/patch
+
+c) Recompile your kernel and modules as described in
+<URL:http://www.freebsd.org/handbook/kernelconfig.html> and reboot the
+system.
+
+VI.  Correction details
+
+The following list contains the revision numbers of each file that was
+corrected in FreeBSD.
+
+Path                                                             Revision
+  Branch
+- -------------------------------------------------------------------------
+src/sys/nfs/nfs_socket.c
+  RELENG_4                                                       1.60.2.5
+  RELENG_4_6                                                 1.60.2.3.2.1
+  RELENG_4_5                                                 1.60.2.1.6.1
+  RELENG_4_4                                                 1.60.2.3.4.1
+- -------------------------------------------------------------------------
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.7 (FreeBSD)
+
+iQCVAwUBPU8NTVUuHi5z0oilAQHMZAP+L80QudeELKHfZYxG5PPf6cuWkreACavl
+LP1oJDHLWuw32K4tM0Y+v505t+U2/wGnl2dSqwkfemzxlhzfsmrbubQx8EFgO6sb
+nhEEtSfu4t81ylHTY+qEWFtRweB5A1tGJaYV67wybWZxulkYJ9qnRLKF4PToc0E3
+T1Y/CN0DNYA=
+=2YSa
+-----END PGP SIGNATURE-----
+
+

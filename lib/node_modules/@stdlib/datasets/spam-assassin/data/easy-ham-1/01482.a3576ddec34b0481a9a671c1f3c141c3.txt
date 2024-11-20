@@ -1,0 +1,84 @@
+From spamassassin-devel-admin@lists.sourceforge.net  Mon Sep 16 00:10:47 2002
+Return-Path: <spamassassin-devel-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 15C2C16F03
+	for <jm@localhost>; Mon, 16 Sep 2002 00:10:47 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 16 Sep 2002 00:10:47 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8FKfDC27929 for <jm@jmason.org>; Sun, 15 Sep 2002 21:41:13 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17qgBZ-0006Tv-00; Sun,
+    15 Sep 2002 13:40:05 -0700
+Received: from www.ctyme.com ([209.237.228.10] helo=darwin.ctyme.com) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17qgBK-0003IH-00 for
+    <spamassassin-devel@lists.sourceforge.net>; Sun, 15 Sep 2002 13:39:50
+    -0700
+Received: from m206-56.dsl.tsoft.com ([198.144.206.56] helo=perkel.com) by
+    darwin.ctyme.com with asmtp (Exim 3.35 #1) id 17qgB6-0002Od-00;
+    Sun, 15 Sep 2002 13:39:36 -0700
+Message-Id: <3D84F004.7000805@perkel.com>
+From: Marc Perkel <marc@perkel.com>
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:0.9.9) Gecko/20020513
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: "Tony L. Svanstrom" <tony@svanstrom.com>
+Cc: spamassassin-devel@example.sourceforge.net
+Subject: Re: [SAdev] Suggestion - 2 levels of Spam Status
+References: <20020915223031.O43994-100000@moon.campus.luth.se>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: spamassassin-devel-admin@example.sourceforge.net
+Errors-To: spamassassin-devel-admin@example.sourceforge.net
+X-Beenthere: spamassassin-devel@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-devel-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-devel@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Id: SpamAssassin Developers <spamassassin-devel.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=spamassassin-devel>
+X-Original-Date: Sun, 15 Sep 2002 13:39:32 -0700
+Date: Sun, 15 Sep 2002 13:39:32 -0700
+
+Tony L. Svanstrom wrote:
+
+>On Sun, 15 Sep 2002 the voices made Marc Perkel write:
+>
+>>Right now we have one spam status flag indicating that a message is or
+>>is not spam. The idea being that the end user perhaps make a rule that
+>>would move the spam flagged messages into a spam folder and thus gain
+>>some time by presorting messages into to piles.
+>>
+>
+> If you (people) don't know enough to filter on the actual score they've got
+>the "stars", which will give them more than enough levers, if they want it.
+>
+>
+>	/Tony
+>
+Sure - we developers know that - but what I'm talking about is making it 
+easier for END USERS to figure out.
+
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-devel mailing list
+Spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+
+

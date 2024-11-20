@@ -1,0 +1,71 @@
+From ilug-admin@linux.ie  Fri Aug  9 15:41:33 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BFB4E440DD
+	for <jm@localhost>; Fri,  9 Aug 2002 10:34:49 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:34:49 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79EVIb07574 for
+    <jm-ilug@jmason.org>; Fri, 9 Aug 2002 15:31:18 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id XAA01915 for <jm-ilug@jmason.org>;
+    Thu, 8 Aug 2002 23:58:09 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id XAA09184; Thu, 8 Aug 2002 23:56:23 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from byron.heanet.ie (byron.heanet.ie [193.1.219.90]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id XAA09149 for <ilug@linux.ie>;
+    Thu, 8 Aug 2002 23:56:16 +0100
+Received: from [2002:c101:da82::1] (helo=heanet.ie) by byron.heanet.ie
+    with esmtp (Exim 4.05) id 17cwDn-0004Cn-00 for ilug@linux.ie;
+    Thu, 08 Aug 2002 23:57:35 +0100
+Message-Id: <3D52F76C.1000903@heanet.ie>
+Date: Thu, 08 Aug 2002 23:57:48 +0100
+From: Dave Wilson <dave.wilson@heanet.ie>
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:0.9.9) Gecko/20020408
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: ilug@linux.ie
+Content-Type: text/plain; charset=ISO-8859-15; format=flowed
+Content-Transfer-Encoding: 7bit
+Subject: [ILUG] Dialup on debian
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Hi all,
+
+I have a debian machine with an external ISDN terminal adapter, which 
+I'm trying to get to dial a Cisco 3600 running CHAP. wvdial on Red Hat 
+copes fine with this. However, I get the same results if i use pon or 
+wvdial on Debian: pppd negotiation is detected, pppd is started -- and 
+I'm never assigned an IP address.
+
+Looking at the logs on the Cisco, I see that in place of the username I 
+seem to be transmitting a six-digit hex number. e.g.:
+
+Aug  8 23:35:00.311 UTC+1: %ISDN-6-CONNECT: Interface Serial0/0:19 is 
+now connected to <phonenum> 19eb85
+
+The last entry should be my dialup username. (Substitute incoming phone 
+number for <phonenum>).
+
+Any ideas what I'm doing wrong?
+
+Cheers,
+Dave
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

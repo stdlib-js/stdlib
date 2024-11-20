@@ -1,0 +1,71 @@
+{
+  "name": "@stdlib/datasets/pace-boston-house-prices",
+  "version": "0.0.0",
+  "description": "A (corrected) dataset derived from information collected by the US Census Service concerning housing in Boston, Massachusetts (1978).",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "bin": {
+    "pace-boston-house-prices": "./bin/cli"
+  },
+  "main": "./lib",
+  "browser": "./lib/browser.js",
+  "directories": {
+    "benchmark": "./benchmark",
+    "data": "./data",
+    "doc": "./docs",
+    "example": "./examples",
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "scripts": {},
+  "homepage": "https://github.com/stdlib-js/stdlib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stdlib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
+  "keywords": [
+    "stdlib",
+    "datasets",
+    "dataset",
+    "data",
+    "house",
+    "housing",
+    "prices",
+    "value",
+    "boston",
+    "stats",
+    "statistics",
+    "linear regression",
+    "prediction"
+  ]
+}

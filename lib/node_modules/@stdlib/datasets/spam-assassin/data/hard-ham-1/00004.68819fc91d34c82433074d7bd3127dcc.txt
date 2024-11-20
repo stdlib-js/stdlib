@@ -1,0 +1,191 @@
+Received: from bran.mc.mpls.visi.com (bran.mc.mpls.visi.com
+	[208.42.156.103]) by mail.shell.visi.com (8.8.8/8.7.5) with ESMTP id
+	LAA15057; Wed, 5 Jun 2002 11:33:26 -0500 (CDT)
+Posted-Date: Wed, 5 Jun 2002 11:33:26 -0500 (CDT)
+Received-Date: Wed, 5 Jun 2002 11:33:26 -0500 (CDT)
+Received: by bran.mc.mpls.visi.com (Postfix) id 69AAA4B70; Wed,  5 Jun 2002
+	11:33:26 -0500 (CDT)
+Delivered-To: hackel@visi.com
+Received: from lepen.pair.com (lepen.pair.com [209.68.1.146]) by
+	bran.mc.mpls.visi.com (Postfix) with SMTP id 13C964B00 for
+	<hackel@visi.com>; Wed,  5 Jun 2002 11:33:26 -0500 (CDT)
+Received: (qmail 86136 invoked by uid 3028); 5 Jun 2002 16:33:25 -0000
+Delivered-To: yishan-walkingfish:com-hackel@walkingfish.com
+Received: (qmail 86129 invoked from network); 5 Jun 2002 16:33:23 -0000
+Received: from unagi.cybernothing.org (root@205.158.174.211) by
+	lepen.pair.com with SMTP; 5 Jun 2002 16:33:23 -0000
+Received: from unagi.cybernothing.org. (mailman@localhost [127.0.0.1]) by
+	unagi.cybernothing.org (8.11.3/8.10.1/JDF) with ESMTP id g55FZL667465; Wed,
+	5 Jun 2002 08:35:22 -0700 (PDT)
+Received: from tom.iecc.com (tom.iecc.com [208.31.42.38]) by
+	unagi.cybernothing.org (8.11.3/8.10.1/JDF) with SMTP id g55DXo662017 for
+	<cauce-announce@lists.cybernothing.org>; Wed, 5 Jun 2002 06:33:51 -0700
+	(PDT)
+Received: (qmail 3037 invoked by uid 100); 5 Jun 2002 09:33:45 -0400
+Message-ID: <20020605133323.3036.qmail@tom.iecc.com>
+From: "John Levine" <johnl@cauce.org>
+Reply-To: comments@cauce.org
+To: comments@cauce.org
+Subject: CAUCE NEWS, Vol 6, No 2, June 2002
+Sender: cauce-announce-admin@lists.cybernothing.org
+Errors-To: cauce-announce-admin@lists.cybernothing.org
+X-BeenThere: cauce-announce@lists.cauce.org
+X-Mailman-Version: 2.0.8
+Precedence: bulk
+List-Help: <mailto:cauce-announce-request@lists.cauce.org?subject=help>
+List-Post: <mailto:cauce-announce@lists.cauce.org>
+List-Subscribe: <http://lists.cauce.org/mailman/listinfo/cauce-announce>,
+	<mailto:cauce-announce-request@lists.cauce.org?subject=subscribe>
+List-Id: Coalition Against Unsolicited Commercial E-mail
+	<cauce-announce.lists.cauce.org>
+List-Unsubscribe: <http://lists.cauce.org/mailman/listinfo/cauce-announce>,
+	<mailto:cauce-announce-request@lists.cauce.org?subject=unsubscribe>
+List-Archive: <http://lists.cauce.org/pipermail/cauce-announce/>
+Date: 5 Jun 2002 13:33:23 -0000
+Content-Type: text/plain; CHARSET=US-ASCII
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+			      CAUCE NEWS
+			  Volume 6, Number 2
+			      June, 2002
+
+In this issue:
+
+* Progress of Senate anti-spam bill
+* European Union bans spam
+
+IF YOU DON'T KNOW WHY YOU GOT THIS MESSAGE: Please see the
+"About This Message" section at the end.
+
+- --------------------------------------------------------------
+
+* Progress of Senate anti-spam bill
+
+Over a year ago, Sen. Conrad Burns (R-MT) introduced S.630, the CAN
+SPAM Act of 2001. This bill would require UCE to have a valid return
+address to facilitate consumers' removal from spam lists. It would
+place enforcement in the hands of the Federal Trade Commission, and
+state Attorneys General. It would also permit Internet Service
+Providers (ISPs) to enforce violations, up to $10 per illegal spam.
+It would preempt any stricter state anti-spam laws.
+
+The Senate Commerce Committee considered the bill on May 17th, and
+reported it out largely unchanged.  It's not now scheduled for further
+action in the Senate.
+
+CAUCE has always opposed this bill, since we believe it would lead to
+more spam, not less.  When South Korea passed a similar opt-out law
+last year, spam from Korea soon increased by a factor of 10.
+
+Our April 2001 press release goes into more detail about the problems
+with S.630:
+
+ http://www.cauce.org/pressreleases/pr-s630.shtml
+
+We're pleased that the Congress is looking at spam issues again, and
+hope that in the future we can help them create an effective bill that
+the entire Internet community can support.
+
+- --------------------------------------------------------------
+
+* European Union bans spam
+
+GLOBAL INTERNET COMMUNITY APPLAUDS EUROPEAN ANTI-SPAM VOTE
+
+May 31, 2002 - The Coalition Against Unsolicited Commercial E-Mail
+(CAUCE), EuroCAUCE, CAUCE India, CAUCE Canada and the Coalition Against
+Unsolicited Bulk E-Mail, Australia (CAUBE.au) today applauded the decision
+by the European Parliament to protect European Internet users from the
+practice of unsolicited e-mail advertisements. Yesterday's vote will turn
+Europe into a virtual "spam-free zone" after the formal adoption of the
+directive, making it illegal to send unsolicited e-mail, text message or
+other similar advertisements to individuals with whom companies do not
+have a preexisting business relationship.
+
+"This is a tremendous day for European Internet users," said EuroCAUCE
+Chairman George Mills. "We are extremely pleased that the European
+Parliament has listened to the citizens of its member countries and added
+the right to be left alone by spammers to its efforts to protect the
+privacy of Europeans."
+
+While six European Union member countries had already formalized "opt-in"
+in their national laws and regulations, yesterday's vote should turn all
+of Europe into a spam-free zone by the end of 2003.
+
+"Unfortunately, the rest of the world's Internet-using countries,
+including the United States, now lag behind Europe in their protection
+of Internet users," said CAUCE Chairman Scott Hazen Mueller. "This is
+a tremendous first step, but the rest of the world now needs to follow
+Europe's lead and unite behind protection of Internet users and
+network owners from abusive and costly unsolicited e-mail
+advertising."
+
+"This decision is the direct result of Internet users throughout the
+European Union standing up for their rights, and Members of the
+European Parliament listening to their constituents," said Mills. "Our
+members and our volunteers performed an integral part of this process,
+translating, lobbying and educating their representatives."
+
+More information on the E.U. directive is available on the European
+Parliament's Web site <http://www.europarl.eu.int/press/index_en.htm>,
+and a EuroCAUCE analysis is available at
+<http://www.euro.cauce.org/en/amendments1a.html>. More information on
+the international CAUCE network of affiliate organizations is
+available at <http://www.cauce.org>.
+
+- --------------------------------------------------------------
+
+About This Message:
+
+This message was written and broadcast by the Coalition Against
+Unsolicited Commercial E-Mail. It is copyrighted (c) 2002 by the
+Coalition Against Unsolicited Commercial E-Mail.
+
+We encourage redistribution of this message or items from it, as long
+as they are not spammed anywhere, are on-topic for any forum to which
+you send them, and include our copyright notice.  When in doubt, post
+the URL of our site (http://www.cauce.org) instead, or put it in your
+signature.  Press, broadcast, and Internet media may treat this
+material as they would a press release. For other commercial
+reproduction rights, contact John Levine <johnl@cauce.org>.
+
+*************************************************************************
+You have received this message because your address was signed up for
+the CAUCE-ANNOUNCE mailing list. If you do not want to receive any
+further messages from this list or think you were subscribed without
+your knowledge, please use the list's home page
+
+       http://lists.cauce.org/mailman/listinfo/cauce-announce
+
+or send mail to cauce-announce-request@cauce.org with a subject of
+"unsubscribe," or contact J.D. Falk <jdfalk@cauce.org> to be removed
+manually. We exist to eradicate unsolicited e-mail, and, unlike
+spammers, will honor "remove" requests.
+
+On the other hand, if a friend passed along this message to you and
+you would like to receive the CAUCE NEWS in the future, visit the
+CAUCE web site at http://www.cauce.org to join, or send a message to
+cauce-announce-request@cauce.org with a subject of "subscribe" if you
+want to subscribe without joining.
+*************************************************************************
+
+For other questions or comments about this message, contact John
+Levine <johnl@cauce.org>.
+
+Note to PGP users: your editor has a new longer key, which you'll need
+to verify the signature on this message.  It's available on the usual
+key servers.
+
+				 # #
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (BSD/OS)
+Comment: For info see http://www.gnupg.org
+
+iEYEARECAAYFAjz+Ey4ACgkQkEiFRdeC/kWGPwCeLJwc5kU+dIWdYvZE4fr1DTRO
+HfEAnjuW22VH9mi1sPPtUuk+6yUpyABW
+=3DL1WX
+-----END PGP SIGNATURE-----

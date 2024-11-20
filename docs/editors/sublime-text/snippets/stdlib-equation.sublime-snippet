@@ -1,0 +1,20 @@
+<snippet>
+    <content><![CDATA[<!-- <equation class="equation" label="eq:${1:TODO}" align="center" raw="${2:TODO}" alt="${3:TODO}"> -->
+
+<div class="equation" align="center" data-raw-text="${2:TODO}" data-equation="eq:${1:TODO}">
+    <img src="TODO" alt="${3:TODO}">
+    <br>
+</div>
+
+<!-- </equation> -->
+]]></content>
+
+    <!-- Tab trigger to activate the snippet -->
+    <tabTrigger>stdlib.equation</tabTrigger>
+
+    <!-- Scope the tab trigger will be active in -->
+    <scope>text.html.markdown</scope>
+
+    <!-- Description to show in the menu -->
+    <description>Markdown HTML equation</description>
+</snippet>

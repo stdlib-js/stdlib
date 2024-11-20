@@ -1,0 +1,82 @@
+
+{{alias}}( size )
+    Returns a shared array buffer having a specified number of bytes.
+
+    A shared array buffer behaves similarly to a non-shared array buffer, except
+    that a shared array buffer allows creating views of memory shared between
+    threads.
+
+    Buffer contents are initialized to 0.
+
+    If an environment does not support shared array buffers, the function throws
+    an error.
+
+    Parameters
+    ----------
+    size: integer
+        Number of bytes.
+
+    Returns
+    -------
+    out: SharedArrayBuffer
+        A shared array buffer.
+
+    Examples
+    --------
+    // Assuming an environment supports SharedArrayBuffers...
+    > var buf = new {{alias}}( 5 )
+    <SharedArrayBuffer>
+
+
+{{alias}}.length
+    Number of input arguments the constructor accepts.
+
+    Examples
+    --------
+    > {{alias}}.length
+    1
+
+
+{{alias}}.prototype.byteLength
+    Read-only property which returns the length (in bytes) of the array buffer.
+
+    Examples
+    --------
+    // Assuming an environment supports SharedArrayBuffers...
+    > var buf = new {{alias}}( 5 );
+    > buf.byteLength
+    5
+
+
+{{alias}}.prototype.slice( [start[, end]] )
+    Copies the bytes of a shared array buffer to a new shared array buffer.
+
+    Parameters
+    ----------
+    start: integer (optional)
+        Index at which to start copying buffer contents (inclusive). If
+        negative, the index is relative to the end of the buffer.
+
+    end: integer (optional)
+        Index at which to stop copying buffer contents (exclusive). If negative,
+        the index is relative to the end of the buffer.
+
+    Returns
+    -------
+    out: SharedArrayBuffer
+        A new shared array buffer whose contents have been copied from the
+        calling shared array buffer.
+
+    Examples
+    --------
+    // Assuming an environment supports SharedArrayBuffers...
+    > var b1 = new {{alias}}( 10 );
+    > var b2 = b1.slice( 2, 6 );
+    > var bool = ( b1 === b2 )
+    false
+    > b2.byteLength
+    4
+
+    See Also
+    --------
+

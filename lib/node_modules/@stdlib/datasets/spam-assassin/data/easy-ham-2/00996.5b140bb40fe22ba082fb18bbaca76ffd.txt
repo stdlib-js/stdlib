@@ -1,0 +1,74 @@
+From fork-admin@xent.com  Mon Aug 12 11:09:07 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5B55444168
+	for <jm@localhost>; Mon, 12 Aug 2002 05:56:32 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:56:32 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7A0dub01964 for <jm@jmason.org>;
+    Sat, 10 Aug 2002 01:39:59 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 4E8512940DF; Fri,  9 Aug 2002 17:36:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hall.mail.mindspring.net (hall.mail.mindspring.net
+    [207.69.200.60]) by xent.com (Postfix) with ESMTP id 7D6242940CF for
+    <fork@xent.com>; Fri,  9 Aug 2002 17:35:32 -0700 (PDT)
+Received: from user-119ac86.biz.mindspring.com ([66.149.49.6]) by
+    hall.mail.mindspring.net with esmtp (Exim 3.33 #1) id 17dKEu-0007HO-00;
+    Fri, 09 Aug 2002 20:36:20 -0400
+MIME-Version: 1.0
+X-Sender: rahettinga@pop.earthlink.net
+Message-Id: <p05111a1ab97a0747057e@[66.149.49.6]>
+In-Reply-To: <F230gpCpt0qilwNiwlq00004d5d@hotmail.com>
+References: <F230gpCpt0qilwNiwlq00004d5d@hotmail.com>
+To: "Russell Turpin" <deafbox@hotmail.com>, fork@spamassassin.taint.org
+From: "R. A. Hettinga" <rah@shipwright.com>
+Subject: Re: David Friedman: Mail Me the Money!
+Cc: Digital Bearer Settlement List <dbs@philodox.com>
+Content-Type: text/plain; charset="us-ascii"
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 9 Aug 2002 19:57:44 -0400
+
+At 6:21 PM +0000 on 8/9/02, Russell Turpin wrote:
+
+
+>  Personally,
+> I wouldn't know where to hide the bodies. But if
+> the government didn't have this -- um, fussiness --
+> about shooting vermin, the spam problem would
+> disappear rather quickly.
+
+...which reminds me of my favorite David Friedman quote.
+
+See below...
+
+Cheers,
+RAH
+
+
+-- 
+-----------------
+R. A. Hettinga <mailto: rah@ibuc.com>
+The Internet Bearer Underwriting Corporation <http://www.ibuc.com/>
+44 Farquhar Street, Boston, MA 02131 USA
+"The direct use of physical force is so poor a solution to the problem of
+limited resources that it is commonly employed only by small children and
+great nations." -- David Friedman, _The_Machinery_of_Freedom_
+
+http://xent.com/mailman/listinfo/fork
+
+

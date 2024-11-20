@@ -1,0 +1,63 @@
+{
+  "name": "stdlib-alias-signature",
+  "version": "",
+  "title": "Standard Library Aliases and Signatures",
+  "description": "A mapping between standard library aliases and signatures.",
+  "resources": [
+    {
+      "name": "stdlib-alias-signature-json",
+      "title": "Standard Library Aliases and Signatures",
+      "description": "A mapping between standard library aliases and signatures.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.json"
+    },
+    {
+      "name": "stdlib-alias-signature-csv",
+      "title": "Standard Library Aliases and Signatures",
+      "description": "A mapping between standard library aliases and signatures.",
+      "format": "csv",
+      "mediatype": "plain/csv",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "alias",
+            "title": "Alias",
+            "description": "Alias.",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "signature",
+            "title": "Signature",
+            "description": "Signature.",
+            "type": "string",
+            "format": "default"
+          }
+        ]
+      }
+    }
+  ],
+  "sources": [],
+  "keywords": [
+    "stdlib",
+    "namespace",
+    "aliases",
+    "help",
+    "text",
+    "txt",
+    "docs",
+    "documentation",
+    "repl",
+    "usage",
+    "signature",
+    "interface",
+    "api"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}

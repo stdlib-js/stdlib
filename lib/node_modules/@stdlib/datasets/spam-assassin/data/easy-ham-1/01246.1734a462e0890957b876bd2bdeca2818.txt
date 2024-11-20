@@ -1,0 +1,85 @@
+From rpm-list-admin@freshrpms.net  Fri Oct  4 11:02:23 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id DAE6416F20
+	for <jm@localhost>; Fri,  4 Oct 2002 11:02:00 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 04 Oct 2002 11:02:00 +0100 (IST)
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g948LAK09578 for
+    <jm-rpm@jmason.org>; Fri, 4 Oct 2002 09:21:11 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g948G2f21060; Fri, 4 Oct 2002 10:16:03
+    +0200
+Received: from urgent.rug.ac.be (urgent.rug.ac.be [157.193.88.1]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with SMTP id g948FJf20904 for
+    <rpm-list@freshrpms.net>; Fri, 4 Oct 2002 10:15:19 +0200
+Received: (qmail 8840 invoked by uid 505); 4 Oct 2002 08:15:27 -0000
+Received: from localhost (sendmail-bs@127.0.0.1) by localhost with SMTP;
+    4 Oct 2002 08:15:27 -0000
+From: Thomas Vander Stichele <thomas@urgent.rug.ac.be>
+To: rpm-zzzlist <rpm-zzzlist@freshrpms.net>
+Subject: Re: K3B
+In-Reply-To: <1033696039.2551.0.camel@gandalf>
+Message-Id: <Pine.LNX.4.44.0210041014020.5103-100000@urgent.rug.ac.be>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Fri, 4 Oct 2002 10:15:27 +0200 (CEST)
+Date: Fri, 4 Oct 2002 10:15:27 +0200 (CEST)
+
+> `athalon-redhat-linux': machine `athalon-redhat' not recognized
+> configure: error: /bin/sh admin/config.sub athalon-redhat-linux failed
+> error: Bad exit status from /home/dale/rpmbuild/tmp/rpm-tmp.26673
+> (%prep)
+
+Woah ;) did you tweak some flags yourself, like default rpm flags ? What 
+dist are you running ? I don't think there's an athalon-redhat-linux 
+machine as standard ;) it should be some permutation of athlon and linux, 
+and without redhat, but I can't tell for sure.   Any idea where your 
+system might be setting this flag ?
+
+
+ > RPM build errors:
+>     user jkeating does not exist - using root
+>     group jkeating does not exist - using root
+>     user jkeating does not exist - using root
+>     group jkeating does not exist - using root
+>     Bad exit status from /home/dale/rpmbuild/tmp/rpm-tmp.26673 (%prep)
+
+looks like the files are owned by the wrong user (ie the original spec 
+builder).
+
+Thomas
+
+-- 
+
+The Dave/Dina Project : future TV today ! - http://davedina.apestaart.org/
+<-*-                      -*->
+Goodbye
+I've finally arrived
+<-*- thomas@apestaart.org -*->
+URGent, the best radio on the Internet - 24/7 ! - http://urgent.rug.ac.be/
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

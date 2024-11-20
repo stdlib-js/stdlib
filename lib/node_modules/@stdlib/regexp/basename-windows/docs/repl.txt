@@ -1,0 +1,39 @@
+
+{{alias}}()
+    Returns a regular expression to capture the last part of a Windows path.
+
+    Returns
+    -------
+    re: RegExp
+        Regular expression.
+
+    Examples
+    --------
+    > var RE_BASENAME_WINDOWS = {{alias}}();
+    > var base = RE_BASENAME_WINDOWS.exec( '\\foo\\bar\\index.js' )[ 1 ]
+    'index.js'
+    > base = RE_BASENAME_WINDOWS.exec( 'C:\\foo\\bar\\.gitignore' )[ 1 ]
+    '.gitignore'
+    > base = RE_BASENAME_WINDOWS.exec( 'foo\\file.pdf' )[ 1 ]
+    'file.pdf'
+    > base = RE_BASENAME_WINDOWS.exec( 'foo\\bar\\file' )[ 1 ]
+    'file'
+    > base = RE_BASENAME_WINDOWS.exec( 'index.js' )[ 1 ]
+    'index.js'
+    > base = RE_BASENAME_WINDOWS.exec( '.' )[ 1 ]
+    '.'
+    > base = RE_BASENAME_WINDOWS.exec( '' )[ 1 ]
+    ''
+
+
+{{alias}}.REGEXP
+    Regular expression to capture the last part of a Windows path.
+
+    Examples
+    --------
+    > var match = {{alias}}.REGEXP.exec( 'foo\\file.pdf' )[ 1 ]
+    'file.pdf'
+
+    See Also
+    --------
+

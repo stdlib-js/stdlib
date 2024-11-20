@@ -1,0 +1,90 @@
+From razor-users-admin@lists.sourceforge.net  Thu Aug  1 03:47:11 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5C06C440C9
+	for <jm@localhost>; Wed, 31 Jul 2002 22:47:07 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 01 Aug 2002 03:47:07 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g712g3217445 for <jm-razor@jmason.org>; Thu, 1 Aug 2002 03:42:03 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17a5kx-0003kF-00; Wed,
+    31 Jul 2002 19:32:03 -0700
+Received: from h-66-166-21-186.snvacaid.covad.net ([66.166.21.186]
+    helo=rover.vipul.net) by usw-sf-list1.sourceforge.net with esmtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17a5kk-00009h-00 for
+    <razor-users@lists.sourceforge.net>; Wed, 31 Jul 2002 19:31:50 -0700
+Received: (from vipul@localhost) by rover.vipul.net (8.11.6/8.11.6) id
+    g712Vkp18022; Wed, 31 Jul 2002 19:31:46 -0700
+From: Vipul Ved Prakash <mail@vipul.net>
+To: Sven <sven@dmv.com>
+Cc: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] Smrazor, Milter, and Max connections
+Message-Id: <20020731193146.B17700@rover.vipul.net>
+Reply-To: mail@vipul.net
+Mail-Followup-To: Sven <sven@dmv.com>,
+	razor-users@lists.sourceforge.net
+References: <00df01c238fc$f04ac060$0201a8c0@homediet>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <00df01c238fc$f04ac060$0201a8c0@homediet>; from sven@dmv.com
+    on Wed, Jul 31, 2002 at 09:44:08PM -0400
+X-Operating-System: Linux rover.vipul.net 2.4.18
+X-Privacy: If possible, encrypt your reply.  Key at http://vipul.net/
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Wed, 31 Jul 2002 19:31:46 -0700
+Date: Wed, 31 Jul 2002 19:31:46 -0700
+
+On Wed, Jul 31, 2002 at 09:44:08PM -0400, Sven wrote:
+> With v2.14 of razor client and using Solaris 9 with sendmail 8.12.5 I have
+> managed to get smrazor working (milter) -- sort of ... With light server
+> loads, it seems to do fine; however during peak traffic times (or peak
+> catalogue server usage???) , the smrazor milter stops and sometime dumps
+> core as well.  Does anyone know of a limit in terms of number of
+> messages/minute that can be theoretically processed? I have noticed timeouts
+> occuring (I set the milter timeout per message to 15 seconds) often in huge
+> lumps and the occasional "Could not get valid info from Discovery Servers")
+> ?????
+
+15 seconds is more than enough timeout... There's no request/minute limit,
+and we are not close to hardware limits on any of the servers.
+
+Could you send me relevant sections from the log file as well as
+your config?
+
+-- 
+
+Vipul Ved Prakash          |   "The future is here, it's just not 
+Software Design Artist     |    widely distributed."
+http://vipul.net/          |              -- William Gibson
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Dice - The leading online job board
+for high-tech professionals. Search and apply for tech jobs today!
+http://seeker.dice.com/seeker.epl?rel_code=31
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

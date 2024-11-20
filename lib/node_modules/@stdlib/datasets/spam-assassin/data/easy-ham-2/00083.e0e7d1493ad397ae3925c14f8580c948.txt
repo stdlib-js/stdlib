@@ -1,0 +1,75 @@
+From ilug-admin@linux.ie  Mon Jul 22 18:12:07 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5D909440C9
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:07 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:07 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFhaI08571 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 16:43:36 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id JAA30880 for <jm-ilug@jmason.org>;
+    Mon, 22 Jul 2002 09:10:45 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA15617; Mon, 22 Jul 2002 09:10:08 +0100
+Received: from homer.jinny.ie ([193.120.171.3]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA15550 for <ilug@linux.ie>; Mon,
+    22 Jul 2002 09:10:00 +0100
+Received: from jlooney.jinny.ie (fw [193.120.171.2]) by homer.jinny.ie
+    (8.9.3/8.11.2) with ESMTP id IAA17820 for <ilug@linux.ie>; Mon,
+    22 Jul 2002 08:34:47 +0100
+Received: (from john@localhost) by jlooney.jinny.ie (8.11.6/8.11.6) id
+    g6M89fA07479 for ilug@linux.ie; Mon, 22 Jul 2002 09:09:41 +0100
+X-Authentication-Warning: jlooney.jinny.ie: john set sender to
+    jlooney@jinny.ie using -f
+Date: Mon, 22 Jul 2002 09:09:41 +0100
+From: "John P. Looney" <valen@tuatha.org>
+To: ILUG Mailing List <ilug@linux.ie>
+Subject: Re: [ILUG] How to copy some files
+Message-Id: <20020722080941.GI3234@jinny.ie>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: ILUG Mailing List <ilug@linux.ie>
+References: <1027108120.3d386d180910a@webmail.gameshrine.com>
+    <15673.14143.879609.371088@gargle.gargle.HOWL>
+    <20020720184341.E23917@ie.suberic.net>
+    <15673.47359.781493.358686@gargle.gargle.HOWL>
+    <20020720213335.A27034@ie.suberic.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20020720213335.A27034@ie.suberic.net>
+User-Agent: Mutt/1.4i
+X-Os: Red Hat Linux 7.3/Linux 2.4.18-3
+X-Url: http://www.redbrick.dcu.ie/~valen
+X-Gnupg-Publickey: http://www.redbrick.dcu.ie/~valen/public.asc
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Sat, Jul 20, 2002 at 09:33:35PM +0100, kevin lyda mentioned:
+> >  > apparently some systems limited soft links to the same device but
+> >  > gave up after a while.  
+> > Why?
+> to make them consistent with hard links.
+
+ That's something that POSIX would do - make every platform as equally
+broken, rather than standing up and saying "how about we try & make
+everyone better".
+
+ (why ? Because in the real world, you can't. Somethings just suck)
+
+Kate
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

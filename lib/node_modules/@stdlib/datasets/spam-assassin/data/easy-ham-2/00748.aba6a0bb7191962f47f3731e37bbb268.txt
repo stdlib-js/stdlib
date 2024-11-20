@@ -1,0 +1,55 @@
+From fork-admin@xent.com  Wed Jul 31 18:34:00 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9798A44104
+	for <jm@localhost>; Wed, 31 Jul 2002 13:33:22 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 31 Jul 2002 18:33:22 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6VHLU202844 for <jm@jmason.org>;
+    Wed, 31 Jul 2002 18:21:32 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 39D78294146; Wed, 31 Jul 2002 10:19:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from carbon.larknet.co.uk (churchill.larknet.co.uk
+    [212.1.130.26]) by xent.com (Postfix) with SMTP id 318F1294145 for
+    <FoRK@xent.com>; Wed, 31 Jul 2002 10:18:46 -0700 (PDT)
+Received: (qmail 4438 invoked from network); 31 Jul 2002 17:16:07 -0000
+Received: from unknown (HELO tagish.com) (62.53.43.157) by
+    carbon.larknet.co.uk with SMTP; 31 Jul 2002 17:16:07 -0000
+Message-Id: <3D481C76.85396310@tagish.com>
+From: Andy Armstrong <andy@tagish.com>
+Organization: Tagish Ltd
+X-Mailer: Mozilla 4.76 [en] (Windows NT 5.0; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: FoRK <FoRK@xent.com>
+Subject: Bike Bits
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 31 Jul 2002 18:20:54 +0100
+
+What a fantastically bizarre device:
+   http://www.conferencebike.com/
+
+Anyone seen one in the flesh?
+
+-- 
+Andy Armstrong, http://www.tagish.co.uk/
+http://xent.com/mailman/listinfo/fork
+
+

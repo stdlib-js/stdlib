@@ -1,0 +1,152 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2021 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# offsetView
+
+> Return a typed array view having the same data type as a provided input typed array and starting at a specified index offset.
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- Package usage documentation. -->
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var offsetView = require( '@stdlib/strided/base/offset-view' );
+```
+
+#### offsetView( x, offset )
+
+Returns a typed array view having the same data type as a provided input typed array and starting at a specified index offset.
+
+```javascript
+var Float64Array = require( '@stdlib/array/float64' );
+
+var x = new Float64Array( 10 );
+
+var view = offsetView( x, 0 );
+// returns <Float64Array>
+
+var bool = ( view.buffer === x.buffer );
+// returns true
+
+var len = view.length;
+// returns 10
+```
+
+The `offset` argument specifies the starting index of the returned typed array view relative to the input array `x`.
+
+```javascript
+var Float64Array = require( '@stdlib/array/float64' );
+
+var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
+
+var view = offsetView( x, 2 );
+// returns <Float64Array>
+
+var len = view.length;
+// returns 6
+
+var v1 = view[ 0 ];
+// returns 3.0
+
+var v2 = view[ 1 ];
+// returns 4.0
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- Package usage examples. -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var Float64Array = require( '@stdlib/array/float64' );
+var offsetView = require( '@stdlib/strided/base/offset-view' );
+
+// Define a typed array:
+var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
+// returns <Float64Array>
+
+// Create a view of the array:
+var view = offsetView( x, 0 );
+// returns <Float64Array>
+
+// Set view elements:
+view[ 0 ] = 9.0;
+view[ 1 ] = 10.0;
+
+// Get the first two elements of the original array:
+var v0 = x[ 0 ];
+// returns 9.0
+
+var v1 = x[ 1 ];
+// returns 10.0
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="references">
+
+</section>
+
+<!-- /.references -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+</section>
+
+<!-- /.links -->

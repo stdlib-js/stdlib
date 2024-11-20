@@ -1,0 +1,58 @@
+Return-Path: neale@woozle.org
+Delivery-Date: Fri Sep  6 20:58:33 2002
+From: neale@woozle.org (Neale Pickett)
+Date: 06 Sep 2002 12:58:33 -0700
+Subject: [Spambayes] Deployment
+In-Reply-To: <LNBBLJKPBEHFEDALKOLCGEIPBCAB.tim.one@comcast.net>
+References: <LNBBLJKPBEHFEDALKOLCGEIPBCAB.tim.one@comcast.net>
+Message-ID: <w53znuuc2l2.fsf@woozle.org>
+
+So then, Tim Peters <tim.one@comcast.net> is all like:
+
+> [Guido]
+> >   ...
+> >   I don't know how big that pickle would be, maybe loading it each time
+> >   is fine.  Or maybe marshalling.)
+> 
+> My tests train on about 7,000 msgs, and a binary pickle of the database is
+> approaching 10 million bytes.
+
+My paltry 3000-message training set makes a 6.3MB (where 1MB=1e6 bytes)
+pickle.  hammie.py, which I just checked in, will optionally let you
+write stuff out to a dbm file.  With that same message base, the dbm
+file weighs in at a hefty 21.4MB.  It also takes longer to write:
+
+  Using a database:
+   real    8m24.741s
+   user    6m19.410s
+   sys     1m33.650s
+
+  Using a pickle:
+   real    1m39.824s
+   user    1m36.400s
+   sys     0m2.160s
+
+This is on a PIII at 551.257MHz (I don't know what it's *supposed* to
+be, 551.257 is what /proc/cpuinfo says).
+
+For comparison, SpamOracle (currently the gold standard in my mind, at
+least for speed) on the same data blazes along:
+
+   real    0m29.592s
+   user    0m28.050s
+   sys     0m1.180s
+
+Its data file, which appears to be a marshalled hash, is 448KB.
+However, it's compiled O'Caml and it uses a much simpler tokenizing
+algorithm written with a lexical analyzer (ocamllex), so we'll never be
+able to outperform it.  It's something to keep in mind, though.
+
+I don't have statistics yet for scanning unknown messages.  (Actually, I
+do, and the database blows the pickle out of the water, but it scores
+every word with 0.00, so I'm not sure that's a fair test. ;)  In any
+case, 21MB per user is probably too large, and 10MB is questionable.  
+
+On the other hand, my pickle compressed very well with gzip, shrinking
+down to 1.8MB.
+
+Neale

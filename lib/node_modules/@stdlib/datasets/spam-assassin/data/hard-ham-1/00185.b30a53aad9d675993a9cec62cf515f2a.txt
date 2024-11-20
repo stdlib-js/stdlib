@@ -1,0 +1,50 @@
+Return-Path: weather@alerts.weather.com
+Delivery-Date: Thu Aug 15 17:54:49 2002
+Return-Path: <weather@alerts.weather.com>
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by mothlight.dyndns.org (8.11.6/8.11.6) with ESMTP id g7FLsmH04392
+	for <nice@localhost>; Thu, 15 Aug 2002 17:54:48 -0400
+Received: from mail4.nyroc.rr.com [24.92.226.201]
+	by localhost with POP3 (fetchmail-5.9.0)
+	for nice@localhost (single-drop); Thu, 15 Aug 2002 17:54:48 -0400 (EDT)
+Received: from tnmx01.mgw.rr.com ([24.165.200.11]) by mail4.nycap.rr.com
+          (Post.Office MTA v3.5.3 release 223
+          ID# 0-59787U250000L250000S0V35) with ESMTP id com
+          for <cnice@nycap.rr.com>; Thu, 15 Aug 2002 17:46:07 -0400
+Received: from qm01.weather.com (qm01.weather.com [65.212.71.36])
+	by tnmx01.mgw.rr.com (8.12.2/8.12.2) with SMTP id g7FLk7wW021603
+	for <cnice@nycap.rr.com>; Thu, 15 Aug 2002 17:46:07 -0400 (EDT)
+Date: Thu, 15 Aug 2002 17:46:07 -0400 (EDT)
+Message-Id: <200208152146.g7FLk7wW021603@tnmx01.mgw.rr.com>
+Received: (qmail 16277 invoked from network); 15 Aug 2002 21:46:05 -0000
+Received: from dbsmse1.be.weather.com (HELO dbsmse1.test.weather.com) (192.168.135.200)
+  by qm01.be.weather.com with SMTP; 15 Aug 2002 21:46:05 -0000
+From: weather@alerts.weather.com
+Reply-To: severealerts@talk2.weather.com
+Subject: SEVERE THUNDERSTORM WARNING UNTIL THU AUG 15 2002 05:45 PM EDT FOR 12144
+To: cnice@nycap.rr.com
+X-DCC-wanadoo-be-Metrics: mothlight.dyndns.org 1016; IP=0 Body=1 Fuz1=1 Fuz2=1
+X-Status: 
+X-Keywords:                  
+
+----------
+
+If your day starts with a tee time, then visit our Golf Section. weather.com
+http://www.weather.com/RealMedia/ads/click_lx.ads/email.weather.com/email/1524095381/PageSpon/New_Media_twc_email_spon3_text/email_text_01_0713.html/34316434343763383364356332313130?_RM_REDIR_=www.weather.com/outlook/recreation/golf
+
+----------
+
+SEVERE THUNDERSTORM WARNING NATIONAL WEATHER SERVICE ALBANY NY 518 PM EDT THU AUG 15 2002 
+
+THE NATIONAL WEATHER SERVICE IN ALBANY HAS ISSUED A 
+
+* SEVERE THUNDERSTORM WARNING FOR...   CENTRAL RENSSELAER COUNTY IN EASTERN NEW YORK 
+
+* UNTIL 545 PM EDT 
+
+* AT 514 PM EDT...NATIONAL WEATHER SERVICE DOPPLER RADAR INDICATED A   SEVERE THUNDERSTORM NEAR WYNANTSKILL...OR ABOUT 3 MILES EAST OF   TROY...MOVING EAST AT 15 MPH. 
+
+* THE SEVERE THUNDERSTORM WILL BE NEAR...   AVERILL PARK AND RAYMERTOWN AT 525 PM EDT   GRAFTON AND BERLIN AT 545 PM EDT 
+
+THIS IS A DANGEROUS STORM. IF YOU ARE IN ITS PATH YOU SHOULD PREPARE FOR DAMAGING WINDS IN EXCESS OF 55 MPH...LARGE HAIL...AND VERY HEAVY RAIN. PEOPLE OUTSIDE SHOULD MOVE TO A SUBSTANTIAL SHELTER NOW. 
+

@@ -1,0 +1,30 @@
+
+{{alias}}( value )
+    Tests if a value is a TypeError object.
+
+    This function should *not* be considered robust. While the function should
+    always return `true` if provided a TypeError (or a descendant) object,
+    false positives may occur due to the fact that the TypeError constructor
+    inherits from Error and has no internal class of its own. Hence, TypeError
+    impersonation is possible.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is a TypeError object.
+
+    Examples
+    --------
+    > var bool = {{alias}}( new TypeError( 'beep' ) )
+    true
+    > bool = {{alias}}( {} )
+    false
+
+    See Also
+    --------
+

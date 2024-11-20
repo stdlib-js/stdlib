@@ -1,0 +1,174 @@
+From razor-users-admin@lists.sourceforge.net  Thu Aug 15 10:49:43 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8B50543C38
+	for <jm@localhost>; Thu, 15 Aug 2002 05:48:29 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 15 Aug 2002 10:48:29 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7ELdX404946 for <jm-razor@jmason.org>; Wed, 14 Aug 2002 22:39:38 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17f5dX-000771-00; Wed,
+    14 Aug 2002 14:25:03 -0700
+Received: from ducati.amazon.com ([207.171.190.152]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17f5dI-0007dp-00 for <razor-users@lists.sourceforge.net>; Wed,
+    14 Aug 2002 14:24:48 -0700
+Received: from honda.amazon.com (honda.amazon.com [10.16.42.208]) by
+    ducati.amazon.com (Postfix) with ESMTP id D5D2613C5; Wed, 14 Aug 2002
+    14:24:46 -0700 (PDT)
+Received: from ex-mail-04.ant.amazon.com by honda.amazon.com with ESMTP
+    (crosscheck: ex-mail-04.ant.amazon.com [10.16.42.226]) id g7ELOkMd015136;
+    Wed, 14 Aug 2002 14:24:46 -0700
+Content-Class: urn:content-classes:message
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: RE: [Razor-users] many vs one
+X-Mimeole: Produced By Microsoft Exchange V6.0.5762.3
+Message-Id: <1C63DA9F9722C2499FA0475B8B8625E32151EE@ex-mail-04.ant.amazon.com>
+X-MS-Has-Attach: 
+X-MS-Tnef-Correlator: 
+Thread-Topic: [Razor-users] many vs one
+Thread-Index: AcJD113LPWCFkGHITKuGwP4zuDlM1QAADfzA
+From: "Oates, Isaac" <ioates@amazon.com>
+To: "Patrick" <patrick@stealthgeeks.net>
+Cc: <razor-users@example.sourceforge.net>
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Wed, 14 Aug 2002 14:24:46 -0700
+Date: Wed, 14 Aug 2002 14:24:46 -0700
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g7ELdX404946
+
+First, 1,000 people will have seen the piece of spam that could've been avoided.  But the other 99,000 will never see that spam.  Evenly distributed, it means that an average user will only see 1% of spam.  That's not realistic, because not everyone will get the same spam, but the basic threshold can be adjusted.  At the very least, 30 people need to "vote" on a given piece of mail to make a realistic decision.  Since there's no "no" vote mechanism (except revocation--and that's after the fact), only a "yes" vote mechanism exists and so if you received 30 "yes" votes then you could safely say that you got a reasonable sample.
+
+The system could pretend to have never seen the piece of mail until after it determined that it was probably spam.  So instead of a rating going up incrementally, it would take a big leap at the beginning (from undefined to a relatively high number) and then go from there.  So after the first group of people (our samplers, we'll say) have seen the spam, no one else would ever see it.
+
+As far as unsubscribing, I'm always leery of clicking on the link (and don't do so unless I specifically remember signing up for something), but the sample population will decide for themselves whether they feel that it's spam.
+
+So ultimately, I guess I'm saying that the most effective route would be to use a constantly changing sample pool and just accept that there is some fraction of users that will have to see the spam.  In a system that depends on people deciding whether or not something is spam, is there any other way?
+
+Isaac
+
+-----Original Message-----
+From: Patrick
+Sent: Wednesday, August 14, 2002 2:13 PM
+To: Oates, Isaac
+Cc: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] many vs one
+
+On Wed, 14 Aug 2002, Oates, Isaac wrote:
+
+> I'm new to razor but have studied trust systems before.  I've been following
+> the threads about TeS and have a few thoughts.
+>
+> First, a more complex algorithm is not always better.  As soon as you start
+> accounting for edge cases in what should otherwise be a generalized
+> algorithm, general performance begins to degrade exponentially.  The
+> thing that razor should have going for it is numbers.  Say that razor
+> has 100,000 people that actively use it (i.e. click the "Spam" button on
+> their mail reader from time to time.)  If we decide that our objective
+> is to screen 99.0% of spam, it means that we can continue to show what
+> appears to be a piece of spam to 1,000 people and still meet our
+> objective.
+>
+> Why not just wait for 1,000 people to vote that a piece of mail is indeed
+> spam before ever acknowledging that it could potentially be spam?  In
+> other words, when I razor-report a message, should I be able to tell
+> that razor has ever even seen that message?
+
+Because you then have a system that is ineffective to a varying degree. A
+simplistic view would be that 999 subscribers received a piece of spam
+that could have otherwise been avoided. But the reality is likely that
+many, many more individuals would have received the piece of spam when you
+factor in report times.
+
+> By having the server pretend to never have seen it, you can avoid
+> people who just re-report spam because it was already marked as spam,
+> something that is completely useless.
+
+Wrong. razor-check will tell you if a specific piece of mail matches
+something already in the database. If you have the system pretend to have
+never seen a piece of mail, how do you propose people use the system for
+filtering?
+
+> What about revocations?  A revocation is after the fact because a
+>  substantial number of people (1,000, in this example) have already
+> decided that they do not want that message.  If it is marked as spam by
+> all those people, and then people start revoking it, what does that
+> mean?
+
+> It means that the revokers have an opinion that probably doesn't mesh
+> with the majority;
+
+No, it means that the people doing the revoking have a different opinion
+than the 1000 people who have submitted it as spam. Rather the 1000 people
+who have reported the message as spam constitute a majority or not is
+something that would have to be determined in the context of the
+individual message.
+
+> instead of messing with its rating, why not just put
+> it on the whitelist?  If I want that ZDNet mail, and most people think
+> that ZDNet mail is just plain annoying, then why can't I whitelist it,
+> instead of "arguing" with everyone about whether or not it's spam?
+
+You always have that ability.
+
+> Correct me if I'm wrong, but it's not as if all mail from ZDNet will be
+> banned in the future-just that one piece.  So if ZDNet were to change
+> its system to make it easier to opt out, or whatever, people would hopefully
+>  start unsubscribing instead of clicking the "Spam" button.
+
+It's my opinion that it's not my job to unsubscribe to any list that I
+haven't subscribed to, nor is it necessarily in my best interest given
+that some parties sending unwanted communications may utilize the
+unsubscribe request as a method of determining they are mailing a valid
+address.
+
+> The inherent problem here, of course, is that someone can pretend to be
+> 1,000 people and block anything they choose.  But say you still have a
+> lightweight trust system built in, where when they "agree" with the
+> majority (though they couldn't have known because razor hadn't
+> acknowledged anything yet) then your trust rating goes up and vice
+> versa.
+>
+> The key here is that, in order to be reliable, you need the numbers.  What
+> am I missing here?
+
+See above.
+
+
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+                               Patrick Greenwell
+         Asking the wrong questions is the leading cause of wrong answers
+\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Dice - The leading online job board
+for high-tech professionals. Search and apply for tech jobs today!
+http://seeker.dice.com/seeker.epl?rel_code1
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

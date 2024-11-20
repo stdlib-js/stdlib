@@ -1,0 +1,63 @@
+From OWNER-NOLIST-SGODAILY*JM**NETNOTEINC*-COM@SMTP1.ADMANMAIL.COM  Fri Nov 29 11:22:47 2002
+Return-Path: <OWNER-NOLIST-SGODAILY*JM**NETNOTEINC*-COM@SMTP1.ADMANMAIL.COM>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id F2CD816F18
+	for <jm@localhost>; Fri, 29 Nov 2002 11:22:45 +0000 (GMT)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 29 Nov 2002 11:22:46 +0000 (GMT)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id gAT9F9W27436 for
+    <jm@jmason.org>; Fri, 29 Nov 2002 09:15:30 GMT
+Received: from SMTP1.ADMANMAIL.COM (SMTP1.ADMANMAIL.COM [209.216.124.213]
+    (may be forged)) by webnote.net (8.9.3/8.9.3) with ESMTP id JAA21501 for
+    <JM@NETNOTEINC.COM>; Fri, 29 Nov 2002 09:16:31 GMT
+Message-Id: <200211290916.JAA21501@webnote.net>
+Received: from tiputil1 (tiputil1.corp.tiprelease.com) by
+    SMTP1.ADMANMAIL.COM (LSMTP for Windows NT v1.1b) with SMTP id
+    <5.000061CA@SMTP1.ADMANMAIL.COM>; Fri, 29 Nov 2002 2:39:58 -0600
+Date: Fri, 29 Nov 2002 02:00:12 -0600
+From: Lowest Long Distance <ldistancesgo@SendGreatOffers.com>
+To: JM@NETNOTEINC.COM
+Subject: Best Long Distance On the Net - 3.9 Cents With No Monthly Fees
+X-Info: 134085
+X-Info2: SGO
+MIME-Version: 1.0
+Content-Type: text/html; charset="us-ascii"
+
+<html>
+<head>
+<title>mailv05a.gif</title>
+<meta http-equiv="Content-Type" content="text/html;">
+</head>
+<body bgcolor="#ffffff">
+<table border="0" cellpadding="0" cellspacing="0" width="569" align="center">
+  <tr>
+   <td colspan="2"><img src="http://theadmanager.com/ads/bottomline/imgs/mailv05a_01.jpg" width="569" height="140" border="0"></td>
+  </tr>
+  <tr>
+   <td colspan="2"><img src="http://theadmanager.com/ads/bottomline/imgs/mailv05a_02.gif" width="569" height="246" border="0"></td>
+  </tr>
+  <tr>
+   <td><img src="http://theadmanager.com/ads/bottomline/imgs/mailv05a_03.gif" width="200" height="70" border="0"></td>
+   <td><a href="http://theadmanager.com/server/c.asp?ad_key=BLNLUCTCHEAD"><img src="http://theadmanager.com/ads/bottomline/imgs/mailv05a_04.gif" width="369" height="70" border="0"></a></td>
+  </tr>
+</table>
+
+<img src="http://admanmail.com/server/v.asp?ad_key=BLNLUCTCHEAD" width="1" height="1" hspace="0" vspace="0" border="0" alt="T">
+<hr size="1" noshade>
+<font face="Arial" size="1" color="#000000">
+You are receiving this mailing because you are a
+member of SendGreatOffers.com and subscribed as:JM@NETNOTEINC.COM
+To unsubscribe <a href="http://admanmail.com/subscription.asp?em=JM@NETNOTEINC.COM&l=SGO">
+<font face="arial" size="1" color="#000000">Click Here</a>
+(http://admanmail.com/subscription.asp?em=JM@NETNOTEINC.COM&l=SGO)
+or reply to this email with REMOVE in the subject line - you must
+also include the body of this message to be unsubscribed. Any correspondence about
+the products/services should be directed to
+the company in the ad.
+%EM%JM@NETNOTEINC.COM%/EM%
+<BR></font> </body> </html>
+
+

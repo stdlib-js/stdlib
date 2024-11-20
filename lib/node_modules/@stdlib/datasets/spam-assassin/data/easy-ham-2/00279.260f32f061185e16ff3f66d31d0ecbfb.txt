@@ -1,0 +1,74 @@
+From ilug-admin@linux.ie  Thu Aug  8 14:10:41 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B74D94412D
+	for <jm@localhost>; Thu,  8 Aug 2002 08:32:23 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 08 Aug 2002 13:32:23 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g78CCr201516 for
+    <jm-ilug@JMASON.ORG>; Thu, 8 Aug 2002 13:12:53 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id MAA29799 for <jm-ilug@jmason.org>;
+    Thu, 8 Aug 2002 12:18:46 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA11768; Thu, 8 Aug 2002 12:18:00 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from smtp016.mail.yahoo.com (smtp016.mail.yahoo.com
+    [216.136.174.113]) by lugh.tuatha.org (8.9.3/8.9.3) with SMTP id MAA11744
+    for <ilug@linux.ie>; Thu, 8 Aug 2002 12:17:54 +0100
+Received: from unknown (HELO mfrenchw2k) (mfrench42@62.254.163.42 with
+    login) by smtp.mail.vip.sc5.yahoo.com with SMTP; 8 Aug 2002 11:17:51 -0000
+Message-Id: <011601c23ecc$b8787df0$3864a8c0@sabeo.ie>
+From: "Matthew French" <mfrench42@yahoo.co.uk>
+To: <ilug@linux.ie>
+References: <200208081032.LAA09312@lugh.tuatha.org>
+    <20020808103749.GB1853@jinny.ie>
+Subject: Re: [ILUG] slashdot EW Dijkstra humor
+Date: Thu, 8 Aug 2002 12:14:09 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+JPL suggested:
+>  Recursion is only truely useful if you have an infinite stack. People
+> that think they have an infinite stack shouldn't be let near a compiler.
+
+Well, when studying engineering the rule of thumb was that infinity was 10
+times bigger then the most you could expect to use.
+
+Therefore I believe in infinite stack.
+
+But I do not feel I am a compiler risk either. So where does this leave me?
+
+<grin>
+
+- Matthew
+
+
+__________________________________________________
+Do You Yahoo!?
+Everything you'll ever need on one web page
+from News and Sport to Email and Music Charts
+http://uk.my.yahoo.com
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

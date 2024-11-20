@@ -1,0 +1,162 @@
+From razor-users-admin@lists.sourceforge.net  Tue Aug  6 11:07:39 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 228794411E
+	for <jm@localhost>; Tue,  6 Aug 2002 06:02:48 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:02:48 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g72MGVv13840 for <jm-razor@jmason.org>; Fri, 2 Aug 2002 23:16:31 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17akXD-0002Uv-00; Fri,
+    02 Aug 2002 15:04:35 -0700
+Received: from www.ctyme.com ([209.237.228.10] helo=darwin.ctyme.com) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17akUr-00074J-00 for
+    <razor-users@lists.sourceforge.net>; Fri, 02 Aug 2002 15:02:09 -0700
+Received: from m206-56.dsl.tsoft.com ([198.144.206.56] helo=perkel.com) by
+    darwin.ctyme.com with asmtp (TLSv1:RC4-MD5:128) (Exim 3.35 #1) id
+    17akTr-0003cG-00 for razor-users@lists.sourceforge.net; Fri,
+    02 Aug 2002 15:01:07 -0700
+Message-Id: <3D4B0146.20604@perkel.com>
+From: Marc Perkel <marc@perkel.com>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.0.0)
+    Gecko/20020530
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: razor-users@example.sourceforge.net
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Subject: [Razor-users] False Positives on EFF Messages
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Fri, 02 Aug 2002 15:01:42 -0700
+Date: Fri, 02 Aug 2002 15:01:42 -0700
+
+Hi everyone,
+
+I'm the systems admin for the Electronic Frontier Foundation and I'm using razor 
+running under spam assassin there and one my own personal server. Generally it 
+works fine with near 0 false positives - except - that almost all the false 
+positives I've seen are on messages that originated at EFF.
+
+So - I am wondering why RAZOR is catching EFF email and how is this happening. 
+Below is an example of what I'm talking about.
+
+---------------------------------
+
+Envelope-to: pcn@virtualrecordings.com
+X-Sender: robin@mail.eff.org
+X-Mailer: QUALCOMM Windows Eudora Version 5.1
+To: eff-ip@eff.org
+From: Robin Gross <robin@eff.org>
+Subject: [E-IP] HP backs off DMCA threat - CNET.com
+Sender: eff-ip-admin@eff.org
+X-BeenThere: eff-ip@eff.org
+X-Mailman-Version: 2.0.11
+List-Unsubscribe: <https://www.eff.org/mailman/listinfo/eff-ip>,
+         <mailto:eff-ip-request@eff.org?subject=unsubscribe>
+List-Id: Intelectual Property <eff-ip.eff.org>
+List-Post: <mailto:eff-ip@eff.org>
+List-Help: <mailto:eff-ip-request@eff.org?subject=help>
+List-Subscribe: <https://www.eff.org/mailman/listinfo/eff-ip>,
+         <mailto:eff-ip-request@eff.org?subject=subscribe>
+List-Archive: <https://www.eff.org/mailman/private/eff-ip/>
+X-Original-Date: Fri, 02 Aug 2002 10:15:12 -0700
+Date: Fri, 02 Aug 2002 10:15:12 -0700
+         tests=MAILTO_LINK,RAZOR_CHECK
+         version=2.40
+2002/07/29 16:25:10 jmason Exp $)
+   SPAM: -------------------- Start SpamAssassin results ----------------------
+   SPAM: This mail is probably spam.  The original message has been altered
+   SPAM: so you can recognise or block similar unwanted mail in future.
+   SPAM: See http://spamassassin.org/tag/ for more details.
+   SPAM:
+   SPAM: Content analysis details:   (7.1 hits, 5 required)
+   SPAM: MAILTO_LINK        (0.1 points)  BODY: Includes a URL link to send an 
+email
+   SPAM: RAZOR_CHECK        (7.0 points)  Listed in Razor, see 
+http://razor.sourceforge.net/
+   SPAM:
+   SPAM: -------------------- End of SpamAssassin results ---------------------
+X-Spam: [SPAM] - Spam Assassin
+
+
+
+http://news.com.com/2100-1023-947740.html
+
+Document: HP backs off DMCA threat
+
+By CNET News.com Staff
+August 1, 2002, 6:10 PM PT
+
+Hewlett-Packard Thursday abandoned legal threats it made against security 
+analysts who publicized flaws in the company's software.
+
+In a statement released late Thursday, HP said it would not use the Digital 
+Millennium Copyright Act (DMCA), a controversial copyright law, to pursue a 
+loosely-organized team of researchers who demonstrated a bug in the company's 
+Tru64 Unix operating system.
+
+The following is the company's statement:
+
+1) HP is committed to protecting our customer's security environments.
+
+2) We have verified that there is a security vulnerability with Tru64 UNIX, the 
+details of which were brought to our attention July 18. The problem has now been 
+isolated and HP has been preparing a fix, which will be available within the 
+next 48 hours.
+
+3) We won't comment on the specifics of our discussions with SnoSoft. However, 
+we take our customers' security requirements very seriously and have a strong 
+track record following industry-standard security practices.
+
+4) Where and how the DMCA should be applied is a matter of great controversy. 
+The reported letter to SnoSoft was not consistent or indicative of HP's policy. 
+We can say emphatically that HP will not use the DMCA to stifle research or 
+impede the flow of information that would benefit our customers and improve 
+their system security.
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Robin D. Gross - Cyberspace Attorney @ Law - Intellectual Property
+Director - Campaign for Audiovisual Free Expression (CAFE)
+Electronic Frontier Foundation
+454 Shotwell Street, San Francisco, CA 94110
+e: robin@eff.org    w: http://www.eff.org
+p: 415.863.5459    f: 415.436.9993
+http://www.eff.org/cafe
+http://www.eff.org/IP/Open_licenses
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

@@ -1,0 +1,29 @@
+
+{{alias}}( str )
+    Creates a MultiSlice object from a comma-separated list of string-serialized
+    MultiSlice constructor arguments.
+
+    The function returns `null` if provided an invalid string.
+
+    Parameters
+    ----------
+    str: string
+        Input string containing constructor arguments.
+
+    Returns
+    -------
+    s: MultiSlice|null
+        MultiSlice instance (or null).
+
+    Examples
+    --------
+    > var s = new {{alias}}( 'null,null,null' );
+    > s.data
+    [ null, null, null ]
+    > s = new {{alias}}( '10,Slice(0,10,1),null' );
+    > s.data
+    [ 10, <Slice>, null ]
+
+    See Also
+    --------
+

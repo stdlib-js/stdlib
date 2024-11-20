@@ -1,0 +1,40 @@
+{
+  "name": "stdlib-datasets-month-names-en",
+  "version": "",
+  "title": "Month Names (English)",
+  "description": "A list of month names in English.",
+  "resources": [
+    {
+      "name": "month-names-json",
+      "title": "Month Names (English)",
+      "description": "A list of month names.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.json"
+    },
+    {
+      "name": "month-names-txt",
+      "title": "Month Names (English)",
+      "description": "A list of month names.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.txt"
+    }
+  ],
+  "sources": [],
+  "keywords": [
+    "list",
+    "months",
+    "month",
+    "names",
+    "calendar",
+    "time",
+    "english",
+    "en"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}

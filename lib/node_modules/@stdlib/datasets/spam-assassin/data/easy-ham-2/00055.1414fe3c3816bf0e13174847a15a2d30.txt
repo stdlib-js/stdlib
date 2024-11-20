@@ -1,0 +1,154 @@
+From social-admin@linux.ie  Thu Aug 15 10:47:56 2002
+Return-Path: <social-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6923F43C36
+	for <jm@localhost>; Thu, 15 Aug 2002 05:46:41 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 15 Aug 2002 10:46:41 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7EJ2l431259 for
+    <jm+ilug-social@jmason.org>; Wed, 14 Aug 2002 20:02:47 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id UAA25002; Wed, 14 Aug 2002 20:02:24 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from linuxmafia.com (linuxmafia.COM [198.144.195.186]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id UAA24963 for <social@linux.ie>;
+    Wed, 14 Aug 2002 20:02:17 +0100
+Received: from rick by linuxmafia.com with local (Exim 3.35 #1 (Debian))
+    id 17f3PN-0005XE-00; Wed, 14 Aug 2002 12:02:17 -0700
+Date: Wed, 14 Aug 2002 12:02:13 -0700
+To: Alan Horkan <horkana@tcd.ie>
+Cc: social@linux.ie
+Message-Id: <20020814190213.GG9654@linuxmafia.com>
+References: <Pine.LNX.4.40.0208141352420.9634-100000@turing.maths.tcd.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <Pine.LNX.4.40.0208141352420.9634-100000@turing.maths.tcd.ie>
+User-Agent: Mutt/1.4i
+From: Rick Moen <rick@linuxmafia.com>
+Subject: [ILUG-Social] Re: [ILUG] Linux: the film.
+Sender: social-admin@linux.ie
+Errors-To: social-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group social events <social.linux.ie>
+X-Beenthere: social@linux.ie
+
+[Moved from the ILUG list.  Not _entirely_ offlist as requested, but
+close enough.]
+
+Quoting Alan Horkan (horkana@tcd.ie):
+
+> More likely we would try and get it when it comes out on video/dvd and
+> show it then (which AFAIK is legal as we are non profit private
+> organisation having a private showing and not charging our members for
+> the showing. any opinions on the legality of this should be sent
+> offlist).
+
+
+One bloke's opinion:
+
+
+Date: Sat, 01 Jun 2002 00:18:29 -0700
+From: "J.T.S. Moore" <jtsmoore@pacificnet.net>
+Reply-To: jtsmoore@pacificnet.net
+To: Marc MERLIN <marc_news@vasoftware.com>,
+   Daniel Isacc Walker <dwalker@cats.ucsc.edu>
+CC: svlug@svlug.org, Rick Moen <rick@linuxmafia.com>, sluglug@sluglug.ucsc.edu,
+   Peter Belew <peterbe@sonic.net>, "Eric A. Perlman" <eric@yikes.com>,
+   i3e-off@cse.ucsc.edu, slug-web@sluglug.ucsc.edu
+Subject: REVOLUTION OS is now authorized for UC Santa Cruz screening
+
+To all,
+
+I have read the series of e-mails related to the unauthorized UC Santa
+Cruz screening that was scheduled for June 1.  I sincerely appreciate
+IEEE's good faith effort to correct the mistake.
+
+Consequently, so as not to inconvenience the people planning to attend
+the screening, I want to give IEEE and SlugLUG permission to screen
+REVOLUTION OS at 1 PM on June 1.  I would ask the members of SVLUG to
+hold off on attending the screening for the simple reason that I am
+trying to get REVOLUTION OS booked into the Camera 3 in San Jose, and I
+would prefer that SVLUG's members have a chance to see a nice 35mm print
+of the film.  If my distributor is unable to book the film into a
+theater in the Bay Area, I promise that I will work with SVLUG to
+quickly set up a screening for its members.
+
+I realize there may be some members of SlugLUG who are unhappy that I
+originally requested that they not hold an unauthorized screening of
+REVOLUTION OS.  There are several reasons why I made the request, and
+none of them have anything to do with me wanting to be a jerk.  
+
+One SlugLUG member commented that it was odd that a movie about the Open
+Source movement would not be available for open viewings.  Another
+SlugLUG member remarked that my request smacks of Bill Gates's Open Letter
+to Hobbyists.  
+
+The bottomline is that I did make a film about the Open Source movement,
+but to assume that automatically means that the film is itself Open
+Sourced seems to be a little bit of a stretch.  If I made a movie about
+the history of vegetarianism that would not automatically mean I'm a
+vegetarian.  
+
+I simply thought Open Source and Free Software were compelling subjects
+worth exploring and documenting.  As a result, I came to admire many
+aspects of the Open Source movement and chose to focus the documentary
+on the movement's positive history.  However, I do not think I should be
+punished for telling the story of Free Software and Open Source by
+having my intellectual property misappropriated.   More practically, my
+feelings about Open Sourcing REVOLUTION OS are abundantly clear when you
+see the explicit copyright notice at the end of the film's credits.  
+
+I realize that making a videotape copy for personal use from a TV airing
+is considered fair use.  I believe in a healthy fair use doctrine. 
+However, there is a big difference between viewing your personal copy at
+home with a few friends and holding a publicly advertised screening on a
+university campus.  So I freely admit my objection to unauthorized
+screenings of REVOLUTION OS does echo Bill Gates's letter.  Personally, I
+believe that the creator of a piece of intellectual property should
+retain the choice to Open Source their IP.  If the Open Source movement
+is not voluntary then it is really just piracy.
+
+One of the reasons I am concern with unauthorized group screenings of
+the film, is that my distributor is planning in a few weeks to begin
+selling VHS copies of the film for educational/institutional use with a
+license permitting noncommercial large group screenings.  We hope to use
+the money from these sales to fund the authoring and replication of the
+DVD.  I want to release the DVD as soon as possible, but I cannot afford
+to take on anymore REVOLUTION OS-related debt.  Thus the importance of
+preserving the educational/institutional market.
+
+Frequently, I will read comments on Slashdot and other mailing lists
+that justify the piracy of music on the grounds that it benefits the
+artists and only hurts the greedy record labels.  Well, in the case of
+REVOLUTION OS there is no multinational media conglomerate to punish. 
+It's just me.  I made and financed the film on my own.  I have worked
+full-time for almost three years without a salary.  The only way I will
+get out of debt and have a chance to make another film is if people seek
+out legal opportunities to view REVOLUTION OS.
+
+I truly appreciate the enthusiasm of the Open Source community for
+REVOLUTION OS, and I am grateful that people do want to see it.  If you
+will just bare with me, I will figure out a way for all interested
+persons to legally view it.
+
+I hope the dust up over the unauthorized, and now authorized, screening
+at UC Santa Cruz has not inconvenienced anyone.
+
+Sincerely,
+
+J.T.S. Moore
+Director, REVOLUTION OS
+
+
+-- 
+Irish Linux Users' Group Social Events: social@linux.ie
+http://www.linux.ie/mailman/listinfo/social for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

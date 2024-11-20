@@ -1,0 +1,12 @@
+
+{{alias}}
+    The mathematical constant `π` times `2`.
+
+    Examples
+    --------
+    > {{alias}}
+    6.283185307179586
+
+    See Also
+    --------
+

@@ -1,0 +1,109 @@
+From fork-admin@xent.com  Thu Aug 22 10:46:58 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3808943C32
+	for <jm@localhost>; Thu, 22 Aug 2002 05:46:17 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 22 Aug 2002 10:46:17 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7LI7RZ04434 for <jm@jmason.org>;
+    Wed, 21 Aug 2002 19:07:28 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id EE9E1294139; Wed, 21 Aug 2002 11:05:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from jamesr.best.vwh.net (jamesr.best.vwh.net [192.220.76.165])
+    by xent.com (Postfix) with SMTP id C9BD82940AE for <fork@xent.com>;
+    Wed, 21 Aug 2002 11:04:17 -0700 (PDT)
+Received: (qmail 52208 invoked by uid 19621); 21 Aug 2002 18:05:40 -0000
+Received: from unknown (HELO avalon) ([64.125.200.18]) (envelope-sender
+    <jamesr@best.com>) by 192.220.76.165 (qmail-ldap-1.03) with SMTP for
+    <fork@xent.com>; 21 Aug 2002 18:05:40 -0000
+Subject: RE: The Curse of India's Socialism
+From: James Rogers <jamesr@best.com>
+To: fork@spamassassin.taint.org
+In-Reply-To: <200208202116.OAA07065@maltesecat>
+References: <200208202116.OAA07065@maltesecat>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Evolution/1.0.2-5mdk
+Message-Id: <1029953998.17276.32.camel@avalon>
+MIME-Version: 1.0
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 21 Aug 2002 11:19:58 -0700
+
+On Tue, 2002-08-20 at 14:16, Dave Long wrote:
+> >                                                                   In the
+> > Philippines, getting legal title can take 20 years.  In Egypt, about 80%
+> > of the population in Cairo lives in places where they are officially
+> > illegal.
+> 
+> If the situation in Egypt is anything
+> like the situation in the Philippines,
+> it's because people (due to a strange
+> desire for jobs) squat on land which
+> they don't own.*
+
+
+The Philippines suffers from a Spanish-imposed aristocratic landowner
+class, the same as in most of Latin America, with the serf-like
+relationships that go with it.  You have multiple generations of
+peasants/squatters that cultivate and live on the lands almost as a
+human parts of the property package.
+
+The problem in the Philippines is that the landowner class is fading,
+but the peasants are still operating under the old economic assumption
+even though it isn't being imposed on them in most cases.  In a number
+of areas, you have landowners that don't use their lands during bad
+years (i.e. when sugar prices fall too low or some other condition that
+makes planting unprofitable in the global economy) and in some cases
+have all but abandoned them, but when they come back to plant crops
+several years later they find the same peasants living on the fallow
+land as scratch farmers to survive and waiting for the landowner to come
+back and give them something to do.
+
+The government's solution to this was to "redistribute" fallow land to
+the peasants that lived on them, and created a number of problems in the
+process.  First of all, it meant that all the agricultural producers had
+to plant crops all the time (profitable or not) or the government would
+seize the land and give it to someone else, which is not economically
+optimal by any means.  Second when they give it to the peasants, they
+use it to become scratch farmers, which is not a particularly productive
+economic activity, and the landowners generally let them do that for
+free when the land is fallow anyway.  Third, the peasants generally
+*prefer* to work for the landowner rather than own the land themselves;
+they make more money, have more opportunities to become middle-class,
+and enjoy a better lifestyle under that arrangement.  So the result of
+all this is that the landowners either run an economically sub-optimal
+agriculture business to protect their lands, or they risk having their
+land seized without compensation and given to the peasants/squatters who
+will gladly sell it back to the plantation owner rather than becoming
+scratch farmers, another economically sub-optimal solution. The only
+real role of the government in this arrangement is to be a drag on the
+economy.
+
+And I don't know about 20 years for land titles in the Philippines.  It
+takes a little longer than in the US (though not much), and you may have
+to bribe someone to make it work well in an expedited manner, but it
+isn't that onerous in the regions I'm familiar with.
+
+Speaking as a former Philippine plantation owner. (Yes, really. On
+Negros and Cebu. Have I led a strange life or what?)
+
+-James Rogers
+ jamesr@best.com
+
+http://xent.com/mailman/listinfo/fork
+

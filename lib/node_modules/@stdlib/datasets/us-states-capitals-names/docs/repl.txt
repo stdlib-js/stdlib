@@ -1,0 +1,17 @@
+
+{{alias}}()
+    Returns an object mapping US state capitals to state names.
+
+    Returns
+    -------
+    out: Object
+        An object mapping US state capitals to state names.
+
+    Examples
+    --------
+    > var out = {{alias}}()
+    { 'Montgomery': 'Alabama', 'Juneau': 'Alaska', ... }
+
+    See Also
+    --------
+

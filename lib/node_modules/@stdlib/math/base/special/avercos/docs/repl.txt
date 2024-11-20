@@ -1,0 +1,28 @@
+
+{{alias}}( x )
+    Computes the inverse versed cosine.
+
+    The inverse versed cosine is defined as `acos(1+x)`.
+
+    If `x < -2`, `x > 0`, or `x` is `NaN`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    y: number
+        Inverse versed cosine.
+
+    Examples
+    --------
+    > var y = {{alias}}( -1.5 )
+    ~2.0944
+    > y = {{alias}}( -0.0 )
+    0.0
+
+    See Also
+    --------
+

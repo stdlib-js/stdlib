@@ -1,0 +1,47 @@
+From trimlife@offer888.net  Mon Jun 24 17:04:21 2002
+Return-Path: trimlife-3444431.13@offer888.net
+Delivery-Date: Thu May 16 11:06:36 2002
+Received: from mandark.labs.netnoteinc.com ([213.105.180.140]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g4GA6Se29726 for
+    <jm@jmason.org>; Thu, 16 May 2002 11:06:34 +0100
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    mandark.labs.netnoteinc.com (8.11.2/8.11.2) with ESMTP id g4GA6QD28906 for
+    <jm@netnoteinc.com>; Thu, 16 May 2002 11:06:27 +0100
+Received: from offer888.com ([216.177.63.132]) by webnote.net
+    (8.9.3/8.9.3) with SMTP id UAA10272 for <jm@netnoteinc.com>;
+    Wed, 15 May 2002 20:46:21 +0100
+Message-Id: <200205151946.UAA10272@webnote.net>
+Date: 15 May 2002 16:45:08 -0000
+X-Sender: offer888.net
+X-Mailid: 3444431.13
+Errors-To: report@offer888.net
+Complain-To: abuse@offer888.net
+To: yyyy@netnoteinc.com
+From: Trimlife <trimlife@offer888.net>
+Subject: Lose Inches and Look Great This Summer!
+X-Keywords: 
+Content-Type: text/html;
+
+
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      
+    <td align="center"> <a href="http://track.offer888.net/cgi-bin/trimlife?e=3444431.13"><img src="http://www.freeze.com/snow/standalones/images/Creative--003.gif" width="450" height="300" border="0"></a> 
+      <img src="http://www.trimlife.com/tracking/record.asp?entryType=0&offerCode=OFT544" width="1" height="1" alt="" border="0"></td>
+    </tr>
+  </table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><font face=Arial size=1>You received this email because you signed up at one of Offer888.com's websites or you signed up with a party that has contracted with Offer888.com. To unsubscribe from our newsletter, please visit <a href=http://opt-out.offer888.net/?e=jm@netnoteinc.com>http://opt-out.offer888.net/?e=jm@netnoteinc.com</a>.
+ </font>
+</body>
+</html>
+	

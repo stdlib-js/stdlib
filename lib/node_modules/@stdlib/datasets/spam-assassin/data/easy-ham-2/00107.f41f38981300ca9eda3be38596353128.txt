@@ -1,0 +1,150 @@
+From ilug-admin@linux.ie  Mon Jul 22 19:49:30 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4EC46440C9
+	for <jm@localhost>; Mon, 22 Jul 2002 14:49:28 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 19:49:28 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFGJ901372 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 16:16:19 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id QAA32596 for <jm-ilug@jmason.org>;
+    Mon, 22 Jul 2002 16:03:18 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA32758; Mon, 22 Jul 2002 16:02:34 +0100
+Received: from efwbc01.aib.ie (firewall-user@[194.69.198.40]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id QAA32731; Mon, 22 Jul 2002
+    16:02:25 +0100
+From: andrew.p.barnes@aib.ie
+X-Authentication-Warning: lugh.tuatha.org: Host firewall-user@[194.69.198.40]
+    claimed to be efwbc01.aib.ie
+Received: (from uucp@localhost) by efwbc01.aib.ie (8.10.2+Sun/8.10.2) id
+    g6MF2LA26979; Mon, 22 Jul 2002 16:02:21 +0100 (IST)
+Received: from relay01.isec.aib.ie(10.8.2.3) by efwbc01.aib.ie via csmap
+    (V6.0) id srcAAAIQaqS0; Mon, 22 Jul 02 16:02:21 +0100
+Received: from sims.isec.aib.ie (unverified) by relay22.aib.ie (Content
+    Technologies SMTPRS 4.2.10) with ESMTP id
+    <T5c3f7554640a08020313a@relay22.aib.ie>; Mon, 22 Jul 2002 16:00:45 +0100
+Received: from s0hlnmta ([10.4.20.5]) by sims.isec.aib.ie (Sun Internet
+    Mail Server sims.4.0.2001.07.26.11.50.p9) with ESMTP id
+    <0GZN00H24OFVD5@sims.isec.aib.ie>; Mon, 22 Jul 2002 16:02:20 +0100 (BST)
+Date: Mon, 22 Jul 2002 15:55:52 +0100
+Subject: Re: [ILUG] bind + lex + yacc...
+To: kevin lyda <kevin+dated+1027780746.c57855@linux.ie>
+Cc: irish linux users group <ilug@linux.ie>, ilug-admin@linux.ie
+Message-Id: <OF2BF779F2.410271AB-ON80256BFE.00517E37@LocalDomain>
+MIME-Version: 1.0
+X-Mailer: Lotus Notes Release 5.0.5  September 22, 2000
+Content-Type: text/plain; charset="us-ascii"
+X-Mimetrack: Serialize by Router on N0HLNMTA/IR/AIB(Release 5.0.7 |March
+    21, 2001) at 07/22/2002 03:59:23 PM
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+
+Hi Kevin,
+
+In the past when administering large domains, I've used the DNSTool -
+http://www.gormand.com.au/tools/dnstool/guide.html
+
+One custom change I made to this tool was to modify it so that it used a
+combination of OpenSSH and sudo for remote commands, file transfers, etc.
+
+This may, or may not be what you're after - I'm presuming that you're
+considering writing a tool to do the maintenance of the domains?
+
+Regards,
+  Andrew
+
+<custom_sig>
+   This email is my own opinion, no-one elses, yada yada...
+</custom_sig>
+
+--
+Andrew Barnes
+
+
+
+                                                                                                                                    
+                    kevin lyda                                                                                                      
+                    <kevin+dated+1027780746.c57855        To:     irish linux users group <ilug@linux.ie>                           
+                    @linux.ie>                            cc:                                                                       
+                    Sent by: ilug-admin@linux.ie          Subject:     [ILUG] bind + lex + yacc...                                  
+                                                                                                                                    
+                                                                                                                                    
+                    22/07/2002 15:39                                                                                                
+                                                                                                                                    
+                                                                                                                                    
+
+
+
+
+
+i recently received this email from a friend of mine in the states:
+
+    i'm trying to figure out how to maintain about 200 domains, with a
+    hundred or so computers per domain.  some internal, some external.
+    i recently learned lex and yacc and i'm thinking that's the way to go.
+    i don't really know perl and i know it's useful but i think i can
+    write c faster then perl.
+
+    is this a good idea?
+
+    ps  we're really busy.
+
+obviously as a stupid developer with no real admin experience to speak
+of, i'm not qualified to answer this question.  does anyone with real
+admin experience have any suggestions here?  the problem sounds really
+hard, and i doubt anyone has had to deal with this level of complexity
+so there probably aren't any existing tools written.
+
+anyone else have any opinions or experience i could pass on?
+
+kevin
+
+--
+kevin@suberic.net     that a believer is happier than a skeptic is no more
+to
+fork()'ed on 37058400    the point than the fact that a drunken man is
+happier
+meatspace place: home       than a sober one. the happiness of credulity is
+a
+http://ie.suberic.net/~kevin   cheap & dangerous quality -- g.b. shaw
+
+--
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+andrew.p.barnes
+AIB
+Internet Technical Support
+Bankcentre
+01-6411600
+
+This document is strictly confidential and is intended for use by the
+addressee unless otherwise indicated.
+
+Allied Irish Banks
+
+This Disclaimer has been generated by CMDis
+
+
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

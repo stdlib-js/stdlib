@@ -1,0 +1,110 @@
+From ilug-admin@linux.ie  Mon Jul 22 18:13:05 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C9F69440DC
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:28 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:28 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFGM901412 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 16:16:22 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id QAA32611 for <jm-ilug@jmason.org>;
+    Mon, 22 Jul 2002 16:04:27 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA32422; Mon, 22 Jul 2002 15:56:06 +0100
+Received: from milexc01.maxtor.com ([134.6.205.206]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA32177 for <ilug@linux.ie>; Mon,
+    22 Jul 2002 15:55:44 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [134.6.205.206] claimed to
+    be milexc01.maxtor.com
+Received: by milexc01.maxtor.com with Internet Mail Service (5.5.2653.19)
+    id <PC8XVJH9>; Mon, 22 Jul 2002 15:55:44 +0100
+Message-Id: <0D443C91DCE9CD40B1C795BA222A729E01885483@milexc01.maxtor.com>
+From: "Wynne, Conor" <conor_wynne@maxtor.com>
+To: "'Irish Linux Users Group'" <ilug@linux.ie>
+Subject: RE: [ILUG] hard- vs. soft-links [was: How to copy some files ]
+Date: Mon, 22 Jul 2002 15:55:42 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    PAA32177
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Use the GUI and don't delete files, use the other option, whats it called
+again, the dustbin or something ;-)
+
+Conor who only knows about symbolic links ;-))
+
+I'm pretty sure that I have a softlink from
+/mnt/public/mnt/public/downloads/Linux/wasteCPU/setiathome to
+/home/cwynne/seti
+
+The /mnt/pub....../seti.. directory resides on an external raidvolume and
+/home/../seti is on the internal IDE2 drive. 
+So I dont have to cd around the gaf. I suppose that would count as across
+different devices. 
+
+If you're wondering [probably not] why /mnt/public is there twice, its
+because I restored from tapebackup and I didn't know that it keeps the
+directory structure. I know now ;-)
+
+Actually, how can I fix that quickly and easily? I thought about firstly
+mv'ing the structure to /tmp. Then copying it back again but I'm sure some
+wee genius knows a quickie solution. Mind you I never even bothered trying a
+its not a priority now that its all linked anyway. 
+
+CW
+
+--------------------------------
+ hum.  interesting variation on the classic technique of
+ redefining `rm' to `mv' the files into `./.trash/' (or
+ with a prefix of `#' or a suffix of `~'; the variations
+ are endless).  these classic techniques only provide a
+ means to roll back accidental `rm's, so there is still
+ considerable scope for data lost as there are other ways
+ of deleting files --- which is not a problem for this
+ hard link idea.
+
+ but, like the classic techniques, there is no rolling
+ back of accidental overwrites.
+
+ ( rolling back overwrites reminds me of the "snapshot"
+  facility on NetWork Appliance fileservers.  and of the
+  various "versioning" filesystems which appeared --- and
+  then vanished? --- over the years.... )
+
+ one severe(?) gotcha is some files shouldn't have any
+ hard links.  both RCS *,v (and hence CVS) and SCCS s.*
+ files are like this --- the RCS(/CVS?)/SCCS toolsets
+ complain if there are hard links.
+
+cheers,
+	-blf-
+--
+ Innovative, very experienced, Unix and      | Brian Foster    Dublin,
+Ireland
+ Chorus (embedded RTOS) kernel internals     | e-mail: blf@utvinternet.ie
+ expert looking for a new position ...       | mobile: (+353 or 0)86 854
+9268
+  For a résumé, contact me, or see my website  http://www.blf.utvinternet.ie
+
+    Stop E$$o (ExxonMobile):  «Whatever you do, don't buy Esso --- they
+     don't give a damn about global warming.»    http://www.stopesso.com
+     Supported by Greenpeace, Friends of the Earth, and numerous others...
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

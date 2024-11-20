@@ -1,0 +1,41 @@
+
+{{alias}}( x )
+    Returns a string giving the literal bit representation of a single-precision
+    floating-point number.
+
+    Parameters
+    ----------
+    x: float
+        Single-precision floating-point number.
+
+    Returns
+    -------
+    str: string
+        Bit representation.
+
+    Examples
+    --------
+    > var str = {{alias}}( {{alias:@stdlib/number/float64/base/to-float32}}( 4.0 ) )
+    '01000000100000000000000000000000'
+    > str = {{alias}}( {{alias:@stdlib/number/float64/base/to-float32}}( {{alias:@stdlib/constants/float64/pi}} ) )
+    '01000000010010010000111111011011'
+    > str = {{alias}}( {{alias:@stdlib/number/float64/base/to-float32}}( -1.0e38 ) )
+    '11111110100101100111011010011001'
+    > str = {{alias}}( {{alias:@stdlib/number/float64/base/to-float32}}( -3.14e-39 ) )
+    '10000000001000100011000100001011'
+    > str = {{alias}}( {{alias:@stdlib/number/float64/base/to-float32}}( 1.4e-45 ) )
+    '00000000000000000000000000000001'
+    > str = {{alias}}( 0.0 )
+    '00000000000000000000000000000000'
+    > str = {{alias}}( -0.0 )
+    '10000000000000000000000000000000'
+    > str = {{alias}}( NaN )
+    '01111111110000000000000000000000'
+    > str = {{alias}}( {{alias:@stdlib/constants/float32/pinf}} )
+    '01111111100000000000000000000000'
+    > str = {{alias}}( {{alias:@stdlib/constants/float32/ninf}} )
+    '11111111100000000000000000000000'
+
+    See Also
+    --------
+

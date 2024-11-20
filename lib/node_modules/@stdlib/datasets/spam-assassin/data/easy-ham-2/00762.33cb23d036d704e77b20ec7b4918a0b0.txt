@@ -1,0 +1,72 @@
+From fork-admin@xent.com  Tue Aug  6 11:58:54 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D8D5C441F8
+	for <jm@localhost>; Tue,  6 Aug 2002 06:49:13 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:49:13 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g745Xsv17573 for <jm@jmason.org>;
+    Sun, 4 Aug 2002 06:33:55 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 5E055294104; Sat,  3 Aug 2002 22:31:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from barrera.org (cpe-65-172-233-109.sanbrunocable.com
+    [65.172.233.109]) by xent.com (Postfix) with ESMTP id 192AA294100 for
+    <fork@xent.com>; Sat,  3 Aug 2002 22:30:51 -0700 (PDT)
+Received: from  (127.0.0.1 [127.0.0.1]) by MailEnable Inbound Mail Agent
+    with ESMTP; Sun, 04 Aug 2002 05:31:23 -08:00
+Message-Id: <3D4CBC2B.1070208@barrera.org>
+From: "Joseph S. Barrera III" <joe@barrera.org>
+Organization: Rose Garden Funeral of Sores
+User-Agent: Mutt/1.5.0 [-1214711651]
+X-Accept-Language: en-us, en, ja
+MIME-Version: 1.0
+To: "Mr. FoRK" <fork_list@hotmail.com>
+Cc: fork@spamassassin.taint.org
+Subject: Re: Using hosts file to rid yourself of popup ads
+References: <DAV31pQq5pneeFUtLch00019e7b@hotmail.com>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sat, 03 Aug 2002 22:31:23 -0700
+
+Mr. FoRK wrote:
+> Don't know if everybody knows this trick...
+
+Yes. They do.
+
+> > Because we're inherently lazy, this works for windows only, 
+
+Huh? Oh, that's right, Unix picked up the idea of /etc/hosts
+from Windows. I keep forgetting.
+
+ > > don't use it on a mac!
+
+Especially macs running unix (see above).
+
+> > We didn't write this file and do not provide
+ > > support for it's use.
+
+We don't even know how to use the fucking English language.
+-- 
+What security level comes after "Totally Apeshit"?
+     -- http://www.mnftiu.cc/mnftiu.cc/war12.html
+
+
+http://xent.com/mailman/listinfo/fork
+
+

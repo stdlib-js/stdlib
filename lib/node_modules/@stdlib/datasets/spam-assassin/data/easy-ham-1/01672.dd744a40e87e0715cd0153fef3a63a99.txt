@@ -1,0 +1,46 @@
+Return-Path: whisper@oz.net
+Delivery-Date: Fri Sep  6 20:53:36 2002
+From: whisper@oz.net (David LeBlanc)
+Date: Fri, 6 Sep 2002 12:53:36 -0700
+Subject: [Spambayes] Deployment
+In-Reply-To: <LNBBLJKPBEHFEDALKOLCIEJABCAB.tim.one@comcast.net>
+Message-ID: <GCEDKONBLEFPPADDJCOECEHJENAA.whisper@oz.net>
+
+You missed the part that said that spam is kept in the "eThunk" and was
+viewable by a simple viewer for final disposition?
+
+Of course, with Outbloat, you could fire up PythonWin and stuff the spam
+into the Junk Email folder... but then you loose the ability to retrain on
+the user classified ham/spam.
+
+David LeBlanc
+Seattle, WA USA
+
+> -----Original Message-----
+> From: spambayes-bounces+whisper=oz.net@python.org
+> [mailto:spambayes-bounces+whisper=oz.net@python.org]On Behalf Of Tim
+> Peters
+> Sent: Friday, September 06, 2002 12:24
+> To: spambayes@python.org
+> Subject: RE: [Spambayes] Deployment
+>
+>
+> [Guido]
+> > ...
+> > - A program that acts both as a pop client and a pop server.  You
+> >   configure it by telling it about your real pop servers.  You then
+> >   point your mail reader to the pop server at localhost.  When it
+> >   receives a connection, it connects to the remote pop servers, reads
+> >   your mail, and gives you only the non-spam.
+>
+> FYI, I'll never trust such a scheme:  I have no tolerance for false
+> positives, and indeed do nothing to try to block spam on any of my email
+> accounts now for that reason.  Deliver all suspected spam to a Spam folder
+> instead and I'd love it.
+>
+>
+> _______________________________________________
+> Spambayes mailing list
+> Spambayes@python.org
+> http://mail.python.org/mailman-21/listinfo/spambayes
+

@@ -1,0 +1,56 @@
+From fork-admin@xent.com  Wed Sep 18 11:52:21 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 76DA416F03
+	for <jm@localhost>; Wed, 18 Sep 2002 11:52:21 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 18 Sep 2002 11:52:21 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8I2geC08306 for <jm@jmason.org>;
+    Wed, 18 Sep 2002 03:42:40 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id A34FE2940BF; Tue, 17 Sep 2002 19:39:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from isolnetsux.techmonkeys.net (isolnetsux.techmonkeys.net
+    [64.243.46.20]) by xent.com (Postfix) with SMTP id 26E6B29409F for
+    <fork@xent.com>; Tue, 17 Sep 2002 19:38:32 -0700 (PDT)
+Received: (qmail 11587 invoked by uid 501); 18 Sep 2002 02:41:40 -0000
+Received: from localhost (sendmail-bs@127.0.0.1) by localhost with SMTP;
+    18 Sep 2002 02:41:40 -0000
+From: CDale <cdale@techmonkeys.net>
+To: fork@spamassassin.taint.org
+Subject: boycotting yahoo
+Message-Id: <Pine.LNX.4.44.0209172137100.5112-100000@isolnetsux.techmonkeys.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 17 Sep 2002 21:41:40 -0500 (CDT)
+
+Because of this:
+http://hrw.org/press/2002/08/yahoo080902.htm
+there are several of us who are in the BDSM lifestyle who are trying to 
+encourage our local groups to find alternatives to yahoo groups as a way 
+of communicating with each other.  I've set up a place to have maillists 
+on my server for any group who wants to use it, but I was wondering if 
+anyone knows of an alternative that allows all the bells and whistles that 
+yahoo has, such as reminders, file storage, calendars, etc.  Anyone?
+TIA,
+Cindy
+
+-- 
+"I don't take no stocks in mathematics, anyway" --Huckleberry Finn
+
+

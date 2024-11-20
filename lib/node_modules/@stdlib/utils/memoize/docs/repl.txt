@@ -1,0 +1,47 @@
+
+{{alias}}( fcn[, hashFunction] )
+    Returns a memoized function.
+
+    The function does not set the `length` property of the returned function.
+    Accordingly, the returned function `length` is always zero.
+
+    The evaluation context is always `null`.
+
+    The function serializes provided arguments as a string and stores results
+    using the string as an identifier. To use a custom hash function, provide a
+    hash function argument.
+
+    Parameters
+    ----------
+    fcn: Function
+        Function to memoize.
+
+    hashFunction: Function (optional)
+        Function to map a set of arguments to a single value identifying that
+        set.
+
+    Returns
+    -------
+    out: Function
+        Memoized function.
+
+    Examples
+    --------
+    > function factorial( n ) {
+    ...     var prod;
+    ...     var i;
+    ...     prod = 1;
+    ...     for ( i = n; i > 1; i-- ) {
+    ...         prod *= i;
+    ...     }
+    ...     return prod;
+    ... };
+    > var memoized = {{alias}}( factorial );
+    > var v = memoized( 5 )
+    120
+    > v = memoized( 5 )
+    120
+
+    See Also
+    --------
+

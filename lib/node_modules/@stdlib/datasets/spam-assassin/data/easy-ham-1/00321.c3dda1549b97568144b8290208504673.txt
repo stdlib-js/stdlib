@@ -1,0 +1,169 @@
+From fork-admin@xent.com  Mon Aug 26 21:57:51 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E472D43F9B
+	for <jm@localhost>; Mon, 26 Aug 2002 16:57:50 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 21:57:50 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7QKwdZ09291 for <jm@jmason.org>;
+    Mon, 26 Aug 2002 21:58:39 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 4863F2941CA; Mon, 26 Aug 2002 13:38:41 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from plato.einstein (unknown [65.170.226.173]) by xent.com
+    (Postfix) with ESMTP id E80D0294099 for <fork@xent.com>; Wed,
+    21 Aug 2002 01:08:33 -0700 (PDT)
+Received: from RSHAVELL ([209.151.242.53]) by plato.einstein with
+    Microsoft SMTPSVC(5.0.2195.3779); Wed, 21 Aug 2002 01:10:12 -0700
+From: "Rob Shavell" <rob@mobiusvc.com>
+To: "'Mike Masnick'" <mike@techdirt.com>
+Cc: <fork@spamassassin.taint.org>
+Subject: RE: sprint delivers the next big thing??
+Message-Id: <000301c248ea$43c44ac0$0601a8c0@einstein>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook CWS, Build 9.0.2416 (9.0.2910.0)
+In-Reply-To: <5.1.1.6.0.20020820234041.03213bd0@techdirt.com>
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4522.1200
+Importance: Normal
+X-Originalarrivaltime: 21 Aug 2002 08:10:12.0401 (UTC) FILETIME=[2C62BA10:01C248EA]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 21 Aug 2002 01:10:50 -0700
+
+right Mike,
+
+i will agree to disagree but i take your comments to heart.  my opinion is
+only that this is one of the last frontiers of communications ('instant
+show') that we cross easily (though you are right as rain on pricing).  i am
+mildly amused at the level of skepticism and innatention it is getting.
+
+my premise is that the world will change in dramatic and unexpected ways
+once there are a billion 'eye's' which can instantly share what they see
+amongst each other.  that doesn't mean that people will stop talking on
+their phones, or that people will spend more time w/images than voice.  just
+that it is fundamental.  from news to crime to privacy to dating to family
+life to bloopers and practical jokes, i believe there will be an explosion
+of images unleashed specifically by cell phone integrated lenses because of
+their utter ubiquity that dwarfs all pictures taken in the history of
+photography by orders of magnitude and in short order. and yes, changes
+things 'big time'.
+
+rgds,
+rob
+
+
+-----Original Message-----
+From: Mike Masnick [mailto:mike@techdirt.com]
+Sent: Tuesday, August 20, 2002 11:58 PM
+To: Rob Shavell
+Cc: fork@spamassassin.taint.org
+Subject: RE: sprint delivers the next big thing??
+
+
+Not to keep harping on this, but...
+
+At 11:36 PM 8/20/02 -0700, Rob Shavell wrote:
+
+>content: who cares about content?  that no one can think of 'useful'
+content
+>is always the business persons mistake. the content is the users
+>communications.  its anything and everything.  avg person could easily send
+>half dozen pics to a dozen people a day.  mainly humorous i'd guess. who
+>cares if content is trivial in nature. picture speaks a thousand words.
+
+This does nothing to answer my question.  I *do* care about content.  Hell,
+if I could be convinced that people would send stupid pics back and forth
+all day, I'd have a different opinion of this.  I just am not convinced
+that they will (stupid or not).
+
+While a picture may be worth a thousand words (and this is the same
+argument the guy who works for me made), how many people do you know who
+communicate by pictures?  Sure, it sounds nice to say that a picture is
+such an efficient messaging mechanism, but how often do you actually find
+yourself drawing someone a picture to explain something?
+
+I don't buy it.
+
+For most messages, text works fine and is the most efficient
+mechanism.  For some messages, pictures do the job, but I would say not
+nearly as often as words.  Why do you think Pictionary and Charades and
+such are games?  Because images are usually not the most efficient way to
+get a message across.
+
+>misc ramblings: i suppose you skeptical forkers would have said the same
+>thing about '1 hour photo' processing.  trivial, who needs it, i get better
+>resultion elswhere.  and yet, it had great decentralizing impact - the
+plant
+>had to be downsized and pushed to the retail operation - the digital
+camera,
+>and finally the integrated digital camera phone brings this cycle of
+>decentralization in photography to a logical conclusion (which will put the
+>photo giants to bed) and change the world in a meaningful way.  also, SMS
+>didn't take off because its easy, it took off because it costs less.  its
+>greatly ironic the carriers often trumpet the 'profitabilty' of their SMS
+>traffic over others because of its ratio of cost to bandwidth.  in reality,
+>SMS cannibilizes the voice rev's they bought their networks to handle.
+
+Again, this is the same argument my colleague made (along with "you just
+don't understand kids today, and they'll run with this").  I wasn't saying
+that MMS wouldn't take off because it wasn't high quality or that it wasn't
+easy.  I was saying that I couldn't see why people would use it in a way
+that "changed the face of communications".
+
+I'm looking for the compelling reason (even if it's a stupid one) why
+people would want to do this.  Sure, if they integrate cameras into the
+phone, and the quality improves (even only marginally) I can certainly see
+people taking pictures with their cameras and occasionally sending them to
+other people.  But, mostly, I don't see what the benefit is to this over
+sending them to someone's email address, or putting together an online (or
+offline) photoalbum.
+
+I don't think 1 hour photos are trivial.  People want to see their own pics
+right away, and the quality is plenty good enough for snapshots.  That's
+one of the main reasons why digital cameras are catching on.  The instant
+view part.  I'm guessing your argument is that people not only want
+"instant view", but also "instant show".  Which is what this service
+offers.  I'm not convinced that most people want "instant show".  I think
+people like to package their pictures and show them.  That's why people put
+together fancy albums, and sit there and force you to go through them while
+they explain every picture.  Sure, occasionally "instant show" is nice, but
+it's just "nice" on occasion.  I still can't see how it becomes a integral
+messaging method.
+
+What's the specific benefit of taking a picture and immediately sending it
+from one phone to another?  There has to be *some* benefit, even if it's
+silly if people are going to flock to it.
+
+I'm searching... no one has given me a straight answer yet.
+
+The *only* really intriguing idea I've heard about things like MMS lately
+are Dan Gillmor's assertion that one day in the near future some news event
+will happen, and a bunch of people will snap pictures with their mobile
+phones, from all different angles, and those photos tell the real story of
+what happened - before the press even gets there.
+
+Willing to be proven wrong,
+Mike
+
+PS If the wireless carriers continue to price these services as stupidly as
+they currently are, then MMS is *never* going to catch on.
+
+http://xent.com/mailman/listinfo/fork
+

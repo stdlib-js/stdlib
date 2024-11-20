@@ -1,0 +1,28 @@
+
+workspaces( [options] )
+    Returns a list of workspace names.
+
+    Parameters
+    ----------
+    options: Object (optional)
+    	Options.
+
+    options.include: RegExp (optional)
+    	Workspace name inclusion filter.
+
+    options.exclude: RegExp (optional)
+    	Workspace name exclusion filter.
+
+    options.details: boolean (optional)
+    	Boolean indicating whether to include additional workspace details, such
+    	as variable names, types, contents, etc. Default: false.
+
+    Examples
+    --------
+    > workspaces()
+    > workspaces( { 'details': true } )
+
+    See Also
+    --------
+    vars
+

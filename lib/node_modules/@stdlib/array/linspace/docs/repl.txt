@@ -1,0 +1,130 @@
+
+{{alias}}( start, stop, length[, options] )
+    Generates a linearly spaced array over a specified interval.
+
+    If the specified length is zero, the function returns an empty array.
+
+    If the specified length is one, the function returns an array containing
+    `stop`, but not `start`, when `endpoint` is true; otherwise, the function
+    returns an array containing `start`, but not `stop`.
+
+    For real-valued `start` and `stop`, if `start` is less than `stop`, the
+    output array will contain ascending values, and, if `start` is greater than
+    `stop`, the output array will contain descending values.
+
+    When the output array length is greater than one and `endpoint` is true, the
+    output array is guaranteed to include the `start` and `stop` values. Beware,
+    however, that values between `start` and `stop` are subject to floating-
+    point rounding errors.
+
+    If both `start` and `stop` are real-valued, the output array data type may
+    be any floating-point data type or 'generic'. However, if either `start` or
+    `stop` are complex numbers, the output array type must be a complex
+    floating-point data type or 'generic'.
+
+    When writing to a complex floating-point output array, real-valued `start`
+    and `stop` values are treated as complex numbers having a real component
+    equaling the provided value and having an imaginary component equaling zero.
+
+    When generating linearly spaced complex floating-point numbers, the real and
+    imaginary components are generated separately.
+
+    Parameters
+    ----------
+    start: number|ComplexLike
+        Start of interval.
+
+    stop: number|ComplexLike
+        End of interval.
+
+    length: integer
+        Length of output array.
+
+    options: Object (optional)
+        Options.
+
+    options.dtype: string (optional)
+        Output array data type. Must be a floating-point data type or 'generic'.
+         If both `start` and `stop` are the same type (either 'float64',
+         'complex64', or 'complex128'), the default output array data type is
+         the same type as the input values (either 'float64', 'complex64', or
+         'complex128', respectively). Otherwise, the default output array data
+         type is 'complex128'.
+
+    options.endpoint: boolean (optional)
+        Boolean indicating whether to include the `stop` value in the output
+        array. If false, the function generates `length + 1` linearly spaced
+        values over the interval `[start, stop]` and only writes `length` values
+        to the output array, thus excluding `stop` from the output array.
+        Accordingly, for a fixed `length`, the spacing between adjacent values
+        in the output array changes depending on the value of `endpoint`.
+        Default: true.
+
+    Returns
+    -------
+    arr: Array
+        Linearly spaced array.
+
+    Examples
+    --------
+    > var arr = {{alias}}( 0.0, 100.0, 6 )
+    <Float64Array>[ 0.0, 20.0, 40.0, 60.0, 80.0, 100.0 ]
+    > arr = {{alias}}( 0.0, 100.0, 5, { 'endpoint': false } )
+    <Float64Array>[ 0.0, 20.0, 40.0, 60.0, 80.0 ]
+    > arr = {{alias}}( 0.0, 100.0, 6, { 'dtype': 'generic' } )
+    [ 0.0, 20.0, 40.0, 60.0, 80.0, 100.0 ]
+
+
+{{alias}}.assign( start, stop, out[, options] )
+    Generates a linearly spaced sequence over a specified interval and assigns
+    the results to a provided output array.
+
+    If the provided output array is empty, the function returns the provided
+    output array unchanged.
+
+    If the provided output array contains a single element, the function writes
+    the `stop` value, but not `start`, when `endpoint` is true; otherwise, the
+    function writes the `start` value, but not `stop`.
+
+    Parameters
+    ----------
+    start: number|ComplexLike
+        Start of interval.
+
+    stop: number|ComplexLike
+        End of interval.
+
+    out: ArrayLikeObject
+        Output array.
+
+    options: Object (optional)
+        Options.
+
+    options.endpoint: boolean (optional)
+        Boolean indicating whether to include the `stop` value in the output
+        array. If false, the function generates `N+1` linearly spaced values
+        (where `N` is the length of the provided output array) over the interval
+        `[start, stop]` and only writes `N` values to the output array, thus
+        excluding `stop` from the output array. Accordingly, for a fixed `N`,
+        the spacing between adjacent values in the output array changes
+        depending on the value of `endpoint`. Default: true.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    > var arr = [ 0, 0, 0, 0, 0, 0 ];
+    > var out = {{alias}}.assign( 0, 100, arr )
+    [ 0, 20, 40, 60, 80, 100 ]
+    > var bool = ( arr === out )
+    true
+    > arr = [ 0, 0, 0, 0, 0 ];
+    > out = {{alias}}.assign( 0, 100, arr, { 'endpoint': false } )
+    [ 0, 20, 40, 60, 80 ]
+
+    See Also
+    --------
+

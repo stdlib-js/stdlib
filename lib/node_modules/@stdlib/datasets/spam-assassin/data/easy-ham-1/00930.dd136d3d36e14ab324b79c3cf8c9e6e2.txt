@@ -1,0 +1,51 @@
+From tony@svanstrom.com  Fri Aug 23 11:05:51 2002
+Return-Path: <tony@svanstrom.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0E44B4416B
+	for <jm@localhost>; Fri, 23 Aug 2002 06:04:16 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 23 Aug 2002 11:04:16 +0100 (IST)
+Received: from moon.campus.luth.se (root@moon.campus.luth.se
+    [130.240.202.158]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7MLQGZ25558 for <jm@jmason.org>; Thu, 22 Aug 2002 22:26:16 +0100
+Received: from moon.campus.luth.se (tony@moon.campus.luth.se
+    [130.240.202.158]) by moon.campus.luth.se (8.12.3/8.12.3) with ESMTP id
+    g7MLQHMg068923; Thu, 22 Aug 2002 23:26:17 +0200 (CEST) (envelope-from
+    tony@svanstrom.com)
+Date: Thu, 22 Aug 2002 23:26:17 +0200 (CEST)
+From: "Tony L. Svanstrom" <tony@svanstrom.com>
+X-X-Sender: tony@moon.campus.luth.se
+To: Justin Mason <yyyy@spamassassin.taint.org>
+Cc: patrick@vonderhagen.de,
+	<spamassassin-devel@lists.sourceforge.net>
+Subject: Re: [SAdev] Integrating SA with Mail::CheckUser ?
+In-Reply-To: <32932.194.125.172.55.1030050447.squirrel@spamassassin.taint.org>
+Message-Id: <20020822232458.L68187-100000@moon.campus.luth.se>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+
+On Thu, 22 Aug 2002 the voices made Justin Mason write:
+
+> > The perl-module Mail::CheckUser implements a smtp-callback and I hope
+> > it might be integrated rather easily.
+> > Has this extension been discussed before (and perhaps rejected)?
+> > Or perhaps someone is already planning to implement it?
+> > Or would you be interested to integrate a smtp-callback-patch in
+> > SpamAssassin if contributed by my department? We would not be to happy
+> > about such a patch which we had to manage and integrate with SA in the
+> > future, but I believe a one-time contribution would be no problem.
+
+ How'd this deal with you running SA on an account where all the mail from some
+domain on another server ends up?
+
+
+	/Tony
+-- 
+# Per scientiam ad libertatem! // Through knowledge towards freedom! #
+# Genom kunskap mot frihet! =*= (c) 1999-2002 tony@svanstrom.com =*= #
+
+     perl -e'print$_{$_} for sort%_=`lynx -dump svanstrom.com/t`'
+
+

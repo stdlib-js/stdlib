@@ -1,0 +1,85 @@
+From razor-users-admin@lists.sourceforge.net  Wed Aug 14 10:47:29 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D161643C4C
+	for <jm@localhost>; Wed, 14 Aug 2002 05:45:50 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 14 Aug 2002 10:45:50 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7DIuP414235 for <jm-razor@jmason.org>; Tue, 13 Aug 2002 19:56:25 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17egh9-0006Bw-00; Tue,
+    13 Aug 2002 11:47:07 -0700
+Received: from eclectic.kluge.net ([66.92.69.221]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17eggV-0004Ka-00 for <razor-users@lists.sourceforge.net>; Tue,
+    13 Aug 2002 11:46:27 -0700
+Received: (from felicity@localhost) by eclectic.kluge.net (8.11.6/8.11.6)
+    id g7DIkLn13672; Tue, 13 Aug 2002 14:46:21 -0400
+From: Theo Van Dinter <felicity@kluge.net>
+To: Justin Shore <listuser@neo.pittstate.edu>
+Cc: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] Stripping the SpamAssassin report
+Message-Id: <20020813184621.GH31657@kluge.net>
+References: <p04310114b97eea718672@[198.248.208.11]>
+    <20020813175229.GF31657@kluge.net>
+    <p04310116b97ef9ba1dd6@[198.248.208.11]>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <p04310116b97ef9ba1dd6@[198.248.208.11]>
+User-Agent: Mutt/1.4i
+X-GPG-Keyserver: http://wwwkeys.pgp.net
+X-GPG-Keynumber: 0xE580B363
+X-GPG-Fingerprint: 75B1 F6D0 8368 38E7 A4C5  F6C2 02E3 9051 E580 B363
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Tue, 13 Aug 2002 14:46:21 -0400
+Date: Tue, 13 Aug 2002 14:46:21 -0400
+
+On Tue, Aug 13, 2002 at 01:01:42PM -0500, Justin Shore wrote:
+> Ah...  You learn something new every day!  This would make things 
+> quite a bit easier.  I assume it can handle a mailbox full of mail to 
+> report rather than a single piece of spam from STDIN.  I'll check the 
+> docs on that though.
+
+Unfortunately not, it's a one at a time thing.  If it would help
+you, I have a script that I use which handles a mbox file at a time,
+strips the SA stuff, reports to razor, and can then do things like
+open relay checks, reports to spamcop, etc.  It's available via:
+http://www.kluge.net/~felicity/random/handlespam.txt
+
+
+:)
+
+-- 
+Randomly Generated Tagline:
+"But you have to allow a little for the desire to evangelize when you
+ think you have good news."         - Larry Wall
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Dice - The leading online job board
+for high-tech professionals. Search and apply for tech jobs today!
+http://seeker.dice.com/seeker.epl?rel_code=31
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

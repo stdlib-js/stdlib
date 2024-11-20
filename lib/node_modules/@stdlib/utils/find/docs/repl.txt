@@ -1,0 +1,52 @@
+
+{{alias}}( arr, [options,] clbk )
+    Finds elements in an array-like object that satisfy a test condition.
+
+    Parameters
+    ----------
+    arr: Array|TypedArray|string
+        Object from which elements will be tested.
+
+    options: Object (optional)
+        Options.
+
+    options.k: integer (optional)
+        Limits the number of returned elements. The sign determines the
+        direction in which to search. If set to a negative integer, the function
+        searches from last element to first element. Default: arr.length.
+
+    options.returns: string (optional)
+        If `values`, values are returned; if `indices`, indices are returned; if
+        `*`, both indices and values are returned. Default: 'indices'.
+
+    clbk: Function
+        Function invoked for each array element. If the return value is truthy,
+        the value is considered to have satisfied the test condition.
+
+    Returns
+    -------
+    out: Array
+        Array of indices, element values, or arrays of index-value pairs.
+
+    Examples
+    --------
+    > var data = [ 30, 20, 50, 60, 10 ];
+    > function condition( val ) { return val > 20; };
+    > var vals = {{alias}}( data, condition )
+    [ 0, 2, 3 ]
+
+    // Limit number of results:
+    > data = [ 30, 20, 50, 60, 10 ];
+    > var opts = { 'k': 2, 'returns': 'values' };
+    > vals = {{alias}}( data, opts, condition )
+    [ 30, 50 ]
+
+    // Return both indices and values as index-value pairs:
+    > data = [ 30, 20, 50, 60, 10 ];
+    > opts = { 'k': -2, 'returns': '*' };
+    > vals = {{alias}}( data, opts, condition )
+    [ [ 3, 60 ], [ 2, 50 ] ]
+
+    See Also
+    --------
+

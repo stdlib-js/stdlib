@@ -1,0 +1,57 @@
+From ilug-admin@linux.ie  Wed Aug 21 16:46:20 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0B7EB43C36
+	for <jm@localhost>; Wed, 21 Aug 2002 11:46:10 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 21 Aug 2002 16:46:10 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7LFllZ32022 for
+    <jm-ilug@jmason.org>; Wed, 21 Aug 2002 16:47:47 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA07539; Wed, 21 Aug 2002 16:46:21 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail02.svc.cra.dublin.eircom.net
+    (mail02.svc.cra.dublin.eircom.net [159.134.118.18]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id QAA07504 for <ilug@linux.ie>; Wed,
+    21 Aug 2002 16:46:13 +0100
+Received: (qmail 47513 messnum 74105 invoked from
+    network[213.190.156.48/unknown]); 21 Aug 2002 15:45:38 -0000
+Received: from unknown (HELO XENON16) (213.190.156.48) by
+    mail02.svc.cra.dublin.eircom.net (qp 47513) with SMTP; 21 Aug 2002
+    15:45:38 -0000
+Message-Id: <00a901c2492a$0d7daf70$e600000a@XENON16>
+From: "wintermute" <cout@eircom.net>
+To: <ilug@linux.ie>
+References: <A357A6B62E30D511804500B0D0AA789C0112E4EF@mail.it-tallaght.ie>
+Subject: Re: [ILUG] Formatting a windows partition from Linux
+Date: Wed, 21 Aug 2002 16:47:28 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset="ISO-8859-15"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.50.4522.1200
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4910.0300
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Hmm.
+
+Make sure you formatted the partition with fat 16 and have made the
+partition /dev/hda1 a size such that dos won't have a problem recognising
+it!
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

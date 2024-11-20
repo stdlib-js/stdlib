@@ -1,0 +1,80 @@
+From fork-admin@xent.com  Sat Sep  7 21:52:32 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 568B316F16
+	for <jm@localhost>; Sat,  7 Sep 2002 21:52:16 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 07 Sep 2002 21:52:16 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g86Jl5C21549 for <jm@jmason.org>;
+    Fri, 6 Sep 2002 20:47:05 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 20ACF294172; Fri,  6 Sep 2002 12:44:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from cats.ucsc.edu (cats-mx2.ucsc.edu [128.114.129.35]) by
+    xent.com (Postfix) with ESMTP id 7303329409E for <fork@xent.com>;
+    Fri,  6 Sep 2002 12:43:25 -0700 (PDT)
+Received: from Tycho (dhcp-63-177.cse.ucsc.edu [128.114.63.177]) by
+    cats.ucsc.edu (8.10.1/8.10.1) with SMTP id g86HQXT03756; Fri,
+    6 Sep 2002 10:26:33 -0700 (PDT)
+From: "Jim Whitehead" <ejw@cse.ucsc.edu>
+To: "Eugen Leitl" <eugen@leitl.org>, <fork@spamassassin.taint.org>
+Subject: RE: Re[2]: Selling Wedded Bliss (was Re: Ouch...)
+Message-Id: <AMEPKEBLDJJCCDEJHAMICEGPFGAA.ejw@cse.ucsc.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+In-Reply-To: <Pine.LNX.4.33.0209061122540.30472-100000@hydrogen.leitl.org>
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4133.2400
+Importance: Normal
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 6 Sep 2002 10:24:14 -0700
+
+> Clearly our non-silly non-antiquated ideas about relationships have
+> resulted in mostly short-duration relationships and single-parented,
+> dysfunctional kids (not enough of them too boot, so to keep our
+> demographics from completely keeling over we're importing them from places
+> with mostly silly and antiquated ideas).
+>
+> At least from the viewpoint of demographics sustainability and
+> counterpressure to gerontocracy and resulting innovatiophobia we're doing
+> something wrong.
+
+There was a fascinating article in the Economist 1-2 weeks back (the issue
+with a pregnant-looking Statue of Liberty on the Front) that stated that
+even for the native US population, fertility had jumped in the last decade
+and a half. I think the current figure for the US is a little over 2, but
+not quite the ~2.1 of replacement rate. Combined with the very fertile
+non-native population, the article implied the US was going to have a
+significant increase in population over earlier predictions. As well, the
+population would overall be more youthful, with associated implications for
+being able to fund social programs, military spending, consumer spending,
+etc.
+
+Europe did not show the same increase in fertility.
+
+Some actual data for the US are here:
+
+http://www.census.gov/population/pop-profile/2000/chap04.pdf
+Part of:
+http://www.census.gov/population/www/pop-profile/profile2000.html
+
+- Jim
+
+

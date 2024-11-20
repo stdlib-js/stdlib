@@ -1,0 +1,136 @@
+
+{{alias}}( [options] )
+    Returns a transform stream which joins streamed data.
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Options.
+
+    options.sep: string (optional)
+        Separator used to join streamed data. Default: '\n'.
+
+    options.objectMode: boolean (optional)
+        Specifies whether a stream should operate in "objectMode". Default:
+        false.
+
+    options.encoding: string|null (optional)
+        Specifies how Buffer objects should be decoded to strings. Default:
+        null.
+
+    options.highWaterMark: integer (optional)
+        Specifies the maximum number of bytes to store in an internal buffer
+        before ceasing to push downstream.
+
+    options.allowHalfOpen: boolean (optional)
+        Specifies whether a stream should remain open even if one side ends.
+        Default: false.
+
+    options.readableObjectMode: boolean (optional)
+        Specifies whether the readable side should be in "objectMode". Default:
+        false.
+
+    Returns
+    -------
+    stream: TransformStream
+        Transform stream.
+
+    Examples
+    --------
+    > var s = {{alias}}();
+    > s.write( 'a' );
+    > s.write( 'b' );
+    > s.write( 'c' );
+    > s.end();
+
+
+{{alias}}.factory( [options] )
+    Returns a function for creating transform streams for joined streamed data.
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Options.
+
+    options.sep: string (optional)
+        Separator used to join streamed data. Default: '\n'.
+
+    options.objectMode: boolean (optional)
+        Specifies whether a stream should operate in "objectMode". Default:
+        false.
+
+    options.encoding: string|null (optional)
+        Specifies how Buffer objects should be decoded to strings. Default:
+        null.
+
+    options.highWaterMark: integer (optional)
+        Specifies the maximum number of bytes to store in an internal buffer
+        before ceasing to push downstream.
+
+    options.allowHalfOpen: boolean (optional)
+        Specifies whether a stream should remain open even if one side ends.
+        Default: false.
+
+    options.readableObjectMode: boolean (optional)
+        Specifies whether the readable side should be in "objectMode". Default:
+        false.
+
+    Returns
+    -------
+    createStream: Function
+        Function for creating transform streams.
+
+    Examples
+    --------
+    > var opts = { 'highWaterMark': 64 };
+    > var createStream = {{alias}}.factory( opts );
+    > var s = createStream();
+    > s.write( 'a' );
+    > s.write( 'b' );
+    > s.write( 'c' );
+    > s.end();
+
+
+{{alias}}.objectMode( [options] )
+    Returns an "objectMode" transform stream for joining streamed data.
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Options.
+
+    options.sep: string (optional)
+        Separator used to join streamed data. Default: '\n'.
+
+    options.encoding: string|null (optional)
+        Specifies how Buffer objects should be decoded to strings. Default:
+        null.
+
+    options.highWaterMark: integer (optional)
+        Specifies the maximum number of objects to store in an internal buffer
+        before ceasing to push downstream.
+
+    options.allowHalfOpen: boolean (optional)
+        Specifies whether a stream should remain open even if one side ends.
+        Default: false.
+
+    options.readableObjectMode: boolean (optional)
+        Specifies whether the readable side should be in "objectMode". Default:
+        false.
+
+    Returns
+    -------
+    stream: TransformStream
+        Transform stream operating in "objectMode".
+
+    Examples
+    --------
+    > var s = {{alias}}.objectMode();
+    > s.write( { 'value': 'a' } );
+    > s.write( { 'value': 'b' } );
+    > s.write( { 'value': 'c' } );
+    > s.end();
+
+    See Also
+    --------
+

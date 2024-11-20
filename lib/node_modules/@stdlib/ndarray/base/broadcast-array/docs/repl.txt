@@ -1,0 +1,65 @@
+
+{{alias}}( arr, shape )
+    Broadcasts an ndarray to a specified shape.
+
+    The returned array is a view on the input array data buffer. The view is
+    typically **not** contiguous. As more than one element of a returned view
+    may refer to the same memory location, writing to the view may affect
+    multiple elements. If you need to write to the returned array, copy the
+    array before performing operations which may mutate elements.
+
+    The returned array is a "base" ndarray, and, thus, the returned array does
+    not perform bounds checking or afford any of the guarantees of the non-base
+    ndarray constructor. The primary intent of this function is to broadcast an
+    ndarray-like object within internal implementations and to do so with
+    minimal overhead.
+
+    The function throws an error if a provided ndarray is incompatible with a
+    provided shape.
+
+    The function always returns a new ndarray instance even if the input ndarray
+    shape and the desired shape are the same.
+
+    Parameters
+    ----------
+    arr: ndarray
+        Input array.
+
+    shape: ArrayLikeObject
+        Desired shape.
+
+    Returns
+    -------
+    out: ndarray
+        Broadcasted array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] )
+    <ndarray>
+    > var sh = x.shape
+    [ 2, 2 ]
+    > var y = {{alias}}( x, [ 3, 2, 2 ] )
+    <ndarray>
+    > sh = y.shape
+    [ 3, 2, 2 ]
+    > var v = y.get( 0, 0, 0 )
+    1
+    > v = y.get( 0, 0, 1 )
+    2
+    > v = y.get( 0, 1, 0 )
+    3
+    > v = y.get( 0, 1, 1 )
+    4
+    > v = y.get( 1, 0, 0 )
+    1
+    > v = y.get( 1, 1, 0 )
+    3
+    > v = y.get( 2, 0, 0 )
+    1
+    > v = y.get( 2, 1, 1 )
+    4
+
+    See Also
+    --------
+

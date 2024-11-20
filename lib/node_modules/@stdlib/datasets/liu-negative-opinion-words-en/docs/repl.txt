@@ -1,0 +1,37 @@
+
+{{alias}}()
+    Returns a list of negative opinion words.
+
+    A word's appearance in a sentence does *not* necessarily imply a positive or
+    negative opinion.
+
+    The list includes misspelled words. Their presence is intentional, as such
+    misspellings frequently occur in social media content.
+
+    Returns
+    -------
+    out: Array<string>
+        List of negative opinion words.
+
+    Examples
+    --------
+    > var list = {{alias}}()
+    [ '2-faced', '2-faces', 'abnormal', 'abolish', ... ]
+
+    References
+    ----------
+    - Hu, Minqing, and Bing Liu. 2004. "Mining and Summarizing Customer
+    Reviews." In *Proceedings of the Tenth Acm Sigkdd International Conference
+    on Knowledge Discovery and Data Mining*, 168–77. KDD '04. New York, NY, USA:
+    ACM. doi:10.1145/1014052.1014073.
+    - Liu, Bing, Minqing Hu, and Junsheng Cheng. 2005. "Opinion Observer:
+    Analyzing and Comparing Opinions on the Web." In *Proceedings of the 14th
+    International Conference on World Wide Web*, 342–51. WWW '05. New York, NY,
+    USA: ACM. doi:10.1145/1060745.1060797.
+
+    * If you use the list for publication or third party consumption, please
+    cite one of the listed references.
+
+    See Also
+    --------
+

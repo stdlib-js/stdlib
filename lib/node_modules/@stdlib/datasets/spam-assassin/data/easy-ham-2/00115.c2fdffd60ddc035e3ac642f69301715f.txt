@@ -1,0 +1,123 @@
+From ilug-admin@linux.ie  Mon Jul 22 19:50:14 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C4864440C9
+	for <jm@localhost>; Mon, 22 Jul 2002 14:50:13 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 19:50:13 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MHQY403544 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 18:26:35 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id JAA22824 for <jm-ilug@jmason.org>;
+    Sat, 20 Jul 2002 09:47:44 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA25916; Sat, 20 Jul 2002 09:46:58 +0100
+Received: from mail.magicgoeshere.com (nw152-60.indigo.ie [194.125.152.60]
+    (may be forged)) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id JAA25845
+    for <ilug@linux.ie>; Sat, 20 Jul 2002 09:46:41 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host nw152-60.indigo.ie
+    [194.125.152.60] (may be forged) claimed to be mail.magicgoeshere.com
+Received: from bagend.magicgoeshere.com (ts15-163.dublin.indigo.ie
+    [194.125.176.163]) by mail.magicgoeshere.com (Postfix) with ESMTP id
+    80E8FF8FD for <ilug@linux.ie>; Sat, 20 Jul 2002 09:31:33 +0100 (IST)
+Received: by bagend.magicgoeshere.com (Postfix, from userid 501) id
+    14BB93C1AE; Fri, 19 Jul 2002 23:47:40 +0100 (IST)
+Date: Fri, 19 Jul 2002 23:47:39 +0100
+From: Niall O Broin <niall@linux.ie>
+To: ilug@linux.ie
+Subject: Re: [ILUG] [OT] GPL & PHP Question
+Message-Id: <20020719224739.GC3854@bagend.makalumedia.com>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: Niall O Broin <niall@linux.ie>, ilug@linux.ie
+References: <200207192053.VAA32306@lugh.tuatha.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <200207192053.VAA32306@lugh.tuatha.org>
+User-Agent: Mutt/1.3.27i
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Fri, Jul 19, 2002 at 09:53:16PM +0100, awhalley@eircom.net wrote:
+
+> The setup is as follows:
+> I develop a piece of code using PHP 3.0.9 which is, to
+> my knowledge, GPL. 
+
+PHP is released under the GPL, yes.
+
+> The piece of code runs on my server and is an integral part of a system
+> that I have developed for a client. I did not recieve payment for this
+> particular piece of code but I did recieve payment for the system. My client
+> now wants to use a different service provider but keep my code.
+
+> Do I have a right to claim intellectual property rights for my little
+> piece of code that he did not pay me for or do I have to give the client the
+> code under the GPL.
+
+Exactly what rights you would have to the code depends on the contractual
+arrangement you have with your client, and I'm betting that that's not at
+all cut and dried.
+
+However, I have been in this situation where a client was using code I
+developed and then decided that he should own the code. Push never came to
+shove (at least, not yet :-) ) but my understanding of the situation vis a
+vis software is that in the absence of any contract granting ownership of
+the code to another party, it remains with the person who wrote it. I didn't
+take legal advice on this but my customer did :-) and his lawyer told him
+that I was right and would most likely win in court.
+
+So much for the ownership of the code vis a vis you and your client - now for
+the GPL issues. 
+
+Code compiled by a compiler which is GPL software (e.g. gcc) is not itself
+covered by the GPL unless its author chooses to make it so. This is perhaps
+not made clear enough in the GPL text and is a particular piece of FUD which
+Microsoft loves to toss about. Similarly, the copy of PHP which is part of
+your customer's system is covered by the GPL. You can charge him whatever
+you like for it but you must provide him with acces to the source code, and
+you cannot restrict what he can do with it (in this case, move it to another
+service provider). However, you have not (I take it) chosen to license YOUR
+code under the GPL so the conditions of the GPL do NOT apply to it.
+
+If OTOH you had written some code which modified PHP as such, and then
+distributed (whether for a fee or not) that modified PHP, then the modified
+code must be licensed under the GPL. But this applies to a modification to
+PHP itself and NOT to your scripts which run under PHP.
+
+The relevant clause is 2(b) which says (though Lord knows why I'm quoting when
+locate COPYING will turn up a shedload of copies of the GPL on just about
+any Linux box - 540 on this box)
+
+b) You must cause any work that you distribute or publish, that in whole or
+in part contains or is derived from the Program or any part thereof, to be
+licensed as a whole at no charge to all third parties under the terms of
+this License.
+
+
+Your PHP scripts do not contain, nor are they derived from, PHP, in whole or
+in part.
+
+> I know this is not strictly a 'Linux' issue but any help would be appreciated
+
+Microsoft has very much made this a Linux issue - it has attempted to imply
+that any company using GPL software must make everything it owns public and
+it must be true - that nice man from Microsoft wouldn't lie, would he ?
+
+
+
+Niall
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

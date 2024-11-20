@@ -1,0 +1,31 @@
+From rssfeeds@jmason.org  Wed Oct  9 10:52:39 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 98D3416F6A
+	for <jm@localhost>; Wed,  9 Oct 2002 10:51:40 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 09 Oct 2002 10:51:40 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9980WK25167 for
+    <jm@jmason.org>; Wed, 9 Oct 2002 09:00:32 +0100
+Message-Id: <200210090800.g9980WK25167@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: boingboing <rssfeeds@spamassassin.taint.org>
+Subject: Lego harpsichord: A for Obsessiveness, F for Tunefulness
+Date: Wed, 09 Oct 2002 08:00:32 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://boingboing.net/#85541036
+Date: Not supplied
+
+Yet another Lego obsessive has built a working Lego harpsichord. Tons of points 
+for style, but damn, it sounds like hell. Link[1] Discuss[2] (_Thanks, Tim[3]!_
+)
+
+[1] http://www.henrylim.org/Harpsichord.html
+[2] http://www.quicktopic.com/boing/H/HuXcCLLHKEv
+[3] http://www.sff.net/people/timpratt/tropism.html
+
+

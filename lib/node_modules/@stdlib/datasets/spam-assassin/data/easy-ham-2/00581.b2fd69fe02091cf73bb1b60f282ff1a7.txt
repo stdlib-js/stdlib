@@ -1,0 +1,119 @@
+From razor-users-admin@lists.sourceforge.net  Wed Aug  7 08:59:14 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BEE23440C8
+	for <jm@localhost>; Wed,  7 Aug 2002 03:59:13 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 07 Aug 2002 08:59:13 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g777wYk16412 for <jm-razor@jmason.org>; Wed, 7 Aug 2002 08:58:34 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17cLW7-0004ge-00; Wed,
+    07 Aug 2002 00:46:03 -0700
+Received: from adsl-64-171-13-166.dsl.sntc01.pacbell.net ([64.171.13.166]
+    helo=rover.vipul.net) by usw-sf-list1.sourceforge.net with esmtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17cLVZ-0006MQ-00 for
+    <razor-users@lists.sourceforge.net>; Wed, 07 Aug 2002 00:45:29 -0700
+Received: (from vipul@localhost) by rover.vipul.net (8.11.6/8.11.6) id
+    g777jJK01455; Wed, 7 Aug 2002 00:45:19 -0700
+From: Vipul Ved Prakash <mail@vipul.net>
+To: "Rose, Bobby" <brose@med.wayne.edu>
+Cc: ML-razor-users <razor-users@example.sourceforge.net>
+Subject: Re: [Razor-users] What's wrong with the Razor servers now?
+Message-Id: <20020807004518.A1213@rover.vipul.net>
+Reply-To: mail@vipul.net
+Mail-Followup-To: "Rose, Bobby" <brose@med.wayne.edu>,
+	ML-razor-users <razor-users@lists.sourceforge.net>
+References: <D79A56AD131896448D0860DEE07CBE1FA7D8@med-core07.med.wayne.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <D79A56AD131896448D0860DEE07CBE1FA7D8@med-core07.med.wayne.edu>;
+    from brose@med.wayne.edu on Tue, Aug 06, 2002 at 06:54:04PM -0400
+X-Operating-System: Linux rover.vipul.net 2.4.18
+X-Privacy: If possible, encrypt your reply.  Key at http://vipul.net/
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Wed, 7 Aug 2002 00:45:18 -0700
+Date: Wed, 7 Aug 2002 00:45:18 -0700
+
+Hi,
+
+We were rolling out changes to TeS and catalogue servers over the last two
+days. Any glitches you might have experienced would have been due to the
+upgrades. The upgrades are now complete, and things are back to normal.
+Several new features in TeS will provide better accuracy, specially with
+regards to false-positives.
+
+cheers,
+vipul.
+
+On Tue, Aug 06, 2002 at 06:54:04PM -0400, Rose, Bobby wrote:
+> I'm still seeing this.  It reports to honor.cloudmark.com but checks
+> against apt.cloudmark.com.  What is the sync delay between these boxes?
+> 
+> -----Original Message-----
+> From: Rose, Bobby 
+> Sent: Monday, August 05, 2002 2:05 PM
+> To: ML-razor-users
+> Subject: [Razor-users] What's wrong with the Razor servers now?
+> 
+> 
+> I noticed a low count of razor'd spam messages. So after digging, if I
+> razor-report a message the diags say that it was accepted but if I turn
+> around and run a check on the exact same message that was reported, then
+> it doesn't find the sig and as such isn't spam.
+> 
+> 
+> -------------------------------------------------------
+> This sf.net email is sponsored by:ThinkGeek
+> Welcome to geek heaven.
+> http://thinkgeek.com/sf _______________________________________________
+> Razor-users mailing list
+> Razor-users@lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/razor-users
+> 
+> 
+> -------------------------------------------------------
+> This sf.net email is sponsored by:ThinkGeek
+> Welcome to geek heaven.
+> http://thinkgeek.com/sf
+> _______________________________________________
+> Razor-users mailing list
+> Razor-users@lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/razor-users
+
+-- 
+
+Vipul Ved Prakash          |   "The future is here, it's just not 
+Software Design Artist     |    widely distributed."
+http://vipul.net/          |              -- William Gibson
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

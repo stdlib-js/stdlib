@@ -1,0 +1,212 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6O753hY015406
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Wed, 24 Jul 2002 02:05:03 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6O752tP015397
+	for cypherpunks-forward@ds.pro-ns.net; Wed, 24 Jul 2002 02:05:02 -0500 (CDT)
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6O74rhY015317
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks@ds.pro-ns.net>; Wed, 24 Jul 2002 02:04:54 -0500 (CDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: from waste.minder.net (daemon@waste [66.92.53.73])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6O74qJ75475
+	for <cypherpunks@ds.pro-ns.net>; Wed, 24 Jul 2002 03:04:52 -0400 (EDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: (from cpunks@localhost)
+	by waste.minder.net (8.11.6/8.11.6) id g6O74qO22473
+	for cypherpunks@ds.pro-ns.net; Wed, 24 Jul 2002 03:04:52 -0400
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by waste.minder.net (8.11.6/8.11.6) with ESMTP id g6O74oR22449
+	for <cpunks@minder.net>; Wed, 24 Jul 2002 03:04:50 -0400
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6O74nJ75459
+	for <cpunks@minder.net>; Wed, 24 Jul 2002 03:04:49 -0400 (EDT)
+	(envelope-from cpunks@einstein.ssz.com)
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id CAA16886
+	for cpunks@minder.net; Wed, 24 Jul 2002 02:13:37 -0500
+Received: (from mdom@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id CAA16881
+	for cypherpunks-outgoing; Wed, 24 Jul 2002 02:13:34 -0500
+Received: from casmail.lab ([194.204.223.253])
+	by einstein.ssz.com (8.8.8/8.8.8) with ESMTP id CAA16876
+	for <cypherpunks@einstein.ssz.com>; Wed, 24 Jul 2002 02:13:29 -0500
+From: Central_Bank6@centralbank.com
+Message-Id: <200207240713.CAA16876@einstein.ssz.com>
+Received: from html (FW-CAS [194.201.201.254]) by casmail.lab with SMTP (Microsoft Exchange Internet Mail Service Version 5.5.2650.21)
+	id PM9X4GVL; Wed, 24 Jul 2002 05:27:35 -0000
+Received: from SMTP agent by mail gateway 
+ Wed, 24 Jul 2002 06:43:48 -0000
+To: cypherpunks@einstein.ssz.com
+Old-Subject: CDR: Notification for Payment Received!
+Date: Wed, 24 Jul 2002 02:42:22
+Mime-Version: 1.0
+Content-Type: text/html; charset="DEFAULT"
+Sender: owner-cypherpunks@einstein.ssz.com
+Precedence: bulk
+Reply-To: cypherpunks@einstein.ssz.com
+X-Mailing-List: cypherpunks@ssz.com
+X-Unsubscription-Info: http://einstein.ssz.com/cdr
+X-List-Admin: list@ssz.com
+X-Loop: ssz.com
+X-Acceptable-Languages: English, Russian, German, French, Spanish
+Subject: Notification for Payment Received!
+Content-Transfer-Encoding: quoted-printable
+X-MIME-Autoconverted: from 8bit to quoted-printable by hq.pro-ns.net id g6OFHwhX008908
+
+<HTML>
+<head>
+
+<Font FACE=3D"Arial" color=3D"FF0000" size=3D5  >
+<BLOCKQUOTE><BLOCKQUOTE>
+<title>Notification for Payment Received!</title></FONT>
+</head>
+
+					=09
+					=09
+					=09
+					=09
+					=09
+					=09
+					=09
+					=09
+					=09
+					=09
+					=09
+					=09
+					=09
+					=09
+					=09
+					=09
+					=09
+					=09
+					=09
+					=09
+<body background=3D"togeather.jpg" BGPROPERTIES=3Dfixed text=3D"#000000" =
+link=3D"#0000aa" vlink=3D"#0000aa" alink=3D"#aa0000">
+
+<br><b>
+
+
+Notification for Payment Received !!!,<br><br>
+
+This email confirms that you may receive
+$6,000.00 (Commissions) <br>Payment for LAST month
+for your 1 hours work a day. <br><br>
+<FONT COLOR=3D"#dd5555"><b>
+TRANSACTION INFORMATION:<br>
+
+Amount: $6,000.00<br><br>
+
+Item/Product Name: <br>
+Number of Survey  12/day X 30/days =3D 120<br><br>
+
+Item/Product Comission: <br>
+Average $/Survey  =3D $50<br><br>
+
+Total: 120 surveys X $50 =3D $6,000<br>
+
+</font></b><br><br>
+
+THIS IS A KIND OF EMAIL <br>YOU SHOULD RECEIVED
+AFTER YOUR FIRST MONTH<br><br>
+
+Could be nice, don't you think ?<br><br>
+
+*****************************************************<br>
+
+
+Hello!<br>
+
+Here is the Greatest Opportunity ever presented on Internet<br>
+
+YOU SURF THE WEB ALREADY, <br>
+SO WHY NOT GET PAID FOR IT...... <br>
+
+There are numerous market research companies <br>
+on the web willing to pay you strictly in cold CASH <br>
+(Guaranteed $15-$125 and more per survey) for simply giving <br>
+your opinions by participating in their surveys!<br>
+The more you sign up with, the more money you make! <br>
+How much you make is up to you.Easy calculation:<br>
+Let=92s say that you have one hour a day the most <br>
+of the survey will take 15 minutes<br>
+so you can fill out 4 surveys a day.<br>
+If you take 4 survey at $50 =3D $200 by 30 days =3D $6 000 a month<br>
+What about now if you spend 3 hours a day?<br>
+WOW $18 000 a month to stay home <br>
+and care about your family<br>
+The companies are sending you checks <br>
+usually 3 to 5 days after you did fill it out.<br><br>
+
+Tell Your Friends About us!<br>
+We will pay you EVERY DAY for each sale you do!<br><br>
+
+The rewards continue!  Telling your friends <br>
+about us is an outstanding business decision...  <br>
+Not only will we pay you for completing a survey, <br>
+But you will get pay for each survey that your friends fill out too!  <br=
+><br>
+ =20
+So don't wait another second join us NOW=20
+and have your friends sign up today!
+<br><br><br>
+
+<FONT size=3D3 ><B>ACT NOW AND GET YOUR COMPLIMENTARY=20
+3-DAY/2-NIGHT DREAM VACATION <br>
+as a special introductory offer! <br>ABSOLUTELY FREE!!!</B></FONT>
+</CENTER>
+<br><br>
+<CENTER>
+<FONT size=3D+2 color=3D"#dd5555"><B>To get all details</B></FONT>
+</CENTER>
+
+=20
+
+<CENTER>
+
+<!-- Common part -->
+<CENTER>
+<FONT size=3D+3 color=3D"#dd5555"><B></B></FONT>
+</CENTER>
+<P>
+<BLOCKQUOTE><BLOCKQUOTE>
+<FONT size=3D+1>
+<CENTER>
+<br><br>
+Push button below.<br>
+
+<FORM action=3D"mailto:mailmoreinfo@371.net?=3D&subject=3DTell me how abo=
+ut the survey!&body=3DPlease tell me about the surveys" method=3Dpost>
+<INPUT name=3Dbuttonpushed type=3Dsubmit value=3D"Send me that informatio=
+n"></FORM>
+
+<br><br><br>
+
+
+YOU WANT TO BE REMOVED?<br>
+Push button below to be REMOVED=20
+<FORM action=3D"mailto:removeme@371.net?=3D&subject=3DRemove" method=3Dpo=
+st>
+<INPUT name=3Dbuttonpushed type=3Dsubmit value=3D" Remove me NOW"></FORM>=
+<br>
+
+
+</BLOCKQUOTE></BLOCKQUOTE></BLOCKQUOTE>
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

@@ -1,0 +1,84 @@
+From fork-admin@xent.com  Mon Sep 30 17:57:43 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id CE90F16F77
+	for <jm@localhost>; Mon, 30 Sep 2002 17:54:13 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 30 Sep 2002 17:54:13 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8UGNIK07243 for <jm@jmason.org>;
+    Mon, 30 Sep 2002 17:23:18 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 600562940E3; Mon, 30 Sep 2002 09:23:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from sccrmhc03.attbi.com (sccrmhc03.attbi.com [204.127.202.63])
+    by xent.com (Postfix) with ESMTP id 30F5B2940E1 for <Fork@xent.com>;
+    Mon, 30 Sep 2002 09:22:28 -0700 (PDT)
+Received: from [24.61.113.164] by sccrmhc03.attbi.com (InterMail
+    vM.4.01.03.27 201-229-121-127-20010626) with ESMTP id
+    <20020930162229.FGFL22381.sccrmhc03.attbi.com@[24.61.113.164]>;
+    Mon, 30 Sep 2002 16:22:29 +0000
+From: bitbitch@magnesium.net
+X-Mailer: The Bat! (v1.61) Educational
+Reply-To: bitbitch@magnesium.net
+X-Priority: 3 (Normal)
+Message-Id: <11958948363.20020930122228@magnesium.net>
+To: Owen Byrne <owen@permafrost.net>
+Cc: Fork@xent.com
+Subject: Re[2]: A moment of silence for the First Amendment (fwd)
+In-Reply-To: <3D9879E9.7020708@permafrost.net>
+References: <JHEPKCEMGPKFFDHHDDKDMEJBFIAA.bill@wstoddard.com>
+    <3D9879E9.7020708@permafrost.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 30 Sep 2002 12:22:28 -0400
+
+
+>>
+>>Wishful thinking. People are just bigger dickheads now. Culture is changing
+>>and it is becoming acceptable to get in peoples face and shout them down
+>>when you disagree with them.  The people that do this are NOT
+>>disenfranchised. They
+>>get their rocks off on being disagreeable assholes. The act of protesting is
+>>more important than the actual issue being protested for most of these
+>>people.
+>>  
+>>
+OB> In my experience, this is classic "American" behaviour, and I don't 
+OB> think its on the increase outside of the US of A.
+OB> I am willing to accept the premise that Americans are bigger dickheads 
+OB> then they used to be.
+
+*sighs*
+
+Right.  Because Americans are the only people capable of being
+assholes.  Shit.  History keeps fucking up when they keep mentioning
+all the historical examples of dickhead-ness that have proceeded the
+US.
+
+After all, we're the only country who gets unruly when it comes to
+issues.   Thats why its always just the Americans at those crazy WTO
+meetings...  Right, Owen?
+
+
+
+-- 
+Best regards,
+ bitbitch                            mailto:bitbitch@magnesium.net
+
+

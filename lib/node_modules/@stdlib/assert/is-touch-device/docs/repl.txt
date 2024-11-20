@@ -1,0 +1,12 @@
+
+{{alias}}
+    Boolean indicating if the current environment is a touch device.
+
+    Examples
+    --------
+    > {{alias}}
+    <boolean>
+
+    See Also
+    --------
+

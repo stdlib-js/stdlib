@@ -1,0 +1,98 @@
+#!/usr/bin/env node
+
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2018 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+'use strict';
+
+// MODULES //
+
+var resolve = require( 'path' ).resolve;
+var readFileSync = require( '@stdlib/fs/read-file' ).sync;
+var CLI = require( '@stdlib/cli/ctor' );
+
+
+// FUNCTIONS //
+
+/**
+* Converts an array of strings to an array of integers.
+*
+* @private
+* @param {StringArray} arr - array of strings
+* @returns {IntegerArray} array of integers
+*/
+function toIntegers( arr ) {
+	var i;
+	for ( i = 0; i < arr.length; i++ ) {
+		arr[ i ] = parseInt( arr[ i ], 10 );
+	}
+	return arr;
+}
+
+
+// MAIN //
+
+/**
+* Main execution sequence.
+*
+* @private
+*/
+function main() {
+	var flags;
+	var opts;
+	var data;
+	var cli;
+	var i;
+
+	// Create a command-line interface:
+	cli = new CLI({
+		'pkg': require( './../package.json' ),
+		'options': require( './../etc/cli_opts.json' ),
+		'help': readFileSync( resolve( __dirname, '..', 'docs', 'usage.txt' ), {
+			'encoding': 'utf8'
+		})
+	});
+
+	// Get any provided command-line options:
+	flags = cli.flags();
+	if ( flags.help || flags.version ) {
+		return;
+	}
+
+	opts = {};
+	if ( flags.name ) {
+		opts.name = flags.name.split( ',' );
+	}
+	if ( flags.party ) {
+		opts.party = flags.party.split( ',' );
+	}
+	if ( flags.year ) {
+		opts.year = toIntegers( flags.year.split( ',' ) );
+	}
+	if ( flags.range ) {
+		opts.range = toIntegers( flags.range.split( ',' ) );
+	}
+
+	// Run main:
+	data = require( './../lib' )( opts ); // eslint-disable-line stdlib/no-immediate-require
+	for ( i = 0; i < data.length; i++ ) {
+		console.log( JSON.stringify( data[ i ] ) ); // eslint-disable-line no-console
+	}
+}
+
+main();

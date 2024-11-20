@@ -1,0 +1,33 @@
+
+{{alias}}( str, words[, ignoreCase] )
+    Removes all occurrences of the given words from a `string`.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    words: Array<string>
+        Array of words to be removed.
+
+    ignoreCase: boolean (optional)
+        Boolean indicating whether to perform a case-insensitive operation.
+        Default: `false`.
+
+    Returns
+    -------
+    out: string
+        String with words removed.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'beep boop Foo bar', [ 'boop', 'foo' ] )
+    'beep  Foo bar'
+
+    // Case-insensitive:
+    > out = {{alias}}( 'beep boop Foo bar', [ 'boop', 'foo' ], true )
+    'beep   bar'
+
+    See Also
+    --------
+

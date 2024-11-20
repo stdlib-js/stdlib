@@ -1,0 +1,129 @@
+From social-admin@linux.ie  Tue Aug  6 11:08:22 2002
+Return-Path: <social-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5612044125
+	for <jm@localhost>; Tue,  6 Aug 2002 06:03:28 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:03:28 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g72MtNv14871 for
+    <jm+ilug-social@jmason.org>; Fri, 2 Aug 2002 23:55:23 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id XAA01117; Fri, 2 Aug 2002 23:53:45 +0100
+Received: from hibernia.jakma.org (hibernia.clubi.ie [212.17.32.129]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id XAA01085 for <social@linux.ie>;
+    Fri, 2 Aug 2002 23:53:38 +0100
+Received: from fogarty.jakma.org (fogarty.jakma.org [192.168.0.4]) by
+    hibernia.jakma.org (8.11.6/8.11.6) with ESMTP id g72N0aw02255;
+    Sat, 3 Aug 2002 00:00:37 +0100
+Received: from localhost (paul@localhost) by fogarty.jakma.org
+    (8.11.6/8.11.6) with ESMTP id g72N0Yx09240; Sat, 3 Aug 2002 00:00:34 +0100
+X-Authentication-Warning: fogarty.jakma.org: paul owned process doing -bs
+Date: Sat, 3 Aug 2002 00:00:34 +0100 (IST)
+From: Paul Jakma <paul@clubi.ie>
+X-X-Sender: paul@fogarty.jakma.org
+To: kevin lyda <kevin+dated+1028754135.038225@ie.suberic.net>
+Cc: ilug social <social@linux.ie>
+Subject: Re: [ILUG-Social] Re: [ILUG] Dermot Beirne/Dublin/IE/Exel is out of the office.
+In-Reply-To: <20020802220213.B25994@ie.suberic.net>
+Message-Id: <Pine.LNX.4.44.0208022302570.8981-100000@fogarty.jakma.org>
+X-Nsa: iraq saddam hammas hisballah rabin ayatollah korea vietnam revolt
+    mustard gas
+X-Dumb-Filters: aryan marijuiana cocaine heroin hardcore cum pussy porn
+    teen tit sex lesbian group
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: social-admin@linux.ie
+Errors-To: social-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group social events <social.linux.ie>
+X-Beenthere: social@linux.ie
+
+On Fri, 2 Aug 2002, kevin lyda wrote:
+
+> On Fri, Aug 02, 2002 at 12:23:04PM +0100, Dermot Beirne wrote:
+> > I will be out of the office starting  02/08/2002 and will not return until
+> > 06/08/2002.
+> ...
+> > The information in this email is confidential and may be legally
+> [7+ line sig deleted]
+> 
+> an automated message to ilug.  one of those goofy confidentiality
+> signatures.  more then four lines in a sig.
+
+this is serious. the highly confidential information that dermot is
+out of the office has leaked! i think it would be best if we all
+email the "Systems Manager" as a matter of urgency. in lieu of an
+email address i suggest emailling all of postmaster, info, sales,
+hostmaster, webmaster, support and accounts (and any other address
+one can think of).
+
+now, considering the critical nature of this leak, if you do not 
+receive an adequate reply i think one would be duty bound to raise 
+the matter again, and again if needs be, until one gets a 
+satisfactory reply.
+
+also, i notice a lot of people on this lot who post from company 
+addresses do not have disclaimers on their emails. i would encourage 
+everyone in a professional position to raise the matter of 
+disclaimers internally and ensure that disclaimers are implemented 
+for company emails, stationary and phone systems.
+
+finally, the email-disclaimers advocacy site 
+
+	http://www.emaildisclaimers.com/
+
+may prove to be a useful resource. rather strangely one of the quotes 
+on the front-page of their site is:
+
+	'The disclaimers added to the end of emails are not legally 
+	binding, but it's always good practice to try and disclaim liability'
+
+	-- Michael Chissick, Head of Internet law at Field Fisher 
+	Waterhouse
+
+However, i suggest this quote, partly the initial part, be ignored
+and that other more favourable quotes (by self-aggrandising
+pundits^W^Wleading experts)  be heeded instead.  Also, there is a
+vicious rumour going round that a year or so ago a rather large
+company in the UK lost a court case where an employee sent out some
+kind of libellous email or somesuch despite the company having
+implemented email disclaimers. pay no heed to this - its just a
+rumour (http://www.weblaw.co.uk/artemail.htm).
+
+Anyway, please: Email exel.com!!!
+
+> kevin
+
+NB: This email is copyright 2002 Paul Jakma. By reading this email
+you agree to compensate me by paying me the sum of EUR200 - please
+contact the copyright author for further details on settling your
+fee. If you do not agree, please unread this email and delete this
+email immediately. Further, this email is copyright protected through
+the use of ASCII ROT-8 encryption. Circumvention of this digital
+copyright protection may be a criminal offense in certain
+jurisdictions.
+
+(and if it isnt in your jurisdiction, dont worry, the WIPO is working
+tirelessly to make sure it will be).
+
+regards,
+-- 
+Paul Jakma	paul@clubi.ie	paul@jakma.org	Key ID: 64A2FF6A
+	warning: do not ever send email to spam@dishone.st
+Fortune:
+"At least they're ___________EXPERIENCED incompetents"
+
+
+
+
+
+-- 
+Irish Linux Users' Group Social Events: social@linux.ie
+http://www.linux.ie/mailman/listinfo/social for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

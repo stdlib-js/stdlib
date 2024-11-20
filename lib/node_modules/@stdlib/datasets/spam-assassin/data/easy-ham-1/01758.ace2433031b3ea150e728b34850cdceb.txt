@@ -1,0 +1,21 @@
+Return-Path: skip@pobox.com
+Delivery-Date: Thu Sep 12 02:10:50 2002
+From: skip@pobox.com (Skip Montanaro)
+Date: Wed, 11 Sep 2002 20:10:50 -0500
+Subject: [Spambayes] Current histograms 
+In-Reply-To: <200209120023.g8C0NpQ18478@localhost.localdomain>
+References: <LNBBLJKPBEHFEDALKOLCKEJBBDAB.tim.one@comcast.net>
+        <200209120023.g8C0NpQ18478@localhost.localdomain>
+Message-ID: <15743.59802.802210.914537@12-248-11-90.client.attbi.com>
+
+
+    Anthony> They weren't partitioned in any particular scheme - I think
+    Anthony> I'll write a reshuffler and move them all around, ...
+
+Hmmm.   How about you create empty Data/Ham/Set[12345], stuff all your
+files into a Data/Ham/reservoir folder, then run the rebal.py script to
+randomly parcel messages out to the various real directories?
+
+I suspect you can pull the same stunt for your Data/Spam stuff.
+
+Skip

@@ -1,0 +1,83 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Fri Aug  9 15:43:46 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BC53844111
+	for <jm@localhost>; Fri,  9 Aug 2002 10:35:19 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:35:19 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79EMjb06586 for
+    <jm-sa@jmason.org>; Fri, 9 Aug 2002 15:22:45 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id GAA03578 for
+    <jm-sa@jmason.org>; Fri, 9 Aug 2002 06:00:05 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17d1pg-0002bz-00; Thu,
+    08 Aug 2002 21:57:04 -0700
+Received: from [216.40.247.31] (helo=host.yrex.com) by
+    usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17d1pP-0005rc-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Thu, 08 Aug 2002 21:56:47 -0700
+Received: (qmail 17893 invoked from network); 9 Aug 2002 04:56:44 -0000
+Received: from mgm.dsl.xmission.com (HELO opus) (204.228.152.186) by
+    216.40.247.31 with SMTP; 9 Aug 2002 04:56:44 -0000
+From: "Michael Moncur" <mgm@starlingtech.com>
+To: <spamassassin-talk@example.sourceforge.net>
+Subject: RE: [SAtalk] How'd this one slip through?
+Message-Id: <NEBBKLEDELIODOCJHLPCMEJMMOAA.mgm@starlingtech.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2910.0)
+In-Reply-To: <D79A56AD131896448D0860DEE07CBE1FE155@med-core07.med.wayne.edu>
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Importance: Normal
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Thu, 8 Aug 2002 22:56:37 -0600
+Date: Thu, 8 Aug 2002 22:56:37 -0600
+
+> Ouch ;-)  Although I'm not ready to give up razor just yet, I'd like to
+> see a pyzor check in SA.  I don't think it even needs to be written in
+> perl.  SA is actually calling razor-check and razor-report as well as
+> dccproc for those checks so it should be nothing more than duplication
+> of coding to add pyzor.
+
+I don't know from Pyzor, but I've always thought that the way services like
+Razor and DCC could be truly useful is if there were a bunch of different
+ones. We can assign them scores based on how trustworthy each one is, and
+when a message is listed in multiple services you can pretty much trust that
+it's spam.
+
+--
+Michael Moncur  mgm at starlingtech.com  http://www.starlingtech.com/
+"Mustard's no good without roast beef." --Chico Marx
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

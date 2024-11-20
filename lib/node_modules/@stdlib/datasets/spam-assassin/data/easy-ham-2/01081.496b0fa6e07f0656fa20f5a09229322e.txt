@@ -1,0 +1,79 @@
+From fork-admin@xent.com  Mon Aug 19 11:06:27 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4152B441BF
+	for <jm@localhost>; Mon, 19 Aug 2002 05:56:04 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:56:04 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7J8mW615005 for <jm@jmason.org>;
+    Mon, 19 Aug 2002 09:48:35 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 6A2192940FD; Mon, 19 Aug 2002 01:46:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mithral.com (watcher.mithral.com [204.153.244.1]) by
+    xent.com (Postfix) with SMTP id CEBB529409D for <fork@xent.com>;
+    Mon, 19 Aug 2002 01:45:01 -0700 (PDT)
+Received: (qmail 31680 invoked by uid 1111); 19 Aug 2002 08:46:14 -0000
+From: "Adam L. Beberg" <beberg@mithral.com>
+To: <fork@spamassassin.taint.org>
+Subject: Bits from the job front...
+Message-Id: <Pine.LNX.4.33.0208190108540.31532-100000@watcher.mithral.com>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 19 Aug 2002 01:46:14 -0700 (PDT)
+
+As yet another wave of people I know seem to have lost their jobs last week,
+here is the latest in what I'm seeing...
+
+* Even knowing a CTO/CEO/CFO may not even get your resume looked at, the
+feedback I'm getting is that hiring managers are only considering family
+and extended family for jobs - everyone has plenty of unemployed relatives.
+
+* Most job sites are now almost empty - so the practice of posting "resume
+bait" jobs is coming to an end. The postings they do have are months old
+bait. This is now a completely pointless way to look for a job.
+
+* We're almost flatlne in jobs created for several months, where population
+growth needs about 120k jobs a month to keep things steady.
+
+* Unemployment rates are only staying steady becasue people drop out of the
+workforce number after they cant find a job for a long time. The "not in
+labor force" is rising 400k a month. International numbers are no better -
+technology is replacing people, especially the people tha tmake the
+technoogy.
+
+* Grad school programs are stuffed full of people for every non-tech major.
+Colleges are having big headaches dealing with all the day-job refugees.
+
+* Spam for porn, ink, and stocks has dropped off, spam (the english ones I
+see subject lines for) now seems to be dominated by work-at-home scams and
+resume services. That's got to be a BAD sign.
+
+* FoRK is now almost all spam, somebody fix the damn subscriber-only-posting
+setting already, dont make me show up at your house Rohit ;)
+
+- Adam L. "Duncan" Beberg
+  http://www.mithral.com/~beberg/
+  beberg@mithral.com
+
+
+
+
+
+http://xent.com/mailman/listinfo/fork
+

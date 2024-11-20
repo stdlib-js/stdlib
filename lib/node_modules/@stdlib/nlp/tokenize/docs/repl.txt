@@ -1,0 +1,32 @@
+
+{{alias}}( str[, keepWhitespace] )
+    Tokenizes a string.
+
+    To include whitespace characters (spaces, tabs, line breaks) in the output
+    array, set `keepWhitespace` to `true`.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    keepWhitespace: boolean (optional)
+        Boolean indicating whether whitespace characters should be returned as
+        part of the token array. Default: `false`.
+
+    Returns
+    -------
+    out: Array
+        Array of tokens.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'Hello Mrs. Maple, could you call me back?' )
+    [ 'Hello', 'Mrs.', 'Maple', ',', 'could', 'you', 'call', 'me', 'back', '?' ]
+
+    > out = {{alias}}( 'Hello World!', true )
+    [ 'Hello', ' ', 'World', '!' ]
+
+    See Also
+    --------
+

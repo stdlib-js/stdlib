@@ -1,0 +1,76 @@
+From fork-admin@xent.com  Mon Sep 23 23:01:16 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 8FF8416F16
+	for <jm@localhost>; Mon, 23 Sep 2002 23:01:15 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 23 Sep 2002 23:01:15 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8NLsCC04080 for <jm@jmason.org>;
+    Mon, 23 Sep 2002 22:54:12 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 892D82941D0; Mon, 23 Sep 2002 14:50:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hotmail.com (dav58.law15.hotmail.com [64.4.22.193]) by
+    xent.com (Postfix) with ESMTP id 50B2C2941D0 for <fork@xent.com>;
+    Mon, 23 Sep 2002 14:49:20 -0700 (PDT)
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Mon, 23 Sep 2002 14:53:00 -0700
+X-Originating-Ip: [207.202.171.254]
+From: "Mr. FoRK" <fork_list@hotmail.com>
+To: "Tom" <tomwhore@slack.net>
+Cc: "FoRK" <fork@spamassassin.taint.org>
+References: <Pine.BSO.4.44.0209231721540.29230-100000@crank.slack.net>
+Subject: Re: Goodbye Global Warming
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.50.4133.2400
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4133.2400
+Message-Id: <DAV586rsI7MixUt4KuM00002a80@hotmail.com>
+X-Originalarrivaltime: 23 Sep 2002 21:53:00.0497 (UTC) FILETIME=[95B21C10:01C2634B]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 23 Sep 2002 14:57:49 -0700
+
+Sorry... I just had a run-in with a neighbor whom I've never met before who
+pigeonholed me within one minute after I asked a question - he said 'Are you
+one of them environmentalists?' For some reason that narrowminded attitude
+of not listening to what I was saying and categorizing me into a box in his
+little paranoid republican fantasy world just pissed me off.
+
+Sheesh... I've been out of work too long...
+
+----- Original Message -----
+From: "Tom" <tomwhore@slack.net>
+To: "Mr. FoRK" <fork_list@hotmail.com>
+Cc: "FoRK" <fork@spamassassin.taint.org>
+Sent: Monday, September 23, 2002 2:22 PM
+Subject: Re: Goodbye Global Warming
+
+
+>
+> --]> A Green once said that if the Spotted Owl hadn't existed they
+> --]> would have had to invent it.
+> --]A Republican once said "I am not a crook".
+> --]
+>
+> Oh great, another round of Lableisms....Let me know when you get back to
+> real data..
+>
+
+

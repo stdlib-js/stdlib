@@ -1,0 +1,70 @@
+From rpm-list-admin@freshrpms.net  Wed Oct  9 22:42:55 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 5C3BD16F6E
+	for <jm@localhost>; Wed,  9 Oct 2002 22:41:09 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 09 Oct 2002 22:41:09 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g99L3YK21522 for
+    <jm-rpm@jmason.org>; Wed, 9 Oct 2002 22:03:34 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g99Kn2f25952; Wed, 9 Oct 2002 22:49:02
+    +0200
+Received: from python (80-24-132-206.uc.nombres.ttd.es [80.24.132.206])
+    (authenticated) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g99Klvf22559 for <rpm-list@freshrpms.net>; Wed, 9 Oct 2002 22:47:57 +0200
+From: Matthias Saou <matthias@rpmforge.net>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: Apt 0.3 and 0.5
+Message-Id: <20021009224706.5996f983.matthias@rpmforge.net>
+In-Reply-To: <1034194128.19400.49.camel@wintermute.sr.unh.edu>
+References: <1034194128.19400.49.camel@wintermute.sr.unh.edu>
+Organization: freshrpms.net / rpmforge.net
+X-Mailer: Sylpheed version 0.8.3claws (GTK+ 1.2.10; i386-redhat-linux)
+X-Operating-System: Red Hat GNU/Linux forever!
+X-Subliminal-Message: Use Linux... use Linux... use Linux...
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Wed, 9 Oct 2002 22:47:06 +0200
+Date: Wed, 9 Oct 2002 22:47:06 +0200
+
+Once upon a time, Thomas wrote :
+
+> Should I expect problems if my apt server is running RH 7.3/Apt 0.3 and
+> some clients are coming on line and will be running RH 8.0/Apt 0.5? Do
+> the two different version interoperate?
+
+No problems whatsoever. Currently apt.freshrpms.net is running 7.3 with apt
+0.3 and many 8.0 clients with 0.5 are using it.
+
+Matthias
+
+-- 
+Clean custom Red Hat Linux rpm packages : http://freshrpms.net/
+Red Hat Linux release 7.3 (Valhalla) running Linux kernel 2.4.18-10
+Load : 0.10 0.11 0.10, AC on-line, battery charging: 100% (1:47)
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

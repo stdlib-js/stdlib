@@ -1,0 +1,12 @@
+
+{{alias}}
+    Size (in bytes) of a 64-bit complex number.
+
+    Examples
+    --------
+    > {{alias}}
+    8
+
+    See Also
+    --------
+

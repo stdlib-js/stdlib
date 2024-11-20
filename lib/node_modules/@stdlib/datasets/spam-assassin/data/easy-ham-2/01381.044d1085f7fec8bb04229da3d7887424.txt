@@ -1,0 +1,80 @@
+From pudge@perl.org  Tue Aug 20 11:00:40 2002
+Return-Path: <pudge@perl.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 770D643C37
+	for <jm@localhost>; Tue, 20 Aug 2002 05:59:11 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 10:59:11 +0100 (IST)
+Received: from cpu59.osdn.com (slashdot.org [64.28.67.73] (may be forged))
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7K20XZ20432 for
+    <jm-use-perl@jmason.org>; Tue, 20 Aug 2002 03:00:33 +0100
+Received: from [10.2.181.14] (helo=perl.org) by cpu59.osdn.com with smtp
+    (Exim 3.35 #1 (Debian)) id 17gyIn-0002NV-00 for <jm-use-perl@jmason.org>;
+    Mon, 19 Aug 2002 21:59:25 -0400
+Date: Tue, 20 Aug 2002 02:00:28 +0000
+From: pudge@perl.org
+Subject: [use Perl] Stories for 2002-08-20
+To: yyyy-use-perl@spamassassin.taint.org
+Precedence: list
+X-Bulkmail: 2.051
+Message-Id: <E17gyIn-0002NV-00@cpu59.osdn.com>
+
+use Perl Daily Newsletter
+
+In this issue:
+    * Call for Perl Monger T-Shirts at YAPC::Europe
+    * This Week on perl5-porters (11-18 August 2002)
+
++--------------------------------------------------------------------+
+| Call for Perl Monger T-Shirts at YAPC::Europe                      |
+|   posted by ziggy on Monday August 19, @08:53 (yapce)              |
+|   http://use.perl.org/article.pl?sid=02/08/19/1254219              |
++--------------------------------------------------------------------+
+
+[0]neophyte writes "If you come to YAPC::Europe 2002, and you are a
+member of a Perlmonger group, and your group has its own t-shirts, then
+please bring one to YAPC::Europe for the auction. Show off the creativity
+of your group and give someone else the chance to have such a nice
+t-shirt as yours."
+
+Discuss this story at:
+    http://use.perl.org/comments.pl?sid=02/08/19/1254219
+
+Links:
+    0. mailto:niederrhein-pm@web.de
+
+
++--------------------------------------------------------------------+
+| This Week on perl5-porters (11-18 August 2002)                     |
+|   posted by pudge on Monday August 19, @10:12 (summaries)          |
+|   http://use.perl.org/article.pl?sid=02/08/19/1230217              |
++--------------------------------------------------------------------+
+
+>>From sunny and hot and about to burst out in thunderstorms, downtown
+Echt, comes this weeks perl5-porters summary, brought to you by Elizabeth
+Mattijsen.
+
+This story continues at:
+    http://use.perl.org/article.pl?sid=02/08/19/1230217
+
+Discuss this story at:
+    http://use.perl.org/comments.pl?sid=02/08/19/1230217
+
+
+
+Copyright 1997-2002 pudge.  All rights reserved.
+
+
+======================================================================
+
+You have received this message because you subscribed to it
+on use Perl.  To stop receiving this and other
+messages from use Perl, or to add more messages
+or change your preferences, please go to your user page.
+
+	http://use.perl.org/my/messages/
+
+You can log in and change your preferences from there.
+

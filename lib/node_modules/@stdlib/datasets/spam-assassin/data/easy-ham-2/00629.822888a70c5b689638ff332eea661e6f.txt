@@ -1,0 +1,88 @@
+From razor-users-admin@lists.sourceforge.net  Tue Aug 13 10:25:19 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 502774410C
+	for <jm@localhost>; Tue, 13 Aug 2002 05:20:20 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:20:20 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7D3dab15774 for <jm-razor@jmason.org>; Tue, 13 Aug 2002 04:39:37 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17eSRW-0002k1-00; Mon,
+    12 Aug 2002 20:34:02 -0700
+Received: from adsl-67-116-61-34.dsl.sntc01.pacbell.net ([67.116.61.34]
+    helo=rover.vipul.net) by usw-sf-list1.sourceforge.net with esmtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17eSR0-0006gP-00 for
+    <razor-users@lists.sourceforge.net>; Mon, 12 Aug 2002 20:33:30 -0700
+Received: (from vipul@localhost) by rover.vipul.net (8.11.6/8.11.6) id
+    g7D3XRV01298; Mon, 12 Aug 2002 20:33:27 -0700
+From: Vipul Ved Prakash <mail@vipul.net>
+To: "Craig R . Hughes" <craig@deersoft.com>
+Cc: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] Re: What's wrong with the Razor servers now?
+Message-Id: <20020812203326.A1211@rover.vipul.net>
+Reply-To: mail@vipul.net
+Mail-Followup-To: "Craig R . Hughes" <craig@deersoft.com>,
+	razor-users@lists.sf.net
+References: <aj6gbq$dt8$1@main.gmane.org>
+    <59556AF6-AE1A-11D6-A15F-00039396ECF2@deersoft.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <59556AF6-AE1A-11D6-A15F-00039396ECF2@deersoft.com>;
+    from craig@deersoft.com on Mon, Aug 12, 2002 at 10:38:44AM -0700
+X-Operating-System: Linux rover.vipul.net 2.4.18
+X-Privacy: If possible, encrypt your reply.  Key at http://vipul.net/
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Mon, 12 Aug 2002 20:33:26 -0700
+Date: Mon, 12 Aug 2002 20:33:26 -0700
+
+On Mon, Aug 12, 2002 at 10:38:44AM -0700, Craig R . Hughes wrote:
+> This is, I think the biggest fallacy here.  You don't have to 
+> block jack shit to get a high trust rating, you just have to 
+> confirm Razor's existing opinion on a large number of messages:
+> 
+> if(check() == spam) then submit() else revoke()
+> 
+> That algorithm boosts trust, but reduces the information in 
+> SpamNet by damping.
+
+Again, this is not true. Only certain events (reports/revokes) for a spam
+are rewarded and the algorithm for picking these up is based on many
+different factors.
+
+-- 
+
+Vipul Ved Prakash          |   "The future is here, it's just not 
+Software Design Artist     |    widely distributed."
+http://vipul.net/          |              -- William Gibson
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Dice - The leading online job board
+for high-tech professionals. Search and apply for tech jobs today!
+http://seeker.dice.com/seeker.epl?rel_code=31
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

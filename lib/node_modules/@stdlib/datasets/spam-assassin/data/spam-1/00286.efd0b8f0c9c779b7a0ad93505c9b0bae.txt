@@ -1,0 +1,163 @@
+From root@quinlan.colo.netbauds.net  Thu Sep 12 13:49:44 2002
+Return-Path: <root@quinlan.colo.netbauds.net>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id 798C516F03
+	for <zzzz@localhost>; Thu, 12 Sep 2002 13:49:40 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Thu, 12 Sep 2002 13:49:40 +0100 (IST)
+Received: from quinlan.colo.netbauds.net (quinlan.colo.netbauds.net
+    [62.232.161.232]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8CAOpC26847 for <zzzz@jmason.org>; Thu, 12 Sep 2002 11:24:51 +0100
+Received: (from root@localhost) by quinlan.colo.netbauds.net
+    (8.11.6/8.11.6) id g8CATmZ30743 for zzzz@jmason.org; Thu, 12 Sep 2002
+    11:29:48 +0100
+Date: Thu, 12 Sep 2002 11:29:48 +0100
+Message-Id: <200209121029.g8CATmZ30743@quinlan.colo.netbauds.net>
+To: zzzz@spamassassin.taint.org
+From: "Analysis Manager" <insider@quinlan.colo.netbauds.net>
+Subject: Membership Renewal
+Content-Type: text/html
+
+<HTML>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=Windows-1252">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<TITLE>Free Info!</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="Microsoft FrontPage 4.0" name=GENERATOR><BASE href="http://62.232.161.231/freeinfo/">
+<STYLE>
+</STYLE>
+</HEAD>
+<BODY bgColor=#ffffff leftMargin=0 topMargin=0>
+<TABLE borderColor=#ffa025 cellSpacing=0 cellPadding=0 width=680 align=center 
+bgColor=#f08800 border=2>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width=660 
+      align=center border=1>
+        <TBODY>
+        <TR>
+          <TD vAlign=top noWrap borderColor=#ffa025 width=350 
+          background="http://62.232.161.231/freeinfo/images/leftside.jpg">
+            <P align=center><B><A 
+            name=top><span style="letter-spacing: 5"><u><strong><em><font face="Times New Roman" size="7">FREE</font></em></strong></u></span></A></B></P>
+            <P align=center style="line-height: 300%"><b><em><font face="Times New Roman" size="7">The
+            Insider Stock Market Report</font></em></b></P>
+            <P align=center><b><font face="Times New Roman"><font size="7">$2400 </font><font size="6">Value</font></font><FONT 
+            color=#ffffff size=2><BR></FONT></b></P>
+            <P align=center><b><i><font face="Arial, Helvetica, sans-serif" color="#ffffff" size="5">Get
+            the latest competitive intelligence, insider knowledge and
+            deal-sourcing contacts to stay ahead &amp; succeed in this
+            supercharged market!</font></i></b></P>
+            <TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width=388 
+            border=1>
+              <TBODY>
+              <TR>
+                <TD bgcolor="#009933" width="384">
+                  <p align="center"><b><font face="Georgia" size="5" color="#000000">Free
+                  3 month subscription</font></b></p>
+                </TD></TR></TBODY></TABLE>
+            <P align=center><B><i><font face="Verdana, Arial, Helvetica, sans-serif" color="#000000" size="4">Subscribed
+            to by over 200 investment bankers, venture capitalists, fund
+            managers, deal-makers and public company CEO &amp; CFO´s</font></i></B></P>
+            <UL>
+              <LI><b><font face="Verdana, Arial, Helvetica, sans-serif" color="#000000" size="2">world
+                market overviews and updates</font></b>
+              <LI><b><font face="Verdana, Arial, Helvetica, sans-serif" color="#000000" size="2">&quot;first
+                seen&quot; analyst reports</font></b>
+              <LI><b><font face="Verdana, Arial, Helvetica, sans-serif" color="#000000" size="2">investment
+                alerts</font></b>
+              <LI><b><font face="Verdana, Arial, Helvetica, sans-serif" color="#000000" size="2">portfolio
+                strategies for the 21st century</font></b>
+              <LI><b><font face="Verdana, Arial, Helvetica, sans-serif" color="#000000" size="2">annual
+                offshore jurisdiction rankings report</font></b></UL>
+            <TABLE cellPadding=4 width=390 bgColor=black>
+              <TBODY>
+              <TR>
+                <TD>
+                  <p align="center"><strong><font face="Verdana, Arial, Helvetica, sans-serif" color="white" size="5">Get
+                  the information the professionals profit from $$$</font></strong></TD></TR>
+              <TR>
+                <TD>
+                  <p align="center"><FONT 
+            face="Arial, Helvetica, sans-serif"><B><FONT color=#ffffff size=2>Fill out the form for&nbsp;
+            <U>FREE SUBSCRIPTION</U></FONT></B></FONT> <FONT 
+            face="Arial, Helvetica, sans-serif"><B><FONT color=#ffffff size=2>No
+            credit card needed!</FONT></B></FONT></p>
+ </TD></TR></TBODY></TABLE>
+            <P align="center"><font color="#ffffff" size="2" face="Arial, Helvetica, sans-serif"><b>Sorry
+            to see you go, but to
+            unsubscribe from our newsletter&nbsp;complete the following</b></font></P>
+            <font color="#ffffff" size="2" face="Arial, Helvetica, sans-serif"><b><u><FORM ACTION="http://62.232.161.231/freeinfo/cgi-bin/manager.pl" METHOD="POST">
+<INPUT TYPE="HIDDEN" NAME="action" VALUE="remove"><INPUT TYPE="HIDDEN" NAME="autoresponder" VALUE=""><INPUT TYPE="HIDDEN" NAME="unsubscribe_redirect" VALUE="http://62.232.161.231/freeinfo/sorry.htm">
+            </u>
+<p align="center">
+Email Address&nbsp;&nbsp;&nbsp; <u><INPUT TYPE="TEXT" NAME="email" SIZE=13></u>  
+&nbsp;
+            <p align="center"><u><INPUT TYPE="HIDDEN" NAME="group1" VALUE="investors"><INPUT TYPE="SUBMIT" VALUE="Unsubscribe">
+            </p>
+</FORM></u></b></font>
+          </TD>
+          <TD vAlign=top width=300 bgColor=#000000>
+            <P align=center>&nbsp;</P>
+            <P align=center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img border="0" src="http://62.232.161.231/freeinfo/images/rightsidestuff.jpg"></P>
+            <TABLE width=383 align=center bgColor=#000000 border=0>
+              <TBODY>
+              <TR>
+                <TD width="375"> <SPAN>
+                  <CENTER>
+                  <TABLE width="370">
+                    <TBODY>
+                    <TR>
+                      <TD colSpan=2 width="367">
+                        <CENTER>
+                        <FORM ACTION="http://62.232.161.231/freeinfo/cgi-bin/manager.pl" METHOD="POST">
+<INPUT TYPE="HIDDEN" NAME="autoresponder" VALUE="">
+<p><font color="#FFFFFF" face="Arial" size="4">Please remember</font></p>
+<table border="0" width="99%">
+  <tr>
+    <td width="100%" colspan="2">
+      <p align="center"><font face="Arial" color="#FFFFFF">You must be 18 years
+      of age or older</font>
+      <p align="center"><font face="Arial" color="#000000">.</font></td>
+  </tr>
+<tr><td width="42%"><font face="Arial" color="#ffffff" size="3">Your&nbsp;First&nbsp;Name:*</font></td></center></center><td width="75%"><p align="left"><font face="Arial" color="#FFFFFF" size="3"><INPUT TYPE="TEXT" NAME="f_name" size="20"></font></p></td></tr><CENTER><CENTER><tr><td width="42%"><font face="Arial" color="#ffffff" size="3">Your&nbsp;Last&nbsp;Name:*</font></td></center></center><td width="75%"><p align="left"><font face="Arial" color="#FFFFFF" size="3"><INPUT TYPE="TEXT" NAME="l_name" size="20"></font></p></td></tr><CENTER><CENTER><tr><td width="42%"><font color="#ffffff" size="3" face="Arial">Street&nbsp;Address:*</font></td></center></center><td width="75%"><p align="left"><font color="#FFFFFF" size="3" face="Arial"><INPUT TYPE="TEXT" NAME="addr_1" size="20"></font></p></td></tr><CENTER><CENTER><tr><td width="42%"><font face="Arial" color="#ffffff" size="3">City*&nbsp;&nbsp;&nbsp;</font></td></center></center><td width="73%"><p align="left"><SPAN><font colo!
+r="#FFFFFF" size="3" face="Arial"><INPUT TYPE="TEXT" NAME="addr_2" size="20"></font></span></td></tr><CENTER><CENTER><tr><td width="42%"><span><font face="Arial" color="#ffffff" size="3">Postal&nbsp;/&nbsp;Zip&nbsp;Code:*</font></span></td></center></center><td width="75%"><p align="left"><font color="#FFFFFF" size="3" face="Arial"><INPUT TYPE="TEXT" NAME="addr_3" size="20"></font></p></td></tr><CENTER><CENTER><tr><td width="42%"><font face="Arial" color="#ffffff" size="3">Country:*</font></td></center></center><td width="75%"><p align="left"><SPAN><font face="Arial" size="3" color="#FFFFFF"><select size="1" name="addr_4"><option value="." SELECTED>Select<option value="al">Albania<option value="dz">Algeria<option value="as">American Samoa<option value="ad">Andorra<option value="ao">Angola<option value="ai">Anguilla<option value="aq">Antarctica<option value="ag">Antigua &amp; Barbuda<option value="ar">Argentina<option value="am">Armenia<option value="aw">Aruba<option value="a!
+u">Australia<option value="at">Austria<option value="az">Azerbaijan<option value="bs">Bahamas<option value="bh">Bahrain<option value="bd">Bangladesh<option value="bb">Barbados<option value="by">Belarus<option value="be">Belgium<option value="bz">Belize<option value="bj">Benin<option value="bm">Bermuda<option value="bt">Bhutan<option value="bo">Bolivia<option value="ba">Bosnia<option value="bw">Botswana<option value="bv">Bouvet Island<option value="br">Brazil<option value="io">British Ocean Territory<option value="vg">British Virgin Isles<option value="bn">Brunei<option value="bg">Bulgaria<option value="bf">Burkina Faso<option value="bu">Burma<option value="bi">Burundi<option value="kh">Cambodia<option value="cm">Cameroon<option value="cv">Cape Verde<option value="ky">Cayman Islands<option value="cf">Central African Rep.<option value="td">Chad<option value="cl">Chile<option value="cn">China<option value="cx">Christmas Island<option value="cc">Cocos Islands<option value="co">C!
+olombia<option value="km">Comoros<option value="cg">Congo<option value="ck">Cook Islands<option value="cr">Costa Rica<option value="hr">Croatia<option value="cy">Cyprus<option value="cz">Czech Republic<option value="dk">Denmark<option value="dj">Djibouti<option value="dm">Dominica<option value="do">Dominican Republic<option value="tp">East Timor<option value="ec">Ecuador<option value="eg">Egypt<option value="sv">El Salvador<option value="gq">Equatorial Guinea<option value="er">Eritrea<option value="ee">Estonia<option value="et">Ethiopia<option value="fk">Falkland Islands<option value="fo">Faroe Islands<option value="fj">Fiji<option value="fi">Finland<option value="fr">France<option value="gf">French Guiana<option value="pf">French Polynesia<option value="tf">French Southern<option value="ga">Gabon<option value="gm">Gambia<option value="ge">Georgia<option value="de">Germany<option value="gh">Ghana<option value="gi">Gibraltar<option value="gr">Greece<option value="gl">Greenlan!
+d<option value="gd">Grenada<option value="gp">Guadeloupe<option value="gt">Guatemala<option value="gn">Guinea<option value="gw">Guinea-Bissau<option value="gy">Guyana<option value="ht">Haiti<option value="hm">Heard &amp; McDonald Isles<option value="hn">Honduras<option value="hk">Hong Kong<option value="hu">Hungary<option value="is">Iceland<option value="in">India<option value="id">Indonesia<option value="ie">Ireland<option value="il">Israel<option value="it">Italy<option value="ci">Ivory Coast<option value="zzzz">Jamaica<option value="jp">Japan<option value="jo">Jordan<option value="kz">Kazakhstan<option value="ke">Kenya<option value="ki">Kiribati<option value="kr">Korea, South<option value="kw">Kuwait<option value="kg">Kyrgyzstan<option value="la">Laos<option value="lv">Latvia<option value="lb">Lebanon<option value="ls">Lesotho<option value="lr">Liberia<option value="li">Liechtenstein<option value="lt">Lithuania<option value="lu">Luxembourg<option value="mo">Macau<option val!
+ue="mk">Macedonia<option value="mg">Madagascar<option value="mw">Malawi<option value="my">Malaysia<option value="mv">Maldives<option value="ml">Mali<option value="mt">Malta<option value="mh">Marshall Islands<option value="mq">Martinique<option value="mr">Mauritania<option value="mu">Mauritius<option value="yt">Mayotte<option value="mx">Mexico<option value="fm">Micronesia<option value="md">Moldova<option value="mc">Monaco<option value="mn">Mongolia<option value="ms">Montserrat<option value="ma">Morocco<option value="mz">Mozambique<option value="na">Namibia<option value="nr">Nauru<option value="np">Nepal<option value="nl">Netherlands<option value="an">Netherlands Antilles<option value="nc">New Caledonia<option value="nz">New Zealand<option value="ni">Nicaragua<option value="ne">Niger<option value="ng">Nigeria<option value="nu">Niue<option value="nf">Norfolk Island<option value="mp">Northern Mariana Islands<option value="no">Norway<option value="om">Oman<option value="pk">Pakis!
+tan<option value="pw">Palau<option value="pa">Panama<option value="pg">Papua New Guinea<option value="py">Paraguay<option value="pe">Peru<option value="ph">Philippines<option value="pn">Pitcairn Island<option value="pl">Poland<option value="pt">Portugal<option value="pr">Puerto Rico<option value="qa">Qatar<option value="re">Reunion<option value="ro">Romania<option value="ru">Russia<option value="rw">Rwanda<option value="gs">S.Georgia &amp; S.Sandwich Isles<option value="kn">Saint Kitts &amp;amp; Nevis<option value="lc">Saint Lucia<option value="vc">Saint Vincent<option value="ws">Samoa<option value="sm">San Marino<option value="st">Sao Tome and Principe<option value="sa">Saudi Arabia<option value="sn">Senegal<option value="sc">Seychelles<option value="sl">Sierra Leone<option value="sg">Singapore<option value="sk">Slovakia<option value="si">Slovenia<option value="so">Somalia<option value="za">South Africa<option value="es">Spain<option value="lk">Sri Lanka<option value="sh">S!
+t. Helena<option value="pm">St. Pierre and Miquelon<option value="sr">Suriname<option value="sj">Svalbard<option value="sz">Swaziland<option value="se">Sweden<option value="ch">Switzerland<option value="tw">Taiwan<option value="tj">Tajikistan<option value="tz">Tanzania<option value="th">Thailand<option value="tg">Togo<option value="tk">Tokelau<option value="to">Tonga<option value="tt">Trinidad and Tobago<option value="tn">Tunisia<option value="tr">Turkey<option value="tm">Turkmenistan<option value="tc">Turks and Caicos Islands<option value="tv">Tuvalu<option value="um">U.S. Minor Outlying Islands<option value="ug">Uganda<option value="ua">Ukraine<option value="ae">United Arab Emirates<option value="uk">United Kingdom<option value="uy">Uruguay<option value="uz">Uzbekistan<option value="vu">Vanuatu<option value="va">Vatican City<option value="ve">Venezuela<option value="vn">Vietnam<option value="vi">Virgin Islands<option value="wf">Wallis and Futuna Islands<option value="eh">W!
+estern Sahara<option value="ye">Yemen<option value="yu">Yugoslavia (Former)<option value="zr">Zaire<option value="zm">Zambia<option value="zw">Zimbabwe</select></font></span></p></td></tr><CENTER><CENTER><tr><td width="42%"><font face="Arial" color="#ffffff" size="3">Telephone:*</font></td></center></center><td width="75%"><p align="left"><font color="#FFFFFF" size="3" face="Arial"><INPUT TYPE="TEXT" NAME="phone" size="20"></font></p></td></tr><CENTER><CENTER><tr><td width="42%"><font face="Arial" color="#ffffff" size="3">Mobile&nbsp;/&nbsp;Work:*</font></td></center></center><td width="75%"><p align="left"><font color="#FFFFFF" size="3" face="Arial"><INPUT TYPE="TEXT" NAME="phone_2" size="20"></font></p></td></tr><CENTER><CENTER><tr><td width="42%"><font face="Arial" color="#FFFFFF" size="3">Fax:</font></td></center></center><td width="75%"><p align="left"><font color="#FFFFFF" size="3" face="Arial"><INPUT TYPE="TEXT" NAME="fax" size="20"></font></p></td></tr><CENTER><CENTE!
+R><tr><td width="42%"><font face="Arial" color="#ffffff" size="3">Email&nbsp;Address:*</font></td></center></center><td width="75%"><p align="left"><font color="#FFFFFF" size="3" face="Arial"><INPUT TYPE="TEXT" NAME="email" size="20"></font></p></td></tr><CENTER><CENTER><tr><td width="42%"></td><td width="75%"><p><font color="#ffffff" size="3" face="Arial">* Required Fields</font></p></td></tr>
+  <tr>
+    <td width="42%"></td>
+    <td width="75%"><font face="Arial"><INPUT TYPE="HIDDEN" NAME="required" VALUE="email">
+<INPUT TYPE="HIDDEN" NAME="group1" VALUE="investors">
+<INPUT TYPE="HIDDEN" NAME="subscribe_redirect" VALUE="http://62.232.161.231/freeinfo/thanx.htm">
+<INPUT TYPE="HIDDEN" NAME="unsubscribe_redirect" VALUE="http://62.232.161.231/freeinfo/sorry.htm">
+<INPUT TYPE="HIDDEN" NAME="verify_redirect" VALUE="http://62.232.161.231/freeinfo/confirm.htm">
+<P>
+<INPUT TYPE="SUBMIT" VALUE="Subscribe">
+
+      </font></td>
+  </tr>
+</table>
+
+</FORM></center></center></TD></TR> 
+              <TR>
+                <TD align=middle width="354">
+                  <DIV align=center>&nbsp;</DIV>
+                  <DIV align=center>&nbsp;</DIV>
+                  <DIV align=center>v</DIV>
+                  <DIV align=center><img border="0" src="http://62.232.161.231/freeinfo/images/sept.jpg" width="190" height="167"></DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+</FORM>
+</BODY>
+</HTML>
+
+

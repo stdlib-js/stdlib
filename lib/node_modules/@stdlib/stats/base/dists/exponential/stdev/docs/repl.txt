@@ -1,0 +1,28 @@
+
+{{alias}}( λ )
+    Returns the standard deviation of an exponential distribution.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided a negative value for `λ`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    λ: number
+        Rate parameter.
+
+    Returns
+    -------
+    out: number
+        Standard deviation.
+
+    Examples
+    --------
+    > var v = {{alias}}( 9.0 )
+    ~0.11
+    > v = {{alias}}( 1.0 )
+    1.0
+
+    See Also
+    --------
+

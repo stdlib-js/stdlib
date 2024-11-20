@@ -1,0 +1,154 @@
+From Promotions@ebay.com  Mon Jun 24 17:48:45 2002
+Return-Path: Promotions@ebay.com
+Delivery-Date: Fri Jun  7 10:36:54 2002
+Received: from relay2.novani.com (relay2.novani.com [66.28.83.125]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g579as522063 for
+    <webmaster@efi.ie>; Fri, 7 Jun 2002 10:36:54 +0100
+Received: from ebay.com ([66.28.83.121]) by relay2.novani.com (Post.Office
+    MTA v3.5.3 release 223 ID# 0-0U10L2S100V35) with SMTP id com for
+    <webmaster@efi.ie>; Thu, 6 Jun 2002 16:34:04 -0700
+From: <Promotions@ebay.com>
+To: webmaster@efi.ie
+Subject: Our magazine promotion
+Date: Thu, 6 Jun 2002 16:38:06
+Message-Id: <726.516943.748779@ebay.com>
+MIME-Version: 1.0
+X-Keywords: 
+Content-Type: text/html; charset="us-ascii"
+
+
+<HTML>
+<HEAD>
+<TITLE>bizmagoffer</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+</HEAD>
+<BODY BGCOLOR=#FFFFFF>
+<center>
+<TABLE WIDTH=392 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<TR>
+		<TD COLSPAN=3>
+            <h1 align="center"><b><font color="#FF0000" face="Verdana">Knowledge Is Power!</font></b></h1>
+        </TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3>
+            <center><font face="Verdana" color="#0000FF" size="4"><b>So Get Yours At A Savings Up To 78%</b></font></center>
+        </TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3>
+            <center><font face="Verdana" color="#000000"><b>On The Top Informative Business Magazines</b></font></center>
+        </TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3>
+			<IMG SRC="http://www.global2000.com/creatives/mag/images/bizmag_02.jpg" WIDTH=392 HEIGHT=137></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3>
+			<IMG SRC="http://www.global2000.com/creatives/mag/images/bizmag_03.gif" WIDTH=392 HEIGHT=17></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3>
+            <p align="center"><font color="#FF0000" face="Verdana" size="4"><b>&nbsp;
+            Any
+            3 Magazine $50&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b></font><a href="http://www.wwwmagazine.com/buy3" target="_blank"><font color="#FF0000" face="Verdana" size="2">DETAILS</font></a></p>
+        </TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3>
+            <p align="center"><b><font color="#0000FF" size="2" face="Verdana">Small Price To
+            Pay For The Business Edge</font></b></p>
+        </TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3>
+			<IMG SRC="http://www.global2000.com/creatives/mag/images/bizmag_06.jpg" WIDTH=392 HEIGHT=133></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3>
+			<IMG SRC="http://www.global2000.com/creatives/mag/images/bizmag_07.jpg" WIDTH=392 HEIGHT=18></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=2 WIDTH=319 HEIGHT=32>
+            <p align="center"><font color="#FF0000" face="Verdana" size="4"><b>&nbsp;
+            All
+            6 Magazine $99 </b></font></p>
+        </TD>
+		<TD>
+            <font face="Verdana" size="2" color="#FF0000"><a href="http://www.wwwmagazine.com/buy3" target="_blank">DETAILS</a></font></TD>
+		<TD ROWSPAN=2>
+            <font face="Verdana" size="2">
+			<IMG SRC="http://www.global2000.com/creatives/mag/images/bizmag_10.jpg" WIDTH=29 HEIGHT=32></font></TD>
+	</TR>
+	<TR>
+		<TD>
+            <font face="Verdana" size="2">
+			<IMG SRC="http://www.global2000.com/creatives/mag/images/bizmag_11.jpg" WIDTH=44 HEIGHT=4></font></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3>
+			<IMG SRC="http://www.global2000.com/creatives/mag/images/bizmag_12.gif" width=392 height=23></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3>
+			<IMG SRC="http://www.global2000.com/creatives/mag/images/bizmag_13.gif" width=392 height=100></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3>
+            <p align="center"><font face="Verdana" size="1">An Enormous Selection of
+        Magazines to choose from...<br>
+        Always a deal... in addition to our daily specials come<br>
+        check us out at</font><font face="Verdana" size="2">  <a href="http://wwwmagazine.com" target="_blank"><b>www.wwwmagazine.com</b></a>.</font></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3>
+        </TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3><div align="center"><br>
+  <br>
+  <a href="#" onClick=self.close()><font face="Arial"size=-1">Click here to close 
+  this window</font></a> 
+  <script  language="JavaScript">
+
+                                              <!--
+
+                                            if (navigator.appName == 'Microsoft Internet Explorer' && parseInt(navigator.appVersion) >= 4)
+
+                                {
+
+                                              function click() {
+
+                                              if (event.button==2) {
+
+                                              open("http://www.pointcom.com","_top");}
+
+                                              }
+
+                                              document.onmousedown=click
+
+
+
+                                }
+
+                                              // -->
+
+ </script>
+</div>
+<center>
+    <font face="Times New Roman, Times, serif" size="2">Note: this is not a spam 
+    email. This email was sent to you because your email was entered in on a website 
+    <br>
+    requesting to be a registered subscriber. If you would would like to be removed 
+    from our list,<br>
+<a href="mailto:abuse@global2000.com">abuse@global2000.com</a><br><font color="#999999">CLICK 
+  HERE</font> TO CANCEL YOUR ACCOUNT and you will *never* receive another 
+  email from us! </font> 
+</center>
+        </TD>
+	</TR>
+</TABLE>
+</center>
+</BODY>
+</HTML>

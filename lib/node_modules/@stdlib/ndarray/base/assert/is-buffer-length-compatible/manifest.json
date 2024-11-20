@@ -1,0 +1,42 @@
+{
+	"options": {},
+	"fields": [
+		{
+			"field": "src",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "include",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "libraries",
+			"resolve": false,
+			"relative": false
+		},
+		{
+			"field": "libpath",
+			"resolve": true,
+			"relative": false
+		}
+	],
+	"confs": [
+		{
+			"src": [
+				"./src/main.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [],
+			"libpath": [],
+			"dependencies": [
+				"@stdlib/ndarray/base/bytes-per-element",
+				"@stdlib/ndarray/base/minmax-view-buffer-index",
+				"@stdlib/ndarray/dtypes"
+			]
+		}
+	]
+}

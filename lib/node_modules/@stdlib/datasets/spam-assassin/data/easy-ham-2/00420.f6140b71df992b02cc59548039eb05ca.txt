@@ -1,0 +1,54 @@
+From ilug-admin@linux.ie  Fri Aug 16 12:00:13 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 29F6143C32
+	for <jm@localhost>; Fri, 16 Aug 2002 07:00:13 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 16 Aug 2002 12:00:13 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7GAufa13873 for
+    <jm-ilug@jmason.org>; Fri, 16 Aug 2002 11:56:41 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA22255; Fri, 16 Aug 2002 11:54:47 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail03.svc.cra.dublin.eircom.net
+    (mail03.svc.cra.dublin.eircom.net [159.134.118.19]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id LAA22214 for <ilug@linux.ie>; Fri,
+    16 Aug 2002 11:54:39 +0100
+From: prosthesis@eircom.net
+Message-Id: <200208161054.LAA22214@lugh.tuatha.org>
+Received: (qmail 12108 messnum 566459 invoked from
+    network[159.134.237.77/kearney.eircom.net]); 16 Aug 2002 10:54:09 -0000
+Received: from kearney.eircom.net (HELO webmail.eircom.net)
+    (159.134.237.77) by mail03.svc.cra.dublin.eircom.net (qp 12108) with SMTP;
+    16 Aug 2002 10:54:09 -0000
+To: ilug@linux.ie
+Subject: Re: [ILUG] Mirror a website
+Date: Fri, 16 Aug 2002 11:49:25 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 8bit
+X-Originating-Ip: 159.134.221.29
+X-Mailer: Eircom Net CRC Webmail (http://www.eircom.net/)
+Organization: Eircom Net (http://www.eircom.net/)
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+You could try HTTrack, available here: http://www.httrack.com/index.php
+
+It does recursive grabs of stuff, gets pictures etc.
+
+Hello everyone, by the way.
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

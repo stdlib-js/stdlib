@@ -1,0 +1,75 @@
+From rpm-list-admin@freshrpms.net  Fri Oct  4 10:59:45 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id CB70E16F17
+	for <jm@localhost>; Fri,  4 Oct 2002 10:59:43 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 04 Oct 2002 10:59:43 +0100 (IST)
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g93MWhK17771 for
+    <jm-rpm@jmason.org>; Thu, 3 Oct 2002 23:32:43 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g93MR1f30385; Fri, 4 Oct 2002 00:27:01
+    +0200
+Received: from python (80-24-132-206.uc.nombres.ttd.es [80.24.132.206])
+    (authenticated) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g93MQSf26521 for <rpm-list@freshrpms.net>; Fri, 4 Oct 2002 00:26:29 +0200
+From: Matthias Saou <matthias@rpmforge.net>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: apt.conf suggestion
+Message-Id: <20021004002618.1b352b30.matthias@rpmforge.net>
+In-Reply-To: <1033681684.3133.100.camel@bobcat.ods.org>
+References: <1033681684.3133.100.camel@bobcat.ods.org>
+Organization: freshrpms.net / rpmforge.net
+X-Mailer: Sylpheed version 0.8.3claws (GTK+ 1.2.10; i386-redhat-linux)
+X-Operating-System: Red Hat GNU/Linux forever!
+X-Subliminal-Message: Use Linux... use Linux... use Linux...
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Fri, 4 Oct 2002 00:26:18 +0200
+Date: Fri, 4 Oct 2002 00:26:18 +0200
+
+Once upon a time, Ville wrote :
+
+> how about applying this to the default apt.conf shipped with the
+> freshrpms.net apt package?  I found it a bit weird when the behaviour
+> changed between the old 0.3.x and the new 0.5.x versions so that when
+> doing a "apt-get upgrade", it wouldn't tell me *which* packages were to
+> be upgraded, just that it was about to upgrade something...
+
+Indeed, I found that strange too, then I noticed the "-u" switch and used
+that... but your solution is much better :-) The next apt build will
+incorporate this change (not worth a rebuild for this, and as some
+relatively important cnc7 bugs are currently being fixed, I'd say cnc8
+isn't far off!).
+
+Matthias
+
+-- 
+Clean custom Red Hat Linux rpm packages : http://freshrpms.net/
+Red Hat Linux release 7.3 (Valhalla) running Linux kernel 2.4.18-10acpi
+Load : 0.02 0.06 0.10
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

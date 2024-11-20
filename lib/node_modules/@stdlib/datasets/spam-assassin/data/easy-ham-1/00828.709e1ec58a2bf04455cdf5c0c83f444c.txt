@@ -1,0 +1,130 @@
+From fork-admin@xent.com  Tue Oct  1 10:41:40 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id E843216F75
+	for <jm@localhost>; Tue,  1 Oct 2002 10:39:28 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 01 Oct 2002 10:39:28 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8UMUDK18674 for <jm@jmason.org>;
+    Mon, 30 Sep 2002 23:30:13 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 3A9042940A5; Mon, 30 Sep 2002 15:30:10 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from 192.168.1.2 (smtp.piercelaw.edu [216.204.12.219]) by
+    xent.com (Postfix) with ESMTP id 316E029409E for <Fork@xent.com>;
+    Mon, 30 Sep 2002 15:29:43 -0700 (PDT)
+Received: from 192.168.30.220 ([192.168.30.220]) by 192.168.1.2;
+    Mon, 30 Sep 2002 18:29:31 -0400
+From: bitbitch@magnesium.net
+X-Mailer: The Bat! (v1.61) Educational
+Reply-To: bitbitch@magnesium.net
+X-Priority: 3 (Normal)
+Message-Id: <16680971951.20020930182931@magnesium.net>
+To: "Bill Stoddard" <bill@wstoddard.com>
+Cc: Fork@xent.com
+Subject: Re[6]: A moment of silence for the First Amendment (fwd)
+In-Reply-To: <JHEPKCEMGPKFFDHHDDKDAEKEFIAA.bill@wstoddard.com>
+References: <JHEPKCEMGPKFFDHHDDKDAEKEFIAA.bill@wstoddard.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 30 Sep 2002 18:29:31 -0400
+
+Hello Bill,
+
+Monday, September 30, 2002, 5:46:11 PM, you wrote:
+
+
+>> MF> I don't think free speech is a license to speak directly at
+>> and be in the
+>> MF> physical presence of any particular individual of your
+>> choosing - especially
+>> MF> when that individual is busy doing something else and isn't
+>> interested.
+
+BS> Yep. I agree 100%
+
+>>
+>> Sure.  And that goes back to my second argument -- Cohen.   THey can
+>> walk away.   NObody compells them to stand there, I'll agree fully.
+>> But we still have a Constitutional right to speak out against
+>> policies, actions and grievances.
+>>
+>> Again.  If you want it another way, lets change the Constitution.
+
+BS> Huh?  Are you saying that whoever has the loudest voice gets to be heard?
+BS> Shouting down a public speaker could be considered a form of censorship. If
+BS> shouting down public speakers is 'protected' it is only a matter of time
+BS> before the people doing the shouting have their tactic used against
+BS> them -every single time they open their mouth-. The tactic is stupid and
+BS> non-productive and if generally used, will only result in chaos.  The tactic
+BS> is just stupid ego-bation at best, unless the goal is to generate chaos.
+BS> And humans whose goals and actions in life are to create chaos in society
+BS> should be locked up (provided you can accurately identify them, which is not
+BS> really possible anyway, but hey, this is my rant :-). IMHO.
+
+BS> Bill
+
+
+No offense or anything, but there's a difference between holding a
+sign that doesn't agree with Bush and screaming at him.
+
+My sole point, as far as the 1st Amendment goes is that there is more
+to this game than just being an angry, liberal youth.  (Which is the
+gross culmination of everyone's argument sofar)  The screaming isn't
+the most effective method around.  I don't believe I argued that it
+was.  But screaming is happening because the means to communicate to
+the representatives involved are diminishing, at least as far as the
+people doing the screaming are concerned.   For the record, I don't
+support the screamers in organized conferences (Such as the Colin
+Powell shout-down that was mentioned earlier).  I don't think that
+this is what the 1st Amendment was implying.  These folks -do- have a
+right to be heard, and I think they have a right to be heard by the
+folks they elected in the first place.
+
+My point, (my only point) was really more concerned with the cases
+such as Mr. Nell.   He wasn't engaged (at least from the limited facts
+we have) in a shoutout, but rather in a difference of opinion.   He
+has a right to possess this opinion and make it known  to the
+representatives that are elected.   A sign is not a shout-out.
+
+I think I may have missed (or not accurately addressed) the original
+thread switch that took this example and mixed in the screaming
+dissenters to the mix.  I was mostly responding with my miffedness in
+having broad-brush strokes applied to a group without examining the
+policy reasons that might have contributed to it.   IN this case, the
+screaming parties are fed up with getting corralled miles away from
+the folks they need to speak with.   They're resorting to creative,
+offensive and constitutionally challengable means, but its not simply
+due to the fact that they're 20 and have lost all decorum.   The 'My
+generation never did this ' is all BS.   THere's more to this story,
+we just dont' know it all.
+
+I hope this clarifies my position.   For the quick rehash:
+
+Screaming != Free speech on all cases.
+Dissent = Free speech, provided you follow what has been laid down by
+the Supremes.
+
+K?
+
+-- 
+Best regards,
+ bitbitch                            mailto:bitbitch@magnesium.net
+
+

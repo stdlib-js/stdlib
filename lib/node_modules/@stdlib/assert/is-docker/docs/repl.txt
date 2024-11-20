@@ -1,0 +1,12 @@
+
+{{alias}}
+    Boolean indicating if the process is running in a Docker container.
+
+    Examples
+    --------
+    > {{alias}}
+    <boolean>
+
+    See Also
+    --------
+

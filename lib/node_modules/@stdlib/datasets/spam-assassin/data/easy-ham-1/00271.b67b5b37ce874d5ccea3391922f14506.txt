@@ -1,0 +1,454 @@
+From ilug-admin@linux.ie  Wed Oct  9 10:54:27 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id 1ECDE16F22
+	for <zzzz@localhost>; Wed,  9 Oct 2002 10:52:35 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 09 Oct 2002 10:52:35 +0100 (IST)
+Received: from lugh.tuatha.org (postfix@lugh.tuatha.org [194.125.145.45])
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g98LpZK03515 for
+    <zzzz-ilug@spamassassin.taint.org>; Tue, 8 Oct 2002 22:51:35 +0100
+Received: from lugh.tuatha.org (localhost [127.0.0.1]) by lugh.tuatha.org
+    (Postfix) with ESMTP id 2F704341D0; Tue,  8 Oct 2002 22:52:19 +0100 (IST)
+Delivered-To: linux.ie-ilug@localhost
+Received: from web13904.mail.yahoo.com (web13904.mail.yahoo.com
+    [216.136.175.67]) by lugh.tuatha.org (Postfix) with SMTP id AE0E03410E for
+    <ilug@linux.ie>; Tue,  8 Oct 2002 22:51:56 +0100 (IST)
+Message-Id: <20021008215152.80676.qmail@web13904.mail.yahoo.com>
+Received: from [159.134.177.169] by web13904.mail.yahoo.com via HTTP;
+    Tue, 08 Oct 2002 23:51:52 CEST
+From: =?iso-8859-1?q?Paul=20Linehan?= <plinehan@yahoo.com>
+Subject: Re: [ILUG] Interesting article on free software licences
+To: ilug@linux.ie
+In-Reply-To: <20021007101909.A16074@wanadoo.fr>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Beenthere: ilug@linux.ie
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:ilug-request@linux.ie?subject=help>
+List-Post: <mailto:ilug@linux.ie>
+List-Subscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=subscribe>
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+List-Unsubscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=unsubscribe>
+List-Archive: <http://www.linux.ie/pipermail/ilug/>
+X-Original-Date: Tue, 8 Oct 2002 23:51:52 +0200 (CEST)
+Date: Tue, 8 Oct 2002 23:51:52 +0200 (CEST)
+
+
+
+I have translated the article in full - see 
+end of post (I think that I've done a far 
+better job than the Google translation - at 
+least it's readable now - any corrections
+appreciated).
+
+Stuff in {}'s is my (and others) additions 
+to the debate.
+
+My apologies if I've paraphrased anybody 
+incorrectly, I will be glad to retract if 
+anyone is miffed.
+
+
+
+The article makes four main points.
+
+
+1) Absence of critical clauses. 
+
+
+In this case, the idea is that the licence 
+is invalid because it doesn't specify
+under what country's law the GPL is governed.
+
+
+2) Specification in English only.
+
+That for the end user (as opposed to businesses), 
+the GPL doesn't apply because it's not written 
+in French.
+
+
+3) Arbitary licence change.
+
+The point here is that (under French law) the 
+author can change the terms of the licence 
+arbitarily. This is because any granting of 
+rights by an author must be clearly delimited
+in terms of how long, where, to whom, dates and 
+times. In the absence of such limitations, the 
+original author has the right to change his 
+software back to closed on a whim.
+
+
+{
+
+David Neary makes the point that the copyright 
+holder automatically retains the right to change 
+the licence.
+
+Scott replies it simply requires authorisation from 
+all *copyright holders*
+
+That's not my understanding. French law allows a 
+GPL type licence *_on condition_* that the 
+specific conditions of the granting of such
+rights are clear - if they are not, there is
+nothing to stop the original author taking
+back "his work". The lawyers see this
+(correctly IMHO) as a weakness in the GPL).
+
+}
+
+
+
+4) Hidden defects.
+
+Roughly, this clause means that the author(s) 
+is/are liable for any defects if the consumer 
+is not an IT engineer, so if Linux blows up 
+and data is lost, then the authors are liable.
+
+
+{
+
+Ciaran Johnson says that M$oft and others have 
+similar clauses - the point here is that they 
+are *_all_* invalid - just that this one 
+affects the GPL also.
+
+Niall O'Broinn makes the point that it is not
+a sale, but rather a service/leasing arrangement
+and that's why it doesn't come under this point.
+
+I would suggest that the whole thrust of this
+article has been to see software "sales" (even
+if no money changes hands) as governed very
+much by consumer law (in France anyway).
+
+
+Rick Moen makes the point that it is not
+a sale but rather a granting of rights which
+are not default. 
+
+See the bit about even the granting of 
+rights by an author having to be 
+explicitly specified - under French law.
+
+
+The fact that two IP lawyers in France think that
+the GPL is covered as a sale make me feel that 
+there is a de facto sale and a de facto contract.
+
+}
+
+
+
+5) Roughly.
+
+There may be other reasons under French 
+law why the  GPL may be invalid.
+
+
+
+-----  Whole Article. -----------
+
+
+Freedom(a) is worth more than these 
+imperfect licences.
+
+
+Specialised lawyers look at the GPL.
+
+
+
+Lawyer Cyril Rojinsky (duly appointed to 
+the court) and the jurist Vincent Grynbaum, both 
+specialised in the area of intellectual property 
+examine the "free" licences and in particular the 
+GPL. They have published their study
+in the review "Proprietes intellectuelles 
+(Intellectual property)[1]" and their
+conclusion is grim.
+
+
+Their approach is interesting. The problem for 
+them is not to know whether freedom is valid under 
+French law (for them the question is a moot point)
+but rather they asked themselves about the form 
+and the content of the text of free licences, and 
+in particular the GPL. The problem is not free 
+programmes, but rather the licence contracts of 
+free programmes.
+
+
+
+Absence of critical clauses.
+
+
+
+The authors tell us that first of all, the 
+reference to "copyright" is not legally 
+sufficient in the framework of international 
+contracts  (which is the case of licence 
+contracts for programmes developed and spread 
+via the Internet). The idea of copyright can 
+basically include differences from one country 
+to another. This is why, under international 
+contracts, it is necessary to specify to which 
+laws one is referring (French law, American &c.).
+
+The authors only found three public licences 
+which were correctly formulated on this point: 
+QPL, IBM Public Licence and the Mozilla Public
+Licence).
+
+
+
+Specification in the English language.
+
+
+
+Next, the authors remind us that (at least in 
+France), no clause in a contract may be contrary 
+to French law [2]. However, it turns out that a 
+licence such as the GPL is contrary to French law 
+in several respects. Firstly, it is written in 
+English and the FSF doesn't officially approve 
+translations. 
+
+The "Toubon law" obliges this sort 
+of contract to be written in French, including for 
+businesses since the notion of "user" applies not 
+only to consumers, but also to businesses, 
+professionals &c. 
+
+
+Contacted by the editors of LinuxFrench, 
+lawyer Cyril Rojinsky declared that, as 
+far as business is concerned, the "Toubon 
+law" is probably doomed to change since 
+it is in contradiction of European directives 
+on the subject, but whatever about that, the 
+problem is still valid for individuals, and 
+while waiting for it (French law) to change, 
+French companies have to deal with it, since 
+it is the law of the land.
+
+
+A programme under the GPL can suddenly 
+change licence.
+
+
+Another problem, much more serious, is 
+that according to French law, the author of 
+a free programme can, at any time, invoke 
+the invalidity of the licence for this 
+software by simply changing the licence.
+
+
+In effect, the law of intellectual 
+property stipulates that the granting of  
+rights by the author is subordinate to 
+the condition that each of these granted 
+rights be the object of a distinct clause 
+in the granting act (i.e. the licence) and 
+that the granting of any such rights be 
+delimited with respect to its scope and its 
+grantees, and also with respect to its 
+location (i.e. where such rights may be 
+excersised)  and duration of any such grants. 
+[3] This is not the case of the GPL nor of
+other free licences. Briefly, this means 
+that in France, or elsewhere if the author 
+is French, that which is under the GPL could 
+revert to proprietary from one day to the next. 
+ 
+
+
+The problem of the guarantee "hidden defects".
+
+
+An other very serious flaw is that of the 
+guarantee. The GPL licences and others show 
+that the software is delivered "without 
+guarantee". You are going to immediately
+reply that commercical programmes carry the 
+same clause in their licence contracts,
+and this is correct. However, whatever is 
+written in a licence contract, one cannot
+free oneself from the "guarantee from 
+hidden defects", since it is imposed in the 
+Civil Code. This concept is poorly understood 
+by the layman, it protects the buyer
+(whoever it may be, individual or business, 
+since it specifies the Civil Code and not 
+consumer protection law) against hidden 
+defects, deliberate or made in good faith by 
+the seller. 
+
+
+For example, if one buys a pair of socks 
+in a sale, and the shop has a notice 
+specifying that "Sale items are neither 
+refunded nor exchanged", and on arriving 
+home you notice that one of the socks has 
+a hole in it, several scenarios are possible.
+
+
+You could have checked the socks before 
+purchase: the flaw is deemed "obvious" and
+you can sing for your money.
+
+
+You couldn't check the socks (they were 
+packaged for example), and in this case, 
+despite the notice "neither refund nor 
+exchange", you may invoke "hidden defect" 
+and have them changed or obtain a refund, 
+it's up to you. 
+
+Personally, I have already invoked in shops 
+the "hidden defect" clause and it always 
+worked well (shopkeepers are always very 
+cooperative if you quote a couple of words 
+of the Civil Code). 
+
+
+The concept of hidden defect is rather 
+wide, it is necessary that you hadn't 
+the possibility of discovering the defect 
+before buying the product and then 
+(according to the Civil Code) that you 
+wouldn't have bought it at that price if 
+you had known about the
+defect.
+
+
+The third case which is much rarer , is 
+if you are able to show that the vendor had
+knowledge of the defect (hidden), but didn't 
+inform you. In this case, not only does he 
+have to reimburse the product, but all 
+expenses incurred by the sale (metro 
+tickets to go to the shop, the fuse 
+which blew when you plugged it in &c.)
+
+
+This idea of "hidden defect" applies to
+ all products, including programmes. This 
+was made abundantly clear by the 
+authorities (and the courts) surrounding 
+Y2K. 
+
+This is particularly inconvenient for 
+free programmes, since a site which 
+offers a Linux distro for download is 
+supposed to provide a guarantee against 
+hidden flaws.
+
+
+LinuxFrench asked Cyril ROJINSKY if 
+in the case of a free programme, 
+one could speak about a "hidden" defect 
+since the source code was available, 
+he replied "Actually, concerning the 
+guarantee, the question of obvious 
+defect will arise. This analyis will 
+be different depending on whether the 
+person who downloads the distribution 
+is an IT professional or not". 
+
+OpenSource has this advantage over 
+the proprietary programme: it protects 
+the distributor against a guarantee of
+hidden defect insofar as the buy is an 
+IT person. But, for distribution to the 
+public at large, the problem remains 
+the same.
+
+
+
+Roughly Speaking.
+
+
+Lawyer Cyril ROJINSKY said it himself, 
+this study is far from being exhaustive 
+and many other areas could be explored. 
+
+During this interview, we asked ourselves, 
+for example, about the fragility of the 
+GPL clause which forbids linking source 
+code under the GPL with proprietary code. 
+
+In effect, the laws of intellectual 
+property give the right to the user 
+to modify a programme with the
+intention of permitting interoperability 
+with another programme. If for that,
+I need to link with a proprietary library 
+(communication protocol, device driver)
+I may consider as "null and void" this 
+clause of the GPL.
+
+
+The conclusion of this study is a wake 
+up call for the community. "Freedom" 
+merits more than these shoddy licences, 
+which should be modified before court 
+cases over them proliferate and put at 
+risk the undeniable originality of 
+this effort.
+
+
+---------------------------
+
+
+[1] Une publication de l'Institut 
+de recherche en propriété 
+intellectuelle, No4 Juillet 2002
+
+[2] Une telle clause de contrat 
+qui est opposée à ce que dit la Loi 
+française est qualifiée en terme 
+juridique de « clause réputée 
+non-écrite », c'est-à-dire 
+qu'on fait comme si cette clause 
+n'était pas écrite dans le contrat. 
+
+C'est pour cela par exemple que vous 
+pouvez signer un bail pour un 
+appartement qui stipule que 
+les enfants sont interdits dans 
+l'immeuble, et envisager sans 
+inquiétude d'avoir quand même 
+un enfant, en effet le code civil 
+stipule que le devoir d'un locataire 
+d'un appartement doit se comporter 
+en « bon père de famille » 
+
+[3] Article L131-3
+
+
+
+
+
+
+
+___________________________________________________________
+Do You Yahoo!? -- Une adresse @yahoo.fr gratuite et en français !
+Yahoo! Mail : http://fr.mail.yahoo.com
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

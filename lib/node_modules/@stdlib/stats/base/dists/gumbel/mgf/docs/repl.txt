@@ -1,0 +1,78 @@
+
+{{alias}}( t, μ, β )
+    Evaluates the moment-generating function (MGF) for a Gumbel distribution
+    with location parameter `μ` and scale parameter `β` at a value `t`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `β <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    t: number
+        Input value.
+
+    μ: number
+        Location parameter.
+
+    β: number
+        Scale parameter.
+
+    Returns
+    -------
+    out: number
+        Evaluated MGF.
+
+    Examples
+    --------
+    > var y = {{alias}}( -1.0, 0.0, 3.0 )
+    6.0
+    > y = {{alias}}( 0.0, 0.0, 1.0 )
+    1.0
+    > y = {{alias}}( 0.1, 0.0, 3.0 )
+    ~1.298
+
+    > y = {{alias}}( NaN, 0.0, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, 0.0, NaN )
+    NaN
+
+    // Case: `t >= 1/beta`
+    > y = {{alias}}( 0.8, 0.0, 2.0 )
+    NaN
+
+    // Non-positive scale parameter:
+    > y = {{alias}}( 0.0, 0.0, -1.0 )
+    NaN
+
+
+{{alias}}.factory( μ, β )
+    Returns a function for evaluating the moment-generating function (MGF) of a
+    Gumbel distribution with location parameter `μ` and scale parameter `β`.
+
+    Parameters
+    ----------
+    μ: number
+        Location parameter.
+
+    β: number
+        Scale parameter.
+
+    Returns
+    -------
+    mgf: Function
+        Moment-generating function (MGF).
+
+    Examples
+    --------
+    > var myMGF = {{alias}}.factory( 0.0, 3.0 );
+    > var y = myMGF( -1.5 )
+    ~52.343
+    > y = myMGF( -1.0 )
+    6.0
+
+    See Also
+    --------
+

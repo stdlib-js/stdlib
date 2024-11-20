@@ -1,0 +1,214 @@
+From bruces@well.com  Mon Aug 19 10:59:07 2002
+Return-Path: <bruces@well.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D49BD4413D
+	for <jm@localhost>; Mon, 19 Aug 2002 05:50:47 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:50:47 +0100 (IST)
+Received: from yami.57thstreet.com ([66.100.224.110]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with SMTP id g7I3JC623590 for
+    <jm@jmason.org>; Sun, 18 Aug 2002 04:19:12 +0100
+Received: (qmail 65842 invoked by uid 1045); 18 Aug 2002 03:18:50 -0000
+Date: 18 Aug 2002 03:18:50 -0000
+Message-Id: <20020818031850.65841.qmail@yami.57thstreet.com>
+From: Bruce Sterling <bruces@well.com>
+To: yyyy@spamassassin.taint.org
+Subject: Viridian Note 00330: Ocean Bugs
+
+Key concepts: microbes, methane,
+Black Sea, Big Mike the Viridian Bug
+
+Attention Conservation Notice:   Continues
+the Viridian obsession with ecologically
+active micro-organisms.
+
+Links:
+
+GM to give away thousands of electric vehicles - USA 
+http://www.planetark.org/dailynewsstory.cfm/newsid/17318/story.htm
+
+Sinking Pacific states slam US over sea levels - FIJI 
+http://www.planetark.org/dailynewsstory.cfm/newsid/17316/story.htm
+
+Famished Australian emus invade drought-hit farms - 
+AUSTRALIA 
+http://www.planetark.org/dailynewsstory.cfm/newsid/17330/story.htm
+
+---------------------------------------------------
+Entries in the Global Civil Society Design Contest.
+
+From: Steven W. Schuldt <swschuldt*mac.com>
+http://www.americanrobotz.com/images2/Soon_GlobalCivilSoci
+etyLaptop.jpg
+
+From: Ben Davis <bend*earthlink.net>
+http://www.digitaleverything.com/GlobalComputer.htm
+
+From: Joerg F. Wittenberger <Joerg.Wittenberger*pobox.com>
+http://www.askemos.org/ 
+http://www.askemos.org:9080/RomePaper.pdf
+
+From: Scott Vandehey <scot*spaceninja.com >
+http://spaceninja.com/viridian/notebook.html
+
+From: Bob Morris <bob*bomoco.com>
+http://viridianrepository.com/GlobalCivil/
+
+From: Anonymous
+http://home.freiepresse.de/befis/zx2000.html
+http://apollo.spaceports.com/~bodo4all/zx/zx97.htm
+http://www.vkb.co.il/
+
+From: Jim Thompson <jim*musenki.com>
+http://www.simputer.org
+http://www.cnn.com/2002/TECH/ptech/07/05/india.simputer.reut/index.html
+
+From: Mike Rosing <eresrch*eskimo.com>
+http://www.eskimo.com/~eresrch/viridian
+
+From: Till Westermayer <till*tillwe.de>
+http://www.westermayer.de/till/projekte/02gcsdl.htm
+
+From: Duncan Stewart <stewarts*stewarts.org?>
+http://www.stewarts.org/viridian/GCS
+
+From: R. Charles Flickinger <idlewild*mac.com>
+http://homepage.mac.com/iHUG/GCS2000.html
+
+From: Kevin Prichard <kevin*indymedia.org>
+http://www.nah6.com/
+http://www.nah6.com/nah6-h2k2_files/v3_document.html
+
+From: Dave Phelan <dphelan*pavilion.co.uk
+http://www.btinternet.com/~dphelan/viridian/gcs-computer.html
+
+From: "Dan Reynolds" <orion_obrien*hotmail.com>
+http://www.nv2.cc.va.us/home/alwhite2/flotsam1.htm 
+
+From: John Romans  <joro*panicfire.net>
+http://www.panicfire.net/cryptoviridian.htm 
+
+From:  "Allen Wong" <threadprinter*hotmail.com>
+http://www.fieldsync.com/viridian/ 
+
+From: "Joel Westerberg" <joel*unsafe.nu>
+
+"Here's my contest entry.  Cheers." 
+http://www.unsafe.nu/bigmike/global.PDF 
+
+From:  "Chris McCormick" <chris*mccormick.cx>
+
+"Hi,  I hope i'm not too late!" 
+http://mccormick.cx/viridian/ 
+
+"Regards,  Chris."
+http://www.mccormick.cx 
+http://www.sciencegirlrecords.com 
+
+From:  "adrian cotter" <acotter*nonsensical.com>
+
+"As usual I'm cutting the deadline close... But I've 
+honestly been thinking about this one for a good month.  
+If only I had one of these, my life would be better."
+http://www.nonsensical.com/viridian/notebook/ 
+
+From: "jg"  <jg@solarpc.com>
+"Emperor Bruce, here it is."
+http://solarpc.com/contest.htm 
+
+From: Kevin Prichard <musicasa*prichard.org>
+Subject: link to Kevin Prichard's own
+global civ design entry
+http://prichard.org/viridian_globcivsoc.html
+
+This contest has now expired.   A winner will
+be announced at the discretion of our judge.
+----------------------------------------------------
+
+Source:
+http://www.planetark.org/dailynewsstory.cfm/newsid/17250/story.htm
+
+"Germans discover ancient life, offer climate hope"
+by Philip Blenkinsop 
+
+GERMANY: August 12, 2002
+
+"BERLIN == German scientists have discovered micro-
+organisms deep under the sea that may provide an insight 
+into some of the earth's first lifeforms and offer hope in 
+the fight against global warming, the Max Planck Society 
+said. 
+
+    "The marine biologists and geologists believe they 
+have shown life could have existed by processing methane 
+without the presence of oxygen.
+
+    "Their findings could also prove useful in ridding the 
+earth of excess methane, one of the greenhouse gases many 
+scientists believe is responsible for global warming.
+
+    "Traditional views of early life on earth centre on 
+plants which converted carbon dioxide to oxygen.
+
+     "'These (plant lifeforms) date back to between three 
+and 3.5 billion years ago... We have found biomass (large 
+cluster of organisms) using methane that geologists show 
+could have existed around four billion years ago,' 
+Professor Antje Boetius, joint author of the study, told 
+Reuters.
+
+Link:
+Yes, she exists.  Dr. Antje does more than exist.  She
+gives some kinda publicity shot.  Dang!
+http://www.mpi-bremen.de/deutsch/biogeo/aboetius/aboetius.html
+http://www.iu-bremen.de/directory/faculty/01063/
+
+      "The two-year research by the scientists from 
+Hamburg University, the Alfred Wegener Institute in 
+northern Bremerhaven and the Max Planck Society centred on 
+coral-forming micro-organisms in the Black Sea at depths 
+where no oxygen and no light is present.
+
+     "The Black Sea contains the largest oxygen-free basin 
+in the world.
+
+     "The lifeforms were able to process methane together 
+with sulphates within the water, producing carbonates, in 
+the form of coral, as waste.  (((Black, oxygen-free 
+"coral".  I wonder what that stuff looks like.  Maybe you 
+could make jewelry out of it.)))
+
+     "That they were able to do so without oxygen suggests 
+they may have been around before plant life.
+
+      "'Perhaps micro-organisms like those found in the 
+Black Sea were the original inhabitants of the earth 
+during a long period of the earth's history,' said 
+Boetius.  (((Yeah, they've just been sitting down there, 
+waiting to save our bacon.)))
+
+     "She believes the findings could prove useful for 
+climate control.
+
+     "Previously, scientists had thought that methane, 
+found in abundance in the sea and produced through 
+agriculture, could only be broken down with oxygen.
+
+      "The German researchers believe the discovery of a 
+pool of organisms that process methane without oxygen 
+could lead to a way of cutting down potentially harmful 
+greenhouse gases without burning oxygen and producing 
+similarly damaging carbon dioxide.  (((What do they 
+*smell* like?)))
+
+     "'It could be a way of hindering climate 
+catastrophe,'" Boetius said. 
+
+O=c=O O=c=O O=c=O
+BY ALL MEANS 
+LET'S HINDER SOME
+CATASTROPHE
+O=c=O O=c=O O=c=O
+

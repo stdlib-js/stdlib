@@ -1,0 +1,119 @@
+From martin@srv0.ems.ed.ac.uk  Wed Aug 28 10:54:46 2002
+Return-Path: <martin@srv0.ems.ed.ac.uk>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 547AE43F99
+	for <zzzz@localhost>; Wed, 28 Aug 2002 05:54:42 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 28 Aug 2002 10:54:42 +0100 (IST)
+Received: from n33.grp.scd.yahoo.com (n33.grp.scd.yahoo.com
+    [66.218.66.101]) by dogma.slashnull.org (8.11.6/8.11.6) with SMTP id
+    g7S8XaZ16552 for <zzzz@spamassassin.taint.org>; Wed, 28 Aug 2002 09:33:37 +0100
+X-Egroups-Return: sentto-2242572-53134-1030523622-zzzz=spamassassin.taint.org@returns.groups.yahoo.com
+Received: from [66.218.67.197] by n33.grp.scd.yahoo.com with NNFMP;
+    28 Aug 2002 08:33:42 -0000
+X-Sender: martin@srv0.ems.ed.ac.uk
+X-Apparently-To: zzzzteana@yahoogroups.com
+Received: (EGP: mail-8_1_0_1); 28 Aug 2002 08:33:42 -0000
+Received: (qmail 45450 invoked from network); 28 Aug 2002 08:33:42 -0000
+Received: from unknown (66.218.66.216) by m4.grp.scd.yahoo.com with QMQP;
+    28 Aug 2002 08:33:42 -0000
+Received: from unknown (HELO haymarket.ed.ac.uk) (129.215.128.53) by
+    mta1.grp.scd.yahoo.com with SMTP; 28 Aug 2002 08:33:41 -0000
+Received: from srv0.ems.ed.ac.uk (srv0.ems.ed.ac.uk [129.215.117.0]) by
+    haymarket.ed.ac.uk (8.11.6/8.11.6) with ESMTP id g7S8Xe303560 for
+    <forteana@yahoogroups.com>; Wed, 28 Aug 2002 09:33:40 +0100 (BST)
+Received: from EMS-SRV0/SpoolDir by srv0.ems.ed.ac.uk (Mercury 1.44);
+    28 Aug 02 09:33:40 +0000
+Received: from SpoolDir by EMS-SRV0 (Mercury 1.44); 28 Aug 02 09:33:20 +0000
+Organization: Management School
+To: zzzzteana@yahoogroups.com
+Message-Id: <3D6C98FC.9355.23FE7736@localhost>
+Priority: normal
+X-Mailer: Pegasus Mail for Windows (v4.01)
+Content-Description: Mail message body
+From: "Martin Adamson" <martin@srv0.ems.ed.ac.uk>
+MIME-Version: 1.0
+Mailing-List: list zzzzteana@yahoogroups.com; contact
+    forteana-owner@yahoogroups.com
+Delivered-To: mailing list zzzzteana@yahoogroups.com
+Precedence: bulk
+List-Unsubscribe: <mailto:zzzzteana-unsubscribe@yahoogroups.com>
+Date: Wed, 28 Aug 2002 09:33:16 +0100
+Subject: [zzzzteana] Six arrested for attacking Palio jockey who defected
+Reply-To: zzzzteana@yahoogroups.com
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+
+The Electronic Telegraph
+
+ Six arrested for attacking Palio jockey who defected 
+ By Bruce Johnston in Rome
+ (Filed: 28/08/2002) 
+ 
+ 
+ Police waded into the intrigues and enmities surrounding the Palio, Siena's
+ traditional bareback horse race, for the first time yesterday, arresting six
+ people for beating up a star jockey who defected to a rival team.
+ 
+ 
+ Angry spectators attack Giuseppe Pes at the Palio horse race in Siena 
+ Giuseppe Pes, a champion jockey of Sardinian extraction who has won the Palio
+ nine times in 38 runs, was closely associated with the Istrice, or Porcupine,
+ contrada - section of town - until the race earlier this month.
+ 
+ Istrice did not have a horse in the contest - only 10 of the 17 contradas take
+ part in each Palio - but, despite promises to the contrary, moments before the
+ off Mr Pes mounted the horse of Lupa, or She-Wolf.
+ 
+ Lupa are Istrice's historic rivals, and the defection was not taken well. Lupa
+ did not win, victory going instead to Tartuca, tortoise.
+ 
+ As its supporters erupted into joyous celebrations, Mr Pes was pulled from his
+ mount by Istrice members and savagely beaten and kicked for seven minutes.
+ 
+ Mr Pes, 39, whose jacket with his contrada's colours was torn from his back,
+ was sent to hospital with fractures, cuts and bruises.
+ 
+ Three of his attendants who tried to intervene were also beaten. Police
+ yesterday arrested six people they said had been identified as the attackers
+ from video footage.
+ 
+ Experts said it was the first time that members of a contrada - known as
+ contradaioli - had been arrested for beating up a jockey, despite the fact
+ that such episodes belong to the race's ancient traditions.
+ 
+ The Palio, which was first raced in the 14th century, is held twice a year on
+ the cobbles of Siena's main square. For weeks beforehand supporters parade
+ through the city, singing, waving flags and wearing their contrada colours.
+ But by the day of the race the good humour evaporates.
+ 
+ The event has no rules and is prepared for and run amid an extraordinary
+ undercurrent of intrigue and even violence. Jockeys may swap sides at the last
+ minute, take bribes, and whip rivals' horses, and more, so long as they do not
+ grab their reins.
+ 
+ The origins of the contrada lie in the Middle Ages, when the neighbourhoods'
+ boundaries were set out to aid the many mercenary companies hired to defend
+ Siena's fiercely earned independence from Florence and other city states.
+ 
+ The first Palio of the year takes place on July 2, to commemorate the miracles
+ of the Madonna of Provenzano, and a second race on Aug 16 marks the feast of
+ the Assumption of the Virgin.
+
+
+------------------------ Yahoo! Groups Sponsor ---------------------~-->
+4 DVDs Free +s&p Join Now
+http://us.click.yahoo.com/pt6YBB/NXiEAA/MVfIAA/7gSolB/TM
+---------------------------------------------------------------------~->
+
+To unsubscribe from this group, send an email to:
+forteana-unsubscribe@egroups.com
+
+ 
+
+Your use of Yahoo! Groups is subject to http://docs.yahoo.com/info/terms/ 
+
+
+

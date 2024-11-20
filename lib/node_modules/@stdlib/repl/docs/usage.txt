@@ -1,0 +1,17 @@
+
+Usage: stdlib-repl [options]
+
+Options:
+
+  -h, --help                    Print this message.
+  -V, --version                 Print the package version.
+      --welcome <message>       Welcome message.
+      --input-prompt <prompt>   Input prompt. Default: 'In [%d]: '.
+      --output-prompt <prompt>  Output prompt. Default: 'Out[%d]: '.
+      --padding <padding>       Empty lines between commands. Default: 1.
+      --load <filepath>         JavaScript file to evaluate line-by-line.
+      --save <filepath>         File to save REPL command history.
+      --logfile <filepath>      File to log REPL commands and printed output.
+      --timeout <timeout>       Milliseconds before terminating a command.
+      --quiet                   Disable printing of REPL logs and diagnostics.
+

@@ -1,0 +1,72 @@
+From social-admin@linux.ie  Mon Jul 22 19:29:49 2002
+Return-Path: <social-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8DED4440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 14:29:47 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 19:29:47 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MHQK403338 for
+    <jm+ilug-social@jmason.org>; Mon, 22 Jul 2002 18:26:20 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id SAA24473 for
+    <jm+ilug-social@jmason.org>; Sat, 20 Jul 2002 18:15:47 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id SAA26490; Sat, 20 Jul 2002 18:15:21 +0100
+Received: from ie.suberic.net (owsla.ie.suberic.net [62.17.162.83]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id SAA26451 for <social@linux.ie>;
+    Sat, 20 Jul 2002 18:15:14 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host owsla.ie.suberic.net
+    [62.17.162.83] claimed to be ie.suberic.net
+Received: from owsla.ie.suberic.net (owsla [127.0.0.1]) by ie.suberic.net
+    (8.11.6/8.11.6) with ESMTP id g6KHFE925191 for <social@linux.ie>;
+    Sat, 20 Jul 2002 18:15:14 +0100
+Date: Sat, 20 Jul 2002 18:15:12 +0100
+To: Rick Moen <rick@linuxmafia.com>
+Cc: social@linux.ie
+Subject: Re: [ILUG-Social] Completely silent pc
+Message-Id: <20020720181512.D23917@ie.suberic.net>
+References: <Pine.GSO.4.10.10207192318220.27597-100000@matrix>
+    <20020720051950.GE28205@linuxmafia.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <20020720051950.GE28205@linuxmafia.com>; from
+    rick@linuxmafia.com on Fri, Jul 19, 2002 at 10:19:50PM -0700
+X-Operating-System: Linux 2.4.18-5 i686
+X-GPG-Fingerprint: 9C1D 16F4 11F1 6BD2 933C  048D ACC7 9840 89D0 7646
+From: kevin lyda <kevin+dated+1027617313.021fb5@linux.ie>
+X-Delivery-Agent: TMDA/0.57
+Sender: social-admin@linux.ie
+Errors-To: social-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group social events <social.linux.ie>
+X-Beenthere: social@linux.ie
+
+On Fri, Jul 19, 2002 at 10:19:50PM -0700, Rick Moen wrote:
+> Some people strip down old 486 boxes, take out the hard drive, disable
+> the fans, and run the thing from just a floppy drive or a CDR you've
+> burned for the purpose.  
+
+what about using a pcmcia card and a compaq flash card?  or doing an
+nfs boot to a server in a noiser part of the house?  (the boiler room
+or something like that)
+
+kevin
+
+-- 
+kevin@suberic.net     that a believer is happier than a skeptic is no more to
+fork()'ed on 37058400    the point than the fact that a drunken man is happier
+meatspace place: home       than a sober one. the happiness of credulity is a
+http://ie.suberic.net/~kevin   cheap & dangerous quality -- g.b. shaw
+
+-- 
+Irish Linux Users' Group Social Events: social@linux.ie
+http://www.linux.ie/mailman/listinfo/social for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

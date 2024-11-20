@@ -1,0 +1,11 @@
+'use strict';
+
+import * as beep from 'beep';
+import boop from './boop.js';
+
+// import 'bop';
+/* import 'bip'; */
+
+export default function bap() {
+	return beep( boop() );
+};

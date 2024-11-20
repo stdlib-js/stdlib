@@ -1,0 +1,8 @@
+{
+	"protocol": "https",
+	"hostname": "raw.githubusercontent.com",
+	"port": 443,
+	"path": "/",
+	"method": "GET",
+	"branch": "master"
+}

@@ -1,0 +1,115 @@
+From razor-users-admin@lists.sourceforge.net  Fri Aug  9 15:41:12 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 854EC44104
+	for <jm@localhost>; Fri,  9 Aug 2002 10:34:43 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:34:43 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79EYjb08152 for
+    <jm-razor@jmason.org>; Fri, 9 Aug 2002 15:34:45 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id WAA01364 for
+    <jm-razor@jmason.org>; Thu, 8 Aug 2002 22:36:05 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17cur4-0008VS-00; Thu,
+    08 Aug 2002 14:30:02 -0700
+Received: from h-66-166-21-186.snvacaid.covad.net ([66.166.21.186]
+    helo=rover.vipul.net) by usw-sf-list1.sourceforge.net with esmtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17cuq7-00063H-00 for
+    <razor-users@lists.sourceforge.net>; Thu, 08 Aug 2002 14:29:03 -0700
+Received: (from vipul@localhost) by rover.vipul.net (8.11.6/8.11.6) id
+    g78LT0B05328; Thu, 8 Aug 2002 14:29:00 -0700
+From: Vipul Ved Prakash <mail@vipul.net>
+To: "Craig R . Hughes" <craig@deersoft.com>
+Cc: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] What's wrong with the Razor servers now?
+Message-Id: <20020808142859.A4489@rover.vipul.net>
+Reply-To: mail@vipul.net
+Mail-Followup-To: "Craig R . Hughes" <craig@deersoft.com>,
+	razor-users@lists.sourceforge.net
+References: <007001c23ef4$25af8f40$6600a8c0@dhiggins>
+    <BB00AA31-AB0A-11D6-BCF2-00039396ECF2@deersoft.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <BB00AA31-AB0A-11D6-BCF2-00039396ECF2@deersoft.com>;
+    from craig@deersoft.com on Thu, Aug 08, 2002 at 01:09:22PM -0700
+X-Operating-System: Linux rover.vipul.net 2.4.18
+X-Privacy: If possible, encrypt your reply.  Key at http://vipul.net/
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Thu, 8 Aug 2002 14:28:59 -0700
+Date: Thu, 8 Aug 2002 14:28:59 -0700
+
+Craig, 
+
+For the most part, 99% times 99% users agree on what is spam. This is the
+nature of the spam problem. Now if you were to use a "personal trust"
+system, you'd have a huge personal trust group that would include 99% of
+the userbase. This means 99% times you'd be coming to the same conclusion,
+only after burning several orders of magnitude more CPU cycles. That would
+be stupid. Also, it would take several orders of magnitude longer to
+bootstrap and reach effectiveness. Sub-optimal in the extreme.
+
+As regards to the problems with the "gray" areas you mentioned, servers
+recognize such content, and razor-agents can use this information to make
+individual determination. Not to mention, users can set a local confidence
+level they are confortable with.
+
+cheers,
+vipul.
+
+On Thu, Aug 08, 2002 at 01:09:22PM -0700, Craig R . Hughes wrote:
+> By system-trust vs personal trust I don't mean that the system doesn't
+> have a trust rating for each user, but rather that each individual has
+> one system-wide trust rating. Your trust rating for scoring my mail is
+> the same as your trust rating for scoring your own email, or Joe
+> Schmoe's email. You may be great at flagging most spam, but just really
+> bad at flagging one particular piece of controversial mail which is
+> "gray spam" -- ie some people love it, others hate it. Ideally, I should
+> have my own personal trust score for you which agrees with my beliefs
+> about that controversial mail, rather than the system-wide beliefs. If
+> that doesn't happen, then depending on the trust system's weightings,
+> there are 3 possibilities:
+>
+> 1. All "gray" mail is blocked as spam (ie lots of false positives for
+>    individual users)
+> 2. All "gray" mail is allowed through as nonspam (ie lots of false
+>    negatives for individuals)
+> 3. The entire trust system collapses because noone is trusted due to
+>    conflicting votes about "gray" spam.
+
+-- 
+
+Vipul Ved Prakash          |   "The future is here, it's just not 
+Software Design Artist     |    widely distributed."
+http://vipul.net/          |              -- William Gibson
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

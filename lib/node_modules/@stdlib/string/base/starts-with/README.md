@@ -1,0 +1,139 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2022 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# startsWith
+
+> Test if a string starts with the characters of another string.
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var startsWith = require( '@stdlib/string/base/starts-with' );
+```
+
+#### startsWith( str, search, position )
+
+Tests if a string starts with the characters of another string.
+
+```javascript
+var str = 'To be, or not to be, that is the question.';
+
+var bool = startsWith( str, 'To be', 0 );
+// returns true
+
+bool = startsWith( str, 'to be', 0 );
+// returns false
+```
+
+To search from a specific character index, provide a `position` value (zero-based). If provided a negative `position`, the start index is determined relative to the string end (i.e., `pos = str.length + position`).
+
+```javascript
+var str = 'Remember the story I used to tell you when you were a boy?';
+
+var bool = startsWith( str, 'the story', 0 );
+// returns false
+
+bool = startsWith( str, 'the story', 9 );
+// returns true
+
+bool = startsWith( str, 'you', -15 );
+// returns true
+```
+
+If provided an empty `search` string, the function **always** returns `true`.
+
+```javascript
+var str = 'beep boop';
+
+var bool = startsWith( str, '', 0 );
+// returns true
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="notes">
+
+## Notes
+
+-   This function differs from [`String.prototype.startsWith`][mdn-string-startswith] in the following ways:
+
+    -   The function assumes string values for the first and second arguments and assumes that the `position` argument is an integer value.
+    -   The function does **not** clamp negative `position` values. Instead, when provided a negative `position`, the function resolves the starting search position relative to the end of the string.
+    -   Except when provided an empty `search` string, the function **always** returns `false` if a `position` resolves to a starting search position which exceeds the bounds of the input string.
+
+</section>
+
+<!-- /.notes -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var startsWith = require( '@stdlib/string/base/starts-with' );
+
+var str = 'Fair is foul, and foul is fair, hover through fog and filthy air';
+
+var bool = startsWith( str, 'Fair', 0 );
+// returns true
+
+bool = startsWith( str, 'fair', 0 );
+// returns false
+
+bool = startsWith( str, 'foul', 8 );
+// returns true
+
+bool = startsWith( str, 'filthy', -10 );
+// returns true
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+[mdn-string-startswith]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith
+
+</section>
+
+<!-- /.links -->

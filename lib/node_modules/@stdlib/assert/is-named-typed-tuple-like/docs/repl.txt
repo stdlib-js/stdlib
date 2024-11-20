@@ -1,0 +1,30 @@
+
+{{alias}}( value )
+    Tests if a value is named typed tuple-like.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a value is named typed tuple-like.
+
+    Examples
+    --------
+    > var Point = {{alias:@stdlib/utils/named-typed-tuple}}( [ 'x', 'y' ] );
+    > var p = new Point();
+    > var bool = {{alias}}( p )
+    true
+    > bool = {{alias}}( [ 1, 2, 3, 4 ] )
+    false
+    > bool = {{alias}}( 3.14 )
+    false
+    > bool = {{alias}}( {} )
+    false
+
+    See Also
+    --------
+

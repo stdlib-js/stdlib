@@ -1,0 +1,51 @@
+From craig@deersoft.com  Fri Aug 23 11:07:09 2002
+Return-Path: <craig@deersoft.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 31B4044166
+	for <jm@localhost>; Fri, 23 Aug 2002 06:05:15 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 23 Aug 2002 11:05:15 +0100 (IST)
+Received: from mclean.mail.mindspring.net (mclean.mail.mindspring.net
+    [207.69.200.57]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7N5rgZ12375 for <jm@jmason.org>; Fri, 23 Aug 2002 06:53:42 +0100
+Received: from user-105nd99.dialup.mindspring.com ([64.91.181.41]
+    helo=belphegore.hughes-family.org) by mclean.mail.mindspring.net with
+    esmtp (Exim 3.33 #1) id 17i7OE-00023R-00; Fri, 23 Aug 2002 01:53:46 -0400
+Received: from balam.hughes-family.org (balam.hughes-family.org
+    [10.0.240.3]) by belphegore.hughes-family.org (Postfix) with ESMTP id
+    63E8D71672; Thu, 22 Aug 2002 22:53:44 -0700 (PDT)
+Date: Thu, 22 Aug 2002 22:53:44 -0700
+Subject: Re: results for giant mass-check (phew)
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+MIME-Version: 1.0 (Apple Message framework v482)
+Cc: yyyy@spamassassin.taint.org (Justin Mason),
+	"Malte S. Stretz" <msquadrat.nospamplease@gmx.net>,
+	SpamAssassin Talk ML <spamassassin-talk@lists.sourceforge.net>
+To: Scott A Crosby <scrosby@cs.rice.edu>
+From: "Craig R.Hughes" <craig@deersoft.com>
+In-Reply-To: <oydit2248oi.fsf@bert.cs.rice.edu>
+Message-Id: <AF40EEDE-B65C-11D6-8F61-00039396ECF2@deersoft.com>
+Content-Transfer-Encoding: 7bit
+X-Mailer: Apple Mail (2.482)
+
+I never claimed it could learn *all* combinatorial 
+possibilities, but it certainly can learn some.
+
+C
+
+On Thursday, August 22, 2002, at 07:21  PM, Scott A Crosby wrote:
+
+> On Thu, 22 Aug 2002 09:20:05 -0700, Craig R.Hughes 
+> <craig@deersoft.com> writes:
+>
+>> It *can* learn combinatorial stuff in a more subtle way.  Imagine
+>
+> No it can't..
+>
+> It can learn a few examples that happen to be linearily seperable,
+> like those you gave. It cannot learn the example I gave below, which
+> is not linearily seperable.
+
+

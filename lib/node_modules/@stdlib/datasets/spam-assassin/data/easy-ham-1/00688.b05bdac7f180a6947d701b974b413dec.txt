@@ -1,0 +1,120 @@
+From fork-admin@xent.com  Sat Sep 21 20:22:07 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 0803616F03
+	for <jm@localhost>; Sat, 21 Sep 2002 20:22:07 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 21 Sep 2002 20:22:07 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8LIKsC31138 for <jm@jmason.org>;
+    Sat, 21 Sep 2002 19:20:55 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 93A1229418E; Sat, 21 Sep 2002 11:17:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hall.mail.mindspring.net (hall.mail.mindspring.net
+    [207.69.200.60]) by xent.com (Postfix) with ESMTP id BF0E029409C for
+    <fork@xent.com>; Sat, 21 Sep 2002 11:16:16 -0700 (PDT)
+Received: from user-119ac86.biz.mindspring.com ([66.149.49.6]) by
+    hall.mail.mindspring.net with esmtp (Exim 3.33 #1) id 17soqA-0006V3-00;
+    Sat, 21 Sep 2002 14:18:50 -0400
+MIME-Version: 1.0
+X-Sender: rahettinga@pop.earthlink.net
+Message-Id: <p05111a02b9b264038af0@[66.149.49.6]>
+In-Reply-To: <m24rcjl8gh.fsf@maya.dyndns.org>
+References: <979BE8FE-CCF6-11D6-817E-000393A46DEA@alumni.caltech.edu>
+    <DAV72xvjPkQTGpaoG1V00000fd0@hotmail.com>
+    <p05111a27b9b1d842c9fe@[66.149.49.6]> <m24rcjl8gh.fsf@maya.dyndns.org>
+To: Gary Lawrence Murphy <garym@canada.com>
+From: "R. A. Hettinga" <rah@shipwright.com>
+Subject: Re: sed /s/United States/Roman Empire/g
+Cc: "Mr. FoRK" <fork_list@hotmail.com>, <fork@spamassassin.taint.org>,
+	Digital Bearer Settlement List <dbs@philodox.com>
+Content-Type: text/plain; charset="us-ascii"
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sat, 21 Sep 2002 14:18:29 -0400
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+At 10:32 AM -0400 on 9/21/02, Gary Lawrence Murphy wrote:
+
+
+> Cool --- I wasn't aware that the US had lifted it's population out
+> of poverty! When did this happen? I wonder where the media gets the
+> idea that the wealth gap is widening and deepening...
+
+All the world loves a smartass...
+
+:-).
+
+Seriously. Look at he life expectancy and human carrying capacity of
+this continent before the Europeans got here. Look at it now. Even
+for descendants of the original inhabitants. Even for the descendents
+of slaves, who were brought here by force.
+
+More stuff, cheaper. That's progress.
+
+Poverty, of course, is not relative. It's absolute. Disparity in
+wealth has nothing to do with it.
+
+It's like saying that groups have rights, when, in truth, only
+individuals do. Like group rights, "disparity" in wealth is
+statistical sophistry.
+
+
+Besides, even if you can't help the distribution, industrial wealth
+is almost always transitory, and so is relative poverty, even when
+there are no confiscatory death-taxes. The 20th anniversary Forbes
+400 just came out, and only a few tens of people are still there
+since 1982, a time which had significantly higher marginal taxes on
+wealth, income, and inheritance than we do now. More to the point,
+they're nowhere near the top.
+
+I'll take those odds. It is only when neofeudalism reasserts itself,
+in the form of government regulation, confiscatory taxes, legislated
+monopoly, corporate welfare, "non-profit" neoaristocratic tax dodges,
+and legalized labor extortion that we get slowdowns in progress, like
+what happened in Fabian-era Britain, or 1970's USA.
+
+In fact, it is in countries where wealth is the most "unfairly"
+distributed, that you get the most improvement in the general --
+economic -- welfare. More stuff cheaper, fewer people dying, more
+people living longer.
+
+I'll take those odds as well. People take greater risks when the
+returns are higher, improving the lot of us all as a result.
+
+Cheers,
+RAH
+
+-----BEGIN PGP SIGNATURE-----
+Version: PGP 7.5
+
+iQA/AwUBPYy3ysPxH8jf3ohaEQLqNQCg14YvF8NVYwKiRrghHdisBoNCOn8AoPcR
+QUzorXeaLe5h3T1syKl7DFNT
+=9kff
+-----END PGP SIGNATURE-----
+
+-- 
+-----------------
+R. A. Hettinga <mailto: rah@ibuc.com>
+The Internet Bearer Underwriting Corporation <http://www.ibuc.com/>
+44 Farquhar Street, Boston, MA 02131 USA
+"... however it may deserve respect for its usefulness and antiquity,
+[predicting the end of the world] has not been found agreeable to
+experience." -- Edward Gibbon, 'Decline and Fall of the Roman Empire'
+
+

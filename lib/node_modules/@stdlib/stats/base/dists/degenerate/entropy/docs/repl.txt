@@ -1,0 +1,24 @@
+
+{{alias}}( μ )
+    Returns the entropy of a degenerate distribution with constant value `μ`.
+
+    Parameters
+    ----------
+    μ: number
+        Constant value of distribution.
+
+    Returns
+    -------
+    out: number
+        Entropy.
+
+    Examples
+    --------
+    > var v = {{alias}}( 20.0 )
+    0.0
+    > v = {{alias}}( -10.0 )
+    0.0
+
+    See Also
+    --------
+

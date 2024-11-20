@@ -1,0 +1,74 @@
+From felicity@kluge.net  Mon Sep  2 23:15:26 2002
+Return-Path: <felicity@kluge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (unknown [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 3768416F38
+	for <jm@localhost>; Mon,  2 Sep 2002 23:14:08 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 02 Sep 2002 23:14:08 +0100 (IST)
+Received: from eclectic.kluge.net
+    (IDENT:tK7m7Ybxp1pyihrA4nx2xIdU0iOnCnis@eclectic.kluge.net [66.92.69.221])
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g82KebZ20178 for
+    <jm@jmason.org>; Mon, 2 Sep 2002 21:40:37 +0100
+Received: (from felicity@localhost) by eclectic.kluge.net (8.11.6/8.11.6)
+    id g82Kerm26481; Mon, 2 Sep 2002 16:40:53 -0400
+Date: Mon, 2 Sep 2002 16:40:53 -0400
+From: Theo Van Dinter <felicity@kluge.net>
+To: Justin Mason <yyyy@spamassassin.taint.org>
+Cc: Spamassassin Devel List <spamassassin-devel@example.sourceforge.net>
+Subject: Re: [SAdev] SpamAssassin v2.40 released (finally)!
+Message-Id: <20020902204053.GD15737@kluge.net>
+References: <20020902175329.E20EC43F99@phobos.labs.netnoteinc.com>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+    protocol="application/pgp-signature";
+    boundary="1sNVjLsmu1MXqwQ/"
+Content-Disposition: inline
+In-Reply-To: <20020902175329.E20EC43F99@phobos.labs.netnoteinc.com>
+User-Agent: Mutt/1.4i
+X-GPG-Keyserver: http://wwwkeys.pgp.net
+X-GPG-Keynumber: 0xE580B363
+X-GPG-Fingerprint: 75B1 F6D0 8368 38E7 A4C5  F6C2 02E3 9051 E580 B363
+
+
+--1sNVjLsmu1MXqwQ/
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+On Mon, Sep 02, 2002 at 06:53:24PM +0100, Justin Mason wrote:
+>   - Razor v2 now supported fully
+
+Hmmm...  I just upgraded from my modified 2.31 to a slightly modified 2.40
+(I add a routine to EvalTests) and get:
+
+Sep  2 15:32:24 eclectic spamd[20506]: razor2 check skipped: No such file o=
+r directory Can't call method
+"log" on unblessed reference at /usr/lib/perl5/site_perl/5.6.1/Razor2/Clien=
+t/Agent.pm line 211, <STDIN>
+line 22.=20
+
+I haven't quite figured out why yet, more to come.
+
+--=20
+Randomly Generated Tagline:
+"So on one hand, honey is an amazingly sophisticated and efficient food
+ source. On the other hand it's bee backwash."
+             - Alton Brown, Good Eats, "Pantry Raid IV: Comb Alone"
+
+--1sNVjLsmu1MXqwQ/
+Content-Type: application/pgp-signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE9c8zVAuOQUeWAs2MRAm+8AKC24InxYaZY5BJi/u/FI2RQ5hy9jACgi9fM
+4jujLQNmvwcQm/8ULtyvaZU=
+=hKgW
+-----END PGP SIGNATURE-----
+
+--1sNVjLsmu1MXqwQ/--
+

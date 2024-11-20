@@ -1,0 +1,138 @@
+From exmh-workers-admin@redhat.com  Tue Aug 20 23:27:41 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 86DFB43C32
+	for <jm@localhost>; Tue, 20 Aug 2002 18:27:41 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 23:27:41 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7KMSMZ26863 for
+    <jm-exmh@jmason.org>; Tue, 20 Aug 2002 23:28:22 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 4FEB44006D; Tue, 20 Aug 2002
+    18:28:13 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id BDF293EAF8
+    for <exmh-workers@listman.redhat.com>; Tue, 20 Aug 2002 18:27:57 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g7KMRtD15417 for exmh-workers@listman.redhat.com; Tue, 20 Aug 2002
+    18:27:55 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g7KMRsY15413 for
+    <exmh-workers@redhat.com>; Tue, 20 Aug 2002 18:27:54 -0400
+Received: from austin-jump.vircio.com
+    (IDENT:c5oav/XM6+r69dvYJiC6rCOI9ZCOOlRM@jump-austin.vircio.com
+    [192.12.3.99]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id g7KMDal03143
+    for <exmh-workers@redhat.com>; Tue, 20 Aug 2002 18:13:37 -0400
+Received: (qmail 15217 invoked by uid 104); 20 Aug 2002 22:27:54 -0000
+Received: from cwg-exmh@DeepEddy.Com by localhost.localdomain with
+    qmail-scanner-0.90 (uvscan: v4.1.60/v4218. . Clean. Processed in 0.336854
+    secs); 20/08/2002 17:27:53
+Received: from deepeddy.vircio.com (@[10.1.2.1]) (envelope-sender
+    <cwg-exmh@DeepEddy.Com>) by austin-jump.vircio.com (qmail-ldap-1.03) with
+    SMTP for <exmh-workers@redhat.com>; 20 Aug 2002 22:27:53 -0000
+Received: (qmail 3120 invoked from network); 20 Aug 2002 22:27:48 -0000
+Received: from localhost (HELO deepeddy.vircio.com)
+    (?mfUt4CjC+a93zpMfgU3megdcUBZ5fiKn?@[127.0.0.1]) (envelope-sender
+    <cwg-exmh@DeepEddy.Com>) by localhost (qmail-ldap-1.03) with SMTP for
+    <exmh-workers@redhat.com>; 20 Aug 2002 22:27:48 -0000
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4
+To: exmh-workers@spamassassin.taint.org
+Subject: New Sequences Window
+X-Url: http://www.DeepEddy.Com/~cwg
+X-Image-Url: http://www.DeepEddy.Com/~cwg/chris.gif
+MIME-Version: 1.0
+Content-Type: multipart/signed;
+    boundary="==_Exmh_-1828408717P";
+    micalg=pgp-sha1;
+    protocol="application/pgp-signature"
+Content-Transfer-Encoding: 7bit
+From: Chris Garrigues <cwg-exmh@DeepEddy.Com>
+Message-Id: <1029882468.3116.TMDA@deepeddy.vircio.com>
+X-Delivery-Agent: TMDA/0.57
+Reply-To: Chris Garrigues <cwg-dated-1030314468.7c7c85@DeepEddy.Com>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Tue, 20 Aug 2002 17:27:47 -0500
+
+--==_Exmh_-1828408717P
+Content-Type: text/plain; charset=us-ascii
+
+I've just checked in a rather large patch which replaces the Unseen Window 
+with a new Sequences Window.
+
+Since the preference items are different, you'll need to turn the display of 
+the sequences window on in the preferences even if you had the unseen window 
+enabled.  I couldn't figure out how to default the preferences to match the 
+unseen window.
+
+I'm hoping that all people with no additional sequences will notice are purely 
+cosmetic changes.
+
+For those who have other sequences defined, the window will widen to display 
+the other sequences.  Preferences allow you to say if you want a given 
+sequence display to never show or to always show.
+
+I've also changed the ftoc colorization as discussed briefly on the list a 
+week or so ago.
+
+The two things that I know I need to do are to fix the performance issue that 
+I think is what Anders was seeing yesterday and to catch the documentation up 
+with the code.
+
+My wife is out for an "evening with the girls" tonight, so I should be able to 
+work on the performance issue tonight and check it in after some testing in a 
+day or two.
+
+I hope I didn't break very much with all the changes I made...
+
+Chris
+
+-- 
+Chris Garrigues                 http://www.DeepEddy.Com/~cwg/
+virCIO                          http://www.virCIO.Com
+716 Congress, Suite 200
+Austin, TX  78701		+1 512 374 0500
+
+  World War III:  The Wrong-Doers Vs. the Evil-Doers.
+
+
+
+
+--==_Exmh_-1828408717P
+Content-Type: application/pgp-signature
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: Exmh version 2.2_20000822 06/23/2000
+
+iD8DBQE9YsJjK9b4h5R0IUIRAlPcAJwOagra2EcjW/IcjmIB0RNkKUUXUQCfapbo
+e4f/pt3xlgPvgzpJ94HmwP0=
+=YPYq
+-----END PGP SIGNATURE-----
+
+--==_Exmh_-1828408717P--
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+

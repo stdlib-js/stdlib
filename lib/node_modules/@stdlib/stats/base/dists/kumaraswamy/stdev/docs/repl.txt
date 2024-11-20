@@ -1,0 +1,34 @@
+
+{{alias}}( a, b )
+    Returns the standard deviation of a Kumaraswamy's double bounded
+    distribution.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If `a <= 0` or `b <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    a: number
+        First shape parameter.
+
+    b: number
+        Second shape parameter.
+
+    Returns
+    -------
+    out: number
+        Standard deviation.
+
+    Examples
+    --------
+    > var v = {{alias}}( 1.0, 1.0 )
+    ~0.289
+    > v = {{alias}}( 4.0, 12.0 )
+    ~0.13
+    > v = {{alias}}( 16.0, 8.0 )
+    ~0.062
+
+    See Also
+    --------
+

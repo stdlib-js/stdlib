@@ -1,0 +1,33 @@
+
+{{alias}}()
+    Returns an accumulator function which incrementally computes a maximum
+    absolute value.
+
+    If provided a value, the accumulator function returns an updated maximum
+    absolute value. If not provided a value, the accumulator function returns
+    the current maximum absolute value.
+
+    If provided `NaN`, the maximum value is `NaN` for all future invocations.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}();
+    > var m = accumulator()
+    null
+    > m = accumulator( 3.14 )
+    3.14
+    > m = accumulator( -5.0 )
+    5.0
+    > m = accumulator( 10.1 )
+    10.1
+    > m = accumulator()
+    10.1
+
+    See Also
+    --------
+

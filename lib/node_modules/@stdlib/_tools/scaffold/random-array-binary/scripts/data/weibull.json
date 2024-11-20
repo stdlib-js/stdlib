@@ -1,0 +1,45 @@
+{
+  "alias": "weibull",
+  "pkg": "stdlib/random/array/weibull",
+  "base_pkg": "stdlib/random/base/weibull",
+
+  "param_1": "k",
+  "param_1_value": "2.0",
+  "param_1_desc": "scale parameter",
+  "param_1_dtype": "number",
+  "param_1_jsdoc_dtype": "PositiveNumber",
+  "param_1_throws_desc": "must be a positive number",
+
+  "param_2": "lambda",
+  "param_2_value": "5.0",
+  "param_2_desc": "shape parameter",
+  "param_2_dtype": "number",
+  "param_2_jsdoc_dtype": "PositiveNumber",
+  "param_2_throws_desc": "must be a positive number",
+
+  "output_ts_dtype": "RealFloatingPointAndGenericDataType",
+  "output_ts_typed_array": "FloatTypedArray",
+  "output_dtype_kind": "real_floating_point_and_generic",
+
+  "default_dtype": "float64",
+  "default_dtype_kind": "real_floating_point",
+  "default_typed_array": "Float64Array",
+
+  "from_desc": "a Weibull distribution",
+  "readme_from_desc": "a [Weibull][@stdlib/random/base/weibull] distribution",
+
+  "readme_heading": "Weibull Random Numbers",
+  "readme_dtype_kind_desc": "real-valued floating-point data type",
+  "readme_dtype_kind_pkg": "stdlib/array/typed-real-float-dtypes",
+
+  "repl_text_main_desc": "Returns an array containing pseudorandom numbers drawn from a Weibull distribution.",
+  "repl_text_assign_desc": "Fills an array with pseudorandom numbers drawn from a Weibull distribution.",
+  "repl_text_factory_desc": "Returns a function for creating arrays containing pseudorandom numbers drawn from a Weibull distribution.",
+
+  "repl_text_param_1_desc": "Scale parameter.",
+  "repl_text_param_2_desc": "Shape parameter.",
+
+  "repl_text_output_typed_arrays": "Float64Array|Float32Array",
+
+  "keywords": "weibull,continuous"
+}

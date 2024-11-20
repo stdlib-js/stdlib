@@ -1,0 +1,17 @@
+
+{{alias}}()
+    Tests for native `Map` support.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an environment has `Map` support.
+
+    Examples
+    --------
+    > var bool = {{alias}}()
+    <boolean>
+
+    See Also
+    --------
+

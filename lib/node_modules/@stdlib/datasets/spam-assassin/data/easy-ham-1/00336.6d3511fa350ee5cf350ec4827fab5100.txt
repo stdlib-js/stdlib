@@ -1,0 +1,73 @@
+From fork-admin@xent.com  Tue Aug 27 02:14:54 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3141D43F9B
+	for <jm@localhost>; Mon, 26 Aug 2002 21:14:54 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 27 Aug 2002 02:14:54 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7R1AiZ20372 for <jm@jmason.org>;
+    Tue, 27 Aug 2002 02:10:45 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 4DFFC2941E1; Mon, 26 Aug 2002 18:08:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mithral.com (watcher.mithral.com [204.153.244.1]) by
+    xent.com (Postfix) with SMTP id 5C55729417F for <fork@xent.com>;
+    Mon, 26 Aug 2002 18:07:34 -0700 (PDT)
+Received: (qmail 5844 invoked by uid 1111); 27 Aug 2002 01:09:28 -0000
+From: "Adam L. Beberg" <beberg@mithral.com>
+To: "Joseph S. Barrera III" <joe@barrera.org>
+Cc: <fork@spamassassin.taint.org>
+Subject: Re: The GOv gets tough on Net Users.....er Pirates..
+In-Reply-To: <3D6A488C.7000609@barrera.org>
+Message-Id: <Pine.LNX.4.33.0208261744120.5669-100000@watcher.mithral.com>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 26 Aug 2002 18:09:28 -0700 (PDT)
+
+On Mon, 26 Aug 2002, Joseph S. Barrera III wrote:
+
+> Adam L. Beberg wrote:
+> > Fair use needs to be clarified a bit
+>
+> That's an understatement!!!
+
+Yes, it is :(
+
+> > How else do i ever have hope of finding a job working for someone
+> > that makes things people are supposed to ... *drumroll* pay for.
+>
+> Well, you could damn well get a fucking better attitude. I practically
+> handed you a job the other week and you pissed all over me. I'm done
+> helping you. You have joined a very exclusive club that up to now has
+> only had my sister as a member.
+
+Forwarding me stuff from a list is hardly handing me a job. I tracked them
+down, they dont exist anymore, like 99% of the things I track down the req's
+are pulled or there is a freeze.
+
+The real problem is you cant even train for jobs now, since they _demand_
+7-10 years at a job paid to do the wierd collection of skills they want.
+
+But I'll get lucky eventually and someone I know will be a hiring manager.
+
+- Adam L. "Duncan" Beberg
+  http://www.mithral.com/~beberg/
+  beberg@mithral.com
+
+
+

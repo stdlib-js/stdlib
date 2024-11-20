@@ -1,0 +1,33 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Mon Sep  9 17:46:55 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Mon, 09 Sep 2002 12:46:55 -0400
+Subject: [Spambayes] deleting "duplicate" spam before training?  good idea
+ orbad?
+In-Reply-To: <15740.52432.861148.597750@12-248-11-90.client.attbi.com>
+Message-ID: <LNBBLJKPBEHFEDALKOLCIECKBDAB.tim.one@comcast.net>
+
+[Skip Montanaro]
+> Because I get mail through several different email addresses, I
+> frequently get duplicates (or triplicates or more-plicates) of
+> various spam messages.  In saving spam for later analysis I haven't
+> always been careful to avoid saving such duplicates.
+>
+> I wrote a script some time ago to try an minimize the duplicates I see
+> by calculating a loose checksum, but I still have some duplicates.
+> Should I delete the duplicates before training or not?
+
+People just can't stop thinking <wink>.  The classifier should work best
+when trained on a wholly random spattering of real life.  If real life
+contains duplicates, then that's what the classifier should see.
+
+> Would people be interested in the script?  I'd be happy to extricate
+> it from my local modules and check it into CVS.
+
+Sure!  I think it's relevant, but maybe for another purpose.  Paul Svensson
+is thinking harder about real people <wink> than the rest of us, and he may
+be able to get use out of approaches that identify closely related spam.
+For example, some amount of spam is going to end up in the ham training data
+in real life use, and any sort of similarity score to a piece of known spam
+may be an aid in finding and purging it.
+

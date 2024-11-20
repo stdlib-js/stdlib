@@ -1,0 +1,173 @@
+
+{{alias}}( ord, ta, tb, M, N, K, α, A, lda, B, ldb, β, C, ldc )
+    Performs the matrix-matrix operation `C = α*op(A)*op(B) + β*C` where `op(X)`
+    is either `op(X) = X` or `op(X) = X^T`, `α` and `β` are scalars, `A`, `B`,
+    and `C` are matrices, with `op(A)` an `M` by `K` matrix, `op(B)` a `K` by
+    `N` matrix, and `C` an `M` by `N` matrix.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If `M` or `N` is equal to `0`, the function returns `C` unchanged.
+
+    If `α` or `K` equals `0` and `β` equals `1`, the function returns `C`
+    unchanged.
+
+    Parameters
+    ----------
+    ord: string
+        Row-major (C-style) or column-major (Fortran-style) order.
+
+    ta: string
+        Specifies whether `A` should be transposed, conjugate-transposed, or not
+        transposed.
+
+    tb: string
+        Specifies whether `B` should be transposed, conjugate-transposed, or not
+        transposed.
+
+    M: integer
+        Number of rows in the matrix `op(A)` and in the matrix `C`.
+
+    N: integer
+        Number of columns in the matrix `op(B)` and in the matrix `C`.
+
+    K: integer
+        Number of columns in the matrix `op(A)` and number of rows in the matrix
+        `op(B)`.
+
+    α: number
+        Scalar constant.
+
+    A: Float64Array
+        First matrix.
+
+    lda: integer
+        Stride of the first dimension of `A` (a.k.a., leading dimension of the
+        matrix `A`).
+
+    B: Float64Array
+        Second matrix.
+
+    ldb: integer
+        Stride of the first dimension of `B` (a.k.a., leading dimension of the
+        matrix `B`).
+
+    β: number
+        Scalar constant.
+
+    C: Float64Array
+        Third matrix.
+
+    ldc: integer
+        Stride of the first dimension of `C` (a.k.a., leading dimension of the
+        matrix `C`).
+
+    Returns
+    -------
+    C: Float64Array
+        Third matrix.
+
+    Examples
+    --------
+    // Standard usage:
+    > var A = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var B = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0, 0.0, 1.0 ] );
+    > var C = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var ord = 'row-major';
+    > var ta = 'no-transpose';
+    > var tb = 'no-transpose';
+    > {{alias}}( ord, ta, tb, 2, 2, 2, 1.0, A, 2, B, 2, 1.0, C, 2 )
+    <Float64Array>[ 2.0, 5.0, 6.0, 11.0 ]
+
+
+{{alias}}.ndarray(ta,tb, M,N,K, α, A,sa1,sa2,oa, B,sb1,sb2,ob, β, C,sc1,sc2,oc)
+    Performs the matrix-matrix operation `C = α*op(A)*op(B) + β*C`, using
+    alternative indexing semantics and where `op(X)` is either `op(X) = X` or
+    `op(X) = X^T`, `α` and `β` are scalars, `A`, `B`, and `C` are matrices, with
+    `op(A)` an `M` by `K` matrix, `op(B)` a `K` by `N` matrix, and `C` an `M` by
+    `N` matrix.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    ta: string
+        Specifies whether `A` should be transposed, conjugate-transposed, or not
+        transposed.
+
+    tb: string
+        Specifies whether `B` should be transposed, conjugate-transposed, or not
+        transposed.
+
+    M: integer
+        Number of rows in the matrix `op(A)` and in the matrix `C`.
+
+    N: integer
+        Number of columns in the matrix `op(B)` and in the matrix `C`.
+
+    K: integer
+        Number of columns in the matrix `op(A)` and number of rows in the matrix
+        `op(B)`.
+
+    α: number
+        Scalar constant.
+
+    A: Float64Array
+        First matrix.
+
+    sa1: integer
+        Stride of the first dimension of `A`.
+
+    sa2: integer
+        Stride of the second dimension of `A`.
+
+    oa: integer
+        Starting index for `A`.
+
+    B: Float64Array
+        Second matrix.
+
+    sb1: integer
+        Stride of the first dimension of `B`.
+
+    sb2: integer
+        Stride of the second dimension of `B`.
+
+    ob: integer
+        Starting index for `B`.
+
+    β: number
+        Scalar constant.
+
+    C: Float64Array
+        Third matrix.
+
+    sc1: integer
+        Stride of the first dimension of `C`.
+
+    sc2: integer
+        Stride of the second dimension of `C`.
+
+    oc: integer
+        Starting index for `C`.
+
+    Returns
+    -------
+    C: Float64Array
+        Third matrix.
+
+    Examples
+    --------
+    > var A = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var B = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0, 0.0, 1.0 ] );
+    > var C = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var ta = 'no-transpose';
+    > var tb = 'no-transpose';
+    > {{alias}}.ndarray( ta,tb, 2,2,2, 1.0, A,2,1,0, B,2,1,0, 1.0, C,2,1,0 )
+    <Float64Array>[ 2.0, 5.0, 6.0, 11.0 ]
+
+    See Also
+    --------

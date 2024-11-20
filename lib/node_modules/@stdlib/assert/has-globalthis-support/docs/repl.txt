@@ -1,0 +1,17 @@
+
+{{alias}}()
+    Tests for `globalThis` support.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an environment has `globalThis` support.
+
+    Examples
+    --------
+    > var bool = {{alias}}()
+    <boolean>
+
+    See Also
+    --------
+

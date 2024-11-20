@@ -1,0 +1,85 @@
+From exmh-workers-admin@redhat.com  Wed Aug 28 10:47:16 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 796F943F99
+	for <jm@localhost>; Wed, 28 Aug 2002 05:46:57 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 28 Aug 2002 10:46:57 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7S8qrZ17144 for
+    <jm-exmh@jmason.org>; Wed, 28 Aug 2002 09:53:03 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 6C68A3EE13; Wed, 28 Aug 2002
+    04:53:02 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 1289C3ED60
+    for <exmh-workers@listman.redhat.com>; Wed, 28 Aug 2002 04:52:41 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g7S8qb131078 for exmh-workers@listman.redhat.com; Wed, 28 Aug 2002
+    04:52:37 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g7S8qbY31074 for
+    <exmh-workers@redhat.com>; Wed, 28 Aug 2002 04:52:37 -0400
+Received: from ratree.psu.ac.th ([202.28.97.6]) by mx1.spamassassin.taint.org
+    (8.11.6/8.11.6) with SMTP id g7S8bUl14632 for <exmh-workers@redhat.com>;
+    Wed, 28 Aug 2002 04:37:31 -0400
+Received: from delta.cs.mu.OZ.AU (dhcp253.cc.psu.ac.th [192.168.2.253]) by
+    ratree.psu.ac.th (8.11.6/8.11.6) with ESMTP id g7S8pmU21706;
+    Wed, 28 Aug 2002 15:51:48 +0700 (ICT)
+Received: from munnari.OZ.AU (localhost [127.0.0.1]) by delta.cs.mu.OZ.AU
+    (8.11.6/8.11.6) with ESMTP id g7S8otW19656; Wed, 28 Aug 2002 15:50:55
+    +0700 (ICT)
+From: Robert Elz <kre@munnari.OZ.AU>
+To: Brent Welch <welch@panasas.com>,
+	Chris Garrigues <cwg-dated-1030804078.e8b0d5@DeepEddy.Com>,
+	exmh-workers@redhat.com
+Subject: Re: Anolther sequence related traceback
+In-Reply-To: <18366.1030517481@munnari.OZ.AU>
+References: <18366.1030517481@munnari.OZ.AU>
+    <200208280108.VAA30178@blackcomb.panasas.com>
+    <1030372078.11075.TMDA@deepeddy.vircio.com>
+    <1030118301.3993.TMDA@deepeddy.vircio.com>
+    <16323.1030043119@munnari.OZ.AU> <6853.1030345218@munnari.OZ.AU>
+    <12683.1030438738@munnari.OZ.AU>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Message-Id: <19654.1030524655@munnari.OZ.AU>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Wed, 28 Aug 2002 15:50:55 +0700
+
+    Date:        Wed, 28 Aug 2002 13:51:21 +0700
+    From:        Robert Elz <kre@munnari.oz.au>
+    Message-ID:  <18366.1030517481@munnari.OZ.AU>
+
+
+  | But, while I was playing there, I noticed something I never new before.
+
+I also no the difference between new & knew, but I don't always type well...
+Um, I mean, I know the difference...
+
+kre
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+

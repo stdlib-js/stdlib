@@ -1,0 +1,81 @@
+From fork-admin@xent.com  Wed Oct  2 11:47:42 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 0776016F19
+	for <jm@localhost>; Wed,  2 Oct 2002 11:47:31 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 02 Oct 2002 11:47:31 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g9223BK21033 for <jm@jmason.org>;
+    Wed, 2 Oct 2002 03:03:12 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 52B502940E4; Tue,  1 Oct 2002 19:03:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mta6.snfc21.pbi.net (mta6.snfc21.pbi.net [206.13.28.240])
+    by xent.com (Postfix) with ESMTP id DEE6E29409C for <fork@xent.com>;
+    Tue,  1 Oct 2002 19:02:03 -0700 (PDT)
+Received: from cse.ucsc.edu ([63.194.88.161]) by mta6.snfc21.pbi.net
+    (iPlanet Messaging Server 5.1 (built May  7 2001)) with ESMTP id
+    <0H3C00ASF0BMX6@mta6.snfc21.pbi.net> for fork@xent.com; Tue,
+    01 Oct 2002 19:02:10 -0700 (PDT)
+From: Elias <elias@cse.ucsc.edu>
+Subject: Re: So I missed this one...
+To: fork@spamassassin.taint.org
+Reply-To: fork@spamassassin.taint.org
+Message-Id: <3D9A51BA.7090103@cse.ucsc.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; format=flowed; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-Accept-Language: en,pdf
+User-Agent: Mozilla/5.0 (Windows; U; WinNT4.0; en-US; rv:0.9.2)
+    Gecko/20010726 Netscape6/6.1
+References: <261233693.20021001182701@magnesium.net>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 01 Oct 2002 18:54:02 -0700
+
+bitbitch@magnesium.net wrote:
+
+> Turns out the music industry settled ... quite a hefty
+> settlement.
+
+
+Funnky, I thought that it was minor in comparison the the gouging that 
+occurs on a standard CD.
+
+
+> The Wall Street Journal
+> Copyright (c) 2002, Dow Jones & Company, Inc.
+> Tuesday, October 1, 2002
+> 
+> Five Music Concerns To Pay $143.1 Million In Price-Fixing Case
+> Reuters News Service ...
+> The companies, which didn't admit any wrongdoing, will pay $67.4
+> million in cash to compensate consumers who overpaid for CDs between
+> 1995 and 2000. The companies also agreed to distribute $75.7 million
+> worth of CDs to public entities and nonprofit organizations throughout
+> the country.
+
+
+The CDs will probably cost less than 7.5 million to produce and 
+distribute... "didn't admit any wrongdoing"?!? Give me a break.
+
+
+Elias
+
+
+
+
+

@@ -1,0 +1,125 @@
+From fork-admin@xent.com  Fri Sep  6 11:41:33 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id E8CAD16F6F
+	for <jm@localhost>; Fri,  6 Sep 2002 11:39:33 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 11:39:33 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g868XVW25919 for <jm@jmason.org>;
+    Fri, 6 Sep 2002 09:33:31 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 429D3294289; Fri,  6 Sep 2002 01:27:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from panacea.canonical.org (ns1.canonical.org [209.115.72.29])
+    by xent.com (Postfix) with ESMTP id 7586129427E for <fork@xent.com>;
+    Fri,  6 Sep 2002 01:26:11 -0700 (PDT)
+Received: by panacea.canonical.org (Postfix, from userid 1004) id
+    9369B3F4EB; Fri,  6 Sep 2002 04:26:44 -0400 (EDT)
+From: kragen@pobox.com (Kragen Sitaker)
+To: fork@spamassassin.taint.org
+Subject: Re: asynchronous I/O (was Re: Gasp!)
+Message-Id: <20020906082644.9369B3F4EB@panacea.canonical.org>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri,  6 Sep 2002 04:26:44 -0400 (EDT)
+
+Adam Beberg writes:
+> On Tue, 3 Sep 2002, Kragen Sitaker wrote:
+> > Unix acquired nonblocking I/O in the form of select() about 23 years
+> > ago, and Solaris has had the particular aio_* calls we are discussing
+> > for many years.
+> 
+> select() "scaling" is a joke at best, and I know you know that. poll() is
+> only a bit better.
+
+Not only do I know that, the post to which you were responding
+explained that, with somewhat more detail than "a joke".  As you
+should know, but evidently don't, poll() isn't even "a bit better" ---
+in fact, it's about an order of magnitude worse --- for dense file
+descriptor sets, which is the normal case.  (Except on operating
+systems where select() isn't a system call but a library routine that
+calls poll().)
+
+> > Very few applications need the aio_* calls --- essentially only
+> > high-performance RDBMS servers even benefit from them at all, and
+> > most of those have been faking it fine for a while with multiple
+> > threads or processes.  This just provides a modicum of extra
+> > performance.
+> 
+> Wrong, it makes a huge difference in even what I consider small programs.
+
+Why don't you explain this in more detail?
+
+> > Although I don't have a copy of the spec handy, I think the aio_* APIs
+> > come from the POSIX spec IEEE Std 1003.1-1990, section 6.7.9, which is
+> > 13 years old, and which I think documented then-current practice.
+> > They might be even older than that.
+> 
+> Yes, SGI has a patch to the linux kernel to implement the aio_ interfaces,
+> but it's still not built in, who knows when it will be. The point is it's
+> not portable in either case.
+
+You originally said:
+
+  Could it be? After 20 years without this feature UNIX finally
+  catches up to Windows and has I/O that doesnt [sic] totally suck for
+  nontrivial apps? No way!
+
+The point --- my point, the point I was discussing; please don't try
+to tell me you were trying to make a different point, because I don't
+care --- is that you had no clue what you were talking about; Unix
+hasn't been without this feature, and in fact has had it since you
+were in elementary school, and operating systems without it don't
+"totally suck for nontrivial apps".
+
+For what it's worth, glibc has actually implemented the aio_* calls
+for a while, just in a way that doesn't scale to large numbers of
+concurrent I/O requests.  I find references to the glibc
+implementation as far back as 1999 and glibc 2.1.1, and I could
+probably find much earlier references if I had time:
+http://sources.redhat.com/ml/libc-hacker/1999-12/msg00070.html
+
+(more details at
+http://www.atnf.csiro.au/people/rgooch/linux/docs/io-events.html;
+details on the SGI patch are at
+http://oss.sgi.com/projects/kaio/faq.html)
+
+> > Unix has been multiprocess since 1969, and most Unix implementations
+> > have supported multithreading for a decade or more.
+> 
+> And most UNIX is still kinda-sorta supporting the pthreads (POSIX)
+> interface, each in their own 7/8 implementation. You're safe if you
+> stick to the basics.
+
+Your original complaint was that Unix didn't do multithreading or
+multiprogramming well.  Now that I've pointed out how obviously
+idiotic that claim is, you've amended your complaint: now, although
+individual Unixes do these things well, you complain that their
+implementations are not entirely conformant with the POSIX threads
+specification.  Well, that's probably true, but I haven't written
+pthreads programs in C much myself, so I can't confirm it from my own
+experience.  But, even if it's true, it's not a very good reason to
+prefer Windows.
+
+I'm sure you can provide examples of bugs in particular threading
+implementations.  Spare us.  Just shut up.
+
+-- 
+<kragen@pobox.com>       Kragen Sitaker     <http://www.pobox.com/~kragen/>
+Edsger Wybe Dijkstra died in August of 2002.  The world has lost a great
+man.  See http://advogato.org/person/raph/diary.html?start=252 and
+http://www.kode-fu.com/geek/2002_08_04_archive.shtml for details.
+

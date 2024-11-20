@@ -1,0 +1,9 @@
+
+Usage: uri2id [options] [<uri>]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --database filepath   Database filepath.
+

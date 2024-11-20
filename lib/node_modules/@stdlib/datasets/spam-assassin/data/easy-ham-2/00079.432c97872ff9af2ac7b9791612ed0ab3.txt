@@ -1,0 +1,73 @@
+From ilug-admin@linux.ie  Sat Jul 20 00:16:23 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 58460440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 19:16:23 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 20 Jul 2002 00:16:23 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JNCdJ13125 for
+    <jm-ilug@jmason.org>; Sat, 20 Jul 2002 00:12:39 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id AAA05762; Sat, 20 Jul 2002 00:08:46 +0100
+Received: from ie.suberic.net (owsla.ie.suberic.net [62.17.162.83]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id AAA05726 for <ilug@linux.ie>;
+    Sat, 20 Jul 2002 00:08:39 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host owsla.ie.suberic.net
+    [62.17.162.83] claimed to be ie.suberic.net
+Received: from owsla.ie.suberic.net (owsla [127.0.0.1]) by ie.suberic.net
+    (8.11.6/8.11.6) with ESMTP id g6JN8c913959 for <ilug@linux.ie>;
+    Sat, 20 Jul 2002 00:08:38 +0100
+Date: Sat, 20 Jul 2002 00:08:36 +0100
+To: Ronan Waide <waider@waider.ie>
+Cc: ilug@linux.ie
+Subject: Re: [ILUG] How to copy some files
+Message-Id: <20020720000836.D12390@ie.suberic.net>
+References: <200207191515.g6JFFnX02981@linux.local>
+    <00a701c22f3e$51120b10$3864a8c0@sabeo.ie>
+    <20020719162840.GA3325@bagend.makalumedia.com>
+    <15672.18448.462171.646227@klortho.waider.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <15672.18448.462171.646227@klortho.waider.ie>; from
+    waider@waider.ie on Fri, Jul 19, 2002 at 06:10:40PM +0100
+X-Operating-System: Linux 2.4.18-5 i686
+X-GPG-Fingerprint: 9C1D 16F4 11F1 6BD2 933C  048D ACC7 9840 89D0 7646
+From: kevin lyda <kevin+dated+1027638518.1948eb@linux.ie>
+X-Delivery-Agent: TMDA/0.57
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Fri, Jul 19, 2002 at 06:10:40PM +0100, Ronan Waide wrote:
+> Sure, but soft links would do the same. To be honest, I'm trying to
+> think of a useful use of hard links right now, and I'm a little
+> stumped. There's gotta be some benefit that I'm missing that's
+> immediately obvious to everyone.
+
+mh used them nicely.  mh stores one message per file.  the refile command
+allows you to move a message from one folder to another *or* link it to
+another folder.  it uses hard links to do this.  this would suck to if
+it used soft links - what if i later deleted the actual file?
+
+kevin
+
+-- 
+kevin@suberic.net     that a believer is happier than a skeptic is no more to
+fork()'ed on 37058400    the point than the fact that a drunken man is happier
+meatspace place: home       than a sober one. the happiness of credulity is a
+http://ie.suberic.net/~kevin   cheap & dangerous quality -- g.b. shaw
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

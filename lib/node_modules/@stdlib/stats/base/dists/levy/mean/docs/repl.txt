@@ -1,0 +1,38 @@
+
+{{alias}}( μ, c )
+    Returns the expected value of a Lévy distribution with location parameter
+    `μ` and scale parameter `c`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `c <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    μ: number
+        Location parameter.
+
+    c: number
+        Scale parameter.
+
+    Returns
+    -------
+    out: number
+        Expected value.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.0, 1.0 )
+    Infinity
+    > y = {{alias}}( 4.0, 3.0 )
+    Infinity
+    > y = {{alias}}( NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN )
+    NaN
+    > y = {{alias}}( 0.0, 0.0 )
+    NaN
+
+    See Also
+    --------
+

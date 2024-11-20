@@ -1,0 +1,90 @@
+From fork-admin@xent.com  Mon Aug 19 11:03:51 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 1EDDA441A5
+	for <jm@localhost>; Mon, 19 Aug 2002 05:55:04 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:55:04 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7H70Q622253 for <jm@jmason.org>;
+    Sat, 17 Aug 2002 08:00:29 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id D996F29409A; Fri, 16 Aug 2002 23:58:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from nycsmtp3out.rdc-nyc.rr.com (nycsmtp3out.rdc-nyc.rr.com
+    [24.29.99.228]) by xent.com (Postfix) with ESMTP id 11470294098 for
+    <fork@xent.com>; Fri, 16 Aug 2002 23:57:13 -0700 (PDT)
+Received: from damien (66-108-144-106.nyc.rr.com [66.108.144.106]) by
+    nycsmtp3out.rdc-nyc.rr.com (8.12.1/Road Runner SMTP Server 1.0) with ESMTP
+    id g7H70igQ018852 for <fork@xent.com>; Sat, 17 Aug 2002 03:00:53 -0400
+    (EDT)
+From: "Damien Morton" <damien.morton@acm.org>
+To: <fork@spamassassin.taint.org>
+Subject: =?us-ascii?Q?FW:_Re:_Al_Qaeda's_Fantasy_Ideology?=
+Message-Id: <000801c245bb$3af152d0$6a906c42@damien>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.3416
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4807.1700
+Importance: Normal
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sat, 17 Aug 2002 02:56:27 -0400
+
+-----Original Message-----
+From: Damien Morton [mailto:damien.morton@acm.org] 
+Sent: Saturday, 17 August 2002 02:55
+To: 'polrev@hoover.stanford.edu'
+Subject: Re: Al Qaeda's Fantasy Ideology
+
+
+Youre right of course - the attack was performed for its effect on
+muslims, not for its effect on the US. By showing that it can be done,
+they inspire others to follow in their path, or so they hope.
+
+I take some objection to the belabouring of the term fantasy, because it
+is somewhat perjorative. Imagining different worlds can often lead the
+world to become more like that imagined. Moreso if action is taken on
+the basis of those imaginings.
+
+Theres an interesting parralel with the great capitalist dream that
+anyone can make anything happen through hard work and a bit of luck.
+This is equally a fantasy, but one made to approach reality through
+consensus.
+
+An interesting question then becomes, if Al Queda's actions are in
+furtherance of a fantasy, what fantasies are George Bush's actions in
+furtherace of? How many of the actions of George Bush and the US are
+performed for their effect on the US population? For example, how much
+showmanship has been put into rebuilding the morale of wall street. Is
+this not as much a spirtual investment as the sacrifices Al Queda made?
+
+What cultural myopia is in play here in the US?
+
+I make a point of reading Australian, Britsish and US news. Today I
+noticed that the Australian and British news are featuring the Iraqi
+overtures to the UN on inspectors, while US news is featuring Iraqi war
+preparations (digging bunkers etc).
+
+At a time that the US is withdrawing from international cooperation on
+multiple levels, the fantasy of being surrounded by enemies (invisible
+preferably) is somewhat appealing. A self fullfilling prophesy, if you
+like. Perhaps that's whats at work here.
+
+http://xent.com/mailman/listinfo/fork
+

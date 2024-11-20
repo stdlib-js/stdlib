@@ -1,0 +1,91 @@
+
+{{alias}}( x )
+    Splits a double-precision floating-point number into a normalized fraction
+    and an integer power of two.
+
+    The first element of the returned array is the normalized fraction and the
+    second is the exponent. The normalized fraction and exponent satisfy the
+    relation
+
+      x = frac * 2^exp
+
+    If provided positive or negative zero, `NaN`, or positive or negative
+    infinity, the function returns a two-element array containing the input
+    value and an exponent equal to zero.
+
+    For all other numeric input values, the absolute value of the normalized
+    fraction resides on the interval [0.5,1).
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    out: Array<number>
+        A normalized fraction and an exponent.
+
+    Examples
+    --------
+    > var out = {{alias}}( 4.0 )
+    [ 0.5, 3 ]
+    > out = {{alias}}( 0.0 )
+    [ 0.0, 0 ]
+    > out = {{alias}}( -0.0 )
+    [ -0.0, 0 ]
+    > out = {{alias}}( NaN )
+    [ NaN, 0 ]
+    > out = {{alias}}( {{alias:@stdlib/constants/float64/pinf}} )
+    [ Infinity, 0 ]
+    > out = {{alias}}( {{alias:@stdlib/constants/float64/ninf}} )
+    [ -Infinity, 0 ]
+
+
+{{alias}}.assign( x, out, stride, offset )
+    Splits a double-precision floating-point number into a normalized fraction
+    and an integer power of two and assigns results to a provided output array.
+
+    The first element of the returned array is the normalized fraction and the
+    second is the exponent. The normalized fraction and exponent satisfy the
+    relation
+
+      x = frac * 2^exp
+
+    If provided positive or negative zero, `NaN`, or positive or negative
+    infinity, the function returns a two-element array containing the input
+    value and an exponent equal to zero.
+
+    For all other numeric input values, the absolute value of the normalized
+    fraction resides on the interval [0.5,1).
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    out: Array<number>
+        Output array.
+
+    stride: integer
+        Output array stride.
+
+    offset: integer
+        Output array index offset.
+
+    Returns
+    -------
+    out: Array<number>
+        A normalized fraction and an exponent.
+
+    Examples
+    --------
+    > var out = new {{alias:@stdlib/array/float64}}( 2 );
+    > var y = {{alias}}.assign( 4.0, out, 1, 0 )
+    <Float64Array>[ 0.5, 3 ]
+    > var bool = ( y === out )
+    true
+
+    See Also
+    --------
+

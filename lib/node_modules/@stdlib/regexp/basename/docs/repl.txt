@@ -1,0 +1,58 @@
+
+{{alias}}( [platform] )
+    Returns a regular expression to capture the last part of a path.
+
+    The regular expression is platform-dependent. If the current process is
+    running on Windows, the regular expression is `*.REGEXP_WIN32`; otherwise,
+    `*.REGEXP_POSIX`.
+
+    Parameters
+    ----------
+    platform: string (optional)
+        Path platform (either `posix` or `win32`).
+
+    Returns
+    -------
+    re: RegExp
+        Regular expression.
+
+    Examples
+    --------
+    > var RE = {{alias}}()
+    <RegExp>
+    > var RE_POSIX = {{alias}}( 'posix' );
+    > var RE_WIN32 = {{alias}}( 'win32' );
+    > var str = RE.toString();
+    > var bool = ( str === RE_POSIX.toString() || str === RE_WIN32.toString() )
+    true
+
+
+{{alias}}.REGEXP
+    Regular expression to capture the last part of a POSIX path.
+
+    Examples
+    --------
+    > var RE = {{alias}}.REGEXP
+    <RegExp>
+
+
+{{alias}}.REGEXP_POSIX
+    Regular expression to capture the last part of a POSIX path.
+
+    Examples
+    --------
+    > var base = {{alias}}.REGEXP_POSIX.exec( '/foo/bar/index.js' )[ 1 ]
+    'index.js'
+
+
+{{alias}}.REGEXP_WIN32
+    Regular expression to capture the last part of a Windows path.
+
+    Examples
+    --------
+    > var base = {{alias}}.REGEXP_WIN32.exec( 'C:\\foo\\bar\\index.js' )[ 1 ]
+    'index.js'
+
+    See Also
+    --------
+

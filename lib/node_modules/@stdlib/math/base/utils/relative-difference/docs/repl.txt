@@ -1,0 +1,93 @@
+
+{{alias}}( x, y[, scale] )
+    Computes the relative difference of two real numbers.
+
+    By default, the function scales the absolute difference by dividing the
+    absolute difference by the maximum absolute value of `x` and `y`. To scale
+    by a different function, specify a scale function name.
+
+    The following `scale` functions are supported:
+
+    - 'max-abs': maximum absolute value of `x` and `y` (default).
+    - 'max': maximum value of `x` and `y`.
+    - 'min-abs': minimum absolute value of `x` and `y`.
+    - 'min': minimum value of `x` and `y`.
+    - 'mean-abs': arithmetic mean of the absolute values of `x` and `y`.
+    - 'mean': arithmetic mean of `x` and `y`.
+    - 'x': `x` (*noncommutative*).
+    - 'y': `y` (*noncommutative*).
+
+    To use a custom scale function, provide a function which accepts two numeric
+    arguments `x` and `y`.
+
+    If the absolute difference of `x` and `y` is `0`, the relative difference is
+    always `0`.
+
+    If `|x| = |y| = infinity`, the function returns `NaN`.
+
+    If `|x| = |-y| = infinity`, the relative difference is `+infinity`.
+
+    If a `scale` function returns `0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        First number.
+
+    y: number
+        Second number.
+
+    scale: string|Function (optional)
+        Scale function. Default: `'max-abs'`.
+
+    Returns
+    -------
+    out: number
+        Relative difference.
+
+    Examples
+    --------
+    > var d = {{alias}}( 2.0, 5.0 )
+    0.6
+    > d = {{alias}}( -1.0, 3.14 )
+    ~1.318
+    > d = {{alias}}( -2.0, 5.0, 'max-abs' )
+    1.4
+    > d = {{alias}}( -2.0, 5.0, 'max' )
+    1.4
+    > d = {{alias}}( -2.0, 5.0, 'min-abs' )
+    3.5
+    > d = {{alias}}( -2.0, 5.0, 'min' )
+    3.5
+    > d = {{alias}}( -2.0, 5.0, 'mean-abs' )
+    2.0
+    > d = {{alias}}( -2.0, 5.0, 'mean' )
+    ~4.667
+    > d = {{alias}}( -2.0, 5.0, 'x' )
+    3.5
+    > d = {{alias}}( 5.0, -2.0, 'x' )
+    1.4
+    > d = {{alias}}( -2.0, 5.0, 'y' )
+    1.4
+    > d = {{alias}}( 5.0, -2.0, 'y' )
+    3.5
+
+    // Custom scale function:
+    > function scale( x, y ) {
+    ...     var s;
+    ...
+    ...     x = {{alias:@stdlib/math/base/special/abs}}( x );
+    ...     y = {{alias:@stdlib/math/base/special/abs}}( y );
+    ...
+    ...     // Maximum absolute value:
+    ...     s = (x < y ) ? y : x;
+    ...
+    ...     // Scale in units of epsilon:
+    ...     return s * {{alias:@stdlib/constants/float64/eps}};
+    ... };
+    > d = {{alias}}( 12.15, 12.149999999999999, scale )
+    ~0.658
+
+    See Also
+    --------
+

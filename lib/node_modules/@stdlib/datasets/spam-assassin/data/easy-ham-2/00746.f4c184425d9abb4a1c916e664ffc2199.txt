@@ -1,0 +1,191 @@
+From fork-admin@xent.com  Wed Jul 31 15:26:32 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8C1414407C
+	for <jm@localhost>; Wed, 31 Jul 2002 10:26:27 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 31 Jul 2002 15:26:27 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6VEJu227985 for <jm@jmason.org>;
+    Wed, 31 Jul 2002 15:19:59 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 17FC8294136; Wed, 31 Jul 2002 07:17:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from Boron.MeepZor.Com (i.meepzor.com [204.146.167.214]) by
+    xent.com (Postfix) with ESMTP id F2575294134 for <FoRK@Xent.Com>;
+    Wed, 31 Jul 2002 07:16:52 -0700 (PDT)
+Received: from Golux.Com (dmz-firewall [206.199.198.4]) by
+    Boron.MeepZor.Com (8.11.6/8.11.6) with ESMTP id g6VEHB907951;
+    Wed, 31 Jul 2002 10:17:11 -0400
+Message-Id: <3D47F408.804863CD@Golux.Com>
+From: Rodent of Unusual Size <Ken.Coar@Golux.Com>
+Organization: The Apache Software Foundation
+X-Mailer: Mozilla 4.79 [en] (WinNT; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: Flatware or Road Kill? <FoRK@xent.com>
+Subject: Bits for posterity: Astronomical sleuthing
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 31 Jul 2002 10:28:24 -0400
+
+From: Donald Eastlake 3rd <dee3@torque.pothole.com>
+
+<http://www.nytimes.com/2002/07/16/science/space/16MOON.html>
+
+July 16, 2002
+By Yonder Blessed Moon, Sleuths Decode Life and Art
+By LEON JAROFF
+
+On its way back from the Pacific island of Tinian, where it had
+delivered the uranium core for the atomic bomb that destroyed Hiroshima,
+the heavy cruiser Indianapolis was torpedoed by the Japanese submarine
+I-58 and sent to the bottom of the Philippine Sea. It was one of the
+worst disasters in American naval history; only 317 of its nearly 1,200
+crew members survived.
+
+Now experts at Southwest Texas State University have given that tragic
+story a startling new twist.
+
+It was the moon, they say, that sank the Indianapolis. Or anyway, they
+write in the July issue of Sky & Telescope, it was the moon that made
+the sinking possible.
+
+Using astronomical computer programs, records and weather reports, as
+well as the known coordinates and running speeds of the ship and the
+submarine that sank it, the authors determined that when the I-58
+surfaced, it was perfectly aligned, west to east, with the cruiser. And,
+they said, a three-quarter moon had just emerged from behind the clouds.
+
+Looking across the moonlit water, an I-58 crewman spotted the ship
+silhouetted against the sky, 10.3 miles away. Half an hour later, six
+torpedoes sent it to the bottom.
+
+"It was sheer chance," said Dr. Donald Olson, an astronomer. "Without
+that alignment with the moon, the lookouts would not have spotted the
+cruiser, especially at that distance."
+
+With Russell Doescher, a physics lecturer, Dr. Olson conducts a
+university honors course called "Astronomy in Art, History and
+Literature." In the last 15 years, he has pinpointed the time and place
+of the rendering of art masterpieces, given new interpretations of
+astronomical references in Chaucer and revealed the decisive role of the
+moon in military and other encounters.
+
+Two years ago, for example, Dr. Olson turned his attention to the bright
+star in van Gogh's "White House at Night." He and some students went to
+Auvers, France, where van Gogh created his final works, and searched
+until they found the house, largely unchanged. Sifting through letters
+from van Gogh to his brother, Dr. Olson found that the painting was
+completed in June 1890.
+
+Noting the orientation of the house in the painting, he determined where
+van Gogh had set his easel and what section of the sky he had portrayed,
+and from the lighting and shadows, he established that the house had
+been illuminated by the setting sun. His computer analysis then
+identified the "star." It was Venus, which in early evening in mid-June
+had occupied that part of the sky.
+
+A final check of local weather records pinpointed the actual date van
+Gogh had composed the painting, June 16, the only clear day in the
+middle of the month that year.
+
+Dr. Olson has also turned his attention to Shakespeare, intrigued by the
+opening of "Hamlet," when guards on the ramparts of Elsinor refer to the
+"star that's westward from the pole had made his course to illume that
+part of heaven where now it burns." From the guards' description, the
+season and the time, other astronomers had suggested several bright
+stars as possibilities, but Dr. Olson's calculations placed it in the
+constellation Cassiopeia, which lacks any notably luminous stars.
+
+Pondering this problem on a trip with his wife, Dr. Olson was suddenly
+inspired. He was aware that in 1572, a supernova, called Tycho's star,
+for the Danish astronomer Tycho Brahe, suddenly flamed in Cassiopeia,
+creating a worldwide sensation. Shakespeare, 8 at the time, would
+certainly have recalled the event, and his memory was probably refreshed
+by the description of the supernova in a history book that was the
+source of some of his best-known plays.
+
+Dr. Olson has no doubt that the star that glared above Elsinor that
+night was Tycho's, and he has an impressive record of other
+astronomy-based sleuthing.
+
+Aware that the photographer Ansel Adams often neglected to date his
+negatives, Dr. Olson set out to find when Adams had shot his classic
+"Moon and Half Dome." At Yosemite, Dr. Olson and his students found
+Adams's vantage point, studied the location, phase and features of the
+moon in the photograph, plus the shadows on the Dome, snow on the peak
+and other clues, and then announced that the picture had been taken at
+4:14 p.m., Dec. 28, 1960.
+
+Then, Dr. Olson calculated that the setting would be virtually identical
+at 4:05 p.m. on Dec. 13, 1994. On that day Adams's daughter-in-law
+visited Yosemite and was photographed holding a print of "Moon and the
+Half Dome" in the foreground of an eerily similar view of the actual
+moon and the Half Dome.
+
+Analyzing Chaucer's works, Dr. Olson has confirmed that a particularly
+rapid movement of the moon described in "The Merchant's Tale" occurred
+in April 1389. And in "The Franklin's Tale," Chaucer's description of
+the heavenly alignment that caused an exceptionally high tide on the
+Brittany coast, convinced Dr. Olson that Chaucer was an advanced amateur
+astronomer.
+
+Then there was Paul Revere. On his way to saddle up for his famous ride,
+how did he manage to row undetected past a British warship on a moonlit
+night in Boston Harbor? Dr. Olson's computer program revealed that,
+while the moon was nearly full that night, it was unusually close to the
+southern horizon and did not illuminate Revere's boat.
+
+Dr. Olson's proudest achievement was explaining "the tide that failed"
+in the bloody Marine Corps landing at Tarawa atoll on Nov. 20, 1943.
+Planners had expected a tide to provide a water depth of five feet over
+a reef some 600 yards from shore, allowing larger landing craft, with
+drafts of at least four feet, to pass.
+
+But that day and the next, in the words of some observers, "the ocean
+just sat there," providing neither low tide nor high tide and leaving a
+mean depth of three feet over the reef. The craft grounded on the edge
+of the reef, and many marines were killed or injured as they waded 600
+yards to the shore, rifles over their heads, in the face of machine-gun
+fire from the Japanese.
+
+Asked by a former marine about the tidal phenomenon, Dr. Olson spent six
+months researching and mastering tidal theory and discovered that the
+military planners were aware that they had to contend with a "neap"
+tide. This phenomenon occurs twice a month when the moon is near its
+first or last quarter, because the countering tug of the sun causes
+water levels to deviate less.
+
+But that day, the moon was also almost at its farthest point from earth
+and exerted even less pull, leaving the waters relatively undisturbed
+and the marines in trouble.
+
+"I'm not in the least blaming the planners," Dr. Olson said, explaining
+that the techniques used in accurately determining tides hadn't been
+applied to the waters at Tarawa.
+
+Indeed, he modestly claims, by using his computer program, "We can
+calculate the tides in any port in the world on any day in history."
+
+Yet Dr. Olson's greatest satisfaction seems to stem from his
+interdisciplinary approach to astronomical sleuthing. "I have thought
+about van Gogh, about Shakespeare and Chaucer," he says, "and that has
+made my life as a scientist much richer."
+http://xent.com/mailman/listinfo/fork
+
+

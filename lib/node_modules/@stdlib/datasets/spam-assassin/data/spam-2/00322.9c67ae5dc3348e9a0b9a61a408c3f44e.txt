@@ -1,0 +1,429 @@
+From jhzyi@ece.concordia.ca  Mon Jun 24 17:03:51 2002
+Return-Path: jhzyi@ece.concordia.ca
+Delivery-Date: Wed May 15 10:01:10 2002
+Received: from mandark.labs.netnoteinc.com ([213.105.180.140]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g4F919e26178 for
+    <jm@jmason.org>; Wed, 15 May 2002 10:01:09 +0100
+Received: from [66.78.55.2] ([66.78.55.2]) by mandark.labs.netnoteinc.com
+    (8.11.2/8.11.2) with ESMTP id g4F916D24336 for <jm@netnoteinc.com>;
+    Wed, 15 May 2002 10:01:07 +0100
+Received: from francenet.fr (unverified [217.59.8.25]) by (Vircom SMTPRS
+    4.0.179) with ESMTP id <B0000426157@>; Wed, 15 May 2002 04:30:16 -0700
+Message-Id: <B0000426157@>
+To: <Undisclosed.Recipients@mandark.labs.netnoteinc.com>
+From: "Joe" <jhzyi@ece.concordia.ca>
+Subject: Keep Your Home Safe
+Date: Wed, 15 May 2002 01:39:21 -1900
+MIME-Version: 1.0
+X-Keywords: 
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<META HTTP-EQUIV=3D"Content-Type" CONTENT=3D"text/html;charset=3Diso-8859-1=
+">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml"
+xmlns:o=3D"urn:schemas-microsoft-com:office:office"
+xmlns:w=3D"urn:schemas-microsoft-com:office:word"
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=3DContent-Type content=3D"text/html; charset=3Diso-8859-1=
+">
+<meta name=3DProgId content=3DWord.Document>
+<meta name=3DGenerator content=3D"Microsoft Word 9">
+<meta name=3DOriginator content=3D"Microsoft Word 9">
+<link rel=3DFile-List href=3D"./Alarms,%20New%20Hours_files/filelist.xml">
+<title>Alarms, New Hours .htm</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>TGSWEL</o:Author>
+  <o:LastAuthor>TGSWEL</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>8</o:TotalTime>
+  <o:Created>2002-05-11T16:41:00Z</o:Created>
+  <o:LastSaved>2002-05-11T16:41:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>415</o:Words>
+  <o:Characters>2370</o:Characters>
+  <o:Company>WCS</o:Company>
+  <o:Lines>19</o:Lines>
+  <o:Paragraphs>4</o:Paragraphs>
+  <o:CharactersWithSpaces>2910</o:CharactersWithSpaces>
+  <o:Version>9.4402</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p
+	{font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext=3D"edit" spidmax=3D"1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext=3D"edit">
+  <o:idmap v:ext=3D"edit" data=3D"1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=3Dwhite lang=3DEN-US style=3D'tab-interval:.5in'>
+
+<div class=3DSection1>
+
+<p class=3DMsoNormal>&nbsp;</p>
+
+<div align=3Dcenter>
+
+<table border=3D0 cellspacing=3D0 cellpadding=3D0 width=3D"85%" bgcolor=3D=
+"#00125e"
+ style=3D'width:85.0%;mso-cellspacing:0in;background:#00125E;mso-padding-a=
+lt:
+ 0in 0in 0in 0in'>
+ <tr>
+  <td width=3D"100%" style=3D'width:100.0%;padding:0in 0in 0in 0in'>
+  <p align=3Dcenter style=3D'text-align:center'><b><span style=3D'font-siz=
+e:36.0pt;
+  font-family:Arial;color:red'>U.S. HOMEOWNERS</span></b></p>
+  <p align=3Dcenter style=3D'text-align:center'><b><span style=3D'font-siz=
+e:18.0pt;
+  color:white'>CALL TODAY TO QUALIFY FOR </span></b></p>
+  <p align=3Dcenter style=3D'text-align:center'><b><span style=3D'font-siz=
+e:18.0pt;
+  color:white'>A FREE HOME SECURITY SYSTEM</span></b></p>
+  <p align=3Dcenter style=3D'text-align:center'><b><span style=3D'font-siz=
+e:36.0pt;
+  color:red'>1-800-775-0738</span></b></p>
+  <p>&nbsp;</p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span
+style=3D'color:black;display:none;mso-hide:all'><![if !supportEmptyParas]>=
+&nbsp;<![endif]><o:p></o:p></span></p>
+
+<div align=3Dcenter>
+
+<table border=3D0 cellspacing=3D0 cellpadding=3D0 width=3D"85%" style=3D'w=
+idth:85.0%;
+ mso-cellspacing:0in;mso-padding-alt:0in 0in 0in 0in'>
+ <tr>
+  <td width=3D"19%" style=3D'width:19.0%;background:#00125E;padding:0in 0i=
+n 0in 0in'>
+  <p class=3DMsoNormal>&nbsp;</p>
+  </td>
+  <td width=3D"39%" style=3D'width:39.0%;padding:0in 0in 0in 0in'>
+  <p align=3Dcenter style=3D'text-align:center'><b><span style=3D'font-fam=
+ily:Arial;
+  color:#BC2F0E'>America's most trusted</span></b> </p>
+  <p align=3Dcenter style=3D'text-align:center'><b><span style=3D'font-fam=
+ily:Arial;
+  color:#BC2F0E'>security system... </span></b></p>
+  <p align=3Dcenter style=3D'text-align:center'><b><span style=3D'font-fam=
+ily:Arial;
+  color:#BC2F0E'>The most </span></b></p>
+  <p align=3Dcenter style=3D'text-align:center'><b><span style=3D'font-fam=
+ily:Arial;
+  color:#BC2F0E'>comprehensive </span></b></p>
+  <p align=3Dcenter style=3D'text-align:center'><b><span style=3D'font-fam=
+ily:Arial;
+  color:#BC2F0E'>security package </span></b></p>
+  <p align=3Dcenter style=3D'text-align:center'><b><span style=3D'font-fam=
+ily:Arial;
+  color:#BC2F0E'>ever offered FREE!</span></b></p>
+  </td>
+  <td width=3D"42%" style=3D'width:42.0%;padding:0in 0in 0in 0in'>
+  <p align=3Dcenter style=3D'text-align:center'>&nbsp;</p>
+  <p align=3Dcenter style=3D'text-align:center'><b><span style=3D'font-siz=
+e:24.0pt;
+  font-family:Arial'>Over 135,000 </span></b></p>
+  <p align=3Dcenter style=3D'text-align:center'><b><span style=3D'font-siz=
+e:24.0pt;
+  font-family:Arial'>Families made </span></b></p>
+  <p align=3Dcenter style=3D'text-align:center'><b><span style=3D'font-siz=
+e:24.0pt;
+  font-family:Arial'>the right </span></b></p>
+  <p align=3Dcenter style=3D'margin-bottom:12.0pt;text-align:center'><b><s=
+pan
+  style=3D'font-size:24.0pt;font-family:Arial'>choice!</span></b></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span
+style=3D'color:black;display:none;mso-hide:all'><![if !supportEmptyParas]>=
+&nbsp;<![endif]><o:p></o:p></span></p>
+
+<div align=3Dcenter>
+
+<table border=3D0 cellspacing=3D0 cellpadding=3D0 width=3D"85%" style=3D'w=
+idth:85.0%;
+ mso-cellspacing:0in;mso-padding-alt:0in 0in 0in 0in'>
+ <tr>
+  <td width=3D"19%" style=3D'width:19.0%;background:#00125E;padding:0in 0i=
+n 0in 0in'>
+  <p class=3DMsoNormal>&nbsp;</p>
+  </td>
+  <td width=3D"81%" style=3D'width:81.0%;padding:0in 0in 0in 0in'>
+  <p align=3Dcenter style=3D'text-align:center'>&nbsp;</p>
+  <p><b><span style=3D'font-size:10.0pt;font-family:Arial;color:#00125E'>I=
+n these
+  troubled times, your family's safety is more important than ever! </span=
+></b><span
+  style=3D'font-size:10.0pt;font-family:Arial;color:black'>Defend your fam=
+ily
+  against the threat of home invasion and forced entry. Make sure you're
+  prepared to get help in the event of an emergency. </span><b><span
+  style=3D'font-size:10.0pt;font-family:Arial;color:#00125E'>Take advantag=
+e of
+  the following special offer.</span></b></p>
+  <p><span style=3D'font-size:10.0pt;font-family:Arial'>For a limited time=
+ you
+  can receive our <strong><span style=3D'color:#00125E'>home security syst=
+em, </span></strong>THE
+  most comprehensive home security package ever offered<strong><span
+  style=3D'color:#00125E'> for FREE!&nbsp; You must call the Toll Free num=
+ber
+  below to qualify for this Special Offer.</span></strong></span></p>
+  <p><b><span style=3D'font-size:10.0pt;font-family:Arial;color:#00125E'>Y=
+ou
+  don't have to be a victim!<span style=3D"mso-spacerun: yes">&nbsp; </spa=
+n></span></b><span
+  style=3D'font-size:10.0pt;font-family:Arial'>Intelligent homeowners are
+  awakening to one undeniable fact. Studies show burglars will commit crim=
+es
+  somewhere else when confronted with a monitored security system.&nbsp;Ou=
+r
+  home security system provides ultimate protection for your family and ho=
+me,
+  24-hours each and every day. The bad guys will have to go elsewhere to f=
+ind
+  their victim.</span></p>
+  <p><b><span style=3D'font-size:10.0pt;font-family:Arial;color:#00125E'>S=
+tate-of-the-art
+  wireless technology! <span style=3D"mso-spacerun: yes">&nbsp;</span></sp=
+an></b><span
+  style=3D'font-size:10.0pt;font-family:Arial'>Our security system is adva=
+nced
+  wireless technology which enables a clean installation in approximately =
+one hour.
+  No holes to drill, no unsightly wires to run.</span></p>
+  <p><span style=3D'font-size:10.0pt;font-family:Arial'>Replacement parts
+  (probably never needed) are <b><span style=3D'color:#00125E'>also free</=
+span></b>,
+  with your <b><span style=3D'color:#00125E'>Lifetime Guaranteed Parts
+  Replacement Warranty</span></b> for as long as your home is monitored by=
+ our
+  authorized UL listed monitoring facility. That tells you the confidence =
+we
+  place in our product's quality.</span></p>
+  <p><span style=3D'font-size:10.0pt;font-family:Arial;color:black'>We are
+  absolutely confident our security system </span><strong><span
+  style=3D'font-size:10.0pt;font-family:Arial;color:#00125E'>provides the
+  necessary deterrence and detection</span></strong><span style=3D'font-si=
+ze:
+  10.0pt;font-family:Arial'> your home needs. To prove it, <b><span
+  style=3D'color:#00125E'>The company will pay your insurance deductible (=
+Up to
+  $250.00)</span></b> in the unlikely event you suffer a loss from an unwa=
+nted
+  intrusion.<b><span style=3D'color:#00125E'> You also may be eligible for=
+ up to
+  20% in insurance premium discounts.</span></b></span></p>
+  <p><strong><span style=3D'font-size:10.0pt;font-family:Arial;color:black=
+'>To
+  see if you qualify for this exciting offer, simply phone the toll free n=
+umber
+  below, answer a few simple questions, and&nbsp;possibly have your new ho=
+me
+  security system installed,</span></strong> <strong><span style=3D'font-s=
+ize:
+  10.0pt;font-family:Arial;color:black'>in your home, within 48 hours.</sp=
+an></strong></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span
+style=3D'color:black;display:none;mso-hide:all'><![if !supportEmptyParas]>=
+&nbsp;<![endif]><o:p></o:p></span></p>
+
+<div align=3Dcenter>
+
+<table border=3D0 cellspacing=3D0 cellpadding=3D0 width=3D"85%" style=3D'w=
+idth:85.0%;
+ mso-cellspacing:0in;mso-padding-alt:0in 0in 0in 0in'>
+ <tr>
+  <td width=3D"19%" style=3D'width:19.0%;background:#00125E;padding:0in 0i=
+n 0in 0in'>
+  <p class=3DMsoNormal>&nbsp;</p>
+  </td>
+  <td width=3D"81%" style=3D'width:81.0%;padding:0in 0in 0in 0in'>
+  <p align=3Dcenter style=3D'text-align:center'><strong><span style=3D'fon=
+t-size:
+  24.0pt;font-family:Arial;color:red'>Call NOW !!&nbsp;&nbsp; </span></str=
+ong></p>
+  <p align=3Dcenter style=3D'text-align:center'><strong><span style=3D'fon=
+t-size:
+  36.0pt;font-family:Arial;color:red'>1-800-775-0738</span></strong></p>
+  <p align=3Dcenter style=3D'text-align:center'><strong><span style=3D'fon=
+t-size:
+  10.0pt;font-family:Arial;color:#00125E'>Operators are on duty 10</span><=
+/strong><strong><span
+  style=3D'font-size:13.5pt;font-family:Arial;color:#00125E'>:</span></str=
+ong><strong><span
+  style=3D'font-size:10.0pt;font-family:Arial;color:#00125E'>00 AM to 10:0=
+0 PM
+  EDT Monday-Friday,<o:p></o:p></span></strong></p>
+  <p align=3Dcenter style=3D'text-align:center'><strong><span style=3D'fon=
+t-size:
+  10.0pt;font-family:Arial;color:#00125E'>10:00 AM to 2:00 PM EDT on Satur=
+day<o:p></o:p></span></strong></p>
+  <p><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+  <p><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span
+style=3D'color:black;display:none;mso-hide:all'><![if !supportEmptyParas]>=
+&nbsp;<![endif]><o:p></o:p></span></p>
+
+<div align=3Dcenter>
+
+<table border=3D0 cellspacing=3D0 cellpadding=3D0 width=3D"85%" style=3D'w=
+idth:85.0%;
+ mso-cellspacing:0in;mso-padding-alt:0in 0in 0in 0in'>
+ <tr>
+  <td width=3D"19%" style=3D'width:19.0%;background:#00125E;padding:0in 0i=
+n 0in 0in'>
+  <p class=3DMsoNormal>&nbsp;</p>
+  </td>
+  <td width=3D"81%" style=3D'width:81.0%;padding:0in 0in 0in 0in'>
+  <p align=3Dcenter style=3D'text-align:center'><strong><span style=3D'fon=
+t-size:
+  18.0pt;font-family:Arial;color:black'>Your system will include the follo=
+wing:</span></strong></p>
+  <p><strong><span style=3D'font-size:10.0pt;font-family:Arial;color:red'>=
+*</span></strong><strong><span
+  style=3D'font-size:10.0pt;font-family:Arial;color:black'> No Connection =
+Fee </span></strong><strong><span
+  style=3D'font-size:10.0pt;font-family:Arial;color:red'>*</span></strong>=
+<strong><span
+  style=3D'font-size:10.0pt;font-family:Arial;color:black'> 10 Doors/Windo=
+ws
+  Protected </span></strong><strong><span style=3D'font-size:10.0pt;font-f=
+amily:
+  Arial;color:red'>* </span></strong><strong><span style=3D'font-size:10.0=
+pt;
+  font-family:Arial;color:black'>Lifetime Warranty </span></strong><strong=
+><span
+  style=3D'font-size:10.0pt;font-family:Arial;color:red'>* </span></strong=
+><strong><span
+  style=3D'font-size:10.0pt;font-family:Arial;color:black'>Wireless-no dri=
+lling,
+  no mess </span></strong><strong><span style=3D'font-size:10.0pt;font-fam=
+ily:
+  Arial;color:red'>*</span></strong><strong><span style=3D'font-size:10.0p=
+t;
+  font-family:Arial;color:black'>You own the System! </span></strong><stro=
+ng><span
+  style=3D'font-size:10.0pt;font-family:Arial;color:red'>*</span></strong>=
+<strong><span
+  style=3D'font-size:10.0pt;font-family:Arial;color:black'>Pages you when =
+the
+  kids get Home </span></strong><strong><span style=3D'font-size:10.0pt;
+  font-family:Arial;color:red'>*</span></strong><strong><span style=3D'fon=
+t-size:
+  10.0pt;font-family:Arial;color:black'>Rechargeable Battery Backup </span=
+></strong><strong><span
+  style=3D'font-size:10.0pt;font-family:Arial;color:red'>* </span></strong=
+><strong><span
+  style=3D'font-size:10.0pt;font-family:Arial;color:black'>Yard Signs and =
+Window
+  Decals</span></strong></p>
+  <p><strong><span style=3D'font-size:10.0pt;font-family:Arial;color:black=
+'>Remember,&nbsp;
+  the system is Free and could save you as much as 20% on your Homeowners
+  Insurance.&nbsp; This is a </span></strong><strong><span style=3D'font-s=
+ize:
+  10.0pt;font-family:Arial;color:navy'>limited time offer</span></strong><=
+strong><span
+  style=3D'font-size:10.0pt;font-family:Arial;color:black'>, so call now t=
+o
+  qualify for your </span></strong><strong><span style=3D'font-size:10.0pt=
+;
+  font-family:Arial;color:red'>FREE HOME SECURITY SYSTEM.</span></strong><=
+/p>
+  <p align=3Dcenter style=3D'text-align:center'><strong><span style=3D'fon=
+t-size:
+  36.0pt;font-family:Arial;color:red'>Call Today! </span></strong></p>
+  <p align=3Dcenter style=3D'text-align:center'><strong><span style=3D'fon=
+t-size:
+  10.0pt;font-family:Arial;color:#00125E'>10</span></strong><strong><span
+  style=3D'font-size:13.5pt;font-family:Arial;color:#00125E'>:</span></str=
+ong><strong><span
+  style=3D'font-size:10.0pt;font-family:Arial;color:#00125E'>00 AM to 10:0=
+0 PM
+  EDT Monday-Friday,<o:p></o:p></span></strong></p>
+  <p align=3Dcenter style=3D'text-align:center'><strong><span style=3D'fon=
+t-size:
+  10.0pt;font-family:Arial;color:#00125E'>10:00 AM to 2:00 PM EDT on Satur=
+day<o:p></o:p></span></strong></p>
+  <p align=3Dcenter style=3D'text-align:center'><![if !supportEmptyParas]>=
+&nbsp;<![endif]><o:p></o:p></p>
+  <p align=3Dcenter style=3D'text-align:center'><strong><span style=3D'fon=
+t-size:
+  36.0pt;font-family:Arial;color:red'>1-800-775-0738</span></strong></p>
+  <p align=3Dcenter style=3D'text-align:center'><strong><span style=3D'fon=
+t-size:
+  10.0pt;font-family:Arial;color:gray'>To be removed from future mailings,
+  click 'Reply', type&nbsp;'Remove' as your subject, and send.</span></str=
+ong><strong><span
+  style=3D'font-size:10.0pt;font-family:Arial;color:red'>&nbsp;&nbsp;</spa=
+n></strong></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=3DMsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p>=
+</p>
+
+</div>
+
+</body>
+
+</html>
+
+
+

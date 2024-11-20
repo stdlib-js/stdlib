@@ -1,0 +1,76 @@
+From fork-admin@xent.com  Tue Sep 10 11:07:41 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 7871116F03
+	for <jm@localhost>; Tue, 10 Sep 2002 11:07:40 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 10 Sep 2002 11:07:40 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8A3MHC15100 for <jm@jmason.org>;
+    Tue, 10 Sep 2002 04:22:18 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 91E052942FB; Mon,  9 Sep 2002 20:19:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.superb.net (smtp1.superb.net [207.228.225.14]) by
+    xent.com (Postfix) with SMTP id 7FE942942FA for <fork@xent.com>;
+    Mon,  9 Sep 2002 20:18:30 -0700 (PDT)
+Received: (qmail 4750 invoked from network); 10 Sep 2002 03:21:23 -0000
+Received: from unknown (HELO maya.dyndns.org) (207.61.5.143) by
+    smtp1.superb.net with SMTP; 10 Sep 2002 03:21:23 -0000
+Received: by maya.dyndns.org (Postfix, from userid 501) id 80DAB1CC98;
+    Mon,  9 Sep 2002 23:21:19 -0400 (EDT)
+To: Eirikur Hallgrimsson <eh@mad.scientist.com>
+Cc: "FoRK" <fork@spamassassin.taint.org>
+Subject: Re: Recommended Viewing
+References: <ILEHJNJFPDLMDEKNIAKCIEEICAAA.geege@barrera.org>
+    <200209092206.33219.eh@mad.scientist.com>
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m28z2amswg.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 09 Sep 2002 23:21:19 -0400
+
+>>>>> "E" == Eirikur Hallgrimsson <eh@mad.scientist.com> writes:
+
+    E> Absolutely, and I've wanted to recapture it.  
+
+I don't know about this /particular/ mood, but I have used
+neuro-conditioning with aiding children in stressful
+life-circumstances.
+
+Basically, you somehow evoke the state you want, and when you get it,
+you do something odd, anything at all will do, but I used a gentle
+"vulcan grip" on their shoulder.  Later, when faced with the
+uncomfortable situation, you can retrieve /part/ of that earlier more
+desireable state by giving them the pinch; it's not perfect (like you
+get with simpler brains) but it is an inescapable effect.
+
+This is probably the neuro-effect that leads to performance-enhancing
+superstitions such as Bob Dylan not performing without his favourite
+jean jacket: Because it provides the cue to a more relaxed mental
+state, he really does play better with it than without it.
+
+-- 
+Gary Lawrence Murphy <garym@teledyn.com> TeleDynamics Communications Inc
+ Business Advantage through Community Software : http://www.teledyn.com
+"Computers are useless.  They can only give you answers."(Pablo Picasso)
+
+

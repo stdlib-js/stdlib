@@ -1,0 +1,109 @@
+
+{{alias}}( x, y[, options] )
+    Computes a Pearson product-moment correlation test between paired samples.
+
+    By default, the function performs a t-test for the null hypothesis that the
+    data in arrays or typed arrays `x` and `y` is not correlated. A test against
+    a different population correlation can be carried out by supplying the `rho`
+    option. In this case, a test using the Fisher's z transform is conducted.
+
+    The returned object comes with a `.print()` method which when invoked will
+    print a formatted output of the results of the hypothesis test.
+
+    Parameters
+    ----------
+    x: Array<number>
+        First data array.
+
+    y: Array<number>
+        Second data array.
+
+    options: Object (optional)
+        Options.
+
+    options.alpha: number (optional)
+        Nnumber in the interval `[0,1]` giving the significance level of the
+        hypothesis test. Default: `0.05`.
+
+    options.alternative: string (optional)
+        Either `two-sided`, `less` or `greater`. Indicates whether the
+        alternative hypothesis is that `x` has a larger mean than `y`
+        (`greater`), `x` has a smaller mean than `y` (`less`) or the means are
+        the same (`two-sided`). Default: `'two-sided'`.
+
+    options.rho: number (optional)
+        Number denoting the correlation under the null hypothesis.
+        Default: `0`.
+
+    Returns
+    -------
+    out: Object
+        Test result object.
+
+    out.alpha: number
+        Used significance level.
+
+    out.rejected: boolean
+        Test decision.
+
+    out.pValue: number
+        p-value of the test.
+
+    out.statistic: number
+        Value of test statistic.
+
+    out.ci: Array<number>
+        1-alpha confidence interval for the Pearson product-moment correlation
+        coefficient. The confidence interval is calculated using Fisher's
+        z-transform.
+
+    out.nullValue: number
+        Assumed correlation under H0 (equal to the supplied `rho` option).
+
+    out.alternative: string
+        Alternative hypothesis (`two-sided`, `less` or `greater`).
+
+    out.method: string
+        Name of test.
+
+    out.print: Function
+        Function to print formatted output.
+
+    Examples
+    --------
+    > var rho = 0.5;
+    > var x = new Array( 300 );
+    > var y = new Array( 300 );
+    > for ( var i = 0; i < 300; i++ ) {
+    ...    x[ i ] = {{alias:@stdlib/random/base/normal}}( 0.0, 1.0 );
+    ...    y[ i ] = ( rho * x[ i ] ) + {{alias:@stdlib/random/base/normal}}( 0.0,
+    ...    {{alias:@stdlib/math/base/special/sqrt}}( 1.0 - (rho*rho) ) );
+    ... }
+    > var out = {{alias}}( x, y )
+    {
+        alpha: 0.05,
+        rejected: true,
+        pValue: 0,
+        statistic: 10.115805615994121,
+        ci: [ 0.4161679018930295, 0.5853122968949995 ],
+        alternative: 'two-sided',
+        method: 't-test for Pearson correlation coefficient',
+        nullValue: 0,
+        pcorr: 0.505582072355616,
+    }
+
+    // Print output:
+    > var table = out.print()
+    t-test for Pearson correlation coefficient
+
+    Alternative hypothesis: True correlation coefficient is not equal to 0
+
+        pValue: 0
+        statistic: 9.2106
+        95% confidence interval: [0.3776,0.5544]
+
+    Test Decision: Reject null in favor of alternative at 5% significance level
+
+    See Also
+    --------
+

@@ -1,0 +1,67 @@
+From iiu-admin@taint.org  Thu Aug 22 17:08:44 2002
+Return-Path: <iiu-admin@taint.org>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B989743F9B
+	for <zzzz@localhost>; Thu, 22 Aug 2002 12:08:43 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Thu, 22 Aug 2002 17:08:43 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7MG0MZ13369;
+    Thu, 22 Aug 2002 17:00:22 +0100
+Received: from hawk.dcu.ie (mail.dcu.ie [136.206.1.5]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7MFxBZ13285 for
+    <iiu@taint.org>; Thu, 22 Aug 2002 16:59:11 +0100
+Received: from dcu.ie (136.206.21.115) by hawk.dcu.ie (6.0.040) id
+    3D6203D3000136AD for iiu@taint.org; Thu, 22 Aug 2002 16:59:17 +0100
+Message-Id: <3D650A2D.1000301@dcu.ie>
+From: Bernard Michael Tyers <bernard.tyers@dcu.ie>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.0.0)
+    Gecko/20020530
+X-Accept-Language: ga, en-ie, eu, en-us, de-at, as
+MIME-Version: 1.0
+To: iiu <iiu@taint.org>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Subject: [IIU] Eircom aDSL Nat'ing
+Sender: iiu-admin@taint.org
+Errors-To: iiu-admin@taint.org
+X-Beenthere: iiu@iiu.taint.org
+X-Mailman-Version: 2.0.10
+Precedence: bulk
+Reply-To: iiu@taint.org
+List-Unsubscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=unsubscribe>
+List-Id: Irish Internet Users <iiu.iiu.taint.org>
+List-Post: <mailto:iiu@iiu.taint.org>
+List-Help: <mailto:iiu-request@iiu.taint.org?subject=help>
+List-Subscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=subscribe>
+List-Archive: <http://iiu.taint.org/pipermail/iiu/>
+Date: Thu, 22 Aug 2002 16:58:37 +0100
+
+Hi all,
+
+apologies for the possible silly question (i don't think it is, but), 
+but is Eircom's aDSL service NAT'ed?
+
+and what implications would that have for VoIP? I know there are 
+difficulties with VoIP or connecting to clients connected to a NAT'ed 
+network from the internet wild (i.e. machines with static, real IPs)
+
+any help pointers would be helpful,
+
+cheers
+-- 
+rgrds,
+Bernard
+-- 
+Bernard Tyers * National Centre for Sensor Research * P:353-1-700-5273 *
+E: bernard.tyers@dcu.ie * W: www.physics.dcu.ie/~bty * L:N117
+
+_______________________________________________
+IIU mailing list
+IIU@iiu.taint.org
+http://iiu.taint.org/mailman/listinfo/iiu
+

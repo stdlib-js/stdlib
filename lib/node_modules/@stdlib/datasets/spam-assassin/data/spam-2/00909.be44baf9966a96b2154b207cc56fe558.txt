@@ -1,0 +1,76 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6N1NehY013635
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Mon, 22 Jul 2002 20:23:40 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6N1NeV8013632
+	for cypherpunks-forward@ds.pro-ns.net; Mon, 22 Jul 2002 20:23:40 -0500 (CDT)
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6N1MFhX013128
+	for <cypherpunks@ds.pro-ns.net>; Mon, 22 Jul 2002 20:22:16 -0500 (CDT)
+	(envelope-from cpunks@ssz.com)
+X-Authentication-Warning: hq.pro-ns.net: Host cpunks@[207.200.56.4] claimed to be einstein.ssz.com
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id UAA27096
+	for cypherpunks@ds.pro-ns.net; Mon, 22 Jul 2002 20:30:40 -0500
+Received: (from mdom@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id UAA26953
+	for cypherpunks-outgoing; Mon, 22 Jul 2002 20:27:42 -0500
+Received: from shisu.com.cn ([202.103.216.30])
+	by einstein.ssz.com (8.8.8/8.8.8) with ESMTP id UAA26916
+	for <cypherpunks@einstein.ssz.com>; Mon, 22 Jul 2002 20:26:11 -0500
+From: 060204@040206.com
+Received: from ME [210.83.94.193] by shisu.com.cn
+  (SMTPD32-7.05) id A2A99450112; Tue, 23 Jul 2002 06:09:45 +0800
+Subject: 如果你是AB型血型，又是一个愿捐骨髓者，请。。。。
+X-Priority: 1 (Highest)
+X-Mailer: Microsoft Outlook Express 5.00.2615.200
+MIME-Version: 1.0
+Content-type: multipart/mixed; boundary="#MYBOUNDARY#"
+Message-Id: <200207230609495.SM01828@ME>
+Date: Tue, 23 Jul 2002 09:16:57 +0800
+Sender: owner-cypherpunks@ssz.com
+Precedence: bulk
+Reply-To: cypherpunks@ssz.com
+X-Mailing-List: cypherpunks@ssz.com
+X-Unsubscription-Info: http://einstein.ssz.com/cdr
+X-List-Admin: list@ssz.com
+X-Loop: ssz.com
+X-Acceptable-Languages: English, Russian, German, French, Spanish
+To: undisclosed-recipients:;
+
+
+--#MYBOUNDARY#
+Content-Type: text/html; charset=GB2312
+Content-Transfer-Encoding: base64
+X-MIME-Autoconverted: from 8bit to base64 by hq.pro-ns.net id g6N439hX076203
+
+ttTSu7j20aqwqbKhyMu6zbzSyvTF89PRtvjR1KOsyrG85NK7t9bSu8Prtdi5/cilo6zUvcHu
+yMu6psXCoaMgDQrO0sPHvLHQ6NKq0rvOu9Gq0M1BQtDNtcS5x8vovujU+dXfy+TIu9a709Cw
+2c3yt9bWrtK7tcS7+rvho6zS8s6qxPq1xLTIsa/T67TzsK6jrMv9ssXT0LvuIA0Kz8LIpbXE
+z6PN+6GjIA0Kx+vJ7LP2xPq1xNSuytbT687Sw8fBqsLn0rLH68T6v8nS1L2r1eK34tDF1NnX
+qrzEuPjE+rXEx9fF87rD09HDxyzQu9C7oaMgDQoNCrjQvKSyu76ho6EgRXJpYyBIdWkgVGVs
+OiAoODUyKS0yNDI2LTYwNzMgKE9mZmljZSk7ICg4NTIpLTkxODEtMjA4MyAoTW9iaWxlKSAN
+Cg0K08PX1Ly6tcTSu7fd0NC2r6Oszey+yNbQu6rD8dfltcTV+7j21+W356OsyMPX1Mu9oaLM
+sMC3oaLDu9PQDQrIy9DUtci28c+wtNPW0Ln6yMvJ7cnPz/vKp6GjDQoNCsHtu8a6o7ar0r3K
+pr60uOa087zSo6zI57n709BBQtGq0M3V36Osv8nAtNDFwLS156OsyLu689TZwarPtcnPuqO5
+x8vov+LF5NDNo6hITEG31tDNo6mhoyANCsjnufu087zS09DJz7qj1tDQxNGq1b678snPuqPW
+0LuqucfL6L/itcTN+Na3u/K157uwv8nS1L6hv+zBqs+1oaPB7c3io6y4+b7d1K3Qxbz+tcS1
+57uwusUgDQrC66Osu7zV37/JxNzOqs/juNvIy6Osy/nS1MjnufvT0LnjtqvF89PRo6zH676h
+wb/Xqrjmo6zV4tH5v8nS1NT2vNPF5NDNtcSzybmmwsqho9C70LuhoyANCg0KDQo=
+--#MYBOUNDARY#--
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

@@ -1,0 +1,29 @@
+
+{{alias}}( str )
+    Tests whether a string contains only alphanumeric characters.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a string contains only alphanumeric
+        characters.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 'abc0123456789' )
+    true
+    > bool = {{alias}}( 'abcdef' )
+    true
+    > bool = {{alias}}( '0xff' )
+    true
+    > bool = {{alias}}( '' )
+    false
+
+    See Also
+    --------
+

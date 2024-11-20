@@ -1,0 +1,151 @@
+{
+  "name": "@stdlib/math/base/special/abs",
+  "version": "0.0.0",
+  "description": "Compute the absolute value of a double-precision floating-point number.",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "main": "./lib",
+  "gypfile": true,
+  "directories": {
+    "benchmark": "./benchmark",
+    "doc": "./docs",
+    "example": "./examples",
+    "include": "./include",
+    "lib": "./lib",
+    "src": "./src",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "scripts": {},
+  "homepage": "https://github.com/stdlib-js/stdlib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stdlib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "mathematics",
+    "math",
+    "math.abs",
+    "abs",
+    "absolute",
+    "magnitude",
+    "value",
+    "number",
+    "double",
+    "double-precision"
+  ],
+  "__stdlib__": {
+    "stability": "stable",
+    "envs": {
+      "node": true,
+      "browser": true,
+      "repl": true
+    },
+    "namespaces": {
+      "repl": true,
+      "parent": false
+    },
+    "namespace": false,
+    "standalone": true,
+    "c_api": true,
+    "addon": false,
+    "wasm": false,
+    "cli": false,
+    "benchmarks": {
+      "c": true,
+      "cephes": true,
+      "cpp": false,
+      "boost": false,
+      "fortran": false,
+      "python": true,
+      "numpy": false,
+      "scipy": false,
+      "r": true,
+      "julia": true,
+      "js": true
+    },
+    "examples": {
+      "c": true,
+      "cpp": false,
+      "fortran": false,
+      "js": true
+    },
+    "dtype": "float64",
+    "base_alias": "abs",
+    "alias": "abs",
+    "short_desc": "absolute value",
+    "link_text": "absolute value",
+    "domain": [
+      {
+        "min": "-infinity",
+        "max": "infinity"
+      }
+    ],
+    "rand": {
+      "min": -10,
+      "max": 10
+    },
+    "keywords": [
+      "absolute",
+      "value",
+      "abs",
+      "magnitude"
+    ],
+    "extra_keywords": [
+      "math.abs"
+    ],
+    "example_values": [
+      -2,
+      1,
+      3,
+      -5,
+      4,
+      0,
+      -1,
+      -3,
+      -3.14,
+      5.6,
+      -9,
+      -5.55,
+      3.5,
+      10,
+      -9.99,
+      3,
+      -6,
+      -7,
+      8,
+      -7.77
+    ]
+  }
+}

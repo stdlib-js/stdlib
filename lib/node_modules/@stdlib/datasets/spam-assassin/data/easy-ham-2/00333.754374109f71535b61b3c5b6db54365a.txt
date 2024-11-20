@@ -1,0 +1,64 @@
+From ilug-admin@linux.ie  Mon Aug 12 11:06:22 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E9BD944157
+	for <jm@localhost>; Mon, 12 Aug 2002 05:55:58 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:55:58 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7AMxLb06598 for
+    <jm-ilug@jmason.org>; Sat, 10 Aug 2002 23:59:21 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id XAA18783; Sat, 10 Aug 2002 23:56:15 +0100
+Received: from mail.go2.ie ([62.17.153.101]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id XAA18760 for <ilug@linux.ie>; Sat,
+    10 Aug 2002 23:56:09 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [62.17.153.101] claimed to
+    be mail.go2.ie
+Received: from k100-20.bas1.dbn.dublin.eircom.net
+    (k100-20.bas1.dbn.dublin.eircom.net [159.134.100.20]) by mail.go2.ie
+    (Postfix) with ESMTP id 85FD110DE for <ilug@linux.ie>; Sat, 10 Aug 2002
+    23:55:27 +0100 (IST)
+Subject: Re: [ILUG] SUSE 8 disks? (was [ILUG] ILUG newsgroup(s)?)
+From: Nick Murtagh <nickm@go2.ie>
+To: ilug@linux.ie
+In-Reply-To: <20020809181342.48823.qmail@web13901.mail.yahoo.com>
+References: <20020809181342.48823.qmail@web13901.mail.yahoo.com>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8-2mdk
+Date: 11 Aug 2002 00:55:10 +0100
+Message-Id: <1029023717.2993.4.camel@gemini.windmill>
+MIME-Version: 1.0
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Fri, 2002-08-09 at 19:13, Paul Linehan wrote:
+> I'm looking for the disks for SUSE 8. Does anybody
+> have them for a reasonable price?
+
+First you complain about the supposed lack of threading
+in Internet Mail, and then you reply to one of the messages
+in that thread on an unrelated topic, messing things up for
+those of us with threading turned on?
+
+Even Outlook Express does threading!
+
+Sigh...
+
+Nick
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

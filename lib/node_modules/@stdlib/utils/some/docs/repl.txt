@@ -1,0 +1,32 @@
+
+{{alias}}( collection, n )
+    Tests whether at least `n` elements in a collection are truthy.
+
+    The function immediately returns upon finding `n` truthy elements.
+
+    If provided an empty collection, the function returns `false`.
+
+    Parameters
+    ----------
+    collection: Array|TypedArray|Object
+        Input collection over which to iterate. If provided an object, the
+        object must be array-like (excluding strings and functions).
+
+    n: number
+        Minimum number of truthy elements.
+
+    Returns
+    -------
+    bool: boolean
+        The function returns `true` if a collection contains at least `n` truthy
+        elements; otherwise, the function returns `false`.
+
+    Examples
+    --------
+    > var arr = [ 0, 0, 1, 2, 3 ];
+    > var bool = {{alias}}( arr, 3 )
+    true
+
+    See Also
+    --------
+

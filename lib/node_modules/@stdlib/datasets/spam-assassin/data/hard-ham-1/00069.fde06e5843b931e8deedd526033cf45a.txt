@@ -1,0 +1,468 @@
+Return-Path: <bounce-lghtml-2534368@sprocket.lockergnome.com>
+Received: from lockergnome.com (sprocket.lockergnome.com [130.94.96.247])
+	by dogma.slashnull.org (8.11.6/8.11.6) with SMTP id g6F9RbJ27084
+	for <qqqqqqqqqq-lg@spamassassin.taint.org>; Mon, 15 Jul 2002 10:27:37 +0100
+X-Mailer: ListManager Web Interface
+Date: Sun, 14 Jul 2002 23:45:17 -0500
+Subject: [Lockergnome Windows Daily]  Deeper Uplink
+To: qqqqqqqqqq-lg@spamassassin.taint.org
+From: Lockergnome Windows Daily <subscriptions@lockergnome.com>
+List-Unsubscribe: <mailto:leave-lghtml-2534368N@sprocket.lockergnome.com>
+List-Subscribe: <mailto:subscribe-lghtml@sprocket.lockergnome.com>
+List-Owner: <mailto:owner-lghtml@sprocket.lockergnome.com>
+X-URL: <http://www.lockergnome.com/>
+X-List-Host: Lockergnome <http://www.lockergnome.com/>
+Reply-To: leave-lghtml-2534368N@sprocket.lockergnome.com
+Sender: bounce-lghtml-2534368@sprocket.lockergnome.com
+Message-Id: <LISTMANAGERSQL-2534368-1677076-2002.07.14-23.46.52--qqqqqqqqqq-lg#spamassassin.taint.org@sprocket.lockergnome.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=us-ascii
+
+<html><head><!--
+
+
+      CLICK HERE to read this newsletter on the Web for FREE:
+
+      <a href="http://www.lockergnome.com/issues/daily/20020715.html">
+      http://www.lockergnome.com/issues/daily/20020715.html
+      </a>
+
+      To unsubscribe, simply reply to this e-mail message.
+
+      To resubscribe, visit our site: http://www.lockergnome.com/
+
+      Don't worry about anything else below this paragraph.
+      It's for those with HTML e-mail clients. Just go to
+      the above listed web address to view this issue
+      perfectly in your web browser. Thanks again! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+<!--
+ body      { BACKGROUND-IMAGE: url(http://images.lockergnome.com/images/issue/top-right.gif); color: #990000 }
+ a:link    { COLOR: #000000; TEXT-DECORATION: underline; font-weight: normal }
+ a:visited { COLOR: #C84200; TEXT-DECORATION: underline; font-weight: normal }
+ a:active  { COLOR: GRAY; text-decoration: none }
+ a:hover   { color: GRAY; TEXT-DECORATION: none }
+ p.title   { BACKGROUND: #FFCC99; BORDER-BOTTOM: #FF9966 4px solid; BORDER-LEFT: #FFEEDD 4px solid; BORDER-RIGHT: #FF9966 4px solid; BORDER-TOP: #FFEEDD 4px solid; COLOR: #990000; FONT-FAMILY: Comic Sans MS, Trebuchet MS, Helvetica, Arial; FONT-SIZE: 14pt; FONT-WEIGHT: normal }
+ p.sidebar { BACKGROUND: #FFEEDD; TEXT-ALIGN: center; BORDER-BOTTOM: #FFCC99 3px solid; BORDER-LEFT: #FFFFFF 3px solid; BORDER-RIGHT: #FFCC99 3px solid; BORDER-TOP: #FFFFFF 3px solid; COLOR: #990000; FONT-FAMILY: Comic Sans MS, Trebuchet MS, Helvetica, Arial; FONT-SIZE: 10pt; FONT-WEIGHT: bold }
+ .url      { font-size: 8pt; font-family: Verdana, Tahoma, Arial }
+-->
+</style><title>20020715 Lockergnome Windows Daily</title></head>
+
+<body   MARGINHEIGHT="0" TOPMARGIN="0" BOTTOMMARGIN="0" bgcolor="#FFFFFF"   style="BACKGROUND-POSITION: right top; BACKGROUND-REPEAT: no-repeat" MARGINWIDTH="0" LEFTMARGIN="0" rightmargin="0">
+
+<!-- background="http://images.lockergnome.com/images/bg.head.gray.gif" bgcolor="#C0C0C0" left width="610" background="http://www.lockergnome.com/images/issue/top-right-2.gif" -->
+
+ <table width="100%" border="0" cellspacing="0" cellpadding="7" align="CENTER" valign="MIDDLE">
+  <tr><td background="http://images.lockergnome.com/images/issue/top-left.gif" nowrap valign="middle" align="center" colspan="2">
+
+ <!-- TOP BANNER AD -->
+ <center>
+ <a href="http://www.lockergnome.com/"><img src="http://images.lockergnome.com/images/gnomedaily.gif" width="50" height="60" hspace="5" alt="Lockergnome" border="0"></a>
+ <a href="http://click.linksynergy.com/fs-bin/click?id=vdKWfulJxTQ&offerid=36698.10000263&type=4&subid=0"><IMG  width="468" height="60" alt="10354" border="0" src="http://www.winnetmag.com/linkshare/banners/10354.gif"></a><IMG border="0" width="1" height="1" src="http://ad.linksynergy.com/fs-bin/show?id=vdKWfulJxTQ&bids=36698.10000263&type=4&subid=0">
+ <br>
+ </center>
+ <!-- TOP BANNER AD -->
+
+ <!--#include virtual="/include/banner.txt" -->
+
+ </td></tr>
+
+  <tr><td valign="top" bgcolor="#FFFFFF"><font color="#990000" face="Verdana, Tahoma, Arial" style="font-size: 10pt" size="2">
+
+<!-- NEWS -->
+<table bgcolor="#FFCC99" border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><p class="title">
+&nbsp; 07.15.2002 GnomeREPORT </p></td></tr></table><p>
+
+<p class="sidebar"><table cellpadding="10" cellspacing="0" border="0"><tr><td><font style="font-size: 10pt" face="Verdana, Tahoma, Arial" size="2">
+<A HREF="http://www.lockergnome.com/lgstore/sunshop/index.php?action=item&id=68"><img src="http://www.lockergnome.com/lgstore/sunshop/images/productpics/computerbasics.jpg" alt="TechTV's Computer Basics" height="109" width="63" border="2" hspace="10" align="left"></a>
+<b>CHRIS TEACHES THE BASICS:</b> If you've got friends or family who want to learn more about their PC, from a guy who makes things nice and easy, check out the VHS release of <a href="http://www.lockergnome.com/lgstore/sunshop/index.php?action=item&id=68">Computer Basics</a> in the GnomeStore. Chris teams with TechTV cohort, Kate Botello, to lead novices on a journey through their computer. From basic interactions, to installing apps, to using the Internet and e-mail, Chris and Kate have all the basics covered. Help out a friend and  <a href="http://www.lockergnome.com/lgstore/sunshop/index.php?action=item&id=68">get them a copy</a> today.    
+</font></td></tr></table></p>
+
+It's official: Gretchen, Sprocket, and I will be moving in a few
+weeks. Not too far, though. We'll be going deeper into the city of
+San Francisco starting on the first of September. Lori and Norm
+were here over the weekend (for a photo shoot); in between sets,
+Gretchen invited them to join her hunt. They came upon a house
+located in one of the busier parts of town. With only street
+parking available, I wasn't too thrilled about investigating the
+property. However, my wife seemed optimistic. We kinda knew what
+we were looking for in a residence (and its neighborhood), but
+also knew we'd have to make certain concessions in the process. We
+parked (literally) up the hill and found our way to what would
+turn out to be our future home (at least, for the next year or
+so). It has lots of usable space - which is a premium here. Plus,
+the landlords are extremely dog-friendly. Winner! The pictures and
+videos will come, never fear.
+
+<p>
+
+<table align="left" bgcolor="#FFFFFF" cellspacing="0" cellpadding="10"><tr><td><table align="left" bgcolor="#990000" cellspacing="0" cellpadding="2"><tr><td><table border="0" cellpadding="6" cellspacing="0">
+<tr><td align="center" valign="middle" bgcolor="#FFEEDD"><font style="font-size: 8pt" face="Tahoma, Helvetica, Arial" size="1"><B>PC World Picks</b></font></td></tr><tr><td bgcolor="#FFEEDD"><font style="font-size: 8pt" face="Tahoma, Helvetica, Arial" size="1">
+<A HREF="http://www.pcworld.com/downloads/file_description/0,fid,4172,00.asp">WinZip v8.1</A><BR>
+<A HREF="http://www.pcworld.com/downloads/file_description/0,fid,5648,00.asp">IrfanView v3.70</A><BR>
+<A HREF="http://www.pcworld.com/downloads/file_description/0,fid,2049,00.asp">ACDSee v4.0.2</A><BR>
+<A HREF="http://www.pcworld.com/downloads/file_description/0,fid,3335,00.asp">Microangelo v5.5</A><BR>
+<A HREF="http://www.pcworld.com/downloads/file_description/0,fid,2015,00.asp">SmartDraw</A><BR>
+<A HREF="http://www.pcworld.com/downloads/file_description/0,fid,5556,00.asp">Winamp v2.80</A><BR>
+<A HREF="http://www.pcworld.com/downloads/file_description/0,fid,2432,00.asp">Paint Shop Pro</A><BR>
+<A HREF="http://www.pcworld.com/downloads/file_description/0,fid,2920,00.asp">Cool Edit 2000</A><BR>
+<A HREF="http://www.pcworld.com/downloads/file_description/0,fid,7996,00.asp">UltraEdit v9.00a</A><BR>
+<A HREF="http://www.pcworld.com/downloads/file_description/0,fid,6570,00.asp">Backup Plus v6.1.1</A><BR>
+<A HREF="http://www.pcworld.com/downloads/file_description/0,fid,2051,00.asp">TextPad v4.5</A><BR>
+<A HREF="http://www.pcworld.com/downloads/file_description/0,fid,20521,00.asp">Mailbag Asst v2.6c</A><BR>
+<A HREF="http://www.pcworld.com/downloads/file_description/0,fid,4780,00.asp">Time and Chaos v5.4.0</A><BR>
+<A HREF="http://www.pcworld.com/downloads/file_description/0,fid,15740,00.asp">SureThing Labeler</A><BR>
+<A HREF="http://www.pcworld.com/downloads/file_description/0,fid,7573,00.asp">WinRAR v3.00</A><BR>
+<A HREF="http://www.pcworld.com/downloads/file_description/0,fid,7777,00.asp">Blaze Media Pro</A><BR>
+</font></td></tr></table></td></tr></table></td></tr></table>
+
+
+First order of business: get broadband! According to AT&T's Web
+site, cable modem service is not available in the area. However,
+DSL is an option. So, it looks like I'm going to be purchasing an
+external <A HREF="http://lockergnome.pricegrabber.com/search_gen.php?form_keyword=dsl%20modem">DSL
+modem</A> in a few days. Any suggestions?
+Yeah, I'm not even sure who I'll select for my provider. They
+currently use SBC to get online, so I might just stick with them
+for continuity's sake. Verizon has been solid enough for me here,
+but I believe our loft complex has a unique infrastructure. If I
+could make contact with someone from any capable system, I'd
+probably go with them. I should probably get the ball rolling
+soon, though - I'd hate to play the waiting game for too long.
+I've heard of installation nightmares, so I'll probably be rolling
+my own (again). 56k is quaint, but hardly enough pipe to get any
+real work done. When you download as much as I do, every bit
+counts. Oh, and did I tell you about the bites?
+
+<p>
+
+
+There are plenty of unique restaurants in just about every
+direction. Plus, we're right up around the corner from a Peet's
+outlet! If you need me, you know where you can find me. I'll
+probably also be setting up a Wi-Fi network before too long, too.
+My Proxim hardware still works, but I wasn't sure if I needed a
+crossover cable to connect it to my router. Furo tells me: "If the
+hub has an uplink port, then a straight cable should work between
+the two, as it provides the crossover for you. If both have uplink
+and non-uplink ports (workstation attachment ports), then you
+would need a crossover cable between like ports. For instance, if
+you were connecting a workstation port on one to a workstation
+port on another, you'd have to use a crossover. Same for uplink to
+uplink." How's that for home network helpfulness? Oh, if only he'd
+do a free <a href="http://www.gnometomes.com/">Gnometome</a> for
+us...
+
+
+
+
+<!-- DOWNLOADS -->
+<p align="right">See You in <a target="_blank" href="http://www.gnomedex.com/">August</a>,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><font style="font-size: 23pt" face="Chris Pirillo, Script">Chris Pirillo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></P>
+<p><br><table bgcolor="#FFCC99" border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><p class="title">&nbsp;GnomeDOWNLOADS</p></td></tr></table><p>
+
+
+<b>Traces Viewer v1.0 [478k] W9x/2k/XP FREE</b>
+<p>
+<a class="URL" href="http://www.surfpilot.net/tracesviewer.html">http://www.surfpilot.net/tracesviewer.html</a>
+<p>
+
+{Find Web site remnants} Who knows what evils lurk on the hard
+drives of mine? I'm always curious about what has been downloaded
+to my PC after I have visited a website. I suppose I COULD clear
+out my Temporary Internet Files before going to every single
+page... or I could just install Traces Viewer. This handy
+application gives me the power to see what my PC acquires for
+every website I visit. With Traces Viewer's easy-to-read
+interface, I can see what files come from each site, and also if
+the site contained any cookies.  Mmmmmm, cookies... now, how could
+chocolate chip be evil?
+
+<p><br>
+
+<b>Pixel Toolbox v1.1 [3.7M] W9x/2k/XP FREE</b>
+<p>
+<a class="URL" href="http://www.axiomx.com/PixelToolbox/">http://www.axiomx.com/PixelToolbox/</a>
+<p>
+
+{Make your own icons} I have a compulsive habit of changing the
+original desktop and icons in Windows to a version that mirrors my
+personality. So what happens if I can't find a desktop or set of
+icons that suits me? I load up Pixel Toolbox! This program allows
+me to flex my creative skills by creating Windows icons and
+pointers. Find yourself in a creativity slump? Well, you don't
+have to strain your creative muscle. PixelToolbox allows you to
+import an image that you already own, and work from there. If that
+isn't enough, you can fashion your own tiled desktop or share your
+creation with friends by exporting your masterpiece as a .jpg,
+.png, .tga, or .tif file.
+
+
+<!-- SPECIALS -->
+<p align="right"><a class="url" style="color: gray; text-decoration: none" href="http://www.lockergnome.com/recommend.html">Recommend It!</a></p>
+<p><br><table bgcolor="#FFCC99" border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><p class="title">&nbsp;GnomeCLICKS</p></td></tr></table><p>
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr>
+<td valign=top align=center><a target="_blank" href="http://www.infopackets.com/cgi-bin/click.cgi?id=83"><img src="http://www.lockergnome.com/images/ads/icon.hotwindowstip.gif" height="62" width="62" alt="TECHNOLOGY can be frustrating for new and intermediate computer users, UNTIL NOW. Join us for a FREE Windows Newsletter, video tutorials, articles, special reports, and more!" border="0"></a></td>
+<td valign=top align=center><a target="_blank" href="http://www.picozip.com/lg/"><img src="http://www.picozip.com/ads/picozip_lg.gif" height="60" width="63" alt="The easiest way to Zip/UnZip. An AWARD-WINNING file compression utility featuring quick backup, batch processing, Windows integration and SUPPORTS 15 archive formats (ACE, RAR, etc)." border="0"></a></td>
+<td valign=top align=center><a target="_blank" href="http://www.handybackup.com"><img src="http://www.lockergnome.com/images/ads/icon.handybackup.gif" height="62" width="33" alt="Handy Backup" border="0"></a></td>
+<td valign=top align=center><a target="_blank" href="http://www.outlooksecure.com/"><img src="http://www.lockergnome.com/images/ads/icon.outlooksecure.gif" height="57" width="60" alt="Secure your E-Mail!" border="0"></a></td>
+<td valign=top align=center><a target="_blank" href="http://www.capitalintellect.net/indexlgicon.htm"><img src="http://www.capitalintellect.net/lg1/images/shortcut.gif" height="62" width="62" alt="Shortcut to RDesk.exe" border="0"></a></td>
+<td valign=top align=center><a target="_blank" href="http://www.paessler.com/?ref=LGGCIP"><img src="http://www.lockergnome.com/images/ads/icon.ipcheck1.gif" height="63" width="39" alt="IPCheck Server Monitor monitors a network using various protocols (e.g. ping, http, smtp, ftp) and notifies the staff in various ways as soon as an outage occurs." border="0"></a></td>
+<td valign=top align=center><a target="_blank" href="http://outlook.4team.biz/?fr=gnome"><img src="http://www.lockergnome.com/images/ads/icon.outlook4team.1.gif" height="60" width="60" alt="Share your team/project contacts, calendars, tasks, etc. in MS Oulook 2002, without a server!" border="0"></a></td>
+</tr></table>
+
+<!-- SYSTEM -->
+<p><br><table bgcolor="#FFCC99" border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><p class="title">&nbsp;GnomeSYSTEM</p></td></tr></table><p>
+
+<b>Software Audit Protection Program [2.9M] W9x/2k/XP FREE</b>
+<p>
+<a class="URL" href="http://www.alliedhr.com/sapp.htm">http://www.alliedhr.com/sapp.htm</a>
+<p>
+
+You NEVER pirate software, right? OF COURSE YOU DON'T! (Good
+answer.) So, if someone came to your door and accused you of
+software piracy, could you prove them wrong? With the Software
+Audit Protection Program (SAPP), you could. You can track every
+piece of software you own with this application; you can attach an
+image of your paper receipt, add information like serial numbers
+and activation keys, etc., so you will never be left hunting for
+these items in the future. SAPP can even create and print reports
+detailing your inventory. If you own a small company and want to
+make confirm that you and your employees are "Software Compliant,"
+this is the program for you. You can track your software using
+many different variables such as License, User ID, Software Title
+or Activation Key. Don't get caught second-guessing... be certain
+with the Software Audit Protection Program!
+
+
+
+<!-- WILDCARD -->
+<p align="right"><a class="url" style="color: gray; text-decoration: none" href="http://www.lockergnome.com/recommend.html">Recommend It!</a></p>
+<p><br><table bgcolor="#FFCC99" border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><p class="title">&nbsp;GnomeWILDCARD</p></td></tr></table><p>
+<b>Print! v1.6 [319k] W9x/2k/XP US$39</b><br>
+    Unearthed by Rob Muller
+<p>
+<a class="URL" href="http://www.robsoftware.com/">http://www.robsoftware.com/</a>
+<p>
+
+{Screen print utility} Time is money, and I endorse any program
+that can save me time. Luckily, that is exactly what Print! v1.6
+does. Say that I want to share screenshots with my other tech
+friends to compare error messages and talk about possible fixes:
+every time I take a screen shot, I open up Word, paste the
+snapshot, and THEN I can print it. Too many steps, too much of my
+time! With Print!, I just hit my "Print Screen" key and out comes
+my screenshot without involving any other programs. Don't want a
+screenshot of your whole desktop? Not a problem, just press Alt +
+Print Screen and you'll have a printout of the active window only.
+Print! 1.6 goes so far as to put the date and time on your
+printout too... perfect for saving those high scores on solitaire!
+Other features include scaling, centering, and the ability to
+invert images. (So, not only will you save time, you'll also save
+on toner. Bonus!)  You may also want to note that Print! saves
+your printer configuration without wreaking havoc on the settings
+in your other programs. You'll definitely get your money's worth
+with this program. Don't believe me? Start by checking out the
+evaluation version for yourself!
+
+
+<!-- FAVORITE -->
+<p align="right"><a class="url" style="color: gray; text-decoration: none" href="http://www.lockergnome.com/submit.html">Submit Your Thoughts</a> <font class="url" color="gray">|</font> <a class="url" style="color: gray; text-decoration: none" href="http://www.lockergnome.com/recommend.html">Recommend It!</a></p>
+<p><br><table bgcolor="#FFCC99" border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><p class="title">&nbsp;GnomeFAVORITE</p></td></tr></table><p>
+
+
+<p class="sidebar"><table cellpadding="10" cellspacing="0" border="0"><tr><td><font style="font-size: 10pt" face="Verdana, Tahoma, Arial" size="2">
+<b>REMOTE ACCESS TO YOUR E-MAIL</b>: LoudPC is a new product from Loudfire enabling direct access to your PC's Outlook(tm) from any Internet browser or web phone. Use LoudPC to access your work email from home, check your next appointment while at lunch, reply to an important email while in a meeting, etc. No synchronization required. Works with your existing email accounts. Accesses all of your folders. All changes reflected immediately in your Outlook(tm). <a href="http://www.qksrv.net/click-471546-7064313">Get more info on LoudPC</a> <img src="http://www.qksrv.net/image-471546-7064313" width="1" height="1" border="0">
+</font></td></tr></table></p>
+
+<b>BookCrossing Bookclub</b>
+<p>
+<a class="URL" href="http://bookcrossing.com/">http://bookcrossing.com/</a>
+<p>
+
+Gretchen is a self-professed pack rat: there are just some things
+that she can't throw away. For example, books. I, on the other
+hand, prefer my text in an electronic medium, and don't really
+miss those analog versions. (What's that stuff called again?
+Paper?) Many of my books are gathering dust on the bookshelf. The
+alternative? Free them into the wild! BookCrossing is essentially
+a worldwide book club. You register online and get a BookCrossing
+ID number to put on your books with a note sending the new reader
+back to BookCrossing (think of wheresgeorge.com). Then you just
+leave the book "in the wild" to be found by someone else; the
+folks at BookCrossing suggest a park bench, the pocket of an
+airplane seat, or just plain giving your book to a friend. "Sounds
+easy, right? Well it is. It's also a fascinating exercise in fate,
+karma, or whatever you want to call the chain of events that can
+occur between two or more lives and one piece of literature. Oh,
+and we should mention, it's absolutely free and absolutely
+private, too." BookCrossing also offers book reviews, ratings, and
+recommendations.
+
+
+<!-- TIP -->
+<p align="right"><a class="url" style="color: gray; text-decoration: none" href="http://www.lockergnome.com/recommend.html">Recommend It!</a></p>
+<p><br><table bgcolor="#FFCC99" border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><p class="title">&nbsp;GnomeTIP</p></td></tr></table><p>
+
+Any modem that relies on Windows to function is dubbed a
+"Winmodem." Most manufacturers use "Winmodems" because they are
+cheap and easy to set up on a standard model PC. I don't have any
+problem with the manufacturer saving money (because living in a
+capitalistic society, I would hope that the savings would trickle
+down to ME in one way or another). I do, however, have a problem
+with the way "Winmodems" function after you add more internal
+devices to your PC. "Winmodems" rely on Windows to mediate their
+serial communication (I/O address, COM port, IRQ, etc.) and as you
+can imagine, the more devices Windows has to manage, the higher
+the probability of running into a problem. And what if you want to
+run Linux instead? Will the "Winmodem" function well, if at all,
+in an operating system other than Windows? Don't bet on it! If you
+want to make sure you don't have any problems after upgrading your
+system, you'll want to get yourself a hardware modem. How can you
+determine this? Checking a modem's system requirements. If the
+modem says it REQUIRES Windows, then keep looking... you've found
+yourself a "Winmodem." However, if the system requirements for the
+modem say that it will work with Linux, then you've found yourself
+a hardware modem. Yes, it IS that easy.
+
+
+
+
+<!-- ADMINISTRIVIA -->
+<p align="right"><a class="url" style="color: gray; text-decoration: none" href="http://www.lockergnome.com/recommend.html">Recommend It!</a></p>
+
+<p><br><table cellpadding="0" cellspacing="0" border="0"><tr><td><p class="sidebar">
+<table cellpadding="7" cellspacing="0" border="0"><tr><td>
+<font style="font-size: 8pt" face="Verdana, Tahoma, Arial" size="1">
+<a href="http://www.lockergnome.com/issues/daily/20020715.html">http://www.lockergnome.com/issues/daily/20020715.html</a>
+<p>Your subscribed e-mail address is: [qqqqqqqqqq-lg@spamassassin.taint.org] - To unsubscribe or change your delivery address, please visit the <A HREF="http://www.lockergnome.com/changesub.html">subscription management</A> page. For further information, please refer to the GnomeCREDITS in the sidebar.
+</font></td></tr></table>
+</p></td></tr></table>
+
+<!--#include virtual="/include/subscription2.txt" -->
+
+</font></td>
+<td background="http://images.lockergnome.com/images/issue/sidebar.gif" VALIGN="top" align="left" width="145"><font color="#990000" face="Verdana, Tahoma, Arial" style="font-size: 8pt" size="1">
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td><p class="sidebar">LOOK OVER HERE</p></td></tr></table><br>
+
+&nbsp;<a href="http://www.gnometomes.com/">Download Our Tip Files</a><br>
+<p>
+&nbsp;<a href="http://windowsdaily.lockergnome.com/">Latest Windows Daily</a><br>
+&nbsp;<a href="http://digitalmedia.lockergnome.com/">Latest Digital Media</a><br>
+&nbsp;<a href="http://techspecialist.lockergnome.com/">Latest Tech Specialist</a><br>
+&nbsp;<a href="http://penguinshell.lockergnome.com/">Latest Penguin Shell</a><br>
+&nbsp;<a href="http://applecore.lockergnome.com/">Latest Apple Core</a><br>
+&nbsp;<a href="http://webmasterweekly.lockergnome.com/">Latest Web Weekly</a><br>
+&nbsp;<a href="http://updates.lockergnome.com/">Latest Bits &amp; Bytes</a><br>
+<p>
+&nbsp;<A HREF="http://lockergnome.pricegrabber.com/">Find the Lowest Price</A><br>
+<p>
+&nbsp;<a href="http://www.lockergnome.com/submit.html">Suggest a Feature</a><br>
+&nbsp;<a href="http://www.lockergnome.com/advertise.html">Advertise With Us</a><br>
+&nbsp;<a href="http://store.lockergnome.com">The GnomeSTORE</a><br>
+&nbsp;<A HREF="http://seeker.dice.com/seeker.epl?rel_code=14">High-Tech Job Search</A><br>
+&nbsp;<a href="http://www.lockergnome.com/chat.html">Chat With Gnomies</a><br>
+&nbsp;<a href="http://www.lockergnome.com/webcam.html">Watch The Webcams</a><br>
+&nbsp;<a href="https://www.sandhills.com/secure/smartcomputing/cpufreetrial3.asp?source=cp491bonus">Computer Power User</a><br>
+<p>
+&nbsp;<a href="http://www.lockergnome.com/issues/">Read Past Issues</a><br>
+&nbsp;<a href="http://www.xteq.com/">Download X-Setup</a><br>
+&nbsp;<a href="http://www.lockergnome.com/about.html">About Lockergnome</a><br>
+&nbsp;<a href="http://www.lockergnome.com/privacy.html">Our Privacy Policy</a><br>
+&nbsp;<a href="http://www.lockergnome.com/options.html">View More Options</a><br>
+&nbsp;<a href="http://www.lockergnome.com/lockergnome.xml">Our XML / RSS Feed</a><br>
+&nbsp;<a href="http://www.lockergnome.com/options.html#syndicate">Syndicate Our Tips</a><br>
+&nbsp;<a href="http://www.lockergnome.com/images/lockerlink.gif">Link To Lockergnome</a><br>
+&nbsp;<A HREF="http://lockergnome.pricegrabber.com/search_getprod.php/isbn=0966103254/">Get Chris's Book</A><br>
+<p>
+&nbsp;<a href="http://www.lockergnome.com/recommend.html">Tell a Friend About Us!</a><br>
+<p>
+&nbsp;<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#102;&#101;&#101;&#100;&#98;&#97;&#99;&#107;&#64;&#108;&#111;&#99;&#107;&#101;&#114;&#103;&#110;&#111;&#109;&#101;&#46;&#99;&#111;&#109;?subject=Lockergnome Windows Daily Feedback">General Feedback</a><br>
+&nbsp;<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#99;&#104;&#114;&#105;&#115;&#64;&#108;&#111;&#99;&#107;&#101;&#114;&#103;&#110;&#111;&#109;&#101;&#46;&#99;&#111;&#109;?subject=Lockergnome Windows Daily Comment">E-mail the Editor</a><br>
+&nbsp;<A HREF="http://chris.pirillo.com/">The Editor's Blog</A><BR>
+
+<p>&nbsp;<p>
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td><p class="sidebar">SEARCH</p></td></tr></table><br>
+<FORM method="get" action="http://lockergnome.pricegrabber.com/search_gen_top.php" target="_parent"><input type="hidden" name="topcat_search" value="1"><input value=" Hardware" size="14" type=text name=form_keyword><INPUT type="SUBMIT" value="go" class="Press" NAME="Go"></FORM>
+<FORM method="get" action="http://lockergnome.pricegrabber.com/search_gen_top.php" target="_parent"><input type="hidden" name="topcat_search" value="1"><input value=" Software" size="14" type=text name=form_keyword><INPUT type="SUBMIT" value="go" class="Press" NAME="Go"></FORM>
+
+<p>&nbsp;<p><table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFEEDD"><tr><td><p class="sidebar">GNOMESPECIALS</p></td></tr></table><br>
+&nbsp;<a target="_blank" title="Share your team/project contacts, calendars, tasks, etc. in MS Oulook 2002, without a server!" href="http://outlook.4team.biz/?fr=gnome">Manage Your Workgroup</a><br>
+&nbsp;<a target="_blank" title="Software for filling in paper forms on your computer instead of a typewriter" href="http://www.colorpilot.com/typewriter.html">Form Pilot</a><br>
+&nbsp;<a target="_blank" title="It's both fun and functional! Hear the time, set alarms, style your taskbar clock, sync your PC time, and more. Try Say the Time free for 30 days." href="http://www.provenio.ws/saythetime/">Say the Time 5.0</a><br>
+&nbsp;<a target="_blank" title="Convert MP3, WAV, AVI, JPG, GIF, and PNG to the SWF format for no buffer streaming" href="http://www.gfx2swf.com/gnome-special/">Boomer - Stream Now</a><br>
+&nbsp;<a target="_blank" title="Creating Web/CD catalogs with HyperPublish is really a snap! Not just an editor but a quick, powerful all-in-one environment for creating stunning catalogs, CDs and Web sites!" href="http://www.hyperpublish.com/create_a_catalog_000018.htm">Create Web/CD catalog</a><br>
+&nbsp;<a target="_blank" title="Create your Web site in minutes with this easy-to-use visual tool!" href="http://www.easywebeditor.com/create_web_page_000004.htm">Easy Web Editor</a><br>
+&nbsp;<a target="_blank" title="Capture TEXT seen in folder trees, file lists, database reports, dialog boxes, menus, status lines, including areas that you could not highlight with your mouse. (Chris cannot live without it!;)" href="http://www.structurise.com/kleptomania">Kleptomania</a><br>
+&nbsp;<a target="_blank" title="Organize all your mp3 collection in seconds! You can rename mp3s quickly and easily, write tag information in batch, from file names or import it from cddb. Get your free trial now!" href="http://www.softpointer.com/tr_2.htm">Tag&amp;Rename</a><br>
+&nbsp;<a target="_blank" title="You will enjoy countless hours of fun with Pretty Good Solitaire!  Play 500 solitaire card games, from classic games like Klondike, FreeCell, and Spider, to original games found nowhere else.  Enjoy lush graphics, large easy-to-read cards, statistics, and quests, a unique new way to play for points." href="http://www.goodsol.com/lockergnome.html">Pretty Good Solitaire</a><br>
+&nbsp;<a target="_blank" title="Choosing color combinations for the web is a careful balance between a scheme designed to draw attention; while being respectful of established color-harmony principles.  ColorCombo's four panels scroll, allowing side-by-side color comparisons.  Also text on background checker, 4096 color array, + more. FREE." href="http://www.colorcombo.com">Visualize Color Combos</a><br>
+&nbsp;<a target="_blank" title="FirstStop WebSearch(TM) Deluxe Edition, a FREE trial version of this incredibly fast, award winning, customizable multi-search engine that has been described as the FASTEST no-nonsense meta search for the net. Now, Gnomies can save 50% when they register a copy of FirstStop WebSearch!" href="http://www.Firststopwebsearch.com/lockergnomeoffer.html">FirstStop WebSearch</a><br>
+&nbsp;<a target="_blank" title="Ecobuilder is the ultimate web application that allows you to get your portal, online community, intranet, extranet or any web site project online by saving time, money and manpower. Gnomies receive $400 off the cost of the software." href="http://www.ecobuilder.com/lockergnome.cfm">Ecobuilder</a><br>
+&nbsp;<a target="_blank" title="Software for organizing your personal book collection. Add books quickly - no typing required! Group, filter, sort and print your database. Click for free trial version." href="http://www.collectorz.com/book?from=lockergnome">Book Collector</a><br>
+<p align="center"><a href="http://www.lockergnome.com/special.html"><B>Get Listed Here</B></a></p>
+Question: which group is 250,000+ strong and always looking for stuff to make their personal and professional lives run smoother?
+
+<!--#include virtual="/include/subscribeside.txt" -->
+
+<p>&nbsp;<p><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td><p class="sidebar">HAPPY FUN STUFF</p></td></tr></table><br>
+And now, we see how Sprocket thinks he has a right to eat pumpkin seeds. Or, would that be "pupkin" seeds?
+<p>
+<a href="http://images.lockergnome.com/images/video/sprocket.pupkinseeds.WMV">Not for the Puppy</a>
+
+<p>&nbsp;<p><font style="font-size: 8pt" face="Verdana, Tahoma, Arial" size="1">
+<table align="center" border="0"><tr><td><a href="http://www.lockergnome.com/webcam.html">
+<img width="125" height="94" alt="Lockergnome Webcam Image" src="http://www.lockergnome.com/images/webcam/webcam32.jpg"></a></td></tr>
+<tr><td align="center"><font style="font-size: 7pt" size="1" face="Verdana, Tahoma, Arial">CLICK HERE TO ZOOM</font></td></tr></table>
+</font>
+
+<p>&nbsp;<p>
+<center><a href="http://store.lockergnome.com/"><img src="http://images.lockergnome.com/images/shoppingbag.gif" width="100" height="142" border="0"></a></center>
+
+<p>&nbsp;<p>
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td><p class="sidebar">BYTE ME NOW</p></td></tr></table><br>
+<font style="font-size: 8pt" face="Verdana, Tahoma, Arial" size="1">
+&copy;2002, Lockergnome LLC. ISSN: 1095-3965. All Rights Reserved. Please read our <a href="http://www.lockergnome.com/terms.html">Terms of Service</a>. Our Web site is hosted by <a href="http://www.digitaldaze.com/?lg">DigitalDaze</a>. Domain registered at <a href="http://www.dnscentral.com/?lg">DNS Central</a>.
+
+<!-- FUNNY COMMENT   Deeper Uplink -->
+
+Toys are made in heaven, batteries are made in hell.
+
+
+</font>
+
+</font></td></tr></table>
+</body></html>
+
+

@@ -1,0 +1,400 @@
+Return-Path: <Online#3.20629.95--yrqlgFIolfTt9RR.1.b@newsletter.online.com>
+Received: from webnote.net (mail.webnote.net [193.120.211.219])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MHQb403583
+	for <qqqqqqqqqq-cnet-newsletters@spamassassin.taint.org>; Mon, 22 Jul 2002 18:26:37 +0100
+Received: from abv-sfo1-acmta1.CNET.COM (abv-sfo1-acmta1.cnet.com [206.16.1.160])
+	by webnote.net (8.9.3/8.9.3) with ESMTP id JAA22721
+	for <qqqqqqqqqq-cnet-newsletters@spamassassin.taint.org>; Sat, 20 Jul 2002 09:00:24 +0100
+Received: from abv-sfo1-ac-agent7 (206.16.0.244) by abv-sfo1-acmta1.CNET.COM (PowerMTA(TM) v1.5); Sat, 20 Jul 2002 00:50:42 -0700 (envelope-from <Online#3.20629.95--yrqlgFIolfTt9RR.1.b@newsletter.online.com>)
+Message-ID: <6599570.1027151390383.JavaMail.root@abv-sfo1-ac-agent7>
+Date: Sat, 20 Jul 2002 00:49:50 -0700 (PDT)
+From: "CNET News.com Daily Dispatch" <Online#3.20629.95--yrqlgFIolfTt9RR.1@newsletter.online.com>
+To: qqqqqqqqqq-cnet-newsletters@spamassassin.taint.org
+Subject: THE WEEK IN REVIEW: Harvest at Macworld
+Mime-Version: 1.0
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+X-Mailer: Accucast (http://www.accucast.com)
+X-Mailer-Version: 2.8.4-2
+
+<html>
+<head>
+        <title>THE WEEK IN REVIEW: Harvest at Macworld</title>
+</head>
+<body bgcolor=3D"#e5e5e5">
+<center>
+<a name=3D"top"></a>
+<!-- Logo and ad banner -->
+<table cellpadding=3D0 cellspacing=3D0 border=3D0 width=3D612 bgcolor=3D"#f=
+fffff">
+=09<tr valign=3Dtop>
+    <td width=3D442 colspan=3D4 bgcolor=3D"#e5e5e5">
+        <img src=3D"http://home.cnet.com/i/ne/ds/dhed.gif" alt=3D"" width=
+=3D"442" height=3D"63" border=3D"0"><br>
+    </td>
+    <td width=3D160 rowspan=3D2>
+<!-- Towerboard -->
+=09<iframe src=3D"http://www.zdnet.com/include/ads/ifc/RGROUP=3D2560" scrol=
+ling=3D"no" frameborder=3D"0" hspace=3D"0" vspace=3D"0" height=3D"600" widt=
+h=3D"160" marginheight=3D"0" marginwidth=3D"0">
+<script language=3D"JavaScript" src=3D"http://www.zdnet.com/include/ads/js/=
+RGROUP=3D2560">
+</script>
+</iframe>
+<!-- /Towerboard -->
+=09<p>
+=09<!-- search form -->
+=09<TABLE border=3D0 cellPadding=3D2 cellSpacing=3D0 width=3D150>
+=09<TR>
+=09<TD>
+=09<form method=3D"GET" action=3D"http://www.search.com/redirect/">
+=09                <img src=3D"/b.gif" width=3D1 height=3D4><font face=3D"a=
+rial, helvetica" size=3D"-1"><br>&nbsp;<b>Search</b></font><br>
+=09                &nbsp;<input type=3D"text" name=3D"q" size=3D"15" value=
+=3D""><br>
+=09                &nbsp;<select name=3D"target">
+=09                <option value=3D"http://news.search.com/search?tag=3Dex.=
+ne.newsletter.srch.ne" selected>News.com
+=09                <option value=3D"http://cnet.search.com/search?tag=3Dex.=
+ne.newsletter.srch.cnet">All CNET&nbsp;&nbsp;&nbsp;&nbsp;
+=09                <option value=3D"http://www.search.com/search?tag=3Dex.n=
+e.newsletter.srch.web">The Web
+                </select>&nbsp;<input type=3D"submit" value=3D"Go!" name=3D=
+"submit"></td></form>
+    </tr></table>
+    <!-- /search form -->
+    <p>
+
+<!-- Vertical Brick -->
+<IMG alt=3D"Also from CNET" height=3D20 src=3D"http://home.cnet.com/Ads/Med=
+ia/Images/RHC_ALSOfromCNETnet.gif" width=3D150 NOSEND=3D"1"><BR>
+<TABLE border=3D0 cellPadding=3D2 cellSpacing=3D0 width=3D150><TBODY><TR vA=
+lign=3Dtop>
+<TD><FONT face=3D"arial, helvetica" size=3D-1><B>
+<a href=3D"http://clickthru.online.com/Click?q=3Daa-gBteQXUQ1C_glmRWLXZBXqO=
+NOVsR" >Live tech help NOW!</a><p>
+<a href=3D"http://clickthru.online.com/Click?q=3Dbf-JtRfQ8ZQwRYB4Kl5w8PF_jE=
+uwtZR" >April's tech award</a><p>
+<a href=3D"http://clickthru.online.com/Click?q=3Dd4-E0SqQ0EHeeoXJa0_4Mc3148=
+lk6dR" >1 million open jobs</a><p>
+<a href=3D"http://clickthru.online.com/Click?q=3Dea-fjLyQhVa-0E5r3-AwQ4lAUw=
+-5WsR" >News.com: Top CIOs</a> <p>
+<a href=3D"http://clickthru.online.com/Click?q=3Dff-sVoVQmsafnyVitrZxrhBm0W=
+HthZR" >ZDNet: PeopleSoft</a>
+</B></FONT></TD>
+</TR></TBODY></TABLE></P>
+<!-- End Vertical Brick-->
+
+
+
+
+=09=09<p>
+=09</td>
+=09<td width=3D9 rowspan=3D2>
+=09=09<table width=3D9 cellpadding=3D0 cellspacing=3D0 border=3D0>
+=09=09=09<tr><td bgcolor=3D"#e5e5e5"><img src=3D"http://home.cnet.com/b.gif=
+" width=3D"9" height=3D"50" border=3D"0"><br></td></tr>
+=09=09=09<tr><td bgcolor=3D"#000000"><img src=3D"http://home.cnet.com/b.gif=
+" width=3D"9" height=3D"1" border=3D"0"><br></td></tr>
+=09=09=09<tr><td bgcolor=3D"#ffcc00"><img src=3D"http://home.cnet.com/b.gif=
+" width=3D"9" height=3D"10" border=3D"0"><br></td></tr>
+=09=09=09<tr><td bgcolor=3D"#000000"><img src=3D"http://home.cnet.com/b.gif=
+" width=3D"9" height=3D"1" border=3D"0"><br></td></tr>
+=09=09</table>
+=09</td>
+=09<td width=3D1 bgcolor=3D"#000000" rowspan=3D2><img src=3D"http://home.cn=
+et.com/i/ne/ds/bkg.gif" width=3D"1" height=3D"50" border=3D"0"></td>
+=09</tr>
+<!-- Logo and ad banner -->
+<!-- In the News / Special Reports -->
+<tr valign=3Dtop>
+=09<td width=3D1 bgcolor=3D"#000000"><img src=3D"http://home.cnet.com/b.gif=
+" width=3D"1" height=3D"1" border=3D"0"></td>
+=09<td width=3D10 bgcolor=3D"#ffcc00"><img src=3D"http://home.cnet.com/b.gi=
+f" width=3D"10" height=3D"1" border=3D"0"><br></td>
+=09<td width=3D1 bgcolor=3D"#000000"><img src=3D"http://home.cnet.com/b.gif=
+" width=3D"1" height=3D"1" border=3D"0"></td>
+=09<td width=3D430 bgcolor=3D"#ffffff">
+<!-- START COPY FOR THE GUTS -->
+
+<table cellpadding=3D10 cellspacing=3D0 border=3D0>
+<tr><td><font face=3D"Arial, Helvetica" size=3D"-1">
+<b>CNET | NEWS.COM WEEK IN REVIEW</b><br>
+The Entire Tech Week in a Single Email<br>
+Saturday, July 20, 2002<p>
+<p>
+<b>Mac fans flocked to the Macworld Expo in New York to watch Apple Compute=
+r trot out new hardware, software and even a Web services plan--but it migh=
+t be a challenge getting people to pay for the offerings.
+</b>
+<p>
+Apple CEO Steve Jobs kicked off the trade show by <a href=3D"http://clickth=
+ru.online.com/Click?q=3D14-5MRAIF-I438XVu98ZvQIzTKtR1dR" >unveiling</a> new=
+ iPod digital-audio players and a new flat-panel iMac.
+<p>
+The new iPod players include models built specifically for computers that u=
+se Microsoft's Windows operating system. Apple lowered the price of the exi=
+sting 5GB iPod and a redesigned 10GB model, which is thinner and comes with=
+ a new case and remote control. Jobs also introduced a beefier 20GB iPod fo=
+r $499. The iPod stable now includes three models for Mac users and three m=
+odels for Windows users with MusicMatch software.
+<p>
+As expected, Jobs introduced a new iMac model with a 17-inch flat-panel mon=
+itor. The model offers a widescreen display with 1,440-by-900-pixel resolut=
+ion versus 1,024-by-768-pixel resolution for the 15-inch iMac.
+<p>
+Jobs also previewed the next version of Mac OS X, version 10.2, which will =
+be on store shelves Aug. 24 for $129. OS X 10.2 includes a new Finder with =
+improved search features, spring-loaded folders and the ability to change t=
+he background photo as often as every 5 seconds.
+<p>
+But fans who rushed to OS X last year learned there's no such thing as a ch=
+eap upgrade when the company announced it will <a href=3D"http://clickthru.=
+online.com/Click?q=3D29-Sg_rIjM3xjSzf59NyGEI9rCM8vcR" >not offer</a> a disc=
+ounted upgrade version of Mac OS X version 10.2, code-named Jaguar, to curr=
+ent users of the operating system. To get Jaguar, current OS X users will h=
+ave to buy a new Macintosh or an entirely new version of the operating syst=
+em for the retail price of $129.
+<p>
+Apple's decision not to sell a less-expensive upgrade version lay in the qu=
+alitative difference between version 10.1 and 10.2. Although the versions s=
+hare the same core technology, Jaguar includes several new features and ser=
+vices, such as search tool Sherlock 3 and Internet address finder Rendezvou=
+s, which arguably classify it as an entirely new piece of software.
+<p>
+Apple also raised eyebrows by <a href=3D"http://clickthru.online.com/Click?=
+q=3D3e-F51nIizcfoh9HOq_7DQESNPe-iRR" >transitioning</a> its iTools Web serv=
+ices from a free program to a paid program called .Mac. The company plans t=
+o charge about $100 per year for the program. The collection of Web service=
+s was launched about three years ago, and now includes online storage via a=
+ service called iDisk, online greeting cards through iCards and other featu=
+res.
+<p>
+Despite iTool's popularity, the company <a href=3D"http://clickthru.online.=
+com/Click?q=3D53-n86dINniBiqIX-sjHpx8lOheMnlR" >may face a tough sell</a> w=
+ith the .Mac program. The history of paid services, is not a pretty picture=
+. Customers have bristled when companies try to slap charges on previously =
+free services. Some have succeeded but many have struggled, especially when=
+ free alternatives lurked elsewhere. In the early 1990s, Apple's efforts to=
+ form online communities and popularize search engines failed magnificently=
+.
+<p>
+To its advantage, Apple has presented a fairly coherent and tangible set of=
+ services with .Mac. And although its software division is far more organiz=
+ed than it once was, it's unclear how overwhelming demand will be. However,=
+ an <a href=3D"http://clickthru.online.com/Click?q=3D68-iM8qIsPWu8FuzAvywvj=
+sK-FdLP4R" >online petition</a> protesting the new charges doesn't bode wel=
+l for the program.
+<p>
+<b><font color=3D"#CC0000">Microsoft's moves</font></b><br>
+Not one to be caught in anyone's shadow, Microsoft plans to <a href=3D"http=
+://clickthru.online.com/Click?q=3D7d-FFEqIDLWMEqg-q9Uywq2NRJSBTeR" >offer a=
+ rebate</a> for its Office suite for Mac OS X to those who buy the software=
+ bundle when they pick up a new Mac. The promotion entails a $50 mail-in re=
+bate for people buying a new Mac and upgrading to Office v. X, and $100 for=
+ those buying a Mac and the full version of the software.
+<p>
+The offers come after Microsoft revealed that sales of the software have no=
+t met its expectations. The software potentate had expected to sell 750,000=
+ copies of Office v. X by now, but instead has sold only 300,000 since the =
+program went on sale last November.
+<p>
+Microsoft is also putting the <a href=3D"http://clickthru.online.com/Click?=
+q=3D93-V4PmQSdrF0o9nH2cTYjvQ8Rgn5FR" >finishing touches</a> on the third co=
+llection of Windows 2000 bug fixes, which is nearly ready for release after=
+ a protracted period of testing. The update, Windows 2000 Service Pack 3, c=
+ontains vital security updates and hundreds of fixes to bugs plaguing the o=
+perating system that Microsoft released in February 2000. Service Pack 3 co=
+uld be important for many businesses, as not all of the included security f=
+ixes are available as separate downloads.
+<p>
+
+Not everything will be available as a download, however. Weeks before Micro=
+soft plans to reinstate Java in Windows XP, it has <a href=3D"http://clickt=
+hru.online.com/Click?q=3Da8-02XZQQZDjZijEBtDtZs6swzdON9R" >shut down</a> a =
+site that would automatically send its Java software to Windows XP users. T=
+he company closed the install-on-demand feature 30 days after it told Java =
+inventor Sun Microsystems it would reinstate Java in Windows XP through the=
+ forthcoming Service Pack 1 but remove it altogether in 2004.
+<p>
+<b><font color=3D"#CC0000">Somebody's watching you</font></b><br>
+
+You better watch what you write in Yahoo's free e-mail service--because Yah=
+oo is. To protect users from malicious code, Yahoo uses an automated filter=
+ to <a href=3D"http://clickthru.online.com/Click?q=3Dbd-c0nUQ7pV9moRKw2pAEV=
+gnfqGsJuR" >swap out</a> a handful of words such as "mocha" and "eval" that=
+ pertain to Web code known as JavaScript.
+<p>
+The reason is that e-mail sent in a form known as "Web enhanced" can contai=
+n JavaScript instructions able to run programs on the recipient's PC. JavaS=
+cript is a Web language that can issue commands such as telling the browser=
+ to open up other windows or to prompt a service to change a password, for =
+example.
+<p>
+"Mocha" is one of those special commands that can be run from Web-enhanced =
+e-mail. Typing "mocha:" into the location bar of the Netscape browser will =
+open a screen with a display area and a text box underneath, in which comma=
+nds can be entered. A malicious hacker could, for example, use the command =
+line to run a program that changes a person's password without that person'=
+s knowledge.
+<p>
+
+On the heels of plans for new powers to patrol people's Web use, the U.S. g=
+overnment is again turning to technology to <a href=3D"http://clickthru.onl=
+ine.com/Click?q=3Dd2-THo_QULs_DzX3rh3Gl22vbAOyesR" >monitor suspicious acti=
+vity</a> in the name of fighting terrorism. The government has unveiled mor=
+e details of its Terrorist Information and Prevention System (TIPS), a plan=
+ to recruit volunteers across the country who will keep tabs on dubious or =
+suspicious behavior.
+<p>
+"The program will involve the millions of American workers who, in the dail=
+y course of their work, are in a unique position to see potentially unusual=
+ or suspicious activity in public places," according to the TIPS Web site. =
+But the American Civil Liberties Union, one of several critics of the plan,=
+ fears the proposal will encourage racial profiling and vigilantism, possib=
+ly leading to searches of private homes without a warrant.
+<p>
+<b><font color=3D"#CC0000">Also of note</font></b><br>
+A handful of entrepreneurial technology companies are <a href=3D"http://cli=
+ckthru.online.com/Click?q=3De7-2y-GQmVce3pzCGTVqS8CMB0qvsZR" >advancing tec=
+hniques</a> once used haphazardly by record companies and Napster-haters, i=
+n ways that may be far more destructive to the credibility of file-swapping=
+ networks than were previous efforts...Apple <a href=3D"http://clickthru.on=
+line.com/Click?q=3Dfc-WpHmQVwTaudE4Aca9-0t3VVat9dR" >released</a> the final=
+ version of its QuickTime 6 digital media software, marking a stand-down in=
+ a dispute over licensing fees...The Federal Trade Commission is <a href=3D=
+"http://clickthru.online.com/Click?q=3D11-l8riI2-aPLcop-3X3VynhNBuCqcR" >pl=
+anning</a> to take a deeper look at whether some state laws illegally restr=
+ict Internet commerce...In one of the toughest sentences for online auction=
+ fraud, a Virginia man was <a href=3D"http://clickthru.online.com/Click?q=
+=3D26-KqPVIiMxelrEsJeBBBkqU8niQ7RR" >sentenced</a> to 12 years in prison fo=
+r defrauding hundreds of shoppers on eBay and Yahoo auction sites...The Hou=
+se of Representatives overwhelmingly approved a bill that would allow for <=
+a href=3D"http://clickthru.online.com/Click?q=3D3c-tK4RIcIw_GtL-2JY0VXXjhrH=
+NHdR" >life prison sentences</a> for malicious computer hackers...MPEG LA, =
+a group of patent holders governing MPEG-4, <a href=3D"http://clickthru.onl=
+ine.com/Click?q=3D51-QgUWIjJWhghTxK5Jlh9GpMUHM3rR" >finalized licensing ter=
+ms</a> for the media delivery standard, bowing to market pressure for manag=
+eable royalty rates...Several tech and telecommunications giants are <a hre=
+f=3D"http://clickthru.online.com/Click?q=3D66-kDH_IyWzTRfhSOLsPj9y-DzbW-iR"=
+ >considering a joint venture</a> to pepper the United States with wireless=
+ "hot spots."
+<p>
+<i>Want more? Check out all this week's <a href=3D"http://clickthru.online.=
+com/Click?q=3D7b-prT_IBZzgRSgmUpbDr4q1O7VpJlR" >News.com headlines</a>.</i>
+
+        </td>
+</tr>
+</table>
+        </td>
+</tr>
+</table>
+
+<!-- ### footer ### -->
+<table width=3D"612" bgcolor=3D"#000000" cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0">
+<tr><td width=3D"1"><img src=3D"http://www.cnet.com/b.gif" width=3D"1" heig=
+ht=3D"1"></td>
+<td width=3D"10" bgcolor=3D"#ffcc00"><img src=3D"http://www.cnet.com/b.gif"=
+ width=3D"10" height=3D"1"></td>
+<td width=3D"1"><img src=3D"http://www.cnet.com/b.gif" width=3D"1" height=
+=3D"1"></td>
+<td width=3D"599" bgcolor=3D"#cccccc"><img src=3D"http://www.cnet.com/b.gif=
+" width=3D"1" height=3D"1"></td>
+<td width=3D"1"><img src=3D"http://www.cnet.com/b.gif" width=3D"1" height=
+=3D"1"></td></tr>
+</table>
+<table width=3D"612" bgcolor=3D"#eeeeee" cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0">
+<tr><td width=3D"1" bgcolor=3D"#000000"><img src=3D"http://www.cnet.com/b.g=
+if" width=3D"1" height=3D"1"></td>
+<td width=3D"10" bgcolor=3D"#ffcc00"><img src=3D"http://www.cnet.com/b.gif"=
+ width=3D"10" height=3D"1"></td>
+<td width=3D"1" bgcolor=3D"#000000"><img src=3D"http://www.cnet.com/b.gif" =
+width=3D"1" height=3D"1"></td>
+<td width=3D"12"><img src=3D"http://www.cnet.com/b.gif" width=3D"12" height=
+=3D"1"></td>
+<td width=3D"575"><img src=3D"http://www.cnet.com/b.gif" width=3D"1" height=
+=3D"10"><br>
+<a href=3D"http://clickthru.online.com/Click?q=3D90-wHZMQ_IMRhBVirJVb8HYULu=
+onX9R" >
+<img src=3D"http://a.r.tv.com/cnet.1d/i/nl/ft.gif" width=3D"375" height=3D"=
+18" border=3D"0" alt=3D"Sign up for more free newsletters from CNET!"></a><=
+br>
+
+<!-- subscription management -->
+
+<font face=3D"ms sans serif, geneva" size=3D"-2">
+The e-mail address for your subscription is&nbsp;qqqqqqqqqq-cnet-newsletter=
+s@spamassassin.taint.org<br>
+<A NOTRACK HREF=3D'http://clickthru.online.com/Click?q=3Da5-DyfHrzZqSQXorbx=
+hdMk61qDcw2kf4dRR'>Unsubscribe</A>&nbsp;|&nbsp;<a href=3D'http://nl.com.com=
+/servlet/url_login?email=3Dqqqqqqqqqq-cnet-newsletters@spamassassin.taint.org&brand=3Dc=
+net'>Manage My Subscriptions</a>&nbsp;|&nbsp;<a href=3D"http://clickthru.on=
+line.com/Click?q=3Dba-m-45QXpJTWkrcYwxhOmI_uIUEksR" >FAQ</A>&nbsp;|&nbsp;<a=
+ href=3D"http://clickthru.online.com/Click?q=3Dcf-ebM-QLw1uwmMdU_JaylIO7r3f=
+xZR" >Advertise</A><p>Please send any questions, comments, or concerns to&n=
+bsp;<a href=3D"mailto:dispatchfeedback@news.com">dispatchfeedback@news.com<=
+/A>.<br></font>
+<!-- /subscription management-->
+
+</font><img src=3D"http://www.zdnet.com/b.gif" width=3D"1" height=3D"8"></t=
+d>
+<td width=3D"12"><img src=3D"http://www.cnet.com/b.gif" width=3D"12" height=
+=3D"1"></td>
+<td width=3D"1" bgcolor=3D"#000000"><img src=3D"http://www.cnet.com/b.gif" =
+width=3D"1" height=3D"1"></td></tr>
+</table>
+<table width=3D"612" bgcolor=3D"#000000" cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0">
+<tr><td width=3D"1"><img src=3D"http://www.cnet.com/b.gif" width=3D"1" heig=
+ht=3D"1"></td>
+<td width=3D"10" bgcolor=3D"#ffcc00"><img src=3D"http://www.cnet.com/b.gif"=
+ width=3D"10" height=3D"1"></td>
+<td width=3D"601"><img src=3D"http://www.cnet.com/b.gif" width=3D"1" height=
+=3D"1"></td></tr>
+</table>
+<table width=3D"612" bgcolor=3D"#ffcc00" cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0">
+<tr><td width=3D"1" bgcolor=3D"#000000"><img src=3D"http://www.cnet.com/b.g=
+if" width=3D"1" height=3D"1"></td>
+<td width=3D"10"><img src=3D"http://www.cnet.com/b.gif" width=3D"10" height=
+=3D"1"></td>
+<td width=3D"37"><a href=3D"http://clickthru.online.com/Click?q=3De5-9Z7OQg=
+yslCOTgwGjnbcumX6cvbuR" ><img src=3D"http://www.cnet.com/i/dp/smrb.gif" wid=
+th=3D"37" height=3D"37" border=3D"0"></a></td>
+<td width=3D"563" nowrap><font face=3D"arial, helvetica" size=3D"-1">
+<a href=3D"http://clickthru.online.com/Click?q=3Dfa-FmqNQhO1bO6LU5PtvDA4oSM=
+poLsR" ><font color=3D"#000000">Price comparisons</font></a> |
+<a href=3D"http://clickthru.online.com/Click?q=3D0f-RM2lIqjD91rKD7csUb9HGRJ=
+1bfZR" ><font color=3D"#000000">Product reviews</font></a> |
+<a href=3D"http://clickthru.online.com/Click?q=3D24-8DdMIczi7pJ6R5fgeUef92i=
+qrwdR" ><font color=3D"#000000">Tech news</font></a> |
+<a href=3D"http://clickthru.online.com/Click?q=3D39-7QgMIjIiVp_1FThCGLs-y39=
+w-_cR" ><font color=3D"#000000">Downloads</font></a> |
+<a href=3D"http://clickthru.online.com/Click?q=3D4e-0Y95InZ3aFtmiVkIKlsTn8N=
+_JjiR" ><font color=3D"#000000">All CNET services</font></a>
+</font></td>
+<td width=3D"1" bgcolor=3D"#000000"><img src=3D"http://www.cnet.com/b.gif" =
+width=3D"1" height=3D"1"></td></tr>
+</table>
+<table width=3D"612" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tr><td bgcolor=3D"#000000"><img src=3D"http://www.cnet.com/b.gif" width=3D=
+"1" height=3D"1"></td></tr>
+<tr><td height=3D"25"><font face=3D"ms sans serif, geneva" size=3D"-2"><tab=
+le width=3D100% border=3D0 cellspacing=3D2 cellpadding=3D1> <tr valign=3Dbo=
+ttom> <td width=3D75% height=3D31> <p></font> <br><b><font face=3DArial, He=
+lvetica, sans-serif size=3D2>    Copyright 2002 CNET Networks, Inc. All rig=
+hts reserved.    </font></b> </p></td><td height=3D31 valign=3Dtop> <div al=
+ign=3Dright> <img src=3D"http://gserv-cnet.zdnet.com/clear/outbound.gif?APP=
+ID=3D2&EMID=3D25136487&NL=3De433&ISSUE=3D2002-07-20" height=3D1 width=3D1> =
+   </div></td></tr><tr>  <td colspan=3D2><font face=3DArial, Helvetica, san=
+s-serif size=3D2>    </font></td></tr></table>
+</td></tr>
+</table>
+<!-- ### /footer ### -->
+</body>
+</html>
+<IMG HEIGHT=3D1 WIDTH=3D1 SRC=3D"http://clickthru.online.com/Click?q=3D64-U=
+BDhncLhcuhJIfc7SQcQsa8RL9RR">
+

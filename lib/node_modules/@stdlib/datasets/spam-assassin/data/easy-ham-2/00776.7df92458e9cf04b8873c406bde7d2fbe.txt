@@ -1,0 +1,58 @@
+From fork-admin@xent.com  Wed Aug 14 11:01:15 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A135743C36
+	for <jm@localhost>; Wed, 14 Aug 2002 05:52:12 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 14 Aug 2002 10:52:12 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7DJL0415153 for <jm@jmason.org>;
+    Tue, 13 Aug 2002 20:21:01 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 6F2E32940A6; Tue, 13 Aug 2002 12:19:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from Boron.MeepZor.Com (i.meepzor.com [204.146.167.214]) by
+    xent.com (Postfix) with ESMTP id 263E72940A5 for <FoRK@Xent.Com>;
+    Tue, 13 Aug 2002 12:18:17 -0700 (PDT)
+Received: from Golux.Com (dmz-firewall [206.199.198.4]) by
+    Boron.MeepZor.Com (8.11.6/8.11.6) with ESMTP id g7DJJKR20997;
+    Tue, 13 Aug 2002 15:19:20 -0400
+Message-Id: <3D595E66.25A7C063@Golux.Com>
+From: Rodent of Unusual Size <Ken.Coar@Golux.Com>
+Organization: The Apache Software Foundation
+X-Mailer: Mozilla 4.79 [en] (WinNT; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: Flatware or Road Kill? <FoRK@xent.com>
+Subject: A message for our times
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 13 Aug 2002 15:30:46 -0400
+
+I'm not up to forking the text, but for your entertainment:
+
+http://www.kanga.nu/~claw/bug_count.html
+-- 
+#ken	P-)}
+
+Ken Coar, Sanagendamgagwedweinini  http://Golux.Com/coar/
+Author, developer, opinionist      http://Apache-Server.Com/
+
+"Millennium hand and shrimp!"
+http://xent.com/mailman/listinfo/fork
+
+

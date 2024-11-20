@@ -1,0 +1,88 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Sep 12 21:09:40 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 37B3D16F03
+	for <jm@localhost>; Thu, 12 Sep 2002 21:09:39 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 12 Sep 2002 21:09:39 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8CIqkC11377 for <jm-sa@jmason.org>; Thu, 12 Sep 2002 19:52:46 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17pZ3T-0004Ps-00; Thu,
+    12 Sep 2002 11:51:07 -0700
+Received: from smtpzilla1.xs4all.nl ([194.109.127.137]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17pZ2z-0006sq-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Thu, 12 Sep 2002 11:50:37 -0700
+Received: from airplant.xs4all.nl (airplant.xs4all.nl [194.109.242.172])
+    by smtpzilla1.xs4all.nl (8.12.0/8.12.0) with ESMTP id g8CIoVlk032173 for
+    <spamassassin-talk@lists.sourceforge.net>; Thu, 12 Sep 2002 20:50:32 +0200
+    (CEST)
+Received: from [192.168.1.104] (ink.xs4all.nl [194.109.194.16]) by
+    airplant.xs4all.nl (Postfix) with ESMTP id 955C91289D7 for
+    <spamassassin-talk@lists.sourceforge.net>; Thu, 12 Sep 2002 20:50:30 +0200
+    (CEST)
+User-Agent: Microsoft-Outlook-Express-Macintosh-Edition/5.02.2106
+Date: Thu, 12 Sep 2002 20:50:28 +0200
+Subject: Re: [SAtalk] Reject, Blackhole, or Fake No-User
+From: Fred Inklaar <opslag@inklaar.net>
+To: SpamAssassin <spamassassin-talk@example.sourceforge.net>
+Message-Id: <B9A6AE92.91AD%opslag@inklaar.net>
+In-Reply-To: <10209111535.ZM66084@ajax.dgi.com>
+MIME-Version: 1.0
+X-No-Archive: Yes
+Content-Type: text/plain; charset="US-ASCII"
+Content-Transfer-Encoding: 7bit
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php=spamassassin-talk>
+
+Op 12-09-2002 00:35 schreef Ellen Clary (ellen@dgi.com):
+
+>> Then there is a third possibility. Instead of returning a 550 code
+>> indicating you're on to the spammer, fake a 5.1.1 response which is
+>> saying "mailbox does not exist." This would be in the hopes that some
+>> spammers out there actually remove names reported as non-existent from
+>> their lists. I know, a slim hope, but even if only a few do, it can
+>> lower the incidence.
+> 
+> They don't, I can guarantee that.  Quite a few spamtraps nowadays
+> operate by 5nn'ing for 6 months in the hope of getting legit mailers
+> to remove bouncing addrs from lists;  then after 6 months, they just
+> spamtrap all incoming mail to those addrs.  (unfortunately a lot of
+> legit mailers don't bother cleaning their lists either.)
+
+Most spammers don't check reply codes at all, they just send out as many
+mails as their system will hold without checking for any confirmation.
+
+A trick to lower spam reception was dicussed on the postfix mailing list
+some time ago: answer all incoming mail with a 4xx temporary error code when
+it is offered the first time, and accept it the second time. Apparently most
+mass-emailers don't even try to deliver a second time.
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

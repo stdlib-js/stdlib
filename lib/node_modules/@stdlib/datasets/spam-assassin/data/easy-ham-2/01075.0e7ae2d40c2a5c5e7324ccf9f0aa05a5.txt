@@ -1,0 +1,61 @@
+From fork-admin@xent.com  Mon Aug 19 11:06:04 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2618F44103
+	for <jm@localhost>; Mon, 19 Aug 2002 05:55:57 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:55:57 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7J6iZ610944 for <jm@jmason.org>;
+    Mon, 19 Aug 2002 07:44:39 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 1702E2940A0; Sun, 18 Aug 2002 23:42:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from plato.einstein (unknown [65.170.226.173]) by xent.com
+    (Postfix) with ESMTP id 068832940A0 for <fork@xent.com>; Sun,
+    18 Aug 2002 23:41:11 -0700 (PDT)
+Received: from RSHAVELL ([63.101.39.6]) by plato.einstein with Microsoft
+    SMTPSVC(5.0.2195.3779); Sun, 18 Aug 2002 23:42:36 -0700
+From: "Rob Shavell" <rob@mobiusvc.com>
+To: <fork@spamassassin.taint.org>
+Subject: sprint delivers the next big thing??
+Message-Id: <00ce01c2474b$b1daeff0$6765010a@einstein>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook CWS, Build 9.0.2416 (9.0.2910.0)
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4522.1200
+Importance: Normal
+X-Originalarrivaltime: 19 Aug 2002 06:42:36.0831 (UTC) FILETIME=[9AFEE2F0:01C2474B]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 18 Aug 2002 23:43:09 -0700
+
+sprint, if you haven't seen the marketing yet, is 1st to US market w/postwap
+mobile data svc.  to me, there is nada more interesting and impactful going
+down in the tech world than mobile visual communications.. and yet no one
+seems to give much of a damn that right now that 2 persons can take photos
+and share them instantly across space.  this is one of the biggest - and
+last - fundamental changes in human communications.  will be as big as the
+browser.
+
+http://www.pcsvision.com/pictures.html
+
+
+
+http://xent.com/mailman/listinfo/fork
+

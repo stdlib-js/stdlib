@@ -1,0 +1,44 @@
+
+alias2pkg( alias )
+    Returns the package name associated with a provided alias.
+
+    Parameters
+    ----------
+    alias: any
+        Alias (an object path string or reference).
+
+    Returns
+    -------
+    out: string|undefined
+        Package name.
+
+    Examples
+    --------
+    > var v = alias2pkg( 'base.sin' )
+    '@stdlib/math/base/special/sin'
+
+
+alias2pkg( instance )
+    Returns the package name associated with a provided class instance.
+
+    Only direct instances of documented built-in constructors are supported.
+
+    Parameters
+    ----------
+    instance: any
+        Class instance.
+
+    Returns
+    -------
+    out: string|undefined
+        Package name.
+
+    Examples
+    --------
+    > var v = alias2pkg( new Float64Array( 10 ) )
+    '@stdlib/array/float64'
+
+    See Also
+    --------
+    alias2related, aliases, pkg2alias
+

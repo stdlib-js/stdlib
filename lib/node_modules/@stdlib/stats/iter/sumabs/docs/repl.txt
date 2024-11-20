@@ -1,0 +1,26 @@
+
+{{alias}}( iterator )
+    Computes the sum of absolute values for all iterated values.
+
+    For iterators which can generate many values or which may output large
+    numbers, care should be taken to prevent overflow.
+
+    Parameters
+    ----------
+    iterator: Object
+        Input iterator.
+
+    Returns
+    -------
+    out: number|null
+        Sum of absolute values.
+
+    Examples
+    --------
+    > var arr = {{alias:@stdlib/array/to-iterator}}( [ -1.0, 2.0, -3.0, 4.0 ] );
+    > var s = {{alias}}( arr )
+    10.0
+
+    See Also
+    --------
+

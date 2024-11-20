@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2017 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Computes a commit size.
+#
+# Notes:
+#
+# * This is not an exact implementation of the measure described by Riehle, et al. Notably, here, the size may include empty lines, which are explicitly omitted in their measure.
+#
+# References:
+#
+# -   Riehle, Dirk, Carsten Kolassa, and Michel A. Salim. 2012. "Developer Belief vs. Reality: The Case of the Commit Size Distribution." _Software Engineering 2012, GI-Edition Lecture Notes in Informatics_ abs/1408.4644: 59–70. <http://arxiv.org/abs/1408.4644>.
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to generate commit short stats:
+shortstats="${root}/tools/git/scripts/shortstats"
+
+# * `shortstats`
+#   - Get summary statistics for each commit.
+# * `awk '{}'`
+#   - Compute commit size.
+"${shortstats}" | awk '
+{
+	lower_bound = max($9,$10)
+	upper_bound = $9 + $10
+	print (lower_bound + upper_bound) / 2
+}
+
+function max(a, b) {
+	if (a > b) {
+		return a
+	}
+	return b
+}
+'

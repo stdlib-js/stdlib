@@ -1,0 +1,74 @@
+Return-Path: linux-xfs-bounce@oss.sgi.com
+Delivery-Date: Fri Sep  6 05:16:13 2002
+Return-Path: <linux-xfs-bounce@oss.sgi.com>
+Received: from oss.sgi.com (oss.sgi.com [128.167.58.27])
+	by eclectic.kluge.net (8.12.6/8.12.6) with ESMTP id g869GCnP027210
+	for <felicity@kluge.net>; Fri, 6 Sep 2002 05:16:13 -0400
+Received: from oss.sgi.com (localhost [127.0.0.1])
+	by oss.sgi.com (8.12.5/8.12.5) with ESMTP id g869BvtG021440;
+	Fri, 6 Sep 2002 02:11:57 -0700
+Received: with ECARTIS (v1.0.0; list linux-xfs); Fri, 06 Sep 2002 02:11:08 -0700 (PDT)
+Received: from relay.pair.com (relay1.pair.com [209.68.1.20])
+	by oss.sgi.com (8.12.5/8.12.5) with SMTP id g869B1tG021236
+	for <linux-xfs@oss.sgi.com>; Fri, 6 Sep 2002 02:11:01 -0700
+Received: (qmail 546 invoked from network); 6 Sep 2002 09:15:09 -0000
+Received: from unknown (HELO mountainviewdata.com) (210.72.245.13)
+  by relay1.pair.com with SMTP; 6 Sep 2002 09:15:09 -0000
+X-pair-Authenticated: 210.72.245.13
+Message-ID: <3D7944C7.6020309@mountainviewdata.com>
+Date: Fri, 06 Sep 2002 17:13:59 -0700
+From: tom <twang@mountainviewdata.com>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.1a+) Gecko/20020626
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: linux-xfs@oss.sgi.com
+Subject: a deadlock problem
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+X-archive-position: 289
+X-ecartis-version: Ecartis v1.0.0
+Sender: linux-xfs-bounce@oss.sgi.com
+Errors-to: linux-xfs-bounce@oss.sgi.com
+X-original-sender: twang@mountainviewdata.com
+Precedence: bulk
+X-list: linux-xfs
+X-Reject: Spamassassin match!
+X-IMAPbase: 1031314884 13 NotJunk Junk
+X-Keywords: NotJunk
+
+Hi XFS developers,
+When studying xfs code(2.4.19), I found that the inode will be locked by 
+XFS_ILOCK_SHARE flags before we get acl, which may cause deadlock.
+Because when getting acl, it will allocate memory in KM_SLEEP, If the 
+memory is tight, the process will call xfs_strategy, and may 
+lock(XFS_ILOCK_SHARE)the same inode again. If between these two locks, 
+another process try to lock the inode by XFS_ILOCK_EXCL, these two 
+processes  will be deadlock. As follows,
+
+    A process get ea                         B process want lock ipA
+
+1) xfs_ilock(ipA, XFS_ILOCK_SHARE)             .....................
+            |                                         |
+            |                                         |
+         get acl                        2) xfs_ilock(ipA, XFS_ILOCK_EXCL)
+            |                                         |
+            |                                         |
+        memory tight
+            |
+            |
+        xfs_stragegy
+            |
+            |
+3)xfs_ilock(ipA, XFS_ILOCK_SHARE)        ............................
+
+  these two processes will be dead lock.
+
+So I believe that acl allocation GFP_MASKshould be changed to KM_NOFS.
+right?
+
+best regards
+                                                 wdd
+
+
+
+

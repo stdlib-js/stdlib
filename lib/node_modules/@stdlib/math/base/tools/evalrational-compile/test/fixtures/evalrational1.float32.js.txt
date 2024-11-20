@@ -1,0 +1,50 @@
+'use strict';
+
+// MODULES //
+
+var float64ToFloat32 = require( '@stdlib/number/float64/base/to-float32' );
+
+
+// MAIN //
+
+/**
+* Evaluates a rational function (i.e., the ratio of two polynomials described by the coefficients stored in \\(P\\) and \\(Q\\)).
+*
+* ## Notes
+*
+* -   Coefficients should be sorted in ascending degree.
+* -   The implementation uses [Horner's rule][horners-method] for efficient computation.
+*
+* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
+*
+* @private
+* @param {number} x - value at which to evaluate the rational function
+* @returns {number} evaluated rational function
+*/
+function evalrational( x ) {
+	var ax;
+	var s1;
+	var s2;
+	if ( x === 0.0 ) {
+		return 0.25;
+	}
+	if ( x < 0.0 ) {
+		ax = -x;
+	} else {
+		ax = x;
+	}
+	if ( ax <= 1.0 ) {
+		s1 = float64ToFloat32(1.0 + float64ToFloat32(x * float64ToFloat32(2.5 + float64ToFloat32(x * float64ToFloat32(3.140000104904175 + float64ToFloat32(x * -1.0)))))); // eslint-disable-line max-len
+		s2 = float64ToFloat32(4.0 + float64ToFloat32(x * float64ToFloat32(-3.5 + float64ToFloat32(x * float64ToFloat32(2.200000047683716 + float64ToFloat32(x * 1.25)))))); // eslint-disable-line max-len
+	} else {
+		x = float64ToFloat32( 1.0 / x );
+		s1 = float64ToFloat32(-1.0 + float64ToFloat32(x * float64ToFloat32(3.140000104904175 + float64ToFloat32(x * float64ToFloat32(2.5 + float64ToFloat32(x * 1.0)))))); // eslint-disable-line max-len
+		s2 = float64ToFloat32(1.25 + float64ToFloat32(x * float64ToFloat32(2.200000047683716 + float64ToFloat32(x * float64ToFloat32(-3.5 + float64ToFloat32(x * 4.0)))))); // eslint-disable-line max-len
+	}
+	return float64ToFloat32( s1 / s2 );
+}
+
+
+// EXPORTS //
+
+module.exports = evalrational;

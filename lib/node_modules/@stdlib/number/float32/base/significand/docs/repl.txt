@@ -1,0 +1,31 @@
+
+{{alias}}( x )
+    Returns an integer corresponding to the significand of a single-precision
+    floating-point number.
+
+    Parameters
+    ----------
+    x: float
+        Single-precision floating-point number.
+
+    Returns
+    -------
+    out: integer
+        Significand.
+
+    Examples
+    --------
+    > var s = {{alias}}( {{alias:@stdlib/number/float64/base/to-float32}}( 3.14e34 ) )
+    4293751
+    > s = {{alias}}( {{alias:@stdlib/number/float64/base/to-float32}}( 3.14e-34 ) )
+    5288021
+    > s = {{alias}}( {{alias:@stdlib/number/float64/base/to-float32}}( -3.14 ) )
+    4781507
+    > s = {{alias}}( 0.0 )
+    0
+    > s = {{alias}}( NaN )
+    4194304
+
+    See Also
+    --------
+

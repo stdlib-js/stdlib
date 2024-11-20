@@ -1,0 +1,12 @@
+
+{{alias}}
+    Size (in bytes) of a 32-bit unsigned integer.
+
+    Examples
+    --------
+    > {{alias}}
+    4
+
+    See Also
+    --------
+

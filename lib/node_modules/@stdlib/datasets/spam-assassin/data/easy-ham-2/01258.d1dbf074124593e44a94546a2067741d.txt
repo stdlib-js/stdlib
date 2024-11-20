@@ -1,0 +1,78 @@
+From rpm-list-admin@freshrpms.net  Tue Aug 20 10:58:47 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 747BB43C3A
+	for <jm@localhost>; Tue, 20 Aug 2002 05:58:21 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 10:58:21 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7JLdkZ10415 for
+    <jm-rpm@jmason.org>; Mon, 19 Aug 2002 22:39:46 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7JLa1J13422; Mon, 19 Aug 2002 23:36:01
+    +0200
+Received: from python (80-24-132-206.uc.nombres.ttd.es [80.24.132.206])
+    (authenticated) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g7JLZ5J08184 for <rpm-list@freshrpms.net>; Mon, 19 Aug 2002 23:35:05 +0200
+From: Matthias Saou <matthias@egwn.net>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: when building a rpm i386-redhat-linux- is appended to man page
+Message-Id: <20020819232524.3886537a.matthias@egwn.net>
+In-Reply-To: <BADF3C947A1BD54FBA75C70C241B0B9E10AA9B@ex02.idirect.net>
+References: <BADF3C947A1BD54FBA75C70C241B0B9E10AA9B@ex02.idirect.net>
+Organization: Electronic Group Interactive
+X-Mailer: Sylpheed version 0.8.1claws (GTK+ 1.2.10; i386-redhat-linux)
+Reply-BY: Tue, 24 Jul 2000 19:02:00 +1000
+X-Operating-System: GNU/Linux power!
+X-Message-Flag: Try using a real operating system : GNU/Linux power!
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Mon, 19 Aug 2002 23:25:24 +0200
+Date: Mon, 19 Aug 2002 23:25:24 +0200
+
+Once upon a time, Harig, wrote :
+
+> > 
+> > The workaround is to pass an extra argument to configure as follows :
+> > 
+> > %configure --program-prefix=%{?_program_prefix:%{_program_prefix}}
+> > 
+> 
+> This works when you are defining a switch that %configure
+> does not already define, but how can we override an
+> existing switch?
+
+Well, %configure doesn't define "--program-prefix=", so that's why it
+works. Maybe you thought that was an example, but no, it's the exact syntax
+to use as a workaround ;-)
+
+Matthias
+
+-- 
+Matthias Saou                                World Trade Center
+-------------                                Edificio Norte 4 Planta
+System and Network Engineer                  08039 Barcelona, Spain
+Electronic Group Interactive                 Phone : +34 936 00 23 23
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

@@ -1,0 +1,32 @@
+
+{{alias}}( idx )
+    Returns a function which always returns a specified argument.
+
+    The input argument corresponds to the zero-based index of the argument to
+    return.
+
+    Parameters
+    ----------
+    idx: integer
+        Argument index to return (zero-based).
+
+    Returns
+    -------
+    out: Function
+        Argument function.
+
+    Examples
+    --------
+    > var argn = {{alias}}( 1 );
+    > var v = argn( 3.14, -3.14, 0.0 )
+    -3.14
+    > v = argn( -1.0, -0.0, 1.0 )
+    -0.0
+    > v = argn( 'beep', 'boop', 'bop' )
+    'boop'
+    > v = argn( 'beep' )
+    undefined
+
+    See Also
+    --------
+

@@ -1,0 +1,107 @@
+From 0xdeadbeef-request@petting-zoo.net  Mon Aug 19 11:01:11 2002
+Return-Path: <0xdeadbeef-request@petting-zoo.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D96054417D
+	for <jm@localhost>; Mon, 19 Aug 2002 05:53:09 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:53:09 +0100 (IST)
+Received: from petting-zoo.net (IDENT:postfix@petting-zoo.net
+    [64.166.12.219]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7IMJT626443 for <jm-deadbeef@jmason.org>; Sun, 18 Aug 2002 23:19:29 +0100
+Received: by petting-zoo.net (Postfix, from userid 1004) id 7A865EA4B;
+    Sun, 18 Aug 2002 15:18:18 -0700 (PDT)
+Old-Return-Path: <gkm@petting-zoo.net>
+Delivered-To: 0xdeadbeef@petting-zoo.net
+Received: from petting-zoo.net (localhost [127.0.0.1]) by petting-zoo.net
+    (Postfix) with ESMTP id 28081EA0A; Sun, 18 Aug 2002 15:18:08 -0700 (PDT)
+From: gkm@petting-zoo.net (glen mccready)
+To: 0xdeadbeef@petting-zoo.net
+Cc: bostic@bostic.com
+Subject: The Beer Scooter
+Date: Sun, 18 Aug 2002 15:18:04 -0700
+Sender: gkm@petting-zoo.net
+Message-Id: <20020818221808.28081EA0A@petting-zoo.net>
+Resent-Message-Id: <NLCyv.A.X6E.m0BY9@petting-zoo.net>
+Resent-From: 0xdeadbeef@petting-zoo.net
+X-Mailing-List: <0xdeadbeef@petting-zoo.net> archive/latest/526
+X-Loop: 0xdeadbeef@petting-zoo.net
+List-Post: <mailto:0xdeadbeef@petting-zoo.net>
+List-Help: <mailto:0xdeadbeef-request@petting-zoo.net?subject=help>
+List-Subscribe: <mailto:0xdeadbeef-request@petting-zoo.net?subject=subscribe>
+List-Unsubscribe: <mailto:0xdeadbeef-request@petting-zoo.net?subject=unsubscribe>
+Precedence: list
+Resent-Sender: 0xdeadbeef-request@petting-zoo.net
+Resent-Date: Sun, 18 Aug 2002 15:18:18 -0700 (PDT)
+
+
+[I'm sure somebody will tell me about the original source; it's in a
+number of places on the web. -gkm]
+
+Forwarded-by: Colin Burgess <cburgess@qnx.com>
+
+The Beer Scooter 
+
+How many times have you woken up in the morning after a hard night
+drinking and thought 'How on earth did I get home? As hard as you
+try, you cannot piece together your return journey from the pub to
+your house. The answer to this puzzle is that you used a Beer
+Scooter.
+
+The Beer Scooter is a mythical form of transport, owned and leased
+to the drunk by Bacchus the Roman god of wine. Bacchus has branched
+out since the decrease in the worship of the Roman Pantheon and
+has bought a large batch of these magical devices. The Beer Scooter
+works in the following fashion:-
+
+The passenger reaches a certain level of drunkenness and the
+"slurring gland" begins to give off a pheromone. Bacchus or one of
+his many sub-contractors detects this pheromone and sends down a
+winged Beer Scooter. The scooter scoops up the passenger and deposits
+them in their bedroom via the Trans-Dimensional Portal. This is
+not cheap to run, so a large portion of the passenger's in-pocket
+cash is taken as payment.
+
+This answers the second question after a night out 'How did I spend
+so much money?'
+
+Unfortunately, Beer Scooters have a poor safety record and are
+thought to be responsible for over 90% of all UDI (Unidentified
+Drinking Injuries).  An undocumented feature of the beer scooter
+is the destruction of time segments during the trip. The nature of
+Trans-Dimensional Portals dictates that time will be lost, seemingly
+unaccounted for.
+
+This answers a third question after a night out 'What the hell
+happened?'
+
+With good intentions, Bacchus opted for the REMIT (Removal of
+Embarrassing Moments In Time) add on, that automatically removes,
+in descending order, those parts in time regretted most. Unfortunately
+one person's REMIT is not necessarily the REMIT of another and
+quite often lost time is regained in discussions over a period of
+time. Independent studies have also shown that Beer Goggles often
+cause the scooter's navigation system to malfunction thus sending
+the passenger to the wrong bedroom, often with horrific consequences.
+With recent models including a GPS, Bacchus made an investment in
+a scooter drive-thru chain specialising in half eaten kebabs and
+pizza crusts.
+
+Another question answered!! For the family man, Beer Scooters come
+equipped with flowers picked from other people's garden and
+Thump-A-Lot boots (Patent Pending). These boots are designed in
+such a way that no matter how quietly you tip-toe up the stairs,
+you are sure to wake up your other half. Special anti-gravity
+springs ensure that you bump into every wall in the house and the
+CTSGS (Coffee Table Seeking Guidance System) explains the bruised
+shins. The final add-on Bacchus saw fit to invest in for some
+scooters is the TAS (Tobacco Absorption System). This explains how
+one person can apparently get through 260 Marlboro Lights in a
+single night.
+
+PS: Don't forget the on-board heater, which allows you to comfortably
+get home from the pub in sub-zero temperatures, wearing just a
+T-shirt.
+
+

@@ -1,0 +1,26 @@
+
+{{alias}}( iterator[, mean] )
+    Computes an unbiased sample variance over all iterated values.
+
+    Parameters
+    ----------
+    iterator: Object
+        Input iterator.
+
+    mean: number (optional)
+        Known mean.
+
+    Returns
+    -------
+    out: number|null
+        Unbiased sample variance.
+
+    Examples
+    --------
+    > var arr = {{alias:@stdlib/array/to-iterator}}( [ 2.0, -5.0 ] );
+    > var s2 = {{alias}}( arr )
+    24.5
+
+    See Also
+    --------
+

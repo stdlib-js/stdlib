@@ -1,0 +1,129 @@
+From info@evilgerald.com  Tue Aug  6 11:17:52 2002
+Return-Path: <info@evilgerald.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6126544128
+	for <jm@localhost>; Tue,  6 Aug 2002 06:13:32 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:13:32 +0100 (IST)
+Received: from ni-mail1.dna.utvinternet.net (mail.d-n-a.net [194.46.8.11])
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g73N1Cv30790 for
+    <jm@jmason.org>; Sun, 4 Aug 2002 00:01:12 +0100
+Resent-From: info@evilgerald.com
+Resent-To: 9839232@student.ul.ie, AbbottL@pei-tech.ie,
+	acallaly@siebel.com, adriennepratt@hotmail.com, ad_alton@hotmail.com,
+	aedin.hanrahan@wildetechnologies.com, ahall@item.co.uk,
+	aidanmcnelis@ireland.com, ailise_susan@hotmail.com,
+	alan.kinsella@labyrinth.ie, alan.synnott@irishrail.ie,
+	Alan_Wall@SmartForce.com, albasmith@eventplus.ie,
+	alex.sykes@freeuk.com, alex@coolyvenny.fsnet.co.uk,
+	Alistair_Hall@bat.com, am.cotter@sws.ie, andersonj@bluewin.ch,
+	andrew.clancy@sca.ie, andrew.oregan3@mail.dcu.ie,
+	anita.kelly@ogilvy.be, anne.oleary@kpmg.hu,
+	anne@interactive-avenue.ie, annraoi@opreith.freeserve.co.uk,
+	anthony.doyle@siemens.ie, APawNeeStar@aol.com, aphelan@mis.gla.ac.uk,
+	arlene.dolan@ntlworld.com, arlene_gallagher@yahoo.co.uk,
+	b.mckenna@unison.co.uk, barrorm@hotmail.com, BarryJoe90@aol.com,
+	bastinado@hotmail.com, billygannon@email.com, billynana@yahoo.com,
+	blacksheepsh@hotmail.com, bmcgaughey@aspect.ie, bmurph@oceanfree.net,
+	bootie@eircom.net, bosullivan@nyc.rr.com, brendan@crap-mail.com,
+	brendancurtis@eircom.net, brendand@SYSSOL.IE,
+	brendan_osullivan@hp.com, brendy_eire@hotmail.com,
+	Brian_Mason@dell.com, bstrong@interactiveser.com,
+	burkejohn@hotmail.com, busterboo99@hotmail.com,
+	c.brown@admin.gla.ac.uk, carollynnwallis@sheffielduk.fsnet.co.uk,
+	cathy.dillon@libertysurf.fr, caulfied@tcd.ie, cbruen@tcd.ie,
+	cbukszpan@yahoo.com, CDevereux@wpg.ie,
+	chasholdsworth@blueyonder.co.uk, cian@complexvisuals.com,
+	clarebutler19@hotmail.com, CLauraUK@aol.com,
+	codeinestation@hotmail.com, coilltemach@eircom.net,
+	colleenos@eircom.net, comccart@tcd.ie, conor-john@oxygen.ie,
+	CONOR.MCCAFFERY@may.ie, conor.yore@infosol.ie,
+	conor@duttfks1.tn.tudelft.nl, conor_cass_cassidy@hotmail.com,
+	cormac.scally@ntlworld.com, csteenson@eircom.net,
+	ctobin@interactiveser.com, currane@maths.tcd.ie,
+	curtinmj@hotmail.com, DAMHNAIT.F.GLEESON@may.ie, damianc@tinet.ie,
+	Daniel.King@sage.com, daphil@indigo.ie, daracmurphy@eircom.net,
+	darioz@gofree.indigo.ie, darthmal@gofree.indigo.ie,
+	davecoolican@eircom.net, daverouse@hotmail.com,
+	David.Reidy@motorola.com, david4e7@hotmail.com, davidbo@vistatec.ie,
+	davidconnolly@eircom.net, da_blossom@hotmail.c
+Resent-Message-Id: <B0000249651@ni-mail1.dna.utvinternet.net>
+Resent-Date: Sat, 3 Aug 2002 23:15:50 +0100
+Received: from ni-mail1.dna.utvinternet.net (unverified [194.46.8.11]) by
+    ni-mail1.dna.utvinternet.net (Vircom SMTPRS 1.4.232) with ESMTP id
+    <B0000234391@ni-mail1.dna.utvinternet.net> for <evil06>; Sat,
+    3 Aug 2002 21:30:02 +0100
+Received: from 194.46.8.17 ([194.46.8.17] as evil06) by
+    ni-mail1.dna.utvinternet.net (Vircom POPDOWN 1.4.232) with POP;
+    Sat, 3 Aug 2002 21:30:02 +0100
+Delivered-To: evilgerald.com!-list@evilgerald.com
+Received: (qmail 14949 invoked from network); 11 Jul 2002 19:58:47 -0000
+Received: from unknown (HELO mail01.svc.cra.dublin.eircom.net)
+    (159.134.118.17) by mail.d-n-a.net with SMTP; 11 Jul 2002 19:58:47 -0000
+Received: (qmail 73739 messnum 121353 invoked from
+    network[159.134.214.76/p76.as1.adl.dublin.eircom.net]); 11 Jul 2002
+    19:58:45 -0000
+Received: from p76.as1.adl.dublin.eircom.net (HELO default)
+    (159.134.214.76) by mail01.svc.cra.dublin.eircom.net (qp 73739) with SMTP;
+    11 Jul 2002 19:58:45 -0000
+Message-Id: <000801c22915$402ae440$4cd6869f@default>
+From: "The Evil Gerald" <info@evilgerald.com>
+To: <Undisclosed-Recipient:;@netnoteinc.com>
+Subject: --Breaking News from The Evil Gerald--
+Date: Thu, 11 Jul 2002 20:57:39 +0100
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+    boundary="----=_NextPart_000_0005_01C2291D.98A2ED40"
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.00.2919.6600
+X-Mimeole: Produced By Microsoft MimeOLE V5.00.2919.6600
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0005_01C2291D.98A2ED40
+Content-Type: text/plain;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Actresses with just the one annoying accent! Don't we all just love =
+them? Them and football of course, more of which in the Breaking News =
+section of your friendly neighbourhood Evil Gerald.
+
+Yours,
+
+The Evil Gerald=20
+
+------=_NextPart_000_0005_01C2291D.98A2ED40
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META content=3D"text/html; charset=3Diso-8859-1" =
+http-equiv=3DContent-Type>
+<META content=3D"MSHTML 5.00.2919.6307" name=3DGENERATOR>
+<STYLE></STYLE>
+</HEAD>
+<BODY bgColor=3D#ffffff>
+<DIV><FONT face=3DArial size=3D2>Actresses with just the one annoying =
+accent! Don't=20
+we all just love them? Them and football of course, more of which in the =
+<A=20
+href=3D"http://www.evilgerald.com/Breaking_news.htm">Breaking News</A> =
+section of=20
+your friendly neighbourhood <A href=3D"http://www.evilgerald.com">Evil=20
+Gerald</A>.</FONT></DIV>
+<DIV>&nbsp;</DIV>
+<DIV><FONT face=3DArial size=3D2>Yours,</FONT></DIV>
+<DIV>&nbsp;</DIV>
+<DIV><FONT face=3DArial size=3D2>The Evil Gerald =
+</FONT></DIV></BODY></HTML>
+
+------=_NextPart_000_0005_01C2291D.98A2ED40--
+
+
+

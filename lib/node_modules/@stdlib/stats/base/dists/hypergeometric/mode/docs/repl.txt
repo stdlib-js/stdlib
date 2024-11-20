@@ -1,0 +1,54 @@
+
+{{alias}}( N, K, n )
+    Returns the mode of a hypergeometric distribution.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided a population size `N`, subpopulation size `K` or draws `n` which
+    is not a nonnegative integer, the function returns `NaN`.
+
+    If the number of draws `n` or the subpopulation size `K` exceed population
+    size `N`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    N: integer
+        Population size.
+
+    K: integer
+        Subpopulation size.
+
+    n: integer
+        Number of draws.
+
+    Returns
+    -------
+    out: number
+        Mode.
+
+    Examples
+    --------
+    > var v = {{alias}}( 16, 11, 4 )
+    3
+    > v = {{alias}}( 2, 1, 1 )
+    1
+
+    > v = {{alias}}( 10, 5, 12 )
+    NaN
+    > v = {{alias}}( 10.3, 10, 4 )
+    NaN
+    > v = {{alias}}( 10, 5.5, 4 )
+    NaN
+    > v = {{alias}}( 10, 5, 4.5 )
+    NaN
+
+    > v = {{alias}}( NaN, 10, 4 )
+    NaN
+    > v = {{alias}}( 20, NaN, 4 )
+    NaN
+    > v = {{alias}}( 20, 10, NaN )
+    NaN
+
+    See Also
+    --------
+

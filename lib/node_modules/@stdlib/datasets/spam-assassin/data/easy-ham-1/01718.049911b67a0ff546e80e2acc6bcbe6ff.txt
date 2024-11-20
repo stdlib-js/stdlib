@@ -1,0 +1,36 @@
+Return-Path: nas@python.ca
+Delivery-Date: Sun Sep  8 18:21:13 2002
+From: nas@python.ca (Neil Schemenauer)
+Date: Sun, 8 Sep 2002 10:21:13 -0700
+Subject: [Spambayes] testing results
+Message-ID: <20020908172113.GA26741@glacier.arctrix.com>
+
+These results are from timtest.py.  I've got three sets of spam and ham
+with about 500 messages in each set.  Here's what happens when I enable
+my latest "received" header code:
+
+    false positive percentages
+        0.187  0.187  tied
+        0.749  0.562  won    -24.97%
+        0.780  0.585  won    -25.00%
+
+    won   2 times
+    tied  1 times
+    lost  0 times
+
+    total unique fp went from 19 to 17
+
+    false negative percentages
+        2.072  1.318  won    -36.39%
+        2.448  1.318  won    -46.16%
+        0.574  0.765  lost   +33.28%
+
+    won   2 times
+    tied  0 times
+    lost  1 times
+
+    total unique fn went from 43 to 28
+
+Anthony's header counting code does not seem to help.
+
+  Neil

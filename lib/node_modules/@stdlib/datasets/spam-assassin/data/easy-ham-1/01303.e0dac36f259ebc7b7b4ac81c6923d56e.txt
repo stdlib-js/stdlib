@@ -1,0 +1,160 @@
+From rpm-list-admin@freshrpms.net  Wed Oct  9 22:41:48 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id E29D016F67
+	for <jm@localhost>; Wed,  9 Oct 2002 22:40:55 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 09 Oct 2002 22:40:55 +0100 (IST)
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g99Jb9K18484 for
+    <jm-rpm@jmason.org>; Wed, 9 Oct 2002 20:37:09 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g99JU2f20377; Wed, 9 Oct 2002 21:30:03
+    +0200
+Received: from canarsie.horizonlive.com (slim-eth0.horizonlive.net
+    [208.185.78.2]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g99JT1f20229 for <rpm-list@freshrpms.net>; Wed, 9 Oct 2002 21:29:01 +0200
+Received: from canarsie.horizonlive.com (localhost.localdomain
+    [127.0.0.1]) by canarsie.horizonlive.com (8.12.5/8.12.5) with ESMTP id
+    g99JSu8f020466 for <rpm-list@freshrpms.net>; Wed, 9 Oct 2002 15:28:56
+    -0400
+Received: (from stevek@localhost) by canarsie.horizonlive.com
+    (8.12.5/8.12.5/Submit) id g99JStTV020464 for rpm-list@freshrpms.net;
+    Wed, 9 Oct 2002 15:28:55 -0400
+X-Authentication-Warning: canarsie.horizonlive.com: stevek set sender to
+    stevek@horizonlive.com using -f
+From: Steve Kann <stevek@SteveK.COM>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: Ack, apt-get still failing for me, stumped. [RH8]
+Message-Id: <20021009152844.A20454@canarsie.horizonlive.com>
+References: <20021008200145.A16895@canarsie.horizonlive.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20021008200145.A16895@canarsie.horizonlive.com>
+User-Agent: Mutt/1.3.21i
+X-Blank-Header-Line: (this header intentionally left blank)
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Wed, 9 Oct 2002 15:28:55 -0400
+Date: Wed, 9 Oct 2002 15:28:55 -0400
+
+
+I've also just tried doing rpm --rebuilddb, no change.
+
+A question:
+
+Do these files look too small?  
+
+root@canarsie:/var/cache/apt # ls -ltr
+total 148
+drwxr-xr-x    2 root     root         4096 Sep 29 10:49 gensrclist
+drwxr-xr-x    2 root     root         4096 Sep 29 10:49 genpkglist
+drwxr-xr-x    3 root     root         4096 Oct  8 19:59 archives
+-rw-r--r--    1 root     root        49863 Oct  9 15:25 srcpkgcache.bin
+-rw-r--r--    1 root     root       158131 Oct  9 15:25 pkgcache.bin
+
+
+I ran strings on them, and it doesn't look like I see a complete listing
+of either my system's installed RPMs, or the rpms in the lists:
+
+root@canarsie:/var/state/apt/lists # ls -s
+total 9988
+ 416 apt.freshrpms.net_redhat_8.0_en_i386_base_pkglist.freshrpms
+8704 apt.freshrpms.net_redhat_8.0_en_i386_base_pkglist.os
+   0 apt.freshrpms.net_redhat_8.0_en_i386_base_pkglist.updates
+   4 apt.freshrpms.net_redhat_8.0_en_i386_base_release.freshrpms
+   4 apt.freshrpms.net_redhat_8.0_en_i386_base_release.os
+   4 apt.freshrpms.net_redhat_8.0_en_i386_base_release.updates
+  64 apt.freshrpms.net_redhat_8.0_en_i386_base_srclist.freshrpms
+ 788 apt.freshrpms.net_redhat_8.0_en_i386_base_srclist.os
+   0 apt.freshrpms.net_redhat_8.0_en_i386_base_srclist.updates
+   0 lock
+   4 partial
+
+
+If I kill them, they get recreated about the same size next time I run
+apt-get..
+
+-SteveK
+
+
+On Tue, Oct 08, 2002 at 08:01:48PM -0400, Steve Kann wrote:
+> 
+> I posted about this last week, and I'm still stumped.  apt-get is just
+> not working for me, and I can't figure out what the problem is.
+> 
+> I've tried removing the apt rpms, making sure to remove any traces left
+> behind (/etc/apt /var/state/apt /var/cache/apt), and still, I get
+> "couldn't find package xmms-mp3" when running "apt-get install xmms-mp3".
+> 
+> Any clues?  Here's a log of a fresh try:
+> 
+> root@canarsie:/tmp # rpm -e apt apt-devel
+> root@canarsie:/tmp # rm -rf /etc/apt /var/cache/apt /var/state/apt
+> root@canarsie:/tmp # rpm -ivh apt-0.5.4cnc7-fr1.i386.rpm apt-devel-0.5.4cnc7-fr1.i386.rpm
+> warning: apt-0.5.4cnc7-fr1.i386.rpm: V3 DSA signature: NOKEY, key ID
+> e42d547b
+> Preparing...                ########################################### [100%]
+>    1:apt                    ########################################### [ 50%]
+>    2:apt-devel              ########################################### [100%]
+> root@canarsie:/tmp # apt-get update
+> Ign http://apt.freshrpms.net redhat/8.0/en/i386 release
+> Get:1 http://apt.freshrpms.net redhat/8.0/en/i386/os pkglist [1276kB]
+> Get:2 http://apt.freshrpms.net redhat/8.0/en/i386/os release [108B]
+> Get:3 http://apt.freshrpms.net redhat/8.0/en/i386/updates pkglist [14B]
+> Get:4 http://apt.freshrpms.net redhat/8.0/en/i386/updates release [113B]
+> Get:5 http://apt.freshrpms.net redhat/8.0/en/i386/freshrpms pkglist
+> [57.1kB]
+> Get:6 http://apt.freshrpms.net redhat/8.0/en/i386/freshrpms release
+> [125B]
+> Get:7 http://apt.freshrpms.net redhat/8.0/en/i386/os srclist [152kB]
+> Get:8 http://apt.freshrpms.net redhat/8.0/en/i386/updates srclist [14B]
+> Get:9 http://apt.freshrpms.net redhat/8.0/en/i386/freshrpms srclist
+> [14.4kB]
+> Fetched 1500kB in 11s (125kB/s)
+> Reading Package Lists... Done
+> root@canarsie:/tmp # apt-get install xmms-mp3
+> Reading Package Lists... Done
+> Building Dependency Tree... Done
+> E: Couldn't find package xmms-mp3
+> root@canarsie:/tmp # apt-cache search xmms
+> root@canarsie:/tmp #
+> 
+> 
+> Beats me..
+> 
+> -SteveK
+> 
+> 
+> 
+> -- 
+>   Steve Kann - Chief Engineer - 520 8th Ave #2300 NY 10018 -  (212) 533-1775
+>                 HorizonLive.com - collaborate . interact . learn
+>    "The box said 'Requires Windows 95, NT, or better,' so I installed Linux."
+
+-- 
+  Steve Kann - Chief Engineer - 520 8th Ave #2300 NY 10018 -  (212) 533-1775
+                HorizonLive.com - collaborate . interact . learn
+   "The box said 'Requires Windows 95, NT, or better,' so I installed Linux."
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

@@ -1,0 +1,125 @@
+From reply@seekercenter.net  Tue Aug  6 12:53:58 2002
+Return-Path: <reply@seekercenter.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id AF824441D3
+	for <jm@localhost>; Tue,  6 Aug 2002 07:25:35 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 12:25:35 +0100 (IST)
+Received: from sb-app6 ([202.95.23.230]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g753D9v26864 for <jm@jmason.org>;
+    Mon, 5 Aug 2002 04:13:11 +0100
+Message-Id: <200208050313.g753D9v26864@dogma.slashnull.org>
+From: "Vanessa Lintner" <reply@seekercenter.net>
+Subject: I have visited TAINT.ORG and noticed that ...
+To: yyyy@spamassassin.taint.org
+Sender: Vanessa Lintner <reply@seekercenter.net>
+Reply-To: "Vanessa Lintner" <vanessa@seekercenter.net>
+Date: Mon, 5 Aug 2002 11:16:12 +0800
+X-Priority: 3
+X-Library: Indy 8.0.25
+Content-Type: text/html;
+
+<html>
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#D9E4EA" text="#000000">
+<BASE HREF="http://image99.seekercenter.net/">
+<table width="500" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td bgcolor="#FFFFFF">&nbsp; </td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFFF" align="center"> 
+      <table width="446" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td>
+            <table border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="96"><a href="http://www.seekercenter.com" target="_blank"><img src="image/em_01.gif" width="96" height="41" border="0"></a></td>
+                <td width="241"><a href="http://www.seekercenter.com" target="_blank"><img src="image/em_02.gif" width="241" height="41" border="0"></a></td>
+                <td width="109"><a href="http://www.seekercenter.com" target="_blank"><img src="image/em_03.gif" width="109" height="41" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td width="96"><a href="http://www.seekercenter.com" target="_blank"><img src="image/em_04.gif" width="96" height="160" border="0"></a></td>
+                <td width="241"><a href="http://www.seekercenter.com" target="_blank"><img src="http://image99.seekercenter.net/temp/1/41/sna236.jpg" width="241" height="160" border="0"></a></td>
+                <td width="109"><a href="http://www.seekercenter.com" target="_blank"><img src="image/em_05.gif" width="109" height="160" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td width="96"><a href="http://www.seekercenter.com" target="_blank"><img src="image/em_06.gif" height="6" border="0"></a></td>
+                <td width="241"><a href="http://www.seekercenter.com" target="_blank"><img src="image/em_07.gif" height="6" border="0"></a></td>
+                <td width="109"><a href="http://www.seekercenter.com" target="_blank"><img src="image/em_08.gif" width="109" height="6" border="0"></a></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="http://www.seekercenter.com" target="_blank"><img src="image/em_09.gif" width="446" height="89" border="0"></a></td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFFF">
+      <table width="517" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td> 
+            <table width="480" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="50"> 
+                  <p><font face="Geneva, Arial, Helvetica, san-serif"><br>
+                    </font> </p>
+                </td>
+                <td><font face="Geneva, Arial, Helvetica, san-serif" size="2" color="#000033">Hi 
+                  Jm, </font> 
+                  <p><font face="Geneva, Arial, Helvetica, san-serif" size="2" color="#000033">Thanks 
+                    for visiting <a href="http://www.seekercenter.net" target="_blank">http://www.seekercenter.net</a>. 
+                    </font></p>
+                  <p><font face="Geneva, Arial, Helvetica, san-serif" size="2" color="#000033">Over 
+                    90% web surfers use search engines to locate their needed 
+                    info nowadays, so your web site is only effective when people 
+                    can find it. If you are not listed on search engines - you 
+                    lose. Nobody shows up no matter how attractive you made your 
+                    site. As well, the investment you made in building it will 
+                    not yield any dividends at all!</font></p>
+                  <p><font face="Geneva, Arial, Helvetica, san-serif" size="2" color="#000033">As 
+                    a popular site promotion tool, SeekerCenter uniquely submits 
+                    your website to 500,000+ search engines and directories worldwide, 
+                    attracting great traffic to your business website. </font></p>
+                  <p><font face="Geneva, Arial, Helvetica, san-serif" size="2" color="#000033">If 
+                    you wish someone could step you through SeekerCenter WebPromoter 
+                    program, you can check at <a href="http://www.seekercenter.net/faq.php" target="_blank">http://www.seekercenter.net/faq.php</a>. 
+                    </font></p>
+                  <p><font face="Geneva, Arial, Helvetica, san-serif" size="2" color="#000033">If 
+                    you'd like to view to which search engines &amp; directories 
+                    we submit your web site, please check <a href="http://www.seekercenter.net/engines.php" target="_blank">http://www.seekercenter.net/engines.php</a>. 
+                    </font></p>
+                  <p><font face="Geneva, Arial, Helvetica, san-serif" size="2" color="#000033">Questions 
+                    or comments? Contact <a href="mailto:vanessa@seekercenter.net">Vanessa@seekercenter.net</a> 
+                    for more information.</font></p>
+                  <p><font face="Geneva, Arial, Helvetica, san-serif" size="2" color="#000033">Sincerely,<br>
+                    Vanessa Linter<br>
+                    Customer Service<br>
+                    <a href="http://www.seekercenter.net" target="_blank">http://www.seekercenter.net 
+                    </a></font><font face="Geneva, Arial, Helvetica, san-serif" color="#000033"></font></p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    <p>&nbsp;</p></td>
+  </tr>
+</table>
+</body>
+</html>
+
+

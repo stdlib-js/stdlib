@@ -1,0 +1,38 @@
+
+{{alias}}( value, property )
+    Tests if an object's own or inherited property is configurable.
+
+    A property is configurable if the property may be deleted or its descriptor
+    may be changed.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    property: any
+        Property to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an object's own or inherited property is
+        configurable.
+
+    Examples
+    --------
+    > var obj = { 'boop': true };
+    > var desc = {};
+    > desc.configurable = false;
+    > desc.enumerable = true;
+    > desc.writable = true;
+    > desc.value = true;
+    > {{alias:@stdlib/utils/define-property}}( obj, 'beep', desc );
+    > var bool = {{alias}}( obj, 'boop' )
+    true
+    > bool = {{alias}}( obj, 'beep' )
+    false
+
+    See Also
+    --------
+

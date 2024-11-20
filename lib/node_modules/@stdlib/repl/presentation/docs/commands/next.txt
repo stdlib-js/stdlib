@@ -1,0 +1,12 @@
+
+next()
+    Moves the presentation to the next slide or slide fragment.
+
+    Examples
+    --------
+    > next();
+
+    See Also
+    --------
+    first, jumpTo, last, nextSlide, prev
+

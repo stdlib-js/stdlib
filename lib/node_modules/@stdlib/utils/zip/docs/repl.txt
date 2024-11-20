@@ -1,0 +1,42 @@
+
+{{alias}}( ...arr[, options] )
+    Generates array tuples from input arrays.
+
+    Parameters
+    ----------
+    arr: ...Array
+        Input arrays to be zipped.
+
+    options: Object (optional)
+        Options.
+
+    options.trunc: boolean (optional)
+        Boolean indicating whether to truncate arrays longer than the shortest
+        input array. Default: `true`.
+
+    options.fill: any (optional)
+        Fill value used for arrays of unequal length. Default: `null`.
+
+    options.arrays: boolean (optional)
+        Boolean indicating whether an input array should be interpreted as an
+        array of arrays to be zipped. Default: `false`.
+
+    Returns
+    -------
+    out: Array
+        Array of arrays.
+
+    Examples
+    --------
+    // Basic usage:
+    > var out = {{alias}}( [ 1, 2 ], [ 'a', 'b' ] )
+    [ [ 1, 'a' ], [ 2, 'b' ] ]
+
+    // Turn off truncation:
+    > var opts = { 'trunc': false };
+    > out = {{alias}}( [ 1, 2, 3 ], [ 'a', 'b' ], opts )
+    [ [ 1, 'a' ], [ 2, 'b' ], [ 3, null ] ]
+
+    See Also
+    --------
+

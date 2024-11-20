@@ -1,0 +1,69 @@
+From craig@deersoft.com  Mon Sep  2 23:00:06 2002
+Return-Path: <craig@deersoft.com>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (unknown [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id 9B7CA16F2D
+	for <zzzz@localhost>; Mon,  2 Sep 2002 23:00:05 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 02 Sep 2002 23:00:05 +0100 (IST)
+Received: from maynard.mail.mindspring.net (maynard.mail.mindspring.net
+    [207.69.200.243]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g82HPmZ11569 for <zzzz@spamassassin.taint.org>; Mon, 2 Sep 2002 18:25:48 +0100
+Received: from user-1120fqe.dsl.mindspring.com ([66.32.63.78]
+    helo=belphegore.hughes-family.org) by maynard.mail.mindspring.net with
+    esmtp (Exim 3.33 #1) id 17luxa-0003hi-00; Mon, 02 Sep 2002 13:25:58 -0400
+Received: from balam.hughes-family.org (balam.hughes-family.org
+    [10.0.240.3]) by belphegore.hughes-family.org (Postfix) with ESMTP id
+    764503E7FC; Mon,  2 Sep 2002 10:25:57 -0700 (PDT)
+Date: Mon, 2 Sep 2002 10:25:57 -0700
+Subject: Re: bad DCC traffic from e-corp.net
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+MIME-Version: 1.0 (Apple Message framework v482)
+Cc: Justin Mason <zzzz@spamassassin.taint.org>
+To: dcc@calcite.rhyolite.com
+From: "Craig R.Hughes" <craig@deersoft.com>
+In-Reply-To: <200209021702.g82H271q025288@calcite.rhyolite.com>
+Message-Id: <0B1C586E-BE99-11D6-B0C6-00039396ECF2@deersoft.com>
+Content-Transfer-Encoding: 7bit
+X-Mailer: Apple Mail (2.482)
+
+Vernon,
+
+I'm changing the instructions in the SpamAssassin INSTALL file 
+right now to:
+
+tar xfvz dcc-dccproc.tar.Z
+cd dcc-dccproc-X.X.X
+./configure && make && make install
+cdcc 'info'
+
+
+Let me know ASAP if that's innapropriate, since we're shipping 
+2.40 today!
+
+C
+
+On Monday, September 2, 2002, at 10:02  AM, Vernon Schryver wrote:
+
+>> Here are the instructions in the spamassassin README:
+>>
+>>     # tar xfvz dcc-dccproc.tar.Z
+>>     # cd dcc-dccproc-X.X.X
+>>     # ./configure && make && make install
+>>     # cdcc 'new map'
+>>     # cdcc 'add dcc.rhyolite.com'
+>>     # cdcc 'info'
+>
+> That's ok, except that the 'new map' and "add dcc.rhyolite.com'
+> are respectively unnecessary and wrong.  The map file that comes
+> with the source points to localhost and dcc.dcc-servers.net.  Those
+> two shipped entries usually do the right thing if there is a local
+> server.  If there is no local server or if the local server fails,
+> requests are instantly sent to one of the public server names listed
+> in the main DCC web page at
+> http://www.rhyolite.com/anti-spam/dcc/ and http://www.dcc-
+> servers.net/dcc/
+> dcc.rhyolite.com has not been listed for months.
+
+

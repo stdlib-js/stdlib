@@ -1,0 +1,112 @@
+From razor-users-admin@lists.sourceforge.net  Tue Aug 20 10:57:00 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B2C4043C32
+	for <jm@localhost>; Tue, 20 Aug 2002 05:56:59 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 10:56:59 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7JHTkZ02364 for <jm-razor@jmason.org>; Mon, 19 Aug 2002 18:29:46 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17gqCB-0001p0-00; Mon,
+    19 Aug 2002 10:20:03 -0700
+Received: from h-66-166-21-186.snvacaid.covad.net ([66.166.21.186]
+    helo=nexus.cloudmark.com) by usw-sf-list1.sourceforge.net with esmtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17gqBf-000678-00 for
+    <razor-users@lists.sourceforge.net>; Mon, 19 Aug 2002 10:19:31 -0700
+Received: (from chad@localhost) by nexus.cloudmark.com (8.11.6/8.11.6) id
+    g7JHHRp21235; Mon, 19 Aug 2002 10:17:27 -0700
+X-Authentication-Warning: nexus.cloudmark.com: chad set sender to
+    chad@cloudmark.com using -f
+From: Chad Norwood <chad@cloudmark.com>
+To: Steve Price <steve@havk.org>, razor-users@example.sourceforge.net
+Message-Id: <20020819171726.GE5484@nexus.cloudmark.com>
+References: <20020819141417.GS367@bsd.havk.org>
+    <20020819144150.GA1800@darkridge.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20020819144150.GA1800@darkridge.com>
+User-Agent: Mutt/1.4i
+Subject: [Razor-users] Re: turning off checksums per MIME part
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Mon, 19 Aug 2002 10:17:26 -0700
+Date: Mon, 19 Aug 2002 10:17:26 -0700
+
+  The way Razor breaks down mail is simple.  If a mail contains MIME
+  boundaries it is split on those boundaries, each MIME part is considered 
+  when marking the mail as spam.
+  
+  In 2.14, there are different 'logic methods' for detecting spam.
+  The default method 5 requires all non-contention parts to be spam for
+  the mail to be marked as spam.  A part is considered under
+  contention if its not clear if its spam are not, and is relatively
+  rare.
+
+  Sounds like you are not using 2.14, or maybe you're misinterpreting
+  the log files.  Feel free to send me the log files if you think 
+  there is a bug.
+
+  Also, as jordan says, if you get a legit mail marked as spam (based
+  on whatever MIME stuff is going on), you should revoke it (which sends
+  all parts in) so TeS can take care of business.  
+
+  cheers,
+  chad
+
+On 19/08/02 07:41 -0700, Jordan Ritter wrote:
+) If I understand you correctly, you should revoke the message en total,
+) because this is one of various inputs that TeS uses to understand what
+) parts are under contention.  
+) 
+) As for your question specifically, Chad can answer that (sorry, I
+) don't know).
+) 
+) --jordan
+) 
+) On Mon, Aug 19, 2002 at 09:14:17AM -0500, Steve Price wrote:
+) 
+) # Is there an easy way in Razor v2 to turn off detecting a message as
+) # SPAM if one of the MIME parts was found in a previous SPAM?  I just
+) # received subscribe request to a moderated ecartis list and it was
+) # detected as SPAM because it contained an empty text/plain part and
+) # an "empty" (to iMail anyway) text/html part.  In reality there were
+) # no MIME parts to this message since the body of the email contained
+) # instructions from ecartis along with a forwarded copy of the
+) # subscribe request which happened to be a multipart MIME message.
+) # Sure there were MIME boundaries in the forwarded message but the
+) # message as received wasn't a multipart MIME message so Razor should
+) # not have detected any of the MIME boundary headers in the body of
+) # the forwarded message.  I realized I could whitelist the part that
+) # is listed but it would seem that the detection of MIME boundaries
+) # should be reserved for messages that actually have multiple MIME
+) # parts and not every message that looks like it might.
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+

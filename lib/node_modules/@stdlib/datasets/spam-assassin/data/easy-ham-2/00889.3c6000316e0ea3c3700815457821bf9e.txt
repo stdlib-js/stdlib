@@ -1,0 +1,70 @@
+From fork-admin@xent.com  Thu Jul 25 22:39:43 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A7898440E7
+	for <jm@localhost>; Thu, 25 Jul 2002 17:39:43 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 22:39:43 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6PLbb400313 for <jm@jmason.org>;
+    Thu, 25 Jul 2002 22:37:37 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 6A3512940E3; Thu, 25 Jul 2002 14:36:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mithral.com (watcher.mithral.com [204.153.244.1]) by
+    xent.com (Postfix) with SMTP id 8413F2940DE for <fork@xent.com>;
+    Thu, 25 Jul 2002 14:35:51 -0700 (PDT)
+Received: (qmail 6580 invoked by uid 1111); 25 Jul 2002 21:35:42 -0000
+From: "Adam L. Beberg" <beberg@mithral.com>
+To: Tom <tomwhore@slack.net>
+Cc: <fork@spamassassin.taint.org>
+Subject: Re: USA USA WE ARE NUMBER ....six.
+In-Reply-To: <Pine.BSO.4.44.0207241312010.357-100000@crank.slack.net>
+Message-Id: <Pine.LNX.4.33.0207251421350.6487-100000@watcher.mithral.com>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 25 Jul 2002 14:35:42 -0700 (PDT)
+
+On Wed, 24 Jul 2002, Tom wrote:
+
+> "Around the world, there is a growing sense that democracy has not
+> delivered development" Sakiko Fukuda-Parr UN report author
+
+Or perhaps it is the unregulated and out of control capitalism used as a
+tool to concentrate wealth and form a greed-based society?
+
+I notice the top 5 have a good amount of socialism in their systems to
+regulate the capitalism, especially in things like health care and
+education.
+
+Just look at our health care - no insurance = no care. Or education - gimme
+my voucher so I can get my kids out of the system while their IQ is still
+over 20.
+
+South American countries are currently figuring out just where this
+greed-based system ends up, and are looking for a way out.
+
+It was a fun ride tho wasnt it?
+
+- Adam L. "Duncan" Beberg
+  http://www.mithral.com/~beberg/
+  beberg@mithral.com
+
+
+http://xent.com/mailman/listinfo/fork
+
+

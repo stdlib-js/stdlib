@@ -1,0 +1,54 @@
+From fork-admin@xent.com  Mon Aug 26 19:44:44 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7E64E43F99
+	for <jm@localhost>; Mon, 26 Aug 2002 14:44:42 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 19:44:42 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7QIgfZ04806 for <jm@jmason.org>;
+    Mon, 26 Aug 2002 19:42:42 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id B7B46294164; Mon, 26 Aug 2002 11:40:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from crank.slack.net (slack.net [166.84.151.181]) by xent.com
+    (Postfix) with ESMTP id 2495E294162 for <FoRK@xent.com>; Mon,
+    26 Aug 2002 11:39:11 -0700 (PDT)
+Received: by crank.slack.net (Postfix, from userid 596) id 55E983EE34;
+    Mon, 26 Aug 2002 14:43:23 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1]) by crank.slack.net
+    (Postfix) with ESMTP id 4E6013EDEC; Mon, 26 Aug 2002 14:43:23 -0400 (EDT)
+From: Tom <tomwhore@slack.net>
+To: Jim Whitehead <ejw@cse.ucsc.edu>
+Cc: FoRK <FoRK@xent.com>
+Subject: Re: How unlucky can you get?
+In-Reply-To: <AMEPKEBLDJJCCDEJHAMIOECLFFAA.ejw@cse.ucsc.edu>
+Message-Id: <Pine.BSO.4.44.0208261442530.5449-100000@crank.slack.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 26 Aug 2002 14:43:23 -0400 (EDT)
+
+On Mon, 26 Aug 2002, Jim Whitehead wrote:
+--]a sledgehammer)? We hadn't done anything unusual to the toilet in the recent
+--]past -- just normal use. I've *never* heard of this happening to anyone I
+--]know. The guts, yeah, they fail all the time. But the storage bowl -- never.
+--]
+
+Do you have any Tesla nuts inthe hood? Them hooligans and thier beams..
+
+http://xent.com/mailman/listinfo/fork
+

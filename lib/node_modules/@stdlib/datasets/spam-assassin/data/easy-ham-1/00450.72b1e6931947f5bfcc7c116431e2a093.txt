@@ -1,0 +1,106 @@
+From fork-admin@xent.com  Fri Sep  6 11:41:40 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 6DB4416F71
+	for <jm@localhost>; Fri,  6 Sep 2002 11:39:38 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 11:39:38 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g868YnW26014 for
+    <jm@jmason.org>; Fri, 6 Sep 2002 09:34:51 +0100
+Received: from xent.com ([64.161.22.236]) by webnote.net (8.9.3/8.9.3)
+    with ESMTP id EAA20104 for <jm@jmason.org>; Fri, 6 Sep 2002 04:43:26 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id E666C2940C2; Thu,  5 Sep 2002 20:40:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from sccrmhc02.attbi.com (sccrmhc02.attbi.com [204.127.202.62])
+    by xent.com (Postfix) with ESMTP id A06A229409F for <fork@xent.com>;
+    Thu,  5 Sep 2002 20:39:33 -0700 (PDT)
+Received: from h00e098788e1f.ne.client2.attbi.com ([24.61.143.15]) by
+    sccrmhc02.attbi.com (InterMail vM.4.01.03.27 201-229-121-127-20010626)
+    with ESMTP id
+    <20020906034209.EOBI13899.sccrmhc02.attbi.com@h00e098788e1f.ne.client2.attbi.com>;
+    Fri, 6 Sep 2002 03:42:09 +0000
+From: bitbitch@magnesium.net
+X-Mailer: The Bat! (v1.52f) Educational
+Reply-To: bitbitch@magnesium.net
+X-Priority: 3 (Normal)
+Message-Id: <155207191859.20020905234116@magnesium.net>
+To: "Adam L. Beberg" <beberg@mithral.com>
+Cc: fork@spamassassin.taint.org
+Subject: Re[2]: Selling Wedded Bliss (was Re: Ouch...)
+In-Reply-To: <Pine.LNX.4.33.0209052030090.23284-100000@watcher.mithral.com>
+References: <Pine.LNX.4.33.0209052030090.23284-100000@watcher.mithral.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 5 Sep 2002 23:41:16 -0400
+
+Hello Adam,
+
+Thursday, September 05, 2002, 11:33:18 PM, you wrote:
+
+
+ALB> So, you're saying that product bundling works? Good point.
+
+Sometimes I wish I was still in CA.  You deserve a good beating every
+so often...  (anyone else want to do the honors?)
+
+ALB> And how is this any different from "normal" marriage exactly? Other then
+ALB> that the woman not only gets a man, but one in a country where both she and
+ALB> her offspring will have actual opportunities? Oh and the lack of
+ALB> "de-feminized, over-sized, self-centered, mercenary-minded" choices?
+
+Mmkay.  For the nth time Adam, we don't live in the land of
+Adam-fantasy.  Women actually are allowed to do things productive,
+independent and entirely free of their male counterparts.  They aren't
+forced to cook and clean and merely be sexual vessels.   Sometimes,
+and this will come as a shock to you, no doubt, men and women even
+find -love- (which is the crucial distinction between this system) and
+they marry one another for the satisfaction of being together.   I
+know, far-fetched and idealistically crazy as it is, but such things
+do happen.   I can guarantee you, if my mother was approached by my
+father, and 25 years ago, he commented on her cleaning ability as a
+motivator for marrying her, we would not be having this conversation
+now.
+
+If guys still have silly antequated ideas about 'women's role' then
+their opportunities for finding women _will_ be scarce.   Again, these
+situations are great, provided everyone is aware that the relationship
+is a contractual one -- he wants a maid, a dog and a prostitute he
+doesn't have to pay, and she wants a country that isn't impoverished
+and teeming with AIDS.  A contract, versus a true love-interest
+marriage.
+
+Egh.  I really need to stop analyzing your posts to this extent.   I
+blame law school and my cat.
+
+-BB
+
+ALB> - Adam L. "Duncan" Beberg
+ALB>   http://www.mithral.com/~beberg/
+ALB>   beberg@mithral.com
+
+
+
+
+
+-- 
+Best regards,
+ bitbitch                            mailto:bitbitch@magnesium.net
+
+

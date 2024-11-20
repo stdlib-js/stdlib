@@ -1,0 +1,62 @@
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2019 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+'use strict';
+
+var net = require( 'net' );
+var stdin = require( '@stdlib/streams/node/stdin' );
+var stdout = require( '@stdlib/streams/node/stdout' );
+
+// Create a new TCP connection:
+var socket = net.connect( 1337 );
+
+// Setup data flow:
+stdin.pipe( socket );
+socket.pipe( stdout );
+
+// Listen for socket events:
+socket.on( 'connect', onConnect );
+socket.on( 'close', onClose );
+
+// Listen for `stdin` events:
+stdin.on( 'end', onEnd );
+stdin.on( 'data', onData );
+
+function onConnect() {
+	// Upon establishing a TCP connection, switch `stdin` to "raw" mode:
+	stdin.setRawMode( true );
+}
+
+function onClose() {
+	socket.removeListener( 'close', onClose );
+}
+
+function onEnd() {
+	// Upon no longer receiving `stdin` data, we need to ensure we close the TCP connection:
+	socket.destroy();
+	console.log();
+}
+
+function onData( buf ) {
+	// Detect an end of transmission (EOT) ASCII character, which indicates a desire to close the `stdin` stream...
+	if ( buf.length === 1 && buf[ 0 ] === 4 ) {
+		stdin.pause();
+		stdin.setRawMode( false );
+		stdin.emit( 'end' );
+	}
+}

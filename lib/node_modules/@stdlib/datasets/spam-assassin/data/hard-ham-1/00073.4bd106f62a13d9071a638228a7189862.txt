@@ -1,0 +1,500 @@
+Return-Path: <Online#3.20074.fe-hz1flt-yytPTpdRR.1.b@newsletter.online.com>
+Received: from abv-sfo-acmta2.cnet.com (abv-sfo1-acmta2.cnet.com [206.16.1.161])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6FLBTJ07193
+	for <qqqqqqqqqq-zdnet@spamassassin.taint.org>; Mon, 15 Jul 2002 22:11:29 +0100
+Received: from abv-sfo1-ac-agent4 (206.16.0.226) by abv-sfo-acmta2.cnet.com (PowerMTA(TM) v1.5); Mon, 15 Jul 2002 17:13:37 -0700 (envelope-from <Online#3.20074.fe-hz1flt-yytPTpdRR.1.b@newsletter.online.com>)
+Message-ID: <3660433.1026767487726.JavaMail.root@abv-sfo1-ac-agent4>
+Date: Mon, 15 Jul 2002 14:11:27 -0700 (PDT)
+From: "CNET News.com Daily Dispatch" <Online#3.20074.fe-hz1flt-yytPTpdRR.1@newsletter.online.com>
+To: qqqqqqqqqq-zdnet@spamassassin.taint.org
+Subject: CNET NEWS.COM: File-traders in the crosshairs
+Mime-Version: 1.0
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+X-Mailer: Accucast (http://www.accucast.com)
+X-Mailer-Version: 2.8.4-2
+
+<html>
+<head>
+        <title>File-traders in the crosshairs</title>
+</head>
+<body bgcolor="#e5e5e5">
+<center>
+<a name="top"></a>
+<!-- Logo and ad banner -->
+<table cellpadding=0 cellspacing=0 border=0 width=612 bgcolor="#ffffff">
+	<tr valign=top>
+    <td width=442 colspan=4 bgcolor="#e5e5e5">
+        <img src="http://home.cnet.com/i/ne/ds/dhed.gif" alt="" width="442" height="63" border="0"><br>
+    </td>
+    <td width=160 rowspan=2>
+<!-- Towerboard -->
+	<div align="center"><img src="http://i.i.com.com/cnwk.1d/Ads/common/advertisement.gif" width="120" height="10" border="0"></br>
+
+<a href="http://clickthru.online.com/Click?q=13-NxSZI3XW8S97AuhssDLfzpHOCerR" target="new">   
+
+<img src="http://ad.doubleclick.net/ad/N1090.cnet/B926801.16;sz=160x600;ord=[timestamp]?" width="160" height="600" border="0">
+
+</a></div>
+<!-- /Towerboard -->
+	<p>
+	<!-- search form -->
+	<TABLE border=0 cellPadding=2 cellSpacing=0 width=150>
+	<TR>
+	<TD>
+	<form method="GET" action="http://www.search.com/redirect/">
+	                <img src="/b.gif" width=1 height=4><font face="arial, helvetica" size="-1"><br>&nbsp;<b>Search</b></font><br>
+	                &nbsp;<input type="text" name="q" size="15" value=""><br>
+	                &nbsp;<select name="target">
+	                <option value="http://news.search.com/search?tag=ex.ne.newsletter.srch.ne" selected>News.com
+	                <option value="http://cnet.search.com/search?tag=ex.ne.newsletter.srch.cnet">All CNET&nbsp;&nbsp;&nbsp;&nbsp;
+	                <option value="http://www.search.com/search?tag=ex.ne.newsletter.srch.web">The Web
+                </select>&nbsp;<input type="submit" value="Go!" name="submit"></td></form>
+    </tr></table>
+    <!-- /search form -->
+    <p>
+<!-- Vertical Brick -->
+<IMG alt="Also from CNET" height=20 src="http://home.cnet.com/Ads/Media/Images/RHC_ALSOfromCNETnet.gif" width=150 NOSEND="1"><BR>
+<TABLE border=0 cellPadding=2 cellSpacing=0 width=150><TBODY><TR vAlign=top>
+<TD><FONT face="arial, helvetica" size=-1><B>
+<a href="http://clickthru.online.com/Click?q=28-A2wXIRd4w3YU_u4EL2t1VlTK8yiR" >Live tech help NOW!</a><p>
+<a href="http://clickthru.online.com/Click?q=3d-oi9NIbz4YXtdakcvwlGWUTnaNtPR" >April's tech award</a><p>
+<a href="http://clickthru.online.com/Click?q=52-LUXoIrJtdRNUUC9MWz8AtIQwjjnR" >1 million open jobs</a><p>
+<a href="http://clickthru.online.com/Click?q=67-PnDkIOEDqn6Owp9WhKPAKa1CPIuR" >News.com: Top CIOs</a> <p>
+<a href="http://clickthru.online.com/Click?q=7d-FFEqIDLPzEEgN5RUywq2NRJSBTZR" >ZDNet: PeopleSoft</a>
+</B></FONT></TD>
+</TR></TBODY></TABLE></P>
+<!-- End Vertical Brick-->
+		<p>
+	</td>
+	<td width=9 rowspan=2>
+		<table width=9 cellpadding=0 cellspacing=0 border=0>
+			<tr><td bgcolor="#e5e5e5"><img src="http://home.cnet.com/b.gif" width="9" height="50" border="0"><br></td></tr>
+			<tr><td bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="9" height="1" border="0"><br></td></tr>
+			<tr><td bgcolor="#ffcc00"><img src="http://home.cnet.com/b.gif" width="9" height="10" border="0"><br></td></tr>
+			<tr><td bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="9" height="1" border="0"><br></td></tr>
+		</table>
+	</td>
+	<td width=1 bgcolor="#000000" rowspan=2><img src="http://home.cnet.com/i/ne/ds/bkg.gif" width="1" height="50" border="0"></td>
+	</tr>
+<!-- Logo and ad banner -->
+<!-- In the News / Special Reports -->
+<tr valign=top>
+	<td width=1 bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td>
+	<td width=10 bgcolor="#ffcc00"><img src="http://home.cnet.com/b.gif" width="10" height="1" border="0"><br></td>
+	<td width=1 bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td>
+	<td width=430 bgcolor="#ffffff">
+<!-- START COPY FOR THE GUTS -->
+	<table cellpadding=0 cellspacing=0 border=0 width=430 bgcolor="#eeeeee">
+	<tr valign=top>
+	<td width=10><img src="http://home.cnet.com/b.gif" alt="" width="10" height="1" border="0"><br></td>
+	<td width=252>
+	<table cellpadding=0 cellspacing=0 border=0 width=252>
+	<tr>
+	<td><img src="http://home.cnet.com/i/ne/ds/itn.gif" alt="In the News" width="68" height="16" border="0"><br></td>
+<!-- Date -->
+	<td align=right><font face="Arial, Helvetica" size="-2">July 15, 2002</font><br></td>
+	</tr>
+	</table>
+	<img src="http://home.cnet.com/b.gif" alt="" width="1" height="6" border="0"><br>
+	<font face="Arial, Helvetica" size="-1">
+	 <a href="#h1" style="text-decoration:none;"><img src="http://home.cnet.com/i/ne/ds/arrow.gif" alt="" width="11" height="9" border="0"><font color="#000000">
+File-traders in the crosshairs</font></a><br>
+	 <a href="#h2" style="text-decoration:none;"><img src="http://home.cnet.com/i/ne/ds/arrow.gif" alt="" width="11" height="9" border="0"><font color="#000000">
+Will IBM's new "Shark" sink or swim?</font></a><br>
+	 <a href="#h3" style="text-decoration:none;"><img src="http://home.cnet.com/i/ne/ds/arrow.gif" alt="" width="11" height="9" border="0"><font color="#000000">
+HP exits e-business software market</font></a><br>
+	 <a href="#h4" style="text-decoration:none;"><img src="http://home.cnet.com/i/ne/ds/arrow.gif" alt="" width="11" height="9" border="0"><font color="#000000">
+Security's the message for Exchange</font></a><br>
+	 <a href="#h5" style="text-decoration:none;"><img src="http://home.cnet.com/i/ne/ds/arrow.gif" alt="" width="11" height="9" border="0"><font color="#000000">
+Hack attacks on Linux on the rise</font></a><br>
+	 <a href="#h6" style="text-decoration:none;"><img src="http://home.cnet.com/i/ne/ds/arrow.gif" alt="" width="11" height="9" border="0"><font color="#000000">
+Microsoft tries to steal Macworld thunder</font></a><br>
+		</td>
+		<td width=8><img src="http://home.cnet.com/b.gif" alt="" width="8" height="1" border="0"><br></td>
+		<td width=1 bgcolor="#999999"><img src="http://home.cnet.com/b.gif" alt="" width="1" height="1" border="0"><br></td>
+		<td width=159>
+<!-- Promo Area -->
+		<table cellpadding=0 cellspacing=0 border=0 width=159>
+		<tr valign=bottom>
+			<td width="8"><img src="http://home.cnet.com/b.gif" alt="" width="8" height="1" border="0"><br></td>
+			<td width="8"><img src="http://home.cnet.com/i/ne/ds/bug.gif" alt="" width="8" height="24" border="0"></td>
+			<td width="151"><font face="Arial, Helvetica">&nbsp;<b>Perspectives</b></font></td>
+		</tr>
+		<tr>
+			<td><img src="http://home.cnet.com/b.gif" alt="" width="1" height="1" border="0"></td>
+			<td colspan=2 bgcolor="#000000"><img src="http://home.cnet.com/b.gif" height=1 width=1><br></td>
+		</tr>
+		</table>
+		<table cellpadding=8 cellspacing=0 border=0>
+		<tr><td>
+				<font face="Arial, Helvetica" size="-1">
+				<b>Send in the geeks</b><br>
+Declan McCullagh tells of technophiles who become political activists.<br>
+				<b><a href="http://clickthru.online.com/Click?q=92-ubRVQTzT5Io2Hw5zeFOPq1FsnynR" >Read Full Story</a></b><br>
+		</td></tr>
+		</table>
+<!-- /Promo Area -->
+                                <img src="http://home.cnet.com/b.gif" height=6 width=1><br>
+                        </td>
+                        </tr>
+                        </table>
+        <!-- Thin grey line -->
+        <table cellpadding=0 cellspacing=0 border=0 width=430>
+        <tr valign=top>
+                <td bgcolor="#999999"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td>
+        </tr>
+        </table>
+<table cellpadding=10 cellspacing=0 border=0>
+<tr><td><font face="Arial, Helvetica">
+<a name="h1"></a>
+<b>File-traders in the crosshairs</b><br>
+<font size="-1">
+When the recording industry last month let slip plans to sue individuals who trade copyrighted songs on file-swapping services, Web surfers everywhere pulled down their MP3 collections in a frenzy of fear.
+OK, not really. Despite the music industry's hopes, such threats have so far been met with a collective yawn in the file-swapping community, which has yet to see much damage in spite of repeated legal wrangling with the Recording Industry Association of America.
+</font><br>
+<font size="-2">
+July 15, 2002, 10:00 AM PT
+</font> | <font size="-1">
+<a href="http://clickthru.online.com/Click?q=a7-fR_2Q8BwVDVRvA5LF5vLk7KCgFeR" >
+<b>Read Full Story</b></a></font> <img src="http://home.cnet.com/i/ne/ds/right_arrow.gif" alt="" width="9" height="9" border="0">
+<P>
+<a name="h2"><b>Will IBM's new "Shark" sink or swim?</b></a><br>
+<font size="-1">
+IBM announced a new top-end "Shark" storage system Monday that could boost the company's prospects against entrenched competitors in the depressed storage market.
+Three years ago, IBM introduced its first Enterprise Storage System product, code-named Shark, in an attempt to rebuild a market it had almost totally ceded to rivals EMC and Hitachi Data Systems.
+</font><br>
+<font size="-2">
+July 15, 2002, 7:30 AM PT
+</font> | <font size="-1">
+<a href="http://clickthru.online.com/Click?q=bc-zkPJQ6BdHno8kFhmobF8XEDxwcyR" >
+<b>Read Full Story</b></a></font> <img src="http://home.cnet.com/i/ne/ds/right_arrow.gif" alt="" width="9" height="9" border="0">
+<p>
+<a name="h3"><b>HP exits e-business software market</b></a><br>
+<font size="-1">
+Hewlett-Packard on Monday discontinued its family of e-business software after failing to make a splash in the multibillion-dollar market.
+After a two-year effort, HP decided to discontinue its NetAction product line, which included application-server software designed for Web transactions, and related software for building Web services, technology that allows companies to interact and conduct business via the Internet.
+</font><br>
+<font size="-2">
+July 15, 2002, 10:55 AM PT</font> | <font size="-1">
+<a href="http://clickthru.online.com/Click?q=d1-ulOzQpErJCShbd-10-kl0aSxkZlR" >
+<b>Read Full Story</b></a></font> <img src="http://home.cnet.com/i/ne/ds/right_arrow.gif" alt="" width="9" height="9" border="0">
+<p>
+
+<br>
+<a name="h4"><b>Security's the message for Exchange</b></a><br>
+<font size="-1">
+Microsoft is hatching plans for a new Exchange Server e-mail system, with improved security, a facelift for Outlook, and better support for cell phones and other handhelds.
+Microsoft chief executive Steve Ballmer is expected to elaborate on the new version of Exchange in a speech to business partners Monday at its Fusion conference in Los Angeles.
+</font><br>
+<font size="-2">
+July 15, 2002, 11:30 AM PT
+</font> | <font size="-1">
+<a href="http://clickthru.online.com/Click?q=e7-2y-GQmVXo3Yz7KMVqS8CMB0qvseR" >
+<b>Read Full Story</b></a></font> <img src="http://home.cnet.com/i/ne/ds/right_arrow.gif" alt="" width="9" height="9" border="0">
+<p>
+<a name="h5"><b>Hack attacks on Linux on the rise</b></a><br>
+<font size="-1">
+Hackers are increasingly targeting Web servers based on the Linux operating system, while the number of successful attacks on Windows systems decreases, according to a new report from a U.K. systems integrator.
+The study by Mi2g also found that successful attacks on U.K. and U.S. government sites have decreased, which may be due to tougher laws and improved security.
+</font><br>
+<font size="-2">
+July 15, 2002, 11:20 AM PT
+</font> | <font size="-1">
+<a href="http://clickthru.online.com/Click?q=fc-WpHmQVwFSurEGpsa9-0t3VVat9yR" >
+<b>Read Full Story</b></a></font> <img src="http://home.cnet.com/i/ne/ds/right_arrow.gif" alt="" width="9" height="9" border="0">
+<p>
+<a name="h6"><b>Microsoft tries to steal Macworld thunder</b></a><br>
+<font size="-1">
+Microsoft on Monday launched the first of several pre-emptive strikes against Apple Computer's Macworld trade show by making announcements about new technologies far ahead of their delivery to market.
+The strategic attack comes as tensions mount between Apple and Microsoft. During Macworld five years ago, the two companies announced a five-year technology agreement, whereby Microsoft committed to continued development of Office and Internet Explorer for the Mac.
+</font><br>
+<font size="-2">
+July 15, 2002, 8:00 AM PT
+</font> | <font size="-1">
+<a href="http://clickthru.online.com/Click?q=11-l8riI2-4ELnoUpNX3VynhNBuCqlR" >
+<b>Read Full Story</b></a></font> <img src="http://home.cnet.com/i/ne/ds/right_arrow.gif" alt="" width="9" height="9" border="0">
+<p>
+<table width="100%" cellpadding=0 cellspacing=0 border=0><tr><td width="100%" valign=bottom>
+<font face="arial, helvetica" size="-1"><font color="#666666"><b>From our partners:</b></font></td></tr><tr><td colspan=2><img src="http://a.r.tv.com/cnet.1d/b.gif" width=1 height=1 alt=""></td></tr>
+<tr><td colspan=2 bgcolor="#666666"><img src="http://a.r.tv.com/cnet.1d/b.gif" width=1 height=1 alt=""></td></tr></table>
+<b>Chewing the sashimi with Jeff Bezos</b></a><br>
+<font size="-2">
+Business Week
+</font><br>
+<font size="-1">
+"We're still at the very beginning," says Amazon.com's founder in a wide-ranging interview over lunch. "There's so much more to come."
+</font><br>
+<font size="-2">
+July 15, 2002
+</font> | <font size="-1">
+<a href="http://clickthru.online.com/Click?q=26-KqPVIiMHoldEOYPBBBkqU8niQ74R" >
+<b>Read Full Story</b></a></font> <img src="http://home.cnet.com/i/ne/ds/right_arrow.gif" alt="" width="9" height="9" border="0">
+<p>
+<b>The earnings season of discontent </b></a><br>
+<font size="-2">
+Business Week
+</font><br>
+<font size="-1">
+Second-quarter announcements are likely to meet with deep investor skepticism, despite an outlook that is slowly improving.</font><br>
+<font size="-2">
+July 15, 2002
+</font> | <font size="-1">
+<a href="http://clickthru.online.com/Click?q=3b-XhxVINdHnvNMWEdFPcZsjpRp-LrR" >
+<b>Read Full Story</b></a></font> <img src="http://home.cnet.com/i/ne/ds/right_arrow.gif" alt="" width="9" height="9" border="0">
+<p>
+<table width="100%" cellpadding=0 cellspacing=0 border=0><tr><td width="100%" valign=bottom>
+<font face="arial, helvetica" size="-1"><font color="#666666"><b>Also from CNET:</b></font></td></tr><tr><td colspan=2><img src="http://a.r.tv.com/cnet.1d/b.gif" width=1 height=1 alt=""></td></tr>
+<tr><td colspan=2 bgcolor="#666666"><img src="http://a.r.tv.com/cnet.1d/b.gif" width=1 height=1 alt=""></td></tr></table>
+<font face="arial, helvetica" size="-1">Real-time stock quotes from CNET News.com Investor.<br>30-day <a href="http://clickthru.online.com/Click?q=50-M_CBIR0XgZwYFl_ASOnO8CtmMgRR" >free trial</a>!</font>
+        </td>
+</tr>
+</table>
+        </td>
+</tr>
+</table>
+<!-- Video Report -->
+<table cellpadding=0 cellspacing=0 border=0 width=612>
+<tr valign=top>
+        <td width=1 bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td>
+        <td width=10 bgcolor="#ffcc00"><img src="http://home.cnet.com/b.gif" width="10" height="1" border="0"></td>
+        <td width=1 bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td>
+        <td width=12 bgcolor="#ffffff"><img src="http://home.cnet.com/b.gif" width="12" height="1" border="0"></td>
+        <td width=575 bgcolor="#ffffff">
+<!-- Leads Module -->
+<img src="http://www.cnet.com/i/gl/new-cc.gif" alt="Crucial Clicks" width="120" height="19" border="0"><br>
+<table width="100%"  cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
+<tr bgcolor="#cccccc"><td colspan="7"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td></tr>
+<tr>
+<td bgcolor="#cccccc" rowspan="3"><img src="http://home.cnet.com/b.gif" height=1 width=1></td>
+<td rowspan="3"><img src="http://home.cnet.com/b.gif" height=1 width=5></td>
+<td colspan="3"><img src="http://home.cnet.com/b.gif" height=5 width=1></td>
+<td rowspan="3"><img src="http://home.cnet.com/b.gif" height=1 width=5></td>
+<td bgcolor="#cccccc" rowspan="3"><img src="http://home.cnet.com/b.gif" height=1 width=1></td>
+</tr>
+<tr valign="top">
+<td width="100%">
+<table width="100%"  cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="85"><a href="http://clickthru.online.com/Click?q=65-K82zIDPtIgFX7DVD70VOf0m8P9ZR" ><img src="http://a.r.tv.com/cnet.1d/i/pg/021502_pointcamera.jpg" width="85" height="110" border="0" alt="" /></a></td>
+<td width="5"><img src="http://home.cnet.com/b.gif" height=1 width=5></td>
+<td width="100%"><font face="arial, helvetica" size="-1">
+<a href="http://clickthru.online.com/Click?q=7a-EE_AIPBjUrYolSJhU6coezkBZXdR" ><b>Digicams for summer shutterbugs</b></a><br />Going on vacation, or just headed to the beach? Indulge your summer snapshot habit with one of our picks.</font></td>
+</tr>
+<tr><td colspan="3"><img src="http://home.cnet.com/b.gif" height=3 width=1><br /><font face="arial, helvetica" size="-1">
+&#149; <a href="http://clickthru.online.com/Click?q=8f-OOYvQ8KKwWMbqoWXvsg9tyQFWveR" >5-megapixel shoot-out</a><br />
+&#149; <a href="http://clickthru.online.com/Click?q=a4-HGTsQ6pafTXawrG463LvvI2rgYyR" >Leica Digilux 1: street shooter"s digicam</a><br />
+</font></td></tr>
+</table>
+</td>
+<td><img src="http://home.cnet.com/b.gif" height=1 width=5></td>
+<td width="180">
+<table cellpadding="0" cellspacing="0" width="180" border="0" bgcolor="#ffffef">
+<tr><td colspan="5" bgcolor="#666666"><img src="http://home.cnet.com/b.gif" width="1" height="1" alt="" border="0" /></td></tr>
+<tr>
+<td bgcolor="#666666"><img src="http://home.cnet.com/b.gif" width="1" height="1" alt="" border="0" /></td>
+<td><img src="http://home.cnet.com/b.gif" width="10" height="1" alt="" border="0" /></td>
+<td><font face="ms sans serif, geneva" size="-2"><img src="http://home.cnet.com/b.gif" width="1" height="5" alt="" border="0" /><br />
+<font face="arial, helvetica" color="#666666" size="-1"><b>Most popular products</b></font><br /><img src="http://home.cnet.com/b.gif" width="1" height="5" alt="" border="0" /><br />
+<b>Digital cameras</b><br /><img src="http://home.cnet.com/b.gif" width="1" height="7" alt="" border="0" /><br />
+1. <a href="http://clickthru.online.com/Click?q=ba-m-45QXpKAWArNk0xhOmI_uIUEknR" >Canon PowerShot G2</a><br /><img src="http://home.cnet.com/b.gif" width="1" height="3" alt="" border="0" /><br />
+2. <a href="http://clickthru.online.com/Click?q=cf-ebM-QLw2HwvMITMJaylIO7r3fxeR" >Canon PowerShot S40</a><br /><img src="http://home.cnet.com/b.gif" width="1" height="3" alt="" border="0" /><br />
+3. <a href="http://clickthru.online.com/Click?q=e4-ABYFQVkWGjHi9LbI81u0PT_Qv1yR" >Canon PowerShot S30</a><br /><img src="http://home.cnet.com/b.gif" width="1" height="3" alt="" border="0" /><br />
+4. <a href="http://clickthru.online.com/Click?q=f9-mtKTQxOWPQR2uKqSM_svdGheo-lR" >Canon PowerShot A40</a><br /><img src="http://home.cnet.com/b.gif" width="1" height="3" alt="" border="0" /><br />
+5. <a href="http://clickthru.online.com/Click?q=0e--eOTIiQzHxrW4Nx4r8dJx98lbK4R" >Nikon Coolpix 995</a><br /><img src="http://home.cnet.com/b.gif" width="1" height="6" alt="" border="0" /><br />
+<img src="http://a.r.tv.com/cnet.1d/i/fd/yl_arrow.gif" width="13" height="13" border="0" alt="" align="absmiddle" /> <b><a href="http://clickthru.online.com/Click?q=23-sFcGINM8KMn2JOQiAv2Y9ZZvQKrR" >See all most popular cameras</a></b><br />
+<img src="http://home.cnet.com/b.gif" width="1" height="10" alt="" border="0" /><br />
+</font></td>
+<td><img src="http://home.cnet.com/b.gif" width="10" height="1" alt="" border="0" /></td>
+<td bgcolor="#666666"><img src="http://home.cnet.com/b.gif" width="1" height="1" alt="" border="0" /></td>
+</tr>
+<tr><td colspan="5" bgcolor="#666666"><img src="http://home.cnet.com/b.gif" width="1" height="1" alt="" border="0" /></td></tr>
+</table>
+</td>
+</tr>
+<tr valign="top"><td colspan="3"><img src="http://home.cnet.com/b.gif" height=5 width=1></td></tr>
+<tr><td colspan="7" bgcolor="#cccccc"><img src="http://home.cnet.com/b.gif" height=1 width=1></td></tr>
+</table><br />
+<!-- /Leads Module -->
+<p>
+        <font face="Arial, Helvetica" size="-1">&nbsp;<Br>
+        <table cellpadding=0 cellspacing=0 border=0 width=560>
+                <tr>
+                        <td rowspan=3 width=175><img src="http://home.cnet.com/i/ne/ds/sub-vidreport.gif" alt="" width="175" height="25" border="0"></td>
+                        <td width=385><img src="http://home.cnet.com/b.gif" width="1" height="21" border="0"><br></td>
+                </tr>
+                <tr>
+                        <td bgcolor="#cccccc"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"><br></td>
+                </tr>
+                <tr>
+                        <td><img src="http://home.cnet.com/b.gif" width="1" height="3" border="0"><br></td>
+                </tr>
+        </table>
+        <table cellpadding=0 cellspacing=0 border=0 width=560>
+                <tr valign=top>
+                        <td><img src="http://news.cnet.com/i/ne/bb/2002/07/0715_apple.jpg" alt="" width="96" height="72" border="0"></td>
+                        <td><img src="http://home.cnet.com/b.gif" width="10" height="1" border="0"><br></td>
+                        <td><font face="Arial, Helvetica" size="-1">
+                        <b><font size="+0"><a href="http://clickthru.online.com/Click?q=39-7QgMIjI6kpw1AX6CGLs-y39w-_lR" >'Jaguar' may show its claws at MacWorld</a></font></b><br>
+Correspondent Melissa Francis and CNET News.com reporter Ian Fried talk about Jaguar, the anticipated update to Mac OS X and new, larger iMac flat-panel screens, both expected to be unveiled at this week's MacWorld.<br>
+                        <a href="http://clickthru.online.com/Click?q=4e-0Y95InZASFfmY0vIKlsTn8N_Jj9R" ><img src="http://news.cnet.com/i/gl/vid-w.gif" width=24 height=18 border=0 hspace=3 align=top></a> <a href="http://clickthru.online.com/Click?q=63-tPKjIHWSgVacVQag_9-hwkp_WEcR" ><b>Watch Video</b></a><br>
+</tr>
+</table>
+&nbsp;<br>
+</td>
+<td width=12 bgcolor="#ffffff"><img src="http://home.cnet.com/b.gif" width="12" height="1" border="0"><br></td>
+        <td width=1 bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td>
+</tr>
+</table>
+<!-- /Video Report -->
+<!-- News by Section -->
+<table cellpadding=0 cellspacing=0 border=0 width=612>
+<tr valign=top>
+        <td width=1 bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td>
+        <td width=10 bgcolor="#ffcc00"><img src="http://home.cnet.com/b.gif" width="10" height="1" border="0"></td>
+        <td width=1 bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td>
+        <td width=587 bgcolor="#ffffff">
+        <font face="Arial, Helvetica" size="-1">&nbsp;<Br>
+        <table cellpadding=0 cellspacing=0 border=0 width=572>
+                <tr>
+                        <td rowspan=3 width=12><img src="http://home.cnet.com/b.gif" width="12" height="1" border="0"><br></td>
+                        <td rowspan=3 width=175><img src="http://home.cnet.com/i/ne/ds/sub-bysection.gif" alt="" width="175" height="25" border="0"></td>
+                        <td width=385><img src="http://home.cnet.com/b.gif" width="1" height="21" border="0"><br></td>
+                </tr>
+                <tr>
+                        <td bgcolor="#cccccc"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"><br></td>
+                </tr>
+                <tr>
+                        <td><img src="http://home.cnet.com/b.gif" width="1" height="3" border="0"><br></td>
+                </tr>
+        </table>
+        <table width="572" cellpadding="0" cellspacing="0" border="0">
+        <tr valign="top">
+                <td width="286"><font face="arial, helvetica" size ="-1">
+                        <ul>
+                        <b>Enterprise</b><br>
+                        <li><a href="http://clickthru.online.com/Click?q=78-d5asIdUDup1nLIr5vnMUN5xspoRR" >
+Autodesk trims executive pay</a>
+                        <li><a href="http://clickthru.online.com/Click?q=8d-nbL1Q7notyXeOTLIiSupcptbPMPR" >
+AMD to unveil chip amid earnings woes</a>
+                        <li><a href="http://clickthru.online.com/Click?q=a2-6-M7QXZx3gbAbpH9R0CGk_HtsonR" >
+Sun sends forth first version of Liberty</a>
+                        </ul>
+                </font>
+                </td>
+                <td width="286"><font face="arial, helvetica" size ="-1">
+                        <ul>
+                        <b>E-Business</b><br>
+                        <li><a href="http://clickthru.online.com/Click?q=b7-FOgPQ8Jxs5lf2IJ0NpbnpTbdL3eR" >
+Dow takes a beating as confidence wanes</a>
+                        <li><a href="http://clickthru.online.com/Click?q=cc-h4fQQ0Oq5ab-RIX7qeZDozn6f5yR" >
+U.S. government plans online ID gateway</a>
+                        <li><a href="http://clickthru.online.com/Click?q=e1-6RvNQxk2EgmVsAyPhsYK3Awi9qlR" >
+New entrants in search for low airfares</a>
+                        </ul>
+                </font>
+                </td>
+        </tr>
+        <tr valign="top">
+                <td width="286"><font face="arial, helvetica" size ="-1">
+                        <ul>
+                        <b>Communications</b><br>
+                        <li><a href="http://clickthru.online.com/Click?q=f7-N0QnQLgzfYW2jQKlrZIGiR6ImOeR" >
+U.S. says WorldCom books cooked in 2000</a>
+                        <li><a href="http://clickthru.online.com/Click?q=0c-_Y3DIc8H37kNJVXWDjP2qJ13b4yR" >
+Qwest mulls bids for phone book unit</a>
+                        <li><a href="http://clickthru.online.com/Click?q=21-UPROIjdDDuryS_xoQqYoj1cTQ4lR" >
+EarthLink uncorks broadband in Seattle</a>
+                        </ul>
+                </font>
+                </td>
+                <td width="286"><font face="arial, helvetica" size ="-1">
+                        <ul>
+                        <b>Media</b><br>
+                        <li><a href="http://clickthru.online.com/Click?q=36-wg7-IiI4fXH-e2TMxvH3QainXQ4R" >
+Liquid Audio rejects buyout offer</a>
+                        <li><a href="http://clickthru.online.com/Click?q=4b-k_l7IBUPLWwQARTP9VA35c54JMcR" >
+Tech execs: Hands off P2P</a>
+                        <li><a href="http://clickthru.online.com/Click?q=60-oqItIsEAxTU70kBLN8S_eSgFWVRR" >
+China threatens new Web penalties</a>
+                        </ul>
+                </font>
+                </td>
+       </tr>
+        <tr valign="top">
+                <td width="286"><font face="arial, helvetica" size ="-1">
+                        <ul>
+                       <b>Personal Technology</b><br>
+                        <li><a href="http://clickthru.online.com/Click?q=75-whwtIKUAMFv4QEB_rjups7LLZ5ZR" >
+Are Mac users smarter?</a>
+                        <li><a href="http://clickthru.online.com/Click?q=8a-3y3dQXndGB5T02BO3Nt-tKChBwnR" >
+Linux finds room on Wal-Mart shelves</a>
+                        <li><a href="http://clickthru.online.com/Click?q=9f-o7XMQ1JdPHuvQaBYlcGhVIlcU_eR" >
+Future fuzzy for Adobe camera software</a>
+                        </ul>
+                </font>
+                </td>
+                <td width="286"><font face="arial, helvetica" size ="-1">
+                        </font>
+                </td>
+        </tr>
+        </table>
+<!-- END COPY FOR THE GUTS -->
+        &nbsp;<br>
+        </td>
+        <td width=12 bgcolor="#ffffff"><img src="http://home.cnet.com/b.gif" width="12" height="1" border="0"><br></td>
+        <td width=1 bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td>
+</tr>
+</table>
+<!-- ### footer ### -->
+<table width="612" bgcolor="#000000" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="599" bgcolor="#cccccc"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#eeeeee" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="12"><img src="http://www.cnet.com/b.gif" width="12" height="1"></td>
+<td width="575"><img src="http://www.cnet.com/b.gif" width="1" height="10"><br>
+<a href="http://clickthru.online.com/Click?q=b4-aJlbQ6Z1uGRsmpAqJzDxDXozLCyR" ><img src="http://a.r.tv.com/cnet.1d/i/nl/ft.gif" width="375" height="18" border="0" alt="Sign up for more free newsletters from CNET!"></a><p>
+<!-- subscription management -->
+
+<font face="ms sans serif, geneva" size="-2">
+The e-mail address for your subscription is&nbsp;qqqqqqqqqq-zdnet@spamassassin.taint.org<br>
+<A NOTRACK HREF='http://clickthru.online.com/Click?q=ca-icPurXg7C8Y-yTfi_mKogQlfhTfm_sRR'>Unsubscribe</A>&nbsp;|&nbsp;<a href='http://nl.com.com/servlet/url_login?email=qqqqqqqqqq-zdnet@spamassassin.taint.org&brand=cnet'>Manage My Subscriptions</a>&nbsp;|&nbsp;<a href="http://clickthru.online.com/Click?q=df-1kJhQLEFh2XlPRIfbQq-Kh1XhaeR" >FAQ</A>&nbsp;|&nbsp;<a href="http://clickthru.online.com/Click?q=f4-Y-XEQ0ska-wt2DkuUJ5QddfWmTyR" >Advertise</A><p>Please send any questions, comments, or concerns to&nbsp;<a href="mailto:dispatchfeedback@news.com">dispatchfeedback@news.com</A>.<br></font>
+<!-- /subscription management-->
+</font><img src="http://www.zdnet.com/b.gif" width="1" height="8"></td>
+<td width="12"><img src="http://www.cnet.com/b.gif" width="12" height="1"></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#000000" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="601"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#ffcc00" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="37"><a href="http://clickthru.online.com/Click?q=09-joDSIj88OkFH6dzLYSS7ZMgtY8lR" ><img src="http://www.cnet.com/i/dp/smrb.gif" width="37" height="37" border="0"></a></td>
+<td width="563" nowrap><font face="arial, helvetica" size="-1">
+<a href="http://clickthru.online.com/Click?q=1e-JQuLI4jWh9bcqMsqEsB8LE27qd4R" ><font color="#000000">Price comparisons</font></a> |
+<a href="http://clickthru.online.com/Click?q=33-vUjnINjX0omHwTYz6yClxb-7XsrR" ><font color="#000000">Product reviews</font></a> |
+<a href="http://clickthru.online.com/Click?q=48-ggFbIdBsksaRyHMXl_kj2ZBSJuRR" ><font color="#000000">Tech news</font></a> |
+<a href="http://clickthru.online.com/Click?q=5d-JN-bIK0sQsg3gtKobvZm5yGKIaZR" ><font color="#000000">Downloads</font></a> |
+<a href="http://clickthru.online.com/Click?q=72-R8PHIPUfKoFCR7UrqMtNXjoCKqdR" ><font color="#000000">All CNET services</font></a>
+</font></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" cellpadding="0" cellspacing="0" border="0">
+<tr><td bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+<tr><td height="25"><font face="ms sans serif, geneva" size="-2"><table width=100% border=0 cellspacing=2 cellpadding=1> <tr valign=bottom> <td width=75% height=31> <p></font> <br><b><font face=Arial, Helvetica, sans-serif size=2>    Copyright 2002 CNET Networks, Inc. All rights reserved.    </font></b> </p></td><td height=31 valign=top> <div align=right> <img src="http://gserv-cnet.zdnet.com/clear/outbound.gif?APPID=2&EMID=25136482&NL=e433&ISSUE=2002-07-15" height=1 width=1>    </div></td></tr><tr>  <td colspan=2><font face=Arial, Helvetica, sans-serif size=2>    </font></td></tr></table></td></tr>
+</table>
+<!-- ### /footer ### -->
+</body>
+</html>
+<IMG HEIGHT=1 WIDTH=1 SRC="http://clickthru.online.com/Click?q=88-ecGP-fKmi5IgSh-qQXN9j6TAZsRR">
+

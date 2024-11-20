@@ -1,0 +1,101 @@
+From fork-admin@xent.com  Tue Sep 17 11:29:54 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 4660216F03
+	for <jm@localhost>; Tue, 17 Sep 2002 11:29:54 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 17 Sep 2002 11:29:54 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8GLdYC10822 for <jm@jmason.org>;
+    Mon, 16 Sep 2002 22:39:34 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 9DDC52940CD; Mon, 16 Sep 2002 14:36:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mail.evergo.net (unknown [206.191.151.2]) by xent.com
+    (Postfix) with SMTP id 853882940C9 for <fork@xent.com>; Mon,
+    16 Sep 2002 14:35:18 -0700 (PDT)
+Received: (qmail 17526 invoked from network); 16 Sep 2002 21:38:32 -0000
+Received: from dsl.206.191.151.102.evergo.net (HELO JMHALL)
+    (206.191.151.102) by mail.evergo.net with SMTP; 16 Sep 2002 21:38:32 -0000
+Reply-To: <johnhall@evergo.net>
+From: "John Hall" <johnhall@evergo.net>
+To: <sdw@lig.net>
+Cc: <fork@spamassassin.taint.org>, <lea@lig.net>
+Subject: RE: Slaughter in the Name of God
+Message-Id: <004601c25dc9$67a436a0$0200a8c0@JMHALL>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.2627
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Importance: Normal
+In-Reply-To: <3D864AC8.60005@hpti.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 16 Sep 2002 14:38:32 -0700
+
+
+
+> From: Stephen D. Williams [mailto:swilliams@hpti.com]
+
+> 
+> Just to further weaken the food transaction argument, I'll note that
+in
+> my neighborhood, the local McDonalds won't even hand you your drink in
+> the drive through until you fork over the cash.  
+
+
+Maybe you never bought a hot dog from a street vendor.
+
+> And why is it that the margin of survival is so thin?  Could it be
+that
+> all of these tribal rivalries are part of what's holding back
+wholesale
+> movement to the modern, first world patterns of constructive thinking?
+
+Well, yes.  But it doesn't change the idea that the margin of survival
+probably IS that thin in this region.
+
+> I'm sure that both sides were ready to be the agressor.  
+
+I'm not.  I'm sure both sides were equally ready to be the aggressor
+provided they were in a predominant position of power.
+
+> Bush's reluctance to blast blind obeyance of religion as taught by
+your
+> local madrassa or KKK leader, apparently because he is fully involved
+> with the general effort to expand unfettered religiosity as the
+solution
+> to the world's ills, is disappointing.  He has spoke against madrassa,
+> but what I heard sounded lame and carefully crafted to shield religion
+> in general from scrutiny.
+
+1. Which religion and how it is currently being expressed matters.
+2. The US is trying to avoid making war on the Muslim religion.
+3. US Leadership remains reflexively multi-cultural.
+
+> We all have
+> disagreements, but at some point it becomes a crime against humanity.
+
+I didn't say burning the train was a good thing.  I said I understood it
+wasn't a spontaneous attack on people who had done no wrong.
+
+
+
+
+
+

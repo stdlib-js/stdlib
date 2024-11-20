@@ -1,0 +1,24 @@
+{
+	"string": [
+		"sep",
+		"iter",
+		"state",
+		"seed",
+		"snapshot"
+	],
+	"boolean": [
+		"help",
+		"version"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		],
+		"iter": [
+			"n"
+		]
+	}
+}

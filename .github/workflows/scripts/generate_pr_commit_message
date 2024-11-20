@@ -1,0 +1,271 @@
+#!/bin/bash
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2024 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Script to generate a commit message for a pull request.
+#
+# Usage: generate_pr_commit_message PR_NUMBER
+#
+# Arguments:
+#
+#   PR_NUMBER    Pull request number.
+#
+# Environment variables:
+#
+#   GITHUB_TOKEN   GitHub token for authentication.
+
+# Ensure that the exit status of pipelines is non-zero in the event that at least one of the commands in a pipeline fails:
+set -o pipefail
+
+
+# VARIABLES #
+
+# Get the pull request number:
+pr_number="$1"
+
+# GitHub API base URL
+GITHUB_API_URL="https://api.github.com"
+
+# Repository owner and name
+REPO_OWNER="stdlib-js"
+REPO_NAME="stdlib"
+
+
+# FUNCTIONS #
+
+# Error handler.
+#
+# $1 - error status
+on_error() {
+	echo 'ERROR: An error was encountered during execution.' >&2
+	exit "$1"
+}
+
+# Resolves a name and email using .mailmap via `git check-mailmap`, falling back to the provided values if no match is found.
+#
+# $1 - name
+# $2 - email
+resolve_name_email() {
+	local name="$1"
+	local email="$2"
+	local resolved
+
+	resolved=$(git check-mailmap "$name <$email>" 2>/dev/null)
+	if [ -n "$resolved" ]; then
+		echo "$resolved"
+	else
+		echo "$name <$email>"
+	fi
+}
+
+# Resolves GitHub handle to name and email using .mailmap.
+#
+# $1 - GitHub handle
+resolve_user() {
+	local github_handle="$1"
+	local mailmap_file=".mailmap"
+	local name_email
+
+	# Try to find a match for the GitHub handle:
+	name_email=$(grep -i "$github_handle" "$mailmap_file" | head -n 1)
+
+	if [ -n "$name_email" ]; then
+		# Extract only the first name and email pair:
+		echo "$name_email" | sed -E 's/^([^<]+)<([^>]+)>.*/\1<\2>/' | xargs
+	else
+		# If no match found, use the GitHub handle as is:
+		echo "$github_handle <$github_handle@users.noreply.github.com>"
+	fi
+}
+
+# Makes GitHub API requests.
+#
+# $1 - HTTP method (GET or POST)
+# $2 - API endpoint
+# $3 - data for POST requests
+github_api() {
+	local method="$1"
+	local endpoint="$2"
+	local data="$3"
+
+	# Initialize an array to hold curl headers:
+	local headers=()
+
+	# If GITHUB_TOKEN is set, add the Authorization header:
+	if [ -n "$GITHUB_TOKEN" ]; then
+		headers+=("-H" "Authorization: token $GITHUB_TOKEN")
+	fi
+
+	# Determine the HTTP method and construct the curl command accordingly...
+	case "$method" in
+		GET)
+			curl -s "${headers[@]}" "$GITHUB_API_URL$endpoint"
+			;;
+		POST)
+			# For POST requests, always set the Content-Type header:
+			headers+=("-H" "Content-Type: application/json")
+
+			# If data is provided, include it in the request:
+			if [ -n "$data" ]; then
+				curl -s -X POST "${headers[@]}" -d "$data" "$GITHUB_API_URL$endpoint"
+			else
+				# Handle cases where POST data is required but not provided:
+				echo "POST request requires data."
+				on_error 1
+			fi
+			;;
+		*)
+			echo "Invalid HTTP method: $method"
+			on_error 1
+			;;
+	esac
+}
+
+# Main execution sequence.
+main() {
+	# Fetch pull request details:
+	pr_details=$(github_api "GET" "/repos/$REPO_OWNER/$REPO_NAME/pulls/$pr_number")
+	pr_title=$(echo "$pr_details" | jq -r '.title')
+	pr_body=$(echo "$pr_details" | jq -r '.body // ""')
+	pr_url=$(echo "$pr_details" | jq -r '.html_url')
+	pr_author_login=$(echo "$pr_details" | jq -r '.user.login')
+
+	# Resolve the PR author's name and email using .mailmap:
+	pr_author_resolved=$(resolve_user "$pr_author_login")
+
+	# Extract reviewers:
+	pr_reviews=$(github_api "GET" "/repos/$REPO_OWNER/$REPO_NAME/pulls/$pr_number/reviews")
+	reviewers=$(echo "$pr_reviews" | jq -r '.[] | select(.state == "APPROVED" ) | .user.login' | sort -u)
+
+	# Fetch commits in the PR:
+	pr_commits=$(github_api "GET" "/repos/$REPO_OWNER/$REPO_NAME/pulls/$pr_number/commits")
+
+	# Extract co-authors from commit messages:
+	co_authors=$(echo "$pr_commits" | jq -r '.[].commit.message' | grep -Eio 'Co-authored-by:.*' | sort -u)
+	processed_co_authors=""
+	while IFS= read -r co_author_line; do
+		# Skip empty lines:
+		if [ -z "$co_author_line" ]; then
+			continue
+		fi
+		name_email=$(echo "$co_author_line" | sed -E 's/Co-authored-by:[[:space:]]*(.*)/\1/')
+		name=$(echo "$name_email" | sed -E 's/^(.*)<.*>$/\1/' | xargs)
+		email=$(echo "$name_email" | sed -E 's/^.*<(.*)>$/\1/' | xargs)
+		resolved_author=$(resolve_name_email "$name" "$email")
+
+		# Skip if the resolved author matches the resolved PR author:
+		if [ "$resolved_author" == "$pr_author_resolved" ]; then
+			continue
+		fi
+		processed_co_authors+="Co-authored-by: $resolved_author"$'\n'
+	done <<< "$co_authors"
+
+	# Extract commit authors:
+	authors_info=$(echo "$pr_commits" | jq -r '.[] | .commit.author | "\(.name) <\(.email)>"' | sort -u | sed '/^ *<.*>/d' | sed '/^$/d')
+
+	# Process commit authors:
+	commit_authors=""
+	while IFS= read -r author_line; do
+		# Skip empty lines:
+		if [ -z "$author_line" ]; then
+			continue
+		fi
+
+		# Extract name and email:
+		name=$(echo "$author_line" | sed -E 's/^(.*)<.*>$/\1/' | xargs)
+		email=$(echo "$author_line" | sed -E 's/^.*<(.*)>$/\1/' | xargs)
+
+		# Resolve name and email using .mailmap:
+		resolved_author=$(resolve_name_email "$name" "$email")
+
+		# Skip if the resolved author matches the resolved PR author:
+		if [ "$resolved_author" == "$pr_author_resolved" ]; then
+			continue
+		fi
+
+		commit_authors+="$resolved_author"$'\n'
+	done <<< "$authors_info"
+
+	# Remove any empty lines and duplicates:
+	commit_authors=$(echo "$commit_authors" | sort -u | sed '/^$/d')
+
+	# Prefix with 'Co-authored-by: ' if not empty:
+	if [ -n "$commit_authors" ]; then
+		commit_authors=$(echo "$commit_authors" | sed 's/^/Co-authored-by: /' | sort -u)
+	fi
+
+	# Combine co-authors and commit authors, removing empty lines:
+	all_co_authors=$(echo -e "$processed_co_authors\n$commit_authors" | sed '/^\s*$/d' | sort -u)
+
+	# Extract 'Signed-off-by' lines from commits:
+	signed_off_bys=$(echo "$pr_commits" | jq -r '.[].commit.message' | grep -Eio 'Signed-off-by:.*' | sort -u)
+
+	# Extract linked issues from PR body (e.g., #123):
+	issue_numbers=$(echo "$pr_body" | grep -oE '#[0-9]+' | grep -oE '[0-9]+' | sort | uniq)
+	closes_issues=""
+	ref_issues=""
+
+	# GitHub-supported closing keywords:
+	closing_keywords=("close" "closes" "closed" "fix" "fixes" "fixed" "resolve" "resolves" "resolved")
+
+	# Create a regex pattern from the keywords:
+	keywords_pattern=$(IFS='|'; echo "${closing_keywords[*]}")
+
+	for issue in $issue_numbers; do
+		if echo "$pr_body" | grep -Eiq "(${keywords_pattern})([[:space:]]+|:)[[:space:]]*#${issue}\b"; then
+			closes_issues+="Closes: https://github.com/$REPO_OWNER/$REPO_NAME/issues/$issue\n"
+		else
+			ref_issues+="Ref: https://github.com/$REPO_OWNER/$REPO_NAME/issues/$issue\n"
+		fi
+	done
+	closes_issues=$(echo -e "$closes_issues" | sed '$ s/\n$//')
+	ref_issues=$(echo -e "$ref_issues" | sed '$ s/\n$//')
+
+	# Assemble commit message components:
+	commit_subject="$pr_title"
+	commit_body="PR-URL: $pr_url"
+
+	if [ -n "$closes_issues" ]; then
+		commit_body+="\n$closes_issues"
+	fi
+	if [ -n "$ref_issues" ]; then
+		commit_body+="\n$ref_issues"
+	fi
+	commit_body+="\n"
+	if [ -n "$all_co_authors" ]; then
+		commit_body+="\n$all_co_authors"
+	fi
+	for reviewer in $reviewers; do
+		resolved_reviewer=$(resolve_user "$reviewer")
+		commit_body+="\nReviewed-by: $resolved_reviewer"
+	done
+
+	# Include Signed-off-by lines if present in the commits:
+	if [ -n "$signed_off_bys" ]; then
+		commit_body+="\n$signed_off_bys"
+	fi
+
+	# Combine subject and body:
+	commit_message="$commit_subject\n\n$commit_body"
+
+	# Output the commit message:
+	echo -e "$commit_message"
+}
+
+# Call main with all command-line arguments:
+main "$@"

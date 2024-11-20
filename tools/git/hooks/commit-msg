@@ -1,0 +1,86 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2023 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# A Git hook called after a developer writes a commit message. If this scripts exits with a non-zero status, the commit will be aborted.
+#
+# This hook is called with the following arguments:
+#
+# -   `$1`: path to temporary file containing the commit message written by the developer
+
+# shellcheck disable=SC2181
+
+
+# VARIABLES #
+
+# Resolve environment variables:
+skip_lint="${SKIP_LINT_COMMIT}"
+
+# Get the path to a file containing the commit message:
+commit_message="$1"
+
+
+# FUNCTIONS #
+
+# Defines an error handler.
+#
+# $1 - error status
+on_error() {
+	cleanup
+	exit "$1"
+}
+
+# Runs clean-up tasks.
+cleanup() {
+	echo '' >&2
+}
+
+# Runs initialization tasks.
+init() {
+	return 0
+}
+
+# Lints a commit message.
+lint() {
+	if [[ -z "${skip_lint}" ]]; then
+		make FILES="${commit_message}" lint-commit-files > /dev/null >&2
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Git commit message lint errors.' >&2
+			return 1
+		fi
+	fi
+
+	return 0
+}
+
+# Main execution sequence.
+main() {
+	init
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+	lint
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+	cleanup
+	exit 0
+}
+
+# Run main:
+main

@@ -1,0 +1,140 @@
+From rssfeeds@jmason.org  Tue Oct  8 10:55:33 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 2B90016F18
+	for <jm@localhost>; Tue,  8 Oct 2002 10:55:27 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 08 Oct 2002 10:55:27 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g98805K06013 for
+    <jm@jmason.org>; Tue, 8 Oct 2002 09:00:05 +0100
+Message-Id: <200210080800.g98805K06013@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: diveintomark <rssfeeds@spamassassin.taint.org>
+Subject: My Good Easy
+Date: Tue, 08 Oct 2002 08:00:04 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://diveintomark.org/archives/2002/10/07.html#my_good_easy
+Date: 2002-10-07T17:59:05-05:00
+
+_Joe Gregorio_: My next pet project[1]. &#8220;Trying to re-create the "Good 
+Easy[2]" on a Windows machine.&#8221; I have also made half-hearted attempts in 
+this direction, as I am forced to use Windows during the day. I say 
+half-hearted because I'm still application-centric, and I don't go as far with 
+keyboard shortcuts as I could. But I don't use the desktop at all (never have, 
+on any system), and I don't use ctrl alt keyboard shortcuts because I 
+personally find them awkward (YMMV). If you must use Windows, the first step 
+towards a productive system is managing your Start menu. 
+
+I use the main level of the Start menu with numbered shortcuts to my most 
+common programs. "0 Control Panel[3]", "1 Mozilla[4]", "2 Emacs[5]", "3 DOS 
+home", "4 DOS work", "5 DOS incoming" (each of which gives me a command line, 
+but in different directories), "7 Python[6]", "9 IE". Also "# Explorer home", 
+"$ Explorer work", "% Explorer incoming", which open Explorer windows in 
+various useful directories (the same directories as the DOS shortcuts, only 
+with the shift key held down, and yes, I intentionally set it up so that $ went 
+to my work folder). Less-used programs are taken out of their useless submenus 
+(as installed) and moved directly into the Programs submenu and given unique 
+first letters as needed. "Ad-aware[7]", "Excel[8]", "IM", "Netscape 4[9]", 
+"Paint Shop Pro", "Query Tool (ODBC)[10]", "VMWare[11]", "Word[12]". All other 
+submenus except Startup are removed from the Programs menu. (Yes, delete 
+"Accessories". Do you honestly ever use it? If so, it's probably a sign of a 
+larger productivity problem.) Things which never need to be run manually (like 
+WinZip and Quicktime) are removed from the Programs menu. Maintaining a clean 
+Programs menu is an ongoing struggle, but well worth it. 
+
+On most modern keyboards, there is a key next to your left alt key that opens 
+the start menu, which you can press with your left thumb without taking your 
+fingers off the home keys. Otherwise ctrl esc always works. Menu 4 gives me a 
+new command prompt in my work directory. Menu P N runs Netscape 4 (for 
+compatibility testing in my day job, ugh). Mozilla and Emacs are almost always 
+open, but I quit lesser-used applications as soon as I'm done using them 
+(mostly because my laptop doesn't have a lot of memory). 
+
+I install Cygwin[13] so that the command line is actually useful. Cygwin is a 
+collection of Windows ports of all your favorite UNIX utilities, including mv, 
+cp, scp, ssh, man, tar, less, grep, patch, ncftp, cvs, and many others. And 
+bash, which I don't use because I dislike how it handles Windows pathnames. I 
+also set the properties of my command line shortcuts to set the window size to 
+120 x 50 (almost full screen at 1024 x 768), and screen buffer size to 120 x 
+3000. Set window position at 0 x 0, and don't let the system position the 
+window. 
+
+In Mozilla, I set my home page to "about:blank", set Internet Search to search 
+with Google, use Tabbed Browsing, open tabs instead of windows in all possible 
+cases, always show the tab bar, and load links in the background (essential for 
+weblog surfing, you can ctrl click links to open them in new tabs in the 
+background). Under Scripts & Plugins, I do not allow scripts to open 
+unrequested windows. I turn off the sidebar, turn on the Site Navigation Bar, 
+delete all pre-installed bookmarks, and create two bookmarks: one which takes 
+me to my webmail, and another which takes me to my internal site search[14], 
+from which I can find all other bookmarks I need. 
+
+In Internet Explorer, I set my home page to the page to edit my weblog, since 
+that's the only thing I do in Internet Explorer. alt tab back and forth between 
+Mozilla and IE is easier than ctrl pgup/pgdown between tabs within Mozilla, 
+since TEXTAREAs in Mozilla lose focus when you switch tabs, making copying and 
+pasting weblog entries virtually impossible. 
+
+I use Emacs locally and vi remotely, because the default behavior of Emacs is 
+so heinous as to render it unusable. (For instance, editing a CGI script named 
+foo.cgi on a web server with Emacs would generate a foo.cgi~ backup file, which 
+is world-readable and is sent as plain text to any browser that asks. Try this 
+sometime on your favorite web site.) Among other things, my .emacs file (which 
+is actually called _emacs on Windows) instructs Emacs to store all backup files 
+in a single directory (d:\backup); to treat all XML files as DocBook, all CGI 
+scripts as Python, and all SQL scripts as PL/SQL; to use Cygwin's bash shell 
+for M-x-shell; to use a single maximized frame with no menubar, titled as the 
+name of the current file; to show column numbers; to accept "y" and "n" for 
+yes/no questions; not to blink; not to beep; and to close the current file when 
+I press M-w. I use some weird registry hacks and a hacked notepad.exe to get 
+all text files to open in Emacs. (I got this idea from Ultraedit[15].) My 
+_emacs file is my second most backed-up possession. 
+
+I don't use Windows' useless directory structure for user home directories. On 
+my D drive I have d:\home (contains directories for my books and other personal 
+projects, each under CVS control&#8212;also set as my home directory using the 
+HOME environment variable), d:\work (contains directories for each work 
+project, also under CVS), d:\incoming (set as default download directory for 
+all programs that download things), and d:\backup (used by Emacs, and for 
+temporary storage, for instance for storing originals when checking out newly 
+created CVS projects). I don't know or care what's where on my C drive. 
+
+I have tried many, many address books, and still store all my contacts, email 
+addresses, snail mail addresses, phone numbers, and other vital personal 
+information in a text file called phone, stored in d:\home\phone. It is not in 
+any particular format, other than being plain text and usually including blank 
+lines between entries. I categorize people with simple keywords in parentheses 
+after their name, and use M-x-occur in Emacs to search by keyword. This file is 
+my single most backed-up possession. 
+
+Other essential free Windows utilities I use (in no particular order): TweakUI
+[16], Cygwin[17], Guidescope[18], ZoneAlarm[19].
+
+
+
+[1]  http://bitworking.org/Oct2002.html#X631695997519494480
+[2]  http://www.winterspeak.com/columns/082001.html
+[3]  http://www.annoyances.org/exec/show/article02-013
+[4]  http://www.mozilla.org/
+[5]  http://www.gnu.org/software/emacs/windows/ntemacs.html
+[6]  http://www.activestate.com/Products/ActivePython/
+[7]  http://www.lavasoftusa.com/
+[8]  http://www.openoffice.org/
+[9]  http://sillydog.org/narchive/
+[10] http://gpoulose.home.att.net/
+[11] http://www.vmware.com/
+[12] http://www.openoffice.org/
+[13] http://www.cygwin.com/
+[14] http://diveintomark.org/mt/mt-search.cgi
+[15] http://www.ultraedit.com/downloads/index.html#notepad
+     Replacing Notepad with Ultraedit-32
+[16] http://www.microsoft.com/ntworkstation/downloads/PowerToys/Networking/NTTweakUI.asp
+[17] http://www.cygwin.com/
+[18] http://www.guidescope.com/
+[19] http://download.com.com/3000-2092-10039884.html?part=zonealarm&subj=dlpage
+
+

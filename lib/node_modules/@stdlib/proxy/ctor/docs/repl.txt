@@ -1,0 +1,117 @@
+
+{{alias}}( target, handlers )
+    Returns a proxy object implementing custom behavior for specified object
+    operations.
+
+    The following "traps" are supported:
+
+    - getPrototypeOf( target )
+        Trap for `Object.getPrototypeOf()`. Can be used to intercept the
+        `instanceof` operator. The method must return an object or `null`.
+
+    - setPrototypeOf( target, prototype )
+        Trap for `Object.setPrototypeOf()`. The method must return a boolean
+        indicating if prototype successfully set.
+
+    - isExtensible( target )
+        Trap for `Object.isExtensible()`. The method must return a boolean.
+
+    - preventExtensions( target )
+        Trap for `Object.preventExtensions()`. The method must return a boolean.
+
+    - getOwnPropertyDescriptor( target, property )
+        Trap for `Object.getOwnPropertyDescriptor()`. The method must return an
+        object or `undefined`.
+
+    - defineProperty( target, property, descriptor )
+        Trap for `Object.defineProperty()`. The method must return a boolean
+        indicating whether the operation succeeded.
+
+    - has( target, property )
+        Trap for the `in` operator. The method must return a boolean.
+
+    - get( target, property, receiver )
+        Trap for retrieving property values. The method can return any value.
+
+    - set( target, property, value, receiver )
+        Trap for setting property values. The method should return a boolean
+        indicating whether assignment succeeded.
+
+    - deleteProperty( target, property )
+        Trap for the `delete` operator. The method must return a boolean
+        indicating whether operation succeeded.
+
+    - ownKeys( target )
+        Trap for `Object.keys`, `Object.getOwnPropertyNames()`, and
+        `Object.getOwnPropertySymbols()`. The method must return an enumerable
+        object.
+
+    - apply( target, thisArg, argumentsList )
+        Trap for a function call. The method can return any value.
+
+    - construct( target, argumentsList, newTarget )
+        Trap for the `new` operator. The method must return an object.
+
+    All traps are optional. If a trap is not defined, the default behavior is to
+    forward the operation to the target.
+
+    Parameters
+    ----------
+    target: Object
+        Object which the proxy virtualizes.
+
+    handlers: Object
+        Object whose properties are functions which define the behavior of the
+        proxy when performing operations.
+
+    Returns
+    -------
+    p: Object
+        Proxy object.
+
+    Examples
+    --------
+    > function get( obj, prop ) { return obj[ prop ] * 2.0 };
+    > var h = { 'get': get };
+    > var p = new {{alias}}( {}, h );
+    > p.a = 3.14;
+    > p.a
+    6.28
+
+
+{{alias}}.revocable( target, handlers )
+    Returns a revocable proxy object.
+
+    Parameters
+    ----------
+    target: Object
+        Object which the proxy virtualizes.
+
+    handlers: Object
+        Object whose properties are functions which define the behavior of the
+        proxy when performing operations.
+
+    Returns
+    -------
+    p: Object
+        Revocable proxy object.
+
+    p.proxy: Object
+        Proxy object.
+
+    p.revoke: Function
+        Invalidates a proxy, rendering a proxy object unusable.
+
+    Examples
+    --------
+    > function get( obj, prop ) { return obj[ prop ] * 2.0 };
+    > var h = { 'get': get };
+    > var p = {{alias}}.revocable( {}, h );
+    > p.proxy.a = 3.14;
+    > p.proxy.a
+    6.28
+    > p.revoke();
+
+    See Also
+    --------
+

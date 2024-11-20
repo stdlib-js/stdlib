@@ -1,0 +1,33 @@
+
+{{alias}}( str )
+    Tests whether a string contains only white space characters.
+
+    A white space character is defined as one of the 25 characters defined as a
+    white space ("WSpace=Y","WS") character in the Unicode 9.0 character
+    database, as well as one related white space character without the Unicode
+    character property "WSpace=Y" (zero width non-breaking space which was
+    deprecated as of Unicode 3.2).
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a string contains only white space
+        characters.
+
+    Examples
+    --------
+    > var bool = {{alias}}( '       ' )
+    true
+    > bool = {{alias}}( 'abcdef' )
+    false
+    > bool = {{alias}}( '' )
+    false
+
+    See Also
+    --------
+

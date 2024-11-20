@@ -1,0 +1,28 @@
+
+userDoc( alias, [ref,] doc )
+    Adds user-defined documentation.
+
+    If user-defined documentation already exists for the provided alias, the
+    current documentation is overwritten.
+
+    Parameters
+    ----------
+    alias: string
+        Documentation alias.
+
+    ref: any (optional)
+        Object reference.
+
+    doc: string
+        Documentation.
+
+    Examples
+    --------
+    > function foo() {};
+    > userDoc( 'foo', foo, '\nfoo()\n    Foo bar.\n' );
+    > help( foo )
+
+    See Also
+    --------
+    help
+

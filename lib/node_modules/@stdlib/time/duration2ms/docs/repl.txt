@@ -1,0 +1,41 @@
+
+{{alias}}( str )
+    Converts a duration string to milliseconds.
+
+    A duration string is a string containing a sequence of time units. A time
+    unit is a nonnegative integer followed by a unit identifier. The following
+    unit identifiers are supported:
+
+    - d: days.
+    - h: hours.
+    - m: minutes.
+    - s: seconds.
+    - ms: milliseconds.
+
+    For example, the string `1m3s10ms` is a duration string containing three
+    time units: `1m` (1 minute), `3s` (3 seconds), and `10ms` (10 milliseconds).
+    The string `60m` is a duration string containing a single time unit: `60m`
+    (60 minutes).
+
+    Duration strings are case insensitive. For example, the string `1M3S10MS` is
+    equivalent to `1m3s10ms`.
+
+    Parameters
+    ----------
+    str: string
+        Duration string.
+
+    Returns
+    -------
+    out: integer
+        Number of milliseconds.
+
+    Examples
+    --------
+    > var ms = {{alias}}( '1d' )
+    86400000
+    > ms = {{alias}}( '1d2h3m4s5ms' )
+    93784005
+
+    See Also
+    --------

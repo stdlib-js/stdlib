@@ -1,0 +1,44 @@
+
+{{alias}}( arr, initial, reducer[, thisArg] )
+    Reduces the number of dimensions by one of a two-dimensional nested array by
+    applying a function against an accumulator and each element along the
+    innermost dimension and returning the accumulation results as a one-
+    dimensional array.
+
+    The applied function is provided the following arguments:
+
+    - accumulator: accumulated value.
+    - value: array element.
+    - indices: current array element indices.
+    - arr: input array.
+
+    Parameters
+    ----------
+    arr: ArrayLikeObject<ArrayLikeObject>
+        Input array of arrays.
+
+    initial: ArrayLikeObject
+        Initial values. Must have a length equal to the size of the outermost
+        input array dimension.
+
+    reducer: Function
+        Function to apply.
+
+    thisArg: any (optional)
+        Input function context.
+
+    Returns
+    -------
+    out: Array
+        Accumulation results.
+
+    Examples
+    --------
+    > var f = {{alias:@stdlib/utils/nary-function}}( {{alias:@stdlib/math/base/ops/add}}, 2 );
+    > var arr = [ [ 1, 2, 3 ], [ 4, 5, 6 ] ];
+    > var out = {{alias}}( arr, [ 0, 0 ], f )
+    [ 6, 15 ]
+
+    See Also
+    --------
+

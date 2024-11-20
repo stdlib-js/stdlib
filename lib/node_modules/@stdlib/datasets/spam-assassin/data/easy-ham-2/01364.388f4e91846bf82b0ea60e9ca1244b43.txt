@@ -1,0 +1,102 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Fri Aug  9 15:23:31 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C1654440E1
+	for <jm@localhost>; Fri,  9 Aug 2002 10:22:11 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:22:11 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79EGPb05753 for
+    <jm-sa@jmason.org>; Fri, 9 Aug 2002 15:16:25 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id PAA07051 for
+    <jm-sa@jmason.org>; Fri, 9 Aug 2002 15:13:19 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17dAUl-0007kD-00; Fri,
+    09 Aug 2002 07:12:03 -0700
+Received: from horus.webmotion.com ([209.87.243.246]
+    helo=horus.webmotion.ca) by usw-sf-list1.sourceforge.net with esmtp
+    (Cipher TLSv1:DES-CBC3-SHA:168) (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17dAUT-0004zZ-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Fri, 09 Aug 2002 07:11:46 -0700
+Received: from localhost.localdomain (peck.sys.lan [10.0.2.139]) by
+    horus.webmotion.ca (8.12.3/8.12.3/Debian -4) with ESMTP id g79EBdrR007366
+    for <spamassassin-talk@lists.sourceforge.net>; Fri, 9 Aug 2002 10:11:39
+    -0400
+Subject: Re: [SAtalk] Multiple regular expression
+From: Benoit Peccatte <benoit.peccatte@webmotion.com>
+To: spamassassin-talk@example.sourceforge.net
+In-Reply-To: <20020806202250.GK1042@kluge.net>
+References: <1028662171.635.76.camel@peck> <20020806202250.GK1042@kluge.net>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.5
+Message-Id: <1028902217.418.12.camel@peck>
+MIME-Version: 1.0
+X-Virus-Scanned: by amavisd-milter (http://amavis.org/)
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: 09 Aug 2002 10:10:17 -0400
+Date: 09 Aug 2002 10:10:17 -0400
+
+Thank you for this help. I will change the score of
+FROM_AND_TO_SAME rule to be higher.
+
+Benoit Peccatte
+
+PS: I've noticed that the reply-to is not fixed to your mailing-list
+is this normal ?
+
+On Tue, 2002-08-06 at 16:22, Theo Van Dinter wrote:
+> On Tue, Aug 06, 2002 at 03:29:30PM -0400, Benoit Peccatte wrote:
+> > I would like to add a rule to spamassassin to compare 2 header lines.
+> > By example match mails in which To: equals From:
+> > 
+> > I don't think it is possible with a single regular expression.
+> > Can I use one after one other ?
+> > Does anobody have an idea ?
+> 
+> You would have to make an Eval test that retrieves both header and
+> compares them.
+> 
+> BTW:
+> header FROM_AND_TO_SAME                eval:check_for_from_to_equivalence()
+> describe FROM_AND_TO_SAME      From and To the same address
+> 
+> :)
+> 
+> -- 
+> Randomly Generated Tagline:
+> It really doesn't bother me if people want to use grep or map in a void
+>  context.  It didn't bother me before there was a for modifier, and
+>  now that there is one, it still doesn't bother me.  I'm just not very
+>  easy to bother.
+>               -- Larry Wall in <199911012346.PAA25557@kiev.wall.org>
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

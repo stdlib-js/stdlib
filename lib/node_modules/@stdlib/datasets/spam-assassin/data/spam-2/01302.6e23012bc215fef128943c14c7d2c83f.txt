@@ -1,0 +1,34 @@
+From joeoli6653@earthlink.net  Tue Aug  6 11:05:25 2002
+Return-Path: <joeoli6653@earthlink.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8B84844146
+	for <jm@localhost>; Tue,  6 Aug 2002 05:57:15 -0400 (EDT)
+Received: from mail.webnote.net [193.120.211.219]
+	by localhost with POP3 (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 10:57:15 +0100 (IST)
+Received: from cenadi_srv2.cenadi.mep.go.cr ([208.165.53.172])
+	by webnote.net (8.9.3/8.9.3) with ESMTP id CAA16347
+	for <jm@netnoteinc.com>; Tue, 6 Aug 2002 02:11:17 +0100
+Date: Tue, 6 Aug 2002 02:11:17 +0100
+From: joeoli6653@earthlink.net
+Message-Id: <200208060111.CAA16347@webnote.net>
+Received: from rojn (1Cust15.tnt24.tpa2.da.uu.net [67.209.208.15]) by cenadi_srv2.cenadi.mep.go.cr with SMTP (Microsoft Exchange Internet Mail Service Version 5.5.2653.13)
+	id Q1PADS58; Mon, 5 Aug 2002 18:55:27 -0600
+Subject: Work at Home
+To: undisclosed-recipients:;
+Content-Type: text/html
+
+<!-- saved from url=(0022)http://internet.e-mail -->
+<html>
+<body>
+<p align="center"><a href="http://211.141.66.70:10211/">
+<img border="0" src="http://www.homebizcom.net/images/homebiz8.gif" width="462" height="298"></a></p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">To be removed from our subscriber list please
+<a href="http://211.141.66.70:10211/remove.htm">click here</a></p>
+<p align="center">&nbsp;</p>
+</body>
+</html>23
+

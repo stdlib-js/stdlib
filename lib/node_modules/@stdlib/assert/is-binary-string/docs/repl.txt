@@ -1,0 +1,26 @@
+
+{{alias}}( value )
+    Tests if a value is a binary string.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is a binary string.
+
+    Examples
+    --------
+    > var bool = {{alias}}( '1000101' )
+    true
+    > bool = {{alias}}( 'beep' )
+    false
+    > bool = {{alias}}( '' )
+    false
+
+    See Also
+    --------
+

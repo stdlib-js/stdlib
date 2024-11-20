@@ -1,0 +1,45 @@
+
+{{alias}}()
+    Returns an accumulator function which incrementally computes a statistical
+    summary.
+
+    If provided a value, the accumulator function returns an updated summary. If
+    not provided a value, the accumulator function returns the current summary.
+
+    The returned summary is an object containing the following fields:
+
+    - count: count.
+    - max: maximum value.
+    - min: minimum value.
+    - range: range.
+    - midrange: mid-range.
+    - sum: sum.
+    - mean: arithmetic mean.
+    - variance: unbiased sample variance.
+    - stdev: corrected sample standard deviation.
+    - skewness: corrected sample skewness.
+    - kurtosis: corrected sample excess kurtosis.
+
+    For long running accumulations or accumulations of large numbers, care
+    should be taken to prevent overflow.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}();
+    > var s = accumulator()
+    {}
+    > s = accumulator( 2.0 )
+    {...}
+    > s = accumulator( -5.0 )
+    {...}
+    > s = accumulator()
+    {...}
+
+    See Also
+    --------
+

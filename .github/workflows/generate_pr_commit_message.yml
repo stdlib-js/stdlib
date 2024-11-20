@@ -1,0 +1,90 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2024 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: generate_pr_commit_message
+
+# Workflow triggers:
+on:
+  pull_request_target:
+    types:
+      - labeled
+
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
+  # Allow write access to issues, assignees, labels, and milestones:
+  issues: write
+
+  # Allow write access to pull requests:
+  pull-requests: write
+
+# Workflow jobs:
+jobs:
+
+  # Job to generate commit message draft:
+  generate-commit-message:
+
+    # Define a display name:
+    name: 'Generate PR Commit Message Draft'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Ensure the job only runs when the specified label is added:
+    if: github.event.label.name == 'Ready to Merge'
+
+    # Define environment variables:
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      PR_NUMBER: ${{ github.event.pull_request.number }}
+
+    # Define the sequence of job steps...
+    steps:
+      # Checkout repository:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v4
+        with:
+          # Fetch all commits to ensure we have the full commit history:
+          fetch-depth: 0
+
+      # Generate commit message:
+      - name: 'Generate commit message'
+        id: commit_message
+        run: |
+          COMMIT_MESSAGE=$($GITHUB_WORKSPACE/.github/workflows/scripts/generate_pr_commit_message $PR_NUMBER)
+          echo "commit_message<<EOF" >> $GITHUB_OUTPUT
+          echo "$COMMIT_MESSAGE" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      # Post commit message as PR comment:
+      - name: 'Post commit message as PR comment'
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            ### PR Commit Message
+
+            ```text
+            ${{ steps.commit_message.outputs.commit_message }}
+            ```
+
+            *Please review the above commit message and make any necessary adjustments.*

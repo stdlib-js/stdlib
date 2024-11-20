@@ -1,0 +1,117 @@
+From fork-admin@xent.com  Mon Jul 22 19:50:44 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id AF797440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 14:50:42 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 19:50:42 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MHD5432336 for
+    <jm@jmason.org>; Mon, 22 Jul 2002 18:13:05 +0100
+Received: from xent.com ([64.161.22.236]) by webnote.net (8.9.3/8.9.3)
+    with ESMTP id SAA00836 for <jm@jmason.org>; Mon, 22 Jul 2002 18:05:07
+    +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id A758629409D; Mon, 22 Jul 2002 09:55:11 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from axiom.braindust.com (axiom.braindust.com [64.69.71.79]) by
+    xent.com (Postfix) with ESMTP id 0A8DC294098 for <fork@xent.com>;
+    Mon, 22 Jul 2002 09:54:03 -0700 (PDT)
+X-Envelope-To: fork@spamassassin.taint.org
+Received: from localhost (muses.westel.com [204.244.110.7]) (authenticated
+    (0 bits)) by axiom.braindust.com (8.12.5/8.11.6) with ESMTP id
+    g6MH3Tds008943 (using TLSv1/SSLv3 with cipher EDH-RSA-DES-CBC3-SHA (168
+    bits) verified NO); Mon, 22 Jul 2002 10:03:29 -0700
+Subject: Re: voice applications - how does joe-sixpack build one?
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+MIME-Version: 1.0 (Apple Message framework v482)
+Cc: <fork@spamassassin.taint.org>
+To: "Mr. FoRK" <fork_list@hotmail.com>
+From: Ian Andrew Bell <hello@ianbell.com>
+In-Reply-To: <DAV63XuPQTkGM4ps7ry0000e530@hotmail.com>
+Message-Id: <DFDC89FF-9D94-11D6-82B7-0030657C53EA@ianbell.com>
+Content-Transfer-Encoding: 7bit
+X-Mailer: Apple Mail (2.482)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 22 Jul 2002 10:02:58 -0700
+
+
+Look at my friend Jonathan's company, VOXEO.  Unless you're going 
+to run out and build a platform that executes Voice XML code and 
+can support IMAP etc. then the easiest way to do this is to 
+leverage VOXEO's service.  You can start building on it for free 
+and you will pay > $0.10 per minute for the pleasure of 
+using/testing the service.
+
+http://www.voxeo.com
+
+If you have about $50K to throw at the project then you can look at 
+NUANCE, which has a platform that combines VoiceXML/VXML, Speech 
+Reco, and the L&H speech synthesize, which will allow you to have 
+your email read to you by Stephen Hawking.
+
+TellMe & BeVocal have off-the-shelf services that do this, though, 
+but from my testing, they suck.
+
+If I were to build this I'd spec a lightweight IMAP client and 
+VoiceXML browser and dump them on VOXEO.
+
+However, you'll find this to be extremely slow and frustrating.  
+Better to us a screen phone with a WAP client.
+
+-Ian.
+
+On Wednesday, July 17, 2002, at 09:53 PM, Mr. FoRK wrote:
+
+
+> I was talking to a friend today about voice applications - using a 
+> phone to
+> get mail or info (other things are possible, but that's what we talked
+> about).
+> He's running a mail server called X-Mail (or something) and it has 
+> a Web UI
+> written with some PHP pages. I made the comment that rending an inbox
+> listing with VoxML (or whatever the latest thing is) would be 
+> trivial & with
+> a little playing around you could do a simple voice app to 
+> monitor & admin
+> the mail server, or you could actually get/send mail this way.
+>
+> The hard part is hooking up to the phone system - how do I get a 
+> phone to
+> hit a 'voice app server' that hits the HTTP+VOX enabled mail server?
+> He'd want to give this back as open source, but there is no 
+> corresponding
+> open source voice server - or is there?
+>
+> I've looked at BeVocal - it seems that Talk2 is toast - does 
+> anybody know
+> how else this could be done?
+>
+> I'd love to see a digital answering machine with some speech 
+> recognition
+> built-in that would proxy into a personal computer for contact 
+> lists & mail
+> & whatnot. I could call /my/ home phone and bounce out to the web or do
+> whatever, without needing a publicly available voice server.
+>
+>
+> http://xent.com/mailman/listinfo/fork
+
+
+http://xent.com/mailman/listinfo/fork
+
+

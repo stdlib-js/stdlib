@@ -1,0 +1,75 @@
+From ilug-admin@linux.ie  Fri Sep  6 11:40:51 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id CDED116F18
+	for <zzzz@localhost>; Fri,  6 Sep 2002 11:39:11 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Fri, 06 Sep 2002 11:39:11 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g869rbC29317 for
+    <zzzz-ilug@spamassassin.taint.org>; Fri, 6 Sep 2002 10:53:37 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id XAA19032 for <zzzz-ilug@spamassassin.taint.org>;
+    Thu, 5 Sep 2002 23:31:39 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id XAA12567; Thu, 5 Sep 2002 23:30:20 +0100
+Received: from omta03.mta.everyone.net (sitemail3.everyone.net
+    [216.200.145.37]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id XAA12494
+    for <ilug@linux.ie>; Thu, 5 Sep 2002 23:29:54 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host sitemail3.everyone.net
+    [216.200.145.37] claimed to be omta03.mta.everyone.net
+Received: from sitemail.everyone.net (dsnat [216.200.145.62]) by
+    omta03.mta.everyone.net (Postfix) with ESMTP id 9B4DD4B332 for
+    <ilug@linux.ie>; Thu,  5 Sep 2002 15:17:36 -0700 (PDT)
+Received: by sitemail.everyone.net (Postfix, from userid 99) id 822B53942;
+    Thu,  5 Sep 2002 15:17:36 -0700 (PDT)
+Content-Type: text/plain
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.41 (Entity 5.404)
+Date: Thu, 5 Sep 2002 15:17:36 -0700 (PDT)
+From: eric nichols <matchsprint@trackbike.com>
+To: ilug@linux.ie
+Reply-To: matchsprint@trackbike.com
+X-Originating-Ip: [194.145.128.31]
+Message-Id: <20020905221736.822B53942@sitemail.everyone.net>
+Subject: [ILUG] PCTel modules
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Hello again. I tried all the suggestions for the PCTel driver and at the end of it, everything still goes smoothly until I type "make" after I get the output from the ./configure. 
+
+However, there were a couple of things I noticed along the way. After typing 
+* cp configs/kernel-2.4...config .config
+* make oldconfig
+* make dep
+The 2nd to last line I got back said that the modversions.h file was not updated. When I looked at this path to the modversions.h file, it was 281 lines and every line started with a # mark. Is it the case that nothing is read on a line after a # mark (or am I just thinking of another language?) and so should I delete the # at certain places?
+
+Also, when I was in the pctel directory and typed "make", I noticed that a different subdirectory is taken to a different modversions.h file. Inside this other file, there's nothing at all. And so I moved the modversions.h file with 281 lines to the empty modversions.h file - and got a different reply after "make". The output after I moved the file over mostly looked like this:
+/usr/src/linux-2.4.18-3/linux/modversions.h:11:33: linux/modules/adb.ver: No such file or directory
+/usr/src/linux-2.4.18-3/linux/modversions.h:12:37: linux/modules/af_ax25.ver: No such file or directory
+/usr/src/linux-2.4.18-3/linux/modversions.h:13:36: linux/modules/af_ipx.ver: No such file or directory
+
+The odd lines being the path and the first half of the other lines are what's written after the # in the modversions.h file. Should there be a file at each of these (one at each of the 281 lines of the file) that I'd have to compile/make?
+
+It's taken plenty of elbow grease, but I'm glad it hasn't gone smoothly, it's a good learning experience. Again, any help is appreciated. Thanks, Eric
+
+_____________________________________________________________
+email services provided by trackbike.com, your source for alleycat and trackbike photos. submissions welcome.
+
+_____________________________________________________________
+Promote your group and strengthen ties to your members with email@yourgroup.org by Everyone.net  http://www.everyone.net/?btn=tag
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

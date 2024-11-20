@@ -1,0 +1,98 @@
+From fork-admin@xent.com  Tue Sep 24 10:49:32 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id BFC3F16F03
+	for <jm@localhost>; Tue, 24 Sep 2002 10:49:31 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 24 Sep 2002 10:49:31 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8O3I2C18539 for <jm@jmason.org>;
+    Tue, 24 Sep 2002 04:18:02 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id ABDDA2940E4; Mon, 23 Sep 2002 20:14:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from homer.perfectpresence.com (unknown [209.123.207.194]) by
+    xent.com (Postfix) with ESMTP id 48A7429409A for <fork@xent.com>;
+    Mon, 23 Sep 2002 20:13:37 -0700 (PDT)
+Received: from adsl-157-233-109.jax.bellsouth.net ([66.157.233.109]
+    helo=regina) by homer.perfectpresence.com with smtp (Exim 3.36 #1) id
+    17tfF3-0005jq-00; Mon, 23 Sep 2002 22:16:01 -0400
+From: "Geege Schuman" <geege@barrera.org>
+To: "Bill Humphries" <bill@whump.com>, <fork@spamassassin.taint.org>
+Subject: RE: Goodbye Global Warming
+Message-Id: <ILEHJNJFPDLMDEKNIAKCIEJKCAAA.geege@barrera.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2800.1106
+Importance: Normal
+In-Reply-To: <4CD47AE0-CF61-11D6-B8C1-003065F62CD6@whump.com>
+X-Antiabuse: This header was added to track abuse, please include it with
+    any abuse report
+X-Antiabuse: Primary Hostname - homer.perfectpresence.com
+X-Antiabuse: Original Domain - xent.com
+X-Antiabuse: Originator/Caller UID/GID - [0 0] / [0 0]
+X-Antiabuse: Sender Address Domain - barrera.org
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 23 Sep 2002 22:12:56 -0400
+
+funny. i read it as green = red, as in accounting, as in fiscally
+irresponsible.  which do you think is the worse indictment - overregulation
+or overspending?  there are many (dickheads) who buy into the
+neo-conservative media's (fox's) definiton of "liberal" as "one who seeks to
+impose both."
+
+hannity and glove.
+
+best quote, wish i could remember who said it: "we tend to describe our own
+party by its ideals and our opponents' party by its reality."
+
+geege
+
+-----Original Message-----
+From: fork-admin@xent.com [mailto:fork-admin@xent.com]On Behalf Of Bill
+Humphries
+Sent: Monday, September 23, 2002 10:00 PM
+To: fork@spamassassin.taint.org
+Subject: Re: Goodbye Global Warming
+
+
+On Monday, September 23, 2002, at 03:25 PM, R. A. Hettinga wrote:
+
+>          Green = Red.
+
+		Capitalist = Nazi.
+
+		Information content of the above statements === 0.
+
+Meanwhile, the angels of light (tm) are having a great knock-down
+drag-out with the eldrich kings of .NET on XML-DEV.
+
+-- whump
+
+
+----
+Bill Humphries <bill@whump.com>
+http://www.whump.com/moreLikeThis/
+
+
+
+
+
+

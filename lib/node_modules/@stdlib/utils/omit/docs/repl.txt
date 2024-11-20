@@ -1,0 +1,33 @@
+
+{{alias}}( obj, keys )
+    Returns a partial object copy excluding specified keys.
+
+    The function returns a shallow copy.
+
+    The function ignores non-existent keys.
+
+    The function only copies own properties. Hence, the function never copies
+    inherited properties.
+
+    Parameters
+    ----------
+    obj: Object
+        Source object.
+
+    keys: string|Array<string>
+        Keys to exclude.
+
+    Returns
+    -------
+    out: Object
+        New object.
+
+    Examples
+    --------
+    > var obj1 = { 'a': 1, 'b': 2 };
+    > var obj2 = {{alias}}( obj1, 'b' )
+    { 'a': 1 }
+
+    See Also
+    --------
+

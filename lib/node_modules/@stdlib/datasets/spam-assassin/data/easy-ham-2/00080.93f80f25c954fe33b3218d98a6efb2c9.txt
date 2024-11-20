@@ -1,0 +1,63 @@
+From ilug-admin@linux.ie  Sat Jul 20 00:37:57 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 67959440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 19:37:57 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 20 Jul 2002 00:37:57 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JNX8J14315 for
+    <jm-ilug@jmason.org>; Sat, 20 Jul 2002 00:33:08 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id AAA06617; Sat, 20 Jul 2002 00:32:43 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from relay05.indigo.ie (relay05.indigo.ie [194.125.133.229]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with SMTP id AAA06588 for <ilug@linux.ie>;
+    Sat, 20 Jul 2002 00:32:37 +0100
+Received: (qmail 50858 messnum 1193860 invoked from
+    network[159.134.100.10/k100-10.bas1.dbn.dublin.eircom.net]);
+    19 Jul 2002 23:32:36 -0000
+Received: from k100-10.bas1.dbn.dublin.eircom.net (HELO gemini.windmill)
+    (159.134.100.10) by relay05.indigo.ie (qp 50858) with SMTP; 19 Jul 2002
+    23:32:36 -0000
+Content-Type: text/plain; charset="iso-8859-1"
+From: Nick Murtagh <nickm@go2.ie>
+To: ilug@linux.ie
+Subject: Re: [ILUG] Caching downloaded programs at gateway
+Date: Sat, 20 Jul 2002 00:32:37 +0100
+User-Agent: KMail/1.4.1
+References: <OFEGLPGPCHPACFLJPAILIENJDMAA.macarthy@iol.ie>
+    <3D36C750.F6CA73F2@skynet.ie>
+In-Reply-To: <3D36C750.F6CA73F2@skynet.ie>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Message-Id: <200207200032.38090.nickm@go2.ie>
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Thursday 18 July 2002 14:49, Ray Kelly wrote:
+> one basic option that I know of is Squidalyser, http://ababa.org/
+> This doesn't do everything that you want but I've found
+> it useful myself on a number of fronts
+> Now it won't hive off things that have been downloaded but
+> it your cache is so tuned and you've got the dick space you
+> can keep some rather large objects in that.
+
+dick space?
+large objects?
+
+This is ILUG right?
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

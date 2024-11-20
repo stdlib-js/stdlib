@@ -1,0 +1,28 @@
+
+{{alias}}( obj, prop, getter )
+    Defines a read-only accessor.
+
+    Read-only accessors are enumerable and non-configurable.
+
+    Parameters
+    ----------
+    obj: Object
+        Object on which to define the property.
+
+    prop: string|symbol
+        Property name.
+
+    getter: Function
+        Get accessor.
+
+    Examples
+    --------
+    > var obj = {};
+    > function getter() { return 'bar'; };
+    > {{alias}}( obj, 'foo', getter );
+    > obj.foo
+    'bar'
+
+    See Also
+    --------
+

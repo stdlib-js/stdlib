@@ -1,0 +1,282 @@
+From webmake-talk-admin@lists.sourceforge.net  Thu Jul 25 11:20:19 2002
+Return-Path: <webmake-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C9017440D0
+	for <jm@localhost>; Thu, 25 Jul 2002 06:20:13 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 11:20:13 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6P7X4404209 for <jm@jmason.org>; Thu, 25 Jul 2002 08:33:04 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17Xd6Q-0005OT-00; Thu,
+    25 Jul 2002 00:32:02 -0700
+Received: from [62.248.32.2] (helo=venus1.ttnet.net.tr) by
+    usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17Xd4y-0005NE-00; Thu, 25 Jul 2002 00:30:33 -0700
+From: "TR Posta NetWorks" <3center@tr.net.tr>
+Reply-To: "TR Posta NetWorks" <3center@tr.net.tr>
+To: vtcl-user@example.sourceforge.net
+Cc: webmake-talk@example.sourceforge.net
+X-Mailer: Microsoft Outlook Express 5.00.2919.7000
+MIME-Version: 1.0
+X-Precedence-Ref: 
+Message-Id: <E17Xd4y-0005NE-00@usw-sf-list1.sourceforge.net>
+Subject: [WM] BiLiYORUZ REKLAMA iHTiYACINIZ VAR! BUNUN iCiN BURADAYIZ.. 25.07.2002 10:31:20
+Sender: webmake-talk-admin@example.sourceforge.net
+Errors-To: webmake-talk-admin@example.sourceforge.net
+X-Beenthere: webmake-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:webmake-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:webmake-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/webmake-talk>,
+    <mailto:webmake-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Discussion of WebMake. <webmake-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/webmake-talk>,
+    <mailto:webmake-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=webmake-talk>
+X-Original-Date: Thu, 25 Jul 2002 10:31:20 +0300
+Date: Thu, 25 Jul 2002 10:31:20 +0300
+Content-Type: text/html; charset="windows-1254"
+Content-Transfer-Encoding: quoted-printable
+
+=3Chtml=3E=3Chead=3E=3Cmeta http-equiv=3DContent-Language content=3Dtr=3E=3Cmeta http-equiv=3DContent-Type content=3D=22text=2Fhtml=3B charset=3Dwindows-1254=22=3E=3Ctitle=3ETR Rehber 6=3C=2Ftitle=3E=3C=2Fhead=3E
+=3Cbody background=3D=22http=3A=2F=2Fxyzlm22=2Esitemynet=2Ecom=2Fback1=2Egif=3E=22 topmargin=3D1 leftmargin=3D1 bgcolor=3D=22#CECFFF=22=3E
+      =3Cp align=3D=22center=22=3E
+      =3Cimg border=3D=222=22 src=3D=22http=3A=2F=2Fxyzlm22=2Esitemynet=2Ecom=2Fbanner1=2Egif=22 align=3D=22center=22 width=3D=22610=22 height=3D=2281=22=3E=3Cdiv align=3D=22center=22=3E
+  =3Ccenter=3E
+  =3Ctable border=3D1 cellspacing=3D1 style=3D=22border-collapse=3A collapse=22 bordercolor=3D=22#111111=22 width=3D612 id=3DAutoNumber1 height=3D77 bgcolor=3D=22#CECFFF=22 background=3D=22http=3A=2F=2Fxyzlm22=2Esitemynet=2Ecom=2Fback1=2Egif=22=3E=3Ctr=3E
+    =3Ctd width=3D606 height=3D16 bgcolor=3D=22#00FFFF=22=3E=3Cp align=3Dcenter=3E=3Cb=3E=3Cfont face=3DArial color=3D=22#FF0000=22=3E =3Cmarquee scrolldelay=3D100 scrollamount=3D9=3EREKLAMLARINIZA SERVET =D6DEMEYiN!!! UCUZ=2C KOLAY VE KALICI REKLAMLARINIZ iCiN BiZi ARAYINIZ=2E=2E=2E=3C=2Fmarquee=3E=3C=2Ffont=3E=3C=2Fb=3E=3C=2Ftd=3E=3C=2Ftr=3E=3Ctr=3E
+      =3Ctd width=3D606 height=3D43 bgcolor=3D=22#00FFFF=22=3E=3Cp align=3Dcenter=3E=3Cfont face=3DTahoma size=3D2 color=3D=22#000000=22=3E
+      =3Cbr=3E
+    Bu ileti size islerinizi kolaylastirmak=2C satislarinizi arttirmak=2C kisacasi 
+  milyonlara sesinizi duyurmak icin g=F6nderilmistir=2E Bu t=FCrden tanitimlarla 
+  ilgilenmiyorsaniz bu iletiyi=2C &quot=3Bilgilenecegini d=FCs=FCnd=FCg=FCn=FCz&quot=3B tanidiklariniza 
+  g=F6nderiniz=2E Bu iletinin size ve tanidiklariniza kazandiracaklarina 
+  inanamayacaksiniz!=2E=3Cbr=3EHerseye ragmen bizden e-mail almak istemiyor ve satisa sundugumuz=3Cbr=3E&nbsp=3Blistelerden cikmak istiyorsaniz 
+  bu iletiyi bos olarak cevaplamaniz yeterli olacaktir=2E=3Cbr=3E
+  T=FCm =F6nerilerinizi dikkate alip degerlendiriyoruz=2E=2E L=FCtfen olumlu olumsuz 
+  elestirileriniz icin web sayfamizdaki iletisim formunu kullaniniz=2E=2E=3Cbr=3E
+&nbsp=3B=3C=2Ffont=3E=3C=2Ftd=3E=3C=2Ftr=3E=3Ctr=3E
+      =3Ctd width=3D606 height=3D1 bgcolor=3D=22#000000=22 bordercolorlight=3D=22#00FFFF=22 bordercolordark=3D=22#C0C0C0=22=3E
+      =3Cb=3E=3Cfont color=3D=22#96B4D8=22 face=3D=22Verdana=22=3E
+      =3Cmarquee scrolldelay=3D=2252=22 scrollamount=3D=225=22=3ETR Rehber 8=2E0 G=FCncellenme Tarihi 10 Temmuz 2002'dir=2E=2E TR Rehber ve World Rehberi aldiginizda bir sonraki g=FCncellemede&nbsp=3B herhangi bir =FCcret =F6demeyeceksiniz=2E=2E Daha =F6nceden alis-veris de bulundugumuz m=FCsterilerimize %50 indirim imkani sunuyoruz=2E=2E=3C=2Fmarquee=3E=3C=2Ffont=3E=3C=2Fb=3E=3C=2Ftd=3E
+      =3C=2Ftr=3E=3Ctr=3E=3Ctd width=3D606 height=3D184 align=3D=22center=22=3E
+      &nbsp=3B=3Cdiv align=3D=22center=22=3E
+        =3Ccenter=3E
+        =3Ctable border=3D=221=22 cellpadding=3D=220=22 cellspacing=3D=220=22 style=3D=22border-collapse=3A collapse=22 bordercolor=3D=22#111111=22 width=3D=2290%=22 id=3D=22AutoNumber4=22 height=3D=2220=22=3E
+          =3Ctr=3E
+            =3Ctd width=3D=22100%=22 align=3D=22center=22 height=3D=228=22 colspan=3D=223=22=3E
+      =3Cp align=3D=22center=22=3E=3Cu=3E=3Cfont color=3D=22#0000FF=22 size=3D=224=22=3E=3Cb=3E=2E=3A=3ARehberlerimizin Ortak 
+      =D6zellikleri=3A=3A=2E=3C=2Fb=3E=3C=2Ffont=3E=3C=2Fu=3E=3C=2Ftd=3E
+          =3C=2Ftr=3E
+          =3Ctr=3E
+            =3Ctd width=3D=22100%=22 align=3D=22center=22 height=3D=228=22 colspan=3D=223=22=3E=3Cfont face=3DVerdana size=3D2=3E
+            Detayli kategorili =3B daha fazla bilgi i=E7in web sayfam=FDzi ziyaret 
+            ediniz=2E=2E=3C=2Ffont=3E=3C=2Ftd=3E
+          =3C=2Ftr=3E
+          =3Ctr=3E
+            =3Ctd width=3D=22100%=22 align=3D=22center=22 height=3D=228=22 colspan=3D=223=22=3E=3Cfont face=3D=22Verdana=22 size=3D=222=22=3E
+            ilave programlar =3B mailling i=E7in min=2E d=FCzeyde programlar=2E=2E=3C=2Ffont=3E=3C=2Ftd=3E
+          =3C=2Ftr=3E
+          =3Ctr=3E
+            =3Ctd width=3D=22100%=22 align=3D=22center=22 height=3D=2210=22 colspan=3D=223=22=3E=3Cfont face=3DVerdana size=3D2=3E
+            Kullanimi kolayla=FEt=FDr=FDc=FD t=FCrk=E7e d=F6k=FCman ve video format=FDnda 
+            a=E7=FDklamalar=2E=2E=3C=2Ffont=3E=3C=2Ftd=3E
+          =3C=2Ftr=3E
+          =3Ctr=3E
+            =3Ctd width=3D=22100%=22 align=3D=22center=22 height=3D=229=22 colspan=3D=223=22=3E
+            =3Cfont face=3D=22Verdana=22 size=3D=222=22=3ESanayi Rehberi =3Cu=3E
+            =3Cfont color=3D=22#FF0000=22=3E=3Cb=3EHediyeli=2E=2E=3C=2Fb=3E=3C=2Ffont=3E=3C=2Fu=3E=3C=2Ffont=3E=3C=2Ftd=3E
+          =3C=2Ftr=3E
+          =3Ctr=3E
+            =3Ctd width=3D=22100%=22 align=3D=22center=22 height=3D=229=22 colspan=3D=223=22=3E
+      =3Cp align=3D=22center=22=3E
+  =3Cb=3E 
+  =3Cfont face=3DVerdana size=3D=222=22=3E800=2E000 =3C=2Ffont=3E=3C=2Fb=3E 
+  =3Cfont face=3DVerdana size=3D=222=22=3EArama Motoruna =3Cb=3E=3Cfont color=3D=22#FF0000=22=3E =3Cu=3E=FCcretsiz=3C=2Fu=3E=3C=2Ffont=3E=3C=2Fb=3E kay=FDt 
+  imkan=FD=2E=2E=3C=2Ffont=3E=3C=2Ftd=3E
+          =3C=2Ftr=3E
+          =3Ctr=3E
+            =3Ctd width=3D=22100%=22 align=3D=22center=22 height=3D=228=22 colspan=3D=223=22=3E
+            =3Cfont face=3D=22Verdana=22 size=3D=222=22=3E** SINIRSIZ telefon=2C e-mail ve icq ile 
+            destek garantisi=2E=2E=3C=2Ffont=3E=3C=2Ftd=3E
+          =3C=2Ftr=3E
+          =3Ctr=3E
+            =3Ctd width=3D=2226%=22 align=3D=22center=22 height=3D=228=22=3E=3Cb=3E
+            =3Cfont face=3D=22Verdana=22 size=3D=222=22 color=3D=22#FF0000=22=3ETR Rehber 8=2E5=3C=2Ffont=3E=3C=2Fb=3E=3C=2Ftd=3E
+            =3Ctd width=3D=2224%=22 align=3D=22center=22 height=3D=228=22=3E
+            =3Cfont face=3D=22Verdana=22 size=3D=222=22=3E400=2E000=2E000 TL=2E=3C=2Ffont=3E=3C=2Ftd=3E
+            =3Ctd width=3D=2250%=22 align=3D=22center=22 height=3D=228=22=3E
+    =3Cfont face=3D=22Verdana=22 size=3D=222=22=3E6=2E000=2E000 T=FCrk e-mail adresi=2E=2E=3C=2Ffont=3E=3C=2Ftd=3E
+          =3C=2Ftr=3E
+          =3Ctr=3E
+            =3Ctd width=3D=2226%=22 align=3D=22center=22 height=3D=228=22=3E=3Cb=3E
+            =3Cfont face=3D=22Verdana=22 size=3D=222=22 color=3D=22#FF0000=22=3ETR Rehber 7=2E0=3C=2Ffont=3E=3C=2Fb=3E=3C=2Ftd=3E
+            =3Ctd width=3D=2224%=22 align=3D=22center=22 height=3D=228=22=3E
+            =3Cfont face=3D=22Verdana=22 size=3D=222=22=3E350=2E000=2E000 TL=2E=3C=2Ffont=3E=3C=2Ftd=3E
+            =3Ctd width=3D=2250%=22 align=3D=22center=22 height=3D=228=22=3E
+    =3Cfont face=3D=22Verdana=22 size=3D=222=22=3E4=2E000=2E000 T=FCrk e-mail adresi=2E=2E=3C=2Ffont=3E=3C=2Ftd=3E
+          =3C=2Ftr=3E
+          =3Ctr=3E
+            =3Ctd width=3D=2226%=22 align=3D=22center=22 height=3D=228=22=3E=3Cb=3E
+            =3Cfont face=3D=22Verdana=22 size=3D=222=22 color=3D=22#FF0000=22=3ETR Rehber =D6zel=3C=2Ffont=3E=3C=2Fb=3E=3C=2Ftd=3E
+            =3Ctd width=3D=2224%=22 align=3D=22center=22 height=3D=228=22 bgcolor=3D=22#FFFF00=22=3E
+            =3Cb=3E
+            =3Cfont face=3D=22Verdana=22 size=3D=222=22 color=3D=22#FF0000=22=3E250=2E000=2E000 TL=2E=3C=2Ffont=3E=3C=2Fb=3E=3C=2Ftd=3E
+            =3Ctd width=3D=2250%=22 align=3D=22center=22 height=3D=228=22=3E
+    =3Cfont face=3D=22Verdana=22 size=3D=222=22=3E2=2E000=2E000 Firma bazl=FD e-mail adresi=2E=2E=3C=2Ffont=3E=3C=2Ftd=3E
+          =3C=2Ftr=3E
+          =3Ctr=3E
+            =3Ctd width=3D=2226%=22 align=3D=22center=22 height=3D=228=22=3E=3Cb=3E
+            =3Cfont face=3D=22Verdana=22 size=3D=222=22 color=3D=22#FF0000=22=3EWorld Rehber 2=2E5=3C=2Ffont=3E=3C=2Fb=3E=3C=2Ftd=3E
+            =3Ctd width=3D=2224%=22 align=3D=22center=22 height=3D=228=22=3E
+            =3Cfont face=3D=22Verdana=22 size=3D=222=22=3E350=2E000=2E000 TL=2E=3C=2Ffont=3E=3C=2Ftd=3E
+            =3Ctd width=3D=2250%=22 align=3D=22center=22 height=3D=228=22=3E=3Cp style=3D=22margin-left=3A -6=22=3E=3Cfont face=3DVerdana size=3D2=3E
+            150=2E000=2E000 yabanci e-mail adresi=2E=2E=3C=2Ffont=3E=3C=2Ftd=3E
+          =3C=2Ftr=3E
+          =3Ctr=3E
+            =3Ctd width=3D=2226%=22 align=3D=22center=22 height=3D=228=22=3E=3Cb=3E
+            =3Cfont face=3D=22Verdana=22 size=3D=222=22 color=3D=22#FF0000=22=3EICQ Rehber =D6zel=3C=2Ffont=3E=3C=2Fb=3E=3C=2Ftd=3E
+            =3Ctd width=3D=2224%=22 align=3D=22center=22 height=3D=228=22=3E
+            =3Cfont face=3D=22Verdana=22 size=3D=222=22=3E150=2E000=2E000 TL=2E=3C=2Ffont=3E=3C=2Ftd=3E
+            =3Ctd width=3D=2250%=22 align=3D=22center=22 height=3D=228=22=3E
+            =3Cfont face=3D=22Verdana=22 size=3D=222=22=3E2=2E500=2E000 T=FCrk ICQ kullan=FDc=FDsi=2E=2E=3C=2Ffont=3E=3C=2Ftd=3E
+          =3C=2Ftr=3E
+          =3Ctr=3E
+            =3Ctd width=3D=2226%=22 align=3D=22center=22 height=3D=228=22=3E=3Cb=3E
+            =3Cfont face=3D=22Verdana=22 size=3D=222=22 color=3D=22#FF0000=22=3ESanayi Rehberi=3C=2Ffont=3E=3C=2Fb=3E=3C=2Ftd=3E
+            =3Ctd width=3D=2224%=22 align=3D=22center=22 height=3D=228=22=3E
+            =3Cfont face=3D=22Verdana=22 size=3D=222=22=3E50=2E000=2E000 TL=2E=3C=2Ffont=3E=3C=2Ftd=3E
+            =3Ctd width=3D=2250%=22 align=3D=22center=22 height=3D=228=22=3E
+            =3Cfont face=3D=22Verdana=22 size=3D=222=22=3ET=FCrkiye deki t=FCm firmalar=2E=2E=3C=2Ffont=3E=3C=2Ftd=3E
+          =3C=2Ftr=3E
+          =3Ctr=3E
+            =3Ctd width=3D=22100%=22 align=3D=22center=22 height=3D=221=22 colspan=3D=223=22=3E
+            =3Cfont face=3D=22Verdana=22 size=3D=221=22=3E&nbsp=3B=3C=2Ffont=3E=3C=2Ftd=3E
+          =3C=2Ftr=3E
+          =3Ctr=3E
+            =3Ctd width=3D=22100%=22 align=3D=22center=22 height=3D=228=22 colspan=3D=223=22=3E
+            =3Cfont face=3D=22Verdana=22 size=3D=221=22=3E* TR ve WORLD Rehber birlikte 
+            aldiginizda Hotmail Kullanici listesini =3Cu=3E=3Cfont color=3D=22#FF0000=22=3E
+            =3Cb=3EHEDiYE=3C=2Fb=3E=3C=2Ffont=3E=3C=2Fu=3E ediyoruz=2E=2E=3C=2Ffont=3E=3C=2Ftd=3E
+          =3C=2Ftr=3E
+          =3Ctr=3E
+            =3Ctd width=3D=22100%=22 align=3D=22center=22 height=3D=228=22 colspan=3D=223=22=3E
+            =3Cfont face=3D=22Verdana=22 size=3D=221=22=3E* Eski m=FCsterilerimize %50 indirimimiz 
+            devam etmektedir=2E=2E=3C=2Ffont=3E=3C=2Ftd=3E
+          =3C=2Ftr=3E
+          =3Ctr=3E
+            =3Ctd width=3D=22100%=22 align=3D=22center=22 height=3D=228=22 colspan=3D=223=22=3E
+            =3Cfont size=3D=221=22 face=3D=22Verdana=22=3E* Not=3A Fiyatlara KDV ve Kargo =FCcreti 
+            dahil edilmemi=FEtir=2E=2E=3C=2Ffont=3E=3C=2Ftd=3E
+          =3C=2Ftr=3E
+        =3C=2Ftable=3E
+        =3C=2Fcenter=3E
+      =3C=2Fdiv=3E
+&nbsp=3B=3C=2Ftd=3E
+      =3C=2Ftr=3E=3Ctr=3E
+      =3Ctd width=3D606 height=3D1 bgcolor=3D=22#00FFFF=22=3E=3Cp align=3Dcenter=3E=3Cb=3E
+    =3Cfont face=3DVerdana color=3D=22#FFFFFF=22=3E =3Cspan style=3D=22background-color=3A #FF0000=22=3E
+      =3Cfont size=3D=222=22=3ETR 8=2E0 ve World Rehber birlikte sadece 750=2E000=2E000 TL=2EYerine =3C=2Ffont=3E
+      600=2E000=2E000 TL=2E=3C=2Fspan=3E=3C=2Ffont=3E=3C=2Fb=3E=3C=2Ftd=3E=3C=2Ftr=3E=3C=2Ftable=3E=3C=2Fcenter=3E
+=3C=2Fdiv=3E
+=3Cdiv align=3Dcenter=3E=3Ccenter=3E
+  =3Ctable border=3D1 cellspacing=3D1 style=3D=22border-collapse=3A collapse=22 bordercolor=3D=22#111111=22 width=3D612 id=3DAutoNumber1 height=3D149 bgcolor=3D=22#CECFFF=22 background=3D=22http=3A=2F=2Fxyzlm22=2Esitemynet=2Ecom=2Fback1=2Egif=22=3E=3Ctr=3E
+      =3Ctd width=3D606 height=3D1 bgcolor=3D=22#00FFFF=22=3E
+    =3Cp align=3Dleft=3E&nbsp=3B=3Cul style=3D=22margin-top=3A -8=22=3E
+      =3Cli style=3D=22line-height=3A 100%=22=3E
+      =3Cp align=3Djustify style=3D=22margin-right=3A 23=3B margin-top=3A -9=3B margin-bottom=3A 0=22=3E=3Cb=3E =3Cfont face=3DVerdana size=3D1=3EG=FCncelleme islemlerinde 
+      ki indirim oran=FDm=FDz %50'dir=2E =3Cbr=3E
+&nbsp=3B=3C=2Ffont=3E=3C=2Fb=3E=3C=2Fli=3E
+      =3Cli=3E
+      =3Cp align=3Dleft style=3D=22margin-right=3A 23=3B margin-top=3A -9=3B margin-bottom=3A 0=22=3E
+      =3Cb=3E =3Cfont face=3DVerdana size=3D2 color=3D=22#FF0000=22=3E
+      800=2E000 Arama motoruna kayit islemi 30=2E000=2E000TL + KDV =3Cbr=3E
+&nbsp=3B=3C=2Ffont=3E=3C=2Fb=3E=3C=2Fli=3E
+      =3Cli=3E
+      =3Cp align=3Djustify style=3D=22margin-right=3A 23=3B margin-top=3A -9=3B margin-bottom=3A 0=22=3E=3Cb=3E=3Cfont face=3DVerdana size=3D1 color=3D=22#000000=22=3ET=FCm 
+      versiyonlarimizda g=F6nderim islemi icin gerekli ve en kullanisli programlar 
+      bulunmaktadir=2E=3C=2Ffont=3E=3Cfont face=3DVerdana size=3D1=3E Bu programlarin video 
+      formatinda aciklamalari da CD'ler icerisinde bulunmaktadir=2E=2E=2E=3Cbr=3E
+&nbsp=3B=3C=2Ffont=3E=3C=2Fb=3E=3C=2Fli=3E
+      =3Cli=3E
+      =3Cp align=3Djustify style=3D=22margin-right=3A 23=3B margin-top=3A -9=3B margin-bottom=3A 0=22=3E=3Cb=3E=3Cfont face=3D=22Verdana=22 size=3D=221=22=3EBu programlar sizin 
+      iletilerinizi kolay bir sekilde g=F6ndermenizi saglarken=2C iletilerinizi 
+      alan kisilerin kullandigi serverlarin da yorulmamasini=28karsi tarafta problem 
+      yaratilmamasini=29 saglayacaktir=2E=2E=2E=3Cbr=3E
+&nbsp=3B=3C=2Ffont=3E=3C=2Fb=3E=3C=2Fli=3E
+      =3Cli=3E
+      =3Cp align=3Djustify style=3D=22margin-right=3A 23=3B margin-top=3A -9=3B margin-bottom=3A 0=22=3E
+      =3Cb=3E=3Cfont face=3D=22Verdana=22 size=3D=221=22=3EBu programlar ISP yada hosting firmanizin 
+      SMTP serverini kullanmaniza gerek kalmadan direkt g=F6nderim yapabilmenizi 
+      saglayacaktir=2E isterseniz bir checkbox'i isaretliyerek kullanmak 
+      istediginiz SMTP server ile&nbsp=3B fault-tolerance yaparak g=F6nderdiginiz 
+      iletilerin %100 yerine ulasmasini saglayabilirsiniz=2E=2E=2E=3Cbr=3E
+&nbsp=3B=3C=2Ffont=3E=3C=2Fb=3E=3C=2Fli=3E
+      =3Cli=3E
+      =3Cp align=3Djustify style=3D=22margin-right=3A 23=3B margin-top=3A -9=3B margin-bottom=3A 0=22=3E
+      =3Cb=3E=3Cfont face=3D=22Verdana=22 size=3D=221=22=3ESMTP server kullanmadan g=F6nderdiginiz 
+      mesajlar bilinenin aksine daha basarili g=F6nderim yapacakdir=2E C=FCnk=FC 
+      mesajlarin yerine ulasip ulasmadigini g=F6r=FCp m=FCdahele yapmak sizin elinizde 
+      olacaktir=2E=2E=2E=3Cbr=3E
+&nbsp=3B=3C=2Ffont=3E=3C=2Fb=3E=3C=2Fli=3E
+      =3Cli=3E
+      =3Cp align=3Djustify style=3D=22margin-right=3A 23=3B margin-top=3A -9=3B margin-bottom=3A 0=22=3E
+      =3Cb=3E=3Cfont face=3D=22Verdana=22 size=3D=221=22=3EAyrica bu programlar HTML formatinda 
+      mesaj g=F6nderimini de desteklemektedir=2E Bu destek sayesinde renkli=2C resimli 
+      daha g=F6rsel ve dikkat cekici iletiler g=F6nderebilirsiniz=2E=2E=2E=3Cbr=3E
+&nbsp=3B=3C=2Ffont=3E=3C=2Fb=3E=3C=2Fli=3E
+      =3Cli=3E
+      =3Cp align=3Djustify style=3D=22margin-right=3A 23=3B margin-top=3A -9=3B margin-bottom=3A 0=22=3E=3Cb=3E=3Cfont face=3DVerdana size=3D1=3ECD icerisindeki b=FCy=FCk e-mail 
+      listelerini kolayca d=FCzenleyebileceginiz=2C istenmeyen e-mail adreslerini 
+      otomatik olarak silebileceginiz ve her t=FCrl=FC kategoriye ayirabileceginiz 
+      programlar da =FCcretsiz olarak verilmektedir=2E=2E=2E=3Cbr=3E
+&nbsp=3B=3C=2Ffont=3E=3C=2Fb=3E=3C=2Fli=3E
+      =3Cli=3E
+      =3Cp align=3Djustify style=3D=22margin-right=3A 23=3B margin-top=3A -9=3B margin-bottom=3A 0=22=3E=3Cb=3E=3Cfont face=3D=22Verdana=22 size=3D=221=22=3ETR rehber ve World 
+      Rehberi birlikte aldiginizda=2C bir sonraki g=FCncel versiyonlari adresinize 
+      =FCcretsiz g=F6nderiyoruz=2E=2E=2E Bunun icin l=FCtfen g=FCncelleme maili aldiginizda 
+      bize geri d=F6n=FCn=FCz=2E=2E=3C=2Ffont=3E=3C=2Fb=3E=3C=2Fli=3E
+    =3C=2Ful=3E
+    =3C=2Ftd=3E=3C=2Ftr=3E=3Ctr=3E=3Ctd width=3D606 height=3D1 bgcolor=3D=22#00FFFF=22=3E
+    =3Cp align=3D=22center=22=3E=3Cfont face=3DVerdana=3E=3Cb=3E=2E=3A=3A 
+  HEDEF KiTLE TESPiDi =3A=3A=2E=3Cbr=3E=3C=2Fb=3E=3Ci=3E=3Cfont size=3D=222=22=3EHedef kitlenize ulasmanizi sa=F0layaci=F0imiz bu 
+    =F6zel y=F6ntem hakkinda mutlaka bilgi isteyiniz=2E=2E=3Cbr=3E
+    =3C=2Ffont=3E=3C=2Fi=3E
+  =3Cb=3E=2E=3A=3A TARGET MAILLING =3A=3A=2E=3C=2Fb=3E=3C=2Ffont=3E=3C=2Ftd=3E=3C=2Ftr=3E=3C=2Ftable=3E=3C=2Fcenter=3E=3C=2Fdiv=3E=3Cdiv align=3Dcenter=3E=3Ccenter=3E
+  =3Ctable border=3D1 cellpadding=3D2 cellspacing=3D1 style=3D=22border-collapse=3A collapse=22 bordercolor=3D=22#111111=22 width=3D612 id=3DAutoNumber3 height=3D131 bgcolor=3D=22#CECFFF=22 background=3D=22http=3A=2F=2Fxyzlm22=2Esitemynet=2Ecom=2Fback1=2Egif=22=3E=3Ctr=3E
+    =3Ctd width=3D607 height=3D20 bgcolor=3D=22#00FFFF=22=3E
+  =3Cp align=3D=22center=22=3E=3Cu=3E=3Cb=3Eiletisim Bilgileri =3A =28 Pazar haric herg=FCn 09=3A00 ile 19=3A30 arasi=29=3C=2Fb=3E=3C=2Fu=3E=3C=2Ftd=3E=3C=2Ftr=3E=3Ctr=3E
+      =3Ctd width=3D607 height=3D52=3E=3Cp align=3Dcenter=3E=3Cfont face=3DVerdana size=3D=224=22=3E
+      =3Cspan style=3D=22background-color=3A #FF0000=22=3EGSM=3A+ 90 535 482=2E97=2E19&nbsp=3B G=F6khan 
+      ATASOY=3Cbr=3E
+      =3Cfont color=3D=22#FFFF00=22=3E
+      =3Cmarquee width=3D=22386=22=3ETAKLiTLERiMiZDEN SAKININ=2C GARANTiSi OLMAYAN =FCR=FCNLER=2C HiZMETLER KARiYERiNiZi ZEDELEYEBiLiR=2E=2E=3C=2Fmarquee=3E=3C=2Ffont=3E=3C=2Fspan=3E=3C=2Ffont=3E=3C=2Ftd=3E=3C=2Ftr=3E=3Ctr=3E=3Ctd width=3D607 height=3D109=3E=3Cp align=3Dcenter=3E=3Cb=3E =3Cfont face=3D=22Verdana=2C Arial=2C Helvetica=2C sans-serif=22 color=3D=22#FF0000=22=3E&nbsp=3BG=FCn=FCm=FCz 
+  T=FCrkiye'sinde internet 
+  araciligiyla yapilan reklamlar hizla artmaktadir=2E T=FCrkiye'de ve d=FCnyada bircok 
+  firma bu y=F6ntemlerle kendini tanitmaktadir=2EBu artisin icinde sizin de yeralmaniz 
+  kacinilmaz bir gercek olacaktir=2E=3C=2Ffont=3E=3C=2Fb=3E=3C=2Ftd=3E=3C=2Ftr=3E=3Ctr=3E
+      =3Ctd width=3D607 height=3D1=3E=3Cp align=3Dcenter=3E=3Cfont face=3DTahoma size=3D2 color=3D=22#000000=22=3EHerseye ragmen bizden e-mail almak istemiyor ve satisa sundugumuz=3Cbr=3E
+      &nbsp=3Blistelerden cikmak istiyorsaniz =3C=2Ffont=3E=3Cb=3E
+      =3Ca href=3D=22mailto=3Auyeiptal=40gmx=2Enet=22=3Euyeiptal=40gmx=2Enet=3C=2Fa=3E=3C=2Fb=3E=3Cfont face=3D=22Arial=22 color=3D=22#ffffff=22 size=3D=222=22=3E=3Cb=3E&nbsp=3B
+      =3C=2Fb=3E=3C=2Ffont=3E=3Cfont face=3DTahoma size=3D2 color=3D=22#000000=22=3Eadresine bo=FE bir mail g=F6ndermeniz yeterli olacakd=FDr=2E=3C=2Ffont=3E=3C=2Ftd=3E=3C=2Ftr=3E=3C=2Ftable=3E=3C=2Fcenter=3E=3C=2Fdiv=3E
+=3C=2Fbody=3E=3C=2Fhtml=3E
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+webmake-talk mailing list
+webmake-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/webmake-talk
+
+

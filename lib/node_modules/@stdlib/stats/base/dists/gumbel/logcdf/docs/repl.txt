@@ -1,0 +1,74 @@
+
+{{alias}}( x, μ, β )
+    Evaluates the logarithm of the cumulative distribution function (CDF) for a
+    Gumbel distribution with location parameter `μ` and scale parameter `β` at a
+    value `x`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `β <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    μ: number
+        Location parameter.
+
+    β: number
+        Scale parameter.
+
+    Returns
+    -------
+    out: number
+        Evaluated logCDF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 10.0, 0.0, 3.0 )
+    ~-0.036
+    > y = {{alias}}( -2.0, 0.0, 3.0 )
+    ~-1.948
+    > y = {{alias}}( 0.0, 0.0, 1.0 )
+    ~-1.0
+    > y = {{alias}}( NaN, 0.0, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, 0.0, NaN )
+    NaN
+    // Negative scale parameter:
+    > y = {{alias}}( 0.0, 0.0, -1.0 )
+    NaN
+
+
+{{alias}}.factory( μ, β )
+    Returns a function for evaluating the logarithm of the cumulative
+    distribution function (CDF) of a Gumbel distribution with location parameter
+    `μ` and scale parameter `β`.
+
+    Parameters
+    ----------
+    μ: number
+        Location parameter.
+
+    β: number
+        Scale parameter.
+
+    Returns
+    -------
+    logcdf: Function
+        Logarithm of cumulative distribution function (CDF).
+
+    Examples
+    --------
+    > var myLCDF = {{alias}}.factory( 2.0, 3.0 );
+    > var y = myLCDF( 10.0 )
+    ~-0.069
+    > y = myLCDF( 2.0 )
+    ~-1.0
+
+    See Also
+    --------
+

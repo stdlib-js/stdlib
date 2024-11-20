@@ -1,0 +1,102 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Sep  5 12:50:54 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id B160F16F1E
+	for <jm@localhost>; Thu,  5 Sep 2002 12:50:52 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 05 Sep 2002 12:50:52 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g85BdTZ17218 for <jm-sa@jmason.org>; Thu, 5 Sep 2002 12:39:30 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17muyY-0002sW-00; Thu,
+    05 Sep 2002 04:39:06 -0700
+Received: from relay05.indigo.ie ([194.125.133.229]) by
+    usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17muxV-0001OC-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Thu, 05 Sep 2002 04:38:02 -0700
+Received: (qmail 67309 messnum 1193166 invoked from
+    network[194.125.172.167/ts12-167.dublin.indigo.ie]); 5 Sep 2002 11:37:56
+    -0000
+Received: from ts12-167.dublin.indigo.ie (HELO spamassassin.taint.org)
+    (194.125.172.167) by relay05.indigo.ie (qp 67309) with SMTP;
+    5 Sep 2002 11:37:56 -0000
+Received: by spamassassin.taint.org (Postfix, from userid 500) id 0C81E16F21;
+    Thu,  5 Sep 2002 12:22:05 +0100 (IST)
+Received: from spamassassin.taint.org (localhost [127.0.0.1]) by spamassassin.taint.org (Postfix)
+    with ESMTP id 09402F7B1; Thu,  5 Sep 2002 12:22:05 +0100 (IST)
+To: "Kerry Nice" <kerry_nice@hotmail.com>
+Cc: spamassassin-talk@example.sourceforge.net
+Subject: Re: [SAtalk] Trend: Spam disguised as newsletters
+In-Reply-To: Message from
+    "Kerry Nice"
+    <kerry_nice@hotmail.com> of
+    "Wed, 04 Sep 2002 18:25:44 EDT."
+    <OE70qw5lPwexlPCo66S0000e176@hotmail.com>
+From: yyyy@spamassassin.taint.org (Justin Mason)
+X-GPG-Key-Fingerprint: 0A48 2D8B 0B52 A87D 0E8A  6ADD 4137 1B50 6E58 EF0A
+X-Habeas-Swe-1: winter into spring
+X-Habeas-Swe-2: brightly anticipated
+X-Habeas-Swe-3: like Habeas SWE (tm)
+X-Habeas-Swe-4: Copyright 2002 Habeas (tm)
+X-Habeas-Swe-5: Sender Warranted Email (SWE) (tm). The sender of this
+X-Habeas-Swe-6: email in exchange for a license for this Habeas
+X-Habeas-Swe-7: warrant mark warrants that this is a Habeas Compliant
+X-Habeas-Swe-8: Message (HCM) and not spam.  Please report use of this
+X-Habeas-Swe-9: mark in spam to <http://www.habeas.com/report/>.
+Message-Id: <20020905112205.0C81E16F21@spamassassin.taint.org>
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Thu, 05 Sep 2002 12:21:59 +0100
+Date: Thu, 05 Sep 2002 12:21:59 +0100
+
+
+"Kerry Nice" said:
+
+> What about some reality check rules.  Yeah, you can pack in lots of things
+> into the header to try and get some negative points, but do they all make
+> sense in combination.  Can you have a Pine message id in the same header
+> with an Outlook Express one or a Mutt User-Agent?
+
+Yes, this is a big bonus of meta rules (new in 2.40); we can now
+e.g. check for an Outlook-style forwarded message, and not give
+it negative points unless it contains other signs of being from
+Outlook.
+
+> I think the headers should be paid special attention to.  The message
+> content of something from the NY Times or Lockergnome might look spammy, but
+> usually they don't forge or fake anything in the header.  Tone down the
+> negative scores and ding them extra for any obvious forgeries.
+
+When we get more (good) "nice" tests, the GA will assign lower
+scores to them.  I think the current problem is that there are
+very few really good nice tests in the current rulebase, and lots
+of +ve tests that those newsletters hit, giving the GA a big
+problem to solve.
+
+--j.
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

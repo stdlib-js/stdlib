@@ -1,0 +1,29 @@
+
+{{alias}}( value )
+    Tests if a value is a collection.
+
+    A collection is defined as an array, typed array, or an array-like object
+    (excluding strings and functions).
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a value is a collection.
+
+    Examples
+    --------
+    > var bool = {{alias}}( [] )
+    true
+    > bool = {{alias}}( { 'length': 0 } )
+    true
+    > bool = {{alias}}( {} )
+    false
+
+    See Also
+    --------
+

@@ -1,0 +1,124 @@
+From fork-admin@xent.com  Wed Oct  2 11:48:11 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 0788616F1C
+	for <jm@localhost>; Wed,  2 Oct 2002 11:47:41 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 02 Oct 2002 11:47:41 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g923qEK24441 for <jm@jmason.org>;
+    Wed, 2 Oct 2002 04:52:14 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 212C02940F1; Tue,  1 Oct 2002 20:52:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from nycsmtp1out.rdc-nyc.rr.com (nycsmtp1out.rdc-nyc.rr.com
+    [24.29.99.226]) by xent.com (Postfix) with ESMTP id 8822629409C for
+    <fork@xent.com>; Tue,  1 Oct 2002 20:51:14 -0700 (PDT)
+Received: from damien (66-108-144-106.nyc.rr.com [66.108.144.106]) by
+    nycsmtp1out.rdc-nyc.rr.com (8.12.1/Road Runner SMTP Server 1.0) with ESMTP
+    id g923pH6d025958; Tue, 1 Oct 2002 23:51:17 -0400 (EDT)
+From: "Damien Morton" <dm-temp-310102@nyc.rr.com>
+To: "'Ian Andrew Bell'" <fork@ianbell.com>,
+	"'Eugen Leitl'" <eugen@leitl.org>
+Cc: <tomwhore@slack.net>, <fork@spamassassin.taint.org>
+Subject: RE: Wifi query
+Message-Id: <007e01c269c6$85605800$6401a8c0@damien>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.3416
+Importance: Normal
+In-Reply-To: <32BAD95E-D5B6-11D6-AD37-0030657C53EA@ianbell.com>
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 1 Oct 2002 23:48:02 -0400
+
+That's what the manual said - a diversity antenna.
+
+Why wouldn't it work well with one omni and one directional antena? 
+
+IANAEE, but doesn't that count as diversity?
+
+> -----Original Message-----
+> From: Ian Andrew Bell [mailto:fork@ianbell.com] 
+> Sent: Tuesday, 1 October 2002 23:23
+> To: Eugen Leitl
+> Cc: Damien Morton; tomwhore@slack.net; fork@spamassassin.taint.org
+> Subject: Re: Wifi query
+> 
+> 
+> 
+> I think what you're looking at with the dual antenna mounts is a 
+> diversity antenna.  It won't work too well with one hooked up to the 
+> pringles can and the other hooked up to a regular rubber duck.
+> 
+> -Ian.
+> 
+> 
+> On Tuesday, October 1, 2002, at 01:04 PM, Eugen Leitl wrote:
+> 
+> >
+> > 1) reinforced concrete shields like the dickens; wood lots less so
+> > 2) line of sight is best (o'really?)
+> > 3) if you want to boost range, use directional aerials, not omnis
+> >
+> > Direct line of sight (no trees, no nothing) can give you ~10 km with
+> > well
+> > aligned directional aerials (and, say, no sleet, no 
+> locusts, nor rain 
+> > of
+> > blood). If you want to fan out afterwards, use a bridge of a 
+> > directional
+> > coupling to an omni. 802.11a should shield within building 
+> lots more 
+> > than
+> > 802.11b, ditto line of sight with lots of precipitation inbetween.
+> >
+> > On Tue, 1 Oct 2002, Damien Morton wrote:
+> >
+> >> I just bought a LinkSys BEFW1154v2 Access Point Router for $150 
+> >> (http://www.linksys.com/products/product.asp?grid=22&prid=415). Im 
+> >> doing some dev work on a Symbol PocketPC device with built in 
+> >> 802.11b.
+> >>
+> >> In this 600 sq ft pre-war New York apartment it goes 
+> through 2 or 3 
+> >> walls, into the hallway and halfway down the first flight 
+> of stairs 
+> >> before it loses contact with the base station. That's less than 50 
+> >> ft. Inside the apartment, it works just fine.
+> >>
+> >> I just did some further testing - through 2 brick walls 
+> the range is 
+> >> about 25 feet. The signal also goes through the roof pretty much 
+> >> unimpeded.
+> >>
+> >> That said, the Symbol device doesn't have an antenna to 
+> speak of, and
+> >> I
+> >> havent done any tweaking to try to extend the range.
+> >>
+> >> The Linksys unit has two antenna mounts - you could leave one as an
+> >> omni
+> >> antenna while hooking up a directional antenna to the other.
+> >>
+> >> You might find that you have to use several access points and/or 
+> >> repeaters to get the coverage you want.
+> 
+
+

@@ -1,0 +1,102 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Fri Sep 13 16:51:47 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 3BE8A16F03
+	for <jm@localhost>; Fri, 13 Sep 2002 16:51:47 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 13 Sep 2002 16:51:47 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8DE7PC21522 for <jm-sa@jmason.org>; Fri, 13 Sep 2002 15:07:25 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17pr4E-0005ym-00; Fri,
+    13 Sep 2002 07:05:06 -0700
+Received: from betty.magenta-netlogic.com ([193.37.229.181]
+    helo=mail.magenta-netlogic.com) by usw-sf-list1.sourceforge.net with esmtp
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17pr3S-0001PJ-00 for
+    <spamassassin-talk@lists.sourceforge.net>; Fri, 13 Sep 2002 07:04:18 -0700
+Received: from localhost (localhost [127.0.0.1]) by
+    mail.magenta-netlogic.com (Postfix) with ESMTP id 7B886BFA9E;
+    Fri, 13 Sep 2002 15:04:13 +0100 (BST)
+Received: from greece.local.net (greece.local.net [::ffff:192.168.1.31])
+    by mail.magenta-netlogic.com (Postfix) with ESMTP id 4A719BFA9A;
+    Fri, 13 Sep 2002 15:04:12 +0100 (BST)
+Received: by greece.local.net with Internet Mail Service (5.5.2653.19) id
+    <RXNP4B5Z>; Fri, 13 Sep 2002 15:04:11 +0100
+Message-Id: <87A8DADECEE0D411A5500050046B13A048D792@greece.local.net>
+From: Tony Hoyle <tmh@magenta-netlogic.com>
+To: "'carlo@alinoe.com'" <carlo@alinoe.com>,
+	spamassassin-talk@lists.sourceforge.net
+Subject: RE: [SAtalk] Getting yourself removed from spam lists
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain; charset="windows-1252"
+X-Virus-Scanned: by AMaViS new-20020517
+X-Razor-Id: 72f4879d997b64bc62636a2e2a86360b74ef5fe4
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=spamassassin-talk>
+X-Original-Date: Fri, 13 Sep 2002 15:04:11 +0100
+Date: Fri, 13 Sep 2002 15:04:11 +0100
+
+> -----Original Message-----
+> From: carlo@alinoe.com [mailto:carlo@alinoe.com]
+> Sent: 13 September 2002 14:21
+> To: spamassassin-talk@example.sourceforge.net
+> Subject: [SAtalk] Getting yourself removed from spam lists
+>
+> I get the feeling that the spammers never
+> remove emails from their lists.
+
+Correct...
+
+> On the other hand, that doesn't make sense:
+> wouldn't they get worried about their millions
+> of spams being wasted?  Don't they WANT *some*
+> prove that they indeed *reach* people somehow?
+
+No, they only have to prove that they send several million
+emails to 'potential clients' to get their money.  I don't think
+they even care much about bounces.  They're con-artists, why
+should they care about proving they actually reached people?
+ 
+> So... it seems to me that they DO clean up
+> their lists, but only when a spam fails to
+> deliver - or can't they detect that?
+
+Most of the time the bounce goes to some poor soul who has
+nothing to do with the spammer.
+
+> What do spammers do with email addresses in
+> their database that are undeliverable for a
+> few years?  Do they still continue to spam
+> them?
+
+Yes.
+
+Tony
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

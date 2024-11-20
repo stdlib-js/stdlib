@@ -1,0 +1,80 @@
+From razor-users-admin@lists.sourceforge.net  Fri Sep  6 11:34:10 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id E18A316F16
+	for <jm@localhost>; Fri,  6 Sep 2002 11:34:03 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 11:34:03 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g868ZTW26173 for
+    <jm-razor@jmason.org>; Fri, 6 Sep 2002 09:37:08 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id DAA19778 for
+    <jm-razor@jmason.org>; Fri, 6 Sep 2002 03:26:00 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17n8i7-000455-00; Thu,
+    05 Sep 2002 19:19:03 -0700
+Received: from [208.48.139.185] (helo=forty.greenhydrant.com) by
+    usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17n8hW-0000tQ-00 for <razor-users@lists.sourceforge.net>; Thu,
+    05 Sep 2002 19:18:26 -0700
+Received: (qmail 6108 invoked by uid 501); 6 Sep 2002 02:18:20 -0000
+From: David Rees <dbr@greenhydrant.com>
+To: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] Problem with Razor 2.14 and Spamassassin 2.41
+Message-Id: <20020905191820.C5351@greenhydrant.com>
+Mail-Followup-To: David Rees <dbr@greenhydrant.com>,
+	razor-users@lists.sourceforge.net
+References: <20020905160808.B2932@greenhydrant.com>
+    <Pine.LNX.4.44.0209051816270.22445-100000@burgers.bubbanfriends.org>
+    <20020906005315.GH29663@kluge.net> <20020905181308.B4905@greenhydrant.com>
+    <3D780F2B.8090709@lelandwoodbury.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <3D780F2B.8090709@lelandwoodbury.com>; from
+    leland@lelandwoodbury.com on Thu, Sep 05, 2002 at 10:12:59PM -0400
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Thu, 5 Sep 2002 19:18:20 -0700
+Date: Thu, 5 Sep 2002 19:18:20 -0700
+
+On Thu, Sep 05, 2002 at 10:12:59PM -0400, Leland Woodbury wrote:
+> I found a nice little Perl script for this purpose called rotate, which 
+> makes the process of rotating log files very simple.  If there's an 
+> official source for this script, I couldn't find it.  (My hosting 
+> provider, pair.com, has it installed, and that's where I found it.) 
+>  However, redistribution appears to be allowed, so I've attached it.
+
+Thanks for the script.  It also appears that the standard logrotate tools
+included with many systems (or at least RedHat systems) will support
+wildcards when rotating files so something like
+/home/*/.razor/razor-agent.log can be specified...
+
+-Dave
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+

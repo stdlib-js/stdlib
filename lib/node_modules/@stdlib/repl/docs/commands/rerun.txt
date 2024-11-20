@@ -1,0 +1,30 @@
+
+rerun( [arg] )
+    Reruns previous commands.
+
+    If provided an integer, the previous `n` commands are re-executed.
+
+    If provided a regular expression, the most recent command matching the
+    regular expression is rerun.
+
+    If provided an array of command identifiers, the command corresponding to
+    each identifier is rerun.
+
+    If provided a subsequence string, the command corresponding to each resolved
+    command identifier is rerun.
+
+    Parameters
+    ----------
+    arg: integer|string|RegExp|Array (optional)
+    	Command filter. Default: 1.
+
+    Examples
+    --------
+    > 1+1
+    2
+    > rerun()
+
+    See Also
+    --------
+    history
+

@@ -1,0 +1,65 @@
+From ilug-admin@linux.ie  Thu Aug  8 14:12:19 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 91C3144138
+	for <jm@localhost>; Thu,  8 Aug 2002 08:32:42 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 08 Aug 2002 13:32:42 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g78CT3204012 for
+    <jm-ilug@jmason.org>; Thu, 8 Aug 2002 13:29:03 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA14710; Thu, 8 Aug 2002 13:24:34 +0100
+Received: from kbs01.kbs.ie ([213.190.156.48]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA14676 for <ilug@linux.ie>; Thu,
+    8 Aug 2002 13:24:26 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [213.190.156.48] claimed
+    to be kbs01.kbs.ie
+Received: by KBS01 with Internet Mail Service (5.5.2653.19) id <QK4XK2DD>;
+    Thu, 8 Aug 2002 13:40:39 +0100
+Message-Id: <55DA5264CE16D41186F600D0B74D6B09247243@KBS01>
+From: "Brian O'Donoghue" <Brian.ODonoghue@kbs.ie>
+To: "'ilug@linux.ie'" <ilug@linux.ie>
+Subject: RE: [ILUG] slashdot EW Dijkstra humor
+Date: Thu, 8 Aug 2002 13:40:30 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+
+<snip>
+>Tracking it down showed that my
+>predecessor's "add new entries to the end of its linked list" function
+>recursively called itself with each following link until the terminating
+>one showed up. Of course it died miserably when it ran out of stack. I'm
+>sure he felt he'd done a good days work when he planted that bomb for
+>me.
+
+/Enter the rant.
+
+One thing that really bugs me is when people say things like.
+
+"On the machies we have these days you don't have to worry about
+ writing optimised code" or "don't worry about writing
+ things inline, just use a function"
+
+"Yeah and add a procedure prolog or eight", I always counter,
+to be told
+"On the machines we have these days....."
+
+Boggle.
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

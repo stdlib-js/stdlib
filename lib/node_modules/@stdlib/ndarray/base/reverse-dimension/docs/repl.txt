@@ -1,0 +1,41 @@
+
+{{alias}}( x, dim, writable )
+    Returns a view of an input ndarray in which the order of elements along a
+    specified dimension is reversed.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    dim: integer
+        Index of dimension to reverse. If less than zero, the index is resolved
+        relative to the last dimension, with the last dimension corresponding to
+        the value `-1`.
+
+    writable: boolean
+        Boolean indicating whether a returned ndarray should be writable. This
+        parameter only applies to ndarray constructors which support read-only
+        instances.
+
+    Returns
+    -------
+    out: ndarray
+        Output array view.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] )
+    <ndarray>
+    > x.shape
+    [ 2, 2 ]
+    > var y = {{alias}}( x, 0, false )
+    <ndarray>
+    > y.shape
+    [ 2, 2 ]
+    > {{alias:@stdlib/ndarray/to-array}}( y )
+    [ [ 3, 4 ], [ 1, 2 ] ]
+
+    See Also
+    --------
+

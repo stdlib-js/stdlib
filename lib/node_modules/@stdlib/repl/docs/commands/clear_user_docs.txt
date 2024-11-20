@@ -1,0 +1,41 @@
+
+clearUserDocs( [options] )
+    Deletes user-defined documentation.
+
+    Parameters
+    ----------
+    options: Object (optional)
+    	Options.
+
+    options.include: RegExp|ArrayLikeObject (optional)
+    	Documentation inclusion filter.
+
+    options.exclude: RegExp|ArrayLikeObject (optional)
+    	Documentation exclusion filter.
+
+    options.filter: string (optional)
+        Filter type. This option is only applicable for array-like inclusion and
+        exclusion filters. May be one of the following:
+
+        -   'alias': filter based on documentation alias. If a filter matches a
+        documentation alias, the user-defined documentation is removed.
+        -   'value': filter based on object reference. If a filter matches an
+        associated object reference, the user-defined documentation is removed.
+        -   '*': filter based on both documentation alias and object reference.
+        If a filter matches either a documentation alias or an associated object
+        reference, the user-defined documentation is removed.
+
+        Default: '*'.
+
+    Examples
+    --------
+    > function foo() {};
+    > userDoc( 'foo', foo, '\nfoo()\n    Foo bar.\n' );
+    > help( foo )
+    > clearUserDocs();
+    > help( foo )
+
+    See Also
+    --------
+    userDoc
+

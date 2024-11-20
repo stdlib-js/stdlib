@@ -1,0 +1,94 @@
+From secprog-return-507-jm=jmason.org@securityfocus.com  Wed Sep 18 11:50:54 2002
+Return-Path: <secprog-return-507-yyyy=spamassassin.taint.org@securityfocus.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 4472916F03
+	for <jm@localhost>; Wed, 18 Sep 2002 11:50:53 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 18 Sep 2002 11:50:53 +0100 (IST)
+Received: from outgoing.securityfocus.com ([205.206.231.27]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8I4XsC12571 for
+    <jm@jmason.org>; Wed, 18 Sep 2002 05:33:54 +0100
+Received: from unknown (unknown [205.206.231.19]) by
+    outgoing.securityfocus.com (Postfix) with QMQP id 9727BA30C2;
+    Tue, 17 Sep 2002 20:13:31 -0600 (MDT)
+Mailing-List: contact secprog-help@securityfocus.com; run by ezmlm
+Precedence: bulk
+List-Id: <secprog.list-id.securityfocus.com>
+List-Post: <mailto:secprog@securityfocus.com>
+List-Help: <mailto:secprog-help@securityfocus.com>
+List-Unsubscribe: <mailto:secprog-unsubscribe@securityfocus.com>
+List-Subscribe: <mailto:secprog-subscribe@securityfocus.com>
+Delivered-To: mailing list secprog@securityfocus.com
+Delivered-To: moderator for secprog@securityfocus.com
+Received: (qmail 11785 invoked from network); 17 Sep 2002 15:39:18 -0000
+Date: Tue, 17 Sep 2002 14:51:23 +0200 (CEST)
+From: Allan Jensen <lists@snotboble.net>
+To: Richard Bartlett <richard@hackerimmunity.com>
+Cc: secprog@securityfocus.com
+Subject: Re: The risks of client systems writing to server registry
+In-Reply-To: <20020905134739.1071.qmail@mail.securityfocus.com>
+Message-Id: <Pine.LNX.4.44.0209171437060.19311-100000@plonku.snotboble.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+
+On 5 Sep 2002, Richard Bartlett wrote:
+
+Richard,
+
+> I have a customer who is developing some printer driver code to allow 
+> custom driver settings (n-up, booklet, duplex etc.) to be saved up to the 
+> server to be retrieved by other users.   The data is being written, by a 
+> printer driver (using the logged on users authentication, to a registry 
+> key) HKLM\SYSTEM\CurrentControlSet\Control\Print\Environments\Windows NT 
+> x86\Drivers\Version-3\{Driver Name}\{Custom Key}\Subkey).
+
+Let me get this straight; a registry key is loaded from the server onto 
+the client workstations who can modify it, then write it back onto the 
+server's own registry - which is not going to use it?
+
+> The question is, what are the security risks of allowing users to write 
+> to this key?  The data is string data, in the form of delimited numeric 
+> values.  This data is then retrieved by capable printer drivers and 
+> interpreted.
+> 
+> The risks as I see it are twofold;
+> (1) The risks of a compromise to the server using this registry key.  I 
+> think this is unlikeley as the server itself does not use this data, only 
+> client PC's do.  Unless someone knows a way to travel out of a hive up 
+> the registry bypassing the permissions set using regedt32.
+
+What is the reason to write a registry key to a server if the server 
+itself is not using it?
+I don't think you should worry too much about someone travelling out of 
+the hive, but again, I'm curious as to how the driver actually modifies 
+the keys on the server.
+
+> (2) The risks of a compromise to the client (far more likely).  This 
+> would probably be by a malformed or extremely long string in the key 
+> value, which would presumably lead to either DOS or system compromise by 
+> buffer overflow on the client system.
+
+And if the client writes the key back onto the server, yes, there's wide 
+open for something nasty here.
+Two other things spring to mind; 
+1) If anyone can modify the key, how do you make sure that two users are 
+not overwriting the same key, thereby causing undesirable effects.
+2) If anyone have permissions to write to the key (and below), anyone can 
+create thousands of extra keys under this key, thereby filling up the 
+registry. The result of such a thing is obvious.
+
+If I got this all wrong, I'd be happy that you clarify a bit more and tell 
+me where I might have misunderstood.
+
+
+Med venlig hilsen / Best regards,
+-Allan Jensen
+
+Si hoc signum legere potes, operis boni in rebus Latinus alacribus et 
+fructuosis potiri potes!
+
+
+
+

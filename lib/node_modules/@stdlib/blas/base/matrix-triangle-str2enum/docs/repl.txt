@@ -1,0 +1,25 @@
+
+{{alias}}( value )
+    Returns the enumeration constant associated with a BLAS matrix triangle.
+
+    Downstream consumers of this function should *not* rely on specific integer
+    values (e.g., `UPPER == 0`). Instead, the function should be used in an
+    opaque manner.
+
+    Parameters
+    ----------
+    value: string
+        Matrix triangle string.
+
+    Returns
+    -------
+    out: integer|null
+        Enumeration constant.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'upper' )
+    <number>
+
+    See Also
+    --------

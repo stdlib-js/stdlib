@@ -1,0 +1,34 @@
+
+{{alias}}( [value] )
+    Returns the number of hours in a year according to the Gregorian calendar.
+
+    By default, the function returns the number of hours in the current year
+    (according to local time). To determine the number of hours for a particular
+    year, provide either a year or a `Date` object.
+
+    The function's return value is a generalization and does **not** take into
+    account inaccuracies due to daylight savings conventions, crossing
+    timezones, or other complications with time and dates.
+
+    Parameters
+    ----------
+    value: integer|Date (optional)
+        Year or `Date` object.
+
+    Returns
+    -------
+    out: integer
+        Number of hours in a year.
+
+    Examples
+    --------
+    > var num = {{alias}}()
+    <number>
+    > num = {{alias}}( 2016 )
+    8784
+    > num = {{alias}}( 2017 )
+    8760
+
+    See Also
+    --------
+

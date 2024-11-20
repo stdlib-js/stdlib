@@ -1,0 +1,181 @@
+From fork-admin@xent.com  Thu Aug  8 18:04:04 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7E791440CF
+	for <jm@localhost>; Thu,  8 Aug 2002 13:04:01 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 08 Aug 2002 18:04:01 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g78H16220953 for <jm@jmason.org>;
+    Thu, 8 Aug 2002 18:01:12 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id C36532940C6; Thu,  8 Aug 2002 09:53:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mailpound.com (unknown [151.204.51.95]) by xent.com
+    (Postfix) with SMTP id 3106C2940BB for <fork@xent.com>; Thu,
+    8 Aug 2002 09:52:37 -0700 (PDT)
+From: "Bob Maier" <info7@mailpound.com>
+To: "JOSEPH  ABITANTE" <fork@spamassassin.taint.org>
+Subject: Selling Travel in Today's Economy
+MIME-Version: 1.0
+Message-Id: <20020808165237.3106C2940BB@xent.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 8 Aug 2002 12:16:05 -0400
+Content-Type: text/html; charset="ISO-8859-1"
+Content-Transfer-Encoding: 8bit
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Selling Travel in Today's Economy</title>
+</head>
+
+<body>
+
+<div>
+  <font size="2">Good morning!</font>
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  <font size="2">Since it may have been awhile since you visited us
+at&nbsp;<a href="http://www.mailpound.com">www.mailpound.com</a>&nbsp;I
+  wanted to update you on what is happening. When we launched the MailPound
+  almost two years ago, our focus was on saving &quot;Time, Toner and
+  Trees&quot;&nbsp;by providing an alternative for&nbsp;organizing the huge
+  number of faxes suppliers sent travel agents each week. Our most popular
+  feature was the FAM section, followed by the Weekly Sweepstakes.</font>
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  <font size="2">But that has changed.</font>
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  <font size="2">Like many involved in selling retail travel, we have been
+  striving to find ways to succeed in a challenging environment. Additional
+  commission cuts, the aftermath of 9/11, and the drop in the stock
+market, has
+  had a cumulative effect on all of us. To survive, to succeed, we know
+that we
+  will need to work harder, work smarter, and work together. We have
+gotten a
+  tremendous amount of support from travel agents and this has translated
+into
+  the ability to get more support for travel agents from suppliers.</font>
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  <font size="2">Our focus has expanded from providing a resource for
+searching supplier
+  Special Offers to providing a suite of tools and services that can create
+  sales and raise commissions. Almost all of these services are supplier
+  supported and FREE to travel agents.
+</div>
+<ul>
+  <li><font size="2">Actively seek out the best&nbsp;e-commerce
+values</font>
+  <li><font size="2">Help&nbsp;you market Special Offers to your
+clients</font>
+  <li><font size="2">Host personal web sites for travel agents with
+MailPound
+    content*</font>
+  <li><font size="2">Offer&nbsp;higher commissions through
+consolidation</font>
+  <li><font size="2">Organize sales incentives from suppliers</font>
+  <li><font size="2">Provide new technology for fast and easy&nbsp;online
+    bookings</font>
+  <li><font size="2">Provide your clients with the ability to book through
+you,
+    online</font></li>
+</ul>
+<div>
+  <font size="1">*&nbsp;MP<em>direct</em> services are offered for
+$9.95/month</font>
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  <font size="2">We invite you to visit us soon at <a
+href="http://www.mailpound.com">www.mailpound.com</a>&nbsp;or
+  check out the links shown below. See how the FREE services we offer the
+travel
+  agent community can help you succeed. The Summer is almost over, now is
+the
+  time to prepare for the upcoming selling season.</font>
+</div>
+<div>
+  &nbsp;
+</div>
+<ul dir="ltr" style="MARGIN-RIGHT: 0px">
+  <ul>
+    <li><font size="2">For more information regarding higher commissions
+and booking online: <a
+href="http://www.mailpound.com/BLISS_Intro.HTM">
+www.mailpound.com/BLISS_Intro.HTM</a>
+    <li>For more information about your personal web site:<br>
+      <a
+href="http://www.mailpound.com/mpdirect">www.mailpound.com/mpdirect</a>
+    <li>To register FREE at MailPound:<br>
+      <a
+href="http://www.mailpound.com/registration/">
+www.mailpound.com/registration/</a></li>
+  </ul>
+</ul>
+<div dir="ltr">
+  <br>
+  <font size="2">Sincerely,</font>
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  <font size="2">Bob Maier, President<br>
+  SMART Travel Technologies, Inc.</font>
+</div>
+<div>
+  <font size="2"><a
+href="mailto:rmaier@smart2000.com">rmaier@smart2000.com</a><br>
+  856-983-6100&nbsp; Ext. 101<br>
+  12 East Stow Road, Suite 210<br>
+  Marlton, New Jersey 08053</font>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><font color="#331172" size="2">If you do not want to receive these
+messages
+in the future, please reply to this message with REMOVE in the subject
+line.</font></p>
+
+</body>
+
+</html>
+http://xent.com/mailman/listinfo/fork
+
+

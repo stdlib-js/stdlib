@@ -1,0 +1,158 @@
+From fork-admin@xent.com  Sun Sep 22 21:57:43 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 631F116F03
+	for <jm@localhost>; Sun, 22 Sep 2002 21:57:42 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sun, 22 Sep 2002 21:57:42 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8MF0sC05387 for <jm@jmason.org>;
+    Sun, 22 Sep 2002 16:00:54 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id A07E72940A2; Sun, 22 Sep 2002 07:57:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from sunserver.permafrost.net (u172n16.hfx.eastlink.ca
+    [24.222.172.16]) by xent.com (Postfix) with ESMTP id 4C99329409A for
+    <fork@xent.com>; Sun, 22 Sep 2002 07:56:18 -0700 (PDT)
+Received: from [192.168.123.179] (helo=permafrost.net) by
+    sunserver.permafrost.net with esmtp (Exim 3.35 #1 (Debian)) id
+    17t84r-0001m6-00; Sun, 22 Sep 2002 11:51:17 -0300
+Message-Id: <3D8DDBC8.8030602@permafrost.net>
+From: Owen Byrne <owen@permafrost.net>
+User-Agent: Mozilla/5.0 (Windows; U; Win98; en-US; rv:1.1) Gecko/20020826
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: Owen Byrne <owen@permafrost.net>
+Cc: Gary Lawrence Murphy <garym@canada.com>,
+	"Mr. FoRK" <fork_list@hotmail.com>, fork@xent.com,
+	Digital Bearer Settlement List <dbs@philodox.com>
+Subject: Re: sed /s/United States/Roman Empire/g
+References: <979BE8FE-CCF6-11D6-817E-000393A46DEA@alumni.caltech.edu>
+    <DAV72xvjPkQTGpaoG1V00000fd0@hotmail.com>
+    <p05111a27b9b1d842c9fe@[66.149.49.6]> <m24rcjl8gh.fsf@maya.dyndns.org>
+    <p05111a02b9b264038af0@[66.149.49.6]> <3D8DCF62.4040809@permafrost.net>
+Content-Type: multipart/related;
+    boundary="------------090600030109070305070809"
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 22 Sep 2002 12:03:36 -0300
+
+
+--------------090600030109070305070809
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+
+Owen Byrne wrote:
+
+> R. A. Hettinga wrote:
+>
+>> -----BEGIN PGP SIGNED MESSAGE-----
+>> Hash: SHA1
+>>
+>> At 10:32 AM -0400 on 9/21/02, Gary Lawrence Murphy wrote:
+>>
+>>
+>>  
+>>
+>>> Cool --- I wasn't aware that the US had lifted it's population out
+>>> of poverty! When did this happen? I wonder where the media gets the
+>>> idea that the wealth gap is widening and deepening...
+>>>   
+>>
+>>
+>> All the world loves a smartass...
+>>
+>> :-).
+>>
+>> Seriously. Look at he life expectancy and human carrying capacity of
+>> this continent before the Europeans got here. Look at it now. Even
+>> for descendants of the original inhabitants. Even for the descendents
+>> of slaves, who were brought here by force.
+>>
+>> More stuff, cheaper. That's progress.
+>>
+>> Poverty, of course, is not relative. It's absolute. Disparity in
+>> wealth has nothing to do with it.
+>>
+>> It's like saying that groups have rights, when, in truth, only
+>> individuals do. Like group rights, "disparity" in wealth is
+>> statistical sophistry.
+>>
+>>
+>> Besides, even if you can't help the distribution, industrial wealth
+>> is almost always transitory, and so is relative poverty, even when
+>> there are no confiscatory death-taxes. The 20th anniversary Forbes
+>> 400 just came out, and only a few tens of people are still there
+>> since 1982, a time which had significantly higher marginal taxes on
+>> wealth, income, and inheritance than we do now. More to the point,
+>> they're nowhere near the top.
+>>  
+>>
+Lovely quote from the Forbes 400 list:
+"and not a single Astor, Vanderbilt or Morgan rates a mention on the 
+current Forbes Four Hundred. "
+
+But you have to studiously ignore the 4 Rockefellers, 3 Gettys, 3 
+Hearsts,  Fords, Kelloggs, Wrigleys,
+and so on.
+
+There are more self-made people on the list than I previously alluded to 
+- I made a mistake. Most
+of them seem to have Ivy League educations, or are Ivy League dropouts, 
+suggesting to me that they weren't
+exactly poor to start with. Some of them have lovely self-made stories 
+like:
+#347, Johnston, Summerfield K Jr
+track this personTrack This Person 
+<http://www.forbes.com/peopletracker/add_person.jhtml?successURL=%2Fpeopletracker%2Fprotected%2Frich_tracker.jhtml&errorURL=%2Fpeopletracker%2Ferror.jhtml&personId=221899>
+
+ | See all Bacon Makers 
+<http://www.forbes.com/lists/results.jhtml?passListId=54&passYear=2002&passListType=Person&resultsStart=1&resultsHowMany=25&resultsSortProperties=%2Bnumberfield1%2C%2Bstringfield1&resultsSortCategoryName=rank&searchParameter1=10Str%7C%7CPatCS%7C%7CBacon+Makers&category1=Magazine+Section&category2=category&searchParameter2=unset> 
+
+
+70 , self made
+*Source: Food 
+<http://www.forbes.com/lists/results.jhtml?passListId=54&passYear=2002&passListType=Person&resultsStart=1&resultsHowMany=25&resultsSortProperties=%2Bnumberfield1%2C%2Bstringfield1&resultsSortCategoryName=rank&searchParameter1=5Str%7C%7CPatCS%7C%7CFood&category1=Industry>, 
+Coca-Cola* (quote 
+<http://www.forbes.com/finance/mktguideapps/compinfo/CompanyTearsheet.jhtml?tkr=CCE>, 
+executives 
+<http://www.forbes.com/peopletracker/results.jhtml?startRow=0&name=&ticker=CCE>, 
+news <http://markets2.forbes.com/rpt/Company_News.asp?Symbol=CCE>)
+
+Net Worth: *$680 mil* returnee
+Hometown: Chattanooga , TN
+
+*Marital Status:* married , 5 children
+
+
+Grandfather James and partner landed first Coca-Cola bottling franchise 
+in 1899. Company passed down 3 generations to Summerfield 1950s. Became 
+largest independent Coke bottler. Merged with Coca-Cola Enterprises 1991.
+
+<javascript:openMap('pol');> <javascript:openMap('dist');>
+
+
+
+(...by a compensation committee)
+Owen
+
+
+
+
+
+
+--------------090600030109070305070809--
+
+

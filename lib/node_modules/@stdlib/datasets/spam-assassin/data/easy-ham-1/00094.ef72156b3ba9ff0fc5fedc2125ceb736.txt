@@ -1,0 +1,88 @@
+From ilug-admin@linux.ie  Mon Sep  2 13:12:53 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0046D47C84
+	for <zzzz@localhost>; Mon,  2 Sep 2002 07:44:57 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 02 Sep 2002 12:44:57 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g82B72Z30034 for
+    <zzzz-ilug@spamassassin.taint.org>; Mon, 2 Sep 2002 12:07:02 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA00554; Mon, 2 Sep 2002 12:05:51 +0100
+Received: from dspsrv.com (vir.dspsrv.com [193.120.211.34]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id MAA00506 for <ilug@linux.ie>;
+    Mon, 2 Sep 2002 12:05:31 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host vir.dspsrv.com
+    [193.120.211.34] claimed to be dspsrv.com
+Received: from itg-gw.cr008.cwt.esat.net ([193.120.242.226]
+    helo=waider.ie) by dspsrv.com with asmtp (Exim 3.35 #1) id
+    17lp1O-0004xK-00; Mon, 02 Sep 2002 12:05:30 +0100
+Message-Id: <3D7344D7.6010702@waider.ie>
+Date: Mon, 02 Sep 2002 12:00:39 +0100
+From: Waider <waider@waider.ie>
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.1) Gecko/20020827
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: vincent@cunniffe.net
+Cc: ilug@linux.ie
+Subject: Re: [ILUG] Email list management howto
+References: <OFEGLPGPCHPACFLJPAILOEICECAA.macarthy@iol.ie>
+    <3D7344E1.8010309@diva.ie>
+X-Enigmail-Version: 0.65.2.0
+X-Enigmail-Supports: pgp-inline, pgp-mime
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+-----BEGIN PGP SIGNED MESSAGE-----
+
+Vincent Cunniffe wrote:
+| Justin MacCarthy wrote:
+|
+|> I think I'll ask this question again, as I sent on friday afternoon.
+  :-)
+|
+|
+| Mailman ;-)
+|
+| Trust me, you do *not* want to running your own mailing lists
+| on your own software.
+|
+| You'll wind up crying in a dark room looking for something
+| high-voltage to stick your fingers into.
+
+All things considered, I get that effect with Mailman, but the viable
+alternatives are ezmlm, which is loonware and I'm avoiding on principle,
+and majordomo, which seems to have stagnated. Oh, and there's apparently
+something called SmartList which is a bitch to set up.
+
+Waider.
+- --
+waider@waider.ie / Yes, it /is/ very personal of me
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org
+
+iQEVAwUBPXNE16HbXyzZsAb3AQH2KQf/XqeOMaHNXAlzbmgd5iYd9VQaAgWAR2DQ
+kdpz0NbECR2OS7PJoLY9lsPKgNshpJcDZIRsxJvXmfp5YRNq0AyP0HGGwRvWgjgB
+0N9HG/Rgez7S5RhU79RAuhpFb9XO1XzMI0gSkDHSGefQsUOAZ69vZVLLsiRiyHFy
+4u+vrPVTP0rYR7haX41JXu42GVWfT2K2DDFftAimqGCsJnu2MXcMI/Ptq1rtxhXD
+WZhxCR+FAwirEk8Yz9Drl8+gJL0YJQFSoWumQzqLKKutx1lJvv7OS4yDjGRaQpxm
+Jmq8lifudZayccbixx7ZcXMSlpP4C45Wj5XJSYW8RCjU1bgxTqhMbQ==
+=eG8X
+-----END PGP SIGNATURE-----
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

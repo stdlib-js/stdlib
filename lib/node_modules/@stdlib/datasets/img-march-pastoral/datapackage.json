@@ -1,0 +1,35 @@
+{
+  "name": "stdlib-datasets-img-march-pastoral",
+  "version": "",
+  "title": "March Pastoral",
+  "description": "Image of sheep in a pastoral setting.",
+  "resources": [
+    {
+      "name": "march-pastoral-jpg",
+      "title": "March Pastoral",
+      "description": "Image of sheep in a pastoral setting.",
+      "format": "jpeg",
+      "mediatype": "image/jpeg",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/image.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Getty's Open Content Program",
+      "web": "http://www.getty.edu/art/collection/objects/141994/peter-henry-emerson-a-march-pastoral-suffolk-british-1888/"
+    }
+  ],
+  "keywords": [
+    "image",
+    "img",
+    "sheep",
+    "pastoral",
+    "pasture",
+    "field",
+    "animals",
+    "nature"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}

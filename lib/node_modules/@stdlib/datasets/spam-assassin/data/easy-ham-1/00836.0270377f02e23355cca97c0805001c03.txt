@@ -1,0 +1,100 @@
+From fork-admin@xent.com  Tue Oct  1 15:30:14 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id D32BA16F16
+	for <jm@localhost>; Tue,  1 Oct 2002 15:30:00 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 01 Oct 2002 15:30:00 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g91EIEK28680 for <jm@jmason.org>;
+    Tue, 1 Oct 2002 15:18:15 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 56C262940CB; Tue,  1 Oct 2002 07:18:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mta6.snfc21.pbi.net (mta6.snfc21.pbi.net [206.13.28.240])
+    by xent.com (Postfix) with ESMTP id BEDF429409E for <fork@xent.com>;
+    Tue,  1 Oct 2002 07:17:05 -0700 (PDT)
+Received: from endeavors.com ([66.126.120.174]) by mta6.snfc21.pbi.net
+    (iPlanet Messaging Server 5.1 (built May  7 2001)) with ESMTP id
+    <0H3B001XU3OMRY@mta6.snfc21.pbi.net> for fork@xent.com; Tue,
+    01 Oct 2002 07:17:10 -0700 (PDT)
+From: Gregory Alan Bolcer <gbolcer@endeavors.com>
+Subject: Re: A moment of silence for the First Amendment & Angry Liberal Yutes
+To: FoRK <fork@spamassassin.taint.org>
+Reply-To: gbolcer@endeavors.com
+Message-Id: <3D99AC17.6A04F9BB@endeavors.com>
+Organization: Endeavors Technology, Inc.
+MIME-Version: 1.0
+X-Mailer: Mozilla 4.79 [en] (X11; U; IRIX 6.5 IP32)
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-Accept-Language: en, pdf
+References: <F101ZbLAX3cf3ednHM300000284@hotmail.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 01 Oct 2002 07:07:19 -0700
+
+Russell Turpin wrote:
+> 
+> Gregory Alan Bolcer:
+> >I'm not sure since I haven't attended civics class
+> >in quite some time, but the First Amendment doesn't cover protected speech,
+> >hate speech, or actions. ..
+> 
+> The first two are wrong. The first amendment DOES
+> protect speech the Supreme Court decides it protects
+> (duh!), and that happens to include most of what
+> people consider hate speech. Unlike many other
+> nations, the US has no laws against hate speech, per
+> se. And the first amendment is the reason for that.
+> 
+
+
+This was poking fun of the practice of making
+up differnt types of speech with different
+types of protected status.  I think the
+laws specialing out hate and protected speech
+are ridiculous.  The point I keep trying to make
+is that there's only two types, speech and action. 
+I agree, they are all speech and should be 
+covered by the First Amendment, but
+
+If hate speech is so protected, why are certain
+states trying to prosecute people for it?  There's
+only two answers and one of them is wrong.
+
+  1) Because hate speech is different and needs to
+     have a different level of protection dictated
+     by whoever's offended at the time.
+  2) It's because it's not just speech, but action.
+     A action who's consequences are foreseeable by 
+     any reasonable person. 
+
+Hate speech is mislabeled.  It's really "threat".  I think
+they let the mislabeling perpetuate as there's advantage
+in being able to counter-threat with loss of liberty and
+money through civil and criminal lawsuits for people THEY
+don't like.  
+
+
+Greg
+
+
+
+> _________________________________________________________________
+> Join the world?s largest e-mail service with MSN Hotmail.
+> http://www.hotmail.com
+
+

@@ -1,0 +1,91 @@
+From rpm-list-admin@freshrpms.net  Thu Aug 29 10:58:30 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8F7F544155
+	for <jm@localhost>; Thu, 29 Aug 2002 05:58:16 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 10:58:16 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7SMIMZ12443 for
+    <jm-rpm@jmason.org>; Wed, 28 Aug 2002 23:18:23 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7SMG2J30252; Thu, 29 Aug 2002 00:16:02
+    +0200
+Received: from unknown (80-24-132-206.uc.nombres.ttd.es [80.24.132.206])
+    (authenticated) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g7SMFKJ21832 for <rpm-list@freshrpms.net>; Thu, 29 Aug 2002 00:15:20 +0200
+From: Matthias Saou <matthias@egwn.net>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: ALSA (almost) made easy
+Message-Id: <20020829001503.7aab8ccf.matthias@egwn.net>
+In-Reply-To: <1030572601.1643.26.camel@bobcat.ods.org>
+References: <20020828004215.4bca2588.matthias@rpmforge.net>
+    <1030507320.3214.39.camel@herald.dragonsdawn.net>
+    <20020828100430.378c3856.matthias@rpmforge.net>
+    <1030546780.3214.54.camel@herald.dragonsdawn.net>
+    <20020828112645.B13047@ti19>
+    <1030551945.10627.4.camel@wanderlust.prognet.com>
+    <20020828190006.2200a154.matthias@rpmforge.net>
+    <1030567737.10901.9.camel@bobcat.ods.org>
+    <1030568564.10902.22.camel@bobcat.ods.org>
+    <1030572601.1643.26.camel@bobcat.ods.org>
+Organization: Electronic Group Interactive
+X-Mailer: Sylpheed version 0.8.1claws (GTK+ 1.2.10; i386-redhat-linux)
+Reply-BY: Tue, 24 Jul 2000 19:02:00 +1000
+X-Operating-System: GNU/Linux power!
+X-Message-Flag: Try using a real operating system : GNU/Linux power!
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Thu, 29 Aug 2002 00:15:03 +0200
+Date: Thu, 29 Aug 2002 00:15:03 +0200
+
+Once upon a time, Ville wrote :
+
+> Ok, some more nits: alsa-xmms doesn't work if I don't have
+> alsa-lib-devel installed, but xmms dies on startup telling me:
+> 
+>    Cannot load alsa library: libasound.so: cannot open shared object
+>    file: No such file or directory
+> 
+> libasound.so is part of alsa-lib-devel... if I install it, the ALSA XMMS
+> output plugins works fine.
+
+OK, will fix :-)
+
+> I can't install the xine stuff, because xine-libs needs libGLcore.so.1,
+> which I can't find anywhere (NVidia stuff?  I have Radeon 7500...)
+
+Argh, got bitten again! :-(
+Will fix too...
+
+Thanks a lot for pointing these out!
+Matthias
+
+-- 
+Matthias Saou                                World Trade Center
+-------------                                Edificio Norte 4 Planta
+System and Network Engineer                  08039 Barcelona, Spain
+Electronic Group Interactive                 Phone : +34 936 00 23 23
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

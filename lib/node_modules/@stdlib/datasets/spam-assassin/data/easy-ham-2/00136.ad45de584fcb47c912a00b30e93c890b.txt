@@ -1,0 +1,91 @@
+From ilug-admin@linux.ie  Mon Jul 29 11:28:25 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id CBFA344157
+	for <jm@localhost>; Mon, 29 Jul 2002 06:25:19 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 11:25:19 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6T5fRi12646 for
+    <jm-ilug@jmason.org>; Mon, 29 Jul 2002 06:41:27 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id GAA19822; Mon, 29 Jul 2002 06:39:10 +0100
+Received: from odin.isw.intel.com (swfdns01.isw.intel.com [192.55.37.143])
+    by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id GAA19746 for
+    <ilug@linux.ie>; Mon, 29 Jul 2002 06:39:02 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host swfdns01.isw.intel.com
+    [192.55.37.143] claimed to be odin.isw.intel.com
+Received: from swsmsxvs01.isw.intel.com (swsmsxvs01.isw.intel.com
+    [172.28.130.22]) by odin.isw.intel.com (8.11.6/8.11.6/d: solo.mc,
+    v 1.42 2002/05/23 22:21:11 root Exp $) with SMTP id g6T5d1u19413 for
+    <ilug@linux.ie>; Mon, 29 Jul 2002 05:39:01 GMT
+Received: from swsmsx17.isw.intel.com ([172.28.130.21]) by
+    swsmsxvs01.isw.intel.com (NAVGW 2.5.2.11) with SMTP id
+    M2002072906375012076 ; Mon, 29 Jul 2002 06:37:50 +0100
+Received: by swsmsx17.isw.intel.com with Internet Mail Service
+    (5.5.2653.19) id <L81TBA3M>; Mon, 29 Jul 2002 06:42:57 +0100
+Message-Id: <A92DB5482F76D51193290002A50A56120156329F@irsmsx103.ir.intel.com>
+From: "Satelle, StevenX" <stevenx.satelle@intel.com>
+To: "'Robert Synnott'" <r.synnott@oceanfree.net>,
+	Liam Bedford <lbedford@netnoteinc.com>, ilug@linux.ie
+Subject: RE: [ILUG] [OT] Oceanfree Dial-up Number
+Date: Mon, 29 Jul 2002 06:38:52 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain; charset="iso-8859-15"
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    GAA19746
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+I've found that while my win2k box doesnt care what username/passwd it uses
+the linux box wont work except using oceanfree/oceanfree. Whether this is a
+machine or oceanfree issue I leave to yourself to decide.
+
+-----Original Message-----
+From: Robert Synnott [mailto:r.synnott@oceanfree.net]
+Sent: 27 July 2002 11:39
+To: Liam Bedford; ilug@linux.ie
+Subject: Re: [ILUG] [OT] Oceanfree Dial-up Number
+
+
+Actually, they do; though they aren't case sensitive. It seems to have some 
+trouble wtih PAP/CHAP authentication  as well; you might have to do it by 
+script?
+
+On Friday 26 July 2002 12:37, Liam Bedford wrote:
+> On Fri, 26 Jul 2002 12:23:24 +0100
+>
+> HAMILTON,DAVID (HP-Ireland,ex2) claiming to think:
+> > Hi All,
+> >
+> > I am trying to find the Oceanfree ISDN dialup number for Dublin.
+> > http://iiu.taint.org/ appears to be down, or at least I can't get to it,
+> > and I don't want to pay oceanfree ¤10 per second for tech support :-).
+>
+> 01-2434321
+> username: oceanfree
+> password: oceanfree
+>
+> don't think the username and password matter much though.
+>
+> L.
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

@@ -1,0 +1,45 @@
+From jm@netnoteinc.com  Thu Aug 15 11:01:24 2002
+Return-Path: <yyyy@netnoteinc.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0C65743C36
+	for <jm@localhost>; Thu, 15 Aug 2002 06:00:55 -0400 (EDT)
+Received: from mail.webnote.net [193.120.211.219]
+	by localhost with POP3 (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 15 Aug 2002 11:00:55 +0100 (IST)
+Received: from mandark.labs.netnoteinc.com ([194.165.165.123])
+	by webnote.net (8.9.3/8.9.3) with ESMTP id KAA07409
+	for <jm@mail.webnote.net>; Thu, 15 Aug 2002 10:54:49 +0100
+Received: from phobos.labs.netnoteinc.com (phobos.labs.netnoteinc.com [192.168.2.14])
+	by mandark.labs.netnoteinc.com (8.11.6/8.11.6) with ESMTP id g7F9rjp32374;
+	Thu, 15 Aug 2002 10:53:45 +0100
+Received: by phobos.labs.netnoteinc.com (Postfix, from userid 500)
+	id 9D3F044134; Thu, 15 Aug 2002 05:52:18 -0400 (EDT)
+Received: from phobos (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP
+	id 96E25341E8; Thu, 15 Aug 2002 10:52:18 +0100 (IST)
+To: "Craig R.Hughes" <craig@deersoft.com>
+Cc: mail@vipul.net, Justin Mason <yyyy@netnoteinc.com>,
+	razor-users@lists.sourceforge.net
+Subject: Re: [Razor-users] dot-tk registrations hitting Razor 
+In-Reply-To: Message from "Craig R.Hughes" <craig@deersoft.com> 
+   of "Wed, 14 Aug 2002 22:57:17 PDT." <DADE4F77-B013-11D6-BF02-00039396ECF2@deersoft.com> 
+From: yyyy@spamassassin.taint.org (Justin Mason)
+X-GPG-Key-Fingerprint: 0A48 2D8B 0B52 A87D 0E8A  6ADD 4137 1B50 6E58 EF0A
+Date: Thu, 15 Aug 2002 10:52:13 +0100
+Sender: yyyy@webnote.net
+Message-Id: <20020815095218.9D3F044134@phobos.labs.netnoteinc.com>
+
+
+"Craig R.Hughes" said:
+
+> Hmm, tricky because we've got Razor1 and Razor2 rolled into one 
+> rule.  Probably should break them out as separate rules anyway 
+> so they can get different scores, etc.  Not too hard to do, but 
+> it's nearly 11pm so I'll see if I can get to it tomorrow.
+
+IMO 2 separate rules is a good idea anyway, razor2 has totally different
+hitrates (generally better I think) to razor1.
+
+--j.
+

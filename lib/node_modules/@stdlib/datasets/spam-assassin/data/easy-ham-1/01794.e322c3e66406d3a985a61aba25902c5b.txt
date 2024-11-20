@@ -1,0 +1,83 @@
+From 0xdeadbeef-request@petting-zoo.net  Tue Sep 17 23:29:14 2002
+Return-Path: <0xdeadbeef-request@petting-zoo.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 30A5F16F03
+	for <jm@localhost>; Tue, 17 Sep 2002 23:29:14 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 17 Sep 2002 23:29:14 +0100 (IST)
+Received: from petting-zoo.net (IDENT:postfix@petting-zoo.net
+    [64.166.12.219]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8HMGYC28668 for <jm-deadbeef@jmason.org>; Tue, 17 Sep 2002 23:16:34 +0100
+Received: by petting-zoo.net (Postfix, from userid 1004) id 1A13CEA27;
+    Tue, 17 Sep 2002 15:16:01 -0700 (PDT)
+Old-Return-Path: <gkm@petting-zoo.net>
+Delivered-To: 0xdeadbeef@petting-zoo.net
+Received: from petting-zoo.net (localhost [127.0.0.1]) by petting-zoo.net
+    (Postfix) with ESMTP id 126A8EA0A for <0xdeadbeef@petting-zoo.net>;
+    Tue, 17 Sep 2002 15:15:57 -0700 (PDT)
+From: gkm@petting-zoo.net (glen mccready)
+To: 0xdeadbeef@petting-zoo.net
+Subject: Virgin's latest airliner.
+Date: Tue, 17 Sep 2002 15:15:57 -0700
+Sender: gkm@petting-zoo.net
+Message-Id: <20020917221558.126A8EA0A@petting-zoo.net>
+Resent-Message-Id: <uTtosB.A.DRE.gm6h9@petting-zoo.net>
+Resent-From: 0xdeadbeef@petting-zoo.net
+X-Mailing-List: <0xdeadbeef@petting-zoo.net> archive/latest/540
+X-Loop: 0xdeadbeef@petting-zoo.net
+List-Post: <mailto:0xdeadbeef@petting-zoo.net>
+List-Help: <mailto:0xdeadbeef-request@petting-zoo.net?subject=help>
+List-Subscribe: <mailto:0xdeadbeef-request@petting-zoo.net?subject=subscribe>
+List-Unsubscribe: <mailto:0xdeadbeef-request@petting-zoo.net?subject=unsubscribe>
+Precedence: list
+Resent-Sender: 0xdeadbeef-request@petting-zoo.net
+Resent-Date: Tue, 17 Sep 2002 15:16:01 -0700 (PDT)
+
+
+Forwarded-by: William Knowles <wk@c4i.org>
+
+http://www.thesun.co.uk/article/0,,2-2002430339,00.html
+
+By PAUL CROSBIE
+Sep 16, 2002
+
+VIRGIN'S latest airliner is being revamped after randy passengers
+discovered a tiny cabin was just the place to join the Mile High Club.
+
+The £130million Airbus 340-600 is fitted with a 5ft x 4ft mother and
+baby room with a plastic table meant for changing nappies.
+
+But couples keep wrecking it by sneaking in for a quick bonk.
+
+Virgin has replaced the table several times even though the plane only
+came into service a few weeks ago.
+
+It is named Claudia Nine after sexy model Claudia Schiffer, 32, who
+launched it in July.
+
+Now Virgin bosses have asked Airbus to build a stronger table.
+
+At first, German engineers responsible for the jet's interior were
+baffled by the problem.
+
+The table is designed to take the weight of a mum and baby.
+
+One Airbus worker said: "We couldn't work it out. Then the penny
+dropped. It didn't occur to the Germans that this might happen. It
+caused great amusement."
+
+The firm say the cost of strengthening the tables will be about £200.
+
+A Virgin spokeswoman said: "Those determined to join the Mile High
+Club will do so despite the lack of comforts.
+
+"We don't mind couples having a good time but this is not something
+that we would encourage because of air regulations."
+
+The new Airbus is the world's longest airliner, with teasing slogan
+"Mine is bigger than yours". Virgin is using it on flights to the Far
+East and the US.
+
+

@@ -1,0 +1,36 @@
+From lisa@freightmart.com  Mon Jun 24 17:04:38 2002
+Return-Path: lisa@freightmart.com
+Delivery-Date: Sat May 18 02:31:11 2002
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g4I1VBe30577 for
+    <jm@jmason.org>; Sat, 18 May 2002 02:31:11 +0100
+Received: from freightmart.com (116-154-239-64.pajo.com [64.239.154.116]
+    (may be forged)) by webnote.net (8.9.3/8.9.3) with SMTP id CAA15934 for
+    <jm@jmason.org>; Sat, 18 May 2002 02:31:10 +0100
+From: lisa@freightmart.com
+Message-Id: <200205180131.CAA15934@webnote.net>
+Date: Fri, 17 May 2002 18:36:10 -0700
+To: yyyy@spamassassin.taint.org
+X-Mailer: Version 5.0
+Subject: An Invitation to Advertise on Freightmart!
+Organization: Freightmart.com Corporation
+X-Keywords: 
+Content-Type: text/html; charset=US-ASCII
+
+<html>
+<head>
+<title>FREIGHTMART Mail Campaign</title>
+<meta http-equiv="Content-Type" content="text/html;">
+
+<DIV align="center">
+	<a href="http://www.freightmart.com"><img src="http://www.freightmart.com/images/ads/emailcampaign.gif" alt="" border="0"></a>
+	<br><br><a href="http://www.freightmart.com">FREIGHTMART.COM - Ship Anything...Anywhere...Anytime...Auction Style!</a>
+	<br><br><a href="mailto:lisa@freightmart.com?subject=Need More Info">Need More Info?</a>&nbsp;|&nbsp;
+	<a href="http://www.freightmart.com/getTemplate.cfm?Id=25">If you're a Shipper</a>&nbsp;|&nbsp;
+	<a href="http://www.freightmart.com/getTemplate.cfm?Id=26">If you're a Forwarder</a>
+	<br><br>To be <b>REMOVED</b> from any future offers, simply <a href="mailto:remove@freightmart.com?subject=REMOVE">CLICK HERE!</a>
+</DIV>
+
+</body>
+</html>
+

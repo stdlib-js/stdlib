@@ -1,0 +1,48 @@
+Received: from hawaii.ireaye.net ([205.244.94.208])
+	by linux.midrange.com (8.11.6/8.11.6) with ESMTP id g6L4QH414517
+	for <gibbs@MIDRANGE.COM>; Sat, 20 Jul 2002 23:26:18 -0500
+Message-Id: <200207210426.g6L4QH414517@linux.midrange.com>
+Received: from alabama (192.168.4.195:1146) by hawaii.ireaye.net (LSMTP for Windows NT v1.1b) with SMTP id <82.000001A0@hawaii.ireaye.net>; 21 Jul 2002 11:28:26 -0400
+Date: Sat, 20 Jul 2002 23:02:01 -0400
+From: Callie<callie@DEALSWEEPS.IREAYE.NET>
+Subject: Discover® Platinum Clear Card New Clear Design!
+To: gibbs@MIDRANGE.COM
+Mime-Version: 1.0
+Content-Type: text/html
+X-Status: 
+X-Keywords: 
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<META name="Ad" content="LS051XI00821853CG">
+
+<HTML>
+<HEAD>
+<TITLE>Discover&reg; Platinum Clear Card</TITLE>
+</HEAD>
+<MAP NAME="apply">
+<AREA SHAPE=RECT COORDS="165,426,314,457" HREF="http://www.DealSweeps.com/c.asp?LK=13086&EM=82185326&Q=6236">
+</MAP>
+<BODY BGCOLOR=#FFFFFF>
+<IMG SRC="http://img.freeze.com/hot_number.gif" WIDTH=525 HEIGHT=525 USEMAP="#apply" BORDER="0">
+<LEFT><FONT SIZE="2"><BR>*Click <A HREF="http://www.DealSweeps.com/c.asp?LK=13087&EM=82185326&Q=6236">here</A> to see information about the APR, fees and other
+Important Information.</FONT>
+<!--DISCLAIMER-->
+<br>
+<center>
+<table width="60%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td><font face="Verdana, Arial, Helvetica, sans-serif" size="-2"><br>
+      The preceding message was sent to you as an opt-in subscriber to DealSweeps.
+      We will continue to bring you valuable offers on the products and services
+      that interest you most. If you wish to unsubscribe please click here: <a href="http://www.dealsweeps.com/remove.asp?E=gibbs@MIDRANGE.COM">http://www.dealsweeps.com/remove.asp?E=gibbs@MIDRANGE.COM</a><br>
+      </font></td>
+  </tr>
+</table>
+<img src="http://www.DealSweeps.com/o.asp?SC=5919&Q=6236&EM=82185326" width=1 height=1>
+</center>
+<!--/////82185326///gibbs@MIDRANGE.COM///51/////-->
+<!--DISCLAIMER--></BODY>
+</HTML>
+
+

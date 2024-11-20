@@ -1,0 +1,76 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Tue Sep 10 20:01:36 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Tue, 10 Sep 2002 15:01:36 -0400
+Subject: [Spambayes] Current histograms
+In-Reply-To: <200209100929.g8A9TJV27347@localhost.localdomain>
+Message-ID: <BIEJKCLHCIOIHAGOKOLHEEHMDKAA.tim.one@comcast.net>
+
+[Anthony Baxter]
+> Well, I've finally got around to pulling down the SF code. Starting
+> with it, and absolutely zero local modifications, I see the following:
+
+How many runs is this summarizing?  For each, how many ham&spam were in the
+training set?  How many in the prediction sets?  What were the error rates
+(run rates.py over your output file)?
+
+The effect of set sizes on accuracy rates isn't known.  I've informally
+reported some results from just a few controlled experiments on that.
+Jeremy reported improved accuracy by doubling the training set size, but
+that wasn't a controlled experiment (things besides just training set size
+changed between "before" and "after").
+
+> Ham distribution for all runs:
+> * = 589 items
+>   0.00 35292 ************************************************************
+>   2.50    36 *
+>   5.00    21 *
+>   7.50    12 *
+>  10.00     6 *
+> ...
+>  90.00     4 *
+>  92.50     8 *
+>  95.00    15 *
+>  97.50   441 *
+>
+> Spam distribution for all runs:
+> * = 504 items
+>   0.00   393 *
+>   2.50    17 *
+>   5.00    18 *
+>   7.50    12 *
+>  10.00     4 *
+> ...
+>  90.00    11 *
+>  92.50    16 *
+>  95.00    45 *
+>  97.50 30226 ************************************************************
+>
+>
+> My next (current) task is to complete the corpus I've got - it's currently
+> got ~ 9000 ham, 7800 spam, and about 9200 currently unsorted. I'm tossing
+> up using either hammie or spamassassin to do the initial sort  -
+previously
+> I've used various forms of 'grep' for keywords and a little gui thing to
+> pop a message up and let me say 'spam/ham', but that's just getting too,
+too
+> tedious.
+
+Yup, tagging data is mondo tedious, and mistakes hurt.
+
+I expect hammie will do a much better job on this already than hand
+grepping.  Be sure to stare at the false positives and get the spam out of
+there.
+
+> I can't make it available en masse, but I will look at finding some of
+> the more 'interesting' uglies. One thing I've seen (consider this
+> 'anecdotal' for now) is that the 'skip' tokens end up in a _lot_ of the
+> f-ps.
+
+With probabilities favoring ham or spam?  A skip token is produced in lieu
+of "word" more than 12 chars long and without any high-bit characters.  It's
+possible that they helped me because raw HTML produces lots of these.
+However, if you're running current CVS, Tokenizer/retain_pure_html_tags
+defaults to False now, so HTML decorations should vanish before body
+tokenization.
+

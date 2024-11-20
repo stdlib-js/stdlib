@@ -1,0 +1,33 @@
+
+{{alias}}( [ch] )
+    Returns the data type string associated with a provided single letter
+    character abbreviation.
+
+    If not provided an abbreviation, the function returns an object mapping
+    single letter character abbreviations to data type strings.
+
+    If provided an unknown/unsupported abbreviation, the function returns
+    `null`.
+
+    Parameters
+    ----------
+    ch: string (optional)
+        Single letter character abbreviation.
+
+    Returns
+    -------
+    out: Object|string|null
+        Data type string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'd' )
+    'float64'
+    > out = {{alias}}( 'foobar' )
+    null
+    > var obj = {{alias}}()
+    {...}
+
+    See Also
+    --------
+

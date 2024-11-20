@@ -1,0 +1,30 @@
+From rssfeeds@jmason.org  Wed Sep 25 10:23:36 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id E071816F03
+	for <jm@localhost>; Wed, 25 Sep 2002 10:23:35 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 25 Sep 2002 10:23:35 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8P80OC18100 for
+    <jm@jmason.org>; Wed, 25 Sep 2002 09:00:24 +0100
+Message-Id: <200209250800.g8P80OC18100@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: scripting <rssfeeds@spamassassin.taint.org>
+Subject: Wired: "An urgent business proposition and requests for urgent
+    assistance f
+Date: Wed, 25 Sep 2002 08:00:24 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://scriptingnews.userland.com/backissues/2002/09/24#When:4:10:18AM
+Date: Tue, 24 Sep 2002 11:10:18 GMT
+
+Wired[1]: "An urgent business proposition and requests for urgent assistance 
+from a so-called Nigerian official were heeded by a Detroit bank secretary in 
+the latest example of how the ubiquitous e-mail scam actually works."
+
+[1] http://www.wired.com/news/business/0,1367,55329,00.html
+
+

@@ -1,0 +1,67 @@
+From rpm-list-admin@freshrpms.net  Mon Jul 22 19:21:37 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5712A440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 14:21:36 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 19:21:36 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFHV902190 for
+    <jm-rpm@jmason.org>; Mon, 22 Jul 2002 16:17:31 +0100
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by webnote.net
+    (8.9.3/8.9.3) with ESMTP id NAA31920 for <jm-rpm@jmason.org>;
+    Mon, 22 Jul 2002 13:56:58 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6MCl1C23888; Mon, 22 Jul 2002 14:47:02
+    +0200
+Received: from basket.ball.reliam.net (basket.ball.reliam.net
+    [213.91.6.7]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g6MCjgC23381
+    for <rpm-list@freshrpms.net>; Mon, 22 Jul 2002 14:45:42 +0200
+Received: from localhost.localdomain (pD9EB55BC.dip.t-dialin.net
+    [217.235.85.188]) by basket.ball.reliam.net (Postfix) with SMTP id
+    072973DC3 for <rpm-list@freshrpms.net>; Mon, 22 Jul 2002 14:45:34 +0200
+    (CEST)
+From: che <che666@uni.de>
+To: rpm-zzzlist@freshrpms.net
+Subject: central management
+Message-Id: <20020722144004.3e8e8f0a.che666@uni.de>
+Organization: che
+X-Mailer: Sylpheed version 0.8.0 (GTK+ 1.2.10; i386-redhat-linux)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Mon, 22 Jul 2002 14:40:04 -0400
+Date: Mon, 22 Jul 2002 14:40:04 -0400
+
+hello!
+well in my eyes something like a public contrib repository would be nice (where everyone can at least upload spec files) and a something like a "repository directory" with a collection of available repositorys and their content.
+
+i am personally on a dsl dialup connection with 16kb/s upstream cap and that kinda sucks perhaps i am gonna still create a respository for small windowmaker dockapps in the future :).
+
+what do you think?
+
+thanks,
+che
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

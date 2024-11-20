@@ -1,0 +1,73 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug 29 11:08:08 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 55B8D47C70
+	for <jm@localhost>; Thu, 29 Aug 2002 06:06:05 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:06:05 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7T0ufZ21838 for <jm-sa@jmason.org>; Thu, 29 Aug 2002 01:56:41 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17kDaS-00069z-00; Wed,
+    28 Aug 2002 17:55:04 -0700
+Received: from sc-grnvl-66-169-48-229.chartersc.net ([66.169.48.229]
+    helo=NS.ramblernet.com) by usw-sf-list1.sourceforge.net with esmtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17kDZU-00032I-00 for
+    <spamassassin-talk@lists.sourceforge.net>; Wed, 28 Aug 2002 17:54:04 -0700
+Received: from A700 (A700 [192.123.60.2]) by NS.ramblernet.com
+    (8.11.6/8.11.6) with SMTP id g7T0kvr27715 for
+    <spamassassin-talk@lists.sourceforge.net>; Wed, 28 Aug 2002 20:46:57 -0400
+Reply-To: <ken@ramblernet.com>
+From: "Ken" <ken@ramblernet.com>
+To: <spamassassin-talk@example.sourceforge.net>
+Message-Id: <01da01c24ef6$585238a0$023c7bc0@A700>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook CWS, Build 9.0.2416 (9.0.2910.0)
+Importance: Normal
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+X-Mailscanner: Found to be clean
+Subject: [SAtalk] Having a problem
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 28 Aug 2002 20:52:25 -0400
+Date: Wed, 28 Aug 2002 20:52:25 -0400
+
+Now that I have spam assassin and mailscanner working, how can I have smap
+deleted rather than forwarded?
+
+I changed spam.actions.conf to "default	delete" but it is still sending it
+to the recipient.
+
+Thanks,
+Ken
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

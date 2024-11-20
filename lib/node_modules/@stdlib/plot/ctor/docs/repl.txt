@@ -1,0 +1,452 @@
+
+{{alias}}( [x, y,] [options] )
+    Returns a plot instance for creating 2-dimensional plots.
+
+    `x` and `y` arguments take precedence over `x` and `y` options.
+
+    Parameters
+    ----------
+    x: Array<Array>|Array<TypedArray> (optional)
+        An array of arrays containing x-coordinate values.
+
+    y: Array<Array>|Array<TypedArray> (optional)
+        An array of arrays containing y-coordinate values.
+
+    options: Object (optional)
+        Options.
+
+    options.autoRender: boolean (optional)
+        Boolean indicating whether to re-render on a 'change' event. Default:
+        false.
+
+    options.autoView: boolean (optional)
+        Boolean indicating whether to generate an updated view on a 'render'
+        event. Default: false.
+
+    options.colors: string|Array<string> (optional)
+        Data color(s). Default: 'category10'.
+
+    options.description: string (optional)
+        Plot description.
+
+    options.engine: string (optional)
+        Plot engine. Default: 'svg'.
+
+    options.height: number (optional)
+        Plot height (in pixels). Default: 400.
+
+    options.labels: Array|Array<string> (optional)
+        Data labels.
+
+    options.isDefined: Function (optional)
+        An accessor function indicating whether a datum is defined.
+
+    options.lineStyle: string|Array<string> (optional)
+        Data line style(s). Must be one of: '-', '--', ':', '-.', or 'none'.
+        Default: '-'.
+
+    options.lineOpacity: number|Array<number> (optional)
+        Data line opacity. Must be on the interval [0,1]. Default: 0.9.
+
+    options.lineWidth: integer|Array<integer> (optional)
+        Data line width (in pixels). Default: 2.
+
+    options.paddingBottom: integer (optional)
+        Bottom padding (in pixels). Default: 80.
+
+    options.paddingLeft: integer (optional)
+        Left padding (in pixels). Default: 90.
+
+    options.paddingRight: integer (optional)
+        Right padding (in pixels). Default: 20.
+
+    options.paddingTop: integer (optional)
+        Top padding (in pixels). Default: 80.
+
+    options.renderFormat: string (optional)
+        Plot render format. Must be one of 'vdom' or 'html'. Default: 'vdom'.
+
+    options.symbols: string|Array<string> (optional)
+        Data symbols. Must be one of 'closed-circle', 'open-circle', or 'none'.
+        Default: 'none'.
+
+    options.symbolsOpacity: number|Array<number> (optional)
+        Symbols opacity. Must be on the interval [0,1]. Default: 0.9.
+
+    options.symbolsSize: integer|Array<integer> (optional)
+        Symbols size (in pixels). Default: 6.
+
+    options.title: string (optional)
+        Plot title.
+
+    options.viewer: string (optional)
+        Plot viewer. Must be one of 'browser', 'terminal', 'stdout', 'window',
+        or 'none'. Default: 'none'.
+
+    options.width: number (optional)
+        Plot width (in pixels). Default: 400.
+
+    options.x: Array<Array>|Array<TypedArray> (optional)
+        x-coordinate values.
+
+    options.xAxisOrient: string (optional)
+        x-axis orientation. Must be either 'bottom' or 'top'. Default: 'bottom'.
+
+    options.xLabel: string (optional)
+        x-axis label. Default: 'x'.
+
+    options.xMax: number|null (optional)
+        Maximum value of the x-axis domain. If `null`, the maximum value is
+        calculated from the data. Default: null.
+
+    options.xMin: number|null (optional)
+        Minimum value of the x-axis domain. If `null`, the minimum value is
+        calculated from the data. Default: null.
+
+    options.xNumTicks: integer (optional)
+        Number of x-axis tick marks. Default: 5.
+
+    options.xRug: boolean|Array<boolean> (optional)
+        Boolean flag(s) indicating whether to render one or more rug plots along
+        the x-axis.
+
+    options.xRugOrient: string|Array<string> (optional)
+        x-axis rug plot orientation(s). Must be either 'bottom' or 'top'.
+        Default: 'bottom'.
+
+    options.xRugOpacity: number|Array<number> (optional)
+       x-axis rug plot opacity. Must be on the interval [0,1]. Default: 0.1.
+
+    options.xRugSize: integer|Array<integer> (optional)
+       x-axis rug tick (tassel) size (in pixels). Default: 6.
+
+    options.xScale: string
+       x-axis scale. Default: 'linear'.
+
+    options.xTickFormat: string|null
+       x-axis tick format. Default: null.
+
+    options.y: Array<Array>|Array<TypedArray> (optional)
+        y-coordinate values.
+
+    options.yAxisOrient: string (optional)
+        x-axis orientation. Must be either 'left' or 'right'. Default: 'left'.
+
+    options.yLabel: string (optional)
+        y-axis label. Default: 'y'.
+
+    options.yMax: number|null (optional)
+        Maximum value of the y-axis domain. If `null`, the maximum value is
+        calculated from the data. Default: null.
+
+    options.yMin: number|null (optional)
+        Minimum value of the y-axis domain. If `null`, the minimum value is
+        calculated from the data. Default: null.
+
+    options.yNumTicks: integer (optional)
+        Number of x-axis tick marks. Default: 5.
+
+    options.yRug: boolean|Array<boolean> (optional)
+        Boolean flag(s) indicating whether to render one or more rug plots along
+        the y-axis.
+
+    options.yRugOrient: string|Array<string> (optional)
+        y-axis rug plot orientation(s). Must be either 'left' or 'right'.
+        Default: 'left'.
+
+    options.yRugOpacity: number|Array<number> (optional)
+       y-axis rug plot opacity. Must be on the interval [0,1]. Default: 0.1.
+
+    options.yRugSize: integer|Array<integer> (optional)
+       y-axis rug tick (tassel) size (in pixels). Default: 6.
+
+    options.yScale: string
+       y-axis scale. Default: 'linear'.
+
+    options.yTickFormat: string|null
+       y-axis tick format. Default: null.
+
+    Returns
+    -------
+    plot: Plot
+        Plot instance.
+
+    plot.render()
+        Renders a plot as a virtual DOM tree.
+
+    plot.view( [viewer] )
+        Generates a plot view.
+
+    plot.x
+        x-coordinate values. An assigned value must be an array where each
+        element corresponds to a plotted dataset.
+
+    plot.y
+        y-coordinate values. An assigned value must be an array, where each
+        element corresponds to a plotted dataset.
+
+    plot.labels
+        Data labels. During plot creation, each plotted dataset is assigned a
+        label. If the number of labels is less than the number of plotted
+        datasets, labels are reused using modulo arithmetic.
+
+    plot.isDefined( d, i )
+        An accessor function which defines whether a datum is defined. This
+        accessor is used to define how missing values are encoded. The default
+        behavior is to ignore values which are `NaN`.
+
+    plot.colors
+        Data colors. To set the color all plotted datasets, provide a color
+        name. To specify the colors for each dataset, provide an array of
+        colors. During plot creation, each plotted dataset is assigned one of
+        the provided colors. If the number of colors is less than the number of
+        plotted datasets, colors are reused using modulo arithmetic. Lastly,
+        colors may also be specified by providing the name of a predefined color
+        scheme. The following schemes are supported: 'category10', 'category20',
+        'category20b', and 'category20c'.
+
+    plot.lineStyle
+        Data line style(s). The following line styles are supported: '-' (solid
+        line), '--' (dashed line), ':' (dotted line), '-.' (alternating dashes
+        and dots), and 'none' (no line). To specify the line style for each
+        dataset, provide an array of line styles. During plot creation, each
+        plotted dataset is assigned a line style. If the number of line styles
+        is less than the number of plotted datasets, line styles are reused
+        using modulo arithmetic.
+
+    plot.lineOpacity
+        Data line opacity, where an opacity of `0.0` make a line completely
+        transparent and an opacity of `1.0` makes a line completely opaque. To
+        specify the line opacity for each dataset, provide an array of
+        opacities. During plot creation, each plotted dataset is assigned an
+        opacity. If the number of opacities is less than the number of plotted
+        datasets, opacities are reused using modulo arithmetic.
+
+    plot.lineWidth
+        Data line width(s). To specify the line width for each dataset, provide
+        an array of widths. During plot creation, each plotted dataset is
+        assigned a line width. If the number of line widths is less than the
+        number of plotted datasets, line widths are reused using modulo
+        arithmetic.
+
+    plot.symbols
+        Data symbols. The following symbols are supported: 'closed-circle'
+        (closed circles), 'open-circle' (open circles), and 'none' (no symbols).
+        To specify the symbols used for each dataset, provide an array of
+        symbols. During plot creation, each plotted dataset is assigned a
+        symbol. If the number of symbols is less than the number of plotted
+        datasets, symbols are reused using modulo arithmetic.
+
+    plot.symbolSize
+        Symbols size. To specify the symbols size for each dataset, provide an
+        array of sizes. During plot creation, each plotted dataset is assigned
+        a symbols size. If the number of sizes is less than the number of
+        plotted datasets, sizes are reused using modulo arithmetic.
+
+    plot.symbolsOpacity
+        Symbols opacity, where an opacity of `0.0` makes a symbol completely
+        transparent and an opacity of `1.0` makes a symbol completely opaque. To
+        specify the opacity for each dataset, provide an array of opacities.
+        During plot creation, each plotted dataset is assigned an opacity. If
+        the number of opacities is less than the number of plotted datasets,
+        opacities are reused using modulo arithmetic.
+
+    plot.width
+        Plot width (in pixels).
+
+    plot.height
+        Plot height (in pixels).
+
+    plot.paddingLeft
+        Plot left padding (in pixels). Left padding is typically used to create
+        space for a left-oriented y-axis.
+
+    plot.paddingRight
+        Plot right padding (in pixels). Right padding is typically used to
+        create space for a right-oriented y-axis.
+
+    plot.paddingTop
+        Plot top padding (in pixels). Top padding is typically used to create
+        space for a title or top-oriented x-axis.
+
+    plot.paddingBottom
+        Plot bottom padding (in pixels). Bottom padding is typically used to
+        create space for a bottom-oriented x-axis.
+
+    plot.xMin
+        Minimum value of the x-axis domain. When retrieved, if the value has
+        been set to `null`, the returned value is computed from the `x` data.
+
+    plot.xMax
+        Maximum value of the x-axis domain. When retrieved, if the value has
+        been set to `null`, the returned value is computed from the `x` data.
+
+    plot.yMin
+        Minimum value of the y-axis domain. When retrieved, if the value has
+        been set to `null`, the returned value is computed from the `y` data.
+
+    plot.yMax
+        Maximum value of the y-axis domain. When retrieved, if the value has
+        been set to `null`, the returned value is computed from the `y` data.
+
+    plot.xScale
+        Scale function for mapping values to a coordinate along the x-axis. The
+        following `scales` are supported: 'linear' (linear scale) and 'time'
+        (time scale). When retrieved, the returned value is a scale function.
+
+    plot.yScale
+        Scale function for mapping values to a coordinate along the y-axis. The
+        following `scales` are supported: 'linear' (linear scale) and 'time'
+        (time scale). When retrieved, the returned value is a scale function.
+
+    plot.xTickFormat
+        x-axis tick format (e.g., '%H:%M'). When retrieved, if the value has not
+        been set to `null`, the returned value is a formatting function.
+
+    plot.yTickFormat
+        y-axis tick format (e.g., '%%'). When retrieved, if the value has not
+        been set to `null`, the returned value is a formatting function.
+
+    plot.xNumTicks
+        Number of x-axis tick marks. If the value is set to `null`, the number
+        of tick marks is computed internally.
+
+    plot.yNumTicks
+        Number of y-axis tick marks. If the value is set to `null`, the number
+        of tick marks is computed internally.
+
+    plot.xAxisOrient
+        x-axis orientation. The following orientations are supported: 'bottom'
+        and 'top'.
+
+    plot.yAxisOrient
+        y-axis orientation. The following orientations are supported: 'left' and
+        'right'.
+
+    plot.xRug
+        Boolean flag(s) indicating whether to display a rug plot along the x-
+        axis. To specify the flag for each dataset, provide an array of
+        booleans. During plot creation, each plotted dataset is assigned a flag.
+        If the number of flags is less than the number of plotted datasets,
+        flags are reused using modulo arithmetic.
+
+    plot.yRug
+        Boolean flag(s) indicating whether to display a rug plot along the y-
+        axis. To specify the flag for each dataset, provide an array of
+        booleans. During plot creation, each plotted dataset is assigned a flag.
+        If the number of flags is less than the number of plotted datasets,
+        flags are reused using modulo arithmetic.
+
+    plot.xRugOrient
+        x-axis rug orientation. The following orientations are supported:
+        'bottom' or 'top'. To specify the x-axis rug orientation for each
+        dataset, provide an array of orientations. During plot creation, each
+        plotted dataset is assigned an orientation. If the number of
+        orientations is less than the number of plotted datasets, orientations
+        are reused using modulo arithmetic.
+
+    plot.yRugOrient
+        y-axis rug orientation. The following orientations are supported: 'left'
+        or 'right'. To specify the y-axis rug orientation for each dataset,
+        provide an array of orientations. During plot creation, each plotted
+        dataset is assigned an orientation. If the number of orientations is
+        less than the number of plotted datasets, orientations are reused using
+        modulo arithmetic.
+
+    plot.xRugOpacity
+        x-axis rug opacity, where an opacity of `0.0` makes a rug completely
+        transparent and an opacity of `1.0` makes a rug completely opaque. To
+        specify the x-axis rug opacity for each dataset, provide an array of
+        opacities. During plot creation, each plotted dataset is assigned an
+        opacity. If the number of opacities is less than the number of plotted
+        datasets, opacities are reused using modulo arithmetic.
+
+    plot.yRugOpacity
+        y-axis rug opacity, where an opacity of `0.0` makes a rug completely
+        transparent and an opacity of `1.0` makes a rug completely opaque. To
+        specify the y-axis rug opacity for each dataset, provide an array of
+        opacities. During plot creation, each plotted dataset is assigned an
+        opacity. If the number of opacities is less than the number of plotted
+        datasets, opacities are reused using modulo arithmetic.
+
+    plot.xRugSize
+        x-axis rug tick (tassel) size. To specify the x-axis rug size for each
+        dataset, provide an array of sizes. During plot creation, each plotted
+        dataset is assigned a tick size. If the number of sizes is less than the
+        number of plotted datasets, sizes are reused using modulo arithmetic.
+
+    plot.yRugSize
+        y-axis rug tick (tassel) size. To specify the y-axis rug size for each
+        dataset, provide an array of sizes. During plot creation, each plotted
+        dataset is assigned a tick size. If the number of sizes is less than the
+        number of plotted datasets, sizes are reused using modulo arithmetic.
+
+    plot.description
+        Plot description.
+
+    plot.title
+        Plot title.
+
+    plot.xLabel
+        x-axis label.
+
+    plot.yLabel
+        y-axis label.
+
+    plot.engine
+        Plot rendering engine. The following engines are supported: 'svg'.
+
+    plot.renderFormat
+        Plot render format. The following formats are supported: 'vdom' and
+        'html'.
+
+    plot.autoRender
+        Rendering mode. If `true`, an instance renders on each 'change' event;
+        otherwise, rendering must be triggered manually.
+
+    plot.viewer
+        Plot viewer. The following viewers are supported: 'none', 'stdout',
+        'window', and 'browser'.
+
+    plot.autoView
+        Viewer mode. If `true`, an instance generates an updated view on each
+        'render' event; otherwise, generating a view must be triggered manually.
+
+    plot.graphWidth
+        Computed property corresponding to the expected graph width.
+
+    plot.graphHeight
+        Computed property corresponding to the expected graph height.
+
+    plot.xDomain
+        Computed property corresponding to the x-axis domain.
+
+    plot.yDomain
+        Computed property corresponding to the y-axis domain.
+
+    plot.xRange
+        Computed property corresponding to the x-axis range.
+
+    plot.yRange
+        Computed property correspond to the y-axis range.
+
+    plot.xPos
+        A function which maps values to x-axis coordinate values.
+
+    plot.yPos
+        A function which maps values to y-axis coordinate values.
+
+    Examples
+    --------
+    > var plot = {{alias}}()
+    <Plot>
+
+    // Provide plot data at instantiation:
+    > var x = [[0.10, 0.20, 0.30]];
+    > var y = [[0.52, 0.79, 0.64]];
+    > plot = {{alias}}( x, y )
+    <Plot>
+
+    See Also
+    --------
+

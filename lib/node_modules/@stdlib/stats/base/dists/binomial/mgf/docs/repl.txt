@@ -1,0 +1,82 @@
+
+{{alias}}( t, n, p )
+    Evaluates the moment-generating function (MGF) for a binomial distribution
+    with number of trials `n` and success probability `p` at a value `t`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided a number of trials `n` which is not a nonnegative integer, the
+    function returns `NaN`.
+
+    If `p < 0` or `p > 1`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    t: number
+        Input value.
+
+    n: integer
+        Number of trials.
+
+    p: number
+        Success probability.
+
+    Returns
+    -------
+    out: number
+        Evaluated MGF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.5, 20, 0.2 )
+    ~11.471
+    > y = {{alias}}( 5.0, 20, 0.2 )
+    ~4.798e+29
+    > y = {{alias}}( 0.9, 10, 0.4 )
+    ~99.338
+    > y = {{alias}}( 0.0, 10, 0.4 )
+    1.0
+
+    > y = {{alias}}( NaN, 20, 0.5 )
+    NaN
+    > y = {{alias}}( 0.0, NaN, 0.5 )
+    NaN
+    > y = {{alias}}( 0.0, 20, NaN )
+    NaN
+
+    > y = {{alias}}( 2.0, 1.5, 0.5 )
+    NaN
+    > y = {{alias}}( 2.0, -2.0, 0.5 )
+    NaN
+    > y = {{alias}}( 2.0, 20, -1.0 )
+    NaN
+    > y = {{alias}}( 2.0, 20, 1.5 )
+    NaN
+
+
+{{alias}}.factory( n, p )
+    Returns a function for evaluating the moment-generating function (MGF) of a
+    binomial distribution with number of trials `n` and success probability `p`.
+
+    Parameters
+    ----------
+    n: integer
+        Number of trials.
+
+    p: number
+        Success probability.
+
+    Returns
+    -------
+    mgf: Function
+        Moment-generating function (MGF).
+
+    Examples
+    --------
+    > var myMGF = {{alias}}.factory( 10, 0.5 );
+    > var y = myMGF( 0.3 )
+    ~5.013
+
+    See Also
+    --------
+

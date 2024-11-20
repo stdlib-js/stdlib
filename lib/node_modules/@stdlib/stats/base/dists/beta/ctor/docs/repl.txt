@@ -1,0 +1,106 @@
+
+{{alias}}( [α, β] )
+    Returns a beta distribution object.
+
+    Parameters
+    ----------
+    α: number (optional)
+        First shape parameter. Must be greater than `0`. Default: `1.0`.
+
+    β: number (optional)
+        Second shape parameter. Must be greater than `0`. Default: `1.0`.
+
+    Returns
+    -------
+    beta: Object
+        Distribution instance.
+
+    beta.alpha: number
+        First shape parameter. If set, the value must be greater than `0`.
+
+    beta.beta: number
+        Second shape parameter. If set, the value must be greater than `0`.
+
+    beta.entropy: number
+        Read-only property which returns the differential entropy.
+
+    beta.kurtosis: number
+        Read-only property which returns the excess kurtosis.
+
+    beta.mean: number
+        Read-only property which returns the expected value.
+
+    beta.median: number
+        Read-only property which returns the median.
+
+    beta.mode: number
+        Read-only property which returns the mode.
+
+    beta.skewness: number
+        Read-only property which returns the skewness.
+
+    beta.stdev: number
+        Read-only property which returns the standard deviation.
+
+    beta.variance: number
+        Read-only property which returns the variance.
+
+    beta.cdf: Function
+        Evaluates the cumulative distribution function (CDF).
+
+    beta.logcdf: Function
+        Evaluates the natural logarithm of the cumulative distribution function
+        (CDF).
+
+    beta.logpdf: Function
+        Evaluates the natural logarithm of the probability density function
+        (PDF).
+
+    beta.mgf: Function
+        Evaluates the moment-generating function (MGF).
+
+    beta.pdf: Function
+        Evaluates the probability density function (PDF).
+
+    beta.quantile: Function
+        Evaluates the quantile function at probability `p`.
+
+    Examples
+    --------
+    > var beta = {{alias}}( 1.0, 1.0 );
+    > beta.alpha
+    1.0
+    > beta.beta
+    1.0
+    > beta.entropy
+    0.0
+    > beta.kurtosis
+    -1.2
+    > beta.mean
+    0.5
+    > beta.median
+    0.5
+    > beta.mode
+    NaN
+    > beta.skewness
+    0.0
+    > beta.stdev
+    ~0.289
+    > beta.variance
+    ~0.0833
+    > beta.cdf( 0.8 )
+    0.8
+    > beta.logcdf( 0.8 )
+    ~-0.223
+    > beta.logpdf( 1.0 )
+    0.0
+    > beta.mgf( 3.14 )
+    ~7.0394
+    > beta.pdf( 1.0 )
+    1.0
+    > beta.quantile( 0.8 )
+    0.8
+
+    See Also
+    --------
+

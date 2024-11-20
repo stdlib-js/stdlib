@@ -1,0 +1,12 @@
+
+runSlide()
+    Runs slide code.
+
+    Examples
+    --------
+    > runSlide()
+
+    See Also
+    --------
+    next, prev
+

@@ -1,0 +1,130 @@
+From fork-admin@xent.com  Mon Jul 29 11:29:07 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9803344164
+	for <jm@localhost>; Mon, 29 Jul 2002 06:25:33 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 11:25:33 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6RAEMi18867 for
+    <jm@JMASON.ORG>; Sat, 27 Jul 2002 11:14:22 +0100
+Received: from xent.com ([64.161.22.236]) by webnote.net (8.9.3/8.9.3)
+    with ESMTP id EAA15255 for <jm@jmason.org>; Sat, 27 Jul 2002 04:21:00
+    +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 061F82940A6; Fri, 26 Jul 2002 20:20:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp-relay-1.adobe.com (smtp-relay-1.adobe.com
+    [192.150.11.1]) by xent.com (Postfix) with ESMTP id DE91D29409B for
+    <fork@xent.com>; Fri, 26 Jul 2002 20:19:44 -0700 (PDT)
+Received: from inner-relay-1.corp.adobe.com (inner-relay-1 [153.32.1.51])
+    by smtp-relay-1.adobe.com (8.12.3/8.12.3) with ESMTP id g6R3M4ih003450 for
+    <fork@xent.com>; Fri, 26 Jul 2002 20:22:04 -0700 (PDT)
+Received: from mailsj-v1.corp.adobe.com (mailsj-dev.corp.adobe.com
+    [153.32.1.192]) by inner-relay-1.corp.adobe.com (8.12.3/8.12.3) with ESMTP
+    id g6R3KLuE007172 for <fork@xent.com>; Fri, 26 Jul 2002 20:20:21 -0700
+    (PDT)
+Received: from scarab23.adobe.com ([130.248.184.183]) by
+    mailsj-v1.corp.adobe.com (Netscape Messaging Server 4.15 v1 Jul 11 2001
+    16:32:57) with ESMTP id GZW18Z00.HKP; Fri, 26 Jul 2002 20:19:47 -0700
+Message-Id: <4.3.2.7.2.20020726201859.023b1810@mailsj-v1>
+X-Sender: carkenbe@mailsj-v1
+X-Mailer: QUALCOMM Windows Eudora Version 4.3.2
+To: Tom <tomwhore@slack.net>, "Adam L. Beberg" <beberg@mithral.com>
+From: Chris Arkenberg <carkenbe@adobe.com>
+Subject: Re: USA USA WE ARE NUMBER ....six.
+Cc: fork@spamassassin.taint.org
+In-Reply-To: <Pine.BSO.4.44.0207261100060.13392-100000@crank.slack.net>
+References: <Pine.BSO.4.44.0207261053170.13392-100000@crank.slack.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"; format=flowed
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 26 Jul 2002 20:19:49 -0700
+
+Good point, Tom.
+
+We want to be led. It's much easier to blame our leaders, throw stones at 
+scapegoats, than to actually take responsibility for our actions and think 
+through the consequences.
+
+At 11:14 AM 7/26/2002 -0400, Tom wrote:
+>On Fri, 26 Jul 2002, Tom wrote:
+>
+>--]On Thu, 25 Jul 2002, Adam L. Beberg wrote:
+>--]
+>--]--]Drains what? My wallet you mean? America _is_ greed, that's who and 
+>what we
+>--]--]are.
+>--]
+>--]You really are about as clueless as a fridge without tcp/ip.
+>
+>Before there is a jump off to some thread I cant be around to respond to
+>(contractions now getting closer and longer and stronger but the kids head
+>is still a bit off true) let me say this.
+>
+>(and this is the short rambling take on America as it stands today, so
+>flesh it our for me if you want)
+>
+>The problem with america is not its goverment, its companies, its
+>corportate raider mentality, its throw away buy a new one culture, its not
+>that we are greedy or shallow or over religious or under religious or even
+>religious in the context of a secular ruling system......
+>
+>The problem with america is its citizens, the things that make it up. We
+>are not greedy, we are sheep. We are easily led from one trend to the
+>next, we are diverted in our lives to follow any one of a number of media
+>induced "goals" that run us through commericalistic hoops shedding not
+>only our worth but our fine grain value as individuals.
+>
+>We are a nation of a million differnt parts seeking a homogony of sameness
+>thru right thought, right action right purcheses right hopes right dreams
+>right teampicking right listeningtothem right mouthingoftheessentialwords
+>and right sameness
+>
+>We seek to loose the individuality of our past by plunging headlong into
+>the lava searing melting pot to come out with all our quak spins set the
+>same as anyone else.
+>
+>In so doing we subvert and subject ourselves tothe "status quo" in ways
+>that makes Islam look  like an excersise in free will and hippy love
+>magic.
+>
+>We have allowed a subset of our citizens to set the pace for us, mostly
+>because to set the pace sets you apart and that is a bad thing in the
+>melting pot society. Thats why the rulers, the trend setters, the rich and
+>the famous are the THEM.
+>
+>We then follow that with THEY set us up to do, we run the various rat
+>mazes that have been constructed and call this a live, We chase the
+>cheese, which is green, moldy and made of paper. We climb the moutians set
+>up as goals. We fight the OTHERS who we are told are evil. In the end we
+>judge our living on how well we followed one of the mazes and how fat we
+>are before the slaughter.
+>
+>We are the blue collar worker, the office worker, the disability con, the
+>tech warrior, the homemaker, the godfearing do gooder, the celeb.
+>
+>or we are the OTHER, the dont fiters, the Trouble Makers.
+>
+>-tom
+>
+>
+>
+>http://xent.com/mailman/listinfo/fork
+
+http://xent.com/mailman/listinfo/fork
+
+

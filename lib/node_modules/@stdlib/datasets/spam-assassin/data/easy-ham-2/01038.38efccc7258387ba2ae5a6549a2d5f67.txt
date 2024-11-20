@@ -1,0 +1,51 @@
+From fork-admin@xent.com  Fri Aug 16 11:28:05 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2AA7C441AC
+	for <jm@localhost>; Fri, 16 Aug 2002 06:03:32 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 16 Aug 2002 11:03:32 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7G2c8a31957 for <jm@jmason.org>;
+    Fri, 16 Aug 2002 03:38:09 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 6C5E52940AC; Thu, 15 Aug 2002 19:36:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mithral.com (watcher.mithral.com [204.153.244.1]) by
+    xent.com (Postfix) with SMTP id B4CBA294098 for <fork@xent.com>;
+    Thu, 15 Aug 2002 19:35:50 -0700 (PDT)
+Received: (qmail 15642 invoked by uid 1111); 16 Aug 2002 02:36:57 -0000
+From: "Adam L. Beberg" <beberg@mithral.com>
+To: <fork@spamassassin.taint.org>
+Subject: Food bits
+Message-Id: <Pine.LNX.4.33.0208151936280.15634-100000@watcher.mithral.com>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 15 Aug 2002 19:36:57 -0700 (PDT)
+
+OK, this site rocks...
+
+http://www.nal.usda.gov/fnic/foodcomp/Data/SR15/sr15.html
+
+You are what you eat :)
+
+- Adam L. "Duncan" Beberg
+  http://www.mithral.com/~beberg/
+  beberg@mithral.com
+
+http://xent.com/mailman/listinfo/fork
+

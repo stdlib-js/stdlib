@@ -1,0 +1,12 @@
+
+{{alias}}
+    Apéry's constant.
+
+    Examples
+    --------
+    > {{alias}}
+    1.2020569031595942
+
+    See Also
+    --------
+

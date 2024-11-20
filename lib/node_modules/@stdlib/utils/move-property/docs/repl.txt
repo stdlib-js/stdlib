@@ -1,0 +1,38 @@
+
+{{alias}}( source, prop, target )
+    Moves a property from one object to another object.
+
+    The property is deleted from the source object and the property's descriptor
+    is preserved during transfer.
+
+    If a source property is not configurable, the function throws an error, as
+    the property cannot be deleted from the source object.
+
+    Parameters
+    ----------
+    source: Object
+        Source object.
+
+    prop: string
+        Property to move.
+
+    target: Object
+        Target object.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether operation was successful.
+
+    Examples
+    --------
+    > var obj1 = { 'a': 'b' };
+    > var obj2 = {};
+    > var bool = {{alias}}( obj1, 'a', obj2 )
+    true
+    > bool = {{alias}}( obj1, 'c', obj2 )
+    false
+
+    See Also
+    --------
+

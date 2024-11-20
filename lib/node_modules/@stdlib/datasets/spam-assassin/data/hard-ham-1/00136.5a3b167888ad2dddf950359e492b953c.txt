@@ -1,0 +1,161 @@
+Return-Path: <update@list.theregister.co.uk>
+Received: from webnote.net (mail.webnote.net [193.120.211.219])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFk0I09785
+	for <qqqqqqqqqq-reg@spamassassin.taint.org>; Mon, 22 Jul 2002 16:46:00 +0100
+Received: from list.theregister.co.uk (theregister-sql2.hosted.netline.net.uk [213.40.196.63])
+	by webnote.net (8.9.3/8.9.3) with ESMTP id DAA29820
+	for <qqqqqqqqqq-reg@spamassassin.taint.org>; Mon, 22 Jul 2002 03:48:34 +0100
+From: update@list.theregister.co.uk
+Received: from localhost ([127.0.0.1] helo=list.theregister.co.uk)
+	by list.theregister.co.uk with smtp (Exim 3.31 #1)
+	id 17WSYl-0007dp-0C
+	for <qqqqqqqqqq-reg@spamassassin.taint.org>; Mon, 22 Jul 2002 03:04:27 +0100
+Date: Mon, 22 Jul 2002 03:00:01 +0100
+Subject: Reg Headlines Monday July 22
+To: Reg Subscribers <update@list.theregister.co.uk>
+Precedence: list
+X-Bulkmail: 2.05
+Message-Id: <E17WSYl-0007dp-0C@list.theregister.co.uk>
+
+Today's Headlines from The Register
+-----------------------------------
+
+    To unsubscribe from this daily news update, see the instructions at
+    the end of this message.
+
+
+
+Software
+
+    Bill Gates spams the world on Trustworthy Computing
+    Integrity? He's heard of it too...
+        http://www.theregister.co.uk/content/4/26292.html
+
+    ElcomSoft rubbishes eBook security ahead of Sklyarov case
+    Shot across the bows
+        http://www.theregister.co.uk/content/4/26291.html
+
+    Capitalist tool Forbes tools up for Linux
+    Insurgents win glossy special report accolade
+        http://www.theregister.co.uk/content/4/26289.html
+
+    China to build own version of Windows 98
+    Compatible with Office 2000 and Word, says here
+        http://www.theregister.co.uk/content/4/26278.html
+
+Personal Hardware
+
+    Dan sold - but not as going concern
+    New owner buys assets
+        http://www.theregister.co.uk/content/54/26287.html
+
+Semiconductors
+
+    Inventor of Risc chips dies
+    John Cocke RIP
+        http://www.theregister.co.uk/content/3/26293.html
+
+Internet
+
+    JPEG guardians vow to defend free images
+    All your compression tech belongs to … er,  somebody in Texas
+        http://www.theregister.co.uk/content/6/26296.html
+
+    KPNQwest employees abandon posts
+    Network on cruise control
+        http://www.theregister.co.uk/content/6/26295.html
+
+    BT broadband barometer shows faulty readings
+    Open wide
+        http://www.theregister.co.uk/content/6/26286.html
+
+    Dutch judge tears up bulk mail ban
+    Be a good boy and eat your spam
+        http://www.theregister.co.uk/content/6/26283.html
+
+    WorldCom to face bankruptcy on Monday?
+    So it seems
+        http://www.theregister.co.uk/content/6/26280.html
+
+    Easynet buys ex-Energis German ops
+    Subject to approvals...
+        http://www.theregister.co.uk/content/6/26279.html
+
+    Time Warner takes over AOL
+    Grownups back in charge
+        http://www.theregister.co.uk/content/6/26276.html
+
+Net Security
+
+    Face recognition fails in Boston airport
+    The patriotic scam goes on
+        http://www.theregister.co.uk/content/55/26298.html
+
+    New thomas.greene spam circulating
+    Filter me!
+        http://www.theregister.co.uk/content/55/26294.html
+
+    ElcomSoft rubbishes eBook security ahead of Sklyarov case
+    Shot across the bows
+        http://www.theregister.co.uk/content/55/26291.html
+
+    The Devil is in the Detail
+    The SCREWTAPE Letters
+        http://www.theregister.co.uk/content/55/26284.html
+
+Business
+
+    Ericsson axes 5,000 jobs
+    Posts worse than expected losses
+        http://www.theregister.co.uk/content/7/26282.html
+
+    Sun goes back into black
+    Back in the black as US sales increase 20%
+        http://www.theregister.co.uk/content/7/26281.html
+
+    MS licensing deadline boosts popularity of WinXP
+    Funny that...
+        http://www.theregister.co.uk/content/7/26277.html
+
+    Time Warner takes over AOL
+    Grownups back in charge
+        http://www.theregister.co.uk/content/7/26276.html
+
+Broadband
+
+    Satellite broadband for cars goes live in UK
+    Unfortunately, there's just the teensiest problem...
+        http://www.theregister.co.uk/content/22/26288.html
+
+    BT broadband barometer shows faulty readings
+    Open wide
+        http://www.theregister.co.uk/content/22/26286.html
+
+The Mac Channel
+
+    Apple must raise prices - Now!
+    Letters Jobs, you're too cheap
+        http://www.theregister.co.uk/content/39/26297.html
+
+Channel Flannel
+
+    Dan sold - but not as going concern
+    New owner buys assets
+        http://www.theregister.co.uk/content/51/26287.html
+
+
+
+The Register and its contents are copyright 2002 Situation Publishing.
+All rights reserved.
+
+    Tel:     +44 (0)20 7499 2264.
+    Fax:     +44 (0)20 7493 5922.
+    E-Mail:  press.releases@theregister.co.uk
+
+To unsubscribe from these daily updates, visit the following URL.  Make
+sure that you enter exactly the same e-mail address as you used to join
+this service.
+
+    http://list.theregister.co.uk/cgi-bin/unsub.cgi
+
+

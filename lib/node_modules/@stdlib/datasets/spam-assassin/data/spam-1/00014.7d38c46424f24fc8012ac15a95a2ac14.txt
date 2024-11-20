@@ -1,0 +1,116 @@
+From OWNER-NOLIST-SGODAILY*JM**NETNOTEINC*-COM@SMTP1.ADMANMAIL.COM  Fri Aug 23 11:03:17 2002
+Return-Path: <OWNER-NOLIST-SGODAILY*JM**NETNOTEINC*-COM@SMTP1.ADMANMAIL.COM>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.spamassassin.taint.org (Postfix) with ESMTP id 1FA6F44158
+	for <zzzz@localhost>; Fri, 23 Aug 2002 06:02:52 -0400 (EDT)
+Received: from mail.webnote.net [193.120.211.219]
+	by localhost with POP3 (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Fri, 23 Aug 2002 11:02:52 +0100 (IST)
+Received: from TIPSMTP1.ADMANMAIL.COM (TIPSMTP1.ADMANMAIL.COM [209.216.124.212])
+	by webnote.net (8.9.3/8.9.3) with ESMTP id AAA07310
+	for <JM@NETNOTEINC.COM>; Fri, 23 Aug 2002 00:28:12 +0100
+Message-Id: <200208222328.AAA07310@webnote.net>
+Received: from tiputil1 (10.2.0.30) by TIPSMTP1.ADMANMAIL.COM (LSMTP for Windows NT v1.1b) with SMTP id <149.000027CA@TIPSMTP1.ADMANMAIL.COM>; Thu, 22 Aug 2002 16:57:47 -0500
+Date: Thu, 22 Aug 2002 16:30:32 -0500
+From: Great Offers <greatoffers@sendgreatoffers.com>
+To: JM@NETNOTEINC.COM
+Subject: FREE Cell Phone + $50 Cash Back!
+X-Info: 134085
+X-Info2: SGO
+Mime-Version: 1.0
+Content-Type: text/html; charset="us-ascii"
+
+<HTML><HEAD><TITLE>FREE Motorola Cell Phone with $50 Cash Back!</TITLE>
+<STYLE></STYLE>
+</HEAD>
+<BODY bgColor=#ffffff>
+<TABLE align="center" border=0 cellPadding=0 cellSpacing=0 width=450>
+  <TBODY>
+  <TR>
+    <TD><IMG height=1 src="images/spacer.gif" width=185></TD>
+    <TD><IMG height=1 src="images/spacer.gif" width=65></TD>
+    <TD><IMG height=1 src="images/spacer.gif" width=50></TD>
+    <TD><IMG height=1 src="images/spacer.gif" width=150></TD></TR>
+  <TR>
+    <TD colSpan=2 rowSpan=2><A href="http://theadmanager.com/server/c.asp?ad_key=QBFUIEXORXKL&ext=1"><IMG border=0
+      height=150
+      src="http://168.143.181.42/htmlemails/images/T193no_option_01.gif"
+      width=250></A></TD>
+    <TD rowSpan=2><A href="http://theadmanager.com/server/c.asp?ad_key=QBFUIEXORXKL&ext=1"><IMG border=0
+      height=150
+      src="http://168.143.181.42/htmlemails/images/T193no_option_02.gif"
+      width=50></A></TD>
+    <TD><A href="http://theadmanager.com/server/c.asp?ad_key=QBFUIEXORXKL&ext=1"><IMG border=0 height=100
+      src="http://168.143.181.42/htmlemails/images/T193no_option_03.gif"
+      width=150></A></TD></TR>
+  <TR>
+    <TD><A href="http://theadmanager.com/server/c.asp?ad_key=QBFUIEXORXKL&ext=1"><IMG border=0 height=50
+      src="http://168.143.181.42/htmlemails/images/T193no_option_04.gif"
+      width=150></A></TD></TR>
+  <TR>
+    <TD><A href="http://theadmanager.com/server/c.asp?ad_key=QBFUIEXORXKL&ext=1"><IMG border=0 height=66
+      src="http://168.143.181.42/htmlemails/images/T193no_option_05.gif"
+      width=185></A></TD>
+    <TD colSpan=2><A href="http://theadmanager.com/server/c.asp?ad_key=QBFUIEXORXKL&ext=1"><IMG border=0 height=66
+      src="http://168.143.181.42/htmlemails/images/T193no_option_06.gif"
+      width=115></A></TD>
+    <TD><A href="http://theadmanager.com/server/c.asp?ad_key=QBFUIEXORXKL&ext=1"><IMG border=0 height=66
+      src="http://168.143.181.42/htmlemails/images/T193no_option_07.gif"
+      width=150></A></TD></TR>
+  <TR>
+    <TD rowSpan=2><A href="http://theadmanager.com/server/c.asp?ad_key=QBFUIEXORXKL&ext=1"><IMG border=0
+      height=154
+      src="http://168.143.181.42/htmlemails/images/T193no_option_08.gif"
+      width=185></A></TD>
+    <TD colSpan=2><A href="http://theadmanager.com/server/c.asp?ad_key=QBFUIEXORXKL&ext=1"><IMG border=0 height=72
+      src="http://168.143.181.42/htmlemails/images/T193no_option_09.gif"
+      width=115></A></TD>
+    <TD><A href="http://theadmanager.com/server/c.asp?ad_key=QBFUIEXORXKL&ext=1"><IMG border=0 height=72
+      src="http://168.143.181.42/htmlemails/images/T193no_option_10.gif"
+      width=150></A></TD></TR>
+  <TR>
+    <TD colSpan=2><A href="http://theadmanager.com/server/c.asp?ad_key=QBFUIEXORXKL&ext=1"><IMG border=0 height=82
+      src="http://168.143.181.42/htmlemails/images/T193no_option_11.gif"
+      width=115></A></TD>
+    <TD><A href="http://theadmanager.com/server/c.asp?ad_key=QBFUIEXORXKL&ext=1"><IMG border=0 height=82
+      src="http://168.143.181.42/htmlemails/images/T193no_option_12.gif"
+      width=150></A></TD></TR>
+  <TR>
+    <TD><A href="http://theadmanager.com/server/c.asp?ad_key=QBFUIEXORXKL&ext=1"><IMG border=0 height=80
+      src="http://168.143.181.42/htmlemails/images/T193no_option_13.gif"
+      width=185></A></TD>
+    <TD colSpan=3><A href="http://theadmanager.com/server/c.asp?ad_key=QBFUIEXORXKL&ext=1"><IMG border=0 height=80
+      src="http://168.143.181.42/htmlemails/images/T193no_option_14.gif"
+      width=265></A></TD></TR></TBODY></TABLE>
+<TABLE align="center" width=450>
+  <TBODY>
+  <TR>
+    <TD vAlign=top><A href="http://theadmanager.com/server/c.asp?ad_key=QBFUIEXORXKL&ext=1"><IMG
+      alt=SimplyWireless.com border=0 height=59 hspace=10
+      src="http://168.143.181.42/htmlemails/images/swdotcomlogo1.gif"
+      width=200></A></TD>
+    <TD align=left vAlign=top width=273><FONT face=Arial size=-3>*Free phone
+      offer subject to VoiceStream Wireless credit approval. Must activate a new
+      line of service to receive a free phone. A one-time activation fee of $25
+      applies to all new activations. Coverage not available in all areas. Offer
+      fulfilled by SimplyWireless.com, a VoiceStream authorized dealer. See site
+      for additional offer details.
+      <P></P>**$50 mail-in rebate is available for new VoiceStream service plans
+      $29.99 and greater. Rebate ends
+8/31/02.</FONT></TD></FONT></TD></TR></TBODY></TABLE>
+<img src="http://admanmail.com/server/t.asp?ad_key=QBFUIEXORXKL" width="1" height="1" hspace="0" vspace="0" border="0" alt="T">
+<hr size="1" noshade>
+<font face="Arial" size="1" color="#000000">
+You are receiving this mailing because you are a
+member of SendGreatOffers.com and subscribed as:JM@NETNOTEINC.COM
+To unsubscribe <a href="http://admanmail.com/subscription.asp?em=JM@NETNOTEINC.COM&l=SGO">
+<font face="arial" size="1" color="#000000">Click Here</a>
+(http://admanmail.com/subscription.asp?em=JM@NETNOTEINC.COM&l=SGO)
+or reply to this email with REMOVE in the subject line - you must
+also include the body of this message to be unsubscribed. Any correspondence about
+the products/services should be directed to
+the company in the ad.
+%EM%JM@NETNOTEINC.COM%/EM%
+<BR></FONT> </body> </html>
+

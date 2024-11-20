@@ -1,0 +1,77 @@
+From razor-users-admin@lists.sourceforge.net  Tue Aug 13 10:20:26 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 03DEF43C5A
+	for <jm@localhost>; Tue, 13 Aug 2002 05:17:55 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:17:55 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7CLXfb02469 for <jm-razor@jmason.org>; Mon, 12 Aug 2002 22:33:41 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17eMiV-0002XX-00; Mon,
+    12 Aug 2002 14:27:11 -0700
+Received: from granger.mail.mindspring.net ([207.69.200.148]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17eMiC-0005us-00 for <razor-users@lists.sourceforge.net>; Mon,
+    12 Aug 2002 14:26:52 -0700
+Received: from user-1121e1b.dsl.mindspring.com ([66.32.184.43]
+    helo=belphegore.hughes-family.org) by granger.mail.mindspring.net with
+    esmtp (Exim 3.33 #1) id 17eMi5-0004qH-00; Mon, 12 Aug 2002 17:26:46 -0400
+Received: from balam.hughes-family.org
+    (adsl-67-118-234-50.dsl.pltn13.pacbell.net [67.118.234.50]) by
+    belphegore.hughes-family.org (Postfix) with ESMTP id F331430B6B;
+    Mon, 12 Aug 2002 14:26:43 -0700 (PDT)
+Subject: Re: [Razor-users] Re: What's wrong with the Razor servers now?
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+MIME-Version: 1.0 (Apple Message framework v482)
+Cc: razor-users@example.sourceforge.net
+To: Jehan <nahor@bravobrava.com>
+From: "Craig R.Hughes" <craig@deersoft.com>
+In-Reply-To: <aj8vgs$osh$1@main.gmane.org>
+Message-Id: <343528EA-AE3A-11D6-A15F-00039396ECF2@deersoft.com>
+Content-Transfer-Encoding: 7bit
+X-Mailer: Apple Mail (2.482)
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Mon, 12 Aug 2002 14:26:46 -0700
+Date: Mon, 12 Aug 2002 14:26:46 -0700
+
+Justification could be "This user has a great track record", he 
+has agreed with me every single time out of hundreds of times in 
+the past.
+
+C
+
+On Monday, August 12, 2002, at 11:42  AM, Jehan wrote:
+
+> And I also think that people listen more to people justifying 
+> their argumentation than people just giving a result. But 
+> justification will never work in Razor.
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Dice - The leading online job board
+for high-tech professionals. Search and apply for tech jobs today!
+http://seeker.dice.com/seeker.epl?rel_code=31
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

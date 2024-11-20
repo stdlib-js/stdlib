@@ -1,0 +1,111 @@
+From ilug-admin@linux.ie  Mon Jul 22 18:13:03 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3B62A440CC
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:28 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:28 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MG1wY16885 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 17:02:03 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id CAA25361 for <jm-ilug@jmason.org>;
+    Sun, 21 Jul 2002 02:45:45 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id CAA12478; Sun, 21 Jul 2002 02:42:14 +0100
+Received: from ie.suberic.net (owsla.ie.suberic.net [62.17.162.83]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id CAA12443 for <ilug@linux.ie>;
+    Sun, 21 Jul 2002 02:42:07 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host owsla.ie.suberic.net
+    [62.17.162.83] claimed to be ie.suberic.net
+Received: from owsla.ie.suberic.net (owsla [127.0.0.1]) by ie.suberic.net
+    (8.11.6/8.11.6) with ESMTP id g6L1g6930863 for <ilug@linux.ie>;
+    Sun, 21 Jul 2002 02:42:06 +0100
+Date: Sun, 21 Jul 2002 02:42:03 +0100
+To: Paul Jakma <paul@clubi.ie>
+Cc: Aidan Kehoe <kehoea@parhasard.net>,
+	ILUG Mailing List <ilug@linux.ie>
+Subject: Re: [ILUG] How to copy some files
+Message-Id: <20020721024203.A29826@ie.suberic.net>
+References: <20020720213335.A27034@ie.suberic.net>
+    <Pine.LNX.4.44.0207210115130.29125-100000@fogarty.jakma.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <Pine.LNX.4.44.0207210115130.29125-100000@fogarty.jakma.org>;
+    from paul@clubi.ie on Sun, Jul 21, 2002 at 01:47:39AM +0100
+X-Operating-System: Linux 2.4.18-5 i686
+X-GPG-Fingerprint: 9C1D 16F4 11F1 6BD2 933C  048D ACC7 9840 89D0 7646
+From: kevin lyda <kevin+dated+1027734126.560c2e@linux.ie>
+X-Delivery-Agent: TMDA/0.57
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Sun, Jul 21, 2002 at 01:47:39AM +0100, Paul Jakma wrote:
+> isnt this standard behaviour?? mv uses rename() which replaces the
+> new path name:
+
+why, yes.  yes it is.  i think that was my point.
+
+> yes it does. :)
+> 
+> but your super-links dont is what you're saying i guess. but why? why
+> would you want a symlink, bar, linking to foo, to stop linking if foo
+> is changed?
+
+uh, i wouldn't.  i was referring to the previous message which discussed
+the idea of a symlink that referred to a 64 bit device id and the inode
+of the file.  i gave two examples of why it wouldn't work.
+
+> >     % ln -ss foo bar
+> >     % ls -i foo
+> >     111 foo
+> >     % rm foo
+> >     % touch floyd
+> >     % ls -i floyd
+> >     111 floyd
+> is this an example of inode reuse? :) or do you mean that somehow 
+> floyd is the new foo, (foo is dead, all hail floyd) and that bar now 
+> points to floyd?
+
+yes.  i did fail to mention that floyd might not use inode 111, but
+it might.  and that was my point, having these mythical symlinks point
+to the device+inode is not simple.  just like the unrm thing, it might
+be possible, but hard links and soft links are the best implementations
+that have survived to date on unix.  windows shortcuts are kinda weird -
+they're really an application level thing.
+
+mac aliases seem to take the idea of unix symlinks (linking by filename)
+along with the concept of device+inode.  i don't know mac internals,
+but i seem to remember being told it tried the former first, and then
+tried the latter.  how it would deal with the 2nd example i mentioned i
+dunno - i'm not certain if the mac version of inodes would suffer from
+that (maybe the fs identifier for the file included the creation time
+or something like that).
+
+> how do i control this 'symlinks magically link to new files' feature?
+
+i think it would be difficult.  it would also fail to work in numerous
+situations.
+
+kevin
+
+-- 
+kevin@suberic.net     that a believer is happier than a skeptic is no more to
+fork()'ed on 37058400    the point than the fact that a drunken man is happier
+meatspace place: home       than a sober one. the happiness of credulity is a
+http://ie.suberic.net/~kevin   cheap & dangerous quality -- g.b. shaw
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

@@ -1,0 +1,92 @@
+
+{{alias}}( size )
+    Returns an array buffer having a specified number of bytes.
+
+    Buffer contents are initialized to 0.
+
+    Parameters
+    ----------
+    size: integer
+        Number of bytes.
+
+    Returns
+    -------
+    out: ArrayBuffer
+        An array buffer.
+
+    Examples
+    --------
+    > var buf = new {{alias}}( 5 )
+    <ArrayBuffer>
+
+
+{{alias}}.length
+    Number of input arguments the constructor accepts.
+
+    Examples
+    --------
+    > {{alias}}.length
+    1
+
+
+{{alias}}.isView( arr )
+    Returns a boolean indicating if provided an array buffer view.
+
+    Parameters
+    ----------
+    arr: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an input argument is a buffer view.
+
+    Examples
+    --------
+    > var arr = new {{alias:@stdlib/array/float64}}( 10 );
+    > {{alias}}.isView( arr )
+    true
+
+
+{{alias}}.prototype.byteLength
+    Read-only property which returns the length (in bytes) of the array buffer.
+
+    Examples
+    --------
+    > var buf = new {{alias}}( 5 );
+    > buf.byteLength
+    5
+
+
+{{alias}}.prototype.slice( [start[, end]] )
+    Copies the bytes of an array buffer to a new array buffer.
+
+    Parameters
+    ----------
+    start: integer (optional)
+        Index at which to start copying buffer contents (inclusive). If
+        negative, the index is relative to the end of the buffer.
+
+    end: integer (optional)
+        Index at which to stop copying buffer contents (exclusive). If negative,
+        the index is relative to the end of the buffer.
+
+    Returns
+    -------
+    out: ArrayBuffer
+        A new array buffer whose contents have been copied from the calling
+        array buffer.
+
+    Examples
+    --------
+    > var b1 = new {{alias}}( 10 );
+    > var b2 = b1.slice( 2, 6 );
+    > var bool = ( b1 === b2 )
+    false
+    > b2.byteLength
+    4
+
+    See Also
+    --------
+

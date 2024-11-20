@@ -1,0 +1,167 @@
+From fork-admin@xent.com  Mon Sep 16 10:42:56 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id A99B116F03
+	for <jm@localhost>; Mon, 16 Sep 2002 10:42:54 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 16 Sep 2002 10:42:54 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8G1HYC07158 for <jm@jmason.org>;
+    Mon, 16 Sep 2002 02:17:35 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 8A9D12940AA; Sun, 15 Sep 2002 18:14:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mail.lig.net (unknown [204.248.145.126]) by xent.com
+    (Postfix) with ESMTP id 92B8829409A for <fork@xent.com>; Sun,
+    15 Sep 2002 18:13:06 -0700 (PDT)
+Received: from lig.net (unknown [66.95.227.18]) by mail.lig.net (Postfix)
+    with ESMTP id 5E531680F6; Sun, 15 Sep 2002 21:17:04 -0400 (EDT)
+Message-Id: <3D85326C.7010801@lig.net>
+From: "Stephen D. Williams" <sdw@lig.net>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.0rc2)
+    Gecko/20020512 Netscape/7.0b1
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: fork@spamassassin.taint.org, lea@lig.net
+Subject: Slaughter in the Name of God
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 8bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 15 Sep 2002 21:22:52 -0400
+
+An old Indian friend forwarded this to me a while ago.
+
+http://www.washingtonpost.com/ac2/wp-dyn?pagename=article&node=&contentId=A58173-2002Mar7&notFound=true
+
+Slaughter in the Name of God
+By Salman Rushdie
+Friday, March 8, 2002; Page A33 Washington Post
+
+The defining image of the week, for me, is of a small child's burned and 
+blackened arm, its tiny fingers curled into a fist, protruding from the 
+remains of a human bonfire in Ahmadabad, Gujarat, in India. The murder 
+of children is something of an Indian specialty. The routine daily 
+killings of unwanted girl babies . . . the massacre of innocents in 
+Nellie, Assam, in the 1980s when village turned against neighboring 
+village . . . the massacre of Sikh children in Delhi during the 
+horrifying reprisal murders that followed Indira Gandhi's assassination: 
+They bear witness to our particular gift, always most dazzlingly in 
+evidence at times of religious unrest, for dousing our children in 
+kerosene and setting them alight, or cutting their throats, or 
+smothering them or just clubbing them to death with a good strong length 
+of wood.
+
+I say "our" because I write as an Indian man, born and bred, who loves 
+India deeply and knows that what one of us does today, any of us is 
+potentially capable of doing tomorrow. If I take pride in India's 
+strengths, then India's sins must be mine as well. Do I sound angry? 
+Good. Ashamed and disgusted? I certainly hope so. Because, as India 
+undergoes its worst bout of Hindu-Muslim bloodletting in more than a 
+decade, many people have not been sounding anything like angry, ashamed 
+or disgusted enough. Police chiefs have been excusing their men's 
+unwillingness to defend the citizens of India, without regard to 
+religion, by saying that these men have feelings too and are subject to 
+the same sentiments as the nation in general.
+
+Meanwhile, India's political masters have been tut-tutting and offering 
+the usual soothing lies about the situation being brought under control. 
+(It has escaped nobody's notice that the ruling party, the Bharatiya 
+Janata Party (BJP), or Indian People's Party, and the Hindu extremists 
+of the Vishwa Hindu Parishad (VHP), or World Hindu Council, are sister 
+organizations and offshoots of the same parent body.) Even some 
+international commentators, such as Britain's Independent newspaper, 
+urge us to "beware excess pessimism."
+
+The horrible truth about communal slaughter in India is that we're used 
+to it. It happens every so often; then it dies down. That's how life is, 
+folks. Most of the time India is the world's largest secular democracy; 
+and if, once in a while, it lets off a little crazy religious steam, we 
+mustn't let that distort the picture.
+
+Of course, there are political explanations. Ever since December 1992, 
+when a VHP mob demolished a 400-year-old Muslim mosque in Ayodhya, which 
+they claim was built on the sacred birthplace of the god Ram, Hindu 
+fanatics have been looking for this fight. The pity of it is that some 
+Muslims were ready to give it to them. Their murderous attack on the 
+train-load of VHP activists at Godhra (with its awful, atavistic echoes 
+of the killings of Hindus and Muslims by the train-load during the 
+partition riots of 1947) played right into the Hindu extremists' hands.
+
+The VHP has evidently tired of what it sees as the equivocations and 
+insufficient radicalism of India's BJP government. Prime Minister Atal 
+Bihari Vajpayee is more moderate than his party; he also heads a 
+coalition government and has been obliged to abandon much of the BJP's 
+more extreme Hindu nationalist rhetoric to hold the coalition together. 
+But it isn't working anymore. In state elections across the country, the 
+BJP is being trounced. This may have been the last straw for the VHP 
+firebrands. Why put up with the government's betrayal of their fascistic 
+agenda when that betrayal doesn't even result in electoral success?
+
+The electoral failure of the BJP is thus, in all probability, the spark 
+that lit the fire. The VHP is determined to build a Hindu temple on the 
+site of the demolished Ayodhya mosque -- that's where the Godhra dead 
+were coming from -- and there are, reprehensibly, idiotically, 
+tragically, Muslims in India equally determined to resist them. Vajpayee 
+has insisted that the slow Indian courts must decide the rights and 
+wrongs of the Ayodhya issue. The VHP is no longer prepared to wait.
+
+The distinguished Indian writer Mahasveta Devi, in a letter to India's 
+president, K. R. Narayanan, blames the Gujarat government (led by a BJP 
+hard-liner) as well as the central government for doing "too little too 
+late." She pins the blame firmly on the "motivated, well-planned out and 
+provocative actions" of the Hindu nationalists. But another writer, the 
+Nobel laureate V. S. Naipaul, speaking in India just a week before the 
+violence erupted, denounced India's Muslims en masse and praised the 
+nationalist movement.
+
+The murderers of Godhra must indeed be denounced, and Mahasveta Devi in 
+her letter demands "stern legal action" against them. But the VHP is 
+determined to destroy that secular democracy in which India takes such 
+public pride and which it does so little to protect; and by supporting 
+them, Naipaul makes himself a fellow traveler of fascism and disgraces 
+the Nobel award.
+
+The political discourse matters, and explains a good deal. But there's 
+something beneath it, something we don't want to look in the face: 
+namely, that in India, as elsewhere in our darkening world, religion is 
+the poison in the blood. Where religion intervenes, mere innocence is no 
+excuse. Yet we go on skating around this issue, speaking of religion in 
+the fashionable language of "respect." What is there to respect in any 
+of this, or in any of the crimes now being committed almost daily around 
+the world in religion's dreaded name? How well, with what fatal results, 
+religion erects totems, and how willing we are to kill for them! And 
+when we've done it often enough, the deadening of affect that results 
+makes it easier to do it again.
+
+So India's problem turns out to be the world's problem. What happened in 
+India has happened in God's name. The problem's name is God.
+
+Salman Rushdie is a novelist and author of the forthcoming essay 
+collection "Step Across This Line."
+
+© 2002 The Washington Post Company
+
+
+sdw
+
+-- 
+sdw@lig.net http://sdw.st
+Stephen D. Williams 43392 Wayside Cir,Ashburn,VA 20147-4622
+703-724-0118W 703-995-0407Fax Dec2001
+
+
+
+

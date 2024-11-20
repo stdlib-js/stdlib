@@ -1,0 +1,85 @@
+From sentto-2242572-53767-1031270245-zzzz=spamassassin.taint.org@returns.groups.yahoo.com  Fri Sep  6 11:48:49 2002
+Return-Path: <sentto-2242572-53767-1031270245-zzzz=spamassassin.taint.org@returns.groups.yahoo.com>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id 3696216F92
+	for <zzzz@localhost>; Fri,  6 Sep 2002 11:41:50 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Fri, 06 Sep 2002 11:41:50 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g869pnC29052 for
+    <zzzz@spamassassin.taint.org>; Fri, 6 Sep 2002 10:51:49 +0100
+Received: from n4.grp.scd.yahoo.com (n4.grp.scd.yahoo.com [66.218.66.88])
+    by webnote.net (8.9.3/8.9.3) with SMTP id AAA19348 for <zzzz@spamassassin.taint.org>;
+    Fri, 6 Sep 2002 00:57:57 +0100
+X-Egroups-Return: sentto-2242572-53767-1031270245-zzzz=spamassassin.taint.org@returns.groups.yahoo.com
+Received: from [66.218.67.197] by n4.grp.scd.yahoo.com with NNFMP;
+    05 Sep 2002 23:57:26 -0000
+X-Sender: wt046@vtn1.victoria.tc.ca
+X-Apparently-To: zzzzteana@egroups.com
+Received: (EGP: mail-8_1_0_1); 5 Sep 2002 23:57:25 -0000
+Received: (qmail 44694 invoked from network); 5 Sep 2002 23:57:24 -0000
+Received: from unknown (66.218.66.218) by m4.grp.scd.yahoo.com with QMQP;
+    5 Sep 2002 23:57:24 -0000
+Received: from unknown (HELO vtn1.victoria.tc.ca) (199.60.222.3) by
+    mta3.grp.scd.yahoo.com with SMTP; 5 Sep 2002 23:57:24 -0000
+Received: from vtn1.victoria.tc.ca (wt046@localhost [127.0.0.1]) by
+    vtn1.victoria.tc.ca (8.12.5/8.12.5) with ESMTP id g85NvNPL001355 for
+    <forteana@egroups.com>; Thu, 5 Sep 2002 16:57:23 -0700 (PDT)
+Received: (from wt046@localhost) by vtn1.victoria.tc.ca
+    (8.12.5/8.12.3/Submit) id g85NvNIO001354; Thu, 5 Sep 2002 16:57:23 -0700
+    (PDT)
+X-Sender: wt046@vtn1
+To: "zzzzteana@egroups" <zzzzteana@yahoogroups.com>
+Message-Id: <Pine.GSO.3.95.iB1.0.1020905165508.513A-100000@vtn1>
+From: Brian Chapman <wt046@victoria.tc.ca>
+X-Yahoo-Profile: mf8r31p
+MIME-Version: 1.0
+Mailing-List: list zzzzteana@yahoogroups.com; contact
+    forteana-owner@yahoogroups.com
+Delivered-To: mailing list zzzzteana@yahoogroups.com
+Precedence: bulk
+List-Unsubscribe: <mailto:zzzzteana-unsubscribe@yahoogroups.com>
+Date: Thu, 5 Sep 2002 16:57:23 -0700 (PDT)
+Subject: [zzzzteana] Frog Fall at Cheapside
+Reply-To: zzzzteana@yahoogroups.com
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+
+Near the end of his *Memoirs of Extraordinary Popular Delusions and the
+Madness of Crowds* (1851), Charles Mackay discusses various catch phrases
+briefly popular in mid-19th-century London. One of them, he observes,
+"like a mushroom, seems to have sprung up in the night, or, like a frog in
+Cheapside, to have come down in a sudden shower. One day it was unheard,
+unknown, uninvented; the next it pervaded London."
+
+Was "like a frog in Cheapside" (or something similar) a catch phrase
+itself, or did Mackay come up with the simile on his own?
+
+And to what event or events does it refer?
+
+I didn't find anything relevant in Partridge's *A Dictionary of Catch
+Phrases.*
+
+bc
+
+
+
+
+------------------------ Yahoo! Groups Sponsor ---------------------~-->
+Looking for a more powerful website? Try GeoCities for $8.95 per month.
+Register your domain name (http://your-name.com). More storage! No ads!
+http://geocities.yahoo.com/ps/info
+http://us.click.yahoo.com/aHOo4D/KJoEAA/MVfIAA/7gSolB/TM
+---------------------------------------------------------------------~->
+
+To unsubscribe from this group, send an email to:
+forteana-unsubscribe@egroups.com
+
+ 
+
+Your use of Yahoo! Groups is subject to http://docs.yahoo.com/info/terms/ 
+
+
+

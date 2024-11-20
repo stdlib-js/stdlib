@@ -1,0 +1,65 @@
+From fork-admin@xent.com  Mon Sep 23 22:47:32 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 972F816F03
+	for <jm@localhost>; Mon, 23 Sep 2002 22:47:32 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 23 Sep 2002 22:47:32 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8NIIwC29440 for <jm@jmason.org>;
+    Mon, 23 Sep 2002 19:18:58 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id A62EE2940E8; Mon, 23 Sep 2002 11:15:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from sunserver.permafrost.net (u172n16.hfx.eastlink.ca
+    [24.222.172.16]) by xent.com (Postfix) with ESMTP id 0F4D429409A for
+    <fork@xent.com>; Mon, 23 Sep 2002 11:14:36 -0700 (PDT)
+Received: from [192.168.123.198] (helo=permafrost.net) by
+    sunserver.permafrost.net with esmtp (Exim 3.35 #1 (Debian)) id
+    17tXeK-0007Fh-00 for <fork@xent.com>; Mon, 23 Sep 2002 15:09:36 -0300
+Message-Id: <3D8F58EA.5050307@permafrost.net>
+From: Owen Byrne <owen@permafrost.net>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.1)
+    Gecko/20020826
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: fork@spamassassin.taint.org
+Subject: Re: sed /s/United States/Roman Empire/g
+References: <979BE8FE-CCF6-11D6-817E-000393A46DEA@alumni.caltech.edu>
+    <3D8F52A5.5090709@cse.ucsc.edu>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 23 Sep 2002 15:09:46 -0300
+
+>
+> Sorry, Shrub, your political newspeak is falling on deaf ears. Oh, 
+> sorry, maybe I should self-censor my thoughts to avoid being put in a 
+> 're-education camp' by Ashcrofts gestappo? Gads, maybe someone on FoRK 
+> has joined your T.I.P.S. program and became an official citizen spy?
+>
+>
+> In disgust,
+> Elias
+
+
+Well the message was clear to me - the US wants to start an arms race to 
+jack up their world arms sales monopoly.
+
+Owen
+
+
+

@@ -1,0 +1,64 @@
+From fork-admin@xent.com  Thu Sep  5 11:31:55 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 9AE3216F56
+	for <jm@localhost>; Thu,  5 Sep 2002 11:28:51 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 05 Sep 2002 11:28:51 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g857iEZ09117 for <jm@jmason.org>;
+    Thu, 5 Sep 2002 08:44:14 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id B1E99294233; Thu,  5 Sep 2002 00:38:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from localhost.localdomain
+    (dsl-208-151-246-47.dsl.easystreet.com [208.151.246.47]) by xent.com
+    (Postfix) with ESMTP id 92FAB294221 for <FoRK@xent.com>; Thu,
+    5 Sep 2002 00:37:34 -0700 (PDT)
+Received: (from karl@localhost) by localhost.localdomain (8.11.6/8.11.6)
+    id g857qCu12404; Thu, 5 Sep 2002 00:52:12 -0700
+X-Authentication-Warning: localhost.localdomain: karl set sender to
+    kra@monkey.org using -f
+To: "Jim Whitehead" <ejw@cse.ucsc.edu>
+Cc: "FoRK" <FoRK@xent.com>
+Subject: Re: CD player UI for toddlers
+References: <AMEPKEBLDJJCCDEJHAMIIECDFGAA.ejw@cse.ucsc.edu>
+From: Karl Anderson <kra@monkey.org>
+Organization: Ape Mgt.
+In-Reply-To: "Jim Whitehead"'s message of "Wed, 4 Sep 2002 11:03:03 -0700"
+Message-Id: <m3admwrhzn.fsf@localhost.localdomain>
+User-Agent: Gnus/5.0802 (Gnus v5.8.2) Emacs/20.7
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 05 Sep 2002 00:52:12 -0700
+
+"Jim Whitehead" <ejw@cse.ucsc.edu> writes:
+
+> The CD player we have combines play and pause in a single button, but
+> doesn't provide *instantaneous* feedback that the button was pushed, instead
+> requiring you to wait until the music starts, 5-10 seconds. This is a UI
+> disaster. Since Tatum doesn't get feedback right away, she presses the
+> button again, thereby pausing the CD before it even plays. She'll only ever
+> get music if she presses the button an odd number of times. This happens a
+> surprising amount of the time, since she eventually hits the button again
+> when the music doesn't play.
+
+Nice to hear that somebody else does this too.
+
+-- 
+Karl Anderson      kra@monkey.org           http://www.monkey.org/~kra/
+

@@ -1,0 +1,66 @@
+From ilug-admin@linux.ie  Fri Jul 19 22:02:34 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id AF272440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 17:02:34 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 22:02:34 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JL14J03167 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 22:01:04 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id VAA32339; Fri, 19 Jul 2002 21:53:52 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail04.svc.cra.dublin.eircom.net
+    (mail04.svc.cra.dublin.eircom.net [159.134.118.20]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id VAA32306 for <ilug@linux.ie>; Fri,
+    19 Jul 2002 21:53:46 +0100
+From: awhalley@eircom.net
+Message-Id: <200207192053.VAA32306@lugh.tuatha.org>
+Received: (qmail 1866 messnum 187485 invoked from
+    network[159.134.237.78/wendell.eircom.net]); 19 Jul 2002 20:53:16 -0000
+Received: from wendell.eircom.net (HELO webmail.eircom.net)
+    (159.134.237.78) by mail04.svc.cra.dublin.eircom.net (qp 1866) with SMTP;
+    19 Jul 2002 20:53:16 -0000
+To: ilug@linux.ie
+Date: Fri, 19 Jul 2002 21:53:16 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 8bit
+X-Originating-Ip: 194.165.172.215
+X-Mailer: Eircom Net CRC Webmail (http://www.eircom.net/)
+Organization: Eircom Net (http://www.eircom.net/)
+Subject: [ILUG] [OT] GPL & PHP Question
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Could anyone who is interested clarify this for me.
+Or point me in the direction of a site that does GPL case studies where there may be a similar issue. I have had a google around and the PHP site wasn't help full and the GPL page didn't seem to have this senario.
+
+The setup is as follows:
+I develop a piece of code using PHP 3.0.9 which is, to
+my knowledge, GPL. 
+
+The piece of code runs on my server and is an integral part of a system that I have developed for a client. I did not recieve  payment for this particular piece of code but I did recieve payment for the system. My client now wants to  
+use a different service provider but keep my code. 
+Do I have a right to claim intellectual property rights for  my little piece of code that he did not pay me for or do I have to give the client the code under the GPL.
+
+I know this is not strictly a 'Linux' issue but any help would be appreciated
+
+Ant
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

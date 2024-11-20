@@ -1,0 +1,74 @@
+
+{{alias}}( t, μ, s )
+    Evaluates the moment-generating function (MGF) for a logistic distribution
+    with location parameter `μ` and scale parameter `s` at a value `t`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `s < 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    t: number
+        Input value.
+
+    μ: number
+        Location parameter.
+
+    s: number
+        Scale parameter.
+
+    Returns
+    -------
+    out: number
+        Evaluated MGF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.9, 0.0, 1.0 )
+    ~9.15
+    > y = {{alias}}( 0.1, 4.0, 4.0 )
+    ~1.971
+    > y = {{alias}}( -0.2, 4.0, 4.0 )
+    ~1.921
+    > y = {{alias}}( 0.5, 0.0, -1.0 )
+    NaN
+    > y = {{alias}}( 0.5, 0.0, 4.0 )
+    Infinity
+    > y = {{alias}}( NaN, 0.0, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, 0.0, NaN )
+    NaN
+
+
+{{alias}}.factory( μ, s )
+    Returns a function for evaluating the moment-generating function (MGF)
+    of a Logistic distribution with location parameter `μ` and scale parameter
+    `s`.
+
+    Parameters
+    ----------
+    μ: number
+        Location parameter.
+
+    s: number
+        Scale parameter.
+
+    Returns
+    -------
+    mgf: Function
+        Moment-generating function (MGF).
+
+    Examples
+    --------
+    > var mymgf = {{alias}}.factory( 10.0, 0.5 );
+    > var y = mymgf( 0.5 )
+    ~164.846
+    > y = mymgf( 2.0 )
+    Infinity
+
+    See Also
+    --------
+

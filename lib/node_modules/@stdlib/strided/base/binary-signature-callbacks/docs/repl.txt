@@ -1,0 +1,43 @@
+
+{{alias}}( table, signatures )
+    Assigns callbacks to binary interfaces according to type promotion rules.
+
+    Parameters
+    ----------
+    table: Object
+        Object mapping callbacks to data types.
+
+    table.default: Function
+        Default callback.
+
+    table.complex64: Function
+        Callback to be invoked when input arrays promote to single-precision
+        complex floating-point numbers.
+
+    table.complex128: Function
+        Callback to be invoked when input arrays promote to double precision
+        complex floating-point numbers.
+
+    signatures: ArrayLike<any>
+        Strided array containing binary interface signatures.
+
+    Returns
+    -------
+    out: Array<Function>
+        List of callbacks, one per signature.
+
+    Examples
+    --------
+    > var dt = {{alias:@stdlib/strided/dtypes}}();
+    > var sigs = {{alias:@stdlib/strided/base/binary-dtype-signatures}}( dt, dt, dt );
+    > var t = {
+    ...     'default': {{alias:@stdlib/math/base/ops/add}},
+    ...     'complex64': {{alias:@stdlib/complex/float32/base/add}},
+    ...     'complex128': {{alias:@stdlib/complex/float64/base/add}}
+    ... };
+    > var out = {{alias}}( t, sigs )
+    [...]
+
+    See Also
+    --------
+

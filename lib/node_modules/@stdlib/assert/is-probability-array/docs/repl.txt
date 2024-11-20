@@ -1,0 +1,75 @@
+
+{{alias}}( value )
+    Tests if a value is an array-like object containing only probabilities.
+
+    A probability is defined as a numeric value on the interval [0,1].
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is an array-like object containing only
+        probabilities.
+
+    Examples
+    --------
+    > var bool = {{alias}}( [ 0.5, new Number(0.8) ] )
+    true
+    > bool = {{alias}}( [ 0.8, 1.2 ] )
+    false
+    > bool = {{alias}}( [ 0.8, '0.2' ] )
+    false
+
+
+{{alias}}.primitives( value )
+    Tests if a value is an array-like object containing only primitive
+    probabilities.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is an array-like object containing only
+        primitive probabilities.
+
+    Examples
+    --------
+    > var bool = {{alias}}.primitives( [ 1.0, 0.0, 0.5 ] )
+    true
+    > bool = {{alias}}.primitives( [ 0.3, new Number(0.4) ] )
+    false
+
+
+{{alias}}.objects( value )
+    Tests if a value is an array-like object containing only number objects
+    having probability values.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is an array-like object containing only
+        number objects having probability values.
+
+    Examples
+    --------
+    > var bool = {{alias}}.objects( [ new Number(0.7), new Number(1.0) ] )
+    true
+    > bool = {{alias}}.objects( [ 1.0, 0.0, new Number(0.7) ] )
+    false
+
+    See Also
+    --------
+

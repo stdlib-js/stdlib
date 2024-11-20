@@ -1,0 +1,29 @@
+
+{{alias}}( value )
+    Tests if a value is an array of probabilities that sum to one.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is an array of probabilities that sum
+        to one.
+
+    Examples
+    --------
+    > var bool = {{alias}}( [ 0.25, 0.5, 0.25 ] )
+    true
+    > bool = {{alias}}( new {{alias:@stdlib/array/uint8}}( [ 0, 1 ] ) )
+    true
+    > bool = {{alias}}( [ 0.4, 0.4, 0.4 ] )
+    false
+    > bool = {{alias}}( [ 3.14, 0.0 ] )
+    false
+
+    See Also
+    --------
+

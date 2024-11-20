@@ -1,0 +1,79 @@
+From fork-admin@xent.com  Mon Dec  2 11:23:26 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id E6E4616F6C
+	for <jm@localhost>; Mon,  2 Dec 2002 11:22:17 +0000 (GMT)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 02 Dec 2002 11:22:17 +0000 (GMT)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id gB2230802637 for <jm@jmason.org>;
+    Mon, 2 Dec 2002 02:03:01 GMT
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 339472940D6; Sun,  1 Dec 2002 18:02:02 -0800 (PST)
+Delivered-To: fork@spamassassin.taint.org
+Received: from homer.perfectpresence.com (unknown [209.123.207.194]) by
+    xent.com (Postfix) with ESMTP id 188542940A5 for <fork@xent.com>;
+    Sun,  1 Dec 2002 18:01:04 -0800 (PST)
+Received: from adsl-154-230-120.jax.bellsouth.net ([68.154.230.120]
+    helo=regina) by homer.perfectpresence.com with smtp (Exim 3.36 #1) id
+    18Ifux-0007bX-00; Sun, 01 Dec 2002 21:02:39 -0500
+From: "Geege Schuman" <geege@barrera.org>
+To: "Joseph S. Barrera III" <joe@barrera.org>, <fork@spamassassin.taint.org>
+Subject: RE: Mercedes-Benz G55
+Message-Id: <ILEHJNJFPDLMDEKNIAKCOELACCAA.geege@barrera.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+Importance: Normal
+In-Reply-To: <3DEA5786.3090009@barrera.org>
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2800.1106
+X-Antiabuse: This header was added to track abuse, please include it with
+    any abuse report
+X-Antiabuse: Primary Hostname - homer.perfectpresence.com
+X-Antiabuse: Original Domain - xent.com
+X-Antiabuse: Originator/Caller UID/GID - [0 0] / [0 0]
+X-Antiabuse: Sender Address Domain - barrera.org
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 1 Dec 2002 21:01:00 -0500
+
+Best bang for the buck:  390 hp Mustang Cobra @ $35k.
+
+GG, recently emerged from the passenger side of a 2003 with the largest
+smile.
+
+-----Original Message-----
+From: fork-admin@xent.com [mailto:fork-admin@xent.com]On Behalf Of
+Joseph S. Barrera III
+Sent: Sunday, December 01, 2002 1:40 PM
+To: fork@spamassassin.taint.org
+Subject: Re: Mercedes-Benz G55
+
+
+On the other end of the spectrum, I just bought a Honda del Sol
+for my new commute to San Jose (from San Bruno)... I wonder if
+it would fit in the cargo area of a G55.
+
+- Joe
+
+
+
+
+
+
+

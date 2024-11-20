@@ -1,0 +1,87 @@
+From razor-users-admin@lists.sourceforge.net  Thu Aug  1 02:56:18 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 81017440C9
+	for <jm@localhost>; Wed, 31 Jul 2002 21:56:14 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 01 Aug 2002 02:56:14 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g711sj216407 for <jm-razor@jmason.org>; Thu, 1 Aug 2002 02:54:45 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17a50U-0001ro-00; Wed,
+    31 Jul 2002 18:44:02 -0700
+Received: from smtp-gw.dmv.com ([64.45.128.8]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17a4zd-0001Dp-00 for <razor-users@lists.sourceforge.net>; Wed,
+    31 Jul 2002 18:43:09 -0700
+Received: from mail-gw.dmv.com (mail-gw.dmv.com [64.45.128.6]) by
+    smtp-gw.dmv.com (8.9.3/8.11.6) with ESMTP id VAA65641 for
+    <razor-users@lists.sourceforge.net>; Wed, 31 Jul 2002 21:43:05 -0400 (EDT)
+    (envelope-from sven@dmv.com)
+Received: from homediet (dogpound.dyndns.org [64.45.134.154]) by
+    mail-gw.dmv.com (8.11.6/8.11.6) with SMTP id g711r8e74713 for
+    <razor-users@lists.sourceforge.net>; Wed, 31 Jul 2002 21:53:08 -0400 (EDT)
+    (envelope-from sven@dmv.com)
+Message-Id: <00df01c238fc$f04ac060$0201a8c0@homediet>
+From: "Sven" <sven@dmv.com>
+To: <razor-users@example.sourceforge.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Subject: [Razor-users] Smrazor, Milter, and Max connections
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Wed, 31 Jul 2002 21:44:08 -0400
+Date: Wed, 31 Jul 2002 21:44:08 -0400
+
+With v2.14 of razor client and using Solaris 9 with sendmail 8.12.5 I have
+managed to get smrazor working (milter) -- sort of ... With light server
+loads, it seems to do fine; however during peak traffic times (or peak
+catalogue server usage???) , the smrazor milter stops and sometime dumps
+core as well.  Does anyone know of a limit in terms of number of
+messages/minute that can be theoretically processed? I have noticed timeouts
+occuring (I set the milter timeout per message to 15 seconds) often in huge
+lumps and the occasional "Could not get valid info from Discovery Servers")
+?????
+
+I am not using procmail because this [cluster of] server is a gateway on to
+5 different pop3 servers (5 different domains), ergo, local users won't work
+because of overlapping usernames ...(or insanely huge virtusertable to alias
+mappings .....)
+
+Alternatively does anyone have a working, high-capacity milter for this or
+any other related ideas???
+
+Sven
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Dice - The leading online job board
+for high-tech professionals. Search and apply for tech jobs today!
+http://seeker.dice.com/seeker.epl?rel_code=31
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

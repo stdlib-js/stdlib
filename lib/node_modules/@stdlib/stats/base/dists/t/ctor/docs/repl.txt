@@ -1,0 +1,93 @@
+
+{{alias}}( [v] )
+    Returns a Student's t distribution object.
+
+    Parameters
+    ----------
+    v: number (optional)
+        Degrees of freedom. Must be greater than `0`. Default: `1.0`.
+
+    Returns
+    -------
+    t: Object
+        Distribution instance.
+
+    t.v: number
+        Degrees of freedom. If set, the value must be greater than `0`.
+
+    t.entropy: number
+        Read-only property which returns the differential entropy.
+
+    t.kurtosis: number
+        Read-only property which returns the excess kurtosis.
+
+    t.mean: number
+        Read-only property which returns the expected value.
+
+    t.median: number
+        Read-only property which returns the median.
+
+    t.mode: number
+        Read-only property which returns the mode.
+
+    t.skewness: number
+        Read-only property which returns the skewness.
+
+    t.stdev: number
+        Read-only property which returns the standard deviation.
+
+    t.variance: number
+        Read-only property which returns the variance.
+
+    t.cdf: Function
+        Evaluates the cumulative distribution function (CDF).
+
+    t.logcdf: Function
+        Evaluates the natural logarithm of the cumulative distribution function
+        (CDF).
+
+    t.logpdf: Function
+        Evaluates the natural logarithm of the probability density function
+        (PDF).
+
+    t.pdf: Function
+        Evaluates the probability density function (PDF).
+
+    t.quantile: Function
+        Evaluates the quantile function at probability `p`.
+
+    Examples
+    --------
+    > var t = {{alias}}( 6.0 );
+    > t.v
+    6.0
+    > t.entropy
+    ~1.592
+    > t.kurtosis
+    3.0
+    > t.mean
+    0.0
+    > t.median
+    0.0
+    > t.mode
+    0.0
+    > t.skewness
+    0.0
+    > t.stdev
+    ~1.225
+    > t.variance
+    1.5
+    > t.cdf( 1.0 )
+    ~0.822
+    > t.logcdf( 1.0 )
+    ~-0.196
+    > t.logpdf( 1.5 )
+    ~-2.075
+    > t.pdf( 1.5 )
+    ~0.126
+    > t.quantile( 0.8 )
+    ~0.906
+
+    See Also
+    --------
+

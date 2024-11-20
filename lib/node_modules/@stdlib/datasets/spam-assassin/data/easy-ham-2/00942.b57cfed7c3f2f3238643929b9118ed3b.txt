@@ -1,0 +1,74 @@
+From fork-admin@xent.com  Thu Aug  1 00:03:42 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A3008440C8
+	for <jm@localhost>; Wed, 31 Jul 2002 19:03:42 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 01 Aug 2002 00:03:42 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6VMxJ212399 for <jm@jmason.org>;
+    Wed, 31 Jul 2002 23:59:21 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 76C662940EF; Wed, 31 Jul 2002 15:52:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from argote.ch (argote.ch [80.65.224.17]) by xent.com (Postfix)
+    with ESMTP id ABDCE2940EF for <fork@xent.com>; Wed, 31 Jul 2002 15:51:38
+    -0700 (PDT)
+Received: by argote.ch (Postfix, from userid 500) id 510AAC44E;
+    Thu,  1 Aug 2002 00:50:10 +0200 (CEST)
+To: fork@spamassassin.taint.org
+Subject: Re: vkatalov@elcomsoft.com: Security warning draws DMCA threat
+Message-Id: <20020731225010.510AAC44E@argote.ch>
+From: harley@argote.ch (Robert Harley)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu,  1 Aug 2002 00:50:10 +0200 (CEST)
+
+Jon O. wrote:
+> Looks like HP is using the DMCA to prevent full disclosure of
+> security vulnerablities. This is not a good precedent...
+> [...]
+> > WASHINGTON--Hewlett Packard has found a new club to use to pound
+> > researchers who unearth flaws in the company's software: the Digital
+> > Millennium Copyright Act.
+> >
+> > Invoking both the controversial 1998 DMCA and computer crime laws, HP
+> > has threatened to sue a team of researchers who publicized a
+> > vulnerability in the company's Tru64 Unix operating system.
+> > [...]
+
+Well that exploit requires an executable stack so it won't happen on a
+properly admin-ed system.  But anyway grab it if you want from any of
+a million places, such as:
+
+  http://www.securiteam.com/exploits/5YP0S2035O.html
+
+  http://packetstormsecurity.nl/0101-exploits/tru-64.su.c
+
+  http://spisa.act.uji.es/spi/progs/codigo/www.hack.co.za/exploits/os/dg-ux/alpha/5a/su.c
+
+
+Bye,
+  Rob.
+     .-.                                                               .-.
+    /   \           .-.                                 .-.           /   \
+   /     \         /   \       .-.     _     .-.       /   \         /     \
+  /       \       /     \     /   \   / \   /   \     /     \       /       \
+ /         \     /       \   /     `-'   `-'     \   /       \     /         \
+            \   /         `-'                     `-'         \   /
+             `-'                                               `-'
+http://xent.com/mailman/listinfo/fork
+
+

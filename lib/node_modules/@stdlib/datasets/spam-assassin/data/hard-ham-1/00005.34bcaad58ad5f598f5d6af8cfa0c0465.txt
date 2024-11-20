@@ -1,0 +1,544 @@
+Return-Path: <iso17799@securityrisk.co.uk>
+Received: (qmail 9820 invoked by alias); 24 Jun 2002 18:23:37 -0000
+Received: (qmail 9813 invoked by uid 82); 24 Jun 2002 18:23:37 -0000
+Received: from iso17799@securityrisk.co.uk by mailhost with qmail-scanner-1.00 (uvscan: v4.1.40/v4208. . Clean. Processed in 0.485368 secs); 24 Jun 2002 18:23:37 -0000
+Received: from unknown (HELO FUSNWR01-LRS) (62.172.195.14)
+  by mi-1.rz.ruhr-uni-bochum.de with SMTP; 24 Jun 2002 18:23:36 -0000
+Received: from [213.1.202.147] (helo=p7q1e)
+	by FUSNWR01-LRS with esmtp (Exim 4.05)
+	id 17MY9x-0001zk-00
+	for Xxxxxxxx.Yyyyyyyyyyyyy@ruhr-uni-bochum.de; Mon, 24 Jun 2002 19:01:53 +0100
+Message-ID: <4112-22002612418718720@p7q1e>
+Errors-to: error@securityrisk.co.uk
+From: "The ISO17799 Newsletter" <iso17799@securityrisk.co.uk>
+To: "Xxxxxxxx.Yyyyyyyyyyyyy@ruhr-uni-bochum.de" <Xxxxxxxx.Yyyyyyyyyyyyy@ruhr-uni-bochum.de>
+Subject: The ISO17799 Newsletter - Issue 4
+Date: Mon, 24 Jun 2002 19:07:18 +0100
+MIME-Version: 1.0
+Content-type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: quoted-printable
+
+______________________________________________________
+
+THE ISO17799 NEWSLETTER - EDITION 4
+______________________________________________________
+
+Welcome to the fourth edition of the ISO17799 newsletter, designed to
+keep you abreast of news and developments with respect to ISO17799 and
+information security. 
+
+The information contained in this newsletter is absolutely free to our
+subscribers and provides guidance on various practical issues, plus
+commentary on recent Information Security incidents. 
+
+Guidance and information included in this issue:
+
+1)  The ISO17799 Toolkit Uncovered 
+2)  Social Engineering - Are you Susceptible?
+3)  ISO17799: A World Wide Phenomena
+4)  Stranger Danger
+5)  ISO17700: More Frequently Asked Questions
+6)  Credit Card Transactions - Minimize the Risks
+7)  BSI Certifications - Congratulations
+8)  ISO17799 Section 11 - BCP Review
+9)  It Couldn't Happen Here.... Could It?
+10)  Subscription Information
+
+
+
+THE ISO17799 TOOLKIT UNCOVERED
+==============================
+
+The ISO17799 standard can be acquired either stand alone or as part of
+an introductory pack appropriately called 'The ISO17799 Toolkit'. But
+why was it packaged thus, and what is included in the pack?  
+
+The purpose of the toolkit is to help organizations get off to a flying
+start with respect to ISO17799... not only to understand the standard
+itself but to begin to address many of the standard's requirements more
+quickly.
+
+The contents can be broken down into two groups: those that help the
+organization to understand where ISO17799 fits and what is involved in
+embracing it, and those that help an organization to take the first
+critical steps to compliance.
+
+In the former group are the 'RoadMap to Certification' (which broadly
+describes the process of gaining certification), the 'XL Management
+Presentation' (which explains the history, background and current status
+of the standard) and of course the ISO17799 standard itself (both
+parts).
+
+In the latter group are some key items to aid compliance. These include
+a comprehensive set of ISO17799 compliant security policies to address
+section 3 (Security Policy) and business continuity audit checklists to
+help address section 11 (Business Continuity Management).
+
+It doesn't end there, however. For the audit section there is a detailed
+set of audit questionnaires to address various issues and platforms. For
+newcomers to information security there is even a substantial glossary
+of terms.  
+
+Clearly, creating such a toolkit was a significant undertaking. However,
+in terms of helping organizations exploring the initial stages of
+ISO17799, it can be invaluable. 
+
+More information on the ISO17799 Toolkit and how to purchase can be
+found at: http://www.iso17799-made-easy.com
+
+The standard itself can alternatively be procured from:  
+http://www.iso17799.net 
+
+
+
+SOCIAL ENGINEERING - ARE YOU SUSCEPTIBLE?
+=========================================
+
+The term 'social engineering' can conjure up a variety of ideas, usually
+based around the concept of genetic tampering. However, when applied to
+IT security, it has its own implications and its own vocabulary.
+
+Following interviews with known computer criminals, a list of approaches
+has been produced. These are designed to gather information without the
+target even realizing that they have parted with it.
+
+The attempts are often made on an opportune bases, with common locations
+for this sort of activity being planes, trains and pubs. The telephone
+is probably the major source of pre-meditated acts.  
+
+The following are some of the major techniques employed:
+
+BAITING
+This essentially involves asking a variety of questions, including some
+leading questions designed to 'catch' the right answers. Often, items of
+conversation are introduced based upon replies received. The fiction is
+legitimized with small amounts of fact in the right places.
+
+PULLING RANK
+This amounts ot the perpetrator assuming a more senior position in the
+company than the victim and is usually enacted on the telephone. It does
+not necessitate direct impersonation... only the POSITION needs to be
+assumed. 
+
+EXHAUSTING
+This involves asking a constant stream of similar questions to wear down
+the target.
+
+SURF BOARDING
+Basically this is looking over someone's shoulder at something
+confidential. This could be directly, through a window, through a
+doorway, etc.
+
+SURVEYS
+The information given freely in surveys can often be extremely useful to
+a criminal. The surveys can initially be for entirely legitimate
+purposes, or can be completely bogus from the start. In either case
+sensitive information can often be obtained and unwittingly disclosed.
+
+
+There are of course many other techniques. However, disclosure can be
+prevented via the use of a series of common sense rules and policies. 
+
+Before releasing any information it is essential to at least establish:
+
+a) the sensitivity of the information
+b) your authority to exchange or release the information
+c) the real identity of the third party (proper authentication)
+d) the purpose of the exchange
+
+The act of exchange should also be recorded for audit purposes.
+
+
+
+ISO17799 - A WORLD WIDE PHENOMINA =================================
+
+Disney would have said "it's a small world after all", but the global
+take on of ISO17799 proves that organizations the planet over are
+embracing it with enthusiasm.
+
+To illustrate the global nature of the standard, we recently created a
+table from the last 500 purchases of the standard from the ISO17799
+Electronic Shop (www.iso17799.net). The figures below do come with a
+serious health warning though - the Electronic Shop is a credit card
+purchase system. Some cultures are not as comfortable or familiar as
+others with credit card purchase and will therefore have their purchase
+position significantly understated. An example is India, which acquires
+substantial numbers of the standard, only two of which show in the last
+500 from the download location.
+
+That aside, the table makes interesting reading:
+
+Argentina 1 
+Australia 6 
+Austria 5  
+Barbados 2 
+Belgium 5 
+Bermuda 1 
+Bosnia and Herzegovina 1 
+Brasil 2 
+Brazil 4 
+Canada 52 
+Cayman Islands 1 
+Chile 3 
+China 3 
+Colombia 5 
+Costa Rica 1 
+Croatia 1
+Cyprus 1 
+Denmark 5 
+Deutschland 5  
+Egypt 4 
+England 26 
+France 3 
+Germany 20 
+Greece 3 
+Guatemala 1 
+Hong Kong 7 
+Hungary 1 
+India 2 
+Indonesia 2 
+Ireland 11 
+Isle of Man 1 
+Israel 1 
+Italia 1 
+Italy 20 
+Japan 3 
+Malaysia 5 
+Mexico 9
+Netherlands 3 
+New Zealand 2 
+Northern Ireland 1 
+Norway 10 
+NZ 1 
+Panama 1 
+Portugal 1
+Russia 3 
+Sacramento 1 
+Scotland 3 
+Singapore 9
+Slovak Republic 1
+Slovenia 1
+South Africa 4
+Spain 9 
+Sultanate of Oman 1 
+Sweden 3 
+Switzerland 14 
+Taiwan 3 
+Thailand 2 
+The Netherlands 8
+Tunisia 1 
+Turkey 1 
+U.A.E 1 
+UK 51 
+United Arab Emirates 2 
+United Kingdom 24 
+United States 13 
+United States of America 25 
+USA 176 
+Venezuela 2 
+
+
+STRANGER DANGER
+===============
+
+As you read this article, look around at your working environment. The
+items/information you have to hand may not seem very sensitive because
+you deal with them every day... but now look again.
+
+If you were alone and not a member of staff, how would you view them?
+What would you find if you looked around? Picture yourself as a visitor
+passing through. What can you hear in terms of conversation? What can
+you see?
+
+The chances are that you can hear and see quite a lot that you would not
+want to be openly disclosed to the outside world. If this is the case,
+the security of your information is at risk potentially from every
+visitor, stranger, subcontractor, etc. 
+
+This article is not written with the intention of discrediting visitors,
+but nonetheless, it is important to be fully AWARE of what CAN happen if
+due caution is not exercised.
+
+The following guidelines may help in ensuring that the risks are
+minimized:
+
+* Your reception/visitor area should issue distinctive badges and ensure
+that visitors wear them
+
+* Consider using different colored badges for each day of the week.
+
+* Challenge those who are not displaying any identity badges
+
+* If your location issues identity badges - make sure YOU wear yours
+
+* Do not be afraid to ask someone who they are visiting and what they
+are doing
+
+* Do not be lazy... escort visitors from reception (if applicable)...
+don't let them make their way to you
+
+* Do not hold doors open for people not displaying their ID
+
+* Do not leave visitors alone   
+
+
+
+ISO17799 - MORE FREQUENTLY ASKED QUESTIONS
+==========================================
+
+1) How many controls are there in the standard?
+Part 1 is organized into 10 sections. There are 127 main controls and
+over 500 detailed controls in total.
+
+2) What is part 2?
+Part 2 basically explains how to apply the standard itself, and how to
+build and operate an information security management system.
+
+3) How old is it?
+The standard stems from an original publication in 1993, from the DTI in
+the UK. It became BS7799 in 1995 and of course ISO17799 in 2000.
+
+4) What is accreditation?
+An accreditation body can authorize others to "certify" third parties
+under the standard (p2). A number of accreditation bodies exist in
+different countries.
+
+5) Is certification for life?
+No. It is normally for three year periods.
+
+6) ISO17799 is used throughout the world, but was it internationally
+created? Yes indeed. The latest versions included input from
+representatives from many nations, including Australia, Brazil, Germany,
+Norway, UK and USA, amongst others.
+
+7) Is it linked to a specific national legal system?
+No. It is generic in terms of legislation.
+
+
+
+CREDIT CARD TRANSACTIONS: MINIMIZE THE RISKS
+============================================
+
+The use of credit and debit cards to purchase goods and services has
+become an everyday convenience that we take for granted, but there are
+associated information security risks which we should pause to consider,
+especially when making payments over the Internet.  
+
+Web sites are becoming an increasingly popular means of purchasing goods
+and services, but they have also become popular targets for cyber
+criminals, who often use stolen credit card numbers to purchase goods,
+which can then be easily exchanged for cash.  There are also relatively
+simple technologies now readily available which could be used by hackers
+to surreptitiously steal vast amounts of money, a few pounds at a time,
+from millions of people. A survey by the IT research company Gartner
+(http://www.gartner.com) predicted that Internet crime involving the
+"mass victimization" of consumers could take place by the end of this
+year.  
+
+We recommend the following best practice guidelines to minimize the
+risks involved in credit card transactions:
+
+* Ensure that credit cards used to purchase goods or services on the
+Internet have a low credit limit, or if debit cards are used, that they
+have limited funds and are only topped up to cover specific Internet
+purchases.
+
+* All expenses incurred through Internet transactions should be
+carefully audited on a regular basis for any anomalies.
+
+* Only enter credit card details on a Web site if you are confident as
+to its authenticity and that the connection is secure - the prefix https
+(as opposed to the usual http) in the Web Site address indicates a
+secure connection.
+
+* If the security of a Web site is in doubt, any confidential
+information posted to it may be exposed to malicious intent.  Be
+extremely cautious when posting confidential details on any site where
+the Internet Service Provider hosting the site is not verified. Note
+that we have pre-checked all sites referenced in this newsletter for
+security!
+
+* If ordering by telephone using a credit card, ensure that you are
+talking to the correct person.  If you are unsure whether the
+organization you are dealing with will handle your details sensitively,
+pay by some other means.
+
+* Lost or stolen credit card details may be used for Internet
+transactions.  Inform the card issuer and relevant person within your
+organization immediately if a company credit card is lost or stolen.
+
+
+
+BSI - CERTIFICATIONS
+====================
+
+Congratulations to all the following who have been certified by BSI with
+respect to BS7799 Part2 for at least one system in at least one
+location:
+
+7 Global, Accordis Acetate Chemicals Limited, Alenia Marconi Systems
+Ltd, American Society of Quality, AMOUN Pharmaceutical Co (Egypt),
+Attenda Limited, Business Coach IT Management, CADWEB Limited, Camelot
+Group Plc, Capita Business Services, Dai-Ichi Kangyo Bank Limited, DBI
+Consulting, Digex, DNP Facility Services Co Limited (Japan), Ericsson
+ESPA A S.A., Glaxo Wellcome Manufacturing (Singapore),GlaxoSmithKline,
+Hanvit Bank Korea, Hyundai Information Technology, Icfox International,
+Intergalis, Logic Systems Management, Macquarie Corporate
+Telecommunications Pty Limited Australia, Netstore Plc, NTT Data Corp,
+Paramount Computer Systems (UAE), PCCW Business eSolutions Hong Kong,
+S-Cube Inc, Serious Fraud Office, Siemens Business Services Trust Center
+(Munich), Stiki EHF (Iceland), Sony Bank Inc (Japan), Co-operative Bank
+Plc, The University of Texas, Total Network Solutions Limited, Unisys
+Limited, Vodafone Telecommerce GMBH, Volex Group Plc
+
+
+We intend to produce a more complete list in a future newsletter. We
+will also include certificates issued by the growing number of other
+certification bodies across the world.
+
+
+
+ISO17799 SECTION 11: BCP REVIEW 
+===============================
+
+Business continuity planning is covered by section 11 of the standard, a
+core requirement of which is the creation and maintenance of a business
+continuity plan.
+
+Creating such a plan from scratch is a difficult undertaking of course.
+This is one reason why software products were produced. Unfortunately
+these often become problematic in themselves... difficult to learn,
+expensive, etc.
+
+Recent times have therefore seen a move to simplification, with
+organizations keen to avoid adding complexity to an already complex
+task. At the vanguard of this change was a product developed entirely in
+MS-Word: The BCP Generator.
+
+This was designed from top down to simplify business continuity
+planning. It comprises two components: a plan template and an
+interactive guide (the latter using Word macros to jump to and fro into
+the correct part of the template). It's impact upon the business
+continuity scene has been substantial, with organizations from the very
+largest to the smallest embracing the tool and its concepts. It is in
+active use in over 40 countries.
+  
+With this change of emphasis in the business continuity planning market,
+there is now NO excuse for not creating a full recovery plan. The old
+lines of "too expensive" and "too difficult" are now less hollow than
+they ever were. Although section 11 is very clear with respect to the
+need of a comprehensive plan, it is surely also a matter of due
+diligence to have one, and equally, irresponsibility not to have one.
+
+For information on the BCP Generator see: 
+http://www.disaster-recovery-plan.com
+
+For information on business continuity generally, see:
+http://www.yourwindow.to/business-continuity/ 
+
+
+
+IT COULDN'T HAPPEN HERE....COULD IT?
+====================================
+
+Every issue of The ISO17799 Newsletter features at least one TRUE story
+of an information security breach and its consequences. Again, in this
+issue, we focus upon 'low tech' but high impact incidents:
+
+
+1) On 25th October a contract programmer who had once worked for a large
+US based bank walked into the 'inner sanctum' of the main building (the
+security guards remembered him as someone permitted to do so). In the
+dealing room he claimed to be conducting a quality audit and
+interrogated a junior employee and watched a program run - noting down
+security codes as they were entered. He then left and hung around
+outside until just after normal trading time.
+
+He then rang the Bank from a public phone box and initiated an
+electronic funds transfer using the codes... $10.2m to a Swiss account. 
+
+The plan nearly failed when he found that he had noted one of the codes
+incorrectly, but he rang the Bank department back and incredibly managed
+to trick a different employee into revealing the correct digit.
+
+He flew to Switzerland and later returned with the money. He was caught
+simply because he couldn't resist boasting about his great feat. When
+the police contacted the bank they were still totally unaware of their
+loss!
+
+
+2) Remote, or dial-in access can be a real Achilles heel if not properly
+controlled. In a recent case a young hacker gained access to a major
+company's system by using the default password of a system engineer
+(which had never been changed!). 
+
+This gave him considerable scope and powers of access. To cover for
+himself, however, he semi-disabled the machine log, changed a number of
+user passwords, created several fictitious privileged users and tampered
+with the dial back system.
+
+Getting more ambitious he established a communication link with another
+computer and ended up making it crash. All this took place over a couple
+of evenings.
+
+To recover from the havoc the installation had to close down its prime
+computer and restore from the previous weeks back-up, at considerable
+cost.
+
+
+3) Over a period of nine months, the number of computer malfunctions
+within a large company had risen from an average of two per year to
+critical levels. The impact was such that the business fell behind with
+its invoicing systems and had to buy processing and backup from third
+parties. As it could not deliver some of its services reliably, it
+started to lose the confidence of its customers. The situation began to
+spiral. 
+
+Eventually, the company suspected foul play may be involved and called
+the police. Secret surveillance equipment was installed to monitor
+staff. One was filmed lightly scratching circuit boards in disk units
+and also attaching paper clips to them. Both these actions led to a
+short circuit.
+
+When confronted, he confessed everything. His motive was to earn
+overtime, which was required to process the overlap work which was
+delayed by the malfunction. He netted 689 UKP over the 9 months. The
+company lost at least 500,000 UKP.   
+
+
+
+CONTRIBUTIONS 
+=============
+Have you got something to say on the topic of ISO17799... a fresh
+insight or some information which might benefit others? If so, please
+feel free to contribute your submission to us. 
+
+
+
+ISO17799 NEWSLETTER REMINDER
+============================
+
+We hope that you have found this newsletter to be informative, and
+hopefully useful in helping to address the ISO17799 issue. Future
+editions will pursue these ends further (and will include interviews,
+case studies and more). 
+
+Subscription to the ISO17799 Newsletter is free. Please do feel free to
+pass this copy on to friends and colleagues. If you do not wish to
+receive further copies, please email us at the address below with a
+title of Un-subscribe. 
+
+If your friends or colleagues wish to receive the newsletter directly,
+they should simply send a blank email to: iso17799@securityrisk.co.uk 
+
+
+
+Finally, BinaryNine Ltd accept no liability or responsibility for errors
+or omissions in this newsletter. This also applies to any loss or damage
+caused, arising directly or indirectly, by the use of or reliance on the
+information contained within.  Copyright 2002 
+
+
+
+
+

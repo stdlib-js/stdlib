@@ -1,0 +1,62 @@
+From fork-admin@xent.com  Wed Sep 18 11:52:27 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id C0FEF16F03
+	for <jm@localhost>; Wed, 18 Sep 2002 11:52:26 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 18 Sep 2002 11:52:26 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8I5wYC15711 for <jm@jmason.org>;
+    Wed, 18 Sep 2002 06:58:34 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 083F02940C6; Tue, 17 Sep 2002 22:55:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.superb.net (smtp1.superb.net [207.228.225.14]) by
+    xent.com (Postfix) with SMTP id 7555029409F for <fork@xent.com>;
+    Tue, 17 Sep 2002 22:54:27 -0700 (PDT)
+Received: (qmail 20902 invoked from network); 18 Sep 2002 05:57:48 -0000
+Received: from unknown (HELO maya.dyndns.org) (207.61.5.143) by
+    smtp1.superb.net with SMTP; 18 Sep 2002 05:57:48 -0000
+Received: by maya.dyndns.org (Postfix, from userid 501) id AE0ED1C2C4;
+    Wed, 18 Sep 2002 01:57:43 -0400 (EDT)
+To: CDale <cdale@techmonkeys.net>
+Cc: fork@spamassassin.taint.org
+Subject: Re: boycotting yahoo
+References: <Pine.LNX.4.44.0209172137100.5112-100000@isolnetsux.techmonkeys.net>
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m23cs7u9ew.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 18 Sep 2002 01:57:43 -0400
+
+
+I'm a bit confused about this boycott thing.  How is what China is
+doing any different than having Scientology and who ever else
+state-side who takes the whim evoking the DMCA to close down foreign
+sites they deem inappropriate?  At least the Chinese make it voluntary
+and ask politely, rather than just sending legal musclemen first off.
+
+-- 
+Gary Lawrence Murphy - garym@teledyn.com - TeleDynamics Communications
+ - blog: http://www.auracom.com/~teledyn - biz: http://teledyn.com/ -
+  "Computers are useless. They can only give you answers." (Picasso)
+
+

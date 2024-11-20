@@ -1,0 +1,22 @@
+
+{{alias}}( arr )
+    Returns the last element of an array-like object.
+
+    Parameters
+    ----------
+    arr: ArrayLikeObject
+        Input array.
+
+    Returns
+    -------
+    out: any
+        Last element.
+
+    Examples
+    --------
+    > var out = {{alias}}( [ 1, 2, 3 ] )
+    3
+
+    See Also
+    --------
+

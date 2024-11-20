@@ -1,0 +1,95 @@
+From ilug-admin@linux.ie  Wed Dec  4 11:53:15 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 7D71016F16
+	for <jm@localhost>; Wed,  4 Dec 2002 11:53:14 +0000 (GMT)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 04 Dec 2002 11:53:14 +0000 (GMT)
+Received: from lugh.tuatha.org (postfix@lugh.tuatha.org [194.125.145.45])
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id gB4Bmd813007 for
+    <jm-ilug@jmason.org>; Wed, 4 Dec 2002 11:48:39 GMT
+Received: from lugh.tuatha.org (localhost [127.0.0.1]) by lugh.tuatha.org
+    (Postfix) with ESMTP id 4895134248; Wed,  4 Dec 2002 11:50:11 +0000 (GMT)
+Delivered-To: linux.ie-ilug@localhost
+Received: from mahler.ucd.ie (mahler.ucd.ie [137.43.12.63]) by
+    lugh.tuatha.org (Postfix) with ESMTP id 8D43C34247 for <ILUG@linux.ie>;
+    Wed,  4 Dec 2002 11:49:58 +0000 (GMT)
+Received: from gavin by mahler.ucd.ie with local (Exim 3.36 #1 (Debian))
+    id 18JY74-0005x2-00 for <ILUG@linux.ie>; Wed, 04 Dec 2002 11:54:46 +0000
+From: Gavin McCullagh <ilug_gmc@fiachra.ucd.ie>
+To: "'ILUG@linux.ie'" <ILUG@linux.ie>
+Subject: Re: [ILUG] Linux Install
+Message-Id: <20021204115445.GC22559@fiachra.ucd.ie>
+Reply-To: Irish Linux Users Group <ilug@linux.ie>
+Mail-Followup-To: "'ILUG@linux.ie'" <ILUG@linux.ie>
+References: <3C0F11345BD5D611BD8D00902733977E12C077@exchcl.epa.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <3C0F11345BD5D611BD8D00902733977E12C077@exchcl.epa.ie>
+User-Agent: Mutt/1.4i
+X-Gnupg-Publickey: http://fiachra.ucd.ie/~gavin/public.gpg
+X-Operating-System: Linux 2.4.18-686 i686
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Beenthere: ilug@linux.ie
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:ilug-request@linux.ie?subject=help>
+List-Post: <mailto:ilug@linux.ie>
+List-Subscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=subscribe>
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+List-Unsubscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=unsubscribe>
+List-Archive: <http://www.linux.ie/pipermail/ilug/>
+X-Original-Date: Wed, 4 Dec 2002 11:54:45 +0000
+Date: Wed, 4 Dec 2002 11:54:45 +0000
+
+
+Hi,
+
+I think you need to give us a little more detailed information.
+
+On Wed, 04 Dec 2002, Gianni Ponzi wrote:
+
+> I have a prob when trying to install Linux (tried RedHat, Suse) on my
+> laptop. 
+
+You get _exactly_ the same problem with Suse and RedHat, is that right?
+What versions of these have you used?
+
+> I can start the install but after about 2min, the whole pc just
+> dies.
+
+As in freezes, reboots?  Do you get any errors?
+
+> I know it's not a Linux prob and here is what I have encountered:
+> 
+> I had the same problem when installing Win on it and eventually sorted it
+> out by disabling the infrared port. 
+
+Did you disable it in the BIOS or in windows?
+
+> I'm guessing this might be same prob although I'm not sure. I am very new
+> to Linux so it's not that easy for me to work it out. I did manage to
+> follow the setup procedure at one stage (using images on disks) and it
+> cuts out either as it's trying to verify what CD-Rom I have or just after
+> (hence my suspicion of the infrared port again).
+
+1. What laptop is it?  What is the Processor and how much RAM does it have?
+
+2. You cannot simply boot off the cdrom?  It must be quite an old laptop
+then or else cdrom booting is disabled in the BIOS.  Is the cdrom external
+or strange in some way?
+
+Gavin
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

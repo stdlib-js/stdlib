@@ -1,0 +1,12 @@
+
+first()
+    Jumps to the first slide.
+
+    Examples
+    --------
+    > first();
+
+    See Also
+    --------
+    end, jumpTo, last, next, prev
+

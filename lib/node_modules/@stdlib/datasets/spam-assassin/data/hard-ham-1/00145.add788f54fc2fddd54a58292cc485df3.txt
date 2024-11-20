@@ -1,0 +1,124 @@
+Return-Path: <update@list.theregister.co.uk>
+Received: from list.theregister.co.uk (theregister-sql2.hosted.netline.net.uk [213.40.196.63])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6N2cs421388
+	for <qqqqqqqqqq-reg@spamassassin.taint.org>; Tue, 23 Jul 2002 03:38:54 +0100
+Received: from localhost ([127.0.0.1] helo=list.theregister.co.uk)
+	by list.theregister.co.uk with smtp (Exim 3.31 #1)
+	id 17Wp2J-0002N7-0C
+	for <qqqqqqqqqq-reg@spamassassin.taint.org>; Tue, 23 Jul 2002 03:04:27 +0100
+Date: Tue, 23 Jul 2002 03:00:01 +0100
+From: update@list.theregister.co.uk
+Subject: Reg Headlines Tuesday July 23
+To: Reg Subscribers <update@list.theregister.co.uk>
+Precedence: list
+X-Bulkmail: 2.05
+Message-Id: <E17Wp2J-0002N7-0C@list.theregister.co.uk>
+
+Today's Headlines from The Register
+-----------------------------------
+
+    To unsubscribe from this daily news update, see the instructions at
+    the end of this message.
+
+
+
+Software
+
+    Ex-Microserf Schmidt as govt cyberterror Cassandra
+    Apocalypse soon
+        http://www.theregister.co.uk/content/4/26317.html
+
+    Bruce Perens on Real's Open Source gambit
+    Media Frenzy
+
+        http://www.theregister.co.uk/content/4/26314.html
+
+    Fingerprinting of UK school kids causes outcry
+    Prison-style fingerprint checking technology replaces library cards, or What Big Brother did next
+        http://www.theregister.co.uk/content/4/26305.html
+
+    MS planning to tackle leaked WinXP keys with SP1?
+    Mass zeroing of corporate keys mooted
+        http://www.theregister.co.uk/content/4/26301.html
+
+Personal Hardware
+
+    Microsoft's Canary phone - the first pics
+    What a Stinker!
+        http://www.theregister.co.uk/content/54/26308.html
+
+    We hate our iPAQs
+    Very long list of complaints
+        http://www.theregister.co.uk/content/54/26304.html
+
+Internet
+
+    EU intros site, freephone service to solve citizens' problems
+    Their internal market problems anyway. Yum...
+        http://www.theregister.co.uk/content/6/26312.html
+
+    IETF puts weight behind Advanced Encryption Standard
+    Improved secrecy and security, one TLA at a time
+        http://www.theregister.co.uk/content/6/26311.html
+
+    Volunteer snoops coming to an ISP near you?
+    Operation Cyber-TIPS
+
+        http://www.theregister.co.uk/content/6/26309.html
+
+    Tiscali to launch Excite across Europe
+    Ssssshhhh, it's a secret
+        http://www.theregister.co.uk/content/6/26302.html
+
+Net Security
+
+    Ex-Microserf Schmidt as govt cyberterror Cassandra
+    Apocalypse soon
+        http://www.theregister.co.uk/content/55/26317.html
+
+    Serious PHP vuln reported
+    Worse on Sparc than Intel
+        http://www.theregister.co.uk/content/55/26316.html
+
+    Symantec's SecurityFocus buyout met with pessimism
+    Bug trackers fear BugTraq death
+        http://www.theregister.co.uk/content/55/26315.html
+
+    IETF puts weight behind Advanced Encryption Standard
+    Improved secrecy and security, one TLA at a time
+        http://www.theregister.co.uk/content/55/26311.html
+
+Business
+
+    EDS rejects WorldCom accounting allegations
+    'Unfounded'
+        http://www.theregister.co.uk/content/7/26306.html
+
+    Hopes of PC market recovery dashed
+    Dell close to overtaking HP in becalmed sector
+        http://www.theregister.co.uk/content/7/26303.html
+
+    WorldCom dives for Chapter 11 cover
+    No surprises there
+        http://www.theregister.co.uk/content/7/26300.html
+
+    ARM plans to charge options against profits
+    UK market's first 'we're not Enron, oh no sir' move
+        http://www.theregister.co.uk/content/7/26299.html
+
+
+
+The Register and its contents are copyright 2002 Situation Publishing.
+All rights reserved.
+
+    Tel:     +44 (0)20 7499 2264.
+    Fax:     +44 (0)20 7493 5922.
+    E-Mail:  press.releases@theregister.co.uk
+
+To unsubscribe from these daily updates, visit the following URL.  Make
+sure that you enter exactly the same e-mail address as you used to join
+this service.
+
+    http://list.theregister.co.uk/cgi-bin/unsub.cgi
+
+

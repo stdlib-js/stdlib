@@ -1,0 +1,86 @@
+
+{{alias}}( x, r, p )
+    Evaluates the moment-generating function (MGF) for a negative binomial
+    distribution with number of successes until experiment is stopped `r` and
+    success probability `p` at a value `t`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided a `r` which is not a positive number, the function returns
+    `NaN`.
+
+    If provided a success probability `p` outside of `[0,1]`, the function
+    returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    r: number
+        Number of successes until experiment is stopped.
+
+    p: number
+        Success probability.
+
+    Returns
+    -------
+    out: number
+        Evaluated MGF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.05, 20.0, 0.8 )
+    ~267.839
+    > y = {{alias}}( 0.1, 20.0, 0.1 )
+    ~9.347
+    > y = {{alias}}( 0.5, 10.0, 0.4 )
+    ~42822.023
+
+    > y = {{alias}}( 0.1, 0.0, 0.5 )
+    NaN
+    > y = {{alias}}( 0.1, -2.0, 0.5 )
+    NaN
+
+    > y = {{alias}}( NaN, 20.0, 0.5 )
+    NaN
+    > y = {{alias}}( 0.0, NaN, 0.5 )
+    NaN
+    > y = {{alias}}( 0.0, 20.0, NaN )
+    NaN
+
+    > y = {{alias}}( 0.2, 20, -1.0 )
+    NaN
+    > y = {{alias}}( 0.2, 20, 1.5 )
+    NaN
+
+
+{{alias}}.factory( r, p )
+    Returns a function for evaluating the moment-generating function (MGF) of a
+    negative binomial distribution with number of successes until experiment is
+    stopped `r` and success probability `p`.
+
+    Parameters
+    ----------
+    r: number
+        Number of successes until experiment is stopped.
+
+    p: number
+        Success probability.
+
+    Returns
+    -------
+    mgf: Function
+        Moment-generating function (MGF).
+
+    Examples
+    --------
+    > var myMGF = {{alias}}.factory( 4.3, 0.4 );
+    > var y = myMGF( 0.2 )
+    ~4.696
+    > y = myMGF( 0.4 )
+    ~30.83
+
+    See Also
+    --------
+

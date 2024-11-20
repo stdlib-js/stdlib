@@ -1,0 +1,190 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6N6mBhY041520
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Tue, 23 Jul 2002 01:48:11 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6N6mB58041515
+	for cypherpunks-forward@ds.pro-ns.net; Tue, 23 Jul 2002 01:48:11 -0500 (CDT)
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6N6lwhX041413
+	for <cypherpunks@ds.pro-ns.net>; Tue, 23 Jul 2002 01:48:04 -0500 (CDT)
+	(envelope-from cpunks@ssz.com)
+X-Authentication-Warning: hq.pro-ns.net: Host cpunks@[207.200.56.4] claimed to be einstein.ssz.com
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id BAA00727
+	for cypherpunks@ds.pro-ns.net; Tue, 23 Jul 2002 01:56:31 -0500
+Received: (from mdom@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id BAA00676
+	for cypherpunks-outgoing; Tue, 23 Jul 2002 01:55:04 -0500
+Received: from einstein.ssz.com ([211.202.82.114])
+	by einstein.ssz.com (8.8.8/8.8.8) with SMTP id BAA00666
+	for cypherpunks@einstein.ssz.com; Tue, 23 Jul 2002 01:54:45 -0500
+Date: Tue, 23 Jul 2002 01:54:45 -0500
+Message-Id: <200207230654.BAA00666@einstein.ssz.com>
+To: <cypherpunks@einstein.ssz.com>
+From: 부동산정보나라<total@informland.co.kr>
+Subject: [광고]부동산정보 받아보세요
+Content-Type: text/html;charset=ks_c_5601-1987
+Sender: owner-cypherpunks@ssz.com
+Precedence: bulk
+Reply-To: cypherpunks@ssz.com
+X-Mailing-List: cypherpunks@ssz.com
+X-Unsubscription-Info: http://einstein.ssz.com/cdr
+X-List-Admin: list@ssz.com
+X-Loop: ssz.com
+X-Acceptable-Languages: English, Russian, German, French, Spanish
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+X-MIME-Autoconverted: from 8bit to quoted-printable by hq.pro-ns.net id g6NEaShX026537
+
+<!-- saved from url=3D(0022)http://internet.e-mail -->
+<html>
+
+<head>
+
+<title>=BA=CE=B5=BF=BB=EA=C1=A4=BA=B8=B3=AA=B6=F3</title>
+</head>
+<body text=3Dblack vLink=3Dpurple aLink=3Dred link=3Dblue bgColor=3Dwhite=
+>
+
+<table cellSpacing=3D0 cellPadding=3D0 width=3D688>
+
+<tr>
+
+<td width=3D688 colSpan=3D3 >
+<p >
+    <img height=3D75=20
+      src=3D"http://www.informland.co.kr/kong/mail_01.gif" width=3D696 bo=
+rder=3D0=20
+      >
+</p></td></tr>
+        <tr >
+            <td width=3D688 colSpan=3D3 height=3D11><p align=3Dcenter >
+    <img height=3D142=20
+      src=3D"http://www.informland.co.kr/kong/mail_02.gif" width=3D607 bo=
+rder=3D0=20
+      ></p></td>
+        </tr>
+        <tr >
+            <td width=3D37 height=3D819><p>&nbsp;</p></td>
+    <td width=3D614 background=3Dhttp://www.informland.co.kr/kong/mail_bg=
+.gif=20
+    height=3D819>
+        <table width=3D"509" cellSpacing=3D0 cellPadding=3D0 align=3Dcent=
+er=20
+     >
+            <tr>
+        <td width=3D"509" >
+            <p >
+                <img height=3D153=20
+            src=3D"http://www.informland.co.kr/kong/mail_03.gif" width=3D=
+535=20
+            border=3D0>
+            </p>
+        </td></tr>
+                    <tr >
+                        <td width=3D509><p align=3Dcenter >
+                <img height=3D207=20
+            src=3D"http://www.informland.co.kr/kong/mail_04.gif" width=3D=
+472=20
+            useMap=3D#ImageMap1 border=3D0></p></td>
+                    </tr>
+                    <tr >
+                        <td width=3D509><p>&nbsp;</p></td>
+                    </tr>
+                <tr>
+                    <td width=3D"509" height=3D8>
+                        <p>
+                <img height=3D141=20
+            src=3D"http://www.informland.co.kr/kong/mail_05.gif" width=3D=
+523=20
+            border=3D0></p>
+                    </td>
+                </tr>
+                    <tr >
+                        <td width=3D509 height=3D10><p align=3Dcenter >
+                <img height=3D204=20
+            src=3D"http://www.informland.co.kr/kong/mail_06.gif" width=3D=
+473=20
+            useMap=3D#ImageMap2 border=3D0=20
+      ></p></td>
+                    </tr>
+        </table>
+                    <h2 align=3Dcenter >
+                        <i ><b=20
+      >
+            <span style=3D"FONT-SIZE: 11pt"=20
+     >=B9=AE=C0=C7=C0=FC=C8=AD 02-2613-1470 =BA=CE=B5=BF=BB=EA=C1=A4=BA=B8=
+=B3=AA=B6=F3<br><a=20
+      href=3D"http://www.informland.co.kr" target=3D_blank=20
+      >http://www.informland.co.kr</a><br=20
+      >=20
+            E-mail &nbsp;:<A href=3D"mailto:total@informland.co.kr" >tota=
+l@informland.co.kr</A></span></b></i>
+                    </h2><p align=3Dcenter >=BC=F6<font size=3D2>=BD=C5=C0=
+=BB=20
+      =BF=F8=C4=A1=BE=CA=C0=B8=BD=C3=B8=E9 "</font>=20
+             <font color=3Dblue size=3D2=20
+     >=BC=F6=BD=C5=B0=C5=BA=CE</font>
+            <font size=3D2>" =B8=A6 =C5=AC=B8=AF =C8=C4=20
+      "</font><font size=3D"2" color=3Dred>  =BA=B8=B3=BB=B1=E2</font><fo=
+nt size=3D"2"=20
+     > " =B9=F6=C6=B0 =B8=A6 =B4=AD=B7=AF =C1=D6=BD=C3=B1=E2 =B9=D9=B6=F8=
+=B4=CF=B4=D9</font></p><p align=3Dcenter><font size=3D"2"=20
+     >[</font><A href=3D"mailto:total@informland.co.kr" >
+            <font color=3Dred size=3D2>=BC=F6=BD=C5=B0=C5=BA=CE</font>=20
+                 </A><font size=3D"2">]</font>=20
+               </p><p align=3Dcenter><font size=3D"2"=20
+     ></font>&nbsp;</p>
+    </td><td width=3D37 height=3D819>
+            <p >&nbsp;</p></td>
+        </tr><tr>
+        <td width=3D"37" height=3D"10">
+            <p></p>
+    <p>
+    </p>
+        </td>
+        <td width=3D"614" height=3D"10" background=3Dhttp://www.informlan=
+d.co.kr/kong/mail_07.gif=20
+   >
+            <p></p>
+        </td>
+            <td width=3D37 height=3D10>
+        <p >
+        </p></td></tr>
+            <tr>
+        <td width=3D"688" height=3D"4" colSpan=3D3>
+            <p>&nbsp;</p>
+        </td></tr>
+</table>
+    <p>&nbsp;
+    </p>
+        <map name=3DImageMap1=20
+ >
+            <area shape=3DRECT target=3D_blank coords=3D328,160,452,186=20
+  href=3D"http://www.informland.co.kr">
+        </map>
+<map=20
+name=3DImageMap2>
+<area shape=3DRECT target=3D_blank=20
+  coords=3D328,157,452,184 href=3D"http://www.informland.co.kr"></map>
+
+</body>
+
+</html>
+
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

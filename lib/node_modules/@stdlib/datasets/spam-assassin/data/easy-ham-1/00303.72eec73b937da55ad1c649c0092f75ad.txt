@@ -1,0 +1,122 @@
+From fork-admin@xent.com  Mon Aug 26 15:32:30 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8C4B844170
+	for <jm@localhost>; Mon, 26 Aug 2002 10:26:39 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 15:26:39 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7PHJaZ20140 for <jm@jmason.org>;
+    Sun, 25 Aug 2002 18:19:37 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 6E1B329410F; Sun, 25 Aug 2002 10:17:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mail.evergo.net (unknown [206.191.151.2]) by xent.com
+    (Postfix) with SMTP id A08F329410C for <fork@xent.com>; Sun,
+    25 Aug 2002 10:16:19 -0700 (PDT)
+Received: (qmail 25936 invoked from network); 25 Aug 2002 17:18:12 -0000
+Received: from dsl.206.191.151.102.evergo.net (HELO JMHALL)
+    (206.191.151.102) by mail.evergo.net with SMTP; 25 Aug 2002 17:18:12 -0000
+Reply-To: <johnhall@evergo.net>
+From: "John Hall" <johnhall@evergo.net>
+To: "'James Tauber'" <jtauber@jtauber.com>, <fork@spamassassin.taint.org>
+Subject: My source: RE: A biblical digression
+Message-Id: <000e01c24c5b$64b78980$0200a8c0@JMHALL>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.2627
+Importance: Normal
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+In-Reply-To: <20020825165054.C0EE52FD33@server3.fastmail.fm>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 25 Aug 2002 10:17:46 -0700
+
+Remember I didn't say it was necessarily a good source, just that it
+looked good.
+
+The site was http://www.religioustolerance.org/chr_10c7.htm
+
+My memory of what they said was accurate.  I do not have the competence
+to defend what they said.  James Tauber's response indicates a breadth
+of knowledge I can't match.
+
+
+> -----Original Message-----
+> From: James Tauber [mailto:jtauber@jtauber.com]
+> Sent: Sunday, August 25, 2002 9:51 AM
+> To: johnhall@evergo.net; fork@spamassassin.taint.org
+> Subject: Re: A biblical digression
+> 
+> On Sat, 24 Aug 2002 11:07:00 -0700, "John Hall" <johnhall@evergo.net>
+> said:
+> > Ran across a site which claimed to explain the original meaning of
+the
+> > Ten Commandments.  It seems some of those meanings have evolved a
+bit,
+> > too.
+> 
+> By "meanings have evolved" do you [or they] mean that the Hebrew words
+> have changed meaning or that our understanding of the Hebrew words
+have
+> changed? Or do they posit a pre-Mosaic form of the laws that had
+> evolved by time of the Pentateuch?
+> 
+> > In particular, there was a claim that the commandment on stealing
+was
+> > actually specifically about 'man stealing -- selling a free man into
+> > slavery.
+> 
+> This seems bogus to me. A quick check of the text indicates the the
+> Hebrew word in question is GANAV which elsewhere in the Pentateuch (eg
+> Gen 44.8) is used to mean steal silver and gold amongst other things.
+> 
+> In July 1999, I made the following comment in response to a similar
+> claim about the "real" meaning of one of the ten commandments:
+> 
+> """
+> > The translations since cause problems at each successive remove
+> 
+> We have the original language versions, though, so this is not an
+> issue.
+> 
+> > I'm sure most everyone is familiar with the argument that the
+meaning of
+> the commandment
+> > is 'thou shalt not murder' rather than 'kill,'
+> 
+> This has nothing to do with successive translations. It is based on
+our
+> knowledge of the meaning of the Hebrew word "ratsach". Most modern
+> translations I've seen translate it "murder" but elsewhere the word is
+> used
+> of an animal killing a human (something for which most English
+speakers
+> wouldn't use the word "murder").
+> """
+> - http://www.xent.com/FoRK-archive/july99/0163.html
+> 
+> 
+> 
+> James
+> --
+>   James Tauber
+>   jtauber@jtauber.com
+
+http://xent.com/mailman/listinfo/fork
+
