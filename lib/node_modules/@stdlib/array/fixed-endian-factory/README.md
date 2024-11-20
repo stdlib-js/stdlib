@@ -306,6 +306,38 @@ var v = arr.get( 0 );
 // returns 1.0
 ```
 
+<a name="method-at"></a>
+
+#### TypedArrayFE.prototype.at( i )
+
+Returns an array element located at integer position (index) `i`, with support for both nonnegative and negative integer positions.
+
+```javascript
+var Float64ArrayFE = fixedEndianFactory( 'float64' );
+
+var arr = new Float64ArrayFE( 'little-endian', [ 1.0, 2.0, 3.0 ] );
+
+var out = arr.at( 0 );
+// returns 1.0
+
+out = arr.at( -1 );
+// returns 3.0
+```
+
+If provided an out-of-bounds index, the method returns `undefined`.
+
+```javascript
+var Float64ArrayFE = fixedEndianFactory( 'float64' );
+
+var arr = new Float64ArrayFE( 'little-endian', [ 1.0, 2.0, 3.0 ] );
+
+var v = arr.at( 100 );
+// returns undefined
+
+v = arr.at( -100 );
+// returns undefined
+```
+
 <a name="method-for-each"></a>
 
 #### TypedArrayFE.prototype.forEach( callbackFn\[, thisArg] )
