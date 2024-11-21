@@ -91,19 +91,22 @@ static float rand_float( void ) {
 static double benchmark( void ) {
 	double elapsed;
 	double t;
-	float re;
-	float im;
+	float re[ 100 ];
+	float im[ 100 ];
 	int i;
 
 	float complex z;
 	float complex y;
 
+	for ( i = 0; i < 100; i++ ) {
+		re[ i ] = ( 1000.0f * rand_float() ) - 500.0f;
+		im[ i ] = ( 1000.0f * rand_float() ) - 500.0f;
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		re = ( 1000.0*rand_float() ) - 500.0;
-		im = ( 1000.0*rand_float() ) - 500.0;
-		z = re + im*I;
-		y = roundf( crealf(z) ) + roundf( cimagf(z) )*I;
+		z = re[ i % 100 ] + im[ i % 100 ]*I;
+		y = roundf( crealf( z ) ) + roundf( cimagf( z ) )*I;
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;

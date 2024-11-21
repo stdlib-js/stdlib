@@ -20,7 +20,6 @@
 #include "stdlib/math/base/special/roundf.h"
 #include "stdlib/complex/float32/ctor.h"
 #include "stdlib/complex/float32/reim.h"
-#include <math.h>
 
 /**
 * Rounds each component of a single-precision complex floating-point number to the nearest integer.
