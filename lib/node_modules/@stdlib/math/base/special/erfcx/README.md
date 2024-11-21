@@ -146,7 +146,7 @@ for ( i = 0; i < x.length; i++ ) {
 #include "stdlib/math/base/special/erfcx.h"
 ```
 
-#### erfcx( x )
+#### stdlib_base_erfcx( x )
 
 Evaluates the [scaled complementary error function][complementary-error-function].
 
