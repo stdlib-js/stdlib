@@ -29,7 +29,7 @@ on:
 # Workflow jobs:
 jobs:
 
-  # Add a new job for adding the initial reaction
+  # Define a job for adding an initial reaction:
   add_initial_reaction:
 
     # Define the type of virtual host machine:
@@ -40,7 +40,21 @@ jobs:
 
     # Define the job's steps:
     steps:
-      # Add initial reaction to the comment
+      # Add "bot: In progress" label to the issue / PR:
+      - name: 'Add in-progress label'
+        # Pin action to full length commit SHA
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        with:
+          github-token: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+          script: |
+            github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              labels: ['bot: In Progress']
+            })
+
+      # Add initial reaction to comment with slash command:
       - name: 'Add initial reaction'
         run: |
           COMMENT="${{ github.event.comment.body }}"
@@ -176,3 +190,36 @@ jobs:
 
           # GitHub token:
           token: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+
+  # Define a job for removing the in-progress label:
+  remove_progress_label:
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Ensure all previous jobs have completed before running this job:
+    needs: [ add_initial_reaction, check_files, update_copyright_years, fix_lint_errors, merge_develop, rebase_develop, help ]
+
+    # Define the conditions under which the job should run:
+    if: github.event.issue.pull_request && startsWith( github.event.comment.body, '/stdlib' )
+
+    # Define the job's steps:
+    steps:
+      - name: Remove in-progress label
+        # Run the step regardless of the outcome of previous steps:
+        if: always()
+        # Pin action to full length commit SHA
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        with:
+          github-token: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+          script: |
+            try {
+              await github.rest.issues.removeLabel({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                name: 'bot: In Progress'
+              })
+            } catch (error) {
+              console.log( 'Error removing label:', error );
+            }
