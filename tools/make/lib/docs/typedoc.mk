@@ -44,16 +44,22 @@ TYPEDOC_HTML ?= $(TYPEDOC_HTML_OUT)/index.html
 
 # Define command-line options to be used when invoking the TypeDoc executable to generate HTML documentation:
 TYPEDOC_HTML_FLAGS ?= \
+	--mode modules \
+	--target es6 \
+	--module commonjs \
 	--options $(TYPEDOC_CONF) \
 	--tsconfig $(TYPEDOC_TSCONFIG) \
+	--ignoreCompilerErrors \
 	--excludeExternals \
 	--excludePrivate \
 	--excludeProtected \
+	--includeDeclarations \
 	--exclude '{**/*test*,**/test*.ts,**/*.js,**/*test.ts}' \
 	--name stdlib \
 	--theme $(CONFIG_DIR)/typedoc/theme/ \
 	--hideGenerator \
 	--readme $(CONFIG_DIR)/typedoc/index.md \
+	--gaID 'UA-105890493-1' \
 	--out $(TYPEDOC_HTML_OUT)
 
 # Define command-line options to be used when invoking the TypeDoc executable to generate TypeDoc JSON:
@@ -64,6 +70,7 @@ TYPEDOC_JSON_FLAGS ?= \
 	--excludePrivate \
 	--excludeProtected \
 	--exclude '{**/*test*,**/test*.ts,**/*.js,**/*test.ts}' \
+	--packages $(SRC_DIR) \
 	--name stdlib \
 	--json $(TYPEDOC_JSON)
 

@@ -5,7 +5,7 @@
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "alwaysStrict": true,
-    "baseUrl": "lib/node_modules",
+    "baseUrl": "./../../lib/node_modules",
     "checkJs": true,
     "forceConsistentCasingInFileNames": true,
     "keyofStringsOnly": false,
@@ -30,7 +30,7 @@
     "strictNullChecks": true,
     "suppressExcessPropertyErrors": false,
     "suppressImplicitAnyIndexErrors": false,
-    "typeRoots": [ "." ],
+    "typeRoots": [ "./../../" ],
     "types": []
   },
   "include": [
