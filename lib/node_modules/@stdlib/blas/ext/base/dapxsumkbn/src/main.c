@@ -19,7 +19,7 @@
 #include "stdlib/blas/ext/base/dapxsumkbn.h"
 #include "stdlib/blas/base/shared.h"
 #include "stdlib/strided/base/stride2offset.h"
-#include <math.h>
+#include "stdlib/math/base/special/abs.h"
 
 /**
 * Adds a scalar constant to each double-precision floating-point strided array element and computes the sum using an improved Kahan–Babuška algorithm.
@@ -72,7 +72,7 @@ double API_SUFFIX(stdlib_strided_dapxsumkbn_ndarray)( const CBLAS_INT N, const d
 	for ( i = 0; i < N; i++ ) {
 		v = alpha + X[ ix ];
 		t = sum + v;
-		if ( fabs( sum ) >= fabs( v ) ) {
+		if ( stdlib_base_abs( sum ) >= stdlib_base_abs( v ) ) {
 			c += (sum-t) + v;
 		} else {
 			c += (v-t) + sum;
