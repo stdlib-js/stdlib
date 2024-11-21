@@ -1,0 +1,9 @@
+
+Usage: umask [options]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+  -p,    --print               Print the mask command.
+  -S,    --symbolic            Print the mask using symbolic notation.

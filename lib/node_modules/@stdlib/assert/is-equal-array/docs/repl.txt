@@ -1,0 +1,35 @@
+
+{{alias}}( v1, v2 )
+    Tests if two arguments are both generic arrays and have equal values.
+
+    The function performs strict equality comparison; thus, the function treats
+    `-0` and `+0` as equal and `NaNs` as distinct.
+
+    Parameters
+    ----------
+    v1: any
+        First input value.
+
+    v2: any
+        Second input value.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether two arguments are equal.
+
+    Examples
+    --------
+    > var x = [ 1.0, 2.0, 3.0 ];
+    > var y = [ 1.0, 2.0, 3.0 ];
+    > var bool = {{alias}}( x, y )
+    true
+
+    > x = [ NaN, NaN, NaN ];
+    > y = [ NaN, NaN, NaN ];
+    > bool = {{alias}}( x, y )
+    false
+
+    See Also
+    --------
+

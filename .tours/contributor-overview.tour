@@ -1,0 +1,67 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Overview for New Contributors",
+  "steps": [
+    {
+      "title": "Introduction",
+      "file": "README.md",
+      "description": "Welcome and thank you for your interest in contributing to stdlib, a comprehensive standard library for JavaScript and Node.js designed specifically to meet the demands of numerical and scientific computing. This introductory tour will navigate you through the essentials of our codebase, highlight key components, and direct you to resources to dig deeper.",
+      "line": 516
+    },
+    {
+      "file": "docs/README.md",
+      "description": "The `docs` folder contains all relevant documentation for getting started developing for stdlib.",
+      "line": 1
+    },
+    {
+      "file": "docs/development.md",
+      "description": "To setup your development environment, follow the steps in the `docs/development.md` file or use the VSCode development container.",
+      "line": 21
+    },
+    {
+      "directory": "docs/style-guides",
+      "description": "Style guides for source code for the various programming languages used in the project is located in the `docs/style-guides` folder, including our `git` conventions. We use conventional commits to ensure a consistent commit message format and to automate versioning and changelog generation."
+    },
+    {
+      "file": "tools/make/README.md",
+      "description": "The project uses `make` as its core development utility. Have a look at the available commands and take a look inside the `lib` sub-directory. It contains various sub-folders with make commands related to various aspects of project development and associated documentation.",
+      "line": 21
+    },
+    {
+      "directory": "lib/node_modules/@stdlib",
+      "description": "The `stdlib` source code can be found inside `lib/node_modules/@stdlib`. This is the core of the project and contains all the packages and modules that make up the library. Each package has its own documentation, example code, and tests. Packages are organized by namespaces and sub-namespaces and are designed to be modular and composable."
+    },
+    {
+      "directory": "lib/node_modules/@stdlib/utils/zip",
+      "description": "Let's take a peek inside a single package, for example `@stdlib/utils/zip`. We pride ourselves to offer comprehensive documentation, tests, benchmarks, and example code inside all of our packages. It is our goal to fulfill the promise to users of stdlib libraries that they are using some of the most thorough, rigorous, well-written, studied, documented, tested, measured, and high-quality code out there."
+    },
+    {
+      "directory": "lib/node_modules/@stdlib/utils/zip",
+      "description": "Each package contains at least the following folders:\n\n-   `benchmark`: micro-benchmarks for timing the\n-   `docs`: contains a `repl.txt` document with help text when the package is used inside the stdlib Node.js REPL and TypeScript definitions and tests in a `types` sub-directory\n-   `examples`: example code demonstrating use of the package. This could should match the code inside the `README.md` documentation's \"Examples\" section (with the only possible difference being `console.log` invocations not being included in the `README.md`)\n-   `lib`: the package's JavaScript implementation\n-   `test`: comprehensive unit tests, ideally achieving 100% code coverage"
+    },
+    {
+      "file": "lib/node_modules/@stdlib/utils/zip/README.md",
+      "description": "The `README.md` file contains the package documentation. Notice that we use HTML fragments and comments to demarcate the various sections in the documents, which we use as part of our tooling. The top-level `snippets` directory contains template files that can be used to scaffold out a new package; in practice, we found that often copy-pasting files from a different package with similar API is an efficient workflow.",
+      "line": 33
+    },
+    {
+      "directory": "lib/node_modules/@stdlib/string/acronym",
+      "description": "Some packages will require additional folders. For example, `@stdlib/string/acronym` has a CLI tool to allow for use in one's terminal. In such cases, packages will have a `bin` and `etc` folder in addition to the previously listed ones. Feel free to check out their structure if you want to learn more."
+    },
+    {
+      "directory": "lib/node_modules/@stdlib/math/base/special/abs",
+      "description": "Many of the mathematical functions in `stdlib` such as `@stdlib/math/base/special/abs` come with native implementations written in C. These packages will typically have the following additional folders and files:\n\n-   `src/`: source files requiring compilation\n-   `include/`: header files           \n-   `binding.gyp`: GYP file for native add-ons\n-   `include.gypi`: GYP include file\n-   `manifest.json`: native add-on meta data\n\nHave a look around if you are interested in contributing to stdlib's native addons!"
+    },
+    {
+      "file": "CONTRIBUTING.md",
+      "description": "It is our desire to make contributing to stdlib rewarding and impactful. Please review our guidelines in `CONTRIBUTING.md` to understand our process and expectations. Your contributions help build the numerical computing infrastructure for JavaScript.",
+      "line": 21
+    },
+    {
+      "file": "CODE_OF_CONDUCT.md",
+      "description": "We are committed to providing a welcoming and friendly environment. Please take a moment to read our `CODE_OF_CONDUCT.md` to understand the standards we expect from all contributors.",
+      "line": 1
+    }
+  ],
+  "ref": "develop"
+}

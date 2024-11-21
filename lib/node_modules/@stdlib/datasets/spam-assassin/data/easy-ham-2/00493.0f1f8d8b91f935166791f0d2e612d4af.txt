@@ -1,0 +1,84 @@
+From iiu-admin@taint.org  Fri Jul 26 17:13:19 2002
+Return-Path: <iiu-admin@taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id F0EE8440E8
+	for <jm@localhost>; Fri, 26 Jul 2002 12:13:16 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 26 Jul 2002 17:13:17 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6QGCxr09485;
+    Fri, 26 Jul 2002 17:12:59 +0100
+Received: from mail04.svc.cra.dublin.eircom.net
+    (mail04.svc.cra.dublin.eircom.net [159.134.118.20]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with SMTP id g6QGBar09444 for <iiu@taint.org>;
+    Fri, 26 Jul 2002 17:11:36 +0100
+Received: (qmail 12902 messnum 1110424 invoked from
+    network[159.134.176.195/p195.as1.cra.dublin.eircom.net]); 26 Jul 2002
+    16:10:28 -0000
+Received: from p195.as1.cra.dublin.eircom.net (HELO tron.nua.ie)
+    (159.134.176.195) by mail04.svc.cra.dublin.eircom.net (qp 12902) with SMTP;
+    26 Jul 2002 16:10:28 -0000
+Message-Id: <5.0.2.1.0.20020726165855.03a40810@dogma.slashnull.org>
+X-Sender: antoinmail@dogma.slashnull.org
+X-Mailer: QUALCOMM Windows Eudora Version 5.0.2
+To: iiu@taint.org, iiu@taint.org
+From: Antoin O Lachtnain <antoin@eire.com>
+Subject: Re: [IIU] OCTR unlicensed band changes ...
+In-Reply-To: <5.1.0.14.2.20020726162611.02dd6cf0@gpo.iol.ie>
+References: <5.0.2.1.0.20020726133547.028d0a10@dogma.slashnull.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"; format=flowed
+Sender: iiu-admin@taint.org
+Errors-To: iiu-admin@taint.org
+X-Beenthere: iiu@iiu.taint.org
+X-Mailman-Version: 2.0.10
+Precedence: bulk
+Reply-To: iiu@taint.org
+List-Unsubscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=unsubscribe>
+List-Id: Irish Internet Users <iiu.iiu.taint.org>
+List-Post: <mailto:iiu@iiu.taint.org>
+List-Help: <mailto:iiu-request@iiu.taint.org?subject=help>
+List-Subscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=subscribe>
+List-Archive: <http://iiu.taint.org/pipermail/iiu/>
+Date: Fri, 26 Jul 2002 16:59:22 +0100
+
+
+Does that mean that you could reach further, but you couldn't take up as 
+much bandwidth then?
+
+a.
+
+At 04:27 PM 7/26/2002 +0100, Bernie Goldbach wrote:
+>Hi,
+>
+>I believe the higher allowance nationally comes with a prescribed specific 
+>frequency constraint, so if you want 2 watts, you will have to confine 
+>yourself to a tighter limit of the open spectrum. That could affect 
+>deployments that channel-hop when they encounter degradations in signal 
+>strength.
+>
+>regards
+>Bernie Goldbach
+>::talking to signs::
+>
+>
+>_______________________________________________
+>IIU mailing list
+>IIU@iiu.taint.org
+>http://iiu.taint.org/mailman/listinfo/iiu
+
+--
+
+Antoin O Lachtnain
+**  antoin@eire.com ** http://www.eire.com ** +353-87-240-6691
+
+_______________________________________________
+IIU mailing list
+IIU@iiu.taint.org
+http://iiu.taint.org/mailman/listinfo/iiu
+
+

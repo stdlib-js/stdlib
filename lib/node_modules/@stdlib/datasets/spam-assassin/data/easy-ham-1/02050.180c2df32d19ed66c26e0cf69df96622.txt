@@ -1,0 +1,26 @@
+From rssfeeds@jmason.org  Mon Sep 30 13:37:26 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id A249316F03
+	for <jm@localhost>; Mon, 30 Sep 2002 13:37:26 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 30 Sep 2002 13:37:26 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8T81cg03497 for
+    <jm@jmason.org>; Sun, 29 Sep 2002 09:01:38 +0100
+Message-Id: <200209290801.g8T81cg03497@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: newscientist <rssfeeds@spamassassin.taint.org>
+Subject: Mice born from rat-matured eggs
+Date: Sun, 29 Sep 2002 08:01:38 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.newsisfree.com/click/-6,8341698,1440/
+Date: Not supplied
+
+Using one species to develop the eggs of another could in future help 
+endangered species and even women
+
+

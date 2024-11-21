@@ -1,0 +1,33 @@
+
+{{alias}}( d1, d2 )
+    Returns the excess kurtosis of an F distribution.
+
+    If `d1 <= 0` or `d2 <= 8`, the function returns `NaN`.
+
+    If `d1` or `d2` is `NaN`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    d1: number
+        Numerator degrees of freedom.
+
+    d2: number
+        Denominator degrees of freedom.
+
+    Returns
+    -------
+    out: number
+        Excess kurtosis.
+
+    Examples
+    --------
+    > var v = {{alias}}( 3.0, 9.0 )
+    ~124.667
+    > v = {{alias}}( 4.0, 12.0 )
+    ~26.143
+    > v = {{alias}}( 8.0, 9.0 )
+    ~100.167
+
+    See Also
+    --------
+

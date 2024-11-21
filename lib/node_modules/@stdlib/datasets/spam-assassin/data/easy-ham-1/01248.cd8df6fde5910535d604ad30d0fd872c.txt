@@ -1,0 +1,171 @@
+From rpm-list-admin@freshrpms.net  Sat Oct  5 10:35:14 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 9AC2C16F18
+	for <jm@localhost>; Sat,  5 Oct 2002 10:34:58 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 05 Oct 2002 10:34:58 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g94KW2K07555 for
+    <jm-rpm@jmason.org>; Fri, 4 Oct 2002 21:32:02 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g94KO2f04424; Fri, 4 Oct 2002 22:24:02
+    +0200
+Received: from canarsie.horizonlive.com (slim-eth0.horizonlive.net
+    [208.185.78.2]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g94KNHf02156 for <rpm-list@freshrpms.net>; Fri, 4 Oct 2002 22:23:17 +0200
+Received: from canarsie.horizonlive.com (localhost.localdomain
+    [127.0.0.1]) by canarsie.horizonlive.com (8.12.5/8.12.5) with ESMTP id
+    g94KND8f023906 for <rpm-list@freshrpms.net>; Fri, 4 Oct 2002 16:23:13
+    -0400
+Received: (from stevek@localhost) by canarsie.horizonlive.com
+    (8.12.5/8.12.5/Submit) id g94KNDdm023904 for rpm-list@freshrpms.net;
+    Fri, 4 Oct 2002 16:23:13 -0400
+X-Authentication-Warning: canarsie.horizonlive.com: stevek set sender to
+    stevek@horizonlive.com using -f
+From: Steve Kann <stevek@SteveK.COM>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: problems with apt/synaptic
+Message-Id: <20021004162311.A23707@canarsie.horizonlive.com>
+References: <20021004102537.C22111@canarsie.horizonlive.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20021004102537.C22111@canarsie.horizonlive.com>
+User-Agent: Mutt/1.3.21i
+X-Blank-Header-Line: (this header intentionally left blank)
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Fri, 4 Oct 2002 16:23:13 -0400
+Date: Fri, 4 Oct 2002 16:23:13 -0400
+
+
+Although it looks like I'm replying to myself, I just haven't gotten
+Matthias' reply yet, although I can see it on the website (and I did
+subscribe, but probably to the digest).
+
+Anyway, Matthias wrote:
+> Once upon a time, Steve wrote :
+> 
+> > I did apt-get update, and it seemed to have gotten the new packages
+> 
+> Hmmm, "it seems"? Check closer as this may be where the problem is
+> coming
+> from.
+> > but doing things like "apt-get install synaptic" didn't work (neither
+> > did other known packages, like apt-get install lame
+> > 
+> > I just get:
+> > root@canarsie:/var/cache/apt # apt-get install lame
+> > Reading Package Lists... Done
+> > Building Dependency Tree... Done
+> > E: Couldn't find package lame
+> 
+> Could you double check what "apt-get update" does? And eventually post
+> the
+> output if there are any errors or messages you don't understand.
+
+OK, I did it again, and here's what I got:
+root@canarsie:/tmp # apt-get update
+Ign http://apt.freshrpms.net redhat/8.0/en/i386 release
+Hit http://apt.freshrpms.net redhat/8.0/en/i386/os pkglist
+Hit http://apt.freshrpms.net redhat/8.0/en/i386/os release
+Hit http://apt.freshrpms.net redhat/8.0/en/i386/updates pkglist
+Hit http://apt.freshrpms.net redhat/8.0/en/i386/updates release
+Get:1 http://apt.freshrpms.net redhat/8.0/en/i386/freshrpms pkglist [51.8kB]
+Hit http://apt.freshrpms.net redhat/8.0/en/i386/freshrpms release
+Hit http://apt.freshrpms.net redhat/8.0/en/i386/os srclist
+Hit http://apt.freshrpms.net redhat/8.0/en/i386/updates srclist
+Get:2 http://apt.freshrpms.net redhat/8.0/en/i386/freshrpms srclist [12.6kB]
+Fetched 64.4kB in 2s (30.1kB/s)
+Reading Package Lists... Done
+root@canarsie:/tmp # apt-get install lame
+Reading Package Lists... Done
+Building Dependency Tree... Done
+E: Couldn't find package lame
+
+root@canarsie:/var/cache/apt # ls -ltr
+total 148
+drwxr-xr-x    2 root     root         4096 Sep 29 10:49 gensrclist
+drwxr-xr-x    2 root     root         4096 Sep 29 10:49 genpkglist
+drwxr-xr-x    3 root     root         4096 Sep 29 10:49 archives
+-rw-r--r--    1 root     root        49863 Oct  4 16:00 srcpkgcache.bin
+-rw-r--r--    1 root     root       158131 Oct  4 16:00 pkgcache.bin
+root@canarsie:/var/cache/apt # date
+Fri Oct  4 16:03:15 EDT 2002
+
+So, it looks like it worked, and the files are updated..  very strange.  
+
+Maybe something went wrong updating apt from my old version (as used
+with rh7.2), and this one.  Lemme try totally uninstalling and
+reinstalling it..
+
+root@canarsie:/ # rpm -e apt synaptic
+warning: /etc/apt/sources.list saved as /etc/apt/sources.list.rpmsave
+root@canarsie:/ # ls -l /etc/apt
+total 4
+-rw-r--r--    1 root     root         1610 Oct  4 10:07
+sources.list.rpmsave
+root@canarsie:/ # rpm -ivh /tmp/apt-0.5.4cnc7-fr1.i386.rpm
+warning: /tmp/apt-0.5.4cnc7-fr1.i386.rpm: V3 DSA signature: NOKEY, key
+ID e42d547b
+Preparing...                ###########################################
+[100%]
+   1:apt                    ###########################################
+[100%]
+root@canarsie:/ # apt-get update
+Ign http://apt.freshrpms.net redhat/8.0/en/i386 release
+Hit http://apt.freshrpms.net redhat/8.0/en/i386/os pkglist
+Hit http://apt.freshrpms.net redhat/8.0/en/i386/os release
+Hit http://apt.freshrpms.net redhat/8.0/en/i386/updates pkglist
+Hit http://apt.freshrpms.net redhat/8.0/en/i386/updates release
+Hit http://apt.freshrpms.net redhat/8.0/en/i386/freshrpms pkglist
+Hit http://apt.freshrpms.net redhat/8.0/en/i386/freshrpms release
+Hit http://apt.freshrpms.net redhat/8.0/en/i386/os srclist
+Hit http://apt.freshrpms.net redhat/8.0/en/i386/updates srclist
+Hit http://apt.freshrpms.net redhat/8.0/en/i386/freshrpms srclist
+Reading Package Lists... Done
+root@canarsie:/ # apt-get install synaptic
+Reading Package Lists... Done
+Building Dependency Tree... Done
+E: Couldn't find package synaptic
+root@canarsie:/ #
+
+Still no go...
+
+I'm stumped.
+
+-SteveK
+
+
+
+> 
+> Matthias
+> 
+
+
+-- 
+  Steve Kann - Chief Engineer - 520 8th Ave #2300 NY 10018 -  (212) 533-1775
+                HorizonLive.com - collaborate . interact . learn
+   "The box said 'Requires Windows 95, NT, or better,' so I installed Linux."
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

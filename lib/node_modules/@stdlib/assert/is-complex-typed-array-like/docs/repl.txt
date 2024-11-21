@@ -1,0 +1,31 @@
+
+{{alias}}( value )
+    Tests if a value is complex-typed-array-like.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is complex-typed-array-like.
+
+    Examples
+    --------
+    > var bool = {{alias}}( new {{alias:@stdlib/array/complex128}}() )
+    true
+    > bool = {{alias}}({
+    ...    'length': 10,
+    ...    'byteOffset': 0,
+    ...    'byteLength': 10,
+    ...    'BYTES_PER_ELEMENT': 4,
+    ...    'get': function get() {},
+    ...    'set': function set() {}
+    ... })
+    true
+
+    See Also
+    --------
+

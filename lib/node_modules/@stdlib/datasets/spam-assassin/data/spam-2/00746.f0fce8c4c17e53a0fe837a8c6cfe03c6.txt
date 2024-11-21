@@ -1,0 +1,93 @@
+From spamassassin-sightings-admin@lists.sourceforge.net  Thu Jul 18 16:13:30 2002
+Return-Path: <spamassassin-sightings-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5959243F90
+	for <jm@localhost>; Thu, 18 Jul 2002 11:13:30 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 18 Jul 2002 16:13:30 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6IF5AJ05313 for <jm-sa-sightings@jmason.org>; Thu, 18 Jul 2002 16:05:10
+    +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17VCq2-0001jm-00; Thu,
+    18 Jul 2002 08:05:06 -0700
+Received: from itchy.serv.net ([205.153.154.199]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17VCp8-0004f5-00 for <spamassassin-sightings@lists.sourceforge.net>;
+    Thu, 18 Jul 2002 08:04:10 -0700
+Received: (from llyra@localhost) by itchy.serv.net (8.9.3/8.9.3) id
+    IAA89414 for spamassassin-sightings@lists.sf.net; Thu, 18 Jul 2002
+    08:00:04 -0700 (PDT)
+Received: from mx.serv.net (mx [205.153.154.205]) by itchy.serv.net
+    (8.9.3/8.9.3) with ESMTP id FAA85456 for <llyra@itchy.serv.net>;
+    Thu, 18 Jul 2002 05:04:46 -0700 (PDT)
+Received: from drizzle.com (IDENT:root@cascadia.drizzle.com
+    [216.162.192.17]) by mx.serv.net (8.9.3/8.9.1) with ESMTP id FAA11473 for
+    <filtered@llyra.com>; Thu, 18 Jul 2002 05:08:49 -0700 (PDT)
+Received: from drizzle.com (IDENT:harmony@localhost [127.0.0.1]) by
+    drizzle.com (8.12.3/8.12.3) with ESMTP id g6IC8n0D028453 for
+    <filtered@llyra.com>; Thu, 18 Jul 2002 05:08:49 -0700
+Received: (from harmony@localhost) by drizzle.com (8.12.3/8.12.3/Submit)
+    id g6IC8n0e028452 for filtered@llyra.com; Thu, 18 Jul 2002 05:08:49 -0700
+Received: from itchy.serv.net (itchy.serv.net [205.153.154.199]) by
+    drizzle.com (8.12.3/8.12.3) with ESMTP id g6IC8i0D028439 for
+    <harmony@drizzle.com>; Thu, 18 Jul 2002 05:08:44 -0700
+Received: (from llyra@localhost) by itchy.serv.net (8.9.3/8.9.3) id
+    FAA85451 for harmony@drizzle.com; Thu, 18 Jul 2002 05:04:39 -0700 (PDT)
+Received: from mx.serv.net (mx [205.153.154.205]) by itchy.serv.net
+    (8.9.3/8.9.3) with ESMTP id FAA85447 for <llyra@itchy.serv.net>;
+    Thu, 18 Jul 2002 05:04:35 -0700 (PDT)
+From: info@templatestyles.com
+Received: from QRJATYDI ([66.89.79.35]) by mx.serv.net (8.9.3/8.9.1) with
+    SMTP id FAA11456 for <ldemers@sadmule.com>; Thu, 18 Jul 2002 05:08:29
+    -0700 (PDT)
+Message-Id: <200207181208.FAA11456@mx.serv.net>
+To: <ldemers@sadmule.com>
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.50.4522.1200
+MIME-Version: 1.0
+Content-Type: text/plain; charset="Windows-1251"
+Subject: [SA] Nice web page templates here. Check it out!
+Sender: spamassassin-sightings-admin@example.sourceforge.net
+Errors-To: spamassassin-sightings-admin@example.sourceforge.net
+X-Beenthere: spamassassin-sightings@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-sightings-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-sightings@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-sightings>,
+    <mailto:spamassassin-sightings-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <spamassassin-sightings.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-sightings>,
+    <mailto:spamassassin-sightings-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-sightings>
+X-Original-Date: Thu, 18 Jul 2002 14:57:14 +-0800
+Date: Thu, 18 Jul 2002 14:57:14 +-0800
+    MSG_ID_ADDED_BY_MTA_3,MISSING_MIMEOLE,FORGED_RCVD_TRAIL,AWL version=2.40
+
+Hello,
+
+I was recently browsing the internet and came accross some guys that are making really good job. 
+Here they are - www.templatestyles.com .
+Check it out. Nice designs!
+
+yorth sincerely,
+Mark Boen Lowen
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

@@ -1,0 +1,95 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug 29 11:08:29 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 32B8444163
+	for <jm@localhost>; Thu, 29 Aug 2002 06:06:14 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:06:14 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7T4ekZ30210 for <jm-sa@jmason.org>; Thu, 29 Aug 2002 05:40:46 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17kH2L-0007lN-00; Wed,
+    28 Aug 2002 21:36:05 -0700
+Received: from email.med.yale.edu ([130.132.232.16]
+    helo=persephone.med.yale.edu) by usw-sf-list1.sourceforge.net with esmtp
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17kH1X-0006ey-00 for
+    <Spamassassin-talk@lists.sourceforge.net>; Wed, 28 Aug 2002 21:35:15 -0700
+Received: from yale.edu (pcp01253719pcs.hamden01.ct.comcast.net
+    [68.63.97.130]) by email.med.yale.edu (PMDF V6.1-1 #40995) with ESMTPS id
+    <0H1L0WM4D8QOED@email.med.yale.edu> for
+    Spamassassin-talk@lists.sourceforge.net; Thu, 29 Aug 2002 00:35:12 -0400
+    (EDT)
+From: Rick Beebe <richard.beebe@yale.edu>
+Subject: Re: [SAtalk] Tru64 compile of SA
+To: Don Newcomer <newcomer@dickinson.edu>
+Cc: Spamassassin-talk@example.sourceforge.net
+Message-Id: <3D6DA650.2040300@yale.edu>
+Organization: Yale School of Medicine
+MIME-Version: 1.0
+Content-Type: text/plain; format=flowed; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-Accept-Language: en-us, en
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.1b)
+    Gecko/20020721
+References: <Pine.OSF.4.44.0208281659320.3984-100000@falcon.dickinson.edu>
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Thu, 29 Aug 2002 00:42:56 -0400
+Date: Thu, 29 Aug 2002 00:42:56 -0400
+
+Don Newcomer wrote:
+> I'm a new user (or about to be, hopefully) of SA but I've run into some
+> compilation errors that prevent me from installing.  Rather than picking
+> through the code, I thought I'd avoid reinventing the wheel and ask here.
+> When I run the 'make', I get the following:
+> 
+> cc: Error: spamd/spamc.c, line 50: In this declaration, "in_addr_t" has no
+> linka
+> ge and has a prior declaration in this scope at line number 572 in file
+> /usr/inc
+> lude/sys/types.h. (nolinkage)
+> typedef unsigned long   in_addr_t;      /* base type for internet address
+> */
+
+Don't worry about the warnings. To fix the error, edit spamc.c and right 
+after the line that says:
+
+#define EX__MAX 77
+
+Add:
+
+#if !defined __osf__
+extern char *optarg;
+typedef unsigned long   in_addr_t;      /* base type for internet address */
+#endif
+
+(you're adding the two lines that start with #).
+
+--Rick
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

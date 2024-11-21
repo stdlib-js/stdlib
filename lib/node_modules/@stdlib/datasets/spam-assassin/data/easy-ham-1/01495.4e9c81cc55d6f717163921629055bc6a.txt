@@ -1,0 +1,58 @@
+From jm@jmason.org  Fri Sep 20 13:03:34 2002
+Return-Path: <yyyy@spamassassin.taint.org>
+Delivered-To: yyyy@spamassassin.taint.org
+Received: by spamassassin.taint.org (Postfix, from userid 500)
+	id 6CA7916F03; Fri, 20 Sep 2002 13:03:34 +0100 (IST)
+Received: from spamassassin.taint.org (localhost [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP
+	id 69CACF7B1; Fri, 20 Sep 2002 13:03:34 +0100 (IST)
+To: "Michael Moncur" <mgm@starlingtech.com>
+Cc: "Justin Mason" <yyyy@spamassassin.taint.org>,
+	"Daniel Quinlan" <quinlan@pathname.com>,
+	SpamAssassin-devel@lists.sourceforge.net
+Subject: Re: [SAdev] phew! 
+In-Reply-To: Message from "Michael Moncur" <mgm@starlingtech.com> 
+   of "Thu, 19 Sep 2002 21:42:52 MDT." <NEBBKLEDELIODOCJHLPCGEOHNCAA.mgm@starlingtech.com> 
+From: yyyy@spamassassin.taint.org (Justin Mason)
+X-GPG-Key-Fingerprint: 0A48 2D8B 0B52 A87D 0E8A  6ADD 4137 1B50 6E58 EF0A
+X-Habeas-Swe-1: winter into spring
+X-Habeas-Swe-2: brightly anticipated
+X-Habeas-Swe-3: like Habeas SWE (tm)
+X-Habeas-Swe-4: Copyright 2002 Habeas (tm)
+X-Habeas-Swe-5: Sender Warranted Email (SWE) (tm). The sender of this
+X-Habeas-Swe-6: email in exchange for a license for this Habeas
+X-Habeas-Swe-7: warrant mark warrants that this is a Habeas Compliant
+X-Habeas-Swe-8: Message (HCM) and not spam.  Please report use of this
+X-Habeas-Swe-9: mark in spam to <http://www.habeas.com/report/>.
+Date: Fri, 20 Sep 2002 13:03:29 +0100
+Sender: yyyy@spamassassin.taint.org
+Message-Id: <20020920120334.6CA7916F03@spamassassin.taint.org>
+
+
+"Michael Moncur" said:
+
+> My corpus is about 50% spamtrap spam at any given time. Let me know if I
+> should leave that out next time, I do keep it separate. My spamtraps are
+> pretty clean of viruses and bounce messages most of the time.
+
+IMO spamtrap data that's well-cleaned and monitored is fine.
+
+To my mind there's 3 types of spamtraps:
+
+  1. old user addresses, recycled into spamtraps when the user closes
+    the account
+
+  2. old user addresses, recycled into spamtraps several months after the
+    user closes the account, scanned for newsletters, unsubscribed
+    from them etc.
+
+  3. real spamtrap addresses to trap website crawlers.
+
+The latter 2 are the most effective, but #1 is a real PITA; it takes lots
+of maintainance to avoid ham getting in there.  Some of my spamtrap data
+had a few 1's contributed by ISPs, and I hadn't spent enough time sifting
+for legit mail that was slipping through.  So I felt better leaving
+them out for this run, apart from what I'd hand-cleaned.
+
+--j.
+

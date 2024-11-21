@@ -1,0 +1,93 @@
+From fork-admin@xent.com  Mon Aug 19 11:06:19 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 90D4C441BE
+	for <jm@localhost>; Mon, 19 Aug 2002 05:56:02 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:56:02 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7J7UW612388 for <jm@jmason.org>;
+    Mon, 19 Aug 2002 08:30:35 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 0EDC82940FD; Mon, 19 Aug 2002 00:28:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from t2.serverbox.net (t2.serverbox.net [64.71.187.100]) by
+    xent.com (Postfix) with SMTP id B0DF229409D for <fork@xent.com>;
+    Mon, 19 Aug 2002 00:27:21 -0700 (PDT)
+Received: (qmail 3433 invoked from network); 19 Aug 2002 07:28:43 -0000
+Received: from unknown (HELO techdirt.techdirt.com) (12.236.16.241) by
+    t2.serverbox.net with SMTP; 19 Aug 2002 07:28:43 -0000
+Message-Id: <5.1.1.6.0.20020819001258.02fd38e0@techdirt.com>
+X-Sender: mike@techdirt.com
+X-Mailer: QUALCOMM Windows Eudora Version 5.1.1
+To: "Rob Shavell" <rob@mobiusvc.com>, <fork@spamassassin.taint.org>
+From: Mike Masnick <mike@techdirt.com>
+Subject: Re: sprint delivers the next big thing??
+In-Reply-To: <00ce01c2474b$b1daeff0$6765010a@einstein>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"; format=flowed
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 19 Aug 2002 00:26:33 -0700
+
+At 11:43 PM 8/18/02 -0700, Rob Shavell wrote:
+>sprint, if you haven't seen the marketing yet, is 1st to US market w/postwap
+>mobile data svc.
+
+Small nitpick:  Sprint PCS wasn't really first to market with their high 
+speed data service.  Some would say they were actually last to market.  The 
+only thing that was first about this is what they're calling "nationwide 
+coverage", and you could even (and perhaps should) argue with that.
+
+>   to me, there is nada more interesting and impactful going
+>down in the tech world than mobile visual communications.. and yet no one
+>seems to give much of a damn that right now that 2 persons can take photos
+>and share them instantly across space.  this is one of the biggest - and
+>last - fundamental changes in human communications.  will be as big as the
+>browser.
+
+Can you clarify why you think this is so?
+
+I'm in the midst of an ongoing argument with a guy who works for me about 
+this very subject.  He, like you, thinks that things like MMS are going to 
+change the world.  I am not convinced.
+
+What exactly about sending pictures to each other is going to have such a 
+huge impact?  I'm waiting to be convinced.  I just don't see how it changes 
+human communication in any really amazing way - and no one who believes it 
+has yet done a good job explaining it to me.  I can understand SMS taking 
+off, since communicating short text messages can be very useful in many 
+situations.  However, I just don't see what's the compelling reason for 
+sending pictures around to each other on a regular basis.  Are there 
+instances when it makes sense?  Sure, I can think of plenty where it's a 
+nice to have, but very few where it would be a "man, I need this" type of 
+feature.
+
+I mean, right now, at my desk, it's easy for me to text message with lots 
+of people, and I do all the time.  If I wanted to, I could also very easily 
+snap a picture and send it to them, but I don't.  I did once, after I got a 
+really bad haircut, and a friend wanted to see how it looked - but that's a 
+fairly limited use.  Obviously, that's just one case, and maybe I'm just 
+too old (argh!) to really "get" this new photo taking and sharing stuff, 
+but I'm really trying to understand.
+
+So, I'm not saying it won't be a "fundamental change in human 
+communications", but I'd just like to know why you think it will be?
+
+Mike
+
+
+http://xent.com/mailman/listinfo/fork
+

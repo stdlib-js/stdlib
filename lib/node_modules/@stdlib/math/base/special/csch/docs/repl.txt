@@ -1,0 +1,34 @@
+
+{{alias}}( x )
+    Computes the hyperbolic cosecant of a number.
+
+    Parameters
+    ----------
+    x: number
+        Input value (in radians).
+
+    Returns
+    -------
+    y: number
+        Hyperbolic cosecant.
+
+    Examples
+    --------
+    > var y = {{alias}}( +0.0 )
+    +Infinity
+    > var y = {{alias}}( -0.0 )
+    -Infinity
+    > var y = {{alias}}( +Infinity )
+    +0.0
+    > var y = {{alias}}( -Infinity )
+    -0.0
+    > y = {{alias}}( 2.0 )
+    ~0.2757
+    > y = {{alias}}( -2.0 )
+    ~-0.2757
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+

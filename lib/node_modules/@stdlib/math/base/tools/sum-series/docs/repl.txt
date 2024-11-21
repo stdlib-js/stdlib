@@ -1,0 +1,67 @@
+
+{{alias}}( generator[, options] )
+    Sum the elements of the series given by the supplied function.
+
+    Parameters
+    ----------
+    generator: Function
+        Series function.
+
+    options: Object (optional)
+        Options.
+
+    options.maxTerms: integer (optional)
+        Maximum number of terms to be added. Default: `1000000`.
+
+    options.tolerance: number (optional)
+        Further terms are only added as long as the next term is greater than
+        the current term times the tolerance. Default: `2.22e-16`.
+
+    options.initialValue: number (optional)
+        Initial value of the resulting sum. Default: `0`.
+
+    Returns
+    -------
+    out: number
+        Sum of series terms.
+
+    Examples
+    --------
+    // Using an ES6 generator function:
+    > function* geometricSeriesGenerator( x ) {
+    ...     var exponent = 0;
+    ...     while ( true ) {
+    ...         yield Math.pow( x, exponent );
+    ...         exponent += 1;
+    ...     }
+    ... };
+    > var gen = geometricSeriesGenerator( 0.9 );
+    > var out = {{alias}}( gen )
+    10
+
+    // Using a closure:
+    > function geometricSeriesClosure( x ) {
+    ...     var exponent = -1;
+    ...     return function() {
+    ...         exponent += 1;
+    ...         return Math.pow( x, exponent );
+    ...     };
+    ... };
+    > gen = geometricSeriesClosure( 0.9 );
+    > out = {{alias}}( gen )
+    10
+
+    // Setting an initial value for the sum:
+    > out = {{alias}}( geometricSeriesGenerator( 0.5 ), { 'initialValue': 1 } )
+    3
+    // Changing the maximum number of terms to be summed:
+    > out = {{alias}}( geometricSeriesGenerator( 0.5 ), { 'maxTerms': 10 } )
+    ~1.998 // Infinite sum is 2
+
+    // Adjusting the used tolerance:
+    > out = {{alias}}( geometricSeriesGenerator( 0.5 ), { 'tolerance': 1e-3 } )
+    ~1.998
+
+    See Also
+    --------
+

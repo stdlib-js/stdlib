@@ -1,0 +1,29 @@
+
+{{alias}}( N, stride, offset )
+    Returns the maximum accessible index based on a set of provided strided
+    array parameters.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    stride: integer
+        Stride length.
+
+    offset: integer
+        Starting index.
+
+    Returns
+    -------
+    idx: integer
+        Minimum accessible index.
+
+    Examples
+    --------
+    > var idx = {{alias}}( 3, 2, 10 )
+    14
+
+    See Also
+    --------
+

@@ -1,0 +1,71 @@
+{
+  "name": "@stdlib/ndarray/sub2ind",
+  "version": "0.0.0",
+  "description": "Convert subscripts to a linear index.",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "main": "./lib",
+  "directories": {
+    "benchmark": "./benchmark",
+    "doc": "./docs",
+    "example": "./examples",
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "scripts": {},
+  "homepage": "https://github.com/stdlib-js/stdlib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stdlib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
+  "keywords": [
+    "stdlib",
+    "stdtypes",
+    "types",
+    "ndarray",
+    "shape",
+    "multidimensional",
+    "array",
+    "utilities",
+    "utility",
+    "utils",
+    "util",
+    "sub2ind",
+    "subscript",
+    "linear",
+    "index",
+    "idx",
+    "strided"
+  ],
+  "__stdlib__": {}
+}

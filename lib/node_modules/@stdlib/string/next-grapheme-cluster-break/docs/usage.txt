@@ -1,0 +1,8 @@
+
+Usage: next-grapheme-cluster-break [options] [<string>]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --from index          Starting search position in string. Default: 0.

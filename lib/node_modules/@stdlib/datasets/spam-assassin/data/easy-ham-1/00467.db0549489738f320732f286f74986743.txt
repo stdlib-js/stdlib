@@ -1,0 +1,77 @@
+From fork-admin@xent.com  Fri Sep  6 15:28:33 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 281FE16F6E
+	for <jm@localhost>; Fri,  6 Sep 2002 15:26:15 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 15:26:15 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g86EPWC10780 for <jm@jmason.org>;
+    Fri, 6 Sep 2002 15:25:35 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 1C3CB2942AA; Fri,  6 Sep 2002 07:18:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from localhost.localdomain
+    (pool-162-83-146-23.ny5030.east.verizon.net [162.83.146.23]) by xent.com
+    (Postfix) with ESMTP id 9CC6B2942A9 for <fork@xent.com>; Fri,
+    6 Sep 2002 07:17:28 -0700 (PDT)
+Received: from localhost (lgonze@localhost) by localhost.localdomain
+    (8.11.6/8.11.6) with ESMTP id g86EE0508904 for <fork@xent.com>;
+    Fri, 6 Sep 2002 10:14:01 -0400
+X-Authentication-Warning: localhost.localdomain: lgonze owned process
+    doing -bs
+From: Lucas Gonze <lgonze@panix.com>
+X-X-Sender: lgonze@localhost.localdomain
+Cc: FoRK <fork@spamassassin.taint.org>
+Subject: Re: Selling Wedded Bliss (was Re: Ouch...)
+In-Reply-To: <Pine.LNX.4.33.0209051857410.22913-100000@watcher.mithral.com>
+Message-Id: <Pine.LNX.4.44.0209060955350.7740-100000@localhost.localdomain>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 6 Sep 2002 10:14:00 -0400 (EDT)
+
+
+Related anecdote:
+
+I was eating in a restaurant in chinatown in Boston.  The place was empty.  
+The only other customer was a white guy reading an asian-language 
+newspaper.  The guy asked the waiter for help translating a word.  
+Eventually his story came out.
+
+He had married an asian woman through one of these introduction services.  
+after about a year of marriage she had charged him with assault and left
+him, leaving no contact information.  He was hanging around in Chinatown,
+asking random asians for help finding her.
+
+I obviously don't know if he did assault her, but what struck me was that
+the possibility of mutual exploitation is high.
+
+Anecdote number two:
+
+In college I had a job as a street vendor.  There was a guy I worked with
+who was a lifer in the job.  He was a noticably messed up guy.  Among
+other odd characteristics he fawned on women customers, doing stuff like
+offering them flowers.
+
+I asked him about it.  He said that he'd never had sex with a woman who
+wasn't a prostitute, and his dream was to save up enough money to get a
+mail order bride.
+
+I was really moved.  The guy was a loon, but he wanted a companion as much
+as anyone else and he was realistic about his chances.
+
+

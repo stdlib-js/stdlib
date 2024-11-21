@@ -1,0 +1,63 @@
+From fork-admin@xent.com  Tue Oct  1 15:30:14 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 3E90416F1C
+	for <jm@localhost>; Tue,  1 Oct 2002 15:29:58 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 01 Oct 2002 15:29:58 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g91E8CK28391 for <jm@jmason.org>;
+    Tue, 1 Oct 2002 15:08:17 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id E56D52940C3; Tue,  1 Oct 2002 07:08:01 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from brain-stream.com (brain-stream.com [209.95.107.206]) by
+    xent.com (Postfix) with ESMTP id EF68929409E for <fork@xent.com>;
+    Tue,  1 Oct 2002 07:07:13 -0700 (PDT)
+Received: from OCW-FL6.pobox.com (OCW-FL6.MIT.EDU [18.89.2.223]) by
+    brain-stream.com (8.9.3/8.9.3) with ESMTP id HAA05750; Tue, 1 Oct 2002
+    07:07:07 -0700 (PDT)
+Message-Id: <5.0.2.1.2.20021001100532.02f0b398@brain-stream.com>
+X-Sender: bkdelong@brain-stream.com
+X-Mailer: QUALCOMM Windows Eudora Version 5.0.2
+To: Eugen Leitl <eugen@leitl.org>, forkit! <fork@spamassassin.taint.org>
+From: "B.K. DeLong" <bkdelong@pobox.com>
+Subject: Re: MIT OpenCourseWare
+In-Reply-To: <Pine.LNX.4.33.0209301737140.13187-100000@hydrogen.leitl.or g>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"; format=flowed
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 01 Oct 2002 10:05:59 -0400
+
+At 05:38 PM 9/30/2002 +0200, Eugen Leitl wrote:
+
+
+>Looks useful. Hopefully, they'll put up some more material soon.
+>
+>         http://ocw.mit.edu/global/all-courses.html
+
+I'll be sure to keep everyone posted on the next update. :)
+
+
+--
+B.K. DeLong
+bkdelong@ceci.mit.edu
+OpenCourseWare
+
++1.617.258.0360
++1.617.877.3271 (cell)
+
+

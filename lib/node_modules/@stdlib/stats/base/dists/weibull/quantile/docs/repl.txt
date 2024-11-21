@@ -1,0 +1,76 @@
+
+{{alias}}( p, k, λ )
+    Evaluates the quantile function for a Weibull distribution with scale
+    parameter `k` and shape parameter `λ` at a probability `p`.
+
+    If `p < 0` or `p > 1`, the function returns `NaN`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided a nonpositive value for `λ` or `k`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    p: number
+        Input probability.
+
+    k: number
+        Shape parameter.
+
+    λ: number
+        Scale parameter.
+
+    Returns
+    -------
+    out: number
+        Evaluated quantile function.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.8, 1.0, 1.0 )
+    ~1.609
+    > y = {{alias}}( 0.5, 2.0, 4.0 )
+    ~3.33
+
+    > y = {{alias}}( 1.1, 1.0, 1.0 )
+    NaN
+    > y = {{alias}}( -0.2, 1.0, 1.0 )
+    NaN
+
+    > y = {{alias}}( NaN, 0.0, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, 0.0, NaN )
+    NaN
+
+    > y = {{alias}}( 0.5, 1.0, -1.0 )
+    NaN
+
+
+{{alias}}.factory( k, λ )
+    Returns a function for evaluating the quantile function of a Weibull
+    distribution with scale parameter `k` and shape parameter `λ`.
+
+    Parameters
+    ----------
+    k: number
+        Shape parameter.
+
+    λ: number
+        Scale parameter.
+
+    Returns
+    -------
+    quantile: Function
+        Quantile function.
+
+    Examples
+    --------
+    > var myQuantile = {{alias}}.factory( 2.0, 10.0 );
+    > var y = myQuantile( 0.4 )
+    ~7.147
+
+    See Also
+    --------
+

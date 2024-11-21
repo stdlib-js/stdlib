@@ -1,0 +1,67 @@
+From zzz@spamassassin.taint.org  Wed Sep  4 18:36:14 2002
+Return-Path: <zzz@spamassassin.taint.org>
+Delivered-To: zzz@spamassassin.taint.org
+Received: by spamassassin.taint.org (Postfix, from userid 500)
+	id 6907016F94; Wed,  4 Sep 2002 18:35:22 +0100 (IST)
+Received: from qrq.cc.ntu.edu.tw (giga.tw.freebsd.org [203.133.92.249])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6PK0D427937
+	for <postmaster_neto.net@spamtraps.taint.org>; Thu, 25 Jul 2002 21:00:13 +0100
+Received: from ccsun37.cc.ntu.edu.tw (ccsun37.cc.ntu.edu.tw [140.112.8.37])
+	by qrq.cc.ntu.edu.tw (8.12.5/8.12.5) with ESMTP id g6PJxSnr039919
+	for <attonitofamily@NETO.NET>; Fri, 26 Jul 2002 03:59:28 +0800 (CST)
+	(envelope-from owner-sweeps_reminders@lifetimetv.com)
+Received: from localhost (localhost [127.0.0.1])
+	by localhost (Postfix) with ESMTP id CFEE7DE092
+	for <attonitofamily@NETO.NET>; Fri, 26 Jul 2002 03:54:35 +0800 (CST)
+Received: from email.lifetimetv.com (unknown [209.10.194.5])
+	by ccsun37.cc.ntu.edu.tw (Postfix) with ESMTP id A50F3DE086
+	for <attonitofamily@NETO.NET>; Fri, 26 Jul 2002 03:54:30 +0800 (CST)
+Received: from email (email.internal.lifetimetv.com [10.1.1.104])
+	by email.lifetimetv.com (Postfix) with ESMTP
+	id 544576A17; Thu, 25 Jul 2002 15:01:01 -0400 (EDT)
+Received: from EMAIL.LIFETIMETV.COM by EMAIL.LIFETIMETV.COM (LISTSERV-TCP/IP
+          release 1.8e) with spool id 122039 for
+          SWEEPS_REMINDERS@EMAIL.LIFETIMETV.COM; Thu, 25 Jul 2002 14:14:26 -0400
+Approved-By: ltonline@LIST.LIFETIMETV.COM
+Delivered-To: sweeps_reminders@email.lifetimetv.com
+Received: from smtp-2.lifetimetv.com (smtp-1.lifetimetv.com [204.151.33.2]) by
+          email.lifetimetv.com (Postfix) with ESMTP id 874905CC2 for
+          <sweeps_reminders@email.lifetimetv.com>; Thu, 25 Jul 2002 13:44:02
+          -0400 (EDT)
+Received: from dev.lifetimetv.com (dev.lifetimetv.com [204.151.33.4]) by
+          smtp-2.lifetimetv.com (Postfix) with ESMTP id 3EF6B22DFE for
+          <sweeps_reminders@email.lifetimetv.com>; Thu, 25 Jul 2002 13:54:33
+          -0400 (EDT)
+Received: (from nsserver@localhost) by dev.lifetimetv.com (8.11.2/8.11.2) id
+          g6PHhFF24548; Thu, 25 Jul 2002 13:43:15 -0400 (EDT)
+Message-ID:  <200207251743.g6PHhFF24548@dev.lifetimetv.com>
+Date:         Thu, 25 Jul 2002 13:43:15 -0400
+Reply-To: ltonline@lifetimetv.com
+From: ltonline@lifetimetv.com
+Subject: Subject: There's still time to enter Lifetime's New Season Sweeps!
+Comments: To: sweeps_reminders@lifetimetv.com
+To: SWEEPS_REMINDERS@lifetimetv.com
+Precedence: list
+
+LIFETIMETV.COM SWEEPSTAKES REMINDER
+
+Thursday, July 25, 2002
+
+***********************************************************
+NEW SEASON OF A LIFETIME SWEEPSTAKES
+
+Enter our New Season of a Lifetime Sweepstakes for a chance to kick up your heels with the stars! On July 28, you can tune in to Lifetime's Sunday night lineup, which includes our new original series, "For the People," and all-new episodes of "Strong Medicine" and "The Division." Best of all, enter the New Season of a Lifetime Sweepstakes and you could win a trip to the set of "Strong Medicine" and a $10,000 summer shopping spree! Enter daily for more chances to win.
+
+Go to http://www.lifetimetv.com/sweeps/newseason/lt_entry.html.
+
+***********************************************************
+We don't want you to miss this fantastic sweepstakes! If you have any problems accessing the link, just copy and paste it into your browser's address box.
+
+
+***********************************************************
+SUBSCRIPTION INFO FOR THE LIFETIMETV.COM SWEEPSTAKES REMINDER
+
+Please do not reply to this e-mail; it's automatically generated and this mailbox is not read by anyone, therefore you will not get a response. If you wish to be removed from the Sweepstakes Reminder mailing list, please send an e-mail to unsubscribe-sweeps@email.lifetimetv.com. If you are a My Lifetime member and wish to add to or modify your current newsletter preferences, please go to http://www.lifetimetv.com/cgi/edit_profile.cgi and change your subscription options. If you need to write to us, please do so at subscriptions@lifetimetv.com.
+Thank you.
+
+

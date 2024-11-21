@@ -1,0 +1,25 @@
+
+{{alias}}( value )
+    Tests if a value is a SharedArrayBuffer.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is a SharedArrayBuffer.
+
+    Examples
+    --------
+    // Assuming an environment supports SharedArrayBuffer...
+    > var bool = {{alias}}( new {{alias:@stdlib/array/shared-buffer}}( 10 ) )
+    true
+    > bool = {{alias}}( [] )
+    false
+
+    See Also
+    --------
+

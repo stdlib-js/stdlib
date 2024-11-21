@@ -1,0 +1,83 @@
+
+{{alias}}( [data,] [options] )
+    Returns a sparkline up/down chart instance.
+
+    Glyphs:
+
+    | Value | Glyph |
+    |:-----:|:-----:|
+    |   1   |   ↑   |
+    |   -1  |   ↓   |
+
+    If provided any other value other than 1 or -1, the value is encoded as a
+    missing value.
+
+    The `data` argument takes precedence over the `data` option.
+
+    Parameters
+    ----------
+    data: ArrayLike|ndarray (optional)
+        Chart data.
+
+    options: Object (optional)
+        Options.
+
+    options.autoRender: boolean (optional)
+        Boolean indicating whether to re-render on a 'change' event. Default:
+        false.
+
+    options.bufferSize: integer|null (optional)
+        Data buffer size. If provided, data is kept in a first-in first-out
+        (FIFO) buffer which cannot exceed the buffer size. Default: +infinity.
+
+    options.data: ArrayLike|ndarray (optional)
+        Chart data.
+
+    options.description: string (optional)
+        Chart description.
+
+    options.isDefined: Function (optional)
+        An accessor function indicating whether a datum is defined.
+
+    options.label: string (optional)
+        Data label.
+
+    Returns
+    -------
+    chart: UpDownChart
+        Chart instance.
+
+    chart.autoRender
+        Rendering mode. If `true`, an instance renders on each 'change' event;
+        otherwise, rendering must be triggered manually.
+
+    chart.bufferSize
+        Data buffer size.
+
+    chart.description
+        Chart description.
+
+    chart.data
+        Chart data.
+
+    chart.label
+        Data label.
+
+    chart.isDefined( d, i )
+        An accessor function which defines whether a datum is defined. This
+        accessor is used to define how missing values are encoded. The default
+        behavior is to ignore any values which are not 1 or -1.
+
+    chart.render()
+        Renders an up/down chart sparkline.
+
+    Examples
+    --------
+    > var data = [ -1, 1, 1, 1, 1, -1, -1, 1 ];
+    > var chart = new {{alias}}( data );
+    > chart.render()
+    '↓↑↑↑↑↓↓↑'
+
+    See Also
+    --------
+

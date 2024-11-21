@@ -1,0 +1,77 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug 22 15:46:36 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 67C3247C68
+	for <jm@localhost>; Thu, 22 Aug 2002 10:46:29 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 22 Aug 2002 15:46:29 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7MEknZ10703 for <jm-sa@jmason.org>; Thu, 22 Aug 2002 15:46:49 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17htDp-0003Z5-00; Thu,
+    22 Aug 2002 07:46:05 -0700
+Received: from neo.pittstate.edu ([198.248.208.13]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17htDE-0003e0-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Thu, 22 Aug 2002 07:45:28 -0700
+Received: from [198.248.208.11] (macdaddy.pittstate.edu [198.248.208.11])
+    by neo.pittstate.edu (8.12.2/8.12.2) with ESMTP id g7MEisW7023315;
+    Thu, 22 Aug 2002 09:44:54 -0500
+MIME-Version: 1.0
+Message-Id: <p04310109b98aa91a16c0@[198.248.208.11]>
+In-Reply-To: <5.1.0.14.0.20020821203325.031d5d60@imap.greenberg.org>
+References: <5.1.0.14.0.20020821203325.031d5d60@imap.greenberg.org>
+To: Ed Greenberg <edg@greenberg.org>,
+	spamassassin-talk@lists.sourceforge.net
+From: Justin Shore <listuser@neo.pittstate.edu>
+Subject: Re: [SAtalk] SA and Patented Ideas (was: SA In The News)
+Content-Type: text/plain; charset="us-ascii" ; format="flowed"
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Thu, 22 Aug 2002 09:45:16 -0500
+Date: Thu, 22 Aug 2002 09:45:16 -0500
+
+At 8:43 PM -0700 8/21/02, Ed Greenberg wrote:
+>At 11:19 PM 8/20/2002 -0700, dan@dankohn.com wrote:
+>
+>>The nature of our patent is about putting a warrant mark in RFC 2822
+>>X-headers (or in the body) to allow senders to warrant their mail as
+>>*not-spam*, and then to use copyright and trademark infringement to
+>>enable Habeas to enforce that warranty.
+
+Why is it that I envision Verisign doing something like this.  Yeah, 
+like I want Verisign to sign all my spam, er, mail for me.  Pay them 
+enough and they'd probably sign spam too. ;)
+
+J
+-- 
+
+--
+Justin Shore, ES-SS ES-SSR                Pittsburg State University
+Network & Systems Manager                 http://www.pittstate.edu/ois/
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

@@ -1,0 +1,29 @@
+
+{{alias}}( dtype )
+    Returns the number of bytes per element provided an underlying array data
+    type.
+
+    If provided an unknown/unsupported data type, the function returns `null`.
+
+    Parameters
+    ----------
+    dtype: string
+        Data type.
+
+    Returns
+    -------
+    nbytes: integer|null
+        Number of bytes per element.
+
+    Examples
+    --------
+    > var nbytes = {{alias}}( 'float64' )
+    8
+    > nbytes = {{alias}}( 'generic' )
+    null
+    > nbytes = {{alias}}( 'foobar' )
+    null
+
+    See Also
+    --------
+

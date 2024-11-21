@@ -1,0 +1,12 @@
+
+end()
+    Jumps to the last fragment of the last slide.
+
+    Examples
+    --------
+    > end();
+
+    See Also
+    --------
+    first, jumpTo, last, next, prev
+

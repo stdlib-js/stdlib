@@ -1,0 +1,216 @@
+From razor-users-admin@lists.sourceforge.net  Tue Aug 13 10:24:42 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E109D44108
+	for <jm@localhost>; Tue, 13 Aug 2002 05:20:02 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:20:02 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7D2lxb14175 for <jm-razor@jmason.org>; Tue, 13 Aug 2002 03:47:59 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17eRYM-0005ce-00; Mon,
+    12 Aug 2002 19:37:02 -0700
+Received: from smtp-gw-cl-a.dmv.com ([64.45.128.110]) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17eRYF-0003Dr-00 for
+    <razor-users@lists.sourceforge.net>; Mon, 12 Aug 2002 19:36:56 -0700
+Received: from homediet (dogpound.dyndns.org [64.45.134.154]) by
+    smtp-gw-cl-a.dmv.com (8.12.3/8.12.3) with SMTP id g7D2VfCx091564;
+    Mon, 12 Aug 2002 22:31:41 -0400 (EDT) (envelope-from sven@dmv.com)
+Message-Id: <000b01c24272$838d5da0$0201a8c0@homediet>
+From: "Sven" <sven@dmv.com>
+To: <chad@cloudmark.com>
+Cc: <razor-users@example.sourceforge.net>
+References: <E17eQSc-0000IS-00@usw-sf-list2.sourceforge.net>
+Subject: Re: [Razor-users] Re: Questions on miscellaneous errata and issues
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Mon, 12 Aug 2002 22:38:31 -0400
+Date: Mon, 12 Aug 2002 22:38:31 -0400
+
+
+----- Original Message -----
+> Date: Mon, 12 Aug 2002 18:23:34 -0700
+> From: Chad Norwood <chad@cloudmark.com>
+> To: Sven <sven@dmv.com>
+> Cc: razor-users@example.sourceforge.net
+> Subject: [Razor-users] Re: Questions on miscellaneous errata and issues
+>
+> On 09/08/02 20:49 -0400, Sven wrote:
+> ) In tweaking my system to try to optimize the use of razor (this now from
+a network/connection/etc standpoint, not so much from a philosphical stance
+on what is or is not considered spam and who should decide it) I have come
+across a couple issues that I hope I may be able to get some relief on ...
+> )
+> ) 1) What *exactly* does "Unable to connect to honor.cloudmark.com:2703;
+Reason: Operation now in progress." mean ??? I have seen this error message
+some 1700 times today (between 2 clustered servers) representing a little
+over 1% failure rate. In an enterprise level I was hoping for more along the
+lines of maybe one-tenth that .....
+>
+>   It's a network error - That string is not created by
+>   Razor Agents.  Its trying to connect and having trouble.
+>   1700 times seems abnormally high.  How many successful
+>   connections were there in the same timespan?
+>
+
+Today was not as bad ... apt.cloudmark was the server du jour and
+experienced about 800 "Unable to connect .... Reason: Operation now in
+progress" out of some 189,000 "bootup[1]"  or roughly 0.5% -- better than
+the 1% before but still a bit higher than I would like. I suspect it is
+because a previous timeout from razor-agents has a process id that is being
+held by an open milter socket. The process id's cycle, the number comes up
+again and the error occurs as a duplicate pid occurs. I will tweak my milter
+settings to shorten the total time to allow the socket to live per connect.
+
+>
+> ) 2) Related somewhat to question 1: is there (or will there be if
+currently not) a way of adjusting the timeout the setting for the
+razor-check to await a response from the server it queries? I am running
+this as a sendmail milter and adjusting the milter timeouts won't help if
+the razor-check script times out first anyway ....
+>
+>   The timeout is hardcoded to 15 secs.
+>   No plans right now to make that an option.
+>   You can always edit the source - Core.pm.  :)
+
+In looking at Core.pm I find a couple possible places where that code might
+be. Is it:
+    my $select = new IO::Select ($sock);
+    my @handles = $select->can_read (15);
+    if ($handles[0]) {
+        $self->log (8,"Connection established");
+        my $greeting = <$sock>;
+        # $sock->autoflush; # this is on by default as of IO::Socket 1.18
+        $self->{sock} = $sock;
+        $self->{connected_to} = $server;
+        $self->{select} = $select;
+        $self->log(4,"$server >> ". length($greeting) ." server greeting:
+$greeting");
+
+        return 1 if $params{discovery_server};
+        unless ($self->parse_greeting($greeting) ) {
+            $self->nextserver or return $self->errprefix("connect2");
+            return $self->connect;
+        }
+        return 1;
+    } else {
+        $self->log (3, "Timed out (15 sec) while reading from
+$self->{s}->{ip}.");
+??????
+or
+    unless ($sock) {
+        $sock = IO::Socket::INET->new(
+                            PeerAddr => $server,
+                            PeerPort => $port,
+                            Proto    => 'tcp',
+                            Timeout  => 20,
+                     );
+        unless ( $sock ) {
+            $self->log (3,"Unable to connect to $server:$port; Reason:
+$!.");
+            return if $params{discovery_server};
+            $self->nextserver or return $self->errprefix("connect1");
+            return $self->connect;
+        }
+    }
+??????
+[of course the latter reflects a differenct timeout setting altogether - one
+part for proxy, the other for non-proxy]
+
+>
+>
+> ) 3) What are the plans for fire.cloudmark, apt.cloudmark, ubik.cloudmark?
+It seems that we have all these catalogue servers yet a good portion of the
+time, only one is available or the last discovery ends up only listing one
+(currently honor.cloudmark) in the cataloge.lst file.
+>
+>   The system is designed so servers can be added and
+>   subtracted without the clients caring - if the razor
+>   client can't connect to a server, it re-discovers, getting
+>   all currently available servers and stores results locally.
+>
+
+I changed the default discovery period to every 12 hours in order to
+compensate for the recent sporadic nature of the servers' availability (I
+realize that the issue was related to syncing and server upgrades .... but I
+might as well play it safe for a while).
+
+>
+> ) 4) What would be the implications/requirements/caveats of hosting a
+catalogue server or, at the minimum, a caching server (similar to the way
+mail-abuse.org, for example, does dns zone transfers of its rbl list -- I
+realize that this is a completely different mechanism, but you get the point
+I am driving at here). I realize that there is an issue of polluting the
+catalogue but perhpas there could be some way of certifying a catalogue
+server? What type of bandwidth considerations are we looking at here? (It is
+just the signatures that are actually transferred across the pipes, is it
+not?)
+>
+>   We are looking into releasing caching catalogue servers
+>   for those besides us to use.
+
+If I can be of help or if you have details about to participate in this
+portion (caching or catalogueing), please let me know.
+
+>
+>
+> ) It really looks like there is a great potential here for a very workable
+tool and if I can get some of these issues addressed or can even be of some
+assistance, all the better .....
+> )
+> ) Sven Willenberger
+> ) Systems Administration
+> ) Delmarva Online, Inc.
+>
+>
+>   Thanks!
+>
+>   -chad
+>
+>
+>
+> --__--__--
+>
+> _______________________________________________
+> Razor-users mailing list
+> Razor-users@lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/razor-users
+>
+>
+> End of Razor-users Digest
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Dice - The leading online job board
+for high-tech professionals. Search and apply for tech jobs today!
+http://seeker.dice.com/seeker.epl?rel_code=31
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

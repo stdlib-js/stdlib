@@ -1,0 +1,90 @@
+From fork-admin@xent.com  Mon Sep 23 22:47:31 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id C7FD116F03
+	for <jm@localhost>; Mon, 23 Sep 2002 22:47:29 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 23 Sep 2002 22:47:29 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8NICuC29160 for <jm@jmason.org>;
+    Mon, 23 Sep 2002 19:12:57 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 85A642940DD; Mon, 23 Sep 2002 11:09:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from localhost.localdomain (pm0-37.sba1.netlojix.net
+    [207.71.218.37]) by xent.com (Postfix) with ESMTP id EE45E29409A for
+    <fork@xent.com>; Mon, 23 Sep 2002 11:08:35 -0700 (PDT)
+Received: (from dave@localhost) by maltesecat (8.8.7/8.8.7a) id LAA25732;
+    Mon, 23 Sep 2002 11:18:16 -0700
+Message-Id: <200209231818.LAA25732@maltesecat>
+To: fork@spamassassin.taint.org
+Subject: Re: [VoID] a new low on the personals tip...
+In-Reply-To: Message from fork-request@xent.com of
+    "Tue, 17 Sep 2002 04:29:01 PDT."
+    <20020917112901.10408.10485.Mailman@lair.xent.com>
+From: Dave Long <dl@silcom.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 23 Sep 2002 11:18:16 -0700
+
+
+
+> *  Too much information?
+
+The saying, as I recall, is along
+the lines of "put your best foot
+forward".
+
+(In this case, you seem to have put
+everything forward, in a Fosbury
+Flop consisting of the best foot,
+the worst foot, enough arms for a
+diety and his consort, and even a
+set of spare limbs from Hoffa or
+the space aliens or whatever it is
+you keep locked up in the trunk of
+the Bonneville)
+
+>           ... replied ... in one go, in a matter of minutes. I *do*
+> really think this way, complete with footnotes. So if it's too much
+> information, I still stand by my reply: I wouldn't be myself if I
+> started off playing games.
+
+Pascal could write short letters,
+when he had the time.  Is editing
+to provide an "executive summary"
+really being untrue to yourself?
+
+(We are all used to a full-bore
+real-time Rohit streaming, but
+that's because we are already
+"Friends of", and know to set
+our buffers accordingly.  For a
+stranger's sake, it may be best
+to provide the "elevator pitch
+Rohit" -- and negotiate upwards
+only after a session has been
+established)
+
+-Dave
+
+:::::
+
+Thomas Jefferson writes:
+> I served with General Washington in the legislature of Virginia before
+> the revolution and during it with Dr. Franklin in Congress. I never
+> heard either of them speak [for as long as] ten minutes at a time ...
+
+

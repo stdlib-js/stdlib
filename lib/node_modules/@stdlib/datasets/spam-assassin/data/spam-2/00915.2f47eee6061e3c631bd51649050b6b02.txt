@@ -1,0 +1,51 @@
+Received: from uuout14smtp10.uu.flonetwork.com (uuout14smtp10.uu.flonetwork.com [205.150.6.130])
+	by linux.midrange.com (8.11.6/8.11.6) with ESMTP id g6N43ae14008
+	for <gibbs@midrange.com>; Mon, 22 Jul 2002 23:03:36 -0500
+Received: from UUCORE14PUMPER2 (uuout14relay1.uu.flonetwork.com [172.20.74.10])
+	by uuout14smtp10.uu.flonetwork.com (Postfix) with SMTP id B23003AA097
+	for <gibbs@midrange.com>; Mon, 22 Jul 2002 23:58:36 -0400 (EDT)
+Message-Id: <Kilauea264-235-26536324-1@flonetwork.com>
+From: Consumer Today <reply_3@ct2.consumertoday.net>
+To: gibbs@midrange.com
+Subject: Get 250 full-color business cards FREE
+MIME-Version: 1.0
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+Date: Mon, 22 Jul 2002 23:58:36 -0400 (EDT)
+X-Status: 
+X-Keywords: 
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>VistaPrint.com</title>
+</head>
+
+<body><center>
+<a href="http://ct2.consumertoday.net/cgi-bin14/flo?y=hEY0CCzME0D40EW0AN"><table width="565" cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td width="331"><a href="http://ct2.consumertoday.net/cgi-bin14/flo?y=hEY0CCzME0D40EW0AN"><img src="http://images.sandbox.com/images/email/vistaprint_KIT_FREE_text.gif" width="331" height="128" border="0" alt="" title="VistaPrint.com"></a></td>
+    <td rowspan="2" width="234"><a href="http://ct2.consumertoday.net/cgi-bin14/flo?y=hEY0CCzME0D40EW0AN"><img src="http://images.sandbox.com/images/email/vistaprint_KIT_two_ladies.jpg" width="234" height="234" border="0" title="VistaPrint.com" alt=""></a></td>
+</tr>
+<tr>
+    <td width="331"><a href="http://ct2.consumertoday.net/cgi-bin14/flo?y=hEY0CCzME0D40EW0AN"><img src="http://images.sandbox.com/images/email/vistaprint_KIT_stay_close.gif" width="331" height="106" border="0" title="VistaPrint.com" alt=""></a></td>
+</tr>
+<tr>
+    <td width="331"><a href="http://ct2.consumertoday.net/cgi-bin14/flo?y=hEY0CCzME0D40EW0AN"><img src="http://images.sandbox.com/images/email/vistaprint_KIT_bullets.gif" width="331" height="92" border="0" title="VistaPrint.com" alt=""></a></td>
+    <td width="234"><a href="http://ct2.consumertoday.net/cgi-bin14/flo?y=hEY0CCzME0D40EW0AN"><img src="http://images.sandbox.com/images/email/vistaprint_KIT_logo.gif" width="234" height="92" border="0" title="VistaPrint.com" alt=""></a></td>
+</tr>
+<tr>
+    <td width="331"><a href="http://ct2.consumertoday.net/cgi-bin14/flo?y=hEY0CCzME0D40EW0AN"><img src="http://images.sandbox.com/images/email/vistaprint_KIT_Animated_BC.gif" width="331" height="124" border="0" title="VistaPrint.com" alt=""></a></td>
+    <td width="234"><a href="http://ct2.consumertoday.net/cgi-bin14/flo?y=hEY0CCzME0D40EW0AN"><img src="http://images.sandbox.com/images/email/vistaprint_KIT_button.gif" width="234" height="124" border="0" title="VistaPrint.com" alt=""></a></td>
+</tr>
+</table></a>
+
+</center>
+
+</body>
+<BR><BR><CENTER><table border="1" cellpadding="3" cellspacing="0" width="550" bordercolor="#000000" body bgcolor="white">
+<tr><td width="551" height="5" align="center" valign="middle"><table width="550" border="0" cellspacing="0" cellpadding="0"><tr><td><FONT FACE="Verdana, Modern, Arial" SIZE="2" color="gray">We take your privacy very seriously and it is our policy never to send unwanted email messages. This message has been sent to gibbs@midrange.com because you are a member of Consumer Today or you signed up with one of our marketing partners. To unsubscribe, simply click <a href="http://unsub.ct.consumertoday.net/consumer_today/ct_site_unsub.html"><font color="blue"><u>here</u></font></a> (please allow 3-5 business days for your unsubscribe request to be processed). Questions or comments - send them to <a href="mailto:customerservice@consumertoday.net"><font color="blue"><u>customerservice@consumertoday.net</u></font></a>.</td></tr></table></td></tr></table></font></center></body>
+
+<IMG SRC="http://ct2.consumertoday.net/cgi-bin14/flosensing?y=EY0CCzME0D40By"></html>
+

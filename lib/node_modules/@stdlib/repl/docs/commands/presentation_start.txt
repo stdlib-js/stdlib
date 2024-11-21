@@ -1,0 +1,82 @@
+
+presentationStart( [text, ][options] )
+    Starts a REPL presentation.
+
+    When not provided presentation text, an options argument must specify a
+    presentation file to load.
+
+    If a specified workspace already exists, the workspace is silently cleared
+    and a new presentation bound. In order to preserve an existing workspace,
+    specify an alternative presentation workspace name.
+
+    Parameters
+    ----------
+    text: string (optional)
+        Presentation text.
+
+    options: Object (optional)
+        Presentation options.
+
+    options.borderTop: string (optional)
+        Top border character sequence. Default: '*'.
+
+    options.borderBottom: string (optional)
+        Bottom border character sequence. Default: '*'.
+
+    options.borderLeft: string (optional)
+        Left border character sequence. Default: '* '.
+
+    options.borderRight: string (optional)
+        Right border character sequence. Default: ' *'.
+
+    options.counter: string|boolean (optional)
+        Slide counter. If `true`, each slide displays a slide counter. If set to
+        'progress', each slide displays a progress counter. If `false`, no
+        counter is displayed. Default: false.
+
+    options.width: integer|null (optional)
+        Presentation width. If `null`, the presentation width is either computed
+        based on the screen size (if a REPL output stream is TTY) or set to `80`
+        characters. Default: null.
+
+    options.height: integer|null (optional)
+        Presentation height. If `null`, the presentation height is either
+        computed based on the screen size (if a REPL output stream is TTY) or
+        set to `25` rows. Default: null.
+
+    options.workspace: string (optional)
+        REPL workspace name. A presentation adds commands to the specified
+        workspace, thus allowing presentation navigation and interaction.
+        Default: `'presentation-<n>'`, where `n` is an assigned presentation
+        identifier.
+
+    options.load: string (optional)
+        File path specifying a presentation file to load. If presentation text
+        is provided, this option is ignored. Otherwise, this option is required.
+
+    options.watch: boolean (optional)
+        Boolean indicating whether to watch a presentation source file for
+        changes. This option is only applicable if not provided presentation
+        text and the options object specifies a presentation file to load.
+        Default: false.
+
+    options.autoClear: boolean (optional)
+        Boolean indicating whether to automatically clear the screen before
+        writing a rendered slide to the REPL. Default: true.
+
+    options.loop: boolean (optional)
+        Boolean indicating whether to "loop" a presentation. Default: false.
+
+    Returns
+    -------
+    id: integer
+        Presentation identifier.
+
+    Examples
+    --------
+    > var id = presentationStart( 'beep\n---boop\n' );
+
+    See Also
+    --------
+    presentationStop, workspace, workspaces
+

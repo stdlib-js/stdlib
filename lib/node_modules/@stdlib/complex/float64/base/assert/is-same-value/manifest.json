@@ -1,0 +1,61 @@
+{
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/complex/float64/reim",
+        "@stdlib/number/float64/base/assert/is-same-value"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/complex/float64/reim",
+        "@stdlib/number/float64/base/assert/is-same-value"
+      ]
+    }
+  ]
+}

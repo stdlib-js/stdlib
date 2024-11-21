@@ -1,0 +1,78 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Wed Aug 21 16:46:49 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 73C2243C34
+	for <jm@localhost>; Wed, 21 Aug 2002 11:46:48 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 21 Aug 2002 16:46:48 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7LFiwZ31952 for <jm-sa@jmason.org>; Wed, 21 Aug 2002 16:44:58 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17hXeP-0004oL-00; Wed,
+    21 Aug 2002 08:44:05 -0700
+Received: from dsl254-113-191.nyc1.dsl.speakeasy.net ([216.254.113.191]
+    helo=mail.pineaus.com) by usw-sf-list1.sourceforge.net with esmtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17hXeB-0006mR-00 for
+    <spamassassin-talk@lists.sourceforge.net>; Wed, 21 Aug 2002 08:43:51 -0700
+Received: from frank2 (root@mail.pineaus.com [216.254.113.191]) by
+    mail.pineaus.com (8.12.5/8.12.5) with SMTP id g7LFhlti021355 for
+    <spamassassin-talk@lists.sourceforge.net>; Wed, 21 Aug 2002 10:43:47 -0500
+From: Frank Pineau <frank@pineaus.com>
+To: SpamAssassin List <spamassassin-talk@example.sourceforge.net>
+Subject: Re: [SAtalk] Highest-scoring false positive
+Reply-To: frank@pineaus.com
+Message-Id: <85d7mugv6im41urql5nlrc1v8dsrc9d1sl@localhost>
+References: <1029568528.15032.111.camel@obi-wan.kenlabs.com>
+    <Pine.BSF.4.21.0208210744440.47117-100000@wow.atlasta.net>
+    <20020821150422.GG28416@kluge.net>
+    <nib7mu8ghb59aqi7ipqlp3ajopdbosg8av@localhost>
+    <20020821153428.GI28416@kluge.net>
+In-Reply-To: <20020821153428.GI28416@kluge.net>
+X-Mailer: Forte Agent 1.92/32.572
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 21 Aug 2002 10:43:32 -0500
+Date: Wed, 21 Aug 2002 10:43:32 -0500
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g7LFiwZ31952
+
+On Wed, 21 Aug 2002 11:34:28 -0400, you wrote:
+
+>If you sign up for something, it's not spam by definition, aggressive as
+>they may be.  (I told them to stop calling me, and they stopped, so ...)
+
+
+I agree.  In a way, I signed up just by buying steaks from them.  However, once
+I tell them to stop, everything after that is spam.  I told them to stop *many*
+times.
+
+It's a pity, too, since they have great steaks.  Buying from them is just not
+worth having to put up with all of that clinginess.
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

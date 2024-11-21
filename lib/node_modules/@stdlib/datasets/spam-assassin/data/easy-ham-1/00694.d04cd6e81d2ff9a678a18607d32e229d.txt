@@ -1,0 +1,63 @@
+From fork-admin@xent.com  Sun Sep 22 14:11:39 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 6A2B316F03
+	for <jm@localhost>; Sun, 22 Sep 2002 14:11:39 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sun, 22 Sep 2002 14:11:39 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8M21pC16617 for <jm@jmason.org>;
+    Sun, 22 Sep 2002 03:01:51 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id A135129418C; Sat, 21 Sep 2002 18:58:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hotmail.com (dav27.law15.hotmail.com [64.4.22.84]) by
+    xent.com (Postfix) with ESMTP id 5DBC829409A for <fork@xent.com>;
+    Sat, 21 Sep 2002 18:57:11 -0700 (PDT)
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Sat, 21 Sep 2002 19:00:44 -0700
+X-Originating-Ip: [207.202.171.254]
+From: "Mr. FoRK" <fork_list@hotmail.com>
+To: <fork@spamassassin.taint.org>
+References: <1204837300.20020921093852@magnesium.net>
+    <3D8CFD5E.10406@endeavors.com>
+Subject: Re: Oh my...
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.50.4133.2400
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4133.2400
+Message-Id: <DAV27qOyu7G81Gp7pr20000176f@hotmail.com>
+X-Originalarrivaltime: 22 Sep 2002 02:00:44.0516 (UTC) FILETIME=[DC83EA40:01C261DB]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sat, 21 Sep 2002 19:05:28 -0700
+
+
+----- Original Message ----- 
+From: "Gregory Alan Bolcer" <gbolcer@endeavors.com>
+
+
+> I went out and drew some chalk circles on my
+> sidewalk just so I wouldn't miss out on the experience.
+> I've collected half a dozen passwords &
+> access to email accounts so far.
+> 
+> Greg
+hahaha! <joke>It takes a thief to catch a thief?</joke>
+
+

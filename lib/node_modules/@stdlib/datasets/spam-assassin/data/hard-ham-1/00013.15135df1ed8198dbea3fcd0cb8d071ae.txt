@@ -1,0 +1,344 @@
+Return-Path: <Online#3.19586.b5-9w0blztbvHPdZdRR.1.b@newsletter.online.com>
+Received: from acmta4.cnet.com (abv-sfo1-acmta4.cnet.com [206.16.1.163])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6A1r9T18415
+	for <qqqqqqqqqq-zdnet@spamassassin.taint.org>; Wed, 10 Jul 2002 02:53:10 +0100
+Received: from abv-sfo1-ac-agent1 (206.16.0.223) by acmta4.cnet.com (PowerMTA(TM) v1.5); Tue, 9 Jul 2002 18:47:44 -0700 (envelope-from <Online#3.19586.b5-9w0blztbvHPdZdRR.1.b@newsletter.online.com>)
+Message-ID: <8177251.1026265981670.JavaMail.root@abv-sfo1-ac-agent1>
+Date: Tue, 9 Jul 2002 18:53:01 -0700 (PDT)
+From: "CNET Download.com for Mac" <Online#3.19586.b5-9w0blztbvHPdZdRR.1@newsletter.online.com>
+To: qqqqqqqqqq-zdnet@spamassassin.taint.org
+Subject: This week: Deck, Tex-Edit Plus, Boom
+Mime-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+X-Mailer: Accucast (http://www.accucast.com)
+X-Mailer-Version: 2.8.4-2
+
+CNET | DOWNLOAD DISPATCH(Mac Edition)
+July 9, 2002
+Vol. 7, No. 27
+
+Using a Mac and today's music software, musicians are finding
+that they can create, record, and master their songs without
+the need to pay for expensive studio time. Deck, our Pick of
+the Week, offers a multitrack audio workstation that can take 
+care of all your recording needs, and it's even optimized for 
+OS X. Not just great for music, Deck can be used for film, video,
+and numerous other applications. Get on Deck:
+
+http://clickthru.online.com/Click?q=ca-iciuQUgFRLpNVUXcl8jfOfRHHUnR 
+
+Also this week, we've got Captain FTP, for an easy way to
+transfer files; AquilaCalendar, to get you organized under OS X;
+Tex-Edit Plus, a full-featured alternative to the pricier
+text editors; and Boom, a remake of one of the great classic
+arcade games.
+
+Enjoy!
+
+Jason Parker
+Assistant Editor, CNET Download.com
+--
+
+(Unsubscribe instructions are at the bottom of this
+newsletter.)
+
+<---------------Advertisement--------------->
+
+Gateway Thin & Light PCs - starting at $1,499!
+
+Thin and Light, the Gateway(R) 450 blends price, performance,
+and portability.  Systems include Mobile Intel(R) Pentium(R)
+4-M processors, 14.1" and 15" XGA TFT Active Matrix display 
+options, and your choice of operating systems.
+
+http://clickthru.online.com/Click?q=df-1kJhQLEFHEClWsofbQq-Kh1XhaeR 
+
+<------------------------------------------->
+
+IN THIS ISSUE:
+
+1. This Week's Top 10 Downloads
+2. Pick of the Week: Deck
+3. The Week in Wares:
+             - Internet: Captain FTP
+             - Home and Education: AquilaCalendar
+             - Development Tools: Tex-Edit Plus
+             - Games: Boom
+4. Updates & Drivers
+5. The Week in Reviews: Mac OS X 10.1 prices
+6. Overheard on Download.com
+7. Download.com Outage Notice
+
+P.S. Got a suggestion for CNET Download.com? Send it to:
+suggestions@download.com
+_____________________________________________________________
+
+1. This Week's Top 10 Downloads
+
+   1. LimeWire 2.4.4                         5,715 downloads
+   2. MacSatellite  1.6.1                    4,402 downloads
+   3. LimeWire (OS X) 2.4.4                  4,043 downloads
+   4. Hotline Connect Client 1.8.5           3,690 downloads
+   5. RealPlayer 8.0                         2,730 downloads
+   6. Sound Studio 2.0.3                     2,690 downloads
+   7. Internet Explorer 5.1.4                1,949 downloads
+   8. Fetch 4.0.1                            1,914 downloads
+   9. OmniWeb (OS X) 4.1                     1,732 downloads
+  10. DivX for OS X 1.1.8                    1,602 downloads
+
+For more details on Download.com's most popular files, click
+here: http://clickthru.online.com/Click?q=f5-lTbRQgwx12_yoFk6DmLwgkaZmRPR 
+______________________________________________________________
+
+2. Pick of the Week
+
+   DECK
+   Version: 3.5
+   File size: 6.6MB
+   License: Free to try; $399.00 to buy
+   Minimum Requirements: Mac OS 9.x or Mac OS X
+
+   Looking for a professional, multitrack audio workstation
+   under OS X? This entry from BIAS, while maybe not the most
+   attractive Mac app on the block, gives you some hefty
+   editing functionality--whether you're working in broadcast,
+   film, video, or any other multimedia environment. The big
+   brother to BIAS' cheaper Deck LE, Deck 3.5 lets you process
+   soundtracks, edit dialogue, spot effects, and record
+   ADR-style voice-overs. Deck also supports surround mixing and
+   up to four real-time effects plug-ins per track for music
+   production. A good value, and one of the first of its kind
+   to hit OS X, this midrange app deserves a listen. You're on
+   Deck:
+
+   http://clickthru.online.com/Click?q=0a-ZnKCIrrscnFX3e0Bwhq6GOxuYznR 
+
+   Want to review Deck? Submit your opinion here:
+   http://clickthru.online.com/Click?q=1f-rvwqI58w5yO75pM1xmYgHobjqmeR 
+
+   Find all of our Picks here:
+   http://clickthru.online.com/Click?q=34-pJpSIcd819N9rTb3_tvVyn4IcgyR 
+______________________________________________________________
+
+3. The Week in Wares
+
+   IN INTERNET:
+
+   CAPTAIN FTP
+   Version: 1.3
+   File size: 793K
+   License: Free
+   Minimum requirements: Mac OS X
+
+   Designed completely from scratch to work with OS X, Captain
+   FTP is a new client that makes finding, uploading, and
+   downloading files online easier than ever. Since it makes
+   full use of OS X's multithreaded multitasking capabilities,
+   you can set up as many simultaneous connections as you like
+   without slowing down other work on your Mac too much. The
+   program supports drag-and-drop operation and resuming
+   interrupted downloads. It also sports a built-in address
+   book, and integrated BBEdit links. The interface deserves
+   awards for clarity and good looks. Grab files in style:
+
+   http://clickthru.online.com/Click?q=49-ZM4cIEpSenMA07qVX4RVXFO5JSFR 
+
+   Want to review Captain FTP? Submit your opinion here:
+   http://clickthru.online.com/Click?q=5e-ssGdIn06tVeUdrZhsnStcVTQzc9R 
+
+   Find all of the latest Internet software here:
+   http://clickthru.online.com/Click?q=73-__ZeIBBtWIiA9y3T8UEE0WNrUZcR 
+
+
+   IN HOME AND EDUCATION:
+
+   AQUILACALENDAR
+   Version: 1.19
+   File size: 1.63MB
+   License: Free to try; $20.00 to buy
+   Minimum Requirements: Mac OS X
+
+   One of the most frustrating things about off-the-shelf
+   organizer applications is that they try to force everyone to
+   keep track of things in the same way. AquilaCalendar is
+   refreshingly different: you can design your own calendar
+   windows, choosing from a plethora of basic options (day,
+   week, month, year, several months together, and so on), customize
+   your calendar with colors and fonts, and more. To-do lists
+   and notes-to-self can be added to calendars or you can add a
+   handy clock and holiday markers, among other options. The
+   interface fits with the OS X design theme, and makes getting
+   organized no more difficult than it has to be. Get organized:
+
+   http://clickthru.online.com/Click?q=88-ec5PQQKx6IOkSTY-rU358atSBbiR 
+
+   Want to review AquilaCalendar? Submit your opinion here:
+   http://clickthru.online.com/Click?q=9e-tWQoQtMQJGrFWgHHSCN0U7nQUD4R 
+
+   Find all of the latest home and education software here:
+   http://clickthru.online.com/Click?q=b3-QHzxQYKTqehBCndAE64qDAwrPGrR 
+
+
+   IN DEVELOPMENT TOOLS:
+
+   TEX-EDIT PLUS
+   Version: 4.1.3
+   File size: 1.17MB
+   License: Free to try; $15.00 to buy
+   Minimum Requirements: System 7.x
+
+   Before you spend the big bucks on a HTML editor, make sure
+   you check out Tex-Edit Plus. This handy little editor offers
+   all the basics like unlimited Undo and Redo commands,
+   translucent drag-and-drop capabilities, several text styles,
+   and the option to highlight selected text. Also, you'll be
+   able to use it to act as a text editor for an FTP client
+   such as Fetch, Interarchy, NetFinder, or Transmit. Text
+   editing made easy:
+
+   http://clickthru.online.com/Click?q=c8-2lPnQWOzdD19YnmMKE-nFr99H2iR 
+
+   Want to review Tex-Edit Plus? Submit your opinion here:
+   http://clickthru.online.com/Click?q=dd-tpm0QzWd3Dhh1zgGZP85eXsJh-PR 
+
+   Find all of the latest utilities here:
+   http://clickthru.online.com/Click?q=f2-OZVTQUwWCeG9s_A0pvVdi5Z7ednR 
+
+
+   IN GAMES:
+
+   BOOM
+   Version: 1.3
+   File size: 2.3MB
+   License: Free to try, $15 to buy
+   Minimum Requirements: Mac OS 8.x/OS 9.x/OS X
+
+   Remember the classic arcade game Bomberman? Even if you
+   don't, you should take this remake of the old classic for a
+   spin. Maneuver your way through a maze of corridors while
+   setting off bombs to clear a path for your escape. You'll
+   also need to pick up coins for extra points and stay clear
+   of those nasty aliens to stay alive. Blast your way through
+   eight alien-infested areas, each one divided into 10
+   subzones, and kick the Big Alien Boss back to where he came
+   from. Blast away:
+
+   http://clickthru.online.com/Click?q=07-HqCzI5rq9T_hx8KiqzUbrvLkiDeR 
+
+   Want to review Boom? Submit your opinion here:
+   http://clickthru.online.com/Click?q=1c-cs_iIFr43mGGwPjn9kgGa2oXqGyR 
+
+   Find all of the latest games here:
+   http://clickthru.online.com/Click?q=32-Gx5IIrQ6j3J9vREDFWVhZSgRXBnR 
+
+______________________________________________________________
+
+4. Updates & Drivers: Stay on Top of Bug Fixes and New Features
+
+   IN INTERNET:
+
+   - DupliMizer 2.4 
+     http://clickthru.online.com/Click?q=47-ADmxIIZH1jE333KOiJGu_NEsnEuR 
+
+   - Web Site Maestro 1.2
+     http://clickthru.online.com/Click?q=5c-BnjPIZnPblJYt8W53xlZk0f-IosR 
+
+   - Surfer 2.0
+     http://clickthru.online.com/Click?q=71-GwdUIEZcfHewddAqwuBXvl3NU2FR 
+
+
+   IN MULTIMEDIA & DESIGN:
+
+   - Photo Album Builder 1.2
+     http://clickthru.online.com/Click?q=86-8fH1QCJonnxDZ9JSjaeTldfVpf4R 
+
+   - Cartoon Editor 1.2.1
+     http://clickthru.online.com/Click?q=9b-7-TFQSIo2p0Ld1d0dAVJ9PZAKTrR 
+
+
+   IN UTILITIES:
+
+   - Battery Endurance Measurer 1.3
+     http://clickthru.online.com/Click?q=b0-NZmfQQJr-SlQoW6dxQMKtNX8PQiR 
+
+   - Pixel Tester 2.0
+     http://clickthru.online.com/Click?q=c5-8BcDQzOaF-iJTk_zSROUJEymxqPR 
+
+   - SerialStorage 1.0
+     http://clickthru.online.com/Click?q=da-dT8jQUPq_nOG5djbjsMVKpv3DxnR 
+
+
+   IN BUSINESS AND FINANCE:
+
+   - Gym Organizer 6.5
+     http://clickthru.online.com/Click?q=ef-04uYQmkHvFhT_HKqBxDVAmoBameR 
+
+   - ChartConstructor 1.0.1
+     http://clickthru.online.com/Click?q=04-k9W0IFQXFQMPpsA98BbBL7kOi_yR 
+
+
+   IN HOME AND EDUCATION:
+
+   - WeatherMan 1.6
+     http://clickthru.online.com/Click?q=19-BLe0I2rXOrA0zLlKMZ2Fz8IR7XlR 
+
+   - Computer Cuisine Deluxe 3.1
+     http://clickthru.online.com/Click?q=2f-hYaFIqnzAaNFrW5P26D_8gaZjMeR 
+_______________________________________________________________
+
+5. The Week in Reviews:
+
+   Mac OS X 10.1 prices
+
+   If you haven't made the switch to Apple's beautiful and
+   powerful operating system, check out these prices, which may
+   change your mind.
+
+   http://clickthru.online.com/Click?q=44-9nxfIZUtYM5fxvgEMLKlXBDgnVsR 
+_______________________________________________________________
+
+6. Overheard on Download.com
+
+   Here are some user comments about an alternative MP3 player
+   for the Mac:
+
+   "Small, Low CPU Usage, Easy"
+
+   "Excellent Alternative"
+
+   "Neat, discreet, powerful"
+
+   "It blows my mind!"
+
+   "One of the best to date!"
+
+   So what's the name of this mystery download? Click here to
+   find out:
+
+   http://clickthru.online.com/Click?q=59-y53oIEnthMZswNYlpW-B_KMqztFR 
+_______________________________________________________________
+
+The e-mail address for your subscription is qqqqqqqqqq-zdnet@spamassassin.taint.org
+
+To sign up for more CNET newsletters, click here:
+http://nl.com.com/servlet/url_login?email=&brand=cnet
+
+To unsubscribe, click here:
+http://clickthru.online.com/Click?q=6e-2aLjz4Er1KcnmbRj35jce-nUPINqj9RR
+
+To receive your newsletter in HTML format, click here:
+http://nl.com.com/servlet/url_login?email=&brand=cnet
+
+For the CNET Newsletters FAQ, click here:
+http://clickthru.online.com/Click?q=83-U-BXQYJ7lFvC8zVtuoAABMMPZ9rR 
+
+To learn about advertising opportunities in CNET Newsletters, click here:
+http://clickthru.online.com/Click?q=98-FTaOQ_zabmh0qdlCW5CH7esbKRiR 
+
+
+Copyright 2002 CNET Networks, Inc. All rights reserved.
+
+
+
+

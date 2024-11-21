@@ -1,0 +1,23 @@
+
+{{alias}}( iterator )
+    Consumes an entire iterator and returns the last iterated value.
+
+    Parameters
+    ----------
+    iterator: Object
+        Input iterator over which to iterate.
+
+    Returns
+    -------
+    v: any
+        The last iterated value.
+
+    Examples
+    --------
+    > var arr = {{alias:@stdlib/array/to-iterator}}( [ 0, 0, 0, 0, 1 ] );
+    > var v = {{alias}}( arr )
+    1
+
+    See Also
+    --------
+

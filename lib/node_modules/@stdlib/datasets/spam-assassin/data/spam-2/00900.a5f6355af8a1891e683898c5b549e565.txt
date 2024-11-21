@@ -1,0 +1,198 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6MNnRhY075986
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Mon, 22 Jul 2002 18:49:28 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6MNnRhx075978
+	for cypherpunks-forward@ds.pro-ns.net; Mon, 22 Jul 2002 18:49:27 -0500 (CDT)
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6MNnGhY075906
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks@ds.pro-ns.net>; Mon, 22 Jul 2002 18:49:17 -0500 (CDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: from waste.minder.net (daemon@waste [66.92.53.73])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6MNnGJ70358
+	for <cypherpunks@ds.pro-ns.net>; Mon, 22 Jul 2002 19:49:16 -0400 (EDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: (from cpunks@localhost)
+	by waste.minder.net (8.11.6/8.11.6) id g6MNnF913538
+	for cypherpunks@ds.pro-ns.net; Mon, 22 Jul 2002 19:49:15 -0400
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by waste.minder.net (8.11.6/8.11.6) with ESMTP id g6MNnER13515
+	for <cpunks@minder.net>; Mon, 22 Jul 2002 19:49:14 -0400
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6MNnCJ70342
+	for <cpunks@minder.net>; Mon, 22 Jul 2002 19:49:13 -0400 (EDT)
+	(envelope-from cpunks@einstein.ssz.com)
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id SAA23809
+	for cpunks@minder.net; Mon, 22 Jul 2002 18:57:31 -0500
+Received: (from mdom@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id SAA23796
+	for cypherpunks-outgoing; Mon, 22 Jul 2002 18:55:44 -0500
+Received: from s1112.mb00.net (s1112.mb00.net [207.33.16.112])
+	by einstein.ssz.com (8.8.8/8.8.8) with ESMTP id SAA23792
+	for <cypherpunks@einstein.ssz.com>; Mon, 22 Jul 2002 18:55:35 -0500
+Received: (from pmguser@localhost)
+	by s1112.mb00.net (8.8.8pmg/8.8.5) id PAA57096
+	for :include:/usr/home/pmguser/pmgs/users/ebargains/delivery/1027370746.6389/rblk.10869; Mon, 22 Jul 2002 15:50:01 -0700 (PDT)
+Message-Id: <200207222250.PAA57096@s1112.mb00.net>
+From: Ebargains <ebargains@reply.mb00.net>
+To: cypherpunks@einstein.ssz.com
+X-Info: Message sent by MindShare Design customer with ID "ebargains"
+X-Info: Report abuse to list owner at ebargains@complaints.mb00.net
+X-PMG-Userid: ebargains
+X-PMG-Msgid: 1027370746.6389
+X-PMG-Recipient: cypherpunks@einstein.ssz.com
+Old-Subject: CDR: Double The Speed of Your Computer!
+Date: Mon, 22 Jul 2002 18:36:01 EDT
+MIME-Version: 1.0
+Content-Type: text/html; charset="iso-8859-1"
+Sender: owner-cypherpunks@einstein.ssz.com
+Precedence: bulk
+Reply-To: cypherpunks@einstein.ssz.com
+X-Mailing-List: cypherpunks@ssz.com
+X-Unsubscription-Info: http://einstein.ssz.com/cdr
+X-List-Admin: list@ssz.com
+X-Loop: ssz.com
+X-Acceptable-Languages: English, Russian, German, French, Spanish
+Subject: Double The Speed of Your Computer!
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Double the Speed of Your Computer!</title>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table width="417" border="0" cellspacing="0" cellpadding="0" height="359" align="center">
+	<tr> 
+		<td colspan="2" rowspan="2" width="11" height="10"><img src=" http://www.bd12.com/doublepcspeed/dps_top_lft.gif" width="11" height="10"></td>
+		<td width="394" height="2" bgcolor="#999999"><img src=" http://www.bd12.com/doublepcspeed/spacer.gif" width="1" height="2"></td>
+		<td colspan="2" rowspan="2" width="11" height="10"><img src=" http://www.bd12.com/doublepcspeed/dps_top_rt.gif" width="11" height="10"></td>
+	</tr>
+	<tr> 
+		<td width="394" height="8"><img src=" http://www.bd12.com/doublepcspeed/spacer.gif" width="1" height="8"></td>
+	</tr>
+	<tr> 
+		<td rowspan="3" width="2" bgcolor="#999999"><img src=" http://www.bd12.com/doublepcspeed/spacer.gif" width="2" height="1"></td>
+		<td width="9"><img src=" http://www.bd12.com/doublepcspeed/spacer.gif" width="9" height="1"></td>
+		<td width="394" height="66" align="center" valign="middle"><a href="http://r.mb00.net/s/c?1dx.2qe5.1.i78.fsi52"><img src=" http://www.bd12.com/doublepcspeed/dps_hdr.gif" width="394" height="25" border="0"></a></td>
+		<td width="9"><img src=" http://www.bd12.com/doublepcspeed/spacer.gif" width="9" height="1"></td>
+		<td rowspan="3" width="2" bgcolor="#999999"><img src=" http://www.bd12.com/doublepcspeed/spacer.gif" width="2" height="1"></td>
+	</tr>
+	<tr> 
+		<td colspan="3" width="412" height="2" bgcolor="#999999"><img src=" http://www.bd12.com/doublepcspeed/spacer.gif" width="1" height="2"></td>
+	</tr>
+	<tr> 
+		<td width="9"><img src=" http://www.bd12.com/doublepcspeed/spacer.gif" width="9" height="1"></td>
+		<td width="394" align="left" valign="top" height="278">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr> 
+					<td width="223"><a href="http://r.mb00.net/s/c?1dx.2qe5.2.i78.fsi52"><img src=" http://www.bd12.com/doublepcspeed/dps_no.gif" width="223" height="210" border="0"></a></td>
+					<td width="171"><a href="http://r.mb00.net/s/c?1dx.2qe5.3.i78.fsi52"><img src=" http://www.bd12.com/doublepcspeed/dps_computer.jpg" width="171" height="210" border="0"></a></td>
+				</tr>
+				<tr>
+					<td align="left" valign="top"><a href="http://r.mb00.net/s/c?1dx.2qe5.4.i78.fsi52"><img src=" http://www.bd12.com/doublepcspeed/dps_click.gif" width="223" height="38" border="0"></a></td>
+					<td align="left" valign="top"><a href="http://r.mb00.net/s/c?1dx.2qe5.5.i78.fsi52"><img src=" http://www.bd12.com/doublepcspeed/dps_url.gif" width="171" height="23" border="0"></a></td>
+				</tr>
+			</table>
+		</td>
+		<td width="9"><img src=" http://www.bd12.com/doublepcspeed/spacer.gif" width="9" height="1"></td>
+	</tr>
+	<tr> 
+		<td colspan="2" rowspan="2" width="11" height="9"><img src=" http://www.bd12.com/doublepcspeed/dps_btn_lft.gif" width="11" height="11"></td>
+		<td width="394" height="9"><img src=" http://www.bd12.com/doublepcspeed/spacer.gif" width="1" height="9"></td>
+		<td colspan="2" rowspan="2" width="11" height="9"><img src=" http://www.bd12.com/doublepcspeed/dps_btn_rt.gif" width="11" height="11"></td>
+	</tr>
+	<tr> 
+		<td width="394" height="2" bgcolor="#999999"><img src=" http://www.bd12.com/doublepcspeed/spacer.gif" width="1" height="2"></td>
+	</tr>
+</table>
+<br>
+<!-- insert unsub information -->
+<table width="417" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td> </td>
+	</tr>
+</table>
+</body>
+</html>
+
+<HTML>
+<BR><BR>
+<CENTER>
+<TABLE WIDTH="540" CELLSPACING=2 CELLPADDING=3 BORDER=0>
+<FORM METHOD=GET ACTION="http://i.mb00.net/cgi-bin/pmg_subscribe.pl">
+<TR>
+  <TD BGCOLOR="#DDDDDD">
+  <FONT FACE="helvetica,arial" SIZE="-1" COLOR="#000000">
+    <I>Remove yourself from this list by either:</I>
+  </FONT>
+  </TD>
+</TR>
+<TR>
+  <TD BGCOLOR="#EEEEEE">
+  <FONT FACE="helvetica,arial" SIZE="-1" COLOR="#000000">
+  Entering your email address below and clicking REMOVE:<BR>
+    <CENTER>
+    <INPUT TYPE="hidden" NAME="list" VALUE="ebargains:*">
+    <INPUT TYPE="hidden" NAME="server_action" VALUE="Unsubscribe">
+    <INPUT TYPE="text" NAME="email_address" VALUE="cypherpunks@einstein.ssz.com" SIZE=25></FONT>
+    <INPUT TYPE="submit" VALUE="REMOVE">
+    </CENTER>
+  </FONT>
+  </TD>
+</TR>
+<TR ALIGN="CENTER">
+  <TD>
+  <FONT FACE="helvetica,arial" SIZE="-1" COLOR="#000000">
+    <B><I>OR</I></B>
+  </FONT>
+  </TD>
+</TR>
+<TR>
+  <TD BGCOLOR="#EEEEEE">
+  <FONT FACE="helvetica,arial" SIZE="-1" COLOR="#000000">
+  Reply to this message with the word &quot;remove&quot; in the subject line.
+  </FONT>
+  </TD>
+</TR>
+</FORM>
+<TR ALIGN="CENTER">
+  <TD BGCOLOR="#FFFFFF" ALIGN="CENTER">
+  <FONT FACE="helvetica,arial" SIZE="1" COLOR="#000000">
+  This message was sent to address cypherpunks@einstein.ssz.com
+  </FONT>
+  
+<!--
+X-PMG-Recipient: cypherpunks@einstein.ssz.com
+X-PMG-Msgid: 1027370746.6389
+X-PMG-Userid: ebargains:*
+-->
+
+<DIV ALIGN="CENTER">
+<FONT FACE="helvetica,arial" SIZE="1" COLOR="#AAAAAA">pmguid:1dx.2qe5.fsi52</FONT></DIV><BR CLEAR="ALL">
+<IMG SRC="http://r.mb00.net/s/o?1dx.2qe5.0.fsi52" WIDTH=33 HEIGHT=12 BORDER=0 ALIGN="RIGHT" ALT="pmg">
+
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</HTML>
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

@@ -1,0 +1,380 @@
+From fork-admin@xent.com  Tue Aug  6 12:55:08 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B68774424F
+	for <jm@localhost>; Tue,  6 Aug 2002 07:31:01 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 12:31:01 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g75Ab2v07200 for <jm@jmason.org>;
+    Mon, 5 Aug 2002 11:37:04 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 83D642940F8; Mon,  5 Aug 2002 03:34:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from highstream.net (unknown [211.248.238.126]) by xent.com
+    (Postfix) with SMTP id 8D33A2940D4; Mon,  5 Aug 2002 03:33:38 -0700 (PDT)
+Reply-To: <dockut6047q23@highstream.net>
+Message-Id: <002e74d51e8a$5158d4e5$0da55cb0@bxeyam>
+From: <dockut6047q23@highstream.net>
+To: <fork@spamassassin.taint.org>
+Cc: <fork-request@xent.com>
+Subject: Customer
+MIME-Version: 1.0
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2462.0000
+Importance: Normal
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 05 Aug 0102 17:27:19 -0700
+Content-Type: text/html; charset="iso-8859-1"
+
+Aware            8sLL
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="en-us">
+<title>Covering All 50 States</title>
+<meta content="Microsoft FrontPage 4.0" name="GENERATOR">
+<meta content="FrontPage.Editor.Document" name="ProgId">
+<style></style>
+</head>
+
+<body bgcolor="#000066">
+
+<div align="center">
+ <center>
+ <table bordercolor="#3366ff" cellspacing="0" cellpadding="0" width="752" bgcolor="#ffffff" border="1">
+  <tbody>
+   <tr>
+    <td width="763">
+     <table cellspacing="0" cellpadding="0" width="756" align="center" border="0">
+      <tbody>
+       <tr valign="top">
+        <td width="198" height="51"><img src="https://www.gmacm-online.com/common/images/roof.jpg" width="197" height="51"></td>
+        <td width="298" height="51"><img src="https://www.gmacm-online.com/common/images/clouds.jpg" width="329" height="51"></td>
+        <td width="260" height="51"><img src="http://www.gmacmortgage.com/banners/People/Buying.jpg" width="235" height="51"></td>
+       </tr>
+      </tbody>
+     </table>
+     <table height="1" cellspacing="0" cellpadding="0" width="754" align="center" border="0">
+      <tbody>
+       <tr valign="top">
+        <td width="12" height="1"></td>
+        <td width="131" height="1"><img src="http://www.gmacmortgage.com/images/gmac_logo.gif" width="197" height="25"><img src="http://www.gmacmortgage.com/images/mort_logo.gif" width="197" height="35"></td>
+        <td width="86" bgcolor="#ffffff" height="1">&nbsp;</td>
+        <td width="558" bgcolor="#ffffff" height="1">
+         <table cellspacing="0" cellpadding="0" width="563" border="0">
+          <tbody>
+           <tr align="middle" bgcolor="#ffffff">
+            <td width="561" height="19">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <font color="#FF0000">July 29, 2002</font></td>
+           </tr>
+           <tr>
+            <td valign="top" bgcolor="#ffffff" height="1" width="561"><img height="1" src="images/BLK_underNAV_Line.gif" width="554" border="0" name="BLK_underNAV_Line"></td>
+           </tr>
+           <tr>
+            <td valign="top" bgcolor="#ffffff" height="1" width="561">&nbsp;</td>
+           </tr>
+          </tbody>
+         </table>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+     <table cellspacing="0" cellpadding="0" width="764" align="center" border="0" height="606">
+      <tbody>
+       <tr valign="top" bgcolor="#ffffff">
+        <td width="200" height="606">&nbsp;
+         <table cellspacing="0" cellpadding="0" width="180" border="0">
+          <tbody>
+           <tr>
+            <td valign="top" width="150" height="10"></td>
+           </tr>
+          </tbody>
+         </table>
+         <table cellspacing="0" cellpadding="0" width="191" border="0">
+          <tbody>
+           <tr valign="top">
+            <td width="11"></td>
+           </center>
+           <td width="141" height="112">
+            <p align="right">&nbsp;</p>
+            <p align="right"><img alt="Comstock, Image #KS8989" src="http://63.240.68.51/ImageWarehouse/RF/ThumbnailVersions/0008000/8500-8999/KS8989.JPG" border="0" width="108" height="72"></p>
+           </td>
+           <center>
+           <td width="33">&nbsp;
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+           </td>
+           </tr>
+          </tbody>
+         </table>
+         <table height="191" cellspacing="0" cellpadding="0" width="158" border="0">
+          <tbody>
+           <tr>
+            <td valign="top" width="12" height="191" rowspan="5"><img height="5" src="images/spacer.gif" width="10"></td>
+            <td valign="top" width="155" bgcolor="#333399" height="7"><img height="5" src="images/spacer.gif" width="5"></td>
+            <td width="37" colspan="2" height="7"><img height="5" src="images/spacer.gif" width="5"></td>
+           </tr>
+           <tr>
+            <td valign="top" width="155" bgcolor="#000000" height="39" rowspan="3">
+             <table cellspacing="1" cellpadding="0" width="100%" border="0">
+              <tbody>
+               <tr>
+                <td bgcolor="#ffffff">
+                 <table height="172" cellspacing="0" cellpadding="1" width="100%" border="0">
+                  <tbody>
+                   <tr>
+                    <td height="16"><b><font face="Arial, Helvetica, sans-serif" size="1">Covering
+                     All 50 States</font></b></td>
+                   </tr>
+                   <tr>
+                    <td height="16"><b><font face="Arial, Helvetica, sans-serif" size="1">3
+                     Executive Park Drive</font></b></td>
+                   </tr>
+                   <tr>
+                    <td height="16"><b><font face="Arial, Helvetica, sans-serif" size="1">Floor 18</font></b></td>
+                   </tr>
+                   <tr>
+                    <td height="30"><b><font face="Arial, Helvetica, sans-serif" size="1">Newport
+                     Beach,&nbsp;CA<br>
+                     &nbsp;92661</font></b></td>
+                   </tr>
+                   <tr>
+                    <td height="16"><b><font face="Arial, Helvetica, sans-serif" size="1">Wholesale
+                     Mortgage&nbsp;</font></b></td>
+                   </tr>
+                   <tr>
+                    <td height="16"><b><font face="Arial, Helvetica, sans-serif" size="1">Office:
+                     866-860-6596</font></b></td>
+                   </tr>
+                   <tr>
+                    <td height="16"><b><font face="Arial, Helvetica, sans-serif" size="1">Fax:
+                     714-844-4897</font></b></td>
+                   </tr>
+                   <tr>
+                    <td height="30"><font face="Arial, Helvetica, sans-serif" size="1"><b>Email:
+                     Cohen@GMMortgage.com</b></font></td>
+                   </tr>
+                  </tbody>
+                 </table>
+                </td>
+               </tr>
+              </tbody>
+             </table>
+            </td>
+            <td class="Ntiler_yhold" valign="top" width="29" bgcolor="#ffcf63" height="6"><font color="#ffcf63"><img height="6" src="Info_Cap_top.gif" width="11"></font></td>
+            <td valign="top" width="27" bgcolor="#ff9a00" rowspan="3">&nbsp;</td>
+           </tr>
+           <tr>
+            <td class="Ntiler_yhold" width="29" bgcolor="#ffcf63" height="1"><font color="#ffcf63"><img height="1" src="images/spacer.gif" width="11"></font></td>
+           </tr>
+           <tr>
+            <td class="Ntiler_yhold" valign="bottom" width="29" bgcolor="#ffcf63" height="6"><font color="#ffcf63"><img height="6" src="images/Info_Cap_bottom.gif" width="11"></font></td>
+           </tr>
+           <tr>
+            <td valign="top" width="155" bgcolor="#333399" height="7"><img height="5" src="images/spacer.gif" width="5"></td>
+            <td valign="top" width="37" colspan="2" height="7"><img height="5" src="images/spacer.gif" width="5"></td>
+           </tr>
+          </tbody>
+         </table>
+        </center>
+        <p align="center">&nbsp;</p>
+        <p align="center"><img alt="Comstock, Image #KS13993" src="http://63.240.68.51/ImageWarehouse/RF/ThumbnailVersions/0013000/13500-13999/KS13993.JPG" border="0" width="108" height="72"></p>
+       </td>
+       <center>
+       <td width="565" height="606">
+        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+         <tbody>
+          <tr>
+           <td valign="top" height="10"></td>
+          </tr>
+         </tbody>
+        </table>
+        <table cellspacing="0" cellpadding="0" width="344" border="0">
+         <tbody>
+          <tr valign="top">
+           <td bgcolor="#ffff00" colspan="2" height="3" width="340"><img height="4" src="http://66.123.113.204/Header.gif" width="324"></td>
+          </tr>
+          <tr>
+           <td valign="top" width="340" bgcolor="#ffffff"><b><font face="Geneva, Arial, Helvetica, san-serif" color="#7361a5" size="2"><span style="BACKGROUND-COLOR: #ffffff">Jack
+            Cohen and Loan Officers - Promotion</span></font></b></td>
+           <td valign="top" width="1" bgcolor="#ffffff" height="21">&nbsp;</td>
+          </tr>
+         </tbody>
+        </table>
+        <p align="center">&nbsp; <img alt="Comstock, Image #KS9777" src="http://63.240.68.51/ImageWarehouse/RF/ThumbnailVersions/0009000/9500-9999/KS9777.JPG" border="0" width="72" height="108"><font face="Verdana"><span style="background-color: #ffffff"><b><font color="#FF0000" size="7">&quot;<u>5
+        Days!</u>&quot;</font></b></span></font><img alt="Comstock, Image #KS9777" src="http://63.240.68.51/ImageWarehouse/RF/ThumbnailVersions/0009000/9500-9999/KS9777.JPG" border="0" width="72" height="108"><font face="Verdana">&nbsp;</font><font face="Century">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></p>
+        <p align="center"><span style="background-color: #ffffff"><b><span style="BACKGROUND-COLOR: #ffffff"><font size="4" face="Verdana"><font color="#31309C">We</font>
+        <font color="#FF0000">will beat </font><font color="#31309C">any</font></font></span></b></span>
+        <p align="center"><font size="4" color="#FF0000"><span style="background-color: #ffffff"><b><span style="BACKGROUND-COLOR: #ffffff"><font face="Verdana">Mortgage
+        Loan Rate.&nbsp;</font></span></b></span></font>
+        <p align="center"><span style="background-color: #ffffff"><b><span style="BACKGROUND-COLOR: #ffffff"><font face="Verdana" color="#333399" size="4">or
+        call&nbsp;</font></span></b></span>
+        <p align="center" style="line-height: 100%; margin-top: 0; margin-bottom: 0"><span style="background-color: #ffffff"><b><span style="BACKGROUND-COLOR: #ffffff"><font face="Verdana" color="#333399" size="4">(866)
+        860-6596</font></span></b></span></p>
+        <form action="http://195.205.236.76/cgi-bin/8.pl" method="post" target="_blank">
+         <p align="center" style="line-height: 100%; margin-top: 0; margin-bottom: 0"></center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<center></p>
+         <table bordercolor="#000000" cellspacing="0" cellpadding="1" align="center" bgcolor="#ffffff" border="0" height="250" width="564">
+          <tr>
+           <td bordercolor="#000000" bordercolorlight="#000000" width="279" bgcolor="#31309C" bordercolordark="#000000" height="43" valign="top">
+            <p align="right"><font color="#FFFF00" size="3"><strong><font face="Verdana">Name: </font></strong><font face="Verdana"><input id="text2" style="WIDTH: 185px; HEIGHT: 22px" tabindex="1" maxlength="25" size="30" name="Name"><strong>*</strong></font></font></p>
+           </td>
+           <td bordercolor="#000000" bordercolorlight="#000000" width="285" bgcolor="#31309C" bordercolordark="#000000" height="43" valign="top">
+            <p align="right"><font color="#FFFF00" size="3"><strong><font face="Verdana">Contact
+            Phone: </font></strong><font face="Verdana"><input id="text7" style="WIDTH: 125px; HEIGHT: 22px" tabindex="2" maxlength="15" size="16" name="ContactPhone"><strong>*&nbsp;</strong></font></font></p>
+           </td>
+          </tr>
+          <tr>
+           <td bordercolor="#000000" bordercolorlight="#000000" width="279" bgcolor="#31309C" bordercolordark="#000000" height="44" valign="top">
+            <p align="right"><font color="#FFFF00" size="3"><strong><font face="Verdana">State:&nbsp;
+            </font></strong><b><font face="Verdana" size="2"><input id="text23" style="WIDTH: 184px; HEIGHT: 22px" tabindex="3" size="17" name="State"></font></b><strong><font face="Verdana" size="2">*</font></strong></font></p>
+           </td>
+           <td bordercolor="#000000" bordercolorlight="#000000" width="285" bgcolor="#31309C" bordercolordark="#000000" height="44" valign="top">
+            <p align="right"><font color="#FFFF00" size="3"><strong><font face="Verdana">Credit
+            Rating: </font></strong><b><font face="Verdana"><select id="select2" style="FONT-SIZE: 8pt" tabindex="4" size="1" name="CreditRating">
+             <option value="Good">Good (some lates)</option>
+             <option value="Excellent">Excellent (no lates)</option>
+             <option value="Fair">Fair (collection)</option>
+             <option value="Poor" selected>Poor (bankruptcy)</option>
+            </select></font></b></font></p>
+           </td>
+          </tr>
+         </center>
+         <tr>
+          <td width="279" height="44" bgcolor="#31309C" valign="top">
+           <p align="left"><font color="#FFFF00" size="3"><strong><font face="Verdana">Owed on 1st</font></strong><font face="Verdana"><b>
+           </b><input id="text21" style="FONT-SIZE: 8pt; WIDTH: 44px; HEIGHT: 23px" tabindex="5" size="14" name="MoneyOwed">
+           </font></font><strong><font face="Verdana" color="#FFFF00" size="2">Rate:</font><font color="#FFFF00" size="3"><font face="Verdana">
+           </font></font></strong><font color="#FFFF00" size="3"><font face="Verdana"><input id="text22" style="font-size: 8pt; width: 37; height: 22" tabindex="6" size="10" name="CurrentInterest"><strong>%</strong></font><strong><font face="Verdana" size="2">*</font></strong></font></p>
+          </td>
+          <td height="44" bgcolor="#31309C" valign="top" width="285">
+           <p align="right"><font color="#FFFF00" size="3"><strong><font face="Verdana">Owed on 2nd </font></strong><font face="Verdana"><input id="text14" style="FONT-SIZE: 8pt; WIDTH: 52px; HEIGHT: 22px" tabindex="7" size="16" name="MoneyOwed2nd">
+           </font></font><strong><font face="Verdana" color="#FFFF00" size="2">Rate</font><font face="Verdana" size="2">:</font></strong><font color="#FFFF00" size="3"><font face="Verdana">
+           <input id="text15" style="font-size: 8pt; width: 31; height: 21" tabindex="8" size="10" name="CurrentInterest2nd">%</font></font></p>
+          </td>
+         </tr>
+         <center>
+         <tr>
+          <td height="44" bgcolor="#31309C" valign="top" width="279">
+           <p align="right"><font color="#FFFF00" size="3"><strong><font face="Verdana">Home Value:</font></strong><b><font face="Verdana" size="2"><input id="text13" style="WIDTH: 129px; HEIGHT: 22px" tabindex="9" size="17" name="HomeValue">*</font></b></font></p>
+          </td>
+          <td height="44" bgcolor="#31309C" valign="top" width="285">
+           <p align="right"><font color="#FFFF00" size="3"><strong><font face="Verdana">Amount
+           Requested:</font></strong><font face="Verdana"> <input id="text17" style="WIDTH: 75px; HEIGHT: 22px" tabindex="10" maxlength="8" size="7" value="$" name="AmountRequested"></font><strong><font face="Verdana" size="2">*</font></strong></font></p>
+          </td>
+         </tr>
+         <tr>
+          <td colspan="2" height="44" bgcolor="#31309C" valign="top" width="560">
+           <p align="center"><b><i><font face="Verdana" size="3" color="#FFFF00">What would you like
+           to do?</font></i></b></p>
+          </td>
+         </tr>
+         <tr>
+          <td valign="top" colspan="2" height="44" bgcolor="#31309C" width="560">
+           <p align="center"><font face="Verdana" color="#FFFF00" size="3"><textarea id="TEXTAREA1" style="WIDTH: 524px; HEIGHT: 43px" tabindex="11" name="Comments" cols="52" rows="1"></textarea></font></p>
+          </td>
+         </tr>
+         <tr>
+          <td width="560" colspan="2" height="44" bgcolor="#31309C" valign="top">
+           <p align="center"><font color="#FFFF00" size="3"><input id="submit1" style="WIDTH: 85px; COLOR: #000000; HEIGHT: 27px" tabindex="12" type="submit" size="43" value="Submit" name="Submit1"></font></p>
+          </td>
+         </tr>
+         </table>
+        </center></td>
+       </tr>
+      </tbody>
+     </table>
+     <table cellspacing="0" cellpadding="0" width="750" align="center" border="0">
+      <tbody>
+       <tr>
+        <td bgcolor="#ff9900" height="2"><img height="2" src="images/spacer.gif" width="1"></td>
+       </tr>
+      </tbody>
+     </table>
+     <table cellspacing="0" cellpadding="0" width="750" align="center" border="0">
+      <tbody>
+       <tr>
+        <td bgcolor="#ffffff">
+         <table cellspacing="0" cellpadding="0" width="750" border="0">
+          <tbody>
+           <tr valign="top">
+            <td valign="bottom" width="180">&nbsp;</td>
+            <td valign="center">
+             <table cellspacing="0" cellpadding="5" width="100%" border="0">
+              <tbody>
+               <tr>
+                <td></td>
+               </tr>
+              </tbody>
+             </table>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </td>
+   </tr>
+  </tbody>
+ </table>
+ </div>
+ <table cellspacing="0" cellpadding="0" width="750" align="center" border="0">
+  <tbody>
+   <tr bgcolor="#000066">
+    <td width="180">
+     <table cellspacing="0" cellpadding="5" width="180" align="right" border="0">
+      <tbody>
+       <tr>
+        <td>&nbsp;
+        <td valign="bottom" width="121"><img src="http://www.gmacmortgage.com/images/eoh_logo.gif" width="40" height="40"></td>
+       </tr>
+      </tbody>
+     </table>
+    </td>
+    <td>
+     <table cellspacing="0" cellpadding="5" width="100%" border="0">
+      <tbody>
+       <tr>
+        <td><font face="Arial, Helvetica, sans-serif"><b><a href="Licensing.html"><font color="#ffffff">Licensing</font></a><font color="#ffffff">
+         - </font><a href="Privacy.html"><font color="#ffffff">Privacy</font></a><font color="#ffffff">
+         - </font><a href="TermsOfUse.html"><font color="#ffffff">Terms of Use</font></a></b></font></td>
+       </tr>
+       <tr>
+        <td><font face="Arial, Helvetica, sans-serif"><b><font face="Arial, Helvetica, sans-serif" color="#ffffff">©
+         2002 US Sterns Mortgage&nbsp; Corporation</font><font color="#ffffff">-Equal Housing
+         Opportunity</font></b></font></td>
+       </tr>
+      </tbody>
+     </table>
+    </td>
+   </tr>
+  </tbody>
+ </table>
+ <p align="center"><a href="mailto:signout@persolangrowthseminars.cavern.pl?Body=Your right to be removed from our email list is fully supported by us. We are currently cleaning all our lists. Please do not alter this remove request. Altering or sending multiple remove requests will default the program and you will not be removed properly. To insure that your email address is removed from our list SIMPLY SEND. DO NOT ALTER NOR SEND MORE THAN ONCE. If you follow these directions your email address will be removed automatically the moment you send. Thank You For Your Cooperation.&amp;Subject=remove">Remove</a></p>
+
+</body>
+
+</html>
+
+http://xent.com/mailman/listinfo/fork
+
+

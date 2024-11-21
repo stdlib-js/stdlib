@@ -1,0 +1,106 @@
+
+{{alias}}( [μ, s] )
+    Returns a logistic distribution object.
+
+    Parameters
+    ----------
+    μ: number (optional)
+        Location parameter. Default: `0.0`.
+
+    s: number (optional)
+        Scale parameter. Must be greater than `0`. Default: `1.0`.
+
+    Returns
+    -------
+    logistic: Object
+        Distribution instance.
+
+    logistic.mu: number
+        Location parameter.
+
+    logistic.s: number
+        Scale parameter. If set, the value must be greater than `0`.
+
+    logistic.entropy: number
+        Read-only property which returns the differential entropy.
+
+    logistic.kurtosis: number
+        Read-only property which returns the excess kurtosis.
+
+    logistic.mean: number
+        Read-only property which returns the expected value.
+
+    logistic.median: number
+        Read-only property which returns the median.
+
+    logistic.mode: number
+        Read-only property which returns the mode.
+
+    logistic.skewness: number
+        Read-only property which returns the skewness.
+
+    logistic.stdev: number
+        Read-only property which returns the standard deviation.
+
+    logistic.variance: number
+        Read-only property which returns the variance.
+
+    logistic.cdf: Function
+        Evaluates the cumulative distribution function (CDF).
+
+    logistic.logcdf: Function
+        Evaluates the natural logarithm of the cumulative distribution function
+        (CDF).
+
+    logistic.logpdf: Function
+        Evaluates the natural logarithm of the probability density function
+        (PDF).
+
+    logistic.mgf: Function
+        Evaluates the moment-generating function (MGF).
+
+    logistic.pdf: Function
+        Evaluates the probability density function (PDF).
+
+    logistic.quantile: Function
+        Evaluates the quantile function at probability `p`.
+
+    Examples
+    --------
+    > var logistic = {{alias}}( -2.0, 3.0 );
+    > logistic.mu
+    -2.0
+    > logistic.s
+    3.0
+    > logistic.entropy
+    ~3.1
+    > logistic.kurtosis
+    1.2
+    > logistic.mean
+    -2.0
+    > logistic.median
+    -2.0
+    > logistic.mode
+    -2.0
+    > logistic.skewness
+    0.0
+    > logistic.stdev
+    ~5.441
+    > logistic.variance
+    ~29.609
+    > logistic.cdf( 0.8 )
+    ~0.718
+    > logistic.logcdf( 0.8 )
+    ~-0.332
+    > logistic.logpdf( 2.0 )
+    ~-2.9
+    > logistic.mgf( 0.2 )
+    ~1.329
+    > logistic.pdf( 2.0 )
+    ~0.055
+    > logistic.quantile( 0.9 )
+    ~4.592
+
+    See Also
+    --------
+

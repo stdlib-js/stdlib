@@ -1,0 +1,31 @@
+
+{{alias}}( x )
+    Reverses an array in-place.
+
+    If provided an array-like object having a `reverse` method, the function
+    defers execution to that method and assumes that the method has the
+    following signature:
+
+      x.reverse()
+
+    If provided an array-like object without a `reverse` method, the function
+    manually reverses elements and mutates the input array in-place.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Input array.
+
+    Examples
+    --------
+    > var out = {{alias}}( [ 1, 2, 3, 4 ] )
+    [ 4, 3, 2, 1 ]
+
+    See Also
+    --------
+

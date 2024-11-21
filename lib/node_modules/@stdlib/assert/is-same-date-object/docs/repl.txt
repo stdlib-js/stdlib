@@ -1,0 +1,32 @@
+
+{{alias}}( d1, d2 )
+    Tests if two values are both Date objects corresponding 
+    to the same date and time.
+
+    Parameters
+    ----------
+    d1: any
+        First input value.
+    d2: any
+        Second input value.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether both values are Date objects 
+        corresponding to the same date and time.
+
+    Examples
+    --------
+    > var d1 = new Date( 2024, 11, 31, 23, 59, 59, 999 );
+    > var d2 = new Date( 2024, 11, 31, 23, 59, 59, 999 );
+    > var bool = {{alias}}( d1, d2 )
+    true
+    > var d1 = new Date( 2024, 11, 31, 23, 59, 59, 999 );
+    > var d2 = new Date( 2024, 11, 31, 23, 59, 59, 78 );
+    > var bool = {{alias}}( d1, d2 )
+    false
+ 
+    See Also
+    --------
+

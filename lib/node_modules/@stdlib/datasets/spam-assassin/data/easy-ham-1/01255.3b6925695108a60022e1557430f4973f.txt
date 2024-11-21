@@ -1,0 +1,74 @@
+From rpm-list-admin@freshrpms.net  Sat Oct  5 12:38:06 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 5251116F17
+	for <jm@localhost>; Sat,  5 Oct 2002 12:38:06 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 05 Oct 2002 12:38:06 +0100 (IST)
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g958u0K04063 for
+    <jm-rpm@jmason.org>; Sat, 5 Oct 2002 09:56:00 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g958m3f05677; Sat, 5 Oct 2002 10:48:03
+    +0200
+Received: from python (80-24-132-206.uc.nombres.ttd.es [80.24.132.206])
+    (authenticated) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g958lcf01474 for <rpm-list@freshrpms.net>; Sat, 5 Oct 2002 10:47:38 +0200
+From: Matthias Saou <matthias@rpmforge.net>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: Problem building lame-3.92-fr5.src.rpm on RH8
+Message-Id: <20021005103825.33a637b3.matthias@rpmforge.net>
+In-Reply-To: <200210041809.23811.coy.krill@verizon.net>
+References: <200210041809.23811.coy.krill@verizon.net>
+Organization: freshrpms.net / rpmforge.net
+X-Mailer: Sylpheed version 0.8.3claws (GTK+ 1.2.10; i386-redhat-linux)
+X-Operating-System: Red Hat GNU/Linux forever!
+X-Subliminal-Message: Use Linux... use Linux... use Linux...
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Sat, 5 Oct 2002 10:38:25 +0200
+Date: Sat, 5 Oct 2002 10:38:25 +0200
+
+Once upon a time, Coy wrote :
+
+> I can't seem to build this package. It errors out because rpm found 
+> files not included in any of the packages. I tried getting them addes 
+> (it's the documentation that is being loaded) and was unsuccessful. 
+> Anyone get this to work?
+
+Hi,
+
+Could you post the list of files in question? Maybe more docs get generated
+when a certain doc tool is installed and that I didn't have it installed
+when I rebuilt the package :-/
+
+Matthias
+
+-- 
+Clean custom Red Hat Linux rpm packages : http://freshrpms.net/
+Red Hat Linux release 7.3 (Valhalla) running Linux kernel 2.4.18-10
+Load : 0.06 0.12 0.09, AC on-line, battery charging: 100% (1:47)
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

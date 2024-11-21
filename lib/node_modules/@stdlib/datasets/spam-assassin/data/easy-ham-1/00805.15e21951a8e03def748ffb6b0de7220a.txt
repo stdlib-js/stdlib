@@ -1,0 +1,99 @@
+From fork-admin@xent.com  Mon Sep 30 13:53:27 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id A4CBF16F19
+	for <jm@localhost>; Mon, 30 Sep 2002 13:49:15 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 30 Sep 2002 13:49:15 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8TErFg15436 for <jm@jmason.org>;
+    Sun, 29 Sep 2002 15:53:16 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 4C3772940A9; Sun, 29 Sep 2002 07:53:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mta5.snfc21.pbi.net (mta5.snfc21.pbi.net [206.13.28.241])
+    by xent.com (Postfix) with ESMTP id B97682940A0 for <fork@xent.com>;
+    Sun, 29 Sep 2002 07:52:35 -0700 (PDT)
+Received: from endeavors.com ([66.126.120.174]) by mta5.snfc21.pbi.net
+    (iPlanet Messaging Server 5.1 (built May  7 2001)) with ESMTP id
+    <0H3700J8CFZOE4@mta5.snfc21.pbi.net> for fork@xent.com; Sun,
+    29 Sep 2002 07:52:36 -0700 (PDT)
+From: Gregory Alan Bolcer <gbolcer@endeavors.com>
+Subject: Re: EBusiness Webforms: cluetrain has left the station
+To: FoRK <fork@spamassassin.taint.org>
+Reply-To: gbolcer@endeavors.com
+Message-Id: <3D971165.1CA9D617@endeavors.com>
+Organization: Endeavors Technology, Inc.
+MIME-Version: 1.0
+X-Mailer: Mozilla 4.79 [en] (X11; U; IRIX 6.5 IP32)
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-Accept-Language: en, pdf
+References: <3D95C839.8E8701FD@endeavors.com> <m2heg9anzx.fsf@maya.dyndns.org>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 29 Sep 2002 07:42:45 -0700
+
+Gary Lawrence Murphy wrote:
+> 
+> Although it's like a total shock to 99.999% (5nines) of all the
+> employed website designers out there, the truth is webforms /can/
+> accept "U.S. of A" as a country.  Incredible, but true.  Web forms can
+> also accept /multiple/ or even /free-form/ telephone numbers and can
+> even be partitioned into manageable steps. All this can also be done
+> without selling exclusive rights to your wallet to the World's
+> Second-Richest Corporation (assuming Cisco is still #1) and vendor
+> locking your business into their "small transaction fee" tithe.
+
+
+Ah, but you've just gotten to the crux of the
+situation.  There's good design and bad design. 
+There's good testing and bad testing.  The problem
+is, anyone can design a good Web form, but nobody
+does.  I think "best practices" hasn't caught up
+on main street Web enablement yet.  There's some
+really great packages on how to do this stuff and
+in fact the usability people knew that Web forms needed
+to be fixed 5 years ago, so that's why we got XForms
+and  XHTML.  You can shoot yourself in the foot and
+people usually do.  What the problem is, they don't
+even recognize that they're gimpy--ever.  They just
+keeping trundling along making a mess of everything
+assured in their job security that they can build
+Web forms without even caring if they can be
+used or not beyond their test machine.
+
+If you had a piece of software and a security warning
+came out 5 years ago on it, would you run that software?
+Wouldn't you have patched or upgraded something so fundamentally
+broken 4 years and 11 months ago?  What I want to know
+is why would someone use Web forms best practices from
+5 years ago?  I mean you can get a college degree in that
+time.  Imagine if the next version of Microsoft Windows
+or Red Hat Linux forced you to use a tiled window
+manager?  Sure, tiled windows were the best we had for
+a brief period of time, but they are completely useless
+except for some terminal based replacement applications. 
+
+The bottom line is, if you can't get across the
+bridge, then it's broken regardless of whose fault
+it really is, and it's the business that 
+needs to take responsibility as they are the ones that
+wanted to put the bridge there in the first place. 
+
+
+Greg
+
+

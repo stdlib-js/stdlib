@@ -1,0 +1,39 @@
+{
+  "name": "stdlib-datasets-primes-100k",
+  "version": "",
+  "title": "Prime Numbers",
+  "description": "The first 100,000 prime numbers.",
+  "resources": [
+    {
+      "name": "primes-100k-json",
+      "title": "Prime Numbers",
+      "description": "The first 100,000 prime numbers.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.json"
+    },
+    {
+      "name": "primes-100k-txt",
+      "title": "Prime Numbers",
+      "description": "The first 100,000 prime numbers.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.txt"
+    }
+  ],
+  "sources": [],
+  "keywords": [
+    "list",
+    "prime",
+    "primes",
+    "numbers",
+    "integers",
+    "sequence",
+    "seq"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}

@@ -1,0 +1,24 @@
+
+{{alias}}( value )
+    Tests if a value is an ArrayBuffer.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is an ArrayBuffer.
+
+    Examples
+    --------
+    > var bool = {{alias}}( new {{alias:@stdlib/array/buffer}}( 10 ) )
+    true
+    > bool = {{alias}}( [] )
+    false
+
+    See Also
+    --------
+

@@ -1,0 +1,160 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2017 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# DEPENDENCIES #
+
+# Note: keep in alphabetical order...
+include $(TOOLS_MAKE_LIB_DIR)/lint/python/pycodestyle.mk
+include $(TOOLS_MAKE_LIB_DIR)/lint/python/pydocstyle.mk
+include $(TOOLS_MAKE_LIB_DIR)/lint/python/pylint.mk
+
+
+# RULES #
+
+#/
+# Checks whether Python linters are installed.
+#
+# @private
+#
+# @example
+# make check-python-linters
+#/
+check-python-linters: check-pylint check-pycodestyle check-pydocstyle
+
+.PHONY: check-python-linters
+
+#/
+# Lints Python files.
+#
+# ## Notes
+#
+# -   This rule supports the environment variables supported by each context-specific (`lint-python-<context>`) prerequisite.
+# -   This rule is useful when wanting to glob for files, irrespective of context, for a particular package in order to lint all contained Python files.
+#
+# @param {string} [SOURCES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
+# @param {string} [TESTS_FIXTURES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
+# @param {string} [EXAMPLES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
+# @param {string} [BENCHMARKS_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
+# @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
+#
+# @example
+# make lint-python
+#
+# @example
+# make lint-python SOURCES_FILTER=".*/blas/base/dasum/.*" TESTS_FIXTURES_FILTER=".*/blas/base/dasum/.*" EXAMPLES_FILTER=".*/blas/base/dasum/.*" BENCHMARKS_FILTER=".*/blas/base/dasum/.*"
+#/
+lint-python: lint-python-src lint-python-tests-fixtures lint-python-examples lint-python-benchmarks
+
+.PHONY: lint-python
+
+#/
+# Lints Python source files.
+#
+# ## Notes
+#
+# -   This rule is useful when wanting to glob for Python source files (e.g., lint all Python source files for a particular package).
+#
+# @param {string} [SOURCES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
+# @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
+#
+# @example
+# make lint-python-src
+#
+# @example
+# make lint-python-src SOURCES_FILTER=".*/math/base/special/abs/.*"
+#/
+lint-python-src: pylint-src pycodestyle-src pydocstyle-src
+
+.PHONY: lint-python-src
+
+#/
+# Lints Python test fixture files.
+#
+# ## Notes
+#
+# -   This rule is useful when wanting to glob for Python test fixture files (e.g., lint all Python test fixture files for a particular package).
+#
+# @param {string} [TESTS_FIXTURES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
+# @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
+#
+# @example
+# make lint-python-tests-fixtures
+#
+# @example
+# make lint-python-tests-fixtures TESTS_FIXTURES_FILTER=".*/math/base/special/abs/.*"
+#/
+lint-python-tests-fixtures: pylint-tests-fixtures pycodestyle-tests-fixtures pydocstyle-tests-fixtures
+
+.PHONY: lint-python-tests-fixtures
+
+#/
+# Lints Python examples files.
+#
+# ## Notes
+#
+# -   This rule is useful when wanting to glob for Python examples files (e.g., lint all Python examples files for a particular package).
+#
+# @param {string} [EXAMPLES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
+# @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
+#
+# @example
+# make lint-python-examples
+#
+# @example
+# make lint-python-examples EXAMPLES_FILTER=".*/math/base/special/abs/.*"
+#/
+lint-python-examples: pylint-examples pycodestyle-examples pydocstyle-examples
+
+.PHONY: lint-python-examples
+
+#/
+# Lints Python benchmark files.
+#
+# ## Notes
+#
+# -   This rule is useful when wanting to glob for Python benchmark files (e.g., lint all Python benchmark files for a particular package).
+#
+# @param {string} [BENCHMARKS_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
+# @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
+#
+# @example
+# make lint-python-benchmarks
+#
+# @example
+# make lint-python-benchmarks BENCHMARKS_FILTER=".*/math/base/special/abs/.*"
+#/
+lint-python-benchmarks: pylint-benchmarks pycodestyle-benchmarks pydocstyle-benchmarks
+
+.PHONY: lint-python-benchmarks
+
+#/
+# Lints a specified list of Python files.
+#
+# ## Notes
+#
+# -   This rule is useful when wanting to lint a list of Python files generated by some other command (e.g., a list of changed Python files obtained via `git diff`).
+#
+# @param {string} FILES - list of Python file paths
+# @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
+#
+# @example
+# make lint-python-files FILES='/foo/file.py /bar/file.py'
+#/
+lint-python-files: pylint-files pycodestyle-files pydocstyle-files
+
+.PHONY: lint-python-files

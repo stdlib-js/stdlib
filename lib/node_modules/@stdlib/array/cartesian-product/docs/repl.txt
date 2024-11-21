@@ -1,0 +1,29 @@
+
+{{alias}}( x1, x2 )
+    Returns the Cartesian product.
+
+    If provided one or more empty arrays, the function returns an empty array.
+
+    Parameters
+    ----------
+    x1: ArrayLikeObject
+        First input array.
+
+    x2: ArrayLikeObject
+        Second input array.
+
+    Returns
+    -------
+    out: Array<Array>
+        Cartesian product.
+
+    Examples
+    --------
+    > var x1 = [ 1, 2 ];
+    > var x2 = [ 3, 4 ];
+    > var out = {{alias}}( x1, x2 )
+    [ [ 1, 3 ], [ 1, 4 ], [ 2, 3 ], [ 2, 4 ] ]
+
+    See Also
+    --------
+

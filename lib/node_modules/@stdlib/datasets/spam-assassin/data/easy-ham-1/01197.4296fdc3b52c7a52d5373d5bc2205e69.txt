@@ -1,0 +1,76 @@
+From rpm-list-admin@freshrpms.net  Mon Sep 30 13:44:33 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 89F7516F16
+	for <jm@localhost>; Mon, 30 Sep 2002 13:44:33 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 30 Sep 2002 13:44:33 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8U9nOg25251 for
+    <jm-rpm@jmason.org>; Mon, 30 Sep 2002 10:49:24 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g8U9l1f25850; Mon, 30 Sep 2002 11:47:01
+    +0200
+Received: from drone5.qsi.net.nz (drone5-svc-skyt.qsi.net.nz
+    [202.89.128.5]) by egwn.net (8.11.6/8.11.6/EGWN) with SMTP id g8U9kSf25471
+    for <rpm-list@freshrpms.net>; Mon, 30 Sep 2002 11:46:29 +0200
+Received: (qmail 31568 invoked by uid 0); 30 Sep 2002 09:46:20 -0000
+Received: from unknown (HELO se7en.org) ([202.89.145.8]) (envelope-sender
+    <mark@talios.com>) by 0 (qmail-ldap-1.03) with SMTP for
+    <rpm-list@freshrpms.net>; 30 Sep 2002 09:46:20 -0000
+Received: from spawn.se7en.org ([10.0.0.3]) by se7en.org with esmtp (Exim
+    3.35 #1 (Debian)) id 17wBPi-00089D-00 for <rpm-list@freshrpms.net>;
+    Tue, 01 Oct 2002 13:01:26 +1200
+From: Mark Derricutt <mark@talios.com>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: New testing packages
+Message-Id: <2740000.1033379168@spawn.se7en.org>
+In-Reply-To: <20020930.bp5.07787800@www.dudex.net>
+References: <20020930.bp5.07787800@www.dudex.net>
+X-Mailer: Mulberry/2.2.1 (Linux/x86)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Mon, 30 Sep 2002 21:46:08 +1200
+Date: Mon, 30 Sep 2002 21:46:08 +1200
+
+Indeed - I was thinking of getting back into doing mods - nice to see an 
+apt-get'able soundtracker there :-)
+
+Anyone know where to get a good selection of samples/loops?
+
+--On Monday, September 30, 2002 07:14:31 +0000 Angles Puglisi 
+<angles@aminvestments.com> wrote:
+
+> _Very_ comprehensive audio app collection, Thanks.
+
+
+
+                                    -- \m/ --
+  "...if I seem super human I have been misunderstood." (c) Dream Theater
+         mark@talios.com - ICQ: 1934853 JID: talios@myjabber.net
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

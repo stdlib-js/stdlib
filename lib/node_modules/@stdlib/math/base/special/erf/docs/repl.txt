@@ -1,0 +1,33 @@
+
+{{alias}}( x )
+    Evaluates the error function.
+
+    If provided `NaN`, the function returns `NaN`.
+
+    As the error function is an odd function (i.e., `erf(-x) == -erf(x)`), if
+    provided `-0`, the function returns `-0`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    y: number
+        Function value.
+
+    Examples
+    --------
+    > var y = {{alias}}( 2.0 )
+    ~0.9953
+    > y = {{alias}}( -1.0 )
+    ~-0.8427
+    > y = {{alias}}( -0.0 )
+    -0.0
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+

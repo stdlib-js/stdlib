@@ -1,0 +1,99 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Sep  5 12:51:27 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 5C4B616F1F
+	for <jm@localhost>; Thu,  5 Sep 2002 12:51:22 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 05 Sep 2002 12:51:22 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g85BdXZ17230 for <jm-sa@jmason.org>; Thu, 5 Sep 2002 12:39:33 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17muyU-0002qr-00; Thu,
+    05 Sep 2002 04:39:02 -0700
+Received: from relay07.indigo.ie ([194.125.133.231]) by
+    usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17muxW-0001OX-00 for <SpamAssassin-talk@lists.sourceforge.net>;
+    Thu, 05 Sep 2002 04:38:02 -0700
+Received: (qmail 17070 messnum 1023657 invoked from
+    network[194.125.172.167/ts12-167.dublin.indigo.ie]); 5 Sep 2002 11:37:57
+    -0000
+Received: from ts12-167.dublin.indigo.ie (HELO spamassassin.taint.org)
+    (194.125.172.167) by relay07.indigo.ie (qp 17070) with SMTP;
+    5 Sep 2002 11:37:57 -0000
+Received: by spamassassin.taint.org (Postfix, from userid 500) id 76D1C16F20;
+    Thu,  5 Sep 2002 12:15:40 +0100 (IST)
+Received: from spamassassin.taint.org (localhost [127.0.0.1]) by spamassassin.taint.org (Postfix)
+    with ESMTP id 73FAAF7B1 for <SpamAssassin-talk@lists.sf.net>;
+    Thu,  5 Sep 2002 12:15:40 +0100 (IST)
+To: SpamAssassin-talk@example.sourceforge.net
+From: yyyy@spamassassin.taint.org (Justin Mason)
+X-GPG-Key-Fingerprint: 0A48 2D8B 0B52 A87D 0E8A  6ADD 4137 1B50 6E58 EF0A
+X-Image-Url: http://spamassassin.taint.org/me.jpg
+X-Habeas-Swe-1: winter into spring
+X-Habeas-Swe-2: brightly anticipated
+X-Habeas-Swe-3: like Habeas SWE (tm)
+X-Habeas-Swe-4: Copyright 2002 Habeas (tm)
+X-Habeas-Swe-5: Sender Warranted Email (SWE) (tm). The sender of this
+X-Habeas-Swe-6: email in exchange for a license for this Habeas
+X-Habeas-Swe-7: warrant mark warrants that this is a Habeas Compliant
+X-Habeas-Swe-8: Message (HCM) and not spam.  Please report use of this
+X-Habeas-Swe-9: mark in spam to <http://www.habeas.com/report/>.
+Message-Id: <20020905111540.76D1C16F20@spamassassin.taint.org>
+Subject: [SAtalk] Thought for RPM/deb/etc packagers
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Thu, 05 Sep 2002 12:15:35 +0100
+Date: Thu, 05 Sep 2002 12:15:35 +0100
+
+BTW, I've been thinking a little about the RPMs and other packages.
+Already the PLD guys are distributing 3 rpms:
+
+  - perl-Mail-SpamAssassin
+
+          the perl modules.
+
+  - spamassassin
+
+          the "spamassassin" and "spamd" scripts,
+          spamd rc-file etc.
+
+  - spamassassin-tools
+
+          mass-check, masses directory stuff, etc.
+          for generating rescore data from corpora.
+
+This seems like a good way to do it; this way, stuff which just needs
+the perl modules doesn't need to require the full RPM be installed,
+with RC files in init.d etc.
+
+It's been adopted in the distributed .spec file, anyway.
+
+Theo, BTW, what's the eval test you add in the tvd version of the RPM?
+
+--j.
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

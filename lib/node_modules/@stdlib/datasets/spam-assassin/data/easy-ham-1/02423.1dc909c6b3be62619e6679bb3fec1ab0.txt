@@ -1,0 +1,25 @@
+From rssfeeds@jmason.org  Thu Oct 10 12:32:25 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 1127B16F17
+	for <jm@localhost>; Thu, 10 Oct 2002 12:32:23 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 10 Oct 2002 12:32:23 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9A849K14143 for
+    <jm@jmason.org>; Thu, 10 Oct 2002 09:04:09 +0100
+Message-Id: <200210100804.g9A849K14143@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: guardian <rssfeeds@spamassassin.taint.org>
+Subject: Brown accused of backtracking on regional museums
+Date: Thu, 10 Oct 2002 08:04:09 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.newsisfree.com/click/-4,8723997,215/
+Date: 2002-10-10T03:26:54+01:00
+
+*Arts:* Curators despair at 'shortfall' in chancellor's funding.
+
+

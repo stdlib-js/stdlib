@@ -1,0 +1,40 @@
+From donaldbae@purplehotel.com  Wed Aug 28 11:04:12 2002
+Return-Path: <donaldbae@purplehotel.com>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.spamassassin.taint.org (Postfix) with ESMTP id 2E49A44155
+	for <zzzz@localhost>; Wed, 28 Aug 2002 06:04:09 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 28 Aug 2002 11:04:09 +0100 (IST)
+Received: from mgci.com (box1.mpowercom.net [208.57.0.10]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with SMTP id g7RL6YZ25820 for
+    <linuxapps@zzzzason.org>; Tue, 27 Aug 2002 22:06:34 +0100
+Date: Tue, 27 Aug 2002 22:06:34 +0100
+Message-Id: <200208272106.g7RL6YZ25820@dogma.slashnull.org>
+Received: (qmail 13575 invoked by uid 0); 27 Aug 2002 21:06:31 -0000
+Received: from unknown (HELO donaldbae) (208.57.45.218) by mgci.com with
+    SMTP; 27 Aug 2002 21:06:31 -0000
+From: Donald Bae <donaldbae@purplehotel.com>
+To: licensing@internet.com
+Reply-To: donaldbae@purplehotel.com
+MIME-Version: 1.0
+Subject: 
+Content-Type: text/html; charset=us-ascii
+
+
+ÐÏà¡±á Worldwide*
+Great Restaurants, Shopping & Activities
+FEMA #IL-0458 and ADA Compliant
+
+Contact Riz Bhatti @ 1847-677-1234 ext. 6884 or
+Donald Bae @ 1847-677-1234 ext. 6880
+Take a virtual tour of our hotel @  HYPERLINK "http://www.radisson-chicago.com" www.radisson-chicago.com
+
+
+December 2001 Customer Satisfaction Survey-Radisson Worldwide Hotels and Resorts
+ EMBED MS_ClipArt_Gallery.5  
+
+
+
+

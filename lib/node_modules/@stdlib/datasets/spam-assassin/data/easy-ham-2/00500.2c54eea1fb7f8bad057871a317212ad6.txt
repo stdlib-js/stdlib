@@ -1,0 +1,174 @@
+From iiu-admin@taint.org  Tue Aug  6 11:17:12 2002
+Return-Path: <iiu-admin@taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B3C4E44124
+	for <jm@localhost>; Tue,  6 Aug 2002 06:12:59 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:12:59 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g73Lhbv28519;
+    Sat, 3 Aug 2002 22:43:37 +0100
+Received: from mail03.svc.cra.dublin.eircom.net
+    (mail03.svc.cra.dublin.eircom.net [159.134.118.19]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with SMTP id g73Lg3v28502 for <iiu@taint.org>;
+    Sat, 3 Aug 2002 22:42:03 +0100
+Received: (qmail 46192 messnum 566055 invoked from
+    network[159.134.232.46/p232-46.as1.cbr.castlebar.eircom.net]);
+    3 Aug 2002 21:40:28 -0000
+Received: from p232-46.as1.cbr.castlebar.eircom.net (HELO oemcomputer)
+    (159.134.232.46) by mail03.svc.cra.dublin.eircom.net (qp 46192) with SMTP;
+    3 Aug 2002 21:40:28 -0000
+Message-Id: <007301c23b36$4d955420$c4e9869f@oemcomputer>
+From: "Brian O'Brien" <obrienbrian@eircom.net>
+To: <iiu@taint.org>
+References: <5.1.0.14.0.20020803213144.02fd5860@127.0.0.1>
+    <5.1.0.14.0.20020803215948.02fd9340@127.0.0.1>
+Subject: Re: [IIU] spyware calling home?
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 8bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: iiu-admin@taint.org
+Errors-To: iiu-admin@taint.org
+X-Beenthere: iiu@iiu.taint.org
+X-Mailman-Version: 2.0.10
+Precedence: bulk
+Reply-To: iiu@taint.org
+List-Unsubscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=unsubscribe>
+List-Id: Irish Internet Users <iiu.iiu.taint.org>
+List-Post: <mailto:iiu@iiu.taint.org>
+List-Help: <mailto:iiu-request@iiu.taint.org?subject=help>
+List-Subscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=subscribe>
+List-Archive: <http://iiu.taint.org/pipermail/iiu/>
+Date: Sat, 3 Aug 2002 22:39:50 +0100
+
+Thanks, Martin, iwill try that, however i've only approved the minimal
+standard apps - I'll give it a go anyway. I think this is something more
+insidious than the standard adprogram - maybe i'm paranoid!!!
+Brian
+----- Original Message -----
+From: "Martin Whelan" <mwhelan@deisedesign.com>
+To: <iiu@taint.org>
+Sent: Saturday, August 03, 2002 10:01 PM
+Subject: Re: [IIU] spyware calling home?
+
+
+> It may be worth removing all your apps from the approved list. (a bit of a
+> pain, I agree) then check the first app which makes the connection. With a
+> bit of luck it won't be anything standard
+>
+> At 21:47 03/08/02 +0100, you wrote:
+> >Unfortunately, I don't. ZoneAlarm normally gives that info but not this
+> >time. It just blocks the outward access and warns me that the attempt
+> >occurred.
+> >Brian
+> >----- Original Message -----
+> >From: "Martin Whelan" <mwhelan@deisedesign.com>
+> >To: <iiu@taint.org>
+> >Sent: Saturday, August 03, 2002 9:32 PM
+> >Subject: Re: [IIU] spyware calling home?
+> >
+> >
+> > > Do you know which app is making the connection?
+> > >
+> > >
+> > > At 20:18 03/08/02 +0100, you wrote:
+> > > >Hello all
+> > > >I'm looking for advice. My pc has developed a disturbing tendency of
+> >trying
+> > > >to access IP 62.17.143.253 without my consent. It has got to the
+stage
+> >where
+> > > >normal web-browsing is almost impossible.
+> > > >I have checked IP address on RIPE database and I know precisely who
+is
+> >being
+> > > >called. I contacted that company on 14 July, when the problem first
+arose
+> > > >and asked for a remedy but (surprise) got no reply.
+> > > >A helpful person on the ie.comp list suggested Adaware spyware
+removal. I
+> > > >ran this and haven't had a problem again until today.
+> > > >The offending program is obviously not in Adaware db. (I run adaware
+with
+> > > >current ref files every day now).?
+> > > >Any suggestions, please,  for removing whatever the f*** is causing
+this
+> > > >from my pc?
+> > > >Brian
+> > > >
+> > > >
+> > > >_______________________________________________
+> > > >IIU mailing list
+> > > >IIU@iiu.taint.org
+> > > >http://iiu.taint.org/mailman/listinfo/iiu
+> > >
+> > >
+========================================================================
+> > > Martin Whelan | Déise Design | www.deisedesign.com | Tel : 086-8888975
+> > >
+> > > " Our core product Déiseditor © allows organisations to publish
+> >information
+> > > to their web site in a fast and cost effective manner. There is no
+need
+> >for
+> > > a full time web developer, as the site can be easily updated by the
+> > > organisations own staff.
+> > > Instant updates to keep site information fresh. Sites which are
+updated
+> > > regularly bring users back. Visit www.deisedesign.com/deiseditor.html
+for
+> >a
+> > > demonstration "
+> > >
+> > > Déiseditor © " Managing Your Information "
+> > >
+========================================================================
+> > >
+> > > _______________________________________________
+> > > IIU mailing list
+> > > IIU@iiu.taint.org
+> > > http://iiu.taint.org/mailman/listinfo/iiu
+> > >
+> >
+> >_______________________________________________
+> >IIU mailing list
+> >IIU@iiu.taint.org
+> >http://iiu.taint.org/mailman/listinfo/iiu
+>
+> ========================================================================
+> Martin Whelan | Déise Design | www.deisedesign.com | Tel : 086-8888975
+>
+> " Our core product Déiseditor © allows organisations to publish
+information
+> to their web site in a fast and cost effective manner. There is no need
+for
+> a full time web developer, as the site can be easily updated by the
+> organisations own staff.
+> Instant updates to keep site information fresh. Sites which are updated
+> regularly bring users back. Visit www.deisedesign.com/deiseditor.html for
+a
+> demonstration "
+>
+> Déiseditor © " Managing Your Information "
+> ========================================================================
+>
+> _______________________________________________
+> IIU mailing list
+> IIU@iiu.taint.org
+> http://iiu.taint.org/mailman/listinfo/iiu
+>
+
+_______________________________________________
+IIU mailing list
+IIU@iiu.taint.org
+http://iiu.taint.org/mailman/listinfo/iiu
+
+

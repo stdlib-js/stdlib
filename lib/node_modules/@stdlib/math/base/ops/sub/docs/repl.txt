@@ -1,0 +1,33 @@
+
+{{alias}}( x, y )
+    Subtracts two double-precision floating-point numbers `x` and `y`.
+
+    Parameters
+    ----------
+    x: number
+        First input value.
+
+    y: number
+        Second input value.
+
+    Returns
+    -------
+    z: number
+        Result.
+
+    Examples
+    --------
+    > var v = {{alias}}( -1.0, 5.0 )
+    -6.0
+    > v = {{alias}}( 2.0, 5.0 )
+    -3.0
+    > v = {{alias}}( 0.0, 5.0 )
+    -5.0
+    > v = {{alias}}( -0.0, 0.0 )
+    -0.0
+    > v = {{alias}}( NaN, NaN )
+    NaN
+
+    See Also
+    --------
+

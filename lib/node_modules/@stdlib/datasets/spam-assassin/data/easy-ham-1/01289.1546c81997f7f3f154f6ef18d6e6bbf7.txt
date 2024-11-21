@@ -1,0 +1,98 @@
+From rpm-list-admin@freshrpms.net  Mon Sep  2 12:24:03 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 803D843F9B
+	for <jm@localhost>; Mon,  2 Sep 2002 07:24:02 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 02 Sep 2002 12:24:02 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7U780Z16522 for
+    <jm-rpm@jmason.org>; Fri, 30 Aug 2002 08:08:00 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7U754J32624; Fri, 30 Aug 2002 09:05:04
+    +0200
+Received: from cskk.homeip.net (c17877.carlnfd1.nsw.optusnet.com.au
+    [210.49.140.231]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g7U73RJ32084 for <rpm-list@freshrpms.net>; Fri, 30 Aug 2002 09:03:28 +0200
+Received: from amadeus.home (localhost.localdomain [127.0.0.1]) by
+    cskk.homeip.net (8.11.6/8.11.6) with ESMTP id g7U738708102 for
+    <rpm-list@freshrpms.net>; Fri, 30 Aug 2002 17:03:11 +1000
+From: Cameron Simpson <cs@zip.com.au>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: /home/dude
+Message-Id: <20020830070306.GA7959@amadeus.home>
+References: <20020828143235.A5779@bonzo.nirvana>
+    <20020829142252.7b20caab.matthias@egwn.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20020829142252.7b20caab.matthias@egwn.net>
+User-Agent: Mutt/1.4i
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+X-Reply-To: cs@zip.com.au
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Fri, 30 Aug 2002 17:03:06 +1000
+Date: Fri, 30 Aug 2002 17:03:06 +1000
+
+On 14:22 29 Aug 2002, Matthias Saou <matthias@egwn.net> wrote:
+| Once upon a time, Axel wrote :
+| > I am now relaxed again ;), and pass this info on. Probably Matthias Saou
+| > himself is "dude", and some package has hardwired a path in his build
+| > directory. It would be nice to find out which and fix it, but I am using
+| > too many of the freshrpm suite to narrow it down.
+| 
+| Indeed, my usual login is "dude" (and has been since long before "The Big
+| Lebowsky" came out ;-)), and it seems the some programs wrongly hard code
+| my home directory when being compiled :-(
+| For instance :
+| 
+| [dude@python dude]$ strings /usr/bin/gentoo | grep dude
+| /home/dude/
+| [dude@python dude]$ strings /usr/bin/xine | grep dude
+| /home/dude/redhat/tmp/xine-root/usr/share/locale
+| 
+| These should probably be considered bugs in the program's build process
+| (especially for xine, look at that!), I'll report them upstream if/when I
+| have some time.
+
+This is a standard trap for people building things from source. It's
+generally wise to have a special "build" environment to avoid these
+hassles. Most likely you have some library loading path in your env. An
+strace of the app will show it:
+
+	the-app 2>&1 | grep dude
+
+Personally, I have a script called logbuild whose entire purpose is to
+start a shell with a minimal build environment, logged with script. The
+prevents this kind of error. Since configure yanks all sorts of ill
+documented values from one's environment for use in the build (CC, ARCH,
+various LD_* variables) this kind of thing is necessary.
+
+Often the easiest thing is to have a special nonroot account with no .profile
+for building stuff.
+
+Cheers,
+-- 
+Cameron Simpson, DoD#743        cs@zip.com.au    http://www.zip.com.au/~cs/
+
+Do not taunt Happy Fun Coder.
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

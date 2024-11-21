@@ -1,0 +1,21 @@
+
+{{alias}}( str )
+    Parses a string representing a complex number into a complex like object.
+
+    Parameters
+    ----------
+    str: string
+
+    Returns
+    -------
+    out: ComplexLike | null
+        Complex like object or null.
+
+    Examples
+    --------
+    > var str = '5 + 3i';
+    > var z = {{alias}}( str )
+
+    See Also
+    --------
+

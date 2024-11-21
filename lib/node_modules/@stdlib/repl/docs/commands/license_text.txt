@@ -1,0 +1,11 @@
+
+license()
+    Prints license information.
+
+    Examples
+    --------
+    > license()
+
+    See Also
+    --------
+    copyright, credits, help, license

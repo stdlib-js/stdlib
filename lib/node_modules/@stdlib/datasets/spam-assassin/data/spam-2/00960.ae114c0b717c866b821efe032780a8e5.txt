@@ -1,0 +1,141 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6NItnhY029228
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Tue, 23 Jul 2002 13:55:49 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6NItns9029222
+	for cypherpunks-forward@ds.pro-ns.net; Tue, 23 Jul 2002 13:55:49 -0500 (CDT)
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6NItkhY029206
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks@ds.pro-ns.net>; Tue, 23 Jul 2002 13:55:47 -0500 (CDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: from waste.minder.net (daemon@waste [66.92.53.73])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6NItjJ36186
+	for <cypherpunks@ds.pro-ns.net>; Tue, 23 Jul 2002 14:55:46 -0400 (EDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: (from cpunks@localhost)
+	by waste.minder.net (8.11.6/8.11.6) id g6NItj127272
+	for cypherpunks@ds.pro-ns.net; Tue, 23 Jul 2002 14:55:45 -0400
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by waste.minder.net (8.11.6/8.11.6) with ESMTP id g6NItdR27241
+	for <cpunks@minder.net>; Tue, 23 Jul 2002 14:55:39 -0400
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6NItaJ36166
+	for <cpunks@minder.net>; Tue, 23 Jul 2002 14:55:36 -0400 (EDT)
+	(envelope-from cpunks@einstein.ssz.com)
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id OAA16129
+	for cpunks@minder.net; Tue, 23 Jul 2002 14:04:15 -0500
+Received: (from mdom@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id OAA16115
+	for cypherpunks-outgoing; Tue, 23 Jul 2002 14:03:42 -0500
+Received: from localhost ([211.244.160.116])
+	by einstein.ssz.com (8.8.8/8.8.8) with SMTP id OAA16106
+	for <cypherpunks@einstein.ssz.com>; Tue, 23 Jul 2002 14:02:00 -0500
+Message-Id: <200207231902.OAA16106@einstein.ssz.com>
+From: 구교학<return@snine.com>
+To: cypherpunks@einstein.ssz.com
+Old-Subject: CDR: (광고)신사업!!..원거리 감시 시스템
+Mime-Version: 1.0
+Content-Type: text/html; charset="ks_c_5601-1987"
+Date: Wed, 24 Jul 2002 03:53:05 +0900
+Sender: owner-cypherpunks@einstein.ssz.com
+Precedence: bulk
+Reply-To: cypherpunks@einstein.ssz.com
+X-Mailing-List: cypherpunks@ssz.com
+X-Unsubscription-Info: http://einstein.ssz.com/cdr
+X-List-Admin: list@ssz.com
+X-Loop: ssz.com
+X-Acceptable-Languages: English, Russian, German, French, Spanish
+Subject: (광고)신사업!!..원거리 감시 시스템
+Content-Transfer-Encoding: base64
+X-MIME-Autoconverted: from 8bit to base64 by hq.pro-ns.net id g6O1W7hX085517
+
+PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMCBUcmFuc2l0aW9u
+YWwvL0VOIj4NCjwhLS0gc2F2ZWQgZnJvbSB1cmw9KDAwNDIpZmlsZTovL1xcUzktZ3Utbm90
+ZWJvb2tcdGVtcFxtYXJrZXRpbmcuaHRtIC0tPg0KPEhUTUw+PEhFQUQ+PFRJVExFPsDPud0g
+xMTHu8XNIL/4sMW4riCwqL3DIL3DvbrF2zwvVElUTEU+DQo8TUVUQSBodHRwLWVxdWl2PUNv
+bnRlbnQtVHlwZSBjb250ZW50PSJ0ZXh0L2h0bWw7IGNoYXJzZXQ9a3NfY181NjAxLTE5ODci
+Pg0KPE1FVEEgY29udGVudD0iTVNIVE1MIDYuMDAuMjYwMC4wIiBuYW1lPUdFTkVSQVRPUj48
+L0hFQUQ+DQo8Qk9EWSB0ZXh0PWJsYWNrIHZMaW5rPXB1cnBsZSBhTGluaz1yZWQgbGluaz1i
+bHVlIGJnQ29sb3I9d2hpdGU+DQo8VEFCTEUgaGVpZ2h0PTI1IGNlbGxTcGFjaW5nPTAgY2Vs
+bFBhZGRpbmc9MCB3aWR0aD0iODAlIiBhbGlnbj1jZW50ZXINCmJnQ29sb3I9cmVkIGJvcmRl
+cj0wPg0KPFRCT0RZPg0KPFRSPg0KPFREIHdpZHRoPTEwNCBoZWlnaHQ9NTggcm93U3Bhbj0y
+Pg0KPFAgYWxpZ249Y2VudGVyPjxBIGhyZWY9Imh0dHA6Ly93d3cuc25pbmUuY29tLyI+PElN
+RyBhbHQ9IiIgaHNwYWNlPTANCnNyYz0iaHR0cDovL3d3dy5zbmluZS5jb20vaW5mb20vczku
+Z2lmIiBib3JkZXI9MD48L0E+PC9QPjwvVEQ+DQo8VEQgd2lkdGg9MTIwIGhlaWdodD04MiBy
+b3dTcGFuPTM+DQo8UD4mbmJzcDs8L1A+PC9URD4NCjxURCB3aWR0aD0zMDIgaGVpZ2h0PTgy
+IHJvd1NwYW49Mz4NCjxQIGFsaWduPWNlbnRlcj48Qj48Rk9OVCBjb2xvcj13aGl0ZT6/+LDF
+uK4gsKi9wyC9w726xds8QlI+tOu4rsGhILnXILX0t68mbmJzcDu48MH9DQq+yLO7PC9GT05U
+PjwvQj4mbmJzcDs8L1A+PC9URD4NCjxURCB2QWxpZ249Ym90dG9tIHdpZHRoPTI2MCBoZWln
+aHQ9MjY+DQo8UCBhbGlnbj1yaWdodD48U1BBTiBzdHlsZT0iRk9OVC1TSVpFOiAxNHB0Ij48
+Qj48Rk9OVCBjb2xvcj13aGl0ZT5EaWdpdGFsDQpTZWN1cml0eSBTb2x1dGlvbjwvRk9OVD48
+L0I+PC9TUEFOPjwvUD48L1REPjwvVFI+DQo8VFI+DQo8VEQgdkFsaWduPWNlbnRlciB3aWR0
+aD0yNjAgaGVpZ2h0PTE5Pg0KPFAgYWxpZ249cmlnaHQ+PEI+PEZPTlQgY29sb3I9d2hpdGU+
+UzkgSW5jLjwvRk9OVD48L0I+PC9QPjwvVEQ+PC9UUj4NCjxUUj4NCjxURCB3aWR0aD0xMDQg
+aGVpZ2h0PTI0Pg0KPFA+PEEgaHJlZj0iaHR0cDovL3d3dy5zbmluZS5jb20vIj48SU1HIGhl
+aWdodD0xNg0Kc3JjPSJodHRwOi8vd3d3LnNuaW5lLmNvbS9pbmZvbS9zbmluZS5naWYiIHdp
+ZHRoPTEwMCBib3JkZXI9MD48L0E+PC9QPjwvVEQ+DQo8VEQgd2lkdGg9MjYwIGhlaWdodD0y
+ND4NCjxQPiZuYnNwOzwvUD48L1REPjwvVFI+DQo8VFI+DQo8VEQNCnN0eWxlPSJCT1JERVIt
+TEVGVC1DT0xPUjogcmVkOyBCT1JERVItQk9UVE9NLUNPTE9SOiByZWQ7IEJPUkRFUi1UT1At
+U1RZTEU6IG5vbmU7IEJPUkRFUi1UT1AtQ09MT1I6IHJlZDsgQk9SREVSLVJJR0hULVNUWUxF
+OiBub25lOyBCT1JERVItTEVGVC1TVFlMRTogbm9uZTsgQk9SREVSLVJJR0hULUNPTE9SOiBy
+ZWQ7IEJPUkRFUi1CT1RUT00tU1RZTEU6IHNvbGlkIg0KdkFsaWduPWJvdHRvbSB3aWR0aD03
+ODYgYmdDb2xvcj13aGl0ZSBjb2xTcGFuPTQgaGVpZ2h0PTQ+DQo8UCBhbGlnbj1jZW50ZXI+
+PEZPTlQNCnNpemU9MT4mbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJz
+cDsmbmJzcDs8L0ZPTlQ+PC9QPjwvVEQ+PC9UUj48L1RCT0RZPjwvVEFCTEU+DQo8VEFCTEUg
+d2lkdGg9IjgwJSIgYWxpZ249Y2VudGVyIGJvcmRlcj0wPg0KPFRCT0RZPg0KPFRSPg0KPFRE
+IHdpZHRoPTk2NCBoZWlnaHQ9NDU+DQo8UD48Rk9OVCBzaXplPTI+Uzkgv6G8rbTCILzSsdS4
+8CC51yDAz7ndILjFwOW/68C4t84gsLO537XIIL/4sMW4riCwqL3DIL3DvbrF28DHIMCvxesg
+udcgvLPEobimILTjtOfHz73HILrQwLsNCrjwwf3H1bTPtNkuPC9GT05UPjwvUD48L1REPjwv
+VFI+DQo8VFI+DQo8VEQgd2lkdGg9OTY0IGhlaWdodD0zOT4NCjxQPjxGT05UIGNvbG9yPSMw
+MDAwYTA+PFNUUk9ORz69w726xdsgsLO/5DwvU1RST05HPjxCUj48L0ZPTlQ+PEZPTlQNCmNv
+bG9yPSM2NjY2NjYgc2l6ZT0yPjEuILHiwbjAxyBDQ1RWILD4u+fAxyDB1r/kILmuwabBocDO
+ILP0wLogsKGw3bTruKYgPFNUUk9ORz7Dt7TcILXwwfbF0A0Kuea9xDwvU1RST05HPsC4t84g
+wPzIr8fUwLi3zrytILzSsdS48CC4xcDlse7B9rW1ILyzxKG6zrTjx9i80i48QlI+Mi4gv/iw
+3cH2v6G8rSA8U1RST05HPsDOxc2z3cC7DQrF68fYPC9TVFJPTkc+ILjFwOXAuyDH17vzIL3H
+vcOwoyC6vCC89rChIMDWwL0uIDxTVFJPTkc+w9a06yAxNrG6taXAxyC4xcDlwLsgtb+9w7+h
+IL/4sN3B9r+hvK0NCrCovcM8L1NUUk9ORz4uPEJSPjMuIL7fsKMgxKfA1MDaILnfu/29wyA8
+U1RST05HPr+5vuDA/MitIDWxurWlt84gwNq1vyDF67q4x8+45yC9x73DsKMgx/bA5bCow7sg
+udcNCsf2wOXF68itPC9TVFJPTkc+sKEgsKG0ycfULjxCUj40LiC18MH2xdC55r3EwLi3ziDI
+rbvzwPrA5cC7IMTEx7vFzb+hIMfUwLi3ziCx4sG4wMcgPFNUUk9ORz5WaWRlbyBUYXBltMIN
+CsfKv+S++MC9PC9TVFJPTkc+LjwvRk9OVD48Rk9OVCBzaXplPTI+PEJSPjwvRk9OVD48L1A+
+PC9URD48L1RSPg0KPFRSPg0KPFREIHdpZHRoPTk2NCBoZWlnaHQ9NDQ+DQo8UD48QlI+PEZP
+TlQgY29sb3I9IzY2NjY2NiBzaXplPTI+v6m3r7/rtbXAxyC4tsTJxsPAzCCwobTJx8+45yC0
+57vnwMcgPC9GT05UPjxCPjxGT05UDQpjb2xvcj0jMzMzMzMzIHNpemU9Mj6/z7qux9EgseK8
++sH2v/jAuLfOIL+1vve/obi4IMD8s+Q8L0ZPTlQ+PC9CPjxGT05UIGNvbG9yPSM2NjY2NjYN
+CnNpemU9Mj7Hz73HvPYgwNa9wLTPtNkuPC9GT05UPjwvUD4NCjxQPjxGT05UIGNvbG9yPSM2
+NjY2NjY+PEI+wabHsLmuwMc8L0I+IDogUzkgv7W+98bAIDAyLTY4OC04MDg4LjwvRk9OVD4g
+PEENCmhyZWY9Imh0dHA6Ly93d3cuc25pbmUuY29tLyI+aHR0cDovL3d3dy5zbmluZS5jb20v
+PC9BPiZuYnNwOyA8QQ0KaHJlZj0ibWFpbHRvOnNOaW5lQHNOaW5lLmNvbSI+c05pbmVAc05p
+bmUuY29tPC9BPjwvUD48L1REPjwvVFI+DQo8VFI+DQo8VEQgd2lkdGg9OTY0IGhlaWdodD0x
+NDI+DQo8UCBhbGlnbj1jZW50ZXI+PElNRyBzdHlsZT0iV0lEVEg6IDcwNnB4OyBIRUlHSFQ6
+IDE4OHB4IiBoZWlnaHQ9MTU1IGFsdD0iIg0KaHNwYWNlPTAgc3JjPSJodHRwOi8vd3d3LnNu
+aW5lLmNvbS9pbmZvbS9jdXN0b21lci5naWYiIHdpZHRoPTc3NiBib3JkZXI9MD48L1A+DQo8
+UCBhbGlnbj1jZW50ZXI+PEENCmhyZWY9Im1haWx0bzpyZWplY3RAc25pbmUuY29tP3N1Ympl
+Y3Q9RGVsZXRlIG15IGVtYWlsIEFkZHJlc3MhISEiPjxGT05UDQpjb2xvcj0jNjY2NjY2IHNp
+emU9MT48SU1HIHNyYz0iaHR0cDovL3d3dy5zbmluZS5jb20vaW5mb20vcmVmdXNlLmdpZiIN
+CmJvcmRlcj0wPjwvRk9OVD48L0E+PC9QPg0KPFAgYWxpZ249bGVmdD48Rk9OVCBjb2xvcj0j
+NjY2NjY2IHNpemU9MT66u7jewM/AuiDBpLq4xeu9xbjBIMDMv+vDy8H4ILnXIMGkuri6uMij
+ILXuv6EgsPzH0SC5/bf8IMGmDQo1MMG2v6EgwMewxcfRIFuxpLDtXbjewM/A1LTPtNkuPEJS
+PrTnu+e0wiBlbWFpbL/cIL7utrDH0SDBpLq4tbUgsKHB9rDtIMDWwfYgvsq9wLTPtNkuILz2
+vcXAuyC/+MShvsrAu73DILz2vcWwxbrOuKYNCrStt6/B1r3KvcO/5DwvRk9OVD48Rk9OVCBz
+aXplPTE+PEENCmhyZWY9Im1haWx0bzpyZWplY3RAc25pbmUuY29tP3N1YmplY3Q9vPa9xbDF
+us4iPjxJTUcgaGVpZ2h0PTIyDQpzcmM9Imh0dHA6Ly93d3cuc25pbmUuY29tL2luZm9tL3Jl
+amVjdC5naWYiIHdpZHRoPTgyDQpib3JkZXI9MD48L0E+PC9GT05UPjwvUD48L1REPjwvVFI+
+PC9UQk9EWT48L1RBQkxFPg0KPFA+Jm5ic3A7PC9QPjwvQk9EWT48L0hUTUw+DQo=
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

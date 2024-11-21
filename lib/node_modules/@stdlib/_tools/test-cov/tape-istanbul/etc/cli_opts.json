@@ -1,0 +1,19 @@
+{
+	"string": [
+		"dir",
+		"global",
+		"output"
+	],
+	"boolean": [
+		"help",
+		"version"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		]
+	}
+}

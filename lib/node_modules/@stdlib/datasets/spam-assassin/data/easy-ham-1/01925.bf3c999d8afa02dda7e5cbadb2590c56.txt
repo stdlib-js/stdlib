@@ -1,0 +1,32 @@
+From rssfeeds@jmason.org  Thu Sep 26 16:31:00 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id C0D4416F19
+	for <jm@localhost>; Thu, 26 Sep 2002 16:30:21 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 16:30:21 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8QFBNg23711 for
+    <jm@jmason.org>; Thu, 26 Sep 2002 16:11:23 +0100
+Message-Id: <200209261511.g8QFBNg23711@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: diveintomark <rssfeeds@spamassassin.taint.org>
+Subject: Maps
+Date: Thu, 26 Sep 2002 15:11:23 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://diveintomark.org/archives/2002/09/25.html#maps
+Date: 2002-09-25T10:45:15-05:00
+
+_Mark Tosczak_: A New Way to Read, Not See, Maps[1]. &#8220;The map-navigation 
+software, dubbed Blind Audio Tactile Mapping System ... takes digital map 
+information and provides nonvisual feedback as a user moves a cursor across the 
+map.&#8221;
+
+
+
+[1] http://www.wired.com/news/school/0,1383,54916,00.html
+
+

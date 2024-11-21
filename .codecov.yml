@@ -1,0 +1,100 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2017 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# After changing this file, check it via:
+#
+#   curl -X POST --data-binary @/path/to/.codecov.yml https://codecov.io/validate
+#
+# For general configuration information, see:
+#
+#   https://github.com/codecov/support/wiki/Codecov-Yaml
+
+codecov:
+  # Default branch to show (if not set, inherited from repository settings):
+  branch: develop
+
+
+coverage:
+  # Number of decimals to display in UI:
+  precision: 4
+
+  # How to round coverage percentages (up/down/nearest):
+  round: down
+
+  # Notification settings:
+  notify:
+    slack:
+      default:
+        url: "secret:JUKJSnol70QPCceIZFokxa1sLK7E0GJrX4ytQfsvCulNLI8QRHVSTRIkntmcCGyON/dYPCc3caSlQKwh6hY5bCaAN3q9Iv3l1krivlvq1/4WsN3qFP/DnbbeFEYypBPeV8yJv0lvxAzD/GQTu+bz0jqrlZhH6Mbzh5hA3j5NkNg="
+        attachments: "sunburst, diff"
+
+  # Commit status settings:
+  status:
+    # Settings for the overall project:
+    project:
+      default:
+        # Enable posting a commit status:
+        enabled: yes
+
+        # Target coverage percentage for a commit (if "auto", must increase from parent commit):
+        target: auto
+
+        # Post an "error" commit status if a report is not uploaded for a given commit:
+        if_no_uploads: error
+
+        # Post an "error" if unable to find parent commit:
+        if_not_found: error
+
+        # If CI fails, report an "error" commit status:
+        if_ci_failed: error
+
+    # Settings for pull requests:
+    patch:
+      default:
+        # Enable posting a commit status:
+        enabled: yes
+
+        # Post an "error" commit status if a report is not uploaded for a given commit:
+        if_no_uploads: error
+
+        # Post an "error" if unable to find parent commit:
+        if_not_found: error
+
+        # If CI fails, report an "error" commit status:
+        if_ci_failed: error
+
+    # Settings for "unexpected" changes:
+    changes:
+      default:
+        # Enable posting a commit status:
+        enabled: yes
+
+        # Post an "error" commit status if a report is not uploaded for a given commit:
+        if_no_uploads: error
+
+        # Post an "error" if unable to find parent commit:
+        if_not_found: error
+
+        # If CI fails, report an "error" commit status:
+        if_ci_failed: error
+
+
+# Comment settings:
+comment:
+  layout: "header, diff, changes, sunburst, uncovered, tree"
+  behavior: default

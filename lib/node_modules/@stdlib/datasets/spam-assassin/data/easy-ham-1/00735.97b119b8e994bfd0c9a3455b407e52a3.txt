@@ -1,0 +1,217 @@
+From fork-admin@xent.com  Mon Sep 23 23:01:14 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 2610C16F03
+	for <jm@localhost>; Mon, 23 Sep 2002 23:01:12 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 23 Sep 2002 23:01:12 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8NLnpC03988 for <jm@jmason.org>;
+    Mon, 23 Sep 2002 22:49:57 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 636B02941DA; Mon, 23 Sep 2002 14:42:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from 192.168.1.2 (smtp.piercelaw.edu [216.204.12.219]) by
+    xent.com (Postfix) with ESMTP id 8C5E72941D8; Mon, 23 Sep 2002 14:41:37
+    -0700 (PDT)
+Received: from 192.168.30.220 ([192.168.30.220]) by 192.168.1.2;
+    Mon, 23 Sep 2002 17:45:03 -0400
+From: bitbitch@magnesium.net
+X-Mailer: The Bat! (v1.61) Educational
+Reply-To: bitbitch@magnesium.net
+X-Priority: 3 (Normal)
+Message-Id: <13434889868.20020923174444@magnesium.net>
+To: fork-admin@xent.com, "John Hall" <johnhall@evergo.net>
+Cc: "FoRK" <fork@spamassassin.taint.org>
+Subject: Re[2]: Goodbye Global Warming
+In-Reply-To: <000c01c26347$730dd770$0200a8c0@JMHALL>
+References: <000c01c26347$730dd770$0200a8c0@JMHALL>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 23 Sep 2002 17:44:44 -0400
+
+
+
+How about this:   A bored FoRKer said:  "YAWN"
+
+I believe Tom had it right.   Signal not noise.
+
+I'll start:
+
+
+              Los Angeles Times September 23, 2002 Monday
+                   Copyright 2002 / Los Angeles Times
+                            Los Angeles Times
+
+September 23, 2002 Monday  Home Edition
+SECTION: Main News Main News; Part 1; Page 13; National Desk
+LENGTH: 1013 words
+BYLINE: DANA CALVO, TIMES STAFF WRITER
+DATELINE: SEATTLE
+
+BODY:
+
+The idea came at the end of a long, frustrating brown-bag session at a
+public-policy think tank here.
+
+The challenge was to save the city's child-care programs. Staring into
+his empty coffee cup, the meeting coordinator's mind landed on an
+unlikely solution: Put a tax--just a "benign" dime a shot--on
+espresso.
+
+That led to a petition signed by more than 20,000 Seattle residents,
+and next year, voters will decide whether the tax becomes law, one
+that taps right into Seattle's legendary addiction to coffee. This is,
+after all, the town where Starbucks was born and where the $12 pound
+of beans became a staple. There is one Starbucks for every 7,000
+residents in Seattle, compared to one per 64,000 in New York. Seattle
+also has two other major coffee chains, Tully's Coffee and Seattle's
+Best Coffee, as well as countless cafes and espresso carts.
+
+A recent poll showed that 74% of Seattle residents would vote for the
+tax. "For people outside of Seattle who don't understand the
+consumption of espresso, [the tax proposal] can be seen as crazy,"
+said John Burbank, the think tank's executive director, "but it was
+common sense."
+
+Research by his nonprofit Economic Opportunity Institute showed that
+people preferred a tax on liquor or beer over one on espresso. But
+because of the large number of lattes and cappuccinos sold, a tax on
+espresso could be lower than one levied on alcohol.
+
+Burbank estimates the tax could generate $7 million to $10 million a
+year. City Council aides dispute his figures, saying their research
+shows the tax would bring in $1.5 million to $3 million a year.
+
+Burbank's institute is funded by foundations and labor unions. The
+think tank's mission is to promote public policy in the interests of
+low-income people, and it has long championed child-care issues.
+
+Burbank says the tax would restore cuts to the child-care programs
+made earlier this year by Gov. Gary Locke. He also says it would
+provide more low-income families with subsidies for child care,
+improve preschool programs and increase teacher salaries.
+
+At Bauhaus Books & Coffee, the sidewalk is dotted with tables of
+customers for whom coffee is a half-day activity, not just a drink.
+
+Espresso lovers like Chris Altman, who at a dime a day would spend an
+extra $36.50 a year, said the investment is worth it. "I'm OK with
+it," said the 35-year-old, stirring his iced latte. "The money's got
+to come from somewhere."
+
+Hope Revuelto, 25, was cooling her regular coffee ($1 because she
+brought her own mug) and reading "Zen and the Art of Pottery." She
+supports the initiative and said its critics are behaving as would be
+expected of espresso drinkers: They want the most expensive thing on
+the menu but resist paying 10 cents to help the needy.
+
+Some say the tax isn't the issue; they just resent being singled out.
+
+David Marsh, 45, a costume manager, drinks up to three espressos a
+day, which means he'd be shelling out an extra $109.50 a year. "I, for
+one, don't have kids, but I drink espresso," he said, as he sewed a
+leather collar onto a chain-mail tunic. "I don't mind paying, but I
+think everyone should pay."
+
+Coffeehouses are steamed about it, and they've organized as
+JOLT--Joined to Oppose the Latte Tax. Among the members are Seattle's
+Chamber of Commerce and the city's two largest coffee franchises,
+Starbucks and Tully's.
+
+The tax would force coffeehouses to track sales of any beverage that
+contains espresso, a task that could be an administrative nightmare
+for smaller cafes, especially during the frantic morning rush. If
+espresso counts come under suspicion, coffeehouse owners could face a
+city audit.
+
+University of Chicago economics professor Michael Greenstone said the tax doesn't add up. 
+
+"The purpose of any tax is to be efficient and equitable, and this is
+neither," he said. "On the efficiency side, it's surely going to lead
+to costly efforts by both businesses and consumers to find ways to
+avoid the tax. For example, Starbucks could claim that they are using
+finely ground coffee, [instead of coffee run though an espresso maker]
+and that consequently, they are exempt from the tax. Would they be
+right? I don't know, but finding out will surely take lots of legal
+fees that could have gone to child care.
+
+"Of course, from a public-relations perspective, this is an ingenious
+idea, and I mean that in a cynical way. They've pitted espresso
+drinkers against child-care supporters, and who's going to side with
+the espresso drinkers?"
+
+In fact, the proposed tax has forced opponents into a political
+two-step, where their criticism must remain a beat behind their public
+stance of political correctness. In a liberal city like Seattle,
+corporations continually advertise their commitment to social
+activism, and throughout the debate over the initiative, JOLT members
+prefaced their opposition with endorsements of good child care.
+
+"Starbucks will continue to support early-learning and
+childhood-development programs through the millions of dollars we
+contribute annually," the company said. "However, Starbucks does not
+understand why the Economic Opportunity Institute would recommend an
+additional consumer tax on espresso beverages, or any other single
+consumer product."
+
+The City Council has yet to decide when the initiative will go before
+voters next year. The initiative's authors say it is directed at
+vendors; critics predict it will be passed on to consumers through
+higher prices, effectively punishing them for their choice of coffee.
+The tax would be applied to any drink with at least half an ounce of
+espresso, including decaf. Drip coffee would be exempt.
+
+Burbank says the tax would reach only a pre-selected group of
+consumers who are wealthier than those who drink drip. So, he's been
+pitching it as a modern-day Robin Hood tax, where the needy get a dime
+every time the affluent spend $3 to $4 on an espresso.
+
+It's the kind of political marketing that Fran Beulah, 43, finds
+funny. "I drink espresso," she said, laughing, "and I am not rich."
+
+
+
+
+JH> "I did not have sex with that woman."
+
+>> -----Original Message-----
+>> From: fork-admin@xent.com [mailto:fork-admin@xent.com] On Behalf Of
+JH> Mr.
+>> FoRK
+>> Sent: Monday, September 23, 2002 2:12 PM
+>> To: FoRK
+>> Subject: Re: Goodbye Global Warming
+>> 
+>> 
+>> ----- Original Message -----
+>> From: "John Hall" <johnhall@evergo.net>
+>> 
+>> > A Green once said that if the Spotted Owl hadn't existed they
+>> > would have had to invent it.
+>> A Republican once said "I am not a crook".
+
+
+
+
+
+-- 
+Best regards,
+ bitbitch                            mailto:bitbitch@magnesium.net
+
+

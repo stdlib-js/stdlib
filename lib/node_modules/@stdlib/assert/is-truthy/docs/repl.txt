@@ -1,0 +1,39 @@
+
+{{alias}}( value )
+    Tests if a value is a value which translates to `true` when evaluated in a
+    boolean context.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a value is truthy.
+
+    Examples
+    --------
+     > var bool = {{alias}}( true )
+    true
+    > bool = {{alias}}( {} )
+    true
+    > bool = {{alias}}( [] )
+    true
+    > bool = {{alias}}( false )
+    false
+    > bool = {{alias}}( '' )
+    false
+    > bool = {{alias}}( 0 )
+    false
+    > bool = {{alias}}( null )
+    false
+    > bool = {{alias}}( void 0 )
+    false
+    > bool = {{alias}}( NaN )
+    false
+
+    See Also
+    --------
+

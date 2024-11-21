@@ -1,0 +1,59 @@
+
+{{alias}}( collection, [options,] filter )
+    Splits values into two groups.
+
+    If an element in `filter` is truthy, then the corresponding element in the
+    input collection belongs to the first group; otherwise, the collection
+    element belongs to the second group.
+
+    If provided an empty collection, the function returns an empty array.
+
+    Parameters
+    ----------
+    collection: Array|TypedArray|Object
+        Input collection to group. If provided an object, the object must be
+        array-like (excluding strings and functions).
+
+    options: Object (optional)
+        Options.
+
+    options.returns: string (optional)
+        If `values`, values are returned; if `indices`, indices are returned; if
+        `*`, both indices and values are returned. Default: 'values'.
+
+    filter: Array|TypedArray|Object
+        A collection indicating which group an element in the input collection
+        belongs to. If an element in `filter` is truthy, the corresponding
+        element in `collection` belongs to the first group; otherwise, the
+        collection element belongs to the second group. If provided an object,
+        the object must be array-like (excluding strings and functions).
+
+    Returns
+    -------
+    out: Array<Array>|Array
+        Group results.
+
+    Examples
+    --------
+    > var collection = [ 'beep', 'boop', 'foo', 'bar' ];
+    > var f = [ true, true, false, true ];
+    > var out = {{alias}}( collection, f )
+    [ [ 'beep', 'boop', 'bar' ], [ 'foo' ] ]
+    > f = [ 1, 1, 0, 1 ];
+    > out = {{alias}}( collection, f )
+    [ [ 'beep', 'boop', 'bar' ], [ 'foo' ] ]
+
+    // Output group results as indices:
+    > f = [ true, true, false, true ];
+    > var opts = { 'returns': 'indices' };
+    > out = {{alias}}( collection, opts, f )
+    [ [ 0, 1, 3 ], [ 2 ] ]
+
+    // Output group results as index-element pairs:
+    > opts = { 'returns': '*' };
+    > out = {{alias}}( collection, opts, f )
+    [ [ [0, 'beep'], [1, 'boop'], [3, 'bar'] ], [ [2, 'foo'] ] ]
+
+    See Also
+    --------
+

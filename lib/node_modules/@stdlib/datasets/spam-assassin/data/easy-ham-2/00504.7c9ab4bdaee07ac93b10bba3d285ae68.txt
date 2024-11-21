@@ -1,0 +1,64 @@
+From iiu-admin@taint.org  Tue Aug 20 11:51:13 2002
+Return-Path: <iiu-admin@taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 11A6743C34
+	for <jm@localhost>; Tue, 20 Aug 2002 06:51:13 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 11:51:13 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7K6BmZ27141;
+    Tue, 20 Aug 2002 07:11:48 +0100
+Received: from weasel ([212.2.162.33]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7K6AaZ27124 for <iiu@taint.org>;
+    Tue, 20 Aug 2002 07:10:36 +0100
+Received: from [193.203.140.188] (helo=bgoldbach.iol.ie) by weasel with
+    esmtp (Exim 3.33 #2) id 17h2Du-0003Y9-00 for iiu@taint.org; Tue,
+    20 Aug 2002 07:10:40 +0100
+Message-Id: <5.1.0.14.2.20020820071019.03e2aec0@gpo.iol.ie>
+X-Sender: stripes@gpo.iol.ie
+X-Mailer: QUALCOMM Windows Eudora Version 5.1
+To: iiu@taint.org
+From: Bernie Goldbach <stripes@iol.ie>
+Subject: Re: [IIU] Recommendations on phone / pda+phone + European GPRS coverage info.
+In-Reply-To: <3D60EEB7.4070005@dcu.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"; format=flowed
+Sender: iiu-admin@taint.org
+Errors-To: iiu-admin@taint.org
+X-Beenthere: iiu@iiu.taint.org
+X-Mailman-Version: 2.0.10
+Precedence: bulk
+Reply-To: iiu@taint.org
+List-Unsubscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=unsubscribe>
+List-Id: Irish Internet Users <iiu.iiu.taint.org>
+List-Post: <mailto:iiu@iiu.taint.org>
+List-Help: <mailto:iiu-request@iiu.taint.org?subject=help>
+List-Subscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=subscribe>
+List-Archive: <http://iiu.taint.org/pipermail/iiu/>
+Date: Tue, 20 Aug 2002 07:12:30 +0100
+
+Hi,
+
+I believe you get more value for money by separating the mobile phone from 
+the PDA.
+
+As expressed by power users on Open, a combination like a EUR 160 Nokia 
+6310i talking to a EUR 440 Palm m515 will meet your specification. By using 
+a EUR 90 Bluetooth SD chip, the Palm and the Nokia 6310i can talk to one 
+another even when not in line of sight.
+
+regards
+Bernie
+
+www.topgold.com/blog/
+
+
+_______________________________________________
+IIU mailing list
+IIU@iiu.taint.org
+http://iiu.taint.org/mailman/listinfo/iiu
+

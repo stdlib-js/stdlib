@@ -1,0 +1,97 @@
+{
+  "name": "stdlib-datasets-anscombes-quartet",
+  "version": "",
+  "title": "Anscombe's Quartet",
+  "description": "Anscombe's quartet is a set of 4 datasets which all have nearly identical simple statistical properties but vary considerably when graphed. Anscombe created the datasets to demonstrate why graphical data exploration should precede statistical data analysis and to show the effect of outliers on statistical properties.",
+  "resources": [
+    {
+      "name": "anscombes-quartet-json",
+      "title": "Anscombe's Quartet",
+      "description": "Anscombe's quartet.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.json"
+    },
+    {
+      "name": "anscombes-quartet-csv",
+      "title": "Anscombe's Quartet",
+      "description": "Anscombe's quartet.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "x1",
+            "title": "x1",
+            "description": "x-values for first dataset.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "y1",
+            "title": "y1",
+            "description": "y-values for first dataset.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "x2",
+            "title": "x2",
+            "description": "x-values for second dataset.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "y2",
+            "title": "y2",
+            "description": "y-values for second dataset.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "x3",
+            "title": "x3",
+            "description": "x-values for third dataset.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "y3",
+            "title": "y3",
+            "description": "y-values for third dataset.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "x4",
+            "title": "x4",
+            "description": "x-values for fourth dataset.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "y4",
+            "title": "y4",
+            "description": "y-values for fourth dataset.",
+            "type": "number",
+            "format": "default"
+          }
+        ]
+      }
+    }
+  ],
+  "sources": [],
+  "keywords": [
+    "anscombe",
+    "quartet",
+    "anscombes-quartet",
+    "statistics",
+    "stats"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}

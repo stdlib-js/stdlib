@@ -1,0 +1,65 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6MGZNhY000838
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Mon, 22 Jul 2002 11:35:24 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6MGZN8L000831
+	for cypherpunks-forward@ds.pro-ns.net; Mon, 22 Jul 2002 11:35:23 -0500 (CDT)
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6MGZGhY000762
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks@ds.pro-ns.net>; Mon, 22 Jul 2002 11:35:17 -0500 (CDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: from waste.minder.net (daemon@waste [66.92.53.73])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6MGZFJ40843
+	for <cypherpunks@ds.pro-ns.net>; Mon, 22 Jul 2002 12:35:15 -0400 (EDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: (from cpunks@localhost)
+	by waste.minder.net (8.11.6/8.11.6) id g6MGZEk00699
+	for cypherpunks@ds.pro-ns.net; Mon, 22 Jul 2002 12:35:14 -0400
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by waste.minder.net (8.11.6/8.11.6) with ESMTP id g6MGZDR00686
+	for <cpunks@minder.net>; Mon, 22 Jul 2002 12:35:13 -0400
+Received: from 196.3.85.85 (pri-085-b7.codetel.net.do [196.3.85.85])
+	by locust.minder.net (8.11.6/8.11.6) with SMTP id g6MGZAJ40834
+	for <cpunks@minder.net>; Mon, 22 Jul 2002 12:35:11 -0400 (EDT)
+	(envelope-from cvxbarry@hotpop.com)
+Message-Id: <200207221635.g6MGZAJ40834@locust.minder.net>
+Received: from [137.155.98.192] by f64.law4.hotmail.com with QMQP; Jul, 22 2002 12:16:54 PM -0300
+Received: from [174.223.185.169] by rly-xl05.mx.aol.com with NNFMP; Jul, 22 2002 11:18:46 AM +0600
+Received: from [195.98.27.144] by web13708.mail.yahoo.com with smtp; Jul, 22 2002 10:08:56 AM +1200
+From: lhhBarry <cvxbarry@hotpop.com>
+To: Undisclosed.Recipients@locust.minder.net
+Cc: 
+Subject: Telemarketers earn $250+ per lead uio
+Sender: lhhBarry <cvxbarry@hotpop.com>
+Mime-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Date: Mon, 22 Jul 2002 12:35:10 -0400
+X-Mailer: Microsoft Outlook Express 6.00.2462.0000
+X-Priority: 1
+
+Financial Services Company will pay a minimum of $250.00 (max. of $1000.00) for every lead that results in a sale.  Currently many of our Telemarketers are earning more than $5000.00 a month!
+
+For more information call (402) 996-9002 and leave your contact information.  We will get in touch with you within 2-3 business days.
+
+**Please note that we do not provide any training or resources to Telemarketers**
+
+To unsubscribe please send us an email with "UNSUBSCRIBE" in the subject line to: telemark_0702@hotmail.com.
+
+iqlexmqjxwsuwvipkjuuknnxif
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

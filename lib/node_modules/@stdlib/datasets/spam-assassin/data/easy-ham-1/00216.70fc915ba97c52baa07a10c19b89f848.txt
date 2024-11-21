@@ -1,0 +1,81 @@
+From ilug-admin@linux.ie  Wed Aug 28 10:49:27 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id CD2E84415A
+	for <zzzz@localhost>; Wed, 28 Aug 2002 05:48:28 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 28 Aug 2002 10:48:28 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7S90nZ17251 for
+    <zzzz-ilug@spamassassin.taint.org>; Wed, 28 Aug 2002 10:00:49 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA12731; Wed, 28 Aug 2002 10:00:21 +0100
+Received: from storm.liquidweb.com ([66.96.230.15]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA12673 for <ilug@linux.ie>; Wed,
+    28 Aug 2002 10:00:09 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [66.96.230.15] claimed to
+    be storm.liquidweb.com
+Received: from [213.190.156.25] (helo=dogBear) by storm.liquidweb.com with
+    smtp (Exim 3.35 #1) id 17jyfg-0001yN-00 for ilug@linux.ie; Wed,
+    28 Aug 2002 04:59:28 -0400
+Message-Id: <002501c24e71$68298e20$f600a8c0@dogBear>
+From: "Carlos Luna" <carlos.luna@steorn.com>
+To: <ilug@linux.ie>
+Date: Wed, 28 Aug 2002 10:00:45 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.50.4522.1200
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4522.1200
+X-Antiabuse: This header was added to track abuse, please include it with
+    any abuse report
+X-Antiabuse: Primary Hostname - storm.liquidweb.com
+X-Antiabuse: Original Domain - linux.ie
+X-Antiabuse: Originator/Caller UID/GID - [0 0] / [0 0]
+X-Antiabuse: Sender Address Domain - steorn.com
+Subject: [ILUG] PPPD disconnects on me!
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Hello folks!
+I'm new to Linux, so here goes...
+I've been trying to get connected to the outside world through my modem.
+I've got Debian with kernel 2.4.18.
+I've got this Win-Modem(yes, I know) and managed to locate a proper driver
+for it.
+Minicom is very much able to dial out.
+But there seems to be a problem with my PPPD installation.
+When I type 'ppp' in the minicom terminal, all I get (after the initial info
+of my dynamic IP, etc) is a ~ and then the NO CARRIER signal.
+Then I looked into calling pppd directly using chat.
+I used this command:  pppd call Provider (where Provider is some script
+somewhere).
+It dials, it connects, it sends my username & password, and when connection
+is established, it gives the SIGHUP signal and exits.
+This is confirmed when me friend and I tried to connect through a serial
+port using pppd to connect ttyS0.  I ran pppd waiting for a connection, me
+friend tried connecting and as soon as he did, pppd exited.
+
+Some expert help would be greatly appreciated as I'm sick and tired of
+having to reboot, get into Windoze to hook up to the net and then back to
+Linux, mounting this drive to get that file, etc.  It'd be nice never have
+to go back to Windoze(except for games, that is).
+
+Thanks a million.
+Carlos
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

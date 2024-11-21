@@ -1,0 +1,132 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Wed Jul 24 17:21:42 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B2C7B440A8
+	for <jm@localhost>; Wed, 24 Jul 2002 12:21:40 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 17:21:40 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6OGIB425651 for <jm-sa@jmason.org>; Wed, 24 Jul 2002 17:18:11 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17XOo6-0004Bo-00; Wed,
+    24 Jul 2002 09:16:10 -0700
+Received: from anti.cnc.bc.ca ([142.27.70.181] helo=anti) by
+    usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17XOnX-0003WJ-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 24 Jul 2002 09:15:35 -0700
+Received: FROM cnc.bc.ca BY anti ; Wed Jul 24 09:25:40 2002 -0700
+Received: from cnc.bc.ca ([142.27.70.153]) by cnc.bc.ca ; Wed,
+    24 Jul 2002 09:15:33 -0800 gmt
+Message-Id: <3D3ED2B9.866CC459@cnc.bc.ca>
+From: Kevin Gagel <gagel@cnc.bc.ca>
+Reply-To: gagel@cnc.bc.ca
+Organization: College of New Caledonia
+X-Mailer: Mozilla 4.79 [en] (Windows NT 5.0; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: Theo Van Dinter <felicity@kluge.net>,
+	"spamassassin-talk@lists.sourceforge.net" <spamassassin-talk@lists.sourceforge.net>
+Subject: Re: [SAtalk] Spam through - insanefunnies - clairification of X-Spam-Status fi elds?
+References: <F9102D41F595D311ACA7009027DE2C8404E11AF0@c3po.heurikon.com>
+    <20020724152341.GE24673@kluge.net>
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-Dsmtpfooter: true
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 24 Jul 2002 09:15:53 -0700
+Date: Wed, 24 Jul 2002 09:15:53 -0700
+
+Amis-v or there is another prefs file that SA is using. I had a heck of a time
+figuring out where to find my site wide file because of my configuration.
+
+If your using spamd and you want your users to have some control using
+user_prefs then check their ~/spamassassin file.
+If your using spamd and you have a site wide only policy then make sure that
+spamd is started with the -x option.
+If you used the -x option then the only place that it should get the rules from
+would be from the local.cf in the /etc/mail/spamassassin directory. Assuming a
+default install.
+
+Theo Van Dinter wrote:
+> 
+> On Wed, Jul 24, 2002 at 10:18:28AM -0500, Stewart, John wrote:
+> > X-Virus-Scanned: by amavisd-new amavisd-new-20020630
+> > X-Spam-Status: No, hits=6.5 tagged_above=5.1 required=6.9 tests=PLING,
+> > MONEY_BACK, CLICK_BELOW, POR
+> > N_14, CLICK_HERE_LINK, FREQ_SPAM_PHRASE
+> > X-Razor-id: d92173a8dfc60567e55efcf6bf264fd7f7a7369a
+> >
+> > Doesn't hits=6.5 mean that it should be tagged as spam? Why the
+> > X-Spam-Status of no then?
+> 
+> required is 6.9, it only scored 6.5, so it's not spam according to SA.
+> 
+> > Why is required=6.9 if I have required_hits at 5 in the local.cf? Where the
+> > heck does that number come from?
+> >
+> > Also, what is tagged_above=? I cannot find any information about it on the
+> > SpamAssassin site.
+> 
+> Good questions...  "tagged_above" doesn't appear anywhere in SA (at
+> least according to `find`).  I would guess it's amavis doing some
+> hacking around.
+> 
+> --
+> Randomly Generated Tagline:
+> D'oh!  English!  Who needs that?  I'm never going to England. Come on,
+>  let's smoke.
+> 
+>                 -- Homer Simpson, talking Barney into cutting class
+>                    The Way We Was
+> 
+> -------------------------------------------------------
+> This sf.net email is sponsored by:ThinkGeek
+> Welcome to geek heaven.
+> http://thinkgeek.com/sf
+> _______________________________________________
+> Spamassassin-talk mailing list
+> Spamassassin-talk@lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+-- 
+========================
+Kevin W. Gagel
+Network Administrator
+College of New Caledonia
+gagel@cnc.bc.ca
+postmaster@cnc.bc.ca
+(250)562-2131 loc. 448
+========================
+
+--------------------------------
+The College of New Caledonia    
+Visit us at http://www.cnc.bc.ca
+--------------------------------
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

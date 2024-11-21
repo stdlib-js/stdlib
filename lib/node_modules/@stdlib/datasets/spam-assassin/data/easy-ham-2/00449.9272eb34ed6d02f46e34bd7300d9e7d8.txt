@@ -1,0 +1,80 @@
+From ilug-admin@linux.ie  Mon Aug 19 11:03:20 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id DC8954419F
+	for <jm@localhost>; Mon, 19 Aug 2002 05:54:40 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:54:40 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7J9mx617091 for
+    <jm-ilug@jmason.org>; Mon, 19 Aug 2002 10:48:59 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA30432; Mon, 19 Aug 2002 10:48:16 +0100
+Received: from smtpstore.strencom.net (ns1.strencom.net [217.75.0.66]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id KAA30400 for <ilug@linux.ie>;
+    Mon, 19 Aug 2002 10:48:09 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host ns1.strencom.net
+    [217.75.0.66] claimed to be smtpstore.strencom.net
+Received: from enterprise.wasptech.com (mail.wasptech.com [217.75.2.106])
+    by smtpstore.strencom.net (Postfix) with ESMTP id 81C6ECEE85 for
+    <ilug@linux.ie>; Mon, 19 Aug 2002 10:00:41 +0000 (AZOST)
+X-Mimeole: Produced By Microsoft Exchange V6.0.5762.3
+Content-Class: urn:content-classes:message
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: RE: [ILUG] veritas backup on linux ?
+Date: Mon, 19 Aug 2002 10:42:23 +0100
+Message-Id: <45130FBE2F203649A4BABDB848A9C9D00E9C0A@enterprise.wasptech.com>
+X-MS-Has-Attach: 
+X-MS-Tnef-Correlator: 
+Thread-Topic: [ILUG] veritas backup on linux ?
+Thread-Index: AcJHYvA1p3SvV7fbQnCPiuQfsHl04QAAVrqA
+From: "Fergal Moran" <fergal.moran@wasptech.com>
+To: <ilug@linux.ie>
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    KAA30400
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Yes indeed - there should be an agents directory on the Veritas CD - in
+the unix subdirectory there should be a file called be_agnt.tar which
+needs to be installed and configured.  I am not sure - but I think that
+you may need to purchase a serial number in order to get this to work..
+
+Fergal.
+
+> -----Original Message-----
+> From: John P. Looney [mailto:valen@tuatha.org] 
+> Sent: 19 August 2002 10:34
+> To: Irish LUG list
+> Subject: [ILUG] veritas backup on linux ?
+> 
+> 
+>  I've a solaris box & a windows 2000 box, both with DLT 
+> drives, controlled by Veritas Backup.
+> 
+>  Can I install some sort of client on the linux box to enable 
+> it to be backed up ? A browse of the Veritas site is a little 
+> quiet on this front.
+> 
+> Kate
+> 
+> 
+> -- 
+> Irish Linux Users' Group: ilug@linux.ie 
+> http://www.linux.ie/mailman/listinfo/ilug for 
+> (un)subscription information. List maintainer: listmaster@linux.ie
+> 
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

@@ -1,0 +1,69 @@
+From fork-admin@xent.com  Mon Jul 29 11:29:08 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 39A0044165
+	for <jm@localhost>; Mon, 29 Jul 2002 06:25:35 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 11:25:35 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6RBP0i27075 for <jm@jmason.org>;
+    Sat, 27 Jul 2002 12:25:01 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id C491F2940A8; Sat, 27 Jul 2002 04:23:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from isolnetsux.techmonkeys.net (isolnetsux.techmonkeys.net
+    [64.243.46.20]) by xent.com (Postfix) with SMTP id C97CE29409C for
+    <fork@xent.com>; Sat, 27 Jul 2002 04:22:21 -0700 (PDT)
+Received: (qmail 5163 invoked by uid 501); 27 Jul 2002 11:22:15 -0000
+Received: from localhost (sendmail-bs@127.0.0.1) by localhost with SMTP;
+    27 Jul 2002 11:22:15 -0000
+From: CDale <cdale@techmonkeys.net>
+To: Tom <tomwhore@slack.net>
+Cc: fork@spamassassin.taint.org, <vox@mindvox.com>
+Subject: Re: And Away We go
+In-Reply-To: <Pine.BSO.4.44.0207270043230.25328-100000@crank.slack.net>
+Message-Id: <Pine.LNX.4.44.0207270621280.27125-100000@isolnetsux.techmonkeys.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sat, 27 Jul 2002 06:22:15 -0500 (CDT)
+
+A true geek.  Runs to the puter to post before taking a laboring wife to 
+the hospital.  I'd kill you.  LOL
+Grats, Daddy-o!
+C
+
+On Sat, 27 Jul 2002, Tom wrote:
+
+> 
+> Off we go to the hospital
+> 
+> Benjamin Wallace Higgins is on his way.
+> 
+> -tom
+> 
+> 
+> http://xent.com/mailman/listinfo/fork
+> 
+
+-- 
+"My theology, briefly, is that the universe was dictated but not
+          signed."  (Christopher Morley) 
+
+
+http://xent.com/mailman/listinfo/fork
+
+

@@ -1,0 +1,12 @@
+
+{{alias}}
+    Size (in bytes) of a double-precision floating-point number.
+
+    Examples
+    --------
+    > {{alias}}
+    8
+
+    See Also
+    --------
+

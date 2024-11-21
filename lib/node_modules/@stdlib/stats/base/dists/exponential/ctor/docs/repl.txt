@@ -1,0 +1,98 @@
+
+{{alias}}( [λ] )
+    Returns an exponential distribution object.
+
+    Parameters
+    ----------
+    λ: number (optional)
+        Rate parameter. Must be greater than `0`. Default: `1.0`.
+
+    Returns
+    -------
+    exponential: Object
+        Distribution instance.
+
+    exponential.lambda: number
+        Rate parameter. If set, the value must be greater than `0`.
+
+    exponential.entropy: number
+        Read-only property which returns the differential entropy.
+
+    exponential.kurtosis: number
+        Read-only property which returns the excess kurtosis.
+
+    exponential.mean: number
+        Read-only property which returns the expected value.
+
+    exponential.median: number
+        Read-only property which returns the median.
+
+    exponential.mode: number
+        Read-only property which returns the mode.
+
+    exponential.skewness: number
+        Read-only property which returns the skewness.
+
+    exponential.stdev: number
+        Read-only property which returns the standard deviation.
+
+    exponential.variance: number
+        Read-only property which returns the variance.
+
+    exponential.cdf: Function
+        Evaluates the cumulative distribution function (CDF).
+
+    exponential.logcdf: Function
+        Evaluates the natural logarithm of the cumulative distribution function
+        (CDF).
+
+    exponential.logpdf: Function
+        Evaluates the natural logarithm of the probability density function
+        (PDF).
+
+    exponential.mgf: Function
+        Evaluates the moment-generating function (MGF).
+
+    exponential.pdf: Function
+        Evaluates the probability density function (PDF).
+
+    exponential.quantile: Function
+        Evaluates the quantile function at probability `p`.
+
+    Examples
+    --------
+    > var exponential = {{alias}}( 6.0 );
+    > exponential.lambda
+    6.0
+    > exponential.entropy
+    ~-0.792
+    > exponential.kurtosis
+    6.0
+    > exponential.mean
+    ~0.167
+    > exponential.median
+    ~0.116
+    > exponential.mode
+    0.0
+    > exponential.skewness
+    2.0
+    > exponential.stdev
+    ~0.167
+    > exponential.variance
+    ~0.028
+    > exponential.cdf( 1.0 )
+    ~0.998
+    > exponential.logcdf( 1.0 )
+    ~-0.002
+    > exponential.logpdf( 1.5 )
+    ~-7.208
+    > exponential.mgf( -0.5 )
+    ~0.923
+    > exponential.pdf( 1.5 )
+    ~0.001
+    > exponential.quantile( 0.5 )
+    ~0.116
+
+    See Also
+    --------
+

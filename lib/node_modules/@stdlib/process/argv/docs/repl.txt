@@ -1,0 +1,22 @@
+
+{{alias}}
+    An array containing command-line arguments passed when launching the calling
+    process.
+
+    The first element is the absolute pathname of the executable that started
+    the calling process.
+
+    The second element is the path of the executed file.
+
+    Any additional elements are additional command-line arguments.
+
+    In browser environments, the array is empty.
+
+    Examples
+    --------
+    > var execPath = {{alias}}[ 0 ]
+    e.g., /usr/local/bin/node
+
+    See Also
+    --------
+

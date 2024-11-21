@@ -1,0 +1,33 @@
+
+{{alias}}( k, λ )
+    Returns the expected value of a Weibull distribution.
+
+    If `k <= 0` or `λ <= 0`, the function returns `NaN`.
+
+    If `k` or `λ` is `NaN`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    k: number
+        Shape parameter.
+
+    λ: number
+        Scale parameter.
+
+    Returns
+    -------
+    out: number
+        Expected value.
+
+    Examples
+    --------
+    > var v = {{alias}}( 1.0, 1.0 )
+    1.0
+    > v = {{alias}}( 4.0, 12.0 )
+    ~10.877
+    > v = {{alias}}( 8.0, 2.0 )
+    ~1.883
+
+    See Also
+    --------
+

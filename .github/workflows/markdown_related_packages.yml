@@ -1,0 +1,169 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2023 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: markdown_related_packages
+
+# Workflow triggers:
+on:
+  # Allow the workflow to be manually run:
+  workflow_dispatch:
+    inputs:
+      num:
+        type: string
+        description: 'Number of READMEs to process'
+        default: '250'
+
+  schedule:
+    # Run the workflow once a day at 2:00 AM UTC:
+    - cron: '0 2 * * *'
+
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
+# Workflow jobs:
+jobs:
+
+  # Define a job for updating the related packages section of READMEs:
+  update:
+
+    # Define a display name:
+    name: 'Update related packages section of READMEs'
+
+    # Ensure the job does not run on forks:
+    if: github.repository == 'stdlib-js/stdlib'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps...
+    steps:
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        # Pin action to full length commit SHA
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+        with:
+          # Specify whether to remove untracked files before checking out the repository:
+          clean: true
+
+          # Limit clone depth to the most recent commit:
+          fetch-depth: 1
+
+          # Specify whether to download Git-LFS files:
+          lfs: false
+        timeout-minutes: 10
+
+      # Install Node.js:
+      - name: 'Install Node.js'
+        # Pin action to full length commit SHA
+        uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af # v4.1.0
+        with:
+          node-version: '20' # 'lts/*'
+        timeout-minutes: 5
+
+      # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
+      - name: 'Install dependencies'
+        run: |
+          make install-node-modules || make install-node-modules || make install-node-modules
+        timeout-minutes: 15
+
+      # Initialize development environment:
+      - name: 'Initialize development environment'
+        run: |
+          make init
+        timeout-minutes: 5
+
+      # Configure Git:
+      - name: 'Configure Git'
+        run: |
+          git config --local user.email "82920195+stdlib-bot@users.noreply.github.com"
+          git config --local user.name "stdlib-bot"
+        timeout-minutes: 5
+
+      # Disable Git hooks:
+      - name: 'Disable Git hooks'
+        run: |
+          rm -rf .git/hooks
+
+      # Import GPG key to sign commits:
+      - name: 'Import GPG key to sign commits'
+        # Pin action to full length commit SHA
+        uses: crazy-max/ghaction-import-gpg@cb9bde2e2525e640591a934b1fd28eef1dcaf5e5 # v6.2.0
+        with:
+          gpg_private_key: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
+          git_user_signingkey: true
+          git_commit_gpgsign: true
+
+      # Pick random READMEs from the `lib/node_modules/@stdlib` directory:
+      - name: 'Pick random READMEs from the `lib/node_modules/@stdlib` directory'
+        id: random-readmes
+        run: |
+          command="find lib/node_modules/@stdlib -type f -name 'README.md' |
+            grep -v '/fixtures/' |
+            grep -v '/_tools/' |
+            shuf -n ${{ github.event.inputs.num || 250 }} | tr '\n' ','"
+          readmes=$(eval ${command})
+
+          echo "readmes=$readmes" >> $GITHUB_OUTPUT
+
+      # Update READMEs:
+      - name: 'Update READMEs'
+        id: update-related-packages
+        run: |
+          files=$(echo "${{ steps.random-readmes.outputs.readmes }}" | tr ',' ' ')
+          make markdown-related-files FILES="${files}"
+          make markdown-pkg-urls-files FILES="${files}"
+
+          if [[ -z "$(git status --porcelain)" ]]; then
+            # If no files were changed, exit with a success status code:
+            echo "changed=false" >> $GITHUB_OUTPUT
+            exit 0
+          else
+            # Otherwise, add changed files to the staging area and commit:
+            git add -A && git commit -m "docs: update related packages sections"
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+        timeout-minutes: 10
+
+      # Create a pull request with the changes:
+      - name: 'Create pull request'
+        id: cpr
+        if: steps.update-related-packages.outputs.changed == 'true'
+        # Pin action to full length commit SHA
+        uses: peter-evans/create-pull-request@5e914681df9dc83aa4e4905692ca88beb2f9e91f # v7.0.5
+        with:
+          title: 'docs: update related packages sections'
+          body: |
+            This PR
+
+            -   updates the related packages section of READMEs to include links to related packages.
+
+          commit-message: 'docs: update related packages sections'
+          committer: 'stdlib-bot <82920195+stdlib-bot@users.noreply.github.com>'
+          signoff: true
+          token: ${{ secrets.PULL_REQUEST_TOKEN }}
+          labels: |
+            documentation
+            automated-pr
+          team-reviewers: |
+            reviewers
+          branch: markdown-related-packages
+          delete-branch: true

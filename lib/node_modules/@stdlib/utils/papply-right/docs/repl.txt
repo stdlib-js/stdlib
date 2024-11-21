@@ -1,0 +1,35 @@
+
+{{alias}}( fcn, ...args )
+    Returns a function of smaller arity by partially applying arguments from the
+    right.
+
+    The implementation does not set the `length` property of the returned
+    function. Accordingly, the returned function `length` is always zero.
+
+    The evaluation context is always `null`.
+
+    Parameters
+    ----------
+    fcn: Function
+        Function to partially apply.
+
+    args: ...any
+        Arguments to partially apply.
+
+    Returns
+    -------
+    out: Function
+        Partially applied function.
+
+    Examples
+    --------
+    > function say( text, name ) { return text + ', ' + name + '.'; };
+    > var toGrace = {{alias}}( say, 'Grace Hopper' );
+    > var str = toGrace( 'Hello' )
+    'Hello, Grace Hopper.'
+    > str = toGrace( 'Thank you' )
+    'Thank you, Grace Hopper.'
+
+    See Also
+    --------
+

@@ -1,0 +1,66 @@
+From fork-admin@xent.com  Mon Jul 22 18:13:46 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id EECDE440CC
+	for <jm@localhost>; Mon, 22 Jul 2002 13:13:14 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:13:14 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFjII09361 for
+    <jm@jmason.org>; Mon, 22 Jul 2002 16:45:19 +0100
+Received: from xent.com ([64.161.22.236]) by webnote.net (8.9.3/8.9.3)
+    with ESMTP id FAA30373 for <jm@jmason.org>; Mon, 22 Jul 2002 05:57:37
+    +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id BAEE22940A2; Sun, 21 Jul 2002 21:47:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from nocmailsvc001.allthesites.org (unknown [65.196.202.101]) by
+    xent.com (Postfix) with ESMTP id 931F1294098 for <fork@xent.com>;
+    Sun, 21 Jul 2002 21:47:03 -0700 (PDT)
+Received: from your-yn89p666bj (unverified [65.148.107.149]) by
+    nocmailsvc001.allthesites.org (Rockliffe SMTPRA 4.5.6) with SMTP id
+    <B0018414608@nocmailsvc001.allthesites.org> for <fork@xent.com>;
+    Mon, 22 Jul 2002 00:52:24 -0400
+Message-Id: <411-22002712245554649@your-yn89p666bj>
+From: "Garry" <gstechs@fastmail.fm>
+To: fork@spamassassin.taint.org
+Subject: Greetings from Calif!
+Date: Sun, 21 Jul 2002 21:55:54 -0700
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Friends of Rohit Khare <fork.xent.com>
+X-Beenthere: fork@spamassassin.taint.org
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g6MFjII09361
+Content-Transfer-Encoding: 8bit
+
+
+!Want to make a million bucks this year?
+Me too but it's probably not going happen!
+ 
+However if your looking for the opportunity to
+make a couple thousand a week,
+working form home, with your pc, we need to talk.
+ 
+If you're over 18 and a US resident,
+ 
+Just Click REPLY
+ 
+Send me your Name, State,
+Complete telephone number,
+and the best time to contact you.
+ 
+I will personally speak with you within 48 hours.
+To be removed from this mailing list,  please type remove in the subject column.
+
+
+
+http://xent.com/mailman/listinfo/fork
+
+

@@ -1,0 +1,33 @@
+
+{{alias}}( x0, Ɣ )
+    Returns the differential entropy of a Cauchy distribution (in nats).
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `Ɣ <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x0: number
+        Location parameter.
+
+    Ɣ: number
+        Scale parameter.
+
+    Returns
+    -------
+    out: number
+        Entropy.
+
+    Examples
+    --------
+    > var v = {{alias}}( 10.0, 7.0 )
+    ~4.477
+    > v = {{alias}}( 22.0, 0.5 )
+    ~1.838
+    > v = {{alias}}( 10.3, -0.5 )
+    NaN
+
+    See Also
+    --------
+

@@ -1,0 +1,72 @@
+From fork-admin@xent.com  Tue Sep 24 17:55:25 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 6380A16F03
+	for <jm@localhost>; Tue, 24 Sep 2002 17:55:25 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 24 Sep 2002 17:55:25 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8OFN0C09794 for <jm@jmason.org>;
+    Tue, 24 Sep 2002 16:23:00 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id C3B8B2940B5; Tue, 24 Sep 2002 08:19:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from jamesr.best.vwh.net (jamesr.best.vwh.net [192.220.76.165])
+    by xent.com (Postfix) with SMTP id 6D2D629409A for <fork@xent.com>;
+    Tue, 24 Sep 2002 08:18:46 -0700 (PDT)
+Received: (qmail 14882 invoked by uid 19621); 24 Sep 2002 15:20:37 -0000
+Received: from unknown (HELO avalon) ([64.125.200.18]) (envelope-sender
+    <jamesr@best.com>) by 192.220.76.165 (qmail-ldap-1.03) with SMTP for
+    <fork@xent.com>; 24 Sep 2002 15:20:37 -0000
+Subject: RE: liberal defnitions
+From: James Rogers <jamesr@best.com>
+To: fork@spamassassin.taint.org
+In-Reply-To: <ILEHJNJFPDLMDEKNIAKCIEJOCAAA.geege@barrera.org>
+References: <ILEHJNJFPDLMDEKNIAKCIEJOCAAA.geege@barrera.org>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+Message-Id: <1032881662.24435.8.camel@avalon>
+MIME-Version: 1.0
+X-Mailer: Evolution/1.0.2-5mdk
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 24 Sep 2002 08:40:17 -0700
+
+This situation wouldn't have happened in the first place if California
+didn't have economically insane regulations.  They created a regulatory
+climate that facilitated this.  So yes, it is the product of
+over-regulation.
+
+
+-James Rogers
+ jamesr@best.com
+
+
+On Tue, 2002-09-24 at 05:17, Geege Schuman wrote:
+> from slate's "today's papers":  
+> The New York Times and Los Angeles Times both lead with word that
+> a federal judge ruled yesterday that the nation's largest
+> national gas pipeline company, El Paso, illegally withheld gas
+> from the market during California's energy squeeze in 2000-01.
+> The judge concluded that El Paso left 21 percent of its capacity
+> in the state off-line, thus driving up the price of gas and
+> helping to induce rolling blackouts. 
+> 
+> and this is the product of overregulation?
+
+
+
+
+

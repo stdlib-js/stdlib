@@ -1,0 +1,57 @@
+From ilug-admin@linux.ie  Thu Aug 29 16:42:35 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 78D9143F9B
+	for <zzzz@localhost>; Thu, 29 Aug 2002 11:42:35 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Thu, 29 Aug 2002 16:42:35 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7TFblZ18551 for
+    <zzzz-ilug@spamassassin.taint.org>; Thu, 29 Aug 2002 16:37:47 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA30871; Thu, 29 Aug 2002 16:36:54 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from relay07.indigo.ie (relay07.indigo.ie [194.125.133.231]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with SMTP id QAA30845 for <ilug@linux.ie>;
+    Thu, 29 Aug 2002 16:36:46 +0100
+Received: (qmail 68679 messnum 1027421 invoked from
+    network[194.125.130.10/unknown]); 29 Aug 2002 15:36:44 -0000
+Received: from unknown (HELO win2000) (194.125.130.10) by
+    relay07.indigo.ie (qp 68679) with SMTP; 29 Aug 2002 15:36:44 -0000
+Reply-To: <macarthy@iol.ie>
+From: "Justin MacCarthy" <macarthy@iol.ie>
+To: "Ilug@Linux.Ie" <ilug@linux.ie>
+Date: Thu, 29 Aug 2002 16:37:26 +0100
+Message-Id: <OFEGLPGPCHPACFLJPAILIECKECAA.macarthy@iol.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4910.0300
+Importance: Normal
+In-Reply-To: <LAEAIGLCKFNPNHBDGGEGMEKICFAA.aj.mckee@nmtbmedia.com>
+Subject: [ILUG] Looking for a file / directory in zip file
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Is there a way to look for a particular file or directory in 100's of zip
+files??
+Something like zgrep but for the filename instead of a word
+
+Thanks Justin
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

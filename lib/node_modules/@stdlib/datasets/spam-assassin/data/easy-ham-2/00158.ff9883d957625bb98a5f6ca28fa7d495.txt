@@ -1,0 +1,77 @@
+From ilug-admin@linux.ie  Tue Jul 30 13:28:13 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4EB9B440EF
+	for <jm@localhost>; Tue, 30 Jul 2002 08:28:13 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 30 Jul 2002 13:28:13 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6UCOcq26151 for
+    <jm-ilug@jmason.org>; Tue, 30 Jul 2002 13:24:38 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA04809; Tue, 30 Jul 2002 13:22:43 +0100
+Received: from hawk.dcu.ie (mail.dcu.ie [136.206.1.5]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA04785 for <ilug@linux.ie>; Tue,
+    30 Jul 2002 13:22:38 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host mail.dcu.ie [136.206.1.5]
+    claimed to be hawk.dcu.ie
+Received: from prodigy.redbrick.dcu.ie (136.206.15.10) by hawk.dcu.ie
+    (6.0.040) id 3D36BB4A00043D57 for ilug@linux.ie; Tue, 30 Jul 2002 13:22:38
+    +0100
+Received: by prodigy.redbrick.dcu.ie (Postfix, from userid 1023) id
+    26ED7DA4A; Tue, 30 Jul 2002 13:22:38 +0100 (IST)
+Date: Tue, 30 Jul 2002 13:22:38 +0100
+From: Philip Reynolds <phil@redbrick.dcu.ie>
+To: ilug@linux.ie
+Subject: Re: [ILUG] ipfw vs ipchains vs iptables
+Message-Id: <20020730132238.C16164@prodigy.Redbrick.DCU.IE>
+References: <1027984303.58664.60.camel@flapjack.netability.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <1027984303.58664.60.camel@flapjack.netability.ie>;
+    from nick-lists@netability.ie on Tue, Jul 30, 2002 at 12:11:42AM +0100
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Nick Hilliard's [nick-lists@netability.ie] 52 lines of wisdom included:
+> The standard release versions of ipfilter are unencumbered, as always.
+> 
+> > Nope, indeed IPFW2 has just been rolled out into -STABLE. (-STABLE
+> > is a stable branch of the code that has been rolled into -CURRENT
+> > first. It's basically a major release, that's still a work in
+> > progress)
+> 
+> I'm not so sure that ipfw2 is really ready for production yet, having
+> only been mfc'd last wednesday.  It certainly adds some nice syntactic
+> sugar, and is apparently much faster for certain types of complex
+> rulesets.  It will be good once it's had some time to settle down a
+> little.
+
+I would question anything being ready for "production" being in
+STABLE.
+
+He's kept backwards compatibility with ipfw, which is major plus.
+
+My point about IPFW2 being rolled out into stable was merely an
+illustration of the fact that ipfw is indeed not ipfilter, and that
+there are no license issues there :)
+
+-- 
+  Philip Reynolds        
+   RFC Networks          tel: 01 8832063
+www.rfc-networks.ie      fax: 01 8832041
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

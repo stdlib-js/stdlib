@@ -1,0 +1,82 @@
+From rpm-list-admin@freshrpms.net  Tue Jul 23 10:55:58 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9E10F440CD
+	for <jm@localhost>; Tue, 23 Jul 2002 05:55:58 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 23 Jul 2002 10:55:58 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6N9v6407760 for
+    <jm-rpm@jmason.org>; Tue, 23 Jul 2002 10:57:06 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6N9q3C27992; Tue, 23 Jul 2002 11:52:04
+    +0200
+Received: from python (gw01.es3.egwn.net [212.9.66.13]) (authenticated) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g6N9peC27840 for
+    <rpm-list@freshrpms.net>; Tue, 23 Jul 2002 11:51:41 +0200
+From: Matthias Saou <matthias@egwn.net>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: central management
+Message-Id: <20020723115021.3c01e04a.matthias@egwn.net>
+In-Reply-To: <20020722212529.6ad783b8.kilroy@kamakiriad.com>
+References: <20020722144004.3e8e8f0a.che666@uni.de>
+    <20020722212529.6ad783b8.kilroy@kamakiriad.com>
+Organization: Electronic Group Interactive
+X-Mailer: Sylpheed version 0.7.8claws (GTK+ 1.2.10; i386-redhat-linux)
+Reply-BY: Tue, 24 Jul 2000 19:02:00 +1000
+X-Operating-System: GNU/Linux power!
+X-Message-Flag: Try using a real operating system : GNU/Linux power!
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Tue, 23 Jul 2002 11:50:21 +0200
+Date: Tue, 23 Jul 2002 11:50:21 +0200
+
+Once upon a time, Brian wrote :
+
+>     I was thinkinf about an addition of another file: apt-repositories.
+>     Stick it on apt.freshmeat.net (the center of the apt universe, IMHO)
+>     and every time a new repository is added, the RPM can be rebuilt. 
+>     Heck, if I could get out of my depression, I could make the whole
+>     submission process automated....even making the RPM...
+
+Well, I already keep a list of known apt repositories on
+http://freshrpms.net/apt/ although I haven't added the ones that were
+talked about lately (actually I've been very busy over the week-end and I'm
+sick right now...).
+
+You could make the whole submission automated, even making the rpm?
+<subliminal message>
+http://rpmforge.net/ needs *you*!
+</subliminal message>
+
+Matthias
+
+-- 
+Matthias Saou                                World Trade Center
+-------------                                Edificio Norte 4 Planta
+System and Network Engineer                  08039 Barcelona, Spain
+Electronic Group Interactive                 Phone : +34 936 00 23 23
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

@@ -1,0 +1,87 @@
+From razor-users-admin@lists.sourceforge.net  Fri Aug  9 15:55:58 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 60466440CF
+	for <jm@localhost>; Fri,  9 Aug 2002 10:55:12 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:55:12 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79EWTb07667 for
+    <jm-razor@jmason.org>; Fri, 9 Aug 2002 15:32:29 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id XAA01878 for
+    <jm-razor@jmason.org>; Thu, 8 Aug 2002 23:49:59 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17cw0g-00036r-00; Thu,
+    08 Aug 2002 15:44:02 -0700
+Received: from h-66-166-21-186.snvacaid.covad.net ([66.166.21.186]
+    helo=rover.vipul.net) by usw-sf-list1.sourceforge.net with esmtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17cvzm-0002di-00 for
+    <razor-users@lists.sourceforge.net>; Thu, 08 Aug 2002 15:43:06 -0700
+Received: (from vipul@localhost) by rover.vipul.net (8.11.6/8.11.6) id
+    g78Mh4Y05970 for razor-users@lists.sf.net; Thu, 8 Aug 2002 15:43:04 -0700
+From: Vipul Ved Prakash <mail@vipul.net>
+To: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] keep submitting known spam?
+Message-Id: <20020808154303.A5236@rover.vipul.net>
+Reply-To: mail@vipul.net
+Mail-Followup-To: razor-users@lists.sf.net
+References: <20020808111842.J1593@rover.vipul.net>
+    <FB680A85-AB10-11D6-BCF2-00039396ECF2@deersoft.com>
+    <20020808152638.A32536@frontier.limbo.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <20020808152638.A32536@frontier.limbo.net>; from
+    turk182@chipware.net on Thu, Aug 08, 2002 at 03:26:38PM -0700
+X-Operating-System: Linux rover.vipul.net 2.4.18
+X-Privacy: If possible, encrypt your reply.  Key at http://vipul.net/
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Thu, 8 Aug 2002 15:43:03 -0700
+Date: Thu, 8 Aug 2002 15:43:03 -0700
+
+On Thu, Aug 08, 2002 at 03:26:38PM -0700, Chip Paswater wrote:
+> 
+> Perhaps a feature can be added to razor-report, so that it checks whether a
+> message is spam before it submits it.  If it is spam, then don't send the
+> body, 4 signatures, etc, just up the "rating" for that individual spam.
+
+Yep, that how razor-agents currently work.
+
+cheers,
+vipul.
+
+-- 
+
+Vipul Ved Prakash          |   "The future is here, it's just not 
+Software Design Artist     |    widely distributed."
+http://vipul.net/          |              -- William Gibson
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

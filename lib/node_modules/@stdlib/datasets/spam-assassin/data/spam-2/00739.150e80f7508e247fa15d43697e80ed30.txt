@@ -1,0 +1,67 @@
+From linda_blatt857875@address.com  Thu Jul 18 10:13:17 2002
+Return-Path: <linda_blatt857875@address.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6A6A743F9E
+	for <jm@localhost>; Thu, 18 Jul 2002 05:13:16 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 18 Jul 2002 10:13:16 +0100 (IST)
+Received: from address.com (adsl-61-56-245-39.CJ.sparqnet.net
+    [61.56.245.39]) by dogma.slashnull.org (8.11.6/8.11.6) with SMTP id
+    g6I996J11003 for <jm@jmason.org>; Thu, 18 Jul 2002 10:09:07 +0100
+Date: Thu, 18 Jul 2002 10:09:07 +0100
+Received: from smtp-server6.tampabay.rr.com ([145.99.138.91]) by
+    sydint1.microthin.com.au with SMTP; Thu, 18 Jul 2002 02:18:42 +0700
+Received: from [28.246.115.26] by rly-xw05.mx.aol.com with esmtp;
+    18 Jul 2002 04:15:35 +0500
+Received: from [169.79.194.75] by mx.rootsystems.net with QMQP;
+    Thu, 18 Jul 2002 12:12:28 -0300
+Received: from unknown (145.107.228.121) by ssymail.ssy.co.kr with NNFMP;
+    Thu, 18 Jul 2002 05:09:21 +0400
+Received: from 140.16.170.68 ([140.16.170.68]) by pet.vosn.net with local;
+    Thu, 18 Jul 2002 09:06:14 -0000
+Reply-To: <linda_blatt857875@address.com>
+Message-Id: <005a87a34ecb$1278d6c7$2da60eb5@ttkkwb>
+From: <linda_blatt857875@address.com>
+To: <yyyy@spamassassin.taint.org>
+Subject: new extensions now only $14.95 (8551IaSm@8)
+MIME-Version: 1.0
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.2627
+Importance: Normal
+Content-Type: multipart/mixed; boundary="----=_NextPart_000_00A5_78B53E6C.B7678D60"
+
+------=_NextPart_000_00A5_78B53E6C.B7678D60
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: base64
+
+eyVSQU5EfQ0KUFVCTElDIEFOTk9VTkNFTUVOVDoNCg0KVGhlIG5ldyBkb21h
+aW4gbmFtZXMgYXJlIGZpbmFsbHkgYXZhaWxhYmxlIHRvIHRoZSBnZW5lcmFs
+IHB1YmxpYyBhdCBkaXNjb3VudCBwcmljZXMuIE5vdyB5b3UgY2FuIHJlZ2lz
+dGVyIG9uZSBvZiB0aGUgZXhjaXRpbmcgbmV3IC5CSVogb3IgLklORk8gZG9t
+YWluIG5hbWVzLCBhcyB3ZWxsIGFzIHRoZSBvcmlnaW5hbCAuQ09NIGFuZCAu
+TkVUIG5hbWVzIGZvciBqdXN0ICQxNC45NS4gVGhlc2UgYnJhbmQgbmV3IGRv
+bWFpbiBleHRlbnNpb25zIHdlcmUgcmVjZW50bHkgYXBwcm92ZWQgYnkgSUNB
+Tk4gYW5kIGhhdmUgdGhlIHNhbWUgcmlnaHRzIGFzIHRoZSBvcmlnaW5hbCAu
+Q09NIGFuZCAuTkVUIGRvbWFpbiBuYW1lcy4gVGhlIGJpZ2dlc3QgYmVuZWZp
+dCBpcyBvZi1jb3Vyc2UgdGhhdCB0aGUgLkJJWiBhbmQgLklORk8gZG9tYWlu
+IG5hbWVzIGFyZSBjdXJyZW50bHkgbW9yZSBhdmFpbGFibGUuIGkuZS4gaXQg
+d2lsbCBiZSBtdWNoIGVhc2llciB0byByZWdpc3RlciBhbiBhdHRyYWN0aXZl
+IGFuZCBlYXN5LXRvLXJlbWVtYmVyIGRvbWFpbiBuYW1lIGZvciB0aGUgc2Ft
+ZSBwcmljZS4gIFZpc2l0OiBodHRwOi8vd3d3LmFmZm9yZGFibGUtZG9tYWlu
+cy5jb20gdG9kYXkgZm9yIG1vcmUgaW5mby4NCiANClJlZ2lzdGVyIHlvdXIg
+ZG9tYWluIG5hbWUgdG9kYXkgZm9yIGp1c3QgJDE0Ljk1IGF0OiBodHRwOi8v
+d3d3LmFmZm9yZGFibGUtZG9tYWlucy5jb20vICBSZWdpc3RyYXRpb24gZmVl
+cyBpbmNsdWRlIGZ1bGwgYWNjZXNzIHRvIGFuIGVhc3ktdG8tdXNlIGNvbnRy
+b2wgcGFuZWwgdG8gbWFuYWdlIHlvdXIgZG9tYWluIG5hbWUgaW4gdGhlIGZ1
+dHVyZS4NCiANClNpbmNlcmVseSwNCiANCkRvbWFpbiBBZG1pbmlzdHJhdG9y
+DQpBZmZvcmRhYmxlIERvbWFpbnMNCg0KDQpUbyByZW1vdmUgeW91ciBlbWFp
+bCBhZGRyZXNzIGZyb20gZnVydGhlciBwcm9tb3Rpb25hbCBtYWlsaW5ncyBm
+cm9tIHRoaXMgY29tcGFueSwgY2xpY2sgaGVyZToNCmh0dHA6Ly93d3cuY2Vu
+dHJhbHJlbW92YWxzZXJ2aWNlLmNvbS9jZ2ktYmluL2RvbWFpbi1yZW1vdmUu
+Y2dpDQozMQ0KDQoNCg0KDQoNCg0KDQoNClswOTg0b0lhUzctMjM2bUV3QDE1
+XQ0K
+
+

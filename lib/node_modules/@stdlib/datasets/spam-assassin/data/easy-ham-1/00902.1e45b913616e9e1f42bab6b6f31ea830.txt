@@ -1,0 +1,90 @@
+From fork-admin@xent.com  Sun Oct  6 22:57:39 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 6E3E516F73
+	for <jm@localhost>; Sun,  6 Oct 2002 22:54:54 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sun, 06 Oct 2002 22:54:54 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g96LVOK03617 for <jm@jmason.org>;
+    Sun, 6 Oct 2002 22:31:24 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 58E2C2940C3; Sun,  6 Oct 2002 14:31:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from homer.perfectpresence.com (unknown [209.123.207.194]) by
+    xent.com (Postfix) with ESMTP id 17E092940C2 for <fork@xent.com>;
+    Sun,  6 Oct 2002 14:30:27 -0700 (PDT)
+Received: from adsl-17-226-227.jax.bellsouth.net ([68.17.226.227]
+    helo=regina) by homer.perfectpresence.com with smtp (Exim 3.36 #1) id
+    17yIzF-0006lO-00; Sun, 06 Oct 2002 17:30:53 -0400
+From: "Geege Schuman" <geege@barrera.org>
+To: <johnhall@evergo.net>
+Cc: "'FoRK'" <fork@spamassassin.taint.org>
+Subject: RE: Our friends the Palestinians, Our servants in government.
+Message-Id: <ILEHJNJFPDLMDEKNIAKCCENMCAAA.geege@barrera.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+Importance: Normal
+In-Reply-To: <003c01c26d7b$b82ac190$0200a8c0@JMHALL>
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2800.1106
+X-Antiabuse: This header was added to track abuse, please include it with
+    any abuse report
+X-Antiabuse: Primary Hostname - homer.perfectpresence.com
+X-Antiabuse: Original Domain - xent.com
+X-Antiabuse: Originator/Caller UID/GID - [0 0] / [0 0]
+X-Antiabuse: Sender Address Domain - barrera.org
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 6 Oct 2002 17:29:35 -0400
+
+when brickbats or fox exposes the folly of government they do so to
+accomplish a specific end; dumping truckload after truckload of bad acts
+proves their point: stupidity and greed typify government, therefore any
+government is too much government.
+
+
+
+-----Original Message-----
+From: fork-admin@xent.com [mailto:fork-admin@xent.com]On Behalf Of John
+Hall
+Sent: Sunday, October 06, 2002 5:03 PM
+Cc: 'FoRK'
+Subject: RE: Our friends the Palestinians, Our servants in government.
+
+
+Yes, you read the links.
+
+Sorry, but exposing folly is not only humorous but also instructive.  It
+is only by exposing folly to ridicule that you stop it in the first
+place.
+
+'Brickbats' leans heavily on both, though the item I highlighted was a
+'horror' item not a 'gee that is stupid' item.  For an example of the
+latter, see the city that wanted a woman to pay a ticket for parking in
+an UNmarked no-parking space.
+
+> From: Geege Schuman [mailto:geege@barrera.org]
+>
+> see my first line: I READ THE LINKS.  brickbats.  idiot.
+
+
+
+
+
+

@@ -1,0 +1,75 @@
+From ilug-admin@linux.ie  Fri Aug 23 11:07:57 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 1ADF744173
+	for <zzzz@localhost>; Fri, 23 Aug 2002 06:06:36 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Fri, 23 Aug 2002 11:06:36 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7MM4mZ26717 for
+    <zzzz-ilug@spamassassin.taint.org>; Thu, 22 Aug 2002 23:04:48 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id XAA25152; Thu, 22 Aug 2002 23:02:40 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from smtp018.mail.yahoo.com (smtp018.mail.yahoo.com
+    [216.136.174.115]) by lugh.tuatha.org (8.9.3/8.9.3) with SMTP id XAA25126
+    for <ilug@linux.ie>; Thu, 22 Aug 2002 23:02:32 +0100
+Received: from p977.as2.cra.dublin.eircom.net (HELO mfrenchw2k)
+    (mfrench42@159.134.179.209 with login) by smtp.mail.vip.sc5.yahoo.com with
+    SMTP; 22 Aug 2002 22:02:25 -0000
+Message-Id: <004b01c24a27$149934c0$f264a8c0@sabeo.ie>
+From: "Matthew French" <mfrench42@yahoo.co.uk>
+To: <ilug@linux.ie>
+References: <A49FCAEE-B615-11D6-9F96-000393679BE4@indigo.ie>
+Subject: Re: [ILUG] Re: Sun Solaris
+Date: Thu, 22 Aug 2002 22:58:39 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Mark Twomey joked:
+>  >erm... it runs Solaris x86 as standard...
+>
+> It runs Solaris 8 x86 as standard.
+> (I was joking Al)
+
+And will run Solaris 9 when Sun catch up with the x86 drivers and kernel.
+
+Although don't hold your breath for the free DVD. It will never come.
+
+(Spot the person who applied for the free Solaris 9 DVD, only to be told
+three months later it is no longer available.<mutter>)
+
+FWIW Solaris and Linux seem to be getting closer all the time. I can no
+longer see any specific reason why one is better than the other. Expect Red
+Hat Solaris 11 any time now... <grin>
+
+- Matthew
+
+
+
+__________________________________________________
+Do You Yahoo!?
+Everything you'll ever need on one web page
+from News and Sport to Email and Music Charts
+http://uk.my.yahoo.com
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

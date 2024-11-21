@@ -1,0 +1,59 @@
+From tony@svanstrom.com  Wed Aug 28 11:02:33 2002
+Return-Path: <tony@svanstrom.com>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3334043F99
+	for <zzzz@localhost>; Wed, 28 Aug 2002 06:02:32 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 28 Aug 2002 11:02:32 +0100 (IST)
+Received: from moon.campus.luth.se (root@moon.campus.luth.se
+    [130.240.202.158]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7S4MwZ10483 for <zzzz@spamassassin.taint.org>; Wed, 28 Aug 2002 05:22:58 +0100
+Received: from moon.campus.luth.se (tony@moon.campus.luth.se
+    [130.240.202.158]) by moon.campus.luth.se (8.12.3/8.12.3) with ESMTP id
+    g7S4N9Mg010720; Wed, 28 Aug 2002 06:23:09 +0200 (CEST) (envelope-from
+    tony@svanstrom.com)
+Date: Wed, 28 Aug 2002 06:23:09 +0200 (CEST)
+From: "Tony L. Svanstrom" <tony@svanstrom.com>
+X-X-Sender: tony@moon.campus.luth.se
+To: Robin Lynn Frank <rlfrank-dated-1030938274.aa158a@paradigm-omega.com>
+Cc: Justin Mason <zzzz@spamassassin.taint.org>,
+	<SpamAssassin-talk@lists.sourceforge.net>, <tmda-users@tmda.net>
+Subject: Re: [SAtalk] Re: patent on TMDA-like system
+In-Reply-To: <1030506273.18567.TMDA@omega.paradigm-omega.net>
+Message-Id: <20020828062019.Y10668-100000@moon.campus.luth.se>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+
+On Tue, 27 Aug 2002 the voices made Robin Lynn Frank write:
+
+> > Tony Svanstrom, on SpamAssassin-talk, noted this US patent:
+> >
+> > http://appft1.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&u=/netah
+> >tml/PTO/search-adv.html&r=62&f=G&l=50&d=PG01&s1=spam&p=2&OS=haiku&RS=spam
+
+> I took a bit of time to review what is on the above URL.  If I were a news
+> editor, the headline would be:
+>
+> "Inventor" from country that ignores patents and copyrights, seeks patent for
+> inventing the wheel!
+
+ The wheel is already patented in Australia; Melbourne man patents the wheel:
+
+ <URL: http://216.239.39.100/search?q=cache:usJnd2dwCDQC:www.theage.com.au/news/state/2001/07/02/FFX0ADFPLOC.html+%22patents+the+wheel%22&hl=en&lr=lang_en|lang_sv&ie=UTF-8 >
+
+
+ The sad news is that there seems to be a lot of patents (pending or not)
+that's for very basic/general ideas; it's the current form of "domainnapping",
+and it might turn uggly when people start trying to enfoce these patents.
+
+
+	/Tony
+-- 
+# Per scientiam ad libertatem! // Through knowledge towards freedom! #
+# Genom kunskap mot frihet! =*= (c) 1999-2002 tony@svanstrom.com =*= #
+
+     perl -e'print$_{$_} for sort%_=`lynx -dump svanstrom.com/t`'
+
+

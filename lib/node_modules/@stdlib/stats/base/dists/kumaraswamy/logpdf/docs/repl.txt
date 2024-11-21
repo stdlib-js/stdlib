@@ -1,0 +1,83 @@
+
+{{alias}}( x, a, b )
+    Evaluates the natural logarithm of the probability density function (PDF)
+    for Kumaraswamy's double bounded distribution with first shape parameter `a`
+    and second shape parameter `b` at a value `x`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If `a <= 0` or `b <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    a: number
+        First shape parameter.
+
+    b: number
+        Second shape parameter.
+
+    Returns
+    -------
+    out: number
+        Evaluated logPDF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.5, 1.0, 1.0 )
+    0.0
+    > y = {{alias}}( 0.5, 2.0, 4.0 )
+    ~0.523
+    > y = {{alias}}( 0.2, 2.0, 2.0 )
+    ~-0.264
+    > y = {{alias}}( 0.8, 4.0, 4.0 )
+    ~0.522
+    > y = {{alias}}( -0.5, 4.0, 2.0 )
+    -Infinity
+    > y = {{alias}}( 1.5, 4.0, 2.0 )
+    -Infinity
+
+    > y = {{alias}}( 2.0, -1.0, 0.5 )
+    NaN
+    > y = {{alias}}( 2.0, 0.5, -1.0 )
+    NaN
+
+    > y = {{alias}}( NaN, 1.0, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, 1.0, NaN )
+    NaN
+
+
+{{alias}}.factory( a, b )
+    Returns a function for evaluating the natural logarithm of the probability
+    density function (PDF) of a Kumaraswamy's double bounded distribution with
+    first shape parameter `a` and second shape parameter `b`.
+
+    Parameters
+    ----------
+    a: number
+        First shape parameter.
+
+    b: number
+        Second shape parameter.
+
+    Returns
+    -------
+    logpdf: Function
+        Logarithm of probability density function (PDF).
+
+    Examples
+    --------
+    > var mylogpdf = {{alias}}.factory( 0.5, 1.0 );
+    > var y = mylogpdf( 0.8 )
+    ~-0.582
+    > y = mylogpdf( 0.3 )
+    ~-0.091
+
+    See Also
+    --------
+

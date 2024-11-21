@@ -1,0 +1,25 @@
+From rssfeeds@jmason.org  Mon Sep 30 13:36:55 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id AE7C616F03
+	for <jm@localhost>; Mon, 30 Sep 2002 13:36:54 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 30 Sep 2002 13:36:54 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8T81Hg03434 for
+    <jm@jmason.org>; Sun, 29 Sep 2002 09:01:17 +0100
+Message-Id: <200209290801.g8T81Hg03434@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: gamasutra <rssfeeds@spamassassin.taint.org>
+Subject: New exam fury puts Morris's job in danger
+Date: Sun, 29 Sep 2002 08:01:17 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.newsisfree.com/click/-0,8357894,215/
+Date: 2002-09-29T00:40:00+01:00
+
+*UK latest:* Sacked regulator accuses her of 'unbearable pressure'.
+
+

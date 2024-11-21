@@ -1,0 +1,91 @@
+From fork-admin@xent.com  Fri Aug  9 18:32:44 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 937A4440CF
+	for <jm@localhost>; Fri,  9 Aug 2002 13:32:43 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 18:32:43 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g79HWvb17776 for <jm@jmason.org>;
+    Fri, 9 Aug 2002 18:32:59 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id A313E294132; Fri,  9 Aug 2002 10:29:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from 10-0-0-223.boston.ximian.com (gateway.ximian.com
+    [141.154.95.125]) by xent.com (Postfix) with ESMTP id BA76529410F for
+    <fork@xent.com>; Fri,  9 Aug 2002 10:28:24 -0700 (PDT)
+Received: (from louie@localhost) by 10-0-0-223.boston.ximian.com
+    (8.11.6/8.11.6) id g79HRpd17229; Fri, 9 Aug 2002 13:27:51 -0400
+X-Authentication-Warning: 10-0-0-223.boston.ximian.com: louie set sender
+    to louie@ximian.com using -f
+Subject: Re: Shatter Attacks - How to break Windows
+From: Luis Villa <louie@ximian.com>
+To: fork <fork@spamassassin.taint.org>
+In-Reply-To: <m2r8h8t0wv.fsf@maya.dyndns.org>
+References: <m2r8h8t0wv.fsf@maya.dyndns.org>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8
+Message-Id: <1028914070.16891.40.camel@10-0-0-223.boston.ximian.com>
+MIME-Version: 1.0
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 09 Aug 2002 13:27:50 -0400
+
+Be sure to read the followups on 
+http://online.securityfocus.com/archive/1/286228/2002-08-03/2002-08-09/1
+where basically the consensus is that the article author is that this is
+(1) an application problem, not a Windows problem and (2) a problem only
+a certain class of poorly written applications. So, yeah, it's a new
+attack, but it's not nearly as devastating an MS critique as the author
+wants us to believe it is.
+
+Luis
+
+On Fri, 2002-08-09 at 13:08, Gary Lawrence Murphy wrote:
+> 
+> I'm sure this is common knowledge already, but just in case ...
+> 
+> http://security.tombom.co.uk/shatter.html
+> 
+>    This paper presents a new generation of attacks against Microsoft
+>    Windows, and possibly other message-based windowing systems. The
+>    flaws presented in this paper are, at the time of writing,
+>    unfixable. The only reliable solution to these attacks requires
+>    functionality that is not present in Windows, as well as efforts on
+>    the part of every single Windows software vendor. Microsoft has
+>    known about these flaws for some time; when I alerted them to this
+>    attack, their response was that they do not class it as a flaw -
+>    the email can be found here. This research was sparked by comments
+>    made by Microsoft VP Jim Allchin who stated, under oath, that there
+>    were flaws in Windows so great that they would threaten national
+>    security if the Windows source code were to be disclosed. He
+>    mentioned Message Queueing, and immediately regretted it. However,
+>    given the quantity of research currently taking place around the
+>    world after Mr Allchin's comments, it is about time the white hat
+>    community saw what is actually possible.
+> 
+> 
+> -- 
+> Gary Lawrence Murphy <garym@teledyn.com> TeleDynamics Communications Inc
+> Business Innovations Through Open Source Systems: http://www.teledyn.com
+> "Computers are useless.  They can only give you answers."(Pablo Picasso)
+> 
+> http://xent.com/mailman/listinfo/fork
+> 
+
+http://xent.com/mailman/listinfo/fork
+
+

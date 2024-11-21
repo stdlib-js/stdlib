@@ -1,0 +1,11 @@
+
+contributors()
+    Prints the list of contributors.
+
+    Examples
+    --------
+    > credits()
+
+    See Also
+    --------
+    credits, donate, help

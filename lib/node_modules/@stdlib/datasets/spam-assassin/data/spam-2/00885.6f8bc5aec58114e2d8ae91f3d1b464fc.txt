@@ -1,0 +1,100 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6MHmfhY030050
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Mon, 22 Jul 2002 12:48:41 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6MHmemW030045
+	for cypherpunks-forward@ds.pro-ns.net; Mon, 22 Jul 2002 12:48:40 -0500 (CDT)
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6MHmUhY030000
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks@ds.pro-ns.net>; Mon, 22 Jul 2002 12:48:31 -0500 (CDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: from waste.minder.net (daemon@waste [66.92.53.73])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6MHmSJ43304
+	for <cypherpunks@ds.pro-ns.net>; Mon, 22 Jul 2002 13:48:29 -0400 (EDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: (from cpunks@localhost)
+	by waste.minder.net (8.11.6/8.11.6) id g6MHmRZ05918
+	for cypherpunks@ds.pro-ns.net; Mon, 22 Jul 2002 13:48:27 -0400
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by waste.minder.net (8.11.6/8.11.6) with ESMTP id g6MHmQR05903
+	for <cpunks@minder.net>; Mon, 22 Jul 2002 13:48:26 -0400
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6MHmPJ43294
+	for <cpunks@minder.net>; Mon, 22 Jul 2002 13:48:25 -0400 (EDT)
+	(envelope-from cpunks@einstein.ssz.com)
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id MAA16531
+	for cpunks@minder.net; Mon, 22 Jul 2002 12:56:45 -0500
+Received: (from mdom@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id MAA16518
+	for cypherpunks-outgoing; Mon, 22 Jul 2002 12:55:17 -0500
+Received: from 198.64.154.71-generic ([198.64.154.71])
+	by einstein.ssz.com (8.8.8/8.8.8) with SMTP id MAA16497
+	for <cypherpunks@einstein.ssz.com>; Mon, 22 Jul 2002 12:53:44 -0500
+Message-Id: <200207221753.MAA16497@einstein.ssz.com>
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain
+MIME-Version: 1.0
+Date: Mon, 22 Jul 2002 17:45:17 UT
+X-X: H4F%N9&]M25:M/4_5/$17>VC6F..<,P7S*O,$)?RKA0Y<82:6X)FGT0``
+Old-Subject: CDR: Friend, Get Help With Your Debt Now!!
+X-List-Unsubscribe: <unsub-7552100-311@mm53.com>
+From: "Only the Best" <OnlyTheBest_______r-7552100-311@mm53.com>
+X-Stormpost-To: cypherpunks@einstein.ssz.com 7552100 311
+To: "Friend" <cypherpunks@einstein.ssz.com>
+X-Mailer: StormPost 1.0
+Sender: owner-cypherpunks@einstein.ssz.com
+Precedence: bulk
+Reply-To: cypherpunks@einstein.ssz.com
+X-Mailing-List: cypherpunks@ssz.com
+X-Unsubscription-Info: http://einstein.ssz.com/cdr
+X-List-Admin: list@ssz.com
+X-Loop: ssz.com
+X-Acceptable-Languages: English, Russian, German, French, Spanish
+Subject: Friend, Get Help With Your Debt Now!!
+
+Hi Friend,
+ 
+ezDebtConsolidationInfo.com
+-----------------------------------------------------------
+Is your debt causing you problems?
+      CONSOLIDATE YOUR DEBTS!
+and...
+* Pay one monthly payment that you can afford
+* Reduce interest rates, paying off your debt sooner
+* Avoid the consequences of bankruptcy
+* Answer your phone calls without fear!
+http://click.mm53.com/sp/t.pl?id=3120:7552100
+ 
+<a href="http://click.mm53.com/sp/t.pl?id=3121:7552100">Click Here for A Free Evaluation!</a>
+or type http://click.mm53.com/sp/t.pl?id=3122:7552100 into your browser.
+------------------------------------------------------------
+Remove yourself from this recurring list by sending a blank email to
+mailto:unsub-7552100-311@mm53.com
+
+OR Sending a postal mail to:
+Customer Service
+427-3 Amherst Street, Suite 319
+Nashua, NH 03063
+
+This message was sent to address cypherpunks@einstein.ssz.com
+
+
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

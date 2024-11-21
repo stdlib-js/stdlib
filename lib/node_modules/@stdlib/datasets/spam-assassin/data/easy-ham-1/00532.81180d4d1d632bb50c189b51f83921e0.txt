@@ -1,0 +1,96 @@
+From fork-admin@xent.com  Mon Sep  9 19:28:09 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 7C8DA16EFC
+	for <jm@localhost>; Mon,  9 Sep 2002 19:28:07 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 19:28:07 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g89I2EC26245 for <jm@jmason.org>;
+    Mon, 9 Sep 2002 19:02:15 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 487422941FE; Mon,  9 Sep 2002 10:59:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mail.evergo.net (unknown [206.191.151.2]) by xent.com
+    (Postfix) with SMTP id 65C3729409A for <fork@xent.com>; Mon,
+    9 Sep 2002 10:58:34 -0700 (PDT)
+Received: (qmail 17942 invoked from network); 9 Sep 2002 18:01:22 -0000
+Received: from dsl.206.191.151.102.evergo.net (HELO JMHALL)
+    (206.191.151.102) by mail.evergo.net with SMTP; 9 Sep 2002 18:01:22 -0000
+Reply-To: <johnhall@evergo.net>
+From: "John Hall" <johnhall@evergo.net>
+Cc: <fork@spamassassin.taint.org>
+Subject: RE: The Big Jump
+Message-Id: <002201c2582a$e84211f0$0200a8c0@JMHALL>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.2627
+Importance: Normal
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+In-Reply-To: <15861948735.20020908113611@magnesium.net>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 9 Sep 2002 11:01:22 -0700
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g89I2EC26245
+
+
+Why so fast?  Normal terminal velocity is much slower.
+
+> -----Original Message-----
+> From: fork-admin@xent.com [mailto:fork-admin@xent.com] On Behalf Of
+> bitbitch@magnesium.net
+> Sent: Sunday, September 08, 2002 8:36 AM
+> To: (Robert Harley)
+> Cc: fork@spamassassin.taint.org
+> Subject: Re: The Big Jump
+> 
+> 
+> 
+> So uh, would this qualify for the Darwin awards if he doesn't make it?
+> 
+> Freaking french people...
+>    :-)
+> -BB
+> RH> Today a French officer called Michel Fournier is supposed to get
+in a
+> RH> 350-metre tall helium balloon, ride it up to the edge of space (40
+km
+> RH> altitude) and jump out.  His fall should last 6.5 minutes and
+reach
+> RH> speeds of Mach 1.5.  He hopes to open his parachute manually at
+the
+> RH> end, although with an automatic backup if he is 7 seconds from the
+> RH> ground and still hasn't opened it.
+> 
+> RH> R
+> 
+> RH> ObQuote:
+> RH>   "Vederò, si averò si grossi li coglioni, come ha il re di
+Franza."
+> RH>   ("Let's see if I've got as much balls as the King of France!")
+> RH>   - Pope Julius II, 2 January 1511
+> 
+> 
+> 
+> --
+> Best regards,
+>  bitbitch                            mailto:bitbitch@magnesium.net
+
+
+

@@ -1,0 +1,74 @@
+From fork-admin@xent.com  Wed Oct  2 11:47:46 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 5F55016F18
+	for <jm@localhost>; Wed,  2 Oct 2002 11:47:35 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 02 Oct 2002 11:47:35 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g9236FK22873 for <jm@jmason.org>;
+    Wed, 2 Oct 2002 04:06:16 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 36EF22940E7; Tue,  1 Oct 2002 20:06:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from rwcrmhc53.attbi.com (rwcrmhc53.attbi.com [204.127.198.39])
+    by xent.com (Postfix) with ESMTP id E7ECE29409C for <Fork@xent.com>;
+    Tue,  1 Oct 2002 20:05:53 -0700 (PDT)
+Received: from [24.61.113.164] by rwcrmhc53.attbi.com (InterMail
+    vM.4.01.03.27 201-229-121-127-20010626) with ESMTP id
+    <20021002030600.OZEX18767.rwcrmhc53.attbi.com@[24.61.113.164]> for
+    <Fork@xent.com>; Wed, 2 Oct 2002 03:06:00 +0000
+From: bitbitch@magnesium.net
+X-Mailer: The Bat! (v1.61) Educational
+Reply-To: bitbitch@magnesium.net
+X-Priority: 3 (Normal)
+Message-Id: <1917968978.20021001230556@magnesium.net>
+To: Fork@xent.com
+Subject: Creative political speech
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 1 Oct 2002 23:05:56 -0400
+
+
+
+http://www.quitpalestine.org./
+
+Funny as all hell.  So a group of 25 QUIT (Queers Undermining Israeli
+Terrorism) marched into the local starbucks in Berkeley (Of course,
+they pick a safe city like Berkeley, but hey, still funny) and
+'settle' driving away straights and other prior inhabitants with
+supersoakers :)
+
+Incredibly creative, in my opinion. Not terribly violent (I mean, how
+much damage can you -really-  do with a supersoaker?) but definintely
+a newscatcher.
+
+Its nice to see folks are finding some creative means to make a point.
+ Even if you don't -agree- with it, its a hard sell to say that this
+ has been done before.
+
+<C'mon... I'm just waiting for the uproar from the Conservatives on the
+list ... :-)>
+
+
+
+-- 
+Best regards,
+ bitbitch                          mailto:bitbitch@magnesium.net
+
+

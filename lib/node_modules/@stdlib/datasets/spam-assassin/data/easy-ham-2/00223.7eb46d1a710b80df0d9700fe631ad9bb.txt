@@ -1,0 +1,69 @@
+From ilug-admin@linux.ie  Fri Aug  2 10:06:29 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 529A2440F0
+	for <jm@localhost>; Fri,  2 Aug 2002 05:06:29 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 02 Aug 2002 10:06:29 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g72969213858 for
+    <jm-ilug@jmason.org>; Fri, 2 Aug 2002 10:06:09 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA28264; Fri, 2 Aug 2002 10:03:23 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from AUSADMMSPS305.aus.amer.dell.com
+    (ausadmmsps305.aus.amer.dell.com [143.166.224.100]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id KAA28229 for <ilug@linux.ie>; Fri,
+    2 Aug 2002 10:03:14 +0100
+From: Stephen_Reilly@dell.com
+Received: from 143.166.227.176 by AUSADMMSPS305.aus.amer.dell.com with
+    ESMTP (Tumbleweed MMS SMTP Relay (MMS v4.7);); Fri, 02 Aug 2002 04:02: 43
+    -0500
+X-Server-Uuid: bc938b4d-8e35-4c08-ac42-ea3e606f44ee
+Received: by ausxc08.us.dell.com with Internet Mail Service (5.5.2650.21 )
+    id <PFCDFB1T>; Fri, 2 Aug 2002 03:55:00 -0500
+Message-Id: <653270E74A8DD31197AF009027AA4F8B01845F1B@LIMXMMF303>
+To: ilug@linux.ie
+Subject: RE: [ILUG] Dell GX260 V Redhat 7.3
+Date: Fri, 2 Aug 2002 04:02:38 -0500
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2650.21)
+X-WSS-Id: 115495395499744-01-01
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: 7bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+> bad thing. Just a bad thing for those that hope a distro will 
+> work out of
+> the box.
+
+	It's still quite easy to find out, pre-purchase, what components if
+any are going to give you problems with a specific distribution/version.
+With Dell just check the support.dell.com site, match the system, look for
+downloadable drivers. From these if there aren't any linux drivers you can
+usually find out the chipset of each device. Plug them into google with
+"linux" and see what people have to say about them. Generally speaking when
+you buy the system you'll be told the make/model of each device rather than
+the chipset, so further investigation is necessary.
+
+	The cavaet, of course, is always to know exactly what you're buying.
+In most people's cases unfortunately it's not the person who bought the
+systems that will be configuring them.
+
+steve
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

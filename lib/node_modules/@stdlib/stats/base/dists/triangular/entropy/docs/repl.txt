@@ -1,0 +1,36 @@
+
+{{alias}}( a, b, c )
+    Returns the differential entropy of a triangular distribution (in nats).
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If the condition `a <= c <= b` is not satisfied, the function returns `NaN`.
+
+    Parameters
+    ----------
+    a: number
+        Minimum support.
+
+    b: number
+        Maximum support.
+
+    c: number
+        Mode.
+
+    Returns
+    -------
+    out: number
+        Entropy.
+
+    Examples
+    --------
+    > var v = {{alias}}( 0.0, 1.0, 0.8 )
+    ~-0.193
+    > v = {{alias}}( 4.0, 12.0, 5.0 )
+    ~1.886
+    > v = {{alias}}( 2.0, 8.0, 5.0 )
+    ~1.599
+
+    See Also
+    --------
+

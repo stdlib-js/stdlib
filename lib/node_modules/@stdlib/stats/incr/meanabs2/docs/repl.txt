@@ -1,0 +1,31 @@
+
+{{alias}}()
+    Returns an accumulator function which incrementally computes an arithmetic
+    mean of squared absolute values.
+
+    If provided a value, the accumulator function returns an updated mean. If
+    not provided a value, the accumulator function returns the current mean.
+
+    If provided `NaN` or a value which, when used in computations, results in
+    `NaN`, the accumulated value is `NaN` for all future invocations.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}();
+    > var mu = accumulator()
+    null
+    > mu = accumulator( 2.0 )
+    4.0
+    > mu = accumulator( -5.0 )
+    14.5
+    > mu = accumulator()
+    14.5
+
+    See Also
+    --------
+

@@ -1,0 +1,65 @@
+From fork-admin@xent.com  Mon Aug 19 11:05:46 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5FA6043C36
+	for <jm@localhost>; Mon, 19 Aug 2002 05:55:50 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:55:50 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7J3vT606688 for <jm@jmason.org>;
+    Mon, 19 Aug 2002 04:57:32 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 8FC4D2940BF; Sun, 18 Aug 2002 20:55:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from argote.ch (argote.ch [80.65.224.17]) by xent.com (Postfix)
+    with ESMTP id 120072940B8 for <fork@xent.com>; Sun, 18 Aug 2002 20:54:43
+    -0700 (PDT)
+Received: by argote.ch (Postfix, from userid 500) id A9372C44E;
+    Mon, 19 Aug 2002 05:49:26 +0200 (CEST)
+To: fork@spamassassin.taint.org
+Subject: Re: Al'Qaeda's fantasy ideology: Policy Review no. 114
+Message-Id: <20020819034926.A9372C44E@argote.ch>
+From: harley@argote.ch (Robert Harley)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 19 Aug 2002 05:49:26 +0200 (CEST)
+
+>There is a hot dispute about the original size of the indigenous
+>population, but the evidence for a high density in the Mexican area is
+>sound.  It was up here in the North or in the Amazon where I'm a little
+>more suspicious of very high upward revisions.
+
+Right, there was definitely a relatively high density in Mexico, and
+much less elsewhere.  Population estimates vary wildly and about all
+your average skeptic can do is take geometric means to get ballpark
+figures.  While Central America may have had 20 or 30 million, vast
+areas of South America were uninhabited and other places very
+sparsely e.g., the plains Indians in what is now the U.S. may have
+been 2 million or so.
+
+There are those who claim that the Mexican population declined from
+20 something million to circa 8 or 10 million in the 16th century,
+certainly, in part due to infectious diseases new and old, and other
+factors, and was probably in decline before contact.  Others claim it
+declined from 80-ish million to 3 or 4 million and somehow deduce 95%
+mortality from imported diseases, and have a pretty clear agenda which
+makes me (for one) take their claims with a large grain of salt.
+
+About all that is certain is that anyone alive in 1500 was dead in 1600,
+in the Americas or elsewhere.
+
+R
+http://xent.com/mailman/listinfo/fork
+

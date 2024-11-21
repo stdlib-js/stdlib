@@ -1,0 +1,31 @@
+
+{{alias}}( dtype )
+    Returns the minimum safe integer capable of being represented by a numeric
+    real type.
+
+    The following numeric real types are supported:
+
+    - float64: double-precision floating-point numbers.
+    - float32: single-precision floating-point numbers.
+    - float16: half-precision floating-point numbers.
+
+    Parameters
+    ----------
+    dtype: string
+        Numeric type.
+
+    Returns
+    -------
+    out: integer
+        Minimum safe integer.
+
+    Examples
+    --------
+    > var m = {{alias}}( 'float16' )
+    -2047
+    > m = {{alias}}( 'float32' )
+    -16777215
+
+    See Also
+    --------
+

@@ -1,0 +1,214 @@
+#!/usr/bin/env node
+
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2019 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+'use strict';
+
+// MODULES //
+
+var resolve = require( 'path' ).resolve;
+var ReadStream = require( 'tty' ).ReadStream;
+var openSync = require( '@stdlib/fs/open' ).sync;
+var closeSync = require( '@stdlib/fs/close' ).sync;
+var readFileSync = require( '@stdlib/fs/read-file' ).sync;
+var CLI = require( '@stdlib/cli/ctor' );
+var stdin = require( '@stdlib/process/read-stdin' );
+var stdinStream = require( '@stdlib/streams/node/stdin' );
+var REPL = require( '@stdlib/repl' );
+var lowercase = require( '@stdlib/string/lowercase' );
+var IS_WINDOWS = require( '@stdlib/assert/is-windows' );
+var Presentation = require( './../lib' ); // eslint-disable-line stdlib/no-redeclare
+
+
+// MAIN //
+
+/**
+* Main execution sequence.
+*
+* @private
+* @returns {void}
+*/
+function main() {
+	var flags;
+	var opts1;
+	var opts2;
+	var repl;
+	var pres;
+	var args;
+	var cli;
+	var err;
+
+	// Create a command-line interface:
+	cli = new CLI({
+		'pkg': require( './../package.json' ),
+		'options': require( './../etc/cli_opts.json' ),
+		'help': readFileSync( resolve( __dirname, '..', 'docs', 'usage.txt' ), {
+			'encoding': 'utf8'
+		})
+	});
+
+	// Get any provided command-line options:
+	flags = cli.flags();
+	if ( flags.help || flags.version ) {
+		return;
+	}
+
+	// Get any provided command-line arguments:
+	args = cli.args();
+
+	// Handle REPL options...
+	opts1 = {};
+	if ( typeof flags[ 'input-prompt' ] === 'string' ) {
+		opts1.inputPrompt = flags[ 'input-prompt' ];
+	}
+	if ( flags.logfile ) {
+		opts1.log = flags.logfile;
+	}
+	if ( typeof flags[ 'output-prompt' ] === 'string' ) {
+		opts1.outputPrompt = flags[ 'output-prompt' ];
+	}
+	if ( flags.padding ) {
+		opts1.padding = parseInt( flags.padding, 10 );
+	}
+	if ( flags.quiet ) {
+		opts1.quiet = flags.quiet;
+	}
+	if ( flags.save ) {
+		opts1.save = flags.save;
+	}
+	if ( flags.timeout ) {
+		opts1.timeout = parseInt( flags.timeout, 10 );
+	}
+
+	// Handle presentation options...
+	opts2 = {};
+	if ( typeof flags[ 'border-top' ] === 'string' ) {
+		opts2.borderTop = flags[ 'border-top' ];
+	}
+	if ( typeof flags[ 'border-bottom' ] === 'string' ) {
+		opts2.borderBottom = flags[ 'border-bottom' ];
+	}
+	if ( typeof flags[ 'border-left' ] === 'string' ) {
+		opts2.borderLeft = flags[ 'border-left' ];
+	}
+	if ( typeof flags[ 'border-right' ] === 'string' ) {
+		opts2.borderRight = flags[ 'border-right' ];
+	}
+	if ( flags.width ) {
+		opts2.width = parseInt( flags.width, 10 );
+	}
+	if ( flags.height ) {
+		opts2.height = parseInt( flags.height, 10 );
+	}
+	if ( flags.workspace ) {
+		opts2.workspace = flags.workspace;
+	}
+	if ( flags.counter ) {
+		flags.counter = lowercase( flags.counter );
+		if ( flags.counter === 'true' || flags.counter === 't' ) {
+			opts2.counter = true;
+		} else if ( flags.counter === 'false' || flags.counter === 'f' ) {
+			opts2.counter = false;
+		} else {
+			opts2.counter = flags.counter;
+		}
+	}
+	if ( flags.autoclear === false ) {
+		opts2.autoClear = flags.autoclear;
+	}
+	if ( flags.loop ) {
+		opts2.loop = flags.loop;
+	}
+	// Check if we are receiving data from `stdin`...
+	if ( !stdinStream.isTTY ) {
+		if ( IS_WINDOWS ) {
+			err = new Error( 'invalid operation. Receiving data over `stdin` is not currently supported on Windows. Load a presentation from a file.' );
+			return cli.error( err );
+		}
+		return stdin( onRead );
+	}
+	opts2.load = args[ 0 ];
+
+	// Create a new REPL instance:
+	repl = new REPL( opts1 );
+
+	// Create a new REPL presentation:
+	pres = new Presentation( repl, opts2 );
+
+	// Render the first slide:
+	pres.show();
+
+	// Check whether to begin watching the source presentation file...
+	if ( flags.watch ) {
+		pres.on( 'change', onChange );
+		pres.watch();
+	}
+
+	/**
+	* Callback invoked upon a change to the source presentation file.
+	*
+	* @private
+	*/
+	function onChange() {
+		pres.show();
+	}
+
+	/**
+	* Callback invoked upon reading from `stdin`.
+	*
+	* @private
+	* @param {(Error|null)} error - error object
+	* @param {Buffer} text - text
+	* @returns {void}
+	*/
+	function onRead( error, text ) {
+		var repl;
+		var pres;
+		var fd;
+		if ( error ) {
+			return cli.error( error );
+		}
+		// Because we received input over `stdin`, we need to create a new TTY `stdin` read stream for receiving interactive user input...
+		fd = openSync( '/dev/tty', 'r' );
+		if ( fd instanceof Error ) {
+			return cli.error( error );
+		}
+		opts1.input = new ReadStream( fd ); // note: instance of net.Socket
+
+		// Create a new REPL instance:
+		repl = new REPL( opts1 );
+		repl.once( 'exit', onExit );
+
+		// Create a new REPL presentation:
+		pres = new Presentation( text.toString(), repl, opts2 );
+		pres.show();
+
+		/**
+		* Callback invoked upon exiting a REPL.
+		*
+		* @private
+		*/
+		function onExit() {
+			opts1.input.end(); // close socket to prevent the process from hanging (see https://github.com/nodejs/node-v0.x-archive/issues/7101)
+			closeSync( fd );
+		}
+	}
+}
+
+main();

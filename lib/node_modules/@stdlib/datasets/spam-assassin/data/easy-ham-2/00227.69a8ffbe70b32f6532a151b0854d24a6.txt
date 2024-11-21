@@ -1,0 +1,66 @@
+From ilug-admin@linux.ie  Fri Aug  2 10:47:19 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7BF00440F1
+	for <jm@localhost>; Fri,  2 Aug 2002 05:47:19 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 02 Aug 2002 10:47:19 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g729fT214937 for
+    <jm-ilug@jmason.org>; Fri, 2 Aug 2002 10:41:29 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA30322; Fri, 2 Aug 2002 10:39:48 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from holly.csn.ul.ie (holly.csn.ul.ie [136.201.105.4]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id KAA30294 for <ilug@linux.ie>;
+    Fri, 2 Aug 2002 10:39:42 +0100
+Received: from skynet.csn.ul.ie (skynet [136.201.105.2]) by
+    holly.csn.ul.ie (Postfix) with ESMTP id 51C612B6B9 for <ilug@linux.ie>;
+    Fri,  2 Aug 2002 10:39:12 +0100 (IST)
+Received: by skynet.csn.ul.ie (Postfix, from userid 2196) id 45411E508;
+    Fri,  2 Aug 2002 10:39:12 +0100 (IST)
+Date: Fri, 2 Aug 2002 10:39:12 +0100
+From: Stephen Shirley <diamond@skynet.ie>
+To: "Irish Linux User's Group (E-mail)" <ilug@linux.ie>
+Subject: Re: [ILUG] Quake 3
+Message-Id: <20020802093912.GA19703@skynet.ie>
+Mail-Followup-To: "Irish Linux User's Group (E-mail)" <ilug@linux.ie>
+References: <D0A7D6543169D3119B3E00902789397E044219E7@oasis006.msc.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <D0A7D6543169D3119B3E00902789397E044219E7@oasis006.msc.ie>
+User-Agent: Mutt/1.3.24i
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Fri, Aug 02, 2002 at 09:41:52AM +0100, Gregory McRandal (ext 722) wrote:
+> I've installed Quake 3 onto my computer and it starts to run up ok but as
+> soon as the graphics start it bails out.  It complains that there is an
+> error in sis_drv.o,  the line before this says that it is starting Quake in
+> 24 bit depth, now from http://www.winischhofer.net/linuxsis630.shtml I
+> understand that the sis630 won't do 24 bit depth.  So is there a way to make
+> Quake start up in 16 bit depth?  I've done some "google"ing but drawn a
+> blank.....
+
+Hmm. Check to see what colour-depth your X session is running in. Try
+changing DefaultDepth to 16 (in /etc/X11/XF86Cnfig-4), and restarting X.
+Letting us know what distro you're using would help too.
+
+Steve
+-- 
+"Oh look, it's the Pigeon of Love."
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

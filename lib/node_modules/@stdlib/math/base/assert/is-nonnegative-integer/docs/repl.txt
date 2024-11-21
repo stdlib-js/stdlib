@@ -1,0 +1,32 @@
+
+{{alias}}( x )
+    Tests if a finite double-precision floating-point number is a nonnegative
+    integer.
+
+    The function assumes a finite number. If provided positive infinity, the
+    function will return `true`, when, in fact, the result is undefined.
+
+    The function does not distinguish between positive and negative zero.
+
+    Parameters
+    ----------
+    x: number
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether the value is a nonnegative integer.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 1.0 )
+    true
+    > bool = {{alias}}( 0.0 )
+    true
+    > bool = {{alias}}( -10.0 )
+    false
+
+    See Also
+    --------
+

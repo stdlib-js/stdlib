@@ -1,0 +1,31 @@
+#!/usr/bin/env node
+'use strict';
+
+var randn = require( '@stdlib/random/base/box-muller' );
+var Float64Array = require( '@stdlib/array/float64' );
+var now = require( '@stdlib/time/now' );
+var Plot = require( './../lib' );
+
+var t;
+var x;
+var y;
+var i;
+
+// Create some data...
+t = now() * 1000;
+x = new Float64Array( 100 );
+y = new Float64Array( x.length );
+for ( i = 0; i < x.length; i++ ) {
+	x[ i ] = t + (i*360000);
+	y[ i ] = 50.0 + (10.0*randn());
+}
+
+// Create a new plot:
+var plot = new Plot( [ x ], [ y ] );
+plot.width = 600;
+plot.height = 480;
+plot.xScale = 'time';
+plot.xTickFormat = '%H:%M';
+
+// View the plot in a browser:
+plot.view( 'browser' );

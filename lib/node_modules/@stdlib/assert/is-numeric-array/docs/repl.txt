@@ -1,0 +1,27 @@
+
+{{alias}}( value )
+    Tests if a value is a numeric array.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if a value is a numeric array.
+
+    Examples
+    --------
+    > var bool = {{alias}}( new {{alias:@stdlib/array/int8}}( 10 ) )
+    true
+    > bool = {{alias}}( [ 1, 2, 3 ] )
+    true
+    > bool = {{alias}}( [ '1', '2', '3' ] )
+    false
+
+    See Also
+    --------
+
+

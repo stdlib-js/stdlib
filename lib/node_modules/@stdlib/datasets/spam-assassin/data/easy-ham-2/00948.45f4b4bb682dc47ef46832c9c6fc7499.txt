@@ -1,0 +1,75 @@
+From fork-admin@xent.com  Mon Jul 15 21:45:02 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by netnoteinc.com (Postfix) with ESMTP id 96EBC43F9E
+	for <jm@localhost>; Mon, 15 Jul 2002 16:45:00 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 15 Jul 2002 21:45:00 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6FKgZJ05173 for <jm@jmason.org>;
+    Mon, 15 Jul 2002 21:42:35 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 226192940E6; Mon, 15 Jul 2002 13:31:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.auracom.net (smtp1.auracom.net [165.154.140.23]) by
+    xent.com (Postfix) with ESMTP id A8989294098 for <fork@xent.com>;
+    Mon, 15 Jul 2002 13:31:01 -0700 (PDT)
+Received: from maya.dyndns.org (ts5-033.ptrb.interhop.net
+    [165.154.190.97]) by smtp1.auracom.net (8.11.2/8.11.2) with ESMTP id
+    g6FI8ax19509 for <fork@xent.com>; Mon, 15 Jul 2002 14:08:36 -0400 (EDT)
+Received: by maya.dyndns.org (Postfix, from userid 501) id 053581C2F1;
+    Mon, 15 Jul 2002 14:18:08 -0400 (EDT)
+To: fork@spamassassin.taint.org
+Subject: Re: Maybe it's just me ...
+References: <aa.e71a176.2a641bca@aol.com>
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Date: 15 Jul 2002 14:18:08 -0400
+Message-Id: <m2y9ccety7.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Friends of Rohit Khare <fork.xent.com>
+X-Beenthere: fork@spamassassin.taint.org
+
+>>>>> "T" == ThosStew  <ThosStew@aol.com> writes:
+
+    T> ... The Mormon church has a fabulous MIS system, and since it's
+    T> built on geneological tracking
+
+If that's what you would like to believe, go right ahead.
+
+    T> I assume you weren't suggesting that a person's religion
+    T> (assuming the Mormon's ex-CIO was Mormon) should be an
+    T> issue. 
+
+No, not at all.  I was only concerned where the border between religion 
+and cult gets real fuzzy, and where the r/c in question has known
+paranoiac tendencies.  
+
+Then again, maybe you're right, it's a very close match in job
+descriptions.  Obviously it does not concern anyone else, and since
+it's none of my business, I'll shut up about it and put it down to
+more funky fun in US politics.
+
+Afterall, all I know for certain about the Mormons is the background
+and fallout on my ex-wife's excommunication ;)
+
+-- 
+Gary Lawrence Murphy <garym@teledyn.com> TeleDynamics Communications Inc
+Business Innovations Through Open Source Systems: http://www.teledyn.com
+"Computers are useless.  They can only give you answers."(Pablo Picasso)
+
+
+
+http://xent.com/mailman/listinfo/fork
+
+

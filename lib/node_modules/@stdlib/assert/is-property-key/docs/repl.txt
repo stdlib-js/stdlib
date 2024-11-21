@@ -1,0 +1,25 @@
+
+{{alias}}( value )
+    Tests whether a value is a property key.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    out: boolean
+        Boolean indicating whether value is a property key.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'foo' )
+    true
+    > out = {{alias}}( 1 )
+    true
+    > out = {{alias}}( true )
+    false
+
+    See Also
+    --------

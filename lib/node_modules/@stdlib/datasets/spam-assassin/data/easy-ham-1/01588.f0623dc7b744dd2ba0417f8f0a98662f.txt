@@ -1,0 +1,75 @@
+From razor-users-admin@lists.sourceforge.net  Mon Sep 16 15:30:51 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 78BD916F03
+	for <jm@localhost>; Mon, 16 Sep 2002 15:30:49 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 16 Sep 2002 15:30:49 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8GDPKC27135 for <jm-razor@jmason.org>; Mon, 16 Sep 2002 14:25:20 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17qvkS-0000o5-00; Mon,
+    16 Sep 2002 06:17:08 -0700
+Received: from bsd.mbp.ee ([194.204.12.74]) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17qvkA-00069G-00 for
+    <razor-users@lists.sourceforge.net>; Mon, 16 Sep 2002 06:16:50 -0700
+Received: (from root@localhost) by bsd.mbp.ee (8.12.5/8.12.5) id
+    g8GDGYou031194 for razor-users@lists.sourceforge.net; Mon, 16 Sep 2002
+    16:16:34 +0300 (EEST) (envelope-from raido@elve.elin.ttu.ee)
+Received: from pikk-koon-teravoga.mbp.ee (pikk-koon-teravoga.mbp.ee
+    [194.204.12.183]) by bsd.mbp.ee (8.12.5/8.12.5av) with ESMTP id
+    g8GDGVfl031186 for <razor-users@lists.sourceforge.net>; Mon,
+    16 Sep 2002 16:16:31 +0300 (EEST) (envelope-from raido@elve.elin.ttu.ee)
+From: Raido Kurel <raido@elve.elin.ttu.ee>
+To: razor-users@example.sourceforge.net
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Evolution/1.0.2-5mdk
+Message-Id: <1032182191.9209.15.camel@pikk-koon-teravoga.mbp.ee>
+MIME-Version: 1.0
+X-Virus-Scanned: by AMaViS perl-11
+Subject: [Razor-users] empty mail is spamm?
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=razor-users>
+X-Original-Date: 16 Sep 2002 16:16:31 +0300
+Date: 16 Sep 2002 16:16:31 +0300
+
+Hi,
+
+Is it possible to use razor without filtering empty mails as spamm?
+An mail with an attachment is considered spamm. Is this normal?
+Or I mysqlf like to send emails to myself where all important is said in
+subject and body is empty (for remaining smth).
+
+Thanks,
+Raido Kurel
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

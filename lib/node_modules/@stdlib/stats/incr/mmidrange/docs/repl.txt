@@ -1,0 +1,49 @@
+
+{{alias}}( W )
+    Returns an accumulator function which incrementally computes a moving mid-
+    range.
+
+    The mid-range is the arithmetic mean of maximum and minimum values.
+    Accordingly, the mid-range is the midpoint of the range and a measure of
+    central tendency.
+
+    The `W` parameter defines the number of values over which to compute
+    the moving mid-range.
+
+    If provided a value, the accumulator function returns an updated moving mid-
+    range. If not provided a value, the accumulator function returns the current
+    moving mid-range.
+
+    As `W` values are needed to fill the window buffer, the first `W-1` returned
+    values are calculated from smaller sample sizes. Until the window is full,
+    each returned value is calculated from all provided values.
+
+    Parameters
+    ----------
+    W: integer
+        Window size.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}( 3 );
+    > var mr = accumulator()
+    null
+    > mr = accumulator( 2.0 )
+    2.0
+    > mr = accumulator( -5.0 )
+    -1.5
+    > mr = accumulator( 3.0 )
+    -1.0
+    > mr = accumulator( 5.0 )
+    0.0
+    > mr = accumulator()
+    0.0
+
+    See Also
+    --------
+

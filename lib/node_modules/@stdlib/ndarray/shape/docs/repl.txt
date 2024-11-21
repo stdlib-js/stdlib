@@ -1,0 +1,22 @@
+
+{{alias}}( x )
+    Returns the shape of a provided ndarray.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray.
+
+    Returns
+    -------
+    out: Array<integer>
+        Shape.
+
+    Examples
+    --------
+    > var out = {{alias}}( {{alias:@stdlib/ndarray/zeros}}( [ 3, 3, 3 ] ) )
+    [ 3, 3, 3 ]
+
+    See Also
+    --------
+

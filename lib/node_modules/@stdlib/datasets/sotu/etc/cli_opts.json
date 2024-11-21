@@ -1,0 +1,20 @@
+{
+	"string": [
+		"name",
+		"party",
+		"year",
+		"range"
+	],
+	"boolean": [
+		"help",
+		"version"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		]
+	}
+}

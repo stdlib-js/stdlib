@@ -1,0 +1,31 @@
+
+{{alias}}( x, y )
+    Computes the natural logarithm of `exp(x) + exp(y)`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    y: number
+        Input value.
+
+    Returns
+    -------
+    v: number
+        Function value.
+
+    Examples
+    --------
+    > var v = {{alias}}( 90.0, 90.0 )
+    ~90.6931
+    > v = {{alias}}( -20.0, 90.0 )
+    90.0
+    > v = {{alias}}( 0.0, -100.0 )
+    ~3.7201e-44
+    > v = {{alias}}( NaN, NaN )
+    NaN
+
+    See Also
+    --------
+

@@ -1,0 +1,32 @@
+
+{{alias}}( x )
+    Computes the versed sine.
+
+    The versed sine is defined as `1 - cos(x)`.
+
+    Parameters
+    ----------
+    x: number
+        Input value (in radians).
+
+    Returns
+    -------
+    y: number
+        Versed sine.
+
+    Examples
+    --------
+    > var y = {{alias}}( 3.14 )
+    ~2.0
+    > y = {{alias}}( -4.2 )
+    ~1.490
+    > y = {{alias}}( -4.6 )
+    ~1.112
+    > y = {{alias}}( 9.5 )
+    ~1.997
+    > y = {{alias}}( -0.0 )
+    0.0
+
+    See Also
+    --------
+

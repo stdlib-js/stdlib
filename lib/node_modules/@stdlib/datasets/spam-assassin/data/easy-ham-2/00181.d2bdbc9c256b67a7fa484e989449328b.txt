@@ -1,0 +1,68 @@
+From ilug-admin@linux.ie  Wed Jul 31 16:33:52 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C8738440A8
+	for <jm@localhost>; Wed, 31 Jul 2002 11:33:51 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 31 Jul 2002 16:33:51 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6VFRR230699 for
+    <jm-ilug@jmason.org>; Wed, 31 Jul 2002 16:27:27 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA12792; Wed, 31 Jul 2002 16:25:23 +0100
+Received: from dspsrv.com (vir.dspsrv.com [193.120.211.34]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id QAA12758 for <ilug@linux.ie>;
+    Wed, 31 Jul 2002 16:25:16 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host vir.dspsrv.com
+    [193.120.211.34] claimed to be dspsrv.com
+Received: from itg-gw.cr008.cwt.esat.net ([193.120.242.226]
+    helo=waider.ie) by dspsrv.com with asmtp (Exim 3.35 #1) id
+    17ZvLf-0002G1-00 for ilug@linux.ie; Wed, 31 Jul 2002 16:25:15 +0100
+Message-Id: <3D4800B7.2000407@waider.ie>
+Date: Wed, 31 Jul 2002 16:22:31 +0100
+From: Waider <waider@waider.ie>
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.0.0) Gecko/20020607
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: ilug@linux.ie
+Subject: Re: [ILUG] sysctl.conf
+References: <20020731152211.GE5178@jinny.ie>
+X-Enigmail-Version: 0.63.3.0
+X-Enigmail-Supports: pgp-inline, pgp-mime
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+John P. Looney wrote:
+>  OK, I guess that sysctl.conf is the best way of setting 
+> 
+>     /proc/sys/fs/file-max
+> 
+>  to a nice big number. Can you make a change to /etc/sysctl.conf, and then
+> have it take effect, without a reboot (to test it, really) ?
+> 
+> John
+> 
+> 
+
+Have a look at the manual page for the sysctl command?
+
+Cheers,
+Waider.
+-- 
+waider@waider.ie / Yes, it /is/ very personal of me
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

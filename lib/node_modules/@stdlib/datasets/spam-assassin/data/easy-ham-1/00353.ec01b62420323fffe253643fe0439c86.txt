@@ -1,0 +1,80 @@
+From fork-admin@xent.com  Wed Aug 28 18:28:06 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A52A143F99
+	for <jm@localhost>; Wed, 28 Aug 2002 13:28:06 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 28 Aug 2002 18:28:06 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7SHLxZ02684 for <jm@jmason.org>;
+    Wed, 28 Aug 2002 18:22:13 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 631EE29422C; Wed, 28 Aug 2002 10:19:10 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from jamesr.best.vwh.net (jamesr.best.vwh.net [192.220.76.165])
+    by xent.com (Postfix) with SMTP id 81DA529409A for <fork@xent.com>;
+    Wed, 28 Aug 2002 10:18:35 -0700 (PDT)
+Received: (qmail 53311 invoked by uid 19621); 28 Aug 2002 17:20:03 -0000
+Received: from unknown (HELO avalon) ([64.125.200.18]) (envelope-sender
+    <jamesr@best.com>) by 192.220.76.165 (qmail-ldap-1.03) with SMTP for
+    <fork@xent.com>; 28 Aug 2002 17:20:03 -0000
+Subject: Re: Java is for kiddies
+From: James Rogers <jamesr@best.com>
+To: fork@spamassassin.taint.org
+In-Reply-To: <3D6BA1A1.90306@barrera.org>
+References: <Pine.LNX.4.33.0208270202170.7689-100000@watcher.mithral.com>
+    <3D6BA1A1.90306@barrera.org>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Evolution/1.0.2-5mdk
+Message-Id: <1030556128.7585.29.camel@avalon>
+MIME-Version: 1.0
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 28 Aug 2002 10:35:27 -0700
+
+On Tue, 2002-08-27 at 08:58, Joseph S. Barrera III wrote:
+>
+> C is more reliable than Java??
+
+
+Both are reliable.  "Reliability" is more a function of the software
+engineer.  I've written complicated mission-critical server software in
+Java that will run without a hiccup as long as the Unix box it is
+sitting on is running.  Same with C.  For processes that are running
+months at a time, and in my case constantly touching databases and doing
+lots of low-level network stuff, reliability is obtained by making sure
+every conceivable problem (and problems you didn't conceive of) recovers
+to a clean/safe process state so that things keep running i.e. it is a
+design/programming issue.
+
+That said, we usually prototype serious systems in Java and then
+re-implement them in C if we have time.  Java doesn't scale well as a
+language for server apps, though not for the reasons usually offered. 
+The problem is that for high-end server apps, you really need fairly
+detailed and low-level control of system resources to get around
+bottlenecks that show up relatively quickly in languages that don't give
+you access to it.  You can squeeze several times the performance out of
+a C server program than a Java one simply by being able to finely tune
+(or more frequently, bypass) the system resource management. 
+Nonetheless, this is not a significant factor for most applications you
+could conceivably develop in either language, as most aren't limited by
+raw performance scalability.
+
+
+-James Rogers
+ jamesr@best.com
+
+

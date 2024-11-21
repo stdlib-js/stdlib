@@ -1,0 +1,151 @@
+From ilug-admin@linux.ie  Fri Aug 23 11:08:03 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E461E44174
+	for <zzzz@localhost>; Fri, 23 Aug 2002 06:06:36 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Fri, 23 Aug 2002 11:06:36 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7N7RJZ14671 for
+    <zzzz-ilug@spamassassin.taint.org>; Fri, 23 Aug 2002 08:27:19 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id IAA13280; Fri, 23 Aug 2002 08:23:50 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail01.svc.cra.dublin.eircom.net
+    (mail01.svc.cra.dublin.eircom.net [159.134.118.17]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id IAA13247 for <ilug@linux.ie>; Fri,
+    23 Aug 2002 08:23:42 +0100
+Received: (qmail 37798 messnum 126638 invoked from
+    network[213.190.156.48/unknown]); 23 Aug 2002 07:23:11 -0000
+Received: from unknown (HELO XENON16) (213.190.156.48) by
+    mail01.svc.cra.dublin.eircom.net (qp 37798) with SMTP; 23 Aug 2002
+    07:23:11 -0000
+Message-Id: <001b01c24a76$315c63d0$e600000a@XENON16>
+From: "wintermute" <cout@eircom.net>
+To: <ilug@linux.ie>
+References: <3d65260f.948.0@mail.dnet.co.uk>
+Subject: Re: [ILUG] Newbie seeks advice - Suse 7.2
+Date: Fri, 23 Aug 2002 08:25:01 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.50.4522.1200
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4910.0300
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+< >
+> I downloaded a driver from the nVidia website and installed it using RPM.
+> Then I ran Sax2 (as was recommended in some postings I found on the net),
+but
+> it still doesn't feature my video card in the available list. What next?
+
+
+hmmm.
+
+Peter.
+
+Open a terminal and as root type
+lsmod
+you want to find a module called
+NVdriver.
+
+If it isn't loaded then load it.
+#insmod NVdriver.o
+Oh and ensure you have this module loaded on boot.... else when you reboot
+you might be in for a nasty surprise.
+
+Once the kernel module is loaded
+
+#vim /etc/X11/XF86Config
+
+in the section marked
+Driver I have "NeoMagic"
+you need to have
+Driver "nvidia"
+
+Here is part of my XF86Config
+
+Also note that using the card you are using you 'should' be able to safely
+use the FbBpp 32 option .
+
+Section "Module"
+ Load  "extmod"
+ Load  "xie"
+ Load  "pex5"
+ Load  "glx"
+ SubSection "dri"    #You don't need to load this Peter.
+  Option     "Mode" "666"
+ EndSubSection
+ Load  "dbe"
+ Load  "record"
+ Load  "xtrap"
+ Load  "speedo"
+ Load  "type1"
+EndSection
+
+#Plus the Modelines for your monitor should be singfinicantly different.
+
+Section "Monitor"
+ Identifier   "Monitor0"
+ VendorName   "Monitor Vendor"
+ ModelName    "Monitor Model"
+ HorizSync    28.00-35.00
+ VertRefresh  43.00-72.00
+        Modeline "800x600" 36 800 824 896 1024 600 601 603 625
+ Modeline "1024x768" 49 1024 1032 1176 1344 768 771 777 806
+EndSection
+
+Section "Device"
+
+ Identifier  "Card0"
+ Driver      "neomagic" #Change this to "nvidia"... making sure the modules
+are in the correct path
+ VendorName  "Neomagic" # "Nvidia"
+ BoardName   "NM2160"
+ BusID       "PCI:0:18:0"
+EndSection
+
+Section "Screen"
+ Identifier "Screen0"
+ Device     "Card0"
+ Monitor    "Monitor0"
+ DefaultDepth 24
+ SubSection "Display"
+  Depth     1
+ EndSubSection
+ SubSection "Display"
+  Depth     4
+ EndSubSection
+ SubSection "Display"
+  Depth     8
+ EndSubSection
+ SubSection "Display"
+  Depth     15
+ EndSubSection
+ SubSection "Display"
+  Depth     16
+ EndSubSection
+ SubSection "Display"
+  Depth     24
+  #FbBpp   32 #Ie you should be able lto uncomment this line
+  Modes   "1024x768" "800x600" "640x480" # And add in higher resulutions as
+desired.
+ EndSubSection
+EndSection
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

@@ -1,0 +1,101 @@
+From razor-users-admin@lists.sourceforge.net  Thu Sep 19 17:47:42 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 6F21E16F03
+	for <jm@localhost>; Thu, 19 Sep 2002 17:47:37 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 19 Sep 2002 17:47:37 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8JD2vC20239 for <jm-razor@jmason.org>; Thu, 19 Sep 2002 14:02:57 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17s0j1-00069D-00; Thu,
+    19 Sep 2002 05:48:07 -0700
+Received: from dhcp024-208-195-177.indy.rr.com ([24.208.195.177]
+    helo=burgers.bubbanfriends.org) by usw-sf-list1.sourceforge.net with esmtp
+    (Cipher TLSv1:DES-CBC3-SHA:168) (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17s0iN-0004u7-00 for <razor-users@lists.sourceforge.net>; Thu,
+    19 Sep 2002 05:47:28 -0700
+Received: from localhost (localhost.localdomain [127.0.0.1]) by
+    burgers.bubbanfriends.org (Postfix) with ESMTP id 5CEF34B7E7C;
+    Thu, 19 Sep 2002 07:47:17 -0500 (EST)
+Received: by burgers.bubbanfriends.org (Postfix, from userid 500) id
+    1BB0D4B7E7B; Thu, 19 Sep 2002 07:47:16 -0500 (EST)
+Received: from localhost (localhost [127.0.0.1]) by
+    burgers.bubbanfriends.org (Postfix) with ESMTP id 092D7C026A6;
+    Thu, 19 Sep 2002 07:47:15 -0500 (EST)
+From: Mike Burger <mburger@bubbanfriends.org>
+To: Boniforti Flavio <boniforti.f@co-ver.it>
+Cc: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] Razor: shall I use it with AMaViS or with
+    SpamAssassin?
+In-Reply-To: <002401c25fb5$2de16260$7c00a8c0@cover.it>
+Message-Id: <Pine.LNX.4.44.0209190746380.32712-100000@burgers.bubbanfriends.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+X-Virus-Scanned: by AMaViS new-20020517
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchives/forum.php?forum=razor-users>
+X-Original-Date: Thu, 19 Sep 2002 07:47:15 -0500 (EST)
+Date: Thu, 19 Sep 2002 07:47:15 -0500 (EST)
+
+Depends on how you want to use it.
+
+The default setup of running it from procmail works just fine, as long as 
+you remember to go into your postfix/main.cf file, and tell it to use 
+procmail instead of the internal delivery agent.
+
+On Thu, 19 Sep 2002, Boniforti Flavio wrote:
+
+> How do I intergrate razor into my postfix setup? Will it have to
+> interact with AMaViS or with SpamAssassin?
+> 
+> Thank you
+> 
+> Boniforti Flavio
+> Informa Srl
+> Via 42 Martiri, 165
+> 28924 Verbania (VB)
+> Tel +39 0323 586216
+> Fax +39 0323 586672
+> http://www.co-ver.it/informa
+> 
+> 
+> 
+> 
+> -------------------------------------------------------
+> This sf.net email is sponsored by:ThinkGeek
+> Welcome to geek heaven.
+> http://thinkgeek.com/sf
+> _______________________________________________
+> Razor-users mailing list
+> Razor-users@lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/razor-users
+> 
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

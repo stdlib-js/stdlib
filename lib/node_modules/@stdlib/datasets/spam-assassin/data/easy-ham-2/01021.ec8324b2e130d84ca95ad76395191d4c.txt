@@ -1,0 +1,136 @@
+From fork-admin@xent.com  Tue Aug 13 10:31:00 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0ABE0440F9
+	for <jm@localhost>; Tue, 13 Aug 2002 05:22:29 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:22:29 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7CLZ5b02498 for <jm@jmason.org>;
+    Mon, 12 Aug 2002 22:35:07 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 154422941B7; Mon, 12 Aug 2002 14:33:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mail.evergo.net (unknown [206.191.151.2]) by xent.com
+    (Postfix) with SMTP id BD0DC2940EF for <fork@xent.com>; Mon,
+    12 Aug 2002 14:32:01 -0700 (PDT)
+Received: (qmail 31031 invoked from network); 12 Aug 2002 21:33:09 -0000
+Received: from dsl.206.191.151.102.evergo.net (HELO JMHALL)
+    (206.191.151.102) by mail.evergo.net with SMTP; 12 Aug 2002 21:33:09 -0000
+Reply-To: <johnhall@evergo.net>
+From: "John Hall" <johnhall@evergo.net>
+To: <fork@spamassassin.taint.org>
+Subject: RE: David Friedman: Mail Me the Money!
+Message-Id: <000701c24247$d68f9340$0200a8c0@JMHALL>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.2627
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Importance: Normal
+In-Reply-To: <F194fme8LZmwQPeg5n900005efa@hotmail.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 12 Aug 2002 14:33:02 -0700
+
+
+As a practical matter, I doubt the value sold in such situations ever
+adds up to the value lost.  And the non-pecuiary since of violation,
+loss, and trouble has to get in there somewhere if we are really picky.
+
+I don't think considering marginal utility of dollars has value in this
+situation.  We aren't debating whether the thief is better off -- he is.
+
+I'm not a lawyer either.  I played one on TV once but I didn't play a
+very good one and they canceled it after the first episode ...
+
+The situtation I described came from my recollection of Epstein's
+'Takings'.  He was specifically rejecting the idea of absolute property
+right found in Liberation theology and was using the idea -- that in an
+emergency where my life depends upon it I'm entitled to violate your
+property rights and (more) you are forbidden from using unreasonable
+force to defend them (particularly if you aren't around).
+
+Maybe I did get it all wrong, but that particular recollection is
+relatively strong precisely because it gave a good reason why my
+libertarian theology needed to be modified.
+
+He was also analyzing what the common law had come up with, which might
+not be the statuatory law in a particular jurisdiction.
+
+
+
+> -----Original Message-----
+> From: fork-admin@xent.com [mailto:fork-admin@xent.com] On Behalf Of
+> Russell Turpin
+> Sent: Monday, August 12, 2002 2:15 PM
+> To: fork@spamassassin.taint.org
+> Subject: RE: David Friedman: Mail Me the Money!
+> 
+> John Hall:
+> >The case against theft also acknowledges that the value to the thief
+is
+> >often far less than the value to the victim.  Stealing my $1,000
+stereo
+> and
+> >then fencing it for $50 does not result in 'no loss' to the economy
+> >overall. ..
+> 
+> That depends on the value placed on it by the fellow
+> who buys it from the pawn shop. And if you take
+> into account the marginal utility of dollars, the
+> thief may value his lucre more than his victim.
+> 
+> >On the flip side of this, common law allows a breach of property law
+in
+> >precisely the type of scenarios where a net social gain is recorded
+but
+> >the owner's availability to make a contract was problematic. Breaking
+> into
+> >your isolated cabin because I'm starving, for example, is permissible
+if
+> I
+> >later offer restitution for the damage I caused and the food I ate.
+> 
+> I am not a lawyer, but I think this is an incorrect
+> analysis of what the law allows in emergencies. I
+> can break into your cabin, take your rifle, grab a
+> box of your ammo, and shoot the bear that is mauling
+> a poor hiker, without having committed the crimes of
+> breaking and entering, theft, hunting out of season,
+> and killing an endangered species, whether or not I
+> later offer to pay for your window and ammunition.
+> The law simply puts a higher priority on saving
+> human life in emergency than on these other things.
+> 
+> Now yes, you can turn around and sue me for
+> recompense. But that is a civil issue, not a
+> criminal one. Crime requires mens rea. And when I
+> shot the bear, I wasn't thinking about who owned
+> the bullet.
+> 
+> 
+> 
+> _________________________________________________________________
+> MSN Photos is the easiest way to share and print your photos:
+> http://photos.msn.com/support/worldwide.aspx
+> 
+> http://xent.com/mailman/listinfo/fork
+
+http://xent.com/mailman/listinfo/fork
+
+

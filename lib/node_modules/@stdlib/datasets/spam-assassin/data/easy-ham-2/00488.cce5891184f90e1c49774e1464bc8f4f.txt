@@ -1,0 +1,90 @@
+From iiu-admin@taint.org  Tue Jul 23 17:48:26 2002
+Return-Path: <iiu-admin@taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 543B6440CD
+	for <jm@localhost>; Tue, 23 Jul 2002 12:48:24 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 23 Jul 2002 17:48:24 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6NGkc412601;
+    Tue, 23 Jul 2002 17:46:38 +0100
+Received: from mail.kerna.ie (ns.kerna.ie [194.106.143.66]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6NGj9412541 for
+    <iiu@taint.org>; Tue, 23 Jul 2002 17:45:09 +0100
+Received: from ram.kerna.ie (ram.kerna.ie [194.106.143.99]) by
+    mail.kerna.ie (8.9.3/8.9.3) with ESMTP id RAA19822 for <iiu@taint.org>;
+    Tue, 23 Jul 2002 17:44:24 +0100 (BST)
+Resent-From: james@kerna.ie
+Received: from bender.kerna.ie (bender.kerna.ie [192.168.42.133]) by
+    ram.kerna.ie (8.9.3/8.9.3) with ESMTP id RAA31527 for <iiu@taint.org>;
+    Tue, 23 Jul 2002 17:44:24 +0100
+Received: (from james@localhost) by bender.kerna.ie (8.11.6/8.11.6) id
+    g6NGiMP35943 for iiu@taint.org; Tue, 23 Jul 2002 17:44:22 +0100 (IST)
+    (envelope-from james@kerna.ie)
+Resent-Message-Id: <200207231644.g6NGiMP35943@bender.kerna.ie>
+From: James Raftery <james-iiu@now.ie>
+To: iiu@taint.org
+Subject: Re: [IIU] IE nameserver problems
+Message-Id: <20020722094916.GA93741@bender.kerna.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Resent-Date: Tue, 23 Jul 2002 17:44:22 +0100
+Resent-To: iiu@taint.org
+Sender: iiu-admin@taint.org
+Errors-To: iiu-admin@taint.org
+X-Beenthere: iiu@iiu.taint.org
+X-Mailman-Version: 2.0.10
+Precedence: bulk
+Reply-To: iiu@taint.org
+List-Unsubscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=unsubscribe>
+List-Id: Irish Internet Users <iiu.iiu.taint.org>
+List-Post: <mailto:iiu@iiu.taint.org>
+List-Help: <mailto:iiu-request@iiu.taint.org?subject=help>
+List-Subscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=subscribe>
+List-Archive: <http://iiu.taint.org/pipermail/iiu/>
+Date: Mon, 22 Jul 2002 10:49:16 +0100
+
+Hi,
+
+John McCormac <jmcc@hackwatch.com> wrote:
+> Last week, when indexing stuff for WhoisIreland.com, I noticed that
+> ns0.domainregistry.ie and banba.domainregistry.ie were out of synch by
+> a few days. The other nameservers seemed to give a current SOA at that
+> time. However the affected secondaries may have been using
+> ns0.domainregistry.ie for axfr and propagated the error.
+
+I don't know what role ns0 plays in relation to the IE zone. It's
+certainly not involved in the regular resolution process. It may
+be involved in zone distribution as you suggest. IIRC (and I often
+don't) on Friday ns0 had a serial that none of the IE nameservers 
+shared. Unfortunately I don't have a record of that.
+
+> This whole thing does seriously bring into question IEDR's decision to
+> outsource the technical admininstration of .ie to a company that
+> apparently does not even admin its own DNS. It is a nice story though -
+> almost as good as the time that .ie disappeared for 8 hours in July
+> 1998.
+
+... and only you noticed :)
+[ Messages on the IEDR-FORUM list at the time don't support 
+  your assertion ]
+
+As an aside, shortly after my note on Friday uucp-gw-1.pa.dec.com and
+uucp-gw-2.pa.dec.com stopped responding to DNS requests. So IE had
+two dead nameservers, four stuck a week in the past and three
+working correctly. Marvellous.
+
+
+ATB,
+james
+_______________________________________________
+IIU mailing list
+IIU@iiu.taint.org
+http://iiu.taint.org/mailman/listinfo/iiu
+
+

@@ -1,0 +1,40 @@
+From info@smokesdirect.com  Mon Aug 26 15:14:57 2002
+Return-Path: <info@smokesdirect.com>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.spamassassin.taint.org (Postfix) with ESMTP id DD0E44416B
+	for <zzzz@localhost>; Mon, 26 Aug 2002 10:13:02 -0400 (EDT)
+Received: from mail.webnote.net [193.120.211.219]
+	by localhost with POP3 (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 26 Aug 2002 15:13:02 +0100 (IST)
+Received: from linux.local ([213.9.248.151])
+	by webnote.net (8.9.3/8.9.3) with SMTP id SAA22481
+	for <zzzz@spamassassin.taint.org>; Sun, 25 Aug 2002 18:24:54 +0100
+Message-Id: <200208251724.SAA22481@webnote.net>
+Received: (qmail 21857 invoked from network); 25 Aug 2002 17:02:55 -0000
+Received: from unknown (HELO h) (192.168.0.2)
+  by linux.local with SMTP; 25 Aug 2002 17:02:55 -0000
+From: "Sales Department" <info@smokesdirect.com>
+Subject: Cheap Fags
+To: zzzz@spamassassin.taint.org
+Sender: Sales Department <info@smokesdirect.com>
+Reply-To: info@smokesdirect.com
+Date: Sun, 25 Aug 2002 19:08:37 +0200
+X-Priority: 3
+X-Library: Indy 8.0.25
+
+Dear Sir / Madam
+
+If you are fed up of being 'ripped off' by the British government every time you buy your tobacco, then you should visit our website, where you can now buy 4 cartons of cigarettes, or 40 pouches of rolling tobacco from as little as 170 Euros (approx 105 pounds), inclusive of delivery by registered air mail from our office in Spain.  
+
+Why pay more???
+
+Visit our website at
+http://www.smokesdirect.com/?ID=2
+
+Best regards
+Sales Department
+Smokes Direct
+Spain
+xay2158961y
+

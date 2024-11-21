@@ -1,0 +1,66 @@
+From fork-admin@xent.com  Wed Sep 25 10:24:54 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 7ED4016F03
+	for <jm@localhost>; Wed, 25 Sep 2002 10:24:54 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 25 Sep 2002 10:24:54 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8P8b2C19248 for <jm@jmason.org>;
+    Wed, 25 Sep 2002 09:37:02 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 6CF4D2940EB; Wed, 25 Sep 2002 01:33:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from argote.ch (argote.ch [80.65.224.17]) by xent.com (Postfix)
+    with ESMTP id 858F029409A for <fork@xent.com>; Wed, 25 Sep 2002 01:32:34
+    -0700 (PDT)
+Received: by argote.ch (Postfix, from userid 500) id EC486C44D;
+    Wed, 25 Sep 2002 10:35:59 +0200 (CEST)
+To: fork@spamassassin.taint.org
+Subject: Re: SF Weekly's Ultimate SF Date lineup :-)
+Message-Id: <20020925083559.EC486C44D@argote.ch>
+From: harley@argote.ch (Robert Harley)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 25 Sep 2002 10:35:59 +0200 (CEST)
+
+Russell Turpin wrote:
+>Invite her for an afternoon cruise under the Golden Gate bridge in
+>your Stonehorse day sailor.
+
+Sounds good.
+
+
+>Under way, ask her if she'd like to take the stick.
+
+Whoah!  That's a rather direct approach!
+
+
+R. A. Hettinga quoted:
+>From: Somebody
+>[...] what I did in 1983 was to rent a plane from the Moffett Field
+>flying club and take her on an aerial tour
+
+Sounds great.
+
+
+>I can't recall whether or not I gave her any stick time.
+
+Can't remember if he's in the mile-high club?  Even worse!!!
+
+
+R
+
+

@@ -1,0 +1,8 @@
+
+var x = Math.pow( Math.random(), 3 );
+
+if ( x !== x ) {
+	var err = new Error( 'Something went wrong!' );
+	return next( err );
+}
+setTimeout( next, 0 );

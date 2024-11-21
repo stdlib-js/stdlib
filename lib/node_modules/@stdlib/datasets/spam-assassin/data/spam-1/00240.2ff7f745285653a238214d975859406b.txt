@@ -1,0 +1,60 @@
+From iiu-admin@taint.org  Sat Sep  7 22:05:49 2002
+Return-Path: <iiu-admin@taint.org>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id 08A4916F22
+	for <zzzz@localhost>; Sat,  7 Sep 2002 21:57:45 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Sat, 07 Sep 2002 21:57:45 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g874l2C06886 for
+    <zzzz-list-admin-iiu@jmason.org>; Sat, 7 Sep 2002 05:47:02 +0100
+Received: from linux.local ([213.9.248.135]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with SMTP id g874ksC06868 for <iiu-admin@taint.org>;
+    Sat, 7 Sep 2002 05:46:54 +0100
+Message-Id: <200209070446.g874ksC06868@dogma.slashnull.org>
+Received: (qmail 11101 invoked from network); 7 Sep 2002 04:47:28 -0000
+Received: from unknown (HELO h) (192.168.0.2) by linux.local with SMTP;
+    7 Sep 2002 04:47:28 -0000
+From: "Sales Department" <smokesdirect@terra.es>
+Subject: Half Price Cigarettes and Tobacco
+To: iiu-admin@taint.org
+Reply-To: smokesdirect@terra.es
+Date: Sat, 7 Sep 2002 06:53:25 +0200
+X-Priority: 3
+X-Library: Indy 8.0.25
+Sender: iiu-owner@taint.org
+Errors-To: iiu-owner@taint.org
+X-Beenthere: iiu@iiu.taint.org
+X-Mailman-Version: 2.0.10
+Precedence: bulk
+List-Unsubscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=unsubscribe>
+List-Id: Irish Internet Users <iiu.iiu.taint.org>
+List-Post: <mailto:iiu@iiu.taint.org>
+List-Help: <mailto:iiu-request@iiu.taint.org?subject=help>
+List-Subscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=subscribe>
+List-Archive: <http://iiu.taint.org/pipermail/iiu/>
+
+
+Dear Sir or Madam
+
+In the past you have requested information on discounted products. We hope that you find this of interest. If you are not a smoker, and find this email offensive, we sincerely apologise!  We will be only too happy to take you off our mailing list.
+
+If you are a smoker, however, and are fed up with paying high prices for your cigarettes and tobacco, take a look at what we have to offer  by clicking on this link.
+http://www.smokersunited.co.uk/?S=15&ID=2
+
+We can send you, legally, by registered air mail, direct to your door, 4 cartons of cigarettes or 40 pouches of rolling tobacco (all brands are available) from only 170 Euros - about 105 pounds - fully inclusive of postage and packing.  Why pay more?
+
+To remove yourself from our mailing list, please click below
+mailto:smokersclub@terra.es
+
+Yours faithfully.
+Smokers United
+http://www.smokersunited.co.uk/?S=15&ID=2
+
+xay1y
+
+

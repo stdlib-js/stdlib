@@ -1,0 +1,63 @@
+From fork-admin@xent.com  Tue Jul 23 22:50:10 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A5275440CC
+	for <jm@localhost>; Tue, 23 Jul 2002 17:50:10 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 23 Jul 2002 22:50:10 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6NLlp430338 for <jm@jmason.org>;
+    Tue, 23 Jul 2002 22:47:51 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 04D822940AE; Tue, 23 Jul 2002 14:37:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from barrera.org (unknown [207.5.62.130]) by xent.com (Postfix)
+    with ESMTP id 0EF502940A9 for <fork@xent.com>; Tue, 23 Jul 2002 14:36:55
+    -0700 (PDT)
+Received: from  (127.0.0.1 [127.0.0.1]) by MailEnable Inbound Mail Agent
+    with ESMTP; Tue, 23 Jul 2002 21:46:04 -08:00
+Message-Id: <3D3DCE9C.60408@barrera.org>
+From: "Joseph S. Barrera III" <joe@barrera.org>
+Organization: Rose Garden Funeral of Sores
+User-Agent: Mutt/1.5.0 [-1214711651]
+X-Accept-Language: en-us, en, ja
+MIME-Version: 1.0
+To: Eugen Leitl <eugen@leitl.org>
+Cc: Lucas Gonze <lgonze@panix.com>, FoRK <fork@spamassassin.taint.org>
+Subject: Re: spam maps
+References: <Pine.LNX.4.33.0207232329410.438-100000@hydrogen.leitl.org>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 23 Jul 2002 14:46:04 -0700
+
+Eugen Leitl wrote:
+> P.S. We hate you, too.
+
+"Fuck you, sir," came the familiar tired chorus.
+
+"Louder!"
+
+"FUCK YOU, SIR!"
+
+Damn, I love that book (_Forever War_).
+
+- Joe
+
+
+http://xent.com/mailman/listinfo/fork
+
+

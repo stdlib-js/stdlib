@@ -1,0 +1,31 @@
+
+{{alias}}( x )
+    Returns an integer corresponding to the unbiased exponent of a single-
+    precision floating-point number.
+
+    Parameters
+    ----------
+    x: float
+        Single-precision floating-point number.
+
+    Returns
+    -------
+    out: integer
+        Unbiased exponent.
+
+    Examples
+    --------
+    > var exponent = {{alias}}( {{alias:@stdlib/number/float64/base/to-float32}}( 3.14e34 ) )
+    114
+    > exponent = {{alias}}( {{alias:@stdlib/number/float64/base/to-float32}}( 3.14e-34 ) )
+    -112
+    > exponent = {{alias}}( {{alias:@stdlib/number/float64/base/to-float32}}( -3.14 ) )
+    1
+    > exponent = {{alias}}( 0.0 )
+    -127
+    > exponent = {{alias}}( NaN )
+    128
+
+    See Also
+    --------
+

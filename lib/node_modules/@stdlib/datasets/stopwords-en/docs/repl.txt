@@ -1,0 +1,17 @@
+
+{{alias}}()
+    Returns a list of English stop words.
+
+    Returns
+    -------
+    out: Array<string>
+        List of stop words.
+
+    Examples
+    --------
+    > var list = {{alias}}()
+    [ 'a', 'about', 'above', 'across', ... ]
+
+    See Also
+    --------
+

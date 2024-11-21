@@ -1,0 +1,76 @@
+From fork-admin@xent.com  Thu Sep 19 11:04:59 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id EAD0116F03
+	for <jm@localhost>; Thu, 19 Sep 2002 11:04:57 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 19 Sep 2002 11:04:57 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8IKQfC15006 for <jm@jmason.org>;
+    Wed, 18 Sep 2002 21:26:42 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id C09BF2940B3; Wed, 18 Sep 2002 13:23:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from crank.slack.net (slack.net [166.84.151.181]) by xent.com
+    (Postfix) with ESMTP id 51BD329409E for <fork@xent.com>; Wed,
+    18 Sep 2002 13:22:05 -0700 (PDT)
+Received: by crank.slack.net (Postfix, from userid 596) id AB1203ECF5;
+    Wed, 18 Sep 2002 16:29:40 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1]) by crank.slack.net
+    (Postfix) with ESMTP id A94CF3ECE9; Wed, 18 Sep 2002 16:29:40 -0400 (EDT)
+From: Tom <tomwhore@slack.net>
+To: "R. A. Hettinga" <rah@shipwright.com>
+Cc: fork@spamassassin.taint.org, Digital Bearer Settlement List <dbs@philodox.com>
+Subject: Re: [VoID] a new low on the personals tip...
+In-Reply-To: <p05111a91b9ae65ce6208@[66.149.49.6]>
+Message-Id: <Pine.BSO.4.44.0209181624450.27653-100000@crank.slack.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 18 Sep 2002 16:29:40 -0400 (EDT)
+
+On Wed, 18 Sep 2002, R. A. Hettinga wrote:
+--]I know it's not the popular choice for a lot of people, but I'd
+--]suggest, um, church. :-). Like Woody Allen said, 90% of life is
+--]showing up, right?
+--]
+
+I think another venue for finding people is the workplace. As a contractor
+I have had the opertunity to meet lots of eligables over the course of my
+wandering workhistory.
+
+My wife was my Task Order Manager years ago, thats  how we met. Her joke
+is that she is still my Task Order Manager but now I dont get paid:)-
+
+By starting up your own companies or working in sterile thinklabs you are
+cutting yourself off from one heck of a fertile ground for linkages....the
+common office.
+
+I like the shurch idea as well. Other ideas...
+
+Book circles, geocaching groups, heck Rhorho your still young enough to
+hit the campus mixers...and I mean the social stuff not the techtech
+events.
+
+
+Above all, ask yourself whats important to you..
+
+Life, you either life it or you waste it.
+
+
+-tom
+
+

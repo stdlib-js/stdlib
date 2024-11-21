@@ -1,0 +1,12 @@
+
+{{alias}}
+    Golden ratio.
+
+    Examples
+    --------
+    > {{alias}}
+    1.618033988749895
+
+    See Also
+    --------
+

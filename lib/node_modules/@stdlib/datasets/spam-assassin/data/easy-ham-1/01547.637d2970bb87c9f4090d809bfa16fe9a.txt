@@ -1,0 +1,98 @@
+From razor-users-admin@lists.sourceforge.net  Mon Aug 26 15:16:57 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BD4D344168
+	for <jm@localhost>; Mon, 26 Aug 2002 10:15:10 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 15:15:10 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7NKZAZ07233 for <jm-razor@jmason.org>; Fri, 23 Aug 2002 21:35:10 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17iKta-0008WK-00; Fri,
+    23 Aug 2002 13:19:02 -0700
+Received: from smtp-gw-cl-a.dmv.com ([64.45.128.110]) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17iKsZ-0002Sv-00 for
+    <razor-users@lists.sourceforge.net>; Fri, 23 Aug 2002 13:17:59 -0700
+Received: from landshark (landshark.dmv.com [64.45.129.242]) by
+    smtp-gw-cl-a.dmv.com (8.12.3/8.12.3) with SMTP id g7NKBljr011201 for
+    <razor-users@lists.sourceforge.net>; Fri, 23 Aug 2002 16:11:47 -0400 (EDT)
+    (envelope-from sven@dmv.com)
+Message-Id: <01aa01c24ae2$2a5baa70$f2812d40@landshark>
+From: "Sven Willenberger" <sven@dmv.com>
+To: <razor-users@example.sourceforge.net>
+References: <E17iJlB-0005yT-00@usw-sf-list2.sourceforge.net>
+Subject: RE: [Razor-users] Razor with sendmail
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Fri, 23 Aug 2002 16:17:55 -0400
+Date: Fri, 23 Aug 2002 16:17:55 -0400
+
+----- Original Message -----
+From: <razor-users-request@example.sourceforge.net>
+To: <razor-users@example.sourceforge.net>
+Sent: Friday, August 23, 2002 3:05 PM
+Subject: Razor-users digest, Vol 1 #346 - 8 msgs
+
+
+> Subject: RE: [Razor-users] Razor with sendmail
+> Date: Fri, 23 Aug 2002 15:03:05 -0400
+> From: "Rose, Bobby" <brose@med.wayne.edu>
+> To: "Julian Bond" <julian_bond@voidstar.com>,
+> <razor-users@lists.sourceforge.net>
+>
+> If you didn't add it when compile would be one way.  Another would be to
+> grep your sendmail.cf for the word Milter.
+>
+>
+>
+> "Bort, Paul" <pbort@tmwsystems.com> wrote:
+> >If your sendmail has been compiled with Milter support, you can add=20
+> >SMRazor easily. We've been using it for a while without problems.=20
+> >Others on the list have mentioned it as well.
+> >
+> >http://www.sapros.com/smrazor/
+>
+> Is there an easy way to tell if Milter is compiled in?
+>
+
+To see all the options compiled into (and version of) sendmail, try the
+following line:
+
+echo \$Z | /path/to/sendmail -bt -d0
+
+Sven
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+

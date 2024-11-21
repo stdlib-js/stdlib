@@ -1,0 +1,87 @@
+From fork-admin@xent.com  Sun Sep 22 14:11:50 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id C6F0F16F03
+	for <jm@localhost>; Sun, 22 Sep 2002 14:11:49 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sun, 22 Sep 2002 14:11:49 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8M7GwC26608 for <jm@jmason.org>;
+    Sun, 22 Sep 2002 08:16:58 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 370062940CE; Sun, 22 Sep 2002 00:13:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from crank.slack.net (slack.net [166.84.151.181]) by xent.com
+    (Postfix) with ESMTP id A6CB429409A for <fork@xent.com>; Sun,
+    22 Sep 2002 00:12:17 -0700 (PDT)
+Received: by crank.slack.net (Postfix, from userid 596) id 94E553ED7F;
+    Sun, 22 Sep 2002 03:20:22 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1]) by crank.slack.net
+    (Postfix) with ESMTP id 8D9703ECFC for <fork@xent.com>; Sun,
+    22 Sep 2002 03:20:22 -0400 (EDT)
+From: Tom <tomwhore@slack.net>
+To: fork@spamassassin.taint.org
+Subject: [vox] Anarchist 'Scavenger Hunt' Raises D.C. Police Ire (fwd)
+Message-Id: <Pine.BSO.4.44.0209220319540.26559-100000@crank.slack.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 22 Sep 2002 03:20:22 -0400 (EDT)
+
+
+
+Anarchist 'Scavenger Hunt' Raises D.C. Police Ire
+Sat Sep 21, 3:37 PM ET
+
+WASHINGTON (Reuters) - An online "anarchist scavenger
+hunt" proposed for next week's annual meeting of the
+International Monetary Fund ( news - web sites) and
+World Bank ( news - web sites) here has raised the ire
+of police, who fear demonstrators could damage
+property and wreak havoc.
+
+Break a McDonald's window, get 300 points. Puncture a
+Washington D.C. police car tire to win 75 points.
+Score 400 points for a pie in the face of a corporate
+executive or World Bank delegate.
+
+D.C. Assistant Police Chief Terrance Gainer told a
+congressional hearing on Friday that law authorities
+were in talks to decide whether planned protests were,
+"so deleterious to security efforts that we ought to
+take proactive action."
+
+Several thousand people are expected to demonstrate
+outside the IMF and World Bank headquarters next
+weekend.
+
+The Anti-Capitalist Convergence, a D.C.-based
+anarchist group, is also planning a day-long traffic
+blockade, banner-drops and protests against major
+corporations in the downtown core.
+
+Chuck, the 37 year-old webmaster of the anarchist site
+www.infoshop.org who declined to give his last name,
+told Reuters his scavenger hunt was meant as a joke.
+
+"People were asking for things to do when they come to
+D.C. We made the list to get people thinking, so they
+don't do the boring, standard stuff," he said. "I
+doubt people will actually keep track of what they do
+for points."
+
+
+

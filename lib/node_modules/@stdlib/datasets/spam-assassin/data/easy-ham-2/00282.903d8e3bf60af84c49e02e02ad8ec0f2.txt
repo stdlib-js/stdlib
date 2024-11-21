@@ -1,0 +1,99 @@
+From ilug-admin@linux.ie  Thu Aug  8 14:11:16 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id DA2C744130
+	for <jm@localhost>; Thu,  8 Aug 2002 08:32:26 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 08 Aug 2002 13:32:26 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g78CDO201553 for
+    <jm-ilug@JMASON.ORG>; Thu, 8 Aug 2002 13:13:24 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id LAA29665 for <jm-ilug@jmason.org>;
+    Thu, 8 Aug 2002 11:57:15 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA10514; Thu, 8 Aug 2002 11:55:25 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from relay01.esat.net (relay01.esat.net [192.111.39.11]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id LAA10477 for <ilug@linux.ie>;
+    Thu, 8 Aug 2002 11:55:12 +0100
+Received: from www.emuse.ie (hassle.emuse.ie) [193.120.145.154] by
+    relay01.esat.net with esmtp id 17ckwg-0001Ax-00; Thu, 08 Aug 2002 11:55:10
+    +0100
+Received: by HASSLE with Internet Mail Service (5.5.2653.19) id <DL00S0XH>;
+    Thu, 8 Aug 2002 11:55:37 +0100
+Message-Id: <5FE418B3F962D411BED40000E818B33C9C8EBB@HASSLE>
+From: "Hunt, Bryan" <B.Hunt@emuse-tech.com>
+To: "'ilug@linux.ie'" <ilug@linux.ie>
+Subject: RE: [ILUG] slashdot EW Dijkstra humor
+Date: Thu, 8 Aug 2002 11:55:36 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain; charset="iso-8859-1"
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+
+schemers are often slagged of for that sort of thing 
+they "know the Value of Everything, Cost of Nothing" 
+did i get that the right way arround ?
+
+
+--B
+
+-----Original Message-----
+From: John P. Looney [mailto:valen@tuatha.org]
+Sent: 08 August 2002 11:38
+To: ilug@linux.ie
+Subject: Re: [ILUG] slashdot EW Dijkstra humor
+
+
+On Thu, Aug 08, 2002 at 11:27:59AM +0100, wintermute mentioned:
+> Interesting. I've always wondered about things 'considered' to be bad. 
+> Example the GOTO, most languages support a goto of some sort, so are gotos
+really bad?
+
+ Yes. Especially in the languages he was talking about - C, Pascal and
+Assembler. Goto's can be used well; there are a few used in the kernel
+code to improve efficency. They are almost required in some languages
+(like C) where 'break' or 'continue' can't be told how many loops/switches
+to break out of.
+
+ But, in general, goto's make a mess of code.
+
+> Is a loop or a recursive call actually any better than a goto 
+> or is the goto used as a kind of common enemy of 
+> programming syntax
+> to make sure people use loops or recursion?
+> <<To iterate is human, to recurse divine>>
+
+ Recursion is only truely useful if you have an infinite stack. People
+that think they have an infinite stack shouldn't be let near a compiler.
+
+> Kind of makes you wonder about things considered to be 'good'.  For
+> example people bang on about polymorphism, but is there actually any
+> advantage in using an overloaded function based on class inheritance?
+
+ I don't care, to be honest.
+
+Kate
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

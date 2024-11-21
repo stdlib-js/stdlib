@@ -1,0 +1,59 @@
+From yelanotyami912@bot.or.th  Tue Dec  3 15:16:04 2002
+Return-Path: <yelanotyami912@bot.or.th>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id A3E6516F18
+	for <jm@localhost>; Tue,  3 Dec 2002 15:16:03 +0000 (GMT)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 03 Dec 2002 15:16:03 +0000 (GMT)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id gB3DrV811037 for
+    <jm@jmason.org>; Tue, 3 Dec 2002 13:53:33 GMT
+Received: from ipn ([211.217.6.151]) by webnote.net (8.9.3/8.9.3) with
+    ESMTP id NAA16603 for <jm@netnoteinc.com>; Tue, 3 Dec 2002 13:55:04 GMT
+Received: from datanet.ro ([212.185.27.10]) by ipn with Microsoft
+    SMTPSVC(5.0.2195.2966); Tue, 3 Dec 2002 22:56:10 +0900
+Message-Id: <000049450530$00001a10$00004d94@emn.ru>
+To: <yyyy@neteze.com>
+Cc: <yyyy@netnoteinc.com>, <yyyy@netdoktor.dk>, <yyyy@netmagic.net>
+From: "Rob" <yelanotyami912@bot.or.th>
+Subject: hurry
+Date: Tue, 03 Dec 2002 08:54:07 -1700
+MIME-Version: 1.0
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Reply-To: yelanotyami912@bot.or.th
+X-Originalarrivaltime: 03 Dec 2002 13:56:10.0968 (UTC) FILETIME=[BC6AAD80:01C29AD3]
+
+<html>
+<head>
+<title>Toy</title>
+</head>
+<body bgcolor=3D"#FFFFFF" text=3D"#000000">
+<div align=3D"center">
+  <p>ABC's Good Morning America ranks it the #1 Christmas Toy of the seaso=
+n! </p>
+  <p><b>&quot;The new 3-inch mini remote control cars are out of stock eve=
+rywhere! 
+    Parents are searching frantically but having no luck. There are millio=
+ns of 
+    kids expecting these for the Holiday season, lets hope somebody gets t=
+hem 
+    in or Santa may be in trouble!&quot; </b>Dianne Sawyer, Nov 2002</p>
+  <p>Sold Out in all stores accross the country. Retail price is $59.99. W=
+e have 
+    limited stock and <b>Free</b> shipping for only $29.95!</p>
+  <p><a href=3D"http://206.158.98.85/affil10/4/">Check out this Years Hott=
+est Toy!</a></p>
+  <p>&nbsp;</p>
+  <p><font size=3D"2"><a href=3D"http://206.158.98.85/affil10/4/1/">unsubs=
+cribe</a> 
+    forever </font></p>
+</div>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,57 @@
+From fork-admin@xent.com  Mon Aug 19 11:05:23 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id EB759441B4
+	for <jm@localhost>; Mon, 19 Aug 2002 05:55:44 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:55:44 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7IJRv621062 for <jm@jmason.org>;
+    Sun, 18 Aug 2002 20:27:59 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id C3E382940F0; Sun, 18 Aug 2002 12:22:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from crank.slack.net (slack.net [166.84.151.181]) by xent.com
+    (Postfix) with ESMTP id 310732940EC for <fork@xent.com>; Sun,
+    18 Aug 2002 12:21:32 -0700 (PDT)
+Received: by crank.slack.net (Postfix, from userid 596) id DCC263EDB9;
+    Sun, 18 Aug 2002 15:24:32 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1]) by crank.slack.net
+    (Postfix) with ESMTP id DB3DE3EC45; Sun, 18 Aug 2002 15:24:32 -0400 (EDT)
+From: Tom <tomwhore@slack.net>
+To: Gregory Alan Bolcer <gbolcer@endeavors.com>
+Cc: FoRK <fork@spamassassin.taint.org>
+Subject: Re: warchalking
+In-Reply-To: <3D5FDDA4.75EA7EC@endeavors.com>
+Message-Id: <Pine.BSO.4.44.0208181517540.6518-100000@crank.slack.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 18 Aug 2002 15:24:32 -0400 (EDT)
+
+
+Oddly enough we have been "discusing" this over in www.geocaching.com
+Opinons on the it range from YeaBoy to ItsAgainstTheLAW. Mostly though its
+either folks are boned up on the subject and are cool with it or they are
+sheeple bleating to the big daddy to protect them. I sstill cant get my
+head around the fact that so many people are so much the willing sheeple
+for things like the Patriot Act and all the surrounding shackle racking.
+
+http://opentopic.groundspeak.com/0/OpenTopic?a=tpc&s=1750973553&f=6770936793&m=6220923794
+
+
+http://xent.com/mailman/listinfo/fork
+

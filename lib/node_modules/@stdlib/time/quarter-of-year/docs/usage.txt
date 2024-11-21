@@ -1,0 +1,8 @@
+
+Usage: quarter-of-year [options] [month]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+

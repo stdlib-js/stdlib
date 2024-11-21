@@ -1,0 +1,35 @@
+{
+  "name": "stdlib-datasets-img-dust-bowl-home",
+  "version": "",
+  "title": "Abandoned Dust Bowl Home",
+  "description": "Image of an abandoned Dust Bowl home.",
+  "resources": [
+    {
+      "name": "dust-bowl-home-jpg",
+      "title": "Abandoned Dust Bowl Home",
+      "description": "Image of an abandoned Dust Bowl home.",
+      "format": "jpeg",
+      "mediatype": "image/jpeg",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/image.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Getty's Open Content Program",
+      "web": "http://www.getty.edu/art/collection/objects/128362/dorothea-lange-abandoned-dust-bowl-home-american-about-1935-1940/"
+    }
+  ],
+  "keywords": [
+    "image",
+    "img",
+    "home",
+    "abandoned",
+    "dust bowl",
+    "house",
+    "architecture",
+    "desert"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}

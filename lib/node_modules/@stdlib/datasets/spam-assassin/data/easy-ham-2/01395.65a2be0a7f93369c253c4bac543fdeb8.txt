@@ -1,0 +1,75 @@
+From ilug-admin@linux.ie  Tue Nov 26 19:09:07 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 588E316F8F
+	for <jm@localhost>; Tue, 26 Nov 2002 19:01:08 +0000 (GMT)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 26 Nov 2002 19:01:08 +0000 (GMT)
+Received: from lugh.tuatha.org (postfix@lugh.tuatha.org [194.125.145.45])
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id gAQGS7W11520 for
+    <jm-ilug@jmason.org>; Tue, 26 Nov 2002 16:28:07 GMT
+Received: from lugh.tuatha.org (localhost [127.0.0.1]) by lugh.tuatha.org
+    (Postfix) with ESMTP id 1364F340D5; Tue, 26 Nov 2002 16:29:34 +0000 (GMT)
+Delivered-To: linux.ie-ilug@localhost
+Received: from mail.archivease.com (unknown [217.114.163.95]) by
+    lugh.tuatha.org (Postfix) with ESMTP id 4C2C3340A2 for <ilug@linux.ie>;
+    Tue, 26 Nov 2002 16:28:44 +0000 (GMT)
+Received: from bagend.magicgoeshere.com (ts15-108.dublin.indigo.ie
+    [194.125.176.108]) by mail.archivease.com (Postfix on SuSE Linux 8.0
+    (i386)) with ESMTP id BC82EBEFD for <ilug@linux.ie>; Tue, 26 Nov 2002
+    16:30:08 +0000 (GMT)
+Received: from bagend (localhost [127.0.0.1]) by bagend.magicgoeshere.com
+    (Postfix) with ESMTP id 47CCC3CF47 for <ilug@linux.ie>; Tue,
+    26 Nov 2002 16:12:14 +0000 (GMT)
+Content-Type: text/plain; charset="us-ascii"
+From: Niall O Broin <niall@linux.ie>
+Reply-To: niall@magicgoeshere.com
+Organization: Irish Linux Users Group
+To: ilug@linux.ie
+User-Agent: KMail/1.4.3
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Message-Id: <200211261612.12309.niall@linux.ie>
+Subject: [ILUG] NFS slowness with SuSE 8.1
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Beenthere: ilug@linux.ie
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:ilug-request@linux.ie?subject=help>
+List-Post: <mailto:ilug@linux.ie>
+List-Subscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=subscribe>
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+List-Unsubscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=unsubscribe>
+List-Archive: <http://www.linux.ie/pipermail/ilug/>
+X-Original-Date: Tue, 26 Nov 2002 16:12:12 +0000
+Date: Tue, 26 Nov 2002 16:12:12 +0000
+
+NFS as a protocol is not known for its speediness but this is absurd. I did an 
+NFS install of a box this morning (that would be the box which won't boot 
+from CD for those who were in IRC) and it was rather slow but I just left it 
+to it. Having got it up, I want to copy the DVD to a disk on it so I have it 
+handy for installing any further bits I might require. So I simply mounted 
+the NFS exported DVD on the new box and started copying. 
+
+After a couple of minutes I looked - it was transferring about 8MB a MINUTE. 
+So I killed that and used rsync instead which is ticking away now at about 
+100 MB/min - still not exactly turbo charged but a lot better than the NFS 
+rate. Any ideas as to what's making it SO slow ? There's really no point in 
+running more nfsd processes, as there is exactly one client, so I'm a little 
+at a loss I must say.
+
+
+
+Niall
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

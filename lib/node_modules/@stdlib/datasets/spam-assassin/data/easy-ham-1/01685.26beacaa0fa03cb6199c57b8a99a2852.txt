@@ -1,0 +1,24 @@
+Return-Path: anthony@interlink.com.au
+Delivery-Date: Sat Sep  7 04:44:50 2002
+From: anthony@interlink.com.au (Anthony Baxter)
+Date: Sat, 07 Sep 2002 13:44:50 +1000
+Subject: [Spambayes] understanding high false negative rate 
+In-Reply-To: 
+	<200209062026.g86KQqJ03393@pcp02138704pcs.reston01.va.comcast.net> 
+Message-ID: <200209070344.g873io020676@localhost.localdomain>
+
+
+> Looks like your ham corpus by and large has To: jeremy@alum.mit.edu in
+> a header while your spam corpus by and large doesn't.  But this one
+> does.
+
+Interestingly, for me, one of the highest value spam indicators was
+the name of the mail host that the spam was delivered to, in the To:
+line. So mail to info@gin.elax2.ekorp.com was pretty much a dead cert
+for the filters.
+
+
+-- 
+Anthony Baxter     <anthony@interlink.com.au>   
+It's never too late to have a happy childhood.
+

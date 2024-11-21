@@ -1,0 +1,83 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Mon Jul 22 18:22:21 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id DC4B7440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 13:22:20 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:22:20 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFk2I09810 for
+    <jm-sa@jmason.org>; Mon, 22 Jul 2002 16:46:02 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id DAA29807 for
+    <jm-sa@jmason.org>; Mon, 22 Jul 2002 03:42:55 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17WT99-0006li-00; Sun,
+    21 Jul 2002 19:42:03 -0700
+Received: from mail.cs.ait.ac.th ([192.41.170.16]) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17WT8H-0002sc-00 for
+    <spamassassin-talk@lists.sourceforge.net>; Sun, 21 Jul 2002 19:41:09 -0700
+Received: from banyan.cs.ait.ac.th (on@banyan.cs.ait.ac.th [192.41.170.5])
+    by mail.cs.ait.ac.th (8.12.3/8.9.3) with ESMTP id g6M3EnTE028308;
+    Mon, 22 Jul 2002 10:14:49 +0700 (ICT)
+Received: (from on@localhost) by banyan.cs.ait.ac.th (8.8.5/8.8.5) id
+    JAA18805; Mon, 22 Jul 2002 09:41:19 +0700 (ICT)
+Message-Id: <200207220241.JAA18805@banyan.cs.ait.ac.th>
+X-Authentication-Warning: banyan.cs.ait.ac.th: on set sender to
+    on@banyan.cs.ait.ac.th using -f
+From: Olivier Nicole <on@cs.ait.ac.th>
+To: yyyyates@sial.org
+Cc: spamassassin-talk@example.sourceforge.net
+In-Reply-To: <20020722022715.GS43204@darkness.sial.org> (message from
+    Jeremy Mates on Sun, 21 Jul 2002 19:27:15 -0700)
+Subject: Re: [SAtalk] Apple, Kmail, Adaptive Rules
+References: <20020720224934.N3833-100000@moon.campus.luth.se>
+    <200207220209.JAA18749@banyan.cs.ait.ac.th>
+    <20020722022715.GS43204@darkness.sial.org>
+X-Virus-Scanned: by amavisd-milter (http://amavis.org/)
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Mon, 22 Jul 2002 09:41:19 +0700 (ICT)
+Date: Mon, 22 Jul 2002 09:41:19 +0700 (ICT)
+
+>How would forgeries (e.g. viruses) be detected?  Would there be an
+>"oops-I-didn't-mean-to-submit-that" option somehow?
+
+Real viruses are filtered before they reach any mailbox for delivery.
+
+Tose two addresses could be accessible only for internal mail.
+
+And as a user is using this mechanism to build his own database of
+spam/non-spam, that's his problem is he sumbit something wrong.
+
+BTW, same forgery or wrong submission problems would exist if each
+user had his own set of 2 addresses.
+
+Olivier
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

@@ -1,0 +1,35 @@
+From rssfeeds@jmason.org  Thu Sep 26 16:30:47 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 9DA0816F17
+	for <jm@localhost>; Thu, 26 Sep 2002 16:30:18 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 16:30:18 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8QFBMg23708 for
+    <jm@jmason.org>; Thu, 26 Sep 2002 16:11:22 +0100
+Message-Id: <200209261511.g8QFBMg23708@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: diveintomark <rssfeeds@spamassassin.taint.org>
+Subject: FOAF explorer
+Date: Thu, 26 Sep 2002 15:11:22 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://diveintomark.org/archives/2002/09/25.html#foaf_explorer
+Date: 2002-09-25T18:18:53-05:00
+
+Morten Frederiksen has taken a first stab at a real-time social network 
+explorer based on FOAF files. You could start on my profile[1] and explore from 
+there, or enter the URL of your own FOAF file (at the bottom of the page). It's 
+heavy on tech details, but you can easily see the potential here. (It's also a 
+great way to debug your FOAF file, if you added anything manually.) Now we need 
+somebody to build a spider that follows foaf:knows links and draws pretty 
+social network diagrams, so we can see the forest for the trees.
+
+
+
+[1] http://xml.mfd-consult.dk/foaf/?foaf=http%3A%2F%2Fdiveintomark.org%2Fpublic%2Ffoaf.rdf
+
+

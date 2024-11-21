@@ -1,0 +1,37 @@
+
+{{alias}}( x, y )
+    Computes the absolute difference.
+
+    Parameters
+    ----------
+    x: number
+        First number.
+
+    y: number
+        Second number.
+
+    Returns
+    -------
+    out: number
+        Absolute difference.
+
+    Examples
+    --------
+    > var d = {{alias}}( 2.0, 5.0 )
+    3.0
+    > d = {{alias}}( -1.0, 3.14 )
+    ~4.14
+    > d = {{alias}}( 10.1, -2.05 )
+    ~12.15
+    > d = {{alias}}( -0.0, 0.0 )
+    +0.0
+    > d = {{alias}}( NaN, 5.0 )
+    NaN
+    > d = {{alias}}( {{alias:@stdlib/constants/float64/pinf}}, {{alias:@stdlib/constants/float64/ninf}} )
+    Infinity
+    > d = {{alias}}( {{alias:@stdlib/constants/float64/pinf}}, {{alias:@stdlib/constants/float64/pinf}} )
+    NaN
+
+    See Also
+    --------
+

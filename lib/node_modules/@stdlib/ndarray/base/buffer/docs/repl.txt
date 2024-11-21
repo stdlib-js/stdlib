@@ -1,0 +1,25 @@
+
+{{alias}}( dtype, size )
+    Returns a contiguous linear ndarray data buffer.
+
+    Parameters
+    ----------
+    dtype: string
+        Data type.
+
+    size: integer
+        Buffer size.
+
+    Returns
+    -------
+    out: Array|TypedArray|Buffer
+        Contiguous ndarray data buffer.
+
+    Examples
+    --------
+    > var buf = {{alias}}( 'float64', 3 )
+    <Float64Array>[ 0.0, 0.0, 0.0 ]
+
+    See Also
+    --------
+

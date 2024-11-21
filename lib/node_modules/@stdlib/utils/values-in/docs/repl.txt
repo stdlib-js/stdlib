@@ -1,0 +1,31 @@
+
+{{alias}}( obj )
+    Returns an array of an object's own and inherited enumerable property
+    values.
+
+    Value order is not guaranteed, as object key enumeration is not specified
+    according to the ECMAScript specification. In practice, however, most
+    engines use insertion order to sort an object's keys, thus allowing for
+    deterministic extraction.
+
+    Parameters
+    ----------
+    obj: ObjectLike
+        Input object.
+
+    Returns
+    -------
+    values: Array
+        Value array.
+
+    Examples
+    --------
+    > function Foo() { this.beep = 'boop'; return this; };
+    > Foo.prototype.foo = 'bar';
+    > var obj = new Foo();
+    > var values = {{alias}}( obj )
+    e.g., [ 'boop', 'bar' ]
+
+    See Also
+    --------
+

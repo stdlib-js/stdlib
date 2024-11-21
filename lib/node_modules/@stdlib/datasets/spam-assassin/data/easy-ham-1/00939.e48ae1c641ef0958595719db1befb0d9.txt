@@ -1,0 +1,94 @@
+From fork-admin@xent.com  Wed Oct  9 10:55:02 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 782C316F03
+	for <jm@localhost>; Wed,  9 Oct 2002 10:52:48 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 09 Oct 2002 10:52:48 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g98IjTK29427 for <jm@jmason.org>;
+    Tue, 8 Oct 2002 19:45:30 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 9CC582940A8; Tue,  8 Oct 2002 11:45:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from localhost.localdomain (pm5-47.sba1.netlojix.net
+    [207.71.222.47]) by xent.com (Postfix) with ESMTP id 3767D29409A for
+    <fork@xent.com>; Tue,  8 Oct 2002 11:44:51 -0700 (PDT)
+Received: (from dave@localhost) by maltesecat (8.8.7/8.8.7a) id LAA09633;
+    Tue, 8 Oct 2002 11:53:52 -0700
+Message-Id: <200210081853.LAA09633@maltesecat>
+To: fork@spamassassin.taint.org
+Subject: Re: erratum [Re: no matter ...] & errors
+In-Reply-To: Message from Owen Byrne <owen@permafrost.net> of
+    "Mon, 07 Oct 2002 16:48:36 -0300."
+    <3DA1E514.9080807@permafrost.net>
+From: Dave Long <dl@silcom.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 08 Oct 2002 11:53:52 -0700
+
+
+
+> I'm not sure what you mean by "let's you and him fight", but it is 
+> important to remember that England was in control of Ireland
+> for 300 years ...
+
+Exactly -- "let's you and him fight" is a
+way of dealing with troublesome populations
+by moving them next to one another, so they
+give each other, and not the Man, grief*.
+
+So by my understanding (and, you all will
+understand, with tongue firmly in cheek):
+
+Ireland:  Irish?  Uppity barbarians overly
+   fond of "risings".  Scots?  More uppity
+   barbarians overly fond of "risings".
+   Why not plonk down a bunch of the latter
+   next to the former and kill two birds
+   with one stone?
+
+Israel:  Ex-ottomans?  Uppity barbarians
+   (didn't they help kick out the Ottomans?)
+   Zionists?  Uppity sorts who aren't happy
+   with perfectly good land in Uganda.  Why
+   not plonk down a bunch of the latter next
+   to the former and kill two birds with one
+   stone?
+
+but not:
+
+India: in which the muslims and hindus were
+    originally intermixed to some degree,
+    but Partioned due to their own conflict,
+    not due to English resettlement policy.
+
+Canada: in which the french and english were
+    already established, and it was just the
+    balance of power on the continent that
+    determined events in the colonies.  The
+    Acadians got resettled, but they don't
+    seem to have been that good for picking
+    fights with their neighbors, so no one
+    had them plonked down next door.
+
+-Dave
+
+* this works best with a populace who,
+given "one man, one vote", immediately
+deduce "one less man, one less vote" --
+eh, Magnan?
+
+

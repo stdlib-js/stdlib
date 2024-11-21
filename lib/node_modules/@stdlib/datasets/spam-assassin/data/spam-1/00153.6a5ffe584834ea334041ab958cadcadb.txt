@@ -1,0 +1,89 @@
+From social-admin@linux.ie  Thu Aug 29 11:17:25 2002
+Return-Path: <social-admin@linux.ie>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.spamassassin.taint.org (Postfix) with ESMTP id 94D9D43F9B
+	for <zzzz@localhost>; Thu, 29 Aug 2002 06:17:24 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Thu, 29 Aug 2002 11:17:24 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7TAEvZ07842 for
+    <zzzz+ilug-social@jmason.org>; Thu, 29 Aug 2002 11:14:57 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA15991; Thu, 29 Aug 2002 11:13:51 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from byron.heanet.ie (byron.heanet.ie [193.1.219.90]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id LAA15946 for <social@linux.ie>;
+    Thu, 29 Aug 2002 11:13:43 +0100
+Received: from [200.164.227.2] (helo=qfgf94776.com) by byron.heanet.ie
+    with smtp (Exim 4.05) id 17kMJ2-0007g5-00 for social@linux.ie;
+    Thu, 29 Aug 2002 11:13:43 +0100
+From: "Opt-inList" <besthomebiz@subdimension.com>
+Reply-To: stockbuyer@netzero.net
+To: social@linux.ie
+Date: Thu, 29 Aug 2002 06:25:48 -0500
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Message-Id: <E17kMJ2-0007g5-00@byron.heanet.ie>
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    LAA15946
+Subject: [ILUG-Social] Everybody Gets Paid - No Recruiting Needed
+Sender: social-admin@linux.ie
+Errors-To: social-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group social events <social.linux.ie>
+X-Beenthere: social@linux.ie
+Content-Transfer-Encoding: 8bit
+
+Everybody gets paid.  No recruiting required.
+
+Join and reserve a position for free now.
+Program is 18 weeks old and it's paying.
+
+Everybody gets in line to get paid by all
+the new people coming in (but it's NOT a
+traditional straightline)...EVERYONE makes money...
+and those that sponsor make more....
+
+<html>
+<a href="mailto:gmt101info@profitresponder.com?subject=send-more-info"<b>
+Click here to request for more information</b></a>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="mailto:stockbuyer@netzero.net?subject=REMOVE"<b>
+We belong to the same opt-in list. But if wish to have your email
+address REMOVE from our database please click here</b></a>
+</html>
+
+
+
+-- 
+Irish Linux Users' Group Social Events: social@linux.ie
+http://www.linux.ie/mailman/listinfo/social for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

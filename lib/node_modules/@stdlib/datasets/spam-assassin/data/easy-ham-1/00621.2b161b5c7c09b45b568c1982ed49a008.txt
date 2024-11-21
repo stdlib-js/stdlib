@@ -1,0 +1,81 @@
+From fork-admin@xent.com  Wed Sep 18 17:43:35 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 52A8916F03
+	for <jm@localhost>; Wed, 18 Sep 2002 17:43:35 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 18 Sep 2002 17:43:35 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8IGUdC07204 for <jm@jmason.org>;
+    Wed, 18 Sep 2002 17:30:39 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 3AB012940E5; Wed, 18 Sep 2002 09:27:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.superb.net (smtp1.superb.net [207.228.225.14]) by
+    xent.com (Postfix) with SMTP id EE98E29409E for <fork@xent.com>;
+    Wed, 18 Sep 2002 09:26:31 -0700 (PDT)
+Received: (qmail 14126 invoked from network); 18 Sep 2002 16:26:35 -0000
+Received: from unknown (HELO maya.dyndns.org) (207.61.5.143) by
+    smtp1.superb.net with SMTP; 18 Sep 2002 16:26:35 -0000
+Received: by maya.dyndns.org (Postfix, from userid 501) id 49CB21C2C4;
+    Wed, 18 Sep 2002 12:26:32 -0400 (EDT)
+To: fork@spamassassin.taint.org
+Subject: Re: [VoID] a new low on the personals tip...
+References: <20020918104740.5A00BC44D@argote.ch>
+    <200209181145.50631.eh@mad.scientist.com>
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m2ptvbl0w7.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 18 Sep 2002 12:26:32 -0400
+
+>>>>> "E" == Eirikur Hallgrimsson <eh@mad.scientist.com> writes:
+
+    E> You just can't tell important things from a picture and a few
+    E> words.  It's not how we are built.  There's no geek code for
+    E> the heart and soul.
+
+Nor is there a Turing Test, even for someone with whom you've spent 11
+years, boom, bust and boom again, and 3 children (trust me) There is
+no magic litmus test other than the totally empirical: "Try it and
+see"
+
+"String bags full of oranges
+ And matters of the heart,
+ People laugh at /anything/
+ And things just fall apart."
+ - michael leunig
+
+The only real test, the only /sensible/ test, is to look back and
+realize your relationship has lasted 50 years and see no reason to
+believe it couldn't last another 50.  In the absense of 50 years of
+actual (ahem) hands-on experiential data, a photo and a few words are
+as good as any, provided you are prepared for the dynamics of it.
+
+Love is a verb.  Sex is a /shared/ pursuit.  There is no
+'relation-ship', there is only the crew.  sail away!
+
+-- 
+Gary Lawrence Murphy - garym@teledyn.com - TeleDynamics Communications
+ - blog: http://www.auracom.com/~teledyn - biz: http://teledyn.com/ -
+  "Computers are useless. They can only give you answers." (Picasso)
+
+

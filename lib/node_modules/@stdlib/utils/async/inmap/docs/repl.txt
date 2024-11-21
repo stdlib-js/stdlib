@@ -1,0 +1,209 @@
+
+{{alias}}( collection, [options,] fcn, done )
+    Invokes a function once for each element in a collection and updates a
+    collection in-place.
+
+    When invoked, `fcn` is provided a maximum of four arguments:
+
+    - value: collection value.
+    - index: collection index.
+    - collection: the input collection.
+    - next: a callback to be invoked after processing a collection `value`.
+
+    The actual number of provided arguments depends on function length. If `fcn`
+    accepts two arguments, `fcn` is provided:
+
+    - value
+    - next
+
+    If `fcn` accepts three arguments, `fcn` is provided:
+
+    - value
+    - index
+    - next
+
+    For every other `fcn` signature, `fcn` is provided all four arguments.
+
+    The `next` callback accepts two arguments:
+
+    - error: error argument.
+    - result: value used to update the collection.
+
+    If a provided function calls the `next` callback with a truthy `error`
+    argument, the function suspends execution and immediately calls the `done`
+    callback for subsequent `error` handling. Note, however, that the function
+    may have mutated an input collection during prior invocations, resulting in
+    a partially mutated collection.
+
+    Execution is *not* guaranteed to be asynchronous. To guarantee asynchrony,
+    wrap the `done` callback in a function which either executes at the end of
+    the current stack (e.g., `nextTick`) or during a subsequent turn of the
+    event loop (e.g., `setImmediate`, `setTimeout`).
+
+    The function does not support dynamic collection resizing.
+
+    The function does not skip `undefined` elements.
+
+    Parameters
+    ----------
+    collection: Array|TypedArray|Object
+        Input collection over which to iterate. If provided an object, the
+        object must be array-like (excluding strings and functions).
+
+    options: Object (optional)
+        Function options.
+
+    options.limit: integer (optional)
+        Maximum number of pending invocations. Default: Infinity.
+
+    options.series: boolean (optional)
+        Boolean indicating whether to process each collection element
+        sequentially. Default: false.
+
+    options.thisArg: any (optional)
+        Execution context.
+
+    fcn: Function
+        The function to invoke for each element in a collection.
+
+    done: Function
+        A callback invoked either upon processing all collection elements or
+        upon encountering an error.
+
+    Examples
+    --------
+    // Basic usage:
+    > function fcn( value, index, next ) {
+    ...     setTimeout( onTimeout, value );
+    ...     function onTimeout() {
+    ...         console.log( value );
+    ...         next( null, value*index );
+    ...     }
+    ... };
+    > function done( error, collection ) {
+    ...     if ( error ) {
+    ...         throw error;
+    ...     }
+    ...     console.log( collection === arr );
+    ...     console.log( collection );
+    ... };
+    > var arr = [ 3000, 2500, 1000 ];
+    > {{alias}}( arr, fcn, done )
+    1000
+    2500
+    3000
+    true
+    [ 0, 2500, 2000 ]
+
+    // Limit number of concurrent invocations:
+    > function fcn( value, index, next ) {
+    ...     setTimeout( onTimeout, value );
+    ...     function onTimeout() {
+    ...         console.log( value );
+    ...         next( null, value*index );
+    ...     }
+    ... };
+    > function done( error, collection ) {
+    ...     if ( error ) {
+    ...         throw error;
+    ...     }
+    ...     console.log( collection === arr );
+    ...     console.log( collection );
+    ... };
+    > var opts = { 'limit': 2 };
+    > var arr = [ 3000, 2500, 1000 ];
+    > {{alias}}( arr, opts, fcn, done )
+    2500
+    3000
+    1000
+    true
+    [ 0, 2500, 2000 ]
+
+    // Process sequentially:
+    > function fcn( value, index, next ) {
+    ...     setTimeout( onTimeout, value );
+    ...     function onTimeout() {
+    ...         console.log( value );
+    ...         next( null, value*index );
+    ...     }
+    ... };
+    > function done( error, collection ) {
+    ...     if ( error ) {
+    ...         throw error;
+    ...     }
+    ...     console.log( collection === arr );
+    ...     console.log( collection );
+    ... };
+    > var opts = { 'series': true };
+    > var arr = [ 3000, 2500, 1000 ];
+    > {{alias}}( arr, opts, fcn, done )
+    3000
+    2500
+    1000
+    true
+    [ 0, 2500, 2000 ]
+
+
+{{alias}}.factory( [options,] fcn )
+    Returns a function which invokes a function once for each element in a
+    collection and updates a collection in-place.
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Function options.
+
+    options.limit: integer (optional)
+        Maximum number of pending invocations. Default: Infinity.
+
+    options.series: boolean (optional)
+        Boolean indicating whether to process each collection element
+        sequentially. Default: false.
+
+    options.thisArg: any (optional)
+        Execution context.
+
+    fcn: Function
+        The function to invoke for each element in a collection.
+
+    Returns
+    -------
+    out: Function
+        A function which invokes a function for each element in a collection.
+
+    Examples
+    --------
+    > function fcn( value, index, next ) {
+    ...     setTimeout( onTimeout, value );
+    ...     function onTimeout() {
+    ...         console.log( value );
+    ...         next( null, value*index );
+    ...     }
+    ... };
+    > var opts = { 'series': true };
+    > var f = {{alias}}.factory( opts, fcn );
+    > function done( error, collection ) {
+    ...     if ( error ) {
+    ...         throw error;
+    ...     }
+    ...     console.log( collection === arr );
+    ...     console.log( collection );
+    ... };
+    > var arr = [ 3000, 2500, 1000 ];
+    > f( arr, done )
+    3000
+    2500
+    1000
+    true
+    [ 0, 2500, 2000 ]
+    > arr = [ 2000, 1500, 1000 ];
+    > f( arr, done )
+    2000
+    1500
+    1000
+    true
+    [ 0, 1500, 2000 ]
+
+    See Also
+    --------
+

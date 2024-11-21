@@ -1,0 +1,77 @@
+From spamassassin-devel-admin@lists.sourceforge.net  Thu Aug 22 15:46:30 2002
+Return-Path: <spamassassin-devel-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C4B4247C66
+	for <jm@localhost>; Thu, 22 Aug 2002 10:46:25 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 22 Aug 2002 15:46:25 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7MEfWZ10476 for <jm@jmason.org>; Thu, 22 Aug 2002 15:41:32 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17ht5L-0000HM-00; Thu,
+    22 Aug 2002 07:37:19 -0700
+Received: from hippo.star.co.uk ([195.216.14.9]) by
+    usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17ht4D-0001uR-00 for <spamassassin-devel@lists.sourceforge.net>;
+    Thu, 22 Aug 2002 07:36:10 -0700
+Received: from MATT_LINUX by hippo.star.co.uk via smtpd (for
+    usw-sf-lists.sourceforge.net [216.136.171.198]) with SMTP; 22 Aug 2002
+    14:27:19 UT
+Received: (qmail 8220 invoked from network); 20 Aug 2002 14:32:24 -0000
+Received: from unknown (HELO startechgroup.co.uk) (10.2.100.178) by
+    matt?dev.int.star.co.uk with SMTP; 20 Aug 2002 14:32:24 -0000
+Message-Id: <3D64F610.80104@startechgroup.co.uk>
+From: Matt Sergeant <msergeant@startechgroup.co.uk>
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.0rc1) Gecko/20020426
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: =?ISO-8859-1?Q?David_H=F6hn?= <dh@uptime.at>
+Cc: spamassassin-devel@example.sourceforge.net
+Subject: Re: [SAdev] Interesting approach to Spam handling..
+References: <B98ABFA4.1F87%dh@uptime.at>
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 8bit
+Sender: spamassassin-devel-admin@example.sourceforge.net
+Errors-To: spamassassin-devel-admin@example.sourceforge.net
+X-Beenthere: spamassassin-devel@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-devel-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-devel@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Id: SpamAssassin Developers <spamassassin-devel.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-devel>
+X-Original-Date: Thu, 22 Aug 2002 15:32:48 +0100
+Date: Thu, 22 Aug 2002 15:32:48 +0100
+
+David Höhn wrote:
+> Hello, have you seen and discussed this article and his approach?
+> 
+> Thank you
+> 
+> http://www.paulgraham.com/spam.html
+
+Yes. See the perl module Mail::SpamTest::Bayesian on CPAN, and the 
+thread on sa-talk.
+
+Matt.
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-devel mailing list
+Spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+

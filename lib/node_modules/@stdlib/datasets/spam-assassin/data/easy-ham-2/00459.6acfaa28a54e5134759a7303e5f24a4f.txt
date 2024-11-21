@@ -1,0 +1,72 @@
+From ilug-admin@linux.ie  Tue Aug 20 11:52:30 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 88C3343C47
+	for <jm@localhost>; Tue, 20 Aug 2002 06:51:44 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 11:51:44 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7K8tbZ31295 for
+    <jm-ilug@jmason.org>; Tue, 20 Aug 2002 09:55:37 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA23089; Tue, 20 Aug 2002 09:54:41 +0100
+Received: from milexc01.maxtor.com ([134.6.205.206]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA23054 for <ilug@linux.ie>; Tue,
+    20 Aug 2002 09:54:30 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [134.6.205.206] claimed to
+    be milexc01.maxtor.com
+Received: by milexc01.maxtor.com with Internet Mail Service (5.5.2653.19)
+    id <RHPLX011>; Tue, 20 Aug 2002 09:54:29 +0100
+Message-Id: <0D443C91DCE9CD40B1C795BA222A729E01885601@milexc01.maxtor.com>
+From: "Wynne, Conor" <conor_wynne@maxtor.com>
+To: "'Con Hennessy'" <CP.Hennessy@iname.com>, ilug@linux.ie
+Subject: RE: [ILUG] ADSL, routers and firewalls
+Date: Tue, 20 Aug 2002 09:54:29 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain; charset="iso-8859-1"
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+I'm configuring this at the moment. -> Still ;--)
+
+I found out that my firewall box has a dodgy USB and so I'm awaiting a
+PCI-USB controller to finish the configuration. I meant to buy one yesterday
+and forgot. I've bought Smoothwall Corporate edition as its the best
+firewall/routing solution around or so I've been led to believe. 
+
+Will be doing NAT/Proxy/firewall, maybe VPN too but we shall see. 
+
+CW
+
+-----------
+Hi all,
+	I am seriously thinking of getting the ADSL "solo" connection
+from Eircom. I also have more than one computer therefore I need a router
+so that I can connect them together.
+The 2 options I am looking at are : 
+  the ADSL usb modem connected to my linux machine, with the linux
+	machine acting as firewall; and
+  a combined router / firewall box which would be connected directly
+	to the ADSL modem.
+
+So my questions are : 
+	what recommendations would any of you have about the above ?
+	do I need to have NAT (I have only a vague idea of what this does )?
+	what other options should I be looking at ?
+
+Thanks
+Con
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

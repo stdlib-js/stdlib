@@ -1,0 +1,68 @@
+From ilug-admin@linux.ie  Wed Aug 28 10:48:30 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E908B4415B
+	for <zzzz@localhost>; Wed, 28 Aug 2002 05:47:43 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 28 Aug 2002 10:47:43 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7RMdvZ28910 for
+    <zzzz-ilug@spamassassin.taint.org>; Tue, 27 Aug 2002 23:39:57 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id XAA20690; Tue, 27 Aug 2002 23:38:51 +0100
+Received: from claymore.diva.ie (diva.ie [195.218.115.17] (may be forged))
+    by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id XAA20655 for
+    <ilug@linux.ie>; Tue, 27 Aug 2002 23:38:34 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host diva.ie [195.218.115.17]
+    (may be forged) claimed to be claymore.diva.ie
+Received: from cunniffe.net (ts12-155.dublin.indigo.ie [194.125.172.155])
+    by claymore.diva.ie (8.9.3/8.9.3) with ESMTP id XAA11539 for
+    <ilug@linux.ie>; Tue, 27 Aug 2002 23:38:31 +0100
+Message-Id: <3D6BFF48.8050306@cunniffe.net>
+Date: Tue, 27 Aug 2002 23:38:00 +0100
+From: Vincent Cunniffe <vincent@cunniffe.net>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.0.0)
+    Gecko/20020530
+X-Accept-Language: en, en-us
+MIME-Version: 1.0
+To: ilug@linux.ie
+Subject: Re: [ILUG] Using Normal IDE Device with a Dell Latitude CPx laptop
+References: <3D6BEFBB.2030103@Sun.COM>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Darren Kenny wrote:
+> Hi,
+> 
+> I've got an normal 3.5" CD-RW IDE drive that I'd like to be able to use 
+> with a Dell Latitude CPx laptop that I've got. Does anyone know any way 
+ > enable this, for example through the use of a special cable for the
+ > Modular Bay (where CD-ROM or floppy drive is normally).
+
+There is absolutely no way to use a conventional 3.5" drive with a
+laptop directly. However, you can get an external firewire or USB
+cradle and attach it to the laptop like that, and any 3.5" drive
+will work in that case.
+
+Example :
+
+http://www.microsense.com/USB_35_combo.asp
+
+Regards,
+
+Vin
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

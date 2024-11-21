@@ -1,0 +1,39 @@
+
+{{alias}}( shapes )
+    Broadcasts array shapes to a single shape.
+
+    Two respective dimensions in two shape arrays are compatible if
+
+    1. the dimensions are equal.
+    2. one dimension is `1`.
+
+    The function returns `null` if provided incompatible shapes (i.e., shapes
+    which cannot be broadcast with one another).
+
+    Parameters
+    ----------
+    shapes: Array
+        Array of shape arrays.
+
+    Returns
+    -------
+    out: Array|null
+        Broadcast shape.
+
+    Examples
+    --------
+    // Compatible shapes:
+    > var sh1 = [ 8, 1, 6, 1 ];
+    > var sh2 = [ 7, 1, 5 ];
+    > var sh = {{alias}}( [ sh1, sh2 ] )
+    [ 8, 7, 6, 5 ]
+
+    // Incompatible shapes:
+    > sh1 = [ 3, 2 ];
+    > sh1 = [ 2, 3 ];
+    > sh = {{alias}}( [ sh1, sh2 ] )
+    null
+
+    See Also
+    --------
+

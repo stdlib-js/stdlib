@@ -1,0 +1,43 @@
+Return-Path: skip@pobox.com
+Delivery-Date: Mon Sep  9 20:19:04 2002
+From: skip@pobox.com (Skip Montanaro)
+Date: Mon, 9 Sep 2002 14:19:04 -0500
+Subject: [Spambayes] deleting "duplicate" spam before training?  good idea
+ orbad?
+In-Reply-To: <LNBBLJKPBEHFEDALKOLCIECKBDAB.tim.one@comcast.net>
+References: <15740.52432.861148.597750@12-248-11-90.client.attbi.com>
+        <LNBBLJKPBEHFEDALKOLCIECKBDAB.tim.one@comcast.net>
+Message-ID: <15740.62504.533596.995365@12-248-11-90.client.attbi.com>
+
+    >> I wrote a script some time ago to try an minimize the duplicates I
+    >> see by calculating a loose checksum, but I still have some
+    >> duplicates.  Should I delete the duplicates before training or not?
+
+    Tim> People just can't stop thinking <wink>.  The classifier should work
+    Tim> best when trained on a wholly random spattering of real life.  If
+    Tim> real life contains duplicates, then that's what the classifier
+    Tim> should see.
+
+A bit more detail.  I get destined for many addresses: skip@pobox.com,
+skip@calendar.com, concerts@musi-cal.com, webmaster@mojam.com, etc.  I
+originally wrote (a slightly different version of) the loosecksum.py script
+I'm about to check in to avoid manually scanning all those presumed spams
+which are really identical.  Once a message was identified as spam, what I
+refer to as a loose checksum was computed to try and avoid saving the same
+spam multiple times for later review.
+
+    >> Would people be interested in the script?  I'd be happy to extricate
+    >> it from my local modules and check it into CVS.
+
+    Tim> Sure!  I think it's relevant, but maybe for another purpose.  Paul
+    Tim> Svensson is thinking harder about real people <wink> than the rest
+    Tim> of us, and he may be able to get use out of approaches that
+    Tim> identify closely related spam.  For example, some amount of spam is
+    Tim> going to end up in the ham training data in real life use, and any
+    Tim> sort of similarity score to a piece of known spam may be an aid in
+    Tim> finding and purging it.
+
+I'll check it in.  Let me know if you find it useful.
+
+Skip
+

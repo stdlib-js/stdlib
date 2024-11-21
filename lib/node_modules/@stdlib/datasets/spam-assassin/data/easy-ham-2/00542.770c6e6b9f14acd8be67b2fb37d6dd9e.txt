@@ -1,0 +1,103 @@
+From razor-users-admin@lists.sourceforge.net  Thu Jul 25 10:53:09 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4C656440D3
+	for <jm@localhost>; Thu, 25 Jul 2002 05:53:05 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 10:53:05 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6OHba430137 for <jm-razor@jmason.org>; Wed, 24 Jul 2002 18:37:36 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17XPsl-0000zc-00; Wed,
+    24 Jul 2002 10:25:03 -0700
+Received: from [216.129.152.3] (helo=mail.naisp.net) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17XPsK-0008EZ-00 for <razor-users@lists.sourceforge.net>; Wed,
+    24 Jul 2002 10:24:36 -0700
+Received: from shadow (hidden-user@kosh.ne.client2.attbi.com
+    [66.31.152.138]) by mail.naisp.net (8.11.6/8.11.6) with SMTP id
+    g6OHOAN07745 for <razor-users@lists.sourceforge.net>; Wed, 24 Jul 2002
+    13:24:10 -0400
+Message-Id: <001201c23336$ec1c8da0$010aa8c0@shadow>
+From: "Alan A." <alan@naisp.net>
+To: <razor-users@example.sourceforge.net>
+References: <20020724095903.W3639-100000@rockstar.stealthgeeks.net>
+Subject: Re: [Razor-users] Authentication Error
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Wed, 24 Jul 2002 13:24:09 -0400
+Date: Wed, 24 Jul 2002 13:24:09 -0400
+
+> On Wed, 24 Jul 2002, Patrick wrote:
+> >On Wed, 24 Jul 2002, rODbegbie wrote:
+> >
+> > >rODbegbie wrote:
+> > > >I get the impression that Vipul & co are deliberately trying to
+> > > >mislead users into downloading the dev code in order to get more
+> > > >unwitting test sites.
+> >
+> > >Apologies to all.  In re-reading, that sentence sounds a lot harsher
+than I
+> > >intended.
+> >
+> >The question I have is: what needs to be done/help needs to be provided
+to
+> >make the system suck less? It's obviously a great idea, it just needs
+some
+> >work...
+
+That's simple.  The same thing that any beta project needs to improve.
+Continuous
+End-User testing, constructive feedback, and suggestions on how to improve
+the
+system.  Upgrade each time a new beta version comes out, so everyone is
+testing
+on the same version of the code, and old bugs don't get reported as being in
+the
+new version, thus slowing down the debugging process.
+
+Report any installation issues, bugs, errors, etc., to the V2 beta list
+(http://lists.sourceforge.net/lists/listinfo/razor-testers) so that they can
+be quickly
+looked at, etc.  Provide detailed description of issues, include logs if
+possible,
+as well as any "captured" spam that generated the error(s).
+
+
+Thank you, please drive through,
+- AA -
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

@@ -1,0 +1,41 @@
+Return-Path: guido@python.org
+Delivery-Date: Fri Sep  6 16:06:26 2002
+From: guido@python.org (Guido van Rossum)
+Date: Fri, 06 Sep 2002 11:06:26 -0400
+Subject: [Spambayes] Deployment
+In-Reply-To: Your message of "Fri, 06 Sep 2002 10:01:51 CDT."
+             <15736.50015.881231.510395@12-248-11-90.client.attbi.com> 
+References: <200209061431.g86EVM114413@pcp02138704pcs.reston01.va.comcast.net>
+	<15736.50015.881231.510395@12-248-11-90.client.attbi.com> 
+Message-ID: <200209061506.g86F6Qo14777@pcp02138704pcs.reston01.va.comcast.net>
+
+> Dunno about the other tools, but SpamAssassin is a breeze to incorporate
+> into a procmail environment.  Lots of people use it in many other ways.  For
+> performance reasons, many people run a spamd process and then invoke a small
+> C program called spamc which shoots the message over to spamd and passes the
+> result back out.  I think spambayes in incremental mode is probably fast
+> enough to not require such tricks (though I would consider changing the
+> pickle to an anydbm file).
+> 
+> Basic procmail usage goes something like this:
+> 
+>     :0fw
+>     | spamassassin -P
+> 
+>     :0
+>     * ^X-Spam-Status: Yes
+>     $SPAM
+> 
+> Which just says, "Run spamassassin -P reinjecting its output into the
+> processing stream.  If the resulting mail has a header which begins
+> "X-Spam-Status: Yes", toss it into the folder indicated by the variable
+> $SPAM.
+> 
+> SpamAssassin also adds other headers as well, which give you more detail
+> about how its tests fared.  I'd like to see spambayes operate in at least
+> this way: do its thing then return a message to stdout with a modified set
+> of headers which further processing downstream can key on.
+
+Do you feel capable of writing such a tool?  It doesn't look too hard.
+
+--Guido van Rossum (home page: http://www.python.org/~guido/)

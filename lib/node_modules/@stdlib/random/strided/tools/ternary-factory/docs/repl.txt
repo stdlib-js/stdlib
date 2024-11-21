@@ -1,0 +1,38 @@
+
+{{alias}}( prng )
+    Returns a factory function for filling strided arrays with pseudorandom
+    values drawn from a ternary PRNG.
+
+    Parameters
+    ----------
+    prng: Function
+        Ternary pseudorandom value generator.
+
+    Returns
+    -------
+    fcn: Function
+        Factory function which returns a function for filling strided arrays.
+        The returned factory function accepts one optional argument:
+
+        - options: function options.
+
+        The function supports the following options:
+
+        - prng: pseudorandom number generator which generates uniformly
+          distributed pseudorandom numbers.
+        - seed: pseudorandom value generator seed.
+        - state: pseudorandom value generator state.
+        - copy: boolean indicating whether to copy a provided pseudorandom value
+          generator state.
+
+    Examples
+    --------
+    > var f = {{alias}}( {{alias:@stdlib/random/base/triangular}} );
+    > var fcn = f();
+    > var out = new {{alias:@stdlib/array/float64}}( 5 );
+    > fcn( out.length, [ 2.0 ], 0, [ 5.0 ], 0, [ 3.0 ], 0, out, 1 );
+    > out
+
+    See Also
+    --------
+

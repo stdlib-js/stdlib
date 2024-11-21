@@ -1,0 +1,101 @@
+From razor-users-admin@lists.sourceforge.net  Tue Aug  6 11:11:07 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 41E2044108
+	for <jm@localhost>; Tue,  6 Aug 2002 06:06:23 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:06:23 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g735B2v01568 for <jm-razor@jmason.org>; Sat, 3 Aug 2002 06:11:02 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17ar2a-0005fK-00; Fri,
+    02 Aug 2002 22:01:24 -0700
+Received: from joseki.proulx.com ([216.17.153.58]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17ar1J-0005F3-00 for <razor-users@lists.sourceforge.net>; Fri,
+    02 Aug 2002 22:00:05 -0700
+Received: from misery.proulx.com (misery.proulx.com [192.168.1.108]) by
+    joseki.proulx.com (Postfix) with ESMTP id 2FCA114B07 for
+    <razor-users@lists.sourceforge.net>; Fri,  2 Aug 2002 22:59:55 -0600 (MDT)
+Received: by misery.proulx.com (Postfix, from userid 1000) id 071DCA8968;
+    Fri,  2 Aug 2002 22:59:55 -0600 (MDT)
+To: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] False Positives on EFF Messages
+Message-Id: <20020803045955.GA21527@misery.proulx.com>
+Mail-Followup-To: razor-users@example.sourceforge.net
+References: <3D4B0146.20604@perkel.com> <02080219195506.20486@neofelis>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+    protocol="application/pgp-signature";
+    boundary="sm4nu43k4a2Rpi4c"
+Content-Disposition: inline
+In-Reply-To: <02080219195506.20486@neofelis>
+User-Agent: Mutt/1.4i
+From: bob@proulx.com (Bob Proulx)
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Fri, 2 Aug 2002 22:59:55 -0600
+Date: Fri, 2 Aug 2002 22:59:55 -0600
+
+
+--sm4nu43k4a2Rpi4c
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+cmeclax po'u le cmevi'u ke'umri <cmeclax@gmx.co.uk> [2002-08-02 19:19:55 -0=
+400]:
+> I added code to my procmailrc (on the other account) so that anything tha=
+t=20
+> comes on Bugtraq and is in Razor is revoked. Bugtraq is moderated, so spa=
+m=20
+> doesn't get through it. The recipe revoked a message about an hour after =
+I=20
+> added it.
+
+The problem with automatic revoke is the same as with automatic
+report.  If spammers spoof a From: Bugtraq address then their spam is
+automatically revoked by you.
+
+Bob
+
+--sm4nu43k4a2Rpi4c
+Content-Type: application/pgp-signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.7 (GNU/Linux)
+
+iD8DBQE9S2NK0pRcO8E2ULYRAml8AJ95XkpwlAeD+ADm+35642dBeI6rKQCffEoJ
+8HDuR9lyCStzdXzccNpTQhs=
+=fUbp
+-----END PGP SIGNATURE-----
+
+--sm4nu43k4a2Rpi4c--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

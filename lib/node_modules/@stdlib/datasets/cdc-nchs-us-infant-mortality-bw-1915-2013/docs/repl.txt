@@ -1,0 +1,23 @@
+
+{{alias}}()
+    Returns US infant mortality data, by race, from 1915 to 2013, as provided by
+    the Center for Disease Control and Prevention's National Center for Health
+    Statistics.
+
+    All birth data by race before 1980 are based on race of the child. Starting
+    in 1980, birth data by race are based on race of the mother. Birth data are
+    used to calculate infant mortality rate.
+
+    Returns
+    -------
+    out: Array<Object>
+        Infant mortality data.
+
+    Examples
+    --------
+    > var data = {{alias}}()
+    { 'black': [...], 'white': [...] }
+
+    See Also
+    --------
+

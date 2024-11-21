@@ -1,0 +1,8 @@
+
+Usage: has-utf16-surrogate-pair-at [options] [<string>] --pos=<index>
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --pos index           Position in string.

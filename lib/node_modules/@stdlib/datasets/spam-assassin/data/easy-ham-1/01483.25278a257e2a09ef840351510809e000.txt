@@ -1,0 +1,66 @@
+From razor-users-admin@lists.sourceforge.net  Mon Sep 16 18:32:40 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 1CF2116F03
+	for <jm@localhost>; Mon, 16 Sep 2002 18:32:40 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 16 Sep 2002 18:32:40 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8GHKaC03056 for <jm-razor@jmason.org>; Mon, 16 Sep 2002 18:20:36 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17qzRm-0006Jz-00; Mon,
+    16 Sep 2002 10:14:06 -0700
+Received: from med-core07.med.wayne.edu ([146.9.19.23]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17qzQw-0004tZ-00; Mon, 16 Sep 2002 10:13:14 -0700
+X-Mimeole: Produced By Microsoft Exchange V6.0.6249.0
+Content-Class: urn:content-classes:message
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Message-Id: <D79A56AD131896448D0860DEE07CBE1F3BACE8@med-core07.med.wayne.edu>
+X-MS-Has-Attach:
+X-MS-Tnef-Correlator:
+Thread-Topic: Performance
+Thread-Index: AcJdpFL2vpGvj3A/R42dewEFZqr/aA==
+From: "Rose, Bobby" <brose@med.wayne.edu>
+To: <razor-users@example.sourceforge.net>,
+	<spamassassin-talk@lists.sourceforge.net>
+Subject: [Razor-users] Performance
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchives/forum.php?forum=razor-users>
+X-Original-Date: Mon, 16 Sep 2002 13:13:06 -0400
+Date: Mon, 16 Sep 2002 13:13:06 -0400
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g8GHKaC03056
+
+Has anyone noticed a drop in razor-check performance over the past week?
+I disabled the razorchecks in Spamassassin and my queues start to clean
+out again.
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

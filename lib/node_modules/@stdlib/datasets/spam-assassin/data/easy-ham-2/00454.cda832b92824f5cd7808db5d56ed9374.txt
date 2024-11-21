@@ -1,0 +1,82 @@
+From ilug-admin@linux.ie  Mon Aug 19 14:05:46 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BC39443C32
+	for <jm@localhost>; Mon, 19 Aug 2002 09:05:45 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 14:05:45 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7JD3B624022 for
+    <jm-ilug@jmason.org>; Mon, 19 Aug 2002 14:03:12 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id OAA07112; Mon, 19 Aug 2002 14:02:09 +0100
+Received: from corvil.com. (k100-159.bas1.dbn.dublin.eircom.net
+    [159.134.100.159]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id OAA07072
+    for <ilug@linux.ie>; Mon, 19 Aug 2002 14:02:01 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host k100-159.bas1.dbn.dublin.eircom.net
+    [159.134.100.159] claimed to be corvil.com.
+Received: from corvil.com (pixelbeat.local.corvil.com [172.18.1.170]) by
+    corvil.com. (8.12.5/8.12.5) with ESMTP id g7JD20n4037526 for
+    <ilug@linux.ie>; Mon, 19 Aug 2002 14:02:01 +0100 (IST) (envelope-from
+    padraig.brady@corvil.com)
+Message-Id: <3D60EC37.5040200@corvil.com>
+Date: Mon, 19 Aug 2002 14:01:43 +0100
+From: Padraig Brady <padraig.brady@corvil.com>
+Organization: Corvil Networks
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:0.9.9) Gecko/20020408
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: ilug@linux.ie
+Subject: Re: [ILUG] expanding a string multiple times
+References: <3D5D27B9.9080009@corvil.com>
+    <20020817122603.GA1805@bagend.makalumedia.com>
+    <3D60BA1D.8040504@corvil.com>
+    <20020819123945.GC3182@bagend.makalumedia.com>
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 8bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Niall O Broin wrote:
+> On Mon, Aug 19, 2002 at 10:27:57AM +0100, Padraig Brady wrote:
+> 
+> 
+>>>Well, here's a solution using seq and sed - IMHO its a rather dim solution
+>>>and it definitely dies if STRING contains / (and probably has other ways to
+>>>die too) and a bash loop would certainly be faster, but you know how to do
+>>>it with loops :-)
+>>>
+>>>PREFIX=seq -s "" $NUMBER|sed "s/./$STRING/g"OA
+>>
+>>clever. A bit more robust is:
+>>#first param is number of
+>>#times to repeat second param
+>>#
+>>#e.g. quote=`repeat 3 '> '`
+>>repeat() {
+>>    seq -s , $1 | sed "s¬[0-9]\{1,\}[,]*¬$2¬g"
+>>}
+> 
+> But it's such a crap colution anyway, why would you want to make it more
+> robust ?
+> 
+
+Give yourself credit :-) it's a nice solution,
+with just 2 lightweight processes. The same thing
+coded in shell loops wouldn't be nearly as elegant
+and not as scalable to boot.
+
+Pádraig.
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

@@ -1,0 +1,44 @@
+From rssfeeds@jmason.org  Sat Oct  5 10:37:31 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id E8C8F16F80
+	for <jm@localhost>; Sat,  5 Oct 2002 10:36:49 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 05 Oct 2002 10:36:49 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9580WK02535 for
+    <jm@jmason.org>; Sat, 5 Oct 2002 09:00:32 +0100
+Message-Id: <200210050800.g9580WK02535@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: boingboing <rssfeeds@spamassassin.taint.org>
+Subject: Weird museums of NYC
+Date: Sat, 05 Oct 2002 08:00:32 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://boingboing.net/#85524596
+Date: Not supplied
+
+Great Village Voice story about oddball museums in New York. My favorite 
+weird-ass museum is the Museo de Criminologia in San Jose, Costa Rica, which 
+has bits of victims of famous crimes (machete-dented brain-pans, severed arms, 
+etc) floating in formaldehyde jars. 
+
+    A stone's throw away is the singular Freakatorium, El Museo Loco, a classy 
+    treasure chest of curiosities belonging to sword swallower Johnny Fox, 
+    whose focus is the rich history of America's earliest museums, from P.T. 
+    Barnum's American Museum to the Bowery Dime Museums. The walrus penis bone 
+    (other penis bones on display: coyote, mink, fox, raccoon) is enough to 
+    make you feel you're getting your $5 worth. But then you spy the Jivaro 
+    Shrunken Head (it's real, it's the size of a tennis ball); conjoined 
+    piglets in a jar; an assload of taxidermy, including a gorgeous zebra head; 
+    giant's rings...  
+
+Link[1] Discuss[2] (_Thanks, Gary[3]!_)
+
+[1] http://www.villagevoice.com/bestof/2002/detail.php?id=3085
+[2] http://www.quicktopic.com/boing/H/6XizLZYen3ni
+[3] http://amygdalagf.blogspot.com
+
+

@@ -1,0 +1,86 @@
+From fork-admin@xent.com  Wed Sep 11 19:42:19 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 140D616F16
+	for <jm@localhost>; Wed, 11 Sep 2002 19:42:19 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 11 Sep 2002 19:42:19 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8BHgaC24933 for <jm@jmason.org>;
+    Wed, 11 Sep 2002 18:42:38 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 878C32940B7; Wed, 11 Sep 2002 10:39:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from crank.slack.net (slack.net [166.84.151.181]) by xent.com
+    (Postfix) with ESMTP id B0F7F29409A for <fork@xent.com>; Wed,
+    11 Sep 2002 10:38:17 -0700 (PDT)
+Received: by crank.slack.net (Postfix, from userid 596) id 9284F3ED63;
+    Wed, 11 Sep 2002 13:44:46 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1]) by crank.slack.net
+    (Postfix) with ESMTP id 90C9A3ED55 for <fork@xent.com>; Wed,
+    11 Sep 2002 13:44:46 -0400 (EDT)
+From: Tom <tomwhore@slack.net>
+To: fork@spamassassin.taint.org
+Subject: Keillor voices up on what to do with the WTC site
+Message-Id: <Pine.BSO.4.44.0209111320570.2573-100000@crank.slack.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 11 Sep 2002 13:44:46 -0400 (EDT)
+
+
+http://www.phc.mpr.org/posthost/index.shtml
+
+Dear Garrison,
+
+There are at least six plans about what to do with
+"Ground Zero" in New York. I believe a suitable memorial
+surrounded by a lovely park with benches, walkways,
+children's playgrounds, possibly some concessions such
+as a restaurant, small theater and a place for art works
+would be the best tribute to those who lost their lives.
+What do you think should done with the space?
+
+Joe Adams
+Hillsdale, New Jersey
+
+I dread the thought of a big memorial in Manhattan
+that's designed by committee and that's gone through
+public hearings and so forth ----- it's going to be cold
+and ugly and pretentious and the upshot will be one more
+public space that the public hates, of which there are
+plenty already. New York is a bustling commercial city
+and that's the beauty of it, it's a city of young
+ambitious dreamy people, like the folks who died in the
+towers, and it's not a memorializing city. Historic
+events occurred in New York that in any other city would
+be commemorated with interpretive centers and guides and
+historical museums and in New York there's barely a
+little plaque. That's a great thing, in my estimation.
+It's a hustling city, full of immigrants looking for
+their big chance, and compared to that spirit of
+entrepreneurship, a memorial plaza with a fountain and a
+statue of something seems dead to me. Look at Grant's
+Tomb. Who walks past it and thinks about President
+Grant? Nobody. People sit in the plaza by Grant's Tomb
+and think about lunch, about sex, about money, about all
+the things that New York is about. If you want to find
+Grant, read his memoirs. His monument seems odd in New
+York: it belongs in Washington, which is our memorial
+city. New York is for the young and lively.
+
+
+

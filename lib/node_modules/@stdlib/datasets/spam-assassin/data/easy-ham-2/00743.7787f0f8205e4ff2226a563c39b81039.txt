@@ -1,0 +1,207 @@
+From fork-admin@xent.com  Mon Jul 29 11:29:35 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2A53F4416E
+	for <jm@localhost>; Mon, 29 Jul 2002 06:25:42 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 11:25:42 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6T3PGi08381 for <jm@jmason.org>;
+    Mon, 29 Jul 2002 04:25:17 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 5FAD22940C0; Sun, 28 Jul 2002 20:23:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from rwcrmhc52.attbi.com (rwcrmhc52.attbi.com [216.148.227.88])
+    by xent.com (Postfix) with ESMTP id 1F6E62940BF for <FoRK@xent.com>;
+    Sun, 28 Jul 2002 20:22:50 -0700 (PDT)
+Received: from Intellistation ([66.31.2.27]) by rwcrmhc52.attbi.com
+    (InterMail vM.4.01.03.27 201-229-121-127-20010626) with ESMTP id
+    <20020729032305.QSJW14958.rwcrmhc52.attbi.com@Intellistation> for
+    <FoRK@xent.com>; Mon, 29 Jul 2002 03:23:05 +0000
+Content-Type: text/plain; charset="iso-8859-1"
+From: Eirikur Hallgrimsson <eh@mad.scientist.com>
+Organization: Electric Brain
+Subject: NYT: Venture Capitalists Are Taking the Gloves Off
+User-Agent: KMail/1.4.1
+To: FoRK <FoRK@xent.com>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Message-Id: <200207282320.56581.eh@mad.scientist.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 28 Jul 2002 23:20:56 -0400
+
+The trend isn't news, but some of the details of the ugliness are 
+interesting.   Worth FoRKing for the archives, too.
+
+http://www.nytimes.com/2002/07/28/business/yourmoney/28VENT.html?todaysheadlines=&pagewanted=print&position=top
+
+
+July 28, 2002
+Venture Capitalists Are Taking the Gloves Off
+By LYNNLEY BROWNING
+
+The venture capital world is looking less like a genteel club and more like
+a brawling barroom.
+
+Venture capitalists are offering the companies they bankroll increasingly
+hard-knuckled deals that leave little wealth for a start-up's managers or
+original backers. The moves are leading some entrepreneurs, desperate for
+money, to decry today's investors as bullies. Some venture capitalists are
+even suing rival venture firms, asserting that the tough new terms are
+wiping out the value of their previous investments.
+
+"People are playing hardball," said Ted Dintersmith, a general partner at
+Charles River Ventures, based in Waltham, Mass.
+
+The bursting of the Internet stock bubble more than two years ago wiped out
+many venture investments in dot-coms. Now, amid the bear market in stocks
+and limited prospects for investors or young companies to make money soon,
+venture capitalists are looking for novel ways to make money. As a result,
+"private companies are facing the most onerous terms from venture
+capitalists that we have seen in 20 years," said Steven E. Bochner, a
+securities lawyer at Wilson Sonsini Goodrich & Rosati in Palo Alto, Calif.,
+who represents venture firms.
+
+In the boom of the late 1990's, venture capitalists chose one of two
+options. They could be paid back their invested capital, share in profits
+and receive dividends. Or they could convert their preferred shares into
+common stock when the private company held an initial public offering or
+was sold. During that time of huge payouts for newly public and acquired
+companies, they usually chose No. 2.
+
+But with markets now all but dead for initial public offerings and mergers
+and acquisitions, venture capitalists from Silicon Valley to the East Coast
+are increasingly demanding - and getting - both options. This "double dip,"
+known as "participating preferred," leaves far less potential wealth for a
+company's founders and previous investors. Venture capitalists are also
+negotiating more deals with heightened "liquidation preferences," in which
+start-ups agree to pay back the initial investment at least two or three
+times over.
+
+Previously, venture capitalists handed over money to a start-up in a lump
+sum. But more are now parceling out funds in tranches, and then only when
+the new companies reach certain milestones - a sales target, for example,
+or the hiring of a particular chief executive.
+
+They are even trying to protect their investments through veto rights that
+permit them to block future investments from other venture capitalists who
+might dilute their stakes, said Mark G. Borden, chairman of the corporate
+department at Hale & Dorr, a law firm based in Boston. As a result, Mr.
+Borden said, a start-up company that casts its lot with a particular
+venture capitalist or group of investors may find itself tethered to those
+backers and unable to raise new money elsewhere.
+
+ENTREPRENEURS particularly dislike one recent trend: venture capitalists
+have been pushing young companies to agree, retroactively, to lower the
+prices that investors now pay for shares should the start-up be worth less
+when it tries to raise more money later. Such a move, known as a "full
+ratchet," is intended to prevent an investor's stake from being diluted.
+But it can significantly reduce or even wipe out the stakes of a company's
+original investors and managers, giving the new investors most of the
+company for a song.
+
+"If you were in the first round of investors, you generally now get
+crushed" when a start-up raises more money later, said J. Edmund Colloton,
+general partner and chief operating officer of Bessemer Venture Partners,
+based in Wellesley Hills, Mass.
+
+Consider Mahi Networks, a private optical networking start-up. In three
+rounds of financing, from September 1999 to November 2001, Mahi raised $110
+million from blue-chip venture firms like Benchmark Capital, Sequoia
+Capital, the GE Capital unit of General Electric and the venture arm of
+Goldman Sachs. At one point during the Internet boom, Mahi was valued at
+more than $180 million.
+
+Last month, though, a new group of smaller-name investors, led by St. Paul
+Venture Capital of Minneapolis, acquired about three-quarters of the
+company for $75 million in financing. Before that, Mahi was valued at only
+$25 million, said Chris Rust, Mahi's president and chief executive. But
+most of that was tied up in employee incentives, including stock options,
+leaving almost no value for existing investors.
+
+Despite having nurtured Mahi with money and advice, the early investors
+chose not to back the company further. With the new, lower valuation,
+"there was effectively no value attributed to all of our previous
+investments," said one venture capitalist whose firm was an early backer.
+"We were all completely washed out" in the last round, said the investor,
+who spoke on condition of anonymity.
+
+There is no hard data on the prevalence of the newer, tougher terms.
+Venture capitalists are famously secretive about their deals, which are
+private and largely unregulated. But ask venture capitalists or securities
+lawyers who work with start-ups, and tales of onerous terms will abound.
+"At the end of the day, the money is coming with strings attached," said
+Mark G. Heesen, president of the National Venture Capital Association, a
+trade group based in Arlington, Va.
+
+The shift has turned the conventional wisdom on its head. Venture
+capitalists once loved risk, but no more. The Internet bust and Wall
+Street's slump have left them scrambling to make money to repay their own
+investors and to justify their management fees.
+
+Venture capitalists once clamored to be first in the door of a hot new
+company. Now they can usually make money only by being the most recent
+investor. "We're certainly looking for later-stage deals, where you get the
+benefit of the previous investors having taken the risk," said Todd Dagres,
+a general partner at Battery Ventures in Wellesley, Mass.
+
+Some entrepreneurs agree to the harsh new terms simply because they have no
+other way to raise cash to survive. But other managers now shun the
+investors, whom they call "vulture capitalists," bent on picking the meat
+off a young or struggling start-up. Today's venture capitalists "want to
+take advantage of you," said George R. Waller, chief executive of Strike
+Force Technologies, an employee-financed software maker in West Orange,
+N.J. Mr. Waller said he had turned away 30 venture firms in recent months
+because they had demanded, among other things, hard-to-reach sales
+milestones.
+
+George J. Nassef, chief executive of ValetNoir, a start-up based in New
+York that makes marketing software for casinos, said several venture firms
+had even asked in recent months to have their potential investments secured
+with receivables, or money owed to ValetNoir by its customers. He turned
+them all down.
+
+NOT surprisingly, the shift in financing terms is upsetting some venture
+firms that were early investors in start-ups but are now suffering as the
+companies seek to raise additional money at bargain-basement prices.
+
+In one high-profile case, Benchmark Capital, a blue-chip Silicon Valley
+firm, sued the Canadian Imperial Bank of Commerce and Juniper Financial
+this month. Benchmark was an early investor in Juniper, an online financial
+services concern, having put $20 million into it in early 2000, just before
+the Internet bubble burst. It also contributed to a second, $94 million
+round that September. Juniper, based in Wilmington, Del., is seeking to
+raise $50 million from Canadian Imperial, which already owns around half
+the company, but on terms that would sharply dilute Benchmark's original,
+unspecified stake. Benchmark sued to prevent the start-up from raising the
+money. All the parties declined to comment on the case, which a Delaware
+judge threw out last week.
+
+Such friction was rare during the boom, when venture capitalists operated
+like a competitive but tight-knit fraternity, channeling deals to one
+another. Start-ups and their backers saw their interests as allied. But in
+tighter markets, "there's a lot of ugly behavior coming out," said Mr.
+Bochner, the Wilson Sonsini lawyer. "There's going to be much more
+litigation like this."
+
+
+
+
+-------------------------------------------------------
+
+http://xent.com/mailman/listinfo/fork
+
+

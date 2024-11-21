@@ -1,0 +1,12 @@
+
+ans
+    Result of the last successfully executed command.
+
+    Examples
+    --------
+    > ans
+
+    See Also
+    --------
+    vars
+

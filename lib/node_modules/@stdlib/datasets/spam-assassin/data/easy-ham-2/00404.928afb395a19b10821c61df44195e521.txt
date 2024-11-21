@@ -1,0 +1,160 @@
+From ilug-admin@linux.ie  Wed Aug 14 11:00:54 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D5665440FE
+	for <jm@localhost>; Wed, 14 Aug 2002 05:52:07 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 14 Aug 2002 10:52:07 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7E7iK405742 for
+    <jm-ilug@jmason.org>; Wed, 14 Aug 2002 08:44:20 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id IAA26436; Wed, 14 Aug 2002 08:43:17 +0100
+Received: from homer.jinny.ie ([193.120.171.3]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id IAA26400 for <ilug@linux.ie>; Wed,
+    14 Aug 2002 08:43:11 +0100
+Received: from jlooney.jinny.ie (fw [193.120.171.2]) by homer.jinny.ie
+    (8.9.3/8.11.2) with ESMTP id IAA20978 for <ilug@linux.ie>; Wed,
+    14 Aug 2002 08:42:40 +0100
+Received: (from john@localhost) by jlooney.jinny.ie (8.11.6/8.11.6) id
+    g7E7gre09348 for ilug@linux.ie; Wed, 14 Aug 2002 08:42:53 +0100
+X-Authentication-Warning: jlooney.jinny.ie: john set sender to
+    jlooney@jinny.ie using -f
+Date: Wed, 14 Aug 2002 08:42:53 +0100
+From: "John P. Looney" <valen@tuatha.org>
+To: Irish LUG list <ilug@linux.ie>
+Subject: Re: [ILUG] mirroring on a running system
+Message-Id: <20020814074252.GI28648@jinny.ie>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: Irish LUG list <ilug@linux.ie>
+References: <20020813134842.GZ2019@jinny.ie>
+    <20020813145657.A25372@prodigy.Redbrick.DCU.IE>
+    <200208131507.04699.colm@tuatha.org> <20020813151056.GB28648@jinny.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20020813151056.GB28648@jinny.ie>
+User-Agent: Mutt/1.4i
+X-Os: Red Hat Linux 7.3/Linux 2.4.18-3
+X-Url: http://www.redbrick.dcu.ie/~valen
+X-Gnupg-Publickey: http://www.redbrick.dcu.ie/~valen/public.asc
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Tue, Aug 13, 2002 at 04:10:57PM +0100, John P. Looney mentioned:
+> > I think this procedure is described in the RAID HOWTO for installing a
+> > new system, but it applies just as well to a running system.
+> 
+>  Just double checking (I'd be pissed if I just wiped my installation!)...
+
+ Well, this mostly worked, despite Colm saying that "you want the
+"failed-disk" *instead* of the second "raid-disk", not in addition to it".
+
+ I suppose that means instead of:
+
+> raiddev /dev/md0
+>         raid-level      1
+>         nr-raid-disks   2
+>         nr-spare-disks  0
+>         chunk-size     4
+>         persistent-superblock 1
+>         device          /dev/hdg3
+>         raid-disk       0
+>         device          /dev/hda5
+>         raid-disk       1
+> 
+>         failed-disk     1
+
+ I should have had:
+
+> raiddev /dev/md0
+>         raid-level      1
+>         nr-raid-disks   2
+>         nr-spare-disks  0
+>         chunk-size     4
+>         persistent-superblock 1
+>         device          /dev/hdg3
+>         raid-disk       0
+>         device          /dev/hda5
+>         failed-disk     1
+
+ It likely means that I was just lucky I put the failed-disk directive
+after the raid-disk one :)
+
+ Anyway. It's doesn't quite boot right, with /=/dev/md0 in fstab. On boot, I see:
+
+Partition check:
+ hda: [PTBL] [2482/255/63] hda1 hda2 hda3 hda4 < hda5 >
+ hdg: [PTBL] [2434/255/63] hdg1 hdg2 hdg3
+floppy0: no floppy controllers found
+RAMDISK driver initialized: 16 RAM disks of 4096K size 1024 blocksize
+ide-floppy driver 0.99.newide
+md: md driver 0.90.0 MAX_MD_DEVS=256, MD_SB_DISKS=27
+md: Autodetecting RAID arrays.
+ [events: 00000000]
+md: invalid raid superblock magic on hda2
+md: hda2 has invalid sb, not importing!
+md: could not import hda2!
+ [events: 00000004]
+ [events: 00000002]
+ [events: 00000004]
+md: autorun ...
+md: considering hdg3 ...
+md:  adding hdg3 ...
+md:  adding hda5 ...
+md: created md0
+md: bind<hda5,1>
+md: bind<hdg3,2>
+md: running: <hdg3><hda5>
+md: hdg3's event counter: 00000004
+md: hda5's event counter: 00000004
+md: RAID level 1 does not need chunksize! Continuing anyway.
+kmod: failed to exec /sbin/modprobe -s -k md-personality-3, errno = 2
+md: personality 3 is not loaded!
+md :do_md_run() returned -22
+md: md0 stopped.
+md: unbind<hdg3,1>
+md: export_rdev(hdg3)
+md: unbind<hda5,0>
+md: export_rdev(hda5)
+md: considering hdg1 ...
+md:  adding hdg1 ...
+md: created md1
+md: bind<hdg1,1>
+md: running: <hdg1>
+md: hdg1's event counter: 00000002
+md: RAID level 1 does not need chunksize! Continuing anyway.
+kmod: failed to exec /sbin/modprobe -s -k md-personality-3, errno = 2
+md: personality 3 is not loaded!
+md :do_md_run() returned -22
+md: md1 stopped.
+md: unbind<hdg1,0>
+md: export_rdev(hdg1)
+md: ... autorun DONE.
+
+ Any ideas why ?
+
+ My suspicion is that I've a lack of knowledge about how initrd works, so
+I'm not sure it's loading it. For a start, the / filesystem is being
+mounted as ext2, at first, not ext3. It does seem mounted as ext3 after
+the fsck is done - but that means that it's mounted as ext2 read only,
+fsck'ed and then remounted ext3. Losing the point of it.
+
+ Given I can't pass the kernel parameters (I think), how then can I get it
+to load the initrd ?
+
+Kate
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

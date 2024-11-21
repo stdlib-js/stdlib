@@ -1,0 +1,182 @@
+
+{{alias}}( x[, y][, options] )
+    Computes a one-sample or paired Wilcoxon signed rank test.
+
+    When no `y` is supplied, the function performs a one-sample  Wilcoxon signed
+    rank test for the null hypothesis that the data is drawn from a symmetric
+    distribution around zero.
+
+    When `y` is supplied, the function tests whether the
+    differences `x - y` come from a symmetric distribution around zero.
+
+    If `x` has less than fifty elements, an exact p-value is computed if there
+    are no zero values or ties. Otherwise, a normal approximation is used.
+
+    The returned object comes with a `.print()` method which when invoked will
+    print a formatted output of the results of the hypothesis test.
+
+    Parameters
+    ----------
+    x: Array<number>|TypedArray
+        Data array.
+
+    y: Array<number>|TypedArray (optional)
+        Paired data array.
+
+    options: Object (optional)
+        Options.
+
+    options.alpha: number (optional)
+        Number in the interval `[0,1]` giving the significance level of the
+        hypothesis test. Default: `0.05`.
+
+    options.alternative: string (optional)
+        Indicates whether the alternative hypothesis is that the mean of `x` is
+        larger than `mu` (`greater`), smaller than `mu` (`less`), or equal to
+        `mu` (`two-sided`). Default: `'two-sided'`.
+
+    options.correction: boolean (optional)
+        Determines whether to apply continuity correction adjusting the Wilcoxon
+        rank statistic by 0.5 towards the mean when using the normal
+        approximation. Default: `true`.
+
+    options.exact: boolean (optional)
+        Determines whether to force use of the exact distribution instead of a
+        normal approximation when there are more than fifty data points.
+        Default: `false`.
+
+    options.mu: number (optional)
+        Hypothesized true location under the null hypothesis. Set this option to
+        test whether the data comes from a distribution with the specified `mu`.
+        Default: `0`.
+
+    options.zeroMethod: string (optional)
+        Method governing how zero-differences are handled (`pratt`, `wilcox`, or
+        `zsplit`). When set to `pratt`, differences of zero are used to
+        calculate ranks but their ranks are then dropped. When set to `wilcox`,
+        all zero-differences are discarded. When set to `zsplit`, differences of
+        zero are used to rank and their ranks are then split between positive
+        and negative ones. Default: `'wilcox'`.
+
+    Returns
+    -------
+    out: Object
+        Test result object.
+
+    out.alpha: number
+        Used significance level.
+
+    out.rejected: boolean
+        Test decision.
+
+    out.pValue: number
+        p-value of the test.
+
+    out.statistic: number
+        Value of test statistic.
+
+    out.nullValue: number
+        Assumed location parameter under H0.
+
+    out.alternative: string
+        Alternative hypothesis (`two-sided`, `less` or `greater`).
+
+    out.method: string
+        Name of test.
+
+    out.print: Function
+        Function to print formatted output.
+
+    Examples
+    --------
+    // One-sample test:
+    > var arr = [ 6, 8, 14, 16, 23, 24, 28, 29, 41, -48, 49, 56, 60, -67, 75 ];
+    > var out = {{alias}}( x )
+    {
+        'rejected': true,
+        'alpha': 0.05,
+        'pValue': 0.04125976562499978,
+        'statistic': 96
+        // ...
+    }
+
+    // Paired test:
+    > runif = {{alias:@stdlib/random/base/discrete-uniform}}.factory( 1, 5, { 'seed': 786 });
+    > var x = new Array( 100 );
+    > var y = new Array( 100 );
+    > for ( i = 0; i < x.length; i++ ) {
+    ...     x[ i ] = runif();
+    ...     y[ i ] = runif();
+    ... }
+    > out = {{alias}}( x, y )
+    {
+        'rejected': false,
+        'alpha': 0.05,
+        'pValue': 0.21759090963694638,
+        'statistic': 2702.5,
+        // ...
+    }
+
+    // Print formatted output:
+    > var table = out.print()
+    Paired Wilcoxon signed rank test
+
+    Alternative hypothesis: Median of the difference `x - y` is not equal to 0
+
+        pValue: 0.2176
+        statistic: 2702.5
+
+    Test Decision: Fail to reject null in favor of alternative at 5% significance level
+
+
+    // Choose custom significance level:
+    > out = {{alias}}( arr, { 'alpha': 0.01 });
+    > table = out.print()
+    One-Sample Wilcoxon signed rank test
+
+    Alternative hypothesis: Median of `x` is not equal to 0
+
+        pValue: 0.0413
+        statistic: 96
+
+    Test Decision: Fail to reject null in favor of alternative at 1% significance level
+
+
+    // Test for a median equal to ten:
+    > out = {{alias}}( arr, { 'mu': 10 })
+    {
+        'rejected': false,
+        'alpha': 0.05,
+        'pValue': 0.11169650413134602,
+        'statistic': 88.5,
+        'nullValue': 10,
+        // ...
+    }
+
+    // Perform one-sided tests:
+    > out = {{alias}}( arr, { 'alternative': 'less' });
+    > table = out.print()
+    One-Sample Wilcoxon signed rank test
+
+    Alternative hypothesis: Median of `x` is less than 0
+
+        pValue: 0.9823
+        statistic: 96
+
+    Test Decision: Fail to reject null in favor of alternative at 5% significance level
+
+
+    > out = {{alias}}( arr, { 'alternative': 'greater' });
+    > table = out.print()
+    One-Sample Wilcoxon signed rank test
+
+    Alternative hypothesis: Median of `x` is greater than 0
+
+        pValue: 0.0206
+        statistic: 96
+
+    Test Decision: Reject null in favor of alternative at 5% significance level
+
+    See Also
+    --------
+

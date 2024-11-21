@@ -1,0 +1,463 @@
+Return-Path: <bounce-lghtml-2534368@sprocket.lockergnome.com>
+Received: from lockergnome.com (sprocket.lockergnome.com [130.94.96.247])
+	by dogma.slashnull.org (8.11.6/8.11.6) with SMTP id g6G9DeJ24129
+	for <qqqqqqqqqq-lg@spamassassin.taint.org>; Tue, 16 Jul 2002 10:13:40 +0100
+X-Mailer: ListManager Web Interface
+Date: Tue, 16 Jul 2002 00:24:03 -0500
+Subject: [Lockergnome Windows Daily]  Dignity Shakedown
+To: qqqqqqqqqq-lg@spamassassin.taint.org
+From: Lockergnome Windows Daily <subscriptions@lockergnome.com>
+List-Unsubscribe: <mailto:leave-lghtml-2534368N@sprocket.lockergnome.com>
+List-Subscribe: <mailto:subscribe-lghtml@sprocket.lockergnome.com>
+List-Owner: <mailto:owner-lghtml@sprocket.lockergnome.com>
+X-URL: <http://www.lockergnome.com/>
+X-List-Host: Lockergnome <http://www.lockergnome.com/>
+Reply-To: leave-lghtml-2534368N@sprocket.lockergnome.com
+Sender: bounce-lghtml-2534368@sprocket.lockergnome.com
+Message-Id: <LISTMANAGERSQL-2534368-1679108-2002.07.16-00.27.47--qqqqqqqqqq-lg#spamassassin.taint.org@sprocket.lockergnome.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=us-ascii
+
+<html><head><!--
+
+
+      CLICK HERE to read this newsletter on the Web for FREE:
+
+      <a href="http://www.lockergnome.com/issues/daily/20020716.html">
+      http://www.lockergnome.com/issues/daily/20020716.html
+      </a>
+
+      To unsubscribe, simply reply to this e-mail message.
+
+      To resubscribe, visit our site: http://www.lockergnome.com/
+
+      Don't worry about anything else below this paragraph.
+      It's for those with HTML e-mail clients. Just go to
+      the above listed web address to view this issue
+      perfectly in your web browser. Thanks again! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+<!--
+ body      { BACKGROUND-IMAGE: url(http://images.lockergnome.com/images/issue/top-right.gif); color: #990000 }
+ a:link    { COLOR: #000000; TEXT-DECORATION: underline; font-weight: normal }
+ a:visited { COLOR: #C84200; TEXT-DECORATION: underline; font-weight: normal }
+ a:active  { COLOR: GRAY; text-decoration: none }
+ a:hover   { color: GRAY; TEXT-DECORATION: none }
+ p.title   { BACKGROUND: #FFCC99; BORDER-BOTTOM: #FF9966 4px solid; BORDER-LEFT: #FFEEDD 4px solid; BORDER-RIGHT: #FF9966 4px solid; BORDER-TOP: #FFEEDD 4px solid; COLOR: #990000; FONT-FAMILY: Comic Sans MS, Trebuchet MS, Helvetica, Arial; FONT-SIZE: 14pt; FONT-WEIGHT: normal }
+ p.sidebar { BACKGROUND: #FFEEDD; TEXT-ALIGN: center; BORDER-BOTTOM: #FFCC99 3px solid; BORDER-LEFT: #FFFFFF 3px solid; BORDER-RIGHT: #FFCC99 3px solid; BORDER-TOP: #FFFFFF 3px solid; COLOR: #990000; FONT-FAMILY: Comic Sans MS, Trebuchet MS, Helvetica, Arial; FONT-SIZE: 10pt; FONT-WEIGHT: bold }
+ .url      { font-size: 8pt; font-family: Verdana, Tahoma, Arial }
+-->
+</style><title>20020716 Lockergnome Windows Daily</title></head>
+
+<body   MARGINHEIGHT="0" TOPMARGIN="0" BOTTOMMARGIN="0" bgcolor="#FFFFFF"   style="BACKGROUND-POSITION: right top; BACKGROUND-REPEAT: no-repeat" MARGINWIDTH="0" LEFTMARGIN="0" rightmargin="0">
+
+<!-- background="http://images.lockergnome.com/images/bg.head.gray.gif" bgcolor="#C0C0C0" left width="610" background="http://www.lockergnome.com/images/issue/top-right-2.gif" -->
+
+ <table width="100%" border="0" cellspacing="0" cellpadding="7" align="CENTER" valign="MIDDLE">
+  <tr><td background="http://images.lockergnome.com/images/issue/top-left.gif" nowrap valign="middle" align="center" colspan="2">
+
+ <!-- TOP BANNER AD -->
+ <center>
+ <a href="http://www.lockergnome.com/"><img src="http://images.lockergnome.com/images/gnomedaily.gif" width="50" height="60" hspace="5" alt="Lockergnome" border="0"></a>
+ <a href="http://www.qksrv.net/click-471546-5032686"><img src="http://www.qksrv.net/image-471546-5032686" width="468" height="60" alt="DDR Memory at Crucial.com" border="0"></a>
+ <br>
+ </center>
+ <!-- TOP BANNER AD -->
+
+ <!--#include virtual="/include/banner.txt" -->
+
+ </td></tr>
+
+  <tr><td valign="top" bgcolor="#FFFFFF"><font color="#990000" face="Verdana, Tahoma, Arial" style="font-size: 10pt" size="2">
+
+<!-- NEWS -->
+<table bgcolor="#FFCC99" border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><p class="title">
+&nbsp; 07.16.2002 GnomeREPORT </p></td></tr></table><p>
+
+<p class="sidebar"><table cellpadding="10" cellspacing="0" border="0"><tr><td><font style="font-size: 10pt" face="Verdana, Tahoma, Arial" size="2">
+<b>Hackers and crackers respect only one thing:</b> <font color="blue">strong security</font>. Keep the bad guys out of your PC or network with the advanced technology that's trusted by millions: ZoneAlarm Pro 3.0. This best-in-class personal firewall stops hackers cold, defends your online privacy,and sets up in minutes. <a href="http://psstt.com/1/c/22869/63809/191269/191269">Click here to download now</a>!
+</font></td></tr></table></p>
+
+
+Well, it's been half a week since we released it, and we're still
+getting record downloads for our first
+<a href="http://www.gnometomes.com/">FREE Gnometome</a>. What does
+that mean? Simple. Download all you want - we'll definitely make
+more. In fact, we've found a way to get your products and services
+a little bit of unlimited promotion on the side, too. And who
+couldn't use a little more traffic nowadays? Well, unless your
+data transfer bill is already sky high (which can happen when you
+get featured). It's all fun and games until someone's server falls
+to its knees. We're still <A HREF="http://www.amazon.com/exec/obidos/redirect?tag%3Dlockergnomedigit%26path%3Dsearch-handle-url%2Ffield-keywords%3Dlockergnome">sitting
+at #5 on Amazon</A>. If we ever
+hit #1, I'll eat my hat. And, mind you, this hat has been sitting
+around for quite a while; it smells like feet. You'd have to eat
+three sombreros just to get the same amount of nutrition you'd get
+from my hat. You're better off just going for the free stuff, I
+suppose. The next time they ask: "Do you care to Super Size that?"
+You can respond, with dignity: "My funds are sufficient for the
+upgrade; I avoided spending money on something that would have
+lasted longer, supported a helpful cause, and not have killed me
+earlier." It makes sense - if you think about it. The fries aren't
+going to eat themselves. And if YOU don't eat the fries, who will?
+
+<p>
+
+Put your hunger aside for just a moment. It's time for a paragraph
+I like to call: "Why you shouldn't sign up for DirectDSL." They
+went out of their way to send me an unsolicited e-mail this
+evening. Now, I know what you're thinking: "How kind of them,
+Chris. You were just asking about DSL providers in yesterday's
+issue. They must have read your mind!" No, they must have rented a
+list of addresses which weren't confirmed. But the fun didn't stop
+there. I received a message about DirectTV from yet ANOTHER
+marketing company. Their effort was indeed caught by this crafty
+eye, and my money will be diverted to other (less-spammish)
+businesses in the future. It's my "direct" way of saying: you're
+not the only game in town. Anybody else care to test my patience?
+I didn't think so. My blacklist gets shared with 250,000 people
+from around the world. Oops! My Inbox just got slammed with more
+junk; looks like Lycos will never get another click from me,
+either. See what you get when you tempt fate?
+
+<p>
+
+My good buddy, <a href="http://www.dnscentral.com/">Bill</a>,
+tells me that <a href="http://www.speakeasy.net/refer/62026">Speakeasy.net</a>
+provides great DSL connections. He'll even get the credit if I
+sign up through his affiliate link! Paul Howes agrees with him,
+too: "Static IPs are the norm, they do not use PPPoE, and they
+encourage people to run servers on their DSL connection. When
+looking at their packages, I suggest you look at the 'Home
+Services' page. They even have ADSL up to 1.5M downstream / 768k
+upstream, which I have not seen from any other provider. And that
+is less than $200 a month, which is a bargain when you start
+looking at the prices of a 768k SDSL line!" And Stuart Portner is
+chock full of common sense: "Remember that a lot of DSL providers
+give you the modem for free and prefer that you use theirs - at
+least for initial setup / shakedown period." All the more fries
+for me, dude!
+
+
+
+<!-- DOWNLOADS -->
+<p align="right">See You in <a target="_blank" href="http://www.gnomedex.com/">August</a>,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><font style="font-size: 23pt" face="Chris Pirillo, Script">Chris Pirillo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></P>
+
+<p><br><table bgcolor="#FFCC99" border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><p class="title">&nbsp;GnomeCONFERENCE</p></td></tr></table><p>
+<center><a href="http://www.gnomedex.com/"><img alt="Heigh-Ya!" src="http://chris.pirillo.com/archives/gnomedexshirt.gif" width="320" height="258" border="0" /><br>$99 Pre-Registration / $150 At The Door</a></center>
+
+<p><br><table bgcolor="#FFCC99" border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><p class="title">&nbsp;GnomeDOWNLOADS</p></td></tr></table><p>
+<table align="right" bgcolor="#FFFFFF" cellspacing="0" cellpadding="10"><tr><td><table align="left" bgcolor="#990000" cellspacing="0" cellpadding="2"><tr><td><table border="0" cellpadding="4" cellspacing="0">
+<tr><td align="center" valign="middle" bgcolor="#FFEEDD"><font style="font-size: 8pt" face="Tahoma, Helvetica, Arial" size="1"><B>Today's Downloads</b></font></td></tr><tr><td bgcolor="#FFEEDD"><font style="font-size: 8pt" face="Tahoma, Helvetica, Arial" size="1">
+<A HREF="http://www.mywebattack.com/gnomeapp.php?id=100298">AppPlus 3.24</A><BR>
+<A HREF="http://www.mywebattack.com/gnomeapp.php?id=101109">EaseBackup 3.70</A><BR>
+<A HREF="http://www.mywebattack.com/gnomeapp.php?id=101536">HotCrypt 4.12</A><BR>
+<A HREF="http://www.mywebattack.com/gnomeapp.php?id=101751">Arles Image Web Pa 4.94</A><BR>
+<A HREF="http://www.mywebattack.com/gnomeapp.php?id=103079">Smasher 2.9.12</A><BR>
+<A HREF="http://www.mywebattack.com/gnomeapp.php?id=103431">The Bat! 1.61</A><BR>
+<A HREF="http://www.mywebattack.com/gnomeapp.php?id=103869">WinSafe 1.1.2</A><BR>
+<A HREF="http://www.mywebattack.com/gnomeapp.php?id=104359">Privacy Eraser 1.68</A><BR>
+<A HREF="http://www.mywebattack.com/gnomeapp.php?id=103961">Zero Popup 3.0</A><BR>
+<A HREF="http://www.mywebattack.com/gnomeapp.php?id=103863">WinPulse 1.01</A><BR>
+</font></td></tr></table></td></tr></table></td></tr></table>
+
+<b>Company Overview v1.3 [389k] W9x/2k/XP FREE</b>
+<p>
+<a class="URL" href="http://www.toteboard.net/Models/company_overview.htm">http://www.toteboard.net/Models/company_overview.htm</a>
+<p>
+
+{Check your stocks} When you're doing long-term investing, the
+best thing to do with your money is to invest and then "forget
+about it." Our Gnomie buddy Brian Stevens is the type of guy that
+likes to play the stock market. He's always logging into E*TRADE
+and checking on his stocks. That's a lot of work! We told him to
+forget about it and let Company Overview do the work. This Excel
+spreadsheet and add-in is a great way to check stocks and save the
+data into a separate Excel spreadsheet. Brian says, "E*TRADE
+doesn't give me half the information that Company Overview does,
+such as insider trades and financial trends, along with many other
+tidbits of information." NOTE: You must use Excel 2000 or higher
+for the spreadsheet to operate correctly.
+
+<p><br>
+
+<b>Flexible Renamer v5.2.0 [426k] W9x/2k/XP FREE</b>
+<p>
+<a class="URL" href="http://hp.vector.co.jp/authors/VA014830/english/FlexRena/">http://hp.vector.co.jp/authors/VA014830/english/FlexRena/</a>
+<p>
+
+{Rename your files} I work with a lot of files throughout the day,
+and sometimes I end up with a desktop cluttered with useless
+copies and shortcuts - and you KNOW how I feel about clutter. I
+don't need a reminder that there are five shortcuts or six copies
+of something on my desktop... and that is where Flexible Renamer
+comes into the picture. With Flexible Renamer, I can cut off the
+"Shortcut to" and "Copy of" prefixes from all my files, making
+them a lot easier to read. That's not all though... you can even
+make a .txt file on your desktop into a .doc document in seconds.
+If you don't like your filename in all caps, then just switch them
+to lower case and vice-versa. The possibilities are endless! (You
+know, I always wanted to change my own name from "Chris" to
+"Caspian Wildflowers"...)
+
+
+
+
+<!-- SPECIALS -->
+<p align="right"><a class="url" style="color: gray; text-decoration: none" href="http://www.lockergnome.com/recommend.html">Recommend It!</a></p>
+<p><br><table bgcolor="#FFCC99" border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><p class="title">&nbsp;GnomeCLICKS</p></td></tr></table><p>
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr>
+<td valign=top align=center><a target="_blank" href="http://www.infopackets.com/cgi-bin/click.cgi?id=83"><img src="http://www.lockergnome.com/images/ads/icon.hotwindowstip.gif" height="62" width="62" alt="TECHNOLOGY can be frustrating for new and intermediate computer users, UNTIL NOW. Join us for a FREE Windows Newsletter, video tutorials, articles, special reports, and more!" border="0"></a></td>
+<td valign=top align=center><a target="_blank" href="http://www.picozip.com/lg/"><img src="http://www.picozip.com/ads/picozip_lg.gif" height="60" width="63" alt="The easiest way to Zip/UnZip. An AWARD-WINNING file compression utility featuring quick backup, batch processing, Windows integration and SUPPORTS 15 archive formats (ACE, RAR, etc)." border="0"></a></td>
+<td valign=top align=center><a target="_blank" href="http://www.handybackup.com"><img src="http://www.lockergnome.com/images/ads/icon.handybackup.gif" height="62" width="33" alt="Handy Backup" border="0"></a></td>
+<td valign=top align=center><a target="_blank" href="http://www.outlooksecure.com/"><img src="http://www.lockergnome.com/images/ads/icon.outlooksecure.gif" height="57" width="60" alt="Secure your E-Mail!" border="0"></a></td>
+<td valign=top align=center><a target="_blank" href="http://www.capitalintellect.net/indexlgicon.htm"><img src="http://www.capitalintellect.net/lg1/images/shortcut.gif" height="62" width="62" alt="Shortcut to RDesk.exe" border="0"></a></td>
+<td valign=top align=center><a target="_blank" href="http://www.paessler.com/?ref=LGGCIP"><img src="http://www.lockergnome.com/images/ads/icon.ipcheck1.gif" height="63" width="39" alt="IPCheck Server Monitor monitors a network using various protocols (e.g. ping, http, smtp, ftp) and notifies the staff in various ways as soon as an outage occurs." border="0"></a></td>
+<td valign=top align=center><a target="_blank" href="http://outlook.4team.biz/?fr=gnome"><img src="http://www.lockergnome.com/images/ads/icon.outlook4team.1.gif" height="60" width="60" alt="Share your team/project contacts, calendars, tasks, etc. in MS Oulook 2002, without a server!" border="0"></a></td>
+</tr></table>
+
+<!-- SYSTEM -->
+<p><br><table bgcolor="#FFCC99" border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><p class="title">&nbsp;GnomeSYSTEM</p></td></tr></table><p>
+
+<b>Disk Investigator v1.1 [527k] W9x/2k/XP FREE</b>
+<p>
+<a class="URL" href="http://www.theabsolute.net/sware/dskinv.html">http://www.theabsolute.net/sware/dskinv.html</a>
+<p>
+
+{Restore deleted files} Have you ever deleted a file from your PC,
+realizing later that you actually needed it? Yeah, me too. Best-
+case scenario, I would just go to the Recycle Bin and retrieve my
+deleted file. But what if I had already emptied the Recycle Bin?
+(Horrors!) Luckily, Disk Investigator can come into play and save
+the day. (Yay!) With Disk Investigator, I can view deleted files
+or directories, and restore them if necessary. I no longer have to
+wonder if I fully deleted a troublesome file... I just load up
+Disk Investigator, and I'll know if the file is gone (with 100%
+certainty)!
+
+
+
+<!-- WILDCARD -->
+<p align="right"><a class="url" style="color: gray; text-decoration: none" href="http://www.lockergnome.com/recommend.html">Recommend It!</a></p>
+<p><br><table bgcolor="#FFCC99" border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><p class="title">&nbsp;GnomeWILDCARD</p></td></tr></table><p>
+
+<b>Actual Title Buttons 1.3 [1.0M] W9x/2k/XP $19.95</b><BR>
+    Unearthed by Michael Tretyakov
+<p>
+<a class="URL" href="http://www.actualtools.com/">http://www.actualtools.com/</a>
+<p>
+
+{Windows Explorer add-on} "Actual Title Buttons lets you add the
+new Minimize To Tray and Stay On Top buttons to any program's
+title bar next to the Windows standard Minimize/Maximize/Close
+buttons." This program is a must for anyone who wants to avoid the
+distractions of other windows popping up over your active windows.
+While writing this review, I am using the "Stay On Top" command
+for Notepad, and during this time I have already received five
+instant messages. Why is this important? Normally these messages
+would pop up in front of Notepad and disrupt my work... but with
+Actual Title Buttons, I can keep typing without missing those
+"important" instant messages. The only difference is that they
+aren't an annoyance now. The "Minimize To Tray" feature is great,
+too, because freeing up taskbar space is a beautiful thing...
+especially when you don't have to close down your programs to do
+it.
+
+
+
+<!-- FAVORITE -->
+<p align="right"><a class="url" style="color: gray; text-decoration: none" href="http://www.lockergnome.com/submit.html">Submit Your Thoughts</a> <font class="url" color="gray">|</font> <a class="url" style="color: gray; text-decoration: none" href="http://www.lockergnome.com/recommend.html">Recommend It!</a></p>
+<p><br><table bgcolor="#FFCC99" border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><p class="title">&nbsp;GnomeFAVORITE</p></td></tr></table><p>
+<p class="sidebar"><table cellpadding="10" cellspacing="0" border="0"><tr><td>
+<font style="font-size: 10pt" face="Verdana, Tahoma, Arial" size="2"><b>WE NEED YOU TO BE AT GNOMEDEX!</b> That's what your employer should be telling you. Microsoft Pocket PC experts will be sharing tips on improving workplace productivity with portable devices. Combined with Proxim's on location wireless networking solutions, a Pocket PC can keep you and your co-workers communicating no matter where you are in the building. Learn how to bring Wi-FI and PDA technologies together for the ultimate in portable computing. <a href="http://www.gnomedex.com">Register for Gnomedex today</a>!
+</font></td></tr></table></p>
+
+<b>Electricon Land</b>
+<p>
+<a class="URL" href="http://www.electriconland.com/">http://www.electriconland.com/</a>
+<p>
+
+{Icons for your machine} Gretchen and I are really looking forward
+to moving to our new neighborhood in a little over a month.
+Everything is better with a little dash of friendliness, right?
+Icons are no exception. All the action on this website is based
+around a city block of Electriconland. You walk into different
+stores to get different pixel art icons. Walk into Gabu's Pub and
+you will find icons in the likeness of Pink Floyd. You won't be
+disappointed when you go around the corner and pick up your
+Avengers icons from the comic store. If all this wasn't good
+enough then maybe this fact alone will send you to the street of
+Electriconland... all the icons are cross platform. This means you
+can have your new favorite icons on your Windows, Mac, and Linux
+machine, or maybe even a different one on each. The possibilities
+are endless!
+
+
+
+
+<!-- TIP -->
+<p align="right"><a class="url" style="color: gray; text-decoration: none" href="http://www.lockergnome.com/recommend.html">Recommend It!</a></p>
+<p><br><table bgcolor="#FFCC99" border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><p class="title">&nbsp;GnomeTIP</p></td></tr></table><p>
+
+I just hate it when I try to install a program and the
+installation fails. I hate it even more when the program doesn't
+leave a log file to help me track down the problem. Some would say
+I am out of luck, but as long as the program uses Windows
+Installer, then I am on Cloud Nine. Why am I so happy? Because for
+any program that uses Windows Installer, I can turn on logging
+through the Registry. Navigate to HKEY_LOCAL_MACHINE \ Software \
+Policies \ Microsoft \ Windows \ Installer. Add a new String
+value, double-click it, and enter the following Value data:
+"voicewarmup" (sans quotes). These letters can be entered in any
+order: v = Verbose output; o = Out- of-disk-space messages; i =
+Status messages; c = Initial UI parameters; e = All error
+messages; w = Non-fatal warnings; a = Start up of actions; r =
+Action-specific records; m = Out-of- memory or fatal exit
+information; u = User requests; p = Terminal properties. If you
+add a plus, the existing file will be appended. If you add an
+exclamation mark, each line is flushed. Now, when something fails,
+I just have to check in the "Temp" directory and look for my log
+files. They'll vary in name, but will always start with "Msi" and
+end with the .LOG extension. As always, make sure to backup your
+registry before making any modifications.
+
+
+
+<!-- ADMINISTRIVIA -->
+<p align="right"><a class="url" style="color: gray; text-decoration: none" href="http://www.lockergnome.com/recommend.html">Recommend It!</a></p>
+
+<p><br><table cellpadding="0" cellspacing="0" border="0"><tr><td><p class="sidebar">
+<table cellpadding="7" cellspacing="0" border="0"><tr><td>
+<font style="font-size: 8pt" face="Verdana, Tahoma, Arial" size="1">
+<a href="http://www.lockergnome.com/issues/daily/20020716.html">http://www.lockergnome.com/issues/daily/20020716.html</a>
+<p>Your subscribed e-mail address is: [qqqqqqqqqq-lg@spamassassin.taint.org] - To unsubscribe or change your delivery address, please visit the <A HREF="http://www.lockergnome.com/changesub.html">subscription management</A> page. For further information, please refer to the GnomeCREDITS in the sidebar.
+</font></td></tr></table>
+</p></td></tr></table>
+
+<!--#include virtual="/include/subscription2.txt" -->
+
+</font></td>
+<td background="http://images.lockergnome.com/images/issue/sidebar.gif" VALIGN="top" align="left" width="145"><font color="#990000" face="Verdana, Tahoma, Arial" style="font-size: 8pt" size="1">
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td><p class="sidebar">LOOK OVER HERE</p></td></tr></table><br>
+
+&nbsp;<a href="http://www.gnometomes.com/">Download Our Tip Files</a><br>
+<p>
+&nbsp;<a href="http://windowsdaily.lockergnome.com/">Latest Windows Daily</a><br>
+&nbsp;<a href="http://digitalmedia.lockergnome.com/">Latest Digital Media</a><br>
+&nbsp;<a href="http://techspecialist.lockergnome.com/">Latest Tech Specialist</a><br>
+&nbsp;<a href="http://penguinshell.lockergnome.com/">Latest Penguin Shell</a><br>
+&nbsp;<a href="http://applecore.lockergnome.com/">Latest Apple Core</a><br>
+&nbsp;<a href="http://webmasterweekly.lockergnome.com/">Latest Web Weekly</a><br>
+&nbsp;<a href="http://updates.lockergnome.com/">Latest Bits &amp; Bytes</a><br>
+<p>
+&nbsp;<A HREF="http://lockergnome.pricegrabber.com/">Find the Lowest Price</A><br>
+<p>
+&nbsp;<a href="http://www.lockergnome.com/submit.html">Suggest a Feature</a><br>
+&nbsp;<a href="http://www.lockergnome.com/advertise.html">Advertise With Us</a><br>
+&nbsp;<a href="http://store.lockergnome.com">The GnomeSTORE</a><br>
+&nbsp;<A HREF="http://seeker.dice.com/seeker.epl?rel_code=14">High-Tech Job Search</A><br>
+&nbsp;<a href="http://www.lockergnome.com/chat.html">Chat With Gnomies</a><br>
+&nbsp;<a href="http://www.lockergnome.com/webcam.html">Watch The Webcams</a><br>
+&nbsp;<a href="https://www.sandhills.com/secure/smartcomputing/cpufreetrial3.asp?source=cp491bonus">Computer Power User</a><br>
+<p>
+&nbsp;<a href="http://www.lockergnome.com/issues/">Read Past Issues</a><br>
+&nbsp;<a href="http://www.xteq.com/">Download X-Setup</a><br>
+&nbsp;<a href="http://www.lockergnome.com/about.html">About Lockergnome</a><br>
+&nbsp;<a href="http://www.lockergnome.com/privacy.html">Our Privacy Policy</a><br>
+&nbsp;<a href="http://www.lockergnome.com/options.html">View More Options</a><br>
+&nbsp;<a href="http://www.lockergnome.com/lockergnome.xml">Our XML / RSS Feed</a><br>
+&nbsp;<a href="http://www.lockergnome.com/options.html#syndicate">Syndicate Our Tips</a><br>
+&nbsp;<a href="http://www.lockergnome.com/images/lockerlink.gif">Link To Lockergnome</a><br>
+&nbsp;<A HREF="http://lockergnome.pricegrabber.com/search_getprod.php/isbn=0966103254/">Get Chris's Book</A><br>
+<p>
+&nbsp;<a href="http://www.lockergnome.com/recommend.html">Tell a Friend About Us!</a><br>
+<p>
+&nbsp;<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#102;&#101;&#101;&#100;&#98;&#97;&#99;&#107;&#64;&#108;&#111;&#99;&#107;&#101;&#114;&#103;&#110;&#111;&#109;&#101;&#46;&#99;&#111;&#109;?subject=Lockergnome Windows Daily Feedback">General Feedback</a><br>
+&nbsp;<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#99;&#104;&#114;&#105;&#115;&#64;&#108;&#111;&#99;&#107;&#101;&#114;&#103;&#110;&#111;&#109;&#101;&#46;&#99;&#111;&#109;?subject=Lockergnome Windows Daily Comment">E-mail the Editor</a><br>
+&nbsp;<A HREF="http://chris.pirillo.com/">The Editor's Blog</A><BR>
+
+<p>&nbsp;<p>
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td><p class="sidebar">SEARCH</p></td></tr></table><br>
+<FORM method="get" action="http://lockergnome.pricegrabber.com/search_gen_top.php" target="_parent"><input type="hidden" name="topcat_search" value="1"><input value=" Hardware" size="14" type=text name=form_keyword><INPUT type="SUBMIT" value="go" class="Press" NAME="Go"></FORM>
+<FORM method="get" action="http://lockergnome.pricegrabber.com/search_gen_top.php" target="_parent"><input type="hidden" name="topcat_search" value="1"><input value=" Software" size="14" type=text name=form_keyword><INPUT type="SUBMIT" value="go" class="Press" NAME="Go"></FORM>
+
+<p>&nbsp;<p><table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFEEDD"><tr><td><p class="sidebar">GNOMESPECIALS</p></td></tr></table><br>
+&nbsp;<a target="_blank" title="Share your team/project contacts, calendars, tasks, etc. in MS Oulook 2002, without a server!" href="http://outlook.4team.biz/?fr=gnome">Manage Your Workgroup</a><br>
+&nbsp;<a target="_blank" title="Software for filling in paper forms on your computer instead of a typewriter" href="http://www.colorpilot.com/typewriter.html">Form Pilot</a><br>
+&nbsp;<a target="_blank" title="It's both fun and functional! Hear the time, set alarms, style your taskbar clock, sync your PC time, and more. Try Say the Time free for 30 days." href="http://www.provenio.ws/saythetime/">Say the Time 5.0</a><br>
+&nbsp;<a target="_blank" title="Convert MP3, WAV, AVI, JPG, GIF, and PNG to the SWF format for no buffer streaming" href="http://www.gfx2swf.com/gnome-special/">Boomer - Stream Now</a><br>
+&nbsp;<a target="_blank" title="Creating Web/CD catalogs with HyperPublish is really a snap! Not just an editor but a quick, powerful all-in-one environment for creating stunning catalogs, CDs and Web sites!" href="http://www.hyperpublish.com/create_a_catalog_000018.htm">Create Web/CD catalog</a><br>
+&nbsp;<a target="_blank" title="Create your Web site in minutes with this easy-to-use visual tool!" href="http://www.easywebeditor.com/create_web_page_000004.htm">Easy Web Editor</a><br>
+&nbsp;<a target="_blank" title="Capture TEXT seen in folder trees, file lists, database reports, dialog boxes, menus, status lines, including areas that you could not highlight with your mouse. (Chris cannot live without it!;)" href="http://www.structurise.com/kleptomania">Kleptomania</a><br>
+&nbsp;<a target="_blank" title="Organize all your mp3 collection in seconds! You can rename mp3s quickly and easily, write tag information in batch, from file names or import it from cddb. Get your free trial now!" href="http://www.softpointer.com/tr_2.htm">Tag&amp;Rename</a><br>
+&nbsp;<a target="_blank" title="You will enjoy countless hours of fun with Pretty Good Solitaire!  Play 500 solitaire card games, from classic games like Klondike, FreeCell, and Spider, to original games found nowhere else.  Enjoy lush graphics, large easy-to-read cards, statistics, and quests, a unique new way to play for points." href="http://www.goodsol.com/lockergnome.html">Pretty Good Solitaire</a><br>
+&nbsp;<a target="_blank" title="Choosing color combinations for the web is a careful balance between a scheme designed to draw attention; while being respectful of established color-harmony principles.  ColorCombo's four panels scroll, allowing side-by-side color comparisons.  Also text on background checker, 4096 color array, + more. FREE." href="http://www.colorcombo.com">Visualize Color Combos</a><br>
+&nbsp;<a target="_blank" title="FirstStop WebSearch(TM) Deluxe Edition, a FREE trial version of this incredibly fast, award winning, customizable multi-search engine that has been described as the FASTEST no-nonsense meta search for the net. Now, Gnomies can save 50% when they register a copy of FirstStop WebSearch!" href="http://www.Firststopwebsearch.com/lockergnomeoffer.html">FirstStop WebSearch</a><br>
+&nbsp;<a target="_blank" title="Ecobuilder is the ultimate web application that allows you to get your portal, online community, intranet, extranet or any web site project online by saving time, money and manpower. Gnomies receive $400 off the cost of the software." href="http://www.ecobuilder.com/lockergnome.cfm">Ecobuilder</a><br>
+&nbsp;<a target="_blank" title="Software for organizing your personal book collection. Add books quickly - no typing required! Group, filter, sort and print your database. Click for free trial version." href="http://www.collectorz.com/book?from=lockergnome">Book Collector</a><br>
+<p align="center"><a href="http://www.lockergnome.com/special.html"><B>Get Listed Here</B></a></p>
+Question: which group is 250,000+ strong and always looking for stuff to make their personal and professional lives run smoother?
+
+<!--#include virtual="/include/subscribeside.txt" -->
+
+<p>&nbsp;<p><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td><p class="sidebar">HAPPY FUN STUFF</p></td></tr></table><br>
+And now, we see how Sprocket thinks he has a right to eat pumpkin seeds. Or, would that be "pupkin" seeds?
+<p>
+<a href="http://images.lockergnome.com/images/video/sprocket.pupkinseeds.WMV">Not for the Puppy</a>
+
+<p>&nbsp;<p><font style="font-size: 8pt" face="Verdana, Tahoma, Arial" size="1">
+<table align="center" border="0"><tr><td><a href="http://www.lockergnome.com/webcam.html">
+<img width="125" height="94" alt="Lockergnome Webcam Image" src="http://www.lockergnome.com/images/webcam/webcam32.jpg"></a></td></tr>
+<tr><td align="center"><font style="font-size: 7pt" size="1" face="Verdana, Tahoma, Arial">CLICK HERE TO ZOOM</font></td></tr></table>
+</font>
+
+<p>&nbsp;<p>
+<center><a href="http://store.lockergnome.com/"><img src="http://images.lockergnome.com/images/shoppingbag.gif" width="100" height="142" border="0"></a></center>
+
+<p>&nbsp;<p>
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td><p class="sidebar">BYTE ME NOW</p></td></tr></table><br>
+<font style="font-size: 8pt" face="Verdana, Tahoma, Arial" size="1">
+&copy;2002, Lockergnome LLC. ISSN: 1095-3965. All Rights Reserved. Please read our <a href="http://www.lockergnome.com/terms.html">Terms of Service</a>. Our Web site is hosted by <a href="http://www.digitaldaze.com/?lg">DigitalDaze</a>. Domain registered at <a href="http://www.dnscentral.com/?lg">DNS Central</a>.
+
+<!-- FUNNY COMMENT    Dignity Shakedown -->
+
+
+A hamburger by any other name ordinarily costs about twice as much.
+
+</font>
+
+</font></td></tr></table>
+</body></html>
+
+

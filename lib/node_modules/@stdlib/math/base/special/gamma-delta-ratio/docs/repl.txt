@@ -1,0 +1,37 @@
+
+{{alias}}( z, delta )
+    Computes the ratio of two gamma functions.
+
+    The ratio is defined as: Γ(z) / Γ(z+Δ).
+
+    Parameters
+    ----------
+    z: number
+        First gamma parameter.
+
+    delta: number
+        Difference.
+
+    Returns
+    -------
+    y: number
+        Function value.
+
+    Examples
+    --------
+    > var y = {{alias}}( 2.0, 3.0 )
+    ~0.042
+    > y = {{alias}}( 4.0, 0.5 )
+    ~0.516
+    > y = {{alias}}( 100.0, 0.0 )
+    1.0
+    > y = {{alias}}( NaN, 3.0 )
+    NaN
+    > y = {{alias}}( 5.0, NaN )
+    NaN
+    > y = {{alias}}( NaN, NaN )
+    NaN
+
+    See Also
+    --------
+

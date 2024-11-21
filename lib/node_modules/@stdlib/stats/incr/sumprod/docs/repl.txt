@@ -1,0 +1,35 @@
+
+{{alias}}()
+    Returns an accumulator function which incrementally computes a sum of
+    products.
+
+    If provided input values, the accumulator function returns an updated sum.
+    If not provided input values, the accumulator function returns the current
+    sum.
+
+    If provided `NaN` or a value which, when used in computations, results in
+    `NaN`, the accumulated value is `NaN` for all future invocations.
+
+    For long running accumulations or accumulations of large numbers, care
+    should be taken to prevent overflow.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}();
+    > var s = accumulator()
+    null
+    > s = accumulator( 2.0, 3.0 )
+    6.0
+    > s = accumulator( -5.0, 2.0 )
+    -4.0
+    > s = accumulator()
+    -4.0
+
+    See Also
+    --------
+

@@ -1,0 +1,50 @@
+
+{{alias}}( collection, [options,] indicator )
+    Groups values according to an indicator function and returns group counts.
+
+    When invoked, the indicator function is provided two arguments:
+
+    - value: collection value.
+    - index: collection index.
+
+    The value returned by an indicator function should be a value which can be
+    serialized as an object key.
+
+    If provided an empty collection, the function returns an empty object.
+
+    Parameters
+    ----------
+    collection: Array|TypedArray|Object
+        Input collection to group. If provided an object, the object must be
+        array-like (excluding strings and functions).
+
+    options: Object (optional)
+        Options.
+
+    options.thisArg: any (optional)
+        Execution context.
+
+    indicator: Function
+        Indicator function specifying which group an element in the input
+        collection belongs to.
+
+    Returns
+    -------
+    out: Object
+        Group results.
+
+    Examples
+    --------
+    > function indicator( v ) {
+    ...     if ( v[ 0 ] === 'b' ) {
+    ...         return 'b';
+    ...     }
+    ...     return 'other';
+    ... };
+    > var collection = [ 'beep', 'boop', 'foo', 'bar' ];
+    > var out = {{alias}}( collection, indicator )
+    { 'b': 3, 'other': 1 }
+
+    See Also
+    --------
+

@@ -1,0 +1,127 @@
+
+{{alias}}( x, y, fcn[, thisArg] )
+    Applies a function to elements in two input arrays while iterating from
+    right to left and assigns the results to a new array.
+
+    The applied function is provided the following arguments:
+
+    - v1: element from first input array.
+    - v2: element from second input array.
+    - idx: element index.
+    - arrays: input arrays.
+
+    The returned output array always has a "generic" data type. For example, if
+    provided an array-like object, the function returns a generic array. If
+    provided an ndarray, the function returns an ndarray having a "generic" data
+    type.
+
+    Input arrays must be either both array-like objects or both ndarray-like
+    objects.
+
+    If input arrays are array-like objects, the arrays must have the same number
+    of elements.
+
+    If input arrays are ndarray-like objects, the arrays must be broadcast
+    compatible.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject|ndarray
+        First input array.
+
+    y: ArrayLikeObject|ndarray
+        Second input array.
+
+    fcn: Function
+        Function to apply.
+
+    thisArg: any (optional)
+        Input function context.
+
+    Returns
+    -------
+    out: Array|ndarray
+        Output array.
+
+    Examples
+    --------
+    // array-like object:
+    > var f = {{alias:@stdlib/utils/nary-function}}( {{alias:@stdlib/math/base/ops/add}}, 2 );
+    > var x = [ 1, 2, 3, 4, 5, 6 ];
+    > var y = [ 1, 1, 1, 1, 1, 1 ];
+    > var out = {{alias}}( x, y, f )
+    [ 2, 3, 4, 5, 6, 7 ]
+
+    // ndarray:
+    > x = {{alias:@stdlib/ndarray/array}}( x, { 'shape': [ 2, 3 ] } );
+    > y = {{alias:@stdlib/ndarray/array}}( y, { 'shape': [ 2, 3 ] } );
+    > out = {{alias}}( x, y, f );
+    > var v = out.get( 1, 1 )
+    6
+
+
+{{alias}}.assign( x, y, out, fcn[, thisArg] )
+    Applies a function to elements in two input arrays while iterating from
+    right to left and assigns the results to an output array.
+
+    The applied function is provided the following arguments:
+
+    - v1: element from first input array.
+    - v2: element from second input array.
+    - idx: element index.
+    - arrays: input arrays.
+
+    Input and output arrays must be either all array-like objects or all
+    ndarray-like objects.
+
+    If input and output arrays are array-like objects, the arrays must have the
+    same number of elements.
+
+    If input and output arrays are ndarray-like objects, the arrays must be
+    broadcast compatible.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject|ndarray
+        First input array.
+
+    y: ArrayLikeObject|ndarray
+        Second input array.
+
+    out: ArrayLikeObject|ndarray
+        Output array.
+
+    fcn: Function
+        Function to apply.
+
+    thisArg: any (optional)
+        Input function context.
+
+    Returns
+    -------
+    out: Array|ndarray
+        Output array.
+
+    Examples
+    --------
+    // array-like object:
+    > var f = {{alias:@stdlib/utils/nary-function}}( {{alias:@stdlib/math/base/ops/add}}, 2 );
+    > var x = [ 1, 2, 3, 4, 5, 6 ];
+    > var y = [ 1, 1, 1, 1, 1, 1 ];
+    > var out = [ 0, 0, 0, 0, 0, 0 ];
+    > {{alias}}.assign( x, y, out, f );
+    > out
+    [ 2, 3, 4, 5, 6, 7 ]
+
+    // ndarray:
+    > var opts = { 'shape': [ 2, 3 ] };
+    > x = {{alias:@stdlib/ndarray/array}}( x, opts );
+    > y = {{alias:@stdlib/ndarray/array}}( y, opts );
+    > out = {{alias:@stdlib/ndarray/array}}( [ 0, 0, 0, 0, 0, 0 ], opts );
+    > {{alias}}.assign( x, y, out, f );
+    > var v = out.get( 1, 1 )
+    6
+
+    See Also
+    --------
+

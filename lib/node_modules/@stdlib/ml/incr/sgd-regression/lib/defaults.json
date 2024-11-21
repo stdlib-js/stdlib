@@ -1,0 +1,8 @@
+{
+    "epsilon": 0.1,
+    "eta0": 0.02,
+    "intercept": true,
+    "lambda": 1e-3,
+    "learningRate": "basic",
+    "loss": "squaredError"
+}

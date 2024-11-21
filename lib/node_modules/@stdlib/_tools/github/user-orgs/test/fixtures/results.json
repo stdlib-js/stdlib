@@ -1,0 +1,28 @@
+[
+  {
+    "login": "beep",
+    "id": 0,
+    "url": "https://api.github.com/orgs/beep",
+    "repos_url": "https://api.github.com/orgs/beep/repos",
+    "events_url": "https://api.github.com/orgs/beep/events",
+    "hooks_url": "https://api.github.com/orgs/beep/hooks",
+    "issues_url": "https://api.github.com/orgs/beep/issues",
+    "members_url": "https://api.github.com/orgs/beep/members{/member}",
+    "public_members_url": "https://api.github.com/orgs/beep/public_members{/member}",
+    "avatar_url": "https://avatars.githubusercontent.com/u/8172951?v=3",
+    "description": "Beep."
+  },
+  {
+    "login": "boop",
+    "id": 1,
+    "url": "https://api.github.com/orgs/boop",
+    "repos_url": "https://api.github.com/orgs/boop/repos",
+    "events_url": "https://api.github.com/orgs/boop/events",
+    "hooks_url": "https://api.github.com/orgs/boop/hooks",
+    "issues_url": "https://api.github.com/orgs/boop/issues",
+    "members_url": "https://api.github.com/orgs/boop/members{/member}",
+    "public_members_url": "https://api.github.com/orgs/boop/public_members{/member}",
+    "avatar_url": "https://avatars.githubusercontent.com/u/8172974?v=3",
+    "description": "Boop."
+  }
+ ]

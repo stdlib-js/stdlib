@@ -1,0 +1,23 @@
+
+{{alias}}( str )
+    Converts a string to inverse case.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    Returns
+    -------
+    out: string
+        Inverse-cased string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'Hello World!' )
+    'hELLO wORLD!'
+    > out = {{alias}}( 'I am A tiny LITTLE teapot' )
+    'i AM a TINY little TEAPOT'
+
+    See Also
+    --------

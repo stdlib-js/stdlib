@@ -1,0 +1,139 @@
+From webmaster@bidstogo.biz  Tue Jul 16 20:07:03 2002
+Return-Path: <webmaster@bidstogo.biz>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by netnoteinc.com (Postfix) with ESMTP id B121243FA2
+	for <jm@localhost>; Tue, 16 Jul 2002 15:07:02 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 16 Jul 2002 20:07:02 +0100 (IST)
+Received: from xchangeserver.BidsToGo (mail.bidstogo.biz [198.143.244.58])
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6GJ7eJ06929 for
+    <jm@jmason.org>; Tue, 16 Jul 2002 20:07:40 +0100
+Received: from PWS6000 ([192.168.1.101]) by xchangeserver.BidsToGo with
+    Microsoft SMTPSVC(5.0.2195.4905); Tue, 16 Jul 2002 14:25:27 -0400
+From: BidsToGo <webmaster@bidstogo.biz>
+To: <yyyy@spamassassin.taint.org>
+Subject: "BidsToGo" is places to go, things to do
+Date: Tue, 16 Jul 2002 14:25:27 -0400
+Content-Transfer-Encoding: 7bit
+Message-Id: <XCHANGESERVERTVLscJ000034bc@xchangeserver.BidsToGo>
+X-Originalarrivaltime: 16 Jul 2002 18:25:27.0906 (UTC) FILETIME=[28DEC420:01C22CF6]
+Content-Type: text/html; charset="US-ASCII"
+
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Hello from BidsToGo.biz</title>
+<style>
+</style>
+</head>
+
+<body>
+
+<p>&nbsp;</p>
+
+<table border=0>
+  <tr>
+    <td width='60%'><font size="4">Hello, </font></td>
+    <td>
+    <div align=center style="border-style: solid; border-width: 1; border-color:gray; padding-left: 4; padding-right: 4; padding-top: 1; padding-bottom: 1">
+      <font face="Arial" size="1"><u>Privacy policy</u>: To 
+      permanently opt out of our mailings simply 
+      send a blank email to <a href="mailto:optout@bidstogo.biz?subject=Optout">optout@bidstogo.biz</a>.</font></div>
+    </td>
+   <td width=50>&nbsp; 
+  </tr>
+</table>
+
+<p><font size="4"><a href="http://www.bidstogo.biz/">BidsToGo</a> invites you 
+visit and explore&nbsp;
+<a href="http://www.bidstogo.biz/">http://www.bidstogo.biz/</a>, the site 
+dedicated to <font color="blue"> <i>places to go</i></font> and
+<font color="blue"> <i>things to do</i></font>. You can use
+<a href="http://www.bidstogo.biz/">BidsToGo</a> to advertise, sell or auction 
+places to go and things to do - and right now it is FREE to make a basic 
+listing.</font></p>
+
+<p><font size="4"><a href="http://www.bidstogo.biz/">BidsToGo</a> is great for</font><br>
+&nbsp;<table border="0" cellpadding="5" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%" align="center"><font color="#0000FF"><b>Lodging</b></font>
+    <div align="center">
+      <font face="serif" size="3">Hotels, bed &amp; breakfasts, resorts, 
+      timeshares, vacation rentals, etc.</font>
+    </div>
+    </td>
+    <td width="50%" align="center"><b><font color="#0000FF">Travel</font></b>
+    <div align="center">
+      <font face="serif" size="3">Cruises, yacht charters, rail tours, auto 
+      rental, etc.</font>
+    </div>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center"><b><font color="#0000FF">Vacation packs
+    </font></b>
+    <div align="center">
+      <font face="serif" size="3">Skiing, outfitters, hunting, fishing, golf, abroad, resorts, 
+      etc.</font>
+    </div>
+    </td>
+    <td width="50%" align="center"><font color="#0000FF"><b>Game tickets</b>
+    </font> <font face="serif" size="3"><b>
+    <br>
+    </b>Football, baseball, basketball, hockey, etc.</font></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center"><font color="#0000FF"><b>Events and Festivals</b></font><div align="center">
+      Festivals, events, tournaments, races, bowl games, parades, etc.</div>
+    </td>
+    <td width="50%" align="center"><font color="#0000FF"><b>Theme parks</b></font>
+    <div align="center">
+      <font face="serif" size="3">Disney World, Busch Gardens, Kings Dominion, 
+      Sea World, etc.</font>
+    </div>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center"><font color="#0000FF"><b>Concerts</b></font>
+    <div align="center">
+      <font face="serif" size="3">Musical concerts</font>
+    </div>
+    </td>
+    <td width="50%" align="center"><font color="#0000FF"><b>Theater</b></font>
+    <div align="center">
+      <font face="serif" size="3">Plays, operas, musicals, etc.</font>
+    </div>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center"><font color="#0000FF"><b>Training</b></font><div align="center">
+      <font face="serif" size="3">Professional or personal training</font></div>
+    </td>
+    <td width="50%" align="center">&nbsp;</td>
+  </tr>
+</table>
+
+<p><font size="4">Visit <a href="http://www.bidstogo.biz/">http://www.bidstogo.biz/</a>.</font></p>
+
+<hr width="50%">
+
+<p align="center">&nbsp;
+<div align=center>
+<div style="border:1px solid gray; padding-left: 4; padding-right: 4; padding-top: 1; ; padding-bottom: 1;width:70%">
+      <font face="Arial" size="1"><u>Privacy policy</u>: To 
+      permanently opt out of our mailings simply 
+      send a blank email to <a href="mailto:optout@bidstogo.biz?subject=Optout">optout@bidstogo.biz</a>. 
+      Contact
+      <a href="mailto:CustomerService@bidstogo.biz?subject=Privacy policy question">CustomerService</a> 
+      for more information.</font></div>
+</div>
+
+</body>
+
+</html>
+
+

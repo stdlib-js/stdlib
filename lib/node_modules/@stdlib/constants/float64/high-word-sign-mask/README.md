@@ -1,0 +1,166 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2022 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# FLOAT64_HIGH_WORD_SIGN_MASK
+
+> High word mask for the sign bit of a [double-precision floating-point number][ieee754].
+
+<section class="usage">
+
+## Usage
+
+<!-- eslint-disable id-length -->
+
+```javascript
+var FLOAT64_HIGH_WORD_SIGN_MASK = require( '@stdlib/constants/float64/high-word-sign-mask' );
+```
+
+#### FLOAT64_HIGH_WORD_SIGN_MASK
+
+High word mask for the sign bit of a [double-precision floating-point number][ieee754].
+
+<!-- eslint-disable id-length -->
+
+```javascript
+// 0x80000000 = 2147483648 => 1 00000000000 00000000000000000000
+var bool = ( FLOAT64_HIGH_WORD_SIGN_MASK === 0x80000000 );
+// returns true
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="notes">
+
+## Notes
+
+-   The higher order word of a [double-precision floating-point number][ieee754] is a 32-bit integer containing the more significant bits which include the exponent and sign.
+
+</section>
+
+<!-- /.notes -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint-disable id-length -->
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var getHighWord = require( '@stdlib/number/float64/base/get-high-word' );
+var getLowWord = require( '@stdlib/number/float64/base/get-low-word' );
+var fromWords = require( '@stdlib/number/float64/base/from-words' );
+var FLOAT64_HIGH_WORD_SIGN_MASK = require( '@stdlib/constants/float64/high-word-sign-mask' );
+
+var x = -11.5;
+var hi = getHighWord( x ); // 1 10000000010 01110000000000000000
+// returns 3223781376
+
+// Mask off all bits except for the sign bit:
+var out = (hi & FLOAT64_HIGH_WORD_SIGN_MASK)>>>0; // 1 00000000000 00000000000000000000
+// returns 2147483648
+
+// Turn off the sign bit and leave other bits unchanged:
+out = hi & (~FLOAT64_HIGH_WORD_SIGN_MASK); // 0 10000000010 01110000000000000000
+// returns 1076297728
+
+// Generate a new value:
+out = fromWords( out, getLowWord( x ) );
+// returns 11.5
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/constants/float64/high_word_sign_mask.h"
+```
+
+#### STDLIB_CONSTANT_FLOAT64_HIGH_WORD_SIGN_MASK
+
+Macro for the high word mask for the sign bit of a [double-precision floating-point number][ieee754].
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+[ieee754]: https://en.wikipedia.org/wiki/IEEE_754-1985
+
+</section>
+
+<!-- /.links -->

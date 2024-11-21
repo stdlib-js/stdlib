@@ -1,0 +1,26 @@
+Return-Path: anthony@interlink.com.au
+Delivery-Date: Fri Sep  6 09:11:50 2002
+From: anthony@interlink.com.au (Anthony Baxter)
+Date: Fri, 06 Sep 2002 18:11:50 +1000
+Subject: [Spambayes] test sets? 
+In-Reply-To: <200209060759.g867xcV03853@localhost.localdomain> 
+Message-ID: <200209060811.g868Bo904031@localhost.localdomain>
+
+
+>>> Anthony Baxter wrote
+> I'm currently mangling it by feeding all parts (text, html, whatever 
+> else :) into the filters, as well as both a selected number of headers 
+> (to, from, content-type, x-mailer), and also a list of 
+> (header,count_of_header). This is showing up some nice stuff - e.g. the 
+> X-uidl that stoopid spammers blindly copy into their messages.
+
+The other thing on my todo list (probably tonight's tram ride home) is
+to add all headers from non-text parts of multipart messages. If nothing
+else, it'll pick up most virus email real quick.
+
+
+
+-- 
+Anthony Baxter     <anthony@interlink.com.au>   
+It's never too late to have a happy childhood.
+

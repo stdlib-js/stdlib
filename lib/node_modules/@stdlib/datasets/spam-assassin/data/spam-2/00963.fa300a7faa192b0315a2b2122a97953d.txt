@@ -1,0 +1,81 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6NLFvhY084395
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Tue, 23 Jul 2002 16:15:58 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6NLFvF1084390
+	for cypherpunks-forward@ds.pro-ns.net; Tue, 23 Jul 2002 16:15:57 -0500 (CDT)
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6NLFthX084354
+	for <cypherpunks@ds.pro-ns.net>; Tue, 23 Jul 2002 16:15:55 -0500 (CDT)
+	(envelope-from cpunks@einstein.ssz.com)
+X-Authentication-Warning: hq.pro-ns.net: Host cpunks@[207.200.56.4] claimed to be einstein.ssz.com
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id QAA17373
+	for cypherpunks@ds.pro-ns.net; Tue, 23 Jul 2002 16:24:01 -0500
+Received: (from mdom@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id QAA17362
+	for cypherpunks-outgoing; Tue, 23 Jul 2002 16:23:25 -0500
+Received: from fed1mtao03.cox.net (fed1mtao03.cox.net [68.6.19.242])
+	by einstein.ssz.com (8.8.8/8.8.8) with ESMTP id QAA17357;
+	Tue, 23 Jul 2002 16:23:05 -0500
+Received: from oemcomputer ([68.5.148.168]) by fed1mtao03.cox.net
+          (InterMail vM.5.01.04.05 201-253-122-122-105-20011231) with ESMTP
+          id <20020723211340.UCGO1378.fed1mtao03.cox.net@oemcomputer>;
+          Tue, 23 Jul 2002 17:13:40 -0400
+Message-ID: <416-22002722321189460@oemcomputer>
+To: "HB7-23" <boggs92672@cox.net>
+From: "ABoggs" <boggs92672@cox.net>
+Subject: Earn Extra Income**
+Date: Tue, 23 Jul 2002 14:18:09 -0700
+MIME-Version: 1.0
+Content-type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by einstein.ssz.com id QAA17358
+Sender: owner-cypherpunks@einstein.ssz.com
+Precedence: bulk
+Reply-To: cypherpunks@einstein.ssz.com
+X-Mailing-List: cypherpunks@ssz.com
+X-Unsubscription-Info: http://einstein.ssz.com/cdr
+X-List-Admin: list@ssz.com
+X-Loop: ssz.com
+X-Acceptable-Languages: English, Russian, German, French, Spanish
+
+Want to make a million bucks this year?
+Me too but it's probably not going happen!
+ 
+However if you're looking for the opportunity to
+make a couple thousand a week,
+working from home with your pc, we need to talk.
+ 
+If you're over 18 and a US resident,
+ 
+Just Click REPLY
+ 
+Send me your Name, State,
+Complete telephone number,
+and the best time to contact you.
+ 
+I will personally speak with you within 48 hours.
+	    
+ Have a great day!  
+
+Removal instructions:
+*************************
+To be removed from this list please reply with "remove" in the subject line.
+Please allow a few days for removal to take effect. Thanks!!
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

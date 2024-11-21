@@ -1,0 +1,120 @@
+
+{{alias}}( N, alpha, x, strideX, y, strideY )
+    Multiplies a vector `x` by a constant `alpha` and adds the result to `y`.
+
+    The `N` and stride parameters determine which elements in the strided arrays
+    are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If `N <= 0` or `alpha == 0`, the function returns `y` unchanged.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    alpha: number
+        Constant.
+
+    x: Float64Array
+        Input array.
+
+    strideX: integer
+        Index increment for `x`.
+
+    y: Float64Array
+        Output array.
+
+    strideY: integer
+        Index increment for `y`.
+
+    Returns
+    -------
+    y: Float64Array
+        Output array.
+
+    Examples
+    --------
+    // Standard usage:
+    > var x = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
+    > var y = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0, 1.0, 1.0, 1.0 ] );
+    > var alpha = 5.0;
+    > {{alias}}( x.length, alpha, x, 1, y, 1 )
+    <Float64Array>[ 6.0, 11.0, 16.0, 21.0, 26.0 ]
+
+    // Using `N` and stride parameters:
+    > x = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > y = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
+    > {{alias}}( 3, alpha, x, 2, y, -1 )
+    <Float64Array>[ 26.0, 16.0, 6.0, 1.0, 1.0, 1.0 ]
+
+    // Using view offsets:
+    > var x0 = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > var y0 = new {{alias:@stdlib/array/float64}}( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+    > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > var y1 = new {{alias:@stdlib/array/float64}}( y0.buffer, y0.BYTES_PER_ELEMENT*3 );
+    > {{alias}}( 3, 5.0, x1, -2, y1, 1 )
+    <Float64Array>[ 40.0, 31.0, 22.0 ]
+    > y0
+    <Float64Array>[ 7.0, 8.0, 9.0, 40.0, 31.0, 22.0 ]
+
+
+{{alias}}.ndarray( N, alpha, x, strideX, offsetX, y, strideY, offsetY )
+    Multiplies a vector `x` by a constant `alpha` and adds the result to `y`,
+    using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    alpha: number
+        Constant.
+
+    x: Float64Array
+        Input array.
+
+    strideX: integer
+        Index increment for `x`.
+
+    offsetX: integer
+        Starting index for `x`.
+
+    y: Float64Array
+        Output array.
+
+    strideY: integer
+        Index increment for `y`.
+
+    offsetY: integer
+        Starting index for `y`.
+
+    Returns
+    -------
+    y: Float64Array
+        Output array.
+
+    Examples
+    --------
+    // Standard usage:
+    > var x = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
+    > var y = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0, 1.0, 1.0, 1.0 ] );
+    > var alpha = 5.0;
+    > {{alias}}.ndarray( x.length, alpha, x, 1, 0, y, 1, 0 )
+    <Float64Array>[ 6.0, 11.0, 16.0, 21.0, 26.0 ]
+
+    // Advanced indexing:
+    > x = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > y = new {{alias:@stdlib/array/float64}}( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+    > {{alias}}.ndarray( 3, alpha, x, 2, 1, y, -1, y.length-1 )
+    <Float64Array>[ 7.0, 8.0, 9.0, 40.0, 31.0, 22.0 ]
+
+    See Also
+    --------
+

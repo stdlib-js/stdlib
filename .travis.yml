@@ -1,0 +1,133 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2021 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# After changing this file, check it on:
+#
+#   https://config.travis-ci.com/explore
+
+# Specify the programming language:
+language: node_js
+
+# Specify the host operating system:
+os: linux
+
+# Specify the Linux distribution:
+dist: xenial
+
+# Specify the list of Node.js versions on which we want to build:
+node_js:
+  # Node.js
+  - '16'
+
+# Specify which branches should trigger builds:
+branches:
+  only:
+    - develop
+
+# Configure Git:
+git:
+  # Set the clone depth, making sure to account for queued builds:
+  depth: 100
+
+# Compiling native modules for io.js v3.x.x or Node.js >=v4.0.0 requires a C++11 standard-compliant compiler. Specifically, either gcc >=4.8 or clang >=3.5. Electron requires a virtual display server (xvfb) on Linux.
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - binutils
+      - gcc-9
+      - gcc-9-multilib
+      - g++-9
+      - g++-9-multilib
+      - gfortran-9
+      - gfortran-9-multilib
+      - xvfb
+      - unzip
+
+# Specify environment variables:
+env:
+  # Environment variables common to all jobs:
+  global:
+    - FC=gfortran
+    - FORTRAN_COMPILER=gfortran
+    - CC=gcc
+    - C_COMPILER=gcc
+    - CXX=g++
+    - CXX_COMPILER=g++
+    - LINKER=g++
+    - NODE_PATH="$TRAVIS_BUILD_DIR/lib/node_modules"
+
+  # Environment variables used to construct the build matrix:
+  jobs:
+    - BUILD_TASK='test-npm-install'
+
+# Configure the build matrix:
+jobs:
+  # Flag to immediately finish a build if any one of the jobs fails:
+  fast_finish: true
+
+# Define steps to be performed before running installation steps:
+before_install:
+  # Perform platform-specific initialization:
+  - mkdir -p $HOME/bin;
+    ln -s /usr/bin/gcc-9 $HOME/bin/gcc;
+    ln -s /usr/bin/g++-9 $HOME/bin/g++;
+    ln -s /usr/bin/gfortran-9 $HOME/bin/gfortran;
+
+  # Configure the virtual display server (needed for electron):
+  - export DISPLAY=':99.0'
+  - Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
+
+  # Print debug info:
+  - echo "$($CC --version)"
+  - echo "$($CXX --version)"
+  - echo "$($FC --version)"
+
+  - git --version
+
+  - file $(which node)
+  - node --version
+  - node -p 'process.platform + "@" + process.arch'
+
+  - npm --version
+  - npm config get registry
+
+  # Run pre-install tasks:
+  - chmod +x ./tools/ci/travis/before_install
+  - "./tools/ci/travis/before_install"
+
+# Define installation steps:
+install:
+  # Run install tasks via `travis_retry` to address occasional `npm install` failures (see https://docs.travis-ci.com/user/common-build-problems/#travis_retry):
+  - "travis_retry make FC=$FC FORTRAN_COMPILER=$FORTRAN_COMPILER install"
+
+# Define the build steps:
+script:
+  - chmod +x ./tools/ci/travis/script
+  - "./tools/ci/travis/script $BUILD_TASK"
+
+# Define the steps to run after completing the build steps:
+after_script:
+  - chmod +x ./tools/ci/travis/after_script
+  - "./tools/ci/travis/after_script"
+
+# Define notifications:
+notifications:
+  slack:
+    secure: YEAbWYmphiLPgeG1eTG07nulUlxI7s2qIGYECX0GM/OxtR+uQSQCKR5dBhW67ng1sILiUh3vy/elAbdtSKGNmue50MD5h1zY9l2CgYrspZ/b8Q0jryaYfxdkX4QKKj75dak5dD+Ax+tdUpCPQIXCyDN6xT7G7eSmHNeWL4IjCrNGy1T+pflp7QFHLia6CdxIlTj5PE8OoGwcMrPNIC3dmy+rFWxHMx+3GfZkd3UCgCwAmaYLgharQ5NJN3Ucuw/m+/TK8jxTqLoe4mroQDLfZIzgqkwE0Jty9hd/TxhMI8X8AWEfY8xTRKe3pN4fnv2W37ICG2Oru9FPJ8xb3yeJl7AMTHZSFeLTR2HJldQ7Y7u0HRFyqNxKVfzfX0hRhlHyV4REtXd3uJcHuiQqlYJHQHfQ0Z00eYIHolYnXAlO1s8OiW8L+6RYCy8VwgLMlM0o37PfcwWFpj1pZXx3ZjndBemRmS3lxyokp+bfwkVWRIdBC9b27HVTV8lDSPZCLcmuR3GaaE8WGFdyjGyKiEfjT4/utHMT7SenICkqiJNInX69os5M/TOqDESeI6g6t7cYCNEystL5+sAzwAxyud28m336F58nC1e8UiwyGF1Kv57i7Lvgtryn4MhGMEzLRmlnyMs0jlU3gH2VORL9Uoqc5FASN1+XJhsqWJ0dzzHHQKA=

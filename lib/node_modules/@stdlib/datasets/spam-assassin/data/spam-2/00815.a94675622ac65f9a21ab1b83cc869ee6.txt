@@ -1,0 +1,227 @@
+From webmake-talk-admin@lists.sourceforge.net  Mon Jul 22 18:43:41 2002
+Return-Path: <webmake-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0FC81440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 13:43:40 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:43:40 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MG1PY16597 for
+    <jm@jmason.org>; Mon, 22 Jul 2002 17:01:25 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id KAA26858 for
+    <jm@jmason.org>; Sun, 21 Jul 2002 10:14:13 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17WCmw-0000zK-00; Sun,
+    21 Jul 2002 02:14:02 -0700
+Received: from [218.0.72.36] (helo=localhost.com) by
+    usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17WCmR-000567-00 for <webmake-talk@lists.sourceforge.net>; Sun,
+    21 Jul 2002 02:13:33 -0700
+From: targetemailextractor@btamail.net.cn
+Reply-To: targetemailextractor@btamail.net.cn
+To: webmake-talk@example.sourceforge.net
+X-Mailer: QuickSender 1.05
+MIME-Version: 1.0
+Message-Id: <E17WCmR-000567-00@usw-sf-list1.sourceforge.net>
+Subject: [WM] ADV: Direct email blaster, email addresses extractor, maillist verify, maillist manager...........
+Sender: webmake-talk-admin@example.sourceforge.net
+Errors-To: webmake-talk-admin@example.sourceforge.net
+X-Beenthere: webmake-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:webmake-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:webmake-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/webmake-talk>,
+    <mailto:webmake-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Discussion of WebMake. <webmake-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/webmake-talk>,
+    <mailto:webmake-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=webmake-talk>
+X-Original-Date: Sun, 21 Jul 2002 17:13:25 +0800
+Date: Sun, 21 Jul 2002 17:13:25 +0800
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+=3CBODY bgColor=3D#ffffff=3E
+=3CDIV=3E=3CFONT size=3D2=3E
+=3CDIV=3E=3CFONT face=3DArial=3E&nbsp=3B=3C=2FFONT=3E =3C=2FDIV=3E
+=3CDIV=3E&nbsp=3B=3C=2FDIV=3E
+=3CDIV=3E=3CSTRONG=3E=3CFONT color=3D#ff0080 face=3DArial size=3D4=3EDirect Email 
+Blaster=3C=2FFONT=3E=3C=2FSTRONG=3E =3C=2FDIV=3E=3CFONT size=3D2=3E
+=3CP=3E=3CFONT face=3DArial=3E=3CB=3E=3CFONT color=3D#006600=3E=3CI=3EThe program will send mail at the 
+rate of over 1=2C 000 e-mails per minute=2E&nbsp=3B=3C=2FI=3E=3C=2FFONT=3E=3CBR=3ELegal and Fast 
+sending bulk emails&nbsp=3B=3CBR=3E=3CFONT color=3D#006600=3E=3CI=3EBuilt in SMTP 
+server&nbsp=3B=3C=2FI=3E=3C=2FFONT=3E=3CBR=3EHave Return Path&nbsp=3B=3CBR=3ECan Check Mail 
+Address&nbsp=3B=3CBR=3E=3CFONT color=3D#006600=3E=3CI=3EMake Error Send Address List=28 Remove or 
+Send Again=29&nbsp=3B=3C=2FI=3E=3C=2FFONT=3E=3CBR=3ESupport multi-threads=2E&nbsp=3B=3CBR=3ESupport 
+multi-smtp servers=2E&nbsp=3B=3CBR=3EManages your opt-in E-Mail Lists&nbsp=3B=3CBR=3EOffers an 
+easy-to-use interface!&nbsp=3B=3CBR=3EEasy to configure and use&nbsp=3B=3C=2FB=3E=3C=2FFONT=3E=3C=2FP=3E
+=3CP=3E=3CFONT face=3DArial=3E=3CA 
+href=3D=22http=3A=2F=2Fwww=2Ewldinfo=2Ecom=2Fbj=5Fdownload=2Fedeb=5Fset=2Ezip=22=3E=3CSTRONG=3EDownload 
+Now=3C=2FSTRONG=3E=3C=2FA=3E=3C=2FFONT=3E=3C=2FP=3E
+=3CP=3E=3CSTRONG=3E=3CFONT color=3D#ff0080 face=3DArial size=3D4=3EMaillist 
+Verify=3C=2FFONT=3E=3C=2FSTRONG=3E=3C=2FP=3E
+=3CP=3E=3CFONT face=3DArial=3EMaillist Verify is intended for e-mail addresses and mail 
+lists verifying=2E The main task is to determine which of addresses in the mail 
+list are dead=2E The program is oriented=2C basically=2C on programmers which have 
+their own mail lists to inform their users about new versions of their 
+programs=2E=3C=2FFONT=3E=3C=2FP=3E
+=3CP=3E=3CFONT face=3DArial=3EThe program works on the same algorithm as ISP mail systems 
+do=2E Mail servers addresses for specified address are extracted from DNS=2E The 
+program tries to connect with found SMTP-servers and simulates the sending of 
+message=2E It does not come to the message =3CNOBR=3Esending &#8255=3B=2FNOBR&gt=3B EMV disconnect 
+as soon as mail server informs does this address exist or not=2E EMV can 
+find=3C=2FNOBR=3E=3C=2FFONT=3E=3C=2FP=3E
+=3CP=3E=3CFONT face=3DArial=3E=3CNOBR=3E&nbsp=3Babout 90% of dead addresses &#8255=3B=2FNOBR&gt=3B some mail 
+systems receive all messages and only then see their&nbsp=3B=3C=2FNOBR=3E=3C=2FFONT=3E=3C=2FP=3E
+=3CP=3E=3CFONT face=3DArial=3E=3CNOBR=3Eaddresses and if the address is dead send the message 
+back with remark about it=2E=3C=2FNOBR=3E=3C=2FFONT=3E=3C=2FP=3E=3CNOBR=3E
+=3CP=3E=3CA href=3D=22http=3A=2F=2Fwww=2Ewldinfo=2Ecom=2Fbj=5Fdownload=2Fbemv=5Fset=2Ezip=22=3E=3CSTRONG=3E=3CFONT 
+face=3DArial size=3D3=3EDownload Now=3C=2FFONT=3E=3C=2FSTRONG=3E=3C=2FA=3E=3C=2FP=3E
+=3CP=3E=3CSTRONG=3E=3CFONT color=3D#ff0080 face=3DArial size=3D4=3EExpress Email 
+Blaster&nbsp=3B=3C=2FFONT=3E=3C=2FSTRONG=3E=3C=2FP=3E
+=3CP=3E=3CFONT face=3DArial=3EExpress Email Blaster&nbsp=3B is a very fast=2C powerful yet 
+simple to use email sender=2E Utilizing multiple threads=2Fconnections=3C=2FFONT=3E=3C=2FP=3E
+=3CP=3E=3CFONT face=3DArial=3E&nbsp=3Band multiple SMTP servers your emails will be sent out 
+fast and easily=2E There are User Information=2C Attach Files=2C&nbsp=3B=3C=2FFONT=3E=3C=2FP=3E
+=3CP=3E=3CFONT face=3DArial=3EAddress and Mail Logs four tabbed area for the E-mails 
+details for sending=2E About 25 SMTP servers come with the&nbsp=3B=3C=2FFONT=3E=3C=2FP=3E
+=3CP=3E=3CFONT face=3DArial=3Edemo version=2C and users may Add and Delete SMTP servers=2E 
+About =3CFONT color=3D#008000=3E=3CB=3E60=2C000=3C=2FB=3E=3C=2FFONT=3E E-mails will be sent out per 
+hour=2E=22=3C=2FFONT=3E=3C=2FP=3E
+=3CP=3E=3CSTRONG=3E=3CA href=3D=22http=3A=2F=2Fwww=2Ewldinfo=2Ecom=2Fbj=5Fdownload=2Fbeeb=5Fset=2Ezip=22=3E=3CFONT 
+face=3DArial size=3D3=3EDownload Now=3C=2FFONT=3E=3C=2FA=3E=3C=2FSTRONG=3E=3C=2FP=3E
+=3CP=3E=3CSTRONG=3E=3CFONT color=3D#ff0080 face=3DArial size=3D4=3EExpress Email Address 
+Extractor=3C=2FFONT=3E=3C=2FSTRONG=3E=3C=2FP=3E=3CFONT size=3D4=3E
+=3CP=3E=3CFONT color=3D#008000 size=3D3=3EThis program is the most efficient=2C easy to use 
+email address collector available on the =3C=2FFONT=3E=3C=2FP=3E
+=3CP=3E=3CFONT face=3DArial=3E=3CFONT color=3D#008000 size=3D3=3E&nbsp=3Binternet! =3C=2FFONT=3E=3CFONT 
+color=3D#000000 size=3D3=3EBeijing Express Email Address Extractor =28ExpressEAE=29 is 
+designed to extract=3C=2FFONT=3E=3C=2FFONT=3E=3C=2FP=3E
+=3CP=3E=3CFONT color=3D#000000 size=3D3=3E&nbsp=3Be-mail addresses from web-pages on the 
+Internet =28using HTTP protocols=29 =2EExpressEAE=3C=2FFONT=3E=3C=2FP=3E
+=3CP=3E=3CFONT color=3D#000000 size=3D3=3E&nbsp=3Bsupports operation through many proxy-server 
+and works very fast=2C as it is able of&nbsp=3B=3C=2FFONT=3E=3C=2FP=3E
+=3CP=3E=3CFONT color=3D#000000 size=3D3=3Eloading several pages simultaneously=2C and requires 
+very few resources=2E=3C=2FFONT=3E=3C=2FP=3E
+=3CP=3E=3CFONT color=3D#000000 face=3DArial=3E=3CFONT size=3D3=3EWith it=2C you will be able 
+to=3C=2FFONT=3E=3CFONT size=3D2=3E =3C=2FFONT=3E=3CFONT size=3D3=3Euse targeted searches to crawl the 
+world wide web=2C extracting&nbsp=3B=3C=2FFONT=3E=3C=2FFONT=3E 
+=3CP=3E=3CFONT color=3D#000000 face=3DArial size=3D3=3Ethousands of clean=2C fresh email 
+addresses=2E Ably Email address Extractor is unlike other&nbsp=3B=3C=2FFONT=3E 
+=3CP=3E=3CFONT color=3D#000000 face=3DArial size=3D3=3Eaddress collecting programs=2C which 
+limit you to one or two search engines and are unable=3C=2FFONT=3E 
+=3CP=3E=3CFONT color=3D#000000 face=3DArial size=3D3=3E&nbsp=3Bto do auto searches HUGE address=2E 
+Most of them collect a high percentage of incomplete=2C&nbsp=3B=3C=2FFONT=3E 
+=3CP=3E=3CFONT color=3D#000000 face=3DArial size=3D3=3Eunusable addresses which will cause you 
+serious problems when using them in a mailing=2E&nbsp=3B=3C=2FFONT=3E 
+=3CUL=3E
+  =3CLI=3E=3CFONT color=3D#008000 face=3DArial size=3D3=3EEasier to learn and use than any 
+  other email address collector program available=2E=3C=2FFONT=3E 
+  =3CLI=3E=3CFONT color=3D#008000 face=3DArial size=3D3=3EAccesses eight search 
+  engines&nbsp=3B=3C=2FFONT=3E 
+  =3CLI=3E=3CFONT color=3D#008000 face=3DArial size=3D3=3EAdd your own URLs to the list to be 
+  searched=3C=2FFONT=3E 
+  =3CLI=3E=3CFONT face=3DArial size=3D3=3E=3CFONT color=3D#008000=3ESupports operation through 
+  =3C=2FFONT=3E=3CFONT color=3D#ff00ff=3Ea lot of=3C=2FFONT=3E=3CFONT color=3D#008000=3E proxy-server 
+  and works very fast =28HTTP Proxy=29=3C=2FFONT=3E=3C=2FFONT=3E 
+  =3CLI=3E=3CFONT color=3D#008000 face=3DArial size=3D3=3EAble of loading several pages 
+  simultaneously=3C=2FFONT=3E 
+  =3CLI=3E=3CFONT color=3D#008000 face=3DArial size=3D3=3ERequires very few resources=3C=2FFONT=3E 
+  =3CLI=3E=3CFONT color=3D#008000 face=3DArial size=3D3=3ETimeout feature allows user to limit 
+  the amount of time crawling in dead sites and traps=2E=3C=2FFONT=3E 
+  =3CLI=3E=3CFONT face=3DArial size=3D3=3E=3CFONT color=3D#008000=3EEasy to make =3C=2FFONT=3E=3CFONT 
+  color=3D#ff00ff=3EHuge=3C=2FFONT=3E=3CFONT color=3D#008000=3E address list=3C=2FFONT=3E=3C=2FFONT=3E 
+  =3CLI=3E=3CFONT color=3D#008000 face=3DArial size=3D3=3EPause=2Fcontinue extraction at any 
+  time=2E=3C=2FFONT=3E 
+  =3CLI=3E=3CFONT color=3D#008000 face=3DArial size=3D3=3EAuto connection to the 
+  Internet=3C=2FFONT=3E =3C=2FLI=3E=3C=2FUL=3E
+=3CDIV=3E=3CSTRONG=3E=3CA href=3D=22http=3A=2F=2Fwww=2Ewldinfo=2Ecom=2Fbj=5Fdownload=2Feeae=5Fset=2Ezip=22=3E=3CFONT 
+color=3D#008000 face=3DArial size=3D3=3EDownload Now=3C=2FFONT=3E=3C=2FA=3E=3C=2FSTRONG=3E =3C=2FDIV=3E
+=3CDIV=3E=3CSTRONG=3E=3CFONT color=3D#ff0080 face=3DArial=3EExpress Email Address 
+Downloader=3C=2FFONT=3E=3C=2FSTRONG=3E =3C=2FDIV=3E
+=3CUL=3E
+  =3CLI=3E=3CFONT face=3DArial=3E=3CSTRONG=3E=3CFONT color=3D#006600 size=3D2=3EExpressEAD&nbsp=3B 
+  =3C=2FFONT=3E=3CFONT color=3D#000000 size=3D2=3Eis a 32 bit Windows Program for e-mail 
+  marketing=2E It is intended for easy and convenient=3C=2FFONT=3E=3C=2FSTRONG=3E=3C=2FFONT=3E 
+  =3CLI=3E=3CFONT face=3DArial=3E=3CSTRONG=3E=3CFONT color=3D#000000 size=3D2=3E&nbsp=3Bsearch large 
+  e-mail address lists from mail servers=2E The program can be operated 
+  on&nbsp=3B=3C=2FFONT=3E=3C=2FSTRONG=3E=3C=2FFONT=3E 
+  =3CLI=3E=3CFONT face=3DArial=3E=3CSTRONG=3E=3CFONT color=3D#000000 size=3D2=3EWindows 95=2F98=2FME=2F2000 
+  and NT=2E=3C=2FFONT=3E=3C=2FSTRONG=3E=3C=2FFONT=3E 
+  =3CLI=3E=3CFONT face=3DArial=3E=3CSTRONG=3E=3CFONT color=3D#006600 size=3D2=3EExpressEAD&nbsp=3B 
+  =3C=2FFONT=3E=3CFONT color=3D#000000 size=3D2=3Esupport multi-threads =28up to 1024 
+  connections=29=2E=3C=2FFONT=3E=3C=2FSTRONG=3E=3C=2FFONT=3E 
+  =3CLI=3E=3CFONT face=3DArial=3E=3CSTRONG=3E=3CFONT color=3D#006600 size=3D2=3EExpressEAD&nbsp=3B 
+  =3C=2FFONT=3E=3CFONT color=3D#000000 size=3D2=3Ehas the ability&nbsp=3B to reconnect to the 
+  mail server if the server has disconnected and&nbsp=3B=3C=2FFONT=3E=3C=2FSTRONG=3E=3C=2FFONT=3E 
+  =3CLI=3E=3CFONT face=3DArial=3E=3CSTRONG=3E=3CFONT color=3D#000000 size=3D2=3Econtinue the searching 
+  at the point where it has been interrupted=2E=3C=2FFONT=3E=3C=2FSTRONG=3E=3C=2FFONT=3E 
+  =3CLI=3E=3CFONT face=3DArial=3E=3CSTRONG=3E=3CFONT color=3D#006600 size=3D2=3EExpressEAD&nbsp=3B 
+  =3C=2FFONT=3E=3CFONT color=3D#000000 size=3D2=3Ehas an ergonomic interface that is easy to 
+  set up and simple to use=2E=3C=2FFONT=3E=3C=2FSTRONG=3E=3C=2FFONT=3E =3C=2FLI=3E=3C=2FUL=3E
+=3CDIV=3E=3CFONT face=3DArial=3E&nbsp=3B=3C=2FFONT=3E =3C=2FDIV=3E
+=3CP=3E=3CFONT face=3DArial=3E=3CSTRONG=3E=3CFONT color=3D#008000 face=3DArial 
+size=3D4=3EFeatures=3A=3C=2FFONT=3E=3C=2FSTRONG=3E=3C=2FFONT=3E 
+=3CUL type=3Ddisc=3E
+  =3CLI=3E=3CFONT face=3DArial=3E=3CSTRONG=3E=3CFONT face=3DArial size=3D2=3Esupport 
+  multi-threads=2E=3C=2FFONT=3E=3C=2FSTRONG=3E=3C=2FFONT=3E 
+  =3CLI=3E=3CFONT face=3DArial=3E=3CSTRONG=3E=3CFONT face=3DArial size=3D2=3Eauto get smtp server 
+  address=2Csupport multi-smtp servers=2E=3C=2FFONT=3E=3C=2FSTRONG=3E=3C=2FFONT=3E 
+  =3CLI=3E=3CFONT face=3DArial=3E=3CSTRONG=3E=3CFONT face=3DArial size=3D2=3Eauto save&nbsp=3B E-Mail 
+  Lists=3C=2FFONT=3E=3C=2FSTRONG=3E=3C=2FFONT=3E 
+  =3CLI=3E=3CFONT face=3DArial=3E=3CSTRONG=3E=3CFONT face=3DArial size=3D2=3Eoffers an easy-to-use 
+  interface!=3C=2FFONT=3E=3C=2FSTRONG=3E=3C=2FFONT=3E =3C=2FLI=3E=3C=2FUL=3E
+=3CDIV=3E=3CSTRONG=3E=3CA href=3D=22http=3A=2F=2Fwww=2Ewldinfo=2Ecom=2Fbj=5Fdownload=2Feead=5Fset=2Ezip=22=3E=3CFONT 
+color=3D#008000 face=3DArial size=3D3=3EDownload Now=3C=2FFONT=3E=3C=2FA=3E=3C=2FSTRONG=3E =3C=2FDIV=3E
+=3CDIV=3E=3CFONT face=3DArial=3E&nbsp=3B=3C=2FFONT=3E =3C=2FDIV=3E
+=3CDIV=3E=3CSTRONG=3E=3CFONT color=3D#ff0080 face=3DArial=3EExpress Maillist 
+Manager=3C=2FFONT=3E=3C=2FSTRONG=3E =3C=2FDIV=3E
+=3CDIV=3E=3CFONT face=3DArial=3E&nbsp=3B=3C=2FFONT=3E =3C=2FDIV=3E
+=3CDIV=3E=3CFONT size=3D2=3E
+=3CP=3E=3CFONT face=3DArial=3E=3CFONT color=3Dblack size=3D3=3EThis program was designed to be a 
+complement to the =3C=2FFONT=3E=3CFONT color=3D#800080 size=3D3=3EDirect Email Blaster&nbsp=3B 
+=3C=2FFONT=3E=3CFONT color=3Dblack size=3D3=3Eand =3C=2FFONT=3E=3CFONT color=3D#800080 size=3D3=3EEmail 
+Blaster =3C=2FFONT=3E=3C=2FFONT=3E=3C=2FP=3E
+=3CP=3E=3CFONT face=3DArial=3E=3CFONT color=3Dblack size=3D3=3Esuite of bulk email software 
+programs=2E Its purpose is to organize your email lists in order to be 
+more&nbsp=3B=3C=2FFONT=3E=3C=2FFONT=3E=3C=2FP=3E
+=3CP=3E=3CFONT face=3DArial=3E=3CFONT color=3Dblack size=3D3=3Eeffective with your email marketing 
+campaign=2E Some of its features include=3A=3C=2FFONT=3E=3C=2FFONT=3E=3C=2FP=3E
+=3CP=3E=3CB=3E=3CFONT color=3D#008000 face=3DArial=3E=3CFONT size=3D3=3E&#8255=3BCombine several lists into 
+one file=2E=3C=2FFONT=3E=3CBR=3E=3CFONT size=3D3=3E&#8255=3BSplit up larger lists to make them more 
+manageable=2E=3C=2FFONT=3E=3CBR=3E=3CFONT size=3D3=3E&#8255=3BRemove addresses from file=2E=3C=2FFONT=3E=3CBR=3E=3CFONT 
+size=3D3=3E&#8255=3BManual editing=2C adding=2C and deleting of addresses=2E=3C=2FFONT=3E=3CBR=3E=3CFONT 
+size=3D3=3E&#8255=3BAbility to auto clean lists=2C that is=2C remove any duplicate or unwanted 
+addresses=2E=3C=2FFONT=3E=3CBR=3E=3CFONT size=3D3=3E&#8255=3BMaintain all your address lists within the 
+program so you no&nbsp=3B longer need to keep all your=3C=2FFONT=3E=3C=2FFONT=3E=3C=2FB=3E=3C=2FP=3E
+=3CP=3E=3CB=3E=3CFONT color=3D#008000 face=3DArial size=3D3=3E&nbsp=3Blists saved as separate text 
+files=2E=3C=2FFONT=3E=3C=2FB=3E=3C=2FP=3E
+=3CP=3E=3CSTRONG=3E=3CA href=3D=22http=3A=2F=2Fwww=2Ewldinfo=2Ecom=2Fbj=5Fdownload=2Fbemm=5Fset=2Ezip=22=3E=3CFONT 
+color=3D#008000 face=3DArial size=3D3=3EDownload Now=3C=2FFONT=3E=3C=2FA=3E=3C=2FSTRONG=3E=3C=2FP=3E
+=3CP=3E=3CFONT face=3DArial=3E&nbsp=3B=3C=2FFONT=3E=3C=2FP=3E
+=3CP=3E&nbsp=3B=3C=2FP=3E
+=3CDIV=3E=3CFONT face=3DArial=3Eif you want to remove your email=2C please send email to =3CA 
+href=3D=22mailto=3Atargetemailremoval=40btamail=2Enet=2Ecn=22=3Etargetemailremoval=40btamail=2Enet=2Ecn=3C=2FA=3E=3C=2FFONT=3E 
+=3C=2FDIV=3E
+=3CDIV=3E=3CFONT face=3DArial=3E&nbsp=3B=3C=2FFONT=3E =3C=2FDIV=3E
+=3CDIV=3E=3CFONT face=3DArial=3E&nbsp=3B=3C=2FFONT=3E =3C=2FDIV=3E
+=3CDIV=3E&nbsp=3B=3C=2FDIV=3E=3C=2FFONT=3E=3C=2FDIV=3E=3C=2FFONT=3E=3C=2FNOBR=3E=3C=2FFONT=3E=3C=2FFONT=3E=3C=2FDIV=3E
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+webmake-talk mailing list
+webmake-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/webmake-talk
+
+

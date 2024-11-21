@@ -1,0 +1,36 @@
+
+{{alias}}( x, lambda )
+    Computes a one-parameter Box-Cox transformation of 1+x.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    lambda: number
+        Power parameter.
+
+    Returns
+    -------
+    b: number
+        Function value.
+
+    Examples
+    --------
+    > var v =  {{alias}}( 1.0, 2.5 )
+    ~1.8627
+    > v = {{alias}}( 4.0, 2.5 )
+    ~21.9607
+    > v = {{alias}}( 10.0, 2.5 )
+    ~160.1246
+    > v = {{alias}}( 2.0, 0.0 )
+    ~1.0986
+    > v = {{alias}}( -1.0, 2.5 )
+    -0.4
+    > v = {{alias}}( 0.0, -1.0 )
+    0.0
+    > v = {{alias}}( -1.0, -1.0 )
+    -Infinity
+
+    See Also
+    --------

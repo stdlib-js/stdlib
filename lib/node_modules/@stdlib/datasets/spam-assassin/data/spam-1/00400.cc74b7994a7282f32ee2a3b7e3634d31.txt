@@ -1,0 +1,91 @@
+From ilug-admin@linux.ie  Sat Sep 21 10:48:43 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id E685316F03
+	for <zzzz@localhost>; Sat, 21 Sep 2002 10:48:42 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Sat, 21 Sep 2002 10:48:42 +0100 (IST)
+Received: from lugh.tuatha.org (postfix@lugh.tuatha.org [194.125.145.45])
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8L1KmC01845 for
+    <zzzz-ilug@jmason.org>; Sat, 21 Sep 2002 02:20:48 +0100
+Received: from lugh.tuatha.org (localhost [127.0.0.1]) by lugh.tuatha.org
+    (Postfix) with ESMTP id 834F5341C6; Sat, 21 Sep 2002 02:21:17 +0100 (IST)
+Delivered-To: linux.ie-ilug@localhost
+Received: from 210.204.3.193 (unknown [210.204.3.193]) by lugh.tuatha.org
+    (Postfix) with SMTP id 1F8FC34158 for <ilug@linux.ie>; Sat, 21 Sep 2002
+    02:20:46 +0100 (IST)
+Received: from [118.189.136.119] by smtp-server1.cfl.rr.com with NNFMP;
+    Sep, 20 2002 7:09:49 PM -0300
+Received: from [24.118.23.60] by n9.groups.yahoo.com with SMTP;
+    Sep, 20 2002 5:55:46 PM +0600
+Received: from [49.164.250.3] by rly-xw01.mx.aol.com with SMTP;
+    Sep, 20 2002 5:12:29 PM -0000
+From: "ufu_adv@hellerwhirligigs.com" <fla_adv@hellerwhirligigs.com>
+To: ilug@linux.ie
+Cc: 
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+X-Mailer: The Bat! (v1.52f) Business
+Message-Id: <20020921012046.1F8FC34158@lugh.tuatha.org>
+Subject: [ILUG] Garden Ornaments | mvcmv
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Beenthere: ilug@linux.ie
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:ilug-request@linux.ie?subject=help>
+List-Post: <mailto:ilug@linux.ie>
+List-Subscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=subscribe>
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+List-Unsubscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=unsubscribe>
+List-Archive: <http://www.linux.ie/pipermail/ilug/>
+X-Original-Date: Fri, 20 Sep 2002 19:22:51 -0600
+Date: Fri, 20 Sep 2002 19:22:51 -0600
+
+Our delightful garden ornaments combine the finest craftsmanship in woodworking with the lastest technology in paints and hardware:
+
+http://www.gardenornaments.adv@hellerwhirligigs.com/
+
+We are the world's biggest whirligig maker.
+
+
+Sincerely,
+
+Studio T. Inc., USA
+The Home of Heller Whirligigs
+
+
+
+
+Remove:
+
+E-mail based commercial communication avoids unnecessary spending on catalogs and paper, and helps to preserve valuable natural resources such as forests and oil. We do not wish to share our valuable information about whirligigs with those who are not interested. Should you not wish to receive information from us in the future, please click on  the following removal link:
+
+http://www.gardenornaments.adv@hellerwhirligigs.com/remove.html
+
+Even though our database cleansing might be subject to delay or error, we will remove your e-mail address permanently from our database. However, please realize that removal from our database does not guarantee that your e-mail address will be deleted from the many other e-mail marketers who construct databases themselves by harvesting from web sites, or by buying any of the thousands of lists of e-mail addresses that are openly for sale on the internet.
+
+
+
+
+
+
+
+
+
+
+
+
+...
+
+xdreksuhlkuytkyspnjct
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

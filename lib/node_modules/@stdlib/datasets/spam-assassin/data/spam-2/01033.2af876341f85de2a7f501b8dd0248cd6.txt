@@ -1,0 +1,90 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6P1iXi5061733
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Wed, 24 Jul 2002 20:44:33 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6P1iXgc061729
+	for cypherpunks-forward@ds.pro-ns.net; Wed, 24 Jul 2002 20:44:33 -0500 (CDT)
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6P1iPi5061675
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks@ds.pro-ns.net>; Wed, 24 Jul 2002 20:44:26 -0500 (CDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: from waste.minder.net (daemon@waste [66.92.53.73])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6P1iNJ60331
+	for <cypherpunks@ds.pro-ns.net>; Wed, 24 Jul 2002 21:44:23 -0400 (EDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: (from cpunks@localhost)
+	by waste.minder.net (8.11.6/8.11.6) id g6P1iLS12162
+	for cypherpunks@ds.pro-ns.net; Wed, 24 Jul 2002 21:44:21 -0400
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by waste.minder.net (8.11.6/8.11.6) with ESMTP id g6P1iKR12147
+	for <cpunks@minder.net>; Wed, 24 Jul 2002 21:44:20 -0400
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6P1iJJ60319
+	for <cpunks@minder.net>; Wed, 24 Jul 2002 21:44:19 -0400 (EDT)
+	(envelope-from cpunks@einstein.ssz.com)
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id UAA18253
+	for cpunks@minder.net; Wed, 24 Jul 2002 20:53:13 -0500
+Received: (from mdom@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id UAA18243
+	for cypherpunks-outgoing; Wed, 24 Jul 2002 20:53:09 -0500
+Received: from naraetech.naraetech.com (root@[128.134.24.193])
+	by einstein.ssz.com (8.8.8/8.8.8) with ESMTP id UAA18231
+	for <cypherpunks@ssz.com>; Wed, 24 Jul 2002 20:53:02 -0500
+From: jabba5346192@yahoo.com
+Received: from 64.171.23.202 (adsl-64-171-23-202.dsl.sntc01.pacbell.net [64.171.23.202])
+	by naraetech.naraetech.com (8.9.3/8.9.3) with SMTP id KAA22821;
+	Thu, 25 Jul 2002 10:44:17 -0400
+Message-Id: <200207251444.KAA22821@naraetech.naraetech.com>
+To: bjhacha@hotmail.com, crtyler1@msn.com, tbradshaw@texnet.net,
+   chico@zoomnet.net
+Date: Wed, 24 Jul 2002 21:41:25 -0400
+Old-Subject: CDR: 100% FREE HARDCORE MEGASITE!!
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+MIME-Version: 1.0
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Sender: owner-cypherpunks@einstein.ssz.com
+Precedence: bulk
+Reply-To: cypherpunks@einstein.ssz.com
+X-Mailing-List: cypherpunks@ssz.com
+X-Unsubscription-Info: http://einstein.ssz.com/cdr
+X-List-Admin: list@ssz.com
+X-Loop: ssz.com
+X-Acceptable-Languages: English, Russian, German, French, Spanish
+Subject: 100% FREE HARDCORE MEGASITE!!
+
+<html>
+<body>
+<p>100% Free Porn!<br>
+What more can you ask for?</p>
+<p><b><font size="4"><a href="http://216.129.174.178/">CLICK HERE</a></font></b></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><font size="2">REMOVAL INSTRUCTIONS: We strive to never send unsolicited mail.<br>
+However, if you'd rather not receive future e-mails from us,<br>
+<a href="mailto:cheech@inbox.lv">CLICK HERE</a> to send email and add the word REMOVE in the subject line.<br>
+Please allow 48 hours for processing.</font></p>
+</body>
+</html>
+
+ [(^(PO1:KJ)_8J7BJK9^":}H&*TG0BK5NKIYs5]
+
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

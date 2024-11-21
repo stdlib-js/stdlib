@@ -1,0 +1,78 @@
+From rpm-list-admin@freshrpms.net  Fri Aug 16 10:57:44 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 201B143C46
+	for <jm@localhost>; Fri, 16 Aug 2002 05:56:31 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 16 Aug 2002 10:56:31 +0100 (IST)
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7FIv1713772 for
+    <jm-rpm@jmason.org>; Thu, 15 Aug 2002 19:57:01 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7FIl2J22986; Thu, 15 Aug 2002 20:47:02
+    +0200
+Received: from mail.addix.net (kahless.addix.net [195.179.139.19]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g7FIkUJ14012 for
+    <rpm-list@freshrpms.net>; Thu, 15 Aug 2002 20:46:30 +0200
+Received: from kushana.camperquake.de (kushana.camperquake.de
+    [194.64.167.57]) by mail.addix.net (8.9.3/8.9.3) with ESMTP id UAA01101
+    for <rpm-list@freshrpms.net>; Thu, 15 Aug 2002 20:46:31 +0200
+Received: from nausicaa.camperquake.de ([194.64.167.58] helo=nausicaa) by
+    kushana.camperquake.de with smtp (Exim 3.36 #1) id 17fPqV-0004zj-00 for
+    rpm-list@freshrpms.net; Thu, 15 Aug 2002 20:59:47 +0200
+From: Ralf Ertzinger <ralf@camperquake.de>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: Documentation about built-in RPM macros?
+Message-Id: <20020815205233.4a04aba3.ralf@camperquake.de>
+In-Reply-To: <1029431749.1704.1066.camel@turner.gestalt.entity.net>
+References: <BADF3C947A1BD54FBA75C70C241B0B9E10AA94@ex02.idirect.net>
+    <1029431749.1704.1066.camel@turner.gestalt.entity.net>
+Organization: [NDC] ;)
+X-Mailer: Sylpheed version 0.7.8 (GTK+ 1.2.10; i386-redhat-linux)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Thu, 15 Aug 2002 20:52:33 +0200
+Date: Thu, 15 Aug 2002 20:52:33 +0200
+
+Hi.
+
+Dave Cridland <dave@cridland.net> wrote:
+
+> > recommends *against* using '%configure' ("We will try to support users
+> > who accidentally type the leading % but this should not be relied
+> > upon."), and yet
+
+[snip]
+
+> They're just suggesting people use "./configure" instead.
+
+No, they do not (what would be the use of that, anyway?). They say that
+they will _try_ to eval macros even if the user forgot to pass the
+leading '%', but that this feature should not be relied upon.
+
+-- 
+On the first day of Christmas my true love sent to me
+       A badly configured newsreader
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

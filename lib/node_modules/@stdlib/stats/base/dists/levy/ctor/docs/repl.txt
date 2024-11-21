@@ -1,0 +1,91 @@
+
+{{alias}}( [μ, c] )
+    Returns a Lévy distribution object.
+
+    Parameters
+    ----------
+    μ: number (optional)
+        Location parameter. Default: `0.0`.
+
+    c: number (optional)
+        Scale parameter. Must be greater than `0`. Default: `1.0`.
+
+    Returns
+    -------
+    levy: Object
+        Distribution instance.
+
+    levy.mu: number
+        Location parameter.
+
+    levy.c: number
+        Scale parameter. If set, the value must be greater than `0`.
+
+    levy.entropy: number
+        Read-only property which returns the differential entropy.
+
+    levy.mean: number
+        Read-only property which returns the expected value.
+
+    levy.median: number
+        Read-only property which returns the median.
+
+    levy.mode: number
+        Read-only property which returns the mode.
+
+    levy.stdev: number
+        Read-only property which returns the standard deviation.
+
+    levy.variance: number
+        Read-only property which returns the variance.
+
+    levy.cdf: Function
+        Evaluates the cumulative distribution function (CDF).
+
+    levy.logcdf: Function
+        Evaluates the natural logarithm of the cumulative distribution function
+        (CDF).
+
+    levy.logpdf: Function
+        Evaluates the natural logarithm of the probability density function
+        (PDF).
+
+    levy.pdf: Function
+        Evaluates the probability density function (PDF).
+
+    levy.quantile: Function
+        Evaluates the quantile function at probability `p`.
+
+    Examples
+    --------
+    > var levy = {{alias}}( -2.0, 3.0 );
+    > levy.mu
+    -2.0
+    > levy.c
+    3.0
+    > levy.entropy
+    ~4.423
+    > levy.mean
+    Infinity
+    > levy.median
+    ~4.594
+    > levy.mode
+    -1.0
+    > levy.stdev
+    Infinity
+    > levy.variance
+    Infinity
+    > levy.cdf( 0.8 )
+    ~0.3
+    > levy.logcdf( 0.8 )
+    ~-1.2
+    > levy.logpdf( 1.0 )
+    ~-2.518
+    > levy.pdf( 1.0 )
+    ~0.081
+    > levy.quantile( 0.8 )
+    ~44.74
+
+    See Also
+    --------
+

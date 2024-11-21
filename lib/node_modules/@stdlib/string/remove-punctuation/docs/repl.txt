@@ -1,0 +1,45 @@
+
+{{alias}}( str )
+    Removes punctuation characters from a `string`.
+
+    The function removes the following characters:
+
+    - Apostrophe: `
+    - Braces : { }
+    - Brackets: [ ]
+    - Colon: :
+    - Comma: ,
+    - Exclamation Mark: !
+    - Fraction Slash: /
+    - Guillemets: < >
+    - Parentheses: ( )
+    - Period: .
+    - Semicolon: ;
+    - Tilde: ~
+    - Vertical Bar: |
+    - Question Mark: ?
+    - Quotation Marks: ' "
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    Returns
+    -------
+    out: string
+        String with punctuation characters removed.
+
+    Examples
+    --------
+    > var str = 'Sun Tzu said: "A leader leads by example not by force."';
+    > var out = {{alias}}( str )
+    'Sun Tzu said A leader leads by example not by force'
+
+    > str = 'This function removes these characters: `{}[]:,!/<>().;~|?\'"';
+    > out = {{alias}}( str )
+    'This function removes these characters '
+
+    See Also
+    --------
+

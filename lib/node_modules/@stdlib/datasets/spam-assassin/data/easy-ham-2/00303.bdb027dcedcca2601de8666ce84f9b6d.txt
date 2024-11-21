@@ -1,0 +1,105 @@
+From ilug-admin@linux.ie  Fri Aug  9 15:20:59 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 028C24406D
+	for <jm@localhost>; Fri,  9 Aug 2002 10:20:47 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:20:47 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79EHZb05879 for
+    <jm-ilug@jmason.org>; Fri, 9 Aug 2002 15:17:35 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id KAA04744 for <jm-ilug@jmason.org>;
+    Fri, 9 Aug 2002 10:12:33 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA31654; Fri, 9 Aug 2002 10:11:40 +0100
+Received: from kbs01.kbs.ie ([213.190.156.48]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA31630 for <ilug@linux.ie>; Fri,
+    9 Aug 2002 10:11:34 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [213.190.156.48] claimed
+    to be kbs01.kbs.ie
+Received: by KBS01 with Internet Mail Service (5.5.2653.19) id <QK4XK2KT>;
+    Fri, 9 Aug 2002 10:27:47 +0100
+Message-Id: <55DA5264CE16D41186F600D0B74D6B0924724A@KBS01>
+From: "Brian O'Donoghue" <Brian.ODonoghue@kbs.ie>
+To: "'ilug@linux.ie'" <ilug@linux.ie>
+Subject: RE: [ILUG] slashdot EW Dijkstra humor
+Date: Fri, 9 Aug 2002 10:27:38 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain; charset="iso-8859-1"
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+> Oops, I tend to feel like that most times! I tend to feel that if we
+> have extremely good compilation tools, then those tools should be able
+> to do the inlining and optimisation far better than I could. That's the
+> theory anyway :) And there's always a tradeoff with inlining between
+> speed and memory bloat (which may sometimes be no tradeoff if swap
+> starts getting involved...)
+
+Yes and I understand that argument, however.
+Sometimes I find that if I don't try to write code in the least space
+possible or for example become lazy and say
+
+--Bad style
+Bool q;
+
+If(q)
+	When I should say
+If(q==true)
+	
+Or
+
+--Bad optimization
+
+int a;
+a=some_function();
+if(a) <--which apparently works but is 'bad coding style'.
+
+That's what I mean about letting the programming tools take care
+of the coding.... it's considered 'bad' apparently.
+
+Or for example say you are writing a loop that says
+
+For(a=0;a<strlen(somestring);a++)
+{
+ some_thing_goes_here();
+
+ if(b=strlen(somestring)-4)
+	do_something;
+
+};
+
+when I probably should say
+
+c=strlen(somestring);
+
+For(a=0;a<c;a++)
+{
+ some_thing_goes_here();
+
+ if(b=c)
+	do_something;
+
+};
+
+Of course 'people' always say that the extra call to strlen() will make no
+difference on the machines we have 'these days'.
+
+But my machine has 256mb of ram.... not 640k.
+
+<<Maybe I'm just ranting though>>
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

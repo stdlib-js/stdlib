@@ -1,0 +1,59 @@
+From burk@cns.mpg.de  Wed Aug 21 10:18:28 2002
+Return-Path: <burk@cns.mpg.de>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5CD6543C32
+	for <jm@localhost>; Wed, 21 Aug 2002 05:18:28 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 21 Aug 2002 10:18:28 +0100 (IST)
+Received: from defiant.alpha (postfix@pD952BF2A.dip.t-dialin.net
+    [217.82.191.42]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7L9HhZ17520 for <jm@jmason.org>; Wed, 21 Aug 2002 10:17:44 +0100
+Received: by defiant.alpha (Postfix, from userid 1000) id B2396F0030C;
+    Wed, 21 Aug 2002 11:17:46 +0200 (CEST)
+Date: Wed, 21 Aug 2002 11:17:46 +0200
+From: Frank Burkhardt <burk@cns.mpg.de>
+To: yyyy@spamassassin.taint.org
+Subject: spamassassin mailbox delivery problem
+Message-Id: <20020821091746.GA26903@fbo.2y.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.4i
+
+Hi,
+
+when testing spamassassin, i found a little problem but
+I don't know if it's spamassassin or my pop3-server
+that caused it.
+
+Pop3-servers seem to expect a blank line before "From "-lines
+to seperate mails in a mailbox-file.
+Spamassassin does not add such a blank line before
+mails delivered directly to mailbox.
+Result is that the pop3-server (tested with qpopper4 and
+cucipop) delivers some mails glued together.
+
+I think the solution is to write a blank line to the mailbox
+befor spamassassin adds the filtered mail.
+
+Please tell me if you're not the right man for this,
+ if i'm totally wrong or if you're sure, the pop3-server
+ shouldn't insist on a blank line before "From "-lines.
+
+Thank you.
+
+PS: Mailserver ist postfix-1.1.11
+
+Regards,
+
+-- 
+Frank Burkhardt <burk@cns.mpg.de>   phone: +49 341 9940-142
+                                    fax  : +49 341 9940-221
+Max Planck Institute
+of Cognitive Neuroscience           /"\
+Muldentalweg 9                      \ / ASCII Ribbon Campain
+04828 Bennewitz, Germany             X  against HTML Mail
+                                    / \
+

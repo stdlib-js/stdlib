@@ -1,0 +1,29 @@
+
+{{alias}}( operation )
+    Returns the enumeration constant associated with a supported BLAS operation
+    side value.
+
+    Downstream consumers of this function should *not* rely on specific integer
+    values (e.g., `LEFT == 0`). Instead, the function should be used in an
+    opaque manner.
+
+    Parameters
+    ----------
+    operation: any
+        Operation value.
+
+    Returns
+    -------
+    out: integer|null
+        Enumeration constant.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'right' )
+    <number>
+    > out = {{alias}}( {{alias:@stdlib/blas/base/operation-side-str2enum}}( 'right' ) )
+    <number>
+
+    See Also
+    --------
+

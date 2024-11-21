@@ -1,0 +1,61 @@
+From jm@dogma.slashnull.org  Wed Jul 24 03:30:03 2002
+Return-Path: <yyyy@dogma.slashnull.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 70B8B440CC
+	for <jm@localhost>; Tue, 23 Jul 2002 22:29:59 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 03:29:59 +0100 (IST)
+Received: (from yyyy@localhost) by dogma.slashnull.org (8.11.6/8.11.6) id
+    g6O2Ped14750 for jm; Wed, 24 Jul 2002 03:25:40 +0100
+Date: Wed, 24 Jul 2002 03:25:40 +0100
+Message-Id: <200207240225.g6O2Ped14750@dogma.slashnull.org>
+From: root@dogma.slashnull.org (Cron Daemon)
+To: yyyy@dogma.slashnull.org
+Subject: Cron <yyyy@dogma> /home/yyyy/lib/sitescooper/automatic/runme
+X-Cron-Env: <SHELL=/bin/sh>
+X-Cron-Env: <HOME=/home/yyyy>
+X-Cron-Env: <PATH=/usr/bin:/bin>
+X-Cron-Env: <LOGNAME=yyyy>
+
+
+Some errors were encountered during tonight's sitescooper run:
+
+SERIOUS WARNINGS:
+-------------------------------------------------------------------------
+
+SITE WARNING: "advogato_diaries.site" line 1: HTTP GET failed: 500 Can't connect to www.advogato.org:80 (Timeout) (http://www.advogato.org/recentlog.html)
+SITE WARNING: "advogato.site" line 1: HTTP GET failed: 500 Can't connect to www.advogato.org:80 (Timeout) (http://www.advogato.org/article/)
+SITE WARNING: "DOC.cf" line 6: Configuration line invalid (needs URL line first?):
+SITE WARNING: "DOC.cf" line 7: Configuration line invalid (needs URL line first?):
+SITE WARNING: "ISILO.cf" line 6: Configuration line invalid (needs URL line first?):
+SITE WARNING: "ISILO.cf" line 7: Configuration line invalid (needs URL line first?):
+SITE WARNING: "linux_gazette.site" line 3: Redirected to http://www.linuxgazette.com/ from http://www.linuxgazette.com/lg_frontpage.html
+SITE WARNING: "PLUCKER.cf" line 6: Configuration line invalid (needs URL line first?):
+SITE WARNING: "PLUCKER.cf" line 7: Configuration line invalid (needs URL line first?):
+SITE WARNING: "unblinking.site" line 11: Unrecognised:
+SITE WARNING: "world_new_york.site" line 1: HTTP GET failed: 404 Not Found (http://www.worldnewyork.org/avantgo.php)
+SITE PATTERN CHANGED WARNINGS:
+-------------------------------------------------------------------------
+
+SITE WARNING: "crypto_gram.site" line 1: LinksStart pattern "<TABLE BORDER=0 CELLPADDING=5 CELLSPACING=5>" not found in page http://www.counterpane.com/crypto-gram.html
+SITE WARNING: "freshmeat_articles.site" line 1: LinksStart pattern "-- Content --" not found in page http://freshmeat.net/articles/
+SITE WARNING: "freshmeat.site" line 6: StoryStart pattern "<TABLE CELLSPACING="0" CELLPADDING="3"" not found in page http://freshmeat.net/
+SITE WARNING: "genehack.site" line 1: StoryStart pattern "/universal header" not found in page http://www.genehack.org/
+SITE WARNING: "linux_hu.site" line 1: StoryStart pattern "-- Hirek -----------" not found in page http://www.linux.hu/
+SITE WARNING: "linux_magazine.site" line 1: LinksStart pattern "<TD CLASS="FEATURES" BGCOLOR="CCFFCC" ALIGN="CENTER">" not found in page http://www.linux-mag.com/
+SITE WARNING: "linuxworld.site" line 3: LinksStart pattern "(?i)start features" not found in page http://www.linuxworld.com/linuxworld/home.html
+SITE WARNING: "mandrakeforum.site" line 1: LinksStart pattern "START: Body" not found in page http://www.mandrakeforum.com/
+SITE WARNING: "merlyns_columns.site" line 1: LinksStart pattern "<h2>Columns</h2>" not found in page http://www.stonehenge.com/merlyn/LinuxMag/
+SITE WARNING: "merlyns_columns.site" line 1: LinksStart pattern "<h2>Columns</h2>" not found in page http://www.stonehenge.com/merlyn/WebTechniques/
+SITE WARNING: "plastic.site" line 1: LinksStart pattern "begin index block" not found in page http://www.plastic.com/
+SITE WARNING: "sitescooper_archive.site" line 5: LinksStart pattern "<font.*>date</font>" not found in page http://groups.yahoo.com/group/sitescooper-archive/
+SITE WARNING: "slashdot.site" line 7: LinksStart pattern "&nbsp;<A href=/hof.shtml>hof</A>" not found in page http://slashdot.org/index.pl?light=1&noboxes=1&noicons=1
+SITE WARNING: "tbtf_log.site" line 3: StoryStart pattern "-- created by Blogger! --" not found in page http://tbtf.com/blog/
+SITE WARNING: "the_onion.site" line 5: LinksStart pattern "<FRAMESET" not found in page http://www.theonion.com/
+SITE WARNING: "the_register.site" line 3: LinksStart pattern "<ILAYER id=ad1 visibility=hide(?s:.*?)</ILAYER>" not found in page http://www.theregister.co.uk/content/29/index.html
+SITE WARNING: "user_friendly.site" line 2: StoryStart pattern "<!--Start Current Strip-->" not found in page http://www.userfriendly.org/static/
+SITE WARNING: "weekly_news.site" line 1: LinksStart pattern "-- Leading stuff goes here --" not found in page http://www.lwn.net/
+
+

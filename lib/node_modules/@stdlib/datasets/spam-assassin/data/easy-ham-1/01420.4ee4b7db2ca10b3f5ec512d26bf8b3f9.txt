@@ -1,0 +1,43 @@
+Return-Path: skip@pobox.com
+Delivery-Date: Fri Sep  6 03:41:13 2002
+From: skip@pobox.com (Skip Montanaro)
+Date: Thu, 5 Sep 2002 21:41:13 -0500
+Subject: [Spambayes] test sets?
+In-Reply-To: <LNBBLJKPBEHFEDALKOLCIEFEBCAB.tim.one@comcast.net>
+References: <15735.50243.135743.32180@12-248-11-90.client.attbi.com>
+        <LNBBLJKPBEHFEDALKOLCIEFEBCAB.tim.one@comcast.net>
+Message-ID: <15736.5577.157228.229200@12-248-11-90.client.attbi.com>
+
+
+    Tim> I gave it all the thought it deserved <wink>.  It would be
+    Tim> wonderful to get several people cranking on the same test data, and
+    Tim> I'm all in favor of that.  OTOH, my Data/ subtree currently has
+    Tim> more than 35,000 files slobbering over 134 million bytes -- even if
+    Tim> I had a place to put that much stuff, I'm not sure my ISP would let
+    Tim> me email it in one msg <wink>.
+
+Do you have a dialup or something more modern <wink>?  134MB of messages
+zipped would probably compress pretty well - under 50MB I'd guess with all
+the similarity in the headers and such.  You could zip each of the 10 sets
+individually and upload them somewhere.
+
+    Tim> Can you think of anyplace to get a large, shareable ham sample
+    Tim> apart from a public mailing list?  Everyone's eager to share their
+    Tim> spam, but spam is so much alike in so many ways that's the easy
+    Tim> half of the data collection problem.
+
+How about random sampling lots of public mailing lists via gmane or
+something similar, manually cleaning it (distributing that load over a
+number of people) and then relying on your clever code and your rebalancing
+script to help further cleanse it?  The "problem" with the ham is it tends
+to be much more tied to one person (not just intimate, but unique) than the
+spam.
+
+I save all incoming email for ten days (gzipped mbox format) before it rolls
+over and disappears.  At any one time I think I have about 8,000-10,000
+messages.  Most of it isn't terribly personal (which I would cull before
+passing along anyway) and much of it is machine-generated, so would be of
+marginal use.  Finally, it's all ham-n-spam mixed together.  Do we call that
+an omelette or a Denny's Grand Slam?
+
+Skip

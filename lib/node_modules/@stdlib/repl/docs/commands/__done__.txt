@@ -1,0 +1,25 @@
+
+__done__( [error[, results]] )
+    Callback invoked to confirm that an asynchronous command has finished
+    executing.
+
+    This callback should only be called *once* per command.
+
+    In environments supporting async/await, top-level await commands are not
+    required to invoke this callback.
+
+    Parameters
+    ----------
+    error: Error|null (optional)
+        Error, if an error occurred during execution, and `null`, if no error
+        occurred.
+
+    results: any (optional)
+        Command results.
+
+    Examples
+    --------
+    > function onTimeout() { __done__( null, 'foo' ) };
+    > var res = setTimeout( onTimeout, 1000 )
+    [ <number>, 'foo' ]
+

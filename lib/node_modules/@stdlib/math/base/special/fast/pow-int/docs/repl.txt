@@ -1,0 +1,42 @@
+
+{{alias}}( x, y )
+    Evaluates the exponential function given a signed 32-bit integer exponent.
+
+    This function is not recommended for high-precision applications due to
+    error accumulation.
+
+    If provided a negative exponent, the function first computes the reciprocal
+    of the base and then evaluates the exponential function. This can introduce
+    significant error.
+
+    Parameters
+    ----------
+    x: number
+        Base.
+
+    y: integer
+        Signed 32-bit integer exponent.
+
+    Returns
+    -------
+    out: number
+        Function value.
+
+    Examples
+    --------
+    > var v = {{alias}}( 2.0, 3 )
+    8.0
+    > v = {{alias}}( 3.14, 0 )
+    1.0
+    > v = {{alias}}( 2.0, -2 )
+    0.25
+    > v = {{alias}}( 0.0, 0 )
+    1.0
+    > v = {{alias}}( -3.14, 1 )
+    -3.14
+    > v = {{alias}}( NaN, 0 )
+    NaN
+
+    See Also
+    --------
+

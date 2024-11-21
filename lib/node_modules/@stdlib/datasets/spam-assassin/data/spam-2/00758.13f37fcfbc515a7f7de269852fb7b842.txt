@@ -1,0 +1,162 @@
+From fork-admin@xent.com  Fri Jul 19 03:09:29 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 961D843F90
+	for <jm@localhost>; Thu, 18 Jul 2002 22:09:28 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 03:09:28 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6J1vtJ22175 for <jm@jmason.org>;
+    Fri, 19 Jul 2002 02:57:56 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 192D129409D; Thu, 18 Jul 2002 18:47:19 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from server.WMF (unknown [4.41.0.174]) by xent.com (Postfix)
+    with ESMTP id EEC55294098 for <fork@xent.com>; Thu, 18 Jul 2002 18:47:16
+    -0700 (PDT)
+Received: from yoda (ip54.wh.mntn.net [64.114.84.54]) by server.WMF with
+    SMTP (Microsoft Exchange Internet Mail Service Version 5.5.2653.13) id
+    3PC5X6R8; Thu, 18 Jul 2002 17:56:45 -0700
+From: majormedical@excite.com
+Subject: Major Medical Breakthrough Huge Profit Potential
+To: fork@spamassassin.taint.org
+Date: Thu, 18 Jul 2002 17:54:04 -0700
+X-Priority: 3
+X-Library: Indy 8.0.25
+Message-Id: <20020719014716.EEC55294098@xent.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Friends of Rohit Khare <fork.xent.com>
+X-Beenthere: fork@spamassassin.taint.org
+Content-Type: text/html;
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META content="text/html; charset=iso-8859-1" http-equiv=Content-Type>
+<META content="MSHTML 5.00.3315.2870" name=GENERATOR>
+<STYLE></STYLE>
+</HEAD>
+<BODY bgColor=#ffffff>
+<DIV><FONT face=Arial size=2>
+<TABLE align=center width="80%">
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE width="85%">
+        <TBODY>
+        <TR>
+            <TD>&nbsp;</TD>
+          <TD align=middle><FONT face=arial size=+1><B>Major Medical 
+            Breakthrough<BR>Huge Profit Potential</B></FONT></TD></TR></TBODY></TABLE>
+      <P align=justify><FONT face=arial>Imagine yourself as part owner of the 
+      most interesting, full service state-of-the-art medical facility, equipped 
+      with the most sophisticated and effective scanning diagnostic tools 
+      available today.</FONT></P>
+      <P align=justify><FONT face=arial>Electron Beam Tomography is a 
+      cutting-edge diagnostic technology capable of providing a 
+      crystal-ball-like look into your medical future. This technology has been 
+      featured on Oprah, Larry King, Good Morning America, and USA 
+      Today.</FONT></P>
+      <P align=justify><FONT face=arial>EBT Scans are now covered by most health 
+      insurance companies and HMOs, causing an explosion in usership and 
+      exceptionally high demand for this procedure.</FONT></P>
+      <P align=justify><FONT face=arial>EBT can identify heart disease years 
+      before a treadmill test would show an abnormality and many years before a 
+      heart attack might occur.</FONT></P>
+      <P align=justify><FONT face=arial>A tremendous improvement upon standard 
+      computerized tomography, also known as CT or CAT Scan, Electron Beam 
+      Tomography provides images of a beating heart up to 10 times faster and 
+      clearer than other conventional scanners.</FONT></P>
+      <P align=justify><FONT face=arial>The dramatic capabilities of this 
+      spectacular technology should provide an extraordinary investment 
+      opportunity for those establishing state-of-the-art outpatient clinics, in 
+      order to provide the EBT body scan procedures to health conscious 
+      Americans. Projected 10-year return of 916%.</FONT></P>
+      <P align=justify><FONT face=arial>A full-body scan using this technology 
+      can also be used to detect osteoporosis, aneurisms, emphysema, gallstones, 
+      hiatal hernia, degenerative spine conditions, as well as cancer of the 
+      lungs, liver, kidneys, and colon.</FONT></P>
+      <P align=justify><FONT face=arial>Imagine being instrumental in bringing 
+      the most revolutionary diagnostic and preventative medical device to the 
+      marketplace.</FONT></P>
+      <P align=justify><FONT face=arial>$15K minimum investment required. 
+      Serious inquiries only.</FONT></P>
+      <P><FONT face=arial>To recieve your free video. Fill out this form.
+      <CENTER><form method="POST" action="mailto:pedrospanks@phantasmo.com">
+              <center>
+                <table>
+                  <tr> 
+                    <td> 
+                      <p><font face="Arial, Helvetica, sans-serif">Name:</font></p>
+                    </td>
+                    <td> 
+                      <input type="TEXT" name="Name" size="30">
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td> 
+                      <p><font face="Arial, Helvetica, sans-serif">Phone Number<br>
+                        (including area code):</font></p>
+                    </td>
+                    <td valign="middle"> 
+                      <input type="TEXT" name="Phone" size="30">
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td> 
+                      <p><font face="Arial, Helvetica, sans-serif">Mailing Address:</font></p>
+                    </td>
+                    <td> 
+                      <input type="TEXT" name="mailingaddress" size="50">
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td> 
+                      <p><font face="Arial, Helvetica, sans-serif">Province / 
+                        State:</font></p>
+                    </td>
+                    <td> 
+                      <input type="TEXT" name="province" size="30">
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td height="29"> 
+                      <p><font face="Arial, Helvetica, sans-serif">Postal Code</font></p>
+                    </td>
+                    <td height="29"> 
+                      <input type="TEXT" name="postalcode" size="30">
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td> 
+                      <p><font face="Arial, Helvetica, sans-serif"></font></p>
+                    </td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr> 
+                    <td> 
+                      <p><font face="Arial, Helvetica, sans-serif">E-mail Address:</font></p>
+                    </td>
+                    <td> 
+                      <input type="TEXT" name="Email" size="30">
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td><font face="Arial, Helvetica, sans-serif"></font></td>
+                    <td>&nbsp;</td>
+                  </tr>
+                </table>
+                <br>
+                <input type="SUBMIT" value="      OK      " name="SUBMIT">
+              </center>
+            </form>
+        <br><br><br><font size="1">To be removed from this list please reply with UNSUBSCRIBE.  Thank you.</font></CENTER></FONT></TD></TR></TBODY></TABLE></FONT></DIV></BODY></HTML>
+
+
+http://xent.com/mailman/listinfo/fork
+
+

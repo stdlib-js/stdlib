@@ -1,0 +1,38 @@
+From rssfeeds@jmason.org  Thu Sep 26 16:33:57 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 2E3F016F03
+	for <jm@localhost>; Thu, 26 Sep 2002 16:33:57 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 16:33:57 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8QFSBg24408 for
+    <jm@jmason.org>; Thu, 26 Sep 2002 16:28:11 +0100
+Message-Id: <200209261528.g8QFSBg24408@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: boingboing <rssfeeds@spamassassin.taint.org>
+Subject: Gearheads and bunnyhuggers in the OED
+Date: Thu, 26 Sep 2002 15:28:11 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://boingboing.net/#85494694
+Date: Not supplied
+
+Some of the words in the new shorter Oxford English Dictionary: 
+
+    Asylum seeker, economic migrant, bed-blocking, and stakeholder pension 
+    reflect the serious side of life; bunny-hugger (a conservationist or animal 
+    lover), chick flick (a film appealing to women), gearhead (a car 
+    enthusiast), and Grinch (a spoilsport or killjoy) are entries in a more 
+    light-hearted vein. Several entries are testaments to the popularity of 
+    science fiction, among them Tardis from the TV series Doctor Who, Jedi from 
+    Star Wars, and Klingon from Star Trek.  
+
+Link[1] Discuss[2] (_Thanks, Mark!_)
+
+[1] http://www.askoxford.com/worldofwords/wordfrom/shorter/
+[2] http://www.quicktopic.com/boing/H/2tC5tCQqCRD3b
+
+

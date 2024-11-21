@@ -1,0 +1,43 @@
+Return-Path: guido@python.org
+Delivery-Date: Fri Sep  6 15:31:22 2002
+From: guido@python.org (Guido van Rossum)
+Date: Fri, 06 Sep 2002 10:31:22 -0400
+Subject: [Spambayes] Deployment
+Message-ID: <200209061431.g86EVM114413@pcp02138704pcs.reston01.va.comcast.net>
+
+Quite independently from testing and tuning the algorithm, I'd like to
+think about deployment.
+
+Eventually, individuals and postmasters should be able to download a
+spambayes software distribution, answer a few configuration questions
+about their mail setup, training and false positives, and install it
+as a filter.
+
+A more modest initial goal might be the production of a tool that can
+easily be used by individuals (since we're more likely to find
+individuals willing to risk this than postmasters).
+
+There are many ways to do this.  Some ideas:
+
+- A program that acts both as a pop client and a pop server.  You
+  configure it by telling it about your real pop servers.  You then
+  point your mail reader to the pop server at localhost.  When it
+  receives a connection, it connects to the remote pop servers, reads
+  your mail, and gives you only the non-spam.  To train it, you'd only
+  need to send it the false negatives somehow; it can assume that
+  anything is ham that you don't say is spam within 48 hours.
+
+- A server with a custom protocol that you send a copy of a message
+  and that answers "spam" or "ham".  Then you have a little program
+  that is invoked e.g. by procmail that talks to the server.  (The
+  server exists so that it doesn't have to load the pickle with the
+  scoring database for each message.  I don't know how big that pickle
+  would be, maybe loading it each time is fine.  Or maybe
+  marshalling.)
+
+- Your idea here.
+
+Takers?  How is ESR's bogofilter packaged?  SpamAssassin?  The Perl
+Bayes filter advertised on slashdot?
+
+--Guido van Rossum (home page: http://www.python.org/~guido/)

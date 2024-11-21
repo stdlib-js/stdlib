@@ -1,0 +1,93 @@
+From ilug-admin@linux.ie  Tue Jul 30 00:21:44 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 17658440EE
+	for <jm@localhost>; Mon, 29 Jul 2002 19:21:44 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 30 Jul 2002 00:21:44 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6TNDuq24718 for
+    <jm-ilug@jmason.org>; Tue, 30 Jul 2002 00:13:56 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id AAA05654; Tue, 30 Jul 2002 00:11:57 +0100
+Received: from flapjack.homeip.net (r96-10.bas1.srl.dublin.eircom.net
+    [159.134.96.10]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id AAA05627
+    for <ilug@linux.ie>; Tue, 30 Jul 2002 00:11:49 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host r96-10.bas1.srl.dublin.eircom.net
+    [159.134.96.10] claimed to be flapjack.homeip.net
+Received: from localhost (localhost [127.0.0.1]) by flapjack.homeip.net
+    (8.12.3/8.12.3) with ESMTP id g6TNBgV3062243 for <ilug@linux.ie>;
+    Tue, 30 Jul 2002 00:11:43 +0100 (IST) (envelope-from
+    nick-lists@netability.ie)
+Subject: Re: [ILUG] ipfw vs ipchains vs iptables
+From: Nick Hilliard <nick-lists@netability.ie>
+To: ilug@linux.ie
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8
+Date: 30 Jul 2002 00:11:42 +0100
+Message-Id: <1027984303.58664.60.camel@flapjack.netability.ie>
+MIME-Version: 1.0
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+[warning: veering further off topic]
+
+Philip Reynolds wrote:
+> Paul Jakma's [paul@clubi.ie] 67 lines of wisdom included:
+>>i thought the firewalling code on all the BSDs was fairly related -
+>>sorry. So FreeBSD's ipfw is not encumbered in the same way the old
+>>OBSD firewalling was?
+
+ipfw was written specifically for FreeBSD under a bsd license by Luigi
+Rizzo, who's one of the FreeBSD whizzes.  All three of the BSD's
+packaged IPFilter, which has been around for donkeys years and which has
+a slightly different feature set to ipfw.
+
+However, last year the author of IPFilter (Darren Reed) changed the
+license on development branches of ipfilter to prohibit redistribution,
+although official releases would still be kept under the old license. 
+This policy got up the nose of Theo de Raadt (lots of things do, which
+is why OpenBSD exists in the first place), so OpenBSD re-invented the
+wheel and called their firewall "pf", under a full-time BSD license.   
+
+The standard release versions of ipfilter are unencumbered, as always.
+
+> Nope, indeed IPFW2 has just been rolled out into -STABLE. (-STABLE
+> is a stable branch of the code that has been rolled into -CURRENT
+> first. It's basically a major release, that's still a work in
+> progress)
+
+I'm not so sure that ipfw2 is really ready for production yet, having
+only been mfc'd last wednesday.  It certainly adds some nice syntactic
+sugar, and is apparently much faster for certain types of complex
+rulesets.  It will be good once it's had some time to settle down a
+little.
+
+>>i've no experience of ipfw. (closest i've come is looking at IPFilter 
+>>for IRIX - but it had a problem in that it wasnt maintained 
+>>anymore. however, while the englishy syntax is nice, i dont think 
+>>iptables command <args> syntax is a big obstacle).
+
+ipfilter is quite nice, and is my current o/s firewall of choice.  It
+has some nice features like the ability to save and restore state so
+that connections are persistent across reboots, and its logging is
+marginally better organised than ipfw's.  It's also very mature code,
+which appeals to the rather conservative tastes of my old age.
+
+Nick
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

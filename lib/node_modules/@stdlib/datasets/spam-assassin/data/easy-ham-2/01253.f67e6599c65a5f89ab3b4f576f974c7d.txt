@@ -1,0 +1,79 @@
+From rpm-list-admin@freshrpms.net  Mon Aug 19 11:01:47 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D4E5944186
+	for <jm@localhost>; Mon, 19 Aug 2002 05:53:58 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:53:58 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7J82T613505 for
+    <jm-rpm@jmason.org>; Mon, 19 Aug 2002 09:02:29 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7J804J25520; Mon, 19 Aug 2002 10:00:05
+    +0200
+Received: from mail.aspect.net
+    (postfix@adsl-65-69-210-161.dsl.hstntx.swbell.net [65.69.210.161]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g7J7wwJ24023 for
+    <rpm-list@freshrpms.net>; Mon, 19 Aug 2002 09:58:58 +0200
+Received: from skadi.local. (pcp185108pcs.swedsb01.nj.comcast.net
+    [68.46.52.124]) by mail.aspect.net (Postfix) with ESMTP id 20A176D23C for
+    <rpm-list@freshrpms.net>; Mon, 19 Aug 2002 02:49:52 -0500 (CDT)
+Subject: Re: Limbo beta 2 ?
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+MIME-Version: 1.0 (Apple Message framework v543)
+From: Julian Missig <julian@jabber.org>
+To: rpm-zzzlist@freshrpms.net
+Content-Transfer-Encoding: 7bit
+In-Reply-To: <20020813144303.7b192f78.matthias@egwn.net>
+Message-Id: <82544E89-B349-11D6-B9B3-000393D60714@jabber.org>
+X-Mailer: Apple Mail (2.543)
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Mon, 19 Aug 2002 03:58:55 -0400
+Date: Mon, 19 Aug 2002 03:58:55 -0400
+
+I realize this is an old thread, but I just had to comment:
+
+On Tuesday, Aug 13, 2002, at 08:43 US/Eastern, Matthias Saou wrote:
+
+> Once upon a time, Dave wrote :
+>
+>> Eeeek... I hope they aren't intending to release a new RH with a new 
+>> gcc
+>> which hasn't yet been released (again). Bad enough the first time, and
+>> I'm sure it gave RedHat a lot of embarrassment.
+>
+> Not really, it should have given more embarrassment to sloppy C++
+> programmers although they often were the ones bashing on gcc 2.96...
+
+A lot of C++ programmers, myself included, were /not/ complaining about 
+gcc's stricter adherence to the specification (which, by the way, a lot 
+of kernel programmers complain about with gcc 3.x -- at least, the 
+patch authors I've talked to hate gcc 3) -- gcc "2.96" had a lot of 
+bugs. A lot. It crashed on me many times while working on my projects. 
+Later "versions" of "2.96" fixed this, but it was well after 3.0 was 
+released that it finally seemed reasonably stable -- and at that point, 
+I just wanted to use 3.0, so I did.
+
+Julian
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

@@ -1,0 +1,22 @@
+[
+	"console",
+	"external",
+	"frame",
+	"frameElement",
+	"frames",
+	"innerHeight",
+	"innerWidth",
+	"outerHeight",
+	"outerWidth",
+	"pageXOffset",
+	"pageYOffset",
+	"parent",
+	"scrollLeft",
+	"scrollTop",
+	"scrollX",
+	"scrollY",
+	"self",
+	"webkitIndexedDB",
+	"webkitStorageInfo",
+	"window"
+]

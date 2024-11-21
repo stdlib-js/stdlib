@@ -1,0 +1,158 @@
+From rpm-list-admin@freshrpms.net  Mon Aug 26 15:21:33 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 35DE544174
+	for <jm@localhost>; Mon, 26 Aug 2002 10:17:46 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 15:17:46 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7P0glZ25869 for
+    <jm-rpm@jmason.org>; Sun, 25 Aug 2002 01:42:47 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7P0f2J13996; Sun, 25 Aug 2002 02:41:02
+    +0200
+Received: from imf17bis.bellsouth.net (mail217.mail.bellsouth.net
+    [205.152.58.157]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g7P0eEJ05587 for <rpm-list@freshrpms.net>; Sun, 25 Aug 2002 02:40:14 +0200
+Received: from adsl-157-17-129.msy.bellsouth.net ([66.157.17.129]) by
+    imf17bis.bellsouth.net (InterMail vM.5.01.04.19
+    201-253-122-122-119-20020516) with ESMTP id
+    <20020825004145.MZZJ23893.imf17bis.bellsouth.net@adsl-157-17-129.msy.bellsouth.net>
+    for <rpm-list@freshrpms.net>; Sat, 24 Aug 2002 20:41:45 -0400
+Subject: Re: Fw: Re: When are we going to get. [making ALSA rpms]
+From: Lance <lance_tt@bellsouth.net>
+To: FreshRPMs List <rpm-zzzlist@freshrpms.net>
+In-Reply-To: <20020824.rme.78600400@www.dudex.net>
+References: <20020824.rme.78600400@www.dudex.net>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8 (1.0.8-6)
+Message-Id: <1030236009.27767.5.camel@localhost.localdomain>
+MIME-Version: 1.0
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: 24 Aug 2002 19:40:08 -0500
+Date: 24 Aug 2002 19:40:08 -0500
+
+Thanks for this information.  I gave Alsa a try, couldn't figure out how
+to enable digital out, although I'm sure if I put enough time into it,
+could have gotten it working.  Also when playing mp3s in analog mode,
+every time I switched between mp3s there was a bit of static.  Noticed a
+new distribution geared towards audio applications, AGNULA
+(http://www.agnula.org/) uses Alsa as well.  Seems though the latest
+open source emu10k1 drivers (SBLive! 5.1) work fair enough.  Anyone else
+experience these problems with Alsa?  Are there alot of people on this
+list using Alsa?
+
+Regards,
+
+Lance
+
+On Sat, 2002-08-24 at 17:45, Angles Puglisi wrote:
+> FYI, This is how I make my ALSA rpms ... some people on the (null) list did not
+> realize it was pretty easy.
+> 
+> btw, I do this lot since I've upgraded from RH7.3 to Limbo1 to Limbo2 to Null all in
+> a week (probably).
+> 
+> forward - original mail:
+>   From "Angles Puglisi" <angles@aminvestments.com>
+>   Date 08/24/2002 - 06:38:03 pm
+>   Subject Re: When are we going to get....
+> ----
+> 
+
+> From:  Angles  Puglisi <angles@aminvestments.com>
+> To: limbo-list@spamassassin.taint.org
+> Subject: Re: When are we going to get....
+> Date: 24 Aug 2002 22:40:40 +0000
+> 
+> OK, I do this every time I update a kernel.
+> 
+> The 1st time I added ALSA, I tried a non-root rpom build but the DEV things were not
+> made. Other than that, I bet you could do non-root. The following can be scripted
+> easily.
+> 
+> 1. get (a) alsa-drivers, (b) alas-lib, and (c) alsa-utils tarballs (if upgrading the
+> kernel then you probably have them from your last install).
+> 2. unpack them somewhere.
+> 3. for each of them, go to the top directory of the unpacked tarball, and do
+> ../configure, then look in (I'm going by memory) TOPDIR/utils/* you should see a spec
+> file there. Do this for the 3 tarballs and you get 3 spec files.
+> 
+> 4. put the source tarballs in SOURCES and the spec files in SPECS, go in order from
+> a, b, then c, doing
+>  "rpmbuild -ba SPECS/alsa-[X].spec; rpm -Uvh RPMS/i386/alsa-[X].rpm"
+> 
+> 5. do that in order for the 3 spec files and you have just installed the alsa
+> drivers on your system. The 1st time you do this you need to put the correct stuff
+> in your modules.conf file (may take some research) then you get the alsa driver and
+> OSS compat capabilities, or you can choose not to use the OOS compat stuff.
+> 
+> Script making the spec, then building and upgrading, as above, and you have
+> "no-sweat" ALSA.
+> 
+> NOTE: the (null) rpmbuild did take some tweaking, it does a check for files in the
+> buildroot that you don't specify in your files section. In this case there is an
+> extra file (going by memory) "/include/sys/asound.h". Add a line at the end on the
+> "install" section of the spec file to delete that file and you are good to go.
+> 
+> Gordon Messmer (yinyang@eburg.com) wrote*:
+> >
+> >On Fri, 2002-08-23 at 03:41, Matthias Saou wrote:
+> >>
+> >> Probably when Red Hat Linux gets a 2.6 kernel ;-) Until then, a few places
+> >> provide good quality alsa packages, but indeed you still have to patch and
+> >> recompile your kernel.
+> >
+> >Not so.  Alsa is build-able independently of the kernel.
+> >
+> >> Maybe some day I'll try ALSA (never done it yet), and that day you can
+> >> expect all needed packages to appear on freshrpms.net :-)
+> >
+> >I'd be interested in working with you on that if you want those
+> >packages.
+> >
+> >
+> >
+> >
+> >_______________________________________________
+> >Limbo-list mailing list
+> >Limbo-list@redhat.com
+> >
+> 
+> --
+> That's "angle" as in geometry.
+-- 
+:
+####[ Linux One Stanza Tip (LOST) ]###########################
+
+Sub : Extracting lines X to Y in a text file         LOST #261
+
+Use sed ... Syntax: [$sed -n 'X,Yp' < textfile.txt]. Following
+will extract lines 5-10 from textin.fil to textout.fil ... 
+$sed -n '5,10p' < textin.fil > textout.fil
+
+####<bish@nde.vsnl.net.in>####################################
+:
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

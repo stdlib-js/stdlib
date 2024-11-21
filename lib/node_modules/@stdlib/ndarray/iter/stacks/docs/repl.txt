@@ -1,0 +1,56 @@
+
+{{alias}}( x, dims[, options] )
+    Returns an iterator which iterates over each subarray in a stack of
+    subarrays according to a list of specified stack dimensions.
+
+    If an environment supports Symbol.iterator, the returned iterator is
+    iterable.
+
+    If an environment supports Symbol.iterator, the function explicitly does not
+    invoke an ndarray's `@@iterator` method, regardless of whether this method
+    is defined.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray for which to create the iterator. Must have at least
+        `dims.length+1` dimensions.
+
+    dims: Array<integer>
+        Indices of dimensions to stack. If a dimension index is less than zero,
+        the index is resolved relative to the last dimension, with the last
+        dimension corresponding to the value `-1`. The list of indices must be
+        unique and resolve to dimension indices sorted in ascending order.
+
+    options: Object (optional)
+        Options.
+
+    options.readonly: boolean (optional)
+        Boolean indicating whether returned ndarray views should be read-only.
+        If the input ndarray is read-only, setting this option to `false` raises
+        an exception. Default: true.
+
+    Returns
+    -------
+    iterator: Object
+        Iterator.
+
+    iterator.next(): Function
+        Returns an iterator protocol-compliant object containing the next
+        iterated value (if one exists) and a boolean flag indicating whether the
+        iterator is finished.
+
+    iterator.return( [value] ): Function
+        Finishes an iterator and returns a provided value.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ [ 1, 2 ], [ 3, 4 ] ] ] );
+    > var it = {{alias}}( x, [ 1, 2 ] );
+    > var v = it.next().value;
+    > {{alias:@stdlib/ndarray/to-array}}( v )
+    [ [ 1, 2 ], [ 3, 4 ] ]
+
+    See Also
+    --------
+

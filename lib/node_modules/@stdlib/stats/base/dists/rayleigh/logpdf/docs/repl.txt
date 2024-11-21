@@ -1,0 +1,64 @@
+
+{{alias}}( x, sigma )
+    Evaluates the logarithm of the probability density function (PDF) for a
+    Rayleigh distribution with scale parameter `sigma` at a value `x`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided a negative value for `sigma`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    sigma: number
+        Scale parameter.
+
+    Returns
+    -------
+    out: number
+        Evaluated logPDF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.3, 1.0 )
+    ~-1.249
+    > y = {{alias}}( 2.0, 0.8 )
+    ~-1.986
+    > y = {{alias}}( -1.0, 0.5 )
+    -Infinity
+    > y = {{alias}}( 0.0, NaN )
+    NaN
+    > y = {{alias}}( NaN, 2.0 )
+    NaN
+    // Negative scale parameter:
+    > y = {{alias}}( 2.0, -1.0 )
+    NaN
+
+
+{{alias}}.factory( sigma )
+    Returns a function for evaluating the logarithm of the probability density
+    function (PDF) of a Rayleigh distribution with scale parameter `sigma`.
+
+    Parameters
+    ----------
+    sigma: number
+        Scale parameter.
+
+    Returns
+    -------
+    logpdf: Function
+        Logarithm of probability density function (PDF).
+
+    Examples
+    --------
+    > var mylogpdf = {{alias}}.factory( 4.0 );
+    > var y = mylogpdf( 6.0 )
+    ~-2.106
+    > y = mylogpdf( 4.0 )
+    ~-1.886
+
+    See Also
+    --------
+

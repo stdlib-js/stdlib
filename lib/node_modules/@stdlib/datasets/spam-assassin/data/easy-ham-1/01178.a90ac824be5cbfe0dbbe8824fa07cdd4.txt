@@ -1,0 +1,115 @@
+From exmh-users-admin@redhat.com  Wed Oct  9 22:41:24 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id C2C7216F1F
+	for <jm@localhost>; Wed,  9 Oct 2002 22:40:11 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 09 Oct 2002 22:40:11 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g99IsLK17087 for
+    <jm-exmh@jmason.org>; Wed, 9 Oct 2002 19:54:21 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 680E542573; Wed,  9 Oct 2002
+    14:52:10 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 01A0D41EC2
+    for <exmh-users@listman.redhat.com>; Wed,  9 Oct 2002 14:43:06 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g99Ih6H09020 for exmh-users@listman.redhat.com; Wed, 9 Oct 2002
+    14:43:06 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g99Ih6f09015 for
+    <exmh-users@redhat.com>; Wed, 9 Oct 2002 14:43:06 -0400
+Received: from playground.sun.com (playground.Sun.COM [192.9.5.5]) by
+    mx1.redhat.com (8.11.6/8.11.6) with SMTP id g99INJX11053 for
+    <exmh-users@redhat.com>; Wed, 9 Oct 2002 14:23:19 -0400
+Received: from opal.eng.sun.com (inside-swan.sun.com [192.18.43.5]) by
+    playground.sun.com (8.12.7.Beta0+Sun/8.12.7.Beta0) with ESMTP id
+    g99Ih5qh019830 for <exmh-users@redhat.com>; Wed, 9 Oct 2002 11:43:05 -0700
+    (PDT)
+Received: from opal (localhost [127.0.0.1]) by opal.eng.sun.com
+    (8.12.7.Beta0+Sun/8.12.7.Beta0) with ESMTP id g99Ignpd981628 for
+    <exmh-users@redhat.com>; Wed, 9 Oct 2002 11:42:49 -0700 (PDT)
+Message-Id: <200210091842.g99Ignpd981628@opal.eng.sun.com>
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.3
+To: exmh-users@spamassassin.taint.org
+Subject: Re: From
+X-Image-Url: http://playground.sun.com/~jbeck/gif/Misc/john-face.jpg
+In-Reply-To: Your message of
+    "Wed, 09 Oct 2002 12:16:39 MDT."
+    <4226.1034187399@tatanka>
+References: <4226.1034187399@tatanka>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+From: John Beck <jbeck@eng.sun.com>
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Wed, 09 Oct 2002 11:42:49 -0700
+
+James> This is not an exmh problem, but an interaction between sendmail,
+James> Solaris and mh.
+
+Correct.
+
+James> Your sysadmin is wrong.  It is the responsibility of the receiving mail
+James> server to escape lines beginning with "From " if they choose to turn
+James> on that facility.  It is not the responsibility for email clients to
+James> cater to the stupid design of the unix mail spool, and Sun's even more
+James> stupid decision to rely on "Content-length:" instead of dealing with
+James> this problem.  Since mh is unaware of "Content-length:", rcvstore gags
+James> trying to parse messages from the spool.
+
+Also correct.  In fairness, though I cannot defend the Content-Length: header
+as I consider it brain damage in the extreme, Sun inherited this from AT&T.
+
+James> Get your mail administrator to add the "E" flag to your sendmail.
+James> This means you will never see a line beginning with "From ". Any such
+James> line will look like ">From ".
+
+Specifically, you will need to find a line in /etc/mail/sendmail.cf that
+starts with "Mlocal" such as:
+
+[4784] grep ^Mlocal /etc/mail/sendmail.cf
+Mlocal,         P=/usr/lib/mail.local, F=lsDFMAw5:/|@qPSXfmnz9E, S=EnvFromSMTP/HdrFromL, R=EnvToL/HdrToL,
+[4785] 
+
+and make sure that 'E' appears in the long list of flags following "F=".
+If your sys-admin uses m4 to generate sendmail.cf, and any good sys-admin
+should, then here is the magic line for the .mc file:
+
+MODIFY_MAILER_FLAGS(`LOCAL', `+E')dnl
+
+James> You can learn to use procmail, invoking rcvstore directly instead of 
+James> letting sendmail put your incoming mail into the spool.  This avoids
+James> the whole issue.  rcvstore only deals with a single message at a time,
+James> and everything works.
+
+Also correct, though procmail per se is not needed, as other filters (such
+as slocal, which is part of the [n]mh distribution) do the trick just as well.
+
+-- John
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

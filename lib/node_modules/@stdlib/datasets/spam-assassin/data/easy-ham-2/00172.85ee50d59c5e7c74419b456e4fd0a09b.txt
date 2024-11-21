@@ -1,0 +1,68 @@
+From ilug-admin@linux.ie  Wed Jul 31 11:50:18 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id CCAD3440C9
+	for <jm@localhost>; Wed, 31 Jul 2002 06:50:12 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 31 Jul 2002 11:50:12 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6VAjO217063 for
+    <jm-ilug@jmason.org>; Wed, 31 Jul 2002 11:45:24 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA29987; Wed, 31 Jul 2002 11:43:55 +0100
+Received: from homer.jinny.ie ([193.120.171.3]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA29958 for <ilug@linux.ie>; Wed,
+    31 Jul 2002 11:43:49 +0100
+Received: from jlooney.jinny.ie (fw [193.120.171.2]) by homer.jinny.ie
+    (8.9.3/8.11.2) with ESMTP id LAA29865 for <ilug@linux.ie>; Wed,
+    31 Jul 2002 11:43:19 +0100
+Received: (from john@localhost) by jlooney.jinny.ie (8.11.6/8.11.6) id
+    g6VAhn623280 for ilug@linux.ie; Wed, 31 Jul 2002 11:43:49 +0100
+X-Authentication-Warning: jlooney.jinny.ie: john set sender to
+    jlooney@jinny.ie using -f
+Date: Wed, 31 Jul 2002 11:43:49 +0100
+From: "John P. Looney" <valen@tuatha.org>
+To: Irish LUG <ilug@linux.ie>
+Subject: Re: [ILUG] Fwd: Linux Beer Hike
+Message-Id: <20020731104349.GS4594@jinny.ie>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: Irish LUG <ilug@linux.ie>
+References: <A92DB5482F76D51193290002A50A5612015632A9@irsmsx103.ir.intel.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <A92DB5482F76D51193290002A50A5612015632A9@irsmsx103.ir.intel.com>
+User-Agent: Mutt/1.4i
+X-Os: Red Hat Linux 7.3/Linux 2.4.18-3
+X-Url: http://www.redbrick.dcu.ie/~valen
+X-Gnupg-Publickey: http://www.redbrick.dcu.ie/~valen/public.asc
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Wed, Jul 31, 2002 at 11:28:05AM +0100, Satelle, StevenX mentioned:
+> When I was in school they pushed Irish down my throat. I developed a hatred
+> for Irish. I did French for 3 years and German for 6 months, I could
+> (almost) hold a basic conversation. I am proud of the fact that I don't know
+> one word of Irish. 
+
+ Sad, that.
+
+ I felt like that till recently, but now wish that it wasn't rammed down
+my throat like worming tablets. If they hadn't, it is very possible I'd be
+an Irish speaker.
+
+John
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

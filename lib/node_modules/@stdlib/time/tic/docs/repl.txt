@@ -1,0 +1,19 @@
+
+{{alias}}()
+    Returns a high-resolution time.
+
+    The returned array has the following format: `[seconds, nanoseconds]`.
+
+    Returns
+    -------
+    out: Array<integer>
+        High resolution time.
+
+    Examples
+    --------
+    > var t = {{alias}}()
+    [ <number>, <number> ]
+
+    See Also
+    --------
+

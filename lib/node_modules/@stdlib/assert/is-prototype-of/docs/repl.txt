@@ -1,0 +1,34 @@
+
+{{alias}}( value, proto )
+    Tests if an object's prototype chain contains a provided prototype.
+
+    The function returns `false` if provided a primitive value.
+
+    This function is generally more robust than the `instanceof` operator (e.g.,
+    where inheritance is performed without using constructors).
+
+    Parameters
+    ----------
+    value: any
+        Input value.
+
+    proto: Object|Function
+        Prototype.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if a provided prototype exists in a prototype chain.
+
+    Examples
+    --------
+    > function Foo() { return this; };
+    > function Bar() { return this; };
+    > {{alias:@stdlib/utils/inherit}}( Bar, Foo );
+    > var bar = new Bar();
+    > var bool = {{alias}}( bar, Foo.prototype )
+    true
+
+    See Also
+    --------
+

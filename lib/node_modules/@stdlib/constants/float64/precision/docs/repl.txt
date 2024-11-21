@@ -1,0 +1,15 @@
+
+{{alias}}
+    Effective number of bits in the significand of a double-precision floating-
+    point number.
+
+    The effective number of bits is `52` significand bits plus `1` hidden bit.
+
+    Examples
+    --------
+    > {{alias}}
+    53
+
+    See Also
+    --------
+

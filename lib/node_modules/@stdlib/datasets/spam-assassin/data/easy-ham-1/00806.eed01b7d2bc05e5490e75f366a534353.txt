@@ -1,0 +1,62 @@
+From fork-admin@xent.com  Mon Sep 30 13:53:30 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id F2EB116F6D
+	for <jm@localhost>; Mon, 30 Sep 2002 13:49:21 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 30 Sep 2002 13:49:21 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8THHFg20794 for <jm@jmason.org>;
+    Sun, 29 Sep 2002 18:17:15 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 92CD02940B5; Sun, 29 Sep 2002 10:17:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from texas.pobox.com (texas.pobox.com [64.49.223.111]) by
+    xent.com (Postfix) with ESMTP id 2B56E2940A0 for <fork@xent.com>;
+    Sun, 29 Sep 2002 10:16:21 -0700 (PDT)
+Received: from rincewind.pobox.com (unknown [202.56.248.7]) by
+    texas.pobox.com (Postfix) with ESMTP id 6B81A4535D; Sun, 29 Sep 2002
+    13:15:31 -0400 (EDT)
+X-PGP-Dsskey: 0x55FAB8D3
+X-PGP-Rsakey: 0xCAA67415
+Message-Id: <5.1.0.14.2.20020929224244.02d33c50@frodo.hserus.net>
+X-Nil:
+To: Elias <elias@cse.ucsc.edu>, fork@spamassassin.taint.org
+From: Udhay Shankar N <udhay@pobox.com>
+Subject: Re: Content management for MP3s
+In-Reply-To: <3D972433.40804@cse.ucsc.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"; format=flowed
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 29 Sep 2002 22:43:04 +0530
+
+At 09:02 AM 9/29/02 -0700, Elias wrote:
+
+>I'm about to undertake a massive project to index/catalog well over one 
+>thousand CDs that have been ripped to MP3 and set up a server to stream 
+>them to different rooms in the house. (Yes, I own them all, no I'm not 
+>broadcasting them to the 'net.) Can anyone give me some recommendations as 
+>to what (free? opensource?) software is best suited for this task? I know 
+>there are a few FoRKs out there who have tackled this problem before...
+
+See if http://www.jwz.org/gronk/ meets your needs.
+
+Udhay
+
+-- 
+((Udhay Shankar N)) ((udhay @ pobox.com)) ((www.digeratus.com))
+
+

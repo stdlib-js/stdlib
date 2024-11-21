@@ -1,0 +1,70 @@
+From rpm-list-admin@freshrpms.net  Mon Aug 19 10:56:08 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 323D543C37
+	for <jm@localhost>; Mon, 19 Aug 2002 05:48:10 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:48:10 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7GNDP607406 for
+    <jm-rpm@jmason.org>; Sat, 17 Aug 2002 00:13:25 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7GNA3J14877; Sat, 17 Aug 2002 01:10:03
+    +0200
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [66.187.233.31]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7GN9SJ14101 for
+    <rpm-list@freshrpms.net>; Sat, 17 Aug 2002 01:09:28 +0200
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by mx1.redhat.com (8.11.6/8.11.6) with ESMTP id
+    g7GMtTl16158 for <rpm-list@freshrpms.net>; Fri, 16 Aug 2002 18:55:29 -0400
+Received: from pobox.corp.spamassassin.taint.org (pobox.corp.spamassassin.taint.org
+    [172.16.52.156]) by int-mx1.corp.redhat.com (8.11.6/8.11.6) with ESMTP id
+    g7GN9RY12250 for <rpm-list@freshrpms.net>; Fri, 16 Aug 2002 19:09:27 -0400
+Received: from ckk.rdu.spamassassin.taint.org (ckk.rdu.spamassassin.taint.org [172.16.57.72]) by
+    pobox.corp.redhat.com (8.11.6/8.11.6) with ESMTP id g7GN9Ri21864 for
+    <rpm-list@freshrpms.net>; Fri, 16 Aug 2002 19:09:27 -0400
+Subject: Re: advice on 7.3.92 to 7.3.93, and Apt compiling
+From: Chris Kloiber <ckloiber@ckloiber.com>
+To: rpm-zzzlist@freshrpms.net
+In-Reply-To: <20020816.utj.20032800@www.dudex.net>
+References: <20020816.utj.20032800@www.dudex.net>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8 (1.0.8-6)
+Message-Id: <1029539363.3234.48.camel@ckk.rdu.spamassassin.taint.org>
+MIME-Version: 1.0
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: 16 Aug 2002 19:09:23 -0400
+Date: 16 Aug 2002 19:09:23 -0400
+
+On Fri, 2002-08-16 at 04:28, Angles Puglisi wrote:
+> Any sage advice on the most painless way to upgrade from old limbo (.92) to new
+> limbo (.93)?
+
+Format and reinstall. There is no supported upgrade path from beta to
+beta, or from beta to release.
+
+-- 
+Chris Kloiber
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

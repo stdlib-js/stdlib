@@ -1,0 +1,62 @@
+From social-admin@linux.ie  Sat Jul 20 03:08:07 2002
+Return-Path: <social-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 64CB9440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 22:08:07 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 20 Jul 2002 03:08:07 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6K27TJ00951 for
+    <jm+ilug-social@jmason.org>; Sat, 20 Jul 2002 03:07:29 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id DAA12080; Sat, 20 Jul 2002 03:06:30 +0100
+Received: from ziplip.com ([12.30.255.5]) by lugh.tuatha.org (8.9.3/8.9.3)
+    with SMTP id DAA12031; Sat, 20 Jul 2002 03:06:19 +0100
+From: freesixpence1883@yahoo.com
+X-Authentication-Warning: lugh.tuatha.org: Host [12.30.255.5] claimed to
+    be ziplip.com
+Date: Fri, 19 Jul 2002 22:30:47 -0500
+X-Mailer: X-Mailer: QUALCOMM Windows Eudora Pro Version 4.1
+To: social@linux.ie
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7BIT
+Reply-To: barterinfo@btamail.net.cn
+Message-Id: <i2s42n53it4o.e4751ra4227e1fmat@ziplip.com>
+Cc: airlied@linux.ie, cork@linux.ie, social@linux.ie
+Subject: [ILUG-Social] We want to trade with you
+Sender: social-admin@linux.ie
+Errors-To: social-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group social events <social.linux.ie>
+X-Beenthere: social@linux.ie
+
+Why Spend Your Hard Earned Cash?
+
+Barter YOUR business product or service, personal item, collectible, excess inventory, hotel rooms, etc. for items and services YOU NEED.......SAVE YOUR CASH!!!!!
+
+
+Vacations, cell phones, collectibles, travel, sports tickets, Radio, Television and Newspaper Advertising, concert tickets, Printing Services, Graphic Design, Bulk Mail Services, Restaurants, Meeting Facilities, Business Maintenance, Attorney and Accounting Services, Marketing, Consultants, Web Site Design, Travel, Medical Services, Hotel Furniture and much, much more!
+
+
+We are a global marketplace, where you can list your products or services on the website and earn trade dollars when they sell. Use these dollars to purchase what you need. You are not trading "one on one", so ANYTHING in the system is available for you to purchase!! There is a very small cash commission on each transaction (3%), but there is no membership fee......its FREE.......there are no monthly fees, no listing fees, no renewal fees.
+
+WE GIVE YOU A $1500 CREDIT LINE to start immediately!!!
+
+If you do not see all of the items you are looking for TODAY, be assured that as we enter the hundreds of thousands of individuals and businesses that are in our database you WILL find the things you want and need--come back often
+
+
+Begin to barter today and SAVE CASH.......it will be the best thing you ever did!
+
+
+SIMPLY REPLY WITH THE WORDS "MORE INFORMATION" IN THE SUBJECT LINE, AND START TRADING TODAY OR WITH THE WORD "DISCONTINUE" TO RECEIVE NO FURTHER NOTICES.
+
+
+-- 
+Irish Linux Users' Group Social Events: social@linux.ie
+http://www.linux.ie/mailman/listinfo/social for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

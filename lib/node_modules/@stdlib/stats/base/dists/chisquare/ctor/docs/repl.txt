@@ -1,0 +1,86 @@
+
+{{alias}}( [k] )
+    Returns a  chi-squared distribution object.
+
+    Parameters
+    ----------
+    k: number (optional)
+        Degrees of freedom. Must be greater than `0`. Default: `1.0`.
+
+    Returns
+    -------
+    chisquare: Object
+        Distribution instance.
+
+    chisquare.k: number
+        Degrees of freedom. If set, the value must be greater than `0`.
+
+    chisquare.entropy: number
+        Read-only property which returns the differential entropy.
+
+    chisquare.kurtosis: number
+        Read-only property which returns the excess kurtosis.
+
+    chisquare.mean: number
+        Read-only property which returns the expected value.
+
+    chisquare.median: number
+        Read-only property which returns the median.
+
+    chisquare.mgf: Function
+        Evaluates the moment-generating function (MGF).
+
+    chisquare.mode: number
+        Read-only property which returns the mode.
+
+    chisquare.skewness: number
+        Read-only property which returns the skewness.
+
+    chisquare.stdev: number
+        Read-only property which returns the standard deviation.
+
+    chisquare.variance: number
+        Read-only property which returns the variance.
+
+    chisquare.cdf: Function
+        Evaluates the cumulative distribution function (CDF).
+
+    chisquare.pdf: Function
+        Evaluates the probability density function (PDF).
+
+    chisquare.quantile: Function
+        Evaluates the quantile function at probability `p`.
+
+    Examples
+    --------
+    > var chisquare = {{alias}}( 6.0 );
+    > chisquare.k
+    6.0
+    > chisquare.entropy
+    ~2.541
+    > chisquare.kurtosis
+    2.0
+    > chisquare.mean
+    6.0
+    > chisquare.median
+    ~5.348
+    > chisquare.mode
+    4.0
+    > chisquare.skewness
+    ~1.155
+    > chisquare.stdev
+    ~3.464
+    > chisquare.variance
+    12.0
+    > chisquare.cdf( 3.0 )
+    ~0.191
+    > chisquare.mgf( 0.2 )
+    ~4.63
+    > chisquare.pdf( 1.5 )
+    ~0.066
+    > chisquare.quantile( 0.5 )
+    ~5.348
+
+    See Also
+    --------
+

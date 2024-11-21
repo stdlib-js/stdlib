@@ -1,0 +1,24 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Sat Sep  7 06:36:41 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Sat, 07 Sep 2002 01:36:41 -0400
+Subject: [Spambayes] can't write to CVS...
+In-Reply-To: <15737.35722.956784.600958@12-248-11-90.client.attbi.com>
+Message-ID: <LNBBLJKPBEHFEDALKOLCCELKBCAB.tim.one@comcast.net>
+
+[Skip Montanaro]
+> I'm listed as a developer on SF and have the spambayes CVS module checked
+> out using my SF username, but I'm unable to write to the repository.  CVS
+> complains:
+>
+>     % cvs add unheader.py
+>     cvs [server aborted]: "add" requires write access to the repository
+>
+> Any thoughts?
+
+Not really.  Try again?  About half the developers on the spambayes project
+were missing some permission or other, so I ran thru all of them and checked
+every damned box and clicked on every damn dropdown list I could find.  As
+far as SF is concerned, you're all sitting on God's Right Hand now, so if it
+still doesn't work I suggest you upgrade to Win98 <wink>.
+

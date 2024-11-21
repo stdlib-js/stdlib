@@ -1,0 +1,87 @@
+From fork-admin@xent.com  Tue Aug 20 22:30:45 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id DF4F243C32
+	for <jm@localhost>; Tue, 20 Aug 2002 17:30:44 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 22:30:44 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7KLSfZ25212 for <jm@jmason.org>;
+    Tue, 20 Aug 2002 22:28:42 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id E33FE294161; Tue, 20 Aug 2002 14:07:48 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from argote.ch (argote.ch [80.65.224.17]) by xent.com (Postfix)
+    with ESMTP id D1058294099 for <fork@xent.com>; Tue, 20 Aug 2002 09:30:14
+    -0700 (PDT)
+Received: by argote.ch (Postfix, from userid 500) id D69E3C44E;
+    Tue, 20 Aug 2002 18:24:44 +0200 (CEST)
+To: fork@spamassassin.taint.org
+Subject: Re: # Elliptic Curve Point Counting, made easy
+Message-Id: <20020820162444.D69E3C44E@argote.ch>
+From: harley@argote.ch (Robert Harley)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 20 Aug 2002 18:24:44 +0200 (CEST)
+
+Gordon Mohr wrote:
+>Does this mean that Eliptic Curve encryption is
+>now easily breakable? Or faster than before with
+>no loss in strength? Or stronger?
+>
+>Raw bits are OK, cooked bits are better.
+ 
+Oh.  OK.
+ 
+These results don't help break EC crypto at all.
+ 
+With RSA, you pick a number with secret factors and to break the
+cryptosystem, you can factor the number.  Due to fast sub-exponential
+algorithms for factoring, the number had better be 1024 bits at the
+very least (record = 524 bits).
+ 
+With EC, you pick a curve and pick points on the curve with secret
+discrete logarithm.  To break the cryptosystem you can compute a
+discrete log but the best algorithms for random curves are exponential
+(record = 109 bits, for a slightly special curve).
+ 
+Up until now, people pick curves chosen from a small fixed set.  One
+choice is a few curves with special properties that originally were
+chosen to make point-counting easier, and can also speed up the crypto
+operations, but in some cases they can also speed up attacks, not on
+curves deployed at the moment but the danger exists.  The other
+choice is to precompute a handful of random curves.  The NSA did this
+a few years ago when it took hours on a fast machine and NIST
+standardized those curves.
+ 
+What changes is that it is now possible is to generate your own curves
+on an ordinary PC.  This has been getting easier and easier, with
+small curves taking seconds on a fast machine since a year or two.
+Now even reasonably big curves take seconds on a typical PC.
+ 
+This means that you don't have to rely on standard curves but can
+distribute risk over many curves in case some get broken at some
+stage.  In certain circumstances you can even keep the curve itself
+secret so an attacker doesn't know which discrete log to try to
+compute!  There isn't really a good analogy with RSA, but imagine
+wanting to factor a number and you don't even know what it is...
+ 
+So basically recent progress has made new things feasible and this
+makes them even more so.  The underlying primitives for signing,
+encoding and so on are not affected, but the security vibes get better.
+ 
+R
+http://xent.com/mailman/listinfo/fork
+

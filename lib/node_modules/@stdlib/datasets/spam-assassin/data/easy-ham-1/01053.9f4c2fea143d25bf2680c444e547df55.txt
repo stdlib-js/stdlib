@@ -1,0 +1,161 @@
+From rpm-list-admin@freshrpms.net  Thu Sep  5 11:26:46 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 39B3016F22
+	for <jm@localhost>; Thu,  5 Sep 2002 11:26:39 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 05 Sep 2002 11:26:39 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g84M89Z21179 for
+    <jm-rpm@jmason.org>; Wed, 4 Sep 2002 23:08:10 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g84Lw0J18179; Wed, 4 Sep 2002 23:58:00
+    +0200
+Received: from horkos.telenet-ops.be (horkos.telenet-ops.be
+    [195.130.132.45]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g84LvCJ10274 for <rpm-list@freshrpms.net>; Wed, 4 Sep 2002 23:57:12 +0200
+Received: from localhost (localhost.localdomain [127.0.0.1]) by
+    horkos.telenet-ops.be (Postfix) with SMTP id C96B083E2D for
+    <rpm-list@freshrpms.net>; Wed,  4 Sep 2002 23:56:41 +0200 (CEST)
+Received: from zoe (D5760A70.kabel.telenet.be [213.118.10.112]) by
+    horkos.telenet-ops.be (Postfix) with ESMTP id 9F76483D83 for
+    <rpm-list@freshrpms.net>; Wed,  4 Sep 2002 23:56:41 +0200 (CEST)
+From: Nick Verhaegen <nick@permflux.org>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: Fluxbox
+User-Agent: KMail/1.4.1
+References: <20020904190059.87681.qmail@web20808.mail.yahoo.com>
+In-Reply-To: <20020904190059.87681.qmail@web20808.mail.yahoo.com>
+MIME-Version: 1.0
+Content-Type: Multipart/Mixed;
+    boundary="------------Boundary-00=_OYOXHTVA0T2X8R5S233Y"
+Message-Id: <200209042356.48124.nick@permflux.org>
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Wed, 4 Sep 2002 23:56:48 +0200
+Date: Wed, 4 Sep 2002 23:56:48 +0200
+
+
+--------------Boundary-00=_OYOXHTVA0T2X8R5S233Y
+Content-Type: text/plain;
+  charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Hi,
+
+=09I made a spec file for it some weeks ago, maybe it can be included in =
+fresh.=20
+If not,  at least you can use it...
+
+I'm attaching it here...
+
+Hope it might be some use for you, does the trick for me. Might be an old=
+=20
+version though, but should still work
+
+Nick
+
+
+
+
+On Wednesday 04 September 2002 21:00, Doug Stewart wrote:
+> I've noted that there are packaged versions of
+> Blackbox and hackedbox available from FreshRPMs.  What
+> about FluxBox? http://fluxbox.sf.net
+>
+> I'd certainly enjoy a packaged version, since its
+> creators seem hesitant to provide .rpms (.debs, yes,
+> but no .rpms).
+>
+> .Doug
+>
+> __________________________________________________
+> Do You Yahoo!?
+> Yahoo! Finance - Get real-time stock quotes
+> http://finance.yahoo.com
+>
+> _______________________________________________
+> RPM-List mailing list <RPM-List@freshrpms.net>
+> http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+--------------Boundary-00=_OYOXHTVA0T2X8R5S233Y
+Content-Type: text/plain;
+  charset="iso-8859-1";
+  name="fluxbox.spec"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="fluxbox.spec"
+
+Summary: Blackbox derived window manager
+Name: fluxbox
+Version: 0.1.10
+Release: nv1
+License: other
+Group: User Interface/Desktops
+Source: http://prdownloads.sourceforge.net/fluxbox/%{name}-%{version}.tar.gz
+URL: http://fluxbox.sourceforge.net
+BuildRoot: %{_tmppath}/%{name}-root
+BuildRequires: XFree86-devel, libstdc++-devel
+
+%description
+
+
+Fluxbox is yet another windowmanager for X.
+It's based on the Blackbox 0.61.1 code. Fluxbox looks like blackbox and 
+handles styles, colors, window placement and similar thing exactly like 
+blackbox (100% theme/style compability).
+Many changes and improvements have been made to the code, such as window tabs, 
+iconbar, native keygrabber, gnome and kde support etc.
+
+%prep
+%setup -q
+
+
+%build
+%configure --enable-xinerama --enable-gnome --enable-kde
+make
+
+%install
+rm -rf %{buildroot}
+%makeinstall
+
+%clean
+rm -rf %{buildroot}
+
+
+%files
+%defattr(-, root, root)
+%doc README NEWS COPYING AUTHORS INSTALL TODO doc/Coding_style
+%{_bindir}/*
+%{_datadir}/%{name}
+%{_mandir}/man1/*
+
+%changelog
+* Thu Jul 19 2002 Nick Verhaegen
+- Update to 0.1.10
+
+* Tue Jul 9 2002 Nick Verhaegen
+- Initial RPM release.
+
+
+--------------Boundary-00=_OYOXHTVA0T2X8R5S233Y--
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

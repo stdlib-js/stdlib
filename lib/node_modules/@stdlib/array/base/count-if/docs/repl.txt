@@ -1,0 +1,36 @@
+
+{{alias}}( x, predicate[, thisArg] )
+    Counts the number of elements in an array which pass a test implemented by a
+    predicate function.
+
+    The predicate function is provided three arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: the input array.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    predicate: Function
+        Predicate function.
+    
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    out: integer
+        Result.
+
+    Examples
+    --------
+    > function f( v ) { return ( v > 0 ); };
+    > var out = {{alias}}( [ 0, 1, 1 ], f )
+    2
+
+    See Also
+    --------
+

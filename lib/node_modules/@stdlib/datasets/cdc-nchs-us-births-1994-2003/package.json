@@ -1,0 +1,71 @@
+{
+  "name": "@stdlib/datasets/cdc-nchs-us-births-1994-2003",
+  "version": "0.0.0",
+  "description": "US birth data from 1994 to 2003, as provided by the Center for Disease Control and Prevention's National Center for Health Statistics.",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "bin": {
+    "cdc-nchs-us-births-1994-2003": "./bin/cli"
+  },
+  "main": "./lib",
+  "browser": "./lib/browser.js",
+  "directories": {
+    "benchmark": "./benchmark",
+    "data": "./data",
+    "doc": "./docs",
+    "example": "./examples",
+    "lib": "./lib",
+    "scripts": "./scripts",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "scripts": {},
+  "homepage": "https://github.com/stdlib-js/stdlib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stdlib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
+  "keywords": [
+    "stdlib",
+    "datasets",
+    "dataset",
+    "data",
+    "us",
+    "united states",
+    "usa",
+    "america",
+    "births",
+    "babies",
+    "timeseries",
+    "time-series"
+  ]
+}

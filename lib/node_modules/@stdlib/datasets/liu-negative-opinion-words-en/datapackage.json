@@ -1,0 +1,50 @@
+{
+  "name": "stdlib-datasets-liu-negative-opinion-words-en",
+  "version": "",
+  "title": "Negative Opinion Words",
+  "description": "A list of negative opinion words.",
+  "resources": [
+    {
+      "name": "liu-negative-opinion-words-en-json",
+      "title": "Negative Opinion Words",
+      "description": "A list of negative opinion words.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/words.json"
+    },
+    {
+      "name": "liu-negative-opinion-words-en-txt",
+      "title": "Negative Opinion Words",
+      "description": "A list of negative opinion words.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/words.txt"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Opinion Lexicion",
+      "web": "https://www.cs.uic.edu/~liub/FBS/sentiment-analysis.html#lexicon"
+    }
+  ],
+  "keywords": [
+    "words",
+    "list",
+    "sentiment",
+    "opinion",
+    "negative",
+    "emotion",
+    "emotive",
+    "subjectivity",
+    "lexicon",
+    "nlp",
+    "language",
+    "english",
+    "en"
+  ],
+  "license": "ODC-BY-1.0 AND CC-BY-4.0"
+}

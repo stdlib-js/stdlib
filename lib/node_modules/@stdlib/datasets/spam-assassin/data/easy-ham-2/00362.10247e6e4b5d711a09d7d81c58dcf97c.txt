@@ -1,0 +1,120 @@
+From ilug-admin@linux.ie  Tue Aug 13 10:28:55 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 051944412B
+	for <jm@localhost>; Tue, 13 Aug 2002 05:21:49 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:21:49 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7D0OVb10586 for
+    <jm-ilug@jmason.org>; Tue, 13 Aug 2002 01:24:31 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id BAA14853; Tue, 13 Aug 2002 01:23:55 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail2.mail.iol.ie (mail2.mail.iol.ie [194.125.2.193]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id BAA14820 for <ilug@linux.ie>;
+    Tue, 13 Aug 2002 01:23:49 +0100
+Received: from [213.202.164.73] (helo=excalibur.research.wombat.ie) by
+    mail2.mail.iol.ie with esmtp (Exim 3.35 #1) id 17ePLz-0003Qc-00;
+    Tue, 13 Aug 2002 01:16:08 +0100
+Received: (from kenn@localhost) by excalibur.research.wombat.ie
+    (8.11.6/8.11.6) id g7D0Nkd14513; Tue, 13 Aug 2002 01:23:46 +0100
+Date: Tue, 13 Aug 2002 01:23:46 +0100
+From: Kenn Humborg <kenn@linux.ie>
+To: Nick Murtagh <nickm@go2.ie>
+Cc: ilug@linux.ie
+Subject: Re: [ILUG] slashdot EW Dijkstra humor
+Message-Id: <20020813012346.A14435@excalibur.research.wombat.ie>
+References: <NBBBIGEGHIGMPCNKHCECEEGKEAAA.kenn@bluetree.ie>
+    <1029179159.9170.14.camel@gemini.windmill>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <1029179159.9170.14.camel@gemini.windmill>; from nickm@go2.ie
+    on Mon, Aug 12, 2002 at 08:05:58PM +0100
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Mon, Aug 12, 2002 at 08:05:58PM +0100, Nick Murtagh wrote:
+> On Mon, 2002-08-12 at 19:56, Kenn Humborg wrote:
+> > Well, you should consider 'break' inside a 'select' statement
+> > to be part of the syntax, rather than a control flow modifier.
+> 
+> Why? When it comes down to the assembly level, it gets turned
+> into some kind of jump instruction. Should I pretend I don't know
+> this when I'm programming?
+
+I know that.  And no, you shouldn't.  But see below.
+
+> > A _mandatory_ part of the syntax, at that.
+> 
+> It's not mandatory. You can leave out the break, and the flow
+> of control will continue to the next case. Which can be useful
+> in certain circumstances.
+
+I know that, too.
+
+However, the discussion was tending towards
+"don't use things like goto and break to alter flow of control
+in your program".  While not valid 100% of the time, it's a 
+reasonable rule of thumb.  The idea is that, when looking at
+code, it's easier to see how control moves through a 
+function if your basic control blocks do all the work.  The
+specific example of replacing a break in a while loop with
+a modified while() expression shows this.  You only have to
+look in one place to see when you'll run off the end of the
+loop, not hunt through the whole loop.  (Although that particular
+example wasn't really that good, since the extra test was 
+adding on (... || done) and setting done = true in the loop.
+Which is much the same as a break really.)
+
+The idea is to surprise the next programmer as little as 
+possible when he sees the code.
+
+In a similar vein, having a break in every case of a select
+block makes the flow much clearer.  Flow goes in, zero or 
+one case blocks are executed and flows comes out the bottom.
+Leaving out break statements breaks this assumption.
+
+My point is that, while there are a few situations where it
+makes sense to leave out the breaks, I usually tend to 
+consider the break at the end of each case more like the
+brace at the end of the while block.  
+
+In fact, maybe it wouldn't have been a bad idea if the language
+was designed such that the continue statement meant fall through
+and break wasn't needed:
+
+   select (x) {
+      case 1:
+         /* do something - doesn't fall through */
+      case 2:
+         /* do something - falls through to next case*/
+         continue;
+      case 3:
+         /* do something - doesn't fall through */
+      default:
+         /* do something - doesn't fall through */
+   }
+
+Still, hindsight and all that.  Sigh.
+
+Later,
+Kenn
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

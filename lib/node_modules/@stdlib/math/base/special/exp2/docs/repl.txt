@@ -1,0 +1,28 @@
+
+{{alias}}( x )
+    Evaluates the base 2 exponential function.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    y: number
+        Function value.
+
+    Examples
+    --------
+    > var y = {{alias}}( 3.0 )
+    8.0
+    > y = {{alias}}( -9.0 )
+    ~0.002
+    > y = {{alias}}( 0.0 )
+    1.0
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+

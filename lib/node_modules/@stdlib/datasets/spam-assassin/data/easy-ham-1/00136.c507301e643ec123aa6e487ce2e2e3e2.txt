@@ -1,0 +1,94 @@
+From rpm-list-admin@freshrpms.net  Tue Oct  8 10:55:22 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id 4B66916F16
+	for <zzzz@localhost>; Tue,  8 Oct 2002 10:55:17 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Tue, 08 Oct 2002 10:55:17 +0100 (IST)
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g987avK05522 for
+    <zzzz-rpm@spamassassin.taint.org>; Tue, 8 Oct 2002 08:36:57 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g987U2f06824; Tue, 8 Oct 2002 09:30:02
+    +0200
+Received: from snickers.hotpop.com (snickers.hotpop.com [204.57.55.49]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g987TMf04275 for
+    <rpm-list@freshrpms.net>; Tue, 8 Oct 2002 09:29:22 +0200
+Received: from punkass.com (kubrick.hotpop.com [204.57.55.16]) by
+    snickers.hotpop.com (Postfix) with SMTP id B5FC0707E2 for
+    <rpm-list@freshrpms.net>; Tue,  8 Oct 2002 07:29:10 +0000 (UTC)
+Received: from punkass.com (unknown [80.178.1.203]) by smtp-2.hotpop.com
+    (Postfix) with ESMTP id 4BADD1B8497 for <rpm-list@freshrpms.net>;
+    Tue,  8 Oct 2002 07:28:31 +0000 (UTC)
+Message-Id: <3DA28982.6020709@punkass.com>
+From: Roi Dayan <dejavo@punkass.com>
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.0.1) Gecko/20020830
+X-Accept-Language: en-us, en, he
+MIME-Version: 1.0
+To: rpm-zzzlist@freshrpms.net
+Subject: xine src packge still gives errors
+References: <1033908698.1724.11.camel@lillpelle>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+X-Hotpop: ----------------------------------------------- Sent By
+    HotPOP.com FREE Email Get your FREE POP email at www.HotPOP.com
+    -----------------------------------------------
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Tue, 08 Oct 2002 09:30:10 +0200
+Date: Tue, 08 Oct 2002 09:30:10 +0200
+
+Hi
+
+I try to rebuild xine from src package and I get these errors:
+
+.
+.
+.
+.
+.
+Finding  Provides: /usr/lib/rpm/find-provides
+Finding  Requires: /usr/lib/rpm/find-requires
+PreReq: rpmlib(PayloadFilesHavePrefix) <= 4.0-1 
+rpmlib(CompressedFileNames) <= 3.0.4-1
+Requires(rpmlib): rpmlib(PayloadFilesHavePrefix) <= 4.0-1 
+rpmlib(CompressedFileNames) <= 3.0.4-1
+Requires: xine-libs = 0.9.13 /bin/sh
+Obsoletes: xine-devel
+
+
+RPM build errors:
+    user dude does not exist - using root
+    user dude does not exist - using root
+    user dude does not exist - using root
+    user dude does not exist - using root
+    user dude does not exist - using root
+    File not found: /var/tmp/xine-root/usr/bin/aaxine
+
+
+thx,
+Roi
+
+
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

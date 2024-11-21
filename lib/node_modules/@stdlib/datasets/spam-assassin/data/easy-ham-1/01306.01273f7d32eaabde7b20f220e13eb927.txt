@@ -1,0 +1,80 @@
+From rpm-list-admin@freshrpms.net  Thu Oct 10 12:32:37 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 89A4216F17
+	for <jm@localhost>; Thu, 10 Oct 2002 12:32:36 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 10 Oct 2002 12:32:36 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9AAcvK18611 for
+    <jm-rpm@jmason.org>; Thu, 10 Oct 2002 11:38:57 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g9AAV7f31601; Thu, 10 Oct 2002 12:31:07
+    +0200
+Received: from smtp012.mail.yahoo.com (smtp012.mail.yahoo.com
+    [216.136.173.32]) by egwn.net (8.11.6/8.11.6/EGWN) with SMTP id
+    g9AAUQf27490 for <rpm-list@freshrpms.net>; Thu, 10 Oct 2002 12:30:27 +0200
+Received: from unknown (HELO ?192.168.0.100?) (salimma1@212.18.241.211
+    with plain) by smtp.mail.vip.sc5.yahoo.com with SMTP; 10 Oct 2002 10:30:25
+    -0000
+Subject: dvd::rip on Red Hat 8.0?
+From: =?ISO-8859-1?Q?Mich=E8l?= Alexandre Salim <salimma1@yahoo.co.uk>
+To: rpm-zzzlist@freshrpms.net
+Content-Type: text/plain; charset=UTF-8
+X-Mailer: Ximian Evolution 1.0.8 (1.0.8-10)
+Message-Id: <1034245825.2222.11.camel@sahib>
+MIME-Version: 1.0
+X-Mailscanner: Found to be clean, Found to be clean
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by egwn.net id
+    g9AAUQf27490
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: 10 Oct 2002 11:30:24 +0100
+Date: 10 Oct 2002 11:30:24 +0100
+
+Hello,
+
+Has anyone made a working source RPM for dvd::rip for Red Hat 8.0?
+Matthias has a spec file on the site for 0.46, and there are a couple of
+spec files lying around on the dvd::rip website, including one I patched
+a while ago, but it appears that the Makefile automatically generated is
+trying to install the Perl libraries into the system's, and also at the
+moment dvd::rip needs to be called with PERLIO=stdio as it seems to not
+work with PerlIO on RH8's Perl.
+
+Not too sure what the cleanest way to fix this is - anyone working on
+this?
+
+Thanks,
+
+-- 
+Michèl Alexandre Salim
+Web:		http://salimma.freeshell.org
+GPG/PGP key:	http://salimma.freeshell.org/files/crypto/publickey.asc
+
+__________________________________________________
+Do You Yahoo!?
+Everything you'll ever need on one web page
+from News and Sport to Email and Music Charts
+http://uk.my.yahoo.com
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

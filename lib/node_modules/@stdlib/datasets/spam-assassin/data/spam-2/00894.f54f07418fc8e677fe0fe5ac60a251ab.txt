@@ -1,0 +1,233 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6MKW9hY095677
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Mon, 22 Jul 2002 15:32:09 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6MKW9Ga095675
+	for cypherpunks-forward@ds.pro-ns.net; Mon, 22 Jul 2002 15:32:09 -0500 (CDT)
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6MKW0hY095654
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks@ds.pro-ns.net>; Mon, 22 Jul 2002 15:32:02 -0500 (CDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: from waste.minder.net (daemon@waste [66.92.53.73])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6MKVxJ55104
+	for <cypherpunks@ds.pro-ns.net>; Mon, 22 Jul 2002 16:32:00 -0400 (EDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: (from cpunks@localhost)
+	by waste.minder.net (8.11.6/8.11.6) id g6MKVxp23634
+	for cypherpunks@ds.pro-ns.net; Mon, 22 Jul 2002 16:31:59 -0400
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by waste.minder.net (8.11.6/8.11.6) with ESMTP id g6MKVvR23610
+	for <cpunks@minder.net>; Mon, 22 Jul 2002 16:31:58 -0400
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6MKVuJ55088
+	for <cpunks@minder.net>; Mon, 22 Jul 2002 16:31:56 -0400 (EDT)
+	(envelope-from cpunks@einstein.ssz.com)
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id PAA19563
+	for cpunks@minder.net; Mon, 22 Jul 2002 15:40:21 -0500
+Received: (from mdom@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id PAA19515
+	for cypherpunks-outgoing; Mon, 22 Jul 2002 15:38:56 -0500
+Received: from mkt1.verticalresponse.com (mkt1.verticalresponse.com [130.94.4.19])
+	by einstein.ssz.com (8.8.8/8.8.8) with SMTP id PAA19509
+	for <cypherpunks@einstein.ssz.com>; Mon, 22 Jul 2002 15:38:51 -0500
+Message-Id: <200207222038.PAA19509@einstein.ssz.com>
+Received: (qmail 27616 invoked from network); 22 Jul 2002 20:30:11 -0000
+Received: from unknown (130.94.4.23)
+  by 0 with QMQP; 22 Jul 2002 20:30:11 -0000
+From: " Special Deals" <unsubs-96a0aef8be-cypherpunks=einstein.ssz.com@b.verticalresponse.com>
+To: cypherpunks@einstein.ssz.com
+Old-Subject: CDR: Learn the Secrets of Investing in Real Estate Today!
+Date: Mon, 22 Jul 2002 20:30:11 +0000
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+    boundary="__________MIMEboundary__________"
+Sender: owner-cypherpunks@einstein.ssz.com
+Precedence: bulk
+Reply-To: cypherpunks@einstein.ssz.com
+X-Mailing-List: cypherpunks@ssz.com
+X-Unsubscription-Info: http://einstein.ssz.com/cdr
+X-List-Admin: list@ssz.com
+X-Loop: ssz.com
+X-Acceptable-Languages: English, Russian, German, French, Spanish
+Subject: Learn the Secrets of Investing in Real Estate Today!
+
+This is a multi-part message in MIME format.
+
+--__________MIMEboundary__________
+Content-Type: text/plain
+Content-Transfer-Encoding: quoted-printable
+X-MIME-Autoconverted: from 8bit to quoted-printable by hq.pro-ns.net id g6MKYVhX096488
+
+
+Dear Friend,=20
+
+Do you need extra money? Are you in debt? Stuck in a dead end job, or jus=
+t
+want to work for yourself?
+
+How would you like to earn up to $100 per hour investing in real estate?
+You can! I will teach you my secrets to building a fortune with real
+estate!=20
+
+=95 No Experience Necessary
+=95 Work full or part time
+=95 Use almost none of your own money
+=95 Good or bad credit, it doesn't matter
+
+Anyone can do this; this system is so easy you won't believe it! This
+once-in-a-lifetime deal is going to expire fast . . . take the next five
+minutes to make changes for the better that will last a lifetime.
+
+
+Your Friend and Personal Mentor,
+http://r.vresp.com/?A/f920a9a9ef
+
+Lou Vukas=20
+=20
+http://r.vresp.com/?A/b8e02b156b
+=20
+
+
+______________________________________________________________________
+You are receiving this email because you requested to receive info and
+updates via email.
+
+To unsubscribe, reply to this email with "unsubscribe" in the subject or
+simply click on the following link:
+http://unsubscribe.verticalresponse.com/u.html?96a0aef8be/aa3b97bcc2
+
+
+
+--__________MIMEboundary__________
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-MIME-Autoconverted: from 8bit to quoted-printable by hq.pro-ns.net id g6MKYVhX096488
+
+<html>  <head> <meta name=3D"GENERATOR" content=3D"Microsoft FrontPage 5.=
+0">
+<meta name=3D"ProgId" content=3D"FrontPage.Editor.Document"> <meta
+http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dwindows-1252"=
+>
+<title>Real Estate Fortunes</title> </head> <img
+src=3D'http://ad.iwin.com/tmpad/banner/actiontrack.asp?io=3D---&rs=3D' he=
+ight=3D1
+width=3D1 border=3D0>  <body>   <table borderColor=3D"#6699cc" cellSpacin=
+g=3D"0"
+cellPadding=3D"0" width=3D"500" align=3D"center" border=3D"0">   <tr>    =
+ <td
+vAlign=3D"bottom" align=3D"left">     <a
+href=3D"http://r.vresp.com/?A/5472c1f421">     <img
+src=3D"http://www.realestatefortunes.com/logo.gif" border=3D"0" width=3D"=
+159"
+height=3D"60"></a></td>     <td vAlign=3D"bottom" align=3D"left">     <a
+href=3D"http://r.vresp.com/?A/7b51433cee">     <img
+src=3D"http://www.realestatefortunes.com/pics.gif" border=3D"0" width=3D"=
+373"
+height=3D"47"></a></td>   </tr>   <tr>     <td vAlign=3D"top"
+bgColor=3D"#6699cc" height=3D"533">     <table cellSpacing=3D"0" cellPadd=
+ing=3D"0"
+width=3D"100%" bgColor=3D"#6699cc" border=3D"0">       <tr>         <td
+vAlign=3D"top" align=3D"middle"><br>         <a
+href=3D"http://r.vresp.com/?A/368b56677b">         <img
+src=3D"http://www.realestatefortunes.com/testim.gif" border=3D"0" width=3D=
+"144"
+height=3D"32"></a><br>         <br>         <a
+href=3D"http://r.vresp.com/?A/a3a57aa100">         <img
+src=3D"http://www.realestatefortunes.com/guyandcar.gif" vspace=3D"3"
+border=3D"0" width=3D"137" height=3D"93"></a><br>         <font face=3D"A=
+rial,
+Helvetica, sans-serif" color=3D"#99ffff" size=3D"-2">         Here's me o=
+n a
+recent <br>         vacation in Las Vegas. </font>         <p>       =20
+<img src=3D"hrule.gif" width=3D"109" height=3D"2"></p>         <p><a
+href=3D"http://r.vresp.com/?A/ac403a0ebb">         <img
+src=3D"http://www.realestatefortunes.com/specialoffer.gif" border=3D"0"
+width=3D"146" height=3D"143"></a></p>         <p>=A0</td>       </tr>   =20
+</table>     </td>     <td vAlign=3D"top" align=3D"right" height=3D"533">=
+<br>
+=A0<table cellSpacing=3D"0" cellPadding=3D"0" width=3D"88%" border=3D"0">=
+       <tr>
+        <td height=3D"139"><a href=3D"http://r.vresp.com/?A/e40c384063"> =
+    =20
+  <img src=3D"http://www.realestatefortunes.com/header.gif" border=3D"0"
+width=3D"312" height=3D"129"></a><br> =A0</td>       </tr>       <tr>    =
+   =20
+<td vAlign=3D"top" align=3D"left" height=3D"422">         <font face=3D"A=
+rial,
+Helvetica, sans-serif" color=3D"#006699" size=3D"-1">Dear          Friend=
+,
+<br>         <br>         Do you need extra money? Are you in debt? Stuck
+in a dead end job, or          just want to work for yourself?<br>       =
+=20
+<br>         How would you like to <b>earn up to $100 per hour investing
+in real          estate</b>? You can! I will teach you my secrets to
+building a fortune          with real estate! <br>         <br>       =20
+</font><font face=3D"Arial, Helvetica, sans-serif" color=3D"#006699"><b>=95=
+ No =20
+       Experience Necessary<br>         =95 Work full or part time<br>   =
+  =20
+  =95 Use almost none of your own money<br>         =95 Good or bad credi=
+t, it
+doesn't matter</b></font><font face=3D"Arial, Helvetica, sans-serif"
+color=3D"#006699" size=3D"-1"><br>         <br>         Anyone can do thi=
+s;
+this system is so easy you won't believe it! This        =20
+once-in-a-lifetime deal is going to expire fast . . . take the next five =
+=20
+       minutes to make changes for the better that will last a
+lifetime.</font><p align=3D"center">         <a
+href=3D"http://r.vresp.com/?A/aa0b82cfcf">         <img
+src=3D"http://www.realestatefortunes.com/clickhere.gif" border=3D"0"
+width=3D"141" height=3D"44"></a></p>         <p align=3D"center">        =
+ <font
+face=3D"Arial, Helvetica, sans-serif" color=3D"#006699" size=3D"-1">Your =
+      =20
+ Friend and Personal Mentor,</font><br>         <img
+src=3D"http://www.realestatefortunes.com/signature.gif" width=3D"105"
+height=3D"46"> <br>         <font face=3D"Arial, Helvetica, sans-serif"
+color=3D"#006699" size=3D"-1">Lou          Vukas </font></td>       </tr>=
+   =20
+</table>     </td>   </tr> </table>  </body>  </html>
+
+<br>
+                     <hr color=3De0e0e0>
+                     <table border=3D0 cellpadding=3D5 cellspacing=3D0
+width=3D100%>
+                     <tr>
+                           <td><font face=3D"arial,verdana" size=3D1>You =
+are
+receiving this email because you requested to receive info and updates vi=
+a
+email.
+
+To unsubscribe, reply to this email with "unsubscribe" in the subject or
+simply click on the following link: <a
+href=3D"http://unsubscribe.verticalresponse.com/u.html?96a0aef8be/aa3b97b=
+cc2">Unsubscribe</a></td>
+                     </tr>
+                     </table>
+
+<img src=3Dhttp://i.verticalresponse.com/blank.gif?96a0aef8be/aa3b97bcc2>
+
+
+--__________MIMEboundary__________--
+
+.
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

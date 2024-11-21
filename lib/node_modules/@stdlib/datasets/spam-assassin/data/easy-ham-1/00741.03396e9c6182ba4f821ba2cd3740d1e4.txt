@@ -1,0 +1,75 @@
+From fork-admin@xent.com  Mon Sep 23 23:56:50 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 78CB216F03
+	for <jm@localhost>; Mon, 23 Sep 2002 23:56:49 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 23 Sep 2002 23:56:49 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8NMq1C06332 for <jm@jmason.org>;
+    Mon, 23 Sep 2002 23:52:02 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 040592941EC; Mon, 23 Sep 2002 15:48:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hotmail.com (f167.law15.hotmail.com [64.4.23.167]) by
+    xent.com (Postfix) with ESMTP id 0CEF929409A for <fork@xent.com>;
+    Mon, 23 Sep 2002 15:47:49 -0700 (PDT)
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Mon, 23 Sep 2002 15:51:29 -0700
+Received: from 216.30.74.2 by lw15fd.law15.hotmail.msn.com with HTTP;
+    Mon, 23 Sep 2002 22:51:29 GMT
+X-Originating-Ip: [216.30.74.2]
+From: "Russell Turpin" <deafbox@hotmail.com>
+To: fork@spamassassin.taint.org
+Subject: Re: SF Weekly's Ultimate SF Date lineup :-)
+MIME-Version: 1.0
+Content-Type: text/plain; format=flowed
+Message-Id: <F167IKeqA1UzccrYFti0000478e@hotmail.com>
+X-Originalarrivaltime: 23 Sep 2002 22:51:29.0328 (UTC) FILETIME=[C11F3B00:01C26353]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 23 Sep 2002 22:51:29 +0000
+
+SF Weekly:
+>Nothing's more enticing than an evening cruise around San Francisco Bay, 
+>and the islands, bridges, and lights of the city are especially entrancing 
+>viewed from this vintage brigantine schooner. Built in 1933 and recently 
+>restored to its former glory, the 78-foot Rendezvous looks like a clipper 
+>ship out of the Gold Rush era, with its 80-foot masts and square-rigged 
+>sails.
+
+That sounds like fun. But it sets the wrong precedent.
+Here's the better idea. Invite her for an afternoon
+cruise under the Golden Gate bridge in your Stonehorse
+day sailor. Under way, ask her if she'd like to take
+the stick. Back at slip, cook her dinner. Something
+simple, but good, maybe a stir fry or a stew, served
+in the cockpit, with an inexpensive but potable wine.
+
+If she runs away after that, 'tis good riddance. If
+she wants to try it again, another day, she shows
+promise. If she asks you to show her the V berth, you
+have a girlfriend. If she notes your brightwork needs
+another coat, and asks what you're using on it,
+propose on the spot.
+
+;-)
+
+
+_________________________________________________________________
+MSN Photos is the easiest way to share and print your photos: 
+http://photos.msn.com/support/worldwide.aspx
+
+

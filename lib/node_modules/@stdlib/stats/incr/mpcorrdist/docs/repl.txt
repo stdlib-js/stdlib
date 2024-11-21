@@ -1,0 +1,61 @@
+
+{{alias}}( W[, mx, my] )
+    Returns an accumulator function which incrementally computes a moving
+    sample Pearson product-moment correlation distance.
+
+    The correlation distance is defined as one minus the Pearson product-moment
+    correlation coefficient and, thus, resides on the interval [0,2].
+
+    However, due to limitations inherent in representing numeric values using
+    floating-point format (i.e., the inability to represent numeric values with
+    infinite precision), the correlation distance between perfectly correlated
+    random variables may *not* be `0` or `2`. In fact, the correlation distance
+    is *not* guaranteed to be strictly on the interval [0,2]. Any computed
+    distance should, however, be within floating-point roundoff error.
+
+    The `W` parameter defines the number of values over which to compute the
+    moving sample correlation distance.
+
+    If provided values, the accumulator function returns an updated moving
+    sample correlation distance. If not provided values, the accumulator
+    function returns the current moving sample correlation distance.
+
+    As `W` (x,y) pairs are needed to fill the window buffer, the first `W-1`
+    returned values are calculated from smaller sample sizes. Until the window
+    is full, each returned value is calculated from all provided values.
+
+    Parameters
+    ----------
+    W: integer
+        Window size.
+
+    mx: number (optional)
+        Known mean.
+
+    my: number (optional)
+        Known mean.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}( 3 );
+    > var d = accumulator()
+    null
+    > d = accumulator( 2.0, 1.0 )
+    1.0
+    > d = accumulator( -5.0, 3.14 )
+    ~2.0
+    > d = accumulator( 3.0, -1.0 )
+    ~1.925
+    > d = accumulator( 5.0, -9.5 )
+    ~1.863
+    > d = accumulator()
+    ~1.863
+
+    See Also
+    --------
+

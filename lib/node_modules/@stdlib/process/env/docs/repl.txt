@@ -1,0 +1,12 @@
+
+{{alias}}
+    An object containing the user environment.
+
+    Examples
+    --------
+    > var user = {{alias}}.USER
+    <string>
+
+    See Also
+    --------
+

@@ -1,0 +1,79 @@
+From fork-admin@xent.com  Mon Jul 29 11:28:43 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 04114440FF
+	for <jm@localhost>; Mon, 29 Jul 2002 06:25:25 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 11:25:25 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6QIY1r17349 for <jm@jmason.org>;
+    Fri, 26 Jul 2002 19:34:01 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 21031294103; Fri, 26 Jul 2002 11:32:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from crank.slack.net (slack.net [166.84.151.181]) by xent.com
+    (Postfix) with ESMTP id 387952940B0 for <fork@xent.com>; Fri,
+    26 Jul 2002 11:31:29 -0700 (PDT)
+Received: by crank.slack.net (Postfix, from userid 596) id 7B2533ED63;
+    Fri, 26 Jul 2002 14:31:48 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1]) by crank.slack.net
+    (Postfix) with ESMTP id 79B673ECEB for <fork@xent.com>; Fri,
+    26 Jul 2002 14:31:48 -0400 (EDT)
+From: Tom <tomwhore@slack.net>
+To: fork@spamassassin.taint.org
+Subject: Perens Backs Out of Stunt
+Message-Id: <Pine.BSO.4.44.0207261430130.13392-100000@crank.slack.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 26 Jul 2002 14:31:48 -0400 (EDT)
+
+http://www.siliconvalley.com/mld/siliconvalley/business/columnists/dan_gillmor/ejournal/3735855.htm
+Posted on Thu, Jul. 25, 2002
+
+Copyright Law Thwarts Open Source Confab Demo
+Posted by Dan Gillmor
+
+
+Bruce Perens was going to demonstrate a modified DVD player at this week's
+Open Source gathering in San Diego. He'd planned to show (Infoworld) how a
+DVD player with its regional coding disabled could play DVDs with
+different regional codes.
+
+Perens was going to do this in violation, he believed, of the Digital
+Millennium Copyright Act, which bans the circumvention of technological
+methods to protect copyrighted material from uses the owner doesn't want.
+And the possibility of legal trouble led his employer, Hewlett-Packard, to
+ask him not to do the demonstration.
+
+HP funds Perens to pursue a variety of free software projects. He was
+willing to take the legal risks himself, he told me today, but HP worried
+that it would be "a more juicy target," the kind of deep pockets that
+might make the entertainment cartel drool. In that context it's
+understandable why HP would be concerned, though I wish the company would
+take a stand on the right side of this issue.
+
+So while Perens is going to talk about the DMCA's pernicious impact on
+things like free software, he's not going to give his demonstration. A
+shame, but that's how things are going these days.
+
+Hollywood is winning, folks. You are losing. And you'd better start caring
+
+
+
+http://xent.com/mailman/listinfo/fork
+
+

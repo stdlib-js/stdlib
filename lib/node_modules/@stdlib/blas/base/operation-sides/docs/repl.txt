@@ -1,0 +1,24 @@
+
+{{alias}}()
+    Returns a list of operation sides.
+
+    The output array contains the following operation sides:
+
+    - left: a triangular matrix is on the left side of a matrix-matrix
+      operation. For example, AX = B, where A is a triangular matrix.
+    - right: a triangular matrix is on the right side of a matrix-matrix
+      operation. For example, XA = B, where A is a triangular matrix.
+
+    Returns
+    -------
+    out: Array<string>
+        List of operation sides.
+
+    Examples
+    --------
+    > var out = {{alias}}()
+    [ 'left', 'right' ]
+
+    See Also
+    --------
+

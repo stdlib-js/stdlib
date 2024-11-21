@@ -1,0 +1,43 @@
+
+{{alias}}( object, predicate[, thisArg ] )
+    Tests whether at least one own property of an object passes a
+    test implemented by a predicate function.
+
+    The predicate function is provided three arguments:
+
+    - value: property value.
+    - index: property key.
+    - object: the input object.
+
+    The function immediately returns upon encountering a truthy return
+    value.
+
+    If provided an empty object, the function returns `false`.
+
+    Parameters
+    ----------
+    object: Object
+        Input object.
+
+    predicate: Function
+        Test function.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    bool: boolean
+        The function returns `true` if the predicate function returns a truthy
+        value for one own property; otherwise, the function returns `false`.
+
+    Examples
+    --------
+    > function positive( v ) { return ( v > 0 ); };
+    > var obj = { 'a': -1, 'b': 2, 'c': -3 };
+    > var bool = {{alias}}( obj, positive )
+    true
+
+    See Also
+    --------
+

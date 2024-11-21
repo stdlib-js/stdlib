@@ -1,0 +1,47 @@
+
+{{alias}}( value )
+    Tests if a value is a duration string.
+
+    The function validates that a value is a string. For all other types, the
+    function returns `false`.
+
+    A duration string is a string containing a sequence of time units. A time
+    unit is a non-negative integer followed by a unit identifier. The following
+    unit identifiers are supported:
+
+    - d: days.
+    - h: hours.
+    - m: minutes.
+    - s: seconds.
+    - ms: milliseconds.
+
+    For example, the string `1m3s10ms` is a duration string containing three
+    time units: `1m` (1 minute), `3s` (3 seconds), and `10ms` (10 milliseconds).
+    The string `60m` is a duration string containing a single time unit: `60m`
+    (60 minutes). Time units must be supplied in descending order of magnitude
+    (i.e., days, hours, minutes, seconds, milliseconds).
+
+    Duration strings are case insensitive. For example, the string `1M3S10MS` is
+    equivalent to `1m3s10ms`.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is a duration string.
+
+    Examples
+    --------
+    > var bool = {{alias}}( '1d' )
+    true
+    > bool = {{alias}}( '1h' )
+    true
+    > bool = {{alias}}( 'beep' )
+    false
+
+    See Also
+    --------

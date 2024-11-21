@@ -1,0 +1,142 @@
+From exmh-workers-admin@redhat.com  Wed Aug 21 16:18:36 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5134943C34
+	for <jm@localhost>; Wed, 21 Aug 2002 11:18:36 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 21 Aug 2002 16:18:36 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7LFJuZ30902 for
+    <jm-exmh@jmason.org>; Wed, 21 Aug 2002 16:19:56 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id D96EC3EC31; Wed, 21 Aug 2002
+    11:20:01 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id EC3C93F3EB
+    for <exmh-workers@listman.redhat.com>; Wed, 21 Aug 2002 11:17:21 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g7LFHJq23214 for exmh-workers@listman.redhat.com; Wed, 21 Aug 2002
+    11:17:19 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g7LFHIY23207 for
+    <exmh-workers@redhat.com>; Wed, 21 Aug 2002 11:17:18 -0400
+Received: from austin-jump.vircio.com
+    (IDENT:q6Nj7IxtTt2UXJZJPEaDx4PuUxaC8bQA@jump-austin.vircio.com
+    [192.12.3.99]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id g7LF2ul24494
+    for <exmh-workers@redhat.com>; Wed, 21 Aug 2002 11:02:56 -0400
+Received: (qmail 27316 invoked by uid 104); 21 Aug 2002 15:17:17 -0000
+Received: from cwg-exmh@DeepEddy.Com by localhost.localdomain with
+    qmail-scanner-0.90 (uvscan: v4.1.60/v4218. . Clean. Processed in 0.746999
+    secs); 21/08/2002 10:17:17
+Received: from deepeddy.vircio.com ([10.1.2.1]) (envelope-sender
+    <cwg-exmh@DeepEddy.Com>) by austin-jump.vircio.com (qmail-ldap-1.03) with
+    SMTP for <exmh-workers@redhat.com>; 21 Aug 2002 15:17:16 -0000
+Received: (qmail 26730 invoked from network); 21 Aug 2002 15:17:16 -0000
+Received: from localhost (HELO deepeddy.vircio.com) ([127.0.0.1])
+    (envelope-sender <cwg-exmh@DeepEddy.Com>) by localhost (qmail-ldap-1.03)
+    with SMTP for <exmh-workers@redhat.com>; 21 Aug 2002 15:17:16 -0000
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4
+To: Robert Elz <kre@munnari.OZ.AU>
+Cc: Valdis.Kletnieks@vt.edu, exmh-workers@spamassassin.taint.org
+Subject: Re: New Sequences Window
+In-Reply-To: <8176.1029916867@munnari.OZ.AU>
+References: <200208210251.g7L2pqKb001805@turing-police.cc.vt.edu>
+    <1029882468.3116.TMDA@deepeddy.vircio.com> <8176.1029916867@munnari.OZ.AU>
+X-Url: http://www.DeepEddy.Com/~cwg
+X-Image-Url: http://www.DeepEddy.Com/~cwg/chris.gif
+MIME-Version: 1.0
+Content-Type: multipart/signed;
+    boundary="==_Exmh_-196335410P";
+    micalg=pgp-sha1;
+    protocol="application/pgp-signature"
+Content-Transfer-Encoding: 7bit
+Message-Id: <1029943035.26707.TMDA@deepeddy.vircio.com>
+From: Chris Garrigues <cwg-exmh@DeepEddy.Com>
+X-Delivery-Agent: TMDA/0.57
+Reply-To: Chris Garrigues <cwg-dated-1030375036.42fb92@DeepEddy.Com>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Wed, 21 Aug 2002 10:17:14 -0500
+
+--==_Exmh_-196335410P
+Content-Type: text/plain; charset=us-ascii
+
+> From:  Robert Elz <kre@munnari.OZ.AU>
+> Date:  Wed, 21 Aug 2002 15:01:07 +0700
+>
+>     Date:        Tue, 20 Aug 2002 22:51:52 -0400
+>     From:        Valdis.Kletnieks@vt.edu
+>     Message-ID:  <200208210251.g7L2pqKb001805@turing-police.cc.vt.edu>
+> 
+>   | Ever tried to get MH to *not* have a 'pseq' sequence?
+> 
+> Hmm - I've been using MH for a long time (since well before there were
+> sequences) and I don't think I've ever seen a "pseq" ...
+> 
+> I'm guessing that that's the sequence that you have "pick" create
+> As I recall it, it has no default sequence name, so the sequence names
+> that people use will tend to vary from person to person won't they
+> (except as MH configurations move around institutions by osmosis).
+> 
+> I've always used "sel" for that purpose.
+> 
+> I kind of doubt that any pre built-in sequence name is going to be
+> very general.   Even "unseen" can be changed (fortunately that one
+> is easy to find in the MH profile - though whether exmh does that,
+> os just uses "unseen" I haven't bothered to find out).
+
+I've never seen pseq either.
+
+BTW, it's kinda amusing for a short while to show the cur sequence.  Watching 
+that helped me find a number of bugs.
+
+Chris
+
+-- 
+Chris Garrigues                 http://www.DeepEddy.Com/~cwg/
+virCIO                          http://www.virCIO.Com
+716 Congress, Suite 200
+Austin, TX  78701		+1 512 374 0500
+
+  World War III:  The Wrong-Doers Vs. the Evil-Doers.
+
+
+
+
+--==_Exmh_-196335410P
+Content-Type: application/pgp-signature
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: Exmh version 2.2_20000822 06/23/2000
+
+iD8DBQE9Y676K9b4h5R0IUIRAt/rAJ9huaTFeBLHluu/vhFc1GWy3X+YywCgh0XF
+o7+XfPSIQbz9hkFFBMTYd1k=
+=969s
+-----END PGP SIGNATURE-----
+
+--==_Exmh_-196335410P--
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+

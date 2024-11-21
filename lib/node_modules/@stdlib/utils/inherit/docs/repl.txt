@@ -1,0 +1,39 @@
+
+{{alias}}( ctor, superCtor )
+    Prototypical inheritance by replacing the prototype of one constructor with
+    the prototype of another constructor.
+
+    This function is not designed to work with ES2015/ES6 classes. For
+    ES2015/ES6 classes, use `class` with `extends`.
+
+    Parameters
+    ----------
+    ctor: Object|Function
+        Constructor which will inherit.
+
+    superCtor: Object|Function
+        Super (parent) constructor.
+
+    Returns
+    -------
+    out: Object|Function
+        Child constructor.
+
+    Examples
+    --------
+    // Create a parent constructor:
+    > function Foo() { return this; };
+    > Foo.prototype.beep = function beep() { return 'boop'; };
+
+    // Create a child constructor:
+    > function Bar() { Foo.call( this ); return this; };
+
+    // Setup inheritance:
+    > {{alias}}( Bar, Foo );
+    > var bar = new Bar();
+    > var v = bar.beep()
+    'boop'
+
+    See Also
+    --------
+

@@ -1,0 +1,185 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6N0VwhY093085
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Mon, 22 Jul 2002 19:31:58 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6N0VvUA093080
+	for cypherpunks-forward@ds.pro-ns.net; Mon, 22 Jul 2002 19:31:57 -0500 (CDT)
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6N0VshX093028
+	for <cypherpunks@ds.pro-ns.net>; Mon, 22 Jul 2002 19:31:55 -0500 (CDT)
+	(envelope-from cpunks@ssz.com)
+X-Authentication-Warning: hq.pro-ns.net: Host cpunks@[207.200.56.4] claimed to be einstein.ssz.com
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id TAA25324
+	for cypherpunks@ds.pro-ns.net; Mon, 22 Jul 2002 19:40:22 -0500
+Received: (from mdom@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id TAA25215
+	for cypherpunks-outgoing; Mon, 22 Jul 2002 19:38:59 -0500
+Received: from imit.co.kr ([210.121.248.2])
+	by einstein.ssz.com (8.8.8/8.8.8) with ESMTP id TAA25196;
+	Mon, 22 Jul 2002 19:38:47 -0500
+Received: from diomedes.noc.ntua.gr ([61.11.75.119])
+	by imit.co.kr (8.10.2+Sun/8.10.2) with ESMTP id g6N0KjK22924;
+	Tue, 23 Jul 2002 09:20:56 +0900 (KST)
+Message-ID: <00004c601151$00000f50$00002e3f@relay.iol.ie>
+To: <Jim.Gilbert@cs.put.poznan.pl>
+From: "B2B Services" <Jim.Gilbert@cs.put.poznan.pl>
+Subject: Marketing your business via the Internet
+Date: Mon, 22 Jul 2002 17:27:55 -1900
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Mailer: Microsoft Outlook Express
+Sender: owner-cypherpunks@ssz.com
+Precedence: bulk
+Reply-To: cypherpunks@ssz.com
+X-Mailing-List: cypherpunks@ssz.com
+X-Unsubscription-Info: http://einstein.ssz.com/cdr
+X-List-Admin: list@ssz.com
+X-Loop: ssz.com
+X-Acceptable-Languages: English, Russian, German, French, Spanish
+
+<HTML>
+<HEAD><TITLE>Online Marketing Strategies</TITLE><META http-equiv=3DContent=
+-Type content=3D"text/html; 
+charset=3Dwindows-1252"><META content=3D"MSHTML 5.50.4134.100" name=3DGENE=
+RATOR><META content=3DFrontPage.Editor.Document name=3DProgId>
+    </HEAD><BODY vLink=3D#c0c0c0 link=3D#c0c0c0 bgColor=3D#FFFFFF leftMarg=
+in=3D0>
+     <DIV align=3Dcenter><CENTER><TABLE height=3D0 cellSpacing=3D0 cellPad=
+ding=3D0 width=3D500 border=3D0>
+	<TBODY><TR><TD width=3D"100%" height=3D200><P align=3Dcenter>
+	<FONT face=3D"Georgia, Times New Roman" size=3D7>
+	<B><FONT color=3D#08296b>Need More Clients?</FONT></B></FONT></P><P align=
+=3Dcenter>
+	<FONT face=3D"Times New Roman" size=3D5><B><FONT color=3D#ff0000>
+	Increase Your Sales 15%-40% Every Month!</FONT></B>
+<HR>
+<FONT color=3D#ff0000><B><FONT face=3D"Times, New Roman" color=3D#08296b s=
+ize=3D3>
+Targeted E-mail Marketing Is A Proven Method For Return Sales<br>
+</FONT></B>
+<FONT color=3D#000000 size=3D3>
+  With a database of over 150 million "targeted" addresses, we can reach y=
+our potential clients
+  anywhere in the world.  Our staff creates interactive ad campaigns, spec=
+ifically targeted to 
+  your client base, and designed to produce staggering responses for your =
+business.  A steady 
+  lead source can make sure your sales team will consistently close deals.
+</FONT>
+<P>
+   <FONT face=3D"Times, New Roman" size=3D3><B><FONT color=3D#08296b>The G=
+reatest 
+      Return On Your Marketing Dollar</FONT></B>
+<FONT color=3D#000000><BR><FONT size=3D3>Targeted e-mail marketing is the =
+most effective way to reach
+global and local markets with a small expense compared to that of conventi=
+onal marketing.  
+Quality work and a dedicated professional staff will ensure your ad campai=
+gn to be successful.  
+Put our educated team of marketers to work for you.<br><br></B></FONT></p>=
+</tr></td></tbody>
+<P>
+<TABLE width=3D400 border=3D0>
+  <TBODY>
+  <TR>
+    <TD align=3Dmiddle><FONT color=3D#08296b size=3D4>Fill out the form be=
+low to speak
+with one <br>of our marketing specialists.</FONT></TD></TR></TBODY></TABLE=
+>
+<P><FONT color=3D#08296b size=3D2>Required Input Field<FONT color=3D#ff000=
+0
+size=3D2>*</FONT></FONT> 
+<P>
+<TABLE cellSpacing=3D0 borderColorDark=3D#333300 cellPadding=3D3 width=3D6=
+00 
+borderColorLight=3D#ffffcc>
+  <TBODY>
+  <TR>
+    <TD align=3Dmiddle>
+      <FORM action=3Dmailto:inbocks1802@firemail.de?subject=3DE-marketing_=
+Inquiry 
+      method=3Dpost encType=3Dtext/plain>
+      <TABLE width=3D"100%">
+        <TBODY>
+        <TR>
+          <TD align=3Dright width=3D"50%"><FONT 
+            face=3D"Times, New Roman" color=3D#08296b
+          size=3D2>Name</FONT><FONT 
+            face=3D"Arial, Helvetica, sans-serif" color=3D#ff0000
+            size=3D2>*</FONT></TD>
+          <TD><INPUT name=3DNAME></TD></TR>
+        <TR>
+          <TD align=3Dright width=3D"50%"><FONT 
+            face=3D"Times, New Roman" color=3D#08296b size=3D2>Web 
+            Address</FONT></TD>
+          <TD><INPUT value=3Dhttp:// name=3DURL></TD></TR>
+        <TR>
+          <TD align=3Dright width=3D"50%"><FONT 
+            face=3D"Times, New Roman" color=3D#08296b size=3D2>Company 
+            Name</FONT><FONT 
+            face=3D"Times, New Roman" color=3D#ff0000
+            size=3D2>*</FONT></TD>
+          <TD><INPUT name=3DCOMPANY_NAME></TD></TR>
+        <TR>
+          <TD align=3Dright width=3D"50%"><FONT 
+            face=3D"Times, New Roman" color=3D#08296b size=3D2>
+            State</FONT><FONT 
+            face=3D"Arial, Helvetica, sans-serif" color=3D#ff0000 
+            size=3D2>*</FONT></TD>
+          <TD><INPUT size=3D2 name=3DSTATE></TD></TR>
+        <TR>
+          <TD align=3Dright width=3D"50%"><FONT 
+            face=3D"Times, New Roman" color=3D#08296b size=3D2>Business 
+            Phone</FONT><FONT 
+            face=3D"Arial, Helvetica, sans-serif" color=3D#ff0000 
+            size=3D2>*</FONT></TD>
+          <TD><INPUT name=3DBUS_PHONE></TD></TR>
+        <TR>
+          <TD align=3Dright width=3D"50%"><FONT 
+            face=3D"Times, New Roman" color=3D#08296b size=3D2>Home 
+            Phone</FONT></TD>
+          <TD><INPUT name=3DHOME_PHONE></TD></TR>
+        <TR>
+          <TD align=3Dright width=3D"50%"><FONT 
+            face=3D"Times, New Roman" color=3D#08296b size=3D2>Email 
+            Address</FONT><FONT 
+            face=3D"Arial, Helvetica, sans-serif" color=3D#ff0000 
+            size=3D2>*</FONT></TD>
+          <TD><INPUT name=3DEMAIL></TD></TR>
+        <TR>
+          <TD align=3Dright width=3D"50%"><FONT 
+            face=3D"Times, New Roman" color=3D#08296b size=3D2>Type of 
+            Business</FONT></TD>
+          <TD><INPUT name=3DTYPE_OF_BUSINESS></TD></TR></TBODY></TABLE>
+      <P><INPUT type=3Dsubmit value=3D"Submit Information" name=3Dsubmit> 
+    </FORM></P></TD></TR></TBODY></TABLE>
+<BR><BR>
+<TABLE width=3D500>
+  <TBODY>
+  <TR>
+    <TD align=3Dmiddle><FONT face=3D"Times, New Roman" color=3D#08296b
+      size=3D1>To be removed, please  
+      <A href=3D"mailto:d_lete5634@lycos.co.uk?subject=3DRemove_E-marketin=
+g">Click 
+      here.<FONT color=3D#666600></A></FONT>.</FONT></TD></TR></TBODY></TA=
+BLE></P></CENTER></BODY></HTML>
+
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

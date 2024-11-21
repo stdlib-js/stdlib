@@ -1,0 +1,66 @@
+From fork-admin@xent.com  Fri Aug 23 11:08:56 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A091D47C70
+	for <jm@localhost>; Fri, 23 Aug 2002 06:06:56 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 23 Aug 2002 11:06:56 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7N5EVZ11380 for <jm@jmason.org>;
+    Fri, 23 Aug 2002 06:14:32 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 0B70E2940D7; Thu, 22 Aug 2002 22:12:10 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from crank.slack.net (slack.net [166.84.151.181]) by xent.com
+    (Postfix) with ESMTP id 4A7D2294099 for <fork@xent.com>; Thu,
+    22 Aug 2002 22:11:44 -0700 (PDT)
+Received: by crank.slack.net (Postfix, from userid 596) id 8F5E23EDE0;
+    Fri, 23 Aug 2002 01:15:29 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1]) by crank.slack.net
+    (Postfix) with ESMTP id 8DD423ECF3; Fri, 23 Aug 2002 01:15:29 -0400 (EDT)
+From: Tom <tomwhore@slack.net>
+To: Robert Harley <harley@argote.ch>
+Cc: fork@spamassassin.taint.org
+Subject: Re: Entrepreneurs
+In-Reply-To: <20020823005705.D63AEC44E@argote.ch>
+Message-Id: <Pine.BSO.4.44.0208230113400.8637-100000@crank.slack.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 23 Aug 2002 01:15:29 -0400 (EDT)
+
+On Fri, 23 Aug 2002, Robert Harley wrote:
+
+
+--]It's an amusing anecdote, I don't know if it's true or not, but certainly
+--]nothing here supports the authoritative sounding conclusion "Status: False".
+--]
+
+So thats the trick, just let any anecdotal utterances you LIKE be deemed
+true until proven false, and then hold other data to the opposite
+standard...
+
+Yeah, I see how that could be a handy tool RH.
+
+
+(before teh lablemongers are out and about, I could give a shit what
+BubbaU utters, its all shite. Kill your idols folks, your slips are
+showing)
+
+-tom
+
+http://xent.com/mailman/listinfo/fork
+

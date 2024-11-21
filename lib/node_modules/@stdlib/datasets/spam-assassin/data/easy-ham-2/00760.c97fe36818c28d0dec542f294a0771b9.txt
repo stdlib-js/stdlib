@@ -1,0 +1,95 @@
+From exmh-users-admin@redhat.com  Tue Aug  6 11:48:03 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5F73C441CE
+	for <jm@localhost>; Tue,  6 Aug 2002 06:43:42 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:43:42 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7687Xk18217 for
+    <jm-exmh@jmason.org>; Tue, 6 Aug 2002 09:07:34 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 7CE913EEBB; Tue,  6 Aug 2002
+    04:06:01 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 723A93EA9C
+    for <exmh-users@listman.redhat.com>; Tue,  6 Aug 2002 04:05:04 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g76853R12509 for exmh-users@listman.redhat.com; Tue, 6 Aug 2002
+    04:05:03 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g76853q12504 for
+    <exmh-users@redhat.com>; Tue, 6 Aug 2002 04:05:03 -0400
+Received: from oxmail.ox.ac.uk (oxmail1.ox.ac.uk [129.67.1.2]) by
+    mx1.redhat.com (8.11.6/8.11.6) with SMTP id g767qAl28804 for
+    <exmh-users@redhat.com>; Tue, 6 Aug 2002 03:52:10 -0400
+Received: from heraldgate2.oucs.ox.ac.uk ([163.1.2.50]
+    helo=frontend2.herald.ox.ac.uk) by oxmail.ox.ac.uk with esmtp (Exim 3.36
+    #1) id 17bzKv-0006kv-01 for exmh-users@redhat.com; Tue, 06 Aug 2002
+    09:05:01 +0100
+Received: from fepa.biop.ox.ac.uk ([163.1.16.72] ident=baaden) by
+    frontend2.herald.ox.ac.uk with esmtp (Exim 3.32 #1) id 17bzKv-0000mo-00
+    for exmh-users@redhat.com; Tue, 06 Aug 2002 09:05:01 +0100
+X-Mailer: exmh version 2.5 07/13/2001 (debian 2.3.1-1) with nmh-1.0.4+dev
+To: exmh-users@spamassassin.taint.org
+Subject: inbox mail notification broken
+X-Image-Url: http://crypt.u-strasbg.fr/marc/m-baaden.gif
+X-Url: <http://www.marc-baaden.de>
+X-Face: -Nz&SN]%I8g9WFR#/!fe9se!_G_OndNloj@t+6jrGsoZ<t!|,TdYAQE<N8Yz|X>"z)?an0n
+    P!Nls~*o?u7fy:]1N|^^(KX*uE>Nk{bHaCJ)(hXF~E#5)j.k0n4hgfIzpmn,[VY'\7X:;VOZ\CItIq
+    G!2f8,k2`VLrkXQ:<.3LxEQ'E-;d:A)V#
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+From: Marc Baaden <baaden@smplinux.de>
+Message-Id: <E17bzKv-0000mo-00@frontend2.herald.ox.ac.uk>
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Tue, 06 Aug 2002 09:04:58 +0100
+
+
+Hi,
+
+I am experiencing a strange problem since a couple of days now,
+I have several folders with unseen sequences, and when there is
+new mail they are highlighted. This works fine.
+
+But .. since a couple of days the actual inbox won't be highlighted
+any more when there is new mail. On the other hand the unseen window
+still indicates if there is new mail in the inbox.
+
+All other folders seem to work properly.
+
+Any hints ?
+
+  Marc Baaden
+
+-- 
+ Dr. Marc Baaden - Laboratory of Molecular Biophysics, Oxford University
+ mailto:baaden@smplinux.de  - ICQ# 11466242 -  http://www.marc-baaden.de
+ FAX/Voice +49 697912 39550  -  Tel: +44 1865 275380  or  +33 609 843217
+
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

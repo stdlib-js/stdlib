@@ -1,0 +1,102 @@
+From razor-users-admin@lists.sourceforge.net  Mon Jul 22 20:20:41 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id EBB5D440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 15:20:39 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 20:20:39 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6MJJI419748 for <jm-razor@jmason.org>; Mon, 22 Jul 2002 20:19:18 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17Wiad-0000vc-00; Mon,
+    22 Jul 2002 12:11:27 -0700
+Received: from dsl-sj-66-219-68-222.broadviewnet.net ([66.219.68.222]
+    helo=455scott.com) by usw-sf-list1.sourceforge.net with esmtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17Wia1-0007nT-00 for
+    <razor-users@lists.sourceforge.net>; Mon, 22 Jul 2002 12:10:49 -0700
+Received: from chad by 455scott.com with local (Exim 4.04) id
+    17WiZx-0003Cy-00; Mon, 22 Jul 2002 12:10:45 -0700
+From: Chad Norwood <chad@samo.org>
+To: Scott Augustus <scott@visgen.com>
+Cc: razor-users@example.sourceforge.net
+Message-Id: <20020722191045.GA12317@455scott.com>
+References: <1027348751.3d3c190f9c408@webmail.visgen.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <1027348751.3d3c190f9c408@webmail.visgen.com>
+User-Agent: Mutt/1.4i
+Subject: [Razor-users] Re: Razor Server Error
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Mon, 22 Jul 2002 12:10:45 -0700
+Date: Mon, 22 Jul 2002 12:10:45 -0700
+
+
+  There was a server bug on the backup discovery server.  
+  It's fixed now.
+
+  cheers,
+  chad
+
+
+On 22/07/02 10:39 -0400, Scott Augustus wrote:
+) Can anyone offer some insight into the following error?  I am able to pipe mail 
+) through razor-check as root and it works fine but when it goes through the user 
+) filter via postfix I get the errors below.  What's strange is that this just 
+) started, I've made no changes, and it was running beautifully for days.
+) 
+) The goods:
+) 
+) Jul 22 10:59:39.878996 check[29891]: [ 1] [bootup] Logging initiated 
+) LogDebugLevel=3 to file:razor-agent.log
+) Jul 22 10:59:39.880196 check[29891]: [ 2]  Razor-Agents v2.12 starting razor-
+) check
+) Jul 22 10:59:41.929484 check[29891]: [ 3] Unable to connect to ARRAY
+) (0x80ff3c8):2703; Reason: Invalid argument.
+) Jul 22 10:59:41.934032 check[29891]: [ 1] vr4_signature: Bad ep4:
+) Jul 22 10:59:41.935634 check[29891]: [ 3] Unable to connect to ARRAY
+) (0x80ff3c8):2703; Reason: Invalid argument.
+) Jul 22 10:59:41.936022 check[29891]: [ 1] razor-check error: checkit: connect1: 
+) nextserver: No Razor servers available at this time
+) 
+) TIA!
+) 
+) ~S~
+) 
+) 
+) -------------------------------------------------------
+) This sf.net email is sponsored by:ThinkGeek
+) Welcome to geek heaven.
+) http://thinkgeek.com/sf
+) _______________________________________________
+) Razor-users mailing list
+) Razor-users@lists.sourceforge.net
+) https://lists.sourceforge.net/lists/listinfo/razor-users
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

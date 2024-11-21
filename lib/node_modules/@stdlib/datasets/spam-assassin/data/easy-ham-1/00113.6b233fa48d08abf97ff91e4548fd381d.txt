@@ -1,0 +1,91 @@
+From ilug-admin@linux.ie  Mon Oct  7 12:07:14 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id 6D27A16F6E
+	for <zzzz@localhost>; Mon,  7 Oct 2002 12:05:06 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 07 Oct 2002 12:05:06 +0100 (IST)
+Received: from lugh.tuatha.org (postfix@lugh.tuatha.org [194.125.145.45])
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g97APTK27468 for
+    <zzzz-ilug@spamassassin.taint.org>; Mon, 7 Oct 2002 11:25:29 +0100
+Received: from lugh.tuatha.org (localhost [127.0.0.1]) by lugh.tuatha.org
+    (Postfix) with ESMTP id A8C0D3410E; Mon,  7 Oct 2002 11:26:12 +0100 (IST)
+Delivered-To: linux.ie-ilug@localhost
+Received: from balder.idiotfarm.org (unknown [195.7.52.129]) by
+    lugh.tuatha.org (Postfix) with ESMTP id 561A4340D5 for <ilug@linux.ie>;
+    Mon,  7 Oct 2002 11:25:23 +0100 (IST)
+Received: by balder.idiotfarm.org (Postfix, from userid 1000) id A50094843;
+    Mon,  7 Oct 2002 11:32:54 +0100 (IST)
+To: Declan de Lacy Murphy <decdelmur@iol.ie>
+Cc: ilug@linux.ie
+Subject: Re: [ILUG] adsl router modem combo
+Message-Id: <20021007103254.GA1714@torb.mine.nu>
+Mail-Followup-To: tor@torb.mine.nu,
+	Declan de Lacy Murphy <decdelmur@iol.ie>, ilug@linux.ie
+References: <00bc01c26d85$20bb29d0$578691c2@1wzffgdp93mz5jv>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <00bc01c26d85$20bb29d0$578691c2@1wzffgdp93mz5jv>
+User-Agent: Mutt/1.4i
+From: tor@torb.mine.nu (Tor)
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Beenthere: ilug@linux.ie
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:ilug-request@linux.ie?subject=help>
+List-Post: <mailto:ilug@linux.ie>
+List-Subscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=subscribe>
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+List-Unsubscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=unsubscribe>
+List-Archive: <http://www.linux.ie/pipermail/ilug/>
+X-Original-Date: Mon, 7 Oct 2002 11:32:54 +0100
+Date: Mon, 7 Oct 2002 11:32:54 +0100
+
+On Sun, Oct 06, 2002 at 11:10:05PM +0100, Declan de Lacy Murphy wrote:
+> I am planning to get i-stream solo and share it across a small network
+> (wireless), but I don't want to have to pay eircom for a router and having a
+> noisy pc running constantly isn't really an option because at home
+> inevitably someone will unplug it.
+> 
+> I have been looking at a number of products and although I read the thread
+> about eircom needing pppoe last august I am still not sure if the one that I
+> am interested in will do the job. It is a hawking technology ar 710
+>  http://www.hawkingtech.com/products/ar710.htm ) and if it does the job it
+> will actually be cheaper than the modem eircom is selling.
+> 
+> I would really appreciate if someone could look at the spec on the hawking
+> web page and give me an opinion.
+> 
+> Thanks in advance
+> 
+> Declan
+> 
+
+I got the DSL-W 906E from http://www.dsl-warehouse.co.uk.
+
+Though it's not at all the best one around I have to say it does the job
+and a bit. Some of the features can be a pain to get working (ie. pptp in
+pppoe mode - can't figure it out). The documentation is not the best, but
+the guys from http://www.dsl-warehouse.co.uk will help you ouit. They
+also have a message board.
+
+The command line interface is quite powerful, but absolutely not
+userfriendly.
+
+All in all it's a cheap desent performer, that I am happy enough with.
+Got this one including a microfilter (not needed) for 140euro including
+shipping. Better than any deal from Eircom.
+
+-Tor
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

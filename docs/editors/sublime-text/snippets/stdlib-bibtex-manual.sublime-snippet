@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[@manual{id,
+	keywords = {},
+	title = {{}},
+	url = {}
+}
+]]></content>
+
+    <!-- Tab trigger to activate the snippet -->
+    <tabTrigger>stdlib.manual</tabTrigger>
+
+    <!-- Scope the tab trigger will be active in -->
+    <scope>text.bibtex</scope>
+
+    <!-- Description to show in the menu -->
+    <description>BibTeX manual template</description>
+</snippet>

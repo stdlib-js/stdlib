@@ -1,0 +1,101 @@
+From neugens@libero.it  Fri Aug 23 11:04:42 2002
+Return-Path: <neugens@libero.it>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BED4A44164
+	for <jm@localhost>; Fri, 23 Aug 2002 06:03:50 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 23 Aug 2002 11:03:50 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7MJiiZ22036 for
+    <jm@jmason.org>; Thu, 22 Aug 2002 20:44:44 +0100
+Received: from outgoing.securityfocus.com (outgoing2.securityfocus.com
+    [66.38.151.26]) by webnote.net (8.9.3/8.9.3) with ESMTP id UAA06503 for
+    <jm@jmason.org>; Thu, 22 Aug 2002 20:44:51 +0100
+Received: from lists.securityfocus.com (lists.securityfocus.com
+    [66.38.151.19]) by outgoing.securityfocus.com (Postfix) with QMQP id
+    3B4388F353; Thu, 22 Aug 2002 12:41:59 -0600 (MDT)
+Mailing-List: contact secprog-help@securityfocus.com; run by ezmlm
+Precedence: bulk
+List-Id: <secprog.list-id.securityfocus.com>
+List-Post: <mailto:secprog@securityfocus.com>
+List-Help: <mailto:secprog-help@securityfocus.com>
+List-Unsubscribe: <mailto:secprog-unsubscribe@securityfocus.com>
+List-Subscribe: <mailto:secprog-subscribe@securityfocus.com>
+Delivered-To: mailing list secprog@securityfocus.com
+Delivered-To: moderator for secprog@securityfocus.com
+Received: (qmail 10062 invoked from network); 22 Aug 2002 17:41:11 -0000
+Content-Type: text/plain; charset="us-ascii"
+From: Mario Torre <neugens@libero.it>
+To: secprog@securityfocus.com
+Subject: Encryption approach to secure web applications
+Date: Thu, 22 Aug 2002 20:15:15 +0200
+User-Agent: KMail/1.4.1
+MIME-Version: 1.0
+Message-Id: <200208222015.15926.neugens@libero.it>
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g7MJiiZ22036
+
+Hi everybody!
+
+I'm writing a web application in java (tomcat + jsp/servlets + database 
+access with postgreSQL).
+
+This will be released under the GPL and will eventually be useful as a 
+framework for other web applications.
+
+The application main focus is e-commerce, but not limited to that.
+
+I would like to use some form of cryptography to protect data on the 
+database, but I have some problem figuring out the right approach.
+
+Above all, how to store passwords and keys in a shared web server.
+
+A problem that I was unable to solve is how to store keys for 
+encryption/decryption. The api that I'm using is the jca (jdk1.4.x), 
+and the methods of saving generated keys in keystores fails always. 
+
+I can serialize the object, and store in the database, but this is not 
+the most secure approach: this key is needed to decrypt data in the 
+database, but the database is accessible from the web application. 
+Assuming that I can find a good and secure place where to store the 
+database password, I can use a different database with different 
+user... Argh... to complex and doesn't really solve the problem.
+
+Where I can found good documentation about this topic?
+
+There is another approach that I would share with the list, something I 
+thought that can be of bit interest, but probabily wrong and insecure. 
+After all, I'm a real beginner in secure programming, and I'm here to 
+learn methods and technics.
+
+First of all, I need a secure way to keep database passwords secure, so 
+I have to keep them separate from the main server. The right approach 
+could be using a small java bean application that run as normal user 
+(not tomcat, so it is not shared with other web services or, worst, the 
+nobody user), that has no shell login, but has a default home directory 
+or a place where it can hold passwords and keys.
+
+The web application could then open an ssl connection (could be done in 
+the init method at server startup) to get database passwords. The small 
+bean could check via code signature/rmi/whatever else that the source 
+is the right one, and handle all the database connections, or give the 
+db connection/password to the main web application.
+
+In this way, we solve the problem of keeping the keys and passwords in 
+shared directories, and also, an attacker should get root/bean user 
+account to read data. This is not perfect, and works only if your 
+provider gives the opportunity to configure a separated java 
+application (that means, really, another server running in the 
+background).
+
+Any suggestions?
+
+Thank you,
+Mario Torre
+-- 
+Please avoid sending me Word or PowerPoint attachments.
+See http://www.fsf.org/philosophy/no-word-attachments.html 
+

@@ -1,0 +1,36 @@
+From quinlan@pathname.com  Fri Sep 20 11:28:07 2002
+Return-Path: <quinlan@pathname.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 2948016F16
+	for <jm@localhost>; Fri, 20 Sep 2002 11:28:06 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 20 Sep 2002 11:28:06 +0100 (IST)
+Received: from proton.pathname.com
+    (adsl-216-103-211-240.dsl.snfc21.pacbell.net [216.103.211.240]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8JLUVC04528 for
+    <jm@jmason.org>; Thu, 19 Sep 2002 22:30:31 +0100
+Received: from quinlan by proton.pathname.com with local (Exim 3.35 #1
+    (Debian)) id 17s8t2-0003Io-00; Thu, 19 Sep 2002 14:31:00 -0700
+To: yyyy@spamassassin.taint.org (Justin Mason)
+Cc: Matt Kettler <mkettler_sa@comcast.net>,
+	SpamAssassin-devel@lists.sourceforge.net
+Subject: Re: [SAdev] phew!
+References: <20020919113604.D475F16F1C@spamassassin.taint.org>
+From: Daniel Quinlan <quinlan@pathname.com>
+Date: 19 Sep 2002 14:31:00 -0700
+In-Reply-To: yyyy@spamassassin.taint.org's message of "Thu, 19 Sep 2002 12:35:59 +0100"
+Message-Id: <yf2elbpwtt7.fsf@proton.pathname.com>
+X-Mailer: Gnus v5.7/Emacs 20.7
+
+jm@jmason.org (Justin Mason) writes:
+
+> Yes -- 50% of the entire set for training and 50% for evaluation.
+
+Once you've settled on the final method for any one release, why not
+use 100% of the data for a final run?
+ 
+Dan
+
+

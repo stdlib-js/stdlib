@@ -1,0 +1,76 @@
+From rpm-list-admin@freshrpms.net  Mon Jul 22 19:20:30 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 73FF5440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 14:20:29 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 19:20:29 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFxpY15557 for
+    <jm-rpm@jmason.org>; Mon, 22 Jul 2002 16:59:51 +0100
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by webnote.net
+    (8.9.3/8.9.3) with ESMTP id SAA28470 for <jm-rpm@jmason.org>;
+    Sun, 21 Jul 2002 18:57:57 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6LHn1C32167; Sun, 21 Jul 2002 19:49:01
+    +0200
+Received: from hall.mail.mindspring.net (hall.mail.mindspring.net
+    [207.69.200.60]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g6LHm8C25289 for <rpm-list@freshrpms.net>; Sun, 21 Jul 2002 19:48:08 +0200
+Received: from user-1121pr6.dialup.mindspring.com ([66.32.231.102]) by
+    hall.mail.mindspring.net with esmtp (Exim 3.33 #1) id 17WKoQ-0005WC-00 for
+    rpm-list@freshrpms.net; Sun, 21 Jul 2002 13:48:06 -0400
+Subject: Re: Ximian apt repos?
+From: Chris Weyl <cweyl@mindspring.com>
+To: rpm-zzzlist@freshrpms.net
+In-Reply-To: <20020721091108.085bee34.kilroy@kamakiriad.com>
+References: <1027203479.5354.14.camel@athena>
+    <20020720211551.6fb70f27.kilroy@kamakiriad.com>
+    <1027218043.3516.5.camel@localhost.localdomain>
+    <20020721051108.0fd207d5.che666@uni.de>
+    <20020721142007.03c02bc4.che666@uni.de>
+    <1027252799.12983.0.camel@localhost.localdomain>
+    <20020721145013.4dc253d6.che666@uni.de>
+    <20020721151211.7140ecdb.che666@uni.de>
+    <20020721091108.085bee34.kilroy@kamakiriad.com>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8
+Message-Id: <1027274164.11896.10.camel@athena>
+MIME-Version: 1.0
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: 21 Jul 2002 12:56:03 -0500
+Date: 21 Jul 2002 12:56:03 -0500
+
+On Sun, 2002-07-21 at 09:11, Brian Fahrlander wrote:
+>
+>     Server problems? Or is this a way to limit bandwidth?
+
+"Captain, I sense a need to mirror...."   :-)
+
+If I wasn't on DSL I would.
+
+			-Chris
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

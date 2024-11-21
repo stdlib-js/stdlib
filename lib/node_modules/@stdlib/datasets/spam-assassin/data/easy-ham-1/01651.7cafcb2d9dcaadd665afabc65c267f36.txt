@@ -1,0 +1,26 @@
+Return-Path: skip@pobox.com
+Delivery-Date: Fri Sep  6 16:12:58 2002
+From: skip@pobox.com (Skip Montanaro)
+Date: Fri, 6 Sep 2002 10:12:58 -0500
+Subject: [Spambayes] Deployment
+In-Reply-To: <200209061443.g86Ehie14557@pcp02138704pcs.reston01.va.comcast.net>
+References: <3D788653.9143.1D8992DA@localhost>
+        <200209061443.g86Ehie14557@pcp02138704pcs.reston01.va.comcast.net>
+Message-ID: <15736.50682.911121.462698@12-248-11-90.client.attbi.com>
+
+
+    >> Ultimately I'd like to see tight integration into the "most popular
+    >> email clients"..
+
+The advantage of using a kitchen sink (umm, make that highly programmable)
+editor+email package like Emacs+VM is that you can twiddle your key bindings
+and write a little ELisp (or Pymacs) glue to toss messages in the right
+direction (spam or ham).  For this, spambayes would have to operate in an
+incremental fashion when fed a single ham or spam message.
+
+(No, I have no idea what an "auto-ham" is.  A pig run over by a car,
+perhaps?)
+
+give-a-dog-a-bone-ly, y'rs,
+
+Skip

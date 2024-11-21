@@ -1,0 +1,92 @@
+From ilug-admin@linux.ie  Fri Jul 19 16:13:14 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id AAE0D440C9
+	for <jm@localhost>; Fri, 19 Jul 2002 11:13:14 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 16:13:14 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JFBCJ07539 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 16:11:12 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA11755; Fri, 19 Jul 2002 16:10:33 +0100
+Received: from lhidns.gov.ie ([193.1.228.222]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA11727 for <ilug@linux.ie>; Fri,
+    19 Jul 2002 16:10:26 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [193.1.228.222] claimed to
+    be lhidns.gov.ie
+Received: from gw.educ.irlgov.ie (educ-gw.gov.ie [192.168.6.1] (may be
+    forged)) by lhidns.gov.ie (8.9.3/8.9.3) with ESMTP id QAA25600 for
+    <ilug@linux.ie>; Fri, 19 Jul 2002 16:09:51 +0100
+Received: (from fwtk@localhost) by gw.educ.irlgov.ie (8.8.6/8.8.6) id
+    RAA04262 for <ilug@linux.ie>; Fri, 19 Jul 2002 17:29:21 +0100 (BST)
+Received: from unknown(10.0.0.13) by gw.educ.irlgov.ie via smap (V2.0) id
+    xma004255; Fri, 19 Jul 02 17:29:18 +0100
+Content-Class: urn:content-classes:message
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Subject: RE: [ILUG] OSI protocol
+X-Mimeole: Produced By Microsoft Exchange V6.0.5762.3
+Date: Fri, 19 Jul 2002 16:09:50 +0100
+Message-Id: <9C498074D5419A44B05349F5BF2C26301CFA3C@sdubtalex01.education.gov.ie>
+X-MS-Has-Attach: 
+X-MS-Tnef-Correlator: 
+Thread-Topic: [ILUG] OSI protocol
+Thread-Index: AcIvMUWcPHFhWEzbQb2IY/9SQjTTswABPM0A
+From: "Ryan, Shane" <Shane_Ryan@education.gov.ie>
+To: <ilug@linux.ie>
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    QAA11727
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Hi,
+
+I wasn't sure if that ever started up.
+what irc server is #ilug on?
+
+Regards,
+Shane
+
+-----Original Message-----
+From: Niall O Broin [mailto:niall@linux.ie]
+Sent: 19 July 2002 15:36
+To: ilug@linux.ie
+Subject: [ILUG] OSI protocol
+
+
+There's been some discussion just now on the ILUG IRC channel about OSI and
+protocol layers. This reminded me of a poster produced by Wandel &
+Goltermann (manufactureres of fine protocol decoders and testers) which
+illustrates this admirably. The poster is in the form of a PDF file and to
+be honest, is best appreciated if you have access to a HP DesignJet or
+somesuch device. Wandel & Goltermann has now become/been taken over by
+acterna and I couldn't find the poster there. However, it's available at
+http://www.pb.bib.de/~dozloh/fachinfo/sdn_16/decodes.pdf and some of you ma
+find it interesting.
+
+The top of the poster refers you to www.decodes.com for a more up to date
+online copy of the poster. However, www.decodes.com now is redirected to the
+aforementioned acterna and . . . .
+
+
+Niall
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

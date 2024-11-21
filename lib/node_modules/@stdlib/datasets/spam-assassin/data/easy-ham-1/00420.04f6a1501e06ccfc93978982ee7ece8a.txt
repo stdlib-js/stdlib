@@ -1,0 +1,137 @@
+From fork-admin@xent.com  Wed Sep  4 16:52:06 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id BE41F16F22
+	for <jm@localhost>; Wed,  4 Sep 2002 16:51:44 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 04 Sep 2002 16:51:44 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g84Fn1Z08711 for <jm@jmason.org>;
+    Wed, 4 Sep 2002 16:49:02 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id EE0762940A8; Wed,  4 Sep 2002 08:46:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mithral.com (watcher.mithral.com [204.153.244.1]) by
+    xent.com (Postfix) with SMTP id 1926F294099 for <fork@xent.com>;
+    Wed,  4 Sep 2002 08:45:45 -0700 (PDT)
+Received: (qmail 15964 invoked by uid 1111); 4 Sep 2002 15:48:11 -0000
+From: "Adam L. Beberg" <beberg@mithral.com>
+To: <fork@spamassassin.taint.org>
+Subject: EPA Stunned: Diesel Exhaust Can Cause Cancer
+Message-Id: <Pine.LNX.4.33.0209040831070.15920-100000@watcher.mithral.com>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 4 Sep 2002 08:48:11 -0700 (PDT)
+
+Glad they finally figured this one out... Note the very careful wording, so
+exhaust may be beneficial to ones health as long as you have a glass a day
+with some cheese.
+
+Interesting timing, since 16,000 truckers just lost their jobs and dont have
+to worry about death from this anymore.
+
+- Adam L. "Duncan" Beberg
+  http://www.mithral.com/~beberg/
+  beberg@mithral.com
+
+--------
+
+EPA: Diesel Exhaust Can Cause Cancer
+Wed Sep 4, 3:29 AM ET
+By H. JOSEF HEBERT, Associated Press Writer
+
+WASHINGTON (AP) - Inhaling diesel exhausts from large trucks and other
+sources over time can cause cancer in humans, an Environmental Protection
+Agency ( news - web sites) report concludes after a decade of study.
+
+The EPA finding, released Tuesday, is expected to buttress the government's
+push to reduce truck tailpipe emissions by requiring cleaner-burning engines
+and diesel fuel with ultra-low sulfur content.
+
+While acknowledging uncertainties about the long-term health effects of
+exposure to diesel exhausts, the EPA report said studies involving both
+animal tests and occupational exposure suggest strong evidence of a cancer
+risk to humans.
+
+"It is reasonable to presume that the hazard extends to environmental
+exposure levels" as well, the report said. "The potential human health
+effects of diesel exhausts is persuasive, even though assumptions and
+uncertainties are involved."
+
+The report mirrors conclusions made previously in documents from various
+world health agencies and studies in California and is particularly
+significant because the EPA is the federal agency that regulates diesel
+emissions under the Clean Air Act.
+
+Some environmentalists have raised concerns recently that the Bush
+administration might try to back away from a Clinton-era regulation that
+would establish tougher requirements on emissions from large trucks and a
+separate rule that virtually would eliminate sulfur from diesel fuel.
+
+EPA Administrator Christie Whitman repeatedly has promised to go ahead with
+the tougher truck and diesel rules. Last month, with White House approval,
+the EPA rebuffed attempts by some diesel engine manufacturers to postpone
+the requirements, approving new penalties against manufacturers who fail to
+meet an October deadline for making cleaner-burning truck engines.
+
+The engine rule does not affect emissions from trucks already on the road,
+although the separate regulation cutting the amount of sulfur in diesel fuel
+is expected to produce pollution reductions.
+
+The EPA's 651-page diesel health assessment did not attempt to estimate the
+probability of an individual getting cancer, given certain exposure to
+diesel exhaust. Such a risk assessment is commonly made by the EPA when
+gauging pollution health concerns.
+
+But in this case, the report said, "the exposure-response data are
+considered too uncertain" to produce a confident quantitative estimate of
+cancer risk to an individual.
+
+Nevertheless, said the report, the "totality of evidence from human, animal
+and other supporting studies" suggests that diesel exhaust "is likely to be
+carcinogenic to humans by inhalation, and that this hazard applies to
+environmental exposure."
+
+The report reiterated that environmental exposure to diesel exhausts poses
+short-term health problems and in the long term has been shown to be a
+"chronic respiratory hazard to humans" contributing to increased asthma and
+other respiratory problems. In some urban areas diesel exhausts account for
+as much as a quarter of the airborne microscopic soot, the report said.
+
+Environmentalists welcomed the study as clear evidence that pollution needs
+to be curtailed not only from large trucks but also from off-road
+diesel-powered vehicles. EPA spokeswoman Steffanie Bell said the agency
+expects to publish a rule early next year dealing with those diesel exhaust
+sources, which include farm tractors and construction equipment.
+
+Emily Figdor of the U.S. Public Interest Research Group, a private
+environmental organization, said: "To reduce the public's exposure to
+harmful diesel emissions, the Bush administration should ... fully implement
+clean air standards for diesel trucks and buses and should pass equivalent
+standards for diesel construction and farm equipment."
+
+Allen Schaeffer, executive director of the industry group Diesel Technology
+Forum, said the EPA's report "focused on the past," whereas "the future is
+clean diesel. Diesel trucks and buses built today are more than eight times
+cleaner than just a dozen years ago."
+
+The report acknowledged that its findings were based on emissions levels in
+the mid-1990s, but said the results continued to be valid because the slow
+turnover of truck engines has kept many of these vehicles on the road.
+
+
+

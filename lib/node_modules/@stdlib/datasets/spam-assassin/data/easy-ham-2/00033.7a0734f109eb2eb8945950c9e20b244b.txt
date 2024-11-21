@@ -1,0 +1,61 @@
+From social-admin@linux.ie  Mon Jul 22 19:21:29 2002
+Return-Path: <social-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6C3E6440C9
+	for <jm@localhost>; Mon, 22 Jul 2002 14:21:28 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 19:21:28 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MG2KY17046 for
+    <jm+ilug-social@jmason.org>; Mon, 22 Jul 2002 17:02:20 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id XAA25138 for
+    <jm+ilug-social@jmason.org>; Sat, 20 Jul 2002 23:36:20 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id XAA05832; Sat, 20 Jul 2002 23:35:13 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from salmon.maths.tcd.ie (mmdf@salmon.maths.tcd.ie
+    [134.226.81.11]) by lugh.tuatha.org (8.9.3/8.9.3) with SMTP id XAA05792
+    for <social@linux.ie>; Sat, 20 Jul 2002 23:35:07 +0100
+Received: from salmon.maths.tcd.ie by salmon.maths.tcd.ie with SMTP id
+    <aa35964@salmon>; 20 Jul 2002 23:35:07 +0100 (BST)
+To: social@linux.ie
+Subject: Re: [ILUG-Social] Completely silent pc
+X-It'S: all good
+X-Wigglefluff: fuddtastic
+X-Zippy: ..  One FISHWICH coming up!!  ..Everything is....FLIPPING AROUND!!
+In-Reply-To: Your message of
+    "Sat, 20 Jul 2002 12:06:35 BST."
+    <Pine.GSO.4.10.10207201204580.2055-100000@matrix>
+Date: Sat, 20 Jul 2002 23:35:07 +0100
+From: Niall Brady <bradyn@maths.tcd.ie>
+Message-Id: <200207202335.aa35964@salmon.maths.tcd.ie>
+Sender: social-admin@linux.ie
+Errors-To: social-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group social events <social.linux.ie>
+X-Beenthere: social@linux.ie
+
+On Sat, 20 Jul 2002 12:06:35 BST, Greg Farrel said:
+>
+>D'oh. I ment to say that I cant use a laptop, as I have a pci wireless
+>card and the cable for it (about 180 dollars). So it has to be a pc, with
+>a pci 2.2 connector (ie some pentiums, and anything above)
+
+There's some place in the UK that sells loads of silent gear...
+can't remember the name though... a google for "silent pc" or the
+like should turn it up.
+
+-- 
+	Niall
+
+-- 
+Irish Linux Users' Group Social Events: social@linux.ie
+http://www.linux.ie/mailman/listinfo/social for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

@@ -1,0 +1,49 @@
+From rssfeeds@jmason.org  Sat Oct  5 10:37:21 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id EB39716F74
+	for <jm@localhost>; Sat,  5 Oct 2002 10:36:33 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 05 Oct 2002 10:36:33 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9580VK02525 for
+    <jm@jmason.org>; Sat, 5 Oct 2002 09:00:31 +0100
+Message-Id: <200210050800.g9580VK02525@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: boingboing <rssfeeds@spamassassin.taint.org>
+Subject: Phone companies compared
+Date: Sat, 05 Oct 2002 08:00:31 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://boingboing.net/#85524777
+Date: Not supplied
+
+The WSJ has published a round-up of phone companies, wired and wireless, 
+ranking them based on performance and price. They don't mention Nextel, whose 
+hullking milspec i700 handset I've been carrying for years now, with incredible 
+reception all over the US and Canada. Their front-line customer service sucks, 
+but the prices and network can't be beat. 
+
+    T-Mobile is in the midst of a massive makeover. In recent months, the 
+    company changed its name and launched an ad campaign featuring Ms. Zeta 
+    Jones. 
+
+    The company has a history worth hiding. T-Mobile, a subsidiary of Deutsche 
+    Telekom, is known for having a weak national network, and the FCC received 
+    1,466 complaints about the company in the past year, giving it one of the 
+    worst complaint rates in the industry. T-Mobile says their complaint rate 
+    has tapered off and that they have made substantial network improvements. 
+
+    But T-Mobile is the cheapest wireless provider, available, with an average 
+    cost of just 8.2 cents per minute. (Verizon, by contrast, costs 14.3 cents 
+    per minute.)  
+
+Link[1] Discuss[2] (_via Camworld[3]_)
+
+[1] http://www.msnbc.com/news/816517.asp
+[2] http://www.quicktopic.com/boing/H/VKy7KfS2A7jUZ
+[3] http://www.camworld.com
+
+

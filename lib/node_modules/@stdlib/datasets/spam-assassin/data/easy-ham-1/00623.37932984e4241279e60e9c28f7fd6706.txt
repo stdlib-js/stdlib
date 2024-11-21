@@ -1,0 +1,96 @@
+From fork-admin@xent.com  Thu Sep 19 11:04:48 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id EEB6716F03
+	for <jm@localhost>; Thu, 19 Sep 2002 11:04:45 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 19 Sep 2002 11:04:46 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8IH9dC08730 for <jm@jmason.org>;
+    Wed, 18 Sep 2002 18:09:40 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id AE2802940E9; Wed, 18 Sep 2002 10:06:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from argote.ch (argote.ch [80.65.224.17]) by xent.com (Postfix)
+    with ESMTP id 8967929409E for <fork@xent.com>; Wed, 18 Sep 2002 10:05:09
+    -0700 (PDT)
+Received: by argote.ch (Postfix, from userid 500) id 80FA1C44D;
+    Wed, 18 Sep 2002 19:07:52 +0200 (CEST)
+To: fork@spamassassin.taint.org
+Subject: Re: Defending Unliked Speech
+Message-Id: <20020918170752.80FA1C44D@argote.ch>
+From: harley@argote.ch (Robert Harley)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 18 Sep 2002 19:07:52 +0200 (CEST)
+
+Gordon Mohr quoted:
+># French Writer Tried As Anti-Islam, Protest Erupts
+># By Caroline Brothers
+>#
+># PARIS (Reuters) - Provocative French novelist Michel Houellebecq
+># faced a Paris court on Tuesday for allegedly inciting racial hatred
+># by calling Islam "the stupidest religion" and its holy book the
+># Koran a depressing read.
+>#
+># The case, brought against him by four Muslim groups, is a cause
+># celebre reminiscent of the Salman Rushdie affair, pitting freedom of
+># expression against religious sensitivities.
+
+Very reminiscent indeed.  Ayatollah Chirac has decreed a death
+sentence on Houellebecq and liked-minded fundamentalists have offered
+millions of euros bounty for his head, so he has gone into hiding
+under police protection for a few years.
+
+Or maybe some handful of Muslims are acting uppity and dragging him to
+court under "hate speech" laws make a point about people not showin'
+dem da massive respect dat dey deserve, especially these days.
+
+Or maybe some journo is trying to fill column inches on a boring day.
+
+
+BTW I read Houellebecq's "Extension du domaine de la lutte" recently,
+about a depressed computer services dude working in Paris, looking for
+love and not finding it, slowing losing his marbles and trying to get
+a friend of his to kill a woman, and ending up in a clinic for
+nutcases...  Yikes!  Purposely provocative, very depressing, with some
+unbelievably boring passages where the anti-hero writes little stories
+about animals talking philosophical mumbo-jumbo to each other, quoted
+inline in full for pages on end.
+
+It starts out:
+
+"On Friday evening, I was invited to a party with some colleagues from
+work.  There were about thrity of us, all professionals aged from
+twenty-five to forty.  At one point, some cunt started getting
+undressed. She took off her T-shirt, then her bra, then her skirt, all
+the while making unbelievable faces.  She pranced around for a few
+seconds, then she started getting dresesd again because she didn't
+know what else to do.  Anyway she never sleeps with anyone.  Which
+underlines the absurdity of her behaviour.
+
+After my fourth glass of vodka I started to feel pretty bad so I had
+to go lie down on a bunch of cushions behind the couch.  Shortly after
+that, two girls came and sat on the couch.  Those girls are not pretty
+at all, the two fat office cows actually.  They go to eat together and
+read books about the development of language in children, all that
+sort of stuff."
+
+... and it's downhill from there!
+
+
+R
+
+

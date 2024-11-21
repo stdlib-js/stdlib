@@ -1,0 +1,88 @@
+From rpm-list-admin@freshrpms.net  Fri Aug 16 11:25:58 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BED5B4419C
+	for <jm@localhost>; Fri, 16 Aug 2002 06:03:07 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 16 Aug 2002 11:03:07 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7G8URa08794 for
+    <jm-rpm@jmason.org>; Fri, 16 Aug 2002 09:30:28 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7G8S1J10146; Fri, 16 Aug 2002 10:28:02
+    +0200
+Received: from bob.dudex.net (dsl092-157-004.wdc1.dsl.speakeasy.net
+    [66.92.157.4]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g7G8R0J28650
+    for <rpm-list@freshrpms.net>; Fri, 16 Aug 2002 10:27:00 +0200
+Received: from [66.92.157.3] (helo=www.dudex.net) by bob.dudex.net with
+    esmtp (Exim 3.35 #1) id 17fcRj-0005f2-00 for rpm-list@freshrpms.net;
+    Fri, 16 Aug 2002 04:27:03 -0400
+X-Originating-Ip: [4.64.217.36]
+From: "" Angles " Puglisi" <angles@aminvestments.com>
+To: "FreshRPMs List" <rpm-zzzlist@freshrpms.net>
+Subject: advice on 7.3.92 to 7.3.93, and Apt compiling
+Message-Id: <20020816.utj.20032800@www.dudex.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 8bit
+Content-Disposition: inline
+X-Mailer: AngleMail for phpGroupWare (http://www.phpgroupware.org) v
+    0.9.14.000
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Fri, 16 Aug 2002 08:28:39 +0000
+Date: Fri, 16 Aug 2002 08:28:39 +0000
+
+Any sage advice on the most painless way to upgrade from old limbo (.92) to new
+limbo (.93)?
+
+Apt for rpm from the 7.3 days barely works on Limbo1, and the package:
+apt-0.5.4cnc6-dwd2.src.rpm will not compile on the Libbo1 box (I was going to use
+that to dist-upgrade to Limbo2).
+
+Compile gave error on file "genpkglist.cc". First, it included "rpm/header.h" ok,
+but 2 other includes from that file (rpmio.h, hdrinline.h) could not be found. So I
+further patched the enviorment file to have "-I/usr/include/rpm".
+
+I guess that worked, but then I get this error (see below).
+
+Ohh... the pain. Any advice?
+
+
+Compiling genpkglist.cc (ed.)/rpm/BUILD/apt-0.5.4cnc6/obj/tools/genpkglist.o
+genpkglist.cc: In function `int main(int, char**)':
+genpkglist.cc:586: `rpmReadPackageHeader' undeclared (first use this function)
+genpkglist.cc:586: (Each undeclared identifier is reported only once for each
+   function it appears in.)
+genpkglist.cc:604:33: macro "headerFree" requires 2 arguments, but only 1 given
+genpkglist.cc:604: `headerFree' undeclared (first use this function)
+genpkglist.cc:605:25: macro "headerFree" requires 2 arguments, but only 1 given
+make[2]: *** [(ed.)/rpm/BUILD/apt-0.5.4cnc6/obj/tools/genpkglist.o] Error 1
+make[1]: *** [all] Error 2
+make: *** [all] Error 2
+error: Bad exit status from (ed.)/tmp/rpm-tmp.18285 (%build)
+
+--
+That's "angle" as in geometry.
+
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

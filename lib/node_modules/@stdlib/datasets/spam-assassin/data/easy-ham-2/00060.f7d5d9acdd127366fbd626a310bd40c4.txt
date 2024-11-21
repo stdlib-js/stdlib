@@ -1,0 +1,106 @@
+From ilug-admin@linux.ie  Fri Jul 19 15:05:54 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D6F9743FAD
+	for <jm@localhost>; Fri, 19 Jul 2002 10:05:39 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 15:05:39 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JE52J02557 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 15:05:02 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA08480; Fri, 19 Jul 2002 15:00:57 +0100
+Received: from linux.local ([195.218.108.86]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA08447 for <ilug@linux.ie>; Fri,
+    19 Jul 2002 15:00:49 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [195.218.108.86] claimed
+    to be linux.local
+Received: from linux.local (localhost [127.0.0.1]) by linux.local
+    (8.11.6/8.11.6/SuSE Linux 0.5) with ESMTP id g6JE0CX02325 for
+    <ilug@linux.ie>; Fri, 19 Jul 2002 15:00:12 +0100
+Message-Id: <200207191400.g6JE0CX02325@linux.local>
+To: Irish Linux Users Group <ilug@linux.ie>
+Reply-To: Irish Linux Users Group <ilug@linux.ie>
+Subject: Re: [ILUG] How to copy some files
+In-Reply-To: Message from Niall O Broin <niall@linux.ie> of
+    "Fri, 19 Jul 2002 14:28:42 BST."
+    <20020719132842.GA2506@bagend.makalumedia.com>
+X-Mailer: [nmh-1.0.4] MH.6.8, SuSE Linux 7.3
+X-Url: http://www.blf.utvinternet.ie
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Id: <2322.1027087211.1@linux.local>
+Date: Fri, 19 Jul 2002 15:00:12 +0100
+From: Brian Foster <blf@utvinternet.ie>
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    PAA08447
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+  | Date: Fri, 19 Jul 2002 14:28:42 +0100
+  | From: Niall O Broin <niall@linux.ie>
+  | 
+  | I have about 60G of data which I need to copy from one disk
+  | to another.  However, I'm not sure how I should best copy it.
+  | The problem is the bulk of the data is images and most of these
+  | image have two directory entries i.e. there is a hard link to
+  | each file.  If I copy them using cp -a or my usual favourite of
+  | find .|cpio -pmd other_dir  it's going to copy each file twice,
+  | which is not what I want. dump / restore would take care of this
+  | if the source filesystem wasn't reiserfs  :-(  Any suggestions ?
+
+ do your (and my) favourite, it'll be Ok:
+
+  1. cpio(1) preserves hard links, i.e., if F1 and F2 are
+     hard-linked and both are "copied", then the "copies"
+     are also hard-linked.  this is true of all `cpio's
+     (and `tar' and any other decent/usable archival tool,
+     by definition (IMHO)).
+
+  2. `cpio -p' (at least `GNU cpio version 2.4.2') will only
+     read/write (copy) the actual data bytes once.  I _think_
+     this is true for all `cpio's (not just that GNU version),
+     but am not certain.
+
+ if you use an intermediate archive, e.g.:
+
+    cpio -o ... >file;   ...;   cpio -i ... <file
+
+ then the actual data bytes are copied into the archive (file)
+ under each name (e.g., as both F1 and F2).  but GNU `cpio' is
+ smart about this in pass-through mode (`-p'), copying the data
+ just once (or so I read the source).
+
+cheers!
+	-blf-
+
+p.s. assuming this is a one-time operation that you won't repeat
+    anytime soon (e.g., never; i.e., time isn't a major issue),
+    and are not using any intermediate media/file (so storage
+    isn't an issue), then even if `cpio' did read the data twice,
+    so what? --- as long as, of course, it re-creates the hard
+    links.  which it will.
+
+--
+ Innovative, very experienced, Unix and      | Brian Foster    Dublin, Ireland
+ Chorus (embedded RTOS) kernel internals     | e-mail: blf@utvinternet.ie
+ expert looking for a new position ...       | mobile: (+353 or 0)86 854 9268
+  For a résumé, contact me, or see my website  http://www.blf.utvinternet.ie
+
+    Stop E$$o (ExxonMobile):  «Whatever you do, don't buy Esso --- they
+     don't give a damn about global warming.»    http://www.stopesso.com
+     Supported by Greenpeace, Friends of the Earth, and numerous others...
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

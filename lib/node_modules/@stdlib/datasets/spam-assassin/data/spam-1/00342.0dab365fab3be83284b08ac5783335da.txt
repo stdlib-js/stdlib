@@ -1,0 +1,65 @@
+From ilug-admin@linux.ie  Tue Sep 17 11:28:48 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id BB90F16F03
+	for <zzzz@localhost>; Tue, 17 Sep 2002 11:28:47 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Tue, 17 Sep 2002 11:28:47 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8GNjBC14706 for
+    <zzzz-ilug@jmason.org>; Tue, 17 Sep 2002 00:45:11 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id AAA20824; Tue, 17 Sep 2002 00:44:29 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from server759.instantinternetempires.net
+    (server759.instantinternetempires.net [216.10.23.30]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id AAA20786 for <ilug@linux.ie>; Tue,
+    17 Sep 2002 00:44:20 +0100
+Received: from nobody by server759.instantinternetempires.net with local
+    (Exim 3.36 #1) id 17r5X6-0003dr-00 for ilug@linux.ie; Mon, 16 Sep 2002
+    19:44:00 -0400
+To: ilug@linux.ie
+From: keegancorless@earthlink.net
+Content-Type: text/plain; charset=us-ascii
+X-Header: Reply-To: keegancorless@earthlink.net
+X-Loop-Prevention: 1
+Message-Id: <E17r5X6-0003dr-00@server759.instantinternetempires.net>
+Date: Mon, 16 Sep 2002 19:44:00 -0400
+X-Antiabuse: This header was added to track abuse, please include it with
+    any abuse report
+X-Antiabuse: Primary Hostname - server759.instantinternetempires.net
+X-Antiabuse: Original Domain - linux.ie
+X-Antiabuse: Originator/Caller UID/GID - [99 99] / [99 99]
+X-Antiabuse: Sender Address Domain - server759.instantinternetempires.net
+Subject: [ILUG] Here is the information you requested
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Are you interested in making some extra money on the internet?
+well have i got something for you. Last week i made $3500 ,I am offering you 5 yes 5 web sites that have already been made and are waiting for you to put up to make money with.  There is also a few videos that are included that tell you Exactly what you have to do to be successful. I am going to also Offer you the rights to the web pages and to 5 Ebooks that you can sell..  These Ebooks aren't just any Ebooks these are books on how to make money on the  internet.  I am selling this package deal for a short time only at the low price of $39.77 my friends all say that i am   Crazy.. The web site alone is worth over $1500 and its yours for only $39.77.  Each eBook you will receive is worth around $350.  my web page is. www.Home-Business-onthe-net.com . please come take a look. 
+if you have any questions please feel free to give me a email.
+if you'd like a Free Ebook just give me a email and ill  email you one ASAP.
+
+Sincerly 
+Your friend
+Keegan
+
+Click on the link below to remove yourself
+http://www.hotresponders.com/cgi-bin/varpro/r.cgi?id=keegan007&a=ilug@linux.ie
+
+AOL Users
+<a href="http://www.hotresponders.com/cgi-bin/varpro/r.cgi?id=keegan007&a=ilug@linux.ie"> Remove Me</a>
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

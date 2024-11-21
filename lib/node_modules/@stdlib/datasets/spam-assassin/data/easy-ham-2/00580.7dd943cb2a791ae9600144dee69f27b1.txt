@@ -1,0 +1,66 @@
+From razor-users-admin@lists.sourceforge.net  Wed Aug  7 05:32:39 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id CCAAC440C9
+	for <jm@localhost>; Wed,  7 Aug 2002 00:32:35 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 07 Aug 2002 05:32:35 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g774VQk09851 for <jm-razor@jmason.org>; Wed, 7 Aug 2002 05:31:26 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17cHvu-0002fh-00; Tue,
+    06 Aug 2002 20:56:26 -0700
+Received: from med-core07.med.wayne.edu ([146.9.19.23]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17cHto-0002Be-00 for <razor-users@lists.sourceforge.net>; Tue,
+    06 Aug 2002 20:54:16 -0700
+X-Mimeole: Produced By Microsoft Exchange V6.0.6249.0
+Content-Class: urn:content-classes:message
+MIME-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"
+Message-Id: <D79A56AD131896448D0860DEE07CBE1FA7DA@med-core07.med.wayne.edu>
+X-MS-Has-Attach: 
+X-MS-Tnef-Correlator: 
+Thread-Topic: Razor report don't seem to be getting logged
+Thread-Index: AcI5A80S1xgTPXyqR4KaEaLLb3GOEgEwfJWg
+From: "Rose, Bobby" <brose@med.wayne.edu>
+To: <razor-users@example.sourceforge.net>
+Subject: [Razor-users] Razor report don't seem to be getting logged
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Tue, 6 Aug 2002 23:54:09 -0400
+Date: Tue, 6 Aug 2002 23:54:09 -0400
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g774VQk09851
+
+For the past 2 days, nothing that I'm reporting seems to be in the
+database.  If I report something, and the check the response is coming
+back as none spam.  Is anyone else seeing this?
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

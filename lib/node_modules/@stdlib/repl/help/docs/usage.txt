@@ -1,0 +1,8 @@
+
+Usage: stdlib-alias-help [options] <alias>
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+

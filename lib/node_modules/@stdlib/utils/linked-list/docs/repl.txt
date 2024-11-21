@@ -1,0 +1,75 @@
+
+{{alias}}()
+    Linked list constructor.
+
+    Returns
+    -------
+    list: Object
+        Linked list.
+
+    list.clear: Function
+        Clears the list.
+
+    list.first: Function
+        Returns the last node. If the list is empty, the returned value is
+        `undefined`.
+
+    list.insert: Function
+        Inserts a value after a provided list node.
+
+    list.iterator: Function
+        Returns an iterator for iterating over a list. If an environment
+        supports Symbol.iterator, the returned iterator is iterable. Note that,
+        in order to prevent confusion arising from list mutation during
+        iteration, a returned iterator **always** iterates over a list
+        "snapshot", which is defined as the list of list elements at the time
+        of the method's invocation.
+
+    list.last: Function
+        Returns the last list node. If the list is empty, the returned value is
+        `undefined`.
+
+    list.length: integer
+        List length.
+
+    list.pop: Function
+        Removes and returns the last list value. If the list is empty, the
+        returned value is `undefined`.
+
+    list.push: Function
+        Adds a value to the end of the list.
+
+    list.remove: Function
+        Removes a list node from the list.
+
+    list.shift: Function
+        Removes and returns the first list value. If the list is empty, the
+        returned value is `undefined`.
+
+    list.toArray: Function
+        Returns an array of list values.
+
+    list.toJSON: Function
+        Serializes a list as JSON.
+
+    list.unshift: Function
+        Adds a value to the beginning of the list.
+
+    Examples
+    --------
+    > var list = {{alias}}();
+    > list.push( 'foo' ).push( 'bar' );
+    > list.length
+    2
+    > list.pop()
+    'bar'
+    > list.length
+    1
+    > list.pop()
+    'foo'
+    > list.length
+    0
+
+    See Also
+    --------
+

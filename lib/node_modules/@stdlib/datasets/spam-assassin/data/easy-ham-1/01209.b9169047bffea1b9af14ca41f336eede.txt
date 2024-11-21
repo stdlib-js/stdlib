@@ -1,0 +1,74 @@
+From rpm-list-admin@freshrpms.net  Tue Oct  1 10:50:41 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id D9A2316F16
+	for <jm@localhost>; Tue,  1 Oct 2002 10:50:40 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 01 Oct 2002 10:50:40 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g919c0K19186 for
+    <jm-rpm@jmason.org>; Tue, 1 Oct 2002 10:38:00 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g919V1f20747; Tue, 1 Oct 2002 11:31:01
+    +0200
+Received: from drone5.qsi.net.nz (drone5-svc-skyt.qsi.net.nz
+    [202.89.128.5]) by egwn.net (8.11.6/8.11.6/EGWN) with SMTP id g919Tcf13426
+    for <rpm-list@freshrpms.net>; Tue, 1 Oct 2002 11:29:39 +0200
+Received: (qmail 17870 invoked by uid 0); 1 Oct 2002 09:29:35 -0000
+Received: from unknown (HELO se7en.org) ([202.89.145.8]) (envelope-sender
+    <mark@talios.com>) by 0 (qmail-ldap-1.03) with SMTP for
+    <rpm-list@freshrpms.net>; 1 Oct 2002 09:29:35 -0000
+Received: from spawn.se7en.org ([10.0.0.3]) by se7en.org with esmtp (Exim
+    3.35 #1 (Debian)) id 17wXdC-00068C-00 for <rpm-list@freshrpms.net>;
+    Wed, 02 Oct 2002 12:44:50 +1200
+From: Mark Derricutt <mark@talios.com>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: use new apt to do null to RH8 upgrade?
+Message-Id: <4370000.1033464561@spawn.se7en.org>
+In-Reply-To: <Pine.LNX.4.44.0210011026020.19273-100000@urgent.rug.ac.be>
+References: <Pine.LNX.4.44.0210011026020.19273-100000@urgent.rug.ac.be>
+X-Mailer: Mulberry/2.2.1 (Linux/x86)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Tue, 01 Oct 2002 21:29:21 +1200
+Date: Tue, 01 Oct 2002 21:29:21 +1200
+
+I remember apt-get dist-upgrading from 7.2 to 7.3 fine, so it -should- 
+work, maybe :)
+
+--On Tuesday, October 01, 2002 10:27:47 +0200 Thomas Vander Stichele 
+<thomas@urgent.rug.ac.be> wrote:
+
+> It might be, don't think anyone tried it yet.
+
+
+
+                                    -- \m/ --
+  "...if I seem super human I have been misunderstood." (c) Dream Theater
+         mark@talios.com - ICQ: 1934853 JID: talios@myjabber.net
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

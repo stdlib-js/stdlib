@@ -1,0 +1,111 @@
+From fork-admin@xent.com  Mon Aug 26 15:32:10 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id AE56244160
+	for <jm@localhost>; Mon, 26 Aug 2002 10:26:22 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 15:26:22 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7OHwZZ11990 for <jm@jmason.org>;
+    Sat, 24 Aug 2002 18:58:36 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 238042940C9; Sat, 24 Aug 2002 10:56:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from barry.mail.mindspring.net (barry.mail.mindspring.net
+    [207.69.200.25]) by xent.com (Postfix) with ESMTP id 5FDF62940BF for
+    <fork@xent.com>; Sat, 24 Aug 2002 10:55:43 -0700 (PDT)
+Received: from user-119ac86.biz.mindspring.com ([66.149.49.6]) by
+    barry.mail.mindspring.net with esmtp (Exim 3.33 #1) id 17if8s-0008IP-00;
+    Sat, 24 Aug 2002 13:56:10 -0400
+MIME-Version: 1.0
+X-Sender: rahettinga@pop.earthlink.net
+Message-Id: <p05111a52b98d5a63710c@[66.149.49.6]>
+To: fork@spamassassin.taint.org
+From: "R. A. Hettinga" <rah@shipwright.com>
+Subject: Re: "Ouch. Ouch. Ouch. Ouch. Ouch...."(was Re: My brain hurts)
+Content-Type: text/plain; charset="us-ascii"
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sat, 24 Aug 2002 11:45:18 -0400
+
+
+--- begin forwarded text
+
+
+Date: Sat, 24 Aug 2002 11:39:34 -0400
+To: "R. A. Hettinga" <rah@shipwright.com>
+From: Somebody
+Subject: Re: "Ouch. Ouch. Ouch. Ouch. Ouch...."(was Re: My brain hurts)
+
+And then there was the one from Prairie Home Companion:
+
+Q. Why is a viola larger than a violin?
+A. It  just looks that way because a violin player's head is bigger.
+
+
+>--- begin forwarded text
+>
+>
+>Status: RO
+>Delivered-To: fork@spamassassin.taint.org
+>From: "Joseph S. Barrera III" <joe@barrera.org>
+>Organization: Rose Garden Funeral of Sores
+>User-Agent: Mutt/1.5.0 [-1214711651]
+>To: Flatware or Road Kill? <FoRK@xent.com>
+>Subject: Re: "Ouch. Ouch. Ouch. Ouch. Ouch...."(was Re: My brain hurts)
+>Sender: fork-admin@xent.com
+>Date: Wed, 24 Jul 2002 15:17:40 -0700
+>
+>There are so many good musician jokes.
+>
+>A couple of my favorites:
+>
+>Q. What's the difference between a viola and a violin?
+>A. A viola burns longer.
+>
+>Q. What's the definition of a minor second?
+>A. Two oboes playing in unison.
+>
+>- Joe
+>
+>
+>http://xent.com/mailman/listinfo/fork
+>
+>--- end forwarded text
+>
+>
+>--
+>-----------------
+>R. A. Hettinga <mailto: rah@ibuc.com>
+>The Internet Bearer Underwriting Corporation <http://www.ibuc.com/>
+>44 Farquhar Street, Boston, MA 02131 USA
+>"... however it may deserve respect for its usefulness and antiquity,
+>[predicting the end of the world] has not been found agreeable to
+>experience." -- Edward Gibbon, 'Decline and Fall of the Roman Empire'
+
+
+-- 
+
+--- end forwarded text
+
+
+-- 
+R. A. Hettinga <mailto: rah@ibuc.com>
+The Internet Bearer Underwriting Corporation <http://www.ibuc.com/>
+44 Farquhar Street, Boston, MA 02131 USA
+"Never underestimate the power of stupid people in large groups."
+--George Carlin
+http://xent.com/mailman/listinfo/fork
+

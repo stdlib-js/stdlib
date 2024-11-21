@@ -1,0 +1,36 @@
+
+{{alias}}()
+    Returns a `Buffer` containing image data of Eadweard J. Muybridge's
+    collotype of a nude male moving in place (48 views).
+
+    Returns
+    -------
+    out: Buffer
+        Image data.
+
+    Examples
+    --------
+    > var img = {{alias}}()
+    <Buffer>
+
+    References
+    ----------
+    - Muybridge, Eadweard J. 1887. *Animal Locomotion*. <http://www.getty.edu/
+    art/collection/objects/40918/eadweard-j-muybridge-animal-locomotion-american
+    -1887/>.
+
+    * Digital image courtesy of the Getty's Open Content Program. While there
+    are no restrictions or conditions on the use of open content images, the
+    Getty would appreciate a gratis copy of any scholarly publications in which
+    the images are reproduced in order to maintain the collection bibliography.
+    Copies may be sent to the attention of:
+
+      Open Content Program
+      Registrar's Office
+      The J. Paul Getty Museum
+      1200 Getty Center Drive, Suite 1000
+      Los Angeles, CA 90049
+
+    See Also
+    --------
+

@@ -1,0 +1,43 @@
+
+{{alias}}( α, β )
+    Returns the skewness of a beta distribution.
+
+    If `α <= 0` or `β <= 0`, the function returns `NaN`.
+
+    If `α` or `β` is `NaN`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    α: number
+        First shape parameter.
+
+    β: number
+        Second shape parameter.
+
+    Returns
+    -------
+    out: number
+        Skewness.
+
+    Examples
+    --------
+    > var v = {{alias}}( 1.0, 1.0 )
+    0.0
+    > v = {{alias}}( 4.0, 12.0 )
+    ~0.529
+    > v = {{alias}}( 8.0, 2.0 )
+    ~-0.829
+
+    > v = {{alias}}( 1.0, -0.1 )
+    NaN
+    > v = {{alias}}( -0.1, 1.0 )
+    NaN
+
+    > v = {{alias}}( 2.0, NaN )
+    NaN
+    > v = {{alias}}( NaN, 2.0 )
+    NaN
+
+    See Also
+    --------
+

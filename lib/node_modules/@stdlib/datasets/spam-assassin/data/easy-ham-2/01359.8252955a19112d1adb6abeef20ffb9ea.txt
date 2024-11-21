@@ -1,0 +1,49 @@
+From jm@webnote.net  Fri Aug  9 15:12:40 2002
+Return-Path: <yyyy@webnote.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3C35F440D4
+	for <jm@localhost>; Fri,  9 Aug 2002 10:12:33 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:12:33 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79EDCb05516 for
+    <jm@jmason.org>; Fri, 9 Aug 2002 15:13:12 +0100
+Received: from mandark.labs.netnoteinc.com ([194.165.165.199]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id LAA05284 for <jm@jmason.org>;
+    Fri, 9 Aug 2002 11:19:31 +0100
+Received: from phobos.labs.netnoteinc.com (phobos.labs.netnoteinc.com
+    [192.168.2.14]) by mandark.labs.netnoteinc.com (8.11.6/8.11.6) with ESMTP
+    id g79AHup25703; Fri, 9 Aug 2002 11:17:56 +0100
+Received: by phobos.labs.netnoteinc.com (Postfix, from userid 500) id
+    1DD35440CF; Fri,  9 Aug 2002 06:17:25 -0400 (EDT)
+Received: from phobos (localhost [127.0.0.1]) by
+    phobos.labs.netnoteinc.com (Postfix) with ESMTP id E608833F7E;
+    Fri,  9 Aug 2002 11:17:25 +0100 (IST)
+To: Theo Van Dinter <felicity@kluge.net>
+Cc: Justin Mason <yyyy@spamassassin.taint.org>,
+	SpamAssassin-devel@lists.sourceforge.net
+Subject: Re: [SAdev] RESENT_TO, argh
+In-Reply-To: Message from Theo Van Dinter <felicity@kluge.net> of
+    "Thu, 08 Aug 2002 12:02:05 EDT."
+    <20020808160205.GB15462@kluge.net>
+From: yyyy@spamassassin.taint.org (Justin Mason)
+X-GPG-Key-Fingerprint: 0A48 2D8B 0B52 A87D 0E8A  6ADD 4137 1B50 6E58 EF0A
+Date: Fri, 09 Aug 2002 11:17:20 +0100
+Sender: yyyy@webnote.net
+Message-Id: <20020809101725.1DD35440CF@phobos.labs.netnoteinc.com>
+
+
+Theo Van Dinter said:
+
+> Well, I have my users bounce me their spams (which means there's 2
+> users who do it), and I wrote this procmail bit just for the reason
+> you mentioned:
+
+urgh.  I guess fixing the spamtraps to strip the headers before
+writing them is the best thing to do...
+
+--j.
+
+

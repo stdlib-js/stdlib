@@ -1,0 +1,75 @@
+{
+	"options": {
+		"task": "build"
+	},
+	"fields": [
+		{
+			"field": "src",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "include",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "libraries",
+			"resolve": false,
+			"relative": false
+		},
+		{
+			"field": "libpath",
+			"resolve": true,
+			"relative": false
+		}
+	],
+	"confs": [
+		{
+			"task": "build",
+			"src": [
+				"./src/dmskrsqrt.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [],
+			"libpath": [],
+			"dependencies": [
+				"@stdlib/math/base/special/rsqrt",
+				"@stdlib/strided/base/dmskmap",
+				"@stdlib/strided/napi/dmskmap"
+			]
+		},
+		{
+			"task": "examples",
+			"src": [
+				"./src/dmskrsqrt.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [],
+			"libpath": [],
+			"dependencies": [
+				"@stdlib/math/base/special/rsqrt",
+				"@stdlib/strided/base/dmskmap"
+			]
+		},
+		{
+			"task": "benchmark",
+			"src": [
+				"./src/dmskrsqrt.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [],
+			"libpath": [],
+			"dependencies": [
+				"@stdlib/math/base/special/rsqrt",
+				"@stdlib/strided/base/dmskmap"
+			]
+		}
+	]
+}

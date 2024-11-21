@@ -1,0 +1,30 @@
+
+{{alias}}( x )
+    Converts an angle from radians to degrees (single-precision).
+
+    Parameters
+    ----------
+    x: number
+        Angle in radians.
+
+    Returns
+    -------
+    d: number
+        Angle in degrees.
+
+    Examples
+    --------
+    > var d = {{alias}}( 3.141592653589793 / 2.0 )
+    90.0
+    > d = {{alias}}( -3.141592653589793 / 4.0 )
+    -45.0
+    > d = {{alias}}( NaN )
+    NaN
+
+    // Due to finite precision, canonical values may not be returned:
+    > d = {{alias}}( 3.141592653589793 / 6.0 )
+    30.000001907348633
+
+    See Also
+    --------
+

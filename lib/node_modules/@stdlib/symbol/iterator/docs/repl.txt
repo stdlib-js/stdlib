@@ -1,0 +1,16 @@
+
+{{alias}}
+    Iterator symbol.
+
+    This symbol specifies the default iterator for an object.
+
+    The symbol is only supported in ES6/ES2015+ environments. For non-supporting
+    environments, the value is `null`.
+
+    Examples
+    --------
+    > var s = {{alias}}
+
+    See Also
+    --------
+

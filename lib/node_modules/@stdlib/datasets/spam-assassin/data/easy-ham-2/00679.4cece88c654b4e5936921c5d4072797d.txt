@@ -1,0 +1,131 @@
+From pudge@perl.org  Sat Jul 20 03:02:29 2002
+Return-Path: <pudge@perl.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id DAFEB440C9
+	for <jm@localhost>; Fri, 19 Jul 2002 22:02:28 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 20 Jul 2002 03:02:28 +0100 (IST)
+Received: from cpu59.osdn.com (slashdot.org [64.28.67.73] (may be forged))
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6K20dJ31325 for
+    <jm-use-perl@jmason.org>; Sat, 20 Jul 2002 03:00:39 +0100
+Received: from [10.2.181.14] (helo=perl.org) by cpu59.osdn.com with smtp
+    (Exim 3.35 #1 (Debian)) id 17VjSF-0005I8-01 for <jm-use-perl@jmason.org>;
+    Fri, 19 Jul 2002 21:54:43 -0400
+Date: Sat, 20 Jul 2002 02:00:29 +0000
+From: pudge@perl.org
+Subject: [use Perl] Stories for 2002-07-20
+To: yyyy-use-perl@spamassassin.taint.org
+Precedence: list
+X-Bulkmail: 2.051
+Message-Id: <E17VjSF-0005I8-01@cpu59.osdn.com>
+
+use Perl Daily Newsletter
+
+In this issue:
+    * Last Call for Papers for YAPC::Europe::2002
+    * Perl 5.8.0 Released
+    * Parrot 0.0.7 Released
+
++--------------------------------------------------------------------+
+| Last Call for Papers for YAPC::Europe::2002                        |
+|   posted by pudge on Friday July 19, @03:30 (yapce)                |
+|   http://use.perl.org/article.pl?sid=02/07/18/1430255              |
++--------------------------------------------------------------------+
+
+[0]Richard Foley writes "Share your 'pe[a]rls of wisdom' with the Perl
+community: attendees from all around the world, gurus and geeks alike,
+will converge on Munich for [0]YAPC::Europe Sept. 18-20 to listen to the
+talks and tutorials presented at this gathering of minds. This year's
+theme is 'The Science of Perl', which means that we would really like to
+hear about suggestions for talks, projects, experiences which involve
+both perl and science. This should not be regarded as a restriction, more
+as a 'nice to have' :-) Proposals may be submitted between January 1st
+2002 and July 30th 2002."
+
+Discuss this story at:
+    http://use.perl.org/comments.pl?sid=02/07/18/1430255
+
+Links:
+    0. http://www.yapc.org/Europe/
+
+
++--------------------------------------------------------------------+
+| Perl 5.8.0 Released                                                |
+|   posted by hfb on Friday July 19, @09:29 (releases)               |
+|   http://use.perl.org/article.pl?sid=02/07/19/038259               |
++--------------------------------------------------------------------+
+
+[0]jhi writes "After more than two long years of hard work, the
+perl5-porters is proud to announce Perl 5.8.0. The most important new
+features are enhanced Unicode and threads support, and the new I/O
+subsystem called PerlIO, but there are lots of new goodies, not to
+mention bazillion bug fixes.
+
+The full [1]announcement is available, and you can read [2]what is new in
+5.8.0, and if you like what you see, start [3]installing.
+
+Since this release has extensive support for non-Latin scripts, we also
+translated the announcement to [4]Traditional Chinese (Big5-ETEN),
+[5]Simplified Chinese (EUC-CN or GB2312), [6]Japanese (EUC-JP), and
+[7]Korean (EUC-KR) (by Autrijus Tang, Dan Kogai, and Jungshik Shin).
+
+[8]ftp://ftp.cpan.org/pub/CPAN/src/perl-5.8.0.tar.gz is the main URL to
+use, but of course any CPAN mirror will do once they catch up.
+
+Share and Enjoy!
+
+-- Jarkko Hietaniemi, on behalf of the Perl5 Porters"
+
+Discuss this story at:
+    http://use.perl.org/comments.pl?sid=02/07/19/038259
+
+Links:
+    0. mailto:jhi@iki.fi
+    1. http://dev.perl.org/perl5/news/2002/07/18/580ann/
+    2. http://dev.perl.org/perl5/news/2002/07/18/580ann/perldelta.pod
+    3. http://dev.perl.org/perl5/news/2002/07/18/580ann/INSTALL
+    4. http://dev.perl.org/perl5/news/2002/07/18/580ann/p580ann.txt.big5-tw
+    5. http://dev.perl.org/perl5/news/2002/07/18/580ann/p580ann.txt.euc-cn
+    6. http://dev.perl.org/perl5/news/2002/07/18/580ann/p580ann.txt.euc-jp
+    7. http://dev.perl.org/perl5/news/2002/07/18/580ann/p580ann.txt.euc-kr
+    8. ftp://ftp.cpan.org/pub/CPAN/src/perl-5.8.0.tar.gz
+
+
++--------------------------------------------------------------------+
+| Parrot 0.0.7 Released                                              |
+|   posted by pudge on Friday July 19, @13:40 (parrot)               |
+|   http://use.perl.org/article.pl?sid=02/07/19/1346238              |
++--------------------------------------------------------------------+
+
+[0]DrForr blesses us with version 0.0.7 of Parrot, including Perl 6
+grammar and a small, but functional, compiler. Full announcement is
+below.
+
+This story continues at:
+    http://use.perl.org/article.pl?sid=02/07/19/1346238
+
+Discuss this story at:
+    http://use.perl.org/comments.pl?sid=02/07/19/1346238
+
+Links:
+    0. mailto:jgoff@perl.org
+
+
+
+Copyright 1997-2002 pudge.  All rights reserved.
+
+
+======================================================================
+
+You have received this message because you subscribed to it
+on use Perl.  To stop receiving this and other
+messages from use Perl, or to add more messages
+or change your preferences, please go to your user page.
+
+	http://use.perl.org/my/messages/
+
+You can log in and change your preferences from there.
+
+

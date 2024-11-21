@@ -1,0 +1,79 @@
+From ilug-admin@linux.ie  Mon Aug 12 11:07:15 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 693844415C
+	for <jm@localhost>; Mon, 12 Aug 2002 05:56:05 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:56:05 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7BF5Zb04434 for
+    <jm-ilug@jmason.org>; Sun, 11 Aug 2002 16:05:35 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA28794; Sun, 11 Aug 2002 16:03:13 +0100
+Received: from hibernia.jakma.org (hibernia.clubi.ie [212.17.32.129]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id QAA28760 for <ilug@linux.ie>;
+    Sun, 11 Aug 2002 16:03:07 +0100
+Received: from fogarty.jakma.org (fogarty.jakma.org [192.168.0.4]) by
+    hibernia.jakma.org (8.11.6/8.11.6) with ESMTP id g7BFAhw04124;
+    Sun, 11 Aug 2002 16:10:43 +0100
+Received: from localhost (paul@localhost) by fogarty.jakma.org
+    (8.11.6/8.11.6) with ESMTP id g7BFAe606816; Sun, 11 Aug 2002 16:10:41
+    +0100
+X-Authentication-Warning: fogarty.jakma.org: paul owned process doing -bs
+Date: Sun, 11 Aug 2002 16:10:40 +0100 (IST)
+From: Paul Jakma <paul@clubi.ie>
+X-X-Sender: paul@fogarty.jakma.org
+To: wintermute <cout@eircom.net>
+Cc: ilug@linux.ie
+Subject: Re: [ILUG] Alan Cox doesn't like 2.5 so far!
+In-Reply-To: <200208111018.LAA18371@lugh.tuatha.org>
+Message-Id: <Pine.LNX.4.44.0208111607450.26478-100000@fogarty.jakma.org>
+X-Nsa: iraq saddam hammas hisballah rabin ayatollah korea vietnam revolt
+    mustard gas
+X-Dumb-Filters: aryan marijuiana cocaine heroin hardcore cum pussy porn
+    teen tit sex lesbian group
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=iso-8859-1
+Content-Transfer-Encoding: 8BIT
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Sun, 11 Aug 2002, wintermute wrote:
+
+> Hmm... begs the question, why remove Handrick?
+
+andre seems to have a peculiar way of interacting with people on 
+linux-kernel. martin otoh gets on fine with people, but doesnt /seem/ 
+to have his head fully around the ide code yet¹. 
+
+> If it ain't broke, don't fix it.
+
+however, how do you add features? eg tagged commands, udma100, 133, 
+etc.. serial ATA, new chipsets. plus the IDE code might be fine, but 
+lots of drives and chips have bugs, which need working around.
+
+all that said, Linus says he does his development on an IDE machine
+and hasnt had any problems.
+
+1. judging from comments on l-k.
+
+regards,
+-- 
+Paul Jakma	paul@clubi.ie	paul@jakma.org	Key ID: 64A2FF6A
+	warning: do not ever send email to spam@dishone.st
+Fortune:
+The surest way to remain a winner is to win once, and then not play any more.
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

@@ -1,0 +1,69 @@
+From social-admin@linux.ie  Fri Sep  6 11:38:44 2002
+Return-Path: <social-admin@linux.ie>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id 69D3716F19
+	for <zzzz@localhost>; Fri,  6 Sep 2002 11:37:28 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Fri, 06 Sep 2002 11:37:28 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g869xuC30273 for
+    <zzzz+ilug-social@jmason.org>; Fri, 6 Sep 2002 10:59:57 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id TAA17376 for
+    <zzzz+ilug-social@jmason.org>; Thu, 5 Sep 2002 19:17:51 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id TAA02690; Thu, 5 Sep 2002 19:17:32 +0100
+Received: from air7d2202.com ([212.100.65.236]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id TAA02651 for <social@linux.ie>; Thu,
+    5 Sep 2002 19:17:12 +0100
+Message-Id: <200209051817.TAA02651@lugh.tuatha.org>
+X-Authentication-Warning: lugh.tuatha.org: Host [212.100.65.236] claimed
+    to be air7d2202.com
+From: "MRS. M. SESE SEKO" <maseko_h3@37.com>
+Reply-To: maseko_h3@37.com
+To: social@linux.ie
+Date: Wed, 4 Sep 2002 20:20:31 +0100
+X-Mailer: Microsoft Outlook Express 5.00.2919.6900DM
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    TAA02651
+Subject: [ILUG-Social] URGENT ASSISTANT NEEDED
+Sender: social-admin@linux.ie
+Errors-To: social-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group social events <social.linux.ie>
+X-Beenthere: social@linux.ie
+Content-Transfer-Encoding: 8bit
+
+Dear friend,
+
+I am Mrs. Sese-seko widow of late President Mobutu Sese-seko of Zaire, now known as Democratic Republic of Congo (DRC). I am moved to write you this letter. 
+
+This was in confidence considering my present circumstance and situation. I escaped along with my husband and two of our sons James Kongolo and Nzanga out of Democratic Republic of Congo (DRC) to Abidjan, Coted'ivoire where my family and I settled, while we later moved to settled in Morroco where my husband later died of cancer disease. However, due to this situation we decided to change most of my husband's billions of dollars deposited in Swiss bank and other countries into other forms of money coded for safe purpose because the new head of state of (Dr) Mr Laurent Kabila has made arrangement with the Swiss government and other European countries to freeze all my late husband's treasures deposited in some european countries. 
+
+Hence, my children and I decided laying low in Africa to study the situation
+till when things gets better. Like now that president Kabila is dead and the son taking over
+(Joseph Kabila). One of my late husband's chateaux in Southern France was confiscated by the french government, and as such I had to change my identity so that my investment will not be traced and confiscated.I have deposited the sum Eighteen Million United State
+Dollars (US$18,000,000,00.) With a security company for safe keeping. What I want you to do is to indicate yourinterest that you can assist us in receiving the money on our behalf, so that I can introduce you to my son (Kongolo) who has the out modalities for the claim
+of the said funds. I want you to assist in investing this money, but I will not want my identity revealed.I will also want to acquire real/landed properties and
+stock in multi-national companies and to engage in other safe and non-speculative investments as adviseby your good self. May I at this point emphasize the high level of
+confidentiality, which this upcoming project demands,and hope you will not betray the trust and
+confidence, which I repose in you.In conclusion, if you want to assist us, my son (Kongolo) shall divulgeto you all briefs regarding this project, tell you where
+the funds are currently being maintained and also discuss remuneration for your services.For this reason kindly furnish us your contact information,that is your personal telephone and fax number for validation purpose and acknowledge receipt of this mail using the above email address.
+
+Yours sincerely,
+
+Mrs. Mariam M. Seseseko.
+
+
+
+-- 
+Irish Linux Users' Group Social Events: social@linux.ie
+http://www.linux.ie/mailman/listinfo/social for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

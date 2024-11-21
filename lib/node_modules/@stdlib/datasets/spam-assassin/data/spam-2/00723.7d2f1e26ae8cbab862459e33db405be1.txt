@@ -1,0 +1,84 @@
+From fork-admin@xent.com  Wed Jul 17 20:20:13 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id DD15F43F9E
+	for <jm@localhost>; Wed, 17 Jul 2002 15:20:12 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 17 Jul 2002 20:20:12 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6HJFBJ15483 for <jm@jmason.org>;
+    Wed, 17 Jul 2002 20:15:12 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 9717529409C; Wed, 17 Jul 2002 12:04:15 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from xent.com (unknown [61.177.67.80]) by xent.com (Postfix)
+    with SMTP id 544F8294098 for <fork@xent.com>; Wed, 17 Jul 2002 12:04:12
+    -0700 (PDT)
+From: wjjzzs@wjjzzs.com
+To: fork@spamassassin.taint.org
+Subject: Are you a sanitary ware distributor?
+X-Mailer: WC Mail __ty__
+MIME-Version: 1.0
+Message-Id: <20020717190412.544F8294098@xent.com>
+Date: Wed, 17 Jul 2002 12:04:12 -0700 (PDT)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Friends of Rohit Khare <fork.xent.com>
+X-Beenthere: fork@spamassassin.taint.org
+Content-Type: multipart/mixed;boundary= "Z_MULTI_PART_MAIL_BOUNDAEY_S"
+
+This is a multi-part message in MIME format.
+
+--Z_MULTI_PART_MAIL_BOUNDAEY_S
+Content-Type: text/plain
+Content-Transfer-Encoding: base64
+
+Tm90ZTpJZiB0aGlzIGVhbWlsIGlzIG5vdCBmaXQgZm9yIHlvdSxwbGVhc2UgcmVwbHkgdG8g
+d2VibWFzdGVyQHdqanp6cy5jb20gd2l0aA0KInJlbW92ZSIuDQpXZSBkb24ndCBpbnRlbmQg
+dG8gc2VuZCBzcGFtIGVtYWlsIHRvIHlvdS5UaGFuayB5b3UhDQoNCkRlYXIgc2lycyBvciBN
+YWRhbXMsDQpXZSBhcmUgb25lIEFyY3lsIGJhdGh0dWIgbWFudWZhY3R1cmVyIGluIENoaW5h
+Lg0KDQotLS0tLS0tLS0tLS0tLS0tLVByb2ZpbGUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQ0K
+DQpPdXIgZmFjdG9yeXNwZWNpYWxpemVzIGluIG1hbnVmYWN0dXJpbmcgobBZRU1BobEgYnJh
+bmQgYWNyeWxpYyBjb21wb3NpdGUgYmF0aHR1YnMsDQp3ZSBoYXZlIG1vcmUgdGhhbiAxMCB5
+ZWFycyBleHBlcmllbmNlIG9mIGJhdGh0dWIgbWFudWZhY3R1cmluZyBhbmQgbWFya2V0aW5n
+Lg0KV2l0aCBvdXIgY29uc2lkZXJhYmxlIGV4cGVyaWVuY2Ugd2Ugc2V0IG91dCB0byBibGVu
+ZCB0aGUgYWR2YW50YWdlcyBvZiBhbGwgdGhlIG90aGVyDQpvZiBiYXRodHVicyBvZmZlcmVk
+IGluIHRoZSBtYXJrZXQgcGxhY2UgaW50byBvbmUgcmFuZ2UuIEFmdGVyIHNldmVyYWwgeWVh
+cnMgZGV2ZWxvcG1lbnQNCndlIHByb2R1Y2VkIG91ciBjdXJyZW50IHJhbmdlIGFuZCB0aGUg
+WUVNQSBicmFuZCBiYXRodHViIHdhcyBwYXRlbnRlZCBpbiAyMDAxLiBXZSB3ZXJlDQpldmVu
+IGF3YXJkZWQgdGhlICJHb2xkIE1lZGFsIiBpbiB0aGUgIkNoaW5lc2UgUGF0ZW50IFRlY2hu
+b2xvZ3kgRXhoaWJpdGlvbiIgYW5kDQoiVGhlIE5pbnRoIENoaW5lc2UgTmV3IFBhdGVudCBU
+ZWNobm9sb2d5IGFuZCBOZXcgUGF0ZW50IFByb2R1Y3QgRXhoaWJpdGlvbiIgbGF0ZXIgdGhh
+dCB5ZWFyLg0KVGhlIFlFTUEgYmF0aHR1YnMgc3RydWN0dXJhbCBkZXNpZ24gaXMgdGhhdCBv
+ZiBhIG5vcm1hbCBhY3J5bGljIGJhdGh0dWIgYnV0IGNvbmdsdXRpbmF0ZWQNCmludG8gYSBj
+b21wb3NpdGUgbWF0ZXJpYWwuIEl0IGlzIHJpZGdlZCBhbmQgaXMgbWFkZSBtb3JlIHRoYW4g
+dHdpY2UgYXMgdGhpY2sgYXMgYSBub3JtYWwNCnVuaXQsIG1ha2luZyBpdCBtb3JlIHNtb290
+aCwgZ2VudGxlIGFuZCBlbGVnYW50LiBUaGlzIG1hbnVmYWN0dXJpbmcgdGVjaG5pcXVlIG5v
+dCBvbmx5DQpwcm92aWRlcyBhbGwgdGhlIGFkdmFudGFnZXMgb2YgYSBub3JtYWwgYWNyeWxp
+YyBiYXRodHViIChlYXNpbHkgdG8gY2xlYW4sIHJlc2lzdGFuY2UgdG8NCmRpcnQsIGNvbG9y
+ZnVsLGF0dHJhY3RpdmUgZXRjKSBidXQgYWxzbyBwcm92aWRlcyBpbmNyZWFzZWQgaGVhdCBy
+ZXRlbnRpb24sIGFuZCBleHRlbmRzDQp0aGUgcHJvZHVjdHMgbGlmZSBzcGFuLg0KDQpCZXNp
+ZGVzIG91ciBwcm9kdWN0cyBvbiB3ZWJzaXRlLCB3ZSBub3cgcHJvZHVjZSBzb21lIG5ldyBt
+b2RlbHMgZm9yIFVTQSBtYXJrZXQuDQpXZSBhbHNvIHByb2R1Y2Ugc2hvd2VyIHBhbmVscyB3
+aXRoIGZpbmVzdCBxdWFsaXR5Lg0KDQotLS0tLS0tLS0tLS0tLS0tLS0tYmF0aHR1YiBTcGVj
+aWZpY2F0aW9ucy0tLS0tLS0tLS0tLS0tLS0tLS0tLQ0KMSxXYWxsIHRoaWNrbmVzczoxMG1t
+fjIwbW0NCjIsV2VpZ2h0OiA1MH42MEtHDQoNCi0tLS0tLS0tLS0tLS0tLS0tLS1Db29wZXJh
+dGUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQ0KDQpXZSB3b3VsZCBsaWtlIHRv
+IGJlIHlvdXIgT0VNL09ETSBtYW51ZmFjdHVyZXIuDQoNCkZvciBkZXRhaWxlZCBpbmZvLCBw
+bGVhc2UgYnJvd3NlIG91ciB3ZWJzaXRlIGh0dHA6Ly93d3cud2pqenpzLmNvbQ0KDQpCZXN0
+IHdpc2hlcyBhbmQgcmVnYXJkcywNCg0KRXhwb3J0IE1hbmFnZXINCkplcnJ5IExlZQ0KTW9i
+aWxlOjEzOTUxMjI4NTYxDQpQaG9uZTowMDg2LTUxOS01MjExOTczDQpGYXg6ICAwMDg2LTUx
+OS01MjA5Nzc2DQpXdWppbiBIdWFuZ2xpIENvbXBvc2l0ZWQgU2FuaXRhcnkgRmFjdG9yeQ0K
+QWRkOkhVYW5nbGkgdG93bixXdWppbiBjb3VudHkNCiAgICBDaGFuZ3pob3UgMjEzMTUxDQog
+ICAgSmlhbmdzdSBwcm92aW5jZQ0KICAgIFAuUi5DaGluYQ0KV2Vic2llOmh0dHA6Ly93d3cu
+d2pqenpzLmNvbQ0KRW1haWw6d2pqenpzQHdqanp6cy5jb20NCg0KICAgIA==
+--Z_MULTI_PART_MAIL_BOUNDAEY_S--
+
+
+http://xent.com/mailman/listinfo/fork
+
+

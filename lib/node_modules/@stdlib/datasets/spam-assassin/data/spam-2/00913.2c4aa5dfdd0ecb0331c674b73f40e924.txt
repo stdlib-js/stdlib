@@ -1,0 +1,488 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6N3UbhY063676
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Mon, 22 Jul 2002 22:30:38 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6N3UbdL063674
+	for cypherpunks-forward@ds.pro-ns.net; Mon, 22 Jul 2002 22:30:37 -0500 (CDT)
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6N3UThY063582
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks@ds.pro-ns.net>; Mon, 22 Jul 2002 22:30:30 -0500 (CDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: from waste.minder.net (daemon@waste [66.92.53.73])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6N3URJ83360
+	for <cypherpunks@ds.pro-ns.net>; Mon, 22 Jul 2002 23:30:28 -0400 (EDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: (from cpunks@localhost)
+	by waste.minder.net (8.11.6/8.11.6) id g6N3UR429108
+	for cypherpunks@ds.pro-ns.net; Mon, 22 Jul 2002 23:30:27 -0400
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by waste.minder.net (8.11.6/8.11.6) with ESMTP id g6N3UPR29085
+	for <cpunks@minder.net>; Mon, 22 Jul 2002 23:30:25 -0400
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6N3UNJ83333
+	for <cpunks@minder.net>; Mon, 22 Jul 2002 23:30:23 -0400 (EDT)
+	(envelope-from cpunks@einstein.ssz.com)
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id WAA29243
+	for cpunks@minder.net; Mon, 22 Jul 2002 22:38:44 -0500
+Received: (from mdom@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id WAA29236
+	for cypherpunks-outgoing; Mon, 22 Jul 2002 22:37:07 -0500
+Received: from bwb.com.mx (root@[200.33.155.1])
+	by einstein.ssz.com (8.8.8/8.8.8) with ESMTP id WAA29230
+	for <cypherpunks@ssz.com>; Mon, 22 Jul 2002 22:36:49 -0500
+From: janice5930923@yahoo.com
+Received: from cookbe36345.com (dsl-200-67-183-177.prodigy.net.mx [200.67.183.177])
+	by bwb.com.mx (8.8.8/8.8.8) with SMTP id WAA18484;
+	Mon, 22 Jul 2002 22:22:49 -0500
+Message-Id: <200207230322.WAA18484@bwb.com.mx>
+Date: Mon, 22 Jul 2002 22:24:24 -0500
+Old-Subject: CDR: VTGE   7/22/2002 10:24:24 PM
+X-Priority: 1
+MIME-Version: 1.0
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2600.0000
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Sender: owner-cypherpunks@einstein.ssz.com
+Precedence: bulk
+Reply-To: cypherpunks@einstein.ssz.com
+X-Mailing-List: cypherpunks@ssz.com
+X-Unsubscription-Info: http://einstein.ssz.com/cdr
+X-List-Admin: list@ssz.com
+X-Loop: ssz.com
+X-Acceptable-Languages: English, Russian, German, French, Spanish
+To: undisclosed-recipients:;
+Subject: VTGE   7/22/2002 10:24:24 PM
+
+Dear me ,
+
+<!-- saved from url=(0022)http://internet.e-mail -->
+<!-- saved from url=(0022)http://internet.e-mail -->
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>News Letter</title>
+</head>
+
+<body topmargin="0" leftmargin="0">
+
+<p>&nbsp;</p>
+
+<p><big>July 21, 2002</big></p>
+
+<p><big>Greeting fellow Investors, </big></p>
+
+<p><big>Take a look at this inexpensive stock!</big></p>
+
+<table border="2" cellpadding="5" cellspacing="0" style="border-collapse: collapse"
+bordercolor="#008000" width="100%" bgcolor="#000000">
+  <tr>
+    <td width="100%" align="center"><table border="0" cellpadding="5" cellspacing="0"
+    style="border-collapse: collapse" bordercolor="#008000" width="762" bgcolor="#000000">
+      <tr>
+        <td align="left" width="2"></td>
+        <td width="740"><p style="margin-top: 1; margin-bottom: 1" align="left"><big><b><font
+        color="#FFFFFF" face="Arial">Company Profile For:
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font face="Arial" color="#00FF00">VIRTUAL
+        GAMING ENTERPRISES, INC..</font></b></big></p>
+        <p align="left" style="margin-top: 1; margin-bottom: 1"><font face="Arial" color="#00FF00"><big><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        OTC:VTGE</strong></big></font></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<table border="1" width="100%" cellspacing="0" cellpadding="0" bgcolor="#000000">
+  <tr>
+    <td width="100%">&nbsp;<table border="0" width="99%" bgcolor="#FFFFFF" cellspacing="3"
+    cellpadding="4" height="1111">
+      <tr>
+        <td width="100%" valign="top" align="center"><div align="center"><center><table border="0"
+        width="70%" cellspacing="0">
+          <tr>
+            <td width="100%"><div align="center"><center><table border="0" width="100%"
+            cellspacing="4" bgcolor="#008000" style="border-collapse: collapse" bordercolor="#111111">
+              <tr>
+                <td width="100%" bgcolor="#000000"><p style="MARGIN-TOP: 1px; MARGIN-BOTTOM: 1px"
+                align="center"><font color="#00FF00" face="Arial" size="5"><b><span
+                style="FONT-FAMILY: Arial">For your investment consideration!</span></b></font></p>
+                <p style="MARGIN-TOP: 1px; MARGIN-BOTTOM: 1px" align="center"><font face="Arial"
+                color="#FF0000" size="4"><b><span style="FONT-FAMILY: Arial">OTC:&nbsp;VTGE</span></b></font></p>
+                <p style="MARGIN-TOP: 1px; MARGIN-BOTTOM: 1px" align="center">&nbsp;</p>
+                <p style="MARGIN-TOP: 1px; MARGIN-BOTTOM: 1px" align="center"><span
+                style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:Arial"><big><strong><font
+                color="#00FF00" face="Arial">With it's current price of </font><font face="Arial"
+                color="#FF0000">$0.01</font><font color="#00FF00" face="Arial"> the company is currently
+                trading </font><font face="Arial" color="#FF0000">way below its book value</font><font
+                color="#00FF00" face="Arial"> </font><font face="Arial" color="#FF0000">of $0.40/share.</font><font
+                color="#00FF00" face="Arial"> A Tremendous investment opportunity has presented itself
+                with VTGE.&nbsp; Legislation has been unsuccessful at slowing the&nbsp; growth of on-line
+                gaming. The company is </font><font face="Arial" color="#FF0000">Way</font><font
+                color="#00FF00" face="Arial"> </font><font face="Arial" color="#FF0000">Undervalued</font><font
+                color="#00FF00" face="Arial">!!!!</font></strong></big></span></p>
+                <p style="MARGIN-TOP: 1px; MARGIN-BOTTOM: 1px" align="center">&nbsp;</td>
+              </tr>
+            </table>
+            </center></div></td>
+          </tr>
+        </table>
+        </center></div><p><font color="#FF0000"><strong>A minimal investment of $1000.00 would buy
+        you 100,000 shares of VTGE at the current price!</strong></font></p>
+        <p><font color="#FF0000"><strong>If the stock moves up to even one fourth of what the
+        company says it's current value is, </strong></font></p>
+        <p><font color="#FF0000"><strong>your investment could be &quot;Very Very Profitable!!!</strong></font></p>
+        <div align="center"><center><table border="0" width="70%" cellspacing="4"
+        bgcolor="#008000" height="88" style="border-collapse: collapse" bordercolor="#111111">
+          <tr>
+            <td width="100%" bgcolor="#000000"><p align="center"><big><font color="#00FF00"
+            face="Arial"><strong>Virtual Gaming Enterprises owns, operates, and licenses offshore
+            casinos on the Island of Dominica. </strong></font></big></td>
+          </tr>
+        </table>
+        </center></div><p>&nbsp;</p>
+        <p class="MsoNormal" style="MARGIN-TOP: 1px; MARGIN-BOTTOM: 1px; TEXT-ALIGN: center"
+        align="center"><font face="Arial" size="4"><b><span style="COLOR: #008000">VIRTUAL GAMING
+        ENTERPRISES, INC.</span></b></font></p>
+        <p class="MsoNormal" style="MARGIN-TOP: 1px; MARGIN-BOTTOM: 1px; TEXT-ALIGN: center"
+        align="center"><span style="FONT-FAMILY: Arial"><font size="4">OTC<font color="#000000">: <strong>VTGE</strong></font></font></span></p>
+        <p class="MsoNormal" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" align="center"><font
+        face="Arial" size="2"><span style="mso-bidi-font-size: 10.0pt">&nbsp;<O:P> 
+        </O:P></span></font></p>
+        <div align="center"><center><table style="BORDER-COLLAPSE: collapse" borderColor="#008000"
+        cellSpacing="0" cellPadding="0" width="90%" bgColor="#000000" border="2">
+<TBODY>
+          <tr>
+            <td width="25%"><p style="MARGIN-TOP: 1px; MARGIN-BOTTOM: 1px" align="center"><font
+            color="#ffffff"><b><span style="FONT-SIZE: 12pt; FONT-FAMILY: Arial">Symbol:</span></b></font></p>
+            <p style="MARGIN-TOP: 1px; MARGIN-BOTTOM: 1px" align="center"><font color="#ffffff"><b><span
+            style="FONT-SIZE: 12pt; FONT-FAMILY: Arial">VTGE</span></b></font></td>
+            <td width="25%"><p style="MARGIN-TOP: 1px; MARGIN-BOTTOM: 1px" align="center"><font
+            color="#ffffff"><b><span style="FONT-SIZE: 12pt; FONT-FAMILY: Arial">DATE:</span></b></font></p>
+            <p style="MARGIN-TOP: 1px; MARGIN-BOTTOM: 1px" align="center"><font color="#ffffff"><b><span
+            style="FONT-SIZE: 12pt; FONT-FAMILY: Arial">7-21-2002</span></b></font></td>
+            <td width="25%"><p style="MARGIN-TOP: 1px; MARGIN-BOTTOM: 1px" align="center"><font
+            color="#ffffff"><b><span style="FONT-SIZE: 12pt; FONT-FAMILY: Arial">Price on</span></b></font></p>
+            <p style="MARGIN-TOP: 1px; MARGIN-BOTTOM: 1px" align="center"><font color="#ffffff"><b><span
+            style="FONT-SIZE: 12pt; FONT-FAMILY: Arial">7-19-2002: $0.01</span></b></font></td>
+            <td width="25%"><p style="MARGIN-TOP: 1px; MARGIN-BOTTOM: 1px" align="center"><font
+            color="#ffffff"><b><span style="FONT-SIZE: 12pt; FONT-FAMILY: Arial">52 Week Range:</span></b></font></p>
+            <p style="MARGIN-TOP: 1px; MARGIN-BOTTOM: 1px" align="center"><font color="#ffffff"><b><span
+            style="FONT-SIZE: 12pt; FONT-FAMILY: Arial">$0.0039 - $5.45 info obtained from
+            <a href="http://www.bigcharts.com">bigcharts</a> </span></b></font></td>
+          </tr>
+</TBODY>
+        </table>
+        </center></div><p class="MsoNormal" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"
+        align="center">&nbsp;</p>
+        <div align="center"><center><table style="BORDER-COLLAPSE: collapse" borderColor="#008000"
+        cellSpacing="0" cellPadding="0" width="90%" bgColor="#ffffff" border="2">
+<TBODY>
+          <tr>
+            <td width="100%" bgColor="#000000" colSpan="2"><p align="center"><b><font face="Arial"
+            color="#00ff00">Share-Related Items</font></b></td>
+          </tr>
+          <tr>
+            <td width="100%" bgColor="#e1d6d0" colSpan="2"><p align="center">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="100%"><span style="FONT-FAMILY: Arial">Recent Price (July,&nbsp; 19, 2002) </span></td>
+            <td width="100"><p align="right"><font face="Arial">$.01</font></td>
+          </tr>
+          <tr>
+            <td width="100%"><span style="FONT-FAMILY: Arial">Market Capitalization Approximate</span></td>
+            <td width="100"><p align="right"><span style="FONT-FAMILY: Arial">$215k</span></td>
+          </tr>
+          <tr>
+            <td width="100%"><font face="Arial">Shares Outstanding Approximate</font></td>
+            <td width="100"><p align="right">21.8M</td>
+          </tr>
+          <tr>
+            <td width="100%"><font face="Arial">Approximate Float</font></td>
+            <td width="100"><p align="right">3.1 M</td>
+          </tr>
+          <tr>
+            <td width="100%"><font face="Arial">Daily Avg. Volume (50 day)</font></td>
+            <td width="100"><p align="right"><font face="Arial">141K</font></td>
+          </tr>
+          <tr>
+            <td width="100%"><font face="Arial">Net Tangible Assets Approximate</font></td>
+            <td width="100"><p align="right"><font face="Arial">$4M</font></td>
+          </tr>
+          <tr>
+            <td width="100%"><font face="Arial">Net Asset Value per Outstanding Share Approximate:</font></td>
+            <td width="100"><p align="right"><font face="Arial">$0.40</font></td>
+          </tr>
+          <tr>
+            <td width="100%" bgColor="#000000" colSpan="2"><p align="center"><font color="#ffffff"><span
+            style="FONT-FAMILY: Arial"><b>Click here to view the chart:</b></span></font></td>
+          </tr>
+</TBODY>
+        </table>
+        </center></div><p>&nbsp;<ul style="margin-top:0in" type="disc">
+          <li class="MsoNormal" style="mso-list:l5 level1 lfo4;tab-stops:list .5in"><p align="left"><big><font
+            face="Arial"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:Arial">Audited
+            Net Assets slightly under $4M.</span><span
+            style="font-size:11.0pt;
+     mso-bidi-font-size:12.0pt;font-family:Arial"><o:p></span></font></big></p>
+          </li>
+          <li><p align="left"><big><font face="Arial"><span
+            style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:Arial">Net Asset Value per
+            Outstanding Share of Common Stock is approximately $0.40/share.</span><span
+            style="font-size:11.0pt;mso-bidi-font-size:12.0pt;
+     font-family:Arial"><o:p></o:p></span></font></big></p>
+          </li>
+        </ul>
+        <ul style="margin-top:0in" type="disc">
+          <li class="MsoNormal" style="mso-list:l5 level1 lfo4;tab-stops:list .5in"><p align="left"><big><font
+            face="Arial"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:Arial">Strong
+            Balance Sheet with no debt.</span><span
+            style="font-size:11.0pt;
+     mso-bidi-font-size:12.0pt;font-family:Arial"><o:p></o:p></span></font></big></p>
+          </li>
+          <li class="MsoNormal" style="mso-list:l5 level1 lfo4;tab-stops:list .5in"><p align="left"><font
+            face="Arial" size="5"><span
+            style="font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:Arial">New site enhancements
+            and new marketing campaign beginning next quarter<o:p></o:p></span></font></p>
+          </li>
+        </ul>
+        <p class="MsoNormal"><span
+        style="font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial">&nbsp;<o:p></o:p></span></p>
+        <div align="center"><center><table border="0" cellpadding="0" bgcolor="green"
+        style="mso-cellspacing:1.5pt;
+ background:green;mso-padding-alt:2.25pt 2.25pt 2.25pt 2.25pt"
+        width="312">
+          <tr>
+            <td width="310" style="width:100.0%;background:black;padding:2.25pt 2.25pt 2.25pt 2.25pt"><p
+            class="MsoNormal" align="center"><b><span
+            style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Arial"><font
+            color="#00FF00">VIRTUAL GAMING ENTERPRISES, INC.&nbsp; THE COMPANY</font></span></b></td>
+          </tr>
+        </table>
+        </center></div><p class="MsoNormal"><span
+        style="font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial">&nbsp;<o:p></o:p></span></p>
+        <p class="MsoBodyText" align="left"><span style="mso-bidi-font-size:10.0pt"><font
+        face="Arial"><a href="http://www.vtge.com">Virtual Gaming Enterprises, Inc</a>.,
+        is in the business of gaming over the Internet. Customers are able to play virtual casino
+        style games against other members or alone through an Internet connection. The company
+        awards prizes and bonuses to its premier players in the same fashion as traditional
+        casinos. These awards programs and unparalleled customer service have made Virtual Gaming&#146;s casinos the place to play on The Net.</font> <o:p></span></p>
+        <p class="MsoBodyText" align="left"><font face="Arial"><span
+        style="mso-bidi-font-size:10.0pt">Check it out.</span></font></p>
+        <p class="MsoBodyText" align="left">&nbsp; <a href="http://www.thecasinothemepark.com">www.thecasinothemepark.com</a>&nbsp;
+        </p>
+        <p class="MsoBodyText" align="left">&nbsp;</p>
+        <ul style="margin-top:0in" type="disc">
+          <li class="MsoNormal" style="mso-list:l1 level1 lfo5;tab-stops:list .5in"><p align="left"><span
+            style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:Arial">The company is
+            enhancing its already popular casino suite of sites.</span><span
+            style="font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:Arial"><o:p></o:p></span></p>
+          </li>
+          <li class="MsoNormal" style="mso-list:l1 level1 lfo5;tab-stops:list .5in"><p align="left"><span
+            style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:Arial">The company recently
+            signed a development agreement with regional site developer Infoflash.com.</span><span
+            style="font-size:11.0pt;mso-bidi-font-size:
+     12.0pt;font-family:Arial"><o:p></o:p></span></p>
+          </li>
+          <li class="MsoNormal" style="mso-list:l1 level1 lfo5;tab-stops:list .5in"><p align="left"><span
+            style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:Arial">The company has
+            retained Nextleft Tech. to launch an aggressive Marketing campaign.</span><span
+            style="font-size:11.0pt;mso-bidi-font-size:12.0pt;
+     font-family:Arial"><o:p></o:p></span></p>
+          </li>
+        </ul>
+        <p class="MsoNormal"><span
+        style="font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial">&nbsp;<o:p></o:p></span></p>
+        <p class="MsoNormal" align="left"><span
+        style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:Arial">Virtual Gaming
+        Enterprises holds a Master Gaming License from the Commonwealth of Dominica. VTGE asserts
+        it is well positioned to capture substantial market share of the growing Internet Gaming
+        Business. A recent report from Bear Stearns (NYSE: BSC) experts expect on-line gaming to
+        grow to more than $3 billion in 2002. VTGE, through joint ventures and an aggressive
+        acquisition campaign, operates over 17 Gaming related websites and a 20% interest in Vegas
+        Book.com, a traditional sports book.</span><span
+        style="font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:Arial"><o:p></o:p></span></p>
+        <p class="MsoNormal" align="center">&nbsp;</p>
+        <p class="MsoNormal" align="left"><span
+        style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:Arial">The recent software
+        development agreement with Infoflash.com gives the company a competitive technology
+        advantage. Casino players will be will gamble using Flash and Java Games for Desktops and
+        Laptops.<span style="mso-spacerun: yes">&nbsp; </span>Furthermore, Virtual Gaming
+        customers will have the ability to gamble using PDA (Personal Digital Assistants) and
+        Pocket PC&#146;s.</span><span
+        style="font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:
+Arial"><o:p></o:p></span></p>
+        <p class="MsoNormal">&nbsp;</p>
+        <div align="center"><center><table border="0" cellpadding="0" bgcolor="green"
+        style="mso-cellspacing:1.5pt;
+ background:green;mso-padding-alt:2.25pt 2.25pt 2.25pt 2.25pt">
+          <tr>
+            <td width="100%" style="width:100.0%;background:black;padding:2.25pt 2.25pt 2.25pt 2.25pt"
+            align="left"><p class="MsoNormal" align="center"><b><span
+            style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Arial"><font
+            color="#00FF00">THE MARKET</font></span></b></td>
+          </tr>
+        </table>
+        </center></div><p class="MsoNormal"><span
+        style="font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial">&nbsp;<o:p>&nbsp;<o:p></o:p></span></p>
+        <p class="MsoNormal"><span
+        style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:Arial">Virtual Gaming owns
+        17 casino style gaming sites for simulated gaming over the Internet. The company is
+        launching 5 new sites in 2002. </span><span
+        style="font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial"><o:p></o:p></span></p>
+        <p class="MsoNormal"><span
+        style="font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial">&nbsp;<o:p></o:p></span></p>
+        <p class="MsoNormal" align="left"><span
+        style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:Arial">According to <a
+        href="http://www.idc.com"><span style="color:windowtext">International Data Corp.</span></a>
+        (IDC), improved Internet capabilities, next-generation video game consoles, and
+        nontraditional gaming platforms will draw 40 million households into online gaming by
+        2004, up from 25 million in 2000. Building a diversified revenue base is perhaps the
+        biggest challenge facing online gaming companies. Virtual Gaming intends to earn
+        additional revenues from licensing its technology and co-branding its games.</span><span
+        style="font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial"><o:p></o:p></span></p>
+        <p class="MsoNormal">&nbsp;</p>
+        <p class="MsoNormal" style="margin-top: 1; margin-bottom: 1" align="center"><font
+        face="Arial" size="4"><span
+        style="color: red; font-weight: 700; text-decoration: underline">This company is trading
+        way under its current value. </span></font></p>
+        <p class="MsoNormal" style="margin-top: 1; margin-bottom: 1" align="center"><span
+        style="color: red; font-weight: 700; text-decoration: underline"><font face="Arial"
+        size="3">VIRTUAL GAMING ENTERPRISES, INC., </font><font face="Arial"><big>forcasts</big><font
+        size="4"> </font></font><font face="Arial" size="4">continued acceleration </font></span></p>
+        <p class="MsoNormal" style="margin-top: 1; margin-bottom: 1" align="center"><span
+        style="color: red; font-weight: 700; text-decoration: underline"><font face="Arial"
+        size="4">in revenues and in profits.</font></span></p>
+        <p class="MsoNormal">&nbsp;</p>
+        <p class="MsoNormal" align="left">&nbsp;</p>
+        <p class="MsoNormal"><big><font face="Arial"><b><span
+        style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:Arial">Projected Vital
+        statistics of online casinos in 2002:</span></b><span
+        style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:Arial"> </span><span
+        style="font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:Arial"><o:p></o:p></span></font></big></p>
+        <p class="MsoNormal">&nbsp;<ul style="margin-top:0in" type="disc">
+          <li class="MsoNormal" style="mso-list:l2 level1 lfo6;tab-stops:list .5in"><p align="left"><font
+            face="Arial"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:Arial">Total
+            online wagers - $13 billion per year</span><span
+            style="font-size:11.0pt;
+     mso-bidi-font-size:12.0pt;font-family:Arial"> <o:p></o:p></span></font></p>
+          </li>
+          <li class="MsoNormal" style="mso-list:l2 level1 lfo6;tab-stops:list .5in"><p align="left"><font
+            face="Arial"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:Arial">Total
+            wagers minus payouts - $651 million </span><span
+            style="font-size:11.0pt;
+     mso-bidi-font-size:12.0pt;font-family:Arial"><o:p></o:p></span></font></p>
+          </li>
+          <li class="MsoNormal" style="mso-list:l2 level1 lfo6;tab-stops:list .5in"><p align="left"><span
+            style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:Arial"><font face="Arial">Number
+            of online casinos - around 1700</font></span></p>
+          </li>
+        </ul>
+        <ul style="margin-top:0in" type="disc">
+          <li class="MsoNormal" style="mso-list:l2 level1 lfo6;tab-stops:list .5in"><p align="left"><font
+            face="Arial"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:Arial">Average
+            annual online casino revenue - $3 to $4 million</span><span
+            style="font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:Arial"> <o:p></o:p></span></font></p>
+          </li>
+        </ul>
+        <p align="left">&nbsp;</p>
+        <p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Good luck Investors!</p>
+        <font size="2"><p></font><font color="#008000" size="7"><strong>Save 40%!</strong></font><font
+        face="Arial" size="3"></p>
+        <p></font><strong><font size="3" face="Arial" color="#0000FF">Save up to 40% on your
+        internet access. </font><font size="3" face="Arial" color="#008000">Instead of the
+        standard $21.95 to $28.95 Now you can get </font><font size="3" face="Arial"
+        color="#0000FF">24/7 unlimited access</font><font size="3" face="Arial" color="#008000">
+        with nationwide access numbers on a </font><font size="3" face="Arial" color="#0000FF">fast
+        56K, V.90 service</font><font size="3" face="Arial" color="#008000">. Faster connections
+        than AT&amp;T and AOL, and faster page loads.</font></strong><font size="3"></p>
+        <p></font><font face="Arial" size="4" color="#008000"><strong> &quot;$16.99 internet
+        access. 24/7 unlimited with nationwide access numbers.&quot;</strong></font><font size="2"></p>
+        <p><strong><font face="Arial" size="4" color="#008000">Call </font></font><font
+        face="Arial" color="#0000FF" size="4">1-864-235-2716</font><font size="2"><font
+        face="Arial" size="4" color="#008000"> .</font></strong></p>
+        <p align="left">SAFE HARBOR FOR FORWARD-LOOKING STATEMENTS Except for historical
+        information contained herein, the statements on this website and newsletter are
+        forward-looking</font> <font size="2">statements that are made pursuant to the safe harbor
+        provisions of the Private Securities Reform</font> <font size="2">Act of 1995.
+        Forward-looking statements involve known and unknown risks and uncertainties, which</font>
+        <font size="2">may cause a company's actual results in the future periods to differ
+        materially from forecasted</font> <font size="2">results. These risks and uncertainties
+        include, among other things, product price volatility,</font> <font size="2">product
+        demand, market competition and risk inherent in the companies operations. You can</font> <font
+        size="2">identify these statements by the fact that they do not relate strictly to
+        historical or current</font> <font size="2">facts. They use words such as
+        &quot;anticipate,'' &quot;estimate,'' &quot;expect,'' &quot;project,'' &quot;intend,''</font>
+        <font size="2">&quot;plan,'' &quot;believe,'' and other words and terms of similar meaning
+        in connection with any</font> <font size="2">discussion of future operating or financial
+        performance. As a suggestion, &quot;Never, ever, make</font> <font size="2">an investment
+        based solely on what you read in an online newsletter or Internet bulletin</font> <font
+        size="2">board, especially if the investment involves a small, thinly-traded company that
+        isn't well</font> <font size="2">known,&quot; said Nancy M. Smith, Director of SEC's
+        Office of Investor Education and Assistance.</font> <font size="2">&quot;Assume that the
+        information about these companies is not trustworthy unless you can prove</font> <font
+        size="2">otherwise through your own independent research.&quot; &quot;Internet Fraud&quot;
+        is available on the</font> <span
+        style="FONT-FAMILY: Times New Roman; mso-fareast-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><font
+        size="2">SEC's Web Site, at <a href="http://www.sec.gov/consumer/cyberfr.htm">http://www.sec.gov/consumer/cyberfr.htm</a></font></span></p>
+        <p align="left">
+        <span style="FONT-SIZE: 7.5pt; COLOR: #999999; FONT-FAMILY: Arial">We 
+        strongly oppose the use of SPAM email and do not want to send our 
+        mailings to anyone who does not &nbsp;wish to receive them. <br>
+        If you do not wish to receive further mailings, please </span>
+        <font size="1"><a href="mailto:uunsubvtge@firemail.de">Click Here</a></font><span style="FONT-SIZE: 7.5pt; COLOR: #999999; FONT-FAMILY: Arial"> 
+        and rest assured you will receive another message form us.<br>
+        <br>
+        If you would like to subscribe to future mailing of this type please
+        <a href="mailto:ssubvtge@firemail.de">click here to subscribe</a></span></p>
+        <p align="left">&nbsp;</p>
+        <p class="MsoNormal" align="center" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+        <p class="MsoNormal" style="margin-top: 0; margin-bottom: 0" align="center">&nbsp;</p>
+        <hr>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+
+ [BJK9^":}H&*TG0BK]
+
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

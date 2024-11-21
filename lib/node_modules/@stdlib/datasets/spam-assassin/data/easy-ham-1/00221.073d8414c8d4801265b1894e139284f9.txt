@@ -1,0 +1,66 @@
+From ilug-admin@linux.ie  Wed Aug 28 10:49:48 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id F0D4B4415C
+	for <zzzz@localhost>; Wed, 28 Aug 2002 05:48:56 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 28 Aug 2002 10:48:56 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7S9TnZ18148 for
+    <zzzz-ilug@spamassassin.taint.org>; Wed, 28 Aug 2002 10:29:49 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA14801; Wed, 28 Aug 2002 10:29:09 +0100
+Received: from dirac1.thphys.may.ie (IDENT:0@dirac1.thphys.may.ie
+    [149.157.205.161]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id KAA14770
+    for <ilug@linux.ie>; Wed, 28 Aug 2002 10:29:02 +0100
+Received: from dirac1.thphys.may.ie (IDENT:1208@localhost [127.0.0.1]) by
+    dirac1.thphys.may.ie (8.12.4/8.11.4) with ESMTP id g7S9T0Qq018215 for
+    <ilug@linux.ie>; Wed, 28 Aug 2002 10:29:01 +0100
+Received: from localhost (mpaturya@localhost) by dirac1.thphys.may.ie
+    (8.12.4/8.12.4/Submit) with ESMTP id g7S9T0C5018212 for <ilug@linux.ie>;
+    Wed, 28 Aug 2002 10:29:00 +0100
+X-Authentication-Warning: dirac1.thphys.may.ie: mpaturya owned process
+    doing -bs
+Date: Wed, 28 Aug 2002 10:28:59 +0100 (IST)
+From: Vanush Paturyan <mpaturya@thphys.may.ie>
+To: ilug@linux.ie
+Subject: Re: [ILUG] [OT] Dell machine giving me hassle.
+In-Reply-To: <496E31A690F7D311B93C0008C789494C07F08AC1@zei02exm01.cork.cig.mot.com>
+Message-Id: <Pine.LNX.4.44.0208281025350.10592-100000@dirac1.thphys.may.ie>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+
+I'm not familiar with Dell Dimension XPS, and, to be honest, not familiar
+with any brand-name computers. Most of my experience is China
+motherboards, but I've seen same behavior once. Changing the battery helps
+that time. It was big round battery with 'Panasonic' on it.
+Computer starts beeping then we removed battery from MB. It even booted up
+(well, loosing time and some other things).
+
+Just my 2 cents.
+
+Misha
+
+On Wed, 28 Aug 2002, Aherne Peter-pahern02 wrote:
+
+> Ok, Iknow this is blatantly OT but I'm beginning to go insane.
+> Had an old Dell Dimension XPS sitting in the corner and decided to
+> put it to use,
+<snip>
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

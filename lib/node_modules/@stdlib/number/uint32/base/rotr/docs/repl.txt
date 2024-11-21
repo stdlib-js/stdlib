@@ -1,0 +1,35 @@
+
+{{alias}}( x, shift )
+    Performs a bitwise rotation to the right.
+
+    If `shift = 0`, the function returns `x`.
+
+    If `shift >= 32`, the function only considers the five least significant
+    bits of `shift` (i.e., `shift % 32`).
+
+    Parameters
+    ----------
+    x: integer
+        Unsigned 32-bit integer.
+
+    shift: integer
+        Number of bits to shift.
+
+    Returns
+    -------
+    out: integer
+        Unsigned 32-bit integer.
+
+    Examples
+    --------
+    > var x = 1;
+    > var bStr = {{alias:@stdlib/number/uint32/base/to-binary-string}}( x )
+    '00000000000000000000000000000001'
+    > var y = {{alias}}( x, 10 )
+    4194304
+    > bstr = {{alias:@stdlib/number/uint32/base/to-binary-string}}( y )
+    '00000000010000000000000000000000'
+
+    See Also
+    --------
+

@@ -1,0 +1,350 @@
+Return-Path: <Online#3.20779.36-gJo6gn3tohOResRR.1.b@newsletter.online.com>
+Received: from abv-sfo1-acmta1.CNET.COM (abv-sfo1-acmta1.cnet.com [206.16.1.160])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6N2Xo421048
+	for <qqqqqqqqqq-zdnet@spamassassin.taint.org>; Tue, 23 Jul 2002 03:33:50 +0100
+Received: from abv-sfo1-ac-agent6 (206.16.0.241) by abv-sfo1-acmta1.CNET.COM (PowerMTA(TM) v1.5); Mon, 22 Jul 2002 19:33:51 -0700 (envelope-from <Online#3.20779.36-gJo6gn3tohOResRR.1.b@newsletter.online.com>)
+Message-ID: <5886278.1027391578403.JavaMail.root@abv-sfo1-ac-agent6>
+Date: Mon, 22 Jul 2002 19:32:58 -0700 (PDT)
+From: "CNET News.com Investor" <Online#3.20779.36-gJo6gn3tohOResRR.1@newsletter.online.com>
+To: qqqqqqqqqq-zdnet@spamassassin.taint.org
+Subject: NEWS.COM INVESTOR: Techs fall again with telecoms, Dow drops below 8K
+Mime-Version: 1.0
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+X-Mailer: Accucast (http://www.accucast.com)
+X-Mailer-Version: 2.8.4-2
+
+<html>
+<head>
+<title>CNET Investor Dispatch</title>
+</head>
+<body bgcolor="#eeeeee" link="#0000ff" vlink="#0000ff">
+<div align="center">
+<a href="top"></a>
+<table width=612 bgcolor="#ffffff" cellpadding=0 cellspacing=0 border=0>
+<tr valign=top><td width=442 colspan=4><img src="http://www.cnet.com/i/nl/inv/hd.gif" width=442 height=60 alt="CNET Investor Dispatch"><br>
+<table bgcolor="#ffcc00" width=442 cellpadding=0 cellspacing=0 border=0>
+<tr><td bgcolor="#000000" colspan=3><img src="http://www.cnet.com/b.gif" width=1 height=1></td></tr>
+<tr><td bgcolor="#000000" width=1 rowspan=2><img src="http://www.cnet.com/b.gif" width=1 height=10></td>
+<td width=10 rowspan=2><img src="http://www.cnet.com/b.gif" width=1 height=10></td>
+<td width=430><img src="http://www.cnet.com/b.gif" width=1 height=10></td></tr>
+<tr><td bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width=1 height=1></td></tr>
+</table></td>
+<td width=160 rowspan=2><img src="http://www.cnet.com/i/nl/dd_b.gif" width=160 height=18><br>
+
+<!-- ad -->
+<iframe src="http://www.zdnet.com/include/ads/ifc/RGROUP=2560" scrolling="no" frameborder="0" hspace="0" vspace="0" height="600" width="160" marginheight="0" marginwidth="0">
+<script language="JavaScript" src="http://www.zdnet.com/include/ads/js/RGROUP=2560">
+</script>
+</iframe>
+<!-- ad -->
+
+<br /><br />
+
+<!-- lookup -->
+<table width=160 bgcolor="#cccccc" cellpadding=1 cellspacing=0 border=0>
+<tr><td><table width="100%" bgcolor="#ffffff" cellpadding=9 cellspacing=0 border=0>
+<tr><td>
+<form name="lookupForm" method="get" action="http://investor.cnet.com/investor/quotes/quote-process/0-0.html">
+<font face="arial, helvetica" color="#333334" size="-1"><b>Quote Lookup</b><br>Enter symbol:</font><br>
+<input type="text" name="symbol" size=10 value="">
+<input name="target" type="hidden" value="detailquote">
+<input type="submit" value="Go!"><br>
+&#183; <font face="ms sans serif, geneva" size="-2"><a href="http://clickthru.online.com/Click?q=4b-k_l7IBUWWfh8AsWP9VA35c54JMcR" >Symbol Lookup</a><br>
+Quotes delayed 20+ minutes</font>
+</td></form></tr>
+</table></td></tr>
+</table>
+<!-- /lookup -->
+
+<p>
+
+<!-- nav -->
+<img src="http://www.cnet.com/i/nl/inv/rhc_sect.gif" width=160 height=20 alt="Investor Sections"><br>
+<font face="arial, helvetica" size="-1">
+&#149; <b><a href="http://clickthru.online.com/Click?q=60-oqItIsE3hXMC0YGLN8S_eSgFWVRR" >My Portfolio</a></b><br>
+&#149; <b><a href="http://clickthru.online.com/Click?q=75-whwtIKU3zcAGroK_rjups7LLZ5ZR" >Broker Reports</a></b><br>
+&#149; <b><a href="http://clickthru.online.com/Click?q=8a-3y3dQXnM4H3AnjoO3Nt-tKChBwnR" >IPOs</a></b><br>
+&#149; <b><a href="http://clickthru.online.com/Click?q=a0-11h8QQB7c3GgwG4UByjw2PB1s7iR" >Splits</a></b><br>
+&#149; <b><a href="http://clickthru.online.com/Click?q=b5-50FcQ7Uq53PUU_91PHq15ZNEEZPR" >Messages</a></b>
+</font>
+<!-- /nav -->
+
+<p>
+<!-- ad -->
+<!-- Vertical Brick -->
+<IMG alt="Also from CNET" height=20 src="http://home.cnet.com/Ads/Media/Images/RHC_ALSOfromCNETnet.gif" width=150 NOSEND="1"><BR>
+<TABLE border=0 cellPadding=2 cellSpacing=0 width=150><TBODY><TR vAlign=top>
+<TD><FONT face="arial, helvetica" size=-1><B>
+<a href="http://clickthru.online.com/Click?q=ca-iciuQUgTC8pcVTWcl8jfOfRHHUnR" >Live tech help NOW!</a><p>
+<a href="http://clickthru.online.com/Click?q=df-1kJhQLETxjC2W9BfbQq-Kh1XhaeR" >April's tech award</a><p>
+<a href="http://clickthru.online.com/Click?q=f4-Y-XEQ0sDSAhv1K1uUJ5QddfWmTyR" >1 million open jobs</a><p>
+<a href="http://clickthru.online.com/Click?q=09-joDSIj8jsJ9uis-LYSS7ZMgtY8lR" >News.com: Top CIOs</a> <p>
+<a href="http://clickthru.online.com/Click?q=1e-JQuLI4jPxRjN7tRqEsB8LE27qd4R" >ZDNet: PeopleSoft</a>
+</B></FONT></TD>
+</TR></TBODY></TABLE></P>
+<!-- End Vertical Brick-->
+<!-- ad -->
+</td>
+<td width=9 rowspan=2><img src="http://www.cnet.com/i/nl/dd_c.gif" width=9 height=60><br>
+<table width=9 cellpadding=0 cellspacing=0 border=0>
+<tr><td bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width=1 height=1></td></tr>
+<tr><td bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width=1 height=10></td></tr>
+<tr><td bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width=1 height=1></td></tr>
+</table></td>
+<td width=1 bgcolor="#000000" rowspan=2><table width=1 cellpadding=0 cellspacing=0 border=0>
+<tr><td bgcolor="#eeeeee"><img src="http://www.cnet.com/b.gif" width=1 height=60></td></tr>
+</table></td></tr>
+
+<tr valign=top><td width=1 bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width=1 height=1></td>
+<td width=10 bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width=10 height=1></td>
+<td width=1 bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width=1 height=1></td>
+<td width=430 bgcolor="#ffffff"><table cellpadding=0 cellspacing=0 border=0 width=430>
+<tr valign=top><td width=10><img src="http://www.cnet.com/b.gif" width=10 height=1></td>
+<td width=412><font face="arial, helvetica" size="-1"><img src="http://www.cnet.com/b.gif" width=1 height=8><br><font size="-2">July 22, 2002</font><br>
+
+<!-- /index -->
+
+<table width="100%" cellpadding=0 cellspacing=0 border=0>
+<tr><td colspan=4 bgcolor="#cccccc"><img src="http://www.cnet.com/b.gif" width=1 height=1></td></tr>
+
+<tr><td width="25%"><img src="http://home.cnet.com/Images/Investor/arrow_down.gif" width="7" height="9" alt="" border="0" /> <font face="ms sans serif, geneva" size="-2"><a href="http://clickthru.online.com/Click?q=33-vUjnINjcJEkusUkz6yClxb-7XsrR" >DJIA</a><br>7784.58 &nbsp;<font color=#cc0000>-234.68</font></td>
+
+<td width="25%"><img src="http://home.cnet.com/Images/Investor/arrow_down.gif" width="7" height="9" alt="" border="0" /> <font face="ms sans serif, geneva" size="-2"><a href="http://clickthru.online.com/Click?q=48-ggFbIdBwVd_qV3UXl_kj2ZBSJuRR" >NASDAQ</a><br>NA &nbsp;<font color=#cc0000>-36.50</font></td>
+
+<td width="25%"><img src="http://home.cnet.com/Images/Investor/arrow_down.gif" width="7" height="9" alt="" border="0" /> <font face="ms sans serif, geneva" size="-2"><a href="http://clickthru.online.com/Click?q=5d-JN-bIK0w8dxFOwEobvZm5yGKIaZR" >S&P 500</a><br>819.85 &nbsp;<font color=#cc0000>-27.90</font></td>
+
+<td width="25%"><img src="http://home.cnet.com/Images/Investor/arrow_down.gif" width="7" height="9" alt="" border="0" /> <font face="ms sans serif, geneva" size="-2"><a href="http://clickthru.online.com/Click?q=73-__ZeIBB9PqiT9ijT8UEE0WNrUZcR" >CNET&nbsp;TECH</a><br>897.37 &nbsp;<font color="#cc0000"><font color=#cc0000>-48.86</font></font>
+
+</td></tr>
+<tr><td colspan=4><img src="http://www.cnet.com/b.gif" width=1 height=3></td></tr>
+<tr><td colspan=4 bgcolor="#cccccc"><img src="http://www.cnet.com/b.gif" width=1 height=1></td></tr>
+</table>
+<!-- /index -->
+
+<br>
+<table width=93 align=left cellpadding=0 cellspacing=0 border=0>
+<tr><td><a href="?tag=dd.inv.dht.hed.0"><img src="http://www.cnet.com/i/ne/pt/2001/03/pts_0313nov.jpg" width=85 height=110 border=0></a></td></tr>
+</table>
+<font size=3><b>Techs fall again with telecoms, Dow drops below 8K</b></font><br>
+The day after WorldCom Group filed for bankruptcy protection, telecom shares suffered and helped drag down the tech sector.
+<p>
+BellSouth stock tumbled 18.07 percent after it missed Wall Street's earnings target and offered a worse-than-expected outlook.  With shares of SBC Communications, Qwest Communications International, Sprint and AT&T also dropping, CNET's Tech index shed 48.86 points, or 5.3 percent, to 897.37. The tech-heavy Nasdaq composite index fell 36.5 points, or 2.77 percent, to 1,282.55.
+<p>
+With a report raising questions about Citigroup and J.P. Morgan Chase & Co.'s role in the Enron fiasco, broader markets lost ground as well. After a see-saw session, the Dow Jones industrials ended down 234.7 points, or 2.93 percent, to 7,784.5. The S&P 500 slid 27.90 points, or 3.29 percent, to 819.85.
+<br><br>
+</font></td>
+<td width=8><img src="http://www.cnet.com/b.gif" width=8 height=1></td></tr>
+</table>
+
+<table cellpadding=10 cellspacing=0 border=0>
+<tr><td>
+<!-- top news -->
+<table width=400 cellpadding=0 cellspacing=0 border=0>
+<tr><td><img src="http://www.cnet.com/i/nl/inv/sub_news.gif" width=192 height=19 alt="Top Investor News"></td>
+<td width="100%"><img src="http://www.cnet.com/b.gif" width=1 height=8></td></tr>
+<tr bgcolor="#cccccc"><td colspan=2><img src="http://www.cnet.com/b.gif" width=1 height=1></td></tr>
+<tr><td colspan=2><img src="http://www.cnet.com/b.gif" width=1 height=5></td></tr>
+</table>
+<font face="arial, helvetica" size="-1">
+<font size=3><b><a href="http://clickthru.online.com/Click?q=88-ec5PQQKHiqOVSUx-rU358atSBbiR" >BellSouth posts lower second-quarter profits </a></b></font><br>
+BellSouth Corp., the No. 3 U.S. local telephone company, on Monday posted lower second-quarter profits due to slack demand and turbulent economic conditions in North America and Latin America.
+
+BellSouth, the dominant local telephone company in nine Southeastern states from Kentucky to Florida, said net income fell to 16 cents a share from 47 cents a year earlier. <br><B>BELLSOUTH CORP 22.61 -18.11% </B>
+<p>
+<font size=3><b><a href="http://clickthru.online.com/Click?q=9d-kkCWQv0hoCcBmdnuKLvd75wKZzPR" >WorldCom, BellSouth news adds to telecom gloom </a></b></font><br>
+WorldCom Inc.'s bankruptcy filing is only the latest in a long line of sad news for a slumping telecom industry grappling with soft demand, falling earnings and worries about accounting.
+
+And things are not likely to change any time soon, as signaled by BellSouth Corp.'s disappointing second-quarter earnings and downward revision to its full-year outlook, analysts and investors said on Monday.<br><B>WORLDCOM INC-WORLDCOM TRCK STK 0.14 55.56% </B>
+<p>
+<font size=3><b><a href="http://clickthru.online.com/Click?q=b2-M4pwQX04Ac0VI5YjM2cmpxUCPunR" >HP seeks Texas justice; Gateway dinged </a></b></font><br>
+In separate court cases, a Florida jury dinged Gateway for sending phone calls to the wrong business, and a federal court in Houston issued an injunction barring Emachines from selling products that infringe on Hewlett-Packard patents.
+A jury in Florida ruled last week that Gateway must pay $3.6 million for a typo in which it sent customers with a PC problem to an 800 number owned by Pensacola, Fla.-based Mo' Money Associates instead of the company's own complaint line, which had a similar number but with an 888 prefix.<br><B>HEWLETT-PACKARD CO 12.00 -6.25% </B>
+<!-- /top news -->
+<p>
+
+<p>
+<!-- rtsq -->
+<font color="#999999"><b>Also from CNET</b></font><br>
+<table width=400 cellpadding=0 cellspacing=0 border=0>
+<tr bgcolor="#cccccc"><td><img src="http://www.cnet.com/b.gif" width=1 height=1></td></tr>
+<tr><td><img src="http://www.cnet.com/b.gif" width=1 height=5></td></tr>
+</table>
+Real-time stock quotes from CNET News.com Investor.<br>30-day <a href="http://clickthru.online.com/Click?q=c7-KG43QLPPHlPupi8NWtUoF24wxeeR" >free trial</a>!
+<!-- /rtsq -->
+<p>
+<!-- broker reports -->
+<table width=400 cellpadding=0 cellspacing=0 border=0>
+<tr><td><img src="http://www.cnet.com/i/nl/inv/sub_brok.gif" width=192 height=19 alt="Today's Broker Reports"></td>
+<td width="100%"><img src="http://www.cnet.com/b.gif" width=1 height=8></td></tr>
+<tr bgcolor="#cccccc"><td colspan=2><img src="http://www.cnet.com/b.gif" width=1 height=1></td></tr>
+<tr><td colspan=2><img src="http://www.cnet.com/b.gif" width=1 height=5></td></tr>
+</table>
+<font face="arial, helvetica" size="-1">
+<font size=3><b><a href="http://clickthru.online.com/Click?q=dc-40zzQ0LQv504rTvBz6gEwTinhlyR" >Banc of America Securities stays with "buy" rating on Novellus Systems in note 7/22/02 </a></b></font><br>
+Analyst Mark FitzGerald expects the chip equipment maker to meet his revenue and earnings estimates of $225 million and 10 cents per share when it reports second-quarter results after the market close. He anticipates earnings guidance for the current quarter of 15-20 cents per share. The stock could move a bit higher, but FitzGerald believes better data from end markets is needed for a sustained rally. He also expects the firm to announce it will pay back $880 million in debt.<br><B>NOVELLUS SYSTEMS 29.55 -0.81% </B><br>
+<a href="http://clickthru.online.com/Click?q=f1-MtTuQpsTLZozfIQH3XX8owMnerlR" >Visit the Brokerage Center</a>
+<!-- /broker reports -->
+
+<p>
+
+<!-- ceo wealth meter -->
+<table width=400 cellpadding=0 cellspacing=0 border=0>
+<tr><td><img src="http://www.cnet.com/i/nl/inv/sub_ceo.gif" width=192 height=19 alt="CEO Wealth Meter"></td>
+<td width="100%"><img src="http://www.cnet.com/b.gif" width=1 height=8></td></tr>
+<tr bgcolor="#cccccc"><td colspan=2><img src="http://www.cnet.com/b.gif" width=1 height=1></td></tr>
+<tr><td colspan=2><img src="http://www.cnet.com/b.gif" width=1 height=5></td></tr>
+</table>
+<font face="arial, helvetica" size="-1">
+<font size=3><b><a href="http://clickthru.online.com/Click?q=06-fP6uI481hDh4T6omap_vCgSyiL4R" >Tyco CFO's tenure seen ending as confidence wanes </a></b></font><br>
+Tyco International Ltd.'s earnings release on Tuesday may very well be the last for Chief Financial Officer Mark Swartz, whose tenure has been marred by his close association with the conglomerate's disgraced former chairman.
+Named CFO in 1995, Swartz has been the chief defender of Tyco's accounting, which has drawn fire for being opaque and misleading. But perhaps more important, Swartz was a key adviser and architect in Dennis Kozlowski's decade-long acquisition binge to build Tyco into one of the world's largest manufacturing conglomerates.<br><B>TYCO INTERNATIONAL 11.85 -5.12% </B><br>
+<a href="http://clickthru.online.com/Click?q=1c-cs_iIFraA1G4Ol3n9kgGa2oXqGyR" >Visit the CEO Wealth Meter</a><br clear=all>
+<!-- /ceo wealth meter -->
+
+<p>
+
+</font><br>
+</td></tr>
+</table>
+</td></tr>
+</table>
+<table width=612 cellpadding=0 cellspacing=0 border=0>
+<tr><td width=1 bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width=1 height=1></td>
+<td width=10 bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width=10 height=1></td>
+<td width=1 bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width=1 height=1></td>
+<td width=599 bgcolor="#cccccc"><img src="http://www.cnet.com/b.gif" width=1 height=1></td>
+<td width=1 bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width=1 height=1></td></tr>
+</table>
+<table width="612" bgcolor="#FFFFFF" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="12"><img src="http://www.cnet.com/b.gif" width="12" height="1"></td>
+<td width="575"><img src="http://www.cnet.com/b.gif" width="1" height="10"><br>
+<!-- Leads Module -->
+<img src="http://www.cnet.com/i/gl/new-cc.gif" alt="Crucial Clicks" width="120" height="19" border="0"><br>
+<table width="100%"  cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
+<tr bgcolor="#cccccc"><td colspan="7"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td></tr>
+<tr>
+<td bgcolor="#cccccc" rowspan="3"><img src="http://home.cnet.com/b.gif" height=1 width=1></td>
+<td rowspan="3"><img src="http://home.cnet.com/b.gif" height=1 width=5></td>
+<td colspan="3"><img src="http://home.cnet.com/b.gif" height=5 width=1></td>
+<td rowspan="3"><img src="http://home.cnet.com/b.gif" height=1 width=5></td>
+<td bgcolor="#cccccc" rowspan="3"><img src="http://home.cnet.com/b.gif" height=1 width=1></td>
+</tr>
+<tr valign="top">
+<td width="100%">
+                <table width="100%"  cellpadding="0" cellspacing="0" border="0">
+                <tr valign="top">
+                <td width="85"><a href="http://clickthru.online.com/Click?q=31-V_YRIjMwk68Iq0ZyLxjkqVAXXblR" ><img src="http://a.r.tv.com/cnet.1d/i/p/06060digidark.jpg" width="85" height="110" border="0" alt="" /></a></td>
+        <td width="5"><img src="http://home.cnet.com/b.gif" height=1 width=5></td>
+        <td width="100%"><font face="arial, helvetica" size="-1"><a href="http://clickthru.online.com/Click?q=46-19zwInpkGBN6jR6a1cN0535V0Y9R" ><b>Digital photography starter kit</b></a><br />This guide to digital photos will show you the best products to take your images from snap to finish.</font></td>
+                </tr>
+                <tr><td colspan="3"><img src="http://home.cnet.com/b.gif" height=3 width=1><br /><font face="arial, helvetica" size="-1">
+        &#149; <a href="http://clickthru.online.com/Click?q=5b-5LOwIBKkZU9Ab8qxCjjvDSwizzcR" >Panasonic's littlest Lumix</a><br />
+        &#149; <a href="http://clickthru.online.com/Click?q=70-3vnJIdpiyGZegozKns2asfI8UkRR" >Minolta"s 4-megapixel Dimage F100</a><br />
+        </font></td></tr>
+        </table>
+</td>
+<td><img src="http://home.cnet.com/b.gif" height=1 width=5></td>
+<td width="180">
+        <table cellpadding="0" cellspacing="0" width="180" border="0" bgcolor="#ffffef">
+        <tr><td colspan="5" bgcolor="#666666"><img src="http://home.cnet.com/b.gif" width="1" height="1" alt="" border="0" /></td></tr>
+        <tr>
+        <td bgcolor="#666666"><img src="http://home.cnet.com/b.gif" width="1" height="1" alt="" border="0" /></td>
+        <td><img src="http://home.cnet.com/b.gif" width="10" height="1" alt="" border="0" /></td>
+        <td><font face="ms sans serif, geneva" size="-2"><img src="http://home.cnet.com/b.gif" width="1" height="5" alt="" border="0" /><br />
+        <font face="arial, helvetica" color="#666666" size="-1"><b>Most popular products</b></font><br /><img src="http://home.cnet.com/b.gif" width="1" height="5" alt="" border="0" /><br />
+        <b>Digital cameras</b><br /><img src="http://home.cnet.com/b.gif" width="1" height="7" alt="" border="0" /><br />
+        1. <a href="http://clickthru.online.com/Click?q=85-2G2oQ7KrekDiVnTaf70SVbToBBPR" >Canon PowerShot G2</a><br /><img src="http://home.cnet.com/b.gif" width="1" height="3" alt="" border="0" /><br />
+        2. <a href="http://clickthru.online.com/Click?q=9b-7-TFQSIm1-0Wzme0dAVJ9PZAKTrR" >Canon PowerShot S30</a><br /><img src="http://home.cnet.com/b.gif" width="1" height="3" alt="" border="0" /><br />
+        3. <a href="http://clickthru.online.com/Click?q=b0-NZmfQQJQNkl8fQtdxQMKtNX8PQiR" >Canon PowerShot S40</a><br /><img src="http://home.cnet.com/b.gif" width="1" height="3" alt="" border="0" /><br />
+        4. <a href="http://clickthru.online.com/Click?q=c5-8BcDQzO4Tpi03SMzSROUJEymxqPR" >Canon PowerShot A40</a><br /><img src="http://home.cnet.com/b.gif" width="1" height="3" alt="" border="0" /><br />
+        5. <a href="http://clickthru.online.com/Click?q=da-dT8jQUP7liO4tRBbjsMVKpv3DxnR" >Sony Cyber Shot DSC-F707</a><br /><img src="http://home.cnet.com/b.gif" width="1" height="6" alt="" border="0" /><br />
+        <img src="http://a.r.tv.com/cnet.1d/i/fd/yl_arrow.gif" width="13" height="13" border="0" alt="" align="absmiddle" /> <b><a href="http://clickthru.online.com/Click?q=ef-04uYQmkx5uhA2NOqBxDVAmoBameR" >See all most popular cameras</a></b><br />
+        <img src="http://home.cnet.com/b.gif" width="1" height="10" alt="" border="0" /><br />
+        </font></td>
+        <td><img src="http://home.cnet.com/b.gif" width="10" height="1" alt="" border="0" /></td>
+        <td bgcolor="#666666"><img src="http://home.cnet.com/b.gif" width="1" height="1" alt="" border="0" /></td>
+        </tr>
+        <tr><td colspan="5" bgcolor="#666666"><img src="http://home.cnet.com/b.gif" width="1" height="1" alt="" border="0" /></td></tr>
+        </table>
+</td>
+</tr>
+<tr valign="top"><td colspan="3"><img src="http://home.cnet.com/b.gif" height=5 width=1></td></tr>
+<tr><td colspan="7" bgcolor="#cccccc"><img src="http://home.cnet.com/b.gif" height=1 width=1></td></tr>
+</table><br />
+<!-- /Leads Module -->
+</td><td width="12"><img src="http://www.cnet.com/b.gif" width="12" height="1"></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<!-- ### footer ### -->
+<table width="612" bgcolor="#000000" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="599" bgcolor="#cccccc"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#eeeeee" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="12"><img src="http://www.cnet.com/b.gif" width="12" height="1"></td>
+<td width="575"><img src="http://www.cnet.com/b.gif" width="1" height="10"><br>
+      <a href="http://clickthru.online.com/Click?q=04-k9W0IFQcTWMEZRY98BbBL7kOi_yR" >
+      </a>
+      <table width="100%" border="0" cellpadding="5" align="center" bordercolor="#000000" bgcolor="#CCCCCC">
+        <tr bgcolor="#ffcc00">
+          <td bgcolor="#CCCCCC"><font face="Arial, Helvetica" size=-1><b><font size="2" color=blue>NEW!</font></b>
+            <font size="2">CNET professional e-mail publishing for just $24.95/month.
+            <b><a href="http://clickthru.online.com/Click?q=19-BLe0I2rcgPAJd1cKMZ2Fz8IR7XlR" >FREE for 30 days. Click
+            here!</a></b></font></font></td>
+        </tr>
+      </table>
+      <p><a href="http://clickthru.online.com/Click?q=2e-eMTGIiKj5wGYP-_ktQ3DlPfP8N4R" ><img src="http://a.r.tv.com/cnet.1d/i/nl/ft.gif" width="375" height="18" border="0" alt="Sign up for more free newsletters from CNET!"></a><br>
+        <!-- subscription management -->
+        <font face="ms sans serif, geneva" size="-2"> The e-mail address for your
+        subscription is&nbsp;qqqqqqqqqq-zdnet@spamassassin.taint.org</font></p>
+      <p><font face="ms sans serif, geneva" size="-2">
+
+<A NOTRACK HREF='http://clickthru.online.com/Click?q=44-9nvfzcUNbCoeh7AIz8j1c3ByJ6BtlsRR'>Unsubscribe</A>&nbsp;|&nbsp;<a href='http://nl.com.com/servlet/url_login?email=qqqqqqqqqq-zdnet@spamassassin.taint.org&brand=cnet'>Manage My Subscriptions</a>&nbsp;|&nbsp;<a href="http://clickthru.online.com/Click?q=59-y53oIEn9uCZVsBSlpW-B_KMqztFR" >FAQ</A>&nbsp;|&nbsp;<a href="http://clickthru.online.com/Click?q=6e-2aYjIyEG1KnneDRQA5K-fxuEL59R" >Advertise</A><p>
+Please send any questions, comments, or concerns to&nbsp;<a href="mailto:dispatchfeedback@news.com">dispatchfeedback@news.com</A>.<br></font>
+</font>
+
+<!-- /subscription management-->
+
+<img src="http://www.zdnet.com/b.gif" width="1" height="8"></td>
+<td width="12"><img src="http://www.cnet.com/b.gif" width="12" height="1"></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#000000" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="601"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#ffcc00" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="37"><a href="http://clickthru.online.com/Click?q=83-U-BXQYJq_uvij7UtuoAABMMPZ9rR" ><img src="http://www.cnet.com/i/dp/smrb.gif" width="37" height="37" border="0"></a></td>
+<td width="563" nowrap><font face="arial, helvetica" size="-1">
+<a href="http://clickthru.online.com/Click?q=98-FTaOQ_z4Y1hd7RcCW5CH7esbKRiR" ><font color="#000000">Price comparisons</font></a> |
+<a href="http://clickthru.online.com/Click?q=ad-_4IAQzEpaO9J-BZQhaIHsSzky0PR" ><font color="#000000">Product reviews</font></a> |
+<a href="http://clickthru.online.com/Click?q=c2-oXxLQUEDqh_Em4sgVnxXFZcIuInR" ><font color="#000000">Tech news</font></a> |
+<a href="http://clickthru.online.com/Click?q=d7-wk3ZQLWDyhknyviRmBekeVktk2eR" ><font color="#000000">Downloads</font></a> |
+<a href="http://clickthru.online.com/Click?q=ec-MHyXQVy13g_tHep1kOqFb2GVaGyR" ><font color="#000000">All CNET services</font></a>
+</font></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" cellpadding="0" cellspacing="0" border="0">
+<tr><td bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+<tr><td height="25"><font face="ms sans serif, geneva" size="-2"><table width=100% border=0 cellspacing=2 cellpadding=1> <tr valign=bottom> <td width=75% height=31> <p></font> <br><b><font face=Arial, Helvetica, sans-serif size=2>    Copyright 2002 CNET Networks, Inc. All rights reserved.    </font></b> </p></td><td height=31 valign=top> <div align=right> <img src="http://gserv-cnet.zdnet.com/clear/outbound.gif?APPID=2&EMID=25136482&NL=e426&ISSUE=2002-07-22" height=1 width=1>    </div></td></tr><tr>  <td colspan=2><font face=Arial, Helvetica, sans-serif size=2>    </font></td></tr></table>
+.</font></td></tr>
+</table>
+<!-- ### /footer ### -->
+
+</body>
+</html>
+<IMG HEIGHT=1 WIDTH=1 SRC="http://clickthru.online.com/Click?q=02-qit9nPj-NkIk18p4cDZgQWppY9RR">
+

@@ -1,0 +1,297 @@
+From fork-admin@xent.com  Mon Sep 23 18:32:29 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id C67F216F03
+	for <jm@localhost>; Mon, 23 Sep 2002 18:32:25 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 23 Sep 2002 18:32:25 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8NGhxC25817 for <jm@jmason.org>;
+    Mon, 23 Sep 2002 17:44:00 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 768F82940E3; Mon, 23 Sep 2002 09:40:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from sunserver.permafrost.net (u172n16.hfx.eastlink.ca
+    [24.222.172.16]) by xent.com (Postfix) with ESMTP id B57C729409A for
+    <fork@xent.com>; Mon, 23 Sep 2002 09:39:42 -0700 (PDT)
+Received: from [192.168.123.198] (helo=permafrost.net) by
+    sunserver.permafrost.net with esmtp (Exim 3.35 #1 (Debian)) id
+    17tWA9-00072J-00; Mon, 23 Sep 2002 13:34:21 -0300
+Message-Id: <3D8F4288.2000103@permafrost.net>
+From: Owen Byrne <owen@permafrost.net>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.1)
+    Gecko/20020826
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+Cc: Geege Schuman <geege@barrera.org>,
+	Gary Lawrence Murphy <garym@canada.com>,
+	"Mr. FoRK" <fork_list@hotmail.com>, fork@xent.com,
+	Digital Bearer Settlement List <dbs@philodox.com>
+Subject: Re: Comrade Communism (was Re: Crony Capitalism (was RE: sed
+    /s/United States/Roman Empire/g))
+References: <ILEHJNJFPDLMDEKNIAKCOEINCAAA.geege@barrera.org>
+    <p05111a15b9b4120d5486@[66.149.49.6]>
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 23 Sep 2002 13:34:16 -0300
+
+R. A. Hettinga wrote:
+
+>-----BEGIN PGP SIGNED MESSAGE-----
+>Hash: SHA1
+>
+>At 11:15 AM -0400 on 9/22/02, Geege Schuman wrote:
+>
+>
+>  
+>
+>>Most of them seem to have Ivy League educations, or are Ivy League
+>>dropouts suggesting to me that they weren't exactly poor to start
+>>with.
+>>    
+>>
+>
+>Actually, if I remember correctly from discussion of the list's
+>composition in Forbes about five or six years ago, the *best* way to
+>get on the Forbes 400 is to have *no* college at all. Can you say
+>"Bootstraps", boys and girls? I knew you could...
+>  
+>
+Sure - discussion in Forbes - rigorous research, that. Especially when 
+the data in their own list
+contradicts them. I continue to look at the list and all the "inherited, 
+growed" entries. I guess if
+I read it enough times my vision will clear.
+
+>[Given that an undergraduate liberal arts degree from a state school,
+>like, say, mine, :-), is nothing but stuff they should have taught
+>you in a government-run "high" school, you'll probably get more of
+>*those* on the Forbes 400 as well as time goes on. If we ever get
+>around to having a good old fashioned government-collapsing
+>transfer-payment depression (an economic version of this summer's
+>government-forest conflagration, caused by the same kind of
+>innumeracy that not clear-cutting enough forests did out west this
+>summer :-)) that should motivate more than a few erst-slackers out
+>there, including me, :-), to learn to actually feed themselves.]
+>
+>
+>The *next* category on the Forbes 400 list is someone with a
+>"terminal" professional degree, like an MBA, PhD, MD, etc., from the
+>best school possible.
+>
+>Why? Because, as of about 1950, the *best* way to get into Harvard,
+>for instance, is to be *smart*, not rich. Don't take my word for it,
+>ask their admissions office. Look at the admissions stats over the
+>years for proof.
+>  
+>
+I, at on point, looked into Stanford Business School. After learning 
+that tuition was > 20K,
+no financial aid was available, and part-time work was disallowed, this 
+smart person decided
+that I was not willing to spend the $150 application fee 
+(non-refundable). During attendance at
+my local business school, I was told repeatedly I should have gone for 
+it - to quote a prof, (Northwestern MBA), it
+has nothing to do with the education you receive - in general European 
+(and Canadian) business
+schools are better and more innovative - its the connections. He used 
+the words "American nobility."
+
+>Meritocracy, American Style, was *invented* at the Ivy League after
+>World War II. Even Stanford got the hint, :-), and, of course,
+>Chicago taught them all how, right? :-). Practically *nobody* who
+>goes to a top-20 American institution of higher learning can actually
+>afford to go there these days. Unless, of course, their parents, who
+>couldn't afford to go there themselves, got terminal degrees in the
+>last 40 years or so. And their kids *still* had to get the grades,
+>and "biased" (by intelligence :-)), test scores, to get in.
+>  
+>
+"invented" being the right word. Dubya went to Yale and HBS. I guess 
+"practically" gets you
+around that problem.
+
+>
+>The bizarre irony is that almost all of those people with "terminal"
+>degrees, until they actually *own* something and *hire* people, or
+>learn to *make* something for a living all day on a profit and loss
+>basis, persist in the practically insane belief, like life after
+>death, that economics is some kind of zero sum game, that dumb people
+>who don't work hard for it make all the money, and, if someone *is*
+>smart, works hard, and is rich, then they stole their wealth somehow.
+>
+>BTW, none of you guys out there holding the short end of this
+>rhetorical stick can blame *me* for the fact that I'm using it to
+>beat you severely all over your collective head and shoulders. You
+>were, apparently, too dumb to grab the right end. *I* went to
+>Missouri, and *I* don't have a degree in anything actually useful,
+>much less a "terminal" one, which means *I*'m broker than anyone on
+>this list -- it's just that *you*, of all people, lots with
+>educations far surpassing my own, should just plain know better. The
+>facts speak for themselves, if you just open your eyes and *look*.
+>There are no epicycles, the universe does not orbit the earth, and
+>economics is not a zero-sum game. The cost of anything, including
+>ignorance and destitution, is the forgone alternative, in this case,
+>intelligence and effort.
+>
+>[I will, however, admit to being educated *waay* past my level of
+>competence, and, by the way *you* discuss economics, so have you,
+>apparently.]
+>
+>  
+>
+Its interesting but in this part of the World (Nova Scotia) a recent 
+study found that college graduates
+earn less than graduates of 2 year community colleges (trade schools). 
+They did decline to mention
+that the demand for some trades  is so great that some of
+them are demanding university degrees to get in. Just for the record - 
+the average salary for
+a university graduate (including advanced degree holders) here is C$ 
+21,000  -- < $14,000 US. No wonder
+half of San Francisco has set up here - we have a whole whack of call 
+centers that
+have arrived here in the last couple of years - I think they hire some 
+entry level IT people for around $10 ($6 US) an
+hour, which of course, fits perfectly for me - my entry level job, in 
+1986, paid $11.00 an hour. The fundamental difference
+is that most of the jobs that require a trade are *unionized*.In other 
+words, in this part of the world, for the vast majority of people, 
+ union dues are a better investment than tuition. The counter-argument 
+to this is that many college graduates
+ leave for better work elsewhere, but the counter-counter argument is 
+that we are the thin edge
+(one of several really - prison labor in the US would be another) of 
+third-world wages and work practices coming
+ to North America.
+
+I worked at a company that had a 14-year wage freeze. The fact that they 
+could maintain that (and prosper) just says
+ volumes about the economy in this part of the world. I met many people 
+there, like me, who felt that was fine, I can vote
+with my feet. They didn't quite realize that just about every large 
+employer in the area has similar, or worse, policies. Anyway
+eventually they started a union drive. During the vote, retired 
+employees were brought in by the employer (rumours were
+that they were paid the going rate for a vote around here - a bottle of 
+rum) and somehow allowed to vote . The union filed
+ a grievance - which was denied - by a Minister of Labour, who, hey, 
+guess what - used to be a VP at the company.
+That's free labor markets at work. The business continues to prosper - 
+as I was told when I was there -  it is a cash cow as long
+as the JOA (Joint Operating Agreement) with the competing paper is in 
+place.
+
+And if you think that any of those wonderful American companies, out of 
+some free-enterprise belief in competing for the best talent,
+are going to do anything about that, sorry, most of them received 
+generous subsidies, in return, I'm sure, for an understanding about
+the labor markets here.
+
+>
+>BTW, if we ever actually *had* free markets in this country,
+>*including* the abolition of redistributive income and death taxes,
+>all those smart people in the Forbes 400 would have *more* money, and
+>there would be *more* self-made people on that list. In addition,
+>most of the people who *inherited* money on the list would have
+>*much* less of it, not even relatively speaking. Finally, practically
+>all of that "new" money would have come from economic efficiency and
+>not "stolen" from someone else, investment bubbles or not.
+>
+>That efficiency is called "progress", for those of you in The
+>People's Republics of Berkeley or Cambridge. It means more and better
+>stuff, cheaper, over time -- a terrible, petit-bourgeois concept
+>apparently not worthy of teaching by the educational elite, or you'd
+>know about it by now. In economic terms, it's also called an increase
+>in general welfare, and, no, Virginia, I'm not talking about
+>extorting money from someone who works, and giving it to someone who
+>doesn't in order to keep them from working and they can think of some
+>politician as Santa Claus come election time...
+>  
+>
+Much as I like to accept what you say - I do believe in free markets , I 
+have difficulty finding any - except of course for
+labor markets, which governments go to great lengths to protect (well 
+unless the supply is tight)
+It was a great run with the technology industry - producing most of the 
+self-made billionaires on
+the list, but now we've got a government-sponsored monopoly, and the 
+concept of "more stuff, cheaper"
+which it has always promised - seems to be disappearing. A particularly 
+galling example is
+high-speed internet access. An article I read a couple of years ago that 
+it is an area where the pricing
+approaches of the IT industry (cheaper, better or you die) and the 
+telecom industry (maintain your
+monopoly through regulation, and get guaranteed price increases through 
+the same regulators) meet.
+Sadly to say, the telecom industry seems to have won. The whole 
+entertainment industry/RIAA/Palladium thing
+seems to be another instance where actually giving value to the customer 
+seems less important than using
+regulation to reduce competition and substitute products in order to 
+produce profits for the favored few.
+
+>
+>In short, then, economics is not a zero sum game, property is not
+>theft, the rich don't get rich off the backs of the poor, and
+>redistributionist labor "theory" of value happy horseshit is just
+>that: horseshit, happy or otherwise.
+>
+>To believe otherwise, is -- quite literally, given the time Marx
+>wrote Capital and the Manifesto -- romantic nonsense.
+>  
+>
+I usually agree - but when there's a Republican in office -  I feel like 
+they're the biggest believers in
+the Manifesto, in reverse. Create a reserve pool of labor, reduce the 
+rights of that "proletariat" you've
+just created with bogus "law and order" policies , concentrate capital 
+in the hands of a few (ideally people
+who can get you reelected) and the economy will take care of itself. Oh, 
+and lie - use
+the word "compassionate" a lot. I guess I tend to believe that a certain 
+amount of poverty reduction actually
+helps a modern capitalist state - the basic economic tenet of the 
+Republic party seems to be the more homeless under
+ each overpass, the more efficient the rest of us will be.
+
+And the facts are, for most people in the Western world  are declining 
+standards of living, declining benefits, disappearing social safety net,
+greater working hours,  essentially since the entrance of women into the 
+work force (not blaming women in any way, they have a right
+ to work but its now 2 wage-earners in each family and still declining 
+standards of living) is the reality.
+
+Again to quote that wonderfully liberal document I keep coming back to - 
+the CIA world factbook - on the US economy:
+
+"Since 1975, practically all the gains in household income have gone to 
+the top 20% of households"
+
+Owen
+
+
+
+
+
+
+
+
+
+

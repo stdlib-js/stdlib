@@ -1,0 +1,81 @@
+From secprog-return-491-jm=jmason.org@securityfocus.com  Fri Sep  6 15:25:04 2002
+Return-Path: <secprog-return-491-yyyy=spamassassin.taint.org@securityfocus.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 73C1E16F17
+	for <jm@localhost>; Fri,  6 Sep 2002 15:25:01 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 15:25:01 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g869vZC29813 for
+    <jm@jmason.org>; Fri, 6 Sep 2002 10:57:35 +0100
+Received: from outgoing.securityfocus.com (outgoing2.securityfocus.com
+    [66.38.151.26]) by webnote.net (8.9.3/8.9.3) with ESMTP id VAA18263 for
+    <jm@jmason.org>; Thu, 5 Sep 2002 21:26:46 +0100
+Received: from lists.securityfocus.com (lists.securityfocus.com
+    [66.38.151.19]) by outgoing.securityfocus.com (Postfix) with QMQP id
+    2272E8F290; Thu,  5 Sep 2002 13:30:49 -0600 (MDT)
+Mailing-List: contact secprog-help@securityfocus.com; run by ezmlm
+Precedence: bulk
+List-Id: <secprog.list-id.securityfocus.com>
+List-Post: <mailto:secprog@securityfocus.com>
+List-Help: <mailto:secprog-help@securityfocus.com>
+List-Unsubscribe: <mailto:secprog-unsubscribe@securityfocus.com>
+List-Subscribe: <mailto:secprog-subscribe@securityfocus.com>
+Delivered-To: mailing list secprog@securityfocus.com
+Delivered-To: moderator for secprog@securityfocus.com
+Received: (qmail 12196 invoked from network); 5 Sep 2002 18:51:52 -0000
+From: George Dinwiddie <gdinwiddie@min.net>
+Message-Id: <200209051908.g85J8bb57967@min.net>
+Subject: Re: use of base image / delta image for automated recovery from
+    attacks
+To: bmord@icon-nicholson.com (Ben Mord)
+Date: Thu, 5 Sep 2002 15:08:37 -0400 (EDT)
+Cc: crispin@wirex.com (Crispin Cowan),
+	webappsec@securityfocus.com (Webappsec Securityfocus.Com),
+	SECPROG@securityfocus.com (SECPROG     Securityfocus)
+In-Reply-To: <NAEOJLMPJMJDFPLHIOJOGEHBDBAA.bmord@icon-nicholson.com> from
+    "Ben Mord"
+    at Sep 05, 2002 11:42:40 AM
+Organization: Hovel-On-The-Water
+X-Quote: Hope your road is a long one. May there be many summer mornings
+    when, with what pleasure, what joy, you enter harbors you're seeing for
+    the first time; (from Ithaka by C.P. Cavafy)
+X-Message-Flag: Don't look at this.  Read the message.
+X-Mailer: ELM [version 2.5 PL5]
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+> Ben Mord said:
+> 
+> >Ah. In that case, you can use something considerably less powerful than
+> >VMWare. All you need is a machine configured to boot from CD-ROM and use
+> >a RAM disk for scratch space. Numerous Linux distros are available that
+> >let you boot a stateless but functional system from CD-ROM.
+> 
+> But RAM is expensive, and the directory structures of many systems (e.g.
+> Windows) are not sufficiently organized and standardized to make this
+> combination of bootable CDs and RAM drives practical. Even if you are
+> fortunate enough to be using Linux (or another FHS-compliant *nix), you
+> still can't fit a lot on a CD. Its not unusual today to have gigabytes of
+> static multimedia content on the web server. This particular problem can be
+> alleviated somewhat by using DVDs, but this is a temporary solution at best
+> which will become outdated quickly as our data requirements grow and hard
+> drives become cheaper.
+
+So, just write-protect the hard disk for partitions that are static.
+I seem to recall an article on this (early 80's, Byte magazine, perhaps?)
+for BBS systems or for testing unknown (perhaps trojan horse) software.
+
+ - George
+
+-- 
+ ----------------------------------------------------------------------
+  George Dinwiddie                             gdinwiddie@alberg30.org
+  The gods do not deduct from man's allotted span those hours spent in
+  sailing.                                    http://www.Alberg30.org/
+ ----------------------------------------------------------------------
+
+

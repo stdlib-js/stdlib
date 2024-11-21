@@ -1,0 +1,25 @@
+
+{{alias}}( operation )
+    Returns the operation side string associated with a supported BLAS operation
+    side value.
+
+    Parameters
+    ----------
+    operation: any
+        Operation value.
+
+    Returns
+    -------
+    out: string|null
+        Operation string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'left' )
+    'left'
+    > out = {{alias}}( {{alias:@stdlib/blas/base/operation-side-str2enum}}( 'left' ) )
+    'left'
+
+    See Also
+    --------
+

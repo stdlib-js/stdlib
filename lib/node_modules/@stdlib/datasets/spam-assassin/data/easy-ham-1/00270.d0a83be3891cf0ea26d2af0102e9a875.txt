@@ -1,0 +1,75 @@
+From ilug-admin@linux.ie  Wed Oct  9 10:53:55 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id D85A816F84
+	for <zzzz@localhost>; Wed,  9 Oct 2002 10:52:27 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 09 Oct 2002 10:52:27 +0100 (IST)
+Received: from lugh.tuatha.org (postfix@lugh.tuatha.org [194.125.145.45])
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g98GUWK24540 for
+    <zzzz-ilug@spamassassin.taint.org>; Tue, 8 Oct 2002 17:30:32 +0100
+Received: from lugh.tuatha.org (localhost [127.0.0.1]) by lugh.tuatha.org
+    (Postfix) with ESMTP id D0445340D5; Tue,  8 Oct 2002 17:31:15 +0100 (IST)
+Delivered-To: linux.ie-ilug@localhost
+Received: from wivenhoe.staff8.ul.ie (wivenhoe.staff8.ul.ie
+    [136.201.147.134]) by lugh.tuatha.org (Postfix) with ESMTP id DE2F8340A2
+    for <ilug@linux.ie>; Tue,  8 Oct 2002 17:30:57 +0100 (IST)
+Received: (from brendan@localhost) by wivenhoe.staff8.ul.ie
+    (8.11.6/8.11.6) id g98GUaJ02261; Tue, 8 Oct 2002 17:30:36 +0100
+X-Authentication-Warning: wivenhoe.staff8.ul.ie: brendan set sender to
+    brendan.halpin@ul.ie using -f
+To: zzzz@spamassassin.taint.org (Justin Mason)
+Cc: ilug@linux.ie
+Subject: Re: [ILUG] cups question
+References: <20021008161145.DA84416F16@spamassassin.taint.org>
+From: Brendan Halpin <brendan.halpin@ul.ie>
+In-Reply-To: <20021008161145.DA84416F16@spamassassin.taint.org>
+Message-Id: <m3fzvgvqoj.fsf@wivenhoe.staff8.ul.ie>
+User-Agent: Gnus/5.09 (Gnus v5.9.0) Emacs/21.1
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Beenthere: ilug@linux.ie
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:ilug-request@linux.ie?subject=help>
+List-Post: <mailto:ilug@linux.ie>
+List-Subscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=subscribe>
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+List-Unsubscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=unsubscribe>
+List-Archive: <http://www.linux.ie/pipermail/ilug/>
+X-Original-Date: 08 Oct 2002 17:30:36 +0100
+Date: 08 Oct 2002 17:30:36 +0100
+
+zzzz@spamassassin.taint.org (Justin Mason) writes:
+
+> /dev/fd/0 is STDIN -- filedescriptor 0.  Looks like the PS file wants
+> to know its filename, but it's being read from STDIN, that's my
+> guess.  
+
+I don't think so: it should be getting a stream of PS from stdin,
+but it's not. The printing/spooling system is executing gs but
+somehow failing to provide it with input.
+
+> Try tweaking the scripts to run "gs" with the ps file on
+> the command line instead of as "-".
+
+That might clarify that the later part of the system works, but I
+suspect the problem is earlier.
+
+B
+-- 
+Brendan Halpin, Dept of Government and Society, Limerick University, Ireland
+Tel: w +353-61-213147 f +353-61-202569 h +353-61-390476;  Room F2-025 x 3147
+<mailto:brendan.halpin@ul.ie>        <http://wivenhoe.staff8.ul.ie/~brendan>
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

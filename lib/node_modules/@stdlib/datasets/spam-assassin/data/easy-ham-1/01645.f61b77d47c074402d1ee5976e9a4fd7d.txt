@@ -1,0 +1,41 @@
+Return-Path: guido@python.org
+Delivery-Date: Fri Sep  6 15:43:33 2002
+From: guido@python.org (Guido van Rossum)
+Date: Fri, 06 Sep 2002 10:43:33 -0400
+Subject: [Spambayes] Deployment
+In-Reply-To: Your message of "Fri, 06 Sep 2002 10:39:48 EDT."
+             <3D788653.9143.1D8992DA@localhost> 
+References: <3D788653.9143.1D8992DA@localhost> 
+Message-ID: <200209061443.g86Ehie14557@pcp02138704pcs.reston01.va.comcast.net>
+
+> >   your mail, and gives you only the non-spam.  To train it, you'd only need
+> >   to send it the false negatives somehow; it can assume that anything is
+> >   ham that you don't say is spam within 48 hours.
+> 
+> I have folks who leave their email programs running 24 hours a day,
+> constantly polling for mail. If they go away for a long weekend,
+> lots of "friday night spam" will become ham on sunday night.
+> (Friday night seems to be the most popular time)
+
+So we'll make this a config parameter.
+
+> > - Your idea here.
+> 
+> Ultimately I'd like to see tight integration into the "most popular
+> email clients".. As a stop-gap to the auto-ham ..
+
+What's an auto-ham?
+
+> How about adding an IMAP server with a spam and deleted-ham
+> folder. Most email clients can handle IMAP. Users should be able to
+> quickly move "spam" into the spam folder.
+
+I personally don't think IMAP has a bright future, but for people who
+do use it, that's certainly a good approach.
+
+> Instead of deleting messages (or, by reprogramming the delete
+> function) they can quickly move ham into the ham folder.
+
+Yes.
+
+--Guido van Rossum (home page: http://www.python.org/~guido/)

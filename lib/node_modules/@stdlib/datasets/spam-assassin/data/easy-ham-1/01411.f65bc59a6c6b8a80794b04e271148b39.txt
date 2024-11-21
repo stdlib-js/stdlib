@@ -1,0 +1,91 @@
+From glynn.clements@virgin.net  Wed Sep  4 11:37:31 2002
+Return-Path: <glynn.clements@virgin.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 761DB16F20
+	for <jm@localhost>; Wed,  4 Sep 2002 11:36:58 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 04 Sep 2002 11:36:58 +0100 (IST)
+Received: from outgoing.securityfocus.com (outgoing2.securityfocus.com
+    [66.38.151.26]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g83M8qZ05177 for <jm@jmason.org>; Tue, 3 Sep 2002 23:08:52 +0100
+Received: from lists.securityfocus.com (lists.securityfocus.com
+    [66.38.151.19]) by outgoing.securityfocus.com (Postfix) with QMQP id
+    204FE8F615; Tue,  3 Sep 2002 15:13:28 -0600 (MDT)
+Mailing-List: contact secprog-help@securityfocus.com; run by ezmlm
+Precedence: bulk
+List-Id: <secprog.list-id.securityfocus.com>
+List-Post: <mailto:secprog@securityfocus.com>
+List-Help: <mailto:secprog-help@securityfocus.com>
+List-Unsubscribe: <mailto:secprog-unsubscribe@securityfocus.com>
+List-Subscribe: <mailto:secprog-subscribe@securityfocus.com>
+Delivered-To: mailing list secprog@securityfocus.com
+Delivered-To: moderator for secprog@securityfocus.com
+Received: (qmail 27519 invoked from network); 3 Sep 2002 19:49:41 -0000
+From: Glynn Clements <glynn.clements@virgin.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Message-Id: <15733.3398.363187.572002@cerise.nosuchdomain.co.uk>
+Date: Tue, 3 Sep 2002 20:28:06 +0100
+To: Yannick Gingras <ygingras@eclipsys.qc.ca>
+Cc: secprog@securityfocus.com
+Subject: Re: Secure Sofware Key
+In-Reply-To: <20020829204345.91D1833986@LINPDC.eclipsys.qc.ca>
+References: <20020829204345.91D1833986@LINPDC.eclipsys.qc.ca>
+X-Mailer: VM 6.94 under 21.4 (patch 9) "Informed Management (RC2)" XEmacs
+    Lucid
+
+
+Yannick Gingras wrote:
+
+>    I am wondering if there are any techniques to make a CD-Key of the like 
+> unbreakable.  Either by giving it a cancelation date and a periodic renewal 
+> from a server or just by using self md5 signature on the resulting 
+> executable.  I know it must not be easy because the whole software piracy 
+> problem would be resolved but there must be some way to make it really hard 
+> to break it.  Anyone have hints on this issue ?
+
+What do you mean by "CD-Key or the like" (I presume that "of" was a
+typo)? And what do you mean by "unbreakable"?
+
+You need to be far more explicit about the problem which you wish to
+solve, and about the constraints involved.
+
+Some general points:
+
+1. For a conventional "CD key" system, where the actual CDs are
+mass-produced (where you have many identical CDs), and the entire
+system has to work offline, you cannot solve the problem of valid keys
+being "traded" (e.g. included along with bootleg copies of the
+product).
+
+If there's an online element involved, you can "tie" keys to a
+specific hardware configuration, as is done (AFAIK) for Windows XP's
+"product activation".
+
+2. Anything which uses a symmetric cipher (or hash) is bound to be
+vulnerable to reverse engineering of the validation routines within
+the executable.
+
+3. Ultimately, any software mechanism will be vulnerable to
+"cracking", i.e. modifying the software to disable or circumvent the
+validation checks.
+
+This can only be prevented by the use of trusted hardware (e.g. a
+Palladium-style system).
+
+Most significantly, the data must be supplied in a form which is only
+accessible by that hardware. If anyone can get at the data in a
+meaningful (i.e. unencrypted) form, they can extract the useful parts
+and discard the rest (i.e. any associated protection mechanisms).
+
+IOW, you have to "keep the genie in the bottle" at all times. If the
+data can be got at just once (even if it requires the use of dedicated
+hardware such as a bus analyser), it can then be duplicated and
+distributed without limit.
+
+-- 
+Glynn Clements <glynn.clements@virgin.net>
+

@@ -1,0 +1,64 @@
+From pudge@perl.org  Wed Aug  7 03:02:06 2002
+Return-Path: <pudge@perl.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id F029C440C9
+	for <jm@localhost>; Tue,  6 Aug 2002 22:02:02 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 07 Aug 2002 03:02:02 +0100 (IST)
+Received: from cpu59.osdn.com (slashdot.org [64.28.67.73] (may be forged))
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g77224k04031 for
+    <jm-use-perl@jmason.org>; Wed, 7 Aug 2002 03:02:04 +0100
+Received: from [10.2.181.14] (helo=perl.org) by cpu59.osdn.com with smtp
+    (Exim 3.35 #1 (Debian)) id 17cG7M-0000ij-01 for <jm-use-perl@jmason.org>;
+    Tue, 06 Aug 2002 22:00:08 -0400
+Date: Wed, 07 Aug 2002 02:00:28 +0000
+From: pudge@perl.org
+Subject: [use Perl] Stories for 2002-08-07
+To: yyyy-use-perl@spamassassin.taint.org
+Precedence: list
+X-Bulkmail: 2.051
+Message-Id: <E17cG7M-0000ij-01@cpu59.osdn.com>
+
+use Perl Daily Newsletter
+
+In this issue:
+    * Underground Movies of My Talks?
+
++--------------------------------------------------------------------+
+| Underground Movies of My Talks?                                    |
+|   posted by pudge on Tuesday August 06, @06:23 (others)            |
+|   http://use.perl.org/article.pl?sid=02/08/05/1323232              |
++--------------------------------------------------------------------+
+
+[0]Dominus writes "At my talks at TPC this year I noticed people in the
+audience with video recorders. That's fine with me, but now I want to see
+the recordings! I saw at least two people recording 'Mailing List Judo'
+and 'Conference Presentation Judo.' If you do have a video, please drop
+me a note. Thanks." I wouldn't mind an audio or video recording of my
+YAPC talk either, if someone had such a beast.
+
+Discuss this story at:
+    http://use.perl.org/comments.pl?sid=02/08/05/1323232
+
+Links:
+    0. mailto:mjd@plover.com
+
+
+
+Copyright 1997-2002 pudge.  All rights reserved.
+
+
+======================================================================
+
+You have received this message because you subscribed to it
+on use Perl.  To stop receiving this and other
+messages from use Perl, or to add more messages
+or change your preferences, please go to your user page.
+
+	http://use.perl.org/my/messages/
+
+You can log in and change your preferences from there.
+
+

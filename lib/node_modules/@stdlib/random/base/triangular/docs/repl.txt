@@ -1,0 +1,190 @@
+
+{{alias}}( a, b, c )
+    Returns a pseudorandom number drawn from a triangular distribution.
+
+    If the condition `a <= c <= b` is not satisfied, the function returns `NaN`.
+
+    If either `a`, `b`, or `c` is `NaN`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    a: number
+        Minimum support.
+
+    b: number
+        Maximum support.
+
+    c: number
+        Mode.
+
+    Returns
+    -------
+    r: integer
+        Pseudorandom number.
+
+    Examples
+    --------
+    > var r = {{alias}}( 2.0, 5.0, 3.33 );
+
+
+{{alias}}.factory( [a, b, c, ][options] )
+    Returns a pseudorandom number generator (PRNG) for generating pseudorandom
+    numbers drawn from a triangular distribution.
+
+    If provided `a`, `b`, and `c`, the returned PRNG returns random variates
+    drawn from the specified distribution.
+
+    If not provided `a`, `b`, and `c`, the returned PRNG requires that `a`, `b`,
+    and `c` be provided at each invocation.
+
+    Parameters
+    ----------
+    a: number (optional)
+        Minimum support.
+
+    b: number (optional)
+        Maximum support.
+
+    c: number (optional)
+        Mode.
+
+    options: Object (optional)
+        Options.
+
+    options.prng: Function (optional)
+        Pseudorandom number generator (PRNG) for generating uniformly
+        distributed pseudorandom numbers on the interval `[0,1)`. If provided,
+        the `state` and `seed` options are ignored. In order to seed the
+        returned pseudorandom number generator, one must seed the provided
+        `prng` (assuming the provided `prng` is seedable).
+
+    options.seed: integer|ArrayLikeObject<integer> (optional)
+        Pseudorandom number generator seed. The seed may be either a positive
+        unsigned 32-bit integer or, for arbitrary length seeds, an array-like
+        object containing unsigned 32-bit integers.
+
+    options.state: Uint32Array (optional)
+        Pseudorandom number generator state. If provided, the `seed` option is
+        ignored.
+
+    options.copy: boolean (optional)
+        Boolean indicating whether to copy a provided pseudorandom number
+        generator state. Setting this option to `false` allows sharing state
+        between two or more pseudorandom number generators. Setting this option
+        to `true` ensures that a returned generator has exclusive control over
+        its internal state. Default: true.
+
+    Returns
+    -------
+    rand: Function
+        Pseudorandom number generator (PRNG).
+
+    Examples
+    --------
+    // Basic usage:
+    > var rand = {{alias}}.factory();
+    > var r = rand( 0.0, 1.0, 0.5 );
+    > r = rand( -2.0, 2.0, 1.0 );
+
+    // Provide `a`, `b`, and `c`:
+    > rand = {{alias}}.factory( 0.0, 1.0, 0.5 );
+    > r = rand();
+    > r = rand();
+
+
+{{alias}}.NAME
+    Generator name.
+
+    Examples
+    --------
+    > var str = {{alias}}.NAME
+    'triangular'
+
+
+{{alias}}.PRNG
+    Underlying pseudorandom number generator.
+
+    Examples
+    --------
+    > var prng = {{alias}}.PRNG;
+
+
+{{alias}}.seed
+    Pseudorandom number generator seed.
+
+    Examples
+    --------
+    > var seed = {{alias}}.seed;
+
+
+{{alias}}.seedLength
+    Length of generator seed.
+
+    Examples
+    --------
+    > var len = {{alias}}.seedLength;
+
+
+{{alias}}.state
+    Generator state.
+
+    Examples
+    --------
+    > var r = {{alias}}( 0.0, 1.0, 0.5 )
+    <number>
+    > r = {{alias}}( 0.0, 1.0, 0.5 )
+    <number>
+    > r = {{alias}}( 0.0, 1.0, 0.5 )
+    <number>
+
+    // Get a copy of the current state:
+    > var state = {{alias}}.state
+    <Uint32Array>
+
+    > r = {{alias}}( 0.0, 1.0, 0.5 )
+    <number>
+    > r = {{alias}}( 0.0, 1.0, 0.5 )
+    <number>
+
+    // Set the state:
+    > {{alias}}.state = state;
+
+    // Replay the last two pseudorandom numbers:
+    > r = {{alias}}( 0.0, 1.0, 0.5 )
+    <number>
+    > r = {{alias}}( 0.0, 1.0, 0.5 )
+    <number>
+
+
+{{alias}}.stateLength
+    Length of generator state.
+
+    Examples
+    --------
+    > var len = {{alias}}.stateLength;
+
+
+{{alias}}.byteLength
+    Size (in bytes) of generator state.
+
+    Examples
+    --------
+    > var sz = {{alias}}.byteLength;
+
+
+{{alias}}.toJSON()
+    Serializes the pseudorandom number generator as a JSON object.
+
+    Returns
+    -------
+    out: Object
+        JSON representation.
+
+    Examples
+    --------
+    > var o = {{alias}}.toJSON()
+    { 'type': 'PRNG', 'name': '...', 'state': {...}, 'params': [] }
+
+    See Also
+    --------
+

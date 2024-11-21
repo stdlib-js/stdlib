@@ -1,0 +1,720 @@
+From fork-admin@xent.com  Tue Aug  6 12:57:02 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 351FE44196
+	for <jm@localhost>; Tue,  6 Aug 2002 07:36:57 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 12:36:57 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g764YTk13007 for <jm@jmason.org>;
+    Tue, 6 Aug 2002 05:34:32 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 39BA62940BA; Mon,  5 Aug 2002 21:31:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from 46.34.15.06 (unknown [61.149.27.205]) by xent.com (Postfix)
+    with SMTP id 5C0F72940AD for <fork@xent.com>; Mon,  5 Aug 2002 21:29:34
+    -0700 (PDT)
+From: "info@chinabusinesstravel.com" <info@chinabusinesstravel.com>
+To: fork@spamassassin.taint.org
+Reply-To: info@chinabusinesstravel.com
+Subject: Valuable Business Information Of China
+MIME-Version: 1.0
+Message-Id: <20020806042934.5C0F72940AD@xent.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 06 Aug 2002 12:34:20 +0800
+Content-Type: multipart/related; boundary="717fbb98-2427-46fa-b1fc-01aeb8d47c3f"
+
+
+This is a multi-part message in MIME format
+--717fbb98-2427-46fa-b1fc-01aeb8d47c3f
+Content-Type: text/html; charset=gb2312
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<title>Travel to China,Welcome to China business travel!</title>
+<META name=3D"description" content=3D"specializing in business and personal =
+travel services to China.">
+<META name=3D"keywords" content=3D"business travel,china business =
+travel,china travel,china business,china,business,travel,an agent for travel =
+to China, provide China travel service, act as China travel guide,for China =
+busieness, help doing business in China=A3=ACChina Olympics, China 2008, =
+traveling, travel, air, airfare, cruises, affordable, Asia, East, China, =
+Chinese, Tibet, Tibetan, Mongolia, Mongolian, minority regions, ancient silk =
+road, Beijing, Xian, Guilin, Hangzhou, Nanjing, Wuxi, Kunming, Guangzhou, =
+Bangkok, Singapore, Bali, Tokyo, Kuala Lumpur, Hong Kong, Guangzhou, Foshan, =
+Zhongshan, Macau, Shenzhen, Foshan, Zhaoqing, Shanghai, Hothot, Kashgar, =
+Urumqi, Dunhuang, Harbin, Jiayuguan, Qingdao, Luoyang, Chngdu, Leshan, Lhasa, =
+Chongqing, Yangtze River, Xishuangbanna, Suzhou, Hangzhou, Sanya, Huang =
+Guoshu, Wuhan, Huangshan">
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dgb2312">
+<style type=3D"text/css">
+<!--
+A.a01 {  font-size: 11px; color: 487EB3; text-decoration: underline; =
+font-family: "Arial", "Helvetica", "sans-serif"}
+A.a01:hover {  color: #FF9900}
+A.a02 {  font-size: 12px; font-weight: bold; color: D3E4F2; text-decoration: =
+none; font-family: "Arial", "Helvetica", "sans-serif"}
+A.a02:hover {  color: A6C7E8}
+.p12 {  font-size: 12px; font-family: "Arial", "Helvetica", "sans-serif"}
+td {  font-size: 11px; font-family: "Arial", "Helvetica", "sans-serif"}
+a {  color: #333333; text-decoration: none; line-height: 140%; font-family: =
+"Arial", "Helvetica", "sans-serif"}
+a:hover {  color: #476FA5; text-decoration: underline}
+.p11 {  font-size: 11px; color: #666666; line-height: 110%}
+select {  font-size: 11px; font-family: "Arial", "Helvetica", "sans-serif"}
+-->
+</style>
+<script language=3D"JavaScript">
+<!--
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location=3D'"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=3D0;
+}
+//-->
+</script>
+</head>
+<body bgcolor=3D"#FFFFFF" text=3D"#000000" leftmargin=3D"0">
+<p><font face=3D"Lucida Sans"><span lang=3D"EN-US">We are an agency =
+specializing  
+in business and personal travel services to China. If you want to take any =
+activity in China, please contact us. We will try our best to offer you the =
+top services.  
+If this email bothers you, please forgive us. We sincerely hope you will  
+consider using our services. </span></font><span lang=3D"EN-US" style=3D=
+"font-family:Arial"><o:p> 
+&nbsp;
+</span></p>
+<table width=3D"720" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D=
+"center">
+  <tr valign=3D"bottom"> 
+    <td><a href=3D"http://www.china-business-travel.com/index.html"><img =
+src=3D"http://www.china-business-travel.com/images/logo.gif" border=3D"0" =
+width=3D"298" height=3D"34"></a></td>
+    <td align=3D"right"><img src=3D=
+"http://www.china-business-travel.com/images/info.jpg" width=3D"249" height=3D=
+"34" border=3D"0" usemap=3D"#Map"></td>
+  </tr>
+</table>
+<table width=3D"720" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D=
+"center" bgcolor=3D"487EB3">
+  <tr> 
+    <td width=3D"42"><img src=3D=
+"http://www.china-business-travel.com/images/corner1.gif" width=3D"42" =
+height=3D"24" border=3D"0"></td>
+    <td align=3D"center" width=3D"95"><a href=3D=
+"http://www.china-business-travel.com/biztour/index.html" class=3D"a02">BIZ 
+      Tour</a></td>                     
+    <td><img src=3D"http://www.china-business-travel.com/images/vline1.gif" =
+width=3D"7" height=3D"24" border=3D"0"></td>
+    <td align=3D"center" width=3D"115"><a href=3D=
+"http://www.china-business-travel.com/bizconsult/index.html" class=3D=
+"a02">BIZ 
+      Consulting</a></td>
+    <td><img src=3D"http://www.china-business-travel.com/images/vline1.gif" =
+width=3D"7" height=3D"24" border=3D"0"></td>
+    <td width=3D"120" align=3D"center"><a href=3D=
+"http://www.china-business-travel.com/packages/index.html" class=3D"a02">Tour =
+
+      Packages</a></td>
+    <td><img src=3D"http://www.china-business-travel.com/images/vline1.gif" =
+width=3D"7" height=3D"24" border=3D"0"></td>
+    <td width=3D"145" align=3D"center"><a href=3D=
+"http://www.china-business-travel.com/adventure/index.html" class=3D=
+"a02">China 
+      Adventure</a></td>
+    <td><img src=3D"http://www.china-business-travel.com/images/vline1.gif" =
+width=3D"7" height=3D"24" border=3D"0"></td>
+    <td width=3D"135" align=3D"center"><a href=3D=
+"http://www.china-business-travel.com/customized/index.html" class=3D=
+"a02">Customized 
+      Tour</a></td>
+    <td width=3D"42" align=3D"right"><img src=3D=
+"http://www.china-business-travel.com/images/corner2.gif" width=3D"42" =
+height=3D"24" border=3D"0"></td>
+  </tr>
+</table>
+<table width=3D"720" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D=
+"center">
+  <tr> 
+    <td width=3D"192" background=3D"images/bg1.gif" valign=3D"top"> 
+      <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+=
+
+        <tr> 
+          <td><img src=3D=
+"http://www.chinabusinesstravel.com/images/line1.jpg" width=3D"192" height=3D=
+"3" border=3D"0"></td>
+        </tr>
+        <tr> 
+          <td><img src=3D=
+"http://www.china-business-travel.com/images/line2.jpg" width=3D"192" =
+height=3D"25" border=3D"0"></td>
+        </tr>
+        <tr> 
+          <td><img src=3D=
+"http://www.china-business-travel.com/images/pic1.jpg" width=3D"189" height=3D=
+"49" border=3D"0"></td>
+        </tr>
+        <tr> 
+          <td><img src=3D=
+"http://www.china-business-travel.com/images/pic3.jpg" width=3D"189" height=3D=
+"28" border=3D"0"></td>
+        </tr>
+        <tr> 
+          <td> 
+            <table width=3D"100%" border=3D"0" cellspacing=3D"5" =
+cellpadding=3D"0">
+              <tr> 
+                <td> <br>
+                  <a href=3D=
+"http://www.china-business-travel.com/bizguide/01.html"><img src=3D=
+"http://www.china-business-travel.com/images/dot1.gif" width=3D"13" height=3D=
+"14" border=3D"0">The 
+                  people's Republic of China</a><br>
+                  <a href=3D=
+"http://www.china-business-travel.com/bizguide/02.html"><img src=3D=
+"http://www.china-business-travel.com/images/dot1.gif" width=3D"13" height=3D=
+"14" border=3D"0">Natural 
+                  Conditions</a><br>
+                  <a href=3D=
+"http://www.china-business-travel.com/bizguide/03.html"><img src=3D=
+"http://www.china-business-travel.com/images/dot1.gif" width=3D"13" height=3D=
+"14" border=3D"0">Political 
+                  System</a><br>
+                  <a href=3D=
+"http://www.china-business-travel.com/bizguide/04.html"><img src=3D=
+"http://www.china-business-travel.com/images/dot1.gif" width=3D"13" height=3D=
+"14" border=3D"0">Industries 
+                  and Infrastructure</a><br>
+                  <a href=3D=
+"http://www.china-business-travel.com/bizguide/05.html"><img src=3D=
+"http://www.china-business-travel.com/images/dot1.gif" width=3D"13" height=3D=
+"14" border=3D"0">Foreign 
+                  Trade Laws</a><br>
+                  <a href=3D=
+"http://www.china-business-travel.com/bizguide/06.html"><img src=3D=
+"http://www.china-business-travel.com/images/dot1.gif" width=3D"13" height=3D=
+"14" border=3D"0">Import 
+                  and Export Procedures</a><br>
+                  <a href=3D=
+"http://www.china-business-travel.com/bizguide/07.html"><img src=3D=
+"http://www.china-business-travel.com/images/dot1.gif" width=3D"13" height=3D=
+"14" border=3D"0">Policy 
+                  on Foreign</a><br>
+                  <a href=3D=
+"http://www.china-business-travel.com/bizguide/08.html"><img src=3D=
+"http://www.china-business-travel.com/images/dot1.gif" width=3D"13" height=3D=
+"14" border=3D"0">Establishment 
+                  and Termination</a><br>
+                  <a href=3D=
+"http://www.china-business-travel.com/bizguide/09.html"><img src=3D=
+"http://www.china-business-travel.com/images/dot1.gif" width=3D"13" height=3D=
+"14" border=3D"0">Establishment 
+                  of Representative <img src=3D=
+"http://www.china-business-travel.com/images/dot2.gif" width=3D"13" height=3D=
+"14" border=3D"0">Offices</a><br>                        
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr> 
+          <td><img src=3D=
+"http://www.china-business-travel.com/images/pic2.jpg" width=3D"189" height=3D=
+"28" border=3D"0"></td>
+        </tr>
+        <tr> 
+          <td> 
+            <table width=3D"100%" border=3D"0" cellspacing=3D"5" =
+cellpadding=3D"0">
+              <tr> 
+                <td><a href=3D=
+"http://www.china-business-travel.com/travelguide/01.html"><img src=3D=
+"http://www.china-business-travel.com/images/dot1.gif" width=3D"13" height=3D=
+"14" border=3D"0">Arrival 
+                  and Departure</a><br>
+                  <a href=3D=
+"http://www.china-business-travel.com/travelguide/01.html"><img src=3D=
+"http://www.china-business-travel.com/images/dot1.gif" width=3D"13" height=3D=
+"14" border=3D"0"></a><a href=3D=
+"http://www.china-business-travel.com/travelguide/02.html">Customs 
+                  Declaration </a><br>
+                  <a href=3D=
+"http://www.china-business-travel.com/travelguide/01.html"><img src=3D=
+"http://www.china-business-travel.com/images/dot1.gif" width=3D"13" height=3D=
+"14" border=3D"0"></a><a href=3D=
+"http://www.china-business-travel.com/travelguide/03.html">Passports 
+                  and Visas</a> <br>
+                  <a href=3D=
+"http://www.china-business-travel.com/travelguide/01.html"><img src=3D=
+"http://www.china-business-travel.com/images/dot1.gif" width=3D"13" height=3D=
+"14" border=3D"0"></a><a href=3D=
+"http://www.china-business-travel.com/travelguide/04.html">Right 
+                  of Residence</a><br>
+                  <a href=3D=
+"http://www.china-business-travel.com/travelguide/01.html"><img src=3D=
+"http://www.china-business-travel.com/images/dot1.gif" width=3D"13" height=3D=
+"14" border=3D"0"></a><a href=3D=
+"http://www.china-business-travel.com/travelguide/05.html">Communications</a> =
+
+                  <br>
+                  <a href=3D=
+"http://www.china-business-travel.com/travelguide/01.html"><img src=3D=
+"http://www.china-business-travel.com/images/dot1.gif" width=3D"13" height=3D=
+"14" border=3D"0"></a><a href=3D=
+"http://www.china-business-travel.com/travelguide/06.html">Transportation 
+                  </a><br>
+                  <a href=3D=
+"http://www.china-business-travel.com/travelguide/01.html"><img src=3D=
+"http://www.china-business-travel.com/images/dot1.gif" width=3D"13" height=3D=
+"14" border=3D"0"></a><a href=3D=
+"http://www.china-business-travel.com/travelguide/07.html">Accommodation 
+                  and Shopping</a><br>
+                  <a href=3D=
+"http://www.china-business-travel.com/travelguide/01.html"><img src=3D=
+"http://www.china-business-travel.com/images/dot1.gif" width=3D"13" height=3D=
+"14" border=3D"0"></a><a href=3D=
+"http://www.china-business-travel.com/travelguide/08.html">Medical 
+                  &amp; Health</a><br>
+                  <a href=3D=
+"http://www.china-business-travel.com/travelguide/01.html"><img src=3D=
+"http://www.china-business-travel.com/images/dot1.gif" width=3D"13" height=3D=
+"14" border=3D"0"></a><a href=3D=
+"http://www.china-business-travel.com/travelguide/09.html">Sightseeing</a></t=
+d>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td width=3D"6"></td>
+    <td valign=3D"top">
+           <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D=
+"0" height=3D"4">
+        <tr> 
+          <td></td>
+        </tr>
+      </table>
+      <table width=3D"522" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+        <tr> 
+          <td><object classid=3D"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" =
+codebase=3D=
+"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version==
+3D5,0,0,0" width=3D"522" height=3D"142">
+              <param name=3Dmovie value=3D=
+"http://www.china-business-travel.com/images/super.swf">
+              <param name=3Dquality value=3Dhigh>
+              <embed src=3D"images/super.swf" quality=3D"high" pluginspage=3D=
+"http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=3D=
+ShockwaveFlash" type=3D"application/x-shockwave-flash" width=3D"522" height=3D=
+"142"> 
+            </object></td>
+        </tr>
+      </table>
+      <br>
+      <table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"522">
+        <tr> 
+          <td width=3D"10"></td>
+          <td> 
+            <table width=3D"100%" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0">
+              <tr> 
+                <td width=3D"170"><a href=3D=
+"http://www.china-business-travel.com/biztour/index.html"><img src=3D=
+"http://www.china-business-travel.com/images/x1.jpg" width=3D"154" height=3D=
+"85" border=3D"0" alt=3D"Business Tour"></a></td>
+                <td valign=3D"top"><b><span ><font color=3D"487EB3">China 
+                  Business Tour</font></span></b><br>
+                  Today China remains the fastest growing economy in the =
+world, 
+                  China is predicted to become the world's largest economic =
+center 
+                  by the year 2030. If you have not been to China yet, the =
+opportunity 
+                  is here, the time is now. <a href=3D=
+"http://www.china-business-travel.com/biztour/index.html" class=3D"a01">Read 
+=
+
+                  the detail &gt;&gt;</a></td>                       
+              </tr>
+            </table>
+            <br><br>
+            <table width=3D"100%" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0">
+              <tr> 
+                <td valign=3D"top" width=3D"20">&nbsp;</td>
+                <td valign=3D"top"><b ><font color=3D"487EB3">China Business =
+Assistant</font></b><br>
+                  <img src=3D=
+"http://www.china-business-travel.com/images/error.gif" width=3D"9" height=3D=
+"9" border=3D"0"> 
+                  Through our experiences, we know the value of face-to-face =
+meetings 
+                  in the international arena, and how developing trust and =
+respect 
+                  with trading partners goes a long way toward ensuring =
+mutual 
+                  success. <a href=3D=
+"http://www.china-business-travel.com/bizconsult/index.html" class=3D=
+"a01">Read 
+                  the detail &gt;&gt;</a></td>                       
+                
+                <td width=3D"175" align=3D"right"><a href=3D=
+"http://www.china-business-travel.com/bizconsult/index.html"><img src=3D=
+"http://www.china-business-travel.com/images/x2.jpg" width=3D"154" height=3D=
+"98" border=3D"0" alt=3D"Business Assistant"></a></td>
+              </tr>
+            </table>
+            <br>
+            <br>
+            <table width=3D"100%" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0">
+              <tr> 
+                <td width=3D"250" valign=3D"top"> <b><span ><font color=3D=
+"487EB3">China 
+                  Customized Tour</font></span></b> 
+                  <table width=3D"100%" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"4">
+                    <tr> 
+                      <td><img src=3D=
+"http://www.china-business-travel.com/images/ff2.jpg" width=3D"68" height=3D=
+"120" border=3D"0"></td>
+                      <td valign=3D"top">An itinerary can be arranged to meet =
+your                        
+                        individual requirement; to include visiting =
+relatives,                        
+                        friends, and business contacts.<br>
+                        <a href=3D=
+"http://www.china-business-travel.com/customized/index.html" class=3D=
+"a01">Read 
+                        the detail &gt;&gt;</a></td>
+                    </tr>
+                  </table>
+                </td>
+                <td valign=3D"top" width=3D"10">&nbsp;</td>
+                <td valign=3D"top"> <b><font color=3D"487EB3">Exhibitions of =
+China                                   
+                  2002</font></b>
+                  <table width=3D"100%" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"4">
+                    <tr> 
+                      <td><img src=3D=
+"http://www.china-business-travel.com/images/ff1.jpg" width=3D"68" height=3D=
+"120" border=3D"0"></td>
+                      <td valign=3D"top">
+                        <table width=3D"100%" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"4">
+                          <tr>  <form name=3D"form1">
+                            <td>
+                             
+                                <select name=3D"menu1" onChange=3D=
+"MM_jumpMenu('parent',this,1)">
+                                  <option value=3D=
+"http://www.china-business-travel.com/exhibition/accessories.html">Accessorie=
+s 
+                                  </option>
+                                  <option value=3D=
+"http://www.china-business-travel.com/exhibition/aeronautics.html">Aeronautic=
+s</option>
+                                  <option value=3D=
+"http://www.china-business-travel.com/exhibition/agriculture.html" =
+selected>Agriculture</option>
+                                  <option value=3D=
+"http://www.china-business-travel.com/exhibition/automobiles.html">Automobile=
+s</option>
+                                  <option value=3D=
+"http://www.china-business-travel.com/exhibition/building.html">Building</opt=
+ion>
+                                  <option value=3D=
+"http://www.china-business-travel.com/exhibition/chemical.html">Chemical 
+                                  Industry</option>
+                                  <option value=3D=
+"http://www.china-business-travel.com/exhibition/clothing.html">Clothing</opt=
+ion>
+                                  <option value=3D=
+"http://www.china-business-travel.com/exhibition/clothing-machinery.html">Clo=
+thing 
+                                  Machinery</option>
+                                  <option value=3D=
+"http://www.china-business-travel.com/exhibition/construction-machinery.html"=
+>Construction 
+                                  Machinery</option>
+                                  <option value=3D=
+"http://www.china-business-travel.com/exhibition/computer.html">Computer 
+                                  & Communication</option>
+                                  <option value=3D=
+"http://www.china-business-travel.com/exhibition/cosmetics.html">Cosmetics</o=
+ption>
+                                  <option value=3D=
+"http://www.china-business-travel.com/exhibition/craftsman.html">Craftsman`s 
+=
+
+                                  Equipment</option>
+                                  <option value=3D=
+"http://www.china-business-travel.com/exhibition/educational.html">Educationa=
+l 
+                                  Materials</option>
+                                  <option value=3D=
+"http://www.china-business-travel.com/exhibition/electronics.html">Electronic=
+s</option>
+                                  <option value=3D=
+"http://www.china-business-travel.com/exhibition/energy.html">Energy</option>
+=
+
+                                  <option value=3D=
+"http://www.china-business-travel.com/exhibition/food.html">Food 
+                                  & Tobacco & Wine</option>
+                                  <option value=3D=
+"http://www.china-business-travel.com/exhibition/food-machine.html">Food 
+                                  Machines & Packaging</option>
+                                  <option value=3D=
+"http://www.china-business-travel.com/exhibition/furniture.html">Furniture</o=
+ption>
+                                  <option value=3D=
+"http://www.china-business-travel.com/exhibition/health-medical.html">Health 
+=
+
+                                  & Medical</option>
+                                  <option value=3D=
+"http://www.china-business-travel.com/exhibition/hotel.html">Hotel 
+                                  and Restaurant</option>
+                                  <option value=3D=
+"http://www.china-business-travel.com/exhibition/industrial.html">Industrial 
+=
+
+                                  Equipment </option>
+                                  <option value=3D=
+"http://www.china-business-travel.com/exhibition/interior.html">Interior 
+                                  Design</option>
+                                  <option value=3D=
+"http://www.china-business-travel.com/exhibition/leather.html">Leather 
+                                  </option>
+                                  <option value=3D=
+"http://www.china-business-travel.com/exhibition/logos.html">Logos 
+                                  & Advertising & Design</option>
+                                  <option value=3D=
+"http://www.china-business-travel.com/exhibition/machine.html">Machine 
+                                  Tools</option>
+                                  <option value=3D=
+"http://www.china-business-travel.com/exhibition/nursery.html">Nursery 
+                                  Equipment</option>
+                                  <option value=3D=
+"http://www.china-business-travel.com/exhibition/paper.html">Paper 
+                                  & Printing</option>
+                                  <option value=3D=
+"http://www.china-business-travel.com/exhibition/railway.html">Railway 
+                                  & Transport</option>
+                                  <option value=3D=
+"http://www.china-business-travel.com/exhibition/safety.html">Safety 
+                                  & Fire Protection</option>
+                                  <option value=3D=
+"http://www.china-business-travel.com/exhibition/scintefic.html">Scintefic 
+                                  Equipment</option>
+                                  <option value=3D=
+"http://www.china-business-travel.com/exhibition/sports.html">Sports 
+                                  Equipment</option>
+                                  <option value=3D=
+"http://www.china-business-travel.com/exhibition/tools.html">Tools</option>
+                                  <option value=3D=
+"http://www.china-business-travel.com/exhibition/toys.html">Toys</option>
+                                  <option value=3D=
+"http://www.china-businesst-ravel.com/exhibition/travel.html">Travel</option>
+=
+
+                                  <option value=3D=
+"http://www.china-businesst-ravel.com/exhibition/waste.html">Waste 
+                                  Technology</option>
+                                  <option value=3D=
+"http://www.china-business-travel.com/exhibition/other.html">Other 
+                                  Trade Fairs</option>
+                                  <option value=3D=
+"http://www.china-business-travel.com/exhibition/fairs.html">Fairs 
+                                  for Consumer Goods</option>
+                                </select>
+                             
+                            </td> </form>
+                          </tr>
+                        </table>
+                        We provide information query for all the exhibitions =
+in      
+                        China every year, and offer various consulting =
+services      
+                        for potential clients who have the intent to take =
+part      
+                        in exhibitions in China. </td>     
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <br><br>
+            <table width=3D"100%" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" bgcolor=3D"F7F3F7">
+              <tr valign=3D"top"> 
+                <td width=3D"9" height=3D"9"><img src=3D=
+"http://www.china-business-travel.com/images/arc3.jpg" width=3D"9" height=3D=
+"9"></td>
+                <td width=3D"69" height=3D"9"></td>
+                <td height=3D"9" width=3D"176"></td>
+                <td height=3D"9" width=3D"70"></td>
+                <td height=3D"9"></td>
+                <td width=3D"11" align=3D"right" height=3D"9"><img src=3D=
+"http://www.china-business-travel.com/images/arc4.jpg" width=3D"9" height=3D=
+"9" border=3D"0"></td>
+              </tr>
+              <tr> 
+                <td width=3D"9">&nbsp;</td>
+                <td width=3D"69" valign=3D"top"> <a href=3D=
+"http://www.china-business-travel.com/packages/index.html"><img src=3D=
+"http://www.china-business-travel.com/images/sight1.jpg" width=3D"60" =
+height=3D"60" border=3D"0"></a></td>
+                <td valign=3D"top" width=3D"176"> <a href=3D=
+"http://www.china-business-travel.com/packages/index.html"><b><span ><font =
+color=3D"487EB3">China 
+                  Tour Packages </font></span></b></a> 
+                  <table width=3D"142" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0">
+                    <tr valign=3D"top"> 
+                      <td width=3D"41%"> <img src=3D=
+"http://www.china-business-travel.com/images/dot3.jpg"><a href=3D=
+"http://www.china-business-travel.com/packages/CC.htm">China 
+                        Civilization</a> </td> 
+                    </tr>
+                    <tr valign=3D"top"> 
+                      <td width=3D"41%"> <img src=3D=
+"http://www.china-business-travel.com/images/dot3.jpg"><a href=3D=
+"http://www.china-business-travel.com/packages/ECS.htm">East 
+                        China Splendor</a> </td>                     
+                    </tr>
+                    <tr valign=3D"top"> 
+                      <td width=3D"41%"> <img src=3D=
+"http://www.china-business-travel.com/images/dot3.jpg"><a href=3D=
+"http://www.china-business-travel.com/packages/MC.htm">Memorial 
+                        China</a> </td> 
+                    </tr>
+                    <tr valign=3D"top"> 
+                      <td width=3D"41%"> <img src=3D=
+"http://www.china-business-travel.com/images/dot3.jpg"><a href=3D=
+"http://www.china-business-travel.com/packages/SRA.htm">Silk 
+                        Road Adventure</a> <br>
+                        <img src=3D=
+"http://www.china-business-travel.com/images/dot3.jpg"><a href=3D=
+"http://www.china-business-travel.com/packages/YRC.htm">Yangtze 
+                        River Cruises</a> <br>
+                        <img src=3D=
+"http://www.china-business-travel.com/images/dot3.jpg"><a href=3D=
+"http://www.china-business-travel.com/packages/MW.htm">Minority 
+                        Wander</a> <br>
+                        <img src=3D=
+"http://www.china-business-travel.com/images/dot3.jpg"><a href=3D=
+"http://www.china-business-travel.com/packages/MT.htm">Mystical 
+                        Tibet</a> </td> 
+                    </tr>
+                  </table>
+                </td>
+                <td valign=3D"top" width=3D"70"><a href=3D=
+"http://www.china-business-travel.com/adventure/index.html"><img src=3D=
+"http://www.china-business-travel.com/images/sight5.jpg" width=3D"60" =
+height=3D"60" border=3D"0"></a></td>
+                <td valign=3D"top"><a href=3D=
+"http://www.china-business-travel.com/adventure/index.html"><b ><font color=3D=
+"487EB3">China 
+                  Adventure</font></b></a> 
+                  <table width=3D"100%" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0">
+                    <tr>
+                      <td><img src=3D=
+"http://www.china-business-travel.com/images/dot3.jpg"><a href=3D=
+"http://www.china-business-travel.com/adventure/drifting.html" target=3D=
+"_blank">Drifting 
+                        Tour</a><br>
+                        <img src=3D=
+"http://www.china-business-travel.com/images/dot3.jpg"><a href=3D=
+"http://www.china-business-travel.com/adventure/foot.html" target=3D=
+"_blank">Traveling 
+                        on Foot</a><br>
+                        <img src=3D=
+"http://www.china-business-travel.com/images/dot3.jpg"><a href=3D=
+"http://www.china-business-travel.com/adventure/self-Driving.html" target=3D=
+"_blank">Self-Driving 
+                        Tour</a><br>
+                        <img src=3D=
+"http://www.china-business-travel.com/images/dot3.jpg"><a href=3D=
+"http://www.china-business-travel.com/adventure/martial.html" target=3D=
+"_blank">Martial 
+                        Arts and Fitness Tour </a></td>                       =
+
+                    </tr>
+                  </table>
+                  
+                </td>
+                <td width=3D"11" align=3D"right">&nbsp;</td>
+              </tr>
+              <tr valign=3D"bottom"> 
+                <td width=3D"9" height=3D"9"><img src=3D=
+"http://www.china-business-travel.com/images/arc2.jpg" width=3D"9" height=3D=
+"9" border=3D"0"></td>
+                <td width=3D"69" height=3D"9"></td>
+                <td height=3D"9" width=3D"176"></td>
+                <td height=3D"9" width=3D"70"></td>
+                <td height=3D"9"></td>
+                <td width=3D"11" align=3D"right" height=3D"9"><img src=3D=
+"http://www.china-business-travel.com/images/arc1.jpg" width=3D"9" height=3D=
+"9" border=3D"0"></td>
+              </tr>
+            </table>
+          <br></td>
+        </tr>
+      </table>      
+    </td>
+  </tr>
+  <tr> 
+    <td width=3D"192" valign=3D"bottom" background=3D=
+"http://www.chinabusinesstravel.com/images/bg1.gif"><img src=3D=
+"http://www.china-business-travel.com/images/corner3.gif" width=3D"192" =
+height=3D"18" border=3D"0"></td>
+    <td width=3D"6"></td>
+    <td align=3D"right">  <map name=3D"Map"> 
+        <area shape=3D"rect" coords=3D"184,17,212,32" href=3D=
+"http://www.china-business-travel.com/info/sqa.htm" target=3D"_blank">
+        <area shape=3D"rect" coords=3D"113,17,166,32" href=3D=
+"http://www.china-business-travel.com/info/contact.htm" target=3D"_blank">
+        <area shape=3D"rect" coords=3D"44,17,97,32" href=3D=
+"http://www.china-business-travel.com/info/about.htm" target=3D"_blank">
+  </map> 
+      <hr noshade size=3D"1" color=3D9BB2C7>
+      <font color=3D"#666666">      <table width=3D"100%" border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"0">
+        <tr align=3D"right"> 
+          <td><font color=3D"#666666">Copyright &copy; 2002 =
+Chinabusinesstravel,All                        
+            Rights Reserved</font></td>                       
+          <td><font color=3D"#666666">E-mail:<a href=3D=
+"mailto:info@chinabusinesstravel.com"><font color=3D=
+"#666666">info@chinabusinesstravel.com</font></a></font></td>
+        </tr>
+      </table></font></td>
+  </tr>
+</table>
+</body>
+</html>  
+--717fbb98-2427-46fa-b1fc-01aeb8d47c3f--
+
+http://xent.com/mailman/listinfo/fork
+
+

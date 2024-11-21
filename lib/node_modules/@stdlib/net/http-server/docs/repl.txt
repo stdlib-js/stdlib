@@ -1,0 +1,72 @@
+
+{{alias}}( [options,] [requestListener] )
+    Returns a function to create an HTTP server.
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Options.
+
+    options.port: integer (optional)
+        Server port. Default: `0` (i.e., randomly assigned).
+
+    options.maxport: integer (optional)
+        Max server port when port hunting. Default: `maxport = port`.
+
+    options.hostname: string (optional)
+        Server hostname.
+
+    options.address: string (optional)
+        Server address. Default: `'127.0.0.1'`.
+
+    requestListener: Function (optional)
+        Request callback.
+
+    Returns
+    -------
+    createServer: Function
+        Function to create an HTTP server.
+
+    Examples
+    --------
+    // Basic usage:
+    > var createServer = {{alias}}()
+    <Function>
+
+    // Provide a request callback:
+    > function onRequest( request, response ) {
+    ...    console.log( request.url );
+    ...    response.end( 'OK' );
+    ... };
+    > createServer = {{alias}}( onRequest )
+    <Function>
+
+    // Specify a specific port:
+    > var opts = { 'port': 7331 };
+    > createServer = {{alias}}( opts )
+    <Function>
+
+
+createServer( done )
+    Creates an HTTP server.
+
+    Parameters
+    ----------
+    done: Function
+        Callback to invoke after creating a server.
+
+    Examples
+    --------
+    > function done( error, server ) {
+    ...    if ( error ) {
+    ...        throw error;
+    ...    }
+    ...    console.log( 'Success!' );
+    ...    server.close();
+    ... };
+    > var createServer = {{alias}}();
+    > createServer( done );
+
+    See Also
+    --------
+

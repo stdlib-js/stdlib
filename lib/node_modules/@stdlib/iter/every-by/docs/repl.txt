@@ -1,0 +1,42 @@
+
+{{alias}}( iterator, predicate[, thisArg ] )
+    Tests whether every iterated value passes a test implemented by a predicate
+    function.
+
+    The predicate function is provided two arguments:
+
+    - value: iterated value.
+    - index: iteration index.
+
+    The function immediately returns upon encountering a falsy return value.
+
+    If provided an iterator which does not return any iterated values, the
+    function returns `true`.
+
+    Parameters
+    ----------
+    iterator: Object
+        Input iterator over which to iterate.
+
+    predicate: Function
+        The test function.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    bool: boolean
+        The function returns `true` if a predicate function returns a truthy
+        value for all iterated values. Otherwise, the function returns `false`.
+
+    Examples
+    --------
+    > var arr = {{alias:@stdlib/array/to-iterator}}( [ 1, 1, 1, 1, 1 ] );
+    > function fcn( v ) { return ( v > 0 ); };
+    > var bool = {{alias}}( arr, fcn )
+    true
+
+    See Also
+    --------
+

@@ -1,0 +1,64 @@
+
+{{alias}}()
+    Stack constructor.
+
+    A stack is also referred to as a "last-in-first-out" queue.
+
+    Returns
+    -------
+    stack: Object
+        Stack data structure.
+
+    stack.clear: Function
+        Clears the stack.
+
+    stack.first: Function
+        Returns the "newest" stack value (i.e., the value which is "first-out").
+        If the stack is empty, the returned value is `undefined`.
+
+    stack.iterator: Function
+        Returns an iterator for iterating over a stack. If an environment
+        supports Symbol.iterator, the returned iterator is iterable. Note that,
+        in order to prevent confusion arising from stack mutation during
+        iteration, a returned iterator **always** iterates over a stack
+        "snapshot", which is defined as the list of stack elements at the time
+        of the method's invocation.
+
+    stack.last: Function
+        Returns the "oldest" stack value (i.e., the value which is "last-out").
+        If the stack is empty, the returned value is `undefined`.
+
+    stack.length: integer
+        Stack length.
+
+    stack.pop: Function
+        Removes and returns the current "first-out" value from the stack. If the
+        stack is empty, the returned value is `undefined`.
+
+    stack.push: Function
+        Adds a value to the stack.
+
+    stack.toArray: Function
+        Returns an array of stack values.
+
+    stack.toJSON: Function
+        Serializes a stack as JSON.
+
+    Examples
+    --------
+    > var s = {{alias}}();
+    > s.push( 'foo' ).push( 'bar' );
+    > s.length
+    2
+    > s.pop()
+    'bar'
+    > s.length
+    1
+    > s.pop()
+    'foo'
+    > s.length
+    0
+
+    See Also
+    --------
+

@@ -1,0 +1,84 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6NEkmhY030813
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Tue, 23 Jul 2002 09:46:48 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6NEklSB030808
+	for cypherpunks-forward@ds.pro-ns.net; Tue, 23 Jul 2002 09:46:47 -0500 (CDT)
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6NEfuhX028821
+	for <cypherpunks@ds.pro-ns.net>; Tue, 23 Jul 2002 09:41:56 -0500 (CDT)
+	(envelope-from cpunks@einstein.ssz.com)
+X-Authentication-Warning: hq.pro-ns.net: Host cpunks@[207.200.56.4] claimed to be einstein.ssz.com
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id JAA13628
+	for cypherpunks@ds.pro-ns.net; Tue, 23 Jul 2002 09:50:29 -0500
+Received: (from mdom@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id JAA13602
+	for cypherpunks-outgoing; Tue, 23 Jul 2002 09:47:45 -0500
+Received: from smtphost.dircon.co.uk (smtphost.dircon.co.uk [194.112.32.49])
+	by einstein.ssz.com (8.8.8/8.8.8) with ESMTP id JAA13534
+	for <cypherpunks@ssz.com>; Tue, 23 Jul 2002 09:43:26 -0500
+From: informatively@vmabox676.com.cc
+Received: from enterprise_1.dircon.co.uk (dlan1443.dircon.co.uk [195.157.162.177])
+	by smtphost.dircon.co.uk (8.9.3/8.9.1) with ESMTP id PAA23584
+	for <cypherpunks@ssz.com>; Tue, 23 Jul 2002 15:34:27 +0100 (BST)
+Received: from 61.187.55.67 by enterprise_1.dircon.co.uk with SMTP (Microsoft Exchange Internet Mail Service Version 5.0.1457.7)
+	id PN3GPNRT; Mon, 22 Jul 2002 14:53:50 +0100
+Message-ID: <00003a521bf1$00004fc0$00000c1f@vmabox676.com.cc>
+To: <cyphers@bellsouth.com>, <cyphers@earthlink.net>, <cypherpunks@pouch.com>,
+   <cyphers@netzero.net>, <cyphers@amouse.net>, <cyphers@1stconnect.com>,
+   <cypherpunks@wfol.net>, <cyphers@lycos.com>, <cypherpunx@bellsouth.com>,
+   <cyphers@concentric.net>, <cypherpunks@win.net>, <cypherpunks@webtv.net>,
+   <cypherpunks@einstein.ssz.com>
+Cc: <cypherpunks@whyweb.com>, <cypherpunks@wenet.net>, <cyphers@ans.net>,
+   <cypherpunks@worldnet.att.net>, <cypherpunks@webtv.com>,
+   <cyphers@eudoramail.com>, <cyphers@compaq.net>, <cyphers@netzero.com>,
+   <cyphers@adni.net>, <cypherpunks@sinclair.net>, <cyphers@earthling.net>,
+   <cypherpunks@openpgp.net>, <cypherred@cis.net>
+Subject: Free Digital TV installed in 4 rooms.                       14599
+Date: Mon, 22 Jul 2002 21:51:43 -1600
+MIME-Version: 1.0
+Content-Type: text/plain;
+	charset="Windows-1252"
+Content-Transfer-Encoding: 7bit
+Sender: owner-cypherpunks@einstein.ssz.com
+Precedence: bulk
+Reply-To: cypherpunks@einstein.ssz.com
+X-Mailing-List: cypherpunks@ssz.com
+X-Unsubscription-Info: http://einstein.ssz.com/cdr
+X-List-Admin: list@ssz.com
+X-Loop: ssz.com
+X-Acceptable-Languages: English, Russian, German, French, Spanish
+
+
+<> Get up to 4 receivers installed in 4 rooms! 
+<> No Equipment To Buy. 
+<> Fist 3 Months of Free Service! - 
+<> Up to 170 CHANNELS of CD quality sound and picture 
+<> PROGRAMMING LESS EXPENSIVE than cable TV in most markets 
+
+You can receive FREE INSTALLATION of a Dish Network 
+Satellite TV System! You can also upgrade to a Personal Digital Video Recorder. 
+(Retail value $499 if you had to buy this!) 
+
+Click here to get your FREE INSTALLATION of a Dish Network satellite TV 
+System and 3 months of free service before this promotion expires: 
+
+http://www.proleadcom.com/discsat/index.php
+
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

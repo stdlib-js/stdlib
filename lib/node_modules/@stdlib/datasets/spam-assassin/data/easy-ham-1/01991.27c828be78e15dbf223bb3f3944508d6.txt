@@ -1,0 +1,26 @@
+From rssfeeds@jmason.org  Thu Sep 26 16:43:17 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 41A4016F7C
+	for <jm@localhost>; Thu, 26 Sep 2002 16:42:14 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 16:42:14 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8QFTlg24755 for
+    <jm@jmason.org>; Thu, 26 Sep 2002 16:29:48 +0100
+Message-Id: <200209261529.g8QFTlg24755@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: gamasutra <rssfeeds@spamassassin.taint.org>
+Subject: Black entrepreneurs 'face bank bias'
+Date: Thu, 26 Sep 2002 15:29:47 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.newsisfree.com/click/-4,8276087,215/
+Date: 2002-09-26T13:42:57+01:00
+
+*Business:* Black entrepreneurs face more problems in raising money for 
+start-ups than white or Asian counterparts, new report says.
+
+

@@ -1,0 +1,96 @@
+From fork-admin@xent.com  Tue Aug 20 22:15:15 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 38C8443C36
+	for <jm@localhost>; Tue, 20 Aug 2002 17:15:11 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 22:15:11 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7KLGYZ24744 for <jm@jmason.org>;
+    Tue, 20 Aug 2002 22:16:34 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id CF649294155; Tue, 20 Aug 2002 14:07:27 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from tisch.mail.mindspring.net (tisch.mail.mindspring.net
+    [207.69.200.157]) by xent.com (Postfix) with ESMTP id CF5172940C7 for
+    <fork@xent.com>; Wed,  7 Aug 2002 15:37:40 -0700 (PDT)
+Received: from user-119ac86.biz.mindspring.com ([66.149.49.6]) by
+    tisch.mail.mindspring.net with esmtp (Exim 3.33 #1) id 17cZRI-0007kA-00;
+    Wed, 07 Aug 2002 18:38:00 -0400
+MIME-Version: 1.0
+X-Sender: rahettinga@pop.earthlink.net
+Message-Id: <p05111a3ab9774f75f17c@[66.149.49.6]>
+To: Digital Bearer Settlement List <dbs@philodox.com>,
+	dcsb@ai.mit.edu, cryptography@wasabisystems.com, e$@vmeng.com,
+	mac-crypto@vmeng.com, net-thinkers@vmeng.com, dave@farber.net,
+	cypherpunks@lne.com, cyberia-l@listserv.aol.com,
+	nettime-l@bbs.thing.net, fork@xent.com
+From: "R. A. Hettinga" <rah@shipwright.com>
+Subject: Palladiated? (was re: wow - palladiated! (Re: Palladium: technical limits and implications))
+Content-Type: text/plain; charset="us-ascii"
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 7 Aug 2002 18:37:51 -0400
+
+Evidently, I have permission to pass this along. :-).
+
+Don't try this at home, boys and girls. This is a professional neologist at
+work...
+
+Cheers,
+RAH
+Comedy is not pretty...
+
+--- begin forwarded text
+
+
+Date: Wed, 7 Aug 2002 22:40:56 +0100
+From: Adam Back <adam@cypherspace.org>
+To: "R. A. Hettinga" <rah@shipwright.com>
+Cc: Adam Back <adam@cypherspace.org>
+Subject: wow - palladiated! (Re: Palladium: technical limits and implications)
+User-Agent: Mutt/1.2.2i
+
+On Wed, Aug 07, 2002 at 03:08:08PM -0400, R. A. Hettinga wrote:
+> At 6:54 PM +0100 on 8/7/02, Adam Back wrote:
+> > Palladiumized
+>
+> Palladiated?
+>
+> ;-).
+
+that's pretty funny, rhymes with irradiated -- nice connotations of
+radioactive material with radioactive half-lives spewing
+life-hazardous neutron radiation ;-)
+
+Helps that palladium is in fact a heavy metal.  Man, perhaps Pd even
+_has_ a half-life on the decay path from plutonium down to lead or
+something.  That would be very funny.
+
+Adam
+
+--- end forwarded text
+
+
+-- 
+-----------------
+R. A. Hettinga <mailto: rah@ibuc.com>
+The Internet Bearer Underwriting Corporation <http://www.ibuc.com/>
+44 Farquhar Street, Boston, MA 02131 USA
+"... however it may deserve respect for its usefulness and antiquity,
+[predicting the end of the world] has not been found agreeable to
+experience." -- Edward Gibbon, 'Decline and Fall of the Roman Empire'
+http://xent.com/mailman/listinfo/fork
+

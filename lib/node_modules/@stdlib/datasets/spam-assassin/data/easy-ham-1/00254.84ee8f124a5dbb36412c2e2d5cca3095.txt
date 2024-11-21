@@ -1,0 +1,127 @@
+From ilug-admin@linux.ie  Fri Sep  6 11:40:30 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id 8725D16F03
+	for <zzzz@localhost>; Fri,  6 Sep 2002 11:39:09 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Fri, 06 Sep 2002 11:39:09 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g869kOC28806 for
+    <zzzz-ilug@spamassassin.taint.org>; Fri, 6 Sep 2002 10:47:47 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id AAA19327 for <zzzz-ilug@spamassassin.taint.org>;
+    Fri, 6 Sep 2002 00:52:16 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id AAA15843; Fri, 6 Sep 2002 00:50:53 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail05.svc.cra.dublin.eircom.net
+    (mail05.svc.cra.dublin.eircom.net [159.134.118.21]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id AAA15809 for <ilug@linux.ie>; Fri,
+    6 Sep 2002 00:50:45 +0100
+Received: (qmail 46890 messnum 300912 invoked from
+    network[159.134.112.65/p112-65.as1.bdt.dublin.eircom.net]); 5 Sep 2002
+    23:50:14 -0000
+Received: from p112-65.as1.bdt.dublin.eircom.net (HELO calm.mc)
+    (159.134.112.65) by mail05.svc.cra.dublin.eircom.net (qp 46890) with SMTP;
+    5 Sep 2002 23:50:14 -0000
+Received: from mconry by calm.mc with local (Exim 3.35 #1 (Debian)) id
+    17n6O5-0000Fh-00; Fri, 06 Sep 2002 00:50:13 +0100
+Date: Fri, 6 Sep 2002 00:50:13 +0100
+From: Michael Conry <michael.conry@ucd.ie>
+To: eric nichols <matchsprint@trackbike.com>
+Cc: ilug@linux.ie
+Subject: Re: [ILUG] PCTel modules
+Message-Id: <20020905235013.GC887@calm.mc>
+Reply-To: michael.conry@ucd.ie
+References: <20020905221736.822B53942@sitemail.everyone.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20020905221736.822B53942@sitemail.everyone.net>
+User-Agent: Mutt/1.3.28i
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On 0020 -0700 %{!Thu, Sep 05, 2002 at  3:17:36PM -0700}, eric nichols wrote:
+> Hello again. I tried all the suggestions for the PCTel driver and at
+> the end of it, everything still goes smoothly until I type "make"
+> after I get the output from the ./configure. 
+> 
+> However, there were a couple of things I noticed along the way. After typing 
+> * cp configs/kernel-2.4...config .config
+> * make oldconfig
+> * make dep
+> The 2nd to last line I got back said that the modversions.h file was
+> not updated. When I looked at this path to the modversions.h file, it
+> was 281 lines and every line started with a # mark.
+> Is it the case
+> that nothing is read on a line after a # mark (or am I just thinking
+> of another language?) and so should I delete the # at certain places?
+No that is appropriate content for the file.  I'm not a C programmer,
+but I think that these sort of things (#include <blahblah>) are
+instructions to the compiler processed by a pre-processor in the compile
+process, and include all sorts of symbols/functions
+e.g. "#include <math.h>" gives you maths type functions.  Since they
+start with "#" they are ignored in the final compilation.
+
+Regarding the rest of the compile process, you need to tell the PCtel
+software to look in the right place for the kernel headers/source. 
+I recall from your previous mail that there was a flag
+    --with-kernel-includes=/usr/src/linux-2.4
+which could be passed to the ./configure script (with the appropriate
+directory in place of /usr/src/linux-2.4).  This might allow you to
+persuade the code to compile against the correct headers.  I think this
+is the right way to proceed.
+
+Alternatively, maybe the steps above regarding "make dep" and so forth
+should have been performed in the directory where the make process is
+looking for modversions.h & Co.
+
+I don't think it is a good idea keep moving files into the directory as
+you describe below.  First of all you will move modversions.h (which you
+have done), then you would have to move all those *.ver files, after
+that, there will almost certainly be a need for further header (*.h)
+files.  This could be quickly done, but is probably bad (those files
+don't really belong there).
+
+For what it's worth I think you are very close to a successful
+compilation.
+
+m
+
+> 
+> Also, when I was in the pctel directory and typed "make", I noticed
+> that a different subdirectory is taken to a different modversions.h
+> file. Inside this other file, there's nothing at all. And so I moved
+> the modversions.h file with 281 lines to the empty modversions.h file
+> - and got a different reply after "make". The output after I moved the
+> file over mostly looked like this:
+> /usr/src/linux-2.4.18-3/linux/modversions.h:11:33:
+> linux/modules/adb.ver: No such file or directory
+> /usr/src/linux-2.4.18-3/linux/modversions.h:12:37:
+> linux/modules/af_ax25.ver: No such file or directory
+> /usr/src/linux-2.4.18-3/linux/modversions.h:13:36:
+> linux/modules/af_ipx.ver: No such file or directory
+> 
+> The odd lines being the path and the first half of the other lines are
+> what's written after the # in the modversions.h file. Should there be
+> a file at each of these (one at each of the 281 lines of the file)
+> that I'd have to compile/make?
+
+-- 
+Michael Conry   Ph.:+353-1-7161987, Web: http://www.acronymchile.com
+Key fingerprint = 5508 B563 6791 5C84 A947  CB01 997B 3598 09DE 502C
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

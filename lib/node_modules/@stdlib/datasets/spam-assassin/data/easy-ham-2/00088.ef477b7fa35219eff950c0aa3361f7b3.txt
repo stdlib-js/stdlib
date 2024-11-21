@@ -1,0 +1,82 @@
+From ilug-admin@linux.ie  Mon Jul 22 18:12:23 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 048E4440CD
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:19 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:19 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFwJY14614 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 16:58:19 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id TAA28600 for <jm-ilug@jmason.org>;
+    Sun, 21 Jul 2002 19:17:10 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id TAA20518; Sun, 21 Jul 2002 19:16:39 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail1.mail.iol.ie (mail1.mail.iol.ie [194.125.2.192]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id TAA20484 for <ilug@linux.ie>;
+    Sun, 21 Jul 2002 19:16:32 +0100
+Received: from [194.165.161.155] (helo=excalibur.research.wombat.ie) by
+    mail1.mail.iol.ie with esmtp (Exim 3.35 #1) id 17WL8u-0005ob-00;
+    Sun, 21 Jul 2002 19:09:16 +0100
+Received: (from kenn@localhost) by excalibur.research.wombat.ie
+    (8.11.6/8.11.6) id g6LIGUq12426; Sun, 21 Jul 2002 19:16:30 +0100
+Date: Sun, 21 Jul 2002 19:16:30 +0100
+From: Kenn Humborg <kenn@linux.ie>
+To: John Gay <johngay@eircom.net>
+Cc: ilug@linux.ie
+Subject: Re: [ILUG] Optimising for PentiumMMX?
+Message-Id: <20020721191629.A12416@excalibur.research.wombat.ie>
+References: <200207211807.TAA20052@lugh.tuatha.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <200207211807.TAA20052@lugh.tuatha.org>; from
+    johngay@eircom.net on Sun, Jul 21, 2002 at 07:06:06PM +0100
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Sun, Jul 21, 2002 at 07:06:06PM +0100, John Gay wrote:
+> I am wondering if the C, and other libraries  should be re-built? Can they 
+> take advantage of the Pentium and MMX instructions for system performance? 
+> And would this require re-building gcc as well?
+
+glibc is a likely candidate.
+
+> On a related note, I know I've mentioned here before, but I'm still looking 
+> for a Slot 1 550Mhz PIII. My regular system is a Dual PII350 and the 440BX 
+> M/B can take PIII's. I managed to get my hands on one. If I could get another 
+> I could put the two PIII's into this box and re-compile X to use the 
+> SSE/Katmai instructions in the PIII. I just don't thing it is worth replacing 
+> two PII's with one PIII. I know that they are out-of-stock, and I do watch 
+> the Buy-N-Sell regularly, but short of buying a full PIII system, I've not 
+> had much luck.
+
+Keep an eye on eBay.  One annoyance of eBay is that many sellers state "will
+ship to US only".  However, I've found that if you ask nicely, they will
+usually ship over here.  For payments, either setup a paypal account or
+post the seller a US dollar bank draft.  I've got lots of little bits and
+pieces that way (for example, finally got my hands on a rackmount kit for
+my DECserver 700 terminal server which I'd been looking for for ages, for
+a total of US$15).
+
+Later,
+Kenn
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

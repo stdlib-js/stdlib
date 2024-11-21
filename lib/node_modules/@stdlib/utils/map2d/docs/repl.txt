@@ -1,0 +1,40 @@
+
+{{alias}}( arr, fcn[, thisArg] )
+    Applies a function to each nested element in an array of arrays and assigns
+    the result to a nested element in a new array of arrays.
+
+    The applied function is provided the following arguments:
+
+    - value: array element.
+    - indices: current array element indices.
+    - arr: input array.
+
+    Parameters
+    ----------
+    arr: ArrayLikeObject<ArrayLikeObject>
+        Input array of arrays.
+
+    fcn: Function
+        Function to apply.
+
+    thisArg: any (optional)
+        Input function context.
+
+    Returns
+    -------
+    out: Array<Array>
+        Array of arrays.
+
+    Examples
+    --------
+    > var f = {{alias:@stdlib/utils/nary-function}}( {{alias:@stdlib/math/base/special/abs}}, 1 );
+    > var arr = [ [ -1, -2, -3 ], [ -4, -5, -6 ] ];
+    > var out = {{alias}}( arr, f );
+    > out[ 0 ]
+    [ 1, 2, 3 ]
+    > out[ 1 ]
+    [ 4, 5, 6 ]
+
+    See Also
+    --------
+

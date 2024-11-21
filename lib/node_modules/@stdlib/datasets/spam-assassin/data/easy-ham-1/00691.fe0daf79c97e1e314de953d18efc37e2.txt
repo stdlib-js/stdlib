@@ -1,0 +1,66 @@
+From fork-admin@xent.com  Sat Sep 21 20:22:12 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id A1B8916F03
+	for <jm@localhost>; Sat, 21 Sep 2002 20:22:11 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 21 Sep 2002 20:22:11 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8LJDoC00461 for <jm@jmason.org>;
+    Sat, 21 Sep 2002 20:13:50 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id A02B92941BC; Sat, 21 Sep 2002 12:10:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hotmail.com (dav53.law15.hotmail.com [64.4.22.46]) by
+    xent.com (Postfix) with ESMTP id BADAD294192 for <fork@xent.com>;
+    Sat, 21 Sep 2002 12:09:18 -0700 (PDT)
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Sat, 21 Sep 2002 12:12:51 -0700
+X-Originating-Ip: [207.202.171.254]
+From: "Mr. FoRK" <fork_list@hotmail.com>
+To: <fork@spamassassin.taint.org>
+References: <979BE8FE-CCF6-11D6-817E-000393A46DEA@alumni.caltech.edu>
+    <DAV72xvjPkQTGpaoG1V00000fd0@hotmail.com>
+    <p05111a27b9b1d842c9fe@[66.149.49.6]> <m24rcjl8gh.fsf@maya.dyndns.org>
+    <p05111a02b9b264038af0@[66.149.49.6]>
+Subject: Re: sed /s/United States/Roman Empire/g
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.50.4133.2400
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4133.2400
+Message-Id: <DAV53oPB2EWrO8lxy4D00001559@hotmail.com>
+X-Originalarrivaltime: 21 Sep 2002 19:12:51.0172 (UTC) FILETIME=[E143FA40:01C261A2]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sat, 21 Sep 2002 12:17:33 -0700
+
+
+----- Original Message -----
+From: "R. A. Hettinga" <rah@shipwright.com>
+
+>
+> Seriously. Look at he life expectancy and human carrying capacity of
+> this continent before the Europeans got here. Look at it now. Even
+> for descendants of the original inhabitants. Even for the descendents
+> of slaves, who were brought here by force.
+I wouldn't say that the societies of humans here before European occupancy
+was 'lifted' by free xyz. Perhaps 'replaced' or 'sunk' or some other
+description, but not 'lifted'. Also, the lifestyle of the remnants of those
+societies is on average only marginally above poverty even today.
+
+

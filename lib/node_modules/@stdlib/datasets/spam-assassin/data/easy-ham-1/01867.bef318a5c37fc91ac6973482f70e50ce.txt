@@ -1,0 +1,54 @@
+From rssfeeds@jmason.org  Wed Sep 25 10:23:21 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id C31EF16F03
+	for <jm@localhost>; Wed, 25 Sep 2002 10:23:20 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 25 Sep 2002 10:23:20 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8P80FC18042 for
+    <jm@jmason.org>; Wed, 25 Sep 2002 09:00:15 +0100
+Message-Id: <200209250800.g8P80FC18042@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: diveintomark <rssfeeds@spamassassin.taint.org>
+Subject: Light reading
+Date: Wed, 25 Sep 2002 08:00:14 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://diveintomark.org/archives/2002/09/24.html#light_reading
+Date: 2002-09-24T10:46:15-05:00
+
+- _Phil Ringnalda_: Putting on the brakes[1]. &#8220;So, the answer to the 
+question that started this whole project, "what is the RDF in RSS 1.0 good 
+for?" is two things: it's good for someone who has an infinitely large database 
+that can be queried infinitely fast by a schema-aware program, or it's good for 
+writing a schema-aware aggregator that can try to figure out what it should do 
+with new elements that it hasn't seen before. That's actually an interesting 
+project with some potential for success, but at this point I'm sick of the 
+whole thing, so I'll leave that project for someone else.&#8221; 
+- _Aaron Swartz_: TRAMP: Makes RDF look like Python data structures[2]. 
+&#8220;RDF/XML got you down? Tired of having to go through contortions to deal 
+with data? Want to write Python and be standards-compatible at the same time? 
+Need a module to implement the psuedo-code you had on your slides? TRAMP may or 
+may not be the answer to these problems!&#8221; Complete with an example of 
+parsing FOAF files. 
+- _Dan Connolly_: HyperRDF: Using XHTML Authoring Tools with XSLT to produce 
+RDF schemas[3]. &#8220;XML syntax is a little tedious, but lots of people are 
+evidently willing and able of editing it by hand. RDF adds another layer of 
+tedium, but there are still a few folks willing to write it by hand. I make 
+heavy use of reification/quoting in my representation of logical formulas in 
+RDF. This adds another layer of tedium that I find unmanageable, and I have 
+been writing XML/SGML/HTML by hand for 10 years.&#8221; Also includes a cogent 
+explanation of the obscure profile attribute in HTML. 
+
+
+
+
+
+[1] http://philringnalda.com/archives/002330.php
+[2] http://www.aaronsw.com/2002/tramp
+[3] http://www.w3.org/2000/07/hs78/
+
+

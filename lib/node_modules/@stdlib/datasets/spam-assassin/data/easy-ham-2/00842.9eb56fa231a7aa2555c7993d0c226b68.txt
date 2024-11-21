@@ -1,0 +1,124 @@
+From fork-admin@xent.com  Wed Jul 24 00:48:18 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id DCF36440CC
+	for <jm@localhost>; Tue, 23 Jul 2002 19:48:17 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 00:48:17 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6NNm6404465 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 00:48:07 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id BB2302940E9; Tue, 23 Jul 2002 16:37:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from alumnus.caltech.edu (alumnus.caltech.edu [131.215.49.51])
+    by xent.com (Postfix) with ESMTP id CDB6E2940E2 for <fork@xent.com>;
+    Tue, 23 Jul 2002 16:36:20 -0700 (PDT)
+Received: from localhost (localhost [127.0.0.1]) by alumnus.caltech.edu
+    (8.12.3/8.12.3) with ESMTP id g6NNjJRx021700 for <fork@xent.com>;
+    Tue, 23 Jul 2002 16:45:23 -0700 (PDT)
+Subject: Re: HD/ID: High-Def Independence Day
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+MIME-Version: 1.0 (Apple Message framework v482)
+From: Rohit Khare <khare@alumni.caltech.edu>
+To: fork@spamassassin.taint.org
+Content-Transfer-Encoding: 7bit
+In-Reply-To: <8588127C-8BF9-11D6-8838-003065F890CC@KnowNow.com>
+Message-Id: <F568C0CD-9E71-11D6-B583-000393A46DEA@alumni.caltech.edu>
+X-Mailer: Apple Mail (2.482)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 23 Jul 2002 12:25:33 -0700
+
+On Sunday, June 30, 2002, at 12:18 AM, Rohit Khare wrote:
+> You're all invited to join me for a South Bay Hi-Def spectacle at my 
+> apartment in Sunnyvale on the Fourth!
+
+So here's the final report on the HD/ID party. As no less than TEN 
+forkers pointed out, the invitation, while sent on Sunday 6/30, was only 
+delivered ten days later on 7/9.
+
+It got flagged as spam.
+
+Yes, on a mailing list awash in crap -- and some it is even unsolicited 
+commercial email, heavens! -- our trusty mailman filters captured and 
+quarantined just two posts that week, one from me that was > 100K (the 
+fat articles) and one that was bcc:d (the invite).
+
+Now, it was a little difficult to recalibrate self-esteem, which as you 
+can imagine was proportional to the two-digit attendance  -- in binary!
+
+According to the George Washington documentary, I almost had as much 
+alcohol on hand than he did -- Virginia tradition being to copiously 
+lubricate each voter. Election day was a public festival day, and it 
+cost poor George an average of SIXTY-FOUR shots of hard liquor PER VOTER 
+that day...
+
+So, herewith is the prize for most appropriate flame my delayed invite 
+got:
+
+> 	I unfortunately will have had other plans and thus will
+> 	not be able to have made it.  Yes.
+>
+> 	-faisal
+
+One of our competitors added:
+> Wow - I just got this now - I guess that was KnowLate!
+
+And there is no prize for guessing which cold, dark forks emitted these 
+two plaints:
+
+ From Whiny Dwarf:
+> Fix your mail server! just a bit late!
+
+And Angry Dwarf:
+> God DAAAAAMMMMMNNNNN IIIIITTT! I didn't see your message until now! 
+> Fuck! Fuck! Fuck!
+>
+> We would have been there if I had seen the message before. Kuso! (as 
+> the Japanese would say).
+>
+> Fuck.
+> Fuck.
+> Fuck.
+> Fuck.
+> Fuck.
+> Fuck.
+
+Perhaps I should remind the latter gently that it was not in any way his 
+fault. The universe *was* out to get him!
+
+And finally, here's an object lesson for all ye of little faith to learn 
+from my sins:
+
+> SpamAssassin rated it spam (barely). Gotta stop
+> using those "words and phrases which indicate porn" :-)
+
+Yes, boys and girls, Mr. Assassin, like Mr. Lott, gets very annoyed if 
+you call the Great American Shrine a... "boob tube"
+
+:-)
+   Rohit
+
+PS. This is the obscure footnote where I actually hide the bits in this 
+post. What we just encountered here is that an event-processing system 
+with a 10-day RTT cannot be used to reliably handle events more often 
+than once every 20 days. That's why I waited to reply. six bonus points 
+to anyone who can prove this hunch of mine. Hint: try analyzing the 
+problem in frequency-domain.
+
+http://xent.com/mailman/listinfo/fork
+
+

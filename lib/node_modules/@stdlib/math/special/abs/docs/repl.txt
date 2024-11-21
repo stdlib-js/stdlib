@@ -1,0 +1,108 @@
+
+{{alias}}( x[, options] )
+    Computes the absolute value.
+
+    If provided a number, the function returns a number.
+
+    If provided an ndarray or array-like object, the function performs element-
+    wise computation.
+
+    If provided an array-like object, the function returns an array-like object
+    having the same length and data type as `x`.
+
+    If provided an ndarray, the function returns an ndarray having the same
+    shape and data type as `x`.
+
+    Parameters
+    ----------
+    x: ndarray|ArrayLikeObject|number
+        Input value.
+
+    options: Object (optional)
+        Options.
+
+    options.order: string (optional)
+        Output array order (either row-major (C-style) or column-major (Fortran-
+        style)). Only applicable when the input array is an ndarray. By default,
+        the output array order is inferred from the input array.
+
+    options.dtype: string (optional)
+        Output array data type. Only applicable when the input array is either
+        an ndarray or array-like object. By default, the output array data type
+        is inferred from the input array.
+
+    Returns
+    -------
+    y: ndarray|ArrayLikeObject|number
+        Results.
+
+    Examples
+    --------
+    // Provide a number:
+    > var y = {{alias}}( -1.0 )
+    1.0
+
+    // Provide an array-like object:
+    > var x = new {{alias:@stdlib/array/float64}}( [ -1.0, -2.0 ] );
+    > y = {{alias}}( x )
+    <Float64Array>[ 1.0, 2.0 ]
+
+    > x = [ -1.0, -2.0 ];
+    > y = {{alias}}( x )
+    [ 1.0, 2.0 ]
+
+    // Provide an ndarray:
+    > x = {{alias:@stdlib/ndarray/array}}( [ [ -1.0, -2.0 ], [ -3.0, -4.0 ] ] );
+    > y = {{alias}}( x )
+    <ndarray>
+    > y.get( 0, 1 )
+    2.0
+
+
+{{alias}}.assign( x, y )
+    Computes the absolute value and assigns results to a provided output array.
+
+    Parameters
+    ----------
+    x: ndarray|ArrayLikeObject
+        Input array.
+
+    y: ndarray|ArrayLikeObject
+        Output array. Must be the same data "kind" (i.e., ndarray or array-like
+        object) as the input array.
+
+    Returns
+    -------
+    y: ndarray|ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    // Provide an array-like object:
+    > var x = new {{alias:@stdlib/array/float64}}( [ -1.0, -2.0 ] );
+    > var y = new {{alias:@stdlib/array/float64}}( x.length );
+    > var out = {{alias}}.assign( x, y )
+    <Float64Array>[ 1.0, 2.0 ]
+    > var bool = ( out === y )
+    true
+
+    > x = [ -1.0, -2.0 ];
+    > y = [ 0.0, 0.0 ];
+    > out = {{alias}}.assign( x, y )
+    [ 1.0, 2.0 ]
+    > bool = ( out === y )
+    true
+
+    // Provide an ndarray:
+    > x = {{alias:@stdlib/ndarray/array}}( [ [ -1.0, -2.0 ], [ -3.0, -4.0 ] ] );
+    > y = {{alias:@stdlib/ndarray/array}}( [ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ] );
+    > out = {{alias}}.assign( x, y )
+    <ndarray>
+    > out.get( 0, 1 )
+    2.0
+    > bool = ( out === y )
+    true
+
+    See Also
+    --------
+

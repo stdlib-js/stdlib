@@ -1,0 +1,29 @@
+
+{{alias}}( obj, keys )
+    Returns a partial object copy containing only specified keys.
+
+    If a key does not exist as an own property in a source object, the key is
+    ignored.
+
+    Parameters
+    ----------
+    obj: Object
+        Source object.
+
+    keys: string|Array<string>
+        Keys to copy.
+
+    Returns
+    -------
+    out: Object
+        New object.
+
+    Examples
+    --------
+    > var obj1 = { 'a': 1, 'b': 2 };
+    > var obj2 = {{alias}}( obj1, 'b' )
+    { 'b': 2 }
+
+    See Also
+    --------
+

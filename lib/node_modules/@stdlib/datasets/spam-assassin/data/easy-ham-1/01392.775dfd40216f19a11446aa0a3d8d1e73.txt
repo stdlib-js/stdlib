@@ -1,0 +1,105 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug 29 17:35:05 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 15AE143F99
+	for <jm@localhost>; Thu, 29 Aug 2002 12:35:04 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 17:35:04 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7TGYiZ20463 for <jm-sa@jmason.org>; Thu, 29 Aug 2002 17:34:44 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17kSF9-0001Qi-00; Thu,
+    29 Aug 2002 09:34:03 -0700
+Received: from joseki.proulx.com ([216.17.153.58]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17kSED-000405-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Thu, 29 Aug 2002 09:33:05 -0700
+Received: from misery.proulx.com (misery.proulx.com [192.168.1.108]) by
+    joseki.proulx.com (Postfix) with ESMTP id 86DF514B33 for
+    <spamassassin-talk@lists.sourceforge.net>; Thu, 29 Aug 2002 10:32:57 -0600
+    (MDT)
+Received: by misery.proulx.com (Postfix, from userid 1000) id 72129A8369;
+    Thu, 29 Aug 2002 10:32:57 -0600 (MDT)
+To: Spamassassin-Talk <spamassassin-talk@example.sourceforge.net>
+Subject: Re: [SAtalk] O.T. Habeus -- Why?
+Message-Id: <20020829163257.GD10973@misery.proulx.com>
+Mail-Followup-To: Spamassassin-Talk <spamassassin-talk@example.sourceforge.net>
+References: <schaefer@zanshin.com>
+    <Pine.LNX.4.44.0208290714450.30051-100000@aztec.zanshin.com>
+    <20020829160017.9E3C643F99@phobos.labs.netnoteinc.com>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+    protocol="application/pgp-signature";
+    boundary="9amGYk9869ThD9tj"
+Content-Disposition: inline
+In-Reply-To: <20020829160017.9E3C643F99@phobos.labs.netnoteinc.com>
+User-Agent: Mutt/1.4i
+From: bob@proulx.com (Bob Proulx)
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Thu, 29 Aug 2002 10:32:57 -0600
+Date: Thu, 29 Aug 2002 10:32:57 -0600
+
+
+--9amGYk9869ThD9tj
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+
+Justin Mason <jm@jmason.org> [2002-08-29 17:00:12 +0100]:
+> Well, my point is more that we should aim our rescoring algorithm so that
+> a spam hits 5.0.    Any higher does us no good, as it means an FP is
+> a lot harder to recover from, using compensation rules.
+
+Agreed.
+
+But I have always thought that the value 5 was not the best value.  It
+should have been 0.  I understand that initially only spammy scores
+were included.  But I believe the algorithm should be purely
+symmetrical and non-spammy negative values should also have been
+balancing out the spammy positive values, like they do in SA today.
+Then anything that was positive would be spam and anything negative
+would be non-spam.  (And I guess exactly zero is grey. :-) Today's
+choice of 5 just adds an offset.  Which I think cause people to assume
+things work differently than they do.
+
+Bob
+
+--9amGYk9869ThD9tj
+Content-Type: application/pgp-signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.7 (GNU/Linux)
+
+iD8DBQE9bky50pRcO8E2ULYRAjI6AJwMoi8s2IUg4XpVAwCqpBC3gcd/cQCfepOm
+COS03YufMiFLSHhCZ8KkLxU=
+=YwM7
+-----END PGP SIGNATURE-----
+
+--9amGYk9869ThD9tj--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

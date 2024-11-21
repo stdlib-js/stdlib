@@ -1,0 +1,68 @@
+From ilug-admin@linux.ie  Mon Jul 22 19:50:20 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 68F1E440CC
+	for <jm@localhost>; Mon, 22 Jul 2002 14:50:14 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 19:50:14 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MHQM403358 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 18:26:22 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id NAA23579 for <jm-ilug@jmason.org>;
+    Sat, 20 Jul 2002 13:57:48 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA02357; Sat, 20 Jul 2002 13:54:47 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from holly.csn.ul.ie (holly.csn.ul.ie [136.201.105.4]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id NAA02323 for <ilug@linux.ie>;
+    Sat, 20 Jul 2002 13:54:41 +0100
+Received: from skynet.csn.ul.ie (skynet [136.201.105.2]) by
+    holly.csn.ul.ie (Postfix) with ESMTP id 00D282B2D2 for <ilug@linux.ie>;
+    Sat, 20 Jul 2002 13:54:11 +0100 (IST)
+Received: by skynet.csn.ul.ie (Postfix, from userid 2196) id E0919E958;
+    Sat, 20 Jul 2002 13:54:10 +0100 (IST)
+Date: Sat, 20 Jul 2002 13:54:10 +0100
+From: Stephen Shirley <diamond@skynet.ie>
+To: Irish Linux Users Group <ilug@linux.ie>
+Subject: Re: [ILUG] vanquishing the daemons of shell scripting
+Message-Id: <20020720125410.GA22048@skynet.ie>
+Mail-Followup-To: Irish Linux Users Group <ilug@linux.ie>
+References: <20020720094736.GA16224@skynet.ie>
+    <20020720121857.A27503@excalibur.research.wombat.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20020720121857.A27503@excalibur.research.wombat.ie>
+User-Agent: Mutt/1.3.24i
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Sat, Jul 20, 2002 at 12:18:57PM +0100, Kenn Humborg wrote:
+> > mine, and i is happy person once again. In case you were wondering, the
+> > aim of all of this was to write a shell script that could check for new
+> > mail on an imap server.
+> 
+> Doesn't answer your question, but perhaps a combination of expect and
+> (netcat or telnet) might have made for an easier solution?
+
+Indeed, and that was the fall-back plan if i couldn't figure this out,
+but i knew it had to be possible, and was determined to find a way.
+
+Steve
+-- 
+"Oh look, it's the Pigeon of Love."
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

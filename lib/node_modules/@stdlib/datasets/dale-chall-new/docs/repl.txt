@@ -1,0 +1,23 @@
+
+{{alias}}()
+    Returns a list of familiar English words.
+
+    Returns
+    -------
+    out: Array<string>
+        List of familiar English words.
+
+    Examples
+    --------
+    > var list = {{alias}}()
+    [ 'a', 'able', 'aboard', 'about', 'above', ... ]
+
+    References
+    ----------
+    - Chall, Jeanne Sternlicht, and Edgar Dale. 1995. *Readability revisited:
+    the new Dale-Chall readability formula*. Brookline Books.
+    <https://books.google.com/books?id=2nbuAAAAMAAJ>.
+
+    See Also
+    --------
+

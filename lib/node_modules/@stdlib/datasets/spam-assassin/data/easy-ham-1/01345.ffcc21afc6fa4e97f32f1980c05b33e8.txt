@@ -1,0 +1,80 @@
+From spamassassin-devel-admin@lists.sourceforge.net  Wed Aug 28 17:25:57 2002
+Return-Path: <spamassassin-devel-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D70D844155
+	for <jm@localhost>; Wed, 28 Aug 2002 12:25:56 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 28 Aug 2002 17:25:56 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7SGJ2Z32605 for <jm@jmason.org>; Wed, 28 Aug 2002 17:19:02 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17k5VQ-0000Y1-00; Wed,
+    28 Aug 2002 09:17:20 -0700
+Received: from hall.mail.mindspring.net ([207.69.200.60]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17k5U7-0006sG-00 for <spamassassin-devel@lists.sourceforge.net>;
+    Wed, 28 Aug 2002 09:15:59 -0700
+Received: from user-105nd99.dialup.mindspring.com ([64.91.181.41]
+    helo=belphegore.hughes-family.org) by hall.mail.mindspring.net with esmtp
+    (Exim 3.33 #1) id 17k5U6-0002Kz-00 for
+    spamassassin-devel@lists.sourceforge.net; Wed, 28 Aug 2002 12:15:58 -0400
+Received: by belphegore.hughes-family.org (Postfix, from userid 48) id
+    950A8A3CB0; Wed, 28 Aug 2002 09:15:57 -0700 (PDT)
+From: bugzilla-daemon@hughes-family.org
+To: spamassassin-devel@example.sourceforge.net
+X-Bugzilla-Reason: CC
+Message-Id: <20020828161557.950A8A3CB0@belphegore.hughes-family.org>
+Subject: [SAdev] [Bug 777] tests to find hand-written HTML
+Sender: spamassassin-devel-admin@example.sourceforge.net
+Errors-To: spamassassin-devel-admin@example.sourceforge.net
+X-Beenthere: spamassassin-devel@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-devel-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-devel@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Id: SpamAssassin Developers <spamassassin-devel.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-devel>
+X-Original-Date: Wed, 28 Aug 2002 09:15:57 -0700 (PDT)
+Date: Wed, 28 Aug 2002 09:15:57 -0700 (PDT)
+
+http://www.hughes-family.org/bugzilla/show_bug.cgi?id=777
+
+
+
+
+
+------- Additional Comments From daniel@roe.ch  2002-08-28 09:15 -------
+3. usage of <p> just like <br> (ie. without </p>) which is obsolete
+   (not sure whether some mailers still produce such broken html)
+4. tag argument values sometimes enclosed in "", sometimes not
+5. colour args without # in front of hex rgb code
+6. colour args with non-6-digit rgb code (typo)
+7. onMouseOver et al in nonconsistent case throughout the document
+
+Mind, those are just ideas. I'm pretty sure some or even most of them
+are not working in practice, but they might be worth checking out.
+
+
+
+
+------- You are receiving this mail because: -------
+You are on the CC list for the bug, or are watching someone who is.
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-devel mailing list
+Spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+

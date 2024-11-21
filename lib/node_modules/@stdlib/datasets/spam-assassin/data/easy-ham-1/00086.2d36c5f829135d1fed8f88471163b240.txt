@@ -1,0 +1,61 @@
+From ilug-admin@linux.ie  Mon Sep  2 13:14:35 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 117D947C76
+	for <zzzz@localhost>; Mon,  2 Sep 2002 07:42:12 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 02 Sep 2002 12:42:12 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g829uBZ27652 for
+    <zzzz-ilug@spamassassin.taint.org>; Mon, 2 Sep 2002 10:56:11 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA28572; Mon, 2 Sep 2002 10:55:45 +0100
+Received: from intmailsrv02.fleishman.mail (mail.fleishman.com
+    [207.193.111.249]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id KAA28537
+    for <ilug@linux.ie>; Mon, 2 Sep 2002 10:55:29 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host mail.fleishman.com
+    [207.193.111.249] claimed to be intmailsrv02.fleishman.mail
+Received: from ims01east.fleishman.com ([207.193.111.247]) by
+    intmailsrv02.fleishman.mail with Microsoft SMTPSVC(5.0.2195.2966);
+    Mon, 2 Sep 2002 04:55:27 -0500
+Received: by ims01east with Internet Mail Service (5.5.2654.89) id
+    <RVXP8WHQ>; Mon, 2 Sep 2002 04:54:47 -0500
+Message-Id: <C1A68F993703D411B6F600A0C9C83B01F5DEE7@dubexgsrv01>
+From: "Quinn, Dell" <quinnd@fhs.ie>
+To: "'ilug@linux.ie'" <ilug@linux.ie>
+Date: Mon, 2 Sep 2002 04:53:53 -0500
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2654.89)
+Content-Type: text/plain; charset="iso-8859-1"
+X-Originalarrivaltime: 02 Sep 2002 09:55:27.0714 (UTC) FILETIME=[DD900420:01C25266]
+Subject: [ILUG] Can I be added to your email distribution lists?
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+
+
+
+
+Dell Quinn
+Account Executive
+Fleishman-Hillard Saunders
+15 Fitzwilliam Quay
+Dublin 4
+Ireland
+Tel: 01 6188428
+Fax: 01 6602244
+Mobile: 086 6048101
+ 
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

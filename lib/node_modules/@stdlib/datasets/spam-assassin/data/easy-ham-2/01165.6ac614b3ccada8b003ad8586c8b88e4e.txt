@@ -1,0 +1,83 @@
+From rpm-list-admin@freshrpms.net  Thu Jul 25 18:41:14 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5D752440E7
+	for <jm@localhost>; Thu, 25 Jul 2002 13:41:04 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 18:41:04 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6PHg6420170 for
+    <jm-rpm@jmason.org>; Thu, 25 Jul 2002 18:42:07 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6PHO2j06023; Thu, 25 Jul 2002 19:24:02
+    +0200
+Received: from kamakiriad.com (cable-b-36.sigecom.net [63.69.210.36]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g6PHMij02276; Thu,
+    25 Jul 2002 19:22:44 +0200
+Received: from aquila.kamakiriad.local (aquila.kamakiriad.local
+    [192.168.1.3]) by kamakiriad.com (8.11.6/8.11.0) with SMTP id g6PHMTo24830;
+    Thu, 25 Jul 2002 12:22:29 -0500
+From: Brian Fahrlander <kilroy@kamakiriad.com>
+To: rpm-zzzlist@freshrpms.net
+Cc: matthias@egwn.net
+Subject: Re: Gstreamer update
+Message-Id: <20020725122228.2c5019ad.kilroy@kamakiriad.com>
+In-Reply-To: <20020725152505.75bc249e.matthias@egwn.net>
+References: <20020725065233.6ec791a8.kilroy@kamakiriad.com>
+    <20020725152505.75bc249e.matthias@egwn.net>
+X-Mailer: Sylpheed version 0.8.1 (GTK+ 1.2.10; i386-redhat-linux)
+X-Message-Flag: : Shame on you!  You know Outlook is how viruses are spread!
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Thu, 25 Jul 2002 12:22:28 -0500
+Date: Thu, 25 Jul 2002 12:22:28 -0500
+
+On Thu, 25 Jul 2002 15:25:05 +0200, Matthias Saou <matthias@egwn.net> wrote:
+
+> This is called "pseudo-packages" or "meta-packages" and Debian has been
+> using them for ages. I think Mandrake also makes these kind of empty
+> packages.
+> 
+> Anyway, their use has been discussed here a while back, and personally
+> although I do agree that they can be useful at times, I don't really like
+> them. For me it's more of an ugly "hack" than anything else, and I'd
+> approve completely a system that would enable to install/remove entire
+> categories of software... but not if achieved by building empty packages.
+> 
+> Also, you can trivially do "apt-get install <metapackage>", but removing
+> all that it installed is a bit less trivial, and could be implemented in a
+> trivial and clean fashion if using some functionality meant to do this.
+
+    Yeah, well, I'm about to chuck the whole darned thing right now: the first upgrade to Gnome2 wiped out the possibility of changing preferences...exactly what got me outta Ximian before.  I understand Gnomehide has the same files, right?  I'm thinking about excorsizing the durned Ximian again...
+
+------------------------------------------------------------------------
+Brian Fahrländer              Linux Zealot, Conservative, and Technomad
+Evansville, IN                    My Voyage: http://www.CounterMoon.com
+ICQ  5119262
+------------------------------------------------------------------------
+I don't want to hear news from Isreal until the news contains the words
+"Bullet", "Brain", and "Arafat".
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

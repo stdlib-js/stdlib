@@ -1,0 +1,80 @@
+From ilug-admin@linux.ie  Fri Jul 19 15:29:27 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7050843FAD
+	for <jm@localhost>; Fri, 19 Jul 2002 10:29:25 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 15:29:25 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JER8J04398 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 15:27:08 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA09644; Fri, 19 Jul 2002 15:26:17 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from smtp016.mail.yahoo.com (smtp016.mail.yahoo.com
+    [216.136.174.113]) by lugh.tuatha.org (8.9.3/8.9.3) with SMTP id PAA09619
+    for <ilug@linux.ie>; Fri, 19 Jul 2002 15:26:10 +0100
+Received: from unknown (HELO mfrenchw2k) (mfrench42@62.254.163.42 with
+    login) by smtp.mail.vip.sc5.yahoo.com with SMTP; 19 Jul 2002 14:26:07
+    -0000
+Message-Id: <003301c22f2f$b722ba30$3864a8c0@sabeo.ie>
+From: "Matthew French" <mfrench42@yahoo.co.uk>
+To: <ilug@linux.ie>
+References: <20020719132842.GA2506@bagend.makalumedia.com>
+Subject: Re: [ILUG] How to copy some files
+Date: Fri, 19 Jul 2002 15:22:26 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Niall asked:
+> I have about 60G of data which I need to copy from one disk to another.
+> However, I'm not sure how I should best copy it. The problem is the bulk
+of
+> the data is images and most of these image have two directory entries i.e.
+> there is a hard link to each file. If I copy them using cp -a or my usual
+> favourite of find .|cpio -pmd other_dir it's going to copy each file
+twice,
+> which is not what I want. dump / restore would take care of this if the
+> source filesystem wasn't reiserfs :-( Any suggestions ?
+
+How about something like:
+
+cd {dest.dir}
+tar -C {source.dir} cf - | tar xf -
+
+tar cf - will pipe the tar file to stdout and tar xf - will untar it. This
+should keep permissions and links, and if you do it as root you will keep
+the owners too... :)
+
+Not tested, though. You may need other flags as well.
+
+- Matthew
+
+
+__________________________________________________
+Do You Yahoo!?
+Everything you'll ever need on one web page
+from News and Sport to Email and Music Charts
+http://uk.my.yahoo.comm
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

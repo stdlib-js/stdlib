@@ -1,0 +1,134 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Fri Sep 13 20:45:28 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 7E44416F03
+	for <jm@localhost>; Fri, 13 Sep 2002 20:45:27 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 13 Sep 2002 20:45:27 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8DJ6lC31348 for <jm-sa@jmason.org>; Fri, 13 Sep 2002 20:06:47 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17pvjp-0007DC-00; Fri,
+    13 Sep 2002 12:04:21 -0700
+Received: from eclectic.kluge.net ([66.92.69.221]) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17pvi8-0001P9-00 for
+    <spamassassin-talk@lists.sourceforge.net>; Fri, 13 Sep 2002 12:02:36 -0700
+Received: from eclectic.kluge.net (localhost [127.0.0.1]) by
+    eclectic.kluge.net (8.12.6/8.12.6) with ESMTP id g8DJ1I4q022972;
+    Fri, 13 Sep 2002 15:01:18 -0400
+Received: (from felicity@localhost) by eclectic.kluge.net
+    (8.12.6/8.12.6/Submit) id g8DJ1I96022970; Fri, 13 Sep 2002 15:01:18 -0400
+From: Theo Van Dinter <felicity@kluge.net>
+To: vernon@comp-wiz.com
+Cc: spamassassin-talk <spamassassin-talk@example.sourceforge.net>
+Subject: Re: [SAtalk] OT: DNS MX Record Clarification Please
+Message-Id: <20020913190117.GG5897@kluge.net>
+References: <20020913151635.M21128@b2unow.com>
+    <20020913183343.M49078@b2unow.com>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+    protocol="application/pgp-signature";
+    boundary="Fnm8lRGFTVS/3GuM"
+Content-Disposition: inline
+In-Reply-To: <20020913183343.M49078@b2unow.com>
+User-Agent: Mutt/1.4i
+X-GPG-Keyserver: http://wwwkeys.pgp.net
+X-GPG-Keynumber: 0xE580B363
+X-GPG-Fingerprint: 75B1 F6D0 8368 38E7 A4C5  F6C2 02E3 9051 E580 B363
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=spamassassin-talk>
+X-Original-Date: Fri, 13 Sep 2002 15:01:18 -0400
+Date: Fri, 13 Sep 2002 15:01:18 -0400
+
+
+--Fnm8lRGFTVS/3GuM
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+On Fri, Sep 13, 2002 at 01:33:43PM -0500, vernon wrote:
+> As I understand it, DNS A records are used in a rotating fashion for load
+> balancing, but DNS MX records are used in order or prority, meaning the 10
+> before the 20 and only 20 if the 10 isn't available.
+
+That's the theory, yes.
+
+> But only some of the mail is actually being scanned which leads me to
+> believe that not all of the mail is actually hitting that box and the 10
+> never goes down. Why? Have I got something confused here?
+
+No, but either due to some technical glitch, or downright just wanting
+to do so, people send to the secondary.  It's a semi-usual spammer trick
+actually to bypass the main server and send directly to a secondary
+since it will either have less filtering, or be "trusted", or ...
+
+MX records in the mail world are all explained in RFC 2821, section 5:
+
+[...]
+   Multiple MX records contain a preference indication that MUST be used
+   in sorting (see below).  Lower numbers are more preferred than higher
+   ones.  If there are multiple destinations with the same preference
+   and there is no clear reason to favor one (e.g., by recognition of an
+   easily-reached address), then the sender-SMTP MUST randomize them to
+   spread the load across multiple mail exchangers for a specific
+   organization.
+[...]
+   If it determines that it should relay the message without rewriting
+   the address, it MUST sort the MX records to determine candidates for
+   delivery.  The records are first ordered by preference, with the
+   lowest-numbered records being most preferred.  The relay host MUST
+   then inspect the list for any of the names or addresses by which it
+   might be known in mail transactions.  If a matching record is found,
+   all records at that preference level and higher-numbered ones MUST be
+   discarded from consideration.  If there are no records left at that
+   point, it is an error condition, and the message MUST be returned as
+   undeliverable.  If records do remain, they SHOULD be tried, best
+   preference first, as described above.
+
+--=20
+Randomly Generated Tagline:
+"Now let's say I like sheep...  And now let's say I take the sheep to a=20
+ Christmas party..."               - Bob Golub
+
+--Fnm8lRGFTVS/3GuM
+Content-Type: application/pgp-signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE9gjX9AuOQUeWAs2MRAg7PAJ42kO68knZx76oQbrZPMGdg/JbJHACfQvlX
+O/Utl8FY01aS+/e3VNE9WWM=
+=O6kU
+-----END PGP SIGNATURE-----
+
+--Fnm8lRGFTVS/3GuM--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

@@ -1,0 +1,72 @@
+From rpm-list-admin@freshrpms.net  Mon Sep 30 21:45:10 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 50DD116F17
+	for <jm@localhost>; Mon, 30 Sep 2002 21:44:52 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 30 Sep 2002 21:44:52 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8UKZMK14990 for
+    <jm-rpm@jmason.org>; Mon, 30 Sep 2002 21:35:22 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g8UKW0f18124; Mon, 30 Sep 2002 22:32:00
+    +0200
+Received: from mail.addix.net (kahless.addix.net [195.179.139.19]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g8UKUuf14294 for
+    <rpm-list@freshrpms.net>; Mon, 30 Sep 2002 22:30:56 +0200
+Received: from kushana.camperquake.de (kushana.camperquake.de
+    [194.64.167.57]) by mail.addix.net (8.9.3/8.9.3) with ESMTP id WAA16476
+    for <rpm-list@freshrpms.net>; Mon, 30 Sep 2002 22:30:56 +0200
+Received: from nausicaa.camperquake.de ([194.64.167.58] helo=nausicaa) by
+    kushana.camperquake.de with smtp (Exim 3.36 #1) id 17w7Om-0005by-00 for
+    rpm-list@freshrpms.net; Mon, 30 Sep 2002 22:44:12 +0200
+From: Ralf Ertzinger <ralf@camperquake.de>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: apt 0.5.7 on RH 7.x
+Message-Id: <20020930223956.6c06655a.ralf@camperquake.de>
+In-Reply-To: <20020930220002.15c18770.matthias@egwn.net>
+References: <20020930214204.5d631f5b.ralf@camperquake.de>
+    <20020930220002.15c18770.matthias@egwn.net>
+Organization: [NDC] ;)
+X-Mailer: Sylpheed version 0.8.2claws (GTK+ 1.2.10; i386-redhat-linux)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Mon, 30 Sep 2002 22:39:56 +0200
+Date: Mon, 30 Sep 2002 22:39:56 +0200
+
+Hi.
+
+Matthias Saou <matthias@egwn.net> wrote:
+> My main concern is that when rebuilding the recent packages I've made
+> for Psyche on Valhalla, I'd need to lower the "Release:" tag (to keep an
+> upgrade working), and that would f*ck up my CVS repository which is on
+> my Valhalla box
+
+Sorry, I don't get it. What's wrong with a release tag of fr1?
+
+-- 
+Do I look like a freakin' people person?
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

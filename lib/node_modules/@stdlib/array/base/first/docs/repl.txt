@@ -1,0 +1,22 @@
+
+{{alias}}( arr )
+    Returns the first element of an array-like object.
+
+    Parameters
+    ----------
+    arr: ArrayLikeObject
+        Input array.
+
+    Returns
+    -------
+    out: any
+        First element.
+
+    Examples
+    --------
+    > var out = {{alias}}( [ 1, 2, 3 ] )
+    1
+
+    See Also
+    --------
+

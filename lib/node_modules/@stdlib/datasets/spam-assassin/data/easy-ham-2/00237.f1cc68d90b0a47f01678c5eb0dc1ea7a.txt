@@ -1,0 +1,64 @@
+From ilug-admin@linux.ie  Fri Aug  2 16:33:41 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id ED1F144103
+	for <jm@localhost>; Fri,  2 Aug 2002 11:32:44 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 02 Aug 2002 16:32:44 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g72Ekin01505 for
+    <jm-ilug@jmason.org>; Fri, 2 Aug 2002 15:46:44 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id OAA03254 for <jm-ilug@jmason.org>;
+    Fri, 2 Aug 2002 14:26:29 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id OAA10198; Fri, 2 Aug 2002 14:25:36 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from student.cs.ucc.ie (student.cs.ucc.ie [143.239.211.125]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id OAA10165 for <ilug@linux.ie>;
+    Fri, 2 Aug 2002 14:25:28 +0100
+Received: from webmail.ucc.ie (webmail.ucc.ie [143.239.1.26]) by
+    student.cs.ucc.ie (8.9.3/8.9.3) with ESMTP id OAA21764 for <ilug@linux.ie>;
+    Fri, 2 Aug 2002 14:26:06 +0100 (BST)
+X-Webmail-Userid: jac1@student.cs.ucc.ie
+Date: Fri, 2 Aug 2002 14:25:43 +0100
+From: jac1 <jac1@student.cs.ucc.ie>
+To: ilug@linux.ie
+X-Exp32-Serialno: 00002719
+Subject: RE: [ILUG] Re: removing lilo
+Message-Id: <3D354125@webmail.ucc.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="ISO-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Mailer: WebMail (Hydra) SMTP v3.61.08
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+>===== Original Message From deedsmis@aculink.net, ilug@linux.ie =====
+>"Hunt, Bryan" stated the following:
+>>
+>> choose the repair option when installing windows nt/2000/whatever
+>
+>What is the "repair option"?
+>
+If u choose Setup NT from the installation CD it will reboot your system
+and give the option of repairing an existing installation when it reboots.
+I did this the other night, with the check MBR option, but it didn't 
+overwrite the MBR like it should (apparently). Either my disk is completely
+shagged or i'm missing something.
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

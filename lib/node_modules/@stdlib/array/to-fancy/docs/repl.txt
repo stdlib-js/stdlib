@@ -1,0 +1,169 @@
+
+{{alias}}( x[, options] )
+    Converts an array to an object supporting fancy indexing.
+
+    An array supporting fancy indexing is an array which supports slicing via
+    indexing expressions for both retrieval and assignment.
+
+    A fancy array shares the *same* data as the provided input array. Hence, any
+    mutations to the returned array will affect the underlying input array and
+    vice versa.
+
+    For operations returning a new array (e.g., when slicing or invoking an
+    instance method), a fancy array returns a new fancy array having the same
+    configuration as specified by provided options.
+
+    A fancy array supports indexing using positive and negative integers (both
+    numeric literals and strings), Slice instances, subsequence expressions,
+    mask arrays, boolean arrays, and integer arrays.
+
+    A fancy array supports all properties and methods of the input array, and,
+    thus, a fancy array can be consumed by any API which supports array-like
+    objects.
+
+    Indexing expressions provide a convenient and powerful means for creating
+    and operating on array views; however, their use does entail a performance
+    cost. Indexing expressions are best suited for interactive use (e.g., in the
+    REPL) and scripting. For performance critical applications, prefer
+    equivalent functional APIs supporting array-like objects.
+
+    Fancy arrays support broadcasting in which assigned scalars and single-
+    element arrays are repeated (without additional memory allocation) to match
+    the length of a target array instance.
+
+    Fancy array broadcasting follows the same rules as for ndarrays.
+
+    Consequently, when assigning arrays to slices, the array on the right-hand-
+    side must be broadcast-compatible with number of elements in the slice.
+
+    Fancy arrays support (mostly) safe casts (i.e., any cast which can be
+    performed without overflow or loss of precision, with the exception of
+    floating-point arrays which are also allowed to downcast from higher
+    precision to lower precision).
+
+    When attempting to perform an unsafe cast, fancy arrays will raise an
+    exception.
+
+    When assigning a real-valued scalar to a complex number array (e.g.,
+    Complex128Array or Complex64Array), a fancy array will cast the real-valued
+    scalar to a complex number argument having an imaginary component equal to
+    zero.
+
+    In older JavaScript environments which do not support Proxy objects, the use
+    of indexing expressions is not supported.
+
+    Parameters
+    ----------
+    x: Array|TypedArray|Object
+        Input array.
+
+    options: Object (optional)
+        Function options.
+
+    options.strict: boolean (optional)
+        Boolean indicating whether to enforce strict bounds checking. Default:
+        false.
+
+    options.cache: Object (optional)
+        Cache for resolving array index objects. Must have a 'get' method which
+        accepts a single argument: a string identifier associated with an array
+        index. If an array index associated with a provided identifier exists,
+        the 'get' method should return an object having the following
+        properties:
+
+        - data: the underlying index array.
+        - type: the index type. Must be either 'mask', 'bool', or 'int'.
+        - dtype: the data type of the underlying array.
+
+        If an array index is not associated with a provided identifier, the
+        'get' method should return `null`.
+
+        Default: `{{alias:@stdlib/array/index}}`.
+
+    Returns
+    -------
+    out: Array|TypedArray|Object
+        Output array supporting fancy indexing.
+
+    Examples
+    --------
+    > var y = {{alias}}( [ 1, 2, 3, 4 ] );
+    > y[ '1::2' ]
+    [ 2, 4 ]
+    > y[ '::-1' ]
+    [ 4, 3, 2, 1 ]
+
+
+{{alias}}.factory( [options] )
+    Returns a function for converting an array to an object supporting fancy
+    indexing.
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Function options.
+
+    options.strict: boolean (optional)
+        Boolean indicating whether to enforce strict bounds checking by default.
+        Default: false.
+
+    options.cache: Object (optional)
+        Cache for resolving array index objects. Must have a 'get' method which
+        accepts a single argument: a string identifier associated with an array
+        index. If an array index associated with a provided identifier exists,
+        the 'get' method should return an object having the following
+        properties:
+
+        - data: the underlying index array.
+        - type: the index type. Must be either 'mask', 'bool', or 'int'.
+        - dtype: the data type of the underlying array.
+
+        If an array index is not associated with a provided identifier, the
+        'get' method should return `null`.
+
+        Default: `{{alias:@stdlib/array/index}}`.
+
+    Returns
+    -------
+    fcn: Function
+        Function for converting an array to an object supporting fancy indexing.
+
+    Examples
+    --------
+    > var f = {{alias}}.factory();
+    > var y = f( [ 1, 2, 3, 4 ] );
+    > y[ '1::2' ]
+    [ 2, 4 ]
+    > y[ '::-1' ]
+    [ 4, 3, 2, 1 ]
+
+
+{{alias}}.idx( x[, options] )
+    Wraps a provided array as an array index object.
+
+    For documentation and usage, see `{{alias:@stdlib/array/index}}`.
+
+    Parameters
+    ----------
+    x: Array|TypedArray|Object
+        Input array.
+
+    options: Object (optional)
+        Function options.
+
+    options.persist: boolean (optional)
+        Boolean indicating whether to continue persisting an index object after
+        first usage. Default: false.
+
+    Returns
+    -------
+    out: ArrayIndex
+        ArrayIndex instance.
+
+    Examples
+    --------
+    > var idx = {{alias}}.idx( [ 1, 2, 3, 4 ] );
+
+    See Also
+    --------
+

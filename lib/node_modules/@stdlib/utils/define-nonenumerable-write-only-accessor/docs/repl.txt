@@ -1,0 +1,30 @@
+
+{{alias}}( obj, prop, setter )
+    Defines a non-enumerable write-only accessor.
+
+    Non-enumerable write-only accessors are non-configurable.
+
+    Parameters
+    ----------
+    obj: Object
+        Object on which to define the property.
+
+    prop: string|symbol
+        Property name.
+
+    setter: Function
+        Set accessor.
+
+    Examples
+    --------
+    > var obj = {};
+    > var val = '';
+    > function setter( v ) { val = v; };
+    > {{alias}}( obj, 'foo', setter );
+    > obj.foo = 'bar';
+    > val
+    'bar'
+
+    See Also
+    --------
+

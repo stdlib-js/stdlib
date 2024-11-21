@@ -1,0 +1,56 @@
+
+{{alias}}( x, y )
+    Computes the hypotenuse using the alpha max plus beta min algorithm.
+
+    The algorithm computes only an approximation.
+
+    Parameters
+    ----------
+    x: number
+        First number.
+
+    y: number
+        Second number.
+
+    Returns
+    -------
+    out: number
+        Hypotenuse.
+
+    Examples
+    --------
+    > var h = {{alias}}( 5.0, 12.0 )
+    ~13.514
+
+
+{{alias}}.factory( alpha, beta, [nonnegative[, ints]] )
+    Returns a function to compute a hypotenuse using the alpha max plus beta min
+    algorithm.
+
+    Parameters
+    ----------
+    alpha: number
+        Alpha.
+
+    beta: number
+        Beta.
+
+    nonnegative: boolean (optional)
+        Boolean indicating whether input values are always nonnegative.
+
+    ints: boolean (optional)
+        Boolean indicating whether input values are always 32-bit integers.
+
+    Returns
+    -------
+    fcn: Function
+        Function to compute a hypotenuse.
+
+    Examples
+    --------
+    > var hypot = {{alias}}.factory( 1.0, 0.5 )
+    <Function>
+
+    See Also
+    --------
+

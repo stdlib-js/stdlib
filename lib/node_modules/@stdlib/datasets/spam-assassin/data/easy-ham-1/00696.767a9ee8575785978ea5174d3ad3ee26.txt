@@ -1,0 +1,90 @@
+From fork-admin@xent.com  Sun Sep 22 14:11:42 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 47FC516F03
+	for <jm@localhost>; Sun, 22 Sep 2002 14:11:42 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sun, 22 Sep 2002 14:11:42 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8M2CJC16977 for <jm@jmason.org>;
+    Sun, 22 Sep 2002 03:12:19 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 3294B2941D3; Sat, 21 Sep 2002 19:06:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hotmail.com (dav42.law15.hotmail.com [64.4.22.100]) by
+    xent.com (Postfix) with ESMTP id D6A6D2941D2 for <fork@xent.com>;
+    Sat, 21 Sep 2002 19:05:34 -0700 (PDT)
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Sat, 21 Sep 2002 19:09:08 -0700
+X-Originating-Ip: [207.202.171.254]
+From: "Mr. FoRK" <fork_list@hotmail.com>
+To: <fork@spamassassin.taint.org>
+References: <B9B223F0.D9F0%jamesr@best.com>
+Subject: Re: sed /s/United States/Roman Empire/g
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.50.4133.2400
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4133.2400
+Message-Id: <DAV42P8yJrNKBqujscl00001810@hotmail.com>
+X-Originalarrivaltime: 22 Sep 2002 02:09:08.0308 (UTC) FILETIME=[08CC7940:01C261DD]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sat, 21 Sep 2002 19:13:52 -0700
+
+
+----- Original Message -----
+From: "James Rogers" <jamesr@best.com>
+
+> As I've said before, American
+> Indian Reservations are quite possibly the only place on the planet where
+> you can find trailer park shantytowns where every household is bringing in
+a
+> six-figure income.  I wish I could be exploited like that.
+
+If you can't trust the guvmint census, who can you trust?
+
+===
+
+http://www.census.gov/Press-Release/www/2001/cb01fff15.html
+
+Income and Poverty
+
+$31,799
+Median household income for American Indians and Alaska Natives, based on a
+1998-2000 average. This is higher than for African Americans ($28,679), not
+statistically different from Hispanics ($31,703) and lower than for
+non-Hispanic Whites ($45,514), and Asians and Pacific Islanders ($52,553).
+<http://www.census.gov/Press-Release/www/2001/cb01-158.html>
+
+25.9%
+The poverty rate for American Indians and Alaska Natives, based on a
+1998-2000 average. This rate was not statistically different from the rates
+for African Americans and Hispanics, but was higher than those for
+non-Hispanic Whites, and Asians and Pacific Islanders.
+<http://www.census.gov/Press-Release/www/2001/cb01-158.html>
+
+701,000
+Number of American Indians and Alaska Natives below the poverty line, based
+on a 1998-2000 average.
+<http://www.census.gov/Press-Release/www/2001/cb01-158.html>
+
+===
+
+
+
+

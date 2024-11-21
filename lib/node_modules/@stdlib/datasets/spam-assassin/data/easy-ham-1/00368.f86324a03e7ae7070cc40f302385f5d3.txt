@@ -1,0 +1,116 @@
+From fork-admin@xent.com  Thu Aug 29 16:12:04 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B817843F9B
+	for <jm@localhost>; Thu, 29 Aug 2002 11:12:03 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 16:12:03 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7TF4pZ17337 for <jm@jmason.org>;
+    Thu, 29 Aug 2002 16:04:52 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 3C5E92940E8; Thu, 29 Aug 2002 08:02:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from sunserver.permafrost.net (u172n16.hfx.eastlink.ca
+    [24.222.172.16]) by xent.com (Postfix) with ESMTP id 907C8294099 for
+    <fork@xent.com>; Thu, 29 Aug 2002 08:01:13 -0700 (PDT)
+Received: from [192.168.123.179] (helo=permafrost.net) by
+    sunserver.permafrost.net with esmtp (Exim 3.35 #1 (Debian)) id
+    17kQmZ-0001bn-00; Thu, 29 Aug 2002 12:00:27 -0300
+Message-Id: <3D6E3883.8090500@permafrost.net>
+From: Owen Byrne <owen@permafrost.net>
+User-Agent: Mozilla/5.0 (Windows; U; Win98; en-US; rv:1.0.0) Gecko/20020530
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: Geege <grlygrl201@aol.com>
+Cc: fork@spamassassin.taint.org
+Subject: Re: Rambus, Man
+References: <200208262039.NAA20810@stories2.idg.net>
+Content-Type: multipart/related;
+    boundary="------------090602010909000705010009"
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 29 Aug 2002 12:06:43 -0300
+
+
+--------------090602010909000705010009
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 8bit
+
+Geege wrote:
+
+>This message was sent to you from http://www.idg.net
+>
+>Geege would like you to read the story below:
+>
+>http://www.idg.net/gomail.cgi?id=940026
+>
+>Title:
+>A first look at the 2.8-GHz Pentium 4
+>
+>Summary:
+>Latest Rambus memory plus fast bus appear to give Intel's newest P4 the jolt it needs.
+>
+>Geege attached the following message:
+>------------------------------------------------------------
+>ha ha ha harley.  rambus earns it.
+>------------------------------------------------------------
+>
+>Stay on top of the world of Information Technology with your own
+>FREE subscription to our specialized newsletters. Subscribe now
+>at http://www.idg.net/subscribe
+>
+>
+>7132
+>
+>  
+>
+The overclockers have given it another jolt, perhaps to potential sales 
+(and maybe sales of liquid nitrogen):
+
+via slashdot
+Owen
+
+http://www.muropaketti.com/artikkelit/cpu/nw2800/index3.phtml
+*P‰iv‰m‰‰r‰:* 26.8.2002
+*Artikkeli:* Intel Northwood 2,8GHz
+*Tekij‰:* Sampsa Kurri <mailto:sampsa.kurri@muropaketti.com>
+
+
+
+
+*English Summary*
+
+When the Intel Pentium 4 2,8GHz CPU arrived to our testlab we ordered 10 
+liters of Liquid Nitrogen (LN2 -196∞C) and decided to run some tests in 
+very low temperatures.
+
+After some adjusting and testing we were able to run SiSoft Sandra CPU 
+and Memory benchmarks and Pifast benchmark smoothly when the CPU was 
+running at 3917MHz. We raised the FSB one more step and managed to run 
+succesfully SuperPi benchmark while CPU was running at 3998MHz. The 
+result was 39 seconds.
+
+Test setup: P4 2,8GHz, Modified Asus P4T533-C, Samsung PC800 RDRAM, PNY 
+GeForce 4 MX440 and Windows XP OS.
+
+Check out the pictures.
+
+
+
+
+--------------090602010909000705010009--
+
+

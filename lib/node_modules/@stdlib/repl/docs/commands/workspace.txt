@@ -1,0 +1,23 @@
+
+workspace( name )
+    Switches to a specified workspace.
+
+    If a workspace with the specified name does not exist, the workspace is
+    created.
+
+    Parameters
+    ----------
+    name: string
+        Workspace name.
+
+    Examples
+    --------
+    > workspace( 'foobar' );
+    > var x = 3.14;
+    > workspace( 'beepboop' );
+    > x
+
+    See Also
+    --------
+    assignin, currentWorkspace, vars, workspaces
+

@@ -1,0 +1,68 @@
+From ilug-admin@linux.ie  Mon Aug 12 11:07:30 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E4B6944104
+	for <jm@localhost>; Mon, 12 Aug 2002 05:56:08 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:56:08 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7C8Uvb03306 for
+    <jm-ilug@jmason.org>; Mon, 12 Aug 2002 09:30:57 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA01842; Mon, 12 Aug 2002 09:29:57 +0100
+Received: from homer.jinny.ie ([193.120.171.3]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA01787 for <ilug@linux.ie>; Mon,
+    12 Aug 2002 09:29:51 +0100
+Received: from jlooney.jinny.ie (fw [193.120.171.2]) by homer.jinny.ie
+    (8.9.3/8.11.2) with ESMTP id JAA23439 for <ilug@linux.ie>; Mon,
+    12 Aug 2002 09:29:20 +0100
+Received: (from john@localhost) by jlooney.jinny.ie (8.11.6/8.11.6) id
+    g7C8Tc703202 for ilug@linux.ie; Mon, 12 Aug 2002 09:29:38 +0100
+X-Authentication-Warning: jlooney.jinny.ie: john set sender to
+    jlooney@jinny.ie using -f
+Date: Mon, 12 Aug 2002 09:29:38 +0100
+From: "John P. Looney" <valen@tuatha.org>
+To: Irish LUG list <ilug@linux.ie>
+Message-Id: <20020812082938.GA3027@jinny.ie>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: Irish LUG list <ilug@linux.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.4i
+X-Os: Red Hat Linux 7.3/Linux 2.4.18-3
+X-Url: http://www.redbrick.dcu.ie/~valen
+X-Gnupg-Publickey: http://www.redbrick.dcu.ie/~valen/public.asc
+Subject: [ILUG] gargnome & sawfish..
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+ I decided to try out GarGnome, to see what gnome2 looks like. It's
+pretty, I'll give it that.
+
+ However, there seemed to be loads of bugs - sawfish threw wobblers all
+over the place, so I tryed out metacity - which doesn't have a GUI
+configurator, and arsed if I'm going back to the fvwm days when you had to
+set settings by hand, without an idea what the values looked like.
+
+ So, I went back to 1.4 - and now sawfish can't start applets (yes, I did
+change the LD_LIBRARY_PATH back) and the panel can't make new workspaces.
+
+ Any ideas what could have happened ? Would sawfish 2.0 silently change
+the config files & break them?
+
+Kate
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

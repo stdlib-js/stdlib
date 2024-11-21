@@ -1,0 +1,52 @@
+From rssfeeds@jmason.org  Mon Oct  7 12:05:14 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 9693816F76
+	for <jm@localhost>; Mon,  7 Oct 2002 12:03:52 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 07 Oct 2002 12:03:52 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9780OK23233 for
+    <jm@jmason.org>; Mon, 7 Oct 2002 09:00:24 +0100
+Message-Id: <200210070800.g9780OK23233@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: boingboing <rssfeeds@spamassassin.taint.org>
+Subject: Football players addicted to video football
+Date: Mon, 07 Oct 2002 08:00:23 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://boingboing.net/#85531549
+Date: Not supplied
+
+Pro football players are addicted to football games, as a means of 
+wish-fulfillment -- by "managing" the team, they can be free of the rule of 
+their coaches and bosses. Maybe this explains the amazing success of The Sims, 
+which, on the face of it, should be dull as hell: While away your free time 
+away from the office by simulating an existence as a shlub with a day-job and a 
+drive to acquire consumer goods on credit. You'd think it'd be the last thing 
+you want to do. But it's not. When you're a Sim, you can tweak your existence a 
+smidge, discover what life would be like if you took Path A instead of Path B, 
+try the alternate universe on for size. The idea of football players playing 
+themselves in licensed video games is neat and recursive, like the episode of 
+the Simpsons when Mr. Burns runs into Krusty buying Krusty-O's at the 
+supermarket and asks where he can find the "Burns-O's." 
+
+    "It's always a trip," Carr says. "The first time I saw myself in a video 
+    game was in college (at Fresno State) when I walked into a Best Buy store 
+    and some kid was playing with me. That kind of trips you out a little bit." 
+    
+
+    For every 12-year-old kid who spends countless hours in front of a 
+    television playing video games, there's a group of 300-pound offensive 
+    linemen challenging each other at everything from Madden NFL 2003 to the 
+    action-packed "Halo: Combat Evolved."  
+
+Link[1] Discuss[2] (_Thanks, Lawrence[3]!_)
+
+[1] http://www.chron.com/cs/CDA/story.hts/sports/1604474
+[2] http://www.quicktopic.com/boing/H/XWcdy9AcBAh
+[3] http://www.io.com/~lawrence
+
+

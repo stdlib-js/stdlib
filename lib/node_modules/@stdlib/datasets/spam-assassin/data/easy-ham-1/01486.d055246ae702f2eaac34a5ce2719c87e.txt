@@ -1,0 +1,48 @@
+From quinlan@pathname.com  Mon Sep 16 10:41:51 2002
+Return-Path: <quinlan@pathname.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 9220716F03
+	for <jm@localhost>; Mon, 16 Sep 2002 10:41:50 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 16 Sep 2002 10:41:50 +0100 (IST)
+Received: from proton.pathname.com
+    (adsl-216-103-211-240.dsl.snfc21.pacbell.net [216.103.211.240]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8G4tNC13670 for
+    <jm@jmason.org>; Mon, 16 Sep 2002 05:55:23 +0100
+Received: from quinlan by proton.pathname.com with local (Exim 3.35 #1
+    (Debian)) id 17qnvH-0004Rr-00; Sun, 15 Sep 2002 21:55:47 -0700
+From: Daniel Quinlan <quinlan@pathname.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Message-Id: <15749.25683.361874.673913@proton.pathname.com>
+Date: Sun, 15 Sep 2002 21:55:47 -0700
+To: yyyy@spamassassin.taint.org (Justin Mason)
+Cc: Daniel Quinlan <quinlan@pathname.com>,
+	Matt Sergeant <msergeant@startechgroup.co.uk>,
+	Spamassassin-devel <spamassassin-devel@lists.sourceforge.net>
+Subject: Re: [SAdev] testing with less rules
+In-Reply-To: <20020915233332.82A4E16F03@spamassassin.taint.org>
+References: <quinlan@pathname.com> <yf2k7los0z5.fsf@proton.pathname.com>
+    <20020915233332.82A4E16F03@jmason.org>
+X-Mailer: VM 7.04 under Emacs 20.7.2
+Reply-To: quinlan@pathname.com
+
+Justin Mason <jm@jmason.org> writes:
+
+> hmm. also I think I've found some cases where it's hitting on fetchmail
+> Received hdrs.  that's bad.  so it could be fixed....
+
+fetchmail adds Received headers?  That seems wrong.  I'll open a bug
+to investigate.  Can you attach some examples?
+
+> yeah, will do -- somehow.  pity the bugzilla doesn't allow email
+> submissions...
+
+Agreed.  At least you can add information with email.
+
+- Dan
+
+

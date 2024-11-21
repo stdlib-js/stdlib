@@ -1,0 +1,63 @@
+From DNS-swap@lists.ironclad.net.au  Mon Sep  2 12:29:06 2002
+Return-Path: <DNS-swap@lists.ironclad.net.au>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5B22044155
+	for <zzzz@localhost>; Mon,  2 Sep 2002 07:29:06 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 02 Sep 2002 12:29:06 +0100 (IST)
+Received: from lists.ironclad.net.au ([203.30.247.12]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with SMTP id g7UFbiZ31242 for
+    <zzzz@spamassassin.taint.org>; Fri, 30 Aug 2002 16:37:45 +0100
+Received: from aernet.ru by lists.ironclad.net.au with SMTP;
+    Sat, 31 Aug 2002 01:35:15 +1000
+Date: Fri, 30 Aug 2002 19:39:57 +0400
+From: "Andrey G. Sergeev (AKA Andris)" <andris@aernet.ru>
+X-Mailer: The Bat! (v1.60q)
+Reply-To: "DNS-swap" <DNS-swap@lists.ironclad.net.au>
+Organization: AerNet Ltd.
+X-Priority: 3 (Normal)
+Message-Id: <16279722375.20020830193957@aernet.ru>
+To: "Bob Musser" <DNS-swap@lists.ironclad.net.au>
+Subject: Re: Tiny DNS Swap
+In-Reply-To: <00c401c25039$7b055460$976fa8c0@cfl.rr.com>
+References: <00c401c25039$7b055460$976fa8c0@cfl.rr.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Sender: <DNS-swap@lists.ironclad.net.au>
+Precedence: Bulk
+List-Software: LetterRip Pro 3.0.7 by Fog City Software, Inc.
+List-Subscribe: <mailto:DNS-swap-on@lists.ironclad.net.au>
+List-Digest: <mailto:DNS-swap-digest@lists.ironclad.net.au>
+List-Unsubscribe: <mailto:DNS-swap-off@lists.ironclad.net.au>
+
+(This list is sponsored by Ironclad Networks http://www.ironclad.net.au/)
+
+Hello!
+
+
+Friday, August 30, 2002, 7:25:31 PM Bob Musser <BobM@dbsinfo.com> wrote:
+
+[lost]
+
+BM> I'd like to swap with someone also using Simple DNS to take
+BM> advantage of the trusted zone file transfer option.
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Are you speaking about limiting AXFR requests on IP address basis? If
+yes, then virtually every BIND-equipped DNS server in the world will
+be suitable for your needs.
+
+
+-- 
+
+Yours sincerely,
+
+Andrey G. Sergeev (AKA Andris)     http://www.andris.msk.ru/
+
+
+--
+To Unsubscribe: <dns-swap-off@lists.ironclad.net.au>
+Sponsor & Host: Ironclad Networks <http://www.ironclad.net.au/>
+

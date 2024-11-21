@@ -1,0 +1,75 @@
+From ilug-admin@linux.ie  Mon Jul 29 21:48:57 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 10975440F0
+	for <jm@localhost>; Mon, 29 Jul 2002 16:48:55 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 21:48:55 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6TKhcq18698 for
+    <jm-ilug@jmason.org>; Mon, 29 Jul 2002 21:43:38 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id VAA31628; Mon, 29 Jul 2002 21:41:12 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail4.burlee.com (mail4.burlee.com [199.93.70.16]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id VAA31600; Mon, 29 Jul 2002
+    21:41:02 +0100
+Received: from [192.168.1.11] [66.124.158.42] by mail4.burlee.com with
+    ESMTP (SMTPD32-6.05) id A858FC200160; Mon, 29 Jul 2002 16:40:56 -0400
+Date: Mon, 29 Jul 2002 02:13:16 -0700 (PDT)
+From: Kirk Bollinger <kirk@thebollingers.net>
+X-X-Sender: <kirk@localhost.localdomain>
+To: kevin lyda <kevin+dated+1028230251.bcad54@linux.ie>,
+	<ilug@linux.ie>
+Subject: Re: [ILUG] tcpd
+In-Reply-To: <20020727203049.A19694@ie.suberic.net>
+Message-Id: <Pine.LNX.4.33.0207290209310.1066-100000@localhost.localdomain>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Sat, 27 Jul 2002, kevin lyda wrote:
+
+> On Sat, Jul 27, 2002 at 11:58:10AM -0700, Paul O'Neil wrote:
+> > If I want to use tcpd for ftp and only one user will ever ftp but I dont
+> > know what IP that user is because its dialup DHCP how do I setup tcpd for
+> > that user?
+>
+
+
+You could at the very least setup tcp wrappers and limit it to the dialup
+domain name.
+
+/etc/hosts.allow
+
+in.ftpd: .domain.name
+
+-kirk
+
+
+> please don't reply to messages to send a new topic to ilug.  those of
+> us using threaded mail clients find that really annoying.
+>
+> tcpd is host based filtering/auth.  so if the ip is dynamic, you can't
+> really use it.  however ftp supports user based auth - actually it kind
+> of requires a user, so just set up an account for that person.
+>
+> kevin
+>
+>
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

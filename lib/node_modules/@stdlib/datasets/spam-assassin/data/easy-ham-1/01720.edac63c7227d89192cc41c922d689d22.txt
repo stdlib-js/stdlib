@@ -1,0 +1,127 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Sun Sep  8 20:48:13 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Sun, 08 Sep 2002 15:48:13 -0400
+Subject: [Spambayes] testing results
+In-Reply-To: <20020908172113.GA26741@glacier.arctrix.com>
+Message-ID: <LNBBLJKPBEHFEDALKOLCCEPKBCAB.tim.one@comcast.net>
+
+Neil trained a classifier using 3 sets with about 500 ham and spam in each.
+We're missing half his test run results due to a cmp.py bug (since fixed);
+the "before custom fiddling" figures on the 3 reported runs were:
+
+    false positive percentages
+        0.187
+        0.749
+        0.780
+    total unique fp 19
+
+    false negative percentages
+        2.072
+        2.448
+        0.574
+    total unique fn 43
+
+The "total unique" figures counts all 6 runs; it's just the individual-run
+fp and fn percentages we're missing for 3 runs.
+
+Jeremy reported these "before custom fiddling" figures on 4 sets with about
+600 ham and spam in each:
+
+    false positive percentages
+        0.000
+        1.398
+        1.398
+        0.000
+        1.242
+        1.242
+        1.398
+        1.398
+        0.000
+        1.553
+        1.553
+        0.000
+    total unique fp 139
+
+    false negative percentages
+       10.413
+        6.104
+        5.027
+        8.259
+        2.873
+        5.745
+        5.206
+        4.488
+        9.336
+        5.206
+        5.027
+        9.874
+    total unique fn 970
+
+So things are clearly working much better for Neil.  Both reported
+significant improvements in both f-n and f-p rates by folding in more header
+lines.  Neal added Received analysis to the base tokenizer's header
+analysis, and Jeremy skipped the base tokenizer's header analysis completely
+but added base-subject-line-like but case-folded tokenization for almost all
+header lines (excepting only Received, Data, X-From_, and, I *suspect*, all
+those starting with 'x-vm').
+
+When I try 5 random pairs of 500-ham + 500-spam subsets in my test data, I
+see:
+
+    false positive percentages
+        0.000
+        0.000
+        0.200
+        0.000
+        0.200
+        0.000
+        0.200
+        0.000
+        0.000
+        0.200
+        0.400
+        0.000
+        0.200
+        0.000
+        0.200
+        0.400
+        0.000
+        0.400
+        0.200
+        0.600
+    total unique fp 10
+
+    false negative percentages
+        0.800
+        0.400
+        0.200
+        0.600
+        1.000
+        0.000
+        0.600
+        1.200
+        1.200
+        0.800
+        0.400
+        0.800
+        1.800
+        0.800
+        0.400
+        1.000
+        1.000
+        0.400
+        0.000
+        0.600
+    total unique fn 36
+
+This is much closer to what Neil saw, but still looks better.  Another run
+on a disjoint 5 random pairs looked much the same; total unique fp rose to
+12 and fn fell to 27; on a third run with another set of disjoint 5 random
+pairs, likewise, with fp 12 and fn 40.  So I'm pretty confident that it's
+not going to matter which random subsets of 500 I take from my data.
+
+It's hard to conclude anything given Jeremy's much worse results.  If they
+were in line with Neil's results, I'd suspect that I've over-tuned the
+algorithm to statistical quirks in my corpora.
+

@@ -1,0 +1,82 @@
+From msquadrat.nospamplease@gmx.net  Wed Sep 11 19:41:22 2002
+Return-Path: <msquadrat.nospamplease@gmx.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id B8BEF16F03
+	for <jm@localhost>; Wed, 11 Sep 2002 19:41:21 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 11 Sep 2002 19:41:21 +0100 (IST)
+Received: from mailout11.sul.t-online.com (mailout11.sul.t-online.com
+    [194.25.134.85]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8BFNDC20372 for <jm@jmason.org>; Wed, 11 Sep 2002 16:23:13 +0100
+Received: from fwd00.sul.t-online.de by mailout11.sul.t-online.com with
+    smtp id 17p9L7-0005Jj-05; Wed, 11 Sep 2002 17:23:37 +0200
+Received: from nebukadnezar.msquadrat.de
+    (520061089980-0001@[217.80.6.194]) by fmrl00.sul.t-online.com with esmtp
+    id 17p9L2-19TcBsC; Wed, 11 Sep 2002 17:23:32 +0200
+Received: from otherland (otherland.msquadrat.de [10.10.10.10]) by
+    nebukadnezar.msquadrat.de (Postfix on SuSE Linux 7.3 (i386)) with ESMTP id
+    90BFDDC; Wed, 11 Sep 2002 17:23:34 +0200 (CEST)
+Content-Type: text/plain; charset="iso-8859-15"
+From: "Malte S. Stretz" <msquadrat.nospamplease@gmx.net>
+To: spamassassin-devel@example.sourceforge.net
+Subject: Re: [SAdev] 2.42 to come ?
+Date: Wed, 11 Sep 2002 17:26:19 +0200
+User-Agent: KMail/1.4.3
+References: <20020911141938.CF8BE16F19@spamassassin.taint.org>
+In-Reply-To: <20020911141938.CF8BE16F19@spamassassin.taint.org>
+Cc: yyyy@spamassassin.taint.org (Justin Mason)
+X-Accept-Language: de, en
+X-Habeas-Swe-1: winter into spring
+X-Habeas-Swe-2: brightly anticipated
+X-Habeas-Swe-3: like Habeas SWE (tm)
+X-Habeas-Swe-4: Copyright 2002 Habeas (tm)
+X-Habeas-Swe-5: Sender Warranted Email (SWE) (tm). The sender of this
+X-Habeas-Swe-6: email in exchange for a license for this Habeas
+X-Habeas-Swe-7: Warrant Mark warrants that this is a Habeas Compliant
+X-Habeas-Swe-8: Message (HCM) and not spam. Please report use of this
+X-Habeas-Swe-9: mark in spam to <http://www.habeas.com/report/>.
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Message-Id: <200209111726.19845@malte.stretz.eu.org>
+X-Sender: 520061089980-0001@t-dialin.net
+
+On Wednesday 11 September 2002 16:19 CET Justin Mason wrote:
+> Malte S. Stretz said:
+>[...]
+> > I think we should even add new (GA'd) rules to 2.4x (and/or remove old
+> > ones) and tag a new 2.50 only if we have a bunch of features worth a
+> > "dangerous" big update. I'd say: Yes, you should expect 2.42 and also
+> > 2.43+ (but update to 2.41 now).
+>
+> I would think adding new rules to, or removing broken rules from, 2.4x
+> would require some discussion first.  but new GA'd scores are definitely
+> worth putting in, as the ones there are too wild.
+
+I think my mail wasn't very clear ;-) My point was that we should continue 
+releasing new rules and removing broken ones (all based on discussions on 
+this list of course) in the 2.4 branch instead of creating a new 2.5 branch 
+everytime we have a bunch of new rules.
+
+A new branch should be openend only if (big) new features are introduced 
+(eg. Bayes) or the interface has changed (spam_level_char=x). As the rules 
+are under fluent development, the user has to update quite regularly. But 
+currently he couldn't be shure if the new release will break anything in 
+his setup (like -F going away). So if we say "the branches are stable to 
+the outside and just improved under the surface but you have to watch out 
+when you update to a new minor version number", users and sysadmins could 
+be less reluctant to update.
+
+All just IMHO :o)
+Malte
+
+P.S.: I'll be away from my box and my mail account for one week, starting 
+tomorrow. So happy coding for the next week :-)
+
+-- 
+--- Coding is art.
+-- 
+
+
+

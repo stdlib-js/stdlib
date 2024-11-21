@@ -1,0 +1,60 @@
+
+{{alias}}( collection, [options,] predicate )
+    Splits values into two groups according to a predicate function.
+
+    When invoked, the predicate function is provided two arguments:
+
+    - value: collection value.
+    - index: collection index.
+
+    If a predicate function returns a truthy value, a collection value is
+    placed in the first group; otherwise, a collection value is placed in the
+    second group.
+
+    If provided an empty collection, the function returns an empty array.
+
+    Parameters
+    ----------
+    collection: Array|TypedArray|Object
+        Input collection to group. If provided an object, the object must be
+        array-like (excluding strings and functions).
+
+    options: Object (optional)
+        Options.
+
+    options.thisArg: any (optional)
+        Execution context.
+
+    options.returns: string (optional)
+        If `values`, values are returned; if `indices`, indices are returned; if
+        `*`, both indices and values are returned. Default: 'values'.
+
+    predicate: Function
+        Predicate function indicating which group an element in the input
+        collection belongs to.
+
+    Returns
+    -------
+    out: Array<Array>|Array
+        Group results.
+
+    Examples
+    --------
+    > function predicate( v ) { return v[ 0 ] === 'b'; };
+    > var collection = [ 'beep', 'boop', 'foo', 'bar' ];
+    > var out = {{alias}}( collection, predicate )
+    [ [ 'beep', 'boop', 'bar' ], [ 'foo' ] ]
+
+    // Output group results as indices:
+    > var opts = { 'returns': 'indices' };
+    > out = {{alias}}( collection, opts, predicate )
+    [ [ 0, 1, 3 ], [ 2 ] ]
+
+    // Output group results as index-value pairs:
+    > opts = { 'returns': '*' };
+    > out = {{alias}}( collection, opts, predicate )
+    [ [ [0, 'beep'], [1, 'boop'], [3, 'bar'] ], [ [2, 'foo' ] ] ]
+
+    See Also
+    --------
+

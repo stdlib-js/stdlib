@@ -1,0 +1,61 @@
+From rpm-list-admin@freshrpms.net  Mon Aug 12 10:50:27 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 1DD1843FB1
+	for <jm@localhost>; Mon, 12 Aug 2002 05:50:05 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:50:05 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79JWTb22642 for
+    <jm-rpm@jmason.org>; Fri, 9 Aug 2002 20:32:29 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g79JA3J08463; Fri, 9 Aug 2002 21:10:03
+    +0200
+Received: from web20007.mail.yahoo.com (web20007.mail.yahoo.com
+    [216.136.225.70]) by egwn.net (8.11.6/8.11.6/EGWN) with SMTP id
+    g79J90J05150 for <rpm-list@freshrpms.net>; Fri, 9 Aug 2002 21:09:00 +0200
+Message-Id: <20020809190859.63583.qmail@web20007.mail.yahoo.com>
+Received: from [12.41.224.3] by web20007.mail.yahoo.com via HTTP;
+    Fri, 09 Aug 2002 12:08:59 PDT
+From: Joshua Daniel Franklin <joshuadfranklin@yahoo.com>
+Subject: Re: GConf registry (was Re: Pango problems)
+To: rpm-zzzlist@freshrpms.net
+In-Reply-To: <1028913879.23102.6.camel@fuggles>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Fri, 9 Aug 2002 12:08:59 -0700 (PDT)
+Date: Fri, 9 Aug 2002 12:08:59 -0700 (PDT)
+
+I think this sort of discussion would be better on a GNOME list... I hate to
+complain, but this thread has been going on for several days. I don't really 
+mind deleting the messages every time, but there's really no reason for it 
+on this list. 
+
+
+__________________________________________________
+Do You Yahoo!?
+HotJobs - Search Thousands of New Jobs
+http://www.hotjobs.com
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

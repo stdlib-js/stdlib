@@ -1,0 +1,40 @@
+
+{{alias}}( x, y )
+    Computes the dot product of two vectors.
+
+    In general, for best performance, especially for large vectors, provide
+    1-dimensional ndarrays whose underlying data type is either 'float64' or
+    'float32'.
+
+    If provided empty vectors, the function returns `0.0`.
+
+    Parameters
+    ----------
+    x: ndarray|ArrayLikeObject
+        First input array.
+
+    y: ndarray|ArrayLikeObject
+        Second input array.
+
+    Returns
+    -------
+    dot: number
+        The dot product.
+
+    Examples
+    --------
+    // Using ndarrays...
+    > var x = {{alias:@stdlib/ndarray/array}}( new {{alias:@stdlib/array/float64}}( [ 4.0, 2.0, -3.0, 5.0, -1.0 ] ) );
+    > var y = {{alias:@stdlib/ndarray/array}}( new {{alias:@stdlib/array/float64}}( [ 2.0, 6.0, -1.0, -4.0, 8.0 ] ) );
+    > {{alias}}( x, y )
+    -5.0
+
+    // Using array-like objects...
+    > x = [ 4.0, 2.0, -3.0, 5.0, -1.0 ];
+    > y = [ 2.0, 6.0, -1.0, -4.0, 8.0 ];
+    > {{alias}}( x, y )
+    -5.0
+
+    See Also
+    --------
+

@@ -1,0 +1,118 @@
+From secprog-return-624-jm=jmason.org@securityfocus.com  Mon Nov 25 23:16:06 2002
+Return-Path: <secprog-return-624-yyyy=spamassassin.taint.org@securityfocus.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 3CCA116F18
+	for <jm@localhost>; Mon, 25 Nov 2002 23:16:02 +0000 (GMT)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 25 Nov 2002 23:16:02 +0000 (GMT)
+Received: from outgoing.securityfocus.com (outgoing2.securityfocus.com
+    [205.206.231.26]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    gAPLugW27253 for <jm@jmason.org>; Mon, 25 Nov 2002 21:56:42 GMT
+Received: from lists.securityfocus.com (lists.securityfocus.com
+    [205.206.231.19]) by outgoing.securityfocus.com (Postfix) with QMQP id
+    60E5B8F2D2; Mon, 25 Nov 2002 12:31:17 -0700 (MST)
+Mailing-List: contact secprog-help@securityfocus.com; run by ezmlm
+Precedence: bulk
+List-Id: <secprog.list-id.securityfocus.com>
+List-Post: <mailto:secprog@securityfocus.com>
+List-Help: <mailto:secprog-help@securityfocus.com>
+List-Unsubscribe: <mailto:secprog-unsubscribe@securityfocus.com>
+List-Subscribe: <mailto:secprog-subscribe@securityfocus.com>
+Delivered-To: mailing list secprog@securityfocus.com
+Delivered-To: moderator for secprog@securityfocus.com
+Received: (qmail 1574 invoked from network); 25 Nov 2002 20:08:54 -0000
+Date: Mon, 25 Nov 2002 15:28:38 -0500
+From: John Viega <viega@securesoftware.com>
+To: Ali Saifullah Khan <whipaz@gem.net.pk>
+Cc: cdavison@nucleus.com, secprog@securityfocus.com
+Subject: Re: Are bad developer libraries the problem with M$ software?
+Message-Id: <20021125152837.A12813@zork.org>
+References: <0765fe847442469cb74c250e51a8d37e.cdavison@nucleus.com>
+    <000801c2924c$7e1e9b20$ab8405ca@opendev>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <000801c2924c$7e1e9b20$ab8405ca@opendev>; from
+    whipaz@gem.net.pk on Fri, Nov 22, 2002 at 10:27:53PM +0500
+
+No, you need to learn how declarations work in C.  You have specified
+testbuff as "an array of 1024 pointers to characters".  That means,
+you have allocated an array big enough to store 1024 pointers.  On
+most machines, that's 4 bytes per pointer, which indeed would give you
+4096.
+
+John
+
+On Fri, Nov 22, 2002 at 10:27:53PM +0500, Ali Saifullah Khan wrote:
+> Here is a test done on the return of sizes by sizeof() using pointers.
+> 
+> #include <iostream.h>
+> 
+> int main(void) {
+>  char *testbuff[1024];
+> 
+>  int len = sizeof(testbuff);
+>  cout << len << "\n";
+>  return 0;
+> }
+> 
+> c:>debug\testbuff
+> 4096
+> 
+> The output from this is 4096 but infact it should be returning 1024.
+> Apparently, using a pointer has multiplied the value of the original size of
+> the testbuff[] buffer by the size of the " pointer " ?
+> 
+> char pointers have a size of 4 bytes.....as is shown when output is 4 bytes
+> using " int len = sizeof((char*)testbuff); "
+> 
+> c:>debug\testbuff
+> 4
+> 
+> so sizeof is returning the size of the "first" entity passed to it, that
+> being the size of the pointer. " * "
+> 
+> Whats confusing is when sizeof outputs the value for something like " char *
+> testbuff[] "
+> Here the macro seems to be multiplying the sizes of entities passed to it,
+> by considering the first entity as the pointer denoted by the asterisk
+> itself " * ", and then taking this value of 4 and multiplying it with the
+> size of the buffer testbuff[] which is 1024, to produce an output of 4096.
+> 
+> Rather strange behaviour. ???
+> ----- Original Message -----
+> From: <cdavison@nucleus.com>
+> To: <secprog@securityfocus.com>
+> Cc: <viega@securesoftware.com>
+> Sent: Tuesday, November 19, 2002 2:59 AM
+> Subject: Re: Are bad developer libraries the problem with M$ software?
+> 
+> 
+> > ----- Original Message -----
+> > From: John Viega
+> > Sent: 11/18/2002 2:28:08 PM
+> > To: cdavison@nucleus.com
+> > Cc: secprog@securityfocus.com
+> > Subject: Re: Are bad developer libraries the problem with M$ software?
+> >
+> > > strlen does not work, because he was trying to get at the ALLOCATED
+> > > size of a buffer, not the actual size of the buffer.
+> >
+> > You're right. I was looking at the safe_strncpy code, and it looks like
+> the author did use strlen.
+> >
+> > > sizeof will return the size of the data type passed to it.  So if you
+> > > declared mystr as char mystr[1024];, it will return as the original
+> > > author wanted.
+> >
+> > It will not work with a char*, so if your strings are dynamically
+> allocated, or passed to you as a pointer, these macros will not work.
+> >
+> >
+> >
+> >
+
+

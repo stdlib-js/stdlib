@@ -1,0 +1,98 @@
+From razor-users-admin@lists.sourceforge.net  Wed Jul 24 15:22:51 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 69CC7440CD
+	for <jm@localhost>; Wed, 24 Jul 2002 10:22:49 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 15:22:49 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6OELE418307 for <jm-razor@jmason.org>; Wed, 24 Jul 2002 15:21:14 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17XMu1-0007Rr-00; Wed,
+    24 Jul 2002 07:14:09 -0700
+Received: from 70.muca.bstn.bstnmaco.dsl.att.net ([12.98.14.70]
+    helo=pulse.fsckit.net) by usw-sf-list1.sourceforge.net with esmtp (Cipher
+    TLSv1:DES-CBC3-SHA:168) (Exim 3.31-VA-mm2 #1 (Debian)) id 17XMtb-0004Jf-00
+    for <razor-users@lists.sourceforge.net>; Wed, 24 Jul 2002 07:13:44 -0700
+Received: from twells by pulse.fsckit.net with local (Exim) id
+    17XMtY-00010R-00; Wed, 24 Jul 2002 10:13:40 -0400
+From: "Tabor J. Wells" <razor-users@fsckit.net>
+To: Patrick <patrick@stealthgeeks.net>
+Cc: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] Authentication Error
+Message-Id: <20020724141339.GD3208@fsckit.net>
+References: <20020711084825.W60740-100000@rockstar.stealthgeeks.net>
+    <20020723211828.Y98572-100000@rockstar.stealthgeeks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20020723211828.Y98572-100000@rockstar.stealthgeeks.net>
+User-Agent: Mutt/1.4i
+X-Copyright: This email is Copyright (c)2002 by razor-users@fsckit.net.
+    All rights reserved.
+X-Bofh: Do you feel lucky?
+X-Jihad: I will hunt down all who spam my account. Try me.
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Wed, 24 Jul 2002 10:13:40 -0400
+Date: Wed, 24 Jul 2002 10:13:40 -0400
+
+On Tue, Jul 23, 2002 at 09:21:58PM -0700,
+Patrick <patrick@stealthgeeks.net> is thought to have said:
+
+> Today's error(received multiple times) was:
+> 
+> Jul 23 21:16:39.288680 report[98557]: [ 2]  Razor-Agents v2.12 starting
+> razor-report ./jobspam
+> Jul 23 21:16:46.597147 report[98558]: [ 1] razor-report error: reportit:
+> Error 213 while authenticating, aborting.
+
+I believe this is fixed (or at least there's a workaround in place to try
+again) in 2.125
+
+> I really like the concept of Razor but I find myself wondering if it's
+> really a good idea for the developers to be passing off what appears
+> to be alpha-quality software as production-ready....
+
+And where does it say production-ready? http://razor.sourceforge.net says at
+the top of the page:
+
+June 13, 2002 - Vipul's Razor v2 released! The first beta of Vipul's Razor
+v2 is now available for public download.
+
+Likewise Vipul's announcement post about v2 to this list states that it is 
+beta in the first sentence.
+
+Tabor
+
+-- 
+--------------------------------------------------------------------
+Tabor J. Wells                                razor-users@fsckit.net
+Fsck It!                 Just another victim of the ambient morality
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

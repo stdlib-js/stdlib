@@ -1,0 +1,21 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Fri Sep  6 20:24:15 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Fri, 06 Sep 2002 15:24:15 -0400
+Subject: [Spambayes] Deployment
+In-Reply-To: <200209061431.g86EVM114413@pcp02138704pcs.reston01.va.comcast.net>
+Message-ID: <LNBBLJKPBEHFEDALKOLCIEJABCAB.tim.one@comcast.net>
+
+[Guido]
+> ...
+> - A program that acts both as a pop client and a pop server.  You
+>   configure it by telling it about your real pop servers.  You then
+>   point your mail reader to the pop server at localhost.  When it
+>   receives a connection, it connects to the remote pop servers, reads
+>   your mail, and gives you only the non-spam.
+
+FYI, I'll never trust such a scheme:  I have no tolerance for false
+positives, and indeed do nothing to try to block spam on any of my email
+accounts now for that reason.  Deliver all suspected spam to a Spam folder
+instead and I'd love it.
+

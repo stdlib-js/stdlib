@@ -1,0 +1,57 @@
+From ilug-admin@linux.ie  Wed Aug 28 10:48:00 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id F1BA944158
+	for <zzzz@localhost>; Wed, 28 Aug 2002 05:47:30 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 28 Aug 2002 10:47:31 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7RKP8Z24562 for
+    <zzzz-ilug@spamassassin.taint.org>; Tue, 27 Aug 2002 21:25:08 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id VAA14835; Tue, 27 Aug 2002 21:24:13 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from escargot.esatclear.ie (escargot.esatclear.ie
+    [194.145.128.30]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id VAA14809
+    for <ilug@linux.ie>; Tue, 27 Aug 2002 21:24:05 +0100
+Received: from esatclear.ie (z-airlock153.esatclear.ie [213.202.166.153])
+    by escargot.esatclear.ie (8.9.3/8.9.3) with ESMTP id VAA20194 for
+    <ilug@linux.ie>; Tue, 27 Aug 2002 21:23:34 +0100
+Message-Id: <3D6BE01E.9060403@esatclear.ie>
+Date: Tue, 27 Aug 2002 21:25:02 +0100
+From: Paul Kelly <longword@esatclear.ie>
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-US; rv:1.1)
+    Gecko/20020824
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: ilug@linux.ie
+Subject: Re: [ILUG] find the biggest file
+References: <20020827193152.56961.qmail@web13705.mail.yahoo.com>
+    <20020827203602.G17908@prodigy.Redbrick.DCU.IE>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Philip Reynolds wrote:
+>>Does anyone know how to list the biggest file in my
+>>root directory?or the second biggest ..etc...
+> $ find /dir -name \*  | xargs du -s | sort -n
+
+You might want to put a '-type f' on that find.
+
+Paul.
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

@@ -1,0 +1,138 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Sep 12 00:04:58 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id D997B16F03
+	for <jm@localhost>; Thu, 12 Sep 2002 00:04:57 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 12 Sep 2002 00:04:57 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8BLqqC01175 for <jm-sa@jmason.org>; Wed, 11 Sep 2002 22:52:52 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17pFO5-0005VG-00; Wed,
+    11 Sep 2002 14:51:05 -0700
+Received: from sccmmhc02.mchsi.com ([204.127.203.184]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17pFNO-0001Gg-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 11 Sep 2002 14:50:22 -0700
+Received: from QUENTIN ([12.218.16.218]) by sccmmhc02.mchsi.com (InterMail
+    vM.4.01.03.27 201-229-121-127-20010626) with ESMTP id
+    <20020911215014.SJEI7903.sccmmhc02.mchsi.com@QUENTIN>; Wed, 11 Sep 2002
+    21:50:14 +0000
+From: "Quentin Krengel" <quentin@krengeltech.com>
+To: <simonian@library.ucr.edu>
+Cc: <spamassassin-talk@example.sourceforge.net>
+Subject: RE: [SAtalk] Debianized Packages for SA 2.3+
+Organization: Krengel Technology Inc
+Message-Id: <018d01c259dd$35066050$ad01a8c0@QUENTIN>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.3416
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Importance: Normal
+In-Reply-To: <57930.138.23.89.42.1031778900.squirrel@library.ucr.edu>
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 11 Sep 2002 16:50:07 -0500
+Date: Wed, 11 Sep 2002 16:50:07 -0500
+
+I successfully installed spamassassin & razor to run system wide on my
+Debian Woody server.  
+ 
+Briefly I 
+apt-get installed spamassassin razor and libmilter-dev,
+ 
+downloaded spamass-milter-0.1.2.tar.gz from http://www.milter.org,
+ungzipped and untarred the file into /etc/mail, 
+ 
+followed the directions in /etc/mail/spamass-milter-0.1.2/README to
+compile the milter, install the rc scripts, and edit and update
+sendmail.mc
+ 
+changed /etc/default/spamassassin to set spamassassin to daemon mode.
+ 
+verified that spamassassin was running by tailing /var/log/mail.log
+ 
+ 
+Woody/stable has SA 2.20
+Woody/unstable has SA 2.41
+
+I'm running the stable source live right now and it is working very
+well.
+
+If you want unstable change /etc/apt/sources.list, substituting
+"unstable" for "stable",
+Run apt-get update
+Install the unstable versions
+Change /etc/apt/sources.list
+Run apt-get update
+
+
+Quentin Krengel
+Krengel Technology Inc
+
+
+
+-----Original Message-----
+From: spamassassin-talk-admin@example.sourceforge.net
+[mailto:spamassassin-talk-admin@lists.sourceforge.net] On Behalf Of
+Tanniel Simonian
+Sent: Wednesday, September 11, 2002 4:15 PM
+To: spamassassin-talk@example.sourceforge.net
+Subject: [SAtalk] Debianized Packages for SA 2.3+
+
+
+Im currently using woody.
+
+Is there a debianized package for SA on Woody, or at least somewhere I
+can download from? Its been soo long that I haven't compiled stuff, that
+Im sort of shy to try again. =)
+
+
+
+-- 
+Tanniel Simonian
+Programmer / Analyst III
+UCR Libraries
+http://libsys.ucr.edu
+909 787 2832
+
+
+
+
+-------------------------------------------------------
+In remembrance
+www.osdn.com/911/ _______________________________________________
+Spamassassin-talk mailing list Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+
+
+
+
+-------------------------------------------------------
+In remembrance
+www.osdn.com/911/
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

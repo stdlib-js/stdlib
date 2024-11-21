@@ -1,0 +1,74 @@
+From rpm-list-admin@freshrpms.net  Sat Oct  5 10:36:14 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 6C4D016F21
+	for <jm@localhost>; Sat,  5 Oct 2002 10:35:36 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 05 Oct 2002 10:35:36 +0100 (IST)
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g94NEAK13745 for
+    <jm-rpm@jmason.org>; Sat, 5 Oct 2002 00:14:15 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g94N82f30483; Sat, 5 Oct 2002 01:08:02
+    +0200
+Received: from relay2.EECS.Berkeley.EDU (relay2.EECS.Berkeley.EDU
+    [169.229.60.28]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g94N7If23138 for <rpm-list@freshrpms.net>; Sat, 5 Oct 2002 01:07:18 +0200
+Received: from relay3.EECS.Berkeley.EDU (localhost.Berkeley.EDU
+    [127.0.0.1]) by relay2.EECS.Berkeley.EDU (8.9.3/8.9.3) with ESMTP id
+    QAA03058 for <rpm-list@freshrpms.net>; Fri, 4 Oct 2002 16:07:16 -0700
+    (PDT)
+Received: from eecs.berkeley.edu (brawnix.CS.Berkeley.EDU [128.32.35.162])
+    by relay3.EECS.Berkeley.EDU (8.9.3/8.9.3) with ESMTP id QAA16606 for
+    <rpm-list@freshrpms.net>; Fri, 4 Oct 2002 16:07:11 -0700 (PDT)
+Message-Id: <3D9E1F20.3050300@eecs.berkeley.edu>
+From: Ben Liblit <liblit@eecs.berkeley.edu>
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.1) Gecko/20020827
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: RedHat 8.0 and his own freetype
+References: <20021004155451.52f9ecd5.matthias_haase@bennewitz.com>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Fri, 04 Oct 2002 16:07:12 -0700
+Date: Fri, 04 Oct 2002 16:07:12 -0700
+
+Matthias Haase wrote:
+> RH ships the code with the bytecode hinter disabled which makes 
+> non-AA fonts really ugly.
+> This reqiures only a small change for include/freetype/config/ftoption.h,
+> it is very well documented.
+
+Red Hat 8.0 ships with the bytecode hinter enabled; I think 7.3 may have 
+as well.
+
+The enabling change to "ftoption.h" is made by Red Hat's SRPM before 
+building.  Take a look at "freetype-2.1.1-enable-ft2-bci.patch" from the 
+SRPM; it's pretty clear that this does exactly what needs to be done.
+
+So if your fonts look ugly, lack of bytecode hinting is *not* the cause.
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

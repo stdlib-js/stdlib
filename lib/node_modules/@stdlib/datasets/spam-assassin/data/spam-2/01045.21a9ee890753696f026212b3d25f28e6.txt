@@ -1,0 +1,65 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6ONthi5018850
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Wed, 24 Jul 2002 18:55:43 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6ONtg1X018845
+	for cypherpunks-forward@ds.pro-ns.net; Wed, 24 Jul 2002 18:55:42 -0500 (CDT)
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6ONtfi5018826
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cpunks@ds.pro-ns.net>; Wed, 24 Jul 2002 18:55:42 -0500 (CDT)
+	(envelope-from owner-cypherpunks@minder.net)
+Received: from waste.minder.net (majordom@waste [66.92.53.73])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6ONmAJ55804;
+	Wed, 24 Jul 2002 19:48:10 -0400 (EDT)
+	(envelope-from owner-cypherpunks@minder.net)
+Received: (from majordom@localhost)
+	by waste.minder.net (8.11.6/8.11.6) id g6ONlsZ03600
+	for cypherpunks-outgoing; Wed, 24 Jul 2002 19:47:54 -0400
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by waste.minder.net (8.11.6/8.11.6) with ESMTP id g6ONlrR03595
+	for <cypherpunks@minder.net>; Wed, 24 Jul 2002 19:47:53 -0400
+Received: from knee ([195.224.39.178])
+	by locust.minder.net (8.11.6/8.11.6) with SMTP id g6ONliJ55793
+	for <cypherpunks@minder.net>; Wed, 24 Jul 2002 19:47:47 -0400 (EDT)
+	(envelope-from nwgpnkm@dostmail.com)
+From: MURAT Emre <nwgpnkm@dostmail.com>
+To: <cypherpunks@minder.net>
+Subject: Mp3 ve klipler
+Date: Thu, 25 Jul 2002 00:44:25 -0400
+X-Mailer: Microsoft Outlook Express 5.00.2919.6700
+Content-Type: text/plain
+Message-Id: mvomwauwyjnw@minder.net
+X-MIME-Autoconverted: from base64 to 8bit by waste.minder.net id g6ONlsR03596
+Sender: owner-cypherpunks@minder.net
+Precedence: bulk
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+X-MIME-Autoconverted: from 8bit to quoted-printable by hq.pro-ns.net id g6PDYoi4039544
+
+JetMp3 T=FCrkiye'de ilk kez uygulanan bir sistemi hayata ge=E7irdi.
+http://www.jetmp3.com
+Bu sistemle art=FDk =DDstedi=F0iniz MP3 leri ister tek tek isterseniz alb=
+=FCmler halinde ve birka=E7 dakika i=E7inde sanki disketten bilgisayar=FD=
+n=FDza y=FCkler gibi s=FCratle indirebilirsiniz. Turk ve Yabanc=FD alb=FC=
+mler, klipler ve daha fazlas=FD...
+11gb lik ar=FEivimize g=F6z atmak i=E7in t=FDklay=FDn: http://www.jetmp3.=
+com
+
+
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

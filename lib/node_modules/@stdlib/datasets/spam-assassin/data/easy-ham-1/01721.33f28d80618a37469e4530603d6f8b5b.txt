@@ -1,0 +1,24 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Sun Sep  8 21:01:00 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Sun, 08 Sep 2002 16:01:00 -0400
+Subject: [Spambayes] test sets?
+In-Reply-To: <LNBBLJKPBEHFEDALKOLCEEOGBCAB.tim.one@comcast.net>
+Message-ID: <LNBBLJKPBEHFEDALKOLCCEPLBCAB.tim.one@comcast.net>
+
+[Tim]
+> One effect of getting rid of MINCOUNT is that it latches on more
+> strongly to rare clues now, and those can be unique to the corpus
+> trained on (e.g., one trained ham says "gryndlplyx!", and a followup
+> new ham quotes it).
+
+This may be a systematic bias in the testing procedure:  in real life, msgs
+come ordered in time.  Say there's a thread that spans N messages on c.l.py.
+In our testing setup, we'll train on a random sampling throughout its whole
+lifetime, and test likewise.  New ham "in the middle" of this thread gets
+benefit from that we trained on msgs that appeared both before and *after*
+it in real life.  It's quite plausible that the f-p rate would rise without
+this effect; in real life, at any given time some number of ham threads will
+just be starting their lives, and if they're at all unusual the trained data
+will know little to nothing about them.
+

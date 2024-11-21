@@ -1,0 +1,44 @@
+
+{{alias}}( x, y )
+    Computes the sine of a double-precision floating-point number on [-π/4,π/4].
+
+    For increased accuracy, the number for which the cosine should be evaluated
+    can be supplied as a double-double number (i.e., a non-evaluated sum of two
+    double-precision floating-point numbers `x` and `y`).
+
+    The two numbers must satisfy `|y| < 0.5 * ulp( x )`.
+
+    If either argument is `NaN`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value (in radians).
+
+    y: number
+        Tail of `x`.
+
+    Returns
+    -------
+    out: number
+        Sine.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.0, 0.0 )
+    ~0.0
+    > y = {{alias}}( {{alias:@stdlib/constants/float64/pi}}/6.0, 0.0 )
+    ~0.5
+    > y = {{alias}}( 0.619, 9.279e-18 )
+    ~0.58
+
+    > y = {{alias}}( NaN, 0.0 )
+    NaN
+    > y = {{alias}}( 2.0, NaN )
+    NaN
+    > y = {{alias}}( NaN, NaN )
+    NaN
+
+    See Also
+    --------
+

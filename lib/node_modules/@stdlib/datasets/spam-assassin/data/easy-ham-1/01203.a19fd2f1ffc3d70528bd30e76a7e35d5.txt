@@ -1,0 +1,83 @@
+From rpm-list-admin@freshrpms.net  Mon Sep 30 21:45:14 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 927D716F18
+	for <jm@localhost>; Mon, 30 Sep 2002 21:44:54 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 30 Sep 2002 21:44:54 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8UKZvK14996 for
+    <jm-rpm@jmason.org>; Mon, 30 Sep 2002 21:35:58 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g8UKY0f21878; Mon, 30 Sep 2002 22:34:00
+    +0200
+Received: from yak.fluid.com
+    (IDENT:FaR+u/czYnH31lnslYs4cinDam/Ze0D5@yak.fluid.com [63.76.105.204]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g8UKXHf18283 for
+    <rpm-list@freshrpms.net>; Mon, 30 Sep 2002 22:33:17 +0200
+Received: from lefty.fluid.com ([63.76.105.89]) by yak.fluid.com with
+    esmtp (Exim 4.10 #2) for rpm-list@freshrpms.net id 17w7BJ-0005bh-00;
+    Mon, 30 Sep 2002 13:30:17 -0700
+Message-Id: <3D98B507.1080608@fluid.com>
+From: Troy Engel <tengel@fluid.com>
+Organization: Fluid
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.1) Gecko/20020827
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: ALSA Problem with Null kernel
+References: <20020930203145.570e6717.matthias@egwn.net>
+    <20020930191916.67869.qmail@web20510.mail.yahoo.com>
+    <20020930215046.108ba76f.matthias@egwn.net>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+X-Reply-To: tengel@fluid.com
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Mon, 30 Sep 2002 13:33:11 -0700
+Date: Mon, 30 Sep 2002 13:33:11 -0700
+
+Matthias Saou wrote:
+> 
+> I'd like to aks this on the rpm-zzzlist : Would a new dependency of 250k, the
+> alsa-lib package, for many packages (mplayer, ogle, xine) be a problem for
+> the freshrpms.net packages users? As I really feel like blending ALSA in
+> now, especially since I've just spent some time recompiling alsa-kernel
+> package for all the Psyche kernels!!!
+
+I don't know a lot about ALSA, but use custom kernels for many of the 
+machines -- would this mean, in order to get mplayer (eg) to work, I'd 
+first have to compile a custom kernel option? or kernel module? Since I 
+wouldn't have your alsa-kernel(??) installed, would that mean alsa-libs 
+and so on won't install?
+
+(I guess, in short, if it *requires* the shipped kernel to be used, I'd 
+be against --with-alsa as a default?)
+
+-te
+
+-- 
+Troy Engel, Systems Engineer
+Cool as the other side of the pillow
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

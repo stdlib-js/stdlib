@@ -1,0 +1,70 @@
+From ilug-admin@linux.ie  Tue Aug 13 10:28:11 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C827043C61
+	for <jm@localhost>; Tue, 13 Aug 2002 05:21:33 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:21:33 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7CIsDb29808 for
+    <jm-ilug@jmason.org>; Mon, 12 Aug 2002 19:54:13 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id TAA01058; Mon, 12 Aug 2002 19:52:57 +0100
+Received: from mail.go2.ie ([62.17.153.101]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id TAA01032 for <ilug@linux.ie>; Mon,
+    12 Aug 2002 19:52:51 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [62.17.153.101] claimed to
+    be mail.go2.ie
+Received: from k100-50.bas1.dbn.dublin.eircom.net
+    (k100-50.bas1.dbn.dublin.eircom.net [159.134.100.50]) by mail.go2.ie
+    (Postfix) with ESMTP id ECD5D10F2 for <ilug@linux.ie>; Mon, 12 Aug 2002
+    19:52:17 +0100 (IST)
+Subject: Re: [ILUG] slashdot EW Dijkstra humor
+From: Nick Murtagh <nickm@go2.ie>
+To: ilug@linux.ie
+In-Reply-To: <200208121109.g7CB9WfE006890@sionnach.ireland.sun.com>
+References: <200208121109.g7CB9WfE006890@sionnach.ireland.sun.com>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8-3mdk
+Date: 12 Aug 2002 19:52:06 +0100
+Message-Id: <1029178327.9147.3.camel@gemini.windmill>
+MIME-Version: 1.0
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Mon, 2002-08-12 at 12:09, Albert White - SUN Ireland wrote:
+> If you want to stop in the middle of that because some condition is set then 
+> you probably should have used a while loop instead of `for`:
+> i:=0
+> flag:=false
+> while [ i != 100 && flag != true ]
+> do
+> 	....
+> 	# found our special case set flag to jump out of loop
+> 	flag:=true
+> 	....
+> 	i++;
+> done
+> 
+> If you're using a break or similar construct in a while loop then you might 
+> want to rethink your guard condition.
+
+Good point, I didn't think of that. However, that doesn't help with a
+case statement, which IMHO is cleaner than using an if statement if you
+have a lot of branches... but then again maybe that should be refactored
+away with polymorphism :)
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

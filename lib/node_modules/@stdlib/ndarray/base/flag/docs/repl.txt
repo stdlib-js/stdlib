@@ -1,0 +1,25 @@
+
+{{alias}}( x, name )
+    Returns a specified flag for a provided ndarray.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray.
+
+    name: string|symbol
+        Flag name.
+
+    Returns
+    -------
+    out: any
+        Flag value.
+
+    Examples
+    --------
+    > var out = {{alias}}( {{alias:@stdlib/ndarray/zeros}}( [ 3, 3, 3 ] ), 'READONLY' )
+    <boolean>
+
+    See Also
+    --------
+

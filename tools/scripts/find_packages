@@ -1,0 +1,83 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2017 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Finds packages.
+
+
+# VARIABLES #
+
+# Determine the host kernel:
+kernel=$(uname -s)
+
+# Determine root directory:
+root_dir="$(git rev-parse --show-toplevel)"
+
+# Define the project source code directory:
+base_dir="${root_dir}/lib/node_modules"
+
+# Define the path to the build directory:
+build_dir="${root_dir}/build"
+
+# Define the directory path for distributable files:
+dist_dir="${root_dir}/dist"
+
+# Define the directory path for external library dependencies:
+deps_dir="${root_dir}/deps"
+
+# Define the directory path for documentation:
+docs_dir="${root_dir}/docs"
+
+# Define the path to the reports directory:
+reports_dir="${root_dir}/reports"
+
+# Define the directory for top-level tools:
+tools_dir="${root_dir}/tools"
+
+# Define the directory for project tools which are Node.js packages:
+tools_pkgs_dir="${base_dir}/_tools"
+
+# Define the path to node modules:
+node_modules="${root_dir}/node_modules"
+
+# Define a package filename identifier:
+packages_file='package.json'
+
+# Define the pattern for filtering packages based on their file path:
+packages_filter="${PACKAGES_FILTER}"
+if [[ -z "${packages_filter}" ]]; then
+	packages_filter='.*/.*'
+fi
+
+
+# FUNCTIONS #
+
+# Finds packages.
+main() {
+	local pkgs
+
+	# On Mac OSX, in order to use `|` and other regular expression operators, we need to use enhanced regular expression syntax (-E); see https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man7/re_format.7.html#//apple_ref/doc/man/7/re_format.
+	if [[ "${kernel}" == "Darwin" ]]; then
+		pkgs=$(find -E "${root_dir}" '!' -path "${root_dir}/.*" '!' -path "${node_modules}/*" '!' -path "${tools_dir}/*" '!' -path "${tools_pkgs_dir}/*" '!' -path "${deps_dir}/*" '!' -path "${docs_dir}/*" '!' -path "${build_dir}/*" '!' -path "${dist_dir}/*" '!' -path "${reports_dir}/*" -regex "${packages_filter}" -name "${packages_file}" -exec dirname {} \;)
+	else
+		pkgs=$(find "${root_dir}" -regextype posix-extended '!' -path "${root_dir}/.*" '!' -path "${node_modules}/*" '!' -path "${tools_dir}/*" '!' -path "${tools_pkgs_dir}/*" '!' -path "${deps_dir}/*" '!' -path "${docs_dir}/*" '!' -path "${build_dir}/*" '!' -path "${dist_dir}/*" '!' -path "${reports_dir}/*" -regex "${packages_filter}" -name "${packages_file}" -exec dirname {} \;)
+	fi
+	echo "${pkgs}"
+}
+
+# Run main:
+main

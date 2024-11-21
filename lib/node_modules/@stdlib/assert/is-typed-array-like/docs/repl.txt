@@ -1,0 +1,29 @@
+
+{{alias}}( value )
+    Tests if a value is typed-array-like.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is typed-array-like.
+
+    Examples
+    --------
+    > var bool = {{alias}}( new {{alias:@stdlib/array/int16}}() )
+    true
+    > bool = {{alias}}({
+    ...    'length': 10,
+    ...    'byteOffset': 0,
+    ...    'byteLength': 10,
+    ...    'BYTES_PER_ELEMENT': 4
+    ... })
+    true
+
+    See Also
+    --------
+

@@ -1,0 +1,74 @@
+From ilug-admin@linux.ie  Mon Sep  2 13:14:12 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C2E7C47C74
+	for <zzzz@localhost>; Mon,  2 Sep 2002 07:42:03 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 02 Sep 2002 12:42:03 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g827VJZ23920 for
+    <zzzz-ilug@spamassassin.taint.org>; Mon, 2 Sep 2002 08:31:19 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id IAA22561; Mon, 2 Sep 2002 08:30:44 +0100
+Received: from moe.jinny.ie (homer.jinny.ie [193.120.171.3]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id IAA22526 for <ilug@linux.ie>;
+    Mon, 2 Sep 2002 08:30:36 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host homer.jinny.ie
+    [193.120.171.3] claimed to be moe.jinny.ie
+Received: from jlooney.jinny.ie (fw.jinny.ie [193.120.171.2]) by
+    moe.jinny.ie (Postfix) with ESMTP id 3F9167FC40 for <ilug@linux.ie>;
+    Mon,  2 Sep 2002 08:30:35 +0100 (IST)
+Received: by jlooney.jinny.ie (Postfix, from userid 500) id 58AA19A5;
+    Mon,  2 Sep 2002 08:30:58 +0100 (IST)
+Date: Mon, 2 Sep 2002 08:30:57 +0100
+From: "John P. Looney" <valen@tuatha.org>
+To: ILUG main list <ilug@linux.ie>
+Subject: Re: [ILUG] Seconds to date?
+Message-Id: <20020902073057.GT1757@jinny.ie>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: ILUG main list <ilug@linux.ie>
+References: <20020901004414.A15357@ie.suberic.net>
+    <Pine.LNX.4.44.0209011611320.14417-100000@fogarty.jakma.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <Pine.LNX.4.44.0209011611320.14417-100000@fogarty.jakma.org>
+User-Agent: Mutt/1.4i
+X-Os: Red Hat Linux 7.3/Linux 2.4.18-3
+X-Url: http://www.redbrick.dcu.ie/~valen
+X-Gnupg-Publickey: http://www.redbrick.dcu.ie/~valen/public.asc
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Sun, Sep 01, 2002 at 04:14:17PM +0100, Paul Jakma mentioned:
+> On Sun, 1 Sep 2002, kevin lyda wrote:
+> 
+> > gnu date is limited by time_t.  but i thought time_t expired in 2037?
+> > this seems to show it expiring in 2038:
+> 
+> (2^31-1)/3600/24/365+1970
+> 2038
+> 
+> course, on UltraSparc, x86-64, IA64, alpha, etc:
+> 
+> (2^63-1)/3600/24/365+1970
+> 292471210647
+> 
+> so we should be safe enough.
+
+ May I assume that x86-64 will be able to use a 64bit time_t too? 
+
+Kate
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

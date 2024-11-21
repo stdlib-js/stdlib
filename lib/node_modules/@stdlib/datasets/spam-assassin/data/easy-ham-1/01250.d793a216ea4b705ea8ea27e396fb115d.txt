@@ -1,0 +1,85 @@
+From rpm-list-admin@freshrpms.net  Sat Oct  5 10:35:52 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 27EEF16F17
+	for <jm@localhost>; Sat,  5 Oct 2002 10:35:22 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 05 Oct 2002 10:35:22 +0100 (IST)
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g94LuXK10676 for
+    <jm-rpm@jmason.org>; Fri, 4 Oct 2002 22:56:33 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g94Lo3f02123; Fri, 4 Oct 2002 23:50:03
+    +0200
+Received: from bob.dudex.net (dsl092-157-004.wdc1.dsl.speakeasy.net
+    [66.92.157.4]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g94Lmff28624
+    for <rpm-list@freshrpms.net>; Fri, 4 Oct 2002 23:48:41 +0200
+Received: from [66.92.157.3] (helo=www.dudex.net) by bob.dudex.net with
+    esmtp (Exim 3.35 #1) id 17xaKc-0006jX-00 for rpm-list@freshrpms.net;
+    Fri, 04 Oct 2002 17:49:58 -0400
+X-Originating-Ip: [4.64.218.140]
+From: "" Angles " Puglisi" <angles@aminvestments.com>
+To: "=?iso-8859-1?Q?RPM=2DList?=" <rpm-zzzlist@freshrpms.net>
+Subject: Re: Alsa/Redhat 8 compatability
+Message-Id: <20021004.rnl.09750400@www.dudex.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 8bit
+Content-Disposition: inline
+X-Mailer: AngleMail for phpGroupWare (http://www.phpgroupware.org) v
+    0.9.14.000
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Fri, 04 Oct 2002 21:45:33 +0000
+Date: Fri, 04 Oct 2002 21:45:33 +0000
+
+Matthias Saou (matthias@rpmforge.net) wrote*:
+>I really think that with my ALSA packages, ALSA on Red Hat Linux has never
+>been so easy! ;-)
+
+I had been hand building those alsa packages for probably 6 months or more, so I
+could use my laptop's ESS chip best (hard disk recording and such). Wow, maybe 8 to
+10 months, time flys. I didn't look forward to doing that tedious build every time I
+changed a kernel or something. Matthias has made this a thing of the past! Dude,
+it's a no brainer, use apt-get or just download and install.
+
+What's more, OSS is fully "imitated", older apps using OSS are as happy as a clam.
+My personal taste tells me newer apps which use alsa sound better (alsaplayer, xmms
+with alsa module) to my ear.
+
+The 2 things that trick people are the modules.conf file, they didn't have that
+automatic matrix page when I started with alsa, you don't know how good you have it.
+
+And on my old installs (only the first time I installed it on a clean box), alsa
+always was "muted" until you fire up a mixer and turn up the music. It's possible
+Matthias even took care of that too. Anyway it is/was only a one time thing on 1st
+install, that was a long time ago for me.
+
+Those ALSA dudes had been trying to get it into the 2.4 kernel but missed it, but
+it's been in 2.5 for a while now, so alsa is the future of sound in the linux kernel.
+
+--
+That's "angle" as in geometry.
+
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

@@ -1,0 +1,1962 @@
+From guterman@mediaunspun.imakenews.net  Wed Aug 14 14:38:59 2002
+Return-Path: <guterman@mediaunspun.imakenews.net>
+Delivered-To: zzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 87FA743C34
+	for <zzz@localhost>; Wed, 14 Aug 2002 09:38:52 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzz@localhost (single-drop); Wed, 14 Aug 2002 14:38:52 +0100 (IST)
+Received: from eng.imakenews.com (mailservice4.imakenews.com
+    [65.214.33.17]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7EDZx416820 for <zzz-unspun@spamassassin.taint.org>; Wed, 14 Aug 2002 14:35:59 +0100
+Received: by eng.imakenews.com (PowerMTA(TM) v1.5); Wed, 14 Aug 2002
+    09:35:04 -0400 (envelope-from <guterman@mediaunspun.imakenews.net>)
+Content-Transfer-Encoding: binary
+Content-Type: multipart/alternative;
+    boundary="----------=_1029331990-31627-4";
+    charset="iso-8859-1"
+Date: Wed, 14 Aug 2002 09:33:10 -0400
+Errors-To: <guterman@mediaunspun.imakenews.net>
+From: "Media Unspun" <guterman@mediaunspun.imakenews.net>
+MIME-Version: 1.0
+Message-Id: <31627$1029331990$mediaunspun$5114587@imakenews.net>
+Precedence: normal
+Reply-To: "Media Unspun" <guterman@vineyard.com>
+Sender: "Media Unspun" <guterman@mediaunspun.imakenews.net>
+Subject: SEC Exposes Big Blue's Pink Slips
+To: zzz-unspun@spamassassin.taint.org
+X-Imn: mediaunspun,178767,5114587,0
+
+This is a multi-part message in MIME format...
+
+------------=_1029331990-31627-4
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+To view this newsletter in full-color, visit:
+http://newsletter.mediaunspun.com/index000018970.cfm
+
+M E D I A  U N S P U N
+What the Press is Reporting and Why (www.mediaunspun.com)
+-----------------------------------------------------------------
+August 14, 2002
+
+-----------------------------------------------------------------
+IN THIS ISSUE
+-----------------------------------------------------------------
+* SEC EXPOSES BIG BLUE'S PINK SLIPS
+* SYNERGY AND BETRAYAL AT VIVENDI
+* OTHER STORIES
+
+Media Unspun serves business news and analysis, authoritatively
+and irreverently, every business day. An annual subscription
+costs $50, less than a dollar a week. If your four-week free
+trial is coming to an end soon, please visit
+http://www.mediaunspun.com/subscribe.html and sign up via credit card 
+or check.
+
+
+-----------------------------------------------------------------
+ADVERTISEMENT
+-----------------------------------------------------------------
+Ken Fisher offers his Quarterly Report for high net worth
+investors FREE of cost & without obligation. Access the same
+investment research he uses to guide his clients at:
+http://pcg.fisherinvestments.com/newrespond/letter.asp?site=UNSP&KC=1229EFCAD0000
+
+
+-----------------------------------------------------------------
+SEC EXPOSES BIG BLUE'S PINK SLIPS
+-----------------------------------------------------------------
+Does the Securities and Exchange Commission have a press pass
+yet? It seems to be bringing us all our news lately. On the day
+of the deadline for companies to certify their financial
+statements with the SEC, the business press squirmed and waited
+for the next Enron or WorldCom. (We might eat these words
+tomorrow, but we doubt it.) In an unrelated confession, IBM gave 
+the commission its latest layoff numbers.
+
+IBM talked about pink slips during its second-quarter earnings
+report, but with a vagueness worthy of your daily horoscope.
+("Capricorn: Career changes may be on their way...") Only after
+"months of surreptitious layoff notices" did the company admit
+that it's cutting more than 15,600 jobs, said the AP. That's
+about 5% of its workforce, and a lot more than pundits expected. 
+An IBM spokesperson told the Wall Street Journal the higher
+number was due to "rebalancing" and more employees than expected 
+taking voluntary layoffs. 
+
+Sorry, we're still back on "rebalancing." Did IBM "rightsize"
+last quarter, too?
+
+IBM's news was still trickling out Wednesday morning, but some
+details were available. About 1,400 workers got cut from IBM's
+microelectronics unit, and most of the rest were from IT
+services and consulting. (That ought to make IBM's new employees 
+from PricewaterhouseCoopers feel all warm and fuzzy inside.)
+Look for news updates from cities that will see the cuts, such
+as Austin and Raleigh. 
+
+OK, none of this is good. Two years into the tech slump, we're
+still tired of seeing people get sacked. But was it really so
+bad that IBM only revealed it because of new accounting
+regulations? Nah, Big Blue was always known for "stealth
+layoffs," as CNN put it, but current corporate scrutiny forced
+it to 'fess up for once. Until now, IBM would acknowledge the
+latest layoffs if reporters called and asked, but wouldn't give
+specifics. Yeesh. - Jen Muehlbauer
+
+IBM Cut 5% of Staff in Period, Double the Expected Number
+http://online.wsj.com/article/0,,SB1029282408667791835,00.html
+(Paid subscription required.) 
+
+IBM to Cut Over 15,000 Employees (AP)
+http://tinyurl.com/10kz
+
+IBM confirms 15,600 job cuts (Reuters)
+http://www.msnbc.com/news/793777.asp 
+
+IBM cutting 15,000 jobs 
+http://news.com.com/2100-1001-949677.html
+
+IBM job cuts exceed 15,600
+http://money.cnn.com/2002/08/13/technology/ibm/index.htm
+
+IBM puts job cuts at 15,600, with fewer than 50 in this state
+http://seattlepi.nwsource.com/business/82508_ibm14.shtml
+
+-----------------------------------------------------------------
+ADVERTISEMENT
+-----------------------------------------------------------------
+You've heard about identity management, but do you know about
+the opportunities and business models that will emerge as a
+result? Download a free executive summary of Esther Dyson's coverage of
+identity management in Release 1.0. Learn more about the
+expanding market for these services and applications.
+http://release1.edventure.com/executivesummary.cfm?MCode=Unspun
+
+-----------------------------------------------------------------
+SYNERGY AND BETRAYAL AT VIVENDI
+-----------------------------------------------------------------
+Synergy always was a fuzzy concept. Now Vivendi Universal's top
+man has slammed the lid on it. The French company announced
+today that it's ready to peddle $9.8 billion in assets to rustle 
+up some cash. First up on the block? Synergy-less U.S. book
+publisher Houghton Mifflin. 
+
+It's unclear whether new chairman Jean-Rene Fourtou has genuine
+turnaround muscle, or whether he and Vivendi's board are simply
+following the winds of post-merger fashion. But when you owe
+$18.7 billion, you get real practical, real fast. The Guardian
+reported that Vivendi's share price sank 5% on Tuesday when
+investors got the willies about the company's impending
+announcement on its financial health. But the company had
+positive news to report: It's making money. Revenue in the first 
+half was up 13%, higher than analysts' estimates of a 7.7%
+boost. 
+
+Details are scant on the breadth of Fourtou's restructuring
+efforts, with more information expected at the next board
+meeting on September 25, according to reporters. Houghton
+Mifflin, acquired a year ago for $1.7 billion, and a vague
+explanation that included the "Curious George" character, were
+the only properties named for sale so far. The Guardian
+speculated that Vivendi will also sell its U.S. video games
+business and possibly its stake in the French mobile phone
+company SFR, a debatable sale because of the cash it generates,
+according to the newspaper. 
+
+Meanwhile, Fourtou's predecessor, Jean-Marie Messier, continues
+to advocate empire-building. The New York Post said its sources
+say Messier hopes his former employer will feel generous enough
+to let him continue to reside in his $17 million Manhattan
+abode. And Bloomberg reported earlier this week that an
+unrepentant Messier is penning a memoir as he vacations in the
+Mediterranean. The working title? "How I Was Betrayed."  -
+Deborah Asbrand 
+
+Vivendi to Sell Publisher Houghton Mifflin (Reuters)
+http://www.washingtonpost.com/wp-dyn/articles/A15954-2002Aug14.html
+
+Vivendi investors expect the worst
+http://www.guardian.co.uk/business/story/0,3604,774190,00.html
+
+Vivendi to Sell $9.8 Billion In Assets, Including Houghton
+http://online.wsj.com/article/0,,SB102931297119161715,00.html
+(Paid subscription required.) 
+
+Ousted Messier Aims To Score $17m Vivendi Pad
+http://www.nypost.com/business/54701.htm
+
+Ex-Chief of Vivendi Plans Tell-All Book (Bloomberg)
+http://www.nytimes.com/2002/08/12/business/media/12VIVE.html
+
+-----------------------------------------------------------------
+OTHER STORIES
+-----------------------------------------------------------------
+A Top AOL Manager Has Left Company
+http://www.nytimes.com/2002/08/14/technology/14AOL.html
+
+Fed Holds Steady on Interest Rates 
+http://www.washingtonpost.com/wp-dyn/articles/A14636-2002Aug13.html
+
+Amtrak halts all high-speed service after finding cracks
+http://www.sunspot.net/bal-te.train14aug14.story
+
+AOL lets resigning exec keep stock options 
+http://www.usatoday.com/money/industries/technology/2002-08-13-aol-pittman_x.htm
+
+Lucent licensing deal with Winstar focus of probe (AP)
+http://www.bayarea.com/mld/mercurynews/business/3861117.htm
+
+Study Says Net Could Benefit Music Firms
+http://www.latimes.com/business/la-fi-music14aug14.story
+
+Eisner Crimping His Own Style
+http://www.latimes.com/business/la-fi-disney14aug14.story
+
+Severance claims by Enron former execs anger ex-workers
+http://www.chron.com/cs/CDA/story.hts/business/1533657
+
+Princeton removes dean after Yale Web site flap (AP)
+http://www.siliconvalley.com/mld/siliconvalley/3857890.htm
+
+Frisbee golf creator dies, may land on someone's roof (SF
+Chronicle)
+http://seattlepi.nwsource.com/national/82560_frisbee14.shtml
+
+Will Kinsley's Slate Get Wiped?
+http://www.ojr.org/ojr/kramer/1029281360.php
+
+Hollywood, Russian Bicker Over Bass
+http://www.cnn.com/2002/SHOWBIZ/News/08/13/bassspace.hollywood.ap/
+
+-----------------------------------------------------------------
+Do you want to reach the Net's savviest audience?
+Advertise in Media Unspun.
+Contact Erik Vanderkolk for details at erikvanderkolk@yahoo.com 
+today.
+
+-----------------------------------------------------------------
+STAFF
+-----------------------------------------------------------------
+Written by Deborah Asbrand (dasbrand@world.std.com), Keith
+Dawson (dawson@world.std.com), Jen Muehlbauer
+(jen@englishmajor.com), and Lori Patel (loripatel@hotmail.com).
+
+Copyedited by Jim Duffy (jimduffy86@yahoo.com). 
+
+Marketing: Cowpoke Productions (cowpokeproductions.com).
+Advertising: Erik Vanderkolk (erikvanderkolk@yahoo.com). 
+
+Editor and publisher: Jimmy Guterman (guterman@vineyard.com).
+
+Media Unspun is produced by The Vineyard Group Inc. 
+Copyright 2002 Media Unspun, Inc., and The Vineyard Group, Inc.
+Subscribe already, willya? http://www.mediaunspun.com 
+
+Redistribution by email is permitted as long as a link to
+http://newsletter.mediaunspun.com is included.
+
+-|________________
+POWERED BY: http://www.imakenews.com
+To be removed from this list, use this link:
+http://www.imakenews.com/eletra/remove.cfm?x=mediaunspun%2Czzz-unspun@spamassassin.taint.org
+To receive future messages in HTML format, use this link:
+http://www.imakenews.com/eletra/change.cfm?x=mediaunspun%2Czzz-unspun@spamassassin.taint.org%2Chtm
+To change your subscriber information, use this link:
+http://www.imakenews.com/eletra/update.cfm?x=mediaunspun%2Czzz-unspun@spamassassin.taint.org
+
+
+------------=_1029331990-31627-4
+Content-Type: text/html; charset="iso-8859-1"
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+<HTML>
+<HEAD>
+<title>M E D I A  U N S P U N</title>
+
+ 
+ 
+<!--  
+**********************************************************
+If you can read this message but the rest of the email 
+contains strange characters, your email program is not
+capable of displaying HTML email. Use your browser to read the
+complete newsletter online at: 
+   http://newsletter.mediaunspun.com/
+To receive future messages in plain text format, use this link:
+http://www.imakenews.com/eletra/change.cfm?x=mediaunspun%2Czzz-unspun@spamassassin.taint.org%2Ctxt
+
+**********************************************************
+CREATED: August 14, 2002   
+-->
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="GENERATOR" content="iMakeNews">
+<meta name="robots" content="ALL">
+
+ 
+	
+
+
+<style type="text/css">
+<!--
+ 
+ .link {color:#000000; text-decoration:   none; }	.link:hover {color:#FF3300; text-decoration:underline;}	
+
+	.g-article_title, .g-article_url, .g-article_full_story,
+	.g-article_printer_link, .g-contents_article_title,
+	.g-topics_topic_title, .g-issue_issue_title, .g-issue_issue_info,
+	.g-survey_results_link, .g-menu_link, .g-letter_summary_title,
+	.g-letter_summary_author, .g-letter_summary_date,
+	.g-letter_summary_location, .g-letter_post, .g-letter_view_title,
+	.g-letter_view_author, .g-letter_view_post, .g-footer_publisher,
+	.g-footer_tellafriend, .g-footer_archive, .g-footer_pdf
+	{color:#000000;text-decoration:none}
+	.g-article_title:hover, .g-article_url:hover,
+	.g-article_full_story:hover, .g-article_printer_link:hover,
+	.g-contents_article_title:hover, .g-topics_topic_title:hover,
+	.g-issue_issue_title:hover, .g-issue_issue_info:hover,
+	.g-survey_results_link:hover, .g-menu_link:hover,
+	.g-letter_summary_title:hover, .g-letter_summary_author:hover,
+	.g-letter_summary_date:hover, .g-letter_summary_location:hover, 
+	.g-letter_post:hover, .g-letter_view_title:hover,
+	.g-letter_view_author:hover, .g-letter_view_post:hover,
+	.g-footer_publisher:hover, .g-footer_tellafriend:hover,
+	.g-footer_archive:hover, .g-footer_pdf:hover
+	{color:#FF0000;text-decoration:underline}
+	
+
+-->
+</style>
+
+<!-- Footer Styles -->
+<style type='text/css'>
+<!--
+.a226814927149384-section_heading{color:#FFFFFF;background-color:#000000;font-family:arial;font-size:x-small;font-weight:bold;font-style:normal;text-decoration:none;text-align:left}
+.a226814927149384-footer_publisher{color:#000000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:normal;font-style:normal;text-decoration:none}
+.a226814927149384-footer_publisher:hover{color:#FF0000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:normal;font-style:normal;text-decoration:underline}
+.a226814927149384-footer_copyright{color:#000000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:normal;font-style:normal;text-decoration:none}
+.a226814927149384-footer_disclaimer{color:#000000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:normal;font-style:normal;text-decoration:none}
+.a226814927149384-footer_tellafriend{color:#000000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:bold;font-style:normal;text-decoration:underline}
+.a226814927149384-footer_tellafriend:hover{color:#FF0000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:bold;font-style:normal;text-decoration:underline}
+.a226814927149384-footer_archive{color:#000000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:bold;font-style:normal;text-decoration:none}
+.a226814927149384-footer_archive:hover{color:#FF0000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:bold;font-style:normal;text-decoration:underline}
+.a226814927149384-footer_pdf{color:#000000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:bold;font-style:normal;text-decoration:none}
+.a226814927149384-footer_pdf:hover{color:#FF0000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:bold;font-style:normal;text-decoration:underline}
+
+-->
+</style>
+
+
+<!-- Article View Styles -->
+<style type='text/css'>
+<!--
+.a226814927144888-section_heading{color:#FFFFFF;background-color:#000000;font-family:arial;font-size:x-small;font-weight:bold;font-style:normal;text-decoration:none;text-align:left}
+.a226814927144888-contents_article_title{color:#000000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:normal;font-style:normal;text-decoration:underline}
+.a226814927144888-contents_article_title:hover{color:#FF0000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:normal;font-style:normal;text-decoration:underline}
+
+-->
+</style>
+
+
+<!-- Article View Styles -->
+<style type='text/css'>
+<!--
+.a226814927144469-section_heading{color:#FFFFFF;background-color:#000000;font-family:arial;font-size:x-small;font-weight:bold;font-style:normal;text-decoration:none;text-align:left}
+.a226814927144469-contents_article_title{color:#000000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:normal;font-style:normal;text-decoration:underline}
+.a226814927144469-contents_article_title:hover{color:#FF0000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:normal;font-style:normal;text-decoration:underline}
+
+-->
+</style>
+
+
+<!-- Footer Styles -->
+<style type='text/css'>
+<!--
+.a226814927151492-section_heading{color:#FFFFFF;background-color:#000000;font-family:arial;font-size:x-small;font-weight:bold;font-style:normal;text-decoration:none;text-align:left}
+.a226814927151492-footer_publisher{color:#000000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:normal;font-style:normal;text-decoration:none}
+.a226814927151492-footer_publisher:hover{color:#FF0000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:normal;font-style:normal;text-decoration:underline}
+.a226814927151492-footer_copyright{color:#000000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:normal;font-style:normal;text-decoration:none}
+.a226814927151492-footer_disclaimer{color:#000000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:normal;font-style:normal;text-decoration:none}
+.a226814927151492-footer_tellafriend{color:#000000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:bold;font-style:normal;text-decoration:underline}
+.a226814927151492-footer_tellafriend:hover{color:#FF0000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:bold;font-style:normal;text-decoration:underline}
+.a226814927151492-footer_archive{color:#000000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:bold;font-style:normal;text-decoration:none}
+.a226814927151492-footer_archive:hover{color:#FF0000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:bold;font-style:normal;text-decoration:underline}
+.a226814927151492-footer_pdf{color:#000000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:bold;font-style:normal;text-decoration:none}
+.a226814927151492-footer_pdf:hover{color:#FF0000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:bold;font-style:normal;text-decoration:underline}
+
+-->
+</style>
+
+</head> 
+<body bgcolor="#EEEEEE" TEXT="#000000" >
+ <div align="Left"> <!--IMN:TOP--><table bgcolor="#000000" border="0" cellpadding="1" cellspacing="0" width="650" >
+<tr><td> <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%" cols="1">
+	<tr><td width="644" valign="top" bgcolor="#FFFFFF"><!-- 1,1:footer -->
+			
+				
+				
+				 
+ 
+	
+ 
+ 
+
+	
+	
+
+
+ 
+ 
+	 
+<table width="100%" border="0" cellspacing="0" cellpadding="4" bgcolor="#FFFFFF">
+
+<tr><td bgcolor="#FFFFFF">
+
+
+	
+	<div align="left">
+	<table border="0" cellpadding="2" cellspacing="0" width="100%" bgcolor="#FFFFFF">
+	  <tr>
+	    <td>
+	 
+		<font face="verdana,arial" size="1">
+		 
+		</font>
+	 
+		</td>
+	 
+				<td align="right" valign="top">
+		 
+			<font face="verdana,arial" size="1">
+			
+				
+			
+			
+			<b>
+			<a href="http://www.imakenews.com/eletra/mod_input_proc.cfm?mod_name=tell_friend_form&XXDESXXuser=mediaunspun&XXDESXXthanks=Thank%20You%2E&XXDESXXsubject=Check%20this%20out%3A%20%5B%5Btitle%5D%5D&XXDESXXheading=&XXDESXXbackto=http://newsletter.mediaunspun.com/index000018970.cfm&XXDESXXissue_id=18970&XXDESXXtitle=M%20E%20D%20I%20A%20%20U%20N%20S%20P%20U%20N"
+			 class="a226814927149384-footer_tellafriend">
+			<font size=4>Pass it on...</font></a></b>
+			
+			</font>
+		 
+			</td>
+		
+		
+		
+	  </tr>
+	</table></div>
+	 
+	</td></tr></table>
+	
+
+				
+	
+	
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+			
+			
+			<!-- 1,2:header -->
+			
+				
+					
+				 
+
+
+
+ 
+	
+ 
+	
+ 
+ 
+		
+	 
+		
+	 
+	 
+<table width="100%" border="0" cellspacing="0" cellpadding="4" bgcolor="#FFFFFF">
+
+<tr><td bgcolor="#FFFFFF">
+
+
+		
+		<table border="0" cellpadding="1" cellspacing="0" width="100%">
+		
+		<tr><td colspan = 3>
+
+			
+			
+			
+			 			
+			 
+				
+					
+						
+					
+				
+			 
+				<a href="http://www.mediaunspun.com">
+				
+				<img src="http://a298.g.akamai.net/7/298/5382/081402092715/www.imakenews.com/mediaunspun/mediaunspun_logo.GIF" BORDER="0" alt="M E D I A  U N S P U N" hspace="6" vspace="1" align="top" width="150" ><br>
+				
+				</a>
+			 
+				
+					<em><font face="Arial" size="3">
+					
+					What the Press is Reporting and Why (<a href="http://www.mediaunspun.com">www.mediaunspun.com</a>)
+					
+					</font></em>
+				
+			
+			
+		</td></tr>
+		
+		
+	 	<tr><td colspan="3"><hr noshade size="1"></td></tr>
+		 
+		
+		 <tr>
+		 
+				<td align="left" width="33%">
+			 
+				<font face="Verdana, Arial" size="1">
+				
+				
+					
+					
+						
+							Wednesday, August 14, 2002
+						
+					
+					
+					
+				</font>
+			
+			</td>
+		 
+				<td align="center" width="34%">
+			 
+			</td>
+		 
+				<td align="right" width="33%">
+			 
+			</td>
+		 
+		</tr>
+		</table>
+		 
+	</td></tr></table>
+	
+
+				
+	
+
+
+
+			
+							
+			
+			
+			<!-- COLUMN: 1 -->
+		
+		</td></tr></table> <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%" cols="2">
+	<tr><td width="483" valign="top" bgcolor="#FFFFFF"><!-- 2,1:contents -->
+			
+				
+				 
+
+
+
+ 
+		
+	 
+	 
+ 
+ 
+	
+ 
+	
+	
+
+ 
+	 
+<font face="verdana,arial" size="2"><br><FONT face=Arial size=4><STRONG>Top Spins...</STRONG></FONT></font>
+<table width="100%" border="0" cellspacing="0" cellpadding="4" bgcolor="#FFFFFF">
+
+<tr><td bgcolor="#FFFFFF">
+
+
+	
+	
+	<TABLE bgcolor="#FFFFFF" border="0" cellpadding="3" cellspacing="0" width="100%">
+	
+ 
+		
+	 
+	<tr bgcolor="#FFFFFF"><td>
+	   
+			
+			
+			<font face="Verdana,Arial" size="1">
+			
+			
+			
+			
+				<A HREF="#a87727"
+				
+					
+						class="a226814927144888-contents_article_title"
+					
+				>
+			
+						
+				
+			
+			SEC Exposes Big Blue's Pink Slips
+			
+				
+			
+			
+			
+			</a></font>
+			
+			
+			
+			
+			
+			<br>
+		 </td></tr> 
+		
+	
+ 
+	</table>
+	 
+	</td></tr></table>
+	
+
+				
+
+ 
+
+
+
+
+			
+					
+			
+			
+			<!-- 2,2:contents -->
+			
+				
+				 
+
+
+
+ 
+		
+	 
+	 
+	
+ 
+ 
+	
+ 
+	
+	
+
+ 
+	 
+<table width="100%" border="0" cellspacing="0" cellpadding="4" bgcolor="#FFFFFF">
+
+<tr><td bgcolor="#FFFFFF">
+
+
+	
+	
+	<TABLE bgcolor="#FFFFFF" border="0" cellpadding="3" cellspacing="0" width="100%">
+	
+ 
+		 
+	 
+	<tr bgcolor="#FFFFFF"><td>
+	   
+			
+			
+			<font face="Verdana,Arial" size="1">
+			
+			
+			
+			
+				<A HREF="#a87728"
+				
+					
+						class="a226814927144469-contents_article_title"
+					
+				>
+			
+						
+				
+			
+			Synergy and Betrayal at Vivendi
+			
+				
+			
+			
+			
+			</a></font>
+			
+			
+			
+			
+			
+			<br>
+		 </td></tr> <tr><td><img src="http://www.imakenews.com/eletra/empty.gif" height="1" width="1"></td></tr> 
+		
+	 
+	<tr bgcolor="#FFFFFF"><td>
+	   
+			
+			
+			<font face="Verdana,Arial" size="1">
+			
+			
+			
+			
+				<A HREF="#a87730"
+				
+					
+						class="a226814927144469-contents_article_title"
+					
+				>
+			
+						
+				
+			
+			Other Stories
+			
+				
+			
+			
+			
+			</a></font>
+			
+			
+			
+			
+			
+			<br>
+		 </td></tr> 
+		
+	
+ 
+	</table>
+	 
+	</td></tr></table>
+	
+
+				
+
+ 
+
+
+
+
+			
+					
+			
+			
+			<!-- 2,3:article_view -->
+			
+				
+				
+				  
+
+
+
+ 
+		
+	 
+	 
+	
+ 
+ 
+	
+ 
+	 
+<font face="verdana,arial" size="2"><br></font>
+<table width="100%" border="0" cellspacing="0" cellpadding="4" bgcolor="#FFFFFF">
+
+<tr><td bgcolor="#FFFFFF">
+
+
+	
+	
+	<TABLE bgcolor="#FFFFFF" border="0" cellpadding="3" cellspacing="0" width="100%">
+	
+ 
+		
+	 
+	<tr bgcolor="#FFFFFF"><td>
+	 <a name="a66461"></a>   
+			
+			
+			<font face="Arial" size="4"><b>
+			
+			
+			
+			
+			
+			
+			
+			
+			</b>
+			</font>
+			
+			
+			
+			
+			
+			<br>
+		 
+			
+		 
+			<font face="verdana,arial" size="2">
+			 
+				
+					
+					 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					 
+		
+		
+	 
+	
+ 
+	
+
+
+
+					
+					<P>Media Unspun serves business news and analysis, authoritatively and irreverently, every business day. An annual subscription costs $50, less than a dollar a week. If your four-week free trial is coming to an end soon, please visit <A HREF="http://www.mediaunspun.com/subscribe.html">http://www.mediaunspun.com/subscribe.html</A>  and sign up via credit card or check.<br>
+</P>
+					
+					<br>
+				
+			
+			</font>
+		 </td></tr> 
+		
+	
+ 
+	</table>
+	 
+	</td></tr></table>
+	
+
+				
+
+ 
+
+
+
+
+
+				
+									
+
+			
+			
+			<!-- 2,4:article_view -->
+			
+				
+				
+				  
+
+
+
+ 
+		
+	 
+	 
+	
+ 
+ 
+	
+ 
+	 
+<font face="verdana,arial" size="2"><FONT face=Verdana size=1><STRONG>Sponsor</STRONG></FONT></font>
+<table width="100%" border="0" cellspacing="0" cellpadding="1" bgcolor="#000000"> 
+<tr><td>
+<table width="100%" border="0" cellspacing="0" cellpadding="4" bgcolor="#FFFFCC">
+
+<tr><td bgcolor="#FFFFCC">
+
+
+	
+	
+	<TABLE bgcolor="#FFFFCC" border="0" cellpadding="3" cellspacing="0" width="100%">
+	
+ 
+		
+	 
+	<tr bgcolor="#FFFFCC"><td>
+	 <a name="a59384"></a> 
+			
+		 
+			<font face="verdana,arial" size="2">
+			 
+				
+					
+					 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					 
+		
+		
+	 
+	
+ 
+	
+
+
+
+					
+					<P>Ken Fisher offers his Quarterly Report for high net worth investors FREE of cost & without obligation. Access the same investment research he uses to guide his clients at:<br>
+<A HREF="http://pcg.fisherinvestments.com/newrespond/letter.asp?site=UNSP&KC=1229EFCAD0000">http://pcg.fisherinvestments.com/newrespond/letter.asp?site=UNSP&KC=1229EFCAD0000</A> </P>
+					
+					<br>
+				
+			
+			</font>
+		 </td></tr> 
+		
+	
+ 
+	</table>
+	 </td></tr></table>
+	</td></tr></table>
+	
+
+				
+
+ 
+
+
+
+
+
+				
+									
+
+			
+			
+			<!-- 2,5:article_view -->
+			
+				
+				
+				  
+
+
+
+ 
+		
+	 
+	 
+ 
+ 
+	
+ 
+	 
+<table width="100%" border="0" cellspacing="0" cellpadding="4" bgcolor="#FFFFFF">
+
+<tr><td bgcolor="#FFFFFF">
+
+
+	
+	
+	<TABLE bgcolor="#FFFFFF" border="0" cellpadding="3" cellspacing="0" width="100%">
+	
+ 
+		
+	 
+	<tr bgcolor="#FFFFFF"><td>
+	 <a name="a87727"></a>   
+			
+			
+			<font face="Arial" size="4"><b>
+			
+			
+			
+			
+			
+			SEC Exposes Big Blue's Pink Slips
+			
+			
+			</b>
+			</font>
+			
+			
+			
+			
+			
+			<br>
+		 
+			
+		 
+			<font face="verdana,arial" size="2">
+			 
+				
+					
+					 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					 
+		
+		
+	 
+	
+ 
+	
+
+
+
+					
+					<P>Does the Securities and Exchange Commission have a press pass yet? It seems to be bringing us all our news lately. On the day of the deadline for companies to certify their financial statements with the SEC, the business press squirmed and waited for the next Enron or WorldCom. (We might eat these words tomorrow, but we doubt it.) In an unrelated confession, IBM gave the commission its latest layoff numbers.</P><P>
+IBM talked about pink slips during its second-quarter earnings report, but with a vagueness worthy of your daily horoscope. ("Capricorn: Career changes may be on their way...") Only after "months of surreptitious layoff notices" did the company admit that it's cutting more than 15,600 jobs, said the AP. That's about 5% of its workforce, and a lot more than pundits expected. An IBM spokesperson told the Wall Street Journal the higher number was due to "rebalancing" and more employees than
+expected taking voluntary layoffs. </P><P>
+Sorry, we're still back on "rebalancing." Did IBM "rightsize" last quarter, too?</P><P>
+IBM's news was still trickling out Wednesday morning, but some details were available. About 1,400 workers got cut from IBM's microelectronics unit, and most of the rest were from IT services and consulting. (That ought to make IBM's new employees from PricewaterhouseCoopers feel all warm and fuzzy inside.) Look for news updates from cities that will see the cuts, such as Austin and Raleigh. </P><P>
+OK, none of this is good. Two years into the tech slump, we're still tired of seeing people get sacked. But was it really so bad that IBM only revealed it because of new accounting regulations? Nah, Big Blue was always known for "stealth layoffs," as CNN put it, but current corporate scrutiny forced it to 'fess up for once. Until now, IBM would acknowledge the latest layoffs if reporters called and asked, but wouldn't give specifics. Yeesh. - Jen Muehlbauer</P><P>
+IBM Cut 5% of Staff in Period, Double the Expected Number<br>
+<A HREF="http://online.wsj.com/article/0,,SB1029282408667791835,00.html">http://online.wsj.com/article/0,,SB1029282408667791835,00.html</A> <br>
+(Paid subscription required.) </P><P>
+IBM to Cut Over 15,000 Employees (AP)<br>
+<A HREF="http://tinyurl.com/10kz">http://tinyurl.com/10kz</A> </P><P>
+IBM confirms 15,600 job cuts (Reuters)<br>
+<A HREF="http://www.msnbc.com/news/793777.asp">http://www.msnbc.com/news/793777.asp</A>  </P><P>
+IBM cutting 15,000 jobs <br>
+<A HREF="http://news.com.com/2100-1001-949677.html">http://news.com.com/2100-1001-949677.html</A> </P><P>
+IBM job cuts exceed 15,600<br>
+<A HREF="http://money.cnn.com/2002/08/13/technology/ibm/index.htm">http://money.cnn.com/2002/08/13/technology/ibm/index.htm</A> </P><P>
+IBM puts job cuts at 15,600, with fewer than 50 in this state<br>
+<A HREF="http://seattlepi.nwsource.com/business/82508_ibm14.shtml">http://seattlepi.nwsource.com/business/82508_ibm14.shtml</A> </P>
+					
+					<br>
+				
+			
+			</font>
+		 </td></tr> 
+		
+	
+ 
+	</table>
+	 
+	</td></tr></table>
+	
+
+				
+
+ 
+
+
+
+
+
+				
+									
+
+			
+			
+			<!-- 2,6:article_view -->
+			
+				
+				
+				  
+
+
+
+ 
+		
+	 
+	 
+	
+ 
+ 
+	
+ 
+	 
+<font face="verdana,arial" size="2"><FONT face=Verdana size=1><STRONG>Sponsor</STRONG></FONT></font>
+<table width="100%" border="0" cellspacing="0" cellpadding="1" bgcolor="#000000"> 
+<tr><td>
+<table width="100%" border="0" cellspacing="0" cellpadding="4" bgcolor="#FFFFCC">
+
+<tr><td bgcolor="#FFFFCC">
+
+
+	
+	
+	<TABLE bgcolor="#FFFFCC" border="0" cellpadding="3" cellspacing="0" width="100%">
+	
+ 
+		
+	 
+	<tr bgcolor="#FFFFCC"><td>
+	 <a name="a75853"></a> 
+			
+		 
+			<font face="verdana,arial" size="2">
+			 
+				
+					
+					You've heard about identity management, but do you know about the opportunities and business models that will emerge as a result? <a href="http://release1.edventure.com/executivesummary.cfm?MCode=Unspun">Download</a> a free executive summary of Esther Dyson's coverage of identity management in Release 1.0. Learn more about the expanding market for these services and applications.
+					
+					<br>
+				
+			
+			</font>
+		 </td></tr> 
+		
+	
+ 
+	</table>
+	 </td></tr></table>
+	</td></tr></table>
+	
+
+				
+
+ 
+
+
+
+
+
+				
+									
+
+			
+			
+			<!-- 2,7:article_view -->
+			
+				
+				
+				  
+
+
+
+ 
+		
+	 
+	 
+	
+ 
+ 
+	
+ 
+	 
+<table width="100%" border="0" cellspacing="0" cellpadding="4" bgcolor="#FFFFFF">
+
+<tr><td bgcolor="#FFFFFF">
+
+
+	
+	
+	<TABLE bgcolor="#FFFFFF" border="0" cellpadding="3" cellspacing="0" width="100%">
+	
+ 
+		 
+	 
+	<tr bgcolor="#FFFFFF"><td>
+	 <a name="a87728"></a>   
+			
+			
+			<font face="Arial" size="4"><b>
+			
+			
+			
+			
+			
+			Synergy and Betrayal at Vivendi
+			
+			
+			</b>
+			</font>
+			
+			
+			
+			
+			
+			<br>
+		 
+			
+		 
+			<font face="verdana,arial" size="2">
+			 
+				
+					
+					 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					 
+		
+		
+	 
+	
+ 
+	
+
+
+
+					
+					<P>Synergy always was a fuzzy concept. Now Vivendi Universal's top man has slammed the lid on it. The French company announced today that it's ready to peddle $9.8 billion in assets to rustle up some cash. First up on the block? Synergy-less U.S. book publisher Houghton Mifflin. </P><P>
+It's unclear whether new chairman Jean-Rene Fourtou has genuine turnaround muscle, or whether he and Vivendi's board are simply following the winds of post-merger fashion. But when you owe $18.7 billion, you get real practical, real fast. The Guardian reported that Vivendi's share price sank 5% on Tuesday when investors got the willies about the company's impending announcement on its financial health. But the company had positive news to report: It's making money. Revenue in the first half was 
+up 13%, higher than analysts' estimates of a 7.7% boost. </P><P>
+Details are scant on the breadth of Fourtou's restructuring efforts, with more information expected at the next board meeting on September 25, according to reporters. Houghton Mifflin, acquired a year ago for $1.7 billion, and a vague explanation that included the "Curious George" character, were the only properties named for sale so far. The Guardian speculated that Vivendi will also sell its U.S. video games business and possibly its stake in the French mobile phone company SFR, a debatable
+sale because of the cash it generates, according to the newspaper. </P><P>
+Meanwhile, Fourtou's predecessor, Jean-Marie Messier, continues to advocate empire-building. The New York Post said its sources say Messier hopes his former employer will feel generous enough to let him continue to reside in his $17 million Manhattan abode. And Bloomberg reported earlier this week that an unrepentant Messier is penning a memoir as he vacations in the Mediterranean. The working title? "How I Was Betrayed."  - Deborah Asbrand </P><P>
+Vivendi to Sell Publisher Houghton Mifflin (Reuters)<br>
+<A HREF="http://www.washingtonpost.com/wp-dyn/articles/A15954-2002Aug14.html">http://www.washingtonpost.com/wp-dyn/articles/A15954-2002Aug14.html</A> </P><P>
+Vivendi investors expect the worst<br>
+<A HREF="http://www.guardian.co.uk/business/story/0,3604,774190,00.html">http://www.guardian.co.uk/business/story/0,3604,774190,00.html</A> </P><P>
+Vivendi to Sell $9.8 Billion In Assets, Including Houghton<br>
+<A HREF="http://online.wsj.com/article/0,,SB102931297119161715,00.html">http://online.wsj.com/article/0,,SB102931297119161715,00.html</A> <br>
+(Paid subscription required.) </P><P>
+Ousted Messier Aims To Score $17m Vivendi Pad<br>
+<A HREF="http://www.nypost.com/business/54701.htm">http://www.nypost.com/business/54701.htm</A> </P><P>
+Ex-Chief of Vivendi Plans Tell-All Book (Bloomberg)<br>
+<A HREF="http://www.nytimes.com/2002/08/12/business/media/12VIVE.html">http://www.nytimes.com/2002/08/12/business/media/12VIVE.html</A> </P>
+					
+					<br>
+				
+			
+			</font>
+		 </td></tr> 
+		
+	 
+	<tr bgcolor="#FFFFFF"><td>
+	 <a name="a87730"></a>   
+			
+			
+			<font face="Arial" size="4"><b>
+			
+			
+			
+			
+			
+			Other Stories
+			
+			
+			</b>
+			</font>
+			
+			
+			
+			
+			
+			<br>
+		 
+			
+		 
+			<font face="verdana,arial" size="2">
+			 
+				
+					
+					 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					 
+		
+		
+	 
+	
+ 
+	
+
+
+
+					
+					<P>A Top AOL Manager Has Left Company<br>
+<A HREF="http://www.nytimes.com/2002/08/14/technology/14AOL.html">http://www.nytimes.com/2002/08/14/technology/14AOL.html</A> </P><P>
+Fed Holds Steady on Interest Rates <br>
+<A HREF="http://www.washingtonpost.com/wp-dyn/articles/A14636-2002Aug13.html">http://www.washingtonpost.com/wp-dyn/articles/A14636-2002Aug13.html</A> </P><P>
+Amtrak halts all high-speed service after finding cracks<br>
+<A HREF="http://www.sunspot.net/bal-te.train14aug14.story">http://www.sunspot.net/bal-te.train14aug14.story</A> </P><P>
+AOL lets resigning exec keep stock options <br>
+<A HREF="http://www.usatoday.com/money/industries/technology/2002-08-13-aol-pittman_x.htm">http://www.usatoday.com/money/industries/technology/2002-08-13-aol-pittman_x.htm</A> </P><P>
+Lucent licensing deal with Winstar focus of probe (AP)<br>
+<A HREF="http://www.bayarea.com/mld/mercurynews/business/3861117.htm">http://www.bayarea.com/mld/mercurynews/business/3861117.htm</A> </P><P>
+Study Says Net Could Benefit Music Firms<br>
+<A HREF="http://www.latimes.com/business/la-fi-music14aug14.story">http://www.latimes.com/business/la-fi-music14aug14.story</A> </P><P>
+Eisner Crimping His Own Style<br>
+<A HREF="http://www.latimes.com/business/la-fi-disney14aug14.story">http://www.latimes.com/business/la-fi-disney14aug14.story</A> </P><P></P><P>
+Severance claims by Enron former execs anger ex-workers<br>
+<A HREF="http://www.chron.com/cs/CDA/story.hts/business/1533657">http://www.chron.com/cs/CDA/story.hts/business/1533657</A> </P><P>
+Princeton removes dean after Yale Web site flap (AP)<br>
+<A HREF="http://www.siliconvalley.com/mld/siliconvalley/3857890.htm">http://www.siliconvalley.com/mld/siliconvalley/3857890.htm</A> </P><P>
+Frisbee golf creator dies, may land on someone's roof (SF Chronicle)<br>
+<A HREF="http://seattlepi.nwsource.com/national/82560_frisbee14.shtml">http://seattlepi.nwsource.com/national/82560_frisbee14.shtml</A> </P><P>
+Will Kinsley's Slate Get Wiped?<br>
+<A HREF="http://www.ojr.org/ojr/kramer/1029281360.php">http://www.ojr.org/ojr/kramer/1029281360.php</A> </P><P>
+Hollywood, Russian Bicker Over Bass<br>
+<A HREF="http://www.cnn.com/2002/SHOWBIZ/News/08/13/bassspace.hollywood.ap/">http://www.cnn.com/2002/SHOWBIZ/News/08/13/bassspace.hollywood.ap/</A> </P>
+					
+					<br>
+				
+			
+			</font>
+		 </td></tr> 
+		
+	
+ 
+	</table>
+	 
+	</td></tr></table>
+	
+
+				
+
+ 
+
+
+
+
+
+				
+									
+
+			
+			
+			<!-- 2,8:article_view -->
+			
+				
+				
+				  
+
+
+
+ 
+		
+	 
+	 
+	
+ 
+ 
+	
+ 
+	 
+<font face="verdana,arial" size="2"><FONT face=Verdana size=1><STRONG>Sponsor</STRONG></FONT></font>
+<table width="100%" border="0" cellspacing="0" cellpadding="1" bgcolor="#000000"> 
+<tr><td>
+<table width="100%" border="0" cellspacing="0" cellpadding="4" bgcolor="#FFFFCC">
+
+<tr><td bgcolor="#FFFFCC">
+
+
+	
+	
+	<TABLE bgcolor="#FFFFCC" border="0" cellpadding="3" cellspacing="0" width="100%">
+	
+ 
+		
+	 
+	<tr bgcolor="#FFFFCC"><td>
+	 <a name="a59804"></a> 
+			
+		 
+			<font face="verdana,arial" size="2">
+			 
+				
+					
+					Do you want to reach the Net's savviest audience?<BR>
+Advertise in Media Unspun.<br>
+Contact Erik Vanderkolk for details at <a href="mailto:erikvanderkolk@yahoo.com">erikvanderkolk@yahoo.com</A> today.
+					
+					<br>
+				
+			
+			</font>
+		 </td></tr> 
+		
+	
+ 
+	</table>
+	 </td></tr></table>
+	</td></tr></table>
+	
+
+				
+
+ 
+
+
+
+
+
+				
+									
+
+			
+			
+			<!-- 2,9:article_view -->
+			
+				
+				
+				  
+
+
+
+ 
+		
+	 
+	 
+	
+ 
+ 
+	
+ 
+	 
+<table width="100%" border="0" cellspacing="0" cellpadding="4" bgcolor="#FFFFFF">
+
+<tr><td bgcolor="#FFFFFF">
+
+
+	
+	
+	<TABLE bgcolor="#FFFFFF" border="0" cellpadding="3" cellspacing="0" width="100%">
+	
+ 
+		
+	 
+	<tr bgcolor="#FFFFFF"><td>
+	 <a name="a59810"></a>   
+			
+			
+			<font face="Arial" size="4"><b>
+			
+			
+			
+			
+			
+			Staff
+			
+			
+			</b>
+			</font>
+			
+			
+			
+			
+			
+			<br>
+		 
+			
+		 
+			<font face="verdana,arial" size="2">
+			 
+				
+					
+					Written by Deborah Asbrand (<a href="mailto:dasbrand@world.std.com">dasbrand@world.std.com</a>), Keith Dawson (<a href="mailto:dawson@world.std.com">dawson@world.std.com</a>), Jen Muehlbauer (<a href="mailto:jen@englishmajor.com">jen@englishmajor.com</a>), and Lori Patel (<a href="mailto:loripatel@hotmail.com">loripatel@hotmail.com</a>).
+<P>
+Copyedited by Jim Duffy (<a href="mailto:jimduffy86@yahoo.com">jimduffy86@yahoo.com</a>).
+<P>
+Marketing: Cowpoke Productions (<a href="http://www.cowpokeproductions.com">cowpokeproductions.com</a>).
+<P>
+Advertising: Erik Vanderkolk (<a href="mailto:erikvanderkolk@yahoo.com">erikvanderkolk@yahoo.com)</a>.
+<P>
+Editor and publisher: Jimmy Guterman (<a href="mailto:guterman@vineyard.com">guterman@vineyard.com</a>).
+<P>
+Media Unspun is produced by <a href="http://guterman.com">The Vineyard Group Inc.</a>
+<BR>Copyright 2002 Media Unspun, Inc., and The Vineyard Group, Inc.
+<BR>Subscribe already, willya? <a href="http://www.mediaunspun.com">http://www.mediaunspun.com</a>
+<P>
+Redistribution by email is permitted as long as a link to <a href="http://newsletter.mediaunspun.com">http://newsletter.mediaunspun.com</a> is included.
+					
+					<br>
+				
+			
+			</font>
+		 </td></tr> 
+		
+	
+ 
+	</table>
+	 
+	</td></tr></table>
+	
+
+				
+
+ 
+
+
+
+
+
+				
+									
+
+			
+			
+			<!-- COLUMN: 2 -->
+		
+		</td><td width="5" valign="top" align="center" ><img src="http://www.imakenews.com/eletra/empty.gif" height="1" width="5"></td>
+			<td width="1" valign="top" align="center" bgcolor="#888888"><img src="http://www.imakenews.com/eletra/empty.gif" height="1" width="1"></td>
+			<td width="5" valign="top" align="center" ><img src="http://www.imakenews.com/eletra/empty.gif" height="1" width="5"></td><td width="161" valign="top" bgcolor="#FFFFFF"><!-- 3,1:subscription -->
+			
+			  
+			  
+				
+				
+				 
+
+
+
+ 
+	
+ 
+	
+ 
+ 
+<table width="100%" border="0" cellspacing="0" cellpadding="1" bgcolor="#000000"> 
+<tr><td>
+<table width="100%" border="0" cellspacing="0" cellpadding="4" bgcolor="#EEEEEE">
+
+<tr><td
+bgcolor="#000000">
+	<font face="arial" size="2" color="#FFFFFF"><b>
+		
+		SUBSCRIBE
+		
+	</b></font>
+</td></tr>
+<tr><td bgcolor="#EEEEEE">
+
+
+	 
+		
+			
+			
+			 						
+	 
+		
+	 
+		
+	 
+		
+	 
+		
+	 
+		<form method="POST" action="http://www.imakenews.com/eletra/mod_input_proc.cfm">
+		 
+<p><font face="verdana,arial" size="1">
+ Enter your email address in the box below to receive a free four-week trial of Media Unspun: 
+</font></p>
+ 
+		
+	 
+		  <input type="hidden" name="XXDESXXuser" value="mediaunspun">
+		  
+		  
+		  <input type="hidden" name="mod_name" value="subscription">
+		  <input type="hidden" name="XXDESXXfrom_address" value="guterman@vineyard.com">
+          <input type="hidden" name="XXDESXXfrom_name" value="Media Unspun">
+		  
+		  
+		  
+		  
+		  
+ 		  
+			 <input type="hidden" name="XXDESXXpage" value="http://newsletter.mediaunspun.com/index000018970.cfm">		  
+		  
+	
+	
+    
+
+	
+	
+		
+    
+	<p><input type="text" name="XXDESXXemail_address" size="15" maxlength="100">
+		<br><font face="verdana" size="1">
+	 
+		
+			<input type="radio" value="Add" name="XXDESXXsubscribe_op" checked>
+			
+			Add
+			
+		
+	 
+		<input type="radio" value="Remove" name="XXDESXXsubscribe_op">
+		
+		Remove<br>
+		
+	 
+		<input type="checkbox" name="XXDESXXemail_type" value="htm" checked>
+		 Send as HTML<br>
+		
+	   
+	  <input type="submit" value="Submit" name="add">&nbsp;
+	
+	</font></p>
+    
+
+
+		</form>	
+	
+
+ </td></tr></table>
+	</td></tr></table><font face="verdana,arial" size="2"><FONT face=Verdana size=1><STRONG>
+<P align=center><BR>Newsletter Services <BR>Provided by <BR></STRONG></FONT><A href="http://www.imakenews.com/affiliate.cfm?a_id=unspun"><FONT face=Verdana size=1><STRONG>iMakeNews.com</STRONG></FONT></A></P></font>
+	
+
+					
+			  		
+					
+			
+			
+			<!-- 3,2:survey_view -->
+			
+				
+				 
+
+
+
+ 
+ 
+	
+ 
+	
+ 
+	
+ 
+ 
+
+
+
+
+
+
+
+
+
+												
+			
+			
+			<!-- 3,3:menu -->
+			
+				
+				 
+	
+ 
+	
+ 
+
+
+
+
+
+
+
+
+			
+			
+			
+			<!-- COLUMN: 3 -->
+		
+		</td></tr></table> <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%" cols="1">
+	<tr><td width="644" valign="top" bgcolor="#FFFFFF"><!-- 4,1:footer -->
+			
+				
+				
+				 
+ 
+	
+ 
+ 
+
+	
+	
+
+
+ 
+ 
+	 
+<table width="100%" border="0" cellspacing="0" cellpadding="4" bgcolor="#FFFFFF">
+
+<tr><td bgcolor="#FFFFFF">
+
+
+	
+	<div align="left">
+	<table border="0" cellpadding="2" cellspacing="0" width="100%" bgcolor="#FFFFFF">
+	  <tr>
+	    <td>
+	 
+		<font face="verdana,arial" size="1">
+		 
+		</font>
+	 
+		</td>
+	 
+				<td align="right" valign="top">
+		 
+			<font face="verdana,arial" size="1">
+			
+				
+			
+			
+			<b>
+			<a href="http://www.imakenews.com/eletra/mod_input_proc.cfm?mod_name=tell_friend_form&XXDESXXuser=mediaunspun&XXDESXXthanks=Thank%20You%2E&XXDESXXsubject=Check%20this%20out%3A%20%5B%5Btitle%5D%5D&XXDESXXheading=&XXDESXXbackto=http://newsletter.mediaunspun.com/index000018970.cfm&XXDESXXissue_id=18970&XXDESXXtitle=M%20E%20D%20I%20A%20%20U%20N%20S%20P%20U%20N"
+			 class="a226814927151492-footer_tellafriend">
+			<font size=4>TELL A FRIEND</font></a></b>
+			
+			</font>
+		 
+			</td>
+		
+		
+		
+	  </tr>
+	</table></div>
+	 
+	</td></tr></table>
+	
+
+				
+	
+	
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+			
+			
+			<!-- COLUMN: 4 -->
+		
+		</td></tr></table> </td></tr></table>
+<!--IMN:BOTTOM-->
+<table border="0" cellpadding="2" cellspacing="0" width="650">
+  <tr><td><font face="verdana,arial" size="1">Powered by <strong><a href="http://www.imakenews.com" target="_top" class="link">iMakeNews.com</a>&#153;</strong></font><br>
+	<font face="verdana,arial" size="1">This email was sent to: zzz-unspun@spamassassin.taint.org <br><a href="http://www.imakenews.com/eletra/remove.cfm?x=mediaunspun%2Czzz-unspun@spamassassin.taint.org">Click here</a> to be instantly removed from this list.<br><a href="http://www.imakenews.com/eletra/change.cfm?x=mediaunspun%2Czzz-unspun@spamassassin.taint.org%2Ctxt">Click here</a> to receive future messages in plain text format.<br></font><font face="verdana,arial" size="1"><a
+href="http://www.imakenews.com/eletra/update.cfm?x=mediaunspun%2Czzz-unspun@spamassassin.taint.org">Click here</a> to change your subscriber information and preferences.<br></font></tr></table>
+<!--Ver. 7-->
+
+	
+		
+			
+		 
+		 
+		  
+		<p>&nbsp;
+		   
+	   
+       <img src="http://machina.imakenews.com/E178767,5114587XXmediaunspunXX18970XXXXindex000018970.cfmXXemailXX5114587XXXX0Y0XX1" alt="" height="0" width="0">		 
+	   
+	   
+		</p>
+		
+	
+
+   
+ 
+</div>
+
+
+</body>
+</html>
+
+
+
+------------=_1029331990-31627-4--
+
+

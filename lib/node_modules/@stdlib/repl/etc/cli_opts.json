@@ -1,0 +1,25 @@
+{
+	"string": [
+		"input-prompt",
+		"load",
+		"logfile",
+		"output-prompt",
+		"padding",
+		"save",
+		"timeout",
+		"welcome"
+	],
+	"boolean": [
+		"help",
+		"version",
+		"quiet"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		]
+	}
+}

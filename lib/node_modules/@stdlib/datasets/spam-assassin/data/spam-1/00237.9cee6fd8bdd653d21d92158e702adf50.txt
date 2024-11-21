@@ -1,0 +1,163 @@
+From forum@cpillc.com  Fri Sep  6 19:37:11 2002
+Return-Path: <forum@cpillc.com>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id 1F73016F03
+	for <zzzz@localhost>; Fri,  6 Sep 2002 19:36:59 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Fri, 06 Sep 2002 19:36:59 +0100 (IST)
+Received: from onion.perl.org (onion.valueclick.com [64.70.54.95]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with SMTP id g86IDYC19002 for
+    <zzzz-cpan@jmason.org>; Fri, 6 Sep 2002 19:13:35 +0100
+Received: (qmail 18803 invoked by uid 1008); 6 Sep 2002 18:13:53 -0000
+Delivered-To: cpanmail-zzzzason@cpan.org
+Received: (qmail 18793 invoked by uid 76); 6 Sep 2002 18:13:52 -0000
+Received: from adsl-64-162-102-114.dsl.lsan03.pacbell.net (HELO
+    perlmail.valueclick.com) (64.162.102.114) by onion.perl.org
+    (qpsmtpd/0.07b) with SMTP; Fri Sep  6 18:13:52 2002 -0000
+From: "Industry Forum Hosted by CPI, LLC" <forum@cpillc.com>
+Date: Fri, 06 Sep 2002 11:12:45
+To: zzzzason@cpan.org
+Subject: Industry Forum #136
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Message-Id: PM200011:12:45 AM
+Content-Type: multipart/related; boundary="----=_NextPart_QXVROEFEFX"
+
+This is an HTML email message.  If you see this, your mail client does not support HTML messages.
+
+------=_NextPart_QXVROEFEFX
+Content-Type: text/html;charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+
+<P>&nbsp;</P>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD style="FONT-SIZE: x-small; FONT-FAMILY: arial,helvetica,sans-serif" vAlign=top bgColor=white>
+<TABLE class=barlink cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD style="FONT-SIZE: x-small; FONT-FAMILY: arial,helvetica,sans-serif">
+<TABLE cellPadding=8 width="100%">
+<TBODY>
+<TR>
+<TD style="FONT-SIZE: x-small; FONT-FAMILY: arial,helvetica,sans-serif"><BR>&nbsp; 
+<DIV id=message><XMETA content="en-us" http-equiv="Content-Language" /><XBODY lang=EN-US vlink="blue" link="blue" bgcolor="yellow" />
+<DIV class=Section1 style="WIDTH: 900px; HEIGHT: 1704px">
+<P style="TEXT-ALIGN: center" align=center><B><SPAN style="FONT-SIZE: 13.5pt; COLOR: blue; FONT-FAMILY: Arial">The Industry Forum</SPAN></B></P>
+<TABLE style="WIDTH: 100%; BORDER-COLLAPSE: collapse" cellSpacing=0 cellPadding=0 border=1>
+<TBODY>
+<TR>
+<TD style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; FONT-SIZE: x-small; PADDING-BOTTOM: 0in; WIDTH: 13%; PADDING-TOP: 0in; FONT-FAMILY: arial,helvetica,sans-serif" width="13%">
+<P class=MsoNormal style="TEXT-ALIGN: center" align=center><A href="http://www.cpillc.com/prd-cpi-mms.htm"><IMG height=140 src="http://www.cpillc.com/images/CPI-M2-Front_001030_small.jpg" width=100 border=0></A></P></TD>
+<TD style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; FONT-SIZE: x-small; PADDING-BOTTOM: 0in; WIDTH: 12%; PADDING-TOP: 0in; FONT-FAMILY: arial,helvetica,sans-serif" width="12%">
+<P class=MsoNormal style="TEXT-ALIGN: center" align=center><FONT size=2><SPAN style="FONT-FAMILY: Arial">Minute Man II</SPAN></FONT></P>
+<P class=MsoNormal style="TEXT-ALIGN: center" align=center><FONT size=2><SPAN style="FONT-FAMILY: Arial">160 lbs. light - requires no electricity - under $6000 complete! <B>Now everybody can be a foamer!</B></SPAN></FONT></P></TD>
+<TD style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; FONT-SIZE: x-small; PADDING-BOTTOM: 0in; WIDTH: 12%; PADDING-TOP: 0in; FONT-FAMILY: arial,helvetica,sans-serif" width="12%">
+<P class=MsoNormal style="TEXT-ALIGN: center" align=center><SPAN style="FONT-FAMILY: Arial">&nbsp;&nbsp;&nbsp; </SPAN><A href="http://www.cpillc.com/prd-flx-frothpak.htm"><IMG height=51 src="http://www.cpillc.com/images/es-flx-frothpak-tn.jpg" width=96 border=0></A></P></TD>
+<TD style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; FONT-SIZE: x-small; PADDING-BOTTOM: 0in; WIDTH: 22%; PADDING-TOP: 0in; FONT-FAMILY: arial,helvetica,sans-serif">
+<P class=MsoNormal style="TEXT-ALIGN: center" align=center><FONT size=2><SPAN style="FONT-FAMILY: Arial"><B>Small, one time project?<BR></B>Froth-Pak is the answer! Smallest self-contained out-of-box foam application for repairs and small jobs! Also available: Insta-Stick, Tilebond, RoofPak and more!</SPAN></FONT></P></TD>
+<TD style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; FONT-SIZE: x-small; PADDING-BOTTOM: 0in; WIDTH: 19%; PADDING-TOP: 0in; FONT-FAMILY: arial,helvetica,sans-serif">
+<P class=MsoNormal align=center><A href="http://www.cpillc.com/form-feedback.htm"><IMG height=153 src="http://www.cpillc.com/images/Forum-IC-Cover.jpg" width=102 border=0></A></P></TD>
+<TD style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; FONT-SIZE: x-small; PADDING-BOTTOM: 0in; WIDTH: 22%; PADDING-TOP: 0in; FONT-FAMILY: arial,helvetica,sans-serif">
+<P class=MsoNormal style="TEXT-ALIGN: center" align=center><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Get Your Copy of The Industry Catalog! Most complete reference for our industry!</SPAN></P></TD></TR>
+<TR>
+<TD style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; FONT-SIZE: x-small; PADDING-BOTTOM: 0in; WIDTH: 100%; PADDING-TOP: 0in; FONT-FAMILY: arial,helvetica,sans-serif" width="100%" colSpan=6>
+<P style="TEXT-ALIGN: center" align=center><SPAN style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: Arial">Click on the picture above to learn more about the equipment!</SPAN></P></TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: navy 0.75pt inset; PADDING-RIGHT: 0in; BORDER-TOP: medium none; PADDING-LEFT: 0in; FONT-SIZE: x-small; PADDING-BOTTOM: 0in; BORDER-LEFT: navy 0.75pt inset; WIDTH: 100%; PADDING-TOP: 0in; BORDER-BOTTOM: navy 0.75pt inset; FONT-FAMILY: arial,helvetica,sans-serif" width="100%" colSpan=6>
+<P class=MsoNormal>&nbsp;</P></TD></TR></TBODY></TABLE>
+<P class=MsoNormal>&nbsp;</P>
+<TABLE style="BORDER-COLLAPSE: collapse" borderColor=#000080 cellSpacing=0 cellPadding=0 width="100%" border=1>
+<TBODY>
+<TR style="HEIGHT: 15.75pt">
+<TD style="BORDER-RIGHT: navy 0.75pt inset; PADDING-RIGHT: 2.25pt; BORDER-TOP: #000080 0.75pt inset; PADDING-LEFT: 2.25pt; FONT-SIZE: x-small; BACKGROUND: #ffff3c; PADDING-BOTTOM: 2.25pt; BORDER-LEFT: #000080 0.75pt inset; WIDTH: 100%; PADDING-TOP: 2.25pt; BORDER-BOTTOM: navy 0.75pt inset; FONT-FAMILY: arial,helvetica,sans-serif; HEIGHT: 15.75pt" width="100%" colSpan=2>
+<P style="TEXT-ALIGN: center" align=center><B><SPAN style="FONT-SIZE: 13.5pt; COLOR: blue; FONT-FAMILY: Arial">The Industry Forum Issue #136</SPAN></B></P></TD></TR>
+<TR style="HEIGHT: 29.25pt">
+<TD style="BORDER-RIGHT: navy 0.75pt inset; PADDING-RIGHT: 2.25pt; BACKGROUND-POSITION: 0% 50%; BORDER-TOP: #000080; PADDING-LEFT: 2.25pt; FONT-SIZE: x-small; BACKGROUND-ATTACHMENT: scroll; PADDING-BOTTOM: 2.25pt; BORDER-LEFT: #000080 0.75pt inset; PADDING-TOP: 2.25pt; BORDER-BOTTOM: navy 0.75pt inset; BACKGROUND-REPEAT: repeat; FONT-FAMILY: arial, helvetica, sans-serif; HEIGHT: 29.25pt; BACKGROUND-COLOR: #ffff3c" width="17%">
+<P style="TEXT-ALIGN: center" align=center><SPAN style="COLOR: blue; FONT-FAMILY: PlumpMT">10341</SPAN><B><SPAN style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: Arial"><BR>Forum Members</SPAN></B></P></TD>
+<TD style="BORDER-RIGHT: navy 0.75pt inset; PADDING-RIGHT: 2.25pt; BACKGROUND-POSITION: 0% 50%; BORDER-TOP: #000080; PADDING-LEFT: 2.25pt; FONT-SIZE: x-small; BACKGROUND-ATTACHMENT: scroll; PADDING-BOTTOM: 2.25pt; BORDER-LEFT: #000080; PADDING-TOP: 2.25pt; BORDER-BOTTOM: navy 0.75pt inset; BACKGROUND-REPEAT: repeat; FONT-FAMILY: arial, helvetica, sans-serif; HEIGHT: 29.25pt; BACKGROUND-COLOR: #ffff3c" vAlign=top width="82%" rowSpan=16>
+<P class=arial style="MARGIN: 0in 0in 0pt">#136-1: Dik M, PA</P>
+<P class=arial style="MARGIN: 0in 0in 0pt">It would be much more useful to the industry, if SPFA would help find a "CODE CONFORMING" fire barrier for attics, crawl spaces etc., than&nbsp; lecture on Fast and Loose applications of code.&nbsp; Something about 30 cents (a BD. FT.) installed, meeting All codes and spray applied. Many companies we talk to have a product that appears to be perfect BUT they haven't spent the money to test over foam. Maybe a small committee could do a evaluation of various products, report results to SPFA, who in turn will "acquire funding" from US.</P>
+<P class=arial style="MARGIN: 0in 0in 0pt">&nbsp;</P>
+<P class=arial style="MARGIN: 0in 0in 0pt">#136-2 William B, Australia</P>
+<DIV><FONT face=Arial size=2>we are in Australia but we are finding it hard to locate polyurea sprayers here so that we can start a chapter of the pda do u have any list of Australian contractors /suppliers ????or maybe they can put their hand up and lets us know at <A href="mailto:enviroline@powerup.com.au,">enviroline@powerup.com.au,</A>&nbsp;it is&nbsp;for the better&nbsp;of the game that an association is need to inform clients and specifiers of the uses and properties of polyureas and train its own members,also to keep cowboys out that give the industry a bad name</FONT> </DIV>
+<P class=arial style="MARGIN: 0in 0in 0pt">&nbsp;</P>
+<P class=arial style="MARGIN: 0in 0in 0pt">#136-3 Ed M.</P>
+<P class=arial style="MARGIN: 0in 0in 0pt">I am a writer for aviation magazines and one that I write for is a Test International, a new publication that just launched this month. I need any new processes you might have that would be used on aircraft, particularly commercial aviation.<BR>&nbsp;</P>
+<P class=arial style="MARGIN: 0in 0in 0pt">#136-4 John C, Louisiana</P>
+<P class=arial style="MARGIN: 0in 0in 0pt">I have a Foam Cat 2000 Graco machine and a Probler gun with a 01 tip.&nbsp; I use this setup to spray truck bed liners.&nbsp; My question is can I and how do I spray foam insulation using my equipment?&nbsp; And what are the different types of insulation?</P>
+<P class=arial style="MARGIN: 0in 0in 0pt">&nbsp;</P>
+<P class=arial style="MARGIN: 0in 0in 0pt">#136-5 Murph Mahaffey, Glas-Craft</P>
+<P class=arial style="MARGIN: 0in 0in 0pt">I like the new look of the Industry Forum!</P>
+<P class=arial style="MARGIN: 0in 0in 0pt">&nbsp;</P>
+<P class=arial style="MARGIN: 0in 0in 0pt">#136-6 Mark W, South Carolina</P>
+<P class=arial style="MARGIN: 0in 0in 0pt">I'm sick of all this garbage about covering foam with a "thermal Barrier". What the hell do you think foam is? If you are saying that anything that can be FORCED to burn should be covered with a FIREPROOF barrier, then you'd better get busy covering all those trusses and joists and plywood up there that are definitely NOT carrying a class one fire rating. This double standard for foam is coming directly from those who stand to lose business from it. Icynene is DIFFERENT.&nbsp; IT DOESN'T BURN ALONE. IT DOESN'T MELT. IT DOESN'T EMIT PHOSGENE. Does it smoke in a fire situation? Sure, so what?</P>
+<P class=arial style="MARGIN: 0in 0in 0pt"><BR>Blaming foam in the attic for a house fire because it forces the foam to eventually burn is about as stupid as blaming foam seat cushions for burning when a gas tank ruptures and burns up a car. Get real, inspectors. You want us to cover up the only thing in the attic assembly that DOESN'T BURN!<BR>&nbsp;</P>
+<P class=arial style="MARGIN: 0in 0in 0pt">As for the vaunted R rating system, IT IS TOTALLY BOGUS. The test is designed to make porous insulations APPEAR to perform better than they actually do.&nbsp; Measuring only conduction and ignoring convection and radiant to convective transfer, the test should have been thrown out for the industry lackey it is 20 years ago, along with that obsolete fiberglass<BR>garbage they're still selling everybody.&nbsp; There's a reason they don't make refrigerators, freezers coolers &amp; coffee cups out of fiberglass or cellulose.&nbsp;&nbsp; Think about it.</P>
+<P class=arial style="MARGIN: 0in 0in 0pt">&nbsp;</P>
+<P class=arial style="MARGIN: 0in 0in 0pt">#136-7 Dirk Benthien, Forum Moderator</P>
+<P class=arial style="MARGIN: 0in 0in 0pt">Thank you, Mark and Dik, for your statements above. I also feel that far too often individuals and companies are too complacent and quietly live with rules and regulations without trying to change them&nbsp; -&nbsp; even if everybody knows they do not make sense. We are all experts and representatives of this industry and should speak up and promote change!</P>
+<P class=arial style="MARGIN: 0in 0in 0pt">&nbsp;</P>
+<P class=arial style="MARGIN: 0in 0in 0pt">#136-8 Martin S, Canada</P>
+<DIV><STRONG><FONT face=Arial size=4>Does anyone make a dispensing machine for crumb rubber / urethane blends ?</FONT></STRONG> </DIV>
+<P class=arial style="MARGIN: 0in 0in 0pt">&nbsp;</P>
+<P class=arial style="MARGIN: 0in 0in 0pt">#136-9 Carole L, California re #135-8 Otto V, Germany</P>
+<P class=arial style="MARGIN: 0in 0in 0pt">What are the answers? (Phase-out of 141b)</P>
+<P class=arial style="MARGIN: 0in 0in 0pt">&nbsp;</P>
+<P class=arial style="MARGIN: 0in 0in 0pt">#136-10 Brian D, Canada</P>
+<DIV><FONT style="LINE-HEIGHT: 1.35em" face=Arial size=2><FONT style="LINE-HEIGHT: 1.35em" face="Times New Roman" size=3>&nbsp;&nbsp;&nbsp; There has been a lot of talk about ceramic coatings.&nbsp; We are a distributor of such a coating.&nbsp; We have never professed an R-20.&nbsp; Reason = is there isn't an ASTM test available to measure coatings for R-value. We compare standardized insulation to Ceramic coatings via BTU loss calculations.&nbsp; Depending on the criteria we can equal 2 to 3 inches of standard insulation with an aluminum jacket.&nbsp; We have the data and the projects to prove it.</FONT><BR>&nbsp;</FONT> </DIV>
+<P class=arial style="MARGIN: 0in 0in 0pt">#136-11 CPI</P>
+<P class=arial style="MARGIN: 0in 0in 0pt">We have inquiries from a number of people for used equipment - especially Gusmer H20/35, H2000, H2, GX-7 and Glas-Craft Probler. Please contact 805-552-9128.<BR><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">++++++++++++++++++++++++++++</P>
+<P><SPAN style="FONT-FAMILY: Arial">End of messages.</SPAN></SPAN></P></TD></TR>
+<TR style="HEIGHT: 29.25pt">
+<TD style="BORDER-RIGHT: navy 0.75pt inset; PADDING-RIGHT: 2.25pt; BACKGROUND-POSITION: 0% 50%; BORDER-TOP: #000080; PADDING-LEFT: 2.25pt; FONT-SIZE: x-small; BACKGROUND-ATTACHMENT: scroll; PADDING-BOTTOM: 2.25pt; BORDER-LEFT: #000080 0.75pt inset; PADDING-TOP: 2.25pt; BORDER-BOTTOM: navy 0.75pt inset; BACKGROUND-REPEAT: repeat; FONT-FAMILY: arial, helvetica, sans-serif; HEIGHT: 29.25pt; BACKGROUND-COLOR: #ffff3c" width="17%">
+<P style="TEXT-ALIGN: center" align=center><SPAN style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: Arial">This Forum welcomes anyone interested in the processing of single- or plural-component materials such as polyurethane, polyurea, coatings, epoxies, and other spray-applied materials.</SPAN></P></TD></TR>
+<TR style="HEIGHT: 29.25pt">
+<TD style="BORDER-RIGHT: navy 0.75pt inset; PADDING-RIGHT: 2.25pt; BACKGROUND-POSITION: 0% 50%; BORDER-TOP: #000080; PADDING-LEFT: 2.25pt; FONT-SIZE: x-small; BACKGROUND-ATTACHMENT: scroll; PADDING-BOTTOM: 2.25pt; BORDER-LEFT: #000080 0.75pt inset; PADDING-TOP: 2.25pt; BORDER-BOTTOM: navy 0.75pt inset; BACKGROUND-REPEAT: repeat; FONT-FAMILY: arial, helvetica, sans-serif; HEIGHT: 29.25pt; BACKGROUND-COLOR: #ffff3c" width="17%">
+<P style="TEXT-ALIGN: center" align=center><B><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">The Industry Forum. A free <SPAN style="COLOR: red">e</SPAN><SPAN style="COLOR: blue">Service</SPAN> from<BR></SPAN><SPAN style="FONT-FAMILY: Arial"><FONT size=1><BR></FONT></SPAN></B><A href="http://www.cpillc.com/"><IMG height=48 src="http://www.cpillc.com/images/Forum-CpiLogo.jpg" width=121 border=0></A> &nbsp;</P></TD></TR>
+<TR style="HEIGHT: 30pt">
+<TD style="BORDER-RIGHT: navy 0.75pt inset; PADDING-RIGHT: 2.25pt; BACKGROUND-POSITION: 0% 50%; BORDER-TOP: #000080; PADDING-LEFT: 2.25pt; FONT-SIZE: x-small; BACKGROUND-ATTACHMENT: scroll; PADDING-BOTTOM: 2.25pt; BORDER-LEFT: #000080 0.75pt inset; PADDING-TOP: 2.25pt; BORDER-BOTTOM: navy 0.75pt inset; BACKGROUND-REPEAT: repeat; FONT-FAMILY: arial, helvetica, sans-serif; HEIGHT: 30pt; BACKGROUND-COLOR: #ffff3c" width="17%">
+<P style="TEXT-ALIGN: center" align=center><SPAN style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: Arial">To ask or answer a question, or to contribute anything, simply send an e-mail to </SPAN><B><A style="COLOR: blue; TEXT-DECORATION: underline" href="mailto:forum@cpillc.com" target=_blank><SP style="TEXT-DECORATION: none" an><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">forum@cpillc.com</SPAN></SP> </A></B></P></TD></TR>
+<TR style="HEIGHT: 30pt">
+<TD style="BORDER-RIGHT: navy 0.75pt inset; PADDING-RIGHT: 2.25pt; BACKGROUND-POSITION: 0% 50%; BORDER-TOP: #000080; PADDING-LEFT: 2.25pt; FONT-SIZE: x-small; BACKGROUND-ATTACHMENT: scroll; PADDING-BOTTOM: 2.25pt; BORDER-LEFT: #000080 0.75pt inset; PADDING-TOP: 2.25pt; BORDER-BOTTOM: navy 0.75pt inset; BACKGROUND-REPEAT: repeat; FONT-FAMILY: arial, helvetica, sans-serif; HEIGHT: 30pt; BACKGROUND-COLOR: #ffff3c" width="17%">
+<P style="TEXT-ALIGN: center" align=center><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><A href="http://www.cpillc.com/cla-used.htm">Used <B>Gusmer H20/35</B> and <B>Probler Gun </B>for sale!</A><BR>805-552-9128</SPAN></P></TD></TR>
+<TR style="HEIGHT: 29.25pt">
+<TD style="BORDER-RIGHT: navy 0.75pt inset; PADDING-RIGHT: 2.25pt; BACKGROUND-POSITION: 0% 50%; BORDER-TOP: #000080; PADDING-LEFT: 2.25pt; FONT-SIZE: x-small; BACKGROUND-ATTACHMENT: scroll; PADDING-BOTTOM: 2.25pt; BORDER-LEFT: #000080 0.75pt inset; PADDING-TOP: 2.25pt; BORDER-BOTTOM: navy 0.75pt inset; BACKGROUND-REPEAT: repeat; FONT-FAMILY: arial, helvetica, sans-serif; HEIGHT: 29.25pt; BACKGROUND-COLOR: #ffff3c" width="17%">
+<P class=MsoNormal style="TEXT-ALIGN: center" align=center><SPAN style="FONT-SIZE: 7.5pt; FONT-FAMILY: Arial">Your privacy is protected! Please read the policies and rules at <A style="COLOR: blue; TEXT-DECORATION: underline" href="http://www.cpillc.com/IndustryForum.htm" target=_blank>cpillc.com</A>.</SPAN></P></TD></TR>
+<TR style="HEIGHT: 29.25pt">
+<TD style="BORDER-RIGHT: navy 0.75pt inset; PADDING-RIGHT: 2.25pt; BACKGROUND-POSITION: 0% 50%; BORDER-TOP: #000080; PADDING-LEFT: 2.25pt; FONT-SIZE: x-small; BACKGROUND-ATTACHMENT: scroll; PADDING-BOTTOM: 2.25pt; BORDER-LEFT: #000080 0.75pt inset; PADDING-TOP: 2.25pt; BORDER-BOTTOM: navy 0.75pt inset; BACKGROUND-REPEAT: repeat; FONT-FAMILY: arial, helvetica, sans-serif; HEIGHT: 29.25pt; BACKGROUND-COLOR: #ffff3c" width="17%">
+<P class=MsoNormal style="TEXT-ALIGN: center" align=center><SPAN style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: Arial">Show your name here! Become a <B>SPONSOR</B>! Call 805-552-9128 or send an email to </SPAN><SPAN style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: Stop"><A style="COLOR: blue; TEXT-DECORATION: underline" href="mailto:info@cpillc.com" target=_blank>CPI.</A></SPAN></P></TD></TR>
+<TR style="HEIGHT: 29.25pt">
+<TD style="BORDER-RIGHT: navy 0.75pt inset; PADDING-RIGHT: 2.25pt; BACKGROUND-POSITION: 0% 50%; BORDER-TOP: #000080; PADDING-LEFT: 2.25pt; FONT-SIZE: x-small; BACKGROUND-ATTACHMENT: scroll; PADDING-BOTTOM: 2.25pt; BORDER-LEFT: #000080 0.75pt inset; PADDING-TOP: 2.25pt; BORDER-BOTTOM: navy 0.75pt inset; BACKGROUND-REPEAT: repeat; FONT-FAMILY: arial, helvetica, sans-serif; HEIGHT: 29.25pt; BACKGROUND-COLOR: #ffff3c" width="17%">
+<P class=MsoNormal style="TEXT-ALIGN: center" align=center><SPAN style="FONT-SIZE: 7.5pt; FONT-FAMILY: Arial">READ THIS AND PREVIOUS FORUM ISSUES ALL ON ONE PAGE. IT WILL ONLY WORK IF YOU ARE CONNECTED TO THE INTERNET! CLICK HERE TO GO TO <A style="COLOR: blue; TEXT-DECORATION: underline" href="http://www.cpillc.com/forumDiscussion.htm" target=_blank>cpillc.com/forumDiscussion. htm</A>.</SPAN></P></TD></TR>
+<TR style="HEIGHT: 29.25pt">
+<TD style="BORDER-RIGHT: navy 0.75pt inset; PADDING-RIGHT: 2.25pt; BACKGROUND-POSITION: 0% 50%; BORDER-TOP: #000080; PADDING-LEFT: 2.25pt; FONT-SIZE: x-small; BACKGROUND-ATTACHMENT: scroll; PADDING-BOTTOM: 2.25pt; BORDER-LEFT: #000080 0.75pt inset; PADDING-TOP: 2.25pt; BORDER-BOTTOM: navy 0.75pt inset; BACKGROUND-REPEAT: repeat; FONT-FAMILY: arial, helvetica, sans-serif; HEIGHT: 29.25pt; BACKGROUND-COLOR: #ffff3c" width="17%">
+<P class=MsoNormal style="TEXT-ALIGN: center" align=center><SPAN style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: Arial">Visit </SPAN><SPAN style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: Stop">CPI, LLC </SPAN><SPAN style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: Arial">on the web. Click <A style="COLOR: blue; TEXT-DECORATION: underline" href="http://www.cpillc.com/" target=_blank>http://www.cpillc.com/</A></SPAN></P></TD></TR>
+<TR style="HEIGHT: 29.25pt">
+<TD style="BORDER-RIGHT: navy 0.75pt inset; PADDING-RIGHT: 2.25pt; BACKGROUND-POSITION: 0% 50%; BORDER-TOP: #000080; PADDING-LEFT: 2.25pt; FONT-SIZE: x-small; BACKGROUND-ATTACHMENT: scroll; PADDING-BOTTOM: 2.25pt; BORDER-LEFT: #000080 0.75pt inset; PADDING-TOP: 2.25pt; BORDER-BOTTOM: navy 0.75pt inset; BACKGROUND-REPEAT: repeat; FONT-FAMILY: arial, helvetica, sans-serif; HEIGHT: 29.25pt; BACKGROUND-COLOR: #ffff3c" width="17%">
+<P class=MsoNormal style="TEXT-ALIGN: center" align=center><SPAN style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: Stop">CPI</SPAN><SPAN style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: Arial"> is authorized distributor for all leading manufacturers in this industry including <A style="COLOR: blue; TEXT-DECORATION: underline" href="http://www.cpillc.com/prd-gu.htm" target=_blank>Gusmer</A>, <A style="COLOR: blue; TEXT-DECORATION: underline" href="http://www.cpillc.com/prd-gc.htm" target=_blank>Glas-Craft</A>, <A style="COLOR: blue; TEXT-DECORATION: underline" href="http://www.cpillc.com/prd-go.htm" target=_blank>Graco</A>, Resin Technology, <A style="COLOR: blue; TEXT-DECORATION: underline" href="http://www.cpillc.com/prd-cpi-acc-dynasolve.htm" target=_blank>Dynasolve</A>.</SPAN></P></TD></TR>
+<TR style="HEIGHT: 29.25pt">
+<TD style="BORDER-RIGHT: navy 0.75pt inset; PADDING-RIGHT: 2.25pt; BACKGROUND-POSITION: 0% 50%; BORDER-TOP: #000080; PADDING-LEFT: 2.25pt; FONT-SIZE: x-small; BACKGROUND-ATTACHMENT: scroll; PADDING-BOTTOM: 2.25pt; BORDER-LEFT: #000080 0.75pt inset; PADDING-TOP: 2.25pt; BORDER-BOTTOM: navy 0.75pt inset; BACKGROUND-REPEAT: repeat; FONT-FAMILY: arial, helvetica, sans-serif; HEIGHT: 29.25pt; BACKGROUND-COLOR: #ffff3c" width="17%">
+<P class=MsoNormal style="TEXT-ALIGN: center" align=center><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Stop">CPI</SPAN><SPAN style="FONT-SIZE: 10pt">'</SPAN><SPAN style="FONT-SIZE: 7.5pt; FONT-FAMILY: Arial">s customers enjoy impartial advice, full service, life-long free phone support, training and set-up with all new system at a very fair price!</SPAN></P></TD></TR>
+<TR style="HEIGHT: 29.25pt">
+<TD style="BORDER-RIGHT: navy 0.75pt inset; PADDING-RIGHT: 2.25pt; BACKGROUND-POSITION: 0% 50%; BORDER-TOP: #000080; PADDING-LEFT: 2.25pt; FONT-SIZE: x-small; BACKGROUND-ATTACHMENT: scroll; PADDING-BOTTOM: 2.25pt; BORDER-LEFT: #000080 0.75pt inset; PADDING-TOP: 2.25pt; BORDER-BOTTOM: navy 0.75pt inset; BACKGROUND-REPEAT: repeat; FONT-FAMILY: arial, helvetica, sans-serif; HEIGHT: 29.25pt; BACKGROUND-COLOR: #ffff3c" width="17%">
+<P class=MsoNormal style="TEXT-ALIGN: center" align=center><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Shop our online warehouse 24/7<BR>Most efficient procurement anywhere! </SPAN><SPAN style="FONT-SIZE: 7.5pt; FONT-FAMILY: Arial"><A style="COLOR: blue; TEXT-DECORATION: underline" href="http://www.cpillc.com/warehouse.htm" target=_blank>www.cpillc.com/warehouse.htm</A></SPAN></P></TD></TR>
+<TR style="HEIGHT: 30pt">
+<TD style="BORDER-RIGHT: navy 0.75pt inset; PADDING-RIGHT: 2.25pt; BACKGROUND-POSITION: 0% 50%; BORDER-TOP: #000080; PADDING-LEFT: 2.25pt; FONT-SIZE: x-small; BACKGROUND-ATTACHMENT: scroll; PADDING-BOTTOM: 2.25pt; BORDER-LEFT: #000080 0.75pt inset; PADDING-TOP: 2.25pt; BORDER-BOTTOM: navy 0.75pt inset; BACKGROUND-REPEAT: repeat; FONT-FAMILY: arial, helvetica, sans-serif; HEIGHT: 30pt; BACKGROUND-COLOR: #ffff3c" width="17%">
+<P class=MsoNormal style="TEXT-ALIGN: center" align=center><A href="http://www.cpillc.com/cla-job-listings.htm">Job Market<BR>Spray Jobs</A></P></TD></TR>
+<TR style="HEIGHT: 30pt">
+<TD style="BORDER-RIGHT: navy 0.75pt inset; PADDING-RIGHT: 2.25pt; BACKGROUND-POSITION: 0% 50%; BORDER-TOP: #000080; PADDING-LEFT: 2.25pt; FONT-SIZE: x-small; BACKGROUND-ATTACHMENT: scroll; PADDING-BOTTOM: 2.25pt; BORDER-LEFT: #000080 0.75pt inset; PADDING-TOP: 2.25pt; BORDER-BOTTOM: navy 0.75pt inset; BACKGROUND-REPEAT: repeat; FONT-FAMILY: arial, helvetica, sans-serif; HEIGHT: 30pt; BACKGROUND-COLOR: #ffff3c" width="17%"><SPAN style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: Arial">Did we miss someone? Feel free to submit any number of e-mail addresses of coworkers and friends to be included here. Again, this service is free for all! Help grow our forum!</SPAN></TD></TR>
+<TR style="HEIGHT: 30pt">
+<TD style="BORDER-RIGHT: navy 0.75pt inset; PADDING-RIGHT: 2.25pt; BACKGROUND-POSITION: 0% 50%; BORDER-TOP: #000080; PADDING-LEFT: 2.25pt; FONT-SIZE: x-small; BACKGROUND-ATTACHMENT: scroll; PADDING-BOTTOM: 2.25pt; BORDER-LEFT: #000080 0.75pt inset; PADDING-TOP: 2.25pt; BORDER-BOTTOM: navy 0.75pt inset; BACKGROUND-REPEAT: repeat; FONT-FAMILY: arial, helvetica, sans-serif; HEIGHT: 30pt; BACKGROUND-COLOR: #ffff3c" width="17%">
+<P class=MsoNormal style="TEXT-ALIGN: center" align=center><B><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">We're</SPAN> <SPAN style="FONT-FAMILY: Stop">CPI</SPAN>.<BR><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">We make it work!</SPAN></B></P></TD></TR>
+<TR style="HEIGHT: 30pt">
+<TD style="BORDER-RIGHT: navy 0.75pt inset; PADDING-RIGHT: 2.25pt; BACKGROUND-POSITION: 0% 50%; BORDER-TOP: #000080; PADDING-LEFT: 2.25pt; FONT-SIZE: x-small; BACKGROUND-ATTACHMENT: scroll; PADDING-BOTTOM: 2.25pt; BORDER-LEFT: #000080 0.75pt inset; PADDING-TOP: 2.25pt; BORDER-BOTTOM: navy 0.75pt inset; BACKGROUND-REPEAT: repeat; FONT-FAMILY: arial, helvetica, sans-serif; HEIGHT: 30pt; BACKGROUND-COLOR: #ffff3c" width="17%">
+<P class=MsoNormal style="TEXT-ALIGN: center" align=center>Call us toll-free<BR><B>877-CPI-2100<BR>805-552-9128</B></P></TD></TR></TBODY></TABLE>
+<P style="TEXT-ALIGN: center" align=center><SPAN style="FONT-FAMILY: Arial">Copyright (c) 2000, 2001, 2002 </SPAN><SPAN style="FONT-SIZE: 13.5pt; FONT-FAMILY: Stop">CPI, LLC</SPAN><SPAN style="FONT-FAMILY: Arial">. All rights reserved.<BR><B>Disclaimers and limitations of liabilities posted at <A style="COLOR: blue; TEXT-DECORATION: underline" href="http://www.cpillc.com/IndustryForum.htm" target=_blank>cpillc.com</A></B></SPAN><B><BR></B><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">This free <SPAN style="COLOR: red">e</SPAN>Service is made possible by </SPAN><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Stop">CPI</SPAN><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">.<BR>&nbsp;Please visit their web site at <A style="COLOR: blue; TEXT-DECORATION: underline" href="http://www.cpillc.com/" target=_blank><SPAN style="TEXT-DECORATION: none">www.cpillc.com</SPAN></A> or call toll-free 877-274-2600 or 805-552-9128.<BR></SPAN><SPAN style="FONT-SIZE: 7.5pt; FONT-FAMILY: Arial">If you wish to unsubscribe, please hit the reply button - Subject = Remove. Please allow 3 days to take effect.</SPAN></P></DIV></DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<P>&nbsp;</P>
+------=_NextPart_QXVROEFEFX--
+
+

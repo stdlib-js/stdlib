@@ -1,0 +1,215 @@
+Return-Path: <D-8-270241-5399979-2-24365-DE1-08ADF4DD@xmr3.com>
+Received: from sunu422.rz.ruhr-uni-bochum.de (sunu422.rz.ruhr-uni-bochum.de [134.147.64.14])
+	by yoda.bph.ruhr-uni-bochum.de (8.8.8/8.8.8) with SMTP id OAA20794
+	for <Xxx@bph.ruhr-uni-bochum.de>; Tue, 25 Jun 2002 14:15:28 +0200
+Received: (qmail 15208 invoked by alias); 25 Jun 2002 12:15:21 -0000
+Received: (qmail 5969 invoked by uid 82); 25 Jun 2002 11:39:03 -0000
+Received: from D-8-270241-5399979-2-24365-DE1-08ADF4DD@xmr3.com by mailhost with qmail-scanner-1.00 (uvscan: v4.1.40/v4208. . Clean. Processed in 6.249967 secs); 25 Jun 2002 11:39:03 -0000
+Received: from sunu450.rz.ruhr-uni-bochum.de (134.147.32.69)
+  by mi-1.rz.ruhr-uni-bochum.de with SMTP; 25 Jun 2002 11:38:53 -0000
+Received: (qmail 12790 invoked by alias); 25 Jun 2002 10:01:30 -0000
+Received: (qmail 12779 invoked from network); 25 Jun 2002 10:01:29 -0000
+Received: from mx06.web.de (217.72.192.156)
+  by sunu450.rz.ruhr-uni-bochum.de with SMTP; 25 Jun 2002 10:01:29 -0000
+Received: from [213.165.64.100] (helo=mx0.gmx.net)
+	by mx06.web.de with smtp (WEB.DE(Exim) 4.70 #5)
+	id 17Mn8a-0005B8-00
+	for Xxxxxxxxx.Yyyyyyy@web.de; Tue, 25 Jun 2002 12:01:28 +0200
+Received: (qmail 21169 invoked by alias); 25 Jun 2002 10:01:27 -0000
+Delivered-To: GMX delivery to wecon@gmx.de
+Received: (qmail 21111 invoked by uid 0); 25 Jun 2002 10:01:26 -0000
+Received: from memailout31.messagereach.com (205.183.255.159)
+  by mx0.gmx.net (mx017-rz3) with SMTP; 25 Jun 2002 10:01:26 -0000
+Date: Tue, 25 Jun 2002 06:01:25 -0400
+To: Zzzzz@gmx.de
+From: Fax2Mail <R-1-270241-5399979-2-24365-DE1-3A9F193C@xmr3.com>
+Subject: F2M - Ihre kostenlose Faxnummer - Newsletter
+Mime-Version: 1.0 
+Message-Id: <I-0-270241-5399979-2-24365-DE1-FE8DD260@xmr3.com>
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+X-Resent-By: Forwarder <forwarder@gmx.de>
+X-Resent-For: Zzzzz@gmx.de
+X-Resent-To: Xxxxxxxxx.Yyyyyyy@web.de
+X-Mozilla-Status2: 00000000
+
+<!DOCTYPE -//w3c//dtd 4.01 html http://www.w3c.org/TR/1999/REC-html401-1=
+9991224/loose.dtd public transitional//en> <HTML><HEAD> <META http-equiv=
+=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-1">
+ <meta name=3DGENERATOR content=3D"messageREACH intelliSEND Wizard 3.0.2=
+.7">
+ <meta name=3DProgId content=3D"intelliSEND_Wizard.Editor.Document">
+</HEAD> <BODY style=3D"FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: Aria=
+l" bgcolor=3D"#ffffff">Bitte beachten Sie die Angebote unserer Werbepart=
+ner.<br>=20
+Diese erm=F6glichen den kostenfreien Betrieb des Fax2Mail-Service.<br>=20
+Vielen Dank.<br>=20
+
+ <TABLE width=3D"700" cellspacing=3D"2" cellpadding=3D"2" border=3D"0" b=
+gcolor=3D"#ffffff" background bordercolor=3D"#000000" bordercolordark=
+=3D"#000000" bordercolorlight=3D"#000000" mreach_id> <CAPTION></CAPTION>=
+ <TBODY>=20
+<TR> <TD> <TABLE width=3D"100%" cellspacing=3D"2" cellpadding=3D"2" bord=
+er=3D"0" bgcolor=3D"#ffffff" background bordercolor=3D"#000000" borderco=
+lordark=3D"#000000" bordercolorlight=3D"#000000" mreach_id> <CAPTION></C=
+APTION> <TBODY>=20
+<TR> <TD><!--messageREACH-object-start--><IMG src=3D"https://pull.xmr3.c=
+om/p/24365-2B45/40111777/katalog_titel_dhtml7578_10.jpg" hspace=3D"0" bo=
+rder=3D"0" alt align=3D"baseline" mreach_id=3D"picture1"><!--messageREAC=
+H-object-end--></TD></TR>=20
+<TR> <TD>=20
+<P><FONT color=3D"#ff0000"><STRONG>Der neue Cyberport-Katalog ist da!</S=
+TRONG></FONT></P>=20
+<P>&nbsp;</P>=20
+<P><FONT size=3D"2">Reinschauen ist jetzt auch offline m=F6glich, mit de=
+m druckfrischen Cyberport-Katalog.<BR>
+St=F6bern Sie in unserem Angebot, wann und wo Sie wollen. Entdecken Sie =
+auf 322 Seiten<BR>
+sechs interessante Einkaufswelten, randvoll mit topaktuellen Highlights =
+rund um den <BR>
+Computer, Telekommunikation und Multimedia - nat=FCrlich zu absoluten Ha=
+mmerpreisen.</FONT></P>=20
+<P><FONT size=3D"2">Bitte registrieren Sie sich hier <!--messageREACH-ob=
+ject-start--><A href=3D"http://www.cyberport.de/?DEEP_DOCID=3D7578" mrea=
+ch_id=3D"hyperlink2"><IMG src=3D"https://pull.xmr3.com/p/24365-2B45/4011=
+1779/pfeilchen_dhtml7578_10.gif" border=3D"0" mreach_id=3D"hyperlink2"><=
+/A><!--messageREACH-object-end--></FONT></P>=20
+<P><FONT size=3D"2">Und hier unsere Shops im =DCberblick:</FONT></P></TD=
+></TR></TBODY></TABLE> <TABLE width=3D"100%" cellspacing=3D"8" cellpaddi=
+ng=3D"6" border=3D"0" bgcolor=3D"#ffffff" background bordercolor=3D"#000=
+000" bordercolordark=3D"#000000" bordercolorlight=3D"#000000" mreach_id>=
+ <CAPTION></CAPTION> <TBODY>=20
+<TR> <TD valign=3D"center" background align=3D"left" mreach_id><!--messa=
+geREACH-object-start--><IMG src=3D"https://pull.xmr3.com/p/24365-2B45/40=
+111783/s_mac_dhtml7578_10.jpg" hspace=3D"0" border=3D"0" alt align=3D"ba=
+seline" mreach_id=3D"picture3"><!--messageREACH-object-end--></TD> <TD> =
+
+<P><FONT size=3D"2"><STRONG>Mac-Shop =96 Cyberdesign f=FCr jeden Tag</ST=
+RONG><BR>
+&nbsp;<BR>
+Ein Paradies f=FCr Apple-Fans! Ob iMac, iBook <BR>
+oder PowerMac: Hier finden Sie die <BR>
+aktuellsten Modelle =96 und dazu jede Menge <BR>
+Software und Peripherie =96 vom Cinema <BR>
+Display =FCber Foto-Drucker bis zum neuen <BR>
+iPod!</FONT> </P></TD></TR>=20
+<TR> <TD valign=3D"center" background align=3D"left" mreach_id><!--messa=
+geREACH-object-start--><IMG src=3D"https://pull.xmr3.com/p/24365-2B45/40=
+111789/s_pc_dhtml7578_10.jpg" hspace=3D"0" border=3D"0" alt align=3D"bas=
+eline" mreach_id=3D"picture4"><!--messageREACH-object-end--></TD> <TD><B=
+R>
+
+<P><STRONG>P</STRONG><FONT size=3D"2"><STRONG>C-Shop =96 Power satt f=
+=FCr mehr Souver=E4nit=E4t</STRONG><BR>
+<BR>
+</FONT><FONT size=3D"2">Nat=FCrlich kommen Sie bei uns auch als PC-<BR>
+User voll auf Ihre Kosten: Wir bieten Ihnen <BR>
+leistungsstarke PC-Komplettsysteme f=FCr <BR>
+Home- und Business-Anwendungen, Super-<BR>
+Zusatzkomponenten f=FCr Gamer und <BR>
+Multimedia-Freaks sowie Top-Endger=E4te und <BR>
+Zubeh=F6r vom Foto-Scanner bis zum TFT-Display</FONT>!</P></TD></TR>=20
+<TR> <TD valign=3D"center" background align=3D"left" mreach_id><!--messa=
+geREACH-object-start--><IMG src=3D"https://pull.xmr3.com/p/24365-2B45/40=
+111785/s_mobile_dhtml7578_10.jpg" hspace=3D"0" border=3D"0" alt align=
+=3D"baseline" mreach_id=3D"picture5"><!--messageREACH-object-end--></TD>=
+ <TD><BR>
+
+<P><FONT size=3D"2"><STRONG>Mobile-Shop =96 neueste Technik f=FCr <BR>
+grenzenlose Mobilit=E4t </STRONG></FONT></P>=20
+<P><FONT size=3D"2">Willkommen in der mobilen Zukunft! Ob <BR>
+Notebook oder PDA, Handy oder <BR>
+Navigationssystem: Bei uns finden Freunde <BR>
+des mobilen Lebens f=FCr jeden Zweck das <BR>
+optimale Angebot =96 f=FCr mehr Freiheit unterwegs</FONT>!</P></TD></TR>=
+=20
+<TR> <TD valign=3D"center" background align=3D"left" mreach_id><!--messa=
+geREACH-object-start--><IMG src=3D"https://pull.xmr3.com/p/24365-2B45/40=
+111787/s_netzwerk_dhtml7578_10.jpg" hspace=3D"0" border=3D"0" alt align=
+=3D"baseline" mreach_id=3D"picture6"><!--messageREACH-object-end--></TD>=
+ <TD><BR>
+
+<P><FONT size=3D"2"><STRONG>Network-Shop =96 Effizienz von Profis f=FCr =
+<BR>
+Profis</STRONG></FONT></P>=20
+<P><FONT size=3D"2">Die ganze Welt von LAN, Switches, Router &amp; <BR>
+Co. Hier gibt=92s ma=DFgeschneiderte Netzwerk-<BR>
+L=F6sungen f=FCr den privaten wie professionellen <BR>
+Bedarf =96 von der einfachen Netzwerkkarte bis <BR>
+zum Wireless LAN mit Internetzugang, <BR>
+Printserver und integrierter Firewall f=FCr <BR>
+maximale Sicherheit!</FONT></P></TD></TR>=20
+<TR> <TD valign=3D"center" background align=3D"left" mreach_id><!--messa=
+geREACH-object-start--><IMG src=3D"https://pull.xmr3.com/p/24365-2B45/40=
+111781/s_audio_dhtml7578_10.jpg" hspace=3D"0" border=3D"0" alt align=3D"=
+baseline" mreach_id=3D"picture7"><!--messageREACH-object-end--></TD> <TD=
+><BR>
+
+<P><STRONG>V</STRONG><FONT size=3D"2"><STRONG>ideo/Audio-Shop =96 alle F=
+reiheit f=FCr Ihre <BR>
+W=FCnsche</STRONG></FONT></P>=20
+<P><FONT size=3D"2">Ob Digital-Foto und -Video, MP3, DVD oder <BR>
+Breitband-TV: Wir pr=E4sentieren Ihnen die <BR>
+absoluten High-Tech-Hits von SONY, Denon, <BR>
+JVC, Panasonic, Toshiba und vielen anderen <BR>
+Top-Marken. Selbstverst=E4ndlich zu <BR>
+atemberaubend g=FCnstigen Preisen!</FONT></P></TD></TR>=20
+<TR> <TD valign=3D"center" background align=3D"left" mreach_id><!--messa=
+geREACH-object-start--><IMG src=3D"https://pull.xmr3.com/p/24365-2B45/40=
+111791/s_software_dhtml7578_10.jpg" hspace=3D"0" border=3D"0" alt align=
+=3D"baseline" mreach_id=3D"picture8"><!--messageREACH-object-end--></TD>=
+ <TD><BR>
+
+<P><FONT size=3D"2"><STRONG>Software-Shop =96 f=FCr mehr Vielfalt und <B=
+R>
+mehr Innovation </STRONG></FONT></P>=20
+<P><FONT size=3D"2">Ob Betriebssystem oder Office-Suite, DTP <BR>
+oder Multimedia, Video-Bearbeitung oder <BR>
+aktuelle Games: Wir bieten Ihnen die perfekte <BR>
+L=F6sung f=FCr jede denkbare PC-Anwendung. <BR>
+Nat=FCrlich inklusive Update- und <BR>
+Schulversionen sowie top-aktuellen <BR>
+Handb=FCchern f=FCr Einsteiger und Profis!<BR>
+</FONT></P></TD></TR></TBODY></TABLE> <TABLE width=3D"100%" cellspacing=
+=3D"2" cellpadding=3D"2" border=3D"0" bgcolor=3D"#ffffff" background bor=
+dercolor=3D"#000000" bordercolordark=3D"#000000" bordercolorlight=3D"#00=
+0000" mreach_id> <TBODY>=20
+<TR> <TD><BR>
+
+<P><FONT size=3D"2">Welche DVD-Formate gibt es? Wie funktioniert eine Wi=
+reless LAN-Verbindung? Diese und <BR>
+viele weitere Fragen werden gekl=E4rt. Wenn Sie noch keinen Katalog besi=
+tzen, dann bestellen <BR>
+Sie schnell und nehmen Sie sich etwas Zeit f=FCr die neuesten Produkte d=
+er Technik.</FONT></P><FONT size=3D"2">=20
+<P>F=FCr Ihre Kataloganforderung erhalten Sie von uns einmalig<BR>
+einen Warengutschein in H=F6he von 5 EUR.</P>=20
+<P></FONT><FONT size=3D"2"><BR>
+Bitte registrieren Sie sich hier:<!--messageREACH-object-start--><A href=
+=3D"http://www.cyberport.de/?DEEP_DOCID=3D7578" mreach_id=3D"hyperlink9"=
+><IMG src=3D"https://pull.xmr3.com/p/24365-2B45/40111779/pfeilchen_dhtml=
+7578_10.gif" border=3D"0" mreach_id=3D"hyperlink9"></A><!--messageREACH-=
+object-end--> </FONT></P></TD></TR></TBODY></TABLE>=20
+<P>&nbsp;</P>=20
+<P><!--messageREACH-object-start--><A href=3D"http://www.xmr3.com/sf/270=
+241-5399979-2-24365-DE1-3F5B" mreach_id=3D"sendfriend10"><FONT size=3D"2=
+">M=F6chten Sie diese Mail weiterleiten dann klicken Sie hier</FONT></A>=
+<!--messageREACH-object-end--></P></TD></TR></TBODY></TABLE>=20
+<P>&nbsp;</P>=20
+<P>&nbsp;</P>Wenn Sie den Newsletter nicht mehr erhalten wollen, m=FCsse=
+n Sie sich <br>
+komplett vom Fax2Mail Service abmelden. Gehen Sie hierzu auf <br>
+http://f2m.xpedite.de Im Bereich 'Setup' k=F6nnen Sie sich =FCber <br>
+den Knopf 'Daten l=F6schen' abmelden. <br>
+
+Mit freundlichen Gr=FC=DFen<br>
+
+Ihr F2M Team<br>
+Dies ist ein Service der XPEDITE Systems GmbH verschickt =FCber das<br>
+messageREACH-System.<br>
+Weitere Informationen finden Sie unter http://f2m.xpedite.de<br>
+
+
+</BODY></HTML>=20
+
+

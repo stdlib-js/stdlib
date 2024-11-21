@@ -1,0 +1,83 @@
+
+{{alias}}( t, α, β )
+    Evaluates the moment-generating function (MGF) for a beta distribution with
+    first shape parameter `α` and second shape parameter `β` at a value `t`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If `α <= 0` or `β <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    t: number
+        Input value.
+
+    α: number
+        First shape parameter.
+
+    β: number
+        Second shape parameter.
+
+    Returns
+    -------
+    out: number
+        Evaluated MGF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.5, 1.0, 1.0 )
+    ~1.297
+    > y = {{alias}}( 0.5, 2.0, 4.0 )
+    ~1.186
+    > y = {{alias}}( 3.0, 2.0, 2.0 )
+    ~5.575
+    > y = {{alias}}( -0.8, 4.0, 4.0 )
+    ~0.676
+
+    > y = {{alias}}( NaN, 1.0, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, 1.0, NaN )
+    NaN
+
+    > y = {{alias}}( 2.0, -1.0, 0.5 )
+    NaN
+    > y = {{alias}}( 2.0, 0.0, 0.5 )
+    NaN
+
+    > y = {{alias}}( 2.0, 0.5, -1.0 )
+    NaN
+    > y = {{alias}}( 2.0, 0.5, 0.0 )
+    NaN
+
+
+{{alias}}.factory( α, β )
+    Returns a function for evaluating the moment-generating function (MGF) of a
+    beta distribution with first shape parameter `α` and second shape parameter
+    `β`.
+
+    Parameters
+    ----------
+    α: number
+        First shape parameter.
+
+    β: number
+        Second shape parameter.
+
+    Returns
+    -------
+    mgf: Function
+        Moment-generating function (MGF).
+
+    Examples
+    --------
+    > var myMGF = {{alias}}.factory( 0.5, 0.5 );
+    > var y = myMGF( 0.8 )
+    ~1.552
+    > y = myMGF( 0.3 )
+    ~1.168
+
+    See Also
+    --------
+

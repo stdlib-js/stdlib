@@ -1,0 +1,35 @@
+
+{{alias}}( a, b )
+    Evaluates the natural logarithm of the beta function.
+
+    Parameters
+    ----------
+    a: number
+        First function parameter (nonnegative).
+
+    b: number
+        Second function parameter (nonnegative).
+
+    Returns
+    -------
+    out: number
+        Natural logarithm of the beta function.
+
+    Examples
+    --------
+    > var v = {{alias}}( 0.0, 0.0 )
+    Infinity
+    > v = {{alias}}( 1.0, 1.0 )
+    0.0
+    > v = {{alias}}( -1.0, 2.0 )
+    NaN
+    > v = {{alias}}( 5.0, 0.2 )
+    ~1.218
+    > v = {{alias}}( 4.0, 1.0 )
+    ~-1.386
+    > v = {{alias}}( NaN, 2.0 )
+    NaN
+
+    See Also
+    --------
+

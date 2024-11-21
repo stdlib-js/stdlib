@@ -1,0 +1,45 @@
+Return-Path: whisper@oz.net
+Delivery-Date: Fri Sep  6 18:53:24 2002
+From: whisper@oz.net (David LeBlanc)
+Date: Fri, 6 Sep 2002 10:53:24 -0700
+Subject: [Spambayes] Deployment
+In-Reply-To: <w53lm6fca8i.fsf@woozle.org>
+Message-ID: <GCEDKONBLEFPPADDJCOECEGMENAA.whisper@oz.net>
+
+I think that when considering deployment, a solution that supports all
+Python platforms and not just the L|Unix crowd is desirable.
+
+Mac and PC users are more apt to be using a commercial MUA that's unlikely
+to offer hooking ability (at least not easily). As mentioned elsewhere, even
+L|Unix users may find an MUA solution easier to use then getting it added to
+their MTA. (SysOps make programmers look like flaming liberals ;).)
+
+My notion of a solution for Windows/Outlook has been, as Guido described, a
+client-server. Client side does pop3/imap/mapi fetching (of which, I'm only
+going to implement pop3 initially) potentially on several hosts, spamhams
+the incoming mail and puts it into one file per message (qmail style?). The
+MUA accesses this "eThunk" as a server to obtain all the ham. Spam is
+retained in the eThunk and a simple viewer would be used for manual
+oversight on the spam for ultimate rejection (and training of spam filter)
+and the ham will go forward (after being used for training) on the next MUA
+fetch. eThunk would sit on a timer for 'always online' users, but I am not
+clear on how to support dialup users with this scheme.
+
+Outbound mail would use a direct path from the MUA to the MTA. Hopefully all
+MUAs can split the host fetch/send URL's
+
+IMO, end users are likely to be more intested in n-way classification. If
+this is available, the "simple viewer" could be enhanced to support viewing
+via folders and (at least for me) the Outlook nightmare is over - I would
+use this as my only MUA. (N.B. according to my recent readings, the best
+n-way classifier uses something called a "Support Vector Machine" (SVM)
+which is 5-8% more accurate then Naive Bayes (NB) ).
+
+I wonder if the focus of spambayes ought not to be a classifier that leaves
+the fetching and feeding of messages to auxillary code? That way, it could
+be dropped into whatever harness that suited the user's situation.
+
+David LeBlanc
+Seattle, WA USA
+
+

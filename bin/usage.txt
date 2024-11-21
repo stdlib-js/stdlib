@@ -1,0 +1,170 @@
+
+Usage: stdlib [options] <command> [args] [-- <options>]
+
+Options:
+
+  -h,    --help                   Print this message.
+  -V,    --version                Print the version.
+
+Commands:
+
+  help [command]                  Print a help message.
+  datasets                        Retrieve a dataset.
+  repl                            Start a REPL.
+  repl-presentation               Start a REPL presentation.
+
+Assert:
+
+  has-arraybuffer-support         Detect ArrayBuffer support.
+  has-async-await-support         Detect async/await support.
+  has-class-support               Detect ES6 class support.
+  has-float32array-support        Detect Float32Array support.
+  has-float64array-support        Detect Float64Array support.
+  has-function-name-support       Detect function name support.
+  has-generator-support           Detect generator support.
+  has-int16array-support          Detect Int16Array support.
+  has-int32array-support          Detect Int32Array support.
+  has-int8array-support           Detect Int8Array support.
+  has-iterator-symbol-support     Detect Symbol.iterator support.
+  has-map-support                 Detect Map support.
+  has-node-buffer-support         Detect Node buffer support.
+  has-proxy-support               Detect Proxy support.
+  has-set-support                 Detect Set support.
+  has-sharedarraybuffer-support   Detect SharedArrayBuffer support.
+  has-symbol-support              Detect Symbol support.
+  has-tostringtag-support         Detect Symbol.toStringTag support.
+  has-uint16array-support         Detect Uit16Array support.
+  has-uint32array-support         Detect Uit32Array support.
+  has-uint8array-support          Detect Uit8Array support.
+  has-uint8clampedarray-support   Detect Uit8ClampedArray support.
+  has-wasm-support                Detect WebAssembly support.
+  has-weakmap-support             Detect WeakMap support.
+  has-weakset-support             Detect WeakSet support.
+  is-absolute-path                Assert an absolute path.
+  is-alphagram                    Assert if a value is an alphagram.
+  is-alphanumeric                 Assert if a value is alphanumeric.
+  is-anagram                      Assert if a value is an anagram.
+  is-ascii                        Assert if a value is ASCII.
+  is-binary-string                Assert if a value is a binary string.
+  is-capitalized                  Assert if a value is capitalized.
+  is-digit-string                 Assert if a value is a digit string.
+  is-email-address                Assert if a value is an email address.
+  is-hex-string                   Assert if a value is a hexadecimal string.
+  is-leap-year                    Assert if a leap year.
+  is-little-endian                Assert if little endian.
+  is-lowercase                    Assert if a value is lowercase.
+  is-regexp-string                Assert if a value is a regexp string.
+  is-unc-path                     Assert a UNC path.
+  is-uppercase                    Assert if a value is uppercase.
+  is-uri                          Assert if a value is a URI.
+  is-whitespace                   Assert if a value is only whitespace.
+
+Benchmarking:
+
+  bench                           Run JavaScript benchmark files.
+  timeit                          Time a JavaScript snippet.
+
+Filesystem:
+
+  exists                          Test if a file exists.
+  read-dir                        Read all files in a directory.
+  read-file                       Read a file.
+  read-file-list                  Read a list of files.
+  rename                          Rename a file.
+  resolve-parent-path             Resolve a path by walking parent directories.
+  unlink                          Remove a file.
+  write-file                      Write to file.
+
+Meta:
+
+  library-manifest                Load a manifest for compiling source files.
+  ls                              List stdlib package names.
+  ls-tree                         Show stdlib package tree.
+  node-version                    Node.js version.
+  ns                              Print stdlib namespace.
+
+Plot:
+
+  sparkline                       Plot a sparkline.
+
+Random:
+
+  random-arcsine                  Arcsine distributed pseudorandom numbers.
+  random-box-muller               Box-Muller pseudorandom numbers.
+  random-improved-ziggurat        Improved Ziggurat pseudorandom numbers.
+  random-minstd                   Park and Miller LCG pseudorandom numbers.
+  random-minstd-shuffle           Shuffled LCG pseudorandom numbers.
+  random-mt19937                  32-bit Mersenne Twister pseudorandom numbers.
+  random-randi                    Pseudorandom numbers having integer values.
+  random-randn                    Normally distributed pseudorandom numbers.
+  random-randu                    Pseudorandom numbers between 0 and 1.
+
+System:
+
+  arch                            Operating system CPU architecture.
+  configdir                       Configuration directory path.
+  cwd                             Current working directory.
+  homedir                         Home directory path.
+  num-cpus                        Number of CPUs.
+  platform                        Platform.
+  tmpdir                          Directory path for storing temporary files.
+  umask                           Process mask.
+
+Time:
+
+  day-of-quarter                  Calculate day of quarter.
+  day-of-year                     Calculate day of year.
+  days-in-month                   Calculate the number of days in a month.
+  days-in-year                    Calculate the number of days in a year.
+  hours-in-month                  Calculate the number of hours in a month.
+  hours-in-year                   Calculate the number of hours in a year.
+  iso-weeks-in-year               Calculate the number of ISO weeks in a year.
+  minutes-in-month                Calculate the number of minutes in a month.
+  minutes-in-year                 Calculate the number of minutes in a year.
+  now                             Number of seconds since the epoch.
+  quarter-of-year                 Calculate the quarter of a year.
+  seconds-in-month                Calculate the number of seconds in a month.
+  seconds-in-year                 Calculate the number of seconds in a year.
+
+Tools:
+
+  bundle-pkg-list                 Bundle a list of stdlib packages.
+
+Utilities:
+
+  capitalize                      Capitalize the first character in a string.
+  convert-path                    Convert between Windows and POSIX paths.
+  ends-with                       Test if a string ends with another string.
+  from-code-point                 Create a string from code points.
+  js-eval                         Evaluate a JavaScript string.
+  lowercase                       Lowercase a string.
+  lpad                            Left pad a string.
+  ltrim                           Left trim a string.
+  open-url                        Open a URL.
+  padstr                          Pad a string.
+  parallel                        Execute scripts in parallel.
+  percent-encode                  Percent-encode a UTF-16 encoded string.
+  realmax                         Maximum representable finite value.
+  realmin                         Minimum representable finite value.
+  remove-first                    Remove the first character in a string.
+  remove-last                     Remove the last character in a string.
+  remove-punctuation              Remove punctuation characters from a string.
+  remove-utf8-bom                 Remove a UTF-8 byte order mark (BOM).
+  remove-words                    Remove a list of words from a string.
+  replace                         Replace search occurrences in a string.
+  repstr                          Repeat a string.
+  reverse                         Reverse a string.
+  rpad                            Right pad a string.
+  rtrim                           Right trim a string.
+  safeintmax                      Maximum representable safe integer value.
+  safeintmin                      Minimum representable safe integer value.
+  sizeof                          Size (in bytes) of a numeric data type.
+  startcase                       Capitalize each word in a string.
+  starts-with                     Test if a string starts with another string.
+  temp-http-server                Create a temporary HTTP server.
+  trim                            Trim a string.
+  typemax                         Maximum value for a numeric data type.
+  typemin                         Minimum value for a numeric data type.
+  uncapitalize                    Uncapitalize a string.
+  uppercase                       Uppercase a string.
+

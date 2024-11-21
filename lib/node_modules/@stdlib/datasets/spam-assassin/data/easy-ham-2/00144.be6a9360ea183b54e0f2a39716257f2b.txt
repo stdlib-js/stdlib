@@ -1,0 +1,89 @@
+From ilug-admin@linux.ie  Mon Jul 29 19:25:13 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5C8F2440ED
+	for <jm@localhost>; Mon, 29 Jul 2002 14:25:11 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 19:25:11 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6TIL8q12688 for
+    <jm-ilug@jmason.org>; Mon, 29 Jul 2002 19:21:08 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id TAA25313; Mon, 29 Jul 2002 19:19:01 +0100
+Received: from hawk.dcu.ie (mail.dcu.ie [136.206.1.5]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id TAA25276 for <ilug@linux.ie>; Mon,
+    29 Jul 2002 19:18:54 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host mail.dcu.ie [136.206.1.5]
+    claimed to be hawk.dcu.ie
+Received: from prodigy.redbrick.dcu.ie (136.206.15.10) by hawk.dcu.ie
+    (6.0.040) id 3D36BB4A0003F413 for ilug@linux.ie; Mon, 29 Jul 2002 19:18:54
+    +0100
+Received: by prodigy.redbrick.dcu.ie (Postfix, from userid 1023) id
+    E430EDA4A; Mon, 29 Jul 2002 19:18:53 +0100 (IST)
+Date: Mon, 29 Jul 2002 19:18:53 +0100
+From: Philip Reynolds <phil@redbrick.dcu.ie>
+To: ilug@linux.ie
+Subject: Re: [ILUG] ipfw vs ipchains vs iptables
+Message-Id: <20020729191853.A9864@prodigy.Redbrick.DCU.IE>
+References: <20020729180444.A28366@prodigy.Redbrick.DCU.IE>
+    <Pine.LNX.4.44.0207291813570.1910-100000@dunlop.admin.ie.alphyra.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <Pine.LNX.4.44.0207291813570.1910-100000@dunlop.admin.ie.alphyra.com>;
+    from paulj@alphyra.ie on Mon, Jul 29, 2002 at 06:17:08PM +0100
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Paul Jakma's [paulj@alphyra.ie] 53 lines of wisdom included:
+> true.
+> 
+> however, there are quite a few setup scripts available for 
+> ipchains/iptables, which can make config just as easy as ipfw.
+
+Well, that doesn't help you reading your listing.
+
+> isnt the ipfw code in BSD brand-new aswell? (the old code was 
+> rewritten for OpenBSD recently due to licensing concerns).
+
+I think you're talking about IPFilter, and OpenBSD's new PF code.
+Now who's talking FUD :)
+
+> the above is a bit FUD'ish.
+
+Perhaps, although I think when seriously considering something like
+a firewall, tried and trusted means a hell of a lot. IPFilter would
+probably win that race.
+
+> they're all much of a muchness really. probably best thing is:
+> 
+> - if you're more comfortable with BSD -> ipfw
+
+I was talking in terms of the actual firewall. If the company in
+question knows plenty about Linux and nothing about FreeBSD, I'd go
+with a Linux box, merely because when something goes wrong (that
+isn't got to do with ipfw/ipchains/ipfilter), then someone knows how
+to fix it.
+
+As I said before, I have little to no in-depth experience with
+netfilter, I'm aware of it's basic capabilities and had a quick look
+at it's features in early 2.4 editions but that's it.
+
+-- 
+  Philip Reynolds        
+   RFC Networks          tel: 01 8832063
+www.rfc-networks.ie      fax: 01 8832041
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

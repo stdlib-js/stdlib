@@ -1,0 +1,28 @@
+
+{{alias}}()
+    Returns FiveThirtyEight reader responses to a food frequency questionnaire
+    (FFQ).
+
+    Returns
+    -------
+    out: Array<Object>
+        FiveThirtyEight reader responses to a food frequency questionnaire
+        (FFQ).
+
+    Examples
+    --------
+    > var data = {{alias}}()
+    [ {...}, ... ]
+
+    References
+    ----------
+    - Aschwanden, Christie. 2016. "You Can't Trust What You Read About
+    Nutrition." <https://fivethirtyeight.com/features/you-cant-trust-what-you-
+    read-about-nutrition/>.
+
+    * If you use the data for publication or third party consumption, please
+    cite the listed reference.
+
+    See Also
+    --------
+

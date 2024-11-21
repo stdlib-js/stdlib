@@ -1,0 +1,64 @@
+From ilug-admin@linux.ie  Thu Aug 22 10:46:42 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id DD30443C47
+	for <jm@localhost>; Thu, 22 Aug 2002 05:46:10 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 22 Aug 2002 10:46:10 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7LMRCZ12087 for
+    <jm-ilug@jmason.org>; Wed, 21 Aug 2002 23:27:12 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id XAA27862; Wed, 21 Aug 2002 23:26:01 +0100
+Received: from mail.go2.ie ([62.17.153.101]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id XAA27823 for <ilug@linux.ie>; Wed,
+    21 Aug 2002 23:25:47 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [62.17.153.101] claimed to
+    be mail.go2.ie
+Received: from k100-51.bas1.dbn.dublin.eircom.net
+    (k100-51.bas1.dbn.dublin.eircom.net [159.134.100.51]) by mail.go2.ie
+    (Postfix) with ESMTP id E2A491105 for <ilug@linux.ie>; Wed, 21 Aug 2002
+    23:25:09 +0100 (IST)
+Subject: Re: [ILUG] SMTP auth & mutt
+From: Nick Murtagh <nickm@go2.ie>
+To: ilug@linux.ie
+In-Reply-To: <20020820111004.GD14073@jinny.ie>
+References: <20020820102914.GC12174@jinny.ie>
+    <20020820120618.F4237@prodigy.Redbrick.DCU.IE>
+    <20020820111004.GD14073@jinny.ie>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8-2mdk
+Date: 21 Aug 2002 23:21:33 +0100
+Message-Id: <1029968494.2167.2.camel@gemini.windmill>
+MIME-Version: 1.0
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Tue, 2002-08-20 at 12:10, John P. Looney wrote:
+>  Hmm. Yeah, mutt sorta calls the sendmail program directly. But I thought
+> it would be very crap if the auth details (username, password) had to be
+> hardcoded into the sendmail.cf (and damned if I can work out how to do
+> that anyway).
+
+Postfix provides a binary called /usr/sbin/sendmail that does the right
+thing. Which, presumably involves sticking your outgoing going message
+in the right queue. Then you need your postfix SMTP client to
+authenticate with your postfix SMTP server. Are you using SASL? If so,
+I remember seeing documentation on how to configure the postfix SMTP
+client to authenticate.
+
+Nick
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

@@ -1,0 +1,123 @@
+From razor-users-admin@lists.sourceforge.net  Tue Aug 13 10:23:09 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9047D440FD
+	for <jm@localhost>; Tue, 13 Aug 2002 05:19:31 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:19:31 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7D12eb11680 for <jm-razor@jmason.org>; Tue, 13 Aug 2002 02:02:40 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17ePvj-0001TV-00; Mon,
+    12 Aug 2002 17:53:03 -0700
+Received: from h-66-166-21-186.snvacaid.covad.net ([66.166.21.186]
+    helo=nexus.cloudmark.com) by usw-sf-list1.sourceforge.net with esmtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17ePut-0004Fl-00 for
+    <razor-users@lists.sourceforge.net>; Mon, 12 Aug 2002 17:52:12 -0700
+Received: (from chad@localhost) by nexus.cloudmark.com (8.11.6/8.11.6) id
+    g7D0oU301782; Mon, 12 Aug 2002 17:50:30 -0700
+X-Authentication-Warning: nexus.cloudmark.com: chad set sender to
+    chad@cloudmark.com using -f
+From: Chad Norwood <chad@cloudmark.com>
+To: Mike Burger <mburger@bubbanfriends.org>
+Cc: Vipul Ved Prakash <mail@vipul.net>,
+	razor-users@lists.sourceforge.net
+Message-Id: <20020813005030.GD11270@nexus.cloudmark.com>
+References: <Pine.LNX.4.44.0208111942280.479-100000@burgers.bubbanfriends.org>
+    <Pine.LNX.4.44.0208112108380.1574-100000@burgers.bubbanfriends.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <Pine.LNX.4.44.0208112108380.1574-100000@burgers.bubbanfriends.org>
+User-Agent: Mutt/1.4i
+Subject: [Razor-users] Re: No results from razor-check on known spam?
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Mon, 12 Aug 2002 17:50:30 -0700
+Date: Mon, 12 Aug 2002 17:50:30 -0700
+
+  Can you send more details about the error?
+  and also do a 'razor-report -v' to make sure 2.x is being called.
+
+  -chad
+
+On 11/08/02 21:09 -0500, Mike Burger wrote:
+) Ok...I need to amend this.
+) 
+) I don't get the error when I check the spam...just when I go to report it.
+) 
+) On Sun, 11 Aug 2002, Mike Burger wrote:
+) 
+) > I did...unfortunately, now I get this:
+) > 
+) > Died at /usr/bin/razor-check line 32, <GEN0> line 1.
+) > 
+) > Did I need to remove and reinstall, or something.  I just did a make 
+) > install over the existing installation.
+) > 
+) > On Sun, 11 Aug 2002, Vipul Ved Prakash wrote:
+) > 
+) > > On Sun, Aug 11, 2002 at 07:39:41AM -0500, Mike Burger wrote:
+) > > > 
+) > > > Any ideas what might have changed, here? I'm running razor-agents-2.12, 
+) > > > and razor-agents-sdk-2.0.3.
+) > > 
+) > > Mike, 
+) > > 
+) > > Please upgrade to 2.14 as many bugs were fixed between the two releases, and 
+) > > see if your problem persists.
+) > > 
+) > > cheers,
+) > > vipul.
+) > > 
+) > > 
+) > 
+) > 
+) > 
+) > -------------------------------------------------------
+) > This sf.net email is sponsored by:ThinkGeek
+) > Welcome to geek heaven.
+) > http://thinkgeek.com/sf
+) > _______________________________________________
+) > Razor-users mailing list
+) > Razor-users@lists.sourceforge.net
+) > https://lists.sourceforge.net/lists/listinfo/razor-users
+) > 
+) 
+) 
+) 
+) -------------------------------------------------------
+) This sf.net email is sponsored by:ThinkGeek
+) Welcome to geek heaven.
+) http://thinkgeek.com/sf
+) _______________________________________________
+) Razor-users mailing list
+) Razor-users@lists.sourceforge.net
+) https://lists.sourceforge.net/lists/listinfo/razor-users
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Dice - The leading online job board
+for high-tech professionals. Search and apply for tech jobs today!
+http://seeker.dice.com/seeker.epl?rel_code=31
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

@@ -1,0 +1,96 @@
+From exmh-users-admin@redhat.com  Fri Sep 13 13:35:07 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id F2C0716F03
+	for <jm@localhost>; Fri, 13 Sep 2002 13:35:06 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 13 Sep 2002 13:35:07 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8D2ZuC29994 for
+    <jm-exmh@jmason.org>; Fri, 13 Sep 2002 03:35:56 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 7ED0F3FDA1; Thu, 12 Sep 2002
+    22:34:01 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 633FA3FC80
+    for <exmh-users@listman.redhat.com>; Thu, 12 Sep 2002 22:33:03 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g8D2Wwc20428 for exmh-users@listman.redhat.com; Thu, 12 Sep 2002
+    22:32:58 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g8D2Wvk20424 for
+    <exmh-users@redhat.com>; Thu, 12 Sep 2002 22:32:57 -0400
+Received: from hobbit.linuxworks.com.au
+    (CPE-203-51-196-87.qld.bigpond.net.au [203.51.196.87]) by mx1.redhat.com
+    (8.11.6/8.11.6) with SMTP id g8D2GKw15477 for <exmh-users@redhat.com>;
+    Thu, 12 Sep 2002 22:16:20 -0400
+Received: (from tony@localhost) by hobbit.linuxworks.com.au
+    (8.11.6/8.11.6) id g8D2VO021580; Fri, 13 Sep 2002 12:31:24 +1000
+Message-Id: <200209130231.g8D2VO021580@hobbit.linuxworks.com.au.nospam>
+To: exmh-users@spamassassin.taint.org
+From: Tony Nugent <tony@linuxworks.com.au>
+X-Face: ]IrGs{LrofDtGfsrG!As5=G'2HRr2zt:H>djXb5@v|Dr!jOelxzAZ`!}("]}]
+    Q!)1w#X;)nLlb'XhSu,QL>;)L/l06wsI?rv-xy6%Y1e"BUiV%)mU;]f-5<#U6
+    UthZ0QrF7\_p#q}*Cn}jd|XT~7P7ik]Q!2u%aTtvc;)zfH\:3f<[a:)M
+Organization: Linux Works for network
+X-Mailer: nmh-1.0.4 exmh-2.4
+X-Os: Linux-2.4 RedHat 7.2
+In-Reply-To: message-id <5305.1031637136@munnari.OZ.AU> of Tue,
+    Sep 10 12:52:16 2002
+Subject: Linking message [was: Re: Patch to complete a change...]
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Fri, 13 Sep 2002 12:31:24 +1000
+
+On Tue Sep 10 2002 at 12:52, Robert Elz wrote:
+
+> Subject: Patch to complete a change...
+
+> I guess that most of us don't use "link" very often ... I noticed it
+> last week, but only got time to look and see why today.
+
+I would like to use [Link] a lot more, but is it rather
+inconvenient.
+
+I have set my right mouse button to [Move] a message to another
+folder, which works fine.
+
+However, [Link] also uses the same destination folder as [Move], and
+so if I want to use [Link] I first have to mark the destination
+folder with a message-move, undo the move, then I can use the
+[Link].  Very inconvenient.
+
+Is there a better way for me to set this up so that [Link] works
+with one or two simple clicks?
+
+(In essence: is there a way to mark a destination folder for a
+message link or move without actually doing a move or link, I
+couldn't see anything obvious).
+
+Cheers
+Tony
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

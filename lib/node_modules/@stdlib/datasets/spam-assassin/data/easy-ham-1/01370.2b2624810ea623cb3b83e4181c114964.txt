@@ -1,0 +1,73 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug 29 11:07:19 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C00134415E
+	for <jm@localhost>; Thu, 29 Aug 2002 06:05:37 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:05:37 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7SN6FZ14435 for <jm-sa@jmason.org>; Thu, 29 Aug 2002 00:06:15 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17kBs1-0003yD-00; Wed,
+    28 Aug 2002 16:05:05 -0700
+Received: from moonbase.zanshin.com ([167.160.213.139]) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17kBqz-0003Vv-00 for
+    <spamassassin-talk@lists.sourceforge.net>; Wed, 28 Aug 2002 16:04:01 -0700
+Received: from aztec.zanshin.com (IDENT:schaefer@aztec.zanshin.com
+    [167.160.213.132]) by moonbase.zanshin.com (8.11.0/8.11.0) with ESMTP id
+    g7SN40J32497 for <spamassassin-talk@lists.sourceforge.net>; Wed,
+    28 Aug 2002 16:04:00 -0700
+From: Bart Schaefer <schaefer@zanshin.com>
+To: spamassassin-talk@example.sourceforge.net
+Subject: Re: [SAtalk] O.T. Habeus -- Why?
+In-Reply-To: <200208281548.21264.matt@nightrealms.com>
+Message-Id: <Pine.LNX.4.44.0208281556450.28602-100000@aztec.zanshin.com>
+Mail-Followup-To: spamassassin-talk@example.sourceforge.net
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 28 Aug 2002 16:04:00 -0700 (PDT)
+Date: Wed, 28 Aug 2002 16:04:00 -0700 (PDT)
+
+On Wed, 28 Aug 2002, Matthew Cline wrote:
+
+> There must be *some* way of tracking a spammer down, since they are
+> planning on making money from the spam.
+
+Many spammers make money not from response to the spam, but from selling
+the service of spamming on behalf of someone else.  You might track down
+whoever paid for the mailing, but tracking down the actual sender might be
+more difficult, and even if they manage to recover damages from the buyer
+they haven't stopped the spammer, so the benefit is strictly to Habeas,
+not to the recipients of the spam.  That's the main problem I have with
+the whole scenario: My pain, Habeas's gain, and those most likely to be
+held liable are those least likely to be the really serious abusers.
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

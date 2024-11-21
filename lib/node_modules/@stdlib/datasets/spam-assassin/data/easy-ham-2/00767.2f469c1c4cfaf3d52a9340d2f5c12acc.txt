@@ -1,0 +1,73 @@
+From fork-admin@xent.com  Tue Aug  6 12:00:50 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id EBAEA44200
+	for <jm@localhost>; Tue,  6 Aug 2002 06:49:34 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:49:34 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g75FZ7k16477 for <jm@jmason.org>;
+    Mon, 5 Aug 2002 16:35:07 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 443A72940CB; Mon,  5 Aug 2002 08:32:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from sdwlapn.lig.net (sl-highp1-1-0.sprintlink.net
+    [144.228.5.138]) by xent.com (Postfix) with ESMTP id 4B60D29409F for
+    <fork@xent.com>; Mon,  5 Aug 2002 08:31:09 -0700 (PDT)
+Received: from lig.net (IDENT:BiCcsxiVSNERVyIN+ZZ3YWnlgYNIij6v@localhost
+    [127.0.0.1]) by sdwlapn.lig.net (8.11.6/8.11.6) with ESMTP id g75FSeg11663;
+    Mon, 5 Aug 2002 11:28:41 -0400
+Message-Id: <3D4E99A8.9000801@lig.net>
+From: "Stephen D. Williams" <sdw@lig.net>
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.0rc2)
+    Gecko/20020513 Netscape/7.0b1
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: Udhay Shankar N <udhay@pobox.com>
+Cc: "Mr. FoRK" <fork_list@hotmail.com>, fork@spamassassin.taint.org
+Subject: Re: Using hosts file to rid yourself of popup ads
+References: <5.1.0.14.2.20020805082652.02fc3e50@bgl.vsnl.net.in>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 05 Aug 2002 11:28:40 -0400
+
+Obviously you need a server at 127.0.0.1 that serves well known cookies...
+
+The arms race continues.
+
+sdw
+
+Udhay Shankar N wrote:
+
+> At 09:24 PM 8/3/02 -0700, Mr. FoRK wrote:
+>
+>> Don't know if everybody knows this trick...
+>>
+>> Puts 127.0.0.1 as the IP for adservers. Elegant.
+>
+>
+> You should note that this trick has been out-evolved by [some] 
+> websites. These sites (e.g, yahoo) require a cookie that is set by the 
+> pop-up ad to be present before your browsing can continue...
+>
+> Udhay
+>
+
+
+http://xent.com/mailman/listinfo/fork
+
+

@@ -1,0 +1,116 @@
+#!/usr/bin/env node
+
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2018 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+'use strict';
+
+// MODULES //
+
+var resolve = require( 'path' ).resolve;
+var spawn = require( 'child_process' ).spawn;
+var getKeys = require( '@stdlib/utils/keys' );
+var hasOwnProp = require( '@stdlib/assert/has-own-property' );
+var readFileSync = require( '@stdlib/fs/read-file' ).sync;
+var CLI = require( '@stdlib/cli/ctor' );
+var NAMES = require( './../lib/names.json' );
+
+
+// FUNCTIONS //
+
+/**
+* Prints a list of datasets.
+*
+* @private
+*
+* @example
+* ls();
+*/
+function ls() {
+	var keys;
+	var i;
+
+	keys = getKeys( NAMES );
+	for ( i = 0; i < keys.length; i++ ) {
+		console.log( keys[ i ] ); // eslint-disable-line no-console
+	}
+}
+
+
+// MAIN //
+
+/**
+* Main execution sequence.
+*
+* @private
+* @returns {void}
+*/
+function main() {
+	var dataset;
+	var child;
+	var flags;
+	var args;
+	var opts;
+	var cli;
+	var err;
+
+	// Create a command-line interface:
+	cli = new CLI({
+		'pkg': require( './../package.json' ),
+		'options': require( './../etc/cli_opts.json' ),
+		'help': readFileSync( resolve( __dirname, '..', 'docs', 'usage.txt' ), {
+			'encoding': 'utf8'
+		})
+	});
+
+	// Get any provided command-line options:
+	flags = cli.flags();
+	if ( flags.help || flags.version ) {
+		return;
+	}
+
+	// Get any provided command-line arguments:
+	args = cli.args();
+
+	if ( flags.ls ) {
+		return ls();
+	}
+	if ( hasOwnProp( NAMES, flags.name ) ) {
+		dataset = NAMES[ flags.name ];
+	} else {
+		err = new Error( 'invalid option. Unrecognized/unsupported dataset name. Option: `' + flags.name + '`.' );
+		return cli.error( err );
+	}
+	opts = {
+		'stdio': 'inherit'
+	};
+	child = spawn( resolve( __dirname, '../'+dataset+'/bin/cli' ), args, opts );
+	child.on( 'close', onClose );
+
+	/**
+	* Exits the CLI.
+	*
+	* @private
+	* @param {integer} code - exit code
+	*/
+	function onClose( code ) {
+		cli.close( code );
+	}
+}
+
+main();

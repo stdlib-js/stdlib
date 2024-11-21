@@ -1,0 +1,70 @@
+From rpm-list-admin@freshrpms.net  Wed Jul 24 00:21:23 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BC1C5440CD
+	for <jm@localhost>; Tue, 23 Jul 2002 19:21:23 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 00:21:23 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6NNM1403344 for
+    <jm-rpm@jmason.org>; Wed, 24 Jul 2002 00:22:02 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6NNH1C08474; Wed, 24 Jul 2002 01:17:01
+    +0200
+Received: from mail.visp.co.nz (mx1.visp.co.nz [210.55.24.20]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6NNFdC07982 for
+    <rpm-list@freshrpms.net>; Wed, 24 Jul 2002 01:15:39 +0200
+Received: from dot.asterisk ([210.54.172.238]) by mail.visp.co.nz
+    (8.11.1/8.11.1) with ESMTP id g6NNFUV12914 for <rpm-list@freshrpms.net>;
+    Wed, 24 Jul 2002 11:15:31 +1200 (NZST)
+Received: from stumpy.asterisk ([192.168.0.122]
+    ident=[hH4zMLpcH2i298C2QBxa1Lit4wfImF3+]) by dot.asterisk with esmtp (Exim
+    3.35 #1 (Debian)) id 17X8sH-0001Ur-00 for <rpm-list@freshrpms.net>;
+    Wed, 24 Jul 2002 11:15:25 +1200
+From: Mark Derricutt <mark@talios.com>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: apt repository for irssi
+Message-Id: <1020000.1027466059@stumpy.asterisk.co.nz>
+In-Reply-To: <3D3DD633.7010003@sunnmore.net>
+References: <3D3DD633.7010003@sunnmore.net>
+X-Mailer: Mulberry/2.2.1 (Linux/x86)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Wed, 24 Jul 2002 11:14:19 +1200
+Date: Wed, 24 Jul 2002 11:14:19 +1200
+
+Sadly, the last time I looked at it, it was only the console irssi client, 
+no X :(
+
+--On Wednesday, July 24, 2002 00:18:27 +0200 Roy-Magne Mo 
+<rmo@sunnmore.net> wrote:
+
+> Seems like irssi.org also has an apt-rpm repository for snapshots of
+> irssi:
+
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

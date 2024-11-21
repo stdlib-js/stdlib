@@ -1,0 +1,71 @@
+
+{{alias}}( p, λ )
+    Evaluates the quantile function for an exponential distribution with rate
+    parameter `λ` at a probability `p`.
+
+    If `p < 0` or `p > 1`, the function returns `NaN`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided a negative value for `λ`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    p: number
+        Input probability.
+
+    λ: number
+        Rate parameter.
+
+    Returns
+    -------
+    out: number
+        Evaluated quantile function.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.8, 1.0 )
+    ~1.609
+    > y = {{alias}}( 0.5, 4.0 )
+    ~0.173
+    > y = {{alias}}( 0.5, 0.1 )
+    ~6.931
+
+    > y = {{alias}}( -0.2, 0.1 )
+    NaN
+
+    > y = {{alias}}( NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN )
+    NaN
+
+    // Negative rate parameter:
+    > y = {{alias}}( 0.5, -1.0 )
+    NaN
+
+
+{{alias}}.factory( λ )
+    Returns a function for evaluating the quantile function for an exponential
+    distribution with rate parameter `λ`.
+
+    Parameters
+    ----------
+    λ: number
+        Rate parameter.
+
+    Returns
+    -------
+    quantile: Function
+        Quantile function.
+
+    Examples
+    --------
+    > var myQuantile = {{alias}}.factory( 0.4 );
+    > var y = myQuantile( 0.4 )
+    ~1.277
+    > y = myQuantile( 1.0 )
+    Infinity
+
+    See Also
+    --------
+

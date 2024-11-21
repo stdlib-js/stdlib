@@ -1,0 +1,114 @@
+From ilug-admin@linux.ie  Mon Jul 29 21:48:59 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7C6B4440F1
+	for <jm@localhost>; Mon, 29 Jul 2002 16:48:55 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 21:48:55 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6TKmVq18946 for
+    <jm-ilug@jmason.org>; Mon, 29 Jul 2002 21:48:31 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id VAA32133; Mon, 29 Jul 2002 21:46:53 +0100
+Received: from hibernia.jakma.org (hibernia.clubi.ie [212.17.32.129]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id VAA32053 for <ilug@linux.ie>;
+    Mon, 29 Jul 2002 21:46:24 +0100
+Received: from fogarty.jakma.org (fogarty.jakma.org [192.168.0.4]) by
+    hibernia.jakma.org (8.11.6/8.11.6) with ESMTP id g6TKr5w03279;
+    Mon, 29 Jul 2002 21:53:05 +0100
+Received: from localhost (paul@localhost) by fogarty.jakma.org
+    (8.11.6/8.11.6) with ESMTP id g6TKr2J21272; Mon, 29 Jul 2002 21:53:03
+    +0100
+X-Authentication-Warning: fogarty.jakma.org: paul owned process doing -bs
+Date: Mon, 29 Jul 2002 21:53:01 +0100 (IST)
+From: Paul Jakma <paul@clubi.ie>
+X-X-Sender: paul@fogarty.jakma.org
+To: Philip Reynolds <phil@redbrick.dcu.ie>
+Cc: ilug@linux.ie
+Subject: Re: [ILUG] ipfw vs ipchains vs iptables
+In-Reply-To: <20020729191853.A9864@prodigy.Redbrick.DCU.IE>
+Message-Id: <Pine.LNX.4.44.0207292143540.14923-100000@fogarty.jakma.org>
+X-Nsa: iraq saddam hammas hisballah rabin ayatollah korea vietnam revolt
+    mustard gas
+X-Dumb-Filters: aryan marijuiana cocaine heroin hardcore cum pussy porn
+    teen tit sex lesbian group
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Mon, 29 Jul 2002, Philip Reynolds wrote:
+
+> Well, that doesn't help you reading your listing.
+
+i can read it fine. :)
+
+if you want readability - a good script is worth just as much.
+
+> > isnt the ipfw code in BSD brand-new aswell? (the old code was
+> > rewritten for OpenBSD recently due to licensing concerns).
+> 
+> I think you're talking about IPFilter, and OpenBSD's new PF code.
+> Now who's talking FUD :)
+
+ah doh! yes.
+
+i thought the firewalling code on all the BSDs was fairly related -
+sorry. So FreeBSD's ipfw is not encumbered in the same way the old
+OBSD firewalling was?
+
+> Perhaps, although I think when seriously considering something like
+> a firewall, tried and trusted means a hell of a lot. IPFilter would
+> probably win that race.
+
+to an extent, i guess so, yes. but i've a few boxes with reasonable 
+uptimes that run netfilter/iptables. (i've one that has crashed twice 
+now after 60+ day uptimes. but that doesnt seem to be netfilter).
+
+course, there's a lot more that can go wrong with a firewall than the
+firewall code. in that case get 2 boxes and heartbeat them.
+
+> I was talking in terms of the actual firewall. If the company in
+> question knows plenty about Linux and nothing about FreeBSD, I'd go
+> with a Linux box, merely because when something goes wrong (that
+> isn't got to do with ipfw/ipchains/ipfilter), then someone knows
+> how to fix it.
+
+indeed. couldnt agree more.
+
+(that's the nice thing about *nix - fact we /can/ have nit-picking 
+arguments about which *nix and firewall code is better).
+
+> As I said before, I have little to no in-depth experience with
+> netfilter, I'm aware of it's basic capabilities and had a quick
+> look at it's features in early 2.4 editions but that's it.
+
+i've no experience of ipfw. (closest i've come is looking at IPFilter 
+for IRIX - but it had a problem in that it wasnt maintained 
+anymore. however, while the englishy syntax is nice, i dont think 
+iptables command <args> syntax is a big obstacle).
+
+anyway.. there's choice. and as i understand it, with the advent of 
+netfilter/iptables there's now almost nothing between them from a 
+technical POV. (apart from ipfw being in use a lot longer).
+
+regards,
+-- 
+Paul Jakma	paul@clubi.ie	paul@jakma.org	Key ID: 64A2FF6A
+Fortune:
+What a strange game.  The only winning move is not to play.
+		-- WOP, "War Games"
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

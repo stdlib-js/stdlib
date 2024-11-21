@@ -1,0 +1,75 @@
+From razor-users-admin@lists.sourceforge.net  Fri Jul 26 08:42:18 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3F76D440E8
+	for <jm@localhost>; Fri, 26 Jul 2002 03:42:14 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 26 Jul 2002 08:42:14 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6Q7fV400401 for <jm-razor@jmason.org>; Fri, 26 Jul 2002 08:41:31 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17Xzax-0003Bk-00; Fri,
+    26 Jul 2002 00:33:03 -0700
+Received: from cable-b-36.sigecom.net ([63.69.210.36] helo=kamakiriad.com)
+    by usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian))
+    id 17Xzak-0005xo-00 for <razor-users@lists.sourceforge.net>;
+    Fri, 26 Jul 2002 00:32:50 -0700
+Received: from aquila.kamakiriad.local (aquila.kamakiriad.local
+    [192.168.1.3]) by kamakiriad.com (8.11.6/8.11.0) with SMTP id g6Q7Wco26381
+    for <razor-users@lists.sourceforge.net>; Fri, 26 Jul 2002 02:32:38 -0500
+From: Brian Fahrlander <kilroy@kamakiriad.com>
+To: razor-users@example.sourceforge.net
+Message-Id: <20020726023237.29104326.kilroy@kamakiriad.com>
+X-Mailer: Sylpheed version 0.8.1 (GTK+ 1.2.10; i386-redhat-linux)
+X-Message-Flag: : Shame on you!  You know Outlook is how viruses are spread!
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+X-MIME-Autoconverted: from 8bit to quoted-printable by kamakiriad.com id
+    g6Q7Wco26381
+Subject: [Razor-users] Archive Question
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Fri, 26 Jul 2002 02:32:37 -0500
+Date: Fri, 26 Jul 2002 02:32:37 -0500
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g6Q7fV400401
+
+
+    Uh, guys?  I can't seem to find the RPMs anymore.  Does anyone else remember the URL?
+
+  
+------------------------------------------------------------------------
+Brian Fahrländer              Linux Zealot, Conservative, and Technomad
+Evansville, IN                    My Voyage: http://www.CounterMoon.com
+ICQ  5119262
+------------------------------------------------------------------------
+I don't want to hear news from Isreal until the news contains the words
+"Bullet", "Brain", and "Arafat".
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

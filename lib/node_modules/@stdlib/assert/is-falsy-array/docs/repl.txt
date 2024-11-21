@@ -1,0 +1,27 @@
+
+{{alias}}( value )
+    Tests if a value is an array-like object containing only falsy values.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a value is an array-like object containing
+        only falsy values.
+
+    Examples
+    --------
+    > var bool = {{alias}}( [ null, '' ] )
+    true
+    > bool = {{alias}}( [ {}, [] ] )
+    false
+    > bool = {{alias}}( [] )
+    false
+
+    See Also
+    --------
+

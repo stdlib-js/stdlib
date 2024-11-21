@@ -1,0 +1,9 @@
+
+Usage: is-anagram [options] [<string>] --str=<string>
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --str string          Comparison string.
+         --split sep           Delimiter for stdin data. Default: '/\\r?\\n/'.

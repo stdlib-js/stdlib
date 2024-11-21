@@ -1,0 +1,33 @@
+
+{{alias}}( fcn, n[, thisArg] )
+    Invokes a function `n` times and returns an array of accumulated function
+    return values.
+
+    The invoked function is provided a single argument: the invocation index
+    (zero-based).
+
+    Parameters
+    ----------
+    fcn: Function
+        Function to invoke.
+
+    n: integer
+        Number of times to invoke a function.
+
+    thisArg: any (optional)
+        Function execution context.
+
+    Returns
+    -------
+    out: Array
+        Array of accumulated function return values.
+
+    Examples
+    --------
+    > function fcn( i ) { return i; };
+    > var arr = {{alias}}( fcn, 5 )
+    [ 0, 1, 2, 3, 4 ]
+
+    See Also
+    --------
+

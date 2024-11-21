@@ -1,0 +1,47 @@
+
+{{alias}}( [month[, day, year]] )
+    Returns the day of the quarter.
+
+    By default, the function returns the day of the quarter for the current date
+    (according to local time). To determine the day of the quarter for a
+    particular day, provide `month`, `day`, and `year` arguments.
+
+    A `month` may be either a month's integer value, three letter abbreviation,
+    or full name (case insensitive).
+
+    The function also accepts a `Date` object.
+
+    Parameters
+    ----------
+    month: string|integer|Date (optional)
+        Month (or `Date`).
+
+    day: integer (optional)
+        Day.
+
+    year: integer (optional)
+        Year.
+
+    Returns
+    -------
+    out: integer
+        Day of the quarter.
+
+    Examples
+    --------
+    > var day = {{alias}}()
+    <number>
+    > day = {{alias}}( new Date() )
+    <number>
+    > day = {{alias}}( 12, 31, 2017 )
+    92
+
+    // Other ways to supply month:
+    > day = {{alias}}( 'dec', 31, 2017 )
+    92
+    > day = {{alias}}( 'december', 31, 2017 )
+    92
+
+    See Also
+    --------
+

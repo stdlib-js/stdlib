@@ -1,0 +1,77 @@
+{
+  "name": "@stdlib/ndarray/base/minmax-view-buffer-index",
+  "version": "0.0.0",
+  "description": "Compute the minimum and maximum linear indices in an underlying data buffer which are accessible to an array view.",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "main": "./lib",
+  "directories": {
+    "benchmark": "./benchmark",
+    "doc": "./docs",
+    "example": "./examples",
+    "include": "./include",
+    "lib": "./lib",
+    "src": "./src",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "scripts": {},
+  "homepage": "https://github.com/stdlib-js/stdlib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stdlib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
+  "keywords": [
+    "stdlib",
+    "stdtypes",
+    "types",
+    "base",
+    "ndarray",
+    "strides",
+    "minimum",
+    "min",
+    "maximum",
+    "max",
+    "minmax",
+    "linear",
+    "index",
+    "idx",
+    "view",
+    "multidimensional",
+    "array",
+    "utilities",
+    "utility",
+    "utils",
+    "util"
+  ],
+  "__stdlib__": {}
+}

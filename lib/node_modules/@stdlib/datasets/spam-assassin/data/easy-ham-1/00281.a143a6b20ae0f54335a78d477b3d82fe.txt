@@ -1,0 +1,78 @@
+From rpm-list-admin@freshrpms.net  Wed Oct  9 10:50:24 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id 8A47F16F18
+	for <zzzz@localhost>; Wed,  9 Oct 2002 10:48:36 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 09 Oct 2002 10:48:36 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g98MLVK04458 for
+    <zzzz-rpm@spamassassin.taint.org>; Tue, 8 Oct 2002 23:21:31 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g98MF3f29297; Wed, 9 Oct 2002 00:15:03
+    +0200
+Received: from tgpsolutions.com (dsl-gte-15882-1.linkline.com
+    [64.30.214.144]) by egwn.net (8.11.6/8.11.6/EGWN) with SMTP id
+    g98MEDf26738 for <rpm-list@freshrpms.net>; Wed, 9 Oct 2002 00:14:13 +0200
+Received: (qmail 32392 invoked for bounce); 8 Oct 2002 22:13:06 -0000
+Received: from unknown (HELO damocles.turtle-rock) (68.5.247.81) by
+    dsl-gte-15882-1.linkline.com with SMTP; 8 Oct 2002 22:13:06 -0000
+Subject: xine cannot play DVDs - "liba52: a52_block error"
+From: Jon <jon@tgpsolutions.com>
+To: rpm-zzzlist@freshrpms.net
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8 (1.0.8-10)
+Message-Id: <1034115445.10490.4.camel@damocles>
+MIME-Version: 1.0
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: 08 Oct 2002 15:17:25 -0700
+Date: 08 Oct 2002 15:17:25 -0700
+
+Since libdvdcss-1.2.0, I have been unable to play DVDs using ogle, xine,
+vlc, or mplayer.  They all show a scrambled picture with (VERY) choppy
+audio.  When I run xine I see tons of these in the console: 
+
+liba52: a52_block error
+liba52: a52_block error
+liba52: a52_block error
+liba52: a52_block error
+audio_out: inserting 5859 0-frames to fill a gap of 10989 pts
+metronom: audio jump
+liba52: a52_block error
+
+Has anyone seen this before and know how to fix it?  Or should I file a
+bug report?  
+
+Thanks for your help.  
+
+- Jon
+
+-- 
+jon@tgpsolutions.com
+
+Administrator, tgpsolutions
+http://www.tgpsolutions.com
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

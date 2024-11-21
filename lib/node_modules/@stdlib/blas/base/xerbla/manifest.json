@@ -1,0 +1,522 @@
+{
+  "options": {
+    "task": "build",
+    "os": "linux",
+    "blas": "",
+    "wasm": false
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "os": "linux",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/xerbla.f",
+        "./src/xerbla.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/napi/export"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "linux",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/xerbla.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
+    },
+    {
+      "task": "examples",
+      "os": "linux",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/xerbla.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
+    },
+    {
+      "task": "",
+      "os": "linux",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/xerbla.f",
+        "./src/xerbla.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
+    },
+
+    {
+      "task": "build",
+      "os": "linux",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/xerbla_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/napi/export"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "linux",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/xerbla_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
+    },
+    {
+      "task": "examples",
+      "os": "linux",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/xerbla_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
+    },
+    {
+      "task": "",
+      "os": "linux",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/xerbla_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
+    },
+
+    {
+      "task": "build",
+      "os": "mac",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/xerbla.f",
+        "./src/xerbla.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/napi/export"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "mac",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/xerbla.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
+    },
+    {
+      "task": "examples",
+      "os": "mac",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/xerbla.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
+    },
+    {
+      "task": "",
+      "os": "mac",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/xerbla.f",
+        "./src/xerbla.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
+    },
+
+    {
+      "task": "build",
+      "os": "mac",
+      "blas": "apple_accelerate_framework",
+      "wasm": false,
+      "src": [
+        "./src/xerbla_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lblas"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/napi/export"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "mac",
+      "blas": "apple_accelerate_framework",
+      "wasm": false,
+      "src": [
+        "./src/xerbla_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lblas"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
+    },
+    {
+      "task": "examples",
+      "os": "mac",
+      "blas": "apple_accelerate_framework",
+      "wasm": false,
+      "src": [
+        "./src/xerbla_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lblas"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
+    },
+    {
+      "task": "",
+      "os": "mac",
+      "blas": "apple_accelerate_framework",
+      "wasm": false,
+      "src": [
+        "./src/xerbla_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lblas"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
+    },
+
+    {
+      "task": "build",
+      "os": "mac",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/xerbla_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/napi/export"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "mac",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/xerbla_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
+    },
+    {
+      "task": "examples",
+      "os": "mac",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/xerbla_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
+    },
+    {
+      "task": "",
+      "os": "mac",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/xerbla_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
+    },
+
+    {
+      "task": "build",
+      "os": "win",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/xerbla.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/napi/export"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "win",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/xerbla.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
+    },
+    {
+      "task": "examples",
+      "os": "win",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/xerbla.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
+    },
+    {
+      "task": "",
+      "os": "win",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/xerbla.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
+    },
+
+    {
+      "task": "build",
+      "os": "",
+      "blas": "",
+      "wasm": true,
+      "src": [
+        "./src/xerbla.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
+    },
+    {
+      "task": "",
+      "os": "",
+      "blas": "",
+      "wasm": true,
+      "src": [
+        "./src/xerbla.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared"
+      ]
+    }
+  ]
+}

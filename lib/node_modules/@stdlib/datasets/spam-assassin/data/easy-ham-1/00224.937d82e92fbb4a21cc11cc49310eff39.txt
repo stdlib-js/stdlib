@@ -1,0 +1,112 @@
+From exmh-workers-admin@redhat.com  Wed Aug 28 11:51:59 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5244143F99
+	for <zzzz@localhost>; Wed, 28 Aug 2002 06:51:59 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 28 Aug 2002 11:51:59 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7SAjqZ20559 for
+    <zzzz-exmh@spamassassin.taint.org>; Wed, 28 Aug 2002 11:45:55 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 96FA13EC3A; Wed, 28 Aug 2002
+    06:46:01 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 9E13B3EC3A
+    for <exmh-workers@listman.redhat.com>; Wed, 28 Aug 2002 06:45:18 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g7SAjFW14386 for exmh-workers@listman.redhat.com; Wed, 28 Aug 2002
+    06:45:15 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g7SAjFY14382 for
+    <exmh-workers@redhat.com>; Wed, 28 Aug 2002 06:45:15 -0400
+Received: from ratree.psu.ac.th ([202.28.97.6]) by mx1.spamassassin.taint.org
+    (8.11.6/8.11.6) with SMTP id g7SAU7l27968 for <exmh-workers@redhat.com>;
+    Wed, 28 Aug 2002 06:30:08 -0400
+Received: from delta.cs.mu.OZ.AU (dhcp253.cc.psu.ac.th [192.168.2.253]) by
+    ratree.psu.ac.th (8.11.6/8.11.6) with ESMTP id g7SAikU28134 for
+    <exmh-workers@redhat.com>; Wed, 28 Aug 2002 17:44:46 +0700 (ICT)
+Received: from munnari.OZ.AU (localhost [127.0.0.1]) by delta.cs.mu.OZ.AU
+    (8.11.6/8.11.6) with ESMTP id g7SAiSW20156 for <exmh-workers@redhat.com>;
+    Wed, 28 Aug 2002 17:44:28 +0700 (ICT)
+From: Robert Elz <kre@munnari.OZ.AU>
+To: exmh-workers@spamassassin.taint.org
+Subject: Patch to enable/disable log
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Message-Id: <20154.1030531468@munnari.OZ.AU>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Wed, 28 Aug 2002 17:44:28 +0700
+
+While I was playing with the past issues, it annoyed me that there was
+no easy way to make the log stop growing (I don't mean to truncate it,
+I mean to just freeze it for a while).
+
+The following patch adds a new button to the log window, which allows
+the log to be switched on/off (the button says "Disable" when the
+log is enabled, and the button disables it, and "Enable" when the log
+is frozen, and the button enables it again).
+
+kre
+
+--- main.tcl	Wed Aug 21 15:01:48 2002
++++ /usr/local/lib/exmh-2.5/main.tcl	Wed Aug 28 17:36:59 2002
+@@ -385,6 +385,9 @@
+ 	ExmhLogCreate
+ 	wm withdraw $exmh(logTop)
+     }
++    if {! $exmh(logWrite)} {
++	return
++    }
+     if [info exists exmh(log)] {
+ 	catch {
+ #	    $exmh(log) insert end " [bw_delta] "
+@@ -407,6 +410,9 @@
+     set exmh(logWindow) 1
+     Exwin_Toplevel .log "Exmh Log" Log
+     set exmh(logTop) .log
++    set exmh(logDisableBut) \
++	[Widget_AddBut $exmh(logTop).but swap "Disable" ExmhLogToggle]
++    set exmh(logWrite) 1
+     Widget_AddBut $exmh(logTop).but trunc "Truncate" ExmhLogTrunc
+     Widget_AddBut $exmh(logTop).but save "Save To File" ExmhLogSave
+     set exmh(logYview) 1
+@@ -457,6 +463,12 @@
+     } msg] {
+ 	Exmh_Status "Cannot save log: $msg" error
+     }
++}
++proc ExmhLogToggle {} {
++    global exmh
++
++    set exmh(logWrite) [expr ! $exmh(logWrite)]
++    $exmh(logDisableBut) configure -text [lindex {"Enable " Disable} $exmh(logWrite)]
+ }
+ #### Misc
+ 
+
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+

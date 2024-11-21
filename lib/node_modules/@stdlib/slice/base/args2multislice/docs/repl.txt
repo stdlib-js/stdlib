@@ -1,0 +1,28 @@
+
+{{alias}}( args )
+    Creates a MultiSlice object from a list of MultiSlice constructor arguments.
+
+    Parameters
+    ----------
+    args: Array<Slice|integer|null|undefined>
+        Constructor arguments.
+
+    Returns
+    -------
+    s: MultiSlice
+        MultiSlice instance.
+
+    Examples
+    --------
+    > var args = [ null, null, null ];
+    > var s = new {{alias}}( args );
+    > s.data
+    [ null, null, null ]
+    > args = [ 10, new {{alias:@stdlib/slice/ctor}}( 0, 10, 1 ), null ];
+    > s = new {{alias}}( args );
+    > s.data
+    [ 10, <Slice>, null ]
+
+    See Also
+    --------
+

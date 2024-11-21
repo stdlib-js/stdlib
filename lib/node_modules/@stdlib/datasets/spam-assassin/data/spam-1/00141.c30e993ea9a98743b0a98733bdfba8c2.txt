@@ -1,0 +1,73 @@
+From allcontacts-bounce@briefs.ein.cz  Wed Aug 28 15:29:15 2002
+Return-Path: <allcontacts-bounce@briefs.ein.cz>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.spamassassin.taint.org (Postfix) with ESMTP id BCE1D44155
+	for <zzzz@localhost>; Wed, 28 Aug 2002 10:29:14 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 28 Aug 2002 15:29:14 +0100 (IST)
+Received: from bay.ein.cz (bay.ein.cz [62.24.69.193]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7SEMqZ27998 for
+    <webmaster@efi.ie>; Wed, 28 Aug 2002 15:22:52 +0100
+Received: from oak.ein.cz (oak.ein.cz [62.24.69.194]) by bay.ein.cz
+    (Postfix) with ESMTP id 2E591135B8; Wed, 28 Aug 2002 15:59:13 +0200 (CEST)
+Received: by oak.ein.cz (Postfix, from userid 1002) id F3B511BEA0;
+    Wed, 28 Aug 2002 15:58:49 +0200 (CEST)
+From: EIN News <pe@europeaninternet.com>
+To: EIN Media <allcontacts@briefs.ein.cz>
+Subject: Iraq Today Daily News - FREE Trial
+X-Author: pe@einmedia.com
+Message-Id: <20020828135844.C27501BE9F@oak.ein.cz>
+Date: Wed, 28 Aug 2002 15:58:44 +0200 (CEST)
+Sender: allcontacts-bounce@briefs.ein.cz
+Errors-To: allcontacts-bounce@briefs.ein.cz
+Precedence: bulk
+
+Dear Sir/Madam,
+
+My name is Petr Stanek and I am managing the Iraq Today
+news service (www.europeaninternet.com/iraq). Iraq Today
+contains hourly updated breaking news headlines, exchange rates,
+market news and other important information.
+
+You and your associates can have a FREE TRIAL
+SUBSCRIPTION to Iraq Today.
+
+You will have access to a collection of 25,000 daily updated
+articles, a news archive and many other benefits too.
+
+Once again, this trial is FREE. To subscribe, just reply to this
+e-mail or sign up at:
+http://www.europeaninternet.com/login/affiliate_register.php3
+
+A partial list of current EIN subscribers can be found at:
+http://www.europeaninternet.com/mediakit/
+
+If you have any questions, comments, or need assistance signing
+up, please contact us personally by either writing to
+helpdesk@europeaninternet.com or simply replying to this email.
+
+Please feel free to forward this offer to any of your colleagues.
+
+Best regards,
+
+Petr Stanek
+Subscription Department
+EIN News
+
+
+
+
+
+
+
+
+
+
+
+To be removed please reply to: remove@europeaninternet.com
+
+
+
+

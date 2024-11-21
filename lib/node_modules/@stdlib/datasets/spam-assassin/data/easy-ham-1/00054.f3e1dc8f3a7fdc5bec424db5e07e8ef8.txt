@@ -1,0 +1,67 @@
+From ilug-admin@linux.ie  Thu Aug 29 17:03:22 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8730543F99
+	for <zzzz@localhost>; Thu, 29 Aug 2002 12:03:21 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Thu, 29 Aug 2002 17:03:21 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7TFw4Z19203 for
+    <zzzz-ilug@spamassassin.taint.org>; Thu, 29 Aug 2002 16:58:04 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA32495; Thu, 29 Aug 2002 16:56:53 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail04.svc.cra.dublin.eircom.net
+    (mail04.svc.cra.dublin.eircom.net [159.134.118.20]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id QAA32465 for <ilug@linux.ie>; Thu,
+    29 Aug 2002 16:56:45 +0100
+Received: (qmail 20521 messnum 1113064 invoked from
+    network[213.190.156.48/unknown]); 29 Aug 2002 15:56:14 -0000
+Received: from unknown (HELO XENON16) (213.190.156.48) by
+    mail04.svc.cra.dublin.eircom.net (qp 20521) with SMTP; 29 Aug 2002
+    15:56:14 -0000
+Message-Id: <006001c24f74$dc1acde0$e600000a@XENON16>
+From: "wintermute" <cout@eircom.net>
+To: <ilug@linux.ie>
+References: <LAEAIGLCKFNPNHBDGGEGMEKICFAA.aj.mckee@nmtbmedia.com>
+    <3D6E40AA.9080606@diva.ie>
+Subject: Re: [ILUG] eircoms adsl modems
+Date: Thu, 29 Aug 2002 16:58:04 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.50.4522.1200
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4910.0300
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+
+Not true on the choice part.
+
+After three weeks of me telling eircom that I did not in fact need nor want
+their ?1800 worth of router and firewall
+nor their onsite survey... for the uncapped service I actually managed to
+get a 4 port modem (after asking for a 1 port modem) instead of ye olde
+hardware router & firewall and eircom onsite.
+
+I would have argued for the 1 port modem... (which I had asked for), but a
+Director wanted the DSL up ... and fast....
+
+Still it only took me three weeks to get (almost) what I
+wanted....................................
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

@@ -1,0 +1,148 @@
+From fork-admin@xent.com  Wed Sep  4 11:42:23 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 3EC1A16F76
+	for <jm@localhost>; Wed,  4 Sep 2002 11:40:18 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 04 Sep 2002 11:40:18 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g845KvZ20808 for <jm@jmason.org>;
+    Wed, 4 Sep 2002 06:20:58 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id DD10829409C; Tue,  3 Sep 2002 22:18:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp6.mindspring.com (smtp6.mindspring.com
+    [207.69.200.110]) by xent.com (Postfix) with ESMTP id B8988294099 for
+    <fork@xent.com>; Tue,  3 Sep 2002 22:17:41 -0700 (PDT)
+Received: from user-119ac86.biz.mindspring.com ([66.149.49.6]) by
+    smtp6.mindspring.com with esmtp (Exim 3.33 #1) id 17mSaG-0006jX-00;
+    Wed, 04 Sep 2002 01:20:08 -0400
+MIME-Version: 1.0
+X-Sender: rahettinga@pop.earthlink.net
+Message-Id: <p05111a12b99b45690b78@[66.149.49.6]>
+To: <fork@spamassassin.taint.org>
+From: "R. A. Hettinga" <rah@shipwright.com>
+Subject: Re: Electric car an Edsel...
+Content-Type: text/plain; charset="us-ascii"
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 4 Sep 2002 01:08:58 -0400
+
+
+--- begin forwarded text
+
+
+From: A guy who models plasma all day...
+To: "R. A. Hettinga" <rah@shipwright.com>
+Subject: Re: Electric car an Edsel...
+Date: Tue, 3 Sep 2002 22:49:20 -0600
+
+Bob,
+
+This capacitor drive idea isn't completely stupid, but neither is it well
+thought out.
+
+Maxwell (www.maxwell.com) makes and sells high energy density capacitors,
+called ultracapacitors.  They deliver them in an air-cooled, voltage
+regulated module that will charge to 42 V and hold 128 kilojoules -- roughly
+the energy in 2 teaspoons of sugar or a bite of a donut -- and weighs 16
+kilograms.  If that electrical energy could all be converted to kinetic
+energy, there's enough to get the capacitor module up to about 200 mph -- in
+a vacuum.
+
+Suppose you take the entire power density of the capacitor module -- 2.8
+kw/kg (~4 hp/kg!) --  and punch it through an electric motor.  How much does
+the 64 hp electric motor weigh?  If it were as little as 50 kg -- and I bet
+it isn't -- that capacitor and motor would have a top speed of 100 mph --
+the speed at which their energy is the 128 kJ that was initially stored
+electrically in the capacitor.  And it's not at all obvious that the torque
+vs. speed characteristic of 42 V DC motors will support this, or how they do
+it without wheels, drive train, etc.
+
+But if they can, they can only do it in a vacuum where there is no drag!
+
+On to the Lunarnationals?  Or would you prefer the bite of donut?
+
+
+<Somebody's .sig>
+
+----- Original Message -----
+From: "R. A. Hettinga" <rah@shipwright.com>
+To: "Vinnie Moscaritolo" <vinnie@vmeng.com>; "Randolph Elliott"
+<elliott@engineous.com>; <NicholasFC@aol.com>; "Duncan Goldie-Scot"
+<dgs@btinternet.com>; "G. Gruff" <g_gruff@yahoo.com>;
+<michael.frese@numerex.com>
+Sent: Monday, September 02, 2002 11:15 PM
+Subject: Re: Electric car an Edsel...
+
+
+>
+> --- begin forwarded text
+>
+>
+> Status: RO
+> Delivered-To: fork@spamassassin.taint.org
+> From: "Adam L. Beberg" <beberg@mithral.com>
+> To: RossO <fork@ordersomewherechaos.com>
+> Cc: <fork@spamassassin.taint.org>
+> Subject: Re: Electric car an Edsel...
+> Sender: fork-admin@xent.com
+> Date: Mon, 2 Sep 2002 21:24:47 -0700 (PDT)
+>
+> On 2 Sep 2002, RossO wrote:
+>
+> > John Waylan (who was interviewed in Wired a few years back) pulled out a
+> > 14.4 second run in the quarter mile (91mph), on a battery pack that
+> > hasn't been broken in yet. He expects to break his record next year
+> > topping his 13.1sec/99mph run a couple of years ago. He's shooting for a
+> > 12 second run.
+>
+> Battery pack, huh what???
+>
+> You dont use batteries for a 1/4 mile run, you use capacitors. MANY times
+> the energy density, and you can get the energy out fast enough. Note that
+> the battery packs are fully swapped out for recharging after each run
+> anyway, just like a gas dragster is refueled, so this wouldnt be cheating.
+> 200 MPH should be no problem.
+>
+> - Adam L. "Duncan" Beberg
+>   http://www.mithral.com/~beberg/
+>   beberg@mithral.com
+>
+> --- end forwarded text
+>
+>
+> --
+> -----------------
+> R. A. Hettinga <mailto: rah@ibuc.com>
+> The Internet Bearer Underwriting Corporation <http://www.ibuc.com/>
+> 44 Farquhar Street, Boston, MA 02131 USA
+> "... however it may deserve respect for its usefulness and antiquity,
+> [predicting the end of the world] has not been found agreeable to
+> experience." -- Edward Gibbon, 'Decline and Fall of the Roman Empire'
+>
+
+--- end forwarded text
+
+
+-- 
+-----------------
+R. A. Hettinga <mailto: rah@ibuc.com>
+The Internet Bearer Underwriting Corporation <http://www.ibuc.com/>
+44 Farquhar Street, Boston, MA 02131 USA
+"... however it may deserve respect for its usefulness and antiquity,
+[predicting the end of the world] has not been found agreeable to
+experience." -- Edward Gibbon, 'Decline and Fall of the Roman Empire'
+

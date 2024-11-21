@@ -1,0 +1,119 @@
+From exmh-workers-admin@redhat.com  Mon Aug 26 15:25:08 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3C7354416C
+	for <jm@localhost>; Mon, 26 Aug 2002 10:22:56 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 15:22:56 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7Q5twZ11356 for
+    <jm-exmh@jmason.org>; Mon, 26 Aug 2002 06:55:58 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id B3C033EA30; Mon, 26 Aug 2002
+    01:56:03 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id A3DBC3EA1F
+    for <exmh-workers@listman.redhat.com>; Mon, 26 Aug 2002 01:55:38 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g7Q5tZq02785 for exmh-workers@listman.redhat.com; Mon, 26 Aug 2002
+    01:55:35 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g7Q5tZY02781 for
+    <exmh-workers@redhat.com>; Mon, 26 Aug 2002 01:55:35 -0400
+Received: from ratree.psu.ac.th ([202.28.97.6]) by mx1.spamassassin.taint.org
+    (8.11.6/8.11.6) with SMTP id g7Q5eVl00679 for <exmh-workers@redhat.com>;
+    Mon, 26 Aug 2002 01:40:31 -0400
+Received: from delta.cs.mu.OZ.AU (delta.coe.psu.ac.th [172.30.0.98]) by
+    ratree.psu.ac.th (8.11.6/8.11.6) with ESMTP id g7Q5stl16170;
+    Mon, 26 Aug 2002 12:55:00 +0700 (ICT)
+Received: from munnari.OZ.AU (localhost [127.0.0.1]) by delta.cs.mu.OZ.AU
+    (8.11.6/8.11.6) with ESMTP id g7OBu5W25411; Sat, 24 Aug 2002 18:56:05
+    +0700 (ICT)
+From: Robert Elz <kre@munnari.OZ.AU>
+To: Chris Garrigues <cwg-dated-1030460647.7351a3@DeepEddy.Com>
+Cc: exmh-workers@spamassassin.taint.org
+Subject: Re: New Sequences Window
+In-Reply-To: <1030028647.6462.TMDA@deepeddy.vircio.com>
+References: <1030028647.6462.TMDA@deepeddy.vircio.com>
+    <1029945287.4797.TMDA@deepeddy.vircio.com>
+    <1029882468.3116.TMDA@deepeddy.vircio.com> <9627.1029933001@munnari.OZ.AU>
+    <1029943066.26919.TMDA@deepeddy.vircio.com>
+    <1029944441.398.TMDA@deepeddy.vircio.com> <13277.1030015920@munnari.OZ.AU>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Message-Id: <25409.1030190165@munnari.OZ.AU>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Sat, 24 Aug 2002 18:56:05 +0700
+
+    Date:        Thu, 22 Aug 2002 10:04:06 -0500
+    From:        Chris Garrigues <cwg-dated-1030460647.7351a3@DeepEddy.Com>
+    Message-ID:  <1030028647.6462.TMDA@deepeddy.vircio.com>
+
+  | hmmm, I assume you're going to report this to the nmh folks?
+
+Yes, I will, sometime, after I look at the nmh sources and see what
+they have managed to break, and why.
+
+But we really want exmh to operate with all the versions of nmh that
+exist, don't we?   The patch to have exmh do the right thing, whether this
+bug exists, or not, is trivial, so I'd suggest including it.
+
+Patch follows ...
+
+I have no idea why the sequences were being added after the message list
+before, not that it should make any difference to nmh (or MH).   But since
+I stopped doing that, the variable "msgs" isn't really needed any more,
+rather than assigning $pick(msgs) to msgs, and then using $msgs the code
+could just use $pick(msgs) where $msgs is now used.   This is just a
+frill though, so I didn't change that.  
+
+kre
+
+--- pick.tcl	Fri Aug 23 16:28:14 2002
++++ /usr/local/lib/exmh-2.5/pick.tcl	Sat Aug 24 18:14:44 2002
+@@ -128,7 +128,7 @@
+ }
+ proc Pick_It {} {
+     global pick exmh
+-    set cmd [list exec pick +$exmh(folder) -list]
++    set cmd [list exec pick +$exmh(folder)]
+     set inpane 0
+     set hadpane 0
+     for {set pane 1} {$pane <= $pick(panes)} {incr pane} {
+@@ -175,8 +175,9 @@
+     }
+     set msgs $pick(msgs)
+     foreach s $pick(sequence) {
+-	lappend msgs -sequence $s
++	lappend cmd -sequence $s
+     }
++    lappend cmd -list
+ 
+     Exmh_Debug Pick_It $cmd $msgs
+     busy PickInner $cmd $msgs
+
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+

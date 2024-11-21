@@ -1,0 +1,87 @@
+From exmh-workers-admin@redhat.com  Mon Jul 29 11:24:44 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3276C440F1
+	for <jm@localhost>; Mon, 29 Jul 2002 06:22:56 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 11:22:56 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6RAFDi19285 for
+    <jm-exmh@JMASON.ORG>; Sat, 27 Jul 2002 11:15:13 +0100
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id XAA14409 for <jm-exmh@jmason.org>;
+    Fri, 26 Jul 2002 23:14:20 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 089D4409C7; Fri, 26 Jul 2002
+    18:13:17 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id F155540B1B
+    for <exmh-workers@listman.redhat.com>; Fri, 26 Jul 2002 18:01:04 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g6QM15F20597 for exmh-workers@listman.redhat.com; Fri, 26 Jul 2002
+    18:01:05 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g6QM14R20593 for
+    <exmh-workers@redhat.com>; Fri, 26 Jul 2002 18:01:04 -0400
+Received: from blackcomb.panasas.com (gw2.panasas.com [65.194.124.178]) by
+    mx1.redhat.com (8.11.6/8.11.6) with SMTP id g6QLn7s07986 for
+    <exmh-workers@redhat.com>; Fri, 26 Jul 2002 17:49:08 -0400
+Received: from medlicott.panasas.com (IDENT:welch@medlicott.panasas.com
+    [172.17.132.188]) by blackcomb.panasas.com (8.9.3/8.9.3) with ESMTP id
+    SAA15582 for <exmh-workers@redhat.com>; Fri, 26 Jul 2002 18:00:58 -0400
+Message-Id: <200207262200.SAA15582@blackcomb.panasas.com>
+X-Mailer: exmh version 2.5.9 07/25/2002 with nmh-1.0.4
+To: exmh-workers@spamassassin.taint.org
+Subject: cvs access working?
+From: Brent Welch <welch@panasas.com>
+X-Url: http://www.panasas.com/
+X-Face: "HxE|?EnC9fVMV8f70H83&{fgLE.|FZ^$>@Q(yb#N,Eh~N]e&]=>
+    r5~UnRml1:4EglY{9B+ :'wJq$@c_C!l8@<$t,{YUr4K,QJGHSvS~U]H`<+L*x?eGzSk>XH\W:AK\j?@?c1o<k;j'Ei/UL)!*0
+    ILwSR)J\bc)gjz!rrGQ2#i*f:M:ydhK}jp4dWQW?;0{,#iWrCV$4~%e/3)$1/D
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Fri, 26 Jul 2002 15:00:57 -0700
+
+Can anyone access the CVS server for exmh?
+The last thing I was able to do was try a "cvs commit", but
+I got an "up-to-date check failed" for a couple files,
+exmh.CHANGES and lib/msg.tcl, I think, so I then tried "cvs update".
+I get a password prompt, and then it just hangs.
+
+cat CVS/Root
+welch@cvs.sourceforge.net:/cvsroot/exmh
+
+--
+Brent Welch
+Software Architect, Panasas Inc
+Pioneering the World's Most Scalable and Agile Storage Network
+www.panasas.com
+welch@panasas.com
+
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+

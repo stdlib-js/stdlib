@@ -1,0 +1,492 @@
+Return-Path: <Online#3.19676.e7-ldDFl1QrfB8URRRR.1.b@newsletter.online.com>
+Received: from abv-sfo1-acmta1.CNET.COM (abv-sfo1-acmta1.cnet.com [206.16.1.160])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6AIpaJ29804
+	for <qqqqqqqqqq-cnet-newsletters@spamassassin.taint.org>; Wed, 10 Jul 2002 19:51:36 +0100
+Received: from abv-sfo1-ac-agent6 (206.16.0.241) by abv-sfo1-acmta1.CNET.COM (PowerMTA(TM) v1.5); Wed, 10 Jul 2002 11:52:19 -0700 (envelope-from <Online#3.19676.e7-ldDFl1QrfB8URRRR.1.b@newsletter.online.com>)
+Message-ID: <3888067.1026327089578.JavaMail.root@abv-sfo1-ac-agent6>
+Date: Wed, 10 Jul 2002 11:51:29 -0700 (PDT)
+From: CNET Handhelds Newsletter <Online#3.19676.e7-ldDFl1QrfB8URRRR.1@newsletter.online.com>
+To: qqqqqqqqqq-cnet-newsletters@spamassassin.taint.org
+Subject: Xscale disappoints in Toshiba's e740
+Mime-Version: 1.0
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+X-Mailer: Accucast (http://www.accucast.com)
+X-Mailer-Version: 2.8.4-2
+
+
+<html>
+<head>
+<title>CNET Handhelds Newsletter</title>
+</head>
+<body bgcolor="#eeeeee">
+
+<div align="center">
+
+<a href="top"></a>
+
+<!-- header -->
+<table cellpadding=0 cellspacing=0 border=0 width=612 bgcolor="#ffffff">
+<tr valign=top>
+      <td width=442 colspan=4><img src="http://a.r.tv.com/cnet.1d/i/nl/hh/hh_hdr.gif" width=442 height=60 alt="Handhelds Newsletter"><br>
+<table width=442 cellpadding=0 cellspacing=0 border=0 bgcolor="#ffcc00">
+<tr><td bgcolor="#000000" colspan=3><img src="http://a.r.tv.com/cnet.1d/b.gif" width=1 height=1></td></tr>
+<tr><td bgcolor="#000000" width=1 rowspan=2><img src="http://a.r.tv.com/cnet.1d/b.gif" width=1 height=10></td>
+<td width=10 rowspan=2><img src="http://a.r.tv.com/cnet.1d/b.gif" width=1 height=10></td>
+<td width=430><img src="http://a.r.tv.com/cnet.1d/b.gif" width=1 height=10></td></tr>
+<tr><td bgcolor="#000000"><img src="http://a.r.tv.com/cnet.1d/b.gif" width=1 height=1></td></tr>
+</table></td>
+
+<!-- skyscraper column -->
+<td width=160 rowspan=2><img src="http://www.cnet.com/i/nl/dd_b.gif" width=160 height=18><br>
+<table cellpadding=0 cellspacing=0 border=0 width=160>
+<tr><td align=center bgcolor="#eeeeee"><img src="http://www.cnet.com/Ads/Media/Images/ad10-dk.gif" width=120 height=10 alt="advertisement"></td></tr>
+</table>
+<iframe src="http://www.zdnet.com/include/ads/ifc/RGROUP=2560" scrolling="no" frameborder="0" hspace="0" vspace="0" height="600" width="160" marginheight="0" marginwidth="0">
+<script language="JavaScript" src="http://www.zdnet.com/include/ads/js/RGROUP=2560">
+</script>
+</iframe><br>
+
+
+<!-- search form -->
+<table cellspacing=0 cellpadding=0 width=150 border=0><form method=get action="http://www.search.com/redirect">
+<tr valign=top><td><font size="-1" face="arial,helvetica,sans-serif">
+<img src="http://a.r.tv.com/cnet.1d/i/se/dispatch_hd.gif" width=150 height=20 alt="CNET Search.com" border=0><br>
+<img src="http://cnet.comhttp://a.r.tv.com/cnet.1d/b.gif" width=1 height=1><br><input type=text name=q size=17 value=""><br>
+<select name=target class=frmel>
+ <option value="http://download.cnet.com/downloads/0,10150,0-10000-103-0-1-7,00.html?tag=srch&qt=%%q%%&cn=&ca=10000">Downloads
+ <option value="http://cnet.search.com/search?tag=ex.downloadmac.dispatch.srch.cnet">All CNET
+ <option value="http://www.search.com/search?tag=ex.downloadmac.dispatch.srch.web">The Web
+</select>&nbsp;<input type=submit value="Go!"></font></td></tr></form></table><p>
+<!-- /search form -->
+
+        <!-- right column content --> <img src="http://a.r.tv.com/cnet.1d/i/nl/dl/rhc_sh10.gif" width=150 height=20 alt="Shopper Top 10"><br>
+<table width=150 cellpadding=2 cellspacing=0 border=0>
+		<tr><td width=150>
+        		<font face="Arial, Helvetica, sans-serif" size="2"><b>Top-selling handhelds:</b></font><br>
+				<font face="arial, helvetica" size="-1">
+					<ol><li><a href="http://clickthru.online.com/Click?q=fd-BXDMQgOrlPcdkeXO_Iti64Q9t8uR" >Toshiba Pocket PC e310</a>
+						<li><a href="http://clickthru.online.com/Click?q=12-jaAKIl-XiP4Q-DR-pEvKY-qkCKsR" >Palm m515</a>
+						<li><a href="http://clickthru.online.com/Click?q=27-z9ZmIqI2asldIZrSkMRUVolYrBZR" >Handspring Treo 90</a>
+						<li><a href="http://clickthru.online.com/Click?q=3c-tK4RIcIslKaPXozY0VXXjhrHNHdR" >Compaq iPaq H3835</a>
+						<li><a href="http://clickthru.online.com/Click?q=51-QgUWIjJPu7f3hbjJlh9GpMUHM3rR" >Palm Vx</a>
+						<li><a href="http://clickthru.online.com/Click?q=67-PnDkIOEDC4WwO-lWhKPAKa1CPIPR" >Handspring Treo 270</a>
+						<li><a href="http://clickthru.online.com/Click?q=7c-7NCZIZWc-HKfZUkfLHDx1984BOnR" >Sony CLIE PEG-NR70V</a>
+						<li><a href="http://clickthru.online.com/Click?q=91-EZnpQAzyXW5WSV4Mzb-Byo4hJdcR" >Sony CLIE PEG-T615C</a>
+						<li><a href="http://clickthru.online.com/Click?q=a6-9zw4QCUBE5Xr7MUOvAKcnvjbgwRR" >Palm m130</a>
+						<li><a href="http://clickthru.online.com/Click?q=bb-yT94QYZBRtJqAuWRaT-Dc13yE_FR" >Toshiba Pocket PC e740</a>
+					</ol></font>
+       			<font face="Arial, Helvetica, sans-serif" size="-2">Find the latest prices for these and other handhelds on
+				<a href="http://clickthru.online.com/Click?q=d0-vjDhQWWFrE1SK1o7c7YuNDxuyC9R" ><b>CNET Shopper.com</b></a>.
+			</td></tr></table>
+<table width=150 cellpadding=2 cellspacing=0 border=0>
+<tr valign=top>
+<td><div align=center><img src="http://a.r.tv.com/cnet.1d/i/nl/hh/rhc_addspot.gif" width=150 height=20 alt="Add-on Spotlight" vspace="4"><br></td></tr></div>
+<tr><td><div align=center style="padding-bottom: 3px;><a href="http://clickthru.online.com/Click?q=e5-9Z7OQgyw_wD3wCKjnbcumX6cvbuR" ><img src="http://a.r.tv.com/cnet.1d/i/co/ps/120/7029816_120_1.gif" width=120 height=90 border=0></a><br><div align=left><font face="arial, helvetica" size="-1"><a href="http://clickthru.online.com/Click?q=fa-FmqNQhO2YqCPBqntvDA4oSMpoLsR" ><b>Handspring Eyemodule2</a></b><br>
+<font size="-2">Though it's a little expensive, the Eyemodule2 is a well-designed camera attachment that offers acceptable image quality</div><div align="left">
+<FONT face="arial, helvetica" size=-1><a href="http://clickthru.online.com/Click?q=0f-RM2lIqjktLc0VvRsUb9HGRJ1bfZR" >Check latest prices</a></font></div>
+</td></tr></table>
+<table width=150 cellpadding=2 cellspacing=0 border=0>
+<tr valign=top>
+<td>
+<img src="http://a.r.tv.com/cnet.1d/i/nl/hh/rhc_hhnews.gif" width=150 height=20 alt="Latest Handhelds News"><br>
+<font face="arial, helvetica" size="-1"><b><a href="http://clickthru.online.com/Click?q=24-8DdMIcz6qAzb7q0geUef92iqrwdR" >Start-up nears launch for Hiptop handheld<br>
+                </a></b><br>
+                <a href="http://clickthru.online.com/Click?q=39-7QgMIjI6yATlAXMCGLs-y39w-_cR" ><font face="Arial, Helvetica, sans-serif" size="2"><b>Start-up shrinks PC to palm size</font>
+
+            </td>
+          </tr>
+</table>
+<p>
+
+          <!-- featured reviews -->
+          <img src="http://a.r.tv.com/cnet.1d/i/nl/hh/rhc_handcov.gif" width=150 height=20 alt="More Handhelds Coverage"><br>
+<table width=150 cellpadding=2 cellspacing=0 border=0>
+<tr valign=top>
+            <td>
+ <font face="arial, helvetica" size="-1"><b>
+
+<a href="http://clickthru.online.com/Click?q=4f-Iar4IIU8lghO4j-8g-rrsLKFK0PR" >Most popular Palm downloads</a><br><img src="http://a.r.tv.com/cnet.1d/b.gif" width=1 height=5><br><a href="http://clickthru.online.com/Click?q=64-UBOhIuLfXctnIfZNGWF8w6YrPhnR" >Most popular Pocket PC downloads</a><br><img src="http://a.r.tv.com/cnet.1d/b.gif" width=1 height=5><br>
+
+<a href="http://clickthru.online.com/Click?q=79-rsQHIEBfv8BQNnXmFz_e0CvgparR" >Top 5 handhelds</a><br>
+<img src="http://a.r.tv.com/cnet.1d/b.gif" width=1 height=5><br>
+<a href="http://clickthru.online.com/Click?q=8e-Ve-cQCn70h0jI4UPDuYWD0V_WyRR" >Editors' Choice handhelds</a><br>
+<img src="http://a.r.tv.com/cnet.1d/b.gif" width=1 height=5><br>
+<a href="http://clickthru.online.com/Click?q=a3-qXf6QYU1CJ5mSe7fQffN5r5ls4FR" >News</a><br>
+<img src="http://a.r.tv.com/cnet.1d/b.gif" width=1 height=5><br>
+<a href="http://clickthru.online.com/Click?q=b8-smr2QQUwc6-3H5Ilq9S_p8qkEi9R" >Product reviews</a><br>
+<img src="http://a.r.tv.com/cnet.1d/b.gif" width=1 height=5><br>
+<a href="http://clickthru.online.com/Click?q=cd-VHhSQzsKTU51tyIFjAi_TOlRfXuR" >Wireless handhelds</a><br>
+<img src="http://a.r.tv.com/cnet.1d/b.gif" width=1 height=5><br>
+<a href="http://clickthru.online.com/Click?q=e2-J1OpQhyzid1iKbHENBEZdihv9KsR" >Software</a><br>
+<img src="http://a.r.tv.com/cnet.1d/b.gif" width=1 height=5><br>
+<a href="http://clickthru.online.com/Click?q=f8-57BSQfsXJUy6TWHpiaRL6DCwol9R" >Downloads</a><br>
+
+</b>
+
+
+<p>
+
+
+              </td>
+          </tr>
+</table>
+
+
+</td><td width=9 rowspan=2><img src="http://a.r.tv.com/cnet.1d/i/nl/dd_c.gif" width=9 height=60><br>
+
+<table width=9 cellpadding=0 cellspacing=0 border=0>
+<tr><td bgcolor="#000000"><img src="http://a.r.tv.com/cnet.1d/b.gif" width=9 height=1></td></tr>
+<tr><td bgcolor="#ffccoo"><img src="http://a.r.tv.com/cnet.1d/b.gif" width=1 height=10></td></tr>
+<tr><td bgcolor="#000000"><img src="http://a.r.tv.com/cnet.1d/b.gif" width=1 height=1></td></tr>
+</table></td>
+<td width=1 bgcolor="#000000" rowspan=2><table width=1 cellpadding=0 cellspacing=0 border=0>
+<tr><td bgcolor="#eeeeee"><img src="http://a.r.tv.com/cnet.1d/b.gif" width=1 height=60></td></tr>
+</table></td></tr>
+<tr valign=top><td width=1 bgcolor="#000000"><img src="http://a.r.tv.com/cnet.1d/b.gif" width=1 height=1></td>
+<td width=10 bgcolor="#ffcc00"><img src="http://a.r.tv.com/cnet.1d/b.gif" width=10 height=1></td>
+<td width=1 bgcolor="#000000"><img src="http://a.r.tv.com/cnet.1d/b.gif" width=1 height=1></td>
+<td width=430 bgcolor="#ffffff">
+
+<table cellpadding=0 cellspacing=0 border=0 width=430 bgcolor="#ffffef">
+<tr valign=top>
+        <td rowspan=2 width=10><img src="http://a.r.tv.com/cnet.1d/b.gif" width=10 height=1></td>
+        <td colspan=2><font face="arial, helvetica" size="-2"><br>July 9, 2002</font><br><img src="http://a.r.tv.com/cnet.1d/b.gif" width=1 height=8><br></td>
+</tr>
+<tr valign=top>
+<td> <!-- intro --> <font face="arial, helvetica" size="-1">
+When reviewing the Toshiba Pocket PC e740, I spent a lot of time trying to understand its XScale processor. A benchmark provided by Intel seems to indicate that it performs certain operations faster than previous Pocket PCs, but in hands-on use we didn't find any significant difference in performance. I'm still not certain whether I should attribute performance limitation to the operating system (which hasn't been optimized for the new chips), applications (which likewise haven't be optimized), or simply that the new chip isn't that much better than the old StrongARM. But regardless, the e740 is an exceptional Pocket PC and one I don't hesitate to recommend to those looking for a high-powered PDA.
+<!--
+<font size=3 color="#333333"><b></b></font> --><br>
+				<!--
+					<div align=right>
+					<a href="http://clickthru.online.com/Click?q=0d-3aGuIbr2CDzlR2_Nv0T0QkY6b7uR" >Read the full story</a>  &nbsp;|&nbsp;
+					<a href="http://clickthru.online.com/Click?q=22-xNrrIrdArfP6VXfuo4I9yc99NcsR" >Check latest price</a></div> --> <br clear="all">
+					Colin Duwe<br>
+					Associate Editor<br>
+					CNET Electronics
+              		</font></td>
+            <td width=10><img src="http://a.r.tv.com/cnet.1d/b.gif" width=10 height=1></td></tr>
+</table>
+
+
+<table cellpadding=0 cellspacing=0 border=0 width=430>
+<tr><td bgcolor="#999999"><img src="http://a.r.tv.com/cnet.1d/b.gif" width=1 height=1></td></tr>
+</table>
+
+<!-- most popular -->
+        	<table cellpadding=10 cellspacing=0 border=0 width=430>
+        		<TR><TD colspan=2><!-- cnet's exclusive downloads -->
+					<A name=h1><IMG alt="CNET's Exclusive Downloads" height=19 src="http://a.r.tv.com/cnet.1d/i/nl/dl/sub_top10.gif" width=250><BR>
+					<IMG height=8 src="http://a.r.tv.com/cnet.1d/i/nl/rule.gif" width=410></td></tr>
+				<tr valign=top><td width=50%>
+					<FONT face="arial, helvetica" size=-1><B>In Palm OS:</B><BR></FONT>
+            		<TABLE border=0 cellPadding=4 cellSpacing=0 width="100%">
+                		<TR><TD height=36 width="6%">&nbsp;</TD>
+                			<TD width="39%"><FONT face="arial, helvetica" size=-1>
+							<B>Most	Popular Titles</B><BR>
+							<FONT size=-2>Week ending June 11</FONT></FONT></TD>
+              			</TR>
+              			<TR><TD colSpan=2>
+                  			<TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+                    			<TR><TD bgColor="#cccccc"><IMG height=1 src="http://a.r.tv.com/cnet.1d/b.gif" width=1></TD></TR>
+							</TABLE>
+						</TD></TR>
+              			<TR align=middle><TD height=32 width="6%">
+							<FONT face="ms sans serif, geneva" size=-2>1</FONT></TD>
+                			<TD align=left width="39%"><FONT face="arial, helvetica" size=-1><B>
+							<a href="http://clickthru.online.com/Click?q=37-EMLQIqzFSlDlPdhQ93KjZ6eJcnZR" >Noah Lite English dictionary</A>
+						</TR>
+              			<TR><TD colSpan=2>
+                  			<TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+                    			<TR><TD bgColor="#cccccc"><IMG height=1 src="http://a.r.tv.com/cnet.1d/b.gif" width=1></TD></TR>
+							</TABLE>
+						</TD></TR>
+              			<TR align=middle><TD height=32>
+							<FONT face="ms sans serif, geneva" size=-2>2</FONT></TD>
+                			<TD align=left><FONT face="arial, helvetica" size=-1><B>
+							<a href="http://clickthru.online.com/Click?q=4c-jxi2IZpI6SWBkRrAu7hgvo2AKenR" >DopeWars (Palm)</A>
+							</B></FONT></TD>
+               			</TR>
+              			<TR><TD colSpan=2>
+                  			<TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+                    			<TR><TD bgColor="#cccccc"><IMG height=1 src="http://a.r.tv.com/cnet.1d/b.gif" width=1></TD></TR>
+							</TABLE>
+						</TD></TR>
+              			<TR align=middle><TD height=32>
+							<FONT face="ms sans serif, geneva" size=-2>3</FONT></TD>
+                			<TD align=left><FONT face="arial, helvetica" size=-1><B>
+							<a href="http://clickthru.online.com/Click?q=61-x9oAIoLj9fa4buK4JYndFK-AWlrR" >Blocks</A>
+							</B></FONT></TD>
+             			</TR>
+              			<TR><TD colSpan=2>
+                  			<TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+                    			<TR><TD bgColor="#cccccc"><IMG height=1 src="http://a.r.tv.com/cnet.1d/b.gif" width=1></TD></TR>
+							</TABLE>
+						</TD></TR>
+              			<TR align=middle><TD height=32>
+							<FONT face="ms sans serif, geneva" size=-2>4</FONT></TD>
+                			<TD align=left><FONT face="arial, helvetica" size=-1><B>
+							<a href="http://clickthru.online.com/Click?q=76-vJf7InBP3_d07Ul1okYP2r70U6iR" >Palm Desktop</a></B></FONT></TD>
+              			</TR>
+              			<TR><TD colSpan=2>
+                  			<TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+                    			<TR><TD bgColor="#cccccc"><IMG height=1 src="http://a.r.tv.com/cnet.1d/b.gif" width=1></TD></TR>
+							</TABLE>
+						</TD></TR>
+              			<TR align=middle><TD height=32>
+							<FONT face="ms sans serif, geneva" size=-2>5</FONT></TD>
+                			<TD align=left><FONT face="arial, helvetica" size=-1><B>
+							<a href="http://clickthru.online.com/Click?q=8c-Ld7aQ6JBHC_AtJ2VFm8il40AWNdR" >Sketcher</A></B></FONT></TD>
+              			</TR>
+              			<TR><TD colSpan=2>
+                  			<TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+                    			<TR><TD bgColor="#cccccc"><IMG height=1 src="http://a.r.tv.com/cnet.1d/b.gif" width=1></TD></TR>
+							</TABLE>
+						</TD></TR>
+					</TABLE>
+
+					<DIV align=left><FONT face="arial, helvetica" size=-2><BR>
+					<a href="http://clickthru.online.com/Click?q=a1-AfVtQ-ZKMoK0MFdGkeHaXeD3gBcR" >
+					<B>All popular Palm OS downloads</B></A></FONT></DIV>
+				</td>
+				<td width"50%">
+				<FONT size=-1><B><FONT face="arial, helvetica">In Pocket PC:</FONT></B></FONT><BR>
+
+				<TABLE border=0 cellPadding=4 cellSpacing=0 width="100%">
+              		<TR><TD height=36 width="6%">&nbsp;</TD>
+                		<TD width="39%"><FONT face="arial, helvetica" size=-1>
+						<B>Most Popular Titles</B><BR><FONT size=-2>Week ending June 11</FONT></FONT></TD>
+              		</TR>
+                    <TR><TD colSpan=2>
+                  		<TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+                    		<TR><TD bgColor="#cccccc"><IMG height=1 src="http://a.r.tv.com/cnet.1d/b.gif" width=1></TD></TR>
+						</TABLE>
+					</TD></TR>
+              		<TR align=middle><TD height=32 width="6%">
+						<FONT face="ms sans serif, geneva" size=-2>1</FONT></TD>
+                		<TD align=left width="39%"><FONT face="arial, helvetica" size=-1><B>
+						<a href="http://clickthru.online.com/Click?q=b6-llkUQCKyp89AjFbT_PUCch20LgRR" >SimCity2000</A></B></FONT></TD>
+               		</TR>
+              		<TR><TD colSpan=2>
+                  		<TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+                    		<TR><TD bgColor="#cccccc"><IMG height=1 src="http://a.r.tv.com/cnet.1d/b.gif" width=1></TD></TR>
+						</TABLE>
+					</TD></TR>
+              		<TR align=middle><TD height=32>
+						<FONT face="ms sans serif, geneva" size=-2>2</FONT></TD>
+                		<TD align=left><FONT face="arial, helvetica" size=-1><B>
+						<a href="http://clickthru.online.com/Click?q=cb-CjRIQJsrcz1l053yXYHRf_uaHkFR" >TV Remote Controller</A></B></FONT></TD>
+           			</TR>
+              		<TR><TD colSpan=2>
+                  		<TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+                    		<TR><TD bgColor="#cccccc"><IMG height=1 src="http://a.r.tv.com/cnet.1d/b.gif" width=1></TD></TR>
+						</TABLE>
+					</TD></TR>
+              		<TR align=middle><TD height=32>
+						<FONT face="ms sans serif, geneva" size=-2>3</FONT></TD>
+                		<TD align=left><FONT face="arial, helvetica" size=-1><B>
+						<a href="http://clickthru.online.com/Click?q=e0-cISRQfDH017vSMJkPhB7mxUT9A9R" >GigaBar</A></B></FONT></TD>
+               		</TR>
+              		<TR><TD colSpan=2>
+                  		<TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+                    		<TR><TD bgColor="#cccccc"><IMG height=1 src="http://a.r.tv.com/cnet.1d/b.gif" width=1></TD></TR>
+						</TABLE>
+					</TD></TR>
+              		<TR align=middle><TD height=32>
+						<FONT face="ms sans serif, geneva" size=-2>4</FONT></TD>
+                		<TD align=left><FONT face="arial, helvetica" size=-1><B>
+						<a href="http://clickthru.online.com/Click?q=f5-lTbRQgwx12fVmZp6DmLwgkaZmRuR" >ActiveSync</A>
+						</B></FONT></TD>
+               		</TR>
+              		<TR><TD colSpan=2>
+                  		<TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+                    		<TR><TD bgColor="#cccccc"><IMG height=1 src="http://a.r.tv.com/cnet.1d/b.gif" width=1></TD></TR>
+						</TABLE>
+					</TD></TR>
+              		<TR align=middle><TD height=32>
+						<FONT face="ms sans serif, geneva" size=-2>5</FONT></TD>
+                		<TD align=left><FONT face="arial, helvetica" size=-1><B>
+						<a href="http://clickthru.online.com/Click?q=0a-ZnKCIrrscnucArwBwhq6GOxuYzsR" >Syntact Gamebox (Pocket PC)</A></B></FONT></TD>
+              		</TR>
+              		<TR><TD colSpan=2>
+                  		<TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+                    		<TR><TD bgColor="#cccccc"><IMG height=1 src="http://a.r.tv.com/cnet.1d/b.gif" width=1></TD></TR>
+						</TABLE>
+					</TD></TR>
+				</TABLE>
+
+            	<DIV align=left><FONT face="arial, helvetica" size=-2><BR>
+					<a href="http://clickthru.online.com/Click?q=1f-rvwqI58w5y5qvA_1xmYgHobjqmZR" ><B>All popular PocketPC downloads</B></A>
+				</FONT><BR></DIV>
+
+				</td></tr>
+			</table>
+			<!-- /most popular -->
+
+<!-- reviews & features -->
+<TABLE border=0 cellPadding=10 cellSpacing=0 width=430>
+          <TR>
+          <TD colspan=2><FONT face="Arial, Helvetica"><IMG alt="Reviews and Features"
+            height=19 src="http://a.r.tv.com/cnet.1d/i/nl/lx/sub_rev.gif" width=200
+
+            NOSEND="1"><BR><IMG border=0 height=8 src="http://home.cnet.com/i/nl/rule.gif" width=410 NOSEND="1"><BR>
+            <TABLE align=left border=0 cellPadding=0 cellSpacing=0 width=110>
+
+              <TR><TD><a href="http://clickthru.online.com/Click?q=34-pJpSIcd819BtQUI3_tvVyn4IcgdR" >
+				<IMG border=0 width="85" height="110" valign="top" src="http://a.r.tv.com/cnet.1d/i/pg/030402palms.jpg" vspace="5"></a></TD></TR></TABLE>
+				<!--item 1-->
+							<FONT face="arial, helvetica" size=3><B><a href="http://clickthru.online.com/Click?q=49-ZM4cIEpSenC3nvGVX4RVXFO5JSrR" >Must-have Palm OS games: Newly updated</A></B></font><BR>
+							<FONT face="arial, helvetica" size=-1>We've listened to reader suggestions, tested the latest games to be released, and now we're ready to present our current list of favorite games for your Palm.
+							<br><a href="http://clickthru.online.com/Click?q=5f-WK5BIIKX2FzQq0i6fez6pa6cIJPR" >Read the full story</a><!--  &nbsp;|&nbsp;
+							<a href="http://clickthru.online.com/Click?q=74-VAV8IZZSN6ARP4_RYG8Y0gSPZxnR" >Check latest price</a> -->
+							</font><br clear="all"><p>
+	<!--item 2-->
+							<FONT face="arial, helvetica" size=3><B><a href="http://clickthru.online.com/Click?q=89-h28bQ-J1QVDZkIrkUMBXB6W5WWcR" >Toshiba Pocket PC e740</A></B></font><BR>
+							<FONT face="arial, helvetica" size=-1>Powered by Intel's new 400MHz XScale processor and boasting integrated Wi-Fi connectivity, Toshiba's new PDA is an impressive mobile machine. We got hands on with it to test the new chips and its myriad features. See how it did.
+							<br><a href="http://clickthru.online.com/Click?q=9e-tWQoQtMQJGPTPz2HSCN0U7nQUDRR" >Read the review</a> &nbsp;|&nbsp;
+							<a href="http://clickthru.online.com/Click?q=b3-QHzxQYKTqeTp74yAE64qDAwrPGFR" >Check latest price</a>
+							</font><br clear="all">
+
+
+						<br clear="all">
+
+							<div align=left style="padding-top: 20px;">
+							<a href="http://clickthru.online.com/Click?q=c8-2lPnQWOzdDmt64zMKE-nFr99H29R" >
+							<b>More handhelds reviews &amp; features</a></FONT></td></tr></table>
+
+<!-- /reviews features -->
+
+<table cellpadding=10 cellspacing=0 border=0 width=430>
+<tr><td>
+
+            <!-- picks of the week --> <img src="http://a.r.tv.com/cnet.1d/i/nl/dl/sub_palmpk.gif" width=250 height=19 alt="Picks of the Week"><br>
+                <img src="http://a.r.tv.com/cnet.1d/i/nl/rule.gif" width=410 height=8><br></td>
+
+</tr><tr><td>
+<table cellpadding=0 cellspacing=0 border=0 width=100%>
+<tr><td><FONT face="arial, helvetica" size=-1>
+									<b><a href="http://clickthru.online.com/Click?q=dd-tpm0QzWd3DTu_vJGZP85eXsJh-uR" >Uninstall Hack 1.59</a></b><br>
+									<font size="-2">File size: 36.6K<br>
+									License: Free to try; $7.00 to buy<br></font>
+									Uninstall Hack is designed to help keep your Palm device running smoothly by monitoring application installations and removing all traces of an
+application during the uninstall process. Uninstall Hack also removes
+leftover files from applications removed using the standard Palm OS delete
+tool, leaving your Palm device clean and trouble-free.
+									<br><br>
+									<b><a href="http://clickthru.online.com/Click?q=f2-OZVTQUwWCeDtOWJ0pvVdi5Z7edsR" >Quik Budget 3.2</a></b>
+
+									<br><br>
+									<font size="-1"><a href="http://clickthru.online.com/Click?q=07-HqCzI5rq9TfuhmqiqzUbrvLkiDZR" >
+									<b>All Palm OS editors' picks</b></a>
+									</font></font>
+</td>
+</tr></table></td></tr></table>
+
+<table cellpadding=10 cellspacing=0 border=0 width=430><tr>
+
+<td><img src="http://a.r.tv.com/cnet.1d/i/nl/hh/hed_picks.gif" width=260 height=19 alt="Picks of the Week"></a><br>
+    <img src="http://a.r.tv.com/cnet.1d/i/nl/rule.gif" width=410 height=8></td></tr>
+
+<tr><td><table cellpadding=0 cellspacing=0 border=0 width=100%>
+	<td valign=top>
+	<FONT face="arial, helvetica" size=-1>
+									<b><a href="http://clickthru.online.com/Click?q=1d-6KTjIGQF7vBhrGBRl28NRQSnqQuR" >PictPocket 2.0</a></b><br>
+    								<font size="-2">File size: 1.09MB <br>
+									License: Free to try; $16.95 to buy<br></font>
+									Take your pictures with you on your Pocket PC. PictPocket allows you to
+view and edit several types of digital image files including MPEG-1 and MPEG-2 video, BMP, 2BP, JPG, JPE, JPEG, GIF, and many more, making this a truly mobile multimedia solution.
+		<br>
+                					<br>
+									<a href="http://clickthru.online.com/Click?q=32-Gx5IIrQ6j3YttdODFWVhZSgRXBsR" ><b>All Windows CE/PocketPC editors' picks</b></a>
+			  						</font></font>
+			  <!--Horizontal Brick-->
+								<P>
+								<IMG border=0 height=20 src="http://home.cnet.com/Ads/Media/Images/RHC_ALSOfromCNETnet.gif" width=150 NOSEND="1">
+								<IMG border=0 height=8 src="http://home.cnet.com/i/it/newsletter/rule2.gif" width=410 NOSEND="1">
+								<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+									<TBODY><TR vAlign=top>
+    									<TD><FONT face="arial, helvetica" size=-1><B>
+            								<UL><LI><a href="http://clickthru.online.com/Click?q=47-ADmxIIZH1jjAFHOOiJGu_NEsnEPR" >Live Tech Help. Submit your question now.</A>
+												<LI><a href="http://clickthru.online.com/Click?q=5c-BnjPIZnPblYbvLt53xlZk0f-IonR" >CNET News.com: Top CIOs on the future of IT.</A>
+												<LI><a href="http://clickthru.online.com/Click?q=71-GwdUIEZcfHlsIRmqwuBXvl3NU2rR" >Find a job you love. Over 1 million postings</A>
+												<LI><a href="http://clickthru.online.com/Click?q=87-izDOQ8naPLmZNXReplrQ8kasp4ZR" >ZDNet: This IT director has had enough of Microsoft</A>
+												<LI><a href="http://clickthru.online.com/Click?q=9c-xt6pQanykQyy_jvlXdIl9Oi-UidR" >May Editors" Choice Award: Pioneer"s Home Theater System HTS - 910DV</A>
+											</UL></B></FONT>
+										</TD></TR>
+									</TBODY>
+								</TABLE>
+								</P>
+								<!-- End Horizontal Brick-->
+			  </td></tr></table>
+		</td></tr></table>
+  <img src="http://a.r.tv.com/cnet.1d/i/b.gif" width="1" height="10" border="0"><br>
+
+</td>
+          </tr>
+        </table>
+      </td></tr>
+</table><center>
+
+<!-- ### footer ### -->
+<table width="612" bgcolor="#000000" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="599" bgcolor="#cccccc"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#eeeeee" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="12"><img src="http://www.cnet.com/b.gif" width="12" height="1"></td>
+<td width="575"><img src="http://www.cnet.com/b.gif" width="1" height="10"><br>
+<a href="http://clickthru.online.com/Click?q=b1-YjxJQ-0dzAPbWk0r9i_f_B0NLncR" >
+<img src="http://a.r.tv.com/cnet.1d/i/nl/ft.gif" width="375" height="18" border="0" alt="Sign up for more free newsletters from CNET!"></a><br>
+
+<!-- subscription management -->
+
+<font face="ms sans serif, geneva" size="-2">
+The e-mail address for your subscription is&nbsp;qqqqqqqqqq-cnet-newsletters@spamassassin.taint.org<p>
+
+<A NOTRACK HREF="http://clickthru.online.com/Click?q=c6-URs9rCLfOFnaxzgMMTVZe8dwuaQ66sRR">Unsubscribe</A>&nbsp;|
+&nbsp;<a href='http://nl.com.com/servlet/url_login?email=qqqqqqqqqq-cnet-newsletters@spamassassin.taint.org'>Manage My Subscriptions</a>
+&nbsp;|&nbsp;<a href="http://clickthru.online.com/Click?q=db-rmY9QJEK6mDuwHAvpmtTwxp6DtFR" >FAQ</A>&nbsp;|
+&nbsp;<a href="http://clickthru.online.com/Click?q=f0-nv_DQWg4KiNL7cn2fqfAgMcXea9R" >Advertise</A><br></font>
+
+<!-- /subscription management-->
+
+</font><img src="http://www.cnet.com/b.gif" width="1" height="8"></td>
+<td width="12"><img src="http://www.cnet.com/b.gif" width="12" height="1"></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#000000" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="601"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#ffcc00" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="37"><a href="http://clickthru.online.com/Click?q=05-gDULIG8WRMaK-HsfnODtxI8fiiuR" ><img src="http://www.cnet.com/i/dp/smrb.gif" width="37" height="37" border="0"></a></td>
+<td width="563" nowrap><font face="arial, helvetica" size="-1">
+<a href="http://clickthru.online.com/Click?q=1b-wAnhI3N2Ia7htrjQ1U5MauO37xFR" ><font color="#000000">Price comparisons</font></a> |
+<a href="http://clickthru.online.com/Click?q=30-u8NEIRrWECxPzgS8IeOdSKzjX19R" ><font color="#000000">Product reviews</font></a> |
+<a href="http://clickthru.online.com/Click?q=45-fNkJIKB68VKwZ0m-EDvznhjonleR" ><font color="#000000">Tech news</font></a> |
+<a href="http://clickthru.online.com/Click?q=5a-ahD1IP0IMGrYJKW24YOLpk6Td6yR" ><font color="#000000">Downloads</font></a> |
+<a href="http://clickthru.online.com/Click?q=6f-3x79IOLAbBAcPZV3RXvLF34ULXPR" ><font color="#000000">All CNET services</font></a>
+</font></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" cellpadding="0" cellspacing="0" border="0">
+<tr><td bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+<tr><td height="25"><font face="ms sans serif, geneva" size="-2"><table width=100% border=0 cellspacing=2 cellpadding=1> <tr valign=bottom> <td width=75% height=31> <p></font> <br><b><font face=Arial, Helvetica, sans-serif size=2>    Copyright 2002 CNET Networks, Inc. All rights reserved.    </font></b> </p></td><td height=31 valign=top> <div align=right> <img src="http://gserv-cnet.zdnet.com/clear/outbound.gif?APPID=2&EMID=25136487&NL=e424&ISSUE=2002-07-10" height=1 width=1>    </div></td></tr><tr>  <td colspan=2><font face=Arial, Helvetica, sans-serif size=2>    </font></td></tr></table></font></td></tr>
+</table>
+<!-- ### /footer ### -->
+
+</body>
+</html>
+
+<IMG HEIGHT=1 WIDTH=1 SRC="http://clickthru.online.com/Click?q=85-2G3o-gKNokoqVnwlezVayGtOURRR">
+

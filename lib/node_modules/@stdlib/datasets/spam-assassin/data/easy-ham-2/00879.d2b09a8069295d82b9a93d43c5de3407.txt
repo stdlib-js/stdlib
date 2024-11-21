@@ -1,0 +1,74 @@
+From fork-admin@xent.com  Thu Jul 25 11:10:07 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3A610440D0
+	for <jm@localhost>; Thu, 25 Jul 2002 06:09:31 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 11:09:31 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6P1ZY420813 for <jm@jmason.org>;
+    Thu, 25 Jul 2002 02:35:34 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 1885A29416D; Wed, 24 Jul 2002 18:34:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from relay.pair.com (relay1.pair.com [209.68.1.20]) by xent.com
+    (Postfix) with SMTP id 2DDC9294167 for <fork@xent.com>; Wed,
+    24 Jul 2002 18:33:27 -0700 (PDT)
+Received: (qmail 88217 invoked from network); 25 Jul 2002 01:33:26 -0000
+Received: from dsl-64-195-248-145.telocity.com (HELO golden)
+    (64.195.248.145) by relay1.pair.com with SMTP; 25 Jul 2002 01:33:26 -0000
+X-Pair-Authenticated: 64.195.248.145
+Message-Id: <029a01c2337b$458f5310$640a000a@golden>
+From: "Gordon Mohr" <gojomo@usa.net>
+To: <fork@spamassassin.taint.org>
+References: <001301c23359$d8208130$0100a8c0@PETER><m2n0sgojke.fsf@maya.dyndns.org>
+    <2785.192.216.194.113.1027554367.squirrel@webmail.magnesium.net>
+    <1027559672.2056.38.camel@avalon>
+Subject: Re: Asteroids anyone ?
+MIME-Version: 1.0
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 24 Jul 2002 18:33:23 -0700
+
+With enough warning, you might not even care about trying to divert 
+the meteor -- you'd divert the Earth instead.
+
+I recall reading many years ago about calculations, done separately
+both by US and USSR scientists for different reasons, about the
+effect of nuclear explosions on the moon's mass, and thus its orbit,
+and thus also (over time) the Earth's path around the sun.
+
+I believe the conclusion was that mild changes in the moon's 
+composition would have the effect, over several years, of changing 
+significantly where the Earth would be at any certain future point. 
+
+Voila! No collision -- at least not with the initial threat. And
+no need to travel out to anywhere near the meteor, either. Just
+the moon.
+
+- Gordon
+
+
+
+
+http://xent.com/mailman/listinfo/fork
+
+

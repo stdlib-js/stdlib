@@ -1,0 +1,107 @@
+From rpm-list-admin@freshrpms.net  Mon Sep  9 18:03:05 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 4F1BF16EFC
+	for <jm@localhost>; Mon,  9 Sep 2002 18:03:04 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 18:03:04 +0100 (IST)
+Received: from auth02.nl.egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g16FHb805692 for
+    <jm-rpm@jmason.org>; Wed, 6 Feb 2002 15:17:37 GMT
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by
+    auth02.nl.egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g16FFAt14887;
+    Wed, 6 Feb 2002 16:15:10 +0100
+Received: from python (gw01.es3.egwn.net [212.9.66.13]) (authenticated) by
+    auth02.nl.egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g16FEvt14871 for
+    <rpm-list@freshrpms.net>; Wed, 6 Feb 2002 16:14:57 +0100
+From: Matthias Saou <matthias@egwn.net>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: Apt problems
+Message-Id: <20020206161427.494ecf0b.matthias@egwn.net>
+In-Reply-To: <20020206163018.C17717@cs.helsinki.fi>
+References: <20020206162953.C10950@pihlaja.kotilo>
+    <20020206163018.C17717@cs.helsinki.fi>
+Organization: Electronic Group Interactive
+X-Mailer: Sylpheed version 0.7.0claws5 (GTK+ 1.2.10; i386-redhat-linux)
+Reply-BY: Tue, 24 Jul 2000 19:02:00 +1000
+X-Operating-System: GNU/Linux power!
+X-Message-Flag: Try using a real operating system : GNU/Linux power!
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Wed, 6 Feb 2002 16:14:27 +0100
+Date: Wed, 6 Feb 2002 16:14:27 +0100
+
+Once upon a time, Harri wrote :
+
+> On Wed, Feb 06, 2002 at 04:29:53PM +0200, Peter Peltonen wrote:
+> > Two issues:
+> > 
+> > --<snip>--
+> > Sorry, but the following packages have unmet dependencies:
+> >   openssh: Depends: openssl (= 0.9.5a) but 0.9.6b-8 is installed
+> >   php-pgsql: Depends: postgresql but it is not installed
+> >              Depends: libpq.so.2
+> > E: Unmet dependencies. Try using -f.
+> > --</snip>--
+> > 
+> > 1. I have the following openssl packages installed:
+> > 
+> > --<snip>--
+> > openssl-perl-0.9.6b-8
+> > openssl-0.9.6b-8
+> > openssl095a-0.9.5a-11
+> > openssl-devel-0.9.6b-8
+> > --</snip>--
+> > 
+> > The openssl095a package should provide the openssl-0.9.5a compatibility
+> > but apt doesn't think so? 
+> 
+> I believe that's just a matter of string parsing. If someone were to fix
+> the openssh package, removing the explicit Requires:, I believe the
+> automagic binary handler would figure the right libraries to use and
+> install. I haven't met an openssh like that and in worst case I've had 3
+> different openssl libraries (WTF can't they just bump a major version if
+> it's incompatible?!?).
+
+Strange... all my openssh packages don't explicitly requires a version of
+openssl. What version of openssh do you have? Is it an official Red Hat
+package? I suppose it isn't, and using Red Hat's rpms will solve your
+problem.
+
+What you need to know for openssl is :
+0.9.5b is libcrypto.so.0 and libssl.so.0
+0.9.6  is libcrypto.so.1 and libssl.so.1
+0.9.6b is libcrypto.so.2 and libssl.so.2
+
+Now in all Red Hat packages I've seen so far, the only dependency is on
+those files and not on "openssl = version".
+
+Matthias
+
+-- 
+Matthias Saou                                World Trade Center
+-------------                                Edificio Norte 4 Planta
+System and Network Engineer                  08039 Barcelona, Spain
+Electronic Group Interactive                 Phone : +34 936 00 23 23
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

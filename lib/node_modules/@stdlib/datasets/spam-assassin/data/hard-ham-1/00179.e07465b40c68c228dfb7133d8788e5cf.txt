@@ -1,0 +1,1946 @@
+From guterman@mediaunspun.imakenews.net  Tue Aug 13 14:27:29 2002
+Return-Path: <guterman@mediaunspun.imakenews.net>
+Delivered-To: zzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6CA0D43C32
+	for <zzz@localhost>; Tue, 13 Aug 2002 09:27:22 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzz@localhost (single-drop); Tue, 13 Aug 2002 14:27:22 +0100 (IST)
+Received: from eng.imakenews.com (mailservice4.imakenews.com
+    [65.214.33.17]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7DDNVe00989 for <zzz-unspun@spamassassin.taint.org>; Tue, 13 Aug 2002 14:23:32 +0100
+Received: by eng.imakenews.com (PowerMTA(TM) v1.5); Tue, 13 Aug 2002
+    09:22:53 -0400 (envelope-from <guterman@mediaunspun.imakenews.net>)
+Content-Transfer-Encoding: binary
+Content-Type: multipart/alternative;
+    boundary="----------=_1029244856-11739-4";
+    charset="iso-8859-1"
+Date: Tue, 13 Aug 2002 09:20:56 -0400
+Errors-To: <guterman@mediaunspun.imakenews.net>
+From: "Media Unspun" <guterman@mediaunspun.imakenews.net>
+MIME-Version: 1.0
+Message-Id: <11739$1029244856$mediaunspun$5114587@imakenews.net>
+Precedence: normal
+Reply-To: "Media Unspun" <guterman@vineyard.com>
+Sender: "Media Unspun" <guterman@mediaunspun.imakenews.net>
+Subject: United We Fall?
+To: zzz-unspun@spamassassin.taint.org
+X-Imn: mediaunspun,177528,5114587,0
+
+This is a multi-part message in MIME format...
+
+------------=_1029244856-11739-4
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+To view this newsletter in full-color, visit:
+http://newsletter.mediaunspun.com/index000018904.cfm
+
+MEDIA UNSPUN
+What the Press is Reporting and Why (www.mediaunspun.com)
+-----------------------------------------------------------------
+August 13, 2002
+
+-----------------------------------------------------------------
+IN THIS ISSUE
+-----------------------------------------------------------------
+* UNITED WE FALL?
+* SLEEPING WITH THE PENGUIN
+* OTHER STORIES
+
+Media Unspun serves business news and analysis, authoritatively
+and irreverently, every business day. An annual subscription
+costs $50, less than a dollar a week. If your four-week free
+trial is coming to an end soon, please visit
+http://www.mediaunspun.com/subscribe.html and sign up via credit card 
+or check.
+
+
+-----------------------------------------------------------------
+ADVERTISEMENT
+-----------------------------------------------------------------
+Ken Fisher offers his Quarterly Report for high net worth
+investors FREE of cost & without obligation. Access the same
+investment research he uses to guide his clients at:
+http://pcg.fisherinvestments.com/newrespond/letter.asp?site=UNSP&KC=1229EFCAD0000
+
+
+-----------------------------------------------------------------
+UNITED WE FALL?
+-----------------------------------------------------------------
+US Airways scored a $500 million bankruptcy court bailout.
+American Airlines announced a re-org. United Airlines' parent
+company's stock sank on speculation that UAL is next in line for 
+Chapter 11. It's a wonder none of this happened last September,
+but it's not much consolation to airline employees,
+shareholders, and customers that it's happening now.
+
+The Wall Street Journal had the most extensive coverage of
+American's plan as of Unspun's deadline. The airline will lay
+off 7,000 workers, ground some jets, cut back on flight
+amenities such as food, and retool its hub operations to make
+for longer layovers. "In the past, airlines were loath to have
+longer connection times because flights were listed in travel
+agents' computers by elapsed time," said the Journal. "Now,
+online booking tools and search engines most often list flights
+by price, not time." In this age of penny-pinching, American's
+worried about low-cost carriers, not the big guys like, um, US
+Air and United. 
+
+Speaking of United, it's hard to come up with a verb for its
+parent company's stock that doesn't invoke an air disaster.
+Let's just say it didn't go up yesterday. The $3.80 share price
+may be the least of UAL's worries while it waits for an
+increasingly unlikely $1.8 billion loan from the Air
+Transportation Stabilization Board. "The ATSB expects an
+applicant's workers, suppliers and creditors to make concessions 
+to help the airline repay the loans and thus protect U.S.
+taxpayers' interests," said the L.A. Times. Sounds nice for
+uninvolved taxpayers but not so good to some of United's unions, 
+which are balking at a wage cut. Workers did enough by deferring 
+$498 million in retroactive pay this year, said the
+36,000-member machinists' union. Analysts moaned in anti-labor
+frustration. 
+
+The basic problem here is too many empty airplane seats, and
+non-U.S. outlets didn't have a lot of sympathy. "The U.S.
+government has bailed out carriers with insurance subsidies and
+federal loan guarantees" while "European authorities have acted
+more wisely," letting Swissair and Sabena "go to the wall," said 
+the Financial Times. Canadian pundits agreed that America should 
+let a couple of airlines wilt, since the Canadian airline
+industry benefited from the demise of Canadian Airlines and
+Canada 3000. Paging Charles Darwin to the white courtesy
+phone... - Jen Muehlbauer
+
+-----------------------------------------------------------------
+ADVERTISEMENT
+-----------------------------------------------------------------
+You've heard about identity management, but do you know about
+the opportunities and business models that will emerge as a
+result? Download a free executive summary of Esther Dyson's coverage of
+identity management in Release 1.0. Learn more about the
+expanding market for these services and applications.
+http://release1.edventure.com/executivesummary.cfm?MCode=Unspun
+
+-----------------------------------------------------------------
+SLEEPING WITH THE PENGUIN
+-----------------------------------------------------------------
+The LinuxWorld Conference and Expo, which opened yesterday in
+San Francisco, will host two of the strangest bedfellows ever to 
+lie down with a stuffed penguin: Microsoft and Sun. These are
+companies that once referred to Linux as a "bathtub of code"
+(Sun) and "a cancer" (Microsoft), according to Sun's hometown
+paper the San Jose Mercury News.
+
+Both companies are taking Linux seriously despite the absolute
+numbers. By January 2, 2001, Microsoft had made as much on
+server software as all Linux vendors put together would reap in
+the entire year.
+
+Honors for the best attention-grabber on Microsoft's presence at 
+the show go to Brier Dudley, who opened his piece for the
+Seattle Times this way: "Microsoft executive Peter Houston
+wasn't too worried about the reception he'd get at LinuxWorld
+... until he heard about the pie cannon."
+
+Wired informed us that the section of LinuxWorld where Microsoft 
+will be holding the fort is dubbed the Rookery -- "a place where 
+you can watch companies hatch and grow right before your eyes,"
+deadpanned reporter Michelle Delio, quoting Microsoft's Houston: 
+"Hatching isn't exactly on the agenda, but I certainly hope to
+grow."
+
+Turning to Sun, Unspun notes that five years ago a joke press
+release circulated on the Net claiming that Linux creator Linus
+Torvalds, then still living in Finland, was moving to Silicon
+Valley to work for Sun. The joke was that Sun had decided to
+scrap its Solaris operating system and instead concentrate on a
+version of Linux, to be called "Solinux." How time does make
+April fools of us all: Linus Torvalds is now thriving in Silicon 
+Valley (at Transmeta), and yesterday Sun Microsystems
+demonstrated Sun Linux 5.0. and introduced its first
+general-purpose servers running Linux.
+
+The Merc ran a comprehensive wrap of Sun's evolving attitude
+toward the upstart operating system. Sun has little choice but
+to embrace Linux, wrote reporter Therese Poletti, because some
+of its traditional Wall Street customers were deserting it.
+"Several investment banks have tossed out whole sections of Sun
+servers and replaced them with Intel-based servers running
+Linux," Poletti reported. And you thought Microsoft hated Linux? 
+- Keith Dawson
+
+Linux expo has come a long way
+http://www.siliconvalley.com/mld/siliconvalley/3847040.htm
+
+Microsoft changes its tune toward Linux (Seattle Times)
+http://makeashorterlink.com/?Q12B23181
+
+Microsoft Puts On the Tux 
+http://www.wired.com/news/linux/0,1411,54489,00.html
+
+(Hoax press release on "Solinux")
+http://www.ibiblio.org/dbarberi/fools/classic/1997/sun-pr.html
+
+Sun to name Linux-Solaris chief 
+http://news.com.com/2100-1001-949469.html
+
+Sun Microsystems flexes Linux to jab at Microsoft (Seattle
+Times)
+http://makeashorterlink.com/?A25B52181
+
+Microsoft and Free Software at the Same Show? It's True
+http://www.nytimes.com/2002/08/10/technology/10LINU.html
+
+Linux begins its descent into the enterprise
+http://www.internetnews.com/ent-news/article.php/1443811
+
+-----------------------------------------------------------------
+OTHER STORIES
+-----------------------------------------------------------------
+Ex-CEO Pleads Not Guilty to ImClone Fraud
+http://www.washingtonpost.com/wp-dyn/articles/A10407-2002Aug12.html
+
+Security flaw found in Microsoft Web browser (Reuters)
+http://www.philly.com/mld/philly/business/technology/3851394.htm
+
+Fed seen leaving rates unchanged
+http://www.msnbc.com/news/793177.asp
+
+Some Sad No-Signs of the Times 
+http://www.businessweek.com/bwdaily/dnflash/aug2002/nf20020813_0067.htm
+
+Publisher dodges bankruptcy bullet
+http://www.chicagotribune.com/business/chi-020812ziff.story
+
+Gates Foundation Walks Fine Line As It Increases Its Cable
+Holdings
+http://online.wsj.com/article/0,,SB1029180416481589035,00.html
+(Paid subscription required.)
+
+PGP defect reveals encrypted messages
+http://news.com.com/2100-1001-949368.html
+
+Bell Labs simplifies single sign-on
+http://www.theregister.co.uk/content/55/26624.html
+
+Bigger Bar Code Inches Up on Retailers
+http://www.nytimes.com/2002/08/12/technology/12CODE.html
+
+Damn the Constitution: Europe must take back the Web
+http://www.theregister.co.uk/content/6/26612.html
+
+Japanese Drop Out of New ID System (Newsday, AP)
+http://makeashorterlink.com/?T69B22181
+
+-----------------------------------------------------------------
+Do you want to reach the Net's savviest audience?
+Advertise in Media Unspun.
+Contact Erik Vanderkolk for details at erikvanderkolk@yahoo.com 
+today.
+
+-----------------------------------------------------------------
+STAFF
+-----------------------------------------------------------------
+Written by Deborah Asbrand (dasbrand@world.std.com), Keith
+Dawson (dawson@world.std.com), Jen Muehlbauer
+(jen@englishmajor.com), and Lori Patel (loripatel@hotmail.com).
+
+Copyedited by Jim Duffy (jimduffy86@yahoo.com). 
+
+Marketing: Cowpoke Productions (cowpokeproductions.com.
+Advertising: Erik Vanderkolk (erikvanderkolk@yahoo.com). 
+
+Editor and publisher: Jimmy Guterman (guterman@vineyard.com).
+
+Media Unspun is produced by The Vineyard Group Inc. 
+Copyright 2002 Media Unspun, Inc., and The Vineyard Group, Inc.
+Subscribe already, willya? http://www.mediaunspun.com 
+
+Redistribution by email is permitted as long as a link to
+http://newsletter.mediaunspun.com is included.
+
+-|________________
+POWERED BY: http://www.imakenews.com
+To be removed from this list, use this link:
+http://www.imakenews.com/eletra/remove.cfm?x=mediaunspun%2Czzz-unspun@spamassassin.taint.org
+To receive future messages in HTML format, use this link:
+http://www.imakenews.com/eletra/change.cfm?x=mediaunspun%2Czzz-unspun@spamassassin.taint.org%2Chtm
+To change your subscriber information, use this link:
+http://www.imakenews.com/eletra/update.cfm?x=mediaunspun%2Czzz-unspun@spamassassin.taint.org
+
+
+------------=_1029244856-11739-4
+Content-Type: text/html; charset="iso-8859-1"
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+<HTML>
+<HEAD>
+<title>M E D I A  U N S P U N</title>
+
+ 
+ 
+<!--  
+**********************************************************
+If you can read this message but the rest of the email 
+contains strange characters, your email program is not
+capable of displaying HTML email. Use your browser to read the
+complete newsletter online at: 
+   http://newsletter.mediaunspun.com/
+To receive future messages in plain text format, use this link:
+http://www.imakenews.com/eletra/change.cfm?x=mediaunspun%2Czzz-unspun@spamassassin.taint.org%2Ctxt
+
+**********************************************************
+CREATED: August 13, 2002   
+-->
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="GENERATOR" content="iMakeNews">
+<meta name="robots" content="ALL">
+
+ 
+	
+
+
+<style type="text/css">
+<!--
+ 
+ .link {color:#000000; text-decoration:   none; }	.link:hover {color:#FF3300; text-decoration:underline;}	
+
+	.g-article_title, .g-article_url, .g-article_full_story,
+	.g-article_printer_link, .g-contents_article_title,
+	.g-topics_topic_title, .g-issue_issue_title, .g-issue_issue_info,
+	.g-survey_results_link, .g-menu_link, .g-letter_summary_title,
+	.g-letter_summary_author, .g-letter_summary_date,
+	.g-letter_summary_location, .g-letter_post, .g-letter_view_title,
+	.g-letter_view_author, .g-letter_view_post, .g-footer_publisher,
+	.g-footer_tellafriend, .g-footer_archive, .g-footer_pdf
+	{color:#000000;text-decoration:none}
+	.g-article_title:hover, .g-article_url:hover,
+	.g-article_full_story:hover, .g-article_printer_link:hover,
+	.g-contents_article_title:hover, .g-topics_topic_title:hover,
+	.g-issue_issue_title:hover, .g-issue_issue_info:hover,
+	.g-survey_results_link:hover, .g-menu_link:hover,
+	.g-letter_summary_title:hover, .g-letter_summary_author:hover,
+	.g-letter_summary_date:hover, .g-letter_summary_location:hover, 
+	.g-letter_post:hover, .g-letter_view_title:hover,
+	.g-letter_view_author:hover, .g-letter_view_post:hover,
+	.g-footer_publisher:hover, .g-footer_tellafriend:hover,
+	.g-footer_archive:hover, .g-footer_pdf:hover
+	{color:#FF0000;text-decoration:underline}
+	
+
+-->
+</style>
+
+<!-- Footer Styles -->
+<style type='text/css'>
+<!--
+.a225813917453734-section_heading{color:#FFFFFF;background-color:#000000;font-family:arial;font-size:x-small;font-weight:bold;font-style:normal;text-decoration:none;text-align:left}
+.a225813917453734-footer_publisher{color:#000000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:normal;font-style:normal;text-decoration:none}
+.a225813917453734-footer_publisher:hover{color:#FF0000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:normal;font-style:normal;text-decoration:underline}
+.a225813917453734-footer_copyright{color:#000000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:normal;font-style:normal;text-decoration:none}
+.a225813917453734-footer_disclaimer{color:#000000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:normal;font-style:normal;text-decoration:none}
+.a225813917453734-footer_tellafriend{color:#000000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:bold;font-style:normal;text-decoration:underline}
+.a225813917453734-footer_tellafriend:hover{color:#FF0000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:bold;font-style:normal;text-decoration:underline}
+.a225813917453734-footer_archive{color:#000000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:bold;font-style:normal;text-decoration:none}
+.a225813917453734-footer_archive:hover{color:#FF0000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:bold;font-style:normal;text-decoration:underline}
+.a225813917453734-footer_pdf{color:#000000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:bold;font-style:normal;text-decoration:none}
+.a225813917453734-footer_pdf:hover{color:#FF0000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:bold;font-style:normal;text-decoration:underline}
+
+-->
+</style>
+
+
+<!-- Article View Styles -->
+<style type='text/css'>
+<!--
+.a22581391745353-section_heading{color:#FFFFFF;background-color:#000000;font-family:arial;font-size:x-small;font-weight:bold;font-style:normal;text-decoration:none;text-align:left}
+.a22581391745353-contents_article_title{color:#000000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:normal;font-style:normal;text-decoration:underline}
+.a22581391745353-contents_article_title:hover{color:#FF0000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:normal;font-style:normal;text-decoration:underline}
+
+-->
+</style>
+
+
+<!-- Article View Styles -->
+<style type='text/css'>
+<!--
+.a225813917459043-section_heading{color:#FFFFFF;background-color:#000000;font-family:arial;font-size:x-small;font-weight:bold;font-style:normal;text-decoration:none;text-align:left}
+.a225813917459043-contents_article_title{color:#000000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:normal;font-style:normal;text-decoration:underline}
+.a225813917459043-contents_article_title:hover{color:#FF0000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:normal;font-style:normal;text-decoration:underline}
+
+-->
+</style>
+
+
+<!-- Footer Styles -->
+<style type='text/css'>
+<!--
+.a225813917473867-section_heading{color:#FFFFFF;background-color:#000000;font-family:arial;font-size:x-small;font-weight:bold;font-style:normal;text-decoration:none;text-align:left}
+.a225813917473867-footer_publisher{color:#000000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:normal;font-style:normal;text-decoration:none}
+.a225813917473867-footer_publisher:hover{color:#FF0000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:normal;font-style:normal;text-decoration:underline}
+.a225813917473867-footer_copyright{color:#000000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:normal;font-style:normal;text-decoration:none}
+.a225813917473867-footer_disclaimer{color:#000000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:normal;font-style:normal;text-decoration:none}
+.a225813917473867-footer_tellafriend{color:#000000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:bold;font-style:normal;text-decoration:underline}
+.a225813917473867-footer_tellafriend:hover{color:#FF0000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:bold;font-style:normal;text-decoration:underline}
+.a225813917473867-footer_archive{color:#000000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:bold;font-style:normal;text-decoration:none}
+.a225813917473867-footer_archive:hover{color:#FF0000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:bold;font-style:normal;text-decoration:underline}
+.a225813917473867-footer_pdf{color:#000000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:bold;font-style:normal;text-decoration:none}
+.a225813917473867-footer_pdf:hover{color:#FF0000;background-color:transparent;font-family:verdana;font-size:xx-small;font-weight:bold;font-style:normal;text-decoration:underline}
+
+-->
+</style>
+
+</head> 
+<body bgcolor="#EEEEEE" TEXT="#000000" >
+ <div align="Left"> <!--IMN:TOP--><table bgcolor="#000000" border="0" cellpadding="1" cellspacing="0" width="650" >
+<tr><td> <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%" cols="1">
+	<tr><td width="644" valign="top" bgcolor="#FFFFFF"><!-- 1,1:footer -->
+			
+				
+				
+				 
+ 
+	
+ 
+ 
+
+	
+	
+
+
+ 
+ 
+	 
+<table width="100%" border="0" cellspacing="0" cellpadding="4" bgcolor="#FFFFFF">
+
+<tr><td bgcolor="#FFFFFF">
+
+
+	
+	<div align="left">
+	<table border="0" cellpadding="2" cellspacing="0" width="100%" bgcolor="#FFFFFF">
+	  <tr>
+	    <td>
+	 
+		<font face="verdana,arial" size="1">
+		 
+		</font>
+	 
+		</td>
+	 
+				<td align="right" valign="top">
+		 
+			<font face="verdana,arial" size="1">
+			
+				
+			
+			
+			<b>
+			<a href="http://www.imakenews.com/eletra/mod_input_proc.cfm?mod_name=tell_friend_form&XXDESXXuser=mediaunspun&XXDESXXthanks=Thank%20You%2E&XXDESXXsubject=Check%20this%20out%3A%20%5B%5Btitle%5D%5D&XXDESXXheading=&XXDESXXbackto=http://newsletter.mediaunspun.com/index000018904.cfm&XXDESXXissue_id=18904&XXDESXXtitle=M%20E%20D%20I%20A%20%20U%20N%20S%20P%20U%20N"
+			 class="a225813917453734-footer_tellafriend">
+			<font size=4>Pass it on...</font></a></b>
+			
+			</font>
+		 
+			</td>
+		
+		
+		
+	  </tr>
+	</table></div>
+	 
+	</td></tr></table>
+	
+
+				
+	
+	
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+			
+			
+			<!-- 1,2:header -->
+			
+				
+					
+				 
+
+
+ 
+	
+ 
+	
+ 
+ 
+		
+	 
+		
+	 
+	 
+<table width="100%" border="0" cellspacing="0" cellpadding="4" bgcolor="#FFFFFF">
+
+<tr><td bgcolor="#FFFFFF">
+
+
+		
+		<table border="0" cellpadding="1" cellspacing="0" width="100%">
+		
+		<tr><td colspan = 3>
+
+			
+			
+			
+			 			
+			 
+				
+					
+						
+					
+				
+			 
+				<a href="http://www.mediaunspun.com">
+				
+				<img src="http://a298.g.akamai.net/7/298/5382/081302091747/www.imakenews.com/mediaunspun/mediaunspun_logo.GIF" BORDER="0" alt="M E D I A  U N S P U N" hspace="6" vspace="1" align="top" width="150" ><br>
+				
+				</a>
+			 
+				
+					<em><font face="Arial" size="3">
+					
+					What the Press is Reporting and Why (<a href="http://www.mediaunspun.com">www.mediaunspun.com</a>)
+					
+					</font></em>
+				
+			
+			
+		</td></tr>
+		
+		
+	 	<tr><td colspan="3"><hr noshade size="1"></td></tr>
+		 
+		
+		 <tr>
+		 
+				<td align="left" width="33%">
+			 
+				<font face="Verdana, Arial" size="1">
+				
+				
+					
+					
+						
+							Tuesday, August 13, 2002
+						
+					
+					
+					
+				</font>
+			
+			</td>
+		 
+				<td align="center" width="34%">
+			 
+			</td>
+		 
+				<td align="right" width="33%">
+			 
+			</td>
+		 
+		</tr>
+		</table>
+		 
+	</td></tr></table>
+	
+
+				
+	
+
+
+
+			
+							
+			
+			
+			<!-- COLUMN: 1 -->
+		
+		</td></tr></table> <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%" cols="2">
+	<tr><td width="483" valign="top" bgcolor="#FFFFFF"><!-- 2,1:contents -->
+			
+				
+				 
+
+
+ 
+		
+	 
+	 
+ 
+ 
+	
+ 
+	
+	
+
+ 
+	 
+<font face="verdana,arial" size="2"><br><FONT face=Arial size=4><STRONG>Top Spins...</STRONG></FONT></font>
+<table width="100%" border="0" cellspacing="0" cellpadding="4" bgcolor="#FFFFFF">
+
+<tr><td bgcolor="#FFFFFF">
+
+
+	
+	
+	<TABLE bgcolor="#FFFFFF" border="0" cellpadding="3" cellspacing="0" width="100%">
+	
+ 
+		
+	 
+	<tr bgcolor="#FFFFFF"><td>
+	   
+			
+			
+			<font face="Verdana,Arial" size="1">
+			
+			
+			
+			
+				<A HREF="#a87484"
+				
+					
+						class="a22581391745353-contents_article_title"
+					
+				>
+			
+						
+				
+			
+			United We Fall?
+			
+				
+			
+			
+			
+			</a></font>
+			
+			
+			
+			
+			
+			<br>
+		 </td></tr> 
+		
+	
+ 
+	</table>
+	 
+	</td></tr></table>
+	
+
+				
+
+ 
+
+
+
+
+			
+					
+			
+			
+			<!-- 2,2:contents -->
+			
+				
+				 
+
+
+ 
+		
+	 
+	 
+	
+ 
+ 
+	
+ 
+	
+	
+
+ 
+	 
+<table width="100%" border="0" cellspacing="0" cellpadding="4" bgcolor="#FFFFFF">
+
+<tr><td bgcolor="#FFFFFF">
+
+
+	
+	
+	<TABLE bgcolor="#FFFFFF" border="0" cellpadding="3" cellspacing="0" width="100%">
+	
+ 
+		 
+	 
+	<tr bgcolor="#FFFFFF"><td>
+	   
+			
+			
+			<font face="Verdana,Arial" size="1">
+			
+			
+			
+			
+				<A HREF="#a87485"
+				
+					
+						class="a225813917459043-contents_article_title"
+					
+				>
+			
+						
+				
+			
+			Sleeping with the Penguin
+			
+				
+			
+			
+			
+			</a></font>
+			
+			
+			
+			
+			
+			<br>
+		 </td></tr> <tr><td><img src="http://www.imakenews.com/eletra/empty.gif" height="1" width="1"></td></tr> 
+		
+	 
+	<tr bgcolor="#FFFFFF"><td>
+	   
+			
+			
+			<font face="Verdana,Arial" size="1">
+			
+			
+			
+			
+				<A HREF="#a87486"
+				
+					
+						class="a225813917459043-contents_article_title"
+					
+				>
+			
+						
+				
+			
+			Other Stories
+			
+				
+			
+			
+			
+			</a></font>
+			
+			
+			
+			
+			
+			<br>
+		 </td></tr> 
+		
+	
+ 
+	</table>
+	 
+	</td></tr></table>
+	
+
+				
+
+ 
+
+
+
+
+			
+					
+			
+			
+			<!-- 2,3:article_view -->
+			
+				
+				
+				  
+
+
+ 
+		
+	 
+	 
+	
+ 
+ 
+	
+ 
+	 
+<font face="verdana,arial" size="2"><br></font>
+<table width="100%" border="0" cellspacing="0" cellpadding="4" bgcolor="#FFFFFF">
+
+<tr><td bgcolor="#FFFFFF">
+
+
+	
+	
+	<TABLE bgcolor="#FFFFFF" border="0" cellpadding="3" cellspacing="0" width="100%">
+	
+ 
+		
+	 
+	<tr bgcolor="#FFFFFF"><td>
+	 <a name="a66461"></a>   
+			
+			
+			<font face="Arial" size="4"><b>
+			
+			
+			
+			
+			
+			
+			
+			
+			</b>
+			</font>
+			
+			
+			
+			
+			
+			<br>
+		 
+			
+		 
+			<font face="verdana,arial" size="2">
+			 
+				
+					
+					 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					 
+		
+		
+	 
+	
+ 
+	
+
+
+
+					
+					<P>Media Unspun serves business news and analysis, authoritatively and irreverently, every business day. An annual subscription costs $50, less than a dollar a week. If your four-week free trial is coming to an end soon, please visit <A HREF="http://www.mediaunspun.com/subscribe.html">http://www.mediaunspun.com/subscribe.html</A>  and sign up via credit card or check.<br>
+</P>
+					
+					<br>
+				
+			
+			</font>
+		 </td></tr> 
+		
+	
+ 
+	</table>
+	 
+	</td></tr></table>
+	
+
+				
+
+ 
+
+
+
+
+
+				
+									
+
+			
+			
+			<!-- 2,4:article_view -->
+			
+				
+				
+				  
+
+
+ 
+		
+	 
+	 
+	
+ 
+ 
+	
+ 
+	 
+<font face="verdana,arial" size="2"><FONT face=Verdana size=1><STRONG>Sponsor</STRONG></FONT></font>
+<table width="100%" border="0" cellspacing="0" cellpadding="1" bgcolor="#000000"> 
+<tr><td>
+<table width="100%" border="0" cellspacing="0" cellpadding="4" bgcolor="#FFFFCC">
+
+<tr><td bgcolor="#FFFFCC">
+
+
+	
+	
+	<TABLE bgcolor="#FFFFCC" border="0" cellpadding="3" cellspacing="0" width="100%">
+	
+ 
+		
+	 
+	<tr bgcolor="#FFFFCC"><td>
+	 <a name="a59384"></a> 
+			
+		 
+			<font face="verdana,arial" size="2">
+			 
+				
+					
+					 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					 
+		
+		
+	 
+	
+ 
+	
+
+
+
+					
+					<P>Ken Fisher offers his Quarterly Report for high net worth investors FREE of cost & without obligation. Access the same investment research he uses to guide his clients at:<br>
+<A HREF="http://pcg.fisherinvestments.com/newrespond/letter.asp?site=UNSP&KC=1229EFCAD0000">http://pcg.fisherinvestments.com/newrespond/letter.asp?site=UNSP&KC=1229EFCAD0000</A> </P>
+					
+					<br>
+				
+			
+			</font>
+		 </td></tr> 
+		
+	
+ 
+	</table>
+	 </td></tr></table>
+	</td></tr></table>
+	
+
+				
+
+ 
+
+
+
+
+
+				
+									
+
+			
+			
+			<!-- 2,5:article_view -->
+			
+				
+				
+				  
+
+
+ 
+		
+	 
+	 
+ 
+ 
+	
+ 
+	 
+<table width="100%" border="0" cellspacing="0" cellpadding="4" bgcolor="#FFFFFF">
+
+<tr><td bgcolor="#FFFFFF">
+
+
+	
+	
+	<TABLE bgcolor="#FFFFFF" border="0" cellpadding="3" cellspacing="0" width="100%">
+	
+ 
+		
+	 
+	<tr bgcolor="#FFFFFF"><td>
+	 <a name="a87484"></a>   
+			
+			
+			<font face="Arial" size="4"><b>
+			
+			
+			
+			
+			
+			United We Fall?
+			
+			
+			</b>
+			</font>
+			
+			
+			
+			
+			
+			<br>
+		 
+			
+		 
+			<font face="verdana,arial" size="2">
+			 
+				
+					
+					 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					 
+		
+		
+	 
+	
+ 
+	
+
+
+
+					
+					<P>US Airways scored a $500 million bankruptcy court bailout. American Airlines announced a re-org. United Airlines' parent company's stock sank on speculation that UAL is next in line for Chapter 11. It's a wonder none of this happened last September, but it's not much consolation to airline employees, shareholders, and customers that it's happening now.</P><P>
+The Wall Street Journal had the most extensive coverage of American's plan as of Unspun's deadline. The airline will lay off 7,000 workers, ground some jets, cut back on flight amenities such as food, and retool its hub operations to make for longer layovers. "In the past, airlines were loath to have longer connection times because flights were listed in travel agents' computers by elapsed time," said the Journal. "Now, online booking tools and search engines most often list flights by price,
+not time." In this age of penny-pinching, American's worried about low-cost carriers, not the big guys like, um, US Air and United. </P><P>
+Speaking of United, it's hard to come up with a verb for its parent company's stock that doesn't invoke an air disaster. Let's just say it didn't go up yesterday. The $3.80 share price may be the least of UAL's worries while it waits for an increasingly unlikely $1.8 billion loan from the Air Transportation Stabilization Board. "The ATSB expects an applicant's workers, suppliers and creditors to make concessions to help the airline repay the loans and thus protect U.S. taxpayers' interests,"
+said the L.A. Times. Sounds nice for uninvolved taxpayers but not so good to some of United's unions, which are balking at a wage cut. Workers did enough by deferring $498 million in retroactive pay this year, said the 36,000-member machinists' union. Analysts moaned in anti-labor frustration. </P><P>
+The basic problem here is too many empty airplane seats, and non-U.S. outlets didn't have a lot of sympathy. "The U.S. government has bailed out carriers with insurance subsidies and federal loan guarantees" while "European authorities have acted more wisely," letting Swissair and Sabena "go to the wall," said the Financial Times. Canadian pundits agreed that America should let a couple of airlines wilt, since the Canadian airline industry benefited from the demise of Canadian Airlines and
+Canada 3000. Paging Charles Darwin to the white courtesy phone... - Jen Muehlbauer</P>
+					
+					<br>
+				
+			
+			</font>
+		 </td></tr> 
+		
+	
+ 
+	</table>
+	 
+	</td></tr></table>
+	
+
+				
+
+ 
+
+
+
+
+
+				
+									
+
+			
+			
+			<!-- 2,6:article_view -->
+			
+				
+				
+				  
+
+
+ 
+		
+	 
+	 
+	
+ 
+ 
+	
+ 
+	 
+<font face="verdana,arial" size="2"><FONT face=Verdana size=1><STRONG>Sponsor</STRONG></FONT></font>
+<table width="100%" border="0" cellspacing="0" cellpadding="1" bgcolor="#000000"> 
+<tr><td>
+<table width="100%" border="0" cellspacing="0" cellpadding="4" bgcolor="#FFFFCC">
+
+<tr><td bgcolor="#FFFFCC">
+
+
+	
+	
+	<TABLE bgcolor="#FFFFCC" border="0" cellpadding="3" cellspacing="0" width="100%">
+	
+ 
+		
+	 
+	<tr bgcolor="#FFFFCC"><td>
+	 <a name="a75853"></a> 
+			
+		 
+			<font face="verdana,arial" size="2">
+			 
+				
+					
+					You've heard about identity management, but do you know about the opportunities and business models that will emerge as a result? <a href="http://release1.edventure.com/executivesummary.cfm?MCode=Unspun">Download</a> a free executive summary of Esther Dyson's coverage of identity management in Release 1.0. Learn more about the expanding market for these services and applications.
+					
+					<br>
+				
+			
+			</font>
+		 </td></tr> 
+		
+	
+ 
+	</table>
+	 </td></tr></table>
+	</td></tr></table>
+	
+
+				
+
+ 
+
+
+
+
+
+				
+									
+
+			
+			
+			<!-- 2,7:article_view -->
+			
+				
+				
+				  
+
+
+ 
+		
+	 
+	 
+	
+ 
+ 
+	
+ 
+	 
+<table width="100%" border="0" cellspacing="0" cellpadding="4" bgcolor="#FFFFFF">
+
+<tr><td bgcolor="#FFFFFF">
+
+
+	
+	
+	<TABLE bgcolor="#FFFFFF" border="0" cellpadding="3" cellspacing="0" width="100%">
+	
+ 
+		 
+	 
+	<tr bgcolor="#FFFFFF"><td>
+	 <a name="a87485"></a>   
+			
+			
+			<font face="Arial" size="4"><b>
+			
+			
+			
+			
+			
+			Sleeping with the Penguin
+			
+			
+			</b>
+			</font>
+			
+			
+			
+			
+			
+			<br>
+		 
+			
+		 
+			<font face="verdana,arial" size="2">
+			 
+				
+					
+					 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					 
+		
+		
+	 
+	
+ 
+	
+
+
+
+					
+					<P>The LinuxWorld Conference and Expo, which opened yesterday in San Francisco, will host two of the strangest bedfellows ever to lie down with a stuffed penguin: Microsoft and Sun. These are companies that once referred to Linux as a "bathtub of code" (Sun) and "a cancer" (Microsoft), according to Sun's hometown paper the San Jose Mercury News.</P><P>
+Both companies are taking Linux seriously despite the absolute numbers. By January 2, 2001, Microsoft had made as much on server software as all Linux vendors put together would reap in the entire year.</P><P>
+Honors for the best attention-grabber on Microsoft's presence at the show go to Brier Dudley, who opened his piece for the Seattle Times this way: "Microsoft executive Peter Houston wasn't too worried about the reception he'd get at LinuxWorld ... until he heard about the pie cannon."</P><P>
+Wired informed us that the section of LinuxWorld where Microsoft will be holding the fort is dubbed the Rookery -- "a place where you can watch companies hatch and grow right before your eyes," deadpanned reporter Michelle Delio, quoting Microsoft's Houston: "Hatching isn't exactly on the agenda, but I certainly hope to grow."</P><P>
+Turning to Sun, Unspun notes that five years ago a joke press release circulated on the Net claiming that Linux creator Linus Torvalds, then still living in Finland, was moving to Silicon Valley to work for Sun. The joke was that Sun had decided to scrap its Solaris operating system and instead concentrate on a version of Linux, to be called "Solinux." How time does make April fools of us all: Linus Torvalds is now thriving in Silicon Valley (at Transmeta), and yesterday Sun Microsystems
+demonstrated Sun Linux 5.0. and introduced its first general-purpose servers running Linux.</P><P>
+The Merc ran a comprehensive wrap of Sun's evolving attitude toward the upstart operating system. Sun has little choice but to embrace Linux, wrote reporter Therese Poletti, because some of its traditional Wall Street customers were deserting it. "Several investment banks have tossed out whole sections of Sun servers and replaced them with Intel-based servers running Linux," Poletti reported. And you thought Microsoft hated Linux? - Keith Dawson</P><P>
+Linux expo has come a long way<br>
+<A HREF="http://www.siliconvalley.com/mld/siliconvalley/3847040.htm">http://www.siliconvalley.com/mld/siliconvalley/3847040.htm</A> </P><P>
+Microsoft changes its tune toward Linux (Seattle Times)<br>
+<A HREF="http://makeashorterlink.com/?Q12B23181">http://makeashorterlink.com/?Q12B23181</A> </P><P>
+Microsoft Puts On the Tux <br>
+<A HREF="http://www.wired.com/news/linux/0,1411,54489,00.html">http://www.wired.com/news/linux/0,1411,54489,00.html</A> </P><P>
+(Hoax press release on "Solinux")<br>
+<A HREF="http://www.ibiblio.org/dbarberi/fools/classic/1997/sun-pr.html">http://www.ibiblio.org/dbarberi/fools/classic/1997/sun-pr.html</A> </P><P>
+Sun to name Linux-Solaris chief <br>
+<A HREF="http://news.com.com/2100-1001-949469.html">http://news.com.com/2100-1001-949469.html</A> </P><P>
+Sun Microsystems flexes Linux to jab at Microsoft (Seattle Times)<br>
+<A HREF="http://makeashorterlink.com/?A25B52181">http://makeashorterlink.com/?A25B52181</A> </P><P>
+Microsoft and Free Software at the Same Show? It's True<br>
+<A HREF="http://www.nytimes.com/2002/08/10/technology/10LINU.html">http://www.nytimes.com/2002/08/10/technology/10LINU.html</A> </P><P>
+Linux begins its descent into the enterprise<br>
+<A HREF="http://www.internetnews.com/ent-news/article.php/1443811">http://www.internetnews.com/ent-news/article.php/1443811</A> </P>
+					
+					<br>
+				
+			
+			</font>
+		 </td></tr> 
+		
+	 
+	<tr bgcolor="#FFFFFF"><td>
+	 <a name="a87486"></a>   
+			
+			
+			<font face="Arial" size="4"><b>
+			
+			
+			
+			
+			
+			Other Stories
+			
+			
+			</b>
+			</font>
+			
+			
+			
+			
+			
+			<br>
+		 
+			
+		 
+			<font face="verdana,arial" size="2">
+			 
+				
+					
+					 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					 
+		
+		
+	 
+	
+ 
+	
+
+
+
+					
+					<P>Ex-CEO Pleads Not Guilty to ImClone Fraud<br>
+<A HREF="http://www.washingtonpost.com/wp-dyn/articles/A10407-2002Aug12.html">http://www.washingtonpost.com/wp-dyn/articles/A10407-2002Aug12.html</A> </P><P>
+Security flaw found in Microsoft Web browser (Reuters)<br>
+<A HREF="http://www.philly.com/mld/philly/business/technology/3851394.htm">http://www.philly.com/mld/philly/business/technology/3851394.htm</A> </P><P>
+Fed seen leaving rates unchanged<br>
+<A HREF="http://www.msnbc.com/news/793177.asp">http://www.msnbc.com/news/793177.asp</A> </P><P>
+Some Sad No-Signs of the Times <br>
+<A HREF="http://www.businessweek.com/bwdaily/dnflash/aug2002/nf20020813_0067.htm">http://www.businessweek.com/bwdaily/dnflash/aug2002/nf20020813_0067.htm</A> </P><P>
+Publisher dodges bankruptcy bullet<br>
+<A HREF="http://www.chicagotribune.com/business/chi-020812ziff.story">http://www.chicagotribune.com/business/chi-020812ziff.story</A> </P><P>
+Gates Foundation Walks Fine Line As It Increases Its Cable Holdings<br>
+<A HREF="http://online.wsj.com/article/0,,SB1029180416481589035,00.html">http://online.wsj.com/article/0,,SB1029180416481589035,00.html</A> <br>
+(Paid subscription required.)</P><P>
+PGP defect reveals encrypted messages<br>
+<A HREF="http://news.com.com/2100-1001-949368.html">http://news.com.com/2100-1001-949368.html</A> </P><P>
+Bell Labs simplifies single sign-on<br>
+<A HREF="http://www.theregister.co.uk/content/55/26624.html">http://www.theregister.co.uk/content/55/26624.html</A> </P><P>
+Bigger Bar Code Inches Up on Retailers<br>
+<A HREF="http://www.nytimes.com/2002/08/12/technology/12CODE.html">http://www.nytimes.com/2002/08/12/technology/12CODE.html</A> </P><P>
+Damn the Constitution: Europe must take back the Web<br>
+<A HREF="http://www.theregister.co.uk/content/6/26612.html">http://www.theregister.co.uk/content/6/26612.html</A> </P><P>
+Japanese Drop Out of New ID System (Newsday, AP)<br>
+<A HREF="http://makeashorterlink.com/?T69B22181">http://makeashorterlink.com/?T69B22181</A> </P>
+					
+					<br>
+				
+			
+			</font>
+		 </td></tr> 
+		
+	
+ 
+	</table>
+	 
+	</td></tr></table>
+	
+
+				
+
+ 
+
+
+
+
+
+				
+									
+
+			
+			
+			<!-- 2,8:article_view -->
+			
+				
+				
+				  
+
+
+ 
+		
+	 
+	 
+	
+ 
+ 
+	
+ 
+	 
+<font face="verdana,arial" size="2"><FONT face=Verdana size=1><STRONG>Sponsor</STRONG></FONT></font>
+<table width="100%" border="0" cellspacing="0" cellpadding="1" bgcolor="#000000"> 
+<tr><td>
+<table width="100%" border="0" cellspacing="0" cellpadding="4" bgcolor="#FFFFCC">
+
+<tr><td bgcolor="#FFFFCC">
+
+
+	
+	
+	<TABLE bgcolor="#FFFFCC" border="0" cellpadding="3" cellspacing="0" width="100%">
+	
+ 
+		
+	 
+	<tr bgcolor="#FFFFCC"><td>
+	 <a name="a59804"></a> 
+			
+		 
+			<font face="verdana,arial" size="2">
+			 
+				
+					
+					Do you want to reach the Net's savviest audience?<BR>
+Advertise in Media Unspun.<br>
+Contact Erik Vanderkolk for details at <a href="mailto:erikvanderkolk@yahoo.com">erikvanderkolk@yahoo.com</A> today.
+					
+					<br>
+				
+			
+			</font>
+		 </td></tr> 
+		
+	
+ 
+	</table>
+	 </td></tr></table>
+	</td></tr></table>
+	
+
+				
+
+ 
+
+
+
+
+
+				
+									
+
+			
+			
+			<!-- 2,9:article_view -->
+			
+				
+				
+				  
+
+
+ 
+		
+	 
+	 
+	
+ 
+ 
+	
+ 
+	 
+<table width="100%" border="0" cellspacing="0" cellpadding="4" bgcolor="#FFFFFF">
+
+<tr><td bgcolor="#FFFFFF">
+
+
+	
+	
+	<TABLE bgcolor="#FFFFFF" border="0" cellpadding="3" cellspacing="0" width="100%">
+	
+ 
+		
+	 
+	<tr bgcolor="#FFFFFF"><td>
+	 <a name="a59810"></a>   
+			
+			
+			<font face="Arial" size="4"><b>
+			
+			
+			
+			
+			
+			Staff
+			
+			
+			</b>
+			</font>
+			
+			
+			
+			
+			
+			<br>
+		 
+			
+		 
+			<font face="verdana,arial" size="2">
+			 
+				
+					
+					Written by Deborah Asbrand (<a href="mailto:dasbrand@world.std.com">dasbrand@world.std.com</a>), Keith Dawson (<a href="mailto:dawson@world.std.com">dawson@world.std.com</a>), Jen Muehlbauer (<a href="mailto:jen@englishmajor.com">jen@englishmajor.com</a>), and Lori Patel (<a href="mailto:loripatel@hotmail.com">loripatel@hotmail.com</a>).
+<P>
+Copyedited by Jim Duffy (<a href="mailto:jimduffy86@yahoo.com">jimduffy86@yahoo.com</a>).
+<P>
+Marketing: Cowpoke Productions (<a href="http://www.cowpokeproductions.com">cowpokeproductions.com</a>).
+<P>
+Advertising: Erik Vanderkolk (<a href="mailto:erikvanderkolk@yahoo.com">erikvanderkolk@yahoo.com)</a>.
+<P>
+Editor and publisher: Jimmy Guterman (<a href="mailto:guterman@vineyard.com">guterman@vineyard.com</a>).
+<P>
+Media Unspun is produced by <a href="http://guterman.com">The Vineyard Group Inc.</a>
+<BR>Copyright 2002 Media Unspun, Inc., and The Vineyard Group, Inc.
+<BR>Subscribe already, willya? <a href="http://www.mediaunspun.com">http://www.mediaunspun.com</a>
+<P>
+Redistribution by email is permitted as long as a link to <a href="http://newsletter.mediaunspun.com">http://newsletter.mediaunspun.com</a> is included.
+					
+					<br>
+				
+			
+			</font>
+		 </td></tr> 
+		
+	
+ 
+	</table>
+	 
+	</td></tr></table>
+	
+
+				
+
+ 
+
+
+
+
+
+				
+									
+
+			
+			
+			<!-- COLUMN: 2 -->
+		
+		</td><td width="5" valign="top" align="center" ><img src="http://www.imakenews.com/eletra/empty.gif" height="1" width="5"></td>
+			<td width="1" valign="top" align="center" bgcolor="#888888"><img src="http://www.imakenews.com/eletra/empty.gif" height="1" width="1"></td>
+			<td width="5" valign="top" align="center" ><img src="http://www.imakenews.com/eletra/empty.gif" height="1" width="5"></td><td width="161" valign="top" bgcolor="#FFFFFF"><!-- 3,1:subscription -->
+			
+			  
+			  
+				
+				
+				 
+
+
+ 
+	
+ 
+	
+ 
+ 
+<table width="100%" border="0" cellspacing="0" cellpadding="1" bgcolor="#000000"> 
+<tr><td>
+<table width="100%" border="0" cellspacing="0" cellpadding="4" bgcolor="#EEEEEE">
+
+<tr><td
+bgcolor="#000000">
+	<font face="arial" size="2" color="#FFFFFF"><b>
+		
+		SUBSCRIBE
+		
+	</b></font>
+</td></tr>
+<tr><td bgcolor="#EEEEEE">
+
+
+	 
+		
+			
+			
+			 						
+	 
+		
+	 
+		
+	 
+		
+	 
+		
+	 
+		<form method="POST" action="http://www.imakenews.com/eletra/mod_input_proc.cfm">
+		 
+<p><font face="verdana,arial" size="1">
+ Enter your email address in the box below to receive a free four-week trial of Media Unspun: 
+</font></p>
+ 
+		
+	 
+		  <input type="hidden" name="XXDESXXuser" value="mediaunspun">
+		  
+		  
+		  <input type="hidden" name="mod_name" value="subscription">
+		  <input type="hidden" name="XXDESXXfrom_address" value="guterman@vineyard.com">
+          <input type="hidden" name="XXDESXXfrom_name" value="Media Unspun">
+		  
+		  
+		  
+		  
+		  
+ 		  
+			 <input type="hidden" name="XXDESXXpage" value="http://newsletter.mediaunspun.com/index000018904.cfm">		  
+		  
+	
+	
+    
+
+	
+	
+		
+    
+	<p><input type="text" name="XXDESXXemail_address" size="15" maxlength="100">
+		<br><font face="verdana" size="1">
+	 
+		
+			<input type="radio" value="Add" name="XXDESXXsubscribe_op" checked>
+			
+			Add
+			
+		
+	 
+		<input type="radio" value="Remove" name="XXDESXXsubscribe_op">
+		
+		Remove<br>
+		
+	 
+		<input type="checkbox" name="XXDESXXemail_type" value="htm" checked>
+		 Send as HTML<br>
+		
+	   
+	  <input type="submit" value="Submit" name="add">&nbsp;
+	
+	</font></p>
+    
+
+
+		</form>	
+	
+
+ </td></tr></table>
+	</td></tr></table><font face="verdana,arial" size="2"><FONT face=Verdana size=1><STRONG>
+<P align=center><BR>Newsletter Services <BR>Provided by <BR></STRONG></FONT><A href="http://www.imakenews.com/affiliate.cfm?a_id=unspun"><FONT face=Verdana size=1><STRONG>iMakeNews.com</STRONG></FONT></A></P></font>
+	
+
+					
+			  		
+					
+			
+			
+			<!-- 3,2:survey_view -->
+			
+				
+				 
+
+
+ 
+ 
+	
+ 
+	
+ 
+	
+ 
+ 
+
+
+
+
+
+
+
+
+
+												
+			
+			
+			<!-- 3,3:menu -->
+			
+				
+				 
+	
+ 
+	
+ 
+
+
+
+
+
+
+
+
+			
+			
+			
+			<!-- COLUMN: 3 -->
+		
+		</td></tr></table> <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%" cols="1">
+	<tr><td width="644" valign="top" bgcolor="#FFFFFF"><!-- 4,1:footer -->
+			
+				
+				
+				 
+ 
+	
+ 
+ 
+
+	
+	
+
+
+ 
+ 
+	 
+<table width="100%" border="0" cellspacing="0" cellpadding="4" bgcolor="#FFFFFF">
+
+<tr><td bgcolor="#FFFFFF">
+
+
+	
+	<div align="left">
+	<table border="0" cellpadding="2" cellspacing="0" width="100%" bgcolor="#FFFFFF">
+	  <tr>
+	    <td>
+	 
+		<font face="verdana,arial" size="1">
+		 
+		</font>
+	 
+		</td>
+	 
+				<td align="right" valign="top">
+		 
+			<font face="verdana,arial" size="1">
+			
+				
+			
+			
+			<b>
+			<a href="http://www.imakenews.com/eletra/mod_input_proc.cfm?mod_name=tell_friend_form&XXDESXXuser=mediaunspun&XXDESXXthanks=Thank%20You%2E&XXDESXXsubject=Check%20this%20out%3A%20%5B%5Btitle%5D%5D&XXDESXXheading=&XXDESXXbackto=http://newsletter.mediaunspun.com/index000018904.cfm&XXDESXXissue_id=18904&XXDESXXtitle=M%20E%20D%20I%20A%20%20U%20N%20S%20P%20U%20N"
+			 class="a225813917473867-footer_tellafriend">
+			<font size=4>TELL A FRIEND</font></a></b>
+			
+			</font>
+		 
+			</td>
+		
+		
+		
+	  </tr>
+	</table></div>
+	 
+	</td></tr></table>
+	
+
+				
+	
+	
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+			
+			
+			<!-- COLUMN: 4 -->
+		
+		</td></tr></table> </td></tr></table>
+<!--IMN:BOTTOM-->
+<table border="0" cellpadding="2" cellspacing="0" width="650">
+  <tr><td><font face="verdana,arial" size="1">Powered by <strong><a href="http://www.imakenews.com" target="_top" class="link">iMakeNews.com</a>&#153;</strong></font><br>
+	<font face="verdana,arial" size="1">This email was sent to: zzz-unspun@spamassassin.taint.org <br><a href="http://www.imakenews.com/eletra/remove.cfm?x=mediaunspun%2Czzz-unspun@spamassassin.taint.org">Click here</a> to be instantly removed from this list.<br><a href="http://www.imakenews.com/eletra/change.cfm?x=mediaunspun%2Czzz-unspun@spamassassin.taint.org%2Ctxt">Click here</a> to receive future messages in plain text format.<br></font><font face="verdana,arial" size="1"><a
+href="http://www.imakenews.com/eletra/update.cfm?x=mediaunspun%2Czzz-unspun@spamassassin.taint.org">Click here</a> to change your subscriber information and preferences.<br></font></tr></table>
+<!--Ver. 7-->
+
+	
+		
+			
+		 
+		 
+		  
+		<p>&nbsp;
+		   
+	   
+       <img src="http://machina.imakenews.com/E177528,5114587XXmediaunspunXX18904XXXXindex000018904.cfmXXemailXX5114587XXXX0Y0XX1" alt="" height="0" width="0">		 
+	   
+	   
+		</p>
+		
+	
+
+   
+ 
+</div>
+
+
+</body>
+</html>
+
+
+
+------------=_1029244856-11739-4--
+
+

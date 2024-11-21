@@ -1,0 +1,29 @@
+
+{{alias}}( dtype )
+    Returns a complex typed array constructor.
+
+    The function returns constructors for the following data types:
+
+    - complex64: single-precision floating-point complex numbers.
+    - complex128: double-precision floating-point complex numbers.
+
+    Parameters
+    ----------
+    dtype: string
+        Data type.
+
+    Returns
+    -------
+    out: Function|null
+        Complex typed array constructor.
+
+    Examples
+    --------
+    > var ctor = {{alias}}( 'complex64' )
+    <Function>
+    > ctor = {{alias}}( 'float32' )
+    null
+
+    See Also
+    --------
+

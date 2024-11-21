@@ -1,0 +1,66 @@
+From fork-admin@xent.com  Wed Oct  2 16:02:24 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id ACD6416F6B
+	for <jm@localhost>; Wed,  2 Oct 2002 16:00:38 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 02 Oct 2002 16:00:38 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g92EoAK13476 for <jm@jmason.org>;
+    Wed, 2 Oct 2002 15:50:13 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 87A4229410C; Wed,  2 Oct 2002 07:50:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from 192.168.1.2 (smtp.piercelaw.edu [216.204.12.219]) by
+    xent.com (Postfix) with ESMTP id 6591929409C for <Fork@xent.com>;
+    Wed,  2 Oct 2002 07:49:26 -0700 (PDT)
+Received: from 192.168.30.220 ([192.168.30.220]) by 192.168.1.2;
+    Wed, 02 Oct 2002 10:49:03 -0400
+From: bitbitch@magnesium.net
+X-Mailer: The Bat! (v1.61) Educational
+Reply-To: bitbitch@magnesium.net
+X-Priority: 3 (Normal)
+Message-Id: <3460152885.20021002104900@magnesium.net>
+To: "Mr. FoRK" <fork_list@hotmail.com>
+Cc: Fork@xent.com
+Subject: Re: ActiveBuddy
+In-Reply-To: <DAV68j2OW7MgETDx4e700008892@hotmail.com>
+References: <DAV68j2OW7MgETDx4e700008892@hotmail.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 2 Oct 2002 10:49:00 -0400
+
+MF> Here is a sample conversation on (MSN Messenger with 'SmarterChild'):
+
+MF> Mike says:
+MF> how are you?
+
+MF> SmarterChild says:
+MF> Great thx! You?
+
+
+
+Oh freaking great.  In their adoption to make it 'more human' they
+have to add in all the broken english and shortened AOL-style
+phrasings.  YAY.
+
+Next thing you know, the AI will be asking for ASL...
+
+Evil.
+
+

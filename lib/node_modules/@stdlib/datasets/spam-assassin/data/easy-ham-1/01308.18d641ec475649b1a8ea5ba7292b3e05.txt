@@ -1,0 +1,155 @@
+From nobody@dogma.slashnull.org  Fri Aug 23 12:20:28 2002
+Return-Path: <nobody@dogma.slashnull.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D1C5843F99
+	for <jm@localhost>; Fri, 23 Aug 2002 07:20:27 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 23 Aug 2002 12:20:27 +0100 (IST)
+Received: (from mail@localhost) by dogma.slashnull.org (8.11.6/8.11.6) id
+    g7NB9oq21542; Fri, 23 Aug 2002 12:09:50 +0100
+Date: Fri, 23 Aug 2002 12:09:50 +0100
+Message-Id: <200208231109.g7NB9oq21542@dogma.slashnull.org>
+From: nobody@dogma.slashnull.org
+Subject: blogged item
+To: yyyy+blogged@spamassassin.taint.org
+
+BlogStart: 
+
+**Dublin**: something from the archives.    Daev Walsh forwards an article from
+The Irish Digest about ''Billy in the Bowl''.  This story is also immortalised
+in an old Dublin song, which in turn was mentioned in a Pogues track.  Billy
+was a legless beggar in the alleys of Stoneybatter and Grangegorman (where I
+now live) during the 18th century, who discovered a new, but not entirely
+legal, way to make money.
+
+BlogEnd: 
+LinkText: Billy in the Bowl
+
+From:         daev <hellshaw@fringeware.com>
+Subject:      The Case of the Stoneybatter Strangler
+
+A story of my new neighbourhood...
+
+
+The Irish Digest July 1964
+
+
+The Case of the Stoneybatter Strangler
+
+The handsome, deformed Billy in the Bowl evolved a plan to rob his donors.
+Then, one night, he made the biggest mistake of his life 
+
+DUBLIN in the eighteenth century was noted for two things - the
+architectural beauty of its public buildings and the large number of
+beggars who sought alms in its maze of streets and lanes.  Many of these
+beggars relied on visitors and the gentry for their coin, but there was one
+who campaigned among the working class.  This was "Billy In The Bowl"
+
+The strange appellation was derived from the fact that Billy's sole means
+of transport was a large bowl-shaped car with wheels.  Seated in this "
+bowl ", the beggar would propel himself along by pushing against the ground
+with wooden plugs, one in each hand.
+
+Billy's unusual means of conveyance was vitally necessary, as he had been
+born without legs.  Nature, however, had compensated for this by endowing
+him with powerful arms and shoulders and, what was most important, an
+unusually handsome face.
+
+This was Billy's greatest asset in his daily routine of separating
+sympathetic passers-by from their small change.
+
+The cunning young beggar would wait at a convenient spot on one of the many
+lonely roads or lanes which were a feature of eighteenth century
+Grangegorman and Stoneybatter, until a servant girl or an old lady would
+come along.
+
+He would then put on is most attractive smile which, together with his
+black curly hair, never failed to halt the females.  The fact that such a
+handsome young man was so terribly handicapped physically always evoked pity.
+
+"Billy in the Bowl", however, wasn't satisfied with becoming the daily
+owner of a generous number of small coins; what his greed demanded were
+substantial sums of money.  The more he managed to get the more he could
+indulge in his pet vices - gambling and drinking.
+
+As a result the beggar evolved a plan to rob unsuspecting sympathisers.
+The first time lie put his plan into operation was on a cold March evening
+as dusk, was falling.  The victim was a middle aged woman who was passing
+through Grangegorman Lane on her way to visit friends in Queen Street - on
+Dublin's North Quays.
+
+When Billy heard the woman's footsteps, he hid behind some bushes in a
+ditch which skirted the lane.  As his unsuspecting victim drew close, the
+beggar moaned and shouted, and cried out for help.
+
+Trembling with excitement, the woman dashed to the spot where Billy lay
+concealed.  She bent down to help the beggar out of the ditch, when two
+powerful arms closed around her throat and pulled her into the bushes.
+
+In a few minutes it was all over.  The woman lay in a dead faint, and Billy
+was travelling at a fast rate down the lane in his " bowl ", his victirn's
+purse snug in his coat pocket.  An hour after the robbery the woman was
+found in a distracted condition, but failed to give a description of her
+assailant.  And, as "Billy in the Bowl" had figured, nobody would suspect a
+deformed beggar.
+
+Again and again the beggar carried out his robbery plan, always shifting
+the place of attack to a different part of Grangegorman or  Stoneybatter.
+
+On one occasion " Billy in "the Bowl " tried his tactics on a sturdy
+servant girl who put up such a vigorous resistance that he was forced to
+strangle her.  The incident became known as the 11 Grangegorman Lane Murder
+and caused a great stir.
+
+Hundred.s flocked to the scene of the crime and for a couple of months
+"Billy in the Bowl" was forced to desert his usual haunts.  Around this
+period, Dublin's first-ever police force was been mobilised, and the first
+case they were confronted with was the Grangegorman lane murder.
+
+Months passed and  "Billy in the Bowl" reverted once again to his old
+pasttime.  A number of young servant girls were lured into ditches and
+robbed, and the police were inundated with so many complaints that a
+nightly patrol was placed on the district.  But the beggar still rolled
+along in his "bowl" pitied and unsuspected.  Then came the night that
+finished Billy's career of crime.
+
+Two stoudy built female cooks, trudging back to their places of employment
+after a night out in the city, were surprised and not a little shocked to
+hear shouts for help.  Rushing over, they came upon a huddled figure in the
+ditch.
+
+Billy, thinking there was only one woman, grabbed one of the cooks and
+tried to pull her into the ditch.  She proved much too strong for him,
+however) and while resisting tore 'at his face with her sharp finger-nails.
+
+Meanwhile, her companion acted with speed and daring.  Pulling out her
+large hatpin she made .for the beggar, and plunged the pin into his right eye.
+
+The screams and howls of the wounded beggar reverberated throughout the
+district and brought people dashing to the scene.  Among them was a member
+of the nightly police patrol who promptly arrested the groaning Billy.
+
+"Billy in the Bowl" was tried and sentenced for robbery with violence, but
+they could never prove it was he who had strangled the servant girl.  The
+Grangegorman-Stoneybatter district became once again a quiet, attractive
+Dublin suburb where old ladies strolled, and carefree servant girls laughed
+and giggled as they wended their way home at night.
+
+
+
+daev
+
+_______________________________
+Rev.  Dave 'daev' Walsh, daev@fringeware.com
+Home:  http://www.fringeware.com/hell
+Weekly Rant: http://www.nua.ie/blather
+'Is it about a bicycle?'-Sgt.Pluck, 
+'The Third Policeman', by Flann O'Brien
+________________________________
+Holistic Pet Detective, Owl Worrier, Snark Hunter 
+________________________________
+
+
+

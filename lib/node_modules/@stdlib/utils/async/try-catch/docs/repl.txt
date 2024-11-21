@@ -1,0 +1,63 @@
+
+{{alias}}( x, y, done )
+    If a function does not return an error, invokes a callback with the function
+    result; otherwise, invokes a callback with a value `y`.
+
+    A function `x` is provided a single argument:
+
+    - clbk: callback to invoke upon function completion.
+
+    The callback function accepts two arguments:
+
+    - error: error object.
+    - result: function result.
+
+    The `done` callback is invoked upon function completion and is provided two
+    arguments:
+
+    - error: error object.
+    - result: either the result of `x` or the provided argument `y`.
+
+    If `x` invokes `clbk` with an error argument, the function invokes the
+    `done` callback with both the error and the argument `y`.
+
+    If `x` does not invoke `clbk` with an error argument, the function invokes
+    the `done` callback with a first argument equal to `null` and the function
+    `result`.
+
+    Execution is *not* guaranteed to be asynchronous. To guarantee asynchrony,
+    wrap the `done` callback in a function which either executes at the end of
+    the current stack (e.g., `nextTick`) or during a subsequent turn of the
+    event loop (e.g., `setImmediate`, `setTimeout`).
+
+    Parameters
+    ----------
+    x: Function
+        Function to invoke.
+
+    y: any
+        Value to return if `x` returns an error.
+
+    done: Function
+        Callback to invoke upon completion.
+
+    Examples
+    --------
+    > function x( clbk ) {
+    ...     setTimeout( onTimeout, 0 );
+    ...     function onTimeout() {
+    ...         clbk( new Error( 'beep' ) );
+    ...     }
+    ... };
+    > function done( error, result ) {
+    ...     if ( error ) {
+    ...         // process error...
+    ...     }
+    ...     console.log( result );
+    ... };
+    > {{alias}}( x, 'boop', done )
+    'boop'
+
+    See Also
+    --------
+

@@ -1,0 +1,58 @@
+{
+  "name": "stdlib-pkg2related",
+  "version": "",
+  "title": "Standard Library Package Names and Related Packages",
+  "description": "A mapping between standard library package names and related packages.",
+  "resources": [
+    {
+      "name": "stdlib-pkg2related-json",
+      "title": "Standard Library Package Names and Related Packages",
+      "description": "A mapping between standard library package names and related packages.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.json"
+    },
+    {
+      "name": "stdlib-pkg2related-csv",
+      "title": "Standard Library Package Names and Related Packages",
+      "description": "A mapping between standard library package names and related packages.",
+      "format": "csv",
+      "mediatype": "plain/csv",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "pkg",
+            "title": "Package Name",
+            "description": "Package name.",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "related",
+            "title": "Related",
+            "description": "Comma-delimited package names.",
+            "type": "string",
+            "format": "default"
+          }
+        ]
+      }
+    }
+  ],
+  "sources": [],
+  "keywords": [
+    "stdlib",
+    "namespace",
+    "package",
+    "packages",
+    "pkg",
+    "pkgs",
+    "name",
+    "related"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}

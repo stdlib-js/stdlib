@@ -1,0 +1,74 @@
+From webmake-talk-admin@lists.sourceforge.net  Sun Sep  8 00:29:58 2002
+Return-Path: <webmake-talk-admin@example.sourceforge.net>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id F0AC616F16
+	for <zzzz@localhost>; Sun,  8 Sep 2002 00:29:53 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Sun, 08 Sep 2002 00:29:53 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g87NSqC04639 for <zzzz@jmason.org>; Sun, 8 Sep 2002 00:28:52 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17np0i-00029d-00; Sat,
+    07 Sep 2002 16:29:04 -0700
+Received: from abn130-247.interaktif.net.tr ([195.174.130.247]
+    helo=webman.ttnet.net.tr) by usw-sf-list1.sourceforge.net with smtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17np0M-0007R0-00; Sat, 07 Sep 2002 16:28:43
+    -0700
+From: "GREENCARD TÜRKÝYE SERVÝSÝ" <mailservis@ttnet.net.tr>
+To: webmake-talk@example.sourceforge.net
+X-Mailer: Microsoft Outlook Express 5.00.2919.7000
+MIME-Version: 1.0
+X-Precedence-Ref: 12340
+Message-Id: <E17np0M-0007R0-00@usw-sf-list1.sourceforge.net>
+Subject: [WM] GREEN CARD CEKÝLÝSÝ  KACIRMAYIN
+Sender: webmake-talk-admin@example.sourceforge.net
+Errors-To: webmake-talk-admin@example.sourceforge.net
+X-Beenthere: webmake-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:webmake-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:webmake-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/webmake-talk>,
+    <mailto:webmake-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Discussion of WebMake. <webmake-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/webmake-talk>,
+    <mailto:webmake-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=webmake-talk>
+X-Original-Date: Sat, 7 Sep 2002 16:28:40 -0700
+Date: Sat, 7 Sep 2002 16:28:40 -0700
+Content-Type: text/html; charset="windows-1254"
+Content-Transfer-Encoding: quoted-printable
+
+=3C!DOCTYPE HTML PUBLIC =22-=2F=2FW3C=2F=2FDTD HTML 4=2E01 Transitional=2F=2FEN=22=3E
+=3Chtml=3E
+=3Chead=3E
+=3Ctitle=3EGREEN CARD=3C=2Ftitle=3E
+=3Cscript=3E
+
+function Go=28=29 
+{
+window=2Elocation=3D=22http=3A=2F=2Fwww=2Eyesilkart=2Eorg=2Findex=2Ephp=3FWho=3D19=22=3B
+}
+    =3C=2Fscript=3E
+=3C=2Fhead=3E
+=3Cbody ONLOAD=3D=22Go=28=29=22 =3E
+=3C=2Fbody=3E
+=3C=2Fhtml=3E
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+webmake-talk mailing list
+webmake-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/webmake-talk
+
+

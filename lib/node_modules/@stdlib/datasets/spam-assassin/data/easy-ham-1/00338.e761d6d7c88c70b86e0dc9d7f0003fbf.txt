@@ -1,0 +1,55 @@
+From fork-admin@xent.com  Tue Aug 27 03:46:39 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id AC53643F99
+	for <jm@localhost>; Mon, 26 Aug 2002 22:46:39 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 27 Aug 2002 03:46:39 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7R2juZ23016 for <jm@jmason.org>;
+    Tue, 27 Aug 2002 03:45:59 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 529562940A1; Mon, 26 Aug 2002 19:43:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from venus.phpwebhosting.com (venus.phpwebhosting.com
+    [64.29.16.27]) by xent.com (Postfix) with SMTP id EE12829409E for
+    <fork@xent.com>; Mon, 26 Aug 2002 19:42:13 -0700 (PDT)
+Received: (qmail 18632 invoked by uid 508); 27 Aug 2002 02:44:03 -0000
+Received: from unknown (HELO hydrogen.leitl.org) (217.80.40.9) by
+    venus.phpwebhosting.com with SMTP; 27 Aug 2002 02:44:03 -0000
+Received: from localhost (eugen@localhost) by hydrogen.leitl.org
+    (8.11.6/8.11.6) with ESMTP id g7R2i2a27964; Tue, 27 Aug 2002 04:44:03
+    +0200
+X-Authentication-Warning: hydrogen.leitl.org: eugen owned process doing -bs
+From: Eugen Leitl <eugen@leitl.org>
+To: Geege <grlygrl201@aol.com>
+Cc: <fork@spamassassin.taint.org>
+Subject: Re: Rambus, Man
+In-Reply-To: <200208262039.NAA20810@stories2.idg.net>
+Message-Id: <Pine.LNX.4.33.0208270442120.15190-100000@hydrogen.leitl.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 27 Aug 2002 04:44:02 +0200 (CEST)
+
+On Mon, 26 Aug 2002, Geege wrote:
+
+> Latest Rambus memory plus fast bus appear to give Intel's newest P4 the jolt it needs.
+
+Well, Athlon FSB 333 is almost there. And I'm really looking forward to 
+the Hammer series.
+
+

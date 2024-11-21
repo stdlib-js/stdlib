@@ -1,0 +1,79 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Sep 12 15:03:28 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 63AFD16F03
+	for <jm@localhost>; Thu, 12 Sep 2002 15:03:28 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 12 Sep 2002 15:03:28 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8CDChC32028 for <jm-sa@jmason.org>; Thu, 12 Sep 2002 14:12:43 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17pTfa-0007C9-00; Thu,
+    12 Sep 2002 06:06:06 -0700
+Received: from dsl-65-187-227-177.telocity.com ([65.187.227.177]
+    helo=purestmail.com) by usw-sf-list1.sourceforge.net with esmtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17pTfO-0002KB-00 for
+    <spamassassin-talk@lists.sourceforge.net>; Thu, 12 Sep 2002 06:05:54 -0700
+Received: from [192.168.1.2] ([192.168.1.2] verified) by purestmail.com
+    (CommuniGate Pro SMTP 4.0b7) with ESMTP id 205148 for
+    spamassassin-talk@lists.sourceforge.net; Thu, 12 Sep 2002 09:05:51 -0400
+From: "Eric Mings" <elm@answers123.com>
+To: "Spamassassin Talk" <spamassassin-talk@example.sourceforge.net>
+Subject: Re: [SAtalk] Bayesian and bogofilter
+Message-Id: <20020912130550.1275@192.168.1.3>
+In-Reply-To: <yf2admn8vk3.fsf@proton.pathname.com>
+References: <yf2admn8vk3.fsf@proton.pathname.com>
+X-Mailer: CTM PowerMail 4.0 carbon <http://www.ctmdev.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Thu, 12 Sep 2002 09:05:50 -0400
+Date: Thu, 12 Sep 2002 09:05:50 -0400
+
+>Anyway I'm making good progress and my implementation works reasonably
+>well.  It now seems blindingly clear that we want a tightly-integrated
+>implementation of Naive Bayes spam/nonspam classification.  There are
+>still some things about how to do this right inside SA that I still am
+>figuring out.
+>
+>Dan
+
+This is very good news! Will this allow for individual spam word file
+preferences when spamassassin is running on a mailserver for multiple
+users? This would be an outstanding addition if it can be done. Thanks
+much for a great project.
+
+-- 
+Regards,
+
+Eric Mings Ph.D.
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

@@ -1,0 +1,47 @@
+
+{{alias}}( x, indices, dimension, mode )
+    Takes elements from a two-dimensional nested array.
+
+    If `indices` is an empty array, the function returns empty arrays along the
+    specified dimension.
+
+    The function does *not* deep copy nested array elements.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input nested array.
+
+    indices: ArrayLikeObject<integer>
+        List of indices.
+
+    dimension: integer
+        Dimension along which to take elements. If provided a negative integer,
+        the dimension is resolved relative to the last dimension, with the last
+        dimension being -1.
+
+    mode: string
+        Specifies how to handle an index which exceeds array dimensions. If
+        equal to 'throw', the function throws an error when an index exceeds
+        array dimensions. If equal to 'normalize', the function normalizes
+        negative indices and throws an error when an index exceeds array
+        dimensions. If equal to 'wrap', the function wraps around an index
+        exceeding array dimensions using modulo arithmetic. If equal to
+        'clamp', the function sets an index exceeding array dimensions to
+        either 0 (minimum index) or the maximum index.
+
+    Returns
+    -------
+    out: Array
+        Output array.
+
+    Examples
+    --------
+    > var x = [ [ 1, 2 ], [ 3, 4 ] ];
+    > var idx = [ 1, 1, 0, 0, -1, -1 ];
+    > var y = {{alias}}( x, idx, 1, 'normalize' )
+    [ [ 2, 2, 1, 1, 2, 2 ], [ 4, 4, 3, 3, 4, 4 ] ]
+
+    See Also
+    --------
+

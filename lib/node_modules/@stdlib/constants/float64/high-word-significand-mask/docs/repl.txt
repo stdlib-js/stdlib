@@ -1,0 +1,15 @@
+
+{{alias}}
+    High word mask for the significand of a double-precision floating-point
+    number.
+
+    Examples
+    --------
+    > {{alias}}
+    1048575
+    > {{alias:@stdlib/number/uint32/base/to-binary-string}}( {{alias}} )
+    '00000000000011111111111111111111'
+
+    See Also
+    --------
+

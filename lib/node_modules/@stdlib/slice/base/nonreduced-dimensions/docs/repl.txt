@@ -1,0 +1,23 @@
+
+{{alias}}( slice )
+    Returns a list of non-reduced dimensions in an un-normalized multi-slice.
+
+    Parameters
+    ----------
+    slice: MultiSlice
+        Input slice object.
+
+    Returns
+    -------
+    out: Array<integer>
+        Dimension indices.
+
+    Examples
+    --------
+    > var s = new {{alias:@stdlib/slice/multi}}( 1, 3, null );
+    > var out = {{alias}}( s )
+    [ 2 ]
+
+    See Also
+    --------
+

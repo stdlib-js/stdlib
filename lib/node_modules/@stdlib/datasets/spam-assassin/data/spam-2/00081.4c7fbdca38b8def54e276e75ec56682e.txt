@@ -1,0 +1,764 @@
+From FLN-Community@FreeLinksNetwork.com  Sat Jul 28 17:35:30 2001
+Return-Path: <FLN-Community@FreeLinksNetwork.com>
+Delivered-To: yyyy@netnoteinc.com
+Received: from rovdb001.roving.com (unknown [216.251.239.53]) by
+    mail.netnoteinc.com (Postfix) with ESMTP id 29F9911410E for
+    <jm@netnoteinc.com>; Sat, 28 Jul 2001 16:35:28 +0000 (Eire)
+Received: from rovweb003 (unknown [10.208.80.89]) by rovdb001.roving.com
+    (Postfix) with ESMTP id 67FF8513B1 for <jm@netnoteinc.com>; Sat,
+    28 Jul 2001 00:26:43 -0400 (EDT)
+From: Your Membership Newsletter <FLN-Community@FreeLinksNetwork.com>
+To: yyyy@netnoteinc.com
+Subject: Your Membership Community & Commentary, 07-27-01
+X-Roving-Queued: 20010728 00:27.01526
+X-Roving-Version: 4.1.Patch44.ThingOne_p44_07_18_01_PoolFix
+X-Mailer: Roving Constant Contact 4.1.Patch44.ThingOne_p44_07_18_01_PoolFi
+    x (http://www.constantcontact.com)
+X-Roving-Id: 996263976609
+Message-Id: <20010728042643.67FF8513B1@rovdb001.roving.com>
+Date: Sat, 28 Jul 2001 00:26:43 -0400 (EDT)
+
+
+--261908501.996294421526.JavaMail.RovAdmin.rovweb003
+Content-Type: text/plain; charset=iso-8859-1
+
+Your Membership Community & Commentary (July 27, 2001)
+It's All About Making Money
+
+Information to provide you with the absolute 
+best low and no cost ways of providing traffic 
+to your site, helping you to capitalize on the power 
+and potential the web brings to every Net-Preneur. 
+
+--- This Issue Contains Sites Who Will Trade Links With You! --- 
+
+-------------
+IN THIS ISSUE
+-------------
+5 Ways to Create a Unique Website
+Member Showcase
+Commentary Quick Tips
+Win A FREE Ad In Community & Commentary
+
+
+
+||| =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=>>
+    Today's Special Announcement:
+||| =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=>>
+
+Absolute Gifts Etc. Offers thousand of high quality gifts & unique 
+collectibles. At wholesales prices, Some items are "Exclusive" and 
+were designed for our collection only. Lots of freebees! 
+Plus bonus bucks will save you even more. 
+Business opportunities,Total weight loss system & much more!
+http://www.absolutegiftsetc.com 
+
+||| =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=>>
+
+You are a member in at least one of these programs 
+- You should be in them all! 
+http://www.BannersGoMLM.com 
+http://www.ProfitBanners.com 
+http://www.CashPromotions.com 
+http://www.MySiteInc.com 
+http://www.TimsHomeTownStories.com 
+http://www.FreeLinksNetwork.com 
+http://www.MyShoppingPlace.com 
+http://www.BannerCo-op.com 
+http://www.PutPEEL.com 
+http://www.PutPEEL.net 
+http://www.SELLinternetACCESS.com 
+http://www.Be-Your-Own-ISP.com 
+http://www.SeventhPower.com 
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+5 Ways to Create a Unique Website
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Internet users have no doubt seen several websites of identical
+design. This is often because webmasters do not have the
+ability or time to design and create unique websites. These
+five points will help you come up with a one-of-a-kind design
+for your website.
+
+1. Navigation System
+
+Deciding on a navigation system should be one of the first
+things to consider when designing your website. Visitors
+usually look for a way to get to the information they want
+before reading anything else. I would suggest putting your
+navigation system in two areas. Look at WebmasterBase 
+(http://www.webmasterbase.com) for example. There is a list 
+of categories on the left, and information about the network 
+on the top bar.
+
+It is not recommended that you place your navigation at the
+bottom of the page because:
+
+- People see the top of the page first
+- If you have a lot of content on one page, the navigation gets
+   pushed to bottom of the page... away from the visitor.
+
+2. Color Scheme
+
+When you are choosing colors, make sure they contrast. For
+example, do not use bright green and florescent pink. Some
+colors that are often used are white on black or black on
+white.
+
+A wonderful utility that is web-based and free is Color Schemer
+(http://www.godigitalstudios.com/www/color/), created by Aaron
+Epstein. Many other programs exist that can assist you in
+choosing colors. Try doing a search on FreewareFiles 
+(http://www.freewarefiles.com), Tucows (http://www.tucows.com),
+or Download.com (http://www.download.com) for "color schemer."
+
+3. Content Window
+
+This is the brain of the website. Make sure that the text here
+is easy to read and understand.
+
+Also, provide your own original content. People do not want to
+hear what somebody else has to say. They want to hear what 
+you want to say! While it might be time consuming to write
+your own content, it sure is worth it.
+
+To find content for your website, try searching at
+EzineArticles (http://www.ezinearticles.com). Other people may
+have used the articles, but if you become good friends with the
+authors, they may send you new content as they write it. Be
+careful though. Do not use too much content from other 
+authors, as mentioned above.
+
+4. Font(s)
+
+Several types of fonts exist. The first one I will discuss is
+fixed width or monospace, similar to Courier or Courier New.
+Fixed width fonts are good for displaying code (like HTML.)
+
+Another type of font is called sans serif. It is similar to
+Arial (Windows) or Helvetica (Macintosh). This font can be 
+used for long pieces of text.
+
+The final type of font is called serif because it has serifs,
+or curves, in each letter. Often, this font is called Times
+(Windows) or Georgia (Macintosh). This font, like sans serif,
+is often used for long blocks of text. It is preferred because
+its rounded edges lead the reader to the next letter, making it
+easier to read.
+
+5. Advertising
+
+Ah, everybody's favorite... advertising! This is one of thing 
+that almost every website has. The most common type is what 
+is known as "banner" advertising. It is called that because it is 
+long and thin (like a paper banner.) How long you ask? The 
+generic kind is 468 pixels wide by 60 pixels high.
+
+New sizes however are being used. Take for example the new
+style called "skyscraper" -- so called for a reason: it looks
+like a skyscraper. It is tall (about 425 pixels) but not too
+wide (about 100-125 pixels.)
+
+Finding a way to place advertising can be tricky. Banners 
+used to be placed (and still are) only at the top of the page.
+Nevertheless, banners are starting to be placed in the middle
+of the page, at the bottom, or along the side.
+
+    Conclusion
+
+These are only five things to consider when designing a
+website. There are many others however. Let me know what 
+you find that helps you create a unique website. My email 
+address is mailto:corbb@justforwebmasters.com.
+
+-------------------------------------
+About the Author...
+
+Written by Corbb O'Connor. Corbb is the Webmaster of
+http://www.justforwebmasters.com, a website that focuses on
+teaching Webmasters how to create, gain traffic to, and make
+money from their own websites. He is also the editor of a FREE
+bi-weekly newsletter entitled, "The Guided Webmaster." To
+subscribe now, send an email to:
+mailto:subscribe@justforwebmasters.com?subject=article-subscribe. 
+Information about this newsletter can be obtained from his website.
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Member Showcase
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Examine carefully - Those with email addresses included WILL 
+TRADE LINKS with you... You are encouraged to contact them. 
+There Are Many Ways To Build A Successful Business - Just look 
+at these successful sites & programs other members are involved 
+in...
+-------------------------------------------------
+
+Life Without Debt! What would you do with 5,000 10,000 
+20,000 100,000? A "Dream Team" of heavy hitters are 
+gathering to promote Life Without Debt. Get in NOW to 
+receive Massive spillover in the 2x matrix. 
+http://trafficentral.com/lwd/index.htm
+---------------------------------------------------------------------
+
+EARN $100,000+ PER YEAR! - FULLY GUARANTEED!
+We do all the selling for you, 365 days a year! 
+We also offer you a GUARANTEED INCOME of up to 
+$100,000+p.a. - working just 2 hours a day. GUARANTEED 
+http://www.ArmchairTycoon.com/profits2you
+Trade Links - mailto:walter@profits2you.com
+---------------------------------------------------------------------
+
+CashPO is Paid E-Mail Central!
+Get FREE REFERRALS, _KEEP_ referrals when new
+programs are added; free advertising to other
+members, and soon chances to win cash!
+http://www.cashpo.net/CashPO/openpage.php4?c=2
+---------------------------------------------------------------------
+
+JUST BEEN RELEASED!!
+Internet Marketing guru Corey Rudl has just released a BRAND NEW
+VERSION of his #1 best-selling Internet Marketing Course,"The Insider
+Secret's to Marketing Your Business on the Internet". A MUST HAVE!
+So don't hesitate, visit.. http://www.adminder.com/c.cgi?start&bgmlmezine
+-------------------------------------------------------------- 
+
+  If you have a product, service, opportunity or quality 
+  merchandise that appeals to people worldwide, reach your 
+  targeted audience! For a fraction of what other large 
+  newsletters charge you can exhibit your website here, and 
+  trade links for only $8 CPM.  Compare that to the 
+  industry average of $10-$15 CPM. Why?... Because as a 
+  valuable member we want you to be successful! Order today - 
+  Showcases are limited and published on a first come, first 
+  serve basis. For our secure order form, click here: 
+  http://bannersgomlm.com/ezine 
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Commentary Quick Tips
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Product Recommendation:
+
+If you don't have a fax machine, or your phone, computer, 
+and fax all share the same line, you should check out 
+http://www.efax.com.  You can get a unique phone number and 
+receive faxes and voicemail sent to you via email, all 
+totally free.  It's been a life saver for me.
+
+Submitted by JT Timmer
+Animal_Instincts@RagingBull.com
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Do you have a marketing hint, product recommendation, or
+online gem of wisdom you'd like to share with your fellow
+subscribers? With your 2 - 10 line Quick Tip include your
+name and URL or email address and  we'll give you credit
+for your words of wisdom.
+
+And, if you're looking for free advertising, this isn't
+the place - check out the 'One Question Survey' below for
+a great free advertising offer.
+
+Send it in to mailto:Submit@AEOpublishing.com
+with 'Quick Tip' in the Subject block.
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Win A FREE Ad In Community & Commentary
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+To keep this interesting, how about this, every month we'll 
+draw a name from the replies and that person will win one 
+Sponsorship Showcase in the Community & Commentary, for FREE. 
+That's a value of over $800.00! Respond to each weekly survey, 
+and increase your chances to win with four separate entries. 
+
+ QUESTION OF THE WEEK (07/27/01)...
+ No right or wrong answers, and just by answering
+ you are entered to win a Sponsorship Showcase  - Free!
+
+ ~~~ Are you concerned about identity theft online? ~~~
+
+yes   mailto:yes@AEOpublishing.com
+no    mailto:no@AEOpublishing.com
+
+To make this as easy as possible for you, just click on the
+hyperlinked answer to send us an e-mail  - you do not need to
+enter any information in the subject or body of the message.
+
+** ADD YOUR COMMENTS!  Follow directions above and
+add your comments in the body of the message, and we'll
+post the best commentaries along with the responses.
+
+You will automatically be entered in our drawing for a free
+Sponsorship ad in the Community & Commentary. Please
+respond only one time per question.  Multiple responses
+from the same individual will be discarded.
+
+Last Weeks's Survey Results & Comments  (07/20/01)
+
+ ~~~ Do you promote your website only online? ~~~
+
+yes   45%
+no    55%
+
+Comments:
+~~~~~~~~~
+
+"Just because we're working online doesn't mean we should forget
+to market offline as well.  Heck,some days I get more leads in the 
+supermarket than I do online."
+-- Henry C.  http://www.fastersurfing.com
+~~~~~~~~~
+
+"I attach mailing labels with my message printed on them on the 
+back of my business cards, on flyers, brochures or anything that 
+I hand out to my customers."
+-- Rick A.   http://www.iprocenter.com/rickarmstrong  
+~~~~~~~~~
+
+"I promote my business opportunity website both online and 
+offline. The printed media is very valuable to promote my presence 
+on the internet. Having a website is just like having a "sign-post 
+in the desert". Without anyone knowing where to look to find you, 
+your website is a museum with no visitors.
+-- Jerry P.    http://www.wealthtoday.net/key4health
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+To change your subscribed address, send both new and old 
+address to mailto:Submit@AEOpublishing.com 
+See the link (below) for our Subscription Center to unsubscribe 
+or edit your interests. 
+
+Please send suggestions and comments to: 
+mailto:Editor@AEOpublishing.com 
+I invite you to send your real successes and showcase 
+your strategies and techniques, or yes, even your total bombs, 
+"Working Together We Can All Prosper." 
+mailto:Submit@AEOpublishing.com 
+
+For information on how to sponsor Your Membership 
+Community & Commentary visit: http://bannersgomlm.com/ezine 
+
+Copyright 2001 AEOpublishing.com 
+------------------------------------------------
+web: http://www.AEOpublishing.com
+------------------------------------------------
+
+This email has been sent to jm@netnoteinc.com at your 
+request, by Your Membership Newsletter Services.
+
+Visit our Subscription Center to edit your interests or unsubscribe.
+http://ccprod.roving.com/roving/d.jsp?p=oo&id=bd7n7877.l89m7847&m=bd7n7877&ea=jm@netnoteinc.com
+
+View our privacy policy: http://ccprod.roving.com/roving/CCPrivacyPolicy.jsp
+
+Powered by 
+Constant Contact(R)
+www.constantcontact.com
+--261908501.996294421526.JavaMail.RovAdmin.rovweb003
+Content-Type: text/html; charset=iso-8859-1
+
+<HTML>
+<!-- 
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTML-FORMATTED MESSAGE BELOW
+
+The remainder of this message is in HTML format for use by email
+clients that can properly display it.   If you are seeing this message,
+it is because your email client cannot properly display HTML.  You can
+ignore the HTML code you will see below.
+
+
+
+
+
+
+
+
+
+ -->
+<head>
+	<title>Your Membership Community & Commentary, 07-27-01</title>
+</head>
+<body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<IMG SRC="http://ccprod.roving.com/roving/sa/o.jsp?id=bd7n7877.l89m7847&o=http://ccprod.roving.com/roving/images/p1x1.gif" WIDTH=1 HEIGHT=1 alt=" ">
+<!--  Do NOT delete previous line if you want to get statistics on the number of opened emails  -->
+<center>
+<table border="1" bordercolor="#003366" cellpadding="0" cellspacing="0" width="610">
+<tr>
+	<td>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<!-- Begin Logo Include -->
+
+<!-- START CONDITIONAL HTML HIDING 
+ 
+<tr>
+	<td colspan="2" align="center"><img src="" border="0" alt="Your Membership Newsletter Services"></td>
+</tr>
+ 
+ END OF CONDITIONAL HTML HIDING --> 
+ 
+<!-- End Logo Include -->
+<tr>
+	<td colspan="2" align="center" valign="middle" bgcolor="#668ABE" height="60"><font face="Georgia,'Times New Roman',Times,serif" size="6" color="#ffffff">Your Membership Community & Commentary</font></td>
+</tr>
+<tr>
+	<td align="left">  <font size="2" face="Verdana,Arial,Helvetica" color="#003366"><b>It's All About Making Money</b></font></td>
+	<td align="right"><font size="2" face="Verdana,Arial,Helvetica" color="#003366"><b>July 27, 2001</b></font>  </td>
+</tr>
+</table>
+<p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+	<td width="190" bgcolor="#EEEEDF" align="center" valign="top">
+	<!-- Begin Table of Contents Header Table -->
+		<table border="1" bordercolor="#003366" cellpadding="2" cellspacing="0" width="190">
+		<tr>
+			<td bgcolor="#ffffff" align="center" valign="top">
+			<font face="Georgia,'Times New Roman',Times,serif" size="3" color="#003366">
+			<b>in this issue</b>
+			</font>
+			</td>
+		</tr>
+		</table>
+	<!-- End Table of Contents Header Table -->
+	
+	<!-- Begin Article Headlines Table -->
+		<table border="0" cellpadding="2" cellspacing="0" width="190">
+		<tr>
+			<td bgcolor="#DBE8F4" align="center" valign="top">
+			<font size="2" face="Verdana,Arial,Helvetica" color="#003366"><b>
+			<br><a href="#article1">5 Ways to Create a Unique Website</a>
+			<p><a href="#article2">Member Showcase</a>
+			<p><a href="#article3">Commentary Quick Tips</a>
+			<p><a href="#article4">Win A FREE Ad In Community & Commentary</a>
+			<p><a href="#article5"></a>
+		    <br><br></font>
+		    </td>
+		</tr>
+		<tr>
+			<td bgcolor="#003366" align="center" valign="top"><br></td>
+		</tr>
+		</table>
+    <!-- End Article Headlines Table -->
+
+    <!-- PROMOTION START -->
+		<font size="2" face="Verdana,Arial,Helvetica" color="#003366">
+		<br><b>Today's Special Announcement:</b><br>
+		<!-- Promotion Image -->
+		<br>
+		<p>Absolute Gifts Etc. Offers thousand of high quality gifts &amp; unique
+<br>collectibles. At wholesales prices, Some items are "Exclusive" and
+<br>were designed for our collection only. Lots of freebees!
+<br>Plus bonus bucks will save you even more.
+<br>Business opportunities,Total weight loss system &amp; much more!
+<br><a href="http://www.absolutegiftsetc.com">www.absolutegiftsetc.com</a>
+<br>&nbsp;<p>
+<br>&nbsp;<p>
+You are a member in at least one of these programs 
+- You should be in them all! <br>
+<a href="http://www.BannersGoMLM.com"> BannersGoMLM.com </a>
+<br><a href="http://www.ProfitBanners.com"> ProfitBanners.com </a>
+<br><a href="http://www.CashPromotions.com"> CashPromotions.com </a>
+<br><a href="http://www.MySiteInc.com"> MySiteInc.com </a>
+<br><a href="http://www.TimsHomeTownStories.com"> TimsHomeTownStories.com </a>
+<br><a href="http://www.FreeLinksNetwork.com"> FreeLinksNetwork.com </a>
+<br><a href="http://www.MyShoppingPlace.com"> MyShoppingPlace.com </a>
+<br><a href="http://www.BannerCo-op.com"> BannerCo-op.com </a>
+<br><a href="http://www.PutPEEL.com"> PutPEEL.com </a>
+<br><a href="http://www.PutPEEL.net"> PutPEEL.net </a>
+<br><a href="http://www.SELLinternetACCESS.com"> SELLinternetACCESS.com </a>
+<br><a href="http://www.Be-Your-Own-ISP.com"> Be-Your-Own-ISP.com </a>
+<br><a href="http://www.SeventhPower.com"> SeventhPower.com </a><p>
+        <br><br>
+		</font>
+    <!-- PROMOTION END -->
+	</td>
+	<td rowspan="2" width="420" valign="top">
+	<!-- Begin Greeting and Intro paragraph -->
+		<table border="0" cellpadding="2" cellspacing="0" width="100%">
+		<tr>
+			<td bgcolor="#ffffff" valign="top">  </td>
+			<td bgcolor="#ffffff" valign="top">
+            <font size="2" face="Verdana,Arial,Helvetica">
+            <b></b>
+			<br>Information to provide you with the absolute 
+<br>best low and no cost ways of providing traffic 
+<br>to your site, helping you to capitalize on the power <br>and potential the web brings to every Net-Preneur. <br>
+--- This Issue Contains Sites Who Will Trade Links With You! --- <br>
+			<br><br></font>
+			</td>
+		</tr>
+		<tr>
+			<td bgcolor="#003366" colspan="2" height="3" valign="bottom"> </td>
+		</tr>
+		<tr>
+			<td bgcolor="#ffffff" colspan="2" height="2" valign="bottom"> </td>
+		</tr>
+		<tr>
+			<td bgcolor="#003366" colspan="2" height="2" valign="bottom"> </td>
+		</tr>
+		</table>
+	<!-- End Greeting and Intro paragraph -->
+	
+	<!-- Begin Article Table -->
+		<table border="0" cellpadding="4" cellspacing="0" width="100%">
+         <tr><td bgcolor="#ffffff" colspan="2" valign="top"><a name="article1"></a><font size="2" face="Verdana,Arial,Helvetica" color="#003366"><li><b>5 Ways to Create a Unique Website</b></font></td></tr><tr><td bgcolor="#ffffff" valign="top">  </td><td bgcolor="#ffffff" valign="top"><font size="2" face="Verdana,Arial,Helvetica"><p>Internet users have no doubt seen several websites of
+<br>identical design. This is often because webmasters do not
+<br>have the ability or time to design and create unique websites.
+<br>These five points will help you come up with a one-of-a-kind
+<br>design for your website.
+<p>1. Navigation System
+<p>Deciding on a navigation system should be one of the first
+<br>things to consider when designing your website. Visitors
+<br>usually look for a way to get to the information they want
+<br>before reading anything else. I would suggest putting your
+<br>navigation system in two areas. Look at WebmasterBase
+<br>(<a href="http://www.webmasterbase.com">http://www.webmasterbase.com</a>)
+for example. There is a list
+<br>of categories on the left, and information about the network
+<br>on the top bar.
+<p>It is not recommended that you place your navigation at the
+<br>bottom of the page because:
+<p>- People see the top of the page first
+<br>- If you have a lot of content on one page, the navigation
+<br>&nbsp;&nbsp;&nbsp; gets pushed to bottom of the page... away from the
+visitor.
+<p>2. Color Scheme
+<p>When you are choosing colors, make sure they contrast.
+<br>For example, do not use bright green and florescent pink.
+<br>Some colors that are often used are white on black or black
+<br>on white.
+<p>A wonderful utility that is web-based and free is Color
+<br>Schemer (<a href="http://www.godigitalstudios.com/www/color/">http://www.godigitalstudios.com/www/color/</a>),
+<br>created by Aaron Epstein. Many other programs exist that
+<br>can assist you in choosing colors. Try doing a search on
+<br>FreewareFiles (<a href="http://www.freewarefiles.com">http://www.freewarefiles.com</a>),
+Tucows
+<br>(<a href="http://www.tucows.com">http://www.tucows.com</a>), or Download.com
+<br>(<a href="http://www.download.com">http://www.download.com</a>) for
+"color schemer."
+<p>3. Content Window
+<p>This is the brain of the website. Make sure that the text
+<br>here is easy to read and understand.
+<p>Also, provide your own original content. People do not want
+<br>to hear what somebody else has to say. They want to hear
+<br>what <i>you</i> want to say! While it might be time consuming to
+<br>write your own content, it sure is worth it.
+<p>To find content for your website, try searching at
+<br>EzineArticles (<a href="http://www.ezinearticles.com">http://www.ezinearticles.com</a>).
+Other people
+<br>may have used the articles, but if you become good friends
+<br>with the authors, they may send you new content as they
+<br>write it. Be careful though. Do not use too much content
+<br>from other authors, as mentioned above.
+<p>4. Font(s)
+<p>Several types of fonts exist. The first one I will discuss is
+<br>fixed width or monospace, similar to Courier or Courier New.
+<br>Fixed width fonts are good for displaying code (like HTML.)
+<p>Another type of font is called sans serif. It is similar to
+<br>Arial (Windows) or Helvetica (Macintosh). This font can
+<br>be used for long pieces of text.
+<p>The final type of font is called serif because it has serifs,
+<br>or curves, in each letter. Often, this font is called Times
+<br>(Windows) or Georgia (Macintosh). This font, like sans serif,
+<br>is often used for long blocks of text. It is preferred because
+<br>its rounded edges lead the reader to the next letter, making
+<br>it easier to read.
+<p>5. Advertising
+<p>Ah, everybody's favorite... advertising! This is one of thing
+<br>that almost every website has. The most common type is
+<br>what is known as "banner" advertising. It is called that
+<br>because it is long and thin (like a paper banner.) How long
+<br>you ask? The generic kind is 468 pixels wide by 60 pixels high.
+<p>New sizes however are being used. Take for example the
+<br>new style called "skyscraper" -- so called for a reason: it
+<br>looks like a skyscraper. It is tall (about 425 pixels) but not
+<br>too wide (about 100-125 pixels.)
+<p>Finding a way to place advertising can be tricky. Banners
+<br>used to be placed (and still are) only at the top of the
+<br>page.&nbsp; Nevertheless, banners are starting to be placed in
+<br>the middle of the page, at the bottom, or along the side.
+<p>Conclusion
+<p>These are only five things to consider when designing a
+<br>website. There are many others however. Let me know
+<br>what you find that helps you create a unique website. My
+<br>email address is mailto:corbb@justforwebmasters.com.
+<p>-------------------------------------
+<br>About the Author...
+<p>Written by Corbb O'Connor. Corbb is the Webmaster of
+<br><a href="http://www.justforwebmasters.com">http://www.justforwebmasters.com</a>,
+a website that focuses
+<br>on teaching Webmasters how to create, gain traffic to, and
+<br>make money from their own websites. He is also the editor
+<br>of a FREE bi-weekly newsletter entitled, "The Guided
+<br>Webmaster." To subscribe now, send an email to:
+<br><a href="mailto:subscribe@justforwebmasters.com?subject=article-subscribe">mailto:subscribe@justforwebmasters.com?subject=article-subscribe</a>.
+<br>Information about this newsletter can be obtained from his website.<br><p></font></td></tr><tr><td bgcolor="#003366" colspan="2" valign="bottom"> </td></tr> 
+         <tr><td bgcolor="#DBE8F4" colspan="2" valign="top"><a name="article2"></a><font size="2" face="Verdana,Arial,Helvetica" color="#003366"><li><b>Member Showcase</b></font></td></tr><tr><td bgcolor="#DBE8F4" valign="top">  </td><td bgcolor="#DBE8F4" valign="top"><font size="2" face="Verdana,Arial,Helvetica"><p><i>Examine carefully - Those with email addresses included WILL</i>
+<br><i>TRADE LINKS with you... You are encouraged to contact them.</i>
+<br><i>There Are Many Ways To Build A Successful Business - Just look </i>
+<br><i>at these successful sites &amp; programs other members are involved
+in...</i>
+<br>-------------------------------------------------
+<p>Life Without Debt! What would you do with 5,000 10,000
+<br>20,000 100,000? A "Dream Team" of heavy hitters are
+<br>gathering to promote Life Without Debt. Get in NOW to
+<br>receive Massive spillover in the 2x matrix.
+<br><a href="http://trafficentral.com/lwd/index.htm">http://trafficentral.com/lwd/index.htm</a>
+<br>---------------------------------------------------------------------
+<p>EARN $100,000+ PER YEAR! - FULLY GUARANTEED!
+<br>We do all the selling for you, 365 days a year!
+<br>We also offer you a GUARANTEED INCOME of up to
+<br>$100,000+p.a. - working just 2 hours a day. GUARANTEED
+<br><a href="http://www.ArmchairTycoon.com/profits2you">http://www.ArmchairTycoon.com/profits2you</a>
+<br>Trade Links - <a href="mailto:walter@profits2you.com">mailto:walter@profits2you.com</a>
+<br>---------------------------------------------------------------------
+<p>CashPO is Paid E-Mail Central!
+<br>Get FREE REFERRALS, _KEEP_ referrals when new
+<br>programs are added; free advertising to other
+<br>members, and soon chances to win cash!
+<br><a href="http://www.cashpo.net/CashPO/openpage.php4?c=2">http://www.cashpo.net/CashPO/openpage.php4?c=2</a>
+<br>---------------------------------------------------------------------
+<p>JUST BEEN RELEASED!!
+<br>Internet Marketing guru Corey Rudl has just released
+<br>a BRAND NEW VERSION of his #1 best-selling Internet
+<br>Marketing Course,"The Insider Secret's to Marketing Your
+<br>Business on the Internet". A MUST HAVE! So don't
+<br>hesitate, visit.. <a href="http://www.adminder.com/c.cgi?start&bgmlmezine">http://www.adminder.com/c.cgi?start&amp;bgmlmezine</a>
+<br>-------------------------------------------------
+<p><i>If you have a product, service, opportunity or quality </i>
+<br><i>merchandise that appeals to people worldwide, reach your targeted audience!</i>
+<br><i>For a fraction of what other large newsletters charge you can </i>
+<br><i>exhibit your website here, and trade links for only $8 CPM.&nbsp; </i>
+<br><i>Compare that to the industry average of $10-$15 CPM. 
+<br>Why?... Because as a valuable member we want you </i>
+<br><i>to be successful! Order today -</i>
+<br><i>Showcases are limited and published on a first come, first serve
+basis.</i>
+<br><i>For our secure order form, click here:</i> <a href="http://bannersgomlm.com/ezine">http://bannersgomlm.com/ezine</a>
+<br><br><p></font></td></tr><tr><td bgcolor="#003366" colspan="2" valign="bottom"> </td></tr> 
+		 <tr><td bgcolor="#FFFFFF" colspan="2" valign="top"><a name="article3"></a><font size="2" face="Verdana,Arial,Helvetica" color="#003366"><li><b>Commentary Quick Tips</b></font></td></tr><tr><td bgcolor="#FFFFFF" valign="top">  </td><td bgcolor="#FFFFFF" valign="top"><font size="2" face="Verdana,Arial,Helvetica"><p>Product Recommendation:
+<p>If you don't have a fax machine, or your phone, computer,
+<br>and fax all share the same line, you should check out
+<br><a href="http://www.efax.com">http://www.efax.com</a>.&nbsp; You can
+get a unique phone number
+<br>and receive faxes and voicemail sent to you via email, all
+<br>totally free.&nbsp; It's been a life saver for me.
+<p>Submitted by JT Timmer
+<br>Animal_Instincts@RagingBull.com
+<br>~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<p>Do you have a marketing hint, product recommendation, or
+<br>online gem of wisdom you'd like to share with your fellow
+<br>subscribers? With your 2 - 10 line Quick Tip include your
+<br>name and URL or email address and&nbsp; we'll give you credit
+<br>for your words of wisdom.
+<p>And, if you're looking for free advertising, this isn't
+<br>the place - check out the 'One Question Survey' below for
+<br>a great free advertising offer.
+<p>Send it in to <a href="mailto:Submit@AEOpublishing.com">mailto:Submit@AEOpublishing.com</a>
+<br>with 'Quick Tip' in the Subject block.<br><p></font></td></tr><tr><td bgcolor="#003366" colspan="2" valign="bottom"> </td></tr> 
+		 <tr><td bgcolor="#DBE8F4" colspan="2" valign="top"><a name="article4"></a><font size="2" face="Verdana,Arial,Helvetica" color="#003366"><li><b>Win A FREE Ad In Community & Commentary</b></font></td></tr><tr><td bgcolor="#DBE8F4" valign="top">  </td><td bgcolor="#DBE8F4" valign="top"><font size="2" face="Verdana,Arial,Helvetica"><p>To keep this interesting, how about this, every month we'll
+<br>draw a name from the replies and that person will win one
+<br>Sponsorship Showcase in the Community &amp; Commentary, for FREE.
+<br>That's a value of over $800.00! Respond to each weekly survey,
+<br>and increase your chances to win with four separate entries.
+<p>&nbsp;QUESTION OF THE WEEK (07/27/01)...
+<br>&nbsp;No right or wrong answers, and just by answering
+<br>&nbsp;you are entered to win a Sponsorship Showcase&nbsp; - Free!
+<p>&nbsp;~~~ Are you concerned about identity theft online? ~~~
+<p>yes&nbsp;&nbsp;&nbsp; <a href="mailto:yes@AEOpublishing.com">mailto:yes@AEOpublishing.com</a>
+<br>no&nbsp;&nbsp;&nbsp; <a href="mailto:no@AEOpublishing.com">mailto:no@AEOpublishing.com</a>
+<p>To make this as easy as possible for you, just click on the
+<br>hyperlinked answer to send us an e-mail&nbsp; - you do not need to
+<br>enter any information in the subject or body of the message.
+<p>** ADD YOUR COMMENTS!&nbsp; Follow directions above and
+<br>add your comments in the body of the message, and we'll
+<br>post the best commentaries along with the responses.
+<p>You will automatically be entered in our drawing for a free
+<br>Sponsorship ad in the Community &amp; Commentary. Please
+<br>respond only one time per question.&nbsp; Multiple responses
+<br>from the same individual will be discarded.
+<p>Last Weeks's Survey Results (07/20/01)
+<p>&nbsp;~~~ Do you promote your website only online? ~~~
+<p>yes&nbsp;&nbsp; 45%
+<br>no&nbsp;&nbsp;&nbsp; 55%
+<p>Comments:
+<br>~~~~~~~~~
+<p>"Just because we're working online doesn't mean we should
+<br>forget to market offline as well.&nbsp; Heck, some days I get more
+<br>leads in the supermarket than I do online."
+<br>-- Henry C.&nbsp; <a href="http://www.fastersurfing.com">http://www.fastersurfing.com</a>
+<br>~~~~~~~~~
+<p>"I attach mailing labels with my message printed on them
+<br>on the back of my business cards, on flyers, brochures or
+<br>anything that I hand out to my customers."
+<br>-- Rick A.&nbsp;&nbsp; <a href="http://www.iprocenter.com/rickarmstrong">http://www.iprocenter.com/rickarmstrong</a>
+<br>~~~~~~~~~
+<p>"I promote my business opportunity website both online
+<br>and offline. The printed media is very valuable to promote
+<br>my presence on the internet. Having a website is just like
+<br>having a "sign-post in the desert". Without anyone
+<br>knowing where to look to find you, your website is a
+<br>museum with no visitors.
+<br>-- Jerry P.&nbsp;&nbsp;&nbsp; <a href="http://www.wealthtoday.net/key4health">http://www.wealthtoday.net/key4health</a><br><p></font></td></tr><tr><td bgcolor="#003366" colspan="2" valign="bottom"> </td></tr> 
+         <tr><td bgcolor="#ffffff" colspan="2" valign="top"><a name="article5"></a><font size="2" face="Verdana,Arial,Helvetica" color="#003366"><li><b></b></font></td></tr><tr><td bgcolor="#ffffff" valign="top">  </td><td bgcolor="#ffffff" valign="top"><font size="2" face="Verdana,Arial,Helvetica">To change your subscribed address,
+<br>send both new and old address to <a href="mailto:Submit@AEOpublishing.com">Submit</a>
+<br>See the link (to the left) for our Subscription Center to unsubscribe or edit your interests.
+
+<p>Please send suggestions and comments to: <a href="mailto:Editor@AEOpublishing.com">Editor</a>
+<br>I invite you to send your real successes and showcase 
+your strategies and techniques, or yes, even your total bombs, 
+"Working Together We Can All Prosper." <a href="mailto:Submit@AEOpublishing.com">Submit</a>
+<p>For information on how to sponsor Your Membership 
+Community &amp; Commentary visit: <a href="http://bannersgomlm.com/ezine">Sponsorship
+Showcase</a>
+<p>Copyright 2001 AEOpublishing.com<br><p></font></td></tr><tr><td bgcolor="#ffffff" colspan="2" valign="bottom"> </td></tr> 
+        </table>
+	<!-- End Article Table -->
+	
+	</td>
+</tr>
+<tr>
+	<td bgcolor="EEEEDF" valign="bottom" align="center">
+	
+	<!-- Begin Email and Site URL Links -->
+	<hr color="#003366" size="1" width="100%">
+	<font size="1" face="Verdana,Arial,Helvetica" color="#003366">
+	<b><a href="mailto:"><font size="1" face="Verdana,Arial,Helvetica" color="#003366"></font></a>  ::  <a href="http://www.AEOpublishing.com"><font size="1" color="#003366">visit our site</font></a></b>
+	<hr color="#003366" size="1" width="100%">
+    <b> </b>
+    <hr color="#003366" size="1" width="100%">
+	<!-- End Email and Site URL Links -->
+	
+	<!--  You are required by your Constant Contact user agreement to
+	    provide the opt-out link shown below as by the property 'OptOut'. -->
+    <font size="1" face="Verdana,Arial,Helvetica">
+    This email was sent to <br>jm@netnoteinc.com, <br>at your request, <br>by <a href="http://ccprod.roving.com/roving/sa/s.jsp?id=bd7n7877.l89m7847">Your Membership Newsletter Services</a>.  
+    <p>Visit our Subscription Center <br>to <a href="http://ccprod.roving.com/roving/d.jsp?p=oo&id=bd7n7877.l89m7847&m=bd7n7877&ea=jm@netnoteinc.com">edit</a> your interests or <a href="http://ccprod.roving.com/roving/d.jsp?p=oo&id=bd7n7877.l89m7847&m=bd7n7877&ea=jm@netnoteinc.com">unsubscribe</a>.
+    <p>View our <a href="http://ccprod.roving.com/roving/CCPrivacyPolicy.jsp">privacy policy</a>.  
+    <p>Powered by<br><a href="http://www.constantcontact.com/index.jsp?cc=ccnws" target="_blank"><img src="http://ccprod.roving.com/roving/images/cc-logo-color-sm.gif" border="0" alt="Constant Contact"></a>
+    </font>
+    <br><br>
+	</td>
+</tr>
+</table>
+
+	</td>
+</tr>
+</table>
+</center>
+</body>
+</HTML>
+--261908501.996294421526.JavaMail.RovAdmin.rovweb003--
+
+
+

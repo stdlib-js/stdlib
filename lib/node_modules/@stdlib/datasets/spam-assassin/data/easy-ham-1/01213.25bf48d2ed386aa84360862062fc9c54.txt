@@ -1,0 +1,76 @@
+From rpm-list-admin@freshrpms.net  Tue Oct  1 15:05:38 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id D735E16FB3
+	for <jm@localhost>; Tue,  1 Oct 2002 14:55:03 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 01 Oct 2002 14:55:03 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g91DKNK26570 for
+    <jm-rpm@jmason.org>; Tue, 1 Oct 2002 14:20:24 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g91DC1f11003; Tue, 1 Oct 2002 15:12:01
+    +0200
+Received: from python (gw01.es3.egwn.net [212.9.66.13]) (authenticated) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g91DBTf10655 for
+    <rpm-list@freshrpms.net>; Tue, 1 Oct 2002 15:11:29 +0200
+From: Matthias Saou <matthias@rpmforge.net>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: Gabber packages for 8.0 (was: All set for Red Hat Linux 8.0)
+Message-Id: <20021001151127.5ef5b77d.matthias@rpmforge.net>
+In-Reply-To: <20021001135011.74dc6814.matthias@rpmforge.net>
+References: <20020930092826.7c8f5791.matthias@rpmforge.net>
+    <377FE45E-D4A6-11D6-A377-000393D60714@jabber.org>
+    <20021001135011.74dc6814.matthias@rpmforge.net>
+Organization: freshrpms.net / rpmforge.net
+X-Mailer: Sylpheed version 0.8.3claws (GTK+ 1.2.10; i386-redhat-linux)
+X-Operating-System: Red Hat GNU/Linux forever!
+X-Subliminal-Message: Use Linux... use Linux... use Linux...
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Tue, 1 Oct 2002 15:11:27 +0200
+Date: Tue, 1 Oct 2002 15:11:27 +0200
+
+Once upon a time, Matthias wrote :
+
+> I'm facing another problem right now. It looks like libsigc++ is no
+> longer included in the distribution, and gtkmm won't compile without it
+> :-/ I guess I'll have to repackage it myself for 8.0 (assuming it's
+> possible).
+
+Well, I've made an updated libsigc++ 1.0.4 package. It rebuilds cleanly on
+7.3 but the *.so* libraries are missing when trying to rebuild on 8.0 (the
+.a and .la files and everything else is though).
+Do you have an idea of what the problem may be? Julian : Do you want the
+.src.rpm to try to find the cause?
+
+Matthias
+
+-- 
+Clean custom Red Hat Linux rpm packages : http://freshrpms.net/
+Red Hat Linux release 7.3 (Valhalla) running Linux kernel 2.4.18-10acpi
+Load : 0.19 0.15 0.16
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

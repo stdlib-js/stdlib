@@ -1,0 +1,9 @@
+
+Usage: standardize-json [options] [json]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --keys k1,k2,k3,...   Keys in order of insertion.
+

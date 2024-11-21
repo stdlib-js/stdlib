@@ -1,0 +1,17 @@
+
+{{alias}}()
+    Returns a list of US state names in alphabetical order.
+
+    Returns
+    -------
+    out: Array<string>
+        List of US state names.
+
+    Examples
+    --------
+    > var list = {{alias}}()
+    [ 'Alabama', 'Alaska', 'Arizona', ... ]
+
+    See Also
+    --------
+

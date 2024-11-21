@@ -1,0 +1,46 @@
+
+{{alias}}( x )
+    Returns an uninitialized ndarray having the same shape and data type as a
+    provided input ndarray.
+
+    Along with data type, shape, and order, the function infers the "class" of
+    the returned ndarray from the provided ndarray. For example, if provided a
+    "base" ndarray, the function returns a base ndarray. If provided a non-base
+    ndarray, the function returns a non-base ndarray.
+
+    In browser environments, the function always returns zero-filled ndarrays.
+
+    If the inferred output data type is 'generic', the function always returns a
+    zero-filled ndarray.
+
+    For returned ndarrays whose underlying memory is *not* initialized, memory
+    contents are unknown and may contain *sensitive* data.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/base/zeros}}( 'float64', [ 2, 2 ], 'row-major' )
+    <ndarray>
+    > var sh = x.shape
+    [ 2, 2 ]
+    > var dt = x.dtype
+    'float64'
+    > var y = {{alias}}( x )
+    <ndarray>
+    > sh = y.shape
+    [ 2, 2 ]
+    > dt = y.dtype
+    'float64'
+
+    See Also
+    --------
+

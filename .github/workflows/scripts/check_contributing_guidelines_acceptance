@@ -1,0 +1,120 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2024 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Script to check if a pull request contains the checked contributing guidelines acknowledgment checkbox.
+#
+# Usage: check_contributing_guidelines PR_NUMBER
+#
+# Arguments:
+#
+#   PR_NUMBER    Pull request number.
+#
+# Environment variables:
+#
+#   GITHUB_TOKEN   GitHub token for authentication.
+
+# Ensure that the exit status of pipelines is non-zero in the event that at least one of the commands in a pipeline fails:
+set -o pipefail
+
+
+# VARIABLES #
+
+# Get the pull request number:
+pr_number="$1"
+
+# Set the repository name:
+GITHUB_REPOSITORY="stdlib-js/stdlib"
+
+# Set the contributing guidelines link:
+CONTRIBUTING_LINK="https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md"
+
+
+# FUNCTIONS #
+
+# Error handler.
+#
+# $1 - error status
+on_error() {
+	echo 'ERROR: An error was encountered during execution.' >&2
+	exit "$1"
+}
+
+# Prints a success message.
+print_success() {
+	echo 'Success!' >&2
+}
+
+# Main execution sequence.
+main() {
+	echo "Checking contributing guidelines acknowledgment for PR #${pr_number}..."
+
+	# Fetch the pull request body:
+	if ! pr_body=$(curl -s -H "Authorization: token ${GITHUB_TOKEN}" \
+		"https://api.github.com/repos/${GITHUB_REPOSITORY}/pulls/${pr_number}" | \
+		jq -r .body); then
+		echo "Failed to fetch PR body."
+		on_error 1
+	fi
+
+	# Check for the contributing guidelines checkbox:
+	if echo "${pr_body}" | grep -qE '^\s*-\s*\[x\]\s*Read,\s*understood,\s*and\s*followed\s*the\s*\[contributing\s*guidelines\]'; then
+		echo "Contributing guidelines acknowledged."
+		print_success
+		exit 0
+	else
+		echo "Contributing guidelines not acknowledged."
+
+		# Post a comment on the PR:
+		comment="Hello! Thank you for your contribution to stdlib.
+
+We noticed that the contributing guidelines acknowledgment is missing from your pull request. Here's what you need to do:
+
+1. Please read our [contributing guidelines][contributing].
+2. Update your pull request description to include this checked box:
+
+   \`-   [x] Read, understood, and followed the [contributing guidelines](https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md)\`
+
+This acknowledgment confirms that you've read the guidelines, which include:
+
+-   The developer's certificate of origin
+-   Your agreement to license your contributions under the project's terms
+
+We can't review or accept contributions without this acknowledgment.
+
+Thank you for your understanding and cooperation. We look forward to reviewing your contribution!
+
+[contributing]: ${CONTRIBUTING_LINK}"
+
+		if ! curl -s -X POST \
+			-H "Authorization: token ${GITHUB_TOKEN}" \
+			-H "Accept: application/vnd.github.v3+json" \
+			"https://api.github.com/repos/${GITHUB_REPOSITORY}/issues/${pr_number}/comments" \
+			-d "{\"body\":$(echo "$comment" | jq -R -s -c .)}"; then
+			echo "Failed to post comment on PR."
+			on_error 1
+		fi
+
+		exit 1
+	fi
+}
+
+# Set an error handler to print captured output and perform any clean-up tasks:
+trap 'on_error' ERR
+
+# Run main:
+main

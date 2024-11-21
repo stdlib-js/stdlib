@@ -1,0 +1,178 @@
+From fork-admin@xent.com  Fri Sep  6 11:42:31 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 42C4F16F77
+	for <jm@localhost>; Fri,  6 Sep 2002 11:39:53 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 11:39:53 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g869r9C29228 for
+    <jm@jmason.org>; Fri, 6 Sep 2002 10:53:09 +0100
+Received: from xent.com ([64.161.22.236]) by webnote.net (8.9.3/8.9.3)
+    with ESMTP id XAA19090 for <jm@jmason.org>; Thu, 5 Sep 2002 23:41:25 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 8052829425A; Thu,  5 Sep 2002 15:06:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mta03-svc.ntlworld.com (mta03-svc.ntlworld.com
+    [62.253.162.43]) by xent.com (Postfix) with ESMTP id 12F792940AA for
+    <fork@xent.com>; Thu,  5 Sep 2002 15:05:12 -0700 (PDT)
+Received: from cynosure.stanford.edu ([80.7.27.124]) by
+    mta03-svc.ntlworld.com (InterMail vM.4.01.03.27 201-229-121-127-20010626)
+    with ESMTP id
+    <20020905220745.IIXA23840.mta03-svc.ntlworld.com@cynosure.stanford.edu>
+    for <fork@xent.com>; Thu, 5 Sep 2002 23:07:45 +0100
+Message-Id: <5.1.0.14.2.20020905150722.054fb3c8@rescomp.stanford.edu>
+X-Sender: extant@rescomp.stanford.edu (Unverified)
+X-Mailer: QUALCOMM Windows Eudora Version 5.1
+To: fork@spamassassin.taint.org
+From: Hussein Kanji <hussein@stanfordalumni.org>
+Subject: RE: sprint delivers the next big thing??
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 05 Sep 2002 15:07:44 -0700
+
+i agree with rob. i think if the phones (and mms is building traction in europe in handsets), this might be interesting. bottom line is will it a) help sell phones and b) bill enough time on the wcarriers networks?
+
+anyone remember the polariod photo sticker fad? low quality, small in size. but kids totally dug that stuff. seems like every adolescent girl had that stuff at one point. and it never replaced or aimed to replace digital cameras or normal photographs. i don't think mms photos will be a substitute for other photography - developed at the local 1 hour joint or digital photos on your pc. i think it expands the market and forms a new category. the extent of the category size is the big question (will it be a fad or will it a sustained market). that's consumer behavior and marketing. but i don't think the technology adoption will follow a substitution of another product on the market (in this case, digital photos or normal photos). europe's the one to watch - more teenagers have wireless phones and if the pricing and marketing is right, they'll figure out what to do with it once the carriers how to figure out how to market it to them.
+
+-h
+
+>From: "Rob Shavell" <rob@mobiusvc.com>
+>To: "'Mike Masnick'" <mike@techdirt.com>
+>Cc: <fork@spamassassin.taint.org>
+>Subject: RE: sprint delivers the next big thing??
+>Date: Wed, 21 Aug 2002 01:10:50 -0700
+>
+>right Mike,
+>
+>i will agree to disagree but i take your comments to heart.  my opinion is
+>only that this is one of the last frontiers of communications ('instant
+>show') that we cross easily (though you are right as rain on pricing).  i am
+>mildly amused at the level of skepticism and innatention it is getting.
+>
+>my premise is that the world will change in dramatic and unexpected ways
+>once there are a billion 'eye's' which can instantly share what they see
+>amongst each other.  that doesn't mean that people will stop talking on
+>their phones, or that people will spend more time w/images than voice.  just
+>that it is fundamental.  from news to crime to privacy to dating to family
+>life to bloopers and practical jokes, i believe there will be an explosion
+>of images unleashed specifically by cell phone integrated lenses because of
+>their utter ubiquity that dwarfs all pictures taken in the history of
+>photography by orders of magnitude and in short order. and yes, changes
+>things 'big time'.
+>
+>rgds,
+>rob
+>
+>
+>-----Original Message-----
+>From: Mike Masnick [mailto:mike@techdirt.com]
+>Sent: Tuesday, August 20, 2002 11:58 PM
+>To: Rob Shavell
+>Cc: fork@spamassassin.taint.org
+>Subject: RE: sprint delivers the next big thing??
+>
+>
+>Not to keep harping on this, but...
+>
+>At 11:36 PM 8/20/02 -0700, Rob Shavell wrote:
+>
+>>content: who cares about content?  that no one can think of 'useful'
+>content
+>>is always the business persons mistake. the content is the users
+>>communications.  its anything and everything.  avg person could easily send
+>>half dozen pics to a dozen people a day.  mainly humorous i'd guess. who
+>>cares if content is trivial in nature. picture speaks a thousand words.
+>
+>This does nothing to answer my question.  I *do* care about content.  Hell,
+>if I could be convinced that people would send stupid pics back and forth
+>all day, I'd have a different opinion of this.  I just am not convinced
+>that they will (stupid or not).
+>
+>While a picture may be worth a thousand words (and this is the same
+>argument the guy who works for me made), how many people do you know who
+>communicate by pictures?  Sure, it sounds nice to say that a picture is
+>such an efficient messaging mechanism, but how often do you actually find
+>yourself drawing someone a picture to explain something?
+>
+>I don't buy it.
+>
+>For most messages, text works fine and is the most efficient
+>mechanism.  For some messages, pictures do the job, but I would say not
+>nearly as often as words.  Why do you think Pictionary and Charades and
+>such are games?  Because images are usually not the most efficient way to
+>get a message across.
+>
+>>misc ramblings: i suppose you skeptical forkers would have said the same
+>>thing about '1 hour photo' processing.  trivial, who needs it, i get better
+>>resultion elswhere.  and yet, it had great decentralizing impact - the
+>plant
+>>had to be downsized and pushed to the retail operation - the digital
+>camera,
+>>and finally the integrated digital camera phone brings this cycle of
+>>decentralization in photography to a logical conclusion (which will put the
+>>photo giants to bed) and change the world in a meaningful way.  also, SMS
+>>didn't take off because its easy, it took off because it costs less.  its
+>>greatly ironic the carriers often trumpet the 'profitabilty' of their SMS
+>>traffic over others because of its ratio of cost to bandwidth.  in reality,
+>>SMS cannibilizes the voice rev's they bought their networks to handle.
+>
+>Again, this is the same argument my colleague made (along with "you just
+>don't understand kids today, and they'll run with this").  I wasn't saying
+>that MMS wouldn't take off because it wasn't high quality or that it wasn't
+>easy.  I was saying that I couldn't see why people would use it in a way
+>that "changed the face of communications".
+>
+>I'm looking for the compelling reason (even if it's a stupid one) why
+>people would want to do this.  Sure, if they integrate cameras into the
+>phone, and the quality improves (even only marginally) I can certainly see
+>people taking pictures with their cameras and occasionally sending them to
+>other people.  But, mostly, I don't see what the benefit is to this over
+>sending them to someone's email address, or putting together an online (or
+>offline) photoalbum.
+>
+>I don't think 1 hour photos are trivial.  People want to see their own pics
+>right away, and the quality is plenty good enough for snapshots.  That's
+>one of the main reasons why digital cameras are catching on.  The instant
+>view part.  I'm guessing your argument is that people not only want
+>"instant view", but also "instant show".  Which is what this service
+>offers.  I'm not convinced that most people want "instant show".  I think
+>people like to package their pictures and show them.  That's why people put
+>together fancy albums, and sit there and force you to go through them while
+>they explain every picture.  Sure, occasionally "instant show" is nice, but
+>it's just "nice" on occasion.  I still can't see how it becomes a integral
+>messaging method.
+>
+>What's the specific benefit of taking a picture and immediately sending it
+>from one phone to another?  There has to be *some* benefit, even if it's
+>silly if people are going to flock to it.
+>
+>I'm searching... no one has given me a straight answer yet.
+>
+>The *only* really intriguing idea I've heard about things like MMS lately
+>are Dan Gillmor's assertion that one day in the near future some news event
+>will happen, and a bunch of people will snap pictures with their mobile
+>phones, from all different angles, and those photos tell the real story of
+>what happened - before the press even gets there.
+>
+>Willing to be proven wrong,
+>Mike
+>
+>PS If the wireless carriers continue to price these services as stupidly as
+>they currently are, then MMS is *never* going to catch on.
+
+

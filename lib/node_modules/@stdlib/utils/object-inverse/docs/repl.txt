@@ -1,0 +1,53 @@
+
+{{alias}}( obj[, options] )
+    Inverts an object, such that keys become values and values become keys.
+
+    Beware when providing objects having values which are themselves objects.
+    The function relies on native object serialization (`#toString`) when
+    converting values to keys.
+
+    Insertion order is not guaranteed, as object key enumeration is not
+    specified according to the ECMAScript specification. In practice, however,
+    most engines use insertion order to sort an object's keys, thus allowing for
+    deterministic inversion.
+
+    Parameters
+    ----------
+    obj: ObjectLike
+        Input object.
+
+    options: Object (optional)
+        Options.
+
+    options.duplicates: boolean (optional)
+        Boolean indicating whether to store keys mapped to duplicate values in
+        arrays. Default: `true`.
+
+    Returns
+    -------
+    out: Object
+        Inverted object.
+
+    Examples
+    --------
+    // Basic usage:
+    > var obj = { 'a': 'beep', 'b': 'boop' };
+    > var out = {{alias}}( obj )
+    { 'beep': 'a', 'boop': 'b' }
+
+    // Duplicate values:
+    > obj = { 'a': 'beep', 'b': 'beep' };
+    > out = {{alias}}( obj )
+    { 'beep': [ 'a', 'b' ] }
+
+    // Override duplicate values:
+    > obj = {};
+    > obj.a = 'beep';
+    > obj.b = 'boop';
+    > obj.c = 'beep';
+    > out = {{alias}}( obj, { 'duplicates': false } )
+    { 'beep': 'c', 'boop': 'b' }
+
+    See Also
+    --------
+

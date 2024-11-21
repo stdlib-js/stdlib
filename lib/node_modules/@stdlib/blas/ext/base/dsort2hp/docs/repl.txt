@@ -1,0 +1,151 @@
+
+{{alias}}( N, order, x, strideX, y, strideY )
+    Simultaneously sorts two double-precision floating-point strided arrays
+    based on the sort order of the first array using heapsort.
+
+    The `N` and `stride` parameters determine which elements in `x` and `y` are
+    accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If `N <= 0` or `order == 0`, the function leaves `x` and `y` unchanged.
+
+    The algorithm distinguishes between `-0` and `+0`. When sorted in increasing
+    order, `-0` is sorted before `+0`. When sorted in decreasing order, `-0` is
+    sorted after `+0`.
+
+    The algorithm sorts `NaN` values to the end. When sorted in increasing
+    order, `NaN` values are sorted last. When sorted in decreasing order, `NaN`
+    values are sorted first.
+
+    The algorithm has space complexity O(1) and time complexity O(N log2 N).
+
+    The algorithm is *unstable*, meaning that the algorithm may change the order
+    of strided array elements which are equal or equivalent (e.g., `NaN`
+    values).
+
+    The input strided arrays are sorted *in-place* (i.e., the input strided
+    arrays are *mutated*).
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    order: number
+        Sort order. If `order < 0`, the function sorts `x` in decreasing order.
+        If `order > 0`, the function sorts `x` in increasing order.
+
+    x: Float64Array
+        First input array.
+
+    strideX: integer
+        Index increment for `x`.
+
+    y: Float64Array
+        Second input array.
+
+    strideY: integer
+        Index increment for `y`.
+
+    Returns
+    -------
+    x: Float64Array
+        Input array `x`.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 3.0, -4.0 ] );
+    > var y = new {{alias:@stdlib/array/float64}}( [ 0.0, 1.0, 2.0, 3.0 ] );
+    > {{alias}}( x.length, 1, x, 1, y, 1 )
+    <Float64Array>[ -4.0, -2.0, 1.0, 3.0 ]
+    > y
+    <Float64Array>[ 3.0, 1.0, 0.0, 2.0 ]
+
+    // Using `N` and `stride` parameters:
+    > x = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 3.0, -4.0 ] );
+    > y = new {{alias:@stdlib/array/float64}}( [ 0.0, 1.0, 2.0, 3.0 ] );
+    > var N = {{alias:@stdlib/math/base/special/floor}}( x.length / 2 );
+    > {{alias}}( N, -1, x, 2, y, 2 )
+    <Float64Array>[ 3.0, -2.0, 1.0, -4.0 ]
+    > y
+    <Float64Array>[ 2.0, 1.0, 0.0, 3.0 ]
+
+    // Using view offsets:
+    > var x0 = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 3.0, -4.0 ] );
+    > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > var y0 = new {{alias:@stdlib/array/float64}}( [ 0.0, 1.0, 2.0, 3.0 ] );
+    > var y1 = new {{alias:@stdlib/array/float64}}( y0.buffer, y0.BYTES_PER_ELEMENT*1 );
+    > N = {{alias:@stdlib/math/base/special/floor}}( x0.length / 2 );
+    > {{alias}}( N, 1, x1, 2, y1, 2 )
+    <Float64Array>[ -4.0, 3.0, -2.0 ]
+    > x0
+    <Float64Array>[ 1.0, -4.0, 3.0, -2.0 ]
+    > y0
+    <Float64Array>[ 0.0, 3.0, 2.0, 1.0 ]
+
+{{alias}}.ndarray( N, order, x, strideX, offsetX, y, strideY, offsetY )
+    Simultaneously sorts two double-precision floating-point strided arrays
+    based on the sort order of the first array using heapsort and alternative
+    indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the `offset` parameter supports indexing semantics based on a
+    starting index.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    order: number
+        Sort order. If `order < 0`, the function sorts `x` in decreasing order.
+        If `order > 0`, the function sorts `x` in increasing order.
+
+    x: Float64Array
+        First input array.
+
+    strideX: integer
+        Index increment for `x`.
+
+    offsetX: integer
+        Starting index of `x`.
+
+    y: Float64Array
+        Second input array.
+
+    strideY: integer
+        Index increment for `y`.
+
+    offsetY: integer
+        Starting index of `y`.
+
+    Returns
+    -------
+    x: Float64Array
+        Input array `x`.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 3.0, -4.0 ] );
+    > var y = new {{alias:@stdlib/array/float64}}( [ 0.0, 1.0, 2.0, 3.0 ] );
+    > {{alias}}.ndarray( x.length, 1, x, 1, 0, y, 1, 0 )
+    <Float64Array>[ -4.0, -2.0, 1.0, 3.0 ]
+    > y
+    <Float64Array>[ 3.0, 1.0, 0.0, 2.0 ]
+
+    // Using an index offset:
+    > x = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 3.0, -4.0 ] );
+    > y = new {{alias:@stdlib/array/float64}}( [ 0.0, 1.0, 2.0, 3.0 ] );
+    > var N = {{alias:@stdlib/math/base/special/floor}}( x.length / 2 );
+    > {{alias}}.ndarray( N, 1, x, 2, 1, y, 2, 1 )
+    <Float64Array>[ 1.0, -4.0, 3.0, -2.0 ]
+    > y
+    <Float64Array>[ 0.0, 3.0, 2.0, 1.0 ]
+
+    See Also
+    --------
+

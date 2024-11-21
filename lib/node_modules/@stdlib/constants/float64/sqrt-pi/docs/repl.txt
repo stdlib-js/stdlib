@@ -1,0 +1,12 @@
+
+{{alias}}
+    Square root of the mathematical constant `π`.
+
+    Examples
+    --------
+    > {{alias}}
+    1.7724538509055160
+
+    See Also
+    --------
+

@@ -1,0 +1,121 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2022 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# fmtprodmsgFactory
+
+> Return a `function` which formats an error message for production.
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var fmtprodmsgFactory = require( '@stdlib/error/tools/fmtprodmsg-factory' );
+```
+
+#### fmtprodmsgFactory( \[options] )
+
+Returns a `function` which formats an error message for production.
+
+```javascript
+var opts = {};
+var fcn = fmtprodmsgFactory( opts );
+// returns <Function>
+
+var msg = fcn( '3' );
+// returns 'Minified stdlib error code: 3. Visit https://stdlib.io/docs/api/latest/error-decoder.html?code=3 for the full message.'
+```
+
+The function accepts the following `options`:
+
+-   **url**: website URL for full error message.
+-   **message**: error message template with `{{url}}` and `{{code}}` placeholders that will be replaced.
+
+To set a custom URL, use the `url` option:
+
+```javascript
+var opts = {
+    'url': 'https://stdlib.io/error-decoder.html'
+};
+
+var fcn = fmtprodmsgFactory( opts );
+// returns <Function>
+
+var msg = fcn( '8' );
+// returns 'Minified stdlib error code: 8. Visit https://stdlib.io/error-decoder.html?code=8 for the full message.'
+```
+
+To change the error message template, use the `message` option:
+
+```javascript
+var opts = {
+    'message': 'Error code: {{code}}. See: {{url}}.'
+};
+
+var fcn = fmtprodmsgFactory( opts );
+// returns <Function>
+
+var msg = fcn( '27', 'foo', 'bar' );
+// returns 'Error code: 27. See: https://stdlib.io/docs/api/latest/error-decoder.html?code=27&arg[]=foo&arg[]=bar.'
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var fmtprodmsgFactory = require( '@stdlib/error/tools/fmtprodmsg-factory' );
+
+var formatProdErrorMessage = fmtprodmsgFactory();
+var msg = formatProdErrorMessage( '3', 'foo' );
+// returns 'Minified stdlib error code: 3. Visit https://stdlib.io/docs/api/latest/error-decoder.html?code=3&arg[]=foo for the full message.'
+
+msg = formatProdErrorMessage( '5', 'foo', 'bar' );
+// returns 'Minified stdlib error code: 5. Visit https://stdlib.io/docs/api/latest/error-decoder.html?code=5&arg[]=foo&arg[]=bar for the full message.'
+
+msg = formatProdErrorMessage( '5', 'foo', 'bar', 123 );
+// returns 'Minified stdlib error code: 5. Visit https://stdlib.io/docs/api/latest/error-decoder.html?code=5&arg[]=foo&arg[]=bar&arg[]=123 for the full message.'
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+</section>
+
+<!-- /.links -->

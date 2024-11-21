@@ -1,0 +1,86 @@
+From ilug-admin@linux.ie  Fri Aug  2 09:46:04 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0C8FF440F3
+	for <jm@localhost>; Fri,  2 Aug 2002 04:45:59 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 02 Aug 2002 09:45:59 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g728hu213075 for
+    <jm-ilug@jmason.org>; Fri, 2 Aug 2002 09:43:56 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA26897; Fri, 2 Aug 2002 09:42:15 +0100
+Received: from gatekeeper.fineos.com ([217.173.101.209]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id JAA26841 for <ilug@linux.ie>;
+    Fri, 2 Aug 2002 09:42:06 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [217.173.101.209] claimed
+    to be gatekeeper.fineos.com
+Received: from oasis003.msc.ie (oasis003.msc.ie [192.168.125.248]) by
+    gatekeeper.fineos.com (8.11.0/8.8.5) with ESMTP id g728hcU00405 for
+    <ilug@linux.ie>; Fri, 2 Aug 2002 09:43:38 +0100
+Received: from oasis010.msc.ie (oasis010.msc.ie) by oasis003.msc.ie
+    (Content Technologies SMTPRS 4.2.5) with ESMTP id
+    <T5c76c80735c0a87df804f@oasis003.msc.ie> for <ilug@linux.ie>;
+    Fri, 2 Aug 2002 09:50:11 +0100
+Received: from oasis006.msc.ie (oasis006.msc.ie [192.168.125.245]) by
+    oasis010.msc.ie (8.11.0/8.9.1) with ESMTP id g728S3f29091 for
+    <ilug@linux.ie>; Fri, 2 Aug 2002 09:28:03 +0100
+Received: by oasis006.msc.ie with Internet Mail Service (5.5.2653.19) id
+    <PP38BQQV>; Fri, 2 Aug 2002 09:41:53 +0100
+Message-Id: <D0A7D6543169D3119B3E00902789397E044219E7@oasis006.msc.ie>
+From: "Gregory McRandal (ext 722)" <Gregory.McRandal@fineos.com>
+To: "Irish Linux User's Group (E-mail)" <ilug@linux.ie>
+Date: Fri, 2 Aug 2002 09:41:52 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain
+Subject: [ILUG] Quake 3
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+
+Hi,
+
+I've installed Quake 3 onto my computer and it starts to run up ok but as
+soon as the graphics start it bails out.  It complains that there is an
+error in sis_drv.o,  the line before this says that it is starting Quake in
+24 bit depth, now from http://www.winischhofer.net/linuxsis630.shtml I
+understand that the sis630 won't do 24 bit depth.  So is there a way to make
+Quake start up in 16 bit depth?  I've done some "google"ing but drawn a
+blank.....
+
+Thanks
+
+Greg
+
+
+**************************************************************************
+The information contained in this e-mail is confidential,
+may be privileged and is intended only for the use of the
+recipient named above. If you are not the intended
+recipient or a representative of the intended recipient,
+you have received this e-mail in error and must not copy,
+use or disclose the contents of this email to anybody
+else. If you have received this e-mail in error, please
+notify the sender immediately by return e-mail and
+permanently delete the copy you received. This email has
+been swept for computer viruses. However, you should
+carry out your own virus checks.
+
+
+Registered in Ireland, No. 205721. http://www.FINEOS.com
+**************************************************************************
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

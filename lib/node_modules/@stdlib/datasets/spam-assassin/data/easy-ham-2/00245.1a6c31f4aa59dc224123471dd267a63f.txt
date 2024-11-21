@@ -1,0 +1,92 @@
+From ilug-admin@linux.ie  Tue Aug  6 11:51:53 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 64CB8441E1
+	for <jm@localhost>; Tue,  6 Aug 2002 06:48:16 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:48:16 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g73ECvv15737 for
+    <jm-ilug@jmason.org>; Sat, 3 Aug 2002 15:12:57 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA00621; Sat, 3 Aug 2002 15:10:39 +0100
+Received: from linux.local ([195.218.108.51]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA00588 for <ilug@linux.ie>; Sat,
+    3 Aug 2002 15:10:31 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [195.218.108.51] claimed
+    to be linux.local
+Received: from linux.local (localhost [127.0.0.1]) by linux.local
+    (8.11.6/8.11.6/SuSE Linux 0.5) with ESMTP id g73EA3X32633 for
+    <ilug@linux.ie>; Sat, 3 Aug 2002 15:10:03 +0100
+Message-Id: <200208031410.g73EA3X32633@linux.local>
+To: Irish Linux Users Group <ilug@linux.ie>
+Reply-To: Irish Linux Users Group <ilug@linux.ie>
+Subject: Re: [ILUG] Re: Csh shell scripts
+In-Reply-To: Message from Lars Hecking <lhecking@nmrc.ie> of
+    "Thu, 01 Aug 2002 17:35:51 BST."
+    <20020801163551.GB7945@nmrc.ie>
+X-Mailer: [nmh-1.0.4] MH.6.8, SuSE Linux 7.3
+X-Url: http://www.blf.utvinternet.ie
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Id: <32630.1028383803.1@linux.local>
+Date: Sat, 03 Aug 2002 15:10:03 +0100
+From: Brian Foster <blf@utvinternet.ie>
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    PAA00588
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+  | Date: Thu, 1 Aug 2002 17:35:51 +0100
+  | From: Lars Hecking <lhecking@nmrc.ie>
+  | 
+  | > quickie for shell scripters:
+  | > How do I find out the time a file was created at?
+  |  
+  |  There is no canonical test, and the information is not necessarily
+  |  available.  [ ... ]  This information is also shown by ls -lc, but
+  |  parsing ls' output requires a bit of effort. I'd rather recommend
+  |  [ writing ] a short C program to access the file status directly,
+  |  and output the ctime directly (seconds since the epoch, i.e. perfect
+  |  |  for numerical comparison).
+
+ some systems have a stat(1) tool --- don't think it's GNU --
+ which, when given the `-t' option, does exactly what Lars is
+ suggesting:
+
+   $ stat -t /etc/motd
+   /etc/motd 21 8 81a4 0 0 303 79 1 0 0 1028070983 830730492 1013296719
+
+ minor problem is the `-t' format is not actually explained in
+ the man page, but its fairly easy to work out (or you can just
+ look at the source).  also, since the filename is printed as
+ the first "field", bizarre filenames (e.g., ones which contain
+ spaces or newlines) can confuse a simple script.
+
+cheers!
+	-blf-
+
+  |  (Another way is to use GNU find -printf with a custom format [ ... ]
+--
+ Innovative, very experienced, Unix and      | Brian Foster    Dublin, Ireland
+ Chorus (embedded RTOS) kernel internals     | e-mail: blf@utvinternet.ie
+ expert looking for a new position ...       | mobile: (+353 or 0)86 854 9268
+  For a résumé, contact me, or see my website  http://www.blf.utvinternet.ie
+
+    Stop E$$o (ExxonMobile):  «Whatever you do, don't buy Esso --- they
+     don't give a damn about global warming.»    http://www.stopesso.com
+     Supported by Greenpeace, Friends of the Earth, and numerous others...
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

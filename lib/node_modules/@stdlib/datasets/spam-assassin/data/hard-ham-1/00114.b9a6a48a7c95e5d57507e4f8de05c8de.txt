@@ -1,0 +1,376 @@
+Return-Path: <bounce-lgtech-2534369@sprocket.lockergnome.com>
+Received: from lockergnome.com (sprocket.lockergnome.com [130.94.96.247])
+	by dogma.slashnull.org (8.11.6/8.11.6) with SMTP id g6IJ7xJ25794
+	for <qqqqqqqqqq-lg@spamassassin.taint.org>; Thu, 18 Jul 2002 20:07:59 +0100
+X-Mailer: ListManager Web Interface
+Date: Thu, 18 Jul 2002 10:16:49 -0500
+Subject: [Lockergnome Tech Specialist]  Friend Fry
+To: qqqqqqqqqq-lg@spamassassin.taint.org
+From: Lockergnome Tech Specialist <subscriptions@lockergnome.com>
+List-Unsubscribe: <mailto:leave-lgtech-2534369U@sprocket.lockergnome.com>
+List-Subscribe: <mailto:subscribe-lgtech@sprocket.lockergnome.com>
+List-Owner: <mailto:owner-lgtech@sprocket.lockergnome.com>
+X-URL: <http://www.lockergnome.com/>
+X-List-Host: Lockergnome <http://www.lockergnome.com/>
+Reply-To: leave-lgtech-2534369U@sprocket.lockergnome.com
+Sender: bounce-lgtech-2534369@sprocket.lockergnome.com
+Message-Id: <LISTMANAGERSQL-2534369-1682759-2002.07.18-10.23.18--qqqqqqqqqq-lg#spamassassin.taint.org@sprocket.lockergnome.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=us-ascii
+Precedence: bulk
+
+<html><head><!--
+
+
+      CLICK HERE to read this newsletter on the Web for FREE:
+
+      <a href="http://www.lockergnome.com/issues/techspecialist/20020718.html">
+      http://www.lockergnome.com/issues/techspecialist/20020718.html
+      </a>
+
+      To unsubscribe, simply reply to this e-mail message.
+
+      To resubscribe, visit our site: http://www.lockergnome.com/
+
+      Don't worry about anything else below this paragraph.
+      It's for those with HTML e-mail clients. Just go to
+      the above listed web address to view this issue
+      perfectly in your web browser. Thanks again! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+<!--
+ body      { BACKGROUND-IMAGE: url(http://images.lockergnome.com/images/issue/top-right.gif); color: #331F30 }
+ a:link    { COLOR: #331F30; TEXT-DECORATION: underline; font-weight: normal }
+ a:visited { COLOR: #331F30; TEXT-DECORATION: underline; font-weight: normal }
+ a:active  { COLOR: GRAY; text-decoration: none }
+ a:hover   { color: GRAY; TEXT-DECORATION: none }
+ p.title   { BACKGROUND: #C69EBF; BORDER-BOTTOM: #4F2F4A 4px solid; BORDER-LEFT: #E7D5E4 4px solid; BORDER-RIGHT: #4F2F4A 4px solid; BORDER-TOP: #E7D5E4 4px solid; COLOR: #331F30; FONT-FAMILY: Comic Sans MS, Trebuchet MS, Helvetica, Arial; FONT-SIZE: 14pt; FONT-WEIGHT: normal }
+ p.sidebar { BACKGROUND: #E7D5E4; BORDER-BOTTOM: #C69EBF 3px solid; BORDER-LEFT: #FFFFFF 3px solid; BORDER-RIGHT: #C69EBF 3px solid; BORDER-TOP: #FFFFFF 3px solid; COLOR: #331F30; FONT-FAMILY: Comic Sans MS, Trebuchet MS, Helvetica, Arial; FONT-SIZE: 10pt; FONT-WEIGHT: bold; TEXT-ALIGN: center } 
+ .url      { font-size: 8pt; font-family: Verdana, Tahoma, Arial }
+-->
+</style><title>20020718 Lockergnome Tech Specialist</title></head>
+
+<body   MARGINHEIGHT="0" TOPMARGIN="0" BOTTOMMARGIN="0" bgcolor="#FFFFFF"   style="BACKGROUND-POSITION: right top; BACKGROUND-REPEAT: no-repeat" MARGINWIDTH="0" LEFTMARGIN="0" rightmargin="0">
+
+<!-- background="http://images.lockergnome.com/images/bg.head.gray.gif" bgcolor="#C0C0C0" left width="610" background="http://www.lockergnome.com/images/issue/top-right-2.gif" -->
+
+ <table width="100%" border="0" cellspacing="0" cellpadding="7" align="CENTER" valign="MIDDLE">
+  <tr><td background="http://images.lockergnome.com/images/issue/top-left.gif" nowrap valign="middle" align="center" colspan="2">
+
+ <!-- TOP BANNER AD -->
+ <center>
+<a href="http://click.linksynergy.com/fs-bin/click?id=vdKWfulJxTQ&offerid=36698.10000263&type=4&subid=0"><IMG  width="468" height="60" alt="10354" border="0" src="http://www.winnetmag.com/linkshare/banners/10354.gif"></a><IMG border="0" width="1" height="1" src="http://ad.linksynergy.com/fs-bin/show?id=vdKWfulJxTQ&bids=36698.10000263&type=4&subid=0">
+ <br>
+ </center>
+ <!-- TOP BANNER AD -->
+
+ <!--#include virtual="/include/banner.txt" -->
+
+ </td></tr>
+
+  <tr><td valign="top" bgcolor="#FFFFFF"><font style="font-size: 10pt" face="Verdana, Tahoma, Arial" size="2">
+
+<!-- NEWS -->
+<table bgcolor="#FFCC99" border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><p class="title">
+&nbsp; 07.18.2002 GnomeREPORT </p></td></tr></table><p>
+
+<p class="sidebar"><table cellpadding="10" cellspacing="0" border="0"><tr><td>
+<font style="font-size: 10pt" face="Verdana, Tahoma, Arial" size="2">
+<b>Keep your Web site working fast and smart with UltraDNS.</b> More reliable
+performance means more traffic, more sales, and more profits. Outsource your
+DNS management and save. Basic DNS for only $1.00 a month. 
+<a href="http://servedby.advertising.com/click/site=64021/mnum=63761">Click here to
+find out more</a>.
+</font></td></tr></table></p>
+
+I thought I baked my Dell PowerEdge 1400SC server yesterday 
+when it refused to boot completely. I borrowed a data vac 
+from a friend and decided to clean all of the dust and cat 
+hair from my systems, then after reconnecting everything, 
+the server would boot to the initial splash screen, where 
+there is a POST progress bar, but would not proceed past 
+past about the first 1/5th of the bar. Uh-oh. What did I 
+fry?
+
+<p>As it turns out, it was another case of "always check the 
+small stuff". Oh, I had all of the cables plugged back in to 
+the server properly, I checked all of that, but it didn't 
+dawn on me until about a half dozen boot attempts later that 
+I should probably turn an eye toward the other end of the 
+cables. That server is connected to an 8-port Compaq KVM 
+switch and with all of the yanking, plucking and shuffling, 
+the keyboard cable had been eeked out of the switch just a 
+tad. Why the server didn't display a keyboard warning 
+message like every other computer on the planet, I can only 
+attribute to the BIOS developers. Server Satchel, running 
+Red Hat Linux 7.2 is now operating as it was previously. The 
+penguin is happy. The server case is even black. How 
+appropriate...
+
+<p align="right">See You in <a target="_blank" href="http://www.gnomedex.com/">August</a>,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><font style="font-size: 23pt" face="Randy Nieland, Chris Pirillo, Comic Sans MS, Script" size="5">Randy Nieland&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></P>
+
+
+<!-- GnomeNETWORK -->
+<p><br><table bgcolor="#FFCC99" border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><p class="title">&nbsp;GnomeNETWORK</p></td></tr></table><p>
+
+<b>Windows XP Security Checklist</b>
+<br>Finely crafted by Bernie Klinder
+
+<p><a class="url" href="http://www.labmice.net/articles/winxpsecuritychecklist.htm">http://www.labmice.net/articles/winxpsecuritychecklist.htm</a>
+
+<p>With all of the security features crammed into Windows XP, 
+where does one start? Do you need VPN capability? Is NTFS an 
+appropriate file system choice for you? Is there any value 
+at all in Simple File Sharing? After much hounding, Bernie 
+Klinder has drawn up a healthy checklist of things you need 
+to address under Windows XP in order to maintain a system 
+that is both security and compatible with the rest of your 
+computing world.
+
+<!-- GnomeSYSTEM -->
+<p><br><table bgcolor="#FFCC99" border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><p class="title">&nbsp;GnomeSYSTEM</p></td></tr></table><p>
+
+<b>ATI Still Makes Video Cards?</b>
+
+<p><a class="url" href="http://www.anandtech.com/video/showdoc.html?i=1656">http://www.anandtech.com/video/showdoc.html?i=1656</a>
+
+<p>Say it isn't so! Yes, apparently they do still have 
+something to say about NVIDIA's dominance in the video card 
+market. Seeing as how they've been all but dumped by the 
+majority of top-tier system makers, it's hard to believe 
+that they are capable of a serious comeback. Judging from 
+what AnandTech has to say about the forthcoming R300-based 
+cards, it appears that they haven't thrown in the towel just 
+yet. I'm all for competition, so I welcome the effective re-
+entrance into the high end market. Let's all hope that their 
+driver development has improved as much as their hardware 
+seems to have. 
+
+
+<p class="sidebar"><table cellpadding="10" cellspacing="0" border="0"><tr><td>
+<font style="font-size: 10pt" face="Verdana, Tahoma, Arial" size="2">
+<b>GET WINDOWS XP TIPS:</b> Months after the release of Windows XP Professional and Home editions, people are still learning the nuances of Microsoft's newest operating system. Whether you've been using it for a while or are planning to upgrade to the new OS soon, this ebook is right up your alley. 
+<a href="   http://store.eSellerate.net/s.asp?s=STR550611850&Cmd=BUY&SKURefnum=SKU3000768669&AFFIDC=AFF669529939">GET YOUR COPY</a> 
+of Lockergnome's Top 50 Windows XP tips now!    
+</font></td></tr></table></p>
+
+<!-- GnomeALERTZ -->
+<p><br><table bgcolor="#FFCC99" border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><p class="title">&nbsp;GnomeALERTZ</p></td></tr></table><p>
+
+<b>Today's Top 5 kbAlertz</b>
+
+<p><ul>
+
+<li><a class="url" href="http://www.kbAlertz.com/redir.aspx?kbnumber=Q292108">Q292108 - WD2002: GetSpellingSuggestions Method Does Not List Non-English Language Suggestions (Q292108)</a></li>
+
+<li><a class="url" href="http://www.kbAlertz.com/redir.aspx?kbnumber=Q290981">Q290981 - WD2002: "File Conversion Encoding" Dialog Box Appears When You Open Text File (Q290981)</a></li>
+
+<li><a class="url" href="http://www.kbAlertz.com/redir.aspx?kbnumber=Q290969">Q290969 - WD2002: Run-Time Error 5 When You Use Mid(), Left(), or Right() Function (Q290969)</a></li>
+
+<li><a class="url" href="http://www.kbAlertz.com/redir.aspx?kbnumber=Q290967">Q290967 - WD2002: Cannot Place a Bullet in the Middle of a Sentence or Paragraph (Q290967)</a></li>
+
+<li><a class="url" href="http://www.kbAlertz.com/redir.aspx?kbnumber=Q201953">Q201953 - WD2000: Macro to Find Automatic (Soft) Page Breaks (Q201953)</a></li>
+
+
+</ul></p> 
+
+
+<!-- GnomeASSISTANT -->
+<p align="right"><a class="url" style="color: gray; text-decoration: none" href="http://www.lockergnome.com/recommend.html">Recommend It!</a></p>
+<p><br><table bgcolor="#FFCC99" border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><p class="title">&nbsp;GnomeASSISTANT</p></td></tr></table><p>
+
+
+<b>Technical Censorship</b>
+
+<p><a class="url" href="http://news.com.com/2100-1023-944315.html">http://news.com.com/2100-1023-944315.html</a>
+
+<p>Odd. I liked that cup of Mocha (spelled M-O-C-H-A and I'll explain in a minute) I drank at Starbucks when Jake and I visited last week, but if I wanted to relay that to someone using a Yahoo email account, you might see an alternate word. Thus the additional hyphenated spelling just in case those of you using Yahoo to subscribe to Lockergnome actually received your issues and the word has been altered to suit their personal opinion of my choice in drinks. They've also had a terrible time interpretting our W3C standardized HTML lately, dropping in copious #message references throughout the text in their new Beta email client. So why the text replacement? It's another filtering technique to stop certain words that might relate to JavaScript functions. I guess I'll have to choose another beverage next time. Silly me.
+
+
+<!-- GnomeSTUFF -->
+<p><br><table bgcolor="#FFCC99" border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><p class="title">&nbsp;GnomeSTUFF</p></td></tr></table><p>
+
+
+<b>Yer Kidding... Really?</b>
+
+<p><a class="url" href="http://www.theregus.com/content/4/25629.html">http://www.theregus.com/content/4/25629.html</a>
+
+<p>I'm all sorts of sarcastic today, aren't I? Those of us 
+that have had to manage budgets are used to dealing with 
+math in terms of hardware, software, maintenance and 
+personnel costs. It's not really that difficult. It's 
+certainly not hard to see that dropping a free version of 
+Linux on a server with less hardware requirements just to do 
+some file sharing, printing and maybe an Intranet page or 
+three is far cheaper than using Windows. At very long last, 
+Microsoft has admitted as much. Of course, they're quick to 
+point out that they have much more to offer than Linux, 
+which may indeed be true. But at the end of the day, when 
+you compare donuts to donuts and like functions against one 
+another, Linux is cheaper. For a shop of Windows-trained 
+staff, dealing with Linux will certainly be a challenge, 
+requiring additional training, suffer the odd blunder here 
+and there, and be less forgiving when it comes to detailed 
+configuration. On the same token, make a Linux whiz use 
+Windows and see how quickly you'll be searching for a 
+replacement. Cheap is in the budget of the beholder.
+
+<!-- ADMINISTRIVIA -->
+<p align="right"><a class="url" style="color: gray; text-decoration: none" href="http://www.lockergnome.com/recommend.html">Recommend It!</a></p>
+<p><br><table cellpadding="0" cellspacing="0" border="0"><tr><td><p class="sidebar">
+<table cellpadding="7" cellspacing="0" border="0"><tr><td>
+<font style="font-size: 8pt" face="Verdana, Tahoma, Arial" size="1">
+<a href="http://www.lockergnome.com/issues/techspecialist/20020718.html">http://www.lockergnome.com/issues/techspecialist/20020718.html</a>
+<p>Your subscribed e-mail address is: [qqqqqqqqqq-lg@spamassassin.taint.org] - To unsubscribe or change your delivery address, please visit the <A HREF="http://www.lockergnome.com/changesub.html">subscription management</A> page. For further information, please refer to the GnomeCREDITS in the sidebar.
+</font></td></tr></table>
+</p></td></tr></table>
+
+<!--#include virtual="/include/subscription2.txt" -->
+
+</font></td>
+<td background="http://images.lockergnome.com/images/issue/sidebar.gif" VALIGN="top" align="left" width="145"><font style="font-size: 8pt" face="Verdana, Tahoma, Arial" size="1">
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td><p class="sidebar">LOOK OVER HERE</p></td></tr></table><br>
+
+&nbsp;<a href="http://www.gnometomes.com/">Download Tip eBooks</a><br>
+<p>
+&nbsp;<a href="http://windowsdaily.lockergnome.com/">Latest Windows Daily</a><br>
+&nbsp;<a href="http://digitalmedia.lockergnome.com/">Latest Digital Media</a><br>
+&nbsp;<a href="http://techspecialist.lockergnome.com/">Latest Tech Specialist</a><br>
+&nbsp;<a href="http://penguinshell.lockergnome.com/">Latest Penguin Shell</a><br>
+&nbsp;<a href="http://applecore.lockergnome.com/">Latest Apple Core</a><br>
+&nbsp;<a href="http://webmasterweekly.lockergnome.com/">Latest Web Weekly</a><br>
+&nbsp;<a href="http://updates.lockergnome.com/">Latest Bits &amp; Bytes</a><br>
+&nbsp;<A HREF="http://www.chrispirilloshow.com/">Latest Audio Show</A><BR>
+<p>
+&nbsp;<A HREF="http://lockergnome.pricegrabber.com/">Low Price Search</A><br>
+&nbsp;<A HREF="http://www.gnomedex.com/">Our Tech Conference</A><br>
+<p>
+&nbsp;<a target="_blank" href="http://www.gnometomes.com/tome/000628.html">Microsoft Office Tips</a><br>
+&nbsp;<a target="_blank" href="http://www.gnometomes.com/tome/000627.html">PC Productivity Tips</a><br>
+&nbsp;<a target="_blank" href="http://www.gnometomes.com/tome/000626.html">Cool Internet Tips</a><br>
+&nbsp;<a target="_blank" href="http://www.gnometomes.com/tome/000625.html">Windows 2000 Tips</a><br>
+&nbsp;<a target="_blank" href="http://www.gnometomes.com/tome/000623.html">Windows XP Tips</a><br>
+<p>
+&nbsp;<a href="http://www.lockergnome.com/recommend.html">Tell a Friend About Us!</a><br>
+&nbsp;<a href="http://www.lockergnome.com/submit.html">Suggest a Feature</a><br>
+&nbsp;<a href="http://www.lockergnome.com/advertise.html">Advertise With Us</a><br>
+&nbsp;<A HREF="http://www.lockergnome.com/jobs.html">High-Tech Job Search</A><br>
+&nbsp;<a href="http://www.lockergnome.com/chat.html">Chat With Gnomies</a><br>
+&nbsp;<a href="http://www.lockergnome.com/webcam.html">Watch The Webcams</a><br>
+&nbsp;<a href="https://www.sandhills.com/secure/smartcomputing/cpufreetrial3.asp?source=cp491bonus">Computer Power User</a><br>
+<p>
+&nbsp;<a href="http://www.lockergnome.com/issues/">Read Past Issues</a><br>
+&nbsp;<a href="http://www.xteq.com/">Download X-Setup</a><br>
+&nbsp;<a href="http://www.lockergnome.com/about.html">About Lockergnome</a><br>
+&nbsp;<a href="http://www.lockergnome.com/privacy.html">Our Privacy Policy</a><br>
+&nbsp;<a href="http://www.lockergnome.com/options.html">View More Options</a><br>
+&nbsp;<a href="http://www.lockergnome.com/lockergnome.xml">Our XML / RSS Feed</a><br>
+&nbsp;<a href="http://www.lockergnome.com/options.html#syndicate">Syndicate Our Tips</a><br>
+&nbsp;<a href="http://www.lockergnome.com/images/lockerlink.gif">Link To Lockergnome</a><br>
+&nbsp;<A HREF="http://www.amazon.com/exec/obidos/ASIN/0966103254/ref=ase_lockergnome/">Get Chris's Book</A><br>
+
+<p>
+
+&nbsp;<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#103;&#103;&#101;&#115;&#116;&#64;&#108;&#111;&#99;&#107;&#101;&#114;&#103;&#110;&#111;&#109;&#101;&#46;&#99;&#111;&#109;">&#69;&#45;&#109;&#97;&#105;&#108;&#32;&#97;&#32;&#83;&#117;&#103;&#103;&#101;&#115;&#116;&#105;&#111;&#110;</a><br>
+&nbsp;<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#97;&#110;&#116;&#114;&#97;&#118;&#101;&#64;&#108;&#111;&#99;&#107;&#101;&#114;&#103;&#110;&#111;&#109;&#101;&#46;&#99;&#111;&#109;">&#89;&#111;&#117;&#114;&#32;&#82;&#97;&#110;&#116;&#32;&#47;&#32;&#82;&#97;&#118;&#101;</a><br>
+&nbsp;<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#102;&#101;&#101;&#100;&#98;&#97;&#99;&#107;&#64;&#108;&#111;&#99;&#107;&#101;&#114;&#103;&#110;&#111;&#109;&#101;&#46;&#99;&#111;&#109;?subject=Lockergnome Site Feedback">General Feedback</a><br>
+&nbsp;<A HREF="http://www.furo.com/">The Editor's Blog</A><BR>
+&nbsp;<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#102;&#117;&#114;&#111;&#64;&#108;&#111;&#99;&#107;&#101;&#114;&#103;&#110;&#111;&#109;&#101;&#46;&#99;&#111;&#109;?subject=Lockergnome Tech Specialist Comment">E-mail the Editor</a><br>
+
+<p>&nbsp;<p><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td><p class="sidebar">SOUND SYSTEMS</p></td></tr></table><br>
+<A target="_blank" HREF="http://lockergnome.pricegrabber.com/search_getprod.php/masterid=517946/">Yamaha RX-V1200</A><BR>
+<A target="_blank" HREF="http://lockergnome.pricegrabber.com/search_getprod.php/masterid=469475/">Sony DAVC900</A><BR>
+<A target="_blank" HREF="http://lockergnome.pricegrabber.com/search_getprod.php/masterid=533869/">Harman Kardon	AVR520</A><BR>
+<A target="_blank" HREF="http://lockergnome.pricegrabber.com/search_getprod.php/masterid=567695/">Denon	AVR5803</A><BR>
+<A target="_blank" HREF="http://lockergnome.pricegrabber.com/search_getprod.php/masterid=568577/">Pioneer VSXD811S</A><BR>
+<A target="_blank" HREF="http://lockergnome.pricegrabber.com/search_getprod.php/masterid=533871/">Pioneer Elite	VSX49TX</A><BR>
+<A target="_blank" HREF="http://lockergnome.pricegrabber.com/search_getprod.php/masterid=585097/">Sony HTDDW840</A><BR>
+<A target="_blank" HREF="http://lockergnome.pricegrabber.com/search_getprod.php/masterid=573619/">Yamaha HTR5560</A><BR>
+<A target="_blank" HREF="http://lockergnome.pricegrabber.com/search_getprod.php/masterid=527408/">BOSE LS122BK</A><BR>
+<A target="_blank" HREF="http://lockergnome.pricegrabber.com/search_getprod.php/masterid=585096/">Sony DAVC450</A><BR>
+
+</center>
+
+<p>&nbsp;<p><table cellpadding="0" cellspacing="0" border="0" width="100%" 
+bgcolor="#FFEEDD"><tr><td><p class="sidebar">GNOMESPECIALS</p></td></tr></table><br>
+&nbsp;<a target="_blank" title="Share your team/project contacts, calendars, tasks, etc. in MS Oulook 2002, without a server!" href="http://outlook.4team.biz/?fr=gnome">Manage Your Workgroup</a><br>
+&nbsp;<a target="_blank" title="Software for filling in paper forms on your computer instead of a typewriter" href="http://www.colorpilot.com/typewriter.html">Form Pilot</a><br>
+&nbsp;<a target="_blank" title="It's both fun and functional! Hear the time, set alarms, style your taskbar clock, sync your PC time, and more. Try Say the Time free for
+30 days." href="http://www.provenio.ws/saythetime/">Say the Time 5.0</a><br>
+&nbsp;<a target="_blank" title="Convert MP3, WAV, AVI, JPG, GIF, and PNG to the SWF format for no buffer streaming" href="http://www.gfx2swf.com/gnome-special/">Boomer - Stream Now</a><br>
+&nbsp;<a target="_blank" title="Creating Web/CD catalogs with HyperPublish is really a snap! Not just an editor but a quick, powerful all-in-one environment for creating stunning catalogs, CDs and Web sites!" href="http://www.hyperpublish.com/create_a_catalog_000018.htm">Create Web/CD catalog</a><br>
+&nbsp;<a target="_blank" title="Create your Web site in minutes with this easy-to-use visual tool!" href="http://www.easywebeditor.com/create_web_page_000004.htm">Easy Web Editor</a><br>
+&nbsp;<a target="_blank" title="Capture TEXT seen in folder trees, file lists, database reports, dialog boxes, menus, status lines, including areas that you could not highlight with your mouse. (Chris cannot live without it!;)" href="http://www.structurise.com/kleptomania">Kleptomania</a><br>
+&nbsp;<a target="_blank" title="Organize all your mp3 collection in seconds! You can rename mp3s quickly and easily, write tag information in batch, from file names or import it from cddb. Get your free trial now!" href="http://www.softpointer.com/tr_2.htm">Tag&amp;Rename</a><br>
+&nbsp;<a target="_blank" title="You will enjoy countless hours of fun with Pretty Good Solitaire!  Play 500 solitaire card games, from classic games like Klondike, FreeCell, and Spider, to original games found nowhere else.  Enjoy lush graphics, large easy-to-read cards, statistics, and quests, a unique new way to play for points." href="http://www.goodsol.com/lockergnome.html">Pretty Good Solitaire</a><br>
+&nbsp;<a target="_blank" title="Choosing color combinations for the web is a careful balance between a scheme designed to draw attention; while being respectful of established color-harmony principles.  ColorCombo's four panels scroll, allowing side-by-side color comparisons.  Also text on background checker, 4096 color array, + more. FREE." href="http://www.colorcombo.com">Visualize Color Combos</a><br>
+&nbsp;<a target="_blank" title="FirstStop WebSearch(TM) Deluxe Edition, a FREE trial version of this incredibly fast, award winning, customizable multi-search engine that has been described as the FASTEST no-nonsense meta search for the net. Now, Gnomies can save 50% when they register a copy of FirstStop WebSearch!" href="http://www.Firststopwebsearch.com/lockergnomeoffer.html">FirstStop WebSearch</a><br>
+&nbsp;<a target="_blank" title="Ecobuilder is the ultimate web application that allows you to get your portal, online community, intranet, extranet or any web site project online by saving time, money and manpower. Gnomies receive $400 off the cost of the software." href="http://www.ecobuilder.com/lockergnome.cfm">Ecobuilder</a><br>
+&nbsp;<a target="_blank" title="Software for organizing your personal book collection. Add books quickly - no typing required! Group, filter, sort and print your database. Click for free trial version." href="http://www.collectorz.com/book?from=lockergnome">Book Collector</a><br>
+<p align="center"><a href="http://www.lockergnome.com/special.html"><B>Get Listed Here</B></a></p>
+Question: which group is 250,000+ strong and always looking for stuff to make their personal and professional lives run smoother? 
+
+<!--#include virtual="/include/subscribeside.txt" -->
+
+
+<p>&nbsp;<p><font style="font-size: 8pt" face="Verdana, Tahoma, Arial" size="1">
+<table align="center" border="0"><tr><td><a href="http://www.lockergnome.com/webcam.html">
+<img width="125" height="94" alt="Lockergnome Webcam Image" src="http://www.lockergnome.com/images/webcam/furocamcam.jpg"></a></td></tr>
+<tr><td align="center"><font style="font-size: 7pt" size="1" face="Verdana, Tahoma, Arial">CLICK HERE TO ZOOM</font></td></tr></table>
+</font>
+
+<p>&nbsp;<p>
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td><p class="sidebar">LOOK IT UP</p></td></tr></table><br>
+<form method="post" action="http://www.lockergnome.com/cgi-bin/htsearch"><input type="hidden" name="method" value="and"><input type="hidden" name="format" value="long"><input type="hidden" name="sort" value="score"><input type="hidden" name="config" value="htdig"><input type="hidden" name="restrict" value=""><input type="hidden" name="exclude" value=""><input type="text" size="14" value=" Lockergnome" name="words"><input type="submit" class="Press" value="go"></form>
+<FORM method="get" action="http://www.amazon.com/exec/obidos/external-search"><INPUT type="text" name="keyword" size="14" value=" Amazon"><INPUT type="hidden" name="mode" value="blended"><INPUT type="hidden" name="tag" value="lockergnomedigit"><INPUT TYPE="submit" VALUE="go" class="Press" NAME="Go"></form>
+<form action="http://www.gnomejob.com/" method="POST"><input type="hidden" name="num_per_page" value="20"><input type="hidden" name="num_to_retrieve" value="500"><input type="hidden" name="iquery" value=""><input type="hidden" name="vlink_color" value="008080"><input type="hidden" name="link_color" value="990000"><input type="hidden" name="background_color" value="FFFFFF"><input type="hidden" name="text_color" value="000000"><input type="hidden" name="title_image" value="http://www.lockergnome.com/images/lgtopper.gif"><input type="hidden" name="site_url" value="http://www.lockergnome.com/"><input type="hidden" name="site_title" value="Lockergnome"><input type="hidden" name="title_text" value="Lockergnome"><input type="hidden" name="custom" value="1"><input value=" Jobs" type="TEXT" name="query" size="14"><input class="Press" type="SUBMIT" value="go"></form>
+<FORM method="get" action="http://lockergnome.pricegrabber.com/search_gen_top.php" target="_parent"><input type="hidden" name="topcat_search" value="1"><input value=" Hardware" size="14" type=text name=form_keyword><INPUT type="SUBMIT" value="go" class="Press" NAME="Go"></FORM>
+<FORM method="get" action="http://lockergnome.pricegrabber.com/search_gen_top.php" target="_parent"><input type="hidden" name="topcat_search" value="1"><input value=" Software" size="14" type=text name=form_keyword><INPUT type="SUBMIT" value="go" class="Press" NAME="Go"></FORM>
+
+<p>&nbsp;<p>
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td><p class="sidebar">BYTE ME NOW</p></td></tr></table><br>
+<font style="font-size: 8pt" face="Verdana, Tahoma, Arial" size="1">
+&copy;2002, Lockergnome LLC. ISSN: 1095-3965. All Rights Reserved. Please read our <a href="http://www.lockergnome.com/terms.html">Terms of Service</a>. Our Web site is hosted by <a href="http://www.digitaldaze.com/?lg">DigitalDaze</a>. Domain registered at <a href="http://www.dnscentral.com/?lg">DNS Central</a>.
+
+<!-- FUNNY COMMENT    -->
+
+
+
+
+</font>
+
+</font></td></tr></table>
+</body></html>
+
+

@@ -1,0 +1,65 @@
+From ilug-admin@linux.ie  Fri Aug  9 15:00:17 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7B7C843FB1
+	for <jm@localhost>; Fri,  9 Aug 2002 10:00:00 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:00:00 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79E1ib04098 for
+    <jm-ilug@jmason.org>; Fri, 9 Aug 2002 15:01:44 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id OAA06479 for <jm-ilug@jmason.org>;
+    Fri, 9 Aug 2002 14:24:34 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id OAA09768; Fri, 9 Aug 2002 14:22:00 +0100
+Received: from ie.suberic.net (owsla.ie.suberic.net [62.17.162.83]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id OAA09728 for <ilug@linux.ie>;
+    Fri, 9 Aug 2002 14:21:52 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host owsla.ie.suberic.net
+    [62.17.162.83] claimed to be ie.suberic.net
+Received: from owsla.ie.suberic.net (owsla [127.0.0.1]) by ie.suberic.net
+    (8.11.6/8.11.6) with ESMTP id g79DLnY03404 for <ilug@linux.ie>;
+    Fri, 9 Aug 2002 14:21:49 +0100
+Date: Fri, 9 Aug 2002 14:21:47 +0100
+To: irish linux users group <ilug@linux.ie>
+Message-Id: <20020809142147.B3331@ie.suberic.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+X-Operating-System: Linux 2.4.18-5 i686
+X-GPG-Fingerprint: 9C1D 16F4 11F1 6BD2 933C  048D ACC7 9840 89D0 7646
+From: kevin lyda <kevin+dated+1029331309.11b939@ie.suberic.net>
+Mail-Followup-To: kevin+dated+1029331309.11b939@ie.suberic.net,
+	ilug@linux.ie
+X-Delivery-Agent: TMDA/0.57
+Subject: [ILUG] galeon and keyboard focus...
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+ok, in a galeon browser window i open a new window by middle-clicking
+a link.  the window comes up under my mouse.  however, keys i type go to
+the first window.  anyone else have this problem, and did they solve it?
+i use sawfish as my wm with sloppy focus.
+
+kevin
+
+-- 
+kevin@suberic.net     that a believer is happier than a skeptic is no more to
+fork()'ed on 37058400    the point than the fact that a drunken man is happier
+meatspace place: home       than a sober one. the happiness of credulity is a
+http://ie.suberic.net/~kevin   cheap & dangerous quality -- g.b. shaw
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

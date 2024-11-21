@@ -1,0 +1,23 @@
+
+{{alias}}( x )
+    Converts an ndarray-like object to an ndarray.
+
+    Parameters
+    ----------
+    x: ndarrayLike
+        Input ndarray-like object.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var arr = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] );
+    > var out = {{alias}}( arr )
+    <ndarray>
+
+    See Also
+    --------
+

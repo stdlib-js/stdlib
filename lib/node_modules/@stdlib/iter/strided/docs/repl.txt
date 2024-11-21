@@ -1,0 +1,47 @@
+
+{{alias}}( iterator, stride[, offset[, eager]] )
+    Returns an iterator which steps by a specified amount.
+
+    If an environment supports Symbol.iterator and a provided iterator is
+    iterable, the returned iterator is iterable.
+
+    Parameters
+    ----------
+    iterator: Object
+        Input iterator.
+
+    stride: integer
+        Stride (i.e., step amount).
+
+    offset: integer (optional)
+        Index of the first iterated value. Default: 0.
+
+    eager: boolean (optional)
+        Boolean indicating whether to eagerly advance the input iterator when
+        provided a non-zero offset. Default: false.
+
+    Returns
+    -------
+    iterator: Object
+        Iterator.
+
+    iterator.next(): Function
+        Returns an iterator protocol-compliant object containing the next
+        iterated value (if one exists) and a boolean flag indicating whether the
+        iterator is finished.
+
+    iterator.return( [value] ): Function
+        Finishes an iterator and returns a provided value.
+
+    Examples
+    --------
+    > var arr = {{alias:@stdlib/array/to-iterator}}( [ 0, 1, 2, 3, 4, 5, 6 ] );
+    > var it = {{alias}}( arr, 2, 1 );
+    > var r = it.next().value
+    1
+    > r = it.next().value
+    3
+
+    See Also
+    --------
+

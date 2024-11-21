@@ -1,0 +1,59 @@
+
+tutorial( [name, [options]] )
+    Starts a tutorial.
+
+    When not provided a tutorial name, the function prints a list of available
+    tutorials.
+
+    If a specified workspace already exists, the workspace is silently cleared
+    and a new tutorial presentation bound. In order to preserve an existing
+    workspace, specify an alternative tutorial workspace name.
+
+    Parameters
+    ----------
+    name: string (optional)
+        Tutorial name.
+
+    options: Object (optional)
+        Tutorial options.
+
+    options.borderTop: string (optional)
+        Top border character sequence. Default: '*'.
+
+    options.borderBottom: string (optional)
+        Bottom border character sequence. Default: '*'.
+
+    options.borderLeft: string (optional)
+        Left border character sequence. Default: '* '.
+
+    options.borderRight: string (optional)
+        Right border character sequence. Default: ' *'.
+
+    options.counter: string|boolean (optional)
+        Slide counter. If `true`, each tutorial slide displays a slide counter.
+        If set to 'progress', each tutorial slide displays a progress counter.
+        If `false`, no counter is displayed. Default: 'progress'.
+
+    options.workspace: string (optional)
+        REPL workspace name. A tutorial presentation adds commands to the
+        specified workspace, thus allowing tutorial navigation and interaction.
+        Default: `'tutorial-<name>-<n>'`, where `name` is the tutorial name and
+        `n` is an assigned tutorial presentation identifier.
+
+    options.autoClear: boolean (optional)
+        Boolean indicating whether to automatically clear the screen before
+        writing a rendered tutorial slide to the REPL. Default: true.
+
+    Returns
+    -------
+    out: integer|void
+        Tutorial presentation identifier.
+
+    Examples
+    --------
+    > var id = tutorial( 'repl' );
+
+    See Also
+    --------
+    presentationStart, presentationStop, workspace, workspaces
+

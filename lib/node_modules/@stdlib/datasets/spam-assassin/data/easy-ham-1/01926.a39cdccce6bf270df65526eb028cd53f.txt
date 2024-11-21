@@ -1,0 +1,32 @@
+From rssfeeds@jmason.org  Thu Sep 26 16:31:13 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 88E2616F1A
+	for <jm@localhost>; Thu, 26 Sep 2002 16:30:25 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 16:30:25 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8QFBNg23716 for
+    <jm@jmason.org>; Thu, 26 Sep 2002 16:11:25 +0100
+Message-Id: <200209261511.g8QFBNg23716@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: diveintomark <rssfeeds@spamassassin.taint.org>
+Subject: Plan
+Date: Thu, 26 Sep 2002 15:11:23 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://diveintomark.org/archives/2002/09/25.html#plan
+Date: 2002-09-25T10:43:06-05:00
+
+_Paul Ford_: Falling Off a Truck[1]. &#8220;In the last 4 days I fell off a 
+truck and was dragged for 30 feet, and was interviewed by an NPR show. Those 
+two facts are not related except that they both happened to me and made me 
+queasy. I also wrote a short plan outlining the rest of my life.&#8221;
+
+
+
+[1] http://ftrain.com/recent_update_etc.html
+
+

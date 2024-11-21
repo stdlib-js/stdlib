@@ -1,0 +1,33 @@
+
+{{alias}}( α, β )
+    Returns the variance of an inverse gamma distribution.
+
+    If `α <= 2` or `β <= 0`, the function returns `NaN`.
+
+    If `α` or `β` is `NaN`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    α: number
+        Shape parameter.
+
+    β: number
+        Rate parameter.
+
+    Returns
+    -------
+    out: number
+        Variance.
+
+    Examples
+    --------
+    > var v = {{alias}}( 5.0, 7.0 )
+    ~1.021
+    > v = {{alias}}( 4.0, 12.0 )
+    8.0
+    > v = {{alias}}( 8.0, 2.0 )
+    ~0.014
+
+    See Also
+    --------
+

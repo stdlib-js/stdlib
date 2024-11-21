@@ -1,0 +1,99 @@
+{
+  "name": "@stdlib/array/filled",
+  "version": "0.0.0",
+  "description": "Create a filled array.",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "main": "./lib",
+  "directories": {
+    "benchmark": "./benchmark",
+    "doc": "./docs",
+    "example": "./examples",
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "scripts": {},
+  "homepage": "https://github.com/stdlib-js/stdlib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stdlib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
+  "keywords": [
+    "stdlib",
+    "stdtypes",
+    "types",
+    "data",
+    "structure",
+    "typed",
+    "array",
+    "typed array",
+    "typed-array",
+    "vector",
+    "ndarray",
+    "matrix",
+    "float64array",
+    "float32array",
+    "int32array",
+    "uint32array",
+    "int16array",
+    "uint16array",
+    "int8array",
+    "uint8array",
+    "uint8clampedarray",
+    "float64",
+    "double",
+    "precision",
+    "double-precision",
+    "single",
+    "float",
+    "single-precision",
+    "float32",
+    "ieee754",
+    "integer",
+    "int32",
+    "signed",
+    "unsigned",
+    "uint32",
+    "int16",
+    "uint16",
+    "int8",
+    "uint8",
+    "uint8c",
+    "clamped",
+    "short",
+    "long",
+    "generic",
+    "fill",
+    "filled"
+  ]
+}

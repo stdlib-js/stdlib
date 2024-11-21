@@ -1,0 +1,74 @@
+From fork-admin@xent.com  Mon Aug 26 22:38:51 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3876243F99
+	for <jm@localhost>; Mon, 26 Aug 2002 17:38:51 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 22:38:51 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7QLVSZ10400 for <jm@jmason.org>;
+    Mon, 26 Aug 2002 22:31:28 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 48C552941E6; Mon, 26 Aug 2002 13:39:38 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mta6.snfc21.pbi.net (mta6.snfc21.pbi.net [206.13.28.240])
+    by xent.com (Postfix) with ESMTP id 3AA8529409E for <fork@xent.com>;
+    Sun, 25 Aug 2002 17:33:11 -0700 (PDT)
+Received: from endeavors.com ([66.126.120.174]) by mta6.snfc21.pbi.net
+    (iPlanet Messaging Server 5.1 (built May  7 2001)) with ESMTP id
+    <0H1F00AIADMHQK@mta6.snfc21.pbi.net> for fork@xent.com; Sun,
+    25 Aug 2002 17:35:06 -0700 (PDT)
+From: Gregory Alan Bolcer <gbolcer@endeavors.com>
+Subject: Doom 3
+To: FoRK <fork@spamassassin.taint.org>
+Message-Id: <3D69757C.B5046390@endeavors.com>
+Organization: Endeavors Technology, Inc.
+MIME-Version: 1.0
+X-Mailer: Mozilla 4.79 [en] (X11; U; IRIX 6.5 IP32)
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-Accept-Language: en, pdf
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 25 Aug 2002 17:25:32 -0700
+
+Doom 3 will be based on a peer to peer architecture says
+CmdrTaco quoting Ant quoting Carmack.  
+
+Greg
+
+http://slashdot.org/article.pl?sid=02/08/25/1310220
+
+DOOM 3 will use P2P System?
+
+           Posted by CmdrTaco on Sunday August
+           25, @09:19AM
+           from the
+           i'll-believe-it-when-I'm-fragged-on-it
+           dept.
+           Ant writes "From Page 6 of FiringSquad's
+           QuakeCon 2002 Postmortem article: John Carmack said
+           something at the end of the Q&A about how the
+           multiplayer will be only four players? Tim: After 2 hours of
+           talking up at the podium, sometimes you leave a few details
+           out. Doom 3 multiplayer will be fully scalable. It will be a
+           peer to peer system. We haven't started working on it yet.
+           Tell everyone not to panic - it will be fine. John just forgot
+           to mention it'll be scalable past four players. It's hard to
+           give a hard number because we haven't started working on
+           it yet. Right now we're focused on making Doom 3 a
+           kickass, over the top single player game."
+http://xent.com/mailman/listinfo/fork
+

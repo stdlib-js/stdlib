@@ -1,0 +1,92 @@
+From ilug-admin@linux.ie  Fri Jul 19 21:08:49 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 23851440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 16:08:49 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 21:08:49 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JK43J31258 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 21:04:08 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id VAA29257; Fri, 19 Jul 2002 21:02:24 +0100
+Received: from linux.local ([195.218.108.203]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id VAA29182 for <ilug@linux.ie>; Fri,
+    19 Jul 2002 21:01:59 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [195.218.108.203] claimed
+    to be linux.local
+Received: from linux.local (localhost [127.0.0.1]) by linux.local
+    (8.11.6/8.11.6/SuSE Linux 0.5) with ESMTP id g6JJxHX04486 for
+    <ilug@linux.ie>; Fri, 19 Jul 2002 20:59:17 +0100
+Message-Id: <200207191959.g6JJxHX04486@linux.local>
+To: Irish Linux Users Group <ilug@linux.ie>
+Reply-To: Irish Linux Users Group <ilug@linux.ie>
+Subject: Re: [ILUG] hard- vs. soft-links [was: How to copy some files ]
+In-Reply-To: Message from Ronan Waide <waider@waider.ie> of
+    "Fri, 19 Jul 2002 18:10:40 BST."
+    <15672.18448.462171.646227@klortho.waider.ie>
+X-Mailer: [nmh-1.0.4] MH.6.8, SuSE Linux 7.3
+X-Url: http://www.blf.utvinternet.ie
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Id: <4483.1027108757.1@linux.local>
+Date: Fri, 19 Jul 2002 20:59:17 +0100
+From: Brian Foster <blf@utvinternet.ie>
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    VAA29182
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+  | Date: Fri, 19 Jul 2002 18:10:40 +0100
+  | From: Ronan Waide <waider@waider.ie>
+  | 
+  | On July 19, niall@linux.ie said:
+  | > this case, [hard links] are being used to provide two quite
+  | > different namespaces for the same set of files.
+  | 
+  | Sure, but soft links would do the same. To be honest, I'm trying to
+  | think of a useful use of hard links right now, and I'm a little
+  | stumped. There's gotta be some benefit that I'm missing that's
+  | immediately obvious to everyone.
+
+ maybe, maybe not.   yonks ago, I seem to recall dmr saying,
+ or at least alleged to have said, something along the lines
+ that soft and hard links both make sense in isolation, but
+ having both does not.  if this is even close to correct,
+ yer in quite good company!
+
+ there is at least one notable difference, and a host of minor
+ ones.  the notable difference is the data always exists (and
+ is apriori accessible) for hard links --- there is no such
+ thing as a broken link.
+
+ I use this fact on occasion to "save" data, via the well-
+ known attack of hard-linking to a supposedly-temporary file
+ I want to preserve.  the subsequent unlink(2)ing of the
+ "temporary" file does not destroy the data.
+ 
+cheers!
+	-blf-
+--
+ Innovative, very experienced, Unix and      | Brian Foster    Dublin, Ireland
+ Chorus (embedded RTOS) kernel internals     | e-mail: blf@utvinternet.ie
+ expert looking for a new position ...       | mobile: (+353 or 0)86 854 9268
+  For a résumé, contact me, or see my website  http://www.blf.utvinternet.ie
+
+    Stop E$$o (ExxonMobile):  «Whatever you do, don't buy Esso --- they
+     don't give a damn about global warming.»    http://www.stopesso.com
+     Supported by Greenpeace, Friends of the Earth, and numerous others...
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

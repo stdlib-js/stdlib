@@ -1,0 +1,35 @@
+
+{{alias}}()
+    Returns a `Buffer` containing image data of Felice Beato's albumen silver
+    print of boats in a river in Nagasaki.
+
+    Returns
+    -------
+    out: Buffer
+        Image data.
+
+    Examples
+    --------
+    > var img = {{alias}}()
+    <Buffer>
+
+    References
+    ----------
+    - Beato, Felice. 1865. (no title). <http://www.getty.edu/art/collection/
+    objects/241797/felice-beato-boats-in-river-nagasaki-british-about-1865/>.
+
+    * Digital image courtesy of the Getty's Open Content Program. While there
+    are no restrictions or conditions on the use of open content images, the
+    Getty would appreciate a gratis copy of any scholarly publications in which
+    the images are reproduced in order to maintain the collection bibliography.
+    Copies may be sent to the attention of:
+
+      Open Content Program
+      Registrar's Office
+      The J. Paul Getty Museum
+      1200 Getty Center Drive, Suite 1000
+      Los Angeles, CA 90049
+
+    See Also
+    --------
+

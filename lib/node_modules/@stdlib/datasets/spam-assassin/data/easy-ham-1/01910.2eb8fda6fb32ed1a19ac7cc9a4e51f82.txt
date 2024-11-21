@@ -1,0 +1,36 @@
+From rssfeeds@jmason.org  Thu Sep 26 11:03:05 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 3B24316F03
+	for <jm@localhost>; Thu, 26 Sep 2002 11:03:05 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 11:03:05 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8Q81uC06504 for
+    <jm@jmason.org>; Thu, 26 Sep 2002 09:01:57 +0100
+Message-Id: <200209260801.g8Q81uC06504@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: boingboing <rssfeeds@spamassassin.taint.org>
+Subject: Public domain superheroes reborn in Tom Strong
+Date: Thu, 26 Sep 2002 08:01:56 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://boingboing.net/#85490211
+Date: Not supplied
+
+Great piece on the pulp comic characters that appear in the new series of Alan 
+Moore's _League of Extraordinary Gentlemen Tom Strong_ (thanks, Zed) funnybook. 
+These characters, like The Terror and The Fighting Yank, are in the public 
+domain because their original publishers didn't register (or renew, it's 
+unclear) their copyright, which means that they've been granted a new lease on 
+life in _Tom Strong_. The article segues into a very good discussion of the 
+public domain. This was just Slashdotted, so it might be a little slow, but 
+it's worth the wait. Link[1] Discuss[2] (_via /.[3]_)
+
+[1] http://www.newsarama.com/public.html
+[2] http://www.quicktopic.com/boing/H/MfCE7BXSmJdzp
+[3] http://slashdot.org
+
+

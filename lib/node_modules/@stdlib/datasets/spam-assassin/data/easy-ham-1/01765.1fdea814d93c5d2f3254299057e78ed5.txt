@@ -1,0 +1,77 @@
+From pudge@perl.org  Tue Aug 27 03:05:47 2002
+Return-Path: <pudge@perl.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id CC52143F9B
+	for <jm@localhost>; Mon, 26 Aug 2002 22:05:46 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 27 Aug 2002 03:05:46 +0100 (IST)
+Received: from cpu59.osdn.com (slashdot.org [64.28.67.73] (may be forged))
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7R20TZ21606 for
+    <jm-use-perl@jmason.org>; Tue, 27 Aug 2002 03:00:29 +0100
+Received: from [10.2.181.14] (helo=perl.org) by cpu59.osdn.com with smtp
+    (Exim 3.35 #1 (Debian)) id 17jVdH-0004gM-01 for <jm-use-perl@jmason.org>;
+    Mon, 26 Aug 2002 21:59:03 -0400
+Date: Tue, 27 Aug 2002 02:00:30 +0000
+From: pudge@perl.org
+Subject: [use Perl] Stories for 2002-08-27
+To: yyyy-use-perl@spamassassin.taint.org
+Precedence: list
+X-Bulkmail: 2.051
+Message-Id: <E17jVdH-0004gM-01@cpu59.osdn.com>
+
+use Perl Daily Newsletter
+
+In this issue:
+    * This Week on perl5-porters (19-25 August 2002)
+    * Slashdot Taking Questions to Ask Larry Wall
+
++--------------------------------------------------------------------+
+| This Week on perl5-porters (19-25 August 2002)                     |
+|   posted by rafael on Monday August 26, @07:42 (summaries)         |
+|   http://use.perl.org/article.pl?sid=02/08/26/1154225              |
++--------------------------------------------------------------------+
+
+I guess those thunderstorms came. And how they came. From an even wetter
+than normal country on the shores of the North Sea, comes this weeks
+perl5-porters summary.
+
+This story continues at:
+    http://use.perl.org/article.pl?sid=02/08/26/1154225
+
+Discuss this story at:
+    http://use.perl.org/comments.pl?sid=02/08/26/1154225
+
+
++--------------------------------------------------------------------+
+| Slashdot Taking Questions to Ask Larry Wall                        |
+|   posted by pudge on Monday August 26, @14:41 (perl6)              |
+|   http://use.perl.org/article.pl?sid=02/08/26/1845224              |
++--------------------------------------------------------------------+
+
+Please, if you feel inclined, make sure some [0]reasonable questions are
+asked of him.
+
+Discuss this story at:
+    http://use.perl.org/comments.pl?sid=02/08/26/1845224
+
+Links:
+    0. http://interviews.slashdot.org/article.pl?sid=02/08/25/236217&tid=145
+
+
+
+Copyright 1997-2002 pudge.  All rights reserved.
+
+
+======================================================================
+
+You have received this message because you subscribed to it
+on use Perl.  To stop receiving this and other
+messages from use Perl, or to add more messages
+or change your preferences, please go to your user page.
+
+	http://use.perl.org/my/messages/
+
+You can log in and change your preferences from there.
+

@@ -1,0 +1,42 @@
+
+{{alias}}( value )
+    Tests if a value is a 1-dimensional ndarray-like object containing double-
+    precision floating-point numbers.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a value is a 1-dimensional ndarray-like
+        object containing double-precision floating-point numbers.
+
+    Examples
+    --------
+    > var M = {};
+    > M.data = new {{alias:@stdlib/array/float64}}( [ 0, 0, 0, 0 ] );
+    > M.ndims = 1;
+    > M.shape = [ 4 ];
+    > M.strides = [ 1 ];
+    > M.offset = 0;
+    > M.order = 'row-major';
+    > M.dtype = 'float64';
+    > M.length = 4;
+    > M.flags = {};
+    > M.get = function get( i, j ) {};
+    > M.set = function set( i, j ) {};
+    > var bool = {{alias}}( M )
+    true
+    > bool = {{alias}}( [ 1, 2, 3, 4 ] )
+    false
+    > bool = {{alias}}( 3.14 )
+    false
+    > bool = {{alias}}( {} )
+    false
+
+    See Also
+    --------
+

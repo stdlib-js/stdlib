@@ -1,0 +1,97 @@
+From fork-admin@xent.com  Mon Sep 30 17:56:30 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 966B716F1E
+	for <jm@localhost>; Mon, 30 Sep 2002 17:53:59 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 30 Sep 2002 17:53:59 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8UEYCK02639 for
+    <jm@jmason.org>; Mon, 30 Sep 2002 15:34:12 +0100
+Received: from xent.com ([64.161.22.236]) by webnote.net (8.9.3/8.9.3)
+    with ESMTP id PAA20708 for <jm@jmason.org>; Mon, 30 Sep 2002 15:14:55
+    +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id A6AE52940BD; Mon, 30 Sep 2002 07:14:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mta5.snfc21.pbi.net (mta5.snfc21.pbi.net [206.13.28.241])
+    by xent.com (Postfix) with ESMTP id 4516C29409E for <Fork@xent.com>;
+    Mon, 30 Sep 2002 07:13:26 -0700 (PDT)
+Received: from endeavors.com ([66.126.120.174]) by mta5.snfc21.pbi.net
+    (iPlanet Messaging Server 5.1 (built May  7 2001)) with ESMTP id
+    <0H3900H7P8UF84@mta5.snfc21.pbi.net> for Fork@xent.com; Mon,
+    30 Sep 2002 07:13:27 -0700 (PDT)
+From: Gregory Alan Bolcer <gbolcer@endeavors.com>
+Subject: Re: A moment of silence for the First Amendment (fwd)
+To: Fork@xent.com
+Reply-To: gbolcer@endeavors.com
+Message-Id: <3D9859B9.3A7F80C2@endeavors.com>
+Organization: Endeavors Technology, Inc.
+MIME-Version: 1.0
+X-Mailer: Mozilla 4.79 [en] (X11; U; IRIX 6.5 IP32)
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-Accept-Language: en, pdf
+References: <Pine.LNX.4.44.0209291337100.4723-100000@mlug.missouri.edu>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 30 Sep 2002 07:03:37 -0700
+
+Michael wrote:
+> 
+> http://www.post-gazette.com/columnists/20020905brian5.asp
+
+
+I thought this nekkid URL was going to be about the
+infringement of 1st amendment rights for broadcasters
+and proposed campaign finanice restrictions preventing them
+from making money on advertisements that are deemed
+thinly veiled campaign contributions by some arbitrary
+government board.  As it was posted to "discussion" I
+thought there'd be some.
+
+Instead it's a Post-Gazette column by Brian O'Neill
+lamenting the fact that some people know how to
+fill out a permit so that they can take advantage
+of their right to peaceable assembly.  Obviously
+he's poking fun at the idea that specific groups
+get specific "zones" and that it's not up to the
+police to decide what messages and signs get put into
+what zones to most expediently keep order.  
+
+The problem is that politics have gotten so muddied
+nowadays, that shouting down and unpeaceably disrupting
+political rallies that you don't agree with has become
+common practice.  The courts have constantly ruled
+that there are some restrictions on the first amendment.
+They teach you that your very first year of law school.
+
+I think that given the information as laid out by the story,
+Mr. O'Neill has confused free speech with action.  Free
+speech or even protected speech as practiced by almost 
+every American seems to involve the ability to communicate
+an idea to an unknown audience.  Action involves directing
+a specific comment to a specific well-defined individual or audience
+that has immediate, harmful, and sometimes physical 
+effects that is easily forseeable by any reasonable person. 
+
+I think Bill Neel of Butler needs to go back to school
+as obviously he must have been sleeping in his civics
+class or else they didn't teach civics in mini-guantanamo, OH
+65 years ago.
+
+Greg
+
+

@@ -1,0 +1,79 @@
+From fork-admin@xent.com  Mon Aug 26 22:38:52 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0B06943F9B
+	for <jm@localhost>; Mon, 26 Aug 2002 17:38:52 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 22:38:52 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7QLZHZ10464 for <jm@jmason.org>;
+    Mon, 26 Aug 2002 22:35:17 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 44C6D2941EA; Mon, 26 Aug 2002 13:39:45 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mta7.pltn13.pbi.net (mta7.pltn13.pbi.net [64.164.98.8]) by
+    xent.com (Postfix) with ESMTP id DC24729416D for <fork@xent.com>;
+    Mon, 26 Aug 2002 07:33:07 -0700 (PDT)
+Received: from endeavors.com ([66.126.120.174]) by mta7.pltn13.pbi.net
+    (iPlanet Messaging Server 5.1 (built May  7 2001)) with ESMTP id
+    <0H1G00CUQGIGZW@mta7.pltn13.pbi.net> for fork@xent.com; Mon,
+    26 Aug 2002 07:35:05 -0700 (PDT)
+From: Gregory Alan Bolcer <gbolcer@endeavors.com>
+Subject: Enlightenment
+To: FoRK <fork@spamassassin.taint.org>
+Reply-To: gbolcer@endeavors.com
+Message-Id: <3D6A3A5A.CDCD89BB@endeavors.com>
+Organization: Endeavors Technology, Inc.
+MIME-Version: 1.0
+X-Mailer: Mozilla 4.79 [en] (X11; U; IRIX 6.5 IP32)
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-Accept-Language: en, pdf
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 26 Aug 2002 07:25:30 -0700
+
+I finally let go of my Irix Magic desktop and window manager
+and evaluated several other window managers. Having lost my 10 years
+of customization with my X10 and then X11 desktop at one point
+at UCI, I promised myself that I'd never get attached to
+another WM.  I limped along in the default Gnome desktop, I
+had a few unsuccessful stabs at the Solaris open view 
+desktop, but nothing really stuck.   Because of this along
+with SGI's love of pre-configured, pre-compiled freeware[1],
+I never really made the jump from Irix to Linux either.  
+
+After installing the enlightenment WM, I have to say, I am
+really enlightened.  It's definitely a far cry from the no frills
+first look from previous versions.  It's only on version 0.17,[2]
+but it's a careful balance between simplicity, performance,
+(fun) features, applications, and ease of customization.  The
+number of themes they have on freshmeat is amazing. [3] After
+less than an hour or two of "nesting" I already have almost
+all my menus and controls setup just the way I want. 
+
+I definitely recommend this to any Irix desktop holdouts.  It's
+a great way to refresh your machine SGI without having to bite the
+bullet and rebuild it as a Linux machine. 
+
+Greg
+
+
+
+[1] http://freeware.sgi.com/
+[2] http://www.enlightenment.org/
+[3] http://themes.freshmeat.net/browse/60/?topic_id=60
+http://xent.com/mailman/listinfo/fork
+

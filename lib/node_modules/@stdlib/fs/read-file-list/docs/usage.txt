@@ -1,0 +1,10 @@
+
+Usage: read-file-list [options] <filepath1> <filepath2> ...
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+  --enc, --encoding encoding   Encoding.
+         --flag flag           Flag. Default: 'r'.
+

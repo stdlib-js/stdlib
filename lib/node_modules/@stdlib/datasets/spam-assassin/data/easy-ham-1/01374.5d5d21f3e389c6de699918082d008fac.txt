@@ -1,0 +1,81 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug 29 11:07:57 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C123A44162
+	for <jm@localhost>; Thu, 29 Aug 2002 06:06:00 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:06:00 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7T0AMZ19081 for <jm-sa@jmason.org>; Thu, 29 Aug 2002 01:10:22 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17kCqC-0004QL-00; Wed,
+    28 Aug 2002 17:07:16 -0700
+Received: from sccrmhc01.attbi.com ([204.127.202.61]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17kCpc-00060j-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 28 Aug 2002 17:06:40 -0700
+Received: from localhost ([12.229.66.144]) by sccrmhc01.attbi.com
+    (InterMail vM.4.01.03.27 201-229-121-127-20010626) with ESMTP id
+    <20020829000611.QMMF11061.sccrmhc01.attbi.com@localhost> for
+    <spamassassin-talk@lists.sourceforge.net>; Thu, 29 Aug 2002 00:06:11 +0000
+Subject: Re: [SAtalk] O.T. Habeus -- Why?
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+MIME-Version: 1.0 (Apple Message framework v482)
+From: Brian McNett <bmcnett@radparker.com>
+To: spamassassin-talk@example.sourceforge.net
+Content-Transfer-Encoding: 7bit
+In-Reply-To: <1030567825.3271.TMDA@omega.paradigm-omega.net>
+Message-Id: <135470FA-BAE3-11D6-AD60-003065C182B0@radparker.com>
+X-Mailer: Apple Mail (2.482)
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 28 Aug 2002 17:05:49 -0700
+Date: Wed, 28 Aug 2002 17:05:49 -0700
+
+
+On Wednesday, August 28, 2002, at 01:50  PM, Robin Lynn Frank wrote:
+
+> And if a spammer forges headers???
+
+Header forgeries are trivially easy to detect. The main way that 
+spammers hide their originating IPs is not by forging headers, 
+but by sending through open proxy servers.  It used to be that 
+spammers used open relay mailserver, but these often betray the 
+originating IP, and the proliferation of open relay blocklists, 
+and the introduction of port 25 blocking on the part of many 
+ISPs make open relays unattractive to spammers.
+
+One would think, that the combination of a forged Habeas-SWE, 
+and mail sent through an anonymizing open proxy would be a 
+fairly good indication of spam.  Tracking a spammer to his 
+meatspace location is not as difficult as you might think, once 
+you have legal recourse to subpoena records.
+
+--B
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

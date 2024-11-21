@@ -1,0 +1,93 @@
+From razor-users-admin@lists.sourceforge.net  Mon Sep  2 12:20:30 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D29F343F99
+	for <jm@localhost>; Mon,  2 Sep 2002 07:20:15 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 02 Sep 2002 12:20:16 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7THrQZ23177 for <jm-razor@jmason.org>; Thu, 29 Aug 2002 18:53:26 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17kTE9-0001nO-00; Thu,
+    29 Aug 2002 10:37:05 -0700
+Received: from [208.7.1.205] (helo=everest.mckee.com) by
+    usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17kTDU-0002ED-00 for <razor-users@lists.sourceforge.net>; Thu,
+    29 Aug 2002 10:36:24 -0700
+Received: (qmail 7071 invoked from network); 29 Aug 2002 12:32:22 -0000
+Received: from unknown (HELO belvoir) (208.7.1.202) by 208.7.1.205 with
+    SMTP; 29 Aug 2002 12:32:22 -0000
+Message-Id: <010501c24f82$947b3340$7c640f0a@mfc.corp.mckee.com>
+From: "Fox" <lds0062@cdc.net>
+To: <razor-users@example.sourceforge.net>
+References: <Pine.LNX.4.44.0208201746330.23681-100000@r2-pc.dcs.qmul.ac.uk>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Subject: [Razor-users] Collision of hashes?
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Thu, 29 Aug 2002 13:36:17 -0400
+Date: Thu, 29 Aug 2002 13:36:17 -0400
+
+The following was personal correspondence between two people.  I can't
+fathom how Razor thinks it is spam:
+
+>
+> We are struggling with the decisions related to wether or not to
+> go ahead with our plans to purchase an OCR and forms
+> scanning solution.
+>
+> An outside consultant mentioned that he had heard that not to
+> long ago you folks were considering implementing OCR
+> technology to reduce data entry costs and improve efficiency.
+> If you could let us know if you did move foreward with any
+> plans in that direction it would be of great help to us. May I ask
+> what initialy prompted you to consider OCR? Did you decide it
+> could help your compamy? What software did you go with?
+> Would you recomend we take a look at it?
+> At present we are still planning to continue our research until
+> we decide which OCR system best suits our needs, then
+> implement it quickly.
+>
+> If you are just starting to consider this
+> technology feel free to stay in touch. We will let you know what
+> we decide on and if it works for us.
+>
+> If you cannot advise on this please forward this E-mail to the
+> proper individual in your company who might be able to help with
+> this.
+> Thanks,
+> Jay
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+

@@ -1,0 +1,161 @@
+From sentto-2242572-60402-1038998187-jm=jmason.org@returns.groups.yahoo.com  Wed Dec  4 11:58:13 2002
+Return-Path: <sentto-2242572-60402-1038998187-yyyy=spamassassin.taint.org@returns.groups.yahoo.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id D7B9116F70
+	for <jm@localhost>; Wed,  4 Dec 2002 11:56:40 +0000 (GMT)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 04 Dec 2002 11:56:40 +0000 (GMT)
+Received: from n34.grp.scd.yahoo.com (n34.grp.scd.yahoo.com
+    [66.218.66.102]) by dogma.slashnull.org (8.11.6/8.11.6) with SMTP id
+    gB4AYv810187 for <jm@jmason.org>; Wed, 4 Dec 2002 10:34:57 GMT
+X-Egroups-Return: sentto-2242572-60402-1038998187-yyyy=spamassassin.taint.org@returns.groups.yahoo.com
+Received: from [66.218.66.96] by n34.grp.scd.yahoo.com with NNFMP;
+    04 Dec 2002 10:36:27 -0000
+X-Sender: martin@srv0.ems.ed.ac.uk
+X-Apparently-To: zzzzteana@yahoogroups.com
+Received: (EGP: mail-8_2_3_0); 4 Dec 2002 10:36:27 -0000
+Received: (qmail 16094 invoked from network); 4 Dec 2002 10:36:27 -0000
+Received: from unknown (66.218.66.216) by m13.grp.scd.yahoo.com with QMQP;
+    4 Dec 2002 10:36:27 -0000
+Received: from unknown (HELO haymarket.ed.ac.uk) (129.215.128.53) by
+    mta1.grp.scd.yahoo.com with SMTP; 4 Dec 2002 10:36:26 -0000
+Received: from srv0.ems.ed.ac.uk (srv0.ems.ed.ac.uk [129.215.117.0]) by
+    haymarket.ed.ac.uk (8.12.6/8.12.6) with ESMTP id gB4AaPEq026894 for
+    <forteana@yahoogroups.com>; Wed, 4 Dec 2002 10:36:25 GMT
+Received: from EMS-SRV0/SpoolDir by srv0.ems.ed.ac.uk (Mercury 1.44);
+    4 Dec 02 10:36:25 +0000
+Received: from SpoolDir by EMS-SRV0 (Mercury 1.44); 4 Dec 02 10:36:22 +0000
+Organization: Management School
+To: zzzzteana@yahoogroups.com
+Message-Id: <3DEDDACB.21586.2E25950A@localhost>
+Priority: normal
+X-Mailer: Pegasus Mail for Windows (v4.01)
+Content-Description: Mail message body
+X-Edinburgh-Scanned: at haymarket.ed.ac.uk with MIMEDefang 2.25, Sophie
+    1.40rc1, Sophos Anti-Virus 3.63
+X-Scanned-BY: MIMEDefang 2.25 (www . roaringpenguin . com / mimedefang)
+From: "Martin Adamson" <martin@srv0.ems.ed.ac.uk>
+MIME-Version: 1.0
+Mailing-List: list zzzzteana@yahoogroups.com; contact
+    forteana-owner@yahoogroups.com
+Delivered-To: mailing list zzzzteana@yahoogroups.com
+Precedence: bulk
+List-Unsubscribe: <mailto:zzzzteana-unsubscribe@yahoogroups.com>
+Date: Wed, 4 Dec 2002 10:36:17 -0000
+Subject: [zzzzteana] University boom creates era of sexual tolerance
+Reply-To: zzzzteana@yahoogroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id gB4AYv810187
+
+The Times
+
+ 
+ December 04, 2002 
+ 
+ University boom creates era of sexual tolerance
+
+ By Helen Rumbelow
+ 
+ 
+ 
+ THE boom in university education has led to a sea change in Britain’s
+ tolerance of homosexuality, according to a report. Just under half the people
+ now believe that homosexuality is always or mostly wrong, down from three
+ quarters 15 years ago, according to the British Social Attitudes survey,
+ regarded as one of the best indicators of popular opinion. 
+ 
+ That trend is mirrored by the attitude towards ethnic minorities, with 75 per
+ cent of people now saying they are not at all racially prejudiced, compared
+ with 60 per cent in 1987. 
+ 
+ Geoffrey Evans, a politics professor at Oxford University, decided to focus on
+ what has caused Britain to become more open-minded in a report published
+ today. The study, from the National Centre for Social Research, is based on
+ interviews with a cross-section of 3,500 people. 
+ 
+ Young people are much more tolerant than their elders, with a quarter of
+ twentysomethings believing that homosexual sex is always wrong, compared with
+ two thirds of pensioners. 
+ 
+ But the key to converting a bigot is to send him or her to college, with
+ graduates twice as accepting of homosexuals as those with no GCSEs, and a
+ third less racist. 
+ 
+ That transformation happened no matter what social class the student came from
+ and, with 41 per cent of young people now attending university, it was a
+ powerful social effect, Professor Evans said. 
+ 
+ “Mr Blair’s famous mantra ‘education, education, education’ seems far less
+ consequential now than when first announced in 1997, as Britain struggles with
+ an overburdened health service and the reality that as more and more people
+ get degrees, degrees buy less and less,” he said. 
+ 
+ “But the growth of higher education can provide a bulwark against the
+ undermining of liberal democracy through intolerance,” he added. 
+ 
+ He decided to see whether the tolerance conferred by schooling was just
+ “political correctness” by testing how many civil rights the educated would
+ give to an unattractive minority: white supremacists. 
+ 
+ Again, people scored higher the longer they had spent at school and
+ university, with nearly two thirds of graduates saying that white supremacists
+ should have the right to give television interviews or stand in elections,
+ three times as many as those with no qualifications. 
+ 
+ It is not clear why those with higher education are more tolerant, the report
+ says, adding that it may be simply because university students have increased
+ contact with alternative points of view. 
+ 
+ Professor Evans also looked at whether the young may grow out of their
+ idealism, but found the opposite to be true. 
+ 
+ Thirtysomethings were more than twice as likely to say there was nothing wrong
+ with homosexuality as they were when they were in their early twenties. He
+ said that as these groups of more educated young people replaced the older
+ generation, Britain would become an ever more relaxed place. 
+ 
+ Soft drugs have also grown in widespread acceptability, with more than half
+ the country wanting cannabis to be legalised, compared with a third seven
+ years ago. That is probably because the use of cannabis is now so widespread,
+ with a quarter of those surveyed saying that they had tried it. 
+ 
+ A third of Labour voters, twice as many as Conservatives, had tried the drug,
+ and being young, living in London and having a degree also increased the
+ chances. 
+ 
+ One issue that bucks the trend is hard drugs. Most take a strong position on
+ heroin that has got stronger over the past seven years. Now the proportion of
+ people who believe that heroin dealers should always be prosecuted has crept
+ up to 97 per cent. 
+ 
+ “The views on heroin show that Britain is by no means becoming a liberal
+ free-for-all,” Alison Park, co-director of the study, said. “People are making
+ quite a clear distinction between what they think (of) as right and wrong.” 
+ 
+ On other matters, the survey indicates that almost half those questioned think
+ that most of the social security budget goes on unemployment benefits — in
+ fact, they account for 6 per cent; that union membership has fallen by a fifth
+ in the past 18 years, with just under a third of workers in a union; and that
+ half those questioned oppose secondary school selection. In 1984 the figure
+ was 40 per cent. 
+ 
+ The survey also indicates that 19 per cent of men aged between 25 and 34 live
+ with their parents, twice as many as women.
+ 
+ 
+ 
+
+
+To unsubscribe from this group, send an email to:
+forteana-unsubscribe@egroups.com
+
+ 
+
+Your use of Yahoo! Groups is subject to http://docs.yahoo.com/info/terms/ 
+
+
+

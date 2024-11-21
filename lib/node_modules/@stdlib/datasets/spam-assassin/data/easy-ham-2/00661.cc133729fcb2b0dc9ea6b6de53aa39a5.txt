@@ -1,0 +1,87 @@
+From razor-users-admin@lists.sourceforge.net  Wed Aug 21 00:25:07 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E92F743C32
+	for <jm@localhost>; Tue, 20 Aug 2002 19:25:06 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 21 Aug 2002 00:25:06 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7KNPBZ29482 for <jm-razor@jmason.org>; Wed, 21 Aug 2002 00:25:12 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17hICI-00075m-00; Tue,
+    20 Aug 2002 16:14:02 -0700
+Received: from h-66-166-21-186.snvacaid.covad.net ([66.166.21.186]
+    helo=rover.vipul.net) by usw-sf-list1.sourceforge.net with esmtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17hIBQ-0003jK-00 for
+    <razor-users@lists.sourceforge.net>; Tue, 20 Aug 2002 16:13:08 -0700
+Received: (from vipul@localhost) by rover.vipul.net (8.11.6/8.11.6) id
+    g7KNCp103231; Tue, 20 Aug 2002 16:12:51 -0700
+From: Vipul Ved Prakash <mail@vipul.net>
+To: Matt Bernstein <mb/vipul@dcs.qmul.ac.uk>
+Cc: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] when aggregator?
+Message-Id: <20020820161250.A3211@rover.vipul.net>
+Reply-To: mail@vipul.net
+Mail-Followup-To: Matt Bernstein <mb/vipul@dcs.qmul.ac.uk>,
+	razor-users@lists.sourceforge.net
+References: <Pine.LNX.4.44.0208201746330.23681-100000@r2-pc.dcs.qmul.ac.uk>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <Pine.LNX.4.44.0208201746330.23681-100000@r2-pc.dcs.qmul.ac.uk>;
+    from mb/vipul@dcs.qmul.ac.uk on Tue, Aug 20, 2002 at 05:47:54PM +0100
+X-Operating-System: Linux rover.vipul.net 2.4.18
+X-Privacy: If possible, encrypt your reply.  Key at http://vipul.net/
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Tue, 20 Aug 2002 16:12:51 -0700
+Date: Tue, 20 Aug 2002 16:12:51 -0700
+
+On Tue, Aug 20, 2002 at 05:47:54PM +0100, Matt Bernstein wrote:
+> http://razor.sourceforge.net/docs/whatsnew.html says "Aggregator will be 
+> released with the next major release of Razor2 agents." I was told "soon" 
+> several months ago--has it stalled, or been released? If the former, can I 
+> grab a development snapshot to test for you?
+> 
+> Matt
+
+The aggregator has been pushed back on the priority list because more
+important things cropped up. I can't give you an ETA on it, but it's
+very much on the TODO list.
+
+cheers,
+vipul.
+
+-- 
+
+Vipul Ved Prakash          |   "The future is here, it's just not 
+Software Design Artist     |    widely distributed."
+http://vipul.net/          |              -- William Gibson
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+

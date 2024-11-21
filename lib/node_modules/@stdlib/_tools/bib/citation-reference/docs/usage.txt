@@ -1,0 +1,10 @@
+
+Usage: citation-to-reference [options] <citation_identifier>
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --database filepath   Database filepath.
+         --csl filepath        Citation Style Language filepath.
+

@@ -1,0 +1,67 @@
+From fork-admin@xent.com  Wed Jul 24 01:47:17 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 370C3440CC
+	for <jm@localhost>; Tue, 23 Jul 2002 20:47:17 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 01:47:17 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6O0ij407422 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 01:44:45 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 0D78D2940E4; Tue, 23 Jul 2002 17:34:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from cats.ucsc.edu (cats-mx1.ucsc.edu [128.114.129.36]) by
+    xent.com (Postfix) with ESMTP id 35D4E2940AC for <FoRK@xent.com>;
+    Tue, 23 Jul 2002 17:33:16 -0700 (PDT)
+Received: from Tycho (dhcp-60-118.cse.ucsc.edu [128.114.60.118]) by
+    cats.ucsc.edu (8.10.1/8.10.1) with SMTP id g6O0g9819409 for
+    <FoRK@xent.com>; Tue, 23 Jul 2002 17:42:09 -0700 (PDT)
+From: "Jim Whitehead" <ejw@cse.ucsc.edu>
+To: "FoRK" <FoRK@xent.com>
+Subject: SimPastry
+Message-Id: <AMEPKEBLDJJCCDEJHAMIOENGFCAA.ejw@cse.ucsc.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+Importance: Normal
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4133.2400
+X-Ucsc-Cats-Mailscanner: Found to be clean
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 23 Jul 2002 17:40:26 -0700
+
+http://www.research.microsoft.com/~antr/Pastry/download.htm
+
+Pastry is a generic, scalable and efficient substrate for peer-to-peer
+applications. Pastry nodes form a decentralized, self-organizing and
+fault-tolerant overlay network within the Internet. Pastry provides
+efficient request routing, deterministic object location, and load balancing
+in an application-independent manner. Furthermore, Pastry provides
+mechanisms that support and facilitate application-specific object
+replication, caching, and fault recovery.
+
+----
+
+You can download a Pastry simulator off of this web site.
+
+- Jim
+
+http://xent.com/mailman/listinfo/fork
+
+

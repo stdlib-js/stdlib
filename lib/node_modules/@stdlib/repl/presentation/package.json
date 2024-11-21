@@ -1,0 +1,77 @@
+{
+  "name": "@stdlib/repl/presentation",
+  "version": "0.0.0",
+  "description": "REPL presentation.",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "bin": {
+    "stdlib-repl-presentation": "./bin/cli"
+  },
+  "main": "./lib",
+  "directories": {
+    "data": "./data",
+    "doc": "./docs",
+    "example": "./examples",
+    "lib": "./lib",
+    "scripts": "./scripts"
+  },
+  "scripts": {},
+  "homepage": "https://github.com/stdlib-js/stdlib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stdlib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
+  "keywords": [
+    "stdlib",
+    "repl",
+    "read-eval-print-loop",
+    "eval",
+    "evaluate",
+    "interact",
+    "interactive",
+    "console",
+    "terminal",
+    "shell",
+    "server",
+    "presentation",
+    "pres",
+    "prez",
+    "slideshow",
+    "slides",
+    "present"
+  ],
+  "__stdlib__": {
+    "envs": {
+      "browser": false
+    }
+  }
+}

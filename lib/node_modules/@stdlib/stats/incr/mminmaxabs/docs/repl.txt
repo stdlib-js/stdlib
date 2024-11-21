@@ -1,0 +1,49 @@
+
+{{alias}}( [out,] W )
+    Returns an accumulator function which incrementally computes moving minimum
+    and maximum absolute values.
+
+    The `W` parameter defines the number of values over which to compute moving
+    minimum and maximum absolute values.
+
+    If provided a value, the accumulator function returns an updated moving
+    minimum and maximum. If not provided a value, the accumulator function
+    returns the current moving minimum and maximum.
+
+    As `W` values are needed to fill the window buffer, the first `W-1` returned
+    minimum and maximum values are calculated from smaller sample sizes. Until
+    the window is full, each returned minimum and maximum is calculated from all
+    provided values.
+
+    Parameters
+    ----------
+    out: Array|TypedArray (optional)
+        Output array.
+
+    W: integer
+        Window size.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}( 3 );
+    > var mm = accumulator()
+    null
+    > mm = accumulator( 2.0 )
+    [ 2.0, 2.0 ]
+    > mm = accumulator( -5.0 )
+    [ 2.0, 5.0 ]
+    > mm = accumulator( 3.0 )
+    [ 2.0, 5.0 ]
+    > mm = accumulator( 5.0 )
+    [ 3.0, 5.0 ]
+    > mm = accumulator()
+    [ 3.0, 5.0 ]
+
+    See Also
+    --------
+

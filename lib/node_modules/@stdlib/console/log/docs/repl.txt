@@ -1,0 +1,19 @@
+
+{{alias}}( [data][, ...args] )
+    Outputs a message to the debugger console.
+
+    Parameters
+    ----------
+    data: any (optional)
+        Data to log. If a string, used as the primary message.
+
+    args: ...any (optional)
+        Additional arguments, including substitution values.
+
+    Examples
+    --------
+    > {{alias}}( 'Hello, %s!', 'World' );
+
+    See Also
+    --------
+

@@ -1,0 +1,91 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Mon Aug 26 15:41:16 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7FD8F47C83
+	for <jm@localhost>; Mon, 26 Aug 2002 10:33:48 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 15:33:48 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7NII1Z03061 for <jm-sa@jmason.org>; Fri, 23 Aug 2002 19:18:01 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17iIzY-0005we-00; Fri,
+    23 Aug 2002 11:17:04 -0700
+Received: from firenze.terenet.com.br ([200.255.3.10]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17iIyp-00080m-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Fri, 23 Aug 2002 11:16:19 -0700
+Received: from [200.255.3.123] (marconi.terenet.com.br [200.255.3.30]) by
+    firenze.terenet.com.br (Postfix) with ESMTP id 94D2B33610F for
+    <spamassassin-talk@lists.sourceforge.net>; Fri, 23 Aug 2002 15:16:13 -0300
+    (BRT)
+MIME-Version: 1.0
+X-Sender: lceglia@pop.terenet.com.br
+Message-Id: <p05100307b98c296c91aa@[200.255.3.123]>
+To: spamassassin-talk@example.sourceforge.net
+From: Luiz Felipe Ceglia <lceglia@terenet.com.br>
+Content-Type: text/plain; charset="us-ascii" ; format="flowed"
+Subject: [SAtalk] help with postfix + spamassassin
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Fri, 23 Aug 2002 15:15:06 -0300
+Date: Fri, 23 Aug 2002 15:15:06 -0300
+
+Hi Folks,
+
+I have just installed spamassassin 2.31 in my postfix MTA server.
+
+At first, I would like to test it just in my email account before 
+applying it to the wole site.
+
+I configured just as in the INSTALL file:
+
+	5. Create a .forward...
+	"|IFS=' ' && exec /usr/bin/procmail -f- || exit 75 #user"
+	6. create a .procmailrc
+	:0fw
+	| /usr/bin/spamassassin -c 
+			/etc/mail/spamassassin/rules
+
+But the spams get trought it untouched. When I run it by the hand:
+
+cat sample-spam.txt | /usr/bin/spamassassin -c 
+				/etc/mail/spamassassin/rules
+
+it does tag it as spam and send me the email.
+
+what should I look at?
+
+Thank you,
+
+
+-- 
+Luiz Felipe Ceglia 	-  Staff TereNet
+lceglia@terenet.com.br	-  +55-21-9135-3679
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

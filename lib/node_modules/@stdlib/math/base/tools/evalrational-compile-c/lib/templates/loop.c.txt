@@ -1,0 +1,57 @@
+static const {{dtype}} {{FNAME}}_COEFFICIENTS_P = {
+{{P}}
+};
+static const {{dtype}} {{FNAME}}_COEFFICIENTS_Q = {
+{{Q}}
+};
+
+/**
+* Evaluates a rational function (i.e., the ratio of two polynomials described by the coefficients stored in \\(P\\) and \\(Q\\)).
+*
+* ## Notes
+*
+* -   Coefficients should be sorted in ascending degree.
+* -   The implementation uses [Horner's rule][horners-method] for efficient computation.
+*
+* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
+*
+* @param x    value at which to evaluate the rational function
+* @return     evaluated rational function
+*/
+static {{dtype}} {{fname}}( const {{dtype}} x ) {
+	{{dtype}} s1;
+	{{dtype}} s2;
+	{{dtype}} ax;
+	{{dtype}} ix;
+	int i;
+
+	if ( x == 0.0{{dtype_suffix}} ) {
+		return {{ratio}};
+	}
+	if ( x < 0.0{{dtype_suffix}} ) {
+		ax = -x;
+	} else {
+		ax = x;
+	}
+	if ( ax <= 1.0{{dtype_suffix}} ) {
+		s1 = {{FNAME}}_COEFFICIENTS_P[ {{num_coefficients}} ];
+		s2 = {{FNAME}}_COEFFICIENTS_Q[ {{num_coefficients}} ];
+		for ( i = {{num_coefficients}}-1; i >= 0; i-- ) {
+			s1 *= x;
+			s2 *= x;
+			s1 += {{FNAME}}_COEFFICIENTS_P[ i ];
+			s2 += {{FNAME}}_COEFFICIENTS_Q[ i ];
+		}
+	} else {
+		ix = 1.0{{dtype_suffix}} / x; // use inverse to avoid overflow
+		s1 = {{FNAME}}_COEFFICIENTS_P[ 0 ];
+		s2 = {{FNAME}}_COEFFICIENTS_Q[ 0 ];
+		for ( i = 1; i <= {{num_coefficients}}; i++ ) {
+			s1 *= ix;
+			s2 *= ix;
+			s1 += {{FNAME}}_COEFFICIENTS_P[ i ];
+			s2 += {{FNAME}}_COEFFICIENTS_Q[ i ];
+		}
+	}
+	return s1 / s2;
+}

@@ -1,0 +1,55 @@
+
+{{alias}}( x, μ )
+    Evaluates the natural logarithm of the probability density function (logPDF)
+    for a degenerate distribution with mean `μ`.
+
+    If provided `NaN` for any argument, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    μ: number
+        Constant value of distribution.
+
+    Returns
+    -------
+    out: number
+        Natural logarithm of the PDF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 2.0, 3.0 )
+    -Infinity
+    > y = {{alias}}( 3.0, 3.0 )
+    Infinity
+    > y = {{alias}}( NaN, 0.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN )
+    NaN
+
+
+{{alias}}.factory( μ )
+    Returns a function for evaluating the natural logarithm of the probability
+    density function (logPDF) of a degenerate distribution with mean `μ`.
+
+    Parameters
+    ----------
+    μ: number
+        Constant value of distribution.
+
+    Returns
+    -------
+    logpdf: Function
+        Function to evaluate the natural logarithm of the PDF.
+
+    Examples
+    --------
+    > var mylogPDF = {{alias}}.factory( 10.0 );
+    > var y = mylogPDF( 10.0 )
+    Infinity
+
+    See Also
+    --------
+

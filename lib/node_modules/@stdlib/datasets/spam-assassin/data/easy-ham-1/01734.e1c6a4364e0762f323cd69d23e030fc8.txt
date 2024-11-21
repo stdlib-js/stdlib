@@ -1,0 +1,21 @@
+Return-Path: guido@python.org
+Delivery-Date: Mon Sep  9 16:22:52 2002
+From: guido@python.org (Guido van Rossum)
+Date: Mon, 09 Sep 2002 11:22:52 -0400
+Subject: [Spambayes] spambayes package?
+In-Reply-To: Your message of "Mon, 09 Sep 2002 09:11:16 CDT."
+             <15740.44036.651321.285627@12-248-11-90.client.attbi.com> 
+References: <15738.34711.467756.145336@12-248-11-90.client.attbi.com>
+	<200209080247.g882lNt17033@pcp02138704pcs.reston01.va.comcast.net>
+	<20020909131606.GA1136@cthulhu.gerg.ca>  
+	<15740.44036.651321.285627@12-248-11-90.client.attbi.com> 
+Message-ID: <200209091522.g89FMqL29316@pcp02138704pcs.reston01.va.comcast.net>
+
+> That has the nasty side effect of placing all .py files in the
+> package.  What about obvious executable scripts (like timtest or
+> hammie)?  How can I keep them out of the package?
+
+Why would we care about installing a few extra files, as long as
+they're inside a package?
+
+--Guido van Rossum (home page: http://www.python.org/~guido/)

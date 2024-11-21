@@ -1,0 +1,15 @@
+
+{{alias}}
+    POSIX path delimiter.
+
+    Examples
+    --------
+    > {{alias}}
+    ':'
+    > var PATH = '/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin';
+    > var paths = PATH.split( {{alias}} )
+    [ '/usr/bin', '/bin', '/usr/sbin', '/sbin', '/usr/local/bin' ]
+
+    See Also
+    --------
+

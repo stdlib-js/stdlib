@@ -1,0 +1,38 @@
+
+{{alias}}( y, lambda )
+    Computes the inverse of a one-parameter Box-Cox transformation.
+
+    Parameters
+    ----------
+    y: number
+        Input value.
+
+    lambda: number
+        Power parameter.
+
+    Returns
+    -------
+    b: number
+        Function value.
+
+    Examples
+    --------
+    > var v = {{alias}}( 1.0, 2.5 )
+    ~1.6505
+    > v = {{alias}}( 4.0, 2.5 )
+    ~2.6095
+    > v = {{alias}}( 10.0, 2.5 )
+    ~3.6812
+    > v = {{alias}}( 2.0, 0.0 )
+    ~7.3891
+    > v = {{alias}}( -1.0, 2.5 )
+    NaN
+    > v = {{alias}}( 0.0, -1.0 )
+    1.0
+    > v = {{alias}}( 1.0, NaN )
+    NaN
+    > v = {{alias}}( NaN, 3.1 )
+    NaN
+
+    See Also
+    --------

@@ -1,0 +1,12 @@
+
+global
+    Global namespace object.
+
+    Examples
+    --------
+    > global
+
+    See Also
+    --------
+    require
+

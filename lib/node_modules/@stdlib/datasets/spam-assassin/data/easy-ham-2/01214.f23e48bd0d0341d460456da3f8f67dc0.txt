@@ -1,0 +1,102 @@
+From rpm-list-admin@freshrpms.net  Tue Aug 13 10:19:19 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4649B43C4F
+	for <jm@localhost>; Tue, 13 Aug 2002 05:17:24 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:17:24 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7CIjtb29544 for
+    <jm-rpm@jmason.org>; Mon, 12 Aug 2002 19:45:55 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7CIg1J13690; Mon, 12 Aug 2002 20:42:02
+    +0200
+Received: from smtp012.mail.yahoo.com (smtp012.mail.yahoo.com
+    [216.136.173.32]) by egwn.net (8.11.6/8.11.6/EGWN) with SMTP id
+    g7CIfSJ13606 for <rpm-list@freshrpms.net>; Mon, 12 Aug 2002 20:41:29 +0200
+Received: from usercb247.dsl.pipex.com (HELO yahoo.co.uk)
+    (salimma1@62.190.233.247 with plain) by smtp.mail.vip.sc5.yahoo.com with
+    SMTP; 12 Aug 2002 18:41:27 -0000
+Message-Id: <3D5801F0.5020004@yahoo.co.uk>
+From: Michel Alexandre Salim <salimma1@yahoo.co.uk>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.0rc2)
+    Gecko/20020618 Netscape/7.0b1
+X-Accept-Language: en-gb, en-us, en, in, ms
+MIME-Version: 1.0
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: gentoo 0.11.31 released...
+References: <20020811111136.28aab804.matthias_haase@bennewitz.com>
+    <20020811113740.12aa33f2.matthias_haase@bennewitz.com>
+    <20020812125338.6e376b39.matthias_haase@bennewitz.com>
+    <20020812131220.65ba3bc5.matthias@egwn.net>
+    <20020812172235.4eddb303.matthias_haase@bennewitz.com>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Mon, 12 Aug 2002 19:44:00 +0100
+Date: Mon, 12 Aug 2002 19:44:00 +0100
+
+as root, 'service xinetd reload'
+
+HTH,
+
+Michel
+
+Matthias Haase wrote:
+
+>Hi, Matthias...
+>
+>  
+>
+>>Indeed, I had repackaged a first version, but without fam support (not
+>>released). I'll release the package with fam support right now ;-)
+>>    
+>>
+>
+>...your package doesn't require a special buildlevel for the installed fam
+>rpm, it checks for libfam.* libs.
+>In result, I could do an upgrade of gentoo for two older boxes here in our
+>company - still RH 7.1.
+>I don't know about the 'cleanless' of this (compiling mostly the latest
+>sources on our devel box myself).
+>
+>Because non default fam rpm for RH 7.1 exists, I have to use the
+>fam-2.6.4-11.i386.rpm for RH 7.2 instead.
+>No probs. But the scripts inside this rpm doesn't restart xinetd on the
+>fly, I have currently started fam by hand.
+>
+>The sgi_fam script exists in /etc/xinetd.d, so I hope, that fam is up and
+>running on the next boot too.
+>
+>  
+>
+
+
+__________________________________________________
+Do You Yahoo!?
+Everything you'll ever need on one web page
+from News and Sport to Email and Music Charts
+http://uk.my.yahoo.com
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

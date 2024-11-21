@@ -1,0 +1,19 @@
+
+{{alias}}()
+    Returns the numeric user identity of the calling process.
+
+    The function only returns a user identity on POSIX platforms. For all other
+    platforms (e.g., Windows and Android), the function returns `null`.
+
+    Returns
+    -------
+    id: integer|null
+        Numeric user identity.
+
+    Examples
+    --------
+    > var uid = {{alias}}()
+
+    See Also
+    --------
+

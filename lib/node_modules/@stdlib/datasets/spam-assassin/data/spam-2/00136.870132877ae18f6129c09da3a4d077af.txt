@@ -1,0 +1,138 @@
+From ngdgpfwxsw@[1086695621] [pi]  Sun Aug  5 09:44:26 2001
+Return-Path: <ngdgpfwxsw@[1086695621] [pi]>
+Delivered-To: yyyy@netnoteinc.com
+Received: from aquela1.cacoc.g12.br (unknown [200.199.102.94]) by
+    mail.netnoteinc.com (Postfix) with ESMTP id 6072F11410E for
+    <jm@netnoteinc.com>; Sun,  5 Aug 2001 08:44:22 +0000 (Eire)
+Received: from me ([200.199.79.193]) by aquela1.cacoc.g12.br (8.9.3/8.9.3)
+    with ESMTP id GAA31902; Sun, 5 Aug 2001 06:01:28 -0300
+Date: Sun, 5 Aug 2001 06:01:28 -0300
+From: ngdgpfwxsw@[1086695621], [pi]@netnoteinc.com
+Message-Id: <200108050901.GAA31902@aquela1.cacoc.g12.br>
+Subject: Join the fight to quality.  Make 36 Annually secured
+Sender: ngdgpfwxsw@[1086695621] [pi]
+To: undisclosed-recipients:;
+
+
+<head>
+<title></title>
+</head>
+
+<body bgcolor="#000000" text="#FFFF00">
+
+<p align="center"><font size="4"><b>FINANCIAL INVESTMENT CENTER<br>
+INSIDER NEWS&nbsp;<br>
+<br>
+</b>
+</font>
+<i><font color="#FF0000">See bottom of page for removal instructions.</font></i><font size="4"><b>
+<br>
+</b>
+<br>
+</font>
+Stock Market has you concerned? Join the flight to quality. Make over 25% annually, paid monthly by Factoring Account Receivables.&nbsp;<br>
+Discover what banks have known for decades. Harness the power and liquidity of Factoring – Collateralized Account Receivables.&nbsp;<br>
+<br>
+<br>
+A safe haven to make strong returns, while stock markets are volatile.&nbsp;<br>
+Please Be over the age of 18. Serious inquiries only.&nbsp;<br>
+<br>
+<br>
+<br>
+<br>
+For A Free In-Depth Information Package. Please fill out the form below.<b><br>
+<font size="4">
+<br>
+<br>
+CONTACT ME<br>
+</p>
+
+<form action="http://www.aquinas.com/cgi-bin/formmail.pl" method=POST>
+<input type=hidden name="subject" value="Invest Lead">
+<input type=hidden name="recipient" value="craigman3us@yahoo.com">
+
+  <div align="center">
+<center>
+<table border="0" width="89%" cellspacing="0" cellpadding="5">
+  <tr>
+<td width="42%" align="right"<i>First
+  Name:</td>
+<td width="58%"><input type="text" name="firstname" size="20"></td>
+  </tr>
+  <tr>
+<td width="42%" align="right"<i>Last
+  Name:</i></td>
+<td width="58%"><input type="text" name="lastname" size="25"></td>
+  </tr>
+  <tr>
+<td width="42%" align="right"<i>Address:</i></td>
+<td width="58%"><input type="text" name="address" size="30"></td>
+  </tr>
+  <tr>
+<td width="42%" align="right"<i>City:</i></td>
+<td width="58%"><input type="text" name="city" size="25"></td>
+  </tr>
+  <tr>
+<td width="42%" align="right"<i>State:</i></td>
+<td width="58%"><input type="text" name="state" size="6"></td>
+  </tr>
+  <tr>
+<td width="42%" align="right"<i>Zip
+  Number:</i></td>
+<td width="58%"><input type="text" name="zipnumber" size="12"></td>
+  </tr>
+  <tr>
+<td width="42%" align="right"<i>Country:</i></td>
+<td width="58%"><input type="text" name="country" size="25"></td>
+  </tr>
+  <tr>
+<td width="42%" align="right"<i>Home
+  Number:</i></td>
+<td width="58%"><input type="text" name="homenumber" size="16"></td>
+  </tr>
+  <tr>
+<td width="42%" align="right"<i>Business
+  Number:</i></td>
+<td width="58%"><input type="text" name="businessnumber" size="16"></td>
+  </tr>
+  <tr>
+<td width="42%" align="right"<i>Email
+  Address:</i></td>
+<td width="58%"><input type="text" name="emailaddress" size="25"></td>
+  </tr>
+  <tr>
+<td width="42%" align="right"<i>Best
+  time to call:</i></td>
+<td width="58%"><input type="text" name="besttocall" size="15"></td>
+  </tr>
+  <tr>
+<td width="42%"></td>
+<td width="58%"><input type="submit" value="Submit" name="B1"><input type="reset" value="Reset" name="B2"></td>
+  </tr>
+</table>
+</center>
+  </div>
+<p align="center">&nbsp;</p>
+
+</form>
+</font></b>
+<form action="http://www.aquinas.com/cgi-bin/formmail.pl" method=POST>
+<input type=hidden name="subject" value="Remove">
+<input type=hidden name="recipient" value="craigman3us@yahoo.com">
+  <b>
+<font size="4">
+<p align="center">To Be Removed:</p>
+
+<table border="0" width="89%" cellspacing="0" cellpadding="5">
+  <tr>
+<td width="42%" align="right"<i>Email
+  Address:</i></td>
+<td width="58%"><input type="text" name="emailaddress" size="25"> <b>
+<font size="4">
+<input type="submit" value="Submit" name="B3"></td>
+  </tr>
+</table>
+  </form>
+
+
+

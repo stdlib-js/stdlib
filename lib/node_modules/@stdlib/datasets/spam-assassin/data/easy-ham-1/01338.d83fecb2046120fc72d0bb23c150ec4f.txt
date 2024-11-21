@@ -1,0 +1,104 @@
+From brian@unearthed.com  Wed Aug 28 10:56:21 2002
+Return-Path: <brian@unearthed.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0C9E044156
+	for <jm@localhost>; Wed, 28 Aug 2002 05:56:15 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 28 Aug 2002 10:56:15 +0100 (IST)
+Received: from mx-out.daemonmail.net (mx-out.daemonmail.net
+    [216.104.160.37]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7RIteZ21552 for <jm@jmason.org>; Tue, 27 Aug 2002 19:55:41 +0100
+Received: from mx0.emailqueue.net (localhost.daemonmail.net [127.0.0.1])
+    by mx-out.daemonmail.net (8.9.3/8.9.3) with SMTP id LAA11209;
+    Tue, 27 Aug 2002 11:55:49 -0700 (PDT) (envelope-from brian@unearthed.com)
+Received: from brianmay (brianmay [64.52.135.194]) by mail.unearthed.com
+    with ESMTP id bu207z82 Tue, 27 Aug 2002 11:55:48 -0700 (PDT)
+Message-Id: <001101c24dfb$61b7a2f0$8801020a@brianmay>
+From: "Brian May" <brian@unearthed.com>
+To: "Justin Mason" <yyyy@spamassassin.taint.org>,
+	"Jason R. Mastaler" <jason-exp-1031164464.7f11b3@mastaler.com>
+Cc: <spamassassin-talk@example.sourceforge.net>, <tmda-users@tmda.net>
+References: <20020827144541.3236B43F99@phobos.labs.netnoteinc.com>
+    <hhvg5wkv68.fsf@hrothgar.la.mastaler.com>
+Subject: Re: [SAtalk] Re: patent on TMDA-like system
+Date: Tue, 27 Aug 2002 11:55:58 -0700
+Organization: UnEarthed.Com
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+
+>>From tmda.net/history.html:
+
+The first release of TMDA in April 2001 was essentially a rewrite of TMS in
+Python, <snip>
+
+April 2001 is earlier than July 26, 2001... prior art..
+
+from http://tmda.net/releases/old/
+ Parent Directory        19-Aug-2002 16:14      -
+ README.MD5SUM           19-Aug-2002 16:14     4k
+ tmda-0.01.tgz           22-Apr-2001 15:59    11k
+ tmda-0.02.tgz           26-Apr-2001 12:06    12k
+ tmda-0.02.txt           26-Apr-2001 12:50     1k
+ tmda-0.10.tgz           27-Apr-2001 21:14    39k
+ tmda-0.10.txt           30-Apr-2001 11:36     3k
+ tmda-0.11.tgz           02-May-2001 17:17    38k
+ tmda-0.11.txt           02-May-2001 17:06     3k
+ tmda-0.12.tgz           10-May-2001 19:50    39k
+ tmda-0.12.txt           10-May-2001 19:48     1k
+ tmda-0.13.tgz           17-May-2001 15:53    39k
+ tmda-0.13.txt           17-May-2001 15:57     2k
+ tmda-0.14.tgz           24-May-2001 16:43    46k
+ tmda-0.14.txt           24-May-2001 16:40     4k
+ tmda-0.15.tgz           28-May-2001 15:20    47k
+ tmda-0.15.txt           28-May-2001 15:20     1k
+ tmda-0.20.tgz           06-Jun-2001 17:52    49k
+ tmda-0.20.txt           06-Jun-2001 18:46     6k
+ tmda-0.21.tgz           18-Jun-2001 18:32    51k
+ tmda-0.21.txt           18-Jun-2001 18:31     2k
+
+TMDA was already at 0.21 8 days before filing for a patent..
+
+----- Original Message -----
+From: "Jason R. Mastaler" <jason-exp-1031164464.7f11b3@mastaler.com>
+To: "Justin Mason" <yyyy@spamassassin.taint.org>
+Cc: <spamassassin-talk@example.sourceforge.net>; <tmda-users@tmda.net>
+Sent: Tuesday, August 27, 2002 11:34 AM
+Subject: [SAtalk] Re: patent on TMDA-like system
+
+
+jm@jmason.org (Justin Mason) writes:
+
+> Sounds a lot like TMDA to me. :( Filing date is July 26, 2001,
+> granted May 16, 2002.
+>
+> TMDAers, have you seen this before?
+
+No, but thanks for pointing it out.
+
+> I'd presume TMDA is prior art, but still, it could be troublesome...
+
+Yup.  TMDA's core functionality was fully established before even the
+filing date.
+
+Anyone with experience in this area have a recommendation on whether
+this should be pursued or not?
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+
+

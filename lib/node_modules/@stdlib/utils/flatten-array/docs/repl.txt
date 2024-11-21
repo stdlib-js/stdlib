@@ -1,0 +1,79 @@
+
+{{alias}}( arr[, options] )
+    Flattens an array.
+
+    Parameters
+    ----------
+    arr: ArrayLikeObject
+        Input array.
+
+    options: Object (optional)
+        Options.
+
+    options.depth: integer (optional)
+        Maximum depth to flatten.
+
+    options.copy: boolean (optional)
+        Boolean indicating whether to deep copy array elements. Default: false.
+
+    Returns
+    -------
+    out: Array
+        Flattened array.
+
+    Examples
+    --------
+    > var arr = [ 1, [ 2, [ 3, [ 4, [ 5 ], 6 ], 7 ], 8 ], 9 ];
+    > var out = {{alias}}( arr )
+    [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
+
+    // Set the maximum depth:
+    > arr = [ 1, [ 2, [ 3, [ 4, [ 5 ], 6 ], 7 ], 8 ], 9 ];
+    > out = {{alias}}( arr, { 'depth': 2 } )
+    [ 1, 2, 3, [ 4, [ 5 ], 6 ], 7, 8, 9 ]
+    > var bool = ( arr[ 1 ][ 1 ][ 1 ] === out[ 3 ] )
+    true
+
+    // Deep copy:
+    > arr = [ 1, [ 2, [ 3, [ 4, [ 5 ], 6 ], 7 ], 8 ], 9 ];
+    > out = {{alias}}( arr, { 'depth': 2, 'copy': true } )
+    [ 1, 2, 3, [ 4, [ 5 ], 6 ], 7, 8, 9 ]
+    > bool = ( arr[ 1 ][ 1 ][ 1 ] === out[ 3 ] )
+    false
+
+
+{{alias}}.factory( dims[, options] )
+    Returns a function for flattening arrays having specified dimensions.
+
+    The returned function does not validate that input arrays actually have the
+    specified dimensions.
+
+    Parameters
+    ----------
+    dims: ArrayLike<integer>
+        Dimensions.
+
+    options: Object (optional)
+        Options.
+
+    options.copy: boolean (optional)
+        Boolean indicating whether to deep copy array elements. Default: false.
+
+    Returns
+    -------
+    fcn: Function
+        Flatten function.
+
+    Examples
+    --------
+    > var flatten = {{alias}}.factory( [ 2, 2 ], {
+    ...     'copy': false
+    ... });
+    > var out = flatten( [ [ 1, 2 ], [ 3, 4 ] ] )
+    [ 1, 2, 3, 4 ]
+    > out = flatten( [ [ 5, 6 ], [ 7, 8 ] ] )
+    [ 5, 6, 7, 8 ]
+
+    See Also
+    --------
+

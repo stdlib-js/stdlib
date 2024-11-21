@@ -1,0 +1,76 @@
+From ilug-admin@linux.ie  Wed Aug 21 12:30:42 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D22A443C32
+	for <jm@localhost>; Wed, 21 Aug 2002 07:30:40 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 21 Aug 2002 12:30:40 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7LBVGZ21990 for
+    <jm-ilug@jmason.org>; Wed, 21 Aug 2002 12:31:16 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA25996; Wed, 21 Aug 2002 12:30:39 +0100
+Received: from corvil.com. (k100-159.bas1.dbn.dublin.eircom.net
+    [159.134.100.159]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id MAA25970
+    for <ilug@linux.ie>; Wed, 21 Aug 2002 12:30:32 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host k100-159.bas1.dbn.dublin.eircom.net
+    [159.134.100.159] claimed to be corvil.com.
+Received: from corvil.com (pixelbeat.local.corvil.com [172.18.1.170]) by
+    corvil.com. (8.12.5/8.12.5) with ESMTP id g7LBUVn4029448; Wed,
+    21 Aug 2002 12:30:31 +0100 (IST) (envelope-from padraig.brady@corvil.com)
+Message-Id: <3D6379C4.3070201@corvil.com>
+Date: Wed, 21 Aug 2002 12:30:12 +0100
+From: Padraig Brady <padraig.brady@corvil.com>
+Organization: Corvil Networks
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:0.9.9) Gecko/20020408
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: Declan Grady <Declan.Grady@nuvotem.com>
+Cc: Irish Linux Users Group <ilug@linux.ie>
+Subject: Re: [ILUG] relating data from 2 ascii files ?
+References: <20020821112629.GA7858@nuvotem.com>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Declan Grady wrote:
+> Hi folks,
+> Apologies if this is the wrong place to ask, but I am trying to do on my linux desktop what I used to do with some other os software.
+> 
+> I'm trying to use a combination of some bash scripts and some perl to generate reports from a couple of ascii files. Eventually these will run on a server and get the files by ftp, analyse them and mail me the results.
+> 
+> As I'm no programmer (by any stretch of the imagination !) I'm getting a bit lost.
+> 
+> I can deal with single files (eventually) using grep, egrep, awk, and a nice perl script called 'total' which i found while googling.
+> 
+> Problem now is that the data I'm trying to report on is split between two isam files.
+> 
+> File 1 contains
+> Docket Number, Line Number, Item, quantity, price, duedate
+> 
+> File 2 contains
+> Docket Number, Customer, Shipping date, invoice number.
+> 
+> To make some sense of the data, I need to relate the Docket number between the 2 files, so that I can generate a report by customer.
+> 
+> My first reaction is to look at mysql, and import the ascii data into 2 tables so that I can use sql queries.
+> 
+> Is this the way to go, or should I delve a bit deeper into perl ?
+> 
+> Any advice welcome.
+
+man join
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

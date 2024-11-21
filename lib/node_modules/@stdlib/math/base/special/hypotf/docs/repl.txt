@@ -1,0 +1,31 @@
+
+{{alias}}( x, y )
+    Computes the hypotenuse avoiding overflow and underflow (single-precision).
+
+    If either argument is `NaN`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        First number.
+
+    y: number
+        Second number.
+
+    Returns
+    -------
+    out: number
+        Hypotenuse.
+
+    Examples
+    --------
+    > var h = {{alias}}( -5.0, 12.0 )
+    13.0
+    > h = {{alias}}( NaN, 12.0 )
+    NaN
+    > h = {{alias}}( -0.0, -0.0 )
+    0.0
+
+    See Also
+    --------
+

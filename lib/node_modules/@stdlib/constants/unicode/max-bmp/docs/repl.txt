@@ -1,0 +1,12 @@
+
+{{alias}}
+    Maximum Unicode code point in the Basic Multilingual Plane (BMP).
+
+    Examples
+    --------
+    > {{alias}}
+    65535
+
+    See Also
+    --------
+

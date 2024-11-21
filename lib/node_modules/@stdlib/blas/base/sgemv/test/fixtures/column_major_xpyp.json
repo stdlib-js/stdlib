@@ -1,0 +1,20 @@
+{
+  "order": "column-major",
+  "trans": "no-transpose",
+  "M": 4,
+  "N": 2,
+  "alpha": 0.5,
+  "beta": 0.5,
+  "lda": 4,
+  "A": [ 1.0, 3.0, 5.0, 7.0, 2.0, 4.0, 6.0, 8.0],
+  "x": [ 2.0, 1.0 ],
+  "y": [ 1.0, 2.0, 3.0, 4.0 ],
+  "strideA1": 1,
+  "strideA2": 4,
+  "offsetA": 0,
+  "strideX": 1,
+  "offsetX": 0,
+  "strideY": 1,
+  "offsetY": 0,
+  "y_out": [ 2.5, 6.0, 9.5, 13.0 ]
+}

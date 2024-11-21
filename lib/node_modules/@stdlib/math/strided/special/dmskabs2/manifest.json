@@ -1,0 +1,75 @@
+{
+	"options": {
+		"task": "build"
+	},
+	"fields": [
+		{
+			"field": "src",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "include",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "libraries",
+			"resolve": false,
+			"relative": false
+		},
+		{
+			"field": "libpath",
+			"resolve": true,
+			"relative": false
+		}
+	],
+	"confs": [
+		{
+			"task": "build",
+			"src": [
+				"./src/dmskabs2.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [],
+			"libpath": [],
+			"dependencies": [
+				"@stdlib/math/base/special/abs2",
+				"@stdlib/strided/base/dmskmap",
+				"@stdlib/strided/napi/dmskmap"
+			]
+		},
+		{
+			"task": "examples",
+			"src": [
+				"./src/dmskabs2.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [],
+			"libpath": [],
+			"dependencies": [
+				"@stdlib/math/base/special/abs2",
+				"@stdlib/strided/base/dmskmap"
+			]
+		},
+		{
+			"task": "benchmark",
+			"src": [
+				"./src/dmskabs2.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [],
+			"libpath": [],
+			"dependencies": [
+				"@stdlib/math/base/special/abs2",
+				"@stdlib/strided/base/dmskmap"
+			]
+		}
+	]
+}

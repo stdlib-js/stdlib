@@ -1,0 +1,236 @@
+From rpm-list-admin@freshrpms.net  Tue Jul 30 21:45:01 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6C1344407C
+	for <jm@localhost>; Tue, 30 Jul 2002 16:45:00 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 30 Jul 2002 21:45:00 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6UKiO217740 for
+    <jm-rpm@jmason.org>; Tue, 30 Jul 2002 21:44:24 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6UKM6816583; Tue, 30 Jul 2002 22:22:10
+    +0200
+Received: from smtp2.home.se (smtp2.home.se [195.66.35.201]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6UKLZ815769 for
+    <rpm-list@freshrpms.net>; Tue, 30 Jul 2002 22:21:35 +0200
+Received: from dator1 mangro@home.se [213.65.67.21] by smtp2.home.se with
+    Novell NIMS $Revision:   2.88.1.1  $ on Novell NetWare; Tue,
+    30 Jul 2002 22:14:57 +0200
+From: "Manfred Grobosch" <mangro@home.se>
+To: "Rpm-List" <rpm-zzzlist@freshrpms.net>
+Subject: Installing RPM
+Message-Id: <FEEMLEDEFAFMCIAIMGPJGENPCCAA.mangro@home.se>
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+    boundary="----=_NextPart_000_0002_01C23817.94245ED0"
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+X-MS-Tnef-Correlator: <FEEMLEDEFAFMCIAIMGPJGENPCCAA.mangro@home.se>
+Importance: Normal
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+X-Reply-To: <mangro@home.se>
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Tue, 30 Jul 2002 22:22:24 +0200
+Date: Tue, 30 Jul 2002 22:22:24 +0200
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0002_01C23817.94245ED0
+Content-Type: text/plain;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+
+I would like to install RPM itself. I have tried to get the information by
+visiting www.rpm.org <http://www.rpm.org>  and the related links they give
+but they all seems to assume that RPM already is installed.
+I have a firewall based on linux-2.2.20 (Smoothwall) for private use.
+I would like to install the RPM package/program but there is no information
+how to do this from scratch.
+Found this site and hopefully some have the knowledge.
+Best regards Manfred Grobosch
+
+
+------=_NextPart_000_0002_01C23817.94245ED0
+Content-Type: application/ms-tnef;
+	name="winmail.dat"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment;
+	filename="winmail.dat"
+
+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
+AHSPYY0wOvwAL4/hjJ+No4/wi+EmAP+AEnsg6wDpIIFD8/CGpzEx///Q9GGHj3oLhbmR44F/lA9/
+g543sX5DJmC5onsyJvBz735Cf2Ay0H1RYj0Am3R8Et8+MLlwm2F7sKDwc/3Qe4H/MbBD8HxSOYAm
+YDHAf2DywPt7xn2wLulxbtF9BlRgtSD9JmB3fBI+cD4wRmB/IYASPjN0YJefmK93RPsxdXiNugAu
+pUECIChTbTsRmmihEimgwDFwIHAXUP52QmI+IZ/GltKiz6Pfet/Pe+V+UnxS+pFrYX4Qp//7qQ93
+Yi+sz63fd2KmwEMD/68/sE+EQ5wlJmCe8v9AfotfNpF7kivAfkGfAWZC8G3fnOBDkO6Q/pCfxkYJ
+0ZpCv58Bf6GgkZoxLWAnsGYvUP87cJzgt0BCgH00fmEnAp+Rs34Qn8ZCZYEhJmBnbuFdm2BNN7C3
+IH2xR0LwYv8woP6Qp4Zuw29/cI9xn3Kvf3O1luTvAZd/st+p1qeGfQIAx1ALAAGACCAGAAAAAADA
+AAAAAAAARgAAAAADhQAAAAAAAAMAA4AIIAYAAAAAAMAAAAAAAABGAAAAABCFAAAAAAAAAwAHgAgg
+BgAAAAAAwAAAAAAAAEYAAAAAUoUAAH1uAQAeAAmACCAGAAAAAADAAAAAAAAARgAAAABUhQAAAQAA
+AAQAAAA5LjAACwANgAggBgAAAAAAwAAAAAAAAEYAAAAAgoUAAAEAAAALADqACCAGAAAAAADAAAAA
+AAAARgAAAAAOhQAAAAAAAAMAPIAIIAYAAAAAAMAAAAAAAABGAAAAABGFAAAAAAAAAwA9gAggBgAA
+AAAAwAAAAAAAAEYAAAAAGIUAAAAAAAALAFKACCAGAAAAAADAAAAAAAAARgAAAAAGhQAAAAAAAAMA
+U4AIIAYAAAAAAMAAAAAAAABGAAAAAAGFAAAAAAAAAgH4DwEAAAAQAAAAp2s48mMWVEy0NPc3EPql
+7wIB+g8BAAAAEAAAAKdrOPJjFlRMtDT3NxD6pe8CAfsPAQAAAKUAAAAAAAAAOKG7EAXlEBqhuwgA
+KypWwgAAUFNUUFJYLkRMTAAAAAAAAAAATklUQfm/uAEAqgA32W4AAABDOlxEb2N1bWVudHMgYW5k
+IFNldHRpbmdzXEFkbWluaXN0cmF09nJcTG9rYWxhIGluc3TkbGxuaW5nYXJcQXBwbGljYXRpb24g
+RGF0YVxNaWNyb3NvZnRcT3V0bG9va1xvdXRsb29rLnBzdAAAAAADAP4PBQAAAAMADTT9NwAAAgF/
+AAEAAAAuAAAAPEZFRU1MRURFRkFGTUNJQUlNR1BKR0VOUENDQUEubWFuZ3JvQGhvbWUuc2U+AAAA
+AwAGEK7BhA0DAAcQewEAAAMAEBAAAAAAAwAREAAAAAAeAAgQAQAAAGUAAABJV09VTERMSUtFVE9J
+TlNUQUxMUlBNSVRTRUxGSUhBVkVUUklFRFRPR0VUVEhFSU5GT1JNQVRJT05CWVZJU0lUSU5HV1dX
+UlBNT1JHPEhUVFA6Ly9XV1dSUE1PUkdBTkRUSEVSAAAAAIGM
+
+------=_NextPart_000_0002_01C23817.94245ED0--
+
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

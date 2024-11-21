@@ -1,0 +1,55 @@
+From ilug-admin@linux.ie  Tue Aug 13 13:22:51 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 56D2B43C32
+	for <jm@localhost>; Tue, 13 Aug 2002 08:22:51 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 13:22:51 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7DCL9e31125 for
+    <jm-ilug@jmason.org>; Tue, 13 Aug 2002 13:21:09 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA13251; Tue, 13 Aug 2002 13:20:37 +0100
+Received: from lotse.makalumedia.com (moca.makalumedia.com
+    [213.157.15.53]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id NAA13216
+    for <ilug@linux.ie>; Tue, 13 Aug 2002 13:20:31 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host moca.makalumedia.com
+    [213.157.15.53] claimed to be lotse.makalumedia.com
+Received: from [192.168.1.103] (HELO bilbo.magicgoeshere.com) by
+    lotse.makalumedia.com (CommuniGate Pro SMTP 3.5.7) with ESMTP id 781577
+    for ilug@linux.ie; Tue, 13 Aug 2002 14:20:00 +0200
+Received: by bilbo.magicgoeshere.com (Postfix, from userid 501) id
+    A274C5B3AC; Tue, 13 Aug 2002 12:22:14 +0100 (BST)
+Date: Tue, 13 Aug 2002 12:22:14 +0100
+From: Niall O Broin <niall@linux.ie>
+To: ilug@linux.ie
+Message-Id: <20020813112214.GA5163@bilbo.makalumedia.com>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: Niall O Broin <niall@linux.ie>, ilug@linux.ie
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.3.27i
+Subject: [ILUG] Secure remote file access
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+What are the best options available on Linux ? SFTP ? WebDAV ? Something
+else ? Linux servers - Linux and Mac OS-X clients.
+
+
+
+Niall
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

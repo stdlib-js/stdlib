@@ -1,0 +1,86 @@
+From fork-admin@xent.com  Wed Jul 24 02:17:14 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 435E0440CC
+	for <jm@localhost>; Tue, 23 Jul 2002 21:17:10 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 02:17:10 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6O1Em408840 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 02:14:48 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 5B5E4294109; Tue, 23 Jul 2002 18:04:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from cats.ucsc.edu (cats-mx1.ucsc.edu [128.114.129.36]) by
+    xent.com (Postfix) with ESMTP id EBC1B2940B3 for <FoRK@xent.com>;
+    Tue, 23 Jul 2002 18:03:39 -0700 (PDT)
+Received: from Tycho (dhcp-63-177.cse.ucsc.edu [128.114.63.177]) by
+    cats.ucsc.edu (8.10.1/8.10.1) with SMTP id g6O1CK823619; Tue,
+    23 Jul 2002 18:12:20 -0700 (PDT)
+From: "Jim Whitehead" <ejw@cse.ucsc.edu>
+To: "Owen Byrne" <owen@permafrost.net>, <FoRK@xent.com>
+Subject: RE: [NYT] Real Source
+Message-Id: <AMEPKEBLDJJCCDEJHAMIEENJFCAA.ejw@cse.ucsc.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+Importance: Normal
+In-Reply-To: <3D3DFB7A.2050707@permafrost.net>
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4133.2400
+X-Ucsc-Cats-Mailscanner: Found to be clean
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 23 Jul 2002 18:10:35 -0700
+
+
+> Well, just to take this thread off topic - does anyone know what's
+> involved in serving streaming video? I assume that
+>  the only practical alternatives are MS and Real, and that it's likely
+> to cost some $$$ for the software.
+
+A quick Google search turns up:
+
+http://developer.apple.com/darwin/projects/streaming/index.html
+Darwin streaming media server
+
+http://mpeg4ip.sourceforge.net/index.php
+MPEG4IP: Open Source, Open Standards, Open Streaming
+
+MPEG4IP provides an end-to-end system to explore MPEG-4 multimedia. The
+package includes many existing open source packages and the "glue" to
+integrate them together. This is a tool for streaming video and audio that
+is standards-oriented and free from proprietary protocols and extensions.
+
+Provided are an MPEG-4 AAC audio encoder, an MP3 encoder, two MPEG-4 video
+encoders, an MP4 file creator and hinter, an IETF standards-based streaming
+server, and an MPEG-4 player that can both stream and playback from local
+file.
+
+Our development is focused on the Linux platform, and has been ported to
+Windows, Solaris, FreeBSD, BSD/OS and Mac OS X, but it should be relatively
+straight-forward to use on other platforms. Many of the included packages
+are multi-platform already.
+
+
+Both sound interesting, and low $$.
+
+- Jim
+
+http://xent.com/mailman/listinfo/fork
+
+

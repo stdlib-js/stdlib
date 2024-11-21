@@ -1,0 +1,48 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Sun Sep  8 19:28:02 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Sun, 08 Sep 2002 14:28:02 -0400
+Subject: [Spambayes] testing results
+In-Reply-To: <20020908172113.GA26741@glacier.arctrix.com>
+Message-ID: <LNBBLJKPBEHFEDALKOLCOEPHBCAB.tim.one@comcast.net>
+
+[Neil Schemenauer]
+> These results are from timtest.py.  I've got three sets of spam and ham
+> with about 500 messages in each set.  Here's what happens when I enable
+> my latest "received" header code:
+
+If you've still got the summary files, please cvs up and try running cmp.py
+again -- in the process of generalizing cmp.py, you managed to make it skip
+half the lines <wink>.  That is, if you've got N sets, you *should* get
+N**2-N pairs for each error rate.  You have 3 sets, so you should get 6
+pairs of f-n rates and 6 pairs of f-p rates.
+
+>     false positive percentages
+>         0.187  0.187  tied
+>         0.749  0.562  won    -24.97%
+>         0.780  0.585  won    -25.00%
+>
+>     won   2 times
+>     tied  1 times
+>     lost  0 times
+>
+>     total unique fp went from 19 to 17
+>
+>     false negative percentages
+>         2.072  1.318  won    -36.39%
+>         2.448  1.318  won    -46.16%
+>         0.574  0.765  lost   +33.28%
+>
+>     won   2 times
+>     tied  0 times
+>     lost  1 times
+>
+>     total unique fn went from 43 to 28
+
+Looks promising!  Getting 6 lines of output for each block would give a
+clearer picture, of course.
+
+> Anthony's header counting code does not seem to help.
+
+It helps my test data too much <wink/sigh>.
+

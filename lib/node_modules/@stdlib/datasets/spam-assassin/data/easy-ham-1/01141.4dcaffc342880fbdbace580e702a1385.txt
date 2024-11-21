@@ -1,0 +1,157 @@
+From exmh-users-admin@redhat.com  Mon Sep 30 13:36:20 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 70E6C16F03
+	for <jm@localhost>; Mon, 30 Sep 2002 13:36:19 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 30 Sep 2002 13:36:19 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8T7vUg03078 for
+    <jm-exmh@jmason.org>; Sun, 29 Sep 2002 08:57:30 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 8BCAD3EC68; Sun, 29 Sep 2002
+    03:58:02 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id DF6BE3EC37
+    for <exmh-users@listman.redhat.com>; Sun, 29 Sep 2002 03:57:07 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g8T7v7Y30694 for exmh-users@listman.redhat.com; Sun, 29 Sep 2002
+    03:57:07 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g8T7v7f30686 for
+    <exmh-users@redhat.com>; Sun, 29 Sep 2002 03:57:07 -0400
+Received: from bucky.sculptors.com (IDENT:root@bucky.sculptors.com
+    [216.240.42.233]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id
+    g8T7cfi01538 for <exmh-users@redhat.com>; Sun, 29 Sep 2002 03:38:41 -0400
+Received: from bootstrap.sculptors.com
+    (IDENT:d1W+AF9LW1jCEFjDDu0voz+Mr++8NISi@bootstrap.sculptors.com
+    [216.240.42.241]) by bucky.sculptors.com (8.11.6/8.11.6) with ESMTP id
+    g8T7v3Y14928 for <exmh-users@redhat.com>; Sun, 29 Sep 2002 00:57:03 -0700
+Received: (from salsbury@localhost) by bootstrap.sculptors.com
+    (8.11.6/8.11.6) id g8T7v1P11760; Sun, 29 Sep 2002 00:57:01 -0700
+From: The Butterfly <salsbury@sculptors.com>
+Message-Id: <200209290757.g8T7v1P11760@bootstrap.sculptors.com>
+To: exmh-users@spamassassin.taint.org
+Subject: Re: Help! I've lost my exmh-unseen window!
+X-Newsgroups: local.lists.exmh-users
+In-Reply-To: <E17v8Mw-0004eS-00@pmenage-dt.ensim.com>
+References: <200209280310.g8S3A2S20585@bootstrap.sculptors.com>
+Organization: Evolutionary Acceleration, Inc.
+Cc: 
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Sun, 29 Sep 2002 00:57:01 -0700
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+In article <E17v8Mw-0004eS-00@pmenage-dt.ensim.com> you write:
+>>
+>>	I'll have to try it with another window manager and see if I can
+>>get exmh to put it back inside of sane boundaries. I don't have this
+>>problem with any other windows, though. Just the exmhunseen window.
+>>
+>
+>How about enabling the "Show unseen message count in folder cache"
+>option? It displays the number of unseen messages next to each folder name
+>(if greater than 0), so you don't really need the unseen window unless
+>you're using more sequences than just "unseen".
+>
+>Paul
+>
+	As Hal noted, I like to have the unseen window visible in all
+virtual desktops, even if the main window is minimized. However, I looked
+through ALL the preferences menus, and didn't see anything resembling "Show
+unseen message count in folder cache". Where is that? And in what version?
+(I'm running v2.4 - 06/23/2000 - Creaky, I know.)
+
+	I went into twm with no virtual desktops, and it came up just fine.
+Going back to Enlightenment I saw the same behavior as before. Then I knew
+it MUST be something in the window manager, so I went digging. in my 
+~/.englightenment/...e_session-XXXXXX.snapshots.0 file I found all the
+settings that E. uses for remembering border styles, positions, shaded
+state, etc. 
+	I have a 1600x1200 screen, and it kept putting my window at
+1655x150 (AND had it shaded to boot, so it was tiny as well as offscreen!)
+	Searching for 'unseen' in that file found this section:
+
+NEW: exmh.Exmh
+NAME: exmh
+CLASS: Exmh
+NEW: unseen.UnseenWin
+NAME: unseen
+CLASS: UnseenWin
+DESKTOP: 0
+RES: 1600 1200
+WH: 114 173
+XY: 1655 150 0 0
+LAYER: 4
+STICKY: 1
+SKIPTASK: 0
+SKIPWINLIST: 0
+SKIPFOCUS: 0
+SHADE: 2
+BORDER: PAGER_LEFT_BLUE
+
+	I changed:
+XY: 1655 150 0 0  	to 
+XY: 1455 150 0 0	so it would reappear in my viewable space,
+restarted Enlightenment (CTRL-ALT-End) and then restarted exmh. Bingo!
+There was my window! 
+
+	I quickly told Englightenment to forget everything about that
+window except is border style, and now have a sveldt little entry like so:
+
+NEW: exmh.Exmh
+NAME: exmh
+CLASS: Exmh
+NEW: unseen.UnseenWin
+NAME: unseen
+CLASS: UnseenWin
+BORDER: PAGER_LEFT_BLUE
+
+	Completely an Enlightenment problem, not exmh. (Though I wonder how
+it got mixed up in the first place? I certainly can't move a window off
+screen like that. Unless it was part way over then snapped offscreen when
+shading.)
+
+	Hmm. Weird. 
+
+	Anyway, thanks for the suggestions, folks. Hopefully this will be
+useful to someone scouting the archives in the future... :-) 
+
+
+
+-----BEGIN PGP SIGNATURE-----
+Version: PGP 6.5.2
+Comment: Don't know what PGP is? Check http://www.pgpi.org/
+
+iQA/AwUBPZayRIJkhJBJYtPQEQIyzgCg/mMMlKnmP8Cxa/h7b5X0KrJXsLsAoO1N
+6dm1Hpj6RnUGPjuUQItBYEC3
+=OL5H
+-----END PGP SIGNATURE-----
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

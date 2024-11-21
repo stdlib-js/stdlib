@@ -1,0 +1,106 @@
+From fork-admin@xent.com  Mon Sep  9 19:27:33 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 1CB1516EFC
+	for <jm@localhost>; Mon,  9 Sep 2002 19:27:33 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 19:27:33 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g89EDJC18586 for <jm@jmason.org>;
+    Mon, 9 Sep 2002 15:13:19 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 396C72942BB; Mon,  9 Sep 2002 07:10:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from venus.phpwebhosting.com (venus.phpwebhosting.com
+    [64.29.16.27]) by xent.com (Postfix) with SMTP id 7FCFA2940EC for
+    <fork@xent.com>; Mon,  9 Sep 2002 07:09:53 -0700 (PDT)
+Received: (qmail 19477 invoked by uid 508); 9 Sep 2002 14:12:38 -0000
+Received: from unknown (HELO hydrogen.leitl.org) (217.80.40.112) by
+    venus.phpwebhosting.com with SMTP; 9 Sep 2002 14:12:38 -0000
+Received: from localhost (eugen@localhost) by hydrogen.leitl.org
+    (8.11.6/8.11.6) with ESMTP id g89ECa407063; Mon, 9 Sep 2002 16:12:36 +0200
+X-Authentication-Warning: hydrogen.leitl.org: eugen owned process doing -bs
+From: Eugen Leitl <eugen@leitl.org>
+To: <bitbitch@magnesium.net>
+Cc: <fork@spamassassin.taint.org>
+Subject: Re[2]: Selling Wedded Bliss (was Re: Ouch...)
+In-Reply-To: <10770315074.20020909094137@magnesium.net>
+Message-Id: <Pine.LNX.4.33.0209091553450.32400-100000@hydrogen.leitl.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 9 Sep 2002 16:12:36 +0200 (CEST)
+
+On Mon, 9 Sep 2002 bitbitch@magnesium.net wrote:
+
+> So Eugen, how many of your homo friends have -had- 3k lovers?
+
+Just one. Not everybody does that. Most of them are now dead, anyway.
+ 
+> Do you know anyone, outside of meybee Wilt Chamberlin and a few of the
+> gang-bang porn queens who -have- had even 1.5k lovers?
+
+Yes. Notice that I've specifically excluded sex industry. That be 
+cheating.
+ 
+> Eegads, if you're hypothesizing numbers like -that- Eugen, you at
+> least owe it to FoRK to back that shit up.
+
+Ain't done no hypothesizing. Anecdotal evidence'R'Us. Couldn't you just
+Google, or something?
+ 
+> Otherwise we're liable to assume rampant unfounded homophobia and that
+> would just be a lose.
+
+Yeah, I'm a gay Jew Nazi Muslim who's also a lead character on Kaz's
+underworld. Can we go on with the programme now?
+ 
+> Just a quick assumption here.   I'm not a math geek or anything, but
+> assuming 1 lover every day, that would be like at least one lover
+> everyday for 8 years and some change.   I don't know about you, but
+> very very few of us are -that- lucky (or even close to that lucky)
+
+Which was my point. Gurls don't do hyperpromiscuity as a life style. It's
+interesting that you're launching into a diatribe, and threaten using
+instant argument (just add hominem) instead of assuming I might be not
+just pulling this whole thing out my nether orifice.
+
+> and after awhile, even the sexaholics get bored and have to mingle
+> something new into their weekends.   You really are assumiing that the
+> homosexual population is a) that large in a given area (The meccas
+
+You ever been to San Francisco?
+
+> might qualify, but try finding that kind of homosexual population in
+> say, Tulsa, Oklahoma or Manchester, NH (Tho Manchester does have quite
+
+Yeah, I think it could be also difficult finding a gay bathhouse in Thule,
+Greenland. Or parts of central Africa. To think of it, both Oort and 
+Kuiper belts are utterly devoid of gay people as well. Isn't this 
+remarkable?
+
+> a few nifty gaybars, but thats a different story)  b) that bored/sex
+> obsessed/recreationally free to pursue sex that often, with that many
+> partners or that they'd even WANT that many partners.
+
+This doesn't happen because it couldn't happen. No one would want to. 
+Because you feel that way. Correct?
+
+> Qualify yourself, or at least lower your outrageous numbers.
+
+I didn't expect so much reflexive knee-jerking on this list.
+
+

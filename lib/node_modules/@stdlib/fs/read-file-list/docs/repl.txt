@@ -1,0 +1,81 @@
+
+{{alias}}( filepaths[, options], clbk )
+    Asynchronously reads the entire contents of each file in a file list.
+
+    If a provided an encoding, the function returns file contents as strings.
+    Otherwise, the function returns Buffer objects.
+
+    Each file is represented by an object with the following fields:
+
+    - file: file path.
+    - data: file contents as either a Buffer or string.
+
+    Parameters
+    ----------
+    filepaths: Array<string>
+        Filepaths.
+
+    options: Object|string (optional)
+        Options. If a string, the value is the encoding.
+
+    options.encoding: string|null (optional)
+        Encoding. Default: null.
+
+    options.flag: string (optional)
+        Flag. Default: 'r'.
+
+    clbk: Function
+        Callback to invoke upon reading file contents.
+
+    Examples
+    --------
+    > function onRead( error, data ) {
+    ...     if ( error ) {
+    ...         console.error( error.message );
+    ...     } else {
+    ...         console.log( data );
+    ...     }
+    ... };
+    > var filepaths = [ './beep/boop.txt', './foo/bar.txt' ];
+    > {{alias}}( filepaths, onRead );
+
+
+{{alias}}.sync( filepaths[, options] )
+    Synchronously reads the entire contents of each file in a file list.
+
+    If a provided an encoding, the function returns file contents as strings.
+    Otherwise, the function returns Buffer objects.
+
+    Parameters
+    ----------
+    filepaths: Array<string>
+        Filepaths.
+
+    options: Object|string (optional)
+        Options. If a string, the value is the encoding.
+
+    options.encoding: string|null (optional)
+        Encoding. Default: null.
+
+    options.flag: string (optional)
+        Flag. Default: 'r'.
+
+    Returns
+    -------
+    out: Error|Array|Array<string>
+        File contents.
+
+    out[ i ].file: string
+        File path.
+
+    out[ i ].data: Buffer|string
+        File contents.
+
+    Examples
+    --------
+    > var filepaths = [ './beep/boop.txt', './foo/bar.txt' ];
+    > var out = {{alias}}.sync( filepaths );
+
+    See Also
+    --------
+

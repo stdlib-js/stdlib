@@ -1,0 +1,78 @@
+From ilug-admin@linux.ie  Fri Aug  9 15:21:22 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6A0C7440D4
+	for <jm@localhost>; Fri,  9 Aug 2002 10:21:01 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:21:01 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79EJPb06088 for
+    <jm-ilug@jmason.org>; Fri, 9 Aug 2002 15:19:30 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id JAA04493 for <jm-ilug@jmason.org>;
+    Fri, 9 Aug 2002 09:29:03 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA29289; Fri, 9 Aug 2002 09:26:50 +0100
+Received: from corvil.com. (k100-159.bas1.dbn.dublin.eircom.net
+    [159.134.100.159]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id JAA29264
+    for <ilug@linux.ie>; Fri, 9 Aug 2002 09:26:44 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host k100-159.bas1.dbn.dublin.eircom.net
+    [159.134.100.159] claimed to be corvil.com.
+Received: from corvil.com (pixelbeat.local.corvil.com [172.18.1.170]) by
+    corvil.com. (8.12.5/8.12.5) with ESMTP id g798Qhn4003504 for
+    <ilug@linux.ie>; Fri, 9 Aug 2002 09:26:43 +0100 (IST) (envelope-from
+    padraig.brady@corvil.com)
+Message-Id: <3D537CB9.7050902@corvil.com>
+Date: Fri, 09 Aug 2002 09:26:33 +0100
+From: Padraig Brady <padraig.brady@corvil.com>
+Organization: Corvil Networks
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:0.9.9) Gecko/20020408
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: ilug@linux.ie
+Subject: Re: [ILUG] Cobalt question
+References: <20020808103101.GA1853@jinny.ie>
+    <20020808175118.GC30251@iulus.wunsch.org>
+    <20020809080152.GE23620@jinny.ie>
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 8bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+John P. Looney wrote:
+> On Thu, Aug 08, 2002 at 11:51:18AM -0600, Scott Wunsch mentioned:
+> 
+>>On Thu, 08-Aug-2002 at 11:31:01 +0100, John P. Looney wrote:
+>>
+>>> I've installed Redhat 7.3 on a raq3's disk. But fscked if I can get the
+>>>kernel in /boot/vmlinuz-2.4.18-3 to boot. It's insisting pulling the
+>>>kernel from ... somewhere else. The old cobalt kernel.
+>>
+>>http://www.gurulabs.com/rgh-cobalt-howto/index.html
+>>
+>>The Cobalt systems have some neat firmware boot code that will read the
+>>ext2 filesystem and find the kernel itself... if you put it exactly where
+>>they expect it.
+> 
+>  Alas, I've been following that howto, and it doesn't seem to work. It
+> could be because i'm using ext3 for the rootfs though.
+
+ext2 can mount an ext3 partition, but there are
+probably small changes required (to the BIOS)
+to support this?
+
+Pádraig.
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

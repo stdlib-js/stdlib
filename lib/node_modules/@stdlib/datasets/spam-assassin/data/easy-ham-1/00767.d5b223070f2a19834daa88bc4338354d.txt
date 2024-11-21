@@ -1,0 +1,102 @@
+From fork-admin@xent.com  Tue Sep 24 17:55:27 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id EA6B116F03
+	for <jm@localhost>; Tue, 24 Sep 2002 17:55:26 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 24 Sep 2002 17:55:26 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8OG31C11128 for <jm@jmason.org>;
+    Tue, 24 Sep 2002 17:03:01 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id DFDD42940C2; Tue, 24 Sep 2002 08:59:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from venus.phpwebhosting.com (venus.phpwebhosting.com
+    [64.29.16.27]) by xent.com (Postfix) with SMTP id 19DB129409A for
+    <fork@xent.com>; Tue, 24 Sep 2002 08:58:09 -0700 (PDT)
+Received: (qmail 13492 invoked by uid 508); 24 Sep 2002 15:59:41 -0000
+Received: from unknown (HELO hydrogen.leitl.org) (217.80.40.2) by
+    venus.phpwebhosting.com with SMTP; 24 Sep 2002 15:59:41 -0000
+Received: from localhost (eugen@localhost) by hydrogen.leitl.org
+    (8.11.6/8.11.6) with ESMTP id g8OG1iA18403; Tue, 24 Sep 2002 18:01:45
+    +0200
+X-Authentication-Warning: hydrogen.leitl.org: eugen owned process doing -bs
+From: Eugen Leitl <eugen@leitl.org>
+To: forkit! <fork@spamassassin.taint.org>
+Cc: grisvalpen <pigdog@pighaven.org>
+Subject: Re: [s-t] Scoot boss's wife orders hit.
+Message-Id: <Pine.LNX.4.33.0209241801010.8010-100000@hydrogen.leitl.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 24 Sep 2002 18:01:44 +0200 (CEST)
+
+---------- Forwarded message ----------
+Date: Mon, 23 Sep 2002 09:52:44 -0700
+From: mis@seiden.com
+Subject: Re: [s-t] Scoot boss's wife orders hit.
+
+
+the "independent", a shopper's newspaper in the sf bay area, (the
+operational definition of that media category is "no matter how hard
+you try you can't get them to stop delivering it") had this story on
+aug 24, 2002:
+
+"Dot-com downturn linked to domestic violence"
+
+Domestic-violence worker Kathy Black remembers watching the Nasdaq 
+take a nastydive on MSNBC, in March 2000.
+
+"I knew then that we would have a lot of work on our hands," Black said,
+referring to the caseload at La Casa de las Madres, the city's largest
+organization serving women and children affected by domestic violence.
+
+She was right.
+
+Calls to La Casa's crisis line increased by 33% in the last financial
+year, and the service saw a 10 percent increase in the demand for
+beds, with 232 women and 215 children utilizing the shelter service.
+...
+
+Black said the dot-com collapse and a growing awareness of La Casa's
+services were the two main reasons for the increase in calls.
+
+She said many of her clients had partners who were employed in
+service-industry jobs utilized by dot-com workers   
+...
+
+
+
+On Mon, Sep 23, 2002 at 04:23:17PM +0100, Gordon Joly wrote:
+> 
+> 
+> 
+> http://news.bbc.co.uk/1/low/england/2276467.stm
+> 
+> 
+> Woman admits trying to hire hitman
+> 
+> The former wife of an internet tycoon has admitted trying to hire a 
+> hitman to kill him after the breakdown of their 21-year marriage.
+> 
+> 
+> -- 
+> Linux User No. 256022///
+> http://pobox.com/~gordo/
+> gordon.joly@pobox.com///
+
+
+

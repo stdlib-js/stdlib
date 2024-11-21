@@ -1,0 +1,74 @@
+From fork-admin@xent.com  Fri Aug 16 11:27:37 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B22DE441A8
+	for <jm@localhost>; Fri, 16 Aug 2002 06:03:28 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 16 Aug 2002 11:03:28 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7FLo8719439 for <jm@jmason.org>;
+    Thu, 15 Aug 2002 22:50:09 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id B688029409A; Thu, 15 Aug 2002 14:48:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from localhost.localdomain (h00045acfa2be.ne.client2.attbi.com
+    [65.96.178.138]) by xent.com (Postfix) with ESMTP id E5AFF294098 for
+    <fork@xent.com>; Thu, 15 Aug 2002 14:47:25 -0700 (PDT)
+Received: (from louie@localhost) by localhost.localdomain (8.11.6/8.11.6)
+    id g7FLkvf05632; Thu, 15 Aug 2002 17:46:57 -0400
+X-Authentication-Warning: localhost.localdomain: louie set sender to
+    louie@ximian.com using -f
+Subject: Re: It's a small world
+From: Luis Villa <louie@ximian.com>
+To: Jesse <jesse@fsck.com>
+Cc: fork@spamassassin.taint.org
+In-Reply-To: <20020815213504.GO2724@pallas.fsck.com>
+References: <20020815203806.GM2724@pallas.fsck.com>
+    <1029444667.5235.1.camel@localhost.localdomain>
+    <20020815213504.GO2724@pallas.fsck.com>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8
+Message-Id: <1029448015.5235.50.camel@localhost.localdomain>
+MIME-Version: 1.0
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 15 Aug 2002 17:46:55 -0400
+
+On Thu, 2002-08-15 at 17:35, Jesse wrote:
+> Short version:
+> T-Mobile Broadband is in the process of wiring every starbucks in the area
+> (T1 backhauled to some ~local POP + 802.11) as part of what I'm told is a
+> national rollout. The Diesel is close enough to the Elm St starbucks for me
+> to get reasonable net throughout most of the cafe. 
+> 
+> The rumor is that they'll be announcing that they've got boston covered on
+> the 21st.  I've heard from at least one source that they're actually going
+> to announce a much wider national rollout at that time.  It's not cheap [1], but
+> for soemone like me who's running a ~virtual corporation, it's well worth it.
+> 
+> [1] https://accounts.tmobilebroadband.com/net_offers_promos.htm
+
+Very nice. Not sure it's worthwhile to pay for that when I'm already
+paying for cable modem at home, but... still nice to know I have the
+option.
+
+FWIW, slummerville actually has the internet- not just broadband, but
+actual broadband competition, which I gather is rare. I had ADSL and two
+cable options when I moved in.
+
+Luis
+http://xent.com/mailman/listinfo/fork
+

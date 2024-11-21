@@ -1,0 +1,94 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Mon Sep  9 04:36:00 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Sun, 08 Sep 2002 23:36:00 -0400
+Subject: [Spambayes] testing results
+In-Reply-To: <20020909012051.GD27510@glacier.arctrix.com>
+Message-ID: <LNBBLJKPBEHFEDALKOLCCEAMBDAB.tim.one@comcast.net>
+
+[Neil Schemenauer]
+> Woops.  I didn't have the summary files so I regenerated them using a
+> slightly different set of data.  Here are the results of enabling the
+> "received" header processing:
+>
+>     false positive percentages
+>         0.707  0.530  won    -25.04%
+>         0.873  0.524  won    -39.98%
+>         0.301  0.301  tied
+>         1.047  1.047  tied
+>         0.602  0.452  won    -24.92%
+>         0.353  0.177  won    -49.86%
+>
+>     won   4 times
+>     tied  2 times
+>     lost  0 times
+>
+>     total unique fp went from 17 to 14 won    -17.65%
+>
+>     false negative percentages
+>         2.167  1.238  won    -42.87%
+>         0.969  0.969  tied
+>         1.887  1.372  won    -27.29%
+>         1.616  1.292  won    -20.05%
+>         1.029  0.858  won    -16.62%
+>         1.548  1.548  tied
+>
+>     won   4 times
+>     tied  2 times
+>     lost  0 times
+>
+>     total unique fn went from 50 to 38 won    -24.00%
+>
+> My test set is different than Tim's in that all the email was received
+> by the same account.  Also, my set contains email sent to me, not to
+> mailing lists (I use a different addresses for mailing lists).
+
+Enabling the Received headers works even better for me <wink>; here's the
+f-n section from a quick run on 500-element subsets:
+
+    0.600  0.200  won    -66.67%
+    0.200  0.200  tied
+    0.200  0.000  won   -100.00%
+    0.800  0.400  won    -50.00%
+    0.400  0.200  won    -50.00%
+    0.400  0.000  won   -100.00%
+    0.200  0.000  won   -100.00%
+    1.000  0.400  won    -60.00%
+    0.800  0.200  won    -75.00%
+    1.200  0.600  won    -50.00%
+    0.400  0.200  won    -50.00%
+    2.000  0.800  won    -60.00%
+    0.400  0.400  tied
+    1.200  0.600  won    -50.00%
+    0.400  0.000  won   -100.00%
+    2.000  1.000  won    -50.00%
+    0.400  0.000  won   -100.00%
+    0.800  0.000  won   -100.00%
+    0.000  0.200  lost  +(was 0)
+    0.400  0.000  won   -100.00%
+
+won  17 times
+tied  2 times
+lost  1 times
+
+total unique fn went from 38 to 15 won    -60.53%
+
+A huge improvement, but for wrong reasons ... except not entirely!  The most
+powerful discriminator in the whole database on one training set became:
+
+        'received:unknown' 881 0.99
+
+That's got nothing to do with BruceG, right?
+
+        'received:bfsmedia.com'
+
+was also a strong spam indicator across all training sets.  I'm jealous.
+
+> If people cook up more ideas I will be happy to test them.
+
+Neil, are using your own tokenizer now, or the tokenizer.Tokenizer.tokenize
+generator?  Whichever, someone who's not afraid of their headers should try
+adding mboxtest.MyTokenizer.tokenize_headers into the mix, once in lieu of
+tokenizer.Tokenizer.tokenize_headers(), and again in addition to it.  Jeremy
+reported on just the former.
+

@@ -1,0 +1,68 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6N8RbhY081370
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Tue, 23 Jul 2002 03:27:38 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6N8Rb5u081366
+	for cypherpunks-forward@ds.pro-ns.net; Tue, 23 Jul 2002 03:27:37 -0500 (CDT)
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6N8RQhX081286
+	for <cypherpunks@ds.pro-ns.net>; Tue, 23 Jul 2002 03:27:31 -0500 (CDT)
+	(envelope-from cpunks@ssz.com)
+X-Authentication-Warning: hq.pro-ns.net: Host cpunks@[207.200.56.4] claimed to be einstein.ssz.com
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id DAA03310
+	for cypherpunks@ds.pro-ns.net; Tue, 23 Jul 2002 03:35:55 -0500
+Received: from hal2.bizland-inc.net (mail2.bizland-inc.net [64.28.88.158])
+	by einstein.ssz.com (8.8.8/8.8.8) with ESMTP id DAA03302
+	for <cpunks@einstein.ssz.com>; Tue, 23 Jul 2002 03:35:53 -0500
+Received: from monkfish.int.bizland.net ([10.1.1.200] helo=mail2.bizland-inc.net)
+	by hal2.bizland-inc.net with esmtp (Exim 3.36 #1)
+	id 17Wv09-0001g5-00
+	for cpunks@einstein.ssz.com; Tue, 23 Jul 2002 04:26:37 -0400
+Received: (from wwwuser@localhost)
+	by mail2.bizland-inc.net (8.11.6/8.11.6) id g6N8QZK04732;
+	Tue, 23 Jul 2002 04:26:35 -0400
+Date: Tue, 23 Jul 2002 04:26:35 -0400
+Message-Id: <200207230826.g6N8QZK04732@mail2.bizland-inc.net>
+To: cpunks@einstein.ssz.com
+From: seni@istiyorum.com
+Subject: Internet ve Para 
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+X-MIME-Autoconverted: from 8bit to quoted-printable by hq.pro-ns.net id g6NEalhX026710
+
+CashIC.com =DDnternetten para kazandiran, en onemlisi Turkiye ye de odeme=
+ yapan bir sponsor. Uye olmak icin internetsitenizin olmas=FD da gerekmiy=
+or, herkes uye olup para kazanabilir.
+Uye olduktan sonra 6 degisik sek=FDlde para kazanmaya basliyor ve her ay =
+basinda ne kadar kazandiysaniz odemezi 10 gun =FDc=FDnde cek olarak aliyo=
+rsunuz! Internetten para kazanmak istiyenler icin kacirilmamasi gereken b=
+ir firsat!!!
+Attaki linke t=FDkladiktan sonra acilan sayfadan "Join Now" yazan yere ti=
+klayip acilan formu doldurun & Kazanmaya baslayin !!!!
+Click here:  http://www.clickXchange.com/er.phtml?act=3D153133.60
+
+
+
+
+
+-
+
+--------------------------------------------------------------------
+
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

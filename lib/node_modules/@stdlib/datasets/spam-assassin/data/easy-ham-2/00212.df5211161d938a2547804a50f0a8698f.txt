@@ -1,0 +1,63 @@
+From ilug-admin@linux.ie  Fri Aug  2 04:05:28 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8A42C440F1
+	for <jm@localhost>; Thu,  1 Aug 2002 23:05:27 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 02 Aug 2002 04:05:27 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7231d205596 for
+    <jm-ilug@jmason.org>; Fri, 2 Aug 2002 04:01:39 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id DAA13530; Fri, 2 Aug 2002 03:59:16 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail00.svc.cra.dublin.eircom.net
+    (mail00.svc.cra.dublin.eircom.net [159.134.118.16]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id DAA13495 for <ilug@linux.ie>; Fri,
+    2 Aug 2002 03:59:11 +0100
+Received: (qmail 54929 messnum 525144 invoked from
+    network[159.134.195.202/unknown]); 2 Aug 2002 02:58:40 -0000
+Received: from unknown (HELO ger.eircom.net) (159.134.195.202) by
+    mail00.svc.cra.dublin.eircom.net (qp 54929) with SMTP; 2 Aug 2002 02:58:40
+    -0000
+Message-Id: <5.1.0.14.0.20020802035644.009f3d30@mail1.tinet.ie>
+X-Sender: gerdono@mail1.tinet.ie
+X-Mailer: QUALCOMM Windows Eudora Version 5.1
+Date: Fri, 02 Aug 2002 03:59:32 +0100
+To: Liam Bedford <lbedford@lbedford.org>, deedsmis@aculink.net,
+	ilug@linux.ie
+From: ger <bootsys@eircom.net>
+Subject: Re: [ILUG] Re: removing lilo
+In-Reply-To: <20020731173414.4123f075.lbedford@lbedford.org>
+References: <3D4814D0.6A61E6E5@cdm01.deedsmiscentral.net>
+    <5FE418B3F962D411BED40000E818B33C9C8E65@HASSLE>
+    <3D4814D0.6A61E6E5@cdm01.deedsmiscentral.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"; format=flowed
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+At 17:34 31/07/02 +0100, Liam Bedford wrote:
+>fdisk /mbr will restore a dos MBR.. it'll leave the partitions alone.
+
+
+Will clear the Partition table entries in the MBR if it does not end with 
+valid Boot signature.
+
+Regards Ger
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

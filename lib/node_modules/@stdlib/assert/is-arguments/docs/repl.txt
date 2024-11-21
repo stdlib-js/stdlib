@@ -1,0 +1,25 @@
+
+{{alias}}( value )
+    Tests if a value is an arguments object.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is an arguments object.
+
+    Examples
+    --------
+    > function foo() { return arguments; };
+    > var bool = {{alias}}( foo() )
+    true
+    > bool = {{alias}}( [] )
+    false
+
+    See Also
+    --------
+

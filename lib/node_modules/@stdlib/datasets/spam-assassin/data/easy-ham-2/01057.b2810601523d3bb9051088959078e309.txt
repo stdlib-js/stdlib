@@ -1,0 +1,99 @@
+From fork-admin@xent.com  Mon Aug 19 11:04:16 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C709B441AC
+	for <jm@localhost>; Mon, 19 Aug 2002 05:55:25 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:55:25 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7HGVW604274 for <jm@jmason.org>;
+    Sat, 17 Aug 2002 17:31:34 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id D05DF2940CC; Sat, 17 Aug 2002 09:29:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from rwcrmhc51.attbi.com (rwcrmhc51.attbi.com [204.127.198.38])
+    by xent.com (Postfix) with ESMTP id 60F14294098 for <fork@xent.com>;
+    Sat, 17 Aug 2002 09:28:28 -0700 (PDT)
+Received: from localhost ([24.61.140.132]) by rwcrmhc51.attbi.com
+    (InterMail vM.4.01.03.27 201-229-121-127-20010626) with ESMTP id
+    <20020817162947.SCIN1746.rwcrmhc51.attbi.com@localhost>; Sat,
+    17 Aug 2002 16:29:47 +0000
+From: bitbitch@magnesium.net
+X-Mailer: The Bat! (v1.53d) Educational
+Reply-To: bitbitch@magnesium.net
+X-Priority: 3 (Normal)
+Message-Id: <57724407.20020817122944@magnesium.net>
+To: Gary Lawrence Murphy <garym@canada.com>
+Cc: fork@spamassassin.taint.org
+Subject: Re[2]: Al'Qaeda's fantasy ideology:  Policy Review no. 114
+In-Reply-To: <m2y9b5bhq6.fsf@maya.dyndns.org>
+References: <58113821767.20020816230818@magnesium.net>
+    <m2y9b5bhq6.fsf@maya.dyndns.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sat, 17 Aug 2002 12:29:44 -0400
+
+Hello Gary,
+
+
+Uh, plague is not action.  No, no one has a problem quarantining
+someone who has say, Ebola, or malaria, because diseases do not
+require any decisive action -- just contact.
+
+fantasies, still require decisive action, even if its in conjunction
+with the way the fantasy works in the individual's brain. Many people
+have very strange and obscure fantasies (say wanting to be a model)
+that dont' require them to be locked up.
+
+Fantasies aren't nearly as much like plagues.   Not everyone in a
+given population necessarily adheres to that given fantasy, whereas
+everyone can get a given plague.   (BTW, gary, the whole concept of
+monitoring a given 'racial populaiton' for fear of them getting a
+plague is silly.  I don't think plagues discriminate)
+
+You're trying to argue for a lock'em all up mentality, when I don't
+think anyone but you has even mentioned it.   His point was that
+fantaesies were a psychological? explanation for a possible event.
+Not that all people who have them, or even have a certain type, need
+to be locked up, quarantined, killed, rubbed-out or cleansed.
+
+
+
+GLM> Well, for example ..
+
+>>>>>> "b" == bitbitch  <bitbitch@magnesium.net> writes:
+
+GLM>     b> Once we understand this [ the fantasy virus model ], many of
+GLM>     b> our current perplexities will find themselves
+GLM>     b> resolved. Pseudo-issues such as debates over the legitimacy of
+GLM>     b> “racial profiling” would disappear: Does anyone in his right
+GLM>     b> mind object to screening someone entering his country for signs
+GLM>     b> of plague? Or quarantining those who have contracted it? Or
+GLM>     b> closely monitoring precisely those populations within his
+GLM>     b> country that are most at risk?
+
+
+
+
+-- 
+Best regards,
+ bitbitch                            mailto:bitbitch@magnesium.net
+
+
+http://xent.com/mailman/listinfo/fork
+

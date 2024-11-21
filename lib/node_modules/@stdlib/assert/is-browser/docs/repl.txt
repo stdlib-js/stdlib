@@ -1,0 +1,12 @@
+
+{{alias}}
+    Boolean indicating if the runtime is a web browser.
+
+    Examples
+    --------
+    > {{alias}}
+    <boolean>
+
+    See Also
+    --------
+

@@ -1,0 +1,129 @@
+From razor-users-admin@lists.sourceforge.net  Mon Aug 26 15:21:59 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8184A4416C
+	for <jm@localhost>; Mon, 26 Aug 2002 10:18:16 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 15:18:16 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7P5iQZ03081 for <jm-razor@jmason.org>; Sun, 25 Aug 2002 06:44:26 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17ipzM-0002Xw-00; Sat,
+    24 Aug 2002 22:31:04 -0700
+Received: from longbow.wesolveit.com.au ([210.10.109.227]) by
+    usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17ipyz-0006KN-00 for <razor-users@lists.sourceforge.net>; Sat,
+    24 Aug 2002 22:30:41 -0700
+Received: (qmail 25046 invoked from network); 25 Aug 2002 05:30:34 -0000
+Received: from unknown (HELO adamwin98se) (192.168.2.114) by 0 with SMTP;
+    25 Aug 2002 05:30:34 -0000
+From: "Adam Goryachev" <mailinglists@websitemanagers.com.au>
+To: "Joe Berry" <joe@topshot.com>,
+	<razor-users@lists.sourceforge.net>
+Subject: RE: [Razor-users] Reducing impact from tons of email
+Message-Id: <NDBBJPAGKLCMDEIEKOPBEELJIKAA.mailinglists@websitemanagers.com.au>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2910.0)
+In-Reply-To: <969536713.20020824234409@topshot.com>
+X-Mimeole: Produced By Microsoft MimeOLE V5.00.2615.200
+Importance: Normal
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Sun, 25 Aug 2002 15:39:13 +1000
+Date: Sun, 25 Aug 2002 15:39:13 +1000
+
+See your /etc/sendmail.cf file, there are a number of methods for limiting
+the number of concurrent sendmail processes, either by load average (I'm
+sure), or concurrency (I think)... I use sendmail anymore (I use qmail) but
+I'm sure that if you look in the config file, you will see what you need...
+
+Regards,
+Adam
+
+> -----Original Message-----
+> From: razor-users-admin@example.sourceforge.net
+> [mailto:razor-users-admin@lists.sourceforge.net]On Behalf Of Joe Berry
+> Sent: Sunday, 25 August 2002 1:44 PM
+> To: razor-users@example.sourceforge.net
+> Subject: [Razor-users] Reducing impact from tons of email
+>
+>
+> I'm not sure if this is really a razor problem/issue or a sendmail
+> problem. Here's the scenario... My mail server is a 150mhz PC funning
+> FreeBSD 4.4. Ordinarily, the machine is quite idle; it supports my
+> wife's web site with Apache server running on it and a few other
+> services (jabber, etc). Between the various members of our family, we
+> get a fair amount of email coming in (mailing lists, etc). On
+> occasion, our DSL-based ISP dies for a number of hours. When we get a
+> reconnection to the Internet, I get a huge flow of emails coming in
+> which are then filtered via razor. As a result, I will sometimes see
+> over 20+ sendmail processes running at the same time after such an
+> occasion. The machine is then REALLY slow.
+>
+> I noticed that my /etc/procmailrc file had had no arguments associated
+> with the call to razor-check. There was something in the log, though,
+> to make me suspicious that it was possibly not seeing all my razor
+> files. So I have just added "-home /etc/razor" as an argument. I
+> haven't had any down time since then so I cannot comment on whether
+> this change has sped up my razor processing a noticable amount. (This
+> paragraph may be an aside to my real problem, the first paragraph
+> above; but I thought I should be complete in my description.)
+>
+> At any rate, has anyone else suffered from a backlog of email
+> processing creating lots and lots of sendmail processes?  Is there,
+> perhaps, a way to limit the number of sendmail processes?
+>
+> Any ideas would be welcome.
+>
+> Thanks,
+> Joe
+> ---
+> Joe Berry
+> joe@topshot.com
+> AIM "joe topshot"
+> Yahoo Msgr "joetopshot"
+> jabber "joetopshot@topshot.com"
+> Baltimore, MD
+>
+>
+>
+> -------------------------------------------------------
+> This sf.net email is sponsored by: OSDN - Tired of that same old
+> cell phone?  Get a new here for FREE!
+> https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+> _______________________________________________
+> Razor-users mailing list
+> Razor-users@lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/razor-users
+>
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+

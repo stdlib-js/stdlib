@@ -1,0 +1,74 @@
+From fork-admin@xent.com  Fri Sep 13 20:45:05 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 26AB416F16
+	for <jm@localhost>; Fri, 13 Sep 2002 20:45:05 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 13 Sep 2002 20:45:05 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8DJ5PC31289 for <jm@jmason.org>;
+    Fri, 13 Sep 2002 20:05:26 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 4E9812940B3; Fri, 13 Sep 2002 12:02:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from localhost.localdomain (pm2-6.sba1.netlojix.net
+    [207.71.218.102]) by xent.com (Postfix) with ESMTP id 4537D29409A for
+    <fork@xent.com>; Fri, 13 Sep 2002 12:01:42 -0700 (PDT)
+Received: (from dave@localhost) by maltesecat (8.8.7/8.8.7a) id MAA16027;
+    Fri, 13 Sep 2002 12:12:23 -0700
+Message-Id: <200209131912.MAA16027@maltesecat>
+To: fork@spamassassin.taint.org
+Subject: Re: dylsexics of the wrold, untie!
+In-Reply-To: Message from fork-request@xent.com of
+    "Fri, 13 Sep 2002 06:26:17 PDT."
+    <20020913132617.9935.12598.Mailman@lair.xent.com>
+From: Dave Long <dl@silcom.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 13 Sep 2002 12:12:23 -0700
+
+
+
+> I think keeping the number of middle letters consistent with the correct
+> spelling is important.
+
+Aeftr tinryg it out on my lacol daciinorty,
+the worst I cloud find were teilprs, and of
+tehm the most cfinnosug seeemd to be:
+
+	parental paternal prenatal 
+
+as cenotxt wloud be mcuh more sacfgiiinnt
+with the rest, scuh as:
+
+	bakers beakers breaks
+
+98% of the 45k wdors were uinque.
+
+-Dave
+
+1. romaji, or european languages which
+tend to end in vowels, would presumably
+work better with attention on the ending
+syllable (or at least consonant sound)
+
+2. are typos a larger or smaller space?
+I had a whoromatic proggy that scattered
+transpositions at hazard where the hands
+alternated quickly; that would be a much
+smaller space -- but transposing/eliding
+spaces might make for a much larger one.
+
+

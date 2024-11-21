@@ -1,0 +1,70 @@
+From fork-admin@xent.com  Thu Jul 25 11:33:02 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 30827440D0
+	for <jm@localhost>; Thu, 25 Jul 2002 06:33:02 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 11:33:02 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6PADc416806 for <jm@jmason.org>;
+    Thu, 25 Jul 2002 11:13:39 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 447632940A0; Thu, 25 Jul 2002 03:12:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from Boron.MeepZor.Com (i.meepzor.com [204.146.167.214]) by
+    xent.com (Postfix) with ESMTP id A487A294098 for <FoRK@Xent.Com>;
+    Thu, 25 Jul 2002 03:11:21 -0700 (PDT)
+Received: from Golux.Com (dsl-64-192-128-105.telocity.com
+    [64.192.128.105]) by Boron.MeepZor.Com (8.11.6/8.11.6) with ESMTP id
+    g6PABMa08095; Thu, 25 Jul 2002 06:11:23 -0400
+Message-Id: <3D3FCECB.764EA5A6@Golux.Com>
+From: Rodent of Unusual Size <Ken.Coar@Golux.Com>
+Organization: The Apache Software Foundation
+X-Mailer: Mozilla 4.79 [en] (Windows NT 5.0; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: Flatware or Road Kill? <FoRK@xent.com>
+Subject: Re: Asteroids anyone ?
+References: <001301c23359$d8208130$0100a8c0@PETER>
+    <m2n0sgojke.fsf@maya.dyndns.org>
+    <2785.192.216.194.113.1027554367.squirrel@webmail.magnesium.net>
+    <1027559672.2056.38.camel@avalon>
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 25 Jul 2002 06:11:23 -0400
+
+James Rogers wrote:
+> 
+> I don't think a ballistic missile defense system will be much help
+> against a rock a couple thousand kilometers in diameter.
+
+Doesn't apply to this one; you're off by three orders of magnitude.
+Only 2km diametre, this one.  Of course, that's still a lot of mass
+to hit the planet even if it *is* in the form of dust and gas.
+Even if Shrub's wrist-rocket managed to vaporise it, we'd still get
+transference to the Earth's energy balance, only to the atmosphere
+rather than the litho- or hydrosphere.
+-- 
+#ken	P-)}
+
+Ken Coar, Sanagendamgagwedweinini  http://Golux.Com/coar/
+Author, developer, opinionist      http://Apache-Server.Com/
+
+"Millennium hand and shrimp!"
+http://xent.com/mailman/listinfo/fork
+
+

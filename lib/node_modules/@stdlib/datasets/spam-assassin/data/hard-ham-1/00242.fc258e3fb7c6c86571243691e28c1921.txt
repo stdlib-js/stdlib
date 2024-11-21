@@ -1,0 +1,368 @@
+From XLZ8637804.news@mail3.globalscape.com  Fri Nov 15 18:38:12 2002
+Return-Path: <XLZ8637804.news@mail3.globalscape.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 56A0616F17
+	for <jm@localhost>; Fri, 15 Nov 2002 18:38:08 +0000 (GMT)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 15 Nov 2002 18:38:08 +0000 (GMT)
+Received: from mail5.globalscape.com (mail5.globalscape.com
+    [64.243.65.164]) by dogma.slashnull.org (8.11.6/8.11.6) with SMTP id
+    gAFIXTW18065 for <jm-cuteftp@jmason.org>; Fri, 15 Nov 2002 18:33:30 GMT
+Message-Id: <200211151833.gAFIXTW18065@dogma.slashnull.org>
+X-Mailer: : GlobalSCAPE
+X-Priority: 3 (normal)
+X-Msmail-Priority: Normal
+X-Mailer: _72803475_ANSMTP_632_
+Importance: Normal
+Reply-To: <news@mail3.globalscape.com>
+Date: Fri, 15 Nov 2002 12:06:10 -0600
+Subject: CuteFTP Pro 3.0 Released!
+To: "yyyy-cuteftp@spamassassin.taint.org" <yyyy-cuteftp@spamassassin.taint.org>
+From: "GlobalSCAPE" <news@mail3.globalscape.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="----=NextPart00A_000_73019636D"
+
+This is a multi-part message in MIME format.
+
+------=NextPart00A_000_73019636D
+Content-Type: text/plain;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+
+November 2002
+
+Dear CuteFTP User,
+
+New Release!
+GlobalSCAPE is pleased to announce the latest release of CuteFTP Pro®, 
+"Designed for Windows XP®". The "Designed for XP" logo confirms that 
+CuteFTP Pro 3.0 meets Windows XP compatibility, performance and 
+stability criteria. CuteFTP Pro 3.0 runs on Windows 9x, NT, ME, 2000 and 
+XP. 
+
+--------------------------------------------------------------------------
+------
+
+Purchase
+
+Purchase CuteFTP Pro 3.0 for just $59.95! 
+
+Buy Now: 
+http://www.globalscape.com/email/redirect.asp?id=pr3unreg&link=buy
+
+Download Free Trial:
+http://www.globalscape.com/download/cuteftppro.asp
+
+For volume discounts and site license pricing, contact our sales team:
+800-290-5054 (USA)
+210-308-8267 (Int'l)
+sales@globalscape.com
+
+--------------------------------------------------------------------------
+------
+
+NEW! XP Logo Certified 
+CuteFTP Pro has been updated to conform to Microsoft's Windows XP 
+Design Guidelines. Note: You must have Windows XP in order to take 
+advantage of the new XP interface. 
+
+NEW! Enhanced Security
+SSH2 public key support, Cipher and MAC selection, SSH2 rename and 
+ASCII transfers, password policies, and more. 
+
+NEW! Site & Folder Maintenance 
+Folder Monitoring tool, Backup & Archival tool, Server Time-zone Offset, 
+Preserve Local Time option and more. 
+
+NEW! Classic CuteFTP Features
+Load & save queue, Folder Compare, startup and after transfer events, 
+group selection, and more. 
+
+NEW! Enhanced Queue
+Queue itemizing and ordering. Includes line-item number column, drag 'n 
+drop ordering, and automatic sorting by item status. 
+
+NEW! Transfer Engine
+New methods and properties added and others optimized. New scripting 
+samples and re-written SDK documentation now available. 
+
+--------------------------------------------------------------------------
+------
+
+CuteFTP Pro 3.0 Features 
+
+Secure Connections
+Connect and transfer data securely using SSL, SSH2, OTP (S/KEY) and HTTPS.
+
+Accelerated File Transfers
+CuteFTP Pro has the most powerful transfer engine on the market, bar none.
+
+Built-in HTML Editor
+Take control of your Web site with this powerful, text-based HTML editor. 
+
+Folder Synchronization
+This flexible tool takes the programming out of synchronizing local and 
+remote folders. 
+
+Powerful Scheduler
+Simply drop your files in the Queue and click the schedule button for 
+options. 
+
+Virtually Unlimited Automation
+Create sophisticated scripts for automating FTP tasks through its COM 
+enabled Transfer Engine.
+
+
+If you do not wish to receive announcements from GlobalSCAPE via e-mail, 
+please click the remove link below and accept our apologies for any 
+inconvenience.
+
+http://www.globalscape.com/cgi-bin/rm.cgi?mail=jm-cuteftp@jmason.org
+
+------=NextPart00A_000_73019636D
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<META content="" name="description">
+<META content="" name="keywords">
+<META content="CuteHTML" name="generator">
+</HEAD>
+<BODY text="#000000" vLink="#000000" link="#000000" bgColor="#ffffff">
+<table cellSpacing="0" cellPadding="0" width="600" border="0">
+<tr>
+<td vAlign="top" colSpan="3"><IMG 
+src="http://www.cuteftp.com/images/email/newsletter_header.gif"></td>
+</tr>
+<tr>
+<TD width="13" 
+background="http://www.cuteftp.com/images/email/newsletter_border.gif" 
+rowSpan="3">&nbsp;</TD>
+<td width="574">&nbsp;</td>
+<TD width="13" 
+background="http://www.cuteftp.com/images/email/newsletter_border.gif" 
+rowSpan="3">&nbsp;</TD>
+</tr>
+<tr>
+<td><img 
+src="http://www.cuteftp.com/images/email/dearcuteftpuser.gif" 
+hspace="15"><IMG height="10" src="http://www.cuteftp.com/images/trans.
+gif" 
+width="250" border="0"><IMG 
+src="http://www.cuteftp.com/images/email/nov2002.gif" hspace="5">
+<br>
+<TABLE id="Table1" cellSpacing="15" cellPadding="0" width="574" 
+border="0">
+<TR>
+<TD width="145" valign="top">
+<center><img 
+src="http://www.cuteftp.com/images/boxes/v2_cuteftppro100.gif" 
+border="0"></center>
+<br><br>
+<img src="http://www.cuteftp.com/images/email/purchase_bar.gif" 
+vspace="10"><br>
+<font face="verdana,arial,helvetica" size="1"><b>Purchase CuteFTP Pro 3.0 
+for just 
+$59.95!</b>
+<br><br>
+<table width="145" cellpadding="0" cellspacing="4" border="0" 
+ID="Table12">
+<tr>
+<td width="15" height="15" valign="top">
+<a 
+href="http://www.globalscape.com/email/redirect.asp?id=pr3unreg&link=buy">
+<img src="http://www.cuteftp.com/images/leftnav/arrow_blue.gif" 
+border="0"></a></td>
+<td valign="top">
+<font style="font-family: verdana,arial,helvetica; font-size: 10pt; 
+font-weight: bold; color: #000000;"><a 
+href="http://www.globalscape.com/email/redirect.asp?id=pr3unreg&link=buy">
+Buy Now</a><br><font color="#3366cc">$59.95</font></font>
+</td>
+</tr>
+</table>
+<br>
+<br>
+For volume discounts and site license pricing, contact our sales team:<br>
+800-290-5054 (USA)<br>
+210-308-8267 (Int'l)<BR>
+<a href="mailto:sales@globalscape.com">sales@globalscape.com</a>
+<br>
+<br>
+<br>
+<Br>
+<br>
+<img src="http://www.cuteftp.com/images/email/testmon_bar.gif" 
+vspace="10"><br>
+"FTP products play a vital role in networking and transfer of data, where,
+we feel GlobalSCAPE, through CuteFTP, is undoubtedly the industry leader."
+<p>
+-Pragyal Singh<Br>
+Corporate Advisory Services<bR>
+Ernst & Young Private Limited<Br>
+</font>
+</TD>
+<TD valign="top"><font face="verdana,arial,helvetica" size="1"> 
+<img src="http://www.cuteftp.com/images/logos/msxp_logo2.gif" 
+align="right" hspace="20">
+<p align="justify"><b>New Release!</b><br>
+GlobalSCAPE is pleased to announce the latest release of CuteFTP Pro®, 
+"Designed for Windows XP®". The "Designed for XP" logo confirms that 
+CuteFTP 
+Pro 3.0 meets Windows XP compatibility, performance and stability 
+criteria. 
+CuteFTP Pro 3.0 runs on Windows 9x, NT, ME, 2000 and XP. Click 
+<A href="http://www.globalscape.com/download/cuteftppro.asp">
+here</A> to download your free 30-day trial!
+</p>
+<hr noshade color="#cc0033">
+<FONT style="FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #3366cc; 
+FONT-FAMILY: verdana,arial,helvetica">
+NEW!</FONT> <B>XP Logo Certified </B>
+<BR>
+CuteFTP Pro has been updated to conform to Microsoft's Windows XP Design 
+Guidelines. Note: You must have Windows XP in order to take advantage of 
+the 
+new XP interface.
+<P></P>
+<FONT style="FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #3366cc; 
+FONT-FAMILY: verdana,arial,helvetica">
+NEW!</FONT> <B>Enhanced Security</B><BR>
+SSH2 public key support, Cipher and MAC selection, SSH2 rename and 
+ASCII transfers, password policies, and more.
+<P></P>
+<FONT style="FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #3366cc; 
+FONT-FAMILY: verdana,arial,helvetica">
+NEW!</FONT> <B>Site & Folder Maintenance </B>
+<BR>
+Folder Monitoring tool, Backup & Archival tool, Server Time-zone Offset, 
+Preserve Local Time option and more.
+<P></P>
+<FONT style="FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #3366cc; 
+FONT-FAMILY: verdana,arial,helvetica">
+NEW!</FONT> <B>Classic CuteFTP Features</B><BR>
+Load & save queue, Folder Compare, startup and after transfer events, 
+group 
+selection, and more.
+<P></P>
+<FONT style="FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #3366cc; 
+FONT-FAMILY: verdana,arial,helvetica">
+NEW!</FONT> <B>Enhanced Queue</B><BR>
+Queue itemizing and ordering. Includes line-item number column, drag 'n 
+drop 
+ordering, and automatic sorting by item status.
+<P></P>
+<FONT style="FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #3366cc; 
+FONT-FAMILY: verdana,arial,helvetica">
+NEW!</FONT> <B>Transfer Engine</B><BR>
+New methods and properties added and others optimized. New scripting 
+samples 
+and re-written SDK documentation now available.
+<HR color="#cc0033" noShade>
+<BR>
+<a href="http://www.cuteftp.com/images/screenshots/pr3_2.gif">
+<img src="http://www.cuteftp.com/images/screenshots/pr3_2_sm.gif" 
+border="0" align="right"></a><br>
+<B>CuteFTP Pro 3.0 Features</B>
+<P></P>
+<P><B>Secure Connections</B><BR>
+Connect and transfer data securely using SSL, SSH2, OTP (S/KEY) and HTTPS.
+<P>
+<B>Accelerated File Transfers</B><BR>
+CuteFTP Pro has the most powerful transfer engine on the market, bar none.
+<Br>
+<DIV align="right"><I>Click screenshot for larger view</I>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;</DIV>
+<BR>
+<STRONG>Built-in HTML Editor</STRONG><BR>
+Take control of your Web site with this powerful, text-based HTML editor.
+<p>
+<STRONG>Folder Synchronization</STRONG><BR>
+This flexible tool takes the programming out of synchronizing local and 
+remote 
+folders.
+<P><B>Powerful Scheduler</B><BR>
+Simply drop your files in the Queue and click the schedule button for 
+options.
+<P><B>Virtually Unlimited Automation</B><BR>
+Create sophisticated scripts for automating FTP tasks through its COM 
+enabled 
+Transfer Engine.<P>
+<table width="145" cellpadding="0" cellspacing="4" border="0" 
+ID="Table12">
+<tr>
+<td width="15" height="15" valign="top">
+<a 
+href="http://www.globalscape.com/email/redirect.asp?id=pr3unreg&link=buy">
+<img src="http://www.cuteftp.com/images/leftnav/arrow_blue.gif" 
+border="0"></a></td>
+<td valign="top">
+<font style="font-family: verdana,arial,helvetica; font-size: 10pt; 
+font-weight: bold; color: #000000;"><a 
+href="http://www.globalscape.com/email/redirect.asp?id=pr3unreg&link=buy">
+Learn More</a></font>
+</td>
+</tr>
+</table>
+</font></p> </FONT>
+</TD>
+</TR>
+<tr>
+<td colSpan="2"><font face="verdana,arial,helvetica" size="1"> 
+<b>Unsubscribe instructions</b><br>
+If you do not wish to receive announcements from GlobalSCAPE via e-mail, 
+please 
+click the remove link below and accept our apologies for any 
+inconvenience.:<br>
+<a 
+href="http://www.globalscape.com/cgi-bin/rm.cgi?mail=jm-cuteftp@jmason.
+org">
+Remove</a>
+<p></p>
+To receive our newsletters in plain text, please click the link below:<br>
+<a 
+href="http://www.globalscape.com/cgi-bin/rt.cgi?mail=jm-cuteftp@jmason.
+org">
+Plain Text</a></font>
+</td>
+</tr>
+<tr>
+<td colSpan="2"><font face="verdana,arial,helvetica" size="1">
+©2002 <A href="http://www.globalscape.com">
+GlobalSCAPE, Inc.</A> <A 
+href="http://www.globalscape.com/company/privacy.shtml">
+Privacy Policy</A> <A 
+href="http://www.globalscape.com/company/trademarks.shtml">
+Trademarks</A><BR>
+<br>
+Microsoft, Windows, and the Windows logo are trademarks, or registered 
+trademarks of Microsoft Corporation in the United States and/or other 
+countries. </font>
+</td>
+</tr>
+</TABLE>
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td vAlign="top" colSpan="3">
+<IMG src="http://www.cuteftp.com/images/email/newsletter_footer.gif"></td>
+</tr>
+</table>
+<img src="http://www.cuteftp.com/scripts/pv.asp?pid=11">
+
+
+
+
+</BODY></HTML>
+
+------=NextPart00A_000_73019636D--
+
+

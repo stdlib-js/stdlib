@@ -1,0 +1,90 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug 29 11:06:43 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8FA0344167
+	for <jm@localhost>; Thu, 29 Aug 2002 06:05:15 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:05:15 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7SMFiZ12380 for <jm-sa@jmason.org>; Wed, 28 Aug 2002 23:15:44 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17kB4e-0001Lv-00; Wed,
+    28 Aug 2002 15:14:04 -0700
+Received: from adsl-216-103-211-240.dsl.snfc21.pacbell.net
+    ([216.103.211.240] helo=proton.pathname.com) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17kB4L-0006hu-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 28 Aug 2002 15:13:45 -0700
+Received: from quinlan by proton.pathname.com with local (Exim 3.35 #1
+    (Debian)) id 17kB4H-000848-00; Wed, 28 Aug 2002 15:13:41 -0700
+To: Robin Lynn Frank <rlfrank-dated-1030992510.fc97b8@paradigm-omega.com>
+Cc: spamassassin-talk@example.sourceforge.net
+Subject: Re: [SAtalk] O.T. Habeus -- Why?
+References: <1030560510.17408.TMDA@omega.paradigm-omega.net>
+From: Daniel Quinlan <quinlan@pathname.com>
+In-Reply-To: Robin Lynn Frank's message of "Wed, 28 Aug 2002 11:48:12 -0700"
+Message-Id: <yf2sn0yk4x6.fsf@proton.pathname.com>
+X-Mailer: Gnus v5.7/Emacs 20.7
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: 28 Aug 2002 15:13:41 -0700
+Date: 28 Aug 2002 15:13:41 -0700
+
+Robin Lynn Frank <rlfrank@paradigm-omega.com> writes:
+
+> I may be dense, but why would anyone want to utilize Habeus?  To me,
+> it looks like a potential backdoor to anyone's defenses against spam.
+>
+> If I were a spammer, I'd simply set up a server, send out my spam with
+> the Habeus headers and continue till I was reasonably certain I'd been
+> reported.  Then I'd simply reconfigure the server and reconnect to a
+> different IP.  As long as no one can establish my connection to the
+> web sites my spam is directing people to, I'm home free.
+
+Here is the bug I opened:
+
+  http://www.hughes-family.org/bugzilla/show_bug.cgi?id=762
+
+RBLs have the same problem, but there is no negative RBL header rule
+with a -20 score that can be forged, so the problem is unique to Habeas.
+
+> Since I can set up spamassassin to I don't "lose" any email, what do I
+> gain by making it easier for spam to get through??
+
+My primary issue is the magnitude of the negative score and that it was
+not determined empirically.  I am also concerned that it was added after
+the rules freeze, that such a major change was not discussed in advance,
+etc.
+
+There's also no evidence that the rule will actually reduce FPs.  People
+who are smart enough to use the rule are probably capable of writing
+email that doesn't look like spam (I'm not counting spam mailing lists
+which you need to be exempted from spam filtering).
+
+Dan
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

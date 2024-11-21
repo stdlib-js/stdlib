@@ -1,0 +1,77 @@
+From fork-admin@xent.com  Sat Sep  7 21:52:53 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 51EE716F1B
+	for <jm@localhost>; Sat,  7 Sep 2002 21:52:25 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 07 Sep 2002 21:52:25 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8721FC02762 for <jm@jmason.org>;
+    Sat, 7 Sep 2002 03:01:16 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 6472E2940B0; Fri,  6 Sep 2002 18:58:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.superb.net (smtp1.superb.net [207.228.225.14]) by
+    xent.com (Postfix) with SMTP id BA46729409E for <FoRK@xent.com>;
+    Fri,  6 Sep 2002 18:57:38 -0700 (PDT)
+Received: (qmail 21595 invoked from network); 7 Sep 2002 02:00:15 -0000
+Received: from unknown (HELO maya.dyndns.org) (165.154.190.91) by
+    smtp1.superb.net with SMTP; 7 Sep 2002 02:00:15 -0000
+Received: by maya.dyndns.org (Postfix, from userid 501) id 9307D1C0B3;
+    Fri,  6 Sep 2002 21:54:41 -0400 (EDT)
+To: "Jim Whitehead" <ejw@CSE.UCSC.EDU>
+Cc: "FoRK" <FoRK@xent.com>
+Subject: Re: Google? Not in China
+References: <AMEPKEBLDJJCCDEJHAMIIEHJFGAA.ejw@cse.ucsc.edu>
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m2bs7apnry.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 06 Sep 2002 21:54:41 -0400
+
+>>>>> "J" == Jim Whitehead <ejw@CSE.UCSC.EDU> writes:
+
+    J> Seems that governments do have some power over the
+    J> Web, after all.
+
+At the 1993 ITAC "Roadwork" Conference, Peter Mansbridge asked the
+panel of experts how it might be possible to censor the internet.  All
+of the panelists laughed except Bill Buxton.  Peter asked him if he
+knew something the others didn't.  Bill replied that it /was/ possible
+to censor the internet, which drew a gasp from the audience. "All you
+need is a global government more Draconian than any that has occured
+before in history"
+
+Scientology DMCA suits against Norwegians, legal RIAA file-trading
+virii, Bush's Homeland Insecurity, Canada using ISPs as spies, RIAA
+suing Prodigy for P2P users and having Foreign sites barred from the
+US, France tempers Yahoo, China IP-filters Google ... 
+
+Seems Bill didn't know much about how Government really works.  Either
+that, or there's a smelly similarity between Buxton's global Big
+Brother and the US and Chinese.
+
+-- 
+Gary Lawrence Murphy <garym@teledyn.com> TeleDynamics Communications Inc
+ Business Advantage through Community Software : http://www.teledyn.com
+"Computers are useless.  They can only give you answers."(Pablo Picasso)
+
+

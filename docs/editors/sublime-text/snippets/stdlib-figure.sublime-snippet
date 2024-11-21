@@ -1,0 +1,20 @@
+<snippet>
+    <content><![CDATA[<!-- <figure class="figure" align="center" label="fig:${1:TODO}" src="./srv/scripts/${2:TODO}.js" alt="${3:TODO}"> -->
+
+<div class="figure" align="center" data-figure="fig:${1:TODO}">
+    <img src="TODO" alt="${3:TODO}">
+    <br>
+</div>
+
+<!-- </figure> -->
+]]></content>
+
+    <!-- Tab trigger to activate the snippet -->
+    <tabTrigger>stdlib.figure</tabTrigger>
+
+    <!-- Scope the tab trigger will be active in -->
+    <scope>text.html.markdown</scope>
+
+    <!-- Description to show in the menu -->
+    <description>Markdown HTML figure</description>
+</snippet>

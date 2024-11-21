@@ -1,0 +1,64 @@
+From fork-admin@xent.com  Mon Jul 22 18:13:38 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C5204440D6
+	for <jm@localhost>; Mon, 22 Jul 2002 13:13:00 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:13:00 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFxpY15538 for
+    <jm@jmason.org>; Mon, 22 Jul 2002 16:59:51 +0100
+Received: from xent.com ([64.161.22.236]) by webnote.net (8.9.3/8.9.3)
+    with ESMTP id SAA28466 for <jm@jmason.org>; Sun, 21 Jul 2002 18:57:24
+    +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id D70512940A3; Sun, 21 Jul 2002 10:46:12 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from c007.snv.cp.net (h011.c007.snv.cp.net [209.228.33.239]) by
+    xent.com (Postfix) with SMTP id C9FC7294098 for <fork@xent.com>;
+    Sun, 21 Jul 2002 10:46:10 -0700 (PDT)
+Received: (cpmta 5144 invoked from network); 21 Jul 2002 10:55:14 -0700
+Received: from 65.189.7.13 (HELO alumni.rice.edu) by
+    smtp.directvinternet.com (209.228.33.239) with SMTP; 21 Jul 2002 10:55:14
+    -0700
+X-Sent: 21 Jul 2002 17:55:14 GMT
+Message-Id: <3D3AF0DD.9030304@alumni.rice.edu>
+Date: Sun, 21 Jul 2002 12:35:25 -0500
+From: Wayne E Baisley <baisley@alumni.rice.edu>
+User-Agent: Mozilla/5.0 (Windows; U; Win98; en-US; rv:0.9.4)
+    Gecko/20011128 Netscape6/6.2.1
+X-Accept-Language: en-us
+MIME-Version: 1.0
+To: fork@spamassassin.taint.org
+Subject: Re: JPEGs patented
+References: <20020719161136.4DFA2C44E@argote.ch>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Friends of Rohit Khare <fork.xent.com>
+X-Beenthere: fork@spamassassin.taint.org
+
+There's nothing you can know that isn't known.
+Nothing you can see that isn't shown.
+Nowhere you can be that isn't where you're meant to be.
+It's easy.
+All you need is HTML.
+
+By way of proof, there are no jpgs, gifs, pngs, etc here...
+http://www.anagrammy.com/anagflag.html
+
+Cheers,
+Wayne
+
+Yeah yeah yeah
+
+
+
+http://xent.com/mailman/listinfo/fork
+
+

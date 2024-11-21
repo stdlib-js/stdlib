@@ -1,0 +1,24 @@
+
+{{alias}}( str[, ...args] )
+    Inserts array element values into a format string and prints the result.
+
+    If an interpolated argument is not a collection, the argument is broadcasted
+    for each iteration.
+
+    Parameters
+    ----------
+    str: String
+        Format string.
+
+    args: ...any (optional)
+        Collections or values.
+
+    Examples
+    --------
+    > var x = [ 1, 2, 3 ];
+    > var y = [ 4, 5, 6 ];
+    > {{alias}}( '%d < %d ', x, y );
+
+    See Also
+    --------
+

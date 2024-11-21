@@ -1,0 +1,102 @@
+From ilug-admin@linux.ie  Tue Aug  6 11:52:21 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 349E6441E3
+	for <jm@localhost>; Tue,  6 Aug 2002 06:48:18 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:48:18 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g73GjDv20020 for
+    <jm-ilug@jmason.org>; Sat, 3 Aug 2002 17:45:13 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id RAA05888; Sat, 3 Aug 2002 17:43:04 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail2.mail.iol.ie (mail2.mail.iol.ie [194.125.2.193]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id RAA05843; Sat, 3 Aug 2002
+    17:42:55 +0100
+Received: from dialup162-a.ts552.cwt.esat.net ([193.203.156.162]
+    helo=Hobbiton.cod.ie) by mail2.mail.iol.ie with esmtp (Exim 3.35 #1) id
+    17b1sT-0004nw-00; Sat, 03 Aug 2002 17:35:42 +0100
+Received: (from cdaly@localhost) by Hobbiton.cod.ie (8.11.6/8.9.3) id
+    g73GUbl26880; Sat, 3 Aug 2002 17:30:37 +0100
+Date: Sat, 3 Aug 2002 17:30:36 +0100
+From: Conor Daly <conor.daly@oceanfree.net>
+To: ILUG <ilug@linux.ie>
+Cc: Niall O Broin <niall@linux.ie>
+Subject: Re: [ILUG] LCD monitors and linux
+Message-Id: <20020803173036.A26683@Hobbiton.cod.ie>
+Mail-Followup-To: ILUG <ilug@linux.ie>,
+	Niall O Broin <niall@linux.ie>
+References: <20020802172122.A19980@Hobbiton.cod.ie>
+    <20020802194010.GC2530@bagend.makalumedia.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <20020802194010.GC2530@bagend.makalumedia.com>;
+    from niall@linux.ie on Fri, Aug 02, 2002 at 08:40:10PM +0100
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Fri, Aug 02, 2002 at 08:40:10PM +0100 or so it is rumoured hereabouts, 
+Niall O Broin thought:
+> On Fri, Aug 02, 2002 at 05:21:22PM +0100, Conor Daly wrote:
+> 
+> > My 17" CRT monitor having drowned in a flood (10cm squared of burned 
+> > circuit board URGH!) , I'm thinking of a 15" LCD as a replacement.  
+> > What with me going to the continent and all next week, I might wait and 
+> > buy one there (for a reasonable price (Dave Neary!  Any good sources?)).
+> 
+> Conor - it's a rather large continent - people might need to know where you
+> are going to suggest sources. And if you're buying abroad, make sure you get
+> to test it - many places won't have facilities for you to do that.
+
+Um yeah, I suppose that'd be useful info...  Western France, La Rochelle
+area.  Test as in test with Linux or just turn on and see that it works?
+
+> > Question is: CAn I just plug in _any_ lcd monitor and expect it to work?  
+> > Are there special incantations needed for XFree86 to work.  Needless to
+> > say, it'll be a bit difficult to bring it back to the shop once I'm home 
+> > in Dublin and find it doesn't work!
+> 
+> Any monitor should just work - they all have VGA connectors and any half
+> decent brand will be know about by XFree setup programs in modern
+> distributions. However, if you have the budget (insurance paying for the
+> dead monitor, perhaps ? - and WHERE was your monitor that it got caught in a
+
+Bathroom upstairs, Computer desk downstairs, got dripped into, started
+clicking rapidly and smoking before it was noticed and unplugged...
+
+> flood ?) getting a monitor with a DVI input is best. Of course, you'll need
+> a DVI out video card then, too. DVI provides a much better picture than VGA
+
+I guess that requires something more in the way of budget then...  Given
+that this monitor was serving as the single monitor for 4 boxen (via a
+4-way vga KVM switch), I'd be looking at investing in 4 DVI cards along
+with another KVM to suit while a VGA version _should_ just plug into
+place. 
+
+Conor
+-- 
+Conor Daly <conor.daly@oceanfree.net>
+
+Domestic Sysadmin :-)
+---------------------
+Faenor.cod.ie
+  5:20pm  up 72 days,  2:37,  0 users,  load average: 0.08, 0.02, 0.01
+Hobbiton.cod.ie
+  5:19pm  up 14 days, 23:42,  1 user,  load average: 0.01, 0.04, 0.00
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

@@ -1,0 +1,19 @@
+
+currentSlide
+    Returns the current presentation slide index.
+
+    The returned index is the nominal (i.e., one-based) slide index.
+
+    Returns
+    -------
+    idx: integer
+        Current presentation slide index.
+
+    Examples
+    --------
+    > currentSlide
+
+    See Also
+    --------
+    jumpTo, next, numSlides, prev
+

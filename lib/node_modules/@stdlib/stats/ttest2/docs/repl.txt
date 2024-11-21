@@ -1,0 +1,193 @@
+
+{{alias}}( x, y[, options] )
+    Computes a two-sample Student's t test.
+
+    By default, the function performs a two-sample t-test for the null
+    hypothesis that the data in arrays or typed arrays `x` and `y` is
+    independently drawn from normal distributions with equal means.
+
+    The returned object comes with a `.print()` method which when invoked will
+    print a formatted output of the results of the hypothesis test.
+
+    Parameters
+    ----------
+    x: Array<number>
+        First data array.
+
+    y: Array<number>
+        Second data array.
+
+    options: Object (optional)
+        Options.
+
+    options.alpha: number (optional)
+        Number in the interval `[0,1]` giving the significance level of the
+        hypothesis test. Default: `0.05`.
+
+    options.alternative: string (optional)
+        Either `two-sided`, `less` or `greater`. Indicates whether the
+        alternative hypothesis is that `x` has a larger mean than `y`
+        (`greater`), `x` has a smaller mean than `y` (`less`) or the means are
+        the same (`two-sided`). Default: `'two-sided'`.
+
+    options.difference: number (optional)
+        Number denoting the difference in means under the null hypothesis.
+        Default: `0`.
+
+    options.variance: string (optional)
+        String indicating if the test should be conducted under the assumption
+        that the unknown variances of the normal distributions are `equal` or
+        `unequal`. As a default choice, the function carries out the Welch test
+        (using the Satterthwaite approximation for the degrees of freedom),
+        which does not have the requirement that the variances of the underlying
+        distributions are equal. If the equal variances assumption seems
+        warranted, set the option to `equal`. Default: `unequal`.
+
+    Returns
+    -------
+    out: Object
+        Test result object.
+
+    out.alpha: number
+        Used significance level.
+
+    out.rejected: boolean
+        Test decision.
+
+    out.pValue: number
+        p-value of the test.
+
+    out.statistic: number
+        Value of test statistic.
+
+    out.ci: Array<number>
+        1-alpha confidence interval for the mean.
+
+    out.nullValue: number
+        Assumed difference in means under H0.
+
+    out.xmean: number
+        Sample mean of `x`.
+
+    out.ymean: number
+        Sample mean of `y`.
+
+    out.alternative: string
+        Alternative hypothesis (`two-sided`, `less` or `greater`).
+
+    out.df: number
+        Degrees of freedom.
+
+    out.method: string
+        Name of test.
+
+    out.print: Function
+        Function to print formatted output.
+
+    Examples
+    --------
+    // Student's sleep data:
+    > var x = [ 0.7, -1.6, -0.2, -1.2, -0.1, 3.4, 3.7, 0.8, 0.0, 2.0 ];
+    > var y = [ 1.9, 0.8, 1.1, 0.1, -0.1, 4.4, 5.5, 1.6, 4.6, 3.4 ];
+    > var out = {{alias}}( x, y )
+    {
+        rejected: false,
+        pValue: ~0.079,
+        statistic: ~-1.861,
+        ci: [ ~-3.365, ~0.205 ],
+        // ...
+    }
+
+    // Print table output:
+    > var table = out.print()
+    Welch two-sample t-test
+
+    Alternative hypothesis: True difference in means is not equal to 0
+
+        pValue: 0.0794
+        statistic: -1.8608
+        95% confidence interval: [-3.3655,0.2055]
+
+    Test Decision: Fail to reject null in favor of alternative at 5%
+    significance level
+
+    // Choose a different significance level than `0.05`:
+    > out = {{alias}}( x, y, { 'alpha': 0.1 } );
+    > table = out.print()
+    Welch two-sample t-test
+
+    Alternative hypothesis: True difference in means is not equal to 0
+
+        pValue: 0.0794
+        statistic: -1.8608
+        90% confidence interval: [-3.0534,-0.1066]
+
+    Test Decision: Reject null in favor of alternative at 10% significance level
+
+    // Perform one-sided tests:
+    > out = {{alias}}( x, y, { 'alternative': 'less' } );
+    > table = out.print()
+    Welch two-sample t-test
+
+    Alternative hypothesis: True difference in means is less than 0
+
+        pValue: 0.0397
+        statistic: -1.8608
+        df: 17.7765
+        95% confidence interval: [-Infinity,-0.1066]
+
+    Test Decision: Reject null in favor of alternative at 5% significance level
+
+    > out = {{alias}}( x, y, { 'alternative': 'greater' } );
+    > table = out.print()
+    Welch two-sample t-test
+
+    Alternative hypothesis: True difference in means is greater than 0
+
+        pValue: 0.9603
+        statistic: -1.8608
+        df: 17.7765
+        95% confidence interval: [-3.0534,Infinity]
+
+    Test Decision: Fail to reject null in favor of alternative at 5%
+    significance level
+
+    // Run tests with equal variances assumption:
+    > x = [ 2, 3, 1, 4 ];
+    > y = [ 1, 2, 3, 1, 2, 5, 3, 4 ];
+    > out = {{alias}}( x, y, { 'variance': 'equal' } );
+    > table = out.print()
+    Two-sample t-test
+
+    Alternative hypothesis: True difference in means is not equal to 0
+
+        pValue: 0.8848
+        statistic: -0.1486
+        df: 10
+        95% confidence interval: [-1.9996,1.7496]
+
+    Test Decision: Fail to reject null in favor of alternative at 5%
+    significance level
+
+    // Test for a difference in means besides zero:
+    > var rnorm = {{alias:@stdlib/random/base/normal}}.factory({ 'seed': 372 } );
+    > x = new Array( 100 );
+    > for ( i = 0; i < x.length; i++ ) {
+    ...     x[ i ] = rnorm( 2.0, 3.0 );
+    ... }
+    > y = new Array( 100 );
+    > for ( i = 0; i < x.length; i++ ) {
+    ...     y[ i ] = rnorm( 1.0, 3.0 );
+    ... }
+    > out = {{alias}}( x, y, { 'difference': 1.0, 'variance': 'equal' } )
+    {
+        rejected: false,
+        pValue: ~0.642,
+        statistic: ~-0.466,
+        ci: [ ~-0.0455, ~1.646 ],
+        // ...
+    }
+
+    See Also
+    --------
+

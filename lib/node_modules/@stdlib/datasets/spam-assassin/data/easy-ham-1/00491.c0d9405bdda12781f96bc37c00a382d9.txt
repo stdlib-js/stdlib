@@ -1,0 +1,87 @@
+From fork-admin@xent.com  Sat Sep  7 21:54:10 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 8ECCB16F03
+	for <jm@localhost>; Sat,  7 Sep 2002 21:52:47 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 07 Sep 2002 21:52:47 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g87KAIC31918 for <jm@jmason.org>;
+    Sat, 7 Sep 2002 21:10:21 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 820932940D3; Sat,  7 Sep 2002 13:07:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from relay.pair.com (relay1.pair.com [209.68.1.20]) by xent.com
+    (Postfix) with SMTP id 394F429409E for <fork@xent.com>; Sat,
+    7 Sep 2002 13:06:04 -0700 (PDT)
+Received: (qmail 19746 invoked from network); 7 Sep 2002 20:08:45 -0000
+Received: from adsl-67-119-24-60.dsl.snfc21.pacbell.net (HELO golden)
+    (67.119.24.60) by relay1.pair.com with SMTP; 7 Sep 2002 20:08:45 -0000
+X-Pair-Authenticated: 67.119.24.60
+Message-Id: <005701c256aa$5d12d6e0$640a000a@golden>
+From: "Gordon Mohr" <gojomo@usa.net>
+To: <fork@spamassassin.taint.org>
+References: <20020907135257.7E5CBC44D@argote.ch>
+Subject: Re: Selling Wedded Bliss (was Re: Ouch...)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sat, 7 Sep 2002 13:08:41 -0700
+
+Definitional nit to pick:
+
+Robert Harley writes:
+> It is perfectly obvious that (heterosexual) promiscuity is exactly,
+> precisely identical between males and females.
+> 
+> Of course the shapes of the distributions may differ.
+
+You've redefined "promiscuity" above as "total" or "average" 
+activity, which seems to rob it of its common meaning: 
+activity above some specific threshold (usually "one") or 
+norm, or involving extra or indiscriminate variety. 
+"Promiscuity" is thus inherently a description of 
+distributions rather than averages.
+
+Consider a population of 3 males and 3 females. Let
+there be three pairings which result in each person
+having sex once. Then, let one of the males also have 
+sex with the other two females. 
+
+Sure, the average number of sex acts and sex partners
+is equal between the sexes, tautologically. 
+
+But here more women than men are:
+ - above the single partner threshold
+ - above the overall average 1.67 acts/partners threshold
+ - above the overall median 1.5 acts/partners
+ - above the overall mode 1 acts/partners
+
+And here women have a higher mode (2) and median (2) 
+number of partners.
+
+So in this contrived population, females are more 
+"promiscuous" than males, unless "promiscuity" is 
+defined uselessly.
+
+- Gordon
+
+

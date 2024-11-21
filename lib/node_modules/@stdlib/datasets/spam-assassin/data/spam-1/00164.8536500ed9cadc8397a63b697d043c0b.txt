@@ -1,0 +1,46 @@
+From fred@bluemail.dk  Mon Sep  2 12:14:58 2002
+Return-Path: <fred@bluemail.dk>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.spamassassin.taint.org (Postfix) with ESMTP id AFD2E43F99
+	for <zzzz@localhost>; Mon,  2 Sep 2002 07:14:56 -0400 (EDT)
+Received: from mail.webnote.net [193.120.211.219]
+	by localhost with POP3 (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 02 Sep 2002 12:14:56 +0100 (IST)
+Received: from bluemail.dk (IDENT:nobody@[211.57.216.185])
+	by webnote.net (8.9.3/8.9.3) with SMTP id WAA12021;
+	Thu, 29 Aug 2002 22:32:54 +0100
+Date: Thu, 29 Aug 2002 22:32:54 +0100
+From: fred@bluemail.dk
+Reply-To: <fred@bluemail.dk>
+Message-ID: <006e47b18dec$2455b2e1$6ba87ad3@kodbgc>
+To: gnvb@hotmail.com
+Subject: FORTUNE 500 COMPANY HIRING, AT HOME REPS.
+MiME-Version: 1.0
+X-Priority: 3 (Normal)
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.00.2919.6700
+Importance: Normal
+Content-Type: text/html; charset="iso-8859-1"
+
+Help wanted.  We are a 14 year old fortune 500 company, that is
+growing at a tremendous rate.  We are looking for individuals who
+want to work from home.
+
+This is an opportunity to make an excellent income.  No experience
+is required.  We will train you.
+
+So if you are looking to be employed from home with a career that has
+vast opportunities, then go:
+
+http://www.basetel.com:27000/wealthnow
+
+We are looking for energetic and self motivated people.  If that is you
+than click on the link and fill out the form, and one of our
+employement specialist will contact you.
+
+To be removed from our link simple go to:
+
+http://www.basetel.com:27000/remove.html
+
+

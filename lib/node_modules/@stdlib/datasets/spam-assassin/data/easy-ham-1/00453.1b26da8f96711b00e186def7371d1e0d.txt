@@ -1,0 +1,208 @@
+From fork-admin@xent.com  Fri Sep  6 11:41:57 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 47A3A16F74
+	for <jm@localhost>; Fri,  6 Sep 2002 11:39:47 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 11:39:47 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g86923C27140 for
+    <jm@jmason.org>; Fri, 6 Sep 2002 10:02:03 +0100
+Received: from xent.com ([64.161.22.236]) by webnote.net (8.9.3/8.9.3)
+    with ESMTP id DAA19743 for <jm@jmason.org>; Fri, 6 Sep 2002 03:09:23 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id E8FBD294171; Thu,  5 Sep 2002 19:06:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mithral.com (watcher.mithral.com [204.153.244.1]) by
+    xent.com (Postfix) with SMTP id 6A03A2940AA for <fork@xent.com>;
+    Thu,  5 Sep 2002 19:05:13 -0700 (PDT)
+Received: (qmail 22974 invoked by uid 1111); 6 Sep 2002 02:07:40 -0000
+From: "Adam L. Beberg" <beberg@mithral.com>
+To: <fork@spamassassin.taint.org>
+Subject: Selling Wedded Bliss (was Re: Ouch...)
+In-Reply-To: <Pine.LNX.4.44.0209051533260.31180-100000@isolnetsux.techmonkeys.net>
+Message-Id: <Pine.LNX.4.33.0209051857410.22913-100000@watcher.mithral.com>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 5 Sep 2002 19:07:40 -0700 (PDT)
+
+...an alternative to the "kind of de-feminized, over-sized, self-centered,
+mercenary-minded lady available on the British singles scene,"
+
+Glad to see American culture is making it's way into the British bars too :)
+God bless us uncivilized bastards, every one.
+
+Still, definately something not right about the below. People are now
+cheaper then a decent laptop? (ok, so we knew that already)
+
+-------------
+
+Selling Wedded Bliss Big Business in Thailand
+Thu Aug 29,10:19 AM ET
+By Andrew Marshall
+
+BANGKOK, Thailand (Reuters) - English dentist Ken Moylan came to Thailand
+looking for a wife. It took two hours to find her.
+
+"The first day I went out with Wan, she came back to my hotel and hung all
+my clothes up and tidied the room. I thought it was marvelous," he said. "I
+knew then there was something special."
+
+Moylan, 49, is one of thousands of men who use introduction agencies to meet
+-- and marry -- Thai women. He lives in England now with 28-year-old Wan,
+who is expecting their first child.
+
+Critics of marriage agencies say they exploit the grinding poverty of women
+in developing countries, offering dreams of a new life in the West that
+often turn sour. But Moylan says he has no regrets about coming to Thailand
+in search of a wife.
+
+"I got to Thailand at 2 p.m., and by 4 p.m. I'd met Wan," he said. "I knew I
+found her attractive. I could tell straight away that she was very caring."
+
+Moylan spent a week in Thailand, and after returning to England kept in
+touch with Wan by phone and mail. Six months later she came to England and
+the couple married.
+
+MR. MARRIAGE
+
+Lawrence Lynch, 49, runs Thai Professional Introduction Services, the agency
+Moylan used to meet his wife. Lynch, who calls himself "Mr. Marriage,"
+started the company after also marrying a Thai woman through an introduction
+agency.
+
+Since then he has helped set up hundreds of marriages.
+
+"In the last five years we've done about 400," he said. "To the best of my
+knowledge, they have all been successful."
+
+Male clients pay $2,213 for the service, although men from countries that
+require them to handle some of the visa work on their own get a discount.
+Clients then get to view catalogs and videos of hundreds of Thai women
+looking for a husband. If they like what they see they come to Bangkok.
+
+Clients are introduced to several women in chaperoned meetings in Lynch's
+office -- encounters that can often be awkward given mutual shyness and
+language problems.
+
+"We find that the gentlemen are usually just as nervous as the ladies,"
+Lynch said. "But once they start meeting the ladies they soon relax."
+
+After the first meeting, couples can decide to go on dates to get to know
+each other better. Within two weeks of arrival, Lynch says, almost every
+client has found a potential wife.
+
+"At the end of a fortnight it's very, very rare for a guy to go back and
+think he hasn't made his mind up," he said. In most cases, marriage follows,
+usually within the next year.
+
+Roongthip Kamchat, managing director of Thai No. 1 Connections, a
+Bangkok-based agency, says she has introduced about 1,000 couples, and less
+than 10 percent have broken up.
+
+Roongthip says she sometimes has a difficult time calming men who have just
+arrived in Bangkok looking for a wife.
+
+"Sometimes they are very nervous," she said. "And sometimes they are very
+impatient and say 'Give me a lady, I want to get married now.' I say: 'Calm
+down, OK, we'll talk."'
+
+But if men are really in a hurry, Roongthip says, she can find them a wife
+and get them married within a week. Lynch says clients he has found wives
+for include a blind man, a man with one leg and a man with post-traumatic
+stress disorder.
+
+WHY?
+
+Similar marriage agencies can be found in many developing countries. Critics
+say they thrive on the neediness of lonely Western men who are unable to
+form relationships in their own country, and on the desperation of
+impoverished women who believe they can find a better life in the West.
+
+But Moylan says that if the arrangement makes both partners happy, there is
+no reason to object. "If you talk about people who are needy, I think
+everybody wants someone to love them, and wants someone to love, so yes, I
+need Wan," he said.
+
+"Thai women are dissatisfied with life in Thailand. I think there's no
+secret there. They are looking for a better life. I don't have a problem
+with that. In return they are willing to give a lot of love and care to
+their future husband."
+
+Lynch says men are dissatisfied with Western women too, and that is why they
+choose to use his agency.
+
+His brochure promises an alternative to the "kind of de-feminized,
+over-sized, self-centered, mercenary-minded lady available on the British
+singles scene," and says he can make dreams come true even for men who are
+not "God's gift to women."
+
+Roongthip said many Western men found it difficult to meet women in their
+own countries -- and found Thai women attractive.
+
+"They don't know how to meet women. Even if they go to pubs or discotheques
+or restaurants or department stores, how can they ask people to marry them?
+Impossible," she said.
+
+"Many Thai girls are slim, have long hair, black eyes, small nose. They are
+good at taking care and joking and laughing, not strict. Different from
+ladies from other countries."
+
+Although many couples married through agencies have a considerable age gap,
+the agencies say this is not a problem. They say language problems are also
+not a major obstacle.
+
+"Thai ladies are not ageist, and they have no qualms whatsoever about having
+a husband who is significantly older," Lynch said. "When I met my wife she
+couldn't speak a word of English. We muddled along with a phonetic
+dictionary. The ladies are very keen to learn English and they pick it up
+very quickly."
+
+Many agencies also offer tuition for woman on what to expect when they move
+to the West.
+
+"We have kitchens, we have study classes," Roongthip said. "We teach them
+how to eat, and when to make tea."
+
+PITFALLS
+
+But not all dreams come true. "Bee" is a 26-year-old Thai woman who went to
+Switzerland two years ago with a man she met through an agency. Now she is
+back in Bangkok, sad and angry.
+
+"He had no friends, and I was so lonely," she said. "I tried to make him
+happy but he just wanted sex and somebody to keep his house clean. He never
+spoke to me."
+
+Bee came back to Bangkok earlier this year. "I thought I would be happy
+there," she said. "But it was the worst time of my life."
+
+Lynch says that while some agencies are badly run, he makes checks to ensure
+unsuitable candidates are weeded out.
+
+"We are ethical and professional," he said. "We will not take on all
+comers."
+
+Moylan says that despite possible pitfalls, his own marriage is proof the
+arrangement can work. Wan's sister has just signed up with Lynch's company,
+looking for a foreign husband.
+
+"Perhaps there are cases of women being exploited. I'm sure there are,"
+Moylan said. "But in the majority of cases the women get a good deal."
+
+
+

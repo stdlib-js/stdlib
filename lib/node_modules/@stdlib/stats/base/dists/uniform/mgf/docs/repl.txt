@@ -1,0 +1,74 @@
+
+{{alias}}( t, a, b )
+    Evaluates the moment-generating function (MGF) for a uniform
+    distribution with minimum support `a` and maximum support `b` at a value
+    `t`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `a >= b`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    t: number
+        Input value.
+
+    a: number
+        Minimum support.
+
+    b: number
+        Maximum support.
+
+    Returns
+    -------
+    out: number
+        Evaluated MGF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 2.0, 0.0, 4.0 )
+    ~372.495
+    > y = {{alias}}( -0.2, 0.0, 4.0 )
+    ~0.688
+    > y = {{alias}}( 2.0, 0.0, 1.0 )
+    ~3.195
+    > y = {{alias}}( 0.5, 3.0, 2.0 )
+    NaN
+    > y = {{alias}}( 0.5, 3.0, 3.0 )
+    NaN
+    > y = {{alias}}( NaN, 0.0, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, 0.0, NaN )
+    NaN
+
+
+{{alias}}.factory( a, b )
+    Returns a function for evaluating the moment-generating function (MGF)
+    of a uniform distribution with minimum support `a` and maximum support `b`.
+
+    Parameters
+    ----------
+    a: number
+        Minimum support.
+
+    b: number
+        Maximum support.
+
+    Returns
+    -------
+    mgf: Function
+        Moment-generating function (MGF).
+
+    Examples
+    --------
+    > var mymgf = {{alias}}.factory( 6.0, 7.0 );
+    > var y = mymgf( 0.1 )
+    ~1.916
+    > y = mymgf( 1.1 )
+    ~1339.321
+
+    See Also
+    --------
+

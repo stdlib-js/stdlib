@@ -1,0 +1,125 @@
+From exmh-users-admin@redhat.com  Tue Sep 10 11:23:37 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id D79B316F03
+	for <jm@localhost>; Tue, 10 Sep 2002 11:23:36 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 10 Sep 2002 11:23:36 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8A7TJC21707 for
+    <jm-exmh@jmason.org>; Tue, 10 Sep 2002 08:29:19 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 6661E3EA7F; Tue, 10 Sep 2002
+    03:29:02 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id C7A203F316
+    for <exmh-users@listman.redhat.com>; Tue, 10 Sep 2002 03:24:25 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g8A7OKL13912 for exmh-users@listman.redhat.com; Tue, 10 Sep 2002
+    03:24:20 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g8A7OKm13904 for
+    <exmh-users@redhat.com>; Tue, 10 Sep 2002 03:24:20 -0400
+Received: from ka.graffl.net (ka.graffl.net [193.154.165.8]) by
+    mx1.redhat.com (8.11.6/8.11.6) with SMTP id g8A77vv04319 for
+    <exmh-users@redhat.com>; Tue, 10 Sep 2002 03:07:59 -0400
+Received: from fsck.waldner.priv.at (fsck.waldner.priv.at
+    [213.225.31.166]) by ka.graffl.net (8.12.3/8.12.3/Debian -4) with ESMTP id
+    g8A7OACn016909 for <exmh-users@redhat.com>; Tue, 10 Sep 2002 09:24:10
+    +0200
+Received: from fsck.intern.waldner.priv.at (localhost [127.0.0.1]) by
+    fsck.waldner.priv.at (8.12.3/8.12.3/Debian -4) with ESMTP id
+    g8A7O9M3004728 (version=TLSv1/SSLv3 cipher=EDH-RSA-DES-CBC3-SHA bits=168
+    verify=OK) for <exmh-users@redhat.com>; Tue, 10 Sep 2002 09:24:10 +0200
+Received: (from waldner@localhost) by fsck.intern.waldner.priv.at
+    (8.12.3/8.12.3/Debian -4) id g8A7O9jH004727 for exmh-users@redhat.com;
+    Tue, 10 Sep 2002 09:24:09 +0200
+Message-Id: <200209100724.g8A7O9jH004727@fsck.intern.waldner.priv.at>
+X-Mailer: exmh version 2.5 07/13/2001 (debian 2.5-1) with nmh-1.0.4+dev
+To: exmh-users@spamassassin.taint.org
+Subject: Re: Sorting
+In-Reply-To: Your message of
+    "Mon, 09 Sep 2002 22:06:58 CDT."
+    <3642.1031627218@dimebox>
+From: Robert Waldner <waldner@waldner.priv.at>
+X-Organization: Bah. Speaking only for me humble self.
+X-GPG: telnet fsck.waldner.priv.at for public key
+X-GPG-Fingerprint: 406F 241A 9E21 CF92 1DED  A0A8 1343 7348 9AF9 DE82
+X-GPG-Keyid: 0x9AF9DE82
+MIME-Version: 1.0
+Content-Type: multipart/signed;
+    boundary="----------=_1031642648-417-32";
+    micalg="pgp-sha1";
+    protocol="application/pgp-signature"
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Tue, 10 Sep 2002 09:23:50 +0200
+
+This is a multi-part message in MIME format.
+It has been signed conforming to RFC2015.
+You'll need PGP or GPG to check the signature.
+
+------------=_1031642648-417-32
+Content-Type: text/plain; charset=us-ascii
+
+
+On Mon, 09 Sep 2002 22:06:58 CDT, Hal DeVore writes:
+>		scan `mhpath +`/$f/.xmhcache
+
+Shouldn't that read
+               scan >`mhpath +`/$f/.xmhcache
+ ?
+
+(And, JIC something else changed the context in the background, it 
+ doesn't hurt to explicitly state the folder:
+               scan "+$f" >`mhpath +`/$f/.xmhcache
+ )
+
+cheers,
+&rw
+-- 
+-- "The problem with the IBM keyboards I have is that when you
+-- use them to beat lusers, the caps come off the keys.
+-- No real damage, but still a nuisance."   -- Martijn Berlage
+
+
+
+------------=_1031642648-417-32
+Content-Type: application/pgp-signature; name="signature.ng"
+Content-Disposition: inline; filename="signature.ng"
+Content-Transfer-Encoding: 7bit
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.7 (GNU/Linux)
+
+iD8DBQE9fZ4YE0NzSJr53oIRAlxqAJsG8DKAx7bxB6bGzz70VdsAkx6UiQCdG8pJ
+s2JuFuUt7Kaz3xb0JyOx87A=
+=RFA6
+-----END PGP SIGNATURE-----
+
+------------=_1031642648-417-32--
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

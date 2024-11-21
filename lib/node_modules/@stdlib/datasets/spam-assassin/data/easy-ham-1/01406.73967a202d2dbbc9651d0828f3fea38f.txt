@@ -1,0 +1,103 @@
+From razor-users-admin@lists.sourceforge.net  Mon Aug 26 15:16:58 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0378F44169
+	for <jm@localhost>; Mon, 26 Aug 2002 10:15:14 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 15:15:14 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7NKaYZ07246 for <jm-razor@jmason.org>; Fri, 23 Aug 2002 21:36:34 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17iL1M-0000go-00; Fri,
+    23 Aug 2002 13:27:04 -0700
+Received: from eclectic.kluge.net ([66.92.69.221]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17iL0h-0003bq-00 for <razor-users@lists.sourceforge.net>; Fri,
+    23 Aug 2002 13:26:23 -0700
+Received: (from felicity@localhost) by eclectic.kluge.net (8.11.6/8.11.6)
+    id g7NKQIa00718; Fri, 23 Aug 2002 16:26:18 -0400
+From: Theo Van Dinter <felicity@kluge.net>
+To: Sven Willenberger <sven@dmv.com>
+Cc: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] Razor with sendmail
+Message-Id: <20020823202618.GQ12303@kluge.net>
+References: <E17iJlB-0005yT-00@usw-sf-list2.sourceforge.net>
+    <01aa01c24ae2$2a5baa70$f2812d40@landshark>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+    protocol="application/pgp-signature";
+    boundary="o99acAvKqrTZeiCU"
+Content-Disposition: inline
+In-Reply-To: <01aa01c24ae2$2a5baa70$f2812d40@landshark>
+User-Agent: Mutt/1.4i
+X-GPG-Keyserver: http://wwwkeys.pgp.net
+X-GPG-Keynumber: 0xE580B363
+X-GPG-Fingerprint: 75B1 F6D0 8368 38E7 A4C5  F6C2 02E3 9051 E580 B363
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Fri, 23 Aug 2002 16:26:18 -0400
+Date: Fri, 23 Aug 2002 16:26:18 -0400
+
+
+--o99acAvKqrTZeiCU
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+On Fri, Aug 23, 2002 at 04:17:55PM -0400, Sven Willenberger wrote:
+> To see all the options compiled into (and version of) sendmail, try the
+> following line:
+>=20
+> echo \$Z | /path/to/sendmail -bt -d0
+
+gives you the same information as "sendmail -d0.1 < /dev/null", which
+doesn't include milter information.  (actually the -d0 part gives you the
+info, the $Z gives you sendmail version out of the test mode (-bt)... so
+it's slightly different, but not really.)
+
+--=20
+Randomly Generated Tagline:
+Be warned that typing \fBkillall \fIname\fP may not have the desired
+ effect on non-Linux systems, especially when done by a privileged user.
+ (From the killall manual page)
+
+--o99acAvKqrTZeiCU
+Content-Type: application/pgp-signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE9ZppqAuOQUeWAs2MRAj5BAJ9xX0ndKBQQ8A6hbdoBDFSWMhasXACfXtzK
+pjl1dQioTsb92uk/0HUhGbo=
+=m9Tu
+-----END PGP SIGNATURE-----
+
+--o99acAvKqrTZeiCU--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+

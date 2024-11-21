@@ -1,0 +1,83 @@
+From rpm-list-admin@freshrpms.net  Wed Aug 14 11:00:23 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B0D1C44145
+	for <jm@localhost>; Wed, 14 Aug 2002 05:51:59 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 14 Aug 2002 10:51:59 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7E8nI407422 for
+    <jm-rpm@jmason.org>; Wed, 14 Aug 2002 09:49:18 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7E8g2J29481; Wed, 14 Aug 2002 10:42:02
+    +0200
+Received: from athlon.ckloiber.com (rdu25-28-106.nc.rr.com [24.25.28.106])
+    by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g7E8fbJ29410 for
+    <rpm-list@freshrpms.net>; Wed, 14 Aug 2002 10:41:38 +0200
+Received: (from ckloiber@localhost) by athlon.ckloiber.com (8.11.6/8.11.6)
+    id g7E8fUK02211; Wed, 14 Aug 2002 04:41:30 -0400
+X-Authentication-Warning: athlon.ckloiber.com: ckloiber set sender to
+    ckloiber@ckloiber.com using -f
+Subject: DVD+RW tools available (Was: Re: How to add service port ?)
+From: Chris Kloiber <ckloiber@ckloiber.com>
+To: rpm-zzzlist@freshrpms.net
+In-Reply-To: <20020812123237.4014ef57.matthias@egwn.net>
+References: <3D578B98.79F80294@traderman.co.uk>
+    <20020812123237.4014ef57.matthias@egwn.net>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.3 (1.0.3-6)
+Message-Id: <1029314490.1736.8.camel@athlon.ckloiber.com>
+MIME-Version: 1.0
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: 14 Aug 2002 04:41:30 -0400
+Date: 14 Aug 2002 04:41:30 -0400
+
+On Mon, 2002-08-12 at 06:32, Matthias Saou wrote:
+> Once upon a time, Yen wrote :
+> 
+> > How do I install / add an additional service port to the system which
+> > can be access via Microsoft ODBC driver?
+> 
+> I honestly have no idea, and this is probably not the best list to expect
+> an answer as it is supposed to discuss rpm packages/packaging matters.
+> 
+> If you're using Red Hat Linux 7.3, you should try this list :
+> https://listman.redhat.com/mailman/listinfo/valhalla-list
+
+I had to take a stab at answering that for a paying customer yesterday.
+I _think_ you need to install postgreql-odbc and its' dependencies. Then
+probably a bit of configuration to open a port to the network. But
+Matthias is right, this is not the right place for this question.
+
+To bring things back on topic, I was practicing my "rpmbuild'n skillz"
+and made an rpm with some simple software tools to drive my DVD+RW
+burner. No GUI frontend, but it works just fine from the command line. I
+even used it to burn a bootable DVD version of Red Hat 7.3.
+
+ftp://people.redhat.com/ckloiber/dvd+rw-tools-0.1.src.rpm
+
+-- 
+Chris Kloiber
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

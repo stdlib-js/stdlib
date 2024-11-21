@@ -1,0 +1,34 @@
+
+{{alias}}( x )
+    Evaluates the trigamma function.
+
+    If `x` is `0` or a negative `integer`, the `function` returns `NaN`.
+
+    If provided `NaN`, the `function` returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    y: number
+        Function value.
+
+    Examples
+    --------
+    > var y = {{alias}}( -2.5 )
+    ~9.539
+    > y = {{alias}}( 1.0 )
+    ~1.645
+    > y = {{alias}}( 10.0 )
+    ~0.105
+    > y = {{alias}}( NaN )
+    NaN
+    > y = {{alias}}( -1.0 )
+    NaN
+
+    See Also
+    --------
+

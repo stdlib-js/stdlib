@@ -1,0 +1,74 @@
+From spamassassin-devel-admin@lists.sourceforge.net  Fri Oct  4 11:07:09 2002
+Return-Path: <spamassassin-devel-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 1523216F7D
+	for <jm@localhost>; Fri,  4 Oct 2002 11:04:17 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 04 Oct 2002 11:04:17 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g93KwfK14634 for <jm@jmason.org>; Thu, 3 Oct 2002 21:58:41 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17xD2u-0006EO-00; Thu,
+    03 Oct 2002 13:58:08 -0700
+Received: from smtp10.atl.mindspring.net ([207.69.200.246]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17xD2W-0002GR-00 for <spamassassin-devel@lists.sourceforge.net>;
+    Thu, 03 Oct 2002 13:57:44 -0700
+Received: from user-2injgi2.dsl.mindspring.com ([165.121.194.66]
+    helo=belphegore.hughes-family.org) by smtp10.atl.mindspring.net with esmtp
+    (Exim 3.33 #1) id 17xD2U-00072h-00 for
+    spamassassin-devel@lists.sourceforge.net; Thu, 03 Oct 2002 16:57:42 -0400
+Received: by belphegore.hughes-family.org (Postfix, from userid 48) id
+    3CDB7A8787; Thu,  3 Oct 2002 13:57:42 -0700 (PDT)
+From: bugzilla-daemon@hughes-family.org
+To: spamassassin-devel@example.sourceforge.net
+X-Bugzilla-Reason: AssignedTo
+Message-Id: <20021003205742.3CDB7A8787@belphegore.hughes-family.org>
+Subject: [SAdev] [Bug 1006] Spamassassin's build process makes packaging
+    unnecessarily difficult
+Sender: spamassassin-devel-admin@example.sourceforge.net
+Errors-To: spamassassin-devel-admin@example.sourceforge.net
+X-Beenthere: spamassassin-devel@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-devel-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-devel@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Id: SpamAssassin Developers <spamassassin-devel.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchives/forum.php?forum=spamassassin-devel>
+X-Original-Date: Thu,  3 Oct 2002 13:57:42 -0700 (PDT)
+Date: Thu,  3 Oct 2002 13:57:42 -0700 (PDT)
+
+http://www.hughes-family.org/bugzilla/show_bug.cgi?id=1006
+
+
+
+
+
+------- Additional Comments From spamassassin-contrib@msquadrat.de  2002-10-03 13:57 -------
+A solution could be the preprocessor in combination with PM_FILTER -- if we 
+get the ExtUtils::MakeMaker versioning stuff right (see bug 1046). 
+
+
+
+------- You are receiving this mail because: -------
+You are the assignee for the bug, or are watching the assignee.
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-devel mailing list
+Spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+
+

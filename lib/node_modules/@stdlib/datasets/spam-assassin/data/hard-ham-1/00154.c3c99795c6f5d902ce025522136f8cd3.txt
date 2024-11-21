@@ -1,0 +1,68 @@
+Return-Path: nobody@example.com
+Delivery-Date: Wed Sep 18 00:00:00 1972
+Received: from vineyard.net (K1.VINEYARD.NET [204.17.195.90])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6OLoR409929
+	for <vineyard.reekie@spamtraps.taint.org>; Wed, 24 Jul 2002 22:50:27 +0100
+Received: by vineyard.net (Postfix)
+	id 7556091821; Wed, 24 Jul 2002 17:49:42 -0400 (EDT)
+Delivered-To: reekie@vineyard.net
+Received: from vineyard.net (loopback [127.0.0.1])
+	by smtp.vineyard.net (Postfix) with ESMTP id 4BEB391864
+	for <reekie@vineyard.net>; Wed, 24 Jul 2002 17:49:42 -0400 (EDT)
+Received: from n25.grp.scd.yahoo.com (n25.grp.scd.yahoo.com [66.218.66.81])
+	by vineyard.net (Postfix) with SMTP id 9ED0E917B8
+	for <reekie@vineyard.net>; Wed, 24 Jul 2002 17:49:41 -0400 (EDT)
+X-eGroups-Return: sentto-1951259-218-1027547380-reekie=vineyard.net@returns.groups.yahoo.com
+Received: from [66.218.67.201] by n25.grp.scd.yahoo.com with NNFMP; 24 Jul 2002 21:49:40 -0000
+X-Sender: sdowns@snet.net
+X-Apparently-To: GHSclassof1977@yahoogroups.com
+Received: (EGP: mail-8_0_7_4); 24 Jul 2002 21:49:39 -0000
+Received: (qmail 78766 invoked from network); 24 Jul 2002 21:49:39 -0000
+Received: from unknown (66.218.66.218)
+  by m9.grp.scd.yahoo.com with QMQP; 24 Jul 2002 21:49:39 -0000
+Received: from unknown (HELO n10.grp.scd.yahoo.com) (66.218.66.65)
+  by mta3.grp.scd.yahoo.com with SMTP; 24 Jul 2002 21:49:39 -0000
+Received: from [66.218.67.129] by n10.grp.scd.yahoo.com with NNFMP; 24 Jul 2002 21:49:39 -0000
+To: GHSclassof1977@yahoogroups.com
+Message-ID: <ahn7dj+o4jl@eGroups.com>
+User-Agent: eGroups-EW/0.82
+X-Mailer: Yahoo Groups Message Poster
+From: "sdowns@snet.net" <sdowns@snet.net>
+X-Originating-IP: 204.60.208.169
+X-Yahoo-Profile: sdowns@snet.net
+MIME-Version: 1.0
+Mailing-List: list GHSclassof1977@yahoogroups.com; contact GHSclassof1977-owner@yahoogroups.com
+Delivered-To: mailing list GHSclassof1977@yahoogroups.com
+Precedence: bulk
+List-Unsubscribe: <mailto:GHSclassof1977-unsubscribe@yahoogroups.com>
+Date: Wed, 24 Jul 2002 21:49:39 -0000
+Subject: [GHSclassof1977] Boneheads
+Reply-To: GHSclassof1977@yahoogroups.com
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+
+Hi Everyone,
+There seem to be several "boneheads" in our class. A few months ago I 
+ran into John Dahill, he asked me if I would go to the reunion picnic 
+with him. His girlfriend and my guyfriend wouldn't know anyone there, 
+so I said yes. Yesterday he told me he can't go!! All this time he 
+thought it was on Saturday!! Oh well, I will see everyone there 
+sometime through the afternoon.
+Wendy Downs
+
+
+------------------------ Yahoo! Groups Sponsor ---------------------~-->
+Free $5 Love Reading
+Risk Free!
+http://us.click.yahoo.com/NsdPZD/PfREAA/Ey.GAA/vUjolB/TM
+---------------------------------------------------------------------~->
+
+To unsubscribe from this group, send an email to:
+GHSclassof1977-unsubscribe@yahoogroups.com
+
+ 
+
+Your use of Yahoo! Groups is subject to http://docs.yahoo.com/info/terms/ 
+
+
+

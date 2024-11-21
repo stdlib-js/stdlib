@@ -1,0 +1,1426 @@
+
+{{alias}}( fields[, options] )
+    Returns a named typed tuple factory.
+
+    Named tuples assign a property name, and thus a meaning, to each position in
+    a tuple and allow for more readable, self-documenting code.
+
+    Named typed tuples can be used wherever typed arrays are used, with the
+    added benefit that they allow accessing fields by both field name and
+    position index.
+
+    Named typed tuples may be one the following data types:
+
+    - float64: double-precision floating-point numbers (IEEE 754).
+    - float32: single-precision floating-point numbers (IEEE 754).
+    - int32: 32-bit two's complement signed integers.
+    - uint32: 32-bit unsigned integers.
+    - int16: 16-bit two's complement signed integers.
+    - uint16: 16-bit unsigned integers.
+    - int8: 8-bit two's complement signed integers.
+    - uint8: 8-bit unsigned integers.
+    - uint8c: 8-bit unsigned integers clamped to 0-255.
+
+    Parameters
+    ----------
+    fields: Array<string>
+        Field (property) names.
+
+    options: Object (optional)
+        Function options.
+
+    options.dtype: string (optional)
+        Default tuple data type. If a data type is not provided to a named typed
+        tuple factory, this option specifies the underlying tuple data type.
+        Default: 'float64'.
+
+    options.name: string (optional)
+        Tuple name. Default: 'tuple'.
+
+    Returns
+    -------
+    factory: Function
+        Named typed tuple factory.
+
+    Examples
+    --------
+    > var opts = {};
+    > opts.name = 'Point';
+    > var factory = {{alias}}( [ 'x', 'y' ], opts );
+    > var tuple = factory();
+
+
+factory()
+    Returns a named typed tuple of the default data type.
+
+    Returns
+    -------
+    tuple: TypedArray
+        Named typed tuple.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y' ] );
+    > p = factory();
+    > p.x
+    0.0
+    > p.y
+    0.0
+    > p[ 0 ]
+    0.0
+    > p[ 1 ]
+    0.0
+
+
+factory( dtype )
+    Returns a named typed tuple of the specified data type.
+
+    Parameters
+    ----------
+    dtype: string
+        Tuple data type.
+
+    Returns
+    -------
+    tuple: TypedArray
+        Named typed tuple.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y' ] );
+    > p = factory( 'int32' );
+    > p.x
+    0
+    > p.y
+    0
+    > p[ 0 ]
+    0
+    > p[ 1 ]
+    0
+
+
+factory( typedarray[, dtype] )
+    Creates a named typed tuple from a typed array.
+
+    Parameters
+    ----------
+    typedarray: TypedArray
+        Typed array from which to generate a named typed tuple.
+
+    dtype: string (optional)
+        Tuple data type.
+
+    Returns
+    -------
+    tuple: TypedArray
+        Named typed tuple.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y' ] );
+    > p = factory( {{alias:@stdlib/array/float64}}[ 1.0, -1.0 ] );
+    > p.x
+    1.0
+    > p.y
+    -1.0
+    > p[ 0 ]
+    1.0
+    > p[ 1 ]
+    -1.0
+
+
+factory( obj[, dtype] )
+    Creates a named typed tuple from an array-like object or iterable.
+
+    Parameters
+    ----------
+    obj: Object
+        Array-like object or iterable from which to generate a named typed
+        tuple.
+
+    dtype: string (optional)
+        Tuple data type.
+
+    Returns
+    -------
+    tuple: TypedArray
+        Named typed tuple.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y' ] );
+    > p = factory( [ 1, -1 ], 'int32' );
+    > p.x
+    1
+    > p.y
+    -1
+    > p[ 0 ]
+    1
+    > p[ 1 ]
+    -1
+
+
+factory( buffer[, byteOffset][, dtype] )
+    Returns a named typed tuple view of an ArrayBuffer.
+
+    The view length equals the number of tuple fields.
+
+    Parameters
+    ----------
+    buffer: ArrayBuffer
+        Underlying ArrayBuffer.
+
+    byteOffset: integer (optional)
+        Integer byte offset specifying the location of the first tuple element.
+        Default: 0.
+
+    dtype: string (optional)
+        Tuple data type.
+
+    Returns
+    -------
+    tuple: TypedArray
+        Named typed tuple.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y' ] );
+    > var buf = new {{alias:@stdlib/array/buffer}}( 16 );
+    > var p = factory( buf, 4, 'float32' );
+    > p.x
+    0.0
+    > p.y
+    0.0
+    > p[ 0 ]
+    0.0
+    > p[ 1 ]
+    0.0
+
+
+factory.from( src[, map[, thisArg]] )
+    Creates a new named typed tuple from an array-like object or an iterable.
+
+    A callback is provided the following arguments:
+
+    - value: source value.
+    - index: source index.
+    - field: tuple field.
+
+    Parameters
+    ----------
+    src: ArrayLike|Iterable
+        Source of tuple elements.
+
+    map: Function (optional)
+        Callback to invoke for each source element.
+
+    thisArg: Any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    tuple: TypedArray
+        Named typed tuple.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y' ] );
+    > function mapFcn( v ) { return v * 2.0; };
+    > var p = factory.from( [ 1.0, -1.0 ], mapFcn );
+    > p.x
+    2.0
+    > p.y
+    -2.0
+    > p[ 0 ]
+    2.0
+    > p[ 1 ]
+    -2.0
+
+
+factory.fromObject( obj[, map[, thisArg]] )
+    Creates a new named typed tuple from an object containing tuple fields.
+
+    A callback is provided the following arguments:
+
+    - value: source object tuple field value.
+    - field: source object tuple field name.
+
+    Parameters
+    ----------
+    obj: Object
+        Source object.
+
+    map: Function (optional)
+        Callback to invoke for each source object tuple field.
+
+    thisArg: Any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    tuple: TypedArray
+        Named typed tuple.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y' ] );
+    > var p = factory.fromObject( { 'x': 2.0, 'y': -2.0 } );
+    > p.x
+    2.0
+    > p.y
+    -2.0
+    > p[ 0 ]
+    2.0
+    > p[ 1 ]
+    -2.0
+
+
+factory.of( element0[, element1[, ...elementN]] )
+    Creates a new named typed tuple from a variable number of arguments.
+
+    The number of arguments *must* equal the number of tuple fields.
+
+    Parameters
+    ----------
+    element0: number
+        Tuple element.
+
+    element1: number (optional)
+        Tuple element.
+
+    elementN: number (optional)
+        Tuple elements.
+
+    Returns
+    -------
+    tuple: TypedArray
+        Named typed tuple.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y' ] );
+    > var p = factory.of( 2.0, -2.0 );
+    > p.x
+    2.0
+    > p.y
+    -2.0
+    > p[ 0 ]
+    2.0
+    > p[ 1 ]
+    -2.0
+
+
+tuple.BYTES_PER_ELEMENT
+    Size (in bytes) of each tuple element.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y' ] );
+    > var p = factory( [ 1.0, -1.0 ] );
+    > p.BYTES_PER_ELEMENT
+    8
+
+
+tuple.buffer
+    Pointer to the underlying data buffer.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y' ] );
+    > var p = factory( [ 1.0, -1.0 ] );
+    > p.buffer
+    <ArrayBuffer>
+
+
+tuple.byteLength
+    Length (in bytes) of the tuple.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y' ] );
+    > var p = factory( [ 1.0, -1.0 ] );
+    > p.byteLength
+    16
+
+
+tuple.byteOffset
+    Offset (in bytes) of a tuple from the start of its underlying ArrayBuffer.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y' ] );
+    > var p = factory( [ 1.0, -1.0 ] );
+    > p.byteOffset
+    0
+
+
+tuple.length
+    Tuple length (i.e., number of elements).
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y' ] );
+    > var p = factory( [ 1.0, -1.0 ] );
+    > p.length
+    2
+
+
+tuple.name
+    Tuple name.
+
+    Examples
+    --------
+    > var opts = { 'name': 'Point' };
+    > var factory = {{alias}}( [ 'x', 'y' ], opts );
+    > var p = factory( [ 1.0, -1.0 ] );
+    > p.name
+    'Point'
+
+
+tuple.fields
+    Returns the list of tuple fields.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y' ] );
+    > var p = factory( [ 1.0, -1.0 ] );
+    > p.fields
+    [ 'x', 'y' ]
+
+
+tuple.orderedFields
+    Returns the list of tuple fields in index order.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y' ] );
+    > var p = factory( [ 1.0, -1.0 ] );
+    > p[ 0 ]
+    1.0
+    > p.sort();
+    > p[ 0 ]
+    -1.0
+    > p.fields
+    [ 'x', 'y' ]
+    > p.orderedFields
+    [ 'y', 'x' ]
+
+
+tuple.copyWithin( target, start[, end] )
+    Copies a sequence of elements within the tuple starting at `start` and
+    ending at `end` (non-inclusive) to the position starting at `target`.
+
+    Parameters
+    ----------
+    target: integer
+        Target start index position.
+
+    start: integer
+        Source start index position.
+
+    end: integer (optional)
+        Source end index position. Default: tuple.length.
+
+    Returns
+    -------
+    tuple: TypedArray
+        Modified tuple.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y', 'z', 'w', 'v' ] );
+    > var p = factory( [ 2.0, -2.0, 1.0, -1.0, 1.0 ] );
+    > p.copyWithin( 3, 0, 2 );
+    > p.w
+    2.0
+    > p.v
+    -2.0
+
+
+tuple.entries()
+    Returns an iterator for iterating over tuple key-value pairs.
+
+    Returns
+    -------
+    iter: Iterator
+        Iterator for iterating over tuple key-value pairs.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y' ] );
+    > var p = factory( [ 1.0, -1.0 ] );
+    > it = p.entries();
+    > it.next().value
+    [ 0, 'x', 1.0 ]
+    > it.next().value
+    [ 1, 'y', -1.0 ]
+    > it.next().done
+    true
+
+
+tuple.every( predicate[, thisArg] )
+    Tests whether all tuple elements pass a test implemented by a predicate
+    function.
+
+    A predicate function is provided the following arguments:
+
+    - value: tuple element.
+    - index: tuple index.
+    - field: tuple field name.
+    - tuple: tuple on which the method is invoked.
+
+    Parameters
+    ----------
+    predicate: Function
+        Predicate function which tests tuple elements. If a predicate function
+        returns a truthy value, a tuple element passes; otherwise, a tuple
+        element fails.
+
+    thisArg: Any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether all tuple elements pass.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y' ] );
+    > var p = factory( [ 1.0, -1.0 ] );
+    > function predicate( v ) { return ( v >= 0.0 ); };
+    > p.every( predicate )
+    false
+
+
+tuple.fieldOf( searchElement[, fromIndex] )
+    Returns the field of the first tuple element strictly equal to a search
+    element.
+
+    The method does not distinguish between signed and unsigned zero.
+
+    If unable to locate a search element, the method returns `undefined`.
+
+    Parameters
+    ----------
+    searchElement: number
+        Search element.
+
+    fromIndex: integer (optional)
+        Tuple index from which to begin searching. If provided a negative value,
+        the method resolves the start index relative to the last tuple element.
+        Default: 0.
+
+    Returns
+    -------
+    field: string|undefined
+        Tuple field.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y', 'z' ] );
+    > var p = factory( [ 1.0, 0.0, -1.0 ] );
+    > var f = p.fieldOf( 2.0 )
+    undefined
+    > f = p.fieldOf( -1.0 )
+    'z'
+
+
+tuple.fill( value[, start[, end]] )
+    Fills a tuple from a start index to an end index (non-inclusive) with a
+    provided value.
+
+    Parameters
+    ----------
+    value: number
+        Fill value.
+
+    start: integer (optional)
+        Start index. If less than zero, the start index is resolved relative to
+        the last tuple element. Default: 0.
+
+    end: integer (optional)
+        End index (non-inclusive). If less than zero, the end index is resolved
+        relative to the last tuple element. Default: tuple.length.
+
+    Returns
+    -------
+    tuple: TypedArray
+        Modified tuple.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y' ] );
+    > var p = factory( [ 1.0, -1.0 ] );
+    > p.fill( 2.0 );
+    > p.x
+    2.0
+    > p.y
+    2.0
+
+
+tuple.filter( predicate[, thisArg] )
+    Creates a new tuple which includes those elements for which a predicate
+    function returns a truthy value.
+
+    A predicate function is provided the following arguments:
+
+    - value: tuple element.
+    - index: tuple index.
+    - field: tuple field name.
+    - tuple: tuple on which the method is invoked.
+
+    The returned tuple has the same data type as the host tuple.
+
+    If a predicate function does not return a truthy value for any tuple
+    element, the method returns `null`.
+
+    Parameters
+    ----------
+    predicate: Function
+        Predicate function which filters tuple elements. If a predicate function
+        returns a truthy value, a tuple element is included in the output tuple;
+        otherwise, a tuple element is not included in the output tuple.
+
+    thisArg: Any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    tuple: TypedArray
+        A new named typed tuple.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y', 'z' ] );
+    > var p1 = factory( [ 1.0, 0.0, -1.0 ] );
+    > function predicate( v ) { return ( v >= 0.0 ); };
+    > var p2 = p1.filter( predicate );
+    > p2.fields
+    [ 'x', 'y' ]
+
+
+tuple.find( predicate[, thisArg] )
+    Returns the first tuple element for which a provided predicate function
+    returns a truthy value.
+
+    A predicate function is provided the following arguments:
+
+    - value: tuple element.
+    - index: tuple index.
+    - field: tuple field name.
+    - tuple: tuple on which the method is invoked.
+
+    If a predicate function never returns a truthy value, the method returns
+    `undefined`.
+
+    Parameters
+    ----------
+    predicate: Function
+        Predicate function which tests tuple elements.
+
+    thisArg: Any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    value: number|undefined
+        Tuple element.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y', 'z' ] );
+    > var p = factory( [ 1.0, 0.0, -1.0 ] );
+    > function predicate( v ) { return ( v < 0.0 ); };
+    > var v = p.find( predicate )
+    -1.0
+
+
+tuple.findField( predicate[, thisArg] )
+    Returns the field of the first tuple element for which a provided predicate
+    function returns a truthy value.
+
+    A predicate function is provided the following arguments:
+
+    - value: tuple element.
+    - index: tuple index.
+    - field: tuple field name.
+    - tuple: tuple on which the method is invoked.
+
+    If a predicate function never returns a truthy value, the method returns
+    `undefined`.
+
+    Parameters
+    ----------
+    predicate: Function
+        Predicate function which tests tuple elements.
+
+    thisArg: Any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    field: string|undefined
+        Tuple field.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y', 'z' ] );
+    > var p = factory( [ 1.0, 0.0, -1.0 ] );
+    > function predicate( v ) { return ( v < 0.0 ); };
+    > var f = p.findField( predicate )
+    'z'
+
+
+tuple.findIndex( predicate[, thisArg] )
+    Returns the index of the first tuple element for which a provided predicate
+    function returns a truthy value.
+
+    A predicate function is provided the following arguments:
+
+    - value: tuple element.
+    - index: tuple index.
+    - field: tuple field name.
+    - tuple: tuple on which the method is invoked.
+
+    If a predicate function never returns a truthy value, the method returns
+    `-1`.
+
+    Parameters
+    ----------
+    predicate: Function
+        Predicate function which tests tuple elements.
+
+    thisArg: Any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    idx: integer
+        Tuple index.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y', 'z' ] );
+    > var p = factory( [ 1.0, 0.0, -1.0 ] );
+    > function predicate( v ) { return ( v < 0.0 ); };
+    > var idx = p.findIndex( predicate )
+    2
+
+
+tuple.forEach( fcn[, thisArg] )
+    Invokes a callback for each tuple element.
+
+    A provided function is provided the following arguments:
+
+    - value: tuple element.
+    - index: tuple index.
+    - field: tuple field name.
+    - tuple: tuple on which the method is invoked.
+
+    Parameters
+    ----------
+    fcn: Function
+        Function to invoke for each tuple element.
+
+    thisArg: Any (optional)
+        Callback execution context.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y', 'z' ] );
+    > var p = factory( [ 1, 0, -1 ], 'int32' );
+    > var str = ' ';
+    > function fcn( v, i, f ) { str += f + '=' + v + ' '; };
+    > p.forEach( fcn );
+    > str
+    ' x=1 y=0 z=-1 '
+
+
+tuple.includes( searchElement[, fromIndex] )
+    Returns a boolean indicating whether a tuple includes a search element.
+
+    The method does not distinguish between signed and unsigned zero.
+
+    Parameters
+    ----------
+    searchElement: number
+        Search element.
+
+    fromIndex: integer (optional)
+        Tuple index from which to begin searching. If provided a negative value,
+        the method resolves the start index relative to the last tuple element.
+        Default: 0.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a tuple includes a search element.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y', 'z' ] );
+    > var p = factory( [ 1.0, 0.0, -1.0 ] );
+    > var bool = p.includes( 2.0 )
+    false
+    > bool = p.includes( -1.0 )
+    true
+
+
+tuple.indexOf( searchElement[, fromIndex] )
+    Returns the index of the first tuple element strictly equal to a search
+    element.
+
+    The method does not distinguish between signed and unsigned zero.
+
+    If unable to locate a search element, the method returns `-1`.
+
+    Parameters
+    ----------
+    searchElement: number
+        Search element.
+
+    fromIndex: integer (optional)
+        Tuple index from which to begin searching. If provided a negative value,
+        the method resolves the start index relative to the last tuple element.
+        Default: 0.
+
+    Returns
+    -------
+    idx: integer
+        Tuple index.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y', 'z' ] );
+    > var p = factory( [ 1.0, 0.0, -1.0 ] );
+    > var idx = p.indexOf( 2.0 )
+    -1
+    > idx = p.indexOf( -1.0 )
+    2
+
+
+tuple.ind2key( ind )
+    Converts a tuple index to a field name.
+
+    If provided an out-of-bounds index, the method returns `undefined`.
+
+    Parameters
+    ----------
+    ind: integer
+        Tuple index. If less than zero, the method resolves the index relative
+        to the last tuple element.
+
+    Returns
+    -------
+    field: string|undefined
+        Field name.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y', 'z' ] );
+    > var p = factory( [ 1.0, 0.0, -1.0 ] );
+    > p.ind2key( 1 )
+    'y'
+    > p.ind2key( 100 )
+    undefined
+
+
+tuple.join( [separator] )
+    Serializes a tuple by joining all tuple elements as a string.
+
+    Parameters
+    ----------
+    separator: string (optional)
+        String delineating tuple elements. Default: ','.
+
+    Returns
+    -------
+    str: string
+        Tuple serialized as a string.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y', 'z' ] );
+    > var p = factory( [ 1, 0, -1 ], 'int32' );
+    > p.join( '|' )
+    '1|0|-1'
+
+
+tuple.keys()
+    Returns an iterator for iterating over tuple keys.
+
+    Returns
+    -------
+    iter: Iterator
+        Iterator for iterating over tuple keys.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y' ] );
+    > var p = factory( [ 1.0, -1.0 ] );
+    > it = p.keys();
+    > it.next().value
+    [ 0, 'x' ]
+    > it.next().value
+    [ 1, 'y' ]
+    > it.next().done
+    true
+
+
+tuple.key2ind( field )
+    Converts a field name to a tuple index.
+
+    If provided an unknown field name, the method returns `-1`.
+
+    Parameters
+    ----------
+    field: string
+        Tuple field name.
+
+    Returns
+    -------
+    idx: integer
+        Tuple index.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y', 'z' ] );
+    > var p = factory( [ 1.0, 0.0, -1.0 ] );
+    > p.key2ind( 'y' )
+    1
+
+
+tuple.lastFieldOf( searchElement[, fromIndex] )
+    Returns the field of the last tuple element strictly equal to a search
+    element.
+
+    The method iterates from the last tuple element to the first tuple element.
+
+    The method does not distinguish between signed and unsigned zero.
+
+    If unable to locate a search element, the method returns `undefined`.
+
+    Parameters
+    ----------
+    searchElement: number
+        Search element.
+
+    fromIndex: integer (optional)
+        Tuple index from which to begin searching. If provided a negative value,
+        the method resolves the start index relative to the last tuple element.
+        Default: -1.
+
+    Returns
+    -------
+    field: string|undefined
+        Tuple field.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y', 'z', 'w', 'v' ] );
+    > var p = factory( [ 1.0, 0.0, -1.0, 0.0, 1.0 ] );
+    > var f = p.lastFieldOf( 2.0 )
+    undefined
+    > f = p.lastFieldOf( 0.0 )
+    'w'
+
+
+tuple.lastIndexOf( searchElement[, fromIndex] )
+    Returns the index of the last tuple element strictly equal to a search
+    element.
+
+    The method iterates from the last tuple element to the first tuple element.
+
+    The method does not distinguish between signed and unsigned zero.
+
+    If unable to locate a search element, the method returns `-1`.
+
+    Parameters
+    ----------
+    searchElement: number
+        Search element.
+
+    fromIndex: integer (optional)
+        Tuple index from which to begin searching. If provided a negative value,
+        the method resolves the start index relative to the last tuple element.
+        Default: -1.
+
+    Returns
+    -------
+    idx: integer
+        Tuple index.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y', 'z', 'w', 'v' ] );
+    > var p = factory( [ 1.0, 0.0, -1.0, 0.0, 1.0 ] );
+    > var idx = p.lastIndexOf( 2.0 )
+    -1
+    > idx = p.lastIndexOf( 0.0 )
+    3
+
+
+tuple.map( fcn[, thisArg] )
+    Maps each tuple element to an element in a new tuple.
+
+    A provided function is provided the following arguments:
+
+    - value: tuple element.
+    - index: tuple index.
+    - field: tuple field name.
+    - tuple: tuple on which the method is invoked.
+
+    The returned tuple has the same data type as the host tuple.
+
+    Parameters
+    ----------
+    fcn: Function
+        Function which maps tuple elements to elements in the new tuple.
+
+    thisArg: Any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    tuple: TypedArray
+        A new named typed tuple.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y', 'z' ] );
+    > var p1 = factory( [ 1.0, 0.0, -1.0 ] );
+    > function fcn( v ) { return v * 2.0; };
+    > var p2 = p1.map( fcn );
+    > p2.x
+    2.0
+    > p2.y
+    0.0
+    > p2.z
+    -2.0
+
+
+tuple.reduce( fcn[, initialValue] )
+    Applies a function against an accumulator and each element in a tuple and
+    returns the accumulated result.
+
+    The provided function is provided the following arguments:
+
+    - acc: accumulated result.
+    - value: current tuple element.
+    - index: index of the current tuple element.
+    - field: field name corresponding to the current tuple element.
+    - tuple: tuple on which the method is invoked.
+
+    If provided an initial value, the method invokes a provided function with
+    the initial value as the first argument and the first tuple element as the
+    second argument.
+
+    If not provided an initial value, the method invokes a provided function
+    with the first tuple element as the first argument and the second tuple
+    element as the second argument.
+
+    Parameters
+    ----------
+    fcn: Function
+        Function to apply.
+
+    initialValue: Any (optional)
+        Initial accumulation value.
+
+    Returns
+    -------
+    out: Any
+        Accumulated result.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y', 'z' ] );
+    > var p = factory( [ 1.0, 0.0, -1.0 ] );
+    > function fcn( acc, v ) { return acc + (v*v); };
+    > var v = p.reduce( fcn, 0.0 )
+    2.0
+
+
+tuple.reduceRight( fcn[, initialValue] )
+    Applies a function against an accumulator and each element in a tuple and
+    returns the accumulated result, iterating from right to left.
+
+    The provided function is provided the following arguments:
+
+    - acc: accumulated result.
+    - value: current tuple element.
+    - index: index of the current tuple element.
+    - field: field name corresponding to the current tuple element.
+    - tuple: tuple on which the method is invoked.
+
+    If provided an initial value, the method invokes a provided function with
+    the initial value as the first argument and the last tuple element as the
+    second argument.
+
+    If not provided an initial value, the method invokes a provided function
+    with the last tuple element as the first argument and the second-to-last
+    tuple element as the second argument.
+
+    Parameters
+    ----------
+    fcn: Function
+        Function to apply.
+
+    initialValue: Any (optional)
+        Initial accumulation value.
+
+    Returns
+    -------
+    out: Any
+        Accumulated result.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y', 'z' ] );
+    > var p = factory( [ 1.0, 0.0, -1.0 ] );
+    > function fcn( acc, v ) { return acc + (v*v); };
+    > var v = p.reduceRight( fcn, 0.0 )
+    2.0
+
+
+tuple.reverse()
+    Reverses a tuple *in-place*.
+
+    This method mutates the tuple on which the method is invoked.
+
+    Returns
+    -------
+    tuple: TypedArray
+        Modified tuple.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y', 'z' ] );
+    > var p = factory( [ 1.0, 0.0, -1.0 ] );
+    > p[ 0 ]
+    1.0
+    > p.x
+    1.0
+    > p.reverse();
+    > p[ 0 ]
+    -1.0
+    > p.x
+    1.0
+
+
+tuple.set( arr[, offset] )
+    Sets tuple elements.
+
+    Parameters
+    ----------
+    arr: ArrayLike
+        Source array containing tuple values to set.
+
+    offset: integer (optional)
+        Tuple index at which to start writing values. Default: 0.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y', 'z' ] );
+    > var p = factory( [ 1.0, 0.0, -1.0 ] );
+    > p[ 1 ]
+    0.0
+    > p.y
+    0.0
+    > p.set( [ -2.0, 2.0 ], 1 );
+    > p[ 1 ]
+    -2.0
+    > p.y
+    -2.0
+    > p[ 2 ]
+    2.0
+    > p.z
+    2.0
+
+
+tuple.slice( [begin[, end]] )
+    Copies tuple elements to a new tuple with the same underlying data type as
+    the host tuple.
+
+    If the method is unable to resolve indices to a non-empty tuple subsequence,
+    the method returns `null`.
+
+    Parameters
+    ----------
+    begin: integer (optional)
+        Start element index (inclusive). If less than zero, the start index is
+        resolved relative to the last tuple element. Default: 0.
+
+    end: integer (optional)
+        End element index (exclusive). If less than zero, the end index is
+        resolved relative to the last tuple element. Default: tuple.length.
+
+    Returns
+    -------
+    tuple: TypedArray
+        A new named typed tuple.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y', 'z' ] );
+    > var p1 = factory( [ 1.0, 0.0, -1.0 ] );
+    > p1.fields
+    [ 'x', 'y', 'z' ]
+    > var p2 = p1.slice( 1 );
+    > p2.fields
+    [ 'y', 'z' ]
+    > p2.y
+    0.0
+    > p2.z
+    -1.0
+
+
+tuple.some( predicate[, thisArg] )
+    Tests whether at least one tuple element passes a test implemented by a
+    predicate function.
+
+    A predicate function is provided the following arguments:
+
+    - value: tuple element.
+    - index: tuple index.
+    - field: tuple field name.
+    - tuple: tuple on which the method is invoked.
+
+    Parameters
+    ----------
+    predicate: Function
+        Predicate function which tests tuple elements. If a predicate function
+        returns a truthy value, a tuple element passes; otherwise, a tuple
+        element fails.
+
+    thisArg: Any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether at least one tuple element passes.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y' ] );
+    > var p = factory( [ 1.0, -1.0 ] );
+    > function predicate( v ) { return ( v < 0.0 ); };
+    > p.some( predicate )
+    true
+
+
+tuple.sort( [compareFunction] )
+    Sorts a tuple *in-place*.
+
+    Sorting a tuple does *not* affect field assignments. Accessing a tuple field
+    before and after sorting will always return the same tuple element. However,
+    this behavior is generally not true when accessing tuple elements according
+    to tuple index. In summary, sorting affects index order but not field
+    assignments.
+
+    The comparison function is provided two tuple elements per invocation: `a`
+    and `b`.
+
+    The comparison function return value determines the sort order as follows:
+
+    - If the comparison function returns a value less than zero, then the method
+    sorts `a` to an index lower than `b` (i.e., `a` should come *before* `b`).
+
+    - If the comparison function returns a value greater than zero, then the
+    method sorts `a` to an index higher than `b` (i.e., `b` should come *before*
+    `a`).
+
+    - If the comparison function returns zero, then the relative order of `a`
+    and `b` should remain unchanged.
+
+    This method mutates the tuple on which the method is invoked.
+
+    Parameters
+    ----------
+    compareFunction: Function (optional)
+        Function which specifies the sort order. The default sort order is
+        ascending order.
+
+    Returns
+    -------
+    tuple: TypedArray
+        Modified tuple.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y', 'z', 'w', 'v' ] );
+    > var p = factory( [ 1.0, -1.0, 0.0, 2.0, -2.0 ] );
+    > p.sort();
+    > p.orderedFields
+    [ 'v', 'y', 'z', 'x', 'w' ]
+    > p[ 0 ]
+    -2.0
+    > p.x
+    1.0
+    > p[ 1 ]
+    -1.0
+    > p.y
+    -1.0
+    > p.key2ind( 'x' )
+    3
+
+
+tuple.subarray( [begin[, end]] )
+    Creates a new typed array over the same underlying ArrayBuffer and with the
+    same underlying data type as the host tuple.
+
+    If the method is unable to resolve indices to a non-empty tuple subsequence,
+    the method returns an empty typed array.
+
+    Parameters
+    ----------
+    begin: integer (optional)
+        Start element index (inclusive). If less than zero, the start index is
+        resolved relative to the last tuple element. Default: 0.
+
+    end: integer (optional)
+        End element index (exclusive). If less than zero, the end index is
+        resolved relative to the last tuple element. Default: tuple.length.
+
+    Returns
+    -------
+    arr: TypedArray
+        A new typed array view.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y', 'z', 'w', 'v' ] );
+    > var p = factory( [ 1.0, -1.0, 0.0, 2.0, -2.0 ] );
+    > var arr = p.subarray( 2 )
+    <Float64Array>[ 0.0, 2.0, -2.0 ]
+    > arr.length
+    3
+
+
+tuple.subtuple( [begin[, end]] )
+    Creates a new named typed tuple over the same underlying ArrayBuffer and
+    with the same underlying data type as the host tuple.
+
+    If the function is unable to resolve indices to a non-empty tuple
+    subsequence, the function returns `null`.
+
+    Parameters
+    ----------
+    begin: integer (optional)
+        Start element index (inclusive). If less than zero, the start index is
+        resolved relative to the last tuple element. Default: 0.
+
+    end: integer (optional)
+        End element index (exclusive). If less than zero, the end index is
+        resolved relative to the last tuple element. Default: tuple.length.
+
+    Returns
+    -------
+    tuple: TypedArray|null
+        A new named typed tuple.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y', 'z', 'w', 'v' ] );
+    > var p1 = factory( [ 1.0, -1.0, 0.0, 2.0, -2.0 ] );
+    > var p2 = p1.subtuple( 2 );
+    > p2.fields
+    [ 'z', 'w', 'v' ]
+    > p2[ 0 ]
+    0.0
+    > p2.z
+    0.0
+    > p2[ 1 ]
+    2.0
+    > p2.w
+    2.0
+    > p2[ 2 ]
+    -2.0
+    > p2.v
+    -2.0
+    > p2.length
+    3
+
+
+tuple.toJSON()
+    Serializes a tuple as JSON.
+
+    Returns
+    -------
+    obj: Object
+        A tuple JSON representation.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y', 'z' ] );
+    > var p = factory( [ 1.0, -1.0, 0.0 ] );
+    > p.toJSON()
+    { 'x': 1.0, 'y': -1.0, 'z': 0.0 }
+
+
+tuple.toLocaleString( [locales[, options]] )
+    Serializes a tuple as a locale-specific string.
+
+    Parameters
+    ----------
+    locales: string|Array<string> (optional)
+        A BCP 47 language tag, or an array of such tags.
+
+    options: Object (optional)
+        Options.
+
+    Returns
+    -------
+    str: string
+        A typed array string representation.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y', 'z' ] );
+    > var p = factory( [ 1.0, -1.0, 0.0 ], 'int32' );
+    > p.toLocaleString()
+    '1,-1,0'
+
+
+tuple.toString()
+    Serializes a tuple as a string.
+
+    Returns
+    -------
+    str: string
+        A tuple string representation.
+
+    Examples
+    --------
+    > opts = { 'name': 'Point' };
+    > var factory = {{alias}}( [ 'x', 'y', 'z' ], opts );
+    > var p = factory( [ 1.0, -1.0, 0.0 ] );
+    > p.toString()
+    'Point(x=1, y=-1, z=0)'
+
+
+tuple.values()
+    Returns an iterator for iterating over tuple elements.
+
+    Returns
+    -------
+    iter: Iterator
+        Iterator for iterating over tuple elements.
+
+    Examples
+    --------
+    > var factory = {{alias}}( [ 'x', 'y' ] );
+    > var p = factory( [ 1.0, -1.0 ] );
+    > it = p.values();
+    > it.next().value
+    1.0
+    > it.next().value
+    -1.0
+    > it.next().done
+    true
+
+    See Also
+    --------
+

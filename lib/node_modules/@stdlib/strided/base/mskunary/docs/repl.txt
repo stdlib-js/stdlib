@@ -1,0 +1,84 @@
+
+{{alias}}( arrays, shape, strides, fcn )
+    Applies a unary callback to elements in a strided input array according to
+    elements in a strided mask array and assigns results to elements in a
+    strided output array.
+
+    The `shape` and `strides` parameters determine which elements in the strided
+    arrays are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ArrayLikeObject>
+        Array-like object containing one strided input array, a strided mask
+        array, and one strided output array.
+
+    shape: ArrayLikeObject<integer>
+        Array-like object containing a single element, the number of indexed
+        elements.
+
+    strides: ArrayLikeObject<integer>
+        Array-like object containing the stride lengths for the strided arrays.
+
+    fcn: Function
+        Unary callback.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/float64}}( [ -1.0, -2.0, -3.0, -4.0 ] );
+    > var m = new {{alias:@stdlib/array/uint8}}( [ 0, 0, 1, 0 ] );
+    > var y = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+    > var shape = [ x.length ];
+    > var strides = [ 1, 1, 1 ];
+    > {{alias}}( [ x, m, y ], shape, strides, {{alias:@stdlib/math/base/special/abs}} );
+    > y
+    <Float64Array>[ 1.0, 2.0, 0.0, 4.0 ]
+
+
+{{alias}}.ndarray( arrays, shape, strides, offsets, fcn )
+    Applies a unary callback to elements in a strided input array according to
+    elements in a strided mask array, and assigns results to elements in a
+    strided output array using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the `offsets` parameter supports indexing semantics based on
+    starting indices.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ArrayLikeObject>
+        Array-like object containing one strided input array, a strided mask
+        array, and one strided output array.
+
+    shape: ArrayLikeObject<integer>
+        Array-like object containing a single element, the number of indexed
+        elements.
+
+    strides: ArrayLikeObject<integer>
+        Array-like object containing the stride lengths for the strided arrays.
+
+    offsets: ArrayLikeObject<integer>
+        Array-like object containing the starting indices (i.e., index offsets)
+        for the strided arrays.
+
+    fcn: Function
+        Unary callback.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/float64}}( [ -1.0, -2.0, -3.0, -4.0 ] );
+    > var m = new {{alias:@stdlib/array/uint8}}( [ 0, 0, 1, 0 ] );
+    > var y = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+    > var shape = [ x.length ];
+    > var strides = [ 1, 1, 1 ];
+    > var offsets = [ 0, 0, 0 ];
+    > {{alias}}.ndarray( [ x, m, y ], shape, strides, offsets, {{alias:@stdlib/math/base/special/abs}} );
+    > y
+    <Float64Array>[ 1.0, 2.0, 0.0, 4.0 ]
+
+    See Also
+    --------
+

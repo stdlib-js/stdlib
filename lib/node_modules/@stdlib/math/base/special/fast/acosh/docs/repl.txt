@@ -1,0 +1,33 @@
+
+{{alias}}( x )
+    Computes the hyperbolic arccosine of a number.
+
+    The domain of `x` is restricted to `[1,+infinity)`. If `x < 1`, the function
+    will return `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    out: number
+        Hyperbolic arccosine (in radians).
+
+    Examples
+    --------
+    > var v = {{alias}}( 1.0 )
+    0.0
+    > v = {{alias}}( 2.0 )
+    ~1.317
+    > v = {{alias}}( NaN )
+    NaN
+
+    // The function overflows for large `x`:
+    > v = {{alias}}( 1.0e308 )
+    Infinity
+
+    See Also
+    --------
+

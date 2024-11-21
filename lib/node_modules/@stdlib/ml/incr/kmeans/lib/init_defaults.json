@@ -1,0 +1,5 @@
+{
+	"forgy": [ "forgy", 1 ],
+	"sample": [ "sample", 1 ],
+	"kmeans++": [ "kmeans++", 1, 1 ]
+}

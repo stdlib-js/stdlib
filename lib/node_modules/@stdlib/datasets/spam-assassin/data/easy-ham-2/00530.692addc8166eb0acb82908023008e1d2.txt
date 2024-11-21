@@ -1,0 +1,79 @@
+From razor-users-admin@lists.sourceforge.net  Tue Jul 23 23:11:26 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 02D86440CC
+	for <jm@localhost>; Tue, 23 Jul 2002 18:11:25 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 23 Jul 2002 23:11:26 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6NM84431468 for <jm-razor@jmason.org>; Tue, 23 Jul 2002 23:08:04 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17X7hL-000570-00; Tue,
+    23 Jul 2002 15:00:03 -0700
+Received: from 70.muca.bstn.bstnmaco.dsl.att.net ([12.98.14.70]
+    helo=pulse.fsckit.net) by usw-sf-list1.sourceforge.net with esmtp (Cipher
+    TLSv1:DES-CBC3-SHA:168) (Exim 3.31-VA-mm2 #1 (Debian)) id 17X7gm-0008UA-00
+    for <razor-users@lists.sourceforge.net>; Tue, 23 Jul 2002 14:59:28 -0700
+Received: from twells by pulse.fsckit.net with local (Exim) id
+    17X7gg-0007b4-00; Tue, 23 Jul 2002 17:59:22 -0400
+From: "Tabor J. Wells" <razor-users@fsckit.net>
+To: Scott Henderson <boyhowdy@cyberspace.org>
+Cc: Razor-Users <razor-users@example.sourceforge.net>
+Subject: Re: [Razor-users] can't find Razor/Client.pm
+Message-Id: <20020723215921.GE24778@fsckit.net>
+References: <Pine.SUN.3.96.1020723171908.29929B-100000@grex.cyberspace.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <Pine.SUN.3.96.1020723171908.29929B-100000@grex.cyberspace.org>
+User-Agent: Mutt/1.4i
+X-Copyright: This email is Copyright (c)2002 by razor-users@fsckit.net.
+    All rights reserved.
+X-Bofh: Do you feel lucky?
+X-Jihad: I will hunt down all who spam my account. Try me.
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Tue, 23 Jul 2002 17:59:22 -0400
+Date: Tue, 23 Jul 2002 17:59:22 -0400
+
+On Tue, Jul 23, 2002 at 05:28:33PM -0400,
+Scott Henderson <boyhowdy@cyberspace.org> is thought to have said:
+
+> What am I missing?  Thanks!
+
+Razor/Client.pm is part of Razor v1. You've installed Razor v2.
+Spamassassin's current release only works with v1. Although IIRC
+the current CVS code works with v2.
+
+Tabor
+-- 
+--------------------------------------------------------------------
+Tabor J. Wells                                razor-users@fsckit.net
+Fsck It!                 Just another victim of the ambient morality
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

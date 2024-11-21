@@ -1,0 +1,66 @@
+From fork-admin@xent.com  Tue Aug  6 12:53:51 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A4C6144201
+	for <jm@localhost>; Tue,  6 Aug 2002 07:25:02 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 12:25:02 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g74NHsv13071 for <jm@jmason.org>;
+    Mon, 5 Aug 2002 00:17:55 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 3F33B2940EB; Sun,  4 Aug 2002 16:15:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from sm14.texas.rr.com (sm14.texas.rr.com [24.93.35.41]) by
+    xent.com (Postfix) with ESMTP id 4B62D2940EA for <fork@xent.com>;
+    Sun,  4 Aug 2002 16:14:03 -0700 (PDT)
+Received: from waynemain (cs2427121-96.houston.rr.com [24.27.121.96]) by
+    sm14.texas.rr.com (8.12.0.Beta16/8.12.0.Beta16) with ESMTP id
+    g74NG4Uw031613 for <fork@xent.com>; Sun, 4 Aug 2002 18:16:10 -0500
+Message-Id: <4110-22002804231443982@waynemain>
+From: "Wayne" <lwharris@flash.net>
+To: "fork@spamassassin.taint.org" <fork@spamassassin.taint.org>
+Subject: OOPS!  Please Excuse My mistake!
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 4 Aug 2002 18:14:44 -0500
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g74NHsv13071
+Content-Transfer-Encoding: 8bit
+
+Just sent you a note with the wrong link. Tthe correct one is 
+
+http://letscreatebiz.com/whjoinfree  
+
+It is worth a minute of your time to check it out.
+
+
+Remember, you have nothing to lose and potentially a lot to gain!
+
+
+Best Regards,
+
+Wayne
+
+---------------------------------------------------
+To be removed from future mailings, simply
+respond with REMOVE in the subject line.
+
+
+http://xent.com/mailman/listinfo/fork
+
+

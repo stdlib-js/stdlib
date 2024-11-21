@@ -1,0 +1,117 @@
+From spamassassin-sightings-admin@lists.sourceforge.net  Fri Jul 19 08:33:46 2002
+Return-Path: <spamassassin-sightings-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3564443F9E
+	for <jm@localhost>; Fri, 19 Jul 2002 03:32:20 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 08:32:20 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6J7S4J02599 for <jm-sa-sightings@jmason.org>; Fri, 19 Jul 2002 08:28:05
+    +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17VSBH-0004Vo-00; Fri,
+    19 Jul 2002 00:28:03 -0700
+Received: from skat.hubris.net ([207.178.96.21]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17VSAe-0001VF-00 for <spamassassin-sightings@lists.sourceforge.net>;
+    Fri, 19 Jul 2002 00:27:24 -0700
+Received: from localhost (localhost [127.0.0.1]) by skat.hubris.net
+    (Postfix) with ESMTP id 4C1F68126 for
+    <spamassassin-sightings@lists.sf.net>; Fri, 19 Jul 2002 02:27:20 -0500
+    (CDT)
+Received: from corp.hubris.net (corp.hubris.net [207.178.96.145]) by
+    skat.hubris.net (Postfix) with ESMTP id 101508015 for
+    <spamassassin-sightings@lists.sf.net>; Fri, 19 Jul 2002 02:27:20 -0500
+    (CDT)
+X-Received: from sham.hubris.net (root@sham.hubris.net [207.178.96.147])
+    by corp.hubris.net (8.11.6/8.11.6) with ESMTP id g6J4GFP18967 for
+    <owenc@corp.hubris.net>; Thu, 18 Jul 2002 23:16:15 -0500
+X-Received: from puppis.hubris.net (puppis.hubris.net [207.178.96.20]) by
+    sham.hubris.net (8.11.6/8.11.6) with ESMTP id g6J4GFe20322 for
+    <owenc@corp.hubris.net>; Thu, 18 Jul 2002 23:16:15 -0500
+X-Received: from inbound2.hubris.net (inbound2.hubris.net [207.178.96.19])
+    by puppis.hubris.net (8.11.6/8.11.6) with ESMTP id g6J4GFf31520 for
+    <owenc@gcnet.com>; Thu, 18 Jul 2002 23:16:15 -0500
+X-Received: from localhost (localhost [127.0.0.1]) by inbound2.hubris.net
+    (Postfix) with ESMTP id EE61528033 for <owenc@gcnet.com>; Thu, 18 Jul 2002
+    23:16:14 -0500 (CDT)
+X-Received: from saturn.kagi.com (saturn.kagi.com [206.112.98.187]) by
+    inbound2.hubris.net (Postfix) with ESMTP id 27E5D2802B for <owenc@gcnet.com>;
+    Thu, 18 Jul 2002 23:16:14 -0500 (CDT)
+X-Received: from 0017675265 (24-205-51-133.gln-res.charterpipeline.net
+    [24.205.51.133]) by saturn.kagi.com (8.11.0/8.11.0) with SMTP id
+    g6J49GF18257 for <chris@kagi.com>; Thu, 18 Jul 2002 21:09:16 -0700
+Message-Id: <200207190409.g6J49GF18257@saturn.kagi.com>
+From: "Jennifer" <jenniferb@doityourself.com>
+To: <chris@kagi.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Subject: [SA] Job Update
+Sender: spamassassin-sightings-admin@example.sourceforge.net
+Errors-To: spamassassin-sightings-admin@example.sourceforge.net
+X-Beenthere: spamassassin-sightings@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-sightings-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-sightings@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-sightings>,
+    <mailto:spamassassin-sightings-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <spamassassin-sightings.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-sightings>,
+    <mailto:spamassassin-sightings-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-sightings>
+X-Original-Date: Thu, 18 Jul 2002 21:16:12
+Date: Thu, 18 Jul 2002 21:16:12
+    version=2.40
+X-Spam-Level:
+
+This is the worst job market we've seen in over 30 years.  
+
+The recent corporate scandals have further deepened the lack 
+confidence in our economy and the plunging stock market that
+ is in the headlines this week will lead to additional layoffs creating 
+an EVEN MORE DIFFICULT JOB MARKET.
+
+Finding a job in today's market is a whole new ballgame.  
+
+Blasting your resume to thousands of recruiters, posting your
+resume to job boards and responding to job postings and
+advertisements works for only 5% of the job seekers using
+these techniques.
+
+Job searching based upon the tried and true process and 
+techniques used by recruiting professionals works for 85%.  
+
+It's a no-brainer.  Invest $19.95 + shipping/handling
+(fully tax-deductible) in the Get Hired Now Program.
+
+Our CD program will teach you EVERYTHING you need to know
+to quickly succeed in ANY job market.
+
+Get Hired Now teaches a full job search process - proactive techniques 
+and insider tips used by senior staffing professionals who have spent 
+over 20 years getting people hired.
+
+Call us toll free at 800-500-0406.
+
+Mention this email and get a FREE JOB SEARCH WORKBOOK
+
+** We accept Visa, MasterCard and American Express!
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

@@ -1,0 +1,9 @@
+
+Usage: id2uri [options] [<id>]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --database filepath   Database filepath.
+

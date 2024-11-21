@@ -1,0 +1,87 @@
+From ilug-admin@linux.ie  Wed Aug 28 10:49:04 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3A6414415D
+	for <zzzz@localhost>; Wed, 28 Aug 2002 05:48:07 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 28 Aug 2002 10:48:07 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7S8bdZ16583 for
+    <zzzz-ilug@spamassassin.taint.org>; Wed, 28 Aug 2002 09:37:39 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA10924; Wed, 28 Aug 2002 09:36:58 +0100
+Received: from ATLAS2K.atlasalu.ie ([217.78.4.138]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA10888 for <ilug@linux.ie>; Wed,
+    28 Aug 2002 09:36:49 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [217.78.4.138] claimed to
+    be ATLAS2K.atlasalu.ie
+Received: by ATLAS2K.atlasalu.ie with Internet Mail Service (5.5.2653.19)
+    id <RX334GZA>; Wed, 28 Aug 2002 09:36:40 +0100
+Message-Id: <97E3260093E08D43A791F2DF1584C29708369C@ATLAS2K.atlasalu.ie>
+From: Philip O Brien <pobrien@atlasalu.ie>
+To: "'ilug@linux.ie'" <ilug@linux.ie>
+Subject: FW: [ILUG] Using Normal IDE Device with a Dell Latitude CPx lapto p
+Date: Wed, 28 Aug 2002 09:36:39 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain; charset="iso-8859-1"
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+I vote usb 1.1 as the chances are the cdr drive is not over 8x write and
+thus fireware is of no real use...
+but i cant see how you are going to get it working without a cradle. I cant
+even get my dell laptop dvd drive to work
+as the connectors are not the same as my cd drive ones.. seems dell cant
+keep any standards going :-(
+
+
+-----Original Message-----
+From: Paul Kelly [mailto:longword@esatclear.ie]
+Sent: 28 August 2002 09:32
+To: ilug@linux.ie
+Subject: Re: [ILUG] Using Normal IDE Device with a Dell Latitude CPx
+laptop
+
+
+John P. Looney wrote:
+>>There is absolutely no way to use a conventional 3.5" drive with a
+>>laptop directly.
+>  Ah, they told me that about my A1200.
+> 
+>  Worked a charm. Until I dropped the disk one day onto concrete.
+
+Go on. Tell them how long the /first/ one lasted.
+
+I vote external firewire if the laptop has the ports for it.
+
+Paul.
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+DISCLAIMER: The information in this message is confidential and may be
+legally privileged. It is intended solely for the addressee.  Access to this
+message by anyone else is unauthorised.  If you are not the intended
+recipient, any disclosure, copying, or distribution of the message, or any
+action or omission taken by you in reliance on it, is prohibited and may be
+unlawful.  Please immediately contact the sender if you have received this
+message in error. Thank you.
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

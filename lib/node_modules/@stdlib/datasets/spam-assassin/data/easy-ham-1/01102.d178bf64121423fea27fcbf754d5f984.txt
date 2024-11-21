@@ -1,0 +1,87 @@
+From rpm-list-admin@freshrpms.net  Mon Sep  9 18:04:38 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id B855616EFC
+	for <jm@localhost>; Mon,  9 Sep 2002 18:04:37 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 18:04:37 +0100 (IST)
+Received: from auth02.nl.egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g179ccu22847 for
+    <jm-rpm@jmason.org>; Thu, 7 Feb 2002 09:38:39 GMT
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by
+    auth02.nl.egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g179c1m22817;
+    Thu, 7 Feb 2002 10:38:01 +0100
+Received: from porsta.cs.Helsinki.FI (root@porsta.cs.Helsinki.FI
+    [128.214.48.124]) by auth02.nl.egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g179bCm22788 for <rpm-list@freshrpms.net>; Thu, 7 Feb 2002 10:37:12 +0100
+Received: from melkki.cs.Helsinki.FI (sslwrap@localhost [127.0.0.1]) by
+    porsta.cs.Helsinki.FI (8.11.6/8.11.6) with ESMTP id g179bEp07446 for
+    <rpm-list@freshrpms.net>; Thu, 7 Feb 2002 11:37:15 +0200
+Received: (from hhaataja@localhost) by melkki.cs.Helsinki.FI
+    (8.11.6/8.11.2) id g179bC820045 for rpm-list@freshrpms.net; Thu,
+    7 Feb 2002 11:37:12 +0200
+From: Harri Haataja <harri.haataja@cs.Helsinki.FI>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: About apt, kernel updates and dist-upgrade
+Message-Id: <20020207113711.B19145@cs.helsinki.fi>
+References: <20020204170408.F2626@pihlaja.kotilo>
+    <20020204165314.389e52ec.matthias@egwn.net>
+    <20020207002914.H12825@pihlaja.kotilo>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-15
+Content-Disposition: inline
+Content-Transfer-Encoding: 8bit
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <20020207002914.H12825@pihlaja.kotilo>; from pisara@iki.fi on
+    Thu, Feb 07, 2002 at 12:29:14AM +0200
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Thu, 7 Feb 2002 11:37:12 +0200
+Date: Thu, 7 Feb 2002 11:37:12 +0200
+
+On Thu, Feb 07, 2002 at 12:29:14AM +0200, Peter Peltonen wrote:
+> About apt.conf there are these lines:
+> --<snip>--
+> RPM 
+> {
+>    // Leave list empty to disable
+>    AllowedDupPkgs {"^kernel$"; "kernel-smp"; "kernel-enterprise"; };
+>    HoldPkgs {"kernel-source"; "kernel-headers"; };
+> }
+> --</snip>--
+> 
+> How do I tell apt hold all kernel packages? Can I use syntax like 
+> "kernel*"; ? 
+> 
+> And I don't quite understand what the part "^kernel$"; means?
+
+You could read about regular expressions.
+^kernel$ matches "kernel" and nothimg more.
+Kerne, kernel-smp and kernel-enterprise are the kernel packages you
+might be running in a RH system. Packages like kernel-headers,
+kernel-BOOT and kernel-doc aren't matched. If it just said "kernel", it
+would match *all* those packages.
+
+-- 
+"You were good with that recorder." (=nokkahuilu)
+"Soitit hyvin sitä mankkaa."
+	-- (Suomennos) Men Behaving Badly
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

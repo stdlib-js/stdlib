@@ -1,0 +1,82 @@
+From ilug-admin@linux.ie  Tue Jul 30 16:18:06 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 50887440F0
+	for <jm@localhost>; Tue, 30 Jul 2002 11:18:06 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 30 Jul 2002 16:18:06 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6UFAkq01603 for
+    <jm-ilug@jmason.org>; Tue, 30 Jul 2002 16:10:46 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA13586; Tue, 30 Jul 2002 16:09:00 +0100
+Received: from mis.nwifhe.net ([212.219.92.232]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA13553 for <ilug@linux.ie>; Tue,
+    30 Jul 2002 16:08:55 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [212.219.92.232] claimed
+    to be mis.nwifhe.net
+Received: from soft-dev-lin.nwifhe.net (unknown [172.200.20.5]) by
+    mis.nwifhe.net (Postfix) with ESMTP id 31D2BCB5F for <ilug@linux.ie>;
+    Tue, 30 Jul 2002 16:08:25 +0100 (BST)
+Subject: Re: [ILUG] Fwd: Linux Beer Hike
+From: "Patton, Tony" <tony.patton@nwifhe.ac.uk>
+To: Irish LUG <ilug@linux.ie>
+In-Reply-To: <1028031445.3321.2.camel@soft-dev-lin.nwifhe.net>
+References: <200207301006.36137.donncha.ocaoimh@tradesignals.com>
+    <1028031445.3321.2.camel@soft-dev-lin.nwifhe.net>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.5
+Date: 30 Jul 2002 16:07:47 +0100
+Message-Id: <1028041667.3321.7.camel@soft-dev-lin.nwifhe.net>
+MIME-Version: 1.0
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Tue, 2002-07-30 at 13:17, Patton, Tony wrote:
+
+8<
+
+> 
+> Can someone translate this for me? Lost all sense of Irish when moved
+> over the border about 10 years ago. Not by choice mind you :-(
+> 
+
+8<
+
+Thanks to all who replied.
+
+Are there many from this list going to the LBW?
+
+I am trying to get the thursday and friday off work to get to it.
+
+Looking doubtful as it is very near the start of term. Bloody academic
+institutes :-).
+
+it only going to take me about 6 hours or so to get there :-(
+
+
+-- 
++------------------------------------+---------------------------------+
+| Tony Patton                        |                                 |
+| MIS Software Developer/*nix        | Tel  : +44 28 7127 6443         |
+|   Systems Administrator            | Fax  : +44 28 7126 0520         |
+| North West Institute of F & H.E.   | Mob  : +44 7764 905 955         |
+| Strand Road                        |                                 |
+| Derry                              | ICQ# : 113 069 081              |
+| BT48 7BY                           |                                 |
++------------------------------------+---------------------------------+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

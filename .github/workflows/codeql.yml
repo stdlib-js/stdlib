@@ -1,0 +1,186 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2023 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+name: codeql
+
+# Workflow triggers:
+on:
+  # push:
+  #   branches: [ "develop", "master" ]
+  # pull_request:
+  #   branches: [ "develop", "master" ]
+  schedule:
+    # Run the workflow once a week (Sunday at midnight):
+    - cron: '0 0 * * 0'
+
+  # Allow the workflow to be manually run:
+  workflow_dispatch:
+
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
+# Workflow jobs:
+jobs:
+
+  # Define a job for performing CodeQL analysis...
+  analyze:
+
+    # Define a display name:
+    name: 'Analyze'
+
+    # Ensure the job does not run on forks:
+    if: github.repository == 'stdlib-js/stdlib'
+
+    # Define the type of virtual host machine.
+    #
+    # ## Notes
+    #
+    # -   Runner size impacts CodeQL analysis time. To learn more, please see:
+    #     -   https://gh.io/recommended-hardware-resources-for-running-codeql
+    #     -   https://gh.io/supported-runners-and-hardware-resources
+    #     -   https://gh.io/using-larger-runners
+    #
+    # -   For analysis time improvements, consider using larger runners.
+    runs-on: ubuntu-latest
+
+    # Limit how long the job can run:
+    timeout-minutes: 360
+
+    # Restrict the type of data which is accessible to this job:
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    # Define the build matrix strategy...
+    strategy:
+
+      # Specify whether to cancel all in-progress jobs if any matrix job fails:
+      fail-fast: false
+
+      # Define the build matrix:
+      matrix:
+
+        # CodeQL supports the following languages:
+        #
+        #    [ 'c-cpp', 'csharp', 'go', 'java-kotlin', 'javascript-typescript', 'python', 'ruby', 'swift' ]
+        #
+        # Use only 'java-kotlin' to analyze code written in Java, Kotlin, or both.
+        #
+        # Use only 'javascript-typescript' to analyze code written in JavaScript, TypeScript, or both.
+        language: [ 'javascript-typescript' ]
+
+    # Define the sequence of job steps:
+    steps:
+
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        # Pin action to full length commit SHA
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+        with:
+          # Specify whether to remove untracked files before checking out the repository:
+          clean: false
+
+          # Limit clone depth to the most recent 100 commits:
+          fetch-depth: 100
+
+          # Specify whether to download Git-LFS files:
+          lfs: false
+        timeout-minutes: 10
+
+      # Install compilers:
+      - name: 'Install compilers'
+        run: |
+          sudo -E apt-add-repository -y "ppa:ubuntu-toolchain-r/test"
+          sudo -E apt-get update -q
+          sudo -E apt-get -yq --no-install-suggests --no-install-recommends --allow-downgrades --allow-remove-essential --allow-change-held-packages install binutils gcc-9 gcc-9-multilib g++-9 g++-9-multilib gfortran-9 gfortran-9-multilib
+          mkdir -p $HOME/bin
+          echo "$HOME/bin" >> $GITHUB_PATH
+          ln -s /usr/bin/gcc-9 $HOME/bin/gcc
+          ln -s /usr/bin/g++-9 $HOME/bin/g++
+          ln -s /usr/bin/gfortran-9 $HOME/bin/gfortran
+        timeout-minutes: 10
+
+      # Install Node.js:
+      - name: 'Install Node.js'
+        # Pin action to full length commit SHA
+        uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af # v4.1.0
+        with:
+          node-version: '20' # 'lts/*'
+        timeout-minutes: 5
+
+      # Print debug info:
+      - name: 'Print debug info'
+        run: |
+          echo 'PATH:'
+          echo $PATH
+          echo ''
+          echo 'gcc:'
+          gcc --version
+          echo ''
+          echo 'g++:'
+          g++ --version
+          echo ''
+          echo 'gfortran:'
+          gfortran --version
+          echo ''
+          echo 'Git:'
+          git --version
+          echo ''
+          echo 'Node.js:'
+          file $(which node)
+          node --version
+          node -p 'process.platform + "@" + process.arch'
+          echo ''
+          echo 'npm:'
+          npm --version
+          npm config get registry
+        timeout-minutes: 2
+
+      # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
+      - name: 'Install dependencies'
+        run: |
+          make install-node-modules || make install-node-modules || make install-node-modules
+        timeout-minutes: 15
+
+      # Build native add-ons:
+      # - name: 'Build native add-ons'
+      #   run: |
+      #     make install-node-addons
+
+      # Initialize CodeQL tools for scanning:
+      - name: 'Initialize CodeQL'
+
+        # Pin action to full length commit SHA
+        uses: github/codeql-action/init@382a50a0284c0de445104889a9d6003acb4b3c1d # v2.15.4
+
+        with:
+          languages: ${{ matrix.language }}
+
+          # Specify a path to a custom CodeQL configuration file:
+          config-file: './.github/codeql/codeql_config.yml'
+
+      # Perform CodeQL analysis:
+      - name: 'Perform CodeQL Analysis'
+
+        # Pin action to full length commit SHA
+        uses: github/codeql-action/analyze@382a50a0284c0de445104889a9d6003acb4b3c1d # v2.15.4
+        with:
+          category: "/language:${{matrix.language}}"

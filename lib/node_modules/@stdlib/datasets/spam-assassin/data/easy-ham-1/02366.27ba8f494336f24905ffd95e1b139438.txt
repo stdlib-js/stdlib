@@ -1,0 +1,27 @@
+From rssfeeds@jmason.org  Tue Oct  8 10:56:07 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id D675016F16
+	for <jm@localhost>; Tue,  8 Oct 2002 10:56:06 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 08 Oct 2002 10:56:06 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g98817K06148 for
+    <jm@jmason.org>; Tue, 8 Oct 2002 09:01:07 +0100
+Message-Id: <200210080801.g98817K06148@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: guardian <rssfeeds@spamassassin.taint.org>
+Subject: Seeing is believing
+Date: Tue, 08 Oct 2002 08:01:07 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.newsisfree.com/click/-2,8655716,215/
+Date: 2002-10-08T03:30:50+01:00
+
+*Feature: *She has loved clothes with a passion all her life. And yet acclaimed 
+author *Linda Grant* has never been to the collections - until now. So what 
+does she make of the Paris shows?
+
+

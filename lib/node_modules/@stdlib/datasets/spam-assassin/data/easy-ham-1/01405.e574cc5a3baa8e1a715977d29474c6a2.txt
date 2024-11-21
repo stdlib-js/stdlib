@@ -1,0 +1,98 @@
+From razor-users-admin@lists.sourceforge.net  Mon Aug 26 15:16:30 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 938C844165
+	for <jm@localhost>; Mon, 26 Aug 2002 10:14:57 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 15:14:57 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7NJdjZ05699 for <jm-razor@jmason.org>; Fri, 23 Aug 2002 20:39:45 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17iJj7-00056T-00; Fri,
+    23 Aug 2002 12:04:09 -0700
+Received: from med-core07.med.wayne.edu ([146.9.19.23]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17iJiD-000698-00 for <razor-users@lists.sourceforge.net>; Fri,
+    23 Aug 2002 12:03:13 -0700
+Content-Class: urn:content-classes:message
+MIME-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"
+X-Mimeole: Produced By Microsoft Exchange V6.0.6249.0
+Subject: RE: [Razor-users] Razor with sendmail
+Message-Id: <D79A56AD131896448D0860DEE07CBE1F3BABEC@med-core07.med.wayne.edu>
+X-MS-Has-Attach:
+X-MS-Tnef-Correlator:
+Thread-Topic: [Razor-users] Razor with sendmail
+Thread-Index: AcJK1hXMJt8nNXR6S8qFjiGkBId8ggAAWAMg
+From: "Rose, Bobby" <brose@med.wayne.edu>
+To: "Julian Bond" <julian_bond@voidstar.com>,
+	<razor-users@lists.sourceforge.net>
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Fri, 23 Aug 2002 15:03:05 -0400
+Date: Fri, 23 Aug 2002 15:03:05 -0400
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g7NJdjZ05699
+
+If you didn't add it when compile would be one way.  Another would be to
+grep your sendmail.cf for the word Milter.
+
+-----Original Message-----
+From: Julian Bond [mailto:julian_bond@voidstar.com] 
+Sent: Friday, August 23, 2002 2:48 PM
+To: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] Razor with sendmail
+
+
+"Bort, Paul" <pbort@tmwsystems.com> wrote:
+>If your sendmail has been compiled with Milter support, you can add 
+>SMRazor easily. We've been using it for a while without problems. 
+>Others on the list have mentioned it as well.
+>
+>http://www.sapros.com/smrazor/
+
+Is there an easy way to tell if Milter is compiled in?
+
+-- 
+Julian Bond Email&MSM: julian.bond@voidstar.com
+Webmaster:              http://www.ecademy.com/
+Personal WebLog:       http://www.voidstar.com/
+CV/Resume:          http://www.voidstar.com/cv/
+M: +44 (0)77 5907 2173   T: +44 (0)192 0412 433
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old cell
+phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+

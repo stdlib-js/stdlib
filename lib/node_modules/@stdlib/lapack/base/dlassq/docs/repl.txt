@@ -1,0 +1,98 @@
+
+{{alias}}( N, X, strideX, scale, sumsq )
+    Returns an updated sum of squares represented in scaled form.
+
+      s_o^2*ss_o = X_0^2 + ... + X_(N-1)^2 + s_i^2*ss_i
+
+    where s_o is the output scale factor, ss_o is the output sum of squares, s_i
+    is the input scale factor, and ss_i is the input sum of squares.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    X: Float64Array
+        Input array.
+
+    strideX: integer
+        Stride length for `X`.
+
+    scale: number
+        Scaling factor.
+
+    sumsq: number
+        Basic sum of squares from which output is factored out.
+
+    Returns
+    -------
+    out: Float64Array
+        Two-element array containing the updated scale factor and updated sum of
+        squares, respectively.
+
+    Examples
+    --------
+    > var X = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > {{alias}}( 4, X, 1, 1.0, 0.0 )
+    <Float64Array>[ 1.0, 30.0 ]
+
+
+{{alias}}.ndarray( N, X, sx, ox, scale, sumsq, out, so, oo )
+    Returns an updated sum of squares represented in scaled form using
+    alternative indexing semantics.
+
+      s_o^2*ss_o = X_0^2 + ... + X_(N-1)^2 + s_i^2*ss_i
+
+    where s_o is the output scale factor, ss_o is the output sum of squares, s_i
+    is the input scale factor, and ss_i is the input sum of squares.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    X: Float64Array
+        Input array.
+
+    sx: integer
+        Stride length for `X`.
+
+    ox: integer
+        Starting index for `X`.
+
+    scale: number
+        Scaling factor.
+
+    sumsq: number
+        Basic sum of squares from which output is factored out.
+
+    out: Float64Array
+        Output array.
+
+    so: integer
+        Stride length for `out`.
+
+    oo: integer
+        Starting index for `out`.
+
+    Returns
+    -------
+    out: Float64Array
+        Output array.
+
+    Examples
+    --------
+    > var X = new {{alias:@stdlib/array/float64}}( [ 0.0, 1.0, 2.0, 3.0, 4.0 ] );
+    > var out = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0 ] );
+    > {{alias}}.ndarray( 4, X, 1, 1, 1.0, 0.0, out, 1, 1 )
+    <Float64Array>[ 0.0, 1.0, 30.0 ]
+
+    See Also
+    --------

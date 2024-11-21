@@ -1,0 +1,101 @@
+
+{{alias}}( [μ, s] )
+    Returns a raised cosine distribution object.
+
+    Parameters
+    ----------
+    μ: number (optional)
+        Location parameter. Default: `0.0`.
+
+    s: number (optional)
+        Scale parameter. Must be greater than `0`. Default: `1.0`.
+
+    Returns
+    -------
+    cosine: Object
+        Distribution instance.
+
+    cosine.mu: number
+        Location parameter.
+
+    cosine.s: number
+        Scale parameter. If set, the value must be greater than `0`.
+
+    cosine.kurtosis: number
+        Read-only property which returns the excess kurtosis.
+
+    cosine.mean: number
+        Read-only property which returns the expected value.
+
+    cosine.median: number
+        Read-only property which returns the median.
+
+    cosine.mode: number
+        Read-only property which returns the mode.
+
+    cosine.skewness: number
+        Read-only property which returns the skewness.
+
+    cosine.stdev: number
+        Read-only property which returns the standard deviation.
+
+    cosine.variance: number
+        Read-only property which returns the variance.
+
+    cosine.cdf: Function
+        Evaluates the cumulative distribution function (CDF).
+
+    cosine.logcdf: Function
+        Evaluates the natural logarithm of the cumulative distribution function
+        (CDF).
+
+    cosine.logpdf: Function
+        Evaluates the natural logarithm of the probability density function
+        (PDF).
+
+    cosine.mgf: Function
+        Evaluates the moment-generating function (MGF).
+
+    cosine.pdf: Function
+        Evaluates the probability density function (PDF).
+
+    cosine.quantile: Function
+        Evaluates the quantile function at probability `p`.
+
+    Examples
+    --------
+    > var cosine = {{alias}}( -2.0, 3.0 );
+    > cosine.mu
+    -2.0
+    > cosine.s
+    3.0
+    > cosine.kurtosis
+    ~-0.594
+    > cosine.mean
+    -2.0
+    > cosine.median
+    -2.0
+    > cosine.mode
+    -2.0
+    > cosine.skewness
+    0.0
+    > cosine.stdev
+    ~1.085
+    > cosine.variance
+    ~1.176
+    > cosine.cdf( 0.5 )
+    ~0.996
+    > cosine.logcdf( 0.5 )
+    ~-0.004
+    > cosine.logpdf( -1.0 )
+    ~-1.386
+    > cosine.mgf( 0.2 )
+    ~0.686
+    > cosine.pdf( -2.0 )
+    ~0.333
+    > cosine.quantile( 0.9 )
+    ~-0.553
+
+    See Also
+    --------
+

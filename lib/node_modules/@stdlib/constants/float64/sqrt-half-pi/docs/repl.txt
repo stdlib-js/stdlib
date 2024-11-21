@@ -1,0 +1,12 @@
+
+{{alias}}
+    Square root of the mathematical constant `π` divided by `2`.
+
+    Examples
+    --------
+    > {{alias}}
+    1.2533141373155003
+
+    See Also
+    --------
+

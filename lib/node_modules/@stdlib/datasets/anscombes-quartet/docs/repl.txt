@@ -1,0 +1,29 @@
+
+{{alias}}()
+    Returns Anscombe's quartet.
+
+    Anscombe's quartet is a set of 4 datasets which all have nearly identical
+    simple statistical properties but vary considerably when graphed. Anscombe
+    created the datasets to demonstrate why graphical data exploration should
+    precede statistical data analysis and to show the effect of outliers on
+    statistical properties.
+
+    Returns
+    -------
+    out: Array<Array>
+        Anscombe's quartet.
+
+    Examples
+    --------
+    > var d = {{alias}}()
+    [[[10,8.04],...],[[10,9.14],...],[[10,7.46],...],[[8,6.58],...]]
+
+    References
+    ----------
+    - Anscombe, Francis J. 1973. "Graphs in Statistical Analysis." *The American
+    Statistician* 27 (1). [American Statistical Association, Taylor & Francis,
+    Ltd.]: 17–21. <http://www.jstor.org/stable/2682899>.
+
+    See Also
+    --------
+

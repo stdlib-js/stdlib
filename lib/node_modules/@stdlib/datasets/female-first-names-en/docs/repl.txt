@@ -1,0 +1,22 @@
+
+{{alias}}()
+    Returns a list of common female first names in English speaking countries.
+
+    Returns
+    -------
+    out: Array<string>
+        List of common female first names.
+
+    Examples
+    --------
+    > var list = {{alias}}()
+    [ 'Aaren', 'Aarika', 'Abagael', 'Abagail', ... ]
+
+    References
+    ----------
+    - Ward, Grady. 2002. "Moby Word II." <http://www.gutenberg.org/files/3201/
+    3201.txt>.
+
+    See Also
+    --------
+

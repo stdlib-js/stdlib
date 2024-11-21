@@ -1,0 +1,87 @@
+From ilug-admin@linux.ie  Mon Jul 22 18:12:06 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 228D9440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:05 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:05 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFGu901745 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 16:16:56 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id PAA32428 for <jm-ilug@jmason.org>;
+    Mon, 22 Jul 2002 15:27:11 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA30448; Mon, 22 Jul 2002 15:26:08 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from apollo.dit.ie (apollo.dit.ie [147.252.1.121]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id PAA30415 for <ilug@linux.ie>;
+    Mon, 22 Jul 2002 15:26:01 +0100
+Received: from jupiter.dit.ie (jupiter.dit.ie [147.252.1.77]) by
+    apollo.dit.ie (8.11.6/8.11.6) with ESMTP id g6MEDaW19243 for
+    <ilug@linux.ie>; Mon, 22 Jul 2002 15:13:36 +0100
+Received: from holger ([147.252.132.189]) by mail.dit.ie (PMDF V6.1
+    #30532) with SMTP id <01KKEF1SBH5U8WX7OP@mail.dit.ie> for ilug@linux.ie;
+    Mon, 22 Jul 2002 15:23:56 +0100 (WET-DST)
+Date: Mon, 22 Jul 2002 15:26:00 +0100
+From: Richard Eibrand <richard.eibrand@dit.ie>
+To: ilug <ilug@linux.ie>
+Message-Id: <ECTQGOIA9WQGBIHXR63DBGDIGZU42LH.3d3c15f8@holger>
+Organization: DIT Kevin Street
+MIME-Version: 1.0
+X-Mailer: Opera 6.01 build 1041
+Content-Type: text/plain; charset=windows-1252
+Content-Transfer-Encoding: 7BIT
+X-Priority: 3 (Normal)
+Subject: [ILUG] Dell Inspiron 2650 X problem
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Howdy all, 
+
+I have a friend with the problem outlined below, suggestions anyone?
+
+
+"I have a dell inspirion 2650 laptop, with a P4 1.6GHz proc., an Nvidia Geforce II graphics card (8Mb) and am trying  to 
+install redhat 7.3 .
+The installation goes nicely until the Xwindows setup. My graphics card IS detected but not the monitor. I have  
+randomly chosen various LCD laptop display monitors but none seem to work, problem is that when i test a  particular 
+monitor the screen doesn't default back to the nice clear picture  i have become acustomed to but  remains fuzzy and 
+flashy so it is impossible to test another monitor type. rebooting allows me to run in text mode  where i try to configure X 
+again with Xconfigurator but i run into the same problem again.
+
+Very annoying..."
+
+Ta very, 
+
+R
+
+----------------------------------------
+Richard Eibrand,
+School of Computing
+Dublin Institute of Technology
+Kevin Street, Dublin 8
+Ireland
+
+Office : 	+353 1 402 4682
+Mobile : 	+353 87 618 1793
+Email  : 	richard.eibrand@dit.ie, 
+         	reibrand@maths.kst.dit.ie
+
+ 
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

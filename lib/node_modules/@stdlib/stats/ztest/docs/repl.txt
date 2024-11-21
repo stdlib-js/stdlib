@@ -1,0 +1,140 @@
+
+{{alias}}( x, sigma[, options] )
+    Computes a one-sample z-test.
+
+    The function performs a one-sample z-test for the null hypothesis that the
+    data in array or typed array `x` is drawn from a normal distribution with
+    mean zero and standard deviation `sigma`.
+
+    The returned object comes with a `.print()` method which when invoked will
+    print a formatted output of the results of the hypothesis test.
+
+    Parameters
+    ----------
+    x: Array<number>
+        Data array.
+
+    sigma: number
+        Known standard deviation.
+
+    options: Object (optional)
+        Options.
+
+    options.alpha: number (optional)
+        Number in the interval `[0,1]` giving the significance level of the
+        hypothesis test. Default: `0.05`.
+
+    options.alternative: string (optional)
+        Indicates whether the alternative hypothesis is that the mean of `x` is
+        larger than `mu` (`greater`), smaller than `mu` (`less`) or equal to
+        `mu` (`two-sided`). Default: `'two-sided'`.
+
+    options.mu: number (optional)
+        Hypothesized true mean under the null hypothesis. Set this option to
+        test whether the data comes from a distribution with the specified `mu`.
+        Default: `0`.
+
+    Returns
+    -------
+    out: Object
+        Test result object.
+
+    out.alpha: number
+        Used significance level.
+
+    out.rejected: boolean
+        Test decision.
+
+    out.pValue: number
+        p-value of the test.
+
+    out.statistic: number
+        Value of test statistic.
+
+    out.ci: Array<number>
+        1-alpha confidence interval for mean.
+
+    out.nullValue: number
+        Assumed mean value under H0.
+
+    out.sd: number
+        Standard error.
+
+    out.alternative: string
+        Alternative hypothesis (`two-sided`, `less` or `greater`).
+
+    out.method: string
+        Name of test (`One-Sample z-test`).
+
+    out.print: Function
+        Function to print formatted output.
+
+    Examples
+    --------
+    // One-sample z-test:
+    > var rnorm = {{alias:@stdlib/random/base/normal}}.factory( 0.0, 2.0, { 'seed': 212 } );
+    > var x = new Array( 100 );
+    > for ( var i = 0; i < x.length; i++ ) {
+    ...     x[ i ] = rnorm();
+    ... }
+    > var out = {{alias}}( x, 2.0 )
+    {
+        alpha: 0.05,
+        rejected: false,
+        pValue: ~0.180,
+        statistic: ~-1.34,
+        ci: [ ~-0.66, ~0.124 ],
+        ...
+    }
+
+    // Choose custom significance level and print output:
+    > arr = [ 2, 4, 3, 1, 0 ];
+    > out = {{alias}}( arr, 2.0, { 'alpha': 0.01 } );
+    > table = out.print()
+    One-sample z-test
+
+    Alternative hypothesis: True mean is not equal to 0
+
+        pValue: 0.0253
+        statistic: 2.2361
+        99% confidence interval: [-0.3039,4.3039]
+
+    Test Decision: Fail to reject null in favor of alternative at 1%
+    significance level
+
+
+    // Test for a mean equal to five:
+    > var arr = [ 4, 4, 6, 6, 5 ];
+    > out = {{alias}}( arr, 1.0, { 'mu': 5 } )
+    {
+        rejected: false,
+        pValue: 1,
+        statistic: 0,
+        ci: [ ~4.123, ~5.877 ],
+        // ...
+    }
+
+    // Perform one-sided tests:
+    > arr = [ 4, 4, 6, 6, 5 ];
+    > out = {{alias}}( arr, 1.0, { 'alternative': 'less' } )
+    {
+        alpha: 0.05,
+        rejected: false,
+        pValue: 1,
+        statistic: 11.180339887498949,
+        ci: [ -Infinity, 5.735600904580115 ],
+        // ...
+    }
+    > out = {{alias}}( arr, 1.0, { 'alternative': 'greater' } )
+    {
+        alpha: 0.05,
+        rejected: true,
+        pValue: 0,
+        statistic: 11.180339887498949,
+        ci: [ 4.264399095419885, Infinity ],
+        //...
+    }
+
+    See Also
+    --------
+

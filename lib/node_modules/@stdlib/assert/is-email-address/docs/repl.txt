@@ -1,0 +1,33 @@
+
+{{alias}}( value )
+    Tests if a value is an email address.
+
+    Validation is not rigorous. *9* RFCs relate to email addresses, and
+    accounting for all of them is a fool's errand. The function performs the
+    simplest validation; i.e., requiring at least one `@` symbol.
+
+    For rigorous validation, send a confirmation email. If the email bounces,
+    consider the email invalid.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is an email address.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 'beep@boop.com' )
+    true
+    > bool = {{alias}}( 'beep' )
+    false
+    > bool = {{alias}}( null )
+    false
+
+    See Also
+    --------
+

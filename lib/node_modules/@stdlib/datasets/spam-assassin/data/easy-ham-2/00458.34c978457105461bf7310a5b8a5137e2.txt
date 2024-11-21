@@ -1,0 +1,61 @@
+From ilug-admin@linux.ie  Tue Aug 20 11:52:18 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id ACC9C43C46
+	for <jm@localhost>; Tue, 20 Aug 2002 06:51:43 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 11:51:43 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7K8d9Z30908 for
+    <jm-ilug@jmason.org>; Tue, 20 Aug 2002 09:39:09 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA22399; Tue, 20 Aug 2002 09:37:37 +0100
+Received: from tfsgateway.flointernal.ie (ts01-009.drogheda.indigo.ie
+    [194.125.168.9]) by lugh.tuatha.org (8.9.3/8.9.3) with SMTP id JAA22368
+    for <ilug@linux.ie>; Tue, 20 Aug 2002 09:37:29 +0100
+From: ccostelloe@flogas.ie
+X-Authentication-Warning: lugh.tuatha.org: Host ts01-009.drogheda.indigo.ie
+    [194.125.168.9] claimed to be tfsgateway.flointernal.ie
+Message-Id: <TFSABNZO@flogas.ie>
+Date: Tue, 20 Aug 2002 9:39:22 +0100
+To: michael.conry@ucd.ie, ant@elivefree.net, ilug@linux.ie
+Subject: Re[2]: [ILUG] hwclock
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+X-Mailer: TFS Secure Messaging /320000000/300220493/300105087/300105117/
+X-Mailer: Version 4.72 Build 101
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    JAA22368
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+> On 0020 +0100 %{!Mon, Aug 19, 2002 at 11:30:12PM +0100}, Anthony wrote:
+>> to the net. However, I didn't realise that Windows altered the hw clock
+>> as there was no mention of it in any of the docs I read. >> I still dual-boot on a regular basis and if Windows is sneakily messing
+>> with the clock, I'd be interested to know in what way it is and how it
+>> couild be stopped from doing so.
+> In my experience Windows will change the hardware clock the first time
+> you boot into it after the clocks have gone forward/back an hour.  This
+> will only happen twice a year. How to stop it, I have not checked (I
+> just switch the clock back an hour from within windows after such a
+> reboot).  Is there a GMT windows timezone?
+
+Start->Settings->Control Panel->Date/Time->Time Zone tab-> Uncheck
+"Automatically adjust clock for daylight saving change".
+
+Ciaran
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

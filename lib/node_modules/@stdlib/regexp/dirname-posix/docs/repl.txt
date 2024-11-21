@@ -1,0 +1,41 @@
+
+{{alias}}()
+    Returns a regular expression to capture a POSIX path dirname.
+
+    Returns
+    -------
+    re: RegExp
+        Regular expression.
+
+    Examples
+    --------
+    > var RE = {{alias}}();
+    > var dir = RE.exec( '/foo/bar/index.js' )[ 1 ]
+    '/foo/bar'
+    > dir = RE.exec( './foo/bar/.gitignore' )[ 1 ]
+    './foo/bar'
+    > dir = RE.exec( 'foo/file.pdf' )[ 1 ]
+    'foo'
+    > dir = RE.exec( '/foo/bar/file' )[ 1 ]
+    '/foo/bar'
+    > dir = RE.exec( 'index.js' )[ 1 ]
+    ''
+    > dir = RE.exec( '.' )[ 1 ]
+    '.'
+    > dir = RE.exec( './' )[ 1 ]
+    '.'
+    > dir = RE.exec( '' )[ 1 ]
+    ''
+
+
+{{alias}}.REGEXP
+    Regular expression to capture a POSIX path dirname.
+
+    Examples
+    --------
+    > var ext = {{alias}}.REGEXP.exec( '/foo/bar/index.js' )[ 1 ]
+    '/foo/bar'
+
+    See Also
+    --------
+

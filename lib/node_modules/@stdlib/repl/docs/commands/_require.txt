@@ -1,0 +1,28 @@
+
+require( id )
+    Imports a module, JSON, or local file.
+
+    Modules can be imported from `node_modules`.
+
+    Local modules and JSON files can be imported using a relative path (e.g.,
+    './foo.js', './../bar.json', etc) that will be resolved against the current
+    working directory.
+
+    Parameters
+    ----------
+    id: string
+        Module name or path.
+
+    Returns
+    -------
+    m: any
+        Module export.
+
+    Examples
+    --------
+    > var crypto = require( 'crypto' )
+
+    See Also
+    --------
+    rerequire
+

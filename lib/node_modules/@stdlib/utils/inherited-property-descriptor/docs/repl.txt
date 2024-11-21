@@ -1,0 +1,31 @@
+
+{{alias}}( value, property[, level] )
+    Returns a property descriptor for an object's inherited property.
+
+    If provided `null` or `undefined` or provided a non-existent property, the
+    function returns `null`.
+
+    Parameters
+    ----------
+    value: any
+        Input value.
+
+    property: string|symbol
+        Property name.
+
+    level: integer (optional)
+        Inheritance level.
+
+    Returns
+    -------
+    desc: Object|null
+        Property descriptor.
+
+    Examples
+    --------
+    > var desc = {{alias}}( {}, 'toString' )
+    {...}
+
+    See Also
+    --------
+

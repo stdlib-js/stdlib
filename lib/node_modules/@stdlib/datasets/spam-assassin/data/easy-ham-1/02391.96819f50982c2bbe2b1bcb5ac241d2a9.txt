@@ -1,0 +1,25 @@
+From rssfeeds@jmason.org  Wed Oct  9 10:52:53 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id A4FD116F70
+	for <jm@localhost>; Wed,  9 Oct 2002 10:51:55 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 09 Oct 2002 10:51:55 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9980sK25218 for
+    <jm@jmason.org>; Wed, 9 Oct 2002 09:00:54 +0100
+Message-Id: <200210090800.g9980sK25218@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: guardian <rssfeeds@spamassassin.taint.org>
+Subject: Tate unveils its biggest work
+Date: Wed, 09 Oct 2002 08:00:54 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.newsisfree.com/click/-3,8688972,215/
+Date: 2002-10-09T03:15:19+01:00
+
+At 155 metres, Anish Kapoor's sculpture is one of the world's largest.
+
+

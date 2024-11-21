@@ -1,0 +1,204 @@
+From bounce-neatnettricks-2424157@silver.lyris.net  Thu Aug 15 10:51:10 2002
+Return-Path: <bounce-neatnettricks-2424157@silver.lyris.net>
+Delivered-To: zzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8448D43C4F
+	for <zzz@localhost>; Thu, 15 Aug 2002 05:49:35 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzz@localhost (single-drop); Thu, 15 Aug 2002 10:49:35 +0100 (IST)
+Received: from silver.lyris.net (silver.lyris.net [216.91.57.32]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with SMTP id g7ENU3408604 for
+    <xxxxxxxxxxxxxxxxx-neatnettricks@spamassassin.taint.org>; Thu, 15 Aug 2002 00:30:03 +0100
+Message-Id: <LYRIS-2424157-1370323-2002.08.14-16.20.02--xxxxxxxxxxxxxxxxx-neatnettricks#spamassassin.taint.org@silver.lyris.net>
+X-Sender: jteems@rap.midco.net@pop.midco.net
+X-Mailer: QUALCOMM Windows Eudora Version 5.1
+Date: Wed, 14 Aug 2002 16:20:00 -0700
+To: xxxxxxxxxxxxxxxxx-neatnettricks@spamassassin.taint.org
+From: NNT@silver.lyris.net
+Subject: Neat Net Tricks Standard Issue 131 - August 15, 2002
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"; format=flowed
+List-Unsubscribe: <mailto:leave-neatnettricks-2424157K@silver.lyris.net>
+Reply-To: NNT@silver.lyris.net
+
+IN THIS ISSUE:
+
+01. Secure IE
+02. Disk cleanup on XP
+03. Thanks but no thanks
+04. Mouseless way home
+05. Kartoo
+06. XP time feature
+07. Leaf Peeper Alert
+08. Saving scraps
+09. Quick access
+10. Don't believe your email
+
+And What's Coming Up Next Week in NNT Premium
+
+01. SECURE IE.  For the past month or so, our Software Review Panel has 
+been giving a grueling test to Secure IE, a piece of software that blocks 
+Flash and pop-ups, prevents malicious file downloads, lets you customize 
+Security Zone settings as you browse dozens of Web sites simultaneously up 
+to five times faster with a tabbed interface, annotate Web page with sticky 
+notes and highlighter, and save complete Web pages, even secure server 
+(HTTPS) pages and archive online transaction receipts.  For what we believe 
+is one of the most thorough reviews ever conducted on a single piece of 
+software, check out what our Panel had to say at 
+http://www.NeatNetTricks.com/SoftwareReviews .  For a free trial download, 
+visit http://www.secureie.com .  And if this one sweeps you off your feet, 
+go to the NNT Store at http://www.NeatNetTricks.com/store and get a super 
+deal, just $17.50 if you order before September 14.  With a 30-day 
+guarantee, what's to lose?
+
+02. DISK CLEANUP ON XP.  Windows XP users can do some fast cleaning chores 
+with Disk Cleanup.  Access this tool from the Start menu by right clicking 
+on your hard drive.  Then select Properties and click on the Disk Cleanup 
+button to determine how many files can be safely deleted.
+
+03. THANKS BUT NO THANKS.  Continuing our periodic feature of 
+less-than-useful sites on the Web:  The International Center for Bathroom 
+Etiquette at http://www.icbe.org/ gets our recognition this issue.  It says 
+it's working hard to bring you the latest in cutting edge research and 
+technology regarding bathroom etiquette.  We'll resist some obvious puns.
+
+. . . . .
+
+West Virginia's Diane Stratton recommended NNT to some friends and is now 
+enjoying QuicKeys 2.0, a great Windows management software package.  Diane 
+is our latest winner and you could be next.  Just go to the NNT Web site at 
+http://www.NeatNetTricks.com and click on "Recommend NNT."  Nothing could 
+be easier.
+
+. . . . .
+
+04. MOUSELESS WAY HOME.  To go home quickly in Internet Explorer, touch F6 
+to highlight the Address Bar and type two periods (..) there.  The Enter 
+key then takes you home.
+
+05. KARTOO.  Search engines are everywhere on the Internet but Kartoo at 
+http://www.kartoo.net is quite unusual.  It's a meta search engine that 
+displays results on a map in the form of a ball.  The larger the ball, the 
+more relevant the result.  As you mouseover each result, site descriptions 
+are revealed.  If all that sounds confusing, the explanation is more 
+complicated than the service itself.  Just try it.
+
+. . . . .
+
+You should make it a habit to visit the NNT Store at 
+http://www.NeatNetTricks.com/store . We try to have several great products 
+there at a limited-time price much less than anywhere else on the Net. 
+Currently, you'll find excellent ebooks, a very effective popup stopper, 
+and the very useful utility described in item 01 above, along with the 
+usual opportunity to subscribe to NNT Premium and ArchivesExpress.  Check 
+us out, you'll be glad you did.
+
+. . . . .
+
+06. XP TIME FEATURE.  Windows XP added a nice feature that heretofore 
+required a separate software application.  It will connect, either at a 
+programmed time or manually, to a time server via the Internet and reset 
+that often erroneous internal clock.  Just click on the time in the systems 
+tray, go to Date and Time Properties and click the Internet Time tab.
+
+07. LEAF PEEPER ALERT.  A bit early, but soon the changing colors of autumn 
+will begin here in the U.S.  For those who like to follow the display, 
+consider http://www.stormfax.com/foliage.htm for a comprehensive collection 
+of links and toll-free numbers to each state to determine peak color times.
+
+08. SAVINGS SCRAPS.  Some oldies are worth repeating.  If you're working 
+with text in, for example, MS Word or WordPad, and would like a handy way 
+to save a portion for later easy retrieval, just select (highlight) it and 
+click/drag it to your desktop.  When the newly created icon is clicked on, 
+it will show the application with which the scrap was created, along with 
+the first few words of the text.  A double click opens the text in the 
+application with which it was created.
+
+09. QUICK ACCESS.  To go to a frequently used program, you may find 
+yourself drilling down to the desktop and searching out the shortcut 
+icon.  Consider instead setting up a key combination that will provide 
+quick access without using the shortcut. Right click on the shortcut and 
+select Properties.  In the Shortcut key window, select any key you can 
+remember and click OK.  Ctrl+Alt and that key will open the application 
+whenever needed.
+
+10.  DON'T BELIEVE YOUR EMAIL.  We've been asked about those emails with 
+virus attachments that appear to be coming from NNT, asking for a 
+confirmation of a subscription.  Don't believe it, and don't open the 
+attachments.  Maybe this exchange between NNT and Lyris (our mail manager) 
+will clear things up:
+
+NNT: Is there anything that can be done about the current strains of virus 
+that implant on address books and randomly send email asking alleged 
+subscribers to verify their subscription (when they haven't subscribed at 
+all)? I've received some of these as well, and I know it's become a 
+widespread problem with other ezine publishers, creating a lot of ill will 
+all around.  Is there some configuration that we could change to keep 
+these from going out except to legitimate subscribers?
+
+Lyris:  Unfortunately, there isn't much we can do about this since it 
+isn't actually ListManager doing the sending.  The real problem is that 
+people sometimes will add the "join" address to their address book and 
+that is what causes the problems.  The best we can do is advise people not 
+to have their address books set to automatically add any email address 
+that they send a message to even once.  The main culprit here seems to be 
+Outlook Express.
+
+WHAT'S COMING NEXT WEEK:  Another batch of Neat Net Tricks in the Premium 
+issue, including:
+
+*  A great collection of information and free downloads to make your system 
+more secure.
+
+*  Free software to measure and display your real-time Internet speed.
+
+*  Can you handle still another popup stopper - that's interference free - 
+and at no cost?
+
+*  An easy-to-use tool to store and arrange all your passwords, user IDs, 
+and other info.
+
+*  A Microsoft Word tip to easily work around that pesky autocompletion 
+feature.
+
+*  A whole arsenal of tools to combat spam.
+
+*  Software that provides more than 200 interesting facts about your 
+computer and displays about your CPU, memory, operating system, and your 
+computer's power source.
+
+*  Our in-depth article discusses how to best manage our important 
+passwords and get out of trouble when we -inevitably - forget those passwords.
+
+And more!  If you haven't subscribed yet, you won't find a better source of 
+useful information for just 42 cents per issue.  That's $10 for a year's 
+worth - 24 issues - at the NNT Store, http://www.NeatNetTricks.com/store .
+
+. . . . . .
+
+NNT makes no endorsement or warranty, expressed or implied, with regard to 
+featured products or services. Results may vary based on operating systems 
+and other variables beyond our control.
+
+For info on how to subscribe, unsubscribe, or change your address, send a 
+blank email to info-neatnettricks@silver.lyris.net .
+
+Sponsor an entire issue of NNT with your exclusive message to our readers 
+at very low rates. Send a blank email to 
+advertise-neatnettricks@silver.lyris.net .
+
+Comments or questions about your computer and the Internet? Visit the NNT 
+Bulletin Board at http://www.escribe.com/computing/neatnettricks/bb/ .
+
+NNT is hosted by Lyris.com, the best in email list management.
+
+Copyright 2002 by Jack Teems. All rights reserved. Neat Net Tricks is 
+registered with the U.S. Library of Congress ISSN: 1533-4619. 
+
+
+---
+You are currently subscribed to neatnettricks as: xxxxxxxxxxxxxxxxx-neatnettricks@spamassassin.taint.org
+To unsubscribe send a blank email to leave-neatnettricks-2424157K@silver.lyris.net
+
+

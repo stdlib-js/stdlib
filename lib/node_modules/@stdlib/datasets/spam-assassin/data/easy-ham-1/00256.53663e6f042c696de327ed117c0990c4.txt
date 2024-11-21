@@ -1,0 +1,64 @@
+From secprog-return-484-zzzz=spamassassin.taint.org@securityfocus.com  Fri Sep  6 15:24:57 2002
+Return-Path: <secprog-return-484-zzzz=spamassassin.taint.org@securityfocus.com>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id 67C5716F03
+	for <zzzz@localhost>; Fri,  6 Sep 2002 15:24:57 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Fri, 06 Sep 2002 15:24:57 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g86A13C30435 for
+    <zzzz@spamassassin.taint.org>; Fri, 6 Sep 2002 11:01:03 +0100
+Received: from outgoing.securityfocus.com (outgoing3.securityfocus.com
+    [66.38.151.27]) by webnote.net (8.9.3/8.9.3) with ESMTP id SAA16998 for
+    <zzzz@spamassassin.taint.org>; Thu, 5 Sep 2002 18:30:53 +0100
+Received: from lists.securityfocus.com (lists.securityfocus.com
+    [66.38.151.19]) by outgoing.securityfocus.com (Postfix) with QMQP id
+    421EEA312D; Thu,  5 Sep 2002 10:39:46 -0600 (MDT)
+Mailing-List: contact secprog-help@securityfocus.com; run by ezmlm
+Precedence: bulk
+List-Id: <secprog.list-id.securityfocus.com>
+List-Post: <mailto:secprog@securityfocus.com>
+List-Help: <mailto:secprog-help@securityfocus.com>
+List-Unsubscribe: <mailto:secprog-unsubscribe@securityfocus.com>
+List-Subscribe: <mailto:secprog-subscribe@securityfocus.com>
+Delivered-To: mailing list secprog@securityfocus.com
+Delivered-To: moderator for secprog@securityfocus.com
+Received: (qmail 17568 invoked from network); 5 Sep 2002 08:02:24 -0000
+Date: Thu, 5 Sep 2002 10:17:03 +0200
+From: Andrey Kolishak <andr@sandy.ru>
+X-Mailer: The Bat! (v1.61) Personal
+Reply-To: Andrey Kolishak <andr@sandy.ru>
+Organization: none
+X-Priority: 3 (Normal)
+Message-Id: <5780619972.20020905101703@sandy.ru>
+To: SECPROG Securityfocus <SECPROG@securityfocus.com>
+Subject: Re: use of base image / delta image for automated recovery from attacks
+In-Reply-To: <NAEOJLMPJMJDFPLHIOJOAEFJDBAA.bmord@icon-nicholson.com>
+References: <NAEOJLMPJMJDFPLHIOJOAEFJDBAA.bmord@icon-nicholson.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+
+
+take a look at http://www.pcworld.com/news/article/0,aid,102881,00.asp
+
+ Andrey                            mailto:andr@sandy.ru
+
+
+
+BM> Does anyone do this already? Or is this a new concept? Or has this concept
+BM> been discussed before and abandoned for some reasons that I don't yet know?
+BM> I use the physical architecture of a basic web application as an example in
+BM> this post, but this concept could of course be applied to most server
+BM> systems. It would allow for the hardware-separation of volatile and
+BM> non-volatile disk images. It would be analogous to performing nightly
+BM> ghosting operations, only it would be more efficient and involve less (or
+BM> no) downtime.
+
+BM> Thanks for any opinions,
+BM> Ben
+
+

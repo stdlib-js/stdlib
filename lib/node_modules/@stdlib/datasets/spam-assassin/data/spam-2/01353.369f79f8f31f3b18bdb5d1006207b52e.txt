@@ -1,0 +1,129 @@
+From fork-admin@xent.com  Thu Aug  8 16:00:35 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5328B44117
+	for <jm@localhost>; Thu,  8 Aug 2002 10:02:33 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 08 Aug 2002 15:02:33 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g78E3O211261 for <jm@jmason.org>;
+    Thu, 8 Aug 2002 15:03:28 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id C98292940DD; Thu,  8 Aug 2002 06:59:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from 1.1.1.1 (2-138.mganm700-1.telepar.net.br [200.181.209.138])
+    by xent.com (Postfix) with SMTP id 6D55E2940C8 for <fork@xent.com>;
+    Thu,  8 Aug 2002 06:57:52 -0700 (PDT)
+From: "_Ricardo_" <topseg321@bol.com.br>
+To: <fork@spamassassin.taint.org>
+Subject: _Melhore sua segurança_
+MIME-Version: 1.0
+Content-Type: text/html; charset="iso-8859-1"
+Message-Id: <20020808135752.6D55E2940C8@xent.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 8 Aug 2002 11:08:32
+
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Ricardo">
+   <meta name="GENERATOR" content="Mozilla/4.51 [pt] (Win98; I) [Netscape]">
+   <title>Ricardo</title>
+</head>
+<body text="#000000" bgcolor="#FFFFCC" link="#000099" vlink="#3366FF" alink="#FF0000">
+<font face="Courier New,Courier"><font size=-1>&nbsp;&nbsp;&nbsp;
+Ol&aacute;</font></font>
+<br><font face="Courier New,Courier"><font size=-1>&nbsp;&nbsp;&nbsp; Trabalho
+divulgando empresas s&eacute;rias e competentes</font></font>
+<br><font face="Courier New,Courier"><font size=-1>que podem lhe oferecer
+excelentes oportunidades.</font></font>
+<br><font face="Courier New,Courier"><font size=-1>&nbsp;&nbsp;&nbsp; Caso
+n&atilde;o seja de seu interesse solicito que exclua</font></font>
+<br><font face="Courier New,Courier"><font size=-1>este e-mail ou se poss&iacute;vel
+o repasse para seus amigos.</font></font>
+<br><font face="Courier New,Courier"><font size=-1>&nbsp;&nbsp;&nbsp; Muito
+obrigado pela ajuda e compreens&atilde;o</font></font>
+<br><font face="Courier New,Courier"><font size=-1>&nbsp;&nbsp;&nbsp; Atenciosamente...</font></font>
+<br><font face="Courier New,Courier"><font size=-1>&nbsp;&nbsp;&nbsp; Ricardo
+L. Kampf.</font></font>
+<br>
+<hr WIDTH="100%"><b><font face="Arial,Helvetica"><font color="#3333FF"><font size=+1>Proteja
+seu patrim&ocirc;nio sem gastar uma fortuna</font></font></font></b>
+<table BORDER >
+<tr>
+<td>
+<center><b><font face="Arial,Helvetica">Camera Falsa M01</font></b>
+<br><img SRC="http://www.seg1000.hpg.com.br/p3.jpg" >
+<br><b><font face="Arial,Helvetica">R$ 36,00</font></b>
+<br><b><font face="Arial,Helvetica">frete incluso</font></b></center>
+</td>
+
+<td><b><font face="Arial,Helvetica"><font color="#000000"><font size=-1><a href="http://www.garcia.clic3.net">Para
+ver outros modelos ou obter mais</a></font></font></font></b>
+<br><b><font face="Arial,Helvetica"><font color="#000000"><font size=-1><a href="http://www.garcia.clic3.net">detalhes
+clique aqui.</a></font></font></font></b>
+<center>
+<p><b><font face="Arial,Helvetica"><font color="#000000"><font size=-1><a href="http://www.garcia.clic3.net">Outros
+produtos</a></font></font></font></b></center>
+
+<ul>
+<li>
+<b><font face="Arial,Helvetica"><font color="#000000"><font size=-1><a href="http://www.garcia.clic3.net">Escuta
+telef&ocirc;nica</a></font></font></font></b></li>
+
+<li>
+<b><font face="Arial,Helvetica"><font color="#000000"><font size=-1><a href="http://www.garcia.clic3.net">Alarmes</a></font></font></font></b></li>
+
+<li>
+<b><font face="Arial,Helvetica"><font color="#000000"><font size=-1><a href="http://www.garcia.clic3.net">Cameras
+verdadeiras</a></font></font></font></b></li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<td>
+<center><b><font face="Arial,Helvetica">Trava de C&acirc;mbio</font></b>
+<br><img SRC="http://www.seg1000.hpg.com.br/travacambio.jpg" >
+<br><b><font face="Arial,Helvetica">R$ 38,00</font></b>
+<br><b><font face="Arial,Helvetica">Frete incluso</font></b></center>
+</td>
+
+<td><b><font face="Arial,Helvetica"><font size=-1><a href="http://www.garcia.clic3.net">Ao
+mesmo tempo trava a alavanca</a></font></font></b>
+<br><b><font face="Arial,Helvetica"><font size=-1><a href="http://www.garcia.clic3.net">do
+c&acirc;mbio e do freio de m&atilde;o.&nbsp;</a></font></font></b>
+<br><b><font face="Arial,Helvetica"><font size=-1><a href="http://www.garcia.clic3.net">Fabricada
+em a&ccedil;o carbono e ferro,</a></font></font></b>
+<br><b><font face="Arial,Helvetica"><font size=-1><a href="http://www.garcia.clic3.net">pintura
+eletrost&aacute;tica.</a></font></font></b>
+<p><b><font face="Arial,Helvetica"><font size=-1><a href="http://www.garcia.clic3.net">Fechadura
+Tetra</a></font></font></b>
+<br><b><font face="Arial,Helvetica"><font color="#000000"><font size=-1><a href="http://www.garcia.clic3.net">Para
+ver outros modelos ou obter mais</a></font></font></font></b>
+<br><b><font face="Arial,Helvetica"><font color="#000000"><font size=-1><a href="http://www.garcia.clic3.net">detalhes
+clique aqui e visite nossa loja.</a></font></font></font></b>
+<br>&nbsp;</td>
+</tr>
+</table>
+&nbsp;&nbsp;&nbsp; Para se retirar do cadastro, favor responder sem assunto.
+<br>&nbsp;
+</body>
+</html>
+http://xent.com/mailman/listinfo/fork
+
+

@@ -1,0 +1,65 @@
+Return-Path: ler@lerami.lerctr.org
+Delivery-Date: Mon Sep  9 16:18:29 2002
+Received: via dmail-2002(12) for +lists/freebsd/bugs; Mon, 9 Sep 2002 16:18:29 -0500 (CDT)
+Return-Path: <owner-freebsd-bugs@FreeBSD.ORG>
+Received: from mx2.freebsd.org (mx2.FreeBSD.org [216.136.204.119])
+	by lerami.lerctr.org (8.12.2/8.12.2/20020902/$Revision: 1.30 $) with ESMTP id g89LIIE9002193
+	for <ler@lerctr.org>; Mon, 9 Sep 2002 16:18:20 -0500 (CDT)
+Received: from hub.freebsd.org (hub.FreeBSD.org [216.136.204.18])
+	by mx2.freebsd.org (Postfix) with ESMTP
+	id E3751559F2; Mon,  9 Sep 2002 14:18:13 -0700 (PDT)
+	(envelope-from owner-freebsd-bugs@FreeBSD.ORG)
+Received: by hub.freebsd.org (Postfix, from userid 538)
+	id 6765737B40F; Mon,  9 Sep 2002 14:18:12 -0700 (PDT)
+Received: from localhost (localhost [127.0.0.1])
+	by hub.freebsd.org (Postfix) with SMTP
+	id 649DD2E8023; Mon,  9 Sep 2002 14:18:11 -0700 (PDT)
+Received: by hub.freebsd.org (bulk_mailer v1.12); Mon, 9 Sep 2002 14:18:11 -0700
+Delivered-To: freebsd-bugs@freebsd.org
+Received: from mx1.FreeBSD.org (mx1.FreeBSD.org [216.136.204.125])
+	by hub.freebsd.org (Postfix) with ESMTP
+	id 7EC3537B400; Mon,  9 Sep 2002 14:18:04 -0700 (PDT)
+Received: from mx2.alles.or.jp (mx2.alles.or.jp [210.231.151.88])
+	by mx1.FreeBSD.org (Postfix) with ESMTP
+	id 0E0A143E42; Mon,  9 Sep 2002 14:18:03 -0700 (PDT)
+	(envelope-from sous1@aa.alles.or.jp)
+Received: from B (p6044-ipad22marunouchi.tokyo.ocn.ne.jp [61.214.35.44])
+	by mx2.alles.or.jp (8.9.3/3.7W/allesnet) with SMTP id GAA06604;
+	Tue, 10 Sep 2002 06:16:37 +0900 (JST)
+Message-Id: <200209092116.GAA06604@mx2.alles.or.jp>
+From: =?iso-2022-jp?B?c291czFAYWEuYWxsZXMub3IuanA=?=@mx2.alles.or.jp
+To: =?iso-2022-jp?B?MTIx?=@mx2.alles.or.jp
+Reply-To: sous1@aa.alles.or.jp
+Date: Tue, 10 Sep 2002 06:16:46 +0900
+Subject: =?iso-2022-jp?B?GyRCJDckOCRfJEgkYiRiJE4lMyVpJVwlbCE8JTclZyVzGyhK?=
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+Sender: owner-freebsd-bugs@FreeBSD.ORG
+List-ID: <freebsd-bugs.FreeBSD.ORG>
+List-Archive: <http://docs.freebsd.org/mail/> (Web Archive)
+List-Help: <mailto:majordomo@FreeBSD.ORG?subject=help> (List Instructions)
+List-Subscribe: <mailto:majordomo@FreeBSD.ORG?subject=subscribe%20freebsd-bugs>
+List-Unsubscribe: <mailto:majordomo@FreeBSD.ORG?subject=unsubscribe%20freebsd-bugs>
+X-Loop: FreeBSD.org
+Precedence: bulk
+X-Virus-Scanned: by amavisd-milter (http://amavis.org/)
+X-Status: 
+X-Keywords: 
+
+ももがはじけてぶどうがゆれる
+しじみともものコラボレーション
+ロリータビデオ（ＤＶＤ）専門
+いつまで営業できるかわかりません
+ご注文はお早めに！
+http://book-i.net/mutou
+作品例
+少女伝説　名古屋団地9　少女の道草
+などなど132作品。好評発売中！
+(^-^)/~ロリ炉利ムトー
+
+
+
+To Unsubscribe: send mail to majordomo@FreeBSD.org
+with "unsubscribe freebsd-bugs" in the body of the message
+

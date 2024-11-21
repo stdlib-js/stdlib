@@ -1,0 +1,55 @@
+
+{{alias}}( [options] )
+    Returns an iterator which generates a square wave.
+
+    If an environment supports Symbol.iterator, the returned iterator is
+    iterable.
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Function options.
+
+    options.period: integer (optional)
+        Period (i.e., the number of iterations before a square wave repeats).
+        This must be an even integer in order to ensure a 50% duty cycle.
+        Default: 10.
+
+    options.min: number (optional)
+        Minimum amplitude. Default: -1.0.
+
+    options.max: number (optional)
+        Maximum amplitude. Default: 1.0.
+
+    options.offset: integer (optional)
+        Phase offset (in units of iterations; zero-based). A negative offset
+        translates the waveform to the left. A positive offset translates a
+        waveform to the right. Default: 0.
+
+    options.iter: integer (optional)
+        Number of iterations. Default: 1e308.
+
+    Returns
+    -------
+    iterator: Object
+        Iterator.
+
+    iterator.next(): Function
+        Returns an iterator protocol-compliant object containing the next
+        iterated value (if one exists) and a boolean flag indicating whether the
+        iterator is finished.
+
+    iterator.return( [value] ): Function
+        Finishes an iterator and returns a provided value.
+
+    Examples
+    --------
+    > var it = {{alias}}();
+    > var v = it.next().value
+    1.0
+    > v = it.next().value
+    1.0
+
+    See Also
+    --------
+

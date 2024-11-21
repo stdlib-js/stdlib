@@ -1,0 +1,55 @@
+
+{{alias}}( bstr )
+    Creates a single-precision floating-point number from an IEEE 754 literal
+    bit representation.
+
+    Parameters
+    ----------
+    bstr: string
+        Literal bit representation.
+
+    Returns
+    -------
+    out: float
+        Single-precision floating-point number.
+
+    Examples
+    --------
+    > var bstr = '01000000100000000000000000000000';
+    > var val = {{alias}}( bstr )
+    4.0
+    > bstr = '01000000010010010000111111011011';
+    > val = {{alias}}( bstr )
+    ~3.14
+    > bstr = '11111111011011000011101000110011';
+    > val = {{alias}}( bstr )
+    ~-3.14e+38
+
+    // The function handles subnormals:
+    > bstr = '10000000000000000000000000010110';
+    > val = {{alias}}( bstr )
+    ~-3.08e-44
+    > bstr = '00000000000000000000000000000001';
+    > val = {{alias}}( bstr )
+    ~1.40e-45
+
+    // The function handles special values:
+    > bstr = '00000000000000000000000000000000';
+    > val = {{alias}}( bstr )
+    0.0
+    > bstr = '10000000000000000000000000000000';
+    > val = {{alias}}( bstr )
+    -0.0
+    > bstr = '01111111110000000000000000000000';
+    > val = {{alias}}( bstr )
+    NaN
+    > bstr = '01111111100000000000000000000000';
+    > val = {{alias}}( bstr )
+    Infinity
+    > bstr = '11111111100000000000000000000000';
+    > val = {{alias}}( bstr )
+    -Infinity
+
+    See Also
+    --------
+

@@ -1,0 +1,67 @@
+From fork-admin@xent.com  Tue Aug 13 11:55:46 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 546B243C32
+	for <jm@localhost>; Tue, 13 Aug 2002 06:55:46 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 11:55:46 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7DAtRe28407 for <jm@jmason.org>;
+    Tue, 13 Aug 2002 11:55:28 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 319132940A7; Tue, 13 Aug 2002 03:53:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hotmail.com (f39.law15.hotmail.com [64.4.23.39]) by
+    xent.com (Postfix) with ESMTP id BBCC329409F for <fork@xent.com>;
+    Tue, 13 Aug 2002 03:52:47 -0700 (PDT)
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Tue, 13 Aug 2002 03:53:58 -0700
+Received: from 216.30.74.2 by lw15fd.law15.hotmail.msn.com with HTTP;
+    Tue, 13 Aug 2002 10:53:57 GMT
+X-Originating-Ip: [216.30.74.2]
+From: "Russell Turpin" <deafbox@hotmail.com>
+To: fork@spamassassin.taint.org
+Subject: Re: NYTimes.com Article: Bigger Bar Code Inches Up on Retailers
+MIME-Version: 1.0
+Content-Type: text/plain; format=flowed
+Message-Id: <F39xc1o8yfogkJXrRjb00000012@hotmail.com>
+X-Originalarrivaltime: 13 Aug 2002 10:53:58.0124 (UTC) FILETIME=[B9AB12C0:01C242B7]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 13 Aug 2002 10:53:57 +0000
+
+Gojomo:
+>How about a highly error corrected atomic level 3D encoding scheme that 
+>relies on shape, colour and chemical make up to uniquely identify every 
+>object in the universe. Objects uniquely identify themselves - theres no 
+>need for barcodes.
+
+That might work easily enough for reasonably rigid
+solids that can be positioned and fingerprinted. I
+think it would be more difficult for other items.
+Like a sweater. The exact pattern of threads is never
+quite the same, with the loose weave and all. The
+problem of automatically capturing any object's look,
+adequately to uniquely identifying it later, is still
+open research.
+
+
+
+_________________________________________________________________
+Send and receive Hotmail on your mobile device: http://mobile.msn.com
+
+http://xent.com/mailman/listinfo/fork
+
+

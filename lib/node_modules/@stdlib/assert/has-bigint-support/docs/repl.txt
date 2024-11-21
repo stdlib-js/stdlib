@@ -1,0 +1,17 @@
+
+{{alias}}()
+    Tests for native `BigInt` support.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an environment has native `BigInt` support.
+
+    Examples
+    --------
+    > var bool = {{alias}}()
+    <boolean>
+
+    See Also
+    --------
+

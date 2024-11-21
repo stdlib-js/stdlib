@@ -1,0 +1,162 @@
+From owner-melbwireless@wireless.org.au  Fri Jul 19 00:55:29 2002
+Return-Path: <owner-melbwireless@wireless.org.au>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 78F8A43F90
+	for <jm@localhost>; Thu, 18 Jul 2002 19:55:28 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 00:55:28 +0100 (IST)
+Received: from wireless.org.au (www.wireless.org.au [202.161.127.82]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6INieJ31114 for
+    <jm@jmason.org>; Fri, 19 Jul 2002 00:44:40 +0100
+Received: (from majordomo@localhost) by wireless.org.au (8.11.6/8.11.6) id
+    g6INeDl26314 for melbwireless-list; Fri, 19 Jul 2002 09:40:13 +1000
+Received: from apk01fe2.mail1.triara.com (x.triara.com [200.57.128.70]
+    (may be forged)) by wireless.org.au (8.11.6/8.11.6) with ESMTP id
+    g6INeBx26311 for <melbwireless@wireless.org.au>; Fri, 19 Jul 2002 09:40:11
+    +1000
+Received: from gina ([200.67.156.243]) by apk01fe2.mail1.triara.com with
+    ESMTP id <20020718232025.OPGB1025.apk01fe2@gina>; Thu, 18 Jul 2002
+    18:20:25 -0500
+From: Quality Training de =?ISO-8859-1?Q?M=E9xico?= <villahermosa@rebackee.com>
+Subject: [MLB-WIRELESS] CONTRALORIA Y GERENCIA ADMINISTRATIVA
+To: "Lista de destinatarios oculta" <villahermosa@rebackee.com>
+MIME-Version: 1.0
+Reply-To: villahermosa@rebackee.com
+Date: Thu, 18 Jul 2002 18:16:04 -0500
+X-Priority: 3
+X-Library: Indy 8.0.22
+Message-Id: <20020718232025.OPGB1025.apk01fe2@gina>
+Sender: owner-melbwireless@wireless.org.au
+Precedence: bulk
+Content-Type: multipart/alternative; boundary="=_NextPart_2rfkindysadvnqw3nerasdf";
+
+This is a multi-part message in MIME format
+
+--=_NextPart_2rfkindysadvnqw3nerasdf
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+http://www.rebackee.com/cursos2/contraloria.htm
+
+--=_NextPart_2rfkindysadvnqw3nerasdf
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Base: "http://www.rebackee.com/cursos2/"
+Content-Location: "http://www.rebackee.com/cursos2/"
+
+<html>
+<head><BASE HREF=3D=22http://www.rebackee.com/cursos2/=22>
+<title>Untitled Document</title>
+<meta http-equiv=3D=22Content-Type=22 content=3D=22text/html; charset=3Diso-8859-1=22>
+</head>
+
+<body bgcolor=3D=22=23FFFFFF=22 text=3D=22=23000000=22>
+<div align=3D=22center=22>=20  <p><font size=3D=224=22><b><font color=3D=22=23990000=22 size=3D=223=22 face=3D=22Arial, Helvetica, sans-serif=22>Quality=20    Training de M&eacute;xico</font></b><font size=3D=223=22 face=3D=22Arial, Helvetica, sans-serif=22>,=20    lo invita al extraordinario seminario que tendr&aacute; lugar en <b><font color=3D=22=23000099=22>VILLAHERMOSA</font></b><font color=3D=22=23000099=22>,=20    <b>TABASCO</b></font>, los <font color=3D=22=23990000=22><b>d&iacute;as 01 y 02 de=20    AGOSTO de 2002</b></font></font></font></p>
+  <hr>
+  <p><img src=3D=22../www/imagesjulio/contraloria.jpg=22 width=3D=22551=22 height=3D=22723=22>
+  <hr>
+  <div align=3D=22left=22>=20    <p><font size=3D=223=22 face=3D=22Arial, Helvetica, sans-serif=22>Este es un seminario=20      sobre los m&aacute;s efectivos conceptos y maneras concretas para mejorar=20      la funci&oacute;n de Contralor&iacute;a y Gerencia Administrativa.....&iquest;=20      Que medidas debe tomar.... para enfrentar la Falta de Liquidez, Reducci&oacute;n=20      de Ventas, Aumento en los Costos, conflictos Laborales....&iquest; C&oacute;mo=20      anticiparse a un colapso en la empresa ?. </font></p>
+    <p> <font size=3D=223=22 face=3D=22Arial, Helvetica, sans-serif=22><b><font color=3D=22=23990000=22>&iexcl;&iexcl;=20      NO ESPERE A QUE SEA DEMASIADO TARDE =21=21</font></b></font></p>
+    <p><font size=3D=223=22 face=3D=22Arial, Helvetica, sans-serif=22>Se discutir&aacute;=20      ampliamente sobre la situaci&oacute;n actual de las empresas en &eacute;pocas=20      de crisis, &iquest;que est&aacute;n haciendo para salir adelante?. As&iacute;=20      como estrategias contables actuales, pron&oacute;sticos de presupuestos,=20      modelos ABC y otras alternativas de flujo de informaci&oacute;n; como controles=20      y cumplimientos, informaci&oacute;n administrativa, reportes de gasto, cr&eacute;dito=20      y cobranza, an&aacute;lisis financiero y personal. Aspectos claves dentro=20      del programa :</font></p>
+    <p><font size=3D=223=22 face=3D=22Arial, Helvetica, sans-serif=22 color=3D=22=23990000=22><b>-=20      Como organizar su &aacute;rea y hacerla altamente competitiva</b></font></p>
+    <p><b><font size=3D=223=22 face=3D=22Arial, Helvetica, sans-serif=22 color=3D=22=23990000=22>-=20      Renueve su manera de utilizar los informes financieros</font></b></p>
+    <p><b><font size=3D=223=22 face=3D=22Arial, Helvetica, sans-serif=22 color=3D=22=23990000=22>-=20      Predictores de Quiebra....Acciones inmediatas a considerar <br>
+      <br>
+      - Casos Hist&oacute;ricos</font></b></p>
+    <p><font size=3D=223=22 face=3D=22Arial, Helvetica, sans-serif=22><br>
+      <br>
+      <font face=3D=22Times New Roman, Times, serif=22 size=3D=224=22><b><font size=3D=223=22 face=3D=22Arial, Helvetica, sans-serif=22 color=3D=22=23000099=22>&iexcl;&iexcl;LA=20      IMPORTANCIA DE CAPACITARSE CON LOS L&Iacute;DERES=21=21 </font></b><font size=3D=223=22 face=3D=22Arial, Helvetica, sans-serif=22 color=3D=22=23000000=22><br>
+      <br>
+      <b>Experiencia, Calidad y &Eacute;xito...</b><br>
+      <br>
+      Quality Training de M&eacute;xico, le ofrece los m&aacute;s aclamados consultores=20      y seminarios ejecutivos disponibles en el mercado...con los temas de mayor=20      impacto en las empresas...</font></font></font></p>
+    <p><font size=3D=223=22 face=3D=22Arial, Helvetica, sans-serif=22>SONY de M&eacute;xico,=20      Hewlett Packard, Casa Cuervo, Cervecer&iacute;a Modelo, PEMEX, Mexicana,=20      Molex y m&aacute;s de 4,000 empresas en M&eacute;xico y Latinoam&eacute;rica,=20      conocen nuestros exclusivos programas de capacitaci&oacute;n.</font></p>
+    <p><font size=3D=223=22 face=3D=22Arial, Helvetica, sans-serif=22><font face=3D=22Times New Roman, Times, serif=22 size=3D=224=22><font size=3D=223=22 face=3D=22Arial, Helvetica, sans-serif=22 color=3D=22=23000000=22><br>
+      <b><font color=3D=22=23000099=22>&iexcl; Un experto estar&aacute; con usted en este=20      seminario =21</font></b></font></font><br>
+      </font> </p>
+    <p><font size=3D=223=22 face=3D=22Arial, Helvetica, sans-serif=22><br>
+      <font size=3D=225=22 color=3D=22=23000099=22><b><font size=3D=224=22 color=3D=22=23990000=22>TEMARIO:</font></b></font><br>
+      <br>
+      <font color=3D=22=23990000=22><b>1.- El Nuevo Papel del Gerente Administrativo en=20      las Empresas Modernas.</b></font><br>
+      - Funciones, responsabilidades y resultados.<br>
+      - Trampas en la Planeaci&oacute;n.<br>
+      - El Plan de Contingencia.</font></p>
+    <p><font size=3D=223=22 face=3D=22Arial, Helvetica, sans-serif=22><b><font color=3D=22=23990000=22>2.-=20      La Gerencia Administrativa y el An&aacute;lisis de Procesos, Pol&iacute;ticas=20      y Procedimientos para controlar las operaciones de su empresa.</font></b><br>
+      - Conocimiento de la empresa: Base para el an&aacute;lisis de procesos.<br>
+      - Establecimiento de planes de operaci&oacuten.</font> </p>
+    <p><font size=3D=223=22 face=3D=22Arial, Helvetica, sans-serif=22>- An&aacute;lisis de=20      funciones b&aacute;sicas: abastecimientos, producci&oacute;n, ventas, recursos=20      humanos.<br>
+      - Bases para implementar pol&iacute;ticas y procedimientos.</font> </p>
+    <p><font size=3D=223=22 face=3D=22Arial, Helvetica, sans-serif=22><b><font color=3D=22=23990000=22>3.-=20      Control y Administraci&oacute;n de Ingresos, el Cr&eacute;dito y la Cobranza.</font></b><br>
+      - Organizaci&oacute;n del departamento de cr&eacute;dito y su manual de=20      pol&iacute;ticas y procedimientos.<br>
+      - Determinaci&oacute;n de pol&iacute;ticas de apertura y autorizaci&oacute;n=20      de cr&eacute;dito.<br>
+      - Gesti&oacute;n de Cobranza.<br>
+      - Concentraci&oacute;n de fondos, cobranza electr&oacute;nica y factoraje.</font></p>
+    <p><font size=3D=223=22 face=3D=22Arial, Helvetica, sans-serif=22><b><font color=3D=22=23990000=22>4.-=20      Control de Costos en la Empresa.</font></b><br>
+      - Los costos en la administraci&oacute;n empresarial.<br>
+      - Reducci&oacute;n de Costos - Alcances -<br>
+      - Presupuestos de costos.<br>
+      - Control de rentabilidad y costos.</font></p>
+    <p><font size=3D=223=22 face=3D=22Arial, Helvetica, sans-serif=22><b><font color=3D=22=23990000=22>5.-=20      Renueve su Manera de Utilizar Informes Financieros.</font></b><br>
+      - Problemas en la manera de elaborar informes financieros.<br>
+      - Tipos, usos y elementos en los informes.<br>
+      - Criterios para los informes: importancia, relevancia, prontitud y presentaci&oacute;n.=20      </font></p>
+    <p><font size=3D=223=22 face=3D=22Arial, Helvetica, sans-serif=22><b><font color=3D=22=23990000=22>6.-=20      Reportes Financieros para Evaluar la Productividad:</font></b><br>
+      - Herramientas de Diagn&oacute;stico del resultado financiero.<br>
+      - Valor Econ&oacute;mico Agregado (EVA) como herramienta para medir la productividad.<br>
+      - Enlace entre la estrategia global de la empresa y la informaci&oacute;n=20      financiera y administrativa.<br>
+      - Informaci&oacute;n para medir y mejorar la competitividad: Ventajas y=20      desventajas competitivas.<br>
+      - Concepto de los GAP&=23146;S.</font></p>
+    <p><font face=3D=22Arial, Helvetica, sans-serif=22>-------------------------------------------------------------------------------------------------------------------------------------------------<br>
+      <br>
+      <font color=3D=22=23990000=22><b><font size=3D=224=22>PROGRAMA:</font></b><br>
+      <font size=3D=224=22><b>01 y 02 de AGOSTO de 2002</b></font></font><br>
+      horario: 08:00 a 13:00 y de 14:30 a 17:30 hrs.<br>
+      <br>
+      <font color=3D=22=23003399=22 size=3D=224=22><b>INCLUYE:</b></font><br>
+      <font color=3D=22=23000099=22>Informaci&oacute;n estrat&eacute;gica, material de=20      trabajo, reconocimiento con valor oficial, coffee break y la exposici&oacute;n=20      de un prestigiado consultor.</font><br>
+      <br>
+      <font color=3D=22=23990000=22 size=3D=224=22><b>FORMA DE INSCRIPCI&Oacute;N:</b></font><br>
+      1.- Llenar debidamente la solicitud de inscripci&oacute;n.<br>
+      <br>
+      2.- Cheque a nombre de: <b>Quality Training Corporation, S.C.</b><br>
+      <br>
+      3.- Dep&oacute;sito en <b>Banamex Cuenta : 6680083 Sucursal 082</b> Centro=20      Financiero Paseo <br>
+      <br>
+      4.- Enviar por fax la ficha de su dep&oacute;sito sellada.<br>
+      <br>
+      5.- Debido al cupo limitado, &uacute;nicamente se garantizar&aacute;n las=20      inscripciones en el orden en que efectuaron su pago.</font></p>
+    </div>
+  <div align=3D=22left=22>
+    <p><b><font face=3D=22Arial, Helvetica, sans-serif=22 color=3D=22=23003399=22 size=3D=224=22>INVERSI&Oacute;N:=20      =24 4,690 </font></b><font face=3D=22Arial, Helvetica, sans-serif=22 color=3D=22=23003399=22 size=3D=223=22>mas=20      IVA</font></p>
+    <p><font face=3D=22Arial, Helvetica, sans-serif=22 size=3D=223=22 color=3D=22=23003399=22><b><font size=3D=224=22>PRONTO=20      PAGO: =24 4,200</font></b> mas IVA</font> <font face=3D=22Arial, Helvetica, sans-serif=22 size=3D=223=22 color=3D=22=23990000=22>(antes=20      del 25 de julio de 2002)</font> </p>
+    <p><font face=3D=22Arial, Helvetica, sans-serif=22 size=3D=223=22 color=3D=22=23003399=22><b><font color=3D=22=23000000=22>INFORMES=20      E INSCRIPCIONES: <font size=3D=225=22>(993) 314 - 40 85</font></font></b><font color=3D=22=23000000=22>=20      con 10 l&iacute;neas</font></font></p><hr>
+    <p align=3D=22center=22><img src=3D=22../www/imagesjulio/boton%20de%20solicitud%20de%20inscripcion.jpg=22 width=3D=22335=22 height=3D=2296=22 usemap=3D=22=23Map=22 border=3D=220=22>=20      <map name=3D=22Map=22>
+        <area shape=3D=22rect=22 coords=3D=223,3,329,93=22 href=3D=22villahermosasol1.htm=22>
+      </map>
+    </p>
+    <hr>
+    <p><font face=3D=22Arial, Helvetica, sans-serif=22> Si Usted no desea recibir mas=20      e-mails sobre nuestros exclusivos programas de capacitaci&oacute;n o prefiere=20      que lo enteremos por otro medio favor de hacernos llegar sus comentarios=20      a: <a href=3D=22mailto:villahermosa_bajas=40rebackee.com=22>villahermosa_bajas=40rebackee.com</a></font></p>
+    <p><font face=3D=22Arial, Helvetica, sans-serif=22>If you don't want to receive=20      our information, write us an electronic mail indicating it to: </font><font face=3D=22Arial, Helvetica, sans-serif=22><a href=3D=22mailto:villahermosa_bajas=40rebackee.com=22>villahermosa_bajas=40rebackee.com</a></font><br>
+    </p>
+    <p>&nbsp;</p>
+    <p><b><font color=3D=22=23990000=22 size=3D=224=22 face=3D=22Arial, Helvetica, sans-serif=22>&iexcl;&iexcl;&iexcl;=20      Solicite Mayor informaci&oacute;n de Nuestros Exclusivos Programas =21=21=21</font></b></p>
+    <p><font size=3D=224=22 face=3D=22Arial, Helvetica, sans-serif=22 color=3D=22=23000000=22><b>Quality=20      Training de M&eacute;xico</b></font></p>
+    <p><font size=3D=223=22 face=3D=22Arial, Helvetica, sans-serif=22>DIRECCI&Oacute;N DE=20      PROYECTOS VILLAHERMOSA<br>
+      Conmutador 01 993 914 - 40 85 con 10 l&iacute;neas</font><font size=3D=223=22 face=3D=22Arial, Helvetica, sans-serif=22><br>
+      <a href=3D=22mailto:villahermosa=40rebackee.com=22>villahermosa=40rebackee.com</a><br>
+      <font color=3D=22=23990000=22><a href=3D=22http://www.rebackee.com=22>www.rebackee.com</a></font><br>
+      </font><font face=3D=22Arial, Helvetica, sans-serif=22><br>
+      </font> </p>
+    </div>
+</div>
+</body>
+</html>
+
+--=_NextPart_2rfkindysadvnqw3nerasdf--
+
+To unsubscribe: send mail to majordomo@wireless.org.au
+with "unsubscribe melbwireless" in the body of the message
+
+

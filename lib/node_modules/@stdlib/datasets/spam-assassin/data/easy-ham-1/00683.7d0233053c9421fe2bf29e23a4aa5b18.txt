@@ -1,0 +1,67 @@
+From fork-admin@xent.com  Sat Sep 21 10:43:25 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 824F616F03
+	for <jm@localhost>; Sat, 21 Sep 2002 10:43:25 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 21 Sep 2002 10:43:25 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8L91mC16323 for <jm@jmason.org>;
+    Sat, 21 Sep 2002 10:01:49 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 8A19929417F; Sat, 21 Sep 2002 01:58:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from crank.slack.net (slack.net [166.84.151.181]) by xent.com
+    (Postfix) with ESMTP id CFD3D29409C for <fork@xent.com>; Sat,
+    21 Sep 2002 01:57:11 -0700 (PDT)
+Received: by crank.slack.net (Postfix, from userid 596) id DFDB23ECF9;
+    Sat, 21 Sep 2002 05:05:09 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1]) by crank.slack.net
+    (Postfix) with ESMTP id DE6593EC9F; Sat, 21 Sep 2002 05:05:09 -0400 (EDT)
+From: Tom <tomwhore@slack.net>
+To: "R. A. Hettinga" <rah@shipwright.com>
+Cc: "Mr. FoRK" <fork_list@hotmail.com>, <fork@spamassassin.taint.org>
+Subject: Re: sed /s/United States/Roman Empire/g
+In-Reply-To: <p05111a27b9b1d842c9fe@[66.149.49.6]>
+Message-Id: <Pine.BSO.4.44.0209210452100.24338-100000@crank.slack.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sat, 21 Sep 2002 05:05:09 -0400 (EDT)
+
+
+It was the best of times, it was the worst of times,
+it was the age of wisdom, it was the age of foolishness,
+it was the epoch of belief, it was the epoch of incredulity,
+it was the season of Light, it was the season of Darkness,
+it was the spring of hope, it was the winter of despair,
+we had everything before us, we had nothing before us,
+we were all going direct to Heaven, we were all going direct the other way
+---C Dickens
+
+G'Quon Wrote "There is a greater darkness than the one we fight. It is the
+darkness of  the soul that has lost its way." The war we fight is not
+against powers  and principalities - it is against chaos and despair.
+Greater than the  death of flesh is the death of hope, the death of
+dreams. Against this  peril we can never surrender. The future is all
+around us, waiting in  moments of transition, to be born in moments of
+revelation. No one knows  the shape of that future, or where it will take
+us. We know only that it  is always born in pain.
+--JWS
+
+
+
+

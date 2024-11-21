@@ -1,0 +1,29 @@
+
+{{alias}}( len, clbk[, thisArg] )
+    Returns a filled "generic" array according to a provided callback function.
+
+    Parameters
+    ----------
+    len: integer
+        Array length.
+
+    clbk: Function
+        Callback function.
+
+    thisArg: any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    out: Array
+        Output array.
+
+    Examples
+    --------
+    > function clbk() { return 1.0; };
+    > var out = {{alias}}( 3, clbk )
+    [ 1.0, 1.0, 1.0 ]
+
+    See Also
+    --------
+

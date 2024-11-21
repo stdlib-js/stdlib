@@ -1,0 +1,14 @@
+
+Usage: timeit [options] [<code>]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --iterations iter     Number of iterations.
+         --repeats repeats     Number of repeats. Default: 3.
+         --before setup        Setup code.
+         --after cleanup       Cleanup code.
+         --async               Time asynchronous code.
+         --format fmt          Output format: pretty, csv, json. Default: pretty.
+

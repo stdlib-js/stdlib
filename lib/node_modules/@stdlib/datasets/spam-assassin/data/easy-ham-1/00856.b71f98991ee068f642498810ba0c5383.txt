@@ -1,0 +1,87 @@
+From fork-admin@xent.com  Wed Oct  2 18:18:59 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id DB3F816F03
+	for <jm@localhost>; Wed,  2 Oct 2002 18:18:58 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 02 Oct 2002 18:18:58 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g92GuEK17987 for <jm@jmason.org>;
+    Wed, 2 Oct 2002 17:56:14 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 0E6C0294175; Wed,  2 Oct 2002 09:56:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hotmail.com (dav23.law15.hotmail.com [64.4.22.80]) by
+    xent.com (Postfix) with ESMTP id BDEC529409C for <fork@xent.com>;
+    Wed,  2 Oct 2002 09:55:26 -0700 (PDT)
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Wed, 2 Oct 2002 09:55:35 -0700
+X-Originating-Ip: [207.202.171.254]
+From: "Mr. FoRK" <fork_list@hotmail.com>
+To: <fork@spamassassin.taint.org>
+References: <DAV68j2OW7MgETDx4e700008892@hotmail.com>
+    <m28z1grenj.fsf@maya.dyndns.org>
+Subject: Re: ActiveBuddy
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.50.4133.2400
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4133.2400
+Message-Id: <DAV23PvTYW4ZlVuv6xp00009131@hotmail.com>
+X-Originalarrivaltime: 02 Oct 2002 16:55:35.0610 (UTC) FILETIME=[870831A0:01C26A34]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 2 Oct 2002 10:00:48 -0700
+
+
+----- Original Message -----
+From: "Gary Lawrence Murphy" <garym@canada.com>
+
+> ... and the one thing I think we've learned in all that time is that,
+> as a help-desk, it doesn't work.
+I'm not sure they are doing strictly help-desk stuff.
+But the whole 'who in their right mind would use that? it doesn't have all
+these cool features!' isn't always a guarantee of failure - maybe there is a
+strength in this approach (agents and/or IM as ui) than can find a nich
+application space.
+
+>
+> In all the prolog-based NL database query systems of the 1980's and
+> other later chatterbot helpdesk projects like Shallow Red, even
+> simpler tries like Ask Jeeves, people very quickly know they're
+> talking to a robot, and the queries anneal to short, truncated and
+> terse database-like verb-noun or just noun-keyword requests.
+Kind of like a web query - and with google, someone else can turn them into
+a link so you don't even have to type anything.
+
+>
+> People are just too quick to adapt, and too impatient to forgive a
+> clunky interface, and for now, especially when the /average/ computer
+> user still can't type more than maybe 5-10wpm, NL is a painfully slow
+> clunky interface.
+Yes - true true.
+
+>
+> Put it this way: Would you login, wake the bot and ask for the Seattle
+> weather, or would you do as we /all/ do and just click the weather
+> icon sitting there on your desktop?
+What about a situation where you don't directly ask/talk to the bot, but
+they listen in and advise/correct/interject/etc?
+example: two people discussing trips, etc. may trigger a weather bot to
+mention what the forecast says - without directly being asked.
+
+

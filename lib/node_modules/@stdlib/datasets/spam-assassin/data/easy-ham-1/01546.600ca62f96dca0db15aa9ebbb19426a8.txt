@@ -1,0 +1,82 @@
+From jm@jmason.org  Thu Oct 10 13:14:29 2002
+Return-Path: <yyyy@spamassassin.taint.org>
+Delivered-To: yyyy@spamassassin.taint.org
+Received: by spamassassin.taint.org (Postfix, from userid 500)
+	id 0610616F17; Thu, 10 Oct 2002 13:14:29 +0100 (IST)
+Received: from spamassassin.taint.org (localhost [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP
+	id 033BAF7DA; Thu, 10 Oct 2002 13:14:29 +0100 (IST)
+To: Daniel Quinlan <quinlan@pathname.com>
+Cc: yyyy@spamassassin.taint.org (Justin Mason),
+	SpamAssassin-talk@lists.sourceforge.net,
+	SpamAssassin-devel@lists.sourceforge.net
+Subject: Re: [SAdev] fully-public corpus of mail available 
+In-Reply-To: Message from Daniel Quinlan <quinlan@pathname.com> 
+   of "09 Oct 2002 21:47:02 PDT." <yf2r8eygat5.fsf@proton.pathname.com> 
+From: yyyy@spamassassin.taint.org (Justin Mason)
+X-GPG-Key-Fingerprint: 0A48 2D8B 0B52 A87D 0E8A  6ADD 4137 1B50 6E58 EF0A
+X-Habeas-Swe-1: winter into spring
+X-Habeas-Swe-2: brightly anticipated
+X-Habeas-Swe-3: like Habeas SWE (tm)
+X-Habeas-Swe-4: Copyright 2002 Habeas (tm)
+X-Habeas-Swe-5: Sender Warranted Email (SWE) (tm). The sender of this
+X-Habeas-Swe-6: email in exchange for a license for this Habeas
+X-Habeas-Swe-7: warrant mark warrants that this is a Habeas Compliant
+X-Habeas-Swe-8: Message (HCM) and not spam.  Please report use of this
+X-Habeas-Swe-9: mark in spam to <http://www.habeas.com/report/>.
+Date: Thu, 10 Oct 2002 13:14:23 +0100
+Sender: yyyy@spamassassin.taint.org
+Message-Id: <20021010121429.0610616F17@spamassassin.taint.org>
+
+
+(trimmed cc list)
+
+Daniel Quinlan said:
+
+> 1. These messages could end up being falsely (or incorrectly) reported
+>    to Razor, DCC, Pyzor, etc.  Certain RBLs too.  I don't think the
+>    results for these distributed tests can be trusted in any way,
+>    shape, or form when running over a public corpus.
+
+I'll note that in the README.
+
+> 2. These messages could also be submitted (more than once) to projects
+>    like SpamAssassin that rely on filtering results submission for GA
+>    tuning and development.
+> The second problem could be alleviated somewhat by adding a Nilsimsa
+> signature (or similar) to the mass-check file (the results format used
+> by SpamAssassin) and giving the message files unique names (MD5 or
+> SHA-1 of each file).
+
+OK; maybe rewriting the message-ids will help here, that should allow
+us to pick them out.  I'll do that.
+
+> 3. Spammers could adopt elements of the good messages to throw off
+>    filters.  And, of course, there's always progression in technology
+>    (by both spammers and non-spammers).
+> The third problem doesn't really worry me.
+
+nah, me neither.
+
+> These problems (and perhaps others I have not identified) are unique
+> to spam filtering.  Compression corpuses and other performance-related
+> corpuses have their own set of problems, of course.
+> 
+> In other words, I don't think there's any replacement for having
+> multiple independent corpuses.  Finding better ways to distribute
+> testing and collate results seems like a more viable long-term solution
+> (and I'm glad we're working on exactly that for SpamAssassin).  If
+> you're going to seriously work on filter development, building a corpus
+> of 10000-50000 messages (half spam/half non-spam) is not really that
+> much work.  If you don't get enough spam, creating multi-technique
+> spamtraps (web, usenet, replying to spam) is pretty easy.  And who
+> doesn't get thousands of non-spam every week?  ;-)
+
+Yep.  The primary reason I released this, was to provide a good, big
+corpus for academic testing of filter systems; it allows results to
+be compared between filters using a known corpus.
+
+For SpamAssassin development, everyone has to maintain their own corpus.
+
+--j.
+

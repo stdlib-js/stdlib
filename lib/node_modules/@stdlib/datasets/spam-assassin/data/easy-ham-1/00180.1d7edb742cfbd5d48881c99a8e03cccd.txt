@@ -1,0 +1,159 @@
+From martin@srv0.ems.ed.ac.uk  Wed Aug 28 10:54:40 2002
+Return-Path: <martin@srv0.ems.ed.ac.uk>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 54F9744155
+	for <zzzz@localhost>; Wed, 28 Aug 2002 05:54:38 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 28 Aug 2002 10:54:38 +0100 (IST)
+Received: from n4.grp.scd.yahoo.com (n4.grp.scd.yahoo.com [66.218.66.88])
+    by dogma.slashnull.org (8.11.6/8.11.6) with SMTP id g7S8W6Z16396 for
+    <zzzz@spamassassin.taint.org>; Wed, 28 Aug 2002 09:32:07 +0100
+X-Egroups-Return: sentto-2242572-53133-1030523533-zzzz=spamassassin.taint.org@returns.groups.yahoo.com
+Received: from [66.218.66.96] by n4.grp.scd.yahoo.com with NNFMP;
+    28 Aug 2002 08:32:13 -0000
+X-Sender: martin@srv0.ems.ed.ac.uk
+X-Apparently-To: zzzzteana@yahoogroups.com
+Received: (EGP: mail-8_1_0_1); 28 Aug 2002 08:32:13 -0000
+Received: (qmail 63177 invoked from network); 28 Aug 2002 08:32:13 -0000
+Received: from unknown (66.218.66.217) by m13.grp.scd.yahoo.com with QMQP;
+    28 Aug 2002 08:32:13 -0000
+Received: from unknown (HELO haymarket.ed.ac.uk) (129.215.128.53) by
+    mta2.grp.scd.yahoo.com with SMTP; 28 Aug 2002 08:32:12 -0000
+Received: from srv0.ems.ed.ac.uk (srv0.ems.ed.ac.uk [129.215.117.0]) by
+    haymarket.ed.ac.uk (8.11.6/8.11.6) with ESMTP id g7S8WB303026 for
+    <forteana@yahoogroups.com>; Wed, 28 Aug 2002 09:32:11 +0100 (BST)
+Received: from EMS-SRV0/SpoolDir by srv0.ems.ed.ac.uk (Mercury 1.44);
+    28 Aug 02 09:32:10 +0000
+Received: from SpoolDir by EMS-SRV0 (Mercury 1.44); 28 Aug 02 09:32:01 +0000
+Organization: Management School
+To: zzzzteana@yahoogroups.com
+Message-Id: <3D6C98AE.7172.23FD4363@localhost>
+Priority: normal
+X-Mailer: Pegasus Mail for Windows (v4.01)
+Content-Description: Mail message body
+From: "Martin Adamson" <martin@srv0.ems.ed.ac.uk>
+MIME-Version: 1.0
+Mailing-List: list zzzzteana@yahoogroups.com; contact
+    forteana-owner@yahoogroups.com
+Delivered-To: mailing list zzzzteana@yahoogroups.com
+Precedence: bulk
+List-Unsubscribe: <mailto:zzzzteana-unsubscribe@yahoogroups.com>
+Date: Wed, 28 Aug 2002 09:31:57 +0100
+Subject: [zzzzteana] Emigrate to Russia? That's a steppe too far
+Reply-To: zzzzteana@yahoogroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g7S8W6Z16396
+
+The Electronic Telegraph
+
+ Emigrate to Russia? That's a steppe too far
+ (Filed: 28/08/2002) 
+ 
+ 
+ So you think you've got it bad: fed up with Folkestone, bored with Birmingham
+ or sick of Sheffield.
+ 
+ Those 54 per cent of Britons - according to a Daily Telegraph/YouGov survey
+ this week - who dream of a stress-free life in sunnier climes should perhaps
+ heed a word of friendly advice on the realities of living abroad.
+ 
+ Kommersant, a Russian daily newspaper, yesterday offered those dissatisfied
+ with life in Blair's Britain a taste of what to expect should they choose to
+ emigrate to provincial Russia.
+ 
+ After reading about the gripes of affluent Britons, its tongue-in-cheek
+ article admitted, however, that the grass was not always greener on the other
+ side.
+ 
+ "The inhabitants of foggy Albion keen to travel could go to any Russian city
+ deep in the provinces where things are quiet," said Kommersant.
+ 
+ "In any central Russian district, life, by British standards, is unseemingly
+ cheap and remarkably laid back. By 11am most of the working population are
+ becoming 'traditionally' relaxed."
+ 
+ The time for elevenses in Britain - perhaps the opportunity for a quiet cup of
+ tea and a chocolate Hobnob - is known in Russia as the Wolf Hour.
+ 
+ It was so named in Soviet times because at 11am a wolf appeared from the
+ famous animal clock at the Obrasov Puppet Theatre in Moscow. It is also
+ opening time in the nation's vodka shops.
+ 
+ And the vodka, like all other spirits, is cheap. Kommersant pointed out that
+ "the money a Briton can earn from selling even the most shabby house would be
+ enough to support them at the local standard of living for the rest of their
+ life.
+ 
+ "The local shops are full of all they would need and they could buy a bottle
+ of whisky for kopecks."
+ 
+ There are 100 kopecks in a ruble and the ruble is currently worth about a
+ halfpenny in sterling.
+ 
+ The whisky is cheap, however, because it is unlike anything the average Briton
+ will have consumed before. It is made of samagon - home-distilled, moonshine
+ vodka - coloured with tea, and is a popular beverage in rural areas and among
+ diehard alcoholics.
+ 
+ While alcohol is plentiful and cheap, food may not be so easy to come by. The
+ newspaper pointed out that traditional British foodstuffs - it selected oxtail
+ soup as an example - were in short supply. However, the wealth of the British
+ settler should overcome the difficulty.
+ 
+ "For a modest reward in most Russian villages, the locals would happily cut
+ off the tails from the entire collective farm's herd of cattle."
+ 
+ One or two potential emigrés might be deterred by language difficulties. There
+ are few English speakers to be found among the green hills of Tula on the
+ Mongolian border.
+ 
+ However, Kommersant pointed out, language difficulties were not considered a
+ deterrent by the 13 per cent of Britons who nominated France as the country in
+ which they would like to live.
+ 
+ France, the Russian paper claimed, was a country "where English is only known
+ by the beggars, Belorussian prostitutes and Russian tourists".
+ 
+ Despite the low cost of living and the easy-going lifestyle, the Russian
+ weather remains a major stumbling block for Britons.
+ 
+ Even in the most temperate regions, winter temperatures of -20C are common.
+ And somewhere like the Sakha Republic - east of Siberia and the coldest place
+ in the world - enjoys just one month of summer and endures winter temperatures
+ that drop below -70C. Houses are built on concrete stilts because the
+ permafrost makes digging foundations impossible.
+ 
+ Again, the Russian paper had a word of reassurance. While acknowledging the
+ climatic problems, it said that "thanks to global warming this difficulty will
+ solve itself".
+ 
+ Kommersant also had an answer to the labour crisis that would be created in
+ Britain if 54 per cent of its citizens decided to opt for a life in Russia.
+ 
+ "Thirty-three million Russians could be sent to Britain to replace the 33
+ million who leave. We think that the required number could probably be found
+ amongst our citizens."
+ 
+ Unfortunately for those 33 million Russians, however, not one of those Britons
+ surveyed who wanted to move abroad nominated the Russian steppes as their
+ preferred new home.
+
+
+------------------------ Yahoo! Groups Sponsor ---------------------~-->
+4 DVDs Free +s&p Join Now
+http://us.click.yahoo.com/pt6YBB/NXiEAA/MVfIAA/7gSolB/TM
+---------------------------------------------------------------------~->
+
+To unsubscribe from this group, send an email to:
+forteana-unsubscribe@egroups.com
+
+ 
+
+Your use of Yahoo! Groups is subject to http://docs.yahoo.com/info/terms/ 
+
+
+

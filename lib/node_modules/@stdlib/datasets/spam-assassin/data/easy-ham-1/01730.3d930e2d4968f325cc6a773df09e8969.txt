@@ -1,0 +1,28 @@
+Return-Path: gward@python.net
+Delivery-Date: Mon Sep  9 14:16:06 2002
+From: gward@python.net (Greg Ward)
+Date: Mon, 9 Sep 2002 09:16:06 -0400
+Subject: [Spambayes] spambayes package?
+In-Reply-To: <200209080247.g882lNt17033@pcp02138704pcs.reston01.va.comcast.net>
+References: <15738.34711.467756.145336@12-248-11-90.client.attbi.com>
+	<200209080247.g882lNt17033@pcp02138704pcs.reston01.va.comcast.net>
+Message-ID: <20020909131606.GA1136@cthulhu.gerg.ca>
+
+On 07 September 2002, Guido van Rossum said:
+> If and when we package this, perhaps we should use Barry's trick
+> from the email package for making the package itself the toplevel dir
+> of the distribution (rather than requiring an extra directory level
+> just so the package can be a subdir of the distro).
+
+It's not a *trick*!  It just requires this
+
+  package_dir = {'spambayes': '.'}
+
+in the setup script.
+
+harrumph!  "trick" indeed...
+
+        Greg
+-- 
+Greg Ward <gward@python.net>                         http://www.gerg.ca/
+A committee is a life form with six or more legs and no brain.

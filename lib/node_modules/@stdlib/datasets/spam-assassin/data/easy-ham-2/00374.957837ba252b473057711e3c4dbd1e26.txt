@@ -1,0 +1,127 @@
+From ilug-admin@linux.ie  Tue Aug 13 10:29:50 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BA17043C4A
+	for <jm@localhost>; Tue, 13 Aug 2002 05:22:11 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:22:11 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7D8uub24039 for
+    <jm-ilug@jmason.org>; Tue, 13 Aug 2002 09:56:56 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA02164; Tue, 13 Aug 2002 09:56:31 +0100
+Received: from lhidns.gov.ie ([193.1.228.222]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA02135 for <ilug@linux.ie>; Tue,
+    13 Aug 2002 09:56:25 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [193.1.228.222] claimed to
+    be lhidns.gov.ie
+Received: from gw.educ.irlgov.ie (educ-gw.gov.ie [192.168.6.1] (may be
+    forged)) by lhidns.gov.ie (8.9.3/8.9.3) with ESMTP id JAA09844;
+    Tue, 13 Aug 2002 09:55:53 +0100
+Received: (from fwtk@localhost) by gw.educ.irlgov.ie (8.8.6/8.8.6) id
+    LAA13338; Tue, 13 Aug 2002 11:15:24 +0100 (BST)
+Received: from unknown(10.0.0.13) by gw.educ.irlgov.ie via smap (V2.0) id
+    xma013312; Tue, 13 Aug 02 11:15:17 +0100
+Content-Class: urn:content-classes:message
+Subject: RE: [ILUG] SUSE 8 disks? (thread changed slightly)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Date: Tue, 13 Aug 2002 09:55:49 +0100
+X-Mimeole: Produced By Microsoft Exchange V6.0.5762.3
+Message-Id: <9C498074D5419A44B05349F5BF2C26301CFA8C@sdubtalex01.education.gov.ie>
+X-MS-Has-Attach: 
+X-MS-Tnef-Correlator: 
+Thread-Topic: [ILUG] SUSE 8 disks? (thread changed slightly)
+Thread-Index: AcJCWxT/TH4PxtLIRkmzLrYobg9jEgAS1zTg
+From: "Ryan, Shane" <Shane_Ryan@education.gov.ie>
+To: "wintermute" <cout@eircom.net>
+Cc: <ilug@linux.ie>
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    JAA02135
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+hey,
+
+AFAIK it isn't hard at all to create
+your own modified version of the redhat
+distro.  There's even a tarball[1] with this
+specifically in mind.  The people who built
+the Ximian version of RedHat used a system
+similar to said tarball.
+
+Building a distro which uses a *BSD ports
+system rather than rpm, deb or whatever
+would complicate things a tad more IMHO.
+
+It *is* a good idea though.  I've been 
+wondering about the same thing for a couple
+of months now but always considered it too
+complicated to carry out. (If that makes any
+sense at all).
+
+I don't discount any other work like for 
+example Niall's work on the B.B.C. but maybe
+there is general interest in an Irish distro.
+Anyone?
+
+Regards,
+Shane.
+
+-----Original Message-----
+From: wintermute [mailto:cout@eircom.net]
+Sent: 13 August 2002 00:48
+To: ilug@linux.ie
+Subject: Re: [ILUG] SUSE 8 disks? (thread changed slightly)
+
+
+Rick Moen <rick@linuxmafia.com> wrote:
+
+<snip>
+> Don't like SuSE's product licensing?  Write your own distribution.  You
+> can even grab most of what you need _from SuSE_.  All you have to do is 
+> heed the licensing terms on the individual pieces.
+<snip>
+
+How unimaginably difficult is this to do?
+There are as far as I know, no Linux kernel hackers, nor distros that originate from this fair island right?
+Right.
+
+Yes it might be very,very difficult and subject to abject failure 
+in sticking together a distro.... call it Dolmen Linux (or other), 
+no doubt the packaging system would be one of the first places
+ such a suggestion would stumble.
+Some (like me) favouring a FreeBSD style ports system others favouring
+ a Debian style system and others still favouring *rpm style packaging.
+
+That said other *LUG have done interesting things like making blackbox.
+
+Perhaps making a distro would be ..... umm.... fun.
+
+Just a pseudo random thought.
+
+
+I'm only laughing on the outside 
+My smile is just skin deep 
+If you could see inside I'm really crying 
+You might join me for a weep.
+<<At your service Madame>>
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

@@ -1,0 +1,188 @@
+
+{{alias}}( x[, y][, options] )
+    Computes a one-sample or paired Student's t test.
+
+    When no `y` is supplied, the function performs a one-sample t-test for the
+    null hypothesis that the data in array or typed array `x` is drawn from a
+    normal distribution with mean zero and unknown variance.
+
+    When array or typed array `y` is supplied, the function tests whether the
+    differences `x - y` come from a normal distribution with mean zero and
+    unknown variance via the paired t-test.
+
+    The returned object comes with a `.print()` method which when invoked will
+    print a formatted output of the results of the hypothesis test.
+
+    Parameters
+    ----------
+    x: Array<number>
+        Data array.
+
+    y: Array<number> (optional)
+        Paired data array.
+
+    options: Object (optional)
+        Options.
+
+    options.alpha: number (optional)
+        Number in the interval `[0,1]` giving the significance level of the
+        hypothesis test. Default: `0.05`.
+
+    options.alternative: string (optional)
+        Indicates whether the alternative hypothesis is that the mean of `x` is
+        larger than `mu` (`greater`), smaller than `mu` (`less`) or equal to
+        `mu` (`two-sided`). Default: `'two-sided'`.
+
+    options.mu: number (optional)
+        Hypothesized true mean under the null hypothesis. Set this option to
+        test whether the data comes from a distribution with the specified `mu`.
+        Default: `0`.
+
+    Returns
+    -------
+    out: Object
+        Test result object.
+
+    out.alpha: number
+        Used significance level.
+
+    out.rejected: boolean
+        Test decision.
+
+    out.pValue: number
+        p-value of the test.
+
+    out.statistic: number
+        Value of test statistic.
+
+    out.ci: Array<number>
+        1-alpha confidence interval for the mean.
+
+    out.nullValue: number
+        Assumed mean under H0 (or difference in means when `y` is supplied).
+
+    out.alternative: string
+        Alternative hypothesis (`two-sided`, `less` or `greater`).
+
+    out.df: number
+        Degrees of freedom.
+
+    out.mean: number
+        Sample mean of `x` or `x - y`, respectively.
+
+    out.sd: number
+        Standard error of the mean.
+
+    out.method: string
+        Name of test.
+
+    out.print: Function
+        Function to print formatted output.
+
+    Examples
+    --------
+    // One-sample t-test:
+    > var rnorm = {{alias:@stdlib/random/base/normal}}.factory( 0.0, 2.0, { 'seed': 5776 } );
+    > var x = new Array( 100 );
+    > for ( var i = 0; i < x.length; i++ ) {
+    ...     x[ i ] = rnorm();
+    ... }
+    > var out = {{alias}}( x )
+    {
+        rejected: false,
+        pValue: ~0.722,
+        statistic: ~0.357,
+        ci: [~-0.333,~0.479],
+        // ...
+    }
+
+    // Paired t-test:
+    > rnorm = {{alias:@stdlib/random/base/normal}}.factory( 1.0, 2.0, { 'seed': 786 } );
+    > x = new Array( 100 );
+    > var y = new Array( 100 );
+    > for ( i = 0; i < x.length; i++ ) {
+    ...     x[ i ] = rnorm();
+    ...     y[ i ] = rnorm();
+    ... }
+    > out = {{alias}}( x, y )
+    {
+        rejected: false,
+        pValue: ~0.191,
+        statistic: ~1.315,
+        ci: [ ~-0.196, ~0.964 ],
+        // ...
+    }
+
+    // Print formatted output:
+    > var table = out.print()
+    Paired t-test
+
+    Alternative hypothesis: True difference in means is not equal to 0
+
+        pValue: 0.1916
+        statistic: 1.3148
+        df: 99
+        95% confidence interval: [-0.1955,0.9635]
+
+    Test Decision: Fail to reject null in favor of alternative at 5%
+    significance level
+
+    // Choose custom significance level:
+    > var arr = [ 2, 4, 3, 1, 0 ];
+    > out = {{alias}}( arr, { 'alpha': 0.01 } );
+    > table = out.print()
+    One-sample t-test
+
+    Alternative hypothesis: True mean is not equal to 0
+
+        pValue: 0.0474
+        statistic: 2.8284
+        df: 4
+        99% confidence interval: [-1.2556,5.2556]
+
+    Test Decision: Fail to reject null in favor of alternative at 1%
+    significance level
+
+    // Test for a mean equal to five:
+    > arr = [ 4, 4, 6, 6, 5 ];
+    > out = {{alias}}( arr, { 'mu': 5 } )
+    {
+        rejected: false,
+        pValue: 1,
+        statistic: 0,
+        ci: [ ~3.758, ~6.242 ],
+        // ...
+    }
+
+    // Perform one-sided tests:
+    > arr = [ 4, 4, 6, 6, 5 ];
+    > out = {{alias}}( arr, { 'alternative': 'less' } );
+    > table = out.print()
+    One-sample t-test
+
+    Alternative hypothesis: True mean is less than 0
+
+        pValue: 0.9998
+        statistic: 11.1803
+        df: 4
+        95% confidence interval: [-Infinity,5.9534]
+
+    Test Decision: Fail to reject null in favor of alternative at 5%
+    significance level
+
+    > out = {{alias}}( arr, { 'alternative': 'greater' } );
+    > table = out.print()
+    One-sample t-test
+
+    Alternative hypothesis: True mean is greater than 0
+
+        pValue: 0.0002
+        statistic: 11.1803
+        df: 4
+        95% confidence interval: [4.0466,Infinity]
+
+    Test Decision: Reject null in favor of alternative at 5% significance level
+
+    See Also
+    --------
+

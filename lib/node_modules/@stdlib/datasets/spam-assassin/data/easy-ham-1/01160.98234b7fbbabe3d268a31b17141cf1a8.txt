@@ -1,0 +1,121 @@
+From exmh-workers-admin@redhat.com  Fri Aug 23 11:06:58 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id ABEFA44165
+	for <jm@localhost>; Fri, 23 Aug 2002 06:04:55 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 23 Aug 2002 11:04:55 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7N3xOZ09392 for
+    <jm-exmh@jmason.org>; Fri, 23 Aug 2002 04:59:24 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 341473EBFF; Thu, 22 Aug 2002
+    23:59:28 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 492B03FEAF
+    for <exmh-workers@listman.redhat.com>; Thu, 22 Aug 2002 23:27:20 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g7N3RHl05019 for exmh-workers@listman.redhat.com; Thu, 22 Aug 2002
+    23:27:17 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g7N3RHY05015 for
+    <exmh-workers@redhat.com>; Thu, 22 Aug 2002 23:27:17 -0400
+Received: from ratree.psu.ac.th ([202.28.97.6]) by mx1.spamassassin.taint.org
+    (8.11.6/8.11.6) with SMTP id g7N3CQl13951 for <exmh-workers@redhat.com>;
+    Thu, 22 Aug 2002 23:12:27 -0400
+Received: from delta.cs.mu.OZ.AU (delta.coe.psu.ac.th [172.30.0.98]) by
+    ratree.psu.ac.th (8.11.6/8.11.6) with ESMTP id g7N3QUl20135;
+    Fri, 23 Aug 2002 10:26:30 +0700 (ICT)
+Received: from munnari.OZ.AU (localhost [127.0.0.1]) by delta.cs.mu.OZ.AU
+    (8.11.6/8.11.6) with ESMTP id g7MEtIW14737; Thu, 22 Aug 2002 21:55:18
+    +0700 (ICT)
+From: Robert Elz <kre@munnari.OZ.AU>
+To: Chris Garrigues <cwg-dated-1030376441.95dd45@DeepEddy.Com>
+Cc: exmh-workers@spamassassin.taint.org
+Subject: Re: New Sequences Window
+In-Reply-To: <1029944441.398.TMDA@deepeddy.vircio.com>
+References: <1029944441.398.TMDA@deepeddy.vircio.com>
+    <1029882468.3116.TMDA@deepeddy.vircio.com> <9627.1029933001@munnari.OZ.AU>
+    <1029943066.26919.TMDA@deepeddy.vircio.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Message-Id: <14735.1030028118@munnari.OZ.AU>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Thu, 22 Aug 2002 21:55:18 +0700
+
+    Date:        Wed, 21 Aug 2002 10:40:39 -0500
+    From:        Chris Garrigues <cwg-dated-1030376441.95dd45@DeepEddy.Com>
+    Message-ID:  <1029944441.398.TMDA@deepeddy.vircio.com>
+
+  | The background color in this window is the same as the background 
+  | color in the ftoc.
+
+That's what I'd like to vary - particularly as the ftoc background isn't
+constant - messages in the unseen sequence have a different background
+than others.
+
+In the ftoc that's fine, but in the sequences window, it isn't needed.
+unseen already has a different foreground there (no problem with that),
+it doesn't need a different background as well.
+
+I'll play about a bit with this, and with making it vertical instead of
+horizontal, and see what turns up.
+
+  | The only sequences that are defined there are sequences which are defined
+  | in app-defaults-color or ~/exmh/exmh-defaults-color.
+
+OK.
+
+  | I've been thinking about how to dynamically generate highlighting for
+  | other sequences, but haven't got that figured out yet.
+
+In this case, highlighting wasn't what I was most concerned about.
+A method to get messages in & out of sequences comes first, how it
+displays is a secondary consideration.   But as a suggestion, have an
+"all unknown" sequence highlight, any message in a sequence which has
+no defined highlighting (where defined includes defined to not be treated
+specially) gets highlighted the same way (maybe something as boring as
+a dark brown text colour - almost indistinguishable from the normal black)
+
+
+  | > > Any chance of making the current message a little brighter background?
+  | 
+  | I don't see any reason why not.  Experiment and let me know what works for you.
+
+Done some of that.   First, the most significant change came from changing
+relief from raised to sunken.   I don't know why, but it just looks better
+(for me anyway).   But even with that, cur and unseen are still just a
+bit too similar.   I ended up using
+
+*sequence_cur:  -background {PaleGoldenrod} -relief sunken -borderwidth 2
+
+The unnecessary braces are just because some of the colours I was using
+had spaces in their names.   PaleGoldenrod translates as #eee8aa which
+is probably safer for generic use.
+
+kre
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+

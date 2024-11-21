@@ -1,0 +1,173 @@
+From spamassassin-sightings-admin@lists.sourceforge.net  Wed Jul 17 17:24:49 2002
+Return-Path: <spamassassin-sightings-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D394B43C65
+	for <jm@localhost>; Wed, 17 Jul 2002 12:24:47 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 17 Jul 2002 17:24:47 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6HGNAJ04470 for <jm-sa-sightings@jmason.org>; Wed, 17 Jul 2002 17:23:10
+    +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17Ura0-0006NO-00; Wed,
+    17 Jul 2002 09:23:08 -0700
+Received: from itchy.serv.net ([205.153.154.199]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17UrZj-00010W-00 for <spamassassin-sightings@lists.sourceforge.net>;
+    Wed, 17 Jul 2002 09:22:51 -0700
+Received: (from llyra@localhost) by itchy.serv.net (8.9.3/8.9.3) id
+    JAA43049 for spamassassin-sightings@lists.sf.net; Wed, 17 Jul 2002
+    09:18:47 -0700 (PDT)
+Received: from mx.serv.net (mx [205.153.154.205]) by itchy.serv.net
+    (8.9.3/8.9.3) with ESMTP id XAA17630 for <llyra@itchy.serv.net>;
+    Sat, 13 Jul 2002 23:33:13 -0700 (PDT)
+Received: from drizzle.com (IDENT:root@cascadia.drizzle.com
+    [216.162.192.17]) by mx.serv.net (8.9.3/8.9.1) with ESMTP id XAA20181 for
+    <filtered@llyra.com>; Sat, 13 Jul 2002 23:37:09 -0700 (PDT)
+Received: from drizzle.com (IDENT:harmony@localhost [127.0.0.1]) by
+    drizzle.com (8.12.3/8.12.3) with ESMTP id g6E6bA5C001181 for
+    <filtered@llyra.com>; Sat, 13 Jul 2002 23:37:10 -0700
+Received: (from harmony@localhost) by drizzle.com (8.12.3/8.12.3/Submit)
+    id g6E6bAuB001179 for filtered@llyra.com; Sat, 13 Jul 2002 23:37:10 -0700
+Received: from itchy.serv.net (itchy.serv.net [205.153.154.199]) by
+    drizzle.com (8.12.3/8.12.3) with ESMTP id g6E6b95C001161 for
+    <harmony@drizzle.com>; Sat, 13 Jul 2002 23:37:10 -0700
+Received: (from llyra@localhost) by itchy.serv.net (8.9.3/8.9.3) id
+    XAA17625 for harmony@drizzle.com; Sat, 13 Jul 2002 23:33:10 -0700 (PDT)
+Received: from mx.serv.net (mx [205.153.154.205]) by itchy.serv.net
+    (8.9.3/8.9.3) with ESMTP id XAA17621 for <llyra@itchy.serv.net>;
+    Sat, 13 Jul 2002 23:33:06 -0700 (PDT)
+Received: from home (c141.h061013202.is.net.tw [61.13.202.141]) by
+    mx.serv.net (8.9.3/8.9.1) with SMTP id XAA19984; Sat, 13 Jul 2002 23:36:05
+    -0700 (PDT)
+Message-Id: <200207140636.XAA19984@mx.serv.net>
+From: 力捷科技@mx.serv.net
+To: nnn@mx.serv.net, new-9@mx.serv.net, new-8@mx.serv.net
+X-Mailer: 03LCWYdVcBeUPnKtkA2v
+Content-Type: text/plain
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-MIME-Autoconverted: from Quoted-Printable to 8bit by itchy.serv.net id
+    XAA17621
+Subject: [SA] =?big5?Q?=BE=A5=A4=F4=A7X=A7=E5=B5o=B9q=A4l=B3=F8?=
+Sender: spamassassin-sightings-admin@example.sourceforge.net
+Errors-To: spamassassin-sightings-admin@example.sourceforge.net
+X-Beenthere: spamassassin-sightings@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-sightings-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-sightings@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-sightings>,
+    <mailto:spamassassin-sightings-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <spamassassin-sightings.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-sightings>,
+    <mailto:spamassassin-sightings-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-sightings>
+X-Original-Date: Sat, 13 Jul 2002 23:36:05 -0700 (PDT)
+Date: Sat, 13 Jul 2002 23:36:05 -0700 (PDT)
+Content-Transfer-Encoding: 8bit
+
+不好意思打攪您！如果本廣告信對您產生困擾，在此深感抱歉!!!請多見諒!!謝謝!~~
+
+別再當犧牲者了！您還在使用高價的原廠墨水匣嗎？
+
+廠商以低價賣出機器，當然要以耗材賺回利潤，買4個墨水匣相當於1台機器，廠商當然希望消費者購買原廠墨水匣了，其實副廠相容性墨水匣的品質已不輸給原廠了，何況又有一年保固服務！現在EPSON系列中，凡黑色墨水匣一律170元，彩色墨水匣一律190元，是市售副廠墨水匣價格的一半，原廠的四分之一，二者合購比單買原廠1個還便宜一半！
+
+製造商→批發商或大盤商→中盤商或量販店→小盤商或文具店→消費者
+製造商→批發商或大盤商→         力捷科技             →消費者
+
+【力捷科技】有各家廠牌(EPSON、HP、CANON)的通用相容性墨水匣，促銷期間特別優惠公司行號及社會民眾暨莘莘學子，且不論購買數量多少，一律免費貨送到府服務；貨到付款(已含郵資及保固服務一年)！
+有需要時請來電(mail)詢問或訂購 (公司行號可開立發票) ！
+報價網頁：http://hk.geocities.com/lijaytw/index.htm 可在網頁上訂購！
+訂貨專線：07-3481489 / FAX：07-9732420 / email：fen6049@yahoo.com.tw     
+一、EPSON墨水匣系列：一次購買5個以上就可享九折優惠；10個以上更享八折優惠！
+二、EPSON墨水匣之貨源廠商為取得ISO9001認證之公司，產品均以真空灌注包裝而成，非一般以填充墨水填注之低品質可比擬；而HP墨水匣及碳粉匣為取得ISO14000國際環保認證之美、英製造商進口，產品均經嚴格品質管制及列印檢測，品質可媲美原廠產品，100%品質保證！
+三、所有產品皆有保固及品質保證:使用上若有問題,則無條件一換一更換新品，若還是不滿意，還可以選擇退費。
+四、台灣全省皆可訂購，且不論購買數量多少，一律免費貨送到府服務；貨到才付款！可開立收據或發票【稅另計】！
+EPSON 系列  墨水匣 
+【墨水匣編號/ 顏色】         /          適 用 機 型              /            《批發價》
+【S020034 黑色】Epson Stylus Color、Pro、ProXL、ProXL+   《批發價250 元》
+【S020036 彩色】Epson Stylus Color、Pro、ProXL  《批發價350 元》
+【S020039 黑色】Epson Stylus 400/800/800+/1000  《批發價170 元》
+【S020047 黑色】Epson Stylus 200/820/Color200/II/IIs 《批發價250 元》
+【S020049 彩色】Epson Stylus 820/1500/1500C    Epson Stylus Color II/II S 《批發價190 元》
+【S020089 彩色】Epson Stylus Color 400/600/800/850/1520 《批發價190 元》
+【S020093 黑色】Epson Stylus Color 400/500/600  Stylus Photo700/Photo710/Photo EX /Photo EX2   IP100 《批發價170 元》
+【S020097 彩色】Epson Stylus 200    Epson Stylus Color 200/500 《批發價190 元》
+【S020108 黑色】Epson Stylus Color 800/850/1520 《批發價170 元》
+【S020110 彩色】Epson Stylus Photo700/710/ EX/  EX2   IP100 《批發價190 元》
+【S020118 黑色】Epson Stylus Color 3000  《批發價800 元》
+【S020122 黃色】Epson Stylus Color 3000  《批發價800 元》
+【S020126 紅色】Epson Stylus Color 3000  《批發價800 元》
+【S020130 藍色】Epson Stylus Color 3000  《批發價800 元》
+【S020138 黑/彩色】Epson Stylus Color 300  《批發價190 元》
+【S020187 黑色】Epson Stylus Color 440/460/640/660/670 Photo 720/750/1200/EX3 《批發價170 元》
+【S020189 黑色】Epson Stylus Color 740/860/1160  Stylus Scan 2000/2500 《批發價170 元》
+【S020191 彩色】Epson Stylus Color 440/460/640/660/670/740/860/1160  Epson Stylus Scan 2000/2500 《批發價190 元》
+【S020193 彩色】Epson Stylus Photo 720/750/EX3 《批發價190 元》
+【T003 黑色】Epson Stylus Color 900/980 《批發價250 元》
+【T005 彩色】Epson Stylus Color 900/980 《批發價350 元》
+【T013 黑色】Epson Stylus Color 480/580/C20/C20SX/C20U 《批發價170 元》
+【T014 彩色】Epson Stylus Color 480/580/C20/C20SX/C20U 《批發價190 元》
+【T019 黑色】Epson Stylus 880/880i 《批發價500 元》
+【T020 彩色】Epson Stylus 880/880i 《批發價450 元》
+【T017 黑色】Color 680/685/777(晶片型) 《批發價350 元》
+【T018 彩色】Color 680/685/777(晶片型) 《批發價350 元》
+【T028 黑色】Color C60SU (晶片型) 《批發價350 元》
+【T029 彩色】Color C60SU (晶片型) 《批發價350 元》
+【T007 黑色】Photo 780/785/790/870,875DC/890/895/1270/1280/1290(晶片型) 《批發價350 元》
+【T008 彩色】Photo 780/785/790/870,875DC/890/895/1270/1280/1290(晶片型) 《批發價350 元》
+【T009 彩色】Photo 1270/1280/1290(晶片型) 《批發價450 元》
+【T0010 彩色】Photo 1200(晶片型) 《批發價400 元》
+HP 系列  墨水匣 
+【HP51625A 彩色】DJ-200/200/320/340/400/420/500/540/550/560/505/560DeskWriter C/CK/320/540/550C/560C 《批發價650 元》
+【HP51626A 黑色】DJ-400/420/500/500/505/505/520/540/550/560/500/505/560 《批發價550 元》
+【HP51629A 黑色】DJ-600/660C/670C/690C/695C//OJ-590/630/635/710/725 《批發價550 元》
+【HP51645A 黑色】DJ-710/720/820/830/850/870/880/890/895/930/950/970/990/1000/1120/1120/1225/1600/1600/Photo Smart P1000/P1100/DesignJet 750C/750C PLUS/755CM/OfficeJet G55/G85/G95/R45/R65/T45/T65 OfficeJet PRO 1150C/1170C/1175C/Colour Copier 170 《批發價550 元》
+【HP51649A 彩色】DJ-350I/600/610/640/660/670/690/692/694/695/695/Office Jet 590/630/635/725 《批發價650 元》
+【HPC1823D 彩色】DJ-710C/720C/810C/830C/840/842/880C/890C/895CXI/1120C/1125C 《批發價700 元》
+【HPC6578D 彩色】DJ-920C/930C/950C/970CXI/990/1220C/Photo Smart P1000 《批發價700 元》
+【HPC6614A 黑色】DJ-610/640 《批發價550 元》
+【HPC6615A 黑色】DJ-810C/840C/920C 《批發價550 元》
+【HPC6625A 彩色】DJ-840C 《批發價700 元》
+EPSON 系列  碳粉匣
+【S051011 】Epson  EPL-5000/5200 《批發價2,665  元》
+【S051016 】Epson  EPL-5600 《批發價 2,665 元》
+【S051020 】Epson  EPL-3000 《批發價2,500  元》
+【S050005 】Epson  EPL-5500 《批發價1,550  元》
+【S050010 】Epson  EPL-5700/5800 《批發價 1,750 元》
+【S051035 】Epson  EPL-N2000C 《批發價 3,500 元》
+【S051022 】Epson  EPL-9000C 《批發價 3,600 元》
+【S051069 】Epson  EPL-N2010 《批發價 2,750 元》
+HP 系列  碳粉匣
+【HP-92274A 】LaserJet  4L/4P/4MP 《批發價 1,700 元》
+【HP-92275A 】LaserJet  IIP/IIIP 《批發價 1,800 元》
+【HP-92291A 】LaserJet  4SI/IIIS 《批發價2,200  元》
+【HP-92295A 】LaserJet  II/IID/IIID 《批發價 1,800 元》
+【HP-92298A 】LaserJet  4/4+/4M/5M 《批發價 2,000 元》
+【HP-C3900A 】LaserJet  4V/4MV/5M 《批發價 2,500 元》
+【HP-C3903A 】LaserJet  5P/5MP/6P 《批發價 1,700 元》
+【HP-C3906A 】LaserJet  5L/6L/3100 《批發價 1,550 元》
+【HP-C3909A 】LaserJet  5SI/5SIM/8000 《批發價 2,650 元》
+【HP-C4092A 】LaserJet  1100 《批發價 1,500 元》
+【HP-C4096A 】LaserJet  2100/2200 《批發價 2,200 元》
+【HP-C4127X 】LaserJet  4000/T/N/TN 《批發價 2,950 元》
+【HP-C4129X 】LaserJet  5000 《批發價3,150  元》
+【HP-C4182X 】LaserJet  8100/8150 《批發價2,550 元》
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

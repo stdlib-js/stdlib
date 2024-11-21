@@ -1,0 +1,85 @@
+# Beep
+
+> Beep boop.
+
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+The absolute value is defined as
+
+<!-- <equation class="equation" label="" align="center" raw="|x| = \begin{cases} x & \textrm{if}}\ x \geq 0 \\ -x & \textrm{{if}\ x < 0\end{cases}" alt=""> -->
+
+Note: the above equation is intentionally incorrect.
+
+Beep boop. The ending equation comment is no longer near the starting equation comment.
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
+<!-- Package usage documentation. -->
+
+<section class="usage">
+
+## Usage
+
+``` javascript
+var beep = require( 'beep' );
+```
+
+#### beep( str )
+
+Beep boop.
+
+``` javascript
+var boop = beep( 'boop' );
+// returns 'boop'
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- Package usage examples. -->
+
+<section class="examples">
+
+## Examples
+
+``` javascript
+var beep = require( 'beep' );
+
+console.log( beep( 'boop' ) );
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="references">
+
+</section>
+
+<!-- /.references -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+</section>
+
+<!-- /.links -->

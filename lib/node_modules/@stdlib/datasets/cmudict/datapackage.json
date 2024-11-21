@@ -1,0 +1,110 @@
+{
+  "name": "stdlib-datasets-cmudict",
+  "version": "",
+  "title": "The Carnegie Mellon Pronouncing Dictionary",
+  "description": "Data of the Carnegie Mellon Pronouncing Dictionary (CMUdict).",
+  "resources": [
+    {
+      "name": "dict-json",
+      "title": "Pronouncing Dictionary",
+      "description": "Main pronouncing dictionary.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/dict.json"
+    },
+    {
+      "name": "dict-txt",
+      "title": "Pronouncing Dictionary",
+      "description": "Main pronouncing dictionary.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/dict.txt"
+    },
+    {
+      "name": "phones-json",
+      "title": "Articulation Manners",
+      "description": "Manners of articulation for each sound.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/phones.json"
+    },
+    {
+      "name": "phones-txt",
+      "title": "Articulation Manners",
+      "description": "Manners of articulation for each sound.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/phones.txt"
+    },
+    {
+      "name": "symbols-json",
+      "title": "ARPABET symbols",
+      "description": "Complete list of ARPABET symbols used by the dictionary.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/symbols.json"
+    },
+    {
+      "name": "symbols-txt",
+      "title": "ARPABET symbols",
+      "description": "Complete list of ARPABET symbols used by the dictionary.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/symbols.txt"
+    },
+    {
+      "name": "vp-json",
+      "title": "Verbal Pronunciations",
+      "description": "Verbal pronunciations of punctuation marks.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/vp.json"
+    },
+    {
+      "name": "vp-txt",
+      "title": "Verbal Pronunciations",
+      "description": "Verbal pronunciations of punctuation marks.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/vp.txt"
+    }
+  ],
+  "sources": [
+    {
+      "name": "The CMU Pronouncing Dictionary",
+      "web": "http://www.speech.cs.cmu.edu/cgi-bin/cmudict#about"
+    }
+  ],
+  "keywords": [
+    "stdlib",
+    "datasets",
+    "dataset",
+    "data",
+    "words",
+    "speech",
+    "language",
+    "nlp",
+    "spelling",
+    "pronounciation",
+    "dictionary",
+    "english",
+    "en"
+  ],
+  "license": "BSD-2-Clause"
+}

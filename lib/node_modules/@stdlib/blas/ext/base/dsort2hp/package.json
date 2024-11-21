@@ -1,0 +1,76 @@
+{
+  "name": "@stdlib/blas/ext/base/dsort2hp",
+  "version": "0.0.0",
+  "description": "Simultaneously sort two double-precision floating-point strided arrays based on the sort order of the first array using heapsort.",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "main": "./lib",
+  "browser": "./lib/main.js",
+  "gypfile": true,
+  "directories": {
+    "benchmark": "./benchmark",
+    "doc": "./docs",
+    "example": "./examples",
+    "include": "./include",
+    "lib": "./lib",
+    "src": "./src",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "scripts": {},
+  "homepage": "https://github.com/stdlib-js/stdlib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stdlib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "mathematics",
+    "math",
+    "blas",
+    "extended",
+    "sort",
+    "order",
+    "arrange",
+    "permute",
+    "heap",
+    "heapsort",
+    "strided",
+    "array",
+    "ndarray",
+    "float64",
+    "double",
+    "float64array"
+  ],
+  "__stdlib__": {}
+}

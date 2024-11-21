@@ -1,0 +1,30 @@
+From rssfeeds@jmason.org  Mon Oct  7 12:05:21 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 6C8AD16F79
+	for <jm@localhost>; Mon,  7 Oct 2002 12:03:59 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 07 Oct 2002 12:03:59 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9780eK23245 for
+    <jm@jmason.org>; Mon, 7 Oct 2002 09:00:40 +0100
+Message-Id: <200210070800.g9780eK23245@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: gamasutra <rssfeeds@spamassassin.taint.org>
+Subject: Shooting from the Hip: An Interview with Hip Tanaka
+Date: Mon, 07 Oct 2002 08:00:39 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.newsisfree.com/click/-0,8613662,159/
+Date: 2002-10-06T18:12:58+01:00
+
+In 1986, we in the U.S. were playing the Nintendo Entertainment System (known 
+as the Famicom in Japan), and roughly a third of the music for its first set of 
+games was written by Hirokazu "Hip" Tanaka, then with Nintendo Co. Ltd.He has 
+written music for countless other games as well as designing the Game Boy 
+Camera and Printer, and also scored the soundtrack to the Pokemon TV series. 
+Alexander Brandon catches up with the legendary composer.
+
+

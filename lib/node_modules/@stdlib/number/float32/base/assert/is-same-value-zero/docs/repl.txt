@@ -1,0 +1,36 @@
+
+{{alias}}( a, b )
+    Tests if two single-precision floating-point numbers are the same value.
+
+    The function differs from the `===` operator in that the function treats
+    `NaNs` as the same value.
+
+    Parameters
+    ----------
+    a: number
+        First input value.
+
+    b: number
+        Second input value.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether two single-precision floating-point numbers
+        are the same value.
+
+    Examples
+    --------
+    > var v1 = {{alias:@stdlib/number/float64/base/to-float32}}( -0.0 );
+    > var bool = {{alias}}( v1, v1 )
+    true
+    > var v2 = {{alias:@stdlib/number/float64/base/to-float32}}( 0.0 );
+    > bool = {{alias}}( v1, v2 )
+    true
+    > v1 = {{alias:@stdlib/number/float64/base/to-float32}}( NaN );
+    > bool = {{alias}}( v1, v1 )
+    true
+
+    See Also
+    --------
+

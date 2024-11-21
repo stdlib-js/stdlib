@@ -1,0 +1,157 @@
+
+{{alias}}( [dtype] )
+    Creates a filled array.
+
+    Parameters
+    ----------
+    dtype: string (optional)
+        Data type. Default: 'float64'.
+
+    Returns
+    -------
+    out: TypedArray|Array
+        Output array.
+
+    Examples
+    --------
+    > var arr = {{alias}}()
+    <Float64Array>
+    > arr = {{alias}}( 'float32' )
+    <Float32Array>
+
+
+{{alias}}( length[, dtype], clbk[, thisArg] )
+    Returns a filled array according to a provided callback function and having
+    a specified length.
+
+    Parameters
+    ----------
+    length: integer
+        Array length.
+
+    dtype: string (optional)
+        Data type. Default: 'float64'.
+
+    clbk: Function
+        Callback function.
+
+    thisArg: any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    out: TypedArray|Array
+        Output array.
+
+    Examples
+    --------
+    > function clbk() { return 1.0; };
+    > var arr = {{alias}}( 5, clbk )
+    <Float64Array>[ 1.0, 1.0, 1.0, 1.0, 1.0 ]
+    > arr = {{alias}}( 5, 'int32', clbk )
+    <Int32Array>[ 1, 1, 1, 1, 1 ]
+
+
+{{alias}}( array[, dtype], clbk[, thisArg] )
+    Creates a filled array from another array (or array-like object) according
+    to a provided callback function.
+
+    Parameters
+    ----------
+    array: ArrayLikeObject
+        Array from which to generate another array.
+
+    dtype: string (optional)
+        Data type. Default: 'float64'.
+
+    clbk: Function
+        Callback function.
+
+    thisArg: any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    out: TypedArray|Array
+        Output array.
+
+    Examples
+    --------
+    > var arr1 = {{alias}}( [ 0.5, 0.5, 0.5 ], {{alias:@stdlib/utils/constant-function}}( 2.0 ) )
+    <Float64Array>[ 2.0, 2.0, 2.0 ]
+    > var arr2 = {{alias}}( arr1, 'float32', {{alias:@stdlib/utils/constant-function}}( 1.0 ) )
+    <Float32Array>[ 1.0, 1.0, 1.0 ]
+
+
+{{alias}}( iterable[, dtype], clbk[, thisArg] )
+    Creates a filled array from an iterable according to a provided callback
+    function.
+
+    Parameters
+    ----------
+    iterable: Iterable
+        Iterable from which to generate an array.
+
+    dtype: string (optional)
+        Data type. Default: 'float64'.
+
+    clbk: Function
+        Callback function.
+
+    thisArg: any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    out: TypedArray|Array
+        Output array.
+
+    Examples
+    --------
+    > var arr1 = {{alias:@stdlib/iter/constant}}( 3.0, {'iter': 3} );
+    > var arr2 = {{alias}}( arr1, 'float32', {{alias:@stdlib/utils/constant-function}}( 1.0 ) )
+    <Float32Array>[ 1.0, 1.0, 1.0 ]
+
+
+{{alias}}( buffer[, byteOffset[, length]][, dtype], clbk[, thisArg] )
+    Returns a filled typed array view of an ArrayBuffer according to a provided
+    callback function.
+
+    The 'generic' array data type is *not* supported.
+
+    Parameters
+    ----------
+    buffer: ArrayBuffer
+        Underlying ArrayBuffer.
+
+    byteOffset: integer (optional)
+        Integer byte offset specifying the location of the first typed array
+        element. Default: 0.
+
+    length: integer (optional)
+        View length. If not provided, the view spans from the byteOffset to
+        the end of the underlying ArrayBuffer.
+
+    dtype: string (optional)
+        Data type. Default: 'float64'.
+
+    clbk: Function
+        Callback function.
+
+    thisArg: any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    out: TypedArray
+        A typed array.
+
+    Examples
+    --------
+    > var buf = new {{alias:@stdlib/array/buffer}}( 16 );
+    > var arr = {{alias}}( buf, 0, 4, 'float32', {{alias:@stdlib/utils/constant-function}}( 1.0 ) )
+    <Float32Array>[ 1.0, 1.0, 1.0, 1.0 ]
+
+    See Also
+    --------
+

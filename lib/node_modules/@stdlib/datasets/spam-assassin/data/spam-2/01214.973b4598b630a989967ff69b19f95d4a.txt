@@ -1,0 +1,475 @@
+From fork-admin@xent.com  Wed Jul 31 22:52:28 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 364A9440C9
+	for <jm@localhost>; Wed, 31 Jul 2002 17:52:26 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 31 Jul 2002 22:52:26 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6VLkL210445 for <jm@jmason.org>;
+    Wed, 31 Jul 2002 22:46:28 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 81D622940B3; Wed, 31 Jul 2002 14:43:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from comprosys.com (unknown [216.242.37.114]) by xent.com
+    (Postfix) with SMTP id D9E6929409A for <fork@xent.com>; Wed,
+    31 Jul 2002 14:42:54 -0700 (PDT)
+From: "Com-Pro Systems, Inc." <emarketing@comprosys.com>
+To: <fork@spamassassin.taint.org>
+Subject: Get Your Own Great-Looking Website
+MIME-Version: 1.0
+Reply-To: "Com-Pro Systems, Inc." <info@comprosys.com>
+Message-Id: <20020731214254.D9E6929409A@xent.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 31 Jul 2002 17:42:41 -0400
+Content-Type: multipart/alternative; boundary="=Multipart Boundary 0731021742"
+
+This is a multipart MIME message.
+
+--= Multipart Boundary 0731021742
+Content-Type: text/plain;
+	charset="ISO-8859-1"
+Content-Transfer-Encoding: 8bit
+
+
+
+
+
+
+-
+
+NEED A PROFESSIONAL LOOKING  WEBSITE?
+Custom Website Development
+We can create new web pages or give your existing pages a "face-lift" to bring them up to the Internet's latest trends and standards.  We are experienced at writing HTML and can provide custom programming in CGI, JavaScripts, Java Server Pages, Active Server Pages and ActiveX, which we can use to give your site the dynamics and interactivity of a cutting edge web presence.
+
+E-Mail and Web Hosting
+
+>Unlimited technical customer support via e-mail
+>Web hosting- 50MB storage
+>10 e-mail accounts
+>Unlimited e-mail forwards
+For $29.95 monthly.
+First month Free with purchase of new website!!
+
+
+ 
+
+>>From server setup to content development, we offer the complete Web solution, which is further enhanced by the services of our carefully chosen strategic partners who provide everything from development tools to hosting services.
+
+
+
+
+
+
+
+If you prefer not to receive future news and information on our technology solutions, please reply to this message with UNSUBSCRIBE in the subject.
+
+
+2200 N.W. 102nd Ave. Suite 4 
+Miami, FL 33172
+Tel: +1 (305) 594-3474  
+Fax: +1 (305) 594-9655
+Toll Free: 1-888-8-COM-PRO
+Web: www.comprosys.com
+e-mail: info@comprosys.com
+Web Templates
+
+Starting from just $499! 
+$399 If your order is placed by 8/15/2002.
+Our Web templates give you the way to get on the Internet with a very professional look and feel while keeping the costs down. Contact us for your options.
+
+How does it work? Easy as 1-2-3...
+1) Register on our site and select a username and password, this will allow you to track your website development project start to finish.
+2) Fill out the questionnaire, this will help you to get all the materials needed for us to develop your site. It is very important to fill out all the questions.
+3) We will then setup your website according to the information given to us. That's it !
+
+
+If you would prefer a custom solution we will be happy to create a completely custom solution for you. Contact us for a free quote.
+
+  
+
+
+
+
+
+Sell Your Products On-Line
+E-shop is a multi-platform e-commerce solution for Retailers, Wholesalers, or any company wanting to sell on the Internet.  This e-commerce solution can be used as a business-to-business consumer solution.  E-Shop will support any number of products since its data is stored in SQL tables.
+
+
+
+
+
+Corporate Profile
+Com-Pro Systems, Inc., founded in 1990, is a successful information technology consulting firm providing products and services across several industries.  Com-Pro Systems' goal is to become the leader in software development. 
+CSI will deliver the entire solution.  By leveraging our relationships with companies like IBM, Microsoft, Compaq, AT&T, Cisco and others we bring you the best cross platform solutions to your Hardware, Software and Hosting needs.
+  
+  Copyright C 2001, Com-Pro Systems, Inc. (All rights reserved)
+
+--= Multipart Boundary 0731021742
+Content-Type: text/html;
+	charset="ISO-8859-1"
+Content-Transfer-Encoding: 8bit
+
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft DHTML Editing Control">
+<TITLE></TITLE>
+</HEAD>
+<BODY>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" bgColor=#ffffff border=0>
+  
+  <TR>
+    <TD width="100%">
+      <TABLE cellSpacing=0 cellPadding=0 width=747 border=0>
+        
+        <TR>
+          <TD width=339 bgColor=#ffffff height=1><IMG height=3 
+            src="http://www.comprosys.com/email/blank_tall.gif" width=1 
+          border=0></TD>
+          <TD width=123 bgColor=#ffffff height=1><IMG height=3 
+            src="http://www.comprosys.com/email/blank_tall.gif" width=1 
+          border=0></TD>
+          <TD width=285 bgColor=#ffffff height=1><IMG height=3 
+            src="http://www.comprosys.com/email/blank_tall.gif" width=1 
+          border=0></TD></TR>
+        <TR>
+          <TD width=339><A href="http://www.comprosys.com"><IMG height=43 
+            src="http://www.comprosys.com/email/headeraa.gif" width=339 
+            border=0></A></TD>
+          <TD width=123><IMG height=43 
+            src="http://www.comprosys.com/email/homeff.gif" width=123 
+          border=0></TD>
+          <TD width=285 bgColor=#ffffff><IMG height=43 hspace=3 
+            src="http://www.comprosys.com/email/headercc.gif" width=265 
+          border=0></TD></TR>
+        <TR>
+          <TD width=339 bgColor=#0030a0 height=1><IMG height=1 
+            src="http://www.comprosys.com/email/blank.gif" width=1
+border=0></TD>
+          <TD width=123 bgColor=#0030a0 height=1><IMG height=1 
+            src="http://www.comprosys.com/email/blank.gif" width=1
+border=0></TD>
+          <TD width=285 bgColor=#0030a0 height=1><IMG height=1 
+            src="http://www.comprosys.com/email/blank.gif" width=1 
+        border=0></TD></TR>
+        <TR>
+          <TD width=339><IMG height=26 
+            src="http://www.comprosys.com/email/headerbb.gif" width=339 
+          border=0></TD>
+          <TD width=123><IMG height=26 
+            src="http://www.comprosys.com/email/homegg.gif" width=123 
+          border=0></TD>
+          <TD width=285 bgColor=#ffffff><IMG height=26 
+            src="http://www.comprosys.com/email/headerdd.gif" width=179 
+          border=0></TD></TR>
+        <TR>
+          <TD width=339 bgColor=#0030a0 height=1><IMG height=1 
+            src="http://www.comprosys.com/email/blank.gif" width=1
+border=0></TD>
+          <TD width=123 bgColor=#0030a0 height=1><IMG height=1 
+            src="http://www.comprosys.com/email/blank.gif" width=1
+border=0></TD>
+          <TD width=285 bgColor=#0030a0 height=1><IMG height=1 
+            src="http://www.comprosys.com/email/blank.gif" width=1 
+        border=0></TD></TR>
+        <TR>
+          <TD width=339 bgColor=#ffffff><FONT color=#ffffff
+size=1>-</FONT></TD>
+          <TD width=123><FONT size=1><IMG height=17 
+            src="http://www.comprosys.com/email/homehh.gif" width=123 
+            border=0></FONT></TD>
+          <TD width=285 bgColor=#ffffff><FONT size=1><IMG height=17 
+            src="http://www.comprosys.com/email/headeree.gif" width=122 
+            border=0></FONT></TD></TR>
+        <TR>
+          <TD width=339 bgColor=#ff9c30 height=1><IMG height=1 
+            src="http://www.comprosys.com/email/blank.gif" width=1
+border=0></TD>
+          <TD width=123 bgColor=#ff9c30 height=1><IMG height=1 
+            src="http://www.comprosys.com/email/blank.gif" width=1
+border=0></TD>
+          <TD width=285 bgColor=#ff9c30 height=1><IMG height=1 
+            src="http://www.comprosys.com/email/blank.gif" width=1 
+        border=0></TD></TR>
+        <TR>
+          <TD width=747 bgColor=#ff9c30 colSpan=3 height=1>
+            <P align=center><B><FONT color=#ffffff>NEED A PROFESSIONAL 
+            LOOKING&nbsp; WEBSITE?</FONT></B></P></TD></TR></TABLE>
+      <TABLE cellSpacing=0 cellPadding=0 width=748 border=0>
+        
+        <TR>
+          <TD vAlign=top width=340>
+            <TABLE cellPadding=3 width="96%" bgColor=#ffffff border=0>
+              
+              <TR>
+                <TD width="100%" bgColor=#ffffff>
+                  <P><B><FONT face=Verdana color=#000080 size=2>Custom
+Website 
+                  Development</FONT></B></P>
+                  <P><FONT face=Verdana size=1>We can create new web pages
+or 
+                  give your existing pages a "face-lift" to bring them up
+to the 
+                  Internet's latest trends and standards.&nbsp; We are 
+                  experienced at writing HTML and can provide custom
+programming 
+                  in CGI, JavaScripts, Java Server Pages, Active Server
+Pages 
+                  and ActiveX, which we can use to give your site the
+dynamics 
+                  and interactivity of a cutting edge web presence.<BR><A 
+                  href="http://www.comprosys.com/development.jsp" 
+                  target=_blank><IMG height=12 
+                 
+src="http://www.comprosys.com/email/alex_email_task/more.gif" 
+                  width=38 border=0></A></FONT></P>
+                  <P><B><FONT face=Verdana color=#000080 size=2>E-Mail and
+Web 
+                  Hosting</FONT></B><BR></P>
+                  <TABLE width="100%" border=0>
+                    
+                    <TR>
+                      <TD vAlign=top align=middle width="9%"><FONT 
+                        face="Verdana, Arial, Helvetica, sans-serif" 
+                        size=1><B><FONT class=titpeq 
+                        color=#ff6600>&gt;</FONT></B></FONT></TD>
+                      <TD width="91%"><FONT face=Verdana size=1>Unlimited 
+                        technical customer support
+via&nbsp;e-mail</FONT></TD></TR>
+                    <TR>
+                      <TD vAlign=top align=middle width="9%"><FONT 
+                        face="Verdana, Arial, Helvetica, sans-serif" 
+                        size=1><B><FONT class=titpeq 
+                        color=#ff6600>&gt;</FONT></B></FONT></TD>
+                      <TD width="91%"><FONT face=Verdana size=1>Web
+hosting- 
+                        50MB storage</FONT></TD></TR>
+                    <TR>
+                      <TD vAlign=top align=middle width="9%"><FONT 
+                        face="Verdana, Arial, Helvetica, sans-serif" 
+                        size=1><B><FONT class=titpeq 
+                        color=#ff6600>&gt;</FONT></B></FONT></TD>
+                      <TD width="91%"><FONT face=Verdana size=1>10 e-mail 
+                        accounts</FONT></TD></TR>
+                    <TR>
+                      <TD vAlign=top align=middle width="9%"><FONT 
+                        face="Verdana, Arial, Helvetica, sans-serif" 
+                        size=1><B><FONT class=titpeq 
+                        color=#ff6600>&gt;</FONT></B></FONT></TD>
+                      <TD width="91%"><FONT face=Verdana size=1>Unlimited 
+                        e-mail forwards</FONT></TD></TR>
+                    <TR>
+                      <TD vAlign=top align=middle width="100%" colSpan=2>
+                        <P align=left><FONT face=Verdana size=1>For
+</FONT><FONT 
+                        face=Verdana size=5><B>$29.95</B></FONT><FONT 
+                        face=Verdana size=1> monthly.</FONT></P></TD></TR>
+                    <TR>
+                      <TD vAlign=top align=middle width="100%" colSpan=2>
+                        <P align=left><FONT face=Verdana size=1>First
+month Free 
+                        with purchase of new 
+                  website!!</FONT></P></TD></TR></TABLE>
+                  <P><BR>&nbsp;<BR></P>
+                  <TABLE id=AutoNumber3 style="BORDER-COLLAPSE: collapse" 
+                  borderColor=#111111 cellSpacing=0 cellPadding=0
+width="100%" 
+                  border=0>
+                    
+                    <TR>
+                      <TD vAlign=top width="46%">
+                        <P align=center><FONT color=#000080><IMG height=141 
+                       
+src="http://www.comprosys.com/email/alex_email_task/pic_02.jpg" 
+                        width=115 border=0></FONT></P></TD>
+                      <TD vAlign=center width="54%">
+                        <P align=left><FONT face=Verdana size=1>From server 
+                        setup to content development, we offer the
+complete Web 
+                        solution, which is further enhanced by the
+services of 
+                        our carefully chosen strategic partners who provide 
+                        everything from development tools to hosting 
+                        services.</FONT></P></TD></TR></TABLE>
+                  <P><BR></P>
+                  <HR color=#0030a0 SIZE=1>
+
+                  <BLOCKQUOTE>
+                    <P><B><FONT face=Verdana color=#000000 
+                    size=2><BR></FONT><FONT face=Verdana color=#000000
+size=1>If 
+                    you prefer not to receive future news and information
+on our 
+                    technology solutions, please reply to this message
+with <A 
+                   
+href="mailto:unsubscribe@comprosys.com?subject=unsubscribe">UNSUBSCRIBE</A> 
+                    in the subject.</FONT><FONT face=Verdana color=#000000 
+                    size=2><BR><BR><IMG height=43 
+                    src="http://www.comprosys.com/email/csi_logo.gif"
+width=107 
+                    border=0></FONT></B><FONT face=Verdana color=#000000 
+                    size=1><BR>2200 N.W. 102nd Ave. Suite 4 <BR>Miami, FL 
+                    33172<BR>Tel: +1 (305) 594-3474&nbsp; <BR>Fax: +1 (305) 
+                    594-9655<BR>Toll Free:
+1-888-8-COM-PRO<B><BR></B>Web:<B> <A 
+                    href="http://www.comprosys.com/web_template.jsp"><FONT 
+                   
+color=#0000ff>www.comprosys.com</FONT></A></B></FONT><BR><FONT 
+                    face=Verdana size=1>e-mail:<B> <A 
+                    href="mailto:info@comprosys.com"><FONT 
+                   
+color=#0000ff>info@comprosys.com</FONT></A></B></FONT></P></BLOCKQUOTE></TD>
+</TR></TABLE></TD>
+          <TD width=1 bgColor=#ff9c30><IMG height=1 
+            src="http://www.comprosys.com/email/blank.gif" width=1
+border=0></TD>
+          <TD vAlign=top width=408>
+            <TABLE cellPadding=3 width="101%" bgColor=#ffffff border=0>
+              
+              <TR>
+                <TD width="100%" bgColor=#ffffff><FONT face=Verdana 
+                  color=#000080 size=2><B>Web
+Templates<BR><BR></B></FONT><FONT 
+                  face=Verdana size=2><B>Starting from just 
+                  $<STRIKE>499</STRIKE>! <FONT color=#ff0000><BR>$399 If
+your 
+                  order is placed by 8/15/2002.</FONT></B></FONT><FONT 
+                  face=Verdana size=1><BR>Our Web templates give you the
+way to 
+                  get on the Internet with a very professional look and
+feel 
+                  while keeping the costs down. Contact us for your 
+                  options.<BR><BR>How does it work? Easy as 1-2-3...<BR>1) 
+                  Register on our site and select a username and password,
+this 
+                  will allow you to track your website development project
+start 
+                  to finish.<BR>2) Fill out the questionnaire, this will
+help 
+                  you to get all the materials needed for us to develop
+your 
+                  site. It is very important to fill out all the 
+                  questions.<BR>3) We will then setup your website
+according to 
+                  the information given to us. That's it !<BR><A 
+                  href="http://www.comprosys.com/web_template.jsp" 
+                  target=_blank><IMG height=12 
+                 
+src="http://www.comprosys.com/email/alex_email_task/more.gif" 
+                  width=38 border=0></A><BR><BR>If you would prefer a
+custom 
+                  solution we will be happy to create a completely custom 
+                  solution for you. Contact us for a free
+quote.</FONT><BR><FONT 
+                  face=Verdana size=1><A 
+                  href="http://www.comprosys.com/contact_form.jsp" 
+                  target=_blank><IMG height=12 
+                 
+src="http://www.comprosys.com/email/alex_email_task/more.gif" 
+                  width=38 border=0></A></FONT><BR>&nbsp;
+                  <P align=center><IMG height=245 
+                  src="http://www.comprosys.com/email/ebiz2.jpg" width=345 
+                  border=0><BR></P>
+                  <HR color=#0030a0 SIZE=1>
+
+                  <P align=left><B><FONT face=Verdana color=#000080
+size=2>Sell 
+                  Your Products On-Line</FONT></B></P>
+                  <TABLE width="101%" border=0>
+                    
+                    <TR>
+                      <TD width="63%"><FONT face=Verdana size=1><A 
+                        href="http://www.comprosys.com/e_shop.jsp" 
+                        target=_blank><IMG height=44 
+                       
+src="http://www.comprosys.com/email/alex_email_task/csi_eshop_logo.gif" 
+                        width=117 align=right border=0></A>E-shop is a 
+                        multi-platform e-commerce solution for Retailers, 
+                        Wholesalers, or any company wanting to sell on the 
+                        Internet.&nbsp; This e-commerce solution can be
+used as 
+                        a business-to-business consumer solution.&nbsp;
+E-Shop 
+                        will support any number of products since its data
+is 
+                        stored in SQL tables.</FONT></TD></TR></TABLE>
+                  <P><FONT face=Verdana size=1><A 
+                  href="http://www.comprosys.com/e_shop.jsp"
+target=_blank><IMG 
+                  height=12 
+                 
+src="http://www.comprosys.com/email/alex_email_task/more.gif" 
+                  width=38 
+         
+border=0></A></FONT><BR><BR></P></TD></TR></TABLE></TD></TR></TABLE>
+      <TABLE style="BORDER-TOP-WIDTH: 0px" height=66 cellSpacing=0
+cellPadding=0 
+      width=804 border=0>
+        
+        <TR>
+          <TD style="BORDER-TOP: 1px solid" borderColor=#ff6600 
+          borderColorLight=#ff6600 width=43 bgColor=#ffd19f height=43><IMG 
+            height=1 src="http://www.comprosys.com/email/blank.gif" width=1 
+            border=0></TD>
+          <TD style="BORDER-TOP: 1px solid" vAlign=top borderColor=#ff6600 
+          borderColorLight=#ff6600 width=704 bgColor=#ffffff 
+            height=43><B><FONT face=Verdana color=#000080 size=2>Corporate 
+            Profile</FONT><FONT face=Verdana color=#0030a0 
+            size=2><BR></FONT><FONT face=Verdana color=#000000
+size=1>Com-Pro 
+            Systems, Inc., founded in 1990, is a successful information 
+            technology consulting firm providing products and services
+across 
+            several industries.&nbsp; Com-Pro Systems' goal is to become
+the 
+            leader in software development.</FONT></B><FONT face=Verdana
+size=1> 
+            </FONT>
+            <P><B><FONT face=Verdana color=#000000 size=1>CSI will deliver
+the 
+            entire solution.&nbsp; By leveraging our relationships with 
+            companies like IBM, Microsoft, Compaq, AT&amp;T, Cisco and
+others we 
+            bring you the best cross platform solutions to your Hardware, 
+            Software and Hosting needs.<BR>&nbsp;</FONT></B></P></TD>
+          <TD style="BORDER-BOTTOM: 1px solid" vAlign=top width=57 
+          bgColor=#ffffff height=43>&nbsp;</TD></TR>
+        <TR>
+          <TD style="BORDER-TOP: 1px solid" borderColor=#0030a0 
+          borderColorLight=#0030a0 width=43 height=20><IMG height=1 
+            src="http://www.comprosys.com/email/blank.gif" width=1
+border=0></TD>
+          <TD style="BORDER-TOP: 1px solid" borderColor=#0030a0 
+          borderColorLight=#0030a0 align=right width=704 bgColor=#ffffff 
+          height=20>
+            <P align=left><FONT color=#0030a0>&nbsp;<FONT face=Verdana
+size=1> 
+            Copyright C 2001, Com-Pro Systems, Inc. (All rights 
+            reserved)</FONT></FONT></P></TD>
+          <TD style="BORDER-TOP: 1px solid" borderColor=#0030a0 
+          borderColorLight=#0030a0 align=right width=57 bgColor=#ffffff 
+          height=20><A href="mailto:info@comprosys.com"><IMG height=15 
+            src="http://www.comprosys.com/email/email01.gif" width=57 
+            border=0></A></TD></TR></TABLE></TD></TR></TABLE>
+</BODY>
+</HTML>
+
+--= Multipart Boundary 0731021742--
+
+http://xent.com/mailman/listinfo/fork
+
+

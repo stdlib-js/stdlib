@@ -1,0 +1,80 @@
+From spamassassin-devel-admin@lists.sourceforge.net  Fri Sep  6 11:49:32 2002
+Return-Path: <spamassassin-devel-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 7AFA916F9A
+	for <jm@localhost>; Fri,  6 Sep 2002 11:42:10 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 11:42:10 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g868PtW25450 for
+    <jm@jmason.org>; Fri, 6 Sep 2002 09:25:57 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id GAA20344 for
+    <jm@jmason.org>; Fri, 6 Sep 2002 06:24:27 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17nBaA-00078T-00; Thu,
+    05 Sep 2002 22:23:02 -0700
+Received: from blount.mail.mindspring.net ([207.69.200.226]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17nBZK-00070N-00 for <spamassassin-devel@lists.sourceforge.net>;
+    Thu, 05 Sep 2002 22:22:10 -0700
+Received: from user-1120ft5.dsl.mindspring.com ([66.32.63.165]
+    helo=belphegore.hughes-family.org) by blount.mail.mindspring.net with
+    esmtp (Exim 3.33 #1) id 17nBZJ-0005pc-00 for
+    spamassassin-devel@lists.sourceforge.net; Fri, 06 Sep 2002 01:22:09 -0400
+Received: by belphegore.hughes-family.org (Postfix, from userid 48) id
+    C3692A3C5E; Thu,  5 Sep 2002 22:22:08 -0700 (PDT)
+From: bugzilla-daemon@hughes-family.org
+To: spamassassin-devel@example.sourceforge.net
+X-Bugzilla-Reason: AssignedTo
+Message-Id: <20020906052208.C3692A3C5E@belphegore.hughes-family.org>
+Subject: [SAdev] [Bug 839] mailbox corruption not fixed with procmail 3.22
+Sender: spamassassin-devel-admin@example.sourceforge.net
+Errors-To: spamassassin-devel-admin@example.sourceforge.net
+X-Beenthere: spamassassin-devel@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-devel-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-devel@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Id: SpamAssassin Developers <spamassassin-devel.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-devel>
+X-Original-Date: Thu,  5 Sep 2002 22:22:08 -0700 (PDT)
+Date: Thu,  5 Sep 2002 22:22:08 -0700 (PDT)
+
+http://www.hughes-family.org/bugzilla/show_bug.cgi?id=839
+
+
+
+
+
+------- Additional Comments From alan@rdrop.com  2002-09-05 22:22 -------
+I haven't tried 2.41 yet because it requires File::Spec, which barfs when
+spamassassin tries to use it.  I haven't filed a bug yet because I suspect it's
+because I'm still running 5.005 perl because of reported compatibility issues
+with 5.6 and later, but I probably will because I think there's too much legacy
+perl code to put up with major compatibility problems, and spamassassin didn't,
+at least in the quickest of looks, say it needed a newer one.  The perl @ stuff
+was bad enough...  but this is all a separate soapbox...
+
+
+
+------- You are receiving this mail because: -------
+You are the assignee for the bug, or are watching the assignee.
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-devel mailing list
+Spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+

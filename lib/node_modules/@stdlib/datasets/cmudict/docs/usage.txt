@@ -1,0 +1,8 @@
+
+Usage: cmudict [options]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --data name           Dataset name: dict, phones, symbols, vp.

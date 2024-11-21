@@ -1,0 +1,89 @@
+From ilug-admin@linux.ie  Thu Aug  8 15:54:19 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 74BB3440E0
+	for <jm@localhost>; Thu,  8 Aug 2002 09:10:38 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 08 Aug 2002 14:10:38 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g78DCR207554 for
+    <jm-ilug@jmason.org>; Thu, 8 Aug 2002 14:12:27 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id OAA16826; Thu, 8 Aug 2002 14:07:53 +0100
+Received: from ie.suberic.net (owsla.ie.suberic.net [62.17.162.83]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id OAA16804 for <ilug@linux.ie>;
+    Thu, 8 Aug 2002 14:07:47 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host owsla.ie.suberic.net
+    [62.17.162.83] claimed to be ie.suberic.net
+Received: from owsla.ie.suberic.net (owsla [127.0.0.1]) by ie.suberic.net
+    (8.11.6/8.11.6) with ESMTP id g78D7kY19924 for <ilug@linux.ie>;
+    Thu, 8 Aug 2002 14:07:46 +0100
+Date: Thu, 8 Aug 2002 14:07:45 +0100
+To: ilug@linux.ie
+Subject: Re: [ILUG] slashdot EW Dijkstra humor
+Message-Id: <20020808140745.A19598@ie.suberic.net>
+References: <200208081032.LAA09312@lugh.tuatha.org>
+    <20020808114227.B17967@ie.suberic.net> <3D524F34.1080608@corvil.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <3D524F34.1080608@corvil.com>; from padraig.brady@corvil.com
+    on Thu, Aug 08, 2002 at 12:00:04PM +0100
+X-Operating-System: Linux 2.4.18-5 i686
+X-GPG-Fingerprint: 9C1D 16F4 11F1 6BD2 933C  048D ACC7 9840 89D0 7646
+From: kevin lyda <kevin+dated+1029244066.f56e49@ie.suberic.net>
+Mail-Followup-To: kevin+dated+1029244066.f56e49@ie.suberic.net,
+	ilug@linux.ie
+X-Delivery-Agent: TMDA/0.57
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Thu, Aug 08, 2002 at 12:00:04PM +0100, Padraig Brady wrote:
+> Yes a clever term usually (and deservedly) attributed to perl.
+
+there's no need for perl to be write only.
+
+> Of course you can create write-only code in any language.
+> There's even a competition for obfuscated C code which is always
+> worth a look: http://www.es.ioccc.org/main.html
+
+yes, always fun.  it's a good way to learn the little details of c.
+
+> p.s. what sort of processing do you do with:
+> kevin+dated+1029235349.f17378@ie.suberic.net
+
+that's a dated address:
+
+    % tmda-check-address kevin+dated+1029235349.f17378@ie.suberic.net
+    STATUS:  VALID
+    EXPIRES: Tue Aug 13 10:42:29 2002 UTC
+
+which means anyone can send email to that address with no problem until
+that date.  after that they have to confirm.  more info can be found
+here: www.tmda.net.
+
+as an aside, it is possible to filter mail to a mailman mailing list
+with tmda as well.  subscribers can post to the list without a confirm;
+non-subscribers would need to confirm their posts.
+
+kevin
+
+-- 
+kevin@suberic.net     that a believer is happier than a skeptic is no more to
+fork()'ed on 37058400    the point than the fact that a drunken man is happier
+meatspace place: home       than a sober one. the happiness of credulity is a
+http://ie.suberic.net/~kevin   cheap & dangerous quality -- g.b. shaw
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

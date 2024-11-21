@@ -1,0 +1,80 @@
+From fork-admin@xent.com  Mon Sep 30 13:52:45 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 3BD6E16F7D
+	for <jm@localhost>; Mon, 30 Sep 2002 13:48:38 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 30 Sep 2002 13:48:38 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8RJbDg25388 for <jm@jmason.org>;
+    Fri, 27 Sep 2002 20:37:13 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 83B8D2940CE; Fri, 27 Sep 2002 12:33:12 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from cats.ucsc.edu (cats-mx2.ucsc.edu [128.114.129.35]) by
+    xent.com (Postfix) with ESMTP id 2479C2940C9 for <fork@xent.com>;
+    Fri, 27 Sep 2002 12:32:26 -0700 (PDT)
+Received: from Tycho (dhcp-55-196.cse.ucsc.edu [128.114.55.196]) by
+    cats.ucsc.edu (8.10.1/8.10.1) with SMTP id g8RJZwT25586; Fri,
+    27 Sep 2002 12:35:59 -0700 (PDT)
+From: "Jim Whitehead" <ejw@cse.ucsc.edu>
+To: "Robert Harley" <harley@argote.ch>, <fork@spamassassin.taint.org>
+Subject: RE: The Big Jump
+Message-Id: <AMEPKEBLDJJCCDEJHAMICEHEFIAA.ejw@cse.ucsc.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+Importance: Normal
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4133.2400
+In-Reply-To: <20020908150126.44010C44D@argote.ch>
+X-Ucsc-Cats-Mailscanner: Found to be clean
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 27 Sep 2002 12:33:23 -0700
+
+Adjournment of Michel Fournier's big Jump in May, 2003.
+
+Two attempts of launch failed : the first because of the wind which got up
+prematurely and the second due to a technical hitch during the inflating of
+the envelope.
+The team of the Big Jump, folds luggage, having waited up to the end for an
+opportunity for the launch of the balloon stratosphérique allowing to raise
+the
+
+capsule pressurized by Michel Fournier at more than 40 000 metres in height.
+As expected, in the date of September 20, the jets stream strengthened in
+300 kph announcing the imminent arrival of the winter and closing until next
+May the meteorological window favorable to a human raid in the stratosphere.
+On the plains of Saskatchewan, the first snows are waited in the days which
+come.Meeting in all in May, 2003.
+
+> Today a French officer called Michel Fournier is supposed to get in a
+> 350-metre tall helium balloon, ride it up to the edge of space (40 km
+> altitude) and jump out.  His fall should last 6.5 minutes and reach
+> speeds of Mach 1.5.  He hopes to open his parachute manually at the
+> end, although with an automatic backup if he is 7 seconds from the
+> ground and still hasn't opened it.
+>
+> R
+>
+> ObQuote:
+>   "Vederò, si averò si grossi li coglioni, come ha il re di Franza."
+>   ("Let's see if I've got as much balls as the King of France!")
+>   - Pope Julius II, 2 January 1511
+
+

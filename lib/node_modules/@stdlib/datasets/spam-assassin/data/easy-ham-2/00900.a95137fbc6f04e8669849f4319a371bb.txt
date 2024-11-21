@@ -1,0 +1,62 @@
+From fork-admin@xent.com  Fri Jul 26 06:48:33 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C03E9440E7
+	for <jm@localhost>; Fri, 26 Jul 2002 01:48:31 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 26 Jul 2002 06:48:31 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6Q5oe427196 for <jm@jmason.org>;
+    Fri, 26 Jul 2002 06:50:41 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id A0B7F294102; Thu, 25 Jul 2002 22:49:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mithral.com (watcher.mithral.com [204.153.244.1]) by
+    xent.com (Postfix) with SMTP id 7C57D29409F for <fork@xent.com>;
+    Thu, 25 Jul 2002 22:48:11 -0700 (PDT)
+Received: (qmail 8290 invoked by uid 1111); 26 Jul 2002 05:48:12 -0000
+From: "Adam L. Beberg" <beberg@mithral.com>
+To: "Joseph S. Barrera III" <joe@barrera.org>
+Cc: <fork@spamassassin.taint.org>
+Subject: Re: USA USA WE ARE NUMBER ....six.
+In-Reply-To: <3D407B58.3070102@barrera.org>
+Message-Id: <Pine.LNX.4.33.0207252247060.8275-100000@watcher.mithral.com>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 25 Jul 2002 22:48:12 -0700 (PDT)
+
+On Thu, 25 Jul 2002, Joseph S. Barrera III wrote:
+
+> chris arkenberg wrote:
+> > Cheers, Adam.
+> >
+> > Perhaps people are starting to notice how profit motive drains the
+> > meaning out of their lives.
+>
+> And, having realized that, a lot of them are now having babies.
+> I can't believe the number of friends at work who are now pregnant
+> or have already just had their babies.
+
+The 9/11 boom is now well underway. Screaming newborns everywhere...
+
+- Adam L. "Duncan" Beberg
+  http://www.mithral.com/~beberg/
+  beberg@mithral.com
+
+http://xent.com/mailman/listinfo/fork
+
+

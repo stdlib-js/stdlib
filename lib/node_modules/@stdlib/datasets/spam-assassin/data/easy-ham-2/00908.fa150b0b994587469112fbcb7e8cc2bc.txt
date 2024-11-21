@@ -1,0 +1,74 @@
+From fork-admin@xent.com  Mon Jul 29 11:28:51 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 91A4D44129
+	for <jm@localhost>; Mon, 29 Jul 2002 06:25:27 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 11:25:27 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6QJA3r19139 for <jm@jmason.org>;
+    Fri, 26 Jul 2002 20:10:03 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 43310294150; Fri, 26 Jul 2002 12:08:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from jamesr.best.vwh.net (jamesr.best.vwh.net [192.220.76.165])
+    by xent.com (Postfix) with SMTP id C66F12940ED for <fork@xent.com>;
+    Fri, 26 Jul 2002 12:07:14 -0700 (PDT)
+Received: (qmail 74064 invoked by uid 19621); 26 Jul 2002 19:07:09 -0000
+Received: from unknown (HELO avalon) ([64.125.200.18]) (envelope-sender
+    <jamesr@best.com>) by 192.220.76.165 (qmail-ldap-1.03) with SMTP for
+    <fork@xent.com>; 26 Jul 2002 19:07:09 -0000
+Subject: Re: USA USA WE ARE NUMBER ....six.
+From: James Rogers <jamesr@best.com>
+To: fork@spamassassin.taint.org
+In-Reply-To: <9B97050C-A0C8-11D6-8F70-0030657C53EA@ianbell.com>
+References: <9B97050C-A0C8-11D6-8F70-0030657C53EA@ianbell.com>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Evolution/1.0.2-5mdk
+Message-Id: <1027711160.10358.6.camel@avalon>
+MIME-Version: 1.0
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 26 Jul 2002 12:19:19 -0700
+
+On Fri, 2002-07-26 at 11:50, Ian Andrew Bell wrote:
+> The ruling class, whether you define them as government or business 
+> (what's the difference?) knows full well where that money is.  It's 
+> lining their pockets, buying their hobby ranches, and financing 
+> their private jets.
+> 
+> Neither has any interest in the welfare of the working class.
+
+
+Yes, and the working class deserves what it gets, and possibly not even
+that.  For the most part, people become wealthy by not being stupid.  I
+always thought "not being stupid (most of the time)" was a fairly low
+bar, but apparently most people can't even manage that.
+
+That is really what it all boils down to:  There are lots of ignorant
+and/or stupid people who are quite happy to stay that way, and it is a
+key causal factor in why things are the way they are.  What are you
+going to do about it?
+
+
+-James Rogers
+ jamesr@best.com
+
+
+
+http://xent.com/mailman/listinfo/fork
+
+

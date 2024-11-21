@@ -1,0 +1,90 @@
+From fork-admin@xent.com  Thu Oct  3 12:55:30 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id C173C16F1A
+	for <jm@localhost>; Thu,  3 Oct 2002 12:53:41 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 03 Oct 2002 12:53:41 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g92MXEK32150 for <jm@jmason.org>;
+    Wed, 2 Oct 2002 23:33:15 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 052ED29416D; Wed,  2 Oct 2002 15:33:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from crank.slack.net (slack.net [166.84.151.181]) by xent.com
+    (Postfix) with ESMTP id 0F5F429409C for <fork@xent.com>; Wed,
+    2 Oct 2002 15:32:42 -0700 (PDT)
+Received: by crank.slack.net (Postfix, from userid 596) id 03F8B3EDCD;
+    Wed,  2 Oct 2002 18:37:29 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1]) by crank.slack.net
+    (Postfix) with ESMTP id 025D63ED4E for <fork@xent.com>; Wed,
+    2 Oct 2002 18:37:28 -0400 (EDT)
+From: Tom <tomwhore@slack.net>
+To: fork@spamassassin.taint.org
+Subject: Apple Sauced...again
+Message-Id: <Pine.BSO.4.44.0210021830180.7029-100000@crank.slack.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 2 Oct 2002 18:37:28 -0400 (EDT)
+
+
+Over on Arstechnica (www.arstechnica.com) I saw mention of a Wired article
+that goes into the many wonderfull ways Apple is showing its love and
+respect for its users.
+
+http://www.wired.com/news/mac/0,2125,55395,00.html
+
+There is a good rundown of all the whys and whatfores over at
+http://arstechnica.com/reviews/02q3/macosx-10.2/macosx-10.2-5.html
+
+"True to form, industrious third party developers saw that they could gain
+a competitive advantage by supporting this more capable user interface in
+their applications. Apple's private menu extras APIs were reverse
+engineered and leveraged to great effect. The architecture was so popular
+that an application for managing predefined sets of menu extras (third
+party or otherwise) was in development.
+
+All of that changed with the release of Jaguar--but not because the
+private APIs had changed. If they had, third party developers would have
+updated their applications to work with the new APIs, as they have
+resigned themselves to doing by choosing to use private APIs in the first
+place.
+
+But what actually happened in Jaguar was that Apple added code to forcibly
+exclude all non-Apple menu extras. Other parts of the API did not change.
+But when a menu extra is loaded, it is compared to a hard-coded list of
+"known" menu extras from Apple. If the menu extra is not on that list, it
+is not allowed to load.
+
+It's easy to laugh at Steve Ballmer's sweat-soaked gyrations as he chants
+"developers, developers, developers!", but Microsoft clearly understands
+something that Apple is still struggling with. It is in a platform
+vendor's best interest to encourage development for its platform. In
+Apple's case, this doesn't mean that they have to bend over backwards to
+make every single system service and UI element "pluggable" via public
+APIs. That's clearly a lot of work, and not something that needs to be the
+number one priority for an OS in its infancy. And in the meantime, if
+third party developers want to sell into a market that requires the
+desired functionality to be added in "unsupported" ways, then they must be
+prepared for the maintenance consequences of their decisions.
+
+But for Apple to go out of its way--to actually expend developer
+effort--to stop these third party developers, while still failing to
+provide a supported alternative, is incredibly foolish. "
+
+
+

@@ -1,0 +1,27 @@
+
+{{alias}}( x, y )
+    Tests if two ndarrays have the same shape.
+
+    Parameters
+    ----------
+    x: ndarray
+        First input ndarray.
+
+    y: ndarray
+        Second input ndarray.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if both ndarrays have the same shape.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ 1, 2, 3, 4 ] );
+    > var y = {{alias:@stdlib/ndarray/array}}( [ 5, 6, 7, 8 ] );
+    > var bool = {{alias}}( x, y )
+    true
+
+    See Also
+    --------
+

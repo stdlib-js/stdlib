@@ -1,0 +1,18 @@
+
+load( fpath )
+    Loads and evaluates a JavaScript file, such as a REPL history file, line-by-
+    line.
+
+    Parameters
+    ----------
+    fpath: string
+        File path.
+
+    Examples
+    --------
+    > load( './path/to/file.js' )
+
+    See Also
+    --------
+    save
+

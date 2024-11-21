@@ -1,0 +1,13 @@
+
+{{alias}}
+    Difference between one and the smallest value greater than one that can be
+    represented as a half-precision floating-point number.
+
+    Examples
+    --------
+    > {{alias}}
+    0.0009765625
+
+    See Also
+    --------
+

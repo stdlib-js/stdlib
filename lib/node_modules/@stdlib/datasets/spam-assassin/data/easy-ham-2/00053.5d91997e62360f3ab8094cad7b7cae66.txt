@@ -1,0 +1,80 @@
+From social-admin@linux.ie  Fri Aug  9 15:12:35 2002
+Return-Path: <social-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 99001440CF
+	for <jm@localhost>; Fri,  9 Aug 2002 10:12:31 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:12:31 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79ECRb05309 for
+    <jm+ilug-social@jmason.org>; Fri, 9 Aug 2002 15:12:32 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id MAA05617 for
+    <jm+ilug-social@jmason.org>; Fri, 9 Aug 2002 12:10:04 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA04475; Fri, 9 Aug 2002 12:09:34 +0100
+Received: from lhidns.gov.ie ([193.1.228.222]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA04437 for <social@linux.ie>; Fri,
+    9 Aug 2002 12:09:27 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [193.1.228.222] claimed to
+    be lhidns.gov.ie
+Received: from gw.educ.irlgov.ie (educ-gw.gov.ie [192.168.6.1] (may be
+    forged)) by lhidns.gov.ie (8.9.3/8.9.3) with ESMTP id MAA02879 for
+    <social@linux.ie>; Fri, 9 Aug 2002 12:08:55 +0100
+Received: (from fwtk@localhost) by gw.educ.irlgov.ie (8.8.6/8.8.6) id
+    NAA02676 for <social@linux.ie>; Fri, 9 Aug 2002 13:27:52 +0100 (BST)
+Received: from unknown(10.0.0.13) by gw.educ.irlgov.ie via smap (V2.0) id
+    xma002668; Fri, 9 Aug 02 13:27:22 +0100
+Content-Class: urn:content-classes:message
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Date: Fri, 9 Aug 2002 12:08:24 +0100
+X-Mimeole: Produced By Microsoft Exchange V6.0.5762.3
+Message-Id: <9C498074D5419A44B05349F5BF2C26301CFA74@sdubtalex01.education.gov.ie>
+X-MS-Has-Attach: 
+X-MS-Tnef-Correlator: 
+Thread-Topic: Doom for Linux
+Thread-Index: AcI/lRHWr1xxxPlzQAm4xeZ4WWnaqA==
+From: "Ryan, Shane" <Shane_Ryan@education.gov.ie>
+To: <social@linux.ie>
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    MAA04437
+Subject: [ILUG-Social] Doom for Linux
+Sender: social-admin@linux.ie
+Errors-To: social-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group social events <social.linux.ie>
+X-Beenthere: social@linux.ie
+
+hi all,
+
+I'm looking to get my hands on
+either Doom I or II for my PC.
+Unfortunately I cannot access 
+IDSoftware's site because of
+the silly web-filtering system
+in place here.
+
+Does anyone know where I can
+buy a copy of Doom (which I will
+be running on Linux...) online?
+Last time I asked in Game they laughed
+at me ;]
+
+I would ask to swap for Linux software
+but that wouldn't be ethical or legal.
+Hence the purchasing question.
+
+Regards,
+Shane
+
+-- 
+Irish Linux Users' Group Social Events: social@linux.ie
+http://www.linux.ie/mailman/listinfo/social for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

@@ -1,0 +1,55 @@
+
+{{alias}}( value[, options] )
+    Returns a zero-dimensional ndarray containing a provided scalar value.
+
+    If `value` is a number and `options.dtype` is a complex number data type,
+    the function returns a zero-dimensional ndarray containing a complex number
+    whose real component equals the provided scalar value and whose imaginary
+    component is zero.
+
+    Parameters
+    ----------
+    value: any
+        Scalar value.
+
+    options: Object (optional)
+        Options.
+
+    options.dtype: string (optional)
+        Data type. If not provided and `value`
+
+        - is a number, the default data type is the default real-valued
+          floating-point data type.
+        - is a boolean, the default data type is the default boolean data type.
+        - is a complex number object of a known complex data type, the data type
+          is the same as the provided value.
+        - is a complex number object of an unknown data type, the default data
+          type is the default complex-valued floating-point data type.
+        - is any other value type, the default data type is 'generic'.
+
+    options.order: string (optional)
+        Specifies whether an array is row-major (C-style) or column-major
+        (Fortran-style). Default: 'row-major'.
+
+    options.readonly: boolean (optional)
+        Boolean indicating whether an array should be read-only. Default: false.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias}}( 1.0 )
+    <ndarray>
+    > var sh = x.shape
+    []
+    > var dt = x.dtype
+    'float64'
+    > var v = x.get()
+    1.0
+
+    See Also
+    --------
+

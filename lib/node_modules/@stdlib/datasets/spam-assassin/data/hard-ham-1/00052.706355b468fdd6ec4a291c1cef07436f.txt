@@ -1,0 +1,154 @@
+Return-Path: <update@list.theregister.co.uk>
+Received: from list.theregister.co.uk (theregister-sql2.hosted.netline.net.uk [213.40.196.63])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6C2g2J31087
+	for <qqqqqqqqqq-reg@spamassassin.taint.org>; Fri, 12 Jul 2002 03:42:10 +0100
+Received: from localhost ([127.0.0.1] helo=list.theregister.co.uk)
+	by list.theregister.co.uk with smtp (Exim 3.31 #1)
+	id 17SpnK-0006VR-06
+	for <qqqqqqqqqq-reg@spamassassin.taint.org>; Fri, 12 Jul 2002 03:04:30 +0100
+Date: Fri, 12 Jul 2002 03:00:01 +0100
+From: update@list.theregister.co.uk
+Subject: Reg Headlines Friday July 12
+To: Reg Subscribers <update@list.theregister.co.uk>
+Precedence: list
+X-Bulkmail: 2.05
+Message-Id: <E17SpnK-0006VR-06@list.theregister.co.uk>
+
+Today's Headlines from The Register
+-----------------------------------
+
+    To unsubscribe from this daily news update, see the instructions at
+    the end of this message.
+
+
+  --------ADVERTISEMENT------------------------------------------------
+
+  WIN tickets to a FORMULA ONE EUROPEAN GRAND PRIX!
+
+  Neverfail Group plc, business continuity software expert, sponsors Rubens
+  Barrichello driver of the Ferrari F1 team. Click here to find out more and
+  win tickets: www.neverfailgroup.com/f1theregister.html.
+
+  For every new customer that buys Neverfail(tm) products between the
+  July-September 2002 Grand Prix season, Neverfail Group plc will grant 2
+  tickets to a Grand Prix hospitality event with us next 2003 season.
+
+  ---------------------------------------------------------------------
+Software
+
+    MS talks to self about not talking about home 802.11b range
+    Doesn't actually announce something we all knew very little about already
+        http://www.theregister.co.uk/content/4/26152.html
+
+    PGP Outlook plugin has major security hole
+    Relax, there's a patch
+        http://www.theregister.co.uk/content/4/26145.html
+
+    MS SQL Server multiple vulns
+    Get your daily fixes
+        http://www.theregister.co.uk/content/4/26144.html
+
+    MS licensing deadline doom looms - buy or die
+    Or defect...
+        http://www.theregister.co.uk/content/4/26141.html
+
+    Software in China, India to top $27bn by 2006
+    And China to pass India, says Gartner
+        http://www.theregister.co.uk/content/4/26135.html
+
+Personal Hardware
+
+    Fox recommends hacked DVD players for The Simpsons
+    Cartoon cuffs for Homer?
+        http://www.theregister.co.uk/content/54/26139.html
+
+Internet
+
+    Soap and WSDL 'must haves' for web services - IDC
+    By the end of this year, already...
+        http://www.theregister.co.uk/content/6/26138.html
+
+    W3C releases first drafts of WSDL 1.2
+    Open for comment and review
+        http://www.theregister.co.uk/content/6/26137.html
+
+Net Security
+
+    IE scripting flaw uncovered
+    Full disclosure
+        http://www.theregister.co.uk/content/55/26147.html
+
+    PGP Outlook plugin has major security hole
+    Relax, there's a patch
+        http://www.theregister.co.uk/content/55/26145.html
+
+    MS SQL Server multiple vulns
+    Get your daily fixes
+        http://www.theregister.co.uk/content/55/26144.html
+
+    Attack of the Cyber-Terror Studies
+    No pass mark for Dartmouth College
+        http://www.theregister.co.uk/content/55/26143.html
+
+Business
+
+    Liberty move on Telewest faces legal challenge
+    Bondholders baulking...
+        http://www.theregister.co.uk/content/7/26136.html
+
+Broadband
+
+    Wales gets broadband boost
+    Let's all move to Llandegwning
+        http://www.theregister.co.uk/content/22/26146.html
+
+e-business
+
+    Yahoo! Back! In! The! Black! 
+    Reasons to be cheerful
+        http://www.theregister.co.uk/content/23/26140.html
+
+The Vulture Central Mailbag
+
+    Open source developers wary of MS graphics patent grab
+    OpenGL mail
+        http://www.theregister.co.uk/content/35/26156.html
+
+    Fighting the Pigopolists with bricks not bluster
+    Letters Routing around the RIAA
+        http://www.theregister.co.uk/content/35/26154.html
+
+Bootnotes
+
+    Welsh Assembly Web site sick
+    Sorry to hear that
+        http://www.theregister.co.uk/content/28/26153.html
+
+
+  --------ADVERTISEMENT------------------------------------------------
+
+  WIN tickets to a FORMULA ONE EUROPEAN GRAND PRIX!
+
+  Neverfail Group plc, business continuity software expert, sponsors Rubens
+  Barrichello driver of the Ferrari F1 team. Click here to find out more and
+  win tickets: www.neverfailgroup.com/f1theregister.html.
+
+  For every new customer that buys Neverfail(tm) products between the
+  July-September 2002 Grand Prix season, Neverfail Group plc will grant 2
+  tickets to a Grand Prix hospitality event with us next 2003 season.
+
+  ---------------------------------------------------------------------
+The Register and its contents are copyright 2002 Situation Publishing.
+All rights reserved.
+
+    Tel:     +44 (0)20 7499 2264.
+    Fax:     +44 (0)20 7493 5922.
+    E-Mail:  press.releases@theregister.co.uk
+
+To unsubscribe from these daily updates, visit the following URL.  Make
+sure that you enter exactly the same e-mail address as you used to join
+this service.
+
+    http://list.theregister.co.uk/cgi-bin/unsub.cgi
+
+

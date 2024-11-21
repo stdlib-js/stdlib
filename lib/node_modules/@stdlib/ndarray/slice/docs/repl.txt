@@ -1,0 +1,62 @@
+
+{{alias}}( x, ...s[, options] )
+    Returns a read-only view of an input ndarray.
+
+    The function supports three (mutually exclusive) means of providing slice
+    arguments:
+
+    1. Providing a single MultiSlice object.
+    2. Providing a single array containing slice arguments.
+    3. Providing slice arguments as separate arguments.
+
+    An individual slice argument must be either a Slice, an integer, null, or
+    undefined.
+
+    In all cases, the number of slice dimensions must match the number of array
+    dimensions.
+
+    If providing a MultiSlice object or an array of slice arguments, no other
+    slice arguments should be provided.
+
+    Mixing function invocation styles (e.g., providing multiple MultiSlice
+    objects or providing an array of slice arguments followed by additional
+    slice arguments) is not supported.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    s: ...MultiSlice|Slice|null|undefined|integer|ArrayLike
+        Slice arguments.
+
+    options: Object (optional)
+        Options.
+
+    options.strict: boolean (optional)
+        Boolean indicating whether to enforce strict bounds checking.
+        Default: true.
+
+    Returns
+    -------
+    out: ndarray
+        Output array view.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] )
+    <ndarray>
+    > x.shape
+    [ 2, 2 ]
+    > var s = new {{alias:@stdlib/slice/multi}}( null, 1 )
+    <MultiSlice>
+    > var y = {{alias}}( x, s )
+    <ndarray>
+    > y.shape
+    [ 2 ]
+    > {{alias:@stdlib/ndarray/to-array}}( y )
+    [ 2, 4 ]
+
+    See Also
+    --------
+

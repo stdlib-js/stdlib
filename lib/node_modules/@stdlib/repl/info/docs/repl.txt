@@ -1,0 +1,21 @@
+
+{{alias}}( alias )
+    Returns abbreviated help text associated with a provided alias.
+
+    Parameters
+    ----------
+    alias: string
+        Alias.
+
+    Returns
+    -------
+    out: string|null
+        Abbreviated help text.
+
+    Examples
+    --------
+    > var txt = {{alias}}( '{{alias:@stdlib/math/base/special/sin}}' )
+
+    See Also
+    --------
+

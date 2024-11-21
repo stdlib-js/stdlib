@@ -1,0 +1,85 @@
+
+{{alias}}( str, len, strict )
+    Converts a subsequence string to a Slice object.
+
+    A subsequence string has the following format:
+
+      <start>:<stop>:<increment>
+
+    If an increment is not specified, the default increment is one. An increment
+    of zero is not allowed.
+
+    The start index is inclusive.
+
+    The stop index is exclusive.
+
+    Both start and stop indices are optional. If not provided, the start and
+    stop indices default to index extremes. Which extremes correspond to which
+    index depends on whether the increment is positive or negative.
+
+    Both start and stop indices can be negative; in which case, the
+    corresponding index is resolved by subtracting the respective value from the
+    provided length.
+
+    Both start and stop indices can use the 'end' keyword (e.g., 'end-2::2',
+    'end-3:', etc), which supports basic subtraction and division.
+
+    The 'end' keyword resolves to the provided length. Thus, ':-1' is equivalent
+    to ':end-1', ':-2' is equivalent to ':end-2', and so on and so forth. The
+    exception is when performing a division operation when the increment is less
+    than zero; in which case, 'end' is equal to 'len-1' in order to preserve
+    user expectations when 'end/d' equals a whole number and slicing from right-
+    to-left. The result from a division operation is rounded down to the nearest
+    integer value.
+
+    In non-strict mode, the resolved slice start is clamped to the slice index
+    bounds [0, len).
+
+    In non-strict mode, Tte resolved slice end is upper bound clamped to the
+    provided length (i.e., one greater than the last possible index).
+
+    When the increment is negative, the resolved slice end value may be `null`,
+    thus indicating that a non-empty slice should include the first index.
+
+    The function ensures that results satisfy the convention that ':n' combined
+    with 'n:' is equivalent to ':' (i.e., selecting all elements).
+
+    When the provided length is zero, the function always returns a slice object
+    equivalent to '0:0:<increment>'.
+
+    Parameters
+    ----------
+    str: string
+        Subsequence string.
+
+    len: integer
+        Maximum number of elements allowed in the slice.
+
+    strict: boolean
+        Boolean indicating whether to enforce strict bounds checking.
+
+    Returns
+    -------
+    s: Slice
+        Slice instance.
+
+    Examples
+    --------
+    > var s = new {{alias}}( '1:10', 10, false );
+    > s.start
+    1
+    > s.stop
+    10
+    > s.step
+    1
+    > s = new {{alias}}( '2:5:2', 10, false );
+    > s.start
+    2
+    > s.stop
+    5
+    > s.step
+    2
+
+    See Also
+    --------
+

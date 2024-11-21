@@ -1,0 +1,119 @@
+From exmh-users-admin@redhat.com  Fri Sep 20 21:45:36 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id C135216F03
+	for <jm@localhost>; Fri, 20 Sep 2002 21:45:35 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 20 Sep 2002 21:45:35 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8KJ6HC19158 for
+    <jm-exmh@jmason.org>; Fri, 20 Sep 2002 20:06:19 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id CDFC441197; Fri, 20 Sep 2002
+    15:03:05 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 3881240B8D
+    for <exmh-users@listman.redhat.com>; Fri, 20 Sep 2002 14:57:05 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g8KIv5K28339 for exmh-users@listman.redhat.com; Fri, 20 Sep 2002
+    14:57:05 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g8KIv4h28335 for
+    <exmh-users@redhat.com>; Fri, 20 Sep 2002 14:57:04 -0400
+Received: from austin-jump.vircio.com
+    (IDENT:y9S4NRBm7xu5CJteofINMSj1AvueZzLf@jump-austin.vircio.com
+    [192.12.3.99]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id g8KIddi01398
+    for <exmh-users@redhat.com>; Fri, 20 Sep 2002 14:39:39 -0400
+Received: (qmail 20056 invoked by uid 104); 20 Sep 2002 18:57:03 -0000
+Received: from cwg-exmh@DeepEddy.Com by localhost.localdomain with
+    qmail-scanner-0.90 (uvscan: v4.1.60/v4223. . Clean. Processed in 0.330518
+    secs); 20/09/2002 13:57:03
+Received: from deepeddy.vircio.com (@[10.1.2.1]) (envelope-sender
+    <cwg-exmh@DeepEddy.Com>) by austin-jump.vircio.com (qmail-ldap-1.03) with
+    SMTP for <exmh-users@redhat.com>; 20 Sep 2002 18:57:03 -0000
+Received: (qmail 28209 invoked from network); 20 Sep 2002 18:57:00 -0000
+Received: from localhost (HELO deepeddy.vircio.com)
+    (?arLzUBkPND7nmMFDfHxZLvzRwOF+H4Kq?@[127.0.0.1]) (envelope-sender
+    <cwg-exmh@DeepEddy.Com>) by localhost (qmail-ldap-1.03) with SMTP for
+    <exmh-users@redhat.com>; 20 Sep 2002 18:57:00 -0000
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4
+To: exmh-users@spamassassin.taint.org
+Subject: I'm back in town...
+X-Url: http://www.DeepEddy.Com/~cwg
+X-Image-Url: http://www.DeepEddy.Com/~cwg/chris.gif
+MIME-Version: 1.0
+Content-Type: multipart/signed;
+    boundary="==_Exmh_1920300774P";
+    micalg=pgp-sha1;
+    protocol="application/pgp-signature"
+Content-Transfer-Encoding: 7bit
+From: Chris Garrigues <cwg-exmh@DeepEddy.Com>
+Message-Id: <1032548220.28201.TMDA@deepeddy.vircio.com>
+X-Delivery-Agent: TMDA/0.57
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+X-Reply-To: Chris Garrigues <cwg-dated-1032980220.135216@DeepEddy.Com>
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Fri, 20 Sep 2002 13:56:59 -0500
+
+--==_Exmh_1920300774P
+Content-Type: text/plain; charset=us-ascii
+
+I've been working on salary related things the past few days, but I'm starting 
+to think about exmh again.
+
+Thanks to Robert for finding that s/$L/$lineno/ bug.
+
+So, has anybody else been looking at the performance issues that we were 
+talking about before I left, or should I dig right in?
+
+Chris
+
+-- 
+Chris Garrigues                 http://www.DeepEddy.Com/~cwg/
+virCIO                          http://www.virCIO.Com
+716 Congress, Suite 200
+Austin, TX  78701		+1 512 374 0500
+
+  World War III:  The Wrong-Doers Vs. the Evil-Doers.
+
+
+
+
+--==_Exmh_1920300774P
+Content-Type: application/pgp-signature
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: Exmh version 2.2_20000822 06/23/2000
+
+iD8DBQE9i297K9b4h5R0IUIRAiURAJ9aNU4uwQn+EwNOJlrvGJp9U4wVNQCcCkmT
+KgDY1o8a2qpBe53DfoNyX9g=
+=LClg
+-----END PGP SIGNATURE-----
+
+--==_Exmh_1920300774P--
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

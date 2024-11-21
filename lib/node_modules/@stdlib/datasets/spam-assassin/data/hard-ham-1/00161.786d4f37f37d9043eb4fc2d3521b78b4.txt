@@ -1,0 +1,474 @@
+Received: from timhunt.net (ns1.timhunt.net [216.27.147.130])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6Q6r1430476
+	for <tim_timhunt_net@spamtraps.taint.org>; Fri, 26 Jul 2002 07:53:02 +0100
+Received: from minardi.isc.org (minardi.isc.org [204.152.189.14])
+	by timhunt.net (8.11.3/8.11.1) with ESMTP id g6Q6qGE47635
+	for <ibarra@fsg.com>; Fri, 26 Jul 2002 02:52:17 -0400 (EDT)
+	(envelope-from firewalls-bounce@isc.org)
+Received: from rc.isc.org (rc.isc.org [204.152.187.2])
+	by minardi.isc.org (Postfix) with ESMTP
+	id 2FA153D7C; Thu, 25 Jul 2002 23:51:42 -0700 (PDT)
+	(envelope-from firewalls-bounce@isc.org)
+Received: with ECARTIS (v1.0.0; list firewalls); Thu, 25 Jul 2002 23:51:00 -0700 (PDT)
+Date: Thu, 25 Jul 2002 23:51:00 -0700 (PDT)
+From: ISC Mailing List Manager <ecartis@isc.org>
+To: firewalls digest users <ecartis@isc.org>
+Subject: firewalls Digest V1 #33
+Precedence: bulk
+Message-Id: <20020726065142.2FA153D7C@minardi.isc.org>
+
+firewalls Digest	Thu, 25 Jul 2002	Volume: 01  Issue: 033
+
+In This Issue:
+		Re: QOS
+		FW: disable some sites
+		DNAT with iptables question
+		RE: DNAT with iptables question
+
+----------------------------------------------------------------------
+
+From: "George J. Jahchan" <Firewalls@Tech.InteractiveNetworks.net>
+Subject: Re: QOS
+Date: Thu, 25 Jul 2002 12:11:40 +0300
+
+
+> So, I'm forced to conclude that the PacketShaper either sucks in a major
+> way, or that your explanation/the explanation that you have been given of
+> it is wrong. (Sorry.)
+
+You are wrong on both counts. Explanation is valid for symmetrical TCP, for
+others see explanations below.
+
+> Yes, all packets in an established TCP connection have the ACK flag set.
+> So all packets except SYNs are candidates for delay when traffic limits
+> are exceeded? Whoops.
+
+You should change that to: ... are always candidates for predictive or
+preventive delay.
+
+ACKs are delayed (per flow) in such a way that WAN-bound traffic reaching
+the edge router's Ethernet interface does not exceed WAN link speed (NO
+ROUTER QUEUES!). It does not wait for the link to be at or near saturation
+to act -- that is why, unlike queueing, it is predictive and not reactive.
+
+It slows down the rate of transmission of sending hosts (on a per-flow
+basis) to accommodate WAN link speed limit and current network utilization,
+rather than fill up queues at LAN speeds and empty them at WAN speeds,
+eventually dropping the excess once the queue(s) fill up, informing hosts to
+slow down their rate of transmission once queues are beyond a fixed
+threshold (90%?).
+
+Rate control works equally well for outbound and inbound traffic. Ever heard
+of an effective queueing technology for inbound traffic? Queueing packets
+after they have crossed a congested link does not make much sense, does it?
+
+Re: IPsec/GRE or other encapsulated traffic
+
+It obviously cannot dissect IPsec/GRE or other encapsulated traffic: it sees
+the tunnel as one connection if the tunneling device is before the PS on the
+LAN side (VPN gateway and router are two separate devices, PS between them).
+If the router does the tunneling, then the PS sees clear traffic. Typically,
+in an organization the first scenario would be the case at headquarters and
+the second at branch offices. The PS at the branch sees traffic inside the
+tunnel whereas the unit at HQ sees all traffic as one tunnel which allows
+full management of both tunneled and clear traffic at both ends.
+
+UDP and asymmetrical TCP (where the PS and router only see the outgoing
+packet, return traffic coming back through a satellite downlink to a station
+on the LAN) are handled differently.
+
+For asymmetrical TCP, it will time the release of packets to the receiving
+device, thereby indirectly timing the release of acknowledgements by the
+receiving host. This informs the sender's TCP/IP stack that it should slow
+the release of packets because limited bandwidth is available.
+
+For UDP, it utilizes flow-based derivative random drop. It selectively drops
+only one packet at a time from flows that are predicted to cause congestion,
+which prevents heavy retransmissions and application timeouts.
+
+ICMP packets exceeding policy limits are dropped.
+
+>_Maybe_ you can do a special case for TCP and try to offload some of the
+queueing on
+> the endpoints, but I really don't see the real gain in that.
+
+The real gain is manageability and control. A LAN host only knows about the
+state of its own connections and is oblivious to WAN conditions until its
+TCP/IP stack learns (when router queues are nearly full) that the WAN is
+congested. A PS will predict and inform the LAN hosts' TCP/IP stacks of the
+"speed limit to obey" for every connection (based on policies and network
+conditions), avoiding congestion. Control for asymmetrical TCP and UDP may
+not be as "tight" as for symmetrical TCP, but it does work.
+
+Queueing is akin to deploying cops only when traffic jams occur, vs. rate
+control where cops are permanently deployed throughout town, communicating
+with each other and with a central control point, predicting upcoming
+congestion and regulating traffic, ensuring a smooth flow of traffic. If
+there is potential for congestion, it will take a driver a hell of lot
+longer to cross town with first approach than it will with the second. Do
+you agree?
+
+----- Original Message -----
+From: "Mikael Olsson" <mikael.olsson@clavister.com>
+To: "George J. Jahchan" <Firewalls@Tech.InteractiveNetworks.net>
+Cc: "Firewalls List" <Firewalls@ISC.org>
+Sent: Wednesday, July 24, 2002 4:50 pm
+Subject: Re: QOS
+
+
+
+
+"George J. Jahchan" wrote:
+>
+> The whole purpose of the device is to pro-actively prevent WAN
+congestion --
+> it sits between client and server (client inside/server outside or client
+> outside/server inside -- it does not make any difference) and pro-actively
+> adjusts the TCP window size (by delaying the acknowledgement) to get the
+> sending host to honor the speed limit for that individual connection
+> (calculated in real-time based on user-defined policies and current
+network
+> conditions).
+
+Umm, don't get me wrong here, but I think you've been fed a less-than-
+accurate sales pitch.
+
+Let's ponder this for a minute.
+
+The device works by delaying ACKs... that is: packets with the ACK
+flag set, right?
+
+...
+
+[letting this sink in for a while]
+
+...
+
+Yes, all packets in an established TCP connection have the ACK flag set.
+So all packets except SYNs are candidates for delay when traffic limits
+are exceeded? Whoops.
+
+
+Okay, let's assume for a second that the packets aren't actually delayed,
+but that the ACK sequence numbers or TCP window size fields are re-written
+(dicey). All you've accomplished is move the queueing (delaying) from
+the traffic shaper to the endpoints. You still get L7-to-L7 delays. Big
+deal if it happens on the wire or in the stack. Also, convincing endpoints
+to do delays probably results in less-than-perfect shaping since stack
+retransmit timings suddenly affect the actual bandwidth available rather
+than having the shaper itself do it; the shaper knows exactly when there
+is bandwidth available.
+
+But this doesn't even begin to touch on other protocols like UDP or
+ICMP. Or, for that matter, IPsec/GRE/whatever tunneled traffic.
+Neither of them have sequence numbers or window sizes that you can
+manipulate.
+
+
+So, I'm forced to conclude that the PacketShaper either sucks in a major
+way, or that your explanation/the explanation that you have been given of
+it is wrong. (Sorry.)
+
+What I think happens is that the delay is <=2msec as long as traffic
+limits aren't exceeded. This is reasonable. BUT when traffic exceeds
+the limits, things will begin to be queued. Now, with a well-behaved
+TCP stack, this _will_ mean that it will fall back to lower transmission
+rates; this is how TCP was designed, so that part isn't all wrong.
+
+And, again, this kind of shaping isn't rocket science. That is not to
+say that there are shapers out there that are just being plain dumb
+(always queueing and the selecting what gets transmitted out of the
+queue), but, well, I just can't see that you can get any smarter
+than queueing when limits are actually exceeded.  _Maybe_ you can do
+a special case for TCP and try to offload some of the queueing on the
+endpoints, but I really don't see the real gain in that.
+
+
+Respectfully,
+/Mikael Olsson
+
+--
+Mikael Olsson, Clavister AB
+Storgatan 12, Box 393, SE-891 28 ÖRNSKÖLDSVIK, Sweden
+Phone: +46 (0)660 29 92 00   Mobile: +46 (0)70 26 222 05
+Fax: +46 (0)660 122 50       WWW: http://www.clavister.com
+
+"It's July. I'm on vacation. Can't you tell? :)"
+--
+Firewalls mailing list - [ firewalls@isc.org ]
+To unsubscribe: http://www.isc.org/services/public/lists/firewalls.html
+
+
+
+------------------------------
+
+From: "Hiemstra, Brenno" <brenno.hiemstra@ignite.nl>
+Subject: FW: disable some sites
+Date: Thu, 25 Jul 2002 13:44:18 +0200
+
+
+The list addy changed ofcourse   :o)
+
+> -----Original Message-----
+> From:	Hiemstra, Brenno 
+> Sent:	donderdag 25 juli 2002 12:27
+> To:	'Michael Zhao'; Hiemstra, Brenno
+> Cc:	firewalls@lists.gnac.net
+> Subject:	RE: disable some sites
+> 
+> Michael,
+> 
+> If I was in your shoes I would first investigate if there
+> is a security policy in your organisation. If you dont know
+> what I mean by a security policy I would advice you to 
+> start reading about it. A search on google would be of a
+> big help for you.
+> 
+> If there is a security policy I would read it and investigate
+> what is tells about how employees are able to use their
+> workstations for performing their function. In a security 
+> policy there should be things what employees are allowed
+> to do on the network / internet and what not.
+> 
+> If there isnt a security policy I would advice you to implement
+> one in your company. Because without one you cant punish
+> employees by violating the policy and if there is a court case
+> you dont have any rock solid thing to smack around with.
+> 
+> Without a policy you are just implementing solutions to prevent
+> employees in doing things that, im my opinion, they arent allowed
+> to do on their workstations anyway. I dont like the idea that 
+> employees play games, use kazaa, ICQ, MSN, etc etc in stead
+> of working what we pay them to do. This is why a security policy
+> is important because then you can say to employees that they
+> violated it and that there are consequences for that (deny internet
+> access, etc etc).
+> 
+> Owkee...    now that this is out of the way time to proceed about
+> the proxy thingie.
+> 
+> A proxy dont have to be the default gateway of your network to
+> use it. It is a function in Internet Explorer or whatever browser you
+> use in your network.
+> 
+> If you ask me Checkpoint Firewalls are just good in using for what
+> their real purpose is and that is firewalling a network. I dont like the
+> idea that my firewall is also CVS http thingie because I dont think
+> a firewall is its purpose to do that. Proxies are a much better solutions
+> for that and they are also developed for that purpose.
+> 
+> Depending on your network setup and the OS and Proxy brand of your
+> current proxy you have several solutions which was already provided 
+> by people on this list. My favorite proxy is Squid and there are probably
+> a lot of http blacklist programs that work with Squid to block websites
+> and stuff.
+> 
+> I still think you should first deny direct internet traffic from
+> workstations.
+> and only allow traffic to the internet from servers that are allowed to do
+> so. You should think about proxies, email servers, etc etc. This should
+> also prevent people from playing games, especially those Quake kinda
+> games because those use ports that arent necessary for normal 
+> webbrowsing. Games running over port 80 and not http related are blocked
+> by the proxy if that proxy is a true Layer 7 application layer proxy.
+> These
+> kinda proxies can view in the TCP/IP packet and see if this is legitimate 
+> http traffic or that someone tries to tunnel something over port 80.
+> 
+> Anyway...    again food for some thoughts,
+> 
+> Regards,
+> 
+> 
+> 
+> Brenno
+> 
+> 
+> -----Original Message-----
+> From:	Michael Zhao [SMTP:mzhao@everlastingsystems.com]
+> Sent:	woensdag 24 juli 2002 2:38
+> To:	Hiemstra, Brenno
+> Cc:	firewalls@lists.gnac.net
+> Subject:	Re: disable some sites
+> 
+> Thanks your reply.
+> 
+> I built up my network three years ago . I have proxy which we only use 
+> cache to accelerate our internet accessing , it is not a gateway . It is 
+> too difficult to change the topology , many thing need to be changed.
+> 
+> Did you have another idea to help me? Someone suggest me to buy the 
+> websence , but I dont have the budget right now.
+> 
+> Thanks a lot
+> 
+> Michael
+> 
+> Hiemstra, Brenno wrote:
+> 
+> >Michael,
+> >
+> >The first thing is to build a security policy that
+> >states what people are allowed to do and what
+> >not. Everyone needs to accept this policy and 
+> >if they violate it you can apply rules that you state
+> >in your security policy.
+> >
+> >If I had the option for your network setup I would
+> >install a proxy server and demand every client
+> >to connect to the proxy if they want to use the 
+> >internet.
+> >
+> >The proxy will only allow http, ftp, and other "approved"
+> >services to connect to the internet. And you can let
+> >them check to some database which websites are
+> >allowed and deny access to sites that aren't allowed
+> >
+> >Your company firewall will only allow the proxy to connect
+> >to the internet. Clients are denied.
+> >
+> >This way the clients cant connect directly to the internet
+> >game servers and on the proxy you can deny clients
+> >to connect to the game servers.
+> >
+> >I hope this is an option for you.
+> >
+> >Regards,
+> >
+> >
+> >Brenno
+> >
+> >>-----Original Message-----
+> >>From:	Michael Zhao [SMTP:mzhao@everlastingsystems.com]
+> >>Sent:	dinsdag 23 juli 2002 14:10
+> >>To:	firewalls@lists.gnac.net
+> >>Subject:	disable some sites
+> >>
+> >>Hi , all
+> >>
+> >>I choose checkpoint fw-1 as my firewall . I found many company users 
+> >>play internet games like CS, ourgame . I find users download their 
+> >>clients software and install  on their local workstation , after run it 
+> >>, the programe can connect to game server automatically .
+> >>
+> >>Usally , there are many sites of every internet game server. I.E. I want
+> 
+> >>disable accessing the game servers like xxx.ourgame.com from my internal
+> 
+> >>net , how can I do that except find all of their IP address , because it
+> 
+> >>is so complecat to do . Who can tell me .
+> >>
+> >>Regards,
+> >>Michael
+> >>
+> >>-- 
+> >>Firewalls mailing list - [ firewalls@isc.org ]
+> >>To unsubscribe: http://www.isc.org/services/public/lists/firewalls.html
+> >>
+> 
+
+------------------------------
+
+Date: Thu, 25 Jul 2002 15:08:21 -0600
+From: Jerry Lynde <jlynde@diligence.com>
+Subject: DNAT with iptables question
+
+
+Howdy folks,
+
+I've been scouring the online docs for solid info on how to accomplish DNAT 
+with iptables.
+
+Essentially, I have converted the ipmasqadm lines of the form...
+
+ipmasqadm portfw -a -P tcp -L $WEB_OUT  http    -R $WEB_IN      http
+
+to iptables lines of the form...
+
+$IPTABLES -A PREROUTING -t nat -p tcp -d $WEB_OUT --dport 80 -j DNAT --to 
+$WEB_IN:80
+
+with the accompanying lines...
+
+
+$IPTABLES -A FORWARD -i $INTIF -o $EXTIF -m state --state 
+ESTABLISHED,RELATED -j ACCEPT
+$IPTABLES -A FORWARD -i $EXTIF -o $INTIF -m state --state 
+ESTABLISHED,RELATED -j ACCEPT
+$IPTABLES -A FORWARD -i $EXTIF -o $INTIF -p tcp -j ACCEPT
+
+The last two lines seem functionally sorta redundant, but I threw em in in 
+an effort to make this work.
+So far, I am unable to show that it's working correctly... I even tried 
+logging all packets...
+
+$IPTABLES -A FORWARD -i $INTIF -p tcp -j LOG --log-level info
+$IPTABLES -A FORWARD -i $EXTIF -p tcp -j LOG --log-level info
+
+But nothing show up in /var/log/messages or anywhere else for that matter. 
+This is on a Redhat 7.3 box.
+Any help, clues, flames, RT(his particular)FM, etc are appreciated.
+
+I read the list, so please don't reply directly in addition to the list 
+resposne.
+
+
+Thanks,
+
+Jer 
+
+
+------------------------------
+
+From: "Reckhard, Tobias" <tobias.reckhard@secunet.com>
+Subject: RE: DNAT with iptables question
+Date: Fri, 26 Jul 2002 08:32:37 +0200
+
+
+> $IPTABLES -A PREROUTING -t nat -p tcp -d $WEB_OUT --dport 80 
+> -j DNAT --to 
+> $WEB_IN:80
+> 
+> with the accompanying lines...
+> 
+> 
+> $IPTABLES -A FORWARD -i $INTIF -o $EXTIF -m state --state 
+> ESTABLISHED,RELATED -j ACCEPT
+> $IPTABLES -A FORWARD -i $EXTIF -o $INTIF -m state --state 
+> ESTABLISHED,RELATED -j ACCEPT
+> $IPTABLES -A FORWARD -i $EXTIF -o $INTIF -p tcp -j ACCEPT
+> 
+> The last two lines seem functionally sorta redundant, but I 
+> threw em in in 
+> an effort to make this work.
+
+You're missing the NEW state. The initial SYN packet will not match with
+either of the first two rules. It should match the third if it's inbound,
+though.
+
+> So far, I am unable to show that it's working correctly... I 
+> even tried 
+> logging all packets...
+> 
+> $IPTABLES -A FORWARD -i $INTIF -p tcp -j LOG --log-level info
+> $IPTABLES -A FORWARD -i $EXTIF -p tcp -j LOG --log-level info
+> 
+> But nothing show up in /var/log/messages or anywhere else for 
+> that matter. 
+
+You need to insert those logging rules above any ACCEPT, REJECT or DENY
+rules for them to be of any use. Are you sure the packets are hitting the
+box at all? Try moving the log rules to the top of the FORWARD chain,
+introduce logging rules to the PREROUTING, POSTROUTING, INPUT and OUTPUT
+chains, and/or use tcpdump as well to see where the packets are travelling.
+
+Cheers
+Tobias
+
+------------------------------
+
+End of firewalls Digest V1 #33
+******************************
+
+

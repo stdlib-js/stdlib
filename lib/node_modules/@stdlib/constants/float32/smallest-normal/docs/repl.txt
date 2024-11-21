@@ -1,0 +1,12 @@
+
+{{alias}}
+    Smallest positive normalized single-precision floating-point number.
+
+    Examples
+    --------
+    > {{alias}}
+    1.1754943508222875e-38
+
+    See Also
+    --------
+

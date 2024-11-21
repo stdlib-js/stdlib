@@ -1,0 +1,83 @@
+From uktfu@eei.ericsson.se  Fri Jul 19 02:11:31 2002
+Return-Path: <uktfu@eei.ericsson.se>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BD26743F90
+	for <jm@localhost>; Thu, 18 Jul 2002 21:11:30 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 02:11:30 +0100 (IST)
+Received: from mandark.labs.netnoteinc.com ([213.105.180.140]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6J0rxJ14046 for
+    <jm@jmason.org>; Fri, 19 Jul 2002 01:53:59 +0100
+Received: from kale.meridyenbilisim.com ([213.204.65.66]) by
+    mandark.labs.netnoteinc.com (8.11.6/8.11.6) with ESMTP id g6J0ruR24064 for
+    <jm@netnoteinc.com>; Fri, 19 Jul 2002 01:53:57 +0100
+Received: from darkside.demon.co.uk ([64.173.75.218]) by
+    kale.meridyenbilisim.com with Microsoft SMTPSVC(5.0.2195.2966);
+    Mon, 22 Jul 2002 03:54:41 +0300
+To: <Undisclosed.Recipients@netnoteinc.com>
+From: "Julie" <uktfu@eei.ericsson.se>
+Subject: Re: Instant Quote
+Date: Thu, 18 Jul 2002 17:59:10 -1900
+MIME-Version: 1.0
+Message-Id: <KALET6658EMJmAkxWne000001a2@kale.meridyenbilisim.com>
+X-Originalarrivaltime: 22 Jul 2002 00:54:42.0462 (UTC) FILETIME=[5D55F3E0:01C2311A]
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+<BODY>
+<table width=3D520 cellspacing=3D0 cellpadding=3D14 border=3D4 bordercolor=
+=3D0000A0>
+<tr><td bgcolor=3D0000A0>
+<font face=3DTahoma,Arial,Helvetica size=3D5 color=3DFFFFFF><b>Now you can=
+ have HUNDREDS of lenders compete for your loan!</b>
+<br>
+</font>
+<font face=3DTahoma,Arial,Helvetica size=3D2 color=3DFFFFFF><BR><b>
+<li>Refinancing
+<li>New Home Loans
+<li>Debt Consolidation
+<li>Debt Consultation
+<li>Auto Loans
+<li>Credit Cards
+<li>Student Loans
+<li>Second Mortgage
+<li>Home Equity
+</b></font>
+</td>
+<td width=3D300>
+<font face=3DArial,Helvetica size=3D3 color=3D000050><b>Dear Homeowner,</b=
+>
+<p align=3D"justify"><font face=3D"times new roman, times" size=3D3 color=3D=
+000050>Interest Rates are at their lowest point in 40 years!
+We help you find the best rate for your situation by matching your needs w=
+ith hundreds of lenders! <u><B>Home Improvement, Refinance, Second Mortgag=
+e, Home Equity Loans, and More!</b></u> Even with less than perfect credit=
+!<br><br>This service is <B>100% FREE</b> to home owners and new home buye=
+rs without any obligation.
+<BR><br>Just fill out a quick, simple form and jump-start your future plan=
+s today!</font><br><br>
+<A href=3Dhttp://61.129.68.19/user0201/index.asp?Afft=3DQM12><font face=3D=
+verdana,arial,helvetica size=3D5 color=3D00B000><B>Click Here To Begin</b>=
+</FONT></A>
+</font></p>
+</td></tr></table><br>
+<table width=3D516>
+	<tr><td><font face=3D"arial,helvetica" size=3D1>Please know that we do no=
+t want to send you information regarding our special offers if you do not =
+wish to receive it.  If you would no longer like us to contact you or feel=
+ that you have received this email in error, please <a href=3D"http://61.1=
+29.68.19/light/watch.asp">click here to unsubscribe</a>.</font></td></tr>
+</table>
+</BODY>
+</HTML>
+
+
+
+
+

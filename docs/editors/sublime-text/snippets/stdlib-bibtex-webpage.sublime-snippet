@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[@misc{id,
+	author = {},
+	keywords = {},
+	title = {{}},
+	url = {},
+	year = {}
+}
+]]></content>
+
+    <!-- Tab trigger to activate the snippet -->
+    <tabTrigger>stdlib.webpage</tabTrigger>
+
+    <!-- Scope the tab trigger will be active in -->
+    <scope>text.bibtex</scope>
+
+    <!-- Description to show in the menu -->
+    <description>BibTeX web page template</description>
+</snippet>

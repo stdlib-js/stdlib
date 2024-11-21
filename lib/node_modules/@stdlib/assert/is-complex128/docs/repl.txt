@@ -1,0 +1,28 @@
+
+{{alias}}( value )
+    Tests if a value is a 128-bit complex number.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a value is a 128-bit complex number.
+
+    Examples
+    --------
+    > var bool = {{alias}}( new {{alias:@stdlib/complex/float64/ctor}}( 3.0, 1.0 ) )
+    true
+    > bool = {{alias}}( new {{alias:@stdlib/complex/float32/ctor}}( 2.0, 2.0 ) )
+    false
+    > bool = {{alias}}( 3.14 )
+    false
+    > bool = {{alias}}( {} )
+    false
+
+    See Also
+    --------
+

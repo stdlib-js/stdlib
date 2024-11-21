@@ -1,0 +1,111 @@
+{
+  "options": {
+    "task": "build",
+    "wasm": false
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "wasm": false,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/napi/unary",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/constants/float64/max-base2-exponent",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/math/base/special/round",
+        "@stdlib/math/base/special/ldexp",
+        "@stdlib/constants/float64/min-base2-exponent"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "wasm": false,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/constants/float64/max-base2-exponent",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/math/base/special/round",
+        "@stdlib/math/base/special/ldexp",
+        "@stdlib/constants/float64/min-base2-exponent"
+      ]
+    },
+    {
+      "task": "examples",
+      "wasm": false,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/constants/float64/max-base2-exponent",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/math/base/special/round",
+        "@stdlib/math/base/special/ldexp",
+        "@stdlib/constants/float64/min-base2-exponent"
+      ]
+    },
+    {
+      "task": "build",
+      "wasm": true,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/constants/float64/max-base2-exponent",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/math/base/special/round",
+        "@stdlib/math/base/special/ldexp",
+        "@stdlib/constants/float64/min-base2-exponent"
+      ]
+    }
+  ]
+}

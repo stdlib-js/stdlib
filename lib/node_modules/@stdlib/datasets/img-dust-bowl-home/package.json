@@ -1,0 +1,70 @@
+{
+  "name": "@stdlib/datasets/img-dust-bowl-home",
+  "version": "0.0.0",
+  "description": "Image of an abandoned Dust Bowl home.",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "bin": {
+    "img-dust-bowl-home": "./bin/cli"
+  },
+  "main": "./lib",
+  "browser": "./lib/browser.js",
+  "directories": {
+    "benchmark": "./benchmark",
+    "data": "./data",
+    "doc": "./docs",
+    "example": "./examples",
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "scripts": {},
+  "homepage": "https://github.com/stdlib-js/stdlib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stdlib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
+  "keywords": [
+    "stdlib",
+    "datasets",
+    "dataset",
+    "data",
+    "image",
+    "img",
+    "home",
+    "house",
+    "architecture",
+    "dust bowl",
+    "desert",
+    "abandoned"
+  ]
+}

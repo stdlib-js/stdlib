@@ -1,0 +1,148 @@
+From fork-admin@xent.com  Tue Sep 17 11:30:02 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id F144816F03
+	for <jm@localhost>; Tue, 17 Sep 2002 11:30:00 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 17 Sep 2002 11:30:00 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8H2hZC23657 for <jm@jmason.org>;
+    Tue, 17 Sep 2002 03:43:36 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 2922C2940C9; Mon, 16 Sep 2002 19:40:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mail.lig.net (unknown [204.248.145.126]) by xent.com
+    (Postfix) with ESMTP id 23E8229409F for <fork@xent.com>; Mon,
+    16 Sep 2002 19:39:11 -0700 (PDT)
+Received: from lig.net (unknown [66.95.227.18]) by mail.lig.net (Postfix)
+    with ESMTP id 4FD2C681FA; Mon, 16 Sep 2002 22:43:09 -0400 (EDT)
+Message-Id: <3D869694.1060906@lig.net>
+From: "Stephen D. Williams" <sdw@lig.net>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.1)
+    Gecko/20020826
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: johnhall@evergo.net
+Cc: fork@spamassassin.taint.org, lea@lig.net
+Subject: Re: Slaughter in the Name of God
+References: <004601c25dc9$67a436a0$0200a8c0@JMHALL>
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 16 Sep 2002 22:42:28 -0400
+
+John Hall wrote:
+
+>>From: Stephen D. Williams [mailto:swilliams@hpti.com]
+>>    
+>>
+>>Bush's reluctance to blast blind obeyance of religion as taught by
+>>
+>your
+>  
+>
+>>local madrassa or KKK leader, apparently because he is fully involved
+>>with the general effort to expand unfettered religiosity as the
+>>    
+>>
+>solution 
+>
+>>to the world's ills, is disappointing.  He has spoke against madrassa,
+>>but what I heard sounded lame and carefully crafted to shield religion
+>>in general from scrutiny.
+>>    
+>>
+>
+>1. Which religion and how it is currently being expressed matters.
+>
+A)  Which religion is it that can claim no foul actions in its past? 
+ Certainly not Christianity, Islam, etc.
+B) "How it is currently being expressed" amounts to a tacit 
+acknowledgement that the sophistication of the society involved and 
+people's self-limiting reasonableness are important to avoid primitive 
+expression.  This leads to the point that religion and less 
+sophisticated societies are a dangerous mix.  It also tends to invoke 
+the image of extremes that might occur without diligent maintenance of 
+society.
+C) Many splinter Christianity religions have 'clean hands' but they also 
+aren't 'found in the wild'.
+
+(By "primitive expression", I don't mean to slight any society, but that 
+there is some chronic evidence of irrational mob actions and uncivilized 
+behavior (killing infants, women to break religious blue laws, etc.). 
+ The US has only really been mostly free of "primitive expression" for 
+40-50 years, although large categories, including serious religious 
+conflict, were settled quite a while ago.)
+
+D) The Northern Ireland Protestant vs. Catholic feud, recently more or 
+less concluded, is not completely unlike this kind of friction generated 
+by splitting society too much along religious lines.  One Post article 
+pointed out that the problem basically stemmed from the vertical 
+integration of areas along religious lines all the way to schools, 
+government, political party, etc.  (Of course both cases have a heritage 
+of British conquest, but who doesn't?)
+
+(I couldn't find the article I remember, but here are a couple of others:)
+http://www.washingtonpost.com/ac2/wp-dyn?pagename=article&node=&contentId=A33761-2001Jul8&notFound=true
+http://www.washingtonpost.com/ac2/wp-dyn?pagename=article&node=&contentId=A15956-2002Jul16&notFound=true
+
+'Northern Ireland is a British province of green valleys and 
+cloud-covered hills whose 1.6 million people are politically and 
+religiously divided. About 54 percent of the population is Protestant, 
+and most Protestants are unionists who want the province to remain part 
+of Britain. The Roman Catholic minority is predominantly republican, or 
+nationalist; they want to merge with the Republic of Ireland to the south.
+
+
+In 1968, Catholic leaders launched a civil rights drive modeled on the 
+Rev. Martin Luther King Jr.'s campaign in the American South. But 
+violence quickly broke out, with ancient religious animosities fueling 
+the political argument. Armed paramilitary groups sprung up on both 
+sides. Police records and historians agree that the most lethal group by 
+far was the IRA, fighting on the Catholic side with a goal of a united 
+Ireland
+
+The provincial police force estimates that about 3,600 people were 
+killed during the 30-year conflict known, with characteristic Northern 
+Ireland understatement, as "The Troubles."'
+
+>2. The US is trying to avoid making war on the Muslim religion.
+>
+That's fine, as it would be an inappropriate concentration.  It would be 
+difficult to address the issues raised here in a clean way.  I'd be 
+happy with an acknowledgement that the connection is there.
+
+>3. US Leadership remains reflexively multi-cultural.
+>
+This is ok to a point, as long as it doesn't shy away from logical, 
+objective analysis of when a society could be seriously improved in 
+certain ways.
+
+>>We all have
+>>disagreements, but at some point it becomes a crime against humanity.
+>>    
+>>
+>
+>I didn't say burning the train was a good thing.  I said I understood it
+>wasn't a spontaneous attack on people who had done no wrong.
+>
+
+True, although I don't think you were as clear originally.  :-)
+
+sdw
+
+
+

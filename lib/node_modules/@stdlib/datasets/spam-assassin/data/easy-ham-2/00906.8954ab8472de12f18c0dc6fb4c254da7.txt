@@ -1,0 +1,70 @@
+From fork-admin@xent.com  Mon Jul 29 11:28:47 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4BD704415D
+	for <jm@localhost>; Mon, 29 Jul 2002 06:25:26 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 11:25:26 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6QIrwr18278 for <jm@jmason.org>;
+    Fri, 26 Jul 2002 19:53:58 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 7FE9E29414F; Fri, 26 Jul 2002 11:52:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from axiom.braindust.com (axiom.braindust.com [64.69.71.79]) by
+    xent.com (Postfix) with ESMTP id 5E06429414D for <fork@xent.com>;
+    Fri, 26 Jul 2002 11:51:23 -0700 (PDT)
+X-Envelope-To: fork@spamassassin.taint.org
+Received: from chimp.vancouver.com (muses.westel.com [204.244.110.7])
+    (authenticated (0 bits)) by axiom.braindust.com (8.12.5/8.11.6) with ESMTP
+    id g6QIpJds009650 (using TLSv1/SSLv3 with cipher EDH-RSA-DES-CBC3-SHA (168
+    bits) verified NO); Fri, 26 Jul 2002 11:51:19 -0700
+Subject: Re: USA USA WE ARE NUMBER ....six.
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+MIME-Version: 1.0 (Apple Message framework v482)
+Cc: gbolcer@endeavors.com, fork@spamassassin.taint.org
+To: Owen Byrne <owen@permafrost.net>
+From: Ian Andrew Bell <hello@ianbell.com>
+In-Reply-To: <3D413E23.900@permafrost.net>
+Message-Id: <9B97050C-A0C8-11D6-8F70-0030657C53EA@ianbell.com>
+Content-Transfer-Encoding: 7bit
+X-Mailer: Apple Mail (2.482)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 26 Jul 2002 11:50:51 -0700
+
+On Friday, July 26, 2002, at 05:18 AM, Owen Byrne wrote:
+> employees, and that an awful lot of
+> corporations have shown that they can't keep track of billions 
+> upon billions of dollars.
+
+I think we need to get away from rhetoric that implies that the 
+billions of dollars in hard cash, revenues, and capitalization was 
+"lost" somehow.
+
+The ruling class, whether you define them as government or business 
+(what's the difference?) knows full well where that money is.  It's 
+lining their pockets, buying their hobby ranches, and financing 
+their private jets.
+
+Neither has any interest in the welfare of the working class.
+
+Of course, none of this is new bits.
+
+-Ian.
+
+http://xent.com/mailman/listinfo/fork
+
+

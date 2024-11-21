@@ -1,0 +1,46 @@
+
+{{alias}}( x, start, strict, writable )
+    Returns a shifted view of an input ndarray.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    start: Array<null|void|integer>
+        Starting indices (inclusive). If an element is either `null` or
+        `undefined`, the function returns a view containing all elements along
+        that dimension. A negative integer indicates to resolve a starting index
+        relative to the last element along a corresponding dimension, with the
+        last element having index `-1`.
+
+    strict: boolean
+        Boolean indicating whether to enforce strict bounds checking.
+
+    writable: boolean
+        Boolean indicating whether a returned ndarray should be writable. This
+        parameter only applies to ndarray constructors which support read-only
+        instances.
+
+    Returns
+    -------
+    out: ndarray
+        Output array view.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] )
+    <ndarray>
+    > x.shape
+    [ 2, 2 ]
+    > var s = [ 0, 1 ];
+    > var y = {{alias}}( x, s, false, false )
+    <ndarray>
+    > y.shape
+    [ 2, 1 ]
+    > {{alias:@stdlib/ndarray/to-array}}( y )
+    [ [ 2 ], [ 4 ] ]
+
+    See Also
+    --------
+

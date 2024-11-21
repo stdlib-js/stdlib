@@ -1,0 +1,28 @@
+
+{{alias}}( x, high )
+    Sets the more significant 32 bits of a double-precision floating-point
+    number.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    high: integer
+        Unsigned 32-bit integer to replace the higher order word of `x`.
+
+    Returns
+    -------
+    out: number
+        Double having the same lower order word as `x`.
+
+    Examples
+    --------
+    // Set the higher order bits of `+infinity` to return `1`:
+    > var high = 1072693248 >>> 0;
+    > var y = {{alias}}( {{alias:@stdlib/constants/float64/pinf}}, high )
+    1.0
+
+    See Also
+    --------
+

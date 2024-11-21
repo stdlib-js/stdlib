@@ -1,0 +1,25 @@
+From rssfeeds@jmason.org  Thu Sep 26 16:42:16 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 88B4016F75
+	for <jm@localhost>; Thu, 26 Sep 2002 16:41:23 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 16:41:23 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8QFVag25034 for
+    <jm@jmason.org>; Thu, 26 Sep 2002 16:31:36 +0100
+Message-Id: <200209261531.g8QFVag25034@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: jwz <rssfeeds@spamassassin.taint.org>
+Subject: "KICK ME"
+Date: Thu, 26 Sep 2002 15:31:36 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.livejournal.com/talkread.bml?journal=jwz&itemid=48335
+Date: Not supplied
+
+http://www.livejournal.com/talkread.bml?journal=jwz&itemid=48335
+
+

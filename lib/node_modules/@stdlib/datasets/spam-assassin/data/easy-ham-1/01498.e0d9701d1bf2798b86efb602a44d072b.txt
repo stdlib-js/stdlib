@@ -1,0 +1,76 @@
+From spamassassin-devel-admin@lists.sourceforge.net  Sun Sep 22 00:46:59 2002
+Return-Path: <spamassassin-devel-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 3847016F03
+	for <jm@localhost>; Sun, 22 Sep 2002 00:46:59 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sun, 22 Sep 2002 00:46:59 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8LNcNC09370 for <jm@jmason.org>; Sun, 22 Sep 2002 00:38:23 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17stp6-0000NI-00; Sat,
+    21 Sep 2002 16:38:04 -0700
+Received: from blount.mail.mindspring.net ([207.69.200.226]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17stoz-00081e-00 for <spamassassin-devel@lists.sourceforge.net>;
+    Sat, 21 Sep 2002 16:37:57 -0700
+Received: from user-vcaur02.dsl.mindspring.com ([216.175.108.2]
+    helo=belphegore.hughes-family.org) by blount.mail.mindspring.net with
+    esmtp (Exim 3.33 #1) id 17stoy-00038c-00 for
+    spamassassin-devel@lists.sourceforge.net; Sat, 21 Sep 2002 19:37:56 -0400
+Received: by belphegore.hughes-family.org (Postfix, from userid 48) id
+    7D8D188D3A; Sat, 21 Sep 2002 16:37:55 -0700 (PDT)
+From: bugzilla-daemon@hughes-family.org
+To: spamassassin-devel@example.sourceforge.net
+X-Bugzilla-Reason: AssignedTo
+Message-Id: <20020921233755.7D8D188D3A@belphegore.hughes-family.org>
+Subject: [SAdev] [Bug 886] Add a rule to detect Content-type message/partial
+Sender: spamassassin-devel-admin@example.sourceforge.net
+Errors-To: spamassassin-devel-admin@example.sourceforge.net
+X-Beenthere: spamassassin-devel@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-devel-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-devel@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Id: SpamAssassin Developers <spamassassin-devel.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchives/forum.php?forum=spamassassin-devel>
+X-Original-Date: Sat, 21 Sep 2002 16:37:55 -0700 (PDT)
+Date: Sat, 21 Sep 2002 16:37:55 -0700 (PDT)
+
+http://www.hughes-family.org/bugzilla/show_bug.cgi?id=886
+
+
+
+
+
+------- Additional Comments From jm@jmason.org  2002-09-21 16:37 -------
+I'd prefer to wait and see if spammers do anything about it.  my
+guess is they will not, as it'd mean modifying their spamware to
+send >1 msg per recipient.
+
+I vote WONTFIX as a result ;)
+
+
+
+------- You are receiving this mail because: -------
+You are the assignee for the bug, or are watching the assignee.
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-devel mailing list
+Spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+
+

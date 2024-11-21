@@ -1,0 +1,161 @@
+From cgarnett@bording.dk  Mon Jun 24 17:48:07 2002
+Return-Path: cgarnett@bording.dk
+Delivery-Date: Wed Jun  5 00:23:50 2002
+Received: from tehuacan1.pue.upaep.mx ([200.33.13.195]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g54NNi529386 for
+    <jm@jmason.org>; Wed, 5 Jun 2002 00:23:45 +0100
+Received: from fallback.vuurwerk.nl (dclient217-162-106-91.hispeed.ch
+    [217.162.106.91]) by tehuacan1.pue.upaep.mx (8.9.3/8.8.7) with ESMTP id
+    SAA19056; Tue, 4 Jun 2002 18:14:02 -0500
+Message-Id: <00002e6f3b64$00005255$0000230d@mail1.boi.co.in>
+To: <cgarnett@bording.dk>
+From: "New Age Technologies" <cgarnett@bording.dk>
+Subject: Use the Web to conduct your meetings
+Date: Tue, 04 Jun 2002 16:04:42 -1900
+MIME-Version: 1.0
+X-Mailer: Microsoft Outlook Express
+X-Keywords: 
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<HTML><HEAD><TITLE>New Web Technology</TITLE>
+<META http-equiv=3DContent-Type content=3D"text/html; charset=3Dwindows-12=
+52">
+<META content=3D"MSHTML 5.50.4134.600" name=3DGENERATOR></HEAD>
+<BODY vLink=3D#c0c0c0 link=3D#c0c0c0 bgColor=3D#EAEAAE leftMargin=3D0><FON=
+T 
+face=3DMicrosoft, Sans Sarif>
+<P>
+<CENTER>
+<TABLE width=3D560 border=3D0>
+  <TBODY>
+  <TR>
+    <TD align=3Dmiddle><B><FONT color=3D#42426F size=3D6>UNLIMITED WEB CON=
+FERENCING</font></b>
+      <HR><FONT color=3D#2F2F4F size=3D4>Subscribe to the Web Conference C=
+enter for only $40.00 per month!
+</FONT>
+<br>
+<FONT color=3D#42426F size=3D3>(Connects up to 15 participants at a time p=
+lus audio charges)</font></TD></TR></TBODY></TABLE><P>
+<TABLE width=3D475 border=3D0>
+  <TBODY>
+  <TR>
+    <TD align=3D"left"><FONT color=3D#2F2F4F size=3D3><B>
+      <LI>Manage your meetings virtually on line 
+      <LI>Application sharing
+      <LI>Multi-platform compatible </B>(no software needed)
+      <LI><B>Call anytime, from anywhere, to anywhere 
+      <LI>Unlimited usage for up to 15 participants</b> (larger groups ava=
+ilabale)
+      <LI><b>Lowest rate $.18 cents per minunte for audio </b>(toll charge=
+s included)
+      <LI><b>Quality, easy to use service
+      <LI>Numerous interactive features</B></FONT></LI></TD></TR></TBODY><=
+/TABLE>
+<P>
+<TABLE width=3D500 border=3D0>
+  <TBODY>
+  <TR>
+    <TD align=3D"left"><FONT color=3D#42426F size=3D4><B>FREE DEMO</B></fo=
+nt>
+<BR><BR>
+<FONT color=3D#42426F size=3D5><B>Eliminate or Reduce Travel Expense</b></=
+font>
+<BR><FONT color=3D#2F2F4F size=3D4><B>
+Try this on for savings... 
+and turn those unnecessary trips into problem solving and fact finding con=
+ferences, 
+saving time and wear and tear on your overworked business staff. 
+</B></FONT></TD></TR></TBODY></TABLE>
+<P>
+<TABLE width=3D350 border=3D0>
+  <TBODY>
+  <TR>
+    <TD align=3Dmiddle><FONT color=3D#42426F size=3D4>To find out more abo=
+ut this revolutionary concept,
+fill out the form below.</FONT></TD></TR></TBODY></TABLE>
+<P><FONT color=3D#2F2F4F size=3D2><b>Required Input Field<FONT color=3D#5C=
+4033 
+size=3D2>*</FONT></b> 
+<P>
+<TABLE cellSpacing=3D0 borderColorDark=3D#333300 cellPadding=3D3 width=3D6=
+00 
+borderColorLight=3D#ffffcc>
+  <TBODY>
+  <TR>
+    <TD align=3Dmiddle>
+      <FORM action=3Dmailto:inbocks_wc4@yahoo.com?subject=3DWebC_Inquiry 
+      method=3Dpost encType=3Dtext/plain>
+      <TABLE width=3D"100%">
+        <TBODY>
+        <TR>
+          <TD align=3Dright width=3D"50%"><FONT 
+            face=3D"Arial, Helvetica, sans-serif" color=3D#2F2F4F
+          size=3D2><b>Name</b></FONT><FONT 
+            face=3D"Arial, Helvetica, sans-serif" color=3D#5C4033 
+            size=3D2>*</FONT></TD>
+          <TD><INPUT name=3DNAME></TD></TR>
+        <TR>
+          <TD align=3Dright width=3D"50%"><FONT 
+            face=3D"Arial, Helvetica, sans-serif" color=3D#2F2F4F size=3D2=
+><b>Web 
+            Address</b></FONT></TD>
+          <TD><INPUT value=3Dhttp:// name=3DURL></TD></TR>
+        <TR>
+          <TD align=3Dright width=3D"50%"><FONT 
+            face=3D"Arial, Helvetica, sans-serif" color=3D#2F2F4F size=3D2=
+><b>Company 
+            Name</b></FONT><FONT 
+            face=3D"Arial, Helvetica, sans-serif" color=3D#5C4033
+            size=3D2>*</FONT></TD>
+          <TD><INPUT name=3DCOMPANY_NAME></TD></TR>
+        <TR>
+          <TD align=3Dright width=3D"50%"><FONT 
+            face=3D"Arial, Helvetica, sans-serif" color=3D#2F2F4F size=3D2=
+><b>
+            State</b></FONT><FONT 
+            face=3D"Arial, Helvetica, sans-serif" color=3D#5C4033
+            size=3D2>*</FONT></TD>
+          <TD><INPUT size=3D2 name=3DSTATE></TD></TR>
+        <TR>
+          <TD align=3Dright width=3D"50%"><FONT 
+            face=3D"Arial, Helvetica, sans-serif" color=3D#2F2F4F size=3D2=
+><b>Business 
+            Phone</b></FONT><FONT 
+            face=3D"Arial, Helvetica, sans-serif" color=3D#5C4033 
+            size=3D2>*</FONT></TD>
+          <TD><INPUT name=3DBUS_PHONE></TD></TR>
+        <TR>
+          <TD align=3Dright width=3D"50%"><FONT 
+            face=3D"Arial, Helvetica, sans-serif" color=3D#2F2F4F size=3D2=
+><b>Home 
+            Phone</b></FONT></TD>
+          <TD><INPUT name=3DHOME_PHONE></TD></TR>
+        <TR>
+          <TD align=3Dright width=3D"50%"><FONT 
+            face=3D"Arial, Helvetica, sans-serif" color=3D#2F2F4F size=3D2=
+><b>Email 
+            Address</b></FONT><FONT 
+            face=3D"Arial, Helvetica, sans-serif" color=3D#5C4033
+            size=3D2>*</FONT></TD>
+          <TD><INPUT name=3DEMAIL></TD></TR>
+        </TBODY></TABLE>
+      <P><INPUT type=3Dsubmit value=3D"Submit Information" name=3Dsubmit> 
+    </FORM></P></TD></TR></TBODY></TABLE>
+<BR><BR>
+<TABLE width=3D350>
+  <TBODY>
+  <TR>
+    <TD align=3Dmiddle><FONT color=3D#000000 size=3D1><b>All information g=
+iven herein is strictly confidential and will not be re-distributed
+      for any reason other than for the specific use intended.</font></b><=
+br>
+      <FONT face=3D"Arial, Helvetica, sans-serif" color=3D#000000
+      size=3D1>To be removed from our distribution lists, please  
+      <A href=3D"mailto:d_lete152@eudoramail.com?subject=3DRemove_WebC">Cl=
+ick 
+      here.<FONT color=3D#666600></A></FONT>.</FONT></TD></TR></TBODY></TA=
+BLE></P></CENTER></BODY></HTML>
+
+

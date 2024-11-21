@@ -1,0 +1,67 @@
+From rpm-list-admin@freshrpms.net  Mon Sep  9 18:01:33 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 6A27116EFC
+	for <jm@localhost>; Mon,  9 Sep 2002 18:01:33 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 18:01:33 +0100 (IST)
+Received: from auth02.nl.egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g14D2L808736 for
+    <jm-rpm@jmason.org>; Mon, 4 Feb 2002 13:02:22 GMT
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by
+    auth02.nl.egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g14D11317658;
+    Mon, 4 Feb 2002 14:01:01 +0100
+Received: from gaupe.sunnmore.net (c188s126h1.upc.chello.no
+    [62.179.177.188]) by auth02.nl.egwn.net (8.11.6/8.11.6/EGWN) with SMTP id
+    g14D0M317622 for <rpm-list@freshrpms.net>; Mon, 4 Feb 2002 14:00:22 +0100
+Received: (qmail 28308 invoked from network); 4 Feb 2002 13:00:26 -0000
+Received: from ekorn.sunnmore.no (HELO sunnmore.net) (10.0.0.1) by
+    gaupe.sunnmore.net with SMTP; 4 Feb 2002 13:00:26 -0000
+Message-Id: <3C5E85EA.2020402@sunnmore.net>
+From: Roy-Magne Mo <rmo@sunnmore.net>
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:0.9.8+) Gecko/20020203
+X-Accept-Language: nn, no, en-us
+MIME-Version: 1.0
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: http://apt.nixia.no/
+References: <20020201150022.B11472@cs.helsinki.fi>
+    <20020201153541.1321cd9b.matthias@egwn.net>
+    <20020201165435.C11472@cs.helsinki.fi>
+    <20020201161552.3497fbfd.matthias@egwn.net>
+    <20020201174132.A8690@cs.helsinki.fi>
+    <20020204143329.B2626@pihlaja.kotilo>
+    <20020204145140.C2626@pihlaja.kotilo>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Mon, 04 Feb 2002 14:00:26 +0100
+Date: Mon, 04 Feb 2002 14:00:26 +0100
+
+Peter Peltonen wrote:
+> Sorry about that :) 
+> 
+> Didn't think before sending... So I didn't realize that Reply-To was to 
+> the list and not to the sender (as it usually is). 
+
+How about removing the reply-to to the list?
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

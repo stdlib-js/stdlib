@@ -1,0 +1,92 @@
+From ilug-admin@linux.ie  Fri Jul 19 21:03:25 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4DBF1440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 16:03:25 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 21:03:25 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JK2TJ30883 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 21:02:29 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id VAA29178; Fri, 19 Jul 2002 21:01:58 +0100
+Received: from linux.local ([195.218.108.203]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id VAA29146 for <ilug@linux.ie>; Fri,
+    19 Jul 2002 21:01:37 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [195.218.108.203] claimed
+    to be linux.local
+Received: from linux.local (localhost [127.0.0.1]) by linux.local
+    (8.11.6/8.11.6/SuSE Linux 0.5) with ESMTP id g6JJgJX04327 for
+    <ilug@linux.ie>; Fri, 19 Jul 2002 20:42:19 +0100
+Message-Id: <200207191942.g6JJgJX04327@linux.local>
+To: Irish Linux Users Group <ilug@linux.ie>
+Reply-To: Irish Linux Users Group <ilug@linux.ie>
+Subject: Re: [ILUG] CORRECTION - How to copy some files
+In-Reply-To: Message from Brian Foster <blf@utvinternet.ie> of
+    "Fri, 19 Jul 2002 16:15:49 BST."
+    <200207191515.g6JFFnX02981@linux.local>
+X-Mailer: [nmh-1.0.4] MH.6.8, SuSE Linux 7.3
+X-Url: http://www.blf.utvinternet.ie
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Id: <4324.1027107739.1@linux.local>
+Date: Fri, 19 Jul 2002 20:42:19 +0100
+From: Brian Foster <blf@utvinternet.ie>
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    VAA29146
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+  | Date: Fri, 19 Jul 2002 16:15:49 +0100
+  | From: Brian Foster <blf@utvinternet.ie>
+  |[ ... ]
+  |  the issue here is tar(1) (and cpio(1)) archives always
+  |  contain the data for each name of a hard link.  [ ... ]
+
+ ARRGGGHHHH!!!!!
+ profuse apologies, the wrong version of my reply was posted
+ (blame it on being late for the pub).  ;-(
+
+ the above is almost pure B*S* --- I got my `tar's and `cpio's
+ confused.  what I said _is_ correct, but for cpio(1) archives;
+ tar(1) archives do _not_ replicate the data for hard links.
+
+ I spotted this confusion on my part before I posted my reply,
+ and re-wrote it to be more correct, yet somehow the wrong
+ version got sent anyways.  ARRGGGHHHH!!!!!  ;-(  ;-(  ;-(
+
+ anyways, GNU `cpio -p' does not do spurious reads or writes.
+ GNU `tar cf - ... | tar xf - ...' also does not, albeit each
+ `tar' both reads and writes the data.  hence, there is twice
+ (not thrice!) the I/O of `cpio -p', maybe an issue for c.60Gb.
+
+ using strace(1), I've verified my claim GNU `cpio -p' does
+ not do spurious reads or writes, i.e. it link(2)s.  but having
+ just come back from the pub, perhaps this should also be taken
+ with extra skepticism ......   ;-\ 
+
+sorry.  cheers!
+	-blf-
+--
+ Innovative, very experienced, Unix and      | Brian Foster    Dublin, Ireland
+ Chorus (embedded RTOS) kernel internals     | e-mail: blf@utvinternet.ie
+ expert looking for a new position ...       | mobile: (+353 or 0)86 854 9268
+  For a résumé, contact me, or see my website  http://www.blf.utvinternet.ie
+
+    Stop E$$o (ExxonMobile):  «Whatever you do, don't buy Esso --- they
+     don't give a damn about global warming.»    http://www.stopesso.com
+     Supported by Greenpeace, Friends of the Earth, and numerous others...
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

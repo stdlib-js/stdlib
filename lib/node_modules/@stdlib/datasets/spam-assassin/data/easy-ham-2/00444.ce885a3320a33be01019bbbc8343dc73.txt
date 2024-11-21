@@ -1,0 +1,62 @@
+From ilug-admin@linux.ie  Mon Aug 19 11:02:59 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C8E4B4419A
+	for <jm@localhost>; Mon, 19 Aug 2002 05:54:33 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:54:33 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7J8W0614402 for
+    <jm-ilug@jmason.org>; Mon, 19 Aug 2002 09:32:00 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA26624; Mon, 19 Aug 2002 09:30:58 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail01.svc.cra.dublin.eircom.net
+    (mail01.svc.cra.dublin.eircom.net [159.134.118.17]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id JAA26586 for <ILUG@linux.ie>; Mon,
+    19 Aug 2002 09:30:48 +0100
+Message-Id: <200208190830.JAA26586@lugh.tuatha.org>
+Received: (qmail 99311 messnum 123666 invoked from
+    network[159.134.237.75/jimbo.eircom.net]); 19 Aug 2002 08:30:17 -0000
+Received: from jimbo.eircom.net (HELO webmail.eircom.net) (159.134.237.75)
+    by mail01.svc.cra.dublin.eircom.net (qp 99311) with SMTP; 19 Aug 2002
+    08:30:17 -0000
+From: "Mark Conway" <mconway35@eircom.net>
+Reply-To: <mconway35@eircom.net>
+To: ILUG@linux.ie
+Date: Mon, 19 Aug 2002 09:30:17 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 8bit
+X-Originating-Ip: 194.125.2.129
+X-Mailer: Eircom Net CRC Webmail (http://www.eircom.net/)
+Organization: Eircom Net (http://www.eircom.net/)
+Subject: [ILUG] RE: Newbie Question
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Regarding:
+Another problem I have is that I cannot install my ISDN, USB modem ( LASAT Speed Basic ), however im pretty sure its not supported by Linux, but again it is featured in the Hardware Browser, without installed drivers.
+
+Thanks for your replies.... However i still cant get it to detect the External USB modem. I also have an internal 56k fax modem, but i cannot get that detected either ( maybe its because it was designed for Windows and is not supported ). Im not going to buy a new modem ( I think 2 is more than enough for 1 PC ).
+
+It could well be my inexperience with Linux that is making this more difficult, but whatever it is iv just about had enough!! Any last gasp ideas would be welcome
+
+Many Thanks
+
+Mark
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

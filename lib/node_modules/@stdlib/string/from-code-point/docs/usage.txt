@@ -1,0 +1,9 @@
+
+Usage: from-code-point [options] [<code_point> <code_point> ...]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --split sep           Delimiter for stdin data. Default: '/\\r?\\n/'.
+

@@ -1,0 +1,33 @@
+From rssfeeds@jmason.org  Tue Sep 24 10:48:07 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 40B7816F03
+	for <jm@localhost>; Tue, 24 Sep 2002 10:48:07 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 24 Sep 2002 10:48:07 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8O80BC26575 for
+    <jm@jmason.org>; Tue, 24 Sep 2002 09:00:12 +0100
+Message-Id: <200209240800.g8O80BC26575@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: scripting <rssfeeds@spamassassin.taint.org>
+Subject: Google PR sends a message that they have a new News service.
+    Maybe I'm slow
+Date: Tue, 24 Sep 2002 08:00:11 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://scriptingnews.userland.com/backissues/2002/09/23#When:8:19:16AM
+Date: Mon, 23 Sep 2002 15:19:16 GMT
+
+Google PR sends a message that they have a new News service[1]. Maybe I'm slow 
+this morning, or maybe I'm spoiled, but what's the big deal. I thought they 
+already had this. My personal aggregator[2] is better, it shows me what I'm 
+interested in, it's not one size fits all. Help me figure this out. I'm sure 
+there's something innovative here, I just don't see it.
+
+[1] http://news.google.com/
+[2] http://radio.userland.com/newsAggregator
+
+

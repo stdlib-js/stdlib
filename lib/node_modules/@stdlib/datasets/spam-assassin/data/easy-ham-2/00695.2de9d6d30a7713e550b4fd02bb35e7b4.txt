@@ -1,0 +1,403 @@
+From fork-admin@xent.com  Tue Jul 23 07:12:36 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id CBB50440C8
+	for <jm@localhost>; Tue, 23 Jul 2002 02:12:34 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 23 Jul 2002 07:12:34 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6N6Bm430084 for <jm@jmason.org>;
+    Tue, 23 Jul 2002 07:11:50 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id DFB652940AF; Mon, 22 Jul 2002 23:01:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: by xent.com (Postfix, from userid 1002) id 282862940AD;
+    Mon, 22 Jul 2002 23:00:10 -0700 (PDT)
+To: FoRK@xent.com
+Subject: [NYT] Real Source
+Message-Id: <20020723060010.282862940AD@xent.com>
+From: adam@xent.com (Adam Rifkin)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 22 Jul 2002 23:00:10 -0700 (PDT)
+
+"This is a very tenuous time for Microsoft," Gartenberg said. "This is
+not a time in Microsoft's history when it can be seen as trying to do to
+Real what it did to Netscape."   Rrrrrrriiiiiight....
+
+
+
+http://www.nytimes.com/2002/07/22/technology/22REAL.html
+
+July 22, 2002
+RealNetworks Poses Challenge to Microsoft
+By JOHN MARKOFF
+
+SAN FRANCISCO, July 21 -- In a significant challenge to Microsoft,
+RealNetworks plans to announce a new version of its software on Monday
+that can distribute audio and video in a range of formats, including
+Microsoft's own proprietary Windows Media.
+
+The new software is intended for large media companies and other
+corporations that need to send audio and video data to customers and
+employees in a variety of different formats. But RealNetworks
+acknowledged that it was possible that the company might incur
+Microsoft's legal wrath.
+
+Nevertheless, Rob Glaser, a former Microsoft executive who founded
+RealNetworks as Progressive Networks in 1994, said he believed the
+strategy was good for both Microsoft and consumers.
+
+"A rational way for them to respond would be to say, `This is great,' "
+he said. "That would be Microsoft of the future."
+
+Mr. Glaser said his company, based in Seattle, had developed a version
+of the Microsoft Media Server software that comes with the Windows
+operating system.
+
+He said RealNetworks' engineers had studied the data that was sent
+between the Microsoft media server software and the Windows Media Player
+program and recreated the technology needed to play files in the
+Microsoft format. This method created a so-called clean-room version,
+meaning the developers built the transmission software without any
+knowledge about the underlying program.
+
+Microsoft has adopted a similar strategy at several junctures,
+Mr. Glaser said, reverse-engineering technologies like NetWare,
+PostScript and JavaScript at different times.
+
+Microsoft executives said the company currently licensed the Windows
+Media Player technology to a variety of companies including Yahoo,
+RealNetworks and the America Online unit of AOL Time Warner. But a
+Microsoft executive said that a clean-room copy of the Windows server
+technology could lead to quality and performance issues.
+
+"It's kind of hard to speculate about the technology until we see it,"
+said Dave Fester, the general manager of the Windows Media division. If
+a company has not licensed the server software, he added, "we would need
+to look at it and see what they're doing."
+
+RealNetworks appears to be endeavoring to avoid being "Netscaped," a
+reference to the fate that befell the Netscape Communications
+Corporation when Microsoft decided to make an Internet browser, which
+was pioneered commercially by Netscape, a standard part of the Windows
+operating system. Netscape was later acquired by AOL Time
+Warner. Microsoft's decision to build an Internet browser into Windows
+and give it away at no additional cost led directly to a bitter
+antitrust lawsuit brought by the Justice Department in 1997.
+
+RealNetworks, which was a pioneer in the market for streaming media to
+desktop personal computers, has been under growing pressure from
+Microsoft, which is giving away both the server and Windows Media Player
+program as part of its operating strategy. RealNetworks also faces
+challenges from Apple Computer, which offers the QuickTime media player
+as a part of its Macintosh OS X operating system and sells a more
+full-featured player.
+
+Moreover, in recent months Macromedia Inc., which makes the Flash
+animation software used on many Web sites, has added video capabilities
+to its technology, making it a potential rival.
+
+RealNetworks is gambling that with a proliferation of different
+standards and formats for video and audio, the media corporations that
+make content available over the Internet will flock to a single system
+that supports multiple types of data. The company is trying to shift the
+focus of the competition from the PC desktop to the server, according to
+analysts.
+
+Several analysts said the RealNetworks shift in strategy could put
+Microsoft on the defensive.
+
+"Real has got the experience and sophistication to pull this off," said
+Richard Doherty, the president of Envisioneering, a market research and
+consulting firm based in Seaford, N.Y. "It will open up a new horse race."
+
+Until now the companies have been engaged in a technology war to rapidly
+increase the power and quality of each of their media players. At the
+same time, they have competed over which of the programs are placed on
+the desktops of personal computer users. RealNetworks claims to have
+700,000 subscribers for pay services, but it is perceived as being
+increasingly vulnerable, according to some analysts, because Microsoft
+has included its Media Player as part of the Windows operating system,
+which dominates the PC market.
+
+There are dozens of data formats for playing audio and video on the
+Internet, but the dominant ones are RealAudio and RealVideo from
+RealNetworks, QuickTime from Apple, Windows Media from Microsoft and the
+industry digital movie standards MPEG-2 and MPEG-4.
+
+Microsoft and RealNetworks are currently locked in a close race for
+desktop media player leadership. In the first quarter of this year,
+according to survey data collected by Jupiter Research, a market
+research firm based in New York, RealNetworks' RealOne Player had a 29.1
+percent share of media players, while Microsoft's Windows Media Player
+had a 28.2 percent share. Apple's Quicktime player was third, with a
+12.2 percent.
+
+The new server software from RealNetworks is part of a version of the
+company's media server that is to be introduced on Monday and which will
+be called the Helix Universal Server. RealNetworks said it would offer
+performance data based on a test it financed at an independent testing
+service, KeyLabs, that indicate that the Helix software can, under some
+conditions, deliver up to four times the speed of the Windows Media
+Server in Microsoft's operating system. (Software servers are programs
+that run on powerful computers and can send streams of digital
+information to many computer users simultaneously.)
+
+At a news conference scheduled to be held in San Francisco, RealNetworks
+is also expected to announce that it plans to make the Helix software
+available as part of a strategy known as community source, which will
+make it possible for RealNetworks partners and competitors to take
+advantage of the original programmers' instructions.
+
+RealNetworks is to announce a range of partners, including Hitachi,
+Hewlett-Packard, I.B.M., Deutsche Telekom, NEC, Nokia, Cisco Systems,
+Oracle, Sun Microsystems, Palm, Texas Instruments and others. These
+partners could then incorporate the software into their own hardware and
+software products.
+
+Under the licensing strategy, companies will be able to freely gain
+access to the underlying code that the Helix program is based on, but
+they will still pay a licensing fee when they sell commercial products
+based on the technology.
+
+The community-source approach to software, which was pioneered by Sun to
+distribute its Java programming language, is a variation upon the
+original free software or open-source approach which has confounded the
+software industry in recent years.
+
+While open-source software can be freely shared, with some restrictions,
+the community-source approach is more restrictive and yet still tries to
+persuade others to collaborate and add innovative ideas.
+
+Other large technology companies including Sun, I.B.M. and Apple, have
+all now adopted variations on such open-source strategy, with varying
+results. In Sun's case, the company has been criticized because, while
+Java has become an industry standard, the company has not been the
+principal financial beneficiary in many cases.
+
+RealNetworks is trying to strike a balance between opening up its
+technology to persuade others to participate and innovate and not losing
+control of the technology entirely, Mr. Glaser said. "We think we've
+struck the balance well," he said.
+
+Analysts said the strategy shift by RealNetworks was likely to shake up
+the industry. "The moment you've open-sourced something you've cornered
+your competitor," said Matthew Berk, an analyst a Jupiter Research. "To
+date this stuff has been very proprietary. Opening it up makes it
+accessible to creative and gifted programmers who will come up with wild
+stuff that the companies have never considered."
+
+Mr. Glaser said he expected other companies to produce technology that
+would rival RealNetworks' commercially as a result of the
+community-source strategy.
+
+One possibility is that companies such as Sun or I.B.M. could decide to
+add the Helix technology of RealNetworks as a standard component of
+their operating systems. Although RealNetworks might not get a
+significant financial benefit from such an arrangement it could
+contribute to making its Helix software a de facto industry standard.
+
+Mr. Glaser said he had struck upon the idea of making his media server
+software open source while visiting with an executive from Nokia, the
+world's largest cellphone maker.
+
+"Taking all of this stuff beyond the PC has been a huge motivation for
+us," he said. When he realized that Nokia was interested in deploying
+the software technology on as many as 30 to 40 different types of
+phones, he realized that RealNetworks did not have enough programming
+talent to support the effort.
+
+"I told him, `I don't think we have enough engineers even if you guys
+were willing to pay us,' " he said.
+
+That touched off a search for an alternative way of having the two
+companies cooperate.
+
+
+
+http://quicken.com.com/2100-1023-945406.html
+
+Real takes the open-source route 
+By Jim Hu 
+Staff Writer, CNET News.com
+July 22, 2002, 1:55 PM PT
+
+RealNetworks on Monday unveiled a new open-source version of its
+streaming media technology that supports multiple file formats for audio
+and video, including those that use Microsoft's Windows Media technology. 
+
+The new campaign, dubbed "Helix," and first reported by The New York
+Times, marks one of the most ambitious moves in the company's
+history. RealNetworks is simultaneously releasing technology without
+permission that plugs in to Microsoft's competing software and is
+raising the hood on much of its own software technology to "open source"
+developers or anyone else who wants to look. 
+
+The twin moves raise the risk of lawsuits and renewed competition --
+potentially even from Redmond, Wash.-based Microsoft itself, once it
+gets a look under the hood at RealNetworks' technology. But it marks a
+dramatic, potential way for a company watching its market share diminish
+to regain momentum and support across an industry where many other
+players remain skeptical of Microsoft's power.
+
+"It's a very bold move on the part of Real," said Michael Gartenberg, a
+research director for analyst firm Jupiter Research. "This was a shot
+fired by Real and fired directly at Redmond." 
+
+The move is the latest in a series of strategic twists and turns that
+has made RealNetworks one of the only companies to survive direct
+Microsoft competition for years. While the company has expanded into
+paid subscription content business, its software and streaming media
+infrastructures have been under increasing pressure from Microsoft,
+which has deemed multimedia to be one of the major drives under the
+latest versions of its Windows operating system. 
+
+Real's Helix announcement mainly involves the technology that allows
+media files to move from place to place over the Internet. RealNetworks
+and Microsoft both produce servers that allow video and audio to be
+streamed from a content company such as CNN or NBC to a personal
+computer. Real has charged for this software, while Microsoft has given
+it away for free. 
+
+In April, RealMedia reached 17 million at-home viewers, compared with
+Windows Media at 15.1 million and Apple Computer's QuickTime at 7.3
+million, according to Nielsen/NetRatings. At work, Windows Media drew
+about 12.2 million unique viewers, compared with RealMedia's 11.6
+million and QuickTime's 5 million. 
+
+Real's own new product, called the Universal Server, will allow one
+server to stream Real's technology, Microsoft files, Apple Computer's
+QuickTime, and others. Most other competing products do not support
+competitors' technology. 
+
+"When you have all these different platforms, and all these different
+protocols, it gets unmanageable," RealNetworks' Rob Glaser said at a
+high-glitz press conference in San Francisco announcing the product. "A
+lot of what (this technology) is about is breaking those bottlenecks and
+making convergence really converge." 
+
+To make the new product compatible with Microsoft files, however, the
+company pursued a risky strategy known as "reverse engineering," in
+which developers examine a competitor's product to see how it works and
+try to create something that works just like it. 
+
+Glaser said that engineers worked entirely in a "clean room"
+environment, meaning that they had no access to actual Microsoft
+code. Had they simply copied code, they could be liable for patent
+infringement. The resulting product simply mimics the way that
+Microsoft's files are sent across networks and allows a Windows Media
+player to receive the file. 
+
+Other companies have been sued for simply copying a competitor's code
+and putting it in their own products. But RealNetworks says it's not
+worried about Microsoft lawsuits, because it took precautions to do all
+development in the "clean room" environment. Microsoft itself has
+engaged in this kind of legal reverse engineering. 
+
+Analysts say Microsoft, which still faces antitrust lawsuits, is in no
+position to sue in any case. 
+
+"This is a very tenuous time for Microsoft," Gartenberg said. "This is
+not a time in Microsoft's history when it can be seen as trying to do to
+Real what it did to Netscape." 
+
+The influential giant?
+
+Certainly, Monday's announcement acknowledges Microsoft's influence in
+media technology, something Glaser and Real have often been loathe to do. 
+
+Microsoft was quick to spin Monday's announcement as further validation
+of its strength in the marketplace. 
+
+"It's an admission of RealNetworks that it's important for them to
+support Windows Media and that we're now the leading player among home
+and work users," said Michael Aldridge, lead product manager for
+Microsoft's Windows Digital Media division. 
+
+Aldridge added that RealNetworks currently has a licensing agreement for
+its media player to support Windows audio and video formats. However,
+RealNetworks and Microsoft do not have an agreement to allow the server
+to deliver Windows Media formats to end users, which is what
+RealNetworks trying to do. 
+
+Aldridge declined to comment on RealNetworks' replication of Microsoft's
+technology. 
+
+In addition to its own new product, Real has promised to give away
+source code to much of the underlying technology for streaming
+media. That stops short of the actual file format, or "codec" itself,
+but will provide the open-source community and other companies with
+powerful new tools to build their own streaming media players or
+software. 
+
+Glaser said he wouldn't initially make the software code that mimics
+Microsoft's streaming available but that he was considering the idea. A
+first chunk of code underlying the RealNetworks multimedia player
+software will be released in 90 days. Other code, including the basic
+functions of its streaming media server and encoder, will be released by
+the end of the year, the company said. 
+
+The company's plan to reveal its source code--the basic instructions
+underlying the software--echoes similar moves made by Netscape
+Communications to defend against Microsoft. In March 1998, Netscape took
+the bold step of opening its source code to allow software developers to
+help create the next generation of its popular browser. 
+
+James Barksdale, then CEO of Netscape, said the move would allow the
+company to "tap into a virtually unlimited developer talent pool."
+Instead, the effort, which has evolved into the Mozilla.org project, hit
+considerable roadblocks, and Microsoft overtook Netscape in market
+share. 
+
+
+
+----
+aDaM@XeNT.CoM -- .sig double play!
+
+
+We have done a great job of having teams work around the clock to
+deliver security fixes for any problems that arise. Our responsiveness
+has been unmatched - but as an industry leader we can and must do
+better... Going forward, we must develop technologies and policies that
+help businesses better manage ever larger networks of PCs, servers and
+other intelligent devices, knowing that their critical business systems
+are safe from harm. Systems will have to become self-managing and
+inherently resilient. We need to prepare now for the kind of software
+that will make this happen, and we must be the kind of company that
+people can rely on to deliver it. 
+  -- Bill Gates, http://zdnet.com.com/2100-1104-817343.html
+
+
+The problem with SOAP is that it tries to escape from the Web interface.
+It deliberately attempts to suck, mostly because it is deliberately
+trying to supplant CGI-like applications rather than Web-like
+applications.  It is simply a waste of time for folks to say that "HTTP
+allows this because I've seen it used by this common CGI script."  If we
+thought that sucky CGI scripts were the basis for good Web
+architectures, then we wouldn't have needed a Gateway Interface to
+implement them.  In order for SOAP-ng to succeed as a Web protocol, it
+needs to start behaving like it is part of the Web.  That means, among
+other things, that it should stop trying to encapsulate all sorts of
+actions under an object-specific interface.  It needs to limit its
+object-specific behavior to those situations in which object-specific
+behavior is actually desirable.  If it does not do so, then it is not
+using URI as the basis for resource identification, and therefore it is
+no more part of the Web than SMTP.
+  -- Roy Fielding, http://lists.w3.org/Archives/Public/www-tag/2002Apr/0181.html
+
+http://xent.com/mailman/listinfo/fork
+
+

@@ -1,0 +1,88 @@
+From a_wigtonebook@yahoo.com  Mon Jul 29 20:57:59 2002
+Return-Path: <a_wigtonebook@yahoo.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 93AC9440EE
+	for <jm@localhost>; Mon, 29 Jul 2002 15:57:59 -0400 (EDT)
+Received: from mandark.labs.netnoteinc.com [213.105.180.140]
+	by localhost with POP3 (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 20:57:59 +0100 (IST)
+Received: from yuloo.com ([211.99.196.215])
+	by mandark.labs.netnoteinc.com (8.11.6/8.11.6) with ESMTP id g6TJtLp08647
+	for <jm@netnoteinc.com>; Mon, 29 Jul 2002 20:55:22 +0100
+Received: from . [63.231.254.186] by yuloo.com with ESMTP
+  (SMTPD32-7.05) id ADA514FE0128; Tue, 30 Jul 2002 03:55:17 +0800
+Message-ID: <00000a8e2976$0000371d$00001d47@.>
+To: <yyyy@netway.com>, <yyyy@netmore.net>, <yyyy@neosoft.com>,
+	<jm@netstream.net>, <jm@netgate.net>, <jm@netbox.com>,
+	<jm@newmex.com>, <jm@netpar.com.br>
+Cc: <yyyy@nh.conex.net>, <yyyy@net-quest.com>, <yyyy@netdoor.com>,
+	<jm@netxn.com>, <jm@netquarters.net>, <jm@netti.fi>,
+	<jm@netnoteinc.com>, <jm@netmagic.net>, <jm@neo.lrun.com>
+From: a_wigtonebook@yahoo.com
+Subject: Your order                1963
+Date: Mon, 29 Jul 2002 12:52:55 -1900
+MIME-Version: 1.0
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+
+
+<body>
+
+<div align=3D"left">
+  <table border=3D"1" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-=
+collapse: collapse" bordercolor=3D"#111111" width=3D"511" height=3D"308" i=
+d=3D"AutoNumber1">
+    <tr>
+      <td width=3D"511" height=3D"308" valign=3D"top" bgcolor=3D"#EBEBEB">
+      <p align=3D"center"><b><font color=3D"#000080" size=3D"5">Shopping f=
+or a loan 
+      has never been easier</font></b></p>
+      <p align=3D"center">&nbsp;</p>
+      <p align=3D"center"><font color=3D"#000080">Get a free quote on a ne=
+w First 
+      Mortgage, Second Mortgage, or a Credit Line with no cost or obligati=
+on.</font></p>
+      <p align=3D"center"><font color=3D"#000080">We can help you get a gr=
+eat loan 
+      regardless of your credit situation</font></p>
+      <p align=3D"center"><font color=3D"#000080">It's a great time to buy=
+ or 
+      refinance your home.</font></p>
+      <p align=3D"center"><b><font color=3D"#000080">Whether you want to:<=
+/font></b></p>
+      <p align=3D"center"><font color=3D"#000080">Buy a new home - consoli=
+date your 
+      debts</font></p>
+      <p align=3D"center"><font color=3D"#000080">Refinance to lower your =
+payments</font></p>
+      <p align=3D"center"><font color=3D"#000080">Take some equity out of =
+your home 
+      for any reason</font></p>
+      <p align=3D"center"><b><font color=3D"#000080">We can help!</font></=
+b></p>
+      <p align=3D"center"><font color=3D"#000080" size=3D"4">
+      <a href=3D"http://211.141.69.11:8111/mortgage/form.htm">Click here a=
+nd get a free quote!</a></font></p>
+      <p align=3D"center"><font color=3D"#000080"><b>You have nothing to l=
+ose!</b></font></p>
+      <p align=3D"center">&nbsp;</p>
+      <p align=3D"center"><font color=3D"#000080">
+      <a href=3D"http://211.141.69.11:8111/removes/deptoff.htm">To not rec=
+eive this 
+      email again click here</a></font></td>
+    </tr>
+  </table>
+</div>
+
+</body>
+
+</html>
+
+
+
+

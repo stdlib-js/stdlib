@@ -1,0 +1,82 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6NCMjhY073583
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Tue, 23 Jul 2002 07:22:46 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6NCMjxU073580
+	for cypherpunks-forward@ds.pro-ns.net; Tue, 23 Jul 2002 07:22:45 -0500 (CDT)
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6NCMhhY073574
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks@ds.pro-ns.net>; Tue, 23 Jul 2002 07:22:44 -0500 (CDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: from waste.minder.net (daemon@waste [66.92.53.73])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6NCMgJ13389
+	for <cypherpunks@ds.pro-ns.net>; Tue, 23 Jul 2002 08:22:42 -0400 (EDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: (from cpunks@localhost)
+	by waste.minder.net (8.11.6/8.11.6) id g6NCMf130415
+	for cypherpunks@ds.pro-ns.net; Tue, 23 Jul 2002 08:22:41 -0400
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by waste.minder.net (8.11.6/8.11.6) with ESMTP id g6NCMeR30400
+	for <cpunks@minder.net>; Tue, 23 Jul 2002 08:22:40 -0400
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6NCMcJ13378
+	for <cpunks@minder.net>; Tue, 23 Jul 2002 08:22:38 -0400 (EDT)
+	(envelope-from cpunks@einstein.ssz.com)
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id HAA09417
+	for cpunks@minder.net; Tue, 23 Jul 2002 07:31:00 -0500
+Received: (from mdom@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id HAA09405
+	for cypherpunks-outgoing; Tue, 23 Jul 2002 07:30:43 -0500
+Received: from 218.5.132.93 ([218.5.132.93])
+	by einstein.ssz.com (8.8.8/8.8.8) with SMTP id HAA09395
+	for <cypherpunks@einstein.ssz.com>; Tue, 23 Jul 2002 07:30:26 -0500
+Message-Id: <200207231230.HAA09395@einstein.ssz.com>
+From: Kate <kate.23@hotsexshows.com>
+To: cypherpunks@einstein.ssz.com
+Old-Subject: CDR: live SEX SHOWS
+Mime-Version: 1.0
+Content-Type: text/html; charset="iso-8859-1"
+Date: Tue, 23 Jul 2002 08:21:33 -0400
+X-Mailer: Microsoft Outlook Express 5.50.4133.2400
+Sender: owner-cypherpunks@einstein.ssz.com
+Precedence: bulk
+Reply-To: cypherpunks@einstein.ssz.com
+X-Mailing-List: cypherpunks@ssz.com
+X-Unsubscription-Info: http://einstein.ssz.com/cdr
+X-List-Admin: list@ssz.com
+X-Loop: ssz.com
+X-Acceptable-Languages: English, Russian, German, French, Spanish
+Subject: live SEX SHOWS
+
+<html>
+<head>
+</head>
+<body><b>LIVE SEX SHOWS<p></b><a href="ftp://210.110.146.253/a/m/liveshows.exe"><img src="http://www.pornstarsxtra.com/babes/briana/images/thumb3.jpg" ></a><p><b>WET, HOT, HORNY GIRLS WAITING FOR YOU! THE HOTTEST LIVE SEX SHOWS! <a href="ftp://210.110.146.253/a/m/liveshows.exe">CLICK HERE TO ENTER NOW !</a>
+<br>
+<a href="ftp://210.110.146.253/a/m/liveshows.exe">CLICK HERE TO SEE THE SHOWS !</a></b>
+<p>
+<p>
+<p>
+<a href="ftp://210.110.146.253/a/m/liveshows.exe"><img src="http://www.pornstarsxtra.com/babes/briana/images/thumb4.jpg"></a>
+<p>
+to unsubscribe from this mailing list please reply to this email with the word "remove" in the subject line. 
+</body>
+</html>
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

@@ -1,0 +1,64 @@
+From fork-admin@xent.com  Thu Aug 29 16:32:25 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C408E43F9B
+	for <zzzz@localhost>; Thu, 29 Aug 2002 11:32:25 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Thu, 29 Aug 2002 16:32:25 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7TFU0Z18213 for <zzzz@spamassassin.taint.org>;
+    Thu, 29 Aug 2002 16:30:03 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id BDDE12940F6; Thu, 29 Aug 2002 08:27:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mx.spiritone.com (mx.spiritone.com [216.99.221.5]) by
+    xent.com (Postfix) with SMTP id 2E151294099 for <fork@xent.com>;
+    Thu, 29 Aug 2002 08:26:08 -0700 (PDT)
+Received: (qmail 28639 invoked from network); 29 Aug 2002 15:28:11 -0000
+Received: (ofmipd 216.99.213.165); 29 Aug 2002 15:27:49 -0000
+Message-Id: <EEE172E4-BB63-11D6-8C04-00039344DDD6@ordersomewherechaos.com>
+From: "RossO" <fork@ordersomewherechaos.com>
+To: fork@spamassassin.taint.org
+Subject: Re: Computational Recreations
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+MIME-Version: 1.0 (Apple Message framework v482)
+Content-Transfer-Encoding: 7bit
+In-Reply-To: <Pine.BSO.4.44.0208261252210.16631-100000@crank.slack.net>
+X-Mailer: Apple Mail (2.482)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 29 Aug 2002 08:28:13 -0700
+
+On Monday, August 26, 2002, at 09:59  AM, Tom wrote:
+
+> Post MG in the 80's there were the colums by A K Dewdney that I dug a
+> bunch put into a book  called Turing Omnibus and then there is , of
+> course, all the goodens put out by Dougy Hoffstadler.
+
+A.K. Dewdney was the name I was looking for and the column was "Computer 
+Recreations". Turns out he's still in Ontario and even has some homemade 
+Sci-Fi online...
+
+http://www.csd.uwo.ca/faculty/akd/TALES/index.html
+
+Vat Man
+Programming Roger
+The Homunculids
+Alphie & Omega
+
+
+...Ross...
+
+

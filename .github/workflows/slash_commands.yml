@@ -1,0 +1,178 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2024 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: slash_commands
+
+# Workflow triggers:
+on:
+  issue_comment:
+    types:
+      - created
+      - edited
+
+# Workflow jobs:
+jobs:
+
+  # Add a new job for adding the initial reaction
+  add_initial_reaction:
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the conditions under which the job should run:
+    if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib')
+
+    # Define the job's steps:
+    steps:
+      # Add initial reaction to the comment
+      - name: 'Add initial reaction'
+        run: |
+          COMMENT="${{ github.event.comment.body }}"
+          if [[ $COMMENT == "/stdlib help" || \
+                $COMMENT == "/stdlib check-files" || \
+                $COMMENT == "/stdlib update-copyright-years" || \
+                $COMMENT == "/stdlib lint-autofix" || \
+                $COMMENT == "/stdlib merge" || \
+                $COMMENT == "/stdlib rebase"
+          ]]; then
+            curl -X POST \
+              -H "Accept: application/vnd.github.v3+json" \
+              -H "Authorization: Bearer ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}" \
+              "https://api.github.com/repos/${{ github.repository }}/issues/comments/${{ github.event.comment.id }}/reactions" \
+              -d '{"content":"eyes"}'
+          else
+            curl -X POST \
+              -H "Accept: application/vnd.github.v3+json" \
+              -H "Authorization: Bearer ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}" \
+              "https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/comments" \
+              -d '{"body":"@${{ github.event.comment.user.login }}, slash command not recognized. Please use `/stdlib help` to view available commands."}'
+          fi
+
+  # Define a job for checking for required files:
+  check_files:
+
+    # Define the conditions under which the job should run:
+    if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib check-files')
+
+    # Run reusable workflow:
+    uses: ./.github/workflows/check_required_files.yml
+    with:
+      pull_request_number: ${{ github.event.issue.number }}
+      user: ${{ github.event.comment.user.login }}
+    secrets:
+      STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+
+  # Define a job for updating copyright header years:
+  update_copyright_years:
+
+    # Define the conditions under which the job should run:
+    if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib update-copyright-years')
+
+    # Run reusable workflow:
+    uses: ./.github/workflows/update_pr_copyright_years.yml
+    with:
+      pull_request_number: ${{ github.event.issue.number }}
+    secrets:
+      REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+      STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+      STDLIB_BOT_GPG_PRIVATE_KEY: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
+      STDLIB_BOT_GPG_PASSPHRASE: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
+
+  # Define a job for auto-fixing lint errors:
+  fix_lint_errors:
+
+    # Define the conditions under which the job should run:
+    if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib lint-autofix')
+
+    # Run reusable workflow:
+    uses: ./.github/workflows/lint_autofix.yml
+    with:
+      pull_request_number: ${{ github.event.issue.number }}
+    secrets:
+      REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+      STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+      STDLIB_BOT_GPG_PRIVATE_KEY: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
+      STDLIB_BOT_GPG_PASSPHRASE: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
+
+  # Define a job for merging develop branch:
+  merge_develop:
+
+    # Define the conditions under which the job should run:
+    if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib merge')
+
+    # Run reusable workflow:
+    uses: ./.github/workflows/pr_merge_develop.yml
+    with:
+      pull_request_number: ${{ github.event.issue.number }}
+    secrets:
+      REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+      STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+      STDLIB_BOT_GPG_PRIVATE_KEY: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
+      STDLIB_BOT_GPG_PASSPHRASE: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
+
+  # Define a job for rebasing on develop branch:
+  rebase_develop:
+
+    # Define the conditions under which the job should run:
+    if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib rebase')
+
+    # Run reusable workflow:
+    uses: ./.github/workflows/pr_rebase_develop.yml
+    with:
+      pull_request_number: ${{ github.event.issue.number }}
+    secrets:
+      REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+      STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+      STDLIB_BOT_GPG_PRIVATE_KEY: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
+      STDLIB_BOT_GPG_PASSPHRASE: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
+
+  # Define a job for printing a list of available slash commands:
+  help:
+
+    # Define a display name:
+    name: 'Help'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the conditions under which the job should run:
+    if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib help')
+
+    # Define the job's steps:
+    steps:
+      # Create a comment on the pull request informing the user of available slash commands:
+      - name: 'Create a comment on the pull request informing the user of available slash commands'
+        # Pin action to full length commit SHA
+        uses: peter-evans/create-or-update-comment@71345be0265236311c031f5c7866368bd1eff043 # v4.0.0
+        with:
+          # Specify the issue or pull request number:
+          issue-number: ${{ github.event.issue.number }}
+
+          # Specify the comment body:
+          body: |
+            @${{ github.event.comment.user.login }}, available slash commands include:
+
+            - `/stdlib check-files` - Check for required files.
+            - `/stdlib update-copyright-years` - Update copyright header years.
+            - `/stdlib lint-autofix` - Auto-fix lint errors.
+            - `/stdlib merge` - Merge changes from develop branch into this PR.
+            - `/stdlib rebase` - Rebase this PR on top of develop branch.
+
+          # GitHub token:
+          token: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}

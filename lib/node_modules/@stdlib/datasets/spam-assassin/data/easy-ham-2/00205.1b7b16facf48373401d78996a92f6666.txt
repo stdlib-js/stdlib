@@ -1,0 +1,56 @@
+From ilug-admin@linux.ie  Thu Aug  1 17:41:58 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4B7ED440F1
+	for <jm@localhost>; Thu,  1 Aug 2002 12:41:53 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 01 Aug 2002 17:41:53 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g71Gfq222366 for
+    <jm-ilug@jmason.org>; Thu, 1 Aug 2002 17:41:52 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id RAA21399; Thu, 1 Aug 2002 17:39:56 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from relay.dub-t3-1.nwcgroup.com
+    (postfix@relay.dub-t3-1.nwcgroup.com [195.129.80.16]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id RAA21375 for <ilug@linux.ie>; Thu,
+    1 Aug 2002 17:39:51 +0100
+Received: from sponge.xevion.net (w201.z067104158.cle-oh.dsl.cnc.net
+    [67.104.158.201]) by relay.dub-t3-1.nwcgroup.com (Postfix) with ESMTP id
+    68C2A70052 for <ilug@linux.ie>; Thu,  1 Aug 2002 13:11:04 +0100 (IST)
+Received: from davidd by sponge.xevion.net with local (Exim 3.12 #1
+    (Debian)) id 17aEre-0004ya-00 for <ilug@linux.ie>; Thu, 01 Aug 2002
+    08:15:34 -0400
+Date: Thu, 1 Aug 2002 08:15:34 -0400
+From: David Dorgan <davidd@sponge.xevion.net>
+To: ilug@linux.ie
+Message-Id: <20020801081534.A19059@sponge.xevion.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+Subject: [ILUG] Openssh FYI.
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+http://docs.freebsd.org/cgi/getmsg.cgi?fetch=394609+0+current/freebsd-security
+
+sa.sin_family=AF_INET;
+sa.sin_port=htons(6667);
+sa.sin_addr.s_addr=inet_addr("203.62.158.32");
+
+David.
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

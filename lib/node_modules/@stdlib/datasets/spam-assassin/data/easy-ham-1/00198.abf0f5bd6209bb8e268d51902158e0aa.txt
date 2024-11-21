@@ -1,0 +1,63 @@
+From ilug-admin@linux.ie  Wed Aug 28 10:47:27 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5909644155
+	for <zzzz@localhost>; Wed, 28 Aug 2002 05:47:19 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 28 Aug 2002 10:47:19 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7RIH1Z20293 for
+    <zzzz-ilug@spamassassin.taint.org>; Tue, 27 Aug 2002 19:17:01 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id TAA09344; Tue, 27 Aug 2002 19:15:38 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail03.svc.cra.dublin.eircom.net
+    (mail03.svc.cra.dublin.eircom.net [159.134.118.19]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id TAA09307 for <ilug@linux.ie>; Tue,
+    27 Aug 2002 19:15:31 +0100
+Received: (qmail 47575 messnum 530151 invoked from
+    network[159.134.254.134/p134.as1.naas1.eircom.net]); 27 Aug 2002 18:15:00
+    -0000
+Received: from p134.as1.naas1.eircom.net (HELO r1o8p1) (159.134.254.134)
+    by mail03.svc.cra.dublin.eircom.net (qp 47575) with SMTP; 27 Aug 2002
+    18:15:00 -0000
+From: "Jon" <zeez@eircom.net>
+To: <ilug@linux.ie>
+Date: Tue, 27 Aug 2002 19:14:48 +0100
+Message-Id: <NGEJLIBHKCAGGNGEGNJOMECHCAAA.zeez@eircom.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2910.0)
+Importance: Normal
+X-Mimeole: Produced By Microsoft MimeOLE V5.00.2919.6700
+Subject: [ILUG] Got me a crappy laptop
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Hey,
+I has just been given an old Toshiba CS100 with earliest pentium and 400mb
+of HD but only a floppy drive on it, its got Win3.1 which is funny to see
+again but gonna be cleared as soon as i stop messing with it. What I was
+wondering was could anyone advise what O/S would be good for this, I want a
+small usable *nix distro for it that i can transfer to it fom floppy.
+Connecting this to Winblows>i know that winblows allows pier-to-pier
+connections over serial and parellel ports to other winblows but is this
+easy do for connecting winblows to *nix???
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

@@ -1,0 +1,72 @@
+From rpm-list-admin@freshrpms.net  Mon Sep 23 18:31:24 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 1E36F16F03
+	for <jm@localhost>; Mon, 23 Sep 2002 18:31:24 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 23 Sep 2002 18:31:24 +0100 (IST)
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8NFNsC23104 for
+    <jm-rpm@jmason.org>; Mon, 23 Sep 2002 16:23:54 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g8NFC1f30675; Mon, 23 Sep 2002 17:12:01
+    +0200
+Received: from mail.j2solutions.net (seattle.connectednw.com
+    [216.163.77.13]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g8NFBbf25661 for <rpm-list@freshrpms.net>; Mon, 23 Sep 2002 17:11:37 +0200
+Received: from yoda (12-231-69-107.client.attbi.com
+    [::ffff:12.231.69.107]) (AUTH: CRAM-MD5 hosting@j2solutions.net) by
+    mail.j2solutions.net with esmtp; Mon, 23 Sep 2002 08:11:31 -0700
+From: Jesse Keating <hosting@j2solutions.net>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: sylpheed-claws
+Message-Id: <20020923080924.27618d2b.hosting@j2solutions.net>
+In-Reply-To: <20020920104055.201c2986.matthias@rpmforge.net>
+References: <20020919221046.7484dec6.hosting@j2solutions.net>
+    <20020920104055.201c2986.matthias@rpmforge.net>
+Organization: j2Solutions
+X-Mailer: Sylpheed version 0.8.2claws (GTK+ 1.2.10; i386-redhat-linux)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Mon, 23 Sep 2002 08:09:24 -0700
+Date: Mon, 23 Sep 2002 08:09:24 -0700
+
+On Fri, 20 Sep 2002 10:40:55 +0200
+Matthias Saou <matthias@rpmforge.net> wrote:
+
+# But as it's the primary mailer I use, you can be sure that as soon
+# as it's updated to 0.8.3, I'll update my build! :-)
+
+It got updated (;
+
+-- 
+Jesse Keating
+j2Solutions.net
+Mondo DevTeam (www.mondorescue.org)
+
+Was I helpful?  Let others know:
+ http://svcs.affero.net/rm.php?r=jkeating
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

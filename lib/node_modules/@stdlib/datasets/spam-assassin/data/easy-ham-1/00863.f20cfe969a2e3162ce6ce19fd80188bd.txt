@@ -1,0 +1,90 @@
+From fork-admin@xent.com  Thu Oct  3 12:55:28 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 2F78D16F16
+	for <jm@localhost>; Thu,  3 Oct 2002 12:53:37 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 03 Oct 2002 12:53:37 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g92LeEK30274 for <jm@jmason.org>;
+    Wed, 2 Oct 2002 22:40:16 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id B2ECD2940CE; Wed,  2 Oct 2002 14:40:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from crank.slack.net (slack.net [166.84.151.181]) by xent.com
+    (Postfix) with ESMTP id 1075A29409C for <fork@xent.com>; Wed,
+    2 Oct 2002 14:39:38 -0700 (PDT)
+Received: by crank.slack.net (Postfix, from userid 596) id 9EF443ECAE;
+    Wed,  2 Oct 2002 17:44:24 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1]) by crank.slack.net
+    (Postfix) with ESMTP id 9D4D23EC76; Wed,  2 Oct 2002 17:44:24 -0400 (EDT)
+From: Tom <tomwhore@slack.net>
+To: Gregory Alan Bolcer <gbolcer@endeavors.com>
+Cc: fork@spamassassin.taint.org
+Subject: Re: Wifi query
+In-Reply-To: <3D9B6247.8090205@endeavors.com>
+Message-Id: <Pine.BSO.4.44.0210021731240.16631-100000@crank.slack.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 2 Oct 2002 17:44:24 -0400 (EDT)
+
+On Wed, 2 Oct 2002, Gregory Alan Bolcer wrote:
+--]Elias Sinderson wrote:
+--]> 802.11b - 11Mbps per channel over three channels in the 2.4GHz range
+--]> (also shared with microwaves and cordless phones)
+--]
+--]Microwaves, cordless phones and video-based baby monitors....
+
+Well I dont have to worry about microwavers in the house. Ours died a week
+or so ago and due to doing some research we will nto be getting anysuch
+device in the near or far future. I mean even if one half of the crap it
+is reported to do is true it s just not worth it for a quick cup or warm
+chai.
+
+Which brings me to the fact that finding a good Convection only (not combo
+with a microwaver) oven of any good size is dang near impossible unless
+you go up to the bizness sizes. thankfully there is Dehlongi of which
+costco has thru thier online store.
+
+Now of course the question is do we get it delivered to the old house or
+the new one (yep we got our offer approved and are in the short run down
+to a long mortage:)  we close on oct 31. though the realestate agent says
+t happens like that a lot, I still find it incrediably jolting to have
+found a house inthe hood I want with the space dawn wants on sunday and we
+are signing papers on tuesday night with a close at the end of the month.
+
+Which of course means....wifi land for wsmf:)- )
+
+So far I like the Linksys dsl/cable router all in one wifi ap. The Dlink
+has the funky 22mb stuff IF you use all thier stuff across the net and the
+way things go I cant say thats gonna happen for sure. Pluse the Linksys
+stuff is all over the mass market sotres so I cna walk home with parts at
+any time.
+
+The fun now comes with a realization that with ATTbi cable as my main hose
+tot he net offering up bwf might be a tad problematic....So i am thinking
+of ways around/through/under that. the setup of the particualrs are far
+form set in stone...any ideas would be welcome.
+
+Also any portlanders.....party time.
+
+
+-tom
+
+
+
+

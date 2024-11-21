@@ -1,0 +1,76 @@
+
+{{alias}}( value )
+    Tests if a value is a composite number.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is a composite number.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 4.0 )
+    true
+    > bool = {{alias}}( new Number( 4.0 ) )
+    true
+    > bool = {{alias}}( 3.14 )
+    false
+    > bool = {{alias}}( -4.0 )
+    false
+    > bool = {{alias}}( null )
+    false
+
+
+{{alias}}.isPrimitive( value )
+    Tests if a value is a number primitive which is a composite number.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is a number primitive which is a
+        composite number.
+
+    Examples
+    --------
+    > var bool = {{alias}}.isPrimitive( 4.0 )
+    true
+    > bool = {{alias}}.isPrimitive( new Number( 4.0 ) )
+    false
+
+
+{{alias}}.isObject( value )
+    Tests if a value is a number object having a value which is a composite
+    number.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is a number object having a value which
+        is a composite number.
+
+    Examples
+    --------
+    > var bool = {{alias}}.isObject( 4.0 )
+    false
+    > bool = {{alias}}.isObject( new Number( 4.0 ) )
+    true
+
+
+    See Also
+    --------
+
