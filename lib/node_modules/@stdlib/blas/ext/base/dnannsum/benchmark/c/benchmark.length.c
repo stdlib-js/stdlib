@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/blas/ext/base/dnannsum.h"
+#include "stdlib/blas/base/shared.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
@@ -94,10 +95,10 @@ static double rand_double( void ) {
 * @param len          array length
 * @return elapsed time in seconds
 */
-static double benchmark( int iterations, int len ) {
+static double benchmark1( int iterations, int len ) {
 	double elapsed;
 	double x[ len ];
-	int64_t n;
+	CBLAS_INT n;
 	double v;
 	double t;
 	int i;
@@ -113,6 +114,7 @@ static double benchmark( int iterations, int len ) {
 	n = 0;
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
+		// cppcheck-suppress uninitvar
 		v = stdlib_strided_dnannsum( len, x, 1, &n );
 		if ( v != v || n < 0  ) {
 			printf( "should not return NaN\n" );
@@ -125,6 +127,47 @@ static double benchmark( int iterations, int len ) {
 	}
 	return elapsed;
 }
+
+/**
+* Runs a benchmark.
+*
+* @param iterations   number of iterations
+* @param len          array length
+* @return elapsed time in seconds
+*/
+static double benchmark2( int iterations, int len ) {
+	double elapsed;
+	double x[ len ];
+	CBLAS_INT n;
+	double v;
+	double t;
+	int i;
+
+	for ( i = 0; i < len; i++ ) {
+		if ( rand_double() < 0.2 ) {
+			x[ i ] = 0.0 / 0.0; // NaN
+		} else {
+			x[ i ] = ( rand_double() * 20000.0 ) - 10000.0;
+		}
+	}
+	v = 0.0;
+	n = 0;
+	t = tic();
+	for ( i = 0; i < iterations; i++ ) {
+		// cppcheck-suppress uninitvar
+		v = stdlib_strided_dnannsum_ndarray( len, x, 1, 0, &n );
+		if ( v != v || n < 0  ) {
+			printf( "should not return NaN\n" );
+			break;
+		}
+	}
+	elapsed = tic() - t;
+	if ( v != v || n < 0 ) {
+		printf( "should not return NaN\n" );
+	}
+	return elapsed;
+}
+
 
 /**
 * Main execution sequence.
@@ -148,7 +191,18 @@ int main( void ) {
 		for ( j = 0; j < REPEATS; j++ ) {
 			count += 1;
 			printf( "# c::%s:len=%d\n", NAME, len );
-			elapsed = benchmark( iter, len );
+			elapsed = benchmark1( iter, len );
+			print_results( iter, elapsed );
+			printf( "ok %d benchmark finished\n", count );
+		}
+	}
+	for ( i = MIN; i <= MAX; i++ ) {
+		len = pow( 10, i );
+		iter = ITERATIONS / pow( 10, i-1 );
+		for ( j = 0; j < REPEATS; j++ ) {
+			count += 1;
+			printf( "# c::%s:ndarray:len=%d\n", NAME, len );
+			elapsed = benchmark2( iter, len );
 			print_results( iter, elapsed );
 			printf( "ok %d benchmark finished\n", count );
 		}
