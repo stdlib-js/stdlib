@@ -32,6 +32,9 @@ jobs:
   # Define a job for adding an initial reaction:
   add_initial_reaction:
 
+    # Define a display name:
+    name: 'Add initial reaction'
+
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
@@ -81,6 +84,9 @@ jobs:
   # Define a job for checking for required files:
   check_files:
 
+    # Define a display name:
+    name: 'Check for required files'
+
     # Define the conditions under which the job should run:
     if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib check-files')
 
@@ -94,6 +100,9 @@ jobs:
 
   # Define a job for updating copyright header years:
   update_copyright_years:
+
+    # Define a display name:
+    name: 'Update copyright header years'
 
     # Define the conditions under which the job should run:
     if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib update-copyright-years')
@@ -111,6 +120,9 @@ jobs:
   # Define a job for auto-fixing lint errors:
   fix_lint_errors:
 
+    # Define a display name:
+    name: 'Auto-fix lint errors'
+
     # Define the conditions under which the job should run:
     if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib lint-autofix')
 
@@ -127,6 +139,9 @@ jobs:
   # Define a job for merging develop branch:
   merge_develop:
 
+    # Define a display name:
+    name: 'Merge changes from develop branch into this PR'
+
     # Define the conditions under which the job should run:
     if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib merge')
 
@@ -142,6 +157,9 @@ jobs:
 
   # Define a job for rebasing on develop branch:
   rebase_develop:
+
+    # Define a display name:
+    name: 'Rebase this PR on top of develop branch'
 
     # Define the conditions under which the job should run:
     if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib rebase')
@@ -160,7 +178,7 @@ jobs:
   help:
 
     # Define a display name:
-    name: 'Help'
+    name: 'Print a list of available slash commands'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
@@ -193,6 +211,9 @@ jobs:
 
   # Define a job for removing the in-progress label:
   remove_progress_label:
+
+    # Define a display name:
+    name: 'Remove in-progress label'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
