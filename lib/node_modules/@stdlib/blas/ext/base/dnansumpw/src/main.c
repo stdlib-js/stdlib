@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2020 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -18,7 +18,8 @@
 
 #include "stdlib/blas/ext/base/dnansumpw.h"
 #include "stdlib/math/base/assert/is_nan.h"
-#include <stdint.h>
+#include "stdlib/strided/base/stride2offset.h"
+#include "stdlib/blas/base/shared.h"
 
 /**
 * Computes the sum of double-precision floating-point strided array elements, ignoring `NaN` values and using pairwise summation.
@@ -33,17 +34,20 @@
 *
 * @param N       number of indexed elements
 * @param X       input array
-* @param stride  stride length
+* @param strideX  stride length
 * @return        output value
 */
-double stdlib_strided_dnansumpw( const int64_t N, const double *X, const int64_t stride ) {
-	double *xp1;
-	double *xp2;
+double API_SUFFIX(stdlib_strided_dnansumpw)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX ) {
+	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	return API_SUFFIX(stdlib_strided_dnansumpw_ndarray)( N, X, strideX, ox );
+}
+
+double API_SUFFIX(stdlib_strided_dnansumpw_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+	CBLAS_INT ix;
+	CBLAS_INT M;
+	CBLAS_INT n;
+	CBLAS_INT i;
 	double sum;
-	int64_t ix;
-	int64_t M;
-	int64_t n;
-	int64_t i;
 	double s0;
 	double s1;
 	double s2;
@@ -56,17 +60,13 @@ double stdlib_strided_dnansumpw( const int64_t N, const double *X, const int64_t
 	if ( N <= 0 ) {
 		return 0.0;
 	}
-	if ( N == 1 || stride == 0 ) {
+	if ( strideX == 0 ) {
 		if ( stdlib_base_is_nan( X[ 0 ] ) ) {
 			return 0.0;
 		}
-		return X[ 0 ];
+		return X[ 0 ] * N;
 	}
-	if ( stride < 0 ) {
-		ix = (1-N) * stride;
-	} else {
-		ix = 0;
-	}
+	ix = offsetX;
 	if ( N < 8 ) {
 		// Use simple summation...
 		sum = 0.0;
@@ -74,7 +74,7 @@ double stdlib_strided_dnansumpw( const int64_t N, const double *X, const int64_t
 			if ( !stdlib_base_is_nan( X[ ix ] ) ) {
 				sum += X[ ix ];
 			}
-			ix += stride;
+			ix += strideX;
 		}
 		return sum;
 	}
@@ -82,62 +82,55 @@ double stdlib_strided_dnansumpw( const int64_t N, const double *X, const int64_t
 	if ( N <= 128 ) {
 		// Sum a block with 8 accumulators (by loop unrolling, we lower the effective blocksize to 16)...
 		s0 = ( stdlib_base_is_nan( X[ ix ] ) ) ? 0.0 : X[ ix ];
-		ix += stride;
+		ix += strideX;
 		s1 = ( stdlib_base_is_nan( X[ ix ] ) ) ? 0.0 : X[ ix ];
-		ix += stride;
+		ix += strideX;
 		s2 = ( stdlib_base_is_nan( X[ ix ] ) ) ? 0.0 : X[ ix ];
-		ix += stride;
+		ix += strideX;
 		s3 = ( stdlib_base_is_nan( X[ ix ] ) ) ? 0.0 : X[ ix ];
-		ix += stride;
+		ix += strideX;
 		s4 = ( stdlib_base_is_nan( X[ ix ] ) ) ? 0.0 : X[ ix ];
-		ix += stride;
+		ix += strideX;
 		s5 = ( stdlib_base_is_nan( X[ ix ] ) ) ? 0.0 : X[ ix ];
-		ix += stride;
+		ix += strideX;
 		s6 = ( stdlib_base_is_nan( X[ ix ] ) ) ? 0.0 : X[ ix ];
-		ix += stride;
+		ix += strideX;
 		s7 = ( stdlib_base_is_nan( X[ ix ] ) ) ? 0.0 : X[ ix ];
-		ix += stride;
+		ix += strideX;
 
 		M = N % 8;
 		for ( i = 8; i < N-M; i += 8 ) {
 			s0 += ( stdlib_base_is_nan( X[ ix ] ) ) ? 0.0 : X[ ix ];
-			ix += stride;
+			ix += strideX;
 			s1 += ( stdlib_base_is_nan( X[ ix ] ) ) ? 0.0 : X[ ix ];
-			ix += stride;
+			ix += strideX;
 			s2 += ( stdlib_base_is_nan( X[ ix ] ) ) ? 0.0 : X[ ix ];
-			ix += stride;
+			ix += strideX;
 			s3 += ( stdlib_base_is_nan( X[ ix ] ) ) ? 0.0 : X[ ix ];
-			ix += stride;
+			ix += strideX;
 			s4 += ( stdlib_base_is_nan( X[ ix ] ) ) ? 0.0 : X[ ix ];
-			ix += stride;
+			ix += strideX;
 			s5 += ( stdlib_base_is_nan( X[ ix ] ) ) ? 0.0 : X[ ix ];
-			ix += stride;
+			ix += strideX;
 			s6 += ( stdlib_base_is_nan( X[ ix ] ) ) ? 0.0 : X[ ix ];
-			ix += stride;
+			ix += strideX;
 			s7 += ( stdlib_base_is_nan( X[ ix ] ) ) ? 0.0 : X[ ix ];
-			ix += stride;
+			ix += strideX;
 		}
 		// Pairwise sum the accumulators:
-		sum = ((s0+s1) + (s2+s3)) + ((s4+s5) + (s6+s7));
+		sum = ( (s0+s1) + (s2+s3)) + ((s4+s5) + (s6+s7) );
 
 		// Clean-up loop...
 		for (; i < N; i++ ) {
 			if ( !stdlib_base_is_nan( X[ ix ] ) ) {
 				sum += X[ ix ];
 			}
-			ix += stride;
+			ix += strideX;
 		}
 		return sum;
 	}
 	// Recurse by dividing by two, but avoiding non-multiples of unroll factor...
 	n = N / 2;
 	n -= n % 8;
-	if ( stride < 0 ) {
-		xp1 = (double *)X + ( (n-N)*stride );
-		xp2 = (double *)X;
-	} else {
-		xp1 = (double *)X;
-		xp2 = (double *)X + ( n*stride );
-	}
-	return stdlib_strided_dnansumpw( n, xp1, stride ) + stdlib_strided_dnansumpw( N-n, xp2, stride );
+	return API_SUFFIX(stdlib_strided_dnansumpw_ndarray)( n, X, strideX, ix ) + API_SUFFIX(stdlib_strided_dnansumpw_ndarray)( N-n, X, strideX, ix+(n*strideX) );
 }
