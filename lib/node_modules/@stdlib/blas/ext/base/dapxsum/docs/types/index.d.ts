@@ -26,7 +26,7 @@ interface Routine {
 	* Adds a scalar constant to each double-precision floating-point strided array element and computes the sum.
 	*
 	* @param N - number of indexed elements
-	* @param alpha - constant
+	* @param alpha - scalar constant
 	* @param x - input array
 	* @param strideX - stride length
 	* @returns sum
@@ -45,7 +45,7 @@ interface Routine {
 	* Adds a scalar constant to each double-precision floating-point strided array element and computes the sum using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
-	* @param alpha - constant
+	* @param alpha - scalar constant
 	* @param x - input array
 	* @param strideX - stride length
 	* @param offsetX - starting index
@@ -66,7 +66,7 @@ interface Routine {
 * Adds a scalar constant to each double-precision floating-point strided array element and computes the sum.
 *
 * @param N - number of indexed elements
-* @param alpha - constant
+* @param alpha - scalar constant
 * @param x - input array
 * @param strideX - stride length
 * @returns sum

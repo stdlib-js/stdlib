@@ -1607,7 +1607,8 @@ interface Namespace {
 	* v = iter.next().value;
 	* // returns 4
 	*
-	* var bool = iter.ne
+	* var bool = iter.next().done;
+	* // returns true
 	*/
 	iterUniqueByHash: typeof iterUniqueByHash;
 

@@ -131,7 +131,7 @@ interface Namespace {
 	*
 	* @param iter0 - first iterator
 	* @param iter1 - second iterator
-	* @param iter1 - third iterator
+	* @param iter2 - third iterator
 	* @param fcn - function which transforms iterated values
 	* @param options - options
 	* @param options.invalid - return value when an input iterator yields a non-numeric value
