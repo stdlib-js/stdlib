@@ -47,9 +47,9 @@ double API_SUFFIX(stdlib_strided_dapxsumkbn)( const CBLAS_INT N, const double al
 * Adds a scalar constant to each double-precision floating-point strided array element and computes the sum using an improved Kahan–Babuška algorithm and alternative indexing semantics.
 *
 * @param N        number of indexed elements
-* @param alpha    scalar
+* @param alpha    scalar constant
 * @param X        input array
-* @param strideX  index increment
+* @param strideX  stride length
 * @param offsetX  starting index
 */
 double API_SUFFIX(stdlib_strided_dapxsumkbn_ndarray)( const CBLAS_INT N, const double alpha, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
@@ -63,10 +63,10 @@ double API_SUFFIX(stdlib_strided_dapxsumkbn_ndarray)( const CBLAS_INT N, const d
 	if ( N <= 0 ) {
 		return 0.0;
 	}
-	if ( N == 1 || strideX == 0 ) {
-		return alpha + X[ offsetX ];
-	}
 	ix = offsetX;
+	if ( strideX == 0 ) {
+		return N * ( alpha + X[ ix ] );
+	}
 	sum = 0.0;
 	c = 0.0;
 	for ( i = 0; i < N; i++ ) {
