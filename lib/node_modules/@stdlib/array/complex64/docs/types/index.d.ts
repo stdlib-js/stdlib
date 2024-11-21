@@ -38,7 +38,7 @@ interface LocaleOptions<T = unknown> {
 	* Configuration property.
 	*/
 	[ key: string | symbol | number ]: T | undefined;
-};
+}
 
 /**
 * Callback invoked for each element in a source object.
