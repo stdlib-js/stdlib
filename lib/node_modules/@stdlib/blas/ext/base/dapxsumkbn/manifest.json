@@ -43,7 +43,8 @@
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-double",
         "@stdlib/napi/argv-strided-float64array",
-        "@stdlib/napi/create-double"
+        "@stdlib/napi/create-double",
+        "@stdlib/math/base/special/abs"
       ]
     },
     {
@@ -58,7 +59,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/strided/base/stride2offset"
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/math/base/special/abs"
       ]
     },
     {
@@ -73,7 +75,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/strided/base/stride2offset"
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/math/base/special/abs"
       ]
     }
   ]
