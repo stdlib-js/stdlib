@@ -87,6 +87,9 @@ jobs:
     # Define a display name:
     name: 'Check for required files'
 
+    # Ensure initial reaction job has completed before running this job:
+    needs: [ add_initial_reaction ]
+
     # Define the conditions under which the job should run:
     if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib check-files')
 
@@ -123,6 +126,9 @@ jobs:
     # Define a display name:
     name: 'Auto-fix lint errors'
 
+    # Ensure initial reaction job has completed before running this job:
+    needs: [ add_initial_reaction ]
+
     # Define the conditions under which the job should run:
     if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib lint-autofix')
 
@@ -142,6 +148,9 @@ jobs:
     # Define a display name:
     name: 'Merge changes from develop branch into this PR'
 
+    # Ensure initial reaction job has completed before running this job:
+    needs: [ add_initial_reaction ]
+
     # Define the conditions under which the job should run:
     if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib merge')
 
@@ -160,6 +169,9 @@ jobs:
 
     # Define a display name:
     name: 'Rebase this PR on top of develop branch'
+
+    # Ensure initial reaction job has completed before running this job:
+    needs: [ add_initial_reaction ]
 
     # Define the conditions under which the job should run:
     if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib rebase')
@@ -182,6 +194,9 @@ jobs:
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
+
+    # Ensure initial reaction job has completed before running this job:
+    needs: [ add_initial_reaction ]
 
     # Define the conditions under which the job should run:
     if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib help')
