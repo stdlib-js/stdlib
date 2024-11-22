@@ -194,6 +194,28 @@ The function accepts the following arguments:
 double c_dznrm2( const CBLAS_INT N, const void *ZX, const CBLAS_INT strideX );
 ```
 
+#### c_dznrm2_ndarray( N, \*ZX, strideX, offsetX )
+
+Computes the L2-norm of a complex double-precision floating-point vector using alternative indexing semantics.
+
+```c
+const double zx[] = { 0.3, 0.1, 0.5, 0.0, 0.0, 0.5, 0.0, 0.2 };
+
+double norm = c_dznrm2_ndarray( 4, (void *)zx, 1, 0 );
+// returns 0.8
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **ZX**: `[in] void*` input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `ZX`.
+-   **offsetX**: `[in] CBLAS_INT` starting index for `ZX`.
+
+```c
+double c_dznrm2_ndarray( const CBLAS_INT N, const void *ZX, const CBLAS_INT strideX, const CBLAS_INT offsetX );
+```
+
 </section>
 
 <!-- /.usage -->
@@ -227,7 +249,13 @@ int main( void ) {
     const int strideX = 1;
 
     // Compute the L2-norm:
-    c_dznrm2( N, (void *)zx, strideX );
+    double norm = c_dznrm2( N, (void *)zx, strideX );
+
+    // Print the result:
+    printf( "L2-norm: %lf\n", norm );
+
+    // Compute the L2-norm using alternative indexing semantics:
+    norm = c_dznrm2_ndarray( N, (void *)zx, -strideX, N-1 );
 
     // Print the result:
     printf( "L2-norm: %lf\n", norm );

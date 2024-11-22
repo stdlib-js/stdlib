@@ -42,6 +42,7 @@ CPPCHECK_FLAGS ?= \
 	--language=c \
 	--error-exitcode=1 \
 	--inline-suppr \
+	--check-level=exhaustive \
 	--quiet
 
 

@@ -93,15 +93,18 @@ static double rand_double( void ) {
 static double benchmark( void ) {
 	double complex x;
 	double complex y;
+	double v[ 100 ];
 	double elapsed;
 	double t;
-	double v;
 	int i;
+
+	for ( i = 0; i < 100; i++ ) {
+		v[ i ] = ( 1000.0 * rand_double() ) - 500.0;
+	}
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		v = ( 1000.0*rand_double() ) - 500.0;
-		x = v + v*I;
+		x = v[ i % 100 ]  + v[ i % 100 ] *I;
 		y = stdlib_base_ceil( creal( x ) ) + stdlib_base_ceil( cimag( x ) )*I;
 		if ( creal( y ) != creal( y ) ) {
 			printf( "unexpected result\n" );

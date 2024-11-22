@@ -29,7 +29,7 @@ extern "C" {
 #endif
 
 /**
-* Rounds a single-precision complex floating-point number toward negative infinity.
+* Rounds each component of a single-precision complex floating-point number toward negative infinity.
 */
 stdlib_complex64_t stdlib_base_cfloorf( const stdlib_complex64_t z );
 
