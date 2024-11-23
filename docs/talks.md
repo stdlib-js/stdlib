@@ -174,13 +174,26 @@ limitations under the License.
     <br>
 </div>
 
+## 2024
+
+### Advanced Mathematics and Data Analysis with JavaScript
+
+> [Gunj Joshi][gunjjoshi], JSNation US, November 2024
+
+<div class="image" align="center">
+    <a title="Advanced Mathematics and Data Analysis with JavaScript" href="https://youtu.be/7sejh8DguBU?t=19919">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@66d46fdc5aa64c904479c36c7ed3b069ecd7039d/docs/assets/talks/jsnation_us_2024_gunj_joshi.png" alt="Advanced Mathematics and Data Analysis with JavaScript">
+    </a>
+    <br>
+</div>
+
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
 
 [kgryte]: https://github.com/kgryte
-
 [planeshifter]: https://github.com/Planeshifter
+[gunjjoshi]: https://github.com/gunjjoshi
 
 </section>
 
