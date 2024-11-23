@@ -182,7 +182,7 @@ limitations under the License.
 
 <div class="image" align="center">
     <a title="Advanced Mathematics and Data Analysis with JavaScript" href="https://youtu.be/7sejh8DguBU?t=19919">
-        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@66d46fdc5aa64c904479c36c7ed3b069ecd7039d/docs/assets/talks/jsnation_us_2024_gunj_joshi.png" alt="Advanced Mathematics and Data Analysis with JavaScript">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@fa25196d70829930020772d9e8de37a5a000b396/docs/assets/talks/jsnation_us_2024_gunj_joshi.png" alt="Advanced Mathematics and Data Analysis with JavaScript">
     </a>
     <br>
 </div>
