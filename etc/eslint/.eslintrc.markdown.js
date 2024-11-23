@@ -146,6 +146,13 @@ eslint.rules[ 'no-unused-vars' ] = 'off';
 */
 eslint.rules[ 'node/no-unpublished-require' ] = 'off';
 
+/**
+* Allow modern ECMAScript syntax.
+*
+* @private
+*/
+eslint.rules[ 'node/no-unsupported-features/es-syntax' ] = 'off';
+
 
 // EXPORTS //
 
