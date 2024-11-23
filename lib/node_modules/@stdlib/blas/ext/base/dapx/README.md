@@ -20,7 +20,7 @@ limitations under the License.
 
 # dapx
 
-> Add a constant to each element in a double-precision floating-point strided array.
+> Add a scalar constant to each element in a double-precision floating-point strided array.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var dapx = require( '@stdlib/blas/ext/base/dapx' );
 
 #### dapx( N, alpha, x, strideX )
 
-Adds a scalar constant `alpha` to each element in a double-precision floating-point strided array.
+Adds a scalar constant to each element in a double-precision floating-point strided array.
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -48,9 +48,9 @@ The function has the following parameters:
 -   **N**: number of indexed elements.
 -   **alpha**: scalar constant.
 -   **x**: input [`Float64Array`][@stdlib/array/float64].
--   **strideX**: index increment.
+-   **strideX**: stride length for `x`.
 
-The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to add a constant to every other element
+The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to add a constant to every other element:
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -79,7 +79,7 @@ dapx( 3, 5.0, x1, 2 );
 
 #### dapx.ndarray( N, alpha, x, strideX, offsetX )
 
-Adds a scalar constant `alpha` to each element in a double-precision floating-point strided array using alternative indexing semantics.
+Adds a scalar constant to each element in a double-precision floating-point strided array using alternative indexing semantics.
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -94,7 +94,7 @@ The function has the following additional parameters:
 
 -   **offsetX**: starting index.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameter supports indexing semantics based on a starting index. For example, to access only the last three elements of the strided array
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameter supports indexing semantics based on a starting index. For example, to access only the last three elements:
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -170,7 +170,7 @@ console.log( x );
 
 #### c_dapx( N, alpha, \*X, strideX )
 
-Adds a scalar constant `alpha` to each element in a double-precision floating-point strided array.
+Adds a scalar constant to each element in a double-precision floating-point strided array.
 
 ```c
 double x[] = { 1.0, 2.0, 3.0, 4.0 };
@@ -184,7 +184,7 @@ The function accepts the following arguments:
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
 -   **alpha**: `[in] double` scalar constant.
 -   **X**: `[inout] double*` input array.
--   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **strideX**: `[in] CBLAS_INT` stride length for `X`.
 
 ```c
 void c_dapx( const CBLAS_INT N, const double alpha, double *X, const CBLAS_INT strideX );
@@ -192,7 +192,7 @@ void c_dapx( const CBLAS_INT N, const double alpha, double *X, const CBLAS_INT s
 
 #### c_dapx_ndarray( N, alpha, \*X, strideX, offsetX )
 
-Adds a scalar constant `alpha` to each element in a double-precision floating-point strided array `X` using alternative indexing semantics.
+Adds a scalar constant to each element in a double-precision floating-point strided array using alternative indexing semantics.
 
 ```c
 double x[] = { 1.0, 2.0, 3.0, 4.0 };
@@ -205,7 +205,7 @@ The function accepts the following arguments:
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
 -   **alpha**: `[in] double` scalar constant.
 -   **X**: `[inout] double*` input array.
--   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **strideX**: `[in] CBLAS_INT` stride length for `X`.
 -   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
 
 ```c
@@ -260,7 +260,7 @@ int main( void ) {
 
 </section>
 
-<!-- /.c -->
+W<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
