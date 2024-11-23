@@ -23,10 +23,10 @@
 /**
 * Adds a scalar constant to each element in a double-precision floating-point strided array.
 *
-* @param N       number of indexed elements
-* @param alpha   scalar
-* @param X       input array
-* @param strideX  index increment
+* @param N        number of indexed elements
+* @param alpha    scalar constant
+* @param X        input array
+* @param strideX  stride length
 */
 void API_SUFFIX(c_dapx)( const CBLAS_INT N, const double alpha, double *X, const CBLAS_INT strideX ) {
 	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
@@ -36,10 +36,10 @@ void API_SUFFIX(c_dapx)( const CBLAS_INT N, const double alpha, double *X, const
 /**
 * Adds a scalar constant to each element in a double-precision floating-point strided array using alternative indexing semantics.
 *
-* @param N       number of indexed elements
-* @param alpha   scalar
-* @param X       input array
-* @param strideX  index increment
+* @param N        number of indexed elements
+* @param alpha    scalar constant
+* @param X        input array
+* @param strideX  stride length
 * @param offsetX  starting index
 */
 void API_SUFFIX(c_dapx_ndarray)( const CBLAS_INT N, const double alpha, double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
