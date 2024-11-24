@@ -143,7 +143,7 @@ interface Namespace {
 	* Adds a scalar constant to each element in a double-precision floating-point strided array.
 	*
 	* @param N - number of indexed elements
-	* @param alpha - constant
+	* @param alpha - scalar constant
 	* @param x - input array
 	* @param strideX - stride length
 	* @returns input array
@@ -170,7 +170,7 @@ interface Namespace {
 	* Adds a scalar constant to each double-precision floating-point strided array element and computes the sum.
 	*
 	* @param N - number of indexed elements
-	* @param alpha - constant
+	* @param alpha - scalar constant
 	* @param x - input array
 	* @param strideX - stride length
 	* @returns sum
@@ -197,7 +197,7 @@ interface Namespace {
 	* Adds a scalar constant to each double-precision floating-point strided array element and computes the sum using an improved Kahan–Babuška algorithm.
 	*
 	* @param N - number of indexed elements
-	* @param alpha - constant
+	* @param alpha - scalar constant
 	* @param x - input array
 	* @param strideX - stride length
 	* @returns sum
@@ -224,7 +224,7 @@ interface Namespace {
 	* Adds a scalar constant to each double-precision floating-point strided array element and computes the sum using a second-order iterative Kahan–Babuška algorithm.
 	*
 	* @param N - number of indexed elements
-	* @param alpha - constant
+	* @param alpha - scalar constant
 	* @param x - input array
 	* @param strideX - stride length
 	* @returns sum
@@ -820,7 +820,7 @@ interface Namespace {
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns sum
 	*
 	* @example
@@ -868,12 +868,12 @@ interface Namespace {
 	drev: typeof drev;
 
 	/**
-	* Adds a constant to each single-precision floating-point strided array element and computes the sum using extended accumulation and returning an extended precision result.
+	* Adds a scalar constant to each single-precision floating-point strided array element, and computes the sum using extended accumulation and returning an extended precision result.
 	*
 	* @param N - number of indexed elements
-	* @param alpha - constant
+	* @param alpha - scalar constant
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns sum
 	*
 	* @example
