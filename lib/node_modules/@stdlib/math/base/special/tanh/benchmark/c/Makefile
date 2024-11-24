@@ -1,7 +1,7 @@
 #/
 # @license Apache-2.0
 #
-# Copyright (c) 2020 The Stdlib Authors.
+# Copyright (c) 2018 The Stdlib Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,15 +16,14 @@
 # limitations under the License.
 #/
 
+
 # VARIABLES #
 
 ifndef VERBOSE
 	QUIET := @
-else
-	QUIET :=
 endif
 
-# Determine the OS ([1][1], [2][2]).
+# Determine the OS:
 #
 # [1]: https://en.wikipedia.org/wiki/Uname#Examples
 # [2]: http://stackoverflow.com/a/27776822/2225624
@@ -37,10 +36,6 @@ ifneq (, $(findstring MSYS,$(OS)))
 else
 ifneq (, $(findstring CYGWIN,$(OS)))
 	OS := WINNT
-else
-ifneq (, $(findstring Windows_NT,$(OS)))
-	OS := WINNT
-endif
 endif
 endif
 endif
@@ -59,7 +54,7 @@ CFLAGS ?= \
 	-Wall \
 	-pedantic
 
-# Determine whether to generate position independent code ([1][1], [2][2]).
+# Determine whether to generate [position independent code][1]:
 #
 # [1]: https://gcc.gnu.org/onlinedocs/gcc/Code-Gen-Options.html#Code-Gen-Options
 # [2]: http://stackoverflow.com/questions/5311515/gcc-fpic-option
@@ -69,77 +64,43 @@ else
 	fPIC ?= -fPIC
 endif
 
-# List of includes (e.g., `-I /foo/bar -I /beep/boop/include`):
-INCLUDE ?=
-
-# List of source files:
-SOURCE_FILES ?=
-
-# List of libraries (e.g., `-lopenblas -lpthread`):
-LIBRARIES ?=
-
-# List of library paths (e.g., `-L /foo/bar -L /beep/boop`):
-LIBPATH ?=
-
 # List of C targets:
 c_targets := benchmark.out
 
 
-# RULES #
+# TARGETS #
 
-#/
-# Compiles source files.
+# Default target.
 #
-# @param {string} [C_COMPILER] - C compiler (e.g., `gcc`)
-# @param {string} [CFLAGS] - C compiler options
-# @param {(string|void)} [fPIC] - compiler flag determining whether to generate position independent code (e.g., `-fPIC`)
-# @param {string} [INCLUDE] - list of includes (e.g., `-I /foo/bar -I /beep/boop/include`)
-# @param {string} [SOURCE_FILES] - list of source files
-# @param {string} [LIBPATH] - list of library paths (e.g., `-L /foo/bar -L /beep/boop`)
-# @param {string} [LIBRARIES] - list of libraries (e.g., `-lopenblas -lpthread`)
-#
-# @example
-# make
-#
-# @example
-# make all
-#/
+# This target is the default target.
+
 all: $(c_targets)
 
 .PHONY: all
 
-#/
-# Compiles C source files.
-#
-# @private
-# @param {string} CC - C compiler (e.g., `gcc`)
-# @param {string} CFLAGS - C compiler options
-# @param {(string|void)} fPIC - compiler flag determining whether to generate position independent code (e.g., `-fPIC`)
-# @param {string} INCLUDE - list of includes (e.g., `-I /foo/bar`)
-# @param {string} SOURCE_FILES - list of source files
-# @param {string} LIBPATH - list of library paths (e.g., `-L /foo/bar`)
-# @param {string} LIBRARIES - list of libraries (e.g., `-lopenblas`)
-#/
-$(c_targets): %.out: %.c
-	$(QUIET) $(CC) $(CFLAGS) $(fPIC) $(INCLUDE) -o $@ $(SOURCE_FILES) $< $(LIBPATH) -lm $(LIBRARIES)
 
-#/
-# Runs compiled benchmarks.
+# Compile C source.
 #
-# @example
-# make run
-#/
+# This target compiles C source files.
+
+$(c_targets): %.out: %.c
+	$(QUIET) $(CC) $(CFLAGS) $(fPIC) -o $@ $< -lm
+
+
+# Run a benchmark.
+#
+# This target runs a benchmark.
+
 run: $(c_targets)
 	$(QUIET) ./$<
 
 .PHONY: run
 
-#/
-# Removes generated files.
+
+# Perform clean-up.
 #
-# @example
-# make clean
-#/
+# This target removes generated files.
+
 clean:
 	$(QUIET) -rm -f *.o *.out
 
