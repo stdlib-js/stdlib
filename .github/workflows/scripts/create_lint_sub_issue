@@ -1,0 +1,237 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2024 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Script to create a sub-issue for linting failures
+#
+# Usage: ./create_lint_sub_issue.sh <workflow-url> <lint-type> <parent-issue-number>
+#
+# Arguments:
+#
+#   workflow-url         URL of the workflow run.
+#   lint-type            Type of linting failure.
+#   parent-issue-number  Number of the parent issue.
+#   error-log-file       Path to the error log file.
+#
+#
+# Environment variables:
+#
+#   GITHUB_TOKEN         GitHub authentication token.
+#
+
+# shellcheck disable=SC2153,SC2317
+
+# Ensure that the exit status of pipelines is non-zero in the event that at least one of the commands in a pipeline fails:
+set -o pipefail
+
+# VARIABLES #
+
+# Assign command line arguments to variables:
+workflow_url="$1"
+lint_type="$2"
+parent_issue_number="$3"
+error_log_file="$4"
+
+# Repository information:
+owner="stdlib-js"
+repo="stdlib"
+
+# Get the GitHub authentication token:
+github_token="${GITHUB_TOKEN}"
+if [ -z "$github_token" ]; then
+		echo -e "ERROR: GITHUB_TOKEN environment variable is not set."
+		exit 1
+fi
+
+# Read and format the error log
+if [ ! -f "$error_log_file" ]; then
+	echo -e "Error log file not found: ${error_log_file}"
+	exit 1
+fi
+error_log_content=$(cat "$error_log_file")
+
+# Create issue body with formatted error log
+issue_body="## ${lint_type} Linting Failures
+
+Linting failures were detected in the automated lint workflow run.
+
+### Workflow Details
+-   Run: ${workflow_url}
+-   Type: ${lint_type} Linting
+-   Date: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
+
+### Error Details
+\`\`\`
+${error_log_content}
+\`\`\`
+"
+
+# FUNCTIONS #
+
+# Error handler.
+#
+# $1 - error status
+on_error() {
+	echo -e "ERROR: An error was encountered during execution." >&2
+	exit "$1"
+}
+
+# Prints a success message.
+print_success() {
+	echo -e "Success!" >&2
+}
+
+# Fetches the repository node ID.
+fetch_repo_id() {
+	local response
+	response=$(curl -s -X POST 'https://api.github.com/graphql' \
+		-H "Authorization: bearer ${github_token}" \
+		-H "Content-Type: application/json" \
+		--data @- << EOF
+{
+	"query": "query(\$owner: String!, \$repo: String!) { repository(owner: \$owner, name: \$repo) { id } }",
+	"variables": {
+		"owner": "${owner}",
+		"repo": "${repo}"
+	}
+}
+EOF
+)
+	echo "$response" | jq -r '.data.repository.id'
+}
+
+# Creates a child issue.
+#
+# $1 - repository node ID
+# $2 - issue body
+create_child_issue() {
+	local repo_id="$1"
+	local issue_body="$2"
+	local response
+	response=$(curl -s -X POST 'https://api.github.com/graphql' \
+		-H "Authorization: bearer ${github_token}" \
+		-H "Content-Type: application/json" \
+		--data @- << EOF
+{
+	"query": "mutation CreateIssue(\$repositoryId: ID!, \$title: String!, \$body: String!) { createIssue(input: {repositoryId: \$repositoryId, title: \$title, body: \$body}) { issue { id number } } }",
+	"variables": {
+		"repositoryId": "${repo_id}",
+		"title": "Fix ${lint_type} lint errors",
+		"body": $(echo "$issue_body" | jq -R -s '.')
+	}
+}
+EOF
+)
+	echo "$response"
+}
+
+# Fetches the parent issue ID.
+fetch_parent_issue_id() {
+	local response
+	response=$(curl -s -X POST 'https://api.github.com/graphql' \
+		-H "Authorization: bearer ${github_token}" \
+		-H "Content-Type: application/json" \
+		--data @- << EOF
+{
+	"query": "query(\$owner: String!, \$repo: String!, \$number: Int!) { repository(owner: \$owner, name: \$repo) { issue(number: \$number) { id } } }",
+	"variables": {
+		"owner": "${owner}",
+		"repo": "${repo}",
+		"number": ${parent_issue_number}
+	}
+}
+EOF
+)
+	echo "$response" | jq -r '.data.repository.issue.id'
+}
+
+# Creates a sub-issue relationship.
+#
+# $1 - parent issue ID
+# $2 - child issue ID
+create_sub_issue_relationship() {
+	local parent_issue_id="$1"
+	local child_issue_id="$2"
+	local response
+	response=$(curl -s -X POST 'https://api.github.com/graphql' \
+		-H "Authorization: bearer ${github_token}" \
+		-H "GraphQL-Features: issue_types" \
+		-H "GraphQL-Features: sub_issues" \
+		-H "Content-Type: application/json" \
+		--data @- << EOF
+{
+	"query": "mutation(\$parentIssueId: ID!, \$childIssueId: ID!) { addSubIssue(input: { issueId: \$parentIssueId, subIssueId: \$childIssueId }) { issue { number } subIssue { number } } }",
+	"variables": {
+		"parentIssueId": "${parent_issue_id}",
+		"childIssueId": "${child_issue_id}"
+	}
+}
+EOF
+)
+	echo "$response"
+}
+
+# Main execution sequence.
+main() {
+	echo "Fetching repository node ID..."
+	repo_id=$(fetch_repo_id)
+	if [ -z "$repo_id" ] || [ "$repo_id" = "null" ]; then
+		echo -e "Failed to fetch repository ID."
+		exit 1
+	fi
+
+	echo "Creating child issue for ${lint_type} lint failures..."
+	child_issue_response=$(create_child_issue "$repo_id" "$issue_body")
+
+	child_issue_id=$(echo "$child_issue_response" | jq -r '.data.createIssue.issue.id')
+	child_issue_number=$(echo "$child_issue_response" | jq -r '.data.createIssue.issue.number')
+
+	if [ -z "$child_issue_id" ] || [ "$child_issue_id" = "null" ]; then
+		echo -e "Failed to create child issue. Response: ${child_issue_response}"
+		exit 1
+	fi
+
+	echo -e "Created child issue #${child_issue_number}"
+
+	echo "Fetching parent issue #${parent_issue_number}..."
+	parent_issue_id=$(fetch_parent_issue_id)
+
+	if [ -z "$parent_issue_id" ] || [ "$parent_issue_id" = "null" ]; then
+		echo -e "Failed to fetch parent issue."
+		exit 1
+	fi
+
+	echo "Creating sub-issue relationship..."
+	sub_issue_response=$(create_sub_issue_relationship "$parent_issue_id" "$child_issue_id")
+	sub_issue_success=$(echo "$sub_issue_response" | jq -r '.data.addSubIssue.subIssue.number')
+
+	if [ -z "$sub_issue_success" ] || [ "$sub_issue_success" = "null" ]; then
+		echo -e "Failed to create sub-issue relationship. Response: ${sub_issue_response}"
+		exit 1
+	fi
+
+	echo -e "Successfully created sub-issue relationship between #${parent_issue_number} and #${child_issue_number}"
+
+	print_success
+	exit 0
+}
+
+# Set an error handler to capture errors and perform any clean-up tasks:
+trap 'on_error $?' ERR
+
+# Run main:
+main

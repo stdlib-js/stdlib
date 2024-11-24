@@ -386,6 +386,22 @@ jobs:
             make lint-c-files FILES="${files}" CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_benchmarks_suppressions_list}"
           fi
 
+      # Create sub-issue for C linting failures:
+      - name: 'Create sub-issue for C lint failures'
+        if: ( github.event.inputs.c != 'false' ) && failure() && contains(steps.*.outcome, 'failure') && contains(job.steps.*.name, 'Lint C files')
+        env:
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+        run: |
+          # Create a temporary file for storing lint error messages:
+          ERROR_LOG=$(mktemp)
+          grep -B 1 -A 2 "style:\|warning:\|error:" <<< "${{ steps.lint-c.outputs.stderr }}" > $ERROR_LOG
+
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_lint_sub_issue.sh" \
+            "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+            "C" \
+            "3235" \ # Number of C lint error tracking issue
+            "$ERROR_LOG"
+
       # Lint TypeScript declarations files:
       - name: 'Lint TypeScript declarations files'
         if: ( github.event.inputs.javascript != 'false' ) && ( success() || failure() )
