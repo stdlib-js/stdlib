@@ -56,17 +56,17 @@ double API_SUFFIX(stdlib_strided_dapxsumpw)( const CBLAS_INT N, const double alp
 * @param N        number of indexed elements
 * @param alpha    scalar constant
 * @param X        input array
-* @param strideX  index increment
+* @param strideX  stride length
 * @param offsetX  starting index
 * @return         output value
 *
 */
 double API_SUFFIX(stdlib_strided_dapxsumpw_ndarray)( const CBLAS_INT N, const double alpha, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
-	double sum;
 	CBLAS_INT ix;
 	CBLAS_INT M;
 	CBLAS_INT n;
 	CBLAS_INT i;
+	double sum;
 	double s0;
 	double s1;
 	double s2;
@@ -79,10 +79,10 @@ double API_SUFFIX(stdlib_strided_dapxsumpw_ndarray)( const CBLAS_INT N, const do
 	if ( N <= 0 ) {
 		return 0.0;
 	}
-	if ( N == 1 || strideX == 0 ) {
-		return alpha + X[ offsetX ];
-	}
 	ix = offsetX;
+	if ( strideX == 0 ) {
+		return N * ( alpha + X[ ix ] );
+	}
 	if ( N < 8 ) {
 		// Use simple summation...
 		sum = 0.0;
