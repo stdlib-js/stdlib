@@ -22,6 +22,8 @@
 #include "stdlib/napi/argv.h"
 #include "stdlib/napi/argv_int64.h"
 #include "stdlib/napi/argv_strided_float64array.h"
+#include "stdlib/strided/base/stride2offset.h"
+#include <stdint.h>
 #include <node_api.h>
 
 /**
@@ -39,17 +41,10 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, strideX, argv, 1 );
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, Out, 2, strideOut, argv, 3 );
 
-	int io;
-	if ( strideOut < 0 ) {
-		io = -strideOut;
-	} else {
-		io = 0;
-	}
-
-	double *out = Out;
+	int64_t io = stdlib_strided_stride2offset( 2, strideOut );
 	CBLAS_INT n;
-	out[ io ] = API_SUFFIX(stdlib_strided_dnannsumors)( N, X, strideX, &n );
-	out[ io + strideOut ] = (double)n;
+	Out[ io ] = API_SUFFIX(stdlib_strided_dnannsumors)( N, X, strideX, &n );
+	Out[ io + strideOut ] = (double)n;
 
 	return NULL;
 }
@@ -71,11 +66,9 @@ static napi_value addon_method( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, strideX, argv, 1 );
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, Out, 2, strideOut, argv, 4 );
 
-	int io = offsetOut;
-	double *out = Out;
 	CBLAS_INT n;
-	out[ io ] = API_SUFFIX(stdlib_strided_dnannsumors_ndarray)( N, X, strideX, offsetX, &n );
-	out[ io+strideOut ] = (double)n;
+	Out[ offsetOut ] = API_SUFFIX(stdlib_strided_dnannsumors_ndarray)( N, X, strideX, offsetX, &n );
+	Out[ offsetOut+strideOut ] = (double)n;
 
 	return NULL;
 }
