@@ -1,11 +1,11 @@
 
-{{alias}}( N, alpha, x, stride )
-    Adds a constant to each single-precision floating-point strided array
-    element and computes the sum using extended accumulation and returning an
-    extended precision result.
+{{alias}}( N, alpha, x, strideX )
+    Adds a scalar constant to each single-precision floating-point strided array
+    element, and computes the sum using extended accumulation and returning
+    an extended precision result.
 
-    The `N` and `stride` parameters determine which elements in the strided
-    array are accessed at runtime.
+    The `N` and stride parameters determine which elements in the strided array
+    are accessed at runtime.
 
     Indexing is relative to the first index. To introduce an offset, use a typed
     array view.
@@ -18,13 +18,13 @@
         Number of indexed elements.
 
     alpha: number
-        Constant.
+        Scalar constant.
 
     x: Float32Array
         Input array.
 
-    stride: integer
-        Index increment.
+    strideX: integer
+        Stride length.
 
     Returns
     -------
@@ -38,7 +38,7 @@
     > {{alias}}( x.length, 5.0, x, 1 )
     16.0
 
-    // Using `N` and `stride` parameters:
+    // Using `N` and stride parameters:
     > x = new {{alias:@stdlib/array/float32}}( [ -2.0, 1.0, 1.0, -5.0, 2.0, -1.0 ] );
     > {{alias}}( 3, 5.0, x, 2 )
     16.0
@@ -50,13 +50,14 @@
     14.0
 
 
-{{alias}}.ndarray( N, alpha, x, stride, offset )
-    Adds a constant to each single-precision floating-point strided array
-    element and computes the sum using extended accumulation and alternative
-    indexing semantics and returning an extended precision result.
+{{alias}}.ndarray( N, alpha, x, strideX, offsetX )
+    Adds a scalar constant to each single-precision floating-point strided array
+    element, and computes the sum using pairwise summation with extended
+    accumulation and alternative indexing semantics and returning an extended
+    precision result.
 
     While typed array views mandate a view offset based on the underlying
-    buffer, the `offset` parameter supports indexing semantics based on a
+    buffer, the offset parameter supports indexing semantics based on a
     starting index.
 
     Parameters
@@ -65,15 +66,15 @@
         Number of indexed elements.
 
     alpha: number
-        Constant.
+        Scalar constant.
 
     x: Float32Array
         Input array.
 
-    stride: integer
-        Index increment.
+    strideX: integer
+        Stride length.
 
-    offset: integer
+    offsetX: integer
         Starting index.
 
     Returns
