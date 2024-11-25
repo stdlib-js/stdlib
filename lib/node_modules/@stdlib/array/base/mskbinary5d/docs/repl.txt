@@ -1,0 +1,35 @@
+
+{{alias}}( arrays, shape, fcn )
+    Applies a binary callback to elements in two five-dimensional nested input
+    arrays according to elements in a five-dimensional nested mask array and
+    assigns results to elements in a five-dimensional nested output array.
+
+    An element in an input array is "masked" if the corresponding element in the
+    mask array is non-zero.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject
+        Array-like object containing two input nested arrays, an input nested
+        mask array, and one output nested array.
+
+    shape: Array<integer>
+        Array shape.
+
+    fcn: Function
+        Binary callback.
+
+    Examples
+    --------
+    > var x = [ [ [ [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] ] ] ];
+    > var y = [ [ [ [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] ] ] ];
+    > var m = [ [ [ [ [ 0, 1 ], [ 0, 0 ] ] ] ] ];
+    > var z = [ [ [ [ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ] ] ] ];
+    > var shape = [ 1, 1, 1, 2, 2 ];
+    > {{alias}}( [ x, y, m, z ], shape, {{alias:@stdlib/math/base/ops/add}} );
+    > z
+    [ [ [ [ [ 2.0, 0.0 ], [ 6.0, 8.0 ] ] ] ] ]
+
+    See Also
+    --------
+
