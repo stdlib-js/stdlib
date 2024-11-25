@@ -146,6 +146,133 @@ console.log( x );
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/blas/base/sscal.h"
+```
+
+#### c_sscal( N, alpha, \*X, stride )
+
+Multiplies each element of a single-precision floating-point vector by a constant.
+
+```c
+float x[] = { 1.0f, 2.0f, 3.0f, 4.0f };
+
+c_sscal( 4, 5.0f, x, 1 );
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **alpha**: `[in] float` scalar constant.
+-   **X**: `[inout] float*` input array.
+-   **stride**: `[in] CBLAS_INT` index increment for `X`.
+
+```c
+void c_sscal( const CBLAS_INT N, const float alpha, float *X, const CBLAS_INT stride );
+```
+
+#### c_sscal_ndarray( N, alpha, \*X, stride, offset )
+
+Multiplies each element of a single-precision floating-point vector by a constant using alternative indexing semantics.
+
+```c
+float x[] = { 1.0f, 2.0f, 3.0f, 4.0f };
+
+c_sscal_ndarray( 4, 5.0f, x, 1, 0 );
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **alpha**: `[in] float` scalar constant.
+-   **X**: `[inout] float*` input array.
+-   **stride**: `[in] CBLAS_INT` index increment for `X`.
+-   **offset**: `[in] CBLAS_INT` starting index for `X`.
+
+```c
+void c_sscal_ndarray( const CBLAS_INT N, const float alpha, float *X, const CBLAS_INT stride, const CBLAS_INT offset );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/blas/base/sscal.h"
+#include <stdio.h>
+
+int main( void ) {
+    // Create a strided array:
+    float x[] = { 1.0f, -2.0f, 3.0f, -4.0f, 5.0f, -6.0f, 7.0f, -8.0f };
+
+    // Specify the number of elements:
+    const int N = 8;
+
+    // Specify a stride:
+    const int stride = 1;
+
+    // Scale the vector:
+    c_sscal( N, 5.0f, x, stride );
+
+    // Print the result:
+    for ( int i = 0; i < 8; i++ ) {
+        printf( "x[ %i ] = %f\n", i, x[ i ] );
+    }
+
+    // Scale the vector using alternative indexing semantics:
+    c_sscal_ndarray( N, 5.0f, x, -stride, N-1 );
+
+    // Print the result:
+    for ( int i = 0; i < 8; i++ ) {
+        printf( "x[ %i ] = %f\n", i, x[ i ] );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
