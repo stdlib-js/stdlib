@@ -60,7 +60,6 @@
     "blas",
     "level 1",
     "sscal",
-    "dscal",
     "linear",
     "algebra",
     "scal",
@@ -72,7 +71,6 @@
     "ndarray",
     "float32",
     "float",
-    "single",
     "float32array"
   ],
   "__stdlib__": {
