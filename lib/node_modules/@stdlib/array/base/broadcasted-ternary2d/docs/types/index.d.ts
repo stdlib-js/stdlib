@@ -104,7 +104,7 @@ type InOutShapes = [
 * bternary2d( [ x, y, z, out ], shapes, add );
 *
 * console.log( out );
-* // => [ [ 3.0, 6.0 ], [ 9.0, 12.0 ] ]
+* // => [ [ 3.0, 3.0 ], [ 3.0, 3.0 ] ]
 */
 declare function bternary2d<T = unknown, U = unknown, V = unknown, W = unknown>( arrays: InOutArrays<T, U, V, W>, shapes: InOutShapes, fcn: Ternary<T, U, V, W> ): void;
 
