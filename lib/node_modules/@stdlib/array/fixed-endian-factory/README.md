@@ -316,6 +316,7 @@ Returns an array element located at integer position (index) `i`, with support f
 var Float64ArrayFE = fixedEndianFactory( 'float64' );
 
 var arr = new Float64ArrayFE( 'little-endian', [ 1.0, 2.0, 3.0 ] );
+// returns <Float64ArrayFE>
 
 var out = arr.at( 0 );
 // returns 1.0
@@ -330,6 +331,7 @@ If provided an out-of-bounds index, the method returns `undefined`.
 var Float64ArrayFE = fixedEndianFactory( 'float64' );
 
 var arr = new Float64ArrayFE( 'little-endian', [ 1.0, 2.0, 3.0 ] );
+// returns <Float64ArrayFE>
 
 var v = arr.at( 100 );
 // returns undefined
@@ -352,12 +354,13 @@ function isNegative( v ) {
 var Float64ArrayFE = fixedEndianFactory( 'float64' );
 
 var arr = new Float64ArrayFE( 'little-endian', [ -1.0, -2.0, -3.0, -4.0 ] );
+// returns <Float64ArrayFE>
 
 var bool = arr.every( isNegative );
 // returns true
 ```
 
-The invoked function is provided three arguments:
+The `predicate` function is provided three arguments:
 
 -   **value**: current array element.
 -   **index**: current array element index.
@@ -374,6 +377,7 @@ function isPositive( v, i ) {
 var Float64ArrayFE = fixedEndianFactory( 'float64' );
 
 var arr = new Float64ArrayFE( 'little-endian', [ 1.0, 2.0, -3.0 ] );
+// returns <Float64ArrayFE>
 
 var context = {
     'count': 0
@@ -400,6 +404,7 @@ function log( v, i ) {
 var Float64ArrayFE = fixedEndianFactory( 'float64' );
 
 var arr = new Float64ArrayFE( 'little-endian', 3 );
+// returns <Float64ArrayFE>
 
 arr.set( 1.5, 0 );
 arr.set( 2.5, 1 );
@@ -430,6 +435,7 @@ function fcn( v, i ) {
 var Float64ArrayFE = fixedEndianFactory( 'float64' );
 
 var arr = new Float64ArrayFE( 'little-endian', 3 );
+// returns <Float64ArrayFE>
 
 var context = {
     'count': 0
@@ -455,6 +461,7 @@ Returns an array element located at a nonnegative integer position (index) `i`.
 var Float64ArrayFE = fixedEndianFactory( 'float64' );
 
 var arr = new Float64ArrayFE( 'little-endian', 10 );
+// returns <Float64ArrayFE>
 
 // Set the first element:
 arr.set( 1.0, 0 );
@@ -470,6 +477,7 @@ If provided an out-of-bounds index, the method returns `undefined`.
 var Float64ArrayFE = fixedEndianFactory( 'float64' );
 
 var arr = new Float64ArrayFE( 'little-endian', 10 );
+// returns <Float64ArrayFE>
 
 var v = arr.get( 100 );
 // returns undefined
@@ -537,6 +545,7 @@ Serializes an array as a string.
 var Float64ArrayFE = fixedEndianFactory( 'float64' );
 
 var arr = new Float64ArrayFE( 'little-endian', [ 1.0, 2.0, 3.0 ] );
+// returns <Float64ArrayFE>
 
 var str = arr.toString();
 // returns '1,2,3'
