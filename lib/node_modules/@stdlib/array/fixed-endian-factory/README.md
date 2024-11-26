@@ -535,6 +535,56 @@ A few notes:
 -   If a target array cannot accommodate all values (i.e., the length of source array plus `i` exceeds the target array length), the method throws an error.
 -   If provided a typed array which shares an [`ArrayBuffer`][@stdlib/array/buffer] with the target array, the method will intelligently copy the source range to the destination range.
 
+<a name="method-some"></a>
+
+#### TypedArrayFE.prototype.some( predicate\[, thisArg] )
+
+Tests whether at least one element in an array passes a test implemented by a predicate function.
+
+```javascript
+function isPositive( v ) {
+    return v > 0;
+}
+
+var Float64ArrayFE = fixedEndianFactory( 'float64' );
+
+var arr = new Float64ArrayFE( 'little-endian', [ -1.0, 2.0, -3.0, -4.0 ] );
+// returns <Float64ArrayFE>
+
+var bool = arr.some( isPositive );
+// returns true
+```
+
+The `predicate` function is provided three arguments:
+
+-   **value**: current array element.
+-   **index**: current array element index.
+-   **arr**: the array on which this method was called.
+
+To set the function execution context, provide a `thisArg`.
+
+```javascript
+function isPositive( v, i ) {
+    this.count += 1;
+    return v > 0;
+}
+
+var Float64ArrayFE = fixedEndianFactory( 'float64' );
+
+var arr = new Float64ArrayFE( 'little-endian', [ -1.0, -2.0, -3.0 ] );
+// returns <Float64ArrayFE>
+
+var context = {
+    'count': 0
+};
+
+var bool = arr.some( isPositive, context );
+// returns false
+
+var count = context.count;
+// returns 3
+```
+
 <a name="method-to-string"></a>
 
 #### TypedArrayFE.prototype.toString()
