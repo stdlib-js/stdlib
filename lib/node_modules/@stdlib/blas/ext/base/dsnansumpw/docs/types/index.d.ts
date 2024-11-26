@@ -41,7 +41,7 @@ interface Routine {
 	( N: number, x: Float32Array, strideX: number ): number;
 
 	/**
-	* Computes the sum of single-precision floating-point strided array elements, ignoring `NaN` values, using pairwise summation with extended accumulation, and alternative indexing semantics, and returning an extended precision result.
+	* Computes the sum of single-precision floating-point strided array elements, ignoring `NaN` values, using pairwise summation with extended accumulation and alternative indexing semantics, and returning an extended precision result.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array

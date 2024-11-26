@@ -34,7 +34,7 @@ extern "C" {
 double API_SUFFIX(stdlib_strided_dsnansumpw)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX );
 
 /**
-* Computes the sum of single-precision floating-point strided array elements, ignoring `NaN` values, using pairwise summation with extended accumulation, and alternative indexing semantics, and returning an extended precision result.
+* Computes the sum of single-precision floating-point strided array elements, ignoring `NaN` values, using pairwise summation with extended accumulation and alternative indexing semantics, and returning an extended precision result.
 */
 double API_SUFFIX(stdlib_strided_dsnansumpw_ndarray)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
 

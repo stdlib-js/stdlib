@@ -49,7 +49,7 @@
 
 {{alias}}.ndarray( N, x, strideX, offsetX )
     Computes the sum of single-precision floating-point strided array elements,
-    ignoring `NaN` values, using pairwise summation with extended accumulation,
+    ignoring `NaN` values, using pairwise summation with extended accumulation
     and alternative indexing semantics, and returning an extended precision
     result.
 
