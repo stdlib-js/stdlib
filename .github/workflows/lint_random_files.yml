@@ -193,7 +193,7 @@ jobs:
           lint_filenames="${root}/lib/node_modules/@stdlib/_tools/lint/filenames/bin/cli"
 
           # Lint filenames:
-          echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' || "${lint_filenames}"
+          echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | "${lint_filenames}"
 
       # Lint Markdown files:
       - name: 'Lint Markdown files'
@@ -345,6 +345,7 @@ jobs:
 
       # Lint C files:
       - name: 'Lint C files'
+        id: lint-c
         if: ( github.event.inputs.c != 'false' ) && ( success() || failure() )
         run: |
           # Determine root directory:
@@ -388,7 +389,7 @@ jobs:
 
       # Create sub-issue for C linting failures:
       - name: 'Create sub-issue for C lint failures'
-        if: ( github.event.inputs.c != 'false' ) && failure() && contains(steps.*.outcome, 'failure') && contains(job.steps.*.name, 'Lint C files')
+        if: ( github.event.inputs.c != 'false' ) && failure() && contains(steps.*.outcome, 'failure') && contains(steps.lint-c.outcome, 'failure')
         env:
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
         run: |
