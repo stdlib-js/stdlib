@@ -483,6 +483,38 @@ var v = arr.get( 100 );
 // returns undefined
 ```
 
+<a name="method-index-of"></a>
+
+#### TypedArrayFE.prototype.indexOf( searchElement\[, fromIndex] )
+
+Returns the first index at which a given element can be found.
+
+```javascript
+var Float64ArrayFE = fixedEndianFactory( 'float64' );
+
+var arr = new Float64ArrayFE( 'little-endian', [ 1.0, 2.0, 3.0, 4.0, 2.0 ] );
+
+var idx = arr.indexOf( 2.0 );
+// returns 1
+
+idx = arr.indexOf( 2.0, 2 );
+// returns 4
+
+idx = arr.indexOf( 2.0, -4 );
+// returns 1
+```
+
+If `searchElement` is not present in the array, the method returns `-1`.
+
+```javascript
+var Float64ArrayFE = fixedEndianFactory( 'float64' );
+
+var arr = new Float64ArrayFE( 'little-endian', [ 1.0, 2.0, 3.0, 4.0, 2.0 ] );
+
+var idx = arr.indexOf( 5.0 );
+// returns -1
+```
+
 <a name="method-map"></a>
 
 #### TypedArray.prototype.map( callbackFn\[, thisArg] )
