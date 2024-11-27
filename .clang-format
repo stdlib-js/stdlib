@@ -1,0 +1,1842 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2024 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+#/
+# Set the language for subsequent configuration.
+#
+# ## Notes
+#
+# -   `Cpp` applies to both C++ and C.
+#/
+Language: Cpp
+
+#/
+# Set the C++ standard.
+#/
+Standard: Auto
+
+#/
+# Enable formatting.
+#/
+DisableFormat: false
+
+#/
+# Set the column limit.
+#
+# ## Notes
+#
+# -   Intentionally set to a large number in order to prevent clang from introducing line breaks except in egregious situations.
+#/
+ColumnLimit: 1024
+
+#/
+# Set the tab width.
+#/
+TabWidth: 4
+
+#/
+# Set the indentation width.
+#
+# @example
+# // Good...
+# double foo() {
+#     return 3.0;
+# }
+#
+# @example
+# // Bad...
+# double foo() {
+#   return 3.0;
+# }
+#/
+IndentWidth: 4
+
+#/
+# Always use tab characters to fill whitespace.
+#/
+UseTab: Always
+
+#/
+# Always use `\n` for line endings.
+#/
+LineEnding: LF
+
+#/
+# Always insert a newline at the end of a file if a newline is missing.
+#/
+InsertNewlineAtEOF: true
+
+#/
+# Disable horizontal alignment of arguments after an open bracket.
+#
+# @example
+# // Good...
+# someLongFunction( argument1, argument2 );
+#
+# @example
+# // Bad...
+# someLongFunction( argument1,
+#                   argument2 );
+#/
+AlignAfterOpenBracket: false
+
+#/
+# Align fields in an array of structs.
+#
+# @example
+# // Good...
+# struct test demo[] = {
+#    {  1,  2,  3 },
+#    { -1, -2, -3 }
+# }
+#/
+AlignArrayOfStructures: Right
+
+#/
+# Disable aligning consecutive assignments.
+#
+# @example
+# // Good...
+# double foo = 1;
+# float bar = 2;
+#
+# @example
+# // Bad...
+# double foo = 1;
+# float bar  = 2;
+#/
+AlignConsecutiveAssignment:
+  Enabled: false
+
+#/
+# Disable aligning consecutive bit fields.
+#
+# @example
+# // Good...
+# int aaaa: 1;
+# int b: 12;
+# int ccc: 8;
+#
+# @example
+# // Bad...
+# int aaaa : 1;
+# int b    : 12;
+# int ccc  : 8;
+#/
+AlignConsecutiveBitFields:
+  Enabled: false
+
+#/
+# Disable aligning consecutive declarations.
+#
+# @example
+# // Good...
+# double aaaa = 1;
+# float b = 2;
+# int c = 3;
+#
+# @example
+# // Bad...
+# double aaaa = 1;
+# float  b = 2;
+# int    c = 3;
+#/
+AlignConsecutiveDeclarations:
+  Enabled: false
+
+#/
+# Disable aligning consecutive macros.
+#
+# @example
+# // Good...
+# #define SHORT_NAME 1
+# #define LONGER_NAME 2
+# #define foo( x ) ( x * x )
+#
+# @example
+# // Bad...
+# #define SHORT_NAME  1
+# #define LONGER_NAME 2
+# #define foo( x )    ( x * x )
+#/
+AlignConsecutiveMacros:
+  Enabled: false
+
+#/
+# Disable aligning consecutive short case labels.
+#
+# @example
+# // Good...
+# switch ( level ) {
+# case 1: return "foo";
+# case 123: return "bar";
+# }
+#
+# @example
+# // Bad...
+# switch ( level ) {
+# case 1:   return "foo";
+# case 123: return "bar";
+# }
+#/
+AlignConsecutiveShortCaseStatements:
+  Enabled: false
+
+#/
+# Disable aligning consecutive TableGen DAGArg operator colons.
+#/
+AlignConsecutiveTableGenBreakingDAGArgColons:
+  Enabled: false
+
+#/
+# Disable aligning consecutive TableGen cond operator colons.
+#/
+AlignConsecutiveTableGenCondOperatorColons:
+  Enabled: false
+
+#/
+# Disable aligning consecutive TableGen definition colons.
+#/
+AlignConsecutiveTableGenDefinitionColons:
+  Enabled: false
+
+#/
+# Align backslashes in escaped newlines with the right-most column.
+#
+# @example
+# // Good...
+# #define A                                      \
+#      int a;                                    \
+#      int b;                                    \
+#      int c;
+#
+# @example
+# // Bad...
+# #define A \
+#      int a; \
+#      int b; \
+#      int c;
+#/
+AlignEscapedNewlines: DontAlign # NOTE: disabled due to very large column limit
+
+#/
+# Disable horizontally aligning operands.
+#
+# @example
+# // Good...
+# int aaa = bbbbbbbbbbbbbbb + ccccccccccccccc;
+#
+# @example
+# // Bad...
+# int aaa = bbbbbbbbbbbbbbb +
+#           ccccccccccccccc;
+#
+# @example
+# // Bad...
+# int aaa = bbbbbbbbbbbbbbb
+#         + ccccccccccccccc;
+#/
+AlignOperands: DontAlign
+
+#/
+# Align trailing comments on consecutive lines.
+#
+# @example
+# // Good...
+# int a;   // Comment
+# int ab;  // Comment
+#
+# @example
+# // Bad...
+# int a; // Comment
+# int ab; // Comment
+#/
+AlignTrailingComments:
+  Kind: Always
+  OverEmptyLines: 0
+
+#/
+# Disallow putting arguments onto the next line.
+#
+# @example
+# // Good...
+# foo( a, b, c, d );
+#
+# @example
+# // Bad...
+# foo(
+#      a, b, c, d );
+#/
+AllowAllArgumentsOnNextLine: false
+
+#/
+# Disallow putting all parameters of a function declaration onto the next line.
+#
+# @example
+# // Good...
+# void foo( int a, int b, int c, int d);
+#
+# @example
+# // Bad...
+# void foo( int a,
+#           int b,
+#           int c,
+#           int d );
+#/
+AllowAllParametersOfDeclarationOnNextLine: false
+
+#/
+# Disallow inserting a line break before a `noexcept` specifier.
+#/
+AllowBreakBeforeNoexceptSpecifier: Never
+
+#/
+# Disallow placing short blocks on a single line, except for empty blocks.
+#
+# @example
+# // Good...
+# while ( true ) {
+#     continue;
+# }
+#
+# @example
+# // Good...
+# while ( true ) {}
+#
+# @example
+# // Bad...
+# while ( true ) { continue; }
+#/
+AllowShortBlocksOnASingleLine: Empty
+
+#/
+# Disallow short case expressions on a single line.
+#
+# @example
+# // Good...
+# switch ( a ) {
+# case 1 ->
+#     1;
+# }
+#
+# @example
+# // Bad...
+# switch ( a ) {
+# case 1 -> 1;
+# }
+#/
+AllowShortCaseExpressionOnASingleLine: false
+
+#/
+# Disallow short case labels on a single line.
+#
+# @example
+# // Good...
+# switch ( a ) {
+# case 1:
+#     x = 1;
+#     break;
+# case 2:
+#     return;
+# }
+#
+# @example
+# // Bad...
+# switch ( a ) {
+# case 1: x = 1; break;
+# case 2: return;
+# }
+#/
+AllowShortCaseLabelsOnASingleLine: false
+
+#/
+# Disallow short compound requirement on a single line.
+#/
+AllowShortCompoundRequirementOnASingleLine: false
+
+#/
+# Disallow short enums on a single line.
+#
+# @example
+# // Good...
+# enum {
+#     A,
+#     B
+# } Foo;
+#
+# @example
+# // Bad...
+# enum { A, B } Foo;
+#/
+AllowShortEnumsOnASingleLine: false
+
+#/
+# Disallow short function declarations on a single line, except for empty functions.
+#
+# @example
+# // Good...
+# int f() {
+#     return 0;
+# }
+#
+# @example
+# // Good...
+# void f() {}
+#
+# @example
+# // Bad...
+# int f() { return 0; }
+#/
+AllowShortFunctionsOnASingleLine: Empty
+
+#/
+# Disallow short `if` statements being put on a single line.
+#
+# @example
+# // Good...
+# if ( a ) {
+#     return;
+# }
+#
+# @example
+# // Bad...
+# if ( a ) return;
+#/
+AllowShortIfStatementsOnASingleLine: Never;
+
+#/
+# Disallow short lambda functions being put on a single line, except for empty lambda functions.
+#/
+AllowShortLambdasOnASingleLine: Empty;
+
+#/
+# Disallow short loops on a single line.
+#
+# @example
+# // Good...
+# while ( true ) {
+#     continue;
+# }
+#
+# @example
+# // Bad...
+# while ( true ) continue;
+#/
+AllowShortLoopsOnASingleLine: false
+
+#/
+# Disable breaking before multiline string literals.
+#
+# @example
+# // Good...
+# a = "bbbbb" "ccccc";
+#
+# @example
+# // Bad...
+# a =
+#     "bbbbb"
+#     "ccccc"
+#/
+AlwaysBreakBeforeMultilineStrings: false
+
+#/
+# Pack function call arguments into the same line.
+#
+# @example
+# // Good...
+# f( a, b, c );
+#
+# @example
+# // Bad...
+# f( a,
+#    b,
+#    c );
+#/
+BinPackArguments: true
+
+#/
+# Pack function parameters into the same line.
+#
+# @example
+# // Good...
+# void f( int a, int b, int c );
+#
+# @example
+# // Bad...
+# void f( int a,
+#         int b,
+#         int c );
+#/
+BinPackParameters: BinPack
+
+#/
+# Always include a space after the colon for bitfields.
+#
+# @example
+# // Good...
+# unsigned bf: 2;
+#
+# @example
+# // Bad...
+# unsigned bf : 2;
+#
+# @example
+# // Bad...
+# unsigned bf:2;
+#/
+BitFieldColonSpacing: After
+
+#/
+# Specify the number of columns to use to indent the contents of braced init lists.
+#
+# @example
+# // Good...
+# SomeArrayT a[ 3 ] = {
+#     {
+#         foo,
+#         bar
+#     }
+# };
+#/
+BracedInitializerIndentWidth: 4
+
+#/
+# Disable breaking between adjacent string literals.
+#
+# @example
+# // Good...
+# a = "Code" "\0\52\26\55\55\0" "x013" "\02\xBA";
+#
+# @example
+# // Bad...
+# a = "Code"
+#     "\0\52\26\55\55\0"
+#     "x013"
+#     "\02\xBA";
+#/
+BreakAdjacentStringLiterals: false
+
+#/
+# Always break after a group of C++11 attributes before variable or function declaration/definition names or before control statements.
+#
+# @example
+# // Good...
+# [[maybe_unused]]
+# const int i;
+#
+# @example
+# // Bad...
+# [[maybe_unused]] const int i;
+#/
+BreakAfterAttributes: Always
+
+#/
+# Disable breaking after a function declaration return type.
+#
+# @example
+# // Good...
+# int foo();
+#
+# @example
+# // Bad...
+# int
+# foo();
+#/
+BreakAfterReturnType: Automatic
+
+#/
+# Disable breaking before binary operators.
+#
+# @example
+# // Good...
+# int a = b + c;
+#
+# @example
+# // Bad...
+# int a = b
+#       + c
+#/
+BreakBeforeBinaryOperators: None;
+
+#/
+# Always attach braces to surrounding context.
+#
+# @example
+# // Good...
+# int f( int a, int b ) {
+#     return a + b;
+# }
+#
+# @example
+# // Bad...
+# int f( int a, int b )
+# {
+#     return a + b;
+# }
+#/
+BreakBeforeBraces: Attach
+
+#/
+# Disallow breaking before concept declarations.
+#
+# @example
+# // Good...
+# template <typename T> concept C = ...;
+#
+# @example
+# // Bad...
+# template <typename T>
+# concept C = ...;
+#/
+BreakBeforeConceptDeclarations: Never
+
+#/
+# Only break before an inline ASM colon if the line length is longer than the column limit.
+#
+# @example
+# // Good...
+# asm volatile( "string", : : val );
+#
+# @example
+# // Bad...
+# asm volatile( "string",
+#               :
+#               : val );
+#/
+BreakBeforeInlineASMColon: OnlyMultiline
+
+#/
+# Always break before ternary operators if the line length is longer than the column limit.
+#
+# @example
+# // Good...
+# a = b ? c : d;
+#
+# @example
+# // Bad...
+# a = b ?
+#     c :
+#     d;
+#/
+BreakBeforeTernaryOperators: true
+
+#/
+# Never break binary operations.
+#
+# @example
+# // Good...
+# a = b + ( c*d ) + e;
+#
+# @example
+# // Bad...
+# a = b +
+#     ( c *
+#       d ) +
+#     e;
+#/
+BreakBinaryOperations: Never
+
+#/
+# Break constructor initializers after the colon and commas.
+#
+# @example
+# // Okay...
+# Constructor():
+#    initializer1(),
+#    initializer2()
+#/
+BreakConstructorInitializers: AfterColon
+
+#/
+# Disallow breaking before function definition parameters.
+#
+# @example
+# // Good...
+# int foo( int a, int b ) {}
+#
+# @example
+# // Bad...
+# int foo(
+#     int a, int b ) {}
+#/
+BreakFunctionDefinitionParameters: false
+
+#/
+# Break an inheritance list after the colon and commas if the line length is longer than the column limit.
+#
+# @example
+# // Okay...
+# class Foo:
+#     Base 1,
+#     Base 2
+# {}
+#/
+BreakInheritanceList: AfterColon
+
+#/
+# Allow breaking string literals when formatting if the line length is longer than the column limit.
+#
+# @example
+# // Okay...
+# const char *x = "aaaaaaa"
+#                 "bbbbbbb"
+#/
+BreakStringLiterals: true
+
+#/
+# Never break before a template declaration.
+#
+# @example
+# // Good...
+# template <typename T> T foo() {}
+#
+# @example
+# // Bad...
+# template <typename T>
+# T foo() {}
+#/
+BreakTemplateDeclarations: No
+
+#/
+# Always require that consecutive namespace declarations be on separate lines.
+#
+# @example
+# // Good...
+# namespace Foo {
+#     namespace Bar {}
+# }
+#
+# @example
+# // Bad...
+# namespace Foo { namespace Bar {} }
+#/
+CompactNamespaces: false
+
+#/
+# Set the number of characters to use for indentation of constructor initializer and inheritance lists.
+#/
+ConstructorInitializerIndentWidth: 4
+
+#/
+# Set the indentation width for line continuations.
+#/
+ContinuationIndentWidth: 4
+
+#/
+# Disable formatting braced lists.
+#
+# @example
+# // Good...
+# new int[ 3 ]{ 1, 2, 3 }
+#
+# @example
+# // Bad...
+# new int[3]{1, 2, 3}
+#/
+Cpp11BracedListStyle: false
+
+#/
+# Disable inferring pointer alignment in order to ensure consistent pointer and reference alignment styles.
+#/
+DerivePointerAlignment: false
+
+#/
+# Always remove empty lines after access modifiers.
+#
+# @example
+# // Good...
+# struct foo {
+#     private:
+#         int i;
+#
+#     public:
+#         foo() {}
+# }
+#
+# @example
+# // Bad...
+# struct foo {
+#     private:
+#
+#         int i;
+#
+#     public:
+#
+#         foo() {}
+# }
+#/
+EmptyLineAfterAccessModifier: Never
+
+#/
+# Always include empty lines before access modifiers.
+#
+# @example
+# // Good...
+# struct foo {
+#     private:
+#         int i;
+#
+#     public:
+#         foo() {}
+# }
+#
+# @example
+# // Bad...
+# struct foo {
+#     private:
+#         int i;
+#     public:
+#         foo() {}
+# }
+#/
+EmptyLineBeforeAccessModifier: Always
+
+#/
+# Always add a namespace comment for long namespaces.
+#
+# @example
+# // Okay...
+# namespace a {
+#     void foo();
+#     void bar();
+# } // namespace a
+#/
+FixNamespaceComments: true
+
+#/
+# Always merge multiple `#include` blocks together and sort as one.
+#
+# @example
+# // Good...
+# #include "a.h"
+# #include "b.h"
+# #include "<stdint.h>"
+#
+# @example
+# // Bad...
+# #include "b.h"
+#
+# #include "<stdint.h>"
+# #include "a.h"
+#/
+IncludeBlocks: Merge
+
+#/
+# Define `#include` categories and assign ordering priorities.
+#
+# ## Notes
+#
+# -   The main header for a source file should automatically be assigned top priority.
+#/
+IncludeCategories:
+  # stdlib headers should always sorted to the top...
+  - Regex: '^"(stdlib)/'
+    Priority: 2
+    CaseSensitive: true
+
+  # Vendor headers should always come after stdlib headers...
+  - Regex: '^((<|")(node_api)/)'
+    Priority: 3
+
+  # Built-in headers (e.g., `<stdint.h>`) should always come at the end...
+  - Regex: '<[[:alnum:].]+>'
+    Priority: 4
+
+  # All other headers (e.g., those resolved using relative paths) should come first...
+  - Regex: '.*'
+    Priority: 1
+
+#/
+# Always indent access modifiers.
+#
+# @example
+# // Good...
+# class C {
+#     public:
+#         D();
+# }
+#
+# @example
+# // Bad...
+# class C {
+# public:
+#     D();
+# }
+#/
+IndentAccessModifiers: true
+
+#/
+# Disable indenting case label blocks.
+#
+# @example
+# // Okay...
+# switch ( foo ) {
+# case 1: {
+#     bar();
+# } break;
+# }
+#
+# @example
+# // Bad...
+# switch ( foo ) {
+# case 1:
+#     {
+#         bar();
+#     }
+#     break;
+# }
+#/
+IndentCaseBlocks: false
+
+#/
+# Disable indenting case labels one level from `switch` statement.
+#
+# @example
+# // Good...
+# switch ( foo ) {
+# case 1:
+#     bar();
+#     break;
+# }
+# @example
+# // Bad...
+# switch ( foo ) {
+#     case 1:
+#         bar();
+#         break;
+# }
+#/
+IndentCaseLabels: false
+
+#/
+# Disable indenting `extern` blocks.
+#
+# @example
+# // Good...
+# extern "C" {
+#
+# void foo();
+#
+# }
+#
+# @example
+# // Bad...
+# extern "C" {
+#
+#     void foo();
+#
+# }
+#/
+IndentExternBlock: NoIndent
+
+#/
+# Don't indent `goto` labels.
+#
+# @example
+# // Okay...
+# int f() {
+#     if ( foo() ) {
+# label1:
+#         bar();
+#     }
+# label2:
+#     return 1;
+# }
+#/
+IndentGotoLabels: false
+
+#/
+# Never indent preprocessor directives.
+#
+# @example
+# // Good...
+# #if FOO
+# #if BAR
+# #include <foo>
+# #endif
+# #endif
+#
+# @example
+# // Bad...
+# #if FOO
+#     #if BAR
+#         #include <foo>
+#     #endif
+# #endif
+#/
+IndentPPDirectives: None
+
+#/
+# Never indent a `requires` clause in C++.
+#
+# @example
+# // Good...
+# template <typename It>
+# requires Iterator<It>
+# void sort(It begin, It end) {
+#     //....
+# }
+#/
+IndentRequiresClause: false
+
+#/
+# Never indent long function names.
+#
+# @example
+# // Good...
+# LoooooooonnngReturnType LonnnnnnngFunctionDeclaration();
+#
+# @example
+# // Bad...
+# LoooooooonnngReturnType
+#     LonnnnnnngFunctionDeclaration();
+#/
+IndentWrappedFunctionNames: false
+
+#/
+# Never automatically insert brace after control statements in C++.
+#
+# ## Notes
+#
+# -   Setting this option to `true` can lead to incorrect code formatting due to incomplete semantic information.
+#/
+InsertBraces: false
+
+#/
+# Never insert trailing commas in container literals that wrap across multiple lines.
+#
+# @example
+# // Good...
+# int a[3] = {
+#     1,
+#     2,
+#     3
+# };
+#
+# @example
+# // Bad...
+# int a[3] = {
+#     1,
+#     2,
+#     3,
+# };
+#/
+InsertTrailingCommas: None
+
+#/
+# Never insert integer literal separators.
+#
+# @example
+# // Good...
+# int a = 1234;
+#
+# @example
+# // Bad...
+# int a = 1'234
+#/
+IntegerLiteralSeparator:
+  Binary: -1
+  Decimal: -1
+  Hex: -1
+
+#/
+# Remove unnecessary empty lines.
+#
+# @example
+# // Good...
+# if ( foo ) {
+#     bar();
+# }
+#
+# @example
+# // Bad...
+# if ( foo ) {
+#
+#     bar();
+# }
+#/
+KeepEmptyLines:
+  AtEndOfFile: false
+  AtStartOfBlock: false
+  AtStartOfFile: false
+
+#/
+# Remove form feed characters.
+#/
+KeepFormFeed: false
+
+#/
+# Align lambda function bodies relative to the outer scope.
+#
+# @example
+# // Okay...
+# someMethod( []( SomeReallyLongLambdaSignatureArgument foo ) {
+#     return;
+# });
+#/
+LambdaBodyIndentation: OuterScope
+
+#/
+# When guessing whether a `#include` is the "main" include, only consider includes which use quotes.
+#/
+MainIncludeChar: Quote
+
+#/
+# Limit the number of consecutive empty lines.
+#
+# @example
+# // Good...
+# int f() {
+#     int a = 1;
+#
+#     int b = bar( a );
+#
+#     return b;
+# }
+#
+# @example
+# // Bad...
+# int f() {
+#     int a = 1;
+#
+#
+#
+#     int b = bar( a );
+#
+#
+#     return b;
+# }
+#/
+MaxEmptyLinesToKeep: 1
+
+#/
+# Always indent namespaces.
+#
+# @example
+# // Good...
+# namespace out {
+#     namespace in {
+#         int i;
+#     }
+# }
+#
+# @example
+# // Bad...
+# namespace out {
+# namespace in {
+#     int i;
+# }
+# }
+#/
+NamespaceIndentation: All
+
+#/
+# Set the number of columns to use for indentation of preprocessor statements.
+#
+# @example
+# // Good...
+# #ifdef __linux__
+# #define FOO
+# #endif
+#
+# @example
+# // Bad...
+# #ifdef __linux__
+# #    define FOO
+# #endif
+#/
+PPIndentWidth: 0
+
+#/
+# Pack constructor initializers on the current line if they fit.
+#
+# @example
+# // Good...
+# Constructor(): a(), b(), c()
+#
+# @example
+# // Bad...
+# Constructor():
+#     : a(), b(),
+#       c()
+#/
+PackConstructorInitializers: CurrentLine
+
+#/
+# Define the penalty for breaking around an assignment operator.
+#/
+PenaltyBreakAssignment: 10
+
+#/
+# Define the penalty for breaking a function call after `call(`.
+#/
+PenaltyBreakBeforeFirstCallParameter: 11
+
+#/
+# Define the penalty for each line break introduced inside a comment.
+#/
+PenaltyBreakComment: 2
+
+#/
+# Define the penalty for breaking before the first `<<`.
+#/
+PenaltyBreakFirstLessLess: 10
+
+#/
+# Define the penalty for breaking after `(`.
+#/
+PenaltyBreakOpenParenthesis: 9
+
+#/
+# Define the penalty for breaking after `::`.
+#/
+PenaltyBreakScopeResolution: 5
+
+#/
+# Define the penalty for each line break introduced inside a string literal.
+#/
+PenaltyBreakString: 3
+
+#/
+# Define the penalty for breaking after template declaration.
+#/
+PenaltyBreakTemplateDeclaration: 11
+
+#/
+# Define the penalty for each character outside of the column limit.
+#/
+PenaltyExcessCharacter: 0
+
+#/
+# Define the penalty for each character of whitespace indentation.
+#/
+PenaltyIndentedWhitespace: 0
+
+#/
+# Define the penalty for putting the return type of a function on its own line.
+#/
+PenaltyReturnTypeOnItsOwnLine: 6
+
+#/
+# Define the pointer alignment style.
+#
+# @example
+# // Good...
+# int *a;
+#
+# @example
+# // Bad...
+# int* a;
+#/
+PointerAlignment: Right
+
+#/
+# Never change specifiers/qualifiers (e.g., const/volatile).
+#/
+QualifierAlignment: Leave
+
+#/
+# Define the reference alignment style.
+#
+# @example
+# // Good...
+# int &a;
+#
+# @example
+# // Bad...
+# int& a;
+#/
+ReferenceAlignment: Right
+
+#/
+# Never reflow comments.
+#/
+ReflowComments: Never
+
+#/
+# Remove empty lines in unwrapped lines.
+#
+# @example
+# // Good...
+# int c = a + b;
+#
+# @example
+# // Bad...
+# int c
+#
+#     = a + b;
+#/
+RemoveEmptyLinesInUnwrappedLines: true
+
+#/
+# Always replace multiple parentheses with single parentheses.
+#
+# ## Notes
+#
+# -   This option can lead to incorrect formatting due to incomplete semantic information.
+#
+# @example
+# // Good...
+# return ( ( a + b ) - ( c + d ) );
+#
+# @example
+# // Bad...
+# return ( ( a + b ) - ( ( c + d ) ) );
+#/
+RemoveParentheses: MultipleParentheses
+
+#/
+# Always remove semicolons after the closing braces of functions and constructors/destructors.
+#
+# ## Notes
+#
+# -   This option can lead to incorrect formatting due to incomplete semantic information.
+#
+# @example
+# // Good...
+# int foo() {
+#     return 2;
+# }
+#
+# @example
+# // Bad...
+# int foo() {
+#     return 2;
+# };
+#/
+RemoveSemicolon: true
+
+#/
+# Always position a `requires` clause on a single lie with everything else.
+#
+# @example
+# // Good...
+# template <typename T> requires C<T> struct Foo {}
+#
+# @example
+# // Bad...
+# template <typename T> requires C<T>
+# struct Foo {}
+#/
+RequiresClausePosition: SingleLine
+
+#/
+# Always align expression bodies with outer scope.
+#
+# @example
+# // Good...
+# template <typename T> concept C = requires(T t) {
+#     ...
+# }
+#
+# @example
+# // Bad...
+# template <typename T>
+# concept C = requires(T t) {
+#                 ...
+#             }
+#/
+RequiresExpressionIndentation: OuterScope
+
+#/
+# Include an empty line between definition blocks, including classes, structs, enums, and functions.
+#
+# @example
+# // Good...
+# #include "foo.h"
+#
+# struct Foo {
+#     int a, b, c;
+# }
+#
+# struct Bar {
+#     int x, y, z;
+# }
+#
+# @example
+# // Bad...
+# #include "foo.h"
+# struct Foo {
+#     int a, b, c;
+# }
+# struct Bar {
+#     int x, y, z;
+# }
+#/
+SeparateDefinitionBlocks: Always
+
+#/
+# Require that all namespaces have wrapped lines.
+#
+# @example
+# // Good...
+# namespace a {
+#     int foo;
+# } // namespace a
+#
+# @example
+# // Bad...
+# namespace a {
+#     int foo;
+# }
+#/
+ShortNamespaceLines: 0
+
+#/
+# Avoid formatting a macro definition body.
+#/
+SkipMacroDefinitionBody: true
+
+#/
+# Sort includes in a case sensitive fashion.
+#/
+SortIncludes: CaseSensitive
+
+#/
+# Sort using declarations in lexicographic order.
+#/
+SortUsingDeclarations: Lexicographic
+
+#/
+# Never include a space after C style casts.
+#
+# @example
+# // Good...
+# (int)i;
+#
+# @example
+# // Bad...
+# (int) i;
+#/
+SpaceAfterCStyleCast: false
+
+#/
+# Never include a space after the logical not operator (!).
+#
+# @example
+# // Good...
+# !foo();
+#
+# @example
+# // Bad...
+# ! foo();
+#/
+SpaceAfterLogicalNot: false
+
+#/
+# Never include a space after the `template` keyword.
+#
+# @example
+# // Good...
+# template<int> void foo();
+#
+# @example
+# // Bad...
+# template <int> void foo();
+#/
+SpaceAfterTemplateKeyword: false
+
+#/
+# Rely on pointer alignment for determining spaces around pointer qualifiers.
+#
+# @example
+# // Okay...
+# void *const *x = NULL:
+#/
+SpaceAroundPointerQualifiers: Default
+
+#/
+# Always include spaces before assignment operators.
+#
+# @example
+# // Good...
+# int a = 5;
+#
+# @example
+# // Bad...
+# int a= 5;
+#/
+SpaceBeforeAssignmentOperators: true
+
+#/
+# Never include a space before a `case` colon.
+#
+# @example
+# // Good...
+# switch ( foo ) {
+# case 1:
+#     break;
+# }
+#
+# @example
+# // Bad...
+# switch ( foo ) {
+# case 1 :
+#     break;
+# }
+#/
+SpaceBeforeCaseColon: false
+
+#/
+# Never include a space before a C++ braced list.
+#
+# @example
+# // Good...
+# new int[ 3 ]{ 1, 2, 3 };
+#
+# @example
+# // Bad...
+# new int[ 3 ] { 1, 2, 3 };
+#/
+SpaceBeforeCpp11BracedList: false
+
+#/
+# Never include a space before a constructor initializer.
+#
+# @example
+# // Good...
+# Foo::Foo(): a( a ) {}
+#
+# @example
+# // Bad...
+# Foo::Foo() : a( a ) {}
+#/
+SpaceBeforeCtorInitializerColon: false
+
+#/
+# Never include a space before an inheritance colon.
+#
+# @example
+# // Good...
+# class Foo: Bar {}
+#
+# @example
+# // Bad...
+# class Foo : Bar {}
+#/
+SpaceBeforeInheritanceColon: false
+
+#/
+# Specify when to put a space before opening parentheses.
+#
+# @example
+# // Good...
+# if ( foo ) {
+#     bar();
+# }
+#
+# @example
+# // Bad...
+# if( foo ) {
+#     bar();
+# }
+#/
+SpaceBeforeParens: Custom
+
+#/
+# Define custom rules for when to put a space before opening parentheses.
+#/
+SpaceBeforeParensOptions:
+  #/
+  # Always put a space before opening parentheses in control statements.
+  #
+  # @example
+  # // Good...
+  # if ( foo ) {
+  #     bar();
+  # }
+  #
+  # @example
+  # // Bad...
+  # if( foo ) {
+  #     bar();
+  # }
+  #/
+  AfterControlStatements: true
+
+  #/
+  # Never put a space before opening parentheses in foreach macros.
+  #
+  # @example
+  # // Good...
+  # FOREACH(...)
+  #
+  # @example
+  # // Bad...
+  # FOREACH (...)
+  #/
+  AfterForeachMacros: false
+
+  #/
+  # Never put a space before opening parentheses and after a function declaration name.
+  #
+  # @example
+  # // Good...
+  # void f();
+  #
+  # @example
+  # // Bad...
+  # void f ();
+  #/
+  AfterFunctionDeclarationName: false
+
+  #/
+  # Never put a space before opening parentheses in `if` macros.
+  #
+  # @example
+  # // Good...
+  # IF(...)
+  #
+  # @example
+  # // Bad...
+  # IF (...)
+  #/
+  AfterIfMacros: false
+
+  #/
+  # Never put a space between opening parentheses and operator overloading.
+  #
+  # @example
+  # // Good...
+  # void operator++(int a);
+  #
+  # @example
+  # // Bad...
+  # void operator++ (int a);
+  #/
+  AfterOverloadedOperator: false
+
+  #/
+  # Always put a space between opening parentheses and `new`/`delete` operators.
+  #
+  # @example
+  # // Good...
+  # new ( buf ) T;
+  #
+  # @example
+  # // Bad...
+  # new( buf ) T;
+  #/
+  AfterPlacementOperator: true
+
+  #/
+  # Never put a space between opening parentheses and `requires` clauses.
+  #
+  # @example
+  # // Good...
+  # template<typename T> concept C = requires( T t ) {}
+  #
+  # @example
+  # // Bad...
+  # template<typename T> concept C = requires ( T t ) {}
+  #/
+  AfterRequiresInExpression: false
+
+  #/
+  # Never distinguish between empty and non-empty parentheses.
+  #
+  # @example
+  # // Good...
+  # f( a );
+  # g();
+  #
+  # @example
+  # // Bad...
+  # f ( a );
+  # g();
+  #/
+  BeforeNonEmptyParentheses: false
+
+#/
+# Never include a space before a range-based loop colon.
+#
+# @example
+# // Good...
+# for ( auto v: values ) {}
+#
+# @example
+# // Bad...
+# for (auto v : values ) {}
+#/
+SpaceBeforeRangeBasedForLoopColon: false
+
+#/
+# Never include a space before square brackets.
+#
+# @example
+# // Good...
+# int a[ 5 ];
+#
+# @example
+# // Bad...
+# int a [ 5 ];
+#/
+SpaceBeforeSquareBrackets: false
+
+#/
+# Never include a space in an empty block.
+#
+# @example
+# // Good...
+# void f() {}
+#
+# @example
+# // Bad...
+# void f() { }
+#/
+SpaceInEmptyBlock: false
+
+#/
+# Always include only one space before trailing line comments.
+#/
+SpacesBeforeTrailingComments: 1
+
+#/
+# Never include spaces in template argument lists.
+#
+# @example
+# // Good...
+# static_cast<int>( arg );
+#
+# @example
+# // Bad...
+# static_cast< int >( arg );
+#/
+SpacesInAngles: Never
+
+#/
+# Always include spaces inside container literals.
+#
+# @example
+# // Good...
+# int a[ 5 ] = { 1, 2, 3, 4, 5 };
+#
+# @example
+# // Bad...
+# int a[ 5 ] = {1, 2, 3, 4, 5};
+#/
+SpacesInContainerLiterals: true
+
+#/
+# Always require only one space at the start of a line comment.
+#
+# @example
+# // Good...
+#
+# @example
+# //    Bad...
+#/
+SpacesInLineCommentPrefix:
+  Minimum: 1
+  Maximum: -1
+
+#/
+# Specify when insert spaces inside parentheses.
+#
+# @example
+# // Good...
+# if ( foo ) {
+#     bar();
+# }
+#
+# @example
+# // Bad...
+# if (foo) {
+#     bar();
+# }
+#/
+SpacesInParens: Custom
+
+#/
+# Define custom rules for including spaces inside parentheses.
+#/
+SpacesInParensOptions:
+  #/
+  # Don't allow overriding rules by using double parentheses.
+  #/
+  ExceptDoubleParentheses: false
+
+  #/
+  # Always include spaces inside conditional statements.
+  #
+  # @example
+  # // Good...
+  # if ( foo ) {
+  #     bar();
+  # }
+  #
+  # @example
+  # // Bad...
+  # if (foo) {
+  #     bar();
+  # }
+  #/
+  InConditionalStatements: true
+
+  #/
+  # Never include spaces inside C-style casts.
+  #
+  # @example
+  # // Good...
+  # x = (double)y;
+  #
+  # @example
+  # // Bad...
+  # x = ( double )y;
+  #/
+  InCStyleCasts: false
+
+  #/
+  # Never include spaces inside empty parentheses.
+  #
+  # @example
+  # // Good...
+  # f();
+  #
+  # @example
+  # // Bad...
+  # f( );
+  #/
+  InEmptyParentheses: false
+
+  #/
+  # Always include spaces inside parentheses not covered by the other rules.
+  #
+  # @example
+  # // Okay...
+  # t f( Deleted & ) & = delete;
+  #/
+  Other: true
+
+#/
+# Always include spaces inside square brackets.
+#
+# @example
+# // Good...
+# int a[ 5 ];
+#
+# @example
+# // Bad...
+# int a[5];
+#/
+SpacesInSquareBrackets: true
+
+#/
+# Never break inside DAGArg.
+#/
+TableGenBreakInsideDAGArg: DontBreak
