@@ -67,9 +67,9 @@ TabWidth: 4
 IndentWidth: 4
 
 #/
-# Always use tab characters to fill whitespace.
+# Always use tab characters for indentation.
 #/
-UseTab: Always
+UseTab: ForIndentation
 
 #/
 # Always use `\n` for line endings.
@@ -254,21 +254,20 @@ AlignEscapedNewlines: DontAlign # NOTE: disabled due to very large column limit
 AlignOperands: DontAlign
 
 #/
-# Align trailing comments on consecutive lines.
+# Leave trailing comments as they are.
 #
 # @example
-# // Good...
+# // Okay...
 # int a;   // Comment
 # int ab;  // Comment
 #
 # @example
-# // Bad...
+# // Okay...
 # int a; // Comment
 # int ab; // Comment
 #/
 AlignTrailingComments:
-  Kind: Always
-  OverEmptyLines: 0
+  Kind: Leave
 
 #/
 # Disallow putting arguments onto the next line.
@@ -819,12 +818,14 @@ EmptyLineBeforeAccessModifier: Always
 FixNamespaceComments: true
 
 #/
-# Always merge multiple `#include` blocks together and sort as one.
+# Always preserve `#include` blocks and sort separately.
 #
 # @example
 # // Good...
-# #include "a.h"
 # #include "b.h"
+#
+# #include "a.h"
+# #include "c.h"
 # #include "<stdint.h>"
 #
 # @example
@@ -832,9 +833,10 @@ FixNamespaceComments: true
 # #include "b.h"
 #
 # #include "<stdint.h>"
+# #include "c.h"
 # #include "a.h"
 #/
-IncludeBlocks: Merge
+IncludeBlocks: Preserve
 
 #/
 # Define `#include` categories and assign ordering priorities.
