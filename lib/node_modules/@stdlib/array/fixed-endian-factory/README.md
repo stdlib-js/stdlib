@@ -483,6 +483,68 @@ var v = arr.get( 100 );
 // returns undefined
 ```
 
+<a name="method-map"></a>
+
+#### TypedArray.prototype.map( callbackFn\[, thisArg] )
+
+Returns a new array with each element being the result of a provided callback function.
+
+```javascript
+function fcn( v ) {
+    return -v;
+}
+
+var Float64ArrayFE = fixedEndianFactory( 'float64' );
+
+var arr = new Float64ArrayFE( 'little-endian', [ 1.0, 2.0, 3.0 ] );
+// returns <Float64ArrayFE>
+
+var out = arr.map( fcn );
+// returns <Float64ArrayFE>
+
+var z = out.get( 0 );
+// returns -1.0
+
+z = out.get( 1 );
+// returns -2.0
+
+z = out.get( 2 );
+// returns -3.0
+```
+
+The callback function is provided three arguments:
+
+-   **value**: current array element.
+-   **index**: current array element index.
+-   **arr**: the array on which this method was called.
+
+To set the function execution context, provide a `thisArg`.
+
+```javascript
+function fcn( v, i ) {
+    this.count += i;
+    return -v;
+}
+
+var Float64ArrayFE = fixedEndianFactory( 'float64' );
+
+var arr = new Float64ArrayFE( 'little-endian', 3 );
+
+arr.set( -1.0, 0 );
+arr.set( 1.0, 1 );
+arr.set( -1.0, 2 );
+
+var context = {
+    'count': 0
+};
+
+var out = arr.map( fcn, context );
+// returns <Float64ArrayFE>
+
+var count = context.count;
+// returns 3;
+```
+
 <a name="method-set"></a>
 
 #### TypedArrayFE.prototype.set( arr\[, offset] )
