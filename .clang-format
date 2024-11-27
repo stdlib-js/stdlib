@@ -120,7 +120,7 @@ AlignArrayOfStructures: Right
 # double foo = 1;
 # float bar  = 2;
 #/
-AlignConsecutiveAssignment:
+AlignConsecutiveAssignments:
   Enabled: false
 
 #/
@@ -417,12 +417,12 @@ AllowShortFunctionsOnASingleLine: Empty
 # // Bad...
 # if ( a ) return;
 #/
-AllowShortIfStatementsOnASingleLine: Never;
+AllowShortIfStatementsOnASingleLine: Never
 
 #/
 # Disallow short lambda functions being put on a single line, except for empty lambda functions.
 #/
-AllowShortLambdasOnASingleLine: Empty;
+AllowShortLambdasOnASingleLine: Empty
 
 #/
 # Disallow short loops on a single line.
@@ -482,7 +482,7 @@ BinPackArguments: true
 #         int b,
 #         int c );
 #/
-BinPackParameters: BinPack
+BinPackParameters: true
 
 #/
 # Always include a space after the colon for bitfields.
@@ -571,7 +571,7 @@ BreakAfterReturnType: Automatic
 # int a = b
 #       + c
 #/
-BreakBeforeBinaryOperators: None;
+BreakBeforeBinaryOperators: None
 
 #/
 # Always attach braces to surrounding context.
@@ -649,7 +649,7 @@ BreakBeforeTernaryOperators: true
 #       d ) +
 #     e;
 #/
-BreakBinaryOperations: Never
+# BreakBinaryOperations: Never # FIXME: available in clang-format v20
 
 #/
 # Break constructor initializers after the colon and commas.
@@ -1078,7 +1078,7 @@ KeepEmptyLines:
 #/
 # Remove form feed characters.
 #/
-KeepFormFeed: false
+# KeepFormFeed: false # FIXME: available in clang-format 20`
 
 #/
 # Align lambda function bodies relative to the outer scope.
@@ -1266,7 +1266,7 @@ ReferenceAlignment: Right
 #/
 # Never reflow comments.
 #/
-ReflowComments: Never
+ReflowComments: false
 
 #/
 # Remove empty lines in unwrapped lines.
@@ -1281,7 +1281,7 @@ ReflowComments: Never
 #
 #     = a + b;
 #/
-RemoveEmptyLinesInUnwrappedLines: true
+# RemoveEmptyLinesInUnwrappedLines: true # FIXME: available in clang-format 20
 
 #/
 # Always replace multiple parentheses with single parentheses.
