@@ -1038,7 +1038,7 @@ interface Namespace {
 	* ns.bquaternary2d( [ x, y, z, w, out ], shapes, add );
 	*
 	* console.log( out );
-	* // => [ [ 4.0, 8.0 ], [ 12.0, 16.0 ] ]
+	* // => [ [ 4.0, 4.0 ], [ 4.0, 4.0 ] ]
 	*/
 	bquaternary2d: typeof bquaternary2d;
 
@@ -1115,7 +1115,7 @@ interface Namespace {
 	* ns.bternary2d( [ x, y, z, out ], shapes, add );
 	*
 	* console.log( out );
-	* // => [ [ 3.0, 6.0 ], [ 9.0, 12.0 ] ]
+	* // => [ [ 3.0, 3.0 ], [ 3.0, 3.0 ] ]
 	*/
 	bternary2d: typeof bternary2d;
 
