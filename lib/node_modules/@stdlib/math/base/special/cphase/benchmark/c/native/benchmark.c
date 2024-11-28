@@ -93,19 +93,22 @@ static double rand_double( void ) {
 */
 static double benchmark( void ) {
 	double elapsed;
-	double re;
-	double im;
+	double re[ 100 ];
+	double im[ 100 ];
 	double y;
 	double t;
 	int i;
 
 	stdlib_complex128_t z;
 
+	for ( i = 0; i < 100; i++ ) {
+		re[ i ] = ( 1000.0 * rand_double() ) - 500.0;
+		im[ i ] = ( 1000.0 * rand_double() ) - 500.0;
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		re = ( 1000.0*rand_double() ) - 500.0;
-		im = ( 1000.0*rand_double() ) - 500.0;
-		z = stdlib_complex128( re, im );
+		z = stdlib_complex128( re[ i % 100 ], im[ i % 100 ] );
 		y = stdlib_base_cphase( z );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );

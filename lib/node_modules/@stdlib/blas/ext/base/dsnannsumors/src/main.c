@@ -27,7 +27,7 @@
 * @param N        number of indexed elements
 * @param X        input array
 * @param strideX  stride length
-* @param n        number of non-NaN elements
+* @param n        pointer for storing the number of non-NaN elements
 * @return         output value
 */
 double API_SUFFIX(stdlib_strided_dsnannsumors)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, CBLAS_INT *n ) {
@@ -36,19 +36,19 @@ double API_SUFFIX(stdlib_strided_dsnannsumors)( const CBLAS_INT N, const float *
 }
 
 /**
-* Computes the sum of single-precision floating-point strided array elements, ignoring `NaN` values and using ordinary recursive summation with extended accumulation and alternative indexing semantics and returning an extended precision result.
+* Computes the sum of single-precision floating-point strided array elements, ignoring `NaN` values, using ordinary recursive summation with extended accumulation and alternative indexing semantics, and returning an extended precision result.
 *
 * @param N        number of indexed elements
 * @param X        input array
 * @param strideX  stride length
 * @param offsetX  starting index
-* @param n        number of non-NaN elements
+* @param n        pointer for storing the number of non-NaN elements
 * @return         output value
 */
 double API_SUFFIX(stdlib_strided_dsnannsumors_ndarray)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, CBLAS_INT *n ) {
-	double sum;
 	CBLAS_INT ix;
 	CBLAS_INT i;
+	double sum;
 
 	sum = 0.0;
 	*n = 0;

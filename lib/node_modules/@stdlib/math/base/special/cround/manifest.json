@@ -38,7 +38,8 @@
       "dependencies": [
         "@stdlib/math/base/napi/unary",
         "@stdlib/complex/float64/ctor",
-        "@stdlib/complex/float64/reim"
+        "@stdlib/complex/float64/reim",
+        "@stdlib/math/base/special/round"
       ]
     },
     {
@@ -53,7 +54,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/complex/float64/ctor",
-        "@stdlib/complex/float64/reim"
+        "@stdlib/complex/float64/reim",
+        "@stdlib/math/base/special/round"
       ]
     },
     {
@@ -68,7 +70,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/complex/float64/ctor",
-        "@stdlib/complex/float64/reim"
+        "@stdlib/complex/float64/reim",
+        "@stdlib/math/base/special/round"
       ]
     }
   ]
