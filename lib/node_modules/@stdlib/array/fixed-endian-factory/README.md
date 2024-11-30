@@ -515,6 +515,38 @@ var idx = arr.indexOf( 5.0 );
 // returns -1
 ```
 
+<a name="method-last-index-of"></a>
+
+#### TypedArrayFE.prototype.lastIndexOf( searchElement\[, fromIndex] )
+
+Returns the last index at which a given element can be found in the array.
+
+```javascript
+var Float64ArrayFE = fixedEndianFactory( 'float64' );
+
+var arr = new Float64ArrayFE( 'little-endian', [ 1.0, 2.0, 3.0, 4.0, 2.0 ] );
+
+var idx = arr.lastIndexOf( 2.0 );
+// returns 4
+
+idx = arr.lastIndexOf( 2.0, 3 );
+// returns 1
+
+idx = arr.lastIndexOf( 2.0, -2 );
+// returns 1
+```
+
+If `searchElement` is not present in the array, the method returns `-1`.
+
+```javascript
+var Float64ArrayFE = fixedEndianFactory( 'float64' );
+
+var arr = new Float64ArrayFE( 'little-endian', [ 1.0, 2.0, 3.0, 4.0, 2.0 ] );
+
+var idx = arr.lastIndexOf( 5.0 );
+// returns -1
+```
+
 <a name="method-map"></a>
 
 #### TypedArray.prototype.map( callbackFn\[, thisArg] )
