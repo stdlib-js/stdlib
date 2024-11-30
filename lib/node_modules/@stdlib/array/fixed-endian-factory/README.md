@@ -727,6 +727,35 @@ var str = arr.toString();
 // returns '1,2,3'
 ```
 
+<a name="method-join"></a>
+
+#### TypedArrayFE.prototype.join( \[separator] )
+
+Serializes the array elements into a string, with elements separated by the specified `separator`. If no `separator` is provided, a comma (`,`) is used as the default.
+
+```javascript
+var Float64ArrayFE = fixedEndianFactory( 'float64' );
+
+var arr = new Float64ArrayFE( 'little-endian', [ 1.0, 2.0, 3.0 ] );
+
+var str = arr.join();
+// returns '1,2,3'
+
+str = arr.join( ' - ' );
+// returns '1 - 2 - 3'
+```
+
+If the provided `separator` is not a string, it is coerced to a string.
+
+```javascript
+var Float64ArrayFE = fixedEndianFactory( 'float64' );
+
+var arr = new Float64ArrayFE( 'little-endian', [ 1.0, 2.0, 3.0 ] );
+
+var str = arr.join( 0 );
+// returns '10203'
+```
+
 </section>
 
 <!-- /.usage -->
