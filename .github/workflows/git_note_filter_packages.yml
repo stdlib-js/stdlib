@@ -17,20 +17,20 @@
 #/
 
 # Workflow name:
-name: git_note_amend_message
+name: git_note_filter_packages
 
 # Workflow triggers:
 on:
   # Allow the workflow to be manually run:
   workflow_dispatch:
-    # Define the input parameters for the workflow:
+    # Define the input parameters for the workflow:a
     inputs:
       commit_hash:
         description: 'Commit hash to create note for'
         required: true
         type: string
-      message:
-        description: 'New commit message'
+      excludes:
+        description: 'Comma-separated list of packages to exclude'
         required: true
         type: string
 
@@ -42,8 +42,8 @@ on:
         description: 'Commit hash to create note for'
         required: true
         type: string
-      message:
-        description: 'New commit message'
+      excludes:
+        description: 'Comma-separated list of packages to exclude'
         required: true
         type: string
 
@@ -66,10 +66,10 @@ on:
 jobs:
 
   # Define a job to create a Git note amending a commit message:
-  create_git_note_amending_commit_message:
+  create_git_note_filtering_packages:
 
     # Define job name:
-    name: 'Create Git Note Amending Commit Message'
+    name: 'Create Git Note Filtering Packages for Commit'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
@@ -98,15 +98,24 @@ jobs:
       # Create Git note:
       - name: 'Create Git note'
         run: |
-          # Create Git note file:
-          cat > "docs/git-notes/${{ inputs.commit_hash }}.txt" << EOF
+          # Start creating the note file:
+          cat > "docs/git-notes/${{ inputs.commit_hash }}.txt" << 'EOF'
           ---
-          type: amend-message
-          ---
+          type: filter-packages
+          exclude:
           EOF
 
-          # Append new commit message to Git note file:
-          echo -e '${{ inputs.message }}' >> "docs/git-notes/${{ inputs.commit_hash }}.txt"
+          # Process the comma-separated input and add each package as a YAML list item:
+          echo "${{ inputs.excludes }}" | tr ',' '\n' | while IFS= read -r package; do
+            # Trim whitespace and skip empty entries...
+            package=$(echo "$package" | xargs)
+            if [ -n "$package" ]; then
+              echo "  - $package" >> "docs/git-notes/${{ inputs.commit_hash }}.txt"
+            fi
+          done
+
+          # Add final YAML delimiter:
+          echo "---" >> "docs/git-notes/${{ inputs.commit_hash }}.txt"
 
           # Create step summary:
           echo "## Note for commit ${{ inputs.commit_hash }}:" >> $GITHUB_STEP_SUMMARY
