@@ -451,6 +451,66 @@ var count = context.count;
 // returns 3
 ```
 
+<a name="method-filter"></a>
+
+#### TypedArrayFE.prototype.filter( predicate\[, thisArg] )
+
+Returns a new array containing the elements of an array which pass a test implemented by a predicate function.
+
+```javascript
+function predicate( v ) {
+    return ( v % 2 === 0 );
+}
+
+var Float64ArrayFE = fixedEndianFactory( 'float64' );
+
+var arr = new Float64ArrayFE( 'little-endian', [ 1.0, 2.0, 3.0, 4.0 ] );
+
+var out = arr.filter( predicate );
+// returns <Float64ArrayFE>
+
+var len = out.length;
+// returns 2
+
+var v = out.get( 0 );
+// returns 2.0
+
+v = out.get( 1 );
+// return 4.0
+```
+
+The `predicate` function is provided three arguments:
+
+-   **value**: current array element.
+-   **index**: current array element index.
+-   **arr**: the array on which this method was called.
+
+To set the function execution context, provide a `thisArg`.
+
+```javascript
+function predicate( v, i ) {
+    this.count += 1;
+    return ( v % 2 === 0 );
+}
+
+var context = {
+    'count': 0
+};
+
+var Float64ArrayFE = fixedEndianFactory( 'float64' );
+
+var arr = new Float64ArrayFE( 'little-endian', [ 1.0, 2.0, 3.0, 4.0 ] );
+
+var out = arr.filter( predicate, context );
+// returns <Float64ArrayFE>
+
+var len = out.length;
+// returns 2
+
+var count = context.count;
+// returns 4
+```
+
 <a name="method-get"></a>
 
 #### TypedArrayFE.prototype.get( i )
