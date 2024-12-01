@@ -1,0 +1,139 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2024 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: git_note_amend_message
+
+# Workflow triggers:
+on:
+  # Allow the workflow to be manually run:
+  workflow_dispatch:
+    # Define the input parameters for the workflow:
+    inputs:
+      commit_hash:
+        description: 'Commit hash to create note for'
+        required: true
+        type: string
+      message:
+        description: 'New commit message'
+        required: true
+        type: string
+
+  # Allow the workflow to be triggered by other workflows:
+  workflow_call:
+    # Define the input parameters for the workflow:
+    inputs:
+      commit_hash:
+        description: 'Commit hash to create note for'
+        required: true
+        type: string
+      message:
+        description: 'New commit message'
+        required: true
+        type: string
+
+    # Define the secrets accessible by the workflow:
+    secrets:
+      STDLIB_BOT_GITHUB_TOKEN:
+        description: 'GitHub token for stdlib-bot'
+        required: true
+      REPO_GITHUB_TOKEN:
+        description: 'GitHub token for accessing the repository'
+        required: true
+      STDLIB_BOT_GPG_PRIVATE_KEY:
+        description: 'GPG private key for stdlib-bot'
+        required: true
+      STDLIB_BOT_GPG_PASSPHRASE:
+        description: 'GPG passphrase for stdlib-bot'
+        required: true
+
+# Workflow jobs:
+jobs:
+
+  # Define a job to create a Git note amending a commit message:
+  create_git_note:
+
+    # Define job name:
+    name: 'Create Git Note Amending Commit Message'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps:
+    steps:
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        # Pin action to full length commit SHA
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+        with:
+          # Fetch only the latest commit:
+          fetch-depth: 1
+
+          # Token for accessing the repository:
+          token: ${{ secrets.REPO_GITHUB_TOKEN }}
+
+      # Verify commit exists:
+      - name: 'Verify commit exists'
+        run: |
+          if ! git rev-parse --quiet --verify ${{ inputs.commit_hash }}^{commit}; then
+            echo "Error: Commit ${{ inputs.commit_hash }} not found"
+            exit 1
+          fi
+
+      # Create Git note:
+      - name: 'Create Git note'
+        run: |
+          # Create Git note file:
+          cat > "docs/git-notes/${{ inputs.commit_hash }}.txt" << EOF
+          ---
+          type: amend-message
+          ---
+          ${{ inputs.message }}
+          EOF
+
+          # Create step summary:
+          echo "## Note for commit ${{ inputs.commit_hash }}:" >> $GITHUB_STEP_SUMMARY
+          cat "docs/git-notes/${{ inputs.commit_hash }}.txt" >> $GITHUB_STEP_SUMMARY
+
+      # Disable Git hooks:
+      - name: 'Disable Git hooks'
+        run: |
+          rm -rf .git/hooks
+
+      # Import GPG key to sign commits:
+      - name: 'Import GPG key to sign commits'
+        # Pin action to full length commit SHA
+        uses: crazy-max/ghaction-import-gpg@cb9bde2e2525e640591a934b1fd28eef1dcaf5e5 # v6.2.0
+        with:
+          gpg_private_key: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
+          git_user_signingkey: true
+          git_commit_gpgsign: true
+
+      # Commit and push changes:
+      - name: 'Commit and push changes'
+        env:
+            REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+            USER_NAME: stdlib-bot
+        run: |
+          git config --local user.email "82920195+stdlib-bot@users.noreply.github.com"
+          git config --local user.name "${USER_NAME}"
+
+          git add "docs/git-notes/${{ inputs.commit_hash }}.txt"
+          git commit -m "docs: add Git note for commit ${{ inputs.commit_hash }}"
+          git push
