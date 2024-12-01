@@ -103,8 +103,10 @@ jobs:
           ---
           type: amend-message
           ---
-          ${{ inputs.message }}
           EOF
+
+          # Append new commit message to Git note file:
+          printf '%s\n' '${{ inputs.message }}' >> "docs/git-notes/${{ inputs.commit_hash }}.txt"
 
           # Create step summary:
           echo "## Note for commit ${{ inputs.commit_hash }}:" >> $GITHUB_STEP_SUMMARY
