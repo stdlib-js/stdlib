@@ -1,5 +1,5 @@
 {
-    "name": "@stdlib/array/base/broadcasted-ternary3d",
+  "name": "@stdlib/array/base/broadcasted-ternary3d",
   "version": "0.0.0",
   "description": "Apply a ternary callback to elements in three broadcasted input arrays and assign results to elements in a three-dimensional nested output array.",
   "license": "Apache-2.0",
