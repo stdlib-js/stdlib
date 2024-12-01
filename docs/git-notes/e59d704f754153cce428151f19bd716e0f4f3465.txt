@@ -1,0 +1,11 @@
+---
+type: amend-message
+---
+feat: add C implementation for `math/base/special/gammasgn`
+
+PR-URL: #1841\Ref: #649
+
+Signed-off-by: GUNJ JOSHI <gunjjoshi8372@gmail.com>
+Signed-off-by: Pranav <85227306+Pranavchiku@users.noreply.github.com>
+Co-authored-by: Pranav <85227306+Pranavchiku@users.noreply.github.com>
+Reviewed-by: Pranav <85227306+Pranavchiku@users.noreply.github.com>
