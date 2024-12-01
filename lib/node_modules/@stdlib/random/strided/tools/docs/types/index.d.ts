@@ -18,14 +18,12 @@
 
 // TypeScript Version: 4.1
 
-/* eslint-disable max-lines */
+/* eslint-disable max-lines, @typescript-eslint/no-empty-interface */
 
 /**
 * Interface describing the `tools` namespace.
 */
-interface Namespace {
-
-}
+interface Namespace {}
 
 /**
 * Pseudorandom number generator strided array function tools.
