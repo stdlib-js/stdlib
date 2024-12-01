@@ -1,4 +1,11 @@
 ---
 type: amend-message
 ---
-feat: add `math/base/special/ahavercosf\n\nPR-URL: #3072\nRef: #649\n\nCo-authored-by: Philipp Burckhardt <pburckhardt@outlook.com>\nReviewed-by: Philipp Burckhardt <pburckhardt@outlook.com>\nSigned-off-by: Philipp Burckhardt <pburckhardt@outlook.com>
+feat: add `math/base/special/ahavercosf
+
+PR-URL: #3072
+Ref: #649
+
+Co-authored-by: Philipp Burckhardt <pburckhardt@outlook.com>
+Reviewed-by: Philipp Burckhardt <pburckhardt@outlook.com>
+Signed-off-by: Philipp Burckhardt <pburckhardt@outlook.com>
