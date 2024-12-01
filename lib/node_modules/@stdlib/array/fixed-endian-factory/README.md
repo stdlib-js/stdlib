@@ -609,6 +609,52 @@ var count = context.count;
 // returns 3;
 ```
 
+<a name="method-reduce"></a>
+
+#### TypedArray.prototype.reduce( reducerFn\[, initialValue] )
+
+Applies a provided callback function to each element of the array, in order, passing in the return value from the calculation on the preceding element and returning the accumulated result upon completion.
+
+```javascript
+function reducer( acc, v ) {
+    return ( acc && v );
+}
+
+var Float64ArrayFE = fixedEndianFactory( 'float64' );
+
+var arr = new Float64ArrayFE( 'little-endian', [ 1.0, 0.0, 1.0 ] );
+// returns <Float64ArrayFE>
+
+var out = arr.reduce( reducer );
+// returns 0.0
+```
+
+The reducer function is provided four arguments:
+
+-   **acc**: accumulated result.
+-   **value**: current array element.
+-   **index**: current array element index.
+-   **arr**: the array on which this method was called.
+
+By default, the function initializes the accumulated result to the first element in the array and passes the second array element as `value` during the first invocation of the provided callback. To begin accumulation from a different starting value and pass in the first array element as `value` during the first invocation of the provided callback, provide an `initialValue` argument.
+
+```javascript
+function reducer( acc, v ) {
+    if ( v ) {
+        return acc + 1;
+    }
+    return acc;
+}
+
+var Float64ArrayFE = fixedEndianFactory( 'float64' );
+
+var arr = new Float64ArrayFE( 'little-endian', [ 1.0, 0.0, 1.0 ] );
+// returns <Float64ArrayFE>
+
+var out = arr.reduce( reducer, 0 );
+// returns 2
+```
+
 <a name="method-set"></a>
 
 #### TypedArrayFE.prototype.set( arr\[, offset] )
