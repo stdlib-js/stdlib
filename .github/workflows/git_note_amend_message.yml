@@ -81,8 +81,8 @@ jobs:
         # Pin action to full length commit SHA
         uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
         with:
-          # Fetch only the latest commit:
-          fetch-depth: 1
+          # Fetch all history to allow creating a Git note for any commit:
+          fetch-depth: 0
 
           # Token for accessing the repository:
           token: ${{ secrets.REPO_GITHUB_TOKEN }}
