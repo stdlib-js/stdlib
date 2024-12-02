@@ -908,6 +908,25 @@ var str = arr.join( 0 );
 // returns '10203'
 ```
 
+<a name="method-with"></a>
+
+#### TypedArrayFE.prototype.with( index, value )
+
+Returns a new typed array with the element at a provided index replaced with a provided value.
+
+```javascript
+var Float64ArrayFE = fixedEndianFactory( 'float64' );
+
+var arr = new Float64ArrayFE( 'little-endian', [ 1.0, 2.0, 3.0 ] );
+// returns <Float64ArrayFE>
+
+var out = arr.with( 0, 0.0 );
+// returns <Float64ArrayFE>
+
+var v = out.get( 0 );
+// returns 0.0
+```
+  
 </section>
 
 <!-- /.usage -->
