@@ -212,7 +212,7 @@ main() {
 		pkg_cov="| $pkg_statements_cov_fraction <br> $cov_change_statements | $pkg_branches_cov_fraction <br> $cov_change_branches | $pkg_functions_cov_fraction <br> $cov_change_functions | $pkg_lines_cov_fraction <br> $cov_change_lines |"
 
 		pkg_url="${coverage_base_url}/${pkg}/index.html"
-		pkg_link="<a href="$pkg_url">$pkg</a>"
+		pkg_link="<a href=\"$pkg_url\">$pkg</a>"
 		coverage="$coverage\n| $pkg_link $pkg_cov"
 
 		# Copy coverage report of the package to artifacts directory:
