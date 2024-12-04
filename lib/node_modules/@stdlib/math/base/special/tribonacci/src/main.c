@@ -17,8 +17,8 @@
 */
 
 #include "stdlib/math/base/special/tribonacci.h"
+#include "stdlib/constants/float64/max_safe_nth_tribonacci.h"
 
-static const int32_t STDLIB_CONSTANTS_FLOAT64_MAX_SAFE_NTH_TRIBONACCI = 63; // TODO: consider making a package similar to `@stdlib/constants/float64/max-safe-nth-fibonacci`
 static const int64_t tribonacci_value[ 64 ] = {
         0,
         0,
@@ -96,7 +96,7 @@ static const int64_t tribonacci_value[ 64 ] = {
 * // returns 0
 */
 double stdlib_base_tribonacci( const int32_t n ) {
-    if ( n < 0 || n > STDLIB_CONSTANTS_FLOAT64_MAX_SAFE_NTH_TRIBONACCI ) {
+    if ( n < 0 || n > STDLIB_CONSTANT_FLOAT64_MAX_SAFE_NTH_TRIBONACCI ) {
         return 0.0 / 0.0; // NaN
     }
     return tribonacci_value[ n ];
