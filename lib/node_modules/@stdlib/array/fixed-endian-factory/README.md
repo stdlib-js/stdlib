@@ -543,6 +543,30 @@ var v = arr.get( 100 );
 // returns undefined
 ```
 
+<a name="method-includes"></a>
+
+#### TypedArrayFE.prototype.includes( searchElement\[, fromIndex] )
+
+Returns a boolean indicating whether an array includes a provided value.
+
+```javascript
+var Float64ArrayFE = fixedEndianFactory( 'float64' );
+
+var arr = new Float64ArrayFE( 'little-endian', [ 1.0, 2.0, 3.0, 4.0, 2.0 ] );
+
+var idx = arr.includes( 2.0 );
+// returns true
+
+idx = arr.includes( 2.0, 2 );
+// returns true
+
+idx = arr.includes( 2.0, -4 );
+// returns true
+
+idx = arr.includes( 5.0 );
+// returns false
+```
+
 <a name="method-index-of"></a>
 
 #### TypedArrayFE.prototype.indexOf( searchElement\[, fromIndex] )
