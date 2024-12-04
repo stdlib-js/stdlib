@@ -27,13 +27,10 @@ on:
       - synchronize
       - reopened
       - edited
-      - assigned
-      - unassigned
-      - labeled
-      - unlabeled
       - review_requested
       - review_request_removed
       - ready_for_review
+      - converted_to_draft
 
 # Workflow jobs:
 jobs:
@@ -74,7 +71,7 @@ jobs:
         with:
           github-token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
           script: |
-            await github.issues.addLabels({
+            await github.rest.issues.addLabels({
               'owner': context.repo.owner,
               'repo': context.repo.repo,
               'issue_number': context.payload.pull_request.number,
@@ -89,7 +86,7 @@ jobs:
         with:
           github-token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
           script: |
-            await github.issues.addLabels({
+            await github.rest.issues.addLabels({
               'owner': context.repo.owner,
               'repo': context.repo.repo,
               'issue_number': context.payload.pull_request.number,
@@ -105,7 +102,7 @@ jobs:
           github-token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
           script: |
             try {
-              await github.issues.removeLabel({
+              await github.rest.issues.removeLabel({
                 'owner': context.repo.owner,
                 'repo': context.repo.repo,
                 'issue_number': context.payload.pull_request.number,
