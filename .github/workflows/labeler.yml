@@ -22,6 +22,18 @@ name: labeler
 # Workflow triggers:
 on:
   pull_request_target:
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - edited
+      - assigned
+      - unassigned
+      - labeled
+      - unlabeled
+      - review_requested
+      - review_request_removed
+      - ready_for_review
 
 # Workflow jobs:
 jobs:
@@ -53,3 +65,52 @@ jobs:
         with:
           configuration-path: .github/labeler.yml
           repo-token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
+
+      # Add "Needs Review" label when PR is opened and not a draft:
+      - name: 'Add "Needs Review" label if PR is opened and not draft'
+        if: ${{ github.event.action == 'opened' && github.event.pull_request.draft == false }}
+        # Pin action to full length commit SHA
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        with:
+          github-token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
+          script: |
+            await github.issues.addLabels({
+              'owner': context.repo.owner,
+              'repo': context.repo.repo,
+              'issue_number': context.payload.pull_request.number,
+              'labels': ['Needs Review'],
+            })
+
+      # Add "Needs Review" label when PR is marked ready for review:
+      - name: 'Add "Needs Review" label if PR is ready for review'
+        if: ${{ github.event.action == 'ready_for_review' }}
+        # Pin action to full length commit SHA
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        with:
+          github-token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
+          script: |
+            await github.issues.addLabels({
+              'owner': context.repo.owner,
+              'repo': context.repo.repo,
+              'issue_number': context.payload.pull_request.number,
+              'labels': ['Needs Review'],
+            })
+
+      # Remove "Needs Review" label when PR is converted to draft or closed:
+      - name: 'Remove "Needs Review" label if PR is converted to draft or closed'
+        if: ${{ github.event.action == 'converted_to_draft' || github.event.action == 'closed' }}
+        # Pin action to full length commit SHA
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        with:
+          github-token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
+          script: |
+            try {
+              await github.issues.removeLabel({
+                'owner': context.repo.owner,
+                'repo': context.repo.repo,
+                'issue_number': context.payload.pull_request.number,
+                'name': 'Needs Review',
+              })
+            } catch ( error ) {
+              console.log( 'Error removing label: %s', error.message );
+            }
