@@ -131,7 +131,7 @@ static double benchmark1( int iterations, int len ) {
 static double benchmark2( int iterations, int len ) {
 	double elapsed;
 	float x[ len ];
-	double v;
+	float v;
 	double t;
 	int i;
 
