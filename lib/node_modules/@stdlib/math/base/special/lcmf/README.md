@@ -101,20 +101,15 @@ v = lcmf( 48, NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var roundf = require( '@stdlib/math/base/special/roundf' );
+var randu = require( '@stdlib/random/array/discrete-uniform' );
 var lcmf = require( '@stdlib/math/base/special/lcmf' );
 
-var a;
-var b;
-var v;
-var i;
+var a = randu( 100, 0, 50 );
+var b = randu( 100, 0, 50 );
 
+var i;
 for ( i = 0; i < 100; i++ ) {
-    a = roundf( randu() * 50 );
-    b = roundf( randu() * 50 );
-    v = lcmf( a, b );
-    console.log( 'lcmf(%d,%d) = %d', a, b, v );
+    console.log( 'lcmf(%d,%d) = %d', a[ i ], b[ i ], lcmf( a[ i ], b[ i ] ) );
 }
 ```
 
