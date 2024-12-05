@@ -178,8 +178,8 @@ Computes the sum of single-precision floating-point strided array elements using
 ```c
 const float x[] = { 1.0f, -2.0f, 2.0f };
 
-double v = stdlib_strided_ssumpw( 3, x, 1 );
-// returns 1.0
+float v = stdlib_strided_ssumpw( 3, x, 1 );
+// returns 1.0f
 ```
 
 The function accepts the following arguments:
@@ -189,7 +189,7 @@ The function accepts the following arguments:
 -   **strideX**: `[in] CBLAS_INT` stride length for `X`.
 
 ```c
-double stdlib_strided_ssumpw( const CBLAS_INT N, const float *X, const CBLAS_INT strideX );
+float stdlib_strided_ssumpw( const CBLAS_INT N, const float *X, const CBLAS_INT strideX );
 ```
 
 #### stdlib_strided_ssumpw_ndarray( N, \*X, strideX, offsetX )
@@ -199,8 +199,8 @@ Computes the sum of single-precision floating-point strided array elements using
 ```c
 const float x[] = { 1.0f, -2.0f, 2.0f };
 
-double v = stdlib_strided_ssumpw_ndarray( 3, x, 1, 0 );
-// returns 1.0
+float v = stdlib_strided_ssumpw_ndarray( 3, x, 1, 0 );
+// returns 1.0f
 ```
 
 The function accepts the following arguments:
@@ -211,7 +211,7 @@ The function accepts the following arguments:
 -   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
 
 ```c
-double stdlib_strided_ssumpw_ndarray( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
+float stdlib_strided_ssumpw_ndarray( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
 ```
 
 </section>

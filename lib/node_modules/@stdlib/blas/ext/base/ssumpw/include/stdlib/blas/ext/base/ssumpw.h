@@ -31,12 +31,12 @@ extern "C" {
 /**
 * Computes the sum of single-precision floating-point strided array elements using pairwise summation.
 */
-double API_SUFFIX(stdlib_strided_ssumpw)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX );
+float API_SUFFIX(stdlib_strided_ssumpw)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX );
 
 /**
 * Computes the sum of single-precision floating-point strided array elements using pairwise summation and alternative indexing semantics.
 */
-double API_SUFFIX(stdlib_strided_ssumpw_ndarray)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
+float API_SUFFIX(stdlib_strided_ssumpw_ndarray)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
 
 #ifdef __cplusplus
 }
