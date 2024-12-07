@@ -59,9 +59,13 @@ echo "Checking package.json files in directories: ${dirs}"
 needs_changes=0
 for dir in ${dirs}; do
 	echo "Checking package.json in ${dir}..."
+	original_content=$(cat "${dir}/package.json")
+
 	"${update_package_json_directories}" "${dir}"
 	"${update_package_json_gypfile}" "${dir}"
-	if ! git diff-index --quiet HEAD -- "${dir}/package.json"; then
+
+	new_content=$(cat "${dir}/package.json")
+	if [ "$original_content" != "$new_content" ]; then
 		echo "ERROR: package.json in ${dir} needs updates to directories and/or gypfile fields"
 		git --no-pager diff "${dir}/package.json"
 		needs_changes=1
