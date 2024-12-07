@@ -51,7 +51,7 @@ fi
 # Check if metadata fields need to be updated in package.json files of affected packages:
 dirs=$(echo "${files_to_process}" | tr ' ' '\n' | \
 	xargs dirname | \
-	sed -E 's/\/(benchmark|bin|data|docs|etc|examples|include|lib|scripts|src|test)\/?$//' | \
+	sed -E 's/\/(benchmark|bin|data|docs|etc|examples|include|lib|scripts|src|test)(\/.*)?$//' | \
 	sort -u)
 
 echo "Checking package.json files in directories: ${dirs}"
@@ -62,7 +62,7 @@ for dir in ${dirs}; do
 	"${update_package_json_directories}" "${dir}"
 	"${update_package_json_gypfile}" "${dir}"
 	if ! git diff-index --quiet HEAD -- "${dir}/package.json"; then
-		echo "ERROR: Package.json in ${dir} needs updates to directories and/or gypfile fields"
+		echo "ERROR: package.json in ${dir} needs updates to directories and/or gypfile fields"
 		git --no-pager diff "${dir}/package.json"
 		needs_changes=1
 	fi
