@@ -142,43 +142,7 @@ jobs:
       - name: 'Lint package.json files'
         if: success() || failure()
         run: |
-          # Determine root directory:
-          root=$(git rev-parse --show-toplevel)
-
-          # Define the path to a utility for linting package.json files:
-          lint_package_json="${root}/lib/node_modules/@stdlib/_tools/lint/pkg-json/bin/cli"
-
-          # Define paths to utilities for updating package.json metadata fields:
-          update_package_json_directories="${root}/lib/node_modules/@stdlib/_tools/package-json/scripts/update_directories"
-          update_package_json_gypfile="${root}/lib/node_modules/@stdlib/_tools/package-json/scripts/update_gypfile"
-
-          # Lint changed package.json files:
-          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep 'package\.json$' | grep -v 'datapackage\.json$' | tr '\n' ' ' | sed 's/ $//')
-          if [ -n "${files}" ]; then
-            echo "Linting package.json files that have changed..."
-            printf "${files}" | "${lint_package_json}" --split=" "
-          else
-            echo "No package.json files to lint."
-          fi
-
-          # Check if metadata fields need to be updated in package.json files of affected packages:
-          dirs=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | xargs dirname | sort -u)
-          needs_changes=0
-          for dir in ${dirs}; do
-            echo "Checking package.json in ${dir}..."
-            "${update_package_json_directories}" "${dir}"
-            "${update_package_json_gypfile}" "${dir}"
-            if [[ `git status --porcelain` ]]; then
-              echo "::error::Package.json in ${dir} needs updates to directories and/or gypfile fields"
-              git diff
-              needs_changes=1
-            fi
-          done
-
-          # Exit with failure if any needed changes were detected:
-          if [ $needs_changes -eq 1 ]; then
-            exit 1
-          fi
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/lint_package_json_files" "${{ steps.changed-files.outputs.files }}"
 
       # Lint REPL help files...
       - name: 'Lint REPL help files'
