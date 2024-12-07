@@ -31,6 +31,7 @@ on:
       - review_request_removed
       - ready_for_review
       - converted_to_draft
+      - labeled
 
 # Workflow jobs:
 jobs:
@@ -75,7 +76,7 @@ jobs:
               'owner': context.repo.owner,
               'repo': context.repo.repo,
               'issue_number': context.payload.pull_request.number,
-              'labels': ['Needs Review'],
+              'labels': [ 'Needs Review' ]
             })
 
       # Add "Needs Review" label when PR is marked ready for review:
@@ -90,7 +91,7 @@ jobs:
               'owner': context.repo.owner,
               'repo': context.repo.repo,
               'issue_number': context.payload.pull_request.number,
-              'labels': ['Needs Review'],
+              'labels': [ 'Needs Review' ]
             })
 
       # Remove "Needs Review" label when PR is converted to draft or closed:
@@ -106,8 +107,29 @@ jobs:
                 'owner': context.repo.owner,
                 'repo': context.repo.repo,
                 'issue_number': context.payload.pull_request.number,
-                'name': 'Needs Review',
+                'name': 'Needs Review'
               })
             } catch ( error ) {
               console.log( 'Error removing label: %s', error.message );
+            }
+
+      # Remove "Needs Review" and "Needs Changes" labels when "Ready To Merge" is assigned:
+      - name: 'Remove "Needs Review" and "Needs Changes" labels when "Ready To Merge" is assigned'
+        if: ${{ github.event.action == 'labeled' && github.event.label.name == 'Ready To Merge' }}
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        with:
+          github-token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
+          script: |
+            const labelsToRemove = [ 'Needs Review', 'Needs Changes' ];
+            for ( const label of labelsToRemove ) {
+              try {
+                await github.rest.issues.removeLabel({
+                  'owner': context.repo.owner,
+                  'repo': context.repo.repo,
+                  'issue_number': context.payload.pull_request.number,
+                  'name': label
+                })
+              } catch ( error ) {
+                console.log( 'Error removing label %s: %s', label, error.message );
+              }
             }
