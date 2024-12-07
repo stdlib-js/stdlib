@@ -1,7 +1,7 @@
-/*
+/**
 * @license Apache-2.0
 *
-* Copyright (c) 2019 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,37 +16,23 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 4.1
+#ifndef STDLIB_MATH_BASE_SPECIAL_DIRICHLET_ETA_H
+#define STDLIB_MATH_BASE_SPECIAL_DIRICHLET_ETA_H
+
+/*
+* If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
+*/
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /**
 * Evaluates the Dirichlet eta function for a double-precision floating-point number `s`.
-*
-* @param s - input value
-* @returns function value
-*
-* @example
-* var v = eta( 0.0 );
-* // returns 0.5
-*
-* @example
-* var v = eta( -1.0 );
-* // returns 0.25
-*
-* @example
-* var v = eta( 1.0 ); // => ln(2)
-* // returns ~0.6931
-*
-* @example
-* var v = eta( 3.14 );
-* // returns ~0.9096
-*
-* @example
-* var v = eta( NaN );
-* // returns NaN
 */
-declare function eta( s: number ): number;
+double stdlib_base_eta( const double s );
 
+#ifdef __cplusplus
+}
+#endif
 
-// EXPORTS //
-
-export = eta;
+#endif // !STDLIB_MATH_BASE_SPECIAL_DIRICHLET_ETA_H

@@ -1,7 +1,7 @@
-/*
+/**
 * @license Apache-2.0
 *
-* Copyright (c) 2019 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,37 +16,29 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 4.1
+#include "stdlib/math/base/special/dirichlet_eta.h"
+#include "stdlib/math/base/assert/is_nan.h"
+#include "stdlib/math/base/special/powm1.h"
+#include "stdlib/constants/float64/ln_two.h"
+#include "stdlib/math/base/special/riemann_zeta.h"
 
 /**
 * Evaluates the Dirichlet eta function for a double-precision floating-point number `s`.
 *
-* @param s - input value
-* @returns function value
+* @param s    input value
+* @return     function value
 *
 * @example
-* var v = eta( 0.0 );
+* double y = stdlib_base_eta( 0.0 );
 * // returns 0.5
-*
-* @example
-* var v = eta( -1.0 );
-* // returns 0.25
-*
-* @example
-* var v = eta( 1.0 ); // => ln(2)
-* // returns ~0.6931
-*
-* @example
-* var v = eta( 3.14 );
-* // returns ~0.9096
-*
-* @example
-* var v = eta( NaN );
-* // returns NaN
 */
-declare function eta( s: number ): number;
-
-
-// EXPORTS //
-
-export = eta;
+double stdlib_base_eta( const double s ) {
+	if ( stdlib_base_is_nan( s ) ) {
+		return 0.0 / 0.0; // NaN
+	}
+	if ( s == 1.0 ) {
+		// Alternating harmonic series...
+		return STDLIB_CONSTANT_FLOAT64_LN2;
+	}
+	return -stdlib_base_powm1( 2.0, 1.0 - s ) * stdlib_base_zeta( s );
+}
