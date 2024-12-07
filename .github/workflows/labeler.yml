@@ -79,9 +79,9 @@ jobs:
               'labels': [ 'Needs Review' ]
             })
 
-      # Add "Needs Review" label when PR is marked ready for review:
-      - name: 'Add "Needs Review" label if PR is ready for review'
-        if: ${{ github.event.action == 'ready_for_review' }}
+      # Add "Needs Review" label when PR is marked ready for review or review is requested:
+      - name: 'Add "Needs Review" label if PR is ready for review or review is requested'
+        if: ${{ github.event.action == 'ready_for_review' || github.event.action == 'review_requested' }}
         # Pin action to full length commit SHA
         uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
         with:
