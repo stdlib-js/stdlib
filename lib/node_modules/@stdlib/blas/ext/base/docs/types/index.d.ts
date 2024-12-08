@@ -251,7 +251,7 @@ interface Namespace {
 	* Adds a scalar constant to each double-precision floating-point strided array element and computes the sum using ordinary recursive summation.
 	*
 	* @param N - number of indexed elements
-	* @param alpha - constant
+	* @param alpha - scalar constant
 	* @param x - input array
 	* @param strideX - stride length
 	* @returns sum
@@ -278,7 +278,7 @@ interface Namespace {
 	* Adds a scalar constant to each double-precision floating-point strided array element and computes the sum using pairwise summation.
 	*
 	* @param N - number of indexed elements
-	* @param alpha - constant
+	* @param alpha - scalar constant
 	* @param x - input array
 	* @param strideX - stride length
 	* @returns sum
@@ -2889,7 +2889,7 @@ interface Namespace {
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns sum
 	*
 	* @example
