@@ -226,25 +226,25 @@ jobs:
           github-token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
           script: |
             const { data: comments } = await github.rest.issues.listComments({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
+              'issue_number': context.issue.number,
+              'owner': context.repo.owner,
+              'repo': context.repo.repo,
             });
 
             const botComment = comments.find( comment => comment.user.login === 'stdlib-bot' && comment.body.includes( '## Coverage Report' ) );
             if ( botComment ) {
               await github.rest.issues.updateComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                comment_id: botComment.id,
-                body: `${{ steps.create-report.outputs.report }}`,
+                'owner': context.repo.owner,
+                'repo': context.repo.repo,
+                'comment_id': botComment.id,
+                'body': `${{ steps.create-report.outputs.report }}`
               });
             } else {
               await github.rest.issues.createComment({
-                issue_number: context.issue.number,
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                body: `${{ steps.create-report.outputs.report }}`,
+                'issue_number': context.issue.number,
+                'owner': context.repo.owner,
+                'repo': context.repo.repo,
+                'body': `${{ steps.create-report.outputs.report }}`
               });
             }
 
@@ -257,10 +257,10 @@ jobs:
           github-token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
           script: |
             github.rest.repos.createCommitComment({
-              commit_sha: context.sha,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: '${{ steps.create-report.outputs.report }}'
+              'commit_sha': context.sha,
+              'owner': context.repo.owner,
+              'repo': context.repo.repo,
+              'body': '${{ steps.create-report.outputs.report }}'
             })
 
       # Checkout coverage repository:
