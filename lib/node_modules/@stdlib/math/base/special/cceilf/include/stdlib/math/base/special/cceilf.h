@@ -19,7 +19,7 @@
 #ifndef STDLIB_MATH_BASE_SPECIAL_CCEILF_H
 #define STDLIB_MATH_BASE_SPECIAL_CCEILF_H
 
-#include <complex.h>
+#include "stdlib/complex/float32/ctor.h"
 
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
@@ -29,9 +29,9 @@ extern "C" {
 #endif
 
 /**
-* Rounds a single-precision complex floating-point number toward positive infinity.
+* Rounds each component of a single-precision complex floating-point number toward positive infinity.
 */
-float complex stdlib_base_cceilf( const float complex z );
+stdlib_complex64_t stdlib_base_cceilf( const stdlib_complex64_t z );
 
 #ifdef __cplusplus
 }
