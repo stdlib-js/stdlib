@@ -142,19 +142,7 @@ jobs:
       - name: 'Lint package.json files'
         if: success() || failure()
         run: |
-          # Determine root directory:
-          root=$(git rev-parse --show-toplevel)
-
-          # Define the path to a utility for linting package.json files:
-          lint_package_json="${root}/lib/node_modules/@stdlib/_tools/lint/pkg-json/bin/cli"
-
-          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep 'package\.json$' | grep -v 'datapackage\.json$' | tr '\n' ' ' | sed 's/ $//')
-          if [ -n "${files}" ]; then
-            echo "Linting package.json files that have changed..."
-            printf "${files}" | "${lint_package_json}" --split=" "
-          else
-            echo "No package.json files to lint."
-          fi
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/lint_package_json_files" "${{ steps.changed-files.outputs.files }}"
 
       # Lint REPL help files...
       - name: 'Lint REPL help files'

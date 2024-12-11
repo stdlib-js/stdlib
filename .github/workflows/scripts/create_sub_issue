@@ -16,17 +16,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Script to create a sub-issue for linting failures
+# Script to create a sub-issue.
 #
-# Usage: ./create_lint_sub_issue.sh <workflow-url> <lint-type> <parent-issue-number>
+# Usage: ./create_sub_issue.sh <issue-title> <body-file> <parent-issue-number>
 #
 # Arguments:
 #
-#   workflow-url         URL of the workflow run.
-#   lint-type            Type of linting failure.
+#   issue-title          Title for the new sub-issue.
+#   body-file            Path to the file containing the issue body.
 #   parent-issue-number  Number of the parent issue.
-#   error-log-file       Path to the error log file.
-#
 #
 # Environment variables:
 #
@@ -41,10 +39,9 @@ set -o pipefail
 # VARIABLES #
 
 # Assign command line arguments to variables:
-workflow_url="$1"
-lint_type="$2"
+issue_title="$1"
+body_file="$2"
 parent_issue_number="$3"
-error_log_file="$4"
 
 # Repository information:
 owner="stdlib-js"
@@ -57,28 +54,12 @@ if [ -z "$github_token" ]; then
 		exit 1
 fi
 
-# Read and format the error log
-if [ ! -f "$error_log_file" ]; then
-	echo -e "Error log file not found: ${error_log_file}"
+# Read and validate the body file:
+if [ ! -f "$body_file" ]; then
+	echo -e "ERROR: Body file not found: ${body_file}"
 	exit 1
 fi
-error_log_content=$(cat "$error_log_file")
-
-# Create issue body with formatted error log
-issue_body="## ${lint_type} Linting Failures
-
-Linting failures were detected in the automated lint workflow run.
-
-### Workflow Details
--   Run: ${workflow_url}
--   Type: ${lint_type} Linting
--   Date: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
-
-### Error Details
-\`\`\`
-${error_log_content}
-\`\`\`
-"
+issue_body=$(cat "$body_file")
 
 # FUNCTIONS #
 
@@ -130,7 +111,7 @@ create_child_issue() {
 	"query": "mutation CreateIssue(\$repositoryId: ID!, \$title: String!, \$body: String!) { createIssue(input: {repositoryId: \$repositoryId, title: \$title, body: \$body}) { issue { id number } } }",
 	"variables": {
 		"repositoryId": "${repo_id}",
-		"title": "Fix ${lint_type} lint errors",
+		"title": "${issue_title}",
 		"body": $(echo "$issue_body" | jq -R -s '.')
 	}
 }
@@ -194,7 +175,7 @@ main() {
 		exit 1
 	fi
 
-	echo "Creating child issue for ${lint_type} lint failures..."
+	echo "Creating child issue..."
 	child_issue_response=$(create_child_issue "$repo_id" "$issue_body")
 
 	child_issue_id=$(echo "$child_issue_response" | jq -r '.data.createIssue.issue.id')
