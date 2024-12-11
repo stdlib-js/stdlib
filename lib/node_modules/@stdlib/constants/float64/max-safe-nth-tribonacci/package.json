@@ -1,0 +1,73 @@
+{
+  "name": "@stdlib/constants/float64/max-safe-nth-tribonacci",
+  "version": "0.0.0",
+  "description": "Maximum safe nth Tribonacci number when stored in double-precision floating-point format.",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "main": "./lib",
+  "directories": {
+    "doc": "./docs",
+    "example": "./examples",
+    "include": "./include",
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "scripts": {},
+  "homepage": "https://github.com/stdlib-js/stdlib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stdlib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "constant",
+    "const",
+    "max",
+    "maximum",
+    "tribonacci",
+    "number",
+    "trib",
+    "safe",
+    "integer",
+    "double",
+    "dbl",
+    "floating",
+    "point",
+    "floating-point",
+    "float",
+    "float64",
+    "f64",
+    "ieee754"
+  ]
+}
