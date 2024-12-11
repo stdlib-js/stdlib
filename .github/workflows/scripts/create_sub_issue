@@ -18,13 +18,14 @@
 
 # Script to create a sub-issue.
 #
-# Usage: ./create_sub_issue.sh <issue-title> <body-file> <parent-issue-number>
+# Usage: ./create_sub_issue.sh <issue-title> <body-file> <parent-issue-number> [<labels>]
 #
 # Arguments:
 #
 #   issue-title          Title for the new sub-issue.
 #   body-file            Path to the file containing the issue body.
 #   parent-issue-number  Number of the parent issue.
+#   labels               Optional comma-separated list of labels to apply to the new sub-issue.
 #
 # Environment variables:
 #
@@ -42,6 +43,7 @@ set -o pipefail
 issue_title="$1"
 body_file="$2"
 parent_issue_number="$3"
+labels="$4"
 
 # Repository information:
 owner="stdlib-js"
@@ -60,6 +62,14 @@ if [ ! -f "$body_file" ]; then
 	exit 1
 fi
 issue_body=$(cat "$body_file")
+
+# Process labels into an array if provided:
+if [ -n "$labels" ]; then
+    # Convert comma-separated string to JSON array...
+    label_array="[$(echo "$labels" | sed 's/[[:space:]]*,[[:space:]]*/","/g' | sed 's/.*/"&"/')]"
+else
+    label_array="[]"
+fi
 
 # FUNCTIONS #
 
@@ -95,7 +105,7 @@ EOF
 	echo "$response" | jq -r '.data.repository.id'
 }
 
-# Creates a child issue.
+# Creates a child issue with labels.
 #
 # $1 - repository node ID
 # $2 - issue body
@@ -108,11 +118,12 @@ create_child_issue() {
 		-H "Content-Type: application/json" \
 		--data @- << EOF
 {
-	"query": "mutation CreateIssue(\$repositoryId: ID!, \$title: String!, \$body: String!) { createIssue(input: {repositoryId: \$repositoryId, title: \$title, body: \$body}) { issue { id number } } }",
+	"query": "mutation CreateIssue(\$repositoryId: ID!, \$title: String!, \$body: String!, \$labelIds: [ID!]) { createIssue(input: {repositoryId: \$repositoryId, title: \$title, body: \$body, labelIds: \$labelIds}) { issue { id number } } }",
 	"variables": {
 		"repositoryId": "${repo_id}",
 		"title": "${issue_title}",
-		"body": $(echo "$issue_body" | jq -R -s '.')
+		"body": $(echo "$issue_body" | jq -R -s '.'),
+		"labelIds": ${label_array}
 	}
 }
 EOF
@@ -138,6 +149,37 @@ fetch_parent_issue_id() {
 EOF
 )
 	echo "$response" | jq -r '.data.repository.issue.id'
+}
+
+# Fetches label IDs for given label names.
+fetch_label_ids() {
+	if [ -z "$labels" ]; then
+		echo "[]"
+		return
+	fi
+
+	local label_names="${labels//,/\",\"}"
+	local response
+	response=$(curl -s -X POST 'https://api.github.com/graphql' \
+		-H "Authorization: bearer ${github_token}" \
+		-H "Content-Type: application/json" \
+		--data @- << EOF
+{
+	"query": "query(\$owner: String!, \$repo: String!) { repository(owner: \$owner, name: \$repo) { labels(first: 100) { nodes { id name } } } }",
+	"variables": {
+		"owner": "${owner}",
+		"repo": "${repo}"
+	}
+}
+EOF
+)
+
+	# Extract and filter label IDs that match our requested labels...
+	echo "$response" | jq --arg names "${label_names}" '
+		.data.repository.labels.nodes |
+		map(select(.name as $n | [$names] | contains([$n]))) |
+		map(.id)
+	'
 }
 
 # Creates a sub-issue relationship.
@@ -173,6 +215,14 @@ main() {
 	if [ -z "$repo_id" ] || [ "$repo_id" = "null" ]; then
 		echo -e "Failed to fetch repository ID."
 		exit 1
+	fi
+
+	if [ -n "$labels" ]; then
+		echo "Fetching label IDs..."
+		label_array=$(fetch_label_ids)
+		if [ "$label_array" = "[]" ]; then
+			echo -e "Warning: No valid labels found for the provided label names."
+		fi
 	fi
 
 	echo "Creating child issue..."
