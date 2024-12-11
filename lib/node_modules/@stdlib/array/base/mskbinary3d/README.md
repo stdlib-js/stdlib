@@ -76,6 +76,7 @@ The function accepts the following arguments:
 ## Notes
 
 -   The function assumes that the input and output arrays have the same shape.
+-   An element in an input array is "masked" if the corresponding element in the mask array is non-zero.
 
 </section>
 
