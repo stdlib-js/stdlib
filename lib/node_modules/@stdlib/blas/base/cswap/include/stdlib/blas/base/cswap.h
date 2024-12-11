@@ -36,6 +36,11 @@ extern "C" {
 */
 void API_SUFFIX(c_cswap)( const CBLAS_INT N, void *X, const CBLAS_INT strideX, void *Y, const CBLAS_INT strideY );
 
+/**
+* Interchanges two complex single-precision floating-point vectors.
+*/
+void API_SUFFIX(c_cswap_ndarray)( const CBLAS_INT N, void *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, void *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY );
+
 #ifdef __cplusplus
 }
 #endif

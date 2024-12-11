@@ -74,7 +74,7 @@ interface Namespace {
 	* @param documents - document corpus
 	* @param K - number of topics
 	* @param options - options object
-	* @param options.alpha - Dirichlet hyper-parameter of topic vector theta:
+	* @param options.alpha - Dirichlet hyper-parameter of topic vector theta
 	* @param options.beta - Dirichlet hyper-parameter for word vector phi
 	* @throws second argument must be a positive integer
 	* @throws must provide valid options

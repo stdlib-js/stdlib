@@ -54,11 +54,11 @@ The function has the following parameters:
 
 -   **N**: number of indexed elements.
 -   **x**: input [`Float64Array`][@stdlib/array/float64].
--   **strideX**: index increment for the strided array.
+-   **strideX**: stride length for `x`.
 -   **out**: output [`Float64Array`][@stdlib/array/float64] whose first element is the sum and whose second element is the number of non-NaN elements.
--   **strideOut**: index increment for `out`.
+-   **strideOut**: stride length for `out`.
 
-The `N` and `stride` parameters determine which elements are accessed at runtime. For example, to compute the sum of every other element in the strided array,
+The `N` and stride parameters determine which elements are accessed at runtime. For example, to compute the sum of every other element in the strided array,
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -103,10 +103,10 @@ var v = dnannsumpw.ndarray( x.length, x, 1, 0, out, 1, 0 );
 
 The function has the following additional parameters:
 
--   **offsetX**: starting index for the strided array.
+-   **offsetX**: starting index for `x`.
 -   **offsetOut**: starting index for `out`.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the `offset` parameter supports indexing semantics based on a starting index. For example, to calculate the sum of every other value in the strided array starting from the second value
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, offset parameters support indexing semantics based on starting indices. For example, to calculate the sum of every other element starting from the second element:
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -165,7 +165,135 @@ console.log( out );
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
 * * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/blas/ext/base/dnannsumpw.h"
+```
+
+#### stdlib_strided_dnannsumpw( N, \*X, strideX, \*n )
+
+Computes the sum of double-precision floating-point strided array elements, ignoring `NaN` values and using pairwise summation.
+
+```c
+#include "stdlib/blas/base/shared.h"
+
+const double x[] = { 1.0, 2.0, 0.0/0.0, 4.0 };
+CBLAS_INT n = 0;
+
+double v = stdlib_strided_dnannsumpw( 4, x, 1, &n );
+// returns 7.0
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[in] double*` input array.
+-   **strideX**: `[in] CBLAS_INT` stride length for `X`.
+-   **n**: `[out] CBLAS_INT*` pointer for storing the number of non-NaN elements.
+
+```c
+double stdlib_strided_dnannsumpw( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, CBLAS_INT *n );
+```
+
+#### stdlib_strided_dnannsumpw_ndarray( N, \*X, strideX, offsetX, \*n )
+
+Computes the sum of double-precision floating-point strided array elements, ignoring `NaN` values and using pairwise summation and alternative indexing semantics.
+
+```c
+#include "stdlib/blas/base/shared.h"
+
+const double x[] = { 1.0, 2.0, 0.0/0.0, 4.0 };
+CBLAS_INT n = 0; 
+
+double v = stdlib_strided_dnannsumpw_ndarray( 4, x, 1, 0, &n );
+// returns 7.0
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[in] double*` input array.
+-   **strideX**: `[in] CBLAS_INT` stride length for `X`.
+-   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
+-   **n**: `[out] CBLAS_INT*` pointer for storing the number of non-NaN elements.
+
+```c
+double stdlib_strided_dnannsumpw_ndarray( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, CBLAS_INT *n );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/blas/ext/base/dnannsumpw.h"
+#include "stdlib/blase/base/shared.h"
+#include <stdio.h>
+
+int main( void ) {
+    // Create a strided array:
+    const double x[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 0.0/0.0, 0.0/0.0 };
+
+    // Specify the number of elements:
+    const int N = 5;
+
+    // Specify the stride length:
+    const int strideX = 2;
+
+    // Initialize a variable for storing the number of non-NaN elements:
+    CBLAS_INT n = 0;
+
+    // Compute the sum:
+    double v = stdlib_strided_dnannsumpw( N, x, strideX, &n );
+
+    // Print the result:
+    printf( "sum: %lf\n", v );
+    printf( "n: %"CBLAS_IFMT"\n", n );
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <section class="references">
 

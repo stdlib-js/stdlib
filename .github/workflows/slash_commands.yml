@@ -29,8 +29,66 @@ on:
 # Workflow jobs:
 jobs:
 
+  # Define a job for adding an initial reaction:
+  add_initial_reaction:
+
+    # Define a display name:
+    name: 'Add initial reaction'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the conditions under which the job should run:
+    if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib')
+
+    # Define the job's steps:
+    steps:
+      # Add "bot: In progress" label to the issue / PR:
+      - name: 'Add in-progress label'
+        # Pin action to full length commit SHA
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        with:
+          github-token: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+          script: |
+            github.rest.issues.addLabels({
+              'owner': context.repo.owner,
+              'repo': context.repo.repo,
+              'issue_number': context.issue.number,
+              'labels': ['bot: In Progress']
+            })
+
+      # Add initial reaction to comment with slash command:
+      - name: 'Add initial reaction'
+        run: |
+          COMMENT="${{ github.event.comment.body }}"
+          if [[ $COMMENT == "/stdlib help" || \
+                $COMMENT == "/stdlib check-files" || \
+                $COMMENT == "/stdlib update-copyright-years" || \
+                $COMMENT == "/stdlib lint-autofix" || \
+                $COMMENT == "/stdlib merge" || \
+                $COMMENT == "/stdlib rebase"
+          ]]; then
+            curl -X POST \
+              -H "Accept: application/vnd.github.v3+json" \
+              -H "Authorization: Bearer ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}" \
+              "https://api.github.com/repos/${{ github.repository }}/issues/comments/${{ github.event.comment.id }}/reactions" \
+              -d '{"content":"eyes"}'
+          else
+            curl -X POST \
+              -H "Accept: application/vnd.github.v3+json" \
+              -H "Authorization: Bearer ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}" \
+              "https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/comments" \
+              -d '{"body":"@${{ github.event.comment.user.login }}, slash command not recognized. Please use `/stdlib help` to view available commands."}'
+          fi
+
   # Define a job for checking for required files:
   check_files:
+
+    # Define a display name:
+    name: 'Check for required files'
+
+    # Ensure initial reaction job has completed before running this job:
+    needs: [ add_initial_reaction ]
 
     # Define the conditions under which the job should run:
     if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib check-files')
@@ -45,6 +103,9 @@ jobs:
 
   # Define a job for updating copyright header years:
   update_copyright_years:
+
+    # Define a display name:
+    name: 'Update copyright header years'
 
     # Define the conditions under which the job should run:
     if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib update-copyright-years')
@@ -62,6 +123,12 @@ jobs:
   # Define a job for auto-fixing lint errors:
   fix_lint_errors:
 
+    # Define a display name:
+    name: 'Auto-fix lint errors'
+
+    # Ensure initial reaction job has completed before running this job:
+    needs: [ add_initial_reaction ]
+
     # Define the conditions under which the job should run:
     if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib lint-autofix')
 
@@ -75,15 +142,61 @@ jobs:
       STDLIB_BOT_GPG_PRIVATE_KEY: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
       STDLIB_BOT_GPG_PASSPHRASE: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
 
+  # Define a job for merging develop branch:
+  merge_develop:
+
+    # Define a display name:
+    name: 'Merge changes from develop branch into this PR'
+
+    # Ensure initial reaction job has completed before running this job:
+    needs: [ add_initial_reaction ]
+
+    # Define the conditions under which the job should run:
+    if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib merge')
+
+    # Run reusable workflow:
+    uses: ./.github/workflows/pr_merge_develop.yml
+    with:
+      pull_request_number: ${{ github.event.issue.number }}
+    secrets:
+      REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+      STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+      STDLIB_BOT_GPG_PRIVATE_KEY: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
+      STDLIB_BOT_GPG_PASSPHRASE: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
+
+  # Define a job for rebasing on develop branch:
+  rebase_develop:
+
+    # Define a display name:
+    name: 'Rebase this PR on top of develop branch'
+
+    # Ensure initial reaction job has completed before running this job:
+    needs: [ add_initial_reaction ]
+
+    # Define the conditions under which the job should run:
+    if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib rebase')
+
+    # Run reusable workflow:
+    uses: ./.github/workflows/pr_rebase_develop.yml
+    with:
+      pull_request_number: ${{ github.event.issue.number }}
+    secrets:
+      REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+      STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+      STDLIB_BOT_GPG_PRIVATE_KEY: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
+      STDLIB_BOT_GPG_PASSPHRASE: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
+
   # Define a job for printing a list of available slash commands:
   help:
 
     # Define a display name:
-    name: 'Help'
+    name: 'Print a list of available slash commands'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
+    # Ensure initial reaction job has completed before running this job:
+    needs: [ add_initial_reaction ]
 
     # Define the conditions under which the job should run:
     if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib help')
@@ -105,6 +218,47 @@ jobs:
             - `/stdlib check-files` - Check for required files.
             - `/stdlib update-copyright-years` - Update copyright header years.
             - `/stdlib lint-autofix` - Auto-fix lint errors.
+            - `/stdlib merge` - Merge changes from develop branch into this PR.
+            - `/stdlib rebase` - Rebase this PR on top of develop branch.
 
           # GitHub token:
           token: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+
+  # Define a job for removing the in-progress label:
+  remove_progress_label:
+
+    # Define a display name:
+    name: 'Remove in-progress label'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Ensure all previous jobs have completed before running this job:
+    needs: [ add_initial_reaction, check_files, update_copyright_years, fix_lint_errors, merge_develop, rebase_develop, help ]
+
+    # Define the conditions under which the job should run:
+    if: |
+      always() &&
+      github.event.issue.pull_request &&
+      startsWith(github.event.comment.body, '/stdlib')
+
+    # Define the job's steps:
+    steps:
+      - name: Remove in-progress label
+        # Run the step regardless of the outcome of previous steps:
+        if: always()
+        # Pin action to full length commit SHA
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        with:
+          github-token: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+          script: |
+            try {
+              await github.rest.issues.removeLabel({
+                'owner': context.repo.owner,
+                'repo': context.repo.repo,
+                'issue_number': context.issue.number,
+                'name': 'bot: In Progress'
+              })
+            } catch ( error ) {
+              console.log( 'Error removing label: %s', error.message );
+            }

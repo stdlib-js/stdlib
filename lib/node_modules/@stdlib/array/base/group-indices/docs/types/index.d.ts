@@ -30,11 +30,11 @@ type Key = string | symbol | number;
 /**
 * Interface describing returned group results.
 */
-interface IndicesResults<K, T> {
+interface IndicesResults<T> {
 	/**
 	* Object properties.
 	*/
-	[key: K]: Array<T>;
+	[key: Key]: Array<T>;
 }
 
 /**
@@ -51,7 +51,7 @@ interface IndicesResults<K, T> {
 * var out = groupIndices( x, groups );
 * // returns { 'b': [ 0, 1, 3 ], 'f': [ 2 ] }
 */
-declare function groupIndices<T = unknown>( x: Collection<T> | AccessorArrayLike<T>, groups: Collection<Key> | AccessorArrayLike<Key> ): IndicesResults<Key, number>;
+declare function groupIndices<T = unknown>( x: Collection<T> | AccessorArrayLike<T>, groups: Collection<Key> | AccessorArrayLike<Key> ): IndicesResults<number>;
 
 
 // EXPORTS //

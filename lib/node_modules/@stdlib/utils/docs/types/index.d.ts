@@ -2591,7 +2591,7 @@ interface Namespace {
 	* @param obj - input object
 	* @param options - function options
 	* @param options.thisArg - execution context
-	* @param options.returns - if `values`, values are returned; if `keys`, keys are returned; if `*`, both keys and values are returned (default: 'values')
+	* @param options.returns - if `'values'`, values are returned; if `'indices'`, indices are returned; if `'*'`, both indices and values are returned (default: 'values')
 	* @param indicator - indicator function indicating which group an element in the input object belongs to
 	* @returns group results
 	*
@@ -2600,45 +2600,16 @@ interface Namespace {
 	*     return v[ 0 ];
 	* }
 	* var obj = {
-	*     'a': 'beep',
-	*     'b': 'boop',
-	*     'c': 'foo',
-	*     'd': 'bar'
-	* };
-	* var out = ns.groupOwn( obj, indicator );
-	* // e.g., returns { 'b': [ 'beep', 'boop', 'bar' ], 'f': [ 'foo' ] }
-	*
-	* @example
-	* function indicator( v ) {
-	*     return v[ 0 ];
-	* }
-	* var obj = {
-	*     'a': 'beep',
-	*     'b': 'boop',
-	*     'c': 'foo',
-	*     'd': 'bar'
+	*     'a': 'apple',
+	*     'b': 'banana',
+	*     'c': 'cherry',
+	*     'd': 'date'
 	* };
 	* var opts = {
-	*     'returns': 'keys'
+	*     'returns': 'values'
 	* };
 	* var out = ns.groupOwn( obj, opts, indicator );
-	* // e.g., returns { 'b': [ 'a', 'b', 'd' ], 'f': [ 'c' ] }
-	*
-	* @example
-	* function indicator( v ) {
-	*     return v[ 0 ];
-	* }
-	* var obj = {
-	*     'a': 'beep',
-	*     'b': 'boop',
-	*     'c': 'foo',
-	*     'd': 'bar'
-	* };
-	* var opts = {
-	*     'returns': '*'
-	* };
-	* var out = ns.groupOwn( obj, opts, indicator );
-	* // e.g., returns { 'b': [ [ 'a', 'beep' ], [ 'b', 'boop' ], [ 'd', 'bar' ] ], 'f': [ [ 'c', 'foo' ] ] }
+	* // e.g., returns { 'a': [ 'apple' ], 'b': [ 'banana' ], 'c': [ 'cherry' ], 'd': [ 'date' ] }
 	*/
 	groupOwn: typeof groupOwn;
 
@@ -3328,13 +3299,18 @@ interface Namespace {
 	* }
 	*
 	* function clbk( v ) {
+	*     this.count += 1;
 	*     return v * 2;
 	* }
 	*
-	* var bar = ns.mapArguments( foo, clbk );
+	* var thisArg = { 'count': 0 };
+	* var bar = ns.mapArguments( foo, clbk, thisArg );
 	*
 	* var out = bar( 1, 2, 3 );
 	* // returns [ 2, 4, 6 ]
+	*
+	* var count = thisArg.count;
+	* // returns 3
 	*/
 	mapArguments: typeof mapArguments;
 
@@ -4356,8 +4332,8 @@ interface Namespace {
 	* Inverts an object, such that keys become values and values become keys.
 	*
 	* @param obj - input object
-	* @param opts - function options
-	* @param opts.duplicates - boolean indicating whether to store duplicate keys (default: true)
+	* @param options - function options
+	* @param options.duplicates - boolean indicating whether to store duplicate keys (default: true)
 	* @returns inverted object
 	*
 	* @example
