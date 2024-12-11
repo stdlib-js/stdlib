@@ -1,0 +1,12 @@
+
+{{alias}}
+    Square root of the golden ratio as a single-precision floating-point number.
+
+    Examples
+    --------
+    > {{alias}}
+    1.272019624710083
+
+    See Also
+    --------
+

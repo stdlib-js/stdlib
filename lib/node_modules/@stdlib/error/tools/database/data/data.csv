@@ -1064,3 +1064,7 @@
 "H9","invalid argument. First argument must be a supported data type. Value: `%s`.","TypeError"
 "HA","invalid argument. Must provide an ArrayBuffer. Value: `%s`.","TypeError"
 "HB","invalid argument. Second argument must be a data type. Value: `%s`.","TypeError"
+"HC","invalid option. Each key object must have a `name` property. Value: `%s`.","TypeError"
+"HD","invalid option. Each key object's `name` property must be a string. Value: `%s`.","TypeError"
+"HE","invalid option. Each key object's `%s` property must be a boolean. Value: `%s`.","TypeError"
+"HF","invalid option. Each action must be an array of objects. Value: `%s`.","TypeError"

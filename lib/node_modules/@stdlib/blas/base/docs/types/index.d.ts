@@ -1849,7 +1849,7 @@ interface Namespace {
 	* @param N - number of indexed elements
 	* @param alpha - constant
 	* @param x - input array
-	* @param stride - stride length
+	* @param stride - index increment
 	* @returns input array
 	*
 	* @example
