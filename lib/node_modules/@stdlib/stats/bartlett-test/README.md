@@ -209,7 +209,7 @@ var table = out.print();
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/stats/vartest`][@stdlib/stats/vartest]</span><span class="delimiter">: </span><span class="description">two-sample F-test for equal variances</span>
+-   <span class="package-name">[`@stdlib/stats/vartest`][@stdlib/stats/vartest]</span><span class="delimiter">: </span><span class="description">two-sample F-test for equal variances.</span>
 -   <span class="package-name">[`@stdlib/stats/levene-test`][@stdlib/stats/levene-test]</span><span class="delimiter">: </span><span class="description">Levene's test for equal variances.</span>
 
 </section>
