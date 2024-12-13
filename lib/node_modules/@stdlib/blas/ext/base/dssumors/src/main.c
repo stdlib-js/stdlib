@@ -17,31 +17,47 @@
 */
 
 #include "stdlib/blas/ext/base/dssumors.h"
-#include <stdint.h>
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/stride2offset.h"
 
 /**
 * Computes the sum of single-precision floating-point strided array elements using ordinary recursive summation with extended accumulation and returning an extended precision result.
 *
-* @param N       number of indexed elements
-* @param X       input array
-* @param stride  stride length
-* @return        output value
+* @param N        number of indexed elements
+* @param X        input array
+* @param strideX  stride length
+* @return         output value
 */
-double stdlib_strided_dssumors( const int64_t N, const float *X, const int64_t stride ) {
+double API_SUFFIX(stdlib_strided_dssumors)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX ) {
+	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	return API_SUFFIX(stdlib_strided_dssumors_ndarray)( N, X, strideX, ox );
+}
+
+/**
+* Computes the sum of single-precision floating-point strided array elements using ordinary recursive summation with extended accumulation and alternative indexing semantics and returning an extended precision result.
+*
+* @param N        number of indexed elements
+* @param X        input array
+* @param strideX  stride length
+* @param offsetX  starting index
+* @return         output value
+*/
+double API_SUFFIX(stdlib_strided_dssumors_ndarray)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+	CBLAS_INT ix;
+	CBLAS_INT m;
+	CBLAS_INT i;
 	double sum;
-	int64_t ix;
-	int64_t m;
-	int64_t i;
 
 	sum = 0.0;
 	if ( N <= 0 ) {
 		return sum;
 	}
-	if ( N == 1 || stride == 0 ) {
-		return X[ 0 ];
+	ix = offsetX;
+	if ( strideX == 0 ) {
+		return N * X[ ix ];
 	}
 	// If the stride is equal to `1`, use unrolled loops...
-	if ( stride == 1 ) {
+	if ( strideX == 1 ) {
 		m = N % 6;
 
 		// If we have a remainder, run a clean-up loop...
@@ -58,14 +74,10 @@ double stdlib_strided_dssumors( const int64_t N, const float *X, const int64_t s
 		}
 		return sum;
 	}
-	if ( stride < 0 ) {
-		ix = (1-N) * stride;
-	} else {
-		ix = 0;
-	}
+
 	for ( i = 0; i < N; i++ ) {
 		sum += (double)X[ ix ];
-		ix += stride;
+		ix += strideX;
 	}
 	return sum;
 }

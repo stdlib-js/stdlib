@@ -229,6 +229,152 @@ logEach( '(%s)*(%s) + (%s) = %s', ca, cx, cyc, cy );
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/blas/base/caxpy.h"
+```
+
+#### c_caxpy( N, ca, \*CX, strideX, \*CY, strideY )
+
+Scales values from `cx` by `ca` and adds the result to `cy`.
+
+```c
+#include "stdlib/complex/float32/ctor.h"
+
+float cx[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f };
+float cy[] = { -1.0f, -2.0f, -3.0f, -4.0f, -5.0f, -6.0f, -7.0f, -8.0f };
+const stdlib_complex64_t ca = stdlib_complex64( 2.0f, 2.0f );
+
+c_caxpy( 4, ca, (void *)cx, 1, (void *)cy, 1 );
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **ca**: `[in] stdlib_complex64_t` scalar constant.
+-   **CX**: `[in] void*` input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `CX`.
+-   **CY**: `[inout] void*` output array.
+-   **strideY**: `[in] CBLAS_INT` index increment for `CY`.
+
+```c
+void c_caxpy( const CBLAS_INT N, const stdlib_complex64_t ca, const void *CX, const CBLAS_INT strideX, void *CY, const CBLAS_INT strideY );
+```
+
+#### c_caxpy_ndarray( N, ca, \*CX, strideX, offsetX, \*CY, strideY, offsetY )
+
+Scales values from `cx` by `ca` and adds the result to `cy` using alternative indexing semantics.
+
+```c
+#include "stdlib/complex/float32/ctor.h"
+
+float cx[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f };
+float cy[] = { -1.0f, -2.0f, -3.0f, -4.0f, -5.0f, -6.0f, -7.0f, -8.0f }
+const stdlib_complex64_t ca = stdlib_complex64( 2.0f, 2.0f );
+
+c_caxpy_ndarray( 4, ca, (void *)cx, 1, 0, (void *)cy, 1, 0 );
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **ca**: `[in] stdlib_complex64_t` scalar constant.
+-   **CX**: `[in] void*` input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `CX`.
+-   **offsetX**: `[in] CBLAS_INT` starting index for `CX`.
+-   **CY**: `[inout] void*` output array.
+-   **strideY**: `[in] CBLAS_INT` index increment for `CY`.
+-   **offsetY**: `[in] CBLAS_INT` starting index for `CY`.
+
+```c
+void c_caxpy_ndarray( const CBLAS_INT N, const stdlib_complex64_t ca, const void *CX, const CBLAS_INT strideX, const CBLAS_INT offsetX, void *CY, const CBLAS_INT strideY, const CBLAS_INT offsetY );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/blas/base/caxpy.h"
+#include "stdlib/complex/float32/ctor.h"
+#include <stdio.h>
+
+int main( void ) {
+    // Create strided arrays of interleaved real and imaginary components...
+    float cx[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f };
+    float cy[] = { -1.0f, -2.0f, -3.0f, -4.0f, -5.0f, -6.0f, -7.0f, -8.0f };
+
+    // Create a complex scalar:
+    const stdlib_complex64_t ca = stdlib_complex64( 2.0f, 2.0f );
+
+    // Specify the number of elements:
+    const int N = 4;
+
+    // Specify strides...
+    const int strideX = 1;
+    const int strideY = 1;
+
+    // Scale values from `cx` by `ca` and adds the result to `cy`:
+    c_caxpy( N, ca, (void *)cx, strideX, (void *)cy, strideY );
+
+    // Print the result:
+    for ( int i = 0; i < N; i++ ) {
+        printf( "cy[ %i ] = %f + %fj\n", i, cy[ i*2 ], cy[ (i*2)+1 ] );
+    }
+
+    // Scales values from `cx` by `ca` and adds the result to `cy` using alternative indexing semantics:
+    c_caxpy_ndarray( N, ca, (void *)cx, -strideX, 3, (void *)cy, -strideY, 3 );
+
+    // Print the result:
+    for ( int i = 0; i < N; i++ ) {
+        printf( "cy[ %i ] = %f + %fj\n", i, cy[ i*2 ], cy[ (i*2)+1 ] );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
