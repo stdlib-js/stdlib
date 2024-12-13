@@ -23,10 +23,10 @@
 
 int main( void ) {
 	const stdlib_complex64_t x[] = {
-		stdlib_complex64( 3.14, 1.5 ),
-		stdlib_complex64( -3.14, -1.5 ),
-		stdlib_complex64( 0.0, 0.0 ),
-		stdlib_complex64( 0.0/0.0, 0.0/0.0 )
+		stdlib_complex64( 3.14f, 1.5f ),
+		stdlib_complex64( -3.14f, -1.5f ),
+		stdlib_complex64( 0.0f, 0.0f ),
+		stdlib_complex64( 0.0f / 0.0f, 0.0f / 0.0f )
 	};
 
 	stdlib_complex64_t v;

@@ -326,7 +326,7 @@ jobs:
       - name: 'Setup R'
         if: ( github.event.inputs.r != 'false' ) && ( success() || failure() )
         # Pin action to full length commit SHA
-        uses: r-lib/actions/setup-r@e6be4b3706e0f39bc7a4cf4496a5f2c4cb840040 # v2.10.1
+        uses: r-lib/actions/setup-r@473c68190595b311a74f208fba61a8d8c0d4c247 # v2.11.1
         with:
           r-version: '4.3.3'
 
@@ -393,15 +393,30 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
         run: |
-          # Create a temporary file for storing lint error messages:
-          ERROR_LOG=$(mktemp)
-          grep -B 1 -A 2 "style:\|warning:\|error:" <<< "${{ steps.lint-c.outputs.stderr }}" > $ERROR_LOG
+          BODY_FILE="$GITHUB_WORKSPACE/lint_issue_body.md"
 
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_lint_sub_issue.sh" \
-            "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
-            "C" \
-            "3235" \ # Number of C lint error tracking issue
-            "$ERROR_LOG"
+          cat << EOF > "$BODY_FILE"
+            ## C Linting Failures
+
+            Linting failures were detected in the automated lint workflow run.
+
+            ### Workflow Details
+            -   Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            -   Type: C Linting
+            -   Date: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
+
+            ### Error Details
+            \`\`\`
+            $(grep -B 1 -A 2 "style:\|warning:\|error:" <<< "${{ steps.lint-c.outputs.stderr }}")
+            \`\`\`
+            EOF
+
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_sub_issue" \
+            'Fix C lint errors' \
+            "$BODY_FILE" \
+            "3235"  # Number of C lint error tracking issue
+
+          rm "$BODY_FILE"
 
       # Lint TypeScript declarations files:
       - name: 'Lint TypeScript declarations files'
