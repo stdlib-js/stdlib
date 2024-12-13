@@ -147,6 +147,101 @@ for ( i = 0; i < 10; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/betaprime/stdev.h"
+```
+
+#### stdlib_base_dists_betaprime_stdev( alpha, beta )
+
+Returns the standard deviation of a beta prime distribution.
+
+```c
+double out = stdlib_base_dists_betaprime_stdev( 1.0, 3.0 );
+// returns ~0.866
+```
+
+The function accepts the following arguments:
+
+-   **alpha**: `[in] double` first shape parameter.
+-   **beta**: `[in] double` second shape parameter.
+
+```c
+double stdlib_base_dists_betaprime_stdev( const double alpha, const double beta );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/betaprime/stdev.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v * ( max - min ) );
+}
+
+int main( void ) {
+    double alpha;
+    double beta;
+    double y;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        alpha = random_uniform( 0, 20 );
+        beta = random_uniform( 0, 20 ) + 2.0;
+        y = stdlib_base_dists_betaprime_stdev( alpha, beta );
+        printf( "α: %lf, β: %lf, SD(X;α,β): %lf\n", alpha, beta, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="references">

@@ -1,0 +1,13 @@
+
+{{alias}}
+    Natural logarithm of the mathematical constant `π` as a single-precision
+    floating-point number.
+
+    Examples
+    --------
+    > {{alias}}
+    1.1447298526763916
+
+    See Also
+    --------
+
