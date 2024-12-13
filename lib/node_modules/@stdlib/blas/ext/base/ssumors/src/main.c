@@ -17,55 +17,66 @@
 */
 
 #include "stdlib/blas/ext/base/ssumors.h"
-#include <stdint.h>
+#include "stdlib/strided/base/stride2offset.h"
+#include "stdlib/blas/base/shared.h"
 
 /**
 * Computes the sum of single-precision floating-point strided array elements using ordinary recursive summation.
 *
-* @param N       number of indexed elements
-* @param X       input array
-* @param stride  stride length
-* @return        output value
+* @param N        number of indexed elements
+* @param X        input array
+* @param strideX  stride length
+* @return         output value
 */
-float stdlib_strided_ssumors( const int64_t N, const float *X, const int64_t stride ) {
-	int64_t ix;
-	int64_t m;
-	int64_t i;
+float API_SUFFIX(stdlib_strided_ssumors)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX ) {
+	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	return API_SUFFIX(stdlib_strided_ssumors_ndarray)( N, X, strideX, ox );
+}
+
+/**
+* Computes the sum of single-precision floating-point strided array elements using ordinary recursive summation and alternative indexing semantics.
+*
+* @param N        number of indexed elements
+* @param X        input array
+* @param strideX  stride length
+* @param offsetX  starting index
+* @return         output value
+*/
+float API_SUFFIX(stdlib_strided_ssumors_ndarray)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+	CBLAS_INT ix;
+	CBLAS_INT m;
+	CBLAS_INT i;
 	float sum;
 
 	sum = 0.0f;
 	if ( N <= 0 ) {
 		return sum;
 	}
-	if ( N == 1 || stride == 0 ) {
-		return X[ 0 ];
+	ix = offsetX;
+	if ( strideX == 0 ) {
+		return N * X[ ix ];
 	}
 	// If the stride is equal to `1`, use unrolled loops...
-	if ( stride == 1 ) {
+	if ( strideX == 1 ) {
 		m = N % 6;
 
 		// If we have a remainder, run a clean-up loop...
 		if ( m > 0 ) {
 			for ( i = 0; i < m; i++ ) {
-				sum += X[ i ];
+				sum += X[ ix + i ];
 			}
 		}
 		if ( N < 6 ) {
 			return sum;
 		}
 		for ( i = m; i < N; i += 6 ) {
-			sum += X[i] + X[i+1] + X[i+2] + X[i+3] + X[i+4] + X[i+5];
+			sum += X[ix+i] + X[ix+i+1] + X[ix+i+2] + X[ix+i+3] + X[ix+i+4] + X[ix+i+5];
 		}
 		return sum;
 	}
-	if ( stride < 0 ) {
-		ix = (1-N) * stride;
-	} else {
-		ix = 0;
-	}
 	for ( i = 0; i < N; i++ ) {
 		sum += X[ ix ];
-		ix += stride;
+		ix += strideX;
 	}
 	return sum;
 }
