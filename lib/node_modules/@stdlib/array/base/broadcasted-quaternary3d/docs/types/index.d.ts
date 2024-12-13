@@ -83,7 +83,7 @@ type InOutShapes = [
 *
 * -   The input array shapes must be broadcast compatible with the output array shape.
 *
-* @param arrays - array containing two input nested arrays and one output nested array
+* @param arrays - array containing four input nested arrays and one output nested array
 * @param shapes - array shapes
 * @param fcn - quaternary callback
 *
