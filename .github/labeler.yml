@@ -27,3 +27,7 @@ LAPACK:
 Math:
 - changed-files:
   - any-glob-to-all-files: '**/math/**/*'
+
+Statistics:
+- changed-files:
+  - any-glob-to-all-files: '**/stats/**/*'
