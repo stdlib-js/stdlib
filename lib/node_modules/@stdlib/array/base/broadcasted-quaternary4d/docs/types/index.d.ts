@@ -91,7 +91,6 @@ type InOutShapes = [
 * var add = require( '@stdlib/math/base/ops/add4' );
 * var ones4d = require( '@stdlib/array/base/ones4d' );
 * var zeros4d = require( '@stdlib/array/base/zeros4d' );
-* var bquaternary4d = require( '@stdlib/array/base/broadcasted-quaternary4d' );
 *
 * var shapes = [
 *     [ 1, 3, 1, 1 ],
