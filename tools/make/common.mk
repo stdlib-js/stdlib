@@ -216,6 +216,12 @@ GIT_BRANCH ?= $(GIT) rev-parse --abbrev-ref HEAD
 # Define the command for CMake:
 CMAKE ?= cmake
 
+# Define the command for clang-format:
+CLANG_FORMAT ?= $(DEPS_LLVM_CLANG_FORMAT)
+
+# Define the command for clang-tidy:
+CLANG_TIDY ?= $(DEPS_LLVM_CLANG_TIDY)
+
 # Determine the `open` command:
 ifeq ($(OS), Darwin)
 	OPEN ?= open
@@ -385,17 +391,10 @@ endif
 
 # EXTERNAL DEPENDENCIES #
 
-# Define the BLAS library to use:
-BLAS ?=
-
-# Define the path to the BLAS library (used for includes and linking):
-BLAS_DIR ?=
-
-# Define the primary integer type to use in BLAS routines:
-CBLAS_INT ?=
-
 # Define the path for building dependencies:
 DEPS_BUILD_DIR ?= $(DEPS_DIR)/build
+
+# Boost...
 
 # Define the Boost version:
 DEPS_BOOST_VERSION ?= 1.69.0
@@ -405,6 +404,19 @@ deps_boost_version_slug := $(subst .,_,$(DEPS_BOOST_VERSION))
 
 # Define the output path when building Boost:
 DEPS_BOOST_BUILD_OUT ?= $(DEPS_BUILD_DIR)/boost_$(deps_boost_version_slug)
+
+# BLAS (general)...
+
+# Define the BLAS library to use:
+BLAS ?=
+
+# Define the path to the BLAS library (used for includes and linking):
+BLAS_DIR ?=
+
+# Define the primary integer type to use in BLAS routines:
+CBLAS_INT ?=
+
+# OpenBLAS...
 
 # Define the OpenBLAS version:
 DEPS_OPENBLAS_VERSION ?= 0.3.27
@@ -493,6 +505,8 @@ ifeq (, $(BLAS_DIR))
 endif
 endif
 
+# LLVM...
+
 # Define the output path when building LLVM:
 DEPS_LLVM_BUILD_OUT ?= $(DEPS_BUILD_DIR)/llvm
 
@@ -502,11 +516,19 @@ DEPS_LLVM_VERSION ?=
 # Define the path to the LLVM clang compiler:
 DEPS_LLVM_CLANG ?= $(DEPS_LLVM_BUILD_OUT)/build/bin/clang
 
+# Define the path to the clang format utility:
+DEPS_LLVM_CLANG_FORMAT ?= $(DEPS_LLVM_BUILD_OUT)/build/bin/clang-format
+
+# Define the path to the clang tidy utility:
+DEPS_LLVM_CLANG_TIDY ?= $(DEPS_LLVM_BUILD_OUT)/build/bin/clang-tidy
+
 # Define the path to the LLVM archiver:
 DEPS_LLVM_AR ?= $(DEPS_LLVM_BUILD_OUT)/build/bin/llvm-ar
 
 # Define the path to the LLVM tool for listing LLVM bitcode and object file symbol tables:
 DEPS_LLVM_NM ?= $(DEPS_LLVM_BUILD_OUT)/build/bin/llvm-nm
+
+# WebAssembly System Interface (WASI)...
 
 # Define the output path when building WASI libc:
 DEPS_WASI_LIBC_BUILD_OUT ?= $(DEPS_BUILD_DIR)/wasi-libc
@@ -516,6 +538,8 @@ DEPS_WASI_LIBC_VERSION ?=
 
 # Define the path to WASI libc sysroot:
 DEPS_WASI_LIBC_SYSROOT ?= $(DEPS_WASI_LIBC_BUILD_OUT)/sysroot
+
+# EMSDK...
 
 # Define the output path when building the Emscripten SDK:
 DEPS_EMSDK_BUILD_OUT ?= $(DEPS_BUILD_DIR)/emsdk
@@ -543,6 +567,8 @@ DEPS_WABT_WASM2WAT ?= $(DEPS_WABT_BUILD_OUT)/build/wasm2wat
 
 # Define the path to the utility for converting WebAssembly text format files to the WebAssembly binary format:
 DEPS_WABT_WAT2WASM ?= $(DEPS_WABT_BUILD_OUT)/build/wat2wasm
+
+# Cephes...
 
 # Define the Cephes distribution to build (netlib, moshier, cephes-2.8):
 DEPS_CEPHES_DIST ?= moshier
@@ -604,6 +630,8 @@ else
 endif
 endif
 
+# Electron...
+
 # Define the Electron version:
 DEPS_ELECTRON_VERSION ?= 25.3.1
 
@@ -618,6 +646,8 @@ DEPS_ELECTRON_ARCH := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOST_
 
 # Host platform:
 DEPS_ELECTRON_PLATFORM := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOST_PLATFORM))
+
+# Shellcheck...
 
 # Define the shellcheck version:
 DEPS_SHELLCHECK_VERSION ?= 0.8.0
@@ -634,6 +664,8 @@ DEPS_SHELLCHECK_ARCH := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOS
 # Host platform:
 DEPS_SHELLCHECK_PLATFORM := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOST_PLATFORM))
 
+# cppcheck...
+
 # Define the cppcheck version:
 DEPS_CPPCHECK_VERSION ?= 2.15.0
 
@@ -645,9 +677,3 @@ DEPS_CPPCHECK_BUILD_OUT ?= $(DEPS_BUILD_DIR)/cppcheck_$(deps_cppcheck_version_sl
 
 # Host platform:
 DEPS_CPPCHECK_PLATFORM := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOST_PLATFORM))
-
-# API key for the stdlib scaffolding service:
-ifneq ($(wildcard .stdlibrc),)
-	include .stdlibrc
-	export SCAFFOLD_API_KEY
-endif

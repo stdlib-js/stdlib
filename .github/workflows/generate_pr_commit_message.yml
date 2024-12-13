@@ -70,9 +70,20 @@ jobs:
         id: commit_message
         run: |
           COMMIT_MESSAGE=$($GITHUB_WORKSPACE/.github/workflows/scripts/generate_pr_commit_message $PR_NUMBER)
+          EXIT_CODE=$?
+
           echo "commit_message<<EOF" >> $GITHUB_OUTPUT
           echo "$COMMIT_MESSAGE" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
+
+          if [ $EXIT_CODE -eq 200 ]; then
+            echo "has_tracking_issue=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_tracking_issue=false" >> $GITHUB_OUTPUT
+          fi
+
+          # Ensure the script itself doesn't fail the workflow:
+          exit 0
 
       # Post commit message as PR comment:
       - name: 'Post commit message as PR comment'
@@ -88,3 +99,5 @@ jobs:
             ```
 
             *Please review the above commit message and make any necessary adjustments.*
+
+            ${{ steps.commit_message.outputs.has_tracking_issue == 'true' && '⚠️ **Action Required**: This PR references tracking issues. Please update the PR description to replace any "Closes", "Fixes", or "Resolves" keywords with "Ref" when referencing these issues.' || '' }}

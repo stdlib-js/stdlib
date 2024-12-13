@@ -69,18 +69,6 @@ else
 	fPIC ?= -fPIC
 endif
 
-# List of includes (e.g., `-I /foo/bar -I /beep/boop/include`):
-INCLUDE ?=
-
-# List of source files:
-SOURCE_FILES ?=
-
-# List of libraries (e.g., `-lopenblas -lpthread`):
-LIBRARIES ?=
-
-# List of library paths (e.g., `-L /foo/bar -L /beep/boop`):
-LIBPATH ?=
-
 # List of C targets:
 c_targets := benchmark.out
 
@@ -88,15 +76,11 @@ c_targets := benchmark.out
 # RULES #
 
 #/
-# Compiles source files.
+# Compiles C source files.
 #
 # @param {string} [C_COMPILER] - C compiler (e.g., `gcc`)
 # @param {string} [CFLAGS] - C compiler options
-# @param {(string|void)} [fPIC] - compiler flag determining whether to generate position independent code (e.g., `-fPIC`)
-# @param {string} [INCLUDE] - list of includes (e.g., `-I /foo/bar -I /beep/boop/include`)
-# @param {string} [SOURCE_FILES] - list of source files
-# @param {string} [LIBPATH] - list of library paths (e.g., `-L /foo/bar -L /beep/boop`)
-# @param {string} [LIBRARIES] - list of libraries (e.g., `-lopenblas -lpthread`)
+# @param {(string|void)} [fPIC] - compiler flag indicating whether to generate position independent code (e.g., `-fPIC`)
 #
 # @example
 # make
@@ -112,16 +96,12 @@ all: $(c_targets)
 # Compiles C source files.
 #
 # @private
-# @param {string} CC - C compiler (e.g., `gcc`)
-# @param {string} CFLAGS - C compiler options
-# @param {(string|void)} fPIC - compiler flag determining whether to generate position independent code (e.g., `-fPIC`)
-# @param {string} INCLUDE - list of includes (e.g., `-I /foo/bar`)
-# @param {string} SOURCE_FILES - list of source files
-# @param {string} LIBPATH - list of library paths (e.g., `-L /foo/bar`)
-# @param {string} LIBRARIES - list of libraries (e.g., `-lopenblas`)
+# @param {string} CC - C compiler
+# @param {string} CFLAGS - C compiler flags
+# @param {(string|void)} fPIC - compiler flag indicating whether to generate position independent code
 #/
 $(c_targets): %.out: %.c
-	$(QUIET) $(CC) $(CFLAGS) $(fPIC) $(INCLUDE) -o $@ $(SOURCE_FILES) $< $(LIBPATH) -lm $(LIBRARIES)
+	$(QUIET) $(CC) $(CFLAGS) $(fPIC) -o $@ $< -lm
 
 #/
 # Runs compiled benchmarks.
