@@ -128,7 +128,6 @@ The `predicate` function is provided the following arguments:
 ## Notes
 
 -   The function does **not** perform explicit casting (e.g., from a real-valued floating-point number to a complex floating-point number). Any such casting should be performed **prior to** calling this function.
--   For very high-dimensional ndarrays which are non-contiguous, one should consider copying the underlying data to contiguous memory before applying a callback function in order to achieve better performance.
 
 </section>
 
