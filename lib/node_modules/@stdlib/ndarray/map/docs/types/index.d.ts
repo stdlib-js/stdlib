@@ -1174,6 +1174,7 @@ declare function map<T = unknown, V = unknown>( x: typedndarray<T>, options: Boo
 */
 declare function map<T = unknown, U = unknown, V = unknown>( x: typedndarray<T>, options: GenericOptions, fcn: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): genericndarray<U>;
 
+
 // EXPORTS //
 
 export = map;
