@@ -2565,6 +2565,7 @@
 "@stdlib/ndarray/at",ndat
 "@stdlib/ndarray/empty",ndempty
 "@stdlib/ndarray/empty-like",ndemptyLike
+"@stdlib/ndarray/filter",ndfilter
 "@stdlib/ndarray/ndims",ndims
 "@stdlib/ndarray/iter/to-array-each",nditer2arrayEach
 "@stdlib/ndarray/iter/column-entries",nditerColumnEntries
@@ -2580,6 +2581,7 @@
 "@stdlib/ndarray/iter/stacks",nditerStacks
 "@stdlib/ndarray/iter/subarrays",nditerSubarrays
 "@stdlib/ndarray/iter/values",nditerValues
+"@stdlib/ndarray/map",ndmap
 "@stdlib/ndarray/slice",ndslice
 "@stdlib/ndarray/slice-assign",ndsliceAssign
 "@stdlib/ndarray/slice-dimension",ndsliceDimension

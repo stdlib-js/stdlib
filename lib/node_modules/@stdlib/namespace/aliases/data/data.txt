@@ -2565,6 +2565,7 @@ ndarrayStrides
 ndat
 ndempty
 ndemptyLike
+ndfilter
 ndims
 nditer2arrayEach
 nditerColumnEntries
@@ -2580,6 +2581,7 @@ nditerSelectDimension
 nditerStacks
 nditerSubarrays
 nditerValues
+ndmap
 ndslice
 ndsliceAssign
 ndsliceDimension
