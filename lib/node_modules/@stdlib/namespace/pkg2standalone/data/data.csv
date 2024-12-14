@@ -2566,6 +2566,7 @@
 "@stdlib/ndarray/empty","@stdlib/ndarray-empty"
 "@stdlib/ndarray/empty-like","@stdlib/ndarray-empty-like"
 "@stdlib/ndarray/filter","@stdlib/ndarray-filter"
+"@stdlib/ndarray/filter-map","@stdlib/ndarray-filter-map"
 "@stdlib/ndarray/ndims","@stdlib/ndarray-ndims"
 "@stdlib/ndarray/iter/to-array-each","@stdlib/ndarray-iter-to-array-each"
 "@stdlib/ndarray/iter/column-entries","@stdlib/ndarray-iter-column-entries"

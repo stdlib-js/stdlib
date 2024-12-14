@@ -2566,6 +2566,7 @@
 "@stdlib/ndarray/empty",ndempty
 "@stdlib/ndarray/empty-like",ndemptyLike
 "@stdlib/ndarray/filter",ndfilter
+"@stdlib/ndarray/filter-map",ndfilterMap
 "@stdlib/ndarray/ndims",ndims
 "@stdlib/ndarray/iter/to-array-each",nditer2arrayEach
 "@stdlib/ndarray/iter/column-entries",nditerColumnEntries

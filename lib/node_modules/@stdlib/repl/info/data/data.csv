@@ -4140,6 +4140,7 @@ nditerStacks,"\nnditerStacks( x:ndarray, dims:Array<integer>[, options:Object] )
 nditerSubarrays,"\nnditerSubarrays( x:ndarray, ndims:integer[, options:Object] )\n    Returns an iterator which iterates over each subarray in a stack of\n    subarrays.\n"
 nditerValues,"\nnditerValues( x:ndarray[, options:Object] )\n    Returns an iterator which returns individual elements from a provided\n    ndarray.\n"
 ndmap,"\nndmap( x:ndarray[, options:Object], fcn:Function[, thisArg:any] )\n    Applies a callback function to elements in an input ndarray and assigns\n    results to elements in a new output ndarray.\n"
+ndreject,"\nndreject( x:ndarray[, options:Object], predicate:Function[, thisArg:any] )\n    Returns a shallow copy of an ndarray containing only those elements which\n    fail a test implemented by a predicate function.\n"
 ndslice,"\nndslice( x:ndarray, ...s:MultiSlice|Slice|null|undefined|integer|ArrayLike[, \n  options:Object] )\n    Returns a read-only view of an input ndarray.\n"
 ndsliceAssign,"\nndsliceAssign( x:ndarray, y:ndarray, \n  ...s:MultiSlice|Slice|null|undefined|integer|ArrayLike[, options:Object] )\n    Assigns element values from a broadcasted input ndarray to corresponding\n    elements in an output ndarray view.\n"
 ndsliceDimension,"\nndsliceDimension( x:ndarray, dim:integer, slice:Slice|integer|null|undefined[, \n  options:Object] )\n    Returns a read-only view of an input ndarray when sliced along a specified\n    dimension.\n"

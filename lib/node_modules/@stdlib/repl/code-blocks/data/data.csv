@@ -4139,6 +4139,7 @@ nditerStacks,"var x = array( [ [ [ 1, 2 ], [ 3, 4 ] ] ] );\nvar it = nditerStack
 nditerSubarrays,"var x = array( [ [ [ 1, 2 ], [ 3, 4 ] ] ] );\nvar it = nditerSubarrays( x, 2 );\nvar v = it.next().value;\nndarray2array( v )\n"
 nditerValues,"var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );\nvar it = nditerValues( x );\nvar v = it.next().value\nv = it.next().value\n"
 ndmap,"var x = array( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] );\nfunction f( v ) { return v*10.0; };\nvar y = ndmap( x, f );\nndarray2array( y )\n"
+ndreject,"var x = array( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] );\nfunction f( v ) { return v <= 2.0; };\nvar y = ndreject( x, f );\nndarray2array( y )\n"
 ndslice,"var x = array( [ [ 1, 2 ], [ 3, 4 ] ] )\nx.shape\nvar s = new MultiSlice( null, 1 )\nvar y = ndslice( x, s )\ny.shape\nndarray2array( y )\n"
 ndsliceAssign,"var y = ndzeros( [ 2, 2 ] )\nvar x = scalar2ndarray( 3.0 )\nvar s = new MultiSlice( null, 1 )\nvar out = ndsliceAssign( x, y, s )\nvar bool = ( out === y )\nndarray2array( y )\n"
 ndsliceDimension,"var x = array( [ [ 1, 2 ], [ 3, 4 ] ] )\nx.shape\nvar y = ndsliceDimension( x, 1, 1 )\ny.shape\nndarray2array( y )\n"
