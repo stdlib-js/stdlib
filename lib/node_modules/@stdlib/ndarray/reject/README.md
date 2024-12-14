@@ -69,9 +69,9 @@ var arr = ndarray2array( y );
 The function accepts the following arguments:
 
 -   **x**: input [ndarray][@stdlib/ndarray/ctor].
--   **options**: function options.
+-   **options**: function options _(optional)_.
 -   **predicate**: predicate function.
--   **thisArg**: predicate function execution context.
+-   **thisArg**: predicate function execution context _(optional)_.
 
 The function accepts the following options:
 
@@ -111,6 +111,41 @@ var dt = dtype( y );
 
 var arr = ndarray2array( y );
 // returns [ 8.0, 9.0, 10.0 ]
+```
+
+To set the `predicate` function execution context, provide a `thisArg`.
+
+<!-- eslint-disable no-invalid-this, max-len -->
+
+```javascript
+var Float64Array = require( '@stdlib/array/float64' );
+var ndarray = require( '@stdlib/ndarray/ctor' );
+var ndarray2array = require( '@stdlib/ndarray/to-array' );
+
+function predicate( z ) {
+    this.count += 1;
+    return z <= 6.0;
+}
+
+var buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+var shape = [ 2, 3 ];
+var strides = [ 6, 1 ];
+var offset = 1;
+
+var x = ndarray( 'float64', buffer, shape, strides, offset, 'row-major' );
+// returns <ndarray>
+
+var ctx = {
+    'count': 0
+};
+var y = reject( x, predicate, ctx );
+// returns <ndarray>
+
+var arr = ndarray2array( y );
+// returns [ 8.0, 9.0, 10.0 ]
+
+var count = ctx.count;
+// returns 6
 ```
 
 The `predicate` function is provided the following arguments:
