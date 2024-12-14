@@ -128,6 +128,7 @@ The `predicate` function is provided the following arguments:
 ## Notes
 
 -   The function does **not** perform explicit casting (e.g., from a real-valued floating-point number to a complex floating-point number). Any such casting should be performed **prior to** calling this function.
+-   The function **always** returns a one-dimensional [ndarray][@stdlib/ndarray/ctor].
 
 </section>
 
