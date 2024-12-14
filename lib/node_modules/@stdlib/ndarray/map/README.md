@@ -114,7 +114,7 @@ var arr = ndarray2array( y );
 
 The callback function is provided the following arguments:
 
--   **values**: current array element.
+-   **value**: current array element.
 -   **indices**: current array element indices.
 -   **arr**: the input [ndarray][@stdlib/ndarray/ctor].
 
