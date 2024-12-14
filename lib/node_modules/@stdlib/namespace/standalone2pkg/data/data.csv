@@ -2582,6 +2582,7 @@
 "@stdlib/ndarray-iter-subarrays","@stdlib/ndarray/iter/subarrays"
 "@stdlib/ndarray-iter-values","@stdlib/ndarray/iter/values"
 "@stdlib/ndarray-map","@stdlib/ndarray/map"
+"@stdlib/ndarray-reject","@stdlib/ndarray/reject"
 "@stdlib/ndarray-slice","@stdlib/ndarray/slice"
 "@stdlib/ndarray-slice-assign","@stdlib/ndarray/slice-assign"
 "@stdlib/ndarray-slice-dimension","@stdlib/ndarray/slice-dimension"

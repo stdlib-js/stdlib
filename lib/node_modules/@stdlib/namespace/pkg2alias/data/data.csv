@@ -2582,6 +2582,7 @@
 "@stdlib/ndarray/iter/subarrays",nditerSubarrays
 "@stdlib/ndarray/iter/values",nditerValues
 "@stdlib/ndarray/map",ndmap
+"@stdlib/ndarray/reject",ndreject
 "@stdlib/ndarray/slice",ndslice
 "@stdlib/ndarray/slice-assign",ndsliceAssign
 "@stdlib/ndarray/slice-dimension",ndsliceDimension
