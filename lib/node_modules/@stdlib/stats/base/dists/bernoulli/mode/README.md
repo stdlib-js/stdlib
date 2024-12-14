@@ -137,6 +137,93 @@ for ( i = 0; i < 10; i++ ) {
 
 <!-- /.references -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/bernoulli/mode.h"
+```
+
+#### stdlib_base_dists_bernoulli_mode( p )
+
+Returns the [mode][mode] of a [Bernoulli][bernoulli-distribution] distribution with success probability `p`.
+
+```c
+double out = stdlib_base_dists_bernoulli_mode( 0.1 );
+// returns 0.325
+```
+
+The function accepts the following arguments:
+
+-   **p**: `[in] double` success probability.
+
+```c
+double stdlib_base_dists_bernoulli_mode( const double p );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/bernoulli/mode.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+int main( void ) {
+    double p;
+    double y;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        p = (double)rand() / ( (double)RAND_MAX + 1.0 );
+        y = stdlib_base_dists_bernoulli_mode( p );
+        printf( "x: %lf, M(X;p): %lf\n", p, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
