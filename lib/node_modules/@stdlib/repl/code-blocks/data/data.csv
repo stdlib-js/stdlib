@@ -4124,6 +4124,7 @@ ndat,"var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );\nndat( x, 0, 1 )\nndat( x, 1, 0 )
 ndempty,"var arr = ndempty( [ 2, 2 ] )\nvar sh = arr.shape\nvar dt = arr.dtype\n"
 ndemptyLike,"var x = base.ndzeros( 'float64', [ 2, 2 ], 'row-major' )\nvar sh = x.shape\nvar dt = x.dtype\nvar y = ndemptyLike( x )\nsh = y.shape\ndt = y.dtype\n"
 ndfilter,"var x = array( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] );\nfunction f( v ) { return v > 2.0; };\nvar y = ndfilter( x, f );\nndarray2array( y )\n"
+ndfilterMap,"var x = array( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] );\nfunction f( v ) { if ( v > 2.0 ) { return v * 10.0; } };\nvar y = ndfilterMap( x, f );\nndarray2array( y )\n"
 ndims,"var n = ndims( ndzeros( [ 3, 3, 3 ] ) )\n"
 nditerColumnEntries,"var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );\nvar it = nditerColumnEntries( x );\nvar v = it.next().value;\nv[ 0 ]\nndarray2array( v[ 1 ] )\nv = it.next().value;\nv[ 0 ]\nndarray2array( v[ 1 ] )\n"
 nditerColumns,"var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );\nvar it = nditerColumns( x );\nvar v = it.next().value;\nndarray2array( v )\nv = it.next().value;\nndarray2array( v )\n"
