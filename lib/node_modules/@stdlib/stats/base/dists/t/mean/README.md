@@ -194,7 +194,7 @@ int main( void ) {
     double v;
     double y;
     int i;
-    
+
     for ( i = 0; i < 25; i++ ) {
         v = random_uniform( 1.0, 100.0 );
         y = stdlib_base_dists_t_mean( v );

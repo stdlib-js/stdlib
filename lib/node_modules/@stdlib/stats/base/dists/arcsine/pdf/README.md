@@ -214,7 +214,7 @@ int main( void ) {
     double b;
     double y;
     int i;
-    
+
     for ( i = 0; i < 25; i++ ) {
         x = random_uniform( -10.0, 10.0 );
         a = random_uniform( -20.0, 0.0 );
