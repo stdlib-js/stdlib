@@ -18,6 +18,7 @@
 
 #include "stdlib/stats/base/dists/beta/skewness.h"
 #include "stdlib/math/base/special/sqrt.h"
+
 /**
 * Returns the skewness of a beta distribution.
 *
