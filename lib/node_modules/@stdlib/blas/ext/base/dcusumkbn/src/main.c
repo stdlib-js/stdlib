@@ -39,7 +39,7 @@
 * @param Y        output array
 * @param strideY  Y stride length
 */
-void API_SUFFIX(stdlib_strided_dcusumkbn)( const CBLAS_INT N, const double sum, const double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY ){
+void API_SUFFIX(stdlib_strided_dcusumkbn)( const CBLAS_INT N, const double sum, const double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY ) {
 	const CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
 	const CBLAS_INT oy = stdlib_strided_stride2offset( N, strideY );
 	API_SUFFIX(stdlib_strided_dcusumkbn_ndarray)( N, sum, X, strideX, ox, Y, strideY, oy );

@@ -89,7 +89,7 @@ double stdlib_base_fmod( const double x, const double y ) {
 		return ( x * y ) / ( x * y );
 	}
 	if ( hx <= hy ) {
-		if ( ( hx < hy ) || ( lx < ly ) ){
+		if ( ( hx < hy ) || ( lx < ly ) ) {
 			// |x|<|y| return x
 			return x;
 		}

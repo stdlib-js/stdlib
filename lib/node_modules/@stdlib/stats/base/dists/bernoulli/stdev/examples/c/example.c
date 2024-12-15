@@ -19,6 +19,7 @@
 #include "stdlib/stats/base/dists/bernoulli/stdev.h"
 #include <stdlib.h>
 #include <stdio.h>
+
 int main( void ) {
 	double p;
 	double y;
