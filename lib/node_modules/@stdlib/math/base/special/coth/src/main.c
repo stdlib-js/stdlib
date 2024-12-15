@@ -33,7 +33,6 @@
 #include "stdlib/math/base/special/coth.h"
 #include "stdlib/math/base/special/tanh.h"
 
-
 /**
 * Computes the hyperbolic cotangent of a double-precision floating-point number.
 *
