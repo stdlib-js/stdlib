@@ -1,0 +1,51 @@
+
+{{alias}}( n )
+    Computes the nth negaLucas number in
+    single-precision floating-point format.
+
+    The negaLucas numbers follow the recurrence relation
+
+      L_{n-2} = L_{n} - L_{n-1}
+
+    with seed values L_0 = 2 and L_{-1} = -1.
+
+    If `|n|` is greater than `34`, the function returns `NaN` as larger
+    negaLucas numbers cannot be accurately represented due to limitations of
+    single-precision floating-point format.
+
+    If not provided a non-positive integer value, the function returns `NaN`.
+
+    If provided `NaN`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    n: integer
+        Input value.
+
+    Returns
+    -------
+    y: integer
+        NegaLucas number.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0 )
+    2
+    > y = {{alias}}( -1 )
+    -1
+    > y = {{alias}}( -2 )
+    3
+    > y = {{alias}}( -3 )
+    -4
+    > y = {{alias}}( -4 )
+    7
+    > y = {{alias}}( -35 )
+    NaN
+    > y = {{alias}}( -36 )
+    NaN
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+
