@@ -100,8 +100,8 @@ static double benchmark( void ) {
 	int i;
 
 	for ( i = 0; i < 100; i++ ) {
-		min[ i ] = random_uniform( 0, 20 );
-		max[ i ] = random_uniform( 0, 20 ) + min[ i ];
+		min[ i ] = random_uniform( 0.0, 20.0 );
+		max[ i ] = random_uniform( 0.0, 20.0 ) + min[ i ];
 	}
 
 	t = tic();
