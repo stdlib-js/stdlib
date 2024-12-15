@@ -633,8 +633,8 @@ declare function map<V = unknown>( x: uint8cndarray, fcn: Callback<number, numbe
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
-* function invert( z ) {
-*     return !z;
+* function invert( v ) {
+*     return !v;
 * }
 *
 * var buffer = new BooleanArray( [ false, false, false, false, false, false, false, false, false, false, false, false ] );

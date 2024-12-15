@@ -2566,6 +2566,7 @@ ndat
 ndempty
 ndemptyLike
 ndfilter
+ndfilterMap
 ndims
 nditer2arrayEach
 nditerColumnEntries
