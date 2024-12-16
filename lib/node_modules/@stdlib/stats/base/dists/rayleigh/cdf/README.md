@@ -104,7 +104,7 @@ Returns a function for evaluating the [cumulative distribution function][cdf] of
 
 ```javascript
 var myCDF = cdf.factory( 0.5 );
-y = myCDF( 1.0 );
+var y = myCDF( 1.0 );
 // returns ~0.865
 
 y = myCDF( 0.5 );
@@ -141,6 +141,101 @@ for ( i = 0; i < 10; i++ ) {
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/rayleigh/cdf.h"
+```
+
+#### stdlib_base_dists_rayleigh_cdf( x, sigma )
+
+Evaluates the cumulative distribution function (CDF) for a Rayleigh distribution.
+
+```c
+double out = stdlib_base_dists_rayleigh_cdf( 2.0, 3.0 );
+// returns ~0.199
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **sigma**: `[in] double` scale parameter.
+
+```c
+double stdlib_base_dists_rayleigh_cdf( const double x, const double sigma );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/rayleigh/cdf.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double x;
+    double sigma;
+    double y;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        x = random_uniform( 0.0, 10.0 );
+        sigma = random_uniform( 0.0, 10.0 );
+        y = stdlib_base_dists_rayleigh_cdf( x, sigma );
+        printf( "x: %lf, σ: %lf, F(x;σ): %lf\n", x, sigma, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
