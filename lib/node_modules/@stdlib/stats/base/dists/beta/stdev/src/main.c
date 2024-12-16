@@ -19,7 +19,6 @@
 #include "stdlib/stats/base/dists/beta/stdev.h"
 #include "stdlib/math/base/special/sqrt.h"
 
-
 /**
 * Returns the standard deviation of a beta distribution.
 *

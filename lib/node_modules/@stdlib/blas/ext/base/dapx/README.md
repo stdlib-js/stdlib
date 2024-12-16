@@ -240,13 +240,13 @@ int main( void ) {
 
     // Specify the number of indexed elements:
     const int N = 8;
-    
+
     // Specify a stride:
     const int strideX = 1;
-    
+
     // Fill the array:
     c_dapx( N, 5.0, x, strideX );
-    
+
     // Print the result:
     for ( int i = 0; i < 8; i++ ) {
         printf( "x[ %i ] = %lf\n", i, x[ i ] );

@@ -179,7 +179,7 @@ double stdlib_base_ahaversin( const double x );
 
 int main( void ) {
     const double x[] = { -2.0, -1.6, -1.2, -0.8, -0.4, 0.4, 0.8, 1.2, 1.6, 2.0 };
-    
+
     double v;
     int i;
     for ( i = 0; i < 10; i++ ) {

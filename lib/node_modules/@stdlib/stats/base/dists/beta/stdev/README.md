@@ -222,7 +222,7 @@ int main( void ) {
     double beta;
     double y;
     int i;
-    
+
     for ( i = 0; i < 25; i++ ) {
         alpha = random_uniform( 0.0, 10.0 ) + STDLIB_CONSTANT_FLOAT64_EPS;
         beta = random_uniform( 0.0, 10.0 ) + STDLIB_CONSTANT_FLOAT64_EPS;
