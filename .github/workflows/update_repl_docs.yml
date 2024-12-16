@@ -42,8 +42,8 @@ jobs:
     # Define a display name:
     name: 'Update REPL docs'
 
-    # Only run this job if the pull request was merged (or the job was triggered manually):
-    if: github.event.pull_request.merged == true || github.event_name == 'workflow_dispatch'
+    # Ensure the job does not run on forks:
+    if: github.repository == 'stdlib-js/stdlib'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest

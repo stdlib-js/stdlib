@@ -30,11 +30,11 @@ type Key = string | symbol | number;
 /**
 * Interface describing returned group results.
 */
-interface ValuesResults<K, T> {
+interface ValuesResults<T> {
 	/**
 	* Object properties.
 	*/
-	[key: K]: Array<T>;
+	[key: Key]: Array<T>;
 }
 
 /**
@@ -51,7 +51,7 @@ interface ValuesResults<K, T> {
 * var out = groupValues( x, groups );
 * // returns { 'b': [ 'beep', 'boop', 'bar' ], 'f': [ 'foo' ] }
 */
-declare function groupValues<T = unknown>( x: Collection<T> | AccessorArrayLike<T>, groups: Collection<Key> | AccessorArrayLike<Key> ): ValuesResults<Key, T>;
+declare function groupValues<T = unknown>( x: Collection<T> | AccessorArrayLike<T>, groups: Collection<Key> | AccessorArrayLike<Key> ): ValuesResults<T>;
 
 
 // EXPORTS //

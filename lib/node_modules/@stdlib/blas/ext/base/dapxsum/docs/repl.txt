@@ -3,8 +3,8 @@
     Adds a scalar constant to each double-precision floating-point strided
     array element and computes the sum.
 
-    The `N` and stride parameters determine which elements in the strided
-    array are accessed at runtime.
+    The `N` and stride parameters determine which elements in the strided array
+    are accessed at runtime.
 
     Indexing is relative to the first index. To introduce an offset, use a typed
     array view.
@@ -17,13 +17,13 @@
         Number of indexed elements.
 
     alpha: number
-        Constant.
+        Scalar constant.
 
     x: Float64Array
         Input array.
 
     strideX: integer
-        Index increment.
+        Stride length.
 
     Returns
     -------
@@ -63,13 +63,13 @@
         Number of indexed elements.
 
     alpha: number
-        Constant.
+        Scalar constant.
 
     x: Float64Array
         Input array.
 
     strideX: integer
-        Index increment.
+        Stride length.
 
     offsetX: integer
         Starting index.

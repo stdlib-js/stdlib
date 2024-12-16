@@ -36,7 +36,8 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/napi/unary"
+        "@stdlib/math/base/napi/unary",
+        "@stdlib/constants/float64/max-safe-nth-tribonacci"
       ]
     },
     {
@@ -49,7 +50,9 @@
       ],
       "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/constants/float64/max-safe-nth-tribonacci"
+      ]
     },
     {
       "task": "examples",
@@ -61,7 +64,9 @@
       ],
       "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/constants/float64/max-safe-nth-tribonacci"
+      ]
     }
   ]
 }

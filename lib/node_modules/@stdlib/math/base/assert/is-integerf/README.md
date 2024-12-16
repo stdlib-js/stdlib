@@ -166,7 +166,7 @@ int main( void ) {
     float x;
     bool v;
     int i;
-    
+
     for ( i = 0; i < 100; i++ ) {
         x = ( ( (float)rand() / (float)RAND_MAX ) * 100.0f ) - 50.0f;
         v = stdlib_base_is_integerf( x );

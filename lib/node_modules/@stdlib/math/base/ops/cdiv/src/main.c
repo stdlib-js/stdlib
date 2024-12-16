@@ -126,14 +126,14 @@ stdlib_complex128_t stdlib_base_cdiv( const stdlib_complex128_t z1, const stdlib
 
 	t1 = stdlib_base_abs( re1 );
 	t2 = stdlib_base_abs( im1 );
-	if ( t1 > t2 ){
+	if ( t1 > t2 ) {
 		ab = t1;
 	} else {
 		ab = t2;
 	}
 	t1 = stdlib_base_abs( re2 );
 	t2 = stdlib_base_abs( im2 );
-	if ( t1 > t2 ){
+	if ( t1 > t2 ) {
 		cd = t1;
 	} else {
 		cd = t2;

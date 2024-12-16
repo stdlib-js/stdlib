@@ -180,7 +180,7 @@ double stdlib_base_dirac_delta( const double x );
 
 int main( void ) {
     const double x[] = { -1.0, -0.5, 0.0, 0.5, 1.0, 3.14, 2.0 };
-    
+
     double v;
     int i;
     for ( i = 0; i < 7; i++ ) {

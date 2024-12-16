@@ -1,0 +1,34 @@
+
+{{alias}}( arrays, shapes, fcn )
+    Applies a quinary callback to elements in five broadcasted input arrays and
+    assigns results to elements in a four-dimensional nested output array.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject
+        Array-like object containing five input nested arrays and one output
+        nested array.
+
+    shapes: Array<Array<integer>>
+        Array shapes.
+
+    fcn: Function
+        Quinary callback.
+
+    Examples
+    --------
+    > function fcn( x, y, z, w, v ) { return x + y + z + w + v; };
+    > var x = [ 1.0, 2.0 ];
+    > var y = [ [ 3.0 ], [ 4.0 ] ];
+    > var z = [ 1.0 ];
+    > var w = [ 2.0 ];
+    > var v = [ 1.0 ];
+    > var out = [ [ [ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ] ] ];
+    > var shapes = [ [ 2 ], [ 2, 1 ], [ 1 ], [ 1 ], [ 1 ], [ 1, 1, 2, 2 ] ];
+    > {{alias}}( [ x, y, z, w, v, out ], shapes, fcn );
+    > out
+    [ [ [ [ 8.0, 9.0 ], [ 9.0, 10.0 ] ] ] ]
+
+    See Also
+    --------
+
