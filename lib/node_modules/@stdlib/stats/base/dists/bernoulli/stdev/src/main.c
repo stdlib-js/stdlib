@@ -20,7 +20,6 @@
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/sqrt.h"
 
-
 /**
 * Returns the standard deviation of a Bernoulli distribution.
 *

@@ -192,7 +192,7 @@ int main( void ) {
     double p;
     double y;
     int i;
-    
+
     for ( i = 0; i < 25; i++ ) {
         p = (double)rand() / ( (double)RAND_MAX + 1.0 );
         y = stdlib_base_dists_bernoulli_stdev( p );

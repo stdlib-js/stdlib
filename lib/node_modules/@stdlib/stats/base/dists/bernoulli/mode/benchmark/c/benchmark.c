@@ -96,7 +96,7 @@ static double benchmark( void ) {
 	double t;
 	int i;
 
-    for ( i = 0; i < 100; i++ ) {
+	for ( i = 0; i < 100; i++ ) {
 		p[ i ] = rand_double();
 	}
 

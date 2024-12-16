@@ -246,13 +246,13 @@ int main( void ) {
 
     // Specify the number of indexed elements:
     const int N = 8;
-    
+
     // Specify a stride:
     const int strideX = 1;
-    
+
     // Compute the sum:
     double v = stdlib_strided_dapxsumors( N, 5.0, x, strideX );
-    
+
     // Print the result:
     printf( "Sum: %lf\n", sum );
 }
