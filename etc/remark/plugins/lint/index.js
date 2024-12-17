@@ -1078,7 +1078,7 @@ plugins.push([
 * @see [no-trailing-spaces]{@link https://github.com/Trott/remark-lint-no-trailing-spaces}
 */
 
-// plugins.push([require( 'remark-lint-no-trailing-spaces' ), [ 'error' ]]);
+// plugins.push([require( 'remark-lint-no-trailing-spaces' ), [ 'error' ]]); // NOTE: disabled as requiring an ES module in CommonJS is still experimental
 
 /**
 * Never allow undefined references.
