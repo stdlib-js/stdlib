@@ -39,7 +39,7 @@ permissions:
 jobs:
 
   # Define a job for linting committed code...
-  process:
+  lint:
 
     # Define a display name:
     name: 'Lint Changed Files'
