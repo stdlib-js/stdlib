@@ -4099,6 +4099,7 @@ ndarray.prototype.iset,"var b = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );\nvar
 ndarray.prototype.toString,"var b = [ 1, 2, 3, 4 ];\nvar d = [ 2, 2 ];\nvar s = [ 2, 1 ];\nvar o = 0;\nvar arr = ndarray( 'generic', b, d, s, o, 'row-major' );\narr.toString()\n"
 ndarray.prototype.toJSON,"var b = [ 1, 2, 3, 4 ];\nvar d = [ 2, 2 ];\nvar s = [ 2, 1 ];\nvar o = 0;\nvar arr = ndarray( 'generic', b, d, s, o, 'row-major' );\narr.toJSON()\n"
 ndarray2array,"var arr = array( [ [ 1, 2 ], [ 3, 4 ] ] );\nvar out = ndarray2array( arr )\n"
+ndarray2json,"var arr = array( [ [ 1, 2 ], [ 3, 4 ] ] );\nvar out = ndarray2json( arr )\n"
 ndarrayCastingModes,"var out = ndarrayCastingModes()\n"
 ndarrayDataBuffer,"var opts = { 'dtype': 'float64' };\nvar out = ndarrayDataBuffer( ndzeros( [ 3, 3, 3 ], opts ) )\n"
 ndarrayDataType,"var opts = { 'dtype': 'float64' };\nvar dt = ndarrayDataType( ndzeros( [ 3, 3, 3 ], opts ) )\n"

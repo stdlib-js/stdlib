@@ -4100,6 +4100,7 @@ ndarray.prototype.iset,"\nndarray.prototype.iset( idx:integer, v:any )\n    Sets
 ndarray.prototype.toString,"\nndarray.prototype.toString()\n    Serializes an ndarray as a string.\n"
 ndarray.prototype.toJSON,"\nndarray.prototype.toJSON()\n    Serializes an ndarray as a JSON object.\n"
 ndarray2array,"\nndarray2array( x:ndarray )\n    Converts an ndarray to a generic array.\n"
+ndarray2json,"\nndarray2json( x:ndarray )\n    Serializes an ndarray as a JSON object.\n"
 ndarrayCastingModes,"\nndarrayCastingModes()\n    Returns a list of ndarray casting modes.\n"
 ndarrayDataBuffer,"\nndarrayDataBuffer( x:ndarray )\n    Returns the underlying data buffer of a provided ndarray.\n"
 ndarrayDataType,"\nndarrayDataType( x:ndarray )\n    Returns the data type of a provided ndarray.\n"
