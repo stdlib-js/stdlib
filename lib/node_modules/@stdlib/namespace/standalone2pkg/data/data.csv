@@ -2541,6 +2541,7 @@
 "@stdlib/utils-native-class","@stdlib/utils/native-class"
 "@stdlib/ndarray-ctor","@stdlib/ndarray/ctor"
 "@stdlib/ndarray-to-array","@stdlib/ndarray/to-array"
+"@stdlib/ndarray-to-json","@stdlib/ndarray/to-json"
 "@stdlib/ndarray-casting-modes","@stdlib/ndarray/casting-modes"
 "@stdlib/ndarray-data-buffer","@stdlib/ndarray/data-buffer"
 "@stdlib/ndarray-dtype","@stdlib/ndarray/dtype"

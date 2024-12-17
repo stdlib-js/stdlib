@@ -2541,6 +2541,7 @@ naryFunction
 nativeClass
 ndarray
 ndarray2array
+ndarray2json
 ndarrayCastingModes
 ndarrayDataBuffer
 ndarrayDataType
