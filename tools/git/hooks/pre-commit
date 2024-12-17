@@ -45,6 +45,7 @@ skip_shell="${SKIP_LINT_SHELL}"
 skip_typescript_declarations="${SKIP_LINT_TYPESCRIPT_DECLARATIONS}"
 skip_typescript_tests="${SKIP_LINT_TYPESCRIPT_TESTS}"
 skip_license_headers="${SKIP_LINT_LICENSE_HEADERS}"
+skip_editorconfig="${SKIP_LINT_EDITORCONFIG}"
 
 # Determine root directory:
 root=$(git rev-parse --show-toplevel)
@@ -137,6 +138,15 @@ run_lint() {
 		if [[ "$?" -ne 0 ]]; then
 			echo '' >&2
 			echo 'Filename lint errors.' >&2
+			return 1
+		fi
+	fi
+	# Lint against EditorConfig:
+	if [[ -z "${skip_editorconfig}" ]]; then
+		make FILES="${changed_files}" lint-editorconfig-files > /dev/null >&2
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'EditorConfig lint errors.' >&2
 			return 1
 		fi
 	fi
