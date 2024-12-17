@@ -5,25 +5,14 @@
   "SpacesAfterTabs": false,
   "NoColor": false,
   "Exclude": [
-    "\\.csv$",
-    "\\.csv\\.txt$",
-    "\\/data\\/",
-    "data\\/",
-    "\\.html$",
-    "\\.html\\.txt$",
-    "\\.md$",
-    "\\.md\\.txt$",
-    "\\.svg$",
-    "\\.svg\\.txt$",
-    "\\.xml$",
-    "\\.xml\\.txt$"
+    "\\.*[^d]$"
   ],
   "AllowedContentTypes": [],
   "PassedFiles": [],
   "Disable": {
     "EndOfLine": false,
     "Indentation": false,
-    "IndentSize": false,
+    "IndentSize": true,
     "InsertFinalNewline": false,
     "TrimTrailingWhitespace": false,
     "MaxLineLength": false
