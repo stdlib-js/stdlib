@@ -195,6 +195,12 @@ jobs:
           # Lint filenames:
           echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | "${lint_filenames}"
 
+      # Lint files against EditorConfig:
+      - name: 'Lint against EditorConfig'
+        if: success() || failure()
+        run: |
+          make lint-editorconfig-files FILES="${{ steps.random-files.outputs.files }}"
+
       # Lint Markdown files:
       - name: 'Lint Markdown files'
         if: ( github.event.inputs.markdown != 'false' ) && ( success() || failure() )

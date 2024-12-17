@@ -116,6 +116,12 @@ jobs:
           # Lint filenames:
           echo "${{ steps.changed-files.outputs.files }}" || "${lint_filenames}"
 
+      # Lint files against EditorConfig:
+      - name: 'Lint against EditorConfig'
+        if: success() || failure()
+        run: |
+          make lint-editorconfig-files FILES="${{ steps.changed-files.outputs.files }}"
+
       # Lint Markdown files:
       - name: 'Lint Markdown files'
         if: success() || failure()
