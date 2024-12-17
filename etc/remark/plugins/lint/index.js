@@ -1077,10 +1077,8 @@ plugins.push([
 *
 * @see [no-trailing-spaces]{@link https://github.com/Trott/remark-lint-no-trailing-spaces}
 */
-plugins.push([
-	require( 'remark-lint-no-trailing-spaces' ),
-	[ 'error' ]
-]);
+
+// plugins.push([require( 'remark-lint-no-trailing-spaces' ), [ 'error' ]]);
 
 /**
 * Never allow undefined references.
@@ -1098,7 +1096,6 @@ plugins.push([
 * [foo][]
 *
 * [foo]: https://example.com
-*
 */
 plugins.push([
 	require( 'remark-lint-no-undefined-references' ),
