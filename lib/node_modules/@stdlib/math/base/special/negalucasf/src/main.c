@@ -18,7 +18,7 @@
 
 #include "stdlib/math/base/special/negalucasf.h"
 #include "stdlib/math/base/special/labs.h"
-#define STDLIB_CONSTANT_FLOAT32_MAX_SAFE_NTH_LUCAS 34
+#include "stdlib/constants/float32/max_safe_nth_lucas.h"
 
 static const int32_t negalucasf_value[ 35 ] = {
 	2,
