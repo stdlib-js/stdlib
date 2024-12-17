@@ -21,6 +21,7 @@
 # Note: keep in alphabetical order...
 include $(TOOLS_MAKE_LIB_DIR)/lint/c/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/conf/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/lint/editorconfig.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/filenames.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/git/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/javascript/Makefile
@@ -49,7 +50,7 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/typescript/Makefile
 # @example
 # make lint
 #/
-lint: lint-filenames lint-javascript lint-markdown lint-c lint-python lint-julia lint-r lint-shell lint-typescript lint-conf lint-pkg-json lint-repl-help lint-license-headers
+lint: lint-filenames lint-javascript lint-markdown lint-c lint-python lint-julia lint-r lint-shell lint-typescript lint-conf lint-pkg-json lint-repl-help lint-license-headers lint-editorconfig
 
 .PHONY: lint
 
