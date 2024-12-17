@@ -134,6 +134,7 @@
     "common-shakeify": "^0.6.0",
     "conventional-changelog-conventionalcommits": "^5.0.0",
     "doctrine": "^3.0.0",
+    "editorconfig-checker": "^6.0.0",
     "envify": "^4.0.0",
     "eslint": "^8.57.0",
     "eslint-plugin-node": "^11.1.0",
