@@ -1,0 +1,29 @@
+{
+  "Verbose": false,
+  "Debug": false,
+  "IgnoreDefaults": true,
+  "SpacesAfterTabs": false,
+  "NoColor": false,
+  "Exclude": [
+    "\\/data\\/",
+    "data\\/",
+    "\\.html$",
+    "\\.html\\.txt$",
+    "\\.md$",
+    "\\.md\\.txt$",
+    "\\.svg$",
+    "\\.svg\\.txt$",
+    "\\.xml$",
+    "\\.xml\\.txt$"
+  ],
+  "AllowedContentTypes": [],
+  "PassedFiles": [],
+  "Disable": {
+    "EndOfLine": false,
+    "Indentation": false,
+    "IndentSize": false,
+    "InsertFinalNewline": false,
+    "TrimTrailingWhitespace": false,
+    "MaxLineLength": false
+  }
+}
