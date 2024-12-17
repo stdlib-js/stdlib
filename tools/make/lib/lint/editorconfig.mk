@@ -79,7 +79,7 @@ lint-editorconfig-files: $(NODE_MODULES)
 	$(QUIET) $(DELETE) $(DELETE_FLAGS) "$(BUILD_DIR)/editorconfig-checker"
 	$(QUIET) echo 'Linting files for basic formatting errors...'
 	$(QUIET) $(MKDIR_RECURSIVE) "$(BUILD_DIR)/editorconfig-checker"
-	$(QUIET) $(TAR) -cf - $(FILES) | $(TAR) -xf - -C "$(BUILD_DIR)/editorconfig-checker/"
+	$(QUIET) echo $(FILES) | tr ' ' '\n' | $(TAR) -cf - -T - | $(TAR) -xf - -C "$(BUILD_DIR)/editorconfig-checker/"
 	$(QUIET) cd "$(BUILD_DIR)/editorconfig-checker" && \
 		$(NODE) $(EDITORCONFIG_CHECKER) $(EDITORCONFIG_CHECKER_CONF_FLAGS) --config $(EDITORCONFIG_CHECKER_CONF) && \
 		$(NODE) $(EDITORCONFIG_CHECKER) $(EDITORCONFIG_CHECKER_CONF_FLAGS) --config $(EDITORCONFIG_CHECKER_MARKDOWN_CONF) && \
