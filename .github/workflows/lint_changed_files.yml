@@ -104,7 +104,7 @@ jobs:
           files=$(echo "$files" | tr '\n' ' ' | sed 's/ $//')
           echo "files=${files}" >> $GITHUB_OUTPUT
 
-      # Lint file names
+      # Lint file names:
       - name: 'Lint file names'
         run: |
           # Determine root directory:

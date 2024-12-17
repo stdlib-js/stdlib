@@ -183,7 +183,7 @@ jobs:
 
           echo "files=$files" >> $GITHUB_OUTPUT
 
-      # Lint file names
+      # Lint file names:
       - name: 'Lint file names'
         run: |
           # Determine root directory:
@@ -197,9 +197,9 @@ jobs:
 
       # Lint files against EditorConfig:
       - name: 'Lint against EditorConfig'
-        if: success() || failure()
         run: |
-          make lint-editorconfig-files FILES="${{ steps.random-files.outputs.files }}"
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' ' ')
+          make lint-editorconfig-files FILES="${files}"
 
       # Lint Markdown files:
       - name: 'Lint Markdown files'
