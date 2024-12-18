@@ -358,7 +358,7 @@ double stdlib_base_ellipk( const double m ) {
         return STDLIB_CONSTANT_FLOAT64_PINF;
     }
     if ( x > 1.0 ) {
-        return 0.0 / 0.0; //NaN
+        return 0.0 / 0.0; // NaN
     }
     if ( x < 0.1 ) {
         t = poly_p1( x - 0.05 );
@@ -384,7 +384,7 @@ double stdlib_base_ellipk( const double m ) {
         td = 1.0 - x;
         qd = poly_p11( td );
         kdm = poly_p12( td - 0.05 );
-        t = -stdlib_base_ln( qd ) * ( kdm * ONE_DIV_PI ); 
+        t = -stdlib_base_ln( qd ) * ( kdm * ONE_DIV_PI );
     }
     if ( FLG == 1 ) {
         // Complete the transformation mentioned above for m < 0:

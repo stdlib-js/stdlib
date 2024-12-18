@@ -21,7 +21,6 @@
 #include "stdlib/math/base/special/exp.h"
 #include "stdlib/math/base/special/pow.h"
 
-
 /**
 * Evaluates the cumulative distribution function (CDF) for a Rayleigh distribution with scale parameter `sigma` at a value `x`.
 *
