@@ -17,7 +17,8 @@
 */
 
 #include "stdlib/math/base/special/trunc.h"
-#include <math.h>
+#include "stdlib/math/base/special/floor.h"
+#include "stdlib/math/base/special/ceil.h"
 
 /**
 * Rounds a double-precision floating-point number toward zero.
@@ -30,5 +31,8 @@
 * // returns 3.0
 */
 double stdlib_base_trunc( const double x ) {
-	return trunc( x );
+	if ( x < 0.0 ) {
+		return stdlib_base_ceil( x );
+	}
+	return stdlib_base_floor( x );
 }
