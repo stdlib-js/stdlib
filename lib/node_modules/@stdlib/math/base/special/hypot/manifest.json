@@ -1,84 +1,84 @@
 {
-	"options": {
-		"task": "build"
-	},
-	"fields": [
-		{
-			"field": "src",
-			"resolve": true,
-			"relative": true
-		},
-		{
-			"field": "include",
-			"resolve": true,
-			"relative": true
-		},
-		{
-			"field": "libraries",
-			"resolve": false,
-			"relative": false
-		},
-		{
-			"field": "libpath",
-			"resolve": true,
-			"relative": false
-		}
-	],
-	"confs": [
-		{
-			"task": "build",
-			"src": [
-				"./src/hypot.c"
-			],
-			"include": [
-				"./include"
-			],
-			"libraries": [
-				"-lm"
-			],
-			"libpath": [],
-			"dependencies": [
-				"@stdlib/math/base/napi/binary",
-				"@stdlib/math/base/assert/is-nan",
-				"@stdlib/math/base/assert/is-infinite",
-				"@stdlib/math/base/special/sqrt"
-			]
-		},
-		{
-			"task": "benchmark",
-			"src": [
-				"./src/hypot.c"
-			],
-			"include": [
-				"./include"
-			],
-			"libraries": [
-				"-lm"
-			],
-			"libpath": [],
-			"dependencies": [
-				"@stdlib/math/base/assert/is-nan",
-				"@stdlib/math/base/assert/is-infinite",
-				"@stdlib/math/base/special/sqrt"
-			]
-		},
-		{
-			"task": "examples",
-			"src": [
-				"./src/hypot.c"
-			],
-			"include": [
-				"./include"
-			],
-			"libraries": [
-				"-lm"
-			],
-			"libpath": [],
-			"dependencies": [
-				"@stdlib/math/base/assert/is-nan",
-				"@stdlib/math/base/assert/is-infinite",
-				"@stdlib/math/base/special/sqrt"
-			]
-		}
-	]
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/hypot.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/napi/binary",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/assert/is-infinite",
+        "@stdlib/math/base/special/sqrt"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/hypot.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/assert/is-infinite",
+        "@stdlib/math/base/special/sqrt"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/hypot.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/assert/is-infinite",
+        "@stdlib/math/base/special/sqrt"
+      ]
+    }
+  ]
 }

@@ -5,9 +5,9 @@
 
     When invoked, an input function is provided three arguments:
 
-    - value: grapheme cluster
-    - index: iterated value index
-    - src: source string
+    - value: grapheme cluster.
+    - index: iterated value index.
+    - src: source string.
 
     If an environment supports Symbol.iterator, the returned iterator is
     iterable.

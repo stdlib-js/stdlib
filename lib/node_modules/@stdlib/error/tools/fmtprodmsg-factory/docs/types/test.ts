@@ -21,7 +21,7 @@ import fmtprodmsgFactory = require( './index' );
 
 // TESTS //
 
-// The function returns an returns an error formatting function...
+// The function returns an error formatting function...
 {
 	fmtprodmsgFactory( {} ); // $ExpectType FormatProdErrorMsgFunction
 }
@@ -42,7 +42,7 @@ import fmtprodmsgFactory = require( './index' );
 	fcn( '3', 'wrong_type' ); // $ExpectType string
 }
 
-// The compiler throws an error if the function is provided an `url` option which is not a string...
+// The compiler throws an error if the function is provided a `url` option which is not a string...
 {
 	fmtprodmsgFactory( { 'url': true } ); // $ExpectError
 	fmtprodmsgFactory( { 'url': false } ); // $ExpectError

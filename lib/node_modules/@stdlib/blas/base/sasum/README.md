@@ -97,7 +97,7 @@ var sum = sasum( 3, x1, 2 );
 // returns 12.0
 ```
 
-If either `N` or `stride` is less than or equal to `0`, the function returns `0`.
+If either `N` is less than or equal to `0`, the function returns `0`.
 
 #### sasum.ndarray( N, x, stride, offset )
 
@@ -169,6 +169,129 @@ console.log( out );
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/blas/base/sasum.h"
+```
+
+#### c_sasum( N, \*X, stride )
+
+Computes the sum of [absolute values][@stdlib/math/base/special/abs].
+
+```c
+const float x[] = { 1.0f, -2.0f, 3.0f, -4.0f, 5.0f, -6.0f, 7.0f, -8.0f };
+
+float sum = c_sasum( 8, x, 1 );
+// returns 36.0f
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[in] float*` input array.
+-   **stride**: `[in] CBLAS_INT` index increment for `X`.
+
+```c
+float c_sasum( const CBLAS_INT N, const float *X, const CBLAS_INT stride );
+```
+
+#### c_sasum_ndarray( N, \*X, stride, offset )
+
+Computes the sum of [absolute values][@stdlib/math/base/special/abs] using alternative indexing semantics.
+
+```c
+const float x[] = { 1.0f, -2.0f, 3.0f, -4.0f, 5.0f, -6.0f, 7.0f, -8.0f };
+
+float sum = c_sasum_ndarray( 8, x, -1, 7 );
+// returns 36.0f
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[in] float*` input array.
+-   **stride**: `[in] CBLAS_INT` index increment for `X`.
+-   **offset**: `[in] CBLAS_INT` starting index for `X`.
+
+```c
+float c_sasum_ndarray( const CBLAS_INT N, const float *X, const CBLAS_INT stride, const CBLAS_INT offset );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/blas/base/sasum.h"
+#include <stdio.h>
+
+int main( void ) {
+    // Create a strided array:
+    const float x[] = { 1.0f, -2.0f, 3.0f, -4.0f, 5.0f, -6.0f, 7.0f, -8.0f };
+
+    // Specify the number of elements:
+    const int N = 8;
+
+    // Specify a stride:
+    const int stride = 1;
+
+    // Compute the sum of absolute values:
+    float sum = c_sasum( N, x, stride );
+
+    // Print the result:
+    printf( "sum: %f\n", sum );
+
+    // Compute the sum of absolute values:
+    sum = c_sasum_ndarray( N, x, -stride, N-1 );
+
+    // Print the result:
+    printf( "sum: %f\n", sum );
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 

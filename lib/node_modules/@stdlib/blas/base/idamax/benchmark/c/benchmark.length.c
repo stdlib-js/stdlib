@@ -94,7 +94,7 @@ static double rand_double( void ) {
 * @param len          array length
 * @return elapsed time in seconds
 */
-static double benchmark( int iterations, int len ) {
+static double benchmark1( int iterations, int len ) {
 	double elapsed;
 	double x[ len ];
 	double t;
@@ -108,6 +108,39 @@ static double benchmark( int iterations, int len ) {
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
 		idx = c_idamax( len, x, 1 );
+		if ( idx < -2 ) {
+			printf( "unexpected result\n" );
+			break;
+		}
+	}
+	elapsed = tic() - t;
+	if ( idx < -2 ) {
+		printf( "unexpected result\n" );
+	}
+	return elapsed;
+}
+
+/**
+* Runs a benchmark.
+*
+* @param iterations   number of iterations
+* @param len          array length
+* @return elapsed time in seconds
+*/
+static double benchmark2( int iterations, int len ) {
+	double elapsed;
+	double x[ len ];
+	double t;
+	int idx;
+	int i;
+
+	for ( i = 0; i < len; i++ ) {
+		x[ i ] = ( rand_double()*20000.0 ) - 10000.0;
+	}
+	idx = -1;
+	t = tic();
+	for ( i = 0; i < iterations; i++ ) {
+		idx = c_idamax_ndarray( len, x, 1, 0 );
 		if ( idx < -2 ) {
 			printf( "unexpected result\n" );
 			break;
@@ -142,7 +175,14 @@ int main( void ) {
 		for ( j = 0; j < REPEATS; j++ ) {
 			count += 1;
 			printf( "# c::%s:len=%d\n", NAME, len );
-			elapsed = benchmark( iter, len );
+			elapsed = benchmark1( iter, len );
+			print_results( iter, elapsed );
+			printf( "ok %d benchmark finished\n", count );
+		}
+		for ( j = 0; j < REPEATS; j++ ) {
+			count += 1;
+			printf( "# c::%s:ndarray:len=%d\n", NAME, len );
+			elapsed = benchmark2( iter, len );
 			print_results( iter, elapsed );
 			printf( "ok %d benchmark finished\n", count );
 		}

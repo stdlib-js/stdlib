@@ -36,6 +36,11 @@ extern "C" {
 */
 void API_SUFFIX(c_drotm)( const CBLAS_INT N, double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY, const double *param );
 
+/**
+* Applies a modified Givens plane rotation using alternative indexing semantics.
+*/
+void API_SUFFIX(c_drotm_ndarray)( const CBLAS_INT N, double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, double *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY, const double *param );
+
 #ifdef __cplusplus
 }
 #endif

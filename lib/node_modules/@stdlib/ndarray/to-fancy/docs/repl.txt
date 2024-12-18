@@ -1,0 +1,200 @@
+
+{{alias}}( x[, options] )
+    Converts an ndarray to an object supporting fancy indexing.
+
+    An ndarray supporting fancy indexing is an ndarray which supports slicing
+    via indexing expressions for both retrieval and assignment.
+
+    A fancy ndarray can be consumed by any API which supports ndarray instances.
+
+    A fancy ndarray shares the *same* data as the provided input ndarray. Hence,
+    any mutations to the returned ndarray will affect the underlying input
+    ndarray and vice versa.
+
+    A fancy ndarray supports indexing using positive and negative integers (both
+    numeric literals and strings), Slice and MultiSlice instances, subsequence
+    expressions, mask ndarrays, boolean ndarrays, and integer ndarrays.
+
+    A fancy array supports all properties and methods of the input array, and,
+    thus, a fancy array can be consumed by any API which supports array-like
+    objects.
+
+    For operations returning a new ndarray (e.g., when slicing or invoking an
+    instance method), a fancy ndarray returns a new fancy ndarray having the
+    same configuration as specified by provided options.
+
+    Indexing expressions provide a convenient and powerful means for creating
+    and operating on ndarray views; however, their use does entail a performance
+    cost. Indexing expressions are best suited for interactive use and
+    scripting. For performance critical applications, prefer equivalent
+    functional APIs supporting ndarray instances.
+
+    Fancy ndarrays support broadcasting in which assigned scalars and ndarrays
+    are repeated (without additional memory allocation) to match the dimensions
+    of a target ndarray instance.
+
+    When assigning ndarrays to slices, the ndarray on the right-hand-side must
+    be broadcast-compatible with dimensions implied by the slice.
+
+    Fancy ndarrays support (mostly) safe casts (i.e., any cast which can be
+    performed without overflow or loss of precision, with the exception of
+    floating-point ndarrays which are also allowed to downcast from higher
+    precision to lower precision).
+
+    When attempting to perform an unsafe cast, fancy ndarrays will raise an
+    exception.
+
+    When assigning a real-valued scalar to a complex number ndarray, a fancy
+    ndarray will cast the real-valued scalar to a complex number argument having
+    an imaginary component equal to zero.
+
+    In older JavaScript environments which do not support Proxy objects, the use
+    of indexing expressions is not supported.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray.
+
+    options: Object (optional)
+        Function options.
+
+    options.strict: boolean (optional)
+        Boolean indicating whether to enforce strict bounds checking. Default:
+        false.
+
+    options.cache: Object (optional)
+        Cache for resolving ndarray index objects. Must have a 'get' method
+        which accepts a single argument: a string identifier associated with an
+        ndarray index. If an ndarray index associated with a provided identifier
+        exists, the 'get' method should return an object having the following
+        properties:
+
+        - data: the underlying index ndarray.
+        - type: the index type. Must be either 'mask', 'bool', or 'int'.
+        - dtype: the data type of the underlying ndarray.
+
+        If an ndarray index is not associated with a provided identifier, the
+        'get' method should return `null`.
+
+        Default: `{{alias:@stdlib/ndarray/index}}`.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray supporting fancy indexing.
+
+    Examples
+    --------
+    // Create a normal ndarray...
+    > var b = [ 1.0, 2.0, 3.0, 4.0 ];
+    > var d = [ 2, 2 ];
+    > var s = [ 2, 1 ];
+    > var o = 0;
+    > var x = {{alias:@stdlib/ndarray/ctor}}( 'generic', b, d, s, o, 'row-major' );
+
+    // Convert to a fancy ndarray:
+    > var arr = {{alias}}( x );
+
+    // Get an element using subscripts:
+    > var v = arr.get( 1, 1 )
+    4.0
+
+    // Get an element using a linear index:
+    > v = arr.iget( 3 )
+    4.0
+
+    // Set an element using subscripts:
+    > arr.set( 1, 1, 40.0 );
+    > arr.get( 1, 1 )
+    40.0
+
+    // Set an element using a linear index:
+    > arr.iset( 3, 99.0 );
+    > arr.get( 1, 1 )
+    99.0
+
+
+{{alias}}.factory( [options] )
+    Returns a function for converting an ndarray to an object supporting fancy
+    indexing.
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Function options.
+
+    options.strict: boolean (optional)
+        Boolean indicating whether to enforce strict bounds checking by default.
+        Default: false.
+
+    options.cache: Object (optional)
+        Cache for resolving ndarray index objects. Must have a 'get' method
+        which accepts a single argument: a string identifier associated with an
+        ndarray index. If an ndarray index associated with a provided identifier
+        exists, the 'get' method should return an object having the following
+        properties:
+
+        - data: the underlying index ndarray.
+        - type: the index type. Must be either 'mask', 'bool', or 'int'.
+        - dtype: the data type of the underlying ndarray.
+
+        If an ndarray index is not associated with a provided identifier, the
+        'get' method should return `null`.
+
+        Default: `{{alias:@stdlib/ndarray/index}}`.
+
+    Returns
+    -------
+    fcn: Function
+        Function for converting an ndarray to an object supporting fancy
+        indexing.
+
+    Examples
+    --------
+    // Create a normal ndarray...
+    > var b = [ 1.0, 2.0, 3.0, 4.0 ];
+    > var d = [ 2, 2 ];
+    > var s = [ 2, 1 ];
+    > var o = 0;
+    > var x = {{alias:@stdlib/ndarray/ctor}}( 'generic', b, d, s, o, 'row-major' );
+
+    // Create a function for converting ndarrays to fancy ndarrays:
+    > var f = {{alias}}.factory();
+
+    // Convert the normal ndarray to a fancy ndarray:
+    > var y = f( x );
+
+
+{{alias}}.idx( x[, options] )
+    Wraps a provided ndarray as an ndarray index object.
+
+    For documentation and usage, see `{{alias:@stdlib/ndarray/index}}`.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray.
+
+    options: Object (optional)
+        Function options.
+
+    options.persist: boolean (optional)
+        Boolean indicating whether to continue persisting an index object after
+        first usage. Default: false.
+
+    Returns
+    -------
+    out: ndarrayIndex
+        ndarray index instance.
+
+    Examples
+    --------
+    > var opts = { 'dtype': 'int32' };
+    > var buf = new {{alias:@stdlib/array/int32}}( [ 1, 2, 3, 4 ] );
+    > var arr = {{alias:@stdlib/ndarray/array}}( buf, opts );
+    > var idx = {{alias}}.idx( arr );
+
+    See Also
+    --------
+

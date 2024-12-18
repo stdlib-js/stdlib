@@ -123,7 +123,7 @@ bool = isSafeInteger( NaN );
 
 #### stdlib_base_is_safe_integer( x )
 
-Test if a finite [double-precision floating-point number][ieee754] is a safe integer.
+Tests if a finite [double-precision floating-point number][ieee754] is a safe integer.
 
 ```c
 #include <stdbool.h>

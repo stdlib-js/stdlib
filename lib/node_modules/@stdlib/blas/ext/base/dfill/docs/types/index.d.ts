@@ -28,7 +28,7 @@ interface Routine {
 	* @param N - number of indexed elements
 	* @param alpha - constant
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns input array
 	*
 	* @example
@@ -39,7 +39,7 @@ interface Routine {
 	* dfill( x.length, 5.0, x, 1 );
 	* // x => <Float64Array>[ 5.0, 5.0, 5.0, 0.0, 5.0, 5.0, 5.0, 5.0 ]
 	*/
-	( N: number, alpha: number, x: Float64Array, stride: number ): Float64Array;
+	( N: number, alpha: number, x: Float64Array, strideX: number ): Float64Array;
 
 	/**
 	* Fills a double-precision floating-point strided array with a specified scalar value using alternative indexing semantics.
@@ -47,8 +47,8 @@ interface Routine {
 	* @param N - number of indexed elements
 	* @param alpha - constant
 	* @param x - input array
-	* @param stride - stride length
-	* @param offset - starting index
+	* @param strideX - stride length
+	* @param offsetX - starting index
 	* @returns input array
 	*
 	* @example
@@ -59,7 +59,7 @@ interface Routine {
 	* dfill.ndarray( x.length, 5.0, x, 1, 0 );
 	* // x => <Float64Array>[ 5.0, 5.0, 5.0, 0.0, 5.0, 5.0, 5.0, 5.0 ]
 	*/
-	ndarray( N: number, alpha: number, x: Float64Array, stride: number, offset: number ): Float64Array;
+	ndarray( N: number, alpha: number, x: Float64Array, strideX: number, offsetX: number ): Float64Array;
 }
 
 /**
@@ -68,7 +68,7 @@ interface Routine {
 * @param N - number of indexed elements
 * @param alpha - constant
 * @param x - input array
-* @param stride - stride length
+* @param strideX - stride length
 * @returns input array
 *
 * @example

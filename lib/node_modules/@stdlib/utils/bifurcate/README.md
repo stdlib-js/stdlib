@@ -54,7 +54,7 @@ var out = bifurcate( arr, filter );
 
 The function accepts the following `options`:
 
--   `returns`: specifies the output format. If the option equals `'values'`, the function outputs element values. If the option equals `'indices'`, the function outputs element indices. If the option equals `'*'`, the function outputs both element indices and values. Default: `'values'`.
+-   **returns**: specifies the output format. If the option equals `'values'`, the function outputs element values. If the option equals `'indices'`, the function outputs element indices. If the option equals `'*'`, the function outputs both element indices and values. Default: `'values'`.
 
 By default, the function returns element values. To return element indices, set the `returns` option to `'indices'`.
 

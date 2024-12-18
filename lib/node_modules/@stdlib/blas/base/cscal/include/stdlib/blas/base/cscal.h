@@ -37,6 +37,11 @@ extern "C" {
 */
 void API_SUFFIX(c_cscal)( const CBLAS_INT N, const stdlib_complex64_t ca, void *CX, const CBLAS_INT strideX );
 
+/**
+* Scales a single-precision complex floating-point vector by a single-precision complex floating-point constant using alternative indexing semantics.
+*/
+void API_SUFFIX(c_cscal_ndarray)( const CBLAS_INT N, const stdlib_complex64_t ca, void *CX, const CBLAS_INT strideX, const CBLAS_INT offsetX );
+
 #ifdef __cplusplus
 }
 #endif

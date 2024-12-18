@@ -4,9 +4,9 @@
 
     The transform function is provided three arguments:
 
-    - `key`: object key
-    - `value`: object value corresponding to `key`
-    - `obj`: the input object
+    - key: object key.
+    - value: object value corresponding to `key`.
+    - obj: the input object.
 
     The value returned by a transform function should be a value which can be
     serialized as an object key.

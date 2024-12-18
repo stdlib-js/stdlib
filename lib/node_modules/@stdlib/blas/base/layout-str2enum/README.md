@@ -42,7 +42,7 @@ var str2enum = require( '@stdlib/blas/base/layout-str2enum' );
 
 #### str2enum( layout )
 
-Return the enumeration constant associated with a BLAS memory layout string.
+Returns the enumeration constant associated with a BLAS memory layout string.
 
 ```javascript
 var v = str2enum( 'row-major' );

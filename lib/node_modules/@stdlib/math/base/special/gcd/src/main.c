@@ -30,9 +30,9 @@ static const int64_t STDLIB_CONSTANT_INT64_MAX = 9223372036854775807;
 /**
 * Computes the greatest common divisor (gcd) using the binary GCD algorithm.
 *
-* @param a    input value
-* @param b    input value
-* @return     output value
+* @param a    first number
+* @param b    second number
+* @return     greatest common divisor
 *
 * @example
 * double out = largeIntegers( 1.2676506002282294.0e+30, 9007199254740992.0 );
@@ -86,9 +86,9 @@ static double largeIntegers( const double a, const double b ) {
 /**
 * Computes the greatest common divisor (gcd) using the binary GCD algorithm and bitwise operations.
 *
-* @param a    input value
-* @param b    input value
-* @return     output value
+* @param a    first number
+* @param b    second number
+* @return     greatest common divisor
 *
 * @example
 * double out = bitwise( 48.0, 18.0 );
@@ -142,9 +142,9 @@ static double bitwise( const double a, const double b ) {
 /**
 * Computes the greatest common divisor (gcd).
 *
-* @param a    input value
-* @param b    input value
-* @return     output value
+* @param a    first number
+* @param b    second number
+* @return     greatest common divisor
 *
 * @example
 * double out = stdlib_base_gcd( 48.0, 18.0 );

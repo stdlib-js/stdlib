@@ -4,10 +4,10 @@
 
     Data includes the following:
 
-    - dict: the main pronouncing dictionary
-    - phones: manners of articulation for each sound
-    - symbols: complete list of ARPABET symbols used by the dictionary
-    - vp: verbal pronunciations of punctuation marks
+    - dict: the main pronouncing dictionary.
+    - phones: manners of articulation for each sound.
+    - symbols: complete list of ARPABET symbols used by the dictionary.
+    - vp: verbal pronunciations of punctuation marks.
 
     Parameters
     ----------

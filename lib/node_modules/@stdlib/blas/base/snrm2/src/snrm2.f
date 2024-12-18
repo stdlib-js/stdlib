@@ -52,6 +52,20 @@
 !<
 real function snrm2( N, sx, stride )
   implicit none
+  ! ..
+  ! Define a kind parameter for single precision:
+  integer, parameter :: wp = kind( 1.0e0 )
+  ! ..
+  ! Define constants:
+  real( wp ), parameter :: zero = 0.0_wp
+  real( wp ), parameter :: one  = 1.0_wp
+  real( wp ), parameter :: maxN = huge( 0.0_wp )
+  ! ..
+  ! Blue's scaling constants:
+  real( wp ), parameter :: tsml = 1.08420217e-19_wp
+  real( wp ), parameter :: tbig = 4.50359963e15_wp
+  real( wp ), parameter :: ssml = 3.77789319e22_wp
+  real( wp ), parameter :: sbig = 1.32348898e-23_wp
   !..
   ! Scalar arguments:
   integer :: N, stride
@@ -60,35 +74,85 @@ real function snrm2( N, sx, stride )
   real, intent(in) :: sx(*)
   ! ..
   ! Local scalars:
-  real :: ax, scale, ssq
-  integer :: i
+  integer :: i, ix
+  logical :: notbig
+  real( wp ) :: abig, amed, asml, ax, scl, sumsq, ymax, ymin
   ! ..
   ! Intrinsic functions:
   intrinsic abs, sqrt
   ! ..
-  snrm2 = 0.0e0
+  snrm2 = zero
   ! ..
-  if ( N <= 0 .OR. stride <= 0 ) then
+  if ( N <= 0 ) then
     return
   end if
   !..
-  if ( N == 1 ) then
-    snrm2 = abs( sx( 1 ) )
-    return
+  scl = one
+  sumsq = zero
+  ! ..
+  ! Compute the sum of squares in 3 accumulators:
+  !     abig -- sums of squares scaled down to avoid overflow
+  !     asml -- sums of squares scaled up to avoid underflow
+  !     amed -- sums of squares that do not require scaling
+  ! Thresholds and multipliers:
+  !     tbig -- values bigger than this are scaled down by sbig
+  !     tsml -- values smaller than this are scaled up by ssml
+  ! ..
+  notbig = .true.
+  asml = zero
+  amed = zero
+  abig = zero
+  ix = 1
+  if ( stride < 0 ) then
+    ix = 1 - ( N - 1 ) * stride
   end if
   ! ..
-  scale = 0.0e0
-  ssq = 1.0e0
-  do i = 1, 1+((N-1)*stride), stride
-    if ( sx( i ) /= 0.0e0 ) then
-      ax = abs( sx( i ) )
-      if ( scale < ax ) then
-        ssq = 1.0e0 + ( ssq * (scale/ax)**2 )
-        scale = ax
-      else
-        ssq = ssq + (ax/scale)**2
+  do i = 1, N
+    ax = abs( sx( ix ) )
+    if ( ax > tbig ) then
+      abig = abig + ( ax * sbig )**2
+      notbig = .false.
+    else if ( ax < tsml ) then
+      if ( notbig ) then
+        asml = asml + ( ax * ssml )**2
       end if
+    else
+      amed = amed + ax**2
     end if
+    ix = ix + stride
   end do
-  snrm2 = scale * sqrt( ssq )
+  ! ..
+  ! Combine abig and amed or amed and asml if more than one accumulator was used:
+  if ( abig > zero ) then
+    ! Combine abig and amed if abig > 0...
+    if ( ( amed > zero ) .or. ( amed > maxN ) .or. ( amed /= amed ) ) then
+      abig = abig + ( amed * sbig ) * sbig
+    end if
+    scl = one / sbig
+    sumsq = abig
+  else if ( asml > zero ) then
+    ! Combine amed and asml if asml > 0...
+    if ( ( amed > zero ) .or. ( amed > maxN ) .or. ( amed /= amed ) ) then
+      amed = sqrt( amed )
+      asml = sqrt( asml ) / ssml
+      if ( asml > amed ) then
+        ymin = amed
+        ymax = asml
+      else
+        ymin = asml
+        ymax = amed
+      end if
+      scl = one
+      sumsq = ymax**2 * ( one + ( ymin / ymax )**2 )
+    else
+      scl = one / ssml
+      sumsq = asml
+    end if
+  else
+    ! All values are mid-range...
+    scl = one
+    sumsq = amed
+  end if
+  snrm2 = scl * sqrt( sumsq )
+  return
 end function snrm2

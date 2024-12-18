@@ -18,17 +18,80 @@
 
 #include "stdlib/blas/base/idamax.h"
 #include "stdlib/blas/base/idamax_fortran.h"
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/blas/base/xerbla.h"
+#include "stdlib/blas/base/dcopy.h"
+#include "stdlib/strided/base/min_view_buffer_index.h"
+#include <stdlib.h>
 
 /**
 * Finds the index of the first element having the maximum absolute value.
 *
 * @param N        number of indexed elements
 * @param X        input array
-* @param strideX  stride length
+* @param strideX  X stride length
 * @return         index value
 */
-int c_idamax( const int N, const double *X, const int strideX ) {
-	int idx;
+CBLAS_INT API_SUFFIX(c_idamax)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX ) {
+	CBLAS_INT idx;
+	CBLAS_INT sx;
+	double *copyX;
+
+	if ( strideX < 0 ) {
+		// Allocate memory for a temporary workspace:
+		copyX = (double *)malloc( N * sizeof(double) );
+		if ( copyX == NULL ) {
+			API_SUFFIX(c_xerbla)( 1, "idamax", "Memory allocation failed when copying the input array to a temporary workspace.\n" );
+		}
+		// Copy the input array to a temporary workspace:
+		API_SUFFIX(c_dcopy)( N, X, strideX, copyX, 1 );
+
+		// Perform operation:
+		sx = 1;
+		idamaxsub( &N, copyX, &sx, &idx );
+
+		// Free allocated memory:
+		free( copyX );
+
+		return idx - 1;
+	}
+	idamaxsub( &N, X, &strideX, &idx );
+	return idx - 1;
+}
+
+/**
+* Finds the index of the first element having the maximum absolute value using alternative indexing semantics.
+*
+* @param N        number of indexed elements
+* @param X        input array
+* @param strideX  X stride length
+* @param offsetX  starting index for X
+* @return         index value
+*/
+CBLAS_INT API_SUFFIX(c_idamax_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+	CBLAS_INT idx;
+	CBLAS_INT sx;
+	double *copyX;
+
+	if ( strideX < 0 ) {
+		// Allocate memory for a temporary workspace:
+		copyX = (double *)malloc( N * sizeof(double) );
+		if ( copyX == NULL ) {
+			API_SUFFIX(c_xerbla)( 1, "idamax", "Memory allocation failed when copying the input array to a temporary workspace.\n" );
+		}
+		// Copy the input array to a temporary workspace:
+		API_SUFFIX(c_dcopy_ndarray)( N, X, strideX, offsetX, copyX, 1, 0 );
+
+		// Perform operation:
+		sx = 1;
+		idamaxsub( &N, copyX, &sx, &idx );
+
+		// Free allocated memory:
+		free( copyX );
+
+		return idx - 1;
+	}
+	X += stdlib_strided_min_view_buffer_index( N, strideX, offsetX ); // adjust array pointer
 	idamaxsub( &N, X, &strideX, &idx );
 	return idx - 1;
 }

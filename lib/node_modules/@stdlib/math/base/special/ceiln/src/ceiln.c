@@ -63,7 +63,7 @@ static const double HUGE_VALUE = 1.0e+308;
 double stdlib_base_ceiln( const double x, const int32_t n ) {
 	double s;
 	double y;
-	if ( stdlib_base_is_nan( x ) ){
+	if ( stdlib_base_is_nan( x ) ) {
 		return x;
 	}
 	if (

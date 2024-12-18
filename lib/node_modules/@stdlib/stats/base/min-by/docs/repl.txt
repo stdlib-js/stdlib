@@ -12,10 +12,10 @@
 
     The callback function is provided four arguments:
 
-    - value: array element
-    - aidx: array index
-    - sidx: strided index (offset + aidx*stride)
-    - array: the input array
+    - value: array element.
+    - aidx: array index.
+    - sidx: strided index (offset + aidx*stride).
+    - array: the input array.
 
     The callback function should return a numeric value.
 

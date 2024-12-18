@@ -207,6 +207,31 @@ The function accepts the following arguments:
 void c_dcopy( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY );
 ```
 
+#### c_dcopy_ndarray( N, \*X, strideX, offsetX, \*Y, strideY, offsetY )
+
+Copies values from `x` into `y` using alternative indexing semantics.
+
+```c
+double x[] = { 1.0, 2.0, 3.0, 4.0, 5.0 };
+double y[] = { 0.0, 0.0, 0.0, 0.0, 0.0 };
+
+c_dcopy_ndarray( 3, x, 1, 2, y, 1, 2 );
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[in] double*` input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
+-   **Y**: `[out] double*` output array.
+-   **strideY**: `[in] CBLAS_INT` index increment for `Y`.
+-   **offsetY**: `[in] CBLAS_INT` starting index for `Y`.
+
+```c
+void c_dcopy_ndarray( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, double *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY );
+```
+
 </section>
 
 <!-- /.usage -->
@@ -243,6 +268,14 @@ int main( void ) {
 
     // Copy elements:
     c_dcopy( N, x, strideX, y, strideY );
+
+    // Print the result:
+    for ( int i = 0; i < 8; i++ ) {
+        printf( "y[ %i ] = %lf\n", i, y[ i ] );
+    }
+
+    // Copy elements:
+    c_dcopy_ndarray( N, x, strideX, 0, y, strideY, 6 );
 
     // Print the result:
     for ( int i = 0; i < 8; i++ ) {

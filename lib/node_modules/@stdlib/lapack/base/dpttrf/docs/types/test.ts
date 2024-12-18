@@ -22,7 +22,7 @@ import dpttrf = require( './index' );
 
 // TESTS //
 
-// The function returns a Float64Array...
+// The function returns a number...
 {
 	const D = new Float64Array( 3 );
 	const E = new Float64Array( 2 );

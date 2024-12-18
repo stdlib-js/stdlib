@@ -46,7 +46,7 @@ interface Routine {
 	* var A = new Float32Array( [ 1.0, 2.0, 3.0, 0.0, 1.0, 2.0, 0.0, 0.0, 1.0 ] );
 	* var x = new Float32Array( [ 1.0, 2.0, 3.0 ] );
 	*
-	* strmv( row-major', 'upper', 'no-transpose', 'non-unit', 3, A, 3, x, 1 );
+	* strmv( 'row-major', 'upper', 'no-transpose', 'non-unit', 3, A, 3, x, 1 );
 	* // x => <Float32Array>[ 14.0, 8.0, 3.0 ]
 	*/
 	( order: Layout, uplo: MatrixTriangle, trans: TransposeOperation, diag: DiagonalType, N: number, A: Float32Array, LDA: number, x: Float32Array, strideX: number ): Float32Array;
@@ -60,7 +60,7 @@ interface Routine {
 	* @param N - number of elements along each dimension in the matrix `A`
 	* @param A - input matrix
 	* @param strideA1 - stride of the first dimension of `A`
-	* @param strideA2 - stride of the first dimension of `A`
+	* @param strideA2 - stride of the second dimension of `A`
 	* @param offsetA - starting index for `A`
 	* @param x - input vector
 	* @param strideX - `x` stride length

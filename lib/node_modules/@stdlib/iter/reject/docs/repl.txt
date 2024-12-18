@@ -5,8 +5,8 @@
 
     When invoked, the predicate function is provided two arguments:
 
-    - value: iterated value
-    - index: iteration index (zero-based)
+    - value: iterated value.
+    - index: iteration index (zero-based).
 
     If an environment supports Symbol.iterator and a provided iterator is
     iterable, the returned iterator is iterable.

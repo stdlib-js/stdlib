@@ -37,14 +37,14 @@
         "-lm"
       ],
       "libpath": [],
-        "dependencies": [
-          "@stdlib/napi/export",
-          "@stdlib/napi/argv",
-          "@stdlib/napi/argv-int64",
-          "@stdlib/napi/argv-double",
-          "@stdlib/napi/argv-strided-float32array",
-          "@stdlib/math/base/assert/is-nanf",
-          "@stdlib/math/base/assert/is-negative-zerof"
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-float",
+        "@stdlib/napi/argv-strided-float32array",
+        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/math/base/assert/is-negative-zerof"
       ]
     },
     {
@@ -59,7 +59,10 @@
         "-lm"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/math/base/assert/is-negative-zerof"
+      ]
     },
     {
       "task": "examples",
@@ -74,8 +77,8 @@
       ],
       "libpath": [],
       "dependencies": [
-          "@stdlib/math/base/assert/is-nanf",
-          "@stdlib/math/base/assert/is-negative-zerof"
+        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/math/base/assert/is-negative-zerof"
       ]
     }
   ]

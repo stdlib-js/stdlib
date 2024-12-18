@@ -93,17 +93,20 @@ double rand_double() {
 */
 double benchmark() {
 	double elapsed;
-	double x;
-	double y;
+	double x[ 100 ];
+	double y[ 100 ];
 	double z;
 	double t;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = ( rand_double() * 20.0 ) - 10.0;
+		y[ i ] = ( rand_double() * 2048.0 ) - 1024.0;
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = ( rand_double()*20.0 ) - 10.0;
-		y = ( rand_double()*2048.0 ) - 1024.0;
-		z = ldexp( x, y );
+		z = ldexp( x[ i % 100 ], y[ i % 100 ] );
 		if ( z != z ) {
 			printf( "should not return NaN\n" );
 			break;

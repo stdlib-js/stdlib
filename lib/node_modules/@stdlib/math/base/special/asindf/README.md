@@ -156,7 +156,7 @@ float stdlib_base_asindf( const float x );
 
 int main( void ) {
     const float x[] = { 1.0f, 0.45f, -0.89f, 0.33f, -0.78f, -0.22f, 0.66f, 0.11f, -0.55f, 0.0f };
-    
+
     float v;
     int i;
     for ( i = 0; i < 10; i++ ) {

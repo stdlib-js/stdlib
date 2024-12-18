@@ -64,7 +64,6 @@ import mgf = require( './index' );
 	mgf.factory( 3, 4 ); // $ExpectType Unary
 }
 
-
 // The `factory` method returns a function which returns a number...
 {
 	const fcn = mgf.factory( 3, 4 );

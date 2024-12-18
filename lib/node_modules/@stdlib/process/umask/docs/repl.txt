@@ -79,15 +79,15 @@
 
     and "operator" may be one of
 
-    - `+`: enable
-    - `-`: disable
-    - `=`: enable specified and disable unspecified permissions
+    - +: enable
+    - -: disable
+    - =: enable specified and disable unspecified permissions
 
     For example,
 
-    - `u-w`: disable user write permissions
-    - `u+w`: enable user write permissions
-    - `u=w`: enable user write permissions and disable user read and execute
+    - u-w: disable user write permissions
+    - u+w: enable user write permissions
+    - u=w: enable user write permissions and disable user read and execute
 
     To specify multiple changes, provide a comma-separated list of mask
     expressions. For example,

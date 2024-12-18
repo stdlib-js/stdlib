@@ -7,8 +7,8 @@
 
     Each file is represented by an object with the following fields:
 
-    - file: file path
-    - data: file contents as either a Buffer or string
+    - file: file path.
+    - data: file contents as either a Buffer or string.
 
     Parameters
     ----------

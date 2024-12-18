@@ -1,0 +1,12 @@
+
+{{alias}}
+    Natural logarithm of `1/2` as a single-precision floating-point number.
+
+    Examples
+    --------
+    > {{alias}}
+    -0.6931471824645996
+
+    See Also
+    --------
+

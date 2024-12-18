@@ -5,8 +5,8 @@
     The serialization format for a Buffer is an object having the following
     fields:
 
-    - type: value type (Buffer)
-    - data: buffer data as an array of integers
+    - type: value type (Buffer).
+    - data: buffer data as an array of integers.
 
     Parameters
     ----------
