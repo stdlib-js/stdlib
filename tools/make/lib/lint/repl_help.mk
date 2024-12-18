@@ -34,6 +34,7 @@ REPL_HELP_LINTER_FLAGS ?=
 # make lint-repl-help
 #/
 lint-repl-help: $(NODE_MODULES)
+	$(QUIET) echo 'Linting REPL help files...'
 	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(REPL_HELP_LINTER)" $(REPL_HELP_LINTER_FLAGS) "$(ROOT_DIR)"
 
 .PHONY: lint-repl-help

@@ -1,0 +1,56 @@
+
+{{alias}}( x[, options], fcn[, thisArg] )
+    Filters and maps elements in an input ndarray to elements in a new output
+    ndarray according to a callback function.
+
+    The callback function is provided the following arguments:
+
+    - value: current array element.
+    - indices: current array element indices.
+    - arr: the input ndarray.
+
+    If a provided callback function returns `undefined`, the function skips the
+    respective ndarray element. If the callback function returns a value other
+    than `undefined`, the function stores the callback's return value in the
+    output ndarray.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray.
+
+    options: Object (optional)
+        Function options.
+
+    options.dtype: string (optional)
+        Output ndarray data type. Overrides using the input array's inferred
+        data type.
+
+    options.order: string (optional)
+        Index iteration order. By default, the function iterates over elements
+        according to the layout order of the provided array. Accordingly, for
+        row-major input arrays, the last dimension indices increment fastest.
+        For column-major input arrays, the first dimension indices increment
+        fastest. To override the inferred order and ensure that indices
+        increment in a specific manor, regardless of the input array's layout
+        order, explicitly set the iteration order. Note, however, that iterating
+        according to an order which does not match that of the input array may,
+        in some circumstances, result in performance degradation due to cache
+        misses. Must be either 'row-major' or 'column-major'.
+
+    fcn: Function
+        Callback function.
+
+    thisArg: any (optional)
+        Callback function execution context.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] );
+    > function f( v ) { if ( v > 2.0 ) { return v * 10.0; } };
+    > var y = {{alias}}( x, f );
+    > {{alias:@stdlib/ndarray/to-array}}( y )
+    [ 30.0, 40.0 ]
+
+    See Also
+    --------

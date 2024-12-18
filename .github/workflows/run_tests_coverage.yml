@@ -292,6 +292,9 @@ jobs:
             BRANCH_NAME="pr-${{ github.event.pull_request.number }}"
             git fetch origin $BRANCH_NAME || true
             git checkout $BRANCH_NAME || git checkout -b $BRANCH_NAME
+
+            # Remove all files from the branch:
+            git rm -rf .
           else
             BRANCH_NAME="main"
           fi
