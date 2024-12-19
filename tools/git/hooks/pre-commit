@@ -124,7 +124,7 @@ write_to_cache() {
 init_cache_file() {
 	touch "${cache_file}"
 	write_to_cache '---'
-	write_to_cache 'type: git_hook_static_analysis_report'
+	write_to_cache 'type: pre_commit_static_analysis_report'
 	write_to_cache 'description: Results of running static analysis checks when committing changes.'
 	write_to_cache 'report:'
 }
