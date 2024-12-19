@@ -1,0 +1,234 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2024 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: label_commands
+
+# Workflow triggers:
+on:
+  pull_request:
+    types:
+      - labeled
+
+# Workflow jobs:
+jobs:
+
+  # Define a job for removing the label and adding in-progress label:
+  manage_labels:
+
+    # Define a display name:
+    name: 'Manage labels'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the conditions under which the job should run:
+    if: |
+      github.event.label.name == 'bot: Merge' ||
+      github.event.label.name == 'bot: Rebase' ||
+      github.event.label.name == 'bot: Check Files' ||
+      github.event.label.name == 'bot: Lint Autofix' ||
+      github.event.label.name == 'bot: Update Copyright Years'
+
+    # Define the job's steps:
+    steps:
+
+      - name: 'Remove label'
+        # Pin action to full length commit SHA
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        with:
+          github-token: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+          script: |
+            try {
+              await github.rest.issues.removeLabel({
+                'owner': context.repo.owner,
+                'repo': context.repo.repo,
+                'issue_number': context.issue.number,
+                'name': '${{ github.event.label.name }}'
+              })
+            } catch ( error ) {
+              console.log( 'Error removing label: %s', error.message );
+            }
+
+      - name: 'Add in-progress label'
+        # Pin action to full length commit SHA
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        with:
+          github-token: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+          script: |
+            github.rest.issues.addLabels({
+              'owner': context.repo.owner,
+              'repo': context.repo.repo,
+              'issue_number': context.issue.number,
+              'labels': ['bot: In Progress']
+            })
+
+      # Add initial reaction to comment with slash command:
+      - name: 'Add initial reaction'
+        run: |
+          curl -X POST \
+            -H "Accept: application/vnd.github.v3+json" \
+            -H "Authorization: Bearer ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}" \
+            "https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.pull_request.number }}/reactions" \
+            -d '{"content":"eyes"}'
+
+  # Define a job for checking for required files:
+  check_files:
+
+    # Define a display name:
+    name: 'Check for required files'
+
+    # Ensure initial reaction job has completed before running this job:
+    needs: [ manage_labels ]
+
+    # Define the conditions under which the job should run:
+    if: |
+      github.event.label.name == 'bot: Check Files'
+
+    # Run reusable workflow:
+    uses: ./.github/workflows/check_required_files.yml
+    with:
+      pull_request_number: ${{ github.event.pull_request.number }}
+      user: ${{ github.event.sender.login }}
+    secrets:
+      STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+
+  # Define a job for updating copyright header years:
+  update_copyright_years:
+
+    # Define a display name:
+    name: 'Update copyright header years'
+
+    # Define the conditions under which the job should run:
+    if: |
+      github.event.label.name == 'bot: Update Copyright Years'
+
+    # Run reusable workflow:
+    uses: ./.github/workflows/update_pr_copyright_years.yml
+    with:
+      pull_request_number: ${{ github.event.pull_request.number }}
+    secrets:
+      REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+      STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+      STDLIB_BOT_GPG_PRIVATE_KEY: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
+      STDLIB_BOT_GPG_PASSPHRASE: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
+
+  # Define a job for auto-fixing lint errors:
+  fix_lint_errors:
+
+    # Define a display name:
+    name: 'Auto-fix lint errors'
+
+    # Ensure initial reaction job has completed before running this job:
+    needs: [ manage_labels ]
+
+    # Define the conditions under which the job should run:
+    if: |
+      github.event.label.name == 'bot: Lint Autofix'
+
+    # Run reusable workflow:
+    uses: ./.github/workflows/lint_autofix.yml
+    with:
+      pull_request_number: ${{ github.event.pull_request.number }}
+    secrets:
+      REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+      STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+      STDLIB_BOT_GPG_PRIVATE_KEY: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
+      STDLIB_BOT_GPG_PASSPHRASE: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
+
+  # Define a job for merging develop branch:
+  merge_develop:
+
+    # Define a display name:
+    name: 'Merge changes from develop branch into this PR'
+
+    # Ensure initial reaction job has completed before running this job:
+    needs: [ manage_labels ]
+
+    # Define the conditions under which the job should run:
+    if: |
+      github.event.label.name == 'bot: Merge'
+
+    # Run reusable workflow:
+    uses: ./.github/workflows/pr_merge_develop.yml
+    with:
+      pull_request_number: ${{ github.event.pull_request.number }}
+    secrets:
+      REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+      STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+      STDLIB_BOT_GPG_PRIVATE_KEY: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
+      STDLIB_BOT_GPG_PASSPHRASE: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
+
+  # Define a job for rebasing on develop branch:
+  rebase_develop:
+
+    # Define a display name:
+    name: 'Rebase this PR on top of develop branch'
+
+    # Ensure initial reaction job has completed before running this job:
+    needs: [ manage_labels ]
+
+    # Define the conditions under which the job should run:
+    if: |
+      github.event.label.name == 'bot: Rebase'
+
+    # Run reusable workflow:
+    uses: ./.github/workflows/pr_rebase_develop.yml
+    with:
+      pull_request_number: ${{ github.event.pull_request.number }}
+    secrets:
+      REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+      STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+      STDLIB_BOT_GPG_PRIVATE_KEY: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
+      STDLIB_BOT_GPG_PASSPHRASE: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
+
+  # Define a job for removing the in-progress label:
+  remove_progress_label:
+
+    # Define a display name:
+    name: 'Remove in-progress label'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Ensure all previous jobs have completed before running this job:
+    needs: [ manage_labels, check_files, update_copyright_years, fix_lint_errors, merge_develop, rebase_develop ]
+
+    # Define the conditions under which the job should run:
+    if: always()
+
+    # Define the job's steps:
+    steps:
+      - name: Remove in-progress label
+        # Run the step regardless of the outcome of previous steps:
+        if: always()
+        # Pin action to full length commit SHA
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        with:
+          github-token: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+          script: |
+            try {
+              await github.rest.issues.removeLabel({
+                'owner': context.repo.owner,
+                'repo': context.repo.repo,
+                'issue_number': context.issue.number,
+                'name': 'bot: In Progress'
+              })
+            } catch ( error ) {
+              console.log( 'Error removing label: %s', error.message );
+            }
