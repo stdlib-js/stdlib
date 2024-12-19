@@ -114,6 +114,9 @@ jobs:
     # Define a display name:
     name: 'Update copyright header years'
 
+    # Ensure initial reaction job has completed before running this job:
+    needs: [ manage_labels ]
+
     # Define the conditions under which the job should run:
     if: |
       github.event.label.name == 'bot: Update Copyright Years'
