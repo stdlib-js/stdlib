@@ -65,7 +65,7 @@ cache_dir="${root}/.git/hooks-cache"
 # Define the path to a file for storing hook results:
 cache_file="${cache_dir}/pre_push_report.yml"
 
-# Resolve the last commit message (excluding metadata such as author name and date):
+# Resolve the last commit message (excluding metadata, such as author name and date):
 commit_message=$(git log -1 --pretty=%B)
 
 # Define the path to a file for storing a backup of the last commit message:
