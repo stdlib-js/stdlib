@@ -76,14 +76,26 @@ lint() {
 
 # Appends a report generated during the pre-commit hook.
 append_pre_commit_report() {
-	# Check whether the commit message already contains a report (e.g., as may be the case when amending a commit message; git commit --amend):
+	# Check whether the commit is a merge commit:
+	head -n 1 "${commit_message}" | grep -q '^Merge branch';
+
+	# For merge commits, no need to append a report...
+	if [[ "$?" -eq 0 ]]; then
+		return 0
+	fi
+
+	# Check whether the commit message already contains a report (e.g., as may be the case when amending a commit message via git commit --amend):
 	grep -q 'type: pre_commit_static_analysis_report' "${commit_message}"
 
-	# Only append a report if the message doesn't contain an existing report...
-	if [[ "$?" -ne 0 ]]; then
-		echo '' >> "${commit_message}"
-		cat "${pre_commit_report}" >> "${commit_message}"
+	# If a message already includes a report, skip appending a report...
+	if [[ "$?" -eq 0 ]]; then
+		return 0
 	fi
+
+	# Append the report:
+	echo '' >> "${commit_message}"
+	cat "${pre_commit_report}" >> "${commit_message}"
+
 	return 0
 }
 
