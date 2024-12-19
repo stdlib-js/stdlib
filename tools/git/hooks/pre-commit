@@ -105,7 +105,7 @@ cleanup() {
 
 # Creates a directory for caching hook results to allow accessing those results in subsequent hooks.
 create_cache_dir() {
-	mkdir "${cache_dir}"
+	mkdir -p "${cache_dir}"
 }
 
 # Removes any previous hook results.
