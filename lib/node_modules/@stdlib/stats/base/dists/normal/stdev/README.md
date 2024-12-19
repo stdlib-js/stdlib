@@ -105,13 +105,100 @@ for ( i = 0; i < 10; i++ ) {
 
 <!-- /.examples -->
 
-<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+<!-- C interface documentation. -->
 
-<section class="references">
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
 
 </section>
 
-<!-- /.references -->
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/normal/stdev.h"
+```
+
+#### stdlib_base_dists_normal_stdev( mu, sigma )
+
+Evaluates the standard deviation for a normal distribution with mean `mu` and standard deviation `sigma`.
+
+```c
+double out = stdlib_base_dists_normal_stdev( 0.0, 1.0 );
+// returns ~1.4189
+```
+
+The function accepts the following arguments:
+
+-   **mu**: `[in] double` mean.
+-   **sigma**: `[in] double` standard deviation.
+
+```c
+double stdlib_base_dists_normal_stdev( const double mu, const double sigma );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/normal/stdev.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double mu;
+    double sigma;
+    double y;
+    int i;
+
+    for ( i = 0; i < 10; i++ ) {
+        mu = random_uniform( -5.0, 5.0 );
+        sigma = random_uniform( 0.1, 20.0 );
+        y = stdlib_base_dists_normal_stdev( mu, sigma );
+        printf( "µ: %.4f, σ: %.4f, SD(X;µ,σ): %.4f\n", mu, sigma, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -132,3 +219,11 @@ for ( i = 0; i < 10; i++ ) {
 </section>
 
 <!-- /.links -->
+
+<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="references">
+
+</section>
+
+<!-- /.references -->
