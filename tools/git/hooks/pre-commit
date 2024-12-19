@@ -80,6 +80,12 @@ cppcheck_tests_fixtures_suppressions_list="${root}/etc/cppcheck/suppressions.tes
 # Define the path to cppcheck configuration file for linting benchmarks:
 cppcheck_benchmarks_suppressions_list="${root}/etc/cppcheck/suppressions.benchmarks.txt"
 
+# Define the path to a directory for caching hook results:
+cache_dir="${root}/.git/hooks-cache"
+
+# Define the path to a file for storing hook results:
+cache_file="${cache_dir}/pre_commit_report.yml"
+
 
 # FUNCTIONS #
 
@@ -93,12 +99,61 @@ on_error() {
 
 # Runs clean-up tasks.
 cleanup() {
+	finalize_cache
 	echo '' >&2
+}
+
+# Creates a directory for caching hook results to allow accessing those results in subsequent hooks.
+create_cache_dir() {
+	mkdir "${cache_dir}"
+}
+
+# Removes any previous hook results.
+clean_cache_file() {
+	rm -f "${cache_file}"
+}
+
+# Appends results to a file containing hook results.
+#
+# $1 - result line
+write_to_cache() {
+	echo "$1" >> "${cache_file}"
+}
+
+# Initializes a new cache file for storing hook results.
+init_cache_file() {
+	touch "${cache_file}"
+	write_to_cache '---'
+	write_to_cache 'type: git_hook_static_analysis_report'
+	write_to_cache 'description: Results of running static analysis checks when committing changes.'
+	write_to_cache 'report:'
 }
 
 # Runs initialization tasks.
 init() {
+	create_cache_dir
+	clean_cache_file
+	init_cache_file
 	return 0
+}
+
+# Adds a new task to hook results.
+#
+# $1 - task name
+add_task() {
+	write_to_cache "  - task: $1"
+}
+
+# Saves the task status in the hook results.
+#
+# $1 - task status
+task_status() {
+	write_to_cache "    status: $1"
+}
+
+# Finalizes hook results.
+finalize_cache() {
+	write_to_cache '---'
 }
 
 # Checks for non-ASCII filenames (to ensure cross platform portability).
@@ -133,275 +188,417 @@ run_lint() {
 	changed_files=$(git diff --name-only --cached --diff-filter ACMR)
 
 	# Lint filenames:
+	add_task 'lint_filenames'
 	if [[ -z "${skip_filenames}" ]]; then
 		echo "${changed_files}" | "${lint_filenames}"
 		if [[ "$?" -ne 0 ]]; then
+			task_status 'failed'
 			echo '' >&2
 			echo 'Filename lint errors.' >&2
 			return 1
 		fi
+		task_status 'passed'
+	else
+		task_status 'skipped'
 	fi
 	# Lint against EditorConfig:
+	add_task 'lint_editorconfig'
 	if [[ -z "${skip_editorconfig}" ]]; then
 		files=$(echo "${changed_files}" | tr '\n' ' ')
 		make FILES="${files}" lint-editorconfig-files > /dev/null >&2
 		if [[ "$?" -ne 0 ]]; then
+			task_status 'failed'
 			echo '' >&2
 			echo 'EditorConfig lint errors.' >&2
 			return 1
 		fi
+		task_status 'passed'
+	else
+		task_status 'skipped'
 	fi
 	# Lint Markdown files...
+	add_task 'lint_markdown'
 	if [[ -z "${skip_markdown}" ]]; then
 		files=$(echo "${changed_files}" | grep '\.md$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make FILES="${files}" lint-markdown-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
+				task_status 'failed'
 				echo '' >&2
 				echo 'Markdown lint errors.' >&2
 				return 1
 			fi
+			task_status 'passed'
+		else
+			task_status 'na'
 		fi
+	else
+		task_status 'skipped'
 	fi
 	# Lint package.json files...
+	add_task 'lint_package_json'
 	if [[ -z "${skip_package_json}" ]]; then
 		files=$(echo "${changed_files}" | grep 'package\.json$' | grep -v 'datapackage\.json$' )
 		if [[ -n "${files}" ]]; then
 			echo "${files}" | "${lint_package_json}" >&2
 			if [[ "$?" -ne 0 ]]; then
+				task_status 'failed'
 				echo '' >&2
 				echo 'Package.json lint errors.' >&2
 				return 1
 			fi
+			task_status 'passed'
+		else
+			task_status 'na'
 		fi
+	else
+		task_status 'skipped'
 	fi
 	# Lint REPL help files...
+	add_task 'lint_repl_help'
 	if [[ -z "${skip_repl_help}" ]]; then
 		files=$(echo "${changed_files}" | grep 'repl\.txt$' )
 		if [[ -n "${files}" ]]; then
 			echo "${files}" | "${lint_repl_help}" >&2
 			if [[ "$?" -ne 0 ]]; then
+				task_status 'failed'
 				echo '' >&2
 				echo 'REPL help lint errors.' >&2
 				return 1
 			fi
+			task_status 'passed'
+		else
+			task_status 'na'
 		fi
+	else
+		task_status 'skipped'
 	fi
 	# Lint JavaScript source files...
+	add_task 'lint_javascript_src'
 	if [[ -z "${skip_javascript_src}" ]]; then
 		files=$(echo "${changed_files}" | grep '\.js$' | grep -v -e '/examples' -e '/test' -e '/benchmark' -e '^dist/' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make FILES="${files}" FIX=1 lint-javascript-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
+				task_status 'failed'
 				echo '' >&2
 				echo 'JavaScript lint errors for source files.' >&2
 				return 1
 			fi
+			task_status 'passed'
+		else
+			task_status 'na'
 		fi
+	else
+		task_status 'skipped'
 	fi
 	# Lint JavaScript command-line interfaces...
+	add_task 'lint_javascript_cli'
 	if [[ -z "${skip_javascript_cli}" ]]; then
 		files=$(echo "${changed_files}" | grep '/bin/cli$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make FILES="${files}" FIX=1 lint-javascript-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
+				task_status 'failed'
 				echo '' >&2
 				echo 'JavaScript lint errors for command-line interface files.' >&2
 				return 1
 			fi
+			task_status 'passed'
+		else
+			task_status 'na'
 		fi
+	else
+		task_status 'skipped'
 	fi
 	# Lint JavaScript examples files...
+	add_task 'lint_javascript_examples'
 	if [[ -z "${skip_javascript_examples}" ]]; then
 		files=$(echo "${changed_files}" | grep '/examples/.*\.js$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make JAVASCRIPT_LINTER=eslint ESLINT_CONF="${eslint_examples_conf}" FILES="${files}" FIX=1 lint-javascript-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
+				task_status 'failed'
 				echo '' >&2
 				echo 'JavaScript lint errors for example files.' >&2
 				return 1
 			fi
+			task_status 'passed'
+		else
+			task_status 'na'
 		fi
+	else
+		task_status 'skipped'
 	fi
 	# Lint JavaScript test files...
+	add_task 'lint_javascript_tests'
 	if [[ -z "${skip_javascript_tests}" ]]; then
 		files=$(echo "${changed_files}" | grep '/test/.*\.js$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make JAVASCRIPT_LINTER=eslint ESLINT_CONF="${eslint_tests_conf}" FILES="${files}" FIX=1 lint-javascript-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
+				task_status 'failed'
 				echo '' >&2
 				echo 'JavaScript lint errors for test files.' >&2
 				return 1
 			fi
+			task_status 'passed'
+		else
+			task_status 'na'
 		fi
+	else
+		task_status 'skipped'
 	fi
 	# Lint JavaScript benchmark files...
+	add_task 'lint_javascript_benchmarks'
 	if [[ -z "${skip_javascript_benchmarks}" ]]; then
 		files=$(echo "${changed_files}" | grep '/benchmark/.*\.js$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make JAVASCRIPT_LINTER=eslint ESLINT_CONF="${eslint_benchmarks_conf}" FILES="${files}" FIX=1 lint-javascript-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
+				task_status 'failed'
 				echo '' >&2
 				echo 'JavaScript lint errors for benchmark files.' >&2
 				return 1
 			fi
+			task_status 'passed'
+		else
+			task_status 'na'
 		fi
+	else
+		task_status 'skipped'
 	fi
 	# Lint Python files...
+	add_task 'lint_python'
 	if [[ -z "${skip_python}" ]]; then
 		files=$(echo "${changed_files}" | grep '\.py$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make check-python-linters > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
+				task_status 'missing_dependencies'
 				echo '' >&2
 				echo 'Unable to lint Python files. Ensure that linters are installed.' >&2
 			else
 				make FILES="${files}" lint-python-files > /dev/null >&2
 				if [[ "$?" -ne 0 ]]; then
+					task_status 'failed'
 					echo '' >&2
 					echo 'Python lint errors.' >&2
 					return 1
 				fi
+				task_status 'passed'
 			fi
+		else
+			task_status 'na'
 		fi
+	else
+		task_status 'skipped'
 	fi
 	# Lint R files...
+	add_task 'lint_r'
 	if [[ -z "${skip_r}" ]]; then
 		files=$(echo "${changed_files}" | grep '\.R$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make FILES="${files}" lint-r-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
+				task_status 'failed'
 				echo '' >&2
 				echo 'R lint errors.' >&2
 				return 1
 			fi
+			task_status 'passed'
+		else
+			task_status 'na'
 		fi
+	else
+		task_status 'skipped'
 	fi
 	# Lint C source files...
+	add_task 'lint_c_src'
 	if [[ -z "${skip_c_src}" ]]; then
 		files=$(echo "${changed_files}" | grep '\.c$' | grep -v -e '/examples' -e '/test' -e '/benchmark' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make check-c-linters > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
+				task_status 'missing_dependencies'
 				echo '' >&2
 				echo 'Unable to lint C files. Ensure that linters are installed.' >&2
 			else
 				make FILES="${files}" lint-c-files > /dev/null >&2
 				if [[ "$?" -ne 0 ]]; then
+					task_status 'failed'
 					echo '' >&2
 					echo 'C lint errors for source files.' >&2
 					return 1
 				fi
+				task_status 'passed'
 			fi
+		else
+			task_status 'na'
 		fi
+	else
+		task_status 'skipped'
 	fi
 	# Lint C examples files...
+	add_task 'lint_c_examples'
 	if [[ -z "${skip_c_examples}" ]]; then
 		files=$(echo "${changed_files}" | grep '/examples/.*\.c$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make check-c-linters > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
+				task_status 'missing_dependencies'
 				echo '' >&2
 				echo 'Unable to lint C files. Ensure that linters are installed.' >&2
 			else
 				make C_LINTER=cppcheck CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_examples_suppressions_list}" FILES="${files}" lint-c-files > /dev/null >&2
 				if [[ "$?" -ne 0 ]]; then
+					task_status 'failed'
 					echo '' >&2
 					echo 'C lint errors for examples files.' >&2
 					return 1
 				fi
+				task_status 'passed'
 			fi
+		else
+			task_status 'na'
 		fi
+	else
+		task_status 'skipped'
 	fi
 	# Lint C benchmark files...
+	add_task 'lint_c_benchmarks'
 	if [[ -z "${skip_c_benchmarks}" ]]; then
 		files=$(echo "${changed_files}" | grep '/benchmark/.*\.c$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make check-c-linters > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
+				task_status 'missing_dependencies'
 				echo '' >&2
 				echo 'Unable to lint C files. Ensure that linters are installed.' >&2
 			else
 				make C_LINTER=cppcheck CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_benchmarks_suppressions_list}" FILES="${files}" lint-c-files > /dev/null >&2
 				if [[ "$?" -ne 0 ]]; then
+					task_status 'failed'
 					echo '' >&2
 					echo 'C lint errors for benchmark files.' >&2
 					return 1
 				fi
+				task_status 'passed'
 			fi
+		else
+			task_status 'na'
 		fi
+	else
+		task_status 'skipped'
 	fi
 	# Lint C test fixtures files...
+	add_task 'lint_c_tests_fixtures'
 	if [[ -z "${skip_c_tests_fixtures}" ]]; then
 		files=$(echo "${changed_files}" | grep '/test/fixtures/.*\.c$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make check-c-linters > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
+				task_status 'missing_dependencies'
 				echo '' >&2
 				echo 'Unable to lint C files. Ensure that linters are installed.' >&2
 			else
 				make C_LINTER=cppcheck CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_tests_fixtures_suppressions_list}" FILES="${files}" lint-c-files > /dev/null >&2
 				if [[ "$?" -ne 0 ]]; then
+					task_status 'failed'
 					echo '' >&2
 					echo 'C lint errors for test fixtures files.' >&2
 					return 1
 				fi
+				task_status 'passed'
 			fi
+		else
+			task_status 'na'
 		fi
+	else
+		task_status 'skipped'
 	fi
 	# Lint shell script files...
+	add_task 'lint_shell'
 	if [[ -z "${skip_shell}" ]]; then
 		files=$(echo "${changed_files}" | while read -r file; do head -n1 "$file" | grep -q '^\#\!/usr/bin/env bash' && echo "$file"; done | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make check-shell-linters > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
+				task_status 'missing_dependencies'
 				echo '' >&2
 				echo 'Unable to lint shell script files. Ensure that linters are installed.' >&2
 			else
 				make FILES="${files}" lint-shell-files > /dev/null >&2
 				if [[ "$?" -ne 0 ]]; then
+					task_status 'failed'
 					echo '' >&2
 					echo 'Shell script lint errors.' >&2
 					return 1
 				fi
+				task_status 'passed'
 			fi
+		else
+			task_status 'na'
 		fi
+	else
+		task_status 'skipped'
 	fi
 	# Lint TypeScript declaration files...
+	add_task 'lint_typescript_declarations'
 	if [[ -z "${skip_typescript_declarations}" ]]; then
 		files=$(echo "${changed_files}" | grep '/docs/types/.*\.d.ts$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make TYPESCRIPT_DECLARATIONS_LINTER=eslint FILES="${files}" lint-typescript-declarations-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
+				task_status 'failed'
 				echo '' >&2
 				echo 'TypeScript declaration file lint errors.' >&2
 				return 1
 			fi
+			task_status 'passed'
+		else
+			task_status 'na'
 		fi
+	else
+		task_status 'skipped'
 	fi
 	# Lint TypeScript declaration test files...
+	add_task 'lint_typescript_tests'
 	if [[ -z "${skip_typescript_tests}" ]]; then
 		files=$(echo "${changed_files}" | grep '/docs/types/test.ts$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make TYPESCRIPT_DECLARATIONS_LINTER=eslint FILES="${files}" ESLINT_TS_CONF="${eslint_typescript_tests_conf}" lint-typescript-declarations-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
+				task_status 'failed'
 				echo '' >&2
 				echo 'TypeScript test file lint errors.' >&2
 				return 1
 			fi
+			task_status 'passed'
+		else
+			task_status 'na'
 		fi
+	else
+		task_status 'skipped'
 	fi
 	# Lint license headers...
+	add_task 'lint_license_headers'
 	if [[ -z "${skip_license_headers}" ]]; then
 		files=$(echo "${changed_files}" | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make FILES="${files}" lint-license-headers-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
+				task_status 'failed'
 				echo '' >&2
 				echo 'License header lint errors.' >&2
 				return 1
 			fi
+			task_status 'passed'
+		else
+			task_status 'na'
 		fi
+	else
+		task_status 'skipped'
 	fi
 
 	# TODO: if datapackage.json, validate via schema

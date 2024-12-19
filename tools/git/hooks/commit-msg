@@ -33,6 +33,12 @@ skip_lint="${SKIP_LINT_COMMIT}"
 # Get the path to a file containing the commit message:
 commit_message="$1"
 
+# Determine root directory:
+root=$(git rev-parse --show-toplevel)
+
+# Define the path to a report generated during the pre-commit hook:
+pre_commit_report="${root}/.git/hooks-cache/pre_commit_report.yml"
+
 
 # FUNCTIONS #
 
@@ -68,6 +74,13 @@ lint() {
 	return 0
 }
 
+# Appends a report generated during the pre-commit hook.
+append_pre_commit_report() {
+	echo '' >> "${commit_message}"
+	cat "${pre_commit_report}" >> "${commit_message}"
+	return 0
+}
+
 # Main execution sequence.
 main() {
 	init
@@ -75,6 +88,10 @@ main() {
 		on_error 1
 	fi
 	lint
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+	append_pre_commit_report
 	if [[ "$?" -ne 0 ]]; then
 		on_error 1
 	fi
