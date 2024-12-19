@@ -59,6 +59,21 @@ GIT_CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 # Determine root directory:
 root=$(git rev-parse --show-toplevel)
 
+# Define the path to a directory for caching hook results:
+cache_dir="${root}/.git/hooks-cache"
+
+# Define the path to a file for storing hook results:
+cache_file="${cache_dir}/pre_push_report.yml"
+
+# Resolve the last commit message (excluding meta data such as author name and date):
+commit_message=$(git log -1 --pretty=%B)
+
+# Define the path to a file for storing a backup of the last commit message:
+backup_commit_file="${cache_dir}/last_commit_message.backup"
+
+# Define the path to a file for storing a new (i.e., amended) commit message:
+new_commit_file="${cache_dir}/new_commit_message.txt"
+
 
 # FUNCTIONS #
 
@@ -72,7 +87,81 @@ on_error() {
 
 # Runs clean-up tasks.
 cleanup() {
+	finalize_cache
+	create_new_commit_file
+	amend_commit
 	echo '' >&2
+}
+
+# Creates a directory for caching hook results to allow accessing those results in subsequent hooks.
+create_cache_dir() {
+	mkdir "${cache_dir}"
+}
+
+# Removes any previous hook results.
+clean_cache_file() {
+	rm -f "${cache_file}"
+}
+
+# Appends results to a file containing hook results.
+#
+# $1 - result line
+write_to_cache() {
+	echo "$1" >> "${cache_file}"
+}
+
+# Initializes a new cache file for storing hook results.
+init_cache_file() {
+	touch "${cache_file}"
+	write_to_cache '---'
+	write_to_cache 'type: pre_push_report'
+	write_to_cache 'description: Results of running various checks prior to pushing changes.'
+	write_to_cache 'report:'
+}
+
+# Creates a backup of the last commit message.
+backup_last_commit_message() {
+	echo "${commit_message}" > "${backup_commit_file}"
+}
+
+# Runs initialization tasks.
+init() {
+	create_cache_dir
+	clean_cache_file
+	init_cache_file
+	backup_last_commit_message
+	return 0
+}
+
+# Adds a new task to hook results.
+#
+# $1 - task name
+add_task() {
+	write_to_cache "  - task: $1"
+}
+
+# Saves the task status in the hook results.
+#
+# $1 - task status
+task_status() {
+	write_to_cache "    status: $1"
+}
+
+# Finalizes hook results.
+finalize_cache() {
+	write_to_cache '---'
+}
+
+# Creates a file containing a new (amended) commit message.
+create_new_commit_file() {
+	echo "${commit_message}" > "${new_commit_file}"
+	echo '' >> "${new_commit_file}"
+	cat "${cache_file}" >> "${new_commit_file}"
+}
+
+# Amends the last commit to include the hook results.
+amend_commit() {
+	git commit --amend --no-edit --file="${new_commit_file}"
 }
 
 # Checks if commits exist to push, as `git push` will execute regardless of whether commits exist to push or not.
@@ -115,6 +204,10 @@ main() {
 	local changed_files
 	local files
 
+	init
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
 	has_commits
 	if [[ "$?" -ne 0 ]]; then
 		on_error 1
@@ -128,163 +221,249 @@ main() {
 	changed_files=$(git diff --name-only --cached --diff-filter ACMR "${remote}/${GIT_CURRENT_BRANCH}" | sed -e "s#^#${root}\\/#")
 
 	# Run JavaScript example files:
+	add_task 'run_javascript_examples'
 	if [[ -z "${skip_javascript_examples}" ]]; then
 		files=$(echo "${changed_files}" | grep '/examples/.*\.js$' | grep -v '/examples/fixtures/.*\.js$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			echo 'Running JavaScript example files...' >&2
 			make FILES="${files}" examples-javascript-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
+				task_status 'failed'
 				echo '' >&2
 				echo 'Encountered an error when running JavaScript examples.' >&2
 				on_error 1
 			fi
+			task_status 'passed'
+		else
+			task_status 'na'
 		fi
+	else
+		task_status 'skipped'
 	fi
 	# Run C example files...
+	add_task 'run_c_examples'
 	if [[ -z "${skip_c_examples}" ]]; then
 		files=$(echo "${changed_files}" | grep '/examples/.*\.c$' | grep -v '/examples/fixtures/.*\.c$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			echo 'Running C example files...' >&2
 			make FILES="${files}" examples-c-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
+				task_status 'failed'
 				echo '' >&2
 				echo 'Encountered an error when running C examples.' >&2
 				on_error 1
 			fi
+			task_status 'passed'
+		else
+			task_status 'na'
 		fi
+	else
+		task_status 'skipped'
 	fi
 	# Run C++ example files...
+	add_task 'run_cpp_examples'
 	if [[ -z "${skip_cpp_examples}" ]]; then
 		files=$(echo "${changed_files}" | grep '/examples/.*\.cpp$' | grep -v '/examples/fixtures/.*\.cpp$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			echo 'Running C++ example files...' >&2
 			make FILES="${files}" examples-cpp-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
+				task_status 'failed'
 				echo '' >&2
 				echo 'Encountered an error when running C++ examples.' >&2
 				on_error 1
 			fi
+			task_status 'passed'
+		else
+			task_status 'na'
 		fi
+	else
+		task_status 'skipped'
 	fi
 	# Run JavaScript examples in README files:
+	add_task 'run_javascript_readme_examples'
 	if [[ -z "${skip_javascript_readme_examples}" ]]; then
 		files=$(echo "${changed_files}" | grep 'README.md$' | grep -v '^tools/' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			echo 'Running README JavaScript examples...' >&2
 			make FILES="${files}" markdown-examples-javascript-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
+				task_status 'failed'
 				echo '' >&2
 				echo 'Encountered an error when running README JavaScript examples.' >&2
 				on_error 1
 			fi
+			task_status 'passed'
+		else
+			task_status 'na'
 		fi
+	else
+		task_status 'skipped'
 	fi
 
 	# TODO: run CLI examples found in Markdown files
 
+	# TODO: compile and run C examples found in Markdown files
+
 	# Run C benchmark files...
+	add_task 'run_c_benchmarks'
 	if [[ -z "${skip_c_benchmarks}" ]]; then
 		files=$(echo "${changed_files}" | grep '/benchmark/.*\.c$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			echo 'Running C benchmark files...' >&2
 			make FILES="${files}" benchmark-c-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
+				task_status 'failed'
 				echo '' >&2
 				echo 'Encountered an error when running C benchmarks.' >&2
 				on_error 1
 			fi
+			task_status 'passed'
+		else
+			task_status 'na'
 		fi
+	else
+		task_status 'skipped'
 	fi
 	# Run C++ benchmark files...
+	add_task 'run_cpp_benchmarks'
 	if [[ -z "${skip_cpp_benchmarks}" ]]; then
 		files=$(echo "${changed_files}" | grep '/benchmark/.*\.cpp$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			echo 'Running C++ benchmark files...' >&2
 			make FILES="${files}" benchmark-cpp-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
+				task_status 'failed'
 				echo '' >&2
 				echo 'Encountered an error when running C++ benchmarks.' >&2
 				on_error 1
 			fi
+			task_status 'passed'
+		else
+			task_status 'na'
 		fi
+	else
+		task_status 'skipped'
 	fi
 	# Run Fortran benchmark files...
+	add_task 'run_fortran_benchmarks'
 	if [[ -z "${skip_fortran_benchmarks}" ]]; then
 		files=$(echo "${changed_files}" | grep '/benchmark/.*\.f$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			echo 'Running Fortran benchmark files...' >&2
 			make FILES="${files}" benchmark-fortran-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
+				task_status 'failed'
 				echo '' >&2
 				echo 'Encountered an error when running Fortran benchmarks.' >&2
 				on_error 1
 			fi
+			task_status 'passed'
+		else
+			task_status 'na'
 		fi
+	else
+		task_status 'skipped'
 	fi
 	# Run JavaScript benchmark files...
+	add_task 'run_javascript_benchmarks'
 	if [[ -z "${skip_javascript_benchmarks}" ]]; then
 		files=$(echo "${changed_files}" | grep '/benchmark/.*\.js$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			echo 'Running JavaScript benchmark files...' >&2
 			make FILES="${files}" benchmark-javascript-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
+				task_status 'failed'
 				echo '' >&2
 				echo 'Encountered an error when running JavaScript benchmarks.' >&2
 				on_error 1
 			fi
+			task_status 'passed'
+		else
+			task_status 'na'
 		fi
+	else
+		task_status 'skipped'
 	fi
 	# Run Julia benchmark files...
+	add_task 'run_julia_benchmarks'
 	if [[ -z "${skip_julia_benchmarks}" ]]; then
 		files=$(echo "${changed_files}" | grep '/benchmark/.*\.jl$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			echo 'Running Julia benchmark files...' >&2
 			make FILES="${files}" benchmark-julia-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
+				task_status 'failed'
 				echo '' >&2
 				echo 'Encountered an error when running Julia benchmarks.' >&2
 				on_error 1
 			fi
+			task_status 'passed'
+		else
+			task_status 'na'
 		fi
+	else
+		task_status 'skipped'
 	fi
 	# Run Python benchmark files...
+	add_task 'run_python_benchmarks'
 	if [[ -z "${skip_python_benchmarks}" ]]; then
 		files=$(echo "${changed_files}" | grep '/benchmark/.*\.py$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			echo 'Running Python benchmark files...' >&2
 			make FILES="${files}" benchmark-python-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
+				task_status 'failed'
 				echo '' >&2
 				echo 'Encountered an error when running Python benchmarks.' >&2
 				on_error 1
 			fi
+			task_status 'passed'
+		else
+			task_status 'na'
 		fi
+	else
+		task_status 'skipped'
 	fi
 	# Run R benchmark files...
+	add_task 'run_r_benchmarks'
 	if [[ -z "${skip_r_benchmarks}" ]]; then
 		files=$(echo "${changed_files}" | grep '/benchmark/.*\.R$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			echo 'Running R benchmark files...' >&2
 			make FILES="${files}" benchmark-r-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
+				task_status 'failed'
 				echo '' >&2
 				echo 'Encountered an error when running R benchmarks.' >&2
 				on_error 1
 			fi
+			task_status 'passed'
+		else
+			task_status 'na'
 		fi
+	else
+		task_status 'skipped'
 	fi
 	# Run JavaScript test files...
+	add_task 'run_javascript_tests'
 	if [[ -z "${skip_javascript_tests}" ]]; then
 		files=$(echo "${changed_files}" | grep '/test/.*\.js$' | grep -v '/test/fixtures/.*\.js$' | grep -v '/test/.*/fixtures/.*\.js$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			echo 'Running JavaScript test files...' >&2
 			make FILES="${files}" test-javascript-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
+				task_status 'failed'
 				echo '' >&2
 				echo 'Encountered an error when running JavaScript tests.' >&2
 				on_error 1
 			fi
+			task_status 'passed'
+		else
+			task_status 'na'
 		fi
+	else
+		task_status 'skipped'
 	fi
 
 	cleanup
