@@ -156,7 +156,7 @@ double stdlib_base_asind( const double x );
 
 int main( void ) {
     const double x[] = { 1.0, 0.45, -0.89, 0.33, -0.78, -0.22, 0.66, 0.11, -0.55, 0.0 };
-    
+
     double v;
     int i;
     for ( i = 0; i < 10; i++ ) {
