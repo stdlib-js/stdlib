@@ -171,7 +171,7 @@ int main( void ) {
     const double x[] = { 0.0, 0.005, 3.14, 10.0, 51.125, 99.99, 100.0 };
     double v;
     int i;
-    
+
     for ( i = 0; i < 7; i++ ) {
         v = stdlib_base_besselj1( x[ i ] );
         printf( "besselj1(%lf) = %lf\n", x[ i ], v );

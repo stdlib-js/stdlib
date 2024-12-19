@@ -59,8 +59,8 @@
     Examples
     --------
     > var idx = new {{alias}}( [ 1, 2, 3, 4 ] );
-    > // ...
     > {{alias}}.free( idx.id )
+    <boolean>
 
 
 {{alias}}.get( id )
@@ -98,7 +98,7 @@
     Returns
     -------
     out: Array|TypedArray|Object
-        Array data type.
+        Array data.
 
     Examples
     --------
@@ -181,6 +181,7 @@
     --------
     > var idx = new {{alias}}( [ 1, 2, 3, 4 ] );
     > idx.toString()
+    <string>
 
 
 {{alias}}.prototype.toJSON()

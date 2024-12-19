@@ -179,7 +179,7 @@ float stdlib_base_avercosf( const float x );
 
 int main( void ) {
     const float x[] = { -2.5f, -2.0f, -1.5f, -1.0f, -0.5f, 0.5f, 1.0f, 1.5f, 2.0f, 2.5f };
-    
+
     float v;
     int i;
     for ( i = 0; i < 10; i++ ) {

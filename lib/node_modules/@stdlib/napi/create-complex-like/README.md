@@ -113,7 +113,7 @@ Returns a Node-API value representing a complex number-like object.
 #include <node_api.h>
 
 static napi_value addon( napi_env env, napi_callback_info info ) {
-    
+
     // ...
 
     napi_value value;

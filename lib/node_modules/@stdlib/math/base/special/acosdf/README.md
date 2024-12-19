@@ -156,7 +156,7 @@ float stdlib_base_acosdf( const float x );
 
 int main( void ) {
     const float x[] = { 1.0f, 1.45f, 1.89f, 2.33f, 2.78f, 3.22f, 3.66f, 4.11f, 4.55f, 5.0f };
-    
+
     float v;
     int i;
     for ( i = 0; i < 10; i++ ) {

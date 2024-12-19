@@ -28,7 +28,7 @@
 /**
 * Add-on namespace.
 */
-static napi_value addon( napi_env env, napi_callback_info info ){
+static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV( env, info, argv, argc, 3 );
 	STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
 	STDLIB_NAPI_ARGV_INT64( env, stride, argv, 2 );
