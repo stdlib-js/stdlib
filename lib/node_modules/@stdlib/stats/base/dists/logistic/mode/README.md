@@ -131,6 +131,85 @@ for ( i = 0; i < 10; i++ ) {
 
 <!-- /.examples -->
 
+<section class="c">
+
+## C APIs
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/logistic/mode.h"
+```
+
+#### stdlib_base_dists_logistic_mode( mu, s )
+
+Returns the mode for a logistic distribution with location `mu` and scale `s`.
+
+```c
+double out = stdlib_base_dists_logistic_mode( 0.0, 1.0 );
+// returns 0.0
+```
+
+The function accepts the following arguments:
+
+-   **mu**: `[in] double` location parameter.
+-   **s**: `[in] double` scale parameter.
+
+```c
+double stdlib_base_dists_logistic_mode( const double mu, const double s );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/logistic/mode.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v * (max - min) );
+}
+
+int main( void ) {
+    double mu;
+    double s;
+    double y;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        mu = random_uniform( 0.0, 10.0 ) - 5.0;
+        s = random_uniform( 0.0, 20.0 );
+        y = stdlib_base_dists_logistic_mode( mu, s );
+        printf( "µ: %lf, s: %lf, Mode(X;µ,s): %lf\n", mu, s, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="references">
