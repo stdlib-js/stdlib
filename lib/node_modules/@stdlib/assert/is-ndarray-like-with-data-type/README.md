@@ -78,6 +78,12 @@ bool = isndarrayLikeWithDataType( null, 'generic' );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/assert/is-ndarray-like`][@stdlib/assert/is-ndarray-like]</span><span class="delimiter">: </span><span class="description">test if a value is ndarray-like.</span>
+
 </section>
 
 <!-- /.related -->

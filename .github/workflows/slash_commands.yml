@@ -51,10 +51,10 @@ jobs:
           github-token: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
           script: |
             github.rest.issues.addLabels({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: context.issue.number,
-              labels: ['bot: In Progress']
+              'owner': context.repo.owner,
+              'repo': context.repo.repo,
+              'issue_number': context.issue.number,
+              'labels': ['bot: In Progress']
             })
 
       # Add initial reaction to comment with slash command:
@@ -254,11 +254,11 @@ jobs:
           script: |
             try {
               await github.rest.issues.removeLabel({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: context.issue.number,
-                name: 'bot: In Progress'
+                'owner': context.repo.owner,
+                'repo': context.repo.repo,
+                'issue_number': context.issue.number,
+                'name': 'bot: In Progress'
               })
-            } catch (error) {
-              console.log( 'Error removing label:', error );
+            } catch ( error ) {
+              console.log( 'Error removing label: %s', error.message );
             }

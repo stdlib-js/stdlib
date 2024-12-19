@@ -138,7 +138,7 @@ float stdlib_base_atanf( const float x );
 
 int main( void ) {
     const float x[] = { -1000.0f, -777.78f, -555.56f, -333.33f, -111.11f, 111.11f, 333.33f, 555.56f, 777.78f, 1000.0f };
-    
+
     float v;
     int i;
     for ( i = 0; i < 10; i++ ) {

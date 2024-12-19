@@ -148,7 +148,7 @@ double stdlib_base_asech( const double x );
 
 int main( void ) {
     const double x[] = { 0.0, 0.5, 1.0, 1.89, 2.33, 3.22, 3.67, 4.11, 4.56, 5.0 };
-    
+
     double v;
     int i;
     for ( i = 0; i < 10; i++ ) {

@@ -177,7 +177,7 @@ double stdlib_base_fast_asinh( const double x );
 
 int main( void ) {
     const double x[] = { 1.0, 1.45, 1.89, 2.33, 2.78, 3.22, 3.66, 4.11, 4.55, 5.0 };
-    
+
     double v;
     int i;
     for ( i = 0; i < 10; i++ ) {
