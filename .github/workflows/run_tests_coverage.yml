@@ -293,8 +293,8 @@ jobs:
             git fetch origin $BRANCH_NAME || true
             git checkout $BRANCH_NAME || git checkout -b $BRANCH_NAME
 
-            # Remove all files from the branch:
-            git rm -rf .
+            # Remove all directories except .github and .git from branch:
+            find . -mindepth 1 -maxdepth 1 -type d -not -name '.github' -not -name '.git' -exec git rm -rf {} +
           else
             BRANCH_NAME="main"
           fi

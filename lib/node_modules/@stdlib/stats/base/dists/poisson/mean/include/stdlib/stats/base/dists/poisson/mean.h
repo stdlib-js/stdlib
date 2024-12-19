@@ -25,6 +25,7 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
 /**
 * Returns the mean of a Poisson distribution with mean parameter `lambda`.
 */
