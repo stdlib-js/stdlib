@@ -33,8 +33,8 @@ jobs:
     # Define job name:
     name: 'Add "Needs Changes" Label when Reviewer Requests Changes'
 
-    # Only run this job if the reviewer requested changes:
-    if: ${{ github.event.review.state == 'changes_requested' }}
+    # Only run this job if the reviewer requested changes (but do not run on forks due to missing permissions):
+    if: ${{ github.repository == 'stdlib-js/stdlib' && github.event.review.state == 'changes_requested' }}
 
     # Define job permissions:
     permissions:
@@ -52,6 +52,7 @@ jobs:
         # Pin action to a known commit SHA for reproducibility:
         uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
         with:
+          github-token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
           script: |
             await github.rest.issues.addLabels({
               'owner': context.repo.owner,
