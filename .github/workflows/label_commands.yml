@@ -213,7 +213,12 @@ jobs:
     needs: [ manage_labels, check_files, update_copyright_years, fix_lint_errors, merge_develop, rebase_develop ]
 
     # Define the conditions under which the job should run:
-    if: always()
+    if: |
+      github.event.label.name == 'bot: Merge' ||
+      github.event.label.name == 'bot: Rebase' ||
+      github.event.label.name == 'bot: Check Files' ||
+      github.event.label.name == 'bot: Lint Autofix' ||
+      github.event.label.name == 'bot: Update Copyright Years'
 
     # Define the job's steps:
     steps:
