@@ -161,7 +161,7 @@ create_new_commit_file() {
 
 # Amends the last commit to include the hook results.
 amend_commit() {
-	git commit --amend --no-edit --file="${new_commit_file}"
+	git commit --amend --no-edit --no-verify --file="${new_commit_file}"
 }
 
 # Checks if commits exist to push, as `git push` will execute regardless of whether commits exist to push or not.
