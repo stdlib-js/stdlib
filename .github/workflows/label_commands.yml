@@ -21,7 +21,7 @@ name: label_commands
 
 # Workflow triggers:
 on:
-  pull_request:
+  pull_request_target:
     types:
       - labeled
 
