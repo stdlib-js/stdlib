@@ -116,6 +116,94 @@ for ( i = 0; i < 10; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/exponential/mean.h"
+```
+
+#### stdlib_base_dists_exponential_mean( lambda )
+
+Returns the mean of an exponential distribution.
+
+```c
+double out = stdlib_base_dists_exponential_mean( 9.0 );
+// returns ~0.111
+```
+
+The function accepts the following arguments:
+
+-   **lambda**: `[in] double` rate parameter.
+
+```c
+double stdlib_base_dists_exponential_mean( const double lambda );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/exponential/mean.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double lambda;
+    double y;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        lambda = random_uniform( 0.0, 20.0 );
+        y = stdlib_base_dists_exponential_mean( lambda );
+        printf( "λ: %lf, E[X;λ]: %lf\n", lambda, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="references">
