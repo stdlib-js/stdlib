@@ -23,7 +23,7 @@
 * Tests if a double-precision floating-point number is a probability.
 *
 * @param x    input value
-* @return	  output value
+* @return     output value
 *
 * @example
 * #include <stdbool.h>

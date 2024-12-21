@@ -25,7 +25,7 @@
 * Computes the natural logarithm of \\( 1 + \exp(x) \\).
 *
 * @param x    input value
-* @return	  output value
+* @return     output value
 *
 * @example
 * double out = stdlib_base_log1pexp( 0.0 );

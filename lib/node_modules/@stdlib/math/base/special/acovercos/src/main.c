@@ -23,7 +23,7 @@
 * Computes the inverse coversed cosine of a double-precision floating-point number.
 *
 * @param x    input value
-* @return	  output value
+* @return     output value
 *
 * @example
 * double out = stdlib_base_acovercos( 0.0 );
