@@ -96,6 +96,7 @@
     "@stdlib/time": "^0.3.3",
     "@stdlib/types": "^0.4.3",
     "@stdlib/utils": "^0.3.3",
+    "@stdlib/wasm": "^0.1.1",
     "acorn": "^8.1.0",
     "acorn-loose": "^8.0.2",
     "acorn-walk": "^8.0.2",
