@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/stdlib",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Standard library.",
   "license": "Apache-2.0 AND BSL-1.0",
   "author": {
@@ -64,7 +64,7 @@
     "@stdlib/complex": "^0.3.1",
     "@stdlib/console": "^0.3.1",
     "@stdlib/constants": "^0.3.1",
-    "@stdlib/datasets": "^0.3.0",
+    "@stdlib/datasets": "^0.3.1",
     "@stdlib/error": "^0.3.1",
     "@stdlib/fs": "^0.3.1",
     "@stdlib/function": "^0.3.1",
