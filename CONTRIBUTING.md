@@ -302,7 +302,7 @@ $ git log
 $ git commit --fixup <COMMIT_SHA> ...
 ```
 
-Alternatively, you can also create a new commit with a commit message starting with `fixup! <commit header>` followed the commit header of the commit being fixed up. For example,
+Alternatively, you can also create a new commit with a commit message starting with `fixup! <commit header>` followed by the commit header of the commit being fixed up. For example,
 
 <!-- run-disable -->
 
@@ -312,11 +312,17 @@ $ git commit -m "fixup! feat: add support for computing the absolute value"
 
 If the history needs modification, a contributor will modify the history during the merge process. The rationale for **not** rewriting public history is that doing so invalidates the commit history for anyone else who has pulled your changes, thus imposing additional burdens on collaborators to ensure that their local versions match the modified history.
 
+In the event that you need to pull in changes from the `upstream` repository after having pushed changes to your remote repository (e.g., to incorporate fixes unrelated to your work in order to address CI failures, etc), perform a standard [merge][git-merge].
+
+```bash
+$ git pull upstream develop
+```
+
 #### Step 10: Land
 
 After any changes have been resolved and continuous integration tests have passed, a contributor will approve a [pull request][github-pull-request] for inclusion in the project. Once merged, the [pull request][github-pull-request] will be updated with the merge commit, and the [pull request][github-pull-request] will be closed.
 
-Note that, during the merge process, multiple commits will often be [squashed][git-rewriting-history].
+Note that, in most cases during the merge process, multiple commits will be [squashed][git-rewriting-history] into a single commit.
 
 #### Step 11: Celebrate
 
@@ -327,7 +333,7 @@ Note that, during the merge process, multiple commits will often be [squashed][g
 ### GitHub
 
 -   When linking to specific lines of code in an issue or a pull request, hit the `y` key while viewing a file on GitHub. Doing so reloads the page with a URL that includes the specific version of the file you are viewing. This ensures that, when you refer to specific lines, these same lines can be easily viewed in the future, even if the content of the file changes.
--   GitHub does not send notifications when you push a commit and update a [pull request][github-pull-request], so be sure to comment on the pull request thread to inform reviewers that you have made changes.
+-   GitHub does not send notifications to project maintainers when you push a commit and update a [pull request][github-pull-request], so be sure to comment on the pull request thread to inform reviewers that you have made changes and request another review using the GitHub UI.
 
 ### Writing Tests
 
