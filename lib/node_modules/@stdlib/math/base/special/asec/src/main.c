@@ -23,7 +23,7 @@
 * Computes the inverse (arc) secant of a double-precision floating-point number.
 *
 * @param x    input value
-* @return	  output value
+* @return     output value
 *
 * @example
 * double out = stdlib_base_asec( 1.0 );

@@ -27,7 +27,7 @@
 *
 * @param x    input value
 * @param y    input value
-* @return	  output value
+* @return     output value
 *
 * @example
 * double out = stdlib_base_logaddexp( 90.0, 90.0 );

@@ -23,7 +23,7 @@
 * Tests if a finite double-precision floating-point number is an integer.
 *
 * @param x    input value
-* @return	  output value
+* @return     output value
 *
 * @example
 * #include <stdbool.h>

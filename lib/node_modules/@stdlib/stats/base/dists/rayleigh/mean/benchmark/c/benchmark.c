@@ -38,8 +38,8 @@ static void print_version( void ) {
 /**
 * Prints the TAP summary.
 *
-* @param total	 	total number of tests
-* @param passing	total number of passing tests
+* @param total      total number of tests
+* @param passing    total number of passing tests
 */
 static void print_summary( int total, int passing ) {
 	printf( "#\n" );
