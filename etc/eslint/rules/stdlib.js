@@ -201,7 +201,7 @@ rules[ 'stdlib/doctest-quote-props' ] = 'error';
 rules[ 'stdlib/empty-line-before-comment' ] = 'error';
 
 /**
-* No spaces allowed between an opening parenthesis or bracket and a nested object or array expression.
+* Disallow spaces between an opening parenthesis or bracket and a nested object or array expression at the end of a line.
 *
 * @name eol-open-bracket-spacing
 * @memberof rules
