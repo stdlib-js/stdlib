@@ -59,7 +59,7 @@ var variance = require( '@stdlib/stats/base/dists/f/variance' );
 
 #### variance( d1, d2 )
 
-Returns the [variance][variance] of a [F][f-distribution] distribution with parameters `d1` (numerator degrees of freedom) and `d2` (denominator degrees of freedom).
+Returns the [variance][variance] of an [F][f-distribution] distribution with parameters `d1` (numerator degrees of freedom) and `d2` (denominator degrees of freedom).
 
 ```javascript
 var v = variance( 4.0, 5.0 );
@@ -172,7 +172,7 @@ for ( i = 0; i < 10; i++ ) {
 
 #### stdlib_base_dists_f_variance( d1, d2 )
 
-Evaluates the [variance][variance] of a [F][f-distribution] distribution with parameters `d1` (numerator degrees of freedom) and `d2` (denominator degrees of freedom).
+Evaluates the [variance][variance] of an [F][f-distribution] distribution with parameters `d1` (numerator degrees of freedom) and `d2` (denominator degrees of freedom).
 
 ```c
 double out = stdlib_base_dists_f_variance( 3.0, 5.0 );

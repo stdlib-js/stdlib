@@ -59,7 +59,7 @@ var entropy = require( '@stdlib/stats/base/dists/f/entropy' );
 
 #### entropy( d1, d2 )
 
-Returns the [differential entropy][entropy] of a [F][f-distribution] distribution with numerator degrees of freedom `d1` and denominator degrees of freedom `d2` (in [nats][nats]).
+Returns the [differential entropy][entropy] of an [F][f-distribution] distribution with numerator degrees of freedom `d1` and denominator degrees of freedom `d2` (in [nats][nats]).
 
 ```javascript
 var v = entropy( 4.0, 7.0 );
@@ -172,7 +172,7 @@ for ( i = 0; i < 10; i++ ) {
 
 #### stdlib_base_dists_f_entropy( d1, d2 )
 
-Evaluates the [differential entropy][entropy] of a [F][f-distribution] distribution with numerator degrees of freedom `d1` and denominator degrees of freedom `d2` (in [nats][nats]).
+Evaluates the [differential entropy][entropy] of an [F][f-distribution] distribution with numerator degrees of freedom `d1` and denominator degrees of freedom `d2` (in [nats][nats]).
 
 ```c
 double out = stdlib_base_dists_f_entropy( 3.0, 7.0 );
