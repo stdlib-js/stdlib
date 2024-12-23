@@ -34,17 +34,17 @@
 * // returns ~-1.386
 */
 double stdlib_base_logit( const double p ) {
-    if ( stdlib_base_is_nan( p ) ) {
-        return 0.0 / 0.0; // NaN
-    }
-    if ( !stdlib_base_is_probability( p ) ) {
-        return 0.0 / 0.0; // NaN
-    }
-    if ( p == 0.0 ) {
-        return STDLIB_CONSTANT_FLOAT64_NINF;
-    }
-    if ( p == 1.0 ) {
-        return STDLIB_CONSTANT_FLOAT64_PINF;
-    }
-    return stdlib_base_ln( p / ( 1.0 - p ) );
+	if ( stdlib_base_is_nan( p ) ) {
+		return 0.0 / 0.0; // NaN
+	}
+	if ( !stdlib_base_is_probability( p ) ) {
+		return 0.0 / 0.0; // NaN
+	}
+	if ( p == 0.0 ) {
+		return STDLIB_CONSTANT_FLOAT64_NINF;
+	}
+	if ( p == 1.0 ) {
+		return STDLIB_CONSTANT_FLOAT64_PINF;
+	}
+	return stdlib_base_ln( p / ( 1.0 - p ) );
 }

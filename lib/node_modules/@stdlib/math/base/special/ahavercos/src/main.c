@@ -31,5 +31,5 @@
 * // returns ~3.1416
 */
 double stdlib_base_ahavercos( const double x ) {
-    return 2.0 * stdlib_base_acos( stdlib_base_sqrt( x ) );
+	return 2.0 * stdlib_base_acos( stdlib_base_sqrt( x ) );
 }
