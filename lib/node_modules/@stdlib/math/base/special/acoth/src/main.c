@@ -23,7 +23,7 @@
 * Computes the inverse hyperbolic cotangent of a double-precision floating-point number.
 *
 * @param x    input value
-* @return	  output value
+* @return     output value
 *
 * @example
 * out = stdlib_base_acoth( 2.0 );

@@ -22,7 +22,6 @@
 #include "stdlib/constants/float64/eulergamma.h"
 #include "stdlib/constants/float64/sqrt_two.h"
 
-
 /**
 * Returns the differential entropy of a Rayleigh distribution.
 *

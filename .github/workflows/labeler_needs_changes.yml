@@ -33,8 +33,8 @@ jobs:
     # Define job name:
     name: 'Add "Needs Changes" Label when Reviewer Requests Changes'
 
-    # Only run this job if the reviewer requested changes:
-    if: ${{ github.event.review.state == 'changes_requested' }}
+    # Only run this job if the reviewer requested changes (but do not run on forks due to missing permissions):
+    if: ${{ github.repository == 'stdlib-js/stdlib' && github.event.review.state == 'changes_requested' }}
 
     # Define job permissions:
     permissions:
