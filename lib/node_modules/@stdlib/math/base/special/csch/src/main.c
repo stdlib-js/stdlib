@@ -34,5 +34,5 @@
 * // returns ~-0.2757
 */
 double stdlib_base_csch( const double x ) {
-    return 1.0 / stdlib_base_sinh( x );
+	return 1.0 / stdlib_base_sinh( x );
 }
