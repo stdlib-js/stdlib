@@ -32,12 +32,12 @@
 * // returns 1.0
 */
 double stdlib_base_dists_kumaraswamy_median( const double a, const double b ) {
-    if (
-        stdlib_base_is_nan( a ) ||
-        stdlib_base_is_nan( b ) ||
-        a <= 0.0 || b <= 0.0
-    ) {
-        return 0.0/0.0; // NaN
-    }
-    return 1.0 - stdlib_base_pow( 0.5, 1.0 / b );
+	if (
+		stdlib_base_is_nan( a ) ||
+		stdlib_base_is_nan( b ) ||
+		a <= 0.0 || b <= 0.0
+	) {
+		return 0.0/0.0; // NaN
+	}
+	return 1.0 - stdlib_base_pow( 0.5, 1.0 / b );
 }
