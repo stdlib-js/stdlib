@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Returns the entropy of an uniform distribution.
+* Returns the entropy of a uniform distribution.
 */
 double stdlib_base_dists_uniform_entropy( const double a, const double b );
 
