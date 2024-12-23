@@ -30,5 +30,5 @@
 * // returns 0.0
 */
 double stdlib_base_asec( const double x ) {
-    return stdlib_base_acos( 1.0 / x );
+	return stdlib_base_acos( 1.0 / x );
 }
