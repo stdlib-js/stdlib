@@ -172,7 +172,7 @@ for ( i = 0; i < 10; i++ ) {
 
 #### stdlib_base_dists_weibull_mean( k, lambda )
 
-Evaluates the mean for an weibull distribution.
+Returns the [expected value][expected-value] of a [Weibull][weibull-distribution] distribution with parameters `k` (shape parameter) and `lambda` (scale parameter).
 
 ```c
 double out = stdlib_base_dists_weibull_mean( 4.0, 12.0 );
@@ -182,10 +182,10 @@ double out = stdlib_base_dists_weibull_mean( 4.0, 12.0 );
 The function accepts the following arguments:
 
 -   **k**: `[in] double` shape parameter.
--   **λ**: `[in] double` scale parameter.
+-   **lambda**: `[in] double` scale parameter.
 
 ```c
-double stdlib_base_dists_weibull_mean( const double k, const double λ );
+double stdlib_base_dists_weibull_mean( const double k, const double lambda );
 ```
 
 </section>
