@@ -169,7 +169,7 @@ for ( i = 0; i < 10; i++ ) {
 
 #### stdlib_base_dists_triangular_median( a, b, c )
 
-Evaluates the [median][median] for a [triangular][triangular-distribution] distribution with parameters `a` (lower limit), `b` (upper limit) and `c` (mode).
+Returns the [median][median] of a [triangular][triangular-distribution] distribution with parameters `a` (minimum support), `b` (maximum support), and `c` (mode).
 
 ```c
 double out = stdlib_base_dists_triangular_median( 0.0, 1.0, 0.8 );
@@ -178,8 +178,8 @@ double out = stdlib_base_dists_triangular_median( 0.0, 1.0, 0.8 );
 
 The function accepts the following arguments:
 
--   **a**: `[in] double` lower limit.
--   **b**: `[in] double` upper limit.
+-   **a**: `[in] double` minimum support.
+-   **b**: `[in] double` maximum support.
 -   **c**: `[in] double` mode.
 
 ```c
