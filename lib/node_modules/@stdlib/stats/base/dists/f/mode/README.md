@@ -59,7 +59,7 @@ var mode = require( '@stdlib/stats/base/dists/f/mode' );
 
 #### mode( d1, d2 )
 
-Returns the [mode][mode] of a [F][f-distribution] distribution with parameters `d1` (numerator degrees of freedom) and `d2` (denominator degrees of freedom).
+Returns the [mode][mode] of an [F][f-distribution] distribution with parameters `d1` (numerator degrees of freedom) and `d2` (denominator degrees of freedom).
 
 ```javascript
 var v = mode( 4.0, 5.0 );
@@ -172,7 +172,7 @@ for ( i = 0; i < 10; i++ ) {
 
 #### stdlib_base_dists_f_mode( d1, d2 )
 
-Evaluates the [mode][mode] of a [F][f-distribution] distribution with parameters `d1` (numerator degrees of freedom) and `d2` (denominator degrees of freedom).
+Evaluates the [mode][mode] of an [F][f-distribution] distribution with parameters `d1` (numerator degrees of freedom) and `d2` (denominator degrees of freedom).
 
 ```c
 double out = stdlib_base_dists_f_mode( 3.0, 5.0 );
