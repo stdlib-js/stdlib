@@ -33,6 +33,6 @@ int main( void ) {
 	for ( i = 0; i < 25; i++ ) {
 		sigma = random_uniform( 0.0, 20.0 );
 		y = stdlib_base_dists_rayleigh_mode( sigma );
-		printf( "σ: %lf, Mode(X;σ): %lf\n", sigma, y );
+		printf( "σ: %lf, mode(X;σ): %lf\n", sigma, y );
 	}
 }

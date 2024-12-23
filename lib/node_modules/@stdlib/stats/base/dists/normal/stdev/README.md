@@ -97,7 +97,7 @@ for ( i = 0; i < 10; i++ ) {
     mu = ( randu()*10.0 ) - 5.0;
     sigma = randu() * 20.0;
     y = stdev( mu, sigma );
-    console.log( 'µ: %d, σ: %d, Var(X;µ,σ): %d', mu.toFixed( 4 ), sigma.toFixed( 4 ), y.toFixed( 4 ) );
+    console.log( 'µ: %d, σ: %d, SD(X;µ,σ): %d', mu.toFixed( 4 ), sigma.toFixed( 4 ), y.toFixed( 4 ) );
 }
 ```
 

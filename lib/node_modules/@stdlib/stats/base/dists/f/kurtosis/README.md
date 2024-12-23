@@ -139,7 +139,7 @@ for ( i = 0; i < 10; i++ ) {
     d1 = ( randu()*10.0 ) + EPS;
     d2 = ( randu()*20.0 ) + EPS;
     v = kurtosis( d1, d2 );
-    console.log( 'd1: %d, d2: %d, skew(X;d1,d2): %d', d1.toFixed( 4 ), d2.toFixed( 4 ), v.toFixed( 4 ) );
+    console.log( 'd1: %d, d2: %d, Kurt(X;d1,d2): %d', d1.toFixed( 4 ), d2.toFixed( 4 ), v.toFixed( 4 ) );
 }
 ```
 
