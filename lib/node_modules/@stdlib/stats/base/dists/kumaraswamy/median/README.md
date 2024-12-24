@@ -171,7 +171,7 @@ for ( i = 0; i < 10; i++ ) {
 
 #### stdlib_base_dists_kumaraswamy_median( a, b )
 
-Evaluates the [median][median] of a [Kumaraswamy][kumaraswamy-distribution] distribution with shape parameters a and b.
+Returns the [median][median] of a [Kumaraswamy's double bounded][kumaraswamy-distribution] distribution with first shape parameter `a` and second shape parameter `b`.
 
 ```c
 double out = stdlib_base_dists_kumaraswamy_median( 2.0, 3.0 );
@@ -180,8 +180,8 @@ double out = stdlib_base_dists_kumaraswamy_median( 2.0, 3.0 );
 
 The function accepts the following arguments:
 
--   **a**: `[in] double` shape parameter.
--   **b**: `[in] double` shape parameter.
+-   **a**: `[in] double` first shape parameter.
+-   **b**: `[in] double` second shape parameter.
 
 ```c
 double stdlib_base_dists_kumaraswamy_median( const double a, const double b );
@@ -207,7 +207,6 @@ double stdlib_base_dists_kumaraswamy_median( const double a, const double b );
 
 ```c
 #include "stdlib/stats/base/dists/kumaraswamy/median.h"
-#include "stdlib/constants/float64/eps.h"
 #include <stdlib.h>
 #include <stdio.h>
 
