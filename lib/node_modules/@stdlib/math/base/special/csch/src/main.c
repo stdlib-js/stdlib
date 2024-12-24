@@ -26,11 +26,11 @@
 * @return     hyperbolic cosecant
 *
 * @example
-* var v = stdlib_base_csch( 2.0 );
+* double v = stdlib_base_csch( 2.0 );
 * // returns ~0.2757
 *
 * @example
-* var v = stdlib_base_csch( -2.0 );
+* double v = stdlib_base_csch( -2.0 );
 * // returns ~-0.2757
 */
 double stdlib_base_csch( const double x ) {

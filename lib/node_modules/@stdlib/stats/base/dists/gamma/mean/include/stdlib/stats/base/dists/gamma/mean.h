@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Returns the mean of a gamma distribution.
+* Returns the expected value of a gamma distribution.
 */
 double stdlib_base_dists_gamma_mean( const double alpha, const double beta );
 
