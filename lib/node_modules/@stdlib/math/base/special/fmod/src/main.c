@@ -127,7 +127,7 @@ double stdlib_base_fmod( const double x, const double y ) {
 			}
 		} else {
 			iy = STDLIB_CONSTANT_FLOAT64_MIN_BASE2_EXPONENT;
-			for ( i = ( hy << 11 ); i > 0; i <<= 1) {
+			for ( i = ( hy << 11 ); i > 0; i <<= 1 ) {
 				iy -=1;
 			}
 		}
