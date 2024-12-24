@@ -182,7 +182,7 @@ double out = stdlib_base_dists_f_entropy( 3.0, 7.0 );
 The function accepts the following arguments:
 
 -   **d1**: `[in] double` numerator degrees of freedom.
--   **d2**: `[in] double` maximum support.
+-   **d2**: `[in] double` denominator degrees of freedom.
 
 ```c
 double stdlib_base_dists_f_entropy( const double d1, const double d2 );
