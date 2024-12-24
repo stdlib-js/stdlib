@@ -338,57 +338,57 @@ static double poly_p12( const double x ) {
 * // returns ~1.854
 */
 double stdlib_base_ellipk( const double m ) {
-    int8_t FLG;
-    double kdm;
-    double td;
-    double qd;
-    double t;
-    double x;
+	int8_t FLG;
+	double kdm;
+	double td;
+	double qd;
+	double t;
+	double x;
 
-    FLG = 0;
-    x = m;
-    if ( m < 0.0 ) {
-        x = m / ( m - 1.0 );
-        FLG += 1;
-    }
-    if ( x == 0.0 ) {
-        return STDLIB_CONSTANT_FLOAT64_HALF_PI;
-    }
-    if ( x == 1.0 ) {
-        return STDLIB_CONSTANT_FLOAT64_PINF;
-    }
-    if ( x > 1.0 ) {
-        return 0.0 / 0.0; // NaN
-    }
-    if ( x < 0.1 ) {
-        t = poly_p1( x - 0.05 );
-    } else if ( x < 0.2 ) {
-        t = poly_p2( x - 0.15 );
-    } else if ( x < 0.3 ) {
-        t = poly_p3( x - 0.25 );
-    } else if ( x < 0.4 ) {
-        t = poly_p4( x - 0.35 );
-    } else if ( x < 0.5 ) {
-        t = poly_p5( x - 0.45 );
-    } else if ( x < 0.6 ) {
-        t = poly_p6( x - 0.55 );
-    } else if ( x < 0.7 ) {
-        t = poly_p7( x - 0.65 );
-    } else if ( x < 0.8 ) {
-        t = poly_p8( x - 0.75 );
-    } else if ( x < 0.85 ) {
-        t = poly_p9( x - 0.825 );
-    } else if ( x < 0.9 ) {
-        t = poly_p10( x - 0.875 );
-    } else {
-        td = 1.0 - x;
-        qd = poly_p11( td );
-        kdm = poly_p12( td - 0.05 );
-        t = -stdlib_base_ln( qd ) * ( kdm * ONE_DIV_PI );
-    }
-    if ( FLG == 1 ) {
-        // Complete the transformation mentioned above for m < 0:
-        return t / stdlib_base_sqrt( 1.0 - m );
-    }
-    return t;
+	FLG = 0;
+	x = m;
+	if ( m < 0.0 ) {
+		x = m / ( m - 1.0 );
+		FLG += 1;
+	}
+	if ( x == 0.0 ) {
+		return STDLIB_CONSTANT_FLOAT64_HALF_PI;
+	}
+	if ( x == 1.0 ) {
+		return STDLIB_CONSTANT_FLOAT64_PINF;
+	}
+	if ( x > 1.0 ) {
+		return 0.0 / 0.0; // NaN
+	}
+	if ( x < 0.1 ) {
+		t = poly_p1( x - 0.05 );
+	} else if ( x < 0.2 ) {
+		t = poly_p2( x - 0.15 );
+	} else if ( x < 0.3 ) {
+		t = poly_p3( x - 0.25 );
+	} else if ( x < 0.4 ) {
+		t = poly_p4( x - 0.35 );
+	} else if ( x < 0.5 ) {
+		t = poly_p5( x - 0.45 );
+	} else if ( x < 0.6 ) {
+		t = poly_p6( x - 0.55 );
+	} else if ( x < 0.7 ) {
+		t = poly_p7( x - 0.65 );
+	} else if ( x < 0.8 ) {
+		t = poly_p8( x - 0.75 );
+	} else if ( x < 0.85 ) {
+		t = poly_p9( x - 0.825 );
+	} else if ( x < 0.9 ) {
+		t = poly_p10( x - 0.875 );
+	} else {
+		td = 1.0 - x;
+		qd = poly_p11( td );
+		kdm = poly_p12( td - 0.05 );
+		t = -stdlib_base_ln( qd ) * ( kdm * ONE_DIV_PI );
+	}
+	if ( FLG == 1 ) {
+		// Complete the transformation mentioned above for m < 0:
+		return t / stdlib_base_sqrt( 1.0 - m );
+	}
+	return t;
 }

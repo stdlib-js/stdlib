@@ -59,7 +59,7 @@ var stdev = require( '@stdlib/stats/base/dists/f/stdev' );
 
 #### stdev( d1, d2 )
 
-Returns the [standard deviation][standard-deviation] of a [F][f-distribution] distribution with parameters `d1` (numerator degrees of freedom) and `d2` (denominator degrees of freedom).
+Returns the [standard deviation][standard-deviation] of an [F][f-distribution] distribution with parameters `d1` (numerator degrees of freedom) and `d2` (denominator degrees of freedom).
 
 ```javascript
 var v = stdev( 4.0, 5.0 );

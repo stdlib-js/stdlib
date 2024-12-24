@@ -170,7 +170,7 @@ for ( i = 0; i < 10; i++ ) {
 
 #### stdlib_base_dists_gamma_kurtosis( alpha, beta )
 
-Returns the kurtosis of a gamma distribution.
+Returns the [excess kurtosis][kurtosis] of a [gamma][gamma-distribution] distribution with parameters `alpha` (shape parameter) and `beta` (rate parameter).
 
 ```c
 double out = stdlib_base_dists_gamma_kurtosis( 1.0, 1.0 );

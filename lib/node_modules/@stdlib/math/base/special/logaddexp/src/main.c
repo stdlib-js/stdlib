@@ -34,16 +34,16 @@
 * // returns ~90.6931
 */
 double stdlib_base_logaddexp( const double x, const double y ) {
-    double d;
-    if ( stdlib_base_is_nan( x ) || stdlib_base_is_nan( y ) ) {
-        return 0.0/0.0;
-    }
-    if ( x == y ) {
-        return x + STDLIB_CONSTANT_FLOAT64_LN2;
-    }
-    d = x - y;
-    if ( d > 0.0 ) {
-        return x + stdlib_base_log1p( stdlib_base_exp( -d ) );
-    }
-    return y + stdlib_base_log1p( stdlib_base_exp( d ) );
+	double d;
+	if ( stdlib_base_is_nan( x ) || stdlib_base_is_nan( y ) ) {
+		return 0.0/0.0;
+	}
+	if ( x == y ) {
+		return x + STDLIB_CONSTANT_FLOAT64_LN2;
+	}
+	d = x - y;
+	if ( d > 0.0 ) {
+		return x + stdlib_base_log1p( stdlib_base_exp( -d ) );
+	}
+	return y + stdlib_base_log1p( stdlib_base_exp( d ) );
 }

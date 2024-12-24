@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Evaluates the median for a triangular distribution with minimum support `a` and maximum support `b` with mode `c`.
+* Returns the median of a triangular distribution.
 */
 double stdlib_base_dists_triangular_median( const double a, const double b, const double c );
 

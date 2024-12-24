@@ -219,12 +219,12 @@ int main( void ) {
     double v;
     double y;
     int i;
-    
+
     for ( i = 0; i < 25; i++ ) {
         x = random_uniform( -10.0, 10.0 );
         v = random_uniform( 1.0, 100.0 );
         y = stdlib_base_dists_t_logpdf( x, v );
-        printf( "x: %lf, v: %lf, logPDF(x;v): %lf\n", x, v, y );
+        printf( "x: %lf, v: %lf, ln(f(x;v)): %lf\n", x, v, y );
     }
 }
 ```

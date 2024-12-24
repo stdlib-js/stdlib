@@ -93,7 +93,6 @@ static double random_uniform( const double min, const double max ) {
 */
 static double benchmark( void ) {
 	double elapsed;
-	int len = 100;
 	double min[ 100 ];
 	double max[ 100 ];
 	double y;
@@ -107,7 +106,7 @@ static double benchmark( void ) {
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		y = stdlib_base_dists_uniform_entropy( min[ i % len ], max[ i % len ] );
+		y = stdlib_base_dists_uniform_entropy( min[ i % 100 ], max[ i % 100 ] );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;

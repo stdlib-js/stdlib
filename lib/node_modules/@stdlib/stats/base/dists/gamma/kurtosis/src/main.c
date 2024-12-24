@@ -28,7 +28,7 @@
 *
 * @example
 * double y = stdlib_base_gamma_kurtosis( 1.0, 1.0 );
-* // returns 1.0
+* // returns 6.0
 */
 double stdlib_base_dists_gamma_kurtosis( const double alpha, const double beta ) {
 	if (

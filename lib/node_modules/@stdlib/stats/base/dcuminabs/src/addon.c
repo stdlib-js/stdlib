@@ -34,7 +34,7 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV( env, info, argv, argc, 5 );
 	STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
 	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 2 );
-    STDLIB_NAPI_ARGV_INT64( env, strideY, argv, 4 );
+	STDLIB_NAPI_ARGV_INT64( env, strideY, argv, 4 );
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, strideX, argv, 1 );
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, Y, N, strideY, argv, 3 );
 	stdlib_strided_dcuminabs( N, X, strideX, Y, strideY );

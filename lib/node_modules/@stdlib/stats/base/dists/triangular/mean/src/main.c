@@ -20,12 +20,12 @@
 #include "stdlib/math/base/assert/is_nan.h"
 
 /**
-* Evaluates the expected value (mean) of a triangular distribution with lower bound a, upper bound b and mode (peak) c.
+* Returns the expected value of a triangular distribution.
 *
-* @param a   lower bound
-* @param b   upper bound
-* @param c   mode (peak)
-* @returns   expected value (mean)
+* @param a   minimum support
+* @param b   maximum support
+* @param c   mode
+* @returns   expected value
 *
 * @example
 * double v = mean( 0.0, 10.0, 5.0 );

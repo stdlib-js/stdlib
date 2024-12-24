@@ -37,8 +37,7 @@ double stdlib_base_dists_f_kurtosis( const double d1, const double d2 ) {
 	if ( d1 <= 0.0 || d2 <= 8.0 ) {
 		return 0.0/0.0; // NaN
 	}
-	num = ( d1 * ( ( 5.0*d2 ) - 22.0 ) * ( d1+d2-2.0 ) ) +
-		( ( d2-4.0 ) * stdlib_base_pow( d2-2.0, 2.0 ) );
+	num = ( d1 * ( ( 5.0*d2 ) - 22.0 ) * ( d1+d2-2.0 ) ) + ( ( d2-4.0 ) * stdlib_base_pow( d2-2.0, 2.0 ) );
 	denom = d1 * ( d2-6.0 ) * ( d2-8.0 ) * ( d1+d2-2.0 );
 	return 12.0 * num / denom;
 }

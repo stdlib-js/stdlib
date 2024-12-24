@@ -30,5 +30,5 @@
 * // returns ~1.571
 */
 double stdlib_base_acot( const double x ) {
-    return stdlib_base_atan( 1.0 / x );
+	return stdlib_base_atan( 1.0 / x );
 }
