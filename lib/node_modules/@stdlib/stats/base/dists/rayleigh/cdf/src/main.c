@@ -44,7 +44,7 @@ double stdlib_base_dists_rayleigh_cdf( const double x, const double sigma ) {
 	if ( sigma == 0.0 ) {
 		return ( x < 0.0 ) ? 0.0 : 1.0;
 	}
-	if ( x < 0.0) {
+	if ( x < 0.0 ) {
 		return 0.0;
 	}
 	s2 = stdlib_base_pow( sigma, 2.0 );
