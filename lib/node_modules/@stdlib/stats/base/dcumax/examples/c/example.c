@@ -17,27 +17,25 @@
 */
 
 #include "stdlib/stats/base/dcumax.h"
-#include <stdint.h>
 #include <stdio.h>
-#include <inttypes.h>
 
 int main( void ) {
 	// Create strided arrays:
-	double x[] = { 1.0, 2.0, -3.0, 4.0, -5.0, 6.0, 7.0, 8.0 };
+	const double x[] = { 1.0, 2.0, -3.0, 4.0, -5.0, 6.0, 7.0, 8.0 };
 	double y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
 	// Specify the number of elements:
-	int64_t N = 4;
+	const int N = 4;
 
 	// Specify stride lengths:
-	int64_t strideX = 2;
-	int64_t strideY = -2;
+	const int strideX = 2;
+	const int strideY = -2;
 
 	// Compute the cumulative maximum:
 	stdlib_strided_dcumax( N, x, strideX, y, strideY );
 
 	// Print the result:
-	for ( int64_t i = 0; i < 8; i++ ) {
-		printf( "y[ %"PRId64" ] = %lf\n", i, y[ i ] );
+	for ( int i = 0; i < 8; i++ ) {
+		printf( "y[ %d ] = %lf\n", i, y[ i ] );
 	}
 }
