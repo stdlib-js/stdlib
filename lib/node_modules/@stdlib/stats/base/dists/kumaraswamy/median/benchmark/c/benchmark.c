@@ -15,6 +15,7 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
+
 #include "stdlib/stats/base/dists/kumaraswamy/median.h"
 #include "stdlib/constants/float64/eps.h"
 #include <stdlib.h>
