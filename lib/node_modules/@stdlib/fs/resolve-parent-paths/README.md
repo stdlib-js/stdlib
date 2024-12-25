@@ -58,7 +58,7 @@ The function accepts the following `options`:
     -   `some`: return one or more paths resolved within the first directory level containing a match.
     -   `all`: return all resolved paths within the first directory level containing matches for all provided paths.
     -   `each`: independently return the first resolved path for each path at any directory level.
-    
+
     Default: `'all'`.
 
 By default, the function begins walking from the current working directory. To specify an alternative directory, set the `dir` option.

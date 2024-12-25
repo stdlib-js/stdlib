@@ -22,12 +22,12 @@ import croundf = require( './index' );
 
 // TESTS //
 
-// The function returns a double-precision complex floating-point number...
+// The function returns a single-precision complex floating-point number...
 {
 	croundf( new Complex64( 1.0, 2.0 ) ); // $ExpectType Complex64
 }
 
-// The compiler throws an error if the function is provided a real component which is not a number...
+// The compiler throws an error if the function is provided a value other than a complex number...
 {
 	croundf( true ); // $ExpectError
 	croundf( false ); // $ExpectError

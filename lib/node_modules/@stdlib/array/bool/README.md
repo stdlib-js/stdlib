@@ -1833,6 +1833,12 @@ console.log( '%s', false );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/array/buffer`][@stdlib/array/buffer]</span><span class="delimiter">: </span><span class="description">ArrayBuffer.</span>
+
 </section>
 
 <!-- /.related -->

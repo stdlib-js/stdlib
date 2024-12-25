@@ -103,6 +103,91 @@ for ( i = 0; i < s.length; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/riemann_zeta.h"
+```
+
+#### stdlib_base_zeta( s )
+
+Evaluates the [Riemann zeta][zeta-function] function as a function of a real variable `s` (i.e., `t = 0`).
+
+```c
+double out = stdlib_base_zeta( 1.1 );
+// returns ~10.584
+```
+
+The function accepts the following arguments:
+
+-   **s**: `[in] double` input value.
+
+```c
+double stdlib_base_zeta( const double s );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/riemann_zeta.h"
+#include <stdio.h>
+
+int main( void ) {
+    const double s[] = { -50.0, -38.9, -27.8, -16.7, -5.6, 5.6, 16.7, 27.8, 38.9, 50.0 };
+
+    double v;
+    int i;
+    for ( i = 0; i < 1; i++ ) {
+        v = stdlib_base_zeta( s[ i ] );
+        printf( "zeta(%lf) = %lf\n", s[ i ], v );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">

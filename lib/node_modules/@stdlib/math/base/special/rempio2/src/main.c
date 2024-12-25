@@ -227,8 +227,7 @@ static const double PIO2[] = {
 *     -   The hexadecimal values are the intended ones for the following constants. The decimal values may be used, provided that the compiler will convert from decimal to binary accurately enough to produce the hexadecimal values shown.
 *
 * @param x       input value
-* @param rem1    remainder element 1
-* @param rem2    remainder element 2
+* @param y       output array to store the remainder
 * @param e0      the exponent of `x[0]` (must be <= 16360)
 * @param nx      dimension of `x[]`
 * @return        last 3 binary digits

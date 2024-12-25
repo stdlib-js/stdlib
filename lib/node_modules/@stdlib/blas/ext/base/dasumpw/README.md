@@ -59,9 +59,8 @@ Computes the sum of absolute values ([_L1_ norm][l1norm]) of double-precision fl
 var Float64Array = require( '@stdlib/array/float64' );
 
 var x = new Float64Array( [ 1.0, -2.0, 2.0 ] );
-var N = x.length;
 
-var v = dasumpw( N, x, 1 );
+var v = dasumpw( x.length, x, 1 );
 // returns 5.0
 ```
 
@@ -69,9 +68,9 @@ The function has the following parameters:
 
 -   **N**: number of indexed elements.
 -   **x**: input [`Float64Array`][@stdlib/array/float64].
--   **strideX**: index increment for `x`.
+-   **strideX**: stride length for `x`.
 
-The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to compute the sum of absolute values of every other element in `x`,
+The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to compute the sum of absolute values of every other element:
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -104,9 +103,8 @@ Computes the sum of absolute values ([_L1_ norm][l1norm]) of double-precision fl
 var Float64Array = require( '@stdlib/array/float64' );
 
 var x = new Float64Array( [ 1.0, -2.0, 2.0 ] );
-var N = x.length;
 
-var v = dasumpw.ndarray( N, x, 1, 0 );
+var v = dasumpw.ndarray( x.length, x, 1, 0 );
 // returns 5.0
 ```
 
@@ -114,7 +112,7 @@ The function has the following additional parameters:
 
 -   **offsetX**: starting index for `x`.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameter supports indexing semantics based on a starting index. For example, to calculate the sum of absolute values of every other value in `x` starting from the second value
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameter supports indexing semantics based on a starting index. For example, to calculate the sum of absolute values of every other element starting from the second element:
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -204,7 +202,7 @@ The function accepts the following arguments:
 
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
 -   **X**: `[in] double*` input array.
--   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **strideX**: `[in] CBLAS_INT` stride length for `X`.
 
 ```c
 double stdlib_strided_dasumpw( const CBLAS_INT N, const double *X, const CBLAS_INT strideX );
@@ -225,7 +223,7 @@ The function accepts the following arguments:
 
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
 -   **X**: `[in] double*` input array.
--   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **strideX**: `[in] CBLAS_INT` stride length for `X`.
 -   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
 
 ```c

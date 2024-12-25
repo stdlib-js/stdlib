@@ -62,10 +62,10 @@ double API_SUFFIX(stdlib_strided_dapxsumkbn2)( const CBLAS_INT N, const double a
 * @return         output value
 */
 double stdlib_strided_dapxsumkbn2_ndarray( const CBLAS_INT N, const double alpha, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX  ) {
-	double sum;
-	double ccs;
 	CBLAS_INT ix;
 	CBLAS_INT i;
+	double sum;
+	double ccs;
 	double cs;
 	double cc;
 	double v;
@@ -75,10 +75,10 @@ double stdlib_strided_dapxsumkbn2_ndarray( const CBLAS_INT N, const double alpha
 	if ( N <= 0 ) {
 		return 0.0;
 	}
-	if ( N == 1 || strideX == 0 ) {
-		return alpha + X[ 0 ];
-	}
 	ix = offsetX;
+	if ( strideX == 0 ) {
+		return N * ( alpha + X[ ix ] );
+	}
 	sum = 0.0;
 	ccs = 0.0; // second order correction term for lost low order bits
 	cs = 0.0; // first order correction term for lost low order bits

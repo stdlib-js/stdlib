@@ -183,7 +183,7 @@ jobs:
 
           echo "files=$files" >> $GITHUB_OUTPUT
 
-      # Lint file names
+      # Lint file names:
       - name: 'Lint file names'
         run: |
           # Determine root directory:
@@ -193,7 +193,13 @@ jobs:
           lint_filenames="${root}/lib/node_modules/@stdlib/_tools/lint/filenames/bin/cli"
 
           # Lint filenames:
-          echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' || "${lint_filenames}"
+          echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | "${lint_filenames}"
+
+      # Lint files against EditorConfig:
+      - name: 'Lint against EditorConfig'
+        run: |
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' ' ')
+          make lint-editorconfig-files FILES="${files}"
 
       # Lint Markdown files:
       - name: 'Lint Markdown files'
@@ -326,7 +332,7 @@ jobs:
       - name: 'Setup R'
         if: ( github.event.inputs.r != 'false' ) && ( success() || failure() )
         # Pin action to full length commit SHA
-        uses: r-lib/actions/setup-r@e6be4b3706e0f39bc7a4cf4496a5f2c4cb840040 # v2.10.1
+        uses: r-lib/actions/setup-r@473c68190595b311a74f208fba61a8d8c0d4c247 # v2.11.1
         with:
           r-version: '4.3.3'
 
@@ -345,6 +351,7 @@ jobs:
 
       # Lint C files:
       - name: 'Lint C files'
+        id: lint-c
         if: ( github.event.inputs.c != 'false' ) && ( success() || failure() )
         run: |
           # Determine root directory:
@@ -385,6 +392,37 @@ jobs:
           if [[ -n "${files}" ]]; then
             make lint-c-files FILES="${files}" CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_benchmarks_suppressions_list}"
           fi
+
+      # Create sub-issue for C linting failures:
+      - name: 'Create sub-issue for C lint failures'
+        if: ( github.event.inputs.c != 'false' ) && failure() && contains(steps.*.outcome, 'failure') && contains(steps.lint-c.outcome, 'failure')
+        env:
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+        run: |
+          BODY_FILE="$GITHUB_WORKSPACE/lint_issue_body.md"
+
+          cat << EOF > "$BODY_FILE"
+            ## C Linting Failures
+
+            Linting failures were detected in the automated lint workflow run.
+
+            ### Workflow Details
+            -   Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            -   Type: C Linting
+            -   Date: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
+
+            ### Error Details
+            \`\`\`
+            $(grep -B 1 -A 2 "style:\|warning:\|error:" <<< "${{ steps.lint-c.outputs.stderr }}")
+            \`\`\`
+            EOF
+
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_sub_issue" \
+            'Fix C lint errors' \
+            "$BODY_FILE" \
+            "3235"  # Number of C lint error tracking issue
+
+          rm "$BODY_FILE"
 
       # Lint TypeScript declarations files:
       - name: 'Lint TypeScript declarations files'
