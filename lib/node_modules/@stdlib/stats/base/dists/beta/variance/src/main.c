@@ -18,7 +18,6 @@
 
 #include "stdlib/stats/base/dists/beta/variance.h"
 
-
 /**
 * Returns the variance of a beta distribution.
 *

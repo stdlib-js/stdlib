@@ -113,7 +113,7 @@ y = quantile( 0.4, 1.0, 0.0 );
 
 #### quantile.factory( d1, d2 )
 
-Returns a function for evaluating the quantile function of a [F][f-distribution] distribution with parameters `d1` (numerator degrees of freedom) and `d2` (denominator degrees of freedom).
+Returns a function for evaluating the quantile function of an [F][f-distribution] distribution with parameters `d1` (numerator degrees of freedom) and `d2` (denominator degrees of freedom).
 
 ```javascript
 var myquantile = quantile.factory( 10.0, 2.0 );
