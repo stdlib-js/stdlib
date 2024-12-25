@@ -89,7 +89,7 @@ static double rand_double( void ) {
 * @param v      value to wrap
 * @param min    minimum value
 * @param max    maximum value
-* @return wrapped value
+* @return       wrapped value
 */
 double wrap( double v, double min, double max ) {
 	double delta;
