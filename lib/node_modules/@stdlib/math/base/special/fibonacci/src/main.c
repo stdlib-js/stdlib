@@ -105,7 +105,7 @@ static const int64_t fibonacci_value[ 79 ] = {
 * Computes the nth Fibonacci number.
 *
 * @param n    input value
-* @return	  output value
+* @return     output value
 *
 * @example
 * double out = stdlib_base_fibonacci( 1 );
