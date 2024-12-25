@@ -15,8 +15,8 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
+
 #include "stdlib/stats/base/dists/kumaraswamy/median.h"
-#include "stdlib/constants/float64/eps.h"
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -32,8 +32,8 @@ int main( void ) {
 	int i;
 
 	for ( i = 0; i < 25; i++ ) {
-		a = random_uniform( 0.0, 10.0 ) + STDLIB_CONSTANT_FLOAT64_EPS;
-		b = random_uniform( 0.0, 10.0 ) + STDLIB_CONSTANT_FLOAT64_EPS;
+		a = random_uniform( 0.1, 10.0 );
+		b = random_uniform( 0.1, 10.0 );
 
 		y = stdlib_base_dists_kumaraswamy_median( a, b );
 		printf( "a: %lf, b: %lf, Median(a,b): %lf\n", a, b, y );
