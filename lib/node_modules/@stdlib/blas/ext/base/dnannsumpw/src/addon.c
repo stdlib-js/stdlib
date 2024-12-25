@@ -34,19 +34,19 @@
 * @return       Node-API value
 */
 static napi_value addon( napi_env env, napi_callback_info info ) {
-    STDLIB_NAPI_ARGV( env, info, argv, argc, 5 );
-    STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
-    STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 2 );
-    STDLIB_NAPI_ARGV_INT64( env, strideOut, argv, 4 );
-    STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, strideX, argv, 1 );
-    STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, Out, 2, strideOut, argv, 3 );
+	STDLIB_NAPI_ARGV( env, info, argv, argc, 5 );
+	STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
+	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 2 );
+	STDLIB_NAPI_ARGV_INT64( env, strideOut, argv, 4 );
+	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, strideX, argv, 1 );
+	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, Out, 2, strideOut, argv, 3 );
 
-    int64_t io = stdlib_strided_stride2offset( 2, strideOut );
-    CBLAS_INT n;
-    Out[ io ] = API_SUFFIX(stdlib_strided_dnannsumpw)( N, X, strideX, &n );
-    Out[ io + strideOut ] = (double)n;
+	int64_t io = stdlib_strided_stride2offset( 2, strideOut );
+	CBLAS_INT n;
+	Out[ io ] = API_SUFFIX(stdlib_strided_dnannsumpw)( N, X, strideX, &n );
+	Out[ io + strideOut ] = (double)n;
 
-    return NULL;
+	return NULL;
 }
 
 /**
