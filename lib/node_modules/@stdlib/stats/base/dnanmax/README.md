@@ -167,7 +167,7 @@ console.log( v );
 
 #### stdlib_strided_dnanmax( N, \*X, strideX )
 
-Calculate the maximum value of a double-precision floating-point strided array, ignoring `NaN` values.
+Computes the maximum value of a double-precision floating-point strided array, ignoring `NaN` values.
 
 ```c
 const double x[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 0.0/0.0, 0.0/0.0 };
