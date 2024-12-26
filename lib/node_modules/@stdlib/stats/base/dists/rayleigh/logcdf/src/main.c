@@ -25,6 +25,7 @@
 #include "stdlib/math/base/special/ln.h"
 #include "stdlib/constants/float64/ln_half.h"
 #include "stdlib/constants/float64/ninf.h"
+
 /**
 * Evaluates the logarithm of the cumulative distribution function (CDF) for a Rayleigh distribution with scale parameter `sigma` at a value `x`.
 *

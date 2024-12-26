@@ -121,7 +121,7 @@ interface BinaryFunction extends PRNG {
 }
 
 /**
-* Interface for generating pseudorandom numbers drawn from an uniform distribution.
+* Interface for generating pseudorandom numbers drawn from a uniform distribution.
 */
 interface Random extends PRNG {
 	/**
