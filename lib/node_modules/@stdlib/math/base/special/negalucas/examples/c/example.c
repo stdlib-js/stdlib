@@ -21,11 +21,11 @@
 #include <stdint.h>
 
 int main( void ) {
-    int32_t i;
-    double v;
+	int32_t i;
+	double v;
 
-    for ( i = 0; i > -77; i-- ) {
-        v = stdlib_base_negalucas( i );
-        printf( "negalucas(%d) = %lf\n", i, v );
-    }
+	for ( i = 0; i > -77; i-- ) {
+		v = stdlib_base_negalucas( i );
+		printf( "negalucas(%d) = %lf\n", i, v );
+	}
 }
