@@ -199,7 +199,7 @@ Computes the maximum value of a single-precision floating-point strided array us
 ```c
 const float x[] = { 1.0f, -2.0f, 3.0f, -4.0f };
 
-float v = stdlib_strided_dmax_ndarray( 4, x, 1, 0 );
+float v = stdlib_strided_smax_ndarray( 4, x, 1, 0 );
 // returns 3.0f
 ```
 
