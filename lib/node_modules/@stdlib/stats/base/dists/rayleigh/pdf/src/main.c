@@ -21,6 +21,7 @@
 #include "stdlib/math/base/special/exp.h"
 #include "stdlib/math/base/special/pow.h"
 #include "stdlib/constants/float64/pinf.h"
+
 /**
 * Evaluates the probability density function (PDF) for a Rayleigh distribution with scale parameter `sigma` at a value `x`.
 *

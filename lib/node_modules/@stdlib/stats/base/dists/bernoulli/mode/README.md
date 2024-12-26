@@ -121,7 +121,7 @@ var p;
 for ( i = 0; i < 10; i++ ) {
     p = randu();
     v = mode( p );
-    console.log( 'p: %d, Mode(X;p): %d', p.toFixed( 4 ), v.toFixed( 4 ) );
+    console.log( 'p: %d, mode(X;p): %d', p.toFixed( 4 ), v.toFixed( 4 ) );
 }
 ```
 
@@ -211,7 +211,7 @@ int main( void ) {
     for ( i = 0; i < 25; i++ ) {
         p = (double)rand() / ( (double)RAND_MAX + 1.0 );
         y = stdlib_base_dists_bernoulli_mode( p );
-        printf( "x: %lf, M(X;p): %lf\n", p, y );
+        printf( "x: %lf, mode(X;p): %lf\n", p, y );
     }
 }
 ```
