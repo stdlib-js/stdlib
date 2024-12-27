@@ -93,21 +93,21 @@ static double rand_double( void ) {
 */
 static double benchmark( void ) {
 	double elapsed;
-    double re;
-    double im;
+	double re;
+	double im;
 	double t;
 	double v;
 	int i;
 
-    stdlib_complex128_t x;
-    stdlib_complex128_t y;
+	stdlib_complex128_t x;
+	stdlib_complex128_t y;
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
 		v = ( 1000.0*rand_double() ) - 500.0;
 		x = stdlib_complex128( v, v );
 		y = stdlib_base_cexp( x );
-        stdlib_complex128_reim( y, &re, &im );
+		stdlib_complex128_reim( y, &re, &im );
 		if ( re != re ) {
 			printf( "unexpected result\n" );
 			break;

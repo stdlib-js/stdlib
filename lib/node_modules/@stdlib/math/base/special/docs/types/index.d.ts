@@ -3119,7 +3119,7 @@ interface Namespace {
 	diracDelta: typeof diracDelta;
 
 	/**
-	* Evaluates the Dirichlet eta function.
+	* Evaluates the Dirichlet eta function for a double-precision floating-point number `s`.
 	*
 	* @param s - input value
 	* @returns function value

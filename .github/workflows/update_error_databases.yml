@@ -87,8 +87,21 @@ jobs:
           node lib/node_modules/@stdlib/error/tools/pkg2id/scripts/build.js
           node lib/node_modules/@stdlib/error/tools/id2pkg/scripts/build.js
 
+      # Check if there are any changes to the error databases:
+      - name: 'Check for changes'
+        id: check_changes
+        run: |
+          if [ -z "$(git diff lib/node_modules/@stdlib/error/tools/database/data/data.csv | grep '^+')" ]; then
+            echo "No changes detected in error databases. Skipping PR creation."
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "Changes detected in error databases."
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
+
       # Generate comment with Markdown table of added error codes:
       - name: 'Generate comment body with Markdown table of added error codes'
+        if: steps.check_changes.outputs.has_changes == 'true'
         run: |
           # Save the added lines from the diff to a temporary file:
           git diff lib/node_modules/@stdlib/error/tools/database/data/data.csv | grep '^+' | sed 's/^+//' > /tmp/diff.csv
@@ -123,11 +136,13 @@ jobs:
 
       # Disable Git hooks:
       - name: 'Disable Git hooks'
+        if: steps.check_changes.outputs.has_changes == 'true'
         run: |
           rm -rf .git/hooks
 
       # Import GPG key to sign commits:
       - name: 'Import GPG key to sign commits'
+        if: steps.check_changes.outputs.has_changes == 'true'
         # Pin action to full length commit SHA
         uses: crazy-max/ghaction-import-gpg@cb9bde2e2525e640591a934b1fd28eef1dcaf5e5 # v6.2.0
         with:
@@ -138,6 +153,7 @@ jobs:
 
       # Create a pull request with the updated declarations:
       - name: 'Create pull request'
+        if: steps.check_changes.outputs.has_changes == 'true'
         id: cpr
         # Pin action to full length commit SHA
         uses: peter-evans/create-pull-request@5e914681df9dc83aa4e4905692ca88beb2f9e91f # v7.0.5

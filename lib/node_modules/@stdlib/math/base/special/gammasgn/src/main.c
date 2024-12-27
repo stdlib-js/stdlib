@@ -27,7 +27,7 @@
 * @return        sign of the gamma function
 *
 * @example
-* var v = gammasgn( 1.0 );
+* double v = gammasgn( 1.0 );
 * // returns 1.0
 */
 double stdlib_base_gammasgn( const double x ) {

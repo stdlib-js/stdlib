@@ -93,14 +93,14 @@ static double benchmark( void ) {
 	double elapsed;
 	double t;
 	double v;
-    double y;
+	double y;
 	int i;
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
 		v = ( 1.0e7 * rand_double() ) - 5.0e6;
 		y = stdlib_base_truncn( v, -2 );
-        if ( y != y ) {
+		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;
 		}

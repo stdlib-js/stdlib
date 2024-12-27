@@ -138,7 +138,7 @@ float stdlib_base_asinf( const float x );
 
 int main( void ) {
     const float x[] = { -1.0f, -0.78f, -0.56f, -0.33f, -0.11f, 0.11f, 0.33f, 0.56f, 0.78f, 1.0f };
-    
+
     float v;
     int i;
     for ( i = 0; i < 10; i++ ) {

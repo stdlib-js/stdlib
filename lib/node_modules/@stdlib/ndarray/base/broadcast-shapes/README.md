@@ -311,7 +311,7 @@ The function accepts the following arguments:
 -   **out**: `[out] int64_t*` output shape array.
 
 ```c
-int8_t stdlib_ndarray_broadcast_shapes( int64_t M, int64_t *shapes[], const int64_t ndims[], int64_t *out );
+int8_t stdlib_ndarray_broadcast_shapes( const int64_t M, const int64_t *shapes[], const int64_t ndims[], int64_t *out );
 ```
 
 If successful, the function returns `0`; otherwise, the function returns `-1` (e.g., due to incompatible shapes).

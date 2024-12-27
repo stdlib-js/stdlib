@@ -71,7 +71,7 @@ stdlib_complex128_t stdlib_base_ccis( const stdlib_complex128_t z ) {
 	// TODO: replace with stdlib/math/base/special/sincos
 	y = stdlib_base_sin( re );
 	x = stdlib_base_cos( re );
-	if( im != 0.0 ){
+	if( im != 0.0 ) {
 		e = stdlib_base_exp( -im );
 		y *= e;
 		x *= e;

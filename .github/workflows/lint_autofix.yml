@@ -34,16 +34,16 @@ on:
     # Define the secrets accessible by the workflow:
     secrets:
       STDLIB_BOT_GITHUB_TOKEN:
-        description: 'GitHub token for stdlb-bot'
+        description: 'GitHub token for stdlib-bot'
         required: true
       REPO_GITHUB_TOKEN:
         description: 'GitHub token for accessing the repository'
         required: true
       STDLIB_BOT_GPG_PRIVATE_KEY:
-        description: 'GPG private key for stdlb-bot'
+        description: 'GPG private key for stdlib-bot'
         required: true
       STDLIB_BOT_GPG_PASSPHRASE:
-        description: 'GPG passphrase for stdlb-bot'
+        description: 'GPG passphrase for stdlib-bot'
         required: true
 
 # Workflow jobs:
@@ -175,12 +175,12 @@ jobs:
       - name: 'Commit and push changes'
         env:
             REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
-            USER_NAME: stdlb-bot
+            USER_NAME: stdlib-bot
             BRANCH_NAME: ${{ steps.pr-details.outputs.branch }}
             REPO_NAME: ${{ steps.pr-details.outputs.repository }}
         run: |
           git config --local user.email "82920195+stdlib-bot@users.noreply.github.com"
-          git config --local user.name "stdlib-bot"
+          git config --local user.name "$USER_NAME"
           git add .
           git commit -m "fix: resolve lint errors"
           git push "https://$USER_NAME:$REPO_GITHUB_TOKEN@github.com/$REPO_NAME.git" $BRANCH_NAME
