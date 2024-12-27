@@ -209,7 +209,7 @@ The function accepts the following arguments:
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
 -   **X**: `[in] double*` input array.
 -   **strideX**: `[in] CBLAS_INT` stride length for `X`.
--   **n**: `[out] CBLAS_INT*` number of non-NaN elements.
+-   **n**: `[out] CBLAS_INT*` pointer for storing the number of non-NaN elements.
 
 ```c
 double stdlib_strided_dnannsumors( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, CBLAS_INT *n );
@@ -233,7 +233,7 @@ The function accepts the following arguments:
 -   **X**: `[in] double*` input array.
 -   **strideX**: `[in] CBLAS_INT` stride length for `X`.
 -   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
--   **n**: `[out] CBLAS_INT*` number of non-NaN elements.
+-   **n**: `[out] CBLAS_INT*` pointer for storing the number of non-NaN elements.
 
 ```c
 double stdlib_strided_dnannsumors_ndarray( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, CBLAS_INT *n );

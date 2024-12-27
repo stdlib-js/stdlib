@@ -93,19 +93,22 @@ static float rand_float( void ) {
 */
 static double benchmark( void ) {
 	double elapsed;
+	float v[ 100 ];
 	double t;
 	float re;
 	float im;
-	float v;
 	int i;
 
 	stdlib_complex64_t x;
 	stdlib_complex64_t y;
 
+	for ( i = 0; i < 100; i++ ) {
+		v[ i ] = ( 1000.0f * rand_float() ) - 500.0f;
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		v = ( 1000.0*rand_float() ) - 500.0;
-		x = stdlib_complex64( v, v );
+		x = stdlib_complex64( v[ i % 100 ], v[ i % 100 ] );
 		y = stdlib_base_croundf( x );
 		stdlib_complex64_reim( y, &re, &im );
 		if ( re != re ) {

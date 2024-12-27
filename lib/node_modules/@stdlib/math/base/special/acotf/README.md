@@ -135,7 +135,7 @@ float stdlib_base_acotf( const float x );
 
 int main( void ) {
     const float x[] = { -5.0f, -3.89f, -2.78f, -1.67f, -0.56f, 0.56f, 1.67f, 2.78f, 3.89f, 5.0f };
-    
+
     float v;
     int i;
     for ( i = 0; i < 10; i++ ) {

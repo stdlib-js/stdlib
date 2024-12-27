@@ -201,6 +201,52 @@ rules[ 'stdlib/doctest-quote-props' ] = 'error';
 rules[ 'stdlib/empty-line-before-comment' ] = 'error';
 
 /**
+* Disallow spaces between an opening parenthesis or bracket and a nested object or array expression at the end of a line.
+*
+* @name eol-open-bracket-spacing
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var log = require( '@stdlib/console/log' );
+*
+* log( {
+*   'foo': true
+* });
+*
+* log( [
+*   1,
+*   2,
+*   3
+* ]);
+*
+* log( [ {
+*   'bar': true
+* }]);
+*
+* @example
+* // Good...
+* var log = require( '@stdlib/console/log' );
+*
+* log({
+*   'foo': true
+* });
+*
+* log([
+*   1,
+*   2,
+*   3
+* ]);
+*
+* log([{
+*   'bar': true
+* }]);
+*/
+rules[ 'stdlib/eol-open-bracket-spacing' ] = 'error';
+
+/**
 * Require blockquotes to have `2` character indentation.
 *
 * @name jsdoc-blockquote-indentation

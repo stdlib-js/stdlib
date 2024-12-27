@@ -22,7 +22,7 @@
 
 int main( void ) {
 	// Create a strided array:
-	float x[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 0.0/0.0, 0.0/0.0 };
+	const float x[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f, 0.0f/0.0f, 0.0f/0.0f };
 
 	// Specify the number of elements:
 	int64_t N = 5;

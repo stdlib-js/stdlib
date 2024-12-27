@@ -59,19 +59,19 @@ jobs:
           script: |
             const prNumber = context.payload.pull_request.number;
             const { data: comments } = await github.rest.issues.listComments({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: prNumber,
+              'owner': context.repo.owner,
+              'repo': context.repo.repo,
+              'issue_number': prNumber
             });
             const coverageComment = comments.find( comment => comment.body && comment.body.includes( '## Coverage Report' ) );
             if ( coverageComment ) {
               // Replace URLs with plain text in the coverage report comment body:
               const updatedBody = coverageComment.body.replace( /<a href="[^"]+">([^<]+)<\/a>/g, '$1' );
               await github.rest.issues.updateComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                comment_id: coverageComment.id,
-                body: updatedBody,
+                'owner': context.repo.owner,
+                'repo': context.repo.repo,
+                'comment_id': coverageComment.id,
+                'body': updatedBody
               });
             } else {
               console.log( 'No Coverage Report comment found.' );

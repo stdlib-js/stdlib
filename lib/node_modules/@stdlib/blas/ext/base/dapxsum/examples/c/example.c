@@ -27,10 +27,10 @@ int main( void ) {
 	const int N = 4;
 
 	// Specify the stride length:
-	const int stride = 2;
+	const int strideX = 2;
 
 	// Compute the sum:
-	double v = stdlib_strided_dapxsum( N, 5.0, x, stride );
+	double v = stdlib_strided_dapxsum( N, 5.0, x, strideX );
 
 	// Print the result:
 	printf( "sum: %lf\n", v );
