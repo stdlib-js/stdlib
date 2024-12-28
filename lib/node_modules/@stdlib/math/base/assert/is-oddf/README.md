@@ -133,10 +133,10 @@ Tests if a finite single-precision floating-point number is an odd number.
 ```c
 #include <stdbool.h>
 
-bool out = stdlib_base_is_oddf( 1.0 );
+bool out = stdlib_base_is_oddf( 1.0f );
 // returns true
 
-out = stdlib_base_is_oddf( 4.0 );
+out = stdlib_base_is_oddf( 4.0f );
 // returns false
 ```
 

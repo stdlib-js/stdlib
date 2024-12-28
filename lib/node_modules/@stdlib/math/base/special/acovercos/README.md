@@ -172,7 +172,7 @@ double stdlib_base_acovercos( const double x );
 
 int main( void ) {
     const double x[] = { -2.0, -1.80, -1.78, -1.67, -0.56, -0.27, -1.67, -0.78, -1.89, 0.0 };
-    
+
     double v;
     int i;
     for ( i = 0; i < 10; i++ ) {

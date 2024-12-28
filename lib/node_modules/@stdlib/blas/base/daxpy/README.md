@@ -207,7 +207,7 @@ The function accepts the following arguments:
 -   **X**: `[in] double*` input array.
 -   **strideX**: `[in] CBLAS_INT` index increment for `X`.
 -   **Y**: `[inout] double*` output array.
--   **strideY**: `[in CBLAS_INT` index increment for `Y`.
+-   **strideY**: `[in] CBLAS_INT` index increment for `Y`.
 
 ```c
 void c_daxpy( const CBLAS_INT N, const double alpha, const double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY );

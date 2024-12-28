@@ -100,7 +100,7 @@ var i;
 for ( i = 0; i < 10; i++ ) {
     mu = randu();
     v = mode( mu );
-    console.log( 'µ: %d, Mode(X;µ): %d', mu.toFixed( 4 ), v.toFixed( 4 ) );
+    console.log( 'µ: %d, mode(X;µ): %d', mu.toFixed( 4 ), v.toFixed( 4 ) );
 }
 ```
 

@@ -39,7 +39,7 @@ permissions:
 jobs:
 
   # Define a job for linting committed code...
-  process:
+  lint:
 
     # Define a display name:
     name: 'Lint Changed Files'
@@ -104,7 +104,7 @@ jobs:
           files=$(echo "$files" | tr '\n' ' ' | sed 's/ $//')
           echo "files=${files}" >> $GITHUB_OUTPUT
 
-      # Lint file names
+      # Lint file names:
       - name: 'Lint file names'
         run: |
           # Determine root directory:
@@ -115,6 +115,12 @@ jobs:
 
           # Lint filenames:
           echo "${{ steps.changed-files.outputs.files }}" || "${lint_filenames}"
+
+      # Lint files against EditorConfig:
+      - name: 'Lint against EditorConfig'
+        if: success() || failure()
+        run: |
+          make lint-editorconfig-files FILES="${{ steps.changed-files.outputs.files }}"
 
       # Lint Markdown files:
       - name: 'Lint Markdown files'

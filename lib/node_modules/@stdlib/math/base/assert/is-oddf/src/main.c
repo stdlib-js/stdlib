@@ -18,6 +18,7 @@
 
 #include "stdlib/math/base/assert/is_oddf.h"
 #include "stdlib/math/base/assert/is_evenf.h"
+#include <stdbool.h>
 
 /**
 * Tests if a finite single-precision floating-point number is an odd number.
@@ -28,7 +29,7 @@
 * @example
 * #include <stdbool.h>
 *
-* bool out = stdlib_base_is_oddf( 3.0 );
+* bool out = stdlib_base_is_oddf( 3.0f );
 * // returns true
 */
 bool stdlib_base_is_oddf( const float x ) {

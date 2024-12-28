@@ -160,7 +160,7 @@ deps-prerequisites-llvm:
 #/
 deps-install-llvm: $(DEPS_LLVM_BUILD_OUT) deps-prerequisites-llvm
 	$(QUIET) cd $(DEPS_LLVM_BUILD_OUT) && $(MKDIR_RECURSIVE) build
-	$(QUIET) cd $(DEPS_LLVM_BUILD_OUT)/build && $(CMAKE) -DLLVM_ENABLE_PROJECTS="clang;lld" -DCMAKE_BUILD_TYPE=Release -G "Unix Makefiles" ../llvm
+	$(QUIET) cd $(DEPS_LLVM_BUILD_OUT)/build && $(CMAKE) -DLLVM_ENABLE_PROJECTS="clang;lld;clang-tools-extra" -DCMAKE_BUILD_TYPE=Release -G "Unix Makefiles" ../llvm
 	$(QUIET) cd $(DEPS_LLVM_BUILD_OUT)/build && $(MAKE)
 
 .PHONY: deps-install-llvm

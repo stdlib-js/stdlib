@@ -20,7 +20,7 @@ limitations under the License.
 
 # bquinary2d
 
-> Apply a quinary callback to elements in four [broadcasted][@stdlib/array/base/broadcast-array] nested input arrays and assign results to elements in a two-dimensional nested output array.
+> Apply a quinary callback to elements in five [broadcasted][@stdlib/array/base/broadcast-array] nested input arrays and assign results to elements in a two-dimensional nested output array.
 
 <section class="intro">
 
@@ -38,7 +38,7 @@ var bquinary2d = require( '@stdlib/array/base/broadcasted-quinary2d' );
 
 #### bquinary2d( arrays, shapes, fcn )
 
-Applies a quinary callback to elements in four [broadcasted][@stdlib/array/base/broadcast-array] nested input arrays and assigns results to elements in a two-dimensional nested output array.
+Applies a quinary callback to elements in five [broadcasted][@stdlib/array/base/broadcast-array] nested input arrays and assigns results to elements in a two-dimensional nested output array.
 
 ```javascript
 var zeros2d = require( '@stdlib/array/base/zeros2d' );
