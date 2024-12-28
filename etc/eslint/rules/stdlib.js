@@ -346,7 +346,8 @@ rules[ 'stdlib/jsdoc-checkbox-character-style' ] = [
 	{
 		'checked': 'x',
 		'unchecked': ' '
-	}];
+	}
+];
 
 /**
 * Prevent checkboxes being followed by too much whitespace.
@@ -501,7 +502,8 @@ rules[ 'stdlib/jsdoc-code-block-style' ] = [ 'error', 'fenced' ];
 rules[ 'stdlib/jsdoc-fenced-code-flag' ] = [
 	'error', {
 		'allowEmpty': false
-	}];
+	}
+];
 
 /**
 * Require lowercased definition labels.
@@ -1647,7 +1649,8 @@ rules[ 'stdlib/jsdoc-list-item-spacing' ] = 'error';
 rules[ 'stdlib/jsdoc-markdown-remark' ] = [ 'error',
 	{
 		'config': require( './../../remark/.remarkrc.jsdoc.js' )
-	}];
+	}
+];
 
 /**
 * Require angle-bracketed links to include a protocol.
