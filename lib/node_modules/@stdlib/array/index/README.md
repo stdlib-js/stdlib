@@ -342,7 +342,7 @@ var o = idx.toJSON();
 
 -   `ArrayIndex` instances have no explicit functionality; however, they are used by ["fancy" arrays][@stdlib/array/to-fancy] and other packages for element retrieval and assignment.
 
--   Because `ArrayIndex` instances leverage an internal cache implementing the **Singleton pattern**, one **must** be sure to use the same `ArrayIndex` constructor as `ArrayIndex` consumers. If one uses a different `ArrayIndex` constructor, the consumer will **not** be able to resolve the original wrapped array, as the consumer will attempt to resolve an `ArrayIndex` instance in the wrong internal cache.
+-   Because `ArrayIndex` instances leverage an internal cache implementing the **singleton pattern**, one **must** be sure to use the same `ArrayIndex` constructor as `ArrayIndex` consumers. If one uses a different `ArrayIndex` constructor, the consumer will **not** be able to resolve the original wrapped array, as the consumer will attempt to resolve an `ArrayIndex` instance in the wrong internal cache.
 
 -   Because non-persisted `ArrayIndex` instances are freed after first use, in order to avoid holding onto memory and to allow garbage collection, one should avoid scenarios in which an `ArrayIndex` is never used. For example,
 
