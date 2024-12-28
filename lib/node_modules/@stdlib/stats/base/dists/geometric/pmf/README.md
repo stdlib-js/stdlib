@@ -133,6 +133,103 @@ for ( i = 0; i < 10; i++ ) {
 
 <!-- /.examples -->
 
+<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="references">
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/geometric/pmf.h"
+```
+
+#### stdlib_base_dists_geometric_pmf( x, p )
+
+Evaluates the [probability mass function][pmf] (PMF) of a [geometric][geometric-distribution] distribution with success probability `0 <= p <= 1`.
+
+```c
+double out = stdlib_base_dists_geometric_pmf( 4.0, 0.3 );
+// returns ~0.072
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **p**: `[in] double` probability of success.
+
+```c
+double stdlib_base_dists_geometric_pmf( const double x, const double p );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/geometric/pmf.h"
+#include "stdlib/math/base/special/round.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double x;
+    double p;
+    double y;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        x = stdlib_base_round( random_uniform( 0, 40 ) );
+        p = random_uniform( 0.0, 1.0 );
+        y = stdlib_base_dists_geometric_pmf( x, p );
+        printf( "x: %lf, p: %lf, P(X=x;p): %lf\n", x, p, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.references -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
