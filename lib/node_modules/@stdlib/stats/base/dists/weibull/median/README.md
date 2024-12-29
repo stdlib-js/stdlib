@@ -41,7 +41,7 @@ The [median][median] for a [Weibull][weibull-distribution] random variable is
 
 <!-- </equation> -->
 
-where `lambda > 0` is the [shape parameter][shape] and `k > 0` is the [scale parameter][scale].
+where `lambda > 0` is the [scale parameter][scale] and `k > 0` is the [shape parameter][shape].
 
 </section>
 
