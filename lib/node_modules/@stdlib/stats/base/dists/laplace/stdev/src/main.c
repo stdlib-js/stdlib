@@ -25,7 +25,7 @@
 *
 * @param mu      location parameter
 * @param b       scale parameter
-* @return        stdev
+* @return        standard deviation
 *
 * @example
 * double y = stdlib_base_laplace_stdev( 0.0, 1.0 );
