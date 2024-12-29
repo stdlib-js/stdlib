@@ -35,7 +35,7 @@ type Unary = ( p: number ) => number;
 */
 interface Quantile {
 	/**
-	* Evaluates the quantile function for a Weibull distribution with scale parameter `k` and shape parameter `lambda` at a probability `p`.
+	* Evaluates the quantile function for a Weibull distribution with shape parameter `k` and scale parameter `lambda` at a probability `p`.
 	*
 	* ## Notes
 	*

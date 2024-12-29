@@ -22,7 +22,7 @@
 #include "stdlib/math/base/special/pow.h"
 
 /**
-* Evaluates the cumulative distribution function (CDF) for a Weibull distribution with scale parameter `k` and shape parameter `lambda` at a value `x`.
+* Evaluates the cumulative distribution function (CDF) for a Weibull distribution with shape parameter `k` and scale parameter `lambda` at a value `x`.
 *
 * @param x         input value
 * @param k    	   shape parameter
