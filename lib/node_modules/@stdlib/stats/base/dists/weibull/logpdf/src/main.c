@@ -27,8 +27,8 @@
 * Evaluates the natural logarithm of the probability density function (PDF) for a Weibull distribution with shape parameter `k` and scale parameter `lambda` at a value `x`.
 *
 * @param x         input value
-* @param k         scale parameter
-* @param lambda    shape parameter
+* @param k         shape parameter
+* @param lambda    scale parameter
 * @return          evaluated logpdf
 *
 * @example

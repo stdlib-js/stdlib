@@ -3641,8 +3641,8 @@ interface Namespace {
 	/**
 	* Returns a readable stream for generating a stream of pseudorandom numbers drawn from a Weibull distribution.
 	*
-	* @param k - scale parameter
-	* @param lambda - shape parameter
+	* @param k - shape parameter
+	* @param lambda - scale parameter
 	* @param options - stream options
 	* @throws `k` must be a positive number
 	* @throws `lambda` must be a positive number
