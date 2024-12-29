@@ -19,7 +19,6 @@
 #include "stdlib/stats/base/dists/laplace/kurtosis.h"
 #include "stdlib/math/base/assert/is_nan.h"
 
-
 /**
 * Returns the excess kurtosis for a Laplace distribution with location `mu` and scale `b`.
 *
