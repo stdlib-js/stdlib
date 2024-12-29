@@ -244,7 +244,7 @@ rules[ 'stdlib/empty-line-before-comment' ] = 'error';
 *   'bar': true
 * }]);
 */
-rules[ 'stdlib/eol-open-bracket-spacing' ] = 'error';
+rules[ 'stdlib/eol-open-bracket-spacing' ] = 'off'; // FIXME: temporarily disabled until bugs are fixed
 
 /**
 * Require blockquotes to have `2` character indentation.
