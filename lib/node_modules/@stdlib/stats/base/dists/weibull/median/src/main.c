@@ -24,8 +24,8 @@
 /**
 * Returns the median of a Weibull distribution.
 *
-* @param k         scale parameter
-* @param lambda    shape parameter
+* @param k         shape parameter
+* @param lambda    scale parameter
 * @return          median
 *
 * @example
