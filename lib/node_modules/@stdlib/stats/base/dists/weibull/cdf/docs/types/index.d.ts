@@ -38,8 +38,8 @@ interface CDF {
 	* -   If provided a non-positive value for `lambda` or `k`, the function returns `NaN`.
 	*
 	* @param x - input value
-	* @param k - scale parameter
-	* @param lambda - shape parameter
+	* @param k - shape parameter
+	* @param lambda - scale parameter
 	* @returns evaluated CDF
 	*
 	* @example
@@ -79,8 +79,8 @@ interface CDF {
 	/**
 	* Returns a function for evaluating the cumulative distribution function (CDF) for a Weibull distribution.
 	*
-	* @param k - scale parameter
-	* @param lambda - shape parameter
+	* @param k - shape parameter
+	* @param lambda - scale parameter
 	* @returns CDF
 	*
 	* @example
@@ -98,8 +98,8 @@ interface CDF {
 * Weibull distribution cumulative distribution function (CDF).
 *
 * @param x - input value
-* @param k - scale parameter
-* @param lambda - shape parameter
+* @param k - shape parameter
+* @param lambda - scale parameter
 * @returns evaluated CDF
 *
 * @example

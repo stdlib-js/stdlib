@@ -31,15 +31,15 @@ type Unary = ( x: number ) => number;
 */
 interface LogCDF {
 	/**
-	* Evaluates the natural logarithm of the cumulative distribution function (CDF) for a Weibull distribution with scale parameter `k` and shape parameter `lambda` at a value `x`.
+	* Evaluates the natural logarithm of the cumulative distribution function (CDF) for a Weibull distribution with shape parameter `k` and scale parameter `lambda` at a value `x`.
 	*
 	* ## Notes
 	*
 	* -   If provided a non-positive value for `lambda` or `k`, the function returns `NaN`.
 	*
 	* @param x - input value
-	* @param k - scale parameter
-	* @param lambda - shape parameter
+	* @param k - shape parameter
+	* @param lambda - scale parameter
 	* @returns natural logarithm of CDF
 	*
 	* @example
@@ -79,8 +79,8 @@ interface LogCDF {
 	/**
 	* Returns a function for evaluating the natural logarithm of the cumulative distribution function (CDF) for a Weibull distribution.
 	*
-	* @param k - scale parameter
-	* @param lambda - shape parameter
+	* @param k - shape parameter
+	* @param lambda - scale parameter
 	* @returns logCDF
 	*
 	* @example
@@ -98,8 +98,8 @@ interface LogCDF {
 * Weibull distribution logarithm of cumulative distribution function (CDF).
 *
 * @param x - input value
-* @param k - scale parameter
-* @param lambda - shape parameter
+* @param k - shape parameter
+* @param lambda - scale parameter
 * @returns evaluated logCDF
 *
 * @example
