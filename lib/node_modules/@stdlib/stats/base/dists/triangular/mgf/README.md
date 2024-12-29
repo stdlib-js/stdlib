@@ -167,6 +167,100 @@ for ( i = 0; i < 10; i++ ) {
 
 <section class="references">
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/triangular/mgf.h"
+```
+
+#### stdlib_base_dists_triangular_mgf( t, a, b, c )
+
+Evaluates the [moment-generating function][mgf] (MGF) for a [triangular][triangular-distribution] distribution with parameters `a` (lower limit), `b` (upper limit), and `c` (mode).
+
+```c
+double y = stdlib_base_dists_triangular_mgf( 0.5, -1.0, 1.0, 0.0 );
+// returns ~1.021
+```
+
+The function accepts the following arguments:
+
+-   **t**: `[in] double` input value.
+-   **a**: `[in] double` lower limit.
+-   **b**: `[in] double` upper limit.
+-   **c**: `[in] double` mode.
+
+```c
+double stdlib_base_dists_triangular_mgf( const double t, const double a, const double b, const double c );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/triangular/mgf.h"
+#include "stdlib/constants/float64/eps.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double a;
+    double b;
+    double c;
+    double t;
+    double y;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        t = random_uniform( 0.0, 5.0 );
+        a = random_uniform( 0.0, 10.0 );
+        b = random_uniform( a, 40.0 ) + STDLIB_CONSTANT_FLOAT64_EPS;
+        c = random_uniform( a, b );
+        y = stdlib_base_dists_triangular_mgf( t, a, b, c );
+        printf( "t: %lf, a: %lf, b: %lf, c: %lf, M_X(t;a,b,c): %lf\n", t, a, b, c, y );
+    }
+}
+```
+
 </section>
 
 <!-- /.references -->
