@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Evaluates the natural logarithm of the cumulative distribution function (CDF) for a Weibull distribution with scale parameter `k` and shape parameter `lambda` at a value `x`.
+* Evaluates the natural logarithm of the cumulative distribution function (CDF) for a Weibull distribution with shape parameter `k` and scale parameter `lambda` at a value `x`.
 */
 double stdlib_base_dists_weibull_logcdf( const double x, const double k, const double lambda );
 

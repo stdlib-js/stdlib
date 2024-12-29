@@ -43,8 +43,8 @@ interface Quantile {
 	* -   If provided a nonpositive value for `lambda` or `k`, the function returns `NaN`.
 	*
 	* @param p - input value
-	* @param k - scale parameter
-	* @param lambda - shape parameter
+	* @param k - shape parameter
+	* @param lambda - scale parameter
 	* @returns evaluated quantile function
 	*
 	* @example
@@ -84,8 +84,8 @@ interface Quantile {
 	/**
 	* Returns a function for evaluating the quantile function for a Weibull distribution.
 	*
-	* @param k - scale parameter
-	* @param lambda - shape parameter
+	* @param k - shape parameter
+	* @param lambda - scale parameter
 	* @returns quantile function
 	*
 	* @example
@@ -103,8 +103,8 @@ interface Quantile {
 * Weibull distribution quantile function.
 *
 * @param p - input value
-* @param k - scale parameter
-* @param lambda - shape parameter
+* @param k - shape parameter
+* @param lambda - scale parameter
 * @returns evaluated quantile function
 *
 * @example

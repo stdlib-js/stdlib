@@ -189,8 +189,8 @@ double out = stdlib_base_dists_weibull_cdf( 2.0, 1.0, 1.0 );
 The function accepts the following arguments:
 
 -   **x**: `[in] double` input value.
--   **k**: `[in] double` scale parameter.
--   **lambda**: `[in] double` shape parameter.
+-   **k**: `[in] double` shape parameter.
+-   **lambda**: `[in] double` scale parameter.
 
 ```c
 double stdlib_base_dists_weibull_cdf( const double x, const double k, const double lambda );
