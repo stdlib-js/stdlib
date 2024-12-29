@@ -39,7 +39,7 @@ F(x;\lambda, k) =\begin{cases}1- e^{-(x/\lambda)^k} & x \geq 0 \\ 0 & x<0\end{ca
 
 <!-- </equation> -->
 
-where `lambda > 0` is the [shape parameter][shape] and `k > 0` is the [scale parameter][scale].
+where `lambda > 0` is the [scale parameter][scale] and `k > 0` is the [shape parameter][shape].
 
 </section>
 
