@@ -1387,7 +1387,7 @@ declare module '@stdlib/types/ndarray' {
 	import { ArrayLike, AccessorArrayLike, BooleanArray, BooleanTypedArray, Collection, Complex128Array, Complex64Array, RealOrComplexTypedArray, FloatOrComplexTypedArray, RealTypedArray, ComplexTypedArray, IntegerTypedArray, FloatTypedArray, SignedIntegerTypedArray, UnsignedIntegerTypedArray } from '@stdlib/types/array';
 	import { ComplexLike, Complex128, Complex64 } from '@stdlib/types/complex'; // eslint-disable-line no-duplicate-imports
 	import { Layout } from '@stdlib/types/blas';
-	import { Remap } from '@stdlib/types/utilities';
+	import { Remap } from '@stdlib/types/utilities'; // eslint-disable-line no-duplicate-imports
 
 	/**
 	* Data type.
