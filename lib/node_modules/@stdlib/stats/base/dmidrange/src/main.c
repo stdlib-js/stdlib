@@ -20,38 +20,49 @@
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/assert/is_positive_zero.h"
 #include "stdlib/math/base/assert/is_negative_zero.h"
-#include <stdint.h>
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/stride2offset.h"
 
 /**
 * Computes the mid-range of a double-precision floating-point strided array.
 *
-* @param N       number of indexed elements
-* @param X       input array
-* @param stride  stride length
-* @return        output value
+* @param N        number of indexed elements
+* @param X        input array
+* @param strideX  stride length
+* @return         output value
 */
-double stdlib_strided_dmidrange( const int64_t N, const double *X, const int64_t stride ) {
+double API_SUFFIX(stdlib_strided_dmidrange)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX ) {
+	const CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	return API_SUFFIX(stdlib_strided_dmidrange_ndarray)( N, X, strideX, ox );
+}
+
+/**
+* Computes the mid-range of a double-precision floating-point strided array and using alternative indexing semantics.
+*
+* @param N        number of indexed elements
+* @param X        input array
+* @param strideX  stride length
+* @param offsetX  starting index for X
+* @return         output value
+*/
+double API_SUFFIX(stdlib_strided_dmidrange_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+	CBLAS_INT ix;
+	CBLAS_INT i;
 	double max;
 	double min;
-	int64_t ix;
-	int64_t i;
 	double v;
 
 	if ( N <= 0 ) {
 		return 0.0 / 0.0; // NaN
 	}
-	if ( N == 1 || stride == 0 ) {
-		return X[ 0 ];
+	if ( N == 1 || strideX == 0 ) {
+		return X[ offsetX ];
 	}
-	if ( stride < 0 ) {
-		ix = (1-N) * stride;
-	} else {
-		ix = 0;
-	}
+	ix = offsetX;
 	min = X[ ix ];
 	max = min;
 	for ( i = 1; i < N; i++ ) {
-		ix += stride;
+		ix += strideX;
 		v = X[ ix ];
 		if ( stdlib_base_is_nan( v ) ) {
 			return v;
