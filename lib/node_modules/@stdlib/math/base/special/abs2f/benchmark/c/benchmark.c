@@ -87,7 +87,7 @@ static float rand_float( void ) {
 * Computes the squared absolute value.
 *
 * @param x  input value
-* @return squared absolute value
+* @return   squared absolute value
 */
 float abs2f( float x ) {
 	return x * x;

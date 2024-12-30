@@ -87,7 +87,7 @@ static double rand_double( void ) {
 * Computes the nth negaFibonacci number.
 *
 * @param n   negaFibonacci number to compute
-* @return negaFibonacci number
+* @return    negaFibonacci number
 */
 int negafibonacci( int n ) {
 	if ( n == 0 ) {
