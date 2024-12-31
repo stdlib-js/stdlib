@@ -92,6 +92,7 @@ The function supports the following options:
 
     -   **data**: the underlying index ndarray.
     -   **type**: the index type. Must be either `'mask'`, `'bool'`, or `'int'`.
+    -   **kind**: the index kind. Must be either `''`, `'cartesian'`, or `'linear'`.
     -   **dtype**: the [data type][@stdlib/ndarray/dtypes] of the underlying ndarray.
 
     If an ndarray index is not associated with a provided identifier, the `get` method should return `null`.
@@ -132,6 +133,7 @@ The function supports the following options:
 
     -   **data**: the underlying index ndarray.
     -   **type**: the index type. Must be either `'mask'`, `'bool'`, or `'int'`.
+    -   **kind**: the index kind. Must be either `''`, `'cartesian'`, or `'linear'`.
     -   **dtype**: the [data type][@stdlib/ndarray/dtypes] of the underlying ndarray.
 
     If an ndarray index is not associated with a provided identifier, the `get` method should return `null`.
@@ -194,6 +196,10 @@ For documentation and usage, see [`ndindex`][@stdlib/ndarray/index].
 ### Bounds Checking
 
 // TODO: see array/to-fancy
+
+### Linear Indexing
+
+// TODO: only applies to non-zero-dimensional ndarrays. In non-strict mode, out-of-bounds indices return `undefined` and fail to assign.
 
 ### Broadcasting
 
