@@ -27,12 +27,12 @@ import { Collection } from '@stdlib/types/array';
 */
 interface Routine {
 	/**
-	* Fills a strided array with a specified scalar value.
+	* Fills a strided array with a specified scalar constant.
 	*
 	* @param N - number of indexed elements
-	* @param alpha - constant
+	* @param alpha - scalar constant
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns `x`
 	*
 	* @example
@@ -41,16 +41,16 @@ interface Routine {
 	* gfill( x.length, 5.0, x, 1 );
 	* // x => [ 5.0, 5.0, 5.0, 0.0, 5.0, 5.0, 5.0, 5.0 ]
 	*/
-	<T = unknown, U = unknown>( N: number, alpha: T, x: Collection<U>, stride: number ): Collection<T | U>;
+	<T = unknown, U = unknown>( N: number, alpha: T, x: Collection<U>, strideX: number ): Collection<T | U>;
 
 	/**
-	* Fills a strided array with a specified scalar value using alternative indexing semantics.
+	* Fills a strided array with a specified scalar constant using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
-	* @param alpha - constant
+	* @param alpha - scalar constant
 	* @param x - input array
-	* @param stride - stride length
-	* @param offset - starting index
+	* @param strideX - stride length
+	* @param offsetX - starting index
 	* @returns `x`
 	*
 	* @example
@@ -59,16 +59,16 @@ interface Routine {
 	* gfill.ndarray( x.length, 5.0, x, 1, 0 );
 	* // x => [ 5.0, 5.0, 5.0, 0.0, 5.0, 5.0, 5.0, 5.0 ]
 	*/
-	ndarray<T = unknown, U = unknown>( N: number, alpha: T, x: Collection<U>, stride: number, offset: number ): Collection<T | U>;
+	ndarray<T = unknown, U = unknown>( N: number, alpha: T, x: Collection<U>, strideX: number, offsetX: number ): Collection<T | U>;
 }
 
 /**
-* Fills a strided array with a specified scalar value.
+* Fills a strided array with a specified scalar constant.
 *
 * @param N - number of indexed elements
-* @param alpha - constant
+* @param alpha - scalar constant
 * @param x - input array
-* @param stride - stride length
+* @param strideX - stride length
 * @returns `x`
 *
 * @example
