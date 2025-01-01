@@ -39,7 +39,7 @@ Q(p;k,\lambda) = \lambda {(-\ln(1-p))}^{1/k}
 
 <!-- </equation> -->
 
-for `0 <= p < 1`, where `lambda > 0` is the [shape parameter][shape] and `k > 0` is the [scale parameter][scale].
+for `0 <= p < 1`, where `lambda > 0` is the [scale parameter][scale] and `k > 0` is the [shape parameter][shape].
 
 </section>
 
