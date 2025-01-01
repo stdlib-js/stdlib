@@ -33,7 +33,7 @@
 double stdlib_base_dists_rayleigh_mean( const double sigma ) {
 	if (
 		stdlib_base_is_nan( sigma ) ||
-		sigma < 0
+		sigma < 0.0
 	) {
 		return 0.0 / 0.0; // NaN
 	}

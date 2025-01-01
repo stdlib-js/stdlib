@@ -22,13 +22,13 @@
 /**
 * Returns the mode of a triangular distribution.
 *
-* @param a  lower bound
-* @param b  upper bound
-* @param c  mode (peak)
+* @param a  minimum support
+* @param b  maximum support
+* @param c  mode
 * @returns  mode
 *
 * @example
-* var v = mode( 0.0, 10.0, 5.0 );
+* double v = mode( 0.0, 10.0, 5.0 );
 * // returns 5.0
 */
 double stdlib_base_dists_triangular_mode( const double a, const double b, const double c ) {

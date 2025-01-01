@@ -36,7 +36,7 @@ limitations under the License.
 var dnanmin = require( '@stdlib/stats/base/dnanmin' );
 ```
 
-#### dnanmin( N, x, stride )
+#### dnanmin( N, x, strideX )
 
 Computes the minimum value of a double-precision floating-point strided array `x`, ignoring `NaN` values.
 
@@ -44,9 +44,8 @@ Computes the minimum value of a double-precision floating-point strided array `x
 var Float64Array = require( '@stdlib/array/float64' );
 
 var x = new Float64Array( [ 1.0, -2.0, NaN, 2.0 ] );
-var N = x.length;
 
-var v = dnanmin( N, x, 1 );
+var v = dnanmin( x.length, x, 1 );
 // returns -2.0
 ```
 
@@ -54,18 +53,16 @@ The function has the following parameters:
 
 -   **N**: number of indexed elements.
 -   **x**: input [`Float64Array`][@stdlib/array/float64].
--   **stride**: index increment for `x`.
+-   **strideX**: index increment for `x`.
 
-The `N` and `stride` parameters determine which elements in `x` are accessed at runtime. For example, to compute the minimum value of every other element in `x`,
+The `N` and stride parameters determine which elements in strided array are accessed at runtime. For example, to compute the minimum value of every other element in `x`,
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 var x = new Float64Array( [ 1.0, 2.0, -7.0, -2.0, 4.0, 3.0, NaN, NaN ] );
-var N = floor( x.length / 2 );
 
-var v = dnanmin( N, x, 2 );
+var v = dnanmin( 4, x, 2 );
 // returns -7.0
 ```
 
@@ -75,18 +72,15 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 var x0 = new Float64Array( [ 2.0, 1.0, -2.0, -2.0, 3.0, 4.0, NaN, NaN ] );
 var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 
-var N = floor( x0.length / 2 );
-
-var v = dnanmin( N, x1, 2 );
+var v = dnanmin( 4, x1, 2 );
 // returns -2.0
 ```
 
-#### dnanmin.ndarray( N, x, stride, offset )
+#### dnanmin.ndarray( N, x, strideX, offsetX )
 
 Computes the minimum value of a double-precision floating-point strided array, ignoring `NaN` values and using alternative indexing semantics.
 
@@ -94,26 +88,23 @@ Computes the minimum value of a double-precision floating-point strided array, i
 var Float64Array = require( '@stdlib/array/float64' );
 
 var x = new Float64Array( [ 1.0, -2.0, NaN, 2.0 ] );
-var N = x.length;
 
-var v = dnanmin.ndarray( N, x, 1, 0 );
+var v = dnanmin.ndarray( x.length, x, 1, 0 );
 // returns -2.0
 ```
 
 The function has the following additional parameters:
 
--   **offset**: starting index for `x`.
+-   **offsetX**: starting index for `x`.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the `offset` parameter supports indexing semantics based on a starting index. For example, to calculate the minimum value for every other value in `x` starting from the second value
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameter supports indexing semantics based on a starting index. For example, to calculate the minimum value for every other element in `x` starting from the second element
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 var x = new Float64Array( [ 2.0, 1.0, -2.0, -2.0, 3.0, 4.0, NaN, NaN ] );
-var N = floor( x.length / 2 );
 
-var v = dnanmin.ndarray( N, x, 2, 1 );
+var v = dnanmin.ndarray( 4, x, 2, 1 );
 // returns -2.0
 ```
 
@@ -163,6 +154,124 @@ console.log( v );
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dnanmin.h"
+```
+
+#### stdlib_strided_dnanmin( N, \*X, strideX )
+
+Calculate the minimum value of a double-precision floating-point strided array, ignoring `NaN` values.
+
+```c
+const double x[] = { 1.0, -2.0, 0.0 / 0.0, -4.0 };
+
+double v = stdlib_strided_dnanmin( 4, x, 1 );
+// returns 1.0
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[in] double*` input array.
+-   **strideX**: `[in] CBLAS_INT` stride length for `X`.
+
+```c
+double stdlib_strided_dnanmin( const CBLAS_INT N, const double *X, const CBLAS_INT strideX );
+```
+
+#### stdlib_strided_dnanmin_ndarray( N, \*X, strideX, offsetX )
+
+Computes the minimum value of a double-precision floating-point strided array, ignoring `NaN` values and using alternative indexing semantics.
+
+```c
+const double x[] = { 1.0, -2.0, 0.0 / 0.0, -4.0 };
+
+double v = stdlib_strided_dnanmin_ndarray( 4, x, 1, 0 );
+// returns 1.0
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[in] double*` input array.
+-   **strideX**: `[in] CBLAS_INT` stride length for `X`.
+-   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
+
+```c
+double stdlib_strided_dnanmin_ndarray( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dnanmin.h"
+#include <stdint.h>
+#include <stdio.h>
+
+int main( void ) {
+    // Create a strided array:
+    const double x[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 0.0/0.0, 0.0/0.0 };
+
+    // Specify the number of elements:
+    const int N = 5;
+
+    // Specify the stride length:
+    const int strideX = 2;
+
+    // Compute the minimum value:
+    double v = stdlib_strided_dnanmin( N, x, strideX );
+
+    // Print the result:
+    printf( "min: %lf\n", v );
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 

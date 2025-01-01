@@ -87,7 +87,7 @@ static double rand_double( void ) {
 * Computes the ramp function.
 *
 * @param x   input value
-* @return function result
+* @return    function result
 */
 double ramp( double x ) {
 	if ( x >= 0.0 ) {
