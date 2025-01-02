@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2020 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -18,7 +18,8 @@
 
 #include "stdlib/blas/ext/base/dsumkbn2.h"
 #include "stdlib/math/base/special/abs.h"
-#include <stdint.h>
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/stride2offset.h"
 
 /**
 * Computes the sum of double-precision floating-point strided array elements using a second-order iterative Kahan–Babuška algorithm.
@@ -31,16 +32,38 @@
 *
 * -   Klein, Andreas. 2005. "A Generalized Kahan-Babuška-Summation-Algorithm." _Computing_ 76 (3): 279–93. doi:[10.1007/s00607-005-0139-x](https://doi.org/10.1007/s00607-005-0139-x).
 *
-* @param N       number of indexed elements
-* @param X       input array
-* @param stride  stride length
-* @return        output value
+* @param N        number of indexed elements
+* @param X        input array
+* @param strideX  stride length
+* @return         output value
 */
-double stdlib_strided_dsumkbn2( const int64_t N, const double *X, const int64_t stride ) {
+double API_SUFFIX(stdlib_strided_dsumkbn2)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX ) {
+	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	return API_SUFFIX( stdlib_strided_dsumkbn2_ndarray )( N, X, strideX, ox );
+}
+
+/**
+* Computes the sum of double-precision floating-point strided array elements using a second-order iterative Kahan–Babuška algorithm and alternative indexing semantics.
+*
+* ## Method
+*
+* -   This implementation uses a second-order iterative Kahan–Babuška algorithm, as described by Klein (2005).
+*
+* ## References
+*
+* -   Klein, Andreas. 2005. "A Generalized Kahan-Babuška-Summation-Algorithm." _Computing_ 76 (3): 279–93. doi:[10.1007/s00607-005-0139-x](https://doi.org/10.1007/s00607-005-0139-x).
+*
+* @param N        number of indexed elements
+* @param X        input array
+* @param strideX  stride length
+* @param offsetX  starting index
+* @return         output value
+*/
+double API_SUFFIX(stdlib_strided_dsumkbn2_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+	CBLAS_INT ix;
+	CBLAS_INT i;
 	double sum;
 	double ccs;
-	int64_t ix;
-	int64_t i;
 	double cs;
 	double cc;
 	double v;
@@ -50,13 +73,9 @@ double stdlib_strided_dsumkbn2( const int64_t N, const double *X, const int64_t 
 	if ( N <= 0 ) {
 		return 0.0;
 	}
-	if ( N == 1 || stride == 0 ) {
-		return X[ 0 ];
-	}
-	if ( stride < 0 ) {
-		ix = (1-N) * stride;
-	} else {
-		ix = 0;
+	ix = offsetX;
+	if ( strideX == 0 ) {
+		return N * X[ ix ];
 	}
 	sum = 0.0;
 	ccs = 0.0; // second order correction term for lost lower order bits
@@ -78,7 +97,7 @@ double stdlib_strided_dsumkbn2( const int64_t N, const double *X, const int64_t 
 		}
 		cs = t;
 		ccs += cc;
-		ix += stride;
+		ix += strideX;
 	}
 	return sum + cs + ccs;
 }
