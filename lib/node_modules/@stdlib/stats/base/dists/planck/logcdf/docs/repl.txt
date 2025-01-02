@@ -1,0 +1,65 @@
+
+{{alias}}( x, λ )
+    Evaluates the logarithm of the cumulative distribution function (CDF) for a
+    Planck distribution with shape parameter `λ` at a value `x`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If `λ <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    λ: number
+        Shape parameter.
+
+    Returns
+    -------
+    out: number
+        Evaluated logCDF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 2.0, 0.5 )
+    ~-0.2525
+    > y = {{alias}}( 2.0, 1.5 )
+    ~-0.0112
+    > y = {{alias}}( -1.0, 4.0 )
+    -Infinity
+    > y = {{alias}}( NaN, 0.5 )
+    NaN
+    > y = {{alias}}( 0.0, NaN )
+    NaN
+    // Invalid shape parameter
+    > y = {{alias}}( 2.0, -1.4 )
+    NaN
+
+
+{{alias}}.factory( λ )
+    Returns a function for evaluating the logarithm of the cumulative
+    distribution function (CDF) of a Planck distribution with shape parameter
+    `λ`.
+
+    Parameters
+    ----------
+    λ: number
+        Shape parameter.
+
+    Returns
+    -------
+    logcdf: Function
+        Logarithm of cumulative distribution function (CDF).
+
+    Examples
+    --------
+    > var mylogcdf = {{alias}}.factory( 1.5 );
+    > var y = mylogcdf( 3.0 )
+    ~-0.0025
+    > y = mylogcdf( 1.0 )
+    ~-0.0511
+
+    See Also
+    --------
+
