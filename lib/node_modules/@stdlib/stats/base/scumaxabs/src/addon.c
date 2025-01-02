@@ -20,9 +20,7 @@
 #include "stdlib/napi/export.h"
 #include "stdlib/napi/argv.h"
 #include "stdlib/napi/argv_int64.h"
-#include "stdlib/napi/argv_double.h"
 #include "stdlib/napi/argv_strided_float32array.h"
-#include "stdlib/napi/create_double.h"
 #include <node_api.h>
 
 /**
@@ -39,7 +37,7 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_INT64( env, strideY, argv, 4 );
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT32ARRAY( env, X, N, strideX, argv, 1 );
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT32ARRAY( env, Y, N, strideY, argv, 3 );
-    stdlib_strided_scumaxabs( N, X, strideX, Y, strideY );
+	stdlib_strided_scumaxabs( N, X, strideX, Y, strideY );
 	return NULL;
 }
 
