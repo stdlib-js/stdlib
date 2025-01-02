@@ -52,9 +52,9 @@ static napi_value addon_method( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV( env, info, argv, argc, 7 );
 	STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
 	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 2 );
-    STDLIB_NAPI_ARGV_INT64( env, strideY, argv, 5 );
+	STDLIB_NAPI_ARGV_INT64( env, strideY, argv, 5 );
 	STDLIB_NAPI_ARGV_INT64( env, offsetX, argv, 3 );
-    STDLIB_NAPI_ARGV_INT64( env, offsetY, argv, 6 );
+	STDLIB_NAPI_ARGV_INT64( env, offsetY, argv, 6 );
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT32ARRAY( env, X, N, strideX, argv, 1 );
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT32ARRAY( env, Y, N, strideY, argv, 4 );
 	stdlib_strided_scumax_ndarray( N, X, strideX, offsetX, Y, strideY, offsetY );
