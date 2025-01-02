@@ -34,10 +34,27 @@
 static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV( env, info, argv, argc, 3 );
 	STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
-	STDLIB_NAPI_ARGV_INT64( env, stride, argv, 2 );
-	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, stride, argv, 1 );
-	STDLIB_NAPI_CREATE_DOUBLE( env, stdlib_strided_dmaxsorted( N, X, stride ), v );
+	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 2 );
+	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, strideX, argv, 1 );
+	STDLIB_NAPI_CREATE_DOUBLE( env, stdlib_strided_dmaxsorted( N, X, strideX ), v );
 	return v;
 }
 
-STDLIB_NAPI_MODULE_EXPORT_FCN( addon )
+/**
+* Receives JavaScript callback invocation data.
+*
+* @param env    environment under which the function is invoked
+* @param info   callback data
+* @return       Node-API value
+*/
+static napi_value addon_method( napi_env env, napi_callback_info info ) {
+	STDLIB_NAPI_ARGV( env, info, argv, argc, 4 );
+	STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
+	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 2 );
+	STDLIB_NAPI_ARGV_INT64( env, offsetX, argv, 3 );
+	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, strideX, argv, 1 );
+	STDLIB_NAPI_CREATE_DOUBLE( env, stdlib_strided_dmaxsorted_ndarray( N, X, strideX, offsetX ), v );
+	return v;
+}
+
+STDLIB_NAPI_MODULE_EXPORT_FCN_WITH_METHOD( addon, "ndarray", addon_method )

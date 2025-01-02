@@ -19,33 +19,43 @@
 #include "stdlib/stats/base/dmaxsorted.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/assert/is_positive_zero.h"
-#include <stdint.h>
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/stride2offset.h"
 
 /**
 * Computes the maximum value of a sorted double-precision floating-point strided array.
 *
-* @param N       number of indexed elements
-* @param X       sorted input array
-* @param stride  stride length
-* @return        output value
+* @param N        number of indexed elements
+* @param X        sorted input array
+* @param strideX  stride length
+* @return         output value
 */
-double stdlib_strided_dmaxsorted( const int64_t N, const double *X, const int64_t stride ) {
+double API_SUFFIX(stdlib_strided_dmaxsorted)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX ) {
+	const CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	return API_SUFFIX(stdlib_strided_dmaxsorted_ndarray)( N, X, strideX, ox );
+}
+
+/**
+* Computes the maximum value of a sorted double-precision floating-point strided array.
+*
+* @param N        number of indexed elements
+* @param X        sorted input array
+* @param strideX  stride length
+* @param offsetX  starting index for X
+* @return         output value
+*/
+double API_SUFFIX(stdlib_strided_dmaxsorted_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
 	double v1;
 	double v2;
 
 	if ( N <= 0 ) {
 		return 0.0 / 0.0; // NaN
 	}
-	if ( N == 1 || stride == 0 ) {
+	if ( N == 1 || strideX == 0 ) {
 		return X[ 0 ];
 	}
-	if ( stride < 0 ) {
-		v1 = X[ (1-N) * stride ];
-		v2 = X[ 0 ];
-	} else {
-		v1 = X[ 0 ];
-		v2 = X[ (N-1) * stride ];
-	}
+	v1 = X[ offsetX ];
+	v2 = X[ (N-1) * strideX + offsetX ];
 	if ( stdlib_base_is_nan( v1 ) || stdlib_base_is_nan( v2 ) ) {
 		return 0.0 / 0.0; // NaN
 	}
