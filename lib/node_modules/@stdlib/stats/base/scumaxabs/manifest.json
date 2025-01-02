@@ -1,5 +1,7 @@
 {
-  "options": {},
+  "options": {
+    "task": "build"
+  },
   "fields": [
     {
       "field": "src",
@@ -24,6 +26,45 @@
   ],
   "confs": [
     {
+      "task": "build",
+      "src": [
+        "./src/scumaxabs.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-double",
+        "@stdlib/napi/argv-strided-float32array",
+        "@stdlib/napi/create-double"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/scumaxabs.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nanf"
+      ]
+    },
+    {
+      "task": "examples",
       "src": [
         "./src/scumaxabs.c"
       ],
