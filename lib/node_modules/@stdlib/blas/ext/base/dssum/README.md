@@ -133,7 +133,7 @@ var v = dssum.ndarray( 4, x, 2, 1 );
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var dssum = require( '@stdlib/blas/ext/base/dssum' );
 
-var x = discreteUniform( 10.0, -100, 100, {
+var x = discreteUniform( 10, -100, 100, {
     'dtype': 'float32'
 });
 console.log( x );
