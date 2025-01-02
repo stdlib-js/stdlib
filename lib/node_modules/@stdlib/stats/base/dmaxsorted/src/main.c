@@ -55,7 +55,7 @@ double API_SUFFIX(stdlib_strided_dmaxsorted_ndarray)( const CBLAS_INT N, const d
 		return X[ 0 ];
 	}
 	v1 = X[ offsetX ];
-	v2 = X[ (N-1) * strideX + offsetX ];
+	v2 = X[ ( (N-1)*strideX ) + offsetX ];
 	if ( stdlib_base_is_nan( v1 ) || stdlib_base_is_nan( v2 ) ) {
 		return 0.0 / 0.0; // NaN
 	}
