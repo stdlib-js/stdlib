@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/stats/base/dists/planck/logcdf",
   "version": "0.0.0",
-  "description": "Evaluate the logarithm of cumulative distribution function (CDF) for a Planck (discrete exponential) distribution.",
+  "description": "Evaluate the logarithm of the cumulative distribution function (CDF) for a Planck (discrete exponential) distribution.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

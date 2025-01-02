@@ -86,7 +86,7 @@ interface LogCDF {
 }
 
 /**
-* Evaluates the logarithm of cumulative distribution function (CDF) for a Planck distribution with shape parameter `lambda`.
+* Evaluates the logarithm of the cumulative distribution function (CDF) for a Planck distribution with shape parameter `lambda`.
 *
 * @param x - input value
 * @param lambda - shape parameter
