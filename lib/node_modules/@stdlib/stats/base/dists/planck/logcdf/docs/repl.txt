@@ -50,7 +50,7 @@
     Returns
     -------
     logcdf: Function
-        Logarithm of cumulative distribution function (CDF).
+        Logarithm of the cumulative distribution function (CDF).
 
     Examples
     --------

@@ -20,7 +20,7 @@ limitations under the License.
 
 # Logarithm of Cumulative Distribution Function
 
-> Evaluate the logarithm of [cumulative distribution function][cdf] Planck (discrete exponential) distribution.
+> Evaluate the logarithm of the [cumulative distribution function][cdf] Planck (discrete exponential) distribution.
 
 <section class="intro">
 
