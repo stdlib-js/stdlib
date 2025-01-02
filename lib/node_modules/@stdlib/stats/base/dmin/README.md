@@ -95,7 +95,7 @@ var v = dmin.ndarray( x.length, x, 1, 0 );
 
 The function has the following additional parameters:
 
--   **offset**: starting index for `x`.
+-   **offsetX**: starting index for `x`.
 
 While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameter supports indexing semantics based on a starting index. For example, to calculate the minimum value for every other element in `x` starting from the second element
 
@@ -160,7 +160,7 @@ console.log( v );
 Computes the minimum value of a double-precision floating-point strided array.
 
 ```c
-const double x[] = { 1.0, -2.0, 2 };
+const double x[] = { 1.0, -2.0, 2.0 };
 
 double v = stdlib_strided_dmin( 3, x, 2 );
 // returns -2.0
@@ -181,7 +181,7 @@ double stdlib_strided_dmin( const CBLAS_INT N, const double *X, const CBLAS_INT 
 Computes the minimum value of a double-precision floating-point strided array using alternative indexing semantics.
 
 ```c
-const double x[] = { 1.0, -2.0, 2 };
+const double x[] = { 1.0, -2.0, 2.0 };
 
 double v = stdlib_strided_dmin_ndarray( 3, x, 2, 0 );
 // returns -2.0
@@ -229,10 +229,10 @@ int main( void ) {
     const int N = 4;
 
     // Specify the stride length:
-    const int stride = 2;
+    const int strideX = 2;
 
     // Compute the minimum value:
-    double v = stdlib_strided_dmin( N, x, stride );
+    double v = stdlib_strided_dmin( N, x, strideX );
 
     // Print the result:
     printf( "min: %lf\n", v );
