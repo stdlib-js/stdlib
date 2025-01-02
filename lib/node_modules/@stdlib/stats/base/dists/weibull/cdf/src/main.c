@@ -25,7 +25,7 @@
 * Evaluates the cumulative distribution function (CDF) for a Weibull distribution with shape parameter `k` and scale parameter `lambda` at a value `x`.
 *
 * @param x         input value
-* @param k    	   shape parameter
+* @param k         shape parameter
 * @param lambda    scale parameter
 * @return          evaluated CDF
 *
