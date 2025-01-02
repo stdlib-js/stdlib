@@ -18,8 +18,9 @@
 
 #include "stdlib/stats/base/dcuminabs.h"
 #include "stdlib/math/base/assert/is_nan.h"
-#include <stdint.h>
-#include <math.h>
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/stride2offset.h"
+#include "stdlib/math/base/special/abs.h"
 
 /**
 * Computes the cumulative minimum absolute value of double-precision floating-point strided array elements.
@@ -30,27 +31,37 @@
 * @param Y        output array
 * @param strideY  Y stride length
 */
-void stdlib_strided_dcuminabs( const int64_t N, const double *X, const int64_t strideX, double *Y, const int64_t strideY ) {
+void stdlib_strided_dcuminabs( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY ) {
+	const CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	const CBLAS_INT oy = stdlib_strided_stride2offset( N, strideY );
+	API_SUFFIX(stdlib_strided_dcuminabs_ndarray)( N, X, strideX, ox, Y, strideY, oy );
+	return;
+}
+
+/**
+* Computes the cumulative minimum absolute value of double-precision floating-point strided array elements using alternative indexing semantics.
+*
+* @param N        number of indexed elements
+* @param X        input array
+* @param strideX  X stride length
+* @param offsetX  starting index for X
+* @param Y        output array
+* @param strideY  Y stride length
+* @param offsetY  starting index for Y
+*/
+void API_SUFFIX(stdlib_strided_dcuminabs_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, double *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY ) {
+	CBLAS_INT ix;
+	CBLAS_INT iy;
+	CBLAS_INT i;
 	double min;
-	int64_t ix;
-	int64_t iy;
-	int64_t i;
 	double v;
 
 	if ( N <= 0 ) {
 		return;
 	}
-	if ( strideX < 0 ) {
-		ix = (1-N) * strideX;
-	} else {
-		ix = 0;
-	}
-	if ( strideY < 0 ) {
-		iy = (1-N) * strideY;
-	} else {
-		iy = 0;
-	}
-	min = fabs( X[ ix ] );
+	ix = offsetX;
+	iy = offsetY;
+	min = stdlib_base_abs( X[ ix ] );
 	Y[ iy ] = min;
 
 	iy += strideY;
@@ -78,3 +89,4 @@ void stdlib_strided_dcuminabs( const int64_t N, const double *X, const int64_t s
 	}
 	return;
 }
+
