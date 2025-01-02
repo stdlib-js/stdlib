@@ -19,7 +19,7 @@
 #ifndef STDLIB_STATS_BASE_DMINSORTED_H
 #define STDLIB_STATS_BASE_DMINSORTED_H
 
-#include <stdint.h>
+#include "stdlib/blas/base/shared.h"
 
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
@@ -31,7 +31,12 @@ extern "C" {
 /**
 * Computes the minimum value of a sorted double-precision floating-point strided array.
 */
-double stdlib_strided_dminsorted( const int64_t N, const double *X, const int64_t stride );
+double API_SUFFIX(stdlib_strided_dminsorted)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX );
+
+/**
+* Computes the minimum value of a sorted double-precision floating-point strided array using alternative indexing semantics.
+*/
+double API_SUFFIX(stdlib_strided_dminsorted_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
 
 #ifdef __cplusplus
 }
