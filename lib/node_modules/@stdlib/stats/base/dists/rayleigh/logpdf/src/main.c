@@ -28,7 +28,7 @@
 *
 * @param x        input value
 * @param sigma    scale parameter
-* @return         evaluated LOGPDF
+* @return         evaluated logPDF
 *
 * @example
 * double y = stdlib_base_arcsine_cdf( 0.3, 1.0 );

@@ -29,7 +29,7 @@
 * @param x         input value
 * @param k         shape parameter
 * @param lambda    scale parameter
-* @return          evaluated logpdf
+* @return          evaluated logPDF
 *
 * @example
 * double y = stdlib_base_weibull_logpdf( 2.0, 1.0, 0.5 );
