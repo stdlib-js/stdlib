@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,19 +16,8 @@
 * limitations under the License.
 */
 
-'use strict';
+#include "stdlib/math/base/special/falling_factorial.h"
+#include "stdlib/math/base/napi/binary.h"
 
-var randu = require( '@stdlib/random/array/uniform' );
-var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var fallingFactorial = require( './../lib' );
-
-var n;
-var x;
-var i;
-
-x = randu( 100, -20.0, 20.0 );
-n = discreteUniform( 100, 0, 20 );
-
-for ( i = 0; i < 100; i++ ) {
-	console.log( 'fallingFactorial(%d,%d) = %d', x[ i ], n[ i ], fallingFactorial( x[ i ], n[ i ] ) );
-}
+// cppcheck-suppress shadowFunction
+STDLIB_MATH_BASE_NAPI_MODULE_DI_D( stdlib_base_falling_factorial )

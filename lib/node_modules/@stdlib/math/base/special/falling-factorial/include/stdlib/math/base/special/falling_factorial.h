@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,19 +16,25 @@
 * limitations under the License.
 */
 
-'use strict';
+#ifndef STDLIB_MATH_BASE_SPECIAL_FALLING_FACTORIAL_H
+#define STDLIB_MATH_BASE_SPECIAL_FALLING_FACTORIAL_H
 
-var randu = require( '@stdlib/random/array/uniform' );
-var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var fallingFactorial = require( './../lib' );
+#include <stdint.h>
 
-var n;
-var x;
-var i;
+/*
+* If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
+*/
+#ifdef __cplusplus
+extern "C" {
+#endif
 
-x = randu( 100, -20.0, 20.0 );
-n = discreteUniform( 100, 0, 20 );
+/**
+* Computes the falling factorial of `x` and `n`.
+*/
+double stdlib_base_falling_factorial( const double x, const int32_t n );
 
-for ( i = 0; i < 100; i++ ) {
-	console.log( 'fallingFactorial(%d,%d) = %d', x[ i ], n[ i ], fallingFactorial( x[ i ], n[ i ] ) );
+#ifdef __cplusplus
 }
+#endif
+
+#endif // !STDLIB_MATH_BASE_SPECIAL_FALLING_FACTORIAL_H
