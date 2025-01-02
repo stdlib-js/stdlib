@@ -24,9 +24,9 @@
 /**
 * Returns the probability mass function of a geometric distribution.
 *
-* @param x	input value
-* @param p	success probability
-* @return 	evaluated PMF
+* @param x   input value
+* @param p   success probability
+* @return    evaluated PMF
 *
 * @example
 * double y = stdlib_base_dists_geometric_pmf( 4.0, 0.3 );
