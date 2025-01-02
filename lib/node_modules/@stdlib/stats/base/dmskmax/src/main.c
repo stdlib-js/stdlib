@@ -19,6 +19,8 @@
 #include "stdlib/stats/base/dmskmax.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/assert/is_positive_zero.h"
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/stride2offset.h"
 #include <stdint.h>
 
 /**
@@ -31,26 +33,36 @@
 * @param strideMask  Mask stride length
 * @return            output value
 */
-double stdlib_strided_dmskmax( const int64_t N, const double *X, const int64_t strideX, const uint8_t *Mask, const int64_t strideMask ) {
+double API_SUFFIX(stdlib_strided_dmskmax)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const uint8_t *Mask, const CBLAS_INT strideMask ) {
+	const CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	const CBLAS_INT om = stdlib_strided_stride2offset( N, strideMask );
+	return API_SUFFIX(stdlib_strided_dmskmax_ndarray)( N, X, strideX, ox, Mask, strideMask, om );
+}
+
+/**
+* Computes the maximum value of a double-precision floating-point strided array according to a mask and using alternative indexing semantics.
+*
+* @param N           number of indexed elements
+* @param X           input array
+* @param strideX     X stride length
+* @param offsetX     starting index for X
+* @param Mask        mask array
+* @param strideMask  Mask stride length
+* @param offsetMask  starting index for Mask
+* @return            output value
+*/
+double API_SUFFIX(stdlib_strided_dmskmax_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const uint8_t *Mask, const CBLAS_INT strideMask, const CBLAS_INT offsetMask ) {
+	CBLAS_INT ix;
+	CBLAS_INT im;
+	CBLAS_INT i;
 	double max;
-	int64_t ix;
-	int64_t im;
-	int64_t i;
 	double v;
 
 	if ( N <= 0 ) {
 		return 0.0 / 0.0; // NaN
 	}
-	if ( strideX < 0 ) {
-		ix = (1-N) * strideX;
-	} else {
-		ix = 0;
-	}
-	if ( strideMask < 0 ) {
-		im = (1-N) * strideMask;
-	} else {
-		im = 0;
-	}
+	ix = offsetX;
+	im = offsetMask;
 	for ( i = 0; i < N; i++ ) {
 		if ( Mask[ im ] == 0 ) {
 			break;
