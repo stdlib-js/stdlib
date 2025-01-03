@@ -131,6 +131,102 @@ for ( i = 0; i < 10; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/cosine/mode.h"
+```
+
+#### stdlib_base_dists_cosine_mode( mu, s )
+
+Returns the [mode][mode] for a [raised cosine][cosine-distribution] distribution with location parameter `mu` and scale parameter `s`.
+
+```c
+double out = stdlib_base_dists_cosine_mode( 0.0, 1.0 );
+// returns 0.0
+```
+
+The function accepts the following arguments:
+
+-   **mu**: `[in] double` location parameter.
+-   **s**: `[in] double` scale parameter.
+
+```c
+double stdlib_base_dists_cosine_mode( const double mu, const double s );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/cosine/mode.h"
+#include "stdlib/constants/float64/eps.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v * (max - min) );
+}
+
+int main( void ) {
+    double mu;
+    double s;
+    double y;
+    int i;
+
+    for ( i = 0; i < 10; i++ ) {
+        mu = random_uniform( -50.0, 50.0 );
+        s = random_uniform( 0.0, 20.0 ) + STDLIB_CONSTANT_FLOAT64_EPS;
+        y = stdlib_base_dists_cosine_mode( mu, s );
+        printf( "µ: %lf, s: %lf, mode(X;µ,s): %lf\n", mu, s , y );
+    }
+
+    return 0;
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="references">
