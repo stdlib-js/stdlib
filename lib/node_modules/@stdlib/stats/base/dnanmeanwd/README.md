@@ -70,7 +70,7 @@ The function has the following parameters:
 -   **x**: input [`Float64Array`][@stdlib/array/float64].
 -   **strideX**: index increment for `x`.
 
-The `N` and stride parameters determine which elements in the stride array are accessed at runtime. For example, to compute the [arithmetic mean][arithmetic-mean] of every other element in `x`,
+The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to compute the [arithmetic mean][arithmetic-mean] of every other element in `x`,
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
