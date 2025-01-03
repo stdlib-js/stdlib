@@ -1370,7 +1370,7 @@ interface Namespace {
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns sum
 	*
 	* @example
@@ -1490,12 +1490,12 @@ interface Namespace {
 	gapxsum: typeof gapxsum;
 
 	/**
-	* Adds a constant to each strided array element and computes the sum using an improved Kahan–Babuška algorithm.
+	* Adds a scalar constant to each strided array element and computes the sum using an improved Kahan–Babuška algorithm.
 	*
 	* @param N - number of indexed elements
-	* @param alpha - constant
+	* @param alpha - scalar constant
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns sum
 	*
 	* @example
@@ -1636,9 +1636,9 @@ interface Namespace {
 	* @param N - number of indexed elements
 	* @param sum - initial sum
 	* @param x - input array
-	* @param strideX - `x` stride length
+	* @param strideX - stride length for `x`
 	* @param y - output array
-	* @param strideY - `y` stride length
+	* @param strideY - stride length for `y`
 	* @returns output array
 	*
 	* @example
