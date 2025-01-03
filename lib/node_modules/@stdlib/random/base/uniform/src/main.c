@@ -62,10 +62,10 @@
 * stdlib_base_random_randu_free( randu, -10.0, 10.0 );
 */
 double stdlib_base_random_uniform( struct BasePRNGObject *randu, const double a, const double b ) {
+	double r;
 	if ( randu == NULL ) {
 		return 0.0 / 0.0; // NaN
 	}
-	double r;
 	randu->prng->normalized( randu, &r );
 	return ( b*r ) + ( (1.0-r)*a );
 }
