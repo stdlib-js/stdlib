@@ -18,6 +18,8 @@ limitations under the License.
 
 -->
 
+<!-- lint disable maximum-heading-length -->
+
 # scumax
 
 > Calculate the cumulative maximum of single-precision floating-point strided array elements.
