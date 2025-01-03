@@ -18,6 +18,8 @@ limitations under the License.
 
 -->
 
+<!-- lint disable maximum-heading-length -->
+
 # dcumin
 
 > Calculate the cumulative minimum of double-precision floating-point strided array elements.

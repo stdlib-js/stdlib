@@ -18,6 +18,8 @@ limitations under the License.
 
 -->
 
+<!-- lint disable maximum-heading-length -->
+
 # dcumaxabs
 
 > Calculate the cumulative maximum absolute value of double-precision floating-point strided array elements.
