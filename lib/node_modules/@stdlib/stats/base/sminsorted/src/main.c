@@ -19,33 +19,43 @@
 #include "stdlib/stats/base/sminsorted.h"
 #include "stdlib/math/base/assert/is_nanf.h"
 #include "stdlib/math/base/assert/is_negative_zerof.h"
-#include <stdint.h>
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/stride2offset.h"
 
 /**
 * Computes the minimum value of a sorted single-precision floating-point strided array.
 *
-* @param N       number of indexed elements
-* @param X       sorted input array
-* @param stride  stride length
-* @return        output value
+* @param N        number of indexed elements
+* @param X        sorted input array
+* @param strideX  stride length
+* @return         output value
 */
-float stdlib_strided_sminsorted( const int64_t N, const float *X, const int64_t stride ) {
+float API_SUFFIX(stdlib_strided_sminsorted)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX ) {
+	const CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	return API_SUFFIX(stdlib_strided_sminsorted_ndarray)( N, X, strideX, ox );
+}
+
+/**
+* Computes the minimum value of a sorted single-precision floating-point strided array using alternative indexing semantics.
+*
+* @param N        number of indexed elements
+* @param X        sorted input array
+* @param strideX  stride length
+* @param offsetX  starting index for X
+* @return         output value
+*/
+float API_SUFFIX(stdlib_strided_sminsorted_ndarray)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
 	float v1;
 	float v2;
 
 	if ( N <= 0 ) {
 		return 0.0f / 0.0f; // NaN
 	}
-	if ( N == 1 || stride == 0 ) {
+	if ( N == 1 || strideX == 0 ) {
 		return X[ 0 ];
 	}
-	if ( stride < 0 ) {
-		v1 = X[ (1-N) * stride ];
-		v2 = X[ 0 ];
-	} else {
-		v1 = X[ 0 ];
-		v2 = X[ (N-1) * stride ];
-	}
+	v1 = X[ offsetX ];
+	v2 = X[ ( (N-1)*strideX ) + offsetX ];
 	if ( stdlib_base_is_nanf( v1 ) || stdlib_base_is_nanf( v2 ) ) {
 		return 0.0f / 0.0f; // NaN
 	}
