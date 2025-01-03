@@ -17,7 +17,6 @@
 */
 
 #include "stdlib/stats/base/snanmax.h"
-#include <stdint.h>
 #include <stdio.h>
 
 int main( void ) {
@@ -25,13 +24,13 @@ int main( void ) {
 	const float x[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f, 0.0f/0.0f, 0.0f/0.0f };
 
 	// Specify the number of elements:
-	int64_t N = 5;
+	const int N = 5;
 
 	// Specify the stride length:
-	int64_t stride = 2;
+	const int strideX = 2;
 
 	// Compute the maximum value:
-	float v = stdlib_strided_snanmax( N, x, stride );
+	float v = stdlib_strided_snanmax( N, x, strideX );
 
 	// Print the result:
 	printf( "max: %f\n", v );

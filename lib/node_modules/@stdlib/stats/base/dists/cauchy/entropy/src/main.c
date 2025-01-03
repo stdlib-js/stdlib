@@ -20,6 +20,7 @@
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/ln.h"
 #include "stdlib/constants/float64/pi.h"
+
 /**
 * Returns the differential entropy of a Cauchy distribution.
 *
