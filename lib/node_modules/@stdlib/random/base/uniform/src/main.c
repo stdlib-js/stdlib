@@ -16,18 +16,16 @@
 * limitations under the License.
 */
 
-// Note: keep project includes in alphabetical order...
-#include <stdlib.h>
-#include <math.h>
-#include "stdlib/random/base.h"
 #include "stdlib/random/base/uniform.h"
+#include "stdlib/random/base/shared.h"
+#include <stdlib.h>
 
 /**
 * Returns a pseudorandom number drawn from a continuous uniform distribution with parameters `a` (minimum support; inclusive) and `b` (maximum support; exclusive).
 *
 * ## Notes
 *
-* -   The function returns `NAN` if provided a `NULL` pointer.
+* -   The function returns `NaN` if provided a `NULL` pointer.
 *
 * @param randu  PRNG object which generates uniformly distributed pseudorandom numbers on the interval `[0,1)`
 * @param a      minimum support (inclusive)
@@ -35,11 +33,11 @@
 * @return       pseudorandom number
 *
 * @example
+* #include "stdlib/random/base/uniform.h"
+* #include "stdlib/random/base/randu.h"
+* #include "stdlib/random/base/shared.h"
 * #include <stdlib.h>
 * #include <stdio.h>
-* #include "stdlib/random/base.h"
-* #include "stdlib/random/base/randu.h"
-* #include "stdlib/random/base/uniform.h"
 *
 * // Create a PRNG:
 * struct BasePRNGObject *randu = stdlib_base_random_randu_allocate( 0 );
@@ -65,7 +63,7 @@
 */
 double stdlib_base_random_uniform( struct BasePRNGObject *randu, const double a, const double b ) {
 	if ( randu == NULL ) {
-		return NAN;
+		return 0.0 / 0.0; // NaN
 	}
 	double r;
 	randu->prng->normalized( randu, &r );
