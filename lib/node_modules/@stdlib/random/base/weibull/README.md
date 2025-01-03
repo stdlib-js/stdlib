@@ -32,7 +32,7 @@ var weibull = require( '@stdlib/random/base/weibull' );
 
 #### weibull( k, lambda )
 
-Returns a pseudorandom number drawn from a [Weibull][weibull] distribution with scale parameter `k` and shape parameter `lambda`.
+Returns a pseudorandom number drawn from a [Weibull][weibull] distribution with shape parameter `k` and scale parameter `lambda`.
 
 ```javascript
 var r = weibull( 2.0, 5.0 );

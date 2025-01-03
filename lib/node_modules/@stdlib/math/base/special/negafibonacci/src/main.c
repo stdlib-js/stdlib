@@ -117,7 +117,7 @@ static const double negafibonacci_value[ 79 ] = {
 double stdlib_base_negafibonacci( const int32_t n ) {
 	int32_t an;
 	if ( n > 0 ) {
-		return 0.0 / 0.0; //NaN
+		return 0.0 / 0.0; // NaN
 	}
 	an = stdlib_base_abs( n );
 	if ( an > STDLIB_CONSTANT_FLOAT64_MAX_SAFE_NTH_FIBONACCI ) {

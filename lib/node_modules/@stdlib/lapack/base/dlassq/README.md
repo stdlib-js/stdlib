@@ -24,7 +24,7 @@ limitations under the License.
 
 <section class="intro">
 
-This routine returns the values $s_{textrm{out}}$ and $\textrm{ss}_{\textrm{out}}$ such that
+This routine returns the values $s_{textrm{out}}$ and $\\textrm{ss}_{\\textrm{out}}$ such that
 
 <!-- <equation class="equation" label="eq:sum_of_squares" align="center" raw="s_{\textrm{out}}^2 \cdot \textrm{ss}_{\textrm{out}} = x_0^2 + \ldots + x_{N-1}^2 + s_{\textrm{in}}^2 \cdot \textrm{ss}_{\textrm{in}}" alt="Sum of squares represented in scaled form"> -->
 
@@ -35,7 +35,7 @@ This routine returns the values $s_{textrm{out}}$ and $\textrm{ss}_{\textrm{out}
 
 <!-- </equation> -->
 
-where $x_i = X_{(i-1) \cdot \textrm{sx}}$ and $\textrm{sx}$ is the stride of `X`. The value of $\textrm{ss}_{\textrm{in}}$ is assumed to be nonnegative.
+where $x_i = X_{(i-1) \\cdot \\textrm{sx}}$ and $\\textrm{sx}$ is the stride of `X`. The value of $\\textrm{ss}\_{\\textrm{in}}$ is assumed to be nonnegative.
 
 </section>
 

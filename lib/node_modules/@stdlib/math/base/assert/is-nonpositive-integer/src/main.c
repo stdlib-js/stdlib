@@ -32,5 +32,5 @@
 * // returns false
 */
 bool stdlib_base_is_nonpositive_integer( const double x ) {
-    return ( stdlib_base_floor( x ) == x && x <= 0 );
+	return ( stdlib_base_floor( x ) == x && x <= 0 );
 }
