@@ -611,7 +611,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright © 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright © 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
