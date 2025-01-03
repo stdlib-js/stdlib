@@ -205,7 +205,7 @@ Computes the arithmetic mean of a double-precision floating-point strided array 
 const double x[] = { 1.0, 2.0, 0.0/0.0, 3.0, 0.0/0.0, 4.0, 5.0, 6.0, 0.0/0.0, 7.0, 8.0, 0.0/0.0 };
 
 double v = stdlib_strided_dnanmeanwd( 6, x, 2 );
-// returns 1.25
+// returns ~4.67
 ```
 
 The function accepts the following arguments:
@@ -226,7 +226,7 @@ Computes the arithmetic mean of a double-precision floating-point strided array,
 const double x[] = { 1.0, 2.0, 0.0/0.0, 3.0, 0.0/0.0, 4.0, 5.0, 6.0, 0.0/0.0, 7.0, 8.0, 0.0/0.0 };
 
 double v = stdlib_strided_dnanmeanwd_ndarray( 6, x, 2, 0 );
-// returns 1.25
+// returns ~4.67
 ```
 
 The function accepts the following arguments:
