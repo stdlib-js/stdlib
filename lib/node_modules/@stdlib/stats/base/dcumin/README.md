@@ -210,7 +210,7 @@ The function accepts the following arguments:
 void stdlib_strided_dcumin( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY );
 ```
 
-#### stdlib_strided_dcumin_ndarray(N, \*X, strideX, offsetX, \*Y, strideY, offsetY )
+#### stdlib_strided_dcumin_ndarray( N, \*X, strideX, offsetX, \*Y, strideY, offsetY )
 
 Computes the cumulative minimum of double-precision floating-point strided array elements using alternative indexing semantics.
 

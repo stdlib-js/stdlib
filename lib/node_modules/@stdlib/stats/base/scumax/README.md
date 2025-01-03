@@ -210,7 +210,7 @@ The function accepts the following arguments:
 void stdlib_strided_scumax( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, float *Y, const CBLAS_INT strideY );
 ```
 
-#### stdlib_strided_scumax_ndarray(N, \*X, strideX, offsetX, \*Y, strideY, offsetY)
+#### stdlib_strided_scumax_ndarray( N, \*X, strideX, offsetX, \*Y, strideY, offsetY )
 
 Computes the cumulative maximum of single-precision floating-point strided array elements using alternative indexing semantics.
 
