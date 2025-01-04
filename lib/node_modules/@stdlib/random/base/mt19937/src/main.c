@@ -55,12 +55,11 @@
 * [mt19937]: http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/MT2002/CODES/mt19937ar.c
 */
 
-// Note: keep project includes in alphabetical order...
+#include "stdlib/random/base/mt19937.h"
+#include "stdlib/random/base/shared.h"
 #include <stdlib.h>
 #include <stdint.h>
 #include <string.h>
-#include "stdlib/random/base.h"
-#include "stdlib/random/base/mt19937.h"
 
 // Forward declarations:
 static inline int8_t next( struct BasePRNGObject *obj, uint64_t *out );
@@ -392,11 +391,11 @@ static inline void twist( uint32_t *state, const int32_t N ) {
 * @return      pointer to a dynamically allocated PRNG or, if unable to allocate memory, a null pointer
 *
 * @example
+* #include "stdlib/random/base/mt19937.h"
+* #include "stdlib/random/base/shared.h"
 * #include <stdlib.h>
 * #include <stdio.h>
 * #include <stdint.h>
-* #include "stdlib/random/base.h"
-* #include "stdlib/random/base/mt19937.h"
 *
 * // Define a PRNG seed:
 * uint32_t seed[] = { 12345 };
@@ -472,11 +471,11 @@ struct BasePRNGObject * stdlib_base_random_mt19937_allocate( const uint32_t *see
 * @param obj  PRNG object
 *
 * @example
+* #include "stdlib/random/base/mt19937.h"
+* #include "stdlib/random/base/shared.h"
 * #include <stdlib.h>
 * #include <stdio.h>
 * #include <stdint.h>
-* #include "stdlib/random/base.h"
-* #include "stdlib/random/base/mt19937.h"
 *
 * // Define a PRNG seed:
 * uint32_t seed[] = { 12345 };
@@ -527,11 +526,11 @@ void stdlib_base_random_mt19937_free( struct BasePRNGObject *obj ) {
 * @return      status code
 *
 * @example
+* #include "stdlib/random/base/mt19937.h"
+* #include "stdlib/random/base/shared.h"
 * #include <stdlib.h>
 * #include <stdio.h>
 * #include <stdint.h>
-* #include "stdlib/random/base.h"
-* #include "stdlib/random/base/mt19937.h"
 *
 * // Define a PRNG seed:
 * uint32_t seed1[] = { 12345 };
@@ -596,11 +595,11 @@ int8_t stdlib_base_random_mt19937_seed_length( const struct BasePRNGObject *obj,
 * @return      status code
 *
 * @example
+* #include "stdlib/random/base/mt19937.h"
+* #include "stdlib/random/base/shared.h"
 * #include <stdlib.h>
 * #include <stdio.h>
 * #include <stdint.h>
-* #include "stdlib/random/base.h"
-* #include "stdlib/random/base/mt19937.h"
 *
 * // Define a PRNG seed:
 * uint32_t seed1[] = { 12345 };
@@ -664,11 +663,11 @@ int8_t stdlib_base_random_mt19937_seed( const struct BasePRNGObject *obj, uint32
 * @return     pointer to a copy of the PRNG's internal state or, if unable to allocate memory, a null pointer
 *
 * @example
+* #include "stdlib/random/base/mt19937.h"
+* #include "stdlib/random/base/shared.h"
 * #include <stdlib.h>
 * #include <stdio.h>
 * #include <stdint.h>
-* #include "stdlib/random/base.h"
-* #include "stdlib/random/base/mt19937.h"
 *
 * // Define a PRNG seed:
 * uint32_t seed[] = { 12345 };
@@ -695,8 +694,8 @@ int8_t stdlib_base_random_mt19937_seed( const struct BasePRNGObject *obj, uint32
 * free( state );
 */
 void * stdlib_base_random_mt19937_state( const struct BasePRNGObject *obj ) {
+	const stdlib_base_random_mt19937_state_t *so;
 	stdlib_base_random_mt19937_state_t *state;
-	stdlib_base_random_mt19937_state_t *so;
 	uint64_t nbytes;
 	uint32_t *seed;
 	if ( obj == NULL || obj->prng != &mt19937_prng ) {
@@ -735,11 +734,11 @@ void * stdlib_base_random_mt19937_state( const struct BasePRNGObject *obj ) {
 * @return       status code
 *
 * @example
+* #include "stdlib/random/base/mt19937.h"
+* #include "stdlib/random/base/shared.h"
 * #include <stdlib.h>
 * #include <stdio.h>
 * #include <stdint.h>
-* #include "stdlib/random/base.h"
-* #include "stdlib/random/base/mt19937.h"
 *
 * // Define a PRNG seed:
 * uint32_t seed[] = { 12345 };

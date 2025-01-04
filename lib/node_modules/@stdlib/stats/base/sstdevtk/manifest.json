@@ -1,5 +1,7 @@
 {
-  "options": {},
+  "options": {
+    "task": "build"
+  },
   "fields": [
     {
       "field": "src",
@@ -24,6 +26,45 @@
   ],
   "confs": [
     {
+      "task": "build",
+      "src": [
+        "./src/sstdevtk.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-float",
+        "@stdlib/napi/argv-strided-float32array",
+        "@stdlib/stats/base/svariancetk",
+        "@stdlib/napi/create-double"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/sstdevtk.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/stats/base/svariancetk"
+      ]
+    },
+    {
+      "task": "examples",
       "src": [
         "./src/sstdevtk.c"
       ],
