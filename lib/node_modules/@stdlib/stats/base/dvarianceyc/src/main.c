@@ -17,7 +17,8 @@
 */
 
 #include "stdlib/stats/base/dvarianceyc.h"
-#include <stdint.h>
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/stride2offset.h"
 
 /**
 * Computes the variance of a double-precision floating-point strided array using a one-pass algorithm proposed by Youngs and Cramer.
@@ -30,16 +31,31 @@
 *
 * -   Youngs, Edward A., and Elliot M. Cramer. 1971. "Some Results Relevant to Choice of Sum and Sum-of-Product Algorithms." _Technometrics_ 13 (3): 657–65. doi:[10.1080/00401706.1971.10488826](https://doi.org/10.1080/00401706.1971.10488826).
 *
-* @param N           number of indexed elements
-* @param correction  degrees of freedom adjustment
-* @param X           input array
-* @param stride      stride length
-* @return            output value
+* @param N            number of indexed elements
+* @param correction   degrees of freedom adjustment
+* @param X            input array
+* @param strideX      stride length
+* @return             output value
 */
-double stdlib_strided_dvarianceyc( const int64_t N, const double correction, const double *X, const int64_t stride ) {
+double API_SUFFIX(stdlib_strided_dvarianceyc)( const CBLAS_INT N, const double correction, const double *X, const CBLAS_INT strideX ) {
+	const CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	return API_SUFFIX(stdlib_strided_dvarianceyc_ndarray)( N, correction, X, strideX, ox );
+}
+
+/**
+* Computes the variance of a double-precision floating-point strided array using a one-pass algorithm proposed by Youngs and Cramer and alternative indexing semantics.
+*
+* @param N            number of indexed elements
+* @param correction   degrees of freedom adjustment
+* @param X            input array
+* @param strideX      stride length
+* @param offsetX      starting index for X
+* @return             output value
+*/
+double API_SUFFIX(stdlib_strided_dvarianceyc_ndarray)( const CBLAS_INT N, const double correction, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+	CBLAS_INT ix;
+	CBLAS_INT i;
 	double sum;
-	int64_t ix;
-	int64_t i;
 	double di;
 	double S;
 	double v;
@@ -50,16 +66,12 @@ double stdlib_strided_dvarianceyc( const int64_t N, const double correction, con
 	if ( N <= 0 || n <= 0.0 ) {
 		return 0.0 / 0.0; // NaN
 	}
-	if ( N == 1 || stride == 0 ) {
+	if ( N == 1 || strideX == 0 ) {
 		return 0.0;
 	}
-	if ( stride < 0 ) {
-		ix = (1-N) * stride;
-	} else {
-		ix = 0;
-	}
+	ix = offsetX;
 	sum = X[ ix ];
-	ix += stride;
+	ix += strideX;
 	S = 0.0;
 	for ( i = 2; i <= N; i++ ) {
 		di = (double)i;
@@ -67,7 +79,7 @@ double stdlib_strided_dvarianceyc( const int64_t N, const double correction, con
 		sum += v;
 		d = (di*v) - sum;
 		S += (1.0/(di*(di-1.0))) * d * d;
-		ix += stride;
+		ix += strideX;
 	}
 	return S / n;
 }
