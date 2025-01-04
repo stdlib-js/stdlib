@@ -87,7 +87,7 @@ static double rand_double( void ) {
 * Computes the Fibonacci number index.
 *
 * @param F   Fibonacci number
-* @return function result
+* @return    function result
 */
 int fibonacci_index( int F ) {
 	double y = ((double)F * sqrt( 5.0 )) + 0.5;
