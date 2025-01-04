@@ -112,6 +112,15 @@ jobs:
 
             -   updates namespace TypeScript declarations
 
+            ## Reviewer Checklist
+
+            - [ ] **Check the scope of the changes** (following [Conventional Commits](https://www.conventionalcommits.org)):
+                - Are these **new APIs**? Then this is a `feat`.
+                - Are these **changes to existing APIs** that could break compatibility? Then this is a `feat!` (i.e., a breaking change).
+                - Are these **only documentation** changes to existing APIs? Then this is `docs`.
+            - [ ] Update the PR title to align with the change type (`feat`, `feat!`, or `docs`).
+            - [ ] Approve the PR once you are confident about the classification and changes made.
+
           commit-message: 'feat: update namespace TypeScript declarations'
           committer: 'stdlib-bot <82920195+stdlib-bot@users.noreply.github.com>'
           signoff: true
