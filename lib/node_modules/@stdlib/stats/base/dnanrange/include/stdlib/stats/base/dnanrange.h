@@ -34,7 +34,7 @@ extern "C" {
 double API_SUFFIX(stdlib_strided_dnanrange)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX );
 
 /**
-* Computes the range of a double-precision floating-point strided array, ignoring `NaN` values.
+* Computes the range of a double-precision floating-point strided array, ignoring `NaN` values and using alternative indexing semantics.
 */
 double API_SUFFIX(stdlib_strided_dnanrange_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
 
