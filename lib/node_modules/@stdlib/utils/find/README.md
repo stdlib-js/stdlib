@@ -46,9 +46,9 @@ Finds elements in an array-like object that satisfy a test condition. The functi
 
 The `callback` is provided three arguments:
 
--   **element**: the current element
--   **index**: the current element's index
--   **array**: the input `array`, `typed array` or `string`
+-   **element**: the current element.
+-   **index**: the current element's index.
+-   **array**: the input `array`, `typed array` or `string`.
 
 By default, `k` is the length of `arr` and `returns` is set to `indices`.
 

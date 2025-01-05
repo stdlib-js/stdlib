@@ -1,5 +1,7 @@
 {
-  "options": {},
+  "options": {
+    "task": "build"
+  },
   "fields": [
     {
       "field": "src",
@@ -24,6 +26,45 @@
   ],
   "confs": [
     {
+      "task": "build",
+      "src": [
+        "./src/snanvariance.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-float",
+        "@stdlib/napi/argv-strided-float32array",
+        "@stdlib/stats/base/snanvariancepn",
+        "@stdlib/napi/create-double"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/snanvariance.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/stats/base/snanvariancepn"
+      ]
+    },
+    {
+      "task": "examples",
       "src": [
         "./src/snanvariance.c"
       ],

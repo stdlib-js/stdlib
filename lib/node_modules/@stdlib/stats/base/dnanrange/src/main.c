@@ -35,7 +35,7 @@ double API_SUFFIX(stdlib_strided_dnanrange)( const CBLAS_INT N, const double *X,
 }
 
 /**
-* Computes the range of a double-precision floating-point strided array, ignoring `NaN` values.
+* Computes the range of a double-precision floating-point strided array, ignoring `NaN` values and using alternative indexing semantics.
 *
 * @param N        number of indexed elements
 * @param X        input array

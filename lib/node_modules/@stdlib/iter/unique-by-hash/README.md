@@ -79,7 +79,7 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 
 A hash function is provided one argument:
 
--   **v**: the current iterated value
+-   **v**: the current iterated value.
 
 To set the execution context of the hash function, provide a `thisArg`.
 
