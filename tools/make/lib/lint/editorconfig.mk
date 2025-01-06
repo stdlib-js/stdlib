@@ -57,7 +57,7 @@ lint-editorconfig: $(NODE_MODULES)
 	$(QUIET) $(FIND_PACKAGES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r pkg; do \
 		echo ''; \
 		echo "Linting package for basic formatting errors: $$pkg"; \
-		cd "$$pkg" && ( $(NODE) $(EDITORCONFIG_CHECKER) $(EDITORCONFIG_CHECKER_CONF_FLAGS) --config $(EDITORCONFIG_CHECKER_CONF) && $(NODE) $(EDITORCONFIG_CHECKER) $(EDITORCONFIG_CHECKER_CONF_FLAGS) --config $(EDITORCONFIG_CHECKER_MARKDOWN_CONF) ./ && echo 'Success. No detected EditorConfig lint errors.' && echo '' ) || exit 1; \
+		cd "$$pkg" && ( $(NODE) $(EDITORCONFIG_CHECKER) $(EDITORCONFIG_CHECKER_CONF_FLAGS) --config $(EDITORCONFIG_CHECKER_CONF) ./ && $(NODE) $(EDITORCONFIG_CHECKER) $(EDITORCONFIG_CHECKER_CONF_FLAGS) --config $(EDITORCONFIG_CHECKER_MARKDOWN_CONF) ./ && echo 'Success. No detected EditorConfig lint errors.' && echo '' ) || exit 1; \
 	done
 
 .PHONY: lint-editorconfig
