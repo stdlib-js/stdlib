@@ -27,8 +27,8 @@
   ],
   "confs": [
     {
-     "task": "build",
-     "wasm": false,
+      "task": "build",
+      "wasm": false,
       "src": [
         "./src/main.c"
       ],
