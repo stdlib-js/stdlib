@@ -17,7 +17,8 @@
 */
 
 #include "stdlib/stats/base/dvariancewd.h"
-#include <stdint.h>
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/stride2offset.h"
 
 /**
 * Computes the variance of a double-precision floating-point strided array using Welford's algorithm.
@@ -61,16 +62,31 @@
 * -   Welford, B. P. 1962. "Note on a Method for Calculating Corrected Sums of Squares and Products." _Technometrics_ 4 (3). Taylor & Francis: 419–20. doi:[10.1080/00401706.1962.10490022](https://doi.org/10.1080/00401706.1962.10490022).
 * -   van Reeken, A. J. 1968. "Letters to the Editor: Dealing with Neely's Algorithms." _Communications of the ACM_ 11 (3): 149–50. doi:[10.1145/362929.362961](https://doi.org/10.1145/362929.362961).
 *
-* @param N           number of indexed elements
-* @param correction  degrees of freedom adjustment
-* @param X           input array
-* @param stride      stride length
-* @return            output value
+* @param N            number of indexed elements
+* @param correction   degrees of freedom adjustment
+* @param X            input array
+* @param strideX      stride length
+* @return             output value
 */
-double stdlib_strided_dvariancewd( const int64_t N, const double correction, const double *X, const int64_t stride ) {
+double API_SUFFIX(stdlib_strided_dvariancewd)( const CBLAS_INT N, const double correction, const double *X, const CBLAS_INT strideX ) {
+	const CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	return API_SUFFIX(stdlib_strided_dvariancewd_ndarray)( N, correction, X, strideX, ox );
+}
+
+/**
+* Computes the variance of a double-precision floating-point strided array using Welford's algorithm and alternative indexing semantics.
+*
+* @param N            number of indexed elements
+* @param correction   degrees of freedom adjustment
+* @param X            input array
+* @param strideX      stride length
+* @param offsetX      starting index for X
+* @return             output value
+*/
+double API_SUFFIX(stdlib_strided_dvariancewd_ndarray)( const CBLAS_INT N, const double correction, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
 	double delta;
-	int64_t ix;
-	int64_t i;
+	CBLAS_INT ix;
+	CBLAS_INT i;
 	double mu;
 	double M2;
 	double n;
@@ -80,14 +96,10 @@ double stdlib_strided_dvariancewd( const int64_t N, const double correction, con
 	if ( N <= 0 || n <= 0.0 ) {
 		return 0.0 / 0.0; // NaN
 	}
-	if ( N == 1 || stride == 0 ) {
+	if ( N == 1 || strideX == 0 ) {
 		return 0.0;
 	}
-	if ( stride < 0 ) {
-		ix = (1-N) * stride;
-	} else {
-		ix = 0;
-	}
+	ix = offsetX;
 	M2 = 0.0;
 	mu = 0.0;
 	for ( i = 0; i < N; i++ ) {
@@ -95,7 +107,7 @@ double stdlib_strided_dvariancewd( const int64_t N, const double correction, con
 		delta = v - mu;
 		mu += delta / (double)(i+1);
 		M2 += delta * ( v - mu );
-		ix += stride;
+		ix += strideX;
 	}
 	return M2 / n;
 }
