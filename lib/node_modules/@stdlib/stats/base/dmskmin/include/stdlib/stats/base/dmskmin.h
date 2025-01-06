@@ -19,6 +19,7 @@
 #ifndef STDLIB_STATS_BASE_DMSKMIN_H
 #define STDLIB_STATS_BASE_DMSKMIN_H
 
+#include "stdlib/blas/base/shared.h"
 #include <stdint.h>
 
 /*
@@ -31,7 +32,12 @@ extern "C" {
 /**
 * Computes the minimum value of a double-precision floating-point strided array according to a mask.
 */
-double stdlib_strided_dmskmin( const int64_t N, const double *X, const int64_t strideX, const uint8_t *Mask, const int64_t strideMask );
+double API_SUFFIX(stdlib_strided_dmskmin)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const uint8_t *Mask, const CBLAS_INT strideMask );
+
+/**
+* Computes the minimum value of a double-precision floating-point strided array according to a mask and using alternative indexing semantics.
+*/
+double API_SUFFIX(stdlib_strided_dmskmin_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const uint8_t *Mask, const CBLAS_INT strideMask, const CBLAS_INT offsetMask );
 
 #ifdef __cplusplus
 }
