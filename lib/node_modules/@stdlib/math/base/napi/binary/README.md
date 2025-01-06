@@ -331,6 +331,46 @@ The function accepts the following arguments:
 void stdlib_math_base_napi_di_d( napi_env env, napi_callback_info info, double (*fcn)( double, int32_t ) );
 ```
 
+#### stdlib_math_base_napi_id_d( env, info, fcn )
+
+Invokes a binary function accepting a signed 32-bit integer and a double-precision floating-point number and returning a double-precision floating-point number.
+
+```c
+#include <node_api.h>
+#include <stdint.h>
+
+// ...
+
+static double mul( const int32_t x, const double y ) {
+    return x * y;
+}
+
+// ...
+
+/**
+* Receives JavaScript callback invocation data.
+*
+* @param env    environment under which the function is invoked
+* @param info   callback data
+* @return       Node-API value
+*/
+napi_value addon( napi_env env, napi_callback_info info ) {
+    return stdlib_math_base_napi_id_d( env, info, mul );
+}
+
+// ...
+```
+
+The function accepts the following arguments:
+
+-   **env**: `[in] napi_env` environment under which the function is invoked.
+-   **info**: `[in] napi_callback_info` callback data.
+-   **fcn**: `[in] double (*fcn)( int32_t, double )` binary function.
+
+```c
+void stdlib_math_base_napi_id_d( napi_env env, napi_callback_info info, double (*fcn)( int32_t, double ) );
+```
+
 #### stdlib_math_base_napi_ii_i( env, info, fcn )
 
 Invokes a binary function accepting and returning signed 32-bit integers.
@@ -817,6 +857,29 @@ STDLIB_MATH_BASE_NAPI_MODULE_DI_D( mul );
 The macro expects the following arguments:
 
 -   **fcn**: `double (*fcn)( double, int32_t )` binary function.
+
+When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring Node-API module registration.
+
+#### STDLIB_MATH_BASE_NAPI_MODULE_ID_D( fcn )
+
+Macro for registering a Node-API module exporting an interface invoking a binary function accepting a signed 32-bit integer and a double-precision floating-point number and returning a double-precision floating-point number.
+
+```c
+#include <stdint.h>
+
+static double mul( const int32_t x, const double y ) {
+    return x * y;
+}
+
+// ...
+
+// Register a Node-API module:
+STDLIB_MATH_BASE_NAPI_MODULE_ID_D( mul );
+```
+
+The macro expects the following arguments:
+
+-   **fcn**: `double (*fcn)( int32_t, double )` binary function.
 
 When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring Node-API module registration.
 
