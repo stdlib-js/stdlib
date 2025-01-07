@@ -2511,7 +2511,7 @@ interface Namespace {
 	* @param N - number of indexed elements
 	* @param correction - degrees of freedom adjustment
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns variance
 	*
 	* @example
@@ -2565,7 +2565,7 @@ interface Namespace {
 	* @param N - number of indexed elements
 	* @param correction - degrees of freedom adjustment
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns variance
 	*
 	* @example
@@ -2592,7 +2592,7 @@ interface Namespace {
 	* @param N - number of indexed elements
 	* @param correction - degrees of freedom adjustment
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns variance
 	*
 	* @example
@@ -2619,7 +2619,7 @@ interface Namespace {
 	* @param N - number of indexed elements
 	* @param correction - degrees of freedom adjustment
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns variance
 	*
 	* @example
@@ -2703,7 +2703,7 @@ interface Namespace {
 	* @param mean - mean
 	* @param correction - degrees of freedom adjustment
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns variance
 	*
 	* @example
@@ -4495,7 +4495,7 @@ interface Namespace {
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns arithmetic mean
 	*
 	* @example
@@ -5755,7 +5755,7 @@ interface Namespace {
 	* @param N - number of indexed elements
 	* @param correction - degrees of freedom adjustment
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns variance
 	*
 	* @example
@@ -5809,7 +5809,7 @@ interface Namespace {
 	* @param N - number of indexed elements
 	* @param correction - degrees of freedom adjustment
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns variance
 	*
 	* @example
