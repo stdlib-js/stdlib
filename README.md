@@ -77,7 +77,7 @@ Thank you for being a part of our community! Your support is invaluable to us!
 
 ### External Resources
 
--   [**Google Calendar**][stdlib-public-calendar]: calendar of public events, including open office hours.
+-   [**Google Calendar**][stdlib-public-calendar]: calendar of public events, including [open office hours][stdlib-office-hours].
 -   [**Open Collective**][open-collective-stdlib]: financially support the project.
 -   [**Twitter**][stdlib-twitter]: follow us on social media.
 -   [**Gitter**][stdlib-gitter]: chat with project maintainers and other community members.
@@ -659,6 +659,10 @@ Copyright © 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [![Chat][chat-image]][chat-url]
 
+Have something you want to discuss? In addition to the community chat, we hold regular [office hours][stdlib-office-hours] over video conferencing, which is a great opportunity to ask questions, share ideas, and engage directly with the stdlib team.
+
+You can also subscribe to our [project calendar][stdlib-public-calendar] to stay informed about the latest public community events.
+
 </section>
 
 <!-- /.badges> -->
@@ -781,6 +785,8 @@ Test and build infrastructure is generously provided by the following services:
 [stdlib-code-coverage]: https://codecov.io/github/stdlib-js/stdlib/branch/develop
 
 [stdlib-public-calendar]: https://calendar.google.com/calendar/embed?src=a72677fe2820c833714b8b9a2aa87393f742bcaf0d0f6c9499eee6661795eae0%40group.calendar.google.com
+
+[stdlib-office-hours]: https://github.com/stdlib-js/meetings/issues?q=sort%3Aupdated-desc%20is%3Aissue%20is%3Aopen%20label%3A%22Office%20Hours%22
 
 [open-collective-stdlib]: https://opencollective.com/stdlib
 
