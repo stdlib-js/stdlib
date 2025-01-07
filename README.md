@@ -77,9 +77,10 @@ Thank you for being a part of our community! Your support is invaluable to us!
 
 ### External Resources
 
--   [**Open Collective**][open-collective-stdlib]
--   [**Twitter**][stdlib-twitter]
--   [**Gitter**][stdlib-gitter]
+-   [**Google Calendar**][stdlib-public-calendar]: calendar of public events, including open office hours.
+-   [**Open Collective**][open-collective-stdlib]: financially support the project.
+-   [**Twitter**][stdlib-twitter]: follow us on social media.
+-   [**Gitter**][stdlib-gitter]: chat with project maintainers and other community members.
 
 ## Features
 
@@ -182,11 +183,11 @@ While this project's installation instructions defaults to using [npm][npm] for 
     -   I would like to include stdlib functionality by just using a `script` tag.
 
         -   I would like to use ES Modules.
-        
+
             -   Use an individual package's ES Module [build](#install_env_builds_esm).
-            
+
         -   I would like to use a pre-built bundle (possibly via a CDN, such as [unpkg][unpkg] or [jsDelivr][jsdelivr]).
-        
+
             -   Install (or consume via a CDN) an individual package's pre-built UMD [browser bundle](#install_env_builds_umd).
 
     -   I am interested in using a substantial amount of functionality found in a top-level stdlib namespace and don't want to separately install hundreds of individual packages (e.g., if building an on-line calculator application and wanting all of stdlib's math functionality).
@@ -200,9 +201,9 @@ While this project's installation instructions defaults to using [npm][npm] for 
     -   I am interested in using various functionality found in stdlib.
 
         -   Install [individual packages](#install_individual_packages). Installing the entire project is likely unnecessary and will lead to slower installation times.
-    
+
     -   I would like to **vendor** stdlib functionality and avoid dependency trees.
-        
+
         -   Install individual package UMD [bundles](#install_env_builds_nodejs).
 
     -   I am interested in using a _substantial_ amount of functionality found in a top-level stdlib namespace and don't want to separately install hundreds of individual packages.
@@ -778,6 +779,8 @@ Test and build infrastructure is generously provided by the following services:
 [stdlib-source]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib
 
 [stdlib-code-coverage]: https://codecov.io/github/stdlib-js/stdlib/branch/develop
+
+[stdlib-public-calendar]: https://calendar.google.com/calendar/embed?src=a72677fe2820c833714b8b9a2aa87393f742bcaf0d0f6c9499eee6661795eae0%40group.calendar.google.com
 
 [open-collective-stdlib]: https://opencollective.com/stdlib
 
