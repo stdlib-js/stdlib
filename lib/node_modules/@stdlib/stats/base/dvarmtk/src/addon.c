@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/stats/base/dvarmtk.h"
+#include "stdlib/blas/base/shared.h"
 #include "stdlib/napi/export.h"
 #include "stdlib/napi/argv.h"
 #include "stdlib/napi/argv_int64.h"
@@ -39,7 +40,7 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_DOUBLE( env, correction, argv, 2 );
 	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 4 );
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, strideX, argv, 3 )
-	STDLIB_NAPI_CREATE_DOUBLE( env, stdlib_strided_dvarmtk( N, mean, correction, X, strideX ), v );
+	STDLIB_NAPI_CREATE_DOUBLE( env, API_SUFFIX(stdlib_strided_dvarmtk)( N, mean, correction, X, strideX ), v );
 	return v;
 }
 
@@ -58,7 +59,7 @@ static napi_value addon_method( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 4 );
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, strideX, argv, 3 );
 	STDLIB_NAPI_ARGV_INT64( env, offsetX, argv, 5 );
-	STDLIB_NAPI_CREATE_DOUBLE( env, stdlib_strided_dvarmtk_ndarray( N, mean, correction, X, strideX, offsetX ), v );
+	STDLIB_NAPI_CREATE_DOUBLE( env, API_SUFFIX(stdlib_strided_dvarmtk_ndarray)( N, mean, correction, X, strideX, offsetX ), v );
 	return v;
 }
 
