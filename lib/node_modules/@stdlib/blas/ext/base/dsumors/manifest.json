@@ -28,7 +28,7 @@
     {
       "task": "build",
       "src": [
-        "./src/dsumors.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -39,32 +39,41 @@
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
-        "@stdlib/napi/argv-strided-float64array"
+        "@stdlib/napi/argv-strided-float64array",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared",
+        "@stdlib/napi/create-double"
       ]
     },
     {
       "task": "benchmark",
       "src": [
-        "./src/dsumors.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
       "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared"
+      ]
     },
     {
       "task": "examples",
       "src": [
-        "./src/dsumors.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
       "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared"
+      ]
     }
   ]
 }
