@@ -1,5 +1,8 @@
 {
-  "options": {},
+  "options": {
+    "task": "build",
+    "wasm": false
+  },
   "fields": [
     {
       "field": "src",
@@ -25,17 +28,19 @@
   "confs": [
     {
       "task": "build",
+      "wasm": false,
       "src": [
-        "./src/dsemch.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/math/base/special/sqrt",
         "@stdlib/stats/base/dvariancech",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
@@ -47,33 +52,55 @@
     },
     {
       "task": "benchmark",
+      "wasm": false,
       "src": [
-        "./src/dsemch.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/math/base/special/sqrt",
         "@stdlib/stats/base/dvariancech"
       ]
     },
     {
       "task": "examples",
+      "wasm": false,
       "src": [
-        "./src/dsemch.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/stats/base/dvariancech"
+      ]
+    },
+    {
+      "task": "",
+      "wasm": true,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/math/base/special/sqrt",
         "@stdlib/stats/base/dvariancech"
       ]
     }
