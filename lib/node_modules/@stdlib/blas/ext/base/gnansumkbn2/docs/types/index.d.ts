@@ -31,7 +31,7 @@ interface Routine {
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns sum
 	*
 	* @example
@@ -40,15 +40,15 @@ interface Routine {
 	* var v = gnansumkbn2( x.length, x, 1 );
 	* // returns 1.0
 	*/
-	( N: number, x: NumericArray, stride: number ): number;
+	( N: number, x: NumericArray, strideX: number ): number;
 
 	/**
 	* Computes the sum of strided array elements, ignoring `NaN` values and using a second-order iterative Kahan–Babuška algorithm and alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param stride - stride length
-	* @param offset - starting index
+	* @param strideX - stride length
+	* @param offsetX - starting index
 	* @returns sum
 	*
 	* @example
@@ -57,7 +57,7 @@ interface Routine {
 	* var v = gnansumkbn2.ndarray( x.length, x, 1, 0 );
 	* // returns 1.0
 	*/
-	ndarray( N: number, x: NumericArray, stride: number, offset: number ): number;
+	ndarray( N: number, x: NumericArray, strideX: number, offsetX: number ): number;
 }
 
 /**
@@ -65,7 +65,7 @@ interface Routine {
 *
 * @param N - number of indexed elements
 * @param x - input array
-* @param stride - stride length
+* @param strideX - stride length
 * @returns sum
 *
 * @example
