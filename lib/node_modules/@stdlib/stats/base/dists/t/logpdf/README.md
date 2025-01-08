@@ -168,9 +168,9 @@ for ( i = 0; i < 10; i++ ) {
 #include "stdlib/stats/base/dists/t/logpdf.h"
 ```
 
-#### stdlib_base_dists_t_logpdf( x, a, b )
+#### stdlib_base_dists_t_logpdf( x, v )
 
-Evaluates the natural logarithm of the [PDF][pdf] for a [Student's t][t-distribution] distribution with degree of freedom `v`.
+Evaluates the natural logarithm of the [probability density function][pdf] (PDF) for a [Student's t][t-distribution] distribution with degrees of freedom `v`.
 
 ```c
 double out = stdlib_base_dists_t_logpdf( 0.5, 1.0 );
