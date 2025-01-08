@@ -17,7 +17,8 @@
 */
 
 #include "stdlib/blas/ext/base/dsumpw.h"
-#include <stdint.h>
+#include "stdlib/strided/base/stride2offset.h"
+#include "stdlib/blas/base/shared.h"
 
 /**
 * Computes the sum of double-precision floating-point strided array elements using pairwise summation.
@@ -30,19 +31,39 @@
 *
 * -   Higham, Nicholas J. 1993. "The Accuracy of Floating Point Summation." _SIAM Journal on Scientific Computing_ 14 (4): 783–99. doi:[10.1137/0914050](https://doi.org/10.1137/0914050).
 *
-* @param N       number of indexed elements
-* @param X       input array
-* @param stride  stride length
-* @return        output value
+* @param N        number of indexed elements
+* @param X        input array
+* @param strideX  stride length
+* @return         output value
 */
-double stdlib_strided_dsumpw( const int64_t N, const double *X, const int64_t stride ) {
-	double *xp1;
-	double *xp2;
+double API_SUFFIX(stdlib_strided_dsumpw)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX ) {
+	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	return API_SUFFIX(stdlib_strided_dsumpw_ndarray)( N, X, strideX, ox );
+}
+
+/**
+* Computes the sum of double-precision floating-point strided array elements using pairwise summation and alternative indexing semantics.
+*
+* ## Method
+*
+* -   This implementation uses pairwise summation, which accrues rounding error `O(log2 N)` instead of `O(N)`. The recursion depth is also `O(log2 N)`.
+*
+* ## References
+*
+* -   Higham, Nicholas J. 1993. "The Accuracy of Floating Point Summation." _SIAM Journal on Scientific Computing_ 14 (4): 783–99. doi:[10.1137/0914050](https://doi.org/10.1137/0914050).
+*
+* @param N        number of indexed elements
+* @param X        input array
+* @param strideX  stride length
+* @param offsetX  starting index
+* @return         output value
+*/
+double API_SUFFIX(stdlib_strided_dsumpw_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+	CBLAS_INT ix;
+	CBLAS_INT M;
+	CBLAS_INT n;
+	CBLAS_INT i;
 	double sum;
-	int64_t ix;
-	int64_t M;
-	int64_t n;
-	int64_t i;
 	double s0;
 	double s1;
 	double s2;
@@ -55,20 +76,16 @@ double stdlib_strided_dsumpw( const int64_t N, const double *X, const int64_t st
 	if ( N <= 0 ) {
 		return 0.0;
 	}
-	if ( N == 1 || stride == 0 ) {
-		return X[ 0 ];
-	}
-	if ( stride < 0 ) {
-		ix = (1-N) * stride;
-	} else {
-		ix = 0;
+	ix = offsetX;
+	if ( strideX == 0 ) {
+		return N * X[ ix ];
 	}
 	if ( N < 8 ) {
 		// Use simple summation...
 		sum = 0.0;
 		for ( i = 0; i < N; i++ ) {
 			sum += X[ ix ];
-			ix += stride;
+			ix += strideX;
 		}
 		return sum;
 	}
@@ -76,46 +93,39 @@ double stdlib_strided_dsumpw( const int64_t N, const double *X, const int64_t st
 	if ( N <= 128 ) {
 		// Sum a block with 8 accumulators (by loop unrolling, we lower the effective blocksize to 16)...
 		s0 = X[ ix ];
-		s1 = X[ ix+stride ];
-		s2 = X[ ix+(2*stride) ];
-		s3 = X[ ix+(3*stride) ];
-		s4 = X[ ix+(4*stride) ];
-		s5 = X[ ix+(5*stride) ];
-		s6 = X[ ix+(6*stride) ];
-		s7 = X[ ix+(7*stride) ];
-		ix += 8 * stride;
+		s1 = X[ ix+strideX ];
+		s2 = X[ ix+(2*strideX) ];
+		s3 = X[ ix+(3*strideX) ];
+		s4 = X[ ix+(4*strideX) ];
+		s5 = X[ ix+(5*strideX) ];
+		s6 = X[ ix+(6*strideX) ];
+		s7 = X[ ix+(7*strideX) ];
+		ix += 8 * strideX;
 
 		M = N % 8;
 		for ( i = 8; i < N-M; i += 8 ) {
 			s0 += X[ ix ];
-			s1 += X[ ix+stride ];
-			s2 += X[ ix+(2*stride) ];
-			s3 += X[ ix+(3*stride) ];
-			s4 += X[ ix+(4*stride) ];
-			s5 += X[ ix+(5*stride) ];
-			s6 += X[ ix+(6*stride) ];
-			s7 += X[ ix+(7*stride) ];
-			ix += 8 * stride;
+			s1 += X[ ix+strideX ];
+			s2 += X[ ix+(2*strideX) ];
+			s3 += X[ ix+(3*strideX) ];
+			s4 += X[ ix+(4*strideX) ];
+			s5 += X[ ix+(5*strideX) ];
+			s6 += X[ ix+(6*strideX) ];
+			s7 += X[ ix+(7*strideX) ];
+			ix += 8 * strideX;
 		}
 		// Pairwise sum the accumulators:
-		sum = ((s0+s1) + (s2+s3)) + ((s4+s5) + (s6+s7));
+		sum = ( (s0+s1) + (s2+s3) ) + ( (s4+s5) + (s6+s7) );
 
 		// Clean-up loop...
 		for (; i < N; i++ ) {
 			sum += X[ ix ];
-			ix += stride;
+			ix += strideX;
 		}
 		return sum;
 	}
 	// Recurse by dividing by two, but avoiding non-multiples of unroll factor...
 	n = N / 2;
 	n -= n % 8;
-	if ( stride < 0 ) {
-		xp1 = (double *)X + ( (n-N)*stride );
-		xp2 = (double *)X;
-	} else {
-		xp1 = (double *)X;
-		xp2 = (double *)X + ( n*stride );
-	}
-	return stdlib_strided_dsumpw( n, xp1, stride ) + stdlib_strided_dsumpw( N-n, xp2, stride );
+	return API_SUFFIX(stdlib_strided_dsumpw_ndarray)( n, X, strideX, ix ) + API_SUFFIX(stdlib_strided_dsumpw_ndarray)( N-n, X, strideX, ix+(n*strideX) );
 }
