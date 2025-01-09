@@ -28,7 +28,7 @@ interface Routine {
 	* @param N - number of indexed elements
 	* @param correction - degrees of freedom adjustment
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns standard error of the mean
 	*
 	* @example
@@ -39,7 +39,7 @@ interface Routine {
 	* var v = dsemyc( x.length, 1, x, 1 );
 	* // returns ~1.20185
 	*/
-	( N: number, correction: number, x: Float64Array, stride: number ): number;
+	( N: number, correction: number, x: Float64Array, strideX: number ): number;
 
 	/**
 	* Computes the standard error of the mean for a double-precision floating-point strided array using a one-pass algorithm proposed by Youngs and Cramer and alternative indexing semantics.
@@ -47,8 +47,8 @@ interface Routine {
 	* @param N - number of indexed elements
 	* @param correction - degrees of freedom adjustment
 	* @param x - input array
-	* @param stride - stride length
-	* @param offset - starting index
+	* @param strideX - stride length
+	* @param offsetX - starting index
 	* @returns standard error of the mean
 	*
 	* @example
@@ -59,7 +59,7 @@ interface Routine {
 	* var v = dsemyc.ndarray( x.length, 1, x, 1, 0 );
 	* // returns ~1.20185
 	*/
-	ndarray( N: number, correction: number, x: Float64Array, stride: number, offset: number ): number;
+	ndarray( N: number, correction: number, x: Float64Array, strideX: number, offsetX: number ): number;
 }
 
 /**
@@ -68,7 +68,7 @@ interface Routine {
 * @param N - number of indexed elements
 * @param correction - degrees of freedom adjustment
 * @param x - input array
-* @param stride - stride length
+* @param strideX - stride length
 * @returns standard error of the mean
 *
 * @example
