@@ -913,7 +913,7 @@ interface Namespace {
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns arithmetic mean
 	*
 	* @example
@@ -2295,7 +2295,7 @@ interface Namespace {
 	* @param N - number of indexed elements
 	* @param correction - degrees of freedom adjustment
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns standard deviation
 	*
 	* @example
@@ -2349,7 +2349,7 @@ interface Namespace {
 	* @param N - number of indexed elements
 	* @param correction - degrees of freedom adjustment
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns standard deviation
 	*
 	* @example
@@ -2376,7 +2376,7 @@ interface Namespace {
 	* @param N - number of indexed elements
 	* @param correction - degrees of freedom adjustment
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns standard deviation
 	*
 	* @example
@@ -2403,7 +2403,7 @@ interface Namespace {
 	* @param N - number of indexed elements
 	* @param correction - degrees of freedom adjustment
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns standard deviation
 	*
 	* @example
@@ -2411,7 +2411,7 @@ interface Namespace {
 	*
 	* var x = new Float64Array( [ 1.0, -2.0, 2.0 ] );
 	*
-	* var v = ns.dstdevyc( x.length, 1, x, 1 );
+	* var v = ns.dstdevyc( x.length, 1.0, x, 1 );
 	* // returns ~2.0817
 	*
 	* @example
@@ -2419,7 +2419,7 @@ interface Namespace {
 	*
 	* var x = new Float64Array( [ 1.0, -2.0, 2.0 ] );
 	*
-	* var v = ns.dstdevyc.ndarray( x.length, 1, x, 1, 0 );
+	* var v = ns.dstdevyc.ndarray( x.length, 1.0, x, 1, 0 );
 	* // returns ~2.0817
 	*/
 	dstdevyc: typeof dstdevyc;
