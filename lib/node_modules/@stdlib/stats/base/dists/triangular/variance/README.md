@@ -59,7 +59,7 @@ var variance = require( '@stdlib/stats/base/dists/triangular/variance' );
 
 #### variance( a, b, c )
 
-Returns the [variance][variance] of a [triangular][triangular-distribution] distribution with minimum support `a`, maximum support`b`, and mode `c`.
+Returns the [variance][variance] of a [triangular][triangular-distribution] distribution with minimum support `a`, maximum support `b`, and mode `c`.
 
 ```javascript
 var v = variance( 0.0, 1.0, 0.8 );
@@ -140,6 +140,104 @@ for ( i = 0; i < 10; i++ ) {
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/triangular/variance.h"
+```
+
+#### stdlib_base_dists_triangular_variance( a, b, c )
+
+Returns the [variance][variance] of a [triangular][triangular-distribution] distribution with minimum support `a`, maximum support `b`, and mode `c`.
+
+```c
+double out = stdlib_base_dists_triangular_variance( 0.0, 1.0, 0.5 );
+// returns ~0.056
+```
+
+The function accepts the following arguments:
+
+-   **a**: `[in] double` minimum support.
+-   **b**: `[in] double` maximum support.
+-   **c**: `[in] double` mode.
+
+```c
+double stdlib_base_dists_triangular_variance( const double a, const double b, const double c );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/triangular/variance.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double a;
+    double b;
+    double c;
+    double y;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        a = random_uniform( 0.0, 10.0 );
+        b = random_uniform( 0.0, 10.0 ) + a;
+        c = a + (b - a) * random_uniform( 0.0, 1.0 );
+        y = stdlib_base_dists_triangular_variance( a, b, c );
+        printf( "a: %lf, b: %lf, c: %lf, Var(X;a,b,c): %lf\n", a, b, c, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
