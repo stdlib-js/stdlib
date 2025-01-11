@@ -37,7 +37,7 @@ float API_SUFFIX(stdlib_strided_smidrange)( const CBLAS_INT N, const float *X, c
 }
 
 /**
-* Computes the mid-range of a single-precision floating-point strided array and using alternative indexing semantics.
+* Computes the mid-range of a single-precision floating-point strided array using alternative indexing semantics.
 *
 * @param N        number of indexed elements
 * @param X        input array
@@ -53,7 +53,7 @@ float API_SUFFIX(stdlib_strided_smidrange_ndarray)( const CBLAS_INT N, const flo
 	float v;
 
 	if ( N <= 0 ) {
-		return 0.0 / 0.0; // NaN
+		return 0.0f / 0.0f; // NaN
 	}
 	if ( N == 1 || strideX == 0 ) {
 		return X[ offsetX ];
@@ -73,5 +73,5 @@ float API_SUFFIX(stdlib_strided_smidrange_ndarray)( const CBLAS_INT N, const flo
 			max = v;
 		}
 	}
-	return ( max+min ) / 2.0;
+	return ( max+min ) / 2.0f;
 }
