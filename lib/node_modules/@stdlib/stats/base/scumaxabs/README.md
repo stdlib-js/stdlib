@@ -220,7 +220,7 @@ Computes the cumulative maximum absolute value of single-precision floating-poin
 int main( void ) {
     // Create strided arrays:
     const float x[] = { 1.0f, 2.0f, -3.0f, 4.0f, -5.0f, 6.0f, 7.0f, 8.0f };
-    const float y[] = { 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f };
+    float y[] = { 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f };
 
     // Specify the number of elements:
     const int N = 4;
