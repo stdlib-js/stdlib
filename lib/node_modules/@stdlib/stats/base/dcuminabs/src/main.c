@@ -69,7 +69,7 @@ void API_SUFFIX(stdlib_strided_dcuminabs_ndarray)( const CBLAS_INT N, const doub
 	if ( !stdlib_base_is_nan( min ) ) {
 		for (; i < N; i++ ) {
 			ix += strideX;
-			v = fabs( X[ ix ] );
+			v = stdlib_base_abs( X[ ix ] );
 			if ( stdlib_base_is_nan( v ) ) {
 				min = v;
 				break;
