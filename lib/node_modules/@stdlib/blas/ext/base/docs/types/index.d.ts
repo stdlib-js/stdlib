@@ -1809,9 +1809,9 @@ interface Namespace {
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param strideX - `x` stride length
+	* @param strideX - stride length for `x`
 	* @param out - output array whose first element is the sum and whose second element is the number of non-NaN elements
-	* @param strideOut - `out` stride length
+	* @param strideOut - stride length for `out`
 	* @returns output array
 	*
 	* @example
@@ -2191,7 +2191,7 @@ interface Namespace {
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns sum
 	*
 	* @example
@@ -2213,7 +2213,7 @@ interface Namespace {
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns sum
 	*
 	* @example
@@ -2235,7 +2235,7 @@ interface Namespace {
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns sum
 	*
 	* @example
