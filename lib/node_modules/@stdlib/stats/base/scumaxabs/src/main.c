@@ -18,8 +18,9 @@
 
 #include "stdlib/stats/base/scumaxabs.h"
 #include "stdlib/math/base/assert/is_nanf.h"
-#include <stdint.h>
-#include <math.h>
+#include "stdlib/math/base/special/absf.h"
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/stride2offset.h"
 
 /**
 * Computes the cumulative maximum absolute value of single-precision floating-point strided array elements.
@@ -30,27 +31,37 @@
 * @param Y        output array
 * @param strideY  Y stride length
 */
-void stdlib_strided_scumaxabs( const int64_t N, const float *X, const int64_t strideX, float *Y, const int64_t strideY ) {
-	int64_t ix;
-	int64_t iy;
-	int64_t i;
+void API_SUFFIX(stdlib_strided_scumaxabs)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, float *Y, const CBLAS_INT strideY ) {
+	const CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	const CBLAS_INT oy = stdlib_strided_stride2offset( N, strideY );
+	API_SUFFIX(stdlib_strided_scumaxabs_ndarray)( N, X, strideX, ox, Y, strideY, oy );
+	return;
+}
+
+/**
+* Computes the cumulative maximum absolute value of single-precision floating-point strided array elements using alternative indexing semantics.
+*
+* @param N        number of indexed elements
+* @param X        input array
+* @param strideX  X stride length
+* @param offsetX  starting index for X
+* @param Y        output array
+* @param strideY  Y stride length
+* @param offsetY  starting index for Y
+*/
+void API_SUFFIX(stdlib_strided_scumaxabs_ndarray)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, float *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY ) {
+	CBLAS_INT ix;
+	CBLAS_INT iy;
+	CBLAS_INT i;
 	float max;
 	float v;
 
 	if ( N <= 0 ) {
 		return;
 	}
-	if ( strideX < 0 ) {
-		ix = (1-N) * strideX;
-	} else {
-		ix = 0;
-	}
-	if ( strideY < 0 ) {
-		iy = (1-N) * strideY;
-	} else {
-		iy = 0;
-	}
-	max = fabsf( X[ ix ] );
+	ix = offsetX;
+	iy = offsetY;
+	max = stdlib_base_absf( X[ ix ] );
 	Y[ iy ] = max;
 
 	iy += strideY;
@@ -58,7 +69,7 @@ void stdlib_strided_scumaxabs( const int64_t N, const float *X, const int64_t st
 	if ( !stdlib_base_is_nanf( max ) ) {
 		for (; i < N; i++ ) {
 			ix += strideX;
-			v = fabsf( X[ ix ] );
+			v = stdlib_base_absf( X[ ix ] );
 			if ( stdlib_base_is_nanf( v ) ) {
 				max = v;
 				break;
