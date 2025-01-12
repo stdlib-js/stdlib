@@ -224,8 +224,8 @@ int main( void ) {
     int i;
 
     for ( i = 0; i < 25; i++ ) {
-        d1 = random_uniform( 0.0, 10.0 ) + STDLIB_CONSTANT_FLOAT64_EPS;
-        d2 = random_uniform( 0.0, 20.0 ) + STDLIB_CONSTANT_FLOAT64_EPS;
+        d1 = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 10.0 );
+        d2 = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 20.0 );
         y = stdlib_base_dists_f_stdev( d1, d2 );
         printf( "d1: %lf, d2: %lf, SD(X;d1,d2): %lf\n", d1, d2, y );
     }

@@ -34,7 +34,7 @@ int main( void ) {
 
 	for ( i = 0; i < 10; i++ ) {
 		mu = random_uniform( -50.0, 50.0 );
-		s = random_uniform( 0.0, 20.0 ) + STDLIB_CONSTANT_FLOAT64_EPS;
+		s = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 20.0 );
 		y = stdlib_base_dists_cosine_mode( mu, s );
 		printf( "µ: %lf, s: %lf, mode(X;µ,s): %lf\n", mu, s , y );
 	}
