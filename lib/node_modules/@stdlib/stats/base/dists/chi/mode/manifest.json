@@ -56,8 +56,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
-        "@stdlib/math/base/special/sqrt",
-        "@stdlib/constants/float64/eps"
+        "@stdlib/math/base/special/sqrt"
       ]
     },
     {
