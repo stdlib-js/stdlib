@@ -32,10 +32,10 @@ import { Collection } from '@stdlib/types/array';
 *
 * @example
 * var x = [ 1, 2, 3, 4 ];
-* var idx = [ 5, 6, 7, 8 ];
+* var y = [ 5, 6, 7, 8 ];
 * var mask = [ 0, 1, 0, 1 ];
 *
-* var out = mskfilter2( x, idx, mask );
+* var out = mskfilter2( x, y, mask );
 * // returns [ [ 2, 4 ], [ 6, 8 ] ]
 */
 declare function mskfilter2<T = unknown, U = unknown>( x: Collection<T>, y: Collection<U>, mask: Collection ): [ Array<T>, Array<U> ];
