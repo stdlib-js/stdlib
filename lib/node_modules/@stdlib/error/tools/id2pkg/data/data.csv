@@ -158,6 +158,12 @@
 "257",@stdlib/ndarray-to-fancy
 "258",@stdlib/ndarray/to-json
 "259",@stdlib/ndarray-to-json
+"260",@stdlib/ndarray/base/spread-dimensions
+"261",@stdlib/ndarray-base-spread-dimensions
+"262",@stdlib/ndarray/base/to-normalized-indices
+"263",@stdlib/ndarray-base-to-normalized-indices
+"264",@stdlib/ndarray/base/to-unique-normalized-indices
+"265",@stdlib/ndarray-base-to-unique-normalized-indices
 "1Yi",@stdlib/array/base/accessor-getter
 "1Yj",@stdlib/array-base-accessor-getter
 "1Yk",@stdlib/array/base/accessor-setter
@@ -218,6 +224,8 @@
 "1rB",@stdlib/array-base-assert-is-same-kind-data-type-cast
 "1rC",@stdlib/array/base/assert/is-signed-integer-data-type
 "1rD",@stdlib/array-base-assert-is-signed-integer-data-type
+"25a",@stdlib/array/base/assert/is-sorted-ascending
+"25b",@stdlib/array-base-assert-is-sorted-ascending
 "1rE",@stdlib/array/base/assert/is-unsigned-integer-data-type
 "1rF",@stdlib/array-base-assert-is-unsigned-integer-data-type
 "1Yu",@stdlib/array/base/assert
@@ -348,6 +356,8 @@
 "1rH",@stdlib/array-base-fancy-slice-assign
 "1rI",@stdlib/array/base/fancy-slice
 "1rJ",@stdlib/array-base-fancy-slice
+"25c",@stdlib/array/base/fill
+"25d",@stdlib/array-base-fill
 "004",@stdlib/array/base/filled-by
 "005",@stdlib/array-base-filled-by
 "006",@stdlib/array/base/filled
@@ -432,6 +442,8 @@
 "009",@stdlib/array-base-incrspace
 "1mo",@stdlib/array/base/index-of
 "1mp",@stdlib/array-base-index-of
+"25e",@stdlib/array/base/indices-complement
+"25f",@stdlib/array-base-indices-complement
 "1t0",@stdlib/array/base/join
 "1t1",@stdlib/array-base-join
 "1mq",@stdlib/array/base/last-index-of
@@ -462,6 +474,10 @@
 "1uN",@stdlib/array-base-mskfilter-map
 "1oq",@stdlib/array/base/mskfilter
 "1or",@stdlib/array-base-mskfilter
+"25g",@stdlib/array/base/mskfilter2
+"25h",@stdlib/array-base-mskfilter2
+"25i",@stdlib/array/base/mskfiltern
+"25j",@stdlib/array-base-mskfiltern
 "1wE",@stdlib/array/base/mskput
 "1wF",@stdlib/array-base-mskput
 "1uO",@stdlib/array/base/mskreject-map
@@ -526,6 +542,10 @@
 "1oz",@stdlib/array-base-resolve-setter
 "1p0",@stdlib/array/base/reverse
 "1p1",@stdlib/array-base-reverse
+"25k",@stdlib/array/base/scatter-filled
+"25l",@stdlib/array-base-scatter-filled
+"25m",@stdlib/array/base/scattered
+"25n",@stdlib/array-base-scattered
 "1ZW",@stdlib/array/base/setter
 "1ZX",@stdlib/array-base-setter
 "1ms",@stdlib/array/base/slice
@@ -540,6 +560,8 @@
 "1kv",@stdlib/array-base-strided2array5d
 "1ly",@stdlib/array/base/take-indexed
 "1lz",@stdlib/array-base-take-indexed
+"25o",@stdlib/array/base/take-indexed2
+"25p",@stdlib/array-base-take-indexed2
 "1t2",@stdlib/array/base/take-map
 "1t3",@stdlib/array-base-take-map
 "1ZY",@stdlib/array/base/take
@@ -2784,6 +2806,8 @@
 "0Qv",@stdlib/math-base-assert-is-prime
 "0Qw",@stdlib/math/base/assert/is-probability
 "0Qx",@stdlib/math-base-assert-is-probability
+"25q",@stdlib/math/base/assert/is-probabilityf
+"25r",@stdlib/math-base-assert-is-probabilityf
 "0Qy",@stdlib/math/base/assert/is-safe-integer
 "0Qz",@stdlib/math-base-assert-is-safe-integer
 "0R0",@stdlib/math/base/assert
@@ -3078,6 +3102,8 @@
 "0UX",@stdlib/math-base-special-digamma
 "0UY",@stdlib/math/base/special/dirac-delta
 "0UZ",@stdlib/math-base-special-dirac-delta
+"25s",@stdlib/math/base/special/dirac-deltaf
+"25t",@stdlib/math-base-special-dirac-deltaf
 "0Ua",@stdlib/math/base/special/dirichlet-eta
 "0Ub",@stdlib/math-base-special-dirichlet-eta
 "0Uc",@stdlib/math/base/special/ellipe
@@ -4082,6 +4108,8 @@
 "0hb",@stdlib/ndarray-base-assert-is-casting-mode
 "0hc",@stdlib/ndarray/base/assert/is-column-major-contiguous
 "0hd",@stdlib/ndarray-base-assert-is-column-major-contiguous
+"25u",@stdlib/ndarray/base/assert/is-column-major-string
+"25v",@stdlib/ndarray-base-assert-is-column-major-string
 "0he",@stdlib/ndarray/base/assert/is-column-major
 "0hf",@stdlib/ndarray-base-assert-is-column-major
 "1ci",@stdlib/ndarray/base/assert/is-complex-floating-point-data-type
@@ -4110,6 +4138,8 @@
 "1ct",@stdlib/ndarray-base-assert-is-real-floating-point-data-type
 "0hq",@stdlib/ndarray/base/assert/is-row-major-contiguous
 "0hr",@stdlib/ndarray-base-assert-is-row-major-contiguous
+"25w",@stdlib/ndarray/base/assert/is-row-major-string
+"25x",@stdlib/ndarray-base-assert-is-row-major-string
 "0hs",@stdlib/ndarray/base/assert/is-row-major
 "0ht",@stdlib/ndarray-base-assert-is-row-major
 "0hu",@stdlib/ndarray/base/assert/is-safe-data-type-cast
@@ -4244,6 +4274,8 @@
 "0jD",@stdlib/ndarray-base-nonsingleton-dimensions
 "1l8",@stdlib/ndarray/base/normalize-index
 "1l9",@stdlib/ndarray-base-normalize-index
+"25y",@stdlib/ndarray/base/normalize-indices
+"25z",@stdlib/ndarray-base-normalize-indices
 "1d8",@stdlib/ndarray/base/nullary-loop-interchange-order
 "1d9",@stdlib/ndarray-base-nullary-loop-interchange-order
 "1dA",@stdlib/ndarray/base/nullary-tiling-block-size
