@@ -18,7 +18,6 @@
 
 #include "stdlib/stats/base/dists/beta/mode.h"
 
-
 /**
 * Returns the mode of a beta distribution.
 *

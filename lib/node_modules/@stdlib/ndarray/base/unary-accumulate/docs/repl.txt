@@ -1,0 +1,74 @@
+
+{{alias}}( arrays, initial, accumulator )
+    Performs a reduction over elements in an input ndarray.
+
+    A provided "ndarray" should be an object with the following properties:
+
+    - dtype: data type.
+    - data: data buffer.
+    - shape: dimensions.
+    - strides: stride lengths.
+    - offset: index offset.
+    - order: specifies whether an ndarray is row-major (C-style) or column-major
+    (Fortran-style).
+
+    The accumulator callback should be a binary function accepting two
+    arguments:
+
+    - accumulated: the accumulated result.
+    - currentValue: the current ndarray element.
+
+    Each invocation of the accumulator callback should return an updated
+    accumulated result. This return value is subsequently provided to the
+    accumulator callback upon next invocation.
+
+    After invoking the accumulator callback for each element in a provided
+    ndarray, the function returns the return value from the last invocation of
+    the accumulator callback.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing one input ndarray.
+
+    initial: any
+        Initial accumulator value.
+
+    accumulator: Function
+        Accumulator callback.
+
+    Returns
+    -------
+    result: any
+        Accumulated result.
+
+    Examples
+    --------
+    // Define ndarray data and meta data...
+    > var xbuf = new {{alias:@stdlib/array/float64}}( [ -1.0, -2.0, -3.0, -4.0 ] );
+    > var dtype = 'float64';
+    > var shape = [ 2, 2 ];
+    > var sx = [ 2, 1 ];
+    > var ox = 0;
+    > var order = 'row-major';
+
+    // Using an ndarray...
+    > var x = {{alias:@stdlib/ndarray/ctor}}( dtype, xbuf, shape, sx, ox, order );
+    > {{alias}}( [ x ], 0.0, {{alias:@stdlib/math/base/ops/add}} )
+    -10.0
+
+    // Using a minimal ndarray-like objects...
+    > x = {
+    ...     'dtype': dtype,
+    ...     'data': xbuf,
+    ...     'shape': shape,
+    ...     'strides': sx,
+    ...     'offset': ox,
+    ...     'order': order
+    ... };
+    > {{alias}}( [ x ], 0.0, {{alias:@stdlib/math/base/ops/add}} )
+    -10.0
+
+    See Also
+    --------
+
