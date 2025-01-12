@@ -106,7 +106,7 @@ static double benchmark( void ) {
 		t[ i ] = random_uniform( 0.0, 5.0 );
 		a[ i ] = random_uniform( 0.0, 10.0 );
 		b[ i ] = random_uniform( a[ i ], 40.0 ) + STDLIB_CONSTANT_FLOAT64_EPS;
-		c[ i ] = random_uniform( a[ i ], b[ i ]);
+		c[ i ] = random_uniform( a[ i ], b[ i ] );
 	}
 
 	tc = tic();
