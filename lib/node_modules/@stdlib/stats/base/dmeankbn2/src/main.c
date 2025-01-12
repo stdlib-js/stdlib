@@ -18,7 +18,8 @@
 
 #include "stdlib/stats/base/dmeankbn2.h"
 #include "stdlib/blas/ext/base/dsumkbn2.h"
-#include <stdint.h>
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/stride2offset.h"
 
 /**
 * Computes the arithmetic mean of a double-precision floating-point strided array using a second-order iterative Kahan–Babuška algorithm.
@@ -31,17 +32,31 @@
 *
 * -   Klein, Andreas. 2005. "A Generalized Kahan-Babuška-Summation-Algorithm." _Computing_ 76 (3): 279–93. doi:[10.1007/s00607-005-0139-x](https://doi.org/10.1007/s00607-005-0139-x).
 *
-* @param N       number of indexed elements
-* @param X       input array
-* @param stride  stride length
-* @return        output value
+* @param N        number of indexed elements
+* @param X        input array
+* @param strideX  stride length
+* @return         output value
 */
-double stdlib_strided_dmeankbn2( const int64_t N, const double *X, const int64_t stride ) {
+double API_SUFFIX(stdlib_strided_dmeankbn2)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX ) {
+	const CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	return API_SUFFIX(stdlib_strided_dmeankbn2_ndarray)( N, X, strideX, ox );
+}
+
+/**
+* Computes the arithmetic mean of a double-precision floating-point strided array using a second-order iterative Kahan–Babuška algorithm and alternative indexing semantics.
+*
+* @param N        number of indexed elements
+* @param X        input array
+* @param strideX  stride length
+* @param offsetX  starting index for X
+* @return         output value
+*/
+double API_SUFFIX(stdlib_strided_dmeankbn2_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
 	if ( N <= 0 ) {
 		return 0.0 / 0.0; // NaN
 	}
-	if ( N == 1 || stride == 0 ) {
-		return X[ 0 ];
+	if ( N == 1 || strideX == 0 ) {
+		return X[ offsetX ];
 	}
-	return stdlib_strided_dsumkbn2( N, X, stride ) / (double)N;
+	return API_SUFFIX(stdlib_strided_dsumkbn2_ndarray)( N, X, strideX, offsetX ) / (double)N;
 }
