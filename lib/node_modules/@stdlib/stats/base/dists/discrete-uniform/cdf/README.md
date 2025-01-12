@@ -226,7 +226,7 @@ int main( void ) {
     for ( i = 0; i < 10; i++ ) {
         x = random_uniform( -10.0, 10.0 );
         a = stdlib_base_round( random_uniform( 0.0, 10.0 ) );
-        b = stdlib_base_round( random_uniform( 0.0, 10.0 ) ) + a;
+        b = stdlib_base_round( random_uniform( a, a+10.0 ) );
         y = stdlib_base_dists_discrete_uniform_cdf( x, a, b );
         printf( "x:%lf, a: %d, b: %d, F(X;a,b): %lf\n", x, a, b, y );
     }
