@@ -66,8 +66,9 @@ var idx = toUniqueNormalizedIndices( [ 15, -15 ], 10 );
 
 ## Notes
 
--   The function preserves provided index order.
+-   During normalization, a negative index is converted to a nonnegative index according to `max + idx + 1`. If, after normalization, the resolved index is still negative, the value is considered out-of-bounds.
 -   When provided valid indices, the function always returns a "generic" array.
+-   The function preserves provided index order.
 
 </section>
 
