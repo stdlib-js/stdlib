@@ -3365,10 +3365,10 @@ interface Namespace {
 	*
 	* @example
 	* var x = [ 1, 2, 3, 4 ];
-	* var idx = [ 5, 6, 7, 8 ];
+	* var y = [ 5, 6, 7, 8 ];
 	* var mask = [ 0, 1, 0, 1 ];
 	*
-	* var out = ns.mskfilter2( x, idx, mask );
+	* var out = ns.mskfilter2( x, y, mask );
 	* // returns [ [ 2, 4 ], [ 6, 8 ] ]
 	*/
 	mskfilter2: typeof mskfilter2;
