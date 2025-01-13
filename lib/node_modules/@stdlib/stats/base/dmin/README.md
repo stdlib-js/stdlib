@@ -162,7 +162,7 @@ Computes the minimum value of a double-precision floating-point strided array.
 ```c
 const double x[] = { 1.0, -2.0, 2.0 };
 
-double v = stdlib_strided_dmin( 3, x, 2 );
+double v = stdlib_strided_dmin( 3, x, 1 );
 // returns -2.0
 ```
 
@@ -183,7 +183,7 @@ Computes the minimum value of a double-precision floating-point strided array us
 ```c
 const double x[] = { 1.0, -2.0, 2.0 };
 
-double v = stdlib_strided_dmin_ndarray( 3, x, 2, 0 );
+double v = stdlib_strided_dmin_ndarray( 3, x, 1, 0 );
 // returns -2.0
 ```
 
@@ -218,7 +218,6 @@ double stdlib_strided_dmin_ndarray( const CBLAS_INT N, const double *X, const CB
 
 ```c
 #include "stdlib/stats/base/dmin.h"
-#include <stdint.h>
 #include <stdio.h>
 
 int main( void ) {
