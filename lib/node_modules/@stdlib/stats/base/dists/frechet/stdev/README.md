@@ -146,7 +146,7 @@ var i;
 for ( i = 0; i < 10; i++ ) {
     alpha = ( randu()*20.0 ) + EPS;
     s = ( randu()*20.0 ) + EPS;
-    m = ( randu()*20.0 ) - 40.0;
+    m = ( randu()*40.0 ) - 20.0;
     y = stdev( alpha, s, m );
     console.log( 'α: %d, s: %d, m: %d, SD(X;α,s,m): %d', alpha.toFixed( 4 ), s.toFixed( 4 ), m.toFixed( 4 ), y.toFixed( 4 ) );
 }
@@ -240,9 +240,9 @@ int main( void ) {
    int i;
 
     for ( i = 0; i < 10; i++ ) {
-       alpha = random_uniform( 0.0, 20.0 ) + STDLIB_CONSTANT_FLOAT64_EPS;
-       s = random_uniform( 0.0, 20.0 ) + STDLIB_CONSTANT_FLOAT64_EPS;
-       m = random_uniform( 0.0, 20.0 ) - 40.0;
+       alpha = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 20.0 );
+       s = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 20.0 );
+       m = random_uniform( -20.0, 20.0 );
        y = stdlib_base_dists_frechet_stdev( alpha, s, m );
        printf( "α: %.4lf, s: %.4lf, m: %.4lf, SD(X;α,s,m): %.4lf\n", alpha, s, m, y );
     }

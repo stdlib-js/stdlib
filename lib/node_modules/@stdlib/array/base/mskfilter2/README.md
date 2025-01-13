@@ -36,9 +36,9 @@ Returns new arrays by applying a mask to two provided input arrays in a single p
 
 ```javascript
 var x = [ 1, 2, 3, 4 ];
-var idx = [ 0, 1, 2, 3 ];
+var y = [ 0, 1, 2, 3 ];
 
-var out = mskfilter2( x, idx, [ 0, 1, 0, 1 ] );
+var out = mskfilter2( x, y, [ 0, 1, 0, 1 ] );
 // returns [ [ 2, 4 ], [ 1, 3 ] ]
 ```
 
@@ -79,8 +79,8 @@ var mskfilter2 = require( '@stdlib/array/base/mskfilter2' );
 var x = zeroTo( 20 );
 console.log( x );
 
-var idx = zeroTo( x.length );
-console.log( idx );
+var y = zeroTo( x.length );
+console.log( y );
 
 // Generate a random mask:
 var mask = bernoulli( x.length, 0.5, {
@@ -89,7 +89,7 @@ var mask = bernoulli( x.length, 0.5, {
 console.log( mask );
 
 // Filter both arrays using the mask:
-var out = mskfilter2( x, idx, mask );
+var out = mskfilter2( x, y, mask );
 console.log( out );
 ```
 
