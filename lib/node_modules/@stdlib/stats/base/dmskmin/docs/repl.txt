@@ -26,13 +26,13 @@
         Input array.
 
     strideX: integer
-        Stride Length for `x`.
+        Stride length for `x`.
 
     mask: Uint8Array
         Mask array.
 
     strideMask: integer
-        Stride Length for `mask`.
+        Stride length for `mask`.
 
     Returns
     -------
@@ -79,7 +79,7 @@
         Input array.
 
     strideX: integer
-        Stride Length for `x`.
+        Stride length for `x`.
 
     offsetX: integer
         Starting index for `x`.
@@ -88,7 +88,7 @@
         Mask array.
 
     strideMask: integer
-        Stride Length for `mask`.
+        Stride length for `mask`.
 
     offsetMask: integer
         Starting index for `mask`.

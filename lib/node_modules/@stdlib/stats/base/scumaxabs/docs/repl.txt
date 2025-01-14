@@ -20,13 +20,13 @@
         Input array.
 
     strideX: integer
-        Stride Length for `x`.
+        Stride length for `x`.
 
     y: Float32Array
         Output array.
 
     strideY: integer
-        Stride Length for `y`.
+        Stride length for `y`.
 
     Returns
     -------
@@ -75,7 +75,7 @@
         Input array.
 
     strideX: integer
-        Stride Length for `x`.
+        Stride length for `x`.
 
     offsetX: integer
         Starting index for `x`.
@@ -84,7 +84,7 @@
         Output array.
 
     strideY: integer
-        Stride Length for `y`.
+        Stride length for `y`.
 
     offsetY: integer
         Starting index for `y`.
