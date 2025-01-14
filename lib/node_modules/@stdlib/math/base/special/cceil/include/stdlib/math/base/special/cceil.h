@@ -29,7 +29,7 @@ extern "C" {
 #endif
 
 /**
-* Rounds a double-precision complex floating-point number toward positive infinity.
+* Rounds each component of a double-precision complex floating-point number toward positive infinity.
 */
 stdlib_complex128_t stdlib_base_cceil( const stdlib_complex128_t z );
 

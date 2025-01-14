@@ -1,0 +1,14 @@
+{
+  "trans": "no-transpose",
+  "diag": "non-unit",
+  "uplo": "lower",
+  "strideA1": 2,
+  "strideA2": 5,
+  "offsetA": 0,
+  "strideX": 1,
+  "offsetX": 0,
+  "N": 3,
+  "A": [ 1, 999, 2, 999, 3, 0, 999, 4, 999, 5, 0, 999, 0, 999, 6 ],
+  "x": [ 1.0, 2.0, 3.0 ],
+  "x_out": [ 1.0, 0.0, 0.0 ]
+}

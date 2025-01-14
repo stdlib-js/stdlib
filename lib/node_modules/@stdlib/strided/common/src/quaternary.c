@@ -62,6 +62,7 @@
 *     ```
 *
 */
+
 #include "stdlib/strided/common/quaternary.h"
 #include "stdlib/strided/common/quaternary_typedefs.h"
 #include "stdlib/strided/common/quaternary_macros.h"

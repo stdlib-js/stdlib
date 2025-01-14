@@ -29,8 +29,8 @@ import { Complex128 } from '@stdlib/types/complex';
 * Parse a string representation of a 128-bit complex number.
 *
 * @param str - string representation of a complex number
-* @returns Complex128 instance
 * @throws must provide a string recognized as a complex number
+* @returns Complex128 instance
 *
 * @example
 * var str = '5 + 3i';

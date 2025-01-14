@@ -59,6 +59,6 @@ import expandDimensions = require( './index' );
 	const x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
 
 	expandDimensions(); // $ExpectError
-	expandDimensions( x, ); // $ExpectError
+	expandDimensions( x ); // $ExpectError
 	expandDimensions( x, 1, [ 1, 2, 3 ], [ 2, 3 ] ); // $ExpectError
 }

@@ -23,8 +23,8 @@
 import { Collection } from '@stdlib/types/array';
 
 /**
- * Interface describing `umuldw`
- */
+* Interface describing `umuldw`
+*/
 interface Umuldw {
 	/**
 	* Performs multiplication of two unsigned 32-bit integers and returns an array of two unsigned 32-bit integers which represents the unsigned 64-bit integer product.

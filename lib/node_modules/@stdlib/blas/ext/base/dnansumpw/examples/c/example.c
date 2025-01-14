@@ -17,7 +17,6 @@
 */
 
 #include "stdlib/blas/ext/base/dnansumpw.h"
-#include <stdint.h>
 #include <stdio.h>
 
 int main( void ) {
@@ -25,13 +24,13 @@ int main( void ) {
 	const double x[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 0.0/0.0, 0.0/0.0 };
 
 	// Specify the number of elements:
-	const int64_t N = 5;
+	const int N = 5;
 
 	// Specify the stride length:
-	const int64_t stride = 2;
+	const int strideX = 2;
 
 	// Compute the sum:
-	double v = stdlib_strided_dnansumpw( N, x, stride );
+	double v = stdlib_strided_dnansumpw( N, x, strideX );
 
 	// Print the result:
 	printf( "sum: %lf\n", v );

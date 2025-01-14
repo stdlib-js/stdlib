@@ -83,7 +83,7 @@ var binomcoefln = require( '@stdlib/math/base/special/binomcoefln' );
 
 #### binomcoefln( n, k )
 
-Evaluates the [binomial coefficient][binomial-coefficient] of two integers `n` and `k`.
+Evaluates the natural logarithm of the [binomial coefficient][binomial-coefficient] of two integers `n` and `k`.
 
 ```javascript
 var v = binomcoefln( 8, 2 );
@@ -157,6 +157,95 @@ for ( i = 0; i < 100; i++ ) {
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/binomcoefln.h"
+```
+
+#### stdlib_base_binomcoefln( n, k )
+
+Evaluates the natural logarithm of the [binomial coefficient][binomial-coefficient] of two integers `n` and `k`.
+
+```c
+double v = stdlib_base_binomcoefln( 8, 2 );
+// returns ~3.332
+```
+
+The function accepts the following arguments:
+
+-   **n**: `[in] int64_t` input value.
+-   **k**: `[in] int64_t` input value.
+
+```c
+double stdlib_base_binomcoefln( const int64_t n, const int64_t k );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/binomcoefln.h"
+#include <stdio.h>
+#include <stdint.h>
+#include <inttypes.h>
+
+int main( void ) {
+    const int64_t a[] = { 24, 32, 48, 116, 33 };
+    const int64_t b[] = { 12, 6, 15, 52, 22 };
+
+    double out;
+    int i;
+    for ( i = 0; i < 5; i++ ) {
+        out = stdlib_base_binomcoef( a[ i ], b[ i ] );
+        printf( "binomcoefln(%" PRId64 ", %" PRId64 ") = %lf\n", a[ i ], b[ i ], out );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 

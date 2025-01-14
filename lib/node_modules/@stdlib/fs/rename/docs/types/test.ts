@@ -18,7 +18,7 @@
 
 import rename = require( './index' );
 
-const done = ( error: Error | null ) => {
+const done = ( error: Error | null ): void => {
 	if ( error ) {
 		throw error;
 	}
@@ -94,14 +94,14 @@ const done = ( error: Error | null ) => {
 
 // The compiler throws an error if the `sync` method is provided a second argument which is not a string...
 {
-	rename.sync( './beep/boop.txt', 1, ); // $ExpectError
-	rename.sync( './beep/boop.txt', false, ); // $ExpectError
-	rename.sync( './beep/boop.txt', true, ); // $ExpectError
-	rename.sync( './beep/boop.txt', null, ); // $ExpectError
-	rename.sync( './beep/boop.txt', undefined, ); // $ExpectError
-	rename.sync( './beep/boop.txt', [], ); // $ExpectError
-	rename.sync( './beep/boop.txt', {}, ); // $ExpectError
-	rename.sync( './beep/boop.txt', ( x: number ): number => x, ); // $ExpectError
+	rename.sync( './beep/boop.txt', 1 ); // $ExpectError
+	rename.sync( './beep/boop.txt', false ); // $ExpectError
+	rename.sync( './beep/boop.txt', true ); // $ExpectError
+	rename.sync( './beep/boop.txt', null ); // $ExpectError
+	rename.sync( './beep/boop.txt', undefined ); // $ExpectError
+	rename.sync( './beep/boop.txt', [] ); // $ExpectError
+	rename.sync( './beep/boop.txt', {} ); // $ExpectError
+	rename.sync( './beep/boop.txt', ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the `sync` method is provided an unsupported number of arguments...

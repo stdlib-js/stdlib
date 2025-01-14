@@ -27,10 +27,10 @@ int main( void ) {
 	const int N = 8;
 
 	// Specify a stride:
-	const int stride = 1;
+	const int strideX = 1;
 
 	// Reverse the array:
-	c_drev( N, x, stride );
+	stdlib_strided_drev( N, x, strideX );
 
 	// Print the result:
 	for ( int i = 0; i < 8; i++ ) {

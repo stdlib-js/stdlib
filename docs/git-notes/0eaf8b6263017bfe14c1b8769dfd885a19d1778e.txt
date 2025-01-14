@@ -1,0 +1,9 @@
+---
+type: amend-message
+---
+feat!: add support for operating on stacks of vectors
+
+BREAKING CHANGE: return an ndarray, rather than a scalar
+
+To migrate, users should invoke the `#.get()` method to retrieve the scalar
+value from the returned zero-dimensional ndarray.

@@ -65,7 +65,8 @@ type HashFunction = ( value?: any ) => any;
 * v = iter.next().value;
 * // returns 4
 *
-* var bool = iter.ne
+* var bool = iter.next().done;
+* // returns true
 */
 declare function iterUniqueByHash( iterator: Iterator, hashFcn: HashFunction, thisArg?: any ): Iterator;
 

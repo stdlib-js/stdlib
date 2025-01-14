@@ -24,8 +24,8 @@ import nditerMatrices = require( './index' );
 
 // The function returns an iterator...
 {
-	nditerMatrices( zeros( [ 2, 2, 2 ] ) ); // $ExpectType Iterator<ndarray>
-	nditerMatrices( zeros( [ 2, 2, 2 ] ), {} ); // $ExpectType Iterator<ndarray>
+	nditerMatrices( zeros( [ 2, 2, 2 ] ) ); // $ExpectType Iterator<typedndarray<number>>
+	nditerMatrices( zeros( [ 2, 2, 2 ] ), {} ); // $ExpectType Iterator<typedndarray<number>>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an ndarray...

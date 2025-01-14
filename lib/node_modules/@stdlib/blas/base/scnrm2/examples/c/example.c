@@ -34,4 +34,10 @@ int main( void ) {
 
 	// Print the result:
 	printf( "L2-norm: %f\n", norm );
+
+	// Compute the L2-norm using alternative indexing semantics:
+	norm = c_scnrm2_ndarray( N, (void *)cx, -strideX, N-1 );
+
+	// Print the result:
+	printf( "L2-norm: %f\n", norm );
 }

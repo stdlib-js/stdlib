@@ -1,13 +1,13 @@
 
 {{alias}}( object, predicate[, thisArg ] )
-   Test whether all properties (own and inherited) of an object pass a 
+   Test whether all properties (own and inherited) of an object pass a
    test implemented by a predicate function.
 
     The predicate function is provided three arguments:
 
-    - `value`: object value
-    - `key`: object key
-    - `object`: the input object
+    - value: object value.
+    - key: object key.
+    - object: the input object.
 
     The function immediately returns upon encountering a non-truthy return
     value.

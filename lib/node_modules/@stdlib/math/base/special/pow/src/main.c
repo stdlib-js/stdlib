@@ -14,6 +14,20 @@
 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 * See the License for the specific language governing permissions and
 * limitations under the License.
+*
+*
+* ## Notice
+*
+* The following copyright and license were part of the original implementation available as part of [FreeBSD]{@link https://svnweb.freebsd.org/base/release/9.3.0/lib/msun/src/s_pow.c}. The implementation follows the original, but has been modified for JavaScript.
+*
+* ```text
+* Copyright (C) 2004 by Sun Microsystems, Inc. All rights reserved.
+*
+* Developed at SunPro, a Sun Microsystems, Inc. business.
+* Permission to use, copy, modify, and distribute this
+* software is freely granted, provided that this notice
+* is preserved.
+* ```
 */
 
 #include "stdlib/math/base/special/pow.h"
@@ -35,6 +49,7 @@
 #include "stdlib/math/base/assert/is_integer.h"
 #include "stdlib/math/base/special/sqrt.h"
 #include "stdlib/number/float64/base/to_words.h"
+#include "stdlib/constants/float64/num_high_word_significand_bits.h"
 
 // 0x3fefffff = 1072693247 => 0 01111111110 11111111111111111111 => biased exponent: 1022 = -1+1023 => 2^-1
 static const int32_t HIGH_MAX_NEAR_UNITY = 0x3fefffff;
@@ -48,9 +63,6 @@ static const int32_t HIGH_MIN_NORMAL_EXP = 0x00100000;
 
 // 0x3fe00000 = 1071644672 => 0 01111111110 00000000000000000000 => biased exponent: 1022 = -1+1023 => 2^-1
 static const int32_t HIGH_BIASED_EXP_NEG_1 = 0x3fe00000;
-
-// TODO: consider making into an external constant
-static const int32_t HIGH_NUM_SIGNIFICAND_BITS = 20;
 
 // High: LN2
 static const double LN2_HI = 6.93147182464599609375e-01; // 0x3FE62E43, 0x00000000
@@ -316,18 +328,18 @@ static double pow2( uint32_t j, const double hp, const double lp ) {
 	hpc = hp;
 	jc = (int32_t)j;
 	i = ( j & STDLIB_CONSTANT_FLOAT64_HIGH_WORD_ABS_MASK );
-	k = ( ( i >> HIGH_NUM_SIGNIFICAND_BITS ) - STDLIB_CONSTANT_FLOAT64_EXPONENT_BIAS );
+	k = ( ( i >> STDLIB_CONSTANT_FLOAT64_NUM_HIGH_WORD_SIGNIFICAND_BITS ) - STDLIB_CONSTANT_FLOAT64_EXPONENT_BIAS );
 	n = 0;
 	nc = (int32_t)n;
 
 	// `|z| > 0.5`, set `n = z+0.5`
 	if ( i > HIGH_BIASED_EXP_NEG_1 ) {
 		n = ( j + ( HIGH_MIN_NORMAL_EXP >> ( k + 1 ) ) );
-		k = ( ( ( n & STDLIB_CONSTANT_FLOAT64_HIGH_WORD_ABS_MASK ) >> HIGH_NUM_SIGNIFICAND_BITS ) - STDLIB_CONSTANT_FLOAT64_EXPONENT_BIAS ); // new k for n
+		k = ( ( ( n & STDLIB_CONSTANT_FLOAT64_HIGH_WORD_ABS_MASK ) >> STDLIB_CONSTANT_FLOAT64_NUM_HIGH_WORD_SIGNIFICAND_BITS ) - STDLIB_CONSTANT_FLOAT64_EXPONENT_BIAS ); // new k for n
 		tmp = ( ( n & ~( HIGH_SIGNIFICAND_MASK >> k ) ) );
 		t = 0.0;
 		stdlib_base_float64_set_high_word( tmp, &t );
-		n = ( ( ( n & HIGH_SIGNIFICAND_MASK ) | HIGH_MIN_NORMAL_EXP ) >> ( HIGH_NUM_SIGNIFICAND_BITS - k ) );
+		n = ( ( ( n & HIGH_SIGNIFICAND_MASK ) | HIGH_MIN_NORMAL_EXP ) >> ( STDLIB_CONSTANT_FLOAT64_NUM_HIGH_WORD_SIGNIFICAND_BITS - k ) );
 		nc = (int32_t)n;
 		if ( jc < 0 ) {
 			nc = -nc;
@@ -345,11 +357,11 @@ static double pow2( uint32_t j, const double hp, const double lp ) {
 	r = ( ( z * t1 ) / ( t1 - 2.0 ) ) - ( w + ( z * w ) );
 	z = 1.0 - ( r - z );
 	stdlib_base_float64_get_high_word( z, &j );
-	j = j + ( nc << HIGH_NUM_SIGNIFICAND_BITS );
+	j = j + ( nc << STDLIB_CONSTANT_FLOAT64_NUM_HIGH_WORD_SIGNIFICAND_BITS );
 	jc = (int32_t)j;
 
 	// Check for subnormal output...
-	if ( ( jc >> HIGH_NUM_SIGNIFICAND_BITS ) <= 0 ) {
+	if ( ( jc >> STDLIB_CONSTANT_FLOAT64_NUM_HIGH_WORD_SIGNIFICAND_BITS ) <= 0 ) {
 		z = stdlib_base_ldexp( z, nc );
 	} else {
 		stdlib_base_float64_set_high_word( j, &z );
@@ -437,7 +449,7 @@ void log2ax( const double ax, const int32_t ahx, double *o1, double *o2 ) {
 		ahxc = (int32_t)ahxcc;
 	}
 	// Extract the unbiased exponent of `x`:
-	n += ( ( ahxc >> HIGH_NUM_SIGNIFICAND_BITS ) - STDLIB_CONSTANT_FLOAT64_EXPONENT_BIAS );
+	n += ( ( ahxc >> STDLIB_CONSTANT_FLOAT64_NUM_HIGH_WORD_SIGNIFICAND_BITS ) - STDLIB_CONSTANT_FLOAT64_EXPONENT_BIAS );
 
 	// Isolate the significand bits of `x`:
 	j = ( ahxc & HIGH_SIGNIFICAND_MASK );

@@ -74,7 +74,7 @@ type MapFunction = Nullary | Unary | Binary | Ternary;
 * Returns an iterator which iterates over each element in an array-like object.
 *
 * @param src - input value
-* @param mapFc - function to invoke for each iterated value
+* @param mapFcn - function to invoke for each iterated value
 * @param thisArg - execution context
 * @returns iterator
 *

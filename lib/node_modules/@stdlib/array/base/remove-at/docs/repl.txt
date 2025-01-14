@@ -1,0 +1,34 @@
+
+{{alias}}( x, index )
+    Removes an element from an array.
+
+    Negative indices are resolved relative to the last array element, with the
+    last element corresponding to `-1`.
+
+    If provided an out-of-bounds index, the function returns the input array
+    unchanged; otherwise, the function mutates the input array.
+
+    Parameters
+    ----------
+    x: Array
+        Input array.
+
+    index: integer
+        Element index.
+
+    Returns
+    -------
+    out: Array
+        Input array.
+
+    Examples
+    --------
+    > var x = [ 1, 1, 2, 3, 3 ];
+    > var out = {{alias}}( x, -3 )
+    [ 1, 1, 3, 3 ]
+    > var bool = ( out === x )
+    true
+
+    See Also
+    --------
+

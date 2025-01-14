@@ -1,0 +1,76 @@
+
+{{alias}}( x, predicate[, thisArg] )
+    Cumulatively tests whether at least one element in a provided array
+    passes a test implemented by a predicate function.
+
+    The predicate function is provided three arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: the input array.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    predicate: Function
+        Predicate function.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    out: Array
+        Output array.
+
+    Examples
+    --------
+    > function f( v ) { return ( v > 0 ); };
+    > var x = [ 0, 0, 0, 1, 0 ];
+    > var out = {{alias}}( x, f )
+    [ false, false, false, true, true ]
+
+
+{{alias}}.assign( x, y, stride, offset, predicate[, thisArg] )
+    Cumulatively tests whether at least one element in a provided array
+    passes a test implemented by a predicate function and assigns results
+    to a provided output array.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    y: ArrayLikeObject
+        Output array.
+
+    stride: integer
+        Output array stride.
+
+    offset: integer
+        Output array offset.
+
+    predicate: Function
+        Predicate function.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    y: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    > function f( v ) { return ( v > 0 ); };
+    > var x = [ 0, 0, 0, 1, 0 ];
+    > var y = [ false, null, false, null, false, null, false, null, false ];
+    > var result = {{alias}}.assign( x, y, 2, 0, f )
+    [ false, null, false, null, false, null, true, null, true ]
+
+    See Also
+    --------
+
