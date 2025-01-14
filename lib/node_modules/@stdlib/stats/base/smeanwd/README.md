@@ -214,7 +214,7 @@ Computes the [arithmetic mean][arithmetic-mean] of a single-precision floating-p
 ```c
 const float x[] = { 1.0f, 2.0f, 3.0f };
 
-float v = stdlib_strided_smeanwd_ndarray( 4, x, 1, 0 );
+float v = stdlib_strided_smeanwd_ndarray( 3, x, 1, 0 );
 // returns 2.0f
 ```
 
