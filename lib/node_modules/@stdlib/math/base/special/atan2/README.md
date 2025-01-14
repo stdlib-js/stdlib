@@ -117,7 +117,7 @@ for ( i = 0; i < 100; i++ ) {
 Computes the angle in the plane (in radians) between the positive x-axis and the ray from `(0,0)` to the point `(x,y)`.
 
 ```c
-double out = stdlib_base_atan2( 2.0, 2.0 ); 
+double out = stdlib_base_atan2( 2.0, 2.0 );
 // returns ~0.785
 
 out = stdlib_base_atan2( 6.0, 2.0 );
@@ -126,8 +126,8 @@ out = stdlib_base_atan2( 6.0, 2.0 );
 
 The function accepts the following arguments:
 
--   **y**: `[in] double` - `y` coordinate
--   **x**: `[in] double` - `x` coordinate
+-   **y**: `[in] double` - `y` coordinate.
+-   **x**: `[in] double` - `x` coordinate.
 
 ```c
 double stdlib_base_atan2( const double y, const double x );

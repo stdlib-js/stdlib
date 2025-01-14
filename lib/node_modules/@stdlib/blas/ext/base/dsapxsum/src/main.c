@@ -24,11 +24,11 @@
 /**
 * Adds a scalar constant to each single-precision floating-point strided array element, and computes the sum using extended accumulation and returning an extended precision result.
 *
-* @param N       number of indexed elements
-* @param alpha   scalar constant
-* @param X       input array
+* @param N        number of indexed elements
+* @param alpha    scalar constant
+* @param X        input array
 * @param strideX  stride length
-* @return        output value
+* @return         output value
 */
 double API_SUFFIX(stdlib_strided_dsapxsum)( const CBLAS_INT N, const float alpha, const float *X, const CBLAS_INT strideX ) {
 	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
@@ -38,12 +38,12 @@ double API_SUFFIX(stdlib_strided_dsapxsum)( const CBLAS_INT N, const float alpha
 /**
 * Adds a scalar constant to each single-precision floating-point strided array element, and computes the sum using extended accumulation and using alternative indexing semantics and returning an extended precision result.
 *
-* @param N       number of indexed elements
-* @param alpha   scalar constant
-* @param X       input array
+* @param N        number of indexed elements
+* @param alpha    scalar constant
+* @param X        input array
 * @param strideX  stride length
 * @param offsetX  starting index
-* @return        output value
+* @return         output value
 */
 double API_SUFFIX(stdlib_strided_dsapxsum_ndarray)( const CBLAS_INT N, const float alpha, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
 	return API_SUFFIX(stdlib_strided_dsapxsumpw_ndarray)( N, alpha, X, strideX, offsetX );

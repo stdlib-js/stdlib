@@ -58,9 +58,6 @@ var bool = ( FLOAT64_MAX_SAFE_NTH_LUCAS === 76 );
 ```javascript
 var FLOAT64_MAX_SAFE_NTH_LUCAS = require( '@stdlib/constants/float64/max-safe-nth-lucas' );
 
-var v;
-var i;
-
 function lucas( n ) {
     var a;
     var b;
@@ -80,6 +77,8 @@ function lucas( n ) {
     return b;
 }
 
+var v;
+var i;
 for ( i = 0; i < 100; i++ ) {
     v = lucas( i );
     if ( i > FLOAT64_MAX_SAFE_NTH_LUCAS ) {

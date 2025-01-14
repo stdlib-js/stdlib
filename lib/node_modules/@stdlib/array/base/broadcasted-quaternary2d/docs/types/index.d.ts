@@ -109,7 +109,7 @@ type InOutShapes = [
 * bquaternary2d( [ x, y, z, w, out ], shapes, add );
 *
 * console.log( out );
-* // => [ [ 4.0, 8.0 ], [ 12.0, 16.0 ] ]
+* // => [ [ 4.0, 4.0 ], [ 4.0, 4.0 ] ]
 */
 declare function bquaternary2d<T = unknown, U = unknown, V = unknown, W = unknown, X = unknown>( arrays: InOutArrays<T, U, V, W, X>, shapes: InOutShapes, fcn: Quaternary<T, U, V, W, X> ): void;
 

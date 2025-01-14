@@ -19,7 +19,7 @@
 #ifndef STDLIB_STATS_BASE_SSTDEVCH_H
 #define STDLIB_STATS_BASE_SSTDEVCH_H
 
-#include <stdint.h>
+#include "stdlib/blas/base/shared.h"
 
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
@@ -31,7 +31,12 @@ extern "C" {
 /**
 * Computes the standard deviation of a single-precision floating-point strided array using a one-pass trial mean algorithm.
 */
-float stdlib_strided_sstdevch( const int64_t N, const float correction, const float *X, const int64_t stride );
+float API_SUFFIX(stdlib_strided_sstdevch)( const CBLAS_INT N, const float correction, const float *X, const CBLAS_INT strideX );
+
+/**
+* Computes the standard deviation of a single-precision floating-point strided array using a one-pass trial mean algorithm and alternative indexing semantics.
+*/
+float API_SUFFIX(stdlib_strided_sstdevch_ndarray)( const CBLAS_INT N, const float correction, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
 
 #ifdef __cplusplus
 }

@@ -202,6 +202,8 @@ console.log( out );
 Computes the sum of single-precision floating-point strided array elements, ignoring `NaN` values, using ordinary recursive summation with extended accumulation, and returning an extended precision result.
 
 ```c
+#include "stdlib/blas/base/shared.h"
+
 const float x[] = { 1.0f, -2.0f, 0.0f/0.0f, 2.0f };
 CBLAS_INT n = 0;
 
@@ -225,6 +227,8 @@ double stdlib_strided_dsnannsumors( const CBLAS_INT N, const float *X, const CBL
 Computes the sum of single-precision floating-point strided array elements, ignoring `NaN` values, using ordinary recursive summation with extended accumulation and alternative indexing semantics, and returning an extended precision result.
 
 ```c
+#include "stdlib/blas/base/shared.h"
+
 const float x[] = { 1.0f, -2.0f, 0.0f/0.0f, 2.0f };
 CBLAS_INT n = 0;
 

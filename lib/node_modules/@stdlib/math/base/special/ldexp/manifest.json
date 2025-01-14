@@ -81,8 +81,7 @@
         "@stdlib/constants/float64/min-base2-exponent-subnormal",
         "@stdlib/constants/float64/max-base2-exponent",
         "@stdlib/constants/float64/max-base2-exponent-subnormal",
-        "@stdlib/constants/float64/exponent-bias",
-        "@stdlib/math/base/special/frexp"
+        "@stdlib/constants/float64/exponent-bias"
       ]
     },
     {
