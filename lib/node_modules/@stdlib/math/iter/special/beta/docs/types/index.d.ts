@@ -55,7 +55,7 @@ type Iterator = Iter | IterableIterator;
 *
 * // ...
 */
-declare function iterBeta( y: Iterator | number, x: Iterator | number ): Iterator;
+declare function iterBeta( x: Iterator | number, y: Iterator | number ): Iterator;
 
 
 // EXPORTS //

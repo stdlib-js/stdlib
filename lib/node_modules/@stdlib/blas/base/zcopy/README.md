@@ -211,6 +211,140 @@ console.log( y.get( y.length-1 ).toString() );
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/blas/base/zcopy.h"
+```
+
+#### c_zcopy( N, \*X, strideX, \*Y, strideY )
+
+Copies values from `X` into `Y`.
+
+```c
+const double x[] = { 1.0, 2.0, 3.0, 4.0 }; // interleaved real and imaginary components
+double y[] = { 0.0, 0.0, 0.0, 0.0 };
+
+c_zcopy( 2, (void *)x, 1, (void *)y, 1 );
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[in] void*` input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **Y**: `[out] void*` output array.
+-   **strideY**: `[in] CBLAS_INT` index increment for `Y`.
+
+```c
+void c_zcopy( const CBLAS_INT N, const void *X, const CBLAS_INT strideX, void *Y, const CBLAS_INT strideY );
+```
+
+#### c_zcopy_ndarray( N, \*X, strideX, offsetX, \*Y, strideY, offsetY )
+
+Copies values from `X` into `Y` using alternative indexing semantics.
+
+```c
+const double x[] = { 1.0, 2.0, 3.0, 4.0 }; // interleaved real and imaginary components
+double y[] = { 0.0, 0.0, 0.0, 0.0 };
+
+c_zcopy_ndarray( 2, (void *)x, 1, 0, (void *)y, 1, 0 );
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[in] void*` input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
+-   **Y**: `[out] void*` output array.
+-   **strideY**: `[in] CBLAS_INT` index increment for `Y`.
+-   **offsetY**: `[in] CBLAS_INT` starting index for `Y`.
+
+```c
+void c_zcopy_ndarray( const CBLAS_INT N, const void *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, void *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/blas/base/zcopy.h"
+#include <stdio.h>
+
+int main( void ) {
+    // Create strided arrays:
+    const double x[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
+    double y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
+
+    // Specify the number of elements:
+    const int N = 4;
+
+    // Specify stride lengths:
+    const int strideX = 1;
+    const int strideY = -1;
+
+    // Copy elements:
+    c_zcopy( N, (void *)x, strideX, (void *)y, strideY );
+
+    // Print the result:
+    for ( int i = 0; i < N; i++ ) {
+        printf( "y[ %i ] = %lf + %lfj\n", i, y[ i*2 ], y[ (i*2)+1 ] );
+    }
+
+    // Copy elements using alternative indexing semantics:
+    c_zcopy_ndarray( N, (void *)x, -strideX, N-1, (void *)y, strideY, N-1 );
+
+    // Print the result:
+    for ( int i = 0; i < N; i++ ) {
+        printf( "y[ %i ] = %lf + %lfj\n", i, y[ i*2 ], y[ (i*2)+1 ] );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">

@@ -52,20 +52,17 @@ The function has the following parameters:
 
 -   **N**: number of indexed elements.
 -   **x**: input [`Array`][mdn-array] or [`typed array`][mdn-typed-array].
--   **strideX**: index increment for `x`.
+-   **strideX**: stride length for `x`.
 -   **out**: output [`Array`][mdn-array] or [`typed array`][mdn-typed-array] whose first element is the sum and whose second element is the number of non-NaN elements.
--   **strideOut**: index increment for `out`.
+-   **strideOut**: stride length for `out`.
 
-The `N` and `stride` parameters determine which elements are accessed at runtime. For example, to compute the sum of every other element in `x`,
+The `N` and stride parameters determine which elements are accessed at runtime. For example, to compute the sum of every other element:
 
 ```javascript
-var floor = require( '@stdlib/math/base/special/floor' );
-
 var x = [ 1.0, 2.0, NaN, -7.0, NaN, 3.0, 4.0, 2.0 ];
 var out = [ 0.0, 0 ];
-var N = floor( x.length / 2 );
 
-var v = gnannsumkbn( N, x, 2, out, 1 );
+var v = gnannsumkbn( 4, x, 2, out, 1 );
 // returns [ 5.0, 2 ]
 ```
 
@@ -75,7 +72,6 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 var x0 = new Float64Array( [ 2.0, 1.0, NaN, -2.0, -2.0, 2.0, 3.0, 4.0 ] );
 var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
@@ -83,9 +79,7 @@ var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd 
 var out0 = new Float64Array( 4 );
 var out1 = new Float64Array( out0.buffer, out0.BYTES_PER_ELEMENT*2 ); // start at 3rd element
 
-var N = floor( x0.length / 2 );
-
-var v = gnannsumkbn( N, x1, 2, out1, 1 );
+var v = gnannsumkbn( 4, x1, 2, out1, 1 );
 // returns <Float64Array>[ 5.0, 4 ]
 ```
 
@@ -106,16 +100,13 @@ The function has the following additional parameters:
 -   **offsetX**: starting index for `x`.
 -   **offsetOut**: starting index for `out`.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the `offset` parameter supports indexing semantics based on a starting index. For example, to calculate the sum of every other value in `x` starting from the second value
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameters support indexing semantics based on starting indices. For example, to calculate the sum of every other element starting from the second element:
 
 ```javascript
-var floor = require( '@stdlib/math/base/special/floor' );
-
 var x = [ 2.0, 1.0, NaN, -2.0, -2.0, 2.0, 3.0, 4.0 ];
 var out = [ 0.0, 0.0, 0.0, 0 ];
-var N = floor( x.length / 2 );
 
-var v = gnannsumkbn.ndarray( N, x, 2, 1, out, 2, 1 );
+var v = gnannsumkbn.ndarray( 4, x, 2, 1, out, 2, 1 );
 // returns <Float64Array>[ 0.0, 5.0, 0.0, 4 ]
 ```
 
@@ -140,22 +131,20 @@ var v = gnannsumkbn.ndarray( N, x, 2, 1, out, 2, 1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var bernoulli = require( '@stdlib/random/base/bernoulli' );
+var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
+var filledarrayBy = require( '@stdlib/array/filled-by' );
 var Float64Array = require( '@stdlib/array/float64' );
 var gnannsumkbn = require( '@stdlib/blas/ext/base/gnannsumkbn' );
 
-var x;
-var i;
-
-x = new Float64Array( 10 );
-for ( i = 0; i < x.length; i++ ) {
-    if ( randu() < 0.2 ) {
-        x[ i ] = NaN;
-    } else {
-        x[ i ] = round( randu()*100.0 );
+function rand() {
+    if ( bernoulli( 0.8 ) > 0 ) {
+        return discreteUniform( 0, 100 );
     }
+    return NaN;
 }
+
+var x = filledarrayBy( 10, 'float64', rand );
 console.log( x );
 
 var out = new Float64Array( 2 );

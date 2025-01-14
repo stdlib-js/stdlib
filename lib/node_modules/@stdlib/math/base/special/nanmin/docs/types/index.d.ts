@@ -26,15 +26,15 @@
 * @returns minimum value
 *
 * @example
-* var v = min( 3.14, 4.2 );
+* var v = nanmin( 3.14, 4.2 );
 * // returns 3.14
 *
 * @example
-* var v = min( 4.14, NaN );
+* var v = nanmin( 4.14, NaN );
 * // returns 4.14
 *
 * @example
-* var v = min( NaN, NaN );
+* var v = nanmin( NaN, NaN );
 * // returns NaN
 */
 declare function nanmin( x: number, y: number ): number;

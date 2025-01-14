@@ -45,8 +45,8 @@ var maxabsf = require( '@stdlib/math/base/special/maxabsf' );
 Returns the maximum absolute single-precision floating-point number.
 
 ```javascript
-var v = maxabsf( -4.2, 3.14 );
-// returns ~4.2
+var v = maxabsf( -4.0, 3.0 );
+// returns 4.0
 
 v = maxabsf( +0.0, -0.0 );
 // returns +0.0
@@ -83,19 +83,21 @@ v = maxabsf( NaN, 3.14 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var randu = require( '@stdlib/random/array/uniform' );
 var maxabsf = require( '@stdlib/math/base/special/maxabsf' );
 
-var x;
-var y;
+var opts = {
+    'dtype': 'float32'
+};
+
+var x = randu( 100, -500.0, 500.0, opts );
+var y = randu( 100, -500.0, 500.0, opts );
+
 var v;
 var i;
-
 for ( i = 0; i < 100; i++ ) {
-    x = ( randu() * 1000.0 ) - 500.0;
-    y = ( randu() * 1000.0 ) - 500.0;
-    v = maxabsf( x, y );
-    console.log( 'maxabsf(%d,%d) = %d', x, y, v );
+    v = maxabsf( x[ i ], y[ i ] );
+    console.log( 'maxabsf(%d,%d) = %d', x[ i ], y[ i ], v );
 }
 ```
 
@@ -178,7 +180,7 @@ int main( void ) {
     float y;
     float v;
     int i;
-    
+
     for ( i = 0; i < 100; i++ ) {
         x = ( ( (float)rand() / (float)RAND_MAX ) * 1000.0f ) - 500.0f;
         y = ( ( (float)rand() / (float)RAND_MAX ) * 1000.0f ) - 500.0f;

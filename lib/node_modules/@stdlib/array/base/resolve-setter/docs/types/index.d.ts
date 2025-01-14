@@ -44,8 +44,7 @@ type SetFloat32 = ( arr: Float32Array, idx: number, value: number ) => void;
 /**
 * Sets an element in a `Complex128Array`.
 *
-* @param
-arr - input array
+* @param arr - input array
 * @param idx - element index
 * @param value - value to set
 */

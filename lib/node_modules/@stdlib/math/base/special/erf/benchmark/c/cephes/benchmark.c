@@ -94,16 +94,18 @@ static double rand_double( void ) {
 * @return elapsed time in seconds
 */
 static double benchmark( void ) {
+	double values[ 10 ];
 	double elapsed;
-	double x;
 	double y;
 	double t;
 	int i;
 
+	for ( i = 0; i < 10; i++ ) {
+		values[ i ] = ( 2.0*rand_double() ) - 1.0;
+	}
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = ( 2.0*rand_double() ) - 1.0;
-		y = erf( x );
+		y = erf( values[ i%10 ] );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;

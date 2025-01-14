@@ -17,7 +17,7 @@
 #/
 
 # Workflow name:
-name: run_tests_coverage.yml
+name: run_tests_coverage
 
 # Workflow triggers:
 on:
@@ -104,18 +104,37 @@ jobs:
 
           # Specify whether to download Git-LFS files:
           lfs: false
+
+          # Checkout PR branch if triggered by a pull request:
+          ref: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.sha || '' }}
+
+          # Checkout PR repository (to properly work with forks) if triggered by a pull request:
+          repository: ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.repo.full_name || github.repository }}
         timeout-minutes: 10
 
       # Install Node.js:
       - name: 'Install Node.js'
         # Pin action to full length commit SHA
-        uses: actions/setup-node@1e60f620b9541d16bece96c5465dc8ee9832be0b # v4.0.3
+        uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af # v4.1.0
         with:
           node-version: 20 # 'lts/*'
         timeout-minutes: 5
 
+      # Cache dependencies:
+      - name: 'Cache dependencies'
+        # Pin action to full length commit SHA
+        uses: actions/cache@1bd1e32a3bdc45362d1e726936510720a7c30a57 # v4.2.0
+        id: cache
+        with:
+          path: |
+            ${{ github.workspace }}/node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
       # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
       - name: 'Install dependencies'
+        if: steps.cache.outputs.cache-hit != 'true'
         run: |
           make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 15
@@ -131,11 +150,22 @@ jobs:
         if: github.event_name != 'workflow_dispatch'
         id: changed-directories
         continue-on-error: true
+        env:
+          STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
         run: |
           if [ -n "${{ github.event.pull_request.number }}" ]; then
             # Get the list of changed files in pull request:
-            ancestor_commit=$(git merge-base ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }})
-            files=$(git diff --diff-filter=AM --name-only $ancestor_commit ${{ github.event.pull_request.head.sha }})
+            page=1
+            files=""
+            while true; do
+                changed_files=$(curl -s -H "Accept: application/vnd.github.v3+json" -H "Authorization: Bearer $STDLIB_BOT_GITHUB_TOKEN" "https://api.github.com/repos/stdlib-js/stdlib/pulls/${{ github.event.pull_request.number }}/files?page=$page&per_page=100" | jq -r '.[] | .filename')
+                if [ -z "$changed_files" ]; then
+                    break
+                fi
+                files="$files $changed_files"
+                page=$((page+1))
+            done
+            files=$(echo "$files" | tr '\n' ' ' | sed 's/ $//')
           else
             # Get changed files by comparing the current commit to the commit before the push event or with its parent:
             if [ "${{ github.event.before }}" == "0000000000000000000000000000000000000000" ]; then
@@ -167,6 +197,15 @@ jobs:
           else
             directories="${{ steps.changed-directories.outputs.directories }}"
           fi
+
+          # Append suffix to coverage base URL for PRs:
+          if [ -n "${{ github.event.pull_request.number }}" ]; then
+            PR_NUMBER=${{ github.event.pull_request.number }}
+            export COVERAGE_BASE_URL="https://coverage.stdlib.io/pr-${PR_NUMBER}"
+          else
+            export COVERAGE_BASE_URL="https://coverage.stdlib.io"
+          fi
+
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/run_tests_coverage" "$directories"
         timeout-minutes: 30
 
@@ -178,7 +217,7 @@ jobs:
           if [ -z "$table" ]; then
             report="## Coverage Report\n\nNo coverage information available."
           else
-            if [ "${{ github.event_name }}" == "pull_request" ]; then
+            if [ "${{ github.event_name }}" == "pull_request_target" ]; then
               compare_url="https://github.com/stdlib-js/stdlib/compare/${{ github.event.pull_request.base.sha }}...${{ github.event.pull_request.head.sha }}"
               compare_txt="The above coverage report was generated for the [changes in this PR]($compare_url)."
             elif [ "${{ github.event_name }}" == "push" ]; then
@@ -193,18 +232,34 @@ jobs:
 
       # Post report as comment to PR:
       - name: 'Post report as comment to PR'
-        if: github.event_name == 'pull_request'
+        if: github.event_name == 'pull_request_target'
         # Pin action to full length commit SHA
         uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
         with:
           github-token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
           script: |
-            github.rest.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: '${{ steps.create-report.outputs.report }}'
-            })
+            const { data: comments } = await github.rest.issues.listComments({
+              'issue_number': context.issue.number,
+              'owner': context.repo.owner,
+              'repo': context.repo.repo,
+            });
+
+            const botComment = comments.find( comment => comment.user.login === 'stdlib-bot' && comment.body.includes( '## Coverage Report' ) );
+            if ( botComment ) {
+              await github.rest.issues.updateComment({
+                'owner': context.repo.owner,
+                'repo': context.repo.repo,
+                'comment_id': botComment.id,
+                'body': `${{ steps.create-report.outputs.report }}`
+              });
+            } else {
+              await github.rest.issues.createComment({
+                'issue_number': context.issue.number,
+                'owner': context.repo.owner,
+                'repo': context.repo.repo,
+                'body': `${{ steps.create-report.outputs.report }}`
+              });
+            }
 
       # Post report as comment to commit:
       - name: 'Post report as comment to commit'
@@ -215,10 +270,10 @@ jobs:
           github-token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
           script: |
             github.rest.repos.createCommitComment({
-              commit_sha: context.sha,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: '${{ steps.create-report.outputs.report }}'
+              'commit_sha': context.sha,
+              'owner': context.repo.owner,
+              'repo': context.repo.repo,
+              'body': '${{ steps.create-report.outputs.report }}'
             })
 
       # Checkout coverage repository:
@@ -246,10 +301,13 @@ jobs:
         run: |
           cd ./www-test-code-coverage
 
-          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+          if [[ "${{ github.event_name }}" == "pull_request_target" ]]; then
             BRANCH_NAME="pr-${{ github.event.pull_request.number }}"
             git fetch origin $BRANCH_NAME || true
             git checkout $BRANCH_NAME || git checkout -b $BRANCH_NAME
+
+            # Remove all directories except .github and .git from branch:
+            find . -mindepth 1 -maxdepth 1 -type d -not -name '.github' -not -name '.git' -exec git rm -rf {} +
           else
             BRANCH_NAME="main"
           fi
@@ -278,7 +336,7 @@ jobs:
       # Import GPG key to sign commits:
       - name: 'Import GPG key to sign commits'
         # Pin action to full length commit SHA
-        uses: crazy-max/ghaction-import-gpg@01dd5d3ca463c7f10f7f4f7b4f177225ac661ee4 # v6.1.0
+        uses: crazy-max/ghaction-import-gpg@cb9bde2e2525e640591a934b1fd28eef1dcaf5e5 # v6.2.0
         with:
           gpg_private_key: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
           passphrase: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}

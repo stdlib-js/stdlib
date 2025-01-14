@@ -1,0 +1,95 @@
+
+{{alias}}( N, view, sv, out, so, littleEndian )
+    Copies elements from an input strided DataView to elements in an output
+    strided array.
+
+    The `N` and stride parameters determine which elements are accessed at
+    runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    view: DataView
+        Input DataView.
+
+    sv: integer
+        Index increment (in bytes) for `view`.
+
+    out: ArrayLikeObject
+        Output array.
+
+    so: integer
+        Index increment for `out`.
+
+    littleEndian: boolean
+        Boolean indicating whether the data is stored in little-endian format.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/float32}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var v = new {{alias:@stdlib/array/dataview}}( x.buffer );
+    > var y = new {{alias:@stdlib/array/float32}}( x.length );
+    > {{alias}}( x.length, v, x.BYTES_PER_ELEMENT, y, 1, true )
+    <Float32Array>
+
+
+{{alias}}.ndarray( N, view, sv, ov, out, so, oo, littleEndian )
+    Copies elements from an input strided DataView to elements in an output
+    strided array using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    view: DataView
+        Input DataView.
+
+    sv: integer
+        Index increment (in bytes) for `view`.
+
+    ov: integer
+        Starting index (in bytes) for `view`.
+
+    out: ArrayLikeObject
+        Output array.
+
+    so: integer
+        Index increment for `out`.
+
+    oo: integer
+        Starting index for `out`.
+
+    littleEndian: boolean
+        Boolean indicating whether the data is stored in little-endian format.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/float32}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var v = new {{alias:@stdlib/array/dataview}}( x.buffer );
+    > var y = new {{alias:@stdlib/array/float32}}( x.length );
+    > {{alias}}.ndarray( x.length, v, x.BYTES_PER_ELEMENT, 0, y, 1, 0, true )
+    <Float32Array>
+
+    See Also
+    --------
+

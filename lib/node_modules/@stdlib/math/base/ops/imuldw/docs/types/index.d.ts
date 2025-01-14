@@ -23,9 +23,9 @@
 import { Collection } from '@stdlib/types/array';
 
 /**
- * Interface describing `imuldw`.
- */
- interface Imuldw {
+* Interface describing `imuldw`.
+*/
+interface Imuldw {
 	/**
 	* Performs multiplication of two signed 32-bit integers and returns an array of two signed 32-bit integers which represents the signed 64-bit integer product.
 	*

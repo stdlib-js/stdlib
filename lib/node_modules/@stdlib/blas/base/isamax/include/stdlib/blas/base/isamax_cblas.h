@@ -22,6 +22,8 @@
 #ifndef ISAMAX_CLBAS_H
 #define ISAMAX_CBLAS_H
 
+#include "stdlib/blas/base/shared.h"
+
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
 */
@@ -32,7 +34,7 @@ extern "C" {
 /**
 * Finds the index of the first element having the maximum absolute value.
 */
-int cblas_ISAMAX( const int N, const float *X, const int strideX );
+CBLAS_INT API_SUFFIX(cblas_isamax)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX );
 
 #ifdef __cplusplus
 }

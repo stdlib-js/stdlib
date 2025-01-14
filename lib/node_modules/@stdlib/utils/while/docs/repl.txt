@@ -5,7 +5,7 @@
     When invoked, both the predicate function and the function to invoke are
     provided a single argument:
 
-    - `i`: iteration number (starting from zero)
+    - i: iteration number (starting from zero).
 
     Parameters
     ----------

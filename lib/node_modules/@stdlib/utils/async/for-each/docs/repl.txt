@@ -4,22 +4,22 @@
 
     When invoked, `fcn` is provided a maximum of four arguments:
 
-    - `value`: collection value
-    - `index`: collection index
-    - `collection`: the input collection
-    - `next`: a callback to be invoked after processing a collection `value`
+    - value: collection value.
+    - index: collection index.
+    - collection: the input collection.
+    - next: a callback to be invoked after processing a collection `value`.
 
     The actual number of provided arguments depends on function length. If `fcn`
     accepts two arguments, `fcn` is provided:
 
-    - `value`
-    - `next`
+    - value
+    - next
 
     If `fcn` accepts three arguments, `fcn` is provided:
 
-    - `value`
-    - `index`
-    - `next`
+    - value
+    - index
+    - next
 
     For every other `fcn` signature, `fcn` is provided all four arguments.
 

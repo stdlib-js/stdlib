@@ -42,7 +42,7 @@ var broadcastScalar = require( '@stdlib/ndarray/base/broadcast-scalar' );
 
 #### broadcastScalar( value, dtype, shape, order )
 
-Broadcast a scalar value to an [`ndarray`][@stdlib/ndarray/base/ctor] having a specified shape and [data type][@stdlib/ndarray/dtypes].
+Broadcasts a scalar value to an [`ndarray`][@stdlib/ndarray/base/ctor] having a specified shape and [data type][@stdlib/ndarray/dtypes].
 
 ```javascript
 var x = broadcastScalar( 1.0, 'float64', [ 2, 2 ], 'row-major' );

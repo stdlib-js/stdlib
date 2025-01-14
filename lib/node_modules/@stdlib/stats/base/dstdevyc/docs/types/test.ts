@@ -25,21 +25,21 @@ import dstdevyc = require( './index' );
 {
 	const x = new Float64Array( 10 );
 
-	dstdevyc( x.length, 1, x, 1 ); // $ExpectType number
+	dstdevyc( x.length, 1.0, x, 1 ); // $ExpectType number
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
 {
 	const x = new Float64Array( 10 );
 
-	dstdevyc( '10', 1, x, 1 ); // $ExpectError
-	dstdevyc( true, 1, x, 1 ); // $ExpectError
-	dstdevyc( false, 1, x, 1 ); // $ExpectError
-	dstdevyc( null, 1, x, 1 ); // $ExpectError
-	dstdevyc( undefined, 1, x, 1 ); // $ExpectError
-	dstdevyc( [], 1, x, 1 ); // $ExpectError
-	dstdevyc( {}, 1, x, 1 ); // $ExpectError
-	dstdevyc( ( x: number ): number => x, 1, x, 1 ); // $ExpectError
+	dstdevyc( '10', 1.0, x, 1 ); // $ExpectError
+	dstdevyc( true, 1.0, x, 1 ); // $ExpectError
+	dstdevyc( false, 1.0, x, 1 ); // $ExpectError
+	dstdevyc( null, 1.0, x, 1 ); // $ExpectError
+	dstdevyc( undefined, 1.0, x, 1 ); // $ExpectError
+	dstdevyc( [], 1.0, x, 1 ); // $ExpectError
+	dstdevyc( {}, 1.0, x, 1 ); // $ExpectError
+	dstdevyc( ( x: number ): number => x, 1.0, x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a number...
@@ -60,29 +60,29 @@ import dstdevyc = require( './index' );
 {
 	const x = new Float64Array( 10 );
 
-	dstdevyc( x.length, 1, 10, 1 ); // $ExpectError
-	dstdevyc( x.length, 1, '10', 1 ); // $ExpectError
-	dstdevyc( x.length, 1, true, 1 ); // $ExpectError
-	dstdevyc( x.length, 1, false, 1 ); // $ExpectError
-	dstdevyc( x.length, 1, null, 1 ); // $ExpectError
-	dstdevyc( x.length, 1, undefined, 1 ); // $ExpectError
-	dstdevyc( x.length, 1, [], 1 ); // $ExpectError
-	dstdevyc( x.length, 1, {}, 1 ); // $ExpectError
-	dstdevyc( x.length, 1, ( x: number ): number => x, 1 ); // $ExpectError
+	dstdevyc( x.length, 1.0, 10, 1 ); // $ExpectError
+	dstdevyc( x.length, 1.0, '10', 1 ); // $ExpectError
+	dstdevyc( x.length, 1.0, true, 1 ); // $ExpectError
+	dstdevyc( x.length, 1.0, false, 1 ); // $ExpectError
+	dstdevyc( x.length, 1.0, null, 1 ); // $ExpectError
+	dstdevyc( x.length, 1.0, undefined, 1 ); // $ExpectError
+	dstdevyc( x.length, 1.0, [], 1 ); // $ExpectError
+	dstdevyc( x.length, 1.0, {}, 1 ); // $ExpectError
+	dstdevyc( x.length, 1.0, ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a fourth argument which is not a number...
 {
 	const x = new Float64Array( 10 );
 
-	dstdevyc( x.length, 1, x, '10' ); // $ExpectError
-	dstdevyc( x.length, 1, x, true ); // $ExpectError
-	dstdevyc( x.length, 1, x, false ); // $ExpectError
-	dstdevyc( x.length, 1, x, null ); // $ExpectError
-	dstdevyc( x.length, 1, x, undefined ); // $ExpectError
-	dstdevyc( x.length, 1, x, [] ); // $ExpectError
-	dstdevyc( x.length, 1, x, {} ); // $ExpectError
-	dstdevyc( x.length, 1, x, ( x: number ): number => x ); // $ExpectError
+	dstdevyc( x.length, 1.0, x, '10' ); // $ExpectError
+	dstdevyc( x.length, 1.0, x, true ); // $ExpectError
+	dstdevyc( x.length, 1.0, x, false ); // $ExpectError
+	dstdevyc( x.length, 1.0, x, null ); // $ExpectError
+	dstdevyc( x.length, 1.0, x, undefined ); // $ExpectError
+	dstdevyc( x.length, 1.0, x, [] ); // $ExpectError
+	dstdevyc( x.length, 1.0, x, {} ); // $ExpectError
+	dstdevyc( x.length, 1.0, x, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
@@ -91,30 +91,30 @@ import dstdevyc = require( './index' );
 
 	dstdevyc(); // $ExpectError
 	dstdevyc( x.length ); // $ExpectError
-	dstdevyc( x.length, 1 ); // $ExpectError
-	dstdevyc( x.length, 1, x ); // $ExpectError
-	dstdevyc( x.length, 1, x, 1, 10 ); // $ExpectError
+	dstdevyc( x.length, 1.0 ); // $ExpectError
+	dstdevyc( x.length, 1.0, x ); // $ExpectError
+	dstdevyc( x.length, 1.0, x, 1, 10 ); // $ExpectError
 }
 
 // Attached to main export is an `ndarray` method which returns a number...
 {
 	const x = new Float64Array( 10 );
 
-	dstdevyc.ndarray( x.length, 1, x, 1, 0 ); // $ExpectType number
+	dstdevyc.ndarray( x.length, 1.0, x, 1, 0 ); // $ExpectType number
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...
 {
 	const x = new Float64Array( 10 );
 
-	dstdevyc.ndarray( '10', 1, x, 1, 0 ); // $ExpectError
-	dstdevyc.ndarray( true, 1, x, 1, 0 ); // $ExpectError
-	dstdevyc.ndarray( false, 1, x, 1, 0 ); // $ExpectError
-	dstdevyc.ndarray( null, 1, x, 1, 0 ); // $ExpectError
-	dstdevyc.ndarray( undefined, 1, x, 1, 0 ); // $ExpectError
-	dstdevyc.ndarray( [], 1, x, 1, 0 ); // $ExpectError
-	dstdevyc.ndarray( {}, 1, x, 1, 0 ); // $ExpectError
-	dstdevyc.ndarray( ( x: number ): number => x, 1, x, 1, 0 ); // $ExpectError
+	dstdevyc.ndarray( '10', 1.0, x, 1, 0 ); // $ExpectError
+	dstdevyc.ndarray( true, 1.0, x, 1, 0 ); // $ExpectError
+	dstdevyc.ndarray( false, 1.0, x, 1, 0 ); // $ExpectError
+	dstdevyc.ndarray( null, 1.0, x, 1, 0 ); // $ExpectError
+	dstdevyc.ndarray( undefined, 1.0, x, 1, 0 ); // $ExpectError
+	dstdevyc.ndarray( [], 1.0, x, 1, 0 ); // $ExpectError
+	dstdevyc.ndarray( {}, 1.0, x, 1, 0 ); // $ExpectError
+	dstdevyc.ndarray( ( x: number ): number => x, 1.0, x, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a second argument which is not a number...
@@ -135,43 +135,43 @@ import dstdevyc = require( './index' );
 {
 	const x = new Float64Array( 10 );
 
-	dstdevyc.ndarray( x.length, 1, 10, 1, 0 ); // $ExpectError
-	dstdevyc.ndarray( x.length, 1, '10', 1, 0 ); // $ExpectError
-	dstdevyc.ndarray( x.length, 1, true, 1, 0 ); // $ExpectError
-	dstdevyc.ndarray( x.length, 1, false, 1, 0 ); // $ExpectError
-	dstdevyc.ndarray( x.length, 1, null, 1, 0 ); // $ExpectError
-	dstdevyc.ndarray( x.length, 1, undefined, 1, 0 ); // $ExpectError
-	dstdevyc.ndarray( x.length, 1, [], 1, 0 ); // $ExpectError
-	dstdevyc.ndarray( x.length, 1, {}, 1, 0 ); // $ExpectError
-	dstdevyc.ndarray( x.length, 1, ( x: number ): number => x, 1, 0 ); // $ExpectError
+	dstdevyc.ndarray( x.length, 1.0, 10, 1, 0 ); // $ExpectError
+	dstdevyc.ndarray( x.length, 1.0, '10', 1, 0 ); // $ExpectError
+	dstdevyc.ndarray( x.length, 1.0, true, 1, 0 ); // $ExpectError
+	dstdevyc.ndarray( x.length, 1.0, false, 1, 0 ); // $ExpectError
+	dstdevyc.ndarray( x.length, 1.0, null, 1, 0 ); // $ExpectError
+	dstdevyc.ndarray( x.length, 1.0, undefined, 1, 0 ); // $ExpectError
+	dstdevyc.ndarray( x.length, 1.0, [], 1, 0 ); // $ExpectError
+	dstdevyc.ndarray( x.length, 1.0, {}, 1, 0 ); // $ExpectError
+	dstdevyc.ndarray( x.length, 1.0, ( x: number ): number => x, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a fourth argument which is not a number...
 {
 	const x = new Float64Array( 10 );
 
-	dstdevyc.ndarray( x.length, 1, x, '10', 0 ); // $ExpectError
-	dstdevyc.ndarray( x.length, 1, x, true, 0 ); // $ExpectError
-	dstdevyc.ndarray( x.length, 1, x, false, 0 ); // $ExpectError
-	dstdevyc.ndarray( x.length, 1, x, null, 0 ); // $ExpectError
-	dstdevyc.ndarray( x.length, 1, x, undefined, 0 ); // $ExpectError
-	dstdevyc.ndarray( x.length, 1, x, [], 0 ); // $ExpectError
-	dstdevyc.ndarray( x.length, 1, x, {}, 0 ); // $ExpectError
-	dstdevyc.ndarray( x.length, 1, x, ( x: number ): number => x, 0 ); // $ExpectError
+	dstdevyc.ndarray( x.length, 1.0, x, '10', 0 ); // $ExpectError
+	dstdevyc.ndarray( x.length, 1.0, x, true, 0 ); // $ExpectError
+	dstdevyc.ndarray( x.length, 1.0, x, false, 0 ); // $ExpectError
+	dstdevyc.ndarray( x.length, 1.0, x, null, 0 ); // $ExpectError
+	dstdevyc.ndarray( x.length, 1.0, x, undefined, 0 ); // $ExpectError
+	dstdevyc.ndarray( x.length, 1.0, x, [], 0 ); // $ExpectError
+	dstdevyc.ndarray( x.length, 1.0, x, {}, 0 ); // $ExpectError
+	dstdevyc.ndarray( x.length, 1.0, x, ( x: number ): number => x, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a fifth argument which is not a number...
 {
 	const x = new Float64Array( 10 );
 
-	dstdevyc.ndarray( x.length, 1, x, 1, '10' ); // $ExpectError
-	dstdevyc.ndarray( x.length, 1, x, 1, true ); // $ExpectError
-	dstdevyc.ndarray( x.length, 1, x, 1, false ); // $ExpectError
-	dstdevyc.ndarray( x.length, 1, x, 1, null ); // $ExpectError
-	dstdevyc.ndarray( x.length, 1, x, 1, undefined ); // $ExpectError
-	dstdevyc.ndarray( x.length, 1, x, 1, [] ); // $ExpectError
-	dstdevyc.ndarray( x.length, 1, x, 1, {} ); // $ExpectError
-	dstdevyc.ndarray( x.length, 1, x, 1, ( x: number ): number => x ); // $ExpectError
+	dstdevyc.ndarray( x.length, 1.0, x, 1, '10' ); // $ExpectError
+	dstdevyc.ndarray( x.length, 1.0, x, 1, true ); // $ExpectError
+	dstdevyc.ndarray( x.length, 1.0, x, 1, false ); // $ExpectError
+	dstdevyc.ndarray( x.length, 1.0, x, 1, null ); // $ExpectError
+	dstdevyc.ndarray( x.length, 1.0, x, 1, undefined ); // $ExpectError
+	dstdevyc.ndarray( x.length, 1.0, x, 1, [] ); // $ExpectError
+	dstdevyc.ndarray( x.length, 1.0, x, 1, {} ); // $ExpectError
+	dstdevyc.ndarray( x.length, 1.0, x, 1, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided an unsupported number of arguments...
@@ -180,8 +180,8 @@ import dstdevyc = require( './index' );
 
 	dstdevyc.ndarray(); // $ExpectError
 	dstdevyc.ndarray( x.length ); // $ExpectError
-	dstdevyc.ndarray( x.length, 1 ); // $ExpectError
-	dstdevyc.ndarray( x.length, 1, x ); // $ExpectError
-	dstdevyc.ndarray( x.length, 1, x, 1 ); // $ExpectError
-	dstdevyc.ndarray( x.length, 1, x, 1, 0, 10 ); // $ExpectError
+	dstdevyc.ndarray( x.length, 1.0 ); // $ExpectError
+	dstdevyc.ndarray( x.length, 1.0, x ); // $ExpectError
+	dstdevyc.ndarray( x.length, 1.0, x, 1 ); // $ExpectError
+	dstdevyc.ndarray( x.length, 1.0, x, 1, 0, 10 ); // $ExpectError
 }

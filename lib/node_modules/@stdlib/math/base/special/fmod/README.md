@@ -94,7 +94,7 @@ var i;
 for ( i = 0; i < 100; i++ ) {
     x = round( randu() * 10.0 );
     y = round( randu() * 10.0 ) - 5.0;
-    console.log( '%d^%d = %d', x, y, fmod( x, y ) );
+    console.log( '%d%%%d = %d', x, y, fmod( x, y ) );
 }
 ```
 

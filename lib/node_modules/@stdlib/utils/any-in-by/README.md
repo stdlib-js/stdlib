@@ -81,9 +81,9 @@ var bool = anyInBy( obj, isPositive );
 
 The invoked `function` is provided three arguments:
 
--   `value`: property value
--   `key`: property key
--   `object`: input object
+-   **value**: property value.
+-   **key**: property key.
+-   **object**: input object.
 
 To set the function execution context, provide a `thisArg`.
 

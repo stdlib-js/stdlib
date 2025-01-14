@@ -76,7 +76,6 @@ import cunone = require( './index' );
 	cunone.assign( x, {}, 2, 0 ); // $ExpectError
 }
 
-
 // The compiler throws an error if the `assign` method is provided a third argument which is not a number...
 {
 	const x = [ false, false, true, false, false ];

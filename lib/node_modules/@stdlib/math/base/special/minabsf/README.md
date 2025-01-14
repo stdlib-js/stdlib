@@ -45,8 +45,8 @@ var minabsf = require( '@stdlib/math/base/special/minabsf' );
 Returns the minimum absolute single-precision floating-point number.
 
 ```javascript
-var v = minabsf( -4.2, 3.14 );
-// returns ~3.14
+var v = minabsf( -4.0, 3.0 );
+// returns 3.0
 
 v = minabsf( +0.0, -0.0 );
 // returns +0.0
@@ -83,19 +83,21 @@ v = minabsf( NaN, 3.14 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var randu = require( '@stdlib/random/array/uniform' );
 var minabsf = require( '@stdlib/math/base/special/minabsf' );
 
-var x;
-var y;
+var opts = {
+    'dtype': 'float32'
+};
+
+var x = randu( 100, -500.0, 500.0, opts );
+var y = randu( 100, -500.0, 500.0, opts );
+
 var v;
 var i;
-
 for ( i = 0; i < 100; i++ ) {
-    x = ( randu() * 1000.0 ) - 500.0;
-    y = ( randu() * 1000.0 ) - 500.0;
-    v = minabsf( x, y );
-    console.log( 'minabsf(%d,%d) = %d', x, y, v );
+    v = minabsf( x[ i ], y[ i ] );
+    console.log( 'minabsf(%d,%d) = %d', x[ i ], y[ i ], v );
 }
 ```
 
@@ -178,7 +180,7 @@ int main( void ) {
     float y;
     float v;
     int i;
-    
+
     for ( i = 0; i < 100; i++ ) {
         x = ( ( (float)rand() / (float)RAND_MAX ) * 1000.0f ) - 500.0f;
         y = ( ( (float)rand() / (float)RAND_MAX ) * 1000.0f ) - 500.0f;
