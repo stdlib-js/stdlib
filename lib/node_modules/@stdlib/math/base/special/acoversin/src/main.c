@@ -30,5 +30,5 @@
 * // returns ~1.5708
 */
 double stdlib_base_acoversin( const double x ) {
-    return stdlib_base_asin( 1.0 - x );
+	return stdlib_base_asin( 1.0 - x );
 }

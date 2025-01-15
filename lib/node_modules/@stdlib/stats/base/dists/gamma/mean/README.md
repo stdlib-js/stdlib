@@ -172,7 +172,7 @@ for ( i = 0; i < 10; i++ ) {
 
 #### stdlib_base_dists_gamma_mean( alpha, beta )
 
-Returns the mean of a gamma distribution.
+Returns the [expected value][expected-value] of a [gamma][gamma-distribution] distribution with parameters `alpha` (shape parameter) and `beta` (rate parameter).
 
 ```c
 double out = stdlib_base_dists_gamma_mean( 1.0, 1.0 );

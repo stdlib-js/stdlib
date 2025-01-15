@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Returns the mean of a triangular distribution with lower bound `a`, upper bound `b`, and mode `c`.
+* Returns the mean of a triangular distribution.
 */
 double stdlib_base_dists_triangular_mean( const double a, const double b, const double c );
 
