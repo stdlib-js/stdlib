@@ -32,15 +32,15 @@
 * #include "stdlib/complex/float32/real.h"
 * #include "stdlib/complex/float32/imag.h"
 *
-* stdlib_complex64_t z = stdlib_complex64( -4.2, 5.5 );
+* stdlib_complex64_t z = stdlib_complex64( -4.2f, 5.5f );
 *
 * stdlib_complex64_t out = stdlib_base_croundf( z );
 *
 * float re = stdlib_complex64_real( out );
-* // returns -4.0
+* // returns -4.0f
 *
 * float im = stdlib_complex64_imag( out );
-* // returns 6.0
+* // returns 6.0f
 */
 stdlib_complex64_t stdlib_base_croundf( const stdlib_complex64_t z ) {
 	float re;

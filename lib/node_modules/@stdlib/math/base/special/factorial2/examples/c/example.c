@@ -25,7 +25,7 @@ int main( void ) {
 
 	double b;
 	int i;
-	for ( i = 0; i < 5; i++ ){
+	for ( i = 0; i < 5; i++ ) {
 		b = stdlib_base_factorial2( x[ i ] );
 		printf ( "factorial2(%d) = %lf\n", x[ i ], b );
 	}

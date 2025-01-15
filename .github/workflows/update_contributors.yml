@@ -96,7 +96,7 @@ jobs:
       - name: 'Create pull request'
         if: steps.update-contributors.outputs.changed == 'true'
         # Pin action to full length commit SHA
-        uses: peter-evans/create-pull-request@5e914681df9dc83aa4e4905692ca88beb2f9e91f # v7.0.5
+        uses: peter-evans/create-pull-request@67ccf781d68cd99b580ae25a5c18a1cc84ffff1f # v7.0.6
         id: cpr
         with:
           title: 'docs: update list of contributors'
@@ -104,6 +104,13 @@ jobs:
             This PR
 
             -   updates the list of contributors
+
+            ## Reviewer Checklist
+
+            - [ ] For any **new contributors**, check if their full names are listed on their GitHub profile or in social links.
+            - [ ] If so, on the PR branch **update** the `.mailmap` file accordingly to ensure proper attribution.
+            - [ ] If updating `.mailmap`, **regenerate** the contributors file by running `make update-contributors` on the PR branch afterward.
+            - [ ] Approve the PR after verifying the changes.
 
           commit-message: 'docs: update list of contributors'
           committer: 'stdlib-bot <82920195+stdlib-bot@users.noreply.github.com>'

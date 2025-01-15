@@ -43,18 +43,18 @@ extern "C" {
 // Integer type:
 #ifndef CBLAS_INT
 #ifdef WeirdNEC
-	#define CBLAS_INT int64_t
+#define CBLAS_INT int64_t
 #else
-	#define CBLAS_INT int32_t
+#define CBLAS_INT int32_t
 #endif
 #endif
 
 // Integer format string:
 #ifndef CBLAS_IFMT
 #ifdef WeirdNEC
-	#define CBLAS_IFMT PRId64
+#define CBLAS_IFMT PRId64
 #else
-	#define CBLAS_IFMT PRId32
+#define CBLAS_IFMT PRId32
 #endif
 #endif
 

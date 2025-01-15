@@ -353,7 +353,7 @@ int main( void ) {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/blas/base/cswap`][@stdlib/blas/base/cswap]</span><span class="delimiter">: </span><span class="description">interchanges two complex single-precision floating-point vectors.</span>
+-   <span class="package-name">[`@stdlib/blas/base/cswap`][@stdlib/blas/base/cswap]</span><span class="delimiter">: </span><span class="description">interchange two complex single-precision floating-point vectors.</span>
 
 </section>
 
