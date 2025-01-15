@@ -32,5 +32,5 @@
 * // returns false
 */
 bool stdlib_base_is_evenf( const float x ) {
-    return stdlib_base_is_integerf( x / 2.0f );
+	return stdlib_base_is_integerf( x / 2.0f );
 }

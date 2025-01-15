@@ -193,7 +193,7 @@ int main( void ) {
     for ( i = 0; i < 25; i++ ) {
         lambda = random_uniform( 0.0, 20.0 );
         y = stdlib_base_dists_exponential_mode( lambda );
-        printf( "λ: %lf, Mode[X;λ]: %lf\n", lambda, y );
+        printf( "λ: %lf, mode(X;λ): %lf\n", lambda, y );
     }
 }
 ```

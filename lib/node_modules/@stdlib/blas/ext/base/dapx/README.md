@@ -48,7 +48,7 @@ The function has the following parameters:
 -   **N**: number of indexed elements.
 -   **alpha**: scalar constant.
 -   **x**: input [`Float64Array`][@stdlib/array/float64].
--   **strideX**: stride length for `x`.
+-   **strideX**: stride length.
 
 The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to add a constant to every other element:
 
@@ -168,14 +168,14 @@ console.log( x );
 #include "stdlib/blas/ext/base/dapx.h"
 ```
 
-#### c_dapx( N, alpha, \*X, strideX )
+#### stdlib_strided_dapx( N, alpha, \*X, strideX )
 
 Adds a scalar constant to each element in a double-precision floating-point strided array.
 
 ```c
 double x[] = { 1.0, 2.0, 3.0, 4.0 };
 
-c_dapx( 4, 5.0, x, 1 );
+stdlib_strided_dapx( 4, 5.0, x, 1 );
 
 ```
 
@@ -187,17 +187,17 @@ The function accepts the following arguments:
 -   **strideX**: `[in] CBLAS_INT` stride length for `X`.
 
 ```c
-void c_dapx( const CBLAS_INT N, const double alpha, double *X, const CBLAS_INT strideX );
+void stdlib_strided_dapx( const CBLAS_INT N, const double alpha, double *X, const CBLAS_INT strideX );
 ```
 
-#### c_dapx_ndarray( N, alpha, \*X, strideX, offsetX )
+#### stdlib_strided_dapx_ndarray( N, alpha, \*X, strideX, offsetX )
 
 Adds a scalar constant to each element in a double-precision floating-point strided array using alternative indexing semantics.
 
 ```c
 double x[] = { 1.0, 2.0, 3.0, 4.0 };
 
-c_dapx_ndarray( 4, 5.0, x, 1, 0 );
+stdlib_strided_dapx_ndarray( 4, 5.0, x, 1, 0 );
 ```
 
 The function accepts the following arguments:
@@ -205,11 +205,11 @@ The function accepts the following arguments:
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
 -   **alpha**: `[in] double` scalar constant.
 -   **X**: `[inout] double*` input array.
--   **strideX**: `[in] CBLAS_INT` stride length for `X`.
--   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
+-   **strideX**: `[in] CBLAS_INT` stride length.
+-   **offsetX**: `[in] CBLAS_INT` starting index.
 
 ```c
-void c_dapx_ndarray( const CBLAS_INT N, const double alpha, double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
+void stdlib_strided_dapx_ndarray( const CBLAS_INT N, const double alpha, double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
 ```
 
 </section>
@@ -245,7 +245,7 @@ int main( void ) {
     const int strideX = 1;
 
     // Fill the array:
-    c_dapx( N, 5.0, x, strideX );
+    stdlib_strided_dapx( N, 5.0, x, strideX );
 
     // Print the result:
     for ( int i = 0; i < 8; i++ ) {

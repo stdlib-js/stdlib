@@ -30,5 +30,5 @@
 * // returns ~1.0742
 */
 double stdlib_base_avercos( const double x ) {
-    return stdlib_base_acos( 1.0 + x );
+	return stdlib_base_acos( 1.0 + x );
 }

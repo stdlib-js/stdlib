@@ -19,11 +19,11 @@
 #include "stdlib/stats/base/dists/gamma/mean.h"
 
 /**
-* Returns the mean of a gamma distribution.
+* Returns the expected value of a gamma distribution.
 *
 * @param alpha    shape parameter
 * @param beta     rate parameter
-* @return         mean
+* @return         expected value
 *
 * @example
 * double y = stdlib_base_gamma_mean( 1.0, 1.0 );
