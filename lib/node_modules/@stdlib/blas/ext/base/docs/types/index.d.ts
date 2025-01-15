@@ -2361,12 +2361,12 @@ interface Namespace {
 	sapxsumkbn2: typeof sapxsumkbn2;
 
 	/**
-	* Adds a constant to each single-precision floating-point strided array element and computes the sum using ordinary recursive summation.
+	* Adds a scalar constant to each single-precision floating-point strided array element and computes the sum using ordinary recursive summation.
 	*
 	* @param N - number of indexed elements
-	* @param alpha - constant
+	* @param alpha - scalar constant
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns sum
 	*
 	* @example
