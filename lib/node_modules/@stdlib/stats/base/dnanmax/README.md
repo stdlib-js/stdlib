@@ -135,7 +135,7 @@ var bernoulli = require( '@stdlib/random/base/bernoulli' );
 var dnanmax = require( '@stdlib/stats/base/dnanmax' );
 
 function rand() {
-    if ( bernoulli( 0.2 ) < 1 ) {
+    if ( bernoulli( 0.8 ) < 1 ) {
         return NaN;
     }
     return uniform( -50.0, 50.0 );
