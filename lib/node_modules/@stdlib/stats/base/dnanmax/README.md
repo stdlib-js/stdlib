@@ -129,22 +129,19 @@ var v = dnanmax.ndarray( 4, x, 2, 1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
-var Float64Array = require( '@stdlib/array/float64' );
+var uniform = require( '@stdlib/random/base/uniform' );
+var filledarrayBy = require( '@stdlib/array/filled-by' );
+var bernoulli = require( '@stdlib/random/base/bernoulli' );
 var dnanmax = require( '@stdlib/stats/base/dnanmax' );
 
-var x;
-var i;
-
-x = new Float64Array( 10 );
-for ( i = 0; i < x.length; i++ ) {
-    if ( randu() < 0.2 ) {
-        x[ i ] = NaN;
-    } else {
-        x[ i ] = round( (randu()*100.0) - 50.0 );
+function rand() {
+    if ( bernoulli( 0.2 ) < 1 ) {
+        return NaN;
     }
+    return uniform( -50.0, 50.0 );
 }
+
+var x = filledarrayBy( 10, 'float64', rand );
 console.log( x );
 
 var v = dnanmax( x.length, x, 1 );
