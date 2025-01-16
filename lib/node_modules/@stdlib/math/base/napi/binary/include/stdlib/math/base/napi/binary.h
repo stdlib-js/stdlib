@@ -343,6 +343,48 @@
 	NAPI_MODULE( NODE_GYP_MODULE_NAME, stdlib_math_base_napi_di_d_init )
 
 /**
+* Macro for registering a Node-API module exporting an interface invoking a binary function accepting a signed 32-bit integer and a double-precision floating-point number and returning a double-precision floating-point number.
+*
+* @param fcn   binary function
+*
+* @example
+* #include <stdint.h>
+*
+* static double mul( const int32_t n, const double x ) {
+*     return x * n;
+* }
+*
+* // ...
+*
+* // Register a Node-API module:
+* STDLIB_MATH_BASE_NAPI_MODULE_ID_D( mul );
+*/
+#define STDLIB_MATH_BASE_NAPI_MODULE_ID_D( fcn )                               \
+	static napi_value stdlib_math_base_napi_id_d_wrapper(                      \
+		napi_env env,                                                          \
+		napi_callback_info info                                                \
+	) {                                                                        \
+		return stdlib_math_base_napi_id_d( env, info, fcn );                   \
+	};                                                                         \
+	static napi_value stdlib_math_base_napi_id_d_init(                         \
+		napi_env env,                                                          \
+		napi_value exports                                                     \
+	) {                                                                        \
+		napi_value fcn;                                                        \
+		napi_status status = napi_create_function(                             \
+			env,                                                               \
+			"exports",                                                         \
+			NAPI_AUTO_LENGTH,                                                  \
+			stdlib_math_base_napi_id_d_wrapper,                                \
+			NULL,                                                              \
+			&fcn                                                               \
+		);                                                                     \
+		assert( status == napi_ok );                                           \
+		return fcn;                                                            \
+	};                                                                         \
+	NAPI_MODULE( NODE_GYP_MODULE_NAME, stdlib_math_base_napi_id_d_init )
+
+/**
 * Macro for registering a Node-API module exporting an interface invoking a binary function accepting a single-precision floating-point number and a signed 32-bit integer and returning a single-precision floating-point number.
 *
 * @param fcn   binary function
@@ -689,6 +731,11 @@ napi_value stdlib_math_base_napi_cc_c( napi_env env, napi_callback_info info, st
 * Invokes a binary function accepting a double-precision floating-point number and a signed 32-bit integer and returning a double-precision floating-point number.
 */
 napi_value stdlib_math_base_napi_di_d( napi_env env, napi_callback_info info, double (*fcn)( double, int32_t ) );
+
+/**
+* Invokes a binary function accepting a signed 32-bit integer and a double-precision floating-point number and returning a double-precision floating-point number.
+*/
+napi_value stdlib_math_base_napi_id_d( napi_env env, napi_callback_info info, double (*fcn)( int32_t, double ) );
 
 /**
 * Invokes a binary function accepting signed 32-bit integers and returning a double-precision floating-point number.

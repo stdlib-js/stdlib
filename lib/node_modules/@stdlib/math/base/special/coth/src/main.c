@@ -66,5 +66,5 @@
 */
 
 double stdlib_base_coth( const double x ) {
-    return 1.0 / stdlib_base_tanh(x);
+	return 1.0 / stdlib_base_tanh(x);
 }

@@ -35,3 +35,7 @@ REPL:
 Statistics:
 - changed-files:
   - any-glob-to-all-files: '**/stats/**/*'
+
+Tools:
+- changed-files:
+  - any-glob-to-all-files: '**/_tools/**/*'

@@ -68,15 +68,13 @@ v = trunc( -Infinity );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var randu = require( '@stdlib/random/array/uniform' );
 var trunc = require( '@stdlib/math/base/special/trunc' );
 
-var x;
+var x = randu( 100, -50.0, 50.0 );
 var i;
-
-for ( i = 0; i < 100; i++ ) {
-    x = (randu()*100.0) - 50.0;
-    console.log( 'trunc(%d) = %d', x, trunc( x ) );
+for ( i = 0; i < x.length; i++ ) {
+    console.log( 'trunc(%d) = %d', x[ i ], trunc( x[ i ] ) );
 }
 ```
 
