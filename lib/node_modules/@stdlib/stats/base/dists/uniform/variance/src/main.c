@@ -31,9 +31,7 @@
 * // returns ~0.083
 */
 double stdlib_base_dists_uniform_variance( const double a, const double b ) {
-	if (
-		a >= b
-	) {
+	if ( a >= b ) {
 		return 0.0 / 0.0; // NaN
 	}
 	return ( 1.0 / 12.0 ) * stdlib_base_pow( b - a, 2.0 );

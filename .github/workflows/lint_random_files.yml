@@ -183,7 +183,7 @@ jobs:
 
           echo "files=$files" >> $GITHUB_OUTPUT
 
-      # Lint file names
+      # Lint file names:
       - name: 'Lint file names'
         run: |
           # Determine root directory:
@@ -194,6 +194,12 @@ jobs:
 
           # Lint filenames:
           echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | "${lint_filenames}"
+
+      # Lint files against EditorConfig:
+      - name: 'Lint against EditorConfig'
+        run: |
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' ' ')
+          make lint-editorconfig-files FILES="${files}"
 
       # Lint Markdown files:
       - name: 'Lint Markdown files'
@@ -458,7 +464,7 @@ jobs:
         if: ${{ github.event.inputs.fix == 'true' }} && ( success() || failure() )
         id: cpr
         # Pin action to full length commit SHA
-        uses: peter-evans/create-pull-request@5e914681df9dc83aa4e4905692ca88beb2f9e91f # v7.0.5
+        uses: peter-evans/create-pull-request@67ccf781d68cd99b580ae25a5c18a1cc84ffff1f # v7.0.6
         with:
           title: 'style: fix lint errors'
           add-paths: ${{ steps.random-files.outputs.files }}

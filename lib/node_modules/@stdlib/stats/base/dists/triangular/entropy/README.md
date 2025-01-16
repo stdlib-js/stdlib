@@ -26,7 +26,7 @@ limitations under the License.
 
 <section class="intro">
 
-The [differential entropy][entropy] (in [nats][nats]) for a [triangular][triangular-distribution] random variable with lower limit `a`, upper limit `b`, and mode `c` is 
+The [differential entropy][entropy] (in [nats][nats]) for a [triangular][triangular-distribution] random variable with lower limit `a`, upper limit `b`, and mode `c` is
 
 <!-- <equation class="equation" label="eq:triangular_entropy" align="center" raw="h\left( X \right) = \frac{1}{2} + \ln \left({\frac{b-a}{2}}\right)" alt="Differential entropy for a triangular distribution."> -->
 
@@ -132,6 +132,100 @@ for ( i = 0; i < 10; i++ ) {
     c = ( randu()*( b-a ) ) + a;
     v = entropy( a, b, c );
     console.log( 'a: %d, b: %d, c: %d, h(X;a,b,c): %d', a.toFixed( 4 ), b.toFixed( 4 ), c.toFixed( 4 ), v.toFixed( 4 ) );
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/triangular/entropy.h"
+```
+
+#### stdlib_base_dists_triangular_entropy( a, b, c )
+
+Returns the [differential entropy][entropy] of a [triangular][triangular-distribution] distribution with minimum support `a`, maximum support`b`, and mode `c` (in [nats][nats]).
+
+```c
+double out = stdlib_base_dists_triangular_entropy( 0.0, 1.0, 0.5 );
+// returns ~-0.193
+```
+
+The function accepts the following arguments:
+
+-   **a**: `[in] double` minimum support.
+-   **b**: `[in] double` maximum support.
+-   **c**: `[in] double` mode.
+
+```c
+double stdlib_base_dists_triangular_entropy( const double a, const double b, const double c );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/triangular/entropy.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double a;
+    double b;
+    double c;
+    double v;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        a = random_uniform( 0.0, 10.0 );
+        b = random_uniform( a, a+10.0 );
+        c = random_uniform( a, b );
+        v = stdlib_base_dists_triangular_entropy( a, b, c );
+        printf( "a: %lf, b: %lf, c: %lf, h(X;a,b,c): %lf\n", a, b, c, v );
+    }
 }
 ```
 
