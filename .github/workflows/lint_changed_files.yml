@@ -133,7 +133,7 @@ jobs:
       - name: 'Lint against EditorConfig'
         if: success() || failure()
         run: |
-          make lint-editorconfig-files FILES="${{ steps.changed-files.outputs.files }}"
+          make lint-editorconfig-files EDITORCONFIG_FORMAT=github-actions FILES="${{ steps.changed-files.outputs.files }}"
 
       # Lint Markdown files:
       - name: 'Lint Markdown files'
