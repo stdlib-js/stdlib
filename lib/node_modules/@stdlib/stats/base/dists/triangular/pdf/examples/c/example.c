@@ -38,7 +38,7 @@ int main( void ) {
 	for ( i = 0; i < 25; i++ ) {
 		x = random_uniform( 0.0, 30.0 );
 		a = random_uniform( 0.0, 10.0 );
-		b = random_uniform( a, 40.0 ) + STDLIB_CONSTANT_FLOAT64_EPS;
+		b = random_uniform( a+STDLIB_CONSTANT_FLOAT64_EPS, 40.0 );
 		c = a + random_uniform( 0.0, b - a );
 		y = stdlib_base_dists_triangular_pdf( x, a, b, c );
 		printf( "x: %lf, a: %lf, b: %lf, c: %lf, f(x;a,b,c): %lf\n", x, a, b, c, y );
