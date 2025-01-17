@@ -1,5 +1,5 @@
 
-{{alias}}( arrays, initial, accumulator )
+{{alias}}( arrays, initial, clbk )
     Performs a reduction over elements in an input ndarray.
 
     A provided "ndarray" should be an object with the following properties:
@@ -12,19 +12,17 @@
     - order: specifies whether an ndarray is row-major (C-style) or column-major
     (Fortran-style).
 
-    The accumulator callback should be a binary function accepting two
-    arguments:
+    The callback function should be a binary function accepting two arguments:
 
     - accumulated: the accumulated result.
     - currentValue: the current ndarray element.
 
-    Each invocation of the accumulator callback should return an updated
-    accumulated result. This return value is subsequently provided to the
-    accumulator callback upon next invocation.
+    Each invocation of the callback should return an updated accumulated result.
+    This return value is subsequently provided to the callback upon next
+    invocation.
 
-    After invoking the accumulator callback for each element in a provided
-    ndarray, the function returns the return value from the last invocation of
-    the accumulator callback.
+    After invoking the callback for each element in a provided ndarray, the
+    function returns the return value from the last invocation of the callback.
 
     Parameters
     ----------
@@ -34,8 +32,8 @@
     initial: any
         Initial accumulator value.
 
-    accumulator: Function
-        Accumulator callback.
+    clbk: Function
+        Callback function.
 
     Returns
     -------
