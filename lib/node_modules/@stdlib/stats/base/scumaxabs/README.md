@@ -108,7 +108,7 @@ The function has the following additional parameters:
 -   **offsetX**: starting index for `x`.
 -   **offsetY**: starting index for `y`.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, offset parameters support indexing semantics based on a starting indices. For example, to calculate the cumulative maximum absolute value of every other element in `x` starting from the second element and to store in the last `N` elements of `y` starting from the last element
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, offset parameters support indexing semantics based on starting indices. For example, to calculate the cumulative maximum absolute value of every other element in `x` starting from the second element and to store in the last `N` elements of `y` starting from the last element
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
@@ -212,6 +212,45 @@ void stdlib_strided_scumaxabs( const CBLAS_INT N, const float *X, const CBLAS_IN
 #### stdlib_strided_scumaxabs_ndarray(N, \*X, strideX, offsetX, \*Y, strideY, offsetY )
 
 Computes the cumulative maximum absolute value of single-precision floating-point strided array elements using alternative indexing semantics.
+
+```c
+const float x[] = { 1.0f, 2.0f, -3.0f, 4.0f, -5.0f, 6.0f, 7.0f, 8.0f };
+float y[] = { 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f };
+
+stdlib_strided_scumaxabs_ndarray( 4, x, 2, 0, y, -2, 0 );
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[in] float*` input array.
+-   **strideX**: `[in] CBLAS_INT` stride length for `X`.
+-   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
+-   **Y**: `[out] float*` output array.
+-   **strideY**: `[in] CBLAS_INT` stride length for `Y`.
+-   **offsetY**: `[in] CBLAS_INT` starting index for `Y`.
+
+```c
+void stdlib_strided_scumaxabs_ndarray( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, float *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
 
 ```c
 #include "stdlib/stats/base/scumaxabs.h"

@@ -108,7 +108,7 @@ The function has the following additional parameters:
 -   **offsetX**: starting index for `x`.
 -   **offsetY**: starting index for `y`.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, offset parameters support indexing semantics based on a starting indices. For example, to calculate the cumulative minimum of every other element in `x` starting from the second element and to store in the last `N` elements of `y` starting from the last element
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, offset parameters support indexing semantics based on starting indices. For example, to calculate the cumulative minimum of every other element in `x` starting from the second element and to store in the last `N` elements of `y` starting from the last element
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
