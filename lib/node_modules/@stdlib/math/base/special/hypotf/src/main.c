@@ -20,7 +20,7 @@
 #include "stdlib/math/base/assert/is_nanf.h"
 #include "stdlib/math/base/assert/is_infinitef.h"
 #include "stdlib/math/base/special/sqrtf.h"
-#include <math.h>
+#include "stdlib/constants/float32/pinf.h"
 
 /**
 * Computes the hypotenuse avoiding overflow and underflow (single-precision).
@@ -41,7 +41,7 @@ float stdlib_base_hypotf( const float x, const float y ) {
 		return 0.0f / 0.0f; // NaN
 	}
 	if ( stdlib_base_is_infinitef( x ) || stdlib_base_is_infinitef( y ) ) {
-		return INFINITY;
+		return STDLIB_CONSTANT_FLOAT32_PINF;
 	}
 	a = x;
 	b = y;
@@ -60,5 +60,5 @@ float stdlib_base_hypotf( const float x, const float y ) {
 		return 0.0f;
 	}
 	b /= a;
-	return a * stdlib_base_sqrtf( 1.0f + (b*b) );
+	return a * stdlib_base_sqrtf( 1.0f + ( b * b ) );
 }
