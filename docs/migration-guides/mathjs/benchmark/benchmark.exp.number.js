@@ -62,7 +62,30 @@ bench( pkg+'::stdlib:math/base/special/exp:value=number', opts, function benchma
 	b.end();
 });
 
-// TODO: add math/special/exp benchmarks
+// Add math/special/exp benchmarks
+bench( pkg+'::stdlib:math/special/exp:value=number', opts, function benchmark( b ) {
+    var x;
+    var y;
+    var i;
+
+    x = filledBy( 100, uniform( -100.0, 100.0 ) );
+
+    b.tic();
+    for ( i = 0; i < b.iterations; i++ ) {
+        y = exp( x[ i%x.length ] );
+        if ( y !== y ) {
+            b.fail( 'should not return NaN' );
+        }
+    }
+    b.toc();
+    if ( isnan( y ) ) {
+        b.fail( 'should not return NaN' );
+    }
+    b.pass( 'benchmark finished' );
+    b.end();
+});
+
+
 
 bench( pkg+'::mathjs:exp:value=number', opts, function benchmark( b ) {
 	var x;
