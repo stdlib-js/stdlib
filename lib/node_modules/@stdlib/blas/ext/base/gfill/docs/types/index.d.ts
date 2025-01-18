@@ -20,12 +20,31 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/array';
+import { Collection, AccessorArrayLike } from '@stdlib/types/array';
 
 /**
 * Interface describing `gfill`.
 */
 interface Routine {
+	/**
+	* Fills a strided array with a specified scalar constant.
+	*
+	* @param N - number of indexed elements
+	* @param alpha - scalar constant
+	* @param x - input array
+	* @param strideX - stride length
+	* @returns `x`
+	*
+	* @example
+	* var toAccessorArray = require( '@stdlib/array/base/to-accessor-array' );
+	*
+	* var x = [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ];
+	*
+	* gfill( x.length, 5.0, toAccessorArray( x ), 1 );
+	* // x => [ 5.0, 5.0, 5.0, 0.0, 5.0, 5.0, 5.0, 5.0 ]
+	*/
+	<T = unknown, U = unknown>( N: number, alpha: T, x: AccessorArrayLike<U>, strideX: number ): AccessorArrayLike<T | U>;
+
 	/**
 	* Fills a strided array with a specified scalar constant.
 	*
@@ -42,6 +61,26 @@ interface Routine {
 	* // x => [ 5.0, 5.0, 5.0, 0.0, 5.0, 5.0, 5.0, 5.0 ]
 	*/
 	<T = unknown, U = unknown>( N: number, alpha: T, x: Collection<U>, strideX: number ): Collection<T | U>;
+
+	/**
+	* Fills a strided array with a specified scalar constant using alternative indexing semantics.
+	*
+	* @param N - number of indexed elements
+	* @param alpha - scalar constant
+	* @param x - input array
+	* @param strideX - stride length
+	* @param offsetX - starting index
+	* @returns `x`
+	*
+	* @example
+	* var toAccessorArray = require( '@stdlib/array/base/to-accessor-array' );
+	*
+	* var x = [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ];
+	*
+	* gfill.ndarray( x.length, 5.0, toAccessorArray( x ), 1, 0 );
+	* // x => [ 5.0, 5.0, 5.0, 0.0, 5.0, 5.0, 5.0, 5.0 ]
+	*/
+	ndarray<T = unknown, U = unknown>( N: number, alpha: T, x: AccessorArrayLike<U>, strideX: number, offsetX: number ): AccessorArrayLike<T | U>;
 
 	/**
 	* Fills a strided array with a specified scalar constant using alternative indexing semantics.
