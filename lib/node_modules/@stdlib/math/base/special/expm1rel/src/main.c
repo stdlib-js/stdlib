@@ -35,11 +35,11 @@ static const double OVERFLOW_THRESHOLD = 7.09782712893383973096e+02; // 0x40862E
 * // returns 1.0
 */
 double stdlib_base_expm1rel( const double x ) {
-    if ( stdlib_base_abs( x ) <= STDLIB_CONSTANT_FLOAT64_EPS ) {
-        return 1.0; // L'Hopital's Rule
-    }
-    if ( x >= OVERFLOW_THRESHOLD ) {
-        return STDLIB_CONSTANT_FLOAT64_PINF; // L'Hopital's Rule
-    }
-    return stdlib_base_expm1( x ) / x;
+	if ( stdlib_base_abs( x ) <= STDLIB_CONSTANT_FLOAT64_EPS ) {
+		return 1.0; // L'Hopital's Rule
+	}
+	if ( x >= OVERFLOW_THRESHOLD ) {
+		return STDLIB_CONSTANT_FLOAT64_PINF; // L'Hopital's Rule
+	}
+	return stdlib_base_expm1( x ) / x;
 }
