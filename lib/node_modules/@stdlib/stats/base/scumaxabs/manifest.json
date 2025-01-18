@@ -1,6 +1,7 @@
 {
   "options": {
-    "task": "build"
+    "task": "build",
+    "wasm": false
   },
   "fields": [
     {
@@ -27,18 +28,20 @@
   "confs": [
     {
       "task": "build",
+      "wasm": false,
       "src": [
-        "./src/scumaxabs.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/blas/base/shared",
+        "@stdlib/math/base/special/absf",
+        "@stdlib/strided/base/stride2offset",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
@@ -47,34 +50,56 @@
     },
     {
       "task": "benchmark",
+      "wasm": false,
       "src": [
-        "./src/scumaxabs.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/assert/is-nanf"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/math/base/special/absf"
       ]
     },
     {
       "task": "examples",
+      "wasm": false,
       "src": [
-        "./src/scumaxabs.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/assert/is-nanf"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/math/base/special/absf"
+      ]
+    },
+    {
+      "task": "",
+      "wasm": true,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/math/base/special/absf"
       ]
     }
   ]

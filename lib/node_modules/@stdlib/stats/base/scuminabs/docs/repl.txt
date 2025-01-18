@@ -3,8 +3,8 @@
     Computes the cumulative minimum absolute value of single-precision floating-
     point strided array elements.
 
-    The `N` and `stride` parameters determine which elements in `x` and `y` are
-    accessed at runtime.
+    The `N` and stride parameters determine which elements in the strided arrays
+    are accessed at runtime.
 
     Indexing is relative to the first index. To introduce an offset, use a typed
     array view.
@@ -20,13 +20,13 @@
         Input array.
 
     strideX: integer
-        Index increment for `x`.
+        Stride length for `x`.
 
     y: Float32Array
         Output array.
 
     strideY: integer
-        Index increment for `y`.
+        Stride length for `y`.
 
     Returns
     -------
@@ -41,11 +41,10 @@
     > {{alias}}( x.length, x, 1, y, 1 )
     <Float32Array>[ 1.0, 1.0, 1.0 ]
 
-    // Using `N` and `stride` parameters:
+    // Using `N` and stride parameters:
     > x = new {{alias:@stdlib/array/float32}}( [ -2.0, 1.0, 1.0, -5.0, 2.0, -1.0 ] );
     > y = new {{alias:@stdlib/array/float32}}( x.length );
-    > var N = {{alias:@stdlib/math/base/special/floor}}( x.length / 2 );
-    > {{alias}}( N, x, 2, y, 2 )
+    > {{alias}}( 3, x, 2, y, 2 )
     <Float32Array>[ 2.0, 0.0, 1.0, 0.0, 1.0, 0.0 ]
 
     // Using view offsets:
@@ -53,11 +52,11 @@
     > var y0 = new {{alias:@stdlib/array/float32}}( x0.length );
     > var x1 = new {{alias:@stdlib/array/float32}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
     > var y1 = new {{alias:@stdlib/array/float32}}( y0.buffer, y0.BYTES_PER_ELEMENT*3 );
-    > N = {{alias:@stdlib/math/base/special/floor}}( x0.length / 2 );
-    > {{alias}}( N, x1, 2, y1, 1 )
+    > {{alias}}( 3, x1, 2, y1, 1 )
     <Float32Array>[ 2.0, 2.0, 1.0 ]
     > y0
     <Float32Array>[ 0.0, 0.0, 0.0, 2.0, 2.0, 1.0 ]
+
 
 {{alias}}.ndarray( N, x, strideX, offsetX, y, strideY, offsetY )
     Computes the cumulative minimum absolute value of single-precision floating-
@@ -76,7 +75,7 @@
         Input array.
 
     strideX: integer
-        Index increment for `x`.
+        Stride length for `x`.
 
     offsetX: integer
         Starting index for `x`.
@@ -85,7 +84,7 @@
         Output array.
 
     strideY: integer
-        Index increment for `y`.
+        Stride length for `y`.
 
     offsetY: integer
         Starting index for `y`.
@@ -106,8 +105,7 @@
     // Advanced indexing:
     > x = new {{alias:@stdlib/array/float32}}( [ 1.0, -2.0, 3.0, 2.0, 5.0, -1.0 ] );
     > y = new {{alias:@stdlib/array/float32}}( x.length );
-    > var N = {{alias:@stdlib/math/base/special/floor}}( x.length / 2 );
-    > {{alias}}.ndarray( N, x, 2, 1, y, -1, y.length-1 )
+    > {{alias}}.ndarray( 3, x, 2, 1, y, -1, y.length-1 )
     <Float32Array>[ 0.0, 0.0, 0.0, 1.0, 2.0, 2.0 ]
 
     See Also

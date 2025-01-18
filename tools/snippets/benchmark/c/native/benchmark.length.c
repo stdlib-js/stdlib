@@ -16,12 +16,12 @@
 * limitations under the License.
 */
 
+#include "TODO.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
 #include <time.h>
 #include <sys/time.h>
-#include "TODO.h"
 
 #define NAME "TODO"
 #define ITERATIONS 10000000

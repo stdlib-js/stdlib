@@ -221,7 +221,7 @@ int main( void ) {
 
     for ( i = 0; i < 25; i++ ) {
         a = random_uniform( 0.0, 10.0 );
-        b = random_uniform( 0.0, 10.0 ) + a;
+        b = random_uniform( a, a+10.0 );
         c = random_uniform( a, b ); // mode between a and b
         y = stdlib_base_dists_triangular_mode( a, b, c );
         printf( "a: %lf, b: %lf, c: %lf, M(X;a,b,c): %lf\n", a, b, c, y );
