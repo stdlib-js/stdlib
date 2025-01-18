@@ -67,20 +67,26 @@ jobs:
 
       # Add "First-time Contributor" label if PR is from a first-time contributor:
       - name: 'Add "First-time Contributor" label if PR is from a first-time contributor'
-        if: ${{ ( github.event.action == 'opened' || github.event.action == 'reopened' ) && github.event.pull_request.author_association == 'FIRST_TIME_CONTRIBUTOR' }}
+        if: ${{ github.event.action == 'opened' || github.event.action == 'reopened' }}
         # Pin action to full-length commit SHA
         uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
         with:
           github-token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
           script: |
-            const labels = context.payload.pull_request.labels.map( label => label.name );
-            if ( !labels.includes( 'First-time Contributor' ) ) {
-              await github.rest.issues.addLabels({
-                'owner': context.repo.owner,
-                'repo': context.repo.repo,
-                'issue_number': context.payload.pull_request.number,
-                'labels': [ 'First-time Contributor' ]
-              });
+            const { data: pr } = await github.rest.pulls.get({
+              'owner': context.repo.owner,
+              'repo': context.repo.repo,
+              'pull_number': context.payload.pull_request.number
+            });
+            if ( pr.author_association === 'FIRST_TIME_CONTRIBUTOR' ) {
+              const labels = context.payload.pull_request.labels.map( label => label.name );
+              if ( !labels.includes( 'First-time Contributor' ) ) {
+                await github.rest.issues.addLabels({
+                  'owner': context.repo.owner,
+                  'repo': context.repo.repo,
+                  'issue_number': context.payload.pull_request.number,
+                  'labels': [ 'First-time Contributor' ]
+                });
             }
 
       # Add "Needs Review" label when PR is opened and not a draft:
