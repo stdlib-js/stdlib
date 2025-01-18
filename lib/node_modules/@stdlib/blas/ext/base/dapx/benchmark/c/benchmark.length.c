@@ -106,7 +106,7 @@ static double benchmark1( int iterations, int len ) {
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
 		// cppcheck-suppress uninitvar
-		c_dapx( len, 5.0, x, 1 );
+		stdlib_strided_dapx( len, 5.0, x, 1 );
 		if ( x[ 0 ] != x[ 0 ] ) {
 			printf( "should not return NaN\n" );
 			break;
@@ -131,7 +131,7 @@ static double benchmark2( int iterations, int len ) {
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
 		// cppcheck-suppress uninitvar
-		c_dapx_ndarray( len, 5.0, x, 1, 0 );
+		stdlib_strided_dapx_ndarray( len, 5.0, x, 1, 0 );
 		if ( x[ 0 ] != x[ 0 ] ) {
 			printf( "should not return NaN\n" );
 			break;
