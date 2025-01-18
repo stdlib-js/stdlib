@@ -160,8 +160,8 @@ jobs:
               }
             }
 
-      # Remove "First-time Contributor" label from other open PRs if PR is merged:
-      - name: 'Remove "First-time Contributor" label from other open PRs if PR is merged'
+      # Remove "First-time Contributor" label from other open PRs of same author if PR is merged:
+      - name: 'Remove "First-time Contributor" label from other open PRs of same author if PR is merged'
         if: ${{ github.event.action == 'closed' && github.event.pull_request.merged == true }}
         # Pin action to full length commit SHA
         uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
@@ -169,14 +169,16 @@ jobs:
           github-token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
           script: |
             const prAuthor = context.payload.pull_request.user.login;
+            const { owner, repo } = context.repo;
 
-            const { data: pullRequests } = await github.rest.pulls.list({
-              'owner': context.repo.owner,
-              'repo': context.repo.repo,
-              'state': 'open'
+            // Search for all open PRs from the PR author:
+            const query = `repo:${owner}/${repo} type:pr state:open author:${prAuthor}`;
+            const response = await github.rest.search.issuesAndPullRequests({
+              'q': query,
+              'per_page': 100
             });
 
-            // Remove "First-time Contributor" label from any other open PRs by the same author:
+            const pullRequests = response.data.items;
             for ( const pull of pullRequests ) {
               if ( pull.user.login === prAuthor ) {
                 try {
