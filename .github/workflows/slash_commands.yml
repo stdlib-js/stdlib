@@ -61,13 +61,7 @@ jobs:
       - name: 'Add initial reaction'
         run: |
           COMMENT="${{ github.event.comment.body }}"
-          if [[ $COMMENT == "/stdlib help" || \
-                $COMMENT == "/stdlib check-files" || \
-                $COMMENT == "/stdlib update-copyright-years" || \
-                $COMMENT == "/stdlib lint-autofix" || \
-                $COMMENT == "/stdlib merge" || \
-                $COMMENT == "/stdlib rebase"
-          ]]; then
+          if [[ $COMMENT =~ ^/stdlib\ (help|check-files|update-copyright-years|lint-autofix|merge|rebase) ]]; then
             curl -X POST \
               -H "Accept: application/vnd.github.v3+json" \
               -H "Authorization: Bearer ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}" \
