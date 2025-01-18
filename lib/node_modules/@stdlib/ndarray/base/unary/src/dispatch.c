@@ -107,7 +107,7 @@ static int8_t stdlib_ndarray_unary_1d_flatten( const ndarrayUnaryFcn f, const in
 	int64_t sh[] = { N };
 
 	// Shallow copy and reshape the arrays...
-	int64_t sx1[] = { s2 };
+	int64_t sx1[] = { s1 };
 	struct ndarray *x1c = stdlib_ndarray_allocate(
 		stdlib_ndarray_dtype( x1 ),
 		stdlib_ndarray_data( x1 ),
@@ -253,6 +253,8 @@ static int8_t stdlib_ndarray_unary_1d_flatten( const ndarrayUnaryFcn f, const in
 * }
 */
 int8_t stdlib_ndarray_unary_dispatch( const struct ndarrayUnaryDispatchObject *obj, struct ndarray *arrays[], void *fcn ) {
+	const int64_t *sh1;
+	const int64_t *sh2;
 	struct ndarray *x1;
 	struct ndarray *x2;
 	int8_t status;
@@ -261,8 +263,6 @@ int8_t stdlib_ndarray_unary_dispatch( const struct ndarrayUnaryDispatchObject *o
 	int64_t mab2;
 	int64_t mib1;
 	int64_t mib2;
-	int64_t *sh1;
-	int64_t *sh2;
 	int64_t *s1;
 	int64_t *s2;
 	int64_t len;
