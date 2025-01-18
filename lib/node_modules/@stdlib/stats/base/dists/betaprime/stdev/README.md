@@ -227,7 +227,7 @@ int main( void ) {
 
     for ( i = 0; i < 25; i++ ) {
         alpha = random_uniform( 0.0, 20.0 );
-        beta = random_uniform( 0.0, 20.0 ) + 2.0;
+        beta = random_uniform( 2.0, 22.0 );
         y = stdlib_base_dists_betaprime_stdev( alpha, beta );
         printf( "α: %lf, β: %lf, SD(X;α,β): %lf\n", alpha, beta, y );
     }

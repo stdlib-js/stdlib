@@ -144,6 +144,48 @@
 	};                                                                         \
 	NAPI_MODULE( NODE_GYP_MODULE_NAME, stdlib_math_base_napi_dii_d_init )
 
+/**
+* Macro for registering a Node-API module exporting an interface invoking a ternary function accepting two signed 32-bit integers and a double-precision floating-point number and returning a double-precision floating-point number.
+*
+* @param fcn   ternary function
+*
+* @example
+* #include <stdint.h>
+*
+* static double fcn( const int_32 x, const int_32 y, const double z ) {
+*     // ...
+* }
+*
+* // ...
+*
+* // Register a Node-API module:
+* STDLIB_MATH_BASE_NAPI_MODULE_IID_D( fcn );
+*/
+#define STDLIB_MATH_BASE_NAPI_MODULE_IID_D( fcn )                              \
+	static napi_value stdlib_math_base_napi_iid_d_wrapper(                     \
+		napi_env env,                                                          \
+		napi_callback_info info                                                \
+	) {                                                                        \
+		return stdlib_math_base_napi_iid_d( env, info, fcn );                  \
+	};                                                                         \
+	static napi_value stdlib_math_base_napi_iid_d_init(                        \
+		napi_env env,                                                          \
+		napi_value exports                                                     \
+	) {                                                                        \
+		napi_value fcn;                                                        \
+		napi_status status = napi_create_function(                             \
+			env,                                                               \
+			"exports",                                                         \
+			NAPI_AUTO_LENGTH,                                                  \
+			stdlib_math_base_napi_iid_d_wrapper,                               \
+			NULL,                                                              \
+			&fcn                                                               \
+		);                                                                     \
+		assert( status == napi_ok );                                           \
+		return fcn;                                                            \
+	};                                                                         \
+	NAPI_MODULE( NODE_GYP_MODULE_NAME, stdlib_math_base_napi_iid_d_init )
+
 /*
 * If C++, prevent name mangling so that the compiler emits a ternary file having undecorated names, thus mirroring the behavior of a C compiler.
 */
@@ -165,6 +207,11 @@ napi_value stdlib_math_base_napi_fff_f( napi_env env, napi_callback_info info, f
 * Invokes a ternary function accepting a double-precision floating-point number and two signed 32-bit integers and returning a double-precision floating-point number.
 */
 napi_value stdlib_math_base_napi_dii_d( napi_env env, napi_callback_info info, double (*fcn)( double, int32_t, int32_t ) );
+
+/**
+* Invokes a ternary function accepting two signed 32-bit integers and a double-precision floating-point number and returning a double-precision floating-point number.
+*/
+napi_value stdlib_math_base_napi_iid_d( napi_env env, napi_callback_info info, double (*fcn)( int32_t, int32_t, double ) );
 
 #ifdef __cplusplus
 }

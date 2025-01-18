@@ -105,6 +105,13 @@ jobs:
 
             -   updates the list of contributors
 
+            ## Reviewer Checklist
+
+            - [ ] For any **new contributors**, check if their full names are listed on their GitHub profile or in social links.
+            - [ ] If so, on the PR branch **update** the `.mailmap` file accordingly to ensure proper attribution.
+            - [ ] If updating `.mailmap`, **regenerate** the contributors file by running `make update-contributors` on the PR branch afterward.
+            - [ ] Approve the PR after verifying the changes.
+
           commit-message: 'docs: update list of contributors'
           committer: 'stdlib-bot <82920195+stdlib-bot@users.noreply.github.com>'
           signoff: true
