@@ -1,7 +1,7 @@
 
 {{alias}}( x )
-    Evaluates the Dirac delta function in single-precision
-    floating-point format.
+    Evaluates the Dirac delta function for a single-precision
+    floating-point number.
 
     Parameters
     ----------

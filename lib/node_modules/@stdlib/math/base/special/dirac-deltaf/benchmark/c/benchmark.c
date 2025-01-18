@@ -89,7 +89,7 @@ static double rand_float( void ) {
 * @param x   input value
 * @return function result
 */
-float dirac_deltaf( float x ) {
+static float dirac_deltaf( float x ) {
 	if ( x == 0.0f ) {
 		return HUGE_VAL;
 	}
