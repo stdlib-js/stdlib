@@ -156,6 +156,25 @@ interface Namespace {
 	*
 	* var im = imag( out );
 	* // returns -1.0
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	*
+	* var out = new Float64Array( 2 );
+	* var v = ns.cmul.assign( 5.0, 3.0, -2.0, 1.0, out, 1, 0 );
+	* // returns <Float64Array>[ -13.0, -1.0 ]
+	*
+	* var bool = ( out === v );
+	* // returns true
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	*
+	* var z1 = new Float64Array( [ 5.0, 3.0 ] );
+	* var z2 = new Float64Array( [ -2.0, 1.0 ] );
+	*
+	* var out = ns.cmul.strided( z1, 1, 0, z2, 1, 0, new Float64Array( 2 ), 1, 0 );
+	* // returns <Float64Array>[ -13.0, -1.0 ]
 	*/
 	cmul: typeof cmul;
 

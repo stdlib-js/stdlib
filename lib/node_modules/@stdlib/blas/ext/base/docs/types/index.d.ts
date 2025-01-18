@@ -2334,12 +2334,12 @@ interface Namespace {
 	sapxsumkbn: typeof sapxsumkbn;
 
 	/**
-	* Adds a constant to each single-precision floating-point strided array element and computes the sum using a second-order iterative Kahan–Babuška algorithm.
+	* Adds a scalar constant to each single-precision floating-point strided array element and computes the sum using a second-order iterative Kahan–Babuška algorithm.
 	*
 	* @param N - number of indexed elements
-	* @param alpha - constant
+	* @param alpha - scalar constant
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns sum
 	*
 	* @example
@@ -2388,12 +2388,12 @@ interface Namespace {
 	sapxsumors: typeof sapxsumors;
 
 	/**
-	* Adds a constant to each single-precision floating-point strided array element and computes the sum using pairwise summation.
+	* Adds a scalar constant to each single-precision floating-point strided array element and computes the sum using pairwise summation.
 	*
 	* @param N - number of indexed elements
-	* @param alpha - constant
+	* @param alpha - scalar constant
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns sum
 	*
 	* @example
@@ -2419,7 +2419,7 @@ interface Namespace {
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns sum
 	*
 	* @example
@@ -2477,9 +2477,9 @@ interface Namespace {
 	* @param N - number of indexed elements
 	* @param sum - initial sum
 	* @param x - input array
-	* @param strideX - `x` stride length
+	* @param strideX - stride length for `x`
 	* @param y - output array
-	* @param strideY - `y` stride length
+	* @param strideY - stride length for `y`
 	* @returns output array
 	*
 	* @example
@@ -2508,9 +2508,9 @@ interface Namespace {
 	* @param N - number of indexed elements
 	* @param sum - initial sum
 	* @param x - input array
-	* @param strideX - `x` stride length
+	* @param strideX - stride length for `x`
 	* @param y - output array
-	* @param strideY - `y` stride length
+	* @param strideY - stride length for `y`
 	* @returns output array
 	*
 	* @example
