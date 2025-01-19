@@ -1081,3 +1081,6 @@
 "HQ","invalid argument. Must provide the same number of dimension indices as the number of dimensions in the input ndarray. Number of dimensions: %d. Value: `[%s]`.","RangeError"
 "HR","invalid argument. Must provide dimension indices which resolve to nonnegative indices arranged in ascending order. Value: `[%s]`.","Error"
 "HS","invalid argument. Specified axis is out-of-bounds. Must be on the interval: [-%u, %u]. Value: `%d`.","RangeError"
+"HT","invalid argument. Each key in the keybindings argument must correspond to a single action. Value: `%s`","TypeError"
+"HU","invalid argument. First argument must be a valid action name. Value: `%s`.","TypeError"
+"HV","invalid argument. Each key in the keys argument must correspond to a single action. Value: `%s`","TypeError"
