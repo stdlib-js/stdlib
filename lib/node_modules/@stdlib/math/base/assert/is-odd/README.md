@@ -85,18 +85,20 @@ bool = isOdd( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var isOdd = require( '@stdlib/math/base/assert/is-odd' );
 
 var bool;
+var len;
 var x;
 var i;
 
+len = 100;
+x = discreteUniform( len, 0, 1000 );
+
 for ( i = 0; i < 100; i++ ) {
-    x = round( randu()*100.0 );
-    bool = isOdd( x );
-    console.log( '%d is %s', x, ( bool ) ? 'odd' : 'not odd' );
+    bool = isOdd( x[ i ] );
+    console.log( '%d is %s', x[ i ], ( bool ) ? 'odd' : 'not odd' );
 }
 ```
 
