@@ -38,5 +38,5 @@ double stdlib_base_dists_gumbel_kurtosis( const double mu, const double beta ) {
 	) {
 		return 0.0/0.0; // NaN
 	}
-	return 12.0 / 5.0;
+	return 2.4; // 12.0 / 5.0
 }
