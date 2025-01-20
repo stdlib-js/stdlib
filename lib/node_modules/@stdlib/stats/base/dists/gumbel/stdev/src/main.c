@@ -18,8 +18,8 @@
 
 #include "stdlib/stats/base/dists/gumbel/stdev.h"
 #include "stdlib/math/base/assert/is_nan.h"
-#include "stdlib/math/base/special/sqrt.h"
-#include "stdlib/constants/float64/pi.h"
+
+static const double PI_OVER_SQRT6 = 1.282549830161864; // Pi divided by the square root of 6
 
 /**
 * Returns the standard deviation for a Gumbel distribution with location `mu` and scale `beta`.
@@ -33,8 +33,6 @@
 * // returns ~1.283
 */
 double stdlib_base_dists_gumbel_stdev( const double mu, const double beta ) {
-	double SQRT6 = stdlib_base_sqrt( 6.0 );
-
 	if (
 		stdlib_base_is_nan( mu ) ||
 		stdlib_base_is_nan( beta ) ||
@@ -42,5 +40,5 @@ double stdlib_base_dists_gumbel_stdev( const double mu, const double beta ) {
 	) {
 		return 0.0/0.0; // NaN
 	}
-	return ( STDLIB_CONSTANT_FLOAT64_PI / SQRT6 ) * beta;
+	return PI_OVER_SQRT6 * beta;
 }
