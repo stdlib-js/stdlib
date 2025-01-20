@@ -38,6 +38,6 @@ int main( void ) {
 		mu = random_uniform( -50.0, 50.0 );
 		s = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 20.0 );
 		y = stdlib_base_dists_cosine_mgf( t, mu, s );
-		printf( "t: %lf, µ: %lf, s: %lf, M_X(t;µ,s): %lf\n", t, mu, s , y );
+		printf( "t: %lf, µ: %lf, s: %lf, M_X(t;µ,s): %lf\n", t, mu, s, y );
 	}
 }
