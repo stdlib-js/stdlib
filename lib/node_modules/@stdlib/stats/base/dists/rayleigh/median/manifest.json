@@ -39,9 +39,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/napi/unary",
-        "@stdlib/math/base/assert/is-nan",
-        "@stdlib/constants/float64/ln-two",
-        "@stdlib/math/base/special/sqrt"
+        "@stdlib/math/base/assert/is-nan"
       ]
     },
     {
@@ -57,9 +55,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
-        "@stdlib/constants/float64/ln-two",
-        "@stdlib/constants/float64/eps",
-        "@stdlib/math/base/special/sqrt"
+        "@stdlib/constants/float64/eps"
       ]
     },
     {
@@ -74,9 +70,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/assert/is-nan",
-        "@stdlib/constants/float64/ln-two",
-        "@stdlib/math/base/special/sqrt"
+        "@stdlib/math/base/assert/is-nan"
       ]
     }
   ]
