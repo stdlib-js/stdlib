@@ -23,7 +23,7 @@
 #include "stdlib/constants/float64/ninf.h"
 
 /**
-* Evaluates the natural logarithm of the cumulative distribution function (CDF) for an arcsine distribution with minimum support `a` and maximum support `b` at a value `x`.
+* Evaluates the natural logarithm of the cumulative distribution function (CDF) for a Kumaraswamy's double bounded distribution with first shape parameter `a` and second shape parameter `b` at a value `x`.
 *
 * @param x    input value
 * @param a    first shape parameter
