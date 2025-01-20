@@ -41,7 +41,7 @@
         "@stdlib/math/base/special/floorf",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
-        "@stdlib/napi/argv-double",
+        "@stdlib/napi/argv-float",
         "@stdlib/napi/create-int32"
       ]
     },
