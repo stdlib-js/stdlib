@@ -18,8 +18,8 @@
 
 #include "stdlib/stats/base/dists/cosine/kurtosis.h"
 #include "stdlib/math/base/assert/is_nan.h"
-#include "stdlib/math/base/special/pow.h"
-#include "stdlib/constants/float64/pi_squared.h"
+
+static const double COSINE_EXCESS_KURTOSIS = -0.5937628755982794; // 6(90-π^4)/(5(π^4-6)^2)
 
 /**
 * Returns the excess kurtosis of a raised cosine distribution.
@@ -40,7 +40,5 @@ double stdlib_base_dists_cosine_kurtosis( const double mu, const double s ) {
 	) {
 		return 0.0/0.0; // NaN
 	}
-	double out = 6.0 * ( 90.0 - ( STDLIB_CONSTANT_FLOAT64_PI_SQUARED*STDLIB_CONSTANT_FLOAT64_PI_SQUARED ) );
-	out /= 5.0 * stdlib_base_pow( STDLIB_CONSTANT_FLOAT64_PI_SQUARED-6.0, 2.0 );
-	return out;
+	return COSINE_EXCESS_KURTOSIS;
 }
