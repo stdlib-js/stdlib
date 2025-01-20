@@ -23,8 +23,7 @@
 #include "stdlib/math/base/special/ln.h"
 
 /**
-* Evaluates the natural logarithm of the probability density function (PDF) for a triangular distribution
-* with parameters `a`, `b`, and `c` at a value `x`.
+* Evaluates the natural logarithm of the probability density function (PDF) for a triangular distribution with lower limit `a`, upper limit `b`, and mode `c` at a value `x`.
 *
 * @param x   input value
 * @param a   lower limit

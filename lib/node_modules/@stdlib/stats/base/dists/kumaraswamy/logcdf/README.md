@@ -216,8 +216,7 @@ The function accepts the following arguments:
 -   **b**: `[in] double` second shape parameter.
 
 ```c
-double stdlib_base_dists_kumaraswamy_logcdf( const double x, const
-double a, const double b );
+double stdlib_base_dists_kumaraswamy_logcdf( const double x, const double a, const double b );
 ```
 
 </section>
