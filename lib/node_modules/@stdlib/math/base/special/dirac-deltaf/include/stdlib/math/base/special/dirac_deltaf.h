@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Evaluates the Dirac delta function in single-precision floating-point format.
+* Evaluates the Dirac delta function for a single-precision floating-point number.
 */
 float stdlib_base_dirac_deltaf( const float x );
 

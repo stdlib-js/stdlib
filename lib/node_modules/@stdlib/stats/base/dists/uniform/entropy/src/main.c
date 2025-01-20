@@ -36,7 +36,7 @@ double stdlib_base_dists_uniform_entropy( const double a, const double b ) {
 		stdlib_base_is_nan( a ) ||
 		stdlib_base_is_nan( b ) ||
 		a >= b
-	 ) {
+	) {
 		return 0.0 / 0.0; // NaN
 	}
 	return stdlib_base_ln( b - a );
