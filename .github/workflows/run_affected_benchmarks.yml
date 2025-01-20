@@ -35,6 +35,11 @@ on:
       # List paths for which changes should trigger this workflow:
       - 'lib/**/benchmark/**'
 
+  workflow_dispatch:
+    inputs:
+      directories:
+        description: 'List of changed directories for which to run affected benchmarks (space-separated)'
+
 # Global permissions:
 permissions:
   # Allow read-only access to the repository contents:
@@ -103,9 +108,10 @@ jobs:
           make init
         timeout-minutes: 5
 
-      # Get list of changed files:
-      - name: 'Get list of changed files'
-        id: changed-files
+      # Get list of changed directories from PR and push events:
+      - name: 'Get list of changed directories'
+        if: github.event_name != 'workflow_dispatch'
+        id: changed-directories
         continue-on-error: true
         run: |
           if [ -n "${{ github.event.pull_request.number }}" ]; then
@@ -120,24 +126,24 @@ jobs:
               files=$(git diff --diff-filter=AM --name-only ${{ github.event.before }} ${{ github.event.after }})
             fi
           fi
-          # Keep only benchmark files:
-          files=$(echo "$files" | grep -E 'benchmark/' | tr '\n' ' ' | sed 's/ $//')
-          echo "files=${files}" >> $GITHUB_OUTPUT
+          directories=$(for file in $files; do dirname $file; done | uniq | tr '\n' ' ' | sed 's/ $//')
+          echo "directories=${directories}" >> $GITHUB_OUTPUT
 
-      # Run JavaScript benchmarks:
-      - name: 'Run JavaScript benchmarks'
+      # Get list of changed directories from workflow dispatch event:
+      - name: 'Get list of changed directories (from user input)'
+        if: github.event_name == 'workflow_dispatch'
+        id: changed-directories-user-input
         run: |
-          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.js$' | tr '\n' ' ' | sed 's/ $//')
-          if [ -n "$files" ]; then
-            make benchmark-javascript-files FILES="${files}"
+          echo "directories=${{ github.event.inputs.directories }}" >> $GITHUB_OUTPUT
+        timeout-minutes: 5
+
+      # Run affected benchmarks:
+      - name: 'Run affected benchmarks'
+        run: |
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            directories="${{ steps.changed-directories-user-input.outputs.directories }}"
+          else
+            directories="${{ steps.changed-directories.outputs.directories }}"
           fi
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/run_affected_benchmarks" "$directories"
         timeout-minutes: 30
-
-      # Run C benchmarks:
-      - name: 'Run C benchmarks'
-        run: |
-          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.c$' | sed "s|^|${GITHUB_WORKSPACE}/|" | tr '\n' ' ' | sed 's/ $//')
-          if [ -n "$files" ]; then
-            make benchmark-c-files FILES="${files}"
-          fi
-        timeout-minutes: 15
