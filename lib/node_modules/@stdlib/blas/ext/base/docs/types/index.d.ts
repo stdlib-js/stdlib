@@ -2253,12 +2253,12 @@ interface Namespace {
 	gsumpw: typeof gsumpw;
 
 	/**
-	* Adds a constant to each element in a single-precision floating-point strided array.
+	* Adds a scalar constant to each element in a single-precision floating-point strided array.
 	*
 	* @param N - number of indexed elements
-	* @param alpha - constant
+	* @param alpha - scalar constant
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns `x`
 	*
 	* @example
@@ -2280,12 +2280,12 @@ interface Namespace {
 	sapx: typeof sapx;
 
 	/**
-	* Adds a constant to each single-precision floating-point strided array element and computes the sum.
+	* Adds a scalar constant to each single-precision floating-point strided array element and computes the sum.
 	*
 	* @param N - number of indexed elements
-	* @param alpha - constant
+	* @param alpha - scalar constant
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns sum
 	*
 	* @example
@@ -2539,9 +2539,9 @@ interface Namespace {
 	* @param N - number of indexed elements
 	* @param sum - initial sum
 	* @param x - input array
-	* @param strideX - `x` stride length
+	* @param strideX - stride length for `x`
 	* @param y - output array
-	* @param strideY - `y` stride length
+	* @param strideY - stride length for `y`
 	* @returns output array
 	*
 	* @example
@@ -2570,9 +2570,9 @@ interface Namespace {
 	* @param N - number of indexed elements
 	* @param sum - initial sum
 	* @param x - input array
-	* @param strideX - `x` stride length
+	* @param strideX - stride length for `x`
 	* @param y - output array
-	* @param strideY - `y` stride length
+	* @param strideY - stride length for `y`
 	* @returns output array
 	*
 	* @example
