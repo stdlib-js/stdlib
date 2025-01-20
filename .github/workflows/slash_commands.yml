@@ -51,23 +51,17 @@ jobs:
           github-token: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
           script: |
             github.rest.issues.addLabels({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: context.issue.number,
-              labels: ['bot: In Progress']
+              'owner': context.repo.owner,
+              'repo': context.repo.repo,
+              'issue_number': context.issue.number,
+              'labels': ['bot: In Progress']
             })
 
       # Add initial reaction to comment with slash command:
       - name: 'Add initial reaction'
         run: |
           COMMENT="${{ github.event.comment.body }}"
-          if [[ $COMMENT == "/stdlib help" || \
-                $COMMENT == "/stdlib check-files" || \
-                $COMMENT == "/stdlib update-copyright-years" || \
-                $COMMENT == "/stdlib lint-autofix" || \
-                $COMMENT == "/stdlib merge" || \
-                $COMMENT == "/stdlib rebase"
-          ]]; then
+          if [[ $COMMENT =~ ^/stdlib\ (help|check-files|update-copyright-years|lint-autofix|merge|rebase) ]]; then
             curl -X POST \
               -H "Accept: application/vnd.github.v3+json" \
               -H "Authorization: Bearer ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}" \
@@ -254,11 +248,11 @@ jobs:
           script: |
             try {
               await github.rest.issues.removeLabel({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: context.issue.number,
-                name: 'bot: In Progress'
+                'owner': context.repo.owner,
+                'repo': context.repo.repo,
+                'issue_number': context.issue.number,
+                'name': 'bot: In Progress'
               })
-            } catch (error) {
-              console.log( 'Error removing label:', error );
+            } catch ( error ) {
+              console.log( 'Error removing label: %s', error.message );
             }

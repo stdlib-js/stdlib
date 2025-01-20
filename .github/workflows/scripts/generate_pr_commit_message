@@ -45,6 +45,11 @@ GITHUB_API_URL="https://api.github.com"
 REPO_OWNER="stdlib-js"
 REPO_NAME="stdlib"
 
+# Exit codes
+SUCCESS=0
+ERROR=1
+TRACKING_ISSUE_FOUND=200
+
 
 # FUNCTIONS #
 
@@ -126,12 +131,12 @@ github_api() {
 			else
 				# Handle cases where POST data is required but not provided:
 				echo "POST request requires data."
-				on_error 1
+				on_error $ERROR
 			fi
 			;;
 		*)
 			echo "Invalid HTTP method: $method"
-			on_error 1
+			on_error $ERROR
 			;;
 	esac
 }
@@ -226,8 +231,17 @@ main() {
 	# Create a regex pattern from the keywords:
 	keywords_pattern=$(IFS='|'; echo "${closing_keywords[*]}")
 
+	EXIT_CODE=$SUCCESS
 	for issue in $issue_numbers; do
-		if echo "$pr_body" | grep -Eiq "(${keywords_pattern})([[:space:]]+|:)[[:space:]]*#${issue}\b"; then
+		# Fetch issue labels:
+		issue_details=$(github_api "GET" "/repos/$REPO_OWNER/$REPO_NAME/issues/$issue")
+		issue_labels=$(echo "$issue_details" | jq -r '.labels[].name')
+
+		# Check if the issue is a tracking issue:
+		if echo "$issue_labels" | grep -q "Tracking Issue"; then
+			EXIT_CODE=$TRACKING_ISSUE_FOUND
+			ref_issues+="Ref: https://github.com/$REPO_OWNER/$REPO_NAME/issues/$issue\n"
+		elif echo "$pr_body" | grep -Eiq "(${keywords_pattern})([[:space:]]+|:)[[:space:]]*#${issue}\b"; then
 			closes_issues+="Closes: https://github.com/$REPO_OWNER/$REPO_NAME/issues/$issue\n"
 		else
 			ref_issues+="Ref: https://github.com/$REPO_OWNER/$REPO_NAME/issues/$issue\n"
@@ -265,6 +279,9 @@ main() {
 
 	# Output the commit message:
 	echo -e "$commit_message"
+
+	# Return successful exit code (200 if a tracking issue was found, 0 otherwise):
+    return $EXIT_CODE
 }
 
 # Call main with all command-line arguments:

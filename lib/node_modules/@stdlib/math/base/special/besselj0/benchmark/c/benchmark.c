@@ -26,6 +26,7 @@
 * [1]: http://en.cppreference.com/w/c/numeric/math
 * [2]: https://www.gnu.org/software/libc/manual/html_node/Special-Functions.html
 */
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>

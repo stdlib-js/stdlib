@@ -179,7 +179,7 @@ double stdlib_base_avercos( const double x );
 
 int main( void ) {
     const double x[] = { -2.5, -2.0, -1.5, -1.0, -0.5, 0.5, 1.0, 1.5, 2.0, 2.5 };
-    
+
     double v;
     int i;
     for ( i = 0; i < 10; i++ ) {

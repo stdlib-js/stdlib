@@ -1,0 +1,32 @@
+
+{{alias}}( x )
+    Tests if a finite single-precision floating-point number is an odd number.
+
+    The function assumes a finite number. If provided positive or negative
+    infinity, the function will return `true`, when, in fact, the result is
+    undefined.
+
+    Parameters
+    ----------
+    x: number
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether the value is an odd number.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 5.0 )
+    true
+    > bool = {{alias}}( -2.0 )
+    false
+    > bool = {{alias}}( 0.0 )
+    false
+    > bool = {{alias}}( NaN )
+    false
+
+    See Also
+    --------
+
