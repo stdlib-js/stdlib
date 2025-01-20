@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/stats/base/dcumax",
+  "name": "@stdlib/stats/strided/dcumax",
   "version": "0.0.0",
   "description": "Calculate the cumulative maximum of double-precision floating-point strided array elements.",
   "license": "Apache-2.0",
