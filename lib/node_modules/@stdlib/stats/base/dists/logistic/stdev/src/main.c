@@ -21,6 +21,8 @@
 #include "stdlib/constants/float64/pi.h"
 #include "stdlib/constants/float64/sqrt_three.h"
 
+static const double PI_OVER_SQRT_THREE = 1.8137993642342178; // π divided by the square root of 3
+
 /**
 * Returns the standard deviation for a logistic distribution with location `mu` and scale `s`.
 *
@@ -40,5 +42,5 @@ double stdlib_base_dists_logistic_stdev( const double mu, const double s ) {
 	) {
 		return 0.0/0.0; // NaN
 	}
-	return s * STDLIB_CONSTANT_FLOAT64_PI / STDLIB_CONSTANT_FLOAT64_SQRT3;
+	return s * PI_OVER_SQRT_THREE;
 }
