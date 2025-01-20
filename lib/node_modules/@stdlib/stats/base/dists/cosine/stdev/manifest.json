@@ -39,9 +39,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/napi/binary",
-        "@stdlib/math/base/assert/is-nan",
-        "@stdlib/math/base/special/sqrt",
-        "@stdlib/constants/float64/pi-squared"
+        "@stdlib/math/base/assert/is-nan"
       ]
     },
     {
@@ -57,9 +55,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
-        "@stdlib/constants/float64/eps",
-        "@stdlib/math/base/special/sqrt",
-        "@stdlib/constants/float64/pi-squared"
+        "@stdlib/constants/float64/eps"
       ]
     },
     {
@@ -75,9 +71,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
-        "@stdlib/constants/float64/eps",
-        "@stdlib/math/base/special/sqrt",
-        "@stdlib/constants/float64/pi-squared"
+        "@stdlib/constants/float64/eps"
       ]
     }
   ]

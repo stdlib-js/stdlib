@@ -125,7 +125,7 @@ for ( i = 0; i < 100; i++ ) {
 
 #### stdlib_base_dists_degenerate_logpmf( x, mu )
 
-Evaluate the natural logarithm of the [probability mass function][pmf] (PMF) for a [degenerate distribution][degenerate-distribution].
+Evaluates the natural logarithm of the [probability mass function][pmf] (PMF) for a [degenerate distribution][degenerate-distribution].
 
 ```c
 double out = stdlib_base_dists_degenerate_logpmf( 2.0, 3.0 );
