@@ -22,7 +22,7 @@
 #include "stdlib/constants/float64/pi_squared.h"
 
 /**
-* Returns the mode for a raised cosine distribution with location `mu` and scale `s`.
+* Returns the standard deviation for a raised cosine distribution with location `mu` and scale `s`.
 *
 * @param mu   location parameter
 * @param s    scale parameter
@@ -33,7 +33,7 @@
 * // returns ~0.362
 */
 double stdlib_base_dists_cosine_stdev( const double mu, const double s ) {
-	if ( 
+	if (
 		stdlib_base_is_nan( mu ) ||
 		stdlib_base_is_nan( s ) ||
 		s <= 0.0
