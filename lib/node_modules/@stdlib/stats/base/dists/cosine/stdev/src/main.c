@@ -18,8 +18,8 @@
 
 #include "stdlib/stats/base/dists/cosine/stdev.h"
 #include "stdlib/math/base/assert/is_nan.h"
-#include "stdlib/math/base/special/sqrt.h"
-#include "stdlib/constants/float64/pi_squared.h"
+
+static const double STDLIB_COSINE_STDEV_CONST = 0.36151205519132795; // sqrt( (1/3) - (2/π²) )
 
 /**
 * Returns the standard deviation for a raised cosine distribution with location `mu` and scale `s`.
@@ -40,5 +40,5 @@ double stdlib_base_dists_cosine_stdev( const double mu, const double s ) {
 	) {
 		return 0.0/0.0; // NaN
 	}
-	return s * stdlib_base_sqrt( ( 1.0/3.0 ) - ( 2/STDLIB_CONSTANT_FLOAT64_PI_SQUARED ) );
+	return s * STDLIB_COSINE_STDEV_CONST;
 }
