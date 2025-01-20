@@ -20,10 +20,10 @@
 #include "stdlib/math/base/assert/is_nan.h"
 
 /**
-* Returns the kurtosis of an exponential distribution.
+* Returns the excess kurtosis of an exponential distribution.
 *
 * @param lambda    rate parameter
-* @return          kurtosis
+* @return          excess kurtosis
 *
 * @example
 * double y = stdlib_base_exponential_kurtosis( 9.0 );
