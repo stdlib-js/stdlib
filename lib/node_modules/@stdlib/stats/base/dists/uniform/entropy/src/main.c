@@ -21,11 +21,11 @@
 #include "stdlib/math/base/special/ln.h"
 
 /**
-* Returns the entropy of a uniform distribution.
+* Returns the differential entropy of a uniform distribution.
 *
 * @param n   minimum support
 * @param p   maximum support
-* @return    entropy
+* @return    differential entropy
 *
 * @example
 * double v = entropy( 0.0, 1.0 );
