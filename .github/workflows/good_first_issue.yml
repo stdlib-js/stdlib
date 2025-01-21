@@ -56,7 +56,7 @@ jobs:
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.issue.number }}
           BODY: |
-            # :rotating_light: Important: PLEASE READ :rotating_light:
+            # :wave: Important: PLEASE READ :wave:
 
             This issue has been labeled as a **good first issue** and is available for anyone to work on.
 
