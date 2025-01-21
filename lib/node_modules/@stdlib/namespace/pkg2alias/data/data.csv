@@ -1039,7 +1039,7 @@
 "@stdlib/math/strided/special/dceil",base.strided.dceil
 "@stdlib/blas/base/dcopy",base.strided.dcopy
 "@stdlib/stats/strided/dcumax",base.strided.dcumax
-"@stdlib/stats/base/dcumaxabs",base.strided.dcumaxabs
+"@stdlib/stats/strided/dcumaxabs",base.strided.dcumaxabs
 "@stdlib/stats/base/dcumin",base.strided.dcumin
 "@stdlib/stats/base/dcuminabs",base.strided.dcuminabs
 "@stdlib/blas/ext/base/dcusum",base.strided.dcusum
