@@ -1038,7 +1038,7 @@
 "@stdlib/math-strided-special-dcbrt","@stdlib/math/strided/special/dcbrt"
 "@stdlib/math-strided-special-dceil","@stdlib/math/strided/special/dceil"
 "@stdlib/blas-base-dcopy","@stdlib/blas/base/dcopy"
-"@stdlib/stats-base-dcumax","@stdlib/stats/strided/dcumax"
+"@stdlib/stats-strided-dcumax","@stdlib/stats/strided/dcumax"
 "@stdlib/stats-base-dcumaxabs","@stdlib/stats/base/dcumaxabs"
 "@stdlib/stats-base-dcumin","@stdlib/stats/base/dcumin"
 "@stdlib/stats-base-dcuminabs","@stdlib/stats/base/dcuminabs"
