@@ -104,7 +104,7 @@ console.log( headerDir );
 #include "stdlib/math/base/napi/binary.h"
 ```
 
-<!-- NOTE: please keep in alphabetical order -->
+<!-- NOTE: please keep in alphabetical order according to suffix XX_X -->
 
 #### STDLIB_MATH_BASE_NAPI_MODULE_CC_C( fcn )
 
