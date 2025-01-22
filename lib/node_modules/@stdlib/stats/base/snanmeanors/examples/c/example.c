@@ -22,16 +22,16 @@
 
 int main( void ) {
 	// Create a strided array:
-	float x[] = { 1.0, 2.0, 0.0/0.0, 3.0, 0.0/0.0, 4.0, 5.0, 6.0, 0.0/0.0, 7.0, 8.0, 0.0/0.0 };
+	const float x[] = { 1.0f, 2.0f, 0.0f/0.0f, 3.0f, 0.0f/0.0f, 4.0f, 5.0f, 6.0f, 0.0f/0.0f, 7.0f, 8.0f, 0.0f/0.0f };
 
 	// Specify the number of elements:
-	int64_t N = 6;
+	const int N = 6;
 
 	// Specify the stride length:
-	int64_t stride = 2;
+	const int strideX = 2;
 
 	// Compute the arithmetic mean:
-	float v = stdlib_strided_snanmeanors( N, x, stride );
+	float v = stdlib_strided_snanmeanors( N, x, strideX );
 
 	// Print the result:
 	printf( "mean: %f\n", v );
