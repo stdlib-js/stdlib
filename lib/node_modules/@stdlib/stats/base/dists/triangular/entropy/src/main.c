@@ -21,12 +21,12 @@
 #include "stdlib/math/base/special/ln.h"
 
 /**
-* Returns the entropy of a triangular distribution.
+* Returns the differential entropy of a triangular distribution.
 *
 * @param a    minimum support
 * @param b    maximum support
 * @param c    mode
-* @return     entropy
+* @return     differential entropy
 *
 * @example
 * double y = stdlib_base_triangular_entropy( 0.0, 1.0, 0.5 );
