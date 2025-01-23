@@ -127,6 +127,25 @@ interface Namespace {
 	*
 	* var im = imag( out );
 	* // returns 6.0
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	*
+	* var out = new Float64Array( 2 );
+	* var v = ns.cadd.assign( 5.0, 3.0, 5.0, 3.0, out, 1, 0 );
+	* // returns <Float64Array>[ 10.0, 6.0 ]
+	*
+	* var bool = ( out === v );
+	* // returns true
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	*
+	* var z1 = new Float64Array( [ 5.0, 3.0 ] );
+	* var z2 = new Float64Array( [ 5.0, 3.0 ] );
+	*
+	* var out = ns.cadd.strided( z1, 1, 0, z2, 1, 0, new Float64Array( 2 ), 1, 0 );
+	* // returns <Float64Array>[ 10.0, 6.0 ]
 	*/
 	cadd: typeof cadd;
 
