@@ -30,6 +30,7 @@
         "./src/dii_d.c",
         "./src/fff_f.c",
         "./src/iid_d.c",
+        "./src/iii_d.c",
         "./src/zzz_z.c"
       ],
       "include": [
