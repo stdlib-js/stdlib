@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2020 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -18,7 +18,8 @@
 
 #include "stdlib/blas/ext/base/sdsnansumpw.h"
 #include "stdlib/math/base/assert/is_nanf.h"
-#include <stdint.h>
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/stride2offset.h"
 
 /**
 * Computes the sum of single-precision floating-point strided array elements, ignoring `NaN` values and using pairwise summation with extended accumulation.
@@ -31,19 +32,39 @@
 *
 * -   Higham, Nicholas J. 1993. "The Accuracy of Floating Point Summation." _SIAM Journal on Scientific Computing_ 14 (4): 783–99. doi:[10.1137/0914050](https://doi.org/10.1137/0914050).
 *
-* @param N       number of indexed elements
-* @param X       input array
-* @param stride  stride length
-* @return        output value
+* @param N        number of indexed elements
+* @param X        input array
+* @param strideX  stride length
+* @return         output value
 */
-float stdlib_strided_sdsnansumpw( const int64_t N, const float *X, const int64_t stride ) {
-	float *xp1;
-	float *xp2;
+float API_SUFFIX(stdlib_strided_sdsnansumpw)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX ) {
+	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	return API_SUFFIX(stdlib_strided_sdsnansumpw_ndarray)( N, X, strideX, ox );
+}
+
+/**
+* Computes the sum of single-precision floating-point strided array elements, ignoring `NaN` values and using pairwise summation with extended accumulation and alternative indexing semantics.
+*
+* ## Method
+*
+* -   This implementation uses pairwise summation, which accrues rounding error `O(log2 N)` instead of `O(N)`. The recursion depth is also `O(log2 N)`.
+*
+* ## References
+*
+* -   Higham, Nicholas J. 1993. "The Accuracy of Floating Point Summation." _SIAM Journal on Scientific Computing_ 14 (4): 783–99. doi:[10.1137/0914050](https://doi.org/10.1137/0914050).
+*
+* @param N        number of indexed elements
+* @param X        input array
+* @param strideX  stride length
+* @param offsetX  starting index
+* @return         output value
+*/
+float API_SUFFIX(stdlib_strided_sdsnansumpw_ndarray)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+	CBLAS_INT ix;
+	CBLAS_INT M;
+	CBLAS_INT n;
+	CBLAS_INT i;
 	double sum;
-	int64_t ix;
-	int64_t M;
-	int64_t n;
-	int64_t i;
 	double s0;
 	double s1;
 	double s2;
@@ -56,16 +77,12 @@ float stdlib_strided_sdsnansumpw( const int64_t N, const float *X, const int64_t
 	if ( N <= 0 ) {
 		return 0.0f;
 	}
-	if ( N == 1 || stride == 0 ) {
-		if ( stdlib_base_is_nanf( X[ 0 ] ) ) {
+	ix = offsetX;
+	if ( strideX == 0 ) {
+		if ( stdlib_base_is_nanf( X[ ix ] ) ) {
 			return 0.0f;
 		}
-		return X[ 0 ];
-	}
-	if ( stride < 0 ) {
-		ix = (1-N) * stride;
-	} else {
-		ix = 0;
+		return N * X[ ix ];
 	}
 	if ( N < 8 ) {
 		// Use simple summation...
@@ -74,7 +91,7 @@ float stdlib_strided_sdsnansumpw( const int64_t N, const float *X, const int64_t
 			if ( !stdlib_base_is_nanf( X[ ix ] ) ) {
 				sum += X[ ix ];
 			}
-			ix += stride;
+			ix += strideX;
 		}
 		return sum;
 	}
@@ -82,62 +99,55 @@ float stdlib_strided_sdsnansumpw( const int64_t N, const float *X, const int64_t
 	if ( N <= 128 ) {
 		// Sum a block with 8 accumulators (by loop unrolling, we lower the effective blocksize to 16)...
 		s0 = ( stdlib_base_is_nanf( X[ ix ] ) ) ? 0.0 : X[ ix ];
-		ix += stride;
+		ix += strideX;
 		s1 = ( stdlib_base_is_nanf( X[ ix ] ) ) ? 0.0 : X[ ix ];
-		ix += stride;
+		ix += strideX;
 		s2 = ( stdlib_base_is_nanf( X[ ix ] ) ) ? 0.0 : X[ ix ];
-		ix += stride;
+		ix += strideX;
 		s3 = ( stdlib_base_is_nanf( X[ ix ] ) ) ? 0.0 : X[ ix ];
-		ix += stride;
+		ix += strideX;
 		s4 = ( stdlib_base_is_nanf( X[ ix ] ) ) ? 0.0 : X[ ix ];
-		ix += stride;
+		ix += strideX;
 		s5 = ( stdlib_base_is_nanf( X[ ix ] ) ) ? 0.0 : X[ ix ];
-		ix += stride;
+		ix += strideX;
 		s6 = ( stdlib_base_is_nanf( X[ ix ] ) ) ? 0.0 : X[ ix ];
-		ix += stride;
+		ix += strideX;
 		s7 = ( stdlib_base_is_nanf( X[ ix ] ) ) ? 0.0 : X[ ix ];
-		ix += stride;
+		ix += strideX;
 
 		M = N % 8;
 		for ( i = 8; i < N-M; i += 8 ) {
 			s0 += ( stdlib_base_is_nanf( X[ ix ] ) ) ? 0.0 : X[ ix ];
-			ix += stride;
+			ix += strideX;
 			s1 += ( stdlib_base_is_nanf( X[ ix ] ) ) ? 0.0 : X[ ix ];
-			ix += stride;
+			ix += strideX;
 			s2 += ( stdlib_base_is_nanf( X[ ix ] ) ) ? 0.0 : X[ ix ];
-			ix += stride;
+			ix += strideX;
 			s3 += ( stdlib_base_is_nanf( X[ ix ] ) ) ? 0.0 : X[ ix ];
-			ix += stride;
+			ix += strideX;
 			s4 += ( stdlib_base_is_nanf( X[ ix ] ) ) ? 0.0 : X[ ix ];
-			ix += stride;
+			ix += strideX;
 			s5 += ( stdlib_base_is_nanf( X[ ix ] ) ) ? 0.0 : X[ ix ];
-			ix += stride;
+			ix += strideX;
 			s6 += ( stdlib_base_is_nanf( X[ ix ] ) ) ? 0.0 : X[ ix ];
-			ix += stride;
+			ix += strideX;
 			s7 += ( stdlib_base_is_nanf( X[ ix ] ) ) ? 0.0 : X[ ix ];
-			ix += stride;
+			ix += strideX;
 		}
 		// Pairwise sum the accumulators:
-		sum = ((s0+s1) + (s2+s3)) + ((s4+s5) + (s6+s7));
+		sum = ( (s0+s1) + (s2+s3) ) + ( (s4+s5) + (s6+s7) );
 
 		// Clean-up loop...
 		for (; i < N; i++ ) {
 			if ( !stdlib_base_is_nanf( X[ ix ] ) ) {
 				sum += X[ ix ];
 			}
-			ix += stride;
+			ix += strideX;
 		}
 		return sum;
 	}
 	// Recurse by dividing by two, but avoiding non-multiples of unroll factor...
 	n = N / 2;
 	n -= n % 8;
-	if ( stride < 0 ) {
-		xp1 = (float *)X + ( (n-N)*stride );
-		xp2 = (float *)X;
-	} else {
-		xp1 = (float *)X;
-		xp2 = (float *)X + ( n*stride );
-	}
-	return stdlib_strided_sdsnansumpw( n, xp1, stride ) + stdlib_strided_sdsnansumpw( N-n, xp2, stride );
+	return API_SUFFIX(stdlib_strided_sdsnansumpw_ndarray)( n, X, strideX, ix ) + API_SUFFIX(stdlib_strided_sdsnansumpw_ndarray)( N-n, X, strideX, ix+(n*strideX) );
 }
