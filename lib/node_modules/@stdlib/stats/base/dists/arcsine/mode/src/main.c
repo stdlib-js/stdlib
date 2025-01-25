@@ -16,8 +16,8 @@
 * limitations under the License.
 */
 
-#include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/stats/base/dists/arcsine/mode.h"
+#include "stdlib/math/base/assert/is_nan.h"
 
 /**
 * Returns the mode of an arcsine distribution.

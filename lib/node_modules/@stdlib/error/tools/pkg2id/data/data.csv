@@ -8018,3 +8018,17 @@
 "@stdlib/ndarray-base-to-normalized-indices",263
 "@stdlib/ndarray/base/to-unique-normalized-indices",264
 "@stdlib/ndarray-base-to-unique-normalized-indices",265
+"@stdlib/blas/base/zdscal",266
+"@stdlib/blas-base-zdscal",267
+"@stdlib/lapack/base/zlacgv",268
+"@stdlib/lapack-base-zlacgv",269
+"@stdlib/lapack/base/zlacpy",26A
+"@stdlib/lapack-base-zlacpy",26B
+"@stdlib/lapack/base/zrot",26C
+"@stdlib/lapack-base-zrot",26D
+"@stdlib/math/base/special/heavisidef",26E
+"@stdlib/math-base-special-heavisidef",26F
+"@stdlib/ndarray/base/unary-accumulate",26G
+"@stdlib/ndarray-base-unary-accumulate",26H
+"@stdlib/stats/strided/dmax",26I
+"@stdlib/stats-strided-dmax",26J

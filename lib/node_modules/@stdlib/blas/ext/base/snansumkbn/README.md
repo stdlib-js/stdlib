@@ -36,7 +36,7 @@ limitations under the License.
 var snansumkbn = require( '@stdlib/blas/ext/base/snansumkbn' );
 ```
 
-#### snansumkbn( N, x, stride )
+#### snansumkbn( N, x, strideX )
 
 Computes the sum of single-precision floating-point strided array elements, ignoring `NaN` values and using an improved Kahan–Babuška algorithm.
 
@@ -44,9 +44,8 @@ Computes the sum of single-precision floating-point strided array elements, igno
 var Float32Array = require( '@stdlib/array/float32' );
 
 var x = new Float32Array( [ 1.0, -2.0, NaN, 2.0 ] );
-var N = x.length;
 
-var v = snansumkbn( N, x, 1 );
+var v = snansumkbn( x.length, x, 1 );
 // returns 1.0
 ```
 
@@ -54,9 +53,9 @@ The function has the following parameters:
 
 -   **N**: number of indexed elements.
 -   **x**: input [`Float32Array`][@stdlib/array/float32].
--   **stride**: index increment for `x`.
+-   **stride**: stride length.
 
-The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to compute the sum of every other element in `x`,
+The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to compute the sum of every other element:
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
@@ -81,7 +80,7 @@ var v = snansumkbn( 4, x1, 2 );
 // returns 5.0
 ```
 
-#### snansumkbn.ndarray( N, x, stride, offset )
+#### snansumkbn.ndarray( N, x, strideX, offsetX )
 
 Computes the sum of single-precision floating-point strided array elements, ignoring `NaN` values and using an improved Kahan–Babuška algorithm and alternative indexing semantics.
 
@@ -96,9 +95,9 @@ var v = snansumkbn.ndarray( 4, x, 1, 0 );
 
 The function has the following additional parameters:
 
--   **offset**: starting index for `x`.
+-   **offsetX**: starting index.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the `offset` parameter supports indexing semantics based on a starting index. For example, to calculate the sum of every other value in `x` starting from the second value
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameter supports indexing semantics based on a starting index. For example, to calculate the sum of every other element starting from the second element:
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
@@ -136,7 +135,7 @@ var filledarrayBy = require( '@stdlib/array/filled-by' );
 var snansumkbn = require( '@stdlib/blas/ext/base/snansumkbn' );
 
 function rand() {
-    if ( bernoulli( 0.8 ) > 0 ) {
+    if ( bernoulli( 0.5 ) < 1 ) {
         return discreteUniform( 0, 100 );
     }
     return NaN;
@@ -153,7 +152,122 @@ console.log( v );
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
 * * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/blas/ext/base/snansumkbn.h"
+```
+
+#### stdlib_strided_snansumkbn( N, \*X, strideX )
+
+Computes the sum of single-precision floating-point strided array elements, ignoring `NaN` values and using an improved Kahan–Babuška algorithm.
+
+```c
+const float x[] = { 1.0f, 2.0f, 0.0f/0.0f, 4.0f };
+
+float v = stdlib_strided_snansumkbn( 4, x, 1 );
+// returns 7.0f
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[in] float*` input array.
+-   **strideX**: `[in] CBLAS_INT` stride length.
+
+```c
+float stdlib_strided_snansumkbn( const CBLAS_INT N, const float *X, const CBLAS_INT strideX );
+```
+
+#### stdlib_strided_snansumkbn_ndarray( N, \*X, strideX, offsetX )
+
+Computes the sum of single-precision floating-point strided array elements, ignoring `NaN` values and using an improved Kahan–Babuška algorithm and alternative indexing semantics.
+
+```c
+const float x[] = { 1.0f, 2.0f, 0.0f/0.0f, 4.0f };
+
+float v = stdlib_strided_snansumkbn_ndarray( 4, x, 1, 0 );
+// returns 7.0f
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[in] float*` input array.
+-   **strideX**: `[in] CBLAS_INT` stride length.
+-   **offsetX**: `[in] CBLAS_INT` starting index.
+
+```c
+float stdlib_strided_snansumkbn_ndarray( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/blas/ext/base/snansumkbn.h"
+#include <stdio.h>
+
+int main( void ) {
+    // Create a strided array:
+    const float x[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f, 0.0f/0.0f, 0.0f/0.0f };
+
+    // Specify the number of elements:
+    const int N = 5;
+
+    // Specify the stride length:
+    const int strideX = 2;
+
+    // Compute the sum:
+    float v = stdlib_strided_snansumkbn( N, x, strideX );
+
+    // Print the result:
+    printf( "Sum: %f\n", v );
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <section class="references">
 

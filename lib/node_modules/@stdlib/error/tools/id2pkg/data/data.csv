@@ -164,6 +164,10 @@
 "263",@stdlib/ndarray-base-to-normalized-indices
 "264",@stdlib/ndarray/base/to-unique-normalized-indices
 "265",@stdlib/ndarray-base-to-unique-normalized-indices
+"266",@stdlib/blas/base/zdscal
+"267",@stdlib/blas-base-zdscal
+"268",@stdlib/lapack/base/zlacgv
+"269",@stdlib/lapack-base-zlacgv
 "1Yi",@stdlib/array/base/accessor-getter
 "1Yj",@stdlib/array-base-accessor-getter
 "1Yk",@stdlib/array/base/accessor-setter
@@ -2743,6 +2747,10 @@
 "1zP",@stdlib/lapack-base-slaswp
 "1yw",@stdlib/lapack/base/spttrf
 "1yx",@stdlib/lapack-base-spttrf
+"26A",@stdlib/lapack/base/zlacpy
+"26B",@stdlib/lapack-base-zlacpy
+"26C",@stdlib/lapack/base/zrot
+"26D",@stdlib/lapack-base-zrot
 "1xl",@stdlib/lapack
 "0QE",@stdlib/math/base/assert/int32-is-even
 "0QF",@stdlib/math-base-assert-int32-is-even
@@ -3232,6 +3240,8 @@
 "0WN",@stdlib/math-base-special-haversin
 "0WO",@stdlib/math/base/special/heaviside
 "0WP",@stdlib/math-base-special-heaviside
+"26E",@stdlib/math/base/special/heavisidef
+"26F",@stdlib/math-base-special-heavisidef
 "0WQ",@stdlib/math/base/special/hypot
 "0WR",@stdlib/math-base-special-hypot
 "0WS",@stdlib/math/base/special/hypotf
@@ -4344,6 +4354,8 @@
 "0jZ",@stdlib/ndarray-base-to-array
 "0ja",@stdlib/ndarray/base/transpose
 "0jb",@stdlib/ndarray-base-transpose
+"26G",@stdlib/ndarray/base/unary-accumulate
+"26H",@stdlib/ndarray-base-unary-accumulate
 "1dM",@stdlib/ndarray/base/unary-by
 "1dN",@stdlib/ndarray-base-unary-by
 "1dO",@stdlib/ndarray/base/unary-loop-interchange-order
@@ -6244,8 +6256,6 @@
 "1A7",@stdlib/stats-base-dists-weibull-stdev
 "1A8",@stdlib/stats/base/dists/weibull/variance
 "1A9",@stdlib/stats-base-dists-weibull-variance
-"1AA",@stdlib/stats/base/dmax
-"1AB",@stdlib/stats-base-dmax
 "1AC",@stdlib/stats/base/dmaxabs
 "1AD",@stdlib/stats-base-dmaxabs
 "1AE",@stdlib/stats/base/dmaxabssorted
@@ -6967,6 +6977,8 @@
 "1Ln",@stdlib/stats-pcorrtest
 "1Lo",@stdlib/stats/ranks
 "1Lp",@stdlib/stats-ranks
+"26I",@stdlib/stats/strided/dmax
+"26J",@stdlib/stats-strided-dmax
 "1Lq",@stdlib/stats/ttest
 "1Lr",@stdlib/stats-ttest
 "1Ls",@stdlib/stats/ttest2

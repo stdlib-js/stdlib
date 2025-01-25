@@ -27,6 +27,7 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
 /**
 * Returns the moment-generating function (MGF) for a discrete uniform distribution with parameters `a` (minimum support) and `b` (maximum support).
 */
