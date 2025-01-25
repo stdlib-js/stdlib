@@ -65,6 +65,9 @@ jobs:
 
           # Specify whether to download Git-LFS files:
           lfs: false
+
+          # Avoid storing GitHub token in local Git configuration:
+          persist-credentials: false
         timeout-minutes: 10
 
       # Install Node.js:
@@ -116,7 +119,7 @@ jobs:
           commit-message: 'chore: update package meta data'
           committer: 'stdlib-bot <82920195+stdlib-bot@users.noreply.github.com>'
           signoff: true
-          token: ${{ secrets.PULL_REQUEST_TOKEN }}
+          token: ${{ secrets.STDLIB_BOT_FGPAT_PR_WRITE }}
           labels: |
             automated-pr
           team-reviewers: |
