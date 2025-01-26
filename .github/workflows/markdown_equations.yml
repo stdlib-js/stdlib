@@ -64,6 +64,9 @@ jobs:
 
           # Specify whether to download Git-LFS files:
           lfs: false
+
+          # Avoid storing GitHub token in local Git configuration:
+          persist-credentials: false
         timeout-minutes: 10
 
       # Install Node.js:
@@ -102,7 +105,6 @@ jobs:
           passphrase: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
           git_user_signingkey: true
           git_commit_gpgsign: true
-
 
       # Generate list of changed Markdown files:
       - name: 'Find changed Markdown files'
@@ -161,7 +163,7 @@ jobs:
           commit-message: 'docs: update Markdown equation elements'
           committer: 'stdlib-bot <82920195+stdlib-bot@users.noreply.github.com>'
           signoff: true
-          token: ${{ secrets.PULL_REQUEST_TOKEN }}
+          token: ${{ secrets.STDLIB_BOT_FGPAT_PR_WRITE }}
           labels: |
             documentation
             automated-pr
