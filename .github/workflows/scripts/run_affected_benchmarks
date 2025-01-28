@@ -1,0 +1,163 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2025 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Script to run affected benchmarks for a given list of changed paths.
+#
+# Usage: run_affected_benchmarks path1 [path2 path3 ...]
+#
+# Arguments:
+#
+#   path1        File name or directory path.
+#   path2        File name or directory path.
+#   path3        File name or directory path.
+#
+#
+# Environment variables:
+#
+#   LOG_FILE       Log file.
+#
+
+# shellcheck disable=SC2034,SC2153,SC2317
+
+# Ensure that the exit status of pipelines is non-zero in the event that at least one of the commands in a pipeline fails:
+set -o pipefail
+
+
+# VARIABLES #
+
+# Get the list of changed files:
+changed="$*"
+
+# Get the path to a log file as the third argument to the build script:
+log_file="${LOG_FILE}"
+
+# Define a heartbeat interval to periodically print messages in order to prevent CI from prematurely ending a build due to long-running commands:
+heartbeat_interval='30s'
+
+# Declare a variable for storing the heartbeat process id:
+heartbeat_pid=""
+
+
+# FUNCTIONS #
+
+# Error handler.
+#
+# $1 - error status
+on_error() {
+	echo 'ERROR: An error was encountered during execution.' >&2
+	cleanup
+	exit "$1"
+}
+
+# Runs clean-up tasks.
+cleanup() {
+	stop_heartbeat
+}
+
+# Starts a heartbeat.
+#
+# $1 - heartbeat interval
+start_heartbeat() {
+	echo 'Starting heartbeat...' >&2
+
+	# Create a heartbeat and send to background:
+	heartbeat "$1" &
+
+	# Capture the heartbeat pid:
+	heartbeat_pid=$!
+	echo "Heartbeat pid: ${heartbeat_pid}" >&2
+}
+
+# Runs an infinite print loop.
+#
+# $1 - heartbeat interval
+heartbeat() {
+	while true; do
+		echo "$(date) - heartbeat..." >&2
+		sleep "$1"
+	done
+}
+
+# Stops the heartbeat print loop.
+stop_heartbeat() {
+	echo 'Stopping heartbeat...' >&2
+	kill "${heartbeat_pid}"
+}
+
+# Prints a success message.
+print_success() {
+	echo 'Success!' >&2
+}
+
+# Main execution sequence.
+main() {
+	start_heartbeat "${heartbeat_interval}"
+
+	# Only keep files which reside in package directories:
+	changed=$(echo "${changed}" | tr ' ' '\n' | grep '^lib/node_modules/@stdlib') || true
+
+	# Find unique package directories:
+	directories=$(echo "${changed}" | tr ' ' '\n' | sed -E 's/\/(bin|data|etc|include|lib|src|test)\/?$//' | uniq)
+
+	if [ -z "${directories}" ]; then
+		echo 'No packages to run benchmarks for.' >&2
+		cleanup
+		print_success
+		exit 0
+	fi
+
+	# Extract package names from changed package directories (e.g., @stdlib/math/base/special/sin) by removing the leading 'lib/node_modules/':
+	packages=$(echo "${directories}" | sed -E 's/^lib\/node_modules\///')
+
+	# Build native add-ons for packages (if applicable):
+	for pkg in ${packages}; do
+		if [ -f "lib/node_modules/${pkg}/binding.gyp" ]; then
+			NODE_ADDONS_PATTERN="${pkg}" make install-node-addons
+		fi
+	done
+
+	# Find all benchmark files in package directories:
+	js_bench_files=$(find "${directories}" -maxdepth 3 -wholename '**/benchmark/benchmark*.js' | grep -v '/fixtures/' | sort -u | tr '\n' ' ') || true
+
+	# Run JS benchmarks:
+	if [ -n "${js_bench_files}" ]; then
+		make benchmark-javascript-files FILES="${js_bench_files}"
+	else
+		echo 'No JavaScript benchmarks to run.' >&2
+	fi
+
+	# Run C benchmarks:
+	echo "Finding C benchmark files in ${directories}..."
+	c_bench_files=$(find "${directories}" -maxdepth 4 -wholename '**/benchmark/c/benchmark*.c' -exec realpath {} \; | grep -v '/fixtures/' | sort -u | tr '\n' ' ') || true
+
+	if [ -n "${c_bench_files}" ]; then
+		make benchmark-c-files FILES="${c_bench_files}"
+	else
+		echo 'No C benchmarks to run.' >&2
+	fi
+
+	cleanup
+	print_success
+	exit 0
+}
+
+# Set an error handler to print captured output and perform any clean-up tasks:
+trap 'on_error' ERR
+
+# Run main:
+main

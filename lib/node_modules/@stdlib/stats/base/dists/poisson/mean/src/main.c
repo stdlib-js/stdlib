@@ -22,24 +22,12 @@
 /**
 * Returns the expected value of a Poisson distribution.
 *
-* @param {NonNegativeNumber} lambda - mean parameter
-* @returns {NonNegativeNumber} expected value
+* @param lambda    mean parameter
+* @return          expected value
 *
 * @example
-* var v = mean( 9.0 );
+* double v = mean( 9.0 );
 * // returns 9.0
-*
-* @example
-* var v = mean( 1.0 );
-* // returns 1.0
-*
-* @example
-* var v = mean( -0.2 );
-* // returns NaN
-*
-* @example
-* var v = mean( NaN );
-* // returns NaN
 */
 double stdlib_base_dists_poisson_mean( const double lambda ) {
 	if (

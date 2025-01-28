@@ -87,7 +87,7 @@ static double rand_double( void ) {
 * Computes the squared absolute value.
 *
 * @param x  input value
-* @return squared absolute value
+* @return   squared absolute value
 */
 double abs2( double x ) {
 	return x * x;

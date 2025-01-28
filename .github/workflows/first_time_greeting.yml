@@ -24,8 +24,8 @@ on: [pull_request_target, issues]
 
 # Global permissions:
 permissions:
-  # Allow read-only access to the repository contents:
-  contents: read
+  # Do not give the workflow any permissions:
+  contents: none
 
 # Workflow jobs:
 jobs:
@@ -47,7 +47,7 @@ jobs:
         # Pin action to full length commit SHA
         uses: actions/first-interaction@34f15e814fe48ac9312ccf29db4e74fa767cbab7 # v1.3.0
         with:
-          repo-token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
+          repo-token: ${{ secrets.STDLIB_BOT_FGPAT_PR_WRITE }}
           issue-message: |
             :wave: Hi there! :wave:
 
