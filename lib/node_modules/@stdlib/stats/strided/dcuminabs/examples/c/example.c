@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-#include "stdlib/stats/base/dcuminabs.h"
+#include "stdlib/stats/strided/dcuminabs.h"
 #include <stdio.h>
 
 int main( void ) {

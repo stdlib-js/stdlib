@@ -64,6 +64,9 @@ jobs:
 
           # Specify whether to download Git-LFS files:
           lfs: false
+
+          # Avoid storing GitHub token in local Git configuration:
+          persist-credentials: false
         timeout-minutes: 10
 
       # Make CLI scripts executable:
@@ -102,7 +105,7 @@ jobs:
           signoff: true
           body: |
             This PR changes the permissions of project `cli` scripts to be executable.
-          token: ${{ secrets.PULL_REQUEST_TOKEN }}
+          token: ${{ secrets.STDLIB_BOT_FGPAT_PR_WRITE }}
           labels: |
             automated-pr
           team-reviewers: |

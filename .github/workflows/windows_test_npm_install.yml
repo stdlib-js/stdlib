@@ -147,6 +147,9 @@ jobs:
 
           # Specify whether to download Git-LFS files:
           lfs: false
+
+          # Do not persist GitHub token in local Git configuration since no continued authentication is needed:
+          persist-credentials: false
         timeout-minutes: 10
 
       # Install MSYS2:

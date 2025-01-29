@@ -59,21 +59,33 @@ jobs:
 
       # Add initial reaction to comment with slash command:
       - name: 'Add initial reaction'
-        run: |
-          COMMENT="${{ github.event.comment.body }}"
-          if [[ $COMMENT =~ ^/stdlib\ (help|check-files|update-copyright-years|lint-autofix|merge|rebase) ]]; then
-            curl -X POST \
-              -H "Accept: application/vnd.github.v3+json" \
-              -H "Authorization: Bearer ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}" \
-              "https://api.github.com/repos/${{ github.repository }}/issues/comments/${{ github.event.comment.id }}/reactions" \
-              -d '{"content":"eyes"}'
-          else
-            curl -X POST \
-              -H "Accept: application/vnd.github.v3+json" \
-              -H "Authorization: Bearer ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}" \
-              "https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/comments" \
-              -d '{"body":"@${{ github.event.comment.user.login }}, slash command not recognized. Please use `/stdlib help` to view available commands."}'
-          fi
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        with:
+          github-token: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+          script: |
+            const commentBody = github.event.comment.body.trim();
+            const RE_COMMANDS = /^\/stdlib\s+(help|check-files|update-copyright-years|lint-autofix|merge|rebase)$/i;
+            const isRecognizedCommand = RE_COMMANDS.test( commentBody );
+
+            if ( isRecognizedCommand ) {
+              await github.rest.reactions.createForIssueComment({
+                'owner': context.repo.owner,
+                'repo': context.repo.repo,
+                'comment_id': github.event.comment.id,
+                'content': 'eyes'
+              });
+            } else {
+              // Include the full user comment as a Markdown quote block in response:
+              const lines = commentBody.split( '\n' );
+              const quote = lines.map( line => `> ${line}` ).join( '\n' );
+
+              await github.rest.issues.createComment({
+                'owner': context.repo.owner,
+                'repo': context.repo.repo,
+                'issue_number': github.event.issue.number,
+                'body': `${quote}\n\n@${github.event.comment.user.login}, slash command not recognized. Please use \`/stdlib help\` to view available commands.`
+              });
+            }
 
   # Define a job for checking for required files:
   check_files:

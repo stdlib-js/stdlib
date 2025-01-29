@@ -24,6 +24,45 @@
   ],
   "confs": [
     {
+      "task": "build",
+      "src": [
+        "./src/dsvariancepn.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/ext/base/dssum",
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-float",
+        "@stdlib/napi/argv-strided-float32array",
+        "@stdlib/napi/create-double"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/dsvariancepn.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/ext/base/dssum"
+      ]
+    },
+    {
+      "task": "examples",
       "src": [
         "./src/dsvariancepn.c"
       ],

@@ -70,6 +70,10 @@ jobs:
 
           # Specify whether to download Git-LFS files:
           lfs: false
+
+          # Avoid storing GitHub token in local Git configuration:
+          persist-credentials: false
+
         timeout-minutes: 10
 
       # Install Node.js:
@@ -131,7 +135,7 @@ jobs:
           fi
         timeout-minutes: 10
 
-     # Create a pull request with the changes:
+      # Create a pull request with the changes:
       - name: 'Create pull request'
         id: cpr
         if: steps.update-markdown-pkg-urls.outputs.changed == 'true'
@@ -147,7 +151,7 @@ jobs:
           commit-message: 'docs: update Markdown stdlib package URLs'
           committer: 'stdlib-bot <82920195+stdlib-bot@users.noreply.github.com>'
           signoff: true
-          token: ${{ secrets.PULL_REQUEST_TOKEN }}
+          token: ${{ secrets.STDLIB_BOT_FGPAT_PR_WRITE }}
           labels: |
             documentation
             automated-pr

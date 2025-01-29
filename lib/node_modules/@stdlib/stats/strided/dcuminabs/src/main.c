@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-#include "stdlib/stats/base/dcuminabs.h"
+#include "stdlib/stats/strided/dcuminabs.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/blas/base/shared.h"
 #include "stdlib/strided/base/stride2offset.h"
