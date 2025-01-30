@@ -166,7 +166,7 @@ jobs:
           commit-message: 'feat: update error databases'
           committer: 'stdlib-bot <82920195+stdlib-bot@users.noreply.github.com>'
           signoff: true
-          token: ${{ secrets.STDLIB_BOT_FGPAT_PR_WRITE }}
+          token: ${{ secrets.STDLIB_BOT_FGPAT_REPO_WRITE }}
           labels: |
             documentation
             automated-pr

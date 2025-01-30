@@ -105,7 +105,7 @@ jobs:
           signoff: true
           body: |
             This PR changes the permissions of project `cli` scripts to be executable.
-          token: ${{ secrets.STDLIB_BOT_FGPAT_PR_WRITE }}
+          token: ${{ secrets.STDLIB_BOT_FGPAT_REPO_WRITE }}
           labels: |
             automated-pr
           team-reviewers: |
