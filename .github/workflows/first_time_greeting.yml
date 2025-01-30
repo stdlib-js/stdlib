@@ -47,7 +47,7 @@ jobs:
         # Pin action to full length commit SHA
         uses: actions/first-interaction@34f15e814fe48ac9312ccf29db4e74fa767cbab7 # v1.3.0
         with:
-          repo-token: ${{ secrets.STDLIB_BOT_FGPAT_REPO_WRITE }}
+          repo-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           issue-message: |
             :wave: Hi there! :wave:
 

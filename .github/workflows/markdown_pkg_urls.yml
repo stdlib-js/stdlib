@@ -151,7 +151,7 @@ jobs:
           commit-message: 'docs: update Markdown stdlib package URLs'
           committer: 'stdlib-bot <82920195+stdlib-bot@users.noreply.github.com>'
           signoff: true
-          token: ${{ secrets.STDLIB_BOT_FGPAT_REPO_WRITE }}
+          token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           labels: |
             documentation
             automated-pr

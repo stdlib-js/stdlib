@@ -90,7 +90,7 @@ jobs:
         # Pin action to full length commit SHA
         uses: peter-evans/create-or-update-comment@71345be0265236311c031f5c7866368bd1eff043 # v4.0.0
         with:
-          token: ${{ secrets.STDLIB_BOT_FGPAT_REPO_WRITE }}
+          token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           issue-number: ${{ github.event.pull_request.number }}
           body: |
             ### PR Commit Message

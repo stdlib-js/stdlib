@@ -248,7 +248,7 @@ jobs:
         # Pin action to full length commit SHA
         uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
         with:
-          github-token: ${{ secrets.STDLIB_BOT_FGPAT_REPO_WRITE }}
+          github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           script: |
             const { data: comments } = await github.rest.issues.listComments({
               'issue_number': context.issue.number,
@@ -279,7 +279,7 @@ jobs:
         # Pin action to full length commit SHA
         uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
         with:
-          github-token: ${{ secrets.STDLIB_BOT_FGPAT_REPO_WRITE }}
+          github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           script: |
             github.rest.repos.createCommitComment({
               'commit_sha': context.sha,
@@ -358,7 +358,7 @@ jobs:
       # Commit and push changes:
       - name: 'Commit and push changes'
         env:
-          REPO_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_FGPAT_REPO_WRITE }}
+          REPO_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           USER_NAME: stdlib-bot
         run: |
           cd ./www-test-code-coverage
