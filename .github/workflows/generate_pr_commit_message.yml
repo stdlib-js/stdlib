@@ -53,14 +53,14 @@ jobs:
 
     # Define environment variables:
     env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       PR_NUMBER: ${{ github.event.pull_request.number }}
 
     # Define the sequence of job steps...
     steps:
       # Checkout repository:
       - name: 'Checkout repository'
-        uses: actions/checkout@v4
+        # Pin action to full length commit SHA
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
         with:
           # Fetch all commits to ensure we have the full commit history:
           fetch-depth: 0
@@ -87,9 +87,10 @@ jobs:
 
       # Post commit message as PR comment:
       - name: 'Post commit message as PR comment'
-        uses: peter-evans/create-or-update-comment@v4
+        # Pin action to full length commit SHA
+        uses: peter-evans/create-or-update-comment@71345be0265236311c031f5c7866368bd1eff043 # v4.0.0
         with:
-          token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
+          token: ${{ secrets.STDLIB_BOT_FGPAT_REPO_WRITE }}
           issue-number: ${{ github.event.pull_request.number }}
           body: |
             ### PR Commit Message
