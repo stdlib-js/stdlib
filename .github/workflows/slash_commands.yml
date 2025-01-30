@@ -48,7 +48,7 @@ jobs:
         # Pin action to full length commit SHA
         uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
         with:
-          github-token: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+          github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           script: |
             github.rest.issues.addLabels({
               'owner': context.repo.owner,
@@ -61,7 +61,7 @@ jobs:
       - name: 'Add initial reaction'
         uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
         with:
-          github-token: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+          github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           script: |
             const commentBody = github.event.comment.body.trim();
             const RE_COMMANDS = /^\/stdlib\s+(help|check-files|update-copyright-years|lint-autofix|merge|rebase)$/i;
@@ -105,7 +105,7 @@ jobs:
       pull_request_number: ${{ github.event.issue.number }}
       user: ${{ github.event.comment.user.login }}
     secrets:
-      STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+      STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
 
   # Define a job for updating copyright header years:
   update_copyright_years:
@@ -121,8 +121,7 @@ jobs:
     with:
       pull_request_number: ${{ github.event.issue.number }}
     secrets:
-      REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
-      STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+      STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
       STDLIB_BOT_GPG_PRIVATE_KEY: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
       STDLIB_BOT_GPG_PASSPHRASE: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
 
@@ -143,8 +142,7 @@ jobs:
     with:
       pull_request_number: ${{ github.event.issue.number }}
     secrets:
-      REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
-      STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+      STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
       STDLIB_BOT_GPG_PRIVATE_KEY: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
       STDLIB_BOT_GPG_PASSPHRASE: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
 
@@ -165,8 +163,7 @@ jobs:
     with:
       pull_request_number: ${{ github.event.issue.number }}
     secrets:
-      REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
-      STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+      STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
       STDLIB_BOT_GPG_PRIVATE_KEY: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
       STDLIB_BOT_GPG_PASSPHRASE: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
 
@@ -187,8 +184,7 @@ jobs:
     with:
       pull_request_number: ${{ github.event.issue.number }}
     secrets:
-      REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
-      STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+      STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
       STDLIB_BOT_GPG_PRIVATE_KEY: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
       STDLIB_BOT_GPG_PASSPHRASE: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
 
@@ -228,7 +224,7 @@ jobs:
             - `/stdlib rebase` - Rebase this PR on top of develop branch.
 
           # GitHub token:
-          token: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+          token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
 
   # Define a job for removing the in-progress label:
   remove_progress_label:
@@ -256,7 +252,7 @@ jobs:
         # Pin action to full length commit SHA
         uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
         with:
-          github-token: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+          github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           script: |
             try {
               await github.rest.issues.removeLabel({

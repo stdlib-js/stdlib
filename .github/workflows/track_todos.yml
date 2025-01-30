@@ -85,7 +85,7 @@ jobs:
           title: 'TODO comments'
           content-filepath: ./tracking_issue_todos.md
           issue-number: 803
-          token: ${{ secrets.PULL_REQUEST_TOKEN }}
+          token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           labels: |
             todos
             automated-issue
@@ -98,7 +98,7 @@ jobs:
           title: 'FIXME comments'
           content-filepath: ./tracking_issue_fixmes.md
           issue-number: 804
-          token: ${{ secrets.PULL_REQUEST_TOKEN }}
+          token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           labels: |
             fixmes
             automated-issue

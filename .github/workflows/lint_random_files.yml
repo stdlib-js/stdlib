@@ -397,7 +397,7 @@ jobs:
       - name: 'Create sub-issue for C lint failures'
         if: ( github.event.inputs.c != 'false' ) && failure() && contains(steps.*.outcome, 'failure') && contains(steps.lint-c.outcome, 'failure')
         env:
-          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
         run: |
           BODY_FILE="$GITHUB_WORKSPACE/lint_issue_body.md"
 
@@ -476,7 +476,7 @@ jobs:
           commit-message: 'style: resolve lint errors'
           committer: 'stdlib-bot <82920195+stdlib-bot@users.noreply.github.com>'
           signoff: true
-          token: ${{ secrets.PULL_REQUEST_TOKEN }}
+          token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           labels: |
             automated-pr
           team-reviewers: |
