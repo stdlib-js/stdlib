@@ -151,7 +151,7 @@ jobs:
         id: changed-directories
         continue-on-error: true
         env:
-          STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+          STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_FGPAT_REPO_READ }}
         run: |
           if [ -n "${{ github.event.pull_request.number }}" ]; then
             # Get the list of changed files in pull request:
@@ -184,6 +184,18 @@ jobs:
         run: |
           echo "directories=${{ github.event.inputs.directories }}" >> $GITHUB_OUTPUT
         timeout-minutes: 5
+
+      # Exit early if non-package directories are changed:
+      - name: 'Exit early if non-package directories are changed'
+        if: github.event_name != 'workflow_dispatch'
+        run: |
+          directories="${{ steps.changed-directories.outputs.directories }}"
+          for directory in $directories; do
+            if [[ "$directory" != "lib/node_modules/@stdlib"* ]]; then
+              echo "Error: changed directory '$directory' is not in 'lib/node_modules/@stdlib'."
+              exit 1
+            fi
+          done
 
       # Run JavaScript tests:
       - name: 'Run JavaScript tests'
@@ -236,7 +248,7 @@ jobs:
         # Pin action to full length commit SHA
         uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
         with:
-          github-token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
+          github-token: ${{ secrets.STDLIB_BOT_FGPAT_REPO_WRITE }}
           script: |
             const { data: comments } = await github.rest.issues.listComments({
               'issue_number': context.issue.number,
@@ -267,7 +279,7 @@ jobs:
         # Pin action to full length commit SHA
         uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
         with:
-          github-token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
+          github-token: ${{ secrets.STDLIB_BOT_FGPAT_REPO_WRITE }}
           script: |
             github.rest.repos.createCommitComment({
               'commit_sha': context.sha,
@@ -294,7 +306,7 @@ jobs:
           fetch-depth: 1
 
           # Token for accessing the repository:
-          token: ${{ secrets.REPO_GITHUB_TOKEN }}
+          token: ${{ secrets.STDLIB_BOT_FGPAT_REPO_READ }}
 
       # Checkout coverage repository branch:
       - name: 'Checkout coverage repository branch'
@@ -346,7 +358,7 @@ jobs:
       # Commit and push changes:
       - name: 'Commit and push changes'
         env:
-          REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+          REPO_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_FGPAT_REPO_WRITE }}
           USER_NAME: stdlib-bot
         run: |
           cd ./www-test-code-coverage
