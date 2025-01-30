@@ -308,6 +308,9 @@ jobs:
           # Token for accessing the repository:
           token: ${{ secrets.STDLIB_BOT_FGPAT_REPO_READ }}
 
+          # Avoid storing GitHub token in local Git configuration:
+          persist-credentials: false
+
       # Checkout coverage repository branch:
       - name: 'Checkout coverage repository branch'
         run: |
