@@ -36,9 +36,6 @@ on:
       STDLIB_BOT_GITHUB_TOKEN:
         description: 'GitHub token for stdlib-bot'
         required: true
-      REPO_GITHUB_TOKEN:
-        description: 'GitHub token for accessing the repository'
-        required: true
       STDLIB_BOT_GPG_PRIVATE_KEY:
         description: 'GPG private key for stdlib-bot'
         required: true
@@ -105,13 +102,13 @@ jobs:
           page=1
           files=""
           while true; do
-              new_files=$(curl -s -H "Accept: application/vnd.github.v3+json" -H "Authorization: Bearer ${{ secrets.STDLIB_BOT_GITHUB_TOKEN
-                 }}" "https://api.github.com/repos/stdlib-js/stdlib/pulls/${{ inputs.pull_request_number }}/files?page=$page&per_page=100" | jq -r '.[] | select(.status == "added") | .filename')
-              if [ -z "$new_files" ]; then
-                  break
-              fi
-              files="$files $new_files"
-              page=$((page+1))
+            new_files=$(curl -s -H "Accept: application/vnd.github.v3+json" -H "Authorization: Bearer ${{ secrets.STDLIB_BOT_GITHUB_TOKEN
+              }}" "https://api.github.com/repos/stdlib-js/stdlib/pulls/${{ inputs.pull_request_number }}/files?page=$page&per_page=100" | jq -r '.[] | select(.status == "added") | .filename')
+            if [ -z "$new_files" ]; then
+              break
+            fi
+            files="$files $new_files"
+            page=$((page+1))
           done
           files=$(echo "$files" | tr '\n' ' ' | sed 's/^ //;s/ $//')
           echo "files=${files}" >> $GITHUB_OUTPUT
@@ -141,7 +138,7 @@ jobs:
       # Commit and push changes:
       - name: 'Commit and push changes'
         env:
-            REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+            REPO_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
             USER_NAME: stdlib-bot
             BRANCH_NAME: ${{ steps.pr-details.outputs.branch }}
             REPO_NAME: ${{ steps.pr-details.outputs.repository }}

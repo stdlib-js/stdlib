@@ -88,7 +88,7 @@ static double rand_double( void ) {
 *
 * @param i   input value
 * @param j   input value
-* @return function result
+* @return    function result
 */
 double kronecker_delta( double i, double j ) {
 	if ( i == j ) {

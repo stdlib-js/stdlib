@@ -125,7 +125,7 @@ for ( i = 0; i < 10; i++ ) {
     mu = ( randu()*10.0 ) - 5.0;
     beta = randu() * 20.0;
     y = mean( mu, beta );
-    console.log( 'µ: %d, β: %d, h(X;µ,β): %d', mu.toFixed( 4 ), beta.toFixed( 4 ), y.toFixed( 4 ) );
+    console.log( 'µ: %d, β: %d, E(X;µ,β): %d', mu.toFixed( 4 ), beta.toFixed( 4 ), y.toFixed( 4 ) );
 }
 ```
 

@@ -65,7 +65,7 @@ static const double HUGE = 1 << 28; // 2**28
 * ```
 *
 * @param x    input value
-* @return	  output value
+* @return     output value
 *
 * @example
 * double out = stdlib_base_asinh( 0.0 );
