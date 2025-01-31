@@ -17,7 +17,6 @@
 */
 
 #include "stdlib/stats/base/dists/beta/mode.h"
-#include "stdlib/constants/float64/eps.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
@@ -101,8 +100,8 @@ static double benchmark( void ) {
 	int i;
 
 	for ( i = 0; i < 100; i++ ) {
-		alpha[ i ] = random_uniform( 0.0, 10.0 ) + 1.0 + STDLIB_CONSTANT_FLOAT64_EPS;
-		beta[ i ] = random_uniform( 0.0, 10.0 ) + 1.0 + STDLIB_CONSTANT_FLOAT64_EPS;
+		alpha[ i ] = random_uniform( 1.0, 11.0 );
+		beta[ i ] = random_uniform( 1.0, 11.0 );
 	}
 
 	t = tic();
