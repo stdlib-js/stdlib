@@ -82,7 +82,7 @@ LIBRARIES ?=
 LIBPATH ?=
 
 # List of C targets:
-c_targets := TODO.out
+c_targets := benchmark.out
 
 
 # RULES #
