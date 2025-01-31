@@ -1,0 +1,26 @@
+
+{{alias}}( x )
+    Serializes an ndarray as a JSON object.
+
+    This function does *not* serialize data outside of the buffer region defined
+    by the ndarray view.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray.
+
+    Returns
+    -------
+    out: Object
+        JSON object.
+
+    Examples
+    --------
+    > var arr = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] );
+    > var out = {{alias}}( arr )
+    {...}
+
+    See Also
+    --------
+

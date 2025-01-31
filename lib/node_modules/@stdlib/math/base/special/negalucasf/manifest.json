@@ -37,7 +37,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/napi/unary",
-        "@stdlib/math/base/special/labs"
+        "@stdlib/math/base/special/labs",
+        "@stdlib/constants/float32/max-safe-nth-lucas"
       ]
     },
     {
@@ -51,7 +52,8 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/special/labs"
+        "@stdlib/math/base/special/labs",
+        "@stdlib/constants/float32/max-safe-nth-lucas"
       ]
     },
     {
@@ -65,7 +67,8 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/special/labs"
+        "@stdlib/math/base/special/labs",
+        "@stdlib/constants/float32/max-safe-nth-lucas"
       ]
     }
   ]

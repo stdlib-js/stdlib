@@ -22,13 +22,13 @@
 #include <stdbool.h>
 
 int main( void ) {
-    double x;
-    bool v;
-    int i;
-    
-    for ( i = 0; i < 100; i++ ) {
-        x = ( ( (double)rand() / (double)RAND_MAX ) * 100.0 ) - 50.0;
-        v = stdlib_base_is_integer( x );
-        printf( "x = %lf, is_integer(x) = %s\n", x, ( v ) ? "true" : "false" );
-    }
+	double x;
+	bool v;
+	int i;
+
+	for ( i = 0; i < 100; i++ ) {
+		x = ( ( (double)rand() / (double)RAND_MAX ) * 100.0 ) - 50.0;
+		v = stdlib_base_is_integer( x );
+		printf( "x = %lf, is_integer(x) = %s\n", x, ( v ) ? "true" : "false" );
+	}
 }
