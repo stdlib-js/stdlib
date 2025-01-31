@@ -79,7 +79,7 @@ static const double S6 = 1.58969099521155010221e-10;  // 0x3DE5D93A, 0x5ACFD57C
 *
 * @param x    input value (in radians, assumed to be bounded by `~pi/4` in magnitude)
 * @param y    tail of `x`
-* @return	  sine
+* @return     sine
 *
 * @example
 * double out = stdlib_base_kernel_sin( 3.141592653589793/6.0, 0.0 );

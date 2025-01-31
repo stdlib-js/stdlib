@@ -821,8 +821,8 @@ interface Namespace {
 	* Returns an array containing pseudorandom numbers drawn from a Weibull distribution.
 	*
 	* @param len - array length
-	* @param k - scale parameter
-	* @param lambda - shape parameter
+	* @param k - shape parameter
+	* @param lambda - scale parameter
 	* @param options - function options
 	* @returns output array
 	*
