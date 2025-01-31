@@ -37,28 +37,18 @@ Scales values from `cx` by `ca`.
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 
 var cx = new Complex64Array( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
 var ca = new Complex64( 2.0, 0.0 );
 
 cscal( 3, ca, cx, 1 );
-
-var z = cx.get( 0 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 2.0
-
-var im = imagf( z );
-// returns 2.0
+// cx => <Complex64Array>[ 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 ]
 ```
 
 The function has the following parameters:
 
 -   **N**: number of indexed elements.
--   **ca**: scalar [`Complex64`][@stdlib/complex/float32/ctor] constant. 
+-   **ca**: scalar [`Complex64`][@stdlib/complex/float32/ctor] constant.
 -   **cx**: input [`Complex64Array`][@stdlib/array/complex64].
 -   **strideX**: index increment for `cx`.
 
@@ -67,22 +57,12 @@ The `N` and stride parameters determine how values from `cx` are scaled by `ca`.
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 
 var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 var ca = new Complex64( 2.0, 0.0 );
 
 cscal( 2, ca, cx, 2 );
-
-var z = cx.get( 2 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 10.0
-
-var im = imagf( z );
-// returns 12.0
+// cx => <Complex64Array>[ 2.0, 4.0, 3.0, 4.0, 10.0, 12.0, 7.0, 8.0 ]
 ```
 
 Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][mdn-typed-array] views.
@@ -92,8 +72,6 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 
 // Initial array:
 var cx0 = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
@@ -106,15 +84,7 @@ var cx1 = new Complex64Array( cx0.buffer, cx0.BYTES_PER_ELEMENT*1 ); // start at
 
 // Scales every other value from `cx1` by `ca`...
 cscal( 3, ca, cx1, 1 );
-
-var z = cx0.get( 1 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns -2.0
-
-var im = imagf( z );
-// returns 14.0
+// cx0 => <Complex64Array>[ 1.0, 2.0, -2.0, 14.0, -2.0, 22.0, -2.0, 30.0 ]
 ```
 
 #### cscal.ndarray( N, ca, cx, strideX, offsetX )
@@ -124,22 +94,12 @@ Scales values from `cx` by `ca` using alternative indexing semantics.
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 
 var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var ca = new Complex64( 2.0, 2.0 );
 
 cscal.ndarray( 3, ca, cx, 1, 0 );
-
-var z = cx.get( 0 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns -2.0
-
-var im = imagf( z );
-// returns 6.0
+// cx => <Complex64Array>[ -2.0, 6.0, -2.0, 14.0, -2.0, 22.0 ]
 ```
 
 The function has the following additional parameters:
@@ -151,22 +111,12 @@ While [`typed array`][mdn-typed-array] views mandate a view offset based on the 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 
 var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 var ca = new Complex64( 2.0, 2.0 );
 
 cscal.ndarray( 2, ca, cx, 2, 1 );
-
-var z = cx.get( 3 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns -2.0
-
-var im = imagf( z );
-// returns 30.0
+// cx => <Complex64Array>[ 1.0, 2.0, -2.0, 14.0, 5.0, 6.0, -2.0, 30.0 ]
 ```
 
 </section>

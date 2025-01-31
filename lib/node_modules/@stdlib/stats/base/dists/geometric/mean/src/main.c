@@ -27,7 +27,7 @@
 *
 * @example
 * double y = stdlib_base_dists_geometric_mean( 0.1 );
-* // returns 10.0
+* // returns 9.0
 */
 double stdlib_base_dists_geometric_mean( const double p ) {
 	if (

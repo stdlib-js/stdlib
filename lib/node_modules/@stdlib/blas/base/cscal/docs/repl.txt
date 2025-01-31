@@ -36,33 +36,23 @@
     // Standard usage:
     > var cx = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
     > var ca = new {{alias:@stdlib/complex/float32/ctor}}( 1.0, 2.0 );
-    > {{alias}}( 2, ca, cx, 1 );
-    > var z = cx.get( 0 );
-    > var re = {{alias:@stdlib/complex/float32/real}}( z )
-    -3.0
-    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
-    4.0
+    > {{alias}}( 2, ca, cx, 1 )
+    <Complex64Array>[ -3.0, 4.0, -5.0, 10.0 ]
 
     // Advanced indexing:
     > cx = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
     > ca = new {{alias:@stdlib/complex/float32/ctor}}( 1.0, 1.0 );
-    > {{alias}}( 2, ca, cx, 2 );
-    > z = cx.get( 0 );
-    > re = {{alias:@stdlib/complex/float32/real}}( z )
-    -1.0
-    > im = {{alias:@stdlib/complex/float32/imag}}( z )
-    3.0
+    > {{alias}}( 2, ca, cx, 2 )
+    <Complex64Array>[ -1.0, 3.0, 3.0, 4.0, -1.0, 11.0 ]
 
     // Using typed array views:
     > var cx0 = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
     > var cx1 = new {{alias:@stdlib/array/complex64}}( cx0.buffer, cx0.BYTES_PER_ELEMENT*1 );
     > var ca = new {{alias:@stdlib/complex/float32/ctor}}( 2.0, 2.0 );
-    > {{alias}}( 2, ca, cx1, 1 );
-    > z = cx0.get( 1 );
-    > re = {{alias:@stdlib/complex/float32/real}}( z )
-    -2.0
-    > im = {{alias:@stdlib/complex/float32/imag}}( z )
-    14.0
+    > {{alias}}( 2, ca, cx1, 1 )
+    <Complex64Array>[ -2.0, 14.0, -2.0, 22.0 ]
+    > cx0
+    <Complex64Array>[ 1.0, 2.0, -2.0, 14.0, -2.0, 22.0 ]
 
 
 {{alias}}.ndarray( N, ca, cx, strideX, offsetX )
@@ -101,22 +91,14 @@
     // Standard usage:
     > var cx = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
     > var ca = new {{alias:@stdlib/complex/float32/ctor}}( 2.0, 2.0 );
-    > {{alias}}.ndarray( 2, ca, cx, 1, 0 );
-    > var z = cx.get( 0 );
-    > var re = {{alias:@stdlib/complex/float32/real}}( z )
-    -2.0
-    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
-    6.0
+    > {{alias}}.ndarray( 2, ca, cx, 1, 0 )
+    <Complex64Array>[ -2.0, 6.0, -2.0, 14.0 ]
 
     // Advanced indexing:
     > cx = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
     > ca = new {{alias:@stdlib/complex/float32/ctor}}( 1.0, 2.0 );
-    > {{alias}}.ndarray( 2, ca, cx, 1, 2 );
-    > z = cx.get( 2 );
-    > re = {{alias:@stdlib/complex/float32/real}}( z )
-    -7.0
-    > im = {{alias:@stdlib/complex/float32/imag}}( z )
-    16.0
+    > {{alias}}.ndarray( 2, ca, cx, 1, 2 )
+    <Complex64Array>[ 1.0, 2.0, 3.0, 4.0, -7.0, 16.0, -9.0, 22.0 ]
 
     See Also
     --------

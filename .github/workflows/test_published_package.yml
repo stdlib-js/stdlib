@@ -28,6 +28,11 @@ on:
   # Allow workflow to be manually run:
   workflow_dispatch:
 
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
 # Workflow jobs:
 jobs:
   test-published:
@@ -46,6 +51,9 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4.1.0
+        with:
+          # Do not persist GitHub token in local Git configuration since no continued authentication is needed:
+          persist-credentials: false
 
       # Install Node.js:
       - name: 'Install Node.js'

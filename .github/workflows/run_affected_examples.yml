@@ -69,6 +69,9 @@ jobs:
 
           # Specify whether to download Git-LFS files:
           lfs: false
+
+          # Avoid storing GitHub token in local Git configuration:
+          persist-credentials: false
         timeout-minutes: 10
 
       # Install Node.js:
