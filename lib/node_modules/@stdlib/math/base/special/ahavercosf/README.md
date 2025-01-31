@@ -179,7 +179,7 @@ float stdlib_base_ahavercosf( const float x );
 
 int main( void ) {
     const float x[] = { -2.0f, -1.6f, -1.2f, -0.8f, -0.4f, 0.4f, 0.8f, 1.2f, 1.6f, 2.0f };
-    
+
     float v;
     int i;
     for ( i = 0; i < 10; i++ ) {

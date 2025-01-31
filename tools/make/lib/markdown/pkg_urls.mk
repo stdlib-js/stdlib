@@ -19,7 +19,7 @@
 # VARIABLES #
 
 # Define the path to the remark configuration file:
-REMARK_PKG_URLS_CONF ?= $(CONFIG_DIR)/remark/.remarkrc.js
+REMARK_PKG_URLS_CONF ?= $(CONFIG_DIR)/remark/.remarkrc.empty.js
 
 # Define the path to the remark ignore file:
 # REMARK_PKG_URLS_IGNORE ?= $(CONFIG_DIR)/remark/.remarkignore FIXME

@@ -18,14 +18,12 @@
 
 // TypeScript Version: 4.1
 
-/* eslint-disable max-lines */
+/* eslint-disable max-lines, @typescript-eslint/no-empty-interface */
 
 /**
 * Interface describing the `base` namespace.
 */
-interface Namespace {
-
-}
+interface Namespace {}
 
 /**
 * Standard base utilities for working with data formatted as delimiter-separated values (DSV).

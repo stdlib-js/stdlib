@@ -27,7 +27,7 @@ interface Routine {
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns sum
 	*
 	* @example
@@ -45,8 +45,8 @@ interface Routine {
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param stride - stride length
-	* @param offset - starting index
+	* @param strideX - stride length
+	* @param offsetX - starting index
 	* @returns sum
 	*
 	* @example
@@ -65,7 +65,7 @@ interface Routine {
 *
 * @param N - number of indexed elements
 * @param x - input array
-* @param stride - stride length
+* @param strideX - stride length
 * @returns sum
 *
 * @example

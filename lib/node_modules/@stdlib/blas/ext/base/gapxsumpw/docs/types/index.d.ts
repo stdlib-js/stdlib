@@ -27,12 +27,12 @@ import { NumericArray } from '@stdlib/types/array';
 */
 interface Routine {
 	/**
-	* Adds a constant to each strided array element and computes the sum using pairwise summation.
+	* Adds a scalar constant to each strided array element and computes the sum using pairwise summation.
 	*
 	* @param N - number of indexed elements
-	* @param alpha - constant
+	* @param alpha - scalar constant
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns sum
 	*
 	* @example
@@ -41,16 +41,16 @@ interface Routine {
 	* var v = gapxsumpw( x.length, 5.0, x, 1 );
 	* // returns 16.0
 	*/
-	( N: number, alpha: number, x: NumericArray, stride: number ): number;
+	( N: number, alpha: number, x: NumericArray, strideX: number ): number;
 
 	/**
-	* Adds a constant to each strided array element and computes the sum using pairwise summation and alternative indexing semantics.
+	* Adds a scalar constant to each strided array element and computes the sum using pairwise summation and alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
-	* @param alpha - constant
+	* @param alpha - scalar constant
 	* @param x - input array
-	* @param stride - stride length
-	* @param offset - starting index
+	* @param strideX - stride length
+	* @param offsetX - starting index
 	* @returns sum
 	*
 	* @example
@@ -59,16 +59,16 @@ interface Routine {
 	* var v = gapxsumpw.ndarray( x.length, 5.0, x, 1, 0 );
 	* // returns 16.0
 	*/
-	ndarray( N: number, alpha: number, x: NumericArray, stride: number, offset: number ): number;
+	ndarray( N: number, alpha: number, x: NumericArray, strideX: number, offsetX: number ): number;
 }
 
 /**
-* Adds a constant to each strided array element and computes the sum using pairwise summation.
+* Adds a scalar constant to each strided array element and computes the sum using pairwise summation.
 *
 * @param N - number of indexed elements
-* @param alpha - constant
+* @param alpha - scalar constant
 * @param x - input array
-* @param stride - stride length
+* @param strideX - stride length
 * @returns sum
 *
 * @example

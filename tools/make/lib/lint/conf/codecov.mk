@@ -33,6 +33,7 @@ CODECOV_CONF ?= $(ROOT_DIR)/.codecov.yml
 # make lint-conf-codecov
 #/
 lint-conf-codecov:
+	$(QUIET) echo "Linting file: $(CODECOV_CONF)"
 	$(QUIET) curl -X POST --data-binary @$(CODECOV_CONF) https://codecov.io/validate
 
 .PHONY: lint-conf-codecov
