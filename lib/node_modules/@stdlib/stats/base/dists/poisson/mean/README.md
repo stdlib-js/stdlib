@@ -124,6 +124,94 @@ for ( i = 0; i < 10; i++ ) {
 
 <!-- /.references -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/poisson/mean.h"
+```
+
+#### stdlib_base_dists_poisson_mean( λ )
+
+Returns the [expected value][expected-value] of a [Poisson][poisson-distribution] distribution with mean parameter `λ`.
+
+```c
+double out = stdlib_base_dists_poisson_mean( 0.5 );
+// returns 0.5
+```
+
+The function accepts the following arguments:
+
+-   **λ**: `[in] double` mean parameter.
+
+```c
+double stdlib_base_dists_poisson_mean( const double lambda );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` 
+element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/poisson/mean.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+int main( void ) {
+    double lambda;
+    double v;
+    int i;
+
+    for ( i = 0; i < 10; i++ ) {
+        lambda = 20.0 * (double)rand() / ( (double)RAND_MAX + 1.0 );
+        v = stdlib_base_dists_poisson_mean( lambda );
+        printf( "λ: %lf , E(X;λ): %lf\n", lambda , v );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">

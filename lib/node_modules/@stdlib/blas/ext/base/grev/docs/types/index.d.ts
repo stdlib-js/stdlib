@@ -31,7 +31,7 @@ interface Routine {
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns `x`
 	*
 	* @example
@@ -40,15 +40,15 @@ interface Routine {
 	* grev( x.length, x, 1 );
 	* // x => [ -3.0, -1.0, 0.0, 4.0, -5.0, 3.0, 1.0, -2.0 ]
 	*/
-	<T = unknown>( N: number, x: Collection<T>, stride: number ): Collection<T>;
+	<T = unknown>( N: number, x: Collection<T>, strideX: number ): Collection<T>;
 
 	/**
 	* Reverses a strided array in-place. using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param stride - stride length
-	* @param offset - starting index
+	* @param strideX - stride length
+	* @param offsetX - starting index
 	* @returns `x`
 	*
 	* @example
@@ -57,7 +57,7 @@ interface Routine {
 	* grev.ndarray( x.length, x, 1, 0 );
 	* // x => [ -3.0, -1.0, 0.0, 4.0, -5.0, 3.0, 1.0, -2.0 ]
 	*/
-	ndarray<T = unknown>( N: number, x: Collection<T>, stride: number, offset: number ): Collection<T>;
+	ndarray<T = unknown>( N: number, x: Collection<T>, strideX: number, offsetX: number ): Collection<T>;
 }
 
 /**
@@ -65,7 +65,7 @@ interface Routine {
 *
 * @param N - number of indexed elements
 * @param x - input array
-* @param stride - stride length
+* @param strideX - stride length
 * @returns `x`
 *
 * @example
