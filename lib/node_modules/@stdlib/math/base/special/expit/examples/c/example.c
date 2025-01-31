@@ -21,13 +21,13 @@
 #include <stdio.h>
 
 int main( void ) {
-    double x;
-    double v;
-    int i;
-    
-    for ( i = 0; i < 100; i++ ) {
-        x = (double)rand() / (double)RAND_MAX;
-        v = stdlib_base_expit( x );
-        printf( "expit(%lf) = %lf\n", x, v );
-    }
+	double x;
+	double v;
+	int i;
+
+	for ( i = 0; i < 100; i++ ) {
+		x = (double)rand() / (double)RAND_MAX;
+		v = stdlib_base_expit( x );
+		printf( "expit(%lf) = %lf\n", x, v );
+	}
 }

@@ -102,7 +102,7 @@ static double benchmark( void ) {
 		x = ( 100.0 * rand_double() ) - 50.00;
 		y = floor( 100.0 * rand_double() ) - 50.00;
 		z = stdlib_base_fast_pow( x, y );
-		if ( z != z) {
+		if ( z != z ) {
 			printf( "should not return NaN\n" );
 			break;
 		}

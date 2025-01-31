@@ -87,7 +87,7 @@ static float rand_float( void ) {
 * Computes the ramp function.
 *
 * @param x   input value
-* @return function result
+* @return    function result
 */
 float rampf( float x ) {
 	if ( x >= 0.0f ) {

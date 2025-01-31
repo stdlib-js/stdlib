@@ -43,7 +43,7 @@ jobs:
       # Delete the 'pr-<number>' branch from the 'stdlib-js/www-test-code-coverage' repository:
       - name: 'Delete coverage branch for PR'
         env:
-          REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+          REPO_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
         run: |
           curl -X DELETE -H "Authorization: token $REPO_GITHUB_TOKEN" \
@@ -55,7 +55,7 @@ jobs:
         # Pin action to full length commit SHA
         uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
         with:
-          github-token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
+          github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           script: |
             const prNumber = context.payload.pull_request.number;
             const { data: comments } = await github.rest.issues.listComments({
