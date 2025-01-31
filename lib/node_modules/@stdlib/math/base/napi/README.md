@@ -45,10 +45,10 @@ The namespace contains the following packages:
 
 <div class="namespace-toc">
 
--   <span class="signature">[`binary( env, info, fcn )`][@stdlib/math/base/napi/binary]</span><span class="delimiter">: </span><span class="description">C APIs for registering a Node-API module exporting interfaces for invoking binary numerical functions.</span>
+-   <span class="signature">[`binary( fcn )`][@stdlib/math/base/napi/binary]</span><span class="delimiter">: </span><span class="description">C APIs for registering a Node-API module exporting interfaces for invoking binary numerical functions.</span>
 -   <span class="signature">[`quaternary( env, info, fcn )`][@stdlib/math/base/napi/quaternary]</span><span class="delimiter">: </span><span class="description">C APIs for registering a Node-API module exporting interfaces for invoking quaternary numerical functions.</span>
 -   <span class="signature">[`quinary( env, info, fcn )`][@stdlib/math/base/napi/quinary]</span><span class="delimiter">: </span><span class="description">C APIs for registering a Node-API module exporting interfaces for invoking quinary numerical functions.</span>
--   <span class="signature">[`ternary( env, info, fcn )`][@stdlib/math/base/napi/ternary]</span><span class="delimiter">: </span><span class="description">C APIs for registering a Node-API module exporting interfaces for invoking ternary numerical functions.</span>
+-   <span class="signature">[`ternary( fcn )`][@stdlib/math/base/napi/ternary]</span><span class="delimiter">: </span><span class="description">C APIs for registering a Node-API module exporting interfaces for invoking ternary numerical functions.</span>
 -   <span class="signature">[`unary( env, info, fcn )`][@stdlib/math/base/napi/unary]</span><span class="delimiter">: </span><span class="description">C APIs for registering a Node-API module exporting interfaces for invoking unary numerical functions.</span>
 
 </div>
