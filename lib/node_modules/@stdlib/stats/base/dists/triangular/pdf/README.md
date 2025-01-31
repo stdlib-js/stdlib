@@ -55,7 +55,7 @@ var pdf = require( '@stdlib/stats/base/dists/triangular/pdf' );
 
 #### pdf( x, a, b, c )
 
-Evaluates the [probability density function][pdf] (PDF) for a [triangular][triangular-distribution] distribution with parameters `a` (lower limit), `b` (upper limit) and `c` (mode).
+Evaluates the [probability density function][pdf] (PDF) for a [triangular][triangular-distribution] distribution with parameters `a` (lower limit), `b` (upper limit), and `c` (mode).
 
 ```javascript
 var y = pdf( 0.5, -1.0, 1.0, 0.0 );
@@ -180,7 +180,7 @@ for ( i = 0; i < 25; i++ ) {
 
 #### stdlib_base_dists_triangular_pdf( x, a, b, c )
 
-Evaluates the [probability density function][pdf] (PDF) of a [triangular][triangular-distribution] distribution with parameters `a` (lower limit), `b` (upper limit) and `c` (mode).
+Evaluates the [probability density function][pdf] (PDF) of a [triangular][triangular-distribution] distribution with parameters `a` (lower limit), `b` (upper limit), and `c` (mode).
 
 ```c
 double y = stdlib_base_dists_triangular_pdf( 0.5, -1.0, 1.0, 0.0 );
@@ -221,7 +221,6 @@ double stdlib_base_dists_triangular_pdf( const double x, const double a, const d
 #include "stdlib/constants/float64/eps.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include <math.h>
 
 static double random_uniform( const double min, const double max ) {
     double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
@@ -240,7 +239,7 @@ int main( void ) {
         x = random_uniform( 0.0, 30.0 );
         a = random_uniform( 0.0, 10.0 );
         b = random_uniform( a+STDLIB_CONSTANT_FLOAT64_EPS, 40.0 );
-        c = a + random_uniform( 0.0, b - a );
+        c = random_uniform( a, b );
         y = stdlib_base_dists_triangular_pdf( x, a, b, c );
         printf( "x: %lf, a: %lf, b: %lf, c: %lf, f(x;a,b,c): %lf\n", x, a, b, c, y );
     }

@@ -37,7 +37,7 @@ double stdlib_base_dists_weibull_mean( const double k, const double lambda ) {
 		stdlib_base_is_nan( lambda ) ||
 		k <= 0.0 ||
 		lambda <= 0.0
-	 ) {
+	) {
 		return 0.0 / 0.0; // NaN
 	}
 	return lambda * stdlib_base_gamma( 1.0 + (1.0/k) );
