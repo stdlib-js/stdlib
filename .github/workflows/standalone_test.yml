@@ -85,7 +85,7 @@ jobs:
       # Trigger standalone package tests:
       - name: 'Trigger tests'
         env:
-          GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
         run: |
           node lib/node_modules/@stdlib/_tools/scripts/trigger_workflow_events.js
 

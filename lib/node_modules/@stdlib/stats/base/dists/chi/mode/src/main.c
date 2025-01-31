@@ -19,6 +19,7 @@
 #include "stdlib/stats/base/dists/chi/mode.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/sqrt.h"
+
 /**
 * Returns the mode of a chi distribution.
 *
@@ -31,7 +32,7 @@
 */
 double stdlib_base_dists_chi_mode( const double k ) {
 	if ( stdlib_base_is_nan( k ) || k < 1.0 ) {
-		return 0.0/0.0; //NaN
+		return 0.0/0.0; // NaN
 	}
 	return stdlib_base_sqrt( k - 1.0 );
 }

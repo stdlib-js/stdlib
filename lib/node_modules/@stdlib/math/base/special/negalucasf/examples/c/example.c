@@ -21,11 +21,11 @@
 #include <stdint.h>
 
 int main( void ) {
-    int32_t i;
-    float v;
+	int32_t i;
+	float v;
 
-    for ( i = 0; i > -35; i-- ) {
-        v = stdlib_base_negalucasf( i );
-        printf( "negalucasf(%d) = %f\n", i, v );
-    }
+	for ( i = 0; i > -35; i-- ) {
+		v = stdlib_base_negalucasf( i );
+		printf( "negalucasf(%d) = %f\n", i, v );
+	}
 }

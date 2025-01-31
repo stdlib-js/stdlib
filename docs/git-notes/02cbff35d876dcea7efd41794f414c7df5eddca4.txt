@@ -1,0 +1,14 @@
+---
+type: amend-message
+---
+refactor!: update `blas/ext/base/dapx` to follow current project conventions
+
+BREAKING CHANGE:
+
+- `c_dapx()` renamed to `stdlib_strided_dapx()`
+- `c_dapx_ndarray()` renamed to `stdlib_strided_dapx_ndarray()`
+
+All downstream usage of the old `c_dapx*` symbols must be updated to use the new symbols.
+
+PR-URL: https://github.com/stdlib-js/stdlib/pull/4737
+Reviewed-by: Philipp Burckhardt <pburckhardt@outlook.com>
