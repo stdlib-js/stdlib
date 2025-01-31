@@ -36,9 +36,6 @@ on:
       STDLIB_BOT_GITHUB_TOKEN:
         description: 'GitHub token for stdlib-bot'
         required: true
-      REPO_GITHUB_TOKEN:
-        description: 'GitHub token for accessing the repository'
-        required: true
       STDLIB_BOT_GPG_PRIVATE_KEY:
         description: 'GPG private key for stdlib-bot'
         required: true
@@ -93,7 +90,7 @@ jobs:
           repository: ${{ steps.pr-details.outputs.repository }}
 
           # Token for accessing the repository:
-          token: ${{ secrets.REPO_GITHUB_TOKEN }}
+          token: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
 
           # File path to checkout to:
           path: './'
@@ -174,7 +171,7 @@ jobs:
       # Commit and push changes:
       - name: 'Commit and push changes'
         env:
-            REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+            REPO_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
             USER_NAME: stdlib-bot
             BRANCH_NAME: ${{ steps.pr-details.outputs.branch }}
             REPO_NAME: ${{ steps.pr-details.outputs.repository }}

@@ -31,7 +31,7 @@
 * // returns ~34.765
 */
 double stdlib_base_dists_rayleigh_variance( const double sigma ) {
-	if ( stdlib_base_is_nan( sigma ) || sigma < 0 ) {
+	if ( stdlib_base_is_nan( sigma ) || sigma < 0.0 ) {
 		return 0.0 / 0.0; // NaN
 	}
 	return ( 4.0 - STDLIB_CONSTANT_FLOAT64_PI ) * sigma * sigma / 2.0;

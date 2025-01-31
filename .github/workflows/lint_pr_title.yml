@@ -84,8 +84,10 @@ jobs:
 
       # Perform linting:
       - name: 'Perform linting'
+        env:
+          PR_TITLE: ${{ github.event.pull_request.title }}
         run: |
           echo "Pull request titles should follow stdlib's Git commit message conventions."
           echo "Linting pull request title..."
-          make lint-commit-message GIT_COMMIT_MESSAGE='${{ github.event.pull_request.title }}'
+          make lint-commit-message GIT_COMMIT_MESSAGE="${PR_TITLE}"
         timeout-minutes: 5
