@@ -24,6 +24,41 @@
   ],
   "confs": [
     {
+      "task": "build",
+      "src": [
+        "./src/dsnanmeanpn.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-float32array",
+        "@stdlib/napi/create-double"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/dsnanmeanpn.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": []
+    },
+    {
+      "task": "examples",
       "src": [
         "./src/dsnanmeanpn.c"
       ],

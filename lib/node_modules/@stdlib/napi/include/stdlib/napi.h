@@ -21,6 +21,7 @@
 
 // Note: keep in alphabetical order...
 #include "stdlib/napi/argv.h"
+#include "stdlib/napi/argv_bool.h"
 #include "stdlib/napi/argv_complex64.h"
 #include "stdlib/napi/argv_complex64array.h"
 #include "stdlib/napi/argv_complex128.h"

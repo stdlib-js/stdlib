@@ -1,5 +1,7 @@
 {
-  "options": {},
+  "options": {
+    "task": "build"
+  },
   "fields": [
     {
       "field": "src",
@@ -24,6 +26,44 @@
   ],
   "confs": [
     {
+      "task": "build",
+      "src": [
+        "./src/smeanpw.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/ext/base/ssumpw",
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-float32array",
+        "@stdlib/napi/create-double"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/smeanpw.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/ext/base/ssumpw"
+      ]
+    },
+    {
+      "task": "examples",
       "src": [
         "./src/smeanpw.c"
       ],

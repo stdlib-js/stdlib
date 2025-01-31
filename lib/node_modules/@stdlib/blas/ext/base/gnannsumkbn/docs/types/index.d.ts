@@ -31,9 +31,9 @@ interface Routine {
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param strideX - `x` stride length
+	* @param strideX - stride length for `x`
 	* @param out - output array whose first element is the sum and whose second element is the number of non-NaN elements
-	* @param strideOut - `out` stride length
+	* @param strideOut - stride length for `out`
 	* @returns output array
 	*
 	* @example
@@ -50,11 +50,11 @@ interface Routine {
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param strideX - `x` stride length
-	* @param offsetX - `x` starting index
+	* @param strideX - stride length for `x`
+	* @param offsetX - starting index for `x`
 	* @param out - output array whose first element is the sum and whose second element is the number of non-NaN elements
-	* @param strideOut - `out` stride length
-	* @param offsetOut - `out` starting index
+	* @param strideOut - stride length for `out`
+	* @param offsetOut - starting index for `out`
 	* @returns output array
 	*
 	* @example
@@ -72,9 +72,9 @@ interface Routine {
 *
 * @param N - number of indexed elements
 * @param x - input array
-* @param strideX - `x` stride length
+* @param strideX - stride length for `x`
 * @param out - output array whose first element is the sum and whose second element is the number of non-NaN elements
-* @param strideOut - `out` stride length
+* @param strideOut - stride length for `out`
 * @returns output array
 *
 * @example
