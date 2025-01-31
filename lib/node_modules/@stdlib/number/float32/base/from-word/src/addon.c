@@ -39,7 +39,7 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 	assert( status == napi_ok );
 
 	// Check whether we were provided the correct number of arguments:
-	if ( argc < 1) {
+	if ( argc < 1 ) {
 		status = napi_throw_error( env, NULL, "invalid invocation. Insufficient arguments." );
 		assert( status == napi_ok );
 		return NULL;

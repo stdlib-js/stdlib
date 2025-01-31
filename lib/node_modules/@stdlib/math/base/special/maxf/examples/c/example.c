@@ -21,15 +21,15 @@
 #include <stdio.h>
 
 int main( void ) {
-    float x;
-    float y;
-    float v;
-    int i;
+	float x;
+	float y;
+	float v;
+	int i;
 
-    for ( i = 0; i < 100; i++ ) {
-        x = ( ( (float)rand() / (float)RAND_MAX ) * 200.0f ) - 100.0f;
-        y = ( ( (float)rand() / (float)RAND_MAX ) * 200.0f ) - 100.0f;
-        v = stdlib_base_maxf( x, y );
-        printf( "x: %f, y: %f, maxf(x, y): %f\n", x, y, v );
-    }
+	for ( i = 0; i < 100; i++ ) {
+		x = ( ( (float)rand() / (float)RAND_MAX ) * 200.0f ) - 100.0f;
+		y = ( ( (float)rand() / (float)RAND_MAX ) * 200.0f ) - 100.0f;
+		v = stdlib_base_maxf( x, y );
+		printf( "x: %f, y: %f, maxf(x, y): %f\n", x, y, v );
+	}
 }

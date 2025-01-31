@@ -1,0 +1,142 @@
+
+{{alias}}( alpha, x, y )
+    Performs a multiply-add operation involving three double-precision complex
+    floating-point numbers.
+
+    Parameters
+    ----------
+    alpha: Complex128
+        Complex number.
+
+    x: Complex128
+        Complex number.
+
+    y: Complex128
+        Complex number.
+
+    Returns
+    -------
+    out: Complex128
+        Result.
+
+    Examples
+    --------
+    > var z1 = new {{alias:@stdlib/complex/float64/ctor}}( 5.0, 3.0 )
+    <Complex128>
+    > var z2 = new {{alias:@stdlib/complex/float64/ctor}}( -2.0, 1.0 )
+    <Complex128>
+    > var z3 = new {{alias:@stdlib/complex/float64/ctor}}( 7.0, -8.0 )
+    <Complex128>
+    > var out = {{alias}}( z1, z2, z3 )
+    <Complex128>
+    > var re = {{alias:@stdlib/complex/float64/real}}( out )
+    -6.0
+    > var im = {{alias:@stdlib/complex/float64/imag}}( out )
+    -9.0
+
+
+{{alias}}.assign( ar, ai, xr, xi, yr, yi, out, strideOut, offsetOut )
+    Performs a multiply-add operation involving three double-precision complex
+    floating-point numbers and assigns the results to an output strided array.
+
+    Parameters
+    ----------
+    ar: number
+        Real component of the first complex number.
+
+    ai: number
+        Imaginary component of the first complex number.
+
+    xr: number
+        Real component of the second complex number.
+
+    xi: number
+        Imaginary component of the second complex number.
+
+    yr: number
+        Real component of the third complex number.
+
+    yi: number
+        Imaginary component of the third complex number.
+
+    out: ArrayLikeObject
+        Output array.
+
+    strideOut: integer
+        Stride length.
+
+    offsetOut: integer
+        Starting index.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    > var out = new {{alias:@stdlib/array/float64}}( 2 );
+    > {{alias}}.assign( 5.0, 3.0, -2.0, 1.0, 7.0, -8.0, out, 1, 0 )
+    <Float64Array>[ -6.0, -9.0 ]
+
+
+{{alias}}.strided( a, sa, oa, x, sx, ox, y, sy, oy, out, so, oo )
+    Performs a multiply-add operation involving three double-precision complex
+    floating-point numbers stored in real-valued strided array views and assigns
+    results to a provided strided output array.
+
+    Parameters
+    ----------
+    a: ArrayLikeObject
+        First complex number view.
+
+    sa: integer
+        Stride length for `a`.
+
+    oa: integer
+        Starting index for `a`.
+
+    x: ArrayLikeObject
+        Second complex number view.
+
+    sx: integer
+        Stride length for `x`.
+
+    ox: integer
+        Starting index for `x`.
+
+    y: ArrayLikeObject
+        Third complex number view.
+
+    sy: integer
+        Stride length for `y`.
+
+    oy: integer
+        Starting index for `y`.
+
+    out: ArrayLikeObject
+        Output array.
+
+    so: integer
+        Stride length for `out`.
+
+    oo: integer
+        Starting index for `out`.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    > var z1 = new {{alias:@stdlib/array/float64}}( [ 5.0, 3.0 ] );
+    > var z2 = new {{alias:@stdlib/array/float64}}( [ -2.0, 1.0 ] );
+    > var z3 = new {{alias:@stdlib/array/float64}}( [ 7.0, -8.0 ] );
+    > var out = new {{alias:@stdlib/array/float64}}( 2 );
+    > {{alias}}.strided( z1, 1, 0, z2, 1, 0, z3, 1, 0, out, 1, 0 )
+    <Float64Array>[ -6.0, -9.0 ]
+
+    See Also
+    --------
+
