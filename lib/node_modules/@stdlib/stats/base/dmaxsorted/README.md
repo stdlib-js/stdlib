@@ -36,7 +36,7 @@ limitations under the License.
 var dmaxsorted = require( '@stdlib/stats/base/dmaxsorted' );
 ```
 
-#### dmaxsorted( N, x, stride )
+#### dmaxsorted( N, x, strideX )
 
 Computes the maximum value of a sorted double-precision floating-point strided array `x`.
 
@@ -44,15 +44,13 @@ Computes the maximum value of a sorted double-precision floating-point strided a
 var Float64Array = require( '@stdlib/array/float64' );
 
 var x = new Float64Array( [ 1.0, 2.0, 3.0 ] );
-var N = x.length;
 
-var v = dmaxsorted( N, x, 1 );
+var v = dmaxsorted( x.length, x, 1 );
 // returns 3.0
 
 x = new Float64Array( [ 3.0, 2.0, 1.0 ] );
-N = x.length;
 
-v = dmaxsorted( N, x, 1 );
+v = dmaxsorted( x.length, x, 1 );
 // returns 3.0
 ```
 
@@ -60,18 +58,16 @@ The function has the following parameters:
 
 -   **N**: number of indexed elements.
 -   **x**: sorted input [`Float64Array`][@stdlib/array/float64].
--   **stride**: index increment for `x`.
+-   **strideX**: stride length for `x`.
 
-The `N` and `stride` parameters determine which elements in `x` are accessed at runtime. For example, to compute the maximum value of every other element in `x`,
+The `N` and stride parameters determine which elements in the strided arrays are accessed at runtime. For example, to compute the maximum value of every other element in `x`,
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 var x = new Float64Array( [ 1.0, 2.0, 2.0, -7.0, 3.0, 3.0, 4.0, 2.0 ] );
-var N = floor( x.length / 2 );
 
-var v = dmaxsorted( N, x, 2 );
+var v = dmaxsorted( 4, x, 2 );
 // returns 4.0
 ```
 
@@ -81,18 +77,15 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 var x0 = new Float64Array( [ 2.0, 1.0, 2.0, 2.0, -2.0, 2.0, 3.0, 4.0 ] );
 var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 
-var N = floor( x0.length / 2 );
-
-var v = dmaxsorted( N, x1, 2 );
+var v = dmaxsorted( 4, x1, 2 );
 // returns 4.0
 ```
 
-#### dmaxsorted.ndarray( N, x, stride, offset )
+#### dmaxsorted.ndarray( N, x, strideX, offsetX )
 
 Computes the maximum value of a sorted double-precision floating-point strided array using alternative indexing semantics.
 
@@ -100,26 +93,23 @@ Computes the maximum value of a sorted double-precision floating-point strided a
 var Float64Array = require( '@stdlib/array/float64' );
 
 var x = new Float64Array( [ 1.0, 2.0, 3.0 ] );
-var N = x.length;
 
-var v = dmaxsorted.ndarray( N, x, 1, 0 );
+var v = dmaxsorted.ndarray( x.length, x, 1, 0 );
 // returns 3.0
 ```
 
 The function has the following additional parameters:
 
--   **offset**: starting index for `x`.
+-   **offsetX**: starting index for `x`.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the `offset` parameter supports indexing semantics based on a starting index. For example, to calculate the maximum value for every other value in `x` starting from the second value
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameter supports indexing semantics based on a starting index. For example, to calculate the maximum value for every other element in `x` starting from the second element
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 var x = new Float64Array( [ 2.0, 1.0, 2.0, 2.0, -2.0, 2.0, 3.0, 4.0 ] );
-var N = floor( x.length / 2 );
 
-var v = dmaxsorted.ndarray( N, x, 2, 1 );
+var v = dmaxsorted.ndarray( 4, x, 2, 1 );
 // returns 4.0
 ```
 
@@ -145,16 +135,13 @@ var v = dmaxsorted.ndarray( N, x, 2, 1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Float64Array = require( '@stdlib/array/float64' );
+var linspace = require( '@stdlib/array/linspace' );
 var dmaxsorted = require( '@stdlib/stats/base/dmaxsorted' );
 
-var x;
-var i;
-
-x = new Float64Array( 10 );
-for ( i = 0; i < x.length; i++ ) {
-    x[ i ] = i - 5.0;
-}
+var options = {
+    'dtype': 'float64'
+};
+var x = linspace( -5.0, 5.0, 10, options );
 console.log( x );
 
 var v = dmaxsorted( x.length, x, 1 );
@@ -164,6 +151,123 @@ console.log( v );
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dmaxsorted.h"
+```
+
+#### stdlib_strided_dmaxsorted( N, \*X, strideX )
+
+Computes the maximum value of a sorted double-precision floating-point strided array.
+
+```c
+const double x[] = { 1.0, 2.0, 3.0 };
+
+double v = stdlib_strided_dmaxsorted( 3, x, 1 );
+// returns 3.0
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[in] double*` input array.
+-   **strideX**: `[in] CBLAS_INT` stride length for `X`.
+
+```c
+double stdlib_strided_dmaxsorted( const CBLAS_INT N, const double *X, const CBLAS_INT strideX );
+```
+
+#### stdlib_strided_dmaxsorted_ndarray( N, \*X, strideX, offsetX )
+
+Computes the maximum value of a sorted double-precision floating-point strided array using alternative indexing semantics.
+
+```c
+const double x[] = { 1.0, 2.0, 3.0 };
+
+double v = stdlib_strided_dmaxsorted_ndarray( 3, x, 1, 0 );
+// returns 3.0
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[in] double*` input array.
+-   **strideX**: `[in] CBLAS_INT` stride length for `X`.
+-   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
+
+```c
+double stdlib_strided_dmaxsorted_ndarray( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dmaxsorted.h"
+#include <stdio.h>
+
+int main( void ) {
+    // Create a strided array:
+    const double x[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
+
+    // Specify the number of elements:
+    const int N = 4;
+
+    // Specify the stride length:
+    const int strideX = 2;
+
+    // Compute the maximum value:
+    double v = stdlib_strided_dmaxsorted( N, x, strideX );
+
+    // Print the result:
+    printf( "max: %lf\n", v );
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 

@@ -41,7 +41,7 @@ double API_SUFFIX(c_dznrm2)( const CBLAS_INT N, const void *ZX, const CBLAS_INT 
 * @param strideX   ZX stride length
 * @param offsetX   starting index for ZX
 */
-double API_SUFFIX(c_dznrm2_ndarray)( const CBLAS_INT N, const void *ZX, const CBLAS_INT strideX , const CBLAS_INT offsetX ) {
+double API_SUFFIX(c_dznrm2_ndarray)( const CBLAS_INT N, const void *ZX, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
 	stdlib_complex128_t *zx = (stdlib_complex128_t *)ZX;
 	zx += stdlib_strided_min_view_buffer_index( N, strideX, offsetX );
 	return API_SUFFIX(cblas_dznrm2)( N, (void *)zx, strideX );
