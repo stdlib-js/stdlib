@@ -19,7 +19,7 @@
 #ifndef STDLIB_BLAS_EXT_BASE_SREV_H
 #define STDLIB_BLAS_EXT_BASE_SREV_H
 
-#include <stdint.h>
+#include "stdlib/blas/base/shared.h"
 
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
@@ -31,7 +31,12 @@ extern "C" {
 /**
 * Reverses a single-precision floating-point strided array in-place.
 */
-void c_srev( const int64_t N, float *X, const int64_t stride );
+void API_SUFFIX(stdlib_strided_srev)( const CBLAS_INT N, float *X, const CBLAS_INT strideX );
+
+/**
+* Reverses a single-precision floating-point strided array in-place using alternative indexing semantics.
+*/
+void API_SUFFIX(stdlib_strided_srev_ndarray)( const CBLAS_INT N, float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
 
 #ifdef __cplusplus
 }

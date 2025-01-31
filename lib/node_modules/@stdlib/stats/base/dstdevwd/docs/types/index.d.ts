@@ -28,7 +28,7 @@ interface Routine {
 	* @param N - number of indexed elements
 	* @param correction - degrees of freedom adjustment
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns standard deviation
 	*
 	* @example
@@ -39,7 +39,7 @@ interface Routine {
 	* var v = dstdevwd( x.length, 1, x, 1 );
 	* // returns ~2.0817
 	*/
-	( N: number, correction: number, x: Float64Array, stride: number ): number;
+	( N: number, correction: number, x: Float64Array, strideX: number ): number;
 
 	/**
 	* Computes the standard deviation of a double-precision floating-point strided array using Welford's algorithm and alternative indexing semantics.
@@ -47,8 +47,8 @@ interface Routine {
 	* @param N - number of indexed elements
 	* @param correction - degrees of freedom adjustment
 	* @param x - input array
-	* @param stride - stride length
-	* @param offset - starting index
+	* @param strideX - stride length
+	* @param offsetX - starting index
 	* @returns standard deviation
 	*
 	* @example
@@ -59,7 +59,7 @@ interface Routine {
 	* var v = dstdevwd.ndarray( x.length, 1, x, 1, 0 );
 	* // returns ~2.0817
 	*/
-	ndarray( N: number, correction: number, x: Float64Array, stride: number, offset: number ): number;
+	ndarray( N: number, correction: number, x: Float64Array, strideX: number, offsetX: number ): number;
 }
 
 /**
@@ -68,7 +68,7 @@ interface Routine {
 * @param N - number of indexed elements
 * @param correction - degrees of freedom adjustment
 * @param x - input array
-* @param stride - stride length
+* @param strideX - stride length
 * @returns standard deviation
 *
 * @example

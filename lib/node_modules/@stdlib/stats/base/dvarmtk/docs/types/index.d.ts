@@ -29,7 +29,7 @@ interface Routine {
 	* @param mean - mean
 	* @param correction - degrees of freedom adjustment
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns variance
 	*
 	* @example
@@ -40,7 +40,7 @@ interface Routine {
 	* var v = dvarmtk( x.length, 1.0/3.0, 1, x, 1 );
 	* // returns ~4.3333
 	*/
-	( N: number, mean: number, correction: number, x: Float64Array, stride: number ): number;
+	( N: number, mean: number, correction: number, x: Float64Array, strideX: number ): number;
 
 	/**
 	* Computes the variance of a double-precision floating-point strided array provided a known mean and using a one-pass textbook algorithm and alternative indexing semantics.
@@ -49,8 +49,8 @@ interface Routine {
 	* @param mean - mean
 	* @param correction - degrees of freedom adjustment
 	* @param x - input array
-	* @param stride - stride length
-	* @param offset - starting index
+	* @param strideX - stride length
+	* @param offsetX - starting index
 	* @returns variance
 	*
 	* @example
@@ -61,7 +61,7 @@ interface Routine {
 	* var v = dvarmtk.ndarray( x.length, 1.0/3.0, 1, x, 1, 0 );
 	* // returns ~4.3333
 	*/
-	ndarray( N: number, mean: number, correction: number, x: Float64Array, stride: number, offset: number ): number;
+	ndarray( N: number, mean: number, correction: number, x: Float64Array, strideX: number, offsetX: number ): number;
 }
 
 /**
@@ -71,7 +71,7 @@ interface Routine {
 * @param mean - mean
 * @param correction - degrees of freedom adjustment
 * @param x - input array
-* @param stride - stride length
+* @param strideX - stride length
 * @returns variance
 *
 * @example
