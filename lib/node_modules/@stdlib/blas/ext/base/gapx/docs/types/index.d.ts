@@ -27,12 +27,12 @@ import { NumericArray } from '@stdlib/types/array';
 */
 interface Routine {
 	/**
-	* Adds a constant to each element in a strided array.
+	* Adds a scalar constant to each element in a strided array.
 	*
 	* @param N - number of indexed elements
-	* @param alpha - constant
+	* @param alpha - scalar constant
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns `x`
 	*
 	* @example
@@ -41,16 +41,16 @@ interface Routine {
 	* gapx( x.length, 5.0, x, 1 );
 	* // x => [ 3.0, 6.0, 8.0, 0.0, 9.0, 5.0, 4.0, 2.0 ]
 	*/
-	( N: number, alpha: number, x: NumericArray, stride: number ): NumericArray;
+	( N: number, alpha: number, x: NumericArray, strideX: number ): NumericArray;
 
 	/**
-	* Adds a constant to each element in a strided array using alternative indexing semantics.
+	* Adds a scalar constant to each element in a strided array using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
-	* @param alpha - constant
+	* @param alpha - scalar constant
 	* @param x - input array
-	* @param stride - stride length
-	* @param offset - starting index
+	* @param strideX - stride length
+	* @param offsetX - starting index
 	* @returns `x`
 	*
 	* @example
@@ -59,16 +59,16 @@ interface Routine {
 	* gapx.ndarray( x.length, 5.0, x, 1, 0 );
 	* // x => [ 3.0, 6.0, 8.0, 0.0, 9.0, 5.0, 4.0, 2.0 ]
 	*/
-	ndarray( N: number, alpha: number, x: NumericArray, stride: number, offset: number ): NumericArray;
+	ndarray( N: number, alpha: number, x: NumericArray, strideX: number, offsetX: number ): NumericArray;
 }
 
 /**
-* Adds a constant to each element in a strided array.
+* Adds a scalar constant to each element in a strided array.
 *
 * @param N - number of indexed elements
-* @param alpha - constant
+* @param alpha - scalar constant
 * @param x - input array
-* @param stride - stride length
+* @param strideX - stride length
 * @returns `x`
 *
 * @example

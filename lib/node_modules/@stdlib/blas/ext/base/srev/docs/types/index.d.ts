@@ -27,7 +27,7 @@ interface Routine {
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns input array
 	*
 	* @example
@@ -38,15 +38,15 @@ interface Routine {
 	* srev( x.length, x, 1 );
 	* // x => <Float32Array>[ -3.0, -1.0, 0.0, 4.0, -5.0, 3.0, 1.0, -2.0 ]
 	*/
-	( N: number, x: Float32Array, stride: number ): Float32Array;
+	( N: number, x: Float32Array, strideX: number ): Float32Array;
 
 	/**
 	* Reverses a single-precision floating-point strided array in-place. using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param stride - stride length
-	* @param offset - starting index
+	* @param strideX - stride length
+	* @param offsetX - starting index
 	* @returns input array
 	*
 	* @example
@@ -57,7 +57,7 @@ interface Routine {
 	* srev.ndarray( x.length, x, 1, 0 );
 	* // x => <Float32Array>[ -3.0, -1.0, 0.0, 4.0, -5.0, 3.0, 1.0, -2.0 ]
 	*/
-	ndarray( N: number, x: Float32Array, stride: number, offset: number ): Float32Array;
+	ndarray( N: number, x: Float32Array, strideX: number, offsetX: number ): Float32Array;
 }
 
 /**
@@ -65,7 +65,7 @@ interface Routine {
 *
 * @param N - number of indexed elements
 * @param x - input array
-* @param stride - stride length
+* @param strideX - stride length
 * @returns input array
 *
 * @example
