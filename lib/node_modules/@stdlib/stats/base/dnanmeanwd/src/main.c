@@ -19,7 +19,6 @@
 #include "stdlib/stats/base/dnanmeanwd.h"
 #include "stdlib/blas/base/shared.h"
 #include "stdlib/strided/base/stride2offset.h"
-#include <stdint.h>
 
 /**
 * Computes the arithmetic mean of a double-precision floating-point strided array, using Welford's algorithm and ignoring `NaN` values.

@@ -20,11 +20,11 @@
 #include "stdlib/math/base/assert/is_nan.h"
 
 /**
-* Returns the kurtosis of a gamma distribution.
+* Returns the excess kurtosis of a gamma distribution.
 *
 * @param alpha    shape parameter
 * @param beta     rate parameter
-* @return         kurtosis
+* @return         excess kurtosis
 *
 * @example
 * double y = stdlib_base_gamma_kurtosis( 1.0, 1.0 );
