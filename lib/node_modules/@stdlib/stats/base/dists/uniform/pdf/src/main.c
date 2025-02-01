@@ -22,34 +22,14 @@
 /**
 * Evaluates the probability density function (PDF) for a uniform distribution with minimum support `a` and maximum support `b` at a value `x`.
 *
-* @param {number} x - input value
-* @param {number} a - minimum support
-* @param {number} b - maximum support
-* @returns {number} evaluated PDF
+* @param x    input value
+* @param a    minimum support
+* @param b    maximum support
+* @return     evaluated PDF
 *
 * @example
-* var y = pdf( 2.0, 0.0, 4.0 );
+* double y = pdf( 2.0, 0.0, 4.0 );
 * // returns 0.25
-*
-* @example
-* var y = pdf( 5.0, 0.0, 4.0 );
-* // returns 0.0
-*
-* @example
-* var y = pdf( 0.25, 0.0, 1.0 );
-* // returns 1.0
-*
-* @example
-* var y = pdf( NaN, 0.0, 1.0 );
-* // returns NaN
-*
-* @example
-* var y = pdf( 0.0, NaN, 1.0 );
-* // returns NaN
-*
-* @example
-* var y = pdf( 2.0, 3.0, 1.0 );
-* // returns NaN
 */
 double stdlib_base_dists_uniform_pdf( const double x, const double a, const double b ) {
 	if (

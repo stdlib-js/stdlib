@@ -169,8 +169,8 @@ var str = chart.render();
 
 An accessor `function` which defines whether a datum is defined. This accessor is used to define how missing values are encoded. When invoked, the function is provided two arguments:
 
--   **d**: datum
--   **i**: datum index
+-   **d**: datum.
+-   **i**: datum index.
 
 ```javascript
 function isDefined( d ) {
