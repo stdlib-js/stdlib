@@ -37,14 +37,14 @@
     ~0.3333
 
     // Using `N` and stride parameters:
-    > x = new {{alias:@stdlib/array/float64}}( [ -2.0, 1.0, 1.0, -5.0, 2.0, -1.0, NaN ] );
-    > {{alias}}( 3, x, 2 )
+    > x = new {{alias:@stdlib/array/float64}}( [ -2.0, 1.0, 1.0, -5.0, 2.0, -1.0, NaN, NaN ] );
+    > {{alias}}( 4, x, 2 )
     ~0.3333
 
     // Using view offsets:
-    > var x0 = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 3.0, 2.0, 5.0, -1.0, NaN ] );
+    > var x0 = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 3.0, 2.0, 5.0, -1.0, NaN, NaN ] );
     > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
-    > {{alias}}( 3, x1, 2 )
+    > {{alias}}( 4, x1, 2 )
     ~-0.3333
 
 
@@ -84,8 +84,8 @@
     ~0.3333
 
     // Using offset parameter:
-    > var x = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 3.0, 2.0, 5.0, -1.0, NaN ] );
-    > {{alias}}.ndarray( 3, x, 2, 1 )
+    > var x = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 3.0, 2.0, 5.0, -1.0, NaN, NaN ] );
+    > {{alias}}.ndarray( 4, x, 2, 1 )
     ~-0.3333
 
     See Also
