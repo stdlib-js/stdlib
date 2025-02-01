@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/stats/base/dcuminabs",
+  "name": "@stdlib/stats/strided/dcuminabs",
   "version": "0.0.0",
   "description": "Calculate the cumulative minimum absolute value of double-precision floating-point strided array elements.",
   "license": "Apache-2.0",

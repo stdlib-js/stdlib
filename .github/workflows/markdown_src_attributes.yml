@@ -23,7 +23,7 @@ name: markdown_src_attributes
 on:
   schedule:
     # Run the workflow once a month on the 1st day of every month:
-    - cron:  "0 0 1 * *"
+    - cron: '0 0 1 * *'
 
   # Allow the workflow to be manually run:
   workflow_dispatch:
@@ -73,6 +73,9 @@ jobs:
 
           # Specify whether to download Git-LFS files:
           lfs: false
+
+          # Avoid storing GitHub token in local Git configuration:
+          persist-credentials: false
         timeout-minutes: 10
 
       # Initialize log files:

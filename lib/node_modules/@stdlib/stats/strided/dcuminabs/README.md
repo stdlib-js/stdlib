@@ -35,7 +35,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var dcuminabs = require( '@stdlib/stats/base/dcuminabs' );
+var dcuminabs = require( '@stdlib/stats/strided/dcuminabs' );
 ```
 
 #### dcuminabs( N, x, strideX, y, strideY )
@@ -145,7 +145,7 @@ dcuminabs.ndarray( 4, x, 2, 1, y, -1, y.length-1 );
 ```javascript
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var Float64Array = require( '@stdlib/array/float64' );
-var dcuminabs = require( '@stdlib/stats/base/dcuminabs' );
+var dcuminabs = require( '@stdlib/stats/strided/dcuminabs' );
 
 var x = discreteUniform( 10, -50, 50, {
     'dtype': 'float64'
@@ -186,7 +186,7 @@ console.log( y );
 ### Usage
 
 ```c
-#include "stdlib/stats/base/dcuminabs.h"
+#include "stdlib/stats/strided/dcuminabs.h"
 ```
 
 #### stdlib_strided_dcuminabs( N, \*X, strideX, \*Y, strideY )
@@ -256,7 +256,7 @@ void stdlib_strided_dcuminabs_ndarray( const CBLAS_INT N, const double *X, const
 ### Examples
 
 ```c
-#include "stdlib/stats/base/dcuminabs.h"
+#include "stdlib/stats/strided/dcuminabs.h"
 #include <stdio.h>
 
 int main( void ) {

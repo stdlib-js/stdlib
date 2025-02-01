@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-#include "stdlib/stats/base/dcuminabs.h"
+#include "stdlib/stats/strided/dcuminabs.h"
 #include "stdlib/napi/export.h"
 #include "stdlib/napi/argv.h"
 #include "stdlib/blas/base/shared.h"
