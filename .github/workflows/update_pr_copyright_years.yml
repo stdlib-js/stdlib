@@ -90,7 +90,7 @@ jobs:
           repository: ${{ steps.pr-details.outputs.repository }}
 
           # Token for accessing the repository:
-          token: ${{ secrets.REPO_GITHUB_TOKEN }}
+          token: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
 
           # File path to checkout to:
           path: './'

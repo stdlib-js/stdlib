@@ -104,6 +104,6 @@ jobs:
       # Update standalone packages:
       - name: 'Update standalone packages'
         env:
-          GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
         run: |
           node lib/node_modules/@stdlib/_tools/scripts/publish_packages.js --keep-alive

@@ -52,7 +52,7 @@ jobs:
       - name: 'Close pull request'
         run: gh pr close "$NUMBER" --comment "$BODY"
         env:
-          GH_TOKEN: ${{ secrets.STDLIB_BOT_FGPAT_PR_WRITE }}
+          GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.pull_request.number }}
           BODY: |
@@ -88,7 +88,7 @@ jobs:
       - name: 'Close pull request'
         run: gh pr close "$NUMBER" --comment "$BODY"
         env:
-          GH_TOKEN: ${{ secrets.STDLIB_BOT_FGPAT_PR_WRITE }}
+          GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.pull_request.number }}
           BODY: |
@@ -124,7 +124,7 @@ jobs:
       - name: 'Close pull request'
         run: gh pr close "$NUMBER" --comment "$BODY"
         env:
-          GH_TOKEN: ${{ secrets.STDLIB_BOT_FGPAT_PR_WRITE }}
+          GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.pull_request.number }}
           BODY: |
@@ -164,7 +164,7 @@ jobs:
       - name: 'Close pull request'
         run: gh pr close "$NUMBER" --comment "$BODY"
         env:
-          GH_TOKEN: ${{ secrets.STDLIB_BOT_FGPAT_PR_WRITE }}
+          GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.pull_request.number }}
           BODY: |
@@ -176,7 +176,7 @@ jobs:
       - name: 'Lock conversation'
         run: gh pr lock "$NUMBER" --reason spam
         env:
-          GH_TOKEN: ${{ secrets.STDLIB_BOT_FGPAT_PR_WRITE }}
+          GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.pull_request.number }}
 
@@ -204,7 +204,7 @@ jobs:
       - name: 'Close pull request'
         run: gh pr close "$NUMBER" --comment "$BODY"
         env:
-          GH_TOKEN: ${{ secrets.STDLIB_BOT_FGPAT_PR_WRITE }}
+          GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.pull_request.number }}
           BODY: |

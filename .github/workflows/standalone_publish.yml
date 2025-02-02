@@ -119,7 +119,7 @@ jobs:
       # Publish standalone packages:
       - name: 'Publish packages'
         env:
-          GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           # Save NPM_TOKEN to user's .npmrc:
