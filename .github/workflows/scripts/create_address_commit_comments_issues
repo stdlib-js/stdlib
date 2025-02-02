@@ -1,0 +1,403 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2025 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Script to create issues for commit comments tagging @stdlib-bot.
+#
+# Usage: create_issues_address_commit_comments <days>
+#
+# Arguments:
+#
+#   days        Number of days to look back for commits.
+#
+# Environment variables:
+#
+#   GITHUB_TOKEN   GitHub token for authentication.
+#
+
+# shellcheck disable=SC2153
+
+# Ensure that the exit status of pipelines is non-zero in the event that at least one
+# of the commands in a pipeline fails:
+set -o pipefail
+
+
+# VARIABLES #
+
+# Assign command line arguments to variables:
+if [ "$#" -lt 1 ]; then
+	echo "Usage: $0 <days>" >&2
+	exit 1
+fi
+days="$1"
+
+# Get the GitHub authentication token:
+github_token="${GITHUB_TOKEN}"
+if [ -z "$github_token" ]; then
+	echo -e "ERROR: GITHUB_TOKEN environment variable is not set."
+	exit 1
+fi
+
+# Repository information:
+owner="stdlib-js"
+repo="stdlib"
+
+# GitHub API base URL:
+GITHUB_API_URL="https://api.github.com"
+
+# Number of items to display per page for paginated results:
+PER_PAGE=100
+
+# Hard-coded list of core contributors:
+core_contributors=("kgryte" "Planeshifter" "gunjjoshi" "headlessNode")
+
+# Define a heartbeat interval to periodically print messages in order to prevent CI from prematurely ending a build due to long running commands:
+heartbeat_interval='30s'
+
+# Declare a variable for storing the heartbeat process id:
+heartbeat_pid=""
+
+
+# FUNCTIONS #
+
+# Error handler.
+#
+# $1 - error status code
+on_error() {
+	echo "ERROR: An error was encountered during execution." >&2
+	cleanup
+	exit "$1"
+}
+
+# Runs clean-up tasks.
+cleanup() {
+	stop_heartbeat
+}
+
+# Starts a heartbeat.
+#
+# $1 - heartbeat interval
+start_heartbeat() {
+	echo 'Starting heartbeat...' >&2
+
+	# Create a heartbeat and send to background:
+	heartbeat "$1" &
+
+	# Capture the heartbeat pid:
+	heartbeat_pid=$!
+	echo "Heartbeat pid: ${heartbeat_pid}" >&2
+}
+
+# Runs an infinite print loop.
+#
+# $1 - heartbeat interval
+heartbeat() {
+	while true; do
+		echo "$(date) - heartbeat..." >&2
+		sleep "$1"
+	done
+}
+
+# Stops the heartbeat print loop.
+stop_heartbeat() {
+	echo 'Stopping heartbeat...' >&2
+	kill "${heartbeat_pid}"
+}
+
+# Prints a success message.
+print_success() {
+	echo 'Success!' >&2
+}
+
+# Computes the ISO8601-formatted date X days ago.
+compute_since_date() {
+	if date --version >/dev/null 2>&1; then
+		# GNU date:
+		date -u -d "$days days ago" +"%Y-%m-%dT%H:%M:%SZ"
+	else
+		# macOS date:
+		date -u -v-"${days}"d +"%Y-%m-%dT%H:%M:%SZ"
+	fi
+}
+
+# Makes a GitHub API GET request.
+#
+# $1 - API endpoint
+github_api() {
+	local endpoint="$1"
+	local headers=( "-H" "User-Agent: GitHub-API-Script" \
+		"-H" "Authorization: token ${github_token}" \
+		"-H" "Accept: application/vnd.github+json")
+
+	curl -s "${headers[@]}" "$GITHUB_API_URL$endpoint"
+}
+
+# Makes a GitHub API POST request.
+#
+# $1 - API endpoint
+# $2 - JSON data payload
+github_api_post() {
+	local endpoint="$1"
+	local data="$2"
+	local headers=( "-H" "User-Agent: GitHub-API-Script" \
+		"-H" "Authorization: token ${github_token}" \
+		"-H" "Accept: application/vnd.github+json" \
+		"-H" "Content-Type: application/json" )
+
+	curl -s -X POST "${headers[@]}" -d "$data" "$GITHUB_API_URL$endpoint"
+}
+
+# Creates a GitHub issue using the provided title and body.
+# The issue is tagged with the "Good First Issue" label.
+#
+# $1 - Issue title
+# $2 - Issue body
+create_issue() {
+	local title="$1"
+	local body="$2"
+	local payload
+
+	# Build the JSON payload including the labels field:
+	payload=$(jq -n --arg title "$title" --arg body "$body" \
+		'{title: $title, body: $body, labels: ["Good First Issue"]}')
+
+	local endpoint="/repos/${owner}/${repo}/issues"
+	local response
+	response=$(github_api_post "$endpoint" "$payload")
+
+	if ! echo "$response" | jq . >/dev/null 2>&1; then
+		echo "ERROR: Received invalid JSON from GitHub API (issue creation endpoint)." >&2
+		on_error 1
+	fi
+	echo "Created issue: $(echo "$response" | jq -r '.html_url')"
+}
+
+# Checks whether an issue already exists for the given commit.
+#
+# $1 - Full commit SHA
+issue_exists_for_commit() {
+	local commit_sha="$1"
+	local short_sha=${commit_sha:0:7}
+
+	# Build a search query that looks for the commit short SHA in the issue title:
+	local raw_query="repo:${owner}/${repo} in:title \"commit ${short_sha}\""
+
+	# URL-encode the query using jq:
+	local query
+	query=$(echo "$raw_query" | jq -sRr @uri)
+
+	local endpoint="/search/issues?q=${query}"
+	local response
+	response=$(github_api "$endpoint")
+
+	if ! echo "$response" | jq . >/dev/null 2>&1; then
+		echo "ERROR: Received invalid JSON from GitHub API (search issues endpoint)." >&2
+		on_error 1
+	fi
+
+	local total_count
+	total_count=$(echo "$response" | jq -r '.total_count')
+
+	if [ "$total_count" -gt 0 ]; then
+		# An issue already exists:
+		return 0
+	else
+		return 1
+	fi
+}
+
+# Checks whether the given username is in the list of core contributors.
+#
+# $1 - Username
+is_core_contributor() {
+	local user="$1"
+	for contributor in "${core_contributors[@]}"; do
+		if [ "$contributor" = "$user" ]; then
+			return 0
+		fi
+	done
+	return 1
+}
+
+# Updates two indexed arrays (commit_keys and commit_counts) to simulate a map.
+#
+# $1 - Commit SHA (the key)
+update_commit_map() {
+	local key="$1"
+	local found=0
+	local i=0
+
+	for existing in "${commit_keys[@]}"; do
+		if [ "$existing" = "$key" ]; then
+			commit_counts[i]=$(( commit_counts[i] + 1 ))
+			found=1
+			break
+		fi
+		i=$(( i + 1 ))
+	done
+
+	if [ "$found" -eq 0 ]; then
+		commit_keys+=("$key")
+		commit_counts+=("1")
+	fi
+}
+
+# Main execution sequence.
+main() {
+	start_heartbeat "${heartbeat_interval}"
+
+	local since_date
+	since_date=$(compute_since_date)
+
+	local page=1
+	local commit_shas=()
+
+	echo "Fetching commits for ${owner}/${repo} since ${since_date}..." >&2
+
+	while true; do
+		local endpoint="/repos/${owner}/${repo}/commits?since=${since_date}&per_page=${PER_PAGE}&page=${page}"
+		local response
+		response=$(github_api "$endpoint")
+
+		# Ensure valid JSON was received:
+		if ! echo "$response" | jq . >/dev/null 2>&1; then
+			echo "ERROR: Received invalid JSON from GitHub API (commits endpoint)." >&2
+			on_error 1
+		fi
+
+		local count
+		count=$(echo "$response" | jq 'length')
+		if [ "$count" -eq 0 ]; then
+			break
+		fi
+
+		# Extract commit SHAs:
+		local shas
+		shas=$(echo "$response" | jq -r '.[].sha')
+		for sha in $shas; do
+			commit_shas+=("$sha")
+		done
+
+		page=$(( page + 1 ))
+	done
+
+	echo "Found ${#commit_shas[@]} commit(s) in the last ${days} days." >&2
+
+	# For each commit, fetch its commit comments:
+	local all_comments=()
+
+	for sha in "${commit_shas[@]}"; do
+		local commit_page=1
+		while true; do
+			local endpoint="/repos/${owner}/${repo}/commits/${sha}/comments?per_page=${PER_PAGE}&page=${commit_page}"
+			local response
+			response=$(github_api "$endpoint")
+
+			# Ensure valid JSON:
+			if ! echo "$response" | jq . >/dev/null 2>&1; then
+				echo "ERROR: Received invalid JSON from GitHub API (commit comments endpoint for commit ${sha})." >&2
+				on_error 1
+			fi
+
+			local count
+			count=$(echo "$response" | jq 'length')
+			if [ "$count" -eq 0 ]; then
+				break
+			fi
+
+			# Append each comment (each JSON object) to our array:
+			while IFS= read -r comment; do
+				all_comments+=("$comment")
+			done < <(echo "$response" | jq -c '.[]')
+
+			commit_page=$(( commit_page + 1 ))
+		done
+	done
+
+	local num_comments=${#all_comments[@]}
+	echo "Found ${num_comments} commit comment(s) on commits from the last ${days} days." >&2
+
+	# Process comments to create one GitHub issue per commit tagging @stdlib-bot:
+	echo "Processing commit comments for tasks tagging @stdlib-bot..." >&2
+
+	# Instead of an associative array, use two indexed arrays:
+	commit_keys=()
+	commit_counts=()
+
+	for comment in "${all_comments[@]}"; do
+		# Extract the comment body:
+		local comment_body
+		comment_body=$(echo "$comment" | jq -r '.body')
+
+		# Check if the comment body contains '@stdlib-bot':
+		if [[ "$comment_body" == *"@stdlib-bot"* ]]; then
+			# Extract the comment's author:
+			local comment_author
+			comment_author=$(echo "$comment" | jq -r '.user.login')
+
+			if is_core_contributor "$comment_author"; then
+				# Extract the commit SHA from the comment:
+				local commit_sha
+				commit_sha=$(echo "$comment" | jq -r '.commit_id')
+				if [ -n "$commit_sha" ]; then
+					update_commit_map "$commit_sha"
+				fi
+			else
+				echo "Skipping comment by non-core contributor: ${comment_author}" >&2
+			fi
+		fi
+	done
+
+	# For each commit that has at least one matching comment, create an issue if not already present:
+	local idx
+	for idx in $(seq 0 $(( ${#commit_keys[@]} - 1 ))); do
+		local commit_sha="${commit_keys[$idx]}"
+		local count="${commit_counts[$idx]}"
+
+		# Generate a short SHA (first 7 characters):
+		local short_sha=${commit_sha:0:7}
+		local issue_title="Address commit comments (commit ${short_sha})"
+		local commit_link="https://github.com/${owner}/${repo}/commit/${commit_sha}"
+		local issue_body="This issue was created automatically to address commit comments tagging @stdlib-bot.
+
+**Commit:** [${commit_sha}](${commit_link})
+
+This commit has **${count}** comment(s) from core contributors that require attention."
+
+		# Check if an issue for this commit already exists:
+		if issue_exists_for_commit "$commit_sha"; then
+			echo "Skipping creation: an issue for commit ${short_sha} already exists." >&2
+		else
+			create_issue "$issue_title" "$issue_body"
+		fi
+	done
+
+	# If no matching commit comments were found:
+	if [ ${#commit_keys[@]} -eq 0 ]; then
+		echo "No commit comments tagging @stdlib-bot from core contributors were found." >&2
+	fi
+
+	cleanup
+	print_success
+	exit 0
+}
+
+# Set an error handler to capture errors and perform any clean-up tasks:
+trap 'on_error $?' ERR
+
+# Run main with all command-line arguments:
+main "$@"
