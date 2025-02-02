@@ -169,7 +169,7 @@ Computes the minimum value of a sorted double-precision floating-point strided a
 ```c
 const double x[] = { 1.0, 2.0, 3.0 };
 
-double v = stdlib_strided_dmax( 3, x, 1 );
+double v = stdlib_strided_dminsorted( 3, x, 1 );
 // returns 1.0
 ```
 
