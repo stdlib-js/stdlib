@@ -17,25 +17,24 @@
 */
 
 #include "stdlib/stats/base/dmeanvarpn.h"
-#include <stdint.h>
 #include <stdio.h>
 
 int main( void ) {
 	// Create a strided array:
-	double x[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
+	const double x[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
 
 	// Create an output array:
 	double out[] = { 0.0, 0.0 };
 
 	// Specify the number of elements:
-	int64_t N = 4;
+	const int N = 4;
 
 	// Specify the stride lengths:
-	int64_t strideX = 2;
-	int64_t strideOut = 1;
+	const int strideX = 2;
+	const int strideOut = 1;
 
 	// Compute the mean and variance:
-	stdlib_strided_dmeanvarpn( N, 1, x, strideX, out, strideOut );
+	stdlib_strided_dmeanvarpn( N, 1.0, x, strideX, out, strideOut );
 
 	// Print the result:
 	printf( "sample mean: %lf\n", out[ 0 ] );

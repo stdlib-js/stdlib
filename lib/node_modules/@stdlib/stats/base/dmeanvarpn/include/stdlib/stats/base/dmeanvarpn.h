@@ -19,7 +19,7 @@
 #ifndef STDLIB_STATS_BASE_DMEANVARPN_H
 #define STDLIB_STATS_BASE_DMEANVARPN_H
 
-#include <stdint.h>
+#include "stdlib/blas/base/shared.h"
 
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
@@ -31,7 +31,12 @@ extern "C" {
 /**
 * Computes the mean and variance of a double-precision floating-point strided array using a two-pass algorithm.
 */
-void stdlib_strided_dmeanvarpn( const int64_t N, const double correction, const double *X, const int64_t strideX, double *Out, const int64_t strideOut );
+void API_SUFFIX(stdlib_strided_dmeanvarpn)( const CBLAS_INT N, const double correction, const double *X, const CBLAS_INT strideX, double *Out, const CBLAS_INT strideOut );
+
+/**
+* Computes the mean and variance of a double-precision floating-point strided array using a two-pass algorithm and alternative indexing semantics.
+*/
+void API_SUFFIX(stdlib_strided_dmeanvarpn_ndarray)( const CBLAS_INT N, const double correction, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, double *Out, const CBLAS_INT strideOut, const CBLAS_INT offsetOut );
 
 #ifdef __cplusplus
 }
