@@ -187,19 +187,24 @@ jobs:
 
       # Exit early if non-package directories are changed:
       - name: 'Exit early if non-package directories are changed'
+        id: check-changed
         if: github.event_name != 'workflow_dispatch'
         run: |
           directories="${{ steps.changed-directories.outputs.directories }}"
+          skip="false"
           for directory in $directories; do
             if [[ "$directory" != "lib/node_modules/@stdlib"* ]]; then
-              echo "Error: changed directory '$directory' is not in 'lib/node_modules/@stdlib'."
-              exit 1
+              echo "Warning: changed directory '$directory' is not in 'lib/node_modules/@stdlib'. Skipping the rest of the workflow."
+              skip="true"
+              break
             fi
           done
+          echo "skip=${skip}" >> $GITHUB_OUTPUT
 
       # Run JavaScript tests:
       - name: 'Run JavaScript tests'
         id: extract-coverage
+        if: steps.check-changed.outputs.skip == 'false'
         env:
           GITHUB_REPO: ${{ github.repository }}
           GITHUB_REF: ${{ github.ref }}
@@ -224,6 +229,7 @@ jobs:
       # Create final coverage report:
       - name: 'Create final coverage report'
         id: create-report
+        if: steps.check-changed.outputs.skip == 'false'
         run: |
           table="${{ steps.extract-coverage.outputs.table }}"
           if [ -z "$table" ]; then
@@ -244,7 +250,7 @@ jobs:
 
       # Post report as comment to PR:
       - name: 'Post report as comment to PR'
-        if: github.event_name == 'pull_request_target'
+        if: github.event_name == 'pull_request_target' && steps.check-changed.outputs.skip == 'false'
         # Pin action to full length commit SHA
         uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
         with:
@@ -275,7 +281,7 @@ jobs:
 
       # Post report as comment to commit:
       - name: 'Post report as comment to commit'
-        if: github.event_name == 'push'
+        if: github.event_name == 'push' && steps.check-changed.outputs.skip == 'false'
         # Pin action to full length commit SHA
         uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
         with:
@@ -290,6 +296,7 @@ jobs:
 
       # Checkout coverage repository:
       - name: 'Checkout coverage repository'
+        if: steps.check-changed.outputs.skip == 'false'
         # Pin action to full length commit SHA
         uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
         with:
@@ -313,6 +320,7 @@ jobs:
 
       # Checkout coverage repository branch:
       - name: 'Checkout coverage repository branch'
+        if: steps.check-changed.outputs.skip == 'false'
         run: |
           cd ./www-test-code-coverage
 
@@ -329,6 +337,7 @@ jobs:
 
       # Copy artifacts to the repository:
       - name: 'Copy artifacts to the repository'
+        if: steps.check-changed.outputs.skip == 'false'
         run: |
           if [ -d "./artifacts" ]; then
             cp -R ./artifacts/* ./www-test-code-coverage
@@ -350,6 +359,7 @@ jobs:
 
       # Import GPG key to sign commits:
       - name: 'Import GPG key to sign commits'
+        if: steps.check-changed.outputs.skip == 'false'
         # Pin action to full length commit SHA
         uses: crazy-max/ghaction-import-gpg@cb9bde2e2525e640591a934b1fd28eef1dcaf5e5 # v6.2.0
         with:
@@ -360,6 +370,7 @@ jobs:
 
       # Commit and push changes:
       - name: 'Commit and push changes'
+        if: steps.check-changed.outputs.skip == 'false'
         env:
           REPO_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           USER_NAME: stdlib-bot
