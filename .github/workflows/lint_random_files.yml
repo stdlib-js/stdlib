@@ -402,20 +402,20 @@ jobs:
           BODY_FILE="$GITHUB_WORKSPACE/lint_issue_body.md"
 
           cat << EOF > "$BODY_FILE"
-            ## C Linting Failures
+          ## C Linting Failures
 
-            Linting failures were detected in the automated lint workflow run.
+          Linting failures were detected in the automated lint workflow run.
 
-            ### Workflow Details
-            -   Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-            -   Type: C Linting
-            -   Date: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
+          ### Workflow Details
+          -   Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          -   Type: C Linting
+          -   Date: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
 
-            ### Error Details
-            \`\`\`
-            $(grep -B 1 -A 2 "style:\|warning:\|error:" <<< "${{ steps.lint-c.outputs.stderr }}")
-            \`\`\`
-            EOF
+          ### Error Details
+          \`\`\`
+          $(grep -B 1 -A 2 "style:\|warning:\|error:" <<< "${{ steps.lint-c.outputs.stderr }}")
+          \`\`\`
+          EOF
 
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_sub_issue" \
             'Fix C lint errors' \
