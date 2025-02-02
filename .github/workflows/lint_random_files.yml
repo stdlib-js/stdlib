@@ -407,11 +407,13 @@ jobs:
           Linting failures were detected in the automated lint workflow run.
 
           ### Workflow Details
+
           -   Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
           -   Type: C Linting
           -   Date: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
 
           ### Error Details
+
           \`\`\`
           $(grep -B 1 -A 2 "style:\|warning:\|error:" <<< "${{ steps.lint-c.outputs.stderr }}")
           \`\`\`
