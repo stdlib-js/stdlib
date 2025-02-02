@@ -72,14 +72,11 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 var x0 = new Float64Array( [ 2.0, 1.0, 2.0, -2.0, -2.0, 2.0, 3.0, 4.0 ] );
 var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 
-var N = floor( x0.length / 2 );
-
-var v = dmaxabs( N, x1, 2 );
+var v = dmaxabs( 4, x1, 2 );
 // returns 4.0
 ```
 
@@ -133,7 +130,6 @@ var v = dmaxabs.ndarray( 4, x, 2, 1 );
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var Float64Array = require( '@stdlib/array/float64' );
 var dmaxabs = require( '@stdlib/stats/base/dmaxabs' );
 
 var x = discreteUniform( 10, -50, 50, {
