@@ -29,6 +29,7 @@ For information about the governance of the stdlib project, see [GOVERNANCE.md][
 -   [kgryte][athan-reines-github] - **Athan Reines** &lt;[kgryte@gmail.com][athan-reines-email]&gt; (he/him)
 -   [Planeshifter][philipp-burckhardt-github] - **Philipp Burckhardt** &lt;[pburckhardt@outlook.com][philipp-burckhardt-email]&gt; (he/him)
 -   [gunjjoshi][gunj-joshi-github] - **Gunj Joshi** &lt;[gunjjoshi8372@gmail.com][gunj-joshi-email]&gt; (he/him)
+-   [headlessNode][muhammad-haris-github] - **Muhammad Haris** &lt;[harriskhan047@outlook.com][muhammad-haris-email]&gt; (he/him)
 
 <details>
 <summary>Emeriti</summary>
@@ -56,6 +57,10 @@ For information about the governance of the stdlib project, see [GOVERNANCE.md][
 [gunj-joshi-github]: https://github.com/gunjjoshi
 
 [gunj-joshi-email]: mailto:gunjjoshi8372@gmail.com
+
+[muhammad-haris-github]: https://github.com/headlessNode
+
+[muhammad-haris-email]: mailto:harriskhan047@outlook.com
 
 </section>
 
