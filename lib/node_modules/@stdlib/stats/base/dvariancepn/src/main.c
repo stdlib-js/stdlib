@@ -18,7 +18,8 @@
 
 #include "stdlib/stats/base/dvariancepn.h"
 #include "stdlib/blas/ext/base/dsumpw.h"
-#include <stdint.h>
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/stride2offset.h"
 
 /**
 * Computes the variance of a double-precision floating-point strided array using a two-pass algorithm.
@@ -32,15 +33,30 @@
 * -   Neely, Peter M. 1966. "Comparison of Several Algorithms for Computation of Means, Standard Deviations and Correlation Coefficients." _Communications of the ACM_ 9 (7). Association for Computing Machinery: 496–99. doi:[10.1145/365719.365958](https://doi.org/10.1145/365719.365958).
 * -   Schubert, Erich, and Michael Gertz. 2018. "Numerically Stable Parallel Computation of (Co-)Variance." In _Proceedings of the 30th International Conference on Scientific and Statistical Database Management_. New York, NY, USA: Association for Computing Machinery. doi:[10.1145/3221269.3223036](https://doi.org/10.1145/3221269.3223036).
 *
-* @param N           number of indexed elements
-* @param correction  degrees of freedom adjustment
-* @param X           input array
-* @param stride      stride length
-* @return            output value
+* @param N            number of indexed elements
+* @param correction   degrees of freedom adjustment
+* @param X            input array
+* @param strideX      stride length
+* @return             output value
 */
-double stdlib_strided_dvariancepn( const int64_t N, const double correction, const double *X, const int64_t stride ) {
-	int64_t ix;
-	int64_t i;
+double API_SUFFIX(stdlib_strided_dvariancepn)( const CBLAS_INT N, const double correction, const double *X, const CBLAS_INT strideX ) {
+	const CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	return API_SUFFIX(stdlib_strided_dvariancepn_ndarray)( N, correction, X, strideX, ox );
+}
+
+/**
+* Computes the variance of a double-precision floating-point strided array using a two-pass algorithm and alternative indexing semantics.
+*
+* @param N            number of indexed elements
+* @param correction   degrees of freedom adjustment
+* @param X            input array
+* @param strideX      stride length
+* @param offsetX      starting index for X
+* @return             output value
+*/
+double API_SUFFIX(stdlib_strided_dvariancepn_ndarray)( const CBLAS_INT N, const double correction, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+	CBLAS_INT ix;
+	CBLAS_INT i;
 	double dN;
 	double mu;
 	double M2;
@@ -53,17 +69,14 @@ double stdlib_strided_dvariancepn( const int64_t N, const double correction, con
 	if ( N <= 0 || n <= 0.0 ) {
 		return 0.0 / 0.0; // NaN
 	}
-	if ( N == 1 || stride == 0 ) {
+	if ( N == 1 || strideX == 0 ) {
 		return 0.0;
 	}
 	// Compute an estimate for the mean:
-	mu = stdlib_strided_dsumpw( N, X, stride ) / dN;
+	mu = API_SUFFIX(stdlib_strided_dsumpw_ndarray)( N, X, strideX, offsetX ) / dN;
 
-	if ( stride < 0 ) {
-		ix = (1-N) * stride;
-	} else {
-		ix = 0;
-	}
+	ix = offsetX;
+
 	// Compute the variance...
 	M2 = 0.0;
 	M = 0.0;
@@ -71,7 +84,7 @@ double stdlib_strided_dvariancepn( const int64_t N, const double correction, con
 		d = X[ ix ] - mu;
 		M2 += d * d;
 		M += d;
-		ix += stride;
+		ix += strideX;
 	}
 	return (M2/n) - ((M/dN)*(M/n));
 }
