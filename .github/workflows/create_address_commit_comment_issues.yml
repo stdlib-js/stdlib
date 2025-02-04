@@ -70,5 +70,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
         run: |
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_address_commit_comments_issues" 1
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_address_commit_comments_issues" 14
         timeout-minutes: 15

@@ -63,7 +63,7 @@ GITHUB_API_URL="https://api.github.com"
 PER_PAGE=100
 
 # Hard-coded list of core contributors:
-core_contributors=("kgryte" "Planeshifter" "gunjjoshi" "headlessNode")
+core_contributors=("kgryte" "Planeshifter" "gunjjoshi" "headlessNode") # TODO: resolve core contributors from one source of truth going forward
 
 # Define a heartbeat interval to periodically print messages in order to prevent CI from prematurely ending a build due to long running commands:
 heartbeat_interval='30s'
@@ -127,7 +127,7 @@ print_success() {
 compute_since_date() {
 	if date --version >/dev/null 2>&1; then
 		# GNU date:
-		date -u -d "$days days ago" +"%Y-%m-%dT%H:%M:%SZ"
+		date -u -d "${days} days ago" +"%Y-%m-%dT%H:%M:%SZ"
 	else
 		# macOS date:
 		date -u -v-"${days}"d +"%Y-%m-%dT%H:%M:%SZ"
@@ -143,7 +143,7 @@ github_api() {
 		"-H" "Authorization: token ${github_token}" \
 		"-H" "Accept: application/vnd.github+json")
 
-	curl -s "${headers[@]}" "$GITHUB_API_URL$endpoint"
+	curl -s "${headers[@]}" "${GITHUB_API_URL}${endpoint}"
 }
 
 # Makes a GitHub API POST request.
@@ -158,11 +158,10 @@ github_api_post() {
 		"-H" "Accept: application/vnd.github+json" \
 		"-H" "Content-Type: application/json" )
 
-	curl -s -X POST "${headers[@]}" -d "$data" "$GITHUB_API_URL$endpoint"
+	curl -s -X POST "${headers[@]}" -d "${data}" "${GITHUB_API_URL}${endpoint}"
 }
 
 # Creates a GitHub issue using the provided title and body.
-# The issue is tagged with the "Good First Issue" label.
 #
 # $1 - Issue title
 # $2 - Issue body
@@ -170,13 +169,13 @@ create_issue() {
 	local title="$1"
 	local body="$2"
 	local payload
+	local response
 
 	# Build the JSON payload including the labels field:
-	payload=$(jq -n --arg title "$title" --arg body "$body" \
+	payload=$(jq -n --arg title "${title}" --arg body "${body}" \
 		'{title: $title, body: $body, labels: ["Good First Issue"]}')
 
 	local endpoint="/repos/${owner}/${repo}/issues"
-	local response
 	response=$(github_api_post "$endpoint" "$payload")
 
 	if ! echo "$response" | jq . >/dev/null 2>&1; then
@@ -192,12 +191,12 @@ create_issue() {
 issue_exists_for_commit() {
 	local commit_sha="$1"
 	local short_sha=${commit_sha:0:7}
+	local query
 
 	# Build a search query that looks for the commit short SHA in the issue title:
 	local raw_query="repo:${owner}/${repo} in:title \"commit ${short_sha}\""
 
 	# URL-encode the query using jq:
-	local query
 	query=$(echo "$raw_query" | jq -sRr @uri)
 
 	local endpoint="/search/issues?q=${query}"
