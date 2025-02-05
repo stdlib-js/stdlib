@@ -46,7 +46,7 @@
     Examples
     --------
     // array-like object:
-    > var f = {{alias:@stdlib/utils/nary-function}}( {{alias:@stdlib/math/base/ops/add}}, 2 );
+    > var f = {{alias:@stdlib/utils/nary-function}}( {{alias:@stdlib/number/float64/base/add}}, 2 );
     > var x = [ 1, 2, 3, 4, 5, 6 ];
     > var y = [ 1, 1, 1, 1, 1, 1 ];
     > var out = {{alias}}( x, y, f )
@@ -105,7 +105,7 @@
     Examples
     --------
     // array-like object:
-    > var f = {{alias:@stdlib/utils/nary-function}}( {{alias:@stdlib/math/base/ops/add}}, 2 );
+    > var f = {{alias:@stdlib/utils/nary-function}}( {{alias:@stdlib/number/float64/base/add}}, 2 );
     > var x = [ 1, 2, 3, 4, 5, 6 ];
     > var y = [ 1, 1, 1, 1, 1, 1 ];
     > var out = [ 0, 0, 0, 0, 0, 0 ];
