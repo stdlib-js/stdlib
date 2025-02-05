@@ -28,7 +28,7 @@ import gcusumkbn = require( './index' );
 	const y = new Float64Array( 10 );
 
 	gcusumkbn( x.length, 0.0, x, 1, y, 1 ); // $ExpectType Float64Array
-	gcusumkbn( x.length, 0.0, new AccessorArray( x ), 1, new AccessorArray( y ), 1 ); // $ExpectType AccessorArray
+	gcusumkbn( x.length, 0.0, new AccessorArray( x ), 1, new AccessorArray( y ), 1 ); // $ExpectType AccessorArray<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
@@ -142,7 +142,7 @@ import gcusumkbn = require( './index' );
 	const y = new Float64Array( 10 );
 
 	gcusumkbn.ndarray( x.length, 0.0, x, 1, 0, y, 1, 0 ); // $ExpectType Float64Array
-	gcusumkbn.ndarray( x.length, 0.0, new AccessorArray( x ), 1, 0, new AccessorArray( y ), 1, 0 ); // $ExpectType AccessorArray
+	gcusumkbn.ndarray( x.length, 0.0, new AccessorArray( x ), 1, 0, new AccessorArray( y ), 1, 0 ); // $ExpectType AccessorArray<number>
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...
