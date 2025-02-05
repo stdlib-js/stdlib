@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2020 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -19,7 +19,8 @@
 #include "stdlib/blas/ext/base/dsortins.h"
 #include "stdlib/math/base/assert/is_negative_zero.h"
 #include "stdlib/math/base/assert/is_nan.h"
-#include <stdint.h>
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/stride2offset.h"
 #include <stdbool.h>
 
 /**
@@ -28,15 +29,30 @@
 * @param N       number of indexed elements
 * @param order   sort order
 * @param X       input array
-* @param stride  index increment
+* @param strideX index increment
 */
-void c_dsortins( const int64_t N, const double order, double *X, const int64_t stride ) {
-	int64_t ix;
-	int64_t jx;
-	int64_t fx;
-	int64_t lx;
-	int64_t sx;
-	int64_t i;
+void API_SUFFIX(stdlib_strided_dsortins)( const CBLAS_INT N, const double order, double *X, const CBLAS_INT strideX ) {
+	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	API_SUFFIX(stdlib_strided_dsortins_ndarray)( N, order, X, strideX, ox );
+}
+
+/**
+* Sorts a double-precision floating-point strided array using insertion sort and alternative indexing semantics.
+*
+* @param N        number of indexed elements
+* @param order    sort order
+* @param X        input array
+* @param strideX  index increment
+* @param offsetX  starting index
+*/
+void API_SUFFIX(stdlib_strided_dsortins_ndarray)( const CBLAS_INT N, const double order, double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+	CBLAS_INT ix;
+	CBLAS_INT jx;
+	CBLAS_INT fx;
+	CBLAS_INT lx;
+	CBLAS_INT sx;
+	CBLAS_INT ox;
+	CBLAS_INT i;
 	double v;
 	double u;
 	bool flg;
@@ -46,15 +62,17 @@ void c_dsortins( const int64_t N, const double order, double *X, const int64_t s
 	}
 	// For a positive stride, sorting in decreasing order is equivalent to providing a negative stride and sorting in increasing order, and, for a negative stride, sorting in decreasing order is equivalent to providing a positive stride and sorting in increasing order...
 	if ( order < 0.0 ) {
-		sx = -stride;
+		sx = -strideX;
+		ox = offsetX - ( (N-1) * sx );
 	} else {
-		sx = stride;
+		sx = strideX;
+		ox = offsetX;
 	}
+	fx = ox;
+	lx = fx + (N-1) * sx;
+	ix = fx + sx;
 	if ( sx < 0 ) {
 		// Traverse the strided array from right-to-left...
-		fx = (1-N) * sx; // first index
-		lx = 0;          // last index
-		ix = fx + sx;
 
 		// Sort in increasing order...
 		for ( i = 1; i < N; i++ ) {
@@ -90,9 +108,6 @@ void c_dsortins( const int64_t N, const double order, double *X, const int64_t s
 		return;
 	}
 	// Traverse the strided array from left-to-right...
-	fx = 0;          // first index
-	lx = (N-1) * sx; // last index
-	ix = fx + sx;
 
 	// Sort in increasing order...
 	for ( i = 1; i < N; i++ ) {
