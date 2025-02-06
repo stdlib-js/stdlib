@@ -25,6 +25,7 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
 /**
 * Returns the skewness for a raised cosine distribution with location `mu` and scale `s`.
 */

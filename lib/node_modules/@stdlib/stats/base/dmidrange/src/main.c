@@ -37,7 +37,7 @@ double API_SUFFIX(stdlib_strided_dmidrange)( const CBLAS_INT N, const double *X,
 }
 
 /**
-* Computes the mid-range of a double-precision floating-point strided array and using alternative indexing semantics.
+* Computes the mid-range of a double-precision floating-point strided array using alternative indexing semantics.
 *
 * @param N        number of indexed elements
 * @param X        input array

@@ -1,0 +1,28 @@
+
+{{alias}}( value )
+    Tests whether an input value is the string representing row-major order.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean result.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 'row-major' )
+    true
+    > bool = {{alias}}( 'column-major' )
+    false
+    > bool = {{alias}}( '' )
+    false
+    > bool = {{alias}}( 'beep' )
+    false
+
+    See Also
+    --------
+
