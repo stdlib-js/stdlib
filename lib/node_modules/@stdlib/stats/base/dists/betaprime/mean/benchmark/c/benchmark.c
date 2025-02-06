@@ -102,8 +102,6 @@ static double benchmark( void ) {
 
 	for ( i = 0; i < 100; i++ ) {
 		alpha[ i ] = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 10.0 );
-	}
-	for ( i = 0; i < 100; i++ ) {
 		beta[ i ] = random_uniform( 1.0 + STDLIB_CONSTANT_FLOAT64_EPS, 11.0 );
 	}
 
