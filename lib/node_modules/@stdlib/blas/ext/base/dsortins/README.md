@@ -181,7 +181,7 @@ stdlib_strided_dsortins( 2, -1.0, x, 1 );
 The function accepts the following arguments:
 
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
--   **order**: `[in] double` sort order. If `order < 0.0`, the input strided array `x` is sorted in **decreasing** order. If `order > 0.0`, the input strided array `x` is sorted in **increasing** order. If `order == 0.0`, the input strided arrays are left unchanged.
+-   **order**: `[in] double` sort order. If `order < 0.0`, the input strided array is sorted in **decreasing** order. If `order > 0.0`, the input strided array is sorted in **increasing** order. If `order == 0.0`, the input strided array is left unchanged.
 -   **X**: `[inout] double*` input array.
 -   **strideX**: `[in] CBLAS_INT` stride length for `X`.
 
@@ -206,7 +206,7 @@ stdlib_strided_dsortins_ndarray( 4, 1.0, x, 1, 0 );
 The function accepts the following arguments:
 
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
--   **order**: `[in] double` sort order. If `order < 0.0`, the input strided array `x` is sorted in **decreasing** order. If `order > 0.0`, the input strided array `x` is sorted in **increasing** order. If `order == 0.0`, the input strided arrays are left unchanged.
+-   **order**: `[in] double` sort order. If `order < 0.0`, the input strided array is sorted in **decreasing** order. If `order > 0.0`, the input strided array is sorted in **increasing** order. If `order == 0.0`, the input strided array is left unchanged.
 -   **X**: `[inout] double*` input array.
 -   **strideX**: `[in] CBLAS_INT` stride length for `X`.
 -   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
@@ -255,7 +255,6 @@ int main( void ) {
         printf( "x[ %i ] = %lf\n", i, x[ i ] );
     }
 }
-
 ```
 
 </section>

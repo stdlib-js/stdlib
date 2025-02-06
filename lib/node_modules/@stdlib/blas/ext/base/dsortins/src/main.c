@@ -69,7 +69,7 @@ void API_SUFFIX(stdlib_strided_dsortins_ndarray)( const CBLAS_INT N, const doubl
 		ox = offsetX;
 	}
 	fx = ox;
-	lx = fx + (N-1) * sx;
+	lx = fx + ( (N-1) * sx );
 	ix = fx + sx;
 	if ( sx < 0 ) {
 		// Traverse the strided array from right-to-left...
