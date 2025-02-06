@@ -33,6 +33,6 @@ int main( void ) {
 	for ( i = 0; i < 10; i++ ) {
 		p = random_uniform( 0.0, 1.0 );
 		y = stdlib_base_dists_bernoulli_skewness( p );
-		printf( "x: %lf , skew(X;p): %lf\n", p , y );
+		printf( "x: %lf, skew(X;p): %lf\n", p, y );
 	}
 }

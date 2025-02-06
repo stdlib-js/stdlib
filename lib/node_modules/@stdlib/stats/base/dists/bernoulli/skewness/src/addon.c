@@ -16,8 +16,8 @@
 * limitations under the License.
 */
 
-#include "stdlib/math/base/napi/unary.h"
 #include "stdlib/stats/base/dists/bernoulli/skewness.h"
+#include "stdlib/math/base/napi/unary.h"
 
 // cppcheck-suppress shadowFunction
 STDLIB_MATH_BASE_NAPI_MODULE_D_D( stdlib_base_dists_bernoulli_skewness )
