@@ -256,7 +256,7 @@ update_commit_map() {
 	if [ "$found" -eq 0 ]; then
 		commit_keys+=("$key")
 		commit_counts+=("1")
-		commit_links+=("- ${link}")
+		commit_links+=("-   ${link}")
 	fi
 }
 
@@ -385,6 +385,7 @@ main() {
 **Commit:** [${commit_sha}](${commit_link})
 
 **Comments:**
+
 ${links}
 
 Interested in helping improve the project? If you are, the comment linked to above has **${count}** comment(s) from core contributors that could use your attention.
