@@ -111,6 +111,98 @@ for ( i = 0; i < 10; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/degenerate/entropy.h"
+```
+
+#### stdlib_base_dists_degenerate_entropy( mu )
+
+Returns the [entropy][entropy] of a [degenerate][degenerate-distribution] distribution with constant value `mu`.
+
+```c
+double y = stdlib_base_dists_degenerate_entropy( 0.1 );
+// returns 0.0
+```
+
+The function accepts the following arguments:
+
+-   **mu**: `[in] double` constant value of distribution.
+
+```c
+double stdlib_base_dists_degenerate_entropy( const double mu );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/degenerate/entropy.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double mu;
+    double y;
+    int i;
+
+    for ( i = 0; i < 10; i++ ) {
+        mu = random_uniform( 0.0, 1.0 );
+        y = stdlib_base_dists_degenerate_entropy( mu );
+        printf( "µ: %1f. H(X;µ): %lf\n", mu, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="references">

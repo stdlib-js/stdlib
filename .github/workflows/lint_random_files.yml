@@ -93,7 +93,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -108,7 +108,7 @@ jobs:
       # Install Node.js:
       - name: 'Install Node.js'
         # Pin action to full length commit SHA
-        uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af # v4.1.0
+        uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
         with:
           node-version: '20' # 'lts/*'
         timeout-minutes: 5
@@ -397,25 +397,27 @@ jobs:
       - name: 'Create sub-issue for C lint failures'
         if: ( github.event.inputs.c != 'false' ) && failure() && contains(steps.*.outcome, 'failure') && contains(steps.lint-c.outcome, 'failure')
         env:
-          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
         run: |
           BODY_FILE="$GITHUB_WORKSPACE/lint_issue_body.md"
 
           cat << EOF > "$BODY_FILE"
-            ## C Linting Failures
+          ## C Linting Failures
 
-            Linting failures were detected in the automated lint workflow run.
+          Linting failures were detected in the automated lint workflow run.
 
-            ### Workflow Details
-            -   Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-            -   Type: C Linting
-            -   Date: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
+          ### Workflow Details
 
-            ### Error Details
-            \`\`\`
-            $(grep -B 1 -A 2 "style:\|warning:\|error:" <<< "${{ steps.lint-c.outputs.stderr }}")
-            \`\`\`
-            EOF
+          -   Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          -   Type: C Linting
+          -   Date: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
+
+          ### Error Details
+
+          \`\`\`
+          $(grep -B 1 -A 2 "style:\|warning:\|error:" <<< "${{ steps.lint-c.outputs.stderr }}")
+          \`\`\`
+          EOF
 
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_sub_issue" \
             'Fix C lint errors' \
@@ -464,7 +466,7 @@ jobs:
         if: ${{ github.event.inputs.fix == 'true' }} && ( success() || failure() )
         id: cpr
         # Pin action to full length commit SHA
-        uses: peter-evans/create-pull-request@5e914681df9dc83aa4e4905692ca88beb2f9e91f # v7.0.5
+        uses: peter-evans/create-pull-request@67ccf781d68cd99b580ae25a5c18a1cc84ffff1f # v7.0.6
         with:
           title: 'style: fix lint errors'
           add-paths: ${{ steps.random-files.outputs.files }}
@@ -476,7 +478,7 @@ jobs:
           commit-message: 'style: resolve lint errors'
           committer: 'stdlib-bot <82920195+stdlib-bot@users.noreply.github.com>'
           signoff: true
-          token: ${{ secrets.PULL_REQUEST_TOKEN }}
+          token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           labels: |
             automated-pr
           team-reviewers: |
