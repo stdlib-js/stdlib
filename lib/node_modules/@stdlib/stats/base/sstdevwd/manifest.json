@@ -1,5 +1,7 @@
 {
-  "options": {},
+  "options": {
+    "task": "build"
+  },
   "fields": [
     {
       "field": "src",
@@ -24,6 +26,45 @@
   ],
   "confs": [
     {
+     "task": "build",
+      "src": [
+        "./src/sstdevwd.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/stats/base/svariancewd",
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-float32array",
+        "@stdlib/napi/create-double",
+        "@stdlib/napi/argv-float"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/sstdevwd.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/stats/base/svariancewd"
+      ]
+    },
+    {
+      "task": "examples",
       "src": [
         "./src/sstdevwd.c"
       ],

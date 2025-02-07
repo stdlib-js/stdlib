@@ -36,15 +36,14 @@ limitations under the License.
 var gsum = require( '@stdlib/blas/ext/base/gsum' );
 ```
 
-#### gsum( N, x, stride )
+#### gsum( N, x, strideX )
 
 Computes the sum of strided array elements.
 
 ```javascript
 var x = [ 1.0, -2.0, 2.0 ];
-var N = x.length;
 
-var v = gsum( N, x, 1 );
+var v = gsum( x.length, x, 1 );
 // returns 1.0
 ```
 
@@ -52,17 +51,14 @@ The function has the following parameters:
 
 -   **N**: number of indexed elements.
 -   **x**: input [`Array`][mdn-array] or [`typed array`][mdn-typed-array].
--   **stride**: index increment for `x`.
+-   **strideX**: stride length.
 
-The `N` and `stride` parameters determine which elements in `x` are accessed at runtime. For example, to compute the sum of every other element in `x`,
+The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to compute the sum of every other element:
 
 ```javascript
-var floor = require( '@stdlib/math/base/special/floor' );
-
 var x = [ 1.0, 2.0, 2.0, -7.0, -2.0, 3.0, 4.0, 2.0 ];
-var N = floor( x.length / 2 );
 
-var v = gsum( N, x, 2 );
+var v = gsum( 4, x, 2 );
 // returns 5.0
 ```
 
@@ -72,42 +68,35 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 var x0 = new Float64Array( [ 2.0, 1.0, 2.0, -2.0, -2.0, 2.0, 3.0, 4.0 ] );
 var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 
-var N = floor( x0.length / 2 );
-
-var v = gsum( N, x1, 2 );
+var v = gsum( 4, x1, 2 );
 // returns 5.0
 ```
 
-#### gsum.ndarray( N, x, stride, offset )
+#### gsum.ndarray( N, x, strideX, offsetX )
 
 Computes the sum of strided array elements using alternative indexing semantics.
 
 ```javascript
 var x = [ 1.0, -2.0, 2.0 ];
-var N = x.length;
 
-var v = gsum.ndarray( N, x, 1, 0 );
+var v = gsum.ndarray( x.length, x, 1, 0 );
 // returns 1.0
 ```
 
 The function has the following additional parameters:
 
--   **offset**: starting index for `x`.
+-   **offsetX**: starting index.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the `offset` parameter supports indexing semantics based on a starting index. For example, to calculate the sum of every other value in `x` starting from the second value
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameter supports indexing semantics based on a starting index. For example, to calculate the sum of every other element starting from the second element:
 
 ```javascript
-var floor = require( '@stdlib/math/base/special/floor' );
-
 var x = [ 2.0, 1.0, 2.0, -2.0, -2.0, 2.0, 3.0, 4.0 ];
-var N = floor( x.length / 2 );
 
-var v = gsum.ndarray( N, x, 2, 1 );
+var v = gsum.ndarray( 4, x, 2, 1 );
 // returns 5.0
 ```
 
@@ -133,18 +122,12 @@ var v = gsum.ndarray( N, x, 2, 1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
-var Float64Array = require( '@stdlib/array/float64' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var gsum = require( '@stdlib/blas/ext/base/gsum' );
 
-var x;
-var i;
-
-x = new Float64Array( 10 );
-for ( i = 0; i < x.length; i++ ) {
-    x[ i ] = round( randu()*100.0 );
-}
+var x = discreteUniform( 10, -100, 100, {
+    'dtype': 'float64'
+});
 console.log( x );
 
 var v = gsum( x.length, x, 1 );
