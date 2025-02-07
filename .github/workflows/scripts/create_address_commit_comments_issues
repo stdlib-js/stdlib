@@ -235,24 +235,29 @@ is_core_contributor() {
 # Updates two indexed arrays (commit_keys and commit_counts) to simulate a map.
 #
 # $1 - Commit SHA (the key)
+# $2 - Comment URL (the link)
 update_commit_map() {
-	local key="$1"
-	local found=0
-	local i=0
+    local key="$1"
+    local link="$2"
+    local found=0
+    local i=0
 
-	for existing in "${commit_keys[@]}"; do
-		if [ "$existing" = "$key" ]; then
-			commit_counts[i]=$(( commit_counts[i] + 1 ))
-			found=1
-			break
-		fi
-		i=$(( i + 1 ))
-	done
+    for existing in "${commit_keys[@]}"; do
+        if [ "$existing" = "$key" ]; then
+            commit_counts[i]=$(( commit_counts[i] + 1 ))
+            # Append the comment URL (on a new bullet) to the existing list:
+            commit_links[i]="${commit_links[i]}"$'\n'"-   ${link}"
+            found=1
+            break
+        fi
+        i=$(( i + 1 ))
+    done
 
-	if [ "$found" -eq 0 ]; then
-		commit_keys+=("$key")
-		commit_counts+=("1")
-	fi
+    if [ "$found" -eq 0 ]; then
+        commit_keys+=("$key")
+        commit_counts+=("1")
+        commit_links+=("- ${link}")
+    fi
 }
 
 # Main execution sequence.
@@ -333,9 +338,9 @@ main() {
 	# Process comments to create one GitHub issue per commit tagging @stdlib-bot:
 	echo "Processing commit comments for tasks tagging @stdlib-bot..." >&2
 
-	# Instead of an associative array, use two indexed arrays:
 	commit_keys=()
 	commit_counts=()
+	commit_links=()
 
 	for comment in "${all_comments[@]}"; do
 		# Extract the comment body:
@@ -353,7 +358,10 @@ main() {
 				local commit_sha
 				commit_sha=$(echo "$comment" | jq -r '.commit_id')
 				if [ -n "$commit_sha" ]; then
-					update_commit_map "$commit_sha"
+					# Extract the comment URL:
+					local comment_url
+					comment_url=$(echo "$comment" | jq -r '.html_url')
+					update_commit_map "$commit_sha" "$comment_url"
 				fi
 			else
 				echo "Skipping comment by non-core contributor: ${comment_author}" >&2
@@ -366,16 +374,44 @@ main() {
 	for idx in $(seq 0 $(( ${#commit_keys[@]} - 1 ))); do
 		local commit_sha="${commit_keys[$idx]}"
 		local count="${commit_counts[$idx]}"
+		local links="${commit_links[$idx]}"
 
 		# Generate a short SHA (first 7 characters):
 		local short_sha=${commit_sha:0:7}
 		local issue_title="Address commit comments (commit ${short_sha})"
 		local commit_link="https://github.com/${owner}/${repo}/commit/${commit_sha}"
-		local issue_body="This issue was created automatically to address commit comments tagging @stdlib-bot.
+		local issue_body="This commit has **${count}** comment(s) from core contributors that require attention.
 
 **Commit:** [${commit_sha}](${commit_link})
 
-This commit has **${count}** comment(s) from core contributors that require attention."
+**Comments:**
+${links}
+
+Interested in helping improve the project? If you are, the comment linked to above has **${count}** comment(s) from core contributors that could use your attention.
+
+What do you need to do?
+
+1.  Open the link to the commit above.
+2.  Find all the comments which mention @stdlib-bot. These comments should describe follow-up tasks or desired changes, such as formatting improvements, small refactorings, or clean-up.
+3.  If you are a first-time contributor, follow the [contributing](https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md) and [development](https://github.com/stdlib-js/stdlib/blob/develop/docs/development.md) guides to setup your local environment for contributing to stdlib. If you are already a seasoned stdlib contributor, create a new branch on your local fork for making the changes.
+4.  Make all the desired changes and commit those changes to a local branch.
+5.  Push the changes to GitHub and open a new pull request against the \`develop\` branch of the main stdlib development [repository](https://github.com/stdlib-js/stdlib).
+
+Once you've opened a pull request, a stdlib maintainer will review your work and suggest any follow-up changes.
+
+And that's it!
+
+Thank you for your help in reducing the project backlog and in improving the quality of stdlib. 🙌
+
+* * *
+
+## Notes
+
+-  For older commits, there is a chance that comments will have been already been addressed due to other refactorings. If you find that to be true, don't worry! Just move on to addressing the next comment, and, when opening your pull request and describing your proposed changes, be sure to link to the comment and mention that it has been addressed. This will help reviewers when reviewing your code!
+
+* * *
+
+This issue was created automatically to address commit comments tagging @stdlib-bot."
 
 		# Check if an issue for this commit already exists:
 		if issue_exists_for_commit "$commit_sha"; then
