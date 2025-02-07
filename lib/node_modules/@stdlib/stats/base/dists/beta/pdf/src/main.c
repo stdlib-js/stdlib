@@ -36,7 +36,7 @@
 * double y = stdlib_base_dists_beta_pdf( 0.5, 1.0, 1.0 );
 * // returns 1.0
 */
-double stdlib_base_dists_beta_pdf( const double x, double alpha, const double beta ) {
+double stdlib_base_dists_beta_pdf( const double x, const double alpha, const double beta ) {
 	double out;
 	if (
 		stdlib_base_is_nan( x ) ||
