@@ -237,27 +237,27 @@ is_core_contributor() {
 # $1 - Commit SHA (the key)
 # $2 - Comment URL (the link)
 update_commit_map() {
-    local key="$1"
-    local link="$2"
-    local found=0
-    local i=0
+	local key="$1"
+	local link="$2"
+	local found=0
+	local i=0
 
-    for existing in "${commit_keys[@]}"; do
-        if [ "$existing" = "$key" ]; then
-            commit_counts[i]=$(( commit_counts[i] + 1 ))
-            # Append the comment URL (on a new bullet) to the existing list:
-            commit_links[i]="${commit_links[i]}"$'\n'"-   ${link}"
-            found=1
-            break
-        fi
-        i=$(( i + 1 ))
-    done
+	for existing in "${commit_keys[@]}"; do
+		if [ "$existing" = "$key" ]; then
+			commit_counts[i]=$(( commit_counts[i] + 1 ))
+			# Append the comment URL (on a new bullet) to the existing list:
+			commit_links[i]="${commit_links[i]}"$'\n'"-   ${link}"
+			found=1
+			break
+		fi
+		i=$(( i + 1 ))
+	done
 
-    if [ "$found" -eq 0 ]; then
-        commit_keys+=("$key")
-        commit_counts+=("1")
-        commit_links+=("- ${link}")
-    fi
+	if [ "$found" -eq 0 ]; then
+		commit_keys+=("$key")
+		commit_counts+=("1")
+		commit_links+=("- ${link}")
+	fi
 }
 
 # Main execution sequence.
@@ -378,7 +378,7 @@ main() {
 
 		# Generate a short SHA (first 7 characters):
 		local short_sha=${commit_sha:0:7}
-		local issue_title="Address commit comments (commit ${short_sha})"
+		local issue_title="Address commit comments (commit \`${short_sha}\`)"
 		local commit_link="https://github.com/${owner}/${repo}/commit/${commit_sha}"
 		local issue_body="This commit has **${count}** comment(s) from core contributors that require attention.
 
@@ -391,8 +391,8 @@ Interested in helping improve the project? If you are, the comment linked to abo
 
 What do you need to do?
 
-1.  Open the link to the commit above.
-2.  Find all the comments which mention @stdlib-bot. These comments should describe follow-up tasks or desired changes, such as formatting improvements, small refactorings, or clean-up.
+1.  Open the above linked comments mentioning @stdlib-bot.
+2.  Review the suggested changes or follow-up tasks (e.g., formatting improvements, small refactorings, or clean-up).
 3.  If you are a first-time contributor, follow the [contributing](https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md) and [development](https://github.com/stdlib-js/stdlib/blob/develop/docs/development.md) guides to setup your local environment for contributing to stdlib. If you are already a seasoned stdlib contributor, create a new branch on your local fork for making the changes.
 4.  Make all the desired changes and commit those changes to a local branch.
 5.  Push the changes to GitHub and open a new pull request against the \`develop\` branch of the main stdlib development [repository](https://github.com/stdlib-js/stdlib).
