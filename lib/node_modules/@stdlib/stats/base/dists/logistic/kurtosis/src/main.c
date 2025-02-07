@@ -20,11 +20,11 @@
 #include "stdlib/math/base/assert/is_nan.h"
 
 /**
-* Returns the kurtosis for a logistic distribution with location `mu` and scale `s`.
+* Returns the excess kurtosis for a logistic distribution with location `mu` and scale `s`.
 *
 * @param mu    location parameter
 * @param s     scale parameter
-* @return      kurtosis
+* @return      excess kurtosis
 *
 * @example
 * double y = stdlib_base_dists_logistic_kurtosis( 0.0, 1.0 );
