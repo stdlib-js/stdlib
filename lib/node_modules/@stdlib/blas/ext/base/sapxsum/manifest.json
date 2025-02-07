@@ -28,14 +28,12 @@
     {
       "task": "build",
       "src": [
-        "./src/sapxsum.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/ext/base/sapxsumkbn",
@@ -43,39 +41,42 @@
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-float32array",
-        "@stdlib/napi/argv-float"
+        "@stdlib/napi/argv-float",
+        "@stdlib/napi/create-double",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared"
       ]
     },
     {
       "task": "benchmark",
       "src": [
-        "./src/sapxsum.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/ext/base/sapxsumkbn"
+        "@stdlib/blas/ext/base/sapxsumkbn",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared"
       ]
     },
     {
       "task": "examples",
       "src": [
-        "./src/sapxsum.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/ext/base/sapxsumkbn"
+        "@stdlib/blas/ext/base/sapxsumkbn",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared"
       ]
     }
   ]

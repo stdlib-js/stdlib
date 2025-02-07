@@ -134,7 +134,7 @@ var v = dsapxsum.ndarray( 4, 5.0, x, 2, 1 );
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var dsapxsum = require( '@stdlib/blas/ext/base/dsapxsum' );
 
-var x = discreteUniform( 10.0, -100, 100, {
+var x = discreteUniform( 10, -100, 100, {
     'dtype': 'float32'
 });
 console.log( x );

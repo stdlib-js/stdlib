@@ -21,7 +21,7 @@
 #include "stdlib/constants/float32/pi.h"
 
 /**
-* Compute the principal square root of the product of π and a positive single-precision floating-point number.
+* Computes the principal square root of the product of π and a positive single-precision floating-point number.
 *
 * @param x    input value
 * @return     output value

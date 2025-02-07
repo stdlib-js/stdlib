@@ -169,6 +169,106 @@ for ( i = 0; i < 10; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/beta/logpdf.h"
+```
+
+#### stdlib_base_dists_beta_logpdf( x, alpha, beta )
+
+Evaluates the natural logarithm of the probability density function (logPDF) for a beta distribution with first shape parameter `alpha` and second shape parameter `beta`.
+
+```c
+double y = stdlib_base_dists_beta_logpdf( 0.5, 1.0, 1.0 );
+// returns 0.0
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **alpha**: `[in] double` first shape parameter.
+-   **beta**: `[in] double` second shape parameter.
+
+```c
+double stdlib_base_dists_beta_logpdf( const double x, double alpha, const double beta );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section`
+element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/beta/logpdf.h"
+#include "stdlib/constants/float64/eps.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double alpha;
+    double beta;
+    double x;
+    double y;
+    int i;
+
+    for ( i = 0; i < 10; i++ ) {
+        x = random_uniform( 0.0, 1.0 );
+        alpha = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 5.0 );
+        beta = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 5.0 );
+        y = stdlib_base_dists_beta_logpdf( x, alpha, beta );
+        printf( "x: %1f. α: %1f. β: %1f. ln(f(x;α,β)): %lf\n", x, alpha, beta, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">

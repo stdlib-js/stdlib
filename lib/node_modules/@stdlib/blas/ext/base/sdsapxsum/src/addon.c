@@ -17,13 +17,14 @@
 */
 
 #include "stdlib/blas/ext/base/sdsapxsum.h"
+#include "stdlib/blas/base/shared.h"
 #include "stdlib/napi/export.h"
 #include "stdlib/napi/argv.h"
 #include "stdlib/napi/argv_int64.h"
 #include "stdlib/napi/argv_float.h"
 #include "stdlib/napi/argv_strided_float32array.h"
+#include "stdlib/napi/create_double.h"
 #include <node_api.h>
-#include <assert.h>
 
 /**
 * Receives JavaScript callback invocation data.
@@ -36,13 +37,28 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV( env, info, argv, argc, 4 );
 	STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
 	STDLIB_NAPI_ARGV_FLOAT( env, alpha, argv, 1 );
-	STDLIB_NAPI_ARGV_INT64( env, stride, argv, 3 );
-	STDLIB_NAPI_ARGV_STRIDED_FLOAT32ARRAY( env, X, N, stride, argv, 2 );
-
-	napi_value v;
-	napi_status status = napi_create_double( env, (double)stdlib_strided_sdsapxsum( N, alpha, X, stride ), &v );
-	assert( status == napi_ok );
+	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 3 );
+	STDLIB_NAPI_ARGV_STRIDED_FLOAT32ARRAY( env, X, N, strideX, argv, 2 );
+	STDLIB_NAPI_CREATE_DOUBLE( env, (double)API_SUFFIX(stdlib_strided_sdsapxsum)( N, alpha, X, strideX ), v );
 	return v;
 }
 
-STDLIB_NAPI_MODULE_EXPORT_FCN( addon )
+/**
+* Receives JavaScript callback invocation data.
+*
+* @param env    environment under which the function is invoked
+* @param info   callback data
+* @return       Node-API value
+*/
+static napi_value addon_method( napi_env env, napi_callback_info info ) {
+	STDLIB_NAPI_ARGV( env, info, argv, argc, 5 );
+	STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
+	STDLIB_NAPI_ARGV_FLOAT( env, alpha, argv, 1 );
+	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 3 );
+	STDLIB_NAPI_ARGV_INT64( env, offsetX, argv, 4 );
+	STDLIB_NAPI_ARGV_STRIDED_FLOAT32ARRAY( env, X, N, strideX, argv, 2 );
+	STDLIB_NAPI_CREATE_DOUBLE( env, (double)API_SUFFIX(stdlib_strided_sdsapxsum_ndarray)( N, alpha, X, strideX, offsetX ), v );
+	return v;
+}
+
+STDLIB_NAPI_MODULE_EXPORT_FCN_WITH_METHOD( addon, "ndarray", addon_method );
