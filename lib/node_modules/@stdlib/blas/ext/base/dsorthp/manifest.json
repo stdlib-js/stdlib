@@ -42,7 +42,6 @@
         "@stdlib/napi/argv-double",
         "@stdlib/napi/argv-strided-float64array",
         "@stdlib/math/base/assert/is-nan",
-        "@stdlib/math/base/special/floor",
         "@stdlib/math/base/assert/is-positive-zero",
         "@stdlib/strided/base/stride2offset",
         "@stdlib/blas/base/shared"
@@ -60,7 +59,6 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
-        "@stdlib/math/base/special/floor",
         "@stdlib/math/base/assert/is-positive-zero",
         "@stdlib/strided/base/stride2offset",
         "@stdlib/blas/base/shared"
@@ -78,7 +76,6 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
-        "@stdlib/math/base/special/floor",
         "@stdlib/math/base/assert/is-positive-zero",
         "@stdlib/strided/base/stride2offset",
         "@stdlib/blas/base/shared"

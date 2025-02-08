@@ -94,7 +94,7 @@ The function has the following additional parameters:
 
 -   **offsetX**: starting index.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameter supports indexing semantics based on starting a index. For example, to access only the last three elements:
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameter supports indexing semantics based on a starting index. For example, to access only the last three elements:
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -184,7 +184,7 @@ stdlib_strided_dsorthp( 2, -1.0, x, 1 );
 The function accepts the following arguments:
 
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
--   **order**: `[in] double` sort order. If `order < 0.0`, the input strided array `x` is sorted in **decreasing** order. If `order > 0.0`, the input strided array `x` is sorted in **increasing** order. If `order == 0.0`, the input strided arrays are left unchanged.
+-   **order**: `[in] double` sort order. If `order < 0.0`, the input strided array is sorted in **decreasing** order. If `order > 0.0`, the input strided array is sorted in **increasing** order. If `order == 0.0`, the input strided array is left unchanged.
 -   **X**: `[inout] double*` input array.
 -   **strideX**: `[in] CBLAS_INT` stride length.
 
@@ -209,8 +209,8 @@ stdlib_strided_dsorthp_ndarray( 4, 1.0, x, 1, 0 );
 The function accepts the following arguments:
 
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
--   **order**: `[in] double` sort order.
--   **X**: `[inout] double*` input array. If `order < 0.0`, the input strided array `x` is sorted in **decreasing** order. If `order > 0.0`, the input strided array `x` is sorted in **increasing** order. If `order == 0.0`, the input strided arrays are left unchanged.
+-   **order**: `[in] double` sort order. If `order < 0.0`, the input strided array is sorted in **decreasing** order. If `order > 0.0`, the input strided array is sorted in **increasing** order. If `order == 0.0`, the input strided array is left unchanged.
+-   **X**: `[inout] double*` input array.
 -   **strideX**: `[in] CBLAS_INT` stride length.
 -   **offsetX**: `[in] CBLAS_INT` starting index.
 
@@ -258,7 +258,6 @@ int main( void ) {
         printf( "x[ %i ] = %lf\n", i, x[ i ] );
     }
 }
-
 ```
 
 </section>

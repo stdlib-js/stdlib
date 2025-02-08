@@ -21,7 +21,6 @@
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/blas/base/shared.h"
 #include "stdlib/strided/base/stride2offset.h"
-#include "stdlib/math/base/special/floor.h"
 
 /**
 * Sorts a double-precision floating-point strided array using heapsort.
@@ -81,9 +80,9 @@ void API_SUFFIX(stdlib_strided_dsorthp_ndarray)( const CBLAS_INT N, const double
 	}
 	// For a positive stride, sorting in decreasing order is equivalent to providing a negative stride and sorting in increasing order, and, for a negative stride, sorting in decreasing order is equivalent to providing a positive stride and sorting in increasing order...
 	if ( order < 0.0 ) {
-		sx = strideX * -1;
+		sx = -strideX;
 		ox = offsetX - ( (N-1)*sx );
-	}else{
+	} else {
 		sx = strideX;
 		ox = offsetX;
 	}
@@ -91,7 +90,7 @@ void API_SUFFIX(stdlib_strided_dsorthp_ndarray)( const CBLAS_INT N, const double
 	n = N;
 
 	// Specify an initial "parent" index for building the heap:
-	parent = stdlib_base_floor( N / 2 );
+	parent = N / 2;
 
 	// Continue looping until the array is sorted...
 	while ( true ) {
