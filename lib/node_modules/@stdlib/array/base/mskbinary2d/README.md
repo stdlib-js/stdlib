@@ -41,7 +41,7 @@ var mskbinary2d = require( '@stdlib/array/base/mskbinary2d' );
 Applies a binary callback to elements in two two-dimensional nested input arrays according to elements in a two-dimensional nested mask array and assigns results to elements in a two-dimensional nested output array.
 
 ```javascript
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 var zeros2d = require( '@stdlib/array/base/zeros2d' );
 
 var x = [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ];
@@ -87,7 +87,7 @@ var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var bernoulli = require( '@stdlib/random/base/bernoulli' ).factory;
 var filled2dBy = require( '@stdlib/array/base/filled2d-by' );
 var zeros2d = require( '@stdlib/array/base/zeros2d' );
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 var mskbinary2d = require( '@stdlib/array/base/mskbinary2d' );
 
 var shape = [ 3, 3 ];

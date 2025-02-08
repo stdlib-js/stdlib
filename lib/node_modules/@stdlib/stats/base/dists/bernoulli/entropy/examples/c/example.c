@@ -28,6 +28,6 @@ int main( void ) {
 	for ( i = 0; i < 25; i++ ) {
 		p = (double)rand() / ( (double)RAND_MAX + 1.0 );
 		y = stdlib_base_dists_bernoulli_entropy( p );
-		printf( "x: %lf , H(X;p): %lf\n", p, y );
+		printf( "x: %lf, H(X;p): %lf\n", p, y );
 	}
 }
