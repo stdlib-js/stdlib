@@ -246,7 +246,7 @@ int main( void ) {
         alpha = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 5.0 );
         beta = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 5.0 );
         y = stdlib_base_dists_beta_pdf( x, alpha, beta );
-        printf( "x: %1f. α: %1f. β: %1f. f(x;α,β): %lf\n", x, alpha, beta, y );
+        printf( "x: %lf, α: %lf, β: %lf, f(x;α,β): %lf\n", x, alpha, beta, y );
     }
 }
 ```

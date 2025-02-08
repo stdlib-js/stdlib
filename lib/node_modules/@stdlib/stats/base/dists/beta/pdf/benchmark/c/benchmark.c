@@ -1,4 +1,4 @@
-	/**
+/**
 * @license Apache-2.0
 *
 * Copyright (c) 2025 The Stdlib Authors.
