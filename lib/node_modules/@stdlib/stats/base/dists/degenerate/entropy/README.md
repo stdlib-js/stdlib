@@ -190,7 +190,7 @@ int main( void ) {
     for ( i = 0; i < 10; i++ ) {
         mu = random_uniform( 0.0, 1.0 );
         y = stdlib_base_dists_degenerate_entropy( mu );
-        printf( "µ: %1f. H(X;µ): %lf\n", mu, y );
+        printf( "µ: %lf, H(X;µ): %lf\n", mu, y );
     }
 }
 ```

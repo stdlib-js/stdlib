@@ -99,7 +99,7 @@ static double benchmark( void ) {
 	int i;
 
 	for ( i = 0; i < 100; i++ ) {
-		mu[ i ] = random_uniform( -50.0, -40.0 );
+		mu[ i ] = random_uniform( -50.0, 50.0 );
 	}
 
 	t = tic();
