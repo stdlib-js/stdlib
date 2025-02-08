@@ -21,7 +21,7 @@
 #include "stdlib/blas/base/shared.h"
 #include "stdlib/napi/export.h"
 #include "stdlib/napi/argv.h"
-#include "stdlib/napi/argv_double.h"
+#include "stdlib/napi/argv_float.h"
 #include "stdlib/napi/argv_int64.h"
 #include "stdlib/napi/argv_strided_float32array.h"
 #include "stdlib/napi/create_double.h"
@@ -37,7 +37,7 @@
 static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV( env, info, argv, argc, 4 );
 	STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
-	STDLIB_NAPI_ARGV_DOUBLE( env, alpha, argv, 1 );
+	STDLIB_NAPI_ARGV_FLOAT( env, alpha, argv, 1 );
 	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 3 );
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT32ARRAY( env, X, N, strideX, argv, 2 );
 	STDLIB_NAPI_CREATE_DOUBLE( env, API_SUFFIX(stdlib_strided_dsapxsumpw)( N, alpha, X, strideX ), v );
@@ -54,7 +54,7 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 static napi_value addon_method( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV( env, info, argv, argc, 5 );
 	STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
-	STDLIB_NAPI_ARGV_DOUBLE( env, alpha, argv, 1 );
+	STDLIB_NAPI_ARGV_FLOAT( env, alpha, argv, 1 );
 	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 3 );
 	STDLIB_NAPI_ARGV_INT64( env, offsetX, argv, 4 );
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT32ARRAY( env, X, N, strideX, argv, 2 );

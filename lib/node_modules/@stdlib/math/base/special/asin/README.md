@@ -145,7 +145,7 @@ double stdlib_base_asin( const double x );
 
 int main( void ) {
     const double x[] = { -1.0, -0.78, -0.56, -0.33, -0.11, 0.11, 0.33, 0.56, 0.78, 1.0 };
-    
+
     double v;
     int i;
     for ( i = 0; i < 10; i++ ) {

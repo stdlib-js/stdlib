@@ -1,0 +1,50 @@
+{
+  "options": {},
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "src": [
+        "./src/dispatch.c",
+        "./src/internal/permute.c",
+        "./src/internal/range.c",
+        "./src/internal/sort2ins.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/complex/float32/ctor",
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/ndarray/base/bytes-per-element",
+        "@stdlib/ndarray/base/iteration-order",
+        "@stdlib/ndarray/base/vind2bind",
+        "@stdlib/ndarray/ctor",
+        "@stdlib/ndarray/index-modes",
+        "@stdlib/ndarray/orders"
+      ]
+    }
+  ]
+}

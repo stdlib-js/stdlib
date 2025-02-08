@@ -87,7 +87,7 @@ static double rand_double( void ) {
 * Computes the nth Tribonacci number.
 *
 * @param n   Tribonacci number to compute
-* @return Tribonacci number
+* @return    Tribonacci number
 */
 int tribonacci( int n ) {
 	int a;
