@@ -228,7 +228,7 @@ int main( void ) {
         alpha = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 10.0 );
         beta = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 10.0 );
         y = stdlib_base_dists_beta_entropy( alpha, beta );
-        printf( "α: %1f. β: %1f. h(X;α,β): %lf\n", alpha, beta, y );
+        printf( "α: %lf, β: %lf, h(X;α,β): %lf\n", alpha, beta, y );
     }
 }
 ```
