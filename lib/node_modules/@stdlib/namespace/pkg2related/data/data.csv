@@ -93,7 +93,7 @@
 "@stdlib/math/base/special/acsch","@stdlib/math/base/special/acoth,@stdlib/math/base/special/acsc,@stdlib/math/base/special/asech,@stdlib/math/base/special/asinh,@stdlib/math/base/special/csc,@stdlib/math/base/special/csch"
 "@stdlib/number/float64/base/add","@stdlib/math/base/ops/div,@stdlib/math/base/ops/mul,@stdlib/math/base/ops/sub"
 "@stdlib/math/base/ops/add3","@stdlib/number/float64/base/add"
-"@stdlib/math/base/ops/add4","@stdlib/number/float64/base/add"
+"@stdlib/number/float64/base/add4","@stdlib/number/float64/base/add"
 "@stdlib/math/base/ops/add5","@stdlib/number/float64/base/add"
 "@stdlib/math/base/ops/addf","@stdlib/number/float64/base/add,@stdlib/math/base/ops/divf,@stdlib/math/base/ops/mulf,@stdlib/math/base/ops/subf"
 "@stdlib/array/base/filled",""
