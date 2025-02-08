@@ -176,7 +176,7 @@ Returns the expected value for a beta prime distribution with first shape parame
 
 ```c
 double y = stdlib_base_dists_betaprime_mean( 1.0, 2.0 );
-// returns ~1.0
+// returns 1.0
 ```
 
 The function accepts the following arguments:
@@ -228,7 +228,7 @@ int main( void ) {
         alpha = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 10.0 );
         beta = random_uniform( 1.0 + STDLIB_CONSTANT_FLOAT64_EPS, 11.0 );
         y = stdlib_base_dists_betaprime_mean( alpha, beta );
-        printf( "α: %1f, β: %1f, E(X;α,β): %lf\n", alpha, beta, y );
+        printf( "α: %lf, β: %lf, E(X;α,β): %lf\n", alpha, beta, y );
     }
 }
 ```
