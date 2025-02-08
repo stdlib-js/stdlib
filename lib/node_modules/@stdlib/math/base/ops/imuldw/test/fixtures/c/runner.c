@@ -140,7 +140,7 @@ void rand_array_ui32( unsigned int *out, const unsigned int len, const unsigned 
 * @param x    input array
 * @param len  array length
 */
-void ui32_to_f64( double *out, unsigned const int *x, unsigned int len ) {
+void ui32_to_f64( double *out, const unsigned int *x, unsigned int len ) {
 	unsigned int i;
 
 	for ( i = 0; i < len; i++ ) {
@@ -334,7 +334,7 @@ void muldws1( int *w, const int u, const int v ) {
 * @param len   number of values in the domain
 * @param name  output filename
 */
-void generate( unsigned const int *a, unsigned const int *b, const unsigned int len, const char *name ) {
+void generate( const unsigned int *a, const unsigned int *b, const unsigned int len, const char *name ) {
 	unsigned int i;
 	unsigned int *y;
 	FILE *f;
