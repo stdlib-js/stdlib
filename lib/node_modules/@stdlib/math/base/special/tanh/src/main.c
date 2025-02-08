@@ -119,24 +119,24 @@ static double rational_pq( const double x ) {
 * // returns 0.0
 */
 double stdlib_base_tanh( const double x ) {
-    double s;
-    double z;
-    z = stdlib_base_abs( x );
-    if ( z > 0.5 * MAXLOG ) {
-        return ( x < 0.0 ) ? -1.0 : 1.0;
-    }
-    if ( z >= 0.625 ) {
-        s = stdlib_base_exp( 2.0 * z );
-        z = 1.0 - ( 2.0 / ( s + 1.0 ) );
-        if ( x < 0.0 ) {
-            z = -z;
-        }
-    } else {
-        if ( x == 0.0 ) {
-            return x; // Handle `+-0`
-        }
-        s = x * x;
-        z = x + ( x * s * rational_pq( s ) );
-    }
-    return z;
+	double s;
+	double z;
+	z = stdlib_base_abs( x );
+	if ( z > 0.5 * MAXLOG ) {
+		return ( x < 0.0 ) ? -1.0 : 1.0;
+	}
+	if ( z >= 0.625 ) {
+		s = stdlib_base_exp( 2.0 * z );
+		z = 1.0 - ( 2.0 / ( s + 1.0 ) );
+		if ( x < 0.0 ) {
+			z = -z;
+		}
+	} else {
+		if ( x == 0.0 ) {
+			return x; // Handle `+-0`
+		}
+		s = x * x;
+		z = x + ( x * s * rational_pq( s ) );
+	}
+	return z;
 }

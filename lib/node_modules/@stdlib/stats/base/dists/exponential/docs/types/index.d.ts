@@ -63,14 +63,14 @@ interface Namespace {
 	Exponential: typeof Exponential;
 
 	/**
-	* Returns the entropy of an exponential distribution.
+	* Returns the differential entropy of an exponential distribution.
 	*
 	* ## Notes
 	*
 	* -   If provided a negative value for `λ`, the function returns `NaN`.
 	*
 	* @param lambda - rate parameter
-	* @returns entropy
+	* @returns differential entropy
 	*
 	* @example
 	* var v = ns.entropy( 9.0 );

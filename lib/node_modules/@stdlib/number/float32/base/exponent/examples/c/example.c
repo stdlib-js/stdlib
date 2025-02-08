@@ -22,12 +22,12 @@
 #include <inttypes.h>
 
 int main( void ) {
-    float x[] = { 4.0f, 0.0f, -0.0f, 1.0f, -1.0f, 3.14f, -3.14f, 1.0e38f, -1.0e38f, 1.0f/0.0f, -1.0f/0.0f, 0.0f/0.0f };
+	const float x[] = { 4.0f, 0.0f, -0.0f, 1.0f, -1.0f, 3.14f, -3.14f, 1.0e38f, -1.0e38f, 1.0f/0.0f, -1.0f/0.0f, 0.0f/0.0f };
 
-    int32_t out;
-    int i;
-    for ( i = 0; i < 12; i++ ) {
-        out = stdlib_base_float32_exponent( x[ i ] );
-        printf( "%f => out: %" PRId32 "\n", x[ i ], out );
-    }
+	int32_t out;
+	int i;
+	for ( i = 0; i < 12; i++ ) {
+		out = stdlib_base_float32_exponent( x[ i ] );
+		printf( "%f => out: %" PRId32 "\n", x[ i ], out );
+	}
 }

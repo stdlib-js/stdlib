@@ -31,5 +31,5 @@
 * // returns ~3.1416f
 */
 float stdlib_base_ahavercosf( const float x ) {
-    return 2.0f * stdlib_base_acosf( stdlib_base_sqrtf( x ) );
+	return 2.0f * stdlib_base_acosf( stdlib_base_sqrtf( x ) );
 }
