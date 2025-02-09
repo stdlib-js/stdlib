@@ -27,7 +27,7 @@
 * @return    excess kurtosis
 *
 * @example
-* double v = kurtosis( 4.0, 12.0 );
+* double v = stdlib_base_dists_uniform_kurtosis( 4.0, 12.0 );
 * // returns -1.2
 */
 double stdlib_base_dists_uniform_kurtosis( const double a, const double b ) {

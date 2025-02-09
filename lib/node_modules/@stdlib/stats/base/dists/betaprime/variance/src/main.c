@@ -23,7 +23,7 @@
 * Returns the variance of a beta prime distribution.
 *
 * @param alpha    first shape parameter
-* @param beta     second shape paramter
+* @param beta     second shape parameter
 * @return         variance
 *
 * @example

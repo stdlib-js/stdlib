@@ -25,7 +25,7 @@
 * Returns the differential entropy of a Laplace distribution.
 *
 * @param mu    location parameter
-* @param b     scale paramter
+* @param b     scale parameter
 * @return      entropy
 *
 * @example

@@ -29,7 +29,7 @@
 * @return         evaluated entropy
 *
 * @example
-* double y = stdlib_base_arcsine_entropy( 9.0 );
+* double y = stdlib_base_dists_rayleigh_entropy( 9.0 );
 * // returns ~3.139
 */
 double stdlib_base_dists_rayleigh_entropy( const double sigma ) {

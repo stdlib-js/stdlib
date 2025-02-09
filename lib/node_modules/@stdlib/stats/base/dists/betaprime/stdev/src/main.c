@@ -24,8 +24,8 @@
 * Returns the standard deviation of a beta prime distribution.
 *
 * @param alpha    first shape parameter
-* @param beta     second shape paramter
-* @return         stdandard deviation
+* @param beta     second shape parameter
+* @return         standard deviation
 *
 * @example
 * double y = stdlib_base_betaprime_stdev( 1.0, 3.0 );

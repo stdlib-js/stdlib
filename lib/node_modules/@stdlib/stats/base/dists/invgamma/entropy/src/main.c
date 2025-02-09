@@ -25,7 +25,7 @@
 * Returns the differential entropy of an inverse gamma distribution.
 *
 * @param alpha    shape parameter
-* @param beta     rate paramter
+* @param beta     rate parameter
 * @return         entropy
 *
 * @example
