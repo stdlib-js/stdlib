@@ -27,7 +27,7 @@
 * @return     evaluated mode
 *
 * @example
-* double y = stdlib_base_chi_mode( 9.0 );
+* double y = stdlib_base_dists_chi_mode( 9.0 );
 * // returns ~2.828
 */
 double stdlib_base_dists_chi_mode( const double k ) {

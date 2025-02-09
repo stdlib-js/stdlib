@@ -27,7 +27,7 @@
 * @return     evaluated skewness
 *
 * @example
-* double y = stdlib_base_f_skewness( 3.0, 7.0 );
+* double y = stdlib_base_dists_f_skewness( 3.0, 7.0 );
 * // returns 11.0
 */
 double stdlib_base_dists_f_skewness( const double d1, const double d2 ) {

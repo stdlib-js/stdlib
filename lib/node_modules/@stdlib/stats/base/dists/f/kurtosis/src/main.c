@@ -27,7 +27,7 @@
 * @return      evaluated kurtosis
 *
 * @example
-* double y = stdlib_base_f_kurtosis( 3.0, 9.0 );
+* double y = stdlib_base_dists_f_kurtosis( 3.0, 9.0 );
 * // returns ~124.667
 */
 double stdlib_base_dists_f_kurtosis( const double d1, const double d2 ) {

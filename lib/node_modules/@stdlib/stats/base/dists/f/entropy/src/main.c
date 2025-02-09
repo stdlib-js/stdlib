@@ -30,7 +30,7 @@
 * @return      evaluated entropy
 *
 * @example
-* double y = stdlib_base_f_entropy( 3.0, 7.0 );
+* double y = stdlib_base_dists_f_entropy( 3.0, 7.0 );
 * // returns ~1.298
 */
 double stdlib_base_dists_f_entropy( const double d1, const double d2 ) {

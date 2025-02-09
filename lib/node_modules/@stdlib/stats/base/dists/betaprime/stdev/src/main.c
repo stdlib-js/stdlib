@@ -28,7 +28,7 @@
 * @return         standard deviation
 *
 * @example
-* double y = stdlib_base_betaprime_stdev( 1.0, 3.0 );
+* double y = stdlib_base_dists_betaprime_stdev( 1.0, 3.0 );
 * // returns ~0.866
 */
 double stdlib_base_dists_betaprime_stdev( const double alpha, const double beta ) {

@@ -34,7 +34,7 @@
 * @return         evaluated logCDF
 *
 * @example
-* double y = stdlib_base_rayleigh_logcdf( 2.0, 3.0 );
+* double y = stdlib_base_dists_rayleigh_logcdf( 2.0, 3.0 );
 * // returns ~-1.613
 */
 double stdlib_base_dists_rayleigh_logcdf( const double x, const double sigma ) {

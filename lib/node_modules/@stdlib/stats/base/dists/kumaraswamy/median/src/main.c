@@ -28,7 +28,7 @@
 * @return        evaluated median
 *
 * @example
-* double y = stdlib_base_kumaraswamy_median( 2.0, 3.0 );
+* double y = stdlib_base_dists_kumaraswamy_median( 2.0, 3.0 );
 * // returns 1.0
 */
 double stdlib_base_dists_kumaraswamy_median( const double a, const double b ) {

@@ -27,7 +27,7 @@
 * @return         excess kurtosis
 *
 * @example
-* double y = stdlib_base_betaprime_kurtosis( 2.0, 6.0 );
+* double y = stdlib_base_dists_betaprime_kurtosis( 2.0, 6.0 );
 * // returns ~26.143
 */
 double stdlib_base_dists_betaprime_kurtosis( const double alpha, const double beta ) {

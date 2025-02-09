@@ -27,7 +27,7 @@
 * @return     evaluated skewness
 *
 * @example
-* double y = stdlib_base_chisquare_skewness( 9.0 );
+* double y = stdlib_base_dists_chisquare_skewness( 9.0 );
 * // returns ~0.943
 */
 double stdlib_base_dists_chisquare_skewness( const double k ) {

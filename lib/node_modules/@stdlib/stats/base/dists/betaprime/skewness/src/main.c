@@ -28,7 +28,7 @@
 * @return         standard deviation
 *
 * @example
-* double y = stdlib_base_betaprime_skewness( 2.0, 4.0 );
+* double y = stdlib_base_dists_betaprime_skewness( 2.0, 4.0 );
 * // returns ~6.261
 */
 double stdlib_base_dists_betaprime_skewness( const double alpha, const double beta ) {

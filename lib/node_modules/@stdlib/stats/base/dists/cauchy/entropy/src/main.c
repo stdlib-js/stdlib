@@ -29,7 +29,7 @@
 * @return         evaluated entropy
 *
 * @example
-* double y = stdlib_base_cauchy_entropy( 10.0, 5.0 );
+* double y = stdlib_base_dists_cauchy_entropy( 10.0, 5.0 );
 * // returns ~4.14
 */
 double stdlib_base_dists_cauchy_entropy( const double x0, const double gamma ) {

@@ -27,7 +27,7 @@
 * @return      evaluated variance
 *
 * @example
-* double y = stdlib_base_f_variance( 3.0, 5.0 );
+* double y = stdlib_base_dists_f_variance( 3.0, 5.0 );
 * // returns ~11.111
 */
 double stdlib_base_dists_f_variance( const double d1, const double d2 ) {

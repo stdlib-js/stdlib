@@ -27,7 +27,7 @@
 * @return         variance
 *
 * @example
-* double y = stdlib_base_betaprime_variance( 1.0, 3.0 );
+* double y = stdlib_base_dists_betaprime_variance( 1.0, 3.0 );
 * // returns ~0.75
 */
 double stdlib_base_dists_betaprime_variance( const double alpha, const double beta ) {

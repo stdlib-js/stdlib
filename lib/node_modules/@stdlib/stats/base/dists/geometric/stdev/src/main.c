@@ -21,7 +21,7 @@
 #include "stdlib/math/base/assert/is_nan.h"
 
 /**
-* Returns the  standard deviation of a geometric distribution.
+* Returns the standard deviation of a geometric distribution.
 *
 * @param p    success probability
 * @return     standard deviation

@@ -29,7 +29,7 @@
 * @return     evaluated entropy
 *
 * @example
-* double y = stdlib_base_chisquare_entropy( 9.0 );
+* double y = stdlib_base_dists_chisquare_entropy( 9.0 );
 * // returns ~2.786
 */
 double stdlib_base_dists_chisquare_entropy( const double k ) {

@@ -27,7 +27,7 @@
 * @return     evaluated mode
 *
 * @example
-* double y = stdlib_base_chisquare_mode( 9.0 );
+* double y = stdlib_base_dists_chisquare_mode( 9.0 );
 * // returns 7.0
 */
 double stdlib_base_dists_chisquare_mode( const double k ) {

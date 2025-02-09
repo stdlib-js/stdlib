@@ -26,7 +26,7 @@
 * @return     evaluated mode
 *
 * @example
-* double y = stdlib_base_f_mode( 3.0, 5.0 );
+* double y = stdlib_base_dists_f_mode( 3.0, 5.0 );
 * // returns ~0.238
 */
 double stdlib_base_dists_f_mode( const double d1, const double d2 ) {
