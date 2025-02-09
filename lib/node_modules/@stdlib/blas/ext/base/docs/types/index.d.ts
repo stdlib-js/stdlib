@@ -1968,9 +1968,9 @@ interface Namespace {
 	* @param N - number of indexed elements
 	* @param order - sort order
 	* @param x - first input array
-	* @param strideX - `x` stride length
+	* @param strideX - stride length for `x`
 	* @param y - second input array
-	* @param strideY - `y` stride length
+	* @param strideY - stride length for `x`
 	* @returns `x`
 	*
 	* @example
@@ -2005,9 +2005,9 @@ interface Namespace {
 	* @param N - number of indexed elements
 	* @param order - sort order
 	* @param x - first input array
-	* @param strideX - `x` stride length
+	* @param strideX - stride length for `x`
 	* @param y - second input array
-	* @param strideY - `y` stride length
+	* @param strideY - stride length for `y`
 	* @returns `x`
 	*
 	* @example
@@ -2042,9 +2042,9 @@ interface Namespace {
 	* @param N - number of indexed elements
 	* @param order - sort order
 	* @param x - first input array
-	* @param strideX - `x` stride length
+	* @param strideX - stride length for `x`
 	* @param y - second input array
-	* @param strideY - `y` stride length
+	* @param strideY - stride length for `y`
 	* @returns `x`
 	*
 	* @example
@@ -2079,7 +2079,7 @@ interface Namespace {
 	* @param N - number of indexed elements
 	* @param order - sort order
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns `x`
 	*
 	* @example
