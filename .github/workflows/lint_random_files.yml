@@ -376,6 +376,13 @@ jobs:
           out_benchmarks="lint_c_errors_benchmarks.txt"
           combined="lint_c_errors.txt"
 
+          # Initialize output files with empty content:
+          echo "" > "$out_source"
+          echo "" > "$out_examples"
+          echo "" > "$out_tests"
+          echo "" > "$out_benchmarks"
+          echo "" > "$combined"
+
           # Lint C source files:
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep -E '\.c$' | grep -v -e '/examples' -e '/test' -e '/benchmark' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
