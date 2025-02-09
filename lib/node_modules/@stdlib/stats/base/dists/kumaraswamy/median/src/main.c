@@ -25,7 +25,7 @@
 *
 * @param a       first shape parameter
 * @param b       second shape parameter
-* @return        evaluated median
+* @return        median
 *
 * @example
 * double y = stdlib_base_dists_kumaraswamy_median( 2.0, 3.0 );

@@ -24,7 +24,7 @@
 * Returns the skewness of a chi-squared distribution.
 *
 * @param k    degrees of freedom
-* @return     evaluated skewness
+* @return     skewness
 *
 * @example
 * double y = stdlib_base_dists_chisquare_skewness( 9.0 );

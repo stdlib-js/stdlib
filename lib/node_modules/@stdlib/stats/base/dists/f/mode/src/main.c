@@ -23,7 +23,7 @@
 *
 * @param a    numerator degrees of freedom
 * @param b    denominator degrees of freedom
-* @return     evaluated mode
+* @return     mode
 *
 * @example
 * double y = stdlib_base_dists_f_mode( 3.0, 5.0 );

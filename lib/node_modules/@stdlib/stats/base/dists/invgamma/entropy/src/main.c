@@ -29,7 +29,7 @@
 * @return         entropy
 *
 * @example
-* double y = stdlib_base_invgamma_entropy( 1.0, 1.0 );
+* double y = stdlib_base_dists_invgamma_entropy( 1.0, 1.0 );
 * // returns ~2.154
 */
 double stdlib_base_dists_invgamma_entropy( const double alpha, const double beta ) {

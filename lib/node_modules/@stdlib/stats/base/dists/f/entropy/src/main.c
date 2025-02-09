@@ -27,7 +27,7 @@
 *
 * @param d1    numerator degrees of freedom
 * @param d2    denominator degrees of freedom
-* @return      evaluated entropy
+* @return      entropy
 *
 * @example
 * double y = stdlib_base_dists_f_entropy( 3.0, 7.0 );

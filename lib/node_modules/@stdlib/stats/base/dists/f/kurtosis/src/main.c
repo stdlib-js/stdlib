@@ -24,7 +24,7 @@
 *
 * @param d1    numerator degrees of freedom
 * @param d2    denominator degrees of freedom
-* @return      evaluated kurtosis
+* @return      excess kurtosis
 *
 * @example
 * double y = stdlib_base_dists_f_kurtosis( 3.0, 9.0 );

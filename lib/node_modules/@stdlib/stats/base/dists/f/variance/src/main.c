@@ -24,7 +24,7 @@
 *
 * @param d1    numerator degrees of freedom
 * @param d2    denominator degrees of freedom
-* @return      evaluated variance
+* @return      variance
 *
 * @example
 * double y = stdlib_base_dists_f_variance( 3.0, 5.0 );

@@ -26,7 +26,7 @@
 *
 * @param x0       location parameter
 * @param gamma    scale parameter
-* @return         evaluated entropy
+* @return         entropy
 *
 * @example
 * double y = stdlib_base_dists_cauchy_entropy( 10.0, 5.0 );

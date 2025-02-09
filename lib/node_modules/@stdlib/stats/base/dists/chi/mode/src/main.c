@@ -24,7 +24,7 @@
 * Returns the mode of a chi distribution.
 *
 * @param k    degrees of freedom
-* @return     evaluated mode
+* @return     mode
 *
 * @example
 * double y = stdlib_base_dists_chi_mode( 9.0 );

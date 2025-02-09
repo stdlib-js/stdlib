@@ -24,7 +24,7 @@
 *
 * @param x0       location parameter
 * @param gamma    scale parameter
-* @return         evaluated mode
+* @return         mode
 *
 * @example
 * double y = stdlib_base_dists_cauchy_mode( 10.0, 5.0 );

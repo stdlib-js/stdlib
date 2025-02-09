@@ -26,7 +26,7 @@
 * Returns the differential entropy of a chi-squared distribution.
 *
 * @param k    degrees of freedom
-* @return     evaluated entropy
+* @return     entropy
 *
 * @example
 * double y = stdlib_base_dists_chisquare_entropy( 9.0 );

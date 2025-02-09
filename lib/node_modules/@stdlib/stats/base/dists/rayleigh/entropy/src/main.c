@@ -26,7 +26,7 @@
 * Returns the differential entropy of a Rayleigh distribution.
 *
 * @param sigma    scale parameter
-* @return         evaluated entropy
+* @return         entropy
 *
 * @example
 * double y = stdlib_base_dists_rayleigh_entropy( 9.0 );

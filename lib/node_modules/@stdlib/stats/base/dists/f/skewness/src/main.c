@@ -24,7 +24,7 @@
 *
 * @param a    numerator degrees of freedom
 * @param b    denominator degrees of freedom
-* @return     evaluated skewness
+* @return     skewness
 *
 * @example
 * double y = stdlib_base_dists_f_skewness( 3.0, 7.0 );
