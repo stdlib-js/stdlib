@@ -17,7 +17,8 @@
 */
 
 #include "stdlib/stats/base/dsnanmeanpn.h"
-#include <stdint.h>
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/stride2offset.h"
 
 /**
 * Computes the arithmetic mean of a single-precision floating-point strided array, ignoring `NaN` values, using a two-pass error correction algorithm with extended accumulation, and returning an extended precision result.
@@ -31,16 +32,29 @@
 * -   Neely, Peter M. 1966. "Comparison of Several Algorithms for Computation of Means, Standard Deviations and Correlation Coefficients." _Communications of the ACM_ 9 (7). Association for Computing Machinery: 496–99. doi:[10.1145/365719.365958](https://doi.org/10.1145/365719.365958).
 * -   Schubert, Erich, and Michael Gertz. 2018. "Numerically Stable Parallel Computation of (Co-)Variance." In _Proceedings of the 30th International Conference on Scientific and Statistical Database Management_. New York, NY, USA: Association for Computing Machinery. doi:[10.1145/3221269.3223036](https://doi.org/10.1145/3221269.3223036).
 *
-* @param N       number of indexed elements
-* @param X       input array
-* @param stride  stride length
-* @return        output value
+* @param N        number of indexed elements
+* @param X        input array
+* @param strideX  stride length
+* @return         output value
 */
-double stdlib_strided_dsnanmeanpn( const int64_t N, const float *X, const int64_t stride ) {
-	int64_t ix;
-	int64_t i;
-	int64_t n;
-	int64_t o;
+double API_SUFFIX(stdlib_strided_dsnanmeanpn)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX ) {
+	const CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	return API_SUFFIX(stdlib_strided_dsnanmeanpn_ndarray)( N, X, strideX, ox );
+}
+
+/**
+* Computes the arithmetic mean of a single-precision floating-point strided array, ignoring `NaN` values and using a two-pass error correction algorithm with extended accumulation and alternative indexing semantics.
+*
+* @param N        number of indexed elements
+* @param X        input array
+* @param strideX  stride length
+* @param offsetX  starting index for X
+* @return         output value
+*/
+double API_SUFFIX(stdlib_strided_dsnanmeanpn_ndarray)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+	CBLAS_INT ix;
+	CBLAS_INT i;
+	CBLAS_INT n;
 	double dn;
 	double s;
 	double t;
@@ -49,15 +63,10 @@ double stdlib_strided_dsnanmeanpn( const int64_t N, const float *X, const int64_
 	if ( N <= 0 ) {
 		return 0.0 / 0.0; // NaN
 	}
-	if ( N == 1 || stride == 0 ) {
-		return X[ 0 ];
+	if ( N == 1 || strideX == 0 ) {
+		return X[ offsetX ];
 	}
-	if ( stride < 0 ) {
-		ix = (1-N) * stride;
-	} else {
-		ix = 0;
-	}
-	o = ix;
+	ix = offsetX;
 
 	// Compute an estimate for the mean...
 	s = 0.0;
@@ -68,7 +77,7 @@ double stdlib_strided_dsnanmeanpn( const int64_t N, const float *X, const int64_
 			s += v;
 			n += 1;
 		}
-		ix += stride;
+		ix += strideX;
 	}
 	if ( n == 0 ) {
 		return 0.0 / 0.0; // NaN
@@ -77,14 +86,14 @@ double stdlib_strided_dsnanmeanpn( const int64_t N, const float *X, const int64_
 	s /= dn;
 
 	// Compute an error term...
+	ix = offsetX;
 	t = 0.0;
-	ix = o;
 	for ( i = 0; i < N; i++ ) {
 		v = (double)X[ ix ];
 		if ( v == v ) {
 			t += v - s;
 		}
-		ix += stride;
+		ix += strideX;
 	}
 	return s + (t/dn);
 }
