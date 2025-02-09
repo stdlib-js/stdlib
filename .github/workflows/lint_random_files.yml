@@ -369,40 +369,42 @@ jobs:
           # Define the path to cppcheck configuration file for linting benchmarks:
           cppcheck_benchmarks_suppressions_list="${root}/etc/cppcheck/suppressions.benchmarks.txt"
 
-          # Initialize a variable to capture errors:
-          err_output=""
+          # Define output files for each category:
+          out_source="lint_c_errors_source.txt"
+          out_examples="lint_c_errors_examples.txt"
+          out_tests="lint_c_errors_tests.txt"
+          out_benchmarks="lint_c_errors_benchmarks.txt"
+          combined="lint_c_errors.txt"
 
           # Lint C source files:
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep -E '\.c$' | grep -v -e '/examples' -e '/test' -e '/benchmark' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
-            err_output+=$(make lint-c-files FILES="${files}" 2>&1)
+            make lint-c-files FILES="${files}" CPPCHECK_FLAGS="--output-file=${out_source}"
           fi
 
           # Lint C example files...
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '/examples/.*\.c$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
-            err_output+=$(make lint-c-files FILES="${files}" CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_examples_suppressions_list}" 2>&1)
+            make lint-c-files FILES="${files}" CPPCHECK_FLAGS="--output-file=${out_examples}" CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_examples_suppressions_list}"
           fi
 
           # Lint C test fixtures files...
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '/test/fixtures/.*\.c$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
-            err_output+=$(make lint-c-files FILES="${files}" CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_tests_fixtures_suppressions_list}" 2>&1)
+            make lint-c-files FILES="${files}" CPPCHECK_FLAGS="--output-file=${out_tests}" CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_tests_fixtures_suppressions_list}"
           fi
 
           # Lint C benchmark files...
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '/benchmark/.*\.c$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
-            err_output+=$(make lint-c-files FILES="${files}" CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_benchmarks_suppressions_list}" 2>&1)
+            make lint-c-files FILES="${files}" CPPCHECK_FLAGS="--output-file=${out_benchmarks}" CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_benchmarks_suppressions_list}"
           fi
 
-          # Print the errors to the log:
-          echo "$err_output"
+          # Combine all outputs into one file:
+          cat "$out_source" "$out_examples" "$out_tests" "$out_benchmarks" > "$combined"
 
-          # Save the captured errors as an output variable...
-          echo "stderr<<EOF" >> $GITHUB_OUTPUT
-          echo "$err_output" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
+          # Print the combined errors to the log:
+          cat "$combined"
 
       # Create sub-issue for C linting failures:
       - name: 'Create sub-issue for C lint failures'
@@ -426,7 +428,7 @@ jobs:
           ### Error Details
 
           \`\`\`
-          $(grep -B 1 -A 2 "style:\|warning:\|error:" <<< "${{ steps.lint-c.outputs.stderr }}")
+          $(grep -B 1 -A 2 "style:\|warning:\|error:" "lint_c_errors.txt")
           \`\`\`
           EOF
 
