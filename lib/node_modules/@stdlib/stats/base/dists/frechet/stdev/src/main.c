@@ -31,7 +31,7 @@
 * @return         standard deviation
 *
 * @example
-* double y = stdlib_base_frechet_stdev( 5.0, 2.0, 0.0 );
+* double y = stdlib_base_dists_frechet_stdev( 5.0, 2.0, 0.0 );
 * // returns ~0.731
 */
 double stdlib_base_dists_frechet_stdev( const double alpha, const double s, const double m ) {
