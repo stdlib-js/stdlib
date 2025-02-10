@@ -197,9 +197,42 @@ jobs:
 
       # Lint files against EditorConfig:
       - name: 'Lint against EditorConfig'
+        id: lint-editorconfig
         run: |
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' ' ')
-          make lint-editorconfig-files FILES="${files}"
+          make lint-editorconfig-files FILES="${files}" 2>&1 | tee lint_editorconfig_errors.txt
+
+      # Create sub-issue for EditorConfig lint failures:
+      - name: 'Create sub-issue for EditorConfig lint failures'
+        if: failure() && contains(steps.lint-editorconfig.outcome, 'failure')
+        env:
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+        run: |
+          BODY_FILE="$GITHUB_WORKSPACE/lint_issue_body.md"
+          cat << EOF > "$BODY_FILE"
+          ## EditorConfig Linting Failures
+
+          Linting failures were detected in the automated EditorConfig lint workflow run.
+
+          ### Workflow Details
+
+          - Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          - Type: EditorConfig Linting
+          - Date: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
+
+          ### Error Details
+
+          \`\`\`
+          $(cat lint_editorconfig_errors.txt)
+          \`\`\`
+          EOF
+
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_sub_issue" \
+            'Fix EditorConfig lint errors' \
+            "$BODY_FILE" \
+            "5156"
+
+          rm "$BODY_FILE"
 
       # Lint Markdown files:
       - name: 'Lint Markdown files'
