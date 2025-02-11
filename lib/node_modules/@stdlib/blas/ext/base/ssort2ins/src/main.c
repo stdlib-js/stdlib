@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2020 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -19,7 +19,8 @@
 #include "stdlib/blas/ext/base/ssort2ins.h"
 #include "stdlib/math/base/assert/is_negative_zerof.h"
 #include "stdlib/math/base/assert/is_nanf.h"
-#include <stdint.h>
+#include "stdlib/strided/base/stride2offset.h"
+#include "stdlib/blas/base/shared.h"
 #include <stdbool.h>
 
 /**
@@ -28,22 +29,43 @@
 * @param N        number of indexed elements
 * @param order    sort order
 * @param X        first input array
-* @param strideX  `X` index increment
+* @param strideX  stride length for `X`
 * @param Y        second input array
-* @param strideY  `Y` index increment
+* @param strideY  stride length for `Y`
 */
-void c_ssort2ins( const int64_t N, const float order, float *X, const int64_t strideX, float *Y, const int64_t strideY ) {
-	int64_t sx;
-	int64_t sy;
-	int64_t ix;
-	int64_t jx;
-	int64_t fx;
-	int64_t lx;
-	int64_t iy;
-	int64_t jy;
-	int64_t fy;
-	int64_t ly;
-	int64_t i;
+void API_SUFFIX(stdlib_strided_ssort2ins)( const CBLAS_INT N, const float order, float *X, const CBLAS_INT strideX, float *Y, const CBLAS_INT strideY ) {
+	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	CBLAS_INT oy = stdlib_strided_stride2offset( N, strideY );
+	API_SUFFIX(stdlib_strided_ssort2ins_ndarray)( N, order, X, strideX, ox, Y, strideY, oy );
+}
+
+
+/**
+* Simultaneously sorts two signle-precision floating-point strided arrays based on the sort order of the first array using insertion sort and alternative indexing semantics.
+*
+* @param N        number of indexed elements
+* @param order    sort order
+* @param X        first input array
+* @param strideX  stride length for `X`
+* @param offsetX  starting index for `X`
+* @param Y        second input array
+* @param strideY  stride length for `Y`
+* @param offsetY  starting index for `Y`
+*/
+void API_SUFFIX(stdlib_strided_ssort2ins_ndarray)( const CBLAS_INT N, const float order, float *X, CBLAS_INT strideX, CBLAS_INT offsetX, float *Y, CBLAS_INT strideY, CBLAS_INT offsetY ) {
+	CBLAS_INT sx;
+	CBLAS_INT sy;
+	CBLAS_INT ox;
+	CBLAS_INT oy;
+	CBLAS_INT ix;
+	CBLAS_INT jx;
+	CBLAS_INT fx;
+	CBLAS_INT lx;
+	CBLAS_INT iy;
+	CBLAS_INT jy;
+	CBLAS_INT fy;
+	CBLAS_INT ly;
+	CBLAS_INT i;
 	float vx;
 	float vy;
 	float ux;
@@ -54,26 +76,26 @@ void c_ssort2ins( const int64_t N, const float order, float *X, const int64_t st
 	}
 	// For a positive stride, sorting in decreasing order is equivalent to providing a negative stride and sorting in increasing order, and, for a negative stride, sorting in decreasing order is equivalent to providing a positive stride and sorting in increasing order...
 	if ( order < 0.0f ) {
-		sx = -strideX;
-		sy = -strideY;
+		sx = strideX * -1;
+		sy = strideY * -1;
+		ox = offsetX - ( (N-1) * sx );
+		oy = offsetY - ( (N-1) * sy );
 	} else {
 		sx = strideX;
 		sy = strideY;
+		ox = offsetX;
+		oy = offsetY;
 	}
-	if ( sy < 0 ) {
-		fy = (1-N) * sy;
-		ly = 0;
-	} else {
-		fy = 0;
-		ly = (N-1) * sy;
-	}
+	fx = ox;                // first index
+	lx = fx + ( (N-1)*sx ); // last index
+	ix = fx + sx;
+
+	fy = oy;                // first index
+	ly = fy + ( (N-1)*sy ); // last index
 	iy = fy + sy;
 
 	if ( sx < 0 ) {
 		// Traverse the strided array from right-to-left...
-		fx = (1-N) * sx;      // first index
-		lx = 0;               // last index
-		ix = fx + sx;
 
 		// Sort in increasing order...
 		for ( i = 1; i < N; i++ ) {
@@ -120,9 +142,6 @@ void c_ssort2ins( const int64_t N, const float order, float *X, const int64_t st
 		return;
 	}
 	// Traverse the strided array from left-to-right...
-	fx = 0;              // first index
-	lx = (N-1) * sx;     // last index
-	ix = fx + sx;
 
 	// Sort in increasing order...
 	for ( i = 1; i < N; i++ ) {
