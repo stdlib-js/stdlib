@@ -40,7 +40,7 @@ double API_SUFFIX(stdlib_strided_dnanasumors)( const CBLAS_INT N, const double *
 *
 * @param N        number of indexed elements
 * @param X        input array
-* @param strideX  index increment
+* @param strideX  stride length
 * @param offsetX  starting index
 * @return         output value
 */
@@ -53,13 +53,13 @@ double API_SUFFIX(stdlib_strided_dnanasumors_ndarray)( const CBLAS_INT N, const 
 	if ( N <= 0 ) {
 		return 0.0;
 	}
+	ix = offsetX;
 	if ( strideX == 0 ) {
-		if ( stdlib_base_is_nan( X[ offsetX ] ) ) {
+		if ( stdlib_base_is_nan( X[ ix ] ) ) {
 			return 0.0;
 		}
-		return stdlib_base_abs( X[ offsetX ] ) * N;
+		return stdlib_base_abs( X[ ix ] ) * N;
 	}
-	ix = offsetX;
 	sum = 0.0;
 	for ( i = 0; i < N; i++ ) {
 		v = X[ ix ];
