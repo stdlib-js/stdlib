@@ -32,7 +32,7 @@
 * @return    evaluated logPDF
 *
 * @example
-* double y = stdlib_base_dists_geometric_logpdf( 0.5, -1.0, 1.0, 0.0 );
+* double y = stdlib_base_dists_triangular_logpdf( 0.5, -1.0, 1.0, 0.0 );
 * // returns ~-0.693
 */
 double stdlib_base_dists_triangular_logpdf( const double x, const double a, const double b, const double c ) {

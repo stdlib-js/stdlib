@@ -27,7 +27,7 @@
 * @return          median
 *
 * @example
-* double y = stdlib_base_exponential_median( 9.0 );
+* double y = stdlib_base_dists_exponential_median( 9.0 );
 * // returns ~0.077
 */
 double stdlib_base_dists_exponential_median( const double lambda ) {
