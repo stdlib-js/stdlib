@@ -107,7 +107,7 @@ static double benchmark( void ) {
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		y = stdlib_base_dists_exponential_cdf( x[ i % 100 ], lambda[ i % 100 ]);
+		y = stdlib_base_dists_exponential_cdf( x[ i % 100 ], lambda[ i % 100 ] );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;

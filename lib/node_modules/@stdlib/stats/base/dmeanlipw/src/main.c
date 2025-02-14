@@ -18,7 +18,8 @@
 
 #include "stdlib/stats/base/dmeanlipw.h"
 #include "stdlib/blas/ext/base/dapxsumpw.h"
-#include <stdint.h>
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/stride2offset.h"
 
 /**
 * Computes the arithmetic mean of a double-precision floating-point strided array using a one-pass trial mean algorithm with pairwise summation.
@@ -27,24 +28,31 @@
 *
 * -   Ling, Robert F. 1974. "Comparison of Several Algorithms for Computing Sample Means and Variances." _Journal of the American Statistical Association_ 69 (348). American Statistical Association, Taylor & Francis, Ltd.: 859–66. doi:[10.2307/2286154](https://doi.org/10.2307/2286154).
 *
-* @param N       number of indexed elements
-* @param X       input array
-* @param stride  stride length
-* @return        output value
+* @param N        number of indexed elements
+* @param X        input array
+* @param strideX  stride length
+* @return         output value
 */
-double stdlib_strided_dmeanlipw( const int64_t N, const double *X, const int64_t stride ) {
-	int64_t ix;
+double API_SUFFIX(stdlib_strided_dmeanlipw)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX ) {
+	const CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	return API_SUFFIX(stdlib_strided_dmeanlipw_ndarray)( N, X, strideX, ox );
+}
 
+/**
+* Computes the arithmetic mean of a double-precision floating-point strided array using a one-pass trial mean algorithm with pairwise summation and alternative indexing semantics.
+*
+* @param N        number of indexed elements
+* @param X        input array
+* @param strideX  stride length
+* @param offsetX  starting index for X
+* @return         output value
+*/
+double API_SUFFIX(stdlib_strided_dmeanlipw_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
 	if ( N <= 0 ) {
 		return 0.0 / 0.0; // NaN
 	}
-	if ( N == 1 || stride == 0 ) {
-		return X[ 0 ];
+	if ( N == 1 || strideX == 0 ) {
+		return X[ offsetX ];
 	}
-	if ( stride < 0 ) {
-		ix = (1-N) * stride;
-	} else {
-		ix = 0;
-	}
-	return X[ ix ] + ( stdlib_strided_dapxsumpw( N-1, -X[ ix ], X+( (stride > 0) ? stride : 0 ), stride ) / (double)N );
+	return X[ offsetX ] + ( API_SUFFIX(stdlib_strided_dapxsumpw_ndarray)( N-1, -X[ offsetX ], X, strideX, offsetX + strideX ) / (double)N );
 }
