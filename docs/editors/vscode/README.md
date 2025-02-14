@@ -8,7 +8,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-   http://www.apache.org/licenses/LICENSE-2.0
+    http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -28,7 +28,7 @@ limitations under the License.
 
 Pre-built binaries are available for download on the Visual Studio Code [homepage][vscode].
 
-To use [Visual Studio Code][vscode] as a command-line utility, users on MacOS have to run a command to add the [Visual Studio Code][vscode] executable to the `PATH` environment variable (see the official [documentation][vscode-macos-setup]). 
+To use [Visual Studio Code][vscode] as a command-line utility, users on MacOS have to run a command to add the [Visual Studio Code][vscode] executable to the `PATH` environment variable (see the official [documentation][vscode-macos-setup]).
 
 To test the command-line utility,
 
@@ -113,7 +113,7 @@ $ code .
                 {
                     "text": "TODO:",
                     "color": "darkred",
-                    "backgroundColor": "rgba(0,0,0,.2)", 
+                    "backgroundColor": "rgba(0,0,0,.2)",
                     "isWholeLine": true
                 },
                 {

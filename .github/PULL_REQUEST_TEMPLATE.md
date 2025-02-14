@@ -14,7 +14,7 @@ This pull request:
 
 This pull request:
 
--   resolves #{{TODO: add issue number}} 
+-   resolves #{{TODO: add issue number}}
 
 ## Questions
 

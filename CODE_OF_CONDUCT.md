@@ -35,7 +35,7 @@ The following behaviors are **expected** of **all** community members:
 -   Be careful in the words you choose.
 -   Use welcoming and inclusive language.
 -   Refrain from demeaning, discriminatory, or harassing behavior and speech.
--   Avoid sarcasm in **any** form. What is considered benign by you is seen as caustic by others. 
+-   Avoid sarcasm in **any** form. What is considered benign by you is seen as caustic by others.
 -   Be respectful of differing viewpoints and experiences.
 -   Resist the urge to be defensive if someone takes issue with something you said or did. Even if you feel misinterpreted or unfairly accused, in all likelihood, you probably could have communicated better. **Remember**: it is **your** responsibility to make fellow community members comfortable and feel respected.
 -   Keep unstructured critique to a minimum. If you have solid contribution ideas, make a fork, experiment, and evaluate accordingly.
@@ -96,7 +96,7 @@ reported by contacting the [reporting team][reporting]. In your report, please i
 -   Any prior records of behavior either inside or outside the community which can be used to establish prior precedent.
 -   Any additional information that may be helpful.
 
-All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate. Complaint recipients are obligated to maintain confidentiality with regard to the reporter of an incident. 
+All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate. Complaint recipients are obligated to maintain confidentiality with regard to the reporter of an incident.
 
 If an accused person is part of the reporting team, they will recuse themselves from handling your incident. If the reporter is a reporting team member, the complaint will be handled by a different member of the reporting team.
 
@@ -124,7 +124,7 @@ This is a living document and may be updated over time. Refer to the [git histor
 
 ## Attribution
 
-This Code of Conduct borrows heavily from 
+This Code of Conduct borrows heavily from
 
 -   [npm Code of Conduct][npm-code-of-conduct]
 -   [#node.js IRC policy on trolling][nodejs-irc]

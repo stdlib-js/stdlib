@@ -8,7 +8,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-   http://www.apache.org/licenses/LICENSE-2.0
+    http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -105,7 +105,7 @@ This project follows the branching model articulated in ["A successful Git branc
 
 -   Before merging a hotfix branch into the `master` branch, the changes **must** be peer reviewed and pass continuous integration tests.
 
--   Once merged into `master`, if a release branch currently exists, submit a pull request against the `release` branch. Otherwise, submit a pull request against the `develop` branch. By merging a hotfix into a release branch, the hotfix changes should be propagated to the `develop` branch upon merging the release branch into the `develop` branch. 
+-   Once merged into `master`, if a release branch currently exists, submit a pull request against the `release` branch. Otherwise, submit a pull request against the `develop` branch. By merging a hotfix into a release branch, the hotfix changes should be propagated to the `develop` branch upon merging the release branch into the `develop` branch.
 
 * * *
 

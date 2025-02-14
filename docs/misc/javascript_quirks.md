@@ -26,4 +26,4 @@
 
 [java-math-round]: https://docs.oracle.com/javase/7/docs/api/java/lang/Math.html#round%28double%29
 
-</section> 
+</section>

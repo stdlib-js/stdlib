@@ -8,7 +8,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-   http://www.apache.org/licenses/LICENSE-2.0
+    http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -58,12 +58,12 @@ The **footer** is **optional**. When present, the footer must conform to the [co
 
 ```text
 <type>(<scope>): <short summary>
-  │       │             │
-  │       │             └─▶︎ Summary in imperative mood. Not capitalized. No period at the end.
-  │       │
-  │       └─▶︎ Commit Scope: noun describing section of the codebase
-  │
-  └─▶︎ Commit Type: bench|build|chore|deprecate|docs|feat|fix|perf|refactor|remove|revert|style|test|temp
+    │       │             │
+    │       │             └─▶︎ Summary in imperative mood. Not capitalized. No period at the end.
+    │       │
+    │       └─▶︎ Commit Scope: noun describing section of the codebase
+    │
+    └─▶︎ Commit Type: bench|build|chore|deprecate|docs|feat|fix|perf|refactor|remove|revert|style|test|temp
 ```
 
 The **type** and **short summary** fields are **mandatory**, and the **scope** field is **optional**.
@@ -72,7 +72,7 @@ The **type** and **short summary** fields are **mandatory**, and the **scope** f
 
 The **type** field labels a commit and indicates the category of change introduced by a commit. The project uses the following commit types:
 
--   **bench**: benchmark-only changes, such as adding missing benchmarks or correcting existing benchmarks. This type has lower precedence than other types, and, thus, benchmarks accompanying other types of changes can be categorized according to those other types. 
+-   **bench**: benchmark-only changes, such as adding missing benchmarks or correcting existing benchmarks. This type has lower precedence than other types, and, thus, benchmarks accompanying other types of changes can be categorized according to those other types.
 
 -   **build**: anything to do with building and releasing the project, including changes to automation and continuous integration configuration files and scripts (e.g., GitHub actions, CircleCI, Azure, etc).
 
@@ -106,7 +106,7 @@ The **type** field labels a commit and indicates the category of change introduc
 
 -   **style**: a change which improves code style (e.g., whitespace, formatting, semicolons, etc) and does not affect the meaning of code.
 
--   **test**: test-only changes, such as adding missing tests or correcting existing tests. This type has lower precedence than other types, and, thus, tests accompanying other types of changes can be categorized according to those other types. 
+-   **test**: test-only changes, such as adding missing tests or correcting existing tests. This type has lower precedence than other types, and, thus, tests accompanying other types of changes can be categorized according to those other types.
 
 -   **temp**: temporary, experimental, or exploratory changes that are not intended to be permanent. Occasionally, one may want to push changes to GitHub that are intended to be short-lived, such as when debugging continuous integration or ad-hoc debugging on live systems.
 

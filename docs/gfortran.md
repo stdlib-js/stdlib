@@ -8,7 +8,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-   http://www.apache.org/licenses/LICENSE-2.0
+    http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -104,37 +104,37 @@ A common scenario in numerical computing is exposing numerical computing librari
 ! add.f
 !<
 double precision function add( x, y )
-  implicit none
-  ! ..
-  ! Scalar arguments:
-  double precision :: x, y
-  ! ..
-  add = x + y;
-  return
+    implicit none
+    ! ..
+    ! Scalar arguments:
+    double precision :: x, y
+    ! ..
+    add = x + y;
+    return
 end function add
 ```
 
-While `add` may be used in conjunction with other Fortran files, we cannot use `add` directly from C because Fortran expects arguments to be passed by reference rather than by value. Furthermore, while not applicable here, Fortran functions can only return scalar values, not arrays. Thus, the general best practice is to wrap `add` as a subroutine (equivalent of a C function returning `(void)`), where we can pass a pointer for storing the output return value. 
+While `add` may be used in conjunction with other Fortran files, we cannot use `add` directly from C because Fortran expects arguments to be passed by reference rather than by value. Furthermore, while not applicable here, Fortran functions can only return scalar values, not arrays. Thus, the general best practice is to wrap `add` as a subroutine (equivalent of a C function returning `(void)`), where we can pass a pointer for storing the output return value.
 
 ```fortran
 !>
 ! addsub.f
 !<
 subroutine addsub( x, y, sum )
-  implicit none
-  ! ..
-  ! External functions:
-  interface
+    implicit none
+    ! ..
+    ! External functions:
+    interface
     double precision function add( x, y )
-      double precision :: x, y
+        double precision :: x, y
     end function add
-  end interface
-  ! ..
-  ! Scalar arguments:
-  double precision :: sum, x, y
-  ! ..
-  sum = add( x, y )
-  return
+    end interface
+    ! ..
+    ! Scalar arguments:
+    double precision :: sum, x, y
+    ! ..
+    sum = add( x, y )
+    return
 end subroutine addsub
 ```
 
@@ -170,9 +170,9 @@ where we prevent name mangling using `extern "C"`. Now that our Fortran code is 
 #include "add_fortran.h"
 
 double c_add( const double x, const double y ) {
-  double sum;
-  addsub( &x, &y, &sum );
-  return sum; 
+    double sum;
+    addsub( &x, &y, &sum );
+    return sum;
 }
 ```
 
@@ -208,9 +208,9 @@ These five files together comprise a library which may be used by other librarie
 #include "add.h"
 
 int main( void ) {
-  double sum = add( 1, 2 );
-  printf( "Result: %.2f\n", sum );
-  return 0;
+    double sum = add( 1, 2 );
+    printf( "Result: %.2f\n", sum );
+    return 0;
 }
 ```
 

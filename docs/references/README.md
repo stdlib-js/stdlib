@@ -39,7 +39,7 @@ The database is a [BibTeX][bibtex] database file, where the file format is a pla
 }
 ```
 
-corresponds to Bay's and Durham's 1976 article "Improving a Poor Random Number Generator" appearing in the journal _ACM Transactions on Mathematical Software_. 
+corresponds to Bay's and Durham's 1976 article "Improving a Poor Random Number Generator" appearing in the journal _ACM Transactions on Mathematical Software_.
 
 </section>
 

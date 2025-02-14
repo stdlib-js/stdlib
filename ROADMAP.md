@@ -8,7 +8,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-   http://www.apache.org/licenses/LICENSE-2.0
+    http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -36,7 +36,7 @@ The third major theme is data visualization. Building on the first and second th
 
 The fourth major theme is automation. Automation is critical for the project's ability to scale and to streamline the development experience. This work will make stdlib one of the most innovative and developer friendly open source projects.
 
-Last, the final theme is documentation. Part of this effort will be continuing to build a web presence and demonstrating the need and importance for stdlib. This work will enable the project to grow and attract both users and contributors.   
+Last, the final theme is documentation. Part of this effort will be continuing to build a web presence and demonstrating the need and importance for stdlib. This work will enable the project to grow and attract both users and contributors.
 
 ## Details
 

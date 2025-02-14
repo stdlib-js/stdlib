@@ -21,8 +21,8 @@ Usage: TODO [options]
 
 Options:
 
-  -h,    --help                Print this message.
-  -V,    --version             Print the package version.
+    -h,    --help                Print this message.
+    -V,    --version             Print the package version.
 ```
 
 </section>

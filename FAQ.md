@@ -8,7 +8,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-   http://www.apache.org/licenses/LICENSE-2.0
+    http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -160,7 +160,7 @@ The popularity of Node.js due to its ease-of-use and growing ubiquity in the HTT
 -   a serverless application which performs a machine learning computation without needing to install and bundle all of, e.g., Python, [NumPy][numpy], and [SciPy][scipy], thus saving time, money, and resources (all by virtue of Node.js' dominance in serverless cloud offerings, such as AWS Lambda, Google Cloud, and Microsoft Azure).
 -   browserless model computation done entirely in JavaScript.
 
-While other languages and platforms exist which _may_ be better suited for specific use cases, particularly those requiring bare metal performance or involving massive data sets, when considered in totality, the opinion of this project is that JavaScript (and Node.js) provides a comparable, if not better, environment for numerical and scientific computation than other competitor environments.  
+While other languages and platforms exist which _may_ be better suited for specific use cases, particularly those requiring bare metal performance or involving massive data sets, when considered in totality, the opinion of this project is that JavaScript (and Node.js) provides a comparable, if not better, environment for numerical and scientific computation than other competitor environments.
 
 <!-- </faq-question> -->
 
@@ -185,7 +185,7 @@ You should use JavaScript because
 9.  **Community**: you want to leverage the continually growing JavaScript and Node.js community. JavaScript has one of the [largest][stackoverflow-developer-survey] and most diverse developer [ecosystems][stackoverflow-developer-survey]. Using JavaScript means greater access to help, expertise, and resources, including tutorials, workshops, and education materials.
 10. **Visualization**: you want tighter integration between computation and data visualization. Other languages require intermediary layers to translate computational results into visual artifacts. These layers often involve network requests, longer latency, and increased complexity. Using JavaScript for numerical computation removes the need for intermediaries, allowing immediate and more transparent integration between computation and visualization.
 11. **Mad science**: you are interested in mad science applications. Certain applications are only possible in JavaScript due to tight integration between the language and web APIs (e.g., client-based peer-to-peer distributed computing).
-12. **Future**: you want to be part of the future: a future where numerical and scientific computation in JavaScript is not only possible, but also inevitable. 
+12. **Future**: you want to be part of the future: a future where numerical and scientific computation in JavaScript is not only possible, but also inevitable.
 
 <!-- </faq-question> -->
 
@@ -200,7 +200,7 @@ You should use JavaScript because
 Native [add-ons][node-add-ons] have several disadvantages:
 
 1.  **Maintenance**: historically, native [add-ons][node-add-ons] have entailed considerable maintenance costs. Due to a rapidly changing V8 API and a V8 development approach which does not prioritize backward compatibility, each successive Node.js version required rewriting native [add-ons][node-add-ons] to accommodate breaking changes. To address initially this problem, the Native Abstractions for Node.js project ([NAN][node-nan]) provided a V8 API abstraction layer which [add-ons][node-add-ons] could target, thus allowing an [add-on][node-add-ons] to maintain compatibility between Node.js versions. While [NAN][node-nan] did reduce maintenance costs, costs were not entirely eliminated. [NAN][node-nan] has been superseded by an [ABI stable API][node-napi] (N-API), which provides a similar abstraction layer but also across VMs (e.g., V8 and Chakra). While N-API significantly reduces native add-on maintenance burden, that burden is not zero.
-2.  **Portability**: the primary means for building native [add-ons][node-add-ons] is [node-gyp][node-gyp], a tool which wraps [GYP][gyp] (a deprecated build tool formerly used by the Chromium team) and aims to provide a cross-platform approach for compiling Node.js native [add-ons][node-add-ons]. While [GYP][gyp] is suitable for many native [add-on][node-add-ons] use cases, the tool is less well-suited for building numerical and scientific computing libraries. In particular, [GYP][gyp] is primarily oriented toward compiling C/C++ libraries and applications. This orientation is problematic because numerical computing libraries often require the ability to not only compile C/C++, but also Fortran, CUDA, and other compiled languages. On Linux systems, [GYP][gyp] can leverage the GNU compiler toolchain, including [gfortran][gfortran]; however, [node-gyp][node-gyp]'s reliance on Microsoft Visual Studio (MSVS) [prevents][msvs-fortran-issue] compiling [add-ons][node-add-ons] containing Fortran code on Windows. Furthermore, building [add-ons][node-add-ons] on Windows requires installing Windows [build tools][node-windows-build-tools], and, currently, the [recommended][node-windows-build-tools] means of installation is not backward compatible with Node.js environments prior to version `4`. Lastly, while pre-building binaries is one way to circumvent compilation and portability issues, cross-compilation is neither straightforward nor foolproof and does not obviate the need for portable compilation (see debugging below). 
+2.  **Portability**: the primary means for building native [add-ons][node-add-ons] is [node-gyp][node-gyp], a tool which wraps [GYP][gyp] (a deprecated build tool formerly used by the Chromium team) and aims to provide a cross-platform approach for compiling Node.js native [add-ons][node-add-ons]. While [GYP][gyp] is suitable for many native [add-on][node-add-ons] use cases, the tool is less well-suited for building numerical and scientific computing libraries. In particular, [GYP][gyp] is primarily oriented toward compiling C/C++ libraries and applications. This orientation is problematic because numerical computing libraries often require the ability to not only compile C/C++, but also Fortran, CUDA, and other compiled languages. On Linux systems, [GYP][gyp] can leverage the GNU compiler toolchain, including [gfortran][gfortran]; however, [node-gyp][node-gyp]'s reliance on Microsoft Visual Studio (MSVS) [prevents][msvs-fortran-issue] compiling [add-ons][node-add-ons] containing Fortran code on Windows. Furthermore, building [add-ons][node-add-ons] on Windows requires installing Windows [build tools][node-windows-build-tools], and, currently, the [recommended][node-windows-build-tools] means of installation is not backward compatible with Node.js environments prior to version `4`. Lastly, while pre-building binaries is one way to circumvent compilation and portability issues, cross-compilation is neither straightforward nor foolproof and does not obviate the need for portable compilation (see debugging below).
 3.  **Web browsers**: native [add-ons][node-add-ons] are not compatible with or portable to web browsers. ([WebAssembly][wasm] will not change this fact.)
 4.  **Complexity**: compilation presupposes the existence of compilers (e.g., [gfortran][gfortran]) and other tooling in order to successfully compile, thus often requiring out-of-band installation, setup, and configuration. In short, compilation increases complexity and increases the risk that something can and will go wrong.
 5.  **Development**: native Node.js [add-ons][node-add-ons] require significant upfront development costs compared to porting implementations to JavaScript. Creating a native [add-on][node-add-ons] entails more than writing a simple wrapper around an existing C/C++ library; the process involves additional tooling, testing, and development procedures, all requiring time and effort. These costs are acutely apparent during iteration cycles targeting multiple platforms. In comparison, as a higher-level language, JavaScript facilitates faster development, has built-in portability, and has minimized performance costs.
@@ -272,13 +272,13 @@ The reasons are as follows:
 
 <!--lint disable list-item-spacing-->
 
-1.  **underspecified standard**: the ECMAScript specification for the standard Math library is underspecified, but not without merit. Namely, underspecification allows those implementing the specification to make trade-offs between speed and accuracy. Were the specification to mandate a particular algorithm, e.g., for `Math.sin`, implementers would be locked into **always** using a particular implementation. Especially for special functions, different algorithms will yield different results under varying conditions. Thus, to change an underlying algorithm would mean to break backward compatibility. By not committing themselves to any hard backward compatibility constraints, implementors maintain a degree of flexibility, including the ability to use algorithms which cater to a particular user base (gaming versus numerical computing). In which case, underspecification has advantages.   
+1.  **underspecified standard**: the ECMAScript specification for the standard Math library is underspecified, but not without merit. Namely, underspecification allows those implementing the specification to make trade-offs between speed and accuracy. Were the specification to mandate a particular algorithm, e.g., for `Math.sin`, implementers would be locked into **always** using a particular implementation. Especially for special functions, different algorithms will yield different results under varying conditions. Thus, to change an underlying algorithm would mean to break backward compatibility. By not committing themselves to any hard backward compatibility constraints, implementors maintain a degree of flexibility, including the ability to use algorithms which cater to a particular user base (gaming versus numerical computing). In which case, underspecification has advantages.
 
 2.  **cross-browser variability**: an underspecified standard, however, has disadvantages. Because implementors are free to choose underlying algorithms, relying exclusively on built-in Math functionality renders portability across more than one environment impossible. Even if all implementors happened to use the same underlying algorithm, a developer cannot, _a priori_, **guarantee** or assume that only one algorithm is implemented. The default assumption must be: _if more than one algorithm can exist, more than one algorithm will exist_.
 
 3.  **no single codebase**: unlike other standard libraries (e.g., Golang, Python, Julia, etc), JavaScript does not have a single shared codebase. Each browser manufacturer has their own implementation and independent codebase with varying architecture and organization. More fundamentally, a common _implementation_ does **not** exist; only common _interfaces_ exist. Thus, a developer wanting to write a numerical application must navigate and understand multiple sources of truth. Such expenditures incur significant overhead, especially when wanting to file issues, submit patches, or standardize a particular algorithm. For example, a patch in Chrome does not translate to a patch in all other web browsers. Because each implementor is free to erect a protected castle, those writing numerical algorithms are resigned to treating the standard Math library as a black box and must always cater to the lowest common denominator (which is often the empirically determined slowest and/or least precise algorithm).
 
-4.  **versioning**: a developer does not have the freedom to choose which version of a particular algorithm she is given. In an "evergreen" environment, her application is only guaranteed a consistent interface, not an underlying implementation. Each background update may influence results in subtle ways and introduce bugs and unforeseen variability. A developer relying exclusively on standard library built-ins cannot assume reproducibility upon relaunching a browser. Thus, not only is cross-browser portability problematic, but same-browser-different-version portability is problematic. 
+4.  **versioning**: a developer does not have the freedom to choose which version of a particular algorithm she is given. In an "evergreen" environment, her application is only guaranteed a consistent interface, not an underlying implementation. Each background update may influence results in subtle ways and introduce bugs and unforeseen variability. A developer relying exclusively on standard library built-ins cannot assume reproducibility upon relaunching a browser. Thus, not only is cross-browser portability problematic, but same-browser-different-version portability is problematic.
 
 5.  **required shims**: because no common codebase exists and implementors make mistakes, application developers are dependent on shims (i.e., libraries which ensure consistent implementations across browsers, provide missing built-in functionality, and patch bugs). The issue here, of course, is that, if an application developer must supply a shim, reduced network cost due to the presence of built-ins is non-existent: an implementation is sent over the network regardless in order to patch a possibly buggy environment. While a developer could use browser sniffing and HTTP2 to lazily load patches, such practices incur a performance cost. Accordingly, if an implementation is sent irrespective of whether an environment provides an implementation natively, why does an environment need to guarantee the existence of an implementation in the first place?
 
@@ -380,7 +380,7 @@ NOTE: see https://nodejs.org/api/worker_threads.html
 
 -   **Consistency**: package structure, documentation, testing, and code style vary widely, often as artifacts of author taste and eccentricities. By adhering to a single style, library consumers can focus on implementation details, rather than continual and arbitrary style distractions.
 -   **Quality**: packages range from extremely high quality to extremely poor quality, with the distribution of packages skewed toward the latter end of the spectrum. Any reimplementation of existing package functionality is done to ensure the same high standard and quality across all project modules.
--   **Control**: bringing functionality "in-house" enables control of release cycles, testing, distribution, interface design, and API changes. 
+-   **Control**: bringing functionality "in-house" enables control of release cycles, testing, distribution, interface design, and API changes.
 
 <!-- </faq-question> -->
 
@@ -592,74 +592,74 @@ In general, far too many developers are oblivious to the module resolution [algo
 
 ```text
 /
-  app/
-      index.js
-      a.js
-      b.js
-      node_modules/ # => local app dependencies
-          debug/
-              index.js
-          logger/
-              index.js
-      routes/
-          index.js
-          login/
-              index.js
-              login.js
-              post.js
-              onerror.js
-          logout/
-              index.js
-              logout.js
-              post.js
-              onerror.js
-          node_modules/ # => local routes dependencies
-              start/
-                  index.js
-              end/
-                  index.js
-              response-time/
-                  index.js
-      models/
-          index.js
-          c.js
-          d.js
-          user/
-              index.js
-              e.js
-              f.js
-              node_modules/ # => local user model dependencies
-                  foo/
-                      index.js
-                  bar/
-                      index.js
-          data/
-              index.js
-              g.js
-              h.js
-              i.js
-              node_modules/ # => local data model dependencies
-                  transform/
-                      index.js
-                  analyze/
-                      index.js
-                  morph/
-                      index.js
-          node_modules/ # => local models dependencies
-              db-connect/
-                  index.js
-              db-get/
-                  index.js
-              db-set/
-                  index.js
-              db-update/
-                  index.js
-              db-delete/
-                  index.js
-  node_modules/ # => external dependencies
-      beep/
-      boop/
-      bop/
+    app/
+        index.js
+        a.js
+        b.js
+        node_modules/ # => local app dependencies
+            debug/
+                index.js
+            logger/
+                index.js
+        routes/
+            index.js
+            login/
+                index.js
+                login.js
+                post.js
+                onerror.js
+            logout/
+                index.js
+                logout.js
+                post.js
+                onerror.js
+            node_modules/ # => local routes dependencies
+                start/
+                    index.js
+                end/
+                    index.js
+                response-time/
+                    index.js
+        models/
+            index.js
+            c.js
+            d.js
+            user/
+                index.js
+                e.js
+                f.js
+                node_modules/ # => local user model dependencies
+                    foo/
+                        index.js
+                    bar/
+                        index.js
+            data/
+                index.js
+                g.js
+                h.js
+                i.js
+                node_modules/ # => local data model dependencies
+                    transform/
+                        index.js
+                    analyze/
+                        index.js
+                    morph/
+                        index.js
+            node_modules/ # => local models dependencies
+                db-connect/
+                    index.js
+                db-get/
+                    index.js
+                db-set/
+                    index.js
+                db-update/
+                    index.js
+                db-delete/
+                    index.js
+    node_modules/ # => external dependencies
+        beep/
+        boop/
+        bop/
 ```
 
 where `g.js`

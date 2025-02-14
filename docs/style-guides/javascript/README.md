@@ -35,7 +35,7 @@
 
 ## Introduction
 
-Always abide by the **Law of Code Style Consistency**, or, in other words, _when in Rome, do as the Romans do_. 
+Always abide by the **Law of Code Style Consistency**, or, in other words, _when in Rome, do as the Romans do_.
 
 While the code base to which you want to contribute may be a horrific mess in terms of aesthetic appearance and style, style consistency takes precedence over personal preference and canon. The more consistent a code base is in terms of style, the more readers of the code can focus on what the code does rather than deciphering changes in style.
 
@@ -971,7 +971,7 @@ Code review.
 
 ##### Reason
 
-When copying a small `array`, using `Array#slice()` incurs a function overhead which outweighs benefits. Thus, a `for` loop is more efficient. For larger `arrays`, function cost is comparable to or less than loop cost in addition to the runtime engine being able to optimize for copying large chunks of memory. 
+When copying a small `array`, using `Array#slice()` incurs a function overhead which outweighs benefits. Thus, a `for` loop is more efficient. For larger `arrays`, function cost is comparable to or less than loop cost in addition to the runtime engine being able to optimize for copying large chunks of memory.
 
 ##### Small Array Example
 
@@ -3402,7 +3402,7 @@ Testing, debugging, maintainability, composition, focused interfaces, and interc
 ##### Enforcement
 
 -   Look for parts of an implementation which can be extracted into reusable components.
--   Code review 
+-   Code review
 
 <!-- </rule> -->
 
