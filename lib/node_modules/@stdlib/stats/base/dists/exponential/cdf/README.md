@@ -130,10 +130,6 @@ for ( i = 0; i < 10; i++ ) {
 
 <!-- /.examples -->
 
-<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-<section class="references">
-
 <!-- C interface documentation. -->
 
 * * *
@@ -162,7 +158,7 @@ for ( i = 0; i < 10; i++ ) {
 
 #### stdlib_base_dists_exponential_cdf( x, lambda )
 
-Evaluates the [probability density function][cdf] (cdf) for an [exponential][exponential-distribution] distribution with rate parameter `lambda`.
+Evaluates the [cumulative distribution function][cdf] (cdf) for an [exponential][exponential-distribution] distribution with rate parameter `lambda`.
 
 ```c
 double out = stdlib_base_dists_exponential_cdf( 2.0, 0.7 );
@@ -225,6 +221,12 @@ int main( void ) {
 </section>
 
 <!-- /.references -->
+
+<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="references">
+
+</section>
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
