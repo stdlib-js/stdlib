@@ -69,7 +69,7 @@ rules[ 'stdlib/capitalized-comments' ] = [ 'warn', {
 		'stdlib',
 		'throws'
 	]
-} ];
+}];
 
 /**
 * Enforce that return annotation values match actual output.
@@ -3860,6 +3860,52 @@ rules[ 'stdlib/jsdoc-unordered-list-marker-style' ] = [ 'error', '-' ];
 * *\/
 */
 rules[ 'stdlib/jsdoc-main-export' ] = 'error';
+
+/**
+* Disallow spaces between a closing parenthesis or bracket and a nested object or array expression at the beginning of a line.
+*
+* @name line-closing-bracket-spacing
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var log = require( '@stdlib/console/log' );
+*
+* log({
+*   'foo': true
+* } );
+*
+* log([
+*   1,
+*   2,
+*   3
+* ] );
+*
+* log([{
+*   'bar': true
+* } ] );
+*
+* @example
+* // Good...
+* var log = require( '@stdlib/console/log' );
+*
+* log({
+*   'foo': true
+* });
+*
+* log([
+*   1,
+*   2,
+*   3
+* ]);
+*
+* log([{
+*   'bar': true
+* }]);
+*/
+rules[ 'stdlib/line-closing-bracket-spacing' ] = 'error';
 
 /**
 * Enforce that export statements are placed at the end of a file.

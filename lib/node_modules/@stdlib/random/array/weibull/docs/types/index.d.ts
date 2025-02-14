@@ -138,8 +138,8 @@ interface TernaryFunction extends PRNG {
 	* Returns an array containing pseudorandom numbers drawn from a Weibull distribution.
 	*
 	* @param len - array length
-	* @param k - scale parameter
-	* @param lambda - shape parameter
+	* @param k - shape parameter
+	* @param lambda - scale parameter
 	* @param options - function options
 	* @returns output array
 	*/
@@ -148,8 +148,8 @@ interface TernaryFunction extends PRNG {
 	/**
 	* Fills an array with pseudorandom numbers drawn from a Weibull distribution.
 	*
-	* @param k - scale parameter
-	* @param lambda - shape parameter
+	* @param k - shape parameter
+	* @param lambda - scale parameter
 	* @param out - output array
 	* @returns output array
 	*/
@@ -164,8 +164,8 @@ interface Random extends PRNG {
 	* Returns an array containing pseudorandom numbers drawn from a Weibull distribution.
 	*
 	* @param len - array length
-	* @param k - scale parameter
-	* @param lambda - shape parameter
+	* @param k - shape parameter
+	* @param lambda - scale parameter
 	* @param options - function options
 	* @returns output array
 	*
@@ -178,8 +178,8 @@ interface Random extends PRNG {
 	/**
 	* Fills an array with pseudorandom numbers drawn from a Weibull distribution.
 	*
-	* @param k - scale parameter
-	* @param lambda - shape parameter
+	* @param k - shape parameter
+	* @param lambda - scale parameter
 	* @param out - output array
 	* @returns output array
 	*
@@ -204,8 +204,8 @@ interface Random extends PRNG {
 	*
 	* -   When provided distribution parameters, the returned function returns random variates drawn from the specified distribution.
 	*
-	* @param k - scale parameter
-	* @param lambda - shape parameter
+	* @param k - shape parameter
+	* @param lambda - scale parameter
 	* @param options - function options
 	* @throws must provide a valid state
 	* @returns function for creating arrays
@@ -256,8 +256,8 @@ interface Random extends PRNG {
 * Returns an array containing pseudorandom numbers drawn from a Weibull distribution.
 *
 * @param len - array length
-* @param k - scale parameter
-* @param lambda - shape parameter
+* @param k - shape parameter
+* @param lambda - scale parameter
 * @param options - function options
 * @returns output array
 *
