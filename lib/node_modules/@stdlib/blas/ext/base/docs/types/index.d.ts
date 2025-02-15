@@ -333,9 +333,9 @@ interface Namespace {
 	* @param N - number of indexed elements
 	* @param sum - initial sum
 	* @param x - input array
-	* @param strideX - `x` stride length
+	* @param strideX - stride length for `x`
 	* @param y - output array
-	* @param strideY - `y` stride length
+	* @param strideY - stride length for `y`
 	* @returns output array
 	*
 	* @example
@@ -395,9 +395,9 @@ interface Namespace {
 	* @param N - number of indexed elements
 	* @param sum - initial sum
 	* @param x - input array
-	* @param strideX - `x` stride length
+	* @param strideX - stride length for `x`
 	* @param y - output array
-	* @param strideY - `y` stride length
+	* @param strideY - stride length for `y`
 	* @returns output array
 	*
 	* @example
@@ -457,9 +457,9 @@ interface Namespace {
 	* @param N - number of indexed elements
 	* @param sum - initial sum
 	* @param x - input array
-	* @param strideX - `x` stride length
+	* @param strideX - stride length for `x`
 	* @param y - output array
-	* @param strideY - `y` stride length
+	* @param strideY - stride length for `y`
 	* @returns output array
 	*
 	* @example
@@ -2983,9 +2983,9 @@ interface Namespace {
 	* @param N - number of indexed elements
 	* @param order - sort order
 	* @param x - first input array
-	* @param strideX - `x` stride length
+	* @param strideX - stride length for `x`
 	* @param y - second input array
-	* @param strideY - `y` stride length
+	* @param strideY - stride length for `y`
 	* @returns first input array
 	*
 	* @example
