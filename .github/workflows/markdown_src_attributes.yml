@@ -23,7 +23,7 @@ name: markdown_src_attributes
 on:
   schedule:
     # Run the workflow once a month on the 1st day of every month:
-    - cron:  "0 0 1 * *"
+    - cron: '0 0 1 * *'
 
   # Allow the workflow to be manually run:
   workflow_dispatch:
@@ -63,7 +63,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -73,6 +73,9 @@ jobs:
 
           # Specify whether to download Git-LFS files:
           lfs: false
+
+          # Avoid storing GitHub token in local Git configuration:
+          persist-credentials: false
         timeout-minutes: 10
 
       # Initialize log files:
@@ -116,7 +119,7 @@ jobs:
       # Upload the log files:
       - name: 'Upload log files'
         # Pin action to full length commit SHA
-        uses: actions/upload-artifact@b4b15b8c7c6ac21ea08fcf65892d2ee8f75cf882 # v4.4.3
+        uses: actions/upload-artifact@65c4c4a1ddee5b72f698fdd19549f0f0fb45cf08 # v4.6.0
         if: always()
         with:
           # Define a name for the uploaded artifact:

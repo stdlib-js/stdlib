@@ -19,6 +19,7 @@
 /**
 * Benchmark complex number negation.
 */
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>

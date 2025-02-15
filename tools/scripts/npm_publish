@@ -538,7 +538,7 @@ publish() {
 # Updates a remote repository.
 update_remote_repository() {
 	echo 'Pushing tags to remote repository...' >&2
-	git push origin "v${release_version}"
+	git push origin "v${release_version}" --no-verify
 	if [[ "$?" -ne 0 ]]; then
 		echo '' >&2
 		echo 'Error: unexpected error. Encountered an error when attempting to push tags to remote repository.' >&2

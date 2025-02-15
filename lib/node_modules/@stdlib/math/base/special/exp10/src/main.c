@@ -110,7 +110,7 @@ static double polyval_q( const double x ) {
 *     | IEEE       | -307,+307   |  30000   | 2.2e-16 | 5.5e-17 |
 *
 * @param x    input value
-* @return	  output value
+* @return     output value
 *
 * @example
 * double out = stdlib_base_exp10( 2.0 );
