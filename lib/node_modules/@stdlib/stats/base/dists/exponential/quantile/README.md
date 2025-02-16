@@ -55,7 +55,7 @@ var quantile = require( '@stdlib/stats/base/dists/exponential/quantile' );
 
 #### quantile( p, lambda )
 
-Evaluates the [quantile function][quantile-function] for a [exponential][exponential-distribution] distribution with rate parameter `lambda`.
+Evaluates the [quantile function][quantile-function] for an [exponential][exponential-distribution] distribution with rate parameter `lambda`.
 
 ```javascript
 var y = quantile( 0.5, 0.1 );
@@ -165,7 +165,7 @@ for ( i = 0; i < 10; i++ ) {
 
 #### stdlib_base_dists_exponential_quantile( p, lambda )
 
-Evaluates the [quantile function][quantile-function] for a [exponential][exponential-distribution] distribution with rate parameter `lambda`.
+Evaluates the [quantile function][quantile-function] for an [exponential][exponential-distribution] distribution with rate parameter `lambda`.
 
 ```c
 double out = stdlib_base_dists_exponential_quantile( 0.8, 1.0 );
