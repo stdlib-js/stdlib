@@ -2037,44 +2037,24 @@ interface Namespace {
 	* @example
 	* var Complex128Array = require( '@stdlib/array/complex128' );
 	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
 	*
 	* var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 	* var zy = new Complex128Array( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
 	* var za = new Complex128( 2.0, 2.0 );
 	*
 	* ns.zaxpy( 2, za, zx, 2, zy, 2 );
-	*
-	* var z = zy.get( 0 );
-	* // returns <Complex128>
-	*
-	* var re = real( z );
-	* // returns -1.0
-	*
-	* var im = imag( z );
-	* // returns 7.0
+	* // zy => <Complex128Array>[ -1.0, 7.0, 1.0, 1.0, -1.0, 23.0, 1.0, 1.0 ]
 	*
 	* @example
 	* var Complex128Array = require( '@stdlib/array/complex128' );
 	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
 	*
 	* var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 	* var zy = new Complex128Array( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
 	* var za = new Complex128( 2.0, 2.0 );
 	*
 	* ns.zaxpy.ndarray( 3, za, zx, 1, 1, zy, 1, 1 );
-	*
-	* var z = zy.get( 3 );
-	* // returns <Complex128>
-	*
-	* var re = real( z );
-	* // returns -1.0
-	*
-	* var im = imag( z );
-	* // returns 31.0
+	* // zy => <Complex128Array>[ 1.0, 1.0, -1.0, 15.0, -1.0, 23.0, -1.0, 31.0 ]
 	*/
 	zaxpy: typeof zaxpy;
 
@@ -2122,59 +2102,23 @@ interface Namespace {
 	*
 	* @example
 	* var Complex128Array = require( '@stdlib/array/complex128' );
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
 	*
 	* var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 	* var zy = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 	*
 	* ns.zdrot( 2, zx, 2, zy, 1, 0.8, 0.6 );
-	*
-	* var z = zy.get( 0 );
-	* // returns <Complex128>
-	*
-	* var re = real( z );
-	* // returns -0.6
-	*
-	* var im = imag( z );
-	* // returns -1.2
-	*
-	* z = zx.get( 0 );
-	* // returns <Complex128>
-	*
-	* re = real( z );
-	* // returns 0.8
-	*
-	* im = imag( z );
-	* // returns 1.6
+	* // zx => <Complex128Array>[ ~0.8, ~1.6, 3.0, 4.0, 4.0, ~4.8, 7.0, 8.0 ]
+	* // zy => <Complex128Array>[ ~-0.6, ~-1.2, -3.0, ~-3.6, 0.0, 0.0, 0.0, 0.0 ]
 	*
 	* @example
 	* var Complex128Array = require( '@stdlib/array/complex128' );
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
 	*
 	* var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 	* var zy = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 	*
 	* ns.zdrot.ndarray( 2, zx, 2, 0, zy, 1, 0, 0.8, 0.6 );
-	*
-	* var z = zy.get( 0 );
-	* // returns <Complex128>
-	*
-	* var re = real( z );
-	* // returns -0.6
-	*
-	* var im = imag( z );
-	* // returns -1.2
-	*
-	* z = zx.get( 0 );
-	* // returns <Complex128>
-	*
-	* re = real( z );
-	* // returns 0.8
-	*
-	* im = imag( z );
-	* // returns 1.6
+	* // zx => <Complex128Array>[ ~0.8, ~1.6, 3.0, 4.0, 4.0, ~4.8, 7.0, 8.0 ]
+	* // zy => <Complex128Array>[ ~-0.6, ~-1.2, -3.0, ~-3.6, 0.0, 0.0, 0.0, 0.0 ]
 	*/
 	zdrot: typeof zdrot;
 
@@ -2190,42 +2134,22 @@ interface Namespace {
 	* @example
 	* var Complex128Array = require( '@stdlib/array/complex128' );
 	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
 	*
 	* var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 	* var za = new Complex128( 2.0, 2.0 );
 	*
 	* ns.zscal( 3, za, zx, 1 );
-	*
-	* var z = zx.get( 1 );
-	* // returns <Complex128>
-	*
-	* var re = real( z );
-	* // returns -2.0
-	*
-	* var im = imag( z );
-	* // returns 14.0
+	* // zx => <Complex128Array>[ -2.0, 6.0, -2.0, 14.0, -2.0, 22.0 ]
 	*
 	* @example
 	* var Complex128Array = require( '@stdlib/array/complex128' );
 	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
 	*
 	* var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 	* var za = new Complex128( 2.0, 2.0 );
 	*
 	* ns.zscal.ndarray( 2, za, zx, 1, 1 );
-	*
-	* var z = zx.get( 1 );
-	* // returns <Complex128>
-	*
-	* var re = real( z );
-	* // returns -2.0
-	*
-	* var im = imag( z );
-	* // returns 14.0
+	* // zx => <Complex128Array>[ -2.0, 6.0, -2.0, 14.0, -2.0, 22.0 ]
 	*/
 	zscal: typeof zscal;
 
@@ -2241,59 +2165,23 @@ interface Namespace {
 	*
 	* @example
 	* var Complex128Array = require( '@stdlib/array/complex128' );
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
 	*
 	* var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-	* var y = new Complex128Array( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+	* var y = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 	*
 	* ns.zswap( x.length, x, 1, y, 1 );
-	*
-	* var z = y.get( 0 );
-	* // returns <Complex128>
-	*
-	* var re = real( z );
-	* // returns 1.0
-	*
-	* var im = imag( z );
-	* // returns 2.0
-	*
-	* z = x.get( 0 );
-	* // returns <Complex128>
-	*
-	* re = real( z );
-	* // returns 7.0
-	*
-	* im = imag( z );
-	* // returns 8.0
+	* // x => <Complex128Array>[ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+	* // y => <Complex128Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ]
 	*
 	* @example
 	* var Complex128Array = require( '@stdlib/array/complex128' );
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
 	*
 	* var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-	* var y = new Complex128Array( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+	* var y = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 	*
 	* ns.zswap.ndarray( x.length, x, 1, 0, y, 1, 0 );
-	*
-	* var z = y.get( 0 );
-	* // returns <Complex128>
-	*
-	* var re = real( z );
-	* // returns 1.0
-	*
-	* var im = imag( z );
-	* // returns 2.0
-	*
-	* z = x.get( 0 );
-	* // returns <Complex128>
-	*
-	* re = real( z );
-	* // returns 7.0
-	*
-	* im = imag( z );
-	* // returns 8.0
+	* // x => <Complex128Array>[ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+	* // y => <Complex128Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ]
 	*/
 	zswap: typeof zswap;
 }

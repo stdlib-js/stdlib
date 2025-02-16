@@ -94,7 +94,7 @@
 "@stdlib/number/float64/base/add",base.add
 "@stdlib/number/float64/base/add3",base.add3
 "@stdlib/number/float64/base/add4",base.add4
-"@stdlib/math/base/ops/add5",base.add5
+"@stdlib/number/float64/base/add5",base.add5
 "@stdlib/math/base/ops/addf",base.addf
 "@stdlib/array/base/filled",base.afilled
 "@stdlib/array/base/filled2d",base.afilled2d
