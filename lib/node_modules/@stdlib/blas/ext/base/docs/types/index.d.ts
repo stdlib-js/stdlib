@@ -364,9 +364,9 @@ interface Namespace {
 	* @param N - number of indexed elements
 	* @param sum - initial sum
 	* @param x - input array
-	* @param strideX - `x` stride length
+	* @param strideX - stride length for `x`
 	* @param y - output array
-	* @param strideY - `y` stride length
+	* @param strideY - stride length for `y`
 	* @returns output array
 	*
 	* @example
@@ -426,9 +426,9 @@ interface Namespace {
 	* @param N - number of indexed elements
 	* @param sum - initial sum
 	* @param x - input array
-	* @param strideX - `x` stride length
+	* @param strideX - stride length for `x`
 	* @param y - output array
-	* @param strideY - `y` stride length
+	* @param strideY - stride length for `y`
 	* @returns output array
 	*
 	* @example
@@ -486,7 +486,7 @@ interface Namespace {
 	* Fills a double-precision floating-point strided array with a specified scalar value.
 	*
 	* @param N - number of indexed elements
-	* @param alpha - constant
+	* @param alpha - scalar constant
 	* @param x - input array
 	* @param strideX - stride length
 	* @returns input array
@@ -566,9 +566,9 @@ interface Namespace {
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param strideX - `x` stride length
+	* @param strideX - stride length for `x`
 	* @param out - output array whose first element is the sum and whose second element is the number of non-NaN elements
-	* @param strideOut - `out` stride length
+	* @param strideOut - stride length for `out`
 	* @returns output array
 	*
 	* @example
@@ -596,9 +596,9 @@ interface Namespace {
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param strideX - `x` stride length
+	* @param strideX - stride length for `x`
 	* @param out - output array whose first element is the sum and whose second element is the number of non-NaN elements
-	* @param strideOut - `out` stride length
+	* @param strideOut - stride length for `out`
 	* @returns output array
 	*
 	* @example
@@ -626,9 +626,9 @@ interface Namespace {
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param strideX - `x` stride length
+	* @param strideX - stride length for `x`
 	* @param out - output array whose first element is the sum and whose second element is the number of non-NaN elements
-	* @param strideOut - `out` stride length
+	* @param strideOut - stride length for `out`
 	* @returns output array
 	*
 	* @example
@@ -656,9 +656,9 @@ interface Namespace {
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param strideX - `x` stride length
+	* @param strideX - stride length for `x`
 	* @param out - output array whose first element is the sum and whose second element is the number of non-NaN elements
-	* @param strideOut - `out` stride length
+	* @param strideOut - stride length for `out`
 	* @returns output array
 	*
 	* @example
@@ -686,9 +686,9 @@ interface Namespace {
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param strideX - `x` stride length
+	* @param strideX - stride length for `x`
 	* @param out - output array whose first element is the sum and whose second element is the number of non-NaN elements
-	* @param strideOut - `out` stride length
+	* @param strideOut - stride length for `out`
 	* @returns output array
 	*
 	* @example
