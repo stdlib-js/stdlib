@@ -1055,7 +1055,7 @@
 "@stdlib/strided-base-dmap","@stdlib/strided/base/dmap"
 "@stdlib/strided-base-dmap2","@stdlib/strided/base/dmap2"
 "@stdlib/stats-strided-dmax","@stdlib/stats/strided/dmax"
-"@stdlib/stats-base-dmaxabs","@stdlib/stats/base/dmaxabs"
+"@stdlib/stats-base-dmaxabs","@stdlib/stats/strided/dmaxabs"
 "@stdlib/stats-base-dmaxabssorted","@stdlib/stats/base/dmaxabssorted"
 "@stdlib/stats-base-dmaxsorted","@stdlib/stats/base/dmaxsorted"
 "@stdlib/stats-base-dmean","@stdlib/stats/base/dmean"
