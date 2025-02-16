@@ -8,7 +8,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+   http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -104,13 +104,13 @@ A common scenario in numerical computing is exposing numerical computing librari
 ! add.f
 !<
 double precision function add( x, y )
-    implicit none
-    ! ..
-    ! Scalar arguments:
-    double precision :: x, y
-    ! ..
-    add = x + y;
-    return
+  implicit none
+  ! ..
+  ! Scalar arguments:
+  double precision :: x, y
+  ! ..
+  add = x + y;
+  return
 end function add
 ```
 
@@ -121,20 +121,20 @@ While `add` may be used in conjunction with other Fortran files, we cannot use `
 ! addsub.f
 !<
 subroutine addsub( x, y, sum )
-    implicit none
-    ! ..
-    ! External functions:
-    interface
-    double precision function add( x, y )
-        double precision :: x, y
+  implicit none
+  ! ..
+  ! External functions:
+  interface
+  double precision function add( x, y )
+      double precision :: x, y
     end function add
-    end interface
-    ! ..
-    ! Scalar arguments:
-    double precision :: sum, x, y
-    ! ..
-    sum = add( x, y )
-    return
+  end interface
+  ! ..
+  ! Scalar arguments:
+  double precision :: sum, x, y
+  ! ..
+  sum = add( x, y )
+  return
 end subroutine addsub
 ```
 

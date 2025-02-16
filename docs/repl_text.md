@@ -8,7 +8,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+   http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -86,8 +86,8 @@ The general format of a REPL text is as follows:
     References
     ----------
     - Nadler, Boaz. 2006. "Design Flaws in the Implementation of the Ziggurat
-        and Monty Python methods (and some remarks on MATLAB randn)." *arXiv*
-        abs/math/0603058 (March).
+      and Monty Python methods (and some remarks on MATLAB randn)." *arXiv*
+      abs/math/0603058 (March).
 
     See Also
     --------
@@ -489,12 +489,12 @@ Only include references **if** usage requires citations. If not required, **remo
     References
     ----------
     - Nadler, Boaz. 2006. "Design Flaws in the Implementation of the Ziggurat
-        and Monty Python methods (and some remarks on MATLAB randn)." *arXiv*
-        abs/math/0603058 (March).
-        - McFarland, Christopher D. 2016. "A modified ziggurat algorithm for
-        generating exponentially and normally distributed pseudorandom numbers."
-        *Journal of Statistical Computation and Simulation* 86 (7): 1281–94.
-        doi:10.1080/00949655.2015.1060234.
+      and Monty Python methods (and some remarks on MATLAB randn)." *arXiv*
+      abs/math/0603058 (March).
+    - McFarland, Christopher D. 2016. "A modified ziggurat algorithm for
+      generating exponentially and normally distributed pseudorandom numbers."
+      *Journal of Statistical Computation and Simulation* 86 (7): 1281–94.
+      doi:10.1080/00949655.2015.1060234.
 
     ...
 ```

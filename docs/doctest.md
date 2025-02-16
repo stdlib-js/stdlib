@@ -8,7 +8,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+   http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -226,14 +226,14 @@ indicates that `foo()` returns a JavaScript `object` with known contents. While 
 ```javascript
 var o = foo();
 /* returns
-    {
-        'a': [ 1, 2, 3 ],
-        'b': [ 4, 5, 6 ],
-        'c': [ 7, 8, 9 ],
-        'd': {
-            'beep': 'boop'
-        }
+  {
+    'a': [ 1, 2, 3 ],
+    'b': [ 4, 5, 6 ],
+    'c': [ 7, 8, 9 ],
+    'd': {
+        'beep': 'boop'
     }
+  }
 */
 ```
 
@@ -578,8 +578,8 @@ For matrices (and, more generally, ndarrays), stdlib uses a "slice" syntax to in
 var mat = foo();
 /* returns
 
-    mat[':'] = [ 1.14,   -3.14,
-                0.00,    0.50  ]
+  mat[':'] = [ 1.14,   -3.14,
+              0.00,    0.50  ]
 */
 ```
 
@@ -612,9 +612,9 @@ Additionally, matrices can include wildcards. For example,
 var mat = foo();
 /* returns
 
-    mat[':'] = [ 1.14,   ...,   -3.14,
-                0.00,   ...,    0.50,
-                    ...,   ...,     ...  ]
+  mat[':'] = [ 1.14,   ...,   -3.14,
+              0.00,   ...,    0.50,
+               ...,   ...,     ...  ]
 */
 ```
 
@@ -630,8 +630,8 @@ Lastly, similar to other complex data structures, approximate values are demarca
 var mat = foo();
 /* returns
 
-    mat[':'] = [ ~1.14,   ~-3.14,
-                    0.00,    ~0.50  ]
+  mat[':'] = [ ~1.14,   ~-3.14,
+                0.00,    ~0.50  ]
 */
 ```
 
@@ -647,14 +647,14 @@ ndarrays extend the conventions for matrices to arbitrary dimensions. For exampl
 var x = foo();
 /* returns
 
-    x[':,:,0'] = [ 1.14,   -3.14,
-                    0.00,    0.50  ]
+  x[':,:,0'] = [ 1.14,   -3.14,
+                 0.00,    0.50  ]
 
-    x[':,0,:'] = [ 7.89,   -1.22,
-                    0.40,    0.26  ]
+  x[':,0,:'] = [ 7.89,   -1.22,
+                 0.40,    0.26  ]
 
-    x['0,:,:'] = [ 1.98,    2.23,
-                    0.45,    0.26  ]
+  x['0,:,:'] = [ 1.98,    2.23,
+                 0.45,    0.26  ]
 */
 ```
 

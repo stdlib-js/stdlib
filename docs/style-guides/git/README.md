@@ -8,7 +8,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+   http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -58,12 +58,12 @@ The **footer** is **optional**. When present, the footer must conform to the [co
 
 ```text
 <type>(<scope>): <short summary>
-    │       │             │
-    │       │             └─▶︎ Summary in imperative mood. Not capitalized. No period at the end.
-    │       │
-    │       └─▶︎ Commit Scope: noun describing section of the codebase
-    │
-    └─▶︎ Commit Type: bench|build|chore|deprecate|docs|feat|fix|perf|refactor|remove|revert|style|test|temp
+  │       │             │
+  │       │             └─▶︎ Summary in imperative mood. Not capitalized. No period at the end.
+  │       │
+  │       └─▶︎ Commit Scope: noun describing section of the codebase
+  │
+  └─▶︎ Commit Type: bench|build|chore|deprecate|docs|feat|fix|perf|refactor|remove|revert|style|test|temp
 ```
 
 The **type** and **short summary** fields are **mandatory**, and the **scope** field is **optional**.
