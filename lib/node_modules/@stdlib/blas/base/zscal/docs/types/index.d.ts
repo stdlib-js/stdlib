@@ -31,74 +31,74 @@ interface Routine {
 	* Scales a double-precision complex floating-point vector by a double-precision complex floating-point constant.
 	*
 	* @param N - number of indexed elements
-	* @param za - scalar constant
-	* @param zx - input array
-	* @param strideX - `zx` stride length
+	* @param alpha - scalar constant
+	* @param x - input array
+	* @param strideX - `x` stride length
 	* @returns input array
 	*
 	* @example
 	* var Complex128Array = require( '@stdlib/array/complex128' );
 	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 	*
-	* var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-	* var za = new Complex128( 2.0, 2.0 );
+	* var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+	* var alpha = new Complex128( 2.0, 2.0 );
 	*
-	* zscal( 3, za, zx, 1 );
-	* // zx => <Complex128Array>[ -2.0, 6.0, -2.0, 14.0, -2.0, 22.0 ]
+	* zscal( 3, alpha, x, 1 );
+	* // x => <Complex128Array>[ -2.0, 6.0, -2.0, 14.0, -2.0, 22.0 ]
 	*/
-	( N: number, za: Complex128, zx: Complex128Array, strideX: number ): Complex128Array;
+	( N: number, alpha: Complex128, x: Complex128Array, strideX: number ): Complex128Array;
 
 	/**
 	* Scales a double-precision complex floating-point vector by a double-precision complex floating-point constant.
 	*
 	* @param N - number of indexed elements
-	* @param za - scalar constant
-	* @param zx - input array
-	* @param strideX - `zx` stride length
-	* @param offsetX - starting index for `zx`
+	* @param alpha - scalar constant
+	* @param x - input array
+	* @param strideX - `x` stride length
+	* @param offsetX - starting index for `x`
 	* @returns input array
 	*
 	* @example
 	* var Complex128Array = require( '@stdlib/array/complex128' );
 	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 	*
-	* var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-	* var za = new Complex128( 2.0, 2.0 );
+	* var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+	* var alpha = new Complex128( 2.0, 2.0 );
 	*
-	* zscal.ndarray( 3, za, zx, 1, 0 );
-	* // zx => <Complex128Array>[ -2.0, 6.0, -2.0, 14.0, -2.0, 22.0 ]
+	* zscal.ndarray( 3, alpha, x, 1, 0 );
+	* // x => <Complex128Array>[ -2.0, 6.0, -2.0, 14.0, -2.0, 22.0 ]
 	*/
-	ndarray( N: number, za: Complex128, zx: Complex128Array, strideX: number, offsetX: number ): Complex128Array;
+	ndarray( N: number, alpha: Complex128, x: Complex128Array, strideX: number, offsetX: number ): Complex128Array;
 }
 
 /**
 * Scales a double-precision complex floating-point vector by a double-precision complex floating-point constant.
 *
 * @param N - number of indexed elements
-* @param za - scalar constant
-* @param zx - input array
-* @param strideX - `zx` stride length
+* @param alpha - scalar constant
+* @param x - input array
+* @param strideX - `x` stride length
 * @returns input array
 *
 * @example
 * var Complex128Array = require( '@stdlib/array/complex128' );
 * var Complex128 = require( '@stdlib/complex/float64/ctor' );
 *
-* var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-* var za = new Complex128( 2.0, 2.0 );
+* var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+* var alpha = new Complex128( 2.0, 2.0 );
 *
-* zscal( 3, za, zx, 1 );
-* // zx => <Complex128Array>[ -2.0, 6.0, -2.0, 14.0, -2.0, 22.0 ]
+* zscal( 3, alpha, x, 1 );
+* // x => <Complex128Array>[ -2.0, 6.0, -2.0, 14.0, -2.0, 22.0 ]
 *
 * @example
 * var Complex128Array = require( '@stdlib/array/complex128' );
 * var Complex128 = require( '@stdlib/complex/float64/ctor' );
 *
-* var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-* var za = new Complex128( 2.0, 2.0 );
+* var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+* var alpha = new Complex128( 2.0, 2.0 );
 *
-* zscal.ndarray( 2, za, zx, 1, 1 );
-* // zx => <Complex128Array>[ -2.0, 6.0, -2.0, 14.0, -2.0, 22.0 ]
+* zscal.ndarray( 2, alpha, x, 1, 1 );
+* // x => <Complex128Array>[ -2.0, 6.0, -2.0, 14.0, -2.0, 22.0 ]
 */
 declare var zscal: Routine;
 
