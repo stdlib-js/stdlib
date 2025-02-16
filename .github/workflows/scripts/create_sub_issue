@@ -52,8 +52,8 @@ repo="stdlib"
 # Get the GitHub authentication token:
 github_token="${GITHUB_TOKEN}"
 if [ -z "$github_token" ]; then
-		echo -e "ERROR: GITHUB_TOKEN environment variable is not set."
-		exit 1
+	echo -e "ERROR: GITHUB_TOKEN environment variable is not set."
+	exit 1
 fi
 
 # Read and validate the body file:
@@ -65,10 +65,10 @@ issue_body=$(cat "$body_file")
 
 # Process labels into an array if provided:
 if [ -n "$labels" ]; then
-    # Convert comma-separated string to JSON array...
-    label_array="[$(echo "$labels" | sed 's/[[:space:]]*,[[:space:]]*/","/g' | sed 's/.*/"&"/')]"
+	# Convert comma-separated string to JSON array...
+	label_array="[$(echo "$labels" | sed 's/[[:space:]]*,[[:space:]]*/","/g' | sed 's/.*/"&"/')]"
 else
-    label_array="[]"
+	label_array="[]"
 fi
 
 # FUNCTIONS #
