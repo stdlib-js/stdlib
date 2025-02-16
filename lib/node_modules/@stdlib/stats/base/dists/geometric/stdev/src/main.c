@@ -28,7 +28,7 @@
 *
 * @example
 * double y = stdlib_base_dists_geometric_stdev( 0.1 );
-* // returns 10.0
+* // returns ~9.487
 */
 double stdlib_base_dists_geometric_stdev( const double p ) {
 	if (
