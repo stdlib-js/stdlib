@@ -37,28 +37,18 @@ Scales values from `zx` by `za`.
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 var zx = new Complex128Array( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
 var za = new Complex128( 2.0, 0.0 );
 
 zscal( 3, za, zx, 1 );
-
-var z = zx.get( 0 );
-// returns <Complex128>
-
-var re = real( z );
-// returns 2.0
-
-var im = imag( z );
-// returns 2.0
+// zx => <Complex128Array>[ 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 ]
 ```
 
 The function has the following parameters:
 
 -   **N**: number of indexed elements.
--   **za**: scalar [`Complex128`][@stdlib/complex/float64/ctor] constant. 
+-   **za**: scalar [`Complex128`][@stdlib/complex/float64/ctor] constant.
 -   **zx**: input [`Complex128Array`][@stdlib/array/complex128].
 -   **strideX**: index increment for `zx`.
 
@@ -67,22 +57,12 @@ The `N` and stride parameters determine how values from `zx` are scaled by `za`.
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 var za = new Complex128( 2.0, 0.0 );
 
 zscal( 2, za, zx, 2 );
-
-var z = zx.get( 2 );
-// returns <Complex128>
-
-var re = real( z );
-// returns 10.0
-
-var im = imag( z );
-// returns 12.0
+// zx => <Complex128Array>[ 2.0, 4.0, 3.0, 4.0, 10.0, 12.0, 7.0, 8.0 ]
 ```
 
 Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][mdn-typed-array] views.
@@ -92,8 +72,6 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 // Initial array:
 var zx0 = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
@@ -106,15 +84,7 @@ var zx1 = new Complex128Array( zx0.buffer, zx0.BYTES_PER_ELEMENT*1 ); // start a
 
 // Scales every other value from `zx1` by `za`...
 zscal( 3, za, zx1, 1 );
-
-var z = zx0.get( 1 );
-// returns <Complex128>
-
-var re = real( z );
-// returns -2.0
-
-var im = imag( z );
-// returns 14.0
+// zx0 => <Complex128Array>[ 1.0, 2.0, -2.0, 14.0, -2.0, 22.0, -2.0, 30.0 ]
 ```
 
 #### zscal.ndarray( N, za, zx, strideX, offsetX )
@@ -124,22 +94,12 @@ Scales values from `zx` by `za` using alternative indexing semantics.
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var za = new Complex128( 2.0, 2.0 );
 
 zscal.ndarray( 3, za, zx, 1, 0 );
-
-var z = zx.get( 0 );
-// returns <Complex128>
-
-var re = real( z );
-// returns -2.0
-
-var im = imag( z );
-// returns 6.0
+// zx => <Complex128Array>[ -2.0, 6.0, -2.0, 14.0, -2.0, 22.0 ]
 ```
 
 The function has the following additional parameters:
@@ -151,22 +111,12 @@ While [`typed array`][mdn-typed-array] views mandate a view offset based on the 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 var za = new Complex128( 2.0, 2.0 );
 
 zscal.ndarray( 2, za, zx, 2, 1 );
-
-var z = zx.get( 3 );
-// returns <Complex128>
-
-var re = real( z );
-// returns -2.0
-
-var im = imag( z );
-// returns 30.0
+// zx => <Complex128Array>[ 1.0, 2.0, -2.0, 14.0, 5.0, 6.0, -2.0, 30.0 ]
 ```
 
 </section>
