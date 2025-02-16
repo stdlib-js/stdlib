@@ -1,0 +1,116 @@
+
+{{alias}}( N, da, zx, strideZX )
+    Scales a double-precision complex floating-point vector by a double-
+    precision floating-point constant.
+
+    The `N` and stride parameters determine which elements in `zx` are scaled by
+    `da`.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If `N` is less than or equal to `0`, the function returns `zx` unchanged.
+
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    da: double
+        Scalar constant.
+
+    zx: Complex128Array
+        Input array.
+
+    strideZX: integer
+        Stride length for `zx`.
+
+    Returns
+    -------
+    zx: Complex128Array
+        Input array.
+
+    Examples
+    --------
+    // Standard usage:
+    > var zx = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > {{alias}}( 2, 2.0, zx, 1 );
+    > var z = zx.get( 0 );
+    > var re = {{alias:@stdlib/complex/float64/real}}( z )
+    2.0
+    > var im = {{alias:@stdlib/complex/float64/imag}}( z )
+    4.0
+
+    // N and stride parameters:
+    > zx = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > {{alias}}( 2, 2.0, zx, 2 );
+    > z = zx.get( 2 );
+    > re = {{alias:@stdlib/complex/float64/real}}( z )
+    10.0
+    > im = {{alias:@stdlib/complex/float64/imag}}( z )
+    12.0
+
+    // Using typed array views:
+    > var zx0 = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > var zx1 = new {{alias:@stdlib/array/complex128}}( zx0.buffer, zx0.BYTES_PER_ELEMENT*1 );
+    > {{alias}}( 2, 2.0, zx1, 1 );
+    > z = zx0.get( 1 );
+    > re = {{alias:@stdlib/complex/float64/real}}( z )
+    6.0
+    > im = {{alias:@stdlib/complex/float64/imag}}( z )
+    8.0
+
+
+{{alias}}.ndarray( N, da, zx, strideZX, offsetZX )
+    Scales a double-precision complex floating-point vector by a double-
+    precision floating-point constant using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameter supports indexing semantics based on a starting
+    index.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    da: number
+        Scalar constant.
+
+    zx: Complex128Array
+        Input array.
+
+    strideZX: integer
+        Stride length for `zx`.
+
+    offsetZX: integer
+        Starting index for `zx`.
+
+    Returns
+    -------
+    zx: Complex128Array
+        Input array.
+
+    Examples
+    --------
+    // Standard usage:
+    > var zx = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > {{alias}}.ndarray( 2, 2.0, zx, 1, 0 );
+    > var z = zx.get( 0 );
+    > var re = {{alias:@stdlib/complex/float64/real}}( z )
+    2.0
+    > var im = {{alias:@stdlib/complex/float64/imag}}( z )
+    4.0
+
+    // Advanced indexing:
+    > zx = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
+    > {{alias}}.ndarray( 2, 2.0, zx, 1, 2 );
+    > z = zx.get( 2 );
+    > re = {{alias:@stdlib/complex/float64/real}}( z )
+    10.0
+    > im = {{alias:@stdlib/complex/float64/imag}}( z )
+    12.0
+
+    See Also
+    --------
