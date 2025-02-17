@@ -87,7 +87,7 @@ var o = blas;
 -   <span class="signature">[`zaxpy( N, za, zx, strideX, zy, strideY )`][@stdlib/blas/base/zaxpy]</span><span class="delimiter">: </span><span class="description">scale a double-precision complex floating-point vector by a double-precision complex floating-point constant and add the result to a double-precision complex floating-point vector.</span>
 -   <span class="signature">[`zcopy( N, x, strideX, y, strideY )`][@stdlib/blas/base/zcopy]</span><span class="delimiter">: </span><span class="description">copy values from one complex double-precision floating-point vector to another complex double-precision floating-point vector.</span>
 -   <span class="signature">[`zdrot( N, zx, strideX, zy, strideY, c, s )`][@stdlib/blas/base/zdrot]</span><span class="delimiter">: </span><span class="description">applies a plane rotation.</span>
--   <span class="signature">[`zscal( N, za, zx, strideX )`][@stdlib/blas/base/zscal]</span><span class="delimiter">: </span><span class="description">scales a double-precision complex floating-point vector by a double-precision complex floating-point constant.</span>
+-   <span class="signature">[`zscal( N, alpha, x, strideX )`][@stdlib/blas/base/zscal]</span><span class="delimiter">: </span><span class="description">scales a double-precision complex floating-point vector by a double-precision complex floating-point constant.</span>
 -   <span class="signature">[`zswap( N, x, strideX, y, strideY )`][@stdlib/blas/base/zswap]</span><span class="delimiter">: </span><span class="description">interchange two complex double-precision floating-point vectors.</span>
 
 </div>

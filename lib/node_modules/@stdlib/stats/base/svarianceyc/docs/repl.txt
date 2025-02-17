@@ -1,10 +1,10 @@
 
-{{alias}}( N, correction, x, stride )
+{{alias}}( N, correction, x, strideX )
     Computes the variance of a single-precision floating-point strided array
     using a one-pass algorithm proposed by Youngs and Cramer.
 
-    The `N` and `stride` parameters determine which elements in `x` are accessed
-    at runtime.
+    The `N` and stride parameters determine which elements in the strided array
+    are accessed at runtime.
 
     Indexing is relative to the first index. To introduce an offset, use a typed
     array view.
@@ -31,8 +31,8 @@
     x: Float32Array
         Input array.
 
-    stride: integer
-        Index increment.
+    strideX: integer
+        Stride length.
 
     Returns
     -------
@@ -46,22 +46,19 @@
     > {{alias}}( x.length, 1, x, 1 )
     ~4.3333
 
-    // Using `N` and `stride` parameters:
+    // Using `N` and stride parameters:
     > x = new {{alias:@stdlib/array/float32}}( [ -2.0, 1.0, 1.0, -5.0, 2.0, -1.0 ] );
-    > var N = {{alias:@stdlib/math/base/special/floor}}( x.length / 2 );
-    > var stride = 2;
-    > {{alias}}( N, 1, x, stride )
+    > {{alias}}( 3, 1, x, 2 )
     ~4.3333
 
     // Using view offsets:
     > var x0 = new {{alias:@stdlib/array/float32}}( [ 1.0, -2.0, 3.0, 2.0, 5.0, -1.0 ] );
     > var x1 = new {{alias:@stdlib/array/float32}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
-    > N = {{alias:@stdlib/math/base/special/floor}}( x0.length / 2 );
-    > stride = 2;
-    > {{alias}}( N, 1, x1, stride )
+    > {{alias}}( 3, 1, x1, 2 )
     ~4.3333
 
-{{alias}}.ndarray( N, correction, x, stride, offset )
+
+{{alias}}.ndarray( N, correction, x, strideX, offsetX )
     Computes the variance of a single-precision floating-point strided array
     using a one-pass algorithm proposed by Youngs and Cramer and alternative
     indexing semantics.
@@ -90,10 +87,10 @@
     x: Float32Array
         Input array.
 
-    stride: integer
-        Index increment.
+    strideX: integer
+        Stride length.
 
-    offset: integer
+    offsetX: integer
         Starting index.
 
     Returns
@@ -110,10 +107,8 @@
 
     // Using offset parameter:
     > var x = new {{alias:@stdlib/array/float32}}( [ 1.0, -2.0, 3.0, 2.0, 5.0, -1.0 ] );
-    > var N = {{alias:@stdlib/math/base/special/floor}}( x.length / 2 );
-    > {{alias}}.ndarray( N, 1, x, 2, 1 )
+    > {{alias}}.ndarray( 3, 1, x, 2, 1 )
     ~4.3333
 
     See Also
     --------
-

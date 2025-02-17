@@ -28,7 +28,7 @@
 * @return      expected value
 *
 * @example
-* double y = stdlib_base_f_mean( 3.0, 5.0 );
+* double y = stdlib_base_dists_f_mean( 3.0, 5.0 );
 * // returns ~1.667
 */
 double stdlib_base_dists_f_mean( const double d1, const double d2 ) {
