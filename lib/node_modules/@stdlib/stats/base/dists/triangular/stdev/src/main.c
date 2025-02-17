@@ -29,7 +29,7 @@
 * @return     standard deviation
 *
 * @example
-* double y = stdlib_base_triangular_stdev( 0.0, 1.0, 0.5 );
+* double y = stdlib_base_dists_triangular_stdev( 0.0, 1.0, 0.5 );
 * // returns ~0.204
 */
 double stdlib_base_dists_triangular_stdev( const double a, const double b, const double c ) {

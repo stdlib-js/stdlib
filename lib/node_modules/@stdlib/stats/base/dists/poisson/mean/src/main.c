@@ -26,7 +26,7 @@
 * @return          expected value
 *
 * @example
-* double v = mean( 9.0 );
+* double v = stdlib_base_dists_poisson_mean( 9.0 );
 * // returns 9.0
 */
 double stdlib_base_dists_poisson_mean( const double lambda ) {

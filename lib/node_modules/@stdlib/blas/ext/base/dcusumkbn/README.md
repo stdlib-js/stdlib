@@ -61,11 +61,11 @@ The function has the following parameters:
 -   **N**: number of indexed elements.
 -   **sum**: initial sum.
 -   **x**: input [`Float64Array`][@stdlib/array/float64].
--   **strideX**: index increment for `x`.
+-   **strideX**: stride length for `x`.
 -   **y**: output [`Float64Array`][@stdlib/array/float64].
--   **strideY**: index increment for `y`.
+-   **strideY**: stride length for `y`.
 
-The `N` and stride parameters determine which elements in the strided arrays are accessed at runtime. For example, to compute the cumulative sum of every other element in the strided input array,
+The `N` and stride parameters determine which elements in the strided arrays are accessed at runtime. For example, to compute the cumulative sum of every other element:
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -115,7 +115,7 @@ The function has the following additional parameters:
 -   **offsetX**: starting index for `x`.
 -   **offsetY**: starting index for `y`.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, offsetX and offsetY parameters support indexing semantics based on a starting indices. For example, to calculate the cumulative sum of every other value in the strided input array starting from the second value and to store in the last `N` elements of the strided output array starting from the last element
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameters support indexing semantics based on starting indices. For example, to calculate the cumulative sum of every other value in the strided input array starting from the second value and to store in the last `N` elements of the strided output array starting from the last element:
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -210,9 +210,9 @@ The function accepts the following arguments:
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
 -   **sum**: `[in] double` initial sum.
 -   **X**: `[in] double*` input array.
--   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **strideX**: `[in] CBLAS_INT` stride length for `X`.
 -   **Y**: `[out] double*` output array.
--   **strideY**: `[in] CBLAS_INT` index increment for `Y`.
+-   **strideY**: `[in] CBLAS_INT` stride length for `Y`.
 
 ```c
 void stdlib_strided_dcusumkbn( const CBLAS_INT N, const double sum, const double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY );
@@ -238,10 +238,10 @@ The function accepts the following arguments:
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
 -   **sum**: `[in] double` initial sum.
 -   **X**: `[in] double*` input array.
--   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **strideX**: `[in] CBLAS_INT` stride length for `X`.
 -   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
 -   **Y**: `[out] double*` output array.
--   **strideY**: `[in] CBLAS_INT` index increment for `Y`.
+-   **strideY**: `[in] CBLAS_INT` stride length for `Y`.
 -   **offsetY**: `[in] CBLAS_INT` starting index for `Y`.
 
 ```c
