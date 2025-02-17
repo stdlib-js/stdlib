@@ -20,12 +20,12 @@
 #include <stdio.h>
 
 int main( void ) {
-    const double x[] = { -5.0, -3.89, -2.78, -1.67, -0.56, 0.56, 1.67, 2.78, 3.89, 5.0 };
+	const double x[] = { -5.0, -3.89, -2.78, -1.67, -0.56, 0.56, 1.67, 2.78, 3.89, 5.0 };
 
-    double v;
-    int i;
-    for ( i = 0; i < 10; i++ ) {
-        v = stdlib_base_cosh( x[ i ] );
-        printf( "cosh(%lf) = %lf\n", x[ i ], v );
-    }
+	double v;
+	int i;
+	for ( i = 0; i < 10; i++ ) {
+		v = stdlib_base_cosh( x[ i ] );
+		printf( "cosh(%lf) = %lf\n", x[ i ], v );
+	}
 }

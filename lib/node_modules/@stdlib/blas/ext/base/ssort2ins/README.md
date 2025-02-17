@@ -32,7 +32,7 @@ var ssort2ins = require( '@stdlib/blas/ext/base/ssort2ins' );
 
 #### ssort2ins( N, order, x, strideX, y, strideY )
 
-Simultaneously sorts two single-precision floating-point strided arrays based on the sort order of the first array `x` using insertion sort.
+Simultaneously sorts two single-precision floating-point strided arrays based on the sort order of the first array using insertion sort.
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
@@ -54,11 +54,11 @@ The function has the following parameters:
 -   **N**: number of indexed elements.
 -   **order**: sort order. If `order < 0.0`, the input strided array `x` is sorted in **decreasing** order. If `order > 0.0`, the input strided array `x` is sorted in **increasing** order. If `order == 0.0`, the input strided arrays are left unchanged.
 -   **x**: first input [`Float32Array`][@stdlib/array/float32].
--   **strideX**: `x` index increment.
+-   **strideX**: stride length for `x`.
 -   **y**: second input [`Float32Array`][@stdlib/array/float32].
--   **strideY**: `y` index increment.
+-   **strideY**: stride length for `y`.
 
-The `N` and `stride` parameters determine which elements in the strided arrays are accessed at runtime. For example, to sort every other element
+The `N` and stride parameters determine which elements in the strided arrays are accessed at runtime. For example, to sort every other element:
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
@@ -118,10 +118,10 @@ console.log( y );
 
 The function has the following additional parameters:
 
--   **offsetX**: `x` starting index.
--   **offsetY**: `y` starting index.
+-   **offsetX**: starting index for `x`.
+-   **offsetY**: starting index for `y`.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the offset parameter supports indexing semantics based on a starting index. For example, to access only the last three elements of `x`.
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameters support indexing semantics based on starting indices. For example, to access only the last three elements:
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
@@ -165,30 +165,16 @@ console.log( y );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var round = require( '@stdlib/math/base/special/round' );
-var randu = require( '@stdlib/random/base/randu' );
-var Float32Array = require( '@stdlib/array/float32' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var ssort2ins = require( '@stdlib/blas/ext/base/ssort2ins' );
 
-var rand;
-var sign;
-var x;
-var y;
-var i;
+var x = discreteUniform( 10, -100, 100, {
+    'dtype': 'float32'
+});
+var y = discreteUniform( 10, -100, 100, {
+    'dtype': 'float32'
+});
 
-x = new Float32Array( 10 );
-y = new Float32Array( 10 ); // index array
-for ( i = 0; i < x.length; i++ ) {
-    rand = round( randu()*100.0 );
-    sign = randu();
-    if ( sign < 0.5 ) {
-        sign = -1.0;
-    } else {
-        sign = 1.0;
-    }
-    x[ i ] = sign * rand;
-    y[ i ] = i;
-}
 console.log( x );
 console.log( y );
 
@@ -206,6 +192,137 @@ console.log( y );
 <section class="related">
 
 * * *
+
+<!-- C interface documentation. -->
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/blas/ext/base/ssort2ins.h"
+```
+
+#### stdlib_strided_ssort2ins( N, order, \*X, strideX, \*Y, strideY )
+
+Simultaneously sorts two single-precision floating-point strided arrays based on the sort order of the first array using insertion sort.
+
+```c
+float x[] = { 1.0f, -2.0f, 3.0f, -4.0f };
+float y[] = { 0.0f, 1.0f, 2.0f, 3.0f };
+
+stdlib_strided_ssort2ins( 4, 1.0f, x, 1, y, 1 );
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **order**: `[in] float` sort order. If `order < 0.0`, the input strided array `x` is sorted in **decreasing** order. If `order > 0.0`, the input strided array `x` is sorted in **increasing** order. If `order == 0.0`, the input strided arrays are left unchanged.
+-   **X**: `[inout] float*` first input array.
+-   **strideX**: `[in] CBLAS_INT` stride length for `X`.
+-   **Y**: `[inout] float*` second input array.
+-   **strideY**: `[in] CBLAS_INT` stride length for `Y`.
+
+```c
+stdlib_strided_ssort2ins( const CBLAS_INT N, const float order, float *X, CBLAS_INT strideX, float *Y, CBLAS_INT strideY );
+```
+
+<!--lint disable maximum-heading-length-->
+
+#### stdlib_strided_ssort2ins_ndarray( N, order, \*X, strideX, offsetX, \*Y, strideY, offsetY )
+
+<!--lint enable maximum-heading-length-->
+
+Simultaneously sorts two single-precision floating-point strided arrays based on the sort order of the first array using insertion sort and alternative indexing semantics.
+
+```c
+float x[] = { 1.0f, -2.0f, 3.0f, -4.0f };
+float y[] = { 0.0f, 1.0f, 2.0f, 3.0f };
+
+stdlib_strided_ssort2ins_ndarray( 4, 1.0f, x, 1, 0, y, 1, 0 );
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **order**: `[in] float` sort order. If `order < 0.0`, the input strided array `x` is sorted in **decreasing** order. If `order > 0.0`, the input strided array `x` is sorted in **increasing** order. If `order == 0.0`, the input strided arrays are left unchanged.
+-   **X**: `[inout] float*` first input array.
+-   **strideX**: `[in] CBLAS_INT` stride length for `X`.
+-   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
+-   **Y**: `[inout] float*` second input array.
+-   **strideY**: `[in] CBLAS_INT` stride length for `Y`.
+-   **offsetY**: `[in] CBLAS_INT` starting index for `Y`.
+
+```c
+stdlib_strided_ssort2ins_ndarray( const CBLAS_INT N, const float order, float *X, CBLAS_INT strideX, CBLAS_INT offsetX, float *Y, CBLAS_INT strideY, CBLAS_INT offsetY );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/blas/ext/base/ssort2ins.h"
+#include <stdio.h>
+
+int main( void ) {
+    // Create strided arrays:
+    float x[] = { 1.0f, -2.0f, 3.0f, -4.0f, 5.0f, -6.0f, 7.0f, -8.0f };
+    float y[] = { 0.0f, 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f };
+
+    // Specify the number of elements:
+    int N = 8;
+
+    // Specify the strides:
+    int strideX = 1;
+    int strideY = 1;
+
+    // Sort the arrays:
+    stdlib_strided_ssort2ins( N, 1.0f, x, strideX, y, strideY );
+
+    // Print the result:
+    for ( int i = 0; i < 8; i++ ) {
+        printf( "x[ %i ] = %f\n", i, x[ i ] );
+        printf( "y[ %i ] = %f\n", i, y[ i ] );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 ## See Also
 

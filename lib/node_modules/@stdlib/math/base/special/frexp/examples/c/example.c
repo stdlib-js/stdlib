@@ -22,13 +22,13 @@
 #include <inttypes.h>
 
 int main( void ) {
-    const double x[] = { 4.0, 0.0, -0.0, 1.0, -1.0, 3.14, -3.14, 1.0e308, -1.0e308, 1.0/0.0, -1.0/0.0, 0.0/0.0 };
+	const double x[] = { 4.0, 0.0, -0.0, 1.0, -1.0, 3.14, -3.14, 1.0e308, -1.0e308, 1.0/0.0, -1.0/0.0, 0.0/0.0 };
 
-    double frac;
-    int32_t exp;
-    int i;
-    for ( i = 0; i < 12; i++ ) {
-        stdlib_base_frexp( x[i], &frac, &exp );
-        printf( "x: %f => frac: %f, exp: %" PRId32 "\n", x[i], frac, exp );
-    }
+	double frac;
+	int32_t exp;
+	int i;
+	for ( i = 0; i < 12; i++ ) {
+		stdlib_base_frexp( x[i], &frac, &exp );
+		printf( "x: %f => frac: %f, exp: %" PRId32 "\n", x[i], frac, exp );
+	}
 }
