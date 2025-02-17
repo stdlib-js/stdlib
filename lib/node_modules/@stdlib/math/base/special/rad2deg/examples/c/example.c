@@ -22,13 +22,13 @@
 #include <stdio.h>
 
 int main( void ) {
-    double x;
-    double d;
-    int i;
+	double x;
+	double d;
+	int i;
 
-    for ( i = 0; i < 100; i++ ) {
+	for ( i = 0; i < 100; i++ ) {
 		x = (double)rand() / (double)RAND_MAX * STDLIB_CONSTANT_FLOAT64_TWO_PI;
-        d = stdlib_base_rad2deg( x );
-        printf( "radians: %lf => degrees: %lf\n", x, d );
-    }
+		d = stdlib_base_rad2deg( x );
+		printf( "radians: %lf => degrees: %lf\n", x, d );
+	}
 }

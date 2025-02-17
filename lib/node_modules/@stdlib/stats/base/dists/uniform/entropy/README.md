@@ -161,7 +161,7 @@ for ( i = 0; i < 10; i++ ) {
 
 #### stdlib_base_dists_uniform_entropy( a, b )
 
-Evaluates the [entropy][entropy] of a [uniform][uniform-distribution] distribution with `a` the minimum support and `b` the maximum support.
+Evaluates the [entropy][entropy] of a [uniform][uniform-distribution] distribution with minimum support `a` and maximum support `b`.
 
 ```c
 double out = stdlib_base_dists_uniform_entropy( 2.0, 8.0 );
