@@ -24,7 +24,7 @@
 * Returns the skewness of a Pareto (Type I) distribution.
 *
 * @param alpha    first shape parameter
-* @param beta     second shape paramter
+* @param beta     second shape parameter
 * @return         skewness
 *
 * @example
