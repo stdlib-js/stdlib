@@ -19,7 +19,7 @@
 #ifndef STDLIB_BLAS_EXT_BASE_SSORT2INS_H
 #define STDLIB_BLAS_EXT_BASE_SSORT2INS_H
 
-#include <stdint.h>
+#include "stdlib/blas/base/shared.h"
 
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
@@ -31,7 +31,12 @@ extern "C" {
 /**
 * Simultaneously sorts two single-precision floating-point strided arrays based on the sort order of the first array using insertion sort.
 */
-void c_ssort2ins( const int64_t N, const float order, float *X, const int64_t strideX, float *Y, const int64_t strideY );
+void API_SUFFIX(stdlib_strided_ssort2ins)( const CBLAS_INT N, const float order, float *X, const CBLAS_INT strideX, float *Y, const CBLAS_INT strideY );
+
+/**
+* Simultaneously sorts two single-precision floating-point strided arrays based on the sort order of the first array using insertion sort and alternative indexing semantics.
+*/
+void API_SUFFIX(stdlib_strided_ssort2ins_ndarray)( const CBLAS_INT N, const float order, float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, float *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY );
 
 #ifdef __cplusplus
 }

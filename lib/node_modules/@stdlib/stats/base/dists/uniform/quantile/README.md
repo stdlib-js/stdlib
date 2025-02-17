@@ -101,7 +101,7 @@ Returns a function for evaluating the quantile function of a [continuous uniform
 
 ```javascript
 var myquantile = quantile.factory( 0.0, 4.0 );
-y = myquantile( 0.8 );
+var y = myquantile( 0.8 );
 // returns 3.2
 ```
 
@@ -131,6 +131,100 @@ for ( i = 0; i < 25; i++ ) {
     b = a + (randu() * 40.0);
     y = quantile( p, a, b );
     console.log( 'p: %d, a: %d, b: %d, Q(p;a,b): %d', p.toFixed( 4 ), a.toFixed( 4 ), b.toFixed( 4 ), y.toFixed( 4 ) );
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/uniform/quantile.h"
+```
+
+#### stdlib_base_dists_uniform_quantile( p, a, b )
+
+Evaluates the [quantile-function][quantile-function] function for a [continuous uniform][uniform-distribution] distribution with minimum support `a` and maximum support `b` at a probability `p`.
+
+```c
+double out = stdlib_base_dists_uniform_quantile( 0.8, 0.0, 1.0 );
+// returns 0.8
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **a**: `[in] double` minimum support.
+-   **b**: `[in] double` maximum support.
+
+```c
+double stdlib_base_dists_uniform_quantile( const double p, const double a, const double b );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/uniform/quantile.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double a;
+    double b;
+    double p;
+    double y;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        p = random_uniform( 0.0, 1.0 );
+        a = random_uniform( -20.0, 0.0 );
+        b = random_uniform( a, a+40.0 );
+        y = stdlib_base_dists_uniform_quantile( p, a, b );
+        printf( "p: %lf, a: %lf, b: %lf, Q(p;a,b): %lf\n", p, a, b, y );
+    }
 }
 ```
 
