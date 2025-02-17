@@ -104,7 +104,7 @@ var out = bar( 1, 2, 3 );
 
 ```javascript
 var filledarrayBy = require( '@stdlib/array/filled-by' );
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 var pickArguments = require( '@stdlib/utils/pick-arguments' );
 
 function fill( i ) {

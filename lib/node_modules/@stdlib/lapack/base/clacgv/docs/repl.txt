@@ -1,0 +1,108 @@
+
+{{alias}}( N, cx, strideCX )
+    Conjugates each element in a single-precision complex floating-point vector.
+
+    The `N` and stride parameters determine which elements in `cx` are
+    conjugated.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If `N` is less than or equal to `0`, the function returns `cx` unchanged.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    cx: Complex64Array
+        Input array.
+
+    strideCX: integer
+        Stride length for `cx`.
+
+    Returns
+    -------
+    cx: Complex64Array
+        Input array.
+
+    Examples
+    --------
+    // Standard usage:
+    > var cx = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > {{alias}}( 2, cx, 1 );
+    > var z = cx.get( 0 );
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
+    1.0
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
+    -2.0
+
+    // Advanced indexing:
+    > cx = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > {{alias}}( 2, cx, 2 );
+    > z = cx.get( 0 );
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
+    1.0
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
+    -2.0
+
+    // Using typed array views:
+    > var cx0 = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > var cx1 = new {{alias:@stdlib/array/complex64}}( cx0.buffer, cx0.BYTES_PER_ELEMENT*1 );
+    > {{alias}}( 2, cx1, 1 );
+    > z = cx0.get( 1 );
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
+    3.0
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
+    -4.0
+
+
+{{alias}}.ndarray( N, cx, strideCX, offsetCX )
+    Conjugates each element in a single-precision complex floating-point vector
+    using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameter supports indexing semantics based on a starting
+    index.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    cx: Complex64Array
+        Input array.
+
+    strideCX: integer
+        Stride length for `cx`.
+
+    offsetCX: integer
+        Starting index for `cx`.
+
+    Returns
+    -------
+    cx: Complex64Array
+        Input array.
+
+    Examples
+    --------
+    // Standard usage:
+    > var cx = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > {{alias}}.ndarray( 2, cx, 1, 0 );
+    > var z = cx.get( 0 );
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
+    1.0
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
+    -2.0
+
+    // Advanced indexing:
+    > cx = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
+    > {{alias}}.ndarray( 2, cx, 1, 2 );
+    > z = cx.get( 2 );
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
+    5.0
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
+    -6.0
+
+    See Also
+    --------
