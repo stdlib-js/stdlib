@@ -249,6 +249,8 @@ base.cmul,"var z1 = new Complex128( 5.0, 3.0 )\nvar z2 = new Complex128( -2.0, 1
 base.cmul.assign,"var out = new Float64Array( 2 );\nbase.cmul.assign( 5.0, 3.0, -2.0, 1.0, out, 1, 0 )\n"
 base.cmul.strided,"var z1 = new Float64Array( [ 5.0, 3.0 ] );\nvar z2 = new Float64Array( [ -2.0, 1.0 ] );\nvar out = new Float64Array( 2 );\nbase.cmul.strided( z1, 1, 0, z2, 1, 0, out, 1, 0 )\n"
 base.cmulf,"var z1 = new Complex64( 5.0, 3.0 )\nvar z2 = new Complex64( -2.0, 1.0 )\nvar out = base.cmulf( z1, z2 )\nvar re = realf( out )\nvar im = imagf( out )\n"
+base.cmulf.assign,"var out = new Float32Array( 2 );\nbase.cmulf.assign( 5.0, 3.0, -2.0, 1.0, out, 1, 0 )\n"
+base.cmulf.strided,"var z1 = new Float32Array( [ 5.0, 3.0 ] );\nvar z2 = new Float32Array( [ -2.0, 1.0 ] );\nvar out = new Float32Array( 2 );\nbase.cmulf.strided( z1, 1, 0, z2, 1, 0, out, 1, 0 )\n"
 base.cneg,"var z = new Complex128( -4.2, 5.5 )\nvar v = base.cneg( z )\nvar re = real( v )\nvar im = imag( v )\n"
 base.cnegf,"var z = new Complex64( -4.0, 5.0 )\nvar v = base.cnegf( z )\nvar re = realf( v )\nvar im = imagf( v )\n"
 base.codePointAt,"var out = base.codePointAt( 'last man standing', 4, false )\nout = base.codePointAt( 'presidential election', 8, true )\nout = base.codePointAt( 'अनुच्छेद', 2, false )\nout = base.codePointAt( '🌷', 1, true )\n"
