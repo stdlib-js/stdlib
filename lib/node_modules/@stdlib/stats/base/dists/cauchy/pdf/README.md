@@ -223,7 +223,7 @@ int main( void ) {
     for ( i = 0; i < 25; i++ ) {
         x = random_uniform( 0.0, 10.0 );
         x0 = random_uniform( -5.0, 5.0 );
-        gamma = random_uniform( 0.0, 20.0 ) + STDLIB_CONSTANT_FLOAT64_EPS;
+        gamma = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 20.0 );
         y = stdlib_base_dists_cauchy_pdf( x, x0, gamma );
         printf( "x: %lf, k: %lf, γ: %lf, f(x;x0,γ): %lf\n", x, x0, gamma, y );
     }
