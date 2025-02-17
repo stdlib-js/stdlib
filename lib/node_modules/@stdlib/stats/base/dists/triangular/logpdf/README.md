@@ -102,7 +102,7 @@ y = logpdf( 1.0, 0.0, -1.0, 0.5 );
 
 #### logpdf.factory( a, b, c )
 
-Returns a function for evaluating the natural logarithm of the [probability density function][pdf] (PDF) of a [triangular][triangular-distribution] distribution with parameters `a` (lower limit), `b` (upper limit) and `c` (mode).
+Returns a function for evaluating the natural logarithm of the [probability density function][pdf] (PDF) of a [triangular][triangular-distribution] distribution with parameters `a` (lower limit), `b` (upper limit), and `c` (mode).
 
 ```javascript
 var mylogpdf = logpdf.factory( 0.0, 10.0, 5.0 );
@@ -190,7 +190,7 @@ for ( i = 0; i < 25; i++ ) {
 
 #### stdlib_base_dists_triangular_logpdf( x, a, b, c )
 
-Evaluates the natural logarithm of the [probability density function][pdf] (PDF) for a [triangular][triangular-distribution] distribution with parameters `a` (lower limit), `b` (upper limit) and `c` (mode).
+Evaluates the natural logarithm of the [probability density function][pdf] (PDF) for a [triangular][triangular-distribution] distribution with parameters `a` (lower limit), `b` (upper limit), and `c` (mode).
 
 ```c
 double y = stdlib_base_dists_triangular_logpdf( 0.5, -1.0, 1.0, 0.0 );
@@ -250,7 +250,7 @@ int main( void ) {
         x = random_uniform( 0.0, 30.0 );
         a = random_uniform( 0.0, 10.0 );
         b = random_uniform( a + STDLIB_CONSTANT_FLOAT64_EPS, 40.0 );
-        c = a + random_uniform( 0.0, b - a );
+        c = random_uniform( a, b );
         y = stdlib_base_dists_triangular_logpdf( x, a, b, c );
         printf( "x: %lf, a: %lf, b: %lf, c: %lf, ln(f(x;a,b,c)): %lf\n", x, a, b, c, y );
     }

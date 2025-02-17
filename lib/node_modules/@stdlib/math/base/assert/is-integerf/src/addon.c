@@ -18,7 +18,7 @@
 
 #include "stdlib/math/base/assert/is_integerf.h"
 #include "stdlib/napi/argv.h"
-#include "stdlib/napi/argv_double.h"
+#include "stdlib/napi/argv_float.h"
 #include "stdlib/napi/create_int32.h"
 #include "stdlib/napi/export.h"
 #include <node_api.h>
@@ -33,8 +33,8 @@
 */
 static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV( env, info, argv, argc, 1 );
-	STDLIB_NAPI_ARGV_DOUBLE( env, x, argv, 0 );
-	STDLIB_NAPI_CREATE_INT32( env, (int32_t)stdlib_base_is_integerf( (float)x ), out );
+	STDLIB_NAPI_ARGV_FLOAT( env, x, argv, 0 );
+	STDLIB_NAPI_CREATE_INT32( env, (int32_t)stdlib_base_is_integerf( x ), out );
 	return out;
 }
 
