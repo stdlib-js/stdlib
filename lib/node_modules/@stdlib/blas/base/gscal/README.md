@@ -147,7 +147,7 @@ console.log( x );
 ## See Also
 
 -   <span class="package-name">[`@stdlib/blas/base/dscal`][@stdlib/blas/base/dscal]</span><span class="delimiter">: </span><span class="description">multiply a double-precision floating-point vector by a constant.</span>
--   <span class="package-name">[`@stdlib/blas/base/gaxpy`][@stdlib/blas/base/gaxpy]</span><span class="delimiter">: </span><span class="description">multiply x by a constant and add the result to y.</span>
+-   <span class="package-name">[`@stdlib/blas/base/gaxpy`][@stdlib/blas/base/gaxpy]</span><span class="delimiter">: </span><span class="description">multiply a vector `x` by a constant and add the result to `y`.</span>
 -   <span class="package-name">[`@stdlib/blas/base/sscal`][@stdlib/blas/base/sscal]</span><span class="delimiter">: </span><span class="description">multiply a single-precision floating-point vector by a constant.</span>
 
 </section>

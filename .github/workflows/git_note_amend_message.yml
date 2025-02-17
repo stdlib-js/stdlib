@@ -52,9 +52,6 @@ on:
       STDLIB_BOT_GITHUB_TOKEN:
         description: 'GitHub token for stdlib-bot'
         required: true
-      REPO_GITHUB_TOKEN:
-        description: 'GitHub token for accessing the repository'
-        required: true
       STDLIB_BOT_GPG_PRIVATE_KEY:
         description: 'GPG private key for stdlib-bot'
         required: true
@@ -79,13 +76,16 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           # Fetch all history to allow creating a Git note for any commit:
           fetch-depth: 0
 
           # Token for accessing the repository:
-          token: ${{ secrets.REPO_GITHUB_TOKEN }}
+          token: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+
+          # Avoid storing GitHub token in local Git configuration:
+          persist-credentials: false
 
       # Verify commit exists:
       - name: 'Verify commit exists'
@@ -130,7 +130,7 @@ jobs:
       # Commit and push changes:
       - name: 'Commit and push changes'
         env:
-            REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+            REPO_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
             USER_NAME: stdlib-bot
         run: |
           git config --local user.email "82920195+stdlib-bot@users.noreply.github.com"

@@ -19,7 +19,7 @@
 #ifndef STDLIB_STATS_BASE_DSNANMEANPN_H
 #define STDLIB_STATS_BASE_DSNANMEANPN_H
 
-#include <stdint.h>
+#include "stdlib/blas/base/shared.h"
 
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
@@ -31,7 +31,12 @@ extern "C" {
 /**
 * Computes the arithmetic mean of a single-precision floating-point strided array, ignoring `NaN` values, using a two-pass error correction algorithm with extended accumulation, and return an extended precision result.
 */
-double stdlib_strided_dsnanmeanpn( const int64_t N, const float *X, const int64_t stride );
+double API_SUFFIX(stdlib_strided_dsnanmeanpn)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX );
+
+/**
+* Computes the arithmetic mean of a single-precision floating-point strided array, ignoring `NaN` values and using a two-pass error correction algorithm with extended accumulation and alternative indexing semantics.
+*/
+double API_SUFFIX(stdlib_strided_dsnanmeanpn_ndarray)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
 
 #ifdef __cplusplus
 }
