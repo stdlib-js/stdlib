@@ -194,7 +194,7 @@ issue_exists_for_commit() {
 	local query
 
 	# Build a search query that looks for the commit short SHA in the issue title:
-	local raw_query="repo:${owner}/${repo} in:title \"commit ${short_sha}\""
+	local raw_query="repo:${owner}/${repo} in:title \"commit \`${short_sha}\`\""
 
 	# URL-encode the query using jq:
 	query=$(echo "$raw_query" | jq -sRr @uri)
