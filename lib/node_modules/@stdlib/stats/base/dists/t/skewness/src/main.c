@@ -26,7 +26,7 @@
 * @return     skewness
 *
 * @example
-* double y = stdlib_base_t_skewness( 9.0 );
+* double y = stdlib_base_dists_t_skewness( 9.0 );
 * // returns 0.0
 */
 double stdlib_base_dists_t_skewness( const double v ) {

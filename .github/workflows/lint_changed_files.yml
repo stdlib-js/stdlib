@@ -52,7 +52,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -67,13 +67,26 @@ jobs:
       # Install Node.js:
       - name: 'Install Node.js'
         # Pin action to full length commit SHA
-        uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af # v4.1.0
+        uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
         with:
           node-version: '20' # 'lts/*'
         timeout-minutes: 5
 
+      # Cache dependencies:
+      - name: 'Cache dependencies'
+        # Pin action to full length commit SHA
+        uses: actions/cache@1bd1e32a3bdc45362d1e726936510720a7c30a57 # v4.2.0
+        id: cache
+        with:
+          path: |
+            ${{ github.workspace }}/node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
       # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
       - name: 'Install dependencies'
+        if: steps.cache.outputs.cache-hit != 'true'
         run: |
           make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 15
@@ -120,7 +133,7 @@ jobs:
       - name: 'Lint against EditorConfig'
         if: success() || failure()
         run: |
-          make lint-editorconfig-files FILES="${{ steps.changed-files.outputs.files }}"
+          make lint-editorconfig-files EDITORCONFIG_FORMAT=github-actions FILES="${{ steps.changed-files.outputs.files }}"
 
       # Lint Markdown files:
       - name: 'Lint Markdown files'

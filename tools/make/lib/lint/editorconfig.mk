@@ -35,9 +35,16 @@ EDITORCONFIG_CHECKER_CONF ?= $(CONFIG_DIR)/editorconfig-checker/.editorconfig_ch
 # Define the path to the editorconfig-checker configuration file for Markdown files:
 EDITORCONFIG_CHECKER_MARKDOWN_CONF ?= $(CONFIG_DIR)/editorconfig-checker/.editorconfig_checker.markdown.json
 
+# Define the output format (default is unset, which uses editorconfig-checker's default format)
+EDITORCONFIG_FORMAT ?=
+
+# Add the format flag if EDITORCONFIG_FORMAT is set
+EDITORCONFIG_FORMAT_FLAG := $(if $(EDITORCONFIG_FORMAT),--format=$(EDITORCONFIG_FORMAT))
+
 # Define the command-line options to use when invoking the editorconfig-checker executable:
 EDITORCONFIG_CHECKER_CONF_FLAGS ?= \
-	--ignore-defaults
+	--ignore-defaults \
+	$(EDITORCONFIG_FORMAT_FLAG)
 
 
 # RULES #

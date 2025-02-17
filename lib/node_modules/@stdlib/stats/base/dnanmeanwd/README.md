@@ -72,26 +72,28 @@ The function has the following parameters:
 
 The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to compute the [arithmetic mean][arithmetic-mean] of every other element in `x`,
 
+<!-- eslint-disable max-len -->
+
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
 
-var x = new Float64Array( [ 1.0, 2.0, 2.0, -7.0, -2.0, 3.0, 4.0, 2.0, NaN ] );
+var x = new Float64Array( [ 1.0, 2.0, 2.0, -7.0, -2.0, 3.0, 4.0, 2.0, NaN, NaN ] );
 
-var v = dnanmeanwd( 4, x, 2 );
+var v = dnanmeanwd( 5, x, 2 );
 // returns 1.25
 ```
 
 Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][mdn-typed-array] views.
 
-<!-- eslint-disable stdlib/capitalized-comments -->
+<!-- eslint-disable stdlib/capitalized-comments, max-len -->
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
 
-var x0 = new Float64Array( [ 2.0, 1.0, 2.0, -2.0, -2.0, 2.0, 3.0, 4.0, NaN ] );
+var x0 = new Float64Array( [ 2.0, 1.0, 2.0, -2.0, -2.0, 2.0, 3.0, 4.0, NaN, NaN ] );
 var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 
-var v = dnanmeanwd( 4, x1, 2 );
+var v = dnanmeanwd( 5, x1, 2 );
 // returns 1.25
 ```
 
@@ -114,12 +116,14 @@ The function has the following additional parameters:
 
 While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameter supports indexing semantics based on a starting index. For example, to calculate the [arithmetic mean][arithmetic-mean] for every other element in `x` starting from the second element
 
+<!-- eslint-disable max-len -->
+
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
 
-var x = new Float64Array( [ 2.0, 1.0, 2.0, -2.0, -2.0, 2.0, 3.0, 4.0, NaN ] );
+var x = new Float64Array( [ 2.0, 1.0, 2.0, -2.0, -2.0, 2.0, 3.0, 4.0, NaN, NaN ] );
 
-var v = dnanmeanwd.ndarray( 4, x, 2, 1 );
+var v = dnanmeanwd.ndarray( 5, x, 2, 1 );
 // returns 1.25
 ```
 
