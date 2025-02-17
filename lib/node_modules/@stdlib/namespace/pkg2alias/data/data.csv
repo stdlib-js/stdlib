@@ -1056,7 +1056,7 @@
 "@stdlib/strided/base/dmap2",base.strided.dmap2
 "@stdlib/stats/strided/dmax",base.strided.dmax
 "@stdlib/stats/strided/dmaxabs",base.strided.dmaxabs
-"@stdlib/stats/base/dmaxabssorted",base.strided.dmaxabssorted
+"@stdlib/stats/strided/dmaxabssorted",base.strided.dmaxabssorted
 "@stdlib/stats/base/dmaxsorted",base.strided.dmaxsorted
 "@stdlib/stats/base/dmean",base.strided.dmean
 "@stdlib/stats/base/dmeankbn",base.strided.dmeankbn

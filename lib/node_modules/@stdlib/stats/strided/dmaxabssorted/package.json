@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/stats/base/dmaxabssorted",
+  "name": "@stdlib/stats/strided/dmaxabssorted",
   "version": "0.0.0",
   "description": "Calculate the maximum absolute value of a sorted double-precision floating-point strided array.",
   "license": "Apache-2.0",
