@@ -110,6 +110,101 @@ for ( i = 0; i < 10; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/degenerate/quantile.h"
+```
+
+#### stdlib_base_dists_degenerate_quantile( p, mu )
+
+Evaluates the [quantile function][quantile-function] of a [degenerate distribution][degenerate-distribution] centered at `mu`.
+
+```c
+double out = stdlib_base_dists_degenerate_quantile( 0.5, 2.0 );
+// returns 2.0
+```
+
+The function accepts the following arguments:
+
+-   **p**: `[in] double` input value (probability).
+-   **mu**: `[in] double` constant value of the distribution.
+
+```c
+double stdlib_base_dists_degenerate_quantile( const double p, const double mu );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/degenerate/quantile.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v * ( max - min ) );
+}
+
+int main( void ) {
+    double result;
+    double mu;
+    double p;
+    int i;
+
+    for ( i = 0; i < 10; i++ ) {
+        p = random_uniform( 0.0, 1.0 );
+        mu = random_uniform( -20.0, 20.0 );
+        result = stdlib_base_dists_degenerate_quantile( p, mu );
+        printf( "p: %lf, µ: %lf, Q(p;µ): %lf \n", p, mu, result );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
