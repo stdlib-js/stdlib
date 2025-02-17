@@ -109,7 +109,7 @@ var out = bar( 1, 2, 3 );
 ```javascript
 var filledarrayBy = require( '@stdlib/array/filled-by' );
 var Uint8Array = require( '@stdlib/array/uint8' );
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 var maskArguments = require( '@stdlib/utils/mask-arguments' );
 
 function fill( i ) {

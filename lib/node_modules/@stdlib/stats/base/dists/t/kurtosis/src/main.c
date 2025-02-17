@@ -27,7 +27,7 @@
 * @return     excess kurtosis
 *
 * @example
-* double y = stdlib_base_t_kurtosis( 9.0 );
+* double y = stdlib_base_dists_t_kurtosis( 9.0 );
 * // returns 1.2
 */
 double stdlib_base_dists_t_kurtosis( const double v ) {

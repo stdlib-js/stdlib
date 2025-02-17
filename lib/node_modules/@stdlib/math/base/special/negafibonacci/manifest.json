@@ -38,9 +38,7 @@
       "dependencies": [
         "@stdlib/math/base/napi/unary",
         "@stdlib/constants/float64/max-safe-nth-fibonacci",
-        "@stdlib/math/base/special/abs",
-        "@stdlib/math/base/assert/is-nan",
-        "@stdlib/math/base/assert/is-integer"
+        "@stdlib/math/base/special/abs"
       ]
     },
     {
@@ -55,9 +53,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/constants/float64/max-safe-nth-fibonacci",
-        "@stdlib/math/base/special/abs",
-        "@stdlib/math/base/assert/is-nan",
-        "@stdlib/math/base/assert/is-integer"
+        "@stdlib/math/base/special/abs"
       ]
     },
     {
@@ -72,9 +68,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/constants/float64/max-safe-nth-fibonacci",
-        "@stdlib/math/base/special/abs",
-        "@stdlib/math/base/assert/is-nan",
-        "@stdlib/math/base/assert/is-integer"
+        "@stdlib/math/base/special/abs"
       ]
     }
   ]
