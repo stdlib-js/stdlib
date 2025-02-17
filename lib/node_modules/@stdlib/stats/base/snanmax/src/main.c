@@ -36,7 +36,7 @@ float API_SUFFIX(stdlib_strided_snanmax)( const CBLAS_INT N, const float *X, con
 }
 
 /**
-* Computes the maximum value of a single-precision floating-point strided array, ignoring `NaN` values using alternative indexing semantics.
+* Computes the maximum value of a single-precision floating-point strided array, ignoring `NaN` values and using alternative indexing semantics.
 *
 * @param N        number of indexed elements
 * @param X        input array

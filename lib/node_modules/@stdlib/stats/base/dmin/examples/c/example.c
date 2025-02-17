@@ -17,7 +17,6 @@
 */
 
 #include "stdlib/stats/base/dmin.h"
-#include <stdint.h>
 #include <stdio.h>
 
 int main( void ) {

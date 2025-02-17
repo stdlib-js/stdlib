@@ -67,12 +67,12 @@ function iterFcn( iterator[, ...args] ) {...}
 
 where
 
--   **iterator**: an [iterator][mdn-iterator-protocol]
--   **...args**: additional [iterator][mdn-iterator-protocol] function arguments
+-   **iterator**: an [iterator][mdn-iterator-protocol].
+-   **...args**: additional [iterator][mdn-iterator-protocol] function arguments.
 
 The returned function expects a single argument
 
--   **iterator**: an [iterator][mdn-iterator-protocol]
+-   **iterator**: an [iterator][mdn-iterator-protocol].
 
 and invokes `iterFcn` with the provided [iterator][mdn-iterator-protocol] and any previously provided `args`.
 

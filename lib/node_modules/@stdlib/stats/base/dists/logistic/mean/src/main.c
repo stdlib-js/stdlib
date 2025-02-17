@@ -27,7 +27,7 @@
 * @return     mean
 *
 * @example
-* double y = stdlib_base_logistic_mean( 0.0, 1.0 );
+* double y = stdlib_base_dists_logistic_mean( 0.0, 1.0 );
 * // returns 0.0
 */
 double stdlib_base_dists_logistic_mean( const double mu, const double s ) {
