@@ -26,7 +26,7 @@
 * @return         mode
 *
 * @example
-* double y = stdlib_base_beta_mode( 4.0, 12.0 );
+* double y = stdlib_base_dists_beta_mode( 4.0, 12.0 );
 * // returns ~0.214
 */
 double stdlib_base_dists_beta_mode( const double alpha, const double beta ) {
