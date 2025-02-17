@@ -26,7 +26,7 @@
 * @return          variance
 *
 * @example
-* double y = stdlib_base_poisson_variance( 9.0 );
+* double y = stdlib_base_dists_poisson_variance( 9.0 );
 * // returns 9.0
 */
 double stdlib_base_dists_poisson_variance( const double lambda ) {
