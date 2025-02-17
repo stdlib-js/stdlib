@@ -28,57 +28,57 @@
     {
       "task": "build",
       "src": [
-        "./src/ssort2ins.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/math/base/assert/is-negative-zerof",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
-        "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-float",
-        "@stdlib/napi/argv-strided-float32array",
-        "@stdlib/math/base/assert/is-nanf",
-        "@stdlib/math/base/assert/is-negative-zerof"
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-float32array"
       ]
     },
     {
       "task": "benchmark",
       "src": [
-        "./src/ssort2ins.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/assert/is-nanf",
-        "@stdlib/math/base/assert/is-negative-zerof"
+        "@stdlib/math/base/assert/is-negative-zerof",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared"
       ]
     },
     {
       "task": "examples",
       "src": [
-        "./src/ssort2ins.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/assert/is-nanf",
-        "@stdlib/math/base/assert/is-negative-zerof"
+        "@stdlib/math/base/assert/is-negative-zerof",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared"
       ]
     }
   ]

@@ -119,20 +119,16 @@ h = hypot( 5.0, NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var hypot = require( '@stdlib/math/base/special/hypot' );
 
-var x;
-var y;
-var h;
-var i;
+var len = 100;
+var x = discreteUniform( len, -50, 50 );
+var y = discreteUniform( len, -50, 50 );
 
-for ( i = 0; i < 100; i++ ) {
-    x = round( randu()*100.0 ) - 50.0;
-    y = round( randu()*100.0 ) - 50.0;
-    h = hypot( x, y );
-    console.log( 'h(%d,%d) = %d', x, y, h );
+var i;
+for ( i = 0; i < len; i++ ) {
+    console.log( 'h(%d,%d) = %d', x[ i ], y[ i ], hypot( x[ i ], y[ i ] ) );
 }
 ```
 

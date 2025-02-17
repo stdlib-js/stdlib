@@ -1,0 +1,520 @@
+
+{{alias}}.main( N, alpha, x, strideX )
+    Multiplies a vector `x` by a constant `alpha`.
+
+    The `N` and stride parameters determine which elements in the strided array
+    are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If `N <= 0`, the function returns `x` unchanged.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    alpha: number
+        Constant.
+
+    x: Float32Array
+        Input array.
+
+    strideX: integer
+        Index increment for `x`.
+
+    Returns
+    -------
+    x: Float32Array
+        Input array.
+
+    Examples
+    --------
+    // Standard usage:
+    > var x = new {{alias:@stdlib/array/float32}}( [ -2.0, 1.0, 3.0, -5.0 ] );
+    > {{alias}}.main( x.length, 5.0, x, 1 )
+    <Float32Array>[ -10.0, 5.0, 15.0, -25.0 ]
+
+    // Using `N` and stride parameters:
+    > x = new {{alias:@stdlib/array/float32}}( [ -2.0, 1.0, 3.0, -5.0 ] );
+    > {{alias}}.main( 2, 5.0, x, 2 )
+    <Float32Array>[ -10.0, 1.0, 15.0, -5.0 ]
+
+    // Using view offsets:
+    > var x0 = new {{alias:@stdlib/array/float32}}( [ 1.0, -2.0, 3.0, -4.0 ] );
+    > var x1 = new {{alias:@stdlib/array/float32}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > {{alias}}.main( 2, 5.0, x1, 2 )
+    <Float32Array>[ -10.0, 3.0, -20.0 ]
+    > x0
+    <Float32Array>[ 1.0, -10.0, 3.0, -20.0 ]
+
+
+{{alias}}.ndarray( N, alpha, x, strideX, offsetX )
+    Multiplies a vector `x` by a constant `alpha` using alternative indexing
+    semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameter supports indexing semantics based on a starting
+    index.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    alpha: number
+        Constant.
+
+    x: Float32Array
+        Input array.
+
+    strideX: integer
+        Index increment for `x`.
+
+    offsetX: integer
+        Starting index for `x`.
+
+    Returns
+    -------
+    x: Float32Array
+        Input array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = new {{alias:@stdlib/array/float32}}( [ -2.0, 1.0, 3.0, -5.0 ] );
+    > {{alias}}.ndarray( x.length, 5.0, x, 1, 0 )
+    <Float32Array>[ -10.0, 5.0, 15.0, -25.0 ]
+
+    // Using an index offset:
+    > x = new {{alias:@stdlib/array/float32}}( [ 1.0, -2.0, 3.0, -4.0, 5.0 ] );
+    > {{alias}}.ndarray( 2, 5.0, x, 2, 1 )
+    <Float32Array>[ 1.0, -10.0, 3.0, -20.0, 5.0 ]
+
+
+{{alias}}.Module( memory )
+    Returns a new WebAssembly module wrapper which uses the provided WebAssembly
+    memory instance as its underlying memory.
+
+    Parameters
+    ----------
+    memory: Memory
+        WebAssembly memory instance.
+
+    Returns
+    -------
+    mod: Module
+        WebAssembly module wrapper.
+
+    Examples
+    --------
+    // Create a new memory instance:
+    > var mem = new {{alias:@stdlib/wasm/memory}}( { 'initial': 0 } );
+
+    // Create a new routine:
+    > var mod = new {{alias}}.Module( mem );
+
+    // Initialize the routine:
+    > mod.initializeSync();
+
+
+{{alias}}.Module.prototype.binary
+    Read-only property which returns WebAssembly binary code.
+
+    Returns
+    -------
+    out: Uint8Array
+        WebAssembly binary code.
+
+    Examples
+    --------
+    > var mem = new {{alias:@stdlib/wasm/memory}}( { 'initial': 0 } );
+    > var mod = new {{alias}}.Module( mem );
+    > mod.initializeSync();
+    > mod.binary
+    <Uint8Array>
+
+
+{{alias}}.Module.prototype.memory
+    Read-only property which returns WebAssembly memory.
+
+    Returns
+    -------
+    mem: Memory|null
+        WebAssembly memory.
+
+    Examples
+    --------
+    > var mem = new {{alias:@stdlib/wasm/memory}}( { 'initial': 0 } );
+    > var mod = new {{alias}}.Module( mem );
+    > mod.initializeSync();
+    > mod.memory
+    <Memory>
+
+
+{{alias}}.Module.prototype.buffer
+    Read-only property which returns a WebAssembly memory buffer as a
+    Uint8Array.
+
+    Returns
+    -------
+    buf: Uint8Array|null
+        WebAssembly memory buffer.
+
+    Examples
+    --------
+    > var mem = new {{alias:@stdlib/wasm/memory}}( { 'initial': 0 } );
+    > var mod = new {{alias}}.Module( mem );
+    > mod.initializeSync();
+    > mod.buffer
+    <Uint8Array>
+
+
+{{alias}}.Module.prototype.view
+    Read-only property which returns a WebAsssembly memory buffer as a DataView.
+
+    Returns
+    -------
+    view: DataView|null
+        WebAssembly memory view.
+
+    Examples
+    --------
+    > var mem = new {{alias:@stdlib/wasm/memory}}( { 'initial': 0 } );
+    > var mod = new {{alias}}.Module( mem );
+    > mod.initializeSync();
+    > mod.view
+    <DataView>
+
+
+{{alias}}.Module.prototype.exports
+    Read-only property which returns "raw" WebAssembly module exports.
+
+    Returns
+    -------
+    out: Object|null
+        WebAssembly module exports.
+
+    Examples
+    --------
+    > var mem = new {{alias:@stdlib/wasm/memory}}( { 'initial': 0 } );
+    > var mod = new {{alias}}.Module( mem );
+    > mod.initializeSync();
+    > mod.exports
+    {...}
+
+
+{{alias}}.Module.prototype.initialize()
+    Asynchronously initializes a WebAssembly module instance.
+
+    Returns
+    -------
+    p: Promise
+        Promise which resolves upon initializing a WebAssembly module instance.
+
+    Examples
+    --------
+    > var mem = new {{alias:@stdlib/wasm/memory}}( { 'initial': 0 } );
+    > var mod = new {{alias}}.Module( mem );
+    > mod.initialize();
+
+
+{{alias}}.Module.prototype.initializeAsync( clbk )
+    Asynchronously initializes a WebAssembly module instance.
+
+    Parameters
+    ----------
+    clbk: Function
+        Callback to invoke upon initializing a WebAssembly module instance.
+
+    Examples
+    --------
+    > var mem = new {{alias:@stdlib/wasm/memory}}( { 'initial': 0 } );
+    > var mod = new {{alias}}.Module( mem );
+    > function clbk() { console.log( 'done' ) };
+    > mod.initializeAsync( clbk );
+
+
+{{alias}}.Module.prototype.initializeSync()
+    Synchronously initializes a WebAssembly module instance.
+
+    In web browsers, JavaScript engines may raise an exception when attempting
+    to synchronously compile large WebAssembly binaries due to concerns about
+    blocking the main thread. Hence, to initialize WebAssembly modules having
+    large binaries (e.g., >4KiB), consider using asynchronous initialization
+    methods in browser contexts.
+
+    Returns
+    -------
+    mod: Module
+        Module wrapper instance.
+
+    Examples
+    --------
+    > var mem = new {{alias:@stdlib/wasm/memory}}( { 'initial': 0 } );
+    > var mod = new {{alias}}.Module( mem );
+    > mod.initializeSync();
+
+
+{{alias}}.Module.prototype.realloc( nbytes )
+    Reallocates the underlying WebAssembly memory instance to a specified number
+    of bytes.
+
+    WebAssembly memory can only *grow*, not shrink. Hence, if provided a number
+    of bytes which is less than or equal to the size of the current memory, the
+    function does nothing.
+
+    When non-shared memory is resized, the underlying the `ArrayBuffer` is
+    detached, consequently invalidating any associated typed array views. Before
+    resizing non-shared memory, ensure that associated typed array views no
+    longer need byte access and can be garbage collected.
+
+    Parameters
+    ----------
+    nbytes: integer
+        Memory size (in bytes).
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether the resize operation was successful.
+
+    Examples
+    --------
+    > var mem = new {{alias:@stdlib/wasm/memory}}( { 'initial': 0 } );
+    > var mod = new {{alias}}.Module( mem );
+    > mod.initializeSync();
+    > mod.realloc( 100 )
+    <boolean>
+
+
+{{alias}}.Module.prototype.hasCapacity( byteOffset, values )
+    Returns a boolean indicating whether the underlying WebAssembly memory
+    instance has the capacity to store a provided list of values starting from a
+    specified byte offset.
+
+    Parameters
+    ----------
+    byteOffset: integer
+        Byte offset at which to start writing values.
+
+    values: ArrayLikeObject
+        Input array containing values to write.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether the underlying WebAssembly memory instance
+        has enough capacity.
+
+    Examples
+    --------
+    > var mem = new {{alias:@stdlib/wasm/memory}}( { 'initial': 0 } );
+    > var mod = new {{alias}}.Module( mem );
+    > mod.initializeSync();
+    > mod.realloc( 100 );
+    > mod.hasCapacity( 0, [ 1, 2, 3, 4 ] )
+    true
+
+
+{{alias}}.Module.prototype.isView( values )
+    Returns a boolean indicating whether a provided list of values is a view of
+    the underlying memory of the WebAssembly module.
+
+    Parameters
+    ----------
+    values: ArrayLikeObject
+        Input array.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether the list is a memory view.
+
+    Examples
+    --------
+    > var mem = new {{alias:@stdlib/wasm/memory}}( { 'initial': 0 } );
+    > var mod = new {{alias}}.Module( mem );
+    > mod.initializeSync();
+    > mod.realloc( 100 );
+    > mod.isView( [ 1, 2, 3, 4 ] )
+    false
+
+
+{{alias}}.Module.prototype.write( byteOffset, values )
+    Writes values to the underlying WebAssembly memory instance.
+
+    The function infers element size (i.e., number of bytes per element) from
+    the data type of the input array. For example, if provided a Float32Array,
+    the function writes each element as a single-precision floating-point number
+    to the underlying WebAssembly memory instance.
+
+    In order to write elements as a different data type, you need to perform an
+    explicit cast *before* calling this method. For example, in order to write
+    single-precision floating-point numbers contained in a Float32Array as
+    signed 32-bit integers, you must first convert the Float32Array to an
+    Int32Array before passing the values to this method.
+
+    If provided an array having an unknown or "generic" data type, elements are
+    written as double-precision floating-point numbers.
+
+    Parameters
+    ----------
+    byteOffset: integer
+        Byte offset at which to start writing values.
+
+    values: ArrayLikeObject
+        Input array containing values to write.
+
+    Returns
+    -------
+    mod: Module
+        Module wrapper instance.
+
+    Examples
+    --------
+    > var mem = new {{alias:@stdlib/wasm/memory}}( { 'initial': 0 } );
+    > var mod = new {{alias}}.Module( mem );
+    > mod.initializeSync();
+    > mod.realloc( 100 );
+    > mod.write( 0, [ 1, 2, 3, 4 ] );
+
+
+{{alias}}.Module.prototype.read( byteOffset, out )
+    Reads values from the underlying WebAssembly memory instance.
+
+    The function infers element size (i.e., number of bytes per element) from
+    the data type of the output array. For example, if provided a Float32Array,
+    the function reads each element as a single-precision floating-point number
+    from the underlying WebAssembly memory instance.
+
+    In order to read elements as a different data type, you need to perform an
+    explicit cast *after* calling this method. For example, in order to read
+    single-precision floating-point numbers contained in a Float32Array as
+    signed 32-bit integers, you must convert the Float32Array to an Int32Array
+    after reading memory values using this method.
+
+    If provided an output array having an unknown or "generic" data type,
+    elements are read as double-precision floating-point numbers.
+
+    Parameters
+    ----------
+    byteOffset: integer
+        Byte offset at which to start reading values.
+
+    out: ArrayLikeObject
+        Output array for storing read values.
+
+    Returns
+    -------
+    mod: Module
+        Module wrapper instance.
+
+    Examples
+    --------
+    > var mem = new {{alias:@stdlib/wasm/memory}}( { 'initial': 0 } );
+    > var mod = new {{alias}}.Module( mem );
+    > mod.initializeSync();
+    > mod.realloc( 100 );
+    > mod.write( 0, [ 1, 2, 3, 4 ] );
+    > var out = [ 0, 0, 0, 0 ];
+    > mod.read( 0, out );
+    > out
+    [ 1, 2, 3, 4 ]
+
+
+{{alias}}.Module.prototype.main( N, α, xp, sx )
+    Multiples a vector `x` by a constant `α`.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    α: number
+        Constant.
+
+    xp: integer
+        Input array pointer (i.e., byte offset).
+
+    sx: integer
+        Index increment for `x`.
+
+    Returns
+    -------
+    xp: integer
+        Input array pointer (i.e., byte offset).
+
+    Examples
+    --------
+    > var mem = new {{alias:@stdlib/wasm/memory}}( { 'initial': 1 } );
+    > var mod = new {{alias}}.Module( mem );
+    > mod.initializeSync();
+
+    // Define "pointer" (i.e., byte offsets) into module memory:
+    > var xptr = 0;
+
+    // Write data to module memory:
+    > mod.write( xptr, {{alias:@stdlib/array/one-to}}( 5, 'float32' ) );
+
+    // Perform computation:
+    > mod.main( 5, 5.0, xptr, 1 );
+
+    // Extract results from module memory:
+    > var view = {{alias:@stdlib/array/zeros}}( 5, 'float32' );
+    > mod.read( xptr, view );
+    > view
+    <Float32Array>[ 5.0, 10.0, 15.0, 20.0, 25.0 ]
+
+
+{{alias}}.Module.prototype.ndarray( N, α, xp, sx, ox )
+    Multiples a vector `x` by a constant `α` using alternative indexing
+    semantics.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    α: number
+        Constant.
+
+    xp: integer
+        Input array pointer (i.e., byte offset).
+
+    sx: integer
+        Index increment for `x`.
+
+    ox: integer
+        Starting index for `x`.
+
+    Returns
+    -------
+    ox: integer
+        Input array pointer (i.e., byte offset).
+
+    Examples
+    --------
+    > var mem = new {{alias:@stdlib/wasm/memory}}( { 'initial': 1 } );
+    > var mod = new {{alias}}.Module( mem );
+    > mod.initializeSync();
+
+    // Define "pointer" (i.e., byte offsets) into module memory:
+    > var xptr = 0;
+
+    // Write data to module memory:
+    > mod.write( xptr, {{alias:@stdlib/array/one-to}}( 5, 'float32' ) );
+
+    // Perform computation:
+    > mod.ndarray( 5, 5.0, xptr, 1, 0 );
+
+    // Extract results from module memory:
+    > var view = {{alias:@stdlib/array/zeros}}( 5, 'float32' );
+    > mod.read( xptr, view );
+    > view
+    <Float32Array>[ 5.0, 10.0, 15.0, 20.0, 25.0 ]
+
+    See Also
+    --------
+

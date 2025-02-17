@@ -46,7 +46,7 @@ type Binary<T, U, V> = ( v1: T, v2: U ) => V;
 * @example
 * var ones4d = require( '@stdlib/array/base/ones4d' );
 * var zeros4d = require( '@stdlib/array/base/zeros4d' );
-* var add = require( '@stdlib/math/base/ops/add' );
+* var add = require( '@stdlib/number/float64/base/add' );
 *
 * var shape = [ 1, 2, 2, 2 ];
 *
