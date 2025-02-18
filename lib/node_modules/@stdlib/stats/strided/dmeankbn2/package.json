@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/stats/base/dmeankbn2",
+  "name": "@stdlib/stats/strided/dmeankbn2",
   "version": "0.0.0",
   "description": "Calculate the arithmetic mean of a double-precision floating-point strided array using a second-order iterative Kahan–Babuška algorithm.",
   "license": "Apache-2.0",

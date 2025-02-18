@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-#include "stdlib/stats/base/dmeankbn2.h"
+#include "stdlib/stats/strided/dmeankbn2.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>

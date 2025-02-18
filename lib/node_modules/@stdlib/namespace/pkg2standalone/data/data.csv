@@ -1060,7 +1060,7 @@
 "@stdlib/stats/strided/dmaxsorted","@stdlib/stats-strided-dmaxsorted"
 "@stdlib/stats/base/dmean","@stdlib/stats-base-dmean"
 "@stdlib/stats/strided/dmeankbn","@stdlib/stats-strided-dmeankbn"
-"@stdlib/stats/base/dmeankbn2","@stdlib/stats-base-dmeankbn2"
+"@stdlib/stats/strided/dmeankbn2","@stdlib/stats-base-dmeankbn2"
 "@stdlib/stats/base/dmeanli","@stdlib/stats-base-dmeanli"
 "@stdlib/stats/base/dmeanlipw","@stdlib/stats-base-dmeanlipw"
 "@stdlib/stats/base/dmeanors","@stdlib/stats-base-dmeanors"
