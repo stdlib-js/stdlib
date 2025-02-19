@@ -251,7 +251,7 @@ update_commit_map() {
 	for existing in "${commit_keys[@]}"; do
 		if [ "$existing" = "$key" ]; then
 			commit_counts[i]=$(( commit_counts[i] + 1 ))
-			commit_comments[i]="${commit_comments[i]}"$'\n\n'"-   ${link}"$'\n\n'"    > **${line}**: ${body}"$'\n\n'"    ${code_snippet}"
+			commit_comments[i]="${commit_comments[i]}"$'\n\n'"-   ${link}"$'\n\n'"    > **Line ${line}**: ${body}"$'\n\n'"    ${code_snippet}"
 			found=1
 			break
 		fi
@@ -261,7 +261,7 @@ update_commit_map() {
 	if [ "$found" -eq 0 ]; then
 		commit_keys+=("$key")
 		commit_counts+=("1")
-		commit_comments+=("-   ${link}"$'\n\n'"    > **${line}**: ${body}"$'\n\n'"    ${code_snippet}")
+		commit_comments+=("-   ${link}"$'\n\n'"    > **Line ${line}**: ${body}"$'\n\n'"    ${code_snippet}")
 	fi
 }
 
