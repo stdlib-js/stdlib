@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2024 The Stdlib Authors.
+Copyright (c) 2025 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -183,21 +183,63 @@ console.log( AP );
 ### Usage
 
 ```c
-TODO
+#include "stdlib/blas/base/sspr.h"
 ```
 
-#### TODO
+#### c_sspr( order, uplo, N, alpha, \*X, strideX, \*AP )
 
-TODO.
+Performs the symmetric rank 1 operation `A = α*x*x^T + A` where `α` is a scalar, `x` is an `N` element vector, and `A` is an `N` by `N` symmetric matrix supplied in packed form.
 
 ```c
-TODO
+#include "stdlib/blas/base/shared.h"
+
+float AP[] = { 1.0f, 2.0f, 3.0f, 1.0f, 2.0f, 1.0f };
+const float x[] = { 1.0f, 2.0f, 3.0f };
+
+c_sspr( CblasColMajor, CblasUpper, 3, 1.0f, x, 1, AP );
 ```
 
-TODO
+The function accepts the following arguments:
+
+-   **order**: `[in] CBLAS_LAYOUT` storage layout.
+-   **uplo**: `[in] CBLAS_UPLO` specifies whether the upper or lower triangular part of the symmetric matrix `A` should be referenced.
+-   **N**: `[in] CBLAS_INT` number of elements along each dimension of `A`.
+-   **alpha**: `[in] float` scalar.
+-   **X**: `[in] float*` input vector.
+-   **strideX**: `[in] CBLAS_INT` stride length for `X`.
+-   **AP**: `[inout] float*` packed form of a symmetric matrix `A`.
 
 ```c
-TODO
+void c_sspr( const CBLAS_LAYOUT order, const CBLAS_UPLO uplo, const CBLAS_INT N, const float alpha, const float *X, const CBLAS_INT strideX, float *AP )
+```
+
+#### c_sspr_ndarray( order, uplo, N, alpha, \*X, strideX, \*AP, strideAP, offsetAP )
+
+Performs the symmetric rank 1 operation `A = α*x*x^T + A` where `α` is a scalar, `x` is an `N` element vector, and `A` is an `N` by `N` symmetric matrix supplied in packed form using alternative indexing semantics.
+
+```c
+#include "stdlib/blas/base/shared.h"
+
+float AP[] = { 1.0f, 2.0f, 3.0f, 1.0f, 2.0f, 1.0f };
+const float x[] = { 1.0f, 2.0f, 3.0f };
+
+c_sspr_ndarray( CblasColMajor, CblasUpper, 3, 1.0f, x, 1, AP, 1, 0 );
+```
+
+The function accepts the following arguments:
+
+-   **order**: `[in] CBLAS_LAYOUT` storage layout.
+-   **uplo**: `[in] CBLAS_UPLO` specifies whether the upper or lower triangular part of the symmetric matrix `A` should be referenced.
+-   **N**: `[in] CBLAS_INT` number of elements along each dimension of `A`.
+-   **alpha**: `[in] float` scalar.
+-   **X**: `[in] float*` input vector.
+-   **strideX**: `[in] CBLAS_INT` stride length for `X`.
+-   **AP**: `[inout] float*` packed form of a symmetric matrix `A`.
+-   **strideAP**: `[in] CBLAS_INT` stride length for `AP`.
+-   **offsetAP**: `[in] CBLAS_INT` starting index for `AP`.
+
+```c
+void c_sspr_ndarray( const CBLAS_LAYOUT order, const CBLAS_UPLO uplo, const CBLAS_INT N, const float alpha, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, float *AP, const CBLAS_INT strideAP, const CBLAS_INT offsetAP )
 ```
 
 </section>
@@ -219,7 +261,34 @@ TODO
 ### Examples
 
 ```c
-TODO
+#include "stdlib/blas/base/sspr.h"
+#include "stdlib/blas/base/shared.h"
+#include <stdio.h>
+
+int main( void ) {
+    // Create strided arrays:
+    float AP[] = { 1.0f, 2.0f, 3.0f, 1.0f, 2.0f, 1.0f };
+    const float x[] = { 1.0f, 2.0f, 3.0f };
+
+    // Specify the number of elements along each dimension of `A`:
+    const int N = 3;
+
+    // Perform the symmetric rank 1 operation `A = α*x*x^T + A`:
+    c_sspr( CblasRowMajor, CblasUpper, N, 1.0f, x, 1, AP );
+
+    // Print the result:
+    for ( int i = 0; i < N*(N+1)/2; i++ ) {
+        printf( "AP[ %i ] = %f\n", i, AP[ i ] );
+    }
+
+    // Perform the symmetric rank 1 operation `A = α*x*x^T + A` using alternative indexing semantics:
+    c_sspr_ndarray( CblasRowMajor, CblasUpper, N, 1.0f, x, 1, 0, AP, 1, 0 );
+
+    // Print the result:
+    for ( int i = 0; i < N*(N+1)/2; i++ ) {
+        printf( "AP[ %i ] = %f\n", i, AP[ i ] );
+    }
+}
 ```
 
 </section>

@@ -1013,7 +1013,7 @@ interface Namespace {
 	* @param fcn - quinary callback
 	*
 	* @example
-	* var add = require( '@stdlib/math/base/ops/add5' );
+	* var add = require( '@stdlib/number/float64/base/add5' );
 	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
@@ -1032,7 +1032,7 @@ interface Namespace {
 	* // => <Float64Array>[ 5.0, 10.0, 15.0, 20.0, 25.0 ]
 	*
 	* @example
-	* var add = require( '@stdlib/math/base/ops/add5' );
+	* var add = require( '@stdlib/number/float64/base/add5' );
 	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
@@ -1225,7 +1225,7 @@ interface Namespace {
 	*
 	* @example
 	* var Float32Array = require( '@stdlib/array/float32' );
-	* var addf = require( '@stdlib/math/base/ops/addf' );
+	* var addf = require( '@stdlib/number/float32/base/add' );
 	*
 	* var x = new Float32Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 	* var y = new Float32Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
@@ -1236,7 +1236,7 @@ interface Namespace {
 	*
 	* @example
 	* var Float32Array = require( '@stdlib/array/float32' );
-	* var addf = require( '@stdlib/math/base/ops/addf' );
+	* var addf = require( '@stdlib/number/float32/base/add' );
 	*
 	* var x = new Float32Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 	* var y = new Float32Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
@@ -1310,7 +1310,7 @@ interface Namespace {
 	* @example
 	* var Float32Array = require( '@stdlib/array/float32' );
 	* var Uint8Array = require( '@stdlib/array/uint8' );
-	* var addf = require( '@stdlib/math/base/ops/addf' );
+	* var addf = require( '@stdlib/number/float32/base/add' );
 	*
 	* var x = new Float32Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 	* var y = new Float32Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
@@ -1323,7 +1323,7 @@ interface Namespace {
 	* @example
 	* var Float32Array = require( '@stdlib/array/float32' );
 	* var Uint8Array = require( '@stdlib/array/uint8' );
-	* var addf = require( '@stdlib/math/base/ops/addf' );
+	* var addf = require( '@stdlib/number/float32/base/add' );
 	*
 	* var x = new Float32Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 	* var y = new Float32Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
