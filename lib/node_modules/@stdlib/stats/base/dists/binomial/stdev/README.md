@@ -171,7 +171,7 @@ Returns the [standard deviation][stdev] of a [binomial][binomial-distribution] d
 
 ```c
 double out = stdlib_base_dists_binomial_stdev( 100, 0.1 );
-// returns 3
+// returns 3.0
 ```
 
 The function accepts the following arguments:
@@ -181,6 +181,7 @@ The function accepts the following arguments:
 
 ```c
 double stdlib_base_dists_binomial_stdev( const int32_t n, const double p );
+```
 
 </section>
 
