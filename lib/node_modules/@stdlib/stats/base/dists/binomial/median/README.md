@@ -173,7 +173,7 @@ Returns the [median][median] of a [binomial][binomial-distribution] distribution
 
 ```c
 double out = stdlib_base_dists_binomial_median( 100, 0.1 );
-// returns 10
+// returns 10.0
 ```
 
 The function accepts the following arguments:
