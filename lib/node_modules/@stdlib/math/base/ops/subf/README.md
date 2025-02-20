@@ -131,7 +131,7 @@ for ( i = 0; i < 100; i++ ) {
 Subtracts two single-precision floating-point numbers.
 
 ```c
-float v = stdlib_base_sub( -5.0f, 2.0f );
+float v = stdlib_base_subf( -5.0f, 2.0f );
 // returns -7.0f
 ```
 
@@ -141,7 +141,7 @@ The function accepts the following arguments:
 -   **y**: `[in] float` second input value.
 
 ```c
-float stdlib_base_sub( const float x, const float y );
+float stdlib_base_subf( const float x, const float y );
 ```
 
 </section>

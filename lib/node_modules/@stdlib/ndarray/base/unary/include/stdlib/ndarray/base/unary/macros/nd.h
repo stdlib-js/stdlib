@@ -43,13 +43,13 @@
 * STDLIB_NDARRAY_UNARY_ND_LOOP_EPILOGUE
 */
 #define STDLIB_NDARRAY_UNARY_ND_LOOP_PREAMBLE                                  \
-	struct ndarray *x1 = arrays[ 0 ];                                          \
-	struct ndarray *x2 = arrays[ 1 ];                                          \
+	const struct ndarray *x1 = arrays[ 0 ];                                    \
+	const struct ndarray *x2 = arrays[ 1 ];                                    \
 	enum STDLIB_NDARRAY_INDEX_MODE mx1 = stdlib_ndarray_index_mode( x1 );      \
 	enum STDLIB_NDARRAY_INDEX_MODE mx2 = stdlib_ndarray_index_mode( x2 );      \
 	enum STDLIB_NDARRAY_ORDER ordx1 = stdlib_ndarray_order( x1 );              \
 	enum STDLIB_NDARRAY_ORDER ordx2 = stdlib_ndarray_order( x2 );              \
-	int64_t *shape = stdlib_ndarray_shape( x1 );                               \
+	const int64_t *shape = stdlib_ndarray_shape( x1 );                         \
 	uint8_t *pbx1 = stdlib_ndarray_data( x1 );                                 \
 	uint8_t *pbx2 = stdlib_ndarray_data( x2 );                                 \
 	int64_t ndims = stdlib_ndarray_ndims( x1 );                                \
@@ -84,16 +84,16 @@
 * STDLIB_NDARRAY_UNARY_ND_LOOP_EPILOGUE
 */
 #define STDLIB_NDARRAY_UNARY_ND_LOOP_TWO_OUT_PREAMBLE                          \
-	struct ndarray *x1 = arrays[ 0 ];                                          \
-	struct ndarray *x2 = arrays[ 1 ];                                          \
-	struct ndarray *x3 = arrays[ 2 ];                                          \
+	const struct ndarray *x1 = arrays[ 0 ];                                    \
+	const struct ndarray *x2 = arrays[ 1 ];                                    \
+	const struct ndarray *x3 = arrays[ 2 ];                                    \
 	enum STDLIB_NDARRAY_INDEX_MODE mx1 = stdlib_ndarray_index_mode( x1 );      \
 	enum STDLIB_NDARRAY_INDEX_MODE mx2 = stdlib_ndarray_index_mode( x2 );      \
 	enum STDLIB_NDARRAY_INDEX_MODE mx3 = stdlib_ndarray_index_mode( x3 );      \
 	enum STDLIB_NDARRAY_ORDER ordx1 = stdlib_ndarray_order( x1 );              \
 	enum STDLIB_NDARRAY_ORDER ordx2 = stdlib_ndarray_order( x2 );              \
 	enum STDLIB_NDARRAY_ORDER ordx3 = stdlib_ndarray_order( x3 );              \
-	int64_t *shape = stdlib_ndarray_shape( x1 );                               \
+	const int64_t *shape = stdlib_ndarray_shape( x1 );                         \
 	uint8_t *pbx1 = stdlib_ndarray_data( x1 );                                 \
 	uint8_t *pbx2 = stdlib_ndarray_data( x2 );                                 \
 	uint8_t *pbx3 = stdlib_ndarray_data( x3 );                                 \
