@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/stats/base/dminsorted",
+  "name": "@stdlib/stats/strided/dminsorted",
   "version": "0.0.0",
   "description": "Calculate the minimum value of a sorted double-precision floating-point strided array.",
   "license": "Apache-2.0",

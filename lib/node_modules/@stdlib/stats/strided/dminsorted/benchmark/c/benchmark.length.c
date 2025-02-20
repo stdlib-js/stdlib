@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-#include "stdlib/stats/base/dminsorted.h"
+#include "stdlib/stats/strided/dminsorted.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
