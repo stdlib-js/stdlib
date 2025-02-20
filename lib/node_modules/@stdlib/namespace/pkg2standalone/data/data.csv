@@ -244,7 +244,7 @@
 "@stdlib/math/base/special/deg2radf","@stdlib/math-base-special-deg2radf"
 "@stdlib/math/base/special/digamma","@stdlib/math-base-special-digamma"
 "@stdlib/math/base/special/dirac-delta","@stdlib/math-base-special-dirac-delta"
-"@stdlib/math/base/ops/div","@stdlib/math-base-ops-div"
+"@stdlib/number/float64/base/div","@stdlib/math-base-ops-div"
 "@stdlib/math/base/ops/divf","@stdlib/math-base-ops-divf"
 "@stdlib/string/base/dotcase","@stdlib/string-base-dotcase"
 "@stdlib/stats/base/dists/arcsine/ctor","@stdlib/stats-base-dists-arcsine-ctor"
