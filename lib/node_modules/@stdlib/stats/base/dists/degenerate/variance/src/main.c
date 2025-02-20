@@ -26,7 +26,7 @@
 * @return      variance
 *
 * @example
-* double y = stdlib_base_degenerate_variance( 0.1 );
+* double y = stdlib_base_dists_degenerate_variance( 0.1 );
 * // returns 0.0
 */
 double stdlib_base_dists_degenerate_variance( const double mu ) {
