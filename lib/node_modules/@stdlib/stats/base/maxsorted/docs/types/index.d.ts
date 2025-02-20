@@ -20,7 +20,12 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { NumericArray } from '@stdlib/types/array';
+import { NumericArray, Collection, AccessorArrayLike } from '@stdlib/types/array';
+
+/**
+* Input array.
+*/
+type InputArray = NumericArray | Collection<number> | AccessorArrayLike<number>;
 
 /**
 * Interface describing `maxsorted`.
@@ -31,7 +36,7 @@ interface Routine {
 	*
 	* @param N - number of indexed elements
 	* @param x - sorted input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns maximum value
 	*
 	* @example
@@ -40,15 +45,15 @@ interface Routine {
 	* var v = maxsorted( x.length, x, 1 );
 	* // returns 3.0
 	*/
-	( N: number, x: NumericArray, stride: number ): number;
+	( N: number, x: InputArray, strideX: number ): number;
 
 	/**
 	* Computes the maximum value of a sorted strided array using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
 	* @param x - sorted input array
-	* @param stride - stride length
-	* @param offset - starting index
+	* @param strideX - stride length
+	* @param offsetX - starting index
 	* @returns maximum value
 	*
 	* @example
@@ -57,7 +62,7 @@ interface Routine {
 	* var v = maxsorted.ndarray( x.length, x, 1, 0 );
 	* // returns 3.0
 	*/
-	ndarray( N: number, x: NumericArray, stride: number, offset: number ): number;
+	ndarray( N: number, x: InputArray, strideX: number, offsetX: number ): number;
 }
 
 /**
@@ -65,7 +70,7 @@ interface Routine {
 *
 * @param N - number of indexed elements
 * @param x - sorted input array
-* @param stride - stride length
+* @param strideX - stride length
 * @returns maximum value
 *
 * @example
