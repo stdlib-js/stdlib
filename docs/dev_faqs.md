@@ -112,7 +112,7 @@ First, verify that your implementation is actually the same and doesn't contain 
 Consider whether we can make the heading shorter by renaming variables (e.g., `strideX` to `sx`). Second, disable the lint rule at the top-level. E.g., `<!-- lint disable maximum-heading-length -->`.
 
 ## I have opened a pull request to stdlib, where can I go to seek feedback on it?
-<!-- TODO - add links for gitter channel and meetings repo -->
+
 Consider joining our [Gitter channel][stdlib-gitter]! We are very proud to say that we have a very active community where people ask each other for help and others answer each other's questions. One of the maintainers will soon review your pull request and provide feedback. You can also discuss things during our [weekly office hours meeting][stdlib-office-hours]!
 
 ## I need to generate fixtures for my tests. How can I do that, and what are the best references to take inspiration from?
@@ -134,6 +134,24 @@ You can suppress that warning by adding a `// cppcheck-suppress shadowFunction` 
 STDLIB_MATH_BASE_NAPI_MODULE_FF_F( stdlib_base_gcdf )
 ```
 
+## I am facing a `Uninitialized variable` linting error in my C files, how to get rid of that?
+
+```bash
+lib/node_modules/@stdlib/stats/base/dmeanvarpn/benchmark/c/benchmark.length.c:112:38: warning: Uninitialized variable: x [uninitvar]
+  stdlib_strided_dmeanvarpn( len, 1, x, 1, out, 1 );
+                                     ^
+lib/node_modules/@stdlib/stats/base/dmeanvarpn/benchmark/c/benchmark.length.c:104:17: note: Assuming condition is false
+ for ( i = 0; i < len; i++ ) {
+                   ^
+lib/node_modules/@stdlib/stats/base/dmeanvarpn/benchmark/c/benchmark.length.c:112:38: note: Uninitialized variable: x
+  stdlib_strided_dmeanvarpn( len, 1, x, 1, out, 1 );
+```
+You can suppress that warning by adding a `// cppcheck-suppress uninitvar` comment over the function, for eg.
+
+```c
+// cppcheck-suppress uninitvar
+stdlib_strided_dmeanvarpn( len, 1, x, 1, out, 1 );
+```
 ## I have the required packages in the expected paths but I'm still facing an error like this while compiling the native addon.
 
 ![image](https://github.com/user-attachments/assets/6cb40866-c33b-4878-ab20-126472a56b63)
