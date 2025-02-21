@@ -284,9 +284,9 @@ int main( void ) {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/blas/ext/base/dsapxsumpw`][@stdlib/blas/ext/base/dsapxsumpw]</span><span class="delimiter">: </span><span class="description">adds a constant to each single-precision floating-point strided array element and computes the sum using pairwise summation with extended accumulation and returning an extended precision result.</span>
--   <span class="package-name">[`@stdlib/blas/ext/base/sapxsumpw`][@stdlib/blas/ext/base/sapxsumpw]</span><span class="delimiter">: </span><span class="description">adds a constant to each single-precision floating-point strided array element and computes the sum using pairwise summation.</span>
--   <span class="package-name">[`@stdlib/blas/ext/base/sdsapxsum`][@stdlib/blas/ext/base/sdsapxsum]</span><span class="delimiter">: </span><span class="description">adds a constant to each single-precision floating-point strided array element and computes the sum using extended accumulation.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/dsapxsumpw`][@stdlib/blas/ext/base/dsapxsumpw]</span><span class="delimiter">: </span><span class="description">add a constant to each single-precision floating-point strided array element and compute the sum using pairwise summation with extended accumulation and returning an extended precision result.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/sapxsumpw`][@stdlib/blas/ext/base/sapxsumpw]</span><span class="delimiter">: </span><span class="description">add a scalar constant to each single-precision floating-point strided array element and compute the sum using pairwise summation.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/sdsapxsum`][@stdlib/blas/ext/base/sdsapxsum]</span><span class="delimiter">: </span><span class="description">add a scalar constant to each single-precision floating-point strided array element and compute the sum using extended accumulation.</span>
 -   <span class="package-name">[`@stdlib/blas/ext/base/sdssumpw`][@stdlib/blas/ext/base/sdssumpw]</span><span class="delimiter">: </span><span class="description">calculate the sum of single-precision floating-point strided array elements using pairwise summation with extended accumulation.</span>
 
 </section>

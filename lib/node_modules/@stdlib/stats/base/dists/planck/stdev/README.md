@@ -64,7 +64,8 @@ v = stdev( 1.5 );
 // returns ~0.6080
 ```
 
-If provided a success probability `λ` which is nonpositive, the function returns `NaN`.
+If provided a shape parameter `λ` which is nonpositive, the function returns `NaN`.
+
 
 ```javascript
 var v = stdev( NaN );

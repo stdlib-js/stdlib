@@ -27,15 +27,15 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var extblas = require( '@stdlib/blas/ext/base' );
+var ns = require( '@stdlib/blas/ext/base' );
 ```
 
-#### extblas
+#### ns
 
 Namespace for "base" (i.e., lower-level) extensions to basic linear algebra subprograms (BLAS).
 
 ```javascript
-var ns = extblas;
+var o = ns;
 // returns {...}
 ```
 
