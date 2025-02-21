@@ -151,7 +151,7 @@ main() {
 	done
 
 	# Find all test files in package directories:
-	files=$(find ${directories} -maxdepth 2 -wholename '**/test/test*.js' | grep -v '/fixtures/' | sort -u | tr '\n' ' ') || true
+	files=$(find ${directories} -maxdepth 3 \( -wholename '**/test/test*.js' -or -wholename '**/test/**/test*.js' \) | grep -v '/fixtures/' | sort -u | tr '\n' ' ') || true
 
 	# Exclude files residing in test fixtures directories:
 	files=$(echo "${files}" | grep -v '/fixtures/') || true
