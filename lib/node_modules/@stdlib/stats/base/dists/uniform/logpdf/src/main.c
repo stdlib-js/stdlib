@@ -42,7 +42,7 @@ double stdlib_base_dists_uniform_logpdf( const double x, const double a, const d
 	) {
 		return 0.0/0.0; // NaN
 	}
-	if ( x < a || x > b) {
+	if ( x < a || x > b ) {
 		return STDLIB_CONSTANT_FLOAT64_NINF;
 	}
 	return -stdlib_base_ln( b - a );

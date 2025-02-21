@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2024 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -17,11 +17,11 @@
 */
 
 #include "stdlib/stats/base/dnanmean.h"
+#include "stdlib/napi/export.h"
 #include "stdlib/napi/argv.h"
 #include "stdlib/napi/argv_int64.h"
 #include "stdlib/napi/argv_strided_float64array.h"
 #include "stdlib/napi/create_double.h"
-#include "stdlib/napi/export.h"
 #include <node_api.h>
 
 /**
@@ -34,10 +34,27 @@
 static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV( env, info, argv, argc, 3 );
 	STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
-	STDLIB_NAPI_ARGV_INT64( env, stride, argv, 2 );
-	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, stride, argv, 1 );
-	STDLIB_NAPI_CREATE_DOUBLE( env, stdlib_strided_dnanmean( N, X, stride ), v );
+	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 2 );
+	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, strideX, argv, 1 );
+	STDLIB_NAPI_CREATE_DOUBLE( env, API_SUFFIX(stdlib_strided_dnanmean)( N, X, strideX ), v );
 	return v;
 }
 
-STDLIB_NAPI_MODULE_EXPORT_FCN( addon )
+/**
+* Receives JavaScript callback invocation data.
+*
+* @param env    environment under which the function is invoked
+* @param info   callback data
+* @return       Node-API value
+*/
+static napi_value addon_method( napi_env env, napi_callback_info info ) {
+	STDLIB_NAPI_ARGV( env, info, argv, argc, 4 );
+	STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
+	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 2 );
+	STDLIB_NAPI_ARGV_INT64( env, offsetX, argv, 3 );
+	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, strideX, argv, 1 );
+	STDLIB_NAPI_CREATE_DOUBLE( env, API_SUFFIX(stdlib_strided_dnanmean_ndarray)( N, X, strideX, offsetX ), v );
+	return v;
+}
+
+STDLIB_NAPI_MODULE_EXPORT_FCN_WITH_METHOD( addon, "ndarray", addon_method )
