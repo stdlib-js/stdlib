@@ -1075,7 +1075,7 @@
 "@stdlib/stats/strided/dmidrange","@stdlib/stats-strided-dmidrange"
 "@stdlib/stats/strided/dmin","@stdlib/stats-strided-dmin"
 "@stdlib/stats/strided/dminabs","@stdlib/stats-strided-dminabs"
-"@stdlib/stats/base/dminsorted","@stdlib/stats-base-dminsorted"
+"@stdlib/stats/strided/dminsorted","@stdlib/stats-base-dminsorted"
 "@stdlib/math/strided/special/dmskabs","@stdlib/math-strided-special-dmskabs"
 "@stdlib/math/strided/special/dmskabs2","@stdlib/math-strided-special-dmskabs2"
 "@stdlib/math/strided/special/dmskcbrt","@stdlib/math-strided-special-dmskcbrt"

@@ -16,8 +16,8 @@
 * limitations under the License.
 */
 
-#ifndef STDLIB_STATS_BASE_DMINSORTED_H
-#define STDLIB_STATS_BASE_DMINSORTED_H
+#ifndef STDLIB_STATS_STRIDED_DMINSORTED_H
+#define STDLIB_STATS_STRIDED_DMINSORTED_H
 
 #include "stdlib/blas/base/shared.h"
 
@@ -42,4 +42,4 @@ double API_SUFFIX(stdlib_strided_dminsorted_ndarray)( const CBLAS_INT N, const d
 }
 #endif
 
-#endif // !STDLIB_STATS_BASE_DMINSORTED_H
+#endif // !STDLIB_STATS_STRIDED_DMINSORTED_H
