@@ -2964,6 +2964,8 @@ rules[ 'stdlib/jsdoc-no-space-aligned-asterisks' ] = 'error';
 */
 rules[ 'stdlib/jsdoc-no-table-indentation' ] = 'error';
 
+/* eslint-disable stdlib/jsdoc-no-tabs */
+
 /**
 * Forbid the use of tabs.
 *
@@ -3009,6 +3011,8 @@ rules[ 'stdlib/jsdoc-no-table-indentation' ] = 'error';
 * }
 */
 rules[ 'stdlib/jsdoc-no-tabs' ] = 'error';
+
+/* eslint-enable stdlib/jsdoc-no-tabs */
 
 /**
 * Prevent references to undefined definitions.
