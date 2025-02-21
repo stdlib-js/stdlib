@@ -1,0 +1,108 @@
+{
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/napi/quaternary",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/gammasgn",
+        "@stdlib/math/base/special/gammaln",
+        "@stdlib/math/base/special/digamma",
+        "@stdlib/math/base/special/round",
+        "@stdlib/math/base/special/gamma",
+        "@stdlib/math/base/special/exp",
+        "@stdlib/math/base/special/ln",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/pow",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/constants/float64/ninf",
+        "@stdlib/constants/float64/nan"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/gammasgn",
+        "@stdlib/math/base/special/gammaln",
+        "@stdlib/math/base/special/digamma",
+        "@stdlib/math/base/special/round",
+        "@stdlib/math/base/special/gamma",
+        "@stdlib/math/base/special/exp",
+        "@stdlib/math/base/special/ln",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/pow",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/constants/float64/ninf",
+        "@stdlib/constants/float64/nan"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/gammasgn",
+        "@stdlib/math/base/special/gammaln",
+        "@stdlib/math/base/special/digamma",
+        "@stdlib/math/base/special/round",
+        "@stdlib/math/base/special/gamma",
+        "@stdlib/math/base/special/exp",
+        "@stdlib/math/base/special/ln",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/pow",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/constants/float64/ninf",
+        "@stdlib/constants/float64/nan"
+      ]
+    }
+  ]
+}
