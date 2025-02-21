@@ -1,45 +1,45 @@
 {
-	"options": {},
-	"fields": [
-		{
-			"field": "src",
-			"resolve": true,
-			"relative": true
-		},
-		{
-			"field": "include",
-			"resolve": true,
-			"relative": true
-		},
-		{
-			"field": "libraries",
-			"resolve": false,
-			"relative": false
-		},
-		{
-			"field": "libpath",
-			"resolve": true,
-			"relative": false
-		}
-	],
-	"confs": [
-		{
-			"src": [],
-			"include": [
-				"./include"
-			],
-			"libraries": [],
-			"libpath": [],
-			"dependencies": [
-				"@stdlib/math/base/ops/mul",
-				"@stdlib/math/base/ops/mulf",
-				"@stdlib/complex/float64/base/mul",
-        "@stdlib/complex/float32/base/mul",
-        "@stdlib/strided/base/function-object",
-				"@stdlib/strided/base/binary",
-				"@stdlib/strided/dtypes",
-				"@stdlib/strided/napi/binary"
-			]
-		}
-	]
+    "options": {},
+    "fields": [
+        {
+            "field": "src",
+            "resolve": true,
+            "relative": true
+        },
+        {
+            "field": "include",
+            "resolve": true,
+            "relative": true
+        },
+        {
+            "field": "libraries",
+            "resolve": false,
+            "relative": false
+        },
+        {
+            "field": "libpath",
+            "resolve": true,
+            "relative": false
+        }
+    ],
+    "confs": [
+        {
+            "src": [],
+            "include": [
+                "./include"
+            ],
+            "libraries": [],
+            "libpath": [],
+            "dependencies": [
+                "@stdlib/number/float64/base/mul",
+                "@stdlib/math/base/ops/mulf",
+                "@stdlib/complex/float64/base/mul",
+                "@stdlib/complex/float32/base/mul",
+                "@stdlib/strided/base/function-object",
+                "@stdlib/strided/base/binary",
+                "@stdlib/strided/dtypes",
+                "@stdlib/strided/napi/binary"
+            ]
+        }
+    ]
 }

@@ -26,7 +26,7 @@
 * @return     expected value
 *
 * @example
-* double y = stdlib_base_chisquare_mean( 9.0 );
+* double y = stdlib_base_dists_chisquare_mean( 9.0 );
 * // returns 9.0
 */
 double stdlib_base_dists_chisquare_mean( const double k ) {

@@ -52,7 +52,7 @@ jobs:
       - name: 'Add comment'
         run: gh issue comment "$NUMBER" --body "$BODY"
         env:
-          GH_TOKEN: ${{ secrets.STDLIB_BOT_FGPAT_PR_WRITE }}
+          GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.issue.number }}
           BODY: |

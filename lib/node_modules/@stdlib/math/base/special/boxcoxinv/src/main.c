@@ -29,7 +29,7 @@
 * @return          inverse of the Box-Cox transformation
 *
 * @example
-* double v = boxcoxinv( 1.0, 2.5 );
+* double v = stdlib_base_boxcoxinv( 1.0, 2.5 );
 * // returns ~1.6505
 */
 double stdlib_base_boxcoxinv( const double y, const double lambda ) {

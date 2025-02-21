@@ -1,7 +1,7 @@
 
 {{alias}}( N, alpha, x, strideX )
     Fills a double-precision floating-point strided array with a specified
-    scalar value.
+    scalar constant.
 
     The `N` and stride parameters determine which elements in the strided array
     are accessed at runtime.
@@ -17,13 +17,13 @@
         Number of indexed elements.
 
     alpha: number
-        Constant.
+        Scalar constant.
 
     x: Float64Array
         Input array.
 
     strideX: integer
-        Index increment for `x`.
+        Stride length.
 
     Returns
     -------
@@ -53,7 +53,7 @@
 
 {{alias}}.ndarray( N, alpha, x, strideX, offsetX )
     Fills a double-precision floating-point strided array with a specified
-    scalar value using alternative indexing semantics.
+    scalar constant using alternative indexing semantics.
 
     While typed array views mandate a view offset based on the underlying
     buffer, the offset parameter supports indexing semantics based on a starting
@@ -65,16 +65,16 @@
         Number of indexed elements.
 
     alpha: number
-        Constant.
+        Scalar constant.
 
     x: Float64Array
         Input array.
 
     strideX: integer
-        Index increment for `x`.
+        Stride length.
 
     offsetX: integer
-        Starting index of `x`.
+        Starting index.
 
     Returns
     -------

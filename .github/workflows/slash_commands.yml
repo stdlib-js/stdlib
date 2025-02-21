@@ -63,7 +63,7 @@ jobs:
         with:
           github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           script: |
-            const commentBody = github.event.comment.body.trim();
+            const commentBody = context.payload.comment.body.trim();
             const RE_COMMANDS = /^\/stdlib\s+(help|check-files|update-copyright-years|lint-autofix|merge|rebase)$/i;
             const isRecognizedCommand = RE_COMMANDS.test( commentBody );
 
@@ -71,7 +71,7 @@ jobs:
               await github.rest.reactions.createForIssueComment({
                 'owner': context.repo.owner,
                 'repo': context.repo.repo,
-                'comment_id': github.event.comment.id,
+                'comment_id': context.payload.comment.id,
                 'content': 'eyes'
               });
             } else {
@@ -83,7 +83,7 @@ jobs:
                 'owner': context.repo.owner,
                 'repo': context.repo.repo,
                 'issue_number': github.event.issue.number,
-                'body': `${quote}\n\n@${github.event.comment.user.login}, slash command not recognized. Please use \`/stdlib help\` to view available commands.`
+                'body': `${quote}\n\n@${context.payload.comment.user.login}, slash command not recognized. Please use \`/stdlib help\` to view available commands.`
               });
             }
 

@@ -63,7 +63,7 @@ jobs:
         uses: actions/labeler@8558fd74291d67161a8a78ce36a881fa63b766a9 # v5.0.0
         with:
           configuration-path: .github/labeler.yml
-          repo-token: ${{ secrets.STDLIB_BOT_FGPAT_PR_WRITE }}
+          repo-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
 
       # Add "First-time Contributor" label if PR is from a first-time contributor:
       - name: 'Add "First-time Contributor" label if PR is from a first-time contributor'
@@ -71,7 +71,7 @@ jobs:
         # Pin action to full-length commit SHA
         uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
         with:
-          github-token: ${{ secrets.STDLIB_BOT_FGPAT_PR_WRITE }}
+          github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           script: |
             const { data: pr } = await github.rest.pulls.get({
               'owner': context.repo.owner,
@@ -96,7 +96,7 @@ jobs:
         # Pin action to full length commit SHA
         uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
         with:
-          github-token: ${{ secrets.STDLIB_BOT_FGPAT_PR_WRITE }}
+          github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           script: |
             await github.rest.issues.addLabels({
               'owner': context.repo.owner,
@@ -111,7 +111,7 @@ jobs:
         # Pin action to full length commit SHA
         uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
         with:
-          github-token: ${{ secrets.STDLIB_BOT_FGPAT_PR_WRITE }}
+          github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           script: |
             await github.rest.issues.addLabels({
               'owner': context.repo.owner,
@@ -126,7 +126,7 @@ jobs:
         # Pin action to full length commit SHA
         uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
         with:
-          github-token: ${{ secrets.STDLIB_BOT_FGPAT_PR_WRITE }}
+          github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           script: |
             try {
               await github.rest.issues.removeLabel({
@@ -144,7 +144,7 @@ jobs:
         if: ${{ github.event.action == 'labeled' && github.event.label.name == 'Ready To Merge' }}
         uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
         with:
-          github-token: ${{ secrets.STDLIB_BOT_FGPAT_PR_WRITE }}
+          github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           script: |
             const labelsToRemove = [ 'Needs Review', 'Needs Changes' ];
             for ( const label of labelsToRemove ) {
@@ -166,7 +166,7 @@ jobs:
         # Pin action to full length commit SHA
         uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
         with:
-          github-token: ${{ secrets.STDLIB_BOT_FGPAT_PR_WRITE }}
+          github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           script: |
             const prAuthor = context.payload.pull_request.user.login;
             const { owner, repo } = context.repo;
