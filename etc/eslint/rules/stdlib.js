@@ -1,3 +1,5 @@
+/* eslint-disable stdlib/jsdoc-doctest-marker, stdlib/jsdoc-doctest, stdlib/jsdoc-example-require-spacing, stdlib/jsdoc-no-tabs */
+
 /**
 * @license Apache-2.0
 *
@@ -15,8 +17,6 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-
-/* eslint-disable stdlib/jsdoc-doctest-marker, stdlib/jsdoc-doctest, stdlib/jsdoc-example-require-spacing */
 
 'use strict';
 
@@ -2964,8 +2964,6 @@ rules[ 'stdlib/jsdoc-no-space-aligned-asterisks' ] = 'error';
 */
 rules[ 'stdlib/jsdoc-no-table-indentation' ] = 'error';
 
-/* eslint-disable stdlib/jsdoc-no-tabs */
-
 /**
 * Forbid the use of tabs.
 *
@@ -3011,8 +3009,6 @@ rules[ 'stdlib/jsdoc-no-table-indentation' ] = 'error';
 * }
 */
 rules[ 'stdlib/jsdoc-no-tabs' ] = 'error';
-
-/* eslint-enable stdlib/jsdoc-no-tabs */
 
 /**
 * Prevent references to undefined definitions.
