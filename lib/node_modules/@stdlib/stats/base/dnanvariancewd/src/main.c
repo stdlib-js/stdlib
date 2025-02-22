@@ -17,6 +17,8 @@
 */
 
 #include "stdlib/stats/base/dnanvariancewd.h"
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/stride2offset.h"
 #include <stdint.h>
 
 /**
@@ -30,14 +32,29 @@
 * @param N           number of indexed elements
 * @param correction  degrees of freedom adjustment
 * @param X           input array
-* @param stride      stride length
+* @param strideX     stride length
 * @return            output value
 */
-double stdlib_strided_dnanvariancewd( const int64_t N, const double correction, const double *X, const int64_t stride ) {
+double API_SUFFIX(stdlib_strided_dnanvariancewd)( const CBLAS_INT N, const double correction, const double *X, const CBLAS_INT strideX ) {
+	const CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	return API_SUFFIX(stdlib_strided_dnanvariancewd_ndarray)( N, correction, X, strideX, ox );
+}
+
+/**
+* Computes the variance of a double-precision floating-point strided array ignoring `NaN` values and using Welford's algorithm and alternative indexing semantics.
+*
+* @param N            number of indexed elements
+* @param correction   degrees of freedom adjustment
+* @param X            input array
+* @param strideX      stride length
+* @param offsetX      starting index for X
+* @return             output value
+*/
+double API_SUFFIX(stdlib_strided_dnanvariancewd_ndarray)( const CBLAS_INT N, const double correction, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
 	double delta;
-	int64_t ix;
-	int64_t n;
-	int64_t i;
+	CBLAS_INT ix;
+	CBLAS_INT n;
+	CBLAS_INT i;
 	double M2;
 	double nc;
 	double mu;
@@ -46,18 +63,14 @@ double stdlib_strided_dnanvariancewd( const int64_t N, const double correction, 
 	if ( N <= 0 ) {
 		return 0.0 / 0.0; // NaN
 	}
-	if ( N == 1 || stride == 0 ) {
-		v = X[ 0 ];
+	if ( N == 1 || strideX == 0 ) {
+		v = X[ offsetX ];
 		if ( v == v && (double)N-correction > 0.0 ) {
 			return 0.0;
 		}
 		return 0.0 / 0.0; // NaN
 	}
-	if ( stride < 0 ) {
-		ix = (1-N) * stride;
-	} else {
-		ix = 0;
-	}
+	ix = offsetX;
 	M2 = 0.0;
 	mu = 0.0;
 	n = 0;
@@ -69,7 +82,7 @@ double stdlib_strided_dnanvariancewd( const int64_t N, const double correction, 
 			mu += delta / (double)n;
 			M2 += delta * ( v - mu );
 		}
-		ix += stride;
+		ix += strideX;
 	}
 	nc = (double)n - correction;
 	if ( nc <= 0.0 ) {
