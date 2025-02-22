@@ -30,70 +30,7 @@ We appreciate your interest in contributing to stdlib! Below, we’ve compiled a
 
 ## How can I set up my dev environment to contribute to stdlib?
 
-The stdlib repository includes a preconfigured devcontainer, making it the easiest way to set up your development environment. It ensures proper linting, EditorConfig, and tooling are configured right from the start.
-
-### Prerequisites
-
-setting up the stdlib devcontainer **requires** the following prerequisites:
-
-
--   [Git][git]: version control
--   [Docker][docker]: containerization
--   [VS Code][vscode]: preferred IDE
-
-### Download
-
-To acquire the source code, first navigate to the parent directory into which you want to place the project [Git][git] repository
-
-<!-- run-disable -->
-
-```bash
-$ cd /path/to/parent/destination/directory
-```
-
-Next, clone the repository.
-
-<!-- run-disable -->
-
-```bash
-$ git clone https://github.com/stdlib-js/stdlib.git
-```
-
-If you are wanting to contribute to stdlib, first [fork][github-fork] the repository and amend the previous command.
-
-<!-- run-disable -->
-
-```bash
-$ git clone https://github.com/<username>/stdlib.git
-```
-
-Open the repo in VS Code.
-
-```bash
-$ cd stdlib && code .
-```
-
-When prompted, Open the repo in the dev container.
-
-![image](https://github.com/user-attachments/assets/233c08d2-57ec-46c4-8e12-ecb3ca608f83)
-
-Kindly be patient as the post create script may take some time to install all the required languages and dependencies.
-
-![image](https://github.com/user-attachments/assets/8cd011e8-ec41-4216-be1c-d10ce5824928)
-
-Close the terminal and wait for other dependencies to install.
-
-![image](https://github.com/user-attachments/assets/06dbea2a-fb02-446a-a527-2f0626272811)
-
-![image](https://github.com/user-attachments/assets/f7199eb5-f0a4-4fa2-aeba-856279b95c9f)
-
-Close the terminal after the installation is completed.
-
-![image](https://github.com/user-attachments/assets/267cd367-2eff-4d8b-8fb6-721cf5b066e2)
-
-If you see this when you open the terminal then the devcontainer installation was successful!
-
-![image](https://github.com/user-attachments/assets/598259d3-7ce2-4e86-8147-78ba634701a7)
+<!--- TODO add some documentation and links for the docs on devcontainer and manual setup  --->
 
 ## How can I install cppcheck?
 
