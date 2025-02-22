@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/stats/base/dnanmean",
+  "name": "@stdlib/stats/strided/dnanmean",
   "version": "0.0.0",
   "description": "Calculate the arithmetic mean of a double-precision floating-point strided array, ignoring NaN values.",
   "license": "Apache-2.0",
