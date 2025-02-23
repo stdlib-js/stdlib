@@ -143,7 +143,13 @@ main() {
 
 	# Run C benchmarks:
 	echo "Finding C benchmark files in ${directories}..."
-	c_bench_files=$(find "${directories}" -maxdepth 4 -wholename '**/benchmark/c/benchmark*.c' -exec realpath {} \; | grep -v '/fixtures/' | sort -u | tr '\n' ' ') || true
+	c_bench_files=$(find "${directories}" -maxdepth 5 \( -wholename '**/benchmark/c/benchmark*.c' -or -wholename '**/benchmark/c/**/benchmark*.c' \) -exec realpath {} \; | grep -v '/fixtures/' | sort -u | tr '\n' ' ') || true
+
+	# If benchmarks requiring Cephes are found, install the Cephes library:
+	c_cephes_makefiles=$(find "${directories}" -maxdepth 5 -wholename '**/benchmark/c/**/Makefile' -exec grep -l 'CEPHES' {} + || true)
+	if [ -n "${c_cephes_makefiles}" ]; then
+		make install-deps-cephes
+	fi
 
 	if [ -n "${c_bench_files}" ]; then
 		make benchmark-c-files FILES="${c_bench_files}"
