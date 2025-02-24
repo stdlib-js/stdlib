@@ -184,6 +184,7 @@ var v = dnanvariancetk( 4, 1.0, x, 1 );
 // returns ~4.33333
 ```
 
+<!--- TODO - complete this and proof read--->
 notice how we used `1.0` in the second arguement because it is a double precision floating point number, while we didn't use it in the first and fourth arguements as they are integers
 
 <a name="compilation-error"></a>
