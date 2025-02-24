@@ -33,6 +33,7 @@ limitations under the License.
 -   [I am facing a `Shadowed declaration` linting error in my C files, how can I fix it?](#shadowed-declaration)
 -   [I am facing a `Uninitialized variable` linting error in my C files, how can I fix it?](#uninitialized-variable)
 -   [I have the required packages in the expected paths, but I am still encountering an error like this while compiling the native add-on.](#compilation-error)
+-   [When should I use decimals in examples, benchmarks, and documentation, and when should I avoid them?](#decimal-usage)
 -   [How should I name my pull request?](#pr-naming)
 -   [How do I call the stdlib bot on my PR?](#stdlib-bot)
 -   [Frequently used `make` commands](#freq-make-commands)
@@ -160,33 +161,6 @@ You can suppress that warning by adding a `// cppcheck-suppress uninitvar` comme
 stdlib_strided_dmeanvarpn( len, 1, x, 1, out, 1 );
 ```
 
-<a name="decimals">
-
-## When to use decimals while writing examples, benchmarks and documentation and when should I avoid it?
-
-Decimals are our way of showing that the number that we're trying to denote is a floating point value in C. Note that all numbers in JavaScript are treated as a floating point value. for example:
-
-while trying to call this function
-
-```c
-double stdlib_strided_dnanvariancetk( const CBLAS_INT N, const double correction, const double *X, const CBLAS_INT strideX );
-```
-
-in javascript or in C, we expect you to write
-
-```javascript
-var dnanvariancetk = require( '@stdlib/stats/base/dnanvariancetk' );
-var Float64Array = require( '@stdlib/array/float64' );
-
-var x = new Float64Array( [ 1.0, -2.0, NaN, 2.0 ] );
-
-var v = dnanvariancetk( 4, 1.0, x, 1 );
-// returns ~4.33333
-```
-
-<!--- TODO - complete this and proof read--->
-notice how we used `1.0` in the second arguement because it is a double precision floating point number, while we didn't use it in the first and fourth arguements as they are integers
-
 <a name="compilation-error"></a>
 
 ## I have the required packages in the expected paths, but I am still encountering an error like this while compiling the native add-on.
@@ -251,6 +225,30 @@ In packages involving C implementations, you need a `manifest.json` file to info
 ```
 
 This `config` specifies that we need to include `@stdlib/math/base/napi/unary`, `@stdlib/math/base/assert/is-nanf`, and `@stdlib/constants/float32/pinf` for compiling the native add-on, while `@stdlib/math/base/assert/is-nanf` and `@stdlib/constants/float32/pinf` are required for running benchmarks and examples.
+
+<a name="decimal-usage"></a>
+
+## When should I use decimals in examples, benchmarks, and documentation, and when should I avoid them?
+
+Decimals help us differentiate floating-point values from integers. For instance, in JavaScript, all numbers are treated as floating-point values, but it is still important to distinguish between integers and floating-point numbers for clarity. Consider the following C function:
+
+```c
+double stdlib_strided_dnanvariancetk( const CBLAS_INT N, const double correction, const double *X, const CBLAS_INT strideX );
+```
+
+When calling this function in JavaScript, we expect the following usage:
+
+```javascript
+var dnanvariancetk = require( '@stdlib/stats/base/dnanvariancetk' );
+var Float64Array = require( '@stdlib/array/float64' );
+
+var x = new Float64Array( [ 1.0, -2.0, NaN, 2.0 ] );
+
+// Use decimals for floating-point values, not for integers.
+var v = dnanvariancetk( 4, 1.0, x, 1 );
+```
+
+Notice that we used `1.0` as the second argument because it is a double-precision floating-point number. However, we did not use a decimal point for the first and fourth arguments, as they represent integers.
 
 <a name="pr-naming"></a>
 
