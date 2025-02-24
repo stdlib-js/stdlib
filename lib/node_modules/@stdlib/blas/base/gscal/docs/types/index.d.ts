@@ -20,7 +20,12 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { NumericArray } from '@stdlib/types/array';
+import { NumericArray, Collection, AccessorArrayLike } from '@stdlib/types/array';
+
+/**
+* Input array.
+*/
+type InputArray = NumericArray | Collection<number> | AccessorArrayLike<number>;
 
 /**
 * Interface describing `gscal`.
@@ -41,7 +46,7 @@ interface Routine {
 	* gscal( x.length, 5.0, x, 1 );
 	* // x => [ -10.0, 5.0, 15.0, -25.0, 20.0, 0.0, -5.0, -15.0 ]
 	*/
-	( N: number, alpha: number, x: NumericArray, stride: number ): NumericArray;
+	<T extends InputArray>( N: number, alpha: number, x: T, stride: number ): T;
 
 	/**
 	* Multiplies a vector `x` by a constant `alpha` using alternative indexing semantics.
@@ -59,7 +64,7 @@ interface Routine {
 	* gscal.ndarray( x.length, 5.0, x, 1, 0 );
 	* // x => [ -10.0, 5.0, 15.0, -25.0, 20.0, 0.0, -5.0, -15.0 ]
 	*/
-	ndarray( N: number, alpha: number, x: NumericArray, stride: number, offset: number ): NumericArray;
+	ndarray<T extends InputArray>( N: number, alpha: number, x: T, stride: number, offset: number ): T;
 }
 
 /**
