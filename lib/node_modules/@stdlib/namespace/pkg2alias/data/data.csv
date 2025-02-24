@@ -884,7 +884,7 @@
 "@stdlib/math/base/special/minn",base.minn
 "@stdlib/math/base/special/modf",base.modf
 "@stdlib/number/float64/base/mul",base.mul
-"@stdlib/math/base/ops/mulf",base.mulf
+"@stdlib/number/float32/base/mul",base.mulf
 "@stdlib/ndarray/base/ctor",base.ndarray
 "@stdlib/ndarray/base/unary",base.ndarrayUnary
 "@stdlib/ndarray/base/zeros",base.ndzeros
