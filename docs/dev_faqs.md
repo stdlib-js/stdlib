@@ -160,6 +160,32 @@ You can suppress that warning by adding a `// cppcheck-suppress uninitvar` comme
 stdlib_strided_dmeanvarpn( len, 1, x, 1, out, 1 );
 ```
 
+<a name="decimals">
+
+## When to use decimals while writing examples, benchmarks and documentation and when should I avoid it?
+
+Decimals are our way of showing that the number that we're trying to denote is a floating point value in C. Note that all numbers in JavaScript are treated as a floating point value. for example:
+
+while trying to call this function
+
+```c
+double stdlib_strided_dnanvariancetk( const CBLAS_INT N, const double correction, const double *X, const CBLAS_INT strideX );
+```
+
+in javascript or in C, we expect you to write
+
+```javascript
+var dnanvariancetk = require( '@stdlib/stats/base/dnanvariancetk' );
+var Float64Array = require( '@stdlib/array/float64' );
+
+var x = new Float64Array( [ 1.0, -2.0, NaN, 2.0 ] );
+
+var v = dnanvariancetk( 4, 1.0, x, 1 );
+// returns ~4.33333
+```
+
+notice how we used `1.0` in the second arguement because it is a double precision floating point number, while we didn't use it in the first and fourth arguements as they are integers
+
 <a name="compilation-error"></a>
 
 ## I have the required packages in the expected paths, but I am still encountering an error like this while compiling the native add-on.
