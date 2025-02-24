@@ -20,43 +20,111 @@ limitations under the License.
 
 # Contributing FAQs
 
-> frequently asked questions by first time contributors of stdlib.
+> Frequently Asked Questions (FAQs) by First-Time Contributors to stdlib
+
+-   [Introduction](#intro)
+-   [As a first-time contributor to stdlib, where should I start?](#first-time-contributor)
+-   [How can I set up my development environment to contribute to stdlib?](#setup-dev-environment)
+-   [How can I install cppcheck?](#install-cppcheck)
+-   [I am seeing different return values in the JavaScript and C implementation for the same implementation.](#js-vs-c-return-values)
+-   [What should I do if Markdown linting on my commits fails because my headings exceed the maximum permissible length?](#markdown-heading-length)
+-   [I have opened a pull request, where can I seek feedback?](#pr-feedback)
+-   [I need to generate fixtures for my tests. How can I do that, and what are the best references for inspiration?](#generate-fixtures)
+-   [I am facing a `Shadowed declaration` linting error in my C files, how can I fix it?](#shadowed-declaration)
+-   [I am facing a `Uninitialized variable` linting error in my C files, how can I fix it?](#uninitialized-variable)
+-   [I have the required packages in the expected paths, but I am still encountering an error like this while compiling the native add-on.](#compilation-error)
+-   [How should I name my pull request?](#pr-naming)
+-   [How do I call the stdlib bot on my PR?](#stdlib-bot)
+-   [Frequently used `make` commands](#freq-make-commands)
+-   [Other Links](#other-links)
 
 <!-- lint disable no-heading-punctuation -->
 
+<a name="intro"></a>
+
 ## Introduction
 
-We appreciate your interest in contributing to stdlib! Below, we’ve compiled answers to some frequently asked questions (FAQs) from first-time contributors. If you’re new to the project or encounter any challenges, this guide is a great place to begin.
+We appreciate your interest in contributing to stdlib! Below, we’ve compiled answers to some frequently asked questions (FAQs) from first-time contributors. If you’re new to the project or encounter any challenges, this guide is a great place to start.
 
-## How can I set up my dev environment to contribute to stdlib?
+<a name="first-time-contributor"></a>
 
-<!--- TODO add some documentation and links for the docs on devcontainer and manual setup  --->
+## As a first-time contributor to stdlib, where should I start?
+
+We recommend first familiarizing yourself with the stdlib codebase by reading the [contributing][contributing-guide] and [development][development-guide] guides. Once comfortable, you can start by working on a [good first issue][good-first-issues], fixing a bug, or resolving a TODO in the source code.
+
+<a name="setup-dev-environment"></a>
+
+## How can I set up my development environment to contribute to stdlib?
+
+There are primarily two options for setting up your development environment to contribute to stdlib:
+
+1. [Manually setting up the development environment][manual-setup]
+2. [Setting up the dev container][devcontainer-setup]
+
+Note: The dev container does not yet support ARM64 architectures. For more information, or if you're interested in adding ARM64 support, you can visit this [issue][devcontainer-issue].
+
+TODO: Modify the dev container setup link to the exact file link once it is merged.
+
+<a name="install-cppcheck"></a>
 
 ## How can I install cppcheck?
 
-We use `cppcheck` in our project to perform linting on C/C++ code, to install `cppcheck` as per our project conventions
+We use `cppcheck` in our project to perform linting on C/C++ code. To install `cppcheck` according to our project conventions, follow the specified installation step.
 
 ```bash
 $ make deps-install-cppcheck
 ```
 
+For more installation commands, visit this [link][install-link].
+
+<a name="js-vs-c-return-values"></a>
+
 ## I am seeing different return values in the JavaScript and C implementation for the same implementation.
 
-First, verify that your implementation is actually the same and doesn't contain a bug. Second, check whether your compiler is performing certain optimizations which may affect accuracy. A common optimization is rearranging terms. To check, compile the add-on and disable the optimization. E.g., `CFLAGS="-ffp-contract=on" make install-node-addons NODE_ADDONS_PATTERN="math/base/special/foo"` . Then run the tests. If they succeed, adjust the tolerance and add a note to the C tests indicating that the tolerance is higher relative to the JS implementation due to compiler optimizations. If they fail, raise an issue with maintainers to get feedback.
+First, verify that your implementation is truly the same and does not contain any bugs. Second, check whether your compiler is performing optimizations that may affect accuracy. A common optimization is rearranging terms. To check this, compile the add-on while disabling the optimization:
 
-## What can I do if the Markdown linting on my commits is failing due to my headings exceeding the maximum permissible length?
+```sh
+CFLAGS="-ffp-contract=off" make install-node-addons NODE_ADDONS_PATTERN="math/base/special/foo"
+```
 
-Consider whether we can make the heading shorter by renaming variables (e.g., `strideX` to `sx`). Second, disable the lint rule at the top-level. E.g., `<!-- lint disable maximum-heading-length -->`.
+Then, run the tests:
 
-## I have opened a pull request to stdlib, where can I go to seek feedback on it?
+```sh
+make test TESTS_FILTER=".*/math/base/special/foo/.*"
+```
 
-Consider joining our [Gitter channel][stdlib-gitter]! We are very proud to say that we have a very active community where people ask each other for help and others answer each other's questions. One of the maintainers will soon review your pull request and provide feedback. You can also discuss things during our [weekly office hours meeting][stdlib-office-hours]!
+If they pass, adjust the tolerance and add a note to the C tests indicating that the tolerance is higher compared to the JavaScript implementation due to compiler optimizations. If they fail, raise an issue with the maintainers to get feedback.
 
-## I need to generate fixtures for my tests. How can I do that, and what are the best references to take inspiration from?
+- [Reference Discussion][ref-discussion]
+- [Reference Comment][ref-comment]
 
-Tests are a very important part of any standard library package. We take our goal of achieving 100% test coverage very seriously, and we expect your work to be backed by tests. Often, you may need to generate fixtures to test your implementation against an existing implementation from a reliable source. You can use Julia, R, Python, etc., to generate fixtures. To get an idea of how we do it, see these reference scripts for generating fixtures: [Example python fixture script][python fixtures],  [Example julia fixture script][julia fixtures].
+<a name="markdown-heading-length"></a>
 
-## I am facing a `Shadowed declaration` linting error in my C files, how to get rid of that?
+## What should I do if Markdown linting on my commits fails because my headings exceed the maximum permissible length?
+
+Consider whether the heading can be shortened by renaming variables (e.g., changing `strideX` to `sx`). If shortening is not possible, disable the lint rule at the top level using:
+
+```markdown
+<!-- lint disable maximum-heading-length -->
+```
+
+TODO: Can we add a reference PR link?
+
+<a name="pr-feedback"></a>
+
+## I have opened a pull request, where can I seek feedback?
+
+Consider joining our [Gitter channel][stdlib-gitter]! We are proud to have a very active community where members help each other by asking and answering questions. A maintainer will review your pull request soon and provide feedback. You can also discuss it during our [weekly office hours meeting][stdlib-office-hours]!
+
+<a name="generate-fixtures"></a>
+
+## I need to generate fixtures for my tests. How can I do that, and what are the best references for inspiration?
+
+Tests are a crucial part of any standard library package. We take our goal of achieving 100% test coverage very seriously and expect your work to be backed by tests. Often, you may need to generate fixtures to validate your implementation against an existing reliable source. You can use Julia, R, Python, or other languages to generate fixtures. To see how we do this, refer to these example scripts: [Python fixture script][python-fixtures], [Julia fixture script][julia-fixtures].
+
+<a name="shadowed-declaration"></a>
+
+## I am facing a `Shadowed declaration` linting error in my C files, how can I fix it?
 
 ```bash
 STDLIB_MATH_BASE_NAPI_MODULE_FF_F( stdlib_base_gcdf ) ^
@@ -64,14 +132,16 @@ STDLIB_MATH_BASE_NAPI_MODULE_FF_F( stdlib_base_gcdf ) ^
 note: Shadowed declaration float stdlib_base_gcdf( const float a, const float b );
 ```
 
-You can suppress that warning by adding a `// cppcheck-suppress shadowFunction` comment over the function, for eg.
+You can suppress that warning by adding a `// cppcheck-suppress shadowFunction` comment above the function. For example:
 
 ```c
 // cppcheck-suppress shadowFunction
 STDLIB_MATH_BASE_NAPI_MODULE_FF_F( stdlib_base_gcdf )
 ```
 
-## I am facing a `Uninitialized variable` linting error in my C files, how to get rid of that?
+<a name="uninitialized-variable"></a>
+
+## I am facing a `Uninitialized variable` linting error in my C files, how can I fix it?
 
 ```bash
 lib/node_modules/@stdlib/stats/base/dmeanvarpn/benchmark/c/benchmark.length.c:112:38: warning: Uninitialized variable: x [uninitvar]
@@ -83,45 +153,25 @@ lib/node_modules/@stdlib/stats/base/dmeanvarpn/benchmark/c/benchmark.length.c:10
 lib/node_modules/@stdlib/stats/base/dmeanvarpn/benchmark/c/benchmark.length.c:112:38: note: Uninitialized variable: x
   stdlib_strided_dmeanvarpn( len, 1, x, 1, out, 1 );
 ```
-You can suppress that warning by adding a `// cppcheck-suppress uninitvar` comment over the function, for eg.
+You can suppress that warning by adding a `// cppcheck-suppress uninitvar` comment above the function. For example:
 
 ```c
 // cppcheck-suppress uninitvar
 stdlib_strided_dmeanvarpn( len, 1, x, 1, out, 1 );
 ```
-## I have the required packages in the expected paths but I'm still facing an error like this while compiling the native addon.
+
+<a name="compilation-error"></a>
+
+## I have the required packages in the expected paths, but I am still encountering an error like this while compiling the native add-on.
 
 ![image](https://github.com/user-attachments/assets/6cb40866-c33b-4878-ab20-126472a56b63)
 
-In packages revolving around C implementations, you need to have a `manifest.json` file which tells [node-gyp][node-gyp] what dependencies to include for specific tasks. you need to include only the required dependencies for compiling, benchmarking and running examples for eg:
+In packages involving C implementations, you need a `manifest.json` file to inform [node-gyp][node-gyp] about the dependencies required for specific tasks. You should include only the necessary dependencies for compiling, benchmarking, and running examples. For example:
 
 ```json
 {
-  "options": {
-    "task": "build"
-  },
-  "fields": [
-    {
-      "field": "src",
-      "resolve": true,
-      "relative": true
-    },
-    {
-      "field": "include",
-      "resolve": true,
-      "relative": true
-    },
-    {
-      "field": "libraries",
-      "resolve": false,
-      "relative": false
-    },
-    {
-      "field": "libpath",
-      "resolve": true,
-      "relative": false
-    }
-  ],
+  // Other sections above....
+
   "confs": [
     {
       "task": "build",
@@ -173,11 +223,32 @@ In packages revolving around C implementations, you need to have a `manifest.jso
 }
 ```
 
-This config specifies that we need to include `@stdlib/math/base/napi/unary`, `@stdlib/math/base/assert/is-nanf`, `@stdlib/constants/float32/pinf` for compiling the native addon and `@stdlib/math/base/assert/is-nanf`, `@stdlib/constants/float32/pinf` for running benchmarks and examples
+This `config` specifies that we need to include `@stdlib/math/base/napi/unary`, `@stdlib/math/base/assert/is-nanf`, and `@stdlib/constants/float32/pinf` for compiling the native add-on, while `@stdlib/math/base/assert/is-nanf` and `@stdlib/constants/float32/pinf` are required for running benchmarks and examples.
+
+<a name="pr-naming"></a>
+
+## How should I name my pull request?
+
+The best strategy is to go through other relevant PRs and follow their naming conventions. If not, use a concise and descriptive title that clearly conveys the purpose of your changes and follows the PR naming guidelines.
+
+TODO: Can we add a link to the PR naming guidelines here?
+
+<a name="stdlib-bot"></a>
+
+## How do I call the stdlib bot on my PR?
+
+Once you have created your PR, you can call the **stdlib-bot** to perform basic operations such as fixing lint errors, updating copyright years, or merging changes from the `develop` branch into your PR. Some commonly used commands:
+
+- `/stdlib update-copyright-years` - Updates copyright header years.
+- `/stdlib lint-autofix` - Auto-fixes lint errors.
+
+To see other available bot commands, comment `/stdlib help` on your PR.
+
+<a name="freq-make-commands"></a>
 
 ## Frequently used `make` commands
 
-We use [`GNU Make`][make] as our development utility and task runner for things like generating fixtures, compiling native addons, running tests, examples, benchmarks etc. Some of the most frequently used make commands which you will need in your workflow are:
+We use [`GNU Make`][make] as our development utility and task runner for tasks such as generating fixtures, compiling native add-ons, running tests, examples, and benchmarks. Some of the most frequently used `make` commands that you will need in your workflow are:
 
 ### 1. Install all dependencies
 
@@ -197,11 +268,19 @@ $ make init
 $ make install-node-addons NODE_ADDONS_PATTERN="math/base/special/abs"
 ```
 
-### 4. Generate Julia Fixtures
+### 4. Generate Test Fixtures
 
+- **Julia**
 ```bash
 $ make test-fixtures-julia TESTS_FIXTURES_FILTER=".*/path/to/package/.*"
 ```
+
+- **Python**
+```bash
+$ make test-fixtures-python TESTS_FIXTURES_FILTER=".*/path/to/package/.*"
+```
+
+For more `make` commands, refer to the test fixtures [documentation][test-fixtures].
 
 ### 5. Run the tests
 
@@ -215,11 +294,22 @@ $ make TESTS_FILTER=".*/math/base/special/abs/.*" test
 $ make EXAMPLES_FILTER=".*/math/base/special/abs/.*" examples
 ```
 
+For more `make` commands, refer to the [documentation][examples] on running examples.
+
 ### 7. Run benchmarks
 
 ```bash
 $ make BENCHMARKS_FILTER=".*/math/base/special/abs/.*" benchmark
 ```
+
+For more `make` commands, refer to the [documentation][benchmark] on running benchmarks.
+
+<a name="other-links"></a>
+
+## Other Links:
+
+- [Style Guide][style-guide]
+- [Other make commands][make-commands]
 
 <section class="links">
 
@@ -231,9 +321,33 @@ $ make BENCHMARKS_FILTER=".*/math/base/special/abs/.*" benchmark
 
 [github-fork]: https://help.github.com/articles/fork-a-repo/
 
-[python fixtures]: https://github.com/stdlib-js/stdlib/blob/develop/lib/node_modules/%40stdlib/math/base/special/hyp2f1/test/fixtures/python/runner.py
+[development-guide]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/development.md
 
-[julia fixtures]: https://github.com/stdlib-js/stdlib/blob/develop/lib/node_modules/%40stdlib/math/base/special/acosdf/test/fixtures/julia/runner.jl
+[contributing-guide]: https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md
+
+[good-first-issues]: https://github.com/stdlib-js/stdlib/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22Good%20First%20Issue%22
+
+[manual-setup]: https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md#step-0-github
+
+[devcontainer-setup]: https://github.com/stdlib-js/stdlib/blob/87cbd67623892f90ddeea94e1d4e01eeada417b5/docs/devcontainer_setup.md
+
+[devcontainer-issue]: https://github.com/stdlib-js/stdlib/issues/4934
+
+[install-link]: https://github.com/stdlib-js/stdlib/tree/develop/tools/make/lib/install#install
+
+[ref-discussion]: https://github.com/stdlib-js/stdlib/pull/2298#discussion_r1624765205
+
+[ref-comment]: https://github.com/stdlib-js/stdlib/blob/1f9cb760e3345cc7e08320a11f6a051873ef3586/lib/node_modules/%40stdlib/math/base/special/spence/test/test.native.js#L90
+
+[python-fixtures]: https://github.com/stdlib-js/stdlib/blob/develop/lib/node_modules/%40stdlib/math/base/special/hyp2f1/test/fixtures/python/runner.py
+
+[julia-fixtures]: https://github.com/stdlib-js/stdlib/blob/develop/lib/node_modules/%40stdlib/math/base/special/acosdf/test/fixtures/julia/runner.jl
+
+[test-fixtures]: https://github.com/stdlib-js/stdlib/tree/develop/tools/make/lib/test-fixtures
+
+[examples]: https://github.com/stdlib-js/stdlib/tree/develop/tools/make/lib/examples
+
+[benchmark]: https://github.com/stdlib-js/stdlib/tree/develop/tools/make/lib/benchmark
 
 [make]: https://www.gnu.org/software/make/
 
@@ -241,7 +355,11 @@ $ make BENCHMARKS_FILTER=".*/math/base/special/abs/.*" benchmark
 
 [stdlib-gitter]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
-[stdlib-office-hours]: https://github.com/stdlib-js/meetings
+[stdlib-office-hours]: https://github.com/stdlib-js/meetings/issues
+
+[style-guide]: https://github.com/stdlib-js/stdlib/tree/develop/docs/style-guides
+
+[make-commands]: https://github.com/stdlib-js/stdlib/tree/develop/tools/make/lib
 
 </section>
 
