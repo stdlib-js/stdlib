@@ -75,7 +75,7 @@ When prompted, open the repository in the dev container.
 
 <div class="image" align="center">
     <a title="Step 1">
-        <img width=“480” src="./img/step1.png" alt="Dev container setup tutorial">
+        <img width="480" src="./img/step1.png" alt="Dev container setup tutorial">
     </a>
     <br>
 </div>
