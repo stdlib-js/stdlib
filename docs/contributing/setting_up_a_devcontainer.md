@@ -72,25 +72,56 @@ $ cd stdlib && code .
 
 When prompted, open the repository in the dev container.
 
-![image](https://github.com/user-attachments/assets/233c08d2-57ec-46c4-8e12-ecb3ca608f83)
+
+<div class="image" align="center">
+    <a title="Step 1">
+        <img width=“480” src="./img/step1.png" alt="Dev container setup tutorial">
+    </a>
+    <br>
+</div>
 
 Please be patient, as the post-create script may take some time to install all the required languages and dependencies.
 
-![image](https://github.com/user-attachments/assets/8cd011e8-ec41-4216-be1c-d10ce5824928)
+<div class="image" align="center">
+    <a title="Step 2">
+        <img width=“480” src="./img/step2.png" alt="Dev container setup tutorial">
+    </a>
+    <br>
+</div>
 
 Close the terminal and wait for other dependencies to install.
 
-![image](https://github.com/user-attachments/assets/06dbea2a-fb02-446a-a527-2f0626272811)
+<div class="image" align="center">
+    <a title="Step 3">
+        <img width=“480” src="./img/step3.png" alt="Dev container setup tutorial">
+    </a>
+    <br>
+</div>
 
-![image](https://github.com/user-attachments/assets/f7199eb5-f0a4-4fa2-aeba-856279b95c9f)
+<div class="image" align="center">
+    <a title="Step 4">
+        <img width=“480” src="./img/step4.png" alt="Dev container setup tutorial">
+    </a>
+    <br>
+</div>
 
 Close the terminal after the installation is completed.
 
-![image](https://github.com/user-attachments/assets/267cd367-2eff-4d8b-8fb6-721cf5b066e2)
+<div class="image" align="center">
+    <a title="Step 5">
+        <img width=“480” src="./img/step5.png" alt="Dev container setup tutorial">
+    </a>
+    <br>
+</div>
 
 If you see this when you open the terminal, then the dev container installation was successful!
 
-![image](https://github.com/user-attachments/assets/598259d3-7ce2-4e86-8147-78ba634701a7)
+<div class="image" align="center">
+    <a title="Step 6">
+        <img width=“480” src="./img/step6.png" alt="Dev container setup tutorial">
+    </a>
+    <br>
+</div>
 
 <section class="links">
 
