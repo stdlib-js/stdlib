@@ -177,6 +177,8 @@ Ref: https://github.com/stdlib-js/stdlib/issues/4797
 
 ### 6. Remove the export of the original package from its parent namespace
 
+#### a. Namespace exports
+
 Next, open the `lib/index.js` file found in the parent namespace of the original package (e.g., `lib/node_modules/@stdlib/stats/base/lib/index.js`).
 
 If that file includes an exported symbol from the original package, remove it. For example,
@@ -191,6 +193,47 @@ If that file includes an exported symbol from the original package, remove it. F
 - * @see {@link module:@stdlib/stats/base/dmax}
 - */
 - setReadOnly( ns, 'dmax', require( '@stdlib/stats/base/dmax' ) );
+```
+
+#### b. Namespace TypeScript declarations
+
+Next, open the `docs/types/index.d.ts` file found in the parent namespace of the original package (e.g., `lib/node_modules/@stdlib/stats/base/docs/types/index.d.ts`).
+
+If that file includes an exported symbol from the original package, remove it. For example,
+
+```diff
+- import dmax = require( '@stdlib/stats/base/dmax' );
+```
+
+and
+
+```diff
+-
+-    /**
+-    * Computes the maximum value of a double-precision floating-point strided array.
+-    *
+-    * @param N - number of indexed elements
+-    * @param x - input array
+-    * @param strideX - stride length
+-    * @returns maximum value
+-    *
+-    * @example
+-    * var Float64Array = require( '@stdlib/array/float64' );
+-    *
+-    * var x = new Float64Array( [ 1.0, -2.0, 2.0 ] );
+-    *
+-    * var v = ns.dmax( x.length, x, 1 );
+-    * // returns 2.0
+-    *
+-    * @example
+-    * var Float64Array = require( '@stdlib/array/float64' );
+-    *
+-    * var x = new Float64Array( [ 1.0, -2.0, 2.0 ] );
+-    *
+-    * var v = ns.dmax.ndarray( x.length, x, 1, 0 );
+-    * // returns 2.0
+-    */
+-    dmax: typeof dmax;
 ```
 
 ### 7. Commit the changes to the parent namespace
