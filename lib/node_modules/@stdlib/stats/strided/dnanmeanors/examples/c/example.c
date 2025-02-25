@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-#include "stdlib/stats/base/dnanmeanors.h"
+#include "stdlib/stats/strided/dnanmeanors.h"
 #include <stdio.h>
 
 int main( void ) {
