@@ -199,6 +199,7 @@ jobs:
       - name: 'Lint against EditorConfig'
         id: lint-editorconfig
         run: |
+          set -o pipefail
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' ' ')
           make lint-editorconfig-files FILES="${files}" 2>&1 | tee lint_editorconfig_errors.txt
 
@@ -208,6 +209,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
         run: |
+          strip_ansi() {
+            sed -r 's/\x1B\[[0-9;]*[mK]//g'
+          }
+
           BODY_FILE="$GITHUB_WORKSPACE/lint_issue_body.md"
           cat << EOF > "$BODY_FILE"
           ## EditorConfig Linting Failures
@@ -223,14 +228,15 @@ jobs:
           ### Error Details
 
           \`\`\`
-          $(cat lint_editorconfig_errors.txt)
+          $(cat lint_editorconfig_errors.txt | strip_ansi)
           \`\`\`
           EOF
 
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_sub_issue" \
             'Fix EditorConfig lint errors' \
             "$BODY_FILE" \
-            "5156"
+            "5156" \
+            "Good First Issue"
 
           rm "$BODY_FILE"
 
