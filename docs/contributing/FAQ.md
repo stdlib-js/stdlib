@@ -20,7 +20,7 @@ limitations under the License.
 
 # Contributing FAQs
 
-> Frequently Asked Questions (FAQs) by First-Time Contributors to stdlib
+> Frequently Asked Questions (FAQs) by First-Time Contributors to stdlib.
 
 -   [Introduction](#intro)
 -   [As a first-time contributor to stdlib, where should I start?](#first-time-contributor)
