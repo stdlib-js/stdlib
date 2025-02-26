@@ -38,14 +38,14 @@ set -o pipefail
 # Get the pull request number:
 pr_number="$1"
 
-# GitHub API base URL
+# GitHub API base URL:
 GITHUB_API_URL="https://api.github.com"
 
-# Repository owner and name
+# Repository owner and name:
 REPO_OWNER="stdlib-js"
 REPO_NAME="stdlib"
 
-# Exit codes
+# Exit codes:
 SUCCESS=0
 ERROR=1
 TRACKING_ISSUE_FOUND=200
@@ -281,7 +281,7 @@ main() {
 	echo -e "$commit_message"
 
 	# Return successful exit code (200 if a tracking issue was found, 0 otherwise):
-    return $EXIT_CODE
+	return $EXIT_CODE
 }
 
 # Call main with all command-line arguments:

@@ -158,10 +158,6 @@ for ( i = 0; i < 25; i++ ) {
 
 <!-- /.examples -->
 
-<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-<section class="references">
-
 <!-- C interface documentation. -->
 
 * * *
@@ -256,6 +252,18 @@ int main( void ) {
     }
 }
 ```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
+<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="references">
 
 </section>
 

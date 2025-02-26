@@ -87,7 +87,7 @@ type InOutShapes = [
 * @example
 * var ones4d = require( '@stdlib/array/base/ones4d' );
 * var zeros4d = require( '@stdlib/array/base/zeros4d' );
-* var add = require( '@stdlib/math/base/ops/add3' );
+* var add = require( '@stdlib/number/float64/base/add3' );
 *
 * var shapes = [
 *     [ 1, 2, 1, 1 ],

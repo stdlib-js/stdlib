@@ -1,3 +1,5 @@
+/* eslint-disable stdlib/jsdoc-doctest-marker, stdlib/jsdoc-doctest, stdlib/jsdoc-example-require-spacing, stdlib/jsdoc-no-tabs */
+
 /**
 * @license Apache-2.0
 *
@@ -15,8 +17,6 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-
-/* eslint-disable stdlib/jsdoc-doctest-marker, stdlib/jsdoc-doctest */
 
 'use strict';
 
@@ -837,6 +837,49 @@ rules[ 'stdlib/jsdoc-emphasis-marker' ] = [ 'error', '_' ];
 * var ceil = Math.ceil;
 */
 rules[ 'stdlib/jsdoc-empty-line-before-example' ] = 'error';
+
+/**
+* Enforce empty lines between requires and code in JSDoc examples.
+*
+* @name jsdoc-example-require-spacing
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Fréchet distribution constructor.
+* *
+* * @module @stdlib/stats/base/dists/frechet/ctor
+* *
+* * @example
+* * var Frechet = require( '@stdlib/stats/base/dists/frechet/ctor' );
+* * var frechet = new Frechet( 1.0, 1.0, 0.5 );
+* *
+* * var y = frechet.cdf( 0.8 );
+* * // returns ~0.036
+* *\/
+*
+* @example
+* // Good...
+*
+* /**
+* * Fréchet distribution constructor.
+* *
+* * @module @stdlib/stats/base/dists/frechet/ctor
+* *
+* * @example
+* * var Frechet = require( '@stdlib/stats/base/dists/frechet/ctor' );
+* *
+* * var frechet = new Frechet( 1.0, 1.0, 0.5 );
+* *
+* * var y = frechet.cdf( 0.8 );
+* * // returns ~0.036
+* *\/
+*/
+rules[ 'stdlib/jsdoc-example-require-spacing' ] = 'error';
 
 /**
 * Require `\`` be used as the fenced code marker.
