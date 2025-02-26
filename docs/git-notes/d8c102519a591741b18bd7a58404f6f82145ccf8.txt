@@ -1,0 +1,12 @@
+---
+type: amend-message
+---
+chore: refactor random number generation in `stats/base/dists/rayleigh`
+
+PR-URL: #5104
+Ref: #4985
+
+Co-authored-by: Philipp Burckhardt <pburckhardt@outlook.com>
+Reviewed-by: Philipp Burckhardt <pburckhardt@outlook.com>
+Signed-off-by: Philipp Burckhardt <pburckhardt@outlook.com>
+Signed-off-by: ekambains <bainsinbusiness@gmail.com>

@@ -1,3 +1,5 @@
+/* eslint-disable stdlib/jsdoc-doctest-marker, stdlib/jsdoc-doctest, stdlib/jsdoc-example-require-spacing, stdlib/jsdoc-no-tabs */
+
 /**
 * @license Apache-2.0
 *
@@ -15,8 +17,6 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-
-/* eslint-disable stdlib/jsdoc-doctest-marker, stdlib/jsdoc-doctest */
 
 'use strict';
 
@@ -69,7 +69,7 @@ rules[ 'stdlib/capitalized-comments' ] = [ 'warn', {
 		'stdlib',
 		'throws'
 	]
-} ];
+}];
 
 /**
 * Enforce that return annotation values match actual output.
@@ -199,6 +199,52 @@ rules[ 'stdlib/doctest-quote-props' ] = 'error';
 * }
 */
 rules[ 'stdlib/empty-line-before-comment' ] = 'error';
+
+/**
+* Disallow spaces between an opening parenthesis or bracket and a nested object or array expression at the end of a line.
+*
+* @name eol-open-bracket-spacing
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var log = require( '@stdlib/console/log' );
+*
+* log( {
+*   'foo': true
+* });
+*
+* log( [
+*   1,
+*   2,
+*   3
+* ]);
+*
+* log( [ {
+*   'bar': true
+* }]);
+*
+* @example
+* // Good...
+* var log = require( '@stdlib/console/log' );
+*
+* log({
+*   'foo': true
+* });
+*
+* log([
+*   1,
+*   2,
+*   3
+* ]);
+*
+* log([{
+*   'bar': true
+* }]);
+*/
+rules[ 'stdlib/eol-open-bracket-spacing' ] = 'error';
 
 /**
 * Require blockquotes to have `2` character indentation.
@@ -791,6 +837,49 @@ rules[ 'stdlib/jsdoc-emphasis-marker' ] = [ 'error', '_' ];
 * var ceil = Math.ceil;
 */
 rules[ 'stdlib/jsdoc-empty-line-before-example' ] = 'error';
+
+/**
+* Enforce empty lines between requires and code in JSDoc examples.
+*
+* @name jsdoc-example-require-spacing
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Fréchet distribution constructor.
+* *
+* * @module @stdlib/stats/base/dists/frechet/ctor
+* *
+* * @example
+* * var Frechet = require( '@stdlib/stats/base/dists/frechet/ctor' );
+* * var frechet = new Frechet( 1.0, 1.0, 0.5 );
+* *
+* * var y = frechet.cdf( 0.8 );
+* * // returns ~0.036
+* *\/
+*
+* @example
+* // Good...
+*
+* /**
+* * Fréchet distribution constructor.
+* *
+* * @module @stdlib/stats/base/dists/frechet/ctor
+* *
+* * @example
+* * var Frechet = require( '@stdlib/stats/base/dists/frechet/ctor' );
+* *
+* * var frechet = new Frechet( 1.0, 1.0, 0.5 );
+* *
+* * var y = frechet.cdf( 0.8 );
+* * // returns ~0.036
+* *\/
+*/
+rules[ 'stdlib/jsdoc-example-require-spacing' ] = 'error';
 
 /**
 * Require `\`` be used as the fenced code marker.
@@ -3814,6 +3903,52 @@ rules[ 'stdlib/jsdoc-unordered-list-marker-style' ] = [ 'error', '-' ];
 * *\/
 */
 rules[ 'stdlib/jsdoc-main-export' ] = 'error';
+
+/**
+* Disallow spaces between a closing parenthesis or bracket and a nested object or array expression at the beginning of a line.
+*
+* @name line-closing-bracket-spacing
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var log = require( '@stdlib/console/log' );
+*
+* log({
+*   'foo': true
+* } );
+*
+* log([
+*   1,
+*   2,
+*   3
+* ] );
+*
+* log([{
+*   'bar': true
+* } ] );
+*
+* @example
+* // Good...
+* var log = require( '@stdlib/console/log' );
+*
+* log({
+*   'foo': true
+* });
+*
+* log([
+*   1,
+*   2,
+*   3
+* ]);
+*
+* log([{
+*   'bar': true
+* }]);
+*/
+rules[ 'stdlib/line-closing-bracket-spacing' ] = 'error';
 
 /**
 * Enforce that export statements are placed at the end of a file.

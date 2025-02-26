@@ -98,7 +98,7 @@ The use of the term `n-1` is commonly referred to as Bessel's correction. Note, 
 var dnanvariancetk = require( '@stdlib/stats/base/dnanvariancetk' );
 ```
 
-#### dnanvariancetk( N, correction, x, stride )
+#### dnanvariancetk( N, correction, x, strideX )
 
 Computes the [variance][variance] of a double-precision floating-point strided array `x` ignoring `NaN` values and using a one-pass textbook algorithm.
 
@@ -116,39 +116,36 @@ The function has the following parameters:
 -   **N**: number of indexed elements.
 -   **correction**: degrees of freedom adjustment. Setting this parameter to a value other than `0` has the effect of adjusting the divisor during the calculation of the [variance][variance] according to `n-c` where `c` corresponds to the provided degrees of freedom adjustment and `n` corresponds to the number of non-`NaN` indexed elements. When computing the [variance][variance] of a population, setting this parameter to `0` is the standard choice (i.e., the provided array contains data constituting an entire population). When computing the unbiased sample [variance][variance], setting this parameter to `1` is the standard choice (i.e., the provided array contains data sampled from a larger population; this is commonly referred to as Bessel's correction).
 -   **x**: input [`Float64Array`][@stdlib/array/float64].
--   **stride**: index increment for `x`.
+-   **strideX**: stride length for `x`.
 
-The `N` and `stride` parameters determine which elements in `x` are accessed at runtime. For example, to compute the [variance][variance] of every other element in `x`,
+The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to compute the [variance][variance] of every other element in `x`,
+
+<!-- eslint-disable max-len -->
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
-var x = new Float64Array( [ 1.0, 2.0, 2.0, -7.0, -2.0, 3.0, 4.0, 2.0, NaN ] );
-var N = floor( x.length / 2 );
+var x = new Float64Array( [ 1.0, 2.0, 2.0, -7.0, -2.0, 3.0, 4.0, 2.0, NaN, NaN ] );
 
-var v = dnanvariancetk( N, 1, x, 2 );
+var v = dnanvariancetk( 5, 1, x, 2 );
 // returns 6.25
 ```
 
 Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][mdn-typed-array] views.
 
-<!-- eslint-disable stdlib/capitalized-comments -->
+<!-- eslint-disable stdlib/capitalized-comments, max-len -->
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
-var x0 = new Float64Array( [ 2.0, 1.0, 2.0, -2.0, -2.0, 2.0, 3.0, 4.0, NaN ] );
+var x0 = new Float64Array( [ 2.0, 1.0, 2.0, -2.0, -2.0, 2.0, 3.0, 4.0, NaN, NaN ] );
 var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 
-var N = floor( x0.length / 2 );
-
-var v = dnanvariancetk( N, 1, x1, 2 );
+var v = dnanvariancetk( 5, 1, x1, 2 );
 // returns 6.25
 ```
 
-#### dnanvariancetk.ndarray( N, correction, x, stride, offset )
+#### dnanvariancetk.ndarray( N, correction, x, strideX, offsetX )
 
 Computes the [variance][variance] of a double-precision floating-point strided array ignoring `NaN` values and using a one-pass textbook algorithm and alternative indexing semantics.
 
@@ -163,18 +160,18 @@ var v = dnanvariancetk.ndarray( x.length, 1, x, 1, 0 );
 
 The function has the following additional parameters:
 
--   **offset**: starting index for `x`.
+-   **offsetX**: starting index for `x`.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the `offset` parameter supports indexing semantics based on a starting index. For example, to calculate the [variance][variance] for every other value in `x` starting from the second value
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameter supports indexing semantics based on a starting index. For example, to calculate the [variance][variance] for every other element in `x` starting from the second element
+
+<!-- eslint-disable max-len -->
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
-var x = new Float64Array( [ 2.0, 1.0, 2.0, -2.0, -2.0, 2.0, 3.0, 4.0 ] );
-var N = floor( x.length / 2 );
+var x = new Float64Array( [ 2.0, 1.0, 2.0, -2.0, -2.0, 2.0, 3.0, 4.0, NaN, NaN ] );
 
-var v = dnanvariancetk.ndarray( N, 1, x, 2, 1 );
+var v = dnanvariancetk.ndarray( 5, 1, x, 2, 1 );
 // returns 6.25
 ```
 
@@ -201,18 +198,19 @@ var v = dnanvariancetk.ndarray( N, 1, x, 2, 1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
-var Float64Array = require( '@stdlib/array/float64' );
+var uniform = require( '@stdlib/random/base/uniform' );
+var filledarrayBy = require( '@stdlib/array/filled-by' );
+var bernoulli = require( '@stdlib/random/base/bernoulli' );
 var dnanvariancetk = require( '@stdlib/stats/base/dnanvariancetk' );
 
-var x;
-var i;
-
-x = new Float64Array( 10 );
-for ( i = 0; i < x.length; i++ ) {
-    x[ i ] = round( (randu()*100.0) - 50.0 );
+function rand() {
+    if ( bernoulli( 0.8 ) < 1 ) {
+        return NaN;
+    }
+    return uniform( -50.0, 50.0 );
 }
+
+var x = filledarrayBy( 10, 'float64', rand );
 console.log( x );
 
 var v = dnanvariancetk( x.length, 1, x, 1 );
@@ -222,6 +220,125 @@ console.log( v );
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dnanvariancetk.h"
+```
+
+#### stdlib_strided_dnanvariancetk( N, correction, \*X, strideX )
+
+Computes the variance of a double-precision floating-point strided array ignoring `NaN` values and using a one-pass textbook algorithm.
+
+```c
+const double x[] = { 1.0, -2.0, 0.0/0.0, 2.0 };
+
+double v = stdlib_strided_dnanvariancetk( 4, 1.0, x, 1 );
+// returns ~4.3333
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **correction**: `[in] double` degrees of freedom adjustment. Setting this parameter to a value other than `0` has the effect of adjusting the divisor during the calculation of the [variance][variance] according to `n-c` where `c` corresponds to the provided degrees of freedom adjustment and `n` corresponds to the number of non-`NaN` indexed elements. When computing the [variance][variance] of a population, setting this parameter to `0` is the standard choice (i.e., the provided array contains data constituting an entire population). When computing the unbiased sample [variance][variance], setting this parameter to `1` is the standard choice (i.e., the provided array contains data sampled from a larger population; this is commonly referred to as Bessel's correction).
+-   **X**: `[in] double*` input array.
+-   **strideX**: `[in] CBLAS_INT` stride length for `X`.
+
+```c
+double stdlib_strided_dnanvariancetk( const CBLAS_INT N, const double correction, const double *X, const CBLAS_INT strideX );
+```
+
+#### stdlib_strided_dnanvariancetk_ndarray( N, correction, \*X, strideX, offsetX )
+
+Computes the variance of a double-precision floating-point strided array ignoring `NaN` values and using a one-pass textbook algorithm and alternative indexing semantics.
+
+```c
+const double x[] = { 1.0, -2.0, 0.0/0.0, 2.0 };
+
+double v = stdlib_strided_dnanvariancetk_ndarray( 4, 1.0, x, 1, 0 );
+// returns ~4.3333
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **correction**: `[in] double` degrees of freedom adjustment. Setting this parameter to a value other than `0` has the effect of adjusting the divisor during the calculation of the [variance][variance] according to `n-c` where `c` corresponds to the provided degrees of freedom adjustment and `n` corresponds to the number of non-`NaN` indexed elements. When computing the [variance][variance] of a population, setting this parameter to `0` is the standard choice (i.e., the provided array contains data constituting an entire population). When computing the unbiased sample [variance][variance], setting this parameter to `1` is the standard choice (i.e., the provided array contains data sampled from a larger population; this is commonly referred to as Bessel's correction).
+-   **X**: `[in] double*` input array.
+-   **strideX**: `[in] CBLAS_INT` stride length for `X`.
+-   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
+
+```c
+double stdlib_strided_dnanvariancetk_ndarray( const CBLAS_INT N, const double correction, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dnanvariancetk.h"
+#include <stdio.h>
+
+int main( void ) {
+    // Create a strided array:
+    const double x[] = { 1.0, 2.0, 0.0/0.0, 3.0, 0.0/0.0, 4.0, 5.0, 6.0, 0.0/0.0, 7.0, 8.0, 0.0/0.0 };
+
+    // Specify the number of elements:
+    const int N = 6;
+
+    // Specify the stride length:
+    const int strideX = 2;
+
+    // Compute the variance:
+    double v = stdlib_strided_dnanvariancetk( N, 1, x, strideX );
+
+    // Print the result:
+    printf( "sample variance: %lf\n", v );
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 * * *
 

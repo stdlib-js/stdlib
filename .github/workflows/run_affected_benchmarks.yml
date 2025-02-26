@@ -35,6 +35,11 @@ on:
       # List paths for which changes should trigger this workflow:
       - 'lib/**/benchmark/**'
 
+  workflow_dispatch:
+    inputs:
+      directories:
+        description: 'List of changed directories for which to run affected benchmarks (space-separated)'
+
 # Global permissions:
 permissions:
   # Allow read-only access to the repository contents:
@@ -57,7 +62,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
 
           # Specify whether to remove untracked files before checking out the repository:
@@ -68,18 +73,34 @@ jobs:
 
           # Specify whether to download Git-LFS files:
           lfs: false
+
+          # Avoid storing GitHub token in local Git configuration:
+          persist-credentials: false
         timeout-minutes: 10
 
       # Install Node.js:
       - name: 'Install Node.js'
         # Pin action to full length commit SHA
-        uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af # v4.1.0
+        uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
         with:
           node-version: '20' # 'lts/*'
         timeout-minutes: 5
 
+      # Cache dependencies:
+      - name: 'Cache dependencies'
+        # Pin action to full length commit SHA
+        uses: actions/cache@1bd1e32a3bdc45362d1e726936510720a7c30a57 # v4.2.0
+        id: cache
+        with:
+          path: |
+            ${{ github.workspace }}/node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
       # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
       - name: 'Install dependencies'
+        if: steps.cache.outputs.cache-hit != 'true'
         run: |
           make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 15
@@ -90,9 +111,10 @@ jobs:
           make init
         timeout-minutes: 5
 
-      # Get list of changed files:
-      - name: 'Get list of changed files'
-        id: changed-files
+      # Get list of changed directories from PR and push events:
+      - name: 'Get list of changed directories'
+        if: github.event_name != 'workflow_dispatch'
+        id: changed-directories
         continue-on-error: true
         run: |
           if [ -n "${{ github.event.pull_request.number }}" ]; then
@@ -107,24 +129,24 @@ jobs:
               files=$(git diff --diff-filter=AM --name-only ${{ github.event.before }} ${{ github.event.after }})
             fi
           fi
-          # Keep only benchmark files:
-          files=$(echo "$files" | grep -E 'benchmark/' | tr '\n' ' ' | sed 's/ $//')
-          echo "files=${files}" >> $GITHUB_OUTPUT
+          directories=$(for file in $files; do dirname $file; done | uniq | tr '\n' ' ' | sed 's/ $//')
+          echo "directories=${directories}" >> $GITHUB_OUTPUT
 
-      # Run JavaScript benchmarks:
-      - name: 'Run JavaScript benchmarks'
+      # Get list of changed directories from workflow dispatch event:
+      - name: 'Get list of changed directories (from user input)'
+        if: github.event_name == 'workflow_dispatch'
+        id: changed-directories-user-input
         run: |
-          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.js$' | tr '\n' ' ' | sed 's/ $//')
-          if [ -n "$files" ]; then
-            make benchmark-javascript-files FILES="${files}"
+          echo "directories=${{ github.event.inputs.directories }}" >> $GITHUB_OUTPUT
+        timeout-minutes: 5
+
+      # Run affected benchmarks:
+      - name: 'Run affected benchmarks'
+        run: |
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            directories="${{ steps.changed-directories-user-input.outputs.directories }}"
+          else
+            directories="${{ steps.changed-directories.outputs.directories }}"
           fi
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/run_affected_benchmarks" "$directories"
         timeout-minutes: 30
-
-      # Run C benchmarks:
-      - name: 'Run C benchmarks'
-        run: |
-          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.c$' | sed "s|^|${GITHUB_WORKSPACE}/|" | tr '\n' ' ' | sed 's/ $//')
-          if [ -n "$files" ]; then
-            make benchmark-c-files FILES="${files}"
-          fi
-        timeout-minutes: 15

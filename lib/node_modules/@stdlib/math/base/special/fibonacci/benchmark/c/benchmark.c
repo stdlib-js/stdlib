@@ -87,7 +87,7 @@ static double rand_double( void ) {
 * Computes the nth Fibonacci number.
 *
 * @param n   Fibonacci number to compute
-* @return Fibonacci number
+* @return    Fibonacci number
 */
 int fibonacci( int n ) {
 	if ( n < 2 ) {

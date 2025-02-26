@@ -87,7 +87,7 @@ static double rand_double( void ) {
 * Evaluates Binet's formula.
 *
 * @param x   input value
-* @return function result
+* @return    function result
 */
 double binet( double x ) {
 	return (double)( pow( 1.618033988749895, x ) - pow( -0.6180339887498948, x ) ) / sqrt( 5 );

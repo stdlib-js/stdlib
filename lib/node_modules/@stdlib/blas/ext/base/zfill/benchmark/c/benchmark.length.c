@@ -93,7 +93,7 @@ static double rand_double( void ) {
 *
 * @param iterations   number of iterations
 * @param len          array length
-* @return elapsed time in seconds
+* @return             elapsed time in seconds
 */
 static double benchmark1( int iterations, int len ) {
 	stdlib_complex128_t alpha;
@@ -129,7 +129,7 @@ static double benchmark1( int iterations, int len ) {
 *
 * @param iterations   number of iterations
 * @param len          array length
-* @return elapsed time in seconds
+* @return             elapsed time in seconds
 */
 static double benchmark2( int iterations, int len ) {
 	stdlib_complex128_t alpha;
