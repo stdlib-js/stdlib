@@ -51,6 +51,21 @@ jobs:
 
     # Define the sequence of job steps:
     steps:
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        # Pin action to full length commit SHA
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          # Specify whether to remove untracked files before checking out the repository:
+          clean: true
+
+          # Limit clone depth to the most recent commit:
+          fetch-depth: 1
+
+          # Specify whether to download Git-LFS files:
+          lfs: false
+        timeout-minutes: 10
+
       # Check whether any of the referenced issues is a "Good First Issue":
       - name: 'Check whether any of the referenced issues is a "Good First Issue"'
         id: 'check-pr'
