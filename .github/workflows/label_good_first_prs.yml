@@ -57,7 +57,7 @@ jobs:
         env:
           PR_NUMBER: ${{ github.event.pull_request.number }}
         run: |
-          bool=$(. "$GITHUB_WORKSPACE/.github/workflows/scripts/references_good_first_issue $PR_NUMBER)
+          bool=$(. "$GITHUB_WORKSPACE/.github/workflows/scripts/references_good_first_issue" $PR_NUMBER)
           echo "good-first-pr=$bool" >> $GITHUB_OUTPUT
 
       # Add "Good First PR" label if PR references a "Good First Issue"
