@@ -4320,10 +4320,8 @@ rules[ 'stdlib/no-nested-require' ] = 'error';
 *
 * @example
 * // Bad...
-* var arr;
+* var arr = new Array( 5 );
 * var i;
-*
-* arr = new Array( 5 );
 * for ( i = 0; i < 5; i++ ) {
 *     arr[ i ] = i;
 * }
@@ -4333,11 +4331,9 @@ rules[ 'stdlib/no-nested-require' ] = 'error';
 *
 * @example
 * // Good...
-* var arr;
+* var arr = [];
 * var i;
-*
-* arr = [];
-* for ( var i = 0; i < 5; i++ ) {
+* for ( i = 0; i < 5; i++ ) {
 *     arr.push( i );
 * }
 *
