@@ -43,6 +43,7 @@ on:
     types:
       - opened
       - reopened
+      - edited
 
 # Global permissions:
 permissions:
