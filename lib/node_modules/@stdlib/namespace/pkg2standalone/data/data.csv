@@ -3060,7 +3060,7 @@
 "@stdlib/utils/tabulate","@stdlib/utils-tabulate"
 "@stdlib/utils/tabulate-by","@stdlib/utils-tabulate-by"
 "@stdlib/utils/async/tabulate-by","@stdlib/utils-async-tabulate-by"
-"@stdlib/utils/thunk","@stdlib/utils-thunk"
+"@stdlib/function/thunk","@stdlib/function-thunk"
 "@stdlib/time/tic","@stdlib/time-tic"
 "@stdlib/utils/timeit","@stdlib/utils-timeit"
 "@stdlib/os/tmpdir","@stdlib/os-tmpdir"

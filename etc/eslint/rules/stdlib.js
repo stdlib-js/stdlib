@@ -4311,6 +4311,38 @@ rules[ 'stdlib/no-dynamic-exports' ] = 'error';
 rules[ 'stdlib/no-nested-require' ] = 'error';
 
 /**
+* Disallow the use of the `new Array()` constructor.
+*
+* @name no-new-array
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var arr = new Array( 5 );
+* var i;
+* for ( i = 0; i < 5; i++ ) {
+*     arr[ i ] = i;
+* }
+*
+* console.log( arr );
+* // => [ 0, 1, 2, 3, 4 ]
+*
+* @example
+* // Good...
+* var arr = [];
+* var i;
+* for ( i = 0; i < 5; i++ ) {
+*     arr.push( i );
+* }
+*
+* console.log( arr );
+* // => [ 0, 1, 2, 3, 4 ]
+*/
+rules[ 'stdlib/no-new-array' ] = 'error';
+
+/**
 * Never allow a variable to be declared multiple times within the same scope or for built-in globals to be redeclared.
 *
 * @name no-redeclare
