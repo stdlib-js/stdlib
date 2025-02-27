@@ -1,0 +1,138 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2025 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Script to check whether a PR references an issue with label "Good First Issue".
+#
+# Usage: references_good_first_issue PR_NUMBER
+#
+# Arguments:
+#
+#   PR_NUMBER    Pull request number.
+#
+# Environment variables:
+#
+#   GITHUB_TOKEN   GitHub token for authentication.
+
+# Ensure that the exit status of pipelines is non-zero in the event that at least one of the commands in a pipeline fails:
+set -o pipefail
+
+
+# VARIABLES #
+
+# Get the pull request number:
+pr_number="$1"
+
+# GitHub API base URL:
+GITHUB_API_URL="https://api.github.com"
+
+# Repository owner and name:
+REPO_OWNER="stdlib-js"
+REPO_NAME="stdlib"
+
+# Exit codes:
+SUCCESS=0
+ERROR=1
+
+
+# FUNCTIONS #
+
+# Error handler.
+#
+# $1 - error status
+on_error() {
+	echo 'ERROR: An error was encountered during execution.' >&2
+	exit "$1"
+}
+
+# Makes GitHub API requests.
+#
+# $1 - HTTP method (GET or POST)
+# $2 - API endpoint
+# $3 - data for POST requests
+github_api() {
+	local method="$1"
+	local endpoint="$2"
+	local data="$3"
+
+	# Initialize an array to hold curl headers:
+	local headers=()
+
+	# If GITHUB_TOKEN is set, add the Authorization header:
+	if [ -n "$GITHUB_TOKEN" ]; then
+		headers+=("-H" "Authorization: token $GITHUB_TOKEN")
+	fi
+
+	# Determine the HTTP method and construct the curl command accordingly...
+	case "$method" in
+		GET)
+			curl -s "${headers[@]}" "$GITHUB_API_URL$endpoint"
+			;;
+		POST)
+			# For POST requests, always set the Content-Type header:
+			headers+=("-H" "Content-Type: application/json")
+
+			# If data is provided, include it in the request:
+			if [ -n "$data" ]; then
+				curl -s -X POST "${headers[@]}" -d "$data" "$GITHUB_API_URL$endpoint"
+			else
+				# Handle cases where POST data is required but not provided:
+				echo "POST request requires data."
+				on_error $ERROR
+			fi
+			;;
+		*)
+			echo "Invalid HTTP method: $method"
+			on_error $ERROR
+			;;
+	esac
+}
+
+# Main execution sequence.
+main() {
+	if [ -z "$pr_number" ]; then
+		echo "ERROR: Pull request number is required" >&2
+		on_error $ERROR
+	fi
+
+	# Fetch pull request details:
+	pr_details=$(github_api "GET" "/repos/$REPO_OWNER/$REPO_NAME/pulls/$pr_number")
+	pr_title=$(echo "$pr_details" | jq -r '.title')
+	pr_body=$(echo "$pr_details" | jq -r '.body')
+
+	issue_numbers=$(echo $pr_body | grep -Ei '#[0-9]+' | grep -oEi '[0-9]+' | sort | uniq)
+	if [ -z "$issue_numbers" ]; then
+		echo 'false'
+		exit $SUCCESS
+	fi
+
+	for issue in $issue_numbers; do
+		issue_details=$(github_api "GET" "/repos/$REPO_OWNER/$REPO_NAME/issues/$issue")
+
+		bool=$(echo $issue_details | jq '.labels | any(.name == "Good First Issue")')
+		if [ "$bool" == 'true' ]; then
+			echo 'true'
+			exit $SUCCESS
+		fi
+	done
+
+	echo 'false'
+	exit $SUCCESS
+}
+
+# Call main with all command-line arguments:
+main "$@"
