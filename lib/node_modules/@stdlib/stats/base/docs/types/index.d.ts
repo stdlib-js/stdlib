@@ -2556,9 +2556,9 @@ interface Namespace {
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param strideX - `x` stride length
+	* @param strideX - stride length for `x`
 	* @param mask - mask array
-	* @param strideMask - `mask` stride length
+	* @param strideMask - stride length for `mask`
 	* @returns minimum value
 	*
 	* @example
@@ -2582,9 +2582,9 @@ interface Namespace {
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param strideX - `x` stride length
+	* @param strideX - stride length for `x`
 	* @param mask - mask array
-	* @param strideMask - `mask` stride length
+	* @param strideMask - stride length for `mask`
 	* @returns range
 	*
 	* @example
