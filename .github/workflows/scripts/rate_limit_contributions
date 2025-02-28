@@ -133,15 +133,17 @@ main() {
 
 	if [ "${num_good_first_prs}" -gt "${max_good_first_prs}" ]; then
 		# Post a comment on the PR:
-		comment="Hey, we noticed that you've been opening a number of PRs addressing good first issues.
+		comment="Hello! 👋
 
-Thanks for your interest and enthusiasm.
+We've noticed that you've been opening a number of PRs addressing good first issues. Thank you for your interest and enthusiasm!
 
-Now that you've made a few contributions, we suggest no longer working on good first issues and instead working on more involved tasks.
+Now that you've made a few contributions, we suggest no longer working on good first issues. Instead, we encourage you to prioritize cleaning up any PRs which have yet to be merged and then proceed to work on more involved tasks.
 
-Not only does this ensure that other new contributors can work on things, but it ensures you can spend your time on more challenging problems."
+Not only does this ensure that other new contributors can work on things and get ramped up on all things stdlib, it also ensures that you can spend your time on more challenging problems. 🚀
 
-		if ! github_api "POST" "/repos/${repo_owner}/${repo_name}/issues/${pr_number}/comments" "{\"body\":$(echo "$comment" | jq -R -s -c .)}"; then
+For ideas for future PRs, feel free to search the codebase for TODOs and FIXMEs and be sure to check out other open issues on the issue tracker. Cheers!"
+
+		if ! github_api "POST" "/repos/${repo_owner}/${repo_name}/issues/${pr_number}/comments" "{\"body\":$(echo "${comment}" | jq -R -s -c .)}"; then
 			echo "Failed to post comment on PR."
 			on_error 1
 		fi
