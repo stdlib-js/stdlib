@@ -22,6 +22,7 @@
 // NOTE: keep in alphabetical order...
 #include "stdlib/math/base/napi/ternary/ccc_c.h"
 #include "stdlib/math/base/napi/ternary/ddd_d.h"
+#include "stdlib/math/base/napi/ternary/did_d.h"
 #include "stdlib/math/base/napi/ternary/dii_d.h"
 #include "stdlib/math/base/napi/ternary/fff_f.h"
 #include "stdlib/math/base/napi/ternary/iid_d.h"

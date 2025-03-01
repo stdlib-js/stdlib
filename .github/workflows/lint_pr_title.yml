@@ -26,6 +26,7 @@ on:
       - synchronize
       - opened
       - reopened
+      - edited
 
 # Global permissions:
 permissions:
