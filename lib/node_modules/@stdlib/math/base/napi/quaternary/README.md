@@ -104,6 +104,29 @@ console.log( headerDir );
 #include "stdlib/math/base/napi/quaternary.h"
 ```
 
+<!-- NOTE: keep in alphabetical order according to the suffix XXXX_X -->
+
+#### STDLIB_MATH_BASE_NAPI_MODULE_DDDD_D( fcn )
+
+Macro for registering a Node-API module exporting an interface for invoking a quaternary function accepting and returning double-precision floating-point numbers.
+
+```c
+static double add( const double x, const double y, const double z, const double w ) {
+    return x + y + z + w;
+}
+
+// ...
+
+// Register a Node-API module:
+STDLIB_MATH_BASE_NAPI_MODULE_DDDD_D( add );
+```
+
+The macro expects the following arguments:
+
+-   **fcn**: `double (*fcn)( double, double, double, double )` quaternary function.
+
+When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring Node-API module registration.
+
 #### stdlib_math_base_napi_dddd_d( env, info, fcn )
 
 Invokes a quaternary function accepting and returning double-precision floating-point numbers.
@@ -143,6 +166,27 @@ The function accepts the following arguments:
 void stdlib_math_base_napi_dddd_d( napi_env env, napi_callback_info info, double (*fcn)( double, double, double, double ) );
 ```
 
+#### STDLIB_MATH_BASE_NAPI_MODULE_FFFF_F( fcn )
+
+Macro for registering a Node-API module exporting an interface for invoking a quaternary function accepting and returning single-precision floating-point numbers.
+
+```c
+static float addf( const float x, const float y, const float z, const float w ) {
+    return x + y + z + w;
+}
+
+// ...
+
+// Register a Node-API module:
+STDLIB_MATH_BASE_NAPI_MODULE_FFFF_F( addf );
+```
+
+The macro expects the following arguments:
+
+-   **fcn**: `float (*fcn)( float, float, float, float )` quaternary function.
+
+When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring Node-API module registration.
+
 #### stdlib_math_base_napi_ffff_f( env, info, fcn )
 
 Invokes a quaternary function accepting and returning single-precision floating-point numbers.
@@ -181,48 +225,6 @@ The function accepts the following arguments:
 ```c
 void stdlib_math_base_napi_ffff_f( napi_env env, napi_callback_info info, float (*fcn)( float, float, float, float ) );
 ```
-
-#### STDLIB_MATH_BASE_NAPI_MODULE_DDDD_D( fcn )
-
-Macro for registering a Node-API module exporting an interface for invoking a quaternary function accepting and returning double-precision floating-point numbers.
-
-```c
-static double add( const double x, const double y, const double z, const double w ) {
-    return x + y + z + w;
-}
-
-// ...
-
-// Register a Node-API module:
-STDLIB_MATH_BASE_NAPI_MODULE_DDDD_D( add );
-```
-
-The macro expects the following arguments:
-
--   **fcn**: `double (*fcn)( double, double, double, double )` quaternary function.
-
-When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring Node-API module registration.
-
-#### STDLIB_MATH_BASE_NAPI_MODULE_FFFF_F( fcn )
-
-Macro for registering a Node-API module exporting an interface for invoking a quaternary function accepting and returning single-precision floating-point numbers.
-
-```c
-static float addf( const float x, const float y, const float z, const float w ) {
-    return x + y + z + w;
-}
-
-// ...
-
-// Register a Node-API module:
-STDLIB_MATH_BASE_NAPI_MODULE_FFFF_F( addf );
-```
-
-The macro expects the following arguments:
-
--   **fcn**: `float (*fcn)( float, float, float, float )` quaternary function.
-
-When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring Node-API module registration.
 
 </section>
 
