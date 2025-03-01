@@ -18,7 +18,8 @@
 
 #include "stdlib/stats/base/dsvariancepn.h"
 #include "stdlib/blas/ext/base/dssum.h"
-#include <stdint.h>
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/stride2offset.h"
 
 /**
 * Computes the variance of a single-precision floating-point strided array using a two-pass algorithm with extended accumulation and returning an extended precision result.
@@ -35,12 +36,27 @@
 * @param N           number of indexed elements
 * @param correction  degrees of freedom adjustment
 * @param X           input array
-* @param stride      stride length
+* @param strideX     stride length
 * @return            output value
 */
-double stdlib_strided_dsvariancepn( const int64_t N, const float correction, const float *X, const int64_t stride ) {
-	int64_t ix;
-	int64_t i;
+double API_SUFFIX(stdlib_strided_dsvariancepn)( const CBLAS_INT N, const float correction, const float *X, const CBLAS_INT strideX ) {
+	const CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	return API_SUFFIX(stdlib_strided_dsvariancepn_ndarray)( N, correction, X, strideX, ox );
+}
+
+/**
+* Computes the variance of a single-precision floating-point strided array using a two-pass algorithm with extended accumulation and returning an extended precision result.
+*
+* @param N            number of indexed elements
+* @param correction   degrees of freedom adjustment
+* @param X            input array
+* @param strideX      stride length
+* @param offsetX      starting index for X
+* @return             output value
+*/
+double API_SUFFIX(stdlib_strided_dsvariancepn_ndarray)( const CBLAS_INT N, const float correction, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+	CBLAS_INT ix;
+	CBLAS_INT i;
 	double dN;
 	double mu;
 	double M2;
@@ -53,25 +69,21 @@ double stdlib_strided_dsvariancepn( const int64_t N, const float correction, con
 	if ( N <= 0 || n <= 0 ) {
 		return 0.0 / 0.0; // NaN
 	}
-	if ( N == 1 || stride == 0 ) {
+	if ( N == 1 || strideX == 0 ) {
 		return 0.0;
 	}
 	// Compute an estimate for the mean:
-	mu = stdlib_strided_dssum( N, X, stride ) / dN;
+	mu = stdlib_strided_dssum_ndarray( N, X, strideX, offsetX ) / dN;
 
-	if ( stride < 0 ) {
-		ix = (1-N) * stride;
-	} else {
-		ix = 0;
-	}
 	// Compute the variance...
+	ix = offsetX;
 	M2 = 0.0;
 	M = 0.0;
 	for ( i = 0; i < N; i++ ) {
 		d = (double)X[ ix ] - mu;
 		M2 += d * d;
 		M += d;
-		ix += stride;
+		ix += strideX;
 	}
 	return (M2/n) - ((M/dN)*(M/n));
 }
