@@ -59,19 +59,13 @@ bool = isProbabilityf( NaN );
 var uniform = require( '@stdlib/random/array/uniform' );
 var isProbabilityf = require( '@stdlib/math/base/assert/is-probabilityf' );
 
-var bool;
-var opts;
-var x;
-var i;
-
-opts = {
+var x = uniform( 100, -1.0, 1.0, {
     'dtype': 'float32'
-};
-x = uniform( 100, -1.0, 1.0, opts );
+});
 
+var i;
 for ( i = 0; i < 100; i++ ) {
-    bool = isProbabilityf( x[ i ] );
-    console.log( '%d is %s', x[ i ], ( bool ) ? 'a probability' : 'not a probability' );
+    console.log( '%d is %s', x[ i ], ( isProbabilityf( x[ i ] ) ) ? 'a probability' : 'not a probability' );
 }
 ```
 
@@ -110,6 +104,8 @@ for ( i = 0; i < 100; i++ ) {
 Tests if a single-precision floating-point number is a probability.
 
 ```c
+#include <stdbool.h>
+
 bool out = stdlib_base_is_probabilityf( 0.5f );
 // returns true
 

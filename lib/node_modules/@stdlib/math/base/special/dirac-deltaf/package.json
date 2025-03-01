@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/math/base/special/dirac-deltaf",
   "version": "0.0.0",
-  "description": "Evaluate the Dirac delta function in single-precision floating-point format.",
+  "description": "Evaluate the Dirac delta function for a single-precision floating-point number.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

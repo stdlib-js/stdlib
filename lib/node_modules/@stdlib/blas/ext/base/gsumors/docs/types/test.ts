@@ -16,6 +16,7 @@
 * limitations under the License.
 */
 
+import AccessorArray = require( '@stdlib/array/base/accessor' );
 import gsumors = require( './index' );
 
 
@@ -26,6 +27,7 @@ import gsumors = require( './index' );
 	const x = new Float64Array( 10 );
 
 	gsumors( x.length, x, 1 ); // $ExpectType number
+	gsumors( x.length, new AccessorArray( x ), 1 ); // $ExpectType number
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
@@ -85,6 +87,7 @@ import gsumors = require( './index' );
 	const x = new Float64Array( 10 );
 
 	gsumors.ndarray( x.length, x, 1, 0 ); // $ExpectType number
+	gsumors.ndarray( x.length, new AccessorArray( x ), 1, 0 ); // $ExpectType number
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...
