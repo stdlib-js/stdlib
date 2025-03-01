@@ -151,7 +151,17 @@ main() {
 	done
 
 	# Find all test files in package directories:
-	files=$(find ${directories} -maxdepth 3 \( -wholename '**/test/test*.js' -or -wholename '**/test/**/test*.js' \) | grep -v '/fixtures/' | sort -u | tr '\n' ' ') || true
+	files=""
+	for dir in ${directories}; do
+		# Find test files directly in the test directory or in subdirectories of test
+		pkg_test_files=$(find "${dir}/test" -type f -name "test*.js" | grep -v '/fixtures/' | sort -u | tr '\n' ' ') || true
+		if [ -n "${pkg_test_files}" ]; then
+			files="${files} ${pkg_test_files}"
+		fi
+	done
+
+	# Trim leading/trailing whitespace:
+	files=$(echo "${files}" | xargs)
 
 	# Exclude files residing in test fixtures directories:
 	files=$(echo "${files}" | grep -v '/fixtures/') || true
