@@ -275,6 +275,8 @@ int main( void ) {
 
 <section class="related">
 
+* * *
+
 ## See Also
 
 -   <span class="package-name">[`@stdlib/blas/ext/base/dsort2ins`][@stdlib/blas/ext/base/dsort2ins]</span><span class="delimiter">: </span><span class="description">simultaneously sort two double-precision floating-point strided arrays based on the sort order of the first array using insertion sort.</span>

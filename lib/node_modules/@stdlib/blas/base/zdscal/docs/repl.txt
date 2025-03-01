@@ -35,31 +35,21 @@
     --------
     // Standard usage:
     > var zx = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0 ] );
-    > {{alias}}( 2, 2.0, zx, 1 );
-    > var z = zx.get( 0 );
-    > var re = {{alias:@stdlib/complex/float64/real}}( z )
-    2.0
-    > var im = {{alias:@stdlib/complex/float64/imag}}( z )
-    4.0
+    > {{alias}}( 2, 2.0, zx, 1 )
+    <Complex128Array>[ 2.0, 4.0, 6.0, 8.0 ]
 
     // N and stride parameters:
     > zx = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-    > {{alias}}( 2, 2.0, zx, 2 );
-    > z = zx.get( 2 );
-    > re = {{alias:@stdlib/complex/float64/real}}( z )
-    10.0
-    > im = {{alias:@stdlib/complex/float64/imag}}( z )
-    12.0
+    > {{alias}}( 2, 2.0, zx, 2 )
+    <Complex128Array>[ 2.0, 4.0, 3.0, 4.0, 10.0, 12.0 ]
 
     // Using typed array views:
     > var zx0 = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
     > var zx1 = new {{alias:@stdlib/array/complex128}}( zx0.buffer, zx0.BYTES_PER_ELEMENT*1 );
-    > {{alias}}( 2, 2.0, zx1, 1 );
-    > z = zx0.get( 1 );
-    > re = {{alias:@stdlib/complex/float64/real}}( z )
-    6.0
-    > im = {{alias:@stdlib/complex/float64/imag}}( z )
-    8.0
+    > {{alias}}( 2, 2.0, zx1, 1 )
+    <Complex128Array>[ 6.0, 8.0, 10.0, 12.0 ]
+    > zx0
+    <Complex128Array>[ 1.0, 2.0, 6.0, 8.0, 10.0, 12.0 ]
 
 
 {{alias}}.ndarray( N, da, zx, strideZX, offsetZX )
@@ -96,21 +86,13 @@
     --------
     // Standard usage:
     > var zx = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0 ] );
-    > {{alias}}.ndarray( 2, 2.0, zx, 1, 0 );
-    > var z = zx.get( 0 );
-    > var re = {{alias:@stdlib/complex/float64/real}}( z )
-    2.0
-    > var im = {{alias:@stdlib/complex/float64/imag}}( z )
-    4.0
+    > {{alias}}.ndarray( 2, 2.0, zx, 1, 0 )
+    <Complex128Array>[ 2.0, 4.0, 6.0, 8.0 ]
 
     // Advanced indexing:
     > zx = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
-    > {{alias}}.ndarray( 2, 2.0, zx, 1, 2 );
-    > z = zx.get( 2 );
-    > re = {{alias:@stdlib/complex/float64/real}}( z )
-    10.0
-    > im = {{alias:@stdlib/complex/float64/imag}}( z )
-    12.0
+    > {{alias}}.ndarray( 2, 2.0, zx, 1, 2 )
+    <Complex128Array>[ 1.0, 2.0, 3.0, 4.0, 10.0, 12.0, 14.0, 16.0 ]
 
     See Also
     --------
