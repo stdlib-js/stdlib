@@ -22,22 +22,22 @@ limitations under the License.
 
 > Frequently Asked Questions (FAQs) by First-Time Contributors to stdlib.
 
--   [Introduction](#intro)
--   [As a first-time contributor to stdlib, where should I start?](#first-time-contributor)
--   [How can I set up my development environment to contribute to stdlib?](#setup-dev-environment)
--   [How can I install cppcheck?](#install-cppcheck)
--   [I am seeing different return values in the JavaScript and C implementation for the same implementation.](#js-vs-c-return-values)
--   [What should I do if Markdown linting on my commits fails because my headings exceed the maximum permissible length?](#markdown-heading-length)
--   [I have opened a pull request, where can I seek feedback?](#pr-feedback)
--   [I need to generate fixtures for my tests. How can I do that, and what are the best references for inspiration?](#generate-fixtures)
--   [I am facing a `Shadowed declaration` linting error in my C files, how can I fix it?](#shadowed-declaration)
--   [I am facing a `Uninitialized variable` linting error in my C files, how can I fix it?](#uninitialized-variable)
--   [I have the required packages in the expected paths, but I am still encountering an error like this while compiling the native add-on.](#compilation-error)
--   [When should I use decimals in examples, benchmarks, and documentation, and when should I avoid them?](#decimal-usage)
--   [How should I name my pull request?](#pr-naming)
--   [How do I call the stdlib bot on my PR?](#stdlib-bot)
--   [Frequently used `make` commands](#freq-make-commands)
--   [Other Links](#other-links)
+- [Introduction](#intro)
+- [As a first-time contributor to stdlib, where should I start?](#first-time-contributor)
+- [How can I set up my development environment to contribute to stdlib?](#setup-dev-environment)
+- [How can I install cppcheck?](#install-cppcheck)
+- [I am seeing different return values in the JavaScript and C implementation for the same implementation.](#js-vs-c-return-values)
+- [What should I do if Markdown linting on my commits fails because my headings exceed the maximum permissible length?](#markdown-heading-length)
+- [I have opened a pull request, where can I seek feedback?](#pr-feedback)
+- [I need to generate fixtures for my tests. How can I do that, and what are the best references for inspiration?](#generate-fixtures)
+- [I am facing a `Shadowed declaration` linting error in my C files, how can I fix it?](#shadowed-declaration)
+- [I am facing a `Uninitialized variable` linting error in my C files, how can I fix it?](#uninitialized-variable)
+- [I have the required packages in the expected paths, but I am still encountering an error like this while compiling the native add-on.](#compilation-error)
+- [When should I use decimals in examples, benchmarks, and documentation, and when should I avoid them?](#decimal-usage)
+- [How should I name my pull request?](#pr-naming)
+- [How do I call the stdlib bot on my PR?](#stdlib-bot)
+- [Frequently used `make` commands](#freq-make-commands)
+- [Other Links](#other-links)
 
 <!-- lint disable no-heading-punctuation -->
 
@@ -154,6 +154,7 @@ lib/node_modules/@stdlib/stats/base/dmeanvarpn/benchmark/c/benchmark.length.c:10
 lib/node_modules/@stdlib/stats/base/dmeanvarpn/benchmark/c/benchmark.length.c:112:38: note: Uninitialized variable: x
   stdlib_strided_dmeanvarpn( len, 1, x, 1, out, 1 );
 ```
+
 You can suppress that warning by adding a `// cppcheck-suppress uninitvar` comment above the function. For example:
 
 ```c
@@ -171,56 +172,44 @@ In packages involving C implementations, you need a `manifest.json` file to info
 
 ```json
 {
-  // Other sections above....
+    // Other sections above....
 
-  "confs": [
-    {
-      "task": "build",
-      "src": [
-        "./src/main.c"
-      ],
-      "include": [
-        "./include"
-      ],
-      "libraries": [],
-      "libpath": [],
-      "dependencies": [
-        "@stdlib/math/base/napi/unary",
-        "@stdlib/math/base/assert/is-nanf",
-        "@stdlib/constants/float32/pinf"
-      ]
-    },
-    {
-      "task": "benchmark",
-      "src": [
-        "./src/main.c"
-      ],
-      "include": [
-        "./include"
-      ],
-      "libraries": [],
-      "libpath": [],
-      "dependencies": [
-        "@stdlib/math/base/assert/is-nanf",
-        "@stdlib/constants/float32/pinf"
-      ]
-    },
-    {
-      "task": "examples",
-      "src": [
-        "./src/main.c"
-      ],
-      "include": [
-        "./include"
-      ],
-      "libraries": [],
-      "libpath": [],
-      "dependencies": [
-        "@stdlib/math/base/assert/is-nanf",
-        "@stdlib/constants/float32/pinf"
-      ]
-    }
-  ]
+    "confs": [
+        {
+            "task": "build",
+            "src": ["./src/main.c"],
+            "include": ["./include"],
+            "libraries": [],
+            "libpath": [],
+            "dependencies": [
+                "@stdlib/math/base/napi/unary",
+                "@stdlib/math/base/assert/is-nanf",
+                "@stdlib/constants/float32/pinf"
+            ]
+        },
+        {
+            "task": "benchmark",
+            "src": ["./src/main.c"],
+            "include": ["./include"],
+            "libraries": [],
+            "libpath": [],
+            "dependencies": [
+                "@stdlib/math/base/assert/is-nanf",
+                "@stdlib/constants/float32/pinf"
+            ]
+        },
+        {
+            "task": "examples",
+            "src": ["./src/main.c"],
+            "include": ["./include"],
+            "libraries": [],
+            "libpath": [],
+            "dependencies": [
+                "@stdlib/math/base/assert/is-nanf",
+                "@stdlib/constants/float32/pinf"
+            ]
+        }
+    ]
 }
 ```
 
@@ -239,13 +228,13 @@ double stdlib_strided_dnanvariancetk( const CBLAS_INT N, const double correction
 When calling this function in JavaScript, we expect the following usage:
 
 ```javascript
-var dnanvariancetk = require( '@stdlib/stats/base/dnanvariancetk' );
-var Float64Array = require( '@stdlib/array/float64' );
+var dnanvariancetk = require("@stdlib/stats/base/dnanvariancetk");
+var Float64Array = require("@stdlib/array/float64");
 
-var x = new Float64Array( [ 1.0, -2.0, NaN, 2.0 ] );
+var x = new Float64Array([1.0, -2.0, NaN, 2.0]);
 
 // Use decimals for floating-point values, not for integers.
-var v = dnanvariancetk( 4, 1.0, x, 1 );
+var v = dnanvariancetk(4, 1.0, x, 1);
 ```
 
 Notice that we used `1.0` as the second argument because it is a double-precision floating-point number. However, we did not use a decimal point for the first and fourth arguments, as they represent integers.
@@ -296,11 +285,13 @@ $ make install-node-addons NODE_ADDONS_PATTERN="math/base/special/abs"
 ### 4. Generate Test Fixtures
 
 - **Julia**
+
 ```bash
 $ make test-fixtures-julia TESTS_FIXTURES_FILTER=".*/path/to/package/.*"
 ```
 
 - **Python**
+
 ```bash
 $ make test-fixtures-python TESTS_FIXTURES_FILTER=".*/path/to/package/.*"
 ```
@@ -339,51 +330,28 @@ For more `make` commands, refer to the [documentation][benchmark] on running ben
 <section class="links">
 
 [git]: http://git-scm.com/
-
 [docker]: https://www.docker.com/
-
 [vscode]: https://code.visualstudio.com/
-
 [github-fork]: https://help.github.com/articles/fork-a-repo/
-
 [development-guide]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/development.md
-
 [contributing-guide]: https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md
-
 [good-first-issues]: https://github.com/stdlib-js/stdlib/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22Good%20First%20Issue%22
-
 [manual-setup]: https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md#step-0-github
-
 [devcontainer-setup]: https://github.com/stdlib-js/stdlib/blob/87cbd67623892f90ddeea94e1d4e01eeada417b5/docs/devcontainer_setup.md
-
 [devcontainer-issue]: https://github.com/stdlib-js/stdlib/issues/4934
-
 [install-link]: https://github.com/stdlib-js/stdlib/tree/develop/tools/make/lib/install#install
-
 [ref-discussion]: https://github.com/stdlib-js/stdlib/pull/2298#discussion_r1624765205
-
 [ref-comment]: https://github.com/stdlib-js/stdlib/blob/1f9cb760e3345cc7e08320a11f6a051873ef3586/lib/node_modules/%40stdlib/math/base/special/spence/test/test.native.js#L90
-
 [python-fixtures]: https://github.com/stdlib-js/stdlib/blob/develop/lib/node_modules/%40stdlib/math/base/special/hyp2f1/test/fixtures/python/runner.py
-
 [julia-fixtures]: https://github.com/stdlib-js/stdlib/blob/develop/lib/node_modules/%40stdlib/math/base/special/acosdf/test/fixtures/julia/runner.jl
-
 [test-fixtures]: https://github.com/stdlib-js/stdlib/tree/develop/tools/make/lib/test-fixtures
-
 [examples]: https://github.com/stdlib-js/stdlib/tree/develop/tools/make/lib/examples
-
 [benchmark]: https://github.com/stdlib-js/stdlib/tree/develop/tools/make/lib/benchmark
-
 [make]: https://www.gnu.org/software/make/
-
 [node-gyp]: https://github.com/nodejs/node-gyp
-
 [stdlib-gitter]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
-
 [stdlib-office-hours]: https://github.com/stdlib-js/meetings/issues
-
 [style-guide]: https://github.com/stdlib-js/stdlib/tree/develop/docs/style-guides
-
 [make-commands]: https://github.com/stdlib-js/stdlib/tree/develop/tools/make/lib
 
 </section>

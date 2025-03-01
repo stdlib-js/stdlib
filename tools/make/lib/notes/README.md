@@ -56,7 +56,7 @@ $ make notes
 
 The command supports the following environment variables:
 
--   **KEYWORDS**: pipe-delimited list of keywords identifying annotations; e.g., `TODO|FIXME|WARNING|HACK|NOTE|OPTIMIZE`.
+- **KEYWORDS**: pipe-delimited list of keywords identifying annotations; e.g., `TODO|FIXME|WARNING|HACK|NOTE|OPTIMIZE`.
 
 Annotated comments will be output along with their associated filename and line number.
 

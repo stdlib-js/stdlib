@@ -17,7 +17,7 @@
 #/
 
 # Workflow name:
-name: 'lint_copyright_years'
+name: "lint_copyright_years"
 
 # Workflow triggers:
 on:
@@ -33,12 +33,12 @@ permissions:
 jobs:
   # Define a job for linting copyright years in newly added files:
   lint:
-    name: 'Lint Copyright Years'
+    name: "Lint Copyright Years"
     runs-on: ubuntu-latest
 
     steps:
       # Checkout the repository:
-      - name: 'Checkout repository'
+      - name: "Checkout repository"
         # Pin action to full length commit SHA
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
@@ -53,7 +53,7 @@ jobs:
         timeout-minutes: 10
 
       # Get list of newly added files:
-      - name: 'Get list of newly added files'
+      - name: "Get list of newly added files"
         id: added-files
         run: |
           page=1
@@ -74,7 +74,7 @@ jobs:
           echo "files=${files}" >> $GITHUB_OUTPUT
 
       # Check copyright years in newly added files:
-      - name: 'Check copyright years'
+      - name: "Check copyright years"
         run: |
           current_year=$(date +"%Y")
           files="${{ steps.added-files.outputs.files }}"

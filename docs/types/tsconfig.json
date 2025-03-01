@@ -7,9 +7,7 @@
     "baseUrl": ".",
     "forceConsistentCasingInFileNames": true,
     "keyofStringsOnly": false,
-    "lib": [
-      "es6"
-    ],
+    "lib": ["es6"],
     "module": "commonjs",
     "moduleResolution": "node",
     "newLine": "lf",
@@ -28,10 +26,8 @@
     "strictNullChecks": true,
     "suppressExcessPropertyErrors": false,
     "suppressImplicitAnyIndexErrors": false,
-    "typeRoots": [ "." ],
+    "typeRoots": ["."],
     "types": []
   },
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }

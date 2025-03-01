@@ -21,7 +21,6 @@ name: cleanup_coverage
 
 # Workflow triggers:
 on:
-
   # Trigger the workflow when a pull request is closed (e.g., merged or closed without merging):
   pull_request_target:
     types:
@@ -29,19 +28,17 @@ on:
 
 # Workflow jobs:
 jobs:
-
   # Define a job to perform coverage cleanup...
   cleanup:
-
     # Define a display name:
-    name: 'Cleanup coverage'
+    name: "Cleanup coverage"
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
     steps:
       # Delete the 'pr-<number>' branch from the 'stdlib-js/www-test-code-coverage' repository:
-      - name: 'Delete coverage branch for PR'
+      - name: "Delete coverage branch for PR"
         env:
           REPO_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
@@ -51,7 +48,7 @@ jobs:
             || echo "Branch pr-${PR_NUMBER} does not exist or could not be deleted."
 
       # Find and update the '## Coverage Report' comment in the PR
-      - name: 'Update coverage comment in PR'
+      - name: "Update coverage comment in PR"
         # Pin action to full length commit SHA
         uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
         with:

@@ -24,23 +24,23 @@ on:
   push:
     paths:
       # List paths for which changes should trigger this workflow:
-      - 'lib/**/bin/**'
-      - 'lib/**/data/**'
-      - 'lib/**/etc/**'
-      - 'lib/**/include/**'
-      - 'lib/**/lib/**'
-      - 'lib/**/src/**'
-      - 'lib/**/test/**'
+      - "lib/**/bin/**"
+      - "lib/**/data/**"
+      - "lib/**/etc/**"
+      - "lib/**/include/**"
+      - "lib/**/lib/**"
+      - "lib/**/src/**"
+      - "lib/**/test/**"
 
-      - 'lib/**/*.gyp'
-      - 'lib/**/*.gypi'
-      - 'lib/**/manifest.json'
+      - "lib/**/*.gyp"
+      - "lib/**/*.gypi"
+      - "lib/**/manifest.json"
 
-      - 'package.json'
+      - "package.json"
 
       # List paths for which changes should *not* trigger this workflow:
-      - '!lib/**/_tools/**'
-      - '!lib/**/*.md'
+      - "!lib/**/_tools/**"
+      - "!lib/**/*.md"
 
   pull_request:
     types:
@@ -49,28 +49,28 @@ on:
       - reopened
     paths:
       # List paths for which changes should trigger this workflow:
-      - 'lib/**/bin/**'
-      - 'lib/**/data/**'
-      - 'lib/**/etc/**'
-      - 'lib/**/include/**'
-      - 'lib/**/lib/**'
-      - 'lib/**/src/**'
-      - 'lib/**/test/**'
+      - "lib/**/bin/**"
+      - "lib/**/data/**"
+      - "lib/**/etc/**"
+      - "lib/**/include/**"
+      - "lib/**/lib/**"
+      - "lib/**/src/**"
+      - "lib/**/test/**"
 
-      - 'lib/**/*.gyp'
-      - 'lib/**/*.gypi'
-      - 'lib/**/manifest.json'
+      - "lib/**/*.gyp"
+      - "lib/**/*.gypi"
+      - "lib/**/manifest.json"
 
-      - 'package.json'
+      - "package.json"
 
       # List paths for which changes should *not* trigger this workflow:
-      - '!lib/**/_tools/**'
-      - '!lib/**/*.md'
+      - "!lib/**/_tools/**"
+      - "!lib/**/*.md"
 
   workflow_dispatch:
     inputs:
       directories:
-        description: 'List of changed directories for which to run affected tests (space separated):'
+        description: "List of changed directories for which to run affected tests (space separated):"
 
 # Global permissions:
 permissions:
@@ -79,12 +79,10 @@ permissions:
 
 # Workflow jobs:
 jobs:
-
   # Define a job for running tests affected by changes to the repository...
   process:
-
     # Define a display name:
-    name: 'Run affected tests'
+    name: "Run affected tests"
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
@@ -92,7 +90,7 @@ jobs:
     # Define the sequence of job steps...
     steps:
       # Checkout the repository:
-      - name: 'Checkout repository'
+      - name: "Checkout repository"
         # Pin action to full length commit SHA
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
@@ -110,15 +108,15 @@ jobs:
         timeout-minutes: 10
 
       # Install Node.js:
-      - name: 'Install Node.js'
+      - name: "Install Node.js"
         # Pin action to full length commit SHA
         uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
         with:
-          node-version: '20' # 'lts/*'
+          node-version: "20" # 'lts/*'
         timeout-minutes: 5
 
       # Cache dependencies:
-      - name: 'Cache dependencies'
+      - name: "Cache dependencies"
         # Pin action to full length commit SHA
         uses: actions/cache@1bd1e32a3bdc45362d1e726936510720a7c30a57 # v4.2.0
         id: cache
@@ -130,20 +128,20 @@ jobs:
             ${{ runner.os }}-node-
 
       # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
-      - name: 'Install dependencies'
+      - name: "Install dependencies"
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
           make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 15
 
       # Initialize development environment:
-      - name: 'Initialize development environment'
+      - name: "Initialize development environment"
         run: |
           make init
         timeout-minutes: 5
 
       # Get list of changed directories from PR and push events:
-      - name: 'Get list of changed directories'
+      - name: "Get list of changed directories"
         if: github.event_name != 'workflow_dispatch'
         id: changed-directories
         continue-on-error: true
@@ -164,7 +162,7 @@ jobs:
           echo "directories=${directories}" >> $GITHUB_OUTPUT
 
       # Get list of changed directories from workflow dispatch event:
-      - name: 'Get list of changed directories (from user input)'
+      - name: "Get list of changed directories (from user input)"
         if: github.event_name == 'workflow_dispatch'
         id: changed-directories-user-input
         run: |
@@ -172,7 +170,7 @@ jobs:
         timeout-minutes: 5
 
       # Run JavaScript tests:
-      - name: 'Run JavaScript tests'
+      - name: "Run JavaScript tests"
         run: |
           if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
             directories="${{ steps.changed-directories-user-input.outputs.directories }}"

@@ -26,18 +26,16 @@ stdlib is an open-source project which is maintained by members of the community
 
 You can help in the following ways:
 
--   Give developer time to the project. Message us on [Gitter][stdlib-gitter] for guidance.
--   Financially sponsor the project.
+- Give developer time to the project. Message us on [Gitter][stdlib-gitter] for guidance.
+- Financially sponsor the project.
 
 If you want to be a sponsor 🤗, you can donate to one or more of the following:
 
--   [Open Collective][open-collective-stdlib]: <https://opencollective.com/stdlib>
--   [GitHub Sponsors][github-sponsors-stdlib]: <https://github.com/sponsors/stdlib-js>
+- [Open Collective][open-collective-stdlib]: <https://opencollective.com/stdlib>
+- [GitHub Sponsors][github-sponsors-stdlib]: <https://github.com/sponsors/stdlib-js>
 
 Thank you for your support!
 
 [stdlib-gitter]: https://gitter.im/stdlib-js/stdlib
-
 [open-collective-stdlib]: https://opencollective.com/stdlib
-
 [github-sponsors-stdlib]: https://github.com/sponsors/stdlib-js

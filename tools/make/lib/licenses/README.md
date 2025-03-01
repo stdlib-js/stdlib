@@ -76,8 +76,8 @@ $ make remove-license-headers
 
 The command supports the following environment variables:
 
--   **FILES_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
--   **FILES_PATTERN**: filename pattern; e.g., `*.js`.
+- **FILES_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
+- **FILES_PATTERN**: filename pattern; e.g., `*.js`.
 
 #### insert-license-headers
 
@@ -91,8 +91,8 @@ $ make insert-license-headers
 
 The command supports the following environment variables:
 
--   **FILES_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
--   **FILES_PATTERN**: filename pattern; e.g., `*.js`.
+- **FILES_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
+- **FILES_PATTERN**: filename pattern; e.g., `*.js`.
 
 #### update-license-headers
 
@@ -106,8 +106,8 @@ $ make update-license-headers
 
 The command supports the following environment variables:
 
--   **FILES_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
--   **FILES_PATTERN**: filename pattern; e.g., `*.js`.
+- **FILES_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
+- **FILES_PATTERN**: filename pattern; e.g., `*.js`.
 
 #### list-licenses
 

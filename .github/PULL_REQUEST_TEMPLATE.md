@@ -6,7 +6,7 @@ Resolves #{{TODO: add issue number}}.
 
 This pull request:
 
--   {{TODO: add description describing what this pull request does}}
+- {{TODO: add description describing what this pull request does}}
 
 ## Related Issues
 
@@ -14,7 +14,7 @@ This pull request:
 
 This pull request:
 
--   resolves #{{TODO: add issue number}} 
+- resolves #{{TODO: add issue number}}
 
 ## Questions
 
@@ -32,9 +32,9 @@ No.
 
 > Please ensure the following tasks are completed before submitting this pull request.
 
--   [ ] Read, understood, and followed the [contributing guidelines][contributing].
+- [ ] Read, understood, and followed the [contributing guidelines][contributing].
 
-* * *
+---
 
 @stdlib-js/reviewers
 

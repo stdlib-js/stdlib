@@ -25,10 +25,10 @@ on:
   workflow_dispatch:
     inputs:
       packages:
-        description: 'List of packages (space separated):'
+        description: "List of packages (space separated):"
         required: true
       message:
-        description: 'Custom deprecation message:'
+        description: "Custom deprecation message:"
 
 # Global permissions:
 permissions:
@@ -37,7 +37,6 @@ permissions:
 
 # Workflow concurrency group:
 concurrency:
-
   # Specify a group name:
   group: ${{ github.workflow }}
 
@@ -46,12 +45,10 @@ concurrency:
 
 # Workflow jobs:
 jobs:
-
   # Define a job for deprecating packages...
   deprecate:
-
     # Define a display name:
-    name: 'Deprecate packages'
+    name: "Deprecate packages"
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
@@ -59,7 +56,7 @@ jobs:
     # Define the sequence of job steps...
     steps:
       # Deprecate the specified packages on npm and the respective GitHub repositories:
-      - name: 'Deprecate packages'
+      - name: "Deprecate packages"
         env:
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
         run: |

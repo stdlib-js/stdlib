@@ -26,7 +26,7 @@ on:
   #   branches: [ "develop", "master" ]
   schedule:
     # Run the workflow once a week (Sunday at midnight):
-    - cron: '0 0 * * 0'
+    - cron: "0 0 * * 0"
 
   # Allow the workflow to be manually run:
   workflow_dispatch:
@@ -38,12 +38,10 @@ permissions:
 
 # Workflow jobs:
 jobs:
-
   # Define a job for performing CodeQL analysis...
   analyze:
-
     # Define a display name:
-    name: 'Analyze'
+    name: "Analyze"
 
     # Ensure the job does not run on forks:
     if: github.repository == 'stdlib-js/stdlib'
@@ -71,13 +69,11 @@ jobs:
 
     # Define the build matrix strategy...
     strategy:
-
       # Specify whether to cancel all in-progress jobs if any matrix job fails:
       fail-fast: false
 
       # Define the build matrix:
       matrix:
-
         # CodeQL supports the following languages:
         #
         #    [ 'c-cpp', 'csharp', 'go', 'java-kotlin', 'javascript-typescript', 'python', 'ruby', 'swift' ]
@@ -85,13 +81,12 @@ jobs:
         # Use only 'java-kotlin' to analyze code written in Java, Kotlin, or both.
         #
         # Use only 'javascript-typescript' to analyze code written in JavaScript, TypeScript, or both.
-        language: [ 'javascript-typescript' ]
+        language: ["javascript-typescript"]
 
     # Define the sequence of job steps:
     steps:
-
       # Checkout the repository:
-      - name: 'Checkout repository'
+      - name: "Checkout repository"
         # Pin action to full length commit SHA
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
@@ -106,7 +101,7 @@ jobs:
         timeout-minutes: 10
 
       # Install compilers:
-      - name: 'Install compilers'
+      - name: "Install compilers"
         run: |
           sudo -E apt-add-repository -y "ppa:ubuntu-toolchain-r/test"
           sudo -E apt-get update -q
@@ -119,15 +114,15 @@ jobs:
         timeout-minutes: 10
 
       # Install Node.js:
-      - name: 'Install Node.js'
+      - name: "Install Node.js"
         # Pin action to full length commit SHA
         uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
         with:
-          node-version: '20' # 'lts/*'
+          node-version: "20" # 'lts/*'
         timeout-minutes: 5
 
       # Print debug info:
-      - name: 'Print debug info'
+      - name: "Print debug info"
         run: |
           echo 'PATH:'
           echo $PATH
@@ -155,7 +150,7 @@ jobs:
         timeout-minutes: 2
 
       # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
-      - name: 'Install dependencies'
+      - name: "Install dependencies"
         run: |
           make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 15
@@ -166,7 +161,7 @@ jobs:
       #     make install-node-addons
 
       # Initialize CodeQL tools for scanning:
-      - name: 'Initialize CodeQL'
+      - name: "Initialize CodeQL"
 
         # Pin action to full length commit SHA
         uses: github/codeql-action/init@382a50a0284c0de445104889a9d6003acb4b3c1d # v2.15.4
@@ -175,10 +170,10 @@ jobs:
           languages: ${{ matrix.language }}
 
           # Specify a path to a custom CodeQL configuration file:
-          config-file: './.github/codeql/codeql_config.yml'
+          config-file: "./.github/codeql/codeql_config.yml"
 
       # Perform CodeQL analysis:
-      - name: 'Perform CodeQL Analysis'
+      - name: "Perform CodeQL Analysis"
 
         # Pin action to full length commit SHA
         uses: github/codeql-action/analyze@382a50a0284c0de445104889a9d6003acb4b3c1d # v2.15.4

@@ -17,11 +17,11 @@
 */
 
 .tsd-index-panel ul.tsd-index-list {
-	-webkit-column-count: 1!important;
-	-moz-column-count: 1!important;
-	-ms-column-count: 1!important;
-	-o-column-count: 1!important;
-	column-count: 1!important;
+	-webkit-column-count: 1 !important;
+	-moz-column-count: 1 !important;
+	-ms-column-count: 1 !important;
+	-o-column-count: 1 !important;
+	column-count: 1 !important;
 }
 
 .tsd-page-title h1 {

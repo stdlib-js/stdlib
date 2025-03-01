@@ -23,7 +23,7 @@ name: create_address_commit_comment_issues
 on:
   # Run the workflow daily at midnight UTC:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: "0 0 * * *"
 
   # Allow the workflow to be manually run:
   workflow_dispatch:
@@ -35,12 +35,10 @@ permissions:
 
 # Workflow jobs:
 jobs:
-
   # Define a job for creating issues from commit comments...
   create_issues:
-
     # Define a display name:
-    name: 'Create issues from commit comments'
+    name: "Create issues from commit comments"
 
     # Ensure the job does not run on forks:
     if: github.repository == 'stdlib-js/stdlib'
@@ -51,7 +49,7 @@ jobs:
     # Define the sequence of job steps...
     steps:
       # Checkout the repository:
-      - name: 'Checkout repository'
+      - name: "Checkout repository"
         # Pin action to full length commit SHA
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
@@ -66,7 +64,7 @@ jobs:
         timeout-minutes: 10
 
       # Create issues from commit comments:
-      - name: 'Create issues from commit comments'
+      - name: "Create issues from commit comments"
         env:
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
         run: |

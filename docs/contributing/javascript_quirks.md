@@ -29,10 +29,10 @@ limitations under the License.
     <!-- eslint-disable stdlib/no-builtin-math -->
 
     ```javascript
-    var x = Math.round( 1.5 );
+    var x = Math.round(1.5);
     // returns 2.0
 
-    x = Math.round( -1.5 );
+    x = Math.round(-1.5);
     // returns -1.0
     ```
 
@@ -43,7 +43,6 @@ limitations under the License.
 <section class="links">
 
 [ecma-262-math-round]: http://www.ecma-international.org/ecma-262/6.0/#sec-math.round
-
 [java-math-round]: https://docs.oracle.com/javase/7/docs/api/java/lang/Math.html#round%28double%29
 
 </section>

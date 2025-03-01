@@ -9,9 +9,7 @@
     "checkJs": true,
     "forceConsistentCasingInFileNames": true,
     "keyofStringsOnly": false,
-    "lib": [
-      "es6"
-    ],
+    "lib": ["es6"],
     "module": "commonjs",
     "moduleResolution": "node",
     "newLine": "lf",
@@ -30,14 +28,9 @@
     "strictNullChecks": true,
     "suppressExcessPropertyErrors": false,
     "suppressImplicitAnyIndexErrors": false,
-    "typeRoots": [ "." ],
+    "typeRoots": ["."],
     "types": []
   },
-  "include": [
-    "index.d.ts",
-    "test.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["index.d.ts", "test.ts"],
+  "exclude": ["node_modules"]
 }

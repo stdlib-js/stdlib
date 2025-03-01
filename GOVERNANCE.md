@@ -24,9 +24,9 @@ The Project Community consists of all Contributors and Users of The Project. Con
 
 This section describes the governance and leadership model of The Project. The core values of The Project's governance model are:
 
--   Openness and Transparency
--   Active Contribution
--   Institutional Neutrality
+- Openness and Transparency
+- Active Contribution
+- Institutional Neutrality
 
 ### Roles and Responsibilities
 
@@ -52,12 +52,12 @@ A Core Contributor is automatically made emeritus (and removed from active Core 
 
 ##### Core Contributor Activities
 
--   Helping users and novice Contributors
--   Contributing code and documentation changes that improve The Project
--   Reviewing and commenting on Issues and Pull Requests
--   Participation in working groups
--   Casting votes for and against merging a Pull Request
--   Merging approved Pull Requests
+- Helping users and novice Contributors
+- Contributing code and documentation changes that improve The Project
+- Reviewing and commenting on Issues and Pull Requests
+- Participation in working groups
+- Casting votes for and against merging a Pull Request
+- Merging approved Pull Requests
 
 #### Technical Steering Committee
 
@@ -65,16 +65,16 @@ A subset of the Core Contributors who have produced contributions that are subst
 
 The TSC has final authority over The Project, including:
 
--   Technical direction
--   Project governance and process (including this policy)
--   Contribution policy
--   Conduct guidelines
--   GitHub repository hosting
--   Development process and any coding standards
--   Setting release dates
--   Release quality standards
--   Making decisions when Core Contributors are unable to reach consensus on an issue within a reasonable time frame
--   Maintaining the list of Core Contributors
+- Technical direction
+- Project governance and process (including this policy)
+- Contribution policy
+- Conduct guidelines
+- GitHub repository hosting
+- Development process and any coding standards
+- Setting release dates
+- Release quality standards
+- Making decisions when Core Contributors are unable to reach consensus on an issue within a reasonable time frame
+- Maintaining the list of Core Contributors
 
 TSC Members participate in all discussions, code review, and other everyday Project activities as peers with all other Contributors and the Community. In these activities, TSC Members do not have any special power or privilege through their membership on the TSC. However, because of the quality and quantity of their contributions and their expert knowledge of The Project Software and Services, TSC Members are expected to provide useful guidance, both technically and concerning Project direction, to potentially less experienced Contributors.
 
@@ -102,8 +102,8 @@ Changes to TSC membership should be posted in the agenda and may be suggested as
 
 A TSC Member is eligible for automatic removal from the TSC if, during a 6-month period, all of the following are true:
 
--   They attend fewer than 25% of the regularly scheduled meetings.
--   They do not participate in any TSC votes.
+- They attend fewer than 25% of the regularly scheduled meetings.
+- They do not participate in any TSC votes.
 
 Before removal, an inactive TSC Member must be approached to confirm that they no longer wish to participate in the TSC. If they no longer wish to participate, they will be immediately removed from the TSC. If they plan to resume active participation in the TSC, they will be given a grace period of one year. If they don't return to active participation within that time period, they will be immediately removed from the TSC.
 
@@ -121,8 +121,8 @@ These numeric votes may be used informally as a way of getting a general sense o
 
 TSC Members are expected to be employed at a wide range of companies, universities, and non-profit organizations. Because of this, TSC Members may have possible conflicts of interest. Such conflicts of interest include, but are not limited to:
 
--   Financial interests, such as investments, employment, or contracting work outside of The Project that may influence their work on The Project.
--   Access to proprietary information of their employer that could potentially leak into their work with The Project.
+- Financial interests, such as investments, employment, or contracting work outside of The Project that may influence their work on The Project.
+- Access to proprietary information of their employer that could potentially leak into their work with The Project.
 
 All TSC Members shall disclose to the rest of the TSC any conflict of interest they may have. Members with a conflict of interest in a particular issue may participate in TSC discussions on that issue but must recuse themselves from voting on the issue.
 
@@ -148,9 +148,9 @@ This is a living document and may be updated over time. Refer to the [git histor
 
 Substantial portions of this document were adapted from the following governance models:
 
--   [NumPy][numpy-governance]
--   [Node.js][nodejs-governance]
--   [Sckit-learn][scikit-learn-governance]
+- [NumPy][numpy-governance]
+- [Node.js][nodejs-governance]
+- [Sckit-learn][scikit-learn-governance]
 
 ## License
 
@@ -159,15 +159,10 @@ This document may be reused under a [Creative Commons Attribution-ShareAlike 4.0
 <section class="links">
 
 [apache-foundation-voting-process]: https://www.apache.org/foundation/voting.html
-
 [numpy-governance]: https://github.com/numpy/numpy/blob/6db3236cd81c107d752d8ef5fb411f26bf8b7255/doc/source/dev/governance/governance.rst
-
 [nodejs-governance]: https://github.com/nodejs/node/blob/0be1c5728173ea9ac42843058e26b6268568acf0/GOVERNANCE.md
-
 [scikit-learn-governance]: https://github.com/scikit-learn/scikit-learn/blob/0c8820b6e4f9c49f55e96fcbb297073a887eb37b/doc/governance.rst
-
 [cc-by-sa-4.0]: https://creativecommons.org/licenses/by-sa/4.0/
-
 [stdlib-git-commit-log-governance]: https://github.com/stdlib-js/stdlib/commits/develop/GOVERNANCE.md
 
 </section>

@@ -38,21 +38,18 @@ permissions:
 
 # Workflow jobs:
 jobs:
-
   # Define a job for running make commands...
   run-make:
-
     # Define a display name:
-    name: 'Run make command'
+    name: "Run make command"
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
     # Define the sequence of job steps...
     steps:
-
       # Checkout the repository:
-      - name: 'Checkout repository'
+      - name: "Checkout repository"
         # Pin action to full length commit SHA
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
@@ -70,27 +67,27 @@ jobs:
         timeout-minutes: 10
 
       # Install Node.js:
-      - name: 'Install Node.js'
+      - name: "Install Node.js"
         # Pin action to full length commit SHA
         uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
         with:
-          node-version: '20' # 'lts/*'
+          node-version: "20" # 'lts/*'
         timeout-minutes: 5
 
       # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
-      - name: 'Install dependencies'
+      - name: "Install dependencies"
         run: |
           make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 15
 
       # Initialize development environment:
-      - name: 'Initialize development environment'
+      - name: "Initialize development environment"
         run: |
           make init
         timeout-minutes: 5
 
       # Run the make command:
-      - name: 'Run make command'
+      - name: "Run make command"
         run: |
           ${{ github.event.inputs.env }} make ${{ github.event.inputs.command }}
         timeout-minutes: 5

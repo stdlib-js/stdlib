@@ -28,22 +28,22 @@ limitations under the License.
 
 This directory contains [`make`][make] rules for running the project's installation processes (e.g., managing [Node.js][node-js] environments, including `node_modules` dependencies and Node.js native [add-ons][node-js-add-ons]).
 
--   [Commands](#commands)
+- [Commands](#commands)
 
-    -   [Install](#install)
-    -   [Node.js](#nodejs)
-    -   [Boost](#boost)
-    -   [Cephes](#cephes)
-    -   [Cppcheck](#cppcheck)
-    -   [Electron](#electron)
-    -   [Emscripten SDK](#emscripten-sdk)
-    -   [LLVM](#llvm)
-    -   [OpenBLAS](#openblas)
-    -   [Python](#python)
-    -   [R](#r)
-    -   [ShellCheck](#shellcheck)
-    -   [WebAssembly Binary Toolkit](#wabt)
-    -   [WASI libc](#wasi-libc)
+    - [Install](#install)
+    - [Node.js](#nodejs)
+    - [Boost](#boost)
+    - [Cephes](#cephes)
+    - [Cppcheck](#cppcheck)
+    - [Electron](#electron)
+    - [Emscripten SDK](#emscripten-sdk)
+    - [LLVM](#llvm)
+    - [OpenBLAS](#openblas)
+    - [Python](#python)
+    - [R](#r)
+    - [ShellCheck](#shellcheck)
+    - [WebAssembly Binary Toolkit](#wabt)
+    - [WASI libc](#wasi-libc)
 
 </section>
 
@@ -203,7 +203,7 @@ Removes all external library build artifacts.
 $ make clean-deps-builds-all
 ```
 
-* * *
+---
 
 <a name="nodejs"></a>
 
@@ -269,7 +269,7 @@ Removes Node.js native [add-ons][node-js-add-ons].
 $ make clean-node-addons
 ```
 
-* * *
+---
 
 <a name="boost"></a>
 
@@ -299,7 +299,7 @@ Removes compiled [Boost][boost] installation tests.
 $ make clean-deps-boost-tests
 ```
 
-* * *
+---
 
 <a name="cephes"></a>
 
@@ -329,7 +329,7 @@ Removes compiled [Cephes][cephes] installation tests.
 $ make clean-deps-cephes-tests
 ```
 
-* * *
+---
 
 <a name="cppcheck"></a>
 
@@ -359,7 +359,7 @@ Removes [Cppcheck][cppcheck] installation tests.
 $ make clean-deps-cppcheck-tests
 ```
 
-* * *
+---
 
 <a name="electron"></a>
 
@@ -389,7 +389,7 @@ Removes [Electron][electron] installation tests.
 $ make clean-deps-electron-tests
 ```
 
-* * *
+---
 
 <a name="emscripten-sdk"></a>
 
@@ -419,7 +419,7 @@ Removes [Emscripten SDK][emscripten-sdk] installation tests.
 $ make clean-deps-emscripten-tests
 ```
 
-* * *
+---
 
 <a name="llvm"></a>
 
@@ -449,7 +449,7 @@ Removes [LLVM][llvm] installation tests.
 $ make clean-deps-llvm-tests
 ```
 
-* * *
+---
 
 <a name="openblas"></a>
 
@@ -479,7 +479,7 @@ Removes compiled [OpenBLAS][openblas] installation tests.
 $ make clean-deps-openblas-tests
 ```
 
-* * *
+---
 
 <a name="python"></a>
 
@@ -509,7 +509,7 @@ Removes an installed Python dependencies.
 $ make clean-deps-python
 ```
 
-* * *
+---
 
 <a name="r"></a>
 
@@ -539,7 +539,7 @@ Removes an installed R dependencies.
 $ make clean-deps-r
 ```
 
-* * *
+---
 
 <a name="shellcheck"></a>
 
@@ -569,7 +569,7 @@ Removes [ShellCheck][shellcheck] installation tests.
 $ make clean-deps-shellcheck-tests
 ```
 
-* * *
+---
 
 <a name="wabt"></a>
 
@@ -599,7 +599,7 @@ Removes [WebAssembly Binary Toolkit][wabt] installation tests.
 $ make clean-deps-wabt-tests
 ```
 
-* * *
+---
 
 <a name="wasi-libc"></a>
 
@@ -646,29 +646,17 @@ $ make clean-deps-wasi-libc-tests
 <section class="links">
 
 [make]: https://www.gnu.org/software/make/
-
 [boost]: http://www.boost.org/
-
 [cephes]: http://www.moshier.net/#Cephes
-
 [cppcheck]: http://cppcheck.sourceforge.net/
-
 [electron]: https://www.electronjs.org/
-
 [emscripten-sdk]: https://github.com/emscripten-core/emsdk
-
 [llvm]: https://llvm.org
-
 [node-js]: https://nodejs.org/en/
-
 [node-js-add-ons]: https://nodejs.org/api/addons.html
-
 [openblas]: https://github.com/xianyi/OpenBLAS
-
 [shellcheck]: https://github.com/koalaman/shellcheck
-
 [wabt]: https://github.com/WebAssembly/wabt
-
 [wasi-libc]: https://github.com/WebAssembly/wasi-libc
 
 </section>

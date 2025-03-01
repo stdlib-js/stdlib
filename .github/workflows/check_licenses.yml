@@ -20,7 +20,7 @@
 name: check_licenses
 
 # Workflow triggers:
-on: [ pull_request ]
+on: [pull_request]
 
 # Global permissions:
 permissions:
@@ -29,20 +29,18 @@ permissions:
 
 # Workflow jobs:
 jobs:
-
   # Define a job for checking that pull requests do not introduce dependencies which fail license requirements...
   check_licenses:
-
     # Define a display name:
-    name: 'Check licenses'
+    name: "Check licenses"
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
     # Define environment variables:
     env:
-      BUILD_TASK: 'check_licenses'
-      GITHUB: 'true'
+      BUILD_TASK: "check_licenses"
+      GITHUB: "true"
       LOG_DIR: "${{ github.workspace }}/tmp/var/log"
       LOG_FILE_BUILD_TASK: "${{ github.workspace }}/tmp/var/log/check_licenses.log"
       LOG_NUM_LINES: 5000
@@ -55,9 +53,8 @@ jobs:
 
     # Define the sequence of job steps...
     steps:
-
       # Checkout the repository:
-      - name: 'Checkout repository'
+      - name: "Checkout repository"
         # Pin action to full length commit SHA
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
@@ -72,22 +69,22 @@ jobs:
         timeout-minutes: 10
 
       # Initialize log files:
-      - name: 'Initialize log files'
+      - name: "Initialize log files"
         run: |
           mkdir -p "${{ env.LOG_DIR }}"
           touch "${{ env.LOG_FILE_BUILD_TASK }}"
         timeout-minutes: 2
 
       # Install Node.js:
-      - name: 'Install Node.js'
+      - name: "Install Node.js"
         # Pin action to full length commit SHA
         uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
         with:
-          node-version: '20' # 'lts/*'
+          node-version: "20" # 'lts/*'
         timeout-minutes: 5
 
       # Print debug info:
-      - name: 'Print debug info'
+      - name: "Print debug info"
         run: |
           echo 'PATH:'
           echo $PATH
@@ -106,19 +103,19 @@ jobs:
         timeout-minutes: 2
 
       # Perform install sequence (accounting for possible network failures, etc, when installing node module dependencies):
-      - name: 'Perform install sequence'
+      - name: "Perform install sequence"
         run: |
           make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 30
 
       # Run the build task:
-      - name: 'Run build task'
+      - name: "Run build task"
         run: |
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/task_runner" "${{ env.BUILD_TASK }}" "${{ env.LOG_FILE_BUILD_TASK }}"
         timeout-minutes: 360
 
       # View the log file if the previous step fails:
-      - name: 'View log file'
+      - name: "View log file"
         if: failure()
         run: |
           echo "Printing the last ${{ env.LOG_NUM_LINES }} lines of log output..."
@@ -126,7 +123,7 @@ jobs:
         timeout-minutes: 5
 
       # Upload the log file:
-      - name: 'Upload log file'
+      - name: "Upload log file"
         # Pin action to full length commit SHA
         uses: actions/upload-artifact@65c4c4a1ddee5b72f698fdd19549f0f0fb45cf08 # v4.6.0
         if: always()

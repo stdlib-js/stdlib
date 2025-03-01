@@ -27,7 +27,7 @@ on:
   # Run the workflow on a schedule:
   schedule:
     # Run the workflow every week on Sunday at 00:00 UTC:
-    - cron: '0 0 * * 0'
+    - cron: "0 0 * * 0"
 
 # Global permissions:
 permissions:
@@ -36,12 +36,10 @@ permissions:
 
 # Workflow jobs:
 jobs:
-
   # Define a job for updating `package.json` files...
   update:
-
     # Define a display name:
-    name: 'Update meta data'
+    name: "Update meta data"
 
     # Ensure the job does not run on forks:
     if: github.repository == 'stdlib-js/stdlib'
@@ -51,9 +49,8 @@ jobs:
 
     # Define the sequence of job steps...
     steps:
-
       # Checkout the repository:
-      - name: 'Checkout repository'
+      - name: "Checkout repository"
         # Pin action to full length commit SHA
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
@@ -71,31 +68,31 @@ jobs:
         timeout-minutes: 10
 
       # Install Node.js:
-      - name: 'Install Node.js'
+      - name: "Install Node.js"
         # Pin action to full length commit SHA
         uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
         with:
-          node-version: '20' # 'lts/*'
+          node-version: "20" # 'lts/*'
         timeout-minutes: 5
 
       # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
-      - name: 'Install dependencies'
+      - name: "Install dependencies"
         run: |
           make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 15
 
       # Update directories:
-      - name: 'Update directories'
+      - name: "Update directories"
         run: |
           node lib/node_modules/@stdlib/_tools/package-json/scripts/update_directories lib/node_modules/@stdlib
 
       # Update gypfile field:
-      - name: 'Update gypfile field'
+      - name: "Update gypfile field"
         run: |
           node lib/node_modules/@stdlib/_tools/package-json/scripts/update_gypfile lib/node_modules/@stdlib
 
       # Import GPG key to sign commits:
-      - name: 'Import GPG key to sign commits'
+      - name: "Import GPG key to sign commits"
         # Pin action to full length commit SHA
         uses: crazy-max/ghaction-import-gpg@cb9bde2e2525e640591a934b1fd28eef1dcaf5e5 # v6.2.0
         with:
@@ -105,19 +102,19 @@ jobs:
           git_commit_gpgsign: true
 
       # Create a pull request with the updated `package.json` files:
-      - name: 'Create pull request'
+      - name: "Create pull request"
         id: cpr
         # Pin action to full length commit SHA
         uses: peter-evans/create-pull-request@67ccf781d68cd99b580ae25a5c18a1cc84ffff1f # v7.0.6
         with:
-          title: 'chore: update package meta data'
+          title: "chore: update package meta data"
           body: |
             This PR
 
             -   updates package meta data
 
-          commit-message: 'chore: update package meta data'
-          committer: 'stdlib-bot <82920195+stdlib-bot@users.noreply.github.com>'
+          commit-message: "chore: update package meta data"
+          committer: "stdlib-bot <82920195+stdlib-bot@users.noreply.github.com>"
           signoff: true
           token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           labels: |
@@ -128,7 +125,7 @@ jobs:
           delete-branch: true
 
       # Create a pull request summary:
-      - name: 'Create summary'
+      - name: "Create summary"
         run: |
           echo "# :tada: Pull Request created! :tada:" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY

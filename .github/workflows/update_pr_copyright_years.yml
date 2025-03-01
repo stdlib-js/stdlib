@@ -21,45 +21,41 @@ name: update_pr_copyright_years
 
 # Workflow triggers:
 on:
-
   # Allow the workflow to be triggered by other workflows
   workflow_call:
     # Define the input parameters for the workflow:
     inputs:
       pull_request_number:
-        description: 'PR number'
+        description: "PR number"
         required: true
         type: number
 
     # Define the secrets accessible by the workflow:
     secrets:
       STDLIB_BOT_GITHUB_TOKEN:
-        description: 'GitHub token for stdlib-bot'
+        description: "GitHub token for stdlib-bot"
         required: true
       STDLIB_BOT_GPG_PRIVATE_KEY:
-        description: 'GPG private key for stdlib-bot'
+        description: "GPG private key for stdlib-bot"
         required: true
       STDLIB_BOT_GPG_PASSPHRASE:
-        description: 'GPG passphrase for stdlib-bot'
+        description: "GPG passphrase for stdlib-bot"
         required: true
 
 # Workflow jobs:
 jobs:
-
   # Define a job for updating the copyright years:
   update:
-
     # Define a display name:
-    name: 'Update Copyright Years'
+    name: "Update Copyright Years"
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
     # Define the sequence of job steps...
     steps:
-
       # Get PR details:
-      - name: 'Get PR details'
+      - name: "Get PR details"
         id: pr-details
         run: |
           pr_response=$(curl -s \
@@ -79,7 +75,7 @@ jobs:
           echo "repository=$pr_repo_full_name" >> $GITHUB_OUTPUT
 
       # Checkout the repository:
-      - name: 'Checkout repository'
+      - name: "Checkout repository"
         # Pin action to full length commit SHA
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
@@ -93,10 +89,10 @@ jobs:
           token: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
 
           # File path to checkout to:
-          path: './'
+          path: "./"
 
       # Get list of added files:
-      - name: 'Get list of added files'
+      - name: "Get list of added files"
         id: added-files
         run: |
           page=1
@@ -114,19 +110,19 @@ jobs:
           echo "files=${files}" >> $GITHUB_OUTPUT
 
       # Update the copyright years:
-      - name: 'Update copyright years'
+      - name: "Update copyright years"
         id: update-years
         run: |
           files="${{ steps.added-files.outputs.files }}"
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/update_copyright_years" "$files"
 
       # Disable Git hooks:
-      - name: 'Disable Git hooks'
+      - name: "Disable Git hooks"
         run: |
           rm -rf .git/hooks
 
       # Import GPG key to sign commits:
-      - name: 'Import GPG key to sign commits'
+      - name: "Import GPG key to sign commits"
         # Pin action to full length commit SHA
         uses: crazy-max/ghaction-import-gpg@cb9bde2e2525e640591a934b1fd28eef1dcaf5e5 # v6.2.0
         with:
@@ -136,12 +132,12 @@ jobs:
           git_commit_gpgsign: true
 
       # Commit and push changes:
-      - name: 'Commit and push changes'
+      - name: "Commit and push changes"
         env:
-            REPO_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
-            USER_NAME: stdlib-bot
-            BRANCH_NAME: ${{ steps.pr-details.outputs.branch }}
-            REPO_NAME: ${{ steps.pr-details.outputs.repository }}
+          REPO_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+          USER_NAME: stdlib-bot
+          BRANCH_NAME: ${{ steps.pr-details.outputs.branch }}
+          REPO_NAME: ${{ steps.pr-details.outputs.repository }}
         run: |
           git config --local user.email "82920195+stdlib-bot@users.noreply.github.com"
           git config --local user.name "$USER_NAME"

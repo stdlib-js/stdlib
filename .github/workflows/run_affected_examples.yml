@@ -24,8 +24,8 @@ on:
   push:
     paths:
       # List paths for which changes should trigger this workflow:
-      - 'lib/**/examples/**'
-      - 'lib/**/README.md'
+      - "lib/**/examples/**"
+      - "lib/**/README.md"
 
   pull_request:
     types:
@@ -34,8 +34,8 @@ on:
       - reopened
     paths:
       # List paths for which changes should trigger this workflow:
-      - 'lib/**/examples/**'
-      - 'lib/**/README.md'
+      - "lib/**/examples/**"
+      - "lib/**/README.md"
 
 # Global permissions:
 permissions:
@@ -44,12 +44,10 @@ permissions:
 
 # Workflow jobs:
 jobs:
-
   # Define a job for running changed examples...
   process:
-
     # Define a display name:
-    name: 'Run changed examples'
+    name: "Run changed examples"
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
@@ -57,7 +55,7 @@ jobs:
     # Define the sequence of job steps...
     steps:
       # Checkout the repository:
-      - name: 'Checkout repository'
+      - name: "Checkout repository"
         # Pin action to full length commit SHA
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
@@ -75,15 +73,15 @@ jobs:
         timeout-minutes: 10
 
       # Install Node.js:
-      - name: 'Install Node.js'
+      - name: "Install Node.js"
         # Pin action to full length commit SHA
         uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
         with:
-          node-version: '20' # 'lts/*'
+          node-version: "20" # 'lts/*'
         timeout-minutes: 5
 
       # Cache dependencies:
-      - name: 'Cache dependencies'
+      - name: "Cache dependencies"
         # Pin action to full length commit SHA
         uses: actions/cache@1bd1e32a3bdc45362d1e726936510720a7c30a57 # v4.2.0
         id: cache
@@ -95,20 +93,20 @@ jobs:
             ${{ runner.os }}-node-
 
       # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
-      - name: 'Install dependencies'
+      - name: "Install dependencies"
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
           make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 15
 
       # Initialize development environment:
-      - name: 'Initialize development environment'
+      - name: "Initialize development environment"
         run: |
           make init
         timeout-minutes: 5
 
       # Get list of changed files:
-      - name: 'Get list of changed files'
+      - name: "Get list of changed files"
         id: changed-files
         continue-on-error: true
         run: |
@@ -129,7 +127,7 @@ jobs:
           echo "files=${files}" >> $GITHUB_OUTPUT
 
       # Run JavaScript examples:
-      - name: 'Run JavaScript examples'
+      - name: "Run JavaScript examples"
         run: |
           files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.js$' | tr '\n' ' ' | sed 's/ $//')
           if [ -n "$files" ]; then
@@ -138,7 +136,7 @@ jobs:
         timeout-minutes: 15
 
       # Run C examples:
-      - name: 'Run C examples'
+      - name: "Run C examples"
         run: |
           files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.c$' | sed "s|^|${GITHUB_WORKSPACE}/|" | tr '\n' ' ' | sed 's/ $//')
           if [ -n "$files" ]; then
@@ -147,7 +145,7 @@ jobs:
         timeout-minutes: 15
 
       # Run examples in Markdown files:
-      - name: 'Run examples in Markdown files'
+      - name: "Run examples in Markdown files"
         run: |
           files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.md$' | tr '\n' ' ' | sed 's/ $//')
           if [ -n "$files" ]; then

@@ -56,7 +56,7 @@ Performs development initialization tasks.
 $ make init
 ```
 
-* * *
+---
 
 ### ESLint
 
@@ -100,7 +100,7 @@ Removes custom [ESLint][eslint] plugins.
 $ make clean-eslint-plugins
 ```
 
-* * *
+---
 
 ### Git
 
@@ -133,11 +133,8 @@ $ make init-git-hooks
 <section class="links">
 
 [make]: https://www.gnu.org/software/make/
-
 [git]: https://git-scm.com/
-
 [git-hooks]: https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks
-
 [eslint]: https://eslint.org/
 
 </section>

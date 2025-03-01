@@ -26,19 +26,15 @@ For information about the governance of the stdlib project, see [GOVERNANCE.md][
 
 ## Members
 
--   [kgryte][athan-reines-github] - **Athan Reines** &lt;[kgryte@gmail.com][athan-reines-email]&gt; (he/him)
--   [Planeshifter][philipp-burckhardt-github] - **Philipp Burckhardt** &lt;[pburckhardt@outlook.com][philipp-burckhardt-email]&gt; (he/him)
+- [kgryte][athan-reines-github] - **Athan Reines** &lt;[kgryte@gmail.com][athan-reines-email]&gt; (he/him)
+- [Planeshifter][philipp-burckhardt-github] - **Philipp Burckhardt** &lt;[pburckhardt@outlook.com][philipp-burckhardt-email]&gt; (he/him)
 
 <section class="links">
 
 [stdlib-governance]: https://github.com/stdlib-js/stdlib/blob/develop/GOVERNANCE.md
-
 [athan-reines-github]: https://github.com/kgryte
-
 [athan-reines-email]: mailto:kgryte@gmail.com
-
 [philipp-burckhardt-github]: https://github.com/Planeshifter
-
 [philipp-burckhardt-email]: mailto:pburckhardt@outlook.com
 
 </section>

@@ -26,12 +26,12 @@ on:
     inputs:
       num:
         type: string
-        description: 'Number of READMEs to process'
-        default: '250'
+        description: "Number of READMEs to process"
+        default: "250"
 
   schedule:
     # Run the workflow once a day at 2:00 AM UTC:
-    - cron: '0 2 * * *'
+    - cron: "0 2 * * *"
 
 # Global permissions:
 permissions:
@@ -40,12 +40,10 @@ permissions:
 
 # Workflow jobs:
 jobs:
-
   # Define a job for updating the related packages section of READMEs:
   update:
-
     # Define a display name:
-    name: 'Update related packages section of READMEs'
+    name: "Update related packages section of READMEs"
 
     # Ensure the job does not run on forks:
     if: github.repository == 'stdlib-js/stdlib'
@@ -56,7 +54,7 @@ jobs:
     # Define the sequence of job steps...
     steps:
       # Checkout the repository:
-      - name: 'Checkout repository'
+      - name: "Checkout repository"
         # Pin action to full length commit SHA
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
@@ -74,39 +72,39 @@ jobs:
         timeout-minutes: 10
 
       # Install Node.js:
-      - name: 'Install Node.js'
+      - name: "Install Node.js"
         # Pin action to full length commit SHA
         uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
         with:
-          node-version: '20' # 'lts/*'
+          node-version: "20" # 'lts/*'
         timeout-minutes: 5
 
       # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
-      - name: 'Install dependencies'
+      - name: "Install dependencies"
         run: |
           make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 15
 
       # Initialize development environment:
-      - name: 'Initialize development environment'
+      - name: "Initialize development environment"
         run: |
           make init
         timeout-minutes: 5
 
       # Configure Git:
-      - name: 'Configure Git'
+      - name: "Configure Git"
         run: |
           git config --local user.email "82920195+stdlib-bot@users.noreply.github.com"
           git config --local user.name "stdlib-bot"
         timeout-minutes: 5
 
       # Disable Git hooks:
-      - name: 'Disable Git hooks'
+      - name: "Disable Git hooks"
         run: |
           rm -rf .git/hooks
 
       # Import GPG key to sign commits:
-      - name: 'Import GPG key to sign commits'
+      - name: "Import GPG key to sign commits"
         # Pin action to full length commit SHA
         uses: crazy-max/ghaction-import-gpg@cb9bde2e2525e640591a934b1fd28eef1dcaf5e5 # v6.2.0
         with:
@@ -116,7 +114,7 @@ jobs:
           git_commit_gpgsign: true
 
       # Pick random READMEs from the `lib/node_modules/@stdlib` directory:
-      - name: 'Pick random READMEs from the `lib/node_modules/@stdlib` directory'
+      - name: "Pick random READMEs from the `lib/node_modules/@stdlib` directory"
         id: random-readmes
         run: |
           command="find lib/node_modules/@stdlib -type f -name 'README.md' |
@@ -128,7 +126,7 @@ jobs:
           echo "readmes=$readmes" >> $GITHUB_OUTPUT
 
       # Update READMEs:
-      - name: 'Update READMEs'
+      - name: "Update READMEs"
         id: update-related-packages
         run: |
           files=$(echo "${{ steps.random-readmes.outputs.readmes }}" | tr ',' ' ')
@@ -147,20 +145,20 @@ jobs:
         timeout-minutes: 10
 
       # Create a pull request with the changes:
-      - name: 'Create pull request'
+      - name: "Create pull request"
         id: cpr
         if: steps.update-related-packages.outputs.changed == 'true'
         # Pin action to full length commit SHA
         uses: peter-evans/create-pull-request@67ccf781d68cd99b580ae25a5c18a1cc84ffff1f # v7.0.6
         with:
-          title: 'docs: update related packages sections'
+          title: "docs: update related packages sections"
           body: |
             This PR
 
             -   updates the related packages section of READMEs to include links to related packages.
 
-          commit-message: 'docs: update related packages sections'
-          committer: 'stdlib-bot <82920195+stdlib-bot@users.noreply.github.com>'
+          commit-message: "docs: update related packages sections"
+          committer: "stdlib-bot <82920195+stdlib-bot@users.noreply.github.com>"
           signoff: true
           token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           labels: |

@@ -29,21 +29,18 @@ permissions:
 
 # Workflow jobs:
 jobs:
-
   # Define a job for commenting on first-time contributions...
   greeting:
-
     # Define a display name:
-    name: 'Welcome new contributors'
+    name: "Welcome new contributors"
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
     # Define the sequence of job steps...
     steps:
-
       # Greet first-time contributors:
-      - name: 'Greet first-time contributors'
+      - name: "Greet first-time contributors"
         # Pin action to full length commit SHA
         uses: actions/first-interaction@34f15e814fe48ac9312ccf29db4e74fa767cbab7 # v1.3.0
         with:

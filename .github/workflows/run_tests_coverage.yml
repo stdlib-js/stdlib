@@ -26,22 +26,22 @@ on:
       - develop
     paths:
       # List paths for which changes should trigger this workflow:
-      - 'lib/**/bin/**'
-      - 'lib/**/data/**'
-      - 'lib/**/etc/**'
-      - 'lib/**/include/**'
-      - 'lib/**/lib/**'
-      - 'lib/**/src/**'
-      - 'lib/**/test/**'
+      - "lib/**/bin/**"
+      - "lib/**/data/**"
+      - "lib/**/etc/**"
+      - "lib/**/include/**"
+      - "lib/**/lib/**"
+      - "lib/**/src/**"
+      - "lib/**/test/**"
 
-      - 'lib/**/*.gyp'
-      - 'lib/**/*.gypi'
-      - 'lib/**/manifest.json'
+      - "lib/**/*.gyp"
+      - "lib/**/*.gypi"
+      - "lib/**/manifest.json"
 
-      - 'package.json'
+      - "package.json"
 
       # List paths for which changes should *not* trigger this workflow:
-      - '!lib/**/_tools/**'
+      - "!lib/**/_tools/**"
 
   pull_request_target:
     types:
@@ -50,27 +50,27 @@ on:
       - reopened
     paths:
       # List paths for which changes should trigger this workflow:
-      - 'lib/**/bin/**'
-      - 'lib/**/data/**'
-      - 'lib/**/etc/**'
-      - 'lib/**/include/**'
-      - 'lib/**/lib/**'
-      - 'lib/**/src/**'
-      - 'lib/**/test/**'
+      - "lib/**/bin/**"
+      - "lib/**/data/**"
+      - "lib/**/etc/**"
+      - "lib/**/include/**"
+      - "lib/**/lib/**"
+      - "lib/**/src/**"
+      - "lib/**/test/**"
 
-      - 'lib/**/*.gyp'
-      - 'lib/**/*.gypi'
-      - 'lib/**/manifest.json'
+      - "lib/**/*.gyp"
+      - "lib/**/*.gypi"
+      - "lib/**/manifest.json"
 
-      - 'package.json'
+      - "package.json"
 
       # List paths for which changes should *not* trigger this workflow:
-      - '!lib/**/_tools/**'
+      - "!lib/**/_tools/**"
 
   workflow_dispatch:
     inputs:
       directories:
-        description: 'List of changed directories for which to run tests (space separated):'
+        description: "List of changed directories for which to run tests (space separated):"
 
 # Global permissions:
 permissions:
@@ -79,12 +79,10 @@ permissions:
 
 # Workflow jobs:
 jobs:
-
   # Define a job for calculating test coverage for changed files...
   coverage:
-
     # Define a display name:
-    name: 'Calculate test coverage for packages'
+    name: "Calculate test coverage for packages"
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
@@ -92,7 +90,7 @@ jobs:
     # Define the sequence of job steps...
     steps:
       # Checkout the repository:
-      - name: 'Checkout repository'
+      - name: "Checkout repository"
         # Pin action to full length commit SHA
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
@@ -113,7 +111,7 @@ jobs:
         timeout-minutes: 10
 
       # Install Node.js:
-      - name: 'Install Node.js'
+      - name: "Install Node.js"
         # Pin action to full length commit SHA
         uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
         with:
@@ -121,7 +119,7 @@ jobs:
         timeout-minutes: 5
 
       # Cache dependencies:
-      - name: 'Cache dependencies'
+      - name: "Cache dependencies"
         # Pin action to full length commit SHA
         uses: actions/cache@1bd1e32a3bdc45362d1e726936510720a7c30a57 # v4.2.0
         id: cache
@@ -133,20 +131,20 @@ jobs:
             ${{ runner.os }}-node-
 
       # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
-      - name: 'Install dependencies'
+      - name: "Install dependencies"
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
           make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 15
 
       # Initialize development environment:
-      - name: 'Initialize development environment'
+      - name: "Initialize development environment"
         run: |
           make init
         timeout-minutes: 5
 
       # Get list of changed directories from PR and push events:
-      - name: 'Get list of changed directories'
+      - name: "Get list of changed directories"
         if: github.event_name != 'workflow_dispatch'
         id: changed-directories
         continue-on-error: true
@@ -178,7 +176,7 @@ jobs:
           echo "directories=${directories}" >> $GITHUB_OUTPUT
 
       # Get list of changed directories from workflow dispatch event:
-      - name: 'Get list of changed directories (from user input)'
+      - name: "Get list of changed directories (from user input)"
         if: github.event_name == 'workflow_dispatch'
         id: changed-directories-user-input
         run: |
@@ -186,7 +184,7 @@ jobs:
         timeout-minutes: 5
 
       # Exit early if non-package directories are changed:
-      - name: 'Exit early if non-package directories are changed'
+      - name: "Exit early if non-package directories are changed"
         id: check-changed
         if: github.event_name != 'workflow_dispatch'
         run: |
@@ -202,7 +200,7 @@ jobs:
           echo "skip=${skip}" >> $GITHUB_OUTPUT
 
       # Run JavaScript tests:
-      - name: 'Run JavaScript tests'
+      - name: "Run JavaScript tests"
         id: extract-coverage
         if: steps.check-changed.outputs.skip == 'false'
         env:
@@ -227,7 +225,7 @@ jobs:
         timeout-minutes: 30
 
       # Create final coverage report:
-      - name: 'Create final coverage report'
+      - name: "Create final coverage report"
         id: create-report
         if: steps.check-changed.outputs.skip == 'false'
         run: |
@@ -249,7 +247,7 @@ jobs:
           echo "report=$report" >> $GITHUB_OUTPUT
 
       # Post report as comment to PR:
-      - name: 'Post report as comment to PR'
+      - name: "Post report as comment to PR"
         if: github.event_name == 'pull_request_target' && steps.check-changed.outputs.skip == 'false'
         # Pin action to full length commit SHA
         uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
@@ -280,7 +278,7 @@ jobs:
             }
 
       # Post report as comment to commit:
-      - name: 'Post report as comment to commit'
+      - name: "Post report as comment to commit"
         if: github.event_name == 'push' && steps.check-changed.outputs.skip == 'false'
         # Pin action to full length commit SHA
         uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
@@ -295,16 +293,16 @@ jobs:
             })
 
       # Checkout coverage repository:
-      - name: 'Checkout coverage repository'
+      - name: "Checkout coverage repository"
         if: steps.check-changed.outputs.skip == 'false'
         # Pin action to full length commit SHA
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           # Code coverage repository:
-          repository: 'stdlib-js/www-test-code-coverage'
+          repository: "stdlib-js/www-test-code-coverage"
 
           # File path to checkout to:
-          path: './www-test-code-coverage'
+          path: "./www-test-code-coverage"
 
           # Specify whether to remove untracked files before checking out the repository:
           clean: false
@@ -319,7 +317,7 @@ jobs:
           persist-credentials: false
 
       # Checkout coverage repository branch:
-      - name: 'Checkout coverage repository branch'
+      - name: "Checkout coverage repository branch"
         if: steps.check-changed.outputs.skip == 'false'
         run: |
           cd ./www-test-code-coverage
@@ -336,7 +334,7 @@ jobs:
           fi
 
       # Copy artifacts to the repository:
-      - name: 'Copy artifacts to the repository'
+      - name: "Copy artifacts to the repository"
         if: steps.check-changed.outputs.skip == 'false'
         run: |
           if [ -d "./artifacts" ]; then
@@ -358,7 +356,7 @@ jobs:
           fi
 
       # Import GPG key to sign commits:
-      - name: 'Import GPG key to sign commits'
+      - name: "Import GPG key to sign commits"
         if: steps.check-changed.outputs.skip == 'false'
         # Pin action to full length commit SHA
         uses: crazy-max/ghaction-import-gpg@cb9bde2e2525e640591a934b1fd28eef1dcaf5e5 # v6.2.0
@@ -369,7 +367,7 @@ jobs:
           git_commit_gpgsign: true
 
       # Commit and push changes:
-      - name: 'Commit and push changes'
+      - name: "Commit and push changes"
         if: steps.check-changed.outputs.skip == 'false'
         env:
           REPO_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}

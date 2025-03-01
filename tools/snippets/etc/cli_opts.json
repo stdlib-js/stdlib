@@ -1,15 +1,8 @@
 {
 	"string": [],
-	"boolean": [
-		"help",
-		"version"
-	],
+	"boolean": ["help", "version"],
 	"alias": {
-		"help": [
-			"h"
-		],
-		"version": [
-			"V"
-		]
+		"help": ["h"],
+		"version": ["V"]
 	}
 }

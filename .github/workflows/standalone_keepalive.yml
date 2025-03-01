@@ -23,14 +23,13 @@ name: standalone_keepalive
 on:
   # Run the workflow on the first day of each week:
   schedule:
-    - cron: '0 0 * * 1'
+    - cron: "0 0 * * 1"
 
   # Allow the workflow to be manually run:
   workflow_dispatch:
 
 # Workflow concurrency group:
 concurrency:
-
   # Specify a group name:
   group: ${{ github.workflow }}
 
@@ -44,12 +43,10 @@ permissions:
 
 # Workflow jobs:
 jobs:
-
   # Define a job for scheduled updates to standalone packages...
   keepalive:
-
     # Define a display name:
-    name: 'Keep alive'
+    name: "Keep alive"
 
     # Ensure the job does not run on forks:
     if: github.repository == 'stdlib-js/stdlib'
@@ -59,9 +56,8 @@ jobs:
 
     # Define the sequence of job steps...
     steps:
-
       # Checkout the repository:
-      - name: 'Checkout repository'
+      - name: "Checkout repository"
         # Pin action to full length commit SHA
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
@@ -76,33 +72,33 @@ jobs:
         timeout-minutes: 10
 
       # Configure Git:
-      - name: 'Configure Git'
+      - name: "Configure Git"
         run: |
           git config --local user.email "82920195+stdlib-bot@users.noreply.github.com"
           git config --local user.name "stdlib-bot"
 
       # Apply Git notes:
-      - name: 'Apply Git notes'
+      - name: "Apply Git notes"
         run: |
           make apply-git-notes
         timeout-minutes: 5
 
       # Install Node.js:
-      - name: 'Install Node.js'
+      - name: "Install Node.js"
         # Pin action to full length commit SHA
         uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
         with:
-          node-version: '20' # 'lts/*'
+          node-version: "20" # 'lts/*'
         timeout-minutes: 5
 
       # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
-      - name: 'Install dependencies'
+      - name: "Install dependencies"
         run: |
           make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 15
 
       # Update standalone packages:
-      - name: 'Update standalone packages'
+      - name: "Update standalone packages"
         env:
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
         run: |

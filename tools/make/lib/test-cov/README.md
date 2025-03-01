@@ -56,8 +56,8 @@ $ make test-cov
 
 The command supports the following environment variables:
 
--   **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
--   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
+- **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
+- **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
 
 <!-- run-disable -->
 
@@ -85,7 +85,7 @@ Removes coverage artifacts, such as reports and HTML pages.
 $ make clean-cov
 ```
 
-* * *
+---
 
 ### JavaScript
 
@@ -101,8 +101,8 @@ $ make test-javascript-cov
 
 The command supports the following environment variables:
 
--   **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
--   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
+- **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
+- **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
 
 <!-- run-disable -->
 
@@ -136,13 +136,13 @@ $ make clean-javascript-cov
 
 <!-- Section to include notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
-* * *
+---
 
 <section class="notes">
 
 ## Notes
 
--   Commands supporting a `TESTS_FILTER` environment variable are useful when wanting to glob for test files (e.g., run all tests for a particular package).
+- Commands supporting a `TESTS_FILTER` environment variable are useful when wanting to glob for test files (e.g., run all tests for a particular package).
 
 </section>
 

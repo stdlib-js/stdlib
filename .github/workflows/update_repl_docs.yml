@@ -23,7 +23,7 @@ name: update_repl_docs
 on:
   schedule:
     # Run the workflow once a day at 2:00 AM UTC:
-    - cron: '0 2 * * *'
+    - cron: "0 2 * * *"
 
   # Allow the workflow to be manually run:
   workflow_dispatch:
@@ -35,12 +35,10 @@ permissions:
 
 # Workflow jobs:
 jobs:
-
   # Define a job for updating REPL documentation...
   update:
-
     # Define a display name:
-    name: 'Update REPL docs'
+    name: "Update REPL docs"
 
     # Ensure the job does not run on forks:
     if: github.repository == 'stdlib-js/stdlib'
@@ -50,9 +48,8 @@ jobs:
 
     # Define the sequence of job steps...
     steps:
-
       # Checkout the repository:
-      - name: 'Checkout repository'
+      - name: "Checkout repository"
         # Pin action to full length commit SHA
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
@@ -70,37 +67,37 @@ jobs:
         timeout-minutes: 10
 
       # Install Node.js:
-      - name: 'Install Node.js'
+      - name: "Install Node.js"
         # Pin action to full length commit SHA
         uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
         with:
-          node-version: '20' # 'lts/*'
+          node-version: "20" # 'lts/*'
         timeout-minutes: 5
 
       # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
-      - name: 'Install dependencies'
+      - name: "Install dependencies"
         run: |
           make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 15
 
       # Initialize development environment:
-      - name: 'Initialize development environment'
+      - name: "Initialize development environment"
         run: |
           make init
         timeout-minutes: 5
 
       # Update REPL documentation:
-      - name: 'Update documentation'
+      - name: "Update documentation"
         run: |
           make repl-docs
 
       # Disable Git hooks:
-      - name: 'Disable Git hooks'
+      - name: "Disable Git hooks"
         run: |
           rm -rf .git/hooks
 
       # Import GPG key to sign commits:
-      - name: 'Import GPG key to sign commits'
+      - name: "Import GPG key to sign commits"
         # Pin action to full length commit SHA
         uses: crazy-max/ghaction-import-gpg@cb9bde2e2525e640591a934b1fd28eef1dcaf5e5 # v6.2.0
         with:
@@ -110,19 +107,19 @@ jobs:
           git_commit_gpgsign: true
 
       # Create a pull request:
-      - name: 'Create pull request'
+      - name: "Create pull request"
         id: cpr
         # Pin action to full length commit SHA
         uses: peter-evans/create-pull-request@67ccf781d68cd99b580ae25a5c18a1cc84ffff1f # v7.0.6
         with:
-          title: 'docs: update REPL namespace documentation'
+          title: "docs: update REPL namespace documentation"
           body: |
             This PR
 
             -   updates the REPL namespace documentation
 
-          commit-message: 'docs: update REPL namespace documentation'
-          committer: 'stdlib-bot <82920195+stdlib-bot@users.noreply.github.com>'
+          commit-message: "docs: update REPL namespace documentation"
+          committer: "stdlib-bot <82920195+stdlib-bot@users.noreply.github.com>"
           signoff: true
           token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           labels: |
@@ -134,7 +131,7 @@ jobs:
           delete-branch: true
 
       # Create a pull request summary:
-      - name: 'Create summary'
+      - name: "Create summary"
         run: |
           echo "# :tada: Pull Request created! :tada:" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY

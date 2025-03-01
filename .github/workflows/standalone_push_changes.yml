@@ -26,10 +26,10 @@ on:
       - develop
     paths:
       # List paths for which changes should trigger this workflow:
-      - 'lib/node_modules/@stdlib/**'
+      - "lib/node_modules/@stdlib/**"
 
       # List paths for which changes should *not* trigger this workflow:
-      - '!lib/node_modules/@stdlib/_tools/**'
+      - "!lib/node_modules/@stdlib/_tools/**"
 
 # Global permissions:
 permissions:
@@ -38,21 +38,18 @@ permissions:
 
 # Workflow jobs:
 jobs:
-
   # Define a job for pushing changes to standalone packages...
   push:
-
     # Define a display name:
-    name: 'Push changes'
+    name: "Push changes"
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
     # Define the sequence of job steps...
     steps:
-
       # Checkout the repository:
-      - name: 'Checkout repository'
+      - name: "Checkout repository"
         # Pin action to full length commit SHA
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
@@ -67,40 +64,40 @@ jobs:
         timeout-minutes: 10
 
       # Configure Git:
-      - name: 'Configure Git'
+      - name: "Configure Git"
         run: |
           git config --local user.email "82920195+stdlib-bot@users.noreply.github.com"
           git config --local user.name "stdlib-bot"
 
       # Apply Git notes:
-      - name: 'Apply Git notes'
+      - name: "Apply Git notes"
         run: |
           make apply-git-notes
 
       # Install Node.js:
-      - name: 'Install Node.js'
+      - name: "Install Node.js"
         # Pin action to full length commit SHA
         uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
         with:
-          node-version: '20' # 'lts/*'
+          node-version: "20" # 'lts/*'
         timeout-minutes: 5
 
       # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
-      - name: 'Install dependencies'
+      - name: "Install dependencies"
         run: |
           make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 15
 
       # Retrieve list of changed packages:
-      - name: 'Find changed packages'
-        id: 'changed_packages'
+      - name: "Find changed packages"
+        id: "changed_packages"
         # Pin action to full length commit SHA
         uses: stdlib-js/changed-packages-action@e489c6b4eff164c5912a0b2d17d7462f38c11712 # v2.0.0
         with:
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_FGPAT_REPO_READ }}
 
       # Push changes to the package repositories:
-      - name: 'Push changes'
+      - name: "Push changes"
         if: ${{ steps.changed_packages.outputs.packages != '[]' }}
         env:
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
@@ -110,12 +107,11 @@ jobs:
 
   # Define a job for sending notifications to Slack...
   slack:
-
     # Define a display name:
-    name: 'Slack notification'
+    name: "Slack notification"
 
     # Define the type of virtual host machine:
-    runs-on: 'ubuntu-latest'
+    runs-on: "ubuntu-latest"
 
     # Indicate that this job depends on the prior job finishing:
     needs: push
@@ -131,9 +127,8 @@ jobs:
 
     # Define the sequence of job steps...
     steps:
-
       # Resolve notification data:
-      - name: 'Resolve notification data'
+      - name: "Resolve notification data"
         run: |
           echo 'NOTIFICATION_STATUS=${{ needs.push.result}}' >> $GITHUB_ENV
           if [[ "${{ needs.push.result }}" = "success" ]]; then
@@ -151,7 +146,7 @@ jobs:
         timeout-minutes: 5
 
       # Send notification to Slack:
-      - name: 'Send notification'
+      - name: "Send notification"
         # Pin action to full length commit SHA
         uses: 8398a7/action-slack@28ba43ae48961b90635b50953d216767a6bea486 # v3.16.2
         if: success()

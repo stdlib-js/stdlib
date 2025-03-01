@@ -26,30 +26,29 @@ on:
     inputs:
       release-type:
         type: choice
-        description: 'Type of release to create'
-        default: 'none'
+        description: "Type of release to create"
+        default: "none"
         options:
-        - none
-        - patch
-        - minor
-        - major
-        - auto
+          - none
+          - patch
+          - minor
+          - major
+          - auto
       dry-run:
         type: boolean
-        description: 'Skip uploading packages (dry run):'
+        description: "Skip uploading packages (dry run):"
         default: false
       start-index:
         type: number
-        description: 'Index of first package to publish'
+        description: "Index of first package to publish"
         default: 0
       end-index:
         type: number
-        description: 'Index of last package to publish'
+        description: "Index of last package to publish"
         default: 9999
 
 # Workflow concurrency group:
 concurrency:
-
   # Specify a group name:
   group: ${{ github.workflow }}
 
@@ -63,21 +62,18 @@ permissions:
 
 # Workflow jobs:
 jobs:
-
   # Define a job for publishing standalone packages...
   publish:
-
     # Define a display name:
-    name: 'Publish'
+    name: "Publish"
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
     # Define the sequence of job steps...
     steps:
-
       # Checkout the repository:
-      - name: 'Checkout repository'
+      - name: "Checkout repository"
         # Pin action to full length commit SHA
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
@@ -92,32 +88,32 @@ jobs:
         timeout-minutes: 10
 
       # Configure Git:
-      - name: 'Configure Git'
+      - name: "Configure Git"
         run: |
           git config --local user.email "82920195+stdlib-bot@users.noreply.github.com"
           git config --local user.name "stdlib-bot"
 
       # Apply Git notes:
-      - name: 'Apply Git notes'
+      - name: "Apply Git notes"
         run: |
           make apply-git-notes
 
       # Install Node.js:
-      - name: 'Install Node.js'
+      - name: "Install Node.js"
         # Pin action to full length commit SHA
         uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
         with:
-          node-version: '20' # 'lts/*'
+          node-version: "20" # 'lts/*'
         timeout-minutes: 5
 
       # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
-      - name: 'Install dependencies'
+      - name: "Install dependencies"
         run: |
           make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 15
 
       # Publish standalone packages:
-      - name: 'Publish packages'
+      - name: "Publish packages"
         env:
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -128,7 +124,7 @@ jobs:
           node lib/node_modules/@stdlib/_tools/scripts/publish_packages.js --skip-toplevel --release-type=${{ github.event.inputs.release-type }} --start-index=${{ github.event.inputs.start-index }} --end-index=${{ github.event.inputs.end-index }} ${{ github.event.inputs.dry-run == 'true' && '--skip-upload ' || '' }}
 
       # Archive list of to be published packages:
-      - name: 'Archive package list'
+      - name: "Archive package list"
         # Pin action to full length commit SHA
         uses: actions/upload-artifact@65c4c4a1ddee5b72f698fdd19549f0f0fb45cf08 # v4.6.0
         with:
@@ -139,12 +135,11 @@ jobs:
 
   # Define a job for sending notifications to Slack...
   slack:
-
     # Define a display name:
-    name: 'Slack notification'
+    name: "Slack notification"
 
     # Define the type of virtual host machine:
-    runs-on: 'ubuntu-latest'
+    runs-on: "ubuntu-latest"
 
     # Indicate that this job depends on the prior job finishing:
     needs: publish
@@ -160,9 +155,8 @@ jobs:
 
     # Define the sequence of job steps...
     steps:
-
       # Resolve notification data:
-      - name: 'Resolve notification data'
+      - name: "Resolve notification data"
         run: |
           echo 'NOTIFICATION_STATUS=${{ needs.publish.result}}' >> $GITHUB_ENV
           if [[ "${{ needs.publish.result }}" = "success" ]]; then
@@ -180,7 +174,7 @@ jobs:
         timeout-minutes: 5
 
       # Send notification to Slack:
-      - name: 'Send notification'
+      - name: "Send notification"
         # Pin action to full length commit SHA
         uses: 8398a7/action-slack@28ba43ae48961b90635b50953d216767a6bea486 # v3.16.2
         if: success()

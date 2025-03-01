@@ -26,7 +26,7 @@ on:
     # Define the input parameters for the workflow:
     inputs:
       pull_request_number:
-        description: 'Pull request number'
+        description: "Pull request number"
         required: true
         type: number
       user:
@@ -35,7 +35,7 @@ on:
     # Define the secrets accessible by the workflow:
     secrets:
       STDLIB_BOT_GITHUB_TOKEN:
-        description: 'stdlib-bot GitHub token to create pull request comments'
+        description: "stdlib-bot GitHub token to create pull request comments"
         required: true
 
   # Trigger on pull request events:
@@ -55,12 +55,10 @@ permissions:
 
 # Workflow jobs:
 jobs:
-
   # Define a job for checking the contributing guidelines acceptance...
   check_acknowledgment:
-
     # Define a display name:
-    name: 'Check Contributing Guidelines Acceptance'
+    name: "Check Contributing Guidelines Acceptance"
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
@@ -71,7 +69,7 @@ jobs:
     # Define the sequence of job steps...
     steps:
       # Checkout the repository:
-      - name: 'Checkout repository'
+      - name: "Checkout repository"
         # Pin action to full length commit SHA
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
@@ -86,7 +84,7 @@ jobs:
         timeout-minutes: 10
 
       # Check contributing guidelines acceptance:
-      - name: 'Check contributing guidelines acceptance'
+      - name: "Check contributing guidelines acceptance"
         env:
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           PR_NUMBER: ${{ github.event.pull_request.number || inputs.pull_request_number }}

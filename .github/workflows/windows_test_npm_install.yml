@@ -23,14 +23,13 @@ name: windows_test_npm_install
 on:
   # Run nightly:
   schedule:
-    - cron: '0 9 * * *'
+    - cron: "0 9 * * *"
 
   # Allow the workflow to be manually run:
   workflow_dispatch:
 
 # Workflow concurrency group:
 concurrency:
-
   # Specify a group name:
   group: ${{ github.workflow }}
 
@@ -44,10 +43,8 @@ permissions:
 
 # Workflow jobs:
 jobs:
-
   # Define a job for testing project installation on Windows...
   test_npm_install:
-
     # Define a display name:
     name: "Node.js v${{ matrix.NODE_VERSION }}"
 
@@ -59,35 +56,33 @@ jobs:
 
     # Define environment variables:
     env:
-      FC: 'gfortran'
-      FORTRAN_COMPILER: 'gfortran'
-      CC: 'gcc'
-      C_COMPILER: 'gcc'
-      CXX: 'g++'
-      CXX_COMPILER: 'g++'
-      LINKER: 'g++'
-      GITHUB: 'true'
+      FC: "gfortran"
+      FORTRAN_COMPILER: "gfortran"
+      CC: "gcc"
+      C_COMPILER: "gcc"
+      CXX: "g++"
+      CXX_COMPILER: "g++"
+      LINKER: "g++"
+      GITHUB: "true"
       LOG_DIR: "${{ github.workspace }}\\tmp\\var\\log"
       LOG_FILE_BUILD_TASK: "${{ github.workspace }}\\\\tmp\\\\var\\\\log\\\\${{ matrix.BUILD_TASK }}.log"
       LOG_NUM_LINES: 5000
 
     # Define the build matrix strategy...
     strategy:
-
       # Specify whether to cancel all in-progress jobs if any matrix job fails:
       fail-fast: false
 
       # Define the build matrix:
       matrix:
-
         # Define the list of build tasks:
-        BUILD_TASK: ['test-npm-install']
+        BUILD_TASK: ["test-npm-install"]
 
         # Define the list of Node.js versions:
-        NODE_VERSION: ['20', '18', '16', '14', '12', '10', '8', '6', '4']
+        NODE_VERSION: ["20", "18", "16", "14", "12", "10", "8", "6", "4"]
 
         # Define the list of operating systems:
-        OS: ['windows-latest']
+        OS: ["windows-latest"]
 
         # Define the list of host architectures:
         ARCHITECTURE:
@@ -95,35 +90,35 @@ jobs:
 
         # Define configuration options for each Node.js version:
         include:
-          - OS: 'windows-latest'
-            PLATFORM: 'windows'
+          - OS: "windows-latest"
+            PLATFORM: "windows"
 
-          - NODE_VERSION: '20'
-            NPM_VERSION: '>10.0.0'
+          - NODE_VERSION: "20"
+            NPM_VERSION: ">10.0.0"
 
-          - NODE_VERSION: '18'
-            NPM_VERSION: '>10.0.0'
+          - NODE_VERSION: "18"
+            NPM_VERSION: ">10.0.0"
 
-          - NODE_VERSION: '16'
-            NPM_VERSION: '>2.7.0 <10.0.0'
+          - NODE_VERSION: "16"
+            NPM_VERSION: ">2.7.0 <10.0.0"
 
-          - NODE_VERSION: '14'
-            NPM_VERSION: '>2.7.0 <10.0.0'
+          - NODE_VERSION: "14"
+            NPM_VERSION: ">2.7.0 <10.0.0"
 
-          - NODE_VERSION: '12'
-            NPM_VERSION: '>2.7.0 <9.0.0'
+          - NODE_VERSION: "12"
+            NPM_VERSION: ">2.7.0 <9.0.0"
 
-          - NODE_VERSION: '10'
-            NPM_VERSION: '>2.7.0 <7.0.0'
+          - NODE_VERSION: "10"
+            NPM_VERSION: ">2.7.0 <7.0.0"
 
-          - NODE_VERSION: '8'
-            NPM_VERSION: '>2.7.0 <6.0.0'
+          - NODE_VERSION: "8"
+            NPM_VERSION: ">2.7.0 <6.0.0"
 
-          - NODE_VERSION: '6'
-            NPM_VERSION: '>2.7.0 <6.0.0'
+          - NODE_VERSION: "6"
+            NPM_VERSION: ">2.7.0 <6.0.0"
 
-          - NODE_VERSION: '4'
-            NPM_VERSION: '>2.7.0 <6.0.0'
+          - NODE_VERSION: "4"
+            NPM_VERSION: ">2.7.0 <6.0.0"
 
     # Set defaults:
     defaults:
@@ -133,9 +128,8 @@ jobs:
 
     # Define the sequence of job steps...
     steps:
-
       # Checkout the repository:
-      - name: 'Checkout repository'
+      - name: "Checkout repository"
         # Pin action to full length commit SHA
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
@@ -153,7 +147,7 @@ jobs:
         timeout-minutes: 10
 
       # Install MSYS2:
-      - name: 'Install MSYS2'
+      - name: "Install MSYS2"
         # Pin action to full length commit SHA
         uses: msys2/setup-msys2@d44ca8e88d8b43d56cf5670f91747359d5537f97 # v2.26.0
         with:
@@ -168,14 +162,14 @@ jobs:
         timeout-minutes: 10
 
       # Initialize log files:
-      - name: 'Initialize log files'
+      - name: "Initialize log files"
         run: |
           mkdir -p "${{ env.LOG_DIR }}"
           touch "${{ env.LOG_FILE_BUILD_TASK }}"
         timeout-minutes: 2
 
       # Configure Git:
-      - name: 'Configure Git'
+      - name: "Configure Git"
 
         # Instruct Git to convert CRLF line endings (Windows) to LF on commit and force Git to use HTTPS rather than SSH.
         #
@@ -187,14 +181,14 @@ jobs:
         timeout-minutes: 2
 
       # Configure NVS:
-      - name: 'Configure NVS'
+      - name: "Configure NVS"
         run: |
           echo "NVS_HOME=$HOME/.nvs" >> $GITHUB_ENV
           echo "NVS_LINK_TO_SYSTEM=1" >> $GITHUB_ENV
         timeout-minutes: 2
 
       # Install Node.js:
-      - name: 'Install Node.js'
+      - name: "Install Node.js"
         run: |
           echo 'Cloning NVS...'
           git clone https://github.com/jasongin/nvs "${{ env.NVS_HOME }}"
@@ -210,7 +204,7 @@ jobs:
         timeout-minutes: 15
 
       # Print debug info:
-      - name: 'Print debug info'
+      - name: "Print debug info"
         run: |
           . "${{ env.NVS_HOME }}/nvs.sh" && nvs use ${{ matrix.NODE_VERSION }}
           echo 'PATH:'
@@ -235,7 +229,7 @@ jobs:
         timeout-minutes: 2
 
       # Update the npm client (older clients cannot handle scoped modules):
-      - name: 'Update npm'
+      - name: "Update npm"
         run: |
           . "${{ env.NVS_HOME }}/nvs.sh" && nvs use ${{ matrix.NODE_VERSION }}
           npm install -g npm@"${{ matrix.NPM_VERSION }}"
@@ -243,7 +237,7 @@ jobs:
         timeout-minutes: 5
 
       # Install Windows build tools for compiling Node.js native add-ons.
-      - name: 'Install Windows build tools'
+      - name: "Install Windows build tools"
         # Pin action to full length commit SHA
         uses: crazy-max/ghaction-chocolatey@2ae99523e93879734d432250f87e2c45c379cd60 # v3.2.0
         with:
@@ -251,7 +245,7 @@ jobs:
         timeout-minutes: 10
 
       # View the log file if the previous step fails:
-      - name: 'View log file'
+      - name: "View log file"
         if: failure()
         run: |
           echo "Printing the last ${{ env.LOG_NUM_LINES }} lines of log output..."
@@ -259,25 +253,25 @@ jobs:
         timeout-minutes: 5
 
       # Configure npm:
-      - name: 'Configure npm'
+      - name: "Configure npm"
         run: |
           . "${{ env.NVS_HOME }}/nvs.sh" && nvs use ${{ matrix.NODE_VERSION }}
           npm config set msvs_version 2019
         timeout-minutes: 2
 
       # Run the build task:
-      - name: 'Run build task'
+      - name: "Run build task"
         env:
           # Explicitly set computed environment variables:
-          TEST_NPM_INSTALL_PKG: '@stdlib/stdlib'
-          TEST_NPM_INSTALL_GITHUB_URL: 'https://github.com/stdlib-js/stdlib'
+          TEST_NPM_INSTALL_PKG: "@stdlib/stdlib"
+          TEST_NPM_INSTALL_GITHUB_URL: "https://github.com/stdlib-js/stdlib"
         run: |
           . "${{ env.NVS_HOME }}/nvs.sh" && nvs use ${{ matrix.NODE_VERSION }}
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/task_runner" ${{ matrix.BUILD_TASK }} "${{ env.LOG_FILE_BUILD_TASK }}"
         timeout-minutes: 360
 
       # View the log file if the previous step fails:
-      - name: 'View log file'
+      - name: "View log file"
         if: failure()
         run: |
           echo "Printing the last ${{ env.LOG_NUM_LINES }} lines of log output..."
@@ -285,7 +279,7 @@ jobs:
         timeout-minutes: 5
 
       # Upload the log file:
-      - name: 'Upload log file'
+      - name: "Upload log file"
         # Pin action to full length commit SHA
         uses: actions/upload-artifact@65c4c4a1ddee5b72f698fdd19549f0f0fb45cf08 # v4.6.0
         if: always()
@@ -302,12 +296,11 @@ jobs:
 
   # Define a job for sending notifications to Slack...
   slack:
-
     # Define a display name:
-    name: 'Slack notification'
+    name: "Slack notification"
 
     # Define the type of virtual host machine:
-    runs-on: 'ubuntu-latest'
+    runs-on: "ubuntu-latest"
 
     # Indicate that this job depends on the prior job finishing:
     needs: test_npm_install
@@ -323,9 +316,8 @@ jobs:
 
     # Define the sequence of job steps...
     steps:
-
       # Resolve notification data:
-      - name: 'Resolve notification data'
+      - name: "Resolve notification data"
         run: |
           echo 'NOTIFICATION_STATUS=${{ needs.test_npm_install.result}}' >> $GITHUB_ENV
           if [[ "${{ needs.test_npm_install.result }}" = "success" ]]; then
@@ -343,7 +335,7 @@ jobs:
         timeout-minutes: 5
 
       # Send notification to Slack:
-      - name: 'Send notification'
+      - name: "Send notification"
         # Pin action to full length commit SHA
         uses: 8398a7/action-slack@28ba43ae48961b90635b50953d216767a6bea486 # v3.16.2
         if: success()

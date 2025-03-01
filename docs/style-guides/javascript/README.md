@@ -35,7 +35,7 @@
 
 ## Introduction
 
-Always abide by the **Law of Code Style Consistency**, or, in other words, _when in Rome, do as the Romans do_. 
+Always abide by the **Law of Code Style Consistency**, or, in other words, _when in Rome, do as the Romans do_.
 
 While the code base to which you want to contribute may be a horrific mess in terms of aesthetic appearance and style, style consistency takes precedence over personal preference and canon. The more consistent a code base is in terms of style, the more readers of the code can focus on what the code does rather than deciphering changes in style.
 
@@ -47,13 +47,13 @@ Hopefully, most of the conventions outlined below will help enable you to do so.
 
 ## General Principles
 
--   Prefer standards to non-standards.
--   Do one thing and do one thing well.
--   Keep your code clean. Create feature branches for experimental development, extensive annotations, and/or alternative implementations.
+- Prefer standards to non-standards.
+- Do one thing and do one thing well.
+- Keep your code clean. Create feature branches for experimental development, extensive annotations, and/or alternative implementations.
 
 <!-- <rule-set> -->
 
-* * *
+---
 
 ## Whitespace
 
@@ -71,15 +71,15 @@ Hopefully, most of the conventions outlined below will help enable you to do so.
 
 ##### Notes
 
--   Even if you must use spaces, **never** mix tabs and spaces. This is formatting hell, as a simple find-and-replace is useless in the face of such chaos.
+- Even if you must use spaces, **never** mix tabs and spaces. This is formatting hell, as a simple find-and-replace is useless in the face of such chaos.
 
 ##### Enforcement
 
 This project contains an [`.editorconfig`][editorconfig] file to be used in conjunction with IDE and/or browser plugins.
 
--   [sublime text][sublime-text-editorconfig]
--   [atom][atom-editorconfig]
--   [chrome][chrome-editorconfig]
+- [sublime text][sublime-text-editorconfig]
+- [atom][atom-editorconfig]
+- [chrome][chrome-editorconfig]
 
 <!-- </rule> -->
 
@@ -97,7 +97,7 @@ Including `1` space before a leading brace improves readability.
 
 ```javascript
 // Do not...
-function query(){
+function query() {
     // Do something...
 }
 ```
@@ -131,7 +131,7 @@ Including `1` space before and after arguments improves readability.
 
 ```javascript
 // Do not...
-function test(arg1,arg2,arg3) {
+function test(arg1, arg2, arg3) {
     // Do something...
 }
 ```
@@ -140,7 +140,7 @@ function test(arg1,arg2,arg3) {
 
 ```javascript
 // Do...
-function test( arg1, arg2, arg3 ) {
+function test(arg1, arg2, arg3) {
     // Do something...
 }
 ```
@@ -170,16 +170,16 @@ var foo = bar[10];
 
 ```javascript
 // Do...
-var foo = bar[ 10 ];
+var foo = bar[10];
 ```
 
 ##### Notes
 
--   Use discretion when using spaces around `array` indices buried in braces.
+- Use discretion when using spaces around `array` indices buried in braces.
 
     ```javascript
     // Okay:
-    var foo = myFunction( ( a === b ) ? bar[0] : bar[1] );
+    var foo = myFunction(a === b ? bar[0] : bar[1]);
     ```
 
 ##### Enforcement
@@ -200,7 +200,7 @@ Including `1` space before and after operators improves readability.
 
 ```javascript
 // Do not...
-var a=1+1;
+var a = 1 + 1;
 ```
 
 ##### Good Example
@@ -212,14 +212,19 @@ var a = 1 + 1;
 
 ##### Notes
 
--   Use discretion when operators are contained within complex expressions and `string` concatenation.
+- Use discretion when operators are contained within complex expressions and `string` concatenation.
 
     ```javascript
     // Okay...
-    var str = 'This is a long string by '+firstName+' '+lastName+', which may keep going and going and...';
+    var str =
+        "This is a long string by " +
+        firstName +
+        " " +
+        lastName +
+        ", which may keep going and going and...";
 
     // Okay...
-    var n = ((x+y+z)*(t-w-v)) + 5;
+    var n = (x + y + z) * (t - w - v) + 5;
     ```
 
 ##### Enforcement
@@ -242,8 +247,8 @@ Immediate juxtaposition makes evident what is being affected.
 
 ```javascript
 // Do not...
-x = ++ y;
-z = z ++;
+x = ++y;
+z = z++;
 ```
 
 ##### Good Example
@@ -280,9 +285,9 @@ Including `1` space after comment marks improves readability.
 //This is a single-line comment.
 
 /*
-*This is a mult-
-*line comment.
-*/
+ *This is a mult-
+ *line comment.
+ */
 ```
 
 ##### Good Example
@@ -293,9 +298,9 @@ Including `1` space after comment marks improves readability.
 // This is a single-line comment.
 
 /*
-* This is a multi-
-* line comment.
-*/
+ * This is a multi-
+ * line comment.
+ */
 ```
 
 ##### Enforcement
@@ -330,10 +335,10 @@ Some IDEs have a tendency to auto-indent based on the previous line, thus pushin
 // Do...
 
 /*
-* This is a multi-line comment.
-* The comment continues and continues...
-* ...until it no longer does.
-*/
+ * This is a multi-line comment.
+ * The comment continues and continues...
+ * ...until it no longer does.
+ */
 ```
 
 ##### Enforcement
@@ -354,19 +359,26 @@ Indentation improves readability.
 
 ```javascript
 // Do not...
-var svg = d3.select( '.main' ).append( 'svg:svg' ).attr( 'class', 'canvas' ).attr( 'data-id', Date.now() ).attr( 'width', 100 ).attr( 'height', 100 );
+var svg = d3
+    .select(".main")
+    .append("svg:svg")
+    .attr("class", "canvas")
+    .attr("data-id", Date.now())
+    .attr("width", 100)
+    .attr("height", 100);
 ```
 
 ##### Good Example
 
 ```javascript
 // Do...
-var svg = d3.select( '.main' )
-    .append( 'svg:svg' )
-    .attr( 'class', 'canvas' )
-    .attr( 'data-id', Date.now() )
-    .attr( 'width', 100 )
-    .attr( 'height', 100 );
+var svg = d3
+    .select(".main")
+    .append("svg:svg")
+    .attr("class", "canvas")
+    .attr("data-id", Date.now())
+    .attr("width", 100)
+    .attr("height", 100);
 ```
 
 ##### Enforcement
@@ -387,10 +399,9 @@ Newline is unnecessary.
 
 ```javascript
 // Do not...
-if ( foo === bar ) {
+if (foo === bar) {
     // Do something...
-}
-else {
+} else {
     // Do something different...
 }
 ```
@@ -399,7 +410,7 @@ else {
 
 ```javascript
 // Do...
-if ( foo === bar ) {
+if (foo === bar) {
     // Do something...
 } else {
     // Do something different...
@@ -408,50 +419,47 @@ if ( foo === bar ) {
 
 ##### Notes
 
--   Use discretion when faced with multiple conditions.
+- Use discretion when faced with multiple conditions.
 
     ```javascript
     // Do...
-    if ( foo === bar ) {
+    if (foo === bar) {
         // Do something...
-    } else if ( foo === beep ) {
+    } else if (foo === beep) {
         // Do something else...
-    } else if ( bar === bar ) {
+    } else if (bar === bar) {
         // Do something more...
     } else {
         // Do something different...
     }
 
     // Okay...
-    if ( foo === bar ) {
+    if (foo === bar) {
         // Do something...
-    }
-    else if ( foo === beep ) {
+    } else if (foo === beep) {
         // Do something else...
-    }
-    else if ( baz === bar ) {
+    } else if (baz === bar) {
         // Do something more...
-    }
-    else {
+    } else {
         // Do something different...
     }
     ```
 
--   Use discretion when documenting conditions.
+- Use discretion when documenting conditions.
 
     ```javascript
     // Okay...
 
     // `bar` can only equal `foo` when...
-    if ( foo === bar ) {
+    if (foo === bar) {
         // Do something...
     }
     // `beep` can only equal `foo` when...
-    else if ( foo === beep ) {
+    else if (foo === beep) {
         // Do something else...
     }
     // This pathway should rarely be taken...
-    else if ( baz === bar ) {
+    else if (baz === bar) {
         // Do something more...
     }
     // `foo` equals `bap`
@@ -480,15 +488,15 @@ Indenting the `case` keyword within `switch` statements results in excessive ind
 
 ```javascript
 // Do not...
-switch ( foo ) {
-    case 'bar':
+switch (foo) {
+    case "bar":
         // Do something...
         break;
-    case 'beep':
+    case "beep":
         // Do something...
         break;
     default:
-        // Do something...
+    // Do something...
 }
 ```
 
@@ -496,14 +504,14 @@ switch ( foo ) {
 
 ```javascript
 // Do...
-switch ( foo ) {
-case 'bar':
-    // Do something...
-    break;
-case 'beep':
-    // Do something...
-    break;
-default:
+switch (foo) {
+    case "bar":
+        // Do something...
+        break;
+    case "beep":
+        // Do something...
+        break;
+    default:
     // Do something...
 }
 ```
@@ -518,7 +526,7 @@ TODO: ESLint rule
 
 <!-- <rule-set> -->
 
-* * *
+---
 
 ## Semicolons
 
@@ -536,7 +544,7 @@ While semicolons are [not required][ecma-262] in most cases due to [automatic se
 
 ```javascript
 // Do not...
-var bar = foo()
+var bar = foo();
 ```
 
 ##### Good Example
@@ -556,7 +564,7 @@ TODO: ESLint rule
 
 <!-- <rule-set> -->
 
-* * *
+---
 
 ## Parentheses
 
@@ -574,14 +582,14 @@ Including parentheses around the test condition in ternary operators improves re
 
 ```javascript
 // Do not...
-var foo = a === b ? a*3 : b/4;
+var foo = a === b ? a * 3 : b / 4;
 ```
 
 ##### Good Example
 
 ```javascript
 // Do...
-var foo = ( a === b ) ? a*3 : b/4;
+var foo = a === b ? a * 3 : b / 4;
 ```
 
 ##### Enforcement
@@ -594,7 +602,7 @@ TODO
 
 <!-- <rule-set> -->
 
-* * *
+---
 
 ## Variables
 
@@ -613,7 +621,7 @@ Doing so makes variable hoisting explicit.
 function myFunction() {
     var foo = 3;
 
-    if ( foo ) {
+    if (foo) {
         // Do something...
     }
     var bar = foo * 5;
@@ -628,7 +636,7 @@ function myFunction() {
     var foo = 3;
     var bar;
 
-    if ( foo ) {
+    if (foo) {
         // Do something...
     }
     bar = foo * 5;
@@ -655,7 +663,7 @@ Adding, removing, and reordering variables is easier. Additionally, `git` diffs 
 
 ```javascript
 // Do not...
-var boop = 'hello',
+var boop = "hello",
     beep = false,
     bar = null,
     foo = 3;
@@ -665,7 +673,7 @@ var boop = 'hello',
 
 ```javascript
 // Do...
-var boop = 'hello';
+var boop = "hello";
 var beep = false;
 var bar = null;
 var foo = 3;
@@ -691,8 +699,11 @@ Declaring variables on separate lines improves readability.
 
 ```javascript
 // Do not...
-var beep; var boop;
-var bop; var bap; var i;
+var beep;
+var boop;
+var bop;
+var bap;
+var i;
 ```
 
 ##### Good Example
@@ -786,7 +797,7 @@ Code review.
 
 <!-- <rule-set> -->
 
-* * *
+---
 
 ## Strings
 
@@ -811,7 +822,7 @@ var str = "Hello";
 
 ```javascript
 // Do...
-var str = 'Hello';
+var str = "Hello";
 ```
 
 ##### Enforcement
@@ -830,7 +841,7 @@ Immediate evaluation prevents a template being stored in a variable. Token synta
 
 ##### Notes
 
--   A function which performs string concatenation is equivalently effective.
+- A function which performs string concatenation is equivalently effective.
 
 ##### Enforcement
 
@@ -842,7 +853,7 @@ TODO: ESLint rule. Code review.
 
 <!-- <rule-set> -->
 
-* * *
+---
 
 ## Arrays
 
@@ -892,8 +903,8 @@ Allows compiler to pre-allocate memory.
 // Do not...
 var arr = [];
 var i;
-for ( i = 0; i < 100; i++ ) {
-    arr.push( Math.random() );
+for (i = 0; i < 100; i++) {
+    arr.push(Math.random());
 }
 ```
 
@@ -903,16 +914,16 @@ for ( i = 0; i < 100; i++ ) {
 
 ```javascript
 // Do...
-var arr = new Array( 100 );
+var arr = new Array(100);
 var i;
-for ( i = 0; i < arr.length; i++ ) {
-    arr[ i ] = Math.random();
+for (i = 0; i < arr.length; i++) {
+    arr[i] = Math.random();
 }
 ```
 
 ##### Notes
 
--   Do **not** use the `new` operator if the `array` length is **very large** due to how compilers handle "fast" elements. Instead, to ensure "fast" elements,
+- Do **not** use the `new` operator if the `array` length is **very large** due to how compilers handle "fast" elements. Instead, to ensure "fast" elements,
 
     <!-- eslint-disable stdlib/no-builtin-math -->
 
@@ -921,8 +932,8 @@ for ( i = 0; i < arr.length; i++ ) {
     var i;
 
     arr = [];
-    for ( i = 0; i < 1e7; i++ ) {
-        arr.push( Math.random() );
+    for (i = 0; i < 1e7; i++) {
+        arr.push(Math.random());
     }
     ```
 
@@ -944,7 +955,7 @@ More explicit and efficient. Additionally, passing the `arguments` object to any
 
 ```javascript
 // Do not...
-var args = Array.prototype.slice.call( arguments );
+var args = Array.prototype.slice.call(arguments);
 ```
 
 ##### Good Example
@@ -952,10 +963,10 @@ var args = Array.prototype.slice.call( arguments );
 ```javascript
 // Do...
 var nargs = arguments.length;
-var args = new Array( nargs );
+var args = new Array(nargs);
 var i;
-for ( i = 0; i < nargs; i++ ) {
-    args[ i ] = arguments[ i ];
+for (i = 0; i < nargs; i++) {
+    args[i] = arguments[i];
 }
 ```
 
@@ -971,7 +982,7 @@ Code review.
 
 ##### Reason
 
-When copying a small `array`, using `Array#slice()` incurs a function overhead which outweighs benefits. Thus, a `for` loop is more efficient. For larger `arrays`, function cost is comparable to or less than loop cost in addition to the runtime engine being able to optimize for copying large chunks of memory. 
+When copying a small `array`, using `Array#slice()` incurs a function overhead which outweighs benefits. Thus, a `for` loop is more efficient. For larger `arrays`, function cost is comparable to or less than loop cost in addition to the runtime engine being able to optimize for copying large chunks of memory.
 
 ##### Small Array Example
 
@@ -979,15 +990,15 @@ When copying a small `array`, using `Array#slice()` incurs a function overhead w
 
 ```javascript
 // Do...
-var arr = new Array( 10 );
-var out = new Array( arr.length );
+var arr = new Array(10);
+var out = new Array(arr.length);
 var i;
-for ( i = 0; i < arr.length; i++ ) {
-    arr[ i ] = Math.random();
+for (i = 0; i < arr.length; i++) {
+    arr[i] = Math.random();
 }
 // Copy...
-for ( i = 0; i < arr.length; i++ ) {
-    out[ i ] = arr[ i ];
+for (i = 0; i < arr.length; i++) {
+    out[i] = arr[i];
 }
 ```
 
@@ -997,11 +1008,11 @@ for ( i = 0; i < arr.length; i++ ) {
 
 ```javascript
 // Do...
-var arr = new Array( 10000 );
+var arr = new Array(10000);
 var out;
 var i;
-for ( i = 0; i < arr.length; i++ ) {
-    arr[ i ] = Math.random();
+for (i = 0; i < arr.length; i++) {
+    arr[i] = Math.random();
 }
 // Copy...
 out = arr.slice();
@@ -1017,7 +1028,7 @@ Code review.
 
 <!-- <rule-set> -->
 
-* * *
+---
 
 ## Objects
 
@@ -1035,7 +1046,14 @@ Splitting `object` properties over multiple lines improves readability.
 
 ```javascript
 // Do not...
-var obj = { 'a': null, 'b': 5, 'c': function c() { return true; }, 'd': ( foo === bar ) ? foo : bar };
+var obj = {
+    a: null,
+    b: 5,
+    c: function c() {
+        return true;
+    },
+    d: foo === bar ? foo : bar,
+};
 ```
 
 ##### Good Example
@@ -1045,12 +1063,12 @@ var obj = { 'a': null, 'b': 5, 'c': function c() { return true; }, 'd': ( foo ==
 ```javascript
 // Do...
 var obj = {
-    'a': null,
-    'b': 5,
-    'c': function c() {
+    a: null,
+    b: 5,
+    c: function c() {
         return true;
     },
-    'd': ( foo === bar ) ? foo : bar
+    d: foo === bar ? foo : bar,
 };
 ```
 
@@ -1075,9 +1093,9 @@ For complex `objects`, matching properties and their corresponding values become
 ```javascript
 // Do not...
 var obj = {
-    'prop'     : true,
-    'attribute': 'foo',
-    'name'     : 'bar'
+    prop: true,
+    attribute: "foo",
+    name: "bar",
 };
 ```
 
@@ -1086,9 +1104,9 @@ var obj = {
 ```javascript
 // Do...
 var obj = {
-    'prop': true,
-    'attribute': 'foo',
-    'name': 'bar'
+    prop: true,
+    attribute: "foo",
+    name: "bar",
 };
 ```
 
@@ -1113,9 +1131,9 @@ An object which includes a trailing comma is not valid JSON.
 ```javascript
 // Do not...
 var obj = {
-    'prop': true,
-    'attribute': 'foo',
-    'name': 'bar', // <= DON'T
+    prop: true,
+    attribute: "foo",
+    name: "bar", // <= DON'T
 };
 ```
 
@@ -1124,9 +1142,9 @@ var obj = {
 ```javascript
 // Do...
 var obj = {
-    'prop': true,
-    'attribute': 'foo',
-    'name': 'bar'
+    prop: true,
+    attribute: "foo",
+    name: "bar",
 };
 ```
 
@@ -1149,25 +1167,25 @@ Unnecessary syntactic sugar. In complex objects, shorthand notation decreases re
 <!-- eslint-disable object-property-newline, object-shorthand, object-curly-newline -->
 
 ```javascript
-var foo = 'beep';
+var foo = "beep";
 var x = true;
 var y = 10;
 
-var obj = { foo, 'baz': 'boop', x, y };
+var obj = { foo, baz: "boop", x, y };
 ```
 
 ##### Good Example
 
 ```javascript
-var foo = 'beep';
+var foo = "beep";
 var x = true;
 var y = 10;
 
 var obj = {
-    'foo': foo,
-    'baz': 'boop',
-    'x': x,
-    'y': y
+    foo: foo,
+    baz: "boop",
+    x: x,
+    y: y,
 };
 ```
 
@@ -1181,7 +1199,7 @@ TODO: ESLint rule. Code review.
 
 <!-- <rule-set> -->
 
-* * *
+---
 
 ## Functions
 
@@ -1200,7 +1218,7 @@ Declaring `functions` using [function statements][function-statements], rather t
 ```javascript
 // Do not...
 var beep = function () {
-    console.log( 'boop' );
+    console.log("boop");
 };
 ```
 
@@ -1209,7 +1227,7 @@ var beep = function () {
 ```javascript
 // Do...
 function beep() {
-    console.log( 'boop' );
+    console.log("boop");
 }
 ```
 
@@ -1272,12 +1290,12 @@ Declaring within loops and conditions may result in repeated function creation, 
 
 ```javascript
 // Do not...
-function beep( idx, clbk ) {
-    clbk( 'beep'+idx );
+function beep(idx, clbk) {
+    clbk("beep" + idx);
 }
-for ( var i = 0; i < 10; i++ ) {
-    beep( i, function bop( msg ) {
-        console.log( msg );
+for (var i = 0; i < 10; i++) {
+    beep(i, function bop(msg) {
+        console.log(msg);
     });
 }
 ```
@@ -1286,15 +1304,15 @@ for ( var i = 0; i < 10; i++ ) {
 
 ```javascript
 // Do...
-function beep( idx, clbk ) {
-    clbk( 'beep'+idx );
+function beep(idx, clbk) {
+    clbk("beep" + idx);
 }
-function bop( msg ) {
-    console.log( msg );
+function bop(msg) {
+    console.log(msg);
 }
 
-for ( var i = 0; i < 10; i++ ) {
-    beep( i, bop );
+for (var i = 0; i < 10; i++) {
+    beep(i, bop);
 }
 ```
 
@@ -1304,10 +1322,10 @@ for ( var i = 0; i < 10; i++ ) {
 
 ```javascript
 // Do not...
-for ( var i = 0; i < 10; i++ ) {
-    setTimeout( function onTimeout() {
-        console.log( i );
-    }, 1000 );
+for (var i = 0; i < 10; i++) {
+    setTimeout(function onTimeout() {
+        console.log(i);
+    }, 1000);
 }
 ```
 
@@ -1315,15 +1333,15 @@ for ( var i = 0; i < 10; i++ ) {
 
 ```javascript
 // Do...
-function clbk( idx ) {
+function clbk(idx) {
     return onTimeout;
 
     function onTimeout() {
-        console.log( idx );
+        console.log(idx);
     }
 }
-for ( var i = 0; i < 10; i++ ) {
-    setTimeout( clbk( i ), 1000 );
+for (var i = 0; i < 10; i++) {
+    setTimeout(clbk(i), 1000);
 }
 ```
 
@@ -1334,7 +1352,7 @@ for ( var i = 0; i < 10; i++ ) {
 ```javascript
 // Do not...
 var i = Math.random() * 20;
-if ( i < 11 ) {
+if (i < 11) {
     bap();
     function bap() {
         // Do something...
@@ -1352,7 +1370,7 @@ function bap() {
     // Do something...
 }
 var i = Math.random() * 20;
-if ( i < 11 ) {
+if (i < 11) {
     bap();
 }
 ```
@@ -1413,24 +1431,24 @@ Reduces noise when first attempting to understand implementation flow, especiall
 
 ```javascript
 // Don't...
-function getEquation( a, b, c ) {
+function getEquation(a, b, c) {
     /**
-    * Computes a complex equation.
-    *
-    * @private
-    * @param {number} e - dynamic value
-    * @returns {number} equation output
-    */
-    function eqn( e ) {
-        return e - d + ( 15 * a ) + ( Math.pow( b, 1 / c ) );
+     * Computes a complex equation.
+     *
+     * @private
+     * @param {number} e - dynamic value
+     * @returns {number} equation output
+     */
+    function eqn(e) {
+        return e - d + 15 * a + Math.pow(b, 1 / c);
     }
     var d;
 
     a *= 3;
     b = a / 5;
-    c = Math.pow( b, 3 );
+    c = Math.pow(b, 3);
 
-    d = a + ( b / c );
+    d = a + b / c;
 
     return eqn;
 }
@@ -1442,26 +1460,26 @@ function getEquation( a, b, c ) {
 
 ```javascript
 // Do...
-function getEquation( a, b, c ) {
+function getEquation(a, b, c) {
     var d;
 
     a *= 3;
     b = a / 5;
-    c = Math.pow( b, 3 );
+    c = Math.pow(b, 3);
 
-    d = a + ( b / c );
+    d = a + b / c;
 
     return eqn;
 
     /**
-    * Computes a complex equation.
-    *
-    * @private
-    * @param {number} e - dynamic value
-    * @returns {number} equation output
-    */
-    function eqn( e ) {
-        return e - d + ( 15 * a ) + ( Math.pow( b, 1 / c ) );
+     * Computes a complex equation.
+     *
+     * @private
+     * @param {number} e - dynamic value
+     * @returns {number} equation output
+     */
+    function eqn(e) {
+        return e - d + 15 * a + Math.pow(b, 1 / c);
     }
 }
 ```
@@ -1486,7 +1504,7 @@ Function calls introduce additional overhead and, often, functional counterparts
 
 ```javascript
 // Do not...
-var squared = arr.map( function square( value ) {
+var squared = arr.map(function square(value) {
     return value * value;
 });
 ```
@@ -1494,11 +1512,11 @@ var squared = arr.map( function square( value ) {
 ##### Good Example
 
 ```javascript
-var squared = new Array( arr.length );
+var squared = new Array(arr.length);
 
 // Do...
-for ( var i = 0; i < arr.length; i++ ) {
-    squared[ i ] = arr[ i ] * arr[ i ];
+for (var i = 0; i < arr.length; i++) {
+    squared[i] = arr[i] * arr[i];
 }
 ```
 
@@ -1520,16 +1538,22 @@ Code review.
 
 ```javascript
 // No braces:
-var f = x => x + 1;
+var f = (x) => x + 1;
 
 // Some braces:
 f = (x, y) => x + y;
 
 // Some other braces:
-f = x => { x += 20; return x.toString(); };
+f = (x) => {
+    x += 20;
+    return x.toString();
+};
 
 // Many braces:
-f = (x, y) => { x += y; return x.toString(); };
+f = (x, y) => {
+    x += y;
+    return x.toString();
+};
 ```
 
 (3) Implicit `returns` can lead to subtle bugs and require a constant mental model as to what is returned and when.
@@ -1567,17 +1591,17 @@ z = y( 10 );
 <!-- eslint-disable arrow-body-style, no-restricted-syntax, arrow-parens -->
 
 ```javascript
-var squared = arr.map( x => x*x );
+var squared = arr.map((x) => x * x);
 ```
 
 ##### Good Example
 
 ```javascript
-function square( x ) {
+function square(x) {
     return x * x;
 }
 
-var squared = arr.map( square );
+var squared = arr.map(square);
 ```
 
 ##### Enforcement
@@ -1598,30 +1622,33 @@ This follows the Node.js callback convention.
 
 ```javascript
 // Do...
-function clbk( error, value ) {
-    if ( error ) {
+function clbk(error, value) {
+    if (error) {
         return;
     }
-    console.log( value );
+    console.log(value);
 }
 
-function onResponse( error, response, body ) {
-    if ( error ) {
-        clbk( error );
+function onResponse(error, response, body) {
+    if (error) {
+        clbk(error);
         return;
     }
-    clbk( null, body );
+    clbk(null, body);
 }
 
-request({
-    'method': 'GET',
-    'uri': 'http://127.0.0.1'
-}, onResponse );
+request(
+    {
+        method: "GET",
+        uri: "http://127.0.0.1",
+    },
+    onResponse,
+);
 ```
 
 ##### Notes
 
--   If no errors, the `error` argument should be `null`.
+- If no errors, the `error` argument should be `null`.
 
 ##### Enforcement
 
@@ -1655,16 +1682,16 @@ Avoids nested callback hell.
 
 ```javascript
 // Do not...
-function deferredComputation( value ) {
+function deferredComputation(value) {
     return compute;
     function compute() {
         return cube();
         function cube() {
             var v;
-            v = mult( value, value );
-            v = mult( v, value );
+            v = mult(value, value);
+            v = mult(v, value);
             return v;
-            function mult( x, y ) {
+            function mult(x, y) {
                 return x * y;
             }
         }
@@ -1676,24 +1703,24 @@ function deferredComputation( value ) {
 
 ```javascript
 // Do...
-function mult( x, y ) {
+function mult(x, y) {
     return x * y;
 }
-function cube( value ) {
+function cube(value) {
     var v;
-    v = mult( value, value );
-    v = mult( v, value );
+    v = mult(value, value);
+    v = mult(v, value);
     return v;
 }
-function deferred( value ) {
+function deferred(value) {
     return compute;
 
     function compute() {
-        return cube( value );
+        return cube(value);
     }
 }
-function deferredComputation( value ) {
-    return deferred( value );
+function deferredComputation(value) {
+    return deferred(value);
 }
 ```
 
@@ -1718,12 +1745,12 @@ Named `functions` are easier to find in stack traces and consequently debug.
 ```javascript
 // Do not...
 
-function beep( f ) {
+function beep(f) {
     f();
 }
 
-beep( function () {
-    console.log( 'boop' );
+beep(function () {
+    console.log("boop");
 });
 ```
 
@@ -1732,14 +1759,14 @@ beep( function () {
 ```javascript
 // Do...
 
-function beep( f ) {
+function beep(f) {
     f();
 }
 function boop() {
-    console.log( 'boop' );
+    console.log("boop");
 }
 
-beep( boop );
+beep(boop);
 ```
 
 ##### Enforcement
@@ -1752,7 +1779,7 @@ TODO: ESLint rule
 
 <!-- <rule-set> -->
 
-* * *
+---
 
 ## Strict Mode
 
@@ -1769,18 +1796,18 @@ Writing JavaScript in [strict mode][strict-mode] discourages bad practices, avoi
 <!-- eslint-skip -->
 
 ```javascript
-'use strict';
+"use strict";
 
 NaN = null; // throws an Error
 ```
 
 ##### Notes
 
--   Prefer [strict mode][strict-mode] for a whole script. If not possible, use [strict mode][strict-mode] for each available `function`.
+- Prefer [strict mode][strict-mode] for a whole script. If not possible, use [strict mode][strict-mode] for each available `function`.
 
     ```javascript
     function beep() {
-        'use strict';
+        "use strict";
 
         delete Object.prototype; // throws an Error
     }
@@ -1796,7 +1823,7 @@ TODO: ESLint rule
 
 <!-- <rule-set> -->
 
-* * *
+---
 
 ## Arguments
 
@@ -1813,7 +1840,7 @@ Doing so automatically puts the `function` in optimization hell.
 ```javascript
 // Do not...
 function fcn() {
-    var out = foo( arguments );
+    var out = foo(arguments);
 }
 ```
 
@@ -1823,14 +1850,14 @@ function fcn() {
 // Do...
 function fcn() {
     var nargs = arguments.length;
-    var args = new Array( nargs );
+    var args = new Array(nargs);
     var out;
     var i;
 
-    for ( i = 0; i < nargs; i++ ) {
-        args[ i ] = arguments[ i ];
+    for (i = 0; i < nargs; i++) {
+        args[i] = arguments[i];
     }
-    out = foo( args );
+    out = foo(args);
 }
 ```
 
@@ -1852,13 +1879,13 @@ Recycling variables when mentioning `arguments` in a `function` body prevents co
 
 ```javascript
 // Do not...
-function fcn( value, options ) {
+function fcn(value, options) {
     var err;
-    if ( arguments.length < 2 ) {
+    if (arguments.length < 2) {
         options = value;
     }
-    err = validate( options );
-    if ( err ) {
+    err = validate(options);
+    if (err) {
         throw err;
     }
     // ...
@@ -1869,17 +1896,17 @@ function fcn( value, options ) {
 
 ```javascript
 // Do...
-function fcn( value, options ) {
+function fcn(value, options) {
     var opts;
     var err;
 
-    if ( arguments.length < 2 ) {
+    if (arguments.length < 2) {
         opts = value;
     } else {
         opts = options;
     }
-    err = validate( opts );
-    if ( err ) {
+    err = validate(opts);
+    if (err) {
         throw err;
     }
     // ...
@@ -1896,7 +1923,7 @@ TODO: ESLint rule
 
 <!-- <rule-set> -->
 
-* * *
+---
 
 ## Regular Expressions
 
@@ -1912,8 +1939,8 @@ Ensures a regular expression is only created once and improves readability.
 
 ```javascript
 // Do not...
-function beep( str ) {
-    if ( /\.+/.test( str ) ) {
+function beep(str) {
+    if (/\.+/.test(str)) {
         // Do something...
     }
 }
@@ -1927,8 +1954,8 @@ beep();
 // Do...
 var RE = /\.+/;
 
-function beep( str ) {
-    if ( RE.test( str ) ) {
+function beep(str) {
+    if (RE.test(str)) {
         // Do something...
     }
 }
@@ -1956,50 +1983,50 @@ Regular expressions are error prone and difficult to understand without thorough
 
 ```javascript
 /**
-* Matches parts of a regular expression string.
-*
-* Regular expression: `/^\/((?:\\\/|[^\/])+)\/([imgy]*)$/`
-*
-* `/^\/`
-*
-* -   match a string that begins with a `/`
-*
-* `()`
-*
-* -   capture
-*
-* `(?:)+`
-*
-* -   capture, but do not remember, a group of characters which occur one or more times
-*
-* `\\\/`
-*
-* -   match the literal `\/`
-*
-* `|`
-*
-* -   OR
-*
-* `[^\/]`
-*
-* -   anything which is not the literal `\/`
-*
-* `\/`
-*
-* -   match the literal `/`
-*
-* `([imgy]*)`
-*
-* -   capture any characters matching `imgy` occurring zero or more times
-*
-* `$/`
-*
-* -   string end
-*
-* @constant
-* @type {RegExp}
-* @default /^\/((?:\\\/|[^\/])+)\/([imgy]*)$/
-*/
+ * Matches parts of a regular expression string.
+ *
+ * Regular expression: `/^\/((?:\\\/|[^\/])+)\/([imgy]*)$/`
+ *
+ * `/^\/`
+ *
+ * -   match a string that begins with a `/`
+ *
+ * `()`
+ *
+ * -   capture
+ *
+ * `(?:)+`
+ *
+ * -   capture, but do not remember, a group of characters which occur one or more times
+ *
+ * `\\\/`
+ *
+ * -   match the literal `\/`
+ *
+ * `|`
+ *
+ * -   OR
+ *
+ * `[^\/]`
+ *
+ * -   anything which is not the literal `\/`
+ *
+ * `\/`
+ *
+ * -   match the literal `/`
+ *
+ * `([imgy]*)`
+ *
+ * -   capture any characters matching `imgy` occurring zero or more times
+ *
+ * `$/`
+ *
+ * -   string end
+ *
+ * @constant
+ * @type {RegExp}
+ * @default /^\/((?:\\\/|[^\/])+)\/([imgy]*)$/
+ */
 var RE = /^\/((?:\\\/|[^\/])+)\/([imgy]*)$/;
 ```
 
@@ -2013,7 +2040,7 @@ Code review.
 
 <!-- <rule-set> -->
 
-* * *
+---
 
 ## Blocks
 
@@ -2032,7 +2059,7 @@ Not using them is a common source of bugs.
 ```javascript
 // Do not...
 function beep() {
-    if ( foo === bar ) return true;
+    if (foo === bar) return true;
 }
 ```
 
@@ -2041,7 +2068,7 @@ function beep() {
 ```javascript
 // Do...
 function beep() {
-    if ( foo === bar ) {
+    if (foo === bar) {
         return true;
     }
 }
@@ -2065,13 +2092,11 @@ Avoids unnecessary newline character.
 
 ```javascript
 // Do not...
-if ( foo === bar )
-{
+if (foo === bar) {
     // Do something...
 }
 
-function query()
-{
+function query() {
     // Do something...
 }
 ```
@@ -2080,7 +2105,7 @@ function query()
 
 ```javascript
 // Do...
-if ( foo === bar ) {
+if (foo === bar) {
     // Do something...
 }
 
@@ -2107,12 +2132,12 @@ Doing so reduces code branching and indentation.
 
 ```javascript
 // Do not...
-function foo( value ) {
+function foo(value) {
     var str;
-    if ( value === 'bar' ) {
-        str = 'Hello';
+    if (value === "bar") {
+        str = "Hello";
     } else {
-        str = 'Goodbye';
+        str = "Goodbye";
     }
     return str;
 }
@@ -2122,11 +2147,11 @@ function foo( value ) {
 
 ```javascript
 // Do...
-function foo( value ) {
-    if ( value === 'bar' ) {
-        return 'Hello';
+function foo(value) {
+    if (value === "bar") {
+        return "Hello";
     }
-    return 'Goodbye';
+    return "Goodbye";
 }
 ```
 
@@ -2148,8 +2173,8 @@ Reduces code branching and indentation.
 
 ```javascript
 // Do not...
-for ( var i = 0; i < 10; i++ ) {
-    if ( i !== 5 ) {
+for (var i = 0; i < 10; i++) {
+    if (i !== 5) {
         // Do something...
     }
 }
@@ -2159,8 +2184,8 @@ for ( var i = 0; i < 10; i++ ) {
 
 ```javascript
 // Do...
-for ( var i = 0; i < 10; i++ ) {
-    if ( i === 5 ) {
+for (var i = 0; i < 10; i++) {
+    if (i === 5) {
         continue;
     }
     // Do something...
@@ -2177,7 +2202,7 @@ Code review.
 
 <!-- <rule-set> -->
 
-* * *
+---
 
 ## Equality
 
@@ -2195,7 +2220,7 @@ Not enforcing type equality is a source of bugs.
 
 ```javascript
 // Do not...
-if ( foo != bar ) {
+if (foo != bar) {
     // Do something...
 }
 ```
@@ -2204,7 +2229,7 @@ if ( foo != bar ) {
 
 ```javascript
 // Do...
-if ( foo === bar ) {
+if (foo === bar) {
     // Do something...
 }
 ```
@@ -2219,7 +2244,7 @@ TODO: ESLint rule
 
 <!-- <rule-set> -->
 
-* * *
+---
 
 ## Errors
 
@@ -2235,14 +2260,18 @@ Simplifies debugging.
 
 ```javascript
 // Do not...
-var err = new Error( '1' );
+var err = new Error("1");
 ```
 
 ##### Good Example
 
 ```javascript
 // Do...
-var err = new TypeError( 'invalid argument. Window option must be a positive integer. Value: `' + value + '`.' );
+var err = new TypeError(
+    "invalid argument. Window option must be a positive integer. Value: `" +
+        value +
+        "`.",
+);
 ```
 
 ##### Enforcement
@@ -2265,11 +2294,11 @@ Throw and provide tailored `error` messages if expected conditions are not met. 
 // Don't...
 
 /**
-* Beep boop.
-*
-* @param {Function} clbk - callback
-*/
-function boop( clbk ) {
+ * Beep boop.
+ *
+ * @param {Function} clbk - callback
+ */
+function boop(clbk) {
     clbk();
 }
 ```
@@ -2280,13 +2309,15 @@ function boop( clbk ) {
 // Do...
 
 /**
-* Beep boop.
-*
-* @param {Function} clbk - callback
-*/
-function beep( clbk ) {
-    if ( !arguments.length ) {
-        throw new Error( 'insufficient input arguments. Must provide a callback function.' );
+ * Beep boop.
+ *
+ * @param {Function} clbk - callback
+ */
+function beep(clbk) {
+    if (!arguments.length) {
+        throw new Error(
+            "insufficient input arguments. Must provide a callback function.",
+        );
     }
     clbk();
 }
@@ -2310,7 +2341,7 @@ For public facing APIs, dynamic type checking makes contracts explicit, facilita
 
 ```javascript
 // Do not...
-function bar( opts ) {
+function bar(opts) {
     // What happens if `opts` or `opts.ssl` are not objects???
     var key = opts.ssl.key;
 }
@@ -2320,37 +2351,45 @@ function bar( opts ) {
 
 ```javascript
 // Do...
-function foo( opts ) {
-    if ( !isObject( opts ) ) {
-        throw new TypeError( 'invalid argument. Options argument must be an object. Value: `' + opts + '`.' );
+function foo(opts) {
+    if (!isObject(opts)) {
+        throw new TypeError(
+            "invalid argument. Options argument must be an object. Value: `" +
+                opts +
+                "`.",
+        );
     }
 }
 ```
 
 ##### Notes
 
--   When performing dynamic type checks, **always** include the invalid value in the `error` message. Doing so makes debugging and logging easier.
+- When performing dynamic type checks, **always** include the invalid value in the `error` message. Doing so makes debugging and logging easier.
 
     ```javascript
     // Do...
-    function bop( len ) {
-        if ( !isPositiveInteger( len ) ) {
-            throw new TypeError( 'invalid argument. Length must be a positive integer. Value: `' + len + '`.' );
+    function bop(len) {
+        if (!isPositiveInteger(len)) {
+            throw new TypeError(
+                "invalid argument. Length must be a positive integer. Value: `" +
+                    len +
+                    "`.",
+            );
         }
     }
 
     // Do not...
-    function bap( len ) {
-        if ( !isPositiveInteger( len ) ) {
-            throw new Error( 'invalid value.' );
+    function bap(len) {
+        if (!isPositiveInteger(len)) {
+            throw new Error("invalid value.");
         }
     }
     ```
 
 ##### Enforcement
 
--   Unit tests
--   Code review
+- Unit tests
+- Code review
 
 <!-- </rule> -->
 
@@ -2366,10 +2405,10 @@ Not crashing upon encountering an [`uncaughtException`][uncaught-exception] leav
 
 ```javascript
 // DO NOT...
-function onError( error ) {
-    console.error( 'Caught exception. Err: %s', error.message );
+function onError(error) {
+    console.error("Caught exception. Err: %s", error.message);
 }
-process.on( 'uncaughtException', onError );
+process.on("uncaughtException", onError);
 ```
 
 ##### Okay Example
@@ -2378,11 +2417,11 @@ process.on( 'uncaughtException', onError );
 
 ```javascript
 // Okay...
-function onError( error ) {
-    console.error( 'Caught exception. Err: %s', error.message );
-    process.exit( 1 ); // <= THIS IS KEY!!!!
+function onError(error) {
+    console.error("Caught exception. Err: %s", error.message);
+    process.exit(1); // <= THIS IS KEY!!!!
 }
-process.on( 'uncaughtException', onError );
+process.on("uncaughtException", onError);
 ```
 
 ##### Enforcement
@@ -2403,10 +2442,10 @@ Designing asynchronous APIs in this fashion matches the [convention][errbacks] f
 
 ```javascript
 // Do not...
-function badAsync( clbk ) {
-    setTimeout( done, 1000 );
+function badAsync(clbk) {
+    setTimeout(done, 1000);
     function done() {
-        clbk( 'beep' );
+        clbk("beep");
     }
 }
 ```
@@ -2415,10 +2454,10 @@ function badAsync( clbk ) {
 
 ```javascript
 // Do...
-function goodAsync( clbk ) {
-    setTimeout( done, 1000 );
+function goodAsync(clbk) {
+    setTimeout(done, 1000);
     function done() {
-        clbk( null, 'beep' );
+        clbk(null, "beep");
     }
 }
 ```
@@ -2441,23 +2480,19 @@ Code review.
 
 ```javascript
 // Do not...
-response
-    .send( 200 )
-    .json({
-        'success': false
-    });
+response.send(200).json({
+    success: false,
+});
 ```
 
 ##### Good Example
 
 ```javascript
 // Do...
-response
-    .status( 502 )
-    .json({
-        'status': 502,
-        'message': 'unable to connect to remote database.'
-    });
+response.status(502).json({
+    status: 502,
+    message: "unable to connect to remote database.",
+});
 ```
 
 ##### Enforcement
@@ -2470,7 +2505,7 @@ Code review.
 
 <!-- <rule-set> -->
 
-* * *
+---
 
 ## Comments
 
@@ -2491,7 +2526,7 @@ Fewer characters per line compared to using multiple single-line comment identif
 //
 // @param {number} x - first argument
 // @param {number} y - second argument
-function beep( x, y ) {
+function beep(x, y) {
     // Do something...
 }
 ```
@@ -2502,12 +2537,12 @@ function beep( x, y ) {
 // Do...
 
 /**
-* Beep boop.
-*
-* @param {number} x - first argument
-* @param {number} y - second argument
-*/
-function beep( x, y ) {
+ * Beep boop.
+ *
+ * @param {number} x - first argument
+ * @param {number} y - second argument
+ */
+function beep(x, y) {
     // Do something...
 }
 ```
@@ -2530,8 +2565,8 @@ Code review.
 
 ```javascript
 // Do not...
-function transform( str ) {
-    return str + ' has been transformed.';
+function transform(str) {
+    return str + " has been transformed.";
 }
 ```
 
@@ -2541,24 +2576,24 @@ function transform( str ) {
 // Do...
 
 /**
-* String transformer.
-*
-* @param {string} str - string to be transformed.
-* @returns {string} transformed string
-*
-* @example
-* var out = transform( 'beep' );
-* // returns 'beep has been transformed.'
-*/
-function transform( str ) {
-    return str + ' has been transformed.';
+ * String transformer.
+ *
+ * @param {string} str - string to be transformed.
+ * @returns {string} transformed string
+ *
+ * @example
+ * var out = transform( 'beep' );
+ * // returns 'beep has been transformed.'
+ */
+function transform(str) {
+    return str + " has been transformed.";
 }
 ```
 
 ##### Notes
 
--   Be sure to include parameters, parameter types, return types (if any), errors (if any can be thrown), and examples.
--   Use Markdown syntax for extended comments.
+- Be sure to include parameters, parameter types, return types (if any), errors (if any can be thrown), and examples.
+- Use Markdown syntax for extended comments.
 
 ##### Enforcement
 
@@ -2594,7 +2629,7 @@ var foo = bar || null;
 
 ##### Notes
 
--   In general, prefer placing the comment above the comment subject and place an empty line above the comment.
+- In general, prefer placing the comment above the comment subject and place an empty line above the comment.
 
     <!-- eslint-disable stdlib/empty-line-before-comment -->
 
@@ -2603,11 +2638,11 @@ var foo = bar || null;
     var foo = bar || null; // bar can be `0`
 
     // Do not...
-    var beep = 'beep';
+    var beep = "beep";
     // Comment about `boop`...
-    var boop = 'boop';
+    var boop = "boop";
     // Comment about `bap`...
-    var bap = 'bap';
+    var bap = "bap";
     ```
 
 ##### Enforcement
@@ -2633,7 +2668,7 @@ Use `// FIXME:` to annotate problems.
 ```javascript
 function foo() {
     // FIXME: misses the case where value is 0. Want to check if value is not numeric.
-    if ( !value ) {
+    if (!value) {
         return false;
     }
 }
@@ -2648,7 +2683,7 @@ Use `// TODO:` to annotate tasks.
 ```javascript
 function Ctor() {
     // TODO: make `name` property value publicly accessible.
-    this.name = 'foobar';
+    this.name = "foobar";
 
     return this;
 }
@@ -2662,7 +2697,7 @@ Use `// HACK:` to annotate fragile/non-general solutions.
 
 ```javascript
 // HACK: temporary fix; host and port should be abstracted to another module handling configuration.
-var host = '127.0.0.1';
+var host = "127.0.0.1";
 var port = 7331;
 ```
 
@@ -2674,7 +2709,7 @@ Use `// WARNING:` to annotate possible gotchas/pitfalls.
 
 ```javascript
 // WARNING: shared reference of a mutable object; possible side effects.
-var a = b = {};
+var a = (b = {});
 ```
 
 ##### OPTIMIZE
@@ -2685,11 +2720,11 @@ Use `// OPTIMIZE:` to annotate code which needs optimizing.
 
 ```javascript
 // OPTIMIZE: use a loop rather than recursion
-function factorial( x ) {
-    if ( x <= 1 ) {
+function factorial(x) {
+    if (x <= 1) {
         return 1;
     }
-    return x * factorial( x-1 );
+    return x * factorial(x - 1);
 }
 ```
 
@@ -2701,9 +2736,9 @@ Use `// NOTE:` to annotate questions, comments, or anything which does not fit u
 
 ```javascript
 // NOTE: consider optimizing this for large arrays (len > 64K).
-var arr = new Array( len );
-for ( var i = 0; i < len; i++ ) {
-    arr[ i ] = Math.random();
+var arr = new Array(len);
+for (var i = 0; i < len; i++) {
+    arr[i] = Math.random();
 }
 ```
 
@@ -2717,7 +2752,7 @@ Code review.
 
 <!-- <rule-set> -->
 
-* * *
+---
 
 ## Naming
 
@@ -2774,7 +2809,7 @@ Standard JavaScript convention for constructors and classes.
 ```javascript
 // Do not...
 function roboRobot() {
-    this.name = 'Boop';
+    this.name = "Boop";
     return this;
 }
 
@@ -2786,7 +2821,7 @@ var robo = new roboRobot();
 ```javascript
 // Do...
 function RoboRobot() {
-    this.name = 'Beep';
+    this.name = "Beep";
     return this;
 }
 
@@ -2848,32 +2883,38 @@ Named `functions` are easier to find in stack traces and consequently debug.
 
 ```javascript
 // Do not...
-request({
-    'method': 'GET',
-    'uri': 'http://127.0.0.1'
-}, function ( error, response, body ) {
-    if ( error ) {
-        throw error;
-    }
-    // Do something...
-});
+request(
+    {
+        method: "GET",
+        uri: "http://127.0.0.1",
+    },
+    function (error, response, body) {
+        if (error) {
+            throw error;
+        }
+        // Do something...
+    },
+);
 ```
 
 ##### Good Example
 
 ```javascript
 // Do...
-function onResponse( error, response, body ) {
-    if ( error ) {
+function onResponse(error, response, body) {
+    if (error) {
         throw error;
     }
     // Do something...
 }
 
-request({
-    'method': 'GET',
-    'uri': 'http://127.0.0.1'
-}, onResponse );
+request(
+    {
+        method: "GET",
+        uri: "http://127.0.0.1",
+    },
+    onResponse,
+);
 ```
 
 ##### Bad Example
@@ -2882,19 +2923,19 @@ request({
 
 ```javascript
 // Do not...
-var arr = [ 1, 2, 3 ];
-var out = arr.map( x => x * x );
+var arr = [1, 2, 3];
+var out = arr.map((x) => x * x);
 ```
 
 ##### Good Example
 
 ```javascript
 // Do...
-function square( x ) {
+function square(x) {
     return x * x;
 }
-var arr = [ 1, 2, 3 ];
-var out = arr.map( square );
+var arr = [1, 2, 3];
+var out = arr.map(square);
 ```
 
 ##### Enforcement
@@ -2949,7 +2990,7 @@ Code review.
 
 <!-- <rule-set> -->
 
-* * *
+---
 
 ## This
 
@@ -2963,10 +3004,10 @@ Common JavaScript convention when caching a reference to `this`.
 
 ```javascript
 // Do...
-function Robot( name ) {
+function Robot(name) {
     var self = this;
-    if ( !(this instanceof Robot) ) {
-        return new Robot( name );
+    if (!(this instanceof Robot)) {
+        return new Robot(name);
     }
     this.name = name;
     this.greet = greet;
@@ -2974,7 +3015,7 @@ function Robot( name ) {
     return this;
 
     function greet() {
-        return 'Hello! My name is ' + self.name + '.';
+        return "Hello! My name is " + self.name + ".";
     }
 }
 ```
@@ -3003,11 +3044,11 @@ function greet() {
 
 function Robot() {
     var fcn;
-    if ( !(this instanceof Robot) ) {
+    if (!(this instanceof Robot)) {
         return new Robot();
     }
-    this.name = 'Beep';
-    this.greet = greet.bind( this );
+    this.name = "Beep";
+    this.greet = greet.bind(this);
     return this;
 }
 ```
@@ -3016,20 +3057,20 @@ function Robot() {
 
 ```javascript
 // Do...
-function greeting( ctx ) {
+function greeting(ctx) {
     return greet;
 
     function greet() {
-        return 'Hello! My name is ' + ctx.name + '.';
+        return "Hello! My name is " + ctx.name + ".";
     }
 }
 
 function Robot() {
-    if ( !(this instanceof Robot) ) {
+    if (!(this instanceof Robot)) {
         return new Robot();
     }
-    this.name = 'Beep';
-    this.greet = greeting( this );
+    this.name = "Beep";
+    this.greet = greeting(this);
     return this;
 }
 ```
@@ -3044,7 +3085,7 @@ Code review.
 
 <!-- <rule-set> -->
 
-* * *
+---
 
 ## Classes
 
@@ -3073,7 +3114,7 @@ var robo = createRobot(); // => fails
 ```javascript
 // Do...
 function Robot() {
-    if ( !(this instanceof Robot) ) {
+    if (!(this instanceof Robot)) {
         return new Robot();
     }
     return this;
@@ -3087,8 +3128,8 @@ var robo = createRobot();
 
 ##### Enforcement
 
--   Unit tests
--   Code review
+- Unit tests
+- Code review
 
 <!-- </rule> -->
 
@@ -3096,7 +3137,7 @@ var robo = createRobot();
 
 <!-- <rule-set> -->
 
-* * *
+---
 
 ## Setters and Getters
 
@@ -3114,9 +3155,13 @@ Simplifies a class interface.
 
 ```javascript
 // Do not...
-Robot.prototype.setName = function set( name ) {
-    if ( typeof name !== 'string' ) {
-        throw new Error( 'invalid input value. Name must be a string. Value: `' + name + '`.' );
+Robot.prototype.setName = function set(name) {
+    if (typeof name !== "string") {
+        throw new Error(
+            "invalid input value. Name must be a string. Value: `" +
+                name +
+                "`.",
+        );
     }
     this._name = name;
     return this;
@@ -3133,12 +3178,16 @@ Robot.prototype.getName = function get() {
 
 ```javascript
 // Do...
-Robot.prototype.name = function robotName( name ) {
-    if ( !arguments.length ) {
+Robot.prototype.name = function robotName(name) {
+    if (!arguments.length) {
         return this._name;
     }
-    if ( typeof name !== 'string' ) {
-        throw new Error( 'invalid input value. Name must be a string. Value: `' + name + '`.' );
+    if (typeof name !== "string") {
+        throw new Error(
+            "invalid input value. Name must be a string. Value: `" +
+                name +
+                "`.",
+        );
     }
     this._name = name;
     return this;
@@ -3165,8 +3214,8 @@ While checks do incur computational cost, not providing such checks can entail a
 
 ```javascript
 // Do not...
-Stream.prototype.window = function streamWindow( win ) {
-    if ( !arguments.length ) {
+Stream.prototype.window = function streamWindow(win) {
+    if (!arguments.length) {
         return this._window;
     }
     this._window = win;
@@ -3180,15 +3229,23 @@ Stream.prototype.window = function streamWindow( win ) {
 
 ```javascript
 // Do...
-Stream.prototype.window = function streamWindow( win ) {
-    if ( !arguments.length ) {
+Stream.prototype.window = function streamWindow(win) {
+    if (!arguments.length) {
         return this._window;
     }
-    if ( typeof win !== 'number' || win !== win ) {
-        throw new Error( 'invalid argument. Window size must be numeric. Value: `' + win + '`.' );
+    if (typeof win !== "number" || win !== win) {
+        throw new Error(
+            "invalid argument. Window size must be numeric. Value: `" +
+                win +
+                "`.",
+        );
     }
-    if ( Math.floor( win ) !== win || win <= 0 ) {
-        throw new Error( 'invalid argument. Window size must be a positive integer. Value: `' + win + '`.' );
+    if (Math.floor(win) !== win || win <= 0) {
+        throw new Error(
+            "invalid argument. Window size must be a positive integer. Value: `" +
+                win +
+                "`.",
+        );
     }
     this._window = win;
     return this;
@@ -3205,7 +3262,7 @@ Code review.
 
 <!-- <rule-set> -->
 
-* * *
+---
 
 ## Method Chaining
 
@@ -3223,31 +3280,31 @@ Returning `this` enables method chaining and creates a [fluent interface][fluent
 
 ```javascript
 function Robot() {
-    if ( !(this instanceof Robot) ) {
+    if (!(this instanceof Robot)) {
         return new Robot();
     }
-    this._name = '';
-    this._color = 'black';
+    this._name = "";
+    this._color = "black";
     return this;
 }
 
-Robot.prototype.name = function robotName( name ) {
-    if ( !arguments.length ) {
+Robot.prototype.name = function robotName(name) {
+    if (!arguments.length) {
         return this._name;
     }
-    if ( typeof name !== 'string' ) {
-        throw new Error( 'invalid input value.' );
+    if (typeof name !== "string") {
+        throw new Error("invalid input value.");
     }
     this._name = name;
     return this;
 };
 
-Robot.prototype.color = function robotColor( color ) {
-    if ( !arguments.length ) {
+Robot.prototype.color = function robotColor(color) {
+    if (!arguments.length) {
         return this._color;
     }
-    if ( typeof color !== 'string' ) {
-        throw new Error( 'invalid input value.' );
+    if (typeof color !== "string") {
+        throw new Error("invalid input value.");
     }
     this._color = color;
     return this;
@@ -3255,8 +3312,7 @@ Robot.prototype.color = function robotColor( color ) {
 
 var robo = new Robot();
 
-robo.name( 'Robo' )
-    .color( 'pink' );
+robo.name("Robo").color("pink");
 ```
 
 ##### Enforcement
@@ -3269,7 +3325,7 @@ Code review.
 
 <!-- <rule-set> -->
 
-* * *
+---
 
 ## Documentation
 
@@ -3289,9 +3345,9 @@ Code is read more often than it is written. Prefer too much documentation to too
 // Do not...
 
 /**
-* Calculates auto-correlation.
-*/
-function autocorr( vector ) {
+ * Calculates auto-correlation.
+ */
+function autocorr(vector) {
     // Calculate...
 }
 ```
@@ -3304,29 +3360,29 @@ function autocorr( vector ) {
 // Do...
 
 /**
-* Calculate the auto-correlation of an input vector. To calculate the auto-correlation using an FFT, the data is padded to have length 2^n, where `n` is the next power of 2 greater than the vector length. For more details, consult [link][link].
-*
-* [link]: http://example.com
-*
-* @param {number[]} vector - 1d array
-* @returns {number} auto-correlation
-*
-* @example
-* var arr = [ 1, 6, 5, 4, 7, 2, 3, 1 ];
-* var v = autocorr( arr );
-*/
-function autocorr( vector ) {
+ * Calculate the auto-correlation of an input vector. To calculate the auto-correlation using an FFT, the data is padded to have length 2^n, where `n` is the next power of 2 greater than the vector length. For more details, consult [link][link].
+ *
+ * [link]: http://example.com
+ *
+ * @param {number[]} vector - 1d array
+ * @returns {number} auto-correlation
+ *
+ * @example
+ * var arr = [ 1, 6, 5, 4, 7, 2, 3, 1 ];
+ * var v = autocorr( arr );
+ */
+function autocorr(vector) {
     // Calculate...
 }
 ```
 
 ##### Notes
 
--   For client-side JavaScript, if you are concerned about file size, build/include a distributable file, stripped of comments and minified. Keep source code annotated.
--   **Always** include example/demo code that is easily runnable.
--   Do **not** claim that your code is self-documenting. Your code is not. **Period.**
--   Do **not** rely on tests as your **sole** source of documentation. While tests are documentation, annotating your source provides greater insight and a means to explain why you made particular design choices.
--   **Always** make your documentation **beautiful**. Take as much pride in your documentation as you do in your code.
+- For client-side JavaScript, if you are concerned about file size, build/include a distributable file, stripped of comments and minified. Keep source code annotated.
+- **Always** include example/demo code that is easily runnable.
+- Do **not** claim that your code is self-documenting. Your code is not. **Period.**
+- Do **not** rely on tests as your **sole** source of documentation. While tests are documentation, annotating your source provides greater insight and a means to explain why you made particular design choices.
+- **Always** make your documentation **beautiful**. Take as much pride in your documentation as you do in your code.
 
 ##### Enforcement
 
@@ -3338,7 +3394,7 @@ Code review.
 
 <!-- <rule-set> -->
 
-* * *
+---
 
 ## Performance
 
@@ -3354,7 +3410,7 @@ Performance optimization, particularly of the premature variety, often comes wit
 
 ```javascript
 // Do not...
-var y = ( x >> 0 );
+var y = x >> 0;
 
 // Avoid using a bitshift unless you really need to. Possible subtle bug in the above is that `x` is converted to a signed 32-bit integer.
 ```
@@ -3365,12 +3421,12 @@ var y = ( x >> 0 );
 
 ```javascript
 // Do...
-var y = Math.floor( x );
+var y = Math.floor(x);
 ```
 
 ##### Notes
 
--   Take JSPerf tests with a grain of salt, as results can vary significantly from browser to browser and across browser versions.
+- Take JSPerf tests with a grain of salt, as results can vary significantly from browser to browser and across browser versions.
 
 ##### Enforcement
 
@@ -3382,7 +3438,7 @@ Code review.
 
 <!-- <rule-set> -->
 
-* * *
+---
 
 ## Modularity
 
@@ -3394,15 +3450,15 @@ Testing, debugging, maintainability, composition, focused interfaces, and interc
 
 ##### Notes
 
--   Every file within a Node module should be **less than** `200` lines of code. The only exceptions are tests files, which are generally 2-3x the length of the files they test. If a file is longer than `200` lines, the code is undoubtedly too complex, not maintainable, hard to test, and needs to be refactored into smaller sub-modules. Ideally, an individual file should **never** be longer than `80` lines.
--   Prefer only **1** `function` per file. A file which contains fewer functions is easier to test, read, and maintain. This is particularly **true** for Node modules.
--   **Always** bear in mind the single responsibility principle.
--   **Always** strive for reusability.
+- Every file within a Node module should be **less than** `200` lines of code. The only exceptions are tests files, which are generally 2-3x the length of the files they test. If a file is longer than `200` lines, the code is undoubtedly too complex, not maintainable, hard to test, and needs to be refactored into smaller sub-modules. Ideally, an individual file should **never** be longer than `80` lines.
+- Prefer only **1** `function` per file. A file which contains fewer functions is easier to test, read, and maintain. This is particularly **true** for Node modules.
+- **Always** bear in mind the single responsibility principle.
+- **Always** strive for reusability.
 
 ##### Enforcement
 
--   Look for parts of an implementation which can be extracted into reusable components.
--   Code review 
+- Look for parts of an implementation which can be extracted into reusable components.
+- Code review
 
 <!-- </rule> -->
 
@@ -3410,7 +3466,7 @@ Testing, debugging, maintainability, composition, focused interfaces, and interc
 
 <!-- <rule-set> -->
 
-* * *
+---
 
 ## Client-side JavaScript
 
@@ -3424,14 +3480,14 @@ Relying on monolithic libraries, such as jQuery, for DOM manipulation leads to c
 
 ```javascript
 // Do not...
-var el = jQuery( '#main' );
+var el = jQuery("#main");
 ```
 
 ##### Good Example
 
 ```javascript
 // Do...
-var el = document.querySelector( '#main' );
+var el = document.querySelector("#main");
 ```
 
 ##### Enforcement
@@ -3455,9 +3511,9 @@ Prevents variable leakage.
 ```javascript
 // Do...
 (function foo() {
-    'use strict';
+    "use strict";
 
-    var beep = 'boop';
+    var beep = "boop";
 
     // ...
 })();
@@ -3486,7 +3542,7 @@ Helps minimize global variable name collisions.
 window.start = function start() {
     // Do something...
 };
-window.name = 'App';
+window.name = "App";
 ```
 
 ##### Good Example
@@ -3496,7 +3552,7 @@ window.name = 'App';
 ```javascript
 // Do...
 var myApp = {};
-myApp.name = 'App';
+myApp.name = "App";
 myApp.start = function start() {
     // Do something...
 };
@@ -3514,7 +3570,7 @@ Code review.
 
 <!-- <rule-set> -->
 
-* * *
+---
 
 ## Dependencies
 
@@ -3528,11 +3584,11 @@ Often, more focused modules are available which can accomplish the same task. In
 
 ##### Notes
 
--   In particular, avoid the following libraries:
+- In particular, avoid the following libraries:
 
-    -   underscore
-    -   lodash
-    -   async
+    - underscore
+    - lodash
+    - async
 
 ##### Enforcement
 
@@ -3550,21 +3606,21 @@ Any dependency you use becomes **your** responsibility. Demand the same level of
 
 ##### Notes
 
--   While GitHub stars and downloads are rough indicators, place more emphasis on the following:
+- While GitHub stars and downloads are rough indicators, place more emphasis on the following:
 
-    -   Code quality
+    - Code quality
 
-        -   conciseness
-        -   maintainability
+        - conciseness
+        - maintainability
 
-    -   Documentation
+    - Documentation
 
-        -   APIs
-        -   examples
+        - APIs
+        - examples
 
-    -   Test cases
+    - Test cases
 
--   For most cases, do **not** place much weight on how recently the module was updated. Small, focused, well-written modules should not require much updating.
+- For most cases, do **not** place much weight on how recently the module was updated. Small, focused, well-written modules should not require much updating.
 
 ##### Enforcement
 
@@ -3574,15 +3630,15 @@ Code review.
 
 <!-- </rule-set> -->
 
-* * *
+---
 
 ## Additional Resources
 
--   [Airbnb JavaScript Style Guide][airbnb]
--   [Idiomatic.js][idiomatic-js]
--   [Popular Convention][popular-convention]
--   [JavaScript Quality Guide][quality-guide]
--   [Unix Philosophy][unix-philosophy]
+- [Airbnb JavaScript Style Guide][airbnb]
+- [Idiomatic.js][idiomatic-js]
+- [Popular Convention][popular-convention]
+- [JavaScript Quality Guide][quality-guide]
+- [Unix Philosophy][unix-philosophy]
 
 ## License
 
@@ -3591,49 +3647,27 @@ This document may be reused under a [Creative Commons Attribution-ShareAlike Lic
 <section class="links">
 
 [tab-indentation]: http://lea.verou.me/2012/01/why-tabs-are-clearly-superior/
-
 [sublime-text]: http://www.sublimetext.com/
-
 [editorconfig]: http://editorconfig.org/
-
 [sublime-text-editorconfig]: https://github.com/sindresorhus/editorconfig-sublime
-
 [atom-editorconfig]: https://github.com/sindresorhus/atom-editorconfig
-
 [chrome-editorconfig]: https://chrome.google.com/webstore/detail/github-editorconfig/bppnolhdpdfmmpeefopdbpmabdpoefjh?hl=en-US
-
 [ecma-262]: http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf
-
 [function-statements]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function
-
 [function-expressions]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function
-
 [hoisting]: https://github.com/buildfirst/buildfirst/tree/master/ch05/04_hoisting
-
 [strict-mode]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
-
 [uncaught-exception]: https://nodejs.org/api/process.html#process_event_uncaughtexception
-
 [errbacks]: https://nodejs.org/api/fs.html
-
 [http-status-codes]: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
-
 [jsdoc]: https://jsdoc.app/
-
 [fluent-interface]: https://en.wikipedia.org/wiki/Fluent_interface
-
 [native-dom-equivalents]: http://www.sitepoint.com/jquery-vs-raw-javascript-1-dom-forms/
-
 [airbnb]: https://github.com/airbnb/javascript
-
 [idiomatic-js]: https://github.com/rwaldron/idiomatic.js/
-
 [popular-convention]: http://sideeffect.kr/popularconvention/#javascript
-
 [quality-guide]: https://github.com/bevacqua/js
-
 [unix-philosophy]: http://www.catb.org/~esr/writings/taoup/html/ch01s06.html
-
 [license]: https://creativecommons.org/licenses/by-sa/4.0/
 
 </section>

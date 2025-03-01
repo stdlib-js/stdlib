@@ -28,7 +28,7 @@ limitations under the License.
 
 Pre-built binaries are available for download on the Visual Studio Code [homepage][vscode].
 
-To use [Visual Studio Code][vscode] as a command-line utility, users on MacOS have to run a command to add the [Visual Studio Code][vscode] executable to the `PATH` environment variable (see the official [documentation][vscode-macos-setup]). 
+To use [Visual Studio Code][vscode] as a command-line utility, users on MacOS have to run a command to add the [Visual Studio Code][vscode] executable to the `PATH` environment variable (see the official [documentation][vscode-macos-setup]).
 
 To test the command-line utility,
 
@@ -45,19 +45,19 @@ $ code .
 
 ## Extensions
 
--   [**EditorConfig**][vscode-editorconfig]: extension for using [EditorConfig][editorconfig], which helps define and maintain consistent coding styles between different editors and IDEs.
+- [**EditorConfig**][vscode-editorconfig]: extension for using [EditorConfig][editorconfig], which helps define and maintain consistent coding styles between different editors and IDEs.
 
--   [**JSON Tools**][vscode-json-tools]: extension for pretty printing and minifying [JSON][json].
+- [**JSON Tools**][vscode-json-tools]: extension for pretty printing and minifying [JSON][json].
 
--   [**Julia**][vscode-julia]: extension which provides support for [Julia][julia], including syntax highlighting, snippets, and code completion.
+- [**Julia**][vscode-julia]: extension which provides support for [Julia][julia], including syntax highlighting, snippets, and code completion.
 
--   [**Python**][vscode-python]: extension which provides rich support for [Python][python], including syntax highlighting, snippets, and code completion, among other features.
+- [**Python**][vscode-python]: extension which provides rich support for [Python][python], including syntax highlighting, snippets, and code completion, among other features.
 
--   [**AWK**][vscode-awk]: extension which provides syntax highlighting for [AWK][awk].
+- [**AWK**][vscode-awk]: extension which provides syntax highlighting for [AWK][awk].
 
--   [**C/C++**][vscode-cpptools]: official extension providing language support for C/C++ to [Visual Studio Code][vscode]. Features include IntelliSense, debugging, and code browsing.
+- [**C/C++**][vscode-cpptools]: official extension providing language support for C/C++ to [Visual Studio Code][vscode]. Features include IntelliSense, debugging, and code browsing.
 
--   [**Fortran**][vscode-fortran]: extension which provides syntax highlighting and snippets for [Fortran][fortran]. Once installed, configure [Visual Studio Code][vscode] to always open files having the file extension `*.f` as `Fortran - Modern` in your user or workspace settings.
+- [**Fortran**][vscode-fortran]: extension which provides syntax highlighting and snippets for [Fortran][fortran]. Once installed, configure [Visual Studio Code][vscode] to always open files having the file extension `*.f` as `Fortran - Modern` in your user or workspace settings.
 
     ```text
             ...
@@ -67,9 +67,9 @@ $ code .
             ...
     ```
 
--   [**Code Spell Checker**][vscode-spell-checker]: A simple source code spell checker. See the [official documentation][vscode-spell-checker-readme] for configuration options.
+- [**Code Spell Checker**][vscode-spell-checker]: A simple source code spell checker. See the [official documentation][vscode-spell-checker-readme] for configuration options.
 
--   [**ESLint**][vscode-eslint]: extension to integrate [eslint][eslint] into [Visual Studio Code][vscode]. Once installed, you need to configure the extension to use the project [ESLint][eslint] configuration files in your workspace settings.
+- [**ESLint**][vscode-eslint]: extension to integrate [eslint][eslint] into [Visual Studio Code][vscode]. Once installed, you need to configure the extension to use the project [ESLint][eslint] configuration files in your workspace settings.
 
     ```text
             ...
@@ -79,11 +79,11 @@ $ code .
             ...
     ```
 
--   [**Path Intellisense**][vscode-path-intellisense]: extension that autocompletes filenames.
+- [**Path Intellisense**][vscode-path-intellisense]: extension that autocompletes filenames.
 
--   [**Runner**][vscode-runner]: extension allowing one to run various scripts from the editor.
+- [**Runner**][vscode-runner]: extension allowing one to run various scripts from the editor.
 
--   [**TODO Highlight**][vscode-todo-highlight]: extension which marks annotations such as `TODO`, `FIXME`, etc. Once installed, you may configure the extension to your liking in your user or workspace settings, e.g. by specifying the list of keywords to be highlighted.
+- [**TODO Highlight**][vscode-todo-highlight]: extension which marks annotations such as `TODO`, `FIXME`, etc. Once installed, you may configure the extension to your liking in your user or workspace settings, e.g. by specifying the list of keywords to be highlighted.
 
     ```text
             ...
@@ -113,7 +113,7 @@ $ code .
                 {
                     "text": "TODO:",
                     "color": "darkred",
-                    "backgroundColor": "rgba(0,0,0,.2)", 
+                    "backgroundColor": "rgba(0,0,0,.2)",
                     "isWholeLine": true
                 },
                 {
@@ -129,47 +129,26 @@ $ code .
 <section class="links">
 
 [vscode]: https://code.visualstudio.com/
-
 [vscode-macos-setup]: https://code.visualstudio.com/docs/setup/mac
-
 [vscode-eslint]: https://github.com/Microsoft/vscode-eslint
-
 [vscode-spell-checker]: https://github.com/Jason-Rev/vscode-spell-checker
-
 [vscode-spell-checker-readme]: https://github.com/Jason-Rev/vscode-spell-checker/blob/master/client/README.md
-
 [vscode-path-intellisense]: https://github.com/ChristianKohler/PathIntellisense
-
 [vscode-todo-highlight]: https://github.com/wayou/vscode-todo-highlight
-
 [vscode-editorconfig]: https://github.com/editorconfig/editorconfig-vscode
-
 [vscode-json-tools]: https://marketplace.visualstudio.com/items?itemName=eriklynd.json-tools#overview
-
 [vscode-python]: https://github.com/Microsoft/vscode-python
-
 [vscode-julia]: https://github.com/JuliaEditorSupport/julia-vscode
-
 [vscode-awk]: https://github.com/luggage66/vscode-awk
-
 [vscode-cpptools]: https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools
-
 [vscode-fortran]: https://github.com/Gimly/vscode-fortran
-
 [vscode-runner]: https://github.com/mattn/vscode-runner
-
 [eslint]: https://eslint.org/
-
 [json]: http://www.json.org/
-
 [editorconfig]: http://editorconfig.org/
-
 [python]: https://www.python.org/
-
 [julia]: https://julialang.org/
-
 [awk]: https://en.wikipedia.org/wiki/AWK
-
 [fortran]: https://en.wikipedia.org/wiki/Fortran
 
 </section>

@@ -36,40 +36,40 @@ The third major theme is data visualization. Building on the first and second th
 
 The fourth major theme is automation. Automation is critical for the project's ability to scale and to streamline the development experience. This work will make stdlib one of the most innovative and developer friendly open source projects.
 
-Last, the final theme is documentation. Part of this effort will be continuing to build a web presence and demonstrating the need and importance for stdlib. This work will enable the project to grow and attract both users and contributors.   
+Last, the final theme is documentation. Part of this effort will be continuing to build a web presence and demonstrating the need and importance for stdlib. This work will enable the project to grow and attract both users and contributors.
 
 ## Details
 
 ### Multi-dimensional Arrays
 
--   broadcasting semantics
--   ndarray engine for element-wise operations
--   ndarray engine for axis-wise operations
--   add vectorized array APIs
+- broadcasting semantics
+- ndarray engine for element-wise operations
+- ndarray engine for axis-wise operations
+- add vectorized array APIs
 
 ### Native Implementations
 
--   BLAS bindings
--   BLAS ports (JavaScript and C)
--   LAPACK bindings
--   LAPACK ports (JavaScript and C)
+- BLAS bindings
+- BLAS ports (JavaScript and C)
+- LAPACK bindings
+- LAPACK ports (JavaScript and C)
 
 ### Data Visualization
 
--   Additional chart types (bar, column, histogram)
--   ASCII engine
--   Canvas engine (including PNG output)
+- Additional chart types (bar, column, histogram)
+- ASCII engine
+- Canvas engine (including PNG output)
 
 ### Automation
 
--   Performance improvements to continuous integration environments
--   Browser testing
--   Package scaffolding tools
--   Package decomposition (independent package publishing)
+- Performance improvements to continuous integration environments
+- Browser testing
+- Package scaffolding tools
+- Package decomposition (independent package publishing)
 
 ### Documentation
 
--   Website
--   Source code (JSDoc)
--   Blog posts
--   Tutorials
+- Website
+- Source code (JSDoc)
+- Blog posts
+- Tutorials

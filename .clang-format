@@ -856,11 +856,11 @@ IncludeCategories:
     Priority: 3
 
   # Built-in headers (e.g., `<stdint.h>`) should always come at the end...
-  - Regex: '<[[:alnum:].]+>'
+  - Regex: "<[[:alnum:].]+>"
     Priority: 4
 
   # All other headers (e.g., those resolved using relative paths) should come first...
-  - Regex: '.*'
+  - Regex: ".*"
     Priority: 1
 
 #/

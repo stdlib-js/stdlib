@@ -37,7 +37,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var todo = require( '@stdlib/<TODO: module path>' );
+var todo = require("@stdlib/<TODO: module path>");
 ```
 
 #### todo( TODO )
@@ -45,7 +45,7 @@ var todo = require( '@stdlib/<TODO: module path>' );
 TODO
 
 ```javascript
-var v = todo( 0.0 );
+var v = todo(0.0);
 // returns TODO
 ```
 
@@ -70,7 +70,7 @@ var v = todo( 0.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var todo = require( '@stdlib/<TODO: module path>' );
+var todo = require("@stdlib/<TODO: module path>");
 
 todo();
 ```

@@ -42,7 +42,7 @@ To package as a command-line tool, add the following to the platform-specific co
 
 ```bash
 tab() {
-    echo -n -e "\033]0;$*\007"   
+    echo -n -e "\033]0;$*\007"
 }
 ```
 
@@ -64,10 +64,10 @@ $ ls -R ./root/directory | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' 
 
 where
 
--   `-R`: recursively list subdirectories.
--   `s/[^-][^\/]*\//--/g`: replace directory path segments with `--`.
--   `s/^/   /`: indent.
--   `s/--/|/`: replace the first `--` with a vertical bar.
+- `-R`: recursively list subdirectories.
+- `s/[^-][^\/]*\//--/g`: replace directory path segments with `--`.
+- `s/^/   /`: indent.
+- `s/--/|/`: replace the first `--` with a vertical bar.
 
 ### git
 
@@ -95,7 +95,7 @@ where `-F` indicates to search for a fixed string. To search using a regular exp
 
 #### Exclusion
 
-To exclude paths when using `find`, use membership inversion 
+To exclude paths when using `find`, use membership inversion
 
 ```bash
 $ find -type f -name foo.txt -regextype posix-extended -regex '.*/foo/([^b]+|(b([^a]|$)|ba([^r]|$)))+/.*'
@@ -113,10 +113,10 @@ $ perl -pi -w -e 's/search/replace/g;' $(find ./search/directory -type f)
 
 where
 
--   `-e`: execute the command
--   `-w`: write warnings
--   `-p`: execute for each file
--   `-i`: edit in-place
+- `-e`: execute the command
+- `-w`: write warnings
+- `-p`: execute for each file
+- `-i`: edit in-place
 
 If you encounter an error due to too many arguments, use `xargs`.
 
@@ -132,8 +132,8 @@ $ find "$PWD" -type f '!' -path "$PWD/.*" '!' -path "$PWD/deps/*" '!' -path "$PW
 
 A few comments:
 
--   For simple cases, [`sed`][sed-find-and-replace] may be faster.
--   Be **very** careful when performing a multi-file find and in-place replace. Perform dry-runs and confirm expected results on a small file subset **before** performing on many files. You have been **warned**.
+- For simple cases, [`sed`][sed-find-and-replace] may be faster.
+- Be **very** careful when performing a multi-file find and in-place replace. Perform dry-runs and confirm expected results on a small file subset **before** performing on many files. You have been **warned**.
 
 ### Reorganization
 
@@ -160,7 +160,6 @@ $ find $PWD/path/to/parent/directory -type d -depth 1 -regex ".*" | while read -
 <section class="links">
 
 [sed-find-and-replace]: http://stackoverflow.com/questions/11392478/how-to-replace-a-string-in-multiple-files-in-linux-command-line
-
 [bash-profile]: http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_01.html
 
 </section>

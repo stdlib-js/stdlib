@@ -1,30 +1,29 @@
-'use strict';
+"use strict";
 
 /**
-* Transforms `returns` doclet elements.
-*
-* @param {Object[]} nodes - doclet elements
-* @returns {Object} filtered object
-*/
-function transform( nodes ) {
+ * Transforms `returns` doclet elements.
+ *
+ * @param {Object[]} nodes - doclet elements
+ * @returns {Object} filtered object
+ */
+function transform(nodes) {
 	var type;
 	var desc;
-	if ( nodes.type ) {
-		if ( nodes.type.names.length === 1 ) {
-			type = nodes.type.names[ 0 ];
+	if (nodes.type) {
+		if (nodes.type.names.length === 1) {
+			type = nodes.type.names[0];
 		} else {
 			type = nodes.type.names;
 		}
 	} else {
-		type = '';
+		type = "";
 	}
-	desc = nodes.description || '';
+	desc = nodes.description || "";
 	return {
-		'type': type,
-		'description': desc
+		type: type,
+		description: desc,
 	};
 }
-
 
 // EXPORTS //
 

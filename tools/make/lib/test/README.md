@@ -56,8 +56,8 @@ $ make test
 
 The command supports the following environment variables:
 
--   **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
--   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
+- **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
+- **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
 
 <!-- run-disable -->
 
@@ -77,8 +77,8 @@ $ make test-files FILES='/foo/test.js /bar/test.js'
 
 The command supports the following environment variables:
 
--   **FILES**: list of test file paths.
--   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
+- **FILES**: list of test file paths.
+- **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
 
 #### test-local
 
@@ -92,8 +92,8 @@ $ make test-local
 
 The command supports the following environment variables:
 
--   **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
--   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
+- **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
+- **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
 
 <!-- run-disable -->
 
@@ -113,8 +113,8 @@ $ make test-files-local FILES='/foo/test.js /bar/test.js'
 
 The command supports the following environment variables:
 
--   **FILES**: list of test file paths.
--   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
+- **FILES**: list of test file paths.
+- **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
 
 #### test-summary
 
@@ -128,8 +128,8 @@ $ make test-summary
 
 The command supports the following environment variables:
 
--   **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
--   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
+- **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
+- **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
 
 <!-- run-disable -->
 
@@ -149,8 +149,8 @@ $ make test-files-summary FILES='/foo/test.js /bar/test.js'
 
 The command supports the following environment variables:
 
--   **FILES**: list of test file paths.
--   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
+- **FILES**: list of test file paths.
+- **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
 
 #### test-tap
 
@@ -164,8 +164,8 @@ $ make test-tap
 
 The command supports the following environment variables:
 
--   **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
--   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
+- **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
+- **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
 
 <!-- run-disable -->
 
@@ -185,8 +185,8 @@ $ make test-files-tap FILES='/foo/test.js /bar/test.js'
 
 The command supports the following environment variables:
 
--   **FILES**: list of test file paths.
--   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
+- **FILES**: list of test file paths.
+- **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
 
 #### test-xunit
 
@@ -200,8 +200,8 @@ $ make test-xunit
 
 The command supports the following environment variables:
 
--   **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
--   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
+- **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
+- **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
 
 <!-- run-disable -->
 
@@ -221,10 +221,10 @@ $ make test-files-xunit FILES='/foo/test.js /bar/test.js'
 
 The command supports the following environment variables:
 
--   **FILES**: list of test file paths.
--   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
+- **FILES**: list of test file paths.
+- **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
 
-* * *
+---
 
 ### JavaScript
 
@@ -240,8 +240,8 @@ $ make test-javascript
 
 The command supports the following environment variables:
 
--   **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
--   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
+- **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
+- **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
 
 <!-- run-disable -->
 
@@ -261,8 +261,8 @@ $ make test-javascript-files FILES='/foo/test.js /bar/test.js'
 
 The command supports the following environment variables:
 
--   **FILES**: list of test file paths.
--   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
+- **FILES**: list of test file paths.
+- **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
 
 #### test-javascript-local
 
@@ -276,8 +276,8 @@ $ make test-javascript-local
 
 The command supports the following environment variables:
 
--   **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
--   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
+- **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
+- **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
 
 <!-- run-disable -->
 
@@ -297,8 +297,8 @@ $ make test-javascript-files-local FILES='/foo/test.js /bar/test.js'
 
 The command supports the following environment variables:
 
--   **FILES**: list of test file paths.
--   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
+- **FILES**: list of test file paths.
+- **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
 
 #### test-javascript-summary
 
@@ -312,8 +312,8 @@ $ make test-javascript-summary
 
 The command supports the following environment variables:
 
--   **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
--   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
+- **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
+- **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
 
 <!-- run-disable -->
 
@@ -333,8 +333,8 @@ $ make test-javascript-files-summary FILES='/foo/test.js /bar/test.js'
 
 The command supports the following environment variables:
 
--   **FILES**: list of test file paths.
--   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
+- **FILES**: list of test file paths.
+- **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
 
 #### test-javascript-min
 
@@ -348,8 +348,8 @@ $ make test-javascript-min
 
 The command supports the following environment variables:
 
--   **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
--   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
+- **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
+- **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
 
 <!-- run-disable -->
 
@@ -369,8 +369,8 @@ $ make test-javascript-files-min FILES='/foo/test.js /bar/test.js'
 
 The command supports the following environment variables:
 
--   **FILES**: list of test file paths.
--   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
+- **FILES**: list of test file paths.
+- **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
 
 #### test-javascript-tap
 
@@ -384,8 +384,8 @@ $ make test-javascript-tap
 
 The command supports the following environment variables:
 
--   **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
--   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
+- **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
+- **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
 
 <!-- run-disable -->
 
@@ -405,8 +405,8 @@ $ make test-javascript-files-tap FILES='/foo/test.js /bar/test.js'
 
 The command supports the following environment variables:
 
--   **FILES**: list of test file paths.
--   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
+- **FILES**: list of test file paths.
+- **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
 
 #### test-javascript-xunit
 
@@ -420,8 +420,8 @@ $ make test-javascript-xunit
 
 The command supports the following environment variables:
 
--   **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
--   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
+- **TESTS_FILTER**: file path pattern; e.g., `.*/blas/base/dasum/.*`.
+- **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
 
 <!-- run-disable -->
 
@@ -441,8 +441,8 @@ $ make test-javascript-files-xunit FILES='/foo/test.js /bar/test.js'
 
 The command supports the following environment variables:
 
--   **FILES**: list of test file paths.
--   **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
+- **FILES**: list of test file paths.
+- **FAST_FAIL**: flag indicating whether to stop running tests upon encountering a test failure.
 
 </section>
 
@@ -450,15 +450,15 @@ The command supports the following environment variables:
 
 <!-- Section to include notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
-* * *
+---
 
 <section class="notes">
 
 ## Notes
 
--   Commands supporting a `FILES` environment variable are useful when wanting to run a list of test files generated by some other command (e.g., a list of changed test files obtained via `git diff`).
--   Commands supporting a `TESTS_FILTER` environment variable are useful when wanting to glob for test files (e.g., run all tests for a particular package).
--   For `-local` commands, "local" refers to the local development environment, as opposed to running in a headless browser or on CI.
+- Commands supporting a `FILES` environment variable are useful when wanting to run a list of test files generated by some other command (e.g., a list of changed test files obtained via `git diff`).
+- Commands supporting a `TESTS_FILTER` environment variable are useful when wanting to glob for test files (e.g., run all tests for a particular package).
+- For `-local` commands, "local" refers to the local development environment, as opposed to running in a headless browser or on CI.
 
 </section>
 

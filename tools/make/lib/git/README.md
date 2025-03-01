@@ -107,7 +107,6 @@ This is useful for fixing commit messages which contain errors or do not adhere 
 <section class="links">
 
 [make]: https://www.gnu.org/software/make/
-
 [stdlib-style-guides-git]: https://github.com/stdlib-js/stdlib/blob/develop/docs/style-guides/git
 
 </section>

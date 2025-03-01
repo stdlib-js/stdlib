@@ -23,7 +23,7 @@ name: markdown_links
 on:
   schedule:
     # Run the workflow once a month on the 1st day of every month:
-    - cron: '0 0 1 * *'
+    - cron: "0 0 1 * *"
 
   # Allow the workflow to be manually run:
   workflow_dispatch:
@@ -35,12 +35,10 @@ permissions:
 
 # Workflow jobs:
 jobs:
-
   # Define a job for detecting broken links in Markdown files...
   markdown_links:
-
     # Define a display name:
-    name: 'Check links'
+    name: "Check links"
 
     # Ensure the job does not run on forks:
     if: github.repository == 'stdlib-js/stdlib'
@@ -62,9 +60,8 @@ jobs:
 
     # Define the sequence of job steps...
     steps:
-
       # Checkout the repository:
-      - name: 'Checkout repository'
+      - name: "Checkout repository"
         # Pin action to full length commit SHA
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
@@ -82,7 +79,7 @@ jobs:
         timeout-minutes: 10
 
       # Initialize log files:
-      - name: 'Initialize log files'
+      - name: "Initialize log files"
         run: |
           mkdir -p "${{ env.LOG_DIR }}"
           touch "${{ env.LOG_FILE_FAILURES }}"
@@ -90,7 +87,7 @@ jobs:
         timeout-minutes: 2
 
       # Check for broken links:
-      - name: 'Check links'
+      - name: "Check links"
         uses: stdlib-js/check-markdown-link-definitions-action@main
         id: results
         with:
@@ -98,27 +95,27 @@ jobs:
         timeout-minutes: 240
 
       # Install Node.js:
-      - name: 'Install Node.js'
+      - name: "Install Node.js"
         # Pin action to full length commit SHA
         uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
         with:
-          node-version: '20' # 'lts/*'
+          node-version: "20" # 'lts/*'
         timeout-minutes: 5
 
       # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
-      - name: 'Install dependencies'
+      - name: "Install dependencies"
         run: |
           make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 15
 
       # Initialize development environment:
-      - name: 'Initialize development environment'
+      - name: "Initialize development environment"
         run: |
           make init
         timeout-minutes: 5
 
       # Check whether links are included in `docs/links/database.json` and use the correct identifier:
-      - name: 'Check links against database'
+      - name: "Check links against database"
         run: |
           # Determine root directory:
           root=$(git rev-parse --show-toplevel)
@@ -141,20 +138,20 @@ jobs:
           fi
 
       # Log the results:
-      - name: 'Log results'
+      - name: "Log results"
         run: |
           echo ${{ steps.results.outputs.failures }} >> "${{ env.LOG_FILE_FAILURES }}"
           echo ${{ steps.results.outputs.warnings }} >> "${{ env.LOG_FILE_WARNINGS }}"
         timeout-minutes: 2
 
       # Fail the workflow if the status is not "success":
-      - name: 'Check status'
+      - name: "Check status"
         if: ${{ steps.results.outputs.status }} != 'success'
         run: |
           exit 1
 
       # View the log file if the previous step fails:
-      - name: 'View log file'
+      - name: "View log file"
         if: failure()
         run: |
           echo "Printing the list of failures..."
@@ -162,7 +159,7 @@ jobs:
         timeout-minutes: 5
 
       # Upload the log files:
-      - name: 'Upload log files'
+      - name: "Upload log files"
         # Pin action to full length commit SHA
         uses: actions/upload-artifact@65c4c4a1ddee5b72f698fdd19549f0f0fb45cf08 # v4.6.0
         if: always()
@@ -181,12 +178,11 @@ jobs:
 
   # Define a job for sending notifications to Slack...
   slack:
-
     # Define a display name:
-    name: 'Slack notification'
+    name: "Slack notification"
 
     # Define the type of virtual host machine:
-    runs-on: 'ubuntu-latest'
+    runs-on: "ubuntu-latest"
 
     # Indicate that this job depends on the prior job finishing:
     needs: markdown_links
@@ -202,9 +198,8 @@ jobs:
 
     # Define the sequence of job steps...
     steps:
-
       # Resolve notification data:
-      - name: 'Resolve notification data'
+      - name: "Resolve notification data"
         run: |
           echo 'NOTIFICATION_STATUS=${{ needs.markdown_links.result}}' >> $GITHUB_ENV
           if [[ "${{ needs.markdown_links.result }}" = "success" ]]; then
@@ -222,7 +217,7 @@ jobs:
         timeout-minutes: 5
 
       # Send notification to Slack:
-      - name: 'Send notification'
+      - name: "Send notification"
         # Pin action to full length commit SHA
         uses: 8398a7/action-slack@28ba43ae48961b90635b50953d216767a6bea486 # v3.16.2
         if: success()

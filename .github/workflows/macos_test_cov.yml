@@ -32,7 +32,6 @@ on:
 
 # Workflow concurrency group:
 concurrency:
-
   # Specify a group name:
   group: ${{ github.workflow }}
 
@@ -46,10 +45,8 @@ permissions:
 
 # Workflow jobs:
 jobs:
-
   # Define a job for determining test coverage on macOS...
   test_cov:
-
     # Define a display name:
     name: "Node.js v${{ matrix.NODE_VERSION }}"
 
@@ -61,14 +58,14 @@ jobs:
 
     # Define environment variables:
     env:
-      FC: 'gfortran'
-      FORTRAN_COMPILER: 'gfortran'
-      CC: 'gcc'
-      C_COMPILER: 'gcc'
-      CXX: 'g++'
-      CXX_COMPILER: 'g++'
-      LINKER: 'g++'
-      GITHUB: 'true'
+      FC: "gfortran"
+      FORTRAN_COMPILER: "gfortran"
+      CC: "gcc"
+      C_COMPILER: "gcc"
+      CXX: "g++"
+      CXX_COMPILER: "g++"
+      LINKER: "g++"
+      GITHUB: "true"
       LOG_DIR: "${{ github.workspace }}/tmp/var/log"
       LOG_FILE_INSTALL: "${{ github.workspace }}/tmp/var/log/install.log"
       LOG_FILE_BUILD_TASK: "${{ github.workspace }}/tmp/var/log/${{ matrix.BUILD_TASK }}.log"
@@ -76,35 +73,33 @@ jobs:
 
     # Define the build matrix strategy...
     strategy:
-
       # Specify whether to cancel all in-progress jobs if any matrix job fails:
       fail-fast: false
 
       # Define the build matrix:
       matrix:
-
         # Define the list of build tasks:
-        BUILD_TASK: ['test-coverage']
+        BUILD_TASK: ["test-coverage"]
 
         # Define the list of Node.js versions:
-        NODE_VERSION: ['16', '14', '12']
+        NODE_VERSION: ["16", "14", "12"]
 
         # Define the list of operating systems:
-        OS: ['macOS-latest']
+        OS: ["macOS-latest"]
 
         # Define configuration options for each Node.js version:
         include:
-          - OS: 'macOS-latest'
-            PLATFORM: 'macos'
+          - OS: "macOS-latest"
+            PLATFORM: "macos"
 
-          - NODE_VERSION: '16'
-            NPM_VERSION: '>2.7.0'
+          - NODE_VERSION: "16"
+            NPM_VERSION: ">2.7.0"
 
-          - NODE_VERSION: '14'
-            NPM_VERSION: '>2.7.0'
+          - NODE_VERSION: "14"
+            NPM_VERSION: ">2.7.0"
 
-          - NODE_VERSION: '12'
-            NPM_VERSION: '>2.7.0'
+          - NODE_VERSION: "12"
+            NPM_VERSION: ">2.7.0"
 
           # - NODE_VERSION: '10'
           #   NPM_VERSION: '>2.7.0 <7.0.0'
@@ -132,9 +127,8 @@ jobs:
 
     # Define the sequence of job steps...
     steps:
-
       # Checkout the repository:
-      - name: 'Checkout repository'
+      - name: "Checkout repository"
         # Pin action to full length commit SHA
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
@@ -149,7 +143,7 @@ jobs:
         timeout-minutes: 10
 
       # Initialize log files:
-      - name: 'Initialize log files'
+      - name: "Initialize log files"
         run: |
           mkdir -p "${{ env.LOG_DIR }}"
           touch "${{ env.LOG_FILE_INSTALL }}"
@@ -157,14 +151,14 @@ jobs:
         timeout-minutes: 2
 
       # Install compilers:
-      - name: 'Install compilers'
+      - name: "Install compilers"
         run: |
           brew update
           brew reinstall gcc
         timeout-minutes: 10
 
       # Install Node.js:
-      - name: 'Install Node.js'
+      - name: "Install Node.js"
         # Pin action to full length commit SHA
         uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
         with:
@@ -172,7 +166,7 @@ jobs:
         timeout-minutes: 5
 
       # Print debug info:
-      - name: 'Print debug info'
+      - name: "Print debug info"
         run: |
           echo 'PATH:'
           echo $PATH
@@ -200,20 +194,20 @@ jobs:
         timeout-minutes: 2
 
       # Update the npm client (older clients cannot handle scoped modules):
-      - name: 'Update npm'
+      - name: "Update npm"
         run: |
           npm install -g npm@"${{ matrix.NPM_VERSION }}"
           npm --version
         timeout-minutes: 5
 
       # Perform install sequence:
-      - name: 'Perform install sequence'
+      - name: "Perform install sequence"
         run: |
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/task_runner" install "${{ env.LOG_FILE_INSTALL }}"
         timeout-minutes: 30
 
       # View the log file if the previous step fails:
-      - name: 'View log file'
+      - name: "View log file"
         if: failure()
         run: |
           echo "Printing the last ${{ env.LOG_NUM_LINES }} lines of log output..."
@@ -221,13 +215,13 @@ jobs:
         timeout-minutes: 5
 
       # Run the build task:
-      - name: 'Run build task'
+      - name: "Run build task"
         run: |
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/task_runner" ${{ matrix.BUILD_TASK }} "${{ env.LOG_FILE_BUILD_TASK }}"
         timeout-minutes: 360
 
       # View the log file if the previous step fails:
-      - name: 'View log file'
+      - name: "View log file"
         if: failure()
         run: |
           echo "Printing the last ${{ env.LOG_NUM_LINES }} lines of log output..."
@@ -235,7 +229,7 @@ jobs:
         timeout-minutes: 5
 
       # Upload the log file:
-      - name: 'Upload log file'
+      - name: "Upload log file"
         # Pin action to full length commit SHA
         uses: actions/upload-artifact@65c4c4a1ddee5b72f698fdd19549f0f0fb45cf08 # v4.6.0
         if: always()
@@ -252,12 +246,11 @@ jobs:
 
   # Define a job for sending notifications to Slack...
   slack:
-
     # Define a display name:
-    name: 'Slack notification'
+    name: "Slack notification"
 
     # Define the type of virtual host machine:
-    runs-on: 'ubuntu-latest'
+    runs-on: "ubuntu-latest"
 
     # Indicate that this job depends on the prior job finishing:
     needs: test_cov
@@ -273,9 +266,8 @@ jobs:
 
     # Define the sequence of job steps...
     steps:
-
       # Resolve notification data:
-      - name: 'Resolve notification data'
+      - name: "Resolve notification data"
         run: |
           echo 'NOTIFICATION_STATUS=${{ needs.test_cov.result}}' >> $GITHUB_ENV
           if [[ "${{ needs.test_cov.result }}" = "success" ]]; then
@@ -293,7 +285,7 @@ jobs:
         timeout-minutes: 5
 
       # Send notification to Slack:
-      - name: 'Send notification'
+      - name: "Send notification"
         # Pin action to full length commit SHA
         uses: 8398a7/action-slack@28ba43ae48961b90635b50953d216767a6bea486 # v3.16.2
         if: success()

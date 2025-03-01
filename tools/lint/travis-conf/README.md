@@ -22,7 +22,7 @@ Usage: <lint> <filepath>
 
 ### Notes
 
--   The provided `filepath` should be an absolute file path.
+- The provided `filepath` should be an absolute file path.
 
 </section>
 

@@ -34,54 +34,54 @@ So, without further ado, let's get you started!
 
 Developing and running stdlib **requires** the following prerequisites:
 
--   [Git][git]: version control
+- [Git][git]: version control
 
--   [GNU make][make]: development utility and task runner
+- [GNU make][make]: development utility and task runner
 
--   [GNU bash][bash]: an sh-compatible shell
+- [GNU bash][bash]: an sh-compatible shell
 
--   [curl][curl], [wget][wget], or [fetch][fetch] (FreeBSD): utilities for downloading remote resources
+- [curl][curl], [wget][wget], or [fetch][fetch] (FreeBSD): utilities for downloading remote resources
 
--   [Node.js][node-js]: JavaScript runtime (version `>= 0.10`; although the latest stable version is **strongly** recommended)
+- [Node.js][node-js]: JavaScript runtime (version `>= 0.10`; although the latest stable version is **strongly** recommended)
 
--   [npm][npm]: package manager
+- [npm][npm]: package manager
 
-    -   version `> 2.7.0`
-    -   if Node `< 1.0.0`, version `> 2.7.0` and `< 4.0.0`
-    -   if Node `< 10.x.x`, version `> 2.7.0` and `< 6.0.0`
-    -   if Node `< 14.17.0`, version `> 2.7.0` and `< 9.0.0`
+    - version `> 2.7.0`
+    - if Node `< 1.0.0`, version `> 2.7.0` and `< 4.0.0`
+    - if Node `< 10.x.x`, version `> 2.7.0` and `< 6.0.0`
+    - if Node `< 14.17.0`, version `> 2.7.0` and `< 9.0.0`
 
 While not required to run stdlib, the following dependencies **may** be required for testing, benchmarking, and general development:
 
--   [Julia][julia]: language for technical computing (version `>= 1.0`)
--   [R][r]: language for statistical computing (version `>= 3.4.0`)
--   [Python][python]: general purpose language (version `>=2.7.x`)
--   [pip][pip]: Python package manager (version `>= 9.0.0`; **required** for automatically installing Python packages, such as lint tools)
--   [gcc & g++][gcc] or [Clang][clang]: C/C++ compilation and linking (g++ version `>= 4.8`; clang version `>= 3.5`, Xcode version `>=8.3.1` on OS X)
--   [gfortran][gfortran]: Fortran compilation and linking (version `>= 4.8`)
--   [CMake][cmake]: cross-platform build environment (version `>= 3.4.3`)
--   [pandoc][pandoc]: universal document converter (version `>= 1.18`)
--   [Homebrew][homebrew]: macOS package manager (only **required** on OS X in order to install [shellcheck][shellcheck])
+- [Julia][julia]: language for technical computing (version `>= 1.0`)
+- [R][r]: language for statistical computing (version `>= 3.4.0`)
+- [Python][python]: general purpose language (version `>=2.7.x`)
+- [pip][pip]: Python package manager (version `>= 9.0.0`; **required** for automatically installing Python packages, such as lint tools)
+- [gcc & g++][gcc] or [Clang][clang]: C/C++ compilation and linking (g++ version `>= 4.8`; clang version `>= 3.5`, Xcode version `>=8.3.1` on OS X)
+- [gfortran][gfortran]: Fortran compilation and linking (version `>= 4.8`)
+- [CMake][cmake]: cross-platform build environment (version `>= 3.4.3`)
+- [pandoc][pandoc]: universal document converter (version `>= 1.18`)
+- [Homebrew][homebrew]: macOS package manager (only **required** on OS X in order to install [shellcheck][shellcheck])
 
 Assuming the requisite language is present on the host machine, the following language libraries can be automatically downloaded and installed using `make` (see [installation](#installation)):
 
--   [NumPy][numpy]: general purpose array-processing library for Python
--   [SciPy][scipy]: Python library containing numerical routines
--   [Pylint][pylint]: Python source code analyzer
--   [pycodestyle][pycodestyle]: Python style guide checker against PEP 8
--   [pydocstyle][pydocstyle]: Python docstring checker against PEP 257
--   [lintr][lintr]: static code analysis for R
--   [shellcheck][shellcheck]: static code analysis for shell scripts
--   [cppcheck][cppcheck]: C/C++ static code analysis
+- [NumPy][numpy]: general purpose array-processing library for Python
+- [SciPy][scipy]: Python library containing numerical routines
+- [Pylint][pylint]: Python source code analyzer
+- [pycodestyle][pycodestyle]: Python style guide checker against PEP 8
+- [pydocstyle][pydocstyle]: Python docstring checker against PEP 257
+- [lintr][lintr]: static code analysis for R
+- [shellcheck][shellcheck]: static code analysis for shell scripts
+- [cppcheck][cppcheck]: C/C++ static code analysis
 
 The following external libraries can be automatically downloaded and compiled from source using `make` (see [installation](#installation)):
 
--   [Boost][boost]: portable C++ libraries
--   [Cephes][cephes]: C/C++ special functions math library
--   [OpenBLAS][openblas]: optimized BLAS library
--   [Electron][electron]: framework for cross-platform desktop applications
--   [Emscripten][emscripten]: LLVM to JavaScript compiler
--   [WebAssembly Binary Toolkit][wabt]: suite of tools for WebAssembly
+- [Boost][boost]: portable C++ libraries
+- [Cephes][cephes]: C/C++ special functions math library
+- [OpenBLAS][openblas]: optimized BLAS library
+- [Electron][electron]: framework for cross-platform desktop applications
+- [Emscripten][emscripten]: LLVM to JavaScript compiler
+- [WebAssembly Binary Toolkit][wabt]: suite of tools for WebAssembly
 
 ## Download
 
@@ -220,7 +220,7 @@ workshops  workshops
 
 ## Troubleshooting
 
--   Occasionally, new versions of external dependencies may cause conflicts with existing builds. Most of the time, running
+- Occasionally, new versions of external dependencies may cause conflicts with existing builds. Most of the time, running
 
     <!-- run-disable -->
 
@@ -231,7 +231,7 @@ workshops  workshops
 
     will be enough to resolve these conflicts. Otherwise, remove the [Git][git] repository, clone, and reinstall.
 
--   Some terminal prompts display the current [Git][git] branch and its status. Displaying the status may add significant lag to your terminal. You may hide this information within the repository directory by updating the repository's [Git][git] configuration. For example, if using [GNU bash][bash],
+- Some terminal prompts display the current [Git][git] branch and its status. Displaying the status may add significant lag to your terminal. You may hide this information within the repository directory by updating the repository's [Git][git] configuration. For example, if using [GNU bash][bash],
 
     <!-- run-disable -->
 
@@ -247,7 +247,7 @@ workshops  workshops
     $ git config --add oh-my-zsh.hide-dirty 1
     ```
 
--   Some shells (e.g., [Zsh][zsh]) may require quotes around environment variables to prevent the shell from expanding paths. If this is the case, wrap paths, or values which may be interpreted as paths, in quotes. For example, replace
+- Some shells (e.g., [Zsh][zsh]) may require quotes around environment variables to prevent the shell from expanding paths. If this is the case, wrap paths, or values which may be interpreted as paths, in quotes. For example, replace
 
     <!-- run-disable -->
 
@@ -265,7 +265,7 @@ workshops  workshops
 
 ## Editors
 
--   This repository uses [EditorConfig][editorconfig] to maintain consistent coding styles between different editors and IDEs, including [browsers][editorconfig-chrome]. You should be sure to download and setup [EditorConfig][editorconfig] to ensure that files are automatically configured to use expected indentation and line endings.
+- This repository uses [EditorConfig][editorconfig] to maintain consistent coding styles between different editors and IDEs, including [browsers][editorconfig-chrome]. You should be sure to download and setup [EditorConfig][editorconfig] to ensure that files are automatically configured to use expected indentation and line endings.
 
 ## Testing
 
@@ -337,85 +337,45 @@ For contribution guidelines, see the [contributing guide][stdlib-contributing].
 <section class="links">
 
 [stdlib-contributing]: https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md
-
 [github-fork]: https://help.github.com/articles/fork-a-repo/
-
 [github-fork-sync]: https://help.github.com/articles/syncing-a-fork/
-
 [github-remote]: https://help.github.com/articles/configuring-a-remote-for-a-fork/
-
 [git-clone-depth]: https://git-scm.com/docs/git-clone#git-clone---depthltdepthgt
-
 [git-remotes]: https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
-
 [git]: http://git-scm.com/
-
 [make]: https://www.gnu.org/software/make/
-
 [bash]: https://www.gnu.org/software/bash/
-
 [zsh]: https://en.wikipedia.org/wiki/Z_shell
-
 [curl]: https://curl.se/
-
 [wget]: https://www.gnu.org/software/wget/
-
 [fetch]: https://www.freebsd.org/cgi/man.cgi?fetch%281%29
-
 [node-js]: https://nodejs.org/en/
-
 [npm]: https://www.npmjs.com/
-
 [julia]: https://julialang.org/
-
 [r]: https://www.r-project.org/
-
 [python]: https://www.python.org/
-
 [pip]: https://github.com/pypa/pip
-
 [scipy]: https://www.scipy.org/index.html
-
 [numpy]: https://numpy.org/
-
 [pylint]: https://github.com/PyCQA/pylint
-
 [pycodestyle]: https://github.com/PyCQA/pycodestyle
-
 [pydocstyle]: https://github.com/PyCQA/pydocstyle
-
 [lintr]: https://github.com/jimhester/lintr
-
 [shellcheck]: https://github.com/koalaman/shellcheck
-
 [cppcheck]: http://cppcheck.sourceforge.net/
-
 [gcc]: http://gcc.gnu.org/
-
 [clang]: https://clang.llvm.org/
-
 [gfortran]: https://gcc.gnu.org/fortran/
-
 [cmake]: https://cmake.org/
-
 [pandoc]: http://pandoc.org/
-
 [homebrew]: https://brew.sh/
-
 [boost]: http://www.boost.org/
-
 [cephes]: http://www.moshier.net/#Cephes
-
 [openblas]: https://github.com/xianyi/OpenBLAS
-
 [electron]: https://www.electronjs.org/
-
 [emscripten]: http://kripken.github.io/emscripten-site/index.html
-
 [wabt]: https://github.com/WebAssembly/wabt
-
 [editorconfig]: http://editorconfig.org/
-
 [editorconfig-chrome]: https://chrome.google.com/webstore/detail/github-editorconfig/bppnolhdpdfmmpeefopdbpmabdpoefjh?hl=en-US
 
 </section>

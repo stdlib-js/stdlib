@@ -23,7 +23,7 @@ name: update_cli_permissions
 on:
   schedule:
     # Run the workflow once a week (Sunday at midnight):
-    - cron: '0 0 * * 0'
+    - cron: "0 0 * * 0"
 
   # Allow the workflow to be manually run:
   workflow_dispatch:
@@ -35,12 +35,10 @@ permissions:
 
 # Workflow jobs:
 jobs:
-
   # Define a job for making CLI scripts executable:
   update:
-
     # Define a display name:
-    name: 'Update CLI Permissions'
+    name: "Update CLI Permissions"
 
     # Ensure the job does not run on forks:
     if: github.repository == 'stdlib-js/stdlib'
@@ -50,9 +48,8 @@ jobs:
 
     # Define the sequence of job steps...
     steps:
-
       # Checkout the repository:
-      - name: 'Checkout repository'
+      - name: "Checkout repository"
         # Pin action to full length commit SHA
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
@@ -70,7 +67,7 @@ jobs:
         timeout-minutes: 10
 
       # Make CLI scripts executable:
-      - name: 'Make CLI scripts executable'
+      - name: "Make CLI scripts executable"
         run: |
           files=$(find lib/node_modules/@stdlib -type d -name 'bin' -exec find {} -type f -name 'cli' \;)
 
@@ -79,12 +76,12 @@ jobs:
           done
 
       # Disable Git hooks:
-      - name: 'Disable Git hooks'
+      - name: "Disable Git hooks"
         run: |
           rm -rf .git/hooks
 
       # Import GPG key to sign commits:
-      - name: 'Import GPG key to sign commits'
+      - name: "Import GPG key to sign commits"
         # Pin action to full length commit SHA
         uses: crazy-max/ghaction-import-gpg@cb9bde2e2525e640591a934b1fd28eef1dcaf5e5 # v6.2.0
         with:
@@ -94,14 +91,14 @@ jobs:
           git_commit_gpgsign: true
 
       # Create a pull request with the updated files:
-      - name: 'Create pull request'
+      - name: "Create pull request"
         id: cpr
         # Pin action to full length commit SHA
         uses: peter-evans/create-pull-request@67ccf781d68cd99b580ae25a5c18a1cc84ffff1f # v7.0.6
         with:
-          title: 'fix: make CLI scripts executable'
-          commit-message: 'fix: make CLI scripts executable'
-          committer: 'stdlib-bot <82920195+stdlib-bot@users.noreply.github.com>'
+          title: "fix: make CLI scripts executable"
+          commit-message: "fix: make CLI scripts executable"
+          committer: "stdlib-bot <82920195+stdlib-bot@users.noreply.github.com>"
           signoff: true
           body: |
             This PR changes the permissions of project `cli` scripts to be executable.

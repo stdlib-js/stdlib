@@ -71,27 +71,27 @@ Copy the `completions/*.sublime-completions` and `snippets/*.sublime-snippet` fi
 
 ## Packages
 
--   [**Package Control**][sublime-text-package-control]: package manager which helps in finding, installing, and keeping installed packages up-to-date. This **should** be installed prior to installing any of the packages subsequently listed here.
+- [**Package Control**][sublime-text-package-control]: package manager which helps in finding, installing, and keeping installed packages up-to-date. This **should** be installed prior to installing any of the packages subsequently listed here.
 
--   [**Git**][sublime-text-git]: package which provides [Git][git] integration.
+- [**Git**][sublime-text-git]: package which provides [Git][git] integration.
 
--   [**EditorConfig**][sublime-text-editorconfig]: package for using [EditorConfig][editorconfig], which helps define and maintain consistent coding styles between different editors and IDEs.
+- [**EditorConfig**][sublime-text-editorconfig]: package for using [EditorConfig][editorconfig], which helps define and maintain consistent coding styles between different editors and IDEs.
 
--   [**Pretty JSON**][sublime-text-pretty-json]: package for pretty printing and minifying [JSON][json].
+- [**Pretty JSON**][sublime-text-pretty-json]: package for pretty printing and minifying [JSON][json].
 
--   [**Sidebar Enhancements**][sublime-text-sidebar-enhancements]: package which provides enhancements for working with files and folders in the Sublime Text sidebar.
+- [**Sidebar Enhancements**][sublime-text-sidebar-enhancements]: package which provides enhancements for working with files and folders in the Sublime Text sidebar.
 
--   [**UnicodeMath**][sublime-text-unicode-math]: package for inserting Unicode math and emoji.
+- [**UnicodeMath**][sublime-text-unicode-math]: package for inserting Unicode math and emoji.
 
--   [**Julia**][sublime-text-julia]: package which provides syntax highlighting for [Julia][julia].
+- [**Julia**][sublime-text-julia]: package which provides syntax highlighting for [Julia][julia].
 
--   [**AWK**][sublime-text-awk]: package which provides syntax highlighting for [AWK][awk].
+- [**AWK**][sublime-text-awk]: package which provides syntax highlighting for [AWK][awk].
 
--   [**Fortran**][sublime-text-fortran]: package which provides syntax highlighting for [Fortran][fortran]. Once installed, configure [Sublime Text][sublime-text] to always open files having the file extension `*.f` as `Fortran (modern)`.
+- [**Fortran**][sublime-text-fortran]: package which provides syntax highlighting for [Fortran][fortran]. Once installed, configure [Sublime Text][sublime-text] to always open files having the file extension `*.f` as `Fortran (modern)`.
 
--   [**TypeScript**][sublime-text-typescript]: package which provides an IO wrapper around [TypeScript][typescript] language services.
+- [**TypeScript**][sublime-text-typescript]: package which provides an IO wrapper around [TypeScript][typescript] language services.
 
--   [**MarkdownEditing**][sublime-text-markdownediting]: package which provides syntax highlighting (including for fenced code blocks) and editing features for Markdown. Once installed, configure the package settings as follows:
+- [**MarkdownEditing**][sublime-text-markdownediting]: package which provides syntax highlighting (including for fenced code blocks) and editing features for Markdown. Once installed, configure the package settings as follows:
 
     ```text
     {
@@ -123,9 +123,9 @@ Copy the `completions/*.sublime-completions` and `snippets/*.sublime-snippet` fi
     }
     ```
 
--   [**SublimeLinter**][sublime-text-sublimelinter]: package which provides an interactive linting framework for [Sublime Text][sublime-text]. The framework does **not** contain any built-in linters. Instead, you must install plugins which provide interfaces to lint executables.
+- [**SublimeLinter**][sublime-text-sublimelinter]: package which provides an interactive linting framework for [Sublime Text][sublime-text]. The framework does **not** contain any built-in linters. Instead, you must install plugins which provide interfaces to lint executables.
 
-    -   [**SublimeLinter-eslint**][sublime-text-sublimelinter-eslint]: plugin which provides an interface to [ESLint][eslint]. Once installed, you need to configure [SublimeLinter][sublime-text-sublimelinter] to use the project [ESLint][eslint] configuration files and to set the `NODE_PATH` environment variable upon invoking [ESLint][eslint]:
+    - [**SublimeLinter-eslint**][sublime-text-sublimelinter-eslint]: plugin which provides an interface to [ESLint][eslint]. Once installed, you need to configure [SublimeLinter][sublime-text-sublimelinter] to use the project [ESLint][eslint] configuration files and to set the `NODE_PATH` environment variable upon invoking [ESLint][eslint]:
 
         ```text
                 ...
@@ -161,7 +161,7 @@ Copy the `completions/*.sublime-completions` and `snippets/*.sublime-snippet` fi
         },
         ```
 
-    -   [**SublimeLinter-annotations**][sublime-text-sublimelinter-annotations]: plugin which marks annotations such as `TODO`, `FIXME`, etc. Once installed, you need to configure [SublimeLinter][sublime-text-sublimelinter] to mark project annotations.
+    - [**SublimeLinter-annotations**][sublime-text-sublimelinter-annotations]: plugin which marks annotations such as `TODO`, `FIXME`, etc. Once installed, you need to configure [SublimeLinter][sublime-text-sublimelinter] to mark project annotations.
 
         ```text
                 ...
@@ -184,9 +184,9 @@ Copy the `completions/*.sublime-completions` and `snippets/*.sublime-snippet` fi
                 ...
         ```
 
-    -   [**SublimeLinter-json**][sublime-text-sublimelinter-json]: plugin which lints [JSON][json].
+    - [**SublimeLinter-json**][sublime-text-sublimelinter-json]: plugin which lints [JSON][json].
 
-    -   [**SublimeLinter-shellcheck**][sublime-text-sublimelinter-shellcheck]: plugin which provides an interface to [shellcheck][shellcheck] for linting files having "Shell-Unix-Generic" syntax (aka Shell Script).
+    - [**SublimeLinter-shellcheck**][sublime-text-sublimelinter-shellcheck]: plugin which provides an interface to [shellcheck][shellcheck] for linting files having "Shell-Unix-Generic" syntax (aka Shell Script).
 
         If [shellcheck][shellcheck] was installed as a local project dependency (e.g., `make install-deps` on non-MacOS platforms per the project development guide), you need to configure [SublimeLinter][sublime-text-sublimelinter] to search the top-level `deps` directory for locally installed linter executables. For example, on Linux,
 
@@ -206,55 +206,30 @@ Copy the `completions/*.sublime-completions` and `snippets/*.sublime-snippet` fi
 <section class="links">
 
 [sublime-text]: https://www.sublimetext.com/
-
 [sublime-text-package-control]: https://packagecontrol.io
-
 [sublime-text-git]: https://github.com/kemayo/sublime-text-git
-
 [sublime-text-sublimelinter]: https://github.com/SublimeLinter/SublimeLinter3
-
 [sublime-text-sublimelinter-eslint]: https://github.com/roadhump/SublimeLinter-eslint
-
 [sublime-text-sublimelinter-annotations]: https://github.com/SublimeLinter/SublimeLinter-annotations
-
 [sublime-text-sublimelinter-json]: https://github.com/SublimeLinter/SublimeLinter-json
-
 [sublime-text-sublimelinter-shellcheck]: https://github.com/SublimeLinter/SublimeLinter-shellcheck
-
 [sublime-text-editorconfig]: https://github.com/sindresorhus/editorconfig-sublime
-
 [sublime-text-pretty-json]: https://github.com/dzhibas/SublimePrettyJson
-
 [sublime-text-sidebar-enhancements]: https://github.com/SideBarEnhancements-org/SideBarEnhancements
-
 [sublime-text-unicode-math]: https://github.com/mvoidex/UnicodeMath
-
 [sublime-text-markdownediting]: https://github.com/SublimeText-Markdown/MarkdownEditing
-
 [sublime-text-julia]: https://github.com/JuliaEditorSupport/Julia-sublime
-
 [sublime-text-awk]: https://github.com/JohnNilsson/awk-sublime
-
 [sublime-text-fortran]: https://github.com/315234/SublimeFortran
-
 [sublime-text-typescript]: https://github.com/Microsoft/TypeScript-Sublime-Plugin
-
 [git]: https://git-scm.com/
-
 [eslint]: https://eslint.org/
-
 [shellcheck]: https://github.com/koalaman/shellcheck
-
 [json]: http://www.json.org/
-
 [editorconfig]: http://editorconfig.org/
-
 [julia]: https://julialang.org/
-
 [awk]: https://en.wikipedia.org/wiki/AWK
-
 [fortran]: https://en.wikipedia.org/wiki/Fortran
-
 [typescript]: https://www.typescriptlang.org/
 
 </section>

@@ -26,11 +26,11 @@ on:
     # Define the input parameters for the workflow:a
     inputs:
       commit_hash:
-        description: 'Commit hash to create note for'
+        description: "Commit hash to create note for"
         required: true
         type: string
       excludes:
-        description: 'Comma-separated list of packages to exclude'
+        description: "Comma-separated list of packages to exclude"
         required: true
         type: string
 
@@ -39,34 +39,32 @@ on:
     # Define the input parameters for the workflow:
     inputs:
       commit_hash:
-        description: 'Commit hash to create note for'
+        description: "Commit hash to create note for"
         required: true
         type: string
       excludes:
-        description: 'Comma-separated list of packages to exclude'
+        description: "Comma-separated list of packages to exclude"
         required: true
         type: string
 
     # Define the secrets accessible by the workflow:
     secrets:
       STDLIB_BOT_GITHUB_TOKEN:
-        description: 'GitHub token for stdlib-bot'
+        description: "GitHub token for stdlib-bot"
         required: true
       STDLIB_BOT_GPG_PRIVATE_KEY:
-        description: 'GPG private key for stdlib-bot'
+        description: "GPG private key for stdlib-bot"
         required: true
       STDLIB_BOT_GPG_PASSPHRASE:
-        description: 'GPG passphrase for stdlib-bot'
+        description: "GPG passphrase for stdlib-bot"
         required: true
 
 # Workflow jobs:
 jobs:
-
   # Define a job to create a Git note amending a commit message:
   create_git_note_filtering_packages:
-
     # Define job name:
-    name: 'Create Git Note Filtering Packages for Commit'
+    name: "Create Git Note Filtering Packages for Commit"
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
@@ -74,7 +72,7 @@ jobs:
     # Define the sequence of job steps:
     steps:
       # Checkout the repository:
-      - name: 'Checkout repository'
+      - name: "Checkout repository"
         # Pin action to full length commit SHA
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
@@ -88,7 +86,7 @@ jobs:
           persist-credentials: false
 
       # Verify commit exists:
-      - name: 'Verify commit exists'
+      - name: "Verify commit exists"
         run: |
           if ! git rev-parse --quiet --verify ${{ inputs.commit_hash }}^{commit}; then
             echo "Error: Commit ${{ inputs.commit_hash }} not found"
@@ -96,7 +94,7 @@ jobs:
           fi
 
       # Create Git note:
-      - name: 'Create Git note'
+      - name: "Create Git note"
         run: |
           # Start creating the note file:
           cat > "docs/git-notes/${{ inputs.commit_hash }}.txt" << 'EOF'
@@ -122,12 +120,12 @@ jobs:
           cat "docs/git-notes/${{ inputs.commit_hash }}.txt" >> $GITHUB_STEP_SUMMARY
 
       # Disable Git hooks:
-      - name: 'Disable Git hooks'
+      - name: "Disable Git hooks"
         run: |
           rm -rf .git/hooks
 
       # Import GPG key to sign commits:
-      - name: 'Import GPG key to sign commits'
+      - name: "Import GPG key to sign commits"
         # Pin action to full length commit SHA
         uses: crazy-max/ghaction-import-gpg@cb9bde2e2525e640591a934b1fd28eef1dcaf5e5 # v6.2.0
         with:
@@ -137,10 +135,10 @@ jobs:
           git_commit_gpgsign: true
 
       # Commit and push changes:
-      - name: 'Commit and push changes'
+      - name: "Commit and push changes"
         env:
-            REPO_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
-            USER_NAME: stdlib-bot
+          REPO_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+          USER_NAME: stdlib-bot
         run: |
           git config --local user.email "82920195+stdlib-bot@users.noreply.github.com"
           git config --local user.name "${USER_NAME}"

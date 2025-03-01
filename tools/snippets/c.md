@@ -4,7 +4,7 @@
 
 <!-- C interface documentation. -->
 
-* * *
+---
 
 <section class="c">
 

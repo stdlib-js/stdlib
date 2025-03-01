@@ -54,8 +54,8 @@ $ make npm-publish NPM_RELEASE_TYPE='patch' NPM_RELEASE_COMMIT_MESSAGE='New feat
 
 The command supports the following environment variables:
 
--   **NPM_RELEASE_TYPE**: release type (e.g., `prepatch`, `patch`, `preminor`, `minor`, `premajor`, `major`, `prerelease`).
--   **NPM_RELEASE_COMMIT_MESSAGE**: release message.
+- **NPM_RELEASE_TYPE**: release type (e.g., `prepatch`, `patch`, `preminor`, `minor`, `premajor`, `major`, `prerelease`).
+- **NPM_RELEASE_COMMIT_MESSAGE**: release message.
 
 This command commits changes to source control. Accordingly, this command should only be run on a clean working directory.
 

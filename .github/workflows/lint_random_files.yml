@@ -26,47 +26,47 @@ on:
     inputs:
       num:
         type: string
-        description: 'Maximum number of files to lint:'
-        default: '100'
+        description: "Maximum number of files to lint:"
+        default: "100"
       pattern:
-        description: 'Regular expression for files to include:'
+        description: "Regular expression for files to include:"
         default: .*
       javascript:
         type: boolean
-        description: 'Lint JavaScript and TypeScript'
+        description: "Lint JavaScript and TypeScript"
         default: true
       markdown:
         type: boolean
-        description: 'Lint Markdown'
+        description: "Lint Markdown"
         default: true
       json:
         type: boolean
-        description: 'Lint JSON'
+        description: "Lint JSON"
         default: true
       repl:
         type: boolean
-        description: 'Lint REPL documentation and shell script files'
+        description: "Lint REPL documentation and shell script files"
         default: true
       r:
         type: boolean
-        description: 'Lint R'
+        description: "Lint R"
         default: true
       c:
         type: boolean
-        description: 'Lint C'
+        description: "Lint C"
         default: true
       python:
         type: boolean
-        description: 'Lint Python'
+        description: "Lint Python"
         default: true
       fix:
         type: boolean
-        description: 'Fix lint errors and submit a PR (if possible)'
+        description: "Fix lint errors and submit a PR (if possible)"
         default: false
 
   # Trigger the workflow every 24 hours:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: "0 0 * * *"
 
 # Global permissions:
 permissions:
@@ -75,12 +75,10 @@ permissions:
 
 # Workflow jobs:
 jobs:
-
   # Define a job for linting committed code...
   lint:
-
     # Define a display name:
-    name: 'Lint Random Files'
+    name: "Lint Random Files"
 
     # Ensure the job does not run on forks:
     if: github.repository == 'stdlib-js/stdlib'
@@ -91,7 +89,7 @@ jobs:
     # Define the sequence of job steps...
     steps:
       # Checkout the repository:
-      - name: 'Checkout repository'
+      - name: "Checkout repository"
         # Pin action to full length commit SHA
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
@@ -106,27 +104,27 @@ jobs:
         timeout-minutes: 10
 
       # Install Node.js:
-      - name: 'Install Node.js'
+      - name: "Install Node.js"
         # Pin action to full length commit SHA
         uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
         with:
-          node-version: '20' # 'lts/*'
+          node-version: "20" # 'lts/*'
         timeout-minutes: 5
 
       # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
-      - name: 'Install dependencies'
+      - name: "Install dependencies"
         run: |
           make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 15
 
       # Initialize development environment:
-      - name: 'Initialize development environment'
+      - name: "Initialize development environment"
         run: |
           make init
         timeout-minutes: 5
 
       # Pick random files from the `lib/node_modules/@stdlib` directory:
-      - name: 'Pick random files from the `lib/node_modules/@stdlib` directory'
+      - name: "Pick random files from the `lib/node_modules/@stdlib` directory"
         id: random-files
         run: |
           name=""
@@ -184,7 +182,7 @@ jobs:
           echo "files=$files" >> $GITHUB_OUTPUT
 
       # Lint file names:
-      - name: 'Lint file names'
+      - name: "Lint file names"
         run: |
           # Determine root directory:
           root=$(git rev-parse --show-toplevel)
@@ -196,7 +194,7 @@ jobs:
           echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | "${lint_filenames}"
 
       # Lint files against EditorConfig:
-      - name: 'Lint against EditorConfig'
+      - name: "Lint against EditorConfig"
         id: lint-editorconfig
         run: |
           set -o pipefail
@@ -204,7 +202,7 @@ jobs:
           make lint-editorconfig-files FILES="${files}" 2>&1 | tee lint_editorconfig_errors.txt
 
       # Create sub-issue for EditorConfig lint failures:
-      - name: 'Create sub-issue for EditorConfig lint failures'
+      - name: "Create sub-issue for EditorConfig lint failures"
         if: failure() && contains(steps.lint-editorconfig.outcome, 'failure')
         env:
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
@@ -241,7 +239,7 @@ jobs:
           rm "$BODY_FILE"
 
       # Lint Markdown files:
-      - name: 'Lint Markdown files'
+      - name: "Lint Markdown files"
         if: ( github.event.inputs.markdown != 'false' ) && ( success() || failure() )
         run: |
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep -E '\.md$' | tr '\n' ' ')
@@ -250,7 +248,7 @@ jobs:
           fi
 
       # Lint package.json files:
-      - name: 'Lint package.json files'
+      - name: "Lint package.json files"
         if: ( github.event.inputs.json != 'false' ) && ( success() || failure() )
         run: |
           # Determine root directory:
@@ -265,7 +263,7 @@ jobs:
           fi
 
       # Lint REPL help files...
-      - name: 'Lint REPL help files'
+      - name: "Lint REPL help files"
         if: ( github.event.inputs.repl != 'false' ) && ( success() || failure() )
         run: |
           # Determine root directory:
@@ -280,7 +278,7 @@ jobs:
           fi
 
       # Lint shell script files:
-      - name: 'Lint shell script files'
+      - name: "Lint shell script files"
         if: ( github.event.inputs.repl != 'false' ) && ( success() || failure() )
         run: |
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep -vE '\.(js|md|json|ts|c|h)$' | while read -r file; do head -n1 "$file" | grep -q '^\#\!/usr/bin/env bash' && echo "$file"; done | tr '\n' ' ')
@@ -293,7 +291,7 @@ jobs:
           fi
 
       # Lint JavaScript files:
-      - name: 'Lint JavaScript files'
+      - name: "Lint JavaScript files"
         id: lint-javascript
         if: ( github.event.inputs.javascript != 'false' ) && ( success() || failure() )
         run: |
@@ -363,7 +361,7 @@ jobs:
           fi
 
       # Create sub-issue for JavaScript lint failures:
-      - name: 'Create sub-issue for JavaScript lint failures'
+      - name: "Create sub-issue for JavaScript lint failures"
         if: failure() && contains(steps.lint-javascript.outcome, 'failure')
         env:
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
@@ -395,7 +393,7 @@ jobs:
           rm "$BODY_FILE"
 
       # Lint Python files:
-      - name: 'Lint Python files'
+      - name: "Lint Python files"
         if: ( github.event.inputs.python != 'false' ) && ( success() || failure() )
         run: |
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep -E '\.py$' | tr '\n' ' ')
@@ -408,15 +406,15 @@ jobs:
           fi
 
       # Setup R:
-      - name: 'Setup R'
+      - name: "Setup R"
         if: ( github.event.inputs.r != 'false' ) && ( success() || failure() )
         # Pin action to full length commit SHA
         uses: r-lib/actions/setup-r@473c68190595b311a74f208fba61a8d8c0d4c247 # v2.11.1
         with:
-          r-version: '4.3.3'
+          r-version: "4.3.3"
 
       # Lint R files:
-      - name: 'Lint R files'
+      - name: "Lint R files"
         if: ( github.event.inputs.r != 'false' ) && ( success() || failure() )
         run: |
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep -E '\.R$' | tr '\n' ' ')
@@ -429,7 +427,7 @@ jobs:
           fi
 
       # Lint C files:
-      - name: 'Lint C files'
+      - name: "Lint C files"
         id: lint-c
         if: ( github.event.inputs.c != 'false' ) && ( success() || failure() )
         run: |
@@ -501,7 +499,7 @@ jobs:
           fi
 
       # Create sub-issue for C linting failures:
-      - name: 'Create sub-issue for C lint failures'
+      - name: "Create sub-issue for C lint failures"
         if: ( github.event.inputs.c != 'false' ) && failure() && contains(steps.*.outcome, 'failure') && contains(steps.lint-c.outcome, 'failure')
         env:
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
@@ -534,7 +532,7 @@ jobs:
           rm "$BODY_FILE"
 
       # Lint TypeScript declarations files:
-      - name: 'Lint TypeScript declarations files'
+      - name: "Lint TypeScript declarations files"
         if: ( github.event.inputs.javascript != 'false' ) && ( success() || failure() )
         run: |
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep -E '\.d\.ts$' | tr '\n' ' ')
@@ -543,7 +541,7 @@ jobs:
           fi
 
       # Lint license headers:
-      - name: 'Lint license headers'
+      - name: "Lint license headers"
         if: success() || failure()
         run: |
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' ' ')
@@ -552,13 +550,13 @@ jobs:
           fi
 
       # Disable Git hooks:
-      - name: 'Disable Git hooks'
+      - name: "Disable Git hooks"
         if: ${{ github.event.inputs.fix == 'true' }} && ( success() || failure() )
         run: |
           rm -rf .git/hooks
 
       # Import GPG key to sign commits:
-      - name: 'Import GPG key to sign commits'
+      - name: "Import GPG key to sign commits"
         if: ${{ github.event.inputs.fix == 'true' }} && ( success() || failure() )
         # Pin action to full length commit SHA
         uses: crazy-max/ghaction-import-gpg@cb9bde2e2525e640591a934b1fd28eef1dcaf5e5 # v6.2.0
@@ -569,26 +567,26 @@ jobs:
           git_commit_gpgsign: true
 
       # Create a pull request with the fixes (if applicable):
-      - name: 'Create pull request'
+      - name: "Create pull request"
         if: ${{ github.event.inputs.fix == 'true' }} && ( success() || failure() )
         id: cpr
         # Pin action to full length commit SHA
         uses: peter-evans/create-pull-request@67ccf781d68cd99b580ae25a5c18a1cc84ffff1f # v7.0.6
         with:
-          title: 'style: fix lint errors'
+          title: "style: fix lint errors"
           add-paths: ${{ steps.random-files.outputs.files }}
           body: |
             This PR
 
             -   fixes lint errors
 
-          commit-message: 'style: resolve lint errors'
-          committer: 'stdlib-bot <82920195+stdlib-bot@users.noreply.github.com>'
+          commit-message: "style: resolve lint errors"
+          committer: "stdlib-bot <82920195+stdlib-bot@users.noreply.github.com>"
           signoff: true
           token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           labels: |
             automated-pr
           team-reviewers: |
             reviewers
-          branch: 'fix-lint-errors'
+          branch: "fix-lint-errors"
           delete-branch: true

@@ -22,7 +22,7 @@ Usage: <linter.jl> <file> <file> <file> ...
 
 ### Notes
 
--   Each provided filepath is resolved relative to the current working directory of the calling process.
+- Each provided filepath is resolved relative to the current working directory of the calling process.
 
 </section>
 

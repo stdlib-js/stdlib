@@ -1,4 +1,4 @@
 {
-	"cmd": [ "node", "$file" ],
-	"selector": "source.js"
+  "cmd": ["node", "$file"],
+  "selector": "source.js",
 }

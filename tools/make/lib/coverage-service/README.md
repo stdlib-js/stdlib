@@ -56,10 +56,10 @@ $ make coverage
 
 The command supports the following environment variables:
 
--   **COVERAGE_SERVICE**: code coverage service name (e.g., `codecov`).
--   **LCOV_INFO**: path to `lcov.info` file which will be sent to the coverage service.
--   **COVERAGE_NAME**: coverage report name.
--   **CI_SERVICE**: continuous integration (CI) service from which the coverage report originates.
+- **COVERAGE_SERVICE**: code coverage service name (e.g., `codecov`).
+- **LCOV_INFO**: path to `lcov.info` file which will be sent to the coverage service.
+- **COVERAGE_NAME**: coverage report name.
+- **CI_SERVICE**: continuous integration (CI) service from which the coverage report originates.
 
 #### coverage-codecov
 
@@ -73,9 +73,9 @@ $ make coverage-codecov
 
 The command supports the following environment variables:
 
--   **LCOV_INFO**: path to `lcov.info` file which will be sent to the coverage service.
--   **COVERAGE_NAME**: coverage report name.
--   **CI_SERVICE**: continuous integration (CI) service from which the coverage report originates.
+- **LCOV_INFO**: path to `lcov.info` file which will be sent to the coverage service.
+- **COVERAGE_NAME**: coverage report name.
+- **CI_SERVICE**: continuous integration (CI) service from which the coverage report originates.
 
 #### coverage-coveralls
 
@@ -89,9 +89,9 @@ $ make coverage-coveralls
 
 The command supports the following environment variables:
 
--   **LCOV_INFO**: path to `lcov.info` file which will be sent to the coverage service.
--   **COVERALLS_REPO_TOKEN**: the secret repository token from [Coveralls][coveralls].
--   **CI_SERVICE**: continuous integration (CI) service from which the coverage report originates.
+- **LCOV_INFO**: path to `lcov.info` file which will be sent to the coverage service.
+- **COVERALLS_REPO_TOKEN**: the secret repository token from [Coveralls][coveralls].
+- **CI_SERVICE**: continuous integration (CI) service from which the coverage report originates.
 
 </section>
 
@@ -110,9 +110,7 @@ The command supports the following environment variables:
 <section class="links">
 
 [make]: https://www.gnu.org/software/make/
-
 [codecov]: https://codecov.io/
-
 [coveralls]: https://coveralls.io/
 
 </section>

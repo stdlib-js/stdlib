@@ -39,7 +39,7 @@ The database is a [BibTeX][bibtex] database file, where the file format is a pla
 }
 ```
 
-corresponds to Bay's and Durham's 1976 article "Improving a Poor Random Number Generator" appearing in the journal _ACM Transactions on Mathematical Software_. 
+corresponds to Bay's and Durham's 1976 article "Improving a Poor Random Number Generator" appearing in the journal _ACM Transactions on Mathematical Software_.
 
 </section>
 
@@ -49,10 +49,10 @@ corresponds to Bay's and Durham's 1976 article "Improving a Poor Random Number G
 
 ## Notes
 
--   Templates for various entry types may be found in the `./templates` directory.
--   When adding an entry, ensure that fields are sorted in alphabetical order.
--   Field values should be enclosed within braces.
--   An entry identifier should follow the format `<author_last_name>:<publication_year>[<letter>]`. The `letter` suffix is optional and only necessary when distinguishing two or more entries having the same identifier.
+- Templates for various entry types may be found in the `./templates` directory.
+- When adding an entry, ensure that fields are sorted in alphabetical order.
+- Field values should be enclosed within braces.
+- An entry identifier should follow the format `<author_last_name>:<publication_year>[<letter>]`. The `letter` suffix is optional and only necessary when distinguishing two or more entries having the same identifier.
 
 </section>
 
@@ -69,9 +69,7 @@ The data files (databases) are licensed under an [Open Data Commons Public Domai
 <section class="links">
 
 [pddl-1.0]: http://opendatacommons.org/licenses/pddl/1.0/
-
 [cc0]: https://creativecommons.org/publicdomain/zero/1.0
-
 [bibtex]: http://www.bibtex.org/
 
 </section>

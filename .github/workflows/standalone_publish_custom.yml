@@ -26,37 +26,36 @@ on:
     inputs:
       skip:
         type: choice
-        description: 'Skip individual or toplevel package publishing?'
+        description: "Skip individual or toplevel package publishing?"
         options:
-        - none
-        - skip-toplevel
-        - skip-individual
+          - none
+          - skip-toplevel
+          - skip-individual
       packages:
-        description: 'List of packages to publish (space separated):'
+        description: "List of packages to publish (space separated):"
       pattern:
-        description: 'Regular expression for packages to include:'
+        description: "Regular expression for packages to include:"
       dry-run:
         type: boolean
-        description: 'Skip uploading packages (dry run):'
+        description: "Skip uploading packages (dry run):"
         default: false
       release-type:
         type: choice
-        description: 'Type of release to create'
-        default: 'none'
+        description: "Type of release to create"
+        default: "none"
         options:
-        - none
-        - patch
-        - minor
-        - major
-        - auto
+          - none
+          - patch
+          - minor
+          - major
+          - auto
       only-unpublished:
         type: boolean
-        description: 'Only publish packages that have not yet been published'
+        description: "Only publish packages that have not yet been published"
         default: false
 
 # Workflow concurrency group:
 concurrency:
-
   # Specify a group name:
   group: ${{ github.workflow }}
 
@@ -70,21 +69,18 @@ permissions:
 
 # Workflow jobs:
 jobs:
-
   # Define a job for publishing standalone packages...
   publish:
-
     # Define a display name:
-    name: 'Publish'
+    name: "Publish"
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
     # Define the sequence of job steps...
     steps:
-
       # Checkout the repository:
-      - name: 'Checkout repository'
+      - name: "Checkout repository"
         # Pin action to full length commit SHA
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
@@ -99,33 +95,33 @@ jobs:
         timeout-minutes: 10
 
       # Configure Git:
-      - name: 'Configure Git'
+      - name: "Configure Git"
         run: |
           git config --local user.email "82920195+stdlib-bot@users.noreply.github.com"
           git config --local user.name "stdlib-bot"
 
       # Apply Git notes:
-      - name: 'Apply Git notes'
+      - name: "Apply Git notes"
         run: |
           make apply-git-notes
         timeout-minutes: 5
 
       # Install Node.js:
-      - name: 'Install Node.js'
+      - name: "Install Node.js"
         # Pin action to full length commit SHA
         uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
         with:
-          node-version: '20' # 'lts/*'
+          node-version: "20" # 'lts/*'
         timeout-minutes: 5
 
       # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
-      - name: 'Install dependencies'
+      - name: "Install dependencies"
         run: |
           make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 15
 
       # Publish standalone packages:
-      - name: 'Publish packages'
+      - name: "Publish packages"
         env:
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           DEBUG: ${{ env.ACTIONS_STEP_DEBUG && 'scripts:publish-packages' || '' }}

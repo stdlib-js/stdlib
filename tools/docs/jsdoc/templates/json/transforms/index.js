@@ -1,15 +1,14 @@
-'use strict';
+"use strict";
 
 // MAIN //
 
 var transforms = {};
-transforms.namespace = require( './namespace' );
-transforms.mixin = require( './mixin' );
-transforms.function  = require( './function' );
-transforms.member = require( './member' );
-transforms.event = require( './event' );
-transforms.class = require( './class' );
-
+transforms.namespace = require("./namespace");
+transforms.mixin = require("./mixin");
+transforms.function = require("./function");
+transforms.member = require("./member");
+transforms.event = require("./event");
+transforms.class = require("./class");
 
 // EXPORTS //
 

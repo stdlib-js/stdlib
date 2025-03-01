@@ -42,9 +42,9 @@ The database is a [JSON][json] file, where each `key` is a URL specifying the lo
 
 ## Notes
 
--   Before adding a database entry, ensure that the resource is **unique** and not already present in the database.
--   Before assigning an `id` to a URL, ensure that the `id` is **unique**.
--   Ensure that a URL is [**percent-encoded**][percent-encoding].
+- Before adding a database entry, ensure that the resource is **unique** and not already present in the database.
+- Before assigning an `id` to a URL, ensure that the `id` is **unique**.
+- Ensure that a URL is [**percent-encoded**][percent-encoding].
 
 </section>
 
@@ -53,7 +53,6 @@ The database is a [JSON][json] file, where each `key` is a URL specifying the lo
 <section class="links">
 
 [json]: http://www.json.org/
-
 [percent-encoding]: https://en.wikipedia.org/wiki/Percent-encoding
 
 </section>

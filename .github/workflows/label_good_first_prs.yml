@@ -31,10 +31,8 @@ on:
 
 # Workflow jobs:
 jobs:
-
   # Define a job which automatically labels pull requests based on whether they reference good first issues
   labeler:
-
     # Define job name:
     name: 'Label PRs for issues with label "Good First Issue" as "Good First PR"s'
 
@@ -52,7 +50,7 @@ jobs:
     # Define the sequence of job steps:
     steps:
       # Checkout the repository:
-      - name: 'Checkout repository'
+      - name: "Checkout repository"
         # Pin action to full length commit SHA
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
@@ -68,7 +66,7 @@ jobs:
 
       # Check whether any of the referenced issues is a "Good First Issue":
       - name: 'Check whether any of the referenced issues is a "Good First Issue"'
-        id: 'check-pr'
+        id: "check-pr"
         env:
           PR_NUMBER: ${{ github.event.pull_request.number }}
         run: |

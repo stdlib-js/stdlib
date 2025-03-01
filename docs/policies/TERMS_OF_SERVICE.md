@@ -22,20 +22,20 @@ Subject to these Terms, the Project grants you permission to use Services. That 
 
 Your permission to use Services are subject to the following conditions:
 
--   You must be at least 13 years of age.
--   You must use Services only in accordance with "Acceptable Use".
+- You must be at least 13 years of age.
+- You must use Services only in accordance with "Acceptable Use".
 
 ## Acceptable Use
 
--   You will abide by the [Code of Conduct][stdlib-code-of-conduct].
--   You will not violate any applicable law.
--   You will not falsely imply that you are affiliated with or endorsed by the Project.
--   You will not remove any copyright or marking indicating proprietary ownership from any material obtained via Services.
--   You will not display any portion of the website via an HTML iframe.
--   You will not disable, tamper with, avoid, or circumvent any security or access restrictions of Services, or access parts of Services not intended for access by you.
--   You will not forge any TCP/IP packet header or any part of the header information in any email or posting, or in any way use the Services to send altered, deceptive, or false source-identifying information.
--   You will not strain infrastructure of Services with an unreasonable volume of requests, or requests designed to impose an unreasonable load on the technical systems underlying Services.
--   You will not encourage or assist any other person in violation of "Acceptable Use".
+- You will abide by the [Code of Conduct][stdlib-code-of-conduct].
+- You will not violate any applicable law.
+- You will not falsely imply that you are affiliated with or endorsed by the Project.
+- You will not remove any copyright or marking indicating proprietary ownership from any material obtained via Services.
+- You will not display any portion of the website via an HTML iframe.
+- You will not disable, tamper with, avoid, or circumvent any security or access restrictions of Services, or access parts of Services not intended for access by you.
+- You will not forge any TCP/IP packet header or any part of the header information in any email or posting, or in any way use the Services to send altered, deceptive, or false source-identifying information.
+- You will not strain infrastructure of Services with an unreasonable volume of requests, or requests designed to impose an unreasonable load on the technical systems underlying Services.
+- You will not encourage or assist any other person in violation of "Acceptable Use".
 
 Crawling the Services is allowed if done in accordance with the provisions of our `robots.txt` file.
 
@@ -73,8 +73,8 @@ If you have any questions or concerns regarding these Terms, please do not hesit
 
 Parts of this policy document were originally included in
 
--   [npm, Inc Open-Source Terms][npm-open-source-terms]
--   [Medium Terms of Service][medium-terms-of-service]
+- [npm, Inc Open-Source Terms][npm-open-source-terms]
+- [Medium Terms of Service][medium-terms-of-service]
 
 licensed under Creative Commons Attribution-ShareAlike licenses.
 
@@ -89,15 +89,10 @@ Copyright © The Stdlib [Authors][stdlib-authors].
 <section class="links">
 
 [stdlib-git-commit-log-terms-of-service]: https://github.com/stdlib-js/stdlib/commits/develop/docs/policies/TERMS_OF_SERVICE.md
-
 [npm-open-source-terms]: https://www.npmjs.com/policies/open-source-terms
-
 [medium-terms-of-service]: https://github.com/Medium/medium-policy/blob/3c76f50e5e6a529c8352c85c9ed596ef95f863b7/terms-of-service.md
-
 [stdlib-code-of-conduct]: https://github.com/stdlib-js/stdlib/blob/develop/CODE_OF_CONDUCT.md
-
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
-
 [cc-by-sa-4.0]: https://creativecommons.org/licenses/by-sa/4.0/
 
 </section>

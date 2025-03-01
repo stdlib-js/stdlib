@@ -4,9 +4,7 @@
   "IgnoreDefaults": true,
   "SpacesAfterTabs": false,
   "NoColor": false,
-  "Exclude": [
-    "\\.*[^d]$"
-  ],
+  "Exclude": ["\\.*[^d]$"],
   "AllowedContentTypes": [],
   "PassedFiles": [],
   "Disable": {

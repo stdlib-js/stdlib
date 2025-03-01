@@ -4,7 +4,7 @@
 
 <!-- Section for describing a command-line interface. -->
 
-* * *
+---
 
 <section class="cli">
 

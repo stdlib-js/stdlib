@@ -27,12 +27,10 @@ on:
 
 # Workflow jobs:
 jobs:
-
   # Define a job which posts a comment to "good first issues":
   add_comment:
-
     # Define job name:
-    name: 'Check for Good First Issue label'
+    name: "Check for Good First Issue label"
 
     # Only run this job if the pull request has a specific label:
     if: "${{ github.event.label.name == 'Good First Issue' }}"
@@ -47,9 +45,8 @@ jobs:
 
     # Define the sequence of job steps:
     steps:
-
       # Post a comment:
-      - name: 'Add comment'
+      - name: "Add comment"
         run: gh issue comment "$NUMBER" --body "$BODY"
         env:
           GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}

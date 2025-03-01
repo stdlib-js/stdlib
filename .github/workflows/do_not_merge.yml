@@ -31,12 +31,10 @@ on:
 
 # Workflow jobs:
 jobs:
-
   # Define a job which fails a pull request if the pull request has a "Do Not Merge" label:
   do_not_merge:
-
     # Define job name:
-    name: 'Check for Do Not Merge label'
+    name: "Check for Do Not Merge label"
 
     # Only run this job if the pull request has a "Do Not Merge" label:
     if: ${{ contains(github.event.*.labels.*.name, 'Do Not Merge') }}
@@ -50,9 +48,8 @@ jobs:
 
     # Define the sequence of job steps:
     steps:
-
       # Fail the pull request:
-      - name: 'Prevent merge'
+      - name: "Prevent merge"
         run: |
           echo "Pull request is labeled as 'Do Not Merge'."
           echo "This workflow fails so that the pull request cannot be merged."

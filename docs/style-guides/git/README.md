@@ -72,27 +72,27 @@ The **type** and **short summary** fields are **mandatory**, and the **scope** f
 
 The **type** field labels a commit and indicates the category of change introduced by a commit. The project uses the following commit types:
 
--   **bench**: benchmark-only changes, such as adding missing benchmarks or correcting existing benchmarks. This type has lower precedence than other types, and, thus, benchmarks accompanying other types of changes can be categorized according to those other types. 
+- **bench**: benchmark-only changes, such as adding missing benchmarks or correcting existing benchmarks. This type has lower precedence than other types, and, thus, benchmarks accompanying other types of changes can be categorized according to those other types.
 
--   **build**: anything to do with building and releasing the project, including changes to automation and continuous integration configuration files and scripts (e.g., GitHub actions, CircleCI, Azure, etc).
+- **build**: anything to do with building and releasing the project, including changes to automation and continuous integration configuration files and scripts (e.g., GitHub actions, CircleCI, Azure, etc).
 
--   **chore**: neither a fix, a feature, nor a refactor; a repetitive mechanical task, such as updating package meta data or updating external dependencies.
+- **chore**: neither a fix, a feature, nor a refactor; a repetitive mechanical task, such as updating package meta data or updating external dependencies.
 
--   **deprecate**: a change that deprecates an existing feature. This type correlates with `MINOR` in [Semantic Versioning][semver].
+- **deprecate**: a change that deprecates an existing feature. This type correlates with `MINOR` in [Semantic Versioning][semver].
 
--   **docs**: documentation-only changes. Documentation changes include changes to the following: READMEs, JSDoc/Doxygen-style comments, annotations, source comments, and examples (including examples files). Note that changes to TypeScript declarations files are **not** documentation-only changes, as TypeScript declarations are part of a package's public API and are consumed by downstream project consumers.
+- **docs**: documentation-only changes. Documentation changes include changes to the following: READMEs, JSDoc/Doxygen-style comments, annotations, source comments, and examples (including examples files). Note that changes to TypeScript declarations files are **not** documentation-only changes, as TypeScript declarations are part of a package's public API and are consumed by downstream project consumers.
 
--   **feat**: a new feature. This type typically correlates with `MINOR` in [Semantic Versioning][semver]; however, a new feature may introduce a breaking change and thus correlate with `MAJOR` in [Semantic Versioning][semver] (e.g., if an existing user-facing API is completely changed to support new behaviors and existing behaviors are not preserved).
+- **feat**: a new feature. This type typically correlates with `MINOR` in [Semantic Versioning][semver]; however, a new feature may introduce a breaking change and thus correlate with `MAJOR` in [Semantic Versioning][semver] (e.g., if an existing user-facing API is completely changed to support new behaviors and existing behaviors are not preserved).
 
--   **fix**: bug fixes, including changes to the behavior of existing features and including changes that remove or mitigate security vulnerabilities. This type correlates with `PATCH` in [Semantic Versioning][semver].
+- **fix**: bug fixes, including changes to the behavior of existing features and including changes that remove or mitigate security vulnerabilities. This type correlates with `PATCH` in [Semantic Versioning][semver].
 
--   **perf**: a change that improves performance.
+- **perf**: a change that improves performance.
 
--   **refactor**: neither a fix nor a feature; a change that does not change behavior from the perspective of downstream consumers of the project. If refactoring improves performance, **perf** takes higher priority.
+- **refactor**: neither a fix nor a feature; a change that does not change behavior from the perspective of downstream consumers of the project. If refactoring improves performance, **perf** takes higher priority.
 
--   **remove**: removes a feature. This type correlates with `MAJOR` in [Semantic Versioning][semver].
+- **remove**: removes a feature. This type correlates with `MAJOR` in [Semantic Versioning][semver].
 
--   **revert**: a change which undoes a previous change. The **short summary** must include the previous commit message short summary and the type label. For example, if the initial commit is
+- **revert**: a change which undoes a previous change. The **short summary** must include the previous commit message short summary and the type label. For example, if the initial commit is
 
     ```text
     fix(tools): address race condition when iterating over files
@@ -104,11 +104,11 @@ The **type** field labels a commit and indicates the category of change introduc
     revert: fix(tools): address race condition when iterating over files
     ```
 
--   **style**: a change which improves code style (e.g., whitespace, formatting, semicolons, etc) and does not affect the meaning of code.
+- **style**: a change which improves code style (e.g., whitespace, formatting, semicolons, etc) and does not affect the meaning of code.
 
--   **test**: test-only changes, such as adding missing tests or correcting existing tests. This type has lower precedence than other types, and, thus, tests accompanying other types of changes can be categorized according to those other types. 
+- **test**: test-only changes, such as adding missing tests or correcting existing tests. This type has lower precedence than other types, and, thus, tests accompanying other types of changes can be categorized according to those other types.
 
--   **temp**: temporary, experimental, or exploratory changes that are not intended to be permanent. Occasionally, one may want to push changes to GitHub that are intended to be short-lived, such as when debugging continuous integration or ad-hoc debugging on live systems.
+- **temp**: temporary, experimental, or exploratory changes that are not intended to be permanent. Occasionally, one may want to push changes to GitHub that are intended to be short-lived, such as when debugging continuous integration or ad-hoc debugging on live systems.
 
 Breaking changes **must** include an exclamation point as part of the **type**. For example,
 
@@ -145,10 +145,10 @@ The [Conventional Commits][conventional-commits] specification includes support 
 
 The short summary **must** provide a succinct description of a change and adhere to the following conventions:
 
--   Use the [imperative][imperative-mood], present tense (e.g., "change", not "changed" or "changes").
--   Do **not** capitalize the first letter.
--   Do **not** include a period at the end.
--   Should be less than **72** characters.
+- Use the [imperative][imperative-mood], present tense (e.g., "change", not "changed" or "changes").
+- Do **not** capitalize the first letter.
+- Do **not** include a period at the end.
+- Should be less than **72** characters.
 
 A properly formed short summary should complete the following sentence:
 
@@ -242,13 +242,13 @@ DEPRECATED: <short summary>
 
 A commit message footer may include other structured information using the [Git trailer format][git-trailer-format] (`token: value`). For example,
 
--   `Fixes:` link to a GitHub issue describing a bug that the commit fixes.
--   `Closes:` link to a GitHub issue or pull request that the commit closes.
--   `PR-URL:` link to the GitHub pull request responsible for the commit (e.g., upon squash and merge).
--   `Reviewed-by:` the name and e-mail of a commit reviewer (e.g., `Jane Doe <jane@doe.com>`).
--   `Co-authored-by:` the name and e-mail of a contributor who collaborated on the commit.
--   `Ref:` link to a public resource (e.g., commit SHA, external documentation, reference implementation, etc).
--   `Private-ref:` link to a private resource (e.g., issue tracker, pull request, discussion, etc) related to the commit. Private references should only be included in the commit message body using the `Private-ref` token.
+- `Fixes:` link to a GitHub issue describing a bug that the commit fixes.
+- `Closes:` link to a GitHub issue or pull request that the commit closes.
+- `PR-URL:` link to the GitHub pull request responsible for the commit (e.g., upon squash and merge).
+- `Reviewed-by:` the name and e-mail of a commit reviewer (e.g., `Jane Doe <jane@doe.com>`).
+- `Co-authored-by:` the name and e-mail of a contributor who collaborated on the commit.
+- `Ref:` link to a public resource (e.g., commit SHA, external documentation, reference implementation, etc).
+- `Private-ref:` link to a private resource (e.g., issue tracker, pull request, discussion, etc) related to the commit. Private references should only be included in the commit message body using the `Private-ref` token.
 
 Each token may be repeated; however, only one token is allowed per line. Tokens **must** begin with a capital letter followed by all lowercase letters, a colon `:`, and a space. A token **must** not include whitespace, and individual words **must** be separated by a hyphen `-` (e.g., `Reviewed-by`, not `Reviewed by`).
 
@@ -258,13 +258,13 @@ The only exceptions to the restrictions on token case and inclusion of whitespac
 
 If a commit reverts a previous commit, the commit type **must** be **revert**, followed by the header of the reverted commit. The commit message body should contain:
 
--   Information about the commit SHA being reverted in the following format:
+- Information about the commit SHA being reverted in the following format:
 
     ```text
     This reverts commit <SHA>.
     ```
 
--   A clear description of the reason for reverting the previous commit.
+- A clear description of the reason for reverting the previous commit.
 
 For example,
 
@@ -275,7 +275,7 @@ This reverts commit b3befad91a6e39288ea53d540a4a483b0898fb49. The previous
 guidance was too restrictive.
 ```
 
-* * *
+---
 
 ## Discussion
 
@@ -285,7 +285,7 @@ The [Conventional Commits][conventional-commits] specification requires contribu
 
 **Merge commits**: Git generated commits, such as merge commits, do not follow the above guidelines, but this does not mean that these commits should be avoided. When analyzing commit history (e.g., as part of automation and changelog generation), Git generated commits will be ignored.
 
-* * *
+---
 
 ## License
 
@@ -294,19 +294,12 @@ This document may be reused under a [Creative Commons Attribution-ShareAlike Lic
 <section class="links">
 
 [conventional-commits]: https://www.conventionalcommits.org/en/v1.0.0/
-
 [git]: https://git-scm.com/
-
 [git-commit-squash]: https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---squashltcommitgt
-
 [git-commit-fixup]: https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---fixupamendrewordltcommitgt
-
 [git-trailer-format]: https://git-scm.com/docs/git-interpret-trailers
-
 [imperative-mood]: https://en.wikipedia.org/wiki/Imperative_mood
-
 [semver]: http://semver.org/
-
 [license]: https://creativecommons.org/licenses/by-sa/4.0/
 
 </section>

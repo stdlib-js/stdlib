@@ -22,7 +22,7 @@ limitations under the License.
 
 > Development utility.
 
-This project uses [`make`][make] as its development utility. For an overview of `make`, see the `make` [manual][make]. 
+This project uses [`make`][make] as its development utility. For an overview of `make`, see the `make` [manual][make].
 
 ## Usage
 
@@ -34,7 +34,7 @@ To view a list of available `Makefile` targets,
 $ make help
 ```
 
-* * *
+---
 
 #### REPL
 
@@ -44,7 +44,7 @@ To launch a REPL,
 $ make repl
 ```
 
-* * *
+---
 
 #### Notes
 
@@ -54,9 +54,9 @@ Annotating source code is a useful means for inlining action items and notes. Fo
 
 ```javascript
 // FIXME: don't release the zalgo!
-function foo( cb ) {
-    if ( bar ) {
-        return asyncFcn( cb );
+function foo(cb) {
+    if (bar) {
+        return asyncFcn(cb);
     }
     cb();
 }
@@ -70,14 +70,14 @@ $ make notes
 
 The following annotations are recognized:
 
--   **TODO**: annotates a future task.
--   **FIXME**: annotates a problem.
--   **HACK**: annotates fragile/non-general solutions.
--   **WARNING**: annotates possible pitfalls or gotchas.
--   **OPTIMIZE**: annotates code which needs optimizing.
--   **NOTE**: annotates questions, comments, or anything which does not fit under `TODO`/`FIXME`/`HACK`/`WARNING`/`OPTIMIZE` and should be brought to a reader's attention.
+- **TODO**: annotates a future task.
+- **FIXME**: annotates a problem.
+- **HACK**: annotates fragile/non-general solutions.
+- **WARNING**: annotates possible pitfalls or gotchas.
+- **OPTIMIZE**: annotates code which needs optimizing.
+- **NOTE**: annotates questions, comments, or anything which does not fit under `TODO`/`FIXME`/`HACK`/`WARNING`/`OPTIMIZE` and should be brought to a reader's attention.
 
-* * *
+---
 
 #### Files
 
@@ -103,9 +103,9 @@ $ make FILES_FILTER=".*/assert/is-nan/.*" list-files
 
 **Notes**:
 
--   Most filters should begin with `.*/` and end with `/.*`, as a filter is used as a regular expression to test a file path.
+- Most filters should begin with `.*/` and end with `/.*`, as a filter is used as a regular expression to test a file path.
 
--   The `*_PATTERN` and `*_FILTER` environment variables map to `-name` and `-regex` options, respectively, for the `find` command. For certain types of operations, like regular expressions using `|` for alternative matches, you may need to use `*_FILTER` over `*_PATTERN`. For instance,
+- The `*_PATTERN` and `*_FILTER` environment variables map to `-name` and `-regex` options, respectively, for the `find` command. For certain types of operations, like regular expressions using `|` for alternative matches, you may need to use `*_FILTER` over `*_PATTERN`. For instance,
 
     ```bash
     # List all `R` test fixtures...
@@ -254,7 +254,7 @@ To list all package names under a `@stdlib` descendant directory,
 $ make SRC_DIR=./@stdlib/math/base list-pkgs-names
 ```
 
-* * *
+---
 
 #### Package Examples
 
@@ -271,7 +271,7 @@ To limit which examples are run, use the same environment variables recognized b
 $ make EXAMPLES_FILTER=".*/math/base/special/.*" EXAMPLES_PATTERN=index.js examples
 ```
 
-* * *
+---
 
 #### Unit Tests
 
@@ -378,7 +378,7 @@ $ make TESTS_FILTER=".*/math/base/utils/.*" test-browsers
 $ make TESTS_FILTER=".*/\@stdlib/utils/.*" test-view-browsers
 ```
 
-* * *
+---
 
 #### Benchmarks
 
@@ -395,7 +395,7 @@ To limit which benchmarks are run, use the same environment variables recognized
 $ make BENCHMARKS_FILTER=".*/math/base/special/.*" BENCHMARKS_PATTERN=benchmark.js benchmark
 ```
 
-* * *
+---
 
 #### Documentation
 
@@ -411,7 +411,7 @@ To view the documentation in a local web browser,
 $ make view-src-docs
 ```
 
-* * *
+---
 
 #### Lint
 
@@ -469,7 +469,7 @@ To lint `package.json` files,
 $ make lint-pkg-json
 ```
 
-* * *
+---
 
 #### Complexity
 
@@ -509,7 +509,7 @@ To analyze only JavaScript files,
 $ make SOURCES_FILTER=... TESTS_FILTER=... EXAMPLES_FILTER=... complexity-javascript
 ```
 
-* * *
+---
 
 #### Dependencies
 
@@ -525,7 +525,7 @@ To check licenses of installed package dependencies,
 $ make check-licenses
 ```
 
-* * *
+---
 
 #### Bash Completion
 
@@ -546,11 +546,8 @@ and does not include targets declared via variables. Excluded targets could be i
 <section class="links">
 
 [make]: https://www.gnu.org/software/make/manual/make.html#Introduction
-
 [jsdoc]: https://jsdoc.app/
-
 [nvm]: https://github.com/creationix/nvm
-
 [bash-completion]: https://www.gnu.org/software/bash/manual/bashref.html#Programmable-Completion
 
 </section>

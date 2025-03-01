@@ -20,18 +20,18 @@ name: codeql_configuration
 
 # Define paths for which code scanning should be performed:
 paths:
-  - 'lib'
+  - "lib"
 
 # Define paths for which code scanning should *not* be performed:
 paths-ignore:
-  - '**/_tools'
-  - '**/test/*.js'
-  - '**/test/**/*.js'
-  - '**/benchmark/*.js'
-  - '**/benchmark/**/*.js'
-  - '**/examples/*.js'
-  - '**/examples/**/*.js'
-  - '**/data'
-  - '**/scripts'
-  - '**/etc'
-  - '**/docs'
+  - "**/_tools"
+  - "**/test/*.js"
+  - "**/test/**/*.js"
+  - "**/benchmark/*.js"
+  - "**/benchmark/**/*.js"
+  - "**/examples/*.js"
+  - "**/examples/**/*.js"
+  - "**/data"
+  - "**/scripts"
+  - "**/etc"
+  - "**/docs"

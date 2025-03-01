@@ -24,9 +24,9 @@ limitations under the License.
 
 Documentation tests (**doctests**) are comment annotations which indicate expected behavior. In the spirit of "literate testing" or "executable documentation", doctests serve three primary purposes:
 
--   to allow readers to gain an intuition as to return value types, ranges, and behavior.
--   to facilitate (in-line) unit testing, thus guarding against regressions.
--   to ensure documentation remains current, documenting behavior as it is, not as it was.
+- to allow readers to gain an intuition as to return value types, ranges, and behavior.
+- to facilitate (in-line) unit testing, thus guarding against regressions.
+- to ensure documentation remains current, documenting behavior as it is, not as it was.
 
 In contrast to unit tests which can become complex and involved, doctests are meant to be small (preferably fitting on a single line) and equivalent to a single assertion. For example,
 
@@ -52,23 +52,23 @@ A doctest annotation is a syntactically valid language comment consisting of a *
 
 Doctest annotations begin with one of three keyword markers (with limited exceptions documented below):
 
--   `returns`: indicates that a preceding expression should **return** a value.
--   `=>`: indicates that a preceding expression should **print** a value (e.g., via `console.log`) or, alternately, when preceded by a variable name, indicates a **mutated** value.
--   `throws`: indicates that a preceding expression should **throw** an error.
+- `returns`: indicates that a preceding expression should **return** a value.
+- `=>`: indicates that a preceding expression should **print** a value (e.g., via `console.log`) or, alternately, when preceded by a variable name, indicates a **mutated** value.
+- `throws`: indicates that a preceding expression should **throw** an error.
 
 For example,
 
 <!-- eslint-disable no-useless-concat, stdlib/doctest-marker, no-unused-expressions -->
 
 ```javascript
-('Hello ' + 'world');
+"Hello " + "world";
 // returns 'Hello world'
 ```
 
 contains a JavaScript doctest annotation for the expression `('Hello ' + 'world')` and indicates that the expression should "return" the value `'Hello world'`. Similarly,
 
 ```javascript
-console.log( 'Hello world' );
+console.log("Hello world");
 // => 'Hello world'
 ```
 
@@ -78,7 +78,7 @@ annotates that the expression `console.log( 'Hello world' )` should "print" the 
 
 ```javascript
 function beep() {
-    throw new TypeError( 'boop' );
+    throw new TypeError("boop");
 }
 
 beep();
@@ -116,16 +116,16 @@ where `returns [...]` indicates a more generic non-empty `array`, this is perhap
 To indicate value mutation, the `=>` annotation marker is preceded by a value reference (variable name). For example,
 
 ```javascript
-function swap( arr, i, j ) {
-    var tmp = arr[ i ];
-    arr[ i ] = arr[ j ];
-    arr[ j ] = tmp;
+function swap(arr, i, j) {
+    var tmp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = tmp;
     return true;
 }
 
-var x = [ 1, 2 ];
+var x = [1, 2];
 
-swap( x, 0, 1 );
+swap(x, 0, 1);
 // x => [ 2, 1 ]
 ```
 
@@ -138,7 +138,7 @@ The `e.g.,` and `{var} =>` prefixes can be used in combination. For example,
 <!-- eslint-disable stdlib/doctest -->
 
 ```javascript
-foo( x );
+foo(x);
 // e.g., x => [ 1, 3, 2 ]
 ```
 
@@ -158,8 +158,8 @@ var y = x;
 asserts that `y` should equal the numeric value `3.141592653589793`.
 
 ```javascript
-var s1 = 'foo';
-var s2 = 'bar';
+var s1 = "foo";
+var s2 = "bar";
 
 var s3 = s1 + s2;
 // returns 'foobar'
@@ -170,7 +170,7 @@ asserts that `s3` should equal the string `'foobar'`. Similarly,
 ```javascript
 var x = 3.141592653589793;
 
-console.log( x );
+console.log(x);
 // => 3.141592653589793
 ```
 
@@ -181,22 +181,22 @@ asserts that the value `3.141592653589793` is printed to an output destination (
 Often when generating numeric output, one wishes to display approximate values due to, e.g., floating-point rounding error. To indicate approximate equality, expected values are prefixed with `~`. For example,
 
 ```javascript
-function npi( i ) {
+function npi(i) {
     return i * 3.141592653589793;
 }
 
-var x = npi( 2 );
+var x = npi(2);
 // returns ~6.28
 ```
 
 indicates that `x` should **approximately equal** `6.28`. Similarly,
 
 ```javascript
-function npi( i ) {
+function npi(i) {
     return i * 3.141592653589793;
 }
 
-console.log( npi( 2 ) );
+console.log(npi(2));
 // => ~6.28
 ```
 
@@ -259,7 +259,7 @@ indicates that `foo()` returns a JavaScript `object` containing a nested array w
 ```javascript
 var o = foo();
 
-console.log( JSON.stringify( o ) );
+console.log(JSON.stringify(o));
 // => '{ "a": [ ~1.1, ~2.2, ~3.3 ] }'
 ```
 
@@ -325,7 +325,7 @@ indicates that `foo()` returns a value which is an "instance of" `RegExp` (i.e.,
 <!-- eslint-disable stdlib/doctest -->
 
 ```javascript
-var z = new Complex128( 1.0, -1.0 );
+var z = new Complex128(1.0, -1.0);
 // returns <Complex128>
 ```
 
@@ -335,7 +335,7 @@ indicates that `z` should be an "instance of" `Complex128` (i.e., a custom class
 
 ```javascript
 function foo() {
-    throw new Error( 'beep' );
+    throw new Error("beep");
 }
 
 foo();
@@ -353,7 +353,7 @@ In _limited_ circumstances, deep equality can be combined with instance equality
 <!-- eslint-disable stdlib/require-globals -->
 
 ```javascript
-var x = new Float64Array( [ 1.0, 2.0, 3.0 ] );
+var x = new Float64Array([1.0, 2.0, 3.0]);
 // returns <Float64Array>[ 1.0, 2.0, 3.0 ]
 ```
 
@@ -396,7 +396,7 @@ Similarly, although expected to be a **rare** use case, conditional equality can
 ```javascript
 var v = foo();
 
-console.log( v );
+console.log(v);
 // => 'foo' || null
 ```
 
@@ -498,22 +498,22 @@ var arr = foo();
 
 indicates that `foo()` returns a JavaScript `object` having the properties `a` and `b` and zero or more **additional** undefined/unspecified properties.
 
-* * *
+---
 
 ## Notes
 
--   Write doctests with care. Avoid the extravagant. Prefer simple test cases.
--   Avoid obscure test cases, as these typically make for bad documentation.
--   Doctests complement, but are **not** a substitute for, unit testing. While both doctests and unit tests aid in regression testing, one of the principle strengths of doctests is the ability to interleave (in a more natural manner) code and explanatory text. Doctests are **not** the place to exhaustively test, especially with little explanation, complex edge cases involving significant preceding code. As a general rule, use doctests to convey essential aspects as simply and concisely as possible in a literate manner. Use unit tests to thoroughly and exhaustively explore and probe API contracts and expected behavior.
--   Writing effective doctests is an _art_ in knowing when, how much, and (precisely) what you want to convey to the reader. The more you write and use doctests, the better your intuition will be in recognizing what is truly essential and how each essential aspect should be conveyed.
+- Write doctests with care. Avoid the extravagant. Prefer simple test cases.
+- Avoid obscure test cases, as these typically make for bad documentation.
+- Doctests complement, but are **not** a substitute for, unit testing. While both doctests and unit tests aid in regression testing, one of the principle strengths of doctests is the ability to interleave (in a more natural manner) code and explanatory text. Doctests are **not** the place to exhaustively test, especially with little explanation, complex edge cases involving significant preceding code. As a general rule, use doctests to convey essential aspects as simply and concisely as possible in a literate manner. Use unit tests to thoroughly and exhaustively explore and probe API contracts and expected behavior.
+- Writing effective doctests is an _art_ in knowing when, how much, and (precisely) what you want to convey to the reader. The more you write and use doctests, the better your intuition will be in recognizing what is truly essential and how each essential aspect should be conveyed.
 
-* * *
+---
 
 ## Command-line Interfaces
 
 Doctest annotations can be extended to command-line interface (CLI) terminal output. Annotations, however, differ as follows:
 
--   Preceding terminal commands should include a command-line prompt. For example,
+- Preceding terminal commands should include a command-line prompt. For example,
 
     <!-- run-disable -->
 
@@ -524,7 +524,7 @@ Doctest annotations can be extended to command-line interface (CLI) terminal out
 
     where `$` is the command-line prompt. Including the command-line prompt allows for straightforward identification of commands and expected output.
 
--   Expected output does **not** need an annotation marker prefix. For example,
+- Expected output does **not** need an annotation marker prefix. For example,
 
     <!-- run-disable -->
 
@@ -535,7 +535,7 @@ Doctest annotations can be extended to command-line interface (CLI) terminal out
 
     does not require `returns` or `=>` to indicate the expected value `boop`. We simply **assume** that whatever is not preceded by a command-line prompt is an expected value.
 
--   Multiple successive wildcards can be used to indicate repeated output. For example,
+- Multiple successive wildcards can be used to indicate repeated output. For example,
 
     <!-- run-disable -->
 
@@ -547,7 +547,7 @@ Doctest annotations can be extended to command-line interface (CLI) terminal out
 
     indicates that the `foo` command prints two or more lines of undefined/unspecified output. This convention is particularly useful when indicating that a command will/may continually print (a potentially indefinite amount of) output until its process is stopped.
 
--   The only prefix which is supported is `e.g.,` in order to indicate exemplary/illustrative output.
+- The only prefix which is supported is `e.g.,` in order to indicate exemplary/illustrative output.
 
     <!-- run-disable -->
 
@@ -556,9 +556,9 @@ Doctest annotations can be extended to command-line interface (CLI) terminal out
     e.g., foobar
     ```
 
--   Command-line interfaces primarily communicate with one another using text (the universal interface), and, thus, expected output is **always** interpreted as text. Accordingly, language syntax distinguishing value types should be **omitted** (as used, e.g., in `returns` doctest annotations), and neither conditional nor type equality annotations should be supported.
+- Command-line interfaces primarily communicate with one another using text (the universal interface), and, thus, expected output is **always** interpreted as text. Accordingly, language syntax distinguishing value types should be **omitted** (as used, e.g., in `returns` doctest annotations), and neither conditional nor type equality annotations should be supported.
 
-* * *
+---
 
 ## stdlib
 
@@ -618,7 +618,7 @@ var mat = foo();
 */
 ```
 
-indicates that `foo()` returns a matrix having at least `2` rows and at least `2` columns and whose  contents include the values `1.14`, `-3.14`, `0.00`, and `0.50`.
+indicates that `foo()` returns a matrix having at least `2` rows and at least `2` columns and whose contents include the values `1.14`, `-3.14`, `0.00`, and `0.50`.
 
 Lastly, similar to other complex data structures, approximate values are demarcated with a tilde `~`. For example,
 
@@ -688,8 +688,8 @@ indicates that the command `foo` prints a JavaScript `number` value.
 
 ### Notes
 
--   For JavaScript doctests, printed output (via `console.log()`) **should be** valid JSON and/or a canonical serialized string representation. In general, valid JSON significantly simplifies the de-serialization and comparison of expected values. Because of this constraint, authors should think carefully about how and what is printed as expected output. For example, rather than print a large serialized JSON object, one might choose to print particular properties whose serialized expected values are more readily parsed and compiled.
--   The matrix and ndarray doctest annotations documented above apply **only** to `returns` doctest annotations and **not** to printed output. When printing matrices and ndarrays, either serialize as JSON or to a canonical string.
+- For JavaScript doctests, printed output (via `console.log()`) **should be** valid JSON and/or a canonical serialized string representation. In general, valid JSON significantly simplifies the de-serialization and comparison of expected values. Because of this constraint, authors should think carefully about how and what is printed as expected output. For example, rather than print a large serialized JSON object, one might choose to print particular properties whose serialized expected values are more readily parsed and compiled.
+- The matrix and ndarray doctest annotations documented above apply **only** to `returns` doctest annotations and **not** to printed output. When printing matrices and ndarrays, either serialize as JSON or to a canonical string.
 
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 

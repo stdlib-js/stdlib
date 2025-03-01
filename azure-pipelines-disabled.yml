@@ -18,10 +18,8 @@
 
 # Define the triggers which will cause a build to run:
 trigger:
-
   # Define branch triggers:
   branches:
-
     # List branches for which changes will trigger a build:
     include:
       - master
@@ -29,7 +27,6 @@ trigger:
 
   # Define path triggers:
   paths:
-
     # List paths for which changes should trigger a build:
     include:
       - bin
@@ -52,22 +49,17 @@ trigger:
       - datapackage.json
       - "*.md"
 
-
 # Define pull request triggers which will cause a build to run:
 pr:
-
   # Define branch triggers:
   branches:
-
     # List branches against which PRs will trigger a build to run:
     include:
       - master
       - develop
 
-
   # Define path triggers:
   paths:
-
     # List paths for which changes should trigger a build:
     include:
       - bin
@@ -91,12 +83,11 @@ pr:
       - datapackage.json
       - "*.md"
 
-
 jobs:
-  - job: 'unit_tests_linux'
+  - job: "unit_tests_linux"
 
     # Define a display name for use in the UI:
-    displayName: 'unit tests: linux'
+    displayName: "unit tests: linux"
 
     # Define how long a job is allowed to run before timing out:
     timeoutInMinutes: 360
@@ -106,37 +97,36 @@ jobs:
 
     # Specify the host environment:
     pool:
-      vmImage: 'ubuntu-16.04'
+      vmImage: "ubuntu-16.04"
 
     # Define variable sets for parallel job execution:
     strategy:
-
       # Define the maximum number of parallel jobs:
       maxParallel: 10
 
       # Define variable sets which will be used to create separate jobs (one per variable set!):
       matrix:
         node_v16:
-          NODE_VERSION: '16'
-          NPM_VERSION: '>2.7.0'
+          NODE_VERSION: "16"
+          NPM_VERSION: ">2.7.0"
         node_v14:
-          NODE_VERSION: '14'
-          NPM_VERSION: '>2.7.0'
+          NODE_VERSION: "14"
+          NPM_VERSION: ">2.7.0"
         node_v12:
-          NODE_VERSION: '12'
-          NPM_VERSION: '>2.7.0'
+          NODE_VERSION: "12"
+          NPM_VERSION: ">2.7.0"
         node_v10:
-          NODE_VERSION: '10'
-          NPM_VERSION: '>2.7.0 <7.0.0'
+          NODE_VERSION: "10"
+          NPM_VERSION: ">2.7.0 <7.0.0"
         node_v8:
-          NODE_VERSION: '8'
-          NPM_VERSION: '>2.7.0 <6.0.0'
+          NODE_VERSION: "8"
+          NPM_VERSION: ">2.7.0 <6.0.0"
         node_v6:
-          NODE_VERSION: '6'
-          NPM_VERSION: '>2.7.0 <6.0.0'
+          NODE_VERSION: "6"
+          NPM_VERSION: ">2.7.0 <6.0.0"
         node_v4:
-          NODE_VERSION: '4'
-          NPM_VERSION: '>2.7.0 <6.0.0'
+          NODE_VERSION: "4"
+          NPM_VERSION: ">2.7.0 <6.0.0"
 
     steps:
       # Configure clone settings:
@@ -149,20 +139,20 @@ jobs:
       - task: NodeTool@0
 
         # Define a UI display name:
-        displayName: 'Install Node.js'
+        displayName: "Install Node.js"
 
         # Define a task-specific timeout:
         timeoutInMinutes: 5
 
         # Define the Node.js version to install:
         inputs:
-          versionSpec: '$(NODE_VERSION)'
+          versionSpec: "$(NODE_VERSION)"
 
       # Update the npm client (older clients cannot handle scoped modules):
       - task: Npm@1
 
         # Define a UI display name:
-        displayName: 'Update npm'
+        displayName: "Update npm"
 
         # Define a task-specific timeout:
         timeoutInMinutes: 5
@@ -172,12 +162,11 @@ jobs:
           command: custom
           customCommand: 'install -g npm@"$(NPM_VERSION)"'
 
-
       # Print debug information:
       - task: bash@3
 
         # Define a UI display name:
-        displayName: 'Debug info'
+        displayName: "Debug info"
 
         # Define a task-specific timeout:
         timeoutInMinutes: 2

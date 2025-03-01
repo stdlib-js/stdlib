@@ -6,9 +6,9 @@ This document tells you what data is tracked and how the data is used.
 
 ## Definitions
 
--   "Project" means the source repository and all officially affiliated services, including websites, applications, content, and products ("Services").
--   "Website" is defined to comprise the main project website, officially affiliated websites, and the hosted (GitHub) source repository.
--   "We/Us" refers to the principal body (project owners) governing the project.
+- "Project" means the source repository and all officially affiliated services, including websites, applications, content, and products ("Services").
+- "Website" is defined to comprise the main project website, officially affiliated websites, and the hosted (GitHub) source repository.
+- "We/Us" refers to the principal body (project owners) governing the project.
 
 ## Website
 
@@ -74,9 +74,9 @@ If you have any questions or concerns about how we track user information, or ho
 
 Parts of this policy document were originally included in
 
--   [WordPress.org Privacy Policy][wordpress-privacy-policy]
--   [npm, Inc Privacy Policy][npm-privacy-policy]
--   [Medium Privacy Policy][medium-privacy-policy]
+- [WordPress.org Privacy Policy][wordpress-privacy-policy]
+- [npm, Inc Privacy Policy][npm-privacy-policy]
+- [Medium Privacy Policy][medium-privacy-policy]
 
 all of which were licensed under Creative Commons Attribution-ShareAlike licenses.
 
@@ -91,19 +91,12 @@ Copyright © The Stdlib [Authors][stdlib-authors].
 <section class="links">
 
 [google-analytics-privacy-policy]: https://support.google.com/analytics/answer/2700409?hl=en&utm_id=ad
-
 [google-analytics-opt-out-browser-add-on]: https://support.google.com/analytics/answer/181881?hl=en&ref_topic=2919631
-
 [stdlib-git-commit-log-privacy-policy]: https://github.com/stdlib-js/stdlib/commits/develop/PRIVACY
-
 [wordpress-privacy-policy]: https://wordpress.org/about/privacy/
-
 [npm-privacy-policy]: https://docs.npmjs.com/policies/privacy
-
 [medium-privacy-policy]: https://github.com/Medium/medium-policy/blob/3c76f50e5e6a529c8352c85c9ed596ef95f863b7/privacy-policy.md
-
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
-
 [cc-by-sa-4.0]: https://creativecommons.org/licenses/by-sa/4.0/
 
 </section>

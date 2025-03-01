@@ -38,8 +38,8 @@ When filing new [issues][stdlib-issues] and commenting on existing [issues][stdl
 
 **Before** filing a potential bug report,
 
--   Search for existing [issues][stdlib-issues] and [pull requests][stdlib-pull-requests].
--   Try some debugging techniques to help isolate the problem, including logging inputs and outputs.
+- Search for existing [issues][stdlib-issues] and [pull requests][stdlib-pull-requests].
+- Try some debugging techniques to help isolate the problem, including logging inputs and outputs.
 
 If the source of the problem is a third party package, file a bug report with the relevant package author, rather than on this repository.
 
@@ -53,13 +53,13 @@ Unfortunately, we are not able to investigate or fix bugs without a minimal repr
 
 When filing an [issue][stdlib-issues], provide the following, where possible:
 
--   A description of the issue.
--   Links to any related issues.
--   The full error message, including the stacktrace.
--   The sequence of steps required to reproduce the issue.
--   A minimal working example (i.e., the smallest chunk of code that triggers the error.) Ideally, the code can be pasted into a REPL or run from a source file. If the code is larger than `100` lines, consider creating a [gist][github-gist].
--   The expected results.
--   List of affected environments (e.g., browser, browser version, `npm` version, Node.js version, operating system, and stdlib version).
+- A description of the issue.
+- Links to any related issues.
+- The full error message, including the stacktrace.
+- The sequence of steps required to reproduce the issue.
+- A minimal working example (i.e., the smallest chunk of code that triggers the error.) Ideally, the code can be pasted into a REPL or run from a source file. If the code is larger than `100` lines, consider creating a [gist][github-gist].
+- The expected results.
+- List of affected environments (e.g., browser, browser version, `npm` version, Node.js version, operating system, and stdlib version).
 
 When pasting code blocks or output, use triple backticks to enable proper formatting. Surround inline code with single backticks. For other Markdown formatting tips and trips, see GitHub's [Markdown guide][github-markdown-guide].
 
@@ -71,36 +71,36 @@ Be aware that the `@` symbol tags users on GitHub, so **always** surround packag
 
 **Before** contributing code, be sure to
 
--   read and understand the [licensing terms][stdlib-license].
--   read and understand the [style guides][stdlib-style-guides].
--   read and understand the [doctest guide][stdlib-doctest].
+- read and understand the [licensing terms][stdlib-license].
+- read and understand the [style guides][stdlib-style-guides].
+- read and understand the [doctest guide][stdlib-doctest].
 
 For instructions on how to setup and configure your environment, be sure to
 
--   read and follow the [development guide][stdlib-development].
+- read and follow the [development guide][stdlib-development].
 
 If you have found a bug that you would like to fix,
 
--   file an [issue][stdlib-issues] on the project GitHub issue [tracker][stdlib-issues] describing the bug as instructed [above](#issues).
--   wait for feedback.
--   submit a [pull request][stdlib-pull-requests] with your proposed changes.
+- file an [issue][stdlib-issues] on the project GitHub issue [tracker][stdlib-issues] describing the bug as instructed [above](#issues).
+- wait for feedback.
+- submit a [pull request][stdlib-pull-requests] with your proposed changes.
 
 If you want to contribute a new feature or a breaking change to stdlib, be sure to
 
--   consult the [Gitter][stdlib-gitter] channel to discuss ideas and to gather feedback as to whether a feature would be better developed as an external package. Discussing the design upfront helps ensure that we're ready to accept to your work.
--   write an RFC (request for comments) detailing the proposed change and submit as an issue on the project GitHub issue tracker.
--   wait for RFC approval.
--   submit a [pull request][stdlib-pull-requests], making sure to adhere to the guidance set forth in the RFC.
+- consult the [Gitter][stdlib-gitter] channel to discuss ideas and to gather feedback as to whether a feature would be better developed as an external package. Discussing the design upfront helps ensure that we're ready to accept to your work.
+- write an RFC (request for comments) detailing the proposed change and submit as an issue on the project GitHub issue tracker.
+- wait for RFC approval.
+- submit a [pull request][stdlib-pull-requests], making sure to adhere to the guidance set forth in the RFC.
 
 If you want to contribute a new package, be sure to
 
--   read and follow the [package development guide][stdlib-packages].
--   read and follow the [REPL text guide][stdlib-repl-text].
+- read and follow the [package development guide][stdlib-packages].
+- read and follow the [REPL text guide][stdlib-repl-text].
 
 If you are unfamiliar with [Git][git], the version control system used by GitHub and this project,
 
--   see the [Git][git] docs.
--   try a tutorial, such as the [tutorial][github-git-tutorial] provided by GitHub.
+- see the [Git][git] docs.
+- try a tutorial, such as the [tutorial][github-git-tutorial] provided by GitHub.
 
 Next, take a look around the project, noting the style and organization of documentation, tests, examples, benchmarks, and source implementations. Consistency is highly **prioritized** within stdlib. Thus, the more you are able to match and adhere to project conventions and style, the more likely your contribution will be accepted. While we have done our best to automate linting and style guidelines, project automation is not perfect and cannot adequately capture the inevitable exceptions and nuance to many rules. In short, the more you study existing practice, the better prepared you will be to contribute to stdlib.
 
@@ -332,8 +332,8 @@ Note that, in most cases during the merge process, multiple commits will be [squ
 
 ### GitHub
 
--   When linking to specific lines of code in an issue or a pull request, hit the `y` key while viewing a file on GitHub. Doing so reloads the page with a URL that includes the specific version of the file you are viewing. This ensures that, when you refer to specific lines, these same lines can be easily viewed in the future, even if the content of the file changes.
--   GitHub does not send notifications to project maintainers when you push a commit and update a [pull request][github-pull-request], so be sure to comment on the pull request thread to inform reviewers that you have made changes and request another review using the GitHub UI.
+- When linking to specific lines of code in an issue or a pull request, hit the `y` key while viewing a file on GitHub. Doing so reloads the page with a URL that includes the specific version of the file you are viewing. This ensures that, when you refer to specific lines, these same lines can be easily viewed in the future, even if the content of the file changes.
+- GitHub does not send notifications to project maintainers when you push a commit and update a [pull request][github-pull-request], so be sure to comment on the pull request thread to inform reviewers that you have made changes and request another review using the GitHub UI.
 
 ### Writing Tests
 
@@ -414,10 +414,10 @@ Only a project administrator can manually trigger a build.
 
 By making a contribution to this project, I certify that:
 
--   (a) The contribution was created in whole or in part by me and I have the right to submit it under the open source license indicated in the file; or
--   (b) The contribution is based upon previous work that, to the best of my knowledge, is covered under an appropriate open source license and I have the right under that license to submit that work with modifications, whether created in whole or in part by me, under the same open source license (unless I am permitted to submit under a different license), as indicated in the file; or
--   (c) The contribution was provided directly to me by some other person who certified (a), (b) or (c) and I have not modified it.
--   (d) I understand and agree that this project and the contribution are public and that a record of the contribution (including all personal information I submit with it, including my sign-off) is maintained indefinitely and may be redistributed consistent with this project or the open source license(s) involved.
+- (a) The contribution was created in whole or in part by me and I have the right to submit it under the open source license indicated in the file; or
+- (b) The contribution is based upon previous work that, to the best of my knowledge, is covered under an appropriate open source license and I have the right under that license to submit that work with modifications, whether created in whole or in part by me, under the same open source license (unless I am permitted to submit under a different license), as indicated in the file; or
+- (c) The contribution was provided directly to me by some other person who certified (a), (b) or (c) and I have not modified it.
+- (d) I understand and agree that this project and the contribution are public and that a record of the contribution (including all personal information I submit with it, including my sign-off) is maintained indefinitely and may be redistributed consistent with this project or the open source license(s) involved.
 
 ## Conclusion
 
@@ -426,63 +426,34 @@ Phew. While the above may be a lot to remember, even for what seem like minor ch
 <section class="links">
 
 [stdlib-code-of-conduct]: https://github.com/stdlib-js/stdlib/blob/develop/CODE_OF_CONDUCT.md
-
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/stdlib/develop/LICENSE
-
 [stdlib-style-guides]: https://github.com/stdlib-js/stdlib/blob/develop/docs/style-guides
-
 [stdlib-style-guides-text]: https://github.com/stdlib-js/stdlib/blob/develop/docs/style-guides/text
-
 [stdlib-style-guides-git]: https://github.com/stdlib-js/stdlib/blob/develop/docs/style-guides/git
-
 [stdlib-doctest]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/doctest.md
-
 [stdlib-development]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/development.md
-
 [stdlib-branching]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/branching.md
-
 [stdlib-packages]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/packages.md
-
 [stdlib-repl-text]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/repl_text.md
-
 [stdlib-faq]: https://github.com/stdlib-js/stdlib/blob/develop/FAQ.md
-
 [stdlib-code-coverage]: https://codecov.io/github/stdlib-js/stdlib/branch/develop
-
 [stdlib-gitter]: https://gitter.im/stdlib-js/stdlib
-
 [stdlib-issues]: https://github.com/stdlib-js/stdlib/issues
-
 [stdlib-pull-requests]: https://github.com/stdlib-js/stdlib/pulls
-
 [open-collective-stdlib]: https://opencollective.com/stdlib
-
 [github-signup]: https://github.com/signup/free
-
 [github-pull-request]: https://help.github.com/articles/creating-a-pull-request/
-
 [github-gist]: https://gist.github.com/
-
 [github-markdown-guide]: https://guides.github.com/features/mastering-markdown/
-
 [github-fork]: https://help.github.com/articles/fork-a-repo/
-
 [github-git-tutorial]: http://try.github.io/levels/1/challenges/1
-
 [git]: http://git-scm.com/
-
 [git-clone-depth]: https://git-scm.com/docs/git-clone#git-clone---depthltdepthgt
-
 [git-remotes]: https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
-
 [git-rebase]: https://git-scm.com/docs/git-rebase
-
 [git-merge]: https://git-scm.com/docs/git-merge
-
 [git-rewriting-history]: https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History
-
 [git-commit-squash]: https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---squashltcommitgt
-
 [git-commit-fixup]: https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---fixupamendrewordltcommitgt
 
 </section>

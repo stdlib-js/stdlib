@@ -27,12 +27,10 @@ on:
 
 # Workflow jobs:
 jobs:
-
   # Define a job for removing the label and adding in-progress label:
   manage_labels:
-
     # Define a display name:
-    name: 'Manage labels'
+    name: "Manage labels"
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
@@ -47,8 +45,7 @@ jobs:
 
     # Define the job's steps:
     steps:
-
-      - name: 'Remove label'
+      - name: "Remove label"
         # Pin action to full length commit SHA
         uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
         with:
@@ -65,7 +62,7 @@ jobs:
               console.log( 'Error removing label: %s', error.message );
             }
 
-      - name: 'Add in-progress label'
+      - name: "Add in-progress label"
         # Pin action to full length commit SHA
         uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
         with:
@@ -79,7 +76,7 @@ jobs:
             })
 
       # Add initial reaction to comment with slash command:
-      - name: 'Add initial reaction'
+      - name: "Add initial reaction"
         run: |
           curl -X POST \
             -H "Accept: application/vnd.github.v3+json" \
@@ -89,12 +86,11 @@ jobs:
 
   # Define a job for checking for required files:
   check_files:
-
     # Define a display name:
-    name: 'Check for required files'
+    name: "Check for required files"
 
     # Ensure initial reaction job has completed before running this job:
-    needs: [ manage_labels ]
+    needs: [manage_labels]
 
     # Define the conditions under which the job should run:
     if: |
@@ -110,12 +106,11 @@ jobs:
 
   # Define a job for updating copyright header years:
   update_copyright_years:
-
     # Define a display name:
-    name: 'Update copyright header years'
+    name: "Update copyright header years"
 
     # Ensure initial reaction job has completed before running this job:
-    needs: [ manage_labels ]
+    needs: [manage_labels]
 
     # Define the conditions under which the job should run:
     if: |
@@ -132,12 +127,11 @@ jobs:
 
   # Define a job for auto-fixing lint errors:
   fix_lint_errors:
-
     # Define a display name:
-    name: 'Auto-fix lint errors'
+    name: "Auto-fix lint errors"
 
     # Ensure initial reaction job has completed before running this job:
-    needs: [ manage_labels ]
+    needs: [manage_labels]
 
     # Define the conditions under which the job should run:
     if: |
@@ -154,12 +148,11 @@ jobs:
 
   # Define a job for merging develop branch:
   merge_develop:
-
     # Define a display name:
-    name: 'Merge changes from develop branch into this PR'
+    name: "Merge changes from develop branch into this PR"
 
     # Ensure initial reaction job has completed before running this job:
-    needs: [ manage_labels ]
+    needs: [manage_labels]
 
     # Define the conditions under which the job should run:
     if: |
@@ -176,12 +169,11 @@ jobs:
 
   # Define a job for rebasing on develop branch:
   rebase_develop:
-
     # Define a display name:
-    name: 'Rebase this PR on top of develop branch'
+    name: "Rebase this PR on top of develop branch"
 
     # Ensure initial reaction job has completed before running this job:
-    needs: [ manage_labels ]
+    needs: [manage_labels]
 
     # Define the conditions under which the job should run:
     if: |
@@ -198,15 +190,22 @@ jobs:
 
   # Define a job for removing the in-progress label:
   remove_progress_label:
-
     # Define a display name:
-    name: 'Remove in-progress label'
+    name: "Remove in-progress label"
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
     # Ensure all previous jobs have completed before running this job:
-    needs: [ manage_labels, check_files, update_copyright_years, fix_lint_errors, merge_develop, rebase_develop ]
+    needs:
+      [
+        manage_labels,
+        check_files,
+        update_copyright_years,
+        fix_lint_errors,
+        merge_develop,
+        rebase_develop,
+      ]
 
     # Define the conditions under which the job should run:
     if: |

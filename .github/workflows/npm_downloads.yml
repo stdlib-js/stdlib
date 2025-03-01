@@ -24,7 +24,7 @@ on:
   # Run this workflow weekly:
   schedule:
     # cron: '<minutes> <hours> <day_of_month> <month> <day_of_week>'
-    - cron: '0 8 * * 6'
+    - cron: "0 8 * * 6"
 
   # Allow the workflow to be manually run:
   workflow_dispatch:
@@ -36,12 +36,10 @@ permissions:
 
 # Workflow jobs:
 jobs:
-
   # Define a job for retrieving npm download counts...
   npm_downloads:
-
     # Define a display name:
-    name: 'Retrieve npm Download Counts'
+    name: "Retrieve npm Download Counts"
 
     # Ensure the job does not run on forks:
     if: github.repository == 'stdlib-js/stdlib'
@@ -52,13 +50,13 @@ jobs:
     # Define the sequence of job steps...
     steps:
       # Checkout the repository:
-      - name: 'Checkout repository'
+      - name: "Checkout repository"
         # Pin action to full length commit SHA
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         timeout-minutes: 10
 
       # Install Node.js:
-      - name: 'Install Node.js'
+      - name: "Install Node.js"
         # Pin action to full length commit SHA
         uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
         with:
@@ -66,7 +64,7 @@ jobs:
         timeout-minutes: 5
 
       # Resolve package name:
-      - name: 'Resolve package name'
+      - name: "Resolve package name"
         id: package_name
         run: |
           name=`node -e 'console.log(require("./package.json").name)' | tr -d '\n'`
@@ -74,7 +72,7 @@ jobs:
         timeout-minutes: 5
 
       # Fetch download data:
-      - name: 'Fetch data'
+      - name: "Fetch data"
         id: download_data
         run: |
           url="https://api.npmjs.org/downloads/range/$(date --date='1 year ago' '+%Y-%m-%d'):$(date '+%Y-%m-%d')/${{ steps.package_name.outputs.package_name }}"
@@ -86,7 +84,7 @@ jobs:
         timeout-minutes: 5
 
       # Upload the download data:
-      - name: 'Upload data'
+      - name: "Upload data"
         # Pin action to full length commit SHA
         uses: actions/upload-artifact@65c4c4a1ddee5b72f698fdd19549f0f0fb45cf08 # v4.6.0
         with:
@@ -102,7 +100,7 @@ jobs:
         if: success()
 
       # Send data to events server:
-      - name: 'Post data'
+      - name: "Post data"
         # Pin action to full length commit SHA
         uses: distributhor/workflow-webhook@48a40b380ce4593b6a6676528cd005986ae56629 # v3.0.3
         env:

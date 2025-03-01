@@ -36,9 +36,9 @@ The stdlib repository includes a preconfigured dev container, making it the easi
 
 Setting up the stdlib dev container **requires** the following prerequisites:
 
--   [Git][git]: Version control
--   [Docker][docker]: Containerization
--   [VS Code][vscode]: Preferred IDE
+- [Git][git]: Version control
+- [Docker][docker]: Containerization
+- [VS Code][vscode]: Preferred IDE
 
 ### Download
 
@@ -73,7 +73,6 @@ $ cd stdlib && code .
 ```
 
 When prompted, open the repository in the dev container.
-
 
 <div class="image" align="center">
         <img width="480" src="./img/vscode_dev_container_prompt.png" alt="Prompt by VS Code to reopen the repository in a devcontainer.">
@@ -116,13 +115,9 @@ If you see this when you open the terminal, then the dev container installation 
 <section class="links">
 
 [git]: http://git-scm.com/
-
 [docker]: https://www.docker.com/
-
 [vscode]: https://code.visualstudio.com/
-
 [devcontainer-issue]: https://github.com/stdlib-js/stdlib/issues/4934
-
 [github-fork]: https://help.github.com/articles/fork-a-repo/
 
 </section>
