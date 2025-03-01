@@ -32,7 +32,7 @@
 #   LOG_FILE       Log file.
 #
 
-# shellcheck disable=SC2181,SC2153,SC2129
+# shellcheck disable=SC2034,SC2086,SC2181,SC2153,SC2129,SC2317
 
 # Ensure that the exit status of pipelines is non-zero in the event that at least one of the commands in a pipeline fails:
 set -o pipefail
@@ -153,7 +153,7 @@ main() {
 	# Find all test files in package directories:
 	files=""
 	for dir in ${directories}; do
-		# Find test files directly in the test directory or in subdirectories of test
+		# Include test files directly in the test directory or in subdirectories of test...
 		pkg_test_files=$(find "${dir}/test" -type f -name "test*.js" | grep -v '/fixtures/' | sort -u | tr '\n' ' ') || true
 		if [ -n "${pkg_test_files}" ]; then
 			files="${files} ${pkg_test_files}"
