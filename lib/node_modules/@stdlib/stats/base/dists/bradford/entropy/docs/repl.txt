@@ -1,0 +1,29 @@
+
+{{alias}}( c )
+    Returns the differential entropy of a Bradford distribution with shape
+    parameter `c`.
+
+    If `c <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    c: number
+        Shape parameter.
+
+    Returns
+    -------
+    out: number
+        Entropy.
+
+    Examples
+    --------
+    > var v = {{alias}}( 0.2 )
+    ~-0.001
+    > v = {{alias}}( 0.5 )
+    ~-0.007
+    > v = {{alias}}( 10.0 )
+    ~-0.229
+
+    See Also
+    --------
+
