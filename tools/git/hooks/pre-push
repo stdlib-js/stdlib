@@ -452,7 +452,6 @@ main() {
 		find_test_files() {
 			local pkg_dir="$1"
 			local pattern="$2"
-
 			if [[ -d "$pkg_dir/test" ]]; then
 				find "$pkg_dir/test" -name "$pattern" 2>/dev/null | grep -v 'fixtures'
 			fi
