@@ -25,10 +25,10 @@
 *
 * @param k        shape parameter
 * @param lambda   scale parameter
-* @returns        expected value
+* @return         expected value
 *
 * @example
-* double v = mean( 1.0, 1.0 );
+* double v = stdlib_base_dists_weibull_mean( 1.0, 1.0 );
 * // returns 1.0
 */
 double stdlib_base_dists_weibull_mean( const double k, const double lambda ) {

@@ -26,7 +26,7 @@
 * @return     variance
 *
 * @example
-* double y = stdlib_base_chisquare_variance( 9.0 );
+* double y = stdlib_base_dists_chisquare_variance( 9.0 );
 * // returns 18.0
 */
 double stdlib_base_dists_chisquare_variance( const double k ) {

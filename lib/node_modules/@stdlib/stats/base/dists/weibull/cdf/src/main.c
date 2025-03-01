@@ -30,7 +30,7 @@
 * @return          evaluated CDF
 *
 * @example
-* double y = stdlib_base_weibull_cdf( 2.0, 1.0, 1.0 );
+* double y = stdlib_base_dists_weibull_cdf( 2.0, 1.0, 1.0 );
 * // returns ~0.865
 */
 double stdlib_base_dists_weibull_cdf( const double x, const double k, const double lambda ) {

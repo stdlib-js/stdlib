@@ -20,7 +20,12 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { NumericArray } from '@stdlib/types/array';
+import { NumericArray, Collection, AccessorArrayLike } from '@stdlib/types/array';
+
+/**
+* Input array.
+*/
+type InputArray = NumericArray | Collection<number> | AccessorArrayLike<number>;
 
 /**
 * Interface describing `gsumpw`.
@@ -40,7 +45,7 @@ interface Routine {
 	* var v = gsumpw( x.length, x, 1 );
 	* // returns 1.0
 	*/
-	( N: number, x: NumericArray, strideX: number ): number;
+	( N: number, x: InputArray, strideX: number ): number;
 
 	/**
 	* Computes the sum of strided array elements using pairwise summation and alternative indexing semantics.
@@ -57,7 +62,7 @@ interface Routine {
 	* var v = gsumpw.ndarray( x.length, x, 1, 0 );
 	* // returns 1.0
 	*/
-	ndarray( N: number, x: NumericArray, strideX: number, offsetX: number ): number;
+	ndarray( N: number, x: InputArray, strideX: number, offsetX: number ): number;
 }
 
 /**
