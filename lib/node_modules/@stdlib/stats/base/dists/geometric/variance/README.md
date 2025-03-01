@@ -153,8 +153,8 @@ for ( i = 0; i < 10; i++ ) {
 Returns the [variance][variance] of a [geometric][geometric-distribution] distribution with success probability `p`.
 
 ```c
-double out = stdlib_base_dists_geometric_variance( 9.0 );
-// returns 9.0
+double out = stdlib_base_dists_geometric_variance( 0.5 );
+// returns 2
 ```
 
 The function accepts the following arguments:

@@ -177,8 +177,8 @@ for ( i = 0; i < 10; i++ ) {
 Evaluates the natural logarithm of the [probability density function][pdf] (PDF) for a [Cauchy][cauchy-distribution] distribution with parameters `x0` (location parameter) and `gamma > 0` (scale parameter).
 
 ```c
-double out = stdlib_base_dists_cauchy_logpdf( 0.5, 0.0, 2.0 );
-// returns ~0.333
+double out = stdlib_base_dists_cauchy_logpdf( 2.0, 1.0, 1.0 );
+// returns ~-1.838
 ```
 
 The function accepts the following arguments:
