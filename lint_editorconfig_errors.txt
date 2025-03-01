@@ -1,3 +1,0 @@
-Linting files for basic formatting errors...
-Success. No detected EditorConfig lint errors.
-
