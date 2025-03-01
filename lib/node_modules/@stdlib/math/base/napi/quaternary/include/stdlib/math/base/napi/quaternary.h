@@ -21,6 +21,7 @@
 
 // NOTE: keep in alphabetical order...
 #include "stdlib/math/base/napi/quaternary/dddd_d.h"
+#include "stdlib/math/base/napi/quaternary/diii_d.h"
 #include "stdlib/math/base/napi/quaternary/ffff_f.h"
 
 #endif // !STDLIB_MATH_BASE_NAPI_QUATERNARY_H

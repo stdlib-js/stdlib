@@ -26,6 +26,7 @@
     {
       "src": [
         "./src/dddd_d.c",
+        "./src/diii_d.c",
         "./src/ffff_f.c"
       ],
       "include": [
