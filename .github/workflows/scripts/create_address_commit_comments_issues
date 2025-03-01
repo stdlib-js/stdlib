@@ -248,10 +248,12 @@ update_commit_map() {
 	local endLine=$(( line + 3 ))
 	local code_snippet="https://github.com/stdlib-js/stdlib/blob/${key}/${path}#L${startLine}-L${endLine}"
 
+	local formatted_body=$(echo "${body}" | sed $'s/\n/\n    /g')
+
 	for existing in "${commit_keys[@]}"; do
 		if [ "$existing" = "$key" ]; then
 			commit_counts[i]=$(( commit_counts[i] + 1 ))
-			commit_comments[i]="${commit_comments[i]}"$'\n\n'"-   ${link}"$'\n\n'"    > **Line ${line}**: ${body}"$'\n\n'"    ${code_snippet}"
+			commit_comments[i]="${commit_comments[i]}"$'\n\n'"-   ${link}"$'\n\n'"    > **Line ${line}**: ${formatted_body}"$'\n\n'"    ${code_snippet}"
 			found=1
 			break
 		fi
@@ -261,7 +263,7 @@ update_commit_map() {
 	if [ "$found" -eq 0 ]; then
 		commit_keys+=("$key")
 		commit_counts+=("1")
-		commit_comments+=("-   ${link}"$'\n\n'"    > **Line ${line}**: ${body}"$'\n\n'"    ${code_snippet}")
+		commit_comments+=("-   ${link}"$'\n\n'"    > **Line ${line}**: ${formatted_body}"$'\n\n'"    ${code_snippet}")
 	fi
 }
 
@@ -350,7 +352,6 @@ main() {
 	for comment in "${all_comments[@]}"; do
 		# Extract the comment body:
 		local comment_body=$(echo "$comment" | jq -r '.body')
-		local comment_line=$(echo "$comment" | jq -r '.line')
 
 		# Check if the comment body contains '@stdlib-bot':
 		if [[ "$comment_body" == *"@stdlib-bot"* ]]; then
