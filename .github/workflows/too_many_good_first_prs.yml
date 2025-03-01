@@ -34,8 +34,11 @@ jobs:
     # Define job name:
     name: 'Check if contributor has opened too many "Good First PRs"'
 
-    # Only run this job if the pull request did not have label `automated-pr`:
-    if: contains(github.event.pull_request.labels.*.name, 'automated-pr') == false
+    # Only run this job if the pull request did not have label `automated-pr` and is not from bots:
+    if: >
+      contains(github.event.pull_request.labels.*.name, 'automated-pr') == false &&
+      github.event.pull_request.user.login != 'stdlib-bot' &&
+      github.event.pull_request.user.login != 'dependabot[bot]'
 
     # Define job permissions:
     permissions:
