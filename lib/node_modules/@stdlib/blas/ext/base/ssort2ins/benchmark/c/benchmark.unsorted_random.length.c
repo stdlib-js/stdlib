@@ -82,7 +82,7 @@ static double tic( void ) {
 *
 * @return random number
 */
-static double rand_float( void ) {
+static float rand_float( void ) {
 	int r = rand();
 	return (float)r / ( (float)RAND_MAX + 1.0f );
 }
