@@ -40,7 +40,7 @@ type Unary<T, V> = ( this: V, value: T ) => void;
 * @param value - current array element
 * @param index - current array element index
 */
-type Binary<T, V> = ( this: V, value: T, indices: Array<number> ) => void;
+type Binary<T, V> = ( this: V, value: T, index: number ) => void;
 
 /**
 * Callback invoked for each array element.
@@ -49,7 +49,7 @@ type Binary<T, V> = ( this: V, value: T, indices: Array<number> ) => void;
 * @param index - current array element index
 * @param arr - input array
 */
-type Ternary<T, U, V> = ( this: V, value: T, indices: Array<number>, arr: U ) => void;
+type Ternary<T, U, V> = ( this: V, value: T, index: number, arr: U ) => void;
 
 /**
 * Callback invoked for each array element.
@@ -65,7 +65,7 @@ type Callback<T, U, V> = Nullary<V> | Unary<T, V> | Binary<T, V> | Ternary<T, U,
 *
 * @param x - input array
 * @param fcn - callback function
-* @param thisArg - callback function execution context
+* @param thisArg - callback execution context
 *
 * @example
 * var naryFunction = require( '@stdlib/utils/nary-function' );
@@ -84,7 +84,7 @@ declare function forEach<T = unknown, V = unknown>( x: AccessorArrayLike<T>, fcn
 *
 * @param x - input array
 * @param fcn - callback function
-* @param thisArg - callback function execution context
+* @param thisArg - callback execution context
 *
 * @example
 * var naryFunction = require( '@stdlib/utils/nary-function' );

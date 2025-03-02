@@ -20,14 +20,14 @@
 #define STDLIB_STATS_BASE_DISTS_GUMBEL_MGF_H
 
 /*
-* Evaluates the moment-generating function (MGF) for a Gumbel distribution with location parameter `mu` and scale parameter `b` at a value `t`.
+* If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
 */
 #ifdef __cplusplus
 extern "C" {
 #endif
 
 /**
-* Evaluates the cumulative distribution function (MGF) for a Gumbel distribution with location parameter `mu` and scale parameter `beta` at a value `x`.
+* Evaluates the moment-generating function (MGF) for a Gumbel distribution with location parameter `mu` and scale parameter `b` at a value `t`.
 */
 double stdlib_base_dists_gumbel_mgf( const double t, const double mu, const double beta );
 
