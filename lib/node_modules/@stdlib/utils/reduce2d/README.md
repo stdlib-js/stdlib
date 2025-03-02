@@ -46,7 +46,7 @@ Reduces the number of dimensions by one of a two-dimensional nested array by app
 
 ```javascript
 var naryFunction = require( '@stdlib/utils/nary-function' );
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 
 var arr = [
     [ 1, 2, 3 ],
@@ -69,7 +69,7 @@ To set the `this` context when invoking the input function, provide a `thisArg`.
 <!-- eslint-disable no-invalid-this -->
 
 ```javascript
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 
 function fcn( acc, v ) {
     this.count += 1;
@@ -120,7 +120,7 @@ var cnt = ctx.count;
 var filledarrayBy = require( '@stdlib/array/filled-by' );
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var naryFunction = require( '@stdlib/utils/nary-function' );
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 var zeros = require( '@stdlib/array/base/zeros' );
 var reduce2d = require( '@stdlib/utils/reduce2d' );
 

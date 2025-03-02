@@ -27,7 +27,7 @@ interface Routine {
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns arithmetic mean
 	*
 	* @example
@@ -38,15 +38,15 @@ interface Routine {
 	* var v = dnanmeanpw( x.length, x, 1 );
 	* // returns ~0.3333
 	*/
-	( N: number, x: Float64Array, stride: number ): number;
+	( N: number, x: Float64Array, strideX: number ): number;
 
 	/**
 	* Computes the arithmetic mean of a double-precision floating-point strided array, ignoring `NaN` values and using pairwise summation and alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param stride - stride length
-	* @param offset - starting index
+	* @param strideX - stride length
+	* @param offsetX - starting index
 	* @returns arithmetic mean
 	*
 	* @example
@@ -57,7 +57,7 @@ interface Routine {
 	* var v = dnanmeanpw.ndarray( x.length, x, 1, 0 );
 	* // returns ~0.3333
 	*/
-	ndarray( N: number, x: Float64Array, stride: number, offset: number ): number;
+	ndarray( N: number, x: Float64Array, strideX: number, offsetX: number ): number;
 }
 
 /**
@@ -65,7 +65,7 @@ interface Routine {
 *
 * @param N - number of indexed elements
 * @param x - input array
-* @param stride - stride length
+* @param strideX - stride length
 * @returns arithmetic mean
 *
 * @example

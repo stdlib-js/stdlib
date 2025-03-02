@@ -31,10 +31,14 @@
 * @return    evaluated MGF
 *
 * @example
-* double y = stdlib_base_dists_geometric_mgf( 0.5, -1.0, 1.0, 0.0 );
+* double y = stdlib_base_dists_triangular_mgf( 0.5, -1.0, 1.0, 0.0 );
 * // returns ~1.021
 */
 double stdlib_base_dists_triangular_mgf( const double t, const double a, const double b, const double c ) {
+	double bmc;
+	double bma;
+	double cma;
+	double ret;
 	if (
 		stdlib_base_is_nan( t ) ||
 		stdlib_base_is_nan( a ) ||
@@ -45,14 +49,14 @@ double stdlib_base_dists_triangular_mgf( const double t, const double a, const d
 	) {
 		return 0.0/0.0; // NaN
 	}
-	if( t == 0 ){
+	if ( t == 0.0 ) {
 		return 1.0;
 	}
-	double bmc = b - c;
-	double bma = b - a;
-	double cma = c - a;
-	double ret = (bmc * stdlib_base_exp( a * t )) - (bma * stdlib_base_exp( c * t ));
-	ret += cma * stdlib_base_exp( b * t );
+	bmc = b - c;
+	bma = b - a;
+	cma = c - a;
+	ret = ( bmc * stdlib_base_exp( a*t ) ) - ( bma * stdlib_base_exp( c*t ) );
+	ret += cma * stdlib_base_exp( b*t );
 	ret *= 2.0;
 	ret /= bma * cma * bmc * stdlib_base_pow( t, 2.0 );
 	return ret;

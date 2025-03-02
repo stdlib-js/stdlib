@@ -17,10 +17,11 @@
 */
 
 #include "stdlib/blas/ext/base/ssort2ins.h"
+#include "stdlib/blas/base/shared.h"
 #include "stdlib/napi/export.h"
 #include "stdlib/napi/argv.h"
 #include "stdlib/napi/argv_int64.h"
-#include "stdlib/napi/argv_double.h"
+#include "stdlib/napi/argv_float.h"
 #include "stdlib/napi/argv_strided_float32array.h"
 #include <node_api.h>
 
@@ -39,9 +40,29 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_INT64( env, strideY, argv, 5 );
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT32ARRAY( env, X, N, strideX, argv, 2 );
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT32ARRAY( env, Y, N, strideY, argv, 4 );
-	c_ssort2ins( N, order, X, strideX, Y, strideY );
+	API_SUFFIX(stdlib_strided_ssort2ins)( N, order, X, strideX, Y, strideY );
 	return NULL;
 }
 
-STDLIB_NAPI_MODULE_EXPORT_FCN( addon )
+/**
+* Receives JavaScript callback invocation data.
+*
+* @param env    environment under which the function is invoked
+* @param info   callback data
+* @return       Node-API value
+*/
+static napi_value addon_method( napi_env env, napi_callback_info info ) {
+	STDLIB_NAPI_ARGV( env, info, argv, argc, 8 );
+	STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
+	STDLIB_NAPI_ARGV_FLOAT( env, order, argv, 1 );
+	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 3 );
+	STDLIB_NAPI_ARGV_INT64( env, offsetX, argv, 4 );
+	STDLIB_NAPI_ARGV_INT64( env, strideY, argv, 6 );
+	STDLIB_NAPI_ARGV_INT64( env, offsetY, argv, 7 );
+	STDLIB_NAPI_ARGV_STRIDED_FLOAT32ARRAY( env, X, N, strideX, argv, 2 );
+	STDLIB_NAPI_ARGV_STRIDED_FLOAT32ARRAY( env, Y, N, strideY, argv, 5 );
+	API_SUFFIX(stdlib_strided_ssort2ins_ndarray)( N, order, X, strideX, offsetX, Y, strideY, offsetY );
+	return NULL;
+}
 
+STDLIB_NAPI_MODULE_EXPORT_FCN_WITH_METHOD( addon, "ndarray", addon_method );

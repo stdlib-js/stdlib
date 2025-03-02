@@ -52,11 +52,11 @@ jobs:
       - name: 'Add comment'
         run: gh issue comment "$NUMBER" --body "$BODY"
         env:
-          GH_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.issue.number }}
           BODY: |
-            # :rotating_light: Important: PLEASE READ :rotating_light:
+            # :wave: Important: PLEASE READ :wave:
 
             This issue has been labeled as a **good first issue** and is available for anyone to work on.
 
@@ -65,7 +65,7 @@ jobs:
             1.  **You cannot "claim" issues.** People new to open source often want to "claim" or be assigned an issue before beginning work. The typical rationale is that people want to avoid wasted work in the event that someone else ends up working the issue. However, this practice is not effective in open source, as it often leads to "issue squatting", in which an individual asks to be assigned, is granted their request, and then never ends up working on the issue. Accordingly, you are encouraged to communicate your intent to address this issue, ideally by providing a rough outline as to how you plan to address the issue or asking clarifying questions, but, at the end of the day, we will take running code and rough consensus in order to move forward quickly.
             2.  **We have a very high bar for contributions.** We have very high standards for contributions and expect all contributions—whether new features, tests, or documentation—to be rigorous, thorough, and complete. Once a pull request is merged into stdlib, that contribution immediately becomes the collective responsibility of all maintainers of stdlib. When we merge code into stdlib, we are saying that we, the maintainers, commit to reviewing subsequent changes and making bugfixes to the code. Hence, in order to ensure future maintainability, this naturally leads to a higher standard of contribution.
 
-            Before working on this issue and opening a pull request, please read the project's [contributing guidelines](https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md). These guidelines and the associated [development guide](https://github.com/stdlib-js/stdlib/blob/develop/docs/development.md) provide important information, including links to stdlib's [Code of Conduct](https://github.com/stdlib-js/stdlib/blob/develop/CODE_OF_CONDUCT.md), license policy, and steps for setting up your local development environment.
+            Before working on this issue and opening a pull request, please read the project's [contributing guidelines](https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md). These guidelines and the associated [development guide](https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/development.md) provide important information, including links to stdlib's [Code of Conduct](https://github.com/stdlib-js/stdlib/blob/develop/CODE_OF_CONDUCT.md), license policy, and steps for setting up your local development environment.
 
             To reiterate, we **strongly** encourage you to refer to our contributing guides **before** beginning work on this issue. Failure to follow our guidelines significantly decreases the likelihood that you'll successfully contribute to stdlib and may result in automatic closure of a pull request without review.
 
