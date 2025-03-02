@@ -120,10 +120,12 @@ The function has the following parameters:
 
 The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to compute the [variance][variance] of every other element in `x`,
 
+<!-- eslint-disable max-len -->
+
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
 
-var x = new Float64Array([1.0, 2.0, 2.0, -7.0, -2.0, 3.0, 4.0, 2.0, NaN, NaN]);
+var x = new Float64Array( [ 1.0, 2.0, 2.0, -7.0, -2.0, 3.0, 4.0, 2.0, NaN, NaN ] );
 
 var v = dnanvariancech( 5, 1, x, 2 );
 // returns 6.25
@@ -131,11 +133,10 @@ var v = dnanvariancech( 5, 1, x, 2 );
 
 Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][mdn-typed-array] views.
 
-<!-- eslint-disable stdlib/capitalized-comments -->
+<!-- eslint-disable stdlib/capitalized-comments, max-len -->
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-
 var x0 = new Float64Array( [ 2.0, 1.0, 2.0, -2.0, -2.0, 2.0, 3.0, 4.0, NaN, NaN ] ); // eslint-disable-line max-len
 var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 
@@ -150,7 +151,7 @@ Computes the [variance][variance] of a double-precision floating-point strided a
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
 
-var x = new Float64Array( [ 1.0, -2.0, 2.0 ] );
+var x = new Float64Array( [ 1.0, -2.0, NaN, 2.0 ] );
 
 var v = dnanvariancech.ndarray( x.length, 1, x, 1, 0 );
 // returns ~4.33333
