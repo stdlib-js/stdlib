@@ -341,31 +341,31 @@ jobs:
           done
 
           if [[ -n "${files}" ]]; then
-            make lint-javascript-files FIX="${FIX}" FAST_FAIL=0 FILES="${files}" 2>&1 | tee -a "$ERR_FILE"
+            make lint-javascript-files FIX="${FIX}" FAST_FAIL=0 FILES="${files}" ESLINT_ERROR_LOG="$ERR_FILE"
           fi
 
           # Lint JavaScript command-line interfaces...
           file=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '\.js$' | grep -E '/bin/cli$' | tr '\n' ' ')
           if [[ -n "${file}" ]]; then
-            make lint-javascript-files FIX="${FIX}" FAST_FAIL=0 FILES="${file}" 2>&1 | tee -a "$ERR_FILE"
+            make lint-javascript-files FIX="${FIX}" FAST_FAIL=0 FILES="${file}" ESLINT_ERROR_LOG="$ERR_FILE"
           fi
 
           # Lint JavaScript example files:
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '/examples/.*\.js$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
-            make lint-javascript-files FIX="${FIX}" FAST_FAIL=0 FILES="${files}" ESLINT_CONF="${eslint_examples_conf}" 2>&1 | tee -a "$ERR_FILE"
+            make lint-javascript-files FIX="${FIX}" FAST_FAIL=0 FILES="${files}" ESLINT_CONF="${eslint_examples_conf}" ESLINT_ERROR_LOG="$ERR_FILE"
           fi
 
           # Lint JavaScript test files:
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '/test/.*\.js$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
-            make lint-javascript-files FIX="${FIX}" FAST_FAIL=0 FILES="${files}" ESLINT_CONF="${eslint_tests_conf}" 2>&1 | tee -a "$ERR_FILE"
+            make lint-javascript-files FIX="${FIX}" FAST_FAIL=0 FILES="${files}" ESLINT_CONF="${eslint_tests_conf}" ESLINT_ERROR_LOG="$ERR_FILE"
           fi
 
           # Lint JavaScript benchmark files:
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '/benchmark/.*\.js$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
-            make lint-javascript-files FIX="${FIX}" FAST_FAIL=0 FILES="${files}" ESLINT_CONF="${eslint_benchmarks_conf}" 2>&1 | tee -a "$ERR_FILE"
+            make lint-javascript-files FIX="${FIX}" FAST_FAIL=0 FILES="${files}" ESLINT_CONF="${eslint_benchmarks_conf}" ESLINT_ERROR_LOG="$ERR_FILE"
           fi
 
       # Create sub-issue for JavaScript lint failures:

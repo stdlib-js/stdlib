@@ -44,6 +44,9 @@ ESLINT_CONF_BENCHMARKS ?= $(CONFIG_DIR)/eslint/.eslintrc.benchmarks.js
 # Define the path to the ESLint ignore file:
 ESLINT_IGNORE ?= $(ROOT_DIR)/.eslintignore
 
+# Define optional path for storing lint failure reports:
+ESLINT_ERROR_LOG ?=
+
 # Define the command-line options to use when invoking the ESLint executable:
 ESLINT_FLAGS ?= \
 	--ignore-path $(ESLINT_IGNORE) \
@@ -251,6 +254,18 @@ ifeq ($(FAIL_FAST), true)
 		echo "Linting file: $$file"; \
 		$(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_CONF) $$file || exit 1; \
 	done
+else ifneq ($(ESLINT_ERROR_LOG),)
+	$(QUIET) status=0; \
+	for file in $(FILES); do \
+		echo ''; \
+		echo "Linting file: $$file"; \
+		if ! $(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_CONF) $$file; then \
+			echo 'Linting failed.'; \
+			$(ESLINT) $(ESLINT_FLAGS) --quiet --config $(ESLINT_CONF) $$file >> $(ESLINT_ERROR_LOG); \
+			status=1; \
+		fi; \
+	done; \
+	exit $$status;
 else
 	$(QUIET) status=0; \
 	for file in $(FILES); do \
