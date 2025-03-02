@@ -4230,6 +4230,30 @@ rules[ 'stdlib/no-internal-require' ] = 'error';
 rules[ 'stdlib/no-multiple-empty-lines' ] = 'error';
 
 /**
+* Disallow usage of the built-in global `BigInt` literal syntax and constructor.
+*
+* @name no-builtin-big-int
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var x = BigInt( 123 );
+* console.log( typeof x );
+* // => 'bigint'
+*
+* @example
+* // Good...
+* var BigInt = require( '@stdlib/bigint/ctor' );
+*
+* var x = BigInt( 123 );
+* console.log( typeof x );
+* // => 'bigint'
+*/
+rules[ 'stdlib/no-builtin-big-int' ] = 'error';
+
+/**
 * Disallow usage of the built-in global `Math` object.
 *
 * @name no-builtin-math
