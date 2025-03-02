@@ -20,7 +20,7 @@ limitations under the License.
 
 # gscal
 
-> Multiply a vector `x` by a constant `alpha`.
+> Multiply a vector by a scalar constant.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var gscal = require( '@stdlib/blas/base/gscal' );
 
 #### gscal( N, alpha, x, stride )
 
-Multiplies a vector `x` by a constant `alpha`.
+Multiplies a vector by a scalar constant.
 
 ```javascript
 var x = [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ];
@@ -46,9 +46,9 @@ The function has the following parameters:
 -   **N**: number of indexed elements.
 -   **alpha**: scalar constant.
 -   **x**: input [`Array`][mdn-array] or [`typed array`][mdn-typed-array].
--   **stride**: index increment.
+-   **stride**: stride length.
 
-The `N` and `stride` parameters determine which elements in `x` are accessed at runtime. For example, to multiply every other value by a constant
+The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to multiply every other value by a scalar constant:
 
 ```javascript
 var x = [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ];
@@ -77,7 +77,7 @@ If either `N` or `stride` is less than or equal to `0`, the function returns `x`
 
 #### gscal.ndarray( N, alpha, x, stride, offset )
 
-Multiplies a vector `x` by a constant `alpha` using alternative indexing semantics.
+Multiplies a vector by a scalar constant using alternative indexing semantics.
 
 ```javascript
 var x = [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ];
@@ -90,7 +90,7 @@ The function has the following additional parameters:
 
 -   **offset**: starting index.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the `offset` parameter supports indexing semantics based on a starting index. For example, to multiply the last three elements of `x` by a constant
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameter supports indexing semantics based on a starting index. For example, to multiply the last three elements:
 
 ```javascript
 var x = [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ];
