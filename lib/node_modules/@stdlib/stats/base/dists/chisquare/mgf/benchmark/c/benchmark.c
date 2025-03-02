@@ -16,21 +16,30 @@
 * limitations under the License.
 */
 
-#include <sys/time.h>
 #include "stdlib/stats/base/dists/chisquare/mgf.h"
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <sys/time.h>
 
 #define NAME "chisquare-mgf"
 #define ITERATIONS 1000000
 #define REPEATS 3
 
+/**
+* Prints the TAP version.
+*/
 static void print_version( void ) {
 	printf( "TAP version 13\n" );
 }
 
+/**
+* Prints the TAP summary.
+*
+* @param total     total number of tests
+* @param passing   total number of passing tests
+*/
 static void print_summary( int total, int passing ) {
 	printf( "#\n" );
 	printf( "1..%d\n", total ); // TAP plan
@@ -40,6 +49,11 @@ static void print_summary( int total, int passing ) {
 	printf( "# ok\n" );
 }
 
+/**
+* Prints benchmarks results.
+*
+* @param elapsed   elapsed time in seconds
+*/
 static void print_results( double elapsed ) {
 	double rate = (double)ITERATIONS / elapsed;
 	printf( "  ---\n" );
@@ -49,17 +63,34 @@ static void print_results( double elapsed ) {
 	printf( "  ...\n" );
 }
 
+/**
+* Returns a clock time.
+*
+* @return clock time
+*/
 static double tic( void ) {
 	struct timeval now;
 	gettimeofday( &now, NULL );
-	return (double)now.tv_sec + (double)now.tv_usec / 1.0e6;
+	return (double)now.tv_sec + (double)now.tv_usec/1.0e6;
 }
 
+/**
+* Generates a random number on the interval [min,max).
+*
+* @param min    minimum value (inclusive)
+* @param max    maximum value (exclusive)
+* @return       random number
+*/
 static double random_uniform( const double min, const double max ) {
 	double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
-	return min + ( v * ( max - min ) );
+	return min + ( v*(max-min) );
 }
 
+/**
+* Runs a benchmark.
+*
+* @return elapsed time in seconds
+*/
 static double benchmark( void ) {
 	double elapsed;
 	double t[ 100 ];
@@ -89,11 +120,14 @@ static double benchmark( void ) {
 	return elapsed;
 }
 
+/**
+* Main execution sequence.
+*/
 int main( void ) {
 	double elapsed;
 	int i;
 
-   	// Use the current time to seed the random number generator:
+	// Use the current time to seed the random number generator:
 	srand( time( NULL ) );
 
 	print_version();

@@ -46,7 +46,7 @@ Assigns callbacks to binary interfaces according to type [promotion rules][@stdl
 
 ```javascript
 var signatures = require( '@stdlib/strided/base/binary-dtype-signatures' );
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 var cadd = require( '@stdlib/complex/float64/base/add' );
 var caddf = require( '@stdlib/complex/float32/base/add' );
 
@@ -112,7 +112,7 @@ A callback `table` should have the following properties:
 ```javascript
 var dtypes = require( '@stdlib/strided/dtypes' );
 var signatures = require( '@stdlib/strided/base/binary-dtype-signatures' );
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 var cadd = require( '@stdlib/complex/float64/base/add' );
 var caddf = require( '@stdlib/complex/float32/base/add' );
 var callbacks = require( '@stdlib/strided/base/binary-signature-callbacks' );

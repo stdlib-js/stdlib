@@ -313,7 +313,7 @@ int main( void ) {
     // Specify the stride length:
     const int strideX = 2;
 
-    // Compute the variance:
+    // Compute the standard deviation:
     float v = stdlib_strided_sstdevtk( N, 1.0f, x, strideX );
 
     // Print the result:
