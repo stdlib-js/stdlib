@@ -248,7 +248,7 @@ update_commit_map() {
 	local endLine=$(( line + 3 ))
 	local code_snippet="https://github.com/stdlib-js/stdlib/blob/${key}/${path}#L${startLine}-L${endLine}"
 
-	local formatted_body=$(echo "${body}" | sed $'s/\n/\n    /g')
+	local formatted_body=$(echo "${body}" | awk '{if(NR==1) {print $0} else {print "    " $0}}')
 
 	for existing in "${commit_keys[@]}"; do
 		if [ "$existing" = "$key" ]; then
