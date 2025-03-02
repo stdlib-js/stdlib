@@ -32,10 +32,10 @@ type InputArray = NumericArray | Collection<number> | AccessorArrayLike<number>;
 */
 interface Routine {
 	/**
-	* Multiplies a vector `x` by a constant `alpha`.
+	* Multiplies a vector by a scalar constant.
 	*
 	* @param N - number of indexed elements
-	* @param alpha - constant
+	* @param alpha - scalar constant
 	* @param x - input array
 	* @param stride - stride length
 	* @returns input array
@@ -49,10 +49,10 @@ interface Routine {
 	<T extends InputArray>( N: number, alpha: number, x: T, stride: number ): T;
 
 	/**
-	* Multiplies a vector `x` by a constant `alpha` using alternative indexing semantics.
+	* Multiplies a vector by a scalar constant using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
-	* @param alpha - constant
+	* @param alpha - scalar constant
 	* @param x - input array
 	* @param stride - stride length
 	* @param offset - starting index
@@ -68,10 +68,10 @@ interface Routine {
 }
 
 /**
-* Multiplies a vector `x` by a constant `alpha`.
+* Multiplies a vector by a scalar constant.
 *
 * @param N - number of indexed elements
-* @param alpha - constant
+* @param alpha - scalar constant
 * @param x - input array
 * @param stride - stride length
 * @returns input array
