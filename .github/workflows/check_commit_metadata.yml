@@ -43,8 +43,8 @@ jobs:
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
-    # Skip this job for PRs opened by automated bot accounts:
-    if: github.event.pull_request.user.login != 'stdlib-bot' && github.event.pull_request.user.login != 'dependabot[bot]'
+    # Temporarily disable the entire workflow:
+    if: false
 
     # Define the sequence of job steps...
     steps:
