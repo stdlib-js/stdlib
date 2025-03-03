@@ -19,6 +19,7 @@
 #ifndef STDLIB_STATS_BASE_SMSKRANGE_H
 #define STDLIB_STATS_BASE_SMSKRANGE_H
 
+#include "stdlib/blas/base/shared.h"
 #include <stdint.h>
 
 /*
@@ -31,7 +32,12 @@ extern "C" {
 /**
 * Computes the range of a single-precision floating-point strided array according to a mask.
 */
-float stdlib_strided_smskrange( const int64_t N, const float *X, const int64_t strideX, const uint8_t *Mask, const int64_t strideMask );
+float API_SUFFIX(stdlib_strided_smskrange)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const uint8_t *Mask, const CBLAS_INT strideMask );
+
+/**
+* Computes the range of a single-precision floating-point strided array according to a mask and using alternative indexing semantics.
+*/
+float API_SUFFIX(stdlib_strided_smskrange_ndarray)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const uint8_t *Mask, const CBLAS_INT strideMask, const CBLAS_INT offsetMask );
 
 #ifdef __cplusplus
 }

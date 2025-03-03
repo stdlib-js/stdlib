@@ -1,0 +1,9 @@
+---
+type: amend-message
+---
+docs: update namespace TypeScript declarations
+PR-URL: #4266
+
+Co-authored-by: Philipp Burckhardt <pburckhardt@outlook.com>
+Reviewed-by: Philipp Burckhardt <pburckhardt@outlook.com>
+Signed-off-by: stdlib-bot <82920195+stdlib-bot@users.noreply.github.com>

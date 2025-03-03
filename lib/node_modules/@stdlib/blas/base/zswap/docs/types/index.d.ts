@@ -38,31 +38,13 @@ interface Routine {
 	*
 	* @example
 	* var Complex128Array = require( '@stdlib/array/complex128' );
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
 	*
 	* var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-	* var y = new Complex128Array( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+	* var y = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 	*
 	* zswap( x.length, x, 1, y, 1 );
-	*
-	* var z = y.get( 0 );
-	* // returns <Complex128>
-	*
-	* var re = real( z );
-	* // returns 1.0
-	*
-	* var im = imag( z );
-	* // returns 2.0
-	*
-	* z = x.get( 0 );
-	* // returns <Complex128>
-	*
-	* re = real( z );
-	* // returns 7.0
-	*
-	* im = imag( z );
-	* // returns 8.0
+	* // x => <Complex128Array>[ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+	* // y => <Complex128Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ]
 	*/
 	( N: number, x: Complex128Array, strideX: number, y: Complex128Array, strideY: number ): Complex128Array;
 
@@ -84,27 +66,11 @@ interface Routine {
 	* var imag = require( '@stdlib/complex/float64/imag' );
 	*
 	* var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-	* var y = new Complex128Array( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+	* var y = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 	*
 	* zswap.ndarray( x.length, x, 1, 0, y, 1, 0 );
-	*
-	* var z = y.get( 0 );
-	* // returns <Complex128>
-	*
-	* var re = real( z );
-	* // returns 1.0
-	*
-	* var im = imag( z );
-	* // returns 2.0
-	*
-	* z = x.get( 0 );
-	* // returns <Complex128>
-	*
-	* re = real( z );
-	* // returns 7.0
-	*
-	* im = imag( z );
-	* // returns 8.0
+	* // x => <Complex128Array>[ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+	* // y => <Complex128Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ]
 	*/
 	ndarray( N: number, x: Complex128Array, strideX: number, offsetX: number, y: Complex128Array, strideY: number, offsetY: number ): Complex128Array;
 }
@@ -121,59 +87,23 @@ interface Routine {
 *
 * @example
 * var Complex128Array = require( '@stdlib/array/complex128' );
-* var real = require( '@stdlib/complex/float64/real' );
-* var imag = require( '@stdlib/complex/float64/imag' );
 *
 * var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-* var y = new Complex128Array( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+* var y = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 *
 * zswap( x.length, x, 1, y, 1 );
-*
-* var z = y.get( 0 );
-* // returns <Complex128>
-*
-* var re = real( z );
-* // returns 1.0
-*
-* var im = imag( z );
-* // returns 2.0
-*
-* z = x.get( 0 );
-* // returns <Complex128>
-*
-* re = real( z );
-* // returns 7.0
-*
-* im = imag( z );
-* // returns 8.0
+* // x => <Complex128Array>[ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+* // y => <Complex128Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ]
 *
 * @example
 * var Complex128Array = require( '@stdlib/array/complex128' );
-* var real = require( '@stdlib/complex/float64/real' );
-* var imag = require( '@stdlib/complex/float64/imag' );
 *
 * var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-* var y = new Complex128Array( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+* var y = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 *
 * zswap.ndarray( x.length, x, 1, 0, y, 1, 0 );
-*
-* var z = y.get( 0 );
-* // returns <Complex128>
-*
-* var re = real( z );
-* // returns 1.0
-*
-* var im = imag( z );
-* // returns 2.0
-*
-* z = x.get( 0 );
-* // returns <Complex128>
-*
-* re = real( z );
-* // returns 7.0
-*
-* im = imag( z );
-* // returns 8.0
+* // x => <Complex128Array>[ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+* // y => <Complex128Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ]
 */
 declare var zswap: Routine;
 

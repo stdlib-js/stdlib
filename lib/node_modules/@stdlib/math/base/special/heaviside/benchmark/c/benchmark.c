@@ -87,7 +87,7 @@ static double rand_double( void ) {
 * Computes the Heaviside function.
 *
 * @param x   input value
-* @return function result
+* @return    function result
 */
 double heaviside( double x ) {
 	if ( x >= 0.0 ) {

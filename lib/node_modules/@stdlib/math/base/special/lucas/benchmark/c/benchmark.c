@@ -87,7 +87,7 @@ static double rand_double( void ) {
 * Computes the nth Lucas number.
 *
 * @param n   Lucas number to compute
-* @return Lucas number
+* @return    Lucas number
 */
 int lucas( int n ) {
 	if ( n == 0 ) {

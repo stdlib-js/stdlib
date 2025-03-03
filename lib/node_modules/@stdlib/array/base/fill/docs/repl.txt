@@ -1,0 +1,40 @@
+
+{{alias}}( x, value, start, end )
+    Fills all elements within a portion of an array with a specified value.
+
+    If provided an array-like object having a `fill` method, the function
+    defers execution to that method and assumes that the method has the
+    following signature:
+
+        x.fill( value, start, end )
+
+    If provided an array-like object without a `value` method, the function
+    manually sets input array elements to the specified value.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    value: any
+        Fill value.
+
+    start: integer
+        Starting index (inclusive).
+
+    end: integer
+        Ending index (exclusive).
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Modified input array.
+
+    Examples
+    --------
+    > var out = {{alias}}( [ 1, 2, 3, 4 ], 5, 1, 3 )
+    [ 1, 5, 5, 4 ]
+
+    See Also
+    --------
+

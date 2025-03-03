@@ -52,13 +52,13 @@ jobs:
       - name: 'Close pull request'
         run: gh pr close "$NUMBER" --comment "$BODY"
         env:
-          GH_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.pull_request.number }}
           BODY: |
             Thank you for working on this pull request. However, we cannot accept your contribution as this pull request does not follow our [contributing guidelines](https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md).
 
-            Per the guidelines outlined in our [development guide](https://github.com/stdlib-js/stdlib/blob/develop/docs/development.md), you should download and setup [EditorConfig](http://editorconfig.org/) to ensure that files are automatically configured to use expected indentation and line endings.
+            Per the guidelines outlined in our [development guide](https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/development.md), you should download and setup [EditorConfig](http://editorconfig.org/) to ensure that files are automatically configured to use expected indentation and line endings.
 
             If you would prefer to avoid manual setup, you could also consider using a pre-configured [development container](https://github.com/stdlib-js/stdlib/tree/develop/.devcontainer) for use locally or in GitHub Codespaces.
 
@@ -88,13 +88,13 @@ jobs:
       - name: 'Close pull request'
         run: gh pr close "$NUMBER" --comment "$BODY"
         env:
-          GH_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.pull_request.number }}
           BODY: |
             Thank you for working on this pull request. However, we cannot accept your contribution as this pull request does not follow our [contributing guidelines](https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md).
 
-            Per the guidelines outlined in our [development guide](https://github.com/stdlib-js/stdlib/blob/develop/docs/development.md), you should have setup your local development environment such that automated development processes for linting, license verification, and unit testing can run prior to authoring commits and pushing changes. We encourage you to refer to that guide **before** continuing to work on this pull request.
+            Per the guidelines outlined in our [development guide](https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/development.md), you should have setup your local development environment such that automated development processes for linting, license verification, and unit testing can run prior to authoring commits and pushing changes. We encourage you to refer to that guide **before** continuing to work on this pull request.
 
             If you would prefer to avoid manual setup, you could also consider using a pre-configured [development container](https://github.com/stdlib-js/stdlib/tree/develop/.devcontainer) for use locally or in GitHub Codespaces.
 
@@ -124,7 +124,7 @@ jobs:
       - name: 'Close pull request'
         run: gh pr close "$NUMBER" --comment "$BODY"
         env:
-          GH_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.pull_request.number }}
           BODY: |
@@ -164,7 +164,7 @@ jobs:
       - name: 'Close pull request'
         run: gh pr close "$NUMBER" --comment "$BODY"
         env:
-          GH_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.pull_request.number }}
           BODY: |
@@ -176,7 +176,7 @@ jobs:
       - name: 'Lock conversation'
         run: gh pr lock "$NUMBER" --reason spam
         env:
-          GH_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.pull_request.number }}
 
@@ -204,7 +204,7 @@ jobs:
       - name: 'Close pull request'
         run: gh pr close "$NUMBER" --comment "$BODY"
         env:
-          GH_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.pull_request.number }}
           BODY: |

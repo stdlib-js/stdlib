@@ -146,7 +146,7 @@ for ( i = 0; i < 10; i++ ) {
     alpha = ( randu()*10.0 ) + EPS;
     beta = ( randu()*10.0 ) + EPS;
     v = stdev( alpha, beta );
-    console.log( 'α: %d, β: %d, Var(X;α,β): %d', alpha.toFixed( 4 ), beta.toFixed( 4 ), v.toFixed( 4 ) );
+    console.log( 'α: %d, β: %d, SD(X;α,β): %d', alpha.toFixed( 4 ), beta.toFixed( 4 ), v.toFixed( 4 ) );
 }
 ```
 

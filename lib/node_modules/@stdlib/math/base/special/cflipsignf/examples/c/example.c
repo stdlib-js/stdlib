@@ -21,7 +21,7 @@
 #include <complex.h>
 
 int main( void ) {
-	float complex x[] = { 3.14f+1.5f*I, -3.14f-1.5f*I, 0.0f+0.0f*I, 0.0f/0.0f+0.0f/0.0f*I };
+	const float complex x[] = { 3.14f+1.5f*I, -3.14f-1.5f*I, 0.0f+0.0f*I, 0.0f/0.0f+0.0f/0.0f*I };
 
 	float complex v;
 	float complex y;
