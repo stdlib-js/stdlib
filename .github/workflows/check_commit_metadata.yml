@@ -66,7 +66,8 @@ jobs:
       # Extract commit metadata from commit messages as JSON:
       - name: 'Extract commit metadata'
         id: extract-metadata
-        uses: stdlib-js/metadata-action@v2
+        # Pin action to full length commit SHA
+        uses: stdlib-js/metadata-action@3ccf68f24c51ae23470319e8e5619d539df8212b # v3.0.0
 
       # Check commit metadata:
       - name: 'Check commit metadata'
