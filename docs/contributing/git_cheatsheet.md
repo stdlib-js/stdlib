@@ -139,9 +139,9 @@ Once pushed, your changes will be available on GitHub, and you can proceed to cr
 
 A pull request (PR) is a way to suggest changes to a project. It lets maintainers review your work, give feedback, and approve the changes before adding them to the main repository. This is how you officially submit your contributions to `stdlib` after pushing your changes:
 
-1. Go to your fork on GitHub.
-2. Click "Compare & pull request."
-3. Add a clear title and description (mention what you changed and why).
+1.  Go to your fork on GitHub.
+2.  Click "Compare & pull request."
+3.  Add a clear title and description (mention what you changed and why).
 
 Once you create your pull request, a review request will be **automatically** sent to the maintainers via `stdlib-bot`. Your code will then be reviewed, and you may need to make some tweaks before it gets merged.
 
@@ -188,7 +188,7 @@ While working on a feature branch, new changes might be added to the `develop` b
 
 Rebasing **moves** your commits on top of the latest `develop`, as if you had started working after the newest updates.
 
-#### Steps to Rebase:
+#### Steps to Rebase
 
 <!-- run-disable -->
 
@@ -209,13 +209,16 @@ git rebase --continue
 #### Example: How Rebase Works
 
 Before rebasing (`develop` has new commits `C` and `D`):
-```
+
+```plaintext
       X---Y---Z (feature/my-branch)
      /
 A---B---C---D (develop)
 ```
+
 After rebasing (`X, Y, Z` are reapplied on top of `D`):
-```
+
+```plaintext
                   X'--Y'--Z' (feature/my-branch, rebased)
                  /
 A---B---C---D (develop)
@@ -225,7 +228,7 @@ A---B---C---D (develop)
 
 Merging **combines** your feature branch with `develop`, keeping both histories intact and adding a new merge commit.
 
-#### Steps to Merge:
+#### Steps to Merge
 
 <!-- run-disable -->
 
@@ -247,27 +250,32 @@ git push origin feature/my-branch
 #### Example: How Merge Works
 
 Before merging (`develop` has new commits `C` and `D`):
-```
+
+```plaintext
       X---Y---Z (feature/my-branch)
      /
 A---B---C---D (develop)
 ```
+
 After merging (`W` is a new merge commit):
-```
+
+```plaintext
       X---Y---Z---W (feature/my-branch, merged)
      /           /
 A---B---C-------D (develop)
 ```
 
-### Which one should you use?
+### Choosing the Right One
 
 Use **Rebase** if:
-- You want a clean, linear history.
-- You are working alone or sure that no one else depends on your commits.
+
+-   You want a clean, linear history.
+-   You are working alone or sure that no one else depends on your commits.
 
 Use **Merge** if:
-- You want a safer approach that doesn’t rewrite history.
-- You are unsure about rebase or are collaborating on the branch.
+
+-   You want a safer approach that doesn’t rewrite history.
+-   You are unsure about rebase or are collaborating on the branch.
 
 > **When in doubt, use merge.** It is safer and avoids potential conflicts caused by rewriting history. If you use the GitHub UI to update your branches, it also performs a merge.
 
@@ -288,8 +296,6 @@ To get started with your first contribution, check out the [Contributing Guide][
 [git]: http://git-scm.com/
 
 [github-remote]: https://help.github.com/articles/configuring-a-remote-for-a-fork/
-
-[git-clone-depth]: https://git-scm.com/docs/git-clone#git-clone---depthltdepthgt
 
 [git-remotes]: https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
 
