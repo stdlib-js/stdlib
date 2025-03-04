@@ -69,5 +69,6 @@ jobs:
       - name: 'Prevent contributors from opening too many "Good First PR"s'
         env:
           PR_NUMBER: ${{ github.event.pull_request.number }}
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
         run: |
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/rate_limit_contributions" $PR_NUMBER
