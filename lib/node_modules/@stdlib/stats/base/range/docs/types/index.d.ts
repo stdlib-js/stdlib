@@ -20,18 +20,20 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { NumericArray } from '@stdlib/types/array';
+import { NumericArray, Collection, AccessorArrayLike } from '@stdlib/types/array';
 
 /**
 * Interface describing `range`.
 */
+type InputArray = NumericArray | Collection<number> | AccessorArrayLike<number>;
+
 interface Routine {
 	/**
 	* Computes the range of a strided array.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns range
 	*
 	* @example
@@ -40,15 +42,15 @@ interface Routine {
 	* var v = range( x.length, x, 1 );
 	* // returns 4.0
 	*/
-	( N: number, x: NumericArray, stride: number ): number;
+	( N: number, x: InputArray, strideX: number ): number;
 
 	/**
 	* Computes the range of a strided array using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param stride - stride length
-	* @param offset - starting index
+	* @param strideX - stride length
+	* @param offsetX - starting index
 	* @returns range
 	*
 	* @example
@@ -57,7 +59,7 @@ interface Routine {
 	* var v = range.ndarray( x.length, x, 1, 0 );
 	* // returns 4.0
 	*/
-	ndarray( N: number, x: NumericArray, stride: number, offset: number ): number;
+	ndarray( N: number, x: InputArray, strideX: number, offsetX: number ): number;
 }
 
 /**
@@ -65,7 +67,7 @@ interface Routine {
 *
 * @param N - number of indexed elements
 * @param x - input array
-* @param stride - stride length
+* @param strideX - stride length
 * @returns range
 *
 * @example
