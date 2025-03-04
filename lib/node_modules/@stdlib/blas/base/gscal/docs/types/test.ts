@@ -16,6 +16,7 @@
 * limitations under the License.
 */
 
+import AccessorArray = require( '@stdlib/array/base/accessor' );
 import gscal = require( './index' );
 
 
@@ -25,7 +26,8 @@ import gscal = require( './index' );
 {
 	const x = new Float64Array( 10 );
 
-	gscal( x.length, 5.0, x, 1 ); // $ExpectType NumericArray
+	gscal( x.length, 5.0, x, 1 ); // $ExpectType Float64Array
+	gscal( x.length, 5.0, new AccessorArray( x ), 1 ); // $ExpectType AccessorArray<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
@@ -100,7 +102,8 @@ import gscal = require( './index' );
 {
 	const x = new Float64Array( 10 );
 
-	gscal.ndarray( x.length, 5.0, x, 1, 0 ); // $ExpectType NumericArray
+	gscal.ndarray( x.length, 5.0, x, 1, 0 ); // $ExpectType Float64Array
+	gscal.ndarray( x.length, 5.0, new AccessorArray( x ), 1, 0 ); // $ExpectType AccessorArray<number>
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...

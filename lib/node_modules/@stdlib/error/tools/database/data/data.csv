@@ -1084,3 +1084,7 @@
 "HT","invalid argument. Each key in the keybindings argument must correspond to a single action. Value: `%s`","TypeError"
 "HU","invalid argument. First argument must be a valid action name. Value: `%s`.","TypeError"
 "HV","invalid argument. Each key in the keys argument must correspond to a single action. Value: `%s`","TypeError"
+"HW","invalid argument. Second argument must be an array of data types. Value: `%s`.","TypeError"
+"HX","invalid argument. Third argument must be an array of data types. Value: `%s`.","TypeError"
+"HY","invalid argument. Fourth argument must be a supported output data type policy. Value: `%s`.","TypeError"
+"HZ","invalid argument. First argument must have one of the following data types: ""%s"". Data type: `%s`.","TypeError"

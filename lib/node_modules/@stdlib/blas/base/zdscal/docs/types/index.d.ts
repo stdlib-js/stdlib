@@ -37,21 +37,11 @@ interface Routine {
 	*
 	* @example
 	* var Complex128Array = require( '@stdlib/array/complex128' );
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
 	*
 	* var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 	*
 	* zdscal( 3, 2.0, zx, 1 );
-	*
-	* var z = zx.get( 0 );
-	* // returns <Complex128>
-	*
-	* var re = real( z );
-	* // returns 2.0
-	*
-	* var im = imag( z );
-	* // returns 4.0
+	* // zx => <Complex128Array>[ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0 ]
 	*/
 	( N: number, da: number, zx: Complex128Array, strideZX: number ): Complex128Array;
 
@@ -67,21 +57,11 @@ interface Routine {
 	*
 	* @example
 	* var Complex128Array = require( '@stdlib/array/complex128' );
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
 	*
 	* var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 	*
 	* zdscal.ndarray( 3, 2.0, zx, 1, 0 );
-	*
-	* var z = zx.get( 0 );
-	* // returns <Complex128>
-	*
-	* var re = real( z );
-	* // returns 2.0
-	*
-	* var im = imag( z );
-	* // returns 4.0
+	* // zx => <Complex128Array>[ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0 ]
 	*/
 	ndarray( N: number, da: number, zx: Complex128Array, strideZX: number, offsetZX: number ): Complex128Array;
 }
@@ -97,39 +77,19 @@ interface Routine {
 *
 * @example
 * var Complex128Array = require( '@stdlib/array/complex128' );
-* var real = require( '@stdlib/complex/float64/real' );
-* var imag = require( '@stdlib/complex/float64/imag' );
 *
 * var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 *
 * zdscal( 3, 2.0, zx, 1 );
-*
-* var z = zx.get( 1 );
-* // returns <Complex128>
-*
-* var re = real( z );
-* // returns 6.0
-*
-* var im = imag( z );
-* // returns 8.0
+* // zx => <Complex128Array>[ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0 ]
 *
 * @example
 * var Complex128Array = require( '@stdlib/array/complex128' );
-* var real = require( '@stdlib/complex/float64/real' );
-* var imag = require( '@stdlib/complex/float64/imag' );
 *
 * var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 *
 * zdscal.ndarray( 2, 2.0, zx, 1, 1 );
-*
-* var z = zx.get( 1 );
-* // returns <Complex128>
-*
-* var re = real( z );
-* // returns 10.0
-*
-* var im = imag( z );
-* // returns 12.0
+* // zx => <Complex128Array>[ 1.0, 2.0, 6.0, 8.0, 10.0, 12.0 ]
 */
 declare var zdscal: Routine;
 

@@ -31,7 +31,7 @@
 * @example
 * #include <stdint.h>
 *
-* static double fcn( const double x, const int_32 y, const int_32 z ) {
+* static double fcn( const double x, const int32_t y, const int32_t z ) {
 *     // ...
 * }
 *
