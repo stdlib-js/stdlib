@@ -5,18 +5,18 @@
 
     A predicate function is provided a single argument:
 
-    - clbk: callback to invoke upon predicate completion
+    - clbk: callback to invoke upon predicate completion.
 
     The callback function accepts two arguments:
 
-    - error: error object
-    - bool: condition used to determine whether to invoke `x` or `y`
+    - error: error object.
+    - bool: condition used to determine whether to invoke `x` or `y`.
 
     The `done` callback is invoked upon function completion and is provided at
     most two arguments:
 
-    - error: error object
-    - result: either `x` or `y`
+    - error: error object.
+    - result: either `x` or `y`.
 
     Execution is *not* guaranteed to be asynchronous. To guarantee asynchrony,
     wrap the `done` callback in a function which either executes at the end of

@@ -43,11 +43,11 @@ endif
 # @param {string} GIT_COMMIT_MESSAGE - Git commit message text
 #
 # @example
-# make lint-commit-message
+# make lint-commit-message GIT_COMMIT_MESSAGE='feat: add `foo/bar`'
 #/
 lint-commit-message:
 ifeq ($(GIT_COMMIT_LINTER), commitlint)
-	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" GIT_COMMIT_MESSAGE="$(GIT_COMMIT_MESSAGE)" $(MAKE) -f $(this_file) commitlint-message
+	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" GIT_COMMIT_MESSAGE='$(GIT_COMMIT_MESSAGE)' $(MAKE) -f $(this_file) commitlint-message
 endif
 
 .PHONY: lint-commit-message

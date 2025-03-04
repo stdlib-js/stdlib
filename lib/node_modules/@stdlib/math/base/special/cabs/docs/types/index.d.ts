@@ -33,7 +33,7 @@ import { Complex128 } from '@stdlib/types/complex';
 * @returns absolute value
 *
 * @example
-* var Complex128 = require( '@stdlib/complex/float64' );
+* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 *
 * var v = cabs( new Complex128( 5.0, 3.0 ) );
 * // returns ~5.83

@@ -182,6 +182,6 @@ The library links against the following external libraries or contains
 implementations from the following external libraries, which have their own
 licenses:
 
-* SLATEC Common Mathematical Library <http://www.netlib.no/netlib/slatec/>
+* SLATEC Common Mathematical Library <https://netlib.org/slatec/>
 
 Public domain.

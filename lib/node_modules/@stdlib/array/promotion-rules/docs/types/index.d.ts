@@ -78,8 +78,6 @@ declare function promotionRules( dtype1: string, dtype2: string ): null;
 /**
 * Returns a type promotion table displaying array data types with the smallest size and closest "kind" to which array data types can be safely cast.
 *
-* @param dtype1 - array data type
-* @param dtype2 - array data type
 * @returns promotion rule table
 *
 * @example

@@ -46,12 +46,31 @@ class Foo {
 // The function returns an object...
 {
 	const obj = new Foo();
-	groupOwn( obj, indicator ); // $ExpectType any
-	groupOwn( {}, indicator ); // $ExpectType any
+	groupOwn( obj, indicator ); // $ExpectType { [x: string]: string[]; }
+	groupOwn( {}, indicator ); // $ExpectType { [x: string]: never[]; }
 	const opts = {
-		'returns': 'indices' as 'indices'
+		'returns': 'indices' as const
 	};
-	groupOwn( obj, opts, indicator ); // $ExpectType any
+	groupOwn( obj, opts, indicator ); // $ExpectType { [x: string]: (keyof Foo)[]; }
+
+	const opts2 = {
+		'returns': 'values' as const
+	};
+	groupOwn( obj, opts2, indicator ); // $ExpectType { [x: string]: string[]; }
+
+	const opts3 = {
+		'returns': '*' as const
+	};
+	groupOwn( obj, opts3, indicator ); // $ExpectType { [x: string]: [keyof Foo, string][]; }
+
+	const obj2 = {
+		'beep': 'boop',
+		'foo': 'bar'
+	} as const;
+
+	groupOwn( obj2, opts,  indicator ); // $ExpectType { [x: string]: ("beep" | "foo")[]; }
+	groupOwn( obj2, opts2, indicator ); // $ExpectType { [x: string]: ("boop" | "bar")[]; }
+	groupOwn( obj2, opts3, indicator ); // $ExpectType { [x: string]: ["beep" | "foo", "boop" | "bar"][]; }
 }
 
 // The compiler throws an error if the function is provided a last argument which is not a function...

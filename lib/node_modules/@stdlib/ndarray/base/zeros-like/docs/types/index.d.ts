@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ndarray, typedndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, complex128ndarray, complex64ndarray, DataType } from '@stdlib/types/ndarray';
+import { typedndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, genericndarray, complex128ndarray, complex64ndarray } from '@stdlib/types/ndarray';
 
 /**
 * Creates a zero-filled array having the same shape and data type as a provided input ndarray.
@@ -368,7 +368,7 @@ declare function zerosLike( x: uint8cndarray ): uint8cndarray;
 * dt = y.dtype;
 * // returns 'generic'
 */
-declare function zerosLike( x: ndarray ): typedndarray<number>;
+declare function zerosLike( x: typedndarray<number> | genericndarray<any> ): typedndarray<number>;
 
 
 // EXPORTS //

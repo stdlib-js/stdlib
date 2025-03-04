@@ -1,0 +1,96 @@
+
+{{alias}}( condition, x, y )
+    Takes elements from either one of two arrays depending on a condition.
+
+    When all input arrays are non-empty, the function supports broadcasting
+    single-element arrays to the resolved output array length, which is equal to
+    the maximum length of all provided input arrays.
+
+    If `condition` is an empty array, the function returns an empty array.
+
+    Parameters
+    ----------
+    condition: ArrayLikeObject
+        Array containing values indicating whether to take an element from
+        either `x` or `y`. If a condition element is truthy, the function takes
+        a respective element from `x`; otherwise, the function takes a
+        respective element from `y`. If non-empty, must be broadcast compatible
+        with the resolved output array length.
+
+    x: ArrayLikeObject
+        First input array. If `condition` is non-empty, must be broadcast
+        compatible with the resolved output array length.
+
+    y: ArrayLikeObject
+        Second input array. If `condition` is non-empty, must be broadcast
+        compatible with the resolved output array length.
+
+    Returns
+    -------
+    out: Array
+        Output array.
+
+    Examples
+    --------
+    > var x = [ 1, 2, 3, 4 ];
+    > var y = [ 5, 6, 7, 8 ];
+    > var c = [ true, false, true, false ];
+    > var z = {{alias}}( c, x, y )
+    [ 1, 6, 3, 8 ]
+
+
+{{alias}}.assign( condition, x, y, out, stride, offset )
+    Takes elements from either one of two arrays depending on a condition and
+    assigns the values to elements in a provided output array.
+
+    The function supports broadcasting single-element arrays to the output array
+    length.
+
+    When `condition` is an empty array, the function returns the output array
+    unchanged.
+
+    Parameters
+    ----------
+    condition: ArrayLikeObject
+        Array containing values indicating whether to take an element from
+        either `x` or `y`. If a condition element is truthy, the function takes
+        a respective element from `x`; otherwise, the function takes a
+        respective element from `y`. If non-empty, must be broadcast compatible
+        with the output array.
+
+    x: ArrayLikeObject
+        First input array. If `condition` is non-empty, must be broadcast
+        compatible with the output array.
+
+    y: ArrayLikeObject
+        Second input array. If `condition` is non-empty, must be broadcast
+        compatible with the output array.
+
+    out: ArrayLikeObject
+        Output array.
+
+    stride: integer
+        Output array stride.
+
+    offset: integer
+        Output array offset.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    > var x = [ 1, 2, 3, 4 ];
+    > var y = [ 5, 6, 7, 8 ];
+    > var c = [ true, false, true, false ];
+    > var out = [ 0, 0, 0, 0, 0, 0, 0, 0 ];
+    > var arr = {{alias}}.assign( c, x, y, out, 2, 0 )
+    [ 1, 0, 6, 0, 3, 0, 8, 0 ]
+    > var bool = ( arr === out )
+    true
+
+    See Also
+    --------
+

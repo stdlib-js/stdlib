@@ -5,10 +5,10 @@
 
     When invoked, an input function is provided four arguments:
 
-    - value: iterated value
-    - index: iterated value index
-    - n: iteration count (zero-based)
-    - src: source array-like object
+    - value: iterated value.
+    - index: iterated value index.
+    - n: iteration count (zero-based).
+    - src: source array-like object.
 
     If an environment supports Symbol.iterator, the returned iterator is
     iterable.

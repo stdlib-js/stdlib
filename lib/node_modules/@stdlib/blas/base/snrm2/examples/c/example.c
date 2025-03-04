@@ -34,4 +34,10 @@ int main( void ) {
 
 	// Print the result:
 	printf( "L2-norm: %f\n", l2 );
+
+	// Compute the L2-norm:
+	l2 = c_snrm2_ndarray( N, x, -strideX, 7 );
+
+	// Print the result:
+	printf( "L2-norm: %f\n", l2 );
 }

@@ -17,8 +17,8 @@
 */
 
 #include "stdlib/math/base/special/ccis.h"
-#include "stdlib/complex/float64.h"
-#include "stdlib/complex/reim.h"
+#include "stdlib/complex/float64/ctor.h"
+#include "stdlib/complex/float64/reim.h"
 #include <stdio.h>
 
 int main() {
@@ -36,11 +36,11 @@ int main() {
 	int i;
 	for ( i = 0; i < 4; i++ ) {
 		v = x[ i ];
-		stdlib_reim( v, &re, &im );
+		stdlib_complex128_reim( v, &re, &im );
 		printf( "z = %lf + %lfi\n", re, im );
 
 		y = stdlib_base_ccis( v );
-		stdlib_reim( y, &re, &im );
+		stdlib_complex128_reim( y, &re, &im );
 		printf( "ccis(z) = %lf + %lfi\n", re, im );
 	}
 }

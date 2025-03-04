@@ -16,54 +16,20 @@
 * limitations under the License.
 */
 
-/// <reference types="@stdlib/types"/>
-
-import { ndarray } from '@stdlib/types/ndarray';
+import zeros = require( '@stdlib/ndarray/zeros' );
 import sdot = require( './index' );
-
-/**
-* Returns an ndarray object.
-*
-* @returns ndarray object
-*/
-function createArray(): ndarray {
-	const arr: ndarray = {
-		'byteLength': null,
-		'BYTES_PER_ELEMENT': null,
-		'data': new Float64Array( [ 1, 2, 3 ] ),
-		'dtype': 'float64',
-		'flags': {
-			'ROW_MAJOR_CONTIGUOUS': true,
-			'COLUMN_MAJOR_CONTIGUOUS': false
-		},
-		'length': 3,
-		'ndims': 1,
-		'offset': 0,
-		'order': 'row-major',
-		'shape': [ 3 ],
-		'strides': [ 1 ],
-		'get': ( i: number ): any => {
-			return arr.data[ i ];
-		},
-		'set': ( i: number, v: any ): ndarray => {
-			arr.data[ i ] = v;
-			return arr;
-		}
-	};
-	return arr;
-}
 
 
 // TESTS //
 
 // The function returns a number...
 {
-	sdot( createArray(), createArray() ); // $ExpectType number
+	sdot( zeros( [ 10 ] ), zeros( [ 10 ] ) ); // $ExpectType float32ndarray
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an ndarray...
 {
-	const y: ndarray = createArray();
+	const y = zeros( [ 10 ] );
 
 	sdot( 10, y ); // $ExpectError
 	sdot( '10', y ); // $ExpectError
@@ -74,11 +40,21 @@ function createArray(): ndarray {
 	sdot( {}, y ); // $ExpectError
 	sdot( [], y ); // $ExpectError
 	sdot( ( x: number ): number => x, y ); // $ExpectError
+
+	sdot( 10, y, -1 ); // $ExpectError
+	sdot( '10', y, -1 ); // $ExpectError
+	sdot( true, y, -1 ); // $ExpectError
+	sdot( false, y, -1 ); // $ExpectError
+	sdot( null, y, -1 ); // $ExpectError
+	sdot( undefined, y, -1 ); // $ExpectError
+	sdot( {}, y, -1 ); // $ExpectError
+	sdot( [], y, -1 ); // $ExpectError
+	sdot( ( x: number ): number => x, y, -1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not an ndarray...
 {
-	const x: ndarray = createArray();
+	const x = zeros( [ 10 ] );
 
 	sdot( x, 10 ); // $ExpectError
 	sdot( x, '10' ); // $ExpectError
@@ -89,14 +65,38 @@ function createArray(): ndarray {
 	sdot( x, {} ); // $ExpectError
 	sdot( x, [] ); // $ExpectError
 	sdot( x, ( x: number ): number => x ); // $ExpectError
+
+	sdot( x, 10, -1 ); // $ExpectError
+	sdot( x, '10', -1 ); // $ExpectError
+	sdot( x, true, -1 ); // $ExpectError
+	sdot( x, false, -1 ); // $ExpectError
+	sdot( x, null, -1 ); // $ExpectError
+	sdot( x, undefined, -1 ); // $ExpectError
+	sdot( x, {}, -1 ); // $ExpectError
+	sdot( x, [], -1 ); // $ExpectError
+	sdot( x, ( x: number ): number => x, -1 ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided a third argument which is not a number...
+{
+	const x = zeros( [ 10 ] );
+	const y = zeros( [ 10 ] );
+
+	sdot( x, y, '10' ); // $ExpectError
+	sdot( x, y, true ); // $ExpectError
+	sdot( x, y, false ); // $ExpectError
+	sdot( x, y, null ); // $ExpectError
+	sdot( x, y, {} ); // $ExpectError
+	sdot( x, y, [] ); // $ExpectError
+	sdot( x, y, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
-	const x: ndarray = createArray();
-	const y: ndarray = createArray();
+	const x = zeros( [ 10 ] );
+	const y = zeros( [ 10 ] );
 
 	sdot(); // $ExpectError
 	sdot( x ); // $ExpectError
-	sdot( x, y, {} ); // $ExpectError
+	sdot( x, y, -1, {} ); // $ExpectError
 }

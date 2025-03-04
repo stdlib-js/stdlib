@@ -20,8 +20,8 @@
 #define STDLIB_NDARRAY_CTOR_GET_H
 
 #include "ndarray.h"
-#include "stdlib/complex/float32.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float32/ctor.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 #include <stdbool.h>
 

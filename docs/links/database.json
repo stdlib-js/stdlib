@@ -8993,7 +8993,7 @@
       "policy"
     ]
   },
-  "https://github.com/stdlib-js/stdlib/blob/develop/docs/development.md": {
+  "https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/development.md": {
     "id": "stdlib-development",
     "description": "The stdlib development guidelines.",
     "short_url": "",
@@ -10370,7 +10370,7 @@
       "nodejs"
     ]
   },
-  "https://twitter.com/stdlibjs": {
+  "https://x.com/stdlibjs": {
     "id": "stdlib-twitter",
     "description": "Twitter account for the stdlib standard library for JavaScript and Node.js.",
     "short_url": "",

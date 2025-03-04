@@ -30,7 +30,7 @@ import dispatch = require( './index' );
 /**
 * Nullary callback.
 *
-* @return input value
+* @returns input value
 */
 function nullary(): any {
 	return 5.0;
@@ -40,7 +40,7 @@ function nullary(): any {
 * Unary callback.
 *
 * @param x - input value
-* @return input value
+* @returns input value
 */
 function unary( x: any ): any {
 	return x;
@@ -51,7 +51,7 @@ function unary( x: any ): any {
 *
 * @param x - input value
 * @param y - input value
-* @return output value
+* @returns output value
 */
 function binary( x: number, y: number ): number {
 	return x + y;
@@ -63,7 +63,7 @@ function binary( x: number, y: number ): number {
 * @param x - input value
 * @param y - input value
 * @param z - input value
-* @return output value
+* @returns output value
 */
 function ternary( x: number, y: number, z: number ): number {
 	return x + y + z;
@@ -76,7 +76,7 @@ function ternary( x: number, y: number, z: number ): number {
 * @param y - input value
 * @param z - input value
 * @param w - input value
-* @return output value
+* @returns output value
 */
 function quaternary( x: number, y: number, z: number, w: number ): number {
 	return x + y + z + w;
@@ -88,7 +88,7 @@ function quaternary( x: number, y: number, z: number, w: number ): number {
 * @param shape - dimensions
 * @param idx - linear index
 * @param opts - options
-* @return subscripts
+* @returns subscripts
 */
 function ind2sub( shape: ArrayLike<number>, idx: number, opts?: any ): Array<number> {
 	let out;
@@ -164,7 +164,7 @@ function ndarrayFcn( arrays: Array<ndarray>, fcn: ( x: any ) => any ): void {
 /**
 * Mock function to create an ndarray-like object.
 *
-* @return ndarray-like object
+* @returns ndarray-like object
 */
 function array(): ndarray {
 	const obj: ndarray = {

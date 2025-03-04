@@ -16,29 +16,29 @@
 * limitations under the License.
 */
 
-import gammap1m1 = require( './index' );
+import gamma1pm1 = require( './index' );
 
 
 // TESTS //
 
 // The function returns a number...
 {
-	gammap1m1( 8 ); // $ExpectType number
+	gamma1pm1( 8 ); // $ExpectType number
 }
 
 // The compiler throws an error if the function is provided a value other than a number...
 {
-	gammap1m1( true ); // $ExpectError
-	gammap1m1( false ); // $ExpectError
-	gammap1m1( null ); // $ExpectError
-	gammap1m1( undefined ); // $ExpectError
-	gammap1m1( '5' ); // $ExpectError
-	gammap1m1( [] ); // $ExpectError
-	gammap1m1( {} ); // $ExpectError
-	gammap1m1( ( x: number ): number => x ); // $ExpectError
+	gamma1pm1( true ); // $ExpectError
+	gamma1pm1( false ); // $ExpectError
+	gamma1pm1( null ); // $ExpectError
+	gamma1pm1( undefined ); // $ExpectError
+	gamma1pm1( '5' ); // $ExpectError
+	gamma1pm1( [] ); // $ExpectError
+	gamma1pm1( {} ); // $ExpectError
+	gamma1pm1( ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided insufficient arguments...
 {
-	gammap1m1(); // $ExpectError
+	gamma1pm1(); // $ExpectError
 }

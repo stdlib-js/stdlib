@@ -19,7 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* Computes the base `b` logarithm of `x`.
+* Computes the base `b` logarithm of a double-precision floating-point number.
 *
 * @param x - input value
 * @param b - base

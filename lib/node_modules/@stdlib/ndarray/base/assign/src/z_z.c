@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2023 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -26,11 +26,11 @@
 #include "stdlib/ndarray/base/assign/dispatch_object.h"
 #include "stdlib/ndarray/base/assign/dispatch.h"
 #include "stdlib/ndarray/ctor.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 /**
-* Assigns element in a zero-dimensional input ndarray to elements in a zero-dimensional output ndarray.
+* Assigns elements in a zero-dimensional input ndarray to elements in a zero-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -125,7 +125,7 @@ int8_t stdlib_ndarray_assign_z_z_0d( struct ndarray *arrays[], void *data ) {
 }
 
 /**
-* Assigns element in a one-dimensional input ndarray to elements in a one-dimensional output ndarray.
+* Assigns elements in a one-dimensional input ndarray to elements in a one-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -212,7 +212,7 @@ int8_t stdlib_ndarray_assign_z_z_1d( struct ndarray *arrays[], void *data ) {
 }
 
 /**
-* Assigns element in a two-dimensional input ndarray to elements in a two-dimensional output ndarray.
+* Assigns elements in a two-dimensional input ndarray to elements in a two-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -299,7 +299,7 @@ int8_t stdlib_ndarray_assign_z_z_2d( struct ndarray *arrays[], void *data ) {
 }
 
 /**
-* Assigns element in a two-dimensional input ndarray to elements in a two-dimensional output ndarray.
+* Assigns elements in a two-dimensional input ndarray to elements in a two-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -386,7 +386,7 @@ int8_t stdlib_ndarray_assign_z_z_2d_blocked( struct ndarray *arrays[], void *dat
 }
 
 /**
-* Assigns element in a three-dimensional input ndarray to elements in a three-dimensional output ndarray.
+* Assigns elements in a three-dimensional input ndarray to elements in a three-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -473,7 +473,7 @@ int8_t stdlib_ndarray_assign_z_z_3d( struct ndarray *arrays[], void *data ) {
 }
 
 /**
-* Assigns element in a three-dimensional input ndarray to elements in a three-dimensional output ndarray.
+* Assigns elements in a three-dimensional input ndarray to elements in a three-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -560,7 +560,7 @@ int8_t stdlib_ndarray_assign_z_z_3d_blocked( struct ndarray *arrays[], void *dat
 }
 
 /**
-* Assigns element in a four-dimensional input ndarray to elements in a four-dimensional output ndarray.
+* Assigns elements in a four-dimensional input ndarray to elements in a four-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -647,7 +647,7 @@ int8_t stdlib_ndarray_assign_z_z_4d( struct ndarray *arrays[], void *data ) {
 }
 
 /**
-* Assigns element in a four-dimensional input ndarray to elements in a four-dimensional output ndarray.
+* Assigns elements in a four-dimensional input ndarray to elements in a four-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -734,7 +734,7 @@ int8_t stdlib_ndarray_assign_z_z_4d_blocked( struct ndarray *arrays[], void *dat
 }
 
 /**
-* Assigns element in a five-dimensional input ndarray to elements in a five-dimensional output ndarray.
+* Assigns elements in a five-dimensional input ndarray to elements in a five-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -821,7 +821,7 @@ int8_t stdlib_ndarray_assign_z_z_5d( struct ndarray *arrays[], void *data ) {
 }
 
 /**
-* Assigns element in a five-dimensional input ndarray to elements in a five-dimensional output ndarray.
+* Assigns elements in a five-dimensional input ndarray to elements in a five-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -908,7 +908,7 @@ int8_t stdlib_ndarray_assign_z_z_5d_blocked( struct ndarray *arrays[], void *dat
 }
 
 /**
-* Assigns element in a six-dimensional input ndarray to elements in a six-dimensional output ndarray.
+* Assigns elements in a six-dimensional input ndarray to elements in a six-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -995,7 +995,7 @@ int8_t stdlib_ndarray_assign_z_z_6d( struct ndarray *arrays[], void *data ) {
 }
 
 /**
-* Assigns element in a six-dimensional input ndarray to elements in a six-dimensional output ndarray.
+* Assigns elements in a six-dimensional input ndarray to elements in a six-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -1082,7 +1082,7 @@ int8_t stdlib_ndarray_assign_z_z_6d_blocked( struct ndarray *arrays[], void *dat
 }
 
 /**
-* Assigns element in a seven-dimensional input ndarray to elements in a seven-dimensional output ndarray.
+* Assigns elements in a seven-dimensional input ndarray to elements in a seven-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -1169,7 +1169,7 @@ int8_t stdlib_ndarray_assign_z_z_7d( struct ndarray *arrays[], void *data ) {
 }
 
 /**
-* Assigns element in a seven-dimensional input ndarray to elements in a seven-dimensional output ndarray.
+* Assigns elements in a seven-dimensional input ndarray to elements in a seven-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -1256,7 +1256,7 @@ int8_t stdlib_ndarray_assign_z_z_7d_blocked( struct ndarray *arrays[], void *dat
 }
 
 /**
-* Assigns element in an eight-dimensional input ndarray to elements in an eight-dimensional output ndarray.
+* Assigns elements in an eight-dimensional input ndarray to elements in an eight-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -1343,7 +1343,7 @@ int8_t stdlib_ndarray_assign_z_z_8d( struct ndarray *arrays[], void *data ) {
 }
 
 /**
-* Assigns element in an eight-dimensional input ndarray to elements in an eight-dimensional output ndarray.
+* Assigns elements in an eight-dimensional input ndarray to elements in an eight-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -1430,7 +1430,7 @@ int8_t stdlib_ndarray_assign_z_z_8d_blocked( struct ndarray *arrays[], void *dat
 }
 
 /**
-* Assigns element in a nine-dimensional input ndarray to elements in a nine-dimensional output ndarray.
+* Assigns elements in a nine-dimensional input ndarray to elements in a nine-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -1517,7 +1517,7 @@ int8_t stdlib_ndarray_assign_z_z_9d( struct ndarray *arrays[], void *data ) {
 }
 
 /**
-* Assigns element in a nine-dimensional input ndarray to elements in a nine-dimensional output ndarray.
+* Assigns elements in a nine-dimensional input ndarray to elements in a nine-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -1604,7 +1604,7 @@ int8_t stdlib_ndarray_assign_z_z_9d_blocked( struct ndarray *arrays[], void *dat
 }
 
 /**
-* Assigns element in a ten-dimensional input ndarray to elements in a ten-dimensional output ndarray.
+* Assigns elements in a ten-dimensional input ndarray to elements in a ten-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -1691,7 +1691,7 @@ int8_t stdlib_ndarray_assign_z_z_10d( struct ndarray *arrays[], void *data ) {
 }
 
 /**
-* Assigns element in a ten-dimensional input ndarray to elements in a ten-dimensional output ndarray.
+* Assigns elements in a ten-dimensional input ndarray to elements in a ten-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -1778,7 +1778,7 @@ int8_t stdlib_ndarray_assign_z_z_10d_blocked( struct ndarray *arrays[], void *da
 }
 
 /**
-* Assigns element in an n-dimensional input ndarray to elements in an n-dimensional output ndarray.
+* Assigns elements in an n-dimensional input ndarray to elements in an n-dimensional output ndarray.
 *
 * ## Notes
 *
@@ -1909,7 +1909,7 @@ static const struct ndarrayUnaryAssignDispatchObject obj = {
 };
 
 /**
-* Assigns element in an input ndarray to elements in an output ndarray.
+* Assigns elements in an input ndarray to elements in an output ndarray.
 *
 * ## Notes
 *

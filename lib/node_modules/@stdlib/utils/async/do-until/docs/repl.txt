@@ -7,9 +7,9 @@
 
     The function to invoke is provided two arguments:
 
-    - `i`: iteration number (starting from zero)
-    - `next`: a callback which must be invoked before proceeding to the next
-      iteration
+    - i: iteration number (starting from zero).
+    - next: a callback which must be invoked before proceeding to the next
+      iteration.
 
     The first argument of the `next` callback is an `error` argument. If `fcn`
     calls the `next` callback with a truthy `error` argument, the function
@@ -18,13 +18,13 @@
 
     The predicate function is provided two arguments:
 
-    - `i`: iteration number (starting from one)
-    - `clbk`: a callback indicating whether to invoke `fcn`
+    - i: iteration number (starting from one).
+    - clbk: a callback indicating whether to invoke `fcn`.
 
     The `clbk` function accepts two arguments:
 
-    - `error`: error argument
-    - `bool`: test result
+    - error: error argument.
+    - bool: test result.
 
     If the test result is falsy, the function continues invoking `fcn`;
     otherwise, the function invokes the `done` callback.

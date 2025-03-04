@@ -379,6 +379,8 @@
 #include "binary/uu_z_as_zz_z.h"
 #include "binary/uz_z_as_zz_z.h"
 
+#include "binary/xx_x.h"
+
 #include "binary/zb_z_as_zz_z.h"
 #include "binary/zc_z_as_zz_z.h"
 #include "binary/zd_z_as_zz_z.h"

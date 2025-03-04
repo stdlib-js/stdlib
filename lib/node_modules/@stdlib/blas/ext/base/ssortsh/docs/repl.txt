@@ -59,18 +59,17 @@
 
     // Using `N` and `stride` parameters:
     > x = new {{alias:@stdlib/array/float32}}( [ 1.0, -2.0, 3.0, -4.0 ] );
-    > var N = {{alias:@stdlib/math/base/special/floor}}( x.length / 2 );
-    > {{alias}}( N, -1, x, 2 )
+    > {{alias}}( 2, -1, x, 2 )
     <Float32Array>[ 3.0, -2.0, 1.0, -4.0 ]
 
     // Using view offsets:
     > var x0 = new {{alias:@stdlib/array/float32}}( [ 1.0, -2.0, 3.0, -4.0 ] );
     > var x1 = new {{alias:@stdlib/array/float32}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
-    > N = {{alias:@stdlib/math/base/special/floor}}( x0.length / 2 );
-    > {{alias}}( N, 1, x1, 2 )
+    > {{alias}}( 2, 1, x1, 2 )
     <Float32Array>[ -4.0, 3.0, -2.0 ]
     > x0
     <Float32Array>[ 1.0, -4.0, 3.0, -2.0 ]
+
 
 {{alias}}.ndarray( N, order, x, stride, offset )
     Sorts a single-precision floating-point strided array using Shellsort and
@@ -112,8 +111,7 @@
 
     // Using an index offset:
     > x = new {{alias:@stdlib/array/float32}}( [ 1.0, -2.0, 3.0, -4.0 ] );
-    > var N = {{alias:@stdlib/math/base/special/floor}}( x.length / 2 );
-    > {{alias}}.ndarray( N, 1, x, 2, 1 )
+    > {{alias}}.ndarray( 2, 1, x, 2, 1 )
     <Float32Array>[ 1.0, -4.0, 3.0, -2.0 ]
 
     See Also

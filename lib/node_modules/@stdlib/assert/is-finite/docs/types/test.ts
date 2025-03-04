@@ -46,7 +46,6 @@ import isFinite = require( './index' );
 	isFinite.isPrimitive( 4, 123 ); // $ExpectError
 }
 
-
 // Attached to main export is an isPrimitive method which returns a boolean...
 {
 	// eslint-disable-next-line no-new-wrappers

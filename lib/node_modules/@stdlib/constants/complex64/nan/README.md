@@ -35,8 +35,8 @@ var COMPLEX64_NAN = require( '@stdlib/constants/complex64/nan' );
 Canonical single-precision complex floating-point `NaN`.
 
 ```javascript
-var realf = require( '@stdlib/complex/realf' );
-var imagf = require( '@stdlib/complex/imagf' );
+var realf = require( '@stdlib/complex/float32/real' );
+var imagf = require( '@stdlib/complex/float32/imag' );
 
 var re = realf( COMPLEX64_NAN );
 // returns NaN
@@ -56,8 +56,8 @@ var im = imagf( COMPLEX64_NAN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var realf = require( '@stdlib/complex/realf' );
-var imagf = require( '@stdlib/complex/imagf' );
+var realf = require( '@stdlib/complex/float32/real' );
+var imagf = require( '@stdlib/complex/float32/imag' );
 var Complex64Array = require( '@stdlib/array/complex64' );
 var COMPLEX64_NAN = require( '@stdlib/constants/complex64/nan' );
 

@@ -53,7 +53,7 @@ function toKey( value: Foo ): string {
 */
 const funcs = {
 	'count': 0,
-	'toKey': function toKey( this: { count: number; }, value: Foo ): string {
+	'toKey': function toKey( this: { count: number }, value: Foo ): string {
 		this.count += 1;
 		return value.name;
 	}

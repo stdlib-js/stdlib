@@ -28,50 +28,56 @@
     {
       "task": "build",
       "src": [
-        "./src/dapxsumkbn2.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/math/base/special/abs",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-double",
-        "@stdlib/napi/argv-strided-float64array"
+        "@stdlib/napi/argv-strided-float64array",
+        "@stdlib/napi/create-double"
       ]
     },
     {
       "task": "benchmark",
       "src": [
-        "./src/dapxsumkbn2.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/math/base/special/abs",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
+      ]
     },
     {
       "task": "examples",
       "src": [
-        "./src/dapxsumkbn2.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/math/base/special/abs",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
+      ]
     }
   ]
 }

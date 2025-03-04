@@ -1,0 +1,69 @@
+{
+  "name": "@stdlib/array/base/unary3d-by",
+  "version": "0.0.0",
+  "description": "Apply a unary function to each element retrieved from a three-dimensional nested input array according to a callback function and assign results to elements in a three-dimensional nested output array.",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "main": "./lib",
+  "directories": {
+    "benchmark": "./benchmark",
+    "doc": "./docs",
+    "example": "./examples",
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "scripts": {},
+  "homepage": "https://github.com/stdlib-js/stdlib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stdlib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
+  "keywords": [
+    "stdlib",
+    "base",
+    "array",
+    "multidimensional",
+    "ndarray",
+    "matrix",
+    "3d",
+    "unary",
+    "apply",
+    "foreach",
+    "map",
+    "transform",
+    "accessor",
+    "callback",
+    "clbk"
+  ],
+  "__stdlib__": {}
+}

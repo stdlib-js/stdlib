@@ -21,7 +21,7 @@
 /**
 * Returns a filled "generic" array.
 *
-* @param value - fill value
+* @param value - fill value,
 * @param len - array length
 * @returns output array
 *

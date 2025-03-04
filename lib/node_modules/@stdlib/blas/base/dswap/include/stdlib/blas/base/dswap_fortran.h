@@ -32,7 +32,7 @@ extern "C" {
 /**
 * Interchanges two double-precision floating-point vectors.
 */
-void dswap( const int *, double *, const int *, double *, const int * );
+void dswap( const CBLAS_INT *, double *, const CBLAS_INT *, double *, const CBLAS_INT * );
 
 #ifdef __cplusplus
 }

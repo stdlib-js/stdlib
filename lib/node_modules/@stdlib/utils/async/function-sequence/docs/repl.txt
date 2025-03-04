@@ -10,8 +10,8 @@
     should be invoked upon function completion. The callback accepts two
     arguments:
 
-    - `error`: error argument
-    - `result`: function result
+    - error: error argument.
+    - result: function result.
 
     If a provided function calls the `next` callback with a truthy `error`
     argument, the pipeline function suspends execution and immediately calls the

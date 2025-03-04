@@ -152,7 +152,7 @@ var arr6 = complexarray( buf, 24, 4, 'complex64' );
 ```javascript
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
 var gfillBy = require( '@stdlib/blas/ext/base/gfill-by' );
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var reinterpret128 = require( '@stdlib/strided/base/reinterpret-complex128' );
 var complexarray = require( '@stdlib/array/typed-complex' );
 

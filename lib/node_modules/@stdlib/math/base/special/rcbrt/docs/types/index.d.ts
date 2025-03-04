@@ -42,7 +42,7 @@
 *
 * @example
 * var v = rcbrt( -8.0 );
-* // returns -2.0
+* // returns -0.5
 *
 * @example
 * var v = rcbrt( NaN );

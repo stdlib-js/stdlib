@@ -1,0 +1,29 @@
+
+{{alias}}( array )
+    Returns the WebAssembly data type for a provided array.
+
+    If provided an argument having an unknown or unsupported type, the function
+    assumes that values can be stored as double-precision floating-point numbers
+    and returns 'float64'.
+
+    Parameters
+    ----------
+    array: ArrayLikeObject
+        Input value.
+
+    Returns
+    -------
+    out: string
+        Data type.
+
+    Examples
+    --------
+    > var arr = new {{alias:@stdlib/array/float64}}( 10 );
+    > var dt = {{alias}}( arr )
+    'float64'
+    > dt = {{alias}}( [] )
+    'float64'
+
+    See Also
+    --------
+

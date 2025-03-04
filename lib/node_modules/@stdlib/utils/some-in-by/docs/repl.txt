@@ -6,9 +6,9 @@
 
     The predicate function is provided three arguments:
 
-    - `value`: object value
-    - `key`: object key
-    - `obj`: the input object
+    - value: object value.
+    - key: object key.
+    - obj: the input object.
 
     The function immediately returns upon finding `n` successful properties.
 

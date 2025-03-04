@@ -1,0 +1,18 @@
+---
+type: filter-packages
+exclude:
+  - complex
+  - complex/float32/reviver
+  - complex/float64
+  - complex/float64/ctor
+  - complex/float64/reviver
+  - complex/reviver
+  - error/tools/id2pkg
+  - error/tools/pkg2id
+  - namespace/alias2pkg
+  - namespace
+  - namespace/pkg2alias
+  - namespace/pkg2related
+  - namespace/pkg2standalone
+  - namespace/standalone2pkg
+---

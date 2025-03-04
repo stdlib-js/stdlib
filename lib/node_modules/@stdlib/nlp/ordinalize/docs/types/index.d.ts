@@ -33,7 +33,7 @@ interface Options {
 	* -   **es**: Spanish.
 	* -   **fin**: Finnish.
 	* -   **fr**: French.
-	* -   **de**: Dutch.
+	* -   **de**: German.
 	* -   **it**: Italian.
 	* -   **pt**: Portuguese.
 	* -   **swe**: Swedish.

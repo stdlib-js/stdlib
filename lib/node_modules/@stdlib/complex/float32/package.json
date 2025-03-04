@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/complex/float32",
   "version": "0.0.0",
-  "description": "64-bit complex number.",
+  "description": "Single-precision complex number functions.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
@@ -13,14 +13,11 @@
       "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
     }
   ],
-  "main": "./lib",
+  "main": "lib/index.js",
   "directories": {
-    "benchmark": "./benchmark",
     "doc": "./docs",
     "example": "./examples",
-    "include": "./include",
     "lib": "./lib",
-    "src": "./src",
     "test": "./test"
   },
   "types": "./docs/types",
@@ -54,15 +51,11 @@
     "stdlib",
     "stdtypes",
     "types",
-    "data",
-    "structure",
     "complex",
-    "complex64",
-    "64-bit",
-    "float32",
-    "float",
-    "single",
-    "single-precision",
-    "ieee754"
+    "cmplx",
+    "number",
+    "namespace",
+    "ns",
+    "float32"
   ]
 }

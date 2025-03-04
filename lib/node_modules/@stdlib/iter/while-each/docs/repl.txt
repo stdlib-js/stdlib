@@ -1,13 +1,13 @@
 
 {{alias}}( iterator, predicate, fcn[, thisArg] )
-    Returns an iterator which invokes a function for each iterated value before 
+    Returns an iterator which invokes a function for each iterated value before
     returning the iterated value until either a predicate function returns false
     or the iterator has iterated over all values.
 
     When invoked, both input functions are provided two arguments:
 
-    - value: iterated value
-    - index: iteration index (zero-based)
+    - value: iterated value.
+    - index: iteration index (zero-based).
 
     If an environment supports Symbol.iterator, the returned iterator is
     iterable.

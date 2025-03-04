@@ -93,14 +93,12 @@ var out = safeCasts( 'foo' );
 var dtypes = require( '@stdlib/ndarray/dtypes' );
 var safeCasts = require( '@stdlib/ndarray/safe-casts' );
 
-var DTYPES;
-var list;
-var i;
-
 // Get the list of supported ndarray data types:
-DTYPES = dtypes();
+var DTYPES = dtypes();
 
 // Print the list of ndarray data types to which a data type can be safely cast...
+var list;
+var i;
 for ( i = 0; i < DTYPES.length; i++ ) {
     list = safeCasts( DTYPES[ i ] );
     console.log( '%s: %s', DTYPES[ i ], list.join( ', ' ) );

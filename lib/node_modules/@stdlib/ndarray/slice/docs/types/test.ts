@@ -87,7 +87,7 @@ import slice = require( './index' );
 	slice( empty( 'uint32', sh, order ), [ null, null ], { 'strict': false } ); // $ExpectType uint32ndarray
 	slice( empty( 'uint16', sh, order ), [ null, null ], { 'strict': false } ); // $ExpectType uint16ndarray
 	slice( empty( 'uint8', sh, order ), [ null, null ], { 'strict': false } ); // $ExpectType uint8ndarray
-	slice( empty( 'uint8c', sh, order ), [ null, null ], { 'strict': false } ); // $ExpectType
+	slice( empty( 'uint8c', sh, order ), [ null, null ], { 'strict': false } ); // $ExpectType uint8cndarray
 
 	slice( empty( 'float64', sh, order ), null, null, { 'strict': false } ); // $ExpectType float64ndarray
 	slice( empty( 'float32', sh, order ), null, null, { 'strict': false } ); // $ExpectType float32ndarray

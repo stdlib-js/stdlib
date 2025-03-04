@@ -12,8 +12,8 @@
 
     The accumulator function accepts two arguments:
 
-    - x: value
-    - w: weight
+    - x: value.
+    - w: weight.
 
     Returns
     -------

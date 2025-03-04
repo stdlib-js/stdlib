@@ -402,7 +402,7 @@
 * @param tout  output type
 *
 * @example
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 *
 * // e.g., z_z
 * STDLIB_NDARRAY_ASSIGN_10D_LOOP_NOCAST( stdlib_complex128_t, stdlib_complex128_t )
@@ -428,7 +428,7 @@
 * @param cout  output casting function
 *
 * @example
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 *
 * // e.g., d_z
 * STDLIB_NDARRAY_ASSIGN_10D_LOOP_CAST_FCN( double, stdlib_complex128_t, stdlib_complex128_from_float64 )

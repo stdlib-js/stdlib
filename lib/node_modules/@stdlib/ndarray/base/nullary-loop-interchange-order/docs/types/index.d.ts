@@ -78,7 +78,7 @@ interface LoopOrderObject {
 * var idx = o.idx;
 * // returns [ 2, 1, 0 ]
 */
-declare function nullaryLoopOrder( shape: ArrayLike<number>, stridesX: ArrayLike<number> ): LoopOrderObject;
+declare function nullaryLoopOrder( sh: ArrayLike<number>, sx: ArrayLike<number> ): LoopOrderObject;
 
 
 // EXPORTS //

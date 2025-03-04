@@ -38,4 +38,12 @@ int main( void ) {
 	for ( int i = 0; i < 8; i++ ) {
 		printf( "y[ %i ] = %lf\n", i, y[ i ] );
 	}
+
+	// Compute `a*x + y`:
+	c_daxpy_ndarray( N, 5.0, x, strideX, 1, y, strideY, 7 );
+
+	// Print the result:
+	for ( int i = 0; i < 8; i++ ) {
+		printf( "y[ %i ] = %lf\n", i, y[ i ] );
+	}
 }

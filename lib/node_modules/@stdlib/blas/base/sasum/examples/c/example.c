@@ -27,10 +27,16 @@ int main( void ) {
 	const int N = 8;
 
 	// Specify a stride:
-	const int strideX = 1;
+	const int stride = 1;
 
 	// Compute the sum of absolute values:
-	float sum = c_sasum( N, x, strideX );
+	float sum = c_sasum( N, x, stride );
+
+	// Print the result:
+	printf( "sum: %f\n", sum );
+
+	// Compute the sum of absolute values:
+	sum = c_sasum_ndarray( N, x, -stride, N-1 );
 
 	// Print the result:
 	printf( "sum: %f\n", sum );

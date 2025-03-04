@@ -22,13 +22,13 @@
 #include <stdbool.h>
 
 int main( void ) {
-    double x;
-    bool v;
-    int i;
-    
-    for ( i = 0; i < 100; i++ ) {
-        x = ( ( (double)rand() / (double)RAND_MAX ) * 2.0 ) - 1.0;
-        v = stdlib_base_is_probability( x );
-        printf( "%lf is %sa probability\n", x, ( v ) ? "" : "not " );
-    }
+	double x;
+	bool v;
+	int i;
+
+	for ( i = 0; i < 100; i++ ) {
+		x = ( ( (double)rand() / (double)RAND_MAX ) * 2.0 ) - 1.0;
+		v = stdlib_base_is_probability( x );
+		printf( "%lf is %sa probability\n", x, ( v ) ? "" : "not " );
+	}
 }

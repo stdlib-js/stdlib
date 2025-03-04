@@ -50,16 +50,14 @@ The function has the following parameters:
 -   **x**: input [`Float32Array`][@stdlib/array/float32].
 -   **stride**: index increment.
 
-The `N` and `stride` parameters determine which elements in `x` are accessed at runtime. For example, to sort every other element
+The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to sort every other element
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 var x = new Float32Array( [ 1.0, -2.0, 3.0, -4.0 ] );
-var N = floor( x.length / 2 );
 
-ssortins( N, -1.0, x, 2 );
+ssortins( 2, -1.0, x, 2 );
 // x => <Float32Array>[ 3.0, -2.0, 1.0, -4.0 ]
 ```
 
@@ -67,17 +65,15 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 // Initial array...
 var x0 = new Float32Array( [ 1.0, 2.0, 3.0, 4.0 ] );
 
 // Create an offset view...
 var x1 = new Float32Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
-var N = floor( x0.length/2 );
 
 // Sort every other element...
-ssortins( N, -1.0, x1, 2 );
+ssortins( 2, -1.0, x1, 2 );
 // x0 => <Float32Array>[ 1.0, 4.0, 3.0, 2.0 ]
 ```
 
@@ -98,7 +94,7 @@ The function has the following additional parameters:
 
 -   **offset**: starting index.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the `offset` parameter supports indexing semantics based on a starting index. For example, to access only the last three elements of `x`
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the offset parameter supports indexing semantics based on a starting index. For example, to access only the last three elements of `x`
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
@@ -143,10 +139,9 @@ var ssortins = require( '@stdlib/blas/ext/base/ssortins' );
 
 var rand;
 var sign;
-var x;
 var i;
 
-x = new Float32Array( 10 );
+var x = new Float32Array( 10 );
 for ( i = 0; i < x.length; i++ ) {
     rand = round( randu()*100.0 );
     sign = randu();

@@ -21,13 +21,13 @@
 
     Examples
     --------
-    > var x = new {{alias:@stdlib/complex/float64}}( 1.0, 2.0 );
-    > var y = new {{alias:@stdlib/complex/float64}}( 1.0, 2.0 );
+    > var x = new {{alias:@stdlib/complex/float64/ctor}}( 1.0, 2.0 );
+    > var y = new {{alias:@stdlib/complex/float64/ctor}}( 1.0, 2.0 );
     > var bool = {{alias}}( x, y )
     true
 
-    > x = new {{alias:@stdlib/complex/float64}}( NaN, NaN );
-    > y = new {{alias:@stdlib/complex/float64}}( NaN, NaN );
+    > x = new {{alias:@stdlib/complex/float64/ctor}}( NaN, NaN );
+    > y = new {{alias:@stdlib/complex/float64/ctor}}( NaN, NaN );
     > bool = {{alias}}( x, y )
     true
 

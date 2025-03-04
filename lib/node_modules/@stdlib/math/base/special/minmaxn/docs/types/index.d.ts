@@ -23,9 +23,9 @@
 import { Collection } from '@stdlib/types/array';
 
 /**
- * Interface describing an interface for computing minimum and maximum values.
- */
- interface MinMaxN {
+* Interface describing an interface for computing minimum and maximum values.
+*/
+interface MinMaxN {
 	/**
 	* Returns the minimum and maximum values.
 	*

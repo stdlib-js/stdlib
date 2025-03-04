@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2018 The Stdlib Authors.
+Copyright (c) 2024 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -55,6 +55,7 @@ The function returns constructors for the following data types:
 -   `float64`: double-precision floating-point numbers.
 -   `complex64`: single-precision complex floating-point numbers.
 -   `complex128`: double-precision complex floating-point numbers.
+-   `bool`: boolean values.
 -   `generic`: values of any type.
 -   `int16`: signed 16-bit integers.
 -   `int32`: signed 32-bit integers.

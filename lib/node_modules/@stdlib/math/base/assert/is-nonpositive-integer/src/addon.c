@@ -24,7 +24,6 @@
 /**
 * Receives JavaScript callback invocation data.
 *
-* @private
 * @param env    environment under which the function is invoked
 * @param info   callback data
 * @return       Node-API value
@@ -75,7 +74,6 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 /**
 * Initializes a Node-API module.
 *
-* @private
 * @param env      environment under which the function is invoked
 * @param exports  exports object
 * @return         main export

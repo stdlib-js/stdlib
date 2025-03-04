@@ -5,9 +5,9 @@
     The serialization format for a regular expression is an object having the
     following fields:
 
-    - type: value type (RegExp)
-    - pattern: regular expression pattern
-    - flags: regular expression flags
+    - type: value type (RegExp).
+    - pattern: regular expression pattern.
+    - flags: regular expression flags.
 
     Parameters
     ----------

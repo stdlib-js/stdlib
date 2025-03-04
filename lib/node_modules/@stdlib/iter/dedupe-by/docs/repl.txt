@@ -5,11 +5,11 @@
 
     The provided function is provided five arguments:
 
-    - curr: current source iterated value
-    - sprev: previous source iterated value
-    - dprev: previous downstream iterated value
-    - index: source iteration index (zero-based)
-    - acc: previous resolved value
+    - curr: current source iterated value.
+    - sprev: previous source iterated value.
+    - dprev: previous downstream iterated value.
+    - index: source iteration index (zero-based).
+    - acc: previous resolved value.
 
     If an environment supports Symbol.iterator and a provided iterator is
     iterable, the returned iterator is iterable.

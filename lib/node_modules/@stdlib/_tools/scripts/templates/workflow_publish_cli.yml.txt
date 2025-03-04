@@ -74,8 +74,8 @@ jobs:
           node-version: 20
         timeout-minutes: 5
 
-      # Configure git:
-      - name: 'Configure git'
+      # Configure Git:
+      - name: 'Configure Git'
         run: |
           git config --local user.email "noreply@stdlib.io"
           git config --local user.name "stdlib-bot"
@@ -129,7 +129,7 @@ jobs:
       # Publish package to npm:
       - name: 'Publish package to npm'
         # Pin action to full length commit SHA
-        uses: JS-DevTools/npm-publish@4b07b26a2f6e0a51846e1870223e545bae91c552 # v3.0.1
+        uses: JS-DevTools/npm-publish@19c28f1ef146469e409470805ea4279d47c3d35c # v3.1.1
         with:
           token: ${{ secrets.NPM_TOKEN }}
           access: public
@@ -145,7 +145,6 @@ jobs:
         uses: 8398a7/action-slack@28ba43ae48961b90635b50953d216767a6bea486 # v3.16.2
         with:
           status: ${{ job.status }}
-          steps: ${{ toJson(steps) }}
           channel: '#npm-ci'
         if: failure()
 

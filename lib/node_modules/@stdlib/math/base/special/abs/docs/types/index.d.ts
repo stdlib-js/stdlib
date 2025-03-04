@@ -19,7 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* Computes the absolute value of double-precision floating-point number `x`.
+* Computes the absolute value of a double-precision floating-point number `x`.
 *
 * @param x - input value
 * @returns absolute value

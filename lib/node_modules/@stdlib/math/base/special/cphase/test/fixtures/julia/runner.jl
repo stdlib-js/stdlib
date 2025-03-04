@@ -56,6 +56,7 @@ function gen( re, im, name )
 	# Write the data to the output filepath as JSON:
 	outfile = open( filepath, "w" );
 	write( outfile, JSON.json(data) );
+	write( outfile, "\n" );
 	close( outfile );
 end
 

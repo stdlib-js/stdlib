@@ -24,20 +24,20 @@ import lda = require( './index' );
 // The function returns a model object...
 {
 	const arr = [ 'beep', 'boop' ];
-	lda( arr, 2 ); // #ExpectType Model
+	lda( arr, 2 ); // $ExpectType Model
 }
 
 // The returned model object has a `fit` method to fit a model...
 {
 	const arr = [ 'beep', 'boop' ];
-	const model = lda( arr, 2 ); // #ExpectType Model
+	const model = lda( arr, 2 ); // $ExpectType Model
 	model.fit( 1000, 100, 10 );
 }
 
 // The `fit` method of the returned model does not compile if not called with three number arguments...
 {
 	const arr = [ 'beep', 'boop' ];
-	const model = lda( arr, 2 ); // #ExpectType Model
+	const model = lda( arr, 2 ); // $ExpectType Model
 	model.fit( false, 100, 10 ); // $ExpectError
 	model.fit( true, 100, 10 ); // $ExpectError
 	model.fit( 'abc', 100, 10 ); // $ExpectError
@@ -66,16 +66,16 @@ import lda = require( './index' );
 // The returned model object has a `getTerms` method to retrieve an array of terms...
 {
 	const arr = [ 'beep', 'boop' ];
-	const model = lda( arr, 2 ); // #ExpectType Model
+	const model = lda( arr, 2 ); // $ExpectType Model
 	model.fit( 1000, 100, 10 );
-	model.getTerms( 2, 10 ); // #ExpectType Term[]
-	model.getTerms( 2 ); // #ExpectType Term[]
+	model.getTerms( 2, 10 ); // $ExpectType Term[]
+	model.getTerms( 2 ); // $ExpectType Term[]
 }
 
 // The `getTerms` method of the returned model does not compile if not called with number arguments...
 {
 	const arr = [ 'beep', 'boop' ];
-	const model = lda( arr, 2 ); // #ExpectType Model
+	const model = lda( arr, 2 ); // $ExpectType Model
 	model.getTerms( false, 10 ); // $ExpectError
 	model.getTerms( true, 10 ); // $ExpectError
 	model.getTerms( 'abc', 10 ); // $ExpectError

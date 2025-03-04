@@ -1,0 +1,29 @@
+
+{{alias}}( value )
+    Returns the enumeration constant associated with a supported BLAS diagonal
+    type value.
+
+    Downstream consumers of this function should *not* rely on specific integer
+    values (e.g., `UNIT == 0`). Instead, the function should be used in an
+    opaque manner.
+
+    Parameters
+    ----------
+    value: any
+        Diagonal type value.
+
+    Returns
+    -------
+    out: integer|null
+        Enumeration constant.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'non-unit' )
+    <number>
+    > out = {{alias}}( {{alias:@stdlib/blas/base/diagonal-type-str2enum}}( 'non-unit' ) )
+    <number>
+
+    See Also
+    --------
+

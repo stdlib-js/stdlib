@@ -1,0 +1,30 @@
+
+{{alias}}( f )
+    Computes `log(1+f) - f` for `1+f` in ~[sqrt(2)/2, sqrt(2)].
+
+    This function provides a common means for computing logarithms in base e.
+    Argument reduction and adding the final term of the polynomial must be done
+    by the caller for increased accuracy when different bases are used.
+
+    Parameters
+    ----------
+    f: number
+        Input value.
+
+    Returns
+    -------
+    out: number
+        Function value.
+
+    Examples
+    --------
+    > var y = {{alias}}( 1.0 )
+    ~0.1931
+    > y = {{alias}}( 1.4142135623730951 )
+    ~0.4672
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+

@@ -84,9 +84,9 @@ var out = invertBy( obj, opts, transform );
 
 The `transform` function is provided three arguments:
 
--   `key`: object key
--   `value`: object value corresponding to `key`
--   `obj`: input object
+-   **key**: object key.
+-   **value**: object value corresponding to `key`.
+-   **obj**: input object.
 
 ```javascript
 function transform( key, value, o ) {

@@ -33,7 +33,7 @@ import { Complex128 } from '@stdlib/types/complex';
 * @returns argument
 *
 * @example
-* var Complex128 = require( '@stdlib/complex/float64' );
+* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 *
 * var phi = cphase( new Complex128( 5.0, 3.0 ) );
 * // returns ~0.5404

@@ -23,7 +23,7 @@
 * Tests if a numeric value is a nonnegative finite number.
 *
 * @param x    input value
-* @return	  output value
+* @return     output value
 *
 * @example
 * #include <stdbool.h>

@@ -19,7 +19,7 @@
 
     Examples
     --------
-    > var phi = {{alias}}( new {{alias:@stdlib/complex/float64}}( 5.0, 3.0 ) )
+    > var phi = {{alias}}( new {{alias:@stdlib/complex/float64/ctor}}( 5.0, 3.0 ) )
     ~0.5404
 
     See Also

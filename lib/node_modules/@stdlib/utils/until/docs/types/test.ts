@@ -31,7 +31,7 @@ function predicate( i: number ): boolean {
 /**
 * Empty function.
 */
-function noop() {
+function noop(): void {
 	// Body is empty...
 }
 
@@ -40,32 +40,32 @@ function noop() {
 
 // The function does not return a value...
 {
-	until( noop, predicate ); // $ExpectType void
-	until( noop, predicate, {} ); // $ExpectType void
+	until( predicate, noop ); // $ExpectType void
+	until( predicate, noop, {} ); // $ExpectType void
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a function...
 {
-	until( 'abc', predicate ); // $ExpectError
-	until( 5, predicate ); // $ExpectError
-	until( true, predicate ); // $ExpectError
-	until( false, predicate ); // $ExpectError
-	until( [], predicate ); // $ExpectError
-	until( {}, predicate ); // $ExpectError
+	until( 'abc', noop ); // $ExpectError
+	until( 5, noop ); // $ExpectError
+	until( true, noop ); // $ExpectError
+	until( false, noop ); // $ExpectError
+	until( [], noop ); // $ExpectError
+	until( {}, noop ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a function...
 {
-	until( noop, 'abc' ); // $ExpectError
-	until( noop, 5 ); // $ExpectError
-	until( noop, true ); // $ExpectError
-	until( noop, false ); // $ExpectError
-	until( noop, [] ); // $ExpectError
-	until( noop, {} ); // $ExpectError
+	until( predicate, 'abc' ); // $ExpectError
+	until( predicate, 5 ); // $ExpectError
+	until( predicate, true ); // $ExpectError
+	until( predicate, false ); // $ExpectError
+	until( predicate, [] ); // $ExpectError
+	until( predicate, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided fewer than two arguments...
 {
 	until(); // $ExpectError
-	until( noop ); // $ExpectError
+	until( predicate ); // $ExpectError
 }

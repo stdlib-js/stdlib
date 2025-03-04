@@ -1,0 +1,13 @@
+
+{{alias}}
+    The minimum base 10 exponent for a subnormal single-precision floating-
+    point number.
+
+    Examples
+    --------
+    > {{alias}}
+    -45
+
+    See Also
+    --------
+

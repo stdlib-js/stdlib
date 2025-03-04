@@ -1,6 +1,7 @@
 {
   "all": [
     "binary",
+    "bool",
     "complex64",
     "complex128",
     "float32",
@@ -16,6 +17,7 @@
   ],
   "typed": [
     "binary",
+    "bool",
     "complex64",
     "complex128",
     "float32",
@@ -41,6 +43,9 @@
   "complex_floating_point": [
     "complex64",
     "complex128"
+  ],
+  "boolean": [
+    "bool"
   ],
   "integer": [
     "int16",

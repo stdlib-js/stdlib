@@ -22,6 +22,7 @@
 // Note: keep in alphabetical order...
 #include "stdlib/assert/napi/equal_typedarray_types.h"
 #include "stdlib/assert/napi/equal_types.h"
+#include "stdlib/assert/napi/has_property.h"
 #include "stdlib/assert/napi/is_type.h"
 #include "stdlib/assert/napi/is_typedarray.h"
 #include "stdlib/assert/napi/status_ok.h"

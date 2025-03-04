@@ -829,32 +829,24 @@ rules[ '@typescript-eslint/prefer-function-type' ] = 'error';
 rules[ '@typescript-eslint/prefer-namespace-keyword' ] = 'error';
 
 /**
-* Requires that private members are marked as `readonly` if they're never modified outside of the constructor.
+* Disables the rule that private members are marked as `readonly` if they're never modified outside of the constructor.
 *
 * @name prefer-readonly
 * @memberof rules
 * @type {string}
-* @default 'error'
+* @default 'off'
 * @see [prefer-readonly]{@link https://typescript-eslint.io/rules/prefer-readonly}
 *
 * @example
-* // Bad...
+* // Okay...
 * class MyClass {
 *     private name: string;
 *     constructor( name: string ) {
 *         this.name = name;
 *     }
 * }
-*
-* // Good...
-* class MyClass {
-*     private readonly name: string;
-*     constructor( name: string ) {
-*         this.name = name;
-*     }
-* }
 */
-rules[ '@typescript-eslint/prefer-readonly' ] = 'error';
+rules[ '@typescript-eslint/prefer-readonly' ] = 'off';
 
 /**
 * Disables the rule that functions which return promises must be async.
@@ -1522,13 +1514,310 @@ rules[ 'import/order' ] = [
 rules[ 'indent' ] = [ 'error', 'tab' ];
 
 /**
+* Ensures param names in JSDoc match those in the function declaration.
+*
+* @name jsdoc/check-param-names
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [check-param-names]{@link https://github.com/gajus/eslint-plugin-jsdoc/tree/main/docs/rules/check-param-names.md}
+*/
+rules[ 'jsdoc/check-param-names' ] = 'error';
+
+/**
+* Ensures property names in JSDoc are valid.
+*
+* @name jsdoc/check-property-names
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [check-property-names]{@link https://github.com/gajus/eslint-plugin-jsdoc/tree/main/docs/rules/check-property-names.md}
+*/
+rules[ 'jsdoc/check-property-names' ] = 'error';
+
+/**
+* Checks for invalid JSDoc syntax.
+*
+* @name jsdoc/check-syntax
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [check-syntax]{@link https://github.com/gajus/eslint-plugin-jsdoc/tree/main/docs/rules/check-syntax.md}
+*/
+rules[ 'jsdoc/check-syntax' ] = 'error';
+
+/**
+ * Checks that JSDoc tag names are valid.
+ *
+ * @name jsdoc/check-tag-names
+ * @memberof rules
+ * @type {Array}
+ * @default 'error'
+ * @see [check-tag-names]{@link https://github.com/gajus/eslint-plugin-jsdoc/tree/main/docs/rules/check-tag-names.md}
+ */
+rules['jsdoc/check-tag-names'] = 'error';
+
+/**
+* Checks for empty JSDoc tags.
+*
+* @name jsdoc/empty-tags
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [empty-tags]{@link https://github.com/gajus/eslint-plugin-jsdoc/tree/main/docs/rules/empty-tags.md}
+*/
+rules[ 'jsdoc/empty-tags' ] = 'error';
+
+/**
+* Checks that the @implements tag is used correctly on classes.
+*
+* @name jsdoc/implements-on-classes
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [implements-on-classes]{@link https://github.com/gajus/eslint-plugin-jsdoc/tree/main/docs/rules/implements-on-classes.md}
+*/
+rules[ 'jsdoc/implements-on-classes' ] = 'error';
+
+/**
+* Controls how and whether JSDoc blocks can be expressed as single or multiple line blocks.
+*
+* @name jsdoc/multiline-blocks
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [multiline-blocks]{@link https://github.com/gajus/eslint-plugin-jsdoc/tree/main/docs/rules/multiline-blocks.md}
+*/
+rules[ 'jsdoc/multiline-blocks' ] = 'error';
+
+/**
+* Prevents blank lines in block descriptions.
+*
+* @name jsdoc/no-blank-block-descriptions
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [no-blank-block-descriptions]{@link https://github.com/gajus/eslint-plugin-jsdoc/tree/main/docs/rules/no-blank-block-descriptions.md}
+*/
+rules[ 'jsdoc/no-blank-block-descriptions' ] = 'error';
+
+/**
+* Prevents use of default values in JSDoc tags.
+*
+* @name jsdoc/no-defaults
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [no-defaults]{@link https://github.com/gajus/eslint-plugin-jsdoc/tree/main/docs/rules/no-defaults.md}
+*/
+rules[ 'jsdoc/no-defaults' ] = 'error';
+
+/**
+* Prevents use of multiple asterisks at the beginning of lines.
+*
+* @name jsdoc/no-multi-asterisks
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [no-multi-asterisks]{@link https://github.com/gajus/eslint-plugin-jsdoc/tree/main/docs/rules/no-multi-asterisks.md}
+*/
+rules[ 'jsdoc/no-multi-asterisks' ] = 'error';
+
+/**
+* Requires that each JSDoc line starts with an asterisk.
+*
+* @name jsdoc/require-asterisk-prefix
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [require-asterisk-prefix]{@link https://github.com/gajus/eslint-plugin-jsdoc/tree/main/docs/rules/require-asterisk-prefix.md}
+*/
+rules[ 'jsdoc/require-asterisk-prefix' ] = 'error';
+
+/**
+* Requires that all functions have a description.
+*
+* @name jsdoc/require-description
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [require-description]{@link https://github.com/gajus/eslint-plugin-jsdoc/tree/main/docs/rules/require-description.md}
+*/
+rules[ 'jsdoc/require-description' ] = 'error';
+
+/**
+* Requires a hyphen before the @param description.
+*
+* @name jsdoc/require-hyphen-before-param-description
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [require-hyphen-before-param-description]{@link https://github.com/gajus/eslint-plugin-jsdoc/tree/main/docs/rules/require-hyphen-before-param-description.md}
+*/
+rules[ 'jsdoc/require-hyphen-before-param-description' ] = 'error';
+
+/**
+* Requires that all functions have JSDoc documentation.
+*
+* @name jsdoc/require-jsdoc
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [require-jsdoc]{@link https://github.com/gajus/eslint-plugin-jsdoc/tree/main/docs/rules/require-jsdoc.md}
+*/
+rules[ 'jsdoc/require-jsdoc' ] = 'error';
+
+/**
+* Requires that all function parameters are documented.
+*
+* @name jsdoc/require-param
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [require-param]{@link https://github.com/gajus/eslint-plugin-jsdoc/tree/main/docs/rules/require-param.md}
+*/
+rules[ 'jsdoc/require-param' ] = 'error';
+
+/**
+* Requires that @param tag has description value.
+*
+* @name jsdoc/require-param-description
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [require-param-description]{@link https://github.com/gajus/eslint-plugin-jsdoc/tree/main/docs/rules/require-param-description.md}
+*/
+rules[ 'jsdoc/require-param-description' ] = 'error';
+
+/**
+* Requires that all @param tags have names.
+*
+* @name jsdoc/require-param-name
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [require-param-name]{@link https://github.com/gajus/eslint-plugin-jsdoc/tree/main/docs/rules/require-param-name.md}
+*/
+rules[ 'jsdoc/require-param-name' ] = 'error';
+
+/**
+* Requires that all function properties are documented.
+*
+* @name jsdoc/require-property
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [require-property]{@link https://github.com/gajus/eslint-plugin-jsdoc/tree/main/docs/rules/require-property.md}
+*/
+rules[ 'jsdoc/require-property' ] = 'error';
+
+/**
+* Requires that @property tag has description value.
+*
+* @name jsdoc/require-property-description
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [require-property-description]{@link https://github.com/gajus/eslint-plugin-jsdoc/tree/main/docs/rules/require-property-description.md}
+*/
+rules[ 'jsdoc/require-property-description' ] = 'error';
+
+/**
+* Requires that all @property tags have names.
+*
+* @name jsdoc/require-property-name
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [require-property-name]{@link https://github.com/gajus/eslint-plugin-jsdoc/tree/main/docs/rules/require-property-name.md}
+*/
+rules[ 'jsdoc/require-property-name' ] = 'error';
+
+/**
+* Requires that @property tags have type values.
+*
+* @name jsdoc/require-property-type
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [require-property-type]{@link https://github.com/gajus/eslint-plugin-jsdoc/tree/main/docs/rules/require-property-type.md}
+*/
+rules[ 'jsdoc/require-property-type' ] = 'error';
+
+/**
+* Requires returns are documented.
+*
+* @name jsdoc/require-returns
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [require-returns]{@link https://github.com/gajus/eslint-plugin-jsdoc/tree/main/docs/rules/require-returns.md}
+*/
+rules[ 'jsdoc/require-returns' ] = 'error';
+
+/**
+* Requires a return statement in function body if a @returns tag is specified in JSDoc comment.
+*
+* @name jsdoc/require-returns-check
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [require-returns-check]{@link https://github.com/gajus/eslint-plugin-jsdoc/tree/main/docs/rules/require-returns-check.md}
+*/
+rules[ 'jsdoc/require-returns-check' ] = 'error';
+
+/**
+* Requires that @returns tag has description value.
+*
+* @name jsdoc/require-returns-description
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [require-returns-description]{@link https://github.com/gajus/eslint-plugin-jsdoc/tree/main/docs/rules/require-returns-description.md}
+*/
+rules[ 'jsdoc/require-returns-description' ] = 'error';
+
+/**
+* Requires that @throws statements are documented.
+*
+* @name jsdoc/require-throws
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [require-throws]{@link https://github.com/gajus/eslint-plugin-jsdoc/tree/main/docs/rules/require-throws.md}
+*/
+rules[ 'jsdoc/require-throws' ] = 'error';
+
+/**
+* Requires that tags are sorted alphabetically.
+*
+* @name jsdoc/sort-tags
+* @memberof rules
+* @type {string}
+* @default [ 'error', {...} ]
+* @see [sort-tags]{@link https://github.com/gajus/eslint-plugin-jsdoc/tree/main/docs/rules/sort-tags.md}
+*/
+rules[ 'jsdoc/sort-tags' ] = ['error', {
+	'linesBetween': 1,
+	'tagSequence': [
+		{
+			'tags': [ 'param', 'throws', 'returns', 'see' ]
+		},
+		{
+			'tags': [ 'examples' ]
+		}
+	],
+	'reportIntraTagGroupSpacing': false
+}];
+
+/**
 * Disables the JSDoc rule for checking alignment.
 *
 * @name jsdoc/check-alignment
 * @memberof rules
 * @type {string}
 * @default 'off'
-* @see [check-alignment]{@link https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-alignment}
+* @see [check-alignment]{@link https://github.com/gajus/eslint-plugin-jsdoc/tree/main/docs/rules/check-alignment.md}
 */
 rules[ 'jsdoc/check-alignment' ] = 'off';
 
@@ -1539,7 +1828,7 @@ rules[ 'jsdoc/check-alignment' ] = 'off';
 * @memberof rules
 * @type {string}
 * @default 'off'
-* @see [check-indentation]{@link https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-indentation}
+* @see [check-indentation]{@link https://github.com/gajus/eslint-plugin-jsdoc/tree/main/docs/rules/check-indentation.md}
 */
 rules[ 'jsdoc/check-indentation' ] = 'off';
 
@@ -1554,7 +1843,7 @@ rules[ 'jsdoc/check-indentation' ] = 'off';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-types]{@link https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-no-types}
+* @see [no-types]{@link https://github.com/gajus/eslint-plugin-jsdoc/tree/main/docs/rules/no-types.md}
 */
 rules[ 'jsdoc/no-types' ] = 'error';
 

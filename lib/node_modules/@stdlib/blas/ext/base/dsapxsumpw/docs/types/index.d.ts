@@ -23,12 +23,12 @@
 */
 interface Routine {
 	/**
-	* Adds a constant to each single-precision floating-point strided array element and computes the sum using pairwise summation with extended accumulation and returning an extended precision result.
+	* Adds a constant to each single-precision floating-point strided array element, and computes the sum using pairwise summation with extended accumulation and returning an extended precision result.
 	*
 	* @param N - number of indexed elements
-	* @param alpha - constant
+	* @param alpha - scalar constant
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns sum
 	*
 	* @example
@@ -39,16 +39,16 @@ interface Routine {
 	* var v = dsapxsumpw( x.length, 5.0, x, 1 );
 	* // returns 16.0
 	*/
-	( N: number, alpha: number, x: Float32Array, stride: number ): number;
+	( N: number, alpha: number, x: Float32Array, strideX: number ): number;
 
 	/**
-	* Adds a constant to each single-precision floating-point strided array element and computes the sum using extended accumulation and alternative indexing semantics and returning an extended precision result.
+	* Adds a constant to each single-precision floating-point strided array element, and computes the sum using extended accumulation and alternative indexing semantics and returning an extended precision result.
 	*
 	* @param N - number of indexed elements
-	* @param alpha - constant
+	* @param alpha - scalar constant
 	* @param x - input array
-	* @param stride - stride length
-	* @param offset - starting index
+	* @param strideX - stride length
+	* @param offsetX - starting index
 	* @returns sum
 	*
 	* @example
@@ -59,16 +59,16 @@ interface Routine {
 	* var v = dsapxsumpw.ndarray( x.length, 5.0, x, 1, 0 );
 	* // returns 16.0
 	*/
-	ndarray( N: number, alpha: number, x: Float32Array, stride: number, offset: number ): number;
+	ndarray( N: number, alpha: number, x: Float32Array, strideX: number, offsetX: number ): number;
 }
 
 /**
-* Adds a constant to each single-precision floating-point strided array element and computes the sum using pairwise summation with extended accumulation and returning an extended precision result.
+* Adds a constant to each single-precision floating-point strided array element, and computes the sum using pairwise summation with extended accumulation and returning an extended precision result.
 *
 * @param N - number of indexed elements
-* @param alpha - constant
+* @param alpha - scalar constant
 * @param x - input array
-* @param stride - stride length
+* @param strideX - stride length
 * @returns sum
 *
 * @example

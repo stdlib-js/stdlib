@@ -28,14 +28,12 @@
 		{
 			"task": "build",
 			"src": [
-				"./src/rcbrt.c"
+				"./src/main.c"
 			],
 			"include": [
 				"./include"
 			],
-			"libraries": [
-				"-lm"
-			],
+			"libraries": [],
 			"libpath": [],
 			"dependencies": [
 				"@stdlib/math/base/napi/unary",
@@ -45,14 +43,12 @@
 		{
 			"task": "benchmark",
 			"src": [
-				"./src/rcbrt.c"
+				"./src/main.c"
 			],
 			"include": [
 				"./include"
 			],
-			"libraries": [
-				"-lm"
-			],
+			"libraries": [],
 			"libpath": [],
 			"dependencies": [
 				"@stdlib/math/base/special/cbrt"
@@ -61,14 +57,12 @@
 		{
 			"task": "examples",
 			"src": [
-				"./src/rcbrt.c"
+				"./src/main.c"
 			],
 			"include": [
 				"./include"
 			],
-			"libraries": [
-				"-lm"
-			],
+			"libraries": [],
 			"libpath": [],
 			"dependencies": [
 				"@stdlib/math/base/special/cbrt"

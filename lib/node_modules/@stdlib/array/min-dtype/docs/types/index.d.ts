@@ -1,7 +1,7 @@
 /*
 * @license Apache-2.0
 *
-* Copyright (c) 2021 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { RealDataType, ComplexFloatingPointDataType } from '@stdlib/types/array';
+import { RealDataType, ComplexFloatingPointDataType, BooleanDataType } from '@stdlib/types/array';
 import { ComplexLike } from '@stdlib/types/complex';
 
 /**
@@ -28,7 +28,7 @@ import { ComplexLike } from '@stdlib/types/complex';
 *
 * ## Notes
 *
-* -   The function does *not* provide precision guarantees for non-integer-valued real numbers. In other words, the function returns the smallest possible floating-point (i.e., inexact) data type for storing numbers having decimals.
+* -   The function does *not* provide precision guarantees for non-integer-valued numbers. In other words, the function returns the smallest possible floating-point (i.e., inexact) data type for storing numbers having decimals.
 *
 * @param value - scalar value
 * @returns array data type
@@ -48,7 +48,7 @@ declare function minDataType( value: number ): RealDataType;
 *
 * ## Notes
 *
-* -   The function does *not* provide precision guarantees for non-integer-valued real numbers. In other words, the function returns the smallest possible floating-point (i.e., inexact) data type for storing numbers having decimals.
+* -   The function does *not* provide precision guarantees for non-integer-valued numbers. In other words, the function returns the smallest possible floating-point (i.e., inexact) data type for storing numbers having decimals.
 *
 * @param value - scalar value
 * @returns array data type
@@ -66,9 +66,21 @@ declare function minDataType( value: ComplexLike ): ComplexFloatingPointDataType
 /**
 * Returns the minimum array data type of the closest "kind" necessary for storing a provided scalar value.
 *
+* @param value - scalar value
+* @returns array data type
+*
+* @example
+* var dt = minDataType( true );
+* // returns 'bool'
+*/
+declare function minDataType( value: boolean ): BooleanDataType;
+
+/**
+* Returns the minimum array data type of the closest "kind" necessary for storing a provided scalar value.
+*
 * ## Notes
 *
-* -   The function does *not* provide precision guarantees for non-integer-valued real numbers. In other words, the function returns the smallest possible floating-point (i.e., inexact) data type for storing numbers having decimals.
+* -   The function does *not* provide precision guarantees for non-integer-valued numbers. In other words, the function returns the smallest possible floating-point (i.e., inexact) data type for storing numbers having decimals.
 *
 * @param value - scalar value
 * @returns array data type

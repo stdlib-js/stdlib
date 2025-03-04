@@ -5,9 +5,9 @@
 
     The callback function is provided three arguments:
 
-    - value: iterated value
-    - index: source iteration index (zero-based)
-    - n: iteration index (zero-based)
+    - value: iterated value.
+    - index: source iteration index (zero-based).
+    - n: iteration index (zero-based).
 
     The callback function is invoked *once* per iterated value of the provided
     iterator.

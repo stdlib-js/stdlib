@@ -5,13 +5,13 @@
 
     When invoked, the predicate function is provided two arguments:
 
-    - `path`: a resolved path
-    - `next`: a callback to be invoked after processing a resolved path
+    - path: a resolved path.
+    - next: a callback to be invoked after processing a resolved path.
 
     The `next` callback takes two arguments:
 
-    - `error`: error argument
-    - `result`: test result
+    - error: error argument.
+    - result: test result.
 
     If a provided predicate function calls the `next` callback with a truthy
     `error` argument, the function suspends execution and immediately calls the
@@ -70,7 +70,7 @@
 
     The predicate function is provided one argument:
 
-    - `path`: a resolved path
+    - path: a resolved path.
 
     The function immediately returns upon encountering a truthy return value.
 

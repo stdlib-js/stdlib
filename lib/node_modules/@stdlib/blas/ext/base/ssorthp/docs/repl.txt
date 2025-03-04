@@ -2,13 +2,15 @@
 {{alias}}( N, order, x, stride )
     Sorts a single-precision floating-point strided array using heapsort.
 
-    The `N` and `stride` parameters determine which elements in `x` are accessed
+    The `N` and stride parameters determine which elements in the strided
+    array are accessed
     at runtime.
 
     Indexing is relative to the first index. To introduce an offset, use typed
     array views.
 
-    If `N <= 0` or `order == 0`, the function returns `x` unchanged.
+    If `N <= 0` or `order == 0`, the function returns the strided
+    array unchanged.
 
     The algorithm distinguishes between `-0` and `+0`. When sorted in increasing
     order, `-0` is sorted before `+0`. When sorted in decreasing order, `-0` is
@@ -33,19 +35,20 @@
         Number of indexed elements.
 
     order: number
-        Sort order. If `order < 0`, the function sorts `x` in decreasing order.
-        If `order > 0`, the function sorts `x` in increasing order.
+        Sort order. If `order < 0`, the function sorts the strided array in
+        decreasing order. If `order > 0`, the function sorts the strided array
+        in increasing order.
 
     x: Float32Array
         Input array.
 
     stride: integer
-        Index increment for `x`.
+        Index increment for the strided array.
 
     Returns
     -------
     x: Float32Array
-        Input array `x`.
+        Input array the strided array.
 
     Examples
     --------
@@ -54,20 +57,19 @@
     > {{alias}}( x.length, 1, x, 1 )
     <Float32Array>[ -4.0, -2.0, 1.0, 3.0 ]
 
-    // Using `N` and `stride` parameters:
+    // Using `N` and stride parameters:
     > x = new {{alias:@stdlib/array/float32}}( [ 1.0, -2.0, 3.0, -4.0 ] );
-    > var N = {{alias:@stdlib/math/base/special/floor}}( x.length / 2 );
-    > {{alias}}( N, -1, x, 2 )
+    > {{alias}}( 2, -1, x, 2 )
     <Float32Array>[ 3.0, -2.0, 1.0, -4.0 ]
 
     // Using view offsets:
     > var x0 = new {{alias:@stdlib/array/float32}}( [ 1.0, -2.0, 3.0, -4.0 ] );
     > var x1 = new {{alias:@stdlib/array/float32}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
-    > N = {{alias:@stdlib/math/base/special/floor}}( x0.length / 2 );
-    > {{alias}}( N, 1, x1, 2 )
+    > {{alias}}( 2, 1, x1, 2 )
     <Float32Array>[ -4.0, 3.0, -2.0 ]
     > x0
     <Float32Array>[ 1.0, -4.0, 3.0, -2.0 ]
+
 
 {{alias}}.ndarray( N, order, x, stride, offset )
     Sorts a single-precision floating-point strided array using heapsort and
@@ -83,22 +85,23 @@
         Number of indexed elements.
 
     order: number
-        Sort order. If `order < 0`, the function sorts `x` in decreasing order.
-        If `order > 0`, the function sorts `x` in increasing order.
+        Sort order. If `order < 0`, the function sorts the strided array in
+        decreasing order. If `order > 0`, the function sorts the strided array
+        in increasing order.
 
     x: Float32Array
         Input array.
 
     stride: integer
-        Index increment for `x`.
+        Index increment for the strided array.
 
     offset: integer
-        Starting index of `x`.
+        Starting index of the strided array.
 
     Returns
     -------
     x: Float32Array
-        Input array `x`.
+        Output array.
 
     Examples
     --------
@@ -109,8 +112,7 @@
 
     // Using an index offset:
     > x = new {{alias:@stdlib/array/float32}}( [ 1.0, -2.0, 3.0, -4.0 ] );
-    > var N = {{alias:@stdlib/math/base/special/floor}}( x.length / 2 );
-    > {{alias}}.ndarray( N, 1, x, 2, 1 )
+    > {{alias}}.ndarray( 2, 1, x, 2, 1 )
     <Float32Array>[ 1.0, -4.0, 3.0, -2.0 ]
 
     See Also

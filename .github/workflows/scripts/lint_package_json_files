@@ -1,0 +1,82 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2024 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Script to lint package.json files and check/update metadata fields.
+#
+# Usage: lint_package_json_files file1 [file2 file3 ...]
+#
+# Arguments:
+#
+#   file1       File path.
+#   file2       File path.
+#   file3       File path.
+
+# Determine root directory:
+root=$(git rev-parse --show-toplevel)
+
+# Define the path to a utility for linting package.json files:
+lint_package_json="${root}/lib/node_modules/@stdlib/_tools/lint/pkg-json/bin/cli"
+
+# Define paths to utilities for updating package.json metadata fields:
+update_package_json_directories="${root}/lib/node_modules/@stdlib/_tools/package-json/scripts/update_directories"
+update_package_json_gypfile="${root}/lib/node_modules/@stdlib/_tools/package-json/scripts/update_gypfile"
+
+# Files to process:
+files_to_process="$*"
+
+# Lint package.json files:
+files=$(echo "${files_to_process}" | tr ' ' '\n' | grep 'package\.json$' | grep -v 'datapackage\.json$' | tr '\n' ' ' | sed 's/ $//')
+if [ -n "${files}" ]; then
+	echo "Linting package.json files..."
+	printf '%s' "${files}" | "${lint_package_json}" --split=" "
+else
+	echo "No package.json files to lint."
+fi
+
+# Check if metadata fields need to be updated in package.json files of affected packages:
+dirs=$(echo "${files_to_process}" | tr ' ' '\n' | \
+	xargs dirname | \
+	sed -E 's/\/(benchmark|bin|data|docs|etc|examples|include|lib|scripts|src|test)(\/.*)?$//' | \
+	sort -u)
+
+echo "Checking package.json files in directories: ${dirs}"
+
+needs_changes=0
+for dir in ${dirs}; do
+	echo "Checking package.json in ${dir}..."
+	package_json="${dir}/package.json"
+	if [ ! -f "${package_json}" ]; then
+		continue
+	fi
+	original_content=$(cat "${package_json}")
+
+	"${update_package_json_directories}" "${dir}"
+	"${update_package_json_gypfile}" "${dir}"
+
+	new_content=$(cat "${package_json}")
+	if [ "$original_content" != "$new_content" ]; then
+		echo "ERROR: package.json in ${dir} needs updates to directories and/or gypfile fields"
+		git --no-pager diff "${package_json}"
+		needs_changes=1
+	fi
+done
+
+# Exit with failure if any needed changes were detected:
+if [ $needs_changes -eq 1 ]; then
+	exit 1
+fi

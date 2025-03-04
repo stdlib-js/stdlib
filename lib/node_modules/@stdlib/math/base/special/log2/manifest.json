@@ -45,7 +45,8 @@
         "@stdlib/constants/float64/high-word-abs-mask",
         "@stdlib/constants/float64/high-word-significand-mask",
         "@stdlib/constants/float64/exponent-bias",
-        "@stdlib/constants/float64/ninf"
+        "@stdlib/constants/float64/ninf",
+        "@stdlib/math/base/special/kernel-log1p"
       ]
     },
     {
@@ -67,7 +68,8 @@
         "@stdlib/constants/float64/high-word-abs-mask",
         "@stdlib/constants/float64/high-word-significand-mask",
         "@stdlib/constants/float64/exponent-bias",
-        "@stdlib/constants/float64/ninf"
+        "@stdlib/constants/float64/ninf",
+        "@stdlib/math/base/special/kernel-log1p"
       ]
     },
     {
@@ -89,7 +91,8 @@
         "@stdlib/constants/float64/high-word-abs-mask",
         "@stdlib/constants/float64/high-word-significand-mask",
         "@stdlib/constants/float64/exponent-bias",
-        "@stdlib/constants/float64/ninf"
+        "@stdlib/constants/float64/ninf",
+        "@stdlib/math/base/special/kernel-log1p"
       ]
     }
   ]

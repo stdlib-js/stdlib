@@ -125,7 +125,7 @@ console.log( binomial.mean( n, p ) );
 console.log( binomial.pmf( 3, n, p ) );
 // => ~0.1550
 
-// CDF can be used to calculate probability upto certain number of 6s (say upto 3 sixes):
+// CDF can be used to calculate probability up to certain number of 6s (say up to 3 sixes):
 console.log( binomial.cdf( 3, n, p ) );
 // => ~0.9303
 

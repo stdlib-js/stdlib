@@ -1,0 +1,32 @@
+
+{{alias}}( x, y )
+    Returns the minimum absolute single-precision floating-point
+    number.
+
+    If any argument is `NaN`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        First number.
+
+    y: number
+        Second number.
+
+    Returns
+    -------
+    out: number
+        Minimum absolute value.
+
+    Examples
+    --------
+    > var v = {{alias}}( -4.0, 3.0 )
+    3.0
+    > v = {{alias}}( 3.14, NaN )
+    NaN
+    > v = {{alias}}( +0.0, -0.0 )
+    +0.0
+
+    See Also
+    --------
+

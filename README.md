@@ -54,15 +54,15 @@ limitations under the License.
 
 We believe in a future in which the web is a preferred environment for numerical computation. To help realize this future, we've built stdlib.
 
-stdlib ([/ˈstændərd lɪb/][ipa-english] "standard lib") is a standard library, with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js. The library provides a collection of robust, high performance libraries for mathematics, statistics, data processing, streams, and more and includes many of the utilities you would expect from a standard library.
+stdlib ([/ˈstændərd lɪb/][ipa-english] "standard lib") is a standard library with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js. The library provides a collection of robust, high performance libraries for mathematics, statistics, data processing, streams, and more and includes many of the utilities you would expect from a standard library.
 
-What sets stdlib apart is its fully decomposable architecture, allowing you to swap out and mix and match APIs and functionality to cater to your exact preferences and use cases.
+What sets stdlib apart is its fully decomposable architecture, which allows you to swap out and mix and match APIs and functionality to cater to your exact preferences and use cases.
 
-When you use stdlib, you can be absolutely certain that you are using the most thorough, rigorous, well-written, studied, documented, tested, measured, and high-quality code out there.
+When you use stdlib, you can be confident that you are using the most thorough, rigorous, well-written, studied, documented, tested, measured, and high-quality code available.
 
 Want to join us in bringing numerical computing to the web? **Start by starring the project.** :star2:
 
-Explore this GitHub repository for stdlib's source code and documentation. For help developing stdlib, see the [development guide][stdlib-development].
+Explore this GitHub repository for stdlib's source code and documentation. For guidance on developing stdlib, refer to the [development guide][stdlib-development].
 
 Thank you for being a part of our community! Your support is invaluable to us!
 
@@ -77,9 +77,10 @@ Thank you for being a part of our community! Your support is invaluable to us!
 
 ### External Resources
 
--   [**Open Collective**][open-collective-stdlib]
--   [**Twitter**][stdlib-twitter]
--   [**Gitter**][stdlib-gitter]
+-   [**Google Calendar**][stdlib-public-calendar]: calendar of public events, including [open office hours][stdlib-office-hours].
+-   [**Open Collective**][open-collective-stdlib]: financially support the project.
+-   [**Twitter**][stdlib-twitter]: follow us on social media.
+-   [**Gitter**][stdlib-gitter]: chat with project maintainers and other community members.
 
 ## Features
 
@@ -159,7 +160,7 @@ Thank you for being a part of our community! Your support is invaluable to us!
 
 ## Installation
 
-To accommodate various use cases, stdlib can be consumed in multiple ways. The preferred means of consumption depends on your individual use case. We've provided some user stories to help you identify the best approach. 😃
+To accommodate various use cases, stdlib can be used in multiple ways. The preferred method of use depends on your individual use case. We've provided some user stories to help you identify the best approach. 😃
 
 While this project's installation instructions defaults to using [npm][npm] for package management, installation via other package managers, such as [yarn][yarn], should be a matter of simply swapping out [npm][npm] commands with those of the relevant package manager.
 
@@ -182,11 +183,11 @@ While this project's installation instructions defaults to using [npm][npm] for 
     -   I would like to include stdlib functionality by just using a `script` tag.
 
         -   I would like to use ES Modules.
-        
+
             -   Use an individual package's ES Module [build](#install_env_builds_esm).
-            
+
         -   I would like to use a pre-built bundle (possibly via a CDN, such as [unpkg][unpkg] or [jsDelivr][jsdelivr]).
-        
+
             -   Install (or consume via a CDN) an individual package's pre-built UMD [browser bundle](#install_env_builds_umd).
 
     -   I am interested in using a substantial amount of functionality found in a top-level stdlib namespace and don't want to separately install hundreds of individual packages (e.g., if building an on-line calculator application and wanting all of stdlib's math functionality).
@@ -200,9 +201,9 @@ While this project's installation instructions defaults to using [npm][npm] for 
     -   I am interested in using various functionality found in stdlib.
 
         -   Install [individual packages](#install_individual_packages). Installing the entire project is likely unnecessary and will lead to slower installation times.
-    
+
     -   I would like to **vendor** stdlib functionality and avoid dependency trees.
-        
+
         -   Install individual package UMD [bundles](#install_env_builds_nodejs).
 
     -   I am interested in using a _substantial_ amount of functionality found in a top-level stdlib namespace and don't want to separately install hundreds of individual packages.
@@ -557,7 +558,7 @@ Already an expert?
 
 ## Sponsors
 
-stdlib development is generously supported by the following sponsors...
+stdlib development is generously supported by the following sponsors:
 
 <div class="image" align="center">
     <br>
@@ -582,7 +583,7 @@ Are you interested in supporting stdlib? If so, join our [Open Collective][open-
 
 ## Users
 
-The following organizations and key stakeholders trust and depend on stdlib...
+The following organizations and key stakeholders trust and rely on stdlib:
 
 <div class="image" align="center">
     <br>
@@ -593,7 +594,7 @@ The following organizations and key stakeholders trust and depend on stdlib...
     <br>
 </div>
 
-Does your organization or company use stdlib? If so, we'd love to hear from you!
+Does your organization use stdlib? If so, we'd love to hear from you!
 
 </section>
 
@@ -611,7 +612,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright © 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright © 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -657,6 +658,10 @@ Copyright © 2016-2024. The Stdlib [Authors][stdlib-authors].
 #### Community
 
 [![Chat][chat-image]][chat-url]
+
+Have something you want to discuss? In addition to the community chat, we hold regular [office hours][stdlib-office-hours] over video conferencing, which is a great opportunity to ask questions, share ideas, and engage directly with the stdlib team.
+
+You can also subscribe to our [project calendar][stdlib-public-calendar] to stay informed about the latest public community events.
 
 </section>
 
@@ -707,11 +712,7 @@ Test and build infrastructure is generously provided by the following services:
 
 [coverage-url-develop]: https://codecov.io/github/stdlib-js/stdlib/branch/develop
 
-[dependencies-image]: https://img.shields.io/david/stdlib-js/stdlib
-
 [dependencies-url]: https://socket.dev/npm/package/@stdlib/stdlib/dependencies
-
-[dev-dependencies-image]: https://img.shields.io/david/dev/stdlib-js/stdlib
 
 [dev-dependencies-url]: https://socket.dev/npm/package/@stdlib/stdlib/dependencies -->
 
@@ -765,7 +766,7 @@ Test and build infrastructure is generously provided by the following services:
 
 [stdlib-contributing]: https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md
 
-[stdlib-development]: https://github.com/stdlib-js/stdlib/blob/develop/docs/development.md
+[stdlib-development]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/development.md
 
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 
@@ -782,6 +783,10 @@ Test and build infrastructure is generously provided by the following services:
 [stdlib-source]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib
 
 [stdlib-code-coverage]: https://codecov.io/github/stdlib-js/stdlib/branch/develop
+
+[stdlib-public-calendar]: https://calendar.google.com/calendar/embed?src=a72677fe2820c833714b8b9a2aa87393f742bcaf0d0f6c9499eee6661795eae0%40group.calendar.google.com
+
+[stdlib-office-hours]: https://github.com/stdlib-js/meetings/issues?q=sort%3Aupdated-desc%20is%3Aissue%20is%3Aopen%20label%3A%22Office%20Hours%22
 
 [open-collective-stdlib]: https://opencollective.com/stdlib
 

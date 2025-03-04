@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/strided/base/dmskmap2.h"
+#include "stdlib/strided/base/stride2offset.h"
 #include <stdint.h>
 
 /**
@@ -59,26 +60,10 @@ void stdlib_strided_dmskmap2( const int64_t N, const double *X, const int64_t st
 	if ( N <= 0 ) {
 		return;
 	}
-	if ( strideX < 0 ) {
-		ix = (1-N) * strideX;
-	} else {
-		ix = 0;
-	}
-	if ( strideY < 0 ) {
-		iy = (1-N) * strideY;
-	} else {
-		iy = 0;
-	}
-	if ( strideZ < 0 ) {
-		iz = (1-N) * strideZ;
-	} else {
-		iz = 0;
-	}
-	if ( strideMask < 0 ) {
-		im = (1-N) * strideMask;
-	} else {
-		im = 0;
-	}
+	ix = stdlib_strided_stride2offset( N, strideX );
+	iy = stdlib_strided_stride2offset( N, strideY );
+	iz = stdlib_strided_stride2offset( N, strideZ );
+	im = stdlib_strided_stride2offset( N, strideMask );
 	for ( i = 0; i < N; i++ ) {
 		if ( Mask[ im ] == 0 ) {
 			Z[ iz ] = fcn( X[ ix ], Y[ iy ] );

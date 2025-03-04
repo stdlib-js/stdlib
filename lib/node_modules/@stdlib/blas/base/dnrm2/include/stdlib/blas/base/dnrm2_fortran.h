@@ -32,7 +32,7 @@ extern "C" {
 /**
 * Computes the L2-norm of a double-precision floating-point vector.
 */
-void dnrm2sub( const int *, const double *, const int *, double * );
+void dnrm2sub( const CBLAS_INT *, const double *, const CBLAS_INT *, double * );
 
 #ifdef __cplusplus
 }

@@ -1,0 +1,135 @@
+
+{{alias}}( N, x, strideX, y, strideY, param )
+    Applies a modified Givens plane rotation.
+
+    The `N` and stride parameters determine how values in the strided arrays are
+    accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If `N` is less than or equal to `0`, the vectors are unchanged.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    x: Float64Array
+        First input array.
+
+    strideX: integer
+        Index increment for `x`.
+
+    y: Float64Array
+        Second input array.
+
+    strideY: integer
+        Index increment for `y`.
+
+    param: Float64Array
+        Parameters for the modified Givens transformation.
+
+    Returns
+    -------
+    y: Float64Array
+        Second input array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
+    > var y = new {{alias:@stdlib/array/float64}}( [ 6.0, 7.0, 8.0, 9.0, 10.0 ] );
+    > var param = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 2.0, -3.0, 0.0 ] );
+    > {{alias}}( 2, x, 2, y, 1, param );
+    > x
+    <Float64Array>[ ~-17.0, 2.0, ~-18.0, 4.0, 5.0 ]
+    > y
+    <Float64Array>[ ~8.0, ~13.0, 8.0, 9.0, 10.0 ]
+
+    // Advanced Indexing:
+    > x = new {{alias:@stdlib/array/float64}}( [ 0.6, 0.1, -0.5, 0.8, 0.9 ] );
+    > y = new {{alias:@stdlib/array/float64}}( [ 0.5, -0.9, 0.3, 0.7, -0.6 ] );
+    > param = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 2.0, -3.0, 0.0 ] );
+    > {{alias}}( 2, x, -2, y, 1, param );
+    > x
+    <Float64Array>[ ~3.3, 0.1, ~-2.0, 0.8, 0.9 ]
+    > y
+    <Float64Array>[ ~-0.5, ~0.3, 0.3, 0.7, -0.6 ]
+
+    // Using typed array views:
+    > var x0 = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
+    > var y0 = new {{alias:@stdlib/array/float64}}( [ 6.0, 7.0, 8.0, 9.0, 10.0 ] );
+    > param = new {{alias:@stdlib/array/float64}}( [ 1.0, 0.0, 2.0, 3.0, 0.0 ] );
+    > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > var y1 = new {{alias:@stdlib/array/float64}}( y0.buffer, y0.BYTES_PER_ELEMENT*3 );
+    > {{alias}}( 2, x1, 1, y1, 1, param );
+    > x0
+    <Float64Array>[ 1.0, ~9.0, ~10.0, 4.0, 5.0 ]
+    > y0
+    <Float64Array>[ 6.0, 7.0, 8.0, ~-2.0, ~-3.0 ]
+
+
+{{alias}}.ndarray( N, x, strideX, offsetX, y, strideY, offsetY, param )
+    Applies a modified Givens plane rotation using alternative indexing
+    semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    x: Float64Array
+        First input array.
+
+    strideX: integer
+        Index increment for `x`.
+
+    offsetX: integer
+        Starting index for `x`.
+
+    y: Float64Array
+        Second input array.
+
+    strideY: integer
+        Index increment for `y`.
+
+    offsetY: integer
+        Starting index for `y`.
+
+    param: Float64Array
+        Parameters for the modified Givens transformation.
+
+    Returns
+    -------
+    y: Float64Array
+        Second input array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
+    > var y = new {{alias:@stdlib/array/float64}}( [ 6.0, 7.0, 8.0, 9.0, 10.0 ] );
+    > param = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 2.0, -3.0, 0.0 ] );
+    > {{alias}}.ndarray( 2, x, 1, 0, y, 2, 1, param );
+    > x
+    <Float64Array>[ ~-20.0, ~-25.0, 3.0, 4.0, 5.0 ]
+    > y
+    <Float64Array>[ 6.0, ~9.0, 8.0, ~13.0, 10.0 ]
+
+    // Advanced Indexing:
+    > x = new {{alias:@stdlib/array/float64}}( [ 0.6, 0.1, -0.5, 0.8, 0.9, -0.3, -0.4 ] );
+    > y = new {{alias:@stdlib/array/float64}}( [ 0.5, -0.9, 0.3, 0.7, -0.6, 0.2, 0.8 ] );
+    > param = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 2.0, -3.0, 0.0 ] );
+    > {{alias}}.ndarray( 2, x, -1, 1, y, -2, 2, param );
+    > x
+    <Float64Array>[ ~-0.9, ~-0.8, -0.5, 0.8, 0.9, -0.3, -0.4 ]
+    > y
+    <Float64Array>[ ~1.7, -0.9, ~0.5, 0.7, -0.6, 0.2, 0.8 ]
+
+    See Also
+    --------

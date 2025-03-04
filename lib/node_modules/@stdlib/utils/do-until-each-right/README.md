@@ -66,9 +66,9 @@ doUntilEachRight( arr, log, predicate );
 
 Both the `predicate` function and the `function` to apply are provided three arguments:
 
--   `value`: collection element
--   `index`: collection index
--   `collection`: input collection
+-   **value**: collection element.
+-   **index**: collection index.
+-   **collection**: input collection.
 
 If provided an empty `collection`, both `value` and `index` are `undefined`.
 

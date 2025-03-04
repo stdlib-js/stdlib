@@ -16,8 +16,6 @@
 * limitations under the License.
 */
 
-#include "stdlib/math/base/assert/is_nonnegative_integer.h"
-#include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/assert/is_odd.h"
 #include "stdlib/constants/float64/ninf.h"
 #include "stdlib/constants/float64/pinf.h"
@@ -170,8 +168,11 @@ int32_t MAX_BERNOULLI = 258;
 * // returns 1
 */
 double stdlib_base_bernoulli( const int32_t n ) {
-	if ( stdlib_base_is_nan( n ) || !stdlib_base_is_nonnegative_integer( n ) ) {
+	if ( n < 0 ) {
 		return 0.0 / 0.0; // NaN
+	}
+	if ( n == 1 ) {
+		return 0.5;
 	}
 	if ( stdlib_base_is_odd( n ) ) {
 		return 0.0;

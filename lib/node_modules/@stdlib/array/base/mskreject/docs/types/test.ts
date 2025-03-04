@@ -39,7 +39,7 @@ import mskreject = require( './index' );
 	mskreject( {}, [ 0, 0 ] ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a second argument which is not an array-like object containing numbers...
+// The compiler throws an error if the function is provided a second argument which is not an array-like object...
 {
 	mskreject( [], 1 ); // $ExpectError
 	mskreject( [], true ); // $ExpectError

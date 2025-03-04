@@ -158,6 +158,140 @@ console.log( y );
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/blas/base/scopy.h"
+```
+
+#### c_scopy( N, \*X, strideX, \*Y, strideY )
+
+Copies values from `X` into `Y`.
+
+```c
+const float x[] = { 1.0f, 2.0f, 3.0f, 4.0f };
+float y[] = { 0.0f, 0.0f, 0.0f, 0.0f };
+
+c_scopy( 4, x, 1, y, 1 );
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[in] float*` input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **Y**: `[out] float*` output array.
+-   **strideY**: `[in] CBLAS_INT` index increment for `Y`.
+
+```c
+void c_scopy( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, float *Y, const CBLAS_INT strideY );
+```
+
+#### c_scopy_ndarray( N, \*X, strideX, offsetX, \*Y, strideY, offsetY )
+
+Copies values from `x` into `y` using alternative indexing semantics.
+
+```c
+const float x[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f };
+float y[] = { 0.0f, 0.0f, 0.0f, 0.0f, 0.0f };
+
+c_scopy_ndarray( 3, x, 1, 2, y, 1, 2 );
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[in] float*` input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
+-   **Y**: `[out] float*` output array.
+-   **strideY**: `[in] CBLAS_INT` index increment for `Y`.
+-   **offsetY**: `[in] CBLAS_INT` starting index for `Y`.
+
+```c
+void c_scopy_ndarray( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, float *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/blas/base/scopy.h"
+#include <stdio.h>
+
+int main( void ) {
+    // Create strided arrays:
+    const float x[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f };
+    float y[] = { 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f };
+
+    // Specify the number of elements:
+    const int N = 4;
+
+    // Specify stride lengths:
+    const int strideX = 2;
+    const int strideY = -2;
+
+    // Copy elements:
+    c_scopy( N, x, strideX, y, strideY );
+
+    // Print the result:
+    for ( int i = 0; i < 8; i++ ) {
+        printf( "y[ %i ] = %f\n", i, y[ i ] );
+    }
+
+    // Copy elements:
+    c_scopy_ndarray( N, x, strideX, 0, y, strideY, 6 );
+
+    // Print the result:
+    for ( int i = 0; i < 8; i++ ) {
+        printf( "y[ %i ] = %f\n", i, y[ i ] );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">

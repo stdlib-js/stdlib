@@ -1,27 +1,52 @@
 
-{{alias}}( x, y )
+{{alias}}( x, y[, dim] )
     Computes the dot product of two single-precision floating-point vectors.
 
-    If provided empty vectors, the function returns `0.0`.
+    If provided at least one input array having more than one dimension, the
+    input arrays are broadcasted to a common shape.
+
+    For multi-dimensional input arrays, the function performs batched
+    computation, such that the function computes the dot product for each pair
+    of vectors in `x` and `y` according to the specified dimension index.
+
+    The size of the contracted dimension must be the same for both input arrays.
+
+    The function resolves the dimension index for which to compute the dot
+    product *before* broadcasting.
+
+    If provided empty vectors, the dot product is `0`.
 
     Parameters
     ----------
     x: ndarray
-        First input array whose underlying data type is 'float32'.
+        First input array. Must have a 'float32' data type. Must have at least
+        one dimension and be broadcast-compatible with the second input array.
 
     y: ndarray
-        Second input array whose underlying data type is 'float32'.
+        Second input array. Must have a 'float32' data type. Must have at least
+        one dimension and be broadcast-compatible with the first input array.
+
+    dim: integer (optional)
+        Dimension index for which to compute the dot product. Must be a negative
+        integer. Negative indices are resolved relative to the last array
+        dimension, with the last dimension corresponding to `-1`. Default: -1.
 
     Returns
     -------
-    dot: number
-        The dot product.
+    out: ndarray
+        The dot product. The output array has the same data type as the input
+        arrays and has a shape which is determined by broadcasting and excludes
+        the contracted dimension.
 
     Examples
     --------
-    > var x = {{alias:@stdlib/ndarray/array}}( new {{alias:@stdlib/array/float32}}( [ 4.0, 2.0, -3.0, 5.0, -1.0 ] ) );
-    > var y = {{alias:@stdlib/ndarray/array}}( new {{alias:@stdlib/array/float32}}( [ 2.0, 6.0, -1.0, -4.0, 8.0 ] ) );
-    > {{alias}}( x, y )
+    > var xbuf = new {{alias:@stdlib/array/float32}}( [ 4.0, 2.0, -3.0, 5.0, -1.0 ] );
+    > var x = {{alias:@stdlib/ndarray/array}}( xbuf );
+    > var ybuf = new {{alias:@stdlib/array/float32}}( [ 2.0, 6.0, -1.0, -4.0, 8.0 ] );
+    > var y = {{alias:@stdlib/ndarray/array}}( ybuf );
+    > var z = {{alias}}( x, y )
+    <ndarray>
+    > z.get()
     -5.0
 
     See Also

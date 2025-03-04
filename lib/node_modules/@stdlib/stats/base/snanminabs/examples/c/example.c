@@ -17,21 +17,20 @@
 */
 
 #include "stdlib/stats/base/snanminabs.h"
-#include <stdint.h>
 #include <stdio.h>
 
 int main( void ) {
 	// Create a strided array:
-	float x[] = { 1.0, -2.0, -3.0, 4.0, -5.0, -6.0, 7.0, -8.0, 0.0/0.0, 0.0/0.0 };
+	const float x[] = { 1.0f, -2.0f, -3.0f, 4.0f, -5.0f, -6.0f, 7.0f, -8.0f, 0.0f/0.0f, 0.0f/0.0f };
 
 	// Specify the number of elements:
-	int64_t N = 5;
+	const int N = 5;
 
 	// Specify the stride length:
-	int64_t stride = 2;
+	const int strideX = 2;
 
 	// Compute the minimum absolute value:
-	float v = stdlib_strided_snanminabs( N, x, stride );
+	float v = stdlib_strided_snanminabs( N, x, strideX );
 
 	// Print the result:
 	printf( "minabs: %f\n", v );

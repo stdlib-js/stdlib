@@ -43,7 +43,7 @@
 * v = ellipe( NaN );
 * // returns NaN
 */
-declare function ellipe( x: number ): number;
+declare function ellipe( m: number ): number;
 
 
 // EXPORTS //

@@ -62,17 +62,17 @@ limitations under the License.
 
 This project
 
-1.  provides high-quality, rigorous, and robust implementations having common licensing, documentation, tooling, and style
+1.  provides high-quality, rigorous, and robust implementations with common licensing, documentation, tooling, and style.
 
-2.  provides peer-reviewed portable JavaScript libraries
+2.  provides peer-reviewed, portable JavaScript libraries.
 
-3.  provides modular, well-defined interfaces which may be forked, customized, and combined as needed
+3.  provides modular, well-defined interfaces which may be forked, customized, and combined as needed.
 
-4.  provides implementations which work cross-platform (Windows and POSIX), cross-environment (Node.js and web browsers), and cross-context (command-line, REPL, and JavaScript applications)
+4.  provides implementations which work cross-platform (Windows and POSIX), cross-environment (Node.js and web browsers), and cross-context (command-line, REPL, and JavaScript applications).
 
-5.  provides accurate and performant algorithms and implementations for numerical and scientific computing
+5.  provides accurate and performant algorithms and implementations for numerical and scientific computing.
 
-6.  increases productivity by
+6.  increases productivity by:
 
     -   deterring reinvention
     -   accelerating initial development
@@ -80,9 +80,9 @@ This project
     -   reducing long-term maintenance costs
     -   reducing search, evaluation, and quality-control requirements
 
-7.  provides standard reference implementations
+7.  provides standard reference implementations.
 
-8.  establishes best practice
+8.  establishes best practices.
 
 <!-- </faq-question> -->
 

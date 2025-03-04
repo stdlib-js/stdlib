@@ -1,0 +1,27 @@
+
+{{alias}}( x )
+    Computes the secant of a number.
+
+    Parameters
+    ----------
+    x: number
+        Input value (in radians).
+
+    Returns
+    -------
+    y: number
+        Secant.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.0 )
+    1.0
+    > y = {{alias}}( {{alias:@stdlib/constants/float64/pi}}/2.0 )
+    16331239353195370.0
+    > y = {{alias}}( -{{alias:@stdlib/constants/float64/pi}}/3.0 )
+    ~1.9999999999999996
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------

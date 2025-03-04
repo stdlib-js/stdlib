@@ -23,7 +23,7 @@ import iterPeriodicSinc = require( './index' );
 
 // The function returns an iterator...
 {
-	iterPeriodicSinc( 7, ); // $ExpectType Iterator
+	iterPeriodicSinc( 7 ); // $ExpectType Iterator
 	iterPeriodicSinc( 8, {} ); // $ExpectType Iterator
 	iterPeriodicSinc( 9, { 'iter': 10 } ); // $ExpectType Iterator
 }

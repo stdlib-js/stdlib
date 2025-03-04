@@ -22,7 +22,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Shape, Order, ndarray, typedndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, complex128ndarray, complex64ndarray, DataType, Mode } from '@stdlib/types/ndarray';
+import { Shape, Order, ndarray, typedndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, boolndarray, genericndarray, complex128ndarray, complex64ndarray, DataType, Mode } from '@stdlib/types/ndarray';
 
 /**
 * Interface describing function options.
@@ -209,6 +209,34 @@ interface Uint8COptions extends Options {
 	* -   This option overrides the input array's inferred data type.
 	*/
 	dtype: 'uint8c';
+}
+
+/**
+* Interface describing function options.
+*/
+interface BoolOptions extends Options {
+	/**
+	* Underlying data type.
+	*
+	* ## Notes
+	*
+	* -   This option overrides the input array's inferred data type.
+	*/
+	dtype: 'bool';
+}
+
+/**
+* Interface describing function options.
+*/
+interface GenericOptions extends Options {
+	/**
+	* Underlying data type.
+	*
+	* ## Notes
+	*
+	* -   This option overrides the input array's inferred data type.
+	*/
+	dtype: 'generic';
 }
 
 /**
@@ -620,6 +648,78 @@ declare function emptyLike( x: uint8ndarray, options?: Options ): uint8ndarray;
 * // returns 'uint8c'
 */
 declare function emptyLike( x: uint8cndarray, options?: Options ): uint8cndarray;
+
+/**
+* Creates an uninitialized array having the same shape and data type as a provided input ndarray.
+*
+* @param x - input array
+* @param options - options
+* @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
+* @param options.shape - output array shape
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @returns output array
+*
+* @example
+* var empty = require( '@stdlib/ndarray/empty' );
+*
+* var x = empty( [ 2, 2 ], {
+*     'dtype': 'bool'
+* });
+* // returns <ndarray>
+*
+* var sh = x.shape;
+* // returns [ 2, 2 ]
+*
+* var dt = x.dtype;
+* // returns 'bool'
+*
+* var y = emptyLike( x );
+* // returns <ndarray>
+*
+* sh = y.shape;
+* // returns [ 2, 2 ]
+*
+* dt = y.dtype;
+* // returns 'bool'
+*/
+declare function emptyLike( x: boolndarray, options?: Options ): boolndarray;
+
+/**
+* Creates an uninitialized array having the same shape and data type as a provided input ndarray.
+*
+* @param x - input array
+* @param options - options
+* @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
+* @param options.shape - output array shape
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @returns output array
+*
+* @example
+* var empty = require( '@stdlib/ndarray/empty' );
+*
+* var x = empty( [ 2, 2 ], {
+*     'dtype': 'generic'
+* });
+* // returns <ndarray>
+*
+* var sh = x.shape;
+* // returns [ 2, 2 ]
+*
+* var dt = x.dtype;
+* // returns 'generic'
+*
+* var y = emptyLike( x );
+* // returns <ndarray>
+*
+* sh = y.shape;
+* // returns [ 2, 2 ]
+*
+* dt = y.dtype;
+* // returns 'generic'
+*/
+declare function emptyLike( x: genericndarray<any>, options?: Options ): genericndarray<number>;
 
 /**
 * Creates an uninitialized double-precision floating-point array having the same shape as a provided input ndarray.
@@ -1049,6 +1149,84 @@ declare function emptyLike( x: ndarray, options: Uint8Options ): uint8ndarray;
 * // returns 'uint8c'
 */
 declare function emptyLike( x: ndarray, options: Uint8COptions ): uint8cndarray;
+
+/**
+* Creates an uninitialized boolean array having the same shape as a provided input ndarray.
+*
+* @param x - input array
+* @param options - options
+* @param options.dtype - output array data type
+* @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
+* @param options.shape - output array shape
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @returns output array
+*
+* @example
+* var zeros = require( '@stdlib/ndarray/zeros' );
+*
+* var x = zeros( [ 2, 2 ], {
+*     'dtype': 'float64'
+* });
+* // returns <ndarray>
+*
+* var sh = x.shape;
+* // returns [ 2, 2 ]
+*
+* var dt = x.dtype;
+* // returns 'float64'
+*
+* var y = emptyLike( x, {
+*     'dtype': 'bool'
+* });
+* // returns <ndarray>
+*
+* sh = y.shape;
+* // returns [ 2, 2 ]
+*
+* dt = y.dtype;
+* // returns 'bool'
+*/
+declare function emptyLike( x: ndarray, options: BoolOptions ): boolndarray;
+
+/**
+* Creates an uninitialized generic array having the same shape as a provided input ndarray.
+*
+* @param x - input array
+* @param options - options
+* @param options.dtype - output array data type
+* @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
+* @param options.shape - output array shape
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @returns output array
+*
+* @example
+* var zeros = require( '@stdlib/ndarray/zeros' );
+*
+* var x = zeros( [ 2, 2 ], {
+*     'dtype': 'float64'
+* });
+* // returns <ndarray>
+*
+* var sh = x.shape;
+* // returns [ 2, 2 ]
+*
+* var dt = x.dtype;
+* // returns 'float64'
+*
+* var y = emptyLike( x, {
+*     'dtype': 'generic'
+* });
+* // returns <ndarray>
+*
+* sh = y.shape;
+* // returns [ 2, 2 ]
+*
+* dt = y.dtype;
+* // returns 'generic'
+*/
+declare function emptyLike( x: ndarray, options: GenericOptions ): genericndarray<number>;
 
 /**
 * Creates an uninitialized array having the same shape and data type as a provided input ndarray.

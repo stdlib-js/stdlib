@@ -64,7 +64,7 @@ Retries a previous commit created using `make commit`.
 $ make retry-commit
 ```
 
-This is particularly useful a commit failed due to lint errors. An example workflow might proceed as follows:
+This is particularly useful if a commit failed due to lint errors. An example workflow might proceed as follows:
 
 <!-- run-disable -->
 
@@ -77,6 +77,18 @@ $ git add . && make commit
 # Stage the changes and re-attempt the commit, without having to re-enter commit info:
 $ git add . && make retry-commit
 ```
+
+#### apply-git-notes
+
+Applies Git notes from the `docs/git-notes` directory to their corresponding commits.
+
+<!-- run-disable -->
+
+```bash
+$ make apply-git-notes
+```
+
+This is useful for fixing commit messages which contain errors or do not adhere to the project's [Git style guide][stdlib-style-guides-git] and to exclude certain commits from the changelog notes for specific packages.
 
 </section>
 

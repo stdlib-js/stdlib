@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/array';
+import { Collection, ArrayLike } from '@stdlib/types/array';
 import { ndarray, DataType, Mode, Order, Shape, Strides } from '@stdlib/types/ndarray';
 import { Buffer } from 'buffer';
 
@@ -36,7 +36,7 @@ interface Options {
 	/**
 	* Specifies how to handle subscripts which exceed array dimensions on a per dimension basis (default: ['throw']).
 	*/
-	submode?: Array<Mode>;
+	submode?: ArrayLike<Mode>;
 
 	/**
 	* Boolean indicating whether an array should be read-only (default: false).

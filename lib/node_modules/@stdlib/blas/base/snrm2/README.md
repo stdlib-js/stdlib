@@ -91,7 +91,7 @@ var z = snrm2( 4, x1, 2 );
 // returns 5.0
 ```
 
-If either `N` or `stride` is less than or equal to `0`, the function returns `0`.
+If `N` is less than or equal to `0`, the function returns `0`.
 
 #### snrm2.ndarray( N, x, stride, offset )
 
@@ -159,6 +159,129 @@ console.log( out );
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/blas/base/snrm2.h"
+```
+
+#### c_snrm2( N, \*X, stride )
+
+Computes the L2-norm of a complex single-precision floating-point vector.
+
+```c
+const float x[] = { 1.0f, 2.0f, 2.0f, -7.0f, -2.0f, 3.0f, 4.0f, 2.0f };
+
+float norm = c_snrm2( 4, x, 2 );
+// returns 5.0f
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[in] float*` input array.
+-   **stride**: `[in] CBLAS_INT` index increment for `X`.
+
+```c
+float c_snrm2( const CBLAS_INT N, const float *X, const CBLAS_INT stride );
+```
+
+#### c_snrm2_ndarray( N, \*X, stride, offset )
+
+Computes the L2-norm of a complex single-precision floating-point vector using alternative indexing semantics.
+
+```c
+const float x[] = { 1.0f, 2.0f, 2.0f, -7.0f, -2.0f, 3.0f, 4.0f, 2.0f };
+
+float norm = c_snrm2_ndarray( 4, x, 2, 0 );
+// returns 5.0f
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[in] float*` input array.
+-   **stride**: `[in] CBLAS_INT` index increment for `X`.
+-   **offset**: `[in] CBLAS_INT` starting index for `X`.
+
+```c
+float c_snrm2_ndarray( const CBLAS_INT N, const float *X, const CBLAS_INT stride, const CBLAS_INT offset );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/blas/base/snrm2.h"
+#include <stdio.h>
+
+int main( void ) {
+    // Create a strided array:
+    const float x[] = { 1.0f, -2.0f, 3.0f, -4.0f, 5.0f, -6.0f, 7.0f, -8.0f };
+
+    // Specify the number of indexed elements:
+    const int N = 8;
+
+    // Specify a stride:
+    const int strideX = 1;
+
+    // Compute the L2-norm:
+    float l2 = c_snrm2( N, x, strideX );
+
+    // Print the result:
+    printf( "L2-norm: %f\n", l2 );
+
+    // Compute the L2-norm:
+    l2 = c_snrm2_ndarray( N, x, -strideX, 7 );
+
+    // Print the result:
+    printf( "L2-norm: %f\n", l2 );
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 

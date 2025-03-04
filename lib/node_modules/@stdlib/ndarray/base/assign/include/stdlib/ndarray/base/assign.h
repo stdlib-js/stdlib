@@ -92,6 +92,8 @@
 #include "assign/u_u.h"
 #include "assign/u_z.h"
 
+#include "assign/x_x.h"
+
 #include "assign/z_c.h"
 #include "assign/z_z.h"
 // END LOOPS

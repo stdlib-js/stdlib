@@ -1,0 +1,136 @@
+
+{{alias}}( N, zx, strideX, zy, strideY, c, s )
+    Applies a plane rotation.
+
+    The `N` and stride parameters determine how values in the strided arrays are
+    accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If `N` is less than or equal to `0`, the vectors are unchanged.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    zx: Complex128Array
+        First input array.
+
+    strideX: integer
+        Index increment for `zx`.
+
+    zy: Complex128Array
+        Second input array.
+
+    strideY: integer
+        Index increment for `zy`.
+
+    c: number
+        Cosine of the angle of rotation.
+
+    s: number
+        Sine of the angle of rotation.
+
+    Returns
+    -------
+    zy: Complex128Array
+        Input array `zy`.
+
+    Examples
+    --------
+    // Standard usage:
+    > var zx = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var zy = new {{alias:@stdlib/array/complex128}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+    > {{alias}}( zx.length, zx, 1, zy, 1, 0.8, 0.6 );
+    > zx
+    <Complex128Array>[ ~0.8, ~1.6, ~2.4, ~3.2 ]
+    > zy
+    <Complex128Array>[ ~-0.6, ~-1.2, ~-1.8, ~-2.4 ]
+
+    // Advanced indexing:
+    > zx = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
+    > zy = new {{alias:@stdlib/array/complex128}}( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
+    > {{alias}}( 2, zx, -2, zy, 1, 0.8, 0.6 );
+    > zx
+    <Complex128Array>[ ~0.8, ~1.6, 3.0, 4.0, 4.0, ~4.8, 7.0, 8.0 ]
+    > zy
+    <Complex128Array>[ -3.0, ~-3.6, ~-0.6, ~-1.2, 0.0, 0.0, 0.0, 0.0 ]
+
+    // Using typed array views:
+    > var zx0 = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > var zy0 = new {{alias:@stdlib/array/complex128}}( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
+    > var zx1 = new {{alias:@stdlib/array/complex128}}( zx0.buffer, zx0.BYTES_PER_ELEMENT*1 );
+    > var zy1 = new {{alias:@stdlib/array/complex128}}( zy0.buffer, zy0.BYTES_PER_ELEMENT*2 );
+    > {{alias}}( 1, zx1, 1, zy1, 1, 0.8, 0.6 );
+    > zx0
+    <Complex128Array>[ 1.0, 2.0, ~2.4, ~3.2, 5.0, 6.0 ]
+    > zy0
+    <Complex128Array>[ 0.0, 0.0, 0.0, 0.0, ~-1.8, ~-2.4 ]
+
+
+{{alias}}.ndarray( N, zx, strideX, offsetX, zy, strideY, offsetY, c, s )
+    Applies a plane rotation using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    zx: Complex128Array
+        First input array.
+
+    strideX: integer
+        Index increment for `zx`.
+
+    offsetX: integer
+        Starting index for `zx`.
+
+    zy: Complex128Array
+        Second input array.
+
+    strideY: integer
+        Index increment for `zy`.
+
+    offsetY: integer
+        Starting index for `zy`.
+
+    c: number
+        Cosine of the angle of rotation.
+
+    s: number
+        Sine of the angle of rotation.
+
+    Returns
+    -------
+    zy: Complex128Array
+        Input array `zy`.
+
+    Examples
+    --------
+    // Standard usage:
+    > var zx = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var zy = new {{alias:@stdlib/array/complex128}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+    > {{alias}}.ndarray( zx.length, zx, 1, 0, zy, 1, 0, 0.8, 0.6 );
+    > zx
+    <Complex128Array>[ ~0.8, ~1.6, ~2.4, ~3.2 ]
+    > zy
+    <Complex128Array>[ ~-0.6, ~-1.2, ~-1.8, ~-2.4 ]
+
+    // Advanced indexing:
+    > zx = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > zy = new {{alias:@stdlib/array/complex128}}( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
+    > {{alias}}.ndarray( 1, zx, 2, 1, zy, 2, 1, 0.8, 0.6 );
+    > zx
+    <Complex128Array>[ 1.0, 2.0, ~2.4, ~3.2, 5.0, 6.0 ]
+    > zy
+    <Complex128Array>[ 0.0, 0.0, ~-1.8, ~-2.4, 0.0, 0.0 ]
+
+    See Also
+    --------
+

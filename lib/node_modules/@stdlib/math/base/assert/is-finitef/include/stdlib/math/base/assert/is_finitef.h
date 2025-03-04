@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Header file containing function declarations.
-*/
 #ifndef STDLIB_MATH_BASE_ASSERT_IS_FINITEF_H
 #define STDLIB_MATH_BASE_ASSERT_IS_FINITEF_H
 

@@ -29,7 +29,7 @@ import { Complex64 } from '@stdlib/types/complex';
 * @returns boolean indicating if a value is a 64-bit complex number
 *
 * @example
-* var Complex64 = require( '@stdlib/complex/float32' );
+* var Complex64 = require( '@stdlib/complex/float32/ctor' );
 *
 * var x = new Complex64( 4.0, 2.0 );
 *

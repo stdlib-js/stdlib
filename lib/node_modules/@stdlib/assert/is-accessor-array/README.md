@@ -44,7 +44,7 @@ Tests if a value is an array-like object supporting the accessor (get/set) proto
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
-var Complex128 = require( '@stdlib/complex/float64' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
 
 // Create a new complex number array:
 var arr = new Complex128Array( 10 );

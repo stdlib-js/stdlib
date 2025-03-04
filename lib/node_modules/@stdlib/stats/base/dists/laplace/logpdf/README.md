@@ -93,7 +93,7 @@ y = logpdf( 2.0, 8.0, 0.0 );
 
 #### logpdf.factory( mu, b )
 
-Return a `function` for evaluating the logarithm of the [PDF][pdf] for a [Laplace][laplace-distribution] distribution with parameters `mu` (location parameter) and `b > 0` (scale parameter).
+Returns a `function` for evaluating the logarithm of the [PDF][pdf] for a [Laplace][laplace-distribution] distribution with parameters `mu` (location parameter) and `b > 0` (scale parameter).
 
 ```javascript
 var mylogpdf = logpdf.factory( 10.0, 2.0 );

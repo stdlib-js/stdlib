@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/strided/base/smskmap.h"
+#include "stdlib/strided/base/stride2offset.h"
 #include <stdint.h>
 
 /**
@@ -55,21 +56,9 @@ void stdlib_strided_smskmap( const int64_t N, const float *X, const int64_t stri
 	if ( N <= 0 ) {
 		return;
 	}
-	if ( strideX < 0 ) {
-		ix = (1-N) * strideX;
-	} else {
-		ix = 0;
-	}
-	if ( strideMask < 0 ) {
-		im = (1-N) * strideMask;
-	} else {
-		im = 0;
-	}
-	if ( strideY < 0 ) {
-		iy = (1-N) * strideY;
-	} else {
-		iy = 0;
-	}
+	ix = stdlib_strided_stride2offset( N, strideX );
+	im = stdlib_strided_stride2offset( N, strideMask );
+	iy = stdlib_strided_stride2offset( N, strideY );
 	for ( i = 0; i < N; i++ ) {
 		if ( Mask[ im ] == 0 ) {
 			Y[ iy ] = fcn( X[ ix ] );

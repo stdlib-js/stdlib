@@ -32,7 +32,7 @@ extern "C" {
 /**
 * Computes the sum of absolute values.
 */
-void dasumsub( const int *, const double *, const int *, double * );
+void dasumsub( const CBLAS_INT *, const double *, const CBLAS_INT *, double * );
 
 #ifdef __cplusplus
 }

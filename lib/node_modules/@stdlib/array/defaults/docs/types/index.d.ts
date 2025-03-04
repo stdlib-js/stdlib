@@ -53,6 +53,11 @@ interface DataTypes {
 	complex_floating_point: 'complex128';
 
 	/**
+	* Default boolean data type.
+	*/
+	boolean: 'bool';
+
+	/**
 	* Default integer data type.
 	*/
 	integer: 'int32';

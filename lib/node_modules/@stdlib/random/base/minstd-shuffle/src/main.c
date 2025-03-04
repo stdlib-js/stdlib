@@ -16,13 +16,12 @@
 * limitations under the License.
 */
 
-// Note: keep project includes in alphabetical order...
+#include "stdlib/random/base/minstd_shuffle.h"
+#include "stdlib/random/base/minstd.h"
+#include "stdlib/random/base/shared.h"
 #include <stdlib.h>
 #include <stdint.h>
 #include <string.h>
-#include "stdlib/random/base.h"
-#include "stdlib/random/base/minstd.h"
-#include "stdlib/random/base/minstd_shuffle.h"
 
 // Forward declarations:
 static inline int8_t next( struct BasePRNGObject *obj, uint64_t *out );
@@ -47,7 +46,6 @@ static const int32_t NUM_WARMUPS = 8;
 /**
 * MINSTD PRNG whose output is shuffled.
 *
-* @private
 */
 static const struct BasePRNG minstd_shuffle_prng = {
 	"minstd-shuffle",                                     // name
@@ -68,7 +66,6 @@ static const struct BasePRNG minstd_shuffle_prng = {
 *
 * -   The function returns `-1` if unable to generate a pseudorandom integer and `0` otherwise.
 *
-* @private
 * @param obj  PRNG object
 * @param out  output address
 * @return     status code
@@ -110,7 +107,6 @@ static inline int8_t next( struct BasePRNGObject *obj, uint64_t *out ) {
 *
 * -   The function returns `-1` if unable to generate a pseudorandom number and `0` otherwise.
 *
-* @private
 * @param obj  PRNG object
 * @param out  output address
 * @return     status code
@@ -130,7 +126,6 @@ static inline int8_t normalized( struct BasePRNGObject *obj, double *out ) {
 /**
 * Frees a PRNG's allocated memory.
 *
-* @private
 * @param obj  PRNG object
 */
 static inline void minstd_shuffle_free( struct BasePRNGObject *obj ) {
@@ -148,7 +143,6 @@ static inline void minstd_shuffle_free( struct BasePRNGObject *obj ) {
 *
 * -   The function returns `-1` if unable to resolve a PRNG seed and `0` otherwise.
 *
-* @private
 * @param obj    MINSTD PRNG object
 * @param table  pointer to output shuffle table
 * @return       status code
@@ -188,11 +182,11 @@ static inline int8_t create_table( struct BasePRNGObject *obj, uint32_t *table )
 * @return      pointer to a dynamically allocated PRNG or, if unable to allocate memory, a null pointer
 *
 * @example
+* #include "stdlib/random/base/minstd_shuffle.h"
+* #include "stdlib/random/base/shared.h"
 * #include <stdlib.h>
 * #include <stdio.h>
 * #include <stdint.h>
-* #include "stdlib/random/base.h"
-* #include "stdlib/random/base/minstd_shuffle.h"
 *
 * // Create a PRNG:
 * struct BasePRNGObject *obj = stdlib_base_random_minstd_shuffle_allocate( 12345 );
@@ -279,11 +273,11 @@ struct BasePRNGObject * stdlib_base_random_minstd_shuffle_allocate( const int32_
 * @param obj  PRNG object
 *
 * @example
+* #include "stdlib/random/base/minstd_shuffle.h"
+* #include "stdlib/random/base/shared.h"
 * #include <stdlib.h>
 * #include <stdio.h>
 * #include <stdint.h>
-* #include "stdlib/random/base.h"
-* #include "stdlib/random/base/minstd_shuffle.h"
 *
 * // Create a PRNG:
 * struct BasePRNGObject *obj = stdlib_base_random_minstd_shuffle_allocate( 12345 );
@@ -331,11 +325,11 @@ void stdlib_base_random_minstd_shuffle_free( struct BasePRNGObject *obj ) {
 * @return     status code
 *
 * @example
+* #include "stdlib/random/base/minstd_shuffle.h"
+* #include "stdlib/random/base/shared.h"
 * #include <stdlib.h>
 * #include <stdio.h>
 * #include <stdint.h>
-* #include "stdlib/random/base.h"
-* #include "stdlib/random/base/minstd_shuffle.h"
 *
 * // Create a PRNG:
 * struct BasePRNGObject *obj = stdlib_base_random_minstd_shuffle_allocate( 12345 );
@@ -380,11 +374,11 @@ int8_t stdlib_base_random_minstd_shuffle_seed( const struct BasePRNGObject *obj,
 * @return     pointer to a copy of the PRNG's internal state or, if unable to allocate memory, a null pointer
 *
 * @example
+* #include "stdlib/random/base/minstd_shuffle.h"
+* #include "stdlib/random/base/shared.h"
 * #include <stdlib.h>
 * #include <stdio.h>
 * #include <stdint.h>
-* #include "stdlib/random/base.h"
-* #include "stdlib/random/base/minstd_shuffle.h"
 *
 * // Create a PRNG:
 * struct BasePRNGObject *obj = stdlib_base_random_minstd_shuffle_allocate( 12345 );
@@ -429,11 +423,11 @@ void * stdlib_base_random_minstd_shuffle_state( const struct BasePRNGObject *obj
 * @return       status code
 *
 * @example
+* #include "stdlib/random/base/minstd_shuffle.h"
+* #include "stdlib/random/base/shared.h"
 * #include <stdlib.h>
 * #include <stdio.h>
 * #include <stdint.h>
-* #include "stdlib/random/base.h"
-* #include "stdlib/random/base/minstd_shuffle.h"
 *
 * // Create a PRNG:
 * struct BasePRNGObject *obj = stdlib_base_random_minstd_shuffle_allocate( 12345 );

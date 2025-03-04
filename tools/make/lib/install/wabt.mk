@@ -161,12 +161,16 @@ deps-prerequisites-wabt:
 # make deps-install-wabt
 #/
 deps-install-wabt: $(DEPS_WABT_BUILD_OUT) deps-prerequisites-wabt
-	$(QUIET) cd $(DEPS_WABT_BUILD_OUT) && $(CMAKE) . && $(MAKE)
+	$(QUIET) cd $(DEPS_WABT_BUILD_OUT) && \
+		$(MKDIR_RECURSIVE) build && \
+		cd build && \
+		$(CMAKE) .. && \
+		$(CMAKE) --build .
 
 .PHONY: deps-install-wabt
 
 #/
-# Updates the WebAssemby Binary Toolkit (WABT).
+# Updates the WebAssembly Binary Toolkit (WABT).
 #
 # @private
 #
@@ -177,9 +181,11 @@ deps-update-wabt: $(DEPS_WABT_BUILD_OUT)
 	$(QUIET) cd $(DEPS_WABT_BUILD_OUT) && \
 		$(GIT) pull && \
 		$(GIT) submodule update --init --recursive && \
-		$(DELETE) $(DELETE_FLAGS) $(DEPS_WABT_BUILD_OUT)/out &&
-		$(CMAKE) . && \
-		$(MAKE)
+		$(DELETE) $(DELETE_FLAGS) $(DEPS_WABT_BUILD_OUT)/build &&
+		$(MKDIR_RECURSIVE) $(DEPS_WABT_BUILD_OUT)/build && \
+		cd $(DEPS_WABT_BUILD_OUT)/build && \
+		$(CMAKE) .. && \
+		$(CMAKE) --build .
 
 .PHONY: deps-update-wabt
 
@@ -198,7 +204,7 @@ deps-test-wabt: $(DEPS_WABT_TEST_INSTALL_WAT_OUT) $(DEPS_WABT_TEST_INSTALL_WASM_
 .PHONY: deps-test-wabt
 
 #/
-# Installs the WebAsembly Binary Toolkit (WABT).
+# Installs the WebAssembly Binary Toolkit (WABT).
 #
 # @example
 # make install-deps-wabt

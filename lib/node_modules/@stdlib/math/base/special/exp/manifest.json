@@ -1,6 +1,7 @@
 {
   "options": {
-    "task": "build"
+    "task": "build",
+    "wasm": false
   },
   "fields": [
     {
@@ -27,6 +28,7 @@
   "confs": [
     {
       "task": "build",
+      "wasm": false,
       "src": [
         "./src/main.c"
       ],
@@ -46,6 +48,7 @@
     },
     {
       "task": "benchmark",
+      "wasm": false,
       "src": [
         "./src/main.c"
       ],
@@ -64,6 +67,26 @@
     },
     {
       "task": "examples",
+      "wasm": false,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/constants/float64/ninf",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/math/base/special/trunc",
+        "@stdlib/math/base/special/ldexp"
+      ]
+    },
+    {
+      "task": "build",
+      "wasm": true,
       "src": [
         "./src/main.c"
       ],

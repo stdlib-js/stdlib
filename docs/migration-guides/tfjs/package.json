@@ -1,0 +1,57 @@
+{
+  "name": "stdlib-tfjs-benchmarks",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Tensorflow.js benchmarks.",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "main": "./package.json",
+  "directories": {
+    "benchmark": "./benchmark"
+  },
+  "scripts": {
+    "bench": "make benchmark"
+  },
+  "homepage": "https://github.com/stdlib-js/stdlib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stdlib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.20.0",
+    "@tensorflow/tfjs-node": "^4.20.0"
+  },
+  "engines": {},
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
+  "keywords": [
+    "stdlib",
+    "benchmarks",
+    "benchmark",
+    "performance",
+    "tfjs",
+    "tensorflow"
+  ],
+  "__stdlib__": {}
+}

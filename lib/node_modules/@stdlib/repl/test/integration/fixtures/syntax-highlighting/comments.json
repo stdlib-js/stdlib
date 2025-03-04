@@ -1,0 +1,7 @@
+{
+  "expression": "var a; // This is a comment",
+  "expected": "var a; \u001b[31m// This is a comment\u001b[0m",
+  "theme": {
+    "comment": "red"
+  }
+}

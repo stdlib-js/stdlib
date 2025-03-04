@@ -94,8 +94,8 @@ jobs:
             node -e "var pkg = require( './package.json' ); pkg.dependencies[ '@stdlib/error-tools-fmtprodmsg' ] = '^$PKG_VERSION'; require( 'fs' ).writeFileSync( 'package.json', JSON.stringify( pkg, null, 2 ) );"
           fi
 
-      # Configure git:
-      - name: 'Configure git'
+      # Configure Git:
+      - name: 'Configure Git'
         run: |
           git config --local user.email "noreply@stdlib.io"
           git config --local user.name "stdlib-bot"
@@ -191,8 +191,8 @@ jobs:
         # Pin action to full length commit SHA
         uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4.1.0
 
-      # Configure git:
-      - name: 'Configure git'
+      # Configure Git:
+      - name: 'Configure Git'
         run: |
           git config --local user.email "noreply@stdlib.io"
           git config --local user.name "stdlib-bot"
@@ -344,7 +344,6 @@ jobs:
         uses: 8398a7/action-slack@28ba43ae48961b90635b50953d216767a6bea486 # v3.16.2
         with:
           status: ${{ job.status }}
-          steps: ${{ toJson(steps) }}
           channel: '#npm-ci'
         if: failure()
 
@@ -367,8 +366,8 @@ jobs:
         # Pin action to full length commit SHA
         uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4.1.0
 
-      # Configure git:
-      - name: 'Configure git'
+      # Configure Git:
+      - name: 'Configure Git'
         run: |
           git config --local user.email "noreply@stdlib.io"
           git config --local user.name "stdlib-bot"
@@ -518,7 +517,6 @@ jobs:
         uses: 8398a7/action-slack@28ba43ae48961b90635b50953d216767a6bea486 # v3.16.2
         with:
           status: ${{ job.status }}
-          steps: ${{ toJson(steps) }}
           channel: '#npm-ci'
         if: failure()
 
@@ -541,8 +539,8 @@ jobs:
         # Pin action to full length commit SHA
         uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4.1.0
 
-      # Configure git:
-      - name: 'Configure git'
+      # Configure Git:
+      - name: 'Configure Git'
         run: |
           git config --local user.email "noreply@stdlib.io"
           git config --local user.name "stdlib-bot"
@@ -698,7 +696,6 @@ jobs:
         uses: 8398a7/action-slack@28ba43ae48961b90635b50953d216767a6bea486 # v3.16.2
         with:
           status: ${{ job.status }}
-          steps: ${{ toJson(steps) }}
           channel: '#npm-ci'
         if: failure()
 
@@ -738,8 +735,8 @@ jobs:
             echo "bump=true" >> $GITHUB_OUTPUT
           fi
 
-      # Configure git:
-      - name: 'Configure git'
+      # Configure Git:
+      - name: 'Configure Git'
         if: steps.check-if-bump.outputs.bump
         run: |
           git config --local user.email "noreply@stdlib.io"

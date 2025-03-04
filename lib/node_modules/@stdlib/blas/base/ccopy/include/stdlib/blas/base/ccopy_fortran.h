@@ -32,7 +32,7 @@ extern "C" {
 /**
 * Copies values from one complex single-precision floating-point vector to another complex single-precision floating-point vector.
 */
-void ccopy( const int *, const void *, const int *, void *, const int * );
+void ccopy( const CBLAS_INT *, const void *, const CBLAS_INT *, void *, const CBLAS_INT * );
 
 #ifdef __cplusplus
 }

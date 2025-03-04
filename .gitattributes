@@ -40,10 +40,27 @@
 *.mov binary
 
 # Override what is considered "vendored" by GitHub's linguist:
-/deps/** linguist-vendored=false
-/lib/node_modules/** linguist-vendored=false linguist-generated=false
-test/fixtures/** linguist-vendored=false
-tools/** linguist-vendored=false
+/lib/node_modules/** -linguist-vendored -linguist-generated
 
-# Override what is considered "documentation" by GitHub's linguist:
-examples/** linguist-documentation=false
+# Configure directories which should *not* be included in GitHub language statistics:
+/deps/** linguist-vendored
+/dist/** linguist-generated
+/workshops/** linguist-vendored
+
+benchmark/** linguist-vendored
+docs/* linguist-documentation
+etc/** linguist-vendored
+examples/** linguist-documentation
+scripts/** linguist-vendored
+test/** linguist-vendored
+tools/** linguist-vendored
+
+# Configure files which should *not* be included in GitHub language statistics:
+Makefile linguist-vendored
+*.mk linguist-vendored
+*.jl linguist-vendored
+*.py linguist-vendored
+*.R linguist-vendored
+
+# Configure files which should be included in GitHub language statistics:
+docs/types/*.d.ts -linguist-documentation

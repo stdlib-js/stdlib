@@ -20,16 +20,28 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ndarray } from '@stdlib/types/ndarray';
+import { float32ndarray } from '@stdlib/types/ndarray';
 
 /**
 * Computes the dot product of two single-precision floating-point vectors.
 *
+* ## Notes
+*
+* -   If provided at least one input array having more than one dimension, the input arrays are broadcasted to a common shape.
+* -   For multi-dimensional input arrays, the function performs batched computation, such that the function computes the dot product for each pair of vectors in `x` and `y` according to the specified dimension index.
+* -   The size of the contracted dimension must be the same for both input arrays.
+* -   The function resolves the dimension index for which to compute the dot product **before** broadcasting.
+* -   If provided empty vectors, the dot product is `0`.
+* -   Negative indices are resolved relative to the last array dimension, with the last dimension corresponding to `-1`.
+* -   The output array has the same data type as the input arrays and has a shape which is determined by broadcasting and excludes the contracted dimension.
+*
 * @param x - first input array
 * @param y - second input array
-* @throws first argument must be a 1-dimensional `ndarray` containing single-precision floating-point numbers
-* @throws second argument must be a 1-dimensional `ndarray` containing single-precision floating-point numbers
-* @throws input arrays must be the same length
+* @param dim - dimension for which to compute the dot product (default: -1)
+* @throws first argument must be a non-zero-dimensional ndarray containing single-precision floating-point numbers
+* @throws second argument must be a non-zero-dimensional ndarray containing single-precision floating-point numbers
+* @throws input arrays must be broadcast-compatible
+* @throws the size of the contracted dimension must be the same for both input arrays
 * @returns dot product
 *
 * @example
@@ -40,9 +52,12 @@ import { ndarray } from '@stdlib/types/ndarray';
 * var y = array( new Float32Array( [ 2.0, 6.0, -1.0, -4.0, 8.0 ] ) );
 *
 * var z = sdot( x, y );
+* returns <ndarray>
+*
+* var v = z.get();
 * // returns -5.0
 */
-declare function sdot( x: ndarray, y: ndarray ): number;
+declare function sdot( x: float32ndarray, y: float32ndarray, dim?: number ): float32ndarray;
 
 
 // EXPORTS //

@@ -59,6 +59,7 @@ The returned object has the following properties:
     -   **floating_point**: default floating-point data type.
     -   **real_floating_point**: default real-valued floating-point data type.
     -   **complex_floating_point**: default complex-valued floating-point data type.
+    -   **boolean**: default boolean data type.
     -   **integer**: default integer data type.
     -   **signed_integer**: default signed integer data type.
     -   **unsigned_integer**: default unsigned integer data type.

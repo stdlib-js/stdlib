@@ -56,7 +56,7 @@ $ make wasm
 
 The command supports the following environment variables:
 
--   **PKGS_WASM_PATTERN**: package pattern; e.g., `**/math/base/special/**/package.json`.
+-   **PKGS_WASM_PATTERN**: package pattern; e.g., `blas/base/daxpy-wasm`.
 
 If unable to compile WebAssemby artifacts, the command prints an error message and tries compiling WebAssembly artifacts for the next package.
 
@@ -72,7 +72,7 @@ $ make clean-wasm
 
 The command supports the following environment variables:
 
--   **PKGS_WASM_PATTERN**: package pattern; e.g., `**/math/base/special/**/package.json`.
+-   **PKGS_WASM_PATTERN**: package pattern; e.g., `blas/base/daxpy-wasm`.
 
 </section>
 

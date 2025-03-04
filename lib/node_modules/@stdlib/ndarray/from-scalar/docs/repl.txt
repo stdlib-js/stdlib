@@ -20,6 +20,7 @@
 
         - is a number, the default data type is the default real-valued
           floating-point data type.
+        - is a boolean, the default data type is the default boolean data type.
         - is a complex number object of a known complex data type, the data type
           is the same as the provided value.
         - is a complex number object of an unknown data type, the default data

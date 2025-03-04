@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2020 The Stdlib Authors.
+Copyright (c) 2024 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -46,12 +46,13 @@ Returns a list of strided array data types.
 
 ```javascript
 var out = dtypes();
-// returns [ 'binary', 'complex64', 'complex128', 'float32', 'float64', 'generic', 'int16', 'int32', 'int8', 'uint16', 'uint32', 'uint8', 'uint8c' ]
+// e.g., returns [ 'binary', 'bool', 'complex64', ... ]
 ```
 
-The output `array` contains the following data types:
+The output array contains the following data types:
 
 -   `binary`: binary.
+-   `bool`: boolean values.
 -   `complex64`: single-precision complex floating-point numbers.
 -   `complex128`: double-precision complex floating-point numbers.
 -   `float32`: single-precision floating-point numbers.
@@ -86,17 +87,12 @@ The output `array` contains the following data types:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var indexOf = require( '@stdlib/utils/index-of' );
+var contains = require( '@stdlib/array/base/assert/contains' ).factory;
 var dtypes = require( '@stdlib/strided/dtypes' );
 
-var DTYPES = dtypes();
-var bool;
+var isdtype = contains( dtypes() );
 
-function isdtype( str ) {
-    return ( indexOf( DTYPES, str ) >= 0 );
-}
-
-bool = isdtype( 'float64' );
+var bool = isdtype( 'float64' );
 // returns true
 
 bool = isdtype( 'int16' );

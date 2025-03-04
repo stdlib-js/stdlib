@@ -62,13 +62,11 @@ The `N` and `stride` parameters determine which elements in `x` and `y` are acce
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 var x = new Float64Array( [ 1.0, -2.0, 3.0, -4.0 ] );
 var y = new Float64Array( [ 0.0, 1.0, 2.0, 3.0 ] );
-var N = floor( x.length / 2 );
 
-dsort2sh( N, -1.0, x, 2, y, 2 );
+dsort2sh( 2, -1.0, x, 2, y, 2 );
 
 console.log( x );
 // => <Float64Array>[ 3.0, -2.0, 1.0, -4.0 ]
@@ -81,7 +79,6 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 // Initial arrays...
 var x0 = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
@@ -90,10 +87,9 @@ var y0 = new Float64Array( [ 0.0, 1.0, 2.0, 3.0 ] );
 // Create offset views...
 var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 var y1 = new Float64Array( y0.buffer, y0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
-var N = floor( x0.length/2 );
 
 // Sort every other element...
-dsort2sh( N, -1.0, x1, 2, y1, 2 );
+dsort2sh( 2, -1.0, x1, 2, y1, 2 );
 
 console.log( x0 );
 // => <Float64Array>[ 1.0, 4.0, 3.0, 2.0 ]

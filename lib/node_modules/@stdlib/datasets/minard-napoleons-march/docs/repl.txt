@@ -5,11 +5,11 @@
 
     Data includes the following:
 
-    - army: army size
-    - cities: cities
-    - labels: map labels
-    - temperature: temperature during the army's return from Russia
-    - rivers: river data
+    - army: army size.
+    - cities: cities.
+    - labels: map labels.
+    - temperature: temperature during the army's return from Russia.
+    - rivers: river data.
 
     Temperatures are on the Réaumur scale. Multiply each temperature by `1.25`
     to convert to Celsius.

@@ -1,0 +1,53 @@
+
+{{alias}}( n, x )
+    Evaluates a normalized Hermite polynomial using single-precision floating-
+    point arithmetic.
+
+    Parameters
+    ----------
+    n: integer
+        Nonnegative polynomial degree.
+
+    x: number
+        Value at which to evaluate the polynomial.
+
+    Returns
+    -------
+    y: number
+        Function value.
+
+    Examples
+    --------
+    > var y = {{alias}}( 1, 0.5 )
+    0.5
+    > y = {{alias}}( -1, 0.5 )
+    NaN
+    > y = {{alias}}( 0, 0.5 )
+    1.0
+    > y = {{alias}}( 2, 0.5 )
+    -0.75
+
+
+{{alias}}.factory( n )
+    Returns a function for evaluating a normalized Hermite polynomial using
+    single-precision floating-point arithmetic.
+
+    Parameters
+    ----------
+    n: integer
+        Nonnegative polynomial degree.
+
+    Returns
+    -------
+    fcn: Function
+        Function for evaluating a normalized Hermite polynomial.
+
+    Examples
+    --------
+    > var f = {{alias}}.factory( 2 );
+    > var v = f( 0.5 )
+    -0.75
+
+    See Also
+    --------
+

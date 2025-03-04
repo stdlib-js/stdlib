@@ -1,0 +1,16 @@
+{
+  "order": "row-major",
+  "trans": "no-transpose",
+  "diag": "unit",
+  "uplo": "upper",
+  "strideX": 1,
+  "offsetA": 0,
+  "offsetX": 0,
+  "LDA": 3,
+  "strideA1": 3,
+  "strideA2": 1,
+  "N": 3,
+  "A": [ 1.0, 2.0, 3.0, 0.0, 1.0, 2.0, 0.0, 0.0, 1.0 ],
+  "x": [ 1.0, 2.0, 3.0 ],
+  "x_out": [ 14.0, 8.0, 3.0 ]
+}

@@ -28,16 +28,17 @@
     {
       "task": "build",
       "src": [
-        "./src/dcusumkbn.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/math/base/special/abs",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-double",
@@ -48,30 +49,34 @@
     {
       "task": "benchmark",
       "src": [
-        "./src/dcusumkbn.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/math/base/special/abs",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
+      ]
     },
     {
       "task": "examples",
       "src": [
-        "./src/dcusumkbn.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/math/base/special/abs",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
+      ]
     }
   ]
 }

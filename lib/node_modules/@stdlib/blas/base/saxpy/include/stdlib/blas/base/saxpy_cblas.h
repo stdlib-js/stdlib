@@ -22,6 +22,8 @@
 #ifndef SAXPY_CBLAS_H
 #define SAXPY_CBLAS_H
 
+#include "stdlib/blas/base/shared.h"
+
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
 */
@@ -32,7 +34,7 @@ extern "C" {
 /**
 * Multiplies a vector `X` by a constant and adds the result to `Y`.
 */
-void cblas_saxpy( const int N, const float alpha, const float *X, const int strideX, float *Y, const int strideY );
+void API_SUFFIX(cblas_saxpy)( const CBLAS_INT N, const float alpha, const float *X, const CBLAS_INT strideX, float *Y, const CBLAS_INT strideY );
 
 #ifdef __cplusplus
 }

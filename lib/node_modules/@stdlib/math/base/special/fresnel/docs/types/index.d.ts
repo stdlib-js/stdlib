@@ -23,8 +23,8 @@
 import { Collection } from '@stdlib/types/array';
 
 /**
- * Interface describing `fresnel`.
- */
+* Interface describing `fresnel`.
+*/
 interface Fresnel {
 	/**
 	* Computes the Fresnel integrals S(x) and C(x).

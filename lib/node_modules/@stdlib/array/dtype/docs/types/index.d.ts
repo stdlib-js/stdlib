@@ -1,7 +1,7 @@
 /*
 * @license Apache-2.0
 *
-* Copyright (c) 2021 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { RealOrComplexTypedArray, Complex128Array, Complex64Array, DataType } from '@stdlib/types/array';
+import { RealOrComplexTypedArray, Complex128Array, Complex64Array, BooleanArray, DataType } from '@stdlib/types/array';
 
 /**
 * Returns the data type of an array.
@@ -77,6 +77,20 @@ declare function dtype( value: Complex128Array ): 'complex128';
 * // returns 'complex64'
 */
 declare function dtype( value: Complex64Array ): 'complex64';
+
+/**
+* Returns the data type of an array.
+*
+* @param value - input value
+* @returns data type
+*
+* @example
+* var BooleanArray = require( '@stdlib/array/bool' );
+*
+* var dt = dtype( new BooleanArray( [ true, false, true, false ] ) );
+* // returns 'bool'
+*/
+declare function dtype( value: BooleanArray ): 'bool';
 
 /**
 * Returns the data type of an array.

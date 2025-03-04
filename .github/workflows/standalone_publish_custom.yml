@@ -48,6 +48,7 @@ on:
         - patch
         - minor
         - major
+        - auto
       only-unpublished:
         type: boolean
         description: 'Only publish packages that have not yet been published'
@@ -85,24 +86,36 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: false
 
-          # Limit clone depth to the most recent commit:
-          fetch-depth: 1
+          # Fetch all history to allow for changelog generation:
+          fetch-depth: 0
 
           # Specify whether to download Git-LFS files:
           lfs: false
         timeout-minutes: 10
 
+      # Configure Git:
+      - name: 'Configure Git'
+        run: |
+          git config --local user.email "82920195+stdlib-bot@users.noreply.github.com"
+          git config --local user.name "stdlib-bot"
+
+      # Apply Git notes:
+      - name: 'Apply Git notes'
+        run: |
+          make apply-git-notes
+        timeout-minutes: 5
+
       # Install Node.js:
       - name: 'Install Node.js'
         # Pin action to full length commit SHA
-        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4.0.2
+        uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
         with:
-          node-version: '16' # 'lts/*'
+          node-version: '20' # 'lts/*'
         timeout-minutes: 5
 
       # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
@@ -114,7 +127,7 @@ jobs:
       # Publish standalone packages:
       - name: 'Publish packages'
         env:
-          GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           DEBUG: ${{ env.ACTIONS_STEP_DEBUG && 'scripts:publish-packages' || '' }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |

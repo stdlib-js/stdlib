@@ -1,7 +1,7 @@
 /*
 * @license Apache-2.0
 *
-* Copyright (c) 2021 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -30,6 +30,8 @@ import nextDataType = require( './index' );
 {
 	nextDataType( 'complex128' ); // $ExpectType number
 	nextDataType( 'complex64' ); // $ExpectType "complex128"
+
+	nextDataType( 'bool' ); // $ExpectType number
 
 	nextDataType( 'float64' ); // $ExpectType number
 	nextDataType( 'float32' ); // $ExpectType "float64"

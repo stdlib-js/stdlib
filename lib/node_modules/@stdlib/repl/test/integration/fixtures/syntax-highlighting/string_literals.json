@@ -1,0 +1,7 @@
+{
+  "expression": "var a = 'hello'; var b = `2 + 2 = ${4} haha`;",
+  "expected": "var a = \u001b[31m'hello'\u001b[0m; var b = `\u001b[31m2 + 2 = \u001b[0m${4}\u001b[31m haha\u001b[0m`;",
+  "theme": {
+    "string": "red"
+  }
+}

@@ -21,12 +21,12 @@
 #include <stdbool.h>
 
 int main( void ) {
-    const double x[] = { 5.0, -5.0, 3.14, -3.14, 0.0, 0.0/0.0 };
+	const double x[] = { 5.0, -5.0, 3.14, -3.14, 0.0, 0.0/0.0 };
 
-    bool b;
-    int i;
-    for ( i = 0; i < 6; i++ ) {
-        b = stdlib_base_is_odd( x[ i ] );
-        printf( "Value: %lf. Is Odd? %s.\n", x[ i ], ( b ) ? "True" : "False" );
-    }
+	bool b;
+	int i;
+	for ( i = 0; i < 6; i++ ) {
+		b = stdlib_base_is_odd( x[ i ] );
+		printf( "Value: %lf. Is Odd? %s.\n", x[ i ], ( b ) ? "True" : "False" );
+	}
 }

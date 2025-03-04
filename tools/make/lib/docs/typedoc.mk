@@ -25,7 +25,7 @@ TYPEDOC ?= $(BIN_DIR)/typedoc
 TYPEDOC_CONF ?= $(CONFIG_DIR)/typedoc/.typedoc.json
 
 # Define the path to a TypeScript configuration file:
-TYPEDOC_TSCONFIG ?= $(ROOT_DIR)/tsconfig.json
+TYPEDOC_TSCONFIG ?= $(CONFIG_DIR)/typedoc/tsconfig.json
 
 # Define the output directory for TypeDoc:
 TYPEDOC_OUT ?= $(SRC_DOCS_DIR)/typedoc
@@ -47,7 +47,9 @@ TYPEDOC_HTML_FLAGS ?= \
 	--mode modules \
 	--target es6 \
 	--module commonjs \
+	--options $(TYPEDOC_CONF) \
 	--tsconfig $(TYPEDOC_TSCONFIG) \
+	--ignoreCompilerErrors \
 	--excludeExternals \
 	--excludePrivate \
 	--excludeProtected \
@@ -62,15 +64,13 @@ TYPEDOC_HTML_FLAGS ?= \
 
 # Define command-line options to be used when invoking the TypeDoc executable to generate TypeDoc JSON:
 TYPEDOC_JSON_FLAGS ?= \
-	--mode modules \
-	--target es6 \
-	--module commonjs \
+	--options $(TYPEDOC_CONF) \
 	--tsconfig $(TYPEDOC_TSCONFIG) \
 	--excludeExternals \
 	--excludePrivate \
 	--excludeProtected \
-	--includeDeclarations \
 	--exclude '{**/*test*,**/test*.ts,**/*.js,**/*test.ts}' \
+	--packages $(SRC_DIR) \
 	--name stdlib \
 	--json $(TYPEDOC_JSON)
 

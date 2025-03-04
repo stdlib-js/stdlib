@@ -29,7 +29,6 @@ static const double SCALAR = 4503599627370496.0;
 /**
 * Extracts a normal number y and exponent exp satisfying x = y * 2^exp.
 *
-* @private
 * @param x        input value
 * @param y        Normal number
 * @param exp      Exponent

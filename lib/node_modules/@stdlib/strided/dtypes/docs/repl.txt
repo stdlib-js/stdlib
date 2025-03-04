@@ -5,6 +5,7 @@
     The output array contains the following data types:
 
     - binary: binary.
+    - bool: boolean values.
     - complex64: single-precision complex floating-point numbers.
     - complex128: double-precision complex floating-point numbers.
     - float32: single-precision floating-point numbers.

@@ -23,8 +23,8 @@
 import { Collection } from '@stdlib/types/array';
 
 /**
- * Inteface describing `frexp`.
- */
+* Inteface describing `frexp`.
+*/
 interface Frexp {
 	/**
 	* Splits a double-precision floating-point number into a normalized fraction and an integer power of two.

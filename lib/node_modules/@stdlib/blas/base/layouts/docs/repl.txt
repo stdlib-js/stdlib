@@ -1,0 +1,22 @@
+
+{{alias}}()
+    Returns a list of memory layouts.
+
+    The output array contains the following layouts:
+
+    - row-major: row-major (C-style) order.
+    - column-major: column-major (Fortran-style) order.
+
+    Returns
+    -------
+    out: Array<string>
+        List of memory layouts.
+
+    Examples
+    --------
+    > var out = {{alias}}()
+    [ 'row-major', 'column-major' ]
+
+    See Also
+    --------
+

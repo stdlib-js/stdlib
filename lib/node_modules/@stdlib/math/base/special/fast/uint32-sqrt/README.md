@@ -120,7 +120,7 @@ for ( i = 0; i < 101; i++ ) {
 
 #### stdlib_base_fast_uint32_sqrt( x )
 
-Compute an integer [square root][square-root].
+Computes an integer [square root][square-root].
 
 ```c
 #include <stdint.h>

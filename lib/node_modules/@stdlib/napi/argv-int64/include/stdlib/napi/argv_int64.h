@@ -16,8 +16,8 @@
 * limitations under the License.
 */
 
-#ifndef STDLIB_NAPI_ARGV_INT32_H
-#define STDLIB_NAPI_ARGV_INT32_H
+#ifndef STDLIB_NAPI_ARGV_INT64_H
+#define STDLIB_NAPI_ARGV_INT64_H
 
 #include "stdlib/napi/argv.h"
 #include "stdlib/assert/napi/status_ok.h"
@@ -81,4 +81,4 @@ napi_status stdlib_napi_argv_int64( const napi_env env, const napi_value value, 
 }
 #endif
 
-#endif // !STDLIB_NAPI_ARGV_INT32_H
+#endif // !STDLIB_NAPI_ARGV_INT64_H
