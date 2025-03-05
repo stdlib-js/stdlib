@@ -28,7 +28,7 @@
 * @return      standard deviation
 *
 * @example
-* double y = stdlib_base_levy_stdev( 0.0, 1.0 );
+* double y = stdlib_base_dists_levy_stdev( 0.0, 1.0 );
 * // returns Infinity
 */
 double stdlib_base_dists_levy_stdev( const double mu, const double c ) {
