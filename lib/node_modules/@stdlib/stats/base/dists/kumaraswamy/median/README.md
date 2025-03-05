@@ -174,8 +174,8 @@ for ( i = 0; i < 10; i++ ) {
 Returns the [median][median] of a [Kumaraswamy's double bounded][kumaraswamy-distribution] distribution with first shape parameter `a` and second shape parameter `b`.
 
 ```c
-double out = stdlib_base_dists_kumaraswamy_median( 2.0, 3.0 );
-// returns ~1.817
+double out = stdlib_base_dists_kumaraswamy_median( 1.0, 1.0 );
+// returns 0.5
 ```
 
 The function accepts the following arguments:
@@ -212,7 +212,7 @@ double stdlib_base_dists_kumaraswamy_median( const double a, const double b );
 
 static double random_uniform( const double min, const double max ) {
     double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
-    return min + ( v * (max - min) );
+    return min + ( v*(max-min) );
 }
 
 int main( void ) {
@@ -225,7 +225,7 @@ int main( void ) {
         a = random_uniform( 0.1, 10.0 );
         b = random_uniform( 0.1, 10.0 );
         y = stdlib_base_dists_kumaraswamy_median( a, b );
-        printf( "a: %lf, b: %lf, Median(a, b): %lf\n", a, b, y );
+        printf( "a: %lf, b: %lf, Median(X;a,b): %lf\n", a, b, y );
     }
 
     return 0;

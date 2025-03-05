@@ -211,3 +211,44 @@ jobs:
             This pull request has been automatically closed because it has been inactive for an extended period after changes were requested. If you still wish to pursue this contribution, feel free to reopen the pull request or submit a new one.
 
             We appreciate your interest in contributing to stdlib!
+
+  # Define a job which closes a pull request if a PR has an inappropriate Git history:
+  git_history:
+
+    # Define job name:
+    name: 'Check for Git History label'
+
+    # Only run this job if the pull request has a specific label:
+    if: "${{ github.event.label.name == 'autoclose: Git History' }}"
+
+    # Define job permissions:
+    permissions:
+      contents: read
+      pull-requests: write
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps:
+    steps:
+
+      # Close the pull request:
+      - name: 'Close pull request'
+        run: gh pr close "$NUMBER" --comment "$BODY"
+        env:
+          GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          GH_REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.pull_request.number }}
+          BODY: |
+            Thank you for working on this pull request. However, we cannot accept your contribution due to Git history issues.
+
+            Some common issues include:
+
+            -   Merge conflicts
+            -   Inappropriate commit messages
+            -   Unrelated commits
+            -   Including changes from merged branches that weren't intended for this PR
+
+            We recommend opening a new pull request with only the intended changes.
+
+            Thank you for your interest in stdlib, and we look forward to your future contributions.

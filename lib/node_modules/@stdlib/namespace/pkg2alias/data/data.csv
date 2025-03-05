@@ -1480,7 +1480,7 @@
 "@stdlib/math/base/special/truncn",base.truncn
 "@stdlib/math/base/special/truncsd",base.truncsd
 "@stdlib/number/uint32/base/to-int32",base.uint32ToInt32
-"@stdlib/math/base/ops/umul",base.umul
+"@stdlib/number/uint32/base/mul",base.umul
 "@stdlib/math/base/ops/umuldw",base.umuldw
 "@stdlib/string/base/uncapitalize",base.uncapitalize
 "@stdlib/string/base/uppercase",base.uppercase
