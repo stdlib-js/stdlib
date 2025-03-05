@@ -1,0 +1,35 @@
+
+{{alias}}( x )
+    Evaluates the natural logarithm of `1+x`.
+
+    For `x < -1`, the function returns `NaN`, as the natural logarithm is not
+    defined for negative numbers.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    y: number
+        Function value.
+
+    Examples
+    --------
+    > var y = {{alias}}( 4.0 )
+    ~1.609
+    > y = {{alias}}( -1.0 )
+    -Infinity
+    > y = {{alias}}( 0.0 )
+    0.0
+    > y = {{alias}}( -0.0 )
+    -0.0
+    > y = {{alias}}( -2.0 )
+    NaN
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+
