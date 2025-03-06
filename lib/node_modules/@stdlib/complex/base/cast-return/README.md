@@ -46,7 +46,7 @@ Returns a function which wraps a function and casts a function's return value to
 
 ```javascript
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
-var addf = require( '@stdlib/math/base/ops/addf' );
+var addf = require( '@stdlib/number/float32/base/add' );
 
 var f = castReturn( addf, 2, Complex64 );
 // returns <Function>
@@ -85,7 +85,7 @@ The function accepts the following arguments:
 
 ```javascript
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
-var addf = require( '@stdlib/math/base/ops/addf' );
+var addf = require( '@stdlib/number/float32/base/add' );
 var realf = require( '@stdlib/complex/float32/real' );
 var imagf = require( '@stdlib/complex/float32/imag' );
 var castReturn = require( '@stdlib/complex/base/cast-return' );
