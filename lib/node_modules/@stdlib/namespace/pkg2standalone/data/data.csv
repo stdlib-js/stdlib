@@ -1097,7 +1097,7 @@
 "@stdlib/stats/strided/dnanmax","@stdlib/stats-strided-dnanmax"
 "@stdlib/stats/strided/dnanmaxabs","@stdlib/stats-strided-dnanmaxabs"
 "@stdlib/stats/strided/dnanmean","@stdlib/stats-strided-dnanmean"
-"@stdlib/stats/base/dnanmeanors","@stdlib/stats-base-dnanmeanors"
+"@stdlib/stats/strided/dnanmeanors","@stdlib/stats-strided-dnanmeanors"
 "@stdlib/stats/base/dnanmeanpn","@stdlib/stats-base-dnanmeanpn"
 "@stdlib/stats/base/dnanmeanpw","@stdlib/stats-base-dnanmeanpw"
 "@stdlib/stats/base/dnanmeanwd","@stdlib/stats-base-dnanmeanwd"
