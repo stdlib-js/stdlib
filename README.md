@@ -54,13 +54,13 @@ limitations under the License.
 
 We believe in a future in which the web is a preferred environment for numerical computation. To help realize this future, we've built stdlib.
 
-stdlib ([/ˈstændərd lɪb/][ipa-english] "standard lib") is a standard library with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js. The library provides a collection of robust, high performance libraries for mathematics, statistics, data processing, streams, and more and includes many of the utilities you would expect from a standard library.
+stdlib ([/ˈstændərd lɪb/][ipa-english] "standard lib") is a standard library with an emphasis on numerical and scientific computation, written in JavaScript and (C) language for execution in browsers and in Node.js. The library provides a collection of robust, high performance libraries for mathematics, statistics, data processing, streams and many more includes many of the utilities you would expect from a standard library.
 
 What sets stdlib apart is its fully decomposable architecture, which allows you to swap out and mix and match APIs and functionality to cater to your exact preferences and use cases.
 
 When you use stdlib, you can be confident that you are using the most thorough, rigorous, well-written, studied, documented, tested, measured, and high-quality code available.
 
-Want to join us in bringing numerical computing to the web? **Start by starring the project.** :star2:
+Want to join us in bringing numerical computing to the web? **Start by starring the project.** :start:
 
 Explore this GitHub repository for stdlib's source code and documentation. For guidance on developing stdlib, refer to the [development guide][stdlib-development].
 
@@ -84,37 +84,37 @@ Thank you for being a part of our community! Your support is invaluable to us!
 
 ## Features
 
--   150+ [special math functions][@stdlib/math/base/special].
+-   150+ features [special math functions][@stdlib/math/base/special].
 
     <div class="image" align="center">
         <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@203839353bc74297fe641207270f7917d2bda560/docs/assets/readme/base_special_math.png" alt="Demo showcasing special math functions">
     </div>
 
--   35+ [probability distributions][@stdlib/stats/base/dists], with support for evaluating probability density functions (PDFs), cumulative distribution functions (CDFs), quantiles, moments, and more.
+-   35+ features [probability distributions][@stdlib/stats/base/dists], with support for evaluating probability density functions (PDFs), cumulative distribution functions (CDFs), quantiles, moments, and more.
 
     <div class="image" align="center">
         <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e13885087939c064c69aa43ee80ea52710de5591/docs/assets/readme/base_dists.png" alt="Demo showcasing probability distributions">
     </div>
 
--   40+ [seedable pseudorandom number generators][@stdlib/random/base] (PRNGs).
+-   40+ features [seedable pseudorandom number generators][@stdlib/random/base] (PRNGs).
 
     <div class="image" align="center">
         <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@83dcd0fad98883320a8b1efc801b2fc1ed2a003d/docs/assets/readme/base_prngs.png" alt="Demo showcasing PRNGs">
     </div>
 
--   200+ general [utilities][@stdlib/utils] for data transformation, functional programming, and asynchronous control flow.
+-   200+ featutres [utilities][@stdlib/utils] for data transformation, functional programming, and asynchronous control flow.
 
     <div class="image" align="center">
         <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e6eeea31e49d6db1b6f57ae59d2988d4b427e285/docs/assets/readme/utils.png" alt="Demo showcasing general utilities">
     </div>
 
--   200+ [assertion utilities][@stdlib/assert] for data validation and feature detection.
+-   200+ featiures [assertion utilities][@stdlib/assert] for data validation and feature detection.
 
     <div class="image" align="center">
         <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@6970c8b4eb546a10712734d225c15863db9b2c92/docs/assets/readme/assert.png" alt="Demo showcasing assertion utilities">
     </div>
 
--   50+ [sample datasets][@stdlib/datasets] for testing and development.
+-   50+ features [sample datasets][@stdlib/datasets] for testing and development.
 
     <div class="image" align="center">
         <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@f71a38e62247e31dc47d248f6f1b3e434abeb971/docs/assets/readme/datasets.png" alt="Demo showcasing sample datasets">
@@ -123,25 +123,25 @@ Thank you for being a part of our community! Your support is invaluable to us!
 -   A [plot API][@stdlib/plot/ctor] for data visualization and exploratory data analysis.
 
     <div class="image" align="center">
-        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@39d75174b24ea2a84828d9624643776a164478e4/docs/assets/readme/plot.png" alt="Demo showcasing plot API">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@39d75174b24ea2a84828d9624643776a164478e4/docs/assets/readme/plot.png" alt="Demo Showcasing Plot APIs">
     </div>
 
 -   Native add-ons for interfacing with BLAS libraries, with pure JavaScript fallbacks.
 
     <div class="image" align="center">
-        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@efede6af3ef957da08838903b0558441263adf85/docs/assets/readme/base_blas.png" alt="Demo showcasing BLAS APIs">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@efede6af3ef957da08838903b0558441263adf85/docs/assets/readme/base_blas.png" alt="Demo Showcasing BLAS APIs">
     </div>
 
 -   A [benchmark framework][@stdlib/bench/harness] supporting TAP.
 
     <div class="image" align="center">
-        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@4833049f8d1895585bd51ec6fa97b8ca0d37c6fb/docs/assets/readme/benchmark.gif" alt="Demo showcasing benchmark framework">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@4833049f8d1895585bd51ec6fa97b8ca0d37c6fb/docs/assets/readme/benchmark.gif" alt="Demo Showcasing Benchmark Framework">
     </div>
 
 -   REPL environment with integrated help and examples.
 
     <div class="image" align="center">
-        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@3864ae6f86bbc215956c0e667d82d49a6eaca780/docs/assets/readme/repl.gif" alt="Demo showcasing REPL environment">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@3864ae6f86bbc215956c0e667d82d49a6eaca780/docs/assets/readme/repl.gif" alt="Demo Showcasing REPL Environment">
     </div>
 
 -   Can be bundled using [Browserify][browserify], [Webpack][webpack], and other bundlers for use in web browsers.
@@ -166,11 +166,11 @@ While this project's installation instructions defaults to using [npm][npm] for 
 
 ### User Stories
 
--   I want to perform **data analysis** and **data science** tasks in JavaScript and Node.js, similar to how I might use Python, Julia, R, and MATLAB.
+-   I want to perform **Data Analysis** and **Data Science** tasks in JavaScript and Node.js, similar to how I might use Python, Julia, R, and MATLAB.
 
     -   Install the entire project as a [command-line utility](#install_command_line_utility).
 
--   I am building a **web application**.
+-   I am building a **Web Application**.
 
     -   I plan on using [Browserify][browserify], [Webpack][webpack], and other bundlers for use in web browsers.
 
@@ -196,7 +196,7 @@ While this project's installation instructions defaults to using [npm][npm] for 
 
             When bundling, installing a top-level namespace should not be a concern, as individual functionality can still be independently required/imported. Project installation times may, however, be somewhat slower.
 
--   I am building a [Node.js][node-js] **server application**.
+-   I am building a [Node.js][node-js] **Server Application**.
 
     -   I am interested in using various functionality found in stdlib.
 
@@ -498,8 +498,8 @@ Installing and running stdlib for use in [Node.js][node-js] **requires** the fol
 
 Most functionality in stdlib is implemented in JavaScript and no further prerequisites are required to use stdlib (i.e., you can safely avoid installing any additional prerequisites); however, some implementations try to capture performance benefits by using [native bindings][node-js-add-ons] and/or [WebAssembly][webassembly]. While **not** required to run stdlib, as **every** stdlib implementation has a JavaScript fallback, the following dependencies are **required** for building native add-ons, including linking to BLAS and LAPACK libraries:
 
--   [GNU make][make]: development utility and task runner
--   [GNU bash][bash]: an sh-compatible shell
+-   [GNU make][make]: development utility and task runner.
+-   [GNU bash][bash]: an sh-compatible shell.
 -   [gcc & g++][gcc] or [Clang][clang]: C/C++ compilation and linking (g++ version `>= 4.8`; clang version `>= 3.5`, Xcode version `>=8.3.1` on OS X)
 -   [gfortran][gfortran]: Fortran compilation and linking (version `>= 4.8`)
 
@@ -509,8 +509,8 @@ While **not** required to run stdlib, the following dependencies are **required*
 
 The following external libraries can be automatically downloaded and compiled from source using `make`:
 
--   [OpenBLAS][openblas]: optimized BLAS library
--   [Electron][electron]: framework for cross-platform desktop applications
+-   [OpenBLAS][openblas]: optimized BLAS library.
+-   [Electron][electron]: framework for cross-platform desktop applications.
 
 * * *
 
