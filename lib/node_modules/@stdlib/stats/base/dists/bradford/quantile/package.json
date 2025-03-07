@@ -61,11 +61,6 @@
     "continuous",
     "quantile",
     "percentile",
-    "success probability",
-    "bradford",
-    "bradford distribution",
-    "bradford quantile",
-    "bradford inverse cdf",
-    "bradford inverse cumulative distribution function"
+    "bradford"
   ]
 }
