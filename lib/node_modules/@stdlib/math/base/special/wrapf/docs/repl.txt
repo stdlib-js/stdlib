@@ -1,0 +1,43 @@
+
+{{alias}}( v, min, max )
+    Wraps a value on the half-open interval `[min,max)`.
+
+    The function does not distinguish between positive and negative zero. Where
+    appropriate, the function returns positive zero.
+
+    If provided `NaN` for any argument, the function returns `NaN`.
+
+    Parameters
+    ----------
+    v: number
+        Value to wrap.
+
+    min: number
+        Minimum value.
+
+    max: number
+        Maximum value.
+
+    Returns
+    -------
+    y: number
+        Wrapped value.
+
+    Examples
+    --------
+    > var y = {{alias}}( 3.14, 0.0, 5.0 )
+    3.14
+    > y = {{alias}}( -3.14, 0.0, 5.0 )
+    ~1.86
+    > y = {{alias}}( 3.14, 0.0, 3.0 )
+    ~0.14
+    > y = {{alias}}( -0.0, 0.0, 5.0 )
+    0.0
+    > y = {{alias}}( 0.0, -3.14, -0.0 )
+    -3.14
+    > y = {{alias}}( NaN, 0.0, 5.0 )
+    NaN
+
+    See Also
+    --------
+
