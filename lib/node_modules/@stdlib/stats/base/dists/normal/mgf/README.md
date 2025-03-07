@@ -156,7 +156,104 @@ for ( i = 0; i < 10; i++ ) {
 
 <section class="references">
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
 </section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/normal/mgf.h"
+```
+
+#### stdlib_base_dists_normal_mgf( t, mu, sigma )
+
+Evaluates the [moment-generating function][mgf] (MGF) for a [normal][normal-distribution] distribution with parameters `mu` (mean) and `sigma` (standard deviation).
+
+```c
+double y = stdlib_base_dists_normal_mgf( 2.0, 0.0, 1.0 );
+// returns ~7.389
+```
+
+The function accepts the following arguments:
+
+-   **t**: `[in] double` input value.
+-   **mu**: `[in] double` mean.
+-   **sigma**: `[in] double` standard deviation.
+
+```c
+double stdlib_base_dists_normal_mgf( const double t, const double mu, const double sigma );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/normal/mgf.h"
+#include "stdlib/constants/float64/eps.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double sigma;
+    double mu;
+    double t;
+    double y;
+    int i;
+
+    for ( i = 0; i < 10; i++ ) {
+        t = random_uniform( 0.0, 1.0 );
+        mu = random_uniform( -50.0, 50.0 );
+        sigma = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 20.0 );
+        y = stdlib_base_dists_normal_mgf( t, mu, sigma );
+        printf( "t: %lf, µ: %lf, σ: %lf, M_X(t;µ,σ): %lf\n", t, mu, sigma, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- /.references -->
 

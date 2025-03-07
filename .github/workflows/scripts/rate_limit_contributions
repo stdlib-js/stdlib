@@ -123,10 +123,17 @@ main() {
 	pr_details=$(github_api "GET" "/repos/${repo_owner}/${repo_name}/pulls/${pr_number}")
 	good_first_pr=$(echo "${pr_details}" | jq -r '.labels | any(.name == "Good First PR")')
 
+	# Check if the PR is labeled "Good First PR":
+	if [ "${good_first_pr}" != "true" ]; then
+		echo "PR is not labeled 'Good First PR'."
+		print_success
+		exit 0
+	fi
+
 	pr_author=$(echo "${pr_details}" | jq -r '.user.login')
 
 	# Fetch other PRs of the same user:
-	user_prs=$(github_api "GET" "/search/issues?q=state%3Aopen+author%3A${pr_author}+type%3Apr")
+	user_prs=$(github_api "GET" "/search/issues?q=repo%3A${repo_owner}%2F${repo_name}+state%3Aopen+author%3A${pr_author}+type%3Apr")
 
 	# Count number of PRs labeled "Good First PR":
 	num_good_first_prs=$(echo "${user_prs}" | jq -r '.items | map( select( .labels | any( .name == "Good First PR" ))) | length')
