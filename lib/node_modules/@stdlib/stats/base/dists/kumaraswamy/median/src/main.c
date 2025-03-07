@@ -21,15 +21,15 @@
 #include "stdlib/math/base/special/pow.h"
 
 /**
-* Returns the median of a Kumaraswamy distribution.
+* Returns the median of a Kumaraswamy's double bounded distribution.
 *
 * @param a       first shape parameter
 * @param b       second shape parameter
 * @return        median
 *
 * @example
-* double y = stdlib_base_dists_kumaraswamy_median( 2.0, 3.0 );
-* // returns 1.0
+* double y = stdlib_base_dists_kumaraswamy_median( 0.5, 1.0 );
+* // returns 0.25
 */
 double stdlib_base_dists_kumaraswamy_median( const double a, const double b ) {
 	if (
@@ -39,5 +39,5 @@ double stdlib_base_dists_kumaraswamy_median( const double a, const double b ) {
 	) {
 		return 0.0/0.0; // NaN
 	}
-	return 1.0 - stdlib_base_pow( 0.5, 1.0 / b );
+	return stdlib_base_pow( 1.0 - stdlib_base_pow( 2.0, -1.0/b ), 1.0/a );
 }
