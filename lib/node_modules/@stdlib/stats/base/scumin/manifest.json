@@ -1,6 +1,7 @@
 {
   "options": {
-    "task": "build"
+    "task": "build",
+    "wasm": false
   },
   "fields": [
     {
@@ -27,19 +28,20 @@
   "confs": [
     {
       "task": "build",
+      "wasm": false,
       "src": [
-        "./src/scumin.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
         "@stdlib/math/base/assert/is-negative-zerof",
+        "@stdlib/math/base/assert/is-nanf",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
@@ -48,34 +50,54 @@
     },
     {
       "task": "benchmark",
+      "wasm": false,
       "src": [
-        "./src/scumin.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/math/base/assert/is-negative-zerof",
+        "@stdlib/math/base/assert/is-nanf"
+      ]
+    },
+    {
+      "task": "examples",
+      "wasm": false,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
         "@stdlib/math/base/assert/is-nanf",
         "@stdlib/math/base/assert/is-negative-zerof"
       ]
     },
     {
-      "task": "examples",
+      "task": "",
+      "wasm": true,
       "src": [
-        "./src/scumin.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
         "@stdlib/math/base/assert/is-nanf",
         "@stdlib/math/base/assert/is-negative-zerof"
       ]

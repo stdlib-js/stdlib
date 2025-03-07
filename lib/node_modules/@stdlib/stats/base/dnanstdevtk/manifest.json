@@ -1,5 +1,7 @@
 {
-  "options": {},
+  "options": {
+    "task": "build"
+  },
   "fields": [
     {
       "field": "src",
@@ -24,6 +26,45 @@
   ],
   "confs": [
     {
+      "task": "build",
+      "src": [
+        "./src/dnanstdevtk.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-double",
+        "@stdlib/napi/argv-strided-float64array",
+        "@stdlib/stats/base/dnanvariancetk",
+        "@stdlib/napi/create-double"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/dnanstdevtk.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/stats/base/dnanvariancetk"
+      ]
+    },
+    {
+      "task": "examples",
       "src": [
         "./src/dnanstdevtk.c"
       ],

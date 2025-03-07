@@ -34,7 +34,7 @@ int main( void ) {
 
 	for ( i = 0; i < 25; i++ ) {
 		x = random_uniform( 0.0, 100.0 );
-		lambda = random_uniform( 0.0, 100.0 ) + STDLIB_CONSTANT_FLOAT64_EPS;
+		lambda = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 100.0 );
 		y = stdlib_base_dists_exponential_logcdf( x, lambda );
 		printf( "x: %lf, λ: %lf, ln(F(x;λ)): %lf\n", x, lambda, y );
 	}

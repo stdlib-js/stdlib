@@ -36,31 +36,13 @@ Applies a plane rotation.
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 var zy = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
 zdrot( zx.length, zx, 1, zy, 1, 0.8, 0.6 );
-
-var z = zy.get( 0 );
-// returns <Complex128>
-
-var re = real( z );
-// returns ~-0.6
-
-var im = imag( z );
-// returns ~-1.2
-
-z = zx.get( 0 );
-// returns <Complex128>
-
-re = real( z );
-// returns ~0.8
-
-im = imag( z );
-// returns ~1.6
+// zx => <Complex128Array>[ ~0.8, ~1.6, ~2.4, ~3.2, 4.0, ~4.8, ~5.6, ~6.4 ]
+// zy => <Complex128Array>[ ~-0.6, ~-1.2, ~-1.8, ~-2.4, -3.0, ~-3.6, ~-4.2, ~-4.8 ]
 ```
 
 The function has the following parameters:
@@ -75,31 +57,13 @@ The `N` and stride parameters determine how values from `zx` and `zy` are access
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 var zy = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
 zdrot( 2, zx, 2, zy, 2, 0.8, 0.6 );
-
-var z = zy.get( 0 );
-// returns <Complex128>
-
-var re = real( z );
-// returns ~-0.6
-
-var im = imag( z );
-// returns ~-1.2
-
-z = zx.get( 0 );
-// returns <Complex128>
-
-re = real( z );
-// returns ~0.8
-
-im = imag( z );
-// returns ~1.6
+// zx => <Complex128Array>[ ~0.8, ~1.6, 3.0, 4.0, 4.0, ~4.8, 7.0, 8.0 ]
+// zy => <Complex128Array>[ ~-0.6, ~-1.2,  0.0, 0.0, -3.0, ~-3.6,  0.0, 0.0 ]
 ```
 
 Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][mdn-typed-array] views.
@@ -108,8 +72,6 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 // Initial arrays...
 var zx0 = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
@@ -120,24 +82,8 @@ var zx1 = new Complex128Array( zx0.buffer, zx0.BYTES_PER_ELEMENT*1 ); // start a
 var zy1 = new Complex128Array( zy0.buffer, zy0.BYTES_PER_ELEMENT*2 ); // start at 3rd element
 
 zdrot( 2, zx1, -2, zy1, 1, 0.8, 0.6 );
-
-var z = zy0.get( 2 );
-// returns <Complex128>
-
-var re = real( z );
-// returns ~-4.2
-
-var im = imag( z );
-// returns ~-4.8
-
-z = zx0.get( 3 );
-// returns <Complex128>
-
-re = real( z );
-// returns ~5.6
-
-im = imag( z );
-// returns ~6.4
+// zx0 => <Complex128Array>[ 1.0, 2.0, ~2.4, ~3.2, 5.0, 6.0, ~5.6, ~6.4 ]
+// zy0 => <Complex128Array>[ 0.0, 0.0,  0.0, 0.0, ~-4.2, ~-4.8, ~-1.8, ~-2.4 ]
 ```
 
 #### zdrot.ndarray( N, zx, strideX, offsetX, zy, strideY, offsetY, c, s )
@@ -146,31 +92,13 @@ Applies a plane rotation using alternative indexing semantics.
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var zy = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
 zdrot.ndarray( zx.length, zx, 1, 0, zy, 1, 0, 0.8, 0.6 );
-
-var z = zy.get( 0 );
-// returns <Complex128>
-
-var re = real( z );
-// returns ~-0.6
-
-var im = imag( z );
-// returns ~-1.2
-
-z = zx.get( 0 );
-// returns <Complex128>
-
-re = real( z );
-// returns ~0.8
-
-im = imag( z );
-// returns ~1.6
+// zx => <Complex128Array>[ ~0.8, ~1.6, ~2.4, ~3.2, 4.0, ~4.8 ]
+// zy => <Complex128Array>[ ~-0.6, ~-1.2, ~-1.8, ~-2.4, -3.0, ~-3.6 ]
 ```
 
 The function has the following additional parameters:
@@ -182,31 +110,13 @@ While [`typed array`][mdn-typed-array] views mandate a view offset based on the 
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 var zy = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
 zdrot.ndarray( 2, zx, 2, 1, zy, 2, 1, 0.8, 0.6 );
-
-var z = zy.get( 3 );
-// returns <Complex128>
-
-var re = real( z );
-// returns ~-4.2
-
-var im = imag( z );
-// returns ~-4.8
-
-z = zx.get( 1 );
-// returns <Complex128>
-
-re = real( z );
-// returns ~2.4
-
-im = imag( z );
-// returns ~3.2
+// zx => <Complex128Array>[ 1.0, 2.0, ~2.4, ~3.2, 5.0, 6.0, ~5.6, ~6.4 ]
+// zy => <Complex128Array>[ 0.0, 0.0, ~-1.8, ~-2.4, 0.0, 0.0, ~-4.2, ~-4.8 ]
 ```
 
 </section>

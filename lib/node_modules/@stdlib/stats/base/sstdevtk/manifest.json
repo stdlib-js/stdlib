@@ -1,6 +1,7 @@
 {
   "options": {
-    "task": "build"
+    "task": "build",
+    "wasm": false
   },
   "fields": [
     {
@@ -27,55 +28,79 @@
   "confs": [
     {
       "task": "build",
+      "wasm": false,
       "src": [
-        "./src/sstdevtk.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/math/base/special/sqrtf",
+        "@stdlib/stats/base/svariancetk",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-float",
         "@stdlib/napi/argv-strided-float32array",
-        "@stdlib/stats/base/svariancetk",
         "@stdlib/napi/create-double"
       ]
     },
     {
       "task": "benchmark",
+      "wasm": false,
       "src": [
-        "./src/sstdevtk.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/math/base/special/sqrtf",
         "@stdlib/stats/base/svariancetk"
       ]
     },
     {
       "task": "examples",
+      "wasm": false,
       "src": [
-        "./src/sstdevtk.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/math/base/special/sqrtf",
+        "@stdlib/stats/base/svariancetk"
+      ]
+    },
+    {
+      "task": "",
+      "wasm": true,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/math/base/special/sqrtf",
         "@stdlib/stats/base/svariancetk"
       ]
     }

@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/stats/base/dmskmin.h"
+#include "stdlib/blas/base/shared.h"
 #include "stdlib/napi/export.h"
 #include "stdlib/napi/argv.h"
 #include "stdlib/napi/argv_int64.h"
@@ -39,7 +40,7 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_INT64( env, strideMask, argv, 4 );
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, strideX, argv, 1 );
 	STDLIB_NAPI_ARGV_STRIDED_UINT8ARRAY( env, Mask, N, strideMask, argv, 3 );
-	STDLIB_NAPI_CREATE_DOUBLE( env, stdlib_strided_dmskmin( N, X, strideX, Mask, strideMask ), v );
+	STDLIB_NAPI_CREATE_DOUBLE( env, API_SUFFIX(stdlib_strided_dmskmin)( N, X, strideX, Mask, strideMask ), v );
 	return v;
 }
 
@@ -59,7 +60,7 @@ static napi_value addon_method( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_INT64( env, offsetMask, argv, 6 );
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, strideX, argv, 1 );
 	STDLIB_NAPI_ARGV_STRIDED_UINT8ARRAY( env, Mask, N, strideMask, argv, 4 );
-	STDLIB_NAPI_CREATE_DOUBLE( env, stdlib_strided_dmskmin_ndarray( N, X, strideX, offsetX, Mask, strideMask, offsetMask ), v );
+	STDLIB_NAPI_CREATE_DOUBLE( env, API_SUFFIX(stdlib_strided_dmskmin_ndarray)( N, X, strideX, offsetX, Mask, strideMask, offsetMask ), v );
 	return v;
 }
 

@@ -167,7 +167,7 @@ double out = stdlib_base_dists_bernoulli_entropy( 0.1 );
 
 The function accepts the following arguments:
 
--   **p**: `[in] double` success probability
+-   **p**: `[in] double` success probability.
 
 ```c
 double stdlib_base_dists_bernoulli_entropy( const double p );
