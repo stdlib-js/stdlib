@@ -20,7 +20,6 @@
 #include "stdlib/constants/float64/eps.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include <math.h>
 
 static double random_uniform( const double min, const double max ) {
 	double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
@@ -39,7 +38,7 @@ int main( void ) {
 		x = random_uniform( 0.0, 30.0 );
 		a = random_uniform( 0.0, 10.0 );
 		b = random_uniform( a+STDLIB_CONSTANT_FLOAT64_EPS, 40.0 );
-		c = a + random_uniform( 0.0, b - a );
+		c = random_uniform( a, b );
 		y = stdlib_base_dists_triangular_pdf( x, a, b, c );
 		printf( "x: %lf, a: %lf, b: %lf, c: %lf, f(x;a,b,c): %lf\n", x, a, b, c, y );
 	}

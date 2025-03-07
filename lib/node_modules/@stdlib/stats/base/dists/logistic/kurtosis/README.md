@@ -159,7 +159,7 @@ for ( i = 0; i < 10; i++ ) {
 
 #### stdlib_base_dists_logistic_kurtosis( mu, s )
 
-Returns the kurtosis for a logistic distribution with location `mu` and scale `s`.
+Returns the excess kurtosis for a logistic distribution with location `mu` and scale `s`.
 
 ```c
 double out = stdlib_base_dists_logistic_kurtosis( 0.0, 1.0 );

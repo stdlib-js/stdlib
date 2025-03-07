@@ -25,10 +25,10 @@
 * @param a   minimum support
 * @param b   maximum support
 * @param c   mode
-* @returns   expected value
+* @return    expected value
 *
 * @example
-* double v = mean( 0.0, 10.0, 5.0 );
+* double v = stdlib_base_dists_triangular_mean( 0.0, 10.0, 5.0 );
 * // returns 5.0
 */
 double stdlib_base_dists_triangular_mean( const double a, const double b, const double c ) {

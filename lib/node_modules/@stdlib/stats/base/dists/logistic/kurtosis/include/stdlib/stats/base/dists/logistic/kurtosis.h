@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Returns the kurtosis for a logistic distribution with location `mu` and scale `s`.
+* Returns the excess kurtosis for a logistic distribution with location `mu` and scale `s`.
 */
 double stdlib_base_dists_logistic_kurtosis( const double mu, const double s );
 
