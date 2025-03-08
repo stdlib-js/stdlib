@@ -20,7 +20,7 @@ limitations under the License.
 
 # sincos
 
-> Simultaneously compute the [sine][@stdlib/math/base/special/sin] and [cosine][@stdlib/math/base/special/cos] of a number.
+> Simultaneously compute the [sine][@stdlib/math/base/special/sin] and [cosine][@stdlib/math/base/special/cos] of an angle measured in radians.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var sincos = require( '@stdlib/math/base/special/sincos' );
 
 #### sincos( x )
 
-Simultaneously computes the [sine][@stdlib/math/base/special/sin] and [cosine][@stdlib/math/base/special/cos] of a `number` (in radians).
+Simultaneously computes the [sine][@stdlib/math/base/special/sin] and [cosine][@stdlib/math/base/special/cos] of an angle measured in radians.
 
 ```javascript
 var v = sincos( 0.0 );
@@ -47,7 +47,7 @@ v = sincos( -3.141592653589793/6.0 );
 
 #### sincos.assign( x, out, stride, offset )
 
-Simultaneously computes the [sine][@stdlib/math/base/special/sin] and [cosine][@stdlib/math/base/special/cos] of a `number` (in radians) and assigns results to a provided output array.
+Simultaneously computes the [sine][@stdlib/math/base/special/sin] and [cosine][@stdlib/math/base/special/cos] of an angle measured in radians and assigns the results to a provided output array.
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -116,7 +116,7 @@ for ( i = 0; i < x.length; i++ ) {
 
 #### stdlib_base_sincos( x, &sine, &cosine )
 
-Simultaneously computes the [sine][@stdlib/math/base/special/sin] and [cosine][@stdlib/math/base/special/cos] of a `number` (in radians).
+Simultaneously computes the [sine][@stdlib/math/base/special/sin] and [cosine][@stdlib/math/base/special/cos] of an angle measured in radians.
 
 ```c
 double cosine;

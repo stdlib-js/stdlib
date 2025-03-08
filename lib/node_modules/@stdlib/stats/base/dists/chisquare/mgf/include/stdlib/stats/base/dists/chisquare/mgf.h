@@ -27,12 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Evaluates the moment-generating function (MGF) for a chi-squared distribution
-* with degrees of freedom `k` at a value `t`.
-*
-* @param t    input value
-* @param k    degrees of freedom (must be non-negative)
-* @return     evaluated MGF
+* Evaluates the moment-generating function (MGF) for a chi-squared distribution with degrees of freedom `k` at a value `t`.
 */
 double stdlib_base_dists_chisquare_mgf( const double t, const double k );
 

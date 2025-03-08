@@ -90,25 +90,6 @@ function print_results( iterations, elapsed )
 end
 
 """
-	sincos( x )
-
-Compute the sine and cosine of a number (since sincos is not directly exposed in julia).
-
-# Arguments
-
-* `x`: argument, in radians
-
-# Examples
-
-``` julia
-julia> sincos( 0.0 )
-```
-"""
-function sincos( x )
-	[ sin( x ), cos( x ) ];
-end
-
-"""
 	benchmark()
 
 Run a benchmark.
@@ -126,7 +107,7 @@ julia> out = benchmark();
 ```
 """
 function benchmark()
-	t = BenchmarkTools.@benchmark $sincos( (20.0*rand()) - 10.0 ) samples=1e6
+	t = BenchmarkTools.@benchmark sincos( (20.0*rand()) - 10.0 ) samples=1e6
 
 	# Compute the total "elapsed" time and convert from nanoseconds to seconds:
 	s = sum( t.times ) / 1.0e9;

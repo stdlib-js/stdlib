@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2020 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -90,15 +90,18 @@ static float rand_float( void ) {
 */
 static double benchmark( void ) {
 	double elapsed;
-	float x;
-	float y;
+	float x[ 100 ];
 	double t;
+	float y;
 	int i;
+
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = 100000.0f * rand_float();
+	}
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = rand_float() * 100000.0f;
-		y = 1.0f / sqrtf( x );
+		y = 1.0f / sqrtf( x[ i % 100 ] );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;
