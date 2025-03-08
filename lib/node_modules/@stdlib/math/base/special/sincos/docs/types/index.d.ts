@@ -24,7 +24,7 @@ import { Collection } from '@stdlib/types/array';
 
 interface SinCos {
 	/**
-	* Simultaneously computes the sine and cosine of a number.
+	* Simultaneously computes the sine and cosine of an angle measured in radians.
 	*
 	* @param x - input value (in radians)
 	* @returns sine and cosine
@@ -48,7 +48,7 @@ interface SinCos {
 	( x: number ): Array<number>;
 
 	/**
-	* Simultaneously computes the sine and cosine of a number.
+	* Simultaneously computes the sine and cosine of an angle measured in radians and assigns the results to a provided output array.
 	*
 	* @param x - input value (in radians)
 	* @param out - output array
@@ -71,7 +71,7 @@ interface SinCos {
 }
 
 /**
-* Simultaneously computes the sine and cosine of a number.
+* Simultaneously computes the sine and cosine of an angle measured in radians.
 *
 * @param x - input value (in radians)
 * @returns sine and cosine

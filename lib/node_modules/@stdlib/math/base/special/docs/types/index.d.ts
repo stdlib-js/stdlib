@@ -6784,7 +6784,7 @@ interface Namespace {
 	sinc: typeof sinc;
 
 	/**
-	* Simultaneously computes the sine and cosine of a number.
+	* Simultaneously computes the sine and cosine of an angle measured in radians.
 	*
 	* @param x - input value (in radians)
 	* @returns sine and cosine
