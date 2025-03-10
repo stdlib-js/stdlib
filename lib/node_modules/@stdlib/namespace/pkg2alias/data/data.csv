@@ -193,7 +193,7 @@
 "@stdlib/math/base/special/cceilf",base.cceilf
 "@stdlib/math/base/special/cceiln",base.cceiln
 "@stdlib/math/base/special/ccis",base.ccis
-"@stdlib/math/base/ops/cdiv",base.cdiv
+"@stdlib/complex/float64/base/div",base.cdiv
 "@stdlib/math/base/special/ceil",base.ceil
 "@stdlib/math/base/special/ceil2",base.ceil2
 "@stdlib/math/base/special/ceil10",base.ceil10
