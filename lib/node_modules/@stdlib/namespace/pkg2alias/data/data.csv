@@ -805,7 +805,7 @@
 "@stdlib/math/base/special/identity",base.identity
 "@stdlib/math/base/special/identityf",base.identityf
 "@stdlib/number/int32/base/mul",base.imul
-"@stdlib/math/base/ops/imuldw",base.imuldw
+"@stdlib/number/int32/base/muldw",base.imuldw
 "@stdlib/slice/base/int2slice",base.int2slice
 "@stdlib/number/int32/base/to-uint32",base.int32ToUint32
 "@stdlib/math/base/special/inv",base.inv
