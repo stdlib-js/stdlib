@@ -45,7 +45,7 @@ double stdlib_base_dists_geometric_quantile( const double r, const double p ) {
 	) {
 		return 0.0 / 0.0; // NaN
 	}
-	if( r == 1.0 ){
+	if ( r == 1.0 ) {
 		return STDLIB_CONSTANT_FLOAT64_PINF;
 	}
 	return stdlib_base_max( 0.0, stdlib_base_floor( stdlib_base_ln( 1.0 - r ) / stdlib_base_ln( 1.0 - p ) ) );
