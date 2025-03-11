@@ -101,13 +101,13 @@ static double benchmark( void ) {
 	for ( i = 0; i < ITERATIONS; i++ ) {
 		x = ( 20.0 * rand_double() ) - 10.0;
 		stdlib_base_sincos( x, &sine, &cosine );
-		if ( cosine != cosine || sine != sine) {
+		if ( cosine != cosine || sine != sine ) {
 			printf( "unexpected results\n" );
 			break;
 		}
 	}
 	elapsed = tic() - t;
-	if ( cosine != cosine || sine != sine) {
+	if ( cosine != cosine || sine != sine ) {
 		printf( "unexpected results\n" );
 	}
 	return elapsed;

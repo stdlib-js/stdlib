@@ -199,6 +199,7 @@ jobs:
       - name: 'Lint against EditorConfig'
         id: lint-editorconfig
         run: |
+          set -o pipefail
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' ' ')
           make lint-editorconfig-files FILES="${files}" 2>&1 | tee lint_editorconfig_errors.txt
 
@@ -208,6 +209,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
         run: |
+          strip_ansi() {
+            sed -r 's/\x1B\[[0-9;]*[mK]//g'
+          }
+
           BODY_FILE="$GITHUB_WORKSPACE/lint_issue_body.md"
           cat << EOF > "$BODY_FILE"
           ## EditorConfig Linting Failures
@@ -223,14 +228,15 @@ jobs:
           ### Error Details
 
           \`\`\`
-          $(cat lint_editorconfig_errors.txt)
+          $(cat lint_editorconfig_errors.txt | strip_ansi)
           \`\`\`
           EOF
 
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_sub_issue" \
             'Fix EditorConfig lint errors' \
             "$BODY_FILE" \
-            "5156"
+            "5156" \
+            "Good First Issue"
 
           rm "$BODY_FILE"
 
@@ -288,8 +294,12 @@ jobs:
 
       # Lint JavaScript files:
       - name: 'Lint JavaScript files'
+        id: lint-javascript
         if: ( github.event.inputs.javascript != 'false' ) && ( success() || failure() )
         run: |
+          # If any command in a pipeline fails, the entire pipeline should fail:
+          set -o pipefail
+
           # Determine root directory:
           root=$(git rev-parse --show-toplevel)
 
@@ -309,44 +319,80 @@ jobs:
             FIX=0
           fi
 
+          # Combined error file:
+          ERR_FILE="lint_javascript_errors.txt"
+          > "$ERR_FILE"  # Initialize a clean file
+
           # Lint JavaScript source files:
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '\.js$' | grep -v -e '/examples' -e '/test' -e '/benchmark' -e '^dist/' | tr '\n' ' ')
 
           # Build native addons if present:
           packages=$(echo "${files}" | tr ' ' '\n' | sed 's/^lib\/node_modules\///g' | sed 's/\/lib\/.*//g' | sort | uniq)
           for pkg in ${packages}; do
-              if [ -f "lib/node_modules/${pkg}/binding.gyp" ]; then
-                  NODE_ADDONS_PATTERN="${pkg}" make install-node-addons
-              fi
+            if [ -f "lib/node_modules/${pkg}/binding.gyp" ]; then
+                NODE_ADDONS_PATTERN="${pkg}" make install-node-addons
+            fi
           done
 
           if [[ -n "${files}" ]]; then
-            make lint-javascript-files FIX="${FIX}" FAST_FAIL=0 FILES="${files}"
+            make lint-javascript-files FIX="${FIX}" FAST_FAIL=0 FILES="${files}" 2>&1 | tee -a "$ERR_FILE"
           fi
 
           # Lint JavaScript command-line interfaces...
           file=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '\.js$' | grep -E '/bin/cli$' | tr '\n' ' ')
           if [[ -n "${file}" ]]; then
-            make lint-javascript-files FIX="${FIX}" FAST_FAIL=0 FILES="${file}"
+            make lint-javascript-files FIX="${FIX}" FAST_FAIL=0 FILES="${file}" 2>&1 | tee -a "$ERR_FILE"
           fi
 
           # Lint JavaScript example files:
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '/examples/.*\.js$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
-            make lint-javascript-files FIX="${FIX}" FAST_FAIL=0 FILES="${files}" ESLINT_CONF="${eslint_examples_conf}"
+            make lint-javascript-files FIX="${FIX}" FAST_FAIL=0 FILES="${files}" ESLINT_CONF="${eslint_examples_conf}" 2>&1 | tee -a "$ERR_FILE"
           fi
 
           # Lint JavaScript test files:
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '/test/.*\.js$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
-            make lint-javascript-files FIX="${FIX}" FAST_FAIL=0 FILES="${files}" ESLINT_CONF="${eslint_tests_conf}"
+            make lint-javascript-files FIX="${FIX}" FAST_FAIL=0 FILES="${files}" ESLINT_CONF="${eslint_tests_conf}" 2>&1 | tee -a "$ERR_FILE"
           fi
 
           # Lint JavaScript benchmark files:
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '/benchmark/.*\.js$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
-            make lint-javascript-files FIX="${FIX}" FAST_FAIL=0 FILES="${files}" ESLINT_CONF="${eslint_benchmarks_conf}"
+            make lint-javascript-files FIX="${FIX}" FAST_FAIL=0 FILES="${files}" ESLINT_CONF="${eslint_benchmarks_conf}" 2>&1 | tee -a "$ERR_FILE"
           fi
+
+      # Create sub-issue for JavaScript lint failures:
+      - name: 'Create sub-issue for JavaScript lint failures'
+        if: failure() && contains(steps.lint-javascript.outcome, 'failure')
+        env:
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+        run: |
+          BODY_FILE="$GITHUB_WORKSPACE/lint_issue_body.md"
+          cat << EOF > "$BODY_FILE"
+          ## JavaScript Linting Failures
+
+          Linting failures were detected in the automated JavaScript lint workflow run.
+
+          ### Workflow Details
+
+          - Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          - Type: JavaScript Linting
+          - Date: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
+
+          ### Error Details
+          \`\`\`
+          $(cat lint_javascript_errors.txt)
+          \`\`\`
+          EOF
+
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_sub_issue" \
+            'Fix JavaScript lint errors' \
+            "$BODY_FILE" \
+            "5377" \
+            "Good First Issue"
+
+          rm "$BODY_FILE"
 
       # Lint Python files:
       - name: 'Lint Python files'
@@ -365,7 +411,7 @@ jobs:
       - name: 'Setup R'
         if: ( github.event.inputs.r != 'false' ) && ( success() || failure() )
         # Pin action to full length commit SHA
-        uses: r-lib/actions/setup-r@473c68190595b311a74f208fba61a8d8c0d4c247 # v2.11.1
+        uses: r-lib/actions/setup-r@14a7e741c1cb130261263aa1593718ba42cf443b # v2.11.2
         with:
           r-version: '4.3.3'
 

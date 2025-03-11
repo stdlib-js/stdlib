@@ -17,7 +17,6 @@
 */
 
 #include "stdlib/stats/base/dnanvariancetk.h"
-#include <stdint.h>
 #include <stdio.h>
 
 int main( void ) {
@@ -25,13 +24,13 @@ int main( void ) {
 	const double x[] = { 1.0, 2.0, 0.0/0.0, 3.0, 0.0/0.0, 4.0, 5.0, 6.0, 0.0/0.0, 7.0, 8.0, 0.0/0.0 };
 
 	// Specify the number of elements:
-	int64_t N = 6;
+	const int N = 6;
 
 	// Specify the stride length:
-	int64_t stride = 2;
+	const int strideX = 2;
 
 	// Compute the variance:
-	double v = stdlib_strided_dnanvariancetk( N, 1, x, stride );
+	double v = stdlib_strided_dnanvariancetk( N, 1.0, x, strideX );
 
 	// Print the result:
 	printf( "sample variance: %lf\n", v );
