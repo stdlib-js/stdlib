@@ -32,7 +32,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/number/float64/base/add",
-        "@stdlib/math/base/ops/addf",
+        "@stdlib/number/float32/base/add",
         "@stdlib/complex/float64/base/add",
         "@stdlib/complex/float32/base/add",
         "@stdlib/strided/base/function-object",
