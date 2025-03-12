@@ -1481,7 +1481,7 @@
 "@stdlib/math/base/special/truncsd",base.truncsd
 "@stdlib/number/uint32/base/to-int32",base.uint32ToInt32
 "@stdlib/number/uint32/base/mul",base.umul
-"@stdlib/math/base/ops/umuldw",base.umuldw
+"@stdlib/number/uint32/base/muldw",base.umuldw
 "@stdlib/string/base/uncapitalize",base.uncapitalize
 "@stdlib/string/base/uppercase",base.uppercase
 "@stdlib/math/base/special/vercos",base.vercos

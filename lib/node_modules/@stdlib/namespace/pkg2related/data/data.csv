@@ -1481,7 +1481,7 @@
 "@stdlib/math/base/special/truncsd","@stdlib/math/base/special/ceilsd,@stdlib/math/base/special/floorsd,@stdlib/math/base/special/roundsd,@stdlib/math/base/special/trunc"
 "@stdlib/number/uint32/base/to-int32",""
 "@stdlib/number/uint32/base/mul","@stdlib/number/int32/base/mul"
-"@stdlib/math/base/ops/umuldw","@stdlib/number/int32/base/muldw,@stdlib/number/uint32/base/mul"
+"@stdlib/number/uint32/base/muldw","@stdlib/number/int32/base/muldw,@stdlib/number/uint32/base/mul"
 "@stdlib/string/base/uncapitalize","@stdlib/string/base/capitalize"
 "@stdlib/string/base/uppercase","@stdlib/string/base/lowercase"
 "@stdlib/math/base/special/vercos","@stdlib/math/base/special/cos,@stdlib/math/base/special/versin"
