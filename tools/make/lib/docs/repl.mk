@@ -22,8 +22,8 @@
 #
 # This target generates REPL documentation.
 
-repl-docs: repl-help repl-info repl-examples repl-signatures repl-typed-signatures repl-aliases repl-alias2pkg repl-pkg2alias repl-alias2related repl-alias2standalone repl-pkg2related repl-pkg2standalone repl-standalone2pkg $(NODE_MODULES) $(SRC_DIR)/@stdlib/repl/cli/scripts/build.js
-	$(QUIET) $(NODE) "$(SRC_DIR)/@stdlib/repl/cli/scripts/build.js"
+repl-docs: repl-help repl-info repl-examples repl-signatures repl-typed-signatures repl-aliases repl-alias2pkg repl-pkg2alias repl-alias2related repl-alias2standalone repl-pkg2related repl-pkg2standalone repl-standalone2pkg $(NODE_MODULES) $(SRC_DIR)/@stdlib/repl/scripts/build.js
+	$(QUIET) $(NODE) "$(SRC_DIR)/@stdlib/repl/scripts/build.js"
 
 .PHONY: repl-docs
 
