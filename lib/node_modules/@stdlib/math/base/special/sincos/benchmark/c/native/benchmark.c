@@ -90,17 +90,20 @@ static double rand_double( void ) {
 * @return elapsed time in seconds
 */
 static double benchmark( void ) {
+	double x[ 100 ];
 	double elapsed;
 	double cosine;
 	double sine;
-	double x;
 	double t;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = ( 20.0 * rand_double() ) - 10.0;
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = ( 20.0 * rand_double() ) - 10.0;
-		stdlib_base_sincos( x, &sine, &cosine );
+		stdlib_base_sincos( x[ i%100 ], &sine, &cosine );
 		if ( cosine != cosine || sine != sine ) {
 			printf( "unexpected results\n" );
 			break;
