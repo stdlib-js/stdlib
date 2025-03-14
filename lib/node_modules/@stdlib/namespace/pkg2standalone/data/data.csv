@@ -214,7 +214,7 @@
 "@stdlib/complex/float64/base/mul","@stdlib/complex-float64-base-mul"
 "@stdlib/complex/float32/base/mul","@stdlib/complex-float32-base-mul"
 "@stdlib/complex/float64/base/neg","@stdlib/math-base-ops-cneg"
-"@stdlib/math/base/ops/cnegf","@stdlib/math-base-ops-cnegf"
+"@stdlib/complex/float32/base/neg","@stdlib/math-base-ops-cnegf"
 "@stdlib/string/base/code-point-at","@stdlib/string-base-code-point-at"
 "@stdlib/string/base/constantcase","@stdlib/string-base-constantcase"
 "@stdlib/math/base/tools/continued-fraction","@stdlib/math-base-tools-continued-fraction"
