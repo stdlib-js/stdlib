@@ -36,8 +36,6 @@ Copies values from `x` into `y`.
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 
 // Define strided arrays...
 var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
@@ -45,15 +43,7 @@ var y = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
 // Perform operation:
 ccopy.main( x.length, x, 1, y, 1 );
-
-var v = y.get( 0 );
-// returns <Complex64>
-
-var re = realf( v );
-// returns 1.0
-
-var im = imagf( v );
-// returns 2.0
+// y => <Complex64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ]
 ```
 
 The function has the following parameters:
@@ -68,22 +58,12 @@ The `N` and stride parameters determine how values from `x` are copied into `y`.
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 
 var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 var y = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
 ccopy.main( 2, x, -2, y, 1 );
-
-var v = y.get( 0 );
-// returns <Complex64>
-
-var re = realf( v );
-// returns 5.0
-
-var im = imagf( v );
-// returns 6.0
+// y => <Complex64Array>[ 5.0, 6.0, 1.0, 2.0, 0.0, 0.0, 0.0, 0.0 ]
 ```
 
 Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][mdn-typed-array] views.
@@ -92,8 +72,6 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 
 // Initial arrays...
 var x0 = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
@@ -105,15 +83,7 @@ var y1 = new Complex64Array( y0.buffer, y0.BYTES_PER_ELEMENT*2 ); // start at 3r
 
 // Copy every other value from `x1` into `y1` in reverse order...
 ccopy.main( 2, x1, -2, y1, 1 );
-
-var z = y0.get( 2 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 7.0
-
-var im = imagf( z );
-// returns 8.0
+// y0 => <Complex64Array>[ 0.0, 0.0, 0.0, 0.0, 7.0, 8.0, 3.0, 4.0 ]
 ```
 
 #### ccopy.ndarray( N, x, strideX, offsetX, y, strideY, offsetY )
@@ -122,22 +92,12 @@ Copies values from `x` into `y` using alternative indexing semantics.
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 
 var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var y = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
 ccopy.ndarray( x.length, x, 1, 0, y, 1, 0 );
-
-var v = y.get( 0 );
-// returns <Complex64>
-
-var re = realf( v );
-// returns 1.0
-
-var im = imagf( v );
-// returns 2.0
+// y => <Complex64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ]
 ```
 
 The function has the following additional parameters:
@@ -149,22 +109,12 @@ While [`typed array`][mdn-typed-array] views mandate a view offset based on the 
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 
 var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 var y = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
 ccopy.ndarray( 2, x, 2, 1, y, -1, y.length-1 );
-
-var z = y.get( y.length-1 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 3.0
-
-var im = imagf( z );
-// returns 4.0
+// y => <Complex64Array>[ 0.0, 0.0, 0.0, 0.0, 7.0, 8.0, 3.0, 4.0 ]
 ```
 
 * * *

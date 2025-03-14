@@ -39,7 +39,7 @@ The [logit][logit] function is defined as the logarithm of the odds `p / (1-p)`;
 
 <!-- </equation> -->
 
-The [logit][logit] function is the inverse of the [standard logistic][standard-logistic] function, sometimes also called the sigmoid function. 
+The [logit][logit] function is the inverse of the [standard logistic][standard-logistic] function, sometimes also called the sigmoid function.
 
 </section>
 
@@ -145,7 +145,7 @@ The function accepts the following arguments:
 -   **p**: `[in] double` input value.
 
 ```c
-double stdlib_base_logit( const double p ); 
+double stdlib_base_logit( const double p );
 ```
 
 </section>
