@@ -48,6 +48,7 @@ C8_EXCLUDES_FLAGS = \
 	-x "**/$(BENCHMARKS_FOLDER)/**" \
 	-x "**/$(CONFIG_FOLDER)/**" \
 	-x "**/$(DOCUMENTATION_FOLDER)/**"
+	-x 'custom_folder/**'
 
 # Define command-line options when generating coverage data:
 C8_FLAGS = \
@@ -56,6 +57,7 @@ C8_FLAGS = \
 	--temp-directory $(COVERAGE_DIR)/tmp \
 	--report-dir $(COVERAGE_DIR) \
 	--reporter lcov
+	--100
 
 
 # RULES #
