@@ -21,7 +21,6 @@
 #include "stdlib/math/base/special/sqrt.h"
 #include "stdlib/blas/base/shared.h"
 #include "stdlib/strided/base/stride2offset.h"
-#include <math.h>
 
 /**
 * Computes the standard deviation of a double-precision floating-point strided array ignoring `NaN` values and using a one-pass textbook algorithm.
@@ -48,5 +47,5 @@ double API_SUFFIX(stdlib_strided_dnanstdevtk)( const CBLAS_INT N, const double c
 * @return             output value
 */
 double API_SUFFIX(stdlib_strided_dnanstdevtk_ndarray)( const CBLAS_INT N, const double correction, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
-	return stdlib_base_sqrt( API_SUFFIX(stdlib_strided_dnanvariancetk_ndarray )( N, correction, X, strideX, offsetX ) );
+	return stdlib_base_sqrt( API_SUFFIX(stdlib_strided_dnanvariancetk_ndarray)( N, correction, X, strideX, offsetX ) );
 }
