@@ -31,7 +31,7 @@ static const double PI_OVER_SQRT_THREE = 1.8137993642342178; // π divided by th
 * @return      standard deviation
 *
 * @example
-* double y = stdlib_base_logistic_stdev( 0.0, 1.0 );
+* double y = stdlib_base_dists_logistic_stdev( 0.0, 1.0 );
 * // returns ~1.814
 */
 double stdlib_base_dists_logistic_stdev( const double mu, const double s ) {
