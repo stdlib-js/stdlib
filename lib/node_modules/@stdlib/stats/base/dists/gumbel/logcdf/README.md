@@ -148,8 +148,6 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- /.examples -->
 
-<!-- /.examples -->
-
 <!-- C interface documentation. -->
 
 * * *

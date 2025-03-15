@@ -40,8 +40,7 @@
       "dependencies": [
         "@stdlib/math/base/napi/binary",
         "@stdlib/math/base/assert/is-nan",
-        "@stdlib/math/base/special/pow",
-        "@stdlib/constants/float64/eps"
+        "@stdlib/math/base/special/pow"
       ]
     },
     {
@@ -74,8 +73,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
-        "@stdlib/math/base/special/pow",
-        "@stdlib/constants/float64/eps"
+        "@stdlib/math/base/special/pow"
       ]
     }
   ]

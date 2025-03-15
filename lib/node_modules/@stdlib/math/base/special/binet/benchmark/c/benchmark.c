@@ -16,6 +16,7 @@
 * limitations under the License.
 */
 
+#include "stdlib/math/base/special/binet.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
@@ -99,16 +100,19 @@ double binet( double x ) {
 * @return elapsed time in seconds
 */
 static double benchmark( void ) {
+	double x[ 100 ];
 	double elapsed;
 	double t;
-	double x;
 	double y;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = floor( 79.0*rand_double() );
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = floor( 79.0*rand_double() );
-		y = binet( x );
+		y = stdlib_base_binet( x[ i%100 ] );
 		if ( y < 0 ) {
 			printf( "should return a nonnegative number\n" );
 			break;

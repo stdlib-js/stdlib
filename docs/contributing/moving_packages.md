@@ -285,13 +285,14 @@ A couple of very important notes to keep in mind when performing a global find-a
 -   Be **very careful** to avoid erroneously updating the paths of packages whose names have a common prefix (e.g., `stats/base/dmaxabs`, `stats/base/dmaxsorted`, `stats/base/dmaxabssorted`). Those packages should **not** be inadvertently updated.
 -   Additionally, ensure that, for packages having C implementations, if a package basename (e.g., `dmax`) has a hyphen, then downstream include paths also need to be updated. E.g., for package `stats/base/foo-bar` with include file `stats/base/foo_bar`, all downstream packages which include the previous header file need to be updated accordingly (e.g., `stats/strided/foo_bar`).
 
-### 9. Avoid updating original package and error database
+### 9. Avoid updating original package and project databases
 
 There are three packages where we do **not** want to update `require` paths.
 
 -   **The original package.** The original package should remain working and keep its original paths.
 -   **The global error database.** The global error database is an append-only log. We need to avoid invalidating any existing references.
 -   **The REPL databases.** Given the high velocity of stdlib development, updating these databases will create merge conflicts, which do not need to be immediately resolved. We can avoid the hassle of needing to rectify these conflicts by deferring to stdlib's daily cron job which automatically maintains and updates these databases.
+-   **The namespace databases.** We avoid updating these databases for the same reasons as the REPL databases.
 
 To dismiss any changes made to the above, run the following command
 
@@ -299,6 +300,7 @@ To dismiss any changes made to the above, run the following command
 git checkout -- ./lib/node_modules/@stdlib/path/to/original/package && \
     git checkout -- ./lib/node_modules/@stdlib/error && \
     git checkout -- ./lib/node_modules/@stdlib/repl/**/data && \
+    git checkout -- ./lib/node_modules/@stdlib/namespace/**/data && \
     git status
 ```
 
@@ -308,6 +310,7 @@ For example,
 git checkout -- ./lib/node_modules/@stdlib/stats/base/dmax && \
     git checkout -- ./lib/node_modules/@stdlib/error && \
     git checkout -- ./lib/node_modules/@stdlib/repl/**/data && \
+    git checkout -- ./lib/node_modules/@stdlib/namespace/**/data && \
     git status
 ```
 
