@@ -177,6 +177,8 @@ Ref: https://github.com/stdlib-js/stdlib/issues/4797
 
 ### 6. Remove the export of the original package from its parent namespace
 
+#### a. Namespace exports
+
 Next, open the `lib/index.js` file found in the parent namespace of the original package (e.g., `lib/node_modules/@stdlib/stats/base/lib/index.js`).
 
 If that file includes an exported symbol from the original package, remove it. For example,
@@ -191,6 +193,47 @@ If that file includes an exported symbol from the original package, remove it. F
 - * @see {@link module:@stdlib/stats/base/dmax}
 - */
 - setReadOnly( ns, 'dmax', require( '@stdlib/stats/base/dmax' ) );
+```
+
+#### b. Namespace TypeScript declarations
+
+Next, open the `docs/types/index.d.ts` file found in the parent namespace of the original package (e.g., `lib/node_modules/@stdlib/stats/base/docs/types/index.d.ts`).
+
+If that file includes an exported symbol from the original package, remove it. For example,
+
+```diff
+- import dmax = require( '@stdlib/stats/base/dmax' );
+```
+
+and
+
+```diff
+-
+-    /**
+-    * Computes the maximum value of a double-precision floating-point strided array.
+-    *
+-    * @param N - number of indexed elements
+-    * @param x - input array
+-    * @param strideX - stride length
+-    * @returns maximum value
+-    *
+-    * @example
+-    * var Float64Array = require( '@stdlib/array/float64' );
+-    *
+-    * var x = new Float64Array( [ 1.0, -2.0, 2.0 ] );
+-    *
+-    * var v = ns.dmax( x.length, x, 1 );
+-    * // returns 2.0
+-    *
+-    * @example
+-    * var Float64Array = require( '@stdlib/array/float64' );
+-    *
+-    * var x = new Float64Array( [ 1.0, -2.0, 2.0 ] );
+-    *
+-    * var v = ns.dmax.ndarray( x.length, x, 1, 0 );
+-    * // returns 2.0
+-    */
+-    dmax: typeof dmax;
 ```
 
 ### 7. Commit the changes to the parent namespace
@@ -242,13 +285,14 @@ A couple of very important notes to keep in mind when performing a global find-a
 -   Be **very careful** to avoid erroneously updating the paths of packages whose names have a common prefix (e.g., `stats/base/dmaxabs`, `stats/base/dmaxsorted`, `stats/base/dmaxabssorted`). Those packages should **not** be inadvertently updated.
 -   Additionally, ensure that, for packages having C implementations, if a package basename (e.g., `dmax`) has a hyphen, then downstream include paths also need to be updated. E.g., for package `stats/base/foo-bar` with include file `stats/base/foo_bar`, all downstream packages which include the previous header file need to be updated accordingly (e.g., `stats/strided/foo_bar`).
 
-### 9. Avoid updating original package and error database
+### 9. Avoid updating original package and project databases
 
 There are three packages where we do **not** want to update `require` paths.
 
 -   **The original package.** The original package should remain working and keep its original paths.
 -   **The global error database.** The global error database is an append-only log. We need to avoid invalidating any existing references.
 -   **The REPL databases.** Given the high velocity of stdlib development, updating these databases will create merge conflicts, which do not need to be immediately resolved. We can avoid the hassle of needing to rectify these conflicts by deferring to stdlib's daily cron job which automatically maintains and updates these databases.
+-   **The namespace databases.** We avoid updating these databases for the same reasons as the REPL databases.
 
 To dismiss any changes made to the above, run the following command
 
@@ -256,6 +300,7 @@ To dismiss any changes made to the above, run the following command
 git checkout -- ./lib/node_modules/@stdlib/path/to/original/package && \
     git checkout -- ./lib/node_modules/@stdlib/error && \
     git checkout -- ./lib/node_modules/@stdlib/repl/**/data && \
+    git checkout -- ./lib/node_modules/@stdlib/namespace/**/data && \
     git status
 ```
 
@@ -265,6 +310,7 @@ For example,
 git checkout -- ./lib/node_modules/@stdlib/stats/base/dmax && \
     git checkout -- ./lib/node_modules/@stdlib/error && \
     git checkout -- ./lib/node_modules/@stdlib/repl/**/data && \
+    git checkout -- ./lib/node_modules/@stdlib/namespace/**/data && \
     git status
 ```
 
