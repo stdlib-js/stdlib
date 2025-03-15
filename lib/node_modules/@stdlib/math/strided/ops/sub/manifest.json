@@ -34,7 +34,7 @@
         "@stdlib/number/float64/base/sub",
         "@stdlib/number/float32/base/sub",
         "@stdlib/complex/float64/base/sub",
-        "@stdlib/math/base/ops/csubf",
+        "@stdlib/complex/float32/base/sub",
         "@stdlib/strided/base/function-object",
         "@stdlib/strided/base/binary",
         "@stdlib/strided/dtypes",

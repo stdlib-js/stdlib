@@ -239,7 +239,7 @@
 "@stdlib/math/base/special/csch","@stdlib/math-base-special-csch"
 "@stdlib/math/base/special/csignum","@stdlib/math-base-special-csignum"
 "@stdlib/complex/float64/base/sub","@stdlib/math-base-ops-csub"
-"@stdlib/math/base/ops/csubf","@stdlib/math-base-ops-csubf"
+"@stdlib/complex/float32/base/sub","@stdlib/math-base-ops-csubf"
 "@stdlib/math/base/special/deg2rad","@stdlib/math-base-special-deg2rad"
 "@stdlib/math/base/special/deg2radf","@stdlib/math-base-special-deg2radf"
 "@stdlib/math/base/special/digamma","@stdlib/math-base-special-digamma"
