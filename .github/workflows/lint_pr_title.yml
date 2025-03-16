@@ -90,5 +90,7 @@ jobs:
         run: |
           echo "Pull request titles should follow stdlib's Git commit message conventions."
           echo "Linting pull request title..."
-          make lint-commit-message GIT_COMMIT_MESSAGE="${PR_TITLE}"
+          PR_TITLE_FILE="${GITHUB_WORKSPACE}/pr_title.txt"
+          printf '%s\n' "$PR_TITLE" > "$PR_TITLE_FILE"
+          make lint-commit-files FILES="$PR_TITLE_FILE"
         timeout-minutes: 5
