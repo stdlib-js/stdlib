@@ -20,7 +20,6 @@
 
 /* eslint-disable max-lines */
 
-import cmulf = require( '@stdlib/complex/float32/base/mul' );
 import cadd = require( '@stdlib/complex/float64/base/add' );
 import cmul = require( '@stdlib/complex/float64/base/mul' );
 
@@ -28,54 +27,6 @@ import cmul = require( '@stdlib/complex/float64/base/mul' );
 * Interface describing the `ops` namespace.
 */
 interface Namespace {
-	/**
-	* Multiplies two single-precision complex floating-point numbers.
-	*
-	* @param z1 - complex number
-	* @param z2 - complex number
-	* @returns result
-	*
-	* @example
-	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
-	* var realf = require( '@stdlib/complex/float32/real' );
-	* var imagf = require( '@stdlib/complex/float32/imag' );
-	*
-	* var z1 = new Complex64( 5.0, 3.0 );
-	* // returns <Complex64>
-	*
-	* var z2 = new Complex64( -2.0, 1.0 );
-	* // returns <Complex64>
-	*
-	* var out = ns.cmulf( z1, z2 );
-	* // returns <Complex64>
-	*
-	* var re = realf( out );
-	* // returns -13.0
-	*
-	* var im = imagf( out );
-	* // returns -1.0
-	*
-	* @example
-	* var Float32Array = require( '@stdlib/array/float32' );
-	*
-	* var out = new Float32Array( 2 );
-	* var v = ns.cmulf.assign( 5.0, 3.0, -2.0, 1.0, out, 1, 0 );
-	* // returns <Float32Array>[ -13.0, -1.0 ]
-	*
-	* var bool = ( out === v );
-	* // returns true
-	*
-	* @example
-	* var Float32Array = require( '@stdlib/array/float32' );
-	*
-	* var z1 = new Float32Array( [ 5.0, 3.0 ] );
-	* var z2 = new Float32Array( [ -2.0, 1.0 ] );
-	*
-	* var out = ns.cmulf.strided( z1, 1, 0, z2, 1, 0, new Float32Array( 2 ), 1, 0 );
-	* // returns <Float32Array>[ -13.0, -1.0 ]
-	*/
-	cmulf: typeof cmulf;
-
 	/**
 	* Adds two double-precision complex floating-point numbers.
 	*
