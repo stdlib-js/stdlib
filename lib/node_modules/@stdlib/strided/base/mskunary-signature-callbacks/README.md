@@ -47,7 +47,7 @@ Assigns callbacks to masked unary interfaces according to type [promotion rules]
 ```javascript
 var signatures = require( '@stdlib/strided/base/mskunary-dtype-signatures' );
 var identity = require( '@stdlib/number/float64/base/identity' );
-var cidentity = require( '@stdlib/math/base/special/cidentity' );
+var cidentity = require( '@stdlib/complex/float64/base/identity' );
 var cidentityf = require( '@stdlib/math/base/special/cidentityf' );
 
 var dtypes = [
@@ -113,7 +113,7 @@ A callback `table` should have the following properties:
 var dtypes = require( '@stdlib/strided/dtypes' );
 var signatures = require( '@stdlib/strided/base/mskunary-dtype-signatures' );
 var identity = require( '@stdlib/number/float64/base/identity' );
-var cidentity = require( '@stdlib/math/base/special/cidentity' );
+var cidentity = require( '@stdlib/complex/float64/base/identity' );
 var cidentityf = require( '@stdlib/math/base/special/cidentityf' );
 var callbacks = require( '@stdlib/strided/base/mskunary-signature-callbacks' );
 
