@@ -24,7 +24,6 @@ import caddf = require( '@stdlib/complex/float32/base/add' );
 import cmulf = require( '@stdlib/complex/float32/base/mul' );
 import cadd = require( '@stdlib/complex/float64/base/add' );
 import cmul = require( '@stdlib/complex/float64/base/mul' );
-import sub = require( '@stdlib/number/float64/base/sub' );
 
 /**
 * Interface describing the `ops` namespace.
@@ -196,35 +195,6 @@ interface Namespace {
 	* // returns <Float64Array>[ -13.0, -1.0 ]
 	*/
 	cmul: typeof cmul;
-
-	/**
-	* Subtracts two double-precision floating-point numbers `x` and `y`.
-	*
-	* @param x - first input value
-	* @param y - second input value
-	* @returns result
-	*
-	* @example
-	* var v = ns.sub( -1.0, 5.0 );
-	* // returns -6.0
-	*
-	* @example
-	* var v = ns.sub( 2.0, 5.0 );
-	* // returns -3.0
-	*
-	* @example
-	* var v = ns.sub( 0.0, 5.0 );
-	* // returns -5.0
-	*
-	* @example
-	* var v = ns.sub( -0.0, 0.0 );
-	* // returns -0.0
-	*
-	* @example
-	* var v = ns.sub( NaN, NaN );
-	* // returns NaN
-	*/
-	sub: typeof sub;
 }
 
 /**
