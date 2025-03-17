@@ -26,7 +26,7 @@
 #include <stdint.h>
 
 /**
-* Evaluates the natural logarithm of the probability mass function (PMF) for a hypergeometric distribution with population size `N`, subpopulation size `K` and number of draws `n`.
+* Evaluates the natural logarithm of the probability mass function (PMF) for a hypergeometric distribution with population size `N`, subpopulation size `K`, and number of draws `n`.
 *
 * @param x    input value
 * @param N    population size
