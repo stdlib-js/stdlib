@@ -20,7 +20,6 @@
 
 /* eslint-disable max-lines */
 
-import caddf = require( '@stdlib/complex/float32/base/add' );
 import cmulf = require( '@stdlib/complex/float32/base/mul' );
 import cadd = require( '@stdlib/complex/float64/base/add' );
 import cmul = require( '@stdlib/complex/float64/base/mul' );
@@ -29,32 +28,6 @@ import cmul = require( '@stdlib/complex/float64/base/mul' );
 * Interface describing the `ops` namespace.
 */
 interface Namespace {
-	/**
-	* Adds two single-precision complex floating-point numbers.
-	*
-	* @param z1 - complex number
-	* @param z2 - complex number
-	* @returns result
-	*
-	* @example
-	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
-	* var realf = require( '@stdlib/complex/float32/real' );
-	* var imagf = require( '@stdlib/complex/float32/imag' );
-	*
-	* var z = new Complex64( 5.0, 3.0 );
-	* // returns <Complex64>
-	*
-	* var out = ns.caddf( z, z );
-	* // returns <Complex64>
-	*
-	* var re = realf( out );
-	* // returns 10.0
-	*
-	* var im = imagf( out );
-	* // returns 6.0
-	*/
-	caddf: typeof caddf;
-
 	/**
 	* Multiplies two single-precision complex floating-point numbers.
 	*
