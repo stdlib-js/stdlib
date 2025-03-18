@@ -31,9 +31,9 @@
     > var dt = {{alias:@stdlib/strided/dtypes}}();
     > var sigs = {{alias:@stdlib/strided/base/unary-dtype-signatures}}( dt, dt );
     > var t = {
-    ...     'default': {{alias:@stdlib/math/base/special/identity}},
+    ...     'default': {{alias:@stdlib/number/float64/base/identity}},
     ...     'complex64': {{alias:@stdlib/math/base/special/cidentityf}},
-    ...     'complex128': {{alias:@stdlib/math/base/special/cidentity}}
+    ...     'complex128': {{alias:@stdlib/complex/float64/base/identity}}
     ... };
     > var out = {{alias}}( t, sigs )
     [...]

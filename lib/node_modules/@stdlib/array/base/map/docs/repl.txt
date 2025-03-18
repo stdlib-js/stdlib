@@ -1,0 +1,80 @@
+
+{{alias}}( x, fcn[, thisArg] )
+    Applies a callback function to elements in an input array and assigns
+    results to elements in a new output array.
+
+    The callback function is provided the following arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: the input array.
+
+    If provided an array-like object having a `map` method, the function defers
+    execution to that method and assumes that the method has the following
+    signature:
+
+        x.map( fcn, thisArg )
+
+    Parameters
+    ----------
+    x: Array|TypedArray|Object
+        Input array.
+
+    fcn: Function
+        Callback function.
+
+    thisArg: any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    out: Array|TypedArray|Object
+        Output array.
+
+    Examples
+    --------
+    > var x = [ -1, -2, -3, -4 ];
+    > var y = {{alias}}( x, {{alias:@stdlib/math/base/special/abs}} )
+    [ 1, 2, 3, 4 ]
+
+
+{{alias}}.assign( x, y, stride, offset, fcn[, thisArg] )
+    Applies a callback function to elements in an input array and assigns
+    results to elements in an output array.
+
+    Parameters
+    ----------
+    x: Array|TypedArray|Object
+        Input array.
+
+    y: Array|TypedArray|Object
+        Output array.
+
+    stride: integer
+        Stride length for output array.
+
+    offset: integer
+        Starting index for output array.
+
+    fcn: Function
+        Callback function.
+
+    thisArg: any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    out: Array|TypedArray|Object
+        Output array.
+
+    Examples
+    --------
+    > var x = [ -1, -2, -3, -4 ];
+    > var y = [ 0, 0, 0, 0 ];
+    > var out = {{alias}}.assign( x, y, 1, 0, {{alias:@stdlib/math/base/special/abs}} )
+    [ 1, 2, 3, 4 ]
+    > var bool = ( out === y )
+    true
+
+    See Also
+    --------
