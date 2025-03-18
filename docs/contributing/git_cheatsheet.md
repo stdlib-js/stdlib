@@ -20,7 +20,7 @@ limitations under the License.
 
 # Git Cheatsheet
 
-> Git Cheatsheet for stdlib
+> A cheatsheet for using Git to develop stdlib.
 
 ## Introduction
 
