@@ -1,5 +1,8 @@
 {
-  "options": {},
+  "options": {
+    "task": "build",
+    "wasm": false
+  },
   "fields": [
     {
       "field": "src",
@@ -25,18 +28,19 @@
   "confs": [
     {
       "task": "build",
+      "wasm": false,
       "src": [
-        "./src/dsvariancepn.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/ext/base/dssum",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
@@ -47,34 +51,53 @@
     },
     {
       "task": "benchmark",
+      "wasm": false,
       "src": [
-        "./src/dsvariancepn.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/ext/base/dssum"
+        "@stdlib/blas/ext/base/dssum",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
     {
       "task": "examples",
+      "wasm": false,
       "src": [
-        "./src/dsvariancepn.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/ext/base/dssum"
+        "@stdlib/blas/ext/base/dssum",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
+      ]
+    },
+    {
+      "task": "build",
+      "wasm": true,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/ext/base/dssum",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
       ]
     }
   ]
