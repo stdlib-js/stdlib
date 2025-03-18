@@ -28,6 +28,7 @@ limitations under the License.
 -   [How can I install cppcheck?](#install-cppcheck)
 -   [I am seeing different return values in the JavaScript and C implementation for the same implementation.](#js-vs-c-return-values)
 -   [What should I do if Markdown linting on my commits fails because my headings exceed the maximum permissible length?](#markdown-heading-length)
+-   [What should I do if Javascript linting on my commits fails because my function exceed the maximum permissible number of parameters?](#max-params)
 -   [I have opened a pull request, where can I seek feedback?](#pr-feedback)
 -   [I need to generate fixtures for my tests. How can I do that, and what are the best references for inspiration?](#generate-fixtures)
 -   [I am facing a `Shadowed declaration` linting error in my C files, how can I fix it?](#shadowed-declaration)
@@ -107,6 +108,18 @@ Consider whether the heading can be shortened by renaming variables (e.g., chang
 
 ```markdown
 <!-- lint disable maximum-heading-length -->
+```
+
+TODO: Can we add a reference PR link?
+
+<a name="markdown-heading-length"></a>
+
+## What should I do if Javascript linting on my commits fails because my headings exceed the maximum permissible number of parameters?
+
+Consider whether the number of parameters can be reduced. If reducing is not possible, disable the lint rule at the top level using:
+
+```javascript
+/* eslint-disable max-params */
 ```
 
 TODO: Can we add a reference PR link?
