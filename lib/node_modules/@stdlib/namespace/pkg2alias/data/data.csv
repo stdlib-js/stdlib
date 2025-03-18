@@ -206,7 +206,7 @@
 "@stdlib/math/base/special/cflipsignf",base.cflipsignf
 "@stdlib/math/base/special/cfloor",base.cfloor
 "@stdlib/math/base/special/cfloorn",base.cfloorn
-"@stdlib/math/base/special/cidentity",base.cidentity
+"@stdlib/complex/float64/base/identity",base.cidentity
 "@stdlib/math/base/special/cidentityf",base.cidentityf
 "@stdlib/math/base/special/cinv",base.cinv
 "@stdlib/math/base/special/clamp",base.clamp
@@ -802,8 +802,8 @@
 "@stdlib/math/base/tools/hermitepoly",base.hermitepoly
 "@stdlib/math/base/special/hypot",base.hypot
 "@stdlib/math/base/special/hypotf",base.hypotf
-"@stdlib/math/base/special/identity",base.identity
-"@stdlib/math/base/special/identityf",base.identityf
+"@stdlib/number/float64/base/identity",base.identity
+"@stdlib/number/float32/base/identity",base.identityf
 "@stdlib/number/int32/base/mul",base.imul
 "@stdlib/number/int32/base/muldw",base.imuldw
 "@stdlib/slice/base/int2slice",base.int2slice
