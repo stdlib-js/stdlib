@@ -65,8 +65,6 @@ There are primarily two options for setting up your development environment to c
 
 Note: The dev container does not yet support ARM64 architectures. For more information, or if you're interested in adding ARM64 support, you can visit this [issue][devcontainer-issue].
 
-TODO: Modify the dev container setup link to the exact file link once it is merged.
-
 <a name="install-cppcheck"></a>
 
 ## How can I install cppcheck?
@@ -102,15 +100,25 @@ If they pass, adjust the tolerance and add a note to the C tests indicating that
 
 <a name="markdown-heading-length"></a>
 
-## What should I do if Markdown linting on my commits fails because my headings exceed the maximum permissible length?
+## What should I do if linting on my commits fails because my headings exceed the maximum permissible length?
 
 Consider whether the heading can be shortened by renaming variables (e.g., changing `strideX` to `sx`). If shortening is not possible, disable the lint rule at the top level using:
+
+- For Javascript Files
+
+```javascript
+// eslint-disable-line max-len
+```
+
+- [Reference PR for Javascript][javascript-len-ref]
+
+- For Markdown Files
 
 ```markdown
 <!-- lint disable maximum-heading-length -->
 ```
 
-TODO: Can we add a reference PR link?
+- [Reference PR for Markdown][markdown-len-ref]
 
 <a name="markdown-heading-length"></a>
 
@@ -119,10 +127,10 @@ TODO: Can we add a reference PR link?
 Consider whether the number of parameters can be reduced. If reducing is not possible, disable the lint rule at the top level using:
 
 ```javascript
-/* eslint-disable max-params */
+// eslint-disable-line max-params
 ```
 
-TODO: Can we add a reference PR link?
+- [Reference PR for Javascript][javascript-params-ref]
 
 <a name="pr-feedback"></a>
 
@@ -398,6 +406,12 @@ For more `make` commands, refer to the [documentation][benchmark] on running ben
 [style-guide]: https://github.com/stdlib-js/stdlib/tree/develop/docs/style-guides
 
 [make-commands]: https://github.com/stdlib-js/stdlib/tree/develop/tools/make/lib
+
+[markdown-len-ref]: https://github.com/stdlib-js/stdlib/pull/5754/files#diff-8b632afc40c671b4097b2d9fc318b0b6eedcebddeff0e13aad0a4d68260505d8R94
+
+[javascript-len-ref]: https://github.com/stdlib-js/stdlib/pull/5754/files#diff-71a4cffefbc20405eaf647ea47353b5561fd10fc032a214183f0c307c3dc4624R75
+
+[javascript-params-ref]: https://github.com/stdlib-js/stdlib/pull/5754/files#diff-71a4cffefbc20405eaf647ea47353b5561fd10fc032a214183f0c307c3dc4624R75
 
 </section>
 
