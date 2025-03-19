@@ -30,12 +30,6 @@ permissions:
   # Allow read-only access to the repository contents:
   contents: read
 
-  # Allow write access to issues, assignees, labels, and milestones:
-  issues: write
-
-  # Allow write access to pull requests:
-  pull-requests: write
-
 # Workflow jobs:
 jobs:
 
@@ -62,8 +56,10 @@ jobs:
         # Pin action to full length commit SHA
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          # Fetch all commits to ensure we have the full commit history:
-          fetch-depth: 0
+          # Ensure we have access to the scripts directory:
+          sparse-checkout: |
+            .github/workflows/scripts
+          sparse-checkout-cone-mode: false
 
       # Generate commit message:
       - name: 'Generate commit message'
