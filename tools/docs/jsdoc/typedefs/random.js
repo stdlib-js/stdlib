@@ -27,3 +27,15 @@
 *
 * @type {Int32Array} PRNGStateMINSTD
 */
+
+/**
+* A pseudorandom number generator (PRNG) seed for the 32-bit Tiny Mersenne Twister (TinyMT32) PRNG.
+*
+* @type {(uinteger32|Collection<uinteger32>)} PRNGSeedTinymt32
+*/
+
+/**
+* A pseudorandom number generator (PRNG) state for the 32-bit Tiny Mersenne Twister (TinyMT32) PRNG.
+*
+* @type {Uint32Array} PRNGStateTinymt32
+*/
