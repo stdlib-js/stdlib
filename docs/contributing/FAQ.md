@@ -118,7 +118,7 @@ Consider whether the heading can be shortened by renaming variables (e.g., chang
 <!-- lint disable maximum-heading-length -->
 ```
 
-[Reference PR][markdown-len-ref]
+[Reference Comment][markdown-len-ref]
 
 <a name="markdown-heading-length"></a>
 
