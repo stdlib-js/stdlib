@@ -17,18 +17,30 @@
 */
 
 #include "stdlib/complex/float32/base/identity.h"
+#include "stdlib/complex/float32/ctor.h"
+#include "stdlib/complex/float32/reim.h"
 #include <stdio.h>
-#include <complex.h>
 
 int main( void ) {
-	float complex x[] = { 3.14f+1.0f*I, -3.14f-1.0f*I, 0.0f+0.0f*I, 0.0f/0.0f+0.0f/0.0f*I };
+	const stdlib_complex64_t x[] = {
+		stdlib_complex64( 3.14f, 1.0f ),
+		stdlib_complex64( -3.14f, -1.0f ),
+		stdlib_complex64( 0.0f, 0.0f ),
+		stdlib_complex64( 0.0f/0.0f, 0.0f/0.0f )
+	};
 
-	float complex v;
-	float complex y;
+	stdlib_complex64_t v;
+	stdlib_complex64_t y;
+	float re1;
+	float im1;
+	float re2;
+	float im2;
 	int i;
 	for ( i = 0; i < 4; i++ ) {
 		v = x[ i ];
 		y = stdlib_base_complex64_identity( v );
-		printf( "f(%f + %f) = %f + %f\n", crealf( v ), cimagf( v ), crealf( y ), cimagf( y ) );
+		stdlib_complex64_reim( v, &re1, &im1 );
+		stdlib_complex64_reim( y, &re2, &im2 );
+		printf( "cidentity(%f + %fi) = %f + %fi\n", re1, im1, re2, im2 );
 	}
 }

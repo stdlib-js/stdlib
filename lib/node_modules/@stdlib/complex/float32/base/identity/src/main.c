@@ -17,7 +17,7 @@
 */
 
 #include "stdlib/complex/float32/base/identity.h"
-#include <complex.h>
+#include "stdlib/complex/float32/ctor.h"
 
 /**
 * Evaluates the identity function for a single-precision complex floating-point number.
@@ -26,8 +26,19 @@
 * @return        input value
 *
 * @example
-* float complex y = stdlib_base_complex64_identity( 3.0f+3.0f*I );
+* #include "stdlib/complex/float32/ctor.h"
+* #include "stdlib/complex/float32/real.h"
+* #include "stdlib/complex/float32/imag.h"
+*
+* stdlib_complex64_t z = stdlib_complex64( 3.0f, 3.0f );
+* stdlib_complex64_t out = stdlib_base_complex64_identity( z );
+*
+* float re = stdlib_complex64_real( out );
+* // returns 3.0f
+*
+* float im = stdlib_complex64_imag( out );
+* // returns 3.0f
 */
-float complex stdlib_base_complex64_identity( const float complex z ) {
+stdlib_complex64_t stdlib_base_complex64_identity( const stdlib_complex64_t z ) {
 	return z;
 }
