@@ -110,7 +110,7 @@ Consider whether the heading can be shortened by renaming variables (e.g., chang
 // eslint-disable-line max-len
 ```
 
-[Reference PR][javascript-len-ref]
+[Reference Comment][javascript-len-ref]
 
 - For Markdown Files
 
