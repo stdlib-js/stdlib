@@ -100,7 +100,7 @@ If they pass, adjust the tolerance and add a note to the C tests indicating that
 
 <a name="markdown-heading-length"></a>
 
-## What should I do if linting on my commits fails because my headings or lintings exceed the maximum permissible length?
+## What should I do if linting on my commits fails because my headings or lines exceed the maximum permissible length?
 
 Consider whether the heading can be shortened by renaming variables (e.g., changing `strideX` to `sx`). If shortening is not possible, disable the lint rule at the top level using:
 
