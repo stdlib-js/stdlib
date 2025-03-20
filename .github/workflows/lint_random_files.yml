@@ -230,6 +230,12 @@ jobs:
           \`\`\`
           $(cat lint_editorconfig_errors.txt | strip_ansi)
           \`\`\`
+
+          ### Pull Request Instructions
+
+          -   Please use the following PR title format:
+          "chore: fix EditorConfig lint errors (issue #<ISSUE_NUMBER>)".
+          -   Reference this issue in the "Related Issues" section of the PR body as "resolves #<ISSUE_NUMBER>".
           EOF
 
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_sub_issue" \
@@ -370,20 +376,26 @@ jobs:
         run: |
           BODY_FILE="$GITHUB_WORKSPACE/lint_issue_body.md"
           cat << EOF > "$BODY_FILE"
-          ## JavaScript Linting Failures
+            ## JavaScript Linting Failures
 
-          Linting failures were detected in the automated JavaScript lint workflow run.
+            Linting failures were detected in the automated JavaScript lint workflow run.
 
-          ### Workflow Details
+            ### Workflow Details
 
-          - Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-          - Type: JavaScript Linting
-          - Date: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
+            - Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            - Type: JavaScript Linting
+            - Date: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
 
-          ### Error Details
-          \`\`\`
-          $(cat lint_javascript_errors.txt)
-          \`\`\`
+            ### Error Details
+            \`\`\`
+            $(cat lint_javascript_errors.txt)
+            \`\`\`
+
+            ### Pull Request Instructions
+
+            -   Please use the following PR title format:
+            "chore: fix JavaScript lint errors (issue #<ISSUE_NUMBER>)".
+            -   Reference this issue in the "Related Issues" section of the PR body as "resolves #<ISSUE_NUMBER>".
           EOF
 
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_sub_issue" \
@@ -524,6 +536,12 @@ jobs:
           \`\`\`
           $(grep -B 1 -A 2 "style:\|warning:\|error:" "lint_c_errors.txt")
           \`\`\`
+
+          ### Pull Request Instructions
+
+          -   Please use the following PR title format:
+          "chore: fix C lint errors (issue #<ISSUE_NUMBER>)".
+          -   Reference this issue in the "Related Issues" section of the PR body as "resolves #<ISSUE_NUMBER>".
           EOF
 
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_sub_issue" \

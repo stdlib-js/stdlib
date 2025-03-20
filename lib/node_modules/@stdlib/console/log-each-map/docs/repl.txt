@@ -1,0 +1,31 @@
+
+{{alias}}( str[, ...args], clbk[, thisArg] )
+    Inserts array element values and the result of a callback function into a
+    format string and prints the result.
+
+    If an interpolated argument is not a collection, the argument is broadcasted
+    for each iteration.
+
+    Parameters
+    ----------
+    str: string
+        Format string.
+
+    args: ...any (optional)
+        Collections or values.
+
+    clbk: Function
+        Callback function.
+
+    thisArg: any (optional)
+        Callback execution context.
+
+    Examples
+    --------
+    > var x = [ 1, 2, 3 ];
+    > var y = [ 4, 5, 6 ];
+    > function f( x, y ) { return x + y; };
+    > {{alias}}( '%d + %d = %d', x, y, f );
+
+    See Also
+    --------
