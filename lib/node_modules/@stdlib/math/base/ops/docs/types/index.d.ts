@@ -20,58 +20,12 @@
 
 /* eslint-disable max-lines */
 
-import cadd = require( '@stdlib/complex/float64/base/add' );
 import cmul = require( '@stdlib/complex/float64/base/mul' );
 
 /**
 * Interface describing the `ops` namespace.
 */
 interface Namespace {
-	/**
-	* Adds two double-precision complex floating-point numbers.
-	*
-	* @param z1 - complex number
-	* @param z2 - complex number
-	* @returns result
-	*
-	* @example
-	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
-	*
-	* var z = new Complex128( 5.0, 3.0 );
-	* // returns <Complex128>
-	*
-	* var out = ns.cadd( z, z );
-	* // returns <Complex128>
-	*
-	* var re = real( out );
-	* // returns 10.0
-	*
-	* var im = imag( out );
-	* // returns 6.0
-	*
-	* @example
-	* var Float64Array = require( '@stdlib/array/float64' );
-	*
-	* var out = new Float64Array( 2 );
-	* var v = ns.cadd.assign( 5.0, 3.0, 5.0, 3.0, out, 1, 0 );
-	* // returns <Float64Array>[ 10.0, 6.0 ]
-	*
-	* var bool = ( out === v );
-	* // returns true
-	*
-	* @example
-	* var Float64Array = require( '@stdlib/array/float64' );
-	*
-	* var z1 = new Float64Array( [ 5.0, 3.0 ] );
-	* var z2 = new Float64Array( [ 5.0, 3.0 ] );
-	*
-	* var out = ns.cadd.strided( z1, 1, 0, z2, 1, 0, new Float64Array( 2 ), 1, 0 );
-	* // returns <Float64Array>[ 10.0, 6.0 ]
-	*/
-	cadd: typeof cadd;
-
 	/**
 	* Multiplies two double-precision complex floating-point numbers.
 	*

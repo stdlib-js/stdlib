@@ -207,7 +207,7 @@
 "@stdlib/math/base/special/cfloor","@stdlib/math-base-special-cfloor"
 "@stdlib/math/base/special/cfloorn","@stdlib/math-base-special-cfloorn"
 "@stdlib/complex/float64/base/identity","@stdlib/complex-float64-base-identity"
-"@stdlib/math/base/special/cidentityf","@stdlib/math-base-special-cidentityf"
+"@stdlib/complex/float32/base/identity","@stdlib/complex-float32-base-identity"
 "@stdlib/math/base/special/cinv","@stdlib/math-base-special-cinv"
 "@stdlib/math/base/special/clamp","@stdlib/math-base-special-clamp"
 "@stdlib/math/base/special/clampf","@stdlib/math-base-special-clampf"
