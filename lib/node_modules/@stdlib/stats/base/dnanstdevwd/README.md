@@ -254,7 +254,7 @@ Computes the [standard deviation][standard-deviation] of a double-precision floa
 const double x[] = { 1.0, -2.0, 0.0/0.0, 2.0 };
 
 double v = stdlib_strided_dnanstdevwd( 4, 1.0, x, 1 );
-// returns ~4.3333
+// returns ~2.0817
 ```
 
 The function accepts the following arguments:
@@ -276,7 +276,7 @@ Computes the [standard deviation][standard-deviation] of a double-precision floa
 const double x[] = { 1.0, -2.0, 0.0/0.0, 2.0 };
 
 double v = stdlib_strided_dnanstdevwd_ndarray( 4, 1.0, x, 1, 0 );
-// returns ~4.3333
+// returns ~2.0817
 ```
 
 The function accepts the following arguments:

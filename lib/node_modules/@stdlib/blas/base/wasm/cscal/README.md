@@ -125,7 +125,7 @@ var im = imagf( z );
 // returns 14.0
 ```
 
-#### dscal.ndarray( N, ca, cx, strideX, offsetX )
+#### cscal.ndarray( N, ca, cx, strideX, offsetX )
 
 Scales values from `cx` by `ca` using alternative indexing semantics.
 
@@ -142,7 +142,7 @@ var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var ca = new Complex64( 2.0, 2.0 );
 
 // Perform operation:
-cscal.main( cx.length, ca, cx, 1 );
+cscal.ndarray( cx.length, ca, cx, 1, 0 );
 
 var v = cx.get( 0 );
 // returns <Complex64>
