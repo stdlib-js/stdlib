@@ -411,7 +411,7 @@ For more `make` commands, refer to the [documentation][benchmark] on running ben
 
 [javascript-len-ref]: https://github.com/stdlib-js/stdlib/blob/78e0cfd8b6c0429a443b07fd39fa9dd53bf44d23/lib/node_modules/%40stdlib/lapack/base/dgttrf/lib/base.js#L111
 
-[javascript-params-ref]: https://github.com/stdlib-js/stdlib/pull/5754/files#diff-71a4cffefbc20405eaf647ea47353b5561fd10fc032a214183f0c307c3dc4624R75
+[javascript-params-ref]: https://github.com/stdlib-js/stdlib/blob/78e0cfd8b6c0429a443b07fd39fa9dd53bf44d23/lib/node_modules/%40stdlib/lapack/base/dgttrf/lib/base.js#L75
 
 </section>
 
