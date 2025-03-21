@@ -411,6 +411,14 @@ Thank you for your help in reducing the project backlog and in improving the qua
 
 ## Notes
 
+-  When creating your pull request, please use the following format for the PR title:
+
+   \`\`\`
+   chore: address commit comments for commit \`${short_sha}\` (issue #NNNN)
+   \`\`\`
+
+   where \`NNNN\` is the issue number assigned to this issue.
+
 -  For older commits, there is a chance that comments will have been already been addressed due to other refactorings. If you find that to be true, don't worry! Just move on to addressing the next comment, and, when opening your pull request and describing your proposed changes, be sure to link to the comment and mention that it has been addressed. This will help reviewers when reviewing your code!
 
 * * *

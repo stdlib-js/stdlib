@@ -37,11 +37,6 @@ jobs:
     # Only run this job if the pull request has a specific label:
     if: "${{ github.event.label.name == 'autoclose: EditorConfig' }}"
 
-    # Define job permissions:
-    permissions:
-      contents: read
-      pull-requests: write
-
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
@@ -73,11 +68,6 @@ jobs:
     # Only run this job if the pull request has a specific label:
     if: "${{ github.event.label.name == 'autoclose: Contributor Guidelines' }}"
 
-    # Define job permissions:
-    permissions:
-      contents: read
-      pull-requests: write
-
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
@@ -108,11 +98,6 @@ jobs:
 
     # Only run this job if the pull request has a specific label:
     if: "${{ github.event.label.name == 'autoclose: Project Conventions' }}"
-
-    # Define job permissions:
-    permissions:
-      contents: read
-      pull-requests: write
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
@@ -149,11 +134,6 @@ jobs:
     # Only run this job if the pull request has a specific label:
     if: "${{ github.event.label.name == 'autoclose: Spam' }}"
 
-    # Define job permissions:
-    permissions:
-      contents: read
-      pull-requests: write
-
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
@@ -189,12 +169,6 @@ jobs:
     # Only run this job if the pull request has a specific label:
     if: "${{ github.event.label.name == 'autoclose: Stale' }}"
 
-    # Define job permissions:
-    permissions:
-      contents: read
-      issues: write
-      pull-requests: write
-
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
@@ -220,11 +194,6 @@ jobs:
 
     # Only run this job if the pull request has a specific label:
     if: "${{ github.event.label.name == 'autoclose: Git History' }}"
-
-    # Define job permissions:
-    permissions:
-      contents: read
-      pull-requests: write
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest

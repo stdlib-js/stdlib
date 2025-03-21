@@ -44,7 +44,7 @@
 * }
 * STDLIB_NDARRAY_NULLARY_10D_BLOCKED_LOOP_EPILOGUE
 */
-#define STDLIB_NDARRAY_NULLARY_10D_BLOCKED_LOOP_PREAMBLE                         \
+#define STDLIB_NDARRAY_NULLARY_10D_BLOCKED_LOOP_PREAMBLE                       \
 	struct ndarray *x1 = arrays[ 0 ];                                          \
 	int64_t shape[10];                                                         \
 	int64_t sx1[10];                                                           \

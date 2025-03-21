@@ -71,7 +71,7 @@
 		d1x1 = sx1[ 1 ] - ( S0*sx1[0] );                                       \
 		d2x1 = sx1[ 2 ] - ( S1*sx1[1] );                                       \
 	}                                                                          \
-	/* Set a pointers to the first indexed element... */                       \
+	/* Set a pointer to the first indexed element... */                        \
 	px1 += stdlib_ndarray_offset( x1 );                                        \
 	/* Iterate over the ndarray dimensions... */                               \
 	for ( i2 = 0; i2 < S2; i2++, px1 += d2x1 ) {                               \
