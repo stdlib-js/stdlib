@@ -104,7 +104,7 @@ If they pass, adjust the tolerance and add a note to the C tests indicating that
 
 Consider whether the heading/line can be shortened by renaming variables (e.g., changing `strideX` to `sx`). If shortening is not possible, disable the lint rule at the top level using:
 
-- For Javascript Files
+- For JavaScript files:
 
 ```javascript
 // eslint-disable-line max-len
