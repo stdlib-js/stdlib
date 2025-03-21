@@ -228,11 +228,5130 @@ bool out = f( in1 );
 #include "stdlib/ndarray/base/every.h"
 ```
 
-<!-- The following is auto-generated. Do not manually edit. See scripts/loops.js. -->
+<!-- The following is auto-generated. Do not manually edit. See scripts/*loops.js. -->
 
-<!-- loops -->
+<!-- inline-loops -->
 
-<!-- ./loops -->
+#### stdlib_ndarray_every_b_x( \*arrays\[], \*data )
+
+Tests whether every element in an input ndarray is truthy.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT8;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 2, 1 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Test elements:
+int8_t status = stdlib_ndarray_b_x( arrays, NULL );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to a zero-dimensional output ndarray.
+-   **data**: `[in] void*` function data. This argument is unused and should be a `NULL` pointer.
+
+```c
+int8_t stdlib_ndarray_every_b_x( struct ndarray *arrays[], void *data );
+```
+
+#### stdlib_ndarray_every_c_x( \*arrays\[], \*data )
+
+Tests whether every element in an input ndarray is truthy.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include "stdlib/complex/float32/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_COMPLEX64;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 16, 8 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Test elements:
+int8_t status = stdlib_ndarray_c_x( arrays, NULL );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to a zero-dimensional output ndarray.
+-   **data**: `[in] void*` function data. This argument is unused and should be a `NULL` pointer.
+
+```c
+int8_t stdlib_ndarray_every_c_x( struct ndarray *arrays[], void *data );
+```
+
+#### stdlib_ndarray_every_d_x( \*arrays\[], \*data )
+
+Tests whether every element in an input ndarray is truthy.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT64;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 16, 8 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Test elements:
+int8_t status = stdlib_ndarray_d_x( arrays, NULL );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to a zero-dimensional output ndarray.
+-   **data**: `[in] void*` function data. This argument is unused and should be a `NULL` pointer.
+
+```c
+int8_t stdlib_ndarray_every_d_x( struct ndarray *arrays[], void *data );
+```
+
+#### stdlib_ndarray_every_f_x( \*arrays\[], \*data )
+
+Tests whether every element in an input ndarray is truthy.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 8, 4 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Test elements:
+int8_t status = stdlib_ndarray_f_x( arrays, NULL );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to a zero-dimensional output ndarray.
+-   **data**: `[in] void*` function data. This argument is unused and should be a `NULL` pointer.
+
+```c
+int8_t stdlib_ndarray_every_f_x( struct ndarray *arrays[], void *data );
+```
+
+#### stdlib_ndarray_every_i_x( \*arrays\[], \*data )
+
+Tests whether every element in an input ndarray is truthy.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT32;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 8, 4 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Test elements:
+int8_t status = stdlib_ndarray_i_x( arrays, NULL );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to a zero-dimensional output ndarray.
+-   **data**: `[in] void*` function data. This argument is unused and should be a `NULL` pointer.
+
+```c
+int8_t stdlib_ndarray_every_i_x( struct ndarray *arrays[], void *data );
+```
+
+#### stdlib_ndarray_every_k_x( \*arrays\[], \*data )
+
+Tests whether every element in an input ndarray is truthy.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT16;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 4, 2 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Test elements:
+int8_t status = stdlib_ndarray_k_x( arrays, NULL );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to a zero-dimensional output ndarray.
+-   **data**: `[in] void*` function data. This argument is unused and should be a `NULL` pointer.
+
+```c
+int8_t stdlib_ndarray_every_k_x( struct ndarray *arrays[], void *data );
+```
+
+#### stdlib_ndarray_every_s_x( \*arrays\[], \*data )
+
+Tests whether every element in an input ndarray is truthy.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT8;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 2, 1 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Test elements:
+int8_t status = stdlib_ndarray_s_x( arrays, NULL );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to a zero-dimensional output ndarray.
+-   **data**: `[in] void*` function data. This argument is unused and should be a `NULL` pointer.
+
+```c
+int8_t stdlib_ndarray_every_s_x( struct ndarray *arrays[], void *data );
+```
+
+#### stdlib_ndarray_every_t_x( \*arrays\[], \*data )
+
+Tests whether every element in an input ndarray is truthy.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT16;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 4, 2 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Test elements:
+int8_t status = stdlib_ndarray_t_x( arrays, NULL );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to a zero-dimensional output ndarray.
+-   **data**: `[in] void*` function data. This argument is unused and should be a `NULL` pointer.
+
+```c
+int8_t stdlib_ndarray_every_t_x( struct ndarray *arrays[], void *data );
+```
+
+#### stdlib_ndarray_every_u_x( \*arrays\[], \*data )
+
+Tests whether every element in an input ndarray is truthy.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT32;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 8, 4 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Test elements:
+int8_t status = stdlib_ndarray_u_x( arrays, NULL );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to a zero-dimensional output ndarray.
+-   **data**: `[in] void*` function data. This argument is unused and should be a `NULL` pointer.
+
+```c
+int8_t stdlib_ndarray_every_u_x( struct ndarray *arrays[], void *data );
+```
+
+#### stdlib_ndarray_every_x_x( \*arrays\[], \*data )
+
+Tests whether every element in an input ndarray is truthy.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 2, 1 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Test elements:
+int8_t status = stdlib_ndarray_x_x( arrays, NULL );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to a zero-dimensional output ndarray.
+-   **data**: `[in] void*` function data. This argument is unused and should be a `NULL` pointer.
+
+```c
+int8_t stdlib_ndarray_every_x_x( struct ndarray *arrays[], void *data );
+```
+
+#### stdlib_ndarray_every_z_x( \*arrays\[], \*data )
+
+Tests whether every element in an input ndarray is truthy.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include "stdlib/complex/float64/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_COMPLEX128;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 32, 16 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Test elements:
+int8_t status = stdlib_ndarray_z_x( arrays, NULL );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to a zero-dimensional output ndarray.
+-   **data**: `[in] void*` function data. This argument is unused and should be a `NULL` pointer.
+
+```c
+int8_t stdlib_ndarray_every_z_x( struct ndarray *arrays[], void *data );
+```
+
+<!-- ./inline-loops -->
+
+<!-- predicate-loops -->
+
+#### stdlib_ndarray_every_by_b_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT8;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 2, 1 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const uint8_t x ) {
+    return x == 0;
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_b_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(uint8_t)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_b_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_b_x_as_c_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include "stdlib/complex/float32/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT8;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 2, 1 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const stdlib_complex64_t x ) {
+    return ( stdlib_complex64_real( x ) == 0.0f && stdlib_complex64_imag( x ) === 0.0f );
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_b_x_as_c_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(stdlib_complex64_t)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_b_x_as_c_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_b_x_as_d_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT8;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 2, 1 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const double x ) {
+    return x == 0.0;
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_b_x_as_d_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(double)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_b_x_as_d_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_b_x_as_f_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT8;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 2, 1 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const float x ) {
+    return x == 0.0f;
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_b_x_as_f_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(float)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_b_x_as_f_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_b_x_as_i_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT8;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 2, 1 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const int32_t x ) {
+    return x == 0;
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_b_x_as_i_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(int32_t)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_b_x_as_i_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_b_x_as_k_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT8;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 2, 1 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const int16_t x ) {
+    return x == 0;
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_b_x_as_k_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(int16_t)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_b_x_as_k_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_b_x_as_t_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT8;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 2, 1 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const uint16_t x ) {
+    return x == 0;
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_b_x_as_t_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(uint16_t)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_b_x_as_t_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_b_x_as_u_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT8;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 2, 1 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const uint32_t x ) {
+    return x == 0;
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_b_x_as_u_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(uint32_t)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_b_x_as_u_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_b_x_as_z_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include "stdlib/complex/float64/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT8;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 2, 1 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const stdlib_complex128_t x ) {
+    return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) === 0.0 );
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_b_x_as_z_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(stdlib_complex128_t)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_b_x_as_z_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_c_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include "stdlib/complex/float32/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_COMPLEX64;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 16, 8 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const stdlib_complex64_t x ) {
+    return ( stdlib_complex64_real( x ) == 0.0f && stdlib_complex64_imag( x ) === 0.0f );
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_c_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(stdlib_complex64_t)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_c_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_c_x_as_z_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include "stdlib/complex/float64/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_COMPLEX64;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 16, 8 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const stdlib_complex128_t x ) {
+    return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) === 0.0 );
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_c_x_as_z_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(stdlib_complex128_t)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_c_x_as_z_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_d_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT64;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 16, 8 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const double x ) {
+    return x == 0.0;
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_d_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(double)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_d_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_d_x_as_z_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include "stdlib/complex/float64/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT64;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 16, 8 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const stdlib_complex128_t x ) {
+    return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) === 0.0 );
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_d_x_as_z_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(stdlib_complex128_t)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_d_x_as_z_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_f_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 8, 4 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const float x ) {
+    return x == 0.0f;
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_f_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(float)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_f_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_f_x_as_c_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include "stdlib/complex/float32/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 8, 4 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const stdlib_complex64_t x ) {
+    return ( stdlib_complex64_real( x ) == 0.0f && stdlib_complex64_imag( x ) === 0.0f );
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_f_x_as_c_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(stdlib_complex64_t)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_f_x_as_c_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_f_x_as_d_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 8, 4 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const double x ) {
+    return x == 0.0;
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_f_x_as_d_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(double)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_f_x_as_d_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_f_x_as_z_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include "stdlib/complex/float64/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_FLOAT32;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 8, 4 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const stdlib_complex128_t x ) {
+    return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) === 0.0 );
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_f_x_as_z_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(stdlib_complex128_t)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_f_x_as_z_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_i_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT32;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 8, 4 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const int32_t x ) {
+    return x == 0;
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_i_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(int32_t)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_i_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_i_x_as_d_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT32;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 8, 4 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const double x ) {
+    return x == 0.0;
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_i_x_as_d_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(double)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_i_x_as_d_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_i_x_as_z_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include "stdlib/complex/float64/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT32;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 8, 4 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const stdlib_complex128_t x ) {
+    return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) === 0.0 );
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_i_x_as_z_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(stdlib_complex128_t)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_i_x_as_z_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_k_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT16;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 4, 2 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const int16_t x ) {
+    return x == 0;
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_k_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(int16_t)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_k_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_k_x_as_c_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include "stdlib/complex/float32/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT16;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 4, 2 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const stdlib_complex64_t x ) {
+    return ( stdlib_complex64_real( x ) == 0.0f && stdlib_complex64_imag( x ) === 0.0f );
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_k_x_as_c_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(stdlib_complex64_t)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_k_x_as_c_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_k_x_as_d_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT16;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 4, 2 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const double x ) {
+    return x == 0.0;
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_k_x_as_d_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(double)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_k_x_as_d_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_k_x_as_f_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT16;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 4, 2 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const float x ) {
+    return x == 0.0f;
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_k_x_as_f_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(float)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_k_x_as_f_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_k_x_as_i_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT16;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 4, 2 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const int32_t x ) {
+    return x == 0;
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_k_x_as_i_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(int32_t)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_k_x_as_i_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_k_x_as_z_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include "stdlib/complex/float64/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT16;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 4, 2 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const stdlib_complex128_t x ) {
+    return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) === 0.0 );
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_k_x_as_z_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(stdlib_complex128_t)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_k_x_as_z_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_s_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT8;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 2, 1 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const int8_t x ) {
+    return x == 0;
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_s_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(int8_t)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_s_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_s_x_as_c_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include "stdlib/complex/float32/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT8;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 2, 1 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const stdlib_complex64_t x ) {
+    return ( stdlib_complex64_real( x ) == 0.0f && stdlib_complex64_imag( x ) === 0.0f );
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_s_x_as_c_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(stdlib_complex64_t)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_s_x_as_c_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_s_x_as_d_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT8;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 2, 1 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const double x ) {
+    return x == 0.0;
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_s_x_as_d_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(double)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_s_x_as_d_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_s_x_as_f_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT8;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 2, 1 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const float x ) {
+    return x == 0.0f;
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_s_x_as_f_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(float)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_s_x_as_f_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_s_x_as_i_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT8;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 2, 1 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const int32_t x ) {
+    return x == 0;
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_s_x_as_i_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(int32_t)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_s_x_as_i_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_s_x_as_k_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT8;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 2, 1 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const int16_t x ) {
+    return x == 0;
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_s_x_as_k_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(int16_t)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_s_x_as_k_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_s_x_as_z_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include "stdlib/complex/float64/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_INT8;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 2, 1 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const stdlib_complex128_t x ) {
+    return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) === 0.0 );
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_s_x_as_z_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(stdlib_complex128_t)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_s_x_as_z_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_t_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT16;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 4, 2 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const uint16_t x ) {
+    return x == 0;
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_t_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(uint16_t)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_t_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_t_x_as_c_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include "stdlib/complex/float32/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT16;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 4, 2 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const stdlib_complex64_t x ) {
+    return ( stdlib_complex64_real( x ) == 0.0f && stdlib_complex64_imag( x ) === 0.0f );
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_t_x_as_c_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(stdlib_complex64_t)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_t_x_as_c_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_t_x_as_d_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT16;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 4, 2 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const double x ) {
+    return x == 0.0;
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_t_x_as_d_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(double)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_t_x_as_d_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_t_x_as_f_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT16;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 4, 2 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const float x ) {
+    return x == 0.0f;
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_t_x_as_f_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(float)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_t_x_as_f_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_t_x_as_i_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT16;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 4, 2 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const int32_t x ) {
+    return x == 0;
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_t_x_as_i_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(int32_t)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_t_x_as_i_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_t_x_as_u_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT16;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 4, 2 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const uint32_t x ) {
+    return x == 0;
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_t_x_as_u_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(uint32_t)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_t_x_as_u_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_t_x_as_z_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include "stdlib/complex/float64/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT16;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 4, 2 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const stdlib_complex128_t x ) {
+    return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) === 0.0 );
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_t_x_as_z_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(stdlib_complex128_t)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_t_x_as_z_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_u_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT32;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 8, 4 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const uint32_t x ) {
+    return x == 0;
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_u_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(uint32_t)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_u_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_u_x_as_d_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT32;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 8, 4 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const double x ) {
+    return x == 0.0;
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_u_x_as_d_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(double)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_u_x_as_d_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_u_x_as_z_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include "stdlib/complex/float64/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT32;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 8, 4 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const stdlib_complex128_t x ) {
+    return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) === 0.0 );
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_u_x_as_z_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(stdlib_complex128_t)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_u_x_as_z_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_x_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_BOOL;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 2, 1 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const bool x ) {
+    return x;
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_x_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(bool)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_x_x( struct ndarray *arrays[], void *fcn );
+```
+
+#### stdlib_ndarray_every_by_z_x( \*arrays\[], \*fcn )
+
+Tests whether every element in an input ndarray is truthy according to a predicate function.
+
+```c
+#include "stdlib/ndarray/dtypes.h"
+#include "stdlib/ndarray/index_modes.h"
+#include "stdlib/ndarray/orders.h"
+#include "stdlib/ndarray/ctor.h"
+#include "stdlib/complex/float64/ctor.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+// Define the ndarray data types:
+enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_COMPLEX128;
+enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
+
+// Create underlying byte arrays:
+uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+uint8_t ybuf[] = { 0 };
+
+// Define the number of dimensions:
+int64_t ndims = 2;
+
+// Define the array shapes:
+int64_t shx[] = { 2, 2 };
+int64_t *shy = NULL;
+
+// Define the strides:
+int64_t sx[] = { 32, 16 };
+int64_t sy[] = { 0 };
+
+// Define the index offsets:
+int64_t ox = 0;
+int64_t oy = 0;
+
+// Define the array order:
+enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+
+// Specify the index mode:
+enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+
+// Specify the subscript index modes:
+int8_t submodes[] = { imode };
+int64_t nsubmodes = 1;
+
+// Create an input ndarray:
+struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+if ( x == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an output ndarray:
+struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+if ( y == NULL ) {
+    fprintf( stderr, "Error allocating memory.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// Create an array containing the ndarrays:
+struct ndarray *arrays[] = { x, y };
+
+// Define a callback:
+static bool fcn( const stdlib_complex128_t x ) {
+    return ( stdlib_complex128_real( x ) == 0.0 && stdlib_complex128_imag( x ) === 0.0 );
+}
+
+// Test elements:
+int8_t status = stdlib_ndarray_every_by_z_x( arrays, (void *)fcn );
+if ( status != 0 ) {
+    fprintf( stderr, "Error during computation.\n" );
+    exit( EXIT_FAILURE );
+}
+
+// ...
+
+// Free allocated memory:
+stdlib_ndarray_free( x );
+stdlib_ndarray_free( y );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] struct ndarray**` array whose first element is a pointer to an input ndarray and whose second element is a pointer to an output ndarray.
+-   **fcn**: `[in] void*` a `bool (*f)(stdlib_complex128_t)` predicate function to apply provided as a `void` pointer.
+
+```c
+int8_t stdlib_ndarray_every_by_z_x( struct ndarray *arrays[], void *fcn );
+```
+
+<!-- ./predicate-loops -->
 
 <!-- macros -->
 
@@ -305,7 +5424,7 @@ int main( void ) {
 
     // Define the array shapes:
     int64_t shx[] = { 2, 2, 2 };
-    int64_t shy[] = {};
+    int64_t *shy = NULL;
 
     // Define the strides:
     int64_t sx[] = { 4, 2, 1 };

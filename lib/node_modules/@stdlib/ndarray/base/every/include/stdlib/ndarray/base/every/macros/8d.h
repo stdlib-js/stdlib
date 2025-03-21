@@ -46,7 +46,7 @@
 	const int64_t *shape = stdlib_ndarray_shape( x1 );                         \
 	const int64_t *sx1 = stdlib_ndarray_strides( x1 );                         \
 	uint8_t *px1 = stdlib_ndarray_data( x1 );                                  \
-	bool *px2 = stdlib_ndarray_data( x2 );                                     \
+	uint8_t *px2 = stdlib_ndarray_data( x2 );                                  \
 	int64_t d0x1;                                                              \
 	int64_t d1x1;                                                              \
 	int64_t d2x1;                                                              \
@@ -161,7 +161,7 @@
 		const tin in1 = *(tin *)px1;                                           \
 		if ( !( expr ) ) {                                                     \
 			*px2 = false;                                                      \
-			return;                                                            \
+			return 0;                                                          \
 		}                                                                      \
 	}                                                                          \
 	STDLIB_NDARRAY_EVERY_8D_LOOP_EPILOGUE
@@ -185,7 +185,7 @@
 		const tin x = *(tin *)px1;                                             \
 		if ( !( f( x ) ) ) {                                                   \
 			*px2 = false;                                                      \
-			return;                                                            \
+			return 0;                                                          \
 		}                                                                      \
 	}                                                                          \
 	STDLIB_NDARRAY_EVERY_8D_LOOP_EPILOGUE
@@ -211,7 +211,7 @@
 		const tin x = *(tin *)px1;                                             \
 		if ( !( f( (fin)x ) ) ) {                                              \
 			*px2 = false;                                                      \
-			return;                                                            \
+			return 0;                                                          \
 		}                                                                      \
 	}                                                                          \
 	STDLIB_NDARRAY_EVERY_8D_LOOP_EPILOGUE
@@ -239,7 +239,7 @@
 		const tin x = *(tin *)px1;                                             \
 		if ( !( f( cin( x ) ) ) ) {                                            \
 			*px2 = false;                                                      \
-			return;                                                            \
+			return 0;                                                          \
 		}                                                                      \
 	}                                                                          \
 	STDLIB_NDARRAY_EVERY_8D_LOOP_EPILOGUE
