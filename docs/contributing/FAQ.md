@@ -112,7 +112,7 @@ Consider whether the heading/line can be shortened by renaming variables (e.g., 
 
 [Reference Comment][javascript-len-ref]
 
-- For Markdown Files
+- For Markdown files:
 
 ```markdown
 <!-- lint disable maximum-heading-length -->
