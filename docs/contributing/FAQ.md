@@ -130,7 +130,7 @@ Consider whether the number of parameters can be reduced. If reducing is not pos
 // eslint-disable-line max-params
 ```
 
-[Reference PR][javascript-params-ref]
+[Reference Comment][javascript-params-ref]
 
 <a name="pr-feedback"></a>
 
