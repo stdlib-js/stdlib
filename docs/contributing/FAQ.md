@@ -122,7 +122,7 @@ Consider whether the heading/line can be shortened by renaming variables (e.g., 
 
 <a name="markdown-heading-length"></a>
 
-## What should I do if Javascript linting on my commits fails because my headings exceed the maximum permissible number of parameters?
+## What should I do if JavaScript linting on my commits fails because my function exceeds the maximum permissible number of parameters?
 
 Consider whether the number of parameters can be reduced. If reducing is not possible, disable the lint rule at the top level using:
 
