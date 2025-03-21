@@ -481,7 +481,7 @@ rules[ 'func-style' ] = [ 'error', 'declaration', {
 * // Good...
 * console.log( 1, 2 );
 */
-rules[ 'function-call-argument-newline' ] = [ 'error', 'never' ];
+rules[ 'function-call-argument-newline' ] = [ 'error', 'consistent' ];
 
 /**
 * Never allow linebreaks inside parentheses of function parameters or arguments.
