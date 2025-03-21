@@ -1,0 +1,34 @@
+
+{{alias}}( x, groups )
+    Groups element indices as arrays associated with distinct keys.
+
+    If provided an empty array, the function returns an empty object.
+
+    Parameters
+    ----------
+    x: ArrayLike
+        Input array.
+
+    groups: ArrayLike
+        An array defining which group an element in the input array belongs to.
+        Each value in `groups` should resolve to a value which can be serialized
+        as an object key.
+
+    Returns
+    -------
+    out: Object
+        Group results.
+
+    Examples
+    --------
+    > var x = [ 'beep', 'boop', 'foo', 'bar' ];
+    > var g = [ 'b', 'b', 'f', 'b' ];
+    > var out = {{alias}}( x, g )
+    { 'b': [ 0, 1, 3 ], 'f': [ 2 ] }
+    > g = [ 1, 1, 2, 1 ];
+    > out = {{alias}}( x, g )
+    { '1': [ 0, 1, 3 ], '2': [ 2 ] }
+
+    See Also
+    --------
+

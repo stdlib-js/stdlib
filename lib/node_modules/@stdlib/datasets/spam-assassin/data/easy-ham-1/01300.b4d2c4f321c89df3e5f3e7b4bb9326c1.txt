@@ -1,0 +1,87 @@
+From rpm-list-admin@freshrpms.net  Wed Aug 28 10:46:33 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8796E44155
+	for <jm@localhost>; Wed, 28 Aug 2002 05:46:01 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 28 Aug 2002 10:46:01 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7S3SWZ08958 for
+    <jm-rpm@jmason.org>; Wed, 28 Aug 2002 04:28:32 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7S3Q3J21679; Wed, 28 Aug 2002 05:26:03
+    +0200
+Received: from bob.dudex.net (dsl092-157-004.wdc1.dsl.speakeasy.net
+    [66.92.157.4]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g7S3OxJ07705
+    for <rpm-list@freshrpms.net>; Wed, 28 Aug 2002 05:24:59 +0200
+Received: from [66.92.157.3] (helo=www.dudex.net) by bob.dudex.net with
+    esmtp (Exim 3.35 #1) id 17jtS9-0005Zs-00; Tue, 27 Aug 2002 23:25:09 -0400
+X-Originating-Ip: [66.44.42.51]
+From: "" Angles " Puglisi" <angles@aminvestments.com>
+To: valhalla-list@spamassassin.taint.org,
+	"=?iso-8859-1?Q?RPM=2DList?=" <rpm-list@freshrpms.net>
+Subject: Re: ALSA (almost) made easy
+Message-Id: <20020827.HLj.85891900@www.dudex.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 8bit
+Content-Disposition: inline
+X-Mailer: AngleMail for phpGroupWare (http://www.phpgroupware.org) v
+    0.9.14.000
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Wed, 28 Aug 2002 03:28:10 +0000
+Date: Wed, 28 Aug 2002 03:28:10 +0000
+
+Matthias Saou (matthias@rpmforge.net) wrote*:
+>
+>You can also install the XMMS plugin
+>(seems to make my XMMS segfault on exit...
+>hmmm, but maybe it's another plugin) to listen to your good ol' mp3
+>files... that's it!
+
+I've an XMMS Alsa module I've been using for a while now at:
+http://www.dudex.net/rpms/alsa-xmms-0.9_cvs020630-aap1.i686.rpm
+http://www.dudex.net/rpms/alsa-xmms-0.9_cvs020630-aap1.src.rpm
+http://www.dudex.net/rpms/alsa-xmms-0.9_cvs020630.spec
+
+Also there is alsaplayer rpms there too:
+http://www.dudex.net/rpms/alsaplayer-0.99.71-aap1.i386.rpm
+http://www.dudex.net/rpms/alsaplayer-0.99.71-aap1.i686.rpm
+http://www.dudex.net/rpms/alsaplayer-0.99.71-aap1.src.rpm
+http://www.dudex.net/rpms/alsaplayer-0.99.71.spec
+
+Good luck. Both were build on an RH 7.3 box with errata current as of the date of
+the build. I'm running (null) RH beta now and I recall that alsa-xmms still works, I
+can not remember if alsaplayer needs a --rebuild.
+
+As an aside, alsaplayer is really maturing into a versitile app, I've been packaging
+for many releases now.
+
+I've scripted the alsa-xmms cvs build, so it's easy to spin another one if these
+rpms do not work on (null).
+
+--
+That's "angle" as in geometry.
+
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

@@ -1,0 +1,24 @@
+
+{{alias}}( slice )
+    Converts a Slice object to a subsequence string.
+
+    Parameters
+    ----------
+    slice: Slice
+        Input slice.
+
+    Returns
+    -------
+    out: string
+        Subsequence string.
+
+    Examples
+    --------
+    > var out = {{alias}}( new {{alias:@stdlib/slice/ctor}}( 1, 10, 1 ) )
+    '1:10:1'
+    > out = {{alias}}( new {{alias:@stdlib/slice/ctor}}( null, 10 ) )
+    ':10'
+
+    See Also
+    --------
+

@@ -1,0 +1,73 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6M6EPhY054428
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Mon, 22 Jul 2002 01:14:26 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6M6EPB7054423
+	for cypherpunks-forward@ds.pro-ns.net; Mon, 22 Jul 2002 01:14:25 -0500 (CDT)
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6M6EMhX054400
+	for <cypherpunks@ds.pro-ns.net>; Mon, 22 Jul 2002 01:14:23 -0500 (CDT)
+	(envelope-from cpunks@einstein.ssz.com)
+X-Authentication-Warning: hq.pro-ns.net: Host cpunks@[207.200.56.4] claimed to be einstein.ssz.com
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id BAA30800
+	for cypherpunks@ds.pro-ns.net; Mon, 22 Jul 2002 01:22:36 -0500
+Received: (from mdom@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id BAA30792
+	for cypherpunks-outgoing; Mon, 22 Jul 2002 01:22:28 -0500
+Received: from crawfishboil.org ([208.63.157.136])
+	by einstein.ssz.com (8.8.8/8.8.8) with ESMTP id BAA30784;
+	Mon, 22 Jul 2002 01:22:21 -0500
+Received: from mx3.mailbox.co.za [217.164.251.232] by crawfishboil.org
+  (SMTPD32-7.06) id A4675E00BA; Sun, 21 Jul 2002 17:23:35 -0500
+Message-ID: <0000436720dc$00003a9c$0000349f@mail.mailbox.hu>
+To: <Garnow@einstein.ssz.com>
+From: "Antonio Denson" <getsmart5580@postino.ch>
+Subject: RE: Doctor Approved Pill                 LGW
+Date: Sun, 21 Jul 2002 16:42:47 -1600
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Priority: 1
+X-Msmail-Priority: High
+X-Mailer: Microsoft Outlook Express 5.50.4133.2400
+Sender: owner-cypherpunks@einstein.ssz.com
+Precedence: bulk
+Reply-To: cypherpunks@einstein.ssz.com
+X-Mailing-List: cypherpunks@ssz.com
+X-Unsubscription-Info: http://einstein.ssz.com/cdr
+X-List-Admin: list@ssz.com
+X-Loop: ssz.com
+X-Acceptable-Languages: English, Russian, German, French, Spanish
+
+<HTML>
+<HEAD>
+</HEAD>
+<BODY>
+<FONT SIZE=3D"4"><B> A man endowed with a 7-8" hammer is simply<br>
+ better equipped than a man with a 5-6"hammer. <BR>
+<BR>Would you rather have<br>more than enough to get the job done or fall =
+short. It's totally up<br>to you. Our Methods are guaranteed to increase y=
+our size by 1-3"<br> <A HREF=3D"http://209.163.187.47/cgi-bin/index.php?10=
+004">Come in here and see how</A>
+</BODY>
+</HTML>
+
+
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

@@ -1,0 +1,132 @@
+From social-admin@linux.ie  Tue Dec  3 11:57:03 2002
+Return-Path: <social-admin@linux.ie>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 5545416F16
+	for <jm@localhost>; Tue,  3 Dec 2002 11:57:03 +0000 (GMT)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 03 Dec 2002 11:57:03 +0000 (GMT)
+Received: from lugh.tuatha.org (postfix@lugh.tuatha.org [194.125.145.45])
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id gB37qp826485 for
+    <jm+ilug-social@jmason.org>; Tue, 3 Dec 2002 07:52:52 GMT
+Received: from lugh.tuatha.org (localhost [127.0.0.1]) by lugh.tuatha.org
+    (Postfix) with ESMTP id 7F84634229; Tue,  3 Dec 2002 07:54:25 +0000 (GMT)
+Delivered-To: linux.ie-social@localhost
+Received: from byron.heanet.ie (byron.heanet.ie [193.1.219.90]) by
+    lugh.tuatha.org (Postfix) with ESMTP id D30D634224 for <social@linux.ie>;
+    Tue,  3 Dec 2002 07:53:38 +0000 (GMT)
+Received: from cm61-15-244-114.hkcable.com.hk ([61.15.244.114]
+    helo=mail.lycos.com) by byron.heanet.ie with smtp (Exim 4.05) id
+    18J7s9-00055L-00 for social@linux.ie; Tue, 03 Dec 2002 07:53:38 +0000
+X-Msmail-Priority: Normal
+From: bcsocial1@yahoo.com
+Received: from mail.lycos.com by BQIPT.mail.lycos.com with SMTP for
+    social@linux.ie; Tue, 03 Dec 2002 02:55:25 -0500
+X-Mailer: Microsoft Outlook Express 5.00.2919.6700
+Importance: Normal
+Message-Id: <K3WS0Q61QXAK7.VXYLNHFLPNCU3H0H0A.bcsocial1@yahoo.com>
+To: social@linux.ie
+Content-Type: text/plain; charset="iso-8859-1"
+Subject: [ILUG-Social] prirodu requiremus social sample
+Sender: social-admin@linux.ie
+Errors-To: social-admin@linux.ie
+X-Beenthere: social@linux.ie
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:social-request@linux.ie?subject=help>
+List-Post: <mailto:social@linux.ie>
+List-Subscribe: <http://www.linux.ie/mailman/listinfo/social>,
+    <mailto:social-request@linux.ie?subject=subscribe>
+List-Id: Irish Linux Users' Group social events <social.linux.ie>
+List-Unsubscribe: <http://www.linux.ie/mailman/listinfo/social>,
+    <mailto:social-request@linux.ie?subject=unsubscribe>
+List-Archive: <http://www.linux.ie/pipermail/social/>
+X-Original-Date: Tue, 03 Dec 2002 02:55:25 -0500
+Date: Tue, 03 Dec 2002 02:55:25 -0500
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id gB37qp826485
+
+
+
+social
+
+
+
+On January 1st 2002, the European countries began
+
+using the new Euro.  Never before have so
+
+many countries with such powerful economies united
+
+to use a single currency.  Get your piece of history
+
+now!  We would like to send you a FREE Euro
+
+and a FREE report on world currency.  Just visit
+
+our site to request your Euro and Euro report:
+
+
+
+http://www.justaclick-supersite.com/euro/
+
+
+
+In addition to our currency report, you can receive
+
+our FREE INVESTMENT PACKAGE:
+
+
+
+*  Learn how $10,000 in options will leverage $1,000,000 in
+
+Euro Currency. This means even a small movement in the market
+
+has huge profit potential. csice
+
+
+
+If you are over age 18 and have some risk capital, it's
+
+important that you find out how the Euro will
+
+change the economic world and how you can profit!
+
+
+
+http://www.justaclick-supersite.com/euro/
+
+
+
+
+
+Please carefully evaluate your financial position before
+
+trading.  Only risk capital should be used.
+
+
+
+8C43FD25CB6F949944EE12C379E50028
+
+UTBXCUHEPUFFBNKWQ
+
+
+
+Full opt-out instructions on the bottom of the site
+
+
+
+
+
+
+
+
+
+-- 
+Irish Linux Users' Group Social Events: social@linux.ie
+http://www.linux.ie/mailman/listinfo/social for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

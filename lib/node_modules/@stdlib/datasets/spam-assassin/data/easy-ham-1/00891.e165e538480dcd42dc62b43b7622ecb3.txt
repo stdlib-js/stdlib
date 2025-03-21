@@ -1,0 +1,71 @@
+From fork-admin@xent.com  Sat Oct  5 12:39:26 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 4759016F1A
+	for <jm@localhost>; Sat,  5 Oct 2002 12:38:56 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 05 Oct 2002 12:38:56 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g952GJK23199 for <jm@jmason.org>;
+    Sat, 5 Oct 2002 03:16:19 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 1DF0B294182; Fri,  4 Oct 2002 19:16:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from sunserver.permafrost.net (u172n16.hfx.eastlink.ca
+    [24.222.172.16]) by xent.com (Postfix) with ESMTP id 20F0F294180 for
+    <fork@xent.com>; Fri,  4 Oct 2002 19:15:48 -0700 (PDT)
+Received: from [192.168.123.198] (helo=permafrost.net) by
+    sunserver.permafrost.net with esmtp (Exim 3.35 #1 (Debian)) id
+    17xeLP-0000si-00; Fri, 04 Oct 2002 23:07:03 -0300
+Message-Id: <3D9E493F.1070501@permafrost.net>
+From: Owen Byrne <owen@permafrost.net>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.1)
+    Gecko/20020826
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: Geege Schuman <geege@barrera.org>
+Cc: Carey <bitbitch@magnesium.net>, fork@spamassassin.taint.org
+Subject: Re: Headline - Navel gazing wins an Ig Nobel
+References: <ILEHJNJFPDLMDEKNIAKCMEMPCAAA.geege@barrera.org>
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 04 Oct 2002 23:06:55 -0300
+
+Geege Schuman wrote:
+
+>"British scientists were honoured for research that found ostriches became
+>more amorous with each other when a human was around. In fact, ostriches
+>eventually started putting the moves on humans."
+>
+>this is true of manatees also.  you don't want to know.
+>
+>  
+>
+So how much of it is due to jumping the inter-species boundary for 
+STATUS - i.e. I can fuck any of several
+reasonable candidates from my own species, or I can  be ambitious, and 
+go after the authority figure in the room.
+The alternative hypothesis is that its due to novelty, and then of 
+course, there's the "they'll fuck anything  given
+appropriate conditions." Hmmm, is this a potential intelligence test, 
+seeing as the last is a particularily human response?
+
+Owen
+
+
+
+

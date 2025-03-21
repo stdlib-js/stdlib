@@ -1,0 +1,139 @@
+From fork-admin@xent.com  Wed Aug 14 11:01:22 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A1C8043C45
+	for <jm@localhost>; Wed, 14 Aug 2002 05:52:13 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 14 Aug 2002 10:52:13 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7DK22416300 for <jm@jmason.org>;
+    Tue, 13 Aug 2002 21:02:03 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id C917F2940AA; Tue, 13 Aug 2002 13:00:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from barrera.org (unknown [207.5.62.130]) by xent.com (Postfix)
+    with ESMTP id 5E1C32940AA for <FoRK@xent.com>; Tue, 13 Aug 2002 12:59:26
+    -0700 (PDT)
+Received: from  (127.0.0.1 [127.0.0.1]) by MailEnable Inbound Mail Agent
+    with ESMTP; Tue, 13 Aug 2002 19:59:26 -08:00
+Message-Id: <3D59651E.3040800@barrera.org>
+From: "Joseph S. Barrera III" <joe@barrera.org>
+Organization: Rose Garden Funeral of Sores
+User-Agent: Mutt 5.00.2919.6900 DM (Nigerian Scammer Special Edition)
+X-Accept-Language: en-us, en, ja
+MIME-Version: 1.0
+To: Rodent of Unusual Size <Ken.Coar@Golux.Com>
+Cc: Flatware or Road Kill? <FoRK@xent.com>
+Subject: Re: A message for our times
+References: <3D595E66.25A7C063@Golux.Com>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 13 Aug 2002 12:59:26 -0700
+
+Rodent of Unusual Size wrote:
+> I'm not up to forking the text, but for your entertainment:
+> 
+> http://www.kanga.nu/~claw/bug_count.html
+
+Fine, *I'll* fork it. This piece has been up on the wall of our
+CTO's office for years. It deserves to be forked, or even reforked.
+
+- Joe
+
+(BTW, RAID is the home-grown bug tracking system used at Microsoft.
+See e.g. http://www.stsc.hill.af.mil/CrossTalk/1995/oct/Shippin.asp.
+It was a fine tool, better than any other I've had to use...)
+
+
+
+The Bug Count Also Rises
+
+
+by John Browne
+(Imitation Hemingway Contest Winner)
+
+In the fall of that year the rains fell as usual and washed the leaves 
+of the dust and dripped from the leaves onto the ground. The shuttles 
+drove through the rainy streets and took the people to meetings, then 
+later brought them back, their tires spraying the mist into the air.
+
+Many days he stood for a long time and watched the rain and the shuttles 
+and drank his double-tall mochas. With the mochas he was strong.
+
+Hernando who worked down the hall and who was large with microbrews came 
+to him and told him that the ship day was upon them but the bugs were 
+not yet out. The bugs which were always there even when you were in 
+Cafes late at night sipping a Redhook or a double-tall mocha and you 
+thought you were safe but they were there and although Enrico kept the 
+floor swept clean and the mochas were hot the bugs were there and they 
+ate at you.
+
+When Hernando told him this he asked how many bugs. "The RAID is huge 
+with bugs," Hernando said. "The bugs are infinite."
+
+"Why do you ask me? You know I cannot do this thing anymore with the bugs."
+
+"Once you were great with the bugs," Hernando said. "No one was 
+greater," he said again. "Even Prado."
+
+"Prado? What of Prado? Let Prado fix the bugs."
+
+Hernando shrugged. "Prado is finished. He was gored by three Sev 2's in 
+Chicago. All he does now is drink herb tea and play with his screensavers."
+
+"Herb tea?"
+
+"It is true, my friend." Hernando shrugged again. Later he went to his 
+office and sat in the dark for a long time. Then he sent e-mail to Michaels.
+
+Michaels came to him while he was sipping a mocha. They sat silently for 
+awhile, then he asked Michaels, "I need you to triage for me."
+
+Michaels looked down. "I don't do that anymore," he said.
+
+"This is different. The bugs are enormous. There are an infinity of bugs."
+
+"I'm finished with that," Michaels said again. "I just want to live 
+quietly."
+
+"Have you heard Prado is finished? He was badly gored. Now he can only 
+drink herb tea."
+
+"Herb tea?" Michaels said.
+
+"It is true," he said sorrowfully.
+
+Michaels stood up. "Then I will do it, my friend," he said formally. "I 
+will do it for Prado, who was once great with the bugs. I will do it for 
+the time we filled Prado's office with bouncy balls, and for the time 
+Prado wore his nerf weapons in the marketing hall and slew all of them 
+with no fear and only a great joy at the combat. I will do it for all 
+the pizza we ate and the bottles of Coke we drank."
+
+Together they walked slowly back, knowing it would be good. As they 
+walked the rain dripped softly from the leaves, and the shuttles carried 
+the bodies back from the meetings.
+
+-- 
+The Combatant State is your father and your mother, your only
+protector, the totality of your interests. No discipline can
+be stern enough for the man who denies that by word or deed.
+
+
+http://xent.com/mailman/listinfo/fork
+
+

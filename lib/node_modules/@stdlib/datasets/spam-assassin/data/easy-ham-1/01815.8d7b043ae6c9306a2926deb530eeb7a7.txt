@@ -1,0 +1,51 @@
+From 0xdeadbeef-request@petting-zoo.net  Sat Oct  5 10:34:15 2002
+Return-Path: <0xdeadbeef-request@petting-zoo.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id BCCE116F03
+	for <jm@localhost>; Sat,  5 Oct 2002 10:34:14 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 05 Oct 2002 10:34:14 +0100 (IST)
+Received: from petting-zoo.net (IDENT:postfix@petting-zoo.net
+    [64.166.12.219]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g94HwbK02539 for <jm-deadbeef@jmason.org>; Fri, 4 Oct 2002 18:58:38 +0100
+Received: by petting-zoo.net (Postfix, from userid 1004) id 07849EAE5;
+    Fri,  4 Oct 2002 10:52:20 -0700 (PDT)
+Old-Return-Path: <gkm@petting-zoo.net>
+Delivered-To: 0xdeadbeef@petting-zoo.net
+Received: from petting-zoo.net (localhost [127.0.0.1]) by petting-zoo.net
+    (Postfix) with ESMTP id 05215EA0A for <0xdeadbeef@petting-zoo.net>;
+    Fri,  4 Oct 2002 10:52:12 -0700 (PDT)
+From: gkm@petting-zoo.net (glen mccready)
+To: 0xdeadbeef@petting-zoo.net
+Subject: The History of Medicine
+Date: Fri, 04 Oct 2002 10:52:11 -0700
+Sender: gkm@petting-zoo.net
+Message-Id: <20021004175212.05215EA0A@petting-zoo.net>
+Resent-Message-Id: <71_ypD.A.oWD.QVdn9@petting-zoo.net>
+Resent-From: 0xdeadbeef@petting-zoo.net
+X-Mailing-List: <0xdeadbeef@petting-zoo.net> archive/latest/545
+X-Loop: 0xdeadbeef@petting-zoo.net
+List-Post: <mailto:0xdeadbeef@petting-zoo.net>
+List-Help: <mailto:0xdeadbeef-request@petting-zoo.net?subject=help>
+List-Subscribe: <mailto:0xdeadbeef-request@petting-zoo.net?subject=subscribe>
+List-Unsubscribe: <mailto:0xdeadbeef-request@petting-zoo.net?subject=unsubscribe>
+Precedence: list
+Resent-Sender: 0xdeadbeef-request@petting-zoo.net
+Resent-Date: Fri,  4 Oct 2002 10:52:20 -0700 (PDT)
+
+
+Forwarded-by: Nev Dull <nev@sleepycat.com>
+Forwarded-by: Gary Bianconi <garyb@cmc.net>
+
+The History of Medicine:
+
+  2000 B.C. -- Here, eat this root.
+  1000 A.D. -- That root is heathen. Say this prayer.
+  1850 A.D. -- That prayer is superstition. Drink this potion.
+  1940 A.D. -- That potion is snake oil. Swallow this pill.
+  1985 A.D. -- That pill is ineffective. Take this antibiotic.
+  2000 A.D. -- That antibiotic is artificial. Here, eat this root.
+
+

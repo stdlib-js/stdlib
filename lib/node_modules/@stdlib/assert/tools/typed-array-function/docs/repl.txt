@@ -1,0 +1,40 @@
+
+{{alias}}( predicate )
+    Returns a function which tests if every element in a typed array passes a
+    test condition.
+
+    The predicate function should accept a single argument: a typed array
+    element. If the element satisfies a test condition, the function should
+    return `true`; otherwise, the function should return `false`.
+
+    Given an input typed array, the returned function returns `true` if all
+    elements pass the test and `false` otherwise.
+
+    The returned function returns `false` if provided an empty typed array.
+
+    The returned function returns `false` is not provided a typed array.
+
+    Parameters
+    ----------
+    predicate: Function
+        Function to apply.
+
+    Returns
+    -------
+    fcn: Function
+        Function which tests if every element in a typed array passes a test
+        condition.
+
+    Examples
+    --------
+    > var fcn = {{alias}}( {{alias:@stdlib/assert/is-odd}} );
+    > var arr = new {{alias:@stdlib/array/int32}}( [ 1, 3, 5, 7 ] );
+    > var bool = fcn( arr )
+    true
+    > arr = new {{alias:@stdlib/array/int32}}( [ 1, 3, 5, 8 ] );
+    > bool = fcn( arr )
+    false
+
+    See Also
+    --------
+

@@ -1,0 +1,61 @@
+From ilug-admin@linux.ie  Thu Aug  1 17:17:28 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6CEE5440F3
+	for <jm@localhost>; Thu,  1 Aug 2002 12:17:26 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 01 Aug 2002 17:17:26 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g71GFR221076 for
+    <jm-ilug@jmason.org>; Thu, 1 Aug 2002 17:15:27 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id RAA19044; Thu, 1 Aug 2002 17:12:59 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from relay.dub-t3-1.nwcgroup.com
+    (postfix@relay.dub-t3-1.nwcgroup.com [195.129.80.16]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id RAA19010 for <ilug@linux.ie>; Thu,
+    1 Aug 2002 17:12:50 +0100
+Received: from corvil.com (k100-75.bas1.dbn.dublin.eircom.net
+    [159.134.100.75]) by relay.dub-t3-1.nwcgroup.com (Postfix) with ESMTP id
+    B166370095 for <ilug@linux.ie>; Thu,  1 Aug 2002 16:03:11 +0100 (IST)
+Received: from corvil.com (pixelbeat.local.corvil.com [172.18.1.170]) by
+    corvil.com (8.11.6/8.11.6) with ESMTP id g71F3Br64085 for <ilug@linux.ie>;
+    Thu, 1 Aug 2002 16:03:11 +0100 (IST) (envelope-from
+    padraig.brady@corvil.com)
+Message-Id: <3D494DAB.9060207@corvil.com>
+Date: Thu, 01 Aug 2002 16:03:07 +0100
+From: Padraig Brady <padraig.brady@corvil.com>
+Organization: Corvil Networks
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:0.9.9) Gecko/20020408
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: ilug@linux.ie
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 8bit
+Subject: [ILUG] stupid pics of the day
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Some local Irish wildlife
+
+http://www.iol.ie/~padraiga/pics/wild1.jpg
+http://www.iol.ie/~padraiga/pics/wild2.jpg
+
+was I bored or what?
+
+Pádraig.
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

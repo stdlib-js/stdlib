@@ -1,0 +1,68 @@
+From ilug-admin@linux.ie  Tue Aug 13 10:29:26 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 46C1E43C42
+	for <jm@localhost>; Tue, 13 Aug 2002 05:21:58 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:21:58 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7D2G4b13444 for
+    <jm-ilug@jmason.org>; Tue, 13 Aug 2002 03:16:04 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id DAA19630; Tue, 13 Aug 2002 03:15:20 +0100
+Received: from hibernia.jakma.org (hibernia.clubi.ie [212.17.32.129]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id DAA19593 for <ilug@linux.ie>;
+    Tue, 13 Aug 2002 03:15:14 +0100
+Received: from fogarty.jakma.org (fogarty.jakma.org [192.168.0.4]) by
+    hibernia.jakma.org (8.11.6/8.11.6) with ESMTP id g7D2Muw02998;
+    Tue, 13 Aug 2002 03:22:56 +0100
+Received: from localhost (paul@localhost) by fogarty.jakma.org
+    (8.11.6/8.11.6) with ESMTP id g7D2Msl14530; Tue, 13 Aug 2002 03:22:54
+    +0100
+X-Authentication-Warning: fogarty.jakma.org: paul owned process doing -bs
+Date: Tue, 13 Aug 2002 03:22:54 +0100 (IST)
+From: Paul Jakma <paul@clubi.ie>
+X-X-Sender: paul@fogarty.jakma.org
+To: wintermute <cout@eircom.net>
+Cc: ilug@linux.ie
+Subject: Re: [ILUG] SUSE 8 disks? (thread changed slightly)
+In-Reply-To: <200208122348.AAA13536@lugh.tuatha.org>
+Message-Id: <Pine.LNX.4.44.0208130320530.26478-100000@fogarty.jakma.org>
+X-Nsa: iraq saddam hammas hisballah rabin ayatollah korea vietnam revolt
+    mustard gas
+X-Dumb-Filters: aryan marijuiana cocaine heroin hardcore cum pussy porn
+    teen tit sex lesbian group
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Tue, 13 Aug 2002, wintermute wrote:
+
+> There are as far as I know, no Linux kernel hackers, nor distros
+> that originate from this fair island right? Right.
+
+there are at least 3 irish kernel hackers (active/inactive) on this
+list.
+
+regards,
+-- 
+Paul Jakma	paul@clubi.ie	paul@jakma.org	Key ID: 64A2FF6A
+	warning: do not ever send email to spam@dishone.st
+Fortune:
+Let the people think they govern and they will be governed.
+		-- William Penn, founder of Pennsylvania
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

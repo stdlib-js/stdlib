@@ -1,0 +1,63 @@
+
+{{alias}}( arr, searchElement[, fromIndex] )
+    Returns the first index at which a given element can be found.
+
+    Search is performed using *strict equality* comparison.
+
+    Parameters
+    ----------
+    arr: ArrayLike
+        Array-like object.
+
+    searchElement: any
+        Element to find.
+
+    fromIndex: integer (optional)
+        Starting index (if negative, the start index is determined relative to
+        last element).
+
+    Returns
+    -------
+    out: integer
+        Index or -1.
+
+    Examples
+    --------
+    // Basic usage:
+    > var arr = [ 4, 3, 2, 1 ];
+    > var idx = {{alias}}( arr, 3 )
+    1
+    > arr = [ 4, 3, 2, 1 ];
+    > idx = {{alias}}( arr, 5 )
+    -1
+
+    // Using a `fromIndex`:
+    > arr = [ 1, 2, 3, 4, 5, 2, 6 ];
+    > idx = {{alias}}( arr, 2, 3 )
+    5
+
+    // `fromIndex` which exceeds `array` length:
+    > arr = [ 1, 2, 3, 4, 2, 5 ];
+    > idx = {{alias}}( arr, 2, 10 )
+    -1
+
+    // Negative `fromIndex`:
+    > arr = [ 1, 2, 3, 4, 5, 2, 6, 2 ];
+    > idx = {{alias}}( arr, 2, -4 )
+    5
+    > idx = {{alias}}( arr, 2, -1 )
+    7
+
+    // Negative `fromIndex` exceeding input `array` length:
+    > arr = [ 1, 2, 3, 4, 5, 2, 6 ];
+    > idx = {{alias}}( arr, 2, -10 )
+    1
+
+    // Array-like objects:
+    > var str = 'bebop';
+    > idx = {{alias}}( str, 'o' )
+    3
+
+    See Also
+    --------
+

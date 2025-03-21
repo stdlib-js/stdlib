@@ -1,0 +1,32 @@
+
+{{alias}}( bstr )
+    Creates an unsigned 8-bit integer from a literal bit representation.
+
+    Parameters
+    ----------
+    bstr: string
+        Literal bit representation.
+
+    Returns
+    -------
+    out: integer
+        Unsigned 8-bit integer.
+
+    Examples
+    --------
+    > var bstr = '01010101';
+    > var val = {{alias}}( bstr )
+    85
+    > bstr = '00000000';
+    > val = {{alias}}( bstr )
+    0
+    > bstr = '00000010';
+    > val = {{alias}}( bstr )
+    2
+    > bstr = '11111111';
+    > val = {{alias}}( bstr )
+    255
+
+    See Also
+    --------
+

@@ -1,0 +1,107 @@
+From spamassassin-commits-admin@lists.sourceforge.net  Wed Aug 21 17:34:24 2002
+Return-Path: <spamassassin-commits-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4F67343C37
+	for <jm@localhost>; Wed, 21 Aug 2002 12:34:13 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 21 Aug 2002 17:34:13 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7LGWwZ01644 for <jm@jmason.org>; Wed, 21 Aug 2002 17:32:58 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17hYPn-0007o0-00; Wed,
+    21 Aug 2002 09:33:03 -0700
+Received: from usw-sf-sshgate.sourceforge.net ([216.136.171.253]
+    helo=usw-sf-netmisc.sourceforge.net) by usw-sf-list1.sourceforge.net with
+    esmtp (Cipher TLSv1:DES-CBC3-SHA:168) (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17hYPi-0004pd-00 for <spamassassin-commits@lists.sourceforge.net>;
+    Wed, 21 Aug 2002 09:32:58 -0700
+Received: from usw-pr-cvs1-b.sourceforge.net ([10.5.1.7]
+    helo=usw-pr-cvs1.sourceforge.net) by usw-sf-netmisc.sourceforge.net with
+    esmtp (Exim 3.22 #1 (Debian)) id 17hYPi-0005Pn-00 for
+    <spamassassin-commits@lists.sourceforge.net>; Wed, 21 Aug 2002 09:32:58
+    -0700
+Received: from yyyyason by usw-pr-cvs1.sourceforge.net with local (Exim 3.22
+    #1 (Debian)) id 17hYPi-0004Zs-00 for
+    <spamassassin-commits@lists.sourceforge.net>; Wed, 21 Aug 2002 09:32:58
+    -0700
+To: spamassassin-commits@example.sourceforge.net
+Message-Id: <E17hYPi-0004Zs-00@usw-pr-cvs1.sourceforge.net>
+From: Justin Mason <yyyyason@users.sourceforge.net>
+Subject: [SACVS] CVS: spamassassin/wordfreqs RUNME,1.1,1.1.4.1
+Sender: spamassassin-commits-admin@example.sourceforge.net
+Errors-To: spamassassin-commits-admin@example.sourceforge.net
+X-Beenthere: spamassassin-commits@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-commits-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-commits@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-commits>,
+    <mailto:spamassassin-commits-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <spamassassin-commits.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-commits>,
+    <mailto:spamassassin-commits-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-commits>
+X-Original-Date: Wed, 21 Aug 2002 09:32:58 -0700
+Date: Wed, 21 Aug 2002 09:32:58 -0700
+
+Update of /cvsroot/spamassassin/spamassassin/wordfreqs
+In directory usw-pr-cvs1:/tmp/cvs-serv17442/wordfreqs
+
+Modified Files:
+      Tag: b2_4_0
+	RUNME 
+Log Message:
+added a warning for ISPs in required_hits manual entry
+
+Index: RUNME
+===================================================================
+RCS file: /cvsroot/spamassassin/spamassassin/wordfreqs/RUNME,v
+retrieving revision 1.1
+retrieving revision 1.1.4.1
+diff -b -w -u -d -r1.1 -r1.1.4.1
+--- RUNME	15 Jan 2002 05:34:18 -0000	1.1
++++ RUNME	21 Aug 2002 16:32:55 -0000	1.1.4.1
+@@ -13,17 +13,20 @@
+ 
+ mv spam.local nonspam.local logs/old
+ 
+-./mass-phrase-freq /local2/mail-archives/scoop.1999.gz >> nonspam.local
+-./mass-phrase-freq /local2/mail-archives/oldmail.1998.gz >> nonspam.local
+-
+ ./mass-phrase-freq-for-jm ; sh commands.sh
+ 
+-for f in /local2/mail-archives/crackmice-old/* ; do
+-  ./mass-phrase-freq $f >> nonspam.local
++for f in /local/mail-archives/recent/nonspam/* ; do
++  echo Checking $f: ; ./mass-phrase-freq $f  >> nonspam.local
+ done
+ 
+-./mass-phrase-freq /local2/mail-archives/kelsey.spamtrap.gz >> spam.local
+-./mass-phrase-freq /local2/mail-archives/spam.2000-2001.gz >> spam.local
++./mass-phrase-freq /local/mail-archives/recent/spamtrap/20020717/nonspam.mbox >> nonspam.local
++
++./mass-phrase-freq /local/mail-archives/recent/spamtrap/20020717/mbox >> spam.local
++
++for f in /local/mail-archives/old/nonspam/* /local/mail-archives/recent/nonspam/*
++do
++  echo Checking $f: ; ./mass-phrase-freq $f >> nonspam.local
++done
+ 
+ echo "
+ 
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-commits mailing list
+Spamassassin-commits@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-commits
+

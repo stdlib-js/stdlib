@@ -1,0 +1,32 @@
+From rssfeeds@jmason.org  Thu Sep 26 11:03:25 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id ACDC016F18
+	for <jm@localhost>; Thu, 26 Sep 2002 11:03:15 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 11:03:15 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8Q81PC06417 for
+    <jm@jmason.org>; Thu, 26 Sep 2002 09:01:25 +0100
+Message-Id: <200209260801.g8Q81PC06417@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: scripting <rssfeeds@spamassassin.taint.org>
+Subject: Ed Cone: "The House Subcommittee on Courts, the Internet, and
+    Intellectual
+Date: Thu, 26 Sep 2002 08:01:25 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://scriptingnews.userland.com/backissues/2002/09/25#When:12:25:19PM
+Date: Wed, 25 Sep 2002 19:25:19 GMT
+
+Ed Cone[1]: "The House Subcommittee on Courts, the Internet, and Intellectual 
+Property will hold a hearing on 'Piracy of Intellectual Property on 
+Peer-to-Peer Networks' at 9AM., Thursday, September 26, (2141 Rayburn House 
+Office Building). The Berman-Coble bill will be discussed. The hearings are 
+open to the press."
+
+[1] http://radio.weblogs.com/0107946/2002/09/25.html#a187
+
+

@@ -1,0 +1,182 @@
+From fork-admin@xent.com  Wed Sep 11 19:42:14 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id D5BE316F03
+	for <jm@localhost>; Wed, 11 Sep 2002 19:42:12 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 11 Sep 2002 19:42:12 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8BGdKC23029 for <jm@jmason.org>;
+    Wed, 11 Sep 2002 17:39:21 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 86CBB294164; Wed, 11 Sep 2002 09:36:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from Boron.MeepZor.Com (i.meepzor.com [204.146.167.214]) by
+    xent.com (Postfix) with ESMTP id 4485229409A for <fork@xent.com>;
+    Wed, 11 Sep 2002 09:35:06 -0700 (PDT)
+Received: from sashimi (rdu162-235-094.nc.rr.com [24.162.235.94]) by
+    Boron.MeepZor.Com (8.11.6/8.11.6) with SMTP id g8BGbpg15734 for
+    <fork@xent.com>; Wed, 11 Sep 2002 12:37:51 -0400
+From: "Bill Stoddard" <bill@wstoddard.com>
+To: "Fork@Xent.Com" <fork@spamassassin.taint.org>
+Subject: Hanson's Sept 11 message in the National Review
+Message-Id: <JHEPKCEMGPKFFDHHDDKDAEEMFFAA.bill@wstoddard.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Importance: Normal
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 11 Sep 2002 12:37:15 -0400
+
+
+http://www.nationalreview.com/hanson/hanson091102.asp
+
+
+September 11, 2002 8:00 a.m.
+The Wages of September 11
+There is no going back.
+
+
+
+September 11 changed our world. Those who deny such a watershed event take a
+superficially short-term view, and seem to think all is as before simply
+because the sun still rises and sets.
+
+This is a colossal misjudgment. The collapse of the towers, the crashing
+into the Pentagon, and the murder of 3,000 Americans — all seen live in real
+time by millions the world over — tore off a scab and exposed deep wounds,
+which, if and when they heal, will leave ugly scars for decades. The killers
+dealt in icons — the choice of 911 as the date of death, targeting the
+manifest symbols of global capitalism and American military power, and
+centering their destruction on the largest Jewish city in the world. Yes,
+they got their symbols in spades, but they have no idea that their killing
+has instead become emblematic of changes that they could scarcely imagine.
+
+Islamic fundamentalism has proved not ascendant, but static, morally
+repugnant — and the worst plague upon the Arab world since the Crusades. By
+lurking in the shadows and killing incrementally through stealth, the
+vampirish terrorists garnered bribes and subsidies through threats and
+bombs; but pale and wrinkled in the daylight after 9/11, they prove only
+ghoulish not fearsome.
+
+The more the world knows of al Qaeda and bin Laden, the more it has found
+them both vile and yet banal — and so is confident and eager to eradicate
+them and all they stand for. It is one thing to kill innocents, quite
+another to take on the armed might of an aroused United States. Easily
+dodging a solo cruise missile in the vastness of Afghanistan may make good
+theater and bring about braggadocio; dealing with grim American and British
+commandos who have come 7,000 miles for your head prompts abject flight and
+an occasional cheap infomercial on the run. And the ultimate consequence of
+the attacks of September 11 will not merely be the destruction of al Qaeda,
+but also the complete repudiation of the Taliban, the Iranian mullocracy,
+the plague of the Pakistani madrassas, and any other would-be fundamentalist
+paradise on earth.
+
+Foreign relations will not be the same in our generation. Our coalition with
+Europe, we learn, was not a partnership, but more mere alphabetic
+nomenclature and the mutual back scratching of Euro-American globetrotters —
+a paper alliance without a mission nearly 15 years after the end of the Cold
+War. The truth is that Europe, out of noble purposes, for a decade has
+insidiously eroded its collective national sovereignty in order to craft an
+antidemocratic EU, a 80,000-person fuzzy bureaucracy whose executive power
+is as militarily weak as it is morally ambiguous in its reliance on often
+dubious international accords. This sad realization September 11 brutally
+exposed, and we all should cry for the beloved continent that has for the
+moment completely lost its moral bearings. Indeed, as the months progressed
+the problems inherent in "the European way" became all too apparent:
+pretentious utopian manifestos in lieu of military resoluteness, abstract
+moralizing to excuse dereliction of concrete ethical responsibility, and
+constant American ankle-biting even as Europe lives in a make-believe Shire
+while we keep back the forces of Mordor from its picturesque borders, with
+only a few brave Frodos and Bilbos tagging along. Nothing has proved more
+sobering to Americans than the skepticism of these blinkered European
+hobbits after September 11.
+
+America learned that "moderate" Arab countries are as dangerous as hostile
+Islamic nations. After September 11, being a Saudi, Egyptian, or Kuwaiti
+means nothing special to an American — at least not proof of being any more
+friendly or hostile than having Libyan, Syrian, or Lebanese citizenship.
+Indeed, our entire postwar policy of propping up autocracies on the triad of
+their anticommunism, oil, and arms purchases — like NATO — belongs to a
+pre-9/11 age of Soviet aggrandizement and petroleum monopolies. Now we learn
+that broadcasting state-sponsored hatred of Israel and the United States is
+just as deadly to our interests as scud missiles — and as likely to come
+from friends as enemies. Worst-case scenarios like Iran and Afghanistan
+offer more long-term hope than "stable regimes" like the Saudis; governments
+that hate us have populations that like us — and vice versa; the Saudi royal
+family, whom 5,000 American troops protect, and the Mubarak autocracy, which
+has snagged billions of American dollars, are as afraid of democratic
+reformers as they are Islamic fundamentalists. And with good reason: Islamic
+governments in Iran and under the Taliban were as hated by the masses as
+Arab secular reformers in exile in the West are praised and championed.
+
+The post-9/11 domestic calculus is just as confusing. Generals and the
+military brass call civilians who seek the liberation of Iraq "chicken
+hawks" and worse. Yet such traditional Vietnam-era invective I think rings
+hollow after September 11, and sounds more like McClellan's shrillness
+against his civilian overseers who precipitously wanted an odious slavery
+ended than resonant of Patton's audacity in charging after murderous Nazis.
+More Americans were destroyed at work in a single day than all those
+soldiers killed in enemy action since the evacuation of Vietnam nearly 30
+years ago. Indeed, most troops who went through the ghastly inferno of
+Vietnam are now in or nearing retirement; and, thank God, there is no
+generation of Americans in the present military — other than a few thousand
+brave veterans of the Gulf, Mogadishu, and Panama — who have been in
+sustained and deadly shooting with heavy casualties. Because American
+soldiers and their equipment are as impressive as our own domestic security
+is lax, in this gruesome war it may well be more perilous to work high up in
+lower Manhattan, fly regularly on a jumbo jet, or handle mail at the
+Pentagon or CIA than be at sea on a sub or destroyer.
+
+Real concern for the sanctity of life may hinge on employing rather than
+rejecting force, inasmuch as our troops are as deadly and protected abroad
+as our women, children, aged, and civilians are impotent and vulnerable at
+home. It seems to me a more moral gamble to send hundreds of pilots into
+harm's way than allow a madman to further his plots to blow up or infect
+thousands in high-rises.
+
+Politics have been turned upside down. In the old days, cynical
+conservatives were forced to hold their noses and to practice a sometimes
+repellent Realpolitik. In the age of Russian expansionism, they were loathe
+to champion democracy when it might usher in a socialist Trojan Horse whose
+belly harbored totalitarians disguised as parliamentarians. Thus they were
+so often at loggerheads with naïve and idealist leftists.
+
+No longer. The end of the specter of a deadly and aggressive Soviet
+Communism has revived democratic ideology as a force in diplomacy. Champions
+of freedom no longer sigh and back opportunistic rightist thugs who promise
+open economics, loot their treasuries, and keep out the Russians. Instead,
+even reactionaries are now more likely to push for democratic governments in
+the Middle East than are dour and skeptical leftists. The latter, if
+multiculturalists, often believe that democracy is a value-neutral Western
+construct, not necessarily a universal good; if pacifists, they claim
+nonintervention, not justice, as their first priority. The Right, not the
+Left, now is the greater proponent of global freedom, liberation, and
+idealism — with obvious domestic ramifications for any Republican president
+astute enough to tap that rich vein of popular support.
+
+All this and more are the wages of the disaster of September 11 and the
+subsequent terrible year — and yet it is likely that, for good or evil, we
+will see things even more incredible in the twelve months ahead.
+
+
+
+
+

@@ -1,0 +1,100 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Sep  5 13:39:28 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 1A38C16F1F
+	for <jm@localhost>; Thu,  5 Sep 2002 13:39:27 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 05 Sep 2002 13:39:27 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g85Ca4Z18947 for <jm-sa@jmason.org>; Thu, 5 Sep 2002 13:36:04 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17mvpl-0006qx-00; Thu,
+    05 Sep 2002 05:34:05 -0700
+Received: from dhcp024-208-195-177.indy.rr.com ([24.208.195.177]
+    helo=burgers.bubbanfriends.org) by usw-sf-list1.sourceforge.net with esmtp
+    (Cipher TLSv1:DES-CBC3-SHA:168) (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17mvp4-0007xp-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Thu, 05 Sep 2002 05:33:22 -0700
+Received: from localhost (localhost.localdomain [127.0.0.1]) by
+    burgers.bubbanfriends.org (Postfix) with ESMTP id 2E7AA4001A1;
+    Thu,  5 Sep 2002 07:33:17 -0500 (EST)
+Received: by burgers.bubbanfriends.org (Postfix, from userid 500) id
+    08B464001A0; Thu,  5 Sep 2002 07:33:15 -0500 (EST)
+Received: from localhost (localhost [127.0.0.1]) by
+    burgers.bubbanfriends.org (Postfix) with ESMTP id E6805C026A6;
+    Thu,  5 Sep 2002 07:33:15 -0500 (EST)
+From: Mike Burger <mburger@bubbanfriends.org>
+To: "Malte S. Stretz" <msquadrat.nospamplease@gmx.net>
+Cc: spamassassin-talk@example.sourceforge.net
+Subject: Re: [SAtalk] PerMsgStatus.pm error?
+In-Reply-To: <200209051318.24194@malte.stretz.eu.org>
+Message-Id: <Pine.LNX.4.44.0209050731510.10379-100000@burgers.bubbanfriends.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+X-Virus-Scanned: by AMaViS new-20020517
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Thu, 5 Sep 2002 07:33:15 -0500 (EST)
+Date: Thu, 5 Sep 2002 07:33:15 -0500 (EST)
+
+It's possible...I performed the update via "rpm -U"...which, of course, 
+created all the new rulesets as "xx_rulename.cf.rpmnew"  Crud.  I'll have 
+to start moving things around.
+
+On Thu, 5 Sep 2002, Malte S. Stretz wrote:
+
+> On Thursday 05 September 2002 04:10 CET Mike Burger wrote:
+> > Just loaded up SA 2.40 from Theo's RPMs...spamassassin-2.40-1 and
+> > perl-Mail-SpamAssassin-2.40-1 on a RH 7.1 system with perl 5.6.1 running
+> > on it.
+> >
+> > I'm getting messages that seem to indicate that SA can't find
+> > PerMsgStatus, like so:
+> >
+> > Sep  4 21:01:59 burgers spamd[17579]: Failed to run CTYPE_JUST_HTML
+> > SpamAssassin test, skipping: ^I(Can't locate object method
+> > "check_for_content_type_just_html" via package
+> > "Mail::SpamAssassin::PerMsgStatus" (perhaps you forgot to load
+> > "Mail::SpamAssassin::PerMsgStatus"?) at
+> > /usr/lib/perl5/site_perl/5.6.1/Mail/SpamAssassin/PerMsgStatus.pm line
+> > 1814, <STDIN> line 21. )
+> >
+> >[...]
+> >
+> > Any ideas?
+> 
+> Perl doesn't complain that it can't find PerMsgStatus.pm but the function 
+> check_for_content_type_just_html(). Do you probably have some old rules 
+> files still lurking around? This test existed in 2.31 but is gone/was 
+> renamed with 2.40.
+> 
+> Malte
+> 
+> 
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

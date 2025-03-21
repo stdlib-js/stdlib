@@ -1,0 +1,33 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Sun Sep  8 21:36:15 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Sun, 08 Sep 2002 16:36:15 -0400
+Subject: [Spambayes] Ditching WordInfo
+In-Reply-To: <w537khybba6.fsf@woozle.org>
+Message-ID: <LNBBLJKPBEHFEDALKOLCCEPNBCAB.tim.one@comcast.net>
+
+[Neale Pickett]
+> ...
+> If you can spare the memory, you might get better performance in this
+> case using the pickle store, since it only has to go to disk once (but
+> boy, does it ever go to disk!)  I can't think of anything obvious to
+> speed things up once it's all loaded into memory, though.
+
+On my box the current system scores about 50 msgs per second (starting in
+memory, of course).  While that can be a drag while waiting for one of my
+full test runs to complete (one of those scores a message more than 120,000
+times, and trains more than 30,000 times), I've got no urge to do any speed
+optimizations -- if I were using this for my own email, I'd never notice the
+drag.  Guido will bitch like hell about waiting an extra second for his
+50-msg batches to score, but he's the boss so he bitches about everything
+<wink>.
+
+> That's profiler territory, and profiling is exactly the kind of
+> optimization I just said I wasn't going to do :)
+
+I haven't profiled yet, but *suspect* there aren't any egregious hot spots.
+5-gram'ing of long words with high-bit characters is likely overly expensive
+*when* it happens, but it doesn't happen that often, and as an approach to
+non-English languages it sucks anyway (i.e., there's no point speeding
+something that ought to be replaced entirely).
+

@@ -1,0 +1,61 @@
+From spamassassin-commits-admin@lists.sourceforge.net  Thu Sep 26 20:43:38 2002
+Return-Path: <spamassassin-commits-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 5868216F16
+	for <jm@localhost>; Thu, 26 Sep 2002 20:43:38 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 20:43:38 +0100 (IST)
+Received: from usw-sf-list1.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8QIvSg01698 for <jm@jmason.org>; Thu, 26 Sep 2002 19:57:29 +0100
+Received: from usw-sf-list2-b.sourceforge.net ([10.3.1.14]
+    helo=usw-sf-list2.sourceforge.net) by usw-sf-list1.sourceforge.net with
+    esmtp (Cipher TLSv1:DES-CBC3-SHA:168) (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17udpr-0003Gn-00 for <jmason@users.sourceforge.net>; Thu, 26 Sep 2002
+    11:58:03 -0700
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17udpt-0007W1-00 for
+    <jmason@users.sourceforge.net>; Thu, 26 Sep 2002 11:58:05 -0700
+Received: from bouncemail1.prodigy.net ([207.115.63.83]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17udp0-0003Ax-00 for <spamassassin-commits-admin@lists.sourceforge.net>;
+    Thu, 26 Sep 2002 11:57:10 -0700
+Received: from vma-ext.prodigy.net (vma-int.prodigy.net [192.168.241.86])
+    by BounceMail1.prodigy.net (8.11.6/8.11.6) with ESMTP id g8QHUeo23558 for
+    <spamassassin-commits-admin@lists.sourceforge.net>; Thu, 26 Sep 2002
+    13:30:40 -0400
+Received: (from root@localhost) by vma-ext.prodigy.net (8.12.3 da nor
+    stuldap/8.12.3) id g8QHUeTt304894 for
+    spamassassin-commits-admin@lists.sourceforge.net; Thu, 26 Sep 2002
+    13:30:40 -0400
+From: MAILER-DAEMON@prodigy.net
+Message-Id: <200209261730.g8QHUeTt304894@vma-ext.prodigy.net>
+Date: Thu, 26 Sep 2002 13:16:12 -0400
+Subject: Returned mail: [SACVS] CVS: spamassassin/masses craig-evolve.c.ALTIVEC,NONE,1.1
+    craig-evolve.c,1.8,1.9
+To: <spamassassin-commits-admin@example.sourceforge.net>
+Sender: spamassassin-commits-owner@example.sourceforge.net
+Errors-To: spamassassin-commits-owner@example.sourceforge.net
+X-Beenthere: spamassassin-commits@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-commits-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-commits@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-commits>,
+    <mailto:spamassassin-commits-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <spamassassin-commits.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-commits>,
+    <mailto:spamassassin-commits-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchives/forum.php?forum=spamassassin-commits>
+    NO_REAL_NAME version=2.50-cvs
+X-Spam-Level:
+
+Unable to find user: <matt_relay@sbcglobal.net>
+Please make sure the address is correct and resend your mail.
+
+
+
+

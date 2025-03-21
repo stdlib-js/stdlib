@@ -1,0 +1,109 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Sep  5 12:39:32 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 1CE6D16F22
+	for <jm@localhost>; Thu,  5 Sep 2002 12:39:21 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 05 Sep 2002 12:39:21 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g85BIUZ16473 for <jm-sa@jmason.org>; Thu, 5 Sep 2002 12:18:30 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17mucI-0006th-00; Thu,
+    05 Sep 2002 04:16:06 -0700
+Received: from mailout05.sul.t-online.com ([194.25.134.82]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17muc0-0002ux-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Thu, 05 Sep 2002 04:15:49 -0700
+Received: from fwd05.sul.t-online.de by mailout05.sul.t-online.com with
+    smtp id 17mubx-0001pe-0D; Thu, 05 Sep 2002 13:15:45 +0200
+Received: from nebukadnezar.msquadrat.de
+    (520061089980-0001@[217.80.6.207]) by fmrl05.sul.t-online.com with esmtp
+    id 17mubq-0pKN0KC; Thu, 5 Sep 2002 13:15:38 +0200
+Received: from otherland (otherland.msquadrat.de [10.10.10.10]) by
+    nebukadnezar.msquadrat.de (Postfix on SuSE Linux 7.3 (i386)) with ESMTP id
+    92DF53BF4 for <spamassassin-talk@lists.sf.net>; Thu,  5 Sep 2002 13:15:40
+    +0200 (CEST)
+Content-Type: text/plain; charset="iso-8859-1"
+From: "Malte S. Stretz" <msquadrat.nospamplease@gmx.net>
+To: spamassassin-talk@example.sourceforge.net
+Subject: Re: [SAtalk] PerMsgStatus.pm error?
+User-Agent: KMail/1.4.3
+References: <Pine.LNX.4.44.0209042107050.17700-100000@burgers.bubbanfriends.org>
+In-Reply-To: <Pine.LNX.4.44.0209042107050.17700-100000@burgers.bubbanfriends.org>
+X-Accept-Language: de, en
+X-Habeas-Swe-1: winter into spring
+X-Habeas-Swe-2: brightly anticipated
+X-Habeas-Swe-3: like Habeas SWE (tm)
+X-Habeas-Swe-4: Copyright 2002 Habeas (tm)
+X-Habeas-Swe-5: Sender Warranted Email (SWE) (tm). The sender of this
+X-Habeas-Swe-6: email in exchange for a license for this Habeas
+X-Habeas-Swe-7: Warrant Mark warrants that this is a Habeas Compliant
+X-Habeas-Swe-8: Message (HCM) and not spam. Please report use of this
+X-Habeas-Swe-9: mark in spam to <http://www.habeas.com/report/>.
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Message-Id: <200209051318.24194@malte.stretz.eu.org>
+X-Sender: 520061089980-0001@t-dialin.net
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Thu, 5 Sep 2002 13:18:24 +0200
+Date: Thu, 5 Sep 2002 13:18:24 +0200
+
+On Thursday 05 September 2002 04:10 CET Mike Burger wrote:
+> Just loaded up SA 2.40 from Theo's RPMs...spamassassin-2.40-1 and
+> perl-Mail-SpamAssassin-2.40-1 on a RH 7.1 system with perl 5.6.1 running
+> on it.
+>
+> I'm getting messages that seem to indicate that SA can't find
+> PerMsgStatus, like so:
+>
+> Sep  4 21:01:59 burgers spamd[17579]: Failed to run CTYPE_JUST_HTML
+> SpamAssassin test, skipping: ^I(Can't locate object method
+> "check_for_content_type_just_html" via package
+> "Mail::SpamAssassin::PerMsgStatus" (perhaps you forgot to load
+> "Mail::SpamAssassin::PerMsgStatus"?) at
+> /usr/lib/perl5/site_perl/5.6.1/Mail/SpamAssassin/PerMsgStatus.pm line
+> 1814, <STDIN> line 21. )
+>
+>[...]
+>
+> Any ideas?
+
+Perl doesn't complain that it can't find PerMsgStatus.pm but the function 
+check_for_content_type_just_html(). Do you probably have some old rules 
+files still lurking around? This test existed in 2.31 but is gone/was 
+renamed with 2.40.
+
+Malte
+
+-- 
+-- Coding is art.
+-- 
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

@@ -1,0 +1,49 @@
+From fork-admin@xent.com  Thu Jul 25 11:09:57 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 808FD440DA
+	for <jm@localhost>; Thu, 25 Jul 2002 06:09:19 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 11:09:19 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6P1Be419715 for <jm@jmason.org>;
+    Thu, 25 Jul 2002 02:11:40 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 3E100294167; Wed, 24 Jul 2002 18:10:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from argote.ch (argote.ch [80.65.224.17]) by xent.com (Postfix)
+    with ESMTP id 66633294161 for <fork@xent.com>; Wed, 24 Jul 2002 18:09:50
+    -0700 (PDT)
+Received: by argote.ch (Postfix, from userid 500) id 9F58EC44E;
+    Thu, 25 Jul 2002 02:57:59 +0200 (CEST)
+To: fork@spamassassin.taint.org
+Subject: Re: Asteroids anyone ?
+Message-Id: <20020725005759.9F58EC44E@argote.ch>
+From: harley@argote.ch (Robert Harley)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 25 Jul 2002 02:57:59 +0200 (CEST)
+
+James Rogers wrote:
+>I don't think a ballistic missile defense system will be much help
+>against a rock a couple thousand kilometers in diameter.
+
+That would destroy Earth completely!  The one in question is 2.06 km
+(1.28 miles) in diameter.
+
+R
+http://xent.com/mailman/listinfo/fork
+
+

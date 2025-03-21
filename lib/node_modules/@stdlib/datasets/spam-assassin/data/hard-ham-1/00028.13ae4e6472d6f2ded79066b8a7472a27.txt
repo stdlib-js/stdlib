@@ -1,0 +1,492 @@
+Return-Path: <Online#3.19700.89-xNOclp13QVGIDsRR.1.b@newsletter.online.com>
+Received: from abv-sfo-acmta2.cnet.com (abv-sfo1-acmta2.cnet.com [206.16.1.161])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6AMhBJ10049
+	for <qqqqqqqqqq-cnet-newsletters@spamassassin.taint.org>; Wed, 10 Jul 2002 23:43:11 +0100
+Received: from abv-sfo1-ac-agent2 (206.16.0.224) by abv-sfo-acmta2.cnet.com (PowerMTA(TM) v1.5); Wed, 10 Jul 2002 18:45:09 -0700 (envelope-from <Online#3.19700.89-xNOclp13QVGIDsRR.1.b@newsletter.online.com>)
+Message-ID: <7416973.1026340983508.JavaMail.root@abv-sfo1-ac-agent2>
+Date: Wed, 10 Jul 2002 15:43:03 -0700 (PDT)
+From: CNET Hardware Newsletter <Online#3.19700.89-xNOclp13QVGIDsRR.1@newsletter.online.com>
+To: qqqqqqqqqq-cnet-newsletters@spamassassin.taint.org
+Subject: IBM's thin ThinkPads fit to a T
+Mime-Version: 1.0
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+X-Mailer: Accucast (http://www.accucast.com)
+X-Mailer-Version: 2.8.4-2
+
+
+<html>
+<head>
+	<title>CNET Hardware Newsletter</title>
+</head>
+<body bgcolor="#eeeeee">
+<center><a href="top"></a>
+<!-- header -->
+<table cellpadding=0 cellspacing=0 border=0 width=612 bgcolor="#ffffff">
+	<tr valign=top><td width=442 colspan=4>
+    	<img src="http://a.r.tv.com/cnet.1d/i/nl/hw/442_computersHEAD_NWSLTR.gif" width="442" height="60" border="0" alt="CNET Computers.com Newsletter"><br>
+        <table width=442 cellpadding=0 cellspacing=0 border=0 bgcolor="#ffcc00">
+        	<tr><td bgcolor="#000000" colspan=3><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"><br></td></tr>
+            <tr><td bgcolor="#000000" width=1 rowspan=2><img src="http://home.cnet.com/b.gif" width="1" height="10" border="0"><br></td>
+                <td width=10 rowspan=2><img src="http://home.cnet.com/b.gif" width="1" height="10" border="0"><br></td>
+                <td  width=430><img src="http://home.cnet.com/b.gif" width="1" height="10" border="0"><br></td>
+             </tr>
+             <tr><td bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"><br></td></tr>
+        </table>
+        </td>
+<!-- Skyscraper column -->
+	<td width=160 rowspan=2>
+
+<!-- shopping  -->
+<iframe src="http://www.zdnet.com/include/ads/ifc/RGROUP=2560" scrolling="no" frameborder="0" hspace="0" vspace="0" height="600" width="160" marginheight="0" marginwidth="0">
+<script language="JavaScript" src="http://www.zdnet.com/include/ads/js/RGROUP=2560">
+</script>
+</iframe>
+<!-- /shopping -->
+<br><br>
+<!-- right column content -->
+
+<!-- EDITORS' CHOICE -->
+
+				<img src="http://www.cnet.com/i/dp/RHC_EdCHOICE.gif" alt="Editors' Choice" width="150" height="20" border="0"><br>
+
+				<table width="100%25" border=0 cellpadding=3 cellspacing=0>
+
+				<tr valign=top><td><font face="arial, helvetica" size="-1">
+
+
+
+<!-- hardware -->
+
+				<a href="http://clickthru.online.com/Click?q=9f-o7XMQ1JdLN498aDYlcGhVIlcU_ZR" >Samsung ML-1430</a>&nbsp;<a href="http://clickthru.online.com/Click?q=b4-aJlbQ6Z1xKPgfp8qJzDxDXozLCdR" ><img src="http://www.cnet.com/Images/Global/ed_choice_13x13.gif" width=13 height=13 border=0 alt="Editors' Choice"></a><br>
+
+				<font size="-2">In Hardware</font>
+
+<!-- /hardware -->	
+
+				</font></td></tr><tr valign=top><td><font face="arial, helvetica" size="-1">
+
+<!-- electronics -->
+
+				<a href="http://clickthru.online.com/Click?q=c9-3OZLQpgkU3Yh4WSjg0SxiPZvH6cR" >Unitech 2U4U DMR-300</a> <a href="http://clickthru.online.com/Click?q=de-7tpkQMWaO-TNtE6tTbDS-BJjhoRR" ><img src="http://www.cnet.com/Images/Global/ed_choice_13x13.gif" width=13 height=13 border=0 alt="Editors' Choice"></a><br>
+
+				<font size="-2">In Electronics</font>
+
+<!-- /electronics -->
+
+				</font></td></tr><tr valign=top><td><font face="arial, helvetica" size="-1">
+
+<!-- software -->
+
+				<a href="http://clickthru.online.com/Click?q=f3-LjwgQJOwj9EuMSxCs3CyJqsjeoFR" >Video Explosion Deluxe</a> <a href="http://clickthru.online.com/Click?q=08-IFoQIRjFUlc4KmHg3F-erCpGY99R" ><img src="http://www.cnet.com/Images/Global/ed_choice_13x13.gif" width=13 height=13 border=0 alt="Editors' Choice"></a><br>
+
+				<font size="-2">In Software</font>
+
+<!-- /software -->
+
+				</font></td></tr><tr valign=top><td><font face="arial, helvetica" size="-1">
+
+<!-- wireless -->
+
+				<a href="http://clickthru.online.com/Click?q=5b-5LOwIBKDUXy36LoxCjjvDSwizzlR" >Sony Ericsson T68</a> <a href="http://clickthru.online.com/Click?q=70-3vnJIdp6VDrfs2YKns2asfI8Uk4R" ><img src="http://www.cnet.com/Images/Global/ed_choice_13x13.gif" width=13 height=13 border=0 alt="Editors' Choice"></a><br>
+
+				<font size="-2">In Wireless</font>
+
+<!-- /wireless -->				
+
+				</font></td></tr></table>
+
+				 <br>
+				
+				<!-- /EDITORS' CHOICE -->
+<br><br>
+
+<!-- search form -->
+<table cellspacing=0 cellpadding=0 width=150 border=0>
+	<form method=get action="http://www.search.com/redirect">
+		<tr valign=top><td><font size="-1" face="arial,helvetica,sans-serif">
+			<img src="http://a.r.tv.com/cnet.1d/i/se/dispatch_hd.gif" width=150 height=20 alt="CNET Search.com" border=0><br>
+			<img src="http://cnet.com/b.gif" width=1 height=1><br>
+			<input type=text name=q size=17 value=""><br>
+			<select name=target class=frmel>
+			<!-- <option value="http://hardware.search.com/search?tag=ex.computers.dispatch.srch.cnet">Computers -->
+ 				<option value="http://computers.cnet.com/hardware/search/1,10121,0-1016-401-0,00.html?tag=srch&qt=%%q%%&cn=&ca=1016">Computers
+ 				<option value="http://cnet.search.com/search?tag=ex.computers.dispatch.srch.cnet">All CNET
+ 				<option value="http://www.search.com/search?tag=ex.computers.dispatch.srch.web">The Web
+			</select> 
+			<input type=submit value="Go!"></font></td>
+		</tr>
+	</form>
+</table><p>
+<!-- /search form -->   
+
+	</td><td width=9 rowspan=2>
+		<img src="http://a.r.tv.com/cnet.1d/i/dp/dd_c.gif" width="9" height="60" border="0"><br>
+		<table width=9 cellpadding=0 cellspacing=0 border=0>
+			<tr><td bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="9" height="1" border="0"><br></td></tr>
+			<tr><td bgcolor="#ffccoo"><img src="http://home.cnet.com/b.gif" width="9" height="10" border="0"><br></td></tr>
+			<tr><td bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="9" height="1" border="0"><br></td></tr>
+		</table>
+		</td><td width=1 bgcolor="#000000" rowspan=2>
+			<table width=1 cellpadding=0 cellspacing=0 border=0>
+				<tr><td bgcolor="#eeeeee"><img src="http://home.cnet.com/b.gif" width="1" height="60" border="0"><br></td></tr>
+			</table>
+			</td>
+		</tr>
+		
+		<!-- promo section -->
+		<tr valign=top><td width=1 bgcolor="#000000">
+			<img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td>
+			<td width=10 bgcolor="#ffcc00"><img src="http://home.cnet.com/b.gif" width="10" height="1" border="0"><br></td>
+			<td width=1 bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td>
+			<td width=430 bgcolor="#ffffff">
+	
+			<table cellpadding=0 cellspacing=0 border=0 width=430 bgcolor="#ffffef">
+				<tr valign=top><td width=10>
+					<img src="http://home.cnet.com/b.gif" alt="" width="10" height="1" border="0"><br></td>
+					<td width=412><img src="http://home.cnet.com/b.gif" width="1" height="3"><br>
+					<img src="http://home.cnet.com/b.gif" width="10" height="1" border="0"><font face="Arial, Helvetica" size="-2">July 10, 2002</font><br>
+					<img src="http://home.cnet.com/b.gif" width="1" height="3"><br>
+
+					<table cellpadding=0 cellspacing=0 border=0 width=412>
+						<tr valign=top><td width=76 align=right>
+							<img src="http://a.r.tv.com/cnet.1d/i/nl/hw/66x86_TOMD.gif" width="66" height="86" border="0"><br>
+							<font face="arial, helvetica" size="-2" color="#666666">
+							--Tom Dunlap<br>
+							Senior editor<br>
+							CNET Hardware<br></font>
+							</td><td width=10></td>
+							<td><font face="Arial, Helvetica">
+								<font color="#333333"><B>Dear Readers,</B></font><BR>
+								<font size="-1">
+Hey, it's not all bad news in the corporate world. One definite
+business success story is Big Blue's ThinkPad T series. These
+versatile and speedy thin-and-light notebooks share a sturdy,
+well-designed black case and come in so many configurations that
+you can find one that's right for just about any use. They also
+range in price from $2,199 to a hefty $3,499.  For a comprehensive
+look at this line of notebooks, check out our verdict.
+<br>
+<a href="http://clickthru.online.com/Click?q=85-2G2oQ7KQfS5iy4Qaf70SVbToBBuR" ><b>Read the review</b></a>
+&nbsp;&#124;&nbsp;
+<a href="http://clickthru.online.com/Click?q=9b-7-TFQSIo2pCWI8d0dAVJ9PZAKTFR" ><b>Check latest prices</b></a>
+</font><br><br>
+							</td>
+						</tr>
+					</table>
+					</td><td width=8><img src="http://home.cnet.com/b.gif" alt="" width="8" height="1" border="0"><br></td>
+				</tr>
+			</table>
+
+			<table cellpadding=0 width="100%">
+  				<tr><td align=center>
+      				<table width="100%" cellspacing="0" cellpadding="0" border="0">
+	    				<tr><td align="center" colspan="5">
+							<img src="http://home.cnet.com/Ads/Media/Images/ad10-dk.gif" width="120" height="10" alt="advertisement"></td></tr>
+        				<tr valign="middle"><td colspan="5" bgcolor="#999999" height="15">
+							<font face="verdana,geneva,helvetica" size="-2" color="#ffffff"><b>click  here for details</b></font><br></td></tr>
+						<tr valign="middle" align="center" bgcolor="#eeeeee">
+		  					<td height="35"> </td>
+		  					<FORM action=http://computers.cnet.com/cgi-acc/clickthru.acc method=get target=_top>
+		  					<td width="50%" align="center">
+		  						<INPUT name=url type=hidden value=http://home.cnet.com/go/to?tag=dd.co.wht.aislebut.dktp-dell&destUrl=http%3a%2f%2fhome.cnet.com%2fhardware%2fsearch%2fresults%2f1,11277,0-1017-403-0,00.html%3fqt%3ddell%2bhome>
+		  						<INPUT type=submit value="     Dell     "></td></form>
+		  						<FORM action=http://computers.cnet.com/cgi-acc/clickthru.acc method=get target=_top>
+		  					<td width="50%" align="center">
+		  						<INPUT name=url type=hidden value=http://home.cnet.com/go/to?tag=dd.co.wht.aislebut.dktp-gateway&destUrl=http%3a%2f%2fhome.cnet.com%2fhardware%2fsearch%2fresults%2f1,11277,0-1017-403-0,00.html%3fqt%3dgateway> 
+		  						<INPUT type=submit value=" Gateway "></td></form>
+							<td></td>
+						</tr>
+	  				</table>    
+					</td>
+  				</tr>
+			</table>
+			<br>
+			<!-- Leads Module -->
+<img src="http://www.cnet.com/i/gl/new-cc.gif" alt="Crucial Clicks" width="120" height="19" border="0"><br>
+<table width="100%"  cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
+<tr bgcolor="#cccccc"><td colspan="7"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td></tr>
+<tr>
+<td bgcolor="#cccccc" rowspan="3"><img src="http://home.cnet.com/b.gif" height=1 width=1></td>
+<td rowspan="3"><img src="http://home.cnet.com/b.gif" height=1 width=5></td>
+<td colspan="3"><img src="http://home.cnet.com/b.gif" height=5 width=1></td>
+<td rowspan="3"><img src="http://home.cnet.com/b.gif" height=1 width=5></td>
+<td bgcolor="#cccccc" rowspan="3"><img src="http://home.cnet.com/b.gif" height=1 width=1></td>
+</tr>
+<tr valign="top">
+<td width="100%">
+	<table width="100%"  cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+	<td width="85"><a href="http://clickthru.online.com/Click?q=b0-NZmfQQJr-Su8ef6dxQMKtNX8PQ9R" ><img src="http://a.r.tv.com/cnet.1d/i/p/050202chipart.jpg" width="85" height="110" border="0" alt="" /></a></td>
+	<td width="5"><img src="http://home.cnet.com/b.gif" height=1 width=5></td>
+	<td width="100%"><font face="arial, helvetica" size="-1"><a href="http://clickthru.online.com/Click?q=c5-8BcDQzOaF-d0AJ_zSROUJEymxquR" ><b>Intel's new insides</b></a><br />The i845 chipset's many flavors are faster, better, and a lot more confusing. Read before you shop.</font></td>
+	</tr>
+	<tr><td colspan="3"><img src="http://home.cnet.com/b.gif" height=3 width=1><br /><font face="arial, helvetica" size="-1">
+	&#149; <a href="http://clickthru.online.com/Click?q=da-dT8jQUPq_nG49sjbjsMVKpv3DxsR" >Gateway 300 series keeps PCs simple
+</a><br />
+	&#149; <a href="http://clickthru.online.com/Click?q=ef-04uYQmkHvF_A1BKqBxDVAmoBamZR" >Modernize your motherboard</a><br />
+	</font></td></tr>
+	</table>
+</td>
+<td><img src="http://home.cnet.com/b.gif" height=1 width=5></td>
+<td width="180">
+	<table cellpadding="0" cellspacing="0" width="180" border="0" bgcolor="#ffffef">
+	<tr><td colspan="5" bgcolor="#666666"><img src="http://home.cnet.com/b.gif" width="1" height="1" alt="" border="0" /></td></tr>
+	<tr>
+	<td bgcolor="#666666"><img src="http://home.cnet.com/b.gif" width="1" height="1" alt="" border="0" /></td>
+	<td><img src="http://home.cnet.com/b.gif" width="10" height="1" alt="" border="0" /></td>
+	<td><font face="ms sans serif, geneva" size="-2"><img src="http://home.cnet.com/b.gif" width="1" height="5" alt="" border="0" /><br />
+	<font face="arial, helvetica" color="#666666" size="-1"><b>Most popular</b></font><br /><img src="http://home.cnet.com/b.gif" width="1" height="5" alt="" border="0" /><br />
+	<b>Desktops</b><br /><img src="http://home.cnet.com/b.gif" width="1" height="7" alt="" border="0" /><br />
+	1. <a href="http://clickthru.online.com/Click?q=04-k9W0IFQXFQ6EUdA98BbBL7kOi_dR" >Gateway 700XL</a><br /><img src="http://home.cnet.com/b.gif" width="1" height="3" alt="" border="0" /><br />
+	2. <a href="http://clickthru.online.com/Click?q=19-BLe0I2rXOrmJMmlKMZ2Fz8IR7XcR" >Dell Dimension 4000 series</a><br /><img src="http://home.cnet.com/b.gif" width="1" height="3" alt="" border="0" /><br />
+	3. <a href="http://clickthru.online.com/Click?q=2e-eMTGIiK8vtOYWpMktQ3DlPfP8NRR" >HP Pavilion 950</a><br /><img src="http://home.cnet.com/b.gif" width="1" height="3" alt="" border="0" /><br />
+	4. <a href="http://clickthru.online.com/Click?q=43-coL5IBJAEmpV_lv9Z5VKc-3P0BlR" >Alienware Aurora DDR</a><br /><img src="http://home.cnet.com/b.gif" width="1" height="3" alt="" border="0" /><br />
+	5. <a href="http://clickthru.online.com/Click?q=58-mr2xIdJHwWdo9CHYjKHbtbXYzH4R" >Falcon Northwest Mach V</a><br /><img src="http://home.cnet.com/b.gif" width="1" height="6" alt="" border="0" /><br />
+	<img src="http://a.r.tv.com/cnet.1d/i/fd/yl_arrow.gif" width="13" height="13" border="0" alt="" align="absmiddle" /> <b><a href="http://clickthru.online.com/Click?q=6e-2aYjIyES2bRnfb9QA5K-fxuEL5iR" >See all most popular desktops</a></b><br />
+	<img src="http://home.cnet.com/b.gif" width="1" height="10" alt="" border="0" /><br />
+	</font></td>
+	<td><img src="http://home.cnet.com/b.gif" width="10" height="1" alt="" border="0" /></td>
+	<td bgcolor="#666666"><img src="http://home.cnet.com/b.gif" width="1" height="1" alt="" border="0" /></td>
+	</tr>
+	<tr><td colspan="5" bgcolor="#666666"><img src="http://home.cnet.com/b.gif" width="1" height="1" alt="" border="0" /></td></tr>
+	</table>
+</td>
+</tr>
+<tr valign="top"><td colspan="3"><img src="http://home.cnet.com/b.gif" height=5 width=1></td></tr>
+<tr><td colspan="7" bgcolor="#cccccc"><img src="http://home.cnet.com/b.gif" height=1 width=1></td></tr>
+</table>
+<!-- /Leads Module -->
+
+			<table border="0" width="100%" cellpadding="10" cellspacing="0">
+				<tr><td><font face="Arial, Helvetica">
+					<img src="http://a.r.tv.com/cnet.1d/i/nl/wr/sub_rev.gif" alt="Reviews" width="125" height="19" border="0"><br>
+					<img src="http://home.cnet.com/i/nl/rule.gif" width="410" height="8" border="0"><br>
+				
+<!-- item 1 -->
+<font face="arial, helvetica"><b><a href="http://clickthru.online.com/Click?q=83-U-BXQYJ7lFki8ghtuoAABMMPZ9FR" >IBM's thin ThinkPads fit to a T</a></b><br>
+<font size="-1">
+The ThinkPad T-series notebooks are fast, and they offer a great
+design, innovative features, and good support. For a comprehensive
+look at this line of notebooks, check out our verdict.
+<br>
+<a href="http://clickthru.online.com/Click?q=98-FTaOQ_zabm_dqsFCW5CH7esbKR9R" ><b>Read the review</b></a>
+&nbsp;&#124;&nbsp;
+<a href="http://clickthru.online.com/Click?q=ad-_4IAQzEB45yJN3cQhaIHsSzky0uR" ><b>Check latest prices</b></a>
+</font>
+<br clear="left"><br>
+
+<!-- item 2 -->
+<img src="http://home.cnet.com/b.gif" width="410" height="8" border="0"><br>
+<font face="arial, helvetica"><b><a href="http://clickthru.online.com/Click?q=c2-oXxLQUEk7ThEon9gVnxXFZcIuIsR" >Inside the Labs: The PC of the future, part two</a></b><br>
+<font size="-1">
+Mira, a flat-panel display that wirelessly connects to a PC, will
+let you take your system anywhere in your house--or so Microsoft
+promises. This is just one of the coming-soon-to-a-living room-near
+-you technologies that Microsoft promoted at its annual hardware
+summit. Labs Manager Daniel A. Begun has the scoop on the next
+batch of Microsoft-promoted technologies that could change the way
+consumers use their PCs.
+</font><br><br>
+
+<!-- center1 -->
+
+<!-- /center1 -->
+
+<!-- item 3 -->
+<img src="http://home.cnet.com/b.gif" width="410" height="8" border="0"><br>
+<font face="arial, helvetica"><b><a href="http://clickthru.online.com/Click?q=d8-XW73QWLWIvIwIvrmkSWreAgRDc9R" >Gateway 300 series keeps PCs simple</a></b><br>
+<font size="-1">
+Gateway's most basic desktop line offers some good values for
+students and families buying second computers for their children--
+if you configure carefully. But if you're eyeing the fancy LCD and
+DVD-ROM drive options, get a fancier PC to go with them. Find out
+why in our review.
+<br><b><a href="http://clickthru.online.com/Click?q=ed-jLlvQgVq7Y6yU6ixv3orMjEsaQuR" >Read the review</a></b>&nbsp;&#124;&nbsp;<a href="http://clickthru.online.com/Click?q=02-qia9Ilj8-YNw_8J_XGuwrfzJ6nsR" ><b>Configure &amp; price</b></a>
+<br></font><br>
+
+<!-- item 4 -->
+<img src="http://home.cnet.com/b.gif" width="410" height="8" border="0"><br>
+<font face="arial, helvetica"><b><a href="http://clickthru.online.com/Click?q=17-agitI5XrfbdJabdIz4s1RhjGRsZR" >Midrange iBuyPower PC suffers from low-end blues</a></b><br>
+<font size="-1">
+The generic iBuyPower Argous has some nice features, but it lacks
+the performance, the support, and the finishing touches delivered
+by similarly priced competitors. Read our review to find out where
+it falls short--and which systems in this price range present
+better alternatives.
+<br><b><a href="http://clickthru.online.com/Click?q=2c-DatOIc0D7XNt1Kjc-r7MBvWpjudR" >Read the review</a></b>&nbsp;&#124;&nbsp;<a href="http://clickthru.online.com/Click?q=41-qqJ1IEKImGO8E1hU5CfCkxHB0FrR" ><b>Check latest prices</b></a>
+<br></font><br>
+
+<!-- item 5 -->
+<img src="http://home.cnet.com/b.gif" width="410" height="8" border="0"><br>
+<font face="arial, helvetica"><b><a href="http://clickthru.online.com/Click?q=56-NwKYInns9Y6tpFIrctPQDwwaMCiR" >Add wireless networking for $200 or less</a></b><br>
+<font size="-1">
+Wi-Fi (802.11b) access points provide the cheapest, easiest way to
+extend your wired or wireless network to the far-flung reaches of
+your home or office. Check our reviews of access points from Agere
+Systems, Belkin, and D-Link to see which is the cheapest, which has
+the best security, and more.
+<br><b><a href="http://clickthru.online.com/Click?q=6b-8g5ZIHEcwxr4gOI80ywQ-4d0P6lR" >Read the review</a></b>
+<br></font><br>
+
+<!-- what's new -->
+
+<p>
+	<table cellpadding=0 cellspacing=0 border=0 width=410>
+        <tr valign=bottom><td width=75>
+			<img src="http://a.r.tv.com/cnet.1d/i/nl/hw/HEAD_WHATSnew.gif" width="175" height="19" border="0" alt="Whats New?"><br></td>
+            <td width=335><font face="arial, helvetica" size="-1" color="#666666"><b>the hottest products this week</b></font></td>
+        </tr>
+        <tr><td bgcolor="#CCCCCC" colspan=2><img src="http://home.cnet.com/b.gif" width=1 height=1></td></tr>
+        <tr><td colspan=2><img src="http://home.cnet.com/b.gif" width=1 height=8</td></tr>
+	</table>
+	<font face="arial, helvetica" size="-1">
+
+<b><a href="http://clickthru.online.com/Click?q=80-KTKvQQ0Kilz3F6ooaDkjVsTLZ89R" >Cendyne 48X/12X/48X EIDE</a></b>&nbsp;&#124;&nbsp;
+<a href="http://clickthru.online.com/Click?q=95-XdwrQvdJolT99rHr1yZeU_u_KnuR" ><b>Check latest prices</b></a>
+<br>95ms access time; 2MB cache
+
+<p><b><a href="http://clickthru.online.com/Click?q=aa-gBteQXUr2w_sl14WLXZBXqONOVsR" >IBM ThinkPad R32</a></b>&nbsp;&#124;&nbsp;
+<a href="http://clickthru.online.com/Click?q=c0-kfs-QWP2zC4cck_41H99K8FZuS9R" ><b>Check latest prices</b></a>
+<br>Pentium 4-M-1.8GHz; 256MB RAM; 30GB hard drive
+
+<p><b><a href="http://clickthru.online.com/Click?q=d5-p-viQzL1adBCY2OHCu4jNix1DPuR" >Toshiba Satellite 5105-S502</a></b>&nbsp;&#124;&nbsp;
+<a href="http://clickthru.online.com/Click?q=ea-fjLyQhV4NaEtrHJAwQ4lAUw-5WsR" ><b>Check latest prices</b></a>
+<br>P4-1.7GHz; 512MB RAM; 40GB hard drive
+
+<p><b><a href="http://clickthru.online.com/Click?q=ff-sVoVQms4e4yDiM9ZxrhBm0WHthZR" >Sony GDM FW900</a></b>&nbsp;&#124;&nbsp;
+<a href="http://clickthru.online.com/Click?q=14-5MRAIF-zaB8NVcn8ZvQIzTKtR1dR" ><b>Check latest prices</b></a>
+<br>24 inches of new viewing bliss; built-in USB hub
+
+<p></font>
+
+<p><table cellpadding=0 cellspacing=0 border=0 width=410>
+        <tr valign=bottom><td width=75>
+			<img src="http://a.r.tv.com/cnet.1d/i/nl/hw/HEAD_USERreviews2.gif" width="175" height="19" border="0" alt="User reviews"><br></td>
+            <td width=335><font face="arial, helvetica" size="-1" color="#666666"><b>Overheard on Computers.com</b></font></td>
+        </tr>
+        <tr><td bgcolor="#CCCCCC" colspan=2><img src="http://home.cnet.com/b.gif" width=1 height=1></td></tr>
+        <tr><td colspan=2><img src="http://home.cnet.com/b.gif" width=1 height=8</td></tr>
+	</table>
+<font face="arial, helvetica">
+
+<font size="-1"><br>
+"Simply wow!"<br>
+"Now this is an awesome machine"<br>
+"Slick, spartan design--raw power"<br>
+"Powerful, solid, and durable"<br>
+"Love it--oh, what a programmer's keyboard!"<br>
+"Best of the best"<br>
+"Reliably fast with beautiful screen"
+<p>
+Click <a href="http://clickthru.online.com/Click?q=29-Sg_rIjMAHoSdfIPNyGEI9rCM8vcR" >here</a> to find out what this mystery product is.
+<br>
+<a href="http://clickthru.online.com/Click?q=3e-F51nIizXejhvHIj_7DQESNPe-iRR" ><b>Read the review</b></a>&nbsp;&#124;&nbsp;<a href="http://clickthru.online.com/Click?q=53-n86dINn6pyqMXAnjHpx8lOheMnlR" ><b>Check latest prices</b></a>
+
+<p>
+
+Click <a href="http://clickthru.online.com/Click?q=68-iM8qIsPPhmFxz-8ywvjsK-FdLP4R" >here</a> to see more of CNET's User Opinions.
+
+
+<p></font>
+
+<p><table cellpadding=0 cellspacing=0 border=0 width=410>
+        <tr valign=bottom><td width=75>
+			<img src="http://a.r.tv.com/cnet.1d/i/nl/hw/HEAD_MESSAGEbrds.gif" width="175" height="19" border="0" alt="CNET Message Boards"><br></td>
+            <td width=335><font face="arial, helvetica" size="-1" color="#666666"><b></b></font></td>
+        </tr>
+        <tr><td bgcolor="#CCCCCC" colspan=2><img src="http://home.cnet.com/b.gif" width=1 height=1></td></tr>
+        <tr><td colspan=2><img src="http://home.cnet.com/b.gif" width=1 height=8</td></tr>
+	</table>
+<font face="arial, helvetica" size="-1"><b><a href="http://clickthru.online.com/Click?q=7d-FFEqIDLPd2qs-5iUywq2NRJSBTeR" >CNET Message Boards: Computer Help is here</a></b><br>
+Stumped by computer hardware and software problems? Never fear;
+check out the CNET Message Boards, where quick help is just a post
+away. Join us in the Computer Help forums.
+
+<!--Horizontal Brick-->
+<P><IMG border=0 height=20 src="http://www.cnet.com/Ads/Media/Images/RHC_ALSOfromCNETnet.gif" width=150 NOSEND="1"> 
+<IMG border=0 height=8 src="http://www.cnet.com/i/it/newsletter/rule2.gif" width=410 NOSEND="1"><BR>
+<TABLE border=0 cellPadding=0 cellSpacing=0 width="100%25"><TR vAlign=top>
+<TD><FONT face="arial, helvetica" size=-1><B>
+<UL>
+<LI><a href="http://clickthru.online.com/Click?q=93-V4PmQSdQTaovnB5cTYjvQ8Rgn5FR" >Live tech help: submit your questions now</A> 
+<LI><a href="http://clickthru.online.com/Click?q=a8-02XZQQZk8FiQEHVDtZs6swzdON9R" >CNET News.com: Top CIOs on the future of IT</A> 
+<LI><a href="http://clickthru.online.com/Click?q=bd-c0nUQ7pyt8o7KMOpAEVgnfqGsJuR" >Find a job you love, with more than 1 million postings</A> 
+<LI><a href="http://clickthru.online.com/Click?q=d2-THo_QULwlbzNAe03Gl22vbAOyesR" >ZDNet: This IT director has had enough of Microsoft</A> 
+<LI><a href="http://clickthru.online.com/Click?q=e7-2y-GQmVXfBpdRKWVqS8CMB0qvsZR" >May Editors' Choice award: Pioneer's HTS-910DV</A> 
+</UL></B></FONT></TD>
+</TR></TABLE></P>
+<!-- End Horizontal Brick-->
+
+
+
+		</td></tr>
+	</table>
+
+		 <br><!-- End search box -->
+    	</td></tr>
+	</table>
+
+<!-- ### footer ### -->
+<table width="612" bgcolor="#000000" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="599" bgcolor="#cccccc"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#eeeeee" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="12"><img src="http://www.cnet.com/b.gif" width="12" height="1"></td>
+<td width="575"><img src="http://www.cnet.com/b.gif" width="1" height="10"><br>
+<a href="http://clickthru.online.com/Click?q=fc-WpHmQVwF4cdWapya9-0t3VVat9dR" >
+<img src="http://a.r.tv.com/cnet.1d/i/nl/ft.gif" width="375" height="18" border="0" alt="Sign up for more free newsletters from CNET!"></a><br>
+
+<!-- subscription management -->
+
+<font face="ms sans serif, geneva" size="-2">
+The e-mail address for your subscription is&nbsp;qqqqqqqqqq-cnet-newsletters@spamassassin.taint.org<p>
+
+<A NOTRACK HREF='http://clickthru.online.com/Click?q=11-l8nizo-8PmRfUxbq36lJuHDmqObzbsRR'>Unsubscribe</A>&nbsp;|
+&nbsp;<a href='http://www.cnet.com/subscription/0-16335-7-8494915.html?EmailAddr=qqqqqqqqqq-cnet-newsletters@spamassassin.taint.org'>Change e-mail format</a>&nbsp;|
+&nbsp;<a href="http://clickthru.online.com/Click?q=26-KqPVIiMHfPrWwYyBBBkqU8niQ7RR" >Change e-mail address</A>|
+&nbsp;<a href="http://clickthru.online.com/Click?q=3c-tK4RIcIslKtPNomY0VXXjhrHNHdR" >FAQ</A>&nbsp;|
+&nbsp;<a href="http://clickthru.online.com/Click?q=51-QgUWIjJPu7h3HbNJlh9GpMUHM3rR" >Advertise</A><br></font>
+
+<!-- /subscription management-->
+
+</font><img src="http://www.zdnet.com/b.gif" width="1" height="8"></td>
+<td width="12"><img src="http://www.cnet.com/b.gif" width="12" height="1"></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#000000" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="601"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#ffcc00" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="37"><a href="http://clickthru.online.com/Click?q=66-kDH_IyWIFsfHG5JsPj9y-DzbW-iR" ><img src="http://www.cnet.com/i/dp/smrb.gif" width="37" height="37" border="0"></a></td>
+<td width="563" nowrap><font face="arial, helvetica" size="-1">
+<a href="http://clickthru.online.com/Click?q=7b-prT_IBZIOsSsoXzbDr4q1O7VpJlR" ><font color="#000000">Price comparisons</font></a> |
+<a href="http://clickthru.online.com/Click?q=90-wHZMQ_IdCXBD6P8Vb8HYULuonX9R" ><font color="#000000">Product reviews</font></a> |
+<a href="http://clickthru.online.com/Click?q=a5-DyaHQ7ZTGWCfQbSsIC1b2OB8OEuR" ><font color="#000000">Tech news</font></a> |
+<a href="http://clickthru.online.com/Click?q=ba-m-45QXpKF_k8XkWxhOmI_uIUEksR" ><font color="#000000">Downloads</font></a> |
+<a href="http://clickthru.online.com/Click?q=cf-ebM-QLw2hCmIMTUJaylIO7r3fxZR" ><font color="#000000">All CNET services</font></a>
+</font></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" cellpadding="0" cellspacing="0" border="0">
+<tr><td bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+<tr><td height="25"><font face="ms sans serif, geneva" size="-2"><table width=100% border=0 cellspacing=2 cellpadding=1> <tr valign=bottom> <td width=75% height=31> <p></font> <br><b><font face=Arial, Helvetica, sans-serif size=2>    Copyright 2002 CNET Networks, Inc. All rights reserved.    </font></b> </p></td><td height=31 valign=top> <div align=right> <img src="http://gserv-cnet.zdnet.com/clear/outbound.gif?APPID=2&EMID=25136487&NL=e405&ISSUE=2002-07-10" height=1 width=1>    </div></td></tr><tr>  <td colspan=2><font face=Arial, Helvetica, sans-serif size=2>    </font></td></tr></table>
+</a>.</font></td></tr>
+</table>
+<!-- ### /footer ### -->
+
+</body>
+</html>
+<IMG HEIGHT=1 WIDTH=1 SRC="http://clickthru.online.com/Click?q=e5-9ZYO-7yD2t3Agt2Y0KFHoTQi9dRR">
+

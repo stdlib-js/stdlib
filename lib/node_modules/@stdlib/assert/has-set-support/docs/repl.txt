@@ -1,0 +1,17 @@
+
+{{alias}}()
+    Tests for native `Set` support.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an environment has native `Set` support.
+
+    Examples
+    --------
+    > var bool = {{alias}}()
+    <boolean>
+
+    See Also
+    --------
+

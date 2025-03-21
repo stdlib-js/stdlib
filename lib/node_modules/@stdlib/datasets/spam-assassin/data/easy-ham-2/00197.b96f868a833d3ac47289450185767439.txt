@@ -1,0 +1,96 @@
+From ilug-admin@linux.ie  Wed Jul 31 21:06:13 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id EC836440CD
+	for <jm@localhost>; Wed, 31 Jul 2002 16:06:09 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 31 Jul 2002 21:06:09 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6VK17207441 for
+    <jm-ilug@jmason.org>; Wed, 31 Jul 2002 21:01:07 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id UAA25479; Wed, 31 Jul 2002 20:58:37 +0100
+Received: from linux.local ([195.218.108.229]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id UAA25450 for <ilug@linux.ie>; Wed,
+    31 Jul 2002 20:58:30 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [195.218.108.229] claimed
+    to be linux.local
+Received: from linux.local (localhost [127.0.0.1]) by linux.local
+    (8.11.6/8.11.6/SuSE Linux 0.5) with ESMTP id g6VJwhX12224 for
+    <ilug@linux.ie>; Wed, 31 Jul 2002 20:58:43 +0100
+Message-Id: <200207311958.g6VJwhX12224@linux.local>
+To: Irish Linux Users Group <ilug@linux.ie>
+Reply-To: Irish Linux Users Group <ilug@linux.ie>
+Subject: Re: [ILUG] inputting chinese characters in Redhat 7.3
+In-Reply-To: Message from Brian Foster <blf@utvinternet.ie> of
+    "Wed, 31 Jul 2002 18:57:50 BST."
+    <200207311757.g6VHvoX11572@linux.local>
+X-Mailer: [nmh-1.0.4] MH.6.8, SuSE Linux 7.3
+X-Url: http://www.blf.utvinternet.ie
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Id: <12221.1028145523.1@linux.local>
+Date: Wed, 31 Jul 2002 20:58:43 +0100
+From: Brian Foster <blf@utvinternet.ie>
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    UAA25450
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+  | Date: Wed, 31 Jul 2002 18:57:50 +0100
+  | From: Brian Foster <blf@utvinternet.ie>
+  | 
+  |   | Date: Wed, 31 Jul 2002 23:11:49 +0800
+  |   | From: Fergal Daly <fergal@esatclear.ie>
+  |   | 
+  |   | 7.3 seems to support Chinese input out of the box, it's got
+  |   | miniChinput and some other stuff no documentation.  [ ... ]
+  |   | Can anyone tell me what I should do?
+  | 
+  |  I've no idea, but a relevant/useful source of info could
+  |  be the «linux-utf8» e-list:
+  | 
+  |      http://www.cl.cam.ac.uk/~mgk25/unicode.html
+  |      http://mail.nl.linux.org/linux-utf8/
+  |[ ... ]
+  |  w.r.t. X11 applications [ one approach is to use ]
+  |  what's called an XIM (X Input Method).   [ ... ]
+
+ sorry for replying to my own post!
+
+ a google for "xim linux" found a number of hits.
+ try (I've haven't finished reading this myself,
+ but it seems good):
+
+   http://www.suse.de/~mfabian/suse-cjk/
+
+ (CJK stands for Chinese Japanese Korean.)
+
+ the above is probably best read with a browser
+ that groks UTF-8.
+
+cheers!
+	-blf-
+--
+ Innovative, very experienced, Unix and      | Brian Foster    Dublin, Ireland
+ Chorus (embedded RTOS) kernel internals     | e-mail: blf@utvinternet.ie
+ expert looking for a new position ...       | mobile: (+353 or 0)86 854 9268
+  For a résumé, contact me, or see my website  http://www.blf.utvinternet.ie
+
+    Stop E$$o (ExxonMobile):  «Whatever you do, don't buy Esso --- they
+     don't give a damn about global warming.»    http://www.stopesso.com
+     Supported by Greenpeace, Friends of the Earth, and numerous others...
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

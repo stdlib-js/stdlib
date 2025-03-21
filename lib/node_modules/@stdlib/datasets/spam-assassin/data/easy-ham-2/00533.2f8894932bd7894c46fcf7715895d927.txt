@@ -1,0 +1,87 @@
+From razor-users-admin@lists.sourceforge.net  Wed Jul 24 00:21:28 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 368EC440D0
+	for <jm@localhost>; Tue, 23 Jul 2002 19:21:24 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 00:21:24 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6NNMV403357 for <jm-razor@jmason.org>; Wed, 24 Jul 2002 00:22:31 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17X8p2-00036N-00; Tue,
+    23 Jul 2002 16:12:04 -0700
+Received: from eclectic.kluge.net ([66.92.69.221]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17X8ob-0005LK-00 for <razor-users@lists.sourceforge.net>; Tue,
+    23 Jul 2002 16:11:37 -0700
+Received: (from felicity@localhost) by eclectic.kluge.net (8.11.6/8.11.6)
+    id g6NNBS814844; Tue, 23 Jul 2002 19:11:28 -0400
+From: Theo Van Dinter <felicity@kluge.net>
+To: "Tabor J. Wells" <razor-users@fsckit.net>
+Cc: Razor-Users <razor-users@example.sourceforge.net>
+Subject: Re: [Razor-users] can't find Razor/Client.pm
+Message-Id: <20020723231128.GA14564@kluge.net>
+References: <20020723215921.GE24778@fsckit.net>
+    <Pine.SUN.3.96.1020723180322.29929E-100000@grex.cyberspace.org>
+    <20020723221601.GF24778@fsckit.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20020723221601.GF24778@fsckit.net>
+User-Agent: Mutt/1.4i
+X-GPG-Keyserver: http://wwwkeys.pgp.net
+X-GPG-Keynumber: 0xE580B363
+X-GPG-Fingerprint: 75B1 F6D0 8368 38E7 A4C5  F6C2 02E3 9051 E580 B363
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Tue, 23 Jul 2002 19:11:28 -0400
+Date: Tue, 23 Jul 2002 19:11:28 -0400
+
+On Tue, Jul 23, 2002 at 06:16:02PM -0400, Tabor J. Wells wrote:
+> It's there. Scroll down on the downloads page. However you might
+> consider going the other way and installing SpamAssassin's 2.40
+> bleeding-edge code as Razor v2 has a lot of nice features over v1.
+
+To paraphrase something I heard once:
+Unless you like looking for a new job, never install a non-released or
+development-only version of software anywhere where the results of such
+code are important.
+
+ie: Don't run development code on a production machine. :)
+
+
+The problem isn't SA anyway, it looks for Razor1 and just keeps on
+going if it can't find it.  Something came up about amavis on the SA
+list where it looks for Razor itself...
+
+-- 
+Randomly Generated Tagline:
+"Duct tape is like the force; it has a light side & a dark side, and it
+ holds the universe together." - Zen Musings
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

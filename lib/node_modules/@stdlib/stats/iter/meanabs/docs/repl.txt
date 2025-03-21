@@ -1,0 +1,23 @@
+
+{{alias}}( iterator )
+    Computes an arithmetic mean of absolute values for all iterated values.
+
+    Parameters
+    ----------
+    iterator: Object
+        Input iterator.
+
+    Returns
+    -------
+    out: number|null
+        Arithmetic mean of absolute values.
+
+    Examples
+    --------
+    > var arr = {{alias:@stdlib/array/to-iterator}}( [ 1.0, -2.0, -3.0, 4.0 ] );
+    > var m = {{alias}}( arr )
+    2.5
+
+    See Also
+    --------
+

@@ -1,0 +1,66 @@
+From fork-admin@xent.com  Mon Sep 30 13:53:23 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id E1DD616F83
+	for <jm@localhost>; Mon, 30 Sep 2002 13:49:03 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 30 Sep 2002 13:49:03 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8T4NHg29392 for <jm@jmason.org>;
+    Sun, 29 Sep 2002 05:23:18 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 9ADB32940D0; Sat, 28 Sep 2002 21:23:11 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from frodo.hserus.net (202-77-223-48.outblaze.com
+    [202.77.223.48]) by xent.com (Postfix) with ESMTP id F33592940B8 for
+    <fork@xent.com>; Sat, 28 Sep 2002 21:22:15 -0700 (PDT)
+Received: from ppp-200-1-93.bng.vsnl.net.in ([203.200.1.93]
+    helo=rincewind.pobox.com) by frodo.hserus.net with asmtp (Exim 4.10) id
+    17vUls-000BqI-00; Sun, 29 Sep 2002 11:29:32 +0800
+X-PGP-Dsskey: 0x55FAB8D3
+X-PGP-Rsakey: 0xCAA67415
+Message-Id: <5.1.0.14.2.20020928232350.02c2f030@frodo.hserus.net>
+X-Nil:
+To: gbolcer@endeavors.com, FoRK <fork@spamassassin.taint.org>
+From: Udhay Shankar N <udhay@pobox.com>
+Subject: Re: EBusiness Webforms: cluetrain has left the station
+In-Reply-To: <3D95C839.8E8701FD@endeavors.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"; format=flowed
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sat, 28 Sep 2002 23:25:21 +0530
+
+At 08:18 AM 9/28/02 -0700, Gregory Alan Bolcer wrote:
+
+>IE6 and Netscape 6,7 have pre-forms sutff,
+>but I always turn it off because you never know when there's that one field
+>that you don't want to submit to the person you are submitting to that
+>automatically gets sent, i.e. the privacy stuff is well beyond the
+>average user who will get screwed on privacy stuff.
+
+Opera 6 has an interesting way around this. You just right-click on each 
+field and bring up a choice of prefilled local information that you can 
+then choose to enter into the form.
+
+Now if they can just fix the $@!$@$# irritating memory problems that Opera6 
+has....Hakon, you listening?
+
+Udhay
+
+-- 
+((Udhay Shankar N)) ((udhay @ pobox.com)) ((www.digeratus.com))
+
+

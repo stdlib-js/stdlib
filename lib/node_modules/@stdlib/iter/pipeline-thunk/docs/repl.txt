@@ -1,0 +1,38 @@
+
+{{alias}}( iterFcn[, ...args] )
+    Returns an iterator "thunk".
+
+    A provided iterator function should have the following function signature:
+
+      iterFcn( iterator, ...args )
+
+    The returned function expects a single argument, an iterator.
+
+    This function is useful within the context of iterator pipelines as a means
+    to defer execution until a pipeline is ready for data flow.
+
+    Parameters
+    ----------
+    iterFcn: Function
+        Iterator function.
+
+    args: ...any (optional)
+        Function arguments.
+
+    Returns
+    -------
+    fcn( iter ): Function
+        Function which accepts a single argument, an iterator, and invokes a
+        previously provided iterator function with the provided iterator and any
+        previously provided arguments.
+
+    Examples
+    --------
+    > var fcn = {{alias}}( {{alias:@stdlib/iter/some}}, 3 );
+    > var arr = {{alias:@stdlib/array/to-iterator}}( [ 0, 0, 1, 1, 1 ] );
+    > var bool = fcn( arr )
+    true
+
+    See Also
+    --------
+

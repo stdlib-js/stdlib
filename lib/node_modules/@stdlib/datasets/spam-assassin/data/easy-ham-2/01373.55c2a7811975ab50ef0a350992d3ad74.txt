@@ -1,0 +1,97 @@
+From 0xdeadbeef-request@petting-zoo.net  Mon Aug 19 11:00:08 2002
+Return-Path: <0xdeadbeef-request@petting-zoo.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C078143C4C
+	for <jm@localhost>; Mon, 19 Aug 2002 05:51:50 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:51:50 +0100 (IST)
+Received: from petting-zoo.net (IDENT:postfix@petting-zoo.net
+    [64.166.12.219]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7IIjd619705 for <jm-deadbeef@jmason.org>; Sun, 18 Aug 2002 19:45:40 +0100
+Received: by petting-zoo.net (Postfix, from userid 1004) id 45CE1EA4B;
+    Sun, 18 Aug 2002 11:31:50 -0700 (PDT)
+Old-Return-Path: <gkm@petting-zoo.net>
+Delivered-To: 0xdeadbeef@petting-zoo.net
+Received: from petting-zoo.net (localhost [127.0.0.1]) by petting-zoo.net
+    (Postfix) with ESMTP id 175E2EAE4; Sun, 18 Aug 2002 11:31:24 -0700 (PDT)
+From: gkm@petting-zoo.net (glen mccready)
+To: 0xdeadbeef@petting-zoo.net
+Cc: bostic@bostic.com
+Subject: New Medications.
+Date: Sun, 18 Aug 2002 11:31:21 -0700
+Sender: gkm@petting-zoo.net
+Message-Id: <20020818183124.175E2EAE4@petting-zoo.net>
+Resent-Message-Id: <1Jmwk.A.kuD.Sg-X9@petting-zoo.net>
+Resent-From: 0xdeadbeef@petting-zoo.net
+X-Mailing-List: <0xdeadbeef@petting-zoo.net> archive/latest/522
+X-Loop: 0xdeadbeef@petting-zoo.net
+List-Post: <mailto:0xdeadbeef@petting-zoo.net>
+List-Help: <mailto:0xdeadbeef-request@petting-zoo.net?subject=help>
+List-Subscribe: <mailto:0xdeadbeef-request@petting-zoo.net?subject=subscribe>
+List-Unsubscribe: <mailto:0xdeadbeef-request@petting-zoo.net?subject=unsubscribe>
+Precedence: list
+Resent-Sender: 0xdeadbeef-request@petting-zoo.net
+Resent-Date: Sun, 18 Aug 2002 11:31:50 -0700 (PDT)
+
+
+Forwarded-by: Rob Windsor <windsor@warthog.com>
+Forwarded-by: "Rich Holland" <holland@guidancetech.com>
+Forwarded-by: Diane <djbscm@interkan.net>
+
+S t . M o m ' s W o r t
+Plant extract that treats mom's depression by rendering
+preschoolers unconscious for up to six hours.
+
+E m p t y N e s t r o g e n
+Highly effective suppository that eliminates melancholy by
+enhancing the memory of how awful they were as teenagers and
+how you couldn't wait till they moved out.
+
+P e p t o b i m b o
+Liquid silicone for single women. Two full cups swallowed
+before an evening out increases breast size, decreases
+intelligence, and improves flirting.
+
+D u m e r o l
+When taken with Peptobimbo, can cause dangerously low I.Q.
+causing enjoyment of country western music.
+
+F l i p i t o r
+Increases life expectancy of commuters by controlling road
+rage and the urge to flip off other drivers.
+
+A n t i b o y o t i c s
+When administered to teenage girls, is highly effective in
+improving grades, freeing up phone lines, and reducing money
+spent on make-up.
+
+M e n i c i l l i n
+Potent antiboyotic for older women. Increases resistance to
+such lines as, "You make me want to be a better person ... can
+we get naked now?"
+
+B u y a g r a
+Injectable stimulant taken prior to shopping. Increases
+potency and duration of spending spree.
+
+E x t r a S t r e n g t h B u y-O n e-A l l
+When combined with Buyagra, can cause an indiscriminate
+buying frenzy so severe the victim may even come home with a
+Donnie Osmond CD or a book by Dr. Laura.
+
+J a c k A s s p i r i n
+Relieves the headache caused by a man who can't remember your
+birthday, anniversary or phone number.
+
+A n t i - t a l k s i d e n t
+A spray carried in a purse or wallet to be used on anyone too
+eager to share their life stories with total strangers.
+
+R a g a m e t
+When administered to a husband, provides the same irritation
+as ragging on him all weekend, saving the wife the time and
+trouble of doing it herself.
+
+

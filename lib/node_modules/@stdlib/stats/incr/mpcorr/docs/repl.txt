@@ -1,0 +1,51 @@
+
+{{alias}}( W[, mx, my] )
+    Returns an accumulator function which incrementally computes a moving
+    sample Pearson product-moment correlation coefficient.
+
+    The `W` parameter defines the number of values over which to compute the
+    moving sample correlation coefficient.
+
+    If provided values, the accumulator function returns an updated moving
+    sample correlation coefficient. If not provided values, the accumulator
+    function returns the current moving sample correlation coefficient.
+
+    As `W` (x,y) pairs are needed to fill the window buffer, the first `W-1`
+    returned values are calculated from smaller sample sizes. Until the window
+    is full, each returned value is calculated from all provided values.
+
+    Parameters
+    ----------
+    W: integer
+        Window size.
+
+    mx: number (optional)
+        Known mean.
+
+    my: number (optional)
+        Known mean.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}( 3 );
+    > var r = accumulator()
+    null
+    > r = accumulator( 2.0, 1.0 )
+    0.0
+    > r = accumulator( -5.0, 3.14 )
+    ~-1.0
+    > r = accumulator( 3.0, -1.0 )
+    ~-0.925
+    > r = accumulator( 5.0, -9.5 )
+    ~-0.863
+    > r = accumulator()
+    ~-0.863
+
+    See Also
+    --------
+

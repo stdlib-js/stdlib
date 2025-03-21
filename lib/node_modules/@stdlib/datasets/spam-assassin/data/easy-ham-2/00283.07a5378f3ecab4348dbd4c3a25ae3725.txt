@@ -1,0 +1,65 @@
+From ilug-admin@linux.ie  Thu Aug  8 14:11:25 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E8BFA44131
+	for <jm@localhost>; Thu,  8 Aug 2002 08:32:27 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 08 Aug 2002 13:32:27 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g78CEc201694 for
+    <jm-ilug@jmason.org>; Thu, 8 Aug 2002 13:14:38 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id NAA30138 for <jm-ilug@jmason.org>;
+    Thu, 8 Aug 2002 13:11:37 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA14058; Thu, 8 Aug 2002 13:10:53 +0100
+Received: from corvil.com. (k100-159.bas1.dbn.dublin.eircom.net
+    [159.134.100.159]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id NAA14030
+    for <ilug@linux.ie>; Thu, 8 Aug 2002 13:10:47 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host k100-159.bas1.dbn.dublin.eircom.net
+    [159.134.100.159] claimed to be corvil.com.
+Received: from corvil.com (pixelbeat.local.corvil.com [172.18.1.170]) by
+    corvil.com. (8.12.5/8.12.5) with ESMTP id g78CAkn4027150 for
+    <ilug@linux.ie>; Thu, 8 Aug 2002 13:10:46 +0100 (IST) (envelope-from
+    padraig.brady@corvil.com)
+Message-Id: <3D525FBD.2070401@corvil.com>
+Date: Thu, 08 Aug 2002 13:10:37 +0100
+From: Padraig Brady <padraig.brady@corvil.com>
+Organization: Corvil Networks
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:0.9.9) Gecko/20020408
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: ilug@linux.ie
+Content-Type: text/plain; charset=ISO-8859-15; format=flowed
+Content-Transfer-Encoding: 7bit
+Subject: [ILUG] Alan Cox doesn't like 2.5 so far!
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Yikes, hope he's not serious!
+
+-------- Original Message --------
+Subject: Re: [bug, 2.5.29, IDE] partition table corruption?
+Date: 08 Aug 2002 14:23:53 +0100
+From: Alan Cox <alan@lxorguk.ukuu.org.uk>
+To: martin@dalecki.de
+
+[IDE specific argument snipped]
+
+Thank you for reminding me why I've given up on the 2.5 kernel ever
+working. Fortunately free software is self correcting so the tree can be
+forked into something workable
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

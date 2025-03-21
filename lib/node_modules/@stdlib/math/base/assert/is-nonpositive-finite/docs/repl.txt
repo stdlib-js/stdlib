@@ -1,0 +1,31 @@
+
+{{alias}}( x )
+    Tests if a double-precision floating-point numeric value is a nonpositive
+    finite number.
+
+    Parameters
+    ----------
+    x: number
+        Value to test.
+
+    Returns
+    -------
+    out: boolean
+        Boolean indicating whether the value is a nonpositive finite number.
+
+    Examples
+    --------
+    > var bool = {{alias}}( -3.14 )
+    true
+    > var bool = {{alias}}( 0.0 )
+    true
+    > var bool = {{alias}}( -Infinity )
+    false
+    > var bool = {{alias}}( 3.14 )
+    false
+    > var bool = {{alias}}( NaN )
+    false
+
+    See Also
+    --------
+

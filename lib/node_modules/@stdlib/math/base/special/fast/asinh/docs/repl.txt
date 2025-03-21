@@ -1,0 +1,36 @@
+
+{{alias}}( x )
+    Computes the hyperbolic arcsine of a number.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    out: number
+        Hyperbolic arcsine (in radians).
+
+    Examples
+    --------
+    > var v = {{alias}}( 0.0 )
+    0.0
+    > v = {{alias}}( 2.0 )
+    ~1.444
+    > v = {{alias}}( -2.0 )
+    ~-1.444
+    > v = {{alias}}( NaN )
+    NaN
+
+    // The function overflows for large `x`:
+    > v = {{alias}}( 1.0e200 )
+    Infinity
+
+    // The function underflows for small `x`:
+    > v = {{alias}}( 1.0e-50 )
+    0.0
+
+    See Also
+    --------
+

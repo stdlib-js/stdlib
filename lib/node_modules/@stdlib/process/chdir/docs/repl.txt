@@ -1,0 +1,25 @@
+
+{{alias}}( path )
+    Changes the current working directory.
+
+    If unable to set the current working directory (e.g., due to a non-existent
+    path), the function returns an error; otherwise, the function returns
+    `null`.
+
+    Parameters
+    ----------
+    path: string
+        Desired working directory.
+
+    Returns
+    -------
+    err: Error|null
+        Error object or null.
+
+    Examples
+    --------
+    > var err = {{alias}}( '/path/to/current/working/directory' )
+
+    See Also
+    --------
+

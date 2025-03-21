@@ -1,0 +1,29 @@
+
+{{alias}}( value )
+    Returns a BigInt.
+
+    Unlike conventional constructors, this function does **not** support the
+    `new` keyword.
+
+    This function is only supported in environments which support BigInts.
+
+    Parameters
+    ----------
+    value: integer|string
+        Value of the BigInt.
+
+    Returns
+    -------
+    out: BigInt
+        BigInt.
+
+    Examples
+    --------
+    > var v = ( {{alias}} ) ? {{alias}}( '1' ) : null
+
+
+TODO: document properties/methods
+
+    See Also
+    --------
+

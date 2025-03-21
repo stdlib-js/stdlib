@@ -1,0 +1,45 @@
+
+{{alias}}( value )
+    Tests if an input value is a supported ndarray unsigned integer data type.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an input value is a supported ndarray unsigned
+        integer data type.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 'binary' )
+    false
+    > bool = {{alias}}( 'float32' )
+    false
+    > bool = {{alias}}( 'float64' )
+    false
+    > bool = {{alias}}( 'int16' )
+    false
+    > bool = {{alias}}( 'int32' )
+    false
+    > bool = {{alias}}( 'int8' )
+    false
+    > bool = {{alias}}( 'uint16' )
+    true
+    > bool = {{alias}}( 'uint32' )
+    true
+    > bool = {{alias}}( 'uint8' )
+    true
+    > bool = {{alias}}( 'uint8c' )
+    true
+    > bool = {{alias}}( '' )
+    false
+    > bool = {{alias}}( 'beep' )
+    false
+
+    See Also
+    --------
+

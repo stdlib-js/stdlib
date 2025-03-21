@@ -1,0 +1,145 @@
+From fork-admin@xent.com  Mon Sep  9 19:27:41 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 786EB16EFC
+	for <jm@localhost>; Mon,  9 Sep 2002 19:27:40 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 19:27:40 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g89EaTC19304 for <jm@jmason.org>;
+    Mon, 9 Sep 2002 15:36:30 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 42C87294185; Mon,  9 Sep 2002 07:30:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from rwcrmhc51.attbi.com (rwcrmhc51.attbi.com [204.127.198.38])
+    by xent.com (Postfix) with ESMTP id 10FFC2940FC for <fork@xent.com>;
+    Mon,  9 Sep 2002 07:29:37 -0700 (PDT)
+Received: from h00e098788e1f.ne.client2.attbi.com ([24.61.143.15]) by
+    rwcrmhc51.attbi.com (InterMail vM.4.01.03.27 201-229-121-127-20010626)
+    with ESMTP id
+    <20020909143224.NTSV19682.rwcrmhc51.attbi.com@h00e098788e1f.ne.client2.attbi.com>;
+    Mon, 9 Sep 2002 14:32:24 +0000
+From: bitbitch@magnesium.net
+X-Mailer: The Bat! (v1.52f) Educational
+Reply-To: bitbitch@magnesium.net
+X-Priority: 3 (Normal)
+Message-Id: <15773384464.20020909103246@magnesium.net>
+To: Eugen Leitl <eugen@leitl.org>
+Cc: fork@spamassassin.taint.org
+Subject: Re[3]: Selling Wedded Bliss (was Re: Ouch...)
+In-Reply-To: <Pine.LNX.4.33.0209091553450.32400-100000@hydrogen.leitl.org>
+References: <Pine.LNX.4.33.0209091553450.32400-100000@hydrogen.leitl.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 9 Sep 2002 10:32:46 -0400
+
+
+
+
+EL> On Mon, 9 Sep 2002 bitbitch@magnesium.net wrote:
+
+>> So Eugen, how many of your homo friends have -had- 3k lovers?
+
+EL> Just one. Not everybody does that. Most of them are now dead, anyway.
+
+Point is, you're not likely to extrapolate much.  I could probably
+find one hetero who had just as much sex.   Does that mean we're all
+rampant hos?  No.
+
+
+>> Eegads, if you're hypothesizing numbers like -that- Eugen, you at
+>> least owe it to FoRK to back that shit up.
+
+EL> Ain't done no hypothesizing. Anecdotal evidence'R'Us. Couldn't you just
+EL> Google, or something?
+
+Listen.  If you pull numbers like that without a fact, the automagic
+assumption is yes, they were extracted out of your neither orifice.
+Point wasn't to conclude otherwise unless you had any relevant bits.
+Its not my job to do _your_ bit searching for you, but I figured I'd
+humor fork with this bit of finding:
+
+http://www.thebody.com/bp/apr01/research_notebook.html  (Pointing ot
+averages of about 13 for every 3 months (for gay men), which totals to
+about  52 a year.  52 a year doesn't equal 3000.   Or even 300.
+
+
+>> Just a quick assumption here.   I'm not a math geek or anything, but
+>> assuming 1 lover every day, that would be like at least one lover
+>> everyday for 8 years and some change.   I don't know about you, but
+>> very very few of us are -that- lucky (or even close to that lucky)
+
+EL> Which was my point. Gurls don't do hyperpromiscuity as a life style. It's
+EL> interesting that you're launching into a diatribe, and threaten using
+EL> instant argument (just add hominem) instead of assuming I might be not
+EL> just pulling this whole thing out my nether orifice.
+
+WTF do my shitty math skillz have to do with girls and
+hyperpromiscuity?  I was speaking -generally- meaning that guys and
+girls probably have better things to do than boink everything they
+see.  As above, I am assuming you're pulling things out of your ass, I
+just felt like calling you on it.
+
+BTW, there's nothing wrong with calling someone on a silly idea.  Its
+allowed, and its generally not considered ad hominem, but the
+homophobia statement might be.
+
+>> and after awhile, even the sexaholics get bored and have to mingle
+>> something new into their weekends.   You really are assumiing that the
+>> homosexual population is a) that large in a given area (The meccas
+
+EL> You ever been to San Francisco?
+
+Many times.  Which is why I said 'assuming that large ... (The meccas
+dont count).  SF is a mecca in this example.  I obviously wasn't
+clear, tho one could assume I wasn't talking about Medina.
+
+
+
+>> a few nifty gaybars, but thats a different story)  b) that bored/sex
+>> obsessed/recreationally free to pursue sex that often, with that many
+>> partners or that they'd even WANT that many partners.
+
+EL> This doesn't happen because it couldn't happen. No one would want to. 
+EL> Because you feel that way. Correct?
+
+doesn't happen?  true.   Couldn't happen?  who knows.   It has nothing
+to do with how I 'feel' and everything to do with the fact that people
+do concern themselves with more than just sex (otherwise I think we'd
+see a helluva lot more of sex, and a helluva lot less of everything
+else).
+
+
+>> Qualify yourself, or at least lower your outrageous numbers.
+
+EL> I didn't expect so much reflexive knee-jerking on this list.
+
+Well my suggestion is, if you can't take the responses, don't post
+flamebait.
+
+
+
+
+
+
+
+-- 
+Best regards,
+ bitbitch                            mailto:bitbitch@magnesium.net
+
+

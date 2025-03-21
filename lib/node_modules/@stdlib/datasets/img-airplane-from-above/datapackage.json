@@ -1,0 +1,34 @@
+{
+  "name": "stdlib-datasets-img-airplane-from-above",
+  "version": "",
+  "title": "Airplane From Above",
+  "description": "Image of an airplane, viewed from above looking down.",
+  "resources": [
+    {
+      "name": "airplane-from-above-jpg",
+      "title": "Airplane From Above",
+      "description": "Image of an airplane, viewed from above looking down.",
+      "format": "jpeg",
+      "mediatype": "image/jpeg",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/image.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Getty's Open Content Program",
+      "web": "http://www.getty.edu/art/collection/objects/134512/fedele-azari-airplane-viewed-from-above-looking-down-italian-1914-1929/"
+    }
+  ],
+  "keywords": [
+    "image",
+    "img",
+    "airplane",
+    "plane",
+    "flight",
+    "fly",
+    "flying"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}

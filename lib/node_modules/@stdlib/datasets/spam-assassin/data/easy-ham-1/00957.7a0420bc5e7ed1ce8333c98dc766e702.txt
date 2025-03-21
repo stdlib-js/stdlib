@@ -1,0 +1,93 @@
+From exmh-workers-admin@redhat.com  Wed Aug 28 10:46:48 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 62EE944156
+	for <jm@localhost>; Wed, 28 Aug 2002 05:46:24 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 28 Aug 2002 10:46:24 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7S7elZ15054 for
+    <jm-exmh@jmason.org>; Wed, 28 Aug 2002 08:40:47 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 7656D3EBF8; Wed, 28 Aug 2002
+    03:41:01 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 16EF03EBF8
+    for <exmh-workers@listman.redhat.com>; Wed, 28 Aug 2002 03:40:54 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g7S7eok19198 for exmh-workers@listman.redhat.com; Wed, 28 Aug 2002
+    03:40:50 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g7S7eoY19194 for
+    <exmh-workers@redhat.com>; Wed, 28 Aug 2002 03:40:50 -0400
+Received: from ratree.psu.ac.th ([202.28.97.6]) by mx1.spamassassin.taint.org
+    (8.11.6/8.11.6) with SMTP id g7S7Phl04725 for <exmh-workers@redhat.com>;
+    Wed, 28 Aug 2002 03:25:44 -0400
+Received: from delta.cs.mu.OZ.AU (dhcp253.cc.psu.ac.th [192.168.2.253]) by
+    ratree.psu.ac.th (8.11.6/8.11.6) with ESMTP id g7S7eIU14961;
+    Wed, 28 Aug 2002 14:40:18 +0700 (ICT)
+Received: from munnari.OZ.AU (localhost [127.0.0.1]) by delta.cs.mu.OZ.AU
+    (8.11.6/8.11.6) with ESMTP id g7S24KW17300; Wed, 28 Aug 2002 09:04:20
+    +0700 (ICT)
+From: Robert Elz <kre@munnari.OZ.AU>
+To: Brent Welch <welch@panasas.com>
+Cc: Chris Garrigues <cwg-dated-1030804078.e8b0d5@DeepEddy.Com>,
+	exmh-workers@redhat.com
+Subject: Re: Anolther sequence related traceback
+In-Reply-To: <200208280108.VAA30178@blackcomb.panasas.com>
+References: <200208280108.VAA30178@blackcomb.panasas.com>
+    <1030372078.11075.TMDA@deepeddy.vircio.com>
+    <1030118301.3993.TMDA@deepeddy.vircio.com>
+    <16323.1030043119@munnari.OZ.AU> <6853.1030345218@munnari.OZ.AU>
+    <12683.1030438738@munnari.OZ.AU>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Message-Id: <17298.1030500260@munnari.OZ.AU>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Wed, 28 Aug 2002 09:04:20 +0700
+
+    Date:        Tue, 27 Aug 2002 18:08:12 -0700
+    From:        Brent Welch <welch@panasas.com>
+    Message-ID:  <200208280108.VAA30178@blackcomb.panasas.com>
+
+  | If we are allowed to assume 8.2 or higher, which we can't really, then
+  | we could add
+[...]
+  | to the SelectTypein procedure.
+
+Yes, I looked at "fixing" it there, but that code is really quite
+general, with almost no understanding of what anything means, so I
+didn't think that corrupting it with knowlwedge of the semantics of
+what it is fetching would really be the best thing to do.
+
+I ran out of time last night while looking for a better place for
+a similar check (I would have gone directly to the regexp - I'm not
+that up to date with all the latest tcl changes...) and I'm not sure
+I will have time today, but I will keep looking.
+
+kre
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+

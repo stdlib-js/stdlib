@@ -1,0 +1,74 @@
+From rpm-list-admin@freshrpms.net  Mon Aug 12 11:37:58 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C85CD43FB1
+	for <jm@localhost>; Mon, 12 Aug 2002 06:37:57 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 11:37:57 +0100 (IST)
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7CAcTb08120 for
+    <jm-rpm@jmason.org>; Mon, 12 Aug 2002 11:38:29 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7CAZ2J17918; Mon, 12 Aug 2002 12:35:02
+    +0200
+Received: from python (gw01.es3.egwn.net [212.9.66.13]) (authenticated) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g7CAY6J13966 for
+    <rpm-list@freshrpms.net>; Mon, 12 Aug 2002 12:34:06 +0200
+From: Matthias Saou <matthias@egwn.net>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: How to add service port ?
+Message-Id: <20020812123237.4014ef57.matthias@egwn.net>
+In-Reply-To: <3D578B98.79F80294@traderman.co.uk>
+References: <3D578B98.79F80294@traderman.co.uk>
+Organization: Electronic Group Interactive
+X-Mailer: Sylpheed version 0.8.1claws (GTK+ 1.2.10; i386-redhat-linux)
+Reply-BY: Tue, 24 Jul 2000 19:02:00 +1000
+X-Operating-System: GNU/Linux power!
+X-Message-Flag: Try using a real operating system : GNU/Linux power!
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Mon, 12 Aug 2002 12:32:37 +0200
+Date: Mon, 12 Aug 2002 12:32:37 +0200
+
+Once upon a time, Yen wrote :
+
+> How do I install / add an additional service port to the system which
+> can be access via Microsoft ODBC driver?
+
+I honestly have no idea, and this is probably not the best list to expect
+an answer as it is supposed to discuss rpm packages/packaging matters.
+
+If you're using Red Hat Linux 7.3, you should try this list :
+https://listman.redhat.com/mailman/listinfo/valhalla-list
+
+Matthias
+
+-- 
+Matthias Saou                                World Trade Center
+-------------                                Edificio Norte 4 Planta
+System and Network Engineer                  08039 Barcelona, Spain
+Electronic Group Interactive                 Phone : +34 936 00 23 23
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

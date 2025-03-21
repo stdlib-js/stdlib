@@ -1,0 +1,30 @@
+From rssfeeds@jmason.org  Tue Oct  1 10:38:00 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 4BFDE16F16
+	for <jm@localhost>; Tue,  1 Oct 2002 10:38:00 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 01 Oct 2002 10:38:00 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9181mK15711 for
+    <jm@jmason.org>; Tue, 1 Oct 2002 09:01:49 +0100
+Message-Id: <200210010801.g9181mK15711@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: ask <rssfeeds@spamassassin.taint.org>
+Subject: Mac OS X browsers
+Date: Tue, 01 Oct 2002 08:01:48 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.askbjoernhansen.com/archives/2002/09/07.html
+Date: 2002-09-07T22:25:08-08:00
+
+Rael is plagued by MSIE instability on Mac OS X. I use a recent nightly build 
+of Chimera as my default browser. 0.4 has some issues with plugins (or with 
+QuickTime anyway) on 10.2, but the 0.5 builds are working great. Fast too! 
+Mozilla is ugly. MSIE is slow and unstable. Opera (on OS X) doesn't render too 
+many pages. OmniWeb and iCab are not keeping up. Chimera rocks. I have used 
+ChimeraKnight to do the updating. It also makes...
+
+

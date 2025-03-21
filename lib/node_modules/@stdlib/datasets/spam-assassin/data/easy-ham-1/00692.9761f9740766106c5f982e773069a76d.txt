@@ -1,0 +1,86 @@
+From fork-admin@xent.com  Sun Sep 22 00:25:32 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id AB34216F03
+	for <jm@localhost>; Sun, 22 Sep 2002 00:25:30 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sun, 22 Sep 2002 00:25:30 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8LNHxC08760 for <jm@jmason.org>;
+    Sun, 22 Sep 2002 00:17:59 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id B99282940D7; Sat, 21 Sep 2002 16:14:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mail.endeavors.com (unknown [66.161.8.83]) by xent.com
+    (Postfix) with ESMTP id 80A4A2940CD for <fork@xent.com>; Sat,
+    21 Sep 2002 16:13:03 -0700 (PDT)
+Received: from endeavors.com ([66.161.8.83] RDNS failed) by
+    mail.endeavors.com with Microsoft SMTPSVC(5.0.2195.5329); Sat,
+    21 Sep 2002 16:14:43 -0700
+Message-Id: <3D8CFD5E.10406@endeavors.com>
+From: Gregory Alan Bolcer <gbolcer@endeavors.com>
+Organization: Endeavors Technology, Inc.
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.0.1)
+    Gecko/20020823 Netscape/7.0
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: bitbitch@magnesium.net
+Cc: fork@spamassassin.taint.org
+Subject: Re: Oh my...
+References: <1204837300.20020921093852@magnesium.net>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+X-Originalarrivaltime: 21 Sep 2002 23:14:43.0702 (UTC) FILETIME=[AB685160:01C261C4]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sat, 21 Sep 2002 16:14:38 -0700
+
+I went out and drew some chalk circles on my
+sidewalk just so I wouldn't miss out on the experience.
+I've collected half a dozen passwords &
+access to email accounts so far.
+
+Greg
+
+bitbitch@magnesium.net wrote:
+> Hello fork,
+> 
+>   So they have Aaron Schwartz on NPR's Weekend Edition talking
+>   about Warchalking.   I'll agree, its funny, his voice is squeaky and
+>   I'm jealous that he got on radio and I didn't...
+> 
+>   But really, WTF is the big deal about warchalking?  I have yet to
+>   see any of it, anywhere.
+> 
+>   LInk will probably pop up on www.npr.org later today.
+> 
+>   
+> 
+
+
+-- 
+Gregory Alan Bolcer, CTO  | work: +1.949.833.2800
+gbolcer at endeavors.com  | http://endeavors.com
+Endeavors Technology, Inc.| cell: +1.714.928.5476
+
+
+
+
+
+
+
+
+
+

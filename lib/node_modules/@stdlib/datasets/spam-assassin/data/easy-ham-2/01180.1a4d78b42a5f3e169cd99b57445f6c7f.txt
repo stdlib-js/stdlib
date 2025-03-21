@@ -1,0 +1,72 @@
+From rpm-list-admin@freshrpms.net  Wed Jul 31 05:52:22 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 77C244406D
+	for <jm@localhost>; Wed, 31 Jul 2002 00:52:22 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 31 Jul 2002 05:52:22 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6V4n3202843 for
+    <jm-rpm@jmason.org>; Wed, 31 Jul 2002 05:49:03 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6V4bC824682; Wed, 31 Jul 2002 06:37:18
+    +0200
+Received: from blueyonder.co.uk (pcow057o.blueyonder.co.uk
+    [195.188.53.94]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g6V4Zj819651 for <rpm-list@freshrpms.net>; Wed, 31 Jul 2002 06:35:45 +0200
+Received: from pcow057o.blueyonder.co.uk ([127.0.0.1]) by blueyonder.co.uk
+    with Microsoft SMTPSVC(5.5.1877.757.75); Wed, 31 Jul 2002 05:35:45 +0100
+Received: from localhost.localdomain (unverified [213.48.244.15]) by
+    pcow057o.blueyonder.co.uk (Content Technologies SMTPRS 4.2.9) with ESMTP
+    id <T5c6b925cccac1785b3299@pcow057o.blueyonder.co.uk> for
+    <rpm-list@freshrpms.net>; Wed, 31 Jul 2002 05:35:45 +0100
+Content-Type: text/plain; charset="us-ascii"
+From: John Hinsley <johnhinsley@blueyonder.co.uk>
+To: rpm-zzzlist@freshrpms.net
+Subject: OpenGL
+User-Agent: KMail/1.4.1
+MIME-Version: 1.0
+Message-Id: <200207310534.37053.johnhinsley@blueyonder.co.uk>
+X-Mailscanner: Found to be clean, Found to be clean
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by egwn.net id
+    g6V4Zj819651
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Wed, 31 Jul 2002 05:34:37 +0100
+Date: Wed, 31 Jul 2002 05:34:37 +0100
+
+First, thanks for all the rpms, and especially ogle (which comes very close to 
+working perfectly on my Cyrix 333 box!).
+
+Now, I desperately need some games, especially TuxKart and FlightGear, but I 
+forever get stuck on a dependency: everything needs OpenGL. Querying the rpm 
+database for OpenGL gets me nowhere fast. Can anyone point me in the right 
+direction? What, in RedHat, provides OpenGL?
+
+Sorry for the question, but I've just switched from SuSE and I'm used to being 
+able to tell YaST to sort out the dependencies........
+
+Cheers
+
+John
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

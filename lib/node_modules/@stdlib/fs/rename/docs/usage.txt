@@ -1,0 +1,7 @@
+
+Usage: rename [options] <old_path> <new_path>
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.

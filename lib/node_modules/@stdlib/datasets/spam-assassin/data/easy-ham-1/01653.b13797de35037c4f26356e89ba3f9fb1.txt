@@ -1,0 +1,27 @@
+Return-Path: nas@python.ca
+Delivery-Date: Fri Sep  6 16:57:05 2002
+From: nas@python.ca (Neil Schemenauer)
+Date: Fri, 6 Sep 2002 08:57:05 -0700
+Subject: [Spambayes] Deployment
+In-Reply-To: <200209061443.g86Ehie14557@pcp02138704pcs.reston01.va.comcast.net>
+References: <3D788653.9143.1D8992DA@localhost>
+	<200209061443.g86Ehie14557@pcp02138704pcs.reston01.va.comcast.net>
+Message-ID: <20020906155705.GA22115@glacier.arctrix.com>
+
+Guido van Rossum wrote:
+> I personally don't think IMAP has a bright future, but for people who
+> do use it, that's certainly a good approach.
+
+Writing an IMAP server is a non-trivial task.  The specification is huge
+and clients do all kinds of weird stuff.  POP is very easy in
+comparison.  Perhaps you could forward messages to a special address or
+save them in a special folder to mark them as false negatives.
+
+Alternatively, perhaps there could be a separate protocol and client
+that could be used to review additions to the training set.  Each day a
+few random spam and ham messages could be grabbed as candidates.
+Someone would periodically startup the client, review the candidates,
+reclassify or remove any messages they don't like and add them to the
+training set.
+
+  Neil

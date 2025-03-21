@@ -1,0 +1,82 @@
+From ilug-admin@linux.ie  Mon Aug 12 18:55:45 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9A2EF44178
+	for <jm@localhost>; Mon, 12 Aug 2002 13:55:45 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 18:55:45 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7CHtLb27903 for
+    <jm-ilug@jmason.org>; Mon, 12 Aug 2002 18:55:21 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id SAA30631; Mon, 12 Aug 2002 18:54:38 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from cerberus.bluetree.ie (cerberus.bluetree.ie [62.17.24.129])
+    by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id SAA30597 for
+    <ilug@linux.ie>; Mon, 12 Aug 2002 18:54:31 +0100
+Received: (from mail@localhost) by cerberus.bluetree.ie (8.11.6/8.11.6) id
+    g7CHsVq00576; Mon, 12 Aug 2002 18:54:31 +0100
+X-Virus-Checked: Checked on cerberus.bluetree.ie at Mon Aug 12 18:54:25
+    IST 2002
+Received: from atlas.bluetree.ie (IDENT:root@atlas.bluetree.ie
+    [192.168.3.2]) by cerberus.bluetree.ie (8.11.6/8.11.6) with ESMTP id
+    g7CHsP800492; Mon, 12 Aug 2002 18:54:25 +0100
+Received: from arafel (arafel.bluetree.ie [192.168.3.42]) by
+    atlas.bluetree.ie (8.11.6/8.11.6) with SMTP id g7CHsPd25174;
+    Mon, 12 Aug 2002 18:54:25 +0100
+From: "Kenn Humborg" <kenn@bluetree.ie>
+To: "Paul Linehan" <plinehan@yahoo.com>, <ilug@linux.ie>
+Subject: RE: [ILUG] SUSE 8 disks? (thread changed slightly)
+Date: Mon, 12 Aug 2002 18:54:26 +0100
+Message-Id: <NBBBIGEGHIGMPCNKHCECOEGJEAAA.kenn@bluetree.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+In-Reply-To: <20020812174932.58511.qmail@web13904.mail.yahoo.com>
+Importance: Normal
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+ 
+> > No, as of oh, about a year to a year and a half ago
+> > SuSE revoked it's free offering of it's retail
+> > distro.
+> 
+> > Sometime about the start of the great slump, SuSE
+> > pulled free release of it's main x86 product.
+> 
+> 
+> Fine - nobody can oblige SuSE to do anything other
+> than put up the ftp version, but surely they
+> can't prevent a CD owner from burning a copy and
+> giving it to me?
+> 
+> What is the GPL all about then?
+
+Not everything on the SuSE CDs is GPL-ed.  IIRC, YAST
+has a more "proprietary" license.  There may be other
+third-party commercial products on there as well, which
+cannot be freely copied under the GPL.
+
+Later,
+Kenn
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

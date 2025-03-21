@@ -1,0 +1,158 @@
+From webmake-talk-admin@lists.sourceforge.net  Tue Sep 10 15:15:30 2002
+Return-Path: <webmake-talk-admin@example.sourceforge.net>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id 13F6516F03
+	for <zzzz@localhost>; Tue, 10 Sep 2002 15:15:28 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Tue, 10 Sep 2002 15:15:28 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8AAelC27198 for <zzzz@jmason.org>; Tue, 10 Sep 2002 11:40:48 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17oiS7-0004ib-00; Tue,
+    10 Sep 2002 03:41:03 -0700
+Received: from panoramix.vasoftware.com ([198.186.202.147]) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17oiR9-0008HS-00 for
+    <webmake-talk@lists.sourceforge.net>; Tue, 10 Sep 2002 03:40:03 -0700
+Received: from [195.174.161.55] (port=3496 helo=yahoo.com) by
+    panoramix.vasoftware.com with smtp (Exim 4.05-VA-mm1 #1 (Debian)) id
+    17oiR2-0006Uj-00 for <webmake-talk@lists.sourceforge.net>; Tue,
+    10 Sep 2002 03:39:57 -0700
+From: "BILSAG" <bilsag@yahoo.com>
+To: <webmake-talk@example.sourceforge.net>
+MIME-Version: 1.0
+Reply-To: "BILSAG" <bilsag@yahoo.com>
+Message-Id: <E17oiR2-0006Uj-00@panoramix.vasoftware.com>
+Content-Type: text/html; charset="ISO-8859-9"
+Content-Transfer-Encoding: 8bit
+Subject: [WM] CEVIRI YAZILIMLARI
+Sender: webmake-talk-admin@example.sourceforge.net
+Errors-To: webmake-talk-admin@example.sourceforge.net
+X-Beenthere: webmake-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:webmake-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:webmake-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/webmake-talk>,
+    <mailto:webmake-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Discussion of WebMake. <webmake-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/webmake-talk>,
+    <mailto:webmake-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=webmake-talk>
+X-Original-Date: Tue, 10 Sep 2002 13:41:57 +0300
+Date: Tue, 10 Sep 2002 13:41:57 +0300
+
+HTML>
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+<BODY bgcolor=white>
+<table>
+<tr>
+   <td>
+   <center><br>
+   <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     </center></B>
+
+   </td>
+</tr>
+</table>
+<P align=center><FONT  color=white size =7 ><STRONG>
+<TABLE cellSpacing=1 cellPadding=1 width="501" border=5 style="WIDTH: 501px; HEIGHT: 907px">
+  <TBODY>
+  
+  <TR>
+    <TD><IMG alt="" 
+      src="http://www.bilsag.com/web1.jpg"></TD>
+    <TD bgcolor=red><FONT size=4
+      
+      color=white><EM><STRONG>ÝNTERNETTE KENDÝNÝZÝ DAHA ÝYÝ HÝSSEDECEKSÝNÝZ.
+	  ÝNGÝLÝZCE WEB SAYFALARININ TÜRKÇE'YE ÇEVÝRÝ YAZILIMI
+	   </STRONG></EM> </FONT></TD></TR>
+  <TR>
+  <TD bgcolor=palegoldenrod><FONT size=7 
+      color=darkblue><EM><STRONG>$ 39+KDV</STRONG></EM> </FONT></TD></TR>
+  <TR>
+    <TD  ><IMG alt="" 
+      src="http://www.bilsag.com/cev1.jpg"></TD>
+    <TD bgcolor=red><FONT size=4
+      
+      color=white><STRONG><EM> ÝNGÝLÝZCE'DEN TÜRKÇE'YE BÝLGÝSAYAR DESTEKLÝ
+	    METÝN ÇEVÝRÝ YAZILIMI  
+	 
+	 (MS-WORD ALTINDA KULLANIM, TÜM WINDOWS VERSÝYONLARI ÝLE UYUMLU)
+	  </EM></STRONG> </FONT></TD></TR>
+  <TR>
+  <TD bgcolor=palegoldenrod><FONT size=7 
+      color=darkblue><STRONG><EM>$ 69+KDV</EM></STRONG> </FONT></TD></TR>
+  <TR>
+    <TD bgcolor=darkblue><FONT size=6 color=white><STRONG><EM>ÝKÝ YAZILIM &nbsp; BÝRLÝKTE</FONT></EM>    </STRONG></TD>
+    <TD bgcolor=darkblue><FONT size=7 
+      color=white><STRONG><EM>$ 
+  89+KDV</EM></STRONG> 
+</FONT></TD></TR></TBODY></TABLE></STRONG></FONT></P>
+      <P align=center><STRONG><a href="http://www.bilsag.com/index.html"><FONT color=darkcyan size=2>Ayrýntýlý Bilgi 
+      Ýçin&nbsp; </FONT></STRONG><STRONG><FONT 
+      color=darkcyan size=2>  týklayýn</FONT></A></STRONG> 
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </P>
+      <P align=center>
+     
+      &nbsp;<A href="http://www.bilsag.com/siparis.htm"><IMG alt="" src="http://www.bilsag.com/sipbuton.gif" border=0
+      ></A> </P>
+      <P align=center><FONT color=#ff0000><STRONG>BÝLSAG Ltd.</STRONG></FONT></P>
+      <P align=center><FONT size=2><FONT color=#ff0000><STRONG>AHMET MÝTHAT 
+      EFENDÝ SOK. 22/1 ÇANKAYA 06700 / ANKARA /</STRONG></FONT></FONT></P>
+      <P align=center><FONT size=2><FONT color=#ff0000><STRONG><FONT 
+      size=+0>Tlf: 0312. 439 2850/ Fax: 0312. 439 9347</FONT> 
+      </STRONG></FONT></FONT></P>
+      <P align=center><A href="mailto:bilsag@msn.com"><FONT color=#ff0000 
+      size=3><STRONG>bilsag@msn.com</STRONG></FONT></A></P>
+      
+  
+    <TD>
+    
+      <P align=center>&nbsp;</P>
+      <P align=center>&nbsp;</P>
+      </TD></TR></TABLE>
+<P></P>
+    
+<form action="http://www.bilsag.com/iptal1.asp" method="post">
+<center>
+<TABLE WIDTH="540" CELLSPACING=1 CELLPADDING=1 BORDER=0 bgcolor="#dddddd">
+<TR>
+<TD BGCOLOR="#eeeeee" align="middle"><FONT FACE="Verdana, Arial" SIZE="-1" COLOR="#000000">
+<strong>E-posta adres listemizden</strong> çýkmak için<strong>ÇIKAR</strong> tuþuna basýnýz
+</FONT>
+</TD></TR>
+<TR>
+<TD BGCOLOR="#eeeeee" align="middle">
+<INPUT NAME="e" VALUE="webmake-talk@lists.sourceforge.net" SIZE=25 
+     ></FONT>                   
+<INPUT TYPE="submit" VALUE="Çýkar">
+</TD></TR>
+<TR>
+<TD BGCOLOR="#ffffff" align=right>
+<FONT FACE="arial" SIZE="1" COLOR="#000000">Bu elektronik posta: webmake-talk@example.sourceforge.net e gönderilmiþtir</FONT>
+      
+
+
+</TD></TR></TABLE>
+</center>
+</form>
+</BODY>
+</HTML>
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+webmake-talk mailing list
+webmake-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/webmake-talk
+
+

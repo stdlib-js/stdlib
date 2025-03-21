@@ -1,0 +1,88 @@
+From rpm-list-admin@freshrpms.net  Fri Sep  6 11:34:02 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 676B616F17
+	for <jm@localhost>; Fri,  6 Sep 2002 11:33:59 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 11:33:59 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g868I5W25134 for
+    <jm-rpm@jmason.org>; Fri, 6 Sep 2002 09:18:06 +0100
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by webnote.net
+    (8.9.3/8.9.3) with ESMTP id IAA20563 for <jm-rpm@jmason.org>;
+    Fri, 6 Sep 2002 08:09:40 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g86711J18957; Fri, 6 Sep 2002 09:01:01
+    +0200
+Received: from localhost.localdomain ([218.188.76.21]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g8670ZJ18832 for
+    <rpm-list@freshrpms.net>; Fri, 6 Sep 2002 09:00:35 +0200
+Received: from localhost (localhost [[UNIX: localhost]]) by
+    localhost.localdomain (8.11.6/8.11.6) id g8670VX01954 for
+    rpm-list@freshrpms.net; Fri, 6 Sep 2002 15:00:31 +0800
+Content-Type: text/plain; charset="us-ascii"
+From: Stephen Liu <satimis@writeme.com>
+To: rpm-zzzlist@freshrpms.net
+Subject: Apt-get question
+User-Agent: KMail/1.4.1
+MIME-Version: 1.0
+Message-Id: <200209061500.31306.satimis@writeme.com>
+X-Mailscanner: Found to be clean, Found to be clean
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by egwn.net id
+    g8670ZJ18832
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Fri, 6 Sep 2002 15:00:31 +0800
+Date: Fri, 6 Sep 2002 15:00:31 +0800
+
+Hi All Folks,
+
+I have 'APT' installed and updated from 'freshmeat.net.  But I failed using it
+
+# apt-get install 
+/mnt/cdrom/Linux/CDBurner/cdrtools-cdrecord-1.11a23-1.i386.rpm
+Processing File Dependencies... Done
+Reading Package Lists... Done
+Building Dependency Tree... Done
+E: Couldn't find package 
+/mnt/cdrom/Linux/CDBurner/cdrtools-cdrecord-1.11a23-1.i386.rpm
+
+The file 'cdrtools-cdrecord-1.11a23-1.i386.rpm' is there
+
+I performed another test copying the file 
+'cdrtools-cdrecord-1.11a23-1.i386.rpm' to /root/Download
+
+# apt-get install /root/Download/cdrtools-cdrecord-1.11a23-1.i386.rpm
+Processing File Dependencies... Done
+Reading Package Lists... Done
+Building Dependency Tree... Done
+E: Couldn't find package /root/Download/cdrtools-cdrecord-1.11a23-1.i386.rpm
+
+Still failed.  Finally I rpm 'cdrtools-cdrecord-1.11a23-1.i386.rpm' from the 
+CD and suceeded.
+
+Kindly advise what mistake I have committed.
+
+Thanks in advance.
+
+Stephen Liu
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

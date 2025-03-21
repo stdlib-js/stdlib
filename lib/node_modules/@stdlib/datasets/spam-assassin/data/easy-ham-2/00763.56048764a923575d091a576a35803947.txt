@@ -1,0 +1,101 @@
+From fork-admin@xent.com  Tue Aug  6 11:59:40 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5CCD0441FA
+	for <jm@localhost>; Tue,  6 Aug 2002 06:49:16 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:49:16 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g74MLuv11290 for <jm@jmason.org>;
+    Sun, 4 Aug 2002 23:21:57 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 600752940BD; Sun,  4 Aug 2002 15:19:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mail.cruzio.com (mail.cruzio.com [63.249.95.37]) by
+    xent.com (Postfix) with ESMTP id 8B0EE2940AD for <FoRK@xent.com>;
+    Sun,  4 Aug 2002 15:18:49 -0700 (PDT)
+Received: from Tycho (dsl3-63-249-68-7.cruzio.com [63.249.68.7]) by
+    mail.cruzio.com with SMTP id PAA12678 for <FoRK@xent.com>; Sun,
+    4 Aug 2002 15:19:28 -0700 (PDT)
+From: "Jim Whitehead" <ejw@cse.ucsc.edu>
+To: "FoRK" <FoRK@xent.com>
+Subject: FYI: WSE 2002
+Message-Id: <AMEPKEBLDJJCCDEJHAMIOENFFDAA.ejw@cse.ucsc.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+Importance: Normal
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4133.2400
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 4 Aug 2002 15:17:34 -0700
+
+FYI, members of this list might be interested in the 4th International
+Workshop on Web Site Evolution (WSE 2002), being held October 2, 2002, in
+Montreal, Canada.
+
+http://star.itc.it/wse2002/
+
+- Jim
+
+>>From the Web page:
+
+ The potential of the Web as a vehicle for offering a variety of services is
+becoming more apparent as Web sites evolve their contents from static
+information to more dynamic and interactive forms. A number of new standards
+and commercial products are emerging, offering a basis for developing
+Web-based services from dynamic composible resources, extending both the
+range and scope of services that can be made available through the Web.
+
+The goal of this one-day workshop is to bring together members of the Web
+design, software engineering, and information technology communities to
+discuss techniques for migrating to Web services. Architectural styles and
+tool support for service-based Web sites are currently quite diverse.
+Expertise in constructing service-based Web pages is quite limited, and
+experience accounts are lacking. The explosion of non-traditional computing
+platforms for browsing the Web, such as PDAs, WAP-enabled phones, and
+Internet appliances, is forcing Web professionals to rethink the separation
+of form from content and the range and scope of services offered via the
+Web.
+
+WSE 2002 will provide an opportunity for the exchange of information related
+to exciting new research and empirical results in areas including (but not
+limited to):
+
+*   Migrating to Web services
+*   Web quality determination and improvement through process and product
+control
+*   Enhancing Web sites to make them more accessible, reliable, and usable
+*   Analyzing and reverse-engineering Web site content and structure
+*   Making Web site content available in multiple formats for multiple
+platforms
+*   Applying traditional software engineering activities such as
+architecture, metrics, and testing to Web sites
+*   Case studies of large-scale Web site reuse, reengineering, and evolution
+
+WSE 2002 is co-located with the IEEE International Conference on Software
+Maintenance (ICSM 2002). ICSM is the IEEE Computer Society's flagship event
+focused on the modernization of existing systems. ICSM 2002's theme of
+"maintaining distributed heterogeneous systems" nicely compliments WSE
+2002's overall theme and goals.
+
+
+
+http://xent.com/mailman/listinfo/fork
+
+

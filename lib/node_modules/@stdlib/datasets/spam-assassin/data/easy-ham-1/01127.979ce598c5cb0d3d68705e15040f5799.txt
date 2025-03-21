@@ -1,0 +1,165 @@
+From exmh-workers-admin@redhat.com  Mon Sep 23 18:31:06 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 4A8B916F03
+	for <jm@localhost>; Mon, 23 Sep 2002 18:31:05 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 23 Sep 2002 18:31:05 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8NEmDC21624 for
+    <jm-exmh@jmason.org>; Mon, 23 Sep 2002 15:48:13 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 66EF03F71C; Mon, 23 Sep 2002
+    10:48:08 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id B13733EA02
+    for <exmh-workers@listman.redhat.com>; Mon, 23 Sep 2002 10:41:32 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g8NEfWx16053 for exmh-workers@listman.redhat.com; Mon, 23 Sep 2002
+    10:41:32 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g8NEfWh16049 for
+    <exmh-workers@redhat.com>; Mon, 23 Sep 2002 10:41:32 -0400
+Received: from austin-jump.vircio.com
+    (IDENT:ccAy5zWQ09Xkwp7bvfjp0++Ajwz36CZN@jump-austin.vircio.com
+    [192.12.3.99]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id g8NENpi07062
+    for <exmh-workers@redhat.com>; Mon, 23 Sep 2002 10:23:51 -0400
+Received: (qmail 12928 invoked by uid 104); 23 Sep 2002 14:41:31 -0000
+Received: from cwg-exmh@DeepEddy.Com by localhost.localdomain with
+    qmail-scanner-0.90 (uvscan: v4.1.60/v4224. . Clean. Processed in 0.338467
+    secs); 23/09/2002 09:41:31
+Received: from deepeddy.vircio.com (@[10.1.2.1]) (envelope-sender
+    <cwg-exmh@DeepEddy.Com>) by austin-jump.vircio.com (qmail-ldap-1.03) with
+    SMTP for <exmh-workers@redhat.com>; 23 Sep 2002 14:41:30 -0000
+Received: (qmail 19676 invoked from network); 23 Sep 2002 14:41:26 -0000
+Received: from localhost (HELO deepeddy.vircio.com)
+    (?hktCuClL/beEINsOkIbIB+tLe1/MAaET?@[127.0.0.1]) (envelope-sender
+    <cwg-exmh@DeepEddy.Com>) by localhost (qmail-ldap-1.03) with SMTP for
+    <exmh-workers@redhat.com>; 23 Sep 2002 14:41:26 -0000
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4
+To: Scott Lipcon <slipcon@mercea.net>
+Cc: exmh-workers@spamassassin.taint.org
+Subject: Re: traceback in new exmh
+In-Reply-To: <20020923025816.8E7A34A8@mercea.net>
+References: <20020923025816.8E7A34A8@mercea.net>
+X-Url: http://www.DeepEddy.Com/~cwg
+X-Image-Url: http://www.DeepEddy.Com/~cwg/chris.gif
+MIME-Version: 1.0
+Content-Type: multipart/signed;
+    boundary="==_Exmh_1988991284P";
+    micalg=pgp-sha1;
+    protocol="application/pgp-signature"
+Content-Transfer-Encoding: 7bit
+Message-Id: <1032792084.19602.TMDA@deepeddy.vircio.com>
+From: Chris Garrigues <cwg-exmh@DeepEddy.Com>
+X-Delivery-Agent: TMDA/0.57
+Reply-To: Chris Garrigues <cwg-dated-1033224086.278b40@DeepEddy.Com>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Mon, 23 Sep 2002 09:41:22 -0500
+
+--==_Exmh_1988991284P
+Content-Type: text/plain; charset=us-ascii
+
+> From:  Scott Lipcon <slipcon@mercea.net>
+> Date:  Sun, 22 Sep 2002 22:58:16 -0400
+>
+> I just updated to the latest CVS - I had been running a build from June.  
+> Hitting the Flist button gives the following traceback:
+> 
+> syntax error in expression "int(17+1+(222-)*(19-17-2)/(224-))"
+>     while executing
+> "expr int($minLine+1+($msgid-$minMsg)*($maxLine-$minLine-2)/($maxMsg-$minMs
+> g))"
+>     (procedure "Ftoc_FindMsg" line 57)
+>     invoked from within
+> "Ftoc_FindMsg $i"
+>     (procedure "Ftoc_ShowSequences" line 16)
+>     invoked from within
+> "Ftoc_ShowSequences $F"
+>     (procedure "ScanFolder" line 81)
+>     invoked from within
+> "ScanFolder inbox 0"
+>     invoked from within
+> "time [list ScanFolder $F $adjustDisplay"
+>     (procedure "Scan_Folder" line 2)
+>     invoked from within
+> "Scan_Folder $exmh(folder) $ftoc(showNew)"
+>     (procedure "Inc_PresortFinish" line 7)
+>     invoked from within
+> "Inc_PresortFinish"
+>     invoked from within
+> ".fops.flist invoke"
+>     ("uplevel" body line 1)
+>     invoked from within
+> "uplevel #0 [list $w invoke]"
+>     (procedure "tkButtonUp" line 7)
+>     invoked from within
+> "tkButtonUp .fops.flist
+> "
+>     (command bound to event)
+> 
+> 
+> It seems to only happen in a folder with no unseen messages.
+> 
+> Chris, is this related to your recent changes?
+
+Curious.  I changed the arguments to Ftoc_ShowSequences to drop the folder 
+argument and instead have an optional msgids argument.  Somehow your version 
+of ScanFolder is still trying to pass $F.  You seem to have the latest 
+ftoc.tcl (1.36), but not the latest scan.tcl (1.27).
+
+I don't know how that happened, but try getting your source tree completely 
+up to date.
+
+Chris
+
+-- 
+Chris Garrigues                 http://www.DeepEddy.Com/~cwg/
+virCIO                          http://www.virCIO.Com
+716 Congress, Suite 200
+Austin, TX  78701		+1 512 374 0500
+
+  World War III:  The Wrong-Doers Vs. the Evil-Doers.
+
+
+
+
+--==_Exmh_1988991284P
+Content-Type: application/pgp-signature
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: Exmh version 2.2_20000822 06/23/2000
+
+iD8DBQE9jygSK9b4h5R0IUIRAix6AJ9CorKpwn/5KatPB2QytCyr1mVP5QCfd84d
+CBV9usxWABobTcDTVHm8fLY=
+=xJhj
+-----END PGP SIGNATURE-----
+
+--==_Exmh_1988991284P--
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+

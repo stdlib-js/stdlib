@@ -1,0 +1,29 @@
+
+{{alias}}( str, n )
+    Returns the first `n` Unicode code points of a string.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    n: integer
+        Number of Unicode code points to return.
+
+    Returns
+    -------
+    out: string
+        Output string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'beep', 1 )
+    'b'
+    > out = {{alias}}( 'Boop', 1 )
+    'B'
+    > out = {{alias}}( 'foo bar', 5 )
+    'foo b'
+
+    See Also
+    --------
+

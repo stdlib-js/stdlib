@@ -1,0 +1,12 @@
+
+currentWorkspace
+    Name of the current workspace.
+
+    Examples
+    --------
+    > currentWorkspace
+
+    See Also
+    --------
+    workspaces
+

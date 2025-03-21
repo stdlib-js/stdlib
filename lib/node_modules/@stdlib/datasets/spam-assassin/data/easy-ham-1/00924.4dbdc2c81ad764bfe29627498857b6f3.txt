@@ -1,0 +1,70 @@
+From spamassassin-devel-admin@lists.sourceforge.net  Thu Aug 22 16:27:31 2002
+Return-Path: <spamassassin-devel-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5B79347C67
+	for <jm@localhost>; Thu, 22 Aug 2002 11:27:27 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 22 Aug 2002 16:27:27 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7MFN5Z12029 for <jm@jmason.org>; Thu, 22 Aug 2002 16:23:05 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17htji-00023z-00; Thu,
+    22 Aug 2002 08:19:02 -0700
+Received: from www.ctyme.com ([209.237.228.10] helo=darwin.ctyme.com) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17htj3-00077f-00 for
+    <spamassassin-devel@lists.sourceforge.net>; Thu, 22 Aug 2002 08:18:21
+    -0700
+Received: from m206-56.dsl.tsoft.com ([198.144.206.56] helo=perkel.com) by
+    darwin.ctyme.com with asmtp (TLSv1:RC4-MD5:128) (Exim 3.35 #1) id
+    17htjs-0005OZ-00 for spamassassin-devel@lists.sourceforge.net;
+    Thu, 22 Aug 2002 08:19:12 -0700
+Message-Id: <3D65009B.4080707@perkel.com>
+From: Marc Perkel <marc@perkel.com>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.1b)
+    Gecko/20020721
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: spamassassin-devel@example.sourceforge.net
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Subject: [SAdev] Body Test Question /d ?
+Sender: spamassassin-devel-admin@example.sourceforge.net
+Errors-To: spamassassin-devel-admin@example.sourceforge.net
+X-Beenthere: spamassassin-devel@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-devel-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-devel@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Id: SpamAssassin Developers <spamassassin-devel.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-devel>
+X-Original-Date: Thu, 22 Aug 2002 08:17:47 -0700
+Date: Thu, 22 Aug 2002 08:17:47 -0700
+
+Suppose I created a rule that was in this form:
+
+body RULE_NAME /text to delete/d
+
+Would the "/d" delete this text from the body and mask it from the rest of the 
+rules? If so - I'm thinking about applying it to Yahoo and SN and Juno ads so 
+that FPs are reduced.
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-devel mailing list
+Spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+

@@ -1,0 +1,45 @@
+
+{{alias}}( obj, n, predicate[, thisArg ] )
+    Tests whether some `own` properties of a provided object
+    satisfy a predicate function for at least `n` properties.
+
+    The predicate function is provided three arguments:
+
+    - value: object value.
+    - key: object key.
+    - obj: the input object.
+
+    The function immediately returns upon finding `n` successful properties.
+
+    If provided an empty object, the function returns `false`.
+
+    Parameters
+    ----------
+    obj: Object
+        Input object over which to iterate.
+
+    n: number
+        Minimum number of successful properties.
+
+    predicate: Function
+        Test function.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    bool: boolean
+        The function returns `true` if an object's own properties satisfy a
+        predicate for at least `n` properties; otherwise, the function
+        returns `false`.
+
+    Examples
+    --------
+    > function negative( v ) { return ( v < 0 ); };
+    > var obj = { a: 1, b: 2, c: -3, d: 4, e: -1 };
+    > var bool = {{alias}}( obj, 2, negative )
+    true
+
+    See Also
+    --------

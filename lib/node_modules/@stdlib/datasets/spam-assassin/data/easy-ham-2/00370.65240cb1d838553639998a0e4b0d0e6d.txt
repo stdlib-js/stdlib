@@ -1,0 +1,73 @@
+From ilug-admin@linux.ie  Tue Aug 13 10:29:38 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8A78544130
+	for <jm@localhost>; Tue, 13 Aug 2002 05:22:04 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:22:04 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7D83eb22404 for
+    <jm-ilug@jmason.org>; Tue, 13 Aug 2002 09:03:40 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA31898; Tue, 13 Aug 2002 09:03:06 +0100
+Received: from ie.suberic.net (owsla.ie.suberic.net [62.17.162.83]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id JAA31862 for <ilug@linux.ie>;
+    Tue, 13 Aug 2002 09:02:59 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host owsla.ie.suberic.net
+    [62.17.162.83] claimed to be ie.suberic.net
+Received: from germain.ie.suberic.net (germain.g.dev.ie.alphyra.com
+    [192.168.7.200]) by ie.suberic.net (8.11.6/8.11.6) with ESMTP id
+    g7D82wY26805 for <ilug@linux.ie>; Tue, 13 Aug 2002 09:02:58 +0100
+Received: from germain.ie.suberic.net (germain [127.0.0.1]) by
+    germain.ie.suberic.net (8.11.6/8.11.6) with ESMTP id g7D82wA29830 for
+    <ilug@linux.ie>; Tue, 13 Aug 2002 09:02:58 +0100
+Date: Tue, 13 Aug 2002 09:02:53 +0100
+To: irish linux users group <ilug@linux.ie>
+Subject: Re: [ILUG] SUSE 8 disks? (thread changed slightly)
+Message-Id: <20020813090253.A29805@ie.suberic.net>
+References: <200208122348.AAA13536@lugh.tuatha.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <200208122348.AAA13536@lugh.tuatha.org>; from cout@eircom.net
+    on Tue, Aug 13, 2002 at 12:48:18AM +0100
+X-Operating-System: Linux 2.4.18-5 i686
+X-GPG-Fingerprint: 9C1D 16F4 11F1 6BD2 933C  048D ACC7 9840 89D0 7646
+From: kevin lyda <kevin+dated+1029657778.1331e2@ie.suberic.net>
+Mail-Followup-To: kevin+dated+1029657778.1331e2@ie.suberic.net,
+	ilug@linux.ie
+X-Delivery-Agent: TMDA/0.57
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Tue, Aug 13, 2002 at 12:48:18AM +0100, wintermute wrote:
+> How unimaginably difficult is this to do?
+> There are as far as I know, no Linux kernel hackers, nor distros that originate from this fair island right?
+> Right.
+
+i think there's a mailing list on linux.ie for this.
+
+also, there's niall's work on the bbc.  no, not that bbc, the bootable
+business card.
+
+kevin
+
+-- 
+kevin@suberic.net     that a believer is happier than a skeptic is no more to
+fork()'ed on 37058400    the point than the fact that a drunken man is happier
+meatspace place: home       than a sober one. the happiness of credulity is a
+http://ie.suberic.net/~kevin   cheap & dangerous quality -- g.b. shaw
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

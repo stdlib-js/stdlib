@@ -1,0 +1,67 @@
+From fork-admin@xent.com  Thu Jul 25 11:10:45 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E42EB440D2
+	for <jm@localhost>; Thu, 25 Jul 2002 06:10:00 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 11:10:00 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6P94q409019 for <jm@jmason.org>;
+    Thu, 25 Jul 2002 10:04:52 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 499F62940A2; Thu, 25 Jul 2002 02:03:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from venus.phpwebhosting.com (venus.phpwebhosting.com
+    [64.29.16.27]) by xent.com (Postfix) with SMTP id 8A7E02940A1 for
+    <fork@xent.com>; Thu, 25 Jul 2002 02:02:51 -0700 (PDT)
+Received: (qmail 25255 invoked by uid 508); 25 Jul 2002 09:02:46 -0000
+Received: from unknown (HELO hydrogen.leitl.org) (217.80.40.71) by
+    venus.phpwebhosting.com with SMTP; 25 Jul 2002 09:02:46 -0000
+Received: from localhost (eugen@localhost) by hydrogen.leitl.org
+    (8.11.6/8.11.6) with ESMTP id g6P92TA26045; Thu, 25 Jul 2002 11:02:29
+    +0200
+X-Authentication-Warning: hydrogen.leitl.org: eugen owned process doing -bs
+From: Eugen Leitl <eugen@leitl.org>
+To: "R. A. Hettinga" <rah@shipwright.com>
+Cc: Digital Bearer Settlement List <dbs@philodox.com>,
+	<dcsb@ai.mit.edu>, <fork@xent.com>
+Subject: Re: Buy? (was Re: It's back? Triple-digit Dow gains at 2PM...)
+In-Reply-To: <p05111a31b9653f99ce1f@[66.149.49.6]>
+Message-Id: <Pine.LNX.4.33.0207251056590.25043-100000@hydrogen.leitl.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 25 Jul 2002 11:02:29 +0200 (CEST)
+
+On Thu, 25 Jul 2002, R. A. Hettinga wrote:
+
+> So, in light of the erstwhile bloodbath on Capital Hill, and the real
+> one we just saw a few days ago in the market, it may be time for
+> people to remember what Mr. Rothschild said, and buy now while
+> there's blood in the streets.
+
+Luckily, I'm in no such predilection as technolumpen.
+
+However, the signs do seem to head for a much deeper crapper than the one
+we're currently in, and this has relevance to those switching jobs, or
+those just entering the job market. Nano/bio startups are all screwed up,
+alas. It's too early to wait for the radioactive glass to cool down while
+the nukes are still going off, imo.
+
+
+http://xent.com/mailman/listinfo/fork
+
+

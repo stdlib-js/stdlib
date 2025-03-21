@@ -1,0 +1,71 @@
+From fork-admin@xent.com  Tue Sep 24 10:48:34 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id B899416F03
+	for <jm@localhost>; Tue, 24 Sep 2002 10:48:33 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 24 Sep 2002 10:48:33 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8NN10C06961 for <jm@jmason.org>;
+    Tue, 24 Sep 2002 00:01:00 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 04BAB2941D9; Mon, 23 Sep 2002 15:57:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from crank.slack.net (slack.net [166.84.151.181]) by xent.com
+    (Postfix) with ESMTP id 8D22029409A for <fork@xent.com>; Mon,
+    23 Sep 2002 15:56:50 -0700 (PDT)
+Received: by crank.slack.net (Postfix, from userid 596) id 7CB693ED5A;
+    Mon, 23 Sep 2002 19:05:10 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1]) by crank.slack.net
+    (Postfix) with ESMTP id 7B19A3EC9E; Mon, 23 Sep 2002 19:05:10 -0400 (EDT)
+From: Tom <tomwhore@slack.net>
+To: Russell Turpin <deafbox@hotmail.com>
+Cc: fork@spamassassin.taint.org
+Subject: Re: SF Weekly's Ultimate SF Date lineup :-)
+In-Reply-To: <F167IKeqA1UzccrYFti0000478e@hotmail.com>
+Message-Id: <Pine.BSO.4.44.0209231859360.29230-100000@crank.slack.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 23 Sep 2002 19:05:10 -0400 (EDT)
+
+On Mon, 23 Sep 2002, Russell Turpin wrote:
+
+--]Here's the better idea. Invite her for an afternoon
+--]cruise under the Golden Gate bridge in your Stonehorse
+--]day sailor.
+
+
+Good way, heres one that worked for me.
+
+Work on a database project with that person. After a while hand her the
+keyboard to go get some lunch.
+
+If when you come back she is talking to the person in the next cube about
+survivor all the time you were gone...go for the one night boom boom plan
+
+If when you return she has read thru the help screen to try to figure out
+what your working on...go fro the week long dine and do with options for
+more IF she finishes the help docs and does some code.
+
+If when you come back she has done some  work on the db's infrastructure,
+cleaned up your code and made a few  "additions" to make it work
+better and figures that since you have done enough work for the day  asks
+that you bring lunch and your lap top to the big  screen projection room
+to watch your new DVD of startship troopers..marry her
+
+
+

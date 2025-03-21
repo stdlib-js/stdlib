@@ -1,0 +1,73 @@
+From sentto-2242572-53807-1031307957-zzzz=spamassassin.taint.org@returns.groups.yahoo.com  Fri Sep  6 11:48:58 2002
+Return-Path: <sentto-2242572-53807-1031307957-zzzz=spamassassin.taint.org@returns.groups.yahoo.com>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id 3912316F1F
+	for <zzzz@localhost>; Fri,  6 Sep 2002 11:41:57 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Fri, 06 Sep 2002 11:41:57 +0100 (IST)
+Received: from n3.grp.scd.yahoo.com (n3.grp.scd.yahoo.com [66.218.66.86])
+    by dogma.slashnull.org (8.11.6/8.11.6) with SMTP id g86APhC32138 for
+    <zzzz@spamassassin.taint.org>; Fri, 6 Sep 2002 11:25:43 +0100
+X-Egroups-Return: sentto-2242572-53807-1031307957-zzzz=spamassassin.taint.org@returns.groups.yahoo.com
+Received: from [66.218.66.98] by n3.grp.scd.yahoo.com with NNFMP;
+    06 Sep 2002 10:25:57 -0000
+X-Sender: martin@srv0.ems.ed.ac.uk
+X-Apparently-To: zzzzteana@yahoogroups.com
+Received: (EGP: mail-8_1_0_1); 6 Sep 2002 10:25:57 -0000
+Received: (qmail 30549 invoked from network); 6 Sep 2002 10:25:57 -0000
+Received: from unknown (66.218.66.217) by m15.grp.scd.yahoo.com with QMQP;
+    6 Sep 2002 10:25:57 -0000
+Received: from unknown (HELO haymarket.ed.ac.uk) (129.215.128.53) by
+    mta2.grp.scd.yahoo.com with SMTP; 6 Sep 2002 10:25:56 -0000
+Received: from srv0.ems.ed.ac.uk (srv0.ems.ed.ac.uk [129.215.117.0]) by
+    haymarket.ed.ac.uk (8.11.6/8.11.6) with ESMTP id g86APt308136 for
+    <forteana@yahoogroups.com>; Fri, 6 Sep 2002 11:25:55 +0100 (BST)
+Received: from EMS-SRV0/SpoolDir by srv0.ems.ed.ac.uk (Mercury 1.44);
+    6 Sep 02 11:25:54 +0000
+Received: from SpoolDir by EMS-SRV0 (Mercury 1.44); 6 Sep 02 11:25:45 +0000
+Organization: Management School
+To: zzzzteana@yahoogroups.com
+Message-Id: <3D7890C7.21244.52BF5419@localhost>
+Priority: normal
+In-Reply-To: <E17nGG6-0004s6-00@gadolinium.btinternet.com>
+X-Mailer: Pegasus Mail for Windows (v4.01)
+Content-Description: Mail message body
+From: "Martin Adamson" <martin@srv0.ems.ed.ac.uk>
+MIME-Version: 1.0
+Mailing-List: list zzzzteana@yahoogroups.com; contact
+    forteana-owner@yahoogroups.com
+Delivered-To: mailing list zzzzteana@yahoogroups.com
+Precedence: bulk
+List-Unsubscribe: <mailto:zzzzteana-unsubscribe@yahoogroups.com>
+Date: Fri, 6 Sep 2002 11:25:44 +0100
+Subject: Re: [zzzzteana] Save the planet, kill the people
+Reply-To: zzzzteana@yahoogroups.com
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+
+
+> Zimbabwe has dropped objections to accepting genetically modified (GM) grain
+> so that urgently-needed food aid can be delivered, says the UN food agency.
+
+Yes, confirming what I said in my last message. Ah! I see where the problem 
+lies! You seem to be labouring under the misapprehension that Zimbabwe and 
+Zambia are the same country. 
+
+Martin
+
+------------------------ Yahoo! Groups Sponsor ---------------------~-->
+Sell a Home for Top $
+http://us.click.yahoo.com/RrPZMC/jTmEAA/MVfIAA/7gSolB/TM
+---------------------------------------------------------------------~->
+
+To unsubscribe from this group, send an email to:
+forteana-unsubscribe@egroups.com
+
+ 
+
+Your use of Yahoo! Groups is subject to http://docs.yahoo.com/info/terms/ 
+
+
+

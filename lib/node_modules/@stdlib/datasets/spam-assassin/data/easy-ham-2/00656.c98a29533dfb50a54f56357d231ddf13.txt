@@ -1,0 +1,106 @@
+From razor-users-admin@lists.sourceforge.net  Tue Aug 20 10:57:41 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id EC18B43C34
+	for <jm@localhost>; Tue, 20 Aug 2002 05:57:40 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 10:57:41 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7JHb1Z02595 for <jm-razor@jmason.org>; Mon, 19 Aug 2002 18:37:02 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17gqMr-0004he-00; Mon,
+    19 Aug 2002 10:31:05 -0700
+Received: from fly.hiwaay.net ([208.147.154.56] helo=mail.hiwaay.net) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17gqLp-00009r-00 for
+    <razor-users@lists.sourceforge.net>; Mon, 19 Aug 2002 10:30:02 -0700
+Received: from bsd.havk.org (user-24-214-34-165.knology.net
+    [24.214.34.165]) by mail.hiwaay.net (8.12.5/8.12.5) with ESMTP id
+    g7JHTs2j281052; Mon, 19 Aug 2002 12:29:55 -0500 (CDT)
+Received: by bsd.havk.org (Postfix, from userid 1001) id 857671A786;
+    Mon, 19 Aug 2002 12:29:53 -0500 (CDT)
+From: Steve Price <steve@havk.org>
+To: Chad Norwood <chad@cloudmark.com>
+Cc: razor-users@example.sourceforge.net
+Message-Id: <20020819172953.GF367@bsd.havk.org>
+References: <20020819141417.GS367@bsd.havk.org>
+    <20020819144150.GA1800@darkridge.com>
+    <20020819171726.GE5484@nexus.cloudmark.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20020819171726.GE5484@nexus.cloudmark.com>
+User-Agent: Mutt/1.3.27i
+X-Operating-System: FreeBSD 4.5-PRERELEASE i386
+Subject: [Razor-users] Re: turning off checksums per MIME part
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Mon, 19 Aug 2002 12:29:53 -0500
+Date: Mon, 19 Aug 2002 12:29:53 -0500
+
+On Mon, Aug 19, 2002 at 10:17:26AM -0700, Chad Norwood wrote:
+>   The way Razor breaks down mail is simple.  If a mail contains MIME
+>   boundaries it is split on those boundaries, each MIME part is considered 
+>   when marking the mail as spam.
+
+This isn't a MIME message that it is breaking down though.  The
+message as sent to me is just a regular one part, non-MIME message.
+The contents of the message among other things is a forwarded message
+(inline not as an attachment) that happens to have MIME parts.
+
+>   In 2.14, there are different 'logic methods' for detecting spam.
+>   The default method 5 requires all non-contention parts to be spam for
+
+I see 1-4 documented in the manpage.  2 looked like a good candidate
+but the manpage states that only 1, 3, and 4 are on by default.  No
+mention of method 5 though that I can see.
+
+>   the mail to be marked as spam.  A part is considered under
+>   contention if its not clear if its spam are not, and is relatively
+>   rare.
+> 
+>   Sounds like you are not using 2.14, or maybe you're misinterpreting
+
+Actually I am using 2.14.
+
+>   the log files.  Feel free to send me the log files if you think 
+>   there is a bug.
+>   
+>   Also, as jordan says, if you get a legit mail marked as spam (based
+>   on whatever MIME stuff is going on), you should revoke it (which sends
+>   all parts in) so TeS can take care of business.  
+
+I have to run off to a meeting but I'll send you a copy of the logs
+and the message that triggered as SPAM when I get back.  I'll also
+revoke it along with the other 3 similar messages and the Security
+Advisory that were wrongly called SPAM this morning.
+
+Thanks.
+
+-steve
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+

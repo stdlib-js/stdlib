@@ -1,0 +1,38 @@
+{
+  "name": "stdlib-datasets-img-locomotion-house-cat",
+  "version": "",
+  "title": "Locomotion House Cat",
+  "description": "Twenty-four views of a house cat.",
+  "resources": [
+    {
+      "name": "locomotion-house-cat-jpg",
+      "title": "Locomotion House Cat",
+      "description": "Twenty-four views of a house cat.",
+      "format": "jpeg",
+      "mediatype": "image/jpeg",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/image.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Getty's Open Content Program",
+      "web": "http://www.getty.edu/art/collection/objects/40918/eadweard-j-muybridge-animal-locomotion-american-1887/"
+    }
+  ],
+  "keywords": [
+    "image",
+    "img",
+    "animal",
+    "cat",
+    "running",
+    "mammal",
+    "kitty",
+    "feline",
+    "locomotion",
+    "moving",
+    "movement"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}

@@ -1,0 +1,48 @@
+
+{{alias}}( value )
+    Tests if a value is a URI.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is a URI.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 'http://google.com' )
+    true
+    > bool = {{alias}}( 'http://localhost/' )
+    true
+    > bool = {{alias}}( 'http://example.w3.org/path%20with%20spaces.html' )
+    true
+    > bool = {{alias}}( 'ftp://ftp.is.co.za/rfc/rfc1808.txt' )
+    true
+
+    // No scheme:
+    > bool = {{alias}}( '' )
+    false
+    > bool = {{alias}}( 'foo@bar' )
+    false
+    > bool = {{alias}}( '://foo/' )
+    false
+
+    // Illegal characters:
+    > bool = {{alias}}( 'http://<foo>' )
+    false
+
+    // Invalid path:
+    > bool = {{alias}}( 'http:////foo.html' )
+    false
+
+    // Incomplete hex escapes:
+    > bool = {{alias}}( 'http://example.w3.org/%a' )
+    false
+
+    See Also
+    --------
+

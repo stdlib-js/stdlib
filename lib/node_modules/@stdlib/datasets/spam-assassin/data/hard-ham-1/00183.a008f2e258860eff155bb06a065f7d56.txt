@@ -1,0 +1,141 @@
+Return-Path: spamassassin-talk-admin@example.sourceforge.net
+Delivery-Date: Thu Aug 15 15:14:14 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Received: from webnote.net (mail.webnote.net [193.120.211.219])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7FEEEi01451
+	for <zzz-sa@spamassassin.taint.org>; Thu, 15 Aug 2002 15:14:14 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net [216.136.171.252])
+	by webnote.net (8.9.3/8.9.3) with ESMTP id OAA08721
+	for <zzz-sa@spamassassin.taint.org>; Thu, 15 Aug 2002 14:36:27 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13] helo=usw-sf-list1.sourceforge.net)
+	by usw-sf-list2.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian))
+	id 17fKjL-0005HV-00; Thu, 15 Aug 2002 06:32:03 -0700
+Received: from mail11.speakeasy.net ([216.254.0.211] helo=mail.speakeasy.net)
+	by usw-sf-list1.sourceforge.net with esmtp 
+	(Cipher TLSv1:DES-CBC3-SHA:168) (Exim 3.31-VA-mm2 #1 (Debian))
+	id 17fKik-0006IO-00
+	for <spamassassin-talk@lists.sourceforge.net>; Thu, 15 Aug 2002 06:31:26 -0700
+Received: (qmail 31585 invoked from network); 15 Aug 2002 13:31:22 -0000
+Received: from unknown (HELO smoking) ([66.92.72.101]) (envelope-sender <rOD@arsecandle.org>)
+          by mail11.speakeasy.net (qmail-ldap-1.03) with SMTP
+          for <spamassassin-talk@lists.sourceforge.net>; 15 Aug 2002 13:31:22 -0000
+Message-ID: <02f901c24460$096f1820$65485c42@smoking>
+From: "rODbegbie" <rOD@arsecandle.org>
+To: "Spam Assassin" <spamassassin-talk@example.sourceforge.net>
+MIME-Version: 1.0
+Content-Type: multipart/signed;
+	protocol="application/x-pkcs7-signature";
+	micalg=SHA1;
+	boundary="----=_NextPart_000_02F4_01C2443E.80476960"
+X-Priority: 3
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2600.0000
+Subject: [SAtalk] OT: Can Weblogs Reach Ronald Scelson?
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-BeenThere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+	<mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+	<mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Thu, 15 Aug 2002 09:31:14 -0400
+Date: Thu, 15 Aug 2002 09:31:14 -0400
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_02F4_01C2443E.80476960
+Content-Type: text/plain;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+
+Made me chuckle.
+
+http://www.bloggerheads.com/can_weblogs/ronald_scelson.asp
+
+rOD.
+
+--
+"Don't frown, don't pout, don't snivel, don't cry,
+ Don't cough, don't choke, don't faint, don't die."
+
+>> Doing the blogging thang again at http://www.groovymother.com/ <<
+
+
+------=_NextPart_000_02F4_01C2443E.80476960
+Content-Type: application/x-pkcs7-signature;
+	name="smime.p7s"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment;
+	filename="smime.p7s"
+
+MIAGCSqGSIb3DQEHAqCAMIACAQExCzAJBgUrDgMCGgUAMIAGCSqGSIb3DQEHAQAAoIIJIjCCAnow
+ggHjoAMCAQICARcwDQYJKoZIhvcNAQEFBQAwUzELMAkGA1UEBhMCVVMxHDAaBgNVBAoTE0VxdWlm
+YXggU2VjdXJlIEluYy4xJjAkBgNVBAMTHUVxdWlmYXggU2VjdXJlIGVCdXNpbmVzcyBDQS0xMB4X
+DTAyMDQxODE1MjkzN1oXDTIwMDQxMzE1MjkzN1owTjELMAkGA1UEBhMCVVMxFjAUBgNVBAoTDUdl
+b1RydXN0IEluYy4xJzAlBgNVBAMTHkdlb1RydXN0IFRydWUgQ3JlZGVudGlhbHMgQ0EgMjCBnzAN
+BgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAspcspZISpYX/aJqWoYcSyyGqFby3OvsepRzLRU0ENDJR
+wJo7DwFpirRFOUQkTkKXsY6BQzX/CeCRrn9i4ny5gcXuI2JSyrSmDwobbwl52n5cPEbHGcebybWd
+KfAf8vvkxYUnTmDZPtt2ob5RNpJTeTiq9MpNCB/5G7Ocr1hEljcCAwEAAaNjMGEwDgYDVR0PAQH/
+BAQDAgHGMB0GA1UdDgQWBBQig0tNIAIMMfR8WrAaTRXIeF0RSTAPBgNVHRMBAf8EBTADAQH/MB8G
+A1UdIwQYMBaAFEp4MlIR21kWNl7fwRQ2QGpHfEyhMA0GCSqGSIb3DQEBBQUAA4GBACmw3z+sLsLS
+fAfdECQJPfiZFzJzSPQKLwY7vHnNWH2lAKYECbtAFHBpdyhSPkrj3KghXeIJnKyMFjsK6xd1k1Yu
+wMXrauUH+HIDuZUg4okBwQbhBTqjjEdo/cCHILQsaLeU2kM+n5KKrpb0uvrHrocGffRMrWhz9zYB
+lxoq0/EEMIICgjCCAeugAwIBAgIBBDANBgkqhkiG9w0BAQQFADBTMQswCQYDVQQGEwJVUzEcMBoG
+A1UEChMTRXF1aWZheCBTZWN1cmUgSW5jLjEmMCQGA1UEAxMdRXF1aWZheCBTZWN1cmUgZUJ1c2lu
+ZXNzIENBLTEwHhcNOTkwNjIxMDQwMDAwWhcNMjAwNjIxMDQwMDAwWjBTMQswCQYDVQQGEwJVUzEc
+MBoGA1UEChMTRXF1aWZheCBTZWN1cmUgSW5jLjEmMCQGA1UEAxMdRXF1aWZheCBTZWN1cmUgZUJ1
+c2luZXNzIENBLTEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAM4vGbwXt3fek6lfWg0XTzQa
+DJj0ItlZ1MRoRvC0NcWFAyDGr0WlIVFFQesWWDYyb+JQYmT5/VGcqiTZ9J2DKocKIdMSODRsjQBu
+WqDZQu4aIZX5UkxVWsUPOE9G+m34LjXWHXzr4vCwdYDIqROsvojvOm6rXyo4YgKwEnv+j6YDAgMB
+AAGjZjBkMBEGCWCGSAGG+EIBAQQEAwIABzAPBgNVHRMBAf8EBTADAQH/MB8GA1UdIwQYMBaAFEp4
+MlIR21kWNl7fwRQ2QGpHfEyhMB0GA1UdDgQWBBRKeDJSEdtZFjZe38EUNkBqR3xMoTANBgkqhkiG
+9w0BAQQFAAOBgQB1W6ibAxHm6VZMzfmpTMANmvPMZWnmJXbMWbfWVMMdzZmsGd20hdXgPfxiIKeE
+S1hl8eL5lSE/9dR+WB5Hh1Q+WKG1tfgq73HnvMP2sUlG4tega+VWeponmHxGYhTnyfxuAxJ5gDgd
+SIKN/Bf+KpYrtWKmpj29f5JZzVoqgrI3eTCCBBowggODoAMCAQICAxAAdTANBgkqhkiG9w0BAQQF
+ADBOMQswCQYDVQQGEwJVUzEWMBQGA1UEChMNR2VvVHJ1c3QgSW5jLjEnMCUGA1UEAxMeR2VvVHJ1
+c3QgVHJ1ZSBDcmVkZW50aWFscyBDQSAyMB4XDTAyMDgwNzE3MzA1NloXDTAzMDgyMTE3MzA1Nlow
+ggHQMQswCQYDVQQGEwJVUzFJMEcGA1UEChNAR2VvVHJ1c3QgVHJ1ZSBDcmVkZW50aWFscyBDdXN0
+b21lciAtIE9yZ2FuaXphdGlvbiBub3QgdmFsaWRhdGVkLjE/MD0GA1UECxM2Q1BTIHRlcm1zIGlu
+Y29ycG9yYXRlZCBieSByZWZlcmVuY2UgbGlhYmlsaXR5IGxpbWl0ZWQuMUkwRwYDVQQLE0BTZWUg
+VHJ1ZSBDcmVkZW50aWFscyBFeHByZXNzIENQUyB3d3cuZ2VvdHJ1c3QuY29tL3Jlc291cmNlcy9D
+UFMuMS0wKwYDVQQLEyRFbWFpbCBjb250cm9sIHZhbGlkYXRlZCBieSBHZW9UcnVzdC4xPzA9BgNV
+BAsTNklkZW50aXR5IGF1dGhlbnRpY2F0ZWQgYnkgUmVnaXN0cmF0aW9uIEF1dGhvcml0eSAoUkEp
+LjFCMEAGA1UECxQ5UmVnaXN0cmF0aW9uIEF1dGhvcml0eSAoUkEpIC0gcm9kLWdlb3RydXN0QGFy
+c2VjYW5kbGUub3JnMRMwEQYDVQQDEwpyT0QgQmVnYmllMSEwHwYJKoZIhvcNAQkBFhJyT0RAYXJz
+ZWNhbmRsZS5vcmcwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMXm5uxWzmnY4QqgZrm7Y0Hp
+CRnHrXk8zcYCYwTO4Jsh3wdeUEzzAXLuU+kkGduVA8QXWWNb61zlXwNhVMAuazPlLTmdce6GSFVO
+zCOYViHcuXnF4gj6ptYXTYReKrIznwYW50r7iKRrnsAeVqMMo9D9oM9bS+ySFcQhIBZZl+0lAgMB
+AAGjgYEwfzARBglghkgBhvhCAQEEBAMCBaAwDgYDVR0PAQH/BAQDAgXgMDkGA1UdHwQyMDAwLqAs
+oCqGKGh0dHA6Ly9jcmwuZ2VvdHJ1c3QuY29tL2NybHMvZ3R0Y2NhMi5jcmwwHwYDVR0jBBgwFoAU
+IoNLTSACDDH0fFqwGk0VyHhdEUkwDQYJKoZIhvcNAQEEBQADgYEAeZyTyjFzabynSLBSiQTLxPgp
+0YoEvrYnCGdioATy99A0TpmWwR+h6hO2iJPTersqPg4iUJrK5douLHjwrzzzJCscFRACsQXuOh+wG
+oilcCkXEMbqx+ShedO+rthR41RM/l06T45p1lgLJQyYPjy9jpzf8XY0K8GXPK/rtt323fOYxggG4
+MIIBtAIBATBVME4xCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1HZW9UcnVzdCBJbmMuMScwJQYDVQQD
+Ex5HZW9UcnVzdCBUcnVlIENyZWRlbnRpYWxzIENBIDICAxAAdTAJBgUrDgMCGgUAoIG6MBgGCSqG
+SIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTAyMDgxNTEzMzExNFowIwYJKoZI
+hvcNAQkEMRYEFPU20cUcxbb7Jr8xB6HmSrA49uOFMFsGCSqGSIb3DQEJDzFOMEwwCgYIKoZIhvcN
+AwcwDgYIKoZIhvcNAwICAgCAMA0GCCqGSIb3DQMCAgFAMAcGBSsOAwIHMA0GCCqGSIb3DQMCAgEo
+MAcGBSsOAwIdMA0GCSqGSIb3DQEBAQUABIGAlwFnZzQnaweuePsqblxBkvc3g+/39icTWoKEgoJt
+IFCB3uEEOGcU6mjjglUNbqSYKmmpioCv6pfN7MIIudPKtAuRfAUGJnKXc7vrJ0ilQ0lTRsR9DZok
+KH6So5bO0lu+F5/IpdLdh+rTEJjbrHcF0H1UCgNXFaJLi6xh3r2kIMsAAAAAAAA=
+
+------=_NextPart_000_02F4_01C2443E.80476960--
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk

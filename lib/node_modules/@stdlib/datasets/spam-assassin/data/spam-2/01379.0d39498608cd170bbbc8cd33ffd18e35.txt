@@ -1,0 +1,585 @@
+From postmaster@topsitez.us  Fri Nov 29 11:17:25 2002
+Return-Path: <postmaster@topsitez.us>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 1BF5C16F16
+	for <jm@localhost>; Fri, 29 Nov 2002 11:16:16 +0000 (GMT)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 29 Nov 2002 11:16:16 +0000 (GMT)
+Received: from [192.168.1.2] (w008.z064002062.sjc-ca.dsl.cnc.net
+    [64.2.62.8]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    gAT07XW04583; Fri, 29 Nov 2002 00:07:35 GMT
+Message-Id: <200211290007.gAT07XW04583@dogma.slashnull.org>
+Received: from topsites (localhost.concentric.net) by [192.168.1.2] (LSMTP
+    for Windows NT v1.1b) with SMTP id <0.000FA544@[192.168.1.2]>;
+    Thu, 28 Nov 2002 8:56:21 -0800
+Date: Thu, 28 Nov 2002 08:56:07 -0700
+From: "Paul Thomas" <postmaster@topsitez.us>
+Subject: Sitescooper: scoop websites onto your PalmPilot - Sitescooper
+    automatically retrieves the stories from several news websites, trims off
+    extraneous HTML, and converts them into iSilo or Palm DOC format for later
+    reading on-the-move. It maintains a cache, and will avoid stories you've
+    already    read. It can handle 1-page sites, 1-page with diffing, 2- and
+    3-level sites as well    as My-Netscape-style RSS sites. It's also very
+    easy to add a new site to its list.    Even if you don't have a PalmPilot,
+    it's still handy for simple website-to-text    conversion. Site files are
+    included for many popular news sites including Slashdot,    LWN, Freshmeat
+    and Linux Today.  http://jmason.org/software/sitescooper/
+To: 
+Reply-To: <sales@topsitez.us>
+Organization: topsitez.us MIME-Version: 1.0
+Content-Type: multipart/alternative;
+    boundary="----=_NextPart_000_000B_01C238C5.A7241DF0"
+X-Priority: 1 (Highest)
+X-Msmail-Priority: High
+Importance: High
+Precedence: bulk
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_000B_01C238C5.A7241DF0
+Content-Type: text/plain;
+	charset="us-ascii"
+Content-Transfer-Encoding: 8bit
+
+Could you please be so kind as to renew your TopSites-us directory listing by Thursday, December 5 so we can continue to show it to our millions of users? For information on renewing please go to: 
+http://topsitez.us/renew-tab.htm?id=713164&d=jmason.org
+
+If you cannot access our site, just let me know you want to renew by email. Your listing only cost $5 a month.
+
+If you have a questions, please go to:
+http://topsitez.us/faq/index.htm?id=713164&d=jmason.org&op=cat&c=1
+
+If you cannot find your answer there, please let me know. I will be happy to help in any way I can. If you do not want to renew, there is no need to write; we will cancel your listing automatically. 
+
+Kind Regards,
+
+Paul Thomas
+
+To remove your address from our mailing list you can go to: 
+http://topsitez.us/cancel.htm?id=713164&d=jmason.org
+
+YOUR LISTING
+Sitescooper: scoop websites onto your PalmPilot
+Sitescooper automatically retrieves the stories from several news websites, trims    off extraneous HTML, and converts them into iSilo or Palm DOC format for later    reading on-the-move. It maintains a cache, and will avoid stories you've already    read. It can handle 1-page sites, 1-page with diffing, 2- and 3-level sites as well    as My-Netscape-style RSS sites. It's also very easy to add a new site to its list.    Even if you don't have a PalmPilot, it's still handy for simple website-to-text    conversion. Site files are included for many popular news sites including Slashdot,    LWN, Freshmeat and Linux Today.
+http://jmason.org/software/sitescooper/
+Your category: http://topsitez.us/category-tab.htm?id=713164&d=spamassassin.taint.org
+
+REACH A MILLION
+Here is what you get:
+1. We will continue to list your site in the TopSites directories.
+2. We will show your listing more than a million times a year (guaranteed).
+
+Let us introduce you (a million times!)
+People often ask, "How can you guarantee to show my listing a million times? What if I am in an unpopular category?" It does not matter! Why? AutoSearch--our patent pending tool--continually displays renewed TopSites-us listings on our users’ PCs 24 hours a day, seven days a week. We display TopSites-us listings more than 42 million times in an hour. That is why we can guarantee to show your listing more than a million times a year. 
+
+Save $40,000 in adverting 
+It would cost you up to $40,000 to display your listing a million times at sites like MSN and Altavista. Googles charges up to $200,000 depending on your category. At TopSites we charge $5 a month!
+
+Save $100 re-listing fee
+Please do not let your listing expire. Our editors listed you as one of the top websites in your category without charge. If your listing expires, however, you may need to pay a $100 editorial review fee to get listed again. It can take a month for our editors to authorize a listing. And they may not re-list you if there are too many listings in your category. 
+
+Only TopSites-us gives you: 
+* Massive Reach: We display our listings billions of times a year. We guarantee to show your listing more than a million times a year.
+* Cost-Effectiveness: This is the least expensive advertising you will ever buy. You want to bring lots of potential customers to your site in a cost-effective way. TopSites-us does exactly that! 
+* Highly Targeted Leads: TopSites-us reaches customers when they are searching for what you are selling. That means high sales and low costs. More visitors become customers! 
+* Highest Return on Investment: Independent research confirms that you get the highest ROI from online listings like TopSites-us. E-mail, banners and other forms of online advertising all have a lower ROI. And unlike direct mail, you pay nothing for mailing lists, printing or postage. No media buy returns better results than TopSites-us. 
+* No-Risk: Cancel your listing any time for any reason--no questions asked!
+* Hassle-Free: Change your listing anytime or even move it to a different category--for free--and your changes will instantly appear in the directory
+ 
+"TopSites-us is the least expensive way I have found to bring buyers to my site. I have tried other online advertising companies and you beat everyone!" 
+--P.A., President, Go Software (g-o.us) 
+
+"TopSites-us makes my online marketing easy. I can change my message 24 hours a day so it is always up-to-date. And everyone who sees it is a pre-qualified prospect." 
+--N.B., CEO, My News (my-news.org)
+ 
+FREQUENTLY ASKED QUESTIONS
+ 
+Can I change my listing?
+You can change your listing now or later. You can rewrite the headline and description before renewing. You can change the URL too—even to another website. 
+Once we receive payment, we will send you instructions on how to change your listing whenever you like. (There’s no charge to do this.)
+
+Can I change my category? 
+Can I list my site in additional categories?
+Can I list other sites too?
+You can list as many sites in as many categories as you like. Each listing costs only $5 per month per category. Just go to www.topsitez.us. Click on the category links until you find the one you want (or search on your keywords). Click on the Add My Site link. Then type your listing. If your old listing was in the wrong category, you can click unsubscribe to cancel it.
+
+How much does a listing cost?
+Can I renew for free?
+It costs $5 a month to list your site in TopSites. We no longer offer any free listings. We will bill you $60 for 12 months. There are no additional costs. You can change your listing as often as you like for free. You can cancel your listing anytime and we will refund your remaining money.
+
+How do I pay? 
+You can pay with a U.S. check, money order or bank draft. Or you can pay by Visa, MasterCard or American Express. Simply select the option you prefer on the renewal form. (Unfortunately, we cannot cash overseas checks at this time.)
+
+Who listed us?
+When did our listing start?
+We do not know. Sorry. We only began to track listing contacts and dates this year.
+
+How much did we pay to be listed? 
+Originally you couldn’t buy a listing--you had to wait for our editors to select you as one of the top sites in your category.
+
+Do we have a contract with you?
+We don’t ask our customers to sign contracts for a $5 a month service.
+
+Can you call me and tell me more?
+We are happy to answer all your questions by email but we don’t contact our customer by phone at this time. Sorry.
+
+Can I still renew after your deadline?
+We give our customers a month to renew so don’t worry too much about the deadline.
+
+How do I see my listing? I couldn’t find it when I searched.
+You can go to www.topsitez.us and click on the categories until you get to /Top/Computers/Software/Operating_Systems/Linux/Projects/Internet.
+You can also see it at www.topsitez.us by entering two or more keywords from your listing into our search form. Since we have more than three million listings, you probably won’t find your listing by searching on only one word. And you definitely won’t find it if you search on words that are not in your listing. 
+
+What keywords display my listing? 
+How do I change them?
+Every word in your listing is a keyword. Anytime someone searches on two or more words in your listing, we will display it. The only way to change your keywords is to change the headline or description of your listing.
+
+How much traffic did you send us last year?
+We don’t know. Sorry. We are working on adding this feature.
+
+..for more answers go to:
+http://topsitez.us/faq/index.htm?id=713164&d=jmason.org&op=cat&c=1
+
+------=_NextPart_000_000B_01C238C5.A7241DF0
+Content-Type: text/html;
+	charset="us-ascii"
+Content-Transfer-Encoding: 8bit
+
+
+<html><head><title>Renew</title></head><body>
+<b><font face="ARIAL" color="#000066">TOPSITES LLC</font></b><br>
+<font color="#000066">1300 Evans Avenue, San Francisco, CA 94120-7334 USA - Phone 415-294-5300</font>
+  
+  <p>Could you please be so kind as to click on the Renew button to renew <a href="http://topsitez.us/category-tab.htm?id=713164&d=jmason.org">your 
+    listing</a> in the <a href="http://topsitez.us/home-tab.htm?id=713164&d=jmason.org">TopSites-us</a> 
+    directory listing by Thursday, December 5, if you do not mind? You can also renew your listing 
+    on our website by clicking <a href="http://topsitez.us/renew-tab.htm?id=713164&d=jmason.org"> 
+    renew</a>. If you cannot access the Internet, let me know and I will renew 
+    your listing for you. Your listing only cost US $5 (<a href="http://topsitez.us/currency.htm">other currencies</a>) per month per category.</p>
+  
+  <p>If you have any questions, please click <a href="http://topsitez.us/faq/index.htm?id=713164&d=jmason.org&op=cat&c=1">FAQs</a>. 
+    If you cannot find your answer there, please let me know. I will be happy 
+    to help in any way I can.</p>
+  
+<p>Kind Regards,<br>
+  <br>
+  Paul Thomas</p>
+  <p align="center">To remove your address from our mailing list or to cancel your 
+    listing simply click <a href="http://topsitez.us/cancel.htm?id=713164&d=jmason.org">unsubscribe</a>.</p>
+  <form action="http://topsitez.us/renew-invoice.htm" method="get">
+  <TABLE CELLSPACING="0" CELLPADDING="0" BORDER="0" WIDTH="100%" height="42">
+  <TR BGcolor="#CCCC99">
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH="12" NOWRAP height="19">&nbsp;<BR></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" HEIGHT="19" WIDTH="*"><b>
+    <font face="ARIAL" size="2" color="#000066">RENEW YOUR LISTING</font></b></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH="12" NOWRAP height="19">&nbsp;<BR></TD>
+	</TR>
+	<TR BGcolor="#EEEED0">
+	<TD ALIGN="LEFT" VALIGN="TOP" COLSPAN="3" BGcolor="#C0C0C0" height="3" width="100%">
+    <IMG SRC="http://topsitez.us/table_shaded_header_shadow.gif" WIDTH="100%" HEIGHT="3" BORDER="0"><BR></TD>
+	</TR>
+	<TR BGcolor="#EEEED0">
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH="12" NOWRAP height="19">&nbsp;<BR></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH="*" height="19">
+    
+  <table width="100%" border=1 cellspacing=0 cellpadding=0 height="9" style="border-left-style: none; border-right-style: none; border-top-style: none; border-bottom: none">
+            <tr> 
+              <td height="14" style="font-weight: bold; color: black; border-style: none;"  width="84" align="right" VALIGN="TOP"> 
+                <div align="left"><span style="font-weight: 400"> Category:</span></div></TD>
+              <td height="14" style="color: black; border-style: none" colspan="2" width="*" VALIGN="TOP"> 
+                List our site in the following categories:<br><input type="checkbox" name="category" value="/Top/Computers/Software/Operating_Systems/Linux/Projects/Internet" checked><a href="http://topsitez.us/cgi.htm?cat=/Top/Computers/Software/Operating_Systems/Linux/Projects/Internet">/Top/Computers/Software/Operating_Systems/Linux/Projects/Internet</a><br><input type="checkbox" name="category" value="/Top/Computers/Software/Operating_Systems/Linux/Projects/Internet/Web"><a href="http://topsitez.us/cgi.htm?cat=/Top/Computers/Software/Operating_Systems/Linux/Projects/Internet/Web">/Top/Computers/Software/Operating_Systems/Linux/Projects/Internet/Web</a><br><input type="checkbox" name="category" value="/Top/Computers/Software/Operating_Systems/Linux/Projects/Internet/Email"><a href="http://topsitez.us/cgi.htm?cat=/Top/Computers/Software/Operating_Systems/Linux/Projects/Internet/Email">/Top/Computers/Software/Operating_Systems/Linux/Projects/Internet/Email</a><br></TD>
+            </tr>
+            <tr> 
+              <td height="28" style="font-weight: bold; color: black; border-style: none;" width="84" align="right" VALIGN="TOP"> 
+                <div align="left"><span style="font-weight: 400">
+                  Headline:</span></div></TD>
+              <td height="28" style="color: black; border-style: none" VALIGN="TOP" width="374"> 
+                <input type="text" name="site" value="Sitescooper: scoop websites onto your PalmPilot" size="50" maxlength="50">
+                </TD>
+              <td height="93" style="color: black; width=; border-left-style:none; border-right-style:none; border-top-style:none; " width="*" rowspan="7" VALIGN="TOP" bordercolor="#CCCC99"> 
+                <ul type="circle">
+                  <li><font color="#FF0000"><i>Cost:</i> Your 
+                    listing costs US $5 (<a href="http://topsitez.us/currency.htm">other currencies</a>) per month per category (billed annually).</font></li>
+                  <li><i>Refunds</i>: Cancel anytime. We will refund the remaining 
+                    months.</li>
+                  <li><i>Changes:</i> You can change your headline, description 
+                    (up to 40 words) or URL.</li>
+                  <li><i>Category: </i>Select the categories you want by clicking 
+                    the checkboxes. If you want us to list you in a categories 
+                    that is not on the list, go to <a href="http://www.topsitez.us">www.topsitez.us</a>. 
+                    Click on the category links until you find the one you want. 
+                    Click on the Add My Site link. Type your listing.</li>
+                  <li><i>Cancel</i>: To cancel your listing click <a href="http://topsitez.us/cancel.htm?id=713164&d=spamassassin.taint.org">unsubscribe</a>.</li>
+                  <li><i>To pay by check</i>: We will 
+                    email an invoice to you. You can pay with a local check from any country.</li>
+                  <li><i>To pay by credit card</i>. Click the credit card option 
+                    and enter your number. We accept Visa, MasterCard and American 
+                    Express.</li>
+                  <li><i>Problems</i>?: Try renewing on our website by clicking 
+                    <a href="http://topsitez.us/renew-tab.htm?id=713164&d=jmason.org"> 
+                    renew</a>. Or just let us know by email that you want to renew. 
+                  </li>
+                </ul></TD>
+            </tr>
+            <tr> 
+              <td height="34" style="font-weight: bold; color: black; border-style: none" width="84" align="right" VALIGN="TOP"> 
+                <div align="left"><span style="font-weight: 400"> 
+                  Description:</span></div></TD>
+              <td height="34" style="color: black; border-style: none" VALIGN="TOP" width="374"> 
+                <textarea name="description" cols="40" rows=3 wrap=ON>Sitescooper automatically retrieves the stories from several news websites, trims    off extraneous HTML, and converts them into iSilo or Palm DOC format for later    reading on-the-move. It maintains a cache, and will avoid stories you've already    read. It can handle 1-page sites, 1-page with diffing, 2- and 3-level sites as well    as My-Netscape-style RSS sites. It's also very easy to add a new site to its list.    Even if you don't have a PalmPilot, it's still handy for simple website-to-text    conversion. Site files are included for many popular news sites including Slashdot,    LWN, Freshmeat and Linux Today.</textarea>
+                </TD>
+            </tr>
+            <tr> 
+              <td height="29" style="font-weight: bold; color: black; border-left-style:none; border-right-style:none; border-top-style:none; border-bottom-color:#808000; border-bottom-style:solid" width="84" align="right" VALIGN="TOP"> 
+                <div align="left"><span style="font-weight: 400"> </span><span style="font-weight: 400">URL:</span></div></TD>
+              <td height="29" style="color: black; border-left-style:none; border-right-style:none; border-top-style:none; border-bottom-color:#808000; border-bottom-style:none" VALIGN="TOP" width="374"> 
+                <input type="text" name="urls" value="http://jmason.org/software/sitescooper/" size="50">
+                </TD>
+            </tr>
+            <tr> 
+              <td height="1" width="84" style="font-weight: bold; color: black; border-style: none" VALIGN="TOP">
+      <div align="left"><span style="font-weight: 400">Your 
+                  name:</span></div></TD>
+              <td height="1" width="374" style="color: black; border-style: none" VALIGN="TOP"> 
+                <input type=text size="50" name=Name maxlength=60>
+              </TD>
+            </tr>
+            <tr> 
+              <td height="1" width="84" style="font-weight: bold; color: black; border-style: none" VALIGN="TOP">
+      <div align="left"><span style="font-weight: 400">Your 
+                  email:</span></div></TD>
+              <td height="1" width="374" style="color: black; border-style: none" VALIGN="TOP"> 
+                 
+                <input type=text size="50" name=email value="@jmason.org">
+                </TD>
+            </tr>
+            <tr> 
+              <td height="0" style="font-weight: bold; color: black; border-left-style:none; border-right-style:none; border-top-style:none" width="84" align="right" VALIGN="TOP" bordercolor="#EEEED0"> 
+                <div align="left"><span style="font-weight: 400"> 
+                  Pay 
+                  by:</span></div></TD>
+              <td height="0" style="color: black; border-left-style:none; border-right-style:none; border-top-style:none" width="374" bordercolor="#EEEED0" VALIGN="TOP"> 
+                
+                <input type="radio" value="in" name="paidby" checked>
+                Check (invoice me)<br> <input type="radio" value="cc" name="paidby"> 
+                Credit card  <table border="0" cellpadding="0" cellspacing="0" width="100%" height="49">
+                  <tr> 
+                    <td width="11%" height="5"></td>
+                    <td width="31%" height="5">Card 
+                      number:</td>
+                    <td width="58%" height="5"> 
+                      <input type=text size="24" name=cc>
+                      </td>
+                  </tr>
+                  <tr> 
+                    <td width="11%" height="21">&nbsp;</td>
+                    <td width="31%" height="21">Expiry 
+                      date:</td>
+                    <td width="58%" height="21"> 
+                      <select size="1" name="ccmonth">
+                        <option selected value="01">January</option>
+                        <option value="02">February</option>
+                        <option value="03">March</option>
+                        <option value="04">April</option>
+                        <option value="05">May</option>
+                        <option value="06">June</option>
+                        <option value="07">July</option>
+                        <option value="08">August</option>
+                        <option value="09">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                      </select>
+                      <select size="1" name="ccyear">
+                        <option value="02" selected>2002</option>
+                        <option value="03">2003</option>
+                        <option value="04">2004</option>
+                        <option value="05">2005</option>
+                        <option value="06">2006</option>
+                      </select>
+                      </td>
+                  </tr>
+                  <tr> 
+                    <td width="11%" height="23">&nbsp;</td>
+                    <td width="31%" height="23">Zip/postal 
+                      code:</td>
+                    <td width="58%" height="23"> 
+                      <input type=text size="14" name=cczip>
+                      </td>
+                  </tr>
+                </table></TD>
+            </tr>
+            <tr> 
+              <td height="1" style="font-weight: bold; color: black; border-style: none"  width="84">&nbsp; 
+                </TD>
+              <td height="1" style="color: black; border-style: none"  width="374">
+    <input type="hidden" name="uid" value="713164">
+	<input type="hidden" name="did" value="519459">
+	<input type="hidden" name="cost" value="5">
+	<input type="hidden" name="domains" value="jmason.org">
+	 
+                <input type=submit value="Renew" style="font-family: Arial; font-size: 10pt; font-weight: bold">
+                
+              </TD>
+            </tr>
+          </table>
+    </TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH="12" NOWRAP height="19">&nbsp;<BR></TD>
+	</TR>
+  </TABLE></form>
+  
+  
+  <TABLE CELLSPACING="0" CELLPADDING="0" BORDER="0" WIDTH="100%" height="42">
+  <TR BGcolor="#CCCC99">
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH="12" height="19" NOWRAP>&nbsp;<BR></TD>
+	  <TD ALIGN="LEFT" VALIGN="MIDDLE" HEIGHT="19" WIDTH="100%" NOWRAP><b><font face="ARIAL" color="#000066" size="2"> 
+        REACH A MILLION</font></b></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH="12" NOWRAP height="19">&nbsp;<BR></TD>
+	</TR>
+	<TR BGcolor="#EEEED0">
+	<TD ALIGN="LEFT" VALIGN="TOP" COLSPAN="3" BGcolor="#C0C0C0" height="3">
+    <IMG SRC="http://topsitez.us/table_shaded_header_shadow.gif" WIDTH="100%" HEIGHT="3" BORDER="0"><BR></TD>
+	</TR>
+	<TR BGcolor="#EEEED0">
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH="12" NOWRAP height="19">&nbsp;<BR></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH="100%" height="19">
+	<b>Here is what you get:</b>
+        <ol>
+          <li>We will continue to list your site in the TopSites directory.</li>
+          <li>We will show your listing more than a million times a year (guaranteed).</li>
+        </ol>
+
+ 
+ 
+     <p>
+
+ 
+ 
+<b>Let us introduce you (a million times)</b><br><br>
+People often ask, &quot;How can you guarantee to show my listing a million times? 
+What if I am in an unpopular category?&quot; It does not matter! Why?
+
+ 
+  AutoSearch--our patent pending tool--continually displays
+
+ 
+  renewed TopSites-us  
+listings on 
+our users’ PCs 24 hours a day, seven days a week. We display TopSites-us listings 
+more than 42 million 
+  times in an hour. That is why we can guarantee to show your listing more than a million 
+  times a year. </p>
+
+ 
+ 
+        <p> <b>Save $40,000 in adverting</b> <br>
+          <br>
+          It would cost you up to $40,000 to display your listing a million times 
+          at sites like MSN and Altavista. Googles charges up to $200,000 depending 
+          on your category. At TopSites we charge $5 a month!<br>
+          <br>
+          <b>Save $100 re-listing fee</b><br>
+          <br>
+          Please do not let your listing expire. Our editors listed you as one 
+          of the top websites in your category without charge. If your listing 
+          expires, however, you may need to pay a $100 editorial review fee to 
+          get listed again. It can take a month for our editors to authorize a 
+          listing. And they may not re-list you if there are too many listings 
+          in your category. </p>
+
+ 
+ 
+     <p><b>Only TopSites-us 
+  gives you: </b> </p>
+<ul type="circle">
+  <li><i>Massive Reach:</i> We display our listings billions of times a year. 
+    We guarantee to show <i>your</i> listing more than a million times a year.</li>
+  <li><i>Cost-Effectiveness:</i> This is the least expensive  advertising 
+     
+    you will ever buy. You want to bring lots of potential customers 
+    to your site in a cost-effective way. TopSites-us does exactly that! </li>
+  <li><i>Highly Targeted Leads:</i> TopSites-us reaches customers when they are 
+    searching for what you are selling. That means high sales and low costs. More 
+    visitors become customers! </li>
+  <li><i>Highest Return on Investment:</i><b> </b>Independent research confirms 
+    that you get the highest ROI from online listings like TopSites-us. E-mail, 
+    banners and other forms of online advertising all have a lower ROI. And unlike 
+    direct mail, you pay nothing for mailing lists, printing or postage. No media 
+    buy returns better results than TopSites-us. </li>
+  <li><i>No-Risk:</i><b> </b>Cancel your listing any time for any reason--no questions 
+    asked!</li>
+  <li><i>Hassle-Free:</i> Change your listing anytime or even move it 
+    to a different category--for free--and your changes will instantly appear 
+    in the directory</li>
+</ul> 
+  
+     </TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH="12" NOWRAP height="19">&nbsp;<BR></TD>
+	</TR>
+	<TR BGcolor="#CCCC99">
+  </TABLE>
+  
+  <br>
+  <TABLE CELLSPACING="0" CELLPADDING="0" BORDER="0" WIDTH="100%">
+	<TR BGcolor="#EEEED0">
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH="12" NOWRAP>&nbsp;<BR></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH="100%">
+	<i>&quot;TopSites-us is the least expensive way I have found to 
+    bring buyers to my site. I have tried other online advertising companies and 
+    you beat everyone!&quot; </i><br> <font color="#C0C0C0">--P.A., President, Go 
+    Software (g-o.us) </font>
+      <p><i>&quot;TopSites-us makes my online marketing easy. 
+      I can change my message 24 hours a day so it is always up-to-date. And 
+      everyone who sees it is a pre-qualified prospect.&quot; </i><br>
+        <font color="#C0C0C0">--N.B., CEO, My News (my-news.org)</font></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH="12" NOWRAP>&nbsp;<BR></TD>
+	</TR>
+	</table><br>
+
+  
+  <TABLE CELLSPACING="0" CELLPADDING="0" BORDER="0" WIDTH="100%" height="42">
+  <TR BGcolor="#CCCC99">
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH="12" NOWRAP height="19">&nbsp;<BR></TD>
+	<TD ALIGN="LEFT" VALIGN="MIDDLE" HEIGHT="19" WIDTH="100%" NOWRAP><b>
+    <font face="ARIAL" size="2" color="#000066">FREQUENTLY ASKED QUESTIONS</font></b></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH="12" NOWRAP height="19">&nbsp;<BR></TD>
+	</TR>
+	<TR BGcolor="#EEEED0">
+	<TD ALIGN="LEFT" VALIGN="TOP" COLSPAN="3" BGcolor="#C0C0C0" height="3">
+    <IMG SRC="http://topsitez.us/table_shaded_header_shadow.gif" WIDTH="100%" HEIGHT="3" BORDER="0"><BR></TD>
+	</TR>
+	<TR BGcolor="#EEEED0">
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH="12" NOWRAP height="19">&nbsp;<BR></TD>
+	  <TD ALIGN="LEFT" VALIGN="TOP" WIDTH="100%" height="19"> <ul type="circle">
+          <li> <b>Can I change my listing?</b><br>
+            You can change your listing now or later. You can rewrite the headline 
+            and description before renewing. You can change the URL too—even to 
+            another website. <br>
+            Once we receive payment, we will send you instructions on how to change 
+            your listing whenever you like. (There’s no charge to do this.)<br>
+            <br>
+          </li>
+          <li> <b>Can I change my category? <br>
+            Can I list my site in additional categories?<br>
+            Can I list other sites too?</b><br>
+            You can list as many sites in as many categories as you like. Each 
+            listing costs only $5 per month per category. Just go to <a href="http://www.topsitez.us">www.topsitez.us</a>. 
+            Click on the category links until you find the one you want (or search 
+            on your keywords). Click on the Add My Site link. Then type your listing. 
+            If your old listing was in the wrong category, you can click <a href="http://topsitez.us/cancel.htm?id=713164&d=jmason.org">unsubscribe</a> 
+            to cancel it.<br>
+            <br>
+          </li>
+          <li> <b>How much does a listing cost?<br>
+            Can I renew for free?</b><br>
+            It costs $5 a month to list your site in TopSites. We no longer offer 
+            any free listings. We will bill you $60 for 12 months. There are no 
+            additional costs. You can change your listing as often as you like 
+            for free. You can cancel your listing anytime and we will refund your 
+            remaining money.<br>
+            <br>
+          </li>
+          <li> <b>How do I pay? </b> <br>
+            You can pay with a check from any country. (Simply convert the amount 
+            to your local currency.) Or you can pay by Visa, MasterCard or American 
+            Express. Simply select the option you prefer on the renewal form.<br>
+            <br>
+          </li>
+          <li> <b>Who listed us?<br>
+            When did our listing start?</b><br>
+            We do not know. Sorry. We only began to store listing contacts and 
+            dates this year.<br>
+            <br>
+          </li>
+          <li> <b>How much did we pay to get listed? </b><br>
+            Originally you couldn’t buy a listing—you had to wait for our editors 
+            to select you as one of the top sites in your category.<br>
+            <br>
+          </li>
+          <li> <b>Do we have a contract with you?<br>
+            </b>We don’t do contracts for a $5 service.<br>
+            <br>
+          </li>
+          <li> <b>Can you call me and tell me more?<br>
+            </b>We are happy to answer all your questions by email but we don’t 
+            contact our customer by phone at this time. Sorry.<br>
+            <br>
+          </li>
+          <li> <b>Can I still renew after your deadline?<br>
+            </b>We give our customers a month to renew so don’t worry too much 
+            about the deadline.<br>
+            <br>
+          </li>
+          <li> <b>How do I see my listing?<br>
+            I couldn’t find it when I searched.</b><br>
+            To save you time, I have included your listing at the end of this 
+            email. Or you can see it on our website by clicking <a href="http://topsitez.us/category-tab.htm?id=713164&d=jmason.org">your 
+            listing</a>. Or you can go to <a href="http://www.topsitez.us">www.topsitez.us</a> 
+            and click on the categories until you get to /Top/Computers/Software/Operating_Systems/Linux/Projects/Internet.<br>
+            You can also see it at <a href="http://www.topsitez.us">www.topsitez.us</a> 
+            by entering two or more keywords from your listing into our search 
+            form. Since we have more than three million listings, you probably 
+            won’t find your listing by searching on only one word. And you definitely 
+            won’t find it if you search on words that are not in your listing. 
+            <br>
+            <br>
+          </li>
+          <li> <b>What keywords display my listing? </b> <br>
+            <b>How do I change them?</b><br>
+            Every word in your listing is a keyword. Anytime someone searches 
+            on two or more words in your listing, we will display it. The only 
+            way to change your keywords is to change the headline or description 
+            of your listing.<br>
+            <br>
+          </li>
+          <li> <b>How much traffic did you send us last year?</b><br>
+            We don’t know. Sorry. We are working on adding this feature.
+          </li>
+        </ul>
+
+        <p><a href="http://topsitez.us/faq/index.htm?id=713164&d=jmason.org&op=cat&c=1">more...</a></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH="12" NOWRAP height="19">&nbsp;<BR></TD>
+	</TR>
+  </TABLE>
+  
+<br>
+  
+  <TABLE CELLSPACING="0" CELLPADDING="0" BORDER="0" WIDTH="100%" height="42">
+  <TR BGcolor="#CCCC99">
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH="12" NOWRAP height="19">&nbsp;<BR></TD>
+	<TD ALIGN="LEFT" VALIGN="MIDDLE" HEIGHT="19" WIDTH="100%" NOWRAP><b>
+    <font face="ARIAL" size="2" color="#000066">YOUR LISTING</font></b></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH="12" NOWRAP height="19">&nbsp;<BR></TD>
+	</TR>
+	<TR BGcolor="#EEEED0">
+	<TD ALIGN="LEFT" VALIGN="TOP" COLSPAN="3" BGcolor="#C0C0C0" height="3">
+    <IMG SRC="http://topsitez.us/table_shaded_header_shadow.gif" WIDTH="100%" HEIGHT="3" BORDER="0"><BR></TD>
+	</TR>
+	<TR BGcolor="#EEEED0">
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH="12" NOWRAP height="19">&nbsp;<BR></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH="100%" height="19">
+	<b><font face="arial,geneva" color="#cc3300">Internet Directory</font></b><ul><li><b><font face="arial,geneva" size="2"><a href="http://spamassassin.taint.org/software/sitescooper/">Sitescooper: scoop websites onto your PalmPilot</a></b><br>
+Sitescooper automatically retrieves the stories from several news websites, trims    off extraneous HTML, and converts them into iSilo or Palm DOC format for later    reading on-the-move. It maintains a cache, and will avoid stories you've already    read. It can handle 1-page sites, 1-page with diffing, 2- and 3-level sites as well    as My-Netscape-style RSS sites. It's also very easy to add a new site to its list.    Even if you don't have a PalmPilot, it's still handy for simple website-to-text    conversion. Site files are included for many popular news sites including Slashdot,    LWN, Freshmeat and Linux Today.</font><br>
+<font face="arial,geneva" size="2" color="#989898">http://jmason.org/software/sitescooper/</font></li><li><b><font face="arial,geneva" size="2"><a href="http://www.stud.uni-karlsruhe.de/~uno4/linux/whatissirobot.html">Linux // What is sirobot?</a></b><br>
+irobot is a Perl script that downloads Web pages recursively. The main advantage    over wget is its ability to get them concurrently. Sirobot is able to continue    aborted downloads, convert absolute links to relative ones, and has a    pattern-matching filter to prevent you from downloading the whole Internet.</font><br>
+<font face="arial,geneva" size="2" color="#989898">http://www.stud.uni-karlsruhe.de/~uno4/linux/whatissirobot.html</font></li><li><b><font face="arial,geneva" size="2"><a href="http://www.swcp.com/~jgentry/pers.html">Linux Dialin Server Setup Guide</a></b><br>
+guide to setting up a Linux ppp/slip dialin server</font><br>
+<font face="arial,geneva" size="2" color="#989898">http://www.swcp.com/~jgentry/pers.html</font></li><li><b><font face="arial,geneva" size="2"><a href="http://dpsftp.sourceforge.net/">pretzelgod's DPSFTP</a></b><br>
+Source for DPSFTP: Yet another Gnome FTP client</font><br>
+<font face="arial,geneva" size="2" color="#989898">http://dpsftp.sourceforge.net/</font></li><li><b><font face="arial,geneva" size="2"><a href="http://www.tranchant.freeserve.co.uk/ftpq.html">ftpq home page</a></b><br>
+ftpq allows the user to spool FTP uploads whilst offline and transfer these jobs automatically on the next connection to the network.</font><br>
+<font face="arial,geneva" size="2" color="#989898">http://www.tranchant.freeserve.co.uk/ftpq.html</font></li><li><b><font face="arial,geneva" size="2"><a href="http://developer.ez.no">eZ systems as</a></b><br>
+eZ publish is a content management system for e-commerce, e-publishing and intranets</font><br>
+<font face="arial,geneva" size="2" color="#989898">http://developer.ez.no</font></li></ul><a href="http://topsitez.us/category-tab.htm?id=713164&d=jmason.org">more...</a></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH="12" NOWRAP height="19">&nbsp;<BR></TD>
+	</TR>
+  </TABLE>
+  
+</body>
+</html>
+
+------=_NextPart_000_000B_01C238C5.A7241DF0--
+
+

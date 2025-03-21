@@ -1,0 +1,32 @@
+
+{{alias}}( x )
+    Computes the coversed cosine.
+
+    The coversed cosine is defined as `1 + sin(x)`.
+
+    Parameters
+    ----------
+    x: number
+        Input value (in radians).
+
+    Returns
+    -------
+    y: number
+        Coversed cosine.
+
+    Examples
+    --------
+    > var y = {{alias}}( 3.14 )
+    ~1.0016
+    > y = {{alias}}( -4.2 )
+    ~1.8716
+    > y = {{alias}}( -4.6 )
+    ~1.9937
+    > y = {{alias}}( 9.5 )
+    ~0.9248
+    > y = {{alias}}( -0.0 )
+    1.0
+
+    See Also
+    --------
+

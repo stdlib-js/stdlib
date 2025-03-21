@@ -1,0 +1,36 @@
+From rssfeeds@jmason.org  Wed Sep 25 10:23:55 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id A127516F16
+	for <jm@localhost>; Wed, 25 Sep 2002 10:23:54 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 25 Sep 2002 10:23:54 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8P83jC18366 for
+    <jm@jmason.org>; Wed, 25 Sep 2002 09:03:46 +0100
+Message-Id: <200209250803.g8P83jC18366@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: boingboing <rssfeeds@spamassassin.taint.org>
+Subject: DVD capture: Unbreaking the Mac
+Date: Wed, 25 Sep 2002 08:03:45 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://boingboing.net/#85485727
+Date: Not supplied
+
+DVD Capture is an AppleScript for OS X that captures screen-grabs from DVDs. OS 
+X normally disables screen-capture while the DVD player is running (even if it 
+isn't visible!). I have some home movies on DVD that I'd love to get stills 
+from, but I can't -- the DVD licensing board has forced Apple to break my 
+hardware in such a way as to prevent me from doing something completely lawful, 
+to make sure that I never, ever grab a frame out of _Police Academy n - 1_. 
+Nice to see that independent software authors are willing to un-break my gear 
+for me. Link[1] Discuss[2] (_Thanks, Patrick[3]!_)
+
+[1] http://www.versiontracker.com/dyn/moreinfo/macosx/16324
+[2] http://www.quicktopic.com/boing/H/NmjEGYXDmqd
+[3] http://www.patandkat.com/pat/weblog/
+
+

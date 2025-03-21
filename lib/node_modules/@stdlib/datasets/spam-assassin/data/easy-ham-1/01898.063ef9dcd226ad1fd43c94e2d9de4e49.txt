@@ -1,0 +1,33 @@
+From rssfeeds@jmason.org  Wed Sep 25 10:24:05 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 1FD9816F03
+	for <jm@localhost>; Wed, 25 Sep 2002 10:24:05 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 25 Sep 2002 10:24:05 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8P83jC18360 for
+    <jm@jmason.org>; Wed, 25 Sep 2002 09:03:45 +0100
+Message-Id: <200209250803.g8P83jC18360@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: boingboing <rssfeeds@spamassassin.taint.org>
+Subject: Von Neumann's Best Friend, a bio-pet
+Date: Wed, 25 Sep 2002 08:03:45 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://boingboing.net/#85485759
+Date: Not supplied
+
+[IMG: http://www.craphound.com/images/nanodog.jpg] Matt "Warchalking" Jones has 
+come up with a bio-dog for the latest Viridian Design Contest[1], called Von 
+Neumann's Best Friend. Link[2] Discuss[3] (_Thanks, Matt[4]!_) 
+
+
+[1] http://www.viridiandesign.org/notes/301-350/00332_biofuture_robot_dog_contest.html
+[2] http://www.blackbeltjones.com/vonneumann/vonneumann.gif
+[3] http://www.quicktopic.com/boing/H/ejEDBhNuW3Nt
+[4] http://www.blackbeltjones.com/work/
+
+

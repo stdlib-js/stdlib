@@ -1,0 +1,87 @@
+From exmh-users-admin@redhat.com  Tue Sep 10 15:47:06 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 93AA716F03
+	for <jm@localhost>; Tue, 10 Sep 2002 15:47:06 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 10 Sep 2002 15:47:06 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8AEhhC03246 for
+    <jm-exmh@jmason.org>; Tue, 10 Sep 2002 15:43:43 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id EAB713EF4F; Tue, 10 Sep 2002
+    10:44:03 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id D1F293F6A0
+    for <exmh-users@listman.redhat.com>; Tue, 10 Sep 2002 10:43:49 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g8AEhig17290 for exmh-users@listman.redhat.com; Tue, 10 Sep 2002
+    10:43:44 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g8AEhim17286 for
+    <exmh-users@redhat.com>; Tue, 10 Sep 2002 10:43:44 -0400
+Received: from localhost.localdomain (m53-mp1.cvx2-c.nth.dial.ntli.net
+    [62.253.56.53]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id
+    g8AERLv04165 for <exmh-users@redhat.com>; Tue, 10 Sep 2002 10:27:21 -0400
+Received: from compaq (jg@localhost) by localhost.localdomain
+    (8.11.6/8.11.6) with ESMTP id g8AEhWS17947 for <exmh-users@redhat.com>;
+    Tue, 10 Sep 2002 15:43:34 +0100
+Message-Id: <200209101443.g8AEhWS17947@localhost.localdomain>
+X-Authentication-Warning: localhost.localdomain: jg owned process doing -bs
+X-Mailer: exmh version 2.4 06/23/2000 with nmh-1.0.4
+To: exmh-users@spamassassin.taint.org
+Subject: Re: Sorting
+In-Reply-To: noglider's message of Tue, 10 Sep 2002 10:29:26 -0400.
+    <20020910142926.C5DF2A7@whatexit.org>
+X-Image-Url: http://homepage.ntlworld.com/jgibbon/dlkface.gif
+From: James Gibbon <james.gibbon@virgin.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+X-Reply-To: james.gibbon@virgin.net
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Tue, 10 Sep 2002 15:43:32 +0100
+
+
+Tom Reingold wrote:
+
+> > 
+> > Ahh.  At work we fire people who use Outlook (Literally true:
+> > They get escorted to the door, their badge confiscated, and
+> > told to return the next day to collect their office contents).
+> 
+> Why?  What threat does Outlook pose to your organization?
+> 
+
+It has been described as "the technological equivalent of
+soliciting blood transfusions from random strangers in the
+street".  In short - it's a virus magnet.
+
+
+
+
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

@@ -1,0 +1,112 @@
+From ilug-admin@linux.ie  Fri Aug  9 15:20:56 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 1569543FB1
+	for <jm@localhost>; Fri,  9 Aug 2002 10:20:45 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:20:45 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79EGNb05741 for
+    <jm-ilug@jmason.org>; Fri, 9 Aug 2002 15:16:23 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id KAA04999 for <jm-ilug@jmason.org>;
+    Fri, 9 Aug 2002 10:39:26 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA00427; Fri, 9 Aug 2002 10:38:34 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from smtp017.mail.yahoo.com (smtp017.mail.yahoo.com
+    [216.136.174.114]) by lugh.tuatha.org (8.9.3/8.9.3) with SMTP id KAA00394
+    for <ilug@linux.ie>; Fri, 9 Aug 2002 10:38:25 +0100
+Received: from unknown (HELO mfrenchw2k) (mfrench42@62.254.163.42 with
+    login) by smtp.mail.vip.sc5.yahoo.com with SMTP; 9 Aug 2002 09:38:23 -0000
+Message-Id: <009601c23f87$fdcf47b0$3864a8c0@sabeo.ie>
+From: "Matthew French" <mfrench42@yahoo.co.uk>
+To: "Brian O'Donoghue" <Brian.ODonoghue@kbs.ie>
+Cc: <ilug@linux.ie>
+References: <55DA5264CE16D41186F600D0B74D6B0924724A@KBS01>
+Subject: Re: [ILUG] slashdot EW Dijkstra humor
+Date: Fri, 9 Aug 2002 10:34:41 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Brian O'Donoghue wrote a code fragment:
+> For(a=0;a<strlen(somestring);a++)
+> {
+>  some_thing_goes_here();
+>
+>  if(b=strlen(somestring)-4)
+> do_something;
+>
+> };
+
+Unfortunately strlen is a relatively expensive operation. If you are using
+C++ this is not such a big issue as string.length() can be declared const.
+So long as you do not modify the string object, the compiler can do the
+caching for you.
+
+I do not think this is possible in C, though?
+
+You could write the same code fragment as:
+============================
+for(a=0,l=strlen(somestring);a<l;a++)
+{
+    some_thing_goes_here();
+    if(b==l-4)
+        do_something();
+}
+============================
+
+Note my previous point: if some_thing_goes_here() or do_something() are very
+long functions, then there is no real need to optimise this code.
+
+Also, for string manipulation, a much better approach would be:
+============================
+char c;
+char* p;
+for(p=somestring,(c=*p)!=0;p++)
+{
+    some_thing_goes_here();
+    if(*(p+4)==0)
+        do_something();
+}
+============================
+
+This works because C used \0 terminated strings. It improves performance
+because you always have a pointer to the character instead of having to do
+array manipulation. Strictly speaking, the variable c is not required as
+most compilers are smart enough to store *p in a register.
+
+The problem is that this uses pointer arithmetic, which can make the code
+illegable if not managed carefully. Which is one of the reasons I prefer
+Java for most programming tasks. :)
+
+- Matthew
+
+
+__________________________________________________
+Do You Yahoo!?
+Everything you'll ever need on one web page
+from News and Sport to Email and Music Charts
+http://uk.my.yahoo.com
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

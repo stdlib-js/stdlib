@@ -1,0 +1,2803 @@
+{
+  "name": "stdlib-datasets-moby-dick",
+  "version": "",
+  "title": "Moby Dick",
+  "description": "The text of Moby Dick by Herman Melville.",
+  "resources": [
+    {
+      "name": "contents-txt",
+      "title": "",
+      "description": "Book contents.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/contents.txt"
+    },
+    {
+      "name": "contents-json",
+      "title": "",
+      "description": "Book contents.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/contents.json"
+    },
+    {
+      "name": "etymology-txt",
+      "title": "(Supplied by a Late Consumptive Usher to a Grammar School.)",
+      "description": "Etymology.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/etymology.txt"
+    },
+    {
+      "name": "etymology-json",
+      "title": "(Supplied by a Late Consumptive Usher to a Grammar School.)",
+      "description": "Etymology.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/etymology.json"
+    },
+    {
+      "name": "extracts-txt",
+      "title": "(Supplied by a Sub-Sub-Librarian).",
+      "description": "Extracts.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/extracts.txt"
+    },
+    {
+      "name": "extracts-json",
+      "title": "(Supplied by a Sub-Sub-Librarian).",
+      "description": "Extracts.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/extracts.json"
+    },
+    {
+      "name": "chapter-1-txt",
+      "title": "Loomings.",
+      "description": "Chapter 1",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_1.txt"
+    },
+    {
+      "name": "chapter-1-json",
+      "title": "Loomings.",
+      "description": "Chapter 1",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_1.json"
+    },
+    {
+      "name": "chapter-2-txt",
+      "title": "The Carpet-Bag.",
+      "description": "Chapter 2",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_2.txt"
+    },
+    {
+      "name": "chapter-2-json",
+      "title": "The Carpet-Bag.",
+      "description": "Chapter 2",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_2.json"
+    },
+    {
+      "name": "chapter-3-txt",
+      "title": "The Spouter-Inn.",
+      "description": "Chapter 3",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_3.txt"
+    },
+    {
+      "name": "chapter-3-json",
+      "title": "The Spouter-Inn.",
+      "description": "Chapter 3",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_3.json"
+    },
+    {
+      "name": "chapter-4-txt",
+      "title": "The Counterpane.",
+      "description": "Chapter 4",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_4.txt"
+    },
+    {
+      "name": "chapter-4-json",
+      "title": "The Counterpane.",
+      "description": "Chapter 4",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_4.json"
+    },
+    {
+      "name": "chapter-5-txt",
+      "title": "Breakfast.",
+      "description": "Chapter 5",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_5.txt"
+    },
+    {
+      "name": "chapter-5-json",
+      "title": "Breakfast.",
+      "description": "Chapter 5",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_5.json"
+    },
+    {
+      "name": "chapter-6-txt",
+      "title": "The Street.",
+      "description": "Chapter 6",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_6.txt"
+    },
+    {
+      "name": "chapter-6-json",
+      "title": "The Street.",
+      "description": "Chapter 6",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_6.json"
+    },
+    {
+      "name": "chapter-7-txt",
+      "title": "The Chapel.",
+      "description": "Chapter 7",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_7.txt"
+    },
+    {
+      "name": "chapter-7-json",
+      "title": "The Chapel.",
+      "description": "Chapter 7",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_7.json"
+    },
+    {
+      "name": "chapter-8-txt",
+      "title": "The Pulpit.",
+      "description": "Chapter 8",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_8.txt"
+    },
+    {
+      "name": "chapter-8-json",
+      "title": "The Pulpit.",
+      "description": "Chapter 8",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_8.json"
+    },
+    {
+      "name": "chapter-9-txt",
+      "title": "The Sermon.",
+      "description": "Chapter 9",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_9.txt"
+    },
+    {
+      "name": "chapter-9-json",
+      "title": "The Sermon.",
+      "description": "Chapter 9",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_9.json"
+    },
+    {
+      "name": "chapter-10-txt",
+      "title": "A Bosom Friend.",
+      "description": "Chapter 10",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_10.txt"
+    },
+    {
+      "name": "chapter-10-json",
+      "title": "A Bosom Friend.",
+      "description": "Chapter 10",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_10.json"
+    },
+    {
+      "name": "chapter-11-txt",
+      "title": "Nightgown.",
+      "description": "Chapter 11",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_11.txt"
+    },
+    {
+      "name": "chapter-11-json",
+      "title": "Nightgown.",
+      "description": "Chapter 11",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_11.json"
+    },
+    {
+      "name": "chapter-12-txt",
+      "title": "Biographical.",
+      "description": "Chapter 12",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_12.txt"
+    },
+    {
+      "name": "chapter-12-json",
+      "title": "Biographical.",
+      "description": "Chapter 12",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_12.json"
+    },
+    {
+      "name": "chapter-13-txt",
+      "title": "Wheelbarrow.",
+      "description": "Chapter 13",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_13.txt"
+    },
+    {
+      "name": "chapter-13-json",
+      "title": "Wheelbarrow.",
+      "description": "Chapter 13",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_13.json"
+    },
+    {
+      "name": "chapter-14-txt",
+      "title": "Nantucket.",
+      "description": "Chapter 14",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_14.txt"
+    },
+    {
+      "name": "chapter-14-json",
+      "title": "Nantucket.",
+      "description": "Chapter 14",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_14.json"
+    },
+    {
+      "name": "chapter-15-txt",
+      "title": "Chowder.",
+      "description": "Chapter 15",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_15.txt"
+    },
+    {
+      "name": "chapter-15-json",
+      "title": "Chowder.",
+      "description": "Chapter 15",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_15.json"
+    },
+    {
+      "name": "chapter-16-txt",
+      "title": "The Ship.",
+      "description": "Chapter 16",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_16.txt"
+    },
+    {
+      "name": "chapter-16-json",
+      "title": "The Ship.",
+      "description": "Chapter 16",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_16.json"
+    },
+    {
+      "name": "chapter-17-txt",
+      "title": "The Ramadan.",
+      "description": "Chapter 17",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_17.txt"
+    },
+    {
+      "name": "chapter-17-json",
+      "title": "The Ramadan.",
+      "description": "Chapter 17",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_17.json"
+    },
+    {
+      "name": "chapter-18-txt",
+      "title": "His Mark.",
+      "description": "Chapter 18",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_18.txt"
+    },
+    {
+      "name": "chapter-18-json",
+      "title": "His Mark.",
+      "description": "Chapter 18",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_18.json"
+    },
+    {
+      "name": "chapter-19-txt",
+      "title": "The Prophet.",
+      "description": "Chapter 19",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_19.txt"
+    },
+    {
+      "name": "chapter-19-json",
+      "title": "The Prophet.",
+      "description": "Chapter 19",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_19.json"
+    },
+    {
+      "name": "chapter-20-txt",
+      "title": "All Astir.",
+      "description": "Chapter 20",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_20.txt"
+    },
+    {
+      "name": "chapter-20-json",
+      "title": "All Astir.",
+      "description": "Chapter 20",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_20.json"
+    },
+    {
+      "name": "chapter-21-txt",
+      "title": "Going Aboard.",
+      "description": "Chapter 21",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_21.txt"
+    },
+    {
+      "name": "chapter-21-json",
+      "title": "Going Aboard.",
+      "description": "Chapter 21",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_21.json"
+    },
+    {
+      "name": "chapter-22-txt",
+      "title": "Merry Christmas.",
+      "description": "Chapter 22",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_22.txt"
+    },
+    {
+      "name": "chapter-22-json",
+      "title": "Merry Christmas.",
+      "description": "Chapter 22",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_22.json"
+    },
+    {
+      "name": "chapter-23-txt",
+      "title": "The Lee Shore.",
+      "description": "Chapter 23",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_23.txt"
+    },
+    {
+      "name": "chapter-23-json",
+      "title": "The Lee Shore.",
+      "description": "Chapter 23",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_23.json"
+    },
+    {
+      "name": "chapter-24-txt",
+      "title": "The Advocate.",
+      "description": "Chapter 24",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_24.txt"
+    },
+    {
+      "name": "chapter-24-json",
+      "title": "The Advocate.",
+      "description": "Chapter 24",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_24.json"
+    },
+    {
+      "name": "chapter-25-txt",
+      "title": "Postscript.",
+      "description": "Chapter 25",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_25.txt"
+    },
+    {
+      "name": "chapter-25-json",
+      "title": "Postscript.",
+      "description": "Chapter 25",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_25.json"
+    },
+    {
+      "name": "chapter-26-txt",
+      "title": "Knights and Squires.",
+      "description": "Chapter 26",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_26.txt"
+    },
+    {
+      "name": "chapter-26-json",
+      "title": "Knights and Squires.",
+      "description": "Chapter 26",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_26.json"
+    },
+    {
+      "name": "chapter-27-txt",
+      "title": "Knights and Squires.",
+      "description": "Chapter 27",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_27.txt"
+    },
+    {
+      "name": "chapter-27-json",
+      "title": "Knights and Squires.",
+      "description": "Chapter 27",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_27.json"
+    },
+    {
+      "name": "chapter-28-txt",
+      "title": "Ahab.",
+      "description": "Chapter 28",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_28.txt"
+    },
+    {
+      "name": "chapter-28-json",
+      "title": "Ahab.",
+      "description": "Chapter 28",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_28.json"
+    },
+    {
+      "name": "chapter-29-txt",
+      "title": "Enter Ahab; to Him, Stubb.",
+      "description": "Chapter 29",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_29.txt"
+    },
+    {
+      "name": "chapter-29-json",
+      "title": "Enter Ahab; to Him, Stubb.",
+      "description": "Chapter 29",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_29.json"
+    },
+    {
+      "name": "chapter-30-txt",
+      "title": "The Pipe.",
+      "description": "Chapter 30",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_30.txt"
+    },
+    {
+      "name": "chapter-30-json",
+      "title": "The Pipe.",
+      "description": "Chapter 30",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_30.json"
+    },
+    {
+      "name": "chapter-31-txt",
+      "title": "Queen Mab.",
+      "description": "Chapter 31",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_31.txt"
+    },
+    {
+      "name": "chapter-31-json",
+      "title": "Queen Mab.",
+      "description": "Chapter 31",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_31.json"
+    },
+    {
+      "name": "chapter-32-txt",
+      "title": "Cetology.",
+      "description": "Chapter 32",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_32.txt"
+    },
+    {
+      "name": "chapter-32-json",
+      "title": "Cetology.",
+      "description": "Chapter 32",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_32.json"
+    },
+    {
+      "name": "chapter-33-txt",
+      "title": "The Specksnyder.",
+      "description": "Chapter 33",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_33.txt"
+    },
+    {
+      "name": "chapter-33-json",
+      "title": "The Specksnyder.",
+      "description": "Chapter 33",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_33.json"
+    },
+    {
+      "name": "chapter-34-txt",
+      "title": "The Cabin-Table.",
+      "description": "Chapter 34",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_34.txt"
+    },
+    {
+      "name": "chapter-34-json",
+      "title": "The Cabin-Table.",
+      "description": "Chapter 34",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_34.json"
+    },
+    {
+      "name": "chapter-35-txt",
+      "title": "The Mast-Head.",
+      "description": "Chapter 35",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_35.txt"
+    },
+    {
+      "name": "chapter-35-json",
+      "title": "The Mast-Head.",
+      "description": "Chapter 35",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_35.json"
+    },
+    {
+      "name": "chapter-36-txt",
+      "title": "The Quarter-Deck.",
+      "description": "Chapter 36",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_36.txt"
+    },
+    {
+      "name": "chapter-36-json",
+      "title": "The Quarter-Deck.",
+      "description": "Chapter 36",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_36.json"
+    },
+    {
+      "name": "chapter-37-txt",
+      "title": "Sunset.",
+      "description": "Chapter 37",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_37.txt"
+    },
+    {
+      "name": "chapter-37-json",
+      "title": "Sunset.",
+      "description": "Chapter 37",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_37.json"
+    },
+    {
+      "name": "chapter-38-txt",
+      "title": "Dusk.",
+      "description": "Chapter 38",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_38.txt"
+    },
+    {
+      "name": "chapter-38-json",
+      "title": "Dusk.",
+      "description": "Chapter 38",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_38.json"
+    },
+    {
+      "name": "chapter-39-txt",
+      "title": "First Night Watch. Fore-Top.",
+      "description": "Chapter 39",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_39.txt"
+    },
+    {
+      "name": "chapter-39-json",
+      "title": "First Night Watch. Fore-Top.",
+      "description": "Chapter 39",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_39.json"
+    },
+    {
+      "name": "chapter-40-txt",
+      "title": "Midnight, Forecastle. HARPOONEERS AND SAILORS.",
+      "description": "Chapter 40",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_40.txt"
+    },
+    {
+      "name": "chapter-40-json",
+      "title": "Midnight, Forecastle. HARPOONEERS AND SAILORS.",
+      "description": "Chapter 40",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_40.json"
+    },
+    {
+      "name": "chapter-41-txt",
+      "title": "Moby Dick.",
+      "description": "Chapter 41",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_41.txt"
+    },
+    {
+      "name": "chapter-41-json",
+      "title": "Moby Dick.",
+      "description": "Chapter 41",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_41.json"
+    },
+    {
+      "name": "chapter-42-txt",
+      "title": "The Whiteness of The Whale.",
+      "description": "Chapter 42",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_42.txt"
+    },
+    {
+      "name": "chapter-42-json",
+      "title": "The Whiteness of The Whale.",
+      "description": "Chapter 42",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_42.json"
+    },
+    {
+      "name": "chapter-43-txt",
+      "title": "Hark!",
+      "description": "Chapter 43",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_43.txt"
+    },
+    {
+      "name": "chapter-43-json",
+      "title": "Hark!",
+      "description": "Chapter 43",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_43.json"
+    },
+    {
+      "name": "chapter-44-txt",
+      "title": "The Chart.",
+      "description": "Chapter 44",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_44.txt"
+    },
+    {
+      "name": "chapter-44-json",
+      "title": "The Chart.",
+      "description": "Chapter 44",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_44.json"
+    },
+    {
+      "name": "chapter-45-txt",
+      "title": "The Affidavit.",
+      "description": "Chapter 45",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_45.txt"
+    },
+    {
+      "name": "chapter-45-json",
+      "title": "The Affidavit.",
+      "description": "Chapter 45",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_45.json"
+    },
+    {
+      "name": "chapter-46-txt",
+      "title": "Surmises.",
+      "description": "Chapter 46",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_46.txt"
+    },
+    {
+      "name": "chapter-46-json",
+      "title": "Surmises.",
+      "description": "Chapter 46",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_46.json"
+    },
+    {
+      "name": "chapter-47-txt",
+      "title": "The Mat-Maker.",
+      "description": "Chapter 47",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_47.txt"
+    },
+    {
+      "name": "chapter-47-json",
+      "title": "The Mat-Maker.",
+      "description": "Chapter 47",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_47.json"
+    },
+    {
+      "name": "chapter-48-txt",
+      "title": "The First Lowering.",
+      "description": "Chapter 48",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_48.txt"
+    },
+    {
+      "name": "chapter-48-json",
+      "title": "The First Lowering.",
+      "description": "Chapter 48",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_48.json"
+    },
+    {
+      "name": "chapter-49-txt",
+      "title": "The Hyena.",
+      "description": "Chapter 49",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_49.txt"
+    },
+    {
+      "name": "chapter-49-json",
+      "title": "The Hyena.",
+      "description": "Chapter 49",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_49.json"
+    },
+    {
+      "name": "chapter-50-txt",
+      "title": "Ahab's Boat and Crew. Fedallah.",
+      "description": "Chapter 50",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_50.txt"
+    },
+    {
+      "name": "chapter-50-json",
+      "title": "Ahab's Boat and Crew. Fedallah.",
+      "description": "Chapter 50",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_50.json"
+    },
+    {
+      "name": "chapter-51-txt",
+      "title": "The Spirit-Spout.",
+      "description": "Chapter 51",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_51.txt"
+    },
+    {
+      "name": "chapter-51-json",
+      "title": "The Spirit-Spout.",
+      "description": "Chapter 51",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_51.json"
+    },
+    {
+      "name": "chapter-52-txt",
+      "title": "The Albatross.",
+      "description": "Chapter 52",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_52.txt"
+    },
+    {
+      "name": "chapter-52-json",
+      "title": "The Albatross.",
+      "description": "Chapter 52",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_52.json"
+    },
+    {
+      "name": "chapter-53-txt",
+      "title": "The Gam.",
+      "description": "Chapter 53",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_53.txt"
+    },
+    {
+      "name": "chapter-53-json",
+      "title": "The Gam.",
+      "description": "Chapter 53",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_53.json"
+    },
+    {
+      "name": "chapter-54-txt",
+      "title": "The Town-Ho's Story.",
+      "description": "Chapter 54",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_54.txt"
+    },
+    {
+      "name": "chapter-54-json",
+      "title": "The Town-Ho's Story.",
+      "description": "Chapter 54",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_54.json"
+    },
+    {
+      "name": "chapter-55-txt",
+      "title": "Of the Monstrous Pictures of Whales.",
+      "description": "Chapter 55",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_55.txt"
+    },
+    {
+      "name": "chapter-55-json",
+      "title": "Of the Monstrous Pictures of Whales.",
+      "description": "Chapter 55",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_55.json"
+    },
+    {
+      "name": "chapter-56-txt",
+      "title": "Of the Less Erroneous Pictures of Whales, and the True",
+      "description": "Chapter 56",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_56.txt"
+    },
+    {
+      "name": "chapter-56-json",
+      "title": "Of the Less Erroneous Pictures of Whales, and the True",
+      "description": "Chapter 56",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_56.json"
+    },
+    {
+      "name": "chapter-57-txt",
+      "title": "Of Whales in Paint; in Teeth; in Wood; in Sheet-Iron; in",
+      "description": "Chapter 57",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_57.txt"
+    },
+    {
+      "name": "chapter-57-json",
+      "title": "Of Whales in Paint; in Teeth; in Wood; in Sheet-Iron; in",
+      "description": "Chapter 57",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_57.json"
+    },
+    {
+      "name": "chapter-58-txt",
+      "title": "Brit.",
+      "description": "Chapter 58",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_58.txt"
+    },
+    {
+      "name": "chapter-58-json",
+      "title": "Brit.",
+      "description": "Chapter 58",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_58.json"
+    },
+    {
+      "name": "chapter-59-txt",
+      "title": "Squid.",
+      "description": "Chapter 59",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_59.txt"
+    },
+    {
+      "name": "chapter-59-json",
+      "title": "Squid.",
+      "description": "Chapter 59",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_59.json"
+    },
+    {
+      "name": "chapter-60-txt",
+      "title": "The Line.",
+      "description": "Chapter 60",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_60.txt"
+    },
+    {
+      "name": "chapter-60-json",
+      "title": "The Line.",
+      "description": "Chapter 60",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_60.json"
+    },
+    {
+      "name": "chapter-61-txt",
+      "title": "Stubb Kills a Whale.",
+      "description": "Chapter 61",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_61.txt"
+    },
+    {
+      "name": "chapter-61-json",
+      "title": "Stubb Kills a Whale.",
+      "description": "Chapter 61",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_61.json"
+    },
+    {
+      "name": "chapter-62-txt",
+      "title": "The Dart.",
+      "description": "Chapter 62",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_62.txt"
+    },
+    {
+      "name": "chapter-62-json",
+      "title": "The Dart.",
+      "description": "Chapter 62",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_62.json"
+    },
+    {
+      "name": "chapter-63-txt",
+      "title": "The Crotch.",
+      "description": "Chapter 63",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_63.txt"
+    },
+    {
+      "name": "chapter-63-json",
+      "title": "The Crotch.",
+      "description": "Chapter 63",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_63.json"
+    },
+    {
+      "name": "chapter-64-txt",
+      "title": "Stubb's Supper.",
+      "description": "Chapter 64",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_64.txt"
+    },
+    {
+      "name": "chapter-64-json",
+      "title": "Stubb's Supper.",
+      "description": "Chapter 64",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_64.json"
+    },
+    {
+      "name": "chapter-65-txt",
+      "title": "The Whale as a Dish.",
+      "description": "Chapter 65",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_65.txt"
+    },
+    {
+      "name": "chapter-65-json",
+      "title": "The Whale as a Dish.",
+      "description": "Chapter 65",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_65.json"
+    },
+    {
+      "name": "chapter-66-txt",
+      "title": "The Shark Massacre.",
+      "description": "Chapter 66",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_66.txt"
+    },
+    {
+      "name": "chapter-66-json",
+      "title": "The Shark Massacre.",
+      "description": "Chapter 66",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_66.json"
+    },
+    {
+      "name": "chapter-67-txt",
+      "title": "Cutting In.",
+      "description": "Chapter 67",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_67.txt"
+    },
+    {
+      "name": "chapter-67-json",
+      "title": "Cutting In.",
+      "description": "Chapter 67",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_67.json"
+    },
+    {
+      "name": "chapter-68-txt",
+      "title": "The Blanket.",
+      "description": "Chapter 68",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_68.txt"
+    },
+    {
+      "name": "chapter-68-json",
+      "title": "The Blanket.",
+      "description": "Chapter 68",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_68.json"
+    },
+    {
+      "name": "chapter-69-txt",
+      "title": "The Funeral.",
+      "description": "Chapter 69",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_69.txt"
+    },
+    {
+      "name": "chapter-69-json",
+      "title": "The Funeral.",
+      "description": "Chapter 69",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_69.json"
+    },
+    {
+      "name": "chapter-70-txt",
+      "title": "The Sphynx.",
+      "description": "Chapter 70",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_70.txt"
+    },
+    {
+      "name": "chapter-70-json",
+      "title": "The Sphynx.",
+      "description": "Chapter 70",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_70.json"
+    },
+    {
+      "name": "chapter-71-txt",
+      "title": "The Jeroboam's Story.",
+      "description": "Chapter 71",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_71.txt"
+    },
+    {
+      "name": "chapter-71-json",
+      "title": "The Jeroboam's Story.",
+      "description": "Chapter 71",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_71.json"
+    },
+    {
+      "name": "chapter-72-txt",
+      "title": "The Monkey-Rope.",
+      "description": "Chapter 72",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_72.txt"
+    },
+    {
+      "name": "chapter-72-json",
+      "title": "The Monkey-Rope.",
+      "description": "Chapter 72",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_72.json"
+    },
+    {
+      "name": "chapter-73-txt",
+      "title": "Stubb and Flask Kill a Right Whale; and Then Have a Talk",
+      "description": "Chapter 73",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_73.txt"
+    },
+    {
+      "name": "chapter-73-json",
+      "title": "Stubb and Flask Kill a Right Whale; and Then Have a Talk",
+      "description": "Chapter 73",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_73.json"
+    },
+    {
+      "name": "chapter-74-txt",
+      "title": "The Sperm Whale's Head—Contrasted View.",
+      "description": "Chapter 74",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_74.txt"
+    },
+    {
+      "name": "chapter-74-json",
+      "title": "The Sperm Whale's Head—Contrasted View.",
+      "description": "Chapter 74",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_74.json"
+    },
+    {
+      "name": "chapter-75-txt",
+      "title": "The Right Whale's Head—Contrasted View.",
+      "description": "Chapter 75",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_75.txt"
+    },
+    {
+      "name": "chapter-75-json",
+      "title": "The Right Whale's Head—Contrasted View.",
+      "description": "Chapter 75",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_75.json"
+    },
+    {
+      "name": "chapter-76-txt",
+      "title": "The Battering-Ram.",
+      "description": "Chapter 76",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_76.txt"
+    },
+    {
+      "name": "chapter-76-json",
+      "title": "The Battering-Ram.",
+      "description": "Chapter 76",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_76.json"
+    },
+    {
+      "name": "chapter-77-txt",
+      "title": "The Great Heidelburgh Tun.",
+      "description": "Chapter 77",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_77.txt"
+    },
+    {
+      "name": "chapter-77-json",
+      "title": "The Great Heidelburgh Tun.",
+      "description": "Chapter 77",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_77.json"
+    },
+    {
+      "name": "chapter-78-txt",
+      "title": "Cistern and Buckets.",
+      "description": "Chapter 78",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_78.txt"
+    },
+    {
+      "name": "chapter-78-json",
+      "title": "Cistern and Buckets.",
+      "description": "Chapter 78",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_78.json"
+    },
+    {
+      "name": "chapter-79-txt",
+      "title": "The Prairie.",
+      "description": "Chapter 79",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_79.txt"
+    },
+    {
+      "name": "chapter-79-json",
+      "title": "The Prairie.",
+      "description": "Chapter 79",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_79.json"
+    },
+    {
+      "name": "chapter-80-txt",
+      "title": "The Nut.",
+      "description": "Chapter 80",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_80.txt"
+    },
+    {
+      "name": "chapter-80-json",
+      "title": "The Nut.",
+      "description": "Chapter 80",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_80.json"
+    },
+    {
+      "name": "chapter-81-txt",
+      "title": "The Pequod Meets The Virgin.",
+      "description": "Chapter 81",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_81.txt"
+    },
+    {
+      "name": "chapter-81-json",
+      "title": "The Pequod Meets The Virgin.",
+      "description": "Chapter 81",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_81.json"
+    },
+    {
+      "name": "chapter-82-txt",
+      "title": "The Honour and Glory of Whaling.",
+      "description": "Chapter 82",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_82.txt"
+    },
+    {
+      "name": "chapter-82-json",
+      "title": "The Honour and Glory of Whaling.",
+      "description": "Chapter 82",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_82.json"
+    },
+    {
+      "name": "chapter-83-txt",
+      "title": "Jonah Historically Regarded.",
+      "description": "Chapter 83",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_83.txt"
+    },
+    {
+      "name": "chapter-83-json",
+      "title": "Jonah Historically Regarded.",
+      "description": "Chapter 83",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_83.json"
+    },
+    {
+      "name": "chapter-84-txt",
+      "title": "Pitchpoling.",
+      "description": "Chapter 84",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_84.txt"
+    },
+    {
+      "name": "chapter-84-json",
+      "title": "Pitchpoling.",
+      "description": "Chapter 84",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_84.json"
+    },
+    {
+      "name": "chapter-85-txt",
+      "title": "The Fountain.",
+      "description": "Chapter 85",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_85.txt"
+    },
+    {
+      "name": "chapter-85-json",
+      "title": "The Fountain.",
+      "description": "Chapter 85",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_85.json"
+    },
+    {
+      "name": "chapter-86-txt",
+      "title": "The Tail.",
+      "description": "Chapter 86",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_86.txt"
+    },
+    {
+      "name": "chapter-86-json",
+      "title": "The Tail.",
+      "description": "Chapter 86",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_86.json"
+    },
+    {
+      "name": "chapter-87-txt",
+      "title": "The Grand Armada.",
+      "description": "Chapter 87",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_87.txt"
+    },
+    {
+      "name": "chapter-87-json",
+      "title": "The Grand Armada.",
+      "description": "Chapter 87",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_87.json"
+    },
+    {
+      "name": "chapter-88-txt",
+      "title": "Schools and Schoolmasters.",
+      "description": "Chapter 88",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_88.txt"
+    },
+    {
+      "name": "chapter-88-json",
+      "title": "Schools and Schoolmasters.",
+      "description": "Chapter 88",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_88.json"
+    },
+    {
+      "name": "chapter-89-txt",
+      "title": "Fast-Fish and Loose-Fish.",
+      "description": "Chapter 89",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_89.txt"
+    },
+    {
+      "name": "chapter-89-json",
+      "title": "Fast-Fish and Loose-Fish.",
+      "description": "Chapter 89",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_89.json"
+    },
+    {
+      "name": "chapter-90-txt",
+      "title": "Heads or Tails.",
+      "description": "Chapter 90",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_90.txt"
+    },
+    {
+      "name": "chapter-90-json",
+      "title": "Heads or Tails.",
+      "description": "Chapter 90",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_90.json"
+    },
+    {
+      "name": "chapter-91-txt",
+      "title": "The Pequod Meets The Rose-Bud.",
+      "description": "Chapter 91",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_91.txt"
+    },
+    {
+      "name": "chapter-91-json",
+      "title": "The Pequod Meets The Rose-Bud.",
+      "description": "Chapter 91",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_91.json"
+    },
+    {
+      "name": "chapter-92-txt",
+      "title": "Ambergris.",
+      "description": "Chapter 92",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_92.txt"
+    },
+    {
+      "name": "chapter-92-json",
+      "title": "Ambergris.",
+      "description": "Chapter 92",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_92.json"
+    },
+    {
+      "name": "chapter-93-txt",
+      "title": "The Castaway.",
+      "description": "Chapter 93",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_93.txt"
+    },
+    {
+      "name": "chapter-93-json",
+      "title": "The Castaway.",
+      "description": "Chapter 93",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_93.json"
+    },
+    {
+      "name": "chapter-94-txt",
+      "title": "A Squeeze of the Hand.",
+      "description": "Chapter 94",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_94.txt"
+    },
+    {
+      "name": "chapter-94-json",
+      "title": "A Squeeze of the Hand.",
+      "description": "Chapter 94",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_94.json"
+    },
+    {
+      "name": "chapter-95-txt",
+      "title": "The Cassock.",
+      "description": "Chapter 95",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_95.txt"
+    },
+    {
+      "name": "chapter-95-json",
+      "title": "The Cassock.",
+      "description": "Chapter 95",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_95.json"
+    },
+    {
+      "name": "chapter-96-txt",
+      "title": "The Try-Works.",
+      "description": "Chapter 96",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_96.txt"
+    },
+    {
+      "name": "chapter-96-json",
+      "title": "The Try-Works.",
+      "description": "Chapter 96",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_96.json"
+    },
+    {
+      "name": "chapter-97-txt",
+      "title": "The Lamp.",
+      "description": "Chapter 97",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_97.txt"
+    },
+    {
+      "name": "chapter-97-json",
+      "title": "The Lamp.",
+      "description": "Chapter 97",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_97.json"
+    },
+    {
+      "name": "chapter-98-txt",
+      "title": "Stowing Down and Clearing Up.",
+      "description": "Chapter 98",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_98.txt"
+    },
+    {
+      "name": "chapter-98-json",
+      "title": "Stowing Down and Clearing Up.",
+      "description": "Chapter 98",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_98.json"
+    },
+    {
+      "name": "chapter-99-txt",
+      "title": "The Doubloon.",
+      "description": "Chapter 99",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_99.txt"
+    },
+    {
+      "name": "chapter-99-json",
+      "title": "The Doubloon.",
+      "description": "Chapter 99",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_99.json"
+    },
+    {
+      "name": "chapter-100-txt",
+      "title": "Leg and Arm. The Pequod, of Nantucket, Meets the Samuel",
+      "description": "Chapter 100",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_100.txt"
+    },
+    {
+      "name": "chapter-100-json",
+      "title": "Leg and Arm. The Pequod, of Nantucket, Meets the Samuel",
+      "description": "Chapter 100",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_100.json"
+    },
+    {
+      "name": "chapter-101-txt",
+      "title": "The Decanter.",
+      "description": "Chapter 101",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_101.txt"
+    },
+    {
+      "name": "chapter-101-json",
+      "title": "The Decanter.",
+      "description": "Chapter 101",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_101.json"
+    },
+    {
+      "name": "chapter-102-txt",
+      "title": "A Bower in the Arsacides.",
+      "description": "Chapter 102",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_102.txt"
+    },
+    {
+      "name": "chapter-102-json",
+      "title": "A Bower in the Arsacides.",
+      "description": "Chapter 102",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_102.json"
+    },
+    {
+      "name": "chapter-103-txt",
+      "title": "Measurement of The Whale's Skeleton.",
+      "description": "Chapter 103",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_103.txt"
+    },
+    {
+      "name": "chapter-103-json",
+      "title": "Measurement of The Whale's Skeleton.",
+      "description": "Chapter 103",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_103.json"
+    },
+    {
+      "name": "chapter-104-txt",
+      "title": "The Fossil Whale.",
+      "description": "Chapter 104",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_104.txt"
+    },
+    {
+      "name": "chapter-104-json",
+      "title": "The Fossil Whale.",
+      "description": "Chapter 104",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_104.json"
+    },
+    {
+      "name": "chapter-105-txt",
+      "title": "Does the Whale's Magnitude Diminish?—Will He Perish?",
+      "description": "Chapter 105",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_105.txt"
+    },
+    {
+      "name": "chapter-105-json",
+      "title": "Does the Whale's Magnitude Diminish?—Will He Perish?",
+      "description": "Chapter 105",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_105.json"
+    },
+    {
+      "name": "chapter-106-txt",
+      "title": "Ahab's Leg.",
+      "description": "Chapter 106",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_106.txt"
+    },
+    {
+      "name": "chapter-106-json",
+      "title": "Ahab's Leg.",
+      "description": "Chapter 106",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_106.json"
+    },
+    {
+      "name": "chapter-107-txt",
+      "title": "The Carpenter.",
+      "description": "Chapter 107",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_107.txt"
+    },
+    {
+      "name": "chapter-107-json",
+      "title": "The Carpenter.",
+      "description": "Chapter 107",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_107.json"
+    },
+    {
+      "name": "chapter-108-txt",
+      "title": "Ahab and the Carpenter. The Deck—First Night Watch.",
+      "description": "Chapter 108",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_108.txt"
+    },
+    {
+      "name": "chapter-108-json",
+      "title": "Ahab and the Carpenter. The Deck—First Night Watch.",
+      "description": "Chapter 108",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_108.json"
+    },
+    {
+      "name": "chapter-109-txt",
+      "title": "Ahab and Starbuck in the Cabin.",
+      "description": "Chapter 109",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_109.txt"
+    },
+    {
+      "name": "chapter-109-json",
+      "title": "Ahab and Starbuck in the Cabin.",
+      "description": "Chapter 109",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_109.json"
+    },
+    {
+      "name": "chapter-110-txt",
+      "title": "Queequeg in His Coffin.",
+      "description": "Chapter 110",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_110.txt"
+    },
+    {
+      "name": "chapter-110-json",
+      "title": "Queequeg in His Coffin.",
+      "description": "Chapter 110",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_110.json"
+    },
+    {
+      "name": "chapter-111-txt",
+      "title": "The Pacific.",
+      "description": "Chapter 111",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_111.txt"
+    },
+    {
+      "name": "chapter-111-json",
+      "title": "The Pacific.",
+      "description": "Chapter 111",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_111.json"
+    },
+    {
+      "name": "chapter-112-txt",
+      "title": "The Blacksmith.",
+      "description": "Chapter 112",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_112.txt"
+    },
+    {
+      "name": "chapter-112-json",
+      "title": "The Blacksmith.",
+      "description": "Chapter 112",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_112.json"
+    },
+    {
+      "name": "chapter-113-txt",
+      "title": "The Forge.",
+      "description": "Chapter 113",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_113.txt"
+    },
+    {
+      "name": "chapter-113-json",
+      "title": "The Forge.",
+      "description": "Chapter 113",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_113.json"
+    },
+    {
+      "name": "chapter-114-txt",
+      "title": "The Gilder.",
+      "description": "Chapter 114",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_114.txt"
+    },
+    {
+      "name": "chapter-114-json",
+      "title": "The Gilder.",
+      "description": "Chapter 114",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_114.json"
+    },
+    {
+      "name": "chapter-115-txt",
+      "title": "The Pequod Meets The Bachelor.",
+      "description": "Chapter 115",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_115.txt"
+    },
+    {
+      "name": "chapter-115-json",
+      "title": "The Pequod Meets The Bachelor.",
+      "description": "Chapter 115",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_115.json"
+    },
+    {
+      "name": "chapter-116-txt",
+      "title": "The Dying Whale.",
+      "description": "Chapter 116",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_116.txt"
+    },
+    {
+      "name": "chapter-116-json",
+      "title": "The Dying Whale.",
+      "description": "Chapter 116",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_116.json"
+    },
+    {
+      "name": "chapter-117-txt",
+      "title": "The Whale Watch.",
+      "description": "Chapter 117",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_117.txt"
+    },
+    {
+      "name": "chapter-117-json",
+      "title": "The Whale Watch.",
+      "description": "Chapter 117",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_117.json"
+    },
+    {
+      "name": "chapter-118-txt",
+      "title": "The Quadrant.",
+      "description": "Chapter 118",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_118.txt"
+    },
+    {
+      "name": "chapter-118-json",
+      "title": "The Quadrant.",
+      "description": "Chapter 118",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_118.json"
+    },
+    {
+      "name": "chapter-119-txt",
+      "title": "The Candles.",
+      "description": "Chapter 119",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_119.txt"
+    },
+    {
+      "name": "chapter-119-json",
+      "title": "The Candles.",
+      "description": "Chapter 119",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_119.json"
+    },
+    {
+      "name": "chapter-120-txt",
+      "title": "The Deck Towards the End of the First Night Watch. Ahab",
+      "description": "Chapter 120",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_120.txt"
+    },
+    {
+      "name": "chapter-120-json",
+      "title": "The Deck Towards the End of the First Night Watch. Ahab",
+      "description": "Chapter 120",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_120.json"
+    },
+    {
+      "name": "chapter-121-txt",
+      "title": "Midnight.—The Forecastle Bulwarks.",
+      "description": "Chapter 121",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_121.txt"
+    },
+    {
+      "name": "chapter-121-json",
+      "title": "Midnight.—The Forecastle Bulwarks.",
+      "description": "Chapter 121",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_121.json"
+    },
+    {
+      "name": "chapter-122-txt",
+      "title": "Midnight Aloft.—Thunder and Lightning.",
+      "description": "Chapter 122",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_122.txt"
+    },
+    {
+      "name": "chapter-122-json",
+      "title": "Midnight Aloft.—Thunder and Lightning.",
+      "description": "Chapter 122",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_122.json"
+    },
+    {
+      "name": "chapter-123-txt",
+      "title": "The Musket.",
+      "description": "Chapter 123",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_123.txt"
+    },
+    {
+      "name": "chapter-123-json",
+      "title": "The Musket.",
+      "description": "Chapter 123",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_123.json"
+    },
+    {
+      "name": "chapter-124-txt",
+      "title": "The Needle.",
+      "description": "Chapter 124",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_124.txt"
+    },
+    {
+      "name": "chapter-124-json",
+      "title": "The Needle.",
+      "description": "Chapter 124",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_124.json"
+    },
+    {
+      "name": "chapter-125-txt",
+      "title": "The Log and Line.",
+      "description": "Chapter 125",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_125.txt"
+    },
+    {
+      "name": "chapter-125-json",
+      "title": "The Log and Line.",
+      "description": "Chapter 125",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_125.json"
+    },
+    {
+      "name": "chapter-126-txt",
+      "title": "The Life-Buoy.",
+      "description": "Chapter 126",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_126.txt"
+    },
+    {
+      "name": "chapter-126-json",
+      "title": "The Life-Buoy.",
+      "description": "Chapter 126",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_126.json"
+    },
+    {
+      "name": "chapter-127-txt",
+      "title": "The Deck.",
+      "description": "Chapter 127",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_127.txt"
+    },
+    {
+      "name": "chapter-127-json",
+      "title": "The Deck.",
+      "description": "Chapter 127",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_127.json"
+    },
+    {
+      "name": "chapter-128-txt",
+      "title": "The Pequod Meets The Rachel.",
+      "description": "Chapter 128",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_128.txt"
+    },
+    {
+      "name": "chapter-128-json",
+      "title": "The Pequod Meets The Rachel.",
+      "description": "Chapter 128",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_128.json"
+    },
+    {
+      "name": "chapter-129-txt",
+      "title": "The Cabin.",
+      "description": "Chapter 129",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_129.txt"
+    },
+    {
+      "name": "chapter-129-json",
+      "title": "The Cabin.",
+      "description": "Chapter 129",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_129.json"
+    },
+    {
+      "name": "chapter-130-txt",
+      "title": "The Hat.",
+      "description": "Chapter 130",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_130.txt"
+    },
+    {
+      "name": "chapter-130-json",
+      "title": "The Hat.",
+      "description": "Chapter 130",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_130.json"
+    },
+    {
+      "name": "chapter-131-txt",
+      "title": "The Pequod Meets The Delight.",
+      "description": "Chapter 131",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_131.txt"
+    },
+    {
+      "name": "chapter-131-json",
+      "title": "The Pequod Meets The Delight.",
+      "description": "Chapter 131",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_131.json"
+    },
+    {
+      "name": "chapter-132-txt",
+      "title": "The Symphony.",
+      "description": "Chapter 132",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_132.txt"
+    },
+    {
+      "name": "chapter-132-json",
+      "title": "The Symphony.",
+      "description": "Chapter 132",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_132.json"
+    },
+    {
+      "name": "chapter-133-txt",
+      "title": "The Chase—First Day.",
+      "description": "Chapter 133",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_133.txt"
+    },
+    {
+      "name": "chapter-133-json",
+      "title": "The Chase—First Day.",
+      "description": "Chapter 133",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_133.json"
+    },
+    {
+      "name": "chapter-134-txt",
+      "title": "The Chase—Second Day.",
+      "description": "Chapter 134",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_134.txt"
+    },
+    {
+      "name": "chapter-134-json",
+      "title": "The Chase—Second Day.",
+      "description": "Chapter 134",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_134.json"
+    },
+    {
+      "name": "chapter-135-txt",
+      "title": "The Chase.—Third Day.",
+      "description": "Chapter 135",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_135.txt"
+    },
+    {
+      "name": "chapter-135-json",
+      "title": "The Chase.—Third Day.",
+      "description": "Chapter 135",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/chapter_135.json"
+    },
+    {
+      "name": "epilogue-txt",
+      "title": "\"AND I ONLY AM ESCAPED ALONE TO TELL THEE\" Job.",
+      "description": "Epilogue.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/epilogue.txt"
+    },
+    {
+      "name": "epilogue-json",
+      "title": "\"AND I ONLY AM ESCAPED ALONE TO TELL THEE\" Job.",
+      "description": "Epilogue.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/epilogue.json"
+    }
+  ],
+  "sources": [],
+  "keywords": [
+    "moby dick",
+    "herman melville",
+    "novel",
+    "book",
+    "whale",
+    "text",
+    "corpus",
+    "nlp",
+    "language",
+    "english",
+    "en"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}

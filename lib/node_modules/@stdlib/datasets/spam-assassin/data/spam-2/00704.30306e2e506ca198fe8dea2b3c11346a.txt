@@ -1,0 +1,115 @@
+From spamassassin-sightings-admin@lists.sourceforge.net  Wed Jul 17 17:24:46 2002
+Return-Path: <spamassassin-sightings-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id DC00E43C65
+	for <jm@localhost>; Wed, 17 Jul 2002 12:24:45 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 17 Jul 2002 17:24:45 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6HGN6J04455 for <jm-sa-sightings@jmason.org>; Wed, 17 Jul 2002 17:23:06
+    +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17UrZx-0006LH-00; Wed,
+    17 Jul 2002 09:23:05 -0700
+Received: from itchy.serv.net ([205.153.154.199]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17UrZM-0000pH-00 for <spamassassin-sightings@lists.sourceforge.net>;
+    Wed, 17 Jul 2002 09:22:28 -0700
+Received: (from llyra@localhost) by itchy.serv.net (8.9.3/8.9.3) id
+    JAA43016 for spamassassin-sightings@lists.sf.net; Wed, 17 Jul 2002
+    09:18:23 -0700 (PDT)
+Received: from mx.serv.net (mx [205.153.154.205]) by itchy.serv.net
+    (8.9.3/8.9.3) with ESMTP id XAA87698 for <llyra@itchy.serv.net>;
+    Fri, 12 Jul 2002 23:28:49 -0700 (PDT)
+Received: from drizzle.com (IDENT:root@cascadia.drizzle.com
+    [216.162.192.17]) by mx.serv.net (8.9.3/8.9.1) with ESMTP id XAA02803 for
+    <filtered@llyra.com>; Fri, 12 Jul 2002 23:32:44 -0700 (PDT)
+Received: from drizzle.com (IDENT:harmony@localhost [127.0.0.1]) by
+    drizzle.com (8.12.3/8.12.3) with ESMTP id g6D6Wj5C030407 for
+    <filtered@llyra.com>; Fri, 12 Jul 2002 23:32:45 -0700
+Received: (from harmony@localhost) by drizzle.com (8.12.3/8.12.3/Submit)
+    id g6D6Wj77030406 for filtered@llyra.com; Fri, 12 Jul 2002 23:32:45 -0700
+Received: from itchy.serv.net (itchy.serv.net [205.153.154.199]) by
+    drizzle.com (8.12.3/8.12.3) with ESMTP id g6D6Wi5C030399 for
+    <harmony@drizzle.com>; Fri, 12 Jul 2002 23:32:44 -0700
+Received: (from llyra@localhost) by itchy.serv.net (8.9.3/8.9.3) id
+    XAA87693 for harmony@drizzle.com; Fri, 12 Jul 2002 23:28:46 -0700 (PDT)
+Received: from mx.serv.net (mx [205.153.154.205]) by itchy.serv.net
+    (8.9.3/8.9.3) with ESMTP id XAA87689 for <llyra@itchy.serv.net>;
+    Fri, 12 Jul 2002 23:28:42 -0700 (PDT)
+Received: from u-8-cvn2uto (61-223-155-181.HINET-IP.hinet.net
+    [61.223.155.181]) by mx.serv.net (8.9.3/8.9.1) with SMTP id XAA02762 for
+    <llyra@serv.net>; Fri, 12 Jul 2002 23:32:15 -0700 (PDT)
+Received: from hotmail by titan.seed.net.tw with SMTP id
+    jb2ADScSzwzK56cd1mrXamf4; Sat, 13 Jul 2002 14:27:03 +0800
+Message-Id: <QmaozXNd@tpts8.seed.net.tw>
+From: £«¼e@mx.serv.net
+To: new-10@mx.serv.net, new-11@mx.serv.net
+MIME-Version: 1.0
+X-Mailer: WA9c2D478J2W9yTmQNRm
+X-Priority: 3
+X-Msmail-Priority: Normal
+Subject: [SA] =?big5?Q?Fw:=A7=DA=C4=B9=BF=FA=A4F?= 9iz5IOamknbO3ql9u1maoutC1cv
+Sender: spamassassin-sightings-admin@example.sourceforge.net
+Errors-To: spamassassin-sightings-admin@example.sourceforge.net
+X-Beenthere: spamassassin-sightings@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-sightings-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-sightings@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-sightings>,
+    <mailto:spamassassin-sightings-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <spamassassin-sightings.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-sightings>,
+    <mailto:spamassassin-sightings-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-sightings>
+X-Original-Date: Fri, 12 Jul 2002 23:32:15 -0700 (PDT)
+Date: Fri, 12 Jul 2002 23:32:15 -0700 (PDT)
+Content-Type: multipart/related; type="multipart/alternative"; boundary="----=_NextPart_dO8zJ9VZJNgvpKVZoFA"
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_dO8zJ9VZJNgvpKVZoFA
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_dO8zJ9VZJNgvpKVZoFAAA"
+
+
+------=_NextPart_dO8zJ9VZJNgvpKVZoFAAA
+Content-Type: text/html;
+	charset="big5"
+Content-Transfer-Encoding: base64
+
+PGh0bWw+DQoNCjxoZWFkPg0KPG1ldGEgaHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50
+PSJ0ZXh0L2h0bWw7IGNoYXJzZXQ9YmlnNSI+DQo8bWV0YSBuYW1lPSJHRU5FUkFUT1IiIGNvbnRl
+bnQ9Ik1pY3Jvc29mdCBGcm9udFBhZ2UgNC4wIj4NCjxtZXRhIG5hbWU9IlByb2dJZCIgY29udGVu
+dD0iRnJvbnRQYWdlLkVkaXRvci5Eb2N1bWVudCI+DQo8dGl0bGU+pWis3azdp2E8L3RpdGxlPg0K
+PC9oZWFkPg0KDQo8Ym9keT4NCg0KPERJVj48Rk9OVCBzaXplPTI+pWis3azdp2EhPC9GT05UPjwv
+RElWPg0KPERJVj48Rk9OVCBzaXplPTI+PEEgDQpocmVmPSJodHRwOi8vd3d3Ljk5OC50by8iPmh0
+dHA6Ly93d3cuOTk4LnRvLzwvQT48L0ZPTlQ+PC9ESVY+DQo8RElWPjxGT05UIHNpemU9Mj7ByKRG
+v/qnT6fRpEa90KvIs+EhPC9GT05UPjwvRElWPg0KPERJVj48Rk9OVCBzaXplPTI+Jm5ic3A7Jm5i
+c3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7
+Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5i
+c3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7IKOrvGUuLi4uLjwvRk9OVD48L0RJVj4NCg0KPC9i
+b2R5Pg0KDQo8L2h0bWw+
+
+
+------=_NextPart_dO8zJ9VZJNgvpKVZoFAAA--
+------=_NextPart_dO8zJ9VZJNgvpKVZoFA--
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

@@ -1,0 +1,23 @@
+
+{{alias}}( value )
+    Tests if a value is a string in snake case.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a value is a string in snake case.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 'hello_world' )
+    true
+    > bool = {{alias}}( 'Hello World' )
+    false
+
+    See Also
+    --------

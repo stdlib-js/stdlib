@@ -1,0 +1,102 @@
+From fork-admin@xent.com  Thu Sep 19 16:26:17 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 18B1C16F03
+	for <jm@localhost>; Thu, 19 Sep 2002 16:26:16 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 19 Sep 2002 16:26:16 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8JF2nC24198 for <jm@jmason.org>;
+    Thu, 19 Sep 2002 16:02:49 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 67EEA2940FF; Thu, 19 Sep 2002 07:59:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from sunserver.permafrost.net (u172n16.hfx.eastlink.ca
+    [24.222.172.16]) by xent.com (Postfix) with ESMTP id F41F129409E for
+    <fork@xent.com>; Thu, 19 Sep 2002 07:58:58 -0700 (PDT)
+Received: from [192.168.123.179] (helo=permafrost.net) by
+    sunserver.permafrost.net with esmtp (Exim 3.35 #1 (Debian)) id
+    17s2m3-0008OH-00 for <fork@xent.com>; Thu, 19 Sep 2002 11:59:23 -0300
+Message-Id: <3D89E7DD.6010506@permafrost.net>
+From: Owen Byrne <owen@permafrost.net>
+User-Agent: Mozilla/5.0 (Windows; U; Win98; en-US; rv:1.1) Gecko/20020826
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: fork@spamassassin.taint.org
+Subject: Re: Avast there matey
+References: <C311138A-CBDB-11D6-AE0B-000393B2AD9C@benhammersley.com>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 19 Sep 2002 12:06:05 -0300
+
+Ben Hammersley wrote:
+
+>
+> On Thursday, Sep 19, 2002, at 14:51 Europe/London, Bill Kearney wrote:
+>
+>>> From the completely unrelated but funny department...
+>>
+>>
+>> "Talk like a Pirate Day".
+>> http://www.washingtonpost.com/wp-dyn/articles/A5011-2002Sep11.html
+>>
+>> Which is today, of course.
+>>
+>> That and 'piratecore' rapping style...
+>> http://poorman.blogspot.com/2002_09_01_poorman_archive.html#81798893
+>>
+>> Anything, just anything, to get us off the geek dating tips topic....
+>>
+>> -Bill Kearney
+>>
+>
+>
+> Arrr, he be a scurvy dog, that Bill Kearney.
+
+Well, shiver me timbers, but my favorite pirate phrase is missing from 
+both of those.Arrr....
+and wondering if there's a rap equivalent.
+Owen
+
+http://www.quinion.com/words/qa/qa-shi2.htm
+*Q AND A SECTION*
+
+*SHIVER MY TIMBERS*
+
+/From Tad Spencer/: "Please could you tell me where the phrase /shiver 
+my timbers/ originated?"
+
+This is one of those supposedly nautical expressions that seem to be 
+better known through a couple of appearances in fiction than by any 
+actual sailors' usage.
+
+It's an exclamation that may allude to a ship striking some rock or 
+other obstacle so hard that her timbers shiver, or shake, so implying a 
+calamity has occurred. It is first recorded as being used by Captain 
+Frederick Marryat in /Jacob Faithful/ in 1835: "I won't thrash you Tom. 
+Shiver my timbers if I do".
+
+It has gained a firm place in the language because almost fifty years 
+later Robert Louis Stevenson found it to be just the kind of old-salt 
+saying that fitted the character of Long John Silver in /Treasure 
+Island/: "Cross me, and you'll go where many a good man's gone before 
+you ... some to the yard-arm, shiver my timbers, and some by the board, 
+and all to feed the fishes". Since then, it's mainly been the preserve 
+of second-rate seafaring yarns.
+
+
+

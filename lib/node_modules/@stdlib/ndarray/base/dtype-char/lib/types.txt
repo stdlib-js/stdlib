@@ -1,0 +1,26 @@
+a: uint8c
+b: uint8
+c: complex64 (32-bit)
+d: float64
+e: bfloat16
+f: float32
+g: float128
+h: float16
+i: int32
+j:
+k: int16
+l: int64
+m: int128
+n: int256
+o: generic
+p:
+q:
+r: binary
+s: int8
+t: uint16
+u: uint32
+v: uint64
+w: uint128
+x: bool
+y: uint256
+z: complex128 (64-bit)

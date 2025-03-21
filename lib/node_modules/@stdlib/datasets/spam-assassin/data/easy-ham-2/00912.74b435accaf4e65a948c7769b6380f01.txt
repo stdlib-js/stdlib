@@ -1,0 +1,120 @@
+From fork-admin@xent.com  Mon Jul 29 11:28:59 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3A72444162
+	for <jm@localhost>; Mon, 29 Jul 2002 06:25:31 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 11:25:31 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6QL0Ar25750 for <jm@jmason.org>;
+    Fri, 26 Jul 2002 22:00:16 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id A0A06294099; Fri, 26 Jul 2002 13:58:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from jamesr.best.vwh.net (jamesr.best.vwh.net [192.220.76.165])
+    by xent.com (Postfix) with SMTP id 8ED3E294098 for <fork@xent.com>;
+    Fri, 26 Jul 2002 13:57:15 -0700 (PDT)
+Received: (qmail 78669 invoked by uid 19621); 26 Jul 2002 20:57:08 -0000
+Received: from unknown (HELO avalon) ([64.125.200.18]) (envelope-sender
+    <jamesr@best.com>) by 192.220.76.165 (qmail-ldap-1.03) with SMTP for
+    <fork@xent.com>; 26 Jul 2002 20:57:08 -0000
+Subject: Re: USA USA WE ARE NUMBER ....six.
+From: James Rogers <jamesr@best.com>
+To: fork@spamassassin.taint.org
+In-Reply-To: <BD557489-A0D0-11D6-8F70-0030657C53EA@ianbell.com>
+References: <BD557489-A0D0-11D6-8F70-0030657C53EA@ianbell.com>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Evolution/1.0.2-5mdk
+Message-Id: <1027717759.10462.49.camel@avalon>
+MIME-Version: 1.0
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 26 Jul 2002 14:09:19 -0700
+
+On Fri, 2002-07-26 at 12:49, Ian Andrew Bell wrote:
+> This isn't particularly well-founded logic.  What you're saying is 
+> that "most rich people are smart" and that the latter is causal to 
+> the former.  By implication, then, you would say that "most poor 
+> people are stupid".  This is true, statistically, because most 
+> people are poor and most people are also stupid.  
+
+
+I never said that rich people are smart, just less stupid than most
+other people.  And most people who are poor do engage in more reckless
+and stupid behavior in my experience; the people that are a bit smarter
+don't stay poor for long, so it is a self-selecting population.  Hell, I
+grew up in as abject a poverty as you can find in the US and I remember
+quite well why the people that stayed poor were poor -- it certainly
+wasn't because of The Man.  And my parents were poor because they made
+lots of stupid choices -- I had front row seats to the whole process. 
+Unlike many others, I actually learned from the experience.
+
+And I've known a lot of wealthy people (both in a strict monetary sense
+and general sense), and I can't think of a one that was a fool. People
+who earned their wealth (i.e. 95+% of the wealthy in the US) didn't
+manage to do so, and maintain their wealth, because they were fools.  It
+isn't that these people are that much smarter, they just don't make lots
+of bad decisions and stupid mistakes. Being very smart AND not making
+lots of stupid mistakes is pretty much a surefire recipe for being
+wealthy.
+
+
+> Being smart, for example, has made Stephen Hawking famous and 
+> respected, but he's not particularly rich.  Jennifer Lopez is by 
+> all accounts a complete moron.  In fact, spend a weekend in Beverly 
+> Hills and you will encounter vast numbers of people who are 
+> profoundly stupid driving Rolls Royces and shopping at PRADA.
+
+
+You are using a very narrow definition of "smart".  Smart doesn't make
+you rich, it gives you the *choice* to be rich. Many people (e.g.
+Stephen Hawking) are quite happy merely being comfortable and devote
+their energy elsewhere than being "rich".  But I don't know too many
+really smart people that actually choose to live in poverty.
+
+
+> [...ridiculous caricature of wealthy people elided...]
+> At the granular level, the notion that "most rich people are rich 
+> because they're smart" is so anecdotal and naive that it's not 
+> worth arguing about, so I won't.  Still, a compelling point worth 
+> some clarification.
+
+
+It sounds like you've bought into the absurd Hollywood depictions of
+what wealthy people are like.  Hint: they are exactly like you and me,
+but with a higher net worth.  In the U.S., the fact is that two-thirds
+of the millionaires are blue collar folks who worked very smart and very
+hard, and the vast majority of all the wealthy in the U.S. are
+completely self-made (i.e. first-generation wealthy).  "Old wealth" is
+incredibly rare in the U.S., as it typically comes and goes within three
+generations, and the handful that you do hear about are the unusually
+long-lived exceptions.
+
+It's quite simple to become wealthy in the U.S. if you put some effort
+into it.  However, most people prefer to merely be comfortable and
+expend a lot less energy.  Virtually all the people I know who are
+wealthy are chronic workaholics with above average intelligence and
+exaggerated amounts of drive.  Most people would not consider those
+people's lives "fun", though those people tend to enjoy what they do.
+
+
+-James Rogers
+ jamesr@best.com
+
+
+http://xent.com/mailman/listinfo/fork
+
+

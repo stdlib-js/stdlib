@@ -1,0 +1,43 @@
+{
+	"options": {},
+	"fields": [
+		{
+			"field": "src",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "include",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "libraries",
+			"resolve": false,
+			"relative": false
+		},
+		{
+			"field": "libpath",
+			"resolve": true,
+			"relative": false
+		}
+	],
+	"confs": [
+		{
+			"src": [
+				"./src/main.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [],
+			"libpath": [],
+			"dependencies": [
+				"@stdlib/strided/base/function-object",
+				"@stdlib/strided/base/unary",
+				"@stdlib/strided/dtypes",
+				"@stdlib/strided/napi/addon-arguments"
+			]
+		}
+	]
+}

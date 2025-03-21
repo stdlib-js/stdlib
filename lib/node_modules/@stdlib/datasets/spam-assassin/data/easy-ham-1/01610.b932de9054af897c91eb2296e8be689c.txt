@@ -1,0 +1,165 @@
+From razor-users-admin@lists.sourceforge.net  Thu Oct  3 20:03:16 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 3F98016F03
+	for <jm@localhost>; Thu,  3 Oct 2002 20:03:15 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 03 Oct 2002 20:03:15 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g93Iu4K10389 for <jm-razor@jmason.org>; Thu, 3 Oct 2002 19:56:04 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17xAxC-0005z0-00; Thu,
+    03 Oct 2002 11:44:06 -0700
+Received: from h-66-166-21-186.snvacaid.covad.net ([66.166.21.186]
+    helo=cynosure.darkridge.com) by usw-sf-list1.sourceforge.net with esmtp
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17xAwK-0007bE-00 for
+    <razor-users@lists.sourceforge.net>; Thu, 03 Oct 2002 11:43:13 -0700
+Received: (from jpr5@localhost) by cynosure.darkridge.com (8.11.6/8.11.5)
+    id g93Ih9H02496 for razor-users@lists.sourceforge.net; Thu, 3 Oct 2002
+    11:43:09 -0700
+From: Jordan Ritter <jpr5@darkridge.com>
+To: razor-users@example.sourceforge.net
+Message-Id: <20021003184308.GA2254@darkridge.com>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+    protocol="application/pgp-signature";
+    boundary="5vNYLRcllDrimb99"
+Content-Disposition: inline
+User-Agent: Mutt/1.4i
+X-Copyright: This e-mail is Copyright (c) 2002 by jpr5@darkridge.com
+X-Spamadvice: Pursuant to US Code; Title 47; Chapter 5; Subchapter II; 227
+    any unsolicited commercial email to this address will be subject to a
+    download and archival fee of US$500.  Pursuant to California Business &
+    Professions Code; S17538.45 any email service provider involved in SPAM
+    activities will be liable for statutory damages of US$50 per message, up
+    to US$25,000 per day.  Pursuant to California Penal Code; S502 any
+    unsolicited email sent to this address is in violation of Federal Law and
+    is subject to fine and/or imprisonment.
+Subject: [Razor-users] FW: [EVENT NOTIFICATION] UUnet North American
+    Backbone Problems 2 0021003@06:00 PDT [TIX106448]
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchives/forum.php?forum=razor-users>
+X-Original-Date: Thu, 3 Oct 2002 11:43:08 -0700
+Date: Thu, 3 Oct 2002 11:43:08 -0700
+
+
+--5vNYLRcllDrimb99
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+For everyone's benefit/edification, regardless of Razor usage.
+
+--jordan
+
+-----Original Message-----
+From: InterNAP Backbone Status Reports [mailto:noc@internap.com]
+Sent: Thursday, October 03, 2002 11:30 AM
+To: InterNAP Backbone Status Reports
+Subject: [EVENT NOTIFICATION] UUnet North American Backbone Problems
+20021003@06:00 PDT [TIX106448] (fwd)
+
+
+Hello,
+
+I have just spoken with an UUnet technician at 11:23 PDT and he was unable
+to provide me with any new information regarding the outage.  He did
+confirm that problems had spread beyond the east coast and are now seen
+nationwide through out their network.  They are currently working with
+their hardware vendor to try and isolate the issue.
+
+A large number of Internap's connections to UUnet remain shutdown and
+traffic is being routed over alternate providers.  The scale of this
+outage is causing a large number of peering points with UUnet and other
+providers to be flooded due to the large traffic shifts.
+
+If you have problems reaching specific sites please send an email to
+noc@internap.com containing a traceroute and source/destination IP
+addresses and we will investigate.  If it is possible will will attempt to
+move specific prefixes onto an alternate provider leaving an Internap PNAP
+if that will provide better performance.
+
+Regards,
+Andrew
+
+--------------------------------------------------------------------
+Andrew Dul                                 Network Operations Center
+InterNAP Network Services                   E-Mail: noc@internap.com
+andrew@internap.com                    206.256.9500 - 1.877.THE.INOC
+
+The contents of this email message are confidential and proprietary.
+
+---------- Forwarded message ----------
+Date: Thu, 3 Oct 2002 08:51:26 -0700 (PDT)
+From: Andrew Dul <andrew@internap.com>
+Subject: [EVENT NOTIFICATION] UUnet North American Backbone Problems
+    [TIX106448]
+
+
+UUnet is currently experiencing a large number of problems in their North
+American backbone.  Internap has been aware of these problems since approx
+06:00 PST.  Most of the problems appear to be concentrated on the East
+Coast but we have reports of problems from other geographic regions.
+
+This is being tracked under Internap ticket 106448 and UUnet master ticket
+651751.
+
+UUnet currently does not have any ETA for a fix for this event.
+
+If you have issues reaching a specific site please send an email to
+noc@internap.com with a traceroute showing the path which has a problem.
+
+Internap has shutdown peerings to UUnet is various cities to help reduce
+the number of problems that customers will experience.
+
+Regards,
+Andrew
+
+--------------------------------------------------------------------
+Andrew Dul                                 Network Operations Center
+InterNAP Network Services                   E-Mail: noc@internap.com
+andrew@internap.com                    206.256.9500 - 1.877.THE.INOC
+
+The contents of this email message are confidential and proprietary.
+
+
+--5vNYLRcllDrimb99
+Content-Type: application/pgp-signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.2.0 (GNU/Linux)
+
+iD8DBQE9nI+8pwQdAVEbU7oRAp25AJ9wlEUgdqUFi+7Hy/yYowIAid480gCfX49d
+M4Ox3gKrlqqmZ+hAy0wTFl0=
+=e6sV
+-----END PGP SIGNATURE-----
+
+--5vNYLRcllDrimb99--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

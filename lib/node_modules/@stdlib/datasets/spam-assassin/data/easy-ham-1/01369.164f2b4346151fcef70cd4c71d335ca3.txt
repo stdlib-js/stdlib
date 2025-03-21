@@ -1,0 +1,97 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug 29 11:07:11 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8919E4416A
+	for <jm@localhost>; Thu, 29 Aug 2002 06:05:32 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:05:32 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7SMqbZ13511 for <jm-sa@jmason.org>; Wed, 28 Aug 2002 23:52:37 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17kBdV-0001CS-00; Wed,
+    28 Aug 2002 15:50:05 -0700
+Received: from pimout2-ext.prodigy.net ([207.115.63.101]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17kBcp-0006qL-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 28 Aug 2002 15:49:23 -0700
+Received: from nightrealms.com (adsl-66-126-173-116.dsl.snfc21.pacbell.net
+    [66.126.173.116]) by pimout2-ext.prodigy.net (8.11.0/8.11.0) with SMTP id
+    g7SMnKa349682 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 28 Aug 2002 18:49:21 -0400
+Received: (qmail 3711 invoked by uid 1001); 28 Aug 2002 22:48:23 -0000
+Content-Type: text/plain; charset="iso-8859-1"
+From: Matthew Cline <matt@nightrealms.com>
+Organization: Night Realms
+To: spamassassin-talk@example.sourceforge.net
+Subject: Re: [SAtalk] O.T. Habeus -- Why?
+X-Mailer: KMail [version 1.4]
+References: <829DCAD0-BAC5-11D6-AD60-003065C182B0@radparker.com>
+    <1030567825.3271.TMDA@omega.paradigm-omega.net>
+In-Reply-To: <1030567825.3271.TMDA@omega.paradigm-omega.net>
+X-Habeas-Swe-1: winter into spring
+X-Habeas-Swe-2: brightly anticipated
+X-Habeas-Swe-3: like Habeas SWE (tm)
+X-Habeas-Swe-4: Copyright 2002 Habeas (tm)
+X-Habeas-Swe-5: Sender Warranted Email (SWE) (tm). The sender of this
+X-Habeas-Swe-6: email in exchange for a license for this Habeas
+X-Habeas-Swe-7: warrant mark warrants that this is a Habeas Compliant
+X-Habeas-Swe-8: Message (HCM) and not spam.  Please report use of this
+X-Habeas-Swe-9: mark in spam to <http://www.habeas.com/report/>.
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Message-Id: <200208281548.21264.matt@nightrealms.com>
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 28 Aug 2002 15:48:21 -0700
+Date: Wed, 28 Aug 2002 15:48:21 -0700
+
+On Wednesday 28 August 2002 01:50 pm, Robin Lynn Frank wrote:
+
+> On Wednesday 28 August 2002 01:34 pm, Brian McNett wrote:
+> > Also, that little haiku is a copyrighted work, so not only CAN
+> > Habeas sue, they MUST sue to protect their copyright. And since
+> > it's a trademark as well, that's a double-whammy. Habeas has
+> > some pretty high-powered legal people, who will gladly go to
+> > town on violators.
+
+> > The whole point here is to give them the legal leverage they
+> > need to put spammers out of business, and not only block mail
+> > from them, but allow through the things that really AREN'T spam.
+
+> And if a spammer forges headers???
+
+There must be *some* way of tracking a spammer down, since they are planning 
+on making money from the spam.  What a court would consider evidence of being 
+the spammer is another question.
+
+-- 
+Give a man a match, and he'll be warm for a minute, but set him on
+fire, and he'll be warm for the rest of his life.
+
+ICQ: 132152059 | Advanced SPAM filtering software: http://spamassassin.org
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

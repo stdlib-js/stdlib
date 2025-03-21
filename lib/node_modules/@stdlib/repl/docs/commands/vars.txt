@@ -1,0 +1,31 @@
+
+vars( [options] )
+    Returns a list of variable names in the current workspace.
+
+    Parameters
+    ----------
+    options: Object (optional)
+    	Options.
+
+    options.include: RegExp (optional)
+    	Variable name inclusion filter.
+
+    options.exclude: RegExp (optional)
+    	Variable name exclusion filter.
+
+    options.types: ArrayLikeObject (optional)
+    	Variable type inclusion filter(s).
+
+    options.details: boolean (optional)
+    	Boolean indicating whether to include additional variable details, such
+    	as variable type, contents, etc. Default: false.
+
+    Examples
+    --------
+    > vars()
+    > vars( { 'details': true } )
+
+    See Also
+    --------
+    help, info, varsWorkspace
+

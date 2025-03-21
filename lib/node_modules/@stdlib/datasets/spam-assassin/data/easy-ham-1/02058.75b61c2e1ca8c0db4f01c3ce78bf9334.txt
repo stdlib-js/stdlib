@@ -1,0 +1,44 @@
+From rssfeeds@jmason.org  Mon Sep 30 13:43:37 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id AC0B516F17
+	for <jm@localhost>; Mon, 30 Sep 2002 13:43:36 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 30 Sep 2002 13:43:36 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8U80Hg21172 for
+    <jm@jmason.org>; Mon, 30 Sep 2002 09:00:17 +0100
+Message-Id: <200209300800.g8U80Hg21172@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: aaronsw <rssfeeds@spamassassin.taint.org>
+Subject: Quickly
+Date: Mon, 30 Sep 2002 08:00:16 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.aaronsw.com/weblog/000619
+Date: 2002-09-30T00:33:14-06:00
+
+Anyone have a copy of Gill Sans or Bell Centennial I can borrow? I wonder if 
+I'll ever have $250 to spend on fonts. *Update:* Kevin Marks[1], who is 
+stupendously incredible for far more things than I can list here points out 
+that it's _included with OS X_. I knew Mac OS X included a lot of grat fonts[2]
+, but I don't know how I overlooked this. (Matthew Carter, I'd be happy to pay 
+you the two cents in royalties you probably get for selling $100 worth of 
+fonts.) 
+
+Tufte notes: Terrie Miller[3]. 
+
+First ammendement beer bash. 
+
+iSync Beta[4] (guess they learned a lesson from iCal) is out.
+
+
+
+[1] http://epeus.blogspot.com
+[2] http://www.apple.com/macosx/features/font.html
+[3] http://www.oreillynet.com/~terrie/tufte/
+[4] http://www.apple.com/isync/
+
+

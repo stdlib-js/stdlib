@@ -1,0 +1,4 @@
+[pycodestyle]
+count = 1
+format = default
+max_line_length = 300

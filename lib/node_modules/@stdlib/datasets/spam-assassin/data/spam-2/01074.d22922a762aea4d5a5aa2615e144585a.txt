@@ -1,0 +1,82 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6PLF3i5021548
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Thu, 25 Jul 2002 16:15:04 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6PLF3od021544
+	for cypherpunks-forward@ds.pro-ns.net; Thu, 25 Jul 2002 16:15:03 -0500 (CDT)
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6PLEvi5021463
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks@ds.pro-ns.net>; Thu, 25 Jul 2002 16:14:58 -0500 (CDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: from waste.minder.net (daemon@waste [66.92.53.73])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6PLEuJ10506
+	for <cypherpunks@ds.pro-ns.net>; Thu, 25 Jul 2002 17:14:56 -0400 (EDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: (from cpunks@localhost)
+	by waste.minder.net (8.11.6/8.11.6) id g6PLEt905367
+	for cypherpunks@ds.pro-ns.net; Thu, 25 Jul 2002 17:14:55 -0400
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by waste.minder.net (8.11.6/8.11.6) with ESMTP id g6PLEsR05354
+	for <cpunks@minder.net>; Thu, 25 Jul 2002 17:14:54 -0400
+Received: from nitronet.net ([211.185.251.61])
+	by locust.minder.net (8.11.6/8.11.6) with SMTP id g6PLElJ10494
+	for <cpunks@minder.net>; Thu, 25 Jul 2002 17:14:52 -0400 (EDT)
+	(envelope-from bob0683r11@nitronet.net)
+Received: from unknown (138.222.160.70)
+	by mta85.snfc21.pibi.net with esmtp; Fri, 26 Jul 0102 07:14:45 -1000
+Reply-To: <bob0683r11@nitronet.net>
+Message-ID: <037d73b60a4c$6565d3a3$3dd70ea7@fvgioh>
+From: <bob0683r11@nitronet.net>
+To: <cpunks@minder.net>
+Subject: Married but lonely ?                                                                    7012AzYa1-040jxGt0341bxgg-24
+Date: Thu, 25 Jul 0102 20:06:53 +0100
+MiME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="----=_NextPart_000_00A8_33A71B3A.A8744E52"
+X-Priority: 3 (Normal)
+X-MSMail-Priority: Normal
+X-Mailer: AOL 7.0 for Windows US sub 118
+Importance: Normal
+
+------=_NextPart_000_00A8_33A71B3A.A8744E52
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: base64
+
+
+NzQ5NmZjUUEyLTlsMTAgDQoNCkZvciB0aGUgbWVuOiAgDQoqQ3VycmVudGx5
+LCB0aGVyZSBhcmUgMTQyLDczNiBtYXJyaWVkIHdvbWVuIGluIHRoZSBVLlMu
+IA0Kd2hvIGFyZSBsb25sZXkgYW5kIGxvb2tpbmcgZm9yIHNvbWUgZnVuLiAg
+DQoNCkZvciB0aGUgd29tZW46DQoqQ3VycmVudGx5LCB0aGVyZSBhcmUgMTI2
+LDA4NSBtYXJyaWVkIG1lbiBpbiB0aGUgVS5TLiANCndobyBhcmUgbG9ubGV5
+IGFuZCBsb29raW5nIGZvciBzb21lIGZ1bi4NCg0KKmNoYXQgb25saW5lIHdp
+dGggdGhvdXNhbmRzIG9mIG90aGVycyAyNC83DQoNCipXZSd2ZSBwYWlyZWQg
+dXAgdGVucyBvZiB0aG91c2FuZHMgb2YgbG9uZWx5IG1hcnJpZWQgbWVuIGFu
+ZCB3b21lbiBpbiBsZXNzIHRoYW4gMiB5ZWFycywgd2l0aCBvdmVyIDI3IG1p
+bGxpb24gdmlzaXRvcnMgdG8gdGhlIHNpdGUuLi55b3UgZG9uJ3Qgd2FudCB0
+byBtaXNzIG91dCBvbiB0aGlzLiAgQnV0IGJlZm9yZSB5b3UgZW50ZXIgdGhl
+IHNpdGUsIHdlIGFzayB0aGF0IHlvdSBQTEVBU0UgUkVTUEVDVCBldmVyeW9u
+ZSdzIGZlZWxpbmdzLiAgWW91IG1heSByZWNlaXZlIG1lc3NhZ2VzIGZyb20g
+aW5kaXZpZHVhbHMgb2Ygd2hpY2ggeW91IG1heSBub3QgYmUgaW50ZXJlc3Rl
+ZCBpbiwgcmVnYXJkbGVzcywgcGxlYXNlIGJlIGNvbnNpZGVyYXRlLg0KQ29t
+ZSBjaGVjayBpdCBvdXQ6ICANCg0KaHR0cDovL3d3dy5hZHVsdGRhdGluZ3Nl
+cnZpY2UubmV0L3dlYm1hcnJpZWRhbmRsb29raW5nLyAgDQoNCg0KDQoNCg0K
+DQoNCg0KDQoNCg0KNjY4N3hBbFU2LTc2N0JzSk4zNjU0bGFRczctNTk3emF0
+VzUzNzlYQ2xrOC02bDQy
+------=_NextPart_000_00A8_33A71B3A.A8744E52--
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

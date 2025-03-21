@@ -1,0 +1,145 @@
+From social-admin@linux.ie  Tue Aug  6 11:09:10 2002
+Return-Path: <social-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 01A234412F
+	for <jm@localhost>; Tue,  6 Aug 2002 06:04:33 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:04:33 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g730GKv19595 for
+    <jm+ilug-social@jmason.org>; Sat, 3 Aug 2002 01:16:20 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id BAA04099; Sat, 3 Aug 2002 01:14:42 +0100
+Received: from hibernia.jakma.org (hibernia.clubi.ie [212.17.32.129]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id BAA04072 for <social@linux.ie>;
+    Sat, 3 Aug 2002 01:14:36 +0100
+Received: from fogarty.jakma.org (fogarty.jakma.org [192.168.0.4]) by
+    hibernia.jakma.org (8.11.6/8.11.6) with ESMTP id g730LZw04876;
+    Sat, 3 Aug 2002 01:21:35 +0100
+Received: from localhost (paul@localhost) by fogarty.jakma.org
+    (8.11.6/8.11.6) with ESMTP id g730LWW09530; Sat, 3 Aug 2002 01:21:32 +0100
+X-Authentication-Warning: fogarty.jakma.org: paul owned process doing -bs
+Date: Sat, 3 Aug 2002 01:21:31 +0100 (IST)
+From: Paul Jakma <paul@clubi.ie>
+X-X-Sender: paul@fogarty.jakma.org
+To: kevin lyda <kevin@ie.suberic.net>
+Cc: ilug social <social@linux.ie>
+Subject: Re: [ILUG-Social] Re: [ILUG] Dermot Beirne/Dublin/IE/Exel is out of the office.
+In-Reply-To: <20020803002445.B28892@ie.suberic.net>
+Message-Id: <Pine.LNX.4.44.0208030054220.8981-100000@fogarty.jakma.org>
+X-Nsa: iraq saddam hammas hisballah rabin ayatollah korea vietnam revolt
+    mustard gas
+X-Dumb-Filters: aryan marijuiana cocaine heroin hardcore cum pussy porn
+    teen tit sex lesbian group
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: social-admin@linux.ie
+Errors-To: social-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group social events <social.linux.ie>
+X-Beenthere: social@linux.ie
+
+On Sat, 3 Aug 2002, kevin lyda wrote:
+
+> sites like this make me question my opposition to capital
+> punishment.
+
+:)
+
+> "This month's Q&A: Is it better to prepend or append disclaimer
+> statements?"  augh!  and they admit they're pointless - in reality
+> they're just the legal world's version of mandatory email fashion
+> accessories.
+
+not legal, more management/corporate fashion. cause most of the
+actual /legal/ opinion on the web i've found on the web indicates:
+
+1. they should be used /sparingly/
+
+blanket pre/appending of disclaimers /dilutes/ any legal
+effectiveness they have.
+
+2. they are not binding, and have little meaning other than in 
+certain situations.
+
+they are not binding. 
+
+though there are some situations where for proffessional reasons one
+may wish to indicate the standing of an email. (eg legal advice "this
+is / is not legal advice" type of thing. But again, this means 
+disclaimers need to context-specific. (see 1.)
+
+3. there is precedence that blanket disclaimers, under UK law, have 
+no standing and that rather (common sense this) it is the context of 
+the situation that determines the legal effects of an email.
+
+See the norwich union case. 
+
+Anyway, my top tips to help superiors who've fallen for disclaimers 
+to see sense:
+
+1. server side appends breaks email standards. (unless always done 
+correctly - nearly impossible, cause then server has to understand 
+every possible type of client encoding).
+
+1a. it /does/ break certain types of encryption, that depend on the 
+body being untouched. (eg X.509? kate brought this up ages ago).
+
+1b. iirc, it contravenes MIME to pre/append non mime-typed text. Most 
+mailers will work around this and display the mail 'correctly', some 
+might not though. Eg the message might not be displayed, or the 
+disclaimer might not be displayed.
+
+1c. the correct place for disclaimers is on the client side. this 
+also allows the user to select appropriate disclaimer for appropriate 
+context (or no disclaimer at all).
+
+2. blanket appended disclaimers are of dubious legal effectiveness. 
+(dilution, NU case in UK)
+
+3. generic disclaimer text is of dubious legal effectiveness. indeed
+it will often be completely inappropriate ('this message is
+confidential' on list mail). see 1c. Also, it needs to be written by 
+an actual lawyer.
+
+4. A lot of big multinational corporations do /not/ append 
+disclaimers. (ones i know of: Compaq (deceased), Motorol (iirc), 
+Microsoft (iirc)).
+
+Useful link:
+
+http://www.goldmark.org/jeff/stupid-disclaimers/
+(and see links at bottom of this page).
+
+finally, if you cant get reason to prevail and you have to agree to
+implementing server side disclaimers, you can still resort to:
+
+	"that'll be done just as soon as the company stationary has
+	disclaimers printed on them. oh, and i guess we'll have to play a
+	disclaimer before or after all our telephone calls too? 
+	Wait, that would cause a problem for faxes wouldnt it?"
+
+> kevin
+
+Disclaimer: IANAL, all the above might be wrong, i might even be 
+intentionally misleading you. who knows.. go check it out for 
+yourself.
+
+regards,
+-- 
+Paul Jakma	paul@clubi.ie	paul@jakma.org	Key ID: 64A2FF6A
+	warning: do not ever send email to spam@dishone.st
+Fortune:
+A real patriot is the fellow who gets a parking ticket and rejoices
+that the system works.
+
+
+-- 
+Irish Linux Users' Group Social Events: social@linux.ie
+http://www.linux.ie/mailman/listinfo/social for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

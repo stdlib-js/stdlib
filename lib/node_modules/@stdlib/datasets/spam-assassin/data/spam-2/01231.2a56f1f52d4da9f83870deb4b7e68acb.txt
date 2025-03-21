@@ -1,0 +1,61 @@
+From fork-admin@xent.com  Fri Aug  2 00:52:07 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D416C440F0
+	for <jm@localhost>; Thu,  1 Aug 2002 19:52:06 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 02 Aug 2002 00:52:06 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g71NkR201379 for <jm@jmason.org>;
+    Fri, 2 Aug 2002 00:46:30 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id E477529409A; Thu,  1 Aug 2002 16:44:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from get2free.com (unknown [203.155.241.37]) by xent.com
+    (Postfix) with SMTP id A2A08294098 for <fork@xent.com>; Thu,
+    1 Aug 2002 16:43:23 -0700 (PDT)
+Received: (qmail 3788 invoked from network); 2 Aug 2002 10:24:08 -0000
+Received: from 202.59.254.86.idn.co.th (HELO 192.168.0.0) (202.59.254.86)
+    by 0 with SMTP; 2 Aug 2002 10:24:08 -0000
+From: "gholy_45@hotmail.com" <xx@xx.cc>
+To: fork@spamassassin.taint.org
+Subject: Re: my pic
+X-Mailer: Mach5 Mailer-2.50 PID{86abb2ab-dd52-48ec-af67-dd3e4fdfb18e} RC{}
+Reply-To: 
+MIME-Version: 1.0
+Message-Id: <20020801234323.A2A08294098@xent.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 02 Aug 2002 06:32:16 +0700
+Content-Type: multipart/mixed; boundary="----000000000000000000000"
+
+------000000000000000000000
+Content-Type: text/plain;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+
+Hi Sweetie,
+
+Come see me and my Hot girl friends school at our new web site->
+
+http://picturepost.phreehost.com/mypic/
+
+Come to see FAST before delete this page.
+
+
+------000000000000000000000--
+http://xent.com/mailman/listinfo/fork
+
+

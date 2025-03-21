@@ -1,0 +1,125 @@
+From fork-admin@xent.com  Fri Aug  9 15:21:42 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C4111440D9
+	for <jm@localhost>; Fri,  9 Aug 2002 10:21:09 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:21:09 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g79EHMb05867 for <jm@jmason.org>;
+    Fri, 9 Aug 2002 15:17:25 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id C8F5B2940EE; Fri,  9 Aug 2002 07:08:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hotmail.com (f107.law15.hotmail.com [64.4.23.107]) by
+    xent.com (Postfix) with ESMTP id 4082529409E for <fork@xent.com>;
+    Fri,  9 Aug 2002 07:07:36 -0700 (PDT)
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Fri, 9 Aug 2002 07:08:23 -0700
+Received: from 216.30.74.2 by lw15fd.law15.hotmail.msn.com with HTTP;
+    Fri, 09 Aug 2002 14:08:22 GMT
+X-Originating-Ip: [216.30.74.2]
+From: "Russell Turpin" <deafbox@hotmail.com>
+To: fork@spamassassin.taint.org
+Subject: Re: David Friedman: Mail Me the Money!
+MIME-Version: 1.0
+Content-Type: text/plain; format=flowed
+Message-Id: <F107yzSSylHVilvg8UU00002cc4@hotmail.com>
+X-Originalarrivaltime: 09 Aug 2002 14:08:23.0187 (UTC) FILETIME=[38EF6E30:01C23FAE]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 09 Aug 2002 14:08:22 +0000
+
+http://www.techcentralstation.com/1051/printer.jsp?CID=1051-080802A
+
+>Mail Me the Money!
+>By David Friedman 08/08/2002
+
+David is a very bright fellow. But this time he's
+several years behind. The idea of using epostage
+to stop spam has been discussed quite a bit. The
+problem is how to get over the adoption hump.
+Until most people are taking one form of epostage,
+most people don't have enough incentive to download
+and install something that allows them to pay it.
+Until most people are set up to pay it, any form of
+epostage I require closes my mailbox to unknown
+senders from whom I want to receive mail. And even
+from known senders. Giving someone my email address
+doesn't automatically put them in my white list.
+
+Hashcash tries to lower the adoption barrier by
+removing the need to pay money for epostage.
+Instead, the sender burns processing time on his
+computer, answering a cryptographically hard
+challenge. But even this requires set-up. There is
+inadequate incentive to do so until there is a
+standard mechanism, but no standard mechanism is
+born until a significant fraction of the market
+has taken that first step. It may take government
+action, to institute an effective epostage
+standard!
+
+I think the better idea is to require that people
+off your white list "hand sign" email to you. A
+couple of companies are now trying to implement
+this. An email sender, if not on your white list,
+must respond to a verification email or go to a
+website, by a process that is very simply for a
+human sender, but difficult for a spammer to
+automate. Where epostage requires a standard
+mechanism, a variety of mechanisms for "hand
+signing" would frustrate spammers while making it
+no more difficult for legitimate senders. I'm
+hoping Eudora and some of the other big mail
+clients incorporate this kind of feature. The
+advantage to putting this in the mail client is
+that the required "hand sign" can be personalized:
+
+  "Your attempt to email David Friedman is
+  blocked until you fill in the blank: The
+  Incredible ______ Machine."
+
+It will be a long time before spammers have a
+process that defeats millions of personal
+challenges. On the other hand, I have a hack in
+mind that would work a large percentage of the
+time. But I'm not telling. If spammers did figure
+out such hacks, people would then improve their
+challenges. Yeah, this would lead to another
+arms race, and spam would leak through to the
+unwitting. But this arms race is one that helps
+spammers identify and target the part of the
+population whose challenges are sub-par, which
+is their natural prey. People like David aren't
+in the market for herbal Viagra or back alley
+debt consolidation.
+
+Since David is an anarchist, I'm surprised he
+didn't point out that spam is the result of
+government. The government is ineffective at
+preventing spam, but it DOES prevent individuals
+and ISPs from taking retribution against spammers.
+
+
+
+
+_________________________________________________________________
+MSN Photos is the easiest way to share and print your photos: 
+http://photos.msn.com/support/worldwide.aspx
+
+http://xent.com/mailman/listinfo/fork
+
+

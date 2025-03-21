@@ -1,0 +1,121 @@
+From ilug-admin@linux.ie  Thu Aug 29 14:24:30 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.spamassassin.taint.org (Postfix) with ESMTP id BEBB844156
+	for <zzzz@localhost>; Thu, 29 Aug 2002 09:24:28 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Thu, 29 Aug 2002 14:24:28 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7TDFuZ13645 for
+    <zzzz-ilug@jmason.org>; Thu, 29 Aug 2002 14:15:56 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id OAA24204; Thu, 29 Aug 2002 14:14:01 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from relay.dub-t3-1.nwcgroup.com
+    (postfix@relay.dub-t3-1.nwcgroup.com [195.129.80.16]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id OAA24161 for <ilug@linux.ie>; Thu,
+    29 Aug 2002 14:13:51 +0100
+Received: from YAHOO.COM (host-66-133-60-131.verestar.net [66.133.60.131])
+    by relay.dub-t3-1.nwcgroup.com (Postfix) with SMTP id 2ECB070005 for
+    <ilug@linux.ie>; Thu, 29 Aug 2002 14:13:31 +0100 (IST)
+From: "DR SAMUEL EBOKA" <SAMUELEBOKA11@YAHOO.COM>
+To: <ilug@linux.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="ISO-8859-1"
+Date: Wed, 28 Aug 2002 11:57:10 -1200
+Reply-To: "DR SAMUEL EBOKA" <SAMUELEBOKA11@YAHOO.COM>
+Message-Id: <20020829131331.2ECB070005@relay.dub-t3-1.nwcgroup.com>
+Subject: [ILUG] IMPORTANT.
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+Content-Transfer-Encoding: 8bit
+
+
+>>From the desk of: DR. SAMUEL EBOKA.
+Tel No: Your Intl. Access Code + 873762692484
+Fax No: Your Intl. Access Code + 873762692485
+email : samueleboka2@email.com
+Lagos, Nigeria.
+Dear Sir,
+
+IMPORTANT.
+
+After due deliberation with my colleagues, We have decided to forward to
+you this business proposal. We want a reliable 
+person who could assist us in the transfer the sum of Twenty Million, Five
+Hundred Thousand United States Dollars ( 
+$20,500,000 ). Via International Bank Draft Cashable in any First World
+Countries.
+
+This fund resulted from an over-invoiced bill from contracts awarded by us
+under the budget allocation to our Ministry. This 
+bill has been approved for payment by the other concerned Ministries. The
+contract has since been executed, 
+commissioned and the contractor was paid the actual cost of the contract.
+We are left with the balance US$20.5M as part 
+of the over-invoiced amount which we have deliberated over estimated for
+our own use. But under our protocol division, we 
+as civil servants are forbidden to operate or own foreign accounts. This
+is why we are soliciting your assistance in this 
+manner and regard .
+
+As you may want to know and to make you less curious, I got your address
+from adverts in the business directory . I am the 
+Chief Accountant/Internal Auditor of the Contract Award Committee ( CAC )
+of the Nigerian National Petroleum Corporation 
+( NNPC). This transaction is very much free from all sorts of RISKS and
+TROUBLE from my Government. We the N.N.P.C. 
+Officials involved in this deal have put in many years in service to this
+Ministry. We have been exercising patience for this 
+opportunity for so long and to most of us this is a life time opportunity
+we cannot afford to miss.
+
+We have agreed to COMPENSATE you duly if agreement is reached by both of
+us and I and one of my colleagues 
+involved in this deal will come to your country to arrange for our share,
+upon the confirmation from you that the Certified 
+International Bank Draft has been Approved and Raised in your favor.
+
+Consequent upon your acceptance of this proposal, kindly confirm your
+interest by Telephone to me, through my Direct Tel 
+No: +873-762-692484. (Please Call Direct, DO NOT add my country(234) and
+City(1) codes ) . Your indication by revert 
+Telephone to me of your sincere and serious interest will enable me fax
+you or brief you of  the PROCEDURES FOR THIS 
+TRANSACTION. If my line is busy, please keep trying you will surely get
+through.
+NOTE: In the event of your inability to handle this transaction please
+inform us so that we can look for another reliable 
+person who can assist in this respect. 
+
+It might surprise you why we choose you and trusted you for this
+transaction. Yes, we believe that good friends can be 
+discovered and business like this can not be realized without mutual
+trust. This is why we have decided to trust you for this 
+transaction. Be further informed that everyone’s interest and
+security had been considered before you were contacted, so be rest assured
+and feel free to go into this transaction with 
+us.
+But let Honesty and Trust be our watchword throughout this transaction and
+your prompt reply will be highly appreciated. 
+Thank you, and God bless.
+
+Best Regards,
+
+DR. SAMUEL  EBOKA.
+
+NOTE:- THAT YOU CAN USE THIS ALTERNATIVE EMAIL ADDRESSES:
+samueleboka2@email.com , sameboka@uymail.com
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

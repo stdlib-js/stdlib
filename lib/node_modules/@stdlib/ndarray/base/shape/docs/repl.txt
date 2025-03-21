@@ -1,0 +1,30 @@
+
+{{alias}}( x, copy )
+    Returns the shape of a provided ndarray.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray.
+
+    copy: boolean
+        Boolean indicating whether to explicitly copy the value assigned to the
+        input ndarray's `shape` property. When `copy` is `false`, changes to the
+        returned shape array may mutate the input ndarray shape. If there is a
+        chance that the returned shape will be mutated (either directly or by
+        downstream consumers), set `copy` to `true` to prevent unintended side
+        effects.
+
+    Returns
+    -------
+    out: Array<integer>
+        Shape.
+
+    Examples
+    --------
+    > var out = {{alias}}( {{alias:@stdlib/ndarray/zeros}}( [ 3, 3, 3 ] ), false )
+    [ 3, 3, 3 ]
+
+    See Also
+    --------
+

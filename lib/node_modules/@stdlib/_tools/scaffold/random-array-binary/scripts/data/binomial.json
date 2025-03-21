@@ -1,0 +1,45 @@
+{
+  "alias": "binomial",
+  "pkg": "stdlib/random/array/binomial",
+  "base_pkg": "stdlib/random/base/binomial",
+
+  "param_1": "n",
+  "param_1_value": "17",
+  "param_1_desc": "number of trials",
+  "param_1_dtype": "number",
+  "param_1_jsdoc_dtype": "PositiveInteger",
+  "param_1_throws_desc": "must be a positive integer",
+
+  "param_2": "p",
+  "param_2_value": "0.5",
+  "param_2_desc": "success probability",
+  "param_2_dtype": "number",
+  "param_2_jsdoc_dtype": "Probability",
+  "param_2_throws_desc": "must be a probability (i.e., a number on the interval [0,1])",
+
+  "output_ts_dtype": "RealAndGenericDataType",
+  "output_ts_typed_array": "RealTypedArray",
+  "output_dtype_kind": "real_and_generic",
+
+  "default_dtype": "float64",
+  "default_dtype_kind": "real",
+  "default_typed_array": "Float64Array",
+
+  "from_desc": "a binomial distribution",
+  "readme_from_desc": "a [binomial][@stdlib/random/base/binomial] distribution",
+
+  "readme_heading": "Binomial Random Numbers",
+  "readme_dtype_kind_desc": "real-valued data type",
+  "readme_dtype_kind_pkg": "stdlib/array/typed-real-dtypes",
+
+  "repl_text_main_desc": "Returns an array containing pseudorandom numbers drawn from a binomial distribution.",
+  "repl_text_assign_desc": "Fills an array with pseudorandom numbers drawn from a binomial distribution.",
+  "repl_text_factory_desc": "Returns a function for creating arrays containing pseudorandom numbers drawn from a binomial distribution.",
+
+  "repl_text_param_1_desc": "Number of trials.",
+  "repl_text_param_2_desc": "Success probability.",
+
+  "repl_text_output_typed_arrays": "TypedArray",
+
+  "keywords": "binomial,coin,flips,trials,discrete"
+}

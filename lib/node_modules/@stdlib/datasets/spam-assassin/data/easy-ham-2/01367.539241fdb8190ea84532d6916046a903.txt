@@ -1,0 +1,81 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Fri Aug  9 15:44:04 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id DBDDB440E2
+	for <jm@localhost>; Fri,  9 Aug 2002 10:35:24 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:35:24 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79EPIb06880 for
+    <jm-sa@jmason.org>; Fri, 9 Aug 2002 15:25:18 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id DAA02980 for
+    <jm-sa@jmason.org>; Fri, 9 Aug 2002 03:28:53 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17czTX-0003bH-00; Thu,
+    08 Aug 2002 19:26:03 -0700
+Received: from mail.cs.ait.ac.th ([192.41.170.16]) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17czSl-0002GF-00 for
+    <spamassassin-talk@lists.sourceforge.net>; Thu, 08 Aug 2002 19:25:16 -0700
+Received: from banyan.cs.ait.ac.th (on@banyan.cs.ait.ac.th [192.41.170.5])
+    by mail.cs.ait.ac.th (8.12.3/8.9.3) with ESMTP id g7939XTB031771;
+    Fri, 9 Aug 2002 10:09:34 +0700 (ICT)
+Received: (from on@localhost) by banyan.cs.ait.ac.th (8.8.5/8.8.5) id
+    JAA22438; Fri, 9 Aug 2002 09:25:25 +0700 (ICT)
+Message-Id: <200208090225.JAA22438@banyan.cs.ait.ac.th>
+X-Authentication-Warning: banyan.cs.ait.ac.th: on set sender to
+    on@banyan.cs.ait.ac.th using -f
+From: Olivier Nicole <on@cs.ait.ac.th>
+To: kelson@speed.net
+Cc: spamassassin-talk@example.sourceforge.net,
+	spamassassin-talk@lists.sourceforge.net
+In-Reply-To: <5.1.1.6.0.20020808084822.01d767d8@127.0.0.1> (message from
+    Kelson Vibber on Thu, 08 Aug 2002 09:25:41 -0700)
+Subject: Re: [SAtalk] Re: SA SQL Prefs and MIMEDefang
+References: <5.1.1.6.0.20020808084822.01d767d8@127.0.0.1>
+X-Virus-Scanned: by amavisd-milter (http://amavis.org/)
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Fri, 9 Aug 2002 09:25:25 +0700 (ICT)
+Date: Fri, 9 Aug 2002 09:25:25 +0700 (ICT)
+
+> The main reason I'd like to stick with a milter-based approach is the 
+> ability to reject messages at the SMTP stage.  This way the recipient isn't 
+> bothered and the sender knows immediately that the message failed.  My 
+> understanding is that once it gets to Procmail, as far as the sender is 
+> concerned, it got through.  And since all our users connect via POP, moving 
+> things to another folder is not an option, so the only way to notify the 
+> recipient is to allow the message through or replace it with a summary.
+
+I think the summary thingy, with a mail based retreive facility, is a
+good alternative. You avoid false positive, only one email to list all
+the spam you received in one day, and you have full per user pref.
+
+Olivier
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

@@ -1,0 +1,66 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug 29 11:07:00 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8EE4A44156
+	for <jm@localhost>; Thu, 29 Aug 2002 06:05:25 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:05:25 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7SMbHZ13057 for <jm-sa@jmason.org>; Wed, 28 Aug 2002 23:37:18 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17kBPx-00075K-00; Wed,
+    28 Aug 2002 15:36:05 -0700
+Received: from two.fidnet.com ([216.229.64.72] helo=mail.fidnet.com) by
+    usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17kBPc-0002ov-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 28 Aug 2002 15:35:45 -0700
+Received: (qmail 31757 invoked from network); 28 Aug 2002 22:35:43 -0000
+Received: from cable-modem-mo-145-11.rolla.fidnet.com (HELO gabriels)
+    (64.251.145.11) by two.fidnet.com with SMTP; 28 Aug 2002 22:35:43 -0000
+Content-Type: text/plain; charset="us-ascii"
+From: Jon Gabrielson <jon.g@directfreight.com>
+To: spamassassin-talk@example.sourceforge.net
+User-Agent: KMail/1.4.3
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Message-Id: <200208281735.33851.jon.g@directfreight.com>
+Subject: [SAtalk] moving SPAM: results to bottom of message.
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 28 Aug 2002 17:35:33 -0500
+Date: Wed, 28 Aug 2002 17:35:33 -0500
+
+Is there a way to tell spamassassin to put the results at the bottom
+of the message instead?  If not, what is the easiest way to do this.
+I found a report_header, but no equivalent report_bottom.
+
+Thanks,
+
+Jon.
+jon.g@directfreight.com
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

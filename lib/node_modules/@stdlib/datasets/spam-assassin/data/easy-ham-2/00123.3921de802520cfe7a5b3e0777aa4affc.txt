@@ -1,0 +1,90 @@
+From ilug-admin@linux.ie  Mon Jul 29 11:27:57 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 99A0D4414D
+	for <jm@localhost>; Mon, 29 Jul 2002 06:25:09 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 11:25:09 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6RGDIi07228 for
+    <jm-ilug@jmason.org>; Sat, 27 Jul 2002 17:13:18 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id RAA21197; Sat, 27 Jul 2002 17:11:22 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail05.svc.cra.dublin.eircom.net
+    (mail05.svc.cra.dublin.eircom.net [159.134.118.21]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id RAA21160 for <ilug@linux.ie>; Sat,
+    27 Jul 2002 17:11:14 +0100
+Received: (qmail 72507 messnum 660833 invoked from
+    network[159.134.255.227/unknown]); 27 Jul 2002 16:10:43 -0000
+Received: from unknown (HELO pc) (159.134.255.227) by
+    mail05.svc.cra.dublin.eircom.net (qp 72507) with SMTP; 27 Jul 2002
+    16:10:43 -0000
+From: "John Moran" <arronax@eircom.net>
+To: "ILUG" <ilug@linux.ie>
+Subject: RE: [ILUG] Optimizing for Pentium Pt.2
+Date: Sat, 27 Jul 2002 17:10:39 +0100
+Message-Id: <000001c23588$26d71750$e3ff869f@pc>
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.3416
+Importance: Normal
+In-Reply-To: <20020727015716.A6561@ie.suberic.net>
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+gcc, glibc and binutils, which the lfs site says not to optimise,
+already determines what system you're compiling on, and optimises itself
+to that. That's my understanding of how it works anyway.
+
+John
+
+Subject: Re: [ILUG] Optimizing for Pentium Pt.2
+
+
+On Fri, Jul 26, 2002 at 11:24:30PM +0100, John Gay wrote:
+> A while ago I asked what other packages I should optomize for Pentium.
+
+> One
+> person answered GlibC. This got me thinking about GCC itself, so I
+asked on
+> another list and got a few answers, most were "don't even think about
+it" but
+> a few suggested GCC and one pointed me to Linux From Scratch.
+
+why?
+
+or more specifically, what do you mean?  on one hand you can optimise
+how gcc is compiled.  all that will do is make it generate the exact
+same code just a smidge faster.  and since gcc is such a memory pig,
+you'd do better to buy more ram to up your fs cache hits and to keep
+gcc's heap out of swap.
+
+on the other side you can look into patches to gcc that affect it's code
+generation.  um, ok, but keep in mind that compiler errors suck. i can't
+express that enough.  compilers should just work.  perfectly. always.
+doing anything that might affect that is, in my opinion, insane. they're
+hard to trace and you'd better have a deep knowledge of what's going on
+to either report bugs to the patch developers or to fix it yourself.
+plus my understanding is that gcc would need major changes to get large
+speed boosts on x86 chips.
+
+kevin
+
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

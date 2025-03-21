@@ -1,0 +1,26 @@
+
+{{alias}}( dtype, policy )
+    Resolves the output ndarray data type for a unary function.
+
+    Parameters
+    ----------
+    dtype: string
+        Input ndarray data type.
+
+    policy: string
+        Output ndarray data type policy. If `policy` is a data type, the
+        function returns the `policy` value.
+
+    Returns
+    -------
+    out: string
+        Output ndarray data type.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'float64', 'real' )
+    'float64'
+
+    See Also
+    --------
+

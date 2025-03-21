@@ -1,0 +1,12 @@
+
+lastFragment()
+    Jumps to the last fragment of the current slide.
+
+    Examples
+    --------
+    > lastFragment();
+
+    See Also
+    --------
+    firstFragment, next, prev
+

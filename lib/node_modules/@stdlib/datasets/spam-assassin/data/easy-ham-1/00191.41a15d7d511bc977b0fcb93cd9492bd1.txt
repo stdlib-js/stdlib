@@ -1,0 +1,64 @@
+From fork-admin@xent.com  Wed Aug 28 10:50:16 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3678844155
+	for <zzzz@localhost>; Wed, 28 Aug 2002 05:50:00 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 28 Aug 2002 10:50:00 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7RKrhZ25471 for <zzzz@spamassassin.taint.org>;
+    Tue, 27 Aug 2002 21:53:44 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 6D4392940D4; Tue, 27 Aug 2002 13:51:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hotmail.com (dav46.law15.hotmail.com [64.4.22.18]) by
+    xent.com (Postfix) with ESMTP id D4FAA29409A for <fork@xent.com>;
+    Tue, 27 Aug 2002 13:50:41 -0700 (PDT)
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Tue, 27 Aug 2002 13:52:43 -0700
+X-Originating-Ip: [63.224.51.161]
+From: "Mr. FoRK" <fork_list@hotmail.com>
+To: "FoRK (E-mail)" <fork@spamassassin.taint.org>
+References: <Pine.LNX.4.33.0208271607200.4236-100000@hydrogen.leitl.org>
+Subject: Re: Startups, Bubbles, and Unemployment (fwd)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Message-Id: <DAV46ixjnzi95HfqR7700007013@hotmail.com>
+X-Originalarrivaltime: 27 Aug 2002 20:52:43.0733 (UTC) FILETIME=[B0C87850:01C24E0B]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 27 Aug 2002 13:50:31 -0700
+
+> Ultimately, there was a big
+> disagreement about how to sell the product (sales guys wanted to sell
+> the thing for a gazillion dollars to megaclients, but we thought it
+> would make more sense to get more people using it so we could get more
+> feedback from many different places).  The bottom line was that the
+> route we wound up going (megaclients for megabucks) had a megalong
+> sales cycle.  The sales force staffed up and tried to sell the
+> earliest releases of the software -- even succeeding in a few
+> significant cases -- but couldn't get enough to cover their own
+> expenses, much less the actual development of the product.
+
+Now where have I seen that before.... oh yeah... its happening to me right
+now...
+
+
+

@@ -1,0 +1,61 @@
+
+{{alias}}( x, dim[, options] )
+    Returns an iterator which iterates over each view along a specified
+    dimension.
+
+    If an environment supports Symbol.iterator, the returned iterator is
+    iterable.
+
+    If an environment supports Symbol.iterator, the function explicitly does not
+    invoke an ndarray's `@@iterator` method, regardless of whether this method
+    is defined.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray for which to create the iterator.
+
+    dim: integer
+        Dimension index. If less than zero, the index is resolved relative to
+        the last dimension, with the last dimension corresponding to the value
+        `-1`.
+
+    options: Object (optional)
+        Options.
+
+    options.readonly: boolean (optional)
+        Boolean indicating whether returned ndarray views should be read-only.
+        If the input ndarray is read-only, setting this option to `false` raises
+        an exception. Default: true.
+
+    options.keepdim: boolean (optional)
+        Boolean indicating whether returned views should include the selected
+        dimension as a singleton dimension. Including the selected dimension as
+        a singleton dimension can be useful when wanting to ensure that returned
+        views remain broadcast compatible with the input ndarray. Default:
+        false.
+
+    Returns
+    -------
+    iterator: Object
+        Iterator.
+
+    iterator.next(): Function
+        Returns an iterator protocol-compliant object containing the next
+        iterated value (if one exists) and a boolean flag indicating whether the
+        iterator is finished.
+
+    iterator.return( [value] ): Function
+        Finishes an iterator and returns a provided value.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ [ 1, 2 ], [ 3, 4 ] ] ] );
+    > var it = {{alias}}( x, 0 );
+    > var v = it.next().value;
+    > {{alias:@stdlib/ndarray/to-array}}( v )
+    [ [ 1, 2 ], [ 3, 4 ] ]
+
+    See Also
+    --------
+

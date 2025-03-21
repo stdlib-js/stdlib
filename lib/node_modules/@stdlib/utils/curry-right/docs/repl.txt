@@ -1,0 +1,53 @@
+
+{{alias}}( fcn[, arity][, thisArg] )
+    Transforms a function into a sequence of functions each accepting a single
+    argument.
+
+    Until return value resolution, each invocation returns a new partially
+    applied curry function.
+
+    This function applies arguments starting from the right.
+
+    Parameters
+    ----------
+    fcn: Function
+        Function to curry.
+
+    arity: integer (optional)
+        Number of parameters. Default: `fcn.length`.
+
+    thisArg: any (optional)
+        Evaluation context.
+
+    Returns
+    -------
+    out: Function
+        Curry function.
+
+    Examples
+    --------
+    > function add( x, y ) { return x + y; };
+    > var f = {{alias}}( add );
+    > var sum = f( 2 )( 3 )
+    5
+
+    // Supply arity:
+    > function add() { return arguments[ 0 ] + arguments[ 1 ]; };
+    > f = {{alias}}( add, 2 );
+    > sum = f( 2 )( 3 )
+    5
+
+    // Provide function context:
+    > var obj = {
+    ...     'name': 'Ada',
+    ...     'greet': function greet( word1, word2 ) {
+    ...         return word1 + ' ' + word2 + ', ' + this.name + '!'
+    ...     }
+    ... };
+    > f = {{alias}}( obj.greet, obj );
+    > var str = f( 'there' )( 'Hello' )
+    'Hello there, Ada!'
+
+    See Also
+    --------
+

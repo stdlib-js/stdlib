@@ -1,0 +1,26 @@
+From rssfeeds@jmason.org  Fri Oct  4 11:02:17 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 56EB716F19
+	for <jm@localhost>; Fri,  4 Oct 2002 11:01:54 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 04 Oct 2002 11:01:54 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9480hK08838 for
+    <jm@jmason.org>; Fri, 4 Oct 2002 09:00:43 +0100
+Message-Id: <200210040800.g9480hK08838@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: guardian <rssfeeds@spamassassin.taint.org>
+Subject: Blair apologises for exam fiasco
+Date: Fri, 04 Oct 2002 08:00:43 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.newsisfree.com/click/-5,8535470,215/
+Date: 2002-10-04T02:38:55+01:00
+
+*Education:* 'Small' A-level problem to be dealt with but no change on student 
+grants or charitable status of public schools.
+
+

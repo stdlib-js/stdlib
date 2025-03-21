@@ -1,0 +1,60 @@
+From fork-admin@xent.com  Tue Aug 20 11:53:55 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6506143C3D
+	for <jm@localhost>; Tue, 20 Aug 2002 06:52:22 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 11:52:22 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7K6uHZ28232 for <jm@jmason.org>;
+    Tue, 20 Aug 2002 07:56:17 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 626F42940AA; Mon, 19 Aug 2002 23:54:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from venus.phpwebhosting.com (venus.phpwebhosting.com
+    [64.29.16.27]) by xent.com (Postfix) with SMTP id DEDCB29409D for
+    <fork@xent.com>; Mon, 19 Aug 2002 23:53:58 -0700 (PDT)
+Received: (qmail 8213 invoked by uid 508); 20 Aug 2002 06:55:31 -0000
+Received: from unknown (HELO hydrogen.leitl.org) (217.80.40.15) by
+    venus.phpwebhosting.com with SMTP; 20 Aug 2002 06:55:31 -0000
+Received: from localhost (eugen@localhost) by hydrogen.leitl.org
+    (8.11.6/8.11.6) with ESMTP id g7K6tHO08466; Tue, 20 Aug 2002 08:55:18
+    +0200
+X-Authentication-Warning: hydrogen.leitl.org: eugen owned process doing -bs
+From: Eugen Leitl <eugen@leitl.org>
+To: "Joseph S. Barrera III" <joe@barrera.org>
+Cc: Rob Shavell <rob@mobiusvc.com>, <fork@spamassassin.taint.org>
+Subject: Re: sprint delivers the next big thing??
+In-Reply-To: <3D60DEC6.6020306@barrera.org>
+Message-Id: <Pine.LNX.4.33.0208200853310.8071-100000@hydrogen.leitl.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 20 Aug 2002 08:55:17 +0200 (CEST)
+
+On Mon, 19 Aug 2002, Joseph S. Barrera III wrote:
+
+> In fact, with a 1GB microdrive in my camera, I often just keep
+> old pictures around, and I can show people pictures using the
+> camera's display. Which is bound to be better than the cell phone's.
+
+A detachable clip-on eyepiece display could be arbitrarily high-res. Now
+that we see first OLED prototypes (cheap, can be printed on curved
+surfaces resulting in cheaper optics) it can't be more than 5 years off.
+
+
+http://xent.com/mailman/listinfo/fork
+

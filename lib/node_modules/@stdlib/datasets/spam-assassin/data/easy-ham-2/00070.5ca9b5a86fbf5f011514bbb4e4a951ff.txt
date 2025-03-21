@@ -1,0 +1,78 @@
+From ilug-admin@linux.ie  Fri Jul 19 18:33:29 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B8970440C9
+	for <jm@localhost>; Fri, 19 Jul 2002 13:33:28 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 18:33:28 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JHVfJ19051 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 18:31:41 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id SAA22739; Fri, 19 Jul 2002 18:10:53 +0100
+Received: from marklar.elive.net (smtp.elive.ie [212.120.138.41]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id SAA22715 for <ilug@linux.ie>;
+    Fri, 19 Jul 2002 18:10:48 +0100
+Received: from gonzo.waider.ie
+    (IDENT:8rQlPXWuJKuu3dmQqyedgkXDs573N75B@1Cust219.tnt1.dub2.ie.uudial.net
+    [213.116.40.219]) by marklar.elive.net (8.11.6/8.11.6) with ESMTP id
+    g6JGkuj09232 for <ilug@linux.ie>; Fri, 19 Jul 2002 17:47:01 +0100
+Received: from klortho.waider.ie
+    (IDENT:fqZjcglU1vS7HxIilFH5W/XbUYkOuyja@klortho.waider.ie [10.0.0.100]) by
+    gonzo.waider.ie (8.11.6/8.11.6) with ESMTP id g6JHAat28586 for
+    <ilug@linux.ie>; Fri, 19 Jul 2002 18:10:36 +0100
+Received: (from waider@localhost) by klortho.waider.ie (8.11.6/8.11.6) id
+    g6JHAe711032; Fri, 19 Jul 2002 18:10:40 +0100
+X-Authentication-Warning: klortho.waider.ie: waider set sender to
+    waider@waider.ie using -f
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Message-Id: <15672.18448.462171.646227@klortho.waider.ie>
+Date: Fri, 19 Jul 2002 18:10:40 +0100
+From: Ronan Waide <waider@waider.ie>
+To: ilug@linux.ie
+Subject: Re: [ILUG] How to copy some files
+In-Reply-To: <20020719162840.GA3325@bagend.makalumedia.com>
+References: <200207191515.g6JFFnX02981@linux.local>
+    <00a701c22f3e$51120b10$3864a8c0@sabeo.ie>
+    <20020719162840.GA3325@bagend.makalumedia.com>
+X-Mailer: VM 7.07 under Emacs 21.2.1
+Organization: poor at best.
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On July 19, niall@linux.ie said:
+> 
+> There are lots of benefits to using hard links, for all sorts of reasons. In
+
+"...but there is insufficient room in the margin of this email to
+ describe them..." :)
+
+> this case, they are being used to provide two quite different namespaces
+> for the same set of files.
+
+Sure, but soft links would do the same. To be honest, I'm trying to
+think of a useful use of hard links right now, and I'm a little
+stumped. There's gotta be some benefit that I'm missing that's
+immediately obvious to everyone.
+
+Cheers,
+Waider.
+-- 
+waider@waider.ie / Yes, it /is/ very personal of me.
+
+merde says, "in other news, our mini-blimp blew away."
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

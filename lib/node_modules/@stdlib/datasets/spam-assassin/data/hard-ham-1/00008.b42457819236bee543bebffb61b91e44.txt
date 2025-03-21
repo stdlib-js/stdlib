@@ -1,0 +1,540 @@
+Return-Path: <michaelr@lindows.com>
+Received: from sunu422.rz.ruhr-uni-bochum.de (sunu422.rz.ruhr-uni-bochum.de [134.147.64.14])
+	by yoda.bph.ruhr-uni-bochum.de (8.8.8/8.8.8) with SMTP id BAA03464
+	for <Xxx@bph.ruhr-uni-bochum.de>; Thu, 27 Jun 2002 01:46:57 +0200
+Received: (qmail 14875 invoked by alias); 26 Jun 2002 23:46:52 -0000
+Received: (qmail 14868 invoked by uid 82); 26 Jun 2002 23:46:52 -0000
+Received: from michaelr@lindows.com by mailhost with qmail-scanner-1.00 (uvscan: v4.1.40/v4209. . Clean. Processed in 0.436395 secs); 26 Jun 2002 23:46:52 -0000
+Received: from sunu450.rz.ruhr-uni-bochum.de (134.147.32.69)
+  by mi-1.rz.ruhr-uni-bochum.de with SMTP; 26 Jun 2002 23:46:51 -0000
+Received: (qmail 20351 invoked by alias); 26 Jun 2002 23:46:51 -0000
+Received: (qmail 20342 invoked from network); 26 Jun 2002 23:46:50 -0000
+Received: from mx08.web.de (217.72.192.146)
+  by sunu450.rz.ruhr-uni-bochum.de with SMTP; 26 Jun 2002 23:46:50 -0000
+Received: from [130.94.123.208] (helo=lists.lindows.com)
+	by mx08.web.de with esmtp (WEB.DE(Exim) 4.70 #5)
+	id 17NMUf-00051u-00
+	for Xxxxxxxxx.Yyyyyyy@web.de; Thu, 27 Jun 2002 01:46:38 +0200
+Received: (qmail 21176 invoked by uid 99); 26 Jun 2002 23:45:38 -0000
+To: Xxxxxxxxx.Yyyyyyy@web.de
+Date: Wed, 26 Jun 2002 16:34:04 -0800
+From: "Michael Robertson" <michaelr@lindows.com>
+Subject: Lindows.com: Michael's Minute: Lindows.com Report Card
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_LINDOWS_1890362a5620f32f969ae58b8fe2ef84"
+Message-Id: <E17NMUf-00051u-00@mx08.web.de>
+X-Mozilla-Status2: 00000000
+
+------=_LINDOWS_1890362a5620f32f969ae58b8fe2ef84
+Content-Type: text/plain;
+	charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+If this message is not displaying properly, click
+<http://lindows.com/mm> here to launch it in your browser.
+
+<http://lindows.com/> 
+
+Michael's Minute: 
+Lindows.com Report Card 
+
+As summer arrives, many school children are coming home with their
+report cards.  I thought this would be a good time to see what kind of
+grades Lindows.com received for their first 9 months in operation..
+
+<http://lindows.com/timeline> 
+To view the Timeline of Lindows.com's first 9 months in business, click
+here <http://lindows.com/timeline> . 
+
+Operating System:  
+
+As of last week, consumers can experience LindowsOS in one of two ways.
+One way is to buy a computer running LindowsOS from Walmart.com
+<http://www.lindows.com/walmart> , for as little as $299. This is a
+significant milestone for us, as we've partnered with our first builder
+(Microtel) and retailer (Walmart). These computers work great out of the
+box and are ideal for general purpose computing tasks. 
+
+For those who already have a computer and also wish to try LindowsOS, we
+offer the Insider program <http://www.lindows.com/signup> . This gives
+people wanting early access to LindowsOS a chance to try out LindowsOS
+as it develops. Currently, Insiders report installation success about
+80%  of the time on their PCs. Therefore we have some room to grow,
+consequently, this product is not yet for everyone. 
+
+Some may wonder how we can sell a computer at Walmart
+<http://www.lindows.com/walmart> when the program available directly
+from Lindows.com is billed as not completely ready. The difference is
+the Walmart <http://www.lindows.com/walmart>  computers are certified,
+ensuring that all components  work elegantly with LindowsOS. That's much
+different than offering a software program that will work on any
+computer in the world - that's very difficult. It's the difference
+between making a single pair of shoes for a known foot size versus
+opening a shoe store with every style of shoe for every size foot. The
+first one is easy, the second one is a much bigger job.
+
+While the installer is fantastically easy and fast (the entire OS
+installs in under 5 minutes), we've got a lot more work to do to support
+a wider range of hardware, printers and other devices. Grade:  B
+  _____  
+
+Software: 
+
+Our goal to give people choice means giving them choice not just on
+their operating system, but access to all the programs they'll want to
+add to their computer to really make it work for them in their school,
+home or business.
+
+Click-N-Run <http://www.lindows.com/clicknrun>  is the easiest way to
+load software onto a computer. For the first time a Linux based system
+has leapt ahead of Microsoft's operating systems in ease of use. With
+1,000 plus programs already in the Click-N-Run Warehouse
+<http://www.lindows.com/warehouse> , users can find quality software
+titles for just about any computing task and, with a single mouse-click
+download, install and run these programs. All these titles are included
+in the $99. This is a fantastic consumer experience and price point.
+Look for a lot more great software in the Warehouse in the future.
+Grade: A-
+  _____  
+
+Microsoft Windows Compatibility:
+
+We live in a Microsoft world, so there needs to be a bridge from the
+legacy world to the broadband LindowsOS world. This means we need to
+support some bridge programs, file types and network devices to help
+people interact with the legacy Microsoft world. LindowsOS computers
+come with software to view, print and copy popular Microsoft
+applications like: MS Word files, MS PowerPoint files and MS Excel
+documents. There's great Linux based alternatives and we'll guide people
+to those alternatives (they're better than most people realize). To edit
+Microsoft files, we'd highly recommend one of the office suites in our
+Warehouse such as OpenOffice
+<http://www.lindows.com/lindows_products_details.php?id=8966> . 
+
+Many of these programs are of very high-quality and a great value since
+they're included in the Warehouse <http://www.lindows.com/warehouse> .
+Sometimes there are no viable alternatives for those programs, so we're
+investing necessary resources to support some Microsoft Windows based
+programs. Stay tuned for more developments in this area. Our printer
+support is ok, but there's lots of room for more drivers. Connecting to
+MS Windows based file servers is still a challenge. We need to get
+better in the above areas.  Grade: B 
+  _____  
+
+Communication:
+
+We've tried to be diligent in communicating where our company is going
+which is why there's typically a weekly Michael's Minute
+<http://www.lindows.com/mm> . While our overall goal has not deviated -
+Bringing Choice To Your Computer - our implementation has become more
+focused as we listened to what our Insiders and potential customers have
+told us. (Keep sending me your comments.) We have been de-emphasizing
+running Microsoft Windows programs because many of you told us you
+detest spending hundreds of dollars on individual software programs,
+forced upgrades and activation codes. It's not just the operating
+system, but costly Microsoft programs you're wanting to avoid. 
+
+Consequently, we've been emphasizing Click-N-Run because it will change
+the way you think about software. Having a neatly categorized library
+<http://www.lindows.com/warehouse>  of 1,000+ software titles all for a
+flat annual fee at your digital fingertips is an entirely new way to
+think about paying for software. It's immediate, elegant and affordable.
+
+There are lots of mischaracterizations about Lindows.com swirling around
+- which happens when you have a small organization which can't address
+every question or publication. We'll do a better job of addressing these
+in the future. For now, I wrote up answers to the Top Myths about
+Lindows.com. Check them out by visiting: www.lindows.com/myths  Grade:
+B+
+  _____  
+
+Overall: B+
+
+Michael Robertson
+
+Please visit support.lindows.com <http://support.lindows.com/>  to
+answer questions you may have about LindowsOS or Lindows.com.
+
+Bringing Choice to Your Computer! 
+ 
+LindowsOS is presently available on LindowsOS Certified Computers being
+offered from Lindows.com  <http://www.lindows.com/builder> Builder
+partners.  The General Release of LindowsOS (available now for download
+and preview to Lindows.com  <http://lindows.com/signup> Insider
+partners) will be made available later this year for those wishing to
+install and run LindowsOS on their existing computer hardware.  The
+General Release version will support a wider range of computer hardware
+and includes unique features such as a "Friendly-Install" alongside an
+existing MicrosoftR Windows operating system, a streamlined installation
+process which requires no computer knowledge, and the ability to run a
+select set of "bridge" Windows-compatible programs. For more information
+see  <http://www.lindows.com/products> www.lindows.com/products 
+
+LindowsOS and Lindows.com are trademarks of Lindows.com, Inc. LinuxR is
+a registered trademark of Linus Torvalds. MicrosoftR WindowsR operating
+system is a registered trademark or service mark of the Microsoft
+Corporation.
+
+mm18
+
+___________________________________________________________
+To change your mailing list options please go to www.lindows.com/update
+
+
+------=_LINDOWS_1890362a5620f32f969ae58b8fe2ef84
+Content-Type: text/html;
+	charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<HTML><HEAD>
+<META HTTP-EQUIV=3D"Content-Type" CONTENT=3D"text/html; =
+charset=3Dus-ascii">
+<TITLE>Message</TITLE>
+
+<META content=3D"MSHTML 6.00.2600.0" name=3DGENERATOR></HEAD>
+<BODY>
+<DIV><FONT face=3DArial size=3D2></FONT>&nbsp;</DIV>
+<DIV>&nbsp;</DIV>
+<DIV align=3Dleft>
+<P class=3DMsoPlainText style=3D"MARGIN: 0in 0in 0pt"><FONT =
+face=3DArial><SPAN=20
+style=3D"mso-spacerun: yes"></SPAN><?xml:namespace prefix =3D o ns =3D=20
+"urn:schemas-microsoft-com:office:office" /><o:p><FONT=20
+face=3D"Times New Roman">&nbsp;</FONT></P>
+<P align=3Dcenter><FONT face=3D"Arial, Helv" =
+size=3D1>&nbsp;&nbsp;&nbsp;If this=20
+message is not displaying properly, <A =
+href=3D"http://lindows.com/mm">click=20
+here</A> to launch it in your browser.</FONT></P>
+<DIV align=3Dcenter>
+<CENTER>
+<TABLE cellSpacing=3D0 borderColorDark=3D#0577ba cellPadding=3D0 =
+width=3D600=20
+bgColor=3D#dfeedc border=3D1>
+  <TBODY>
+  <TR>
+    <TD width=3D"100%">
+      <P align=3Dcenter><A href=3D"http://lindows.com/"><IMG =
+height=3D160=20
+      src=3D"http://net2.com/mailers/header.jpg" width=3D600 =
+border=3D0></A></P>
+      <DIV align=3Dcenter>
+      <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D561 border=3D0>
+        <TBODY>
+        <TR>
+          <TD width=3D561>
+            <P class=3DMsoNormal align=3Dcenter><B><SPAN=20
+            style=3D"FONT-FAMILY: Arial"><FONT size=3D5>Michael&#8217;s =
+Minute:=20
+            <BR>Lindows.com Report Card </FONT></SPAN></B></P>
+        <TR>
+          <TD class=3Dtableborders vAlign=3Dtop width=3D561>
+            <P align=3Dleft><FONT face=3DArial,Helv>As summer arrives, =
+many school=20
+            children are coming home with their report cards.&nbsp; I =
+thought=20
+            this would be a good time to see what kind of grades =
+Lindows.com=20
+            received for their first 9 months in =
+operation.</FONT><B><SPAN=20
+            style=3D"FONT-FAMILY: Arial"><FONT=20
+            color=3D#dfeedc>.</FONT></SPAN></B></P>
+            <P align=3Dcenter><B><SPAN style=3D"FONT-FAMILY: =
+Arial">&nbsp;<A=20
+            href=3D"http://lindows.com/timeline"><IMG height=3D329=20
+            src=3D"http://www.net2.com/mailers/images/timeline.jpg" =
+width=3D218=20
+            border=3D0></A></SPAN></B><BR><FONT face=3D"Arial, Helv" =
+size=3D1>To view=20
+            the Timeline of Lindows.com's first 9 months in business, <A =
+
+            href=3D"http://lindows.com/timeline">click here</A>.</FONT> =
+</P></TD></TR>
+        <TR>
+          <TD class=3Dtableborders vAlign=3Dtop width=3D561>
+            <P class=3DMsoNormal><SPAN style=3D"FONT-FAMILY: =
+Arial"><B><BR><FONT=20
+            size=3D4>Operating System: </FONT></B></SPAN><B><SPAN=20
+            style=3D"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier =
+New'">&nbsp;</SPAN></B></P>
+            <P class=3DMsoNormal><SPAN style=3D"FONT-FAMILY: Arial">As =
+of last week,=20
+            consumers can experience LindowsOS in one of two ways. One =
+way is to=20
+            buy a computer running LindowsOS from <A=20
+            href=3D"http://www.lindows.com/walmart">Walmart.com</A>, for =
+as little=20
+            as $299. This is a significant milestone for us, as we've =
+partnered=20
+            with our first builder (Microtel) and retailer (Walmart). =
+These=20
+            computers work great out of the box and are ideal for =
+general=20
+            purpose computing tasks. </SPAN></P>
+            <P class=3DMsoNormal><SPAN style=3D"FONT-FAMILY: Arial">For =
+those who=20
+            already have a computer and also wish to try LindowsOS, we =
+offer the=20
+            <A href=3D"http://www.lindows.com/signup">Insider =
+program</A>. This=20
+            gives people wanting early access to LindowsOS a chance to =
+try out=20
+            LindowsOS as it develops. Currently, Insiders report =
+installation=20
+            success about 80%&nbsp; of the time on their PCs. Therefore =
+we have=20
+            some room to grow, consequently, this product is not yet for =
+
+            everyone. </SPAN></P>
+            <P class=3DMsoNormal><SPAN style=3D"FONT-FAMILY: Arial">Some =
+may wonder=20
+            how we can sell a computer at <A=20
+            href=3D"http://www.lindows.com/walmart">Walmart </A>when the =
+program=20
+            available directly from Lindows.com is billed as not =
+completely=20
+            ready. The difference is the <A=20
+            href=3D"http://www.lindows.com/walmart">Walmart</A> =
+computers are=20
+            certified, ensuring that all components&nbsp; work elegantly =
+with=20
+            LindowsOS. That's much different than offering a software =
+program=20
+            that will work on <I>any</I> computer in the world - =
+<I>that's very=20
+            difficult</I>. It's the difference between making a single =
+pair of=20
+            shoes for a known foot size versus opening a shoe store with =
+every=20
+            style of shoe for every size foot. The first one is easy, =
+the second=20
+            one is a much bigger job.</SPAN></P>
+            <P class=3DMsoNormal><SPAN style=3D"FONT-FAMILY: =
+Arial">While the=20
+            installer is fantastically easy and fast (the entire OS =
+installs in=20
+            under 5 minutes), we've got a lot more work to do to support =
+a wider=20
+            range of hardware, printers and other devices. </SPAN><SPAN=20
+            style=3D"FONT-WEIGHT: 700; FONT-FAMILY: Arial">Grade:&nbsp;=20
+            B</SPAN></P>
+            <HR>
+
+            <P class=3DMsoNormal><SPAN=20
+            style=3D"FONT-WEIGHT: 700; FONT-FAMILY: Arial"><FONT =
+size=3D4>Software:=20
+            </FONT></SPAN></P>
+            <P class=3DMsoNormal><SPAN style=3D"FONT-FAMILY: Arial">Our =
+goal to give=20
+            people choice means giving them choice not just on their =
+operating=20
+            system, but access to all the programs they'll want to add =
+to their=20
+            computer to really make it work for them in their school, =
+home or=20
+            business.</SPAN></P>
+            <P class=3DMsoNormal><SPAN style=3D"FONT-FAMILY: Arial"><A=20
+            href=3D"http://www.lindows.com/clicknrun">Click-N-Run</A> is =
+the=20
+            easiest way to load software onto a computer. For the first =
+time a=20
+            Linux based system has leapt ahead of Microsoft's operating =
+systems=20
+            in ease of use. With 1,000 plus programs already in the <A=20
+            href=3D"http://www.lindows.com/warehouse">Click-N-Run =
+Warehouse</A>,=20
+            users can find quality software titles for just about any =
+computing=20
+            task and, with a single mouse-click download, install and =
+run these=20
+            programs. All these titles are included in the $99. This is =
+a=20
+            fantastic consumer experience and price point. Look for a=20
+            lot&nbsp;more great software in the Warehouse in the =
+future.&nbsp;=20
+            </SPAN><SPAN style=3D"FONT-WEIGHT: 700; FONT-FAMILY: =
+Arial">Grade:=20
+            A-</SPAN></P>
+            <HR>
+
+            <P class=3DMsoNormal><SPAN=20
+            style=3D"FONT-WEIGHT: 700; FONT-FAMILY: Arial"><FONT =
+size=3D4>Microsoft=20
+            Windows Compatibility:</FONT></SPAN></P>
+            <P class=3DMsoNormal><SPAN style=3D"FONT-FAMILY: Arial">We =
+live in a=20
+            Microsoft world, so there needs to be a bridge from the =
+legacy world=20
+            to the broadband LindowsOS world. This means we need to =
+support some=20
+            bridge programs, file types and network devices to help =
+people=20
+            interact with the legacy Microsoft world. LindowsOS =
+computers come=20
+            with software to view, print and copy popular Microsoft =
+applications=20
+            like: MS Word files, MS PowerPoint files and MS Excel =
+documents.=20
+            There's great Linux based alternatives and we'll guide =
+people to=20
+            those alternatives (they're better than most people =
+realize). To=20
+            edit Microsoft files, we'd highly recommend one of the =
+office suites=20
+            in our Warehouse such as <A=20
+            =
+href=3D"http://www.lindows.com/lindows_products_details.php?id=3D8966">Op=
+enOffice</A>.=20
+            </SPAN></P>
+            <P class=3DMsoNormal><SPAN style=3D"FONT-FAMILY: Arial">Many =
+of these=20
+            programs are of very high-quality and a great value since =
+they're=20
+            included in the <A=20
+            href=3D"http://www.lindows.com/warehouse">Warehouse</A>. =
+Sometimes=20
+            there are no viable alternatives for those programs, so =
+we're=20
+            investing necessary resources to support some Microsoft =
+Windows=20
+            based programs. Stay tuned for more developments in this =
+area. Our=20
+            printer support is ok, but there's lots of room for more =
+drivers.=20
+            Connecting to MS Windows based file servers is still a =
+challenge. We=20
+            need to get better in the above areas. </SPAN><SPAN=20
+            style=3D"FONT-WEIGHT: 700; FONT-FAMILY: Arial">&nbsp;Grade: =
+B=20
+            </SPAN></P>
+            <HR>
+
+            <P class=3DMsoNormal><SPAN=20
+            style=3D"FONT-WEIGHT: 700; FONT-FAMILY: Arial"><FONT=20
+            size=3D4>Communication:</FONT></SPAN></P>
+            <P class=3DMsoNormal><SPAN style=3D"FONT-FAMILY: =
+Arial">We've tried to=20
+            be diligent in communicating where our company is going =
+which is why=20
+            there's typically a weekly <A=20
+            href=3D"http://www.lindows.com/mm">Michael's Minute</A>. =
+While our=20
+            overall goal has not deviated - Bringing Choice To Your =
+Computer -=20
+            our implementation has become more focused as we listened to =
+what=20
+            our Insiders and potential customers have told us. (Keep =
+sending me=20
+            your comments.) We have been de-emphasizing running =
+Microsoft=20
+            Windows programs because many of you told us you detest =
+spending=20
+            hundreds of dollars on individual software programs, forced =
+upgrades=20
+            and activation codes. It's not just the operating system, =
+but costly=20
+            Microsoft programs you're wanting to avoid. </SPAN></P>
+            <P class=3DMsoNormal><SPAN style=3D"FONT-FAMILY: =
+Arial">Consequently,=20
+            we've been emphasizing Click-N-Run because it will change =
+the way=20
+            you think about software. Having a neatly <A=20
+            href=3D"http://www.lindows.com/warehouse">categorized =
+library</A> of=20
+            1<SPAN class=3D176495422-26062002>,</SPAN>000+ software =
+titles all for=20
+            a flat annual fee at your digital fingertips is an entirely =
+new way=20
+            to think about paying for software. It's immediate, elegant =
+and=20
+            affordable. </SPAN></P>
+            <P class=3DMsoNormal><SPAN style=3D"FONT-FAMILY: =
+Arial">There are lots=20
+            of mischaracterizations about Lindows.com swirling around - =
+which=20
+            happens when you have a small organization which can't =
+address every=20
+            question or publication. We'll do a better job of addressing =
+these=20
+            in the future. For now, I wrote up answers to the Top Myths =
+about=20
+            Lindows.com. Check them out by visiting: <A=20
+            style=3D"FONT-FAMILY: Arial"=20
+            =
+href=3D"http://www.lindows.com/myths">www.lindows.com/myths</A>&nbsp;=20
+            </SPAN><SPAN style=3D"FONT-WEIGHT: 700; FONT-FAMILY: =
+Arial">Grade:=20
+            B+</SPAN></P>
+            <HR>
+
+            <P class=3DMsoNormal><SPAN=20
+            style=3D"FONT-WEIGHT: 700; FONT-FAMILY: Arial"><FONT =
+size=3D4>Overall:=20
+            B+</FONT></SPAN></P>
+            <P><FONT size=3D3>Michael Robertson</FONT></P>
+            <P><FONT size=3D2>Please visit <A=20
+            href=3D"http://support.lindows.com/">support.lindows.com</A> =
+to answer=20
+            questions you may have about LindowsOS or =
+Lindows.com.</FONT></P>
+            <P><B><FONT size=3D2>Bringing Choice to Your Computer! =
+</FONT></B></P>
+            <DIV>&nbsp;</DIV>
+            <DIV><SPAN class=3D154440621-26062002><FONT =
+size=3D1>LindowsOS is=20
+            presently available on LindowsOS Certified Computers being =
+offered=20
+            from Lindows.com </FONT><A=20
+            href=3D"http://www.lindows.com/builder"><FONT=20
+            size=3D1>Builder</FONT></A><FONT size=3D1> partners.&nbsp; =
+The General=20
+            Release of LindowsOS (available now for download and preview =
+to=20
+            Lindows.com </FONT><A =
+href=3D"http://lindows.com/signup"><FONT=20
+            size=3D1>Insider</FONT></A><FONT size=3D1> partners) will be =
+made=20
+            available later this year for those wishing to install and =
+run=20
+            LindowsOS on their existing computer hardware.&nbsp; The =
+General=20
+            Release version will support a wider range of computer =
+hardware and=20
+            includes unique features such as a =
+&#8220;Friendly-Install&#8221; alongside an=20
+            existing Microsoft&reg; Windows operating system, a =
+streamlined=20
+            installation process which requires no computer knowledge, =
+and the=20
+            ability to run a select set of "bridge" Windows-compatible =
+programs.=20
+            For more information see </FONT><A=20
+            href=3D"http://www.lindows.com/products"><FONT=20
+            size=3D1>www.lindows.com/products</FONT></A><FONT=20
+            size=3D1>&nbsp;</FONT></SPAN></DIV>
+            <DIV style=3D"WIDTH: 132px; HEIGHT: 19px"></DIV>
+            <P><FONT size=3D1>LindowsOS and Lindows.com are trademarks =
+of=20
+            Lindows.com, Inc. Linux&reg; is a registered trademark of =
+Linus=20
+            Torvalds. Microsoft&reg; Windows&reg; operating system is a =
+registered=20
+            trademark or service mark of the Microsoft =
+Corporation.</FONT></P>
+            <P><FONT size=3D1>mm18</FONT></P></TD></TR></TBODY></TABLE>
+      <P><BR></P></DIV></TR></TBODY></TABLE></DIV>
+<P=20
+align=3Dcenter>__________________________________________________________=
+_<BR><FONT=20
+size=3D2>To change your mailing list options please go to <A=20
+href=3D"http://www.lindows.com/update">www.lindows.com/update</A></FONT><=
+/P>
+<P class=3DMsoPlainText style=3D"MARGIN: 0in 0in 0pt"><FONT=20
+size=3D2></FONT></CENTER></o:p></FONT></P></DIV></BODY></HTML>
+
+
+
+------=_LINDOWS_1890362a5620f32f969ae58b8fe2ef84--
+
+

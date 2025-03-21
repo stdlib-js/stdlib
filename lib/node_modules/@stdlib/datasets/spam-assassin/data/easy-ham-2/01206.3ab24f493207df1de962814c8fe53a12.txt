@@ -1,0 +1,112 @@
+From rpm-list-admin@freshrpms.net  Mon Aug 12 10:51:41 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 65405440DB
+	for <jm@localhost>; Mon, 12 Aug 2002 05:50:34 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:50:34 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79LhVb26539 for
+    <jm-rpm@jmason.org>; Fri, 9 Aug 2002 22:43:31 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g79Lb1J10820; Fri, 9 Aug 2002 23:37:01
+    +0200
+Received: from smtp016.mail.yahoo.com (smtp016.mail.yahoo.com
+    [216.136.174.113]) by egwn.net (8.11.6/8.11.6/EGWN) with SMTP id
+    g79LapJ08711 for <rpm-list@freshrpms.net>; Fri, 9 Aug 2002 23:36:51 +0200
+Received: from usercb247.dsl.pipex.com (HELO yahoo.co.uk)
+    (salimma1@62.190.233.247 with plain) by smtp.mail.vip.sc5.yahoo.com with
+    SMTP; 9 Aug 2002 21:36:50 -0000
+Message-Id: <3D543685.1050003@yahoo.co.uk>
+From: Michel Alexandre Salim <salimma1@yahoo.co.uk>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.0rc2)
+    Gecko/20020618 Netscape/7.0b1
+X-Accept-Language: en-gb, en-us, en, in, ms
+MIME-Version: 1.0
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: Pango problems
+References: <20020807182804.5d5e4dcb.kilroy@kamakiriad.com>
+    <20020808173048.18b4bb62.matthias@egwn.net>
+    <20020808110003.4a20abd4.kilroy@kamakiriad.com>
+    <20020808181551.70b1f8b9.matthias@egwn.net>
+    <1028827085.18927.7.camel@fuggles>
+    <20020809103423.28a52d56.matthias@egwn.net>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Fri, 09 Aug 2002 22:39:17 +0100
+Date: Fri, 09 Aug 2002 22:39:17 +0100
+
+
+Matthias Saou wrote:
+
+>Once upon a time, Julian wrote :
+>
+>  
+>
+>>One of the things you need to understand with gnome2 is that while they
+>>did simplify a lot of things, most of the configuration options people
+>>found very useful are still available through gconf. Learn to love
+>>gconf-editor ;) -- metacity can have sloppy focus (Desktop Preferences
+>>-> Window Focus -- there's actually GUI for that), and the delay until
+>>raising (and whether it raises) can be set in gconf-editor,
+>>/apps/metacity/general/auto_raise and auto_raise_delay
+>>    
+>>
+>
+>Well, I stand corrected :-)
+>The thing is, I hadn't used gconf-editor yet... and it's exactly what I
+>feared, old "not so good" memories are coming back : It looks exactly like
+>a GNOME RegEdit :-/ Oh well.
+>I still hope that the few missing features I'm still looking for will be
+>added in the next 2.0.x releases, like for example being able to have the
+>panel always under *all* other windows (if you know how to do that, I'm
+>really interested! ;-)).
+>  
+>
+More like Apple's implementation - the Gconf2 files are bog-standard 
+XML, should you feel tempted to edit it by hand :)
+
+There are some possibilities that using standardised configuration tools 
+provide: the ability to centrally manage a large number of computers - 
+something like Windows' group policy. Although that would require other 
+applications to use GConf as well .
+
+Haven't installed Limbo beta2 myself - been sidetracked by work; the 
+fact that the computer I'm installing it on is connected to a dodgy USB 
+ADSL modem that requires heavy kernel patching means that I would have 
+to do it over a weekend - but I don't think Red Hat currently does it 
+for its config tools.
+
+Regards,
+
+Michel
+
+__________________________________________________
+Do You Yahoo!?
+Everything you'll ever need on one web page
+from News and Sport to Email and Music Charts
+http://uk.my.yahoo.com
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

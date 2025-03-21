@@ -1,0 +1,67 @@
+From fork-admin@xent.com  Fri Jul 26 04:42:10 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C58BF440E7
+	for <jm@localhost>; Thu, 25 Jul 2002 23:42:08 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 26 Jul 2002 04:42:08 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6Q3hd421655 for <jm@jmason.org>;
+    Fri, 26 Jul 2002 04:43:39 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id D9CCA2940FC; Thu, 25 Jul 2002 20:42:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from relay.pair.com (relay1.pair.com [209.68.1.20]) by xent.com
+    (Postfix) with SMTP id 6644F2940A2 for <fork@xent.com>; Thu,
+    25 Jul 2002 20:41:44 -0700 (PDT)
+Received: (qmail 48331 invoked from network); 26 Jul 2002 03:41:47 -0000
+Received: from dsl-64-195-248-145.telocity.com (HELO golden)
+    (64.195.248.145) by relay1.pair.com with SMTP; 26 Jul 2002 03:41:47 -0000
+X-Pair-Authenticated: 64.195.248.145
+Message-Id: <01fe01c23456$5d862760$640a000a@golden>
+From: "Gordon Mohr" <gojomo@usa.net>
+To: <fork@spamassassin.taint.org>
+References: <001301c23359$d8208130$0100a8c0@PETER>
+    <m2n0sgojke.fsf@maya.dyndns.org>
+    <2784.192.216.194.113.1027554358.squirrel@webmail.magnesium.net>
+    <20020725154846.M85654@networkcommand.com>
+    <m2ofcvkxqu.fsf@maya.dyndns.org>
+Subject: Re: Asteroids anyone ?
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 25 Jul 2002 20:41:45 -0700
+
+Gary Lawrence Murphy writes:
+> 20,000 years ago, one of them the size of Mt Everest just ever so
+> slightly grazed us and left a scar 400km long in the side of South
+> America before it scooted out into space.  First nations people would
+> have been there then, and it would have seriously ruined their day.
+
+Do you have any further information about this incident that
+would me find more details on the web?
+
+- Gordon
+
+
+http://xent.com/mailman/listinfo/fork
+
+

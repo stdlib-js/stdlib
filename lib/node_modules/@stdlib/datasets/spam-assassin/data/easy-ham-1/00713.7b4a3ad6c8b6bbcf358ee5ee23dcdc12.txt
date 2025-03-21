@@ -1,0 +1,231 @@
+From fork-admin@xent.com  Mon Sep 23 12:09:40 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 0C92116F03
+	for <jm@localhost>; Mon, 23 Sep 2002 12:09:37 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 23 Sep 2002 12:09:37 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8N58vC01842 for <jm@jmason.org>;
+    Mon, 23 Sep 2002 06:08:58 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id E345F2940A6; Sun, 22 Sep 2002 22:05:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.superb.net (smtp1.superb.net [207.228.225.14]) by
+    xent.com (Postfix) with SMTP id 22A5029409A for <fork@xent.com>;
+    Sun, 22 Sep 2002 22:04:18 -0700 (PDT)
+Received: (qmail 8494 invoked from network); 23 Sep 2002 05:07:58 -0000
+Received: from unknown (HELO maya.dyndns.org) (207.61.5.143) by
+    smtp1.superb.net with SMTP; 23 Sep 2002 05:07:58 -0000
+Received: by maya.dyndns.org (Postfix, from userid 501) id 4C8501C4E2;
+    Mon, 23 Sep 2002 01:07:53 -0400 (EDT)
+To: fork <fork@spamassassin.taint.org>
+Subject: Goodbye Global Warming
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m2vg4x47km.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 23 Sep 2002 01:07:53 -0400
+
+
+... and say hello to the cool:  Oooo ... /this/ is going to cause
+some stir ...
+
+http://www.atmos.uah.edu./essl/msu/background.html received via
+http://ontario.indymedia.org:8081/front.php3?article_id=12280
+
+Using satellites to monitor global climate change
+
+Earth System Science Laboratory
+
+The University of Alabama in Huntsville
+
+
+For Additional Information:
+
+
+
+Dr. John Christy, Associate Professor of Atmospheric Science
+
+Earth System Science Laboratory, The University of Alabama in Huntsville
+
+Phone: (205) 922-5763 E-mail: christy@atmos.uah.edu
+
+
+Dr. Roy Spencer, Space Scientist
+
+Global Hydrology & Climate Center, NASA/Marshall Space Flight Center
+
+Phone: (205) 922-5960 E-mail: roy.spencer@msfc.nasa.gov
+
+
+SUMMARY
+
+As part of an ongoing NASA/UAH joint project, Dr. John Christy of UAH and Dr. Roy Spencer of NASA's Marshall Space Flight Center use data gathered by microwave sounding units (MSUs) on National Oceanic and Atmospheric Administration TIROS-N satellites to get accurate, direct measurements of atmospheric temperatures for almost all regions of the Earth, including remote deserts, rain forests and oceans for which reliable temperature data are not otherwise available.
+
+The accuracy and reliability of temperature data gathered by the satellites since January 1979 has been confirmed by comparing the satellite data to independent temperature data. A recent study (1) found a 97 percent agreement between the MSU data and temperatures measured by thermometers suspended beneath weather balloons released by meteorologists for weather observations.
+
+Once the monthly temperature data is collected from the satellites and processed, it is placed in a "public" computer file for immediate access by atmospheric scientists in the U.S. and abroad. It has become the basis for a number of major studies in global climate change, and is cited in reports from the Intergovernmental Panel on Climate Change.
+
+
+
+GATHERING THE DATA
+
+While traditional thermometers measure the temperature at a specific point in the air, a microwave sounding unit on a satellite takes readings that are average temperatures in a huge volume of the atmosphere. Each of the more than 30,000 readings per day per satellite is an average temperature for more than 75,000 cubic kilometers of air.
+
+The MSU makes a direct measurement of the temperature by looking at microwaves emitted by oxygen molecules in the atmosphere. The intensity of the microwave emissions - their "brightness" - varies according to temperature.
+
+Christy and Spencer developed a method to take the data from several satellites and produce a unified temperature dataset.
+
+
+
+VERIFYING THE ACCURACY OF MSU MEASUREMENTS
+
+A recent comparison (1) of temperature readings from two major climate monitoring systems - microwave sounding units on satellites and thermometers suspended below helium balloons - found a "remarkable" level of agreement between the two.
+
+To verify the accuracy of temperature data collected by microwave sounding units, Christy compared temperature readings recorded by "radiosonde" thermometers to temperatures reported by the satellites as they orbited over the balloon launch sites.
+
+He found a 97 percent correlation over the 16-year period of the study. The overall composite temperature trends at those sites agreed to within 0.03 degrees Celsius (about 0.054° Fahrenheit) per decade. The same results were found when considering only stations in the polar or arctic regions.
+
+"The idea was to determine the reliability of the satellite data by comparing it to an established independent measurement," Christy said. "If satellite data are reliable when the satellites are over the radiosonde sites, that means you should be able to trust them everywhere else."
+
+The 99 radiosondes reported an aggregate warming trend of 0.155 degrees Celsius (about 0.28° Fahrenheit) per decade since 1979. Over those 99 spots on the globe, the satellites also recorded a warming trend: 0.128 degrees Celsius (about 0.23° Fahrenheit) per decade.
+
+Globally, however, the satellite data show a cooling trend of 0.03 degrees Celsius per decade since the first NOAA TIROS-N satellites went into service.
+
+"These 99 radiosonde launch sites are just not distributed evenly around the planet," Christy said. "They are not representative of the total globe."
+
+Radiosonde balloons are released from stations around the world, usually at noon and midnight Greenwich standard time. As each balloon climbs from the surface to the stratosphere, the temperature is measured and relayed to the ground by radio.
+
+While there are more than 1,000 radiosonde launch sites globally, the data from many sites either are not readily available or are not consistently collected. Christy used data from 99 sites at which there has been long-term systematic and reliable data collection. These 99 radiosonde launch sites are in a box bounded by Iceland, Trinidad, Truk Island and Alaska.
+
+In an earlier study, an upper air temperature record compiled by NOAA from 63 daily weather balloon sites around the world indicated a 17-year climate trend of -0.05° C per decade, which was in exact agreement with the satellite data at that time, Christy said.
+
+
+
+GLOBAL COVERAGE
+
+One advantage of the MSU dataset is its global coverage. Microwave sounding units aboard NOAA satellites directly measure the temperature of the atmosphere over more than 95 percent of the globe. Each satellite measures the temperature above most points on Earth every 12 hours.
+
+The 'global temperature' that has been frequently reported from surface measurements is neither global in extent nor systematic in measurement method. It neglects vast oceanic and continental regions, including Antarctica, the Brazilian rain forests, the Sahara Desert and Greenland.
+
+The most commonly cited historical temperature dataset is from ground-based thermometers. More than 5,000 thermometers worldwide provide almost instantaneous local temperature data through links to weather services and scientists.
+
+Most of these thermometers, which are usually in small shelters about five feet above the ground, are in areas easily accessible to people. In the U.S. and other industrial countries, these thermometers are most often found at airports.
+
+The ground-based network is extensive in North America, Europe, Russia, China and Japan. It is less comprehensive in Africa, South America, Australia and across much of Southern Asia.
+
+Temperatures on the surface and vertically through the atmosphere are gathered daily by thermometers carried aloft by helium balloons. "Radiosonde" balloons are released from stations around the world, usually at noon and midnight Greenwich standard time.
+
+While balloon release sites are scattered throughout the world, they are concentrated in industrial nations. There are more than 1,000 radiosonde launch sites globally. If they were evenly distributed around the world, that would equal approximately one for every 195,000 square miles of the Earth's surface.
+
+Water temperatures, which are used to derive estimates of atmospheric temperatures, come from thermometers on piers and buoys, and aboard "ships of opportunity." The ships record the temperature of water drawn in to cool their engines. The water temperature data from these instruments is also not global in its coverage, tending instead to be concentrated in heavily-travelled shipping lanes, and in harbors.
+
+In the past 12 years, a new system of approximately 100 deep ocean buoys has been established, gathering both atmospheric and water temperature data.
+
+
+
+INSTRUMENT ACCURACY; MSU
+
+With nine satellites measuring the temperature over periods of from one to six years, a method was devised to merge all the data into a single, consistent time series.
+
+Each satellite has its own bias that, if not calculated and removed, would introduce spurious trends. The biases are calculated by directly comparing each satellite with others in operation at that time. Periods of overlapping operation ranged from three months to three years, and were sufficient to determine these biases.
+
+Because the MSU instruments are so stable and have so many thousands of observations, the biases between the satellites are known to within 0.01 deg. The final product removes these biases so that all data are referenced to a common base. (2)
+
+To check the final product, comparisons were made over a 16-year period with balloon measurements as stated above, and the phenomenal agreement provided the independent validation necessary to conclude that the merging technique developed for this dataset was accurate.
+
+
+
+INSTRUMENT ACCURACY; GROUND-BASED THERMOMETERS
+
+Of great concern to scientists is the lack of consistency in the way readings are taken and in the thermometer surroundings. Since most thermometers for which long-term records exist are in towns and cities, the effects of population growth and the construction of nearby roads, parking lots, runways and buildings may cause the temperature to rise a little due of urbanization. This temperature change may be an artifact of a local "asphalt effect" rather than a long-term widespread climate change.
+
+
+
+INSTRUMENT ACCURACY; SHIPS OF OPPORTUNITY
+
+While the temperature data collected by ships at sea is reported as a sea surface temperature, this data reflects water temperatures from about three to 60 feet below the surface - the level from which water is drawn into the ships.
+
+The thousands of individual thermometers used to collect this data are not calibrated against a scientific standard, nor is there a method for verifying the accuracy of either the thermometers or the reports matching temperature readings to specific times and places.
+
+Only in places where there are many overlapping observations can there be any confidence in their accuracy.
+
+
+
+THE SCIENTISTS
+
+In 1996, Spencer and Christy received the American Meteorological Society's Special Award. They were honored "for developing a global, precise record of the Earth's temperature from operational polar-orbiting satellites, fundamentally advancing our ability to monitor climate."
+
+AMS Special Awards are given to individuals or organizations not appropriately recognized by more specifically-defined awards, and who have made important contributions to the science or practice of meteorology or to the society.
+
+In 1991, Spencer and Christy received NASA's Exceptional Scientific Achievement Medal.
+
+
+
+DR. JOHN CHRISTY
+
+Christy began his scientific career as a senior research associate at UAH in 1987, after earning his B.A. (1973) in mathematics from California State University-Fresno, his M.Div. (1978) from Golden Gate Baptist Theological Seminary, and his M.S. (1984) and Ph.D. (1987) degrees in atmospheric sciences from the University of Illinois.
+
+He was an instructor of mathematics at Parkland College in Champaign, IL, 1983-87, an instructor of mathematics at the University of South Dakota, 1981-82, and an instructor of mathematical sciences at Yankton (S.D.) College, 1980-81.
+
+He also served as pastor of the Grace Baptist Church in Vermillion, S.D., 1978-82, and as science master at Baptist High School, Nyeri, Kenya, 1973-75. He has published more than 20 refereed scientific papers.
+
+Christy serves on the NOAA National Scientific Review Panel for the National Climatic Data Center, and on NOAA's Pathfinder Review Panel. He was an "invited key contributor" to the 1995 Intergovernmental Panel on Climate Change's scientific assessment of climate change, and served as a contributor to the 1992 and 1994 IPCC reports.
+
+
+
+DR. ROY SPENCER
+
+Spencer began his career as a research associate at the Space Science and Engineering Center in Madison, WI, in 1981, after earning his B.S. (1978) in meteorology at the University of Michigan and his M.S. (1979) and Ph.D. (1981) degrees in meteorology from the University of Wisconsin-Madison. He was a Universities Space Research Association visiting scientist at MSFC, 1984-87, before joining the MSFC staff in 1987.
+
+He is the U.S. team leader for the Multichannel Microwave Imaging Radiometer Team and has served on numerous committees relating to remote sensing. He directs a program involving satellite and aircraft passive microwave data to build global climate data sets and to address climate research issues. Spencer is lead author on sixteen scientific papers.
+
+
+
+BIBLIOGRAPHY
+
+(1) J.R. Christy, 1995, "Climatic Change," Vol. 31, pp. 455-474.
+
+(2) J.R. Christy, R.W. Spencer and R.T. McNider, 1995, "Journal of Climate,"
+
+Vol. 8, pp. 888-896.
+
+R.W. Spencer, J.R. Christy and N.C. Grody, 1990, "Journal of Climate," Vol. 3,
+
+pp. 111-1128.
+
+R.W. Spencer and J.R. Christy, 1992, "Journal of Climate," Vol. 5, pp. 858-
+
+SEE ALSO
+http://science.nasa.gov/newhome/headlines/essd5feb97_1.htm
+http://science.nasa.gov/newhome/headlines/notebook/essd13aug98_1.htm
+http://www.ghcc.msfc.nasa.gov/MSU/hl_measuretemp.htm
+http://www.atmos.uah.edu/atmos/christy.html
+
+
+-- 
+Gary Lawrence Murphy - garym@teledyn.com - TeleDynamics Communications
+ - blog: http://www.auracom.com/~teledyn - biz: http://teledyn.com/ -
+  "Computers are useless. They can only give you answers." (Picasso)
+
+

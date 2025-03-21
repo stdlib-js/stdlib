@@ -1,0 +1,95 @@
+From exmh-users-admin@redhat.com  Tue Jul 30 02:23:39 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id AE7BF440EE
+	for <jm@localhost>; Mon, 29 Jul 2002 21:23:39 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 30 Jul 2002 02:23:39 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6U1HJq29795 for
+    <jm-exmh@jmason.org>; Tue, 30 Jul 2002 02:17:22 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 04C643EB22; Mon, 29 Jul 2002
+    21:15:25 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 7142E3EA16
+    for <exmh-users@listman.redhat.com>; Mon, 29 Jul 2002 21:14:30 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g6U1EUh27998 for exmh-users@listman.redhat.com; Mon, 29 Jul 2002
+    21:14:30 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g6U1ETq27992 for
+    <exmh-users@redhat.com>; Mon, 29 Jul 2002 21:14:29 -0400
+Received: from orion.dwf.com (bgp01360964bgs.sandia01.nm.comcast.net
+    [68.35.68.128]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id
+    g6U12Il10341 for <exmh-users@redhat.com>; Mon, 29 Jul 2002 21:02:18 -0400
+Received: from orion.dwf.com (localhost.dwf.com [127.0.0.1]) by
+    orion.dwf.com (8.12.1/8.12.1) with ESMTP id g6U1ENO8002427 for
+    <exmh-users@redhat.com>; Mon, 29 Jul 2002 19:14:23 -0600
+Received: from orion.dwf.com (reg@localhost) by orion.dwf.com
+    (8.12.1/8.12.1/Submit) with ESMTP id g6U1ENSe002423 for
+    <exmh-users@redhat.com>; Mon, 29 Jul 2002 19:14:23 -0600
+Message-Id: <200207300114.g6U1ENSe002423@orion.dwf.com>
+X-Mailer: exmh version 2.5 07/25/2002 with nmh-1.0.4
+To: exmh-users@spamassassin.taint.org
+Subject: Re: Strange tcl/tk messages from EXMH 2.5...
+In-Reply-To: Your message of "Thu, 25 Jul 2002 21:13:51 MDT."
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+From: Reg Clemens <reg@dwf.com>
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Mon, 29 Jul 2002 19:14:23 -0600
+
+> 
+> I am getting some strange messages from EXMH 2.5.
+> Since I just finished reinstalling it, I dont see how something could be
+> missing. Here is the message:
+> 
+> When the Compose or Reply windows first come up, I get a popup that says:
+>     Invalid I-spell style: 'extr switch with no body' changing to underline
+> 
+> Any thoughts??? I this complaining about a EXMH routine being missing?
+> Or What???
+> -- 
+>                                         Reg.Clemens
+>                                         reg@dwf.com
+> 
+> 
+
+Let me answer my own question.
+This seems to be a problem in tk8.4.
+There is a switch statement at lines 691-697 in ispell.tcl inside a catch.
+It ends with a line ending with a backslash, followed by a blank line.
+
+This seems to be enough to confuse this verson of tk.  Removing the backslash
+causes the error to go away, and the catch is not executed.
+-- 
+                                        Reg.Clemens
+                                        reg@dwf.com
+
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

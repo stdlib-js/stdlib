@@ -1,0 +1,72 @@
+From rpm-list-admin@freshrpms.net  Tue Sep 10 18:14:49 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 1BF7D16F03
+	for <jm@localhost>; Tue, 10 Sep 2002 18:14:49 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 10 Sep 2002 18:14:49 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8AGs0C07995 for
+    <jm-rpm@jmason.org>; Tue, 10 Sep 2002 17:54:01 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g8AGp1K18100; Tue, 10 Sep 2002 18:51:01
+    +0200
+Received: from athlon.ckloiber.com (rdu57-228-131.nc.rr.com
+    [66.57.228.131]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g8AGoBK08236 for <rpm-list@freshrpms.net>; Tue, 10 Sep 2002 18:50:12 +0200
+Received: from localhost.localdomain (localhost.localdomain [127.0.0.1])
+    by athlon.ckloiber.com (8.12.5/8.12.5) with ESMTP id g8AGo9KG017956 for
+    <rpm-list@freshrpms.net>; Tue, 10 Sep 2002 12:50:10 -0400
+Received: (from ckloiber@localhost) by localhost.localdomain
+    (8.12.5/8.12.5/Submit) id g8AGo8YS017954; Tue, 10 Sep 2002 12:50:08 -0400
+X-Authentication-Warning: localhost.localdomain: ckloiber set sender to
+    ckloiber@ckloiber.com using -f
+Subject: Re: Holidays for freshrpms.net :-)
+From: Chris Kloiber <ckloiber@ckloiber.com>
+To: rpm-zzzlist@freshrpms.net
+In-Reply-To: <20020910183907.2310f32c.matthias@egwn.net>
+References: <20020910183907.2310f32c.matthias@egwn.net>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8 (1.0.8-10)
+Message-Id: <1031676608.17878.8.camel@athlon.ckloiber.com>
+MIME-Version: 1.0
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: 10 Sep 2002 12:50:08 -0400
+Date: 10 Sep 2002 12:50:08 -0400
+
+On Tue, 2002-09-10 at 12:39, Matthias Saou wrote:
+> Hi all,
+> 
+> I'll be leaving this evening until next Monday, with no access to
+> whatsoever to a single computer until then, woohoo, real holidays! :-)
+
+I don't think I could take it. The network was down for an hour here and
+I was climbing the walls. :)
+
+Enjoy!
+
+-- 
+Chris Kloiber
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

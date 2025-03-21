@@ -1,0 +1,105 @@
+From razor-users-admin@lists.sourceforge.net  Fri Aug  9 15:36:55 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D80E8440EF
+	for <jm@localhost>; Fri,  9 Aug 2002 10:34:04 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:34:04 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79ESEb07214 for
+    <jm-razor@jmason.org>; Fri, 9 Aug 2002 15:28:14 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id BAA02465 for
+    <jm-razor@jmason.org>; Fri, 9 Aug 2002 01:47:03 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17cxqs-00035t-00; Thu,
+    08 Aug 2002 17:42:02 -0700
+Received: from main.gmane.org ([80.91.224.249]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17cxpu-0000SP-00 for <razor-users@lists.sourceforge.net>; Thu,
+    08 Aug 2002 17:41:02 -0700
+Received: from root by main.gmane.org with local (Exim 3.35 #1 (Debian))
+    id 17cxp2-0002zx-00 for <razor-users@lists.sourceforge.net>;
+    Fri, 09 Aug 2002 02:40:08 +0200
+To: razor-users@example.sourceforge.net
+X-Injected-Via-Gmane: http://gmane.org/
+Received: from news by main.gmane.org with local (Exim 3.35 #1 (Debian))
+    id 17cxjA-0002pc-00 for <gmane-mail-spam-razor-user@m.gmane.org>;
+    Fri, 09 Aug 2002 02:34:04 +0200
+Path: not-for-mail
+From: Jehan Bing <jehan@bravobrava.com>
+Newsgroups: gmane.mail.spam.razor.user
+Message-Id: <aiv2lr$aib$1@main.gmane.org>
+References: <Pine.LNX.4.44.0208082019060.29818-100000@nightwatch.storm>
+    <85A5EBA4-AB0F-11D6-BCF2-00039396ECF2@deersoft.com>
+NNTP-Posting-Host: adsl-64-168-83-170.dsl.snfc21.pacbell.net
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+X-Trace: main.gmane.org 1028853243 10827 64.168.83.170 (9 Aug 2002
+    00:34:03 GMT)
+X-Complaints-To: usenet@main.gmane.org
+NNTP-Posting-Date: Fri, 9 Aug 2002 00:34:03 +0000 (UTC)
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.1b)
+    Gecko/20020802
+X-Accept-Language: en-us, en
+Subject: [Razor-users] Re: keep submitting known spam?
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Thu, 08 Aug 2002 17:34:51 -0700
+Date: Thu, 08 Aug 2002 17:34:51 -0700
+
+Craig R.Hughes wrote:
+ >
+ > On Thursday, August 8, 2002, at 11:15  AM, Mika Hirvonen wrote:
+ >
+ >> I do not know the algorithms used to calculate confidence values, but it
+ >> probably penalizes heavily when someone revokes spam that everyone else
+ >> considers as spam. Or at least it should.
+ >
+ >
+ > The problem with that is that invariably, there are "gray" mails.  Some
+ > people will vote "spam", others will vote "nonspam" -- under your
+ > proposed system, anyone who ever calls "gray" mail nonspam will have a
+ > shitty trust score.  And once you have a shitty trust score, your own
+ > submissions won't even be used to flag your own spam as spam.  That's
+ > bound to confuse a lot of people.  "But I just marked that exact message
+ > as spam.  Why is it not being considered spam?  I'm an honest submitter."
+
+I assume that how much the trust goes down depends of the proportion of
+report vs revoke. If everybody except one says that a mail is spam, the
+one guy will see his trust go down dramatically. If you are with the
+majority, your trust goes up. If you are against the majority, your
+trust goes down. If people 50-50, whatever you vote, your neither
+against the majority nor with it, so your trust won't change. So your
+"gray" mail won't have much influence on your trust (neither good nor
+bad, just... gray)
+
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

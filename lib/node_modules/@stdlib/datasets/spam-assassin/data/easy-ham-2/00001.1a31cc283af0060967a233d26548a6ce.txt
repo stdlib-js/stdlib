@@ -1,0 +1,241 @@
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7106643C34
+	for <jm@localhost>; Wed, 21 Aug 2002 08:33:03 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 21 Aug 2002 13:33:03 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7LCXvZ24654 for
+    <jm-exmh@jmason.org>; Wed, 21 Aug 2002 13:33:57 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id F12A13EA25; Wed, 21 Aug 2002
+    08:34:00 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 750D33F945
+    for <exmh-workers@listman.redhat.com>; Wed, 21 Aug 2002 08:30:55 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g7LCUqx17585 for exmh-workers@listman.redhat.com; Wed, 21 Aug 2002
+    08:30:52 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g7LCUqY17578 for
+    <exmh-workers@redhat.com>; Wed, 21 Aug 2002 08:30:52 -0400
+Received: from ratree.psu.ac.th ([202.28.97.6]) by mx1.spamassassin.taint.org
+    (8.11.6/8.11.6) with SMTP id g7LCGNl23207 for <exmh-workers@redhat.com>;
+    Wed, 21 Aug 2002 08:16:24 -0400
+Received: from delta.cs.mu.OZ.AU (delta.coe.psu.ac.th [172.30.0.98]) by
+    ratree.psu.ac.th (8.11.6/8.11.6) with ESMTP id g7LCUIl27286;
+    Wed, 21 Aug 2002 19:30:19 +0700 (ICT)
+Received: from munnari.OZ.AU (localhost [127.0.0.1]) by delta.cs.mu.OZ.AU
+    (8.11.6/8.11.6) with ESMTP id g7LCU1W09629; Wed, 21 Aug 2002 19:30:01
+    +0700 (ICT)
+From: Robert Elz <kre@munnari.OZ.AU>
+To: Chris Garrigues <cwg-dated-1030314468.7c7c85@DeepEddy.Com>
+Cc: exmh-workers@spamassassin.taint.org
+Subject: Re: New Sequences Window
+In-Reply-To: <1029882468.3116.TMDA@deepeddy.vircio.com>
+References: <1029882468.3116.TMDA@deepeddy.vircio.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Message-Id: <9627.1029933001@munnari.OZ.AU>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Wed, 21 Aug 2002 19:30:01 +0700
+
+    Date:        Tue, 20 Aug 2002 17:27:47 -0500
+    From:        Chris Garrigues <cwg-exmh@DeepEddy.Com>
+    Message-ID:  <1029882468.3116.TMDA@deepeddy.vircio.com>
+
+
+  | I'm hoping that all people with no additional sequences will notice are
+  | purely cosmetic changes.
+
+Well, first, when exmh (the latest one with your changes) starts, I get...
+
+can't read "flist(totalcount,unseen)": no such element in array
+    while executing
+"if {$flist(totalcount,$mhProfile(unseen-sequence)) > 0} {
+	FlagInner spool iconspool labelup
+    } else {
+	FlagInner down icondown labeldown
+    }"
+    (procedure "Flag_MsgSeen" line 3)
+    invoked from within
+"Flag_MsgSeen"
+    (procedure "MsgSeen" line 8)
+    invoked from within
+"MsgSeen $msgid"
+    (procedure "MsgShow" line 12)
+    invoked from within
+"MsgShow $msgid"
+    (procedure "MsgChange" line 17)
+    invoked from within
+"MsgChange 4862 show"
+    invoked from within
+"time [list MsgChange $msgid $show"
+    (procedure "Msg_Change" line 3)
+    invoked from within
+"Msg_Change $msg(id) $show"
+    (procedure "Msg_Show" line 7)
+    invoked from within
+"Msg_Show cur"
+    ("eval" body line 1)
+    invoked from within
+"eval $msgShowProc"
+    (procedure "FolderChange" line 55)
+    invoked from within
+"FolderChange inbox {Msg_Show cur}"
+    invoked from within
+"time [list  FolderChange $folder $msgShowProc"
+    (procedure "Folder_Change" line 3)
+    invoked from within
+"Folder_Change $exmh(folder)"
+    (procedure "Exmh" line 101)
+    invoked from within
+"Exmh"
+    ("after" script)
+
+which is probably related to my not having an "unseen" sequence anywhere
+(certainly not in inbox) - I read all of my outstanding mail before I
+tried this new exmh ...
+
+Second, I've been used to having a key binding which was to Msg_MarkUnseen
+which doesn't seem to exist any more, and I'm not sure what I should replace
+that with.   There's obviously a way as the "Sequences" menu does this.
+The "Mark Unseen" menu entry in the message "More" menu is still wanting
+that function as well...
+
+  | For those who have other sequences defined, the window will widen to
+  | display the other sequences.
+
+Any chance of having that lengthen instead?   I like all my exmh stuff
+in nice columns (fits the display better).   That is, I use the detached
+folder list, one column.   The main exmh window takes up full screen,
+top to bottom, but less than half the width, etc...
+
+I have space for more sequences, in the "unseen" window, as long as they
+remain once nice narrow window (best would be if the sequences could be
+ordered by some preference, then ones which didn't fit would just fall
+off the bottom, and not be shown).
+
+I'd also prefer it if that window had no unusual background colouring,
+just one constant colour - I have been running the unseen window with
+background black, on a root window that is all black, with no borders or
+other decorations, but made "sticky" - the appearance is just like the
+folders with unseen messages (and their counts) are written into the
+root window (because it is sticky, this small display follows me around
+and do I can see when new mail needs processing).
+
+I also find that I tend to have a bunch of sequences that only ever occur
+in one folder (some I had forgotten I ever created).  So in addition to
+the "sequences to always show" and "sequences to never show", a
+preference to only show sequences that occur in more than one folder
+would be useful, and then have the sequences that occor only in the
+folder I'm visiting appear in the list when that folder is current.
+This is just to keep the list size somewhat manageable while remaining
+productive (I quite often use a sequence to remember a particular message
+in a folder - the name is used only there, and only for one message,
+it gives me a handle on the message which remains as the folder is
+packed, sorted, etc).
+
+I haven't updated my exmh for some time now, so I'm not sure if this
+next one is new, or just new since 2.5, but the Sequences menu (on the
+bar with New Flist Search ...) only contains "unseen" and "urgent".
+It would be useful if it contained all of the sequences that the folder
+happens to have defined.   A "New sequence" entry would also be useful
+(to mark the message with a sequence name that didn't previously exist,
+which can be done now using "Search" and the pick interface, but is
+clumsy that way)
+
+Actually, you once could, now when I try this, entering a sequence name
+in the pick box, and a single message number, or a range N-N in the
+list of messages, and no pick attributes at all, I now get ...
+
+syntax error in expression "int(1+1+(1 hit-1)*(3868-1-2)/(4878-1))"
+    while executing
+"expr int($minlineno+1+($msgid-$minmsgid)*($maxlineno-$minlineno-2)/($maxmsgid-$minmsgid))"
+    (procedure "Ftoc_FindMsg" line 46)
+    invoked from within
+"Ftoc_FindMsg $msg"
+    (procedure "Ftoc_FindMsgs" line 5)
+    invoked from within
+"Ftoc_FindMsgs $msgids"
+    (procedure "Ftoc_PickMsgs" line 5)
+    invoked from within
+"Ftoc_PickMsgs $pick(ids) $pick(addtosel)"
+    (procedure "PickInner" line 13)
+    invoked from within
+"PickInner {exec pick +inbox -list} {4852 -sequence mercury}"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 $cmd"
+    (procedure "busyCursorInner" line 8)
+    invoked from within
+"busyCursorInner $cmd $widgets"
+    (procedure "busyCursorHack" line 32)
+    invoked from within
+"busyCursorHack $args"
+    ("cursor" arm line 1)
+    invoked from within
+"switch $busy(style) {
+	icon		{busyIcon $args}
+	cursorAll	{busyCursor $args}
+	cursor		{busyCursorHack $args}
+	default		{eval $args}
+    }"
+    (procedure "busy" line 3)
+    invoked from within
+"busy PickInner $cmd $msgs"
+    (procedure "Pick_It" line 51)
+    invoked from within
+"Pick_It"
+    invoked from within
+".pick.but.pick invoke"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 [list $w invoke]"
+    (procedure "tkButtonUp" line 7)
+    invoked from within
+"tkButtonUp .pick.but.pick
+"
+    (command bound to event)
+
+It has been ages since I did this last though.   I tried adding a Subject
+to pick on (easy as I know what's in the message...) which made no difference.
+Looks as if something is now saying "1 hit" when before it didn't, or
+similar.
+
+  | I've also changed the ftoc colorization as discussed briefly on the list a 
+  | week or so ago.
+
+Any chance of making the current message a little brighter background?
+Just to make it stand out a fraction more than it does (maybe this is
+more apparent to me than many, as I use very small fonts everywhere,
+the background of the ftoc line isn't very wide).
+
+Hope this helps.
+
+kre
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+

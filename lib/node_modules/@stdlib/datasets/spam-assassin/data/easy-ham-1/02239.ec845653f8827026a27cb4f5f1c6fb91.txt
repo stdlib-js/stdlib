@@ -1,0 +1,27 @@
+From rssfeeds@jmason.org  Thu Oct  3 12:25:20 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id CA82B16F16
+	for <jm@localhost>; Thu,  3 Oct 2002 12:24:32 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 03 Oct 2002 12:24:32 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9382hK20068 for
+    <jm@jmason.org>; Thu, 3 Oct 2002 09:02:43 +0100
+Message-Id: <200210030802.g9382hK20068@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: zawodny <rssfeeds@spamassassin.taint.org>
+Subject: OSXCon: Development Lessons from Bare Bones Software
+Date: Thu, 03 Oct 2002 08:02:43 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://jeremy.zawodny.com/blog/archives/000215.html
+Date: 2002-10-02T17:02:15-08:00
+
+This talk is not supposed to be technical or marketing, but more of a ramble. 
+We'll see. :-) "Living above the Curve" BB is a strange company, as they've 
+been Mac-only are have been in business for over 10 years....
+
+

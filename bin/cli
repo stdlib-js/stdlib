@@ -1,0 +1,195 @@
+#!/usr/bin/env node
+
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2018 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+'use strict';
+
+// MODULES //
+
+var path = require( 'path' );
+var spawn = require( 'child_process' ).spawn;
+var CLI = require( '@stdlib/cli/ctor' );
+var parentPath = require( '@stdlib/fs/resolve-parent-path' ).sync;
+var readFile = require( '@stdlib/fs/read-file' ).sync;
+var hasOwnProp = require( '@stdlib/assert/has-own-property' );
+var objectKeys = require( '@stdlib/utils/keys' );
+var dirname = require( '@stdlib/utils/dirname' );
+var cwd = require( '@stdlib/process/cwd' );
+var ENV = require( '@stdlib/process/env' );
+var COMMANDS = require( './cli_commands.json' );
+
+
+// FUNCTIONS //
+
+/**
+* Returns command information.
+*
+* @private
+* @param {string} cmd - command
+* @returns {(Object|null)} command info
+*/
+function findCommand( cmd ) {
+	var i;
+	for ( i = 0; i < COMMANDS.length; i++ ) {
+		if ( cmd === COMMANDS[ i ].command ) {
+			return COMMANDS[ i ];
+		}
+	}
+	return null;
+}
+
+/**
+* Resolves a CLI file path.
+*
+* @private
+* @param {string} pkgPath - package name/path
+* @throws {Error} unable to resolve CLI
+* @returns {string} file path
+*/
+function getPath( pkgPath ) {
+	var mpath;
+	var cmds;
+	var pkg;
+
+	if ( /^@stdlib/.test( pkgPath ) ) {
+		// Resolve a package's main entry point:
+		mpath = require.resolve( pkgPath );
+
+		// Resolve a dependency's path by finding the dependency's `package.json`:
+		mpath = parentPath( 'package.json', {
+			'dir': dirname( mpath )
+		});
+
+		// Read the package meta data:
+		pkg = require( mpath ); // eslint-disable-line stdlib/no-dynamic-require
+
+		// Resolve a `bin` field:
+		if ( !hasOwnProp( pkg, 'bin' ) ) {
+			throw new Error( 'unexpected error. Unable to resolve command.' );
+		}
+		cmds = objectKeys( pkg.bin );
+		if ( cmds.length === 0 ) {
+			throw new Error( 'unexpected error. Unable to resolve command.' );
+		}
+		// NOTE: assume that the first command is the desired command:
+		return path.join( dirname( mpath ), pkg.bin[ cmds[ 0 ] ] );
+	}
+	// Assume we are given a path relative to the root directory:
+	return path.resolve( __dirname, '..', pkgPath );
+}
+
+
+// MAIN //
+
+/**
+* Main execution sequence.
+*
+* @private
+* @returns {void}
+*/
+function main() {
+	var subargs;
+	var flags;
+	var keys;
+	var args;
+	var opts;
+	var proc;
+	var cli;
+	var cmd;
+	var key;
+	var i;
+
+	// Create a command-line interface:
+	cli = new CLI({
+		'pkg': require( './../package.json' ),
+		'options': require( './cli_opts.json' ),
+		'help': readFile( path.resolve( __dirname, 'usage.txt' ), {
+			'encoding': 'utf8'
+		})
+	});
+
+	// Get any provided command-line options:
+	flags = cli.flags();
+	if ( flags.help || flags.version ) {
+		return;
+	}
+
+	// Get any provided command-line arguments:
+	args = cli.args();
+
+	// Extract the command:
+	if ( args.length === 0 ) {
+		return cli.help();
+	}
+	if ( args[ 0 ] === 'help' ) {
+		if ( args.length === 1 ) {
+			return cli.help();
+		}
+		cmd = findCommand( args[ 1 ] );
+		if ( cmd === null ) {
+			return cli.error( new Error( 'invalid argument. Unrecognized/unsupported command. Value: `' + args[ 1 ] + '`.' ) );
+		}
+		subargs = [ getPath( cmd.path ), '--help' ];
+	} else {
+		cmd = findCommand( args[ 0 ] );
+		if ( cmd === null ) {
+			return cli.error( new Error( 'invalid argument. Unrecognized/unsupported command. Value: `' + args[ 0 ] + '`.' ) );
+		}
+		subargs = [ getPath( cmd.path ) ];
+		for ( i = 1; i < args.length; i++ ) {
+			subargs.push( args[ i ] );
+		}
+		keys = objectKeys( flags );
+		for ( i = 0; i < keys.length; i++ ) {
+			key = keys[ i ];
+			if (
+				key === 'h' ||
+				key === 'help' ||
+				key === 'V' ||
+				key === 'version'
+			) {
+				continue;
+			}
+			subargs.push( '--'+keys[ i ]+'='+flags[ keys[ i ] ] );
+		}
+	}
+
+	// Define sub-process options:
+	opts = {
+		'cwd': cwd(),
+		'env': ENV,
+		'stdio': 'inherit'
+	};
+
+	// Invoke the command in a sub-process:
+	proc = spawn( 'node', subargs, opts );
+	proc.on( 'error', onError );
+
+	/**
+	* Callback invoked upon encountering an error while running a command.
+	*
+	* @private
+	* @param {Error} error - error object
+	*/
+	function onError( error ) {
+		cli.error( error );
+	}
+}
+
+main();

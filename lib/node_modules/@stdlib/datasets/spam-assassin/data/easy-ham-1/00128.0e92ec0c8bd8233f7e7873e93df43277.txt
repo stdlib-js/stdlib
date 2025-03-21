@@ -1,0 +1,127 @@
+From fork-admin@xent.com  Tue Oct  8 10:56:40 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id 1C14716F03
+	for <zzzz@localhost>; Tue,  8 Oct 2002 10:56:40 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Tue, 08 Oct 2002 10:56:40 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g981fTK28141 for <zzzz@spamassassin.taint.org>;
+    Tue, 8 Oct 2002 02:41:29 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 80DE52940CA; Mon,  7 Oct 2002 18:41:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from homer.perfectpresence.com (unknown [209.123.207.194]) by
+    xent.com (Postfix) with ESMTP id 6C9E229409A for <Fork@xent.com>;
+    Mon,  7 Oct 2002 18:40:38 -0700 (PDT)
+Received: from adsl-17-226-227.jax.bellsouth.net ([68.17.226.227]
+    helo=regina) by homer.perfectpresence.com with smtp (Exim 3.36 #1) id
+    17yjMg-0005XL-00; Mon, 07 Oct 2002 21:40:51 -0400
+From: "Geege Schuman" <geege@barrera.org>
+To: <johnhall@evergo.net>, <Fork@xent.com>
+Subject: RE: The absurdities of life.
+Message-Id: <ILEHJNJFPDLMDEKNIAKCGEODCAAA.geege@barrera.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+Importance: Normal
+In-Reply-To: <000001c26e44$d8780150$0200a8c0@JMHALL>
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2800.1106
+X-Antiabuse: This header was added to track abuse, please include it with
+    any abuse report
+X-Antiabuse: Primary Hostname - homer.perfectpresence.com
+X-Antiabuse: Original Domain - xent.com
+X-Antiabuse: Originator/Caller UID/GID - [0 0] / [0 0]
+X-Antiabuse: Sender Address Domain - barrera.org
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 7 Oct 2002 21:39:39 -0400
+
+what takes time and money: noting the amounts of each correction and basing
+the refund delivery method on the amount.  yesh, it's silly to spend $.37 (+
+labor and materials) for a $.02 refund, but maybe the only alternative right
+now is to create dichotomies that require even more time and labor - or keep
+the money (see john hall below).  your mailed refund is a function of bulk.
+
+in jax we're on the verge of firing at&t cable for horrible customer service
+and over-charging.  what will probably happen: if the amount of overage per
+customer is significant (say $30 or more) the refund will go directly to the
+customer.  If it's less, the combined total amount will go to the city as
+lump sum settlement.
+
+in your case, maybe all the customers could vote on line where they'd like
+their lump sum to go.  of courese, they'd have to be notified by mail first.
+:-)
+
+-----Original Message-----
+From: fork-admin@xent.com [mailto:fork-admin@xent.com]On Behalf Of John
+Hall
+Sent: Monday, October 07, 2002 5:02 PM
+To: Fork@xent.com
+Subject: RE: The absurdities of life.
+
+
+They are legally required to do that.  I got a similar check because an
+insurance company didn't pay a claim quickly enough.  It might have been
+$.02.
+
+Although they spent lots more than $.33 to mail you the check, the
+alternative seems to be to keep the money.  Do you really want companies
+to have a financial incentive to over-bill you 'just a bit' so they
+could keep it?  For a company with millions of customers, $.33/customer
+starts adding up.
+
+
+
+
+
+
+> From: fork-admin@xent.com [mailto:fork-admin@xent.com] On Behalf Of
+> bitbitch@magnesium.net
+
+> So I get a check from Pac Bell today (SBC as they're called now).
+> Turns out, they went to the trouble of printing out, signing, sealing
+> and stamping a check just to refund me for a whole $0.33.
+>
+> They easily spent more than this just getting the materials together.
+> Why the hell do companies bother to do this crap?  I mean, isn't there
+> a bottom line in terms of cost effectiveness?  I don't think I missed
+> the .33, but I sure as hell would have appreciated lower rates in lieu
+> of being returned pennies.
+>
+> I'm truly stuck on this though.  I don't know whether to frame the
+> check, burn it, or cash it in.  Maybe I should find a way to return to
+> sender, so they have to spend -more- money on giving me my .33 dues.
+>
+>
+> Does .33 even buy anything anymore?  Funny bit of it, is I couldn't
+> even make a phone call these days.
+>
+> *boggled*
+> BB.
+>
+> --
+> Best regards,
+>  bitbitch                          mailto:bitbitch@magnesium.net
+
+
+
+
+
+
+

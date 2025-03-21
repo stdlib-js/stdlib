@@ -1,0 +1,81 @@
+From spamassassin-devel-admin@lists.sourceforge.net  Thu Aug 29 11:05:30 2002
+Return-Path: <spamassassin-devel-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8FAB94416B
+	for <jm@localhost>; Thu, 29 Aug 2002 06:04:32 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:04:32 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7SIkRZ06007 for <jm@jmason.org>; Wed, 28 Aug 2002 19:46:28 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17k7oP-0004m4-00; Wed,
+    28 Aug 2002 11:45:05 -0700
+Received: from [212.2.188.179] (helo=mandark.labs.netnoteinc.com) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17k7o6-0001F3-00 for <SpamAssassin-devel@lists.sourceforge.net>;
+    Wed, 28 Aug 2002 11:44:47 -0700
+Received: from phobos.labs.netnoteinc.com (phobos.labs.netnoteinc.com
+    [192.168.2.14]) by mandark.labs.netnoteinc.com (8.11.6/8.11.6) with ESMTP
+    id g7SIid502061 for <SpamAssassin-devel@lists.sourceforge.net>;
+    Wed, 28 Aug 2002 19:44:39 +0100
+Received: by phobos.labs.netnoteinc.com (Postfix, from userid 500) id
+    399CE43F99; Wed, 28 Aug 2002 14:42:18 -0400 (EDT)
+Received: from phobos (localhost [127.0.0.1]) by
+    phobos.labs.netnoteinc.com (Postfix) with ESMTP id 34ABE33D8B for
+    <SpamAssassin-devel@lists.sf.net>; Wed, 28 Aug 2002 19:42:18 +0100 (IST)
+To: SpamAssassin-devel@example.sourceforge.net
+From: yyyy@spamassassin.taint.org (Justin Mason)
+X-GPG-Key-Fingerprint: 0A48 2D8B 0B52 A87D 0E8A  6ADD 4137 1B50 6E58 EF0A
+X-Image-Url: http://spamassassin.taint.org/me.jpg
+X-Habeas-Swe-1: winter into spring
+X-Habeas-Swe-2: brightly anticipated
+X-Habeas-Swe-3: like Habeas SWE (tm)
+X-Habeas-Swe-4: Copyright 2002 Habeas (tm)
+X-Habeas-Swe-5: Sender Warranted Email (SWE) (tm). The sender of this
+X-Habeas-Swe-6: email in exchange for a license for this Habeas
+X-Habeas-Swe-7: warrant mark warrants that this is a Habeas Compliant
+X-Habeas-Swe-8: Message (HCM) and not spam.  Please report use of this
+X-Habeas-Swe-9: mark in spam to <http://www.habeas.com/report/>.
+Message-Id: <20020828184218.399CE43F99@phobos.labs.netnoteinc.com>
+Subject: [SAdev] 2.40: ready for release?
+Sender: spamassassin-devel-admin@example.sourceforge.net
+Errors-To: spamassassin-devel-admin@example.sourceforge.net
+X-Beenthere: spamassassin-devel@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-devel-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-devel@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Id: SpamAssassin Developers <spamassassin-devel.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-devel>
+X-Original-Date: Wed, 28 Aug 2002 19:42:13 +0100
+Date: Wed, 28 Aug 2002 19:42:13 +0100
+
+OK guys -- I reckon it's now Good Enough, modulo some minor score
+tweaking, or commenting of some more broken/high-FP-ing rules.
+
+What do you all think?  are we ready to go?  anyone run into any trouble
+with the new autoconf code, or found a bug from the merge of that spamc
+BSMTP-support patch?
+
+I expect there *will* be a 2.41 BTW.
+
+--j.
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-devel mailing list
+Spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+

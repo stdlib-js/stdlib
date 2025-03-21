@@ -1,0 +1,76 @@
+From fork-admin@xent.com  Mon Sep 30 19:58:59 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 1913016F21
+	for <jm@localhost>; Mon, 30 Sep 2002 19:57:33 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 30 Sep 2002 19:57:33 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8UHJUK09309 for <jm@jmason.org>;
+    Mon, 30 Sep 2002 18:19:30 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 63C382940EB; Mon, 30 Sep 2002 10:19:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from jamesr.best.vwh.net (jamesr.best.vwh.net [192.220.76.165])
+    by xent.com (Postfix) with SMTP id 916262940EA for <fork@xent.com>;
+    Mon, 30 Sep 2002 10:18:07 -0700 (PDT)
+Received: (qmail 36539 invoked by uid 19621); 30 Sep 2002 17:15:59 -0000
+Received: from unknown (HELO avalon) ([64.125.200.18]) (envelope-sender
+    <jamesr@best.com>) by 192.220.76.165 (qmail-ldap-1.03) with SMTP for
+    <fork@xent.com>; 30 Sep 2002 17:15:59 -0000
+Subject: Re: A moment of silence for the First Amendment (fwd)
+From: James Rogers <jamesr@best.com>
+To: fork@spamassassin.taint.org
+In-Reply-To: <3D9879E9.7020708@permafrost.net>
+References: <JHEPKCEMGPKFFDHHDDKDMEJBFIAA.bill@wstoddard.com>
+    <3D9879E9.7020708@permafrost.net>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Evolution/1.0.2-5mdk
+Message-Id: <1033407397.13480.34.camel@avalon>
+MIME-Version: 1.0
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 30 Sep 2002 10:36:37 -0700
+
+On Mon, 2002-09-30 at 09:20, Owen Byrne wrote:
+> In my experience, this is classic "American" behaviour, and I don't 
+> think its on the increase outside of the US of A.
+
+
+In my experience, this protest behavior is really only an issue in
+"ultra-liberal" coastal cities, which is where I normally live.  It is
+part of the culture and that behavior is viewed as acceptable.  
+
+For comparison, contrast this with the character of the arguably more
+serious protests against Federal government abuse in the inter-mountain
+West.  They have a very different idea of what constitutes acceptable
+protest practice.  Those protests remain largely civil and polite, if
+heated and aggressive, and those involve a far greater percentage of the
+local population.  And unlike 99% of the liberal coastal city protests
+I've seen, the people protesting in the inter-mountain West are actually
+facing immediate dire consequences from the activities they are
+protesting and are strongly motivated to protest in a manner that gets
+results.  Some of their tactics, such as the practice of many businesses
+and restaurants in northern Nevada to not give service to anyone known
+to be in the employ of the BLM and related agencies, have been very
+effective at forcing dialog.  I don't recall anyone characterizing their
+protests as impolite, rude, or violent, but then they have more to lose.
+
+
+-James Rogers
+ jamesr@best.com
+
+

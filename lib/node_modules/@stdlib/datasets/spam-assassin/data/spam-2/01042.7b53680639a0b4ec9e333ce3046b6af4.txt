@@ -1,0 +1,197 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6P4bJi5028880
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Wed, 24 Jul 2002 23:37:19 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6P4bJYE028873
+	for cypherpunks-forward@ds.pro-ns.net; Wed, 24 Jul 2002 23:37:19 -0500 (CDT)
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6P4bBi5028858
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks@ds.pro-ns.net>; Wed, 24 Jul 2002 23:37:12 -0500 (CDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: from waste.minder.net (daemon@waste [66.92.53.73])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6P4bAJ65921
+	for <cypherpunks@ds.pro-ns.net>; Thu, 25 Jul 2002 00:37:10 -0400 (EDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: (from cpunks@localhost)
+	by waste.minder.net (8.11.6/8.11.6) id g6P4b9b23344
+	for cypherpunks@ds.pro-ns.net; Thu, 25 Jul 2002 00:37:09 -0400
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by waste.minder.net (8.11.6/8.11.6) with ESMTP id g6P4b6R23324
+	for <cpunks@minder.net>; Thu, 25 Jul 2002 00:37:06 -0400
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6P4b5J65909
+	for <cpunks@minder.net>; Thu, 25 Jul 2002 00:37:05 -0400 (EDT)
+	(envelope-from cpunks@einstein.ssz.com)
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id XAA29146
+	for cpunks@minder.net; Wed, 24 Jul 2002 23:46:06 -0500
+Received: (from mdom@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id XAA29138
+	for cypherpunks-outgoing; Wed, 24 Jul 2002 23:45:55 -0500
+Received: from www.fastgroupsa.com (jfnas2167.200-pool-149.cwpanama.net [208.167.200.149])
+	by einstein.ssz.com (8.8.8/8.8.8) with SMTP id XAA29132
+	for <cypherpunks@einstein.ssz.com>; Wed, 24 Jul 2002 23:45:48 -0500
+From: sancristobal@fastgroupsa.com
+Message-Id: <200207250445.XAA29132@einstein.ssz.com>
+To: Brokers<>
+Old-Subject: CDR: RE: International Real Estate - Huge Commissions
+Date: Wed, 24 Jul 2002 23:34:38 -0400
+X-Sender: sancristobal@fastgroupsa.com
+X-Mailer: QUALCOMM Windows Eudora Pro Version 4.1
+Content-Type: text/html; charset="iso-8859-1"
+X-Priority: 3
+X-MSMail-Priority: Normal
+Sender: owner-cypherpunks@einstein.ssz.com
+Precedence: bulk
+Reply-To: cypherpunks@einstein.ssz.com
+X-Mailing-List: cypherpunks@ssz.com
+X-Unsubscription-Info: http://einstein.ssz.com/cdr
+X-List-Admin: list@ssz.com
+X-Loop: ssz.com
+X-Acceptable-Languages: English, Russian, German, French, Spanish
+Subject: RE: International Real Estate - Huge Commissions
+
+
+
+
+
+
+<html>
+<head>
+<title>Web Letter</title>
+<LINK REL="stylesheet" HREF="http://www.sancristobalsa.net/letter/styles.css" TYPE="text/css"> 
+<style>
+<!--
+body
+{
+background-image:
+url(http://www.sancristobalsa.net/letter/images/bg.gif);
+background-repeat: repeat-y;
+background-position: top left
+}
+//-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" marginwidth="0" marginheight="0" topmargin="0" leftmargin="0">
+<table align="left" cellpadding="0" cellspacing="0" border="0" width="760">
+ <tr>
+  <td colspan="2"><img src="http://www.sancristobalsa.net/letter/images/header.jpg" width="760" height="90" border="0" alt=""></td>
+ </tr>
+ <tr>
+  <td align="left" width="190" valign="top"><br>
+<table align="left" cellpadding="0" cellspacing="0" border="0" width="190">
+ <tr><td><img src="http://www.sancristobalsa.net/letter/images/set1.jpg" width="190" height="400" border="0" alt=""></td></tr>
+ <tr><td><img src="http://www.sancristobalsa.net/letter/images/set2.jpg" width="190" height="360" border="0" alt=""></td></tr>
+</table>
+  </td>
+<td align="left" width="560" valign="top"><br>
+               <div align="center">
+                <P><B><FONT COLOR="#294D7F" SIZE="+2" FACE="Verdana,Tahoma,Arial,Helvetica,sans-serif">Tremendous Investment Opportunity!</FONT></B></p></div>
+                <div align="justify"><font class="text"><p>Are you are fed up with the manipulation and erratic performance of the stock market?&nbsp; Like most people, are you looking for a stable investment that can provide a <B>25%-35% tax-free annual cash flow return?&nbsp; If you answered yes to either question, I have an exciting offering for you.</B></P>
+     <p>I represent a company that has a limited offering of emerging growth Caribbean Real Estate that enjoins a tropical working farm, which provides <B>substantial cash flow, long-term wealth accumulation</B>, and the proven <B>appreciation of Caribbean real estate.</B></P>
+                <p>Here are the details:</P>
+                    <TABLE WIDTH="560" BORDER=0 CELLSPACING=0 CELLPADDING=0 ALIGN=center>
+                        <TR>
+                            <TD>
+                                <TABLE ID="Table3" BORDER=1 CELLSPACING=3 CELLPADDING=1 WIDTH="560">
+                                    <TR>
+                                        <TD WIDTH="560" BGCOLOR="#000000">
+<ul>
+                                           <p><img src="http://www.sancristobalsa.net/letter/images/starfish.gif" width="20" height="16">&nbsp;&nbsp;<font face="verdana, arial" size="2" color="#FFFFFF">A 20-acre tract of waterfront Caribbean real estate is only $106,000 (including closing costs and dual residency status in a tax-advantaged country).</font></p>
+  <font face="verdana, arial" size="2" color="#FFFFFF"><p><img src="http://www.sancristobalsa.net/letter/images/starfish.gif" width="20" height="16">&nbsp;&nbsp;The investment will be totally private and protected from lawsuits.</p></font>
+                                               <font face="verdana, arial" size="2" color="#FFFFFF"><p><img src="http://www.sancristobalsa.net/letter/images/starfish.gif" width="20" height="16">&nbsp;&nbsp;The plantation has a proven track record.</p></font>
+                                                <font face="verdana, arial" size="2" color="#FFFFFF"><p><img src="http://www.sancristobalsa.net/letter/images/starfish.gif" width="20" height="16">&nbsp;&nbsp;Total turnkey system is provided - You buy the real estate. The Management Company plants, maintains, and harvests your crop.&nbsp; You deposit the quarterly cash returns.</p></font>
+                                            </UL>
+                                        </TD>
+                                    </TR>
+                                </TABLE>
+                            </TD>
+                        </TR>
+                    </TABLE><br>
+<p>We currently have several tracts of Phase II remaining and it is premier property that is planned to overlook the natural marina of an eco resort. There is incredible demand for these tracts and I wanted to give you the first opportunity to participate in this exciting and lucrative project.</P>
+                <P>Please review the online PowerPoint presentation and I can put you in touch with the principals of the project to answer any questions that you have.</P>                <P><A HREF="http://www.sancristobalsa.net/customerppt/index.php?siteID=tom@realpropertymagazine.com">Click Here to View Presentation</a></P>
+                <P>Please contact me, as soon as possible, so you don't miss out on this offering.</P>
+                <P>Sincerely yours,<IMG ID="Picture5" SRC="http://www.sancristobalsa.net/images/spacer.gif" width="1" height="1" VSPACE=2 HSPACE=35 ALIGN="RIGHT" BORDER=0 ALT="">
+                <P>Corporate <BR>Real Property Magazine<BR>Master Broker<BR>San Cristobal Land Development<BR><A HREF="http://www.sancristobalsa.net/index.php?siteID=tom@realpropertymagazine.com"><FONT SIZE="-1" FACE="Verdana,Tahoma,Arial,Helvetica,sans-serif">http://www.sancristobalsa.net/index.php?siteID=tom@realpropertymagazine.com</FONT></A></P>
+                <P><B>PS.&nbsp; If Huge Returns, Rapid Cash Flow, and the Security of Titled Real Estate interest you, contact me, today!</B></P>
+                <P>
+Telephone: 011-507 226-2675<br>Fax: 011-507 226-5884<br>E-mail:&nbsp;<A HREF="mailto:tom@realpropertymagazine.com">tom@realpropertymagazine.com</A></P><br>
+Please fill in the form below to request more information:<br><br>
+
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="400">
+                    <tr>
+                      <td>
+<table align="center" bgcolor="#F1F5F9" border="0" cellpadding="0" cellspacing="0" width="200">
+                    <tr>
+                      <td width="10" height="10" valign="top"><img src="images/upl_corn.gif" width="10" height="10"></td><td valign="top" width="200" height="10" bgcolor="#F1F5F9"></td><td  width="10" height="10" valign="top"><img src="images/upr_corn.gif" width="10" height="10"></td>
+                    </tr>
+   <tr><td width="10" height="80" bgcolor="#F1F5F9"></td><td width="200" height="80" bgcolor="#F1F5F9">
+
+<!------FORM-------->
+<form method="post" action="thankyou.php" target="_blank">
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="210">
+	<tr>
+	 <td align="right"><br>
+<font face="Verdana, Arial, Helvetica, sans-serif" color="#305D9A" size="2">
+<b>Name: &nbsp;</b></font>
+	 </td>
+	 <td><br>
+<input type="text" name="newname" size="15" class="form">
+	</td>
+	</tr>
+	<tr>
+	 <td align="right">
+<font face="Verdana, Arial, Helvetica, sans-serif" color="#305D9A" size="2">
+<b>Phone: &nbsp;</b></font>
+	 </td>
+	<td>
+<input type="text" name="newphone" size="15" class="form">
+	</td>
+	</tr>
+	<tr>
+	 <td align="right">
+<font face="Verdana, Arial, Helvetica, sans-serif" color="#305D9A" size="2">
+<b>E-mail: &nbsp;</b></font>
+	 </td>
+	<td>
+<input type="text" name="newemail" size="15" class="form">
+	</td>
+	</tr>
+	<tr>
+	 <td colspan="2" align="center"><br>
+<input type="hidden" name="email" value="tom@realpropertymagazine.com">
+<input type="submit" name="submit" value="Enter" style="background-color: #F2F5F8"><br>
+
+	
+</td>
+</tr>
+</table>
+</form>
+
+   </td><td with="10" height="80" bgcolor="#F1F5F9"></td></tr>
+   <tr>
+                      <td width="10" height="10" valign="bottom"><img src="images/dwl_corn.gif" width="10" height="10"></td><td width="200" height="10" valign="bottom" bgcolor="#F1F5F9"></td><td width="10" height="10" valign="bottom"><img src="images/dwr_corn.gif" width="10" height="10"></td></tr></table>
+<p>&nbsp;</p></td></tr></table>
+</FONT></div><p>&nbsp;</p><p>&nbsp;</p>
+            </TD></tr></table>
+</body>
+</html>
+
+To be removed reply with "remove" in the subject line.  Thank you!
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

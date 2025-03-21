@@ -1,0 +1,77 @@
+From ilug-admin@linux.ie  Tue Aug  6 14:42:14 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id ACA5D44138
+	for <jm@localhost>; Tue,  6 Aug 2002 09:41:10 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 14:41:10 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g76DgOk32640 for
+    <jm-ilug@jmason.org>; Tue, 6 Aug 2002 14:42:24 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id OAA00834; Tue, 6 Aug 2002 14:39:14 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from pheriche.sun.com (pheriche.sun.com [192.18.98.34]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id OAA00799 for <ilug@linux.ie>;
+    Tue, 6 Aug 2002 14:39:07 +0100
+Received: from sunire.Ireland.Sun.COM ([129.156.220.30]) by
+    pheriche.sun.com (8.9.3+Sun/8.9.3) with ESMTP id HAA21335 for
+    <ilug@linux.ie>; Tue, 6 Aug 2002 07:39:05 -0600 (MDT)
+Received: from sionnach.ireland.sun.com (sionnach [129.156.220.28]) by
+    sunire.Ireland.Sun.COM (8.11.6+Sun/8.11.6/ENSMAIL,v2.2) with ESMTP id
+    g76Dd4l08850 for <ilug@linux.ie>; Tue, 6 Aug 2002 14:39:04 +0100 (BST)
+Received: from sionnach (localhost [127.0.0.1]) by
+    sionnach.ireland.sun.com (8.12.2+Sun/8.12.2) with ESMTP id g76Dd4fE009771
+    for <ilug@linux.ie>; Tue, 6 Aug 2002 14:39:04 +0100 (BST)
+Message-Id: <200208061339.g76Dd4fE009771@sionnach.ireland.sun.com>
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4
+To: ilug@linux.ie
+From: Albert White - SUN Ireland <albert.white@ireland.sun.com>
+Subject: Re: [ILUG] ffs
+In-Reply-To: Your message of
+    "Tue, 06 Aug 2002 23:19:41 +1000."
+    <20020806131941.89321.qmail@web21103.mail.yahoo.com>
+Date: Tue, 06 Aug 2002 14:39:04 +0100
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Hi,
+
+> has anyone got information on enabling ffs support in
+> the kernel, i was looking around, and information on
+> the subject seems to be sparse. 
+I have no clue about ffs but...
+
+In the 2.4 kernel source Documentation/Configure.help there are various kernel 
+options CONFIG_JFF* that enable it.
+
+http://developer.axis.com/software/jffs/ and http://sources.redhat.com/jffs2/ 
+are the URLs cited in that documentation. They have links to mailing lists and 
+archives which may be able to answer more specific questions.
+
+If you mean Amiga ffs, then thats selectable in the kernel config also :)
+
+Cheers,
+~Al
+
+-- 
+Expressed in this posting are my opinions.  They are in no way related
+to opinions held by my employer, Sun Microsystems.
+Statements on Sun products included here are not gospel and may
+be fiction rather than truth.
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

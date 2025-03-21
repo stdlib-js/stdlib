@@ -1,0 +1,41 @@
+From rssfeeds@jmason.org  Wed Sep 25 10:24:04 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id EF22816F03
+	for <jm@localhost>; Wed, 25 Sep 2002 10:24:03 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 25 Sep 2002 10:24:03 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8P83jC18358 for
+    <jm@jmason.org>; Wed, 25 Sep 2002 09:03:45 +0100
+Message-Id: <200209250803.g8P83jC18358@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: boingboing <rssfeeds@spamassassin.taint.org>
+Subject: Fake News Headlines: Basque Explosion Chases Ends In
+    Arm-wrestling Event
+Date: Wed, 25 Sep 2002 08:03:44 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://boingboing.net/#85485775
+Date: Not supplied
+
+NewZoid generates fake news-headlines: 
+
+    1- Miss Universe Calling For Isidore 
+    2- Rumsfeld Suggests Aspirin Reduces Alzheimer's Risk 
+    3- Editorial Attacks Computer System 
+    4- Stressed Out? Just Call For New TV Show 
+    5- Gore To Hear About It 
+    6- Nurses To Be Given Their Own Passports On Iraq Action 
+    7- US Arraigned In Fighting Slavery 
+    8- Lisa Riley Lines Below Chaos Above  
+
+Link[1] Discuss[2] (_Thanks, Daniel[3]!_)
+
+[1] http://www.newzoid.com/nzheadlinecombo.asp
+[2] http://www.quicktopic.com/boing/H/8juRS7A4p6JY
+[3] http://www.newzoid.com
+
+

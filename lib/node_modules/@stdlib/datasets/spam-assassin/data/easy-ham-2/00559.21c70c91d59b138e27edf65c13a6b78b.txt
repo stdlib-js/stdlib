@@ -1,0 +1,190 @@
+From razor-users-admin@lists.sourceforge.net  Thu Aug  1 04:27:42 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C31AC440A8
+	for <jm@localhost>; Wed, 31 Jul 2002 23:27:41 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 01 Aug 2002 04:27:41 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g713RR218337 for <jm-razor@jmason.org>; Thu, 1 Aug 2002 04:27:27 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17a6ST-0006NG-00; Wed,
+    31 Jul 2002 20:17:01 -0700
+Received: from smtp-gw.dmv.com ([64.45.128.8]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17a6Ra-0003Mm-00 for <razor-users@lists.sourceforge.net>; Wed,
+    31 Jul 2002 20:16:06 -0700
+Received: from mail-gw.dmv.com (mail-gw.dmv.com [64.45.128.6]) by
+    smtp-gw.dmv.com (8.9.3/8.11.6) with ESMTP id XAA91180; Wed, 31 Jul 2002
+    23:16:05 -0400 (EDT) (envelope-from sven@dmv.com)
+Received: from homediet (dogpound.dyndns.org [64.45.134.154]) by
+    mail-gw.dmv.com (8.11.6/8.11.6) with SMTP id g713Q8e80425; Wed,
+    31 Jul 2002 23:26:08 -0400 (EDT) (envelope-from sven@dmv.com)
+Message-Id: <00e701c23909$ee063bb0$0201a8c0@homediet>
+From: "Sven" <sven@dmv.com>
+To: <mail@vipul.net>
+Cc: <razor-users@example.sourceforge.net>
+References: <00df01c238fc$f04ac060$0201a8c0@homediet>
+    <20020731193146.B17700@rover.vipul.net>
+Subject: Re: [Razor-users] Smrazor, Milter, and Max connections
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Wed, 31 Jul 2002 23:17:07 -0400
+Date: Wed, 31 Jul 2002 23:17:07 -0400
+
+
+----- Original Message -----
+From: "Vipul Ved Prakash" <mail@vipul.net>
+To: "Sven" <sven@dmv.com>
+Cc: <razor-users@example.sourceforge.net>
+Sent: Wednesday, July 31, 2002 10:31 PM
+Subject: Re: [Razor-users] Smrazor, Milter, and Max connections
+
+
+> On Wed, Jul 31, 2002 at 09:44:08PM -0400, Sven wrote:
+> > With v2.14 of razor client and using Solaris 9 with sendmail 8.12.5 I
+have
+> > managed to get smrazor working (milter) -- sort of ... With light server
+> > loads, it seems to do fine; however during peak traffic times (or peak
+> > catalogue server usage???) , the smrazor milter stops and sometime dumps
+> > core as well.  Does anyone know of a limit in terms of number of
+> > messages/minute that can be theoretically processed? I have noticed
+timeouts
+> > occuring (I set the milter timeout per message to 15 seconds) often in
+huge
+> > lumps and the occasional "Could not get valid info from Discovery
+Servers")
+> > ?????
+>
+> 15 seconds is more than enough timeout... There's no request/minute limit,
+> and we are not close to hardware limits on any of the servers.
+>
+> Could you send me relevant sections from the log file as well as
+> your config?
+>
+>>From the maillog:
+Jul 31 22:52:20 cartman sendmail[21081]: [ID 801593 mail.error]
+g712pocb021081: Milter (smrazor): timeout before data read
+Jul 31 22:52:20 cartman sendmail[21081]: [ID 801593 mail.info]
+g712pocb021081: Milter (smrazor): to error state
+Jul 31 22:52:22 cartman sendmail[21091]: [ID 801593 mail.error]
+g712pocb021091: Milter (smrazor): timeout before data read
+Jul 31 22:52:22 cartman sendmail[21091]: [ID 801593 mail.info]
+g712pocb021091: Milter (smrazor): to error state
+
+>>From razor-agents.log
+Jul 31 17:35:43.637025 check[21171]: [ 1] razor-check error: nextserver:
+discover0: bootstrap_discovery:
+Jul 31 17:35:43.987175 check[21168]: [ 1] razor-check error: nextserver:
+discover0: bootstrap_discovery:
+Jul 31 18:36:34.652485 check[8241]: [ 1] razor-check error: nextserver:
+Could not get valid info from Discovery Servers
+Jul 31 22:01:09.162201 check[9973]: [ 1] razor-check error: nextserver:
+Could not get valid info from Discovery Servers
+
+>>From smrazor.err
+[07/31/2002 22:52:22] (1144) Error reading from razor-check (156a78)
+(21092): timeout
+[07/31/2002 22:52:42] (1144) Error reading from razor-check (16b948)
+(21221): timeout
+[07/31/2002 22:52:42] (1144) Error reading from razor-check (165348)
+(21227): timeout
+[07/31/2002 22:57:21] (1144) Error reading from razor-check (16d118)
+(22911): timeout
+
+razor-agent.conf
+#
+# Razor2 config file
+#
+# Autogenerated by Razor-Agents v2.14
+# Wed Jul 31 11:38:43 2002
+# Created with all default values
+#
+# see razor-agent.conf(5) man page
+#
+
+debuglevel             = 3
+identity               = identity
+ignorelist             = 0
+listfile_catalogue     = servers.catalogue.lst
+listfile_discovery     = servers.discovery.lst
+listfile_nomination    = servers.nomination.lst
+logfile                = /var/log/razor-agent.log
+min_cf                 = ac
+razorhome              = /etc/razor
+razorzone              = razor2.cloudmark.com
+rediscovery_wait       = 172800
+report_headers         = 1
+turn_off_discovery     = 0
+use_engines            = 1,2,3,4
+whitelist              = razor-whitelist
+
+Realizing that the above, after looking at it, is pretty much no help,
+changed debug to 9 and output the results to a text file. It is attached but
+the crux of the messages resemble:
+Jul 31 23:11:14.633544 check[5689]: [ 7] Can't read file
+servers.discovery.lst, looking relatve to
+Jul 31 23:11:14.634218 check[5689]: [ 5] Can't read file
+/servers.discovery.lst: No such file or directory
+ or
+Jul 31 23:07:19.115412 check[26156]: [ 6] no discovery listfile:
+servers.discovery.lst
+Jul 31 23:07:19.115878 check[26156]: [ 5] Finding Discovery Servers via DNS
+in the razor2.cloudmark.com zone
+Jul 31 23:07:19.174862 check[26155]: [ 8] Connection established
+Jul 31 23:07:19.175667 check[26155]: [ 4] 216.52.13.90 >> 29 server
+greeting: sn=N&srl=30&ep4=7542-10&a=l
+Jul 31 23:07:19.176887 check[26155]: [ 4] 216.52.13.90 << 12
+Jul 31 23:07:19.177344 check[26155]: [ 6] a=g&pm=csl
+Jul 31 23:07:19.214020 check[26124]: [ 6] Found 1 Discovery Servers via DNS
+in the razor2.cloudmark.com zone
+Jul 31 23:07:19.214729 check[26124]: [ 8] Checking with Razor Discovery
+Server 216.52.13.90
+Jul 31 23:07:19.215383 check[26124]: [ 6] No proper port specified, using
+2703
+Jul 31 23:07:19.215833 check[26124]: [ 5] Connecting to 216.52.13.90 ...
+
+It would appear that even though there is a specified home directory,
+razor-check cannot read the .lst files and must apparently run discovery at
+each lookup?????
+
+This, btw, is occuring on two separate servers ...
+
+Sven
+
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Dice - The leading online job board
+for high-tech professionals. Search and apply for tech jobs today!
+http://seeker.dice.com/seeker.epl?rel_code=31
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

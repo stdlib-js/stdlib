@@ -1,0 +1,78 @@
+From rpm-list-admin@freshrpms.net  Tue Aug  6 11:13:22 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 328174412A
+	for <jm@localhost>; Tue,  6 Aug 2002 06:09:09 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:09:09 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g73HeEv21552 for
+    <jm-rpm@jmason.org>; Sat, 3 Aug 2002 18:40:14 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g73HW2J23725; Sat, 3 Aug 2002 19:32:03
+    +0200
+Received: from gateway.gestalt.entity.net
+    (host217-39-70-155.in-addr.btopenworld.com [217.39.70.155]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g73HVnJ23693 for
+    <rpm-list@freshrpms.net>; Sat, 3 Aug 2002 19:31:49 +0200
+Received: from turner.gestalt.entity.net (turner.gestalt.entity.net
+    [192.168.0.253]) by gateway.gestalt.entity.net (8.11.6/8.11.2) with ESMTP
+    id g73HZJ915850 for <rpm-list@freshrpms.net>; Sat, 3 Aug 2002 18:35:19
+    +0100
+Subject: APT, gcc-3.2-0.1
+From: Dave Cridland <dave@cridland.net>
+To: rpm-zzzlist@freshrpms.net
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8 (1.0.8-4)
+Message-Id: <1028396119.14824.369.camel@turner.gestalt.entity.net>
+MIME-Version: 1.0
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: 03 Aug 2002 18:35:19 +0100
+Date: 03 Aug 2002 18:35:19 +0100
+
+Hiya folks,
+
+I'm currently running RawHide, since I had the brilliant idea that, by
+using APT, it might actually be practical to keep up with the
+developments.
+
+However, APT seems to want a recompile - its sometimes leaving the RPM
+database in need of a db_recover - and gcc 3.2 seems to require a closer
+adherence to the standard than the C++ in APT was written for.
+
+This is a bit of a bummer.
+
+Does anyone know if there's a latest version I could try which might
+work, or whether I should simply do the porting myself? (I've made a
+start, but there's a fair amount of work to do.)
+
+If this works out, I might start a repository for the freshrpms compiled
+on vLatest RawHide, for my own purposes and anyone else who's
+interested.
+
+Dave.
+
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

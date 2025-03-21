@@ -1,0 +1,12 @@
+
+{{alias}}
+    Boolean indicating if the current process is running on Windows.
+
+    Examples
+    --------
+    > {{alias}}
+    <boolean>
+
+    See Also
+    --------
+

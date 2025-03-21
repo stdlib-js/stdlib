@@ -1,0 +1,63 @@
+From hpr-2@solarisexpert.com  Mon Jun 24 17:41:02 2002
+Return-Path: hpr-2@solarisexpert.com
+Delivery-Date: Mon Feb  4 20:43:53 2002
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g14Khr825697 for
+    <jm@jmason.org>; Mon, 4 Feb 2002 20:43:53 GMT
+Received: from ath1400 (24.26.104.124.sanford-ubr-a.cfl.rr.com
+    [24.26.104.124]) by webnote.net (8.9.3/8.9.3) with SMTP id UAA24726 for
+    <jm@jmason.org>; Mon, 4 Feb 2002 20:43:52 GMT
+Message-Id: <200202042043.UAA24726@webnote.net>
+From: SolariseXpert <hpr-2@solarisexpert.com>
+Reply-To: hpr-2@solarisexpert.com
+Subject: Sun Hardware 50% off list price
+Date: Mon, 04 Feb 2002 15:44:10 -0500
+X-Mailer: 007 Direct Email Easy
+MIME-Version: 1.0
+X-Status: 
+X-Keywords: 
+Content-Type: multipart/mixed; boundary="54a5e47a-30cb-4795-82c2-220a03d8450a"
+
+
+This is a multi-part message in MIME format
+--54a5e47a-30cb-4795-82c2-220a03d8450a
+Content-Type: text/plain; charset=windows-1252
+Content-Transfer-Encoding: quoted-printable
+
+Dear IT Professional,
+
+SolariseXpert offers Sun Microsystems servers at 35-60% off Sun's list price.=
+
+
+http://www.solariseXpert.com
+
+Few examples:
+
+T3 Arrays unused in original sealed box  $30,000 (Sun list price $55,700) 
+Enterprise E4500 remanufactured $48,000 (Sun list price $124,600)
+Enterprise E3500 unused in original sealed box $27,000 (Sun list price =
+$52,000)
+SunFire 280R  unused in original sealed box  $8,200
+E10K (Enteprise 10000 w/ 20 processors) remanufactured $225,000 (Sun list =
+price $920,210)
+
+Trade-ins welcome. We will fit your budget for any Sun server, storage array =
+and parts/upgrades.
+
+We have offices in the US and Europe with partners in the  AsiaPac region.
+
+Thank you.
+
+The Team at SolariseXpert
+(877) 44 SOLEX (Toll Free US)
++001 407 323 1668 International (Si parla Italiano)
+http://www.solariseXpert.com
+
+NOTICE: SolariseXpert.com is NOT related in any way to Sun Microsystems Inc. =
+
+We do not engage in trading of e-mail addresses or continous mass-mailing. =
+This is most likely the only message you will ever receive from us. If you =
+are receiving this message by mistake, please reply with "REMOVE" in the =
+subject line to be permanently removed.   
+--54a5e47a-30cb-4795-82c2-220a03d8450a--
+

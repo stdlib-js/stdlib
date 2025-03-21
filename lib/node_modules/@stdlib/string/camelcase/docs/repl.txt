@@ -1,0 +1,23 @@
+
+{{alias}}( str )
+    Converts a string to camel case.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    Returns
+    -------
+    out: string
+        Camel-cased string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'Hello World!' )
+    'helloWorld'
+    > out = {{alias}}( 'beep boop' )
+    'beepBoop'
+
+    See Also
+    --------

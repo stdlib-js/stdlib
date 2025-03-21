@@ -1,0 +1,53 @@
+From fork-admin@xent.com  Tue Aug  6 12:00:22 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id EA668441FE
+	for <jm@localhost>; Tue,  6 Aug 2002 06:49:20 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:49:20 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g753Cnv26850 for <jm@jmason.org>;
+    Mon, 5 Aug 2002 04:12:49 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 22FDE294164; Sun,  4 Aug 2002 20:06:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from imo-r01.mx.aol.com (imo-r01.mx.aol.com [152.163.225.97]) by
+    xent.com (Postfix) with ESMTP id BF25C2940F4 for <fork@xent.com>;
+    Sun,  4 Aug 2002 20:05:57 -0700 (PDT)
+Received: from Grlygrl201@aol.com by imo-r01.mx.aol.com (mail_out_v33.5.)
+    id 2.8d.1c26fa17 (15874) for <fork@xent.com>; Sun, 4 Aug 2002 23:06:36
+    -0400 (EDT)
+Received: from  aol.com (mow-m02.webmail.aol.com [64.12.184.130]) by
+    air-id07.mx.aol.com (v86_r1.16) with ESMTP id MAILINID71-0804230636;
+    Sun, 04 Aug 2002 23:06:36 -0400
+From: grlygrl201@aol.com
+To: fork@spamassassin.taint.org
+Subject: Tryst of Fate
+Message-Id: <5081D4F4.43524DCE.0F48F476@aol.com>
+X-Mailer: Atlas Mailer 2.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 04 Aug 2002 23:06:36 -0400
+
+. . . or eventuality: Bush and Cheney fuck each other when the rest of the nation suddenly becomes unavailable.
+
+http://www.hfcletter.com/letter/August02/
+
+gg
+http://xent.com/mailman/listinfo/fork
+
+

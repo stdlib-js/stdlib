@@ -1,0 +1,60 @@
+From rpm-list-admin@freshrpms.net  Mon Jul 22 19:20:14 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 11718440C9
+	for <jm@localhost>; Mon, 22 Jul 2002 14:20:14 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 19:20:14 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFIV903105 for
+    <jm-rpm@jmason.org>; Mon, 22 Jul 2002 16:18:31 +0100
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by webnote.net
+    (8.9.3/8.9.3) with ESMTP id KAA31166 for <jm-rpm@jmason.org>;
+    Mon, 22 Jul 2002 10:32:18 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6M9T6C24372; Mon, 22 Jul 2002 11:29:07
+    +0200
+Received: from grimm1.grimstad (ti131310a080-0960.bb.online.no
+    [80.212.19.192]) by egwn.net (8.11.6/8.11.6/EGWN) with SMTP id
+    g6M7gUC21459 for <rpm-list@freshrpms.net>; Mon, 22 Jul 2002 09:42:31 +0200
+Received: From LOCALHOST.LOCALDOMAIN (148.121.170.2[148.121.170.2
+    port:4688]) by grimm1.grimstad Mail essentials (server 2.422) with SMTP
+    id: <7700@grimm1.grimstad> for <rpm-zzzlist@freshrpms.net>; Mon,
+    22 Jul 2002 9:41:41 AM +0200 smtpmailfrom <noselasd@Utel.no>
+Received: (from noselasd@localhost) by localhost.localdomain
+    (8.11.6/8.11.6) id g6M7gIe29136 for rpm-list@freshrpms.net; Mon,
+    22 Jul 2002 09:42:18 +0200
+From: "Nils O. Selåsdal" <noselasd@Utel.no>
+Message-Id: <200207220742.g6M7gIe29136@localhost.localdomain>
+To: rpm-zzzlist@freshrpms.net
+Subject: My Repository...
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Mon, 22 Jul 2002 09:42:18 +0200
+Date: Mon, 22 Jul 2002 09:42:18 +0200
+
+Just for your information, I have an apt-repository for RH 7.3 at
+http://utelsystems.dyndns.org
+--
+NOS@Utel.no
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

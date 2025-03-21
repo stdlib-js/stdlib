@@ -1,0 +1,70 @@
+From ilug-admin@linux.ie  Thu Aug 15 10:51:33 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 96F4B43C37
+	for <jm@localhost>; Thu, 15 Aug 2002 05:49:46 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 15 Aug 2002 10:49:46 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7EIiY430306 for
+    <jm-ilug@jmason.org>; Wed, 14 Aug 2002 19:44:34 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id TAA24129; Wed, 14 Aug 2002 19:43:36 +0100
+Received: from matrix.netsoc.tcd.ie (netsoc.tcd.ie [134.226.83.50]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id TAA24104 for <ilug@linux.ie>;
+    Wed, 14 Aug 2002 19:43:30 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host netsoc.tcd.ie
+    [134.226.83.50] claimed to be matrix.netsoc.tcd.ie
+Received: from matrix (localhost [127.0.0.1]) by matrix.netsoc.tcd.ie
+    (Postfix) with ESMTP id DCD403445A for <ilug@linux.ie>; Wed,
+    14 Aug 2002 19:42:59 +0100 (IST)
+Date: Wed, 14 Aug 2002 19:42:58 +0100
+To: "'ilug@linux.ie'" <ilug@linux.ie>
+Subject: POTW (Was Re: [ILUG] mirroring on a running system)
+Message-Id: <20020814194258.B19685@netsoc.tcd.ie>
+References: <0D443C91DCE9CD40B1C795BA222A729E018855D0@milexc01.maxtor.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <0D443C91DCE9CD40B1C795BA222A729E018855D0@milexc01.maxtor.com>
+User-Agent: Mutt/1.3.23i
+X-Operating-System: SunOS matrix 5.8 Generic_108528-09 sun4u sparc
+From: Gary Coady <gary+dated+1029782579.faabce@netsoc.tcd.ie>
+Mail-Followup-To: ilug@linux.ie
+X-Delivery-Agent: TMDA/0.59
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Takers galore possibly (me inclusive). Especially when the subject
+is more on-topic :-)
+
+Gary.
+
+On Wed, Aug 14, 2002 at 10:08:03AM +0100, Wynne, Conor wrote:
+> All right, can't get pissed though as its a week-day. If we were to do
+> it in Lucan, that would be another story ;--)
+> 
+> Do we have many takers? 
+> 
+> CW
+> 
+> -------------
+> On Wed, Aug 14, 2002 at 09:22:27AM +0100, Wynne, Conor mentioned:
+> > When are we going to have a pint? 
+> 
+>  Tuesday next week. Boars Head, Capel st.
+> 
+> Kate
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

@@ -1,0 +1,88 @@
+From ilug-admin@linux.ie  Wed Oct  9 10:54:29 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id BFED716F49
+	for <zzzz@localhost>; Wed,  9 Oct 2002 10:52:38 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 09 Oct 2002 10:52:38 +0100 (IST)
+Received: from lugh.tuatha.org (postfix@lugh.tuatha.org [194.125.145.45])
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g98MeVK04957 for
+    <zzzz-ilug@spamassassin.taint.org>; Tue, 8 Oct 2002 23:40:31 +0100
+Received: from lugh.tuatha.org (localhost [127.0.0.1]) by lugh.tuatha.org
+    (Postfix) with ESMTP id 3DBD0341E8; Tue,  8 Oct 2002 23:41:16 +0100 (IST)
+Delivered-To: linux.ie-ilug@localhost
+Received: from linuxmafia.com (linuxmafia.COM [198.144.195.186]) by
+    lugh.tuatha.org (Postfix) with ESMTP id 6435B3410E for <ilug@linux.ie>;
+    Tue,  8 Oct 2002 23:40:48 +0100 (IST)
+Received: from rick by linuxmafia.com with local (Exim 3.36 #1 (Debian))
+    id 17z34V-0008QK-00 for <ilug@linux.ie>; Tue, 08 Oct 2002 15:43:23 -0700
+To: ilug@linux.ie
+Subject: Re: [ILUG] Interesting article on free software licences
+Message-Id: <20021008224312.GB11235@linuxmafia.com>
+References: <20021007101909.A16074@wanadoo.fr>
+    <20021008215152.80676.qmail@web13904.mail.yahoo.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20021008215152.80676.qmail@web13904.mail.yahoo.com>
+User-Agent: Mutt/1.4i
+X-Mas: Bah humbug.
+From: Rick Moen <rick@linuxmafia.com>
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Beenthere: ilug@linux.ie
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:ilug-request@linux.ie?subject=help>
+List-Post: <mailto:ilug@linux.ie>
+List-Subscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=subscribe>
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+List-Unsubscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=unsubscribe>
+List-Archive: <http://www.linux.ie/pipermail/ilug/>
+X-Original-Date: Tue, 8 Oct 2002 15:43:12 -0700
+Date: Tue, 8 Oct 2002 15:43:12 -0700
+
+Quoting Paul Linehan (plinehan@yahoo.com):
+
+> The point here is that (under French law) the author can change the
+> terms of the licence arbitarily. This is because any granting of
+> rights by an author must be clearly delimited in terms of how long,
+> where, to whom, dates and times.
+
+The GPL and similar licences are explicitly permanent grants of rights
+attached to an instance of his work.  (The other stuff mentioned
+concerns contract law, e.g., the required element of privity, etc.)
+
+> In the absence of such limitations, the original author has the right
+> to change his software back to closed on a whim.
+
+No, the author has the right to issue _additional_ instances under a
+different licence, such as a proprietary ("closed" [sic]) licence.  
+
+> Rick Moen makes the point that it is not a sale but rather a granting
+> of rights which are not default. 
+> 
+> See the bit about even the granting of rights by an author having to
+> be explicitly specified - under French law.
+
+The analysis, here and elsewhere, concerns contract law.  This isn't
+contract law.
+
+This isn't the first time copyright attorneys have stumbled on this
+subject.  I'm sure it won't be the last.
+
+-- 
+Cheers,              "The front line of defense against such sophisticated 
+Rick Moen            viruses is a continually evolving computer operating 
+rick@linuxmafia.com  system that attracts the efforts of eager software
+                     developers."  -- Bill Gates         
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

@@ -1,0 +1,14 @@
+
+{{alias}}
+    Windows path segment separator.
+
+    Examples
+    --------
+    > {{alias}}
+    '\\'
+    > var parts = 'foo\\bar\\baz'.split( {{alias}} )
+    [ 'foo', 'bar', 'baz' ]
+
+    See Also
+    --------
+

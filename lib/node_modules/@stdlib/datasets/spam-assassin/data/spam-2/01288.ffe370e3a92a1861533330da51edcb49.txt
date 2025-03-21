@@ -1,0 +1,77 @@
+From RD4Bij@hotmail.com  Tue Aug  6 12:55:17 2002
+Return-Path: <RD4Bij@hotmail.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3A57E44251
+	for <jm@localhost>; Tue,  6 Aug 2002 07:31:17 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 12:31:17 +0100 (IST)
+Received: from 019 ([210.243.155.120]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with SMTP id g75BUqv08756 for <jm@jmason.org>;
+    Mon, 5 Aug 2002 12:30:52 +0100
+Date: Mon, 5 Aug 2002 12:30:52 +0100
+Received: from yahoo by gcn.net.tw with SMTP id wl0ecZrArSmD43T8CJrsyk;
+    Mon, 05 Aug 2002 19:35:02 +0800
+Message-Id: <F0GcD5Jy1n@microsoft.com>
+From: dimon@h8h.com.tw
+To: 06@dogma.slashnull.org, 05@dogma.slashnull.org,
+	04@dogma.slashnull.org, 03@dogma.slashnull.org,
+	02@dogma.slashnull.org, 01@dogma.slashnull.org,
+	0803-2@dogma.slashnull.org, 0803-3@dogma.slashnull.org,
+	0804-1@dogma.slashnull.org
+Subject: =?big5?Q?=A5x=C6W=A4H=A3x=A5i=A9=C8=A7A=AC=DD?=
+MIME-Version: 1.0
+X-Mailer: T7ZMpb0XnYxUD1AjuR130Qf4Dapf
+X-Priority: 3
+X-Msmail-Priority: Normal
+Content-Type: multipart/related; type="multipart/alternative"; boundary="----=_NextPart_U7taSLCsDhMjBsrSf8w"
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_U7taSLCsDhMjBsrSf8w
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_U7taSLCsDhMjBsrSf8wAA"
+
+
+------=_NextPart_U7taSLCsDhMjBsrSf8wAA
+Content-Type: text/html;
+	charset="big5"
+Content-Transfer-Encoding: base64
+
+PGh0bWw+DQoNCjxoZWFkPg0KPG1ldGEgaHR0cC1lcXVpdj0iQ29udGVudC1MYW5ndWFnZSIgY29u
+dGVudD0iemgtdHciPg0KPG1ldGEgaHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0
+ZXh0L2h0bWw7IGNoYXJzZXQ9YmlnNSI+DQo8bWV0YSBuYW1lPSJHRU5FUkFUT1IiIGNvbnRlbnQ9
+Ik1pY3Jvc29mdCBGcm9udFBhZ2UgNC4wIj4NCjxtZXRhIG5hbWU9IlByb2dJZCIgY29udGVudD0i
+RnJvbnRQYWdlLkVkaXRvci5Eb2N1bWVudCI+DQo8dGl0bGU+pL2qqbxzp2mrSL1kqNI8L3RpdGxl
+Pg0KPC9oZWFkPg0KDQo8Ym9keT4NCg0KPHAgc3R5bGU9Im1hcmdpbi10b3A6IDA7IG1hcmdpbi1i
+b3R0b206IDAiPjxmb250IGNvbG9yPSIjODA4MDgwIj6zb6xPqWWwVaXRsU23frxzp2mkvaVxpU61
+b6TFqr2xtaZeq0i1TKprsbWmrCAgICAgDQrL5yB+ICE8L2ZvbnQ+PC9wPiAgICANCg0KPGhyIHNp
+emU9IjEiPg0KPGRpdiBhbGlnbj0iY2VudGVyIj4NCiAgPGNlbnRlcj4NCiAgPHRhYmxlIGJvcmRl
+cj0iMCIgd2lkdGg9IjYwNiIgaGVpZ2h0PSIzNjUiIGNlbGxzcGFjaW5nPSIwIiBjZWxscGFkZGlu
+Zz0iMCIgc3R5bGU9ImJvcmRlcjogMiBkb3R0ZWQgI0ZGOTkzMyI+DQogICAgPHRyPg0KICAgICAg
+PHRkIHdpZHRoPSI2MDAiIGhlaWdodD0iMzY1IiB2YWxpZ249Im1pZGRsZSIgYWxpZ249ImNlbnRl
+ciIgYmdjb2xvcj0iI0U2RkZGMiI+PGZvbnQgc2l6ZT0iNCI+PGI+PGZvbnQgY29sb3I9IiMwMDgw
+ODAiPrRNp+TCvaitvve3fLbcoUg8L2ZvbnQ+PGZvbnQgY29sb3I9IiM4MDAwMDAiPqazuGfA2cCj
+pE+23KFIoUg8L2ZvbnQ+PGZvbnQgY29sb3I9IiM4MDgwMDAiPrdRvtams6bbpHaquqjGt3623KFI
+oUihSDwvZm9udD48L2I+PC9mb250Pg0KICAgICAgICA8cD4mbmJzcDs8Yj48Zm9udCBjb2xvcj0i
+I2ZmMDBmZiIgc2l6ZT0iNyI+p088L2ZvbnQ+PGZvbnQgY29sb3I9IiNmZjAwMDAiIHNpemU9IjYi
+PsNousOhSaFJp0u2T711pFe8dqT5pd+nWbHQp0GmcKbzsLWo7KzdwLSkRrROr+A8L2ZvbnQ+PGZv
+bnQgY29sb3I9IiNmZjY2MDAiIHNpemU9IjciPqfvxdynQaq6pEClzTwvZm9udD48L2I+PC9wPg0K
+ICAgICAgICA8cD48Zm9udCBzaXplPSI1Ij4mbmJzcDs8L2ZvbnQ+PGEgaHJlZj0iaHR0cDovL2Rp
+bW9uLmg4aC5jb20udHcvIj48Yj48dT48c3BhbiBzdHlsZT0iQkFDS0dST1VORC1DT0xPUjogIzAw
+MDBmZiI+PGZvbnQgY29sb3I9IiNmZmZmMDAiIHNpemU9IjUiPr11pFe8dqT5PC9mb250Pjwvc3Bh
+bj48L3U+PC9iPjwvYT48L3A+DQogICAgICAgIDxwPqFAPC90ZD4NCiAgICA8L3RyPg0KICA8L3Rh
+YmxlPg0KICA8L2NlbnRlcj4NCjwvZGl2Pg0KPGhyIHNpemU9IjEiPg0KPHAgYWxpZ249ImNlbnRl
+ciIgc3R5bGU9Im1hcmdpbi10b3A6IDA7IG1hcmdpbi1ib3R0b206IDAiPjxmb250IGNvbG9yPSIj
+RkYwMDAwIj6mcKazpbTCWr3QqKO9zKFBpKO3UaZBpqyo7Ka5q0i90Kv2Jm5ic3A7ICAgDQotJmd0
+OyZuYnNwOyAoPGEgaHJlZj0iaHR0cDovL3gtbWFpbC5oOGguY29tLnR3IiB0YXJnZXQ9Il9ibGFu
+ayI+qdqmrLxzp2k8L2E+KTwvZm9udD48L3A+IA0KDQo8L2JvZHk+DQoNCjwvaHRtbD4=
+
+
+------=_NextPart_U7taSLCsDhMjBsrSf8wAA--
+------=_NextPart_U7taSLCsDhMjBsrSf8w--
+
+
+
+

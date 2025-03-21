@@ -1,0 +1,91 @@
+From fork-admin@xent.com  Tue Jul 23 21:45:09 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2F228440CC
+	for <jm@localhost>; Tue, 23 Jul 2002 16:45:09 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 23 Jul 2002 21:45:09 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6NKj5427266 for <jm@jmason.org>;
+    Tue, 23 Jul 2002 21:45:05 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 45ABD294134; Tue, 23 Jul 2002 13:34:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from TheWorld.com (pcls4.std.com [199.172.62.106]) by xent.com
+    (Postfix) with ESMTP id C5583294133 for <fork@xent.com>; Tue,
+    23 Jul 2002 13:33:23 -0700 (PDT)
+Received: from shell.TheWorld.com (root@shell01.TheWorld.com
+    [199.172.62.241]) by TheWorld.com (8.9.3/8.9.3) with ESMTP id QAA29548 for
+    <fork@xent.com>; Tue, 23 Jul 2002 16:42:34 -0400
+Received: from localhost (jts1486@localhost) by shell.TheWorld.com
+    (8.9.3/8.9.3) with ESMTP id QAA30578356 for <fork@xent.com>;
+    Tue, 23 Jul 2002 16:42:34 -0400 (EDT)
+X-Authentication-Warning: shell01.TheWorld.com: jts1486 owned process
+    doing -bs
+From: JTS - MCDLXXXVI <jts1486@theworld.com>
+To: fork@spamassassin.taint.org
+Subject: Re: NYTimes.com Article: Why We're So Nice: We're Wired to Cooperate
+In-Reply-To: <20020723190902.17728.83188.Mailman@lair.xent.com>
+Message-Id: <Pine.SGI.4.40.0207231633290.30951782-100000@shell01.TheWorld.com>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 23 Jul 2002 16:42:33 -0400
+
+From: Win Treese <treese@acm.org>
+> And Owen replied:
+> > Well, IMNHO, its because companies do not reward knowledge sharers.
+>
+> I don't work in this area, but I have a suspicion that many people
+> suspect projects for "knowledge management" and "knowledge sharing" as
+> attempts to eliminate their jobs, or at least their importance. If "the
+> organization" knows all the things I know, why does it need me?
+
+I agree wholeheartedly.  It is easier to sit on knowledge than to
+continually acquire more on the frontiers.
+
+> This should actually be easy to test experimentally: compare the results
+> of having someone call up and say, "Can you show us how to do X for this
+> project we're working on?" with those of having someone summoned by a
+> knowledge management project to explain how to do X for the knowledge
+> archives.
+
+This is in fact very true.  People hate doing this for several reasons in
+my experience:
+1) "Software changes.   Why waste time writing a FAQ now that will be out
+of date at the next release in 3 months?"
+2) "This knowledge is specialized.  Only 4 people need to know this, and
+they already do.  If anyone else needs to know it they know who they can
+call."
+The same engineers who give these excuses will spend eternities on the
+phone discussing this arcana and sharing the knowledge with anyone who has
+the patience to ask.
+
+The strongest contributors freely share everything they know whenever
+asked (or whenever they see the need for the information in the company)
+and who at the same time continue to generate new knowledge.
+
+Personal evaluation: my worth comes slightly lower on the scale in that I
+synthesize the knowledge from various personal sharing exercises into
+usable documents and messages for the company to employ.  This would seem
+like a marketing exercise except that Marketing is useless.   Useful
+knowledge sharing comes (IMHO) from engineering and sales.
+
+	JTS
+
+http://xent.com/mailman/listinfo/fork
+
+

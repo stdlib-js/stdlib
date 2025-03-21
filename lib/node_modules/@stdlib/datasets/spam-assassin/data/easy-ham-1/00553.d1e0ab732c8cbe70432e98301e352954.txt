@@ -1,0 +1,76 @@
+From fork-admin@xent.com  Wed Sep 11 13:49:38 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 913A716F16
+	for <jm@localhost>; Wed, 11 Sep 2002 13:49:37 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 11 Sep 2002 13:49:37 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8B71IC05326 for <jm@jmason.org>;
+    Wed, 11 Sep 2002 08:01:18 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id C99EB2940FF; Tue, 10 Sep 2002 23:58:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from relay.pair.com (relay1.pair.com [209.68.1.20]) by xent.com
+    (Postfix) with SMTP id 9F7CE29409A for <fork@xent.com>; Tue,
+    10 Sep 2002 23:57:12 -0700 (PDT)
+Received: (qmail 54161 invoked from network); 11 Sep 2002 07:00:06 -0000
+Received: from adsl-67-119-24-188.dsl.snfc21.pacbell.net (HELO golden)
+    (67.119.24.188) by relay1.pair.com with SMTP; 11 Sep 2002 07:00:06 -0000
+X-Pair-Authenticated: 67.119.24.188
+Message-Id: <029801c25960$db348560$640a000a@golden>
+From: "Gordon Mohr" <gojomo@usa.net>
+To: <fork@spamassassin.taint.org>
+References: <DAV60BuhOF3Gc76oajS00012b65@hotmail.com>
+Subject: Re: Microsoft buys XDegress - more of a p2p/distributed data thing...
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 11 Sep 2002 00:00:01 -0700
+
+Mr. FoRK writes:
+> "Files can be cached on multiple systems randomly scattered around the
+> Internet, as with Napster or Freenet. In fact, the caching in XDegrees is
+> more sophisticated than it is on those systems: users with high bandwidth
+> connections can download portions, or "stripes," of a file from several
+> cached locations simultaneously. The XDegrees software then reassembles
+> these stripes into the whole file and uses digital signatures to verify that
+> the downloaded file is the same as the original. A key component of this
+> digital signature is a digest of the file, which is stored as an HTTP header
+> for the file."
+
+This "more sophisticated than [Napster or Freenet]" part seems
+to be the same behavior implemented in many other P2P CDNs, 
+such as:
+
+  - Kazaa
+  - EDonkey/Overnet
+  - BitTorrent
+  - Gnutella (with HUGE extensions)
+  - OnionNetworks WebRAID
+
+...though the quality of the "digest" used by each system varies
+wildly.
+
+- Gordon
+
+
+

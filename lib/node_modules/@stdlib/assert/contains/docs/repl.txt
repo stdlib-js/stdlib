@@ -1,0 +1,57 @@
+
+{{alias}}( val, searchValue[, position] )
+    Tests if an array-like value contains a search value.
+
+    When `val` is a string, the function checks whether the characters of the
+    search string are found in the input string. The search is case-sensitive.
+
+    When `val` is an array-like object, the function checks whether the input
+    array contains an element strictly equal to the specified search value.
+
+    For strings, this function is modeled after `String.prototype.includes`,
+    part of the ECMAScript 6 specification. This function is different from a
+    call to `String.prototype.includes.call` insofar as type-checking is
+    performed for all arguments.
+
+    The function does not distinguish between positive and negative zero.
+
+    If `position < 0`, the search is performed for the entire input array or
+    string.
+
+
+    Parameters
+    ----------
+    val: ArrayLike
+        Input value.
+
+    searchValue: any
+        Value to search for.
+
+    position: integer (optional)
+        Position at which to start searching for `searchValue`. Default: `0`.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an input value contains another value.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 'Hello World', 'World' )
+    true
+    > bool = {{alias}}( 'Hello World', 'world' )
+    false
+    > bool = {{alias}}( [ 1, 2, 3, 4 ], 2 )
+    true
+    > bool = {{alias}}( [ NaN, 2, 3, 4 ], NaN )
+    true
+
+    // Supply a position:
+    > bool = {{alias}}( 'Hello World', 'Hello', 6 )
+    false
+    > bool = {{alias}}( [ true, NaN, false ], true, 1 )
+    false
+
+    See Also
+    --------
+

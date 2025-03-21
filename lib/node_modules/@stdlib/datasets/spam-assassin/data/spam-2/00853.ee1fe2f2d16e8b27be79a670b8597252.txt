@@ -1,0 +1,53 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6M47AhY004105
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Sun, 21 Jul 2002 23:07:11 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6M47Aln004094
+	for cypherpunks-forward@ds.pro-ns.net; Sun, 21 Jul 2002 23:07:10 -0500 (CDT)
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6M474hY004084
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks@ds.pro-ns.net>; Sun, 21 Jul 2002 23:07:07 -0500 (CDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: from waste.minder.net (daemon@waste [66.92.53.73])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6M473J08512
+	for <cypherpunks@ds.pro-ns.net>; Mon, 22 Jul 2002 00:07:03 -0400 (EDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: (from cpunks@localhost)
+	by waste.minder.net (8.11.6/8.11.6) id g6M472O14863
+	for cypherpunks@ds.pro-ns.net; Mon, 22 Jul 2002 00:07:02 -0400
+Received: from yangg.net ([218.2.158.139])
+	by waste.minder.net (8.11.6/8.11.6) with SMTP id g6M46pR14844
+	for <cpunks@minder.net>; Mon, 22 Jul 2002 00:06:53 -0400
+Message-Id: <200207220406.g6M46pR14844@waste.minder.net>
+From: "zoufu@yangg.net" <zoufu@yangg.net>
+To: <cpunks@minder.net>
+Subject: 黄山旅游天天发,南京特价宾馆任你选
+Mime-Version: 1.0
+Content-Type: text/plain; charset="GB2312"
+Date: Mon, 22 Jul 2002 12:04:32 +0800
+X-Priority: 3
+X-Mailer: Microsoft Outlook Express 5.00.2919.6600
+Content-Transfer-Encoding: base64
+X-MIME-Autoconverted: from 8bit to base64 by hq.pro-ns.net id g6MEJkhX046163
+
+u8bJvcLD087M7Mzst6IgIGh0dHA6Ly93d3cubmpjaGluYS5jb20vc2t0dGYuaHRtDQoNCsTP
+vqnM2Lzbsfa53cjOxOPRoSAgaHR0cDovL3d3dy5uamNoaW5hLmNvbS9iZ21jLmh0bQ0KDQq6
+2L+ooaLT79L0wcTM7KGivbvT0aGi1fe76SAgaHR0cDovL3d3dy5uamNoaW5hLmNvbS9xd2x0
+Z2MuaHRtDQoNCsikzrbQws7Fo6zNvM7EsqLDsqOsvqHU2iBodHRwOi8vd3d3Lm5qY2hpbmEu
+Y29tDQo=
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

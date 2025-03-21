@@ -1,0 +1,30 @@
+
+{{alias}}( value )
+    Tests if a value is an EvalError object.
+
+    This function should *not* be considered robust. While the function should
+    always return `true` if provided an EvalError (or a descendant) object,
+    false positives may occur due to the fact that the EvalError constructor
+    inherits from Error and has no internal class of its own. Hence, EvalError
+    impersonation is possible.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is an EvalError object.
+
+    Examples
+    --------
+    > var bool = {{alias}}( new EvalError( 'beep' ) )
+    true
+    > bool = {{alias}}( {} )
+    false
+
+    See Also
+    --------
+

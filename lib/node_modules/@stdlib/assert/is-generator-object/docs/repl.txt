@@ -1,0 +1,35 @@
+
+{{alias}}( value )
+    Tests if a value is a generator object.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is a generator object.
+
+    Examples
+    --------
+    > function* generateID() {
+    ...     var idx = 0;
+    ...     while ( idx < idx+1 ) {
+    ...         yield idx;
+    ...         idx += 1;
+    ...     }
+    ... };
+    > var bool = {{alias}}( generateID() )
+    true
+    > bool = {{alias}}( generateID )
+    false
+    > bool = {{alias}}( {} )
+    false
+    > bool = {{alias}}( null )
+    false
+
+    See Also
+    --------
+

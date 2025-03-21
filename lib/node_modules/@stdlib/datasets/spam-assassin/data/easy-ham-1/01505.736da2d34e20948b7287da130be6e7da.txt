@@ -1,0 +1,68 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Sep 26 11:10:38 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 9800216F03
+	for <jm@localhost>; Thu, 26 Sep 2002 11:10:38 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 11:10:38 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8Q5A7C01797 for <jm-sa@jmason.org>; Thu, 26 Sep 2002 06:10:08 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17uQse-00017m-00; Wed,
+    25 Sep 2002 22:08:04 -0700
+Received: from crompton.com ([207.103.34.25] helo=bridget.crompton.com) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17uQre-0008Lg-00 for <SpamAssassin-talk@lists.sourceforge.net>;
+    Wed, 25 Sep 2002 22:07:03 -0700
+Received: from localhost (doug@localhost) by bridget.crompton.com
+    (8.11.6/8.11.6/SuSE Linux 0.5) with ESMTP id g8Q55Si17986 for
+    <SpamAssassin-talk@lists.sourceforge.net>; Thu, 26 Sep 2002 01:05:37 -0400
+From: Doug Crompton <doug@crompton.com>
+To: SpamAssassin-Talk list <SpamAssassin-talk@example.sourceforge.net>
+Message-Id: <Pine.LNX.4.33.0209260102140.17974-100000@bridget.crompton.com>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Subject: [SAtalk] Razor problem
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchives/forum.php?forum=spamassassin-talk>
+X-Original-Date: Thu, 26 Sep 2002 01:05:28 -0400 (EDT)
+Date: Thu, 26 Sep 2002 01:05:28 -0400 (EDT)
+
+I just picked up Razor SDK 2.03 and  2.14 agents from the the razor site.
+I am using SuSe 7.3 - intalled SDK with no problems. All tests passed.
+
+When I try to make the 2.14 agents I get all kinds of errors. In
+particuliar it says the net::dns is missing. But it seems to be there. The
+SDK test passes it.
+
+Any help would be appreciated.
+
+Doug
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

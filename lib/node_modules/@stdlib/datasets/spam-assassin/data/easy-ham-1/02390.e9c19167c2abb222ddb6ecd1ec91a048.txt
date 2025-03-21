@@ -1,0 +1,33 @@
+From rssfeeds@jmason.org  Wed Oct  9 10:52:52 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 93EA316F6F
+	for <jm@localhost>; Wed,  9 Oct 2002 10:51:54 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 09 Oct 2002 10:51:54 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9980XK25179 for
+    <jm@jmason.org>; Wed, 9 Oct 2002 09:00:33 +0100
+Message-Id: <200210090800.g9980XK25179@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: boingboing <rssfeeds@spamassassin.taint.org>
+Subject: Palm-sized translators going to Iraq
+Date: Wed, 09 Oct 2002 08:00:33 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://boingboing.net/#85541017
+Date: Not supplied
+
+The US Military is planning on equipping Gulf troops with two-way translators: 
+Palm-sized devices with speech-recognition and automated translation. Tried 
+speech-to-text lately? How about Babelfish? Boy, is this technology ever gonna 
+suck: "Take he to that chemistry arm vegetable." Link[1] Discuss[2] (_Thanks, 
+Nat[3]!_)
+
+[1] http://www.cnn.com/2002/US/Northeast/10/06/handheld.translator.ap/
+[2] http://www.quicktopic.com/boing/H/eXMNyidbgPL
+[3] http://www.frii.com/~gnat/
+
+

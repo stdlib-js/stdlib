@@ -1,0 +1,87 @@
+From ilug-admin@linux.ie  Tue Jul 30 13:28:16 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C4C13440F0
+	for <jm@localhost>; Tue, 30 Jul 2002 08:28:13 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 30 Jul 2002 13:28:13 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6UCReq26369 for
+    <jm-ilug@jmason.org>; Tue, 30 Jul 2002 13:27:40 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA05049; Tue, 30 Jul 2002 13:25:41 +0100
+Received: from hawk.dcu.ie (mail.dcu.ie [136.206.1.5]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA05027 for <ilug@linux.ie>; Tue,
+    30 Jul 2002 13:25:37 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host mail.dcu.ie [136.206.1.5]
+    claimed to be hawk.dcu.ie
+Received: from prodigy.redbrick.dcu.ie (136.206.15.10) by hawk.dcu.ie
+    (6.0.040) id 3D36BB4A00043D9B; Tue, 30 Jul 2002 13:25:37 +0100
+Received: by prodigy.redbrick.dcu.ie (Postfix, from userid 666) id
+    006A1DA4A; Tue, 30 Jul 2002 13:25:36 +0100 (IST)
+Date: Tue, 30 Jul 2002 13:25:36 +0100
+From: =?iso-8859-1?Q?Colm_MacC=E1rthaigh?= <colmmacc@redbrick.dcu.ie>
+To: "Patton, Tony" <tony.patton@nwifhe.ac.uk>
+Cc: Irish LUG <ilug@linux.ie>
+Subject: Re: [ILUG] Fwd: Linux Beer Hike
+Message-Id: <20020730132536.A6278@prodigy.Redbrick.DCU.IE>
+References: <200207301006.36137.donncha.ocaoimh@tradesignals.com>
+    <1028031445.3321.2.camel@soft-dev-lin.nwifhe.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Disposition: inline
+Content-Transfer-Encoding: 8bit
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <1028031445.3321.2.camel@soft-dev-lin.nwifhe.net>;
+    from tony.patton@nwifhe.ac.uk on Tue, Jul 30, 2002 at 01:17:25PM +0100
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Tue, Jul 30, 2002 at 01:17:25PM +0100, Patton, Tony wrote:
+> On Tue, 2002-07-30 at 10:06, Donncha O Caoimh wrote:
+> > Ar mhaith le einne anseo caint le TG4 faoin LBW?
+> > 
+> > Donncha.
+> > 
+> 
+> ----8<
+> 
+> > Tá mé ag déanamh taighde don clár teilifíse An Tuath Nua (a bhíonn á
+> > chraoladh ar TG4) faoi láthair, agus chonaic mé go mbedih an Linux Beer
+> > Hike ar siúl i Doolin i mbliana. Bheadh spéis againn mír a dhéanamh mar
+> > gheall ar an Hike ar an gclár - an mbeidh tú féin nó aon duine eile le
+> > Gaeilge ar an Hike go bhfios duit?
+> > 
+> > Go raibh maith agat as do chabhair,
+> > 
+> 
+> ---->8
+> 
+> Can someone translate this for me? Lost all sense of Irish when moved
+> over the border about 10 years ago. Not by choice mind you :-(
+
+
+"Currently, I am doing some research for the telivision programme 
+"An Tuath Nua"  (which is broadcast by TG4) , and I saw that the
+Linux Beer Hike will be in Doolin this year. We'd be intrested 
+in including a report on the hike in the programme - will yourself
+or anyone else with Irish be on the Hike do you know ?
+
+Thanks for your help."
+
+-- 
+colmmacc@redbrick.dcu.ie        PubKey: colmmacc+pgp@redbrick.dcu.ie  
+Web:                                 http://devnull.redbrick.dcu.ie/ 
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

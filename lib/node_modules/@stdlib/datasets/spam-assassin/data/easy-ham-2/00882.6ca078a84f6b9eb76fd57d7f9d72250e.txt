@@ -1,0 +1,66 @@
+From fork-admin@xent.com  Thu Jul 25 11:10:22 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A1EBC440D1
+	for <jm@localhost>; Thu, 25 Jul 2002 06:09:55 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 11:09:55 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6P46g429498 for <jm@jmason.org>;
+    Thu, 25 Jul 2002 05:06:43 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 7FE1129416F; Wed, 24 Jul 2002 21:05:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from imo-d08.mx.aol.com (imo-d08.mx.aol.com [205.188.157.40]) by
+    xent.com (Postfix) with ESMTP id 6DBDE29416C for <fork@xent.com>;
+    Wed, 24 Jul 2002 21:04:46 -0700 (PDT)
+Received: from Grlygrl201@aol.com by imo-d08.mx.aol.com (mail_out_v32.21.)
+    id b.13.eda34f4 (5710); Thu, 25 Jul 2002 00:04:42 -0400 (EDT)
+Received: from  aol.com (mow-m22.webmail.aol.com [64.12.180.138]) by
+    air-id04.mx.aol.com (v86_r1.16) with ESMTP id MAILINID43-0725000442;
+    Thu, 25 Jul 2002 00:04:42 -0400
+From: grlygrl201@aol.com
+To: kra@monkey.org
+Cc: fork@spamassassin.taint.org
+Subject: Re: [Baseline] Raising chickens the high-tech way
+Message-Id: <2DB6682C.660FBFDD.0F48F476@aol.com>
+X-Mailer: Atlas Mailer 2.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 25 Jul 2002 00:06:41 -0400
+
+In a message dated Wed, 24 Jul 2002 1:51:48 PM Eastern Standard Time, kra@monkey.org writes:
+
+> 
+> I guess that the reason that I disagree is that some groups arguing
+> against any checks on genetic engineering use that same argument -
+> "we've been doing it since prehistory, so we don't need to apply any
+> caution today".
+> 
+
+That the process of engineering is a natural, human inclination is what history proves; that humans don't learn from history is what natural, unimpeded inclinations prove.
+
+geege
+> -- 
+> Karl Anderson      kra@monkey.org           
+> http://www.monkey.org/~kra/
+> http://xent.com/mailman/listinfo/fork 
+
+
+http://xent.com/mailman/listinfo/fork
+
+

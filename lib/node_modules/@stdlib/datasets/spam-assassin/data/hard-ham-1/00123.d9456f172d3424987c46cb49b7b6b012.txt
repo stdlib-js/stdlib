@@ -1,0 +1,766 @@
+Return-Path: <Online#3.20516.fc-LmYwlaX_4cin49RR.1.b@newsletter.online.com>
+Received: from ABV-SFO1-ACMTA6.CNET.COM (abv-sfo1-acmta6.cnet.com [206.16.1.169])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6J0CaJ03647
+	for <qqqqqqqqqq-zdnet@spamassassin.taint.org>; Fri, 19 Jul 2002 01:12:37 +0100
+Received: from abv-sfo1-ac-agent6 (206.16.0.241) by ABV-SFO1-ACMTA6.CNET.COM (PowerMTA(TM) v1.5); Thu, 18 Jul 2002 17:14:58 -0700 (envelope-from <Online#3.20516.fc-LmYwlaX_4cin49RR.1.b@newsletter.online.com>)
+Message-ID: <6859972.1027037549498.JavaMail.root@abv-sfo1-ac-agent6>
+Date: Thu, 18 Jul 2002 17:12:29 -0700 (PDT)
+From: CNET Digital Dispatch <Online#3.20516.fc-LmYwlaX_4cin49RR.1@newsletter.online.com>
+To: qqqqqqqqqq-zdnet@spamassassin.taint.org
+Subject: CNET DIGITAL DISPATCH: Mac zealots unite
+Mime-Version: 1.0
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+X-Mailer: Accucast (http://www.accucast.com)
+X-Mailer-Version: 2.8.4-2
+
+
+<html>
+
+<head>
+
+<title>Digital Dispatch Weekly Newsletter</title>
+
+</head>
+
+<body bgcolor="#eeeeee">
+
+<center>
+
+
+
+<!-- header -->
+
+<table cellpadding=0 cellspacing=0 border=0 width=612 bgcolor="#ffffff">
+
+<tr valign=top>
+
+	<td width=442 colspan=4>
+
+		<img src="http://www.cnet.com/i/dp/dd_a.gif" width="442" height="60" border="0" alt="Digital Dispatch"><br>
+
+			<table width=442 cellpadding=0 cellspacing=0 border=0 bgcolor="#ffcc00">
+
+				<tr><td bgcolor="#000000" colspan=3><img src="http://www.cnet.com/b.gif" width="1" height="1" border="0"><br></td></tr>
+
+				<tr>
+
+					<td bgcolor="#000000" width=1 rowspan=2><img src="http://www.cnet.com/b.gif" width="1" height="10" border="0"><br></td>
+
+					<td width=10 rowspan=2><img src="http://www.cnet.com/b.gif" width="1" height="10" border="0"><br></td>
+
+					<td  width=430><img src="http://www.cnet.com/b.gif" width="1" height="10" border="0"><br></td>
+
+				</tr>
+
+				<tr><td bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1" border="0"><br></td></tr>
+
+      		</table>	
+
+	</td>
+
+
+
+	<!-- Skyscraper column -->
+
+<td width=160 rowspan=2><img src="http://www.cnet.com/i/dp/dd_b.gif" width=160 height=18><br>
+
+
+
+<!-- START AD -->
+
+
+<!-- shopping  -->
+<iframe src="http://www.zdnet.com/include/ads/ifc/RGROUP=2560" scrolling="no" frameborder="0" hspace="0" vspace="0" height="600" width="160" marginheight="0" marginwidth="0">
+<script language="JavaScript" src="http://www.zdnet.com/include/ads/js/RGROUP=2560">
+</script>
+</iframe>
+<!-- /shopping -->
+<!-- /ad -->
+
+ <br>
+
+		<!-- right column content -->
+		
+<!-- search form -->
+<img src="http://a.r.tv.com/cnet.1d/i/se/dispatch_hd.gif" width=150 height=20 alt="CNET Search.com" border=0><br>
+<table cellspacing=0 cellpadding=0 width=150 border=0><form method=get action="http://www.search.com/redirect">
+<tr valign=top><td><img src="http://cnet.com/b.gif" width=1 height=1><br>
+<input type=text name=q size=17 value=""><br>
+<select name=target class=frmel>
+ <option value="http://cnet.search.com/search?tag=ex.digital.dispatch.srch.cnet">All CNET
+ <option value="http://www.search.com/search?tag=ex.digital.dispatch.srch.web">The Web
+</select>&nbsp;<input type=submit value="Go!">
+</td></tr></form></table><p>
+<!-- /search form -->
+
+
+
+				<!-- NEWS BLOCK -->
+
+				<img src="http://www.cnet.com/i/dp/RHC_techNEWS.gif" alt="Tech News News.com" width="150" height="20" border="0"><br>
+
+				<table width="150" cellpadding=0 cellspacing=2 border=0><tr>
+
+				<td><font face="arial, helvetica" size="-1">
+
+				<a href="http://clickthru.online.com/Click?q=11-l8riI2-aPLsxBpEX3VynhNBuCqlR" >Macworld 2002: New iPods, bigger iMac and more</a><p>
+
+				<a href="http://clickthru.online.com/Click?q=27-z9ZmIqI14RdKMuiSkMRUVolYrBeR" >Dell squeezes Pentiums into notebooks</a><p>
+
+				<a href="http://clickthru.online.com/Click?q=3c-tK4RIcIw_GUBNEpY0VXXjhrHNHyR" >Microsoft sweetens Mac Office offer</a><p>
+
+				<a href="http://clickthru.online.com/Click?q=51-QgUWIjJWhgClHGGJlh9GpMUHM3FR" >MSN previews next Net service</a><p>
+				
+				<a href="http://clickthru.online.com/Click?q=66-kDH_IyWzTR6eGqgsPj9y-DzbW-9R" >Future fuzzy for Adobe camera software</a><p>
+				
+
+<p>
+
+
+
+
+
+				</font></td></tr>
+
+				<tr><td><font face="arial, helvetica" size="-1"><b><a href="http://clickthru.online.com/Click?q=7b-prT_IBZzgRLDoTLbDr4q1O7VpJcR" >More CNET News</a></b></font></td>
+
+				</tr></table>
+
+				<!-- /NEWS BLOCK -->
+
+
+
+				 <br>
+
+
+
+				<!-- TOP DOWNLOADS -->
+
+				<img src="http://www.cnet.com/i/dp/RHC_TOPdwnlds.gif" alt="Top Downloads" width="150" height="20" border="0"><br>
+
+				<table width="150" border=0 cellpadding=2 cellspacing=0>
+
+				<tr valign=top><td><img src="http://www.cnet.com/b.gif" width=1 height=3><br>
+
+
+
+				<a href="http://clickthru.online.com/Click?q=90-wHZMQ_IMRh5s6epVb8HYULuonXiR" ><img src="http://www.cnet.com/Images/Global/dl-15-bug.gif" height=15 width=15 valign=bottom border=0></a></td>
+
+				<td width="100%25"><img src="http://www.cnet.com/b.gif" width=1 height=3><br>
+
+				<font face="arial, helvetica" size="-1"><a href="http://clickthru.online.com/Click?q=a5-DyaHQ7ZFS_hxQGxsIC1b2OB8OEPR" >Opera 6.04</a></font>
+
+
+
+				</td></tr><tr valign=top><td><img src="http://www.cnet.com/b.gif" width=1 height=3><br>
+
+
+
+				<a href="http://clickthru.online.com/Click?q=bb-yT94QYZpCMAiFZ6RaT-Dc13yE_rR" ><img src="http://www.cnet.com/Images/Global/dl-15-bug.gif" height=15 width=15 valign=bottom border=0></a></td>
+
+				<td><img src="http://www.cnet.com/b.gif" width=1 height=3><br>
+
+				<font face="arial, helvetica" size="-1"><a href="http://clickthru.online.com/Click?q=d0-vjDhQWWTQ2zt01j7c7YuNDxuyCiR" >FileMaker Pro 6.0v2</a></font>
+
+
+
+				</td></tr><tr valign=top><td><img src="http://www.cnet.com/b.gif" width=1 height=1><br>
+
+				<a href="http://clickthru.online.com/Click?q=e5-9Z7OQgyslCNlOCGjnbcumX6cvbPR" ><img src="http://www.cnet.com/Images/Global/dl-15-bug.gif" height=15 width=15 valign=bottom border=0></a></td>
+
+				<td><img src="http://www.cnet.com/b.gif" width=1 height=3><br>
+
+				<font face="arial, helvetica" size="-1"><a href="http://clickthru.online.com/Click?q=fa-FmqNQhO1bOfBUIPtvDA4oSMpoLnR" >Balls of Steel Patch 1.3</a></font>
+
+
+
+				</td></tr><tr valign=top><td><img src="http://www.cnet.com/b.gif" width=1 height=1><br>
+
+				<a href="http://clickthru.online.com/Click?q=0f-RM2lIqjD91yzDgcsUb9HGRJ1bfeR" ><img src="http://www.cnet.com/Images/Global/dl-15-bug.gif" height=15 width=15 valign=bottom border=0></a></td>
+
+				<td><img src="http://www.cnet.com/b.gif" width=1 height=3><br>
+
+				<font face="arial, helvetica" size="-1"><a href="http://clickthru.online.com/Click?q=24-8DdMIczi7p1RRIfgeUef92iqrwyR" >Marine Aquarium 0.99.0 (for the Mac)</a></font>
+
+				
+				
+				</td></tr><tr valign=top><td><img src="http://www.cnet.com/b.gif" width=1 height=1><br>
+
+
+				
+				</td></tr></table>
+
+				<!-- /TOP DOWNLOADS -->
+
+
+
+				 <br>
+
+
+
+				<!-- EDITORS' CHOICE -->
+
+				<img src="http://www.cnet.com/i/dp/RHC_EdCHOICE.gif" alt="Editors' Choice" width="150" height="20" border="0"><br>
+
+				<table width="100%25" border=0 cellpadding=3 cellspacing=0>
+
+				<tr valign=top><td><font face="arial, helvetica" size="-1">
+
+
+
+<!-- hardware -->
+
+				<a href="http://clickthru.online.com/Click?q=39-7QgMIjIiVp03FUhCGLs-y39w-_lR" >Samsung ML-1430 laser printer</a>&nbsp;<a href="http://clickthru.online.com/Click?q=4e-0Y95InZ3aFUHi6kIKlsTn8N_Jj9R" ><img src="http://www.cnet.com/Images/Global/ed_choice_13x13.gif" width=13 height=13 border=0 alt="Editors' Choice"></a><br>
+
+				<font size="-2">In Hardware</font>
+
+<!-- /hardware -->	
+
+				</font></td></tr><tr valign=top><td><font face="arial, helvetica" size="-1">
+
+<!-- electronics -->
+
+				<a href="http://clickthru.online.com/Click?q=64-UBOhIuLecuWIM_dNGWF8w6YrPhsR" >Unitech 2U4U DMR-300 MP3 player</a> <a href="http://clickthru.online.com/Click?q=79-rsQHIEBe5mG-XiMmFz_e0CvgpaFR" ><img src="http://www.cnet.com/Images/Global/ed_choice_13x13.gif" width=13 height=13 border=0 alt="Editors' Choice"></a><br>
+
+				<font size="-2">In Electronics</font>
+
+<!-- /electronics -->
+
+				</font></td></tr><tr valign=top><td><font face="arial, helvetica" size="-1">
+
+<!-- software -->
+
+				<a href="http://clickthru.online.com/Click?q=8e-Ve-cQCnqnXTcMyCPDuYWD0V_Wy4R" >Video Explosion Deluxe</a> <a href="http://clickthru.online.com/Click?q=a3-qXf6QYU2RSEHGrgfQffN5r5ls4rR" ><img src="http://www.cnet.com/Images/Global/ed_choice_13x13.gif" width=13 height=13 border=0 alt="Editors' Choice"></a><br>
+
+				<font size="-2">In Software</font>
+
+<!-- /software -->
+
+				</font></td></tr><tr valign=top><td><font face="arial, helvetica" size="-1">
+
+<!-- wireless -->
+
+				<a href="http://clickthru.online.com/Click?q=b8-smr2QQUsXVk1xI5lq9S_p8qkEiiR" >Sony Ericsson T68</a> <a href="http://clickthru.online.com/Click?q=cd-VHhSQzsJFTE394BFjAi_TOlRfXPR" ><img src="http://www.cnet.com/Images/Global/ed_choice_13x13.gif" width=13 height=13 border=0 alt="Editors' Choice"></a><br>
+
+				<font size="-2">In Wireless</font>
+
+<!-- /wireless -->				
+
+				</font></td></tr></table>
+
+				 <br>
+				
+				<!-- /EDITORS' CHOICE -->
+
+	</td>
+
+	<td width=9 rowspan=2>
+
+		<img src="http://www.cnet.com/i/dp/dd_c.gif" width="9" height="60" border="0"><br>
+
+		<table width=9 cellpadding=0 cellspacing=0 border=0>
+
+			<tr><td bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="9" height="1" border="0"><br></td></tr>
+
+			<tr><td bgcolor="#ffccoo"><img src="http://www.cnet.com/b.gif" width="9" height="10" border="0"><br></td></tr>
+
+			<tr><td bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="9" height="1" border="0"><br></td></tr>
+
+		</table>		
+
+	</td>
+
+	<td width=1 bgcolor="#000000" rowspan=2>
+
+		<table width=1 cellpadding=0 cellspacing=0 border=0>
+
+			<tr><td bgcolor="#eeeeee"><img src="http://www.cnet.com/b.gif" width="1" height="60" border="0"><br></td></tr>
+
+		</table>		
+
+
+
+	</td>
+
+</tr>
+
+
+
+
+
+
+
+<!-- promo section -->
+
+
+
+<tr valign=top>
+
+	<td width=1 bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1" border="0"></td>
+
+	<td width=10 bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1" border="0"><br></td>
+
+	<td width=1 bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1" border="0"></td>
+
+	<td width=430 bgcolor="#ffffff">
+
+	
+
+		<table cellpadding=0 cellspacing=0 border=0 width=430 bgcolor="#ffffef">
+
+			<tr valign=top>
+
+			<td width=10><img src="http://www.cnet.com/b.gif" alt="" width="10" height="1" border="0"><br></td>
+
+			<td width=412>
+
+			
+
+			<table cellpadding=8 cellspacing=0 border=0>
+
+<!-- date -->				<tr><td><font face="Arial, Helvetica" size="-2">July 18, 2002</font><br></td></tr>
+
+			</table>
+
+			
+
+				
+
+				<table cellpadding=0 cellspacing=0 border=0 width=412>
+
+				<tr valign=top>
+
+					<td width=76 align=right>
+
+						<img src="http://www.cnet.com/i/dp/hd_janicec.gif" width="66" height="86" border="0"><br>
+
+						<font face="arial, helvetica" size="-2" color="#666666">
+
+						--Janice Chen,<br>
+
+						editor in chief,<br>
+
+						CNET Reviews<br>
+
+						</font>
+
+					</td>
+
+					<td width=10> </td>
+
+					<td><font face="Arial, Helvetica">
+
+						<font color="#333333"><B>Dear readers,</B></font><BR>
+
+						<font size="-1">
+The majority of PC users may run Windows, but Microsoft can't
+touch the passion that Mac users bring to computing. This week,
+Apple devotees gathered in New York to find out what their guru,
+Steve Jobs, has in store for them. They were not disappointed,
+with offerings ranging from the new iMacs, which continue to push
+the boundaries of the PC form factor, to updated iPods that
+include more memory, better menus, and compatibility with
+Windows. Read the 
+<a href="http://clickthru.online.com/Click?q=e2-J1OpQhyI69zCJKOENBEZdihv9KnR" >full coverage</a> from 
+CNET's News.com.
+
+<br>
+
+</font><br>
+
+					</td>
+
+					
+
+				</tr>
+
+				</table>
+
+				
+
+			<table cellpadding=0 cellspacing=0 border=0 width=412>
+
+				<tr><td colspan=2><font size=1> </font></td></tr>
+
+				<tr>
+
+				<td width="175"><a href="#buzz"><img src="http://www.cnet.com/i/dp/THISweeks_BUZZ.gif" alt="This Week's Buzz Meter" width="175" height="18" border="0"></a><br></td>
+
+				<td align="left"><font face="Arial, Helvetica" size="-1"><a href="#buzz">Readers mourn Gene Kan</a></font><br></td>
+
+				</tr>
+
+				<tr><td colspan=2><img src="http://www.cnet.com/b.gif" height="8" width="1"></td></tr>
+
+				</table>
+
+				
+
+				
+
+			</td>
+
+
+
+			<td width=8><img src="http://www.cnet.com/b.gif" alt="" width="8" height="1" border="0"><br></td>
+
+			</tr>
+
+			</table>
+
+
+
+	<!-- bottom rule -->
+
+	<table cellpadding=0 cellspacing=0 border=0 width=430>
+
+	<tr valign=top>
+
+		<td bgcolor="#F7D69C"><img src="http://www.cnet.com/b.gif" width="1" height="1" border="0"></td>
+
+	</tr>
+
+	</table>
+
+
+
+<table cellpadding=10 cellspacing=0 border=0 width=430>
+
+<tr><td>
+
+			<font face="Arial, Helvetica">
+
+
+<!-- Leads Module -->
+<img src="http://www.cnet.com/i/gl/new-cc.gif" alt="Crucial Clicks" width="120" height="19" border="0"><br>
+<table width="100%"  cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
+<tr bgcolor="#cccccc"><td colspan="7"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td></tr>
+<tr>
+<td bgcolor="#cccccc" rowspan="3"><img src="http://home.cnet.com/b.gif" height=1 width=1></td>
+<td rowspan="3"><img src="http://home.cnet.com/b.gif" height=1 width=5></td>
+<td colspan="3"><img src="http://home.cnet.com/b.gif" height=5 width=1></td>
+<td rowspan="3"><img src="http://home.cnet.com/b.gif" height=1 width=5></td>
+<td bgcolor="#cccccc" rowspan="3"><img src="http://home.cnet.com/b.gif" height=1 width=1></td>
+</tr>
+<tr valign="top">
+<td width="100%">
+	<table width="100%"  cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+	<td width="85"><a href="http://clickthru.online.com/Click?q=f8-57BSQfscKTcRFQIpiaRL6DCwoliR" ><img src="http://a.r.tv.com/cnet.1d/i/p/0622022ghz1.jpg" width="85" height="110" border="0" alt="" /></a></td>
+	<td width="5"><img src="http://home.cnet.com/b.gif" height=1 width=5></td>
+	<td width="100%"><font face="arial, helvetica" size="-1"><a href="http://clickthru.online.com/Click?q=0d-3aGuIbr1Rb1TCo6Nv0T0QkY6b7PR" ><b>2GHz to go</b></a><br />Check out the first 2GHz portable powerhouses from Dell and WinBook that push the performance envelope.</font></td>
+	</tr>
+	<tr><td colspan="3"><img src="http://home.cnet.com/b.gif" height=3 width=1><br /><font face="arial, helvetica" size="-1">
+	&#149; <a href="http://clickthru.online.com/Click?q=22-xNrrIrd3QQ9RyUVuo4I9yc99NcnR" >IBM thin-and-light ThinkPads fit to a T
+</a><br />
+	&#149; <a href="http://clickthru.online.com/Click?q=37-EMLQIqzTGPNTWRwQ93KjZ6eJcneR" >HP xe4500: the last of the Omnibooks</a><br />
+	</font></td></tr>
+	</table>
+</td>
+<td><img src="http://home.cnet.com/b.gif" height=1 width=5></td>
+<td width="180">
+	<table cellpadding="0" cellspacing="0" width="180" border="0" bgcolor="#ffffef">
+	<tr><td colspan="5" bgcolor="#666666"><img src="http://home.cnet.com/b.gif" width="1" height="1" alt="" border="0" /></td></tr>
+	<tr>
+	<td bgcolor="#666666"><img src="http://home.cnet.com/b.gif" width="1" height="1" alt="" border="0" /></td>
+	<td><img src="http://home.cnet.com/b.gif" width="10" height="1" alt="" border="0" /></td>
+	<td><font face="ms sans serif, geneva" size="-2"><img src="http://home.cnet.com/b.gif" width="1" height="5" alt="" border="0" /><br />
+	<font face="arial, helvetica" color="#666666" size="-1"><b>Most popular products</b></font><br /><img src="http://home.cnet.com/b.gif" width="1" height="5" alt="" border="0" /><br />
+	<b>Notebooks</b><br /><img src="http://home.cnet.com/b.gif" width="1" height="7" alt="" border="0" /><br />
+	1. <a href="http://clickthru.online.com/Click?q=4c-jxi2IZpziJtLDdnAu7hgvo2AKesR" >Gateway 600XL</a><br /><img src="http://home.cnet.com/b.gif" width="1" height="3" alt="" border="0" /><br />
+	2. <a href="http://clickthru.online.com/Click?q=61-x9oAIoL8tQUtYFj4JYndFK-AWlFR" >Dell Inspiron 2600 series
+</a><br /><img src="http://home.cnet.com/b.gif" width="1" height="6" alt="" border="0" /><br />
+	3. <a href="http://clickthru.online.com/Click?q=76-vJf7InBWAWldqTP1okYP2r70U69R" >Dell Inspiron 8200 series</a><br /><img src="http://home.cnet.com/b.gif" width="1" height="3" alt="" border="0" /><br />
+	4. <a href="http://clickthru.online.com/Click?q=8b-SBGBQY0Vlo5uiYmEYIEElDh4B1rR" >Toshiba Satellite 2400-S251</a><br /><img src="http://home.cnet.com/b.gif" width="1" height="3" alt="" border="0" /><br />
+	5. <a href="http://clickthru.online.com/Click?q=a0-11h8QQB7cNNVOGlUByjw2PB1s7iR" >Toshiba Satellite 5105-S607</a><br /><img src="http://home.cnet.com/b.gif" width="1" height="3" alt="" border="0" /><br />
+	<img src="http://a.r.tv.com/cnet.1d/i/fd/yl_arrow.gif" width="13" height="13" border="0" alt="" align="absmiddle" /> <b><a href="http://clickthru.online.com/Click?q=b6-llkUQCKVBmP2rcjT_PUCch20Lg4R" >See all most popular notebooks</a></b><br />
+	<img src="http://home.cnet.com/b.gif" width="1" height="10" alt="" border="0" /><br />
+	</font></td>
+	<td><img src="http://home.cnet.com/b.gif" width="10" height="1" alt="" border="0" /></td>
+	<td bgcolor="#666666"><img src="http://home.cnet.com/b.gif" width="1" height="1" alt="" border="0" /></td>
+	</tr>
+	<tr><td colspan="5" bgcolor="#666666"><img src="http://home.cnet.com/b.gif" width="1" height="1" alt="" border="0" /></td></tr>
+	</table>
+</td>
+</tr>
+<tr valign="top"><td colspan="3"><img src="http://home.cnet.com/b.gif" height=5 width=1></td></tr>
+<tr><td colspan="7" bgcolor="#cccccc"><img src="http://home.cnet.com/b.gif" height=1 width=1></td></tr>
+</table><br />
+<!-- /Leads Module -->
+
+<p>
+
+<!-- software -->
+
+<img src="http://www.cnet.com/i/dp/shdr_soft.gif" alt="Software" width="120" height="19" border="0"><br>
+
+<img src="http://www.cnet.com/i/nl/rule.gif" width="410" height="8" border="0"><br>
+
+<!-- insert promo GIF here -->
+
+<font face="arial, helvetica"><b><a href="http://clickthru.online.com/Click?q=cb-CjRIQJsQXvzTJqqyXYHRf_uaHkrR" >PIMs on the side</a></b><br></font>
+
+<font size="-1">Whatever happened to the straightforward, dedicated PIM?
+   PIM/contact managers, such as the ubiquitous Outlook and
+   Lotus, pushed them to the sidelines. But a few PIMs survived
+   this enforced obscurity. If you need a plain PIM that doesn't
+   cost a fortune, one of these may tickle your fancy.
+<a href="http://clickthru.online.com/Click?q=e0-cISRQfDxnLmGawmkPhB7mxUT9AiR" >More software</a>
+
+<br></font>
+
+<!-- /software -->
+
+<p>
+
+<!-- hardware -->
+
+<img src="http://www.cnet.com/i/dp/shdr_hard.gif" alt="Hardware" width="120" height="19" border="0"><br>
+
+<img src="http://www.cnet.com/i/nl/rule.gif" width="410" height="8" border="0"><br>
+
+<!-- insert promo GIF here -->
+
+<font face="arial, helvetica"><b><a href="http://clickthru.online.com/Click?q=f5-lTbRQgwH2ECsfuz6DmLwgkaZmRPR" >Apple eMac not just for education anymore</a></b><br>
+
+<font size="-1">Ideally suited to students living in small spaces and home
+   users with basic needs, the eMac is an attractive, adequately
+   speedy, and easy-to-use PC without the flat-panel iMac's
+   relatively high price. Wondering whether to go CRT or
+   flat-panel? Read our review.
+<a href="http://clickthru.online.com/Click?q=0a-ZnKCIrrwX4iQTlhBwhq6GOxuYznR" >More desktops</a>
+<br>
+<b><a href="http://clickthru.online.com/Click?q=1f-rvwqI58sviEYt-V1xmYgHobjqmeR" >Read the review</a>&nbsp;&#124;&nbsp;
+   <a href="http://clickthru.online.com/Click?q=34-pJpSIcdj2dG48hN3_tvVyn4IcgyR" >Check latest prices</a></b>
+<br></font>
+
+<!-- /hardware -->
+
+<p>
+
+<p>
+
+<!-- electronics -->
+
+<img src="http://www.cnet.com/i/dp/shdr_ele.gif" alt="Electronics" width="120" height="19" border="0"><br>
+
+<img src="http://www.cnet.com/i/nl/rule.gif" width="410" height="8" border="0"><br>
+
+<!-- insert promo GIF here -->
+
+<font face="arial, helvetica"><b><a href="http://clickthru.online.com/Click?q=49-ZM4cIEpGf4f1KzKVX4RVXFO5JSFR" >MiniDV maestro</a></b><br>
+
+<font size="-1">Sony's DCR-VX2000 gives prosumers a versatile tool for
+   capturing high-quality digital video. With three CCDs, smooth
+   performance, and excellent low-light capability, this
+   camcorder meets the demands of avid videographers where lesser
+   cameras fail.
+<a href="http://clickthru.online.com/Click?q=5e-ssGdIn0i96dWzPihsnStcVTQzc9R" >More in digital photo</a>
+<br>
+<b><a href="http://clickthru.online.com/Click?q=74-VAV8IZZG-VJ6EyaRYG8Y0gSPZxsR" >Read the review</a>&nbsp;&#124;&nbsp;
+   <a href="http://clickthru.online.com/Click?q=89-h28bQ-J2r6NWVqikUMBXB6W5WWlR" >Check latest prices</a></b>
+<br></font>
+
+<!-- /electronics -->
+
+<p>
+
+<!-- wireless -->
+
+<img src="http://www.cnet.com/i/dp/shdr_wi.gif" alt="Wireless" width="125" height="19" border="0"><br>
+
+<img src="http://www.cnet.com/i/nl/rule.gif" width="410" height="8" border="0"><br>
+
+<!-- insert promo GIF here -->
+
+<font face="arial, helvetica"><b><a href="http://clickthru.online.com/Click?q=9e-tWQoQtMrKK9lE7bHSCN0U7nQUD4R" >Cordless phones: the other wireless devices</a></b><br></font>
+
+<font size="-1">In the market for a new cordless phone but don't know whether
+   to buy a 900MHz or 2.4GHz model or which manufacturers offer
+   the best products? No sweat: check out our new line coverage to
+   find the phone that fits your personal style and needs.
+<a href="http://clickthru.online.com/Click?q=b3-QHzxQYKF7r0ECyPAE64qDAwrPGrR" >More in wireless phones</a>
+
+<br></font>
+<!-- /wireless -->
+
+<p>
+
+<br clear=left>
+
+<a name="buzz"></a>
+
+<table cellpadding=0 cellspacing=0 border=0 width=410>
+
+<tr valign=bottom><td width=70 rowspan=2><img src="http://www.cnet.com/i/dp/BUZZMETER.gif" width=90 height=15 alt="Buzz Meter"></td>
+
+<td width=339><font face="arial, helvetica" size="-1" color="#660000"><b>&nbsp;Readers mourn Gene Kan</b></font></td><td><img src="http://www.cnet.com/b.gif" width=1 height=14></td></tr>
+
+<tr><td colspan=2 bgcolor="#CC9999"><img src="http://www.cnet.com/b.gif" width=1 height=1></td></tr>
+
+<tr><td colspan=3><img src="http://www.cnet.com/b.gif" width=1 height=8></td></tr>
+
+</table> 
+
+<font face="arial, helvetica" size="-1">
+Peer-to-peer pioneer dies, Macworld kicks off in Manhattan, and
+the PayPal/eBay merger is not going so well.</font>
+<br>
+<font face="arial, helvetica" size="-1"><i>--Laura Lindhe, executive editor, CNET Tech Trends</i></font>
+<p> 
+
+<table width="100%" cellpadding=4 cellspacing=0 border=0>
+
+<tr valign=top><td align=right><font face="arial, helvetica" color="#660000"><b>1</b></font></td>
+
+<td><font face="arial, helvetica" size="-1"><b><a href="http://clickthru.online.com/Click?q=c9-3OZLQpgDZBmo4WSjg0SxiPZvH6lR" >Gene Kan</a>:</b><br>
+
+   Gnutella open-source guru Gene Kan, who died on June
+   29 in an apparent suicide, was clearly beloved by the CNET
+   community. Last week, search requests for information on
+   25-year-old Kan far outweighed the kind of requests on
+   products and companies I usually see. A pioneer in the
+   peer-to-peer space, many credit him with legitimizing file
+   sharing--making it about more than music, according to Wired
+   News.
+
+</font></td></tr>
+
+<tr valign=top><td align=right><font face="arial, helvetica" color="#660000"><b>2</b></font></td>
+
+<td><font face="arial, helvetica" size="-1"><b><a href="http://clickthru.online.com/Click?q=de-7tpkQMW4gxMQtE6tTbDS-BJjho4R" >Macworld</a>:</b><br>
+
+   The annual Apple lovefest in New York is always a
+   good show, whether or not Steve Jobs has anything real to
+   announce. So far, it looks like Apple has already surprised a
+   few by announcing the release of QuickTime 6.0 (see No. 7),
+   which many thought would get bogged down in a licensing
+   quagmire.
+   
+</font></td></tr>
+
+<tr valign=top><td align=right><font face="arial, helvetica" color="#660000"><b>3</b></font></td>
+
+<td><font face="arial, helvetica" size="-1"><b><a href="http://clickthru.online.com/Click?q=f3-LjwgQJOs8dGmMSxCs3CyJqsjeorR" >PayPal</a>:</b><br>
+   
+   It's been a rocky road thus far for the eBay and
+   PayPal deal. Soon after eBay announced it was buying PayPal
+   for $1.5 billion, shareholders filed a lawsuit claiming that
+   PayPal's price tag was too low. This week, PayPal is being
+   subpoenaed by the New York attorney general in regard to its
+   involvement with online gambling transactions.
+   
+</font></td></tr>
+
+<tr valign=top><td align=right><font face="arial, helvetica" color="#660000"><b>4</b></font></td>
+
+<td><font face="arial, helvetica" size="-1"><b><a href="http://clickthru.online.com/Click?q=08-IFoQIRjTZPsvKmHg3F-erCpGY9iR" >Wi-Fi</a>:</b><br>
+
+   I'm just going to leave this common term for 802.11 up
+   on the Buzz Meter permanently. This time, Wi-Fi is getting
+   interest because of a possible pact between tech heavyweights,
+   including Intel, AT&amp;T Wireless, and Verizon Communications, to
+   build wireless access places across the nation in public areas
+   where people would want to launch onto the Net, such as
+   airports.
+
+</font></td></tr>
+
+<tr valign=top><td align=right><font face="arial, helvetica" color="#660000"><b>5</b></font></td>
+
+<td><font face="arial, helvetica" size="-1"><b><a href="http://clickthru.online.com/Click?q=1d-6KTjIGQTqzGejK3Rl28NRQSnqQPR" >eMac</a>:</b><br>
+
+   This is the for-education-only computer that consumers
+   wanted so badly that Apple released it to them. The CNET
+   review is out, and here's the word: the eMac is what the iMac
+   used to be. Basically, it's an easy-to-use, fairly inexpensive
+   computer for users who don't need to do much besides word
+   processing and accessing the Web.
+	
+</font></td></tr>
+
+<tr valign=top><td colspan="2" align="left">
+<font face="arial, helvetica" size="-1">
+For more Buzz, <a href="http://clickthru.online.com/Click?q=32-Gx5IIrQi8Bx4v9qDFWVhZSgRXBnR" >click here</a>.
+</font>
+</td></tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table> 
+
+
+
+</td>
+
+</tr>
+
+</table> 
+
+
+<!-- ### footer ### -->
+<table width="612" bgcolor="#000000" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="599" bgcolor="#cccccc"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#eeeeee" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="12"><img src="http://www.cnet.com/b.gif" width="12" height="1"></td>
+<td width="575"><img src="http://www.cnet.com/b.gif" width="1" height="10"><br>
+<a href='http://nl.com.com/servlet/url_login?email=qqqqqqqqqq-zdnet@spamassassin.taint.org&brand=cnet'>
+<img src="http://a.r.tv.com/cnet.1d/i/nl/ft.gif" width="375" height="18" border="0" alt="Sign up for more free newsletters from CNET!"></a><br>
+
+<!-- subscription management -->
+
+<font face="ms sans serif, geneva" size="-2">
+The e-mail address for your subscription is&nbsp;qqqqqqqqqq-zdnet@spamassassin.taint.org<p>
+
+<A NOTRACK HREF='http://clickthru.online.com/Click?q=48-ggsbzRBpVdwCyNf7__1Q1FD9nc3p49RR'>Unsubscribe</A>&nbsp;|
+&nbsp;<a href='http://nl.com.com/servlet/url_login?email=qqqqqqqqqq-zdnet@spamassassin.taint.org&brand=cnet'>Manage my subscriptions</a>
+&nbsp;|&nbsp;<a href="http://clickthru.online.com/Click?q=5d-JN-bIK0w8sJtgMBobvZm5yGKIaZR" >FAQ</A>&nbsp;|
+&nbsp;<a href="http://clickthru.online.com/Click?q=72-R8PHIPUenorNRgfrqMtNXjoCKqdR" >Advertise</A><br></font>
+
+<!-- /subscription management-->
+
+</font><img src="http://www.cnet.com/b.gif" width="1" height="8"></td>
+<td width="12"><img src="http://www.cnet.com/b.gif" width="12" height="1"></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#000000" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="601"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#ffcc00" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="37"><a href="http://clickthru.online.com/Click?q=87-izDOQ8n4W17INUleplrQ8kasp4eR" ><img src="http://www.cnet.com/i/dp/smrb.gif" width="37" height="37" border="0"></a></td>
+<td width="563" nowrap><font face="arial, helvetica" size="-1">
+<a href="http://clickthru.online.com/Click?q=9c-xt6pQanVDfco_EYlXdIl9Oi-UiyR" ><font color="#000000">Price comparisons</font></a> |
+<a href="http://clickthru.online.com/Click?q=b1-YjxJQ-0MIp9rWSUr9i_f_B0NLnlR" ><font color="#000000">Product reviews</font></a> |
+<a href="http://clickthru.online.com/Click?q=c6-URF9QMLJOc4lhgmWdT_pfmeDx04R" ><font color="#000000">Tech news</font></a> |
+<a href="http://clickthru.online.com/Click?q=db-rmY9QJEJi8NOw3gvpmtTwxp6DtrR" ><font color="#000000">Downloads</font></a> |
+<a href="http://clickthru.online.com/Click?q=f0-nv_DQWgaJyD07Zr2fqfAgMcXeaiR" ><font color="#000000">All CNET services</font></a>
+</font></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" cellpadding="0" cellspacing="0" border="0">
+<tr><td bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+<tr><td height="25"><font face="ms sans serif, geneva" size="-2"><table width=100% border=0 cellspacing=2 cellpadding=1> <tr valign=bottom> <td width=75% height=31> <p></font> <br><b><font face=Arial, Helvetica, sans-serif size=2>    Copyright 2002 CNET Networks, Inc. All rights reserved.    </font></b> </p></td><td height=31 valign=top> <div align=right> <img src="http://gserv-cnet.zdnet.com/clear/outbound.gif?APPID=2&EMID=25136482&NL=e404-02&ISSUE=2002-07-18" height=1 width=1>    </div></td></tr><tr>  <td colspan=2><font face=Arial, Helvetica, sans-serif size=2>    </font></td></tr></table></font></td></tr>
+</table>
+<!-- ### /footer ### -->
+
+</body>
+</html>
+<IMG HEIGHT=1 WIDTH=1 SRC="http://clickthru.online.com/Click?q=06-fPCunn83hKf4T0DD4-QtRz1ub9RR">
+

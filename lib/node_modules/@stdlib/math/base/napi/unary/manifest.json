@@ -1,0 +1,53 @@
+{
+  "options": {},
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "src": [
+        "./src/c_c.c",
+        "./src/c_f.c",
+        "./src/d_d.c",
+        "./src/d_f.c",
+        "./src/f_f.c",
+        "./src/f_i.c",
+        "./src/i_d.c",
+        "./src/i_f.c",
+        "./src/i_i.c",
+        "./src/z_d.c",
+        "./src/z_z.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/complex/float32/ctor",
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/complex/float64/reim",
+        "@stdlib/complex/float32/reim"
+      ]
+    }
+  ]
+}

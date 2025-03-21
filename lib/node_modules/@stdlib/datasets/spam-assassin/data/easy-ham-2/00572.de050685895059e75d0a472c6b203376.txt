@@ -1,0 +1,86 @@
+From razor-users-admin@lists.sourceforge.net  Tue Aug  6 12:36:47 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5BF4B4418A
+	for <jm@localhost>; Tue,  6 Aug 2002 06:32:47 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:32:47 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g75ELvk14139 for <jm-razor@jmason.org>; Mon, 5 Aug 2002 15:21:57 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17biaa-00007m-00; Mon,
+    05 Aug 2002 07:12:04 -0700
+Received: from efes.daimi.au.dk ([130.225.17.145]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17bia1-0004i6-00 for <razor-users@lists.sourceforge.net>; Mon,
+    05 Aug 2002 07:11:29 -0700
+Received: (from glad@localhost) by efes.daimi.au.dk (8.11.6/8.11.6) id
+    g75EBOX31345 for razor-users@lists.sourceforge.net; Mon, 5 Aug 2002
+    16:11:24 +0200
+From: Michael Glad <glad@daimi.au.dk>
+Message-Id: <200208051411.g75EBOX31345@efes.daimi.au.dk>
+To: razor-users@example.sourceforge.net
+X-Mailer: ELM [version 2.4ME+ PL60 (25)]
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+Subject: [Razor-users] Trivial false-positives
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Mon, 5 Aug 2002 16:11:24 +0200 (CEST)
+Date: Mon, 5 Aug 2002 16:11:24 +0200 (CEST)
+
+
+It seems that an email consisting of a single line containg a
+control-M is detected as spam. 
+
+It also seems that an email consisting of 5 blank lines is also
+treated as spam:
+
+efes:~% rm -f qq
+efes:~% perl -e 'for($i = 0; $i < 5; $i++) { print "\n"; }' >> qq
+efes:~% razor-check -d qq > /tmp/bar
+efes:~% grep 'known spam' /tmp/bar
+Aug 05 16:07:20.141526 check[31105]: [ 3] mail 1 is known spam.
+
+I'm running Razor-agents 2.14.
+
+These examples are based on real-life false-positives found by my
+users. One of the reals emails was sent by a user which wrote the 
+real contents of the email in the Subject field.
+
+I thought the newer Razor-releases avoided these problems.
+
+     -- Michael Glad, email: glad@daimi.au.dk
+
+
+
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

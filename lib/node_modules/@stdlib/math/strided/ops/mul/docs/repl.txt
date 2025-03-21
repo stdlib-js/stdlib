@@ -1,0 +1,152 @@
+
+{{alias}}( N, dx, x, sx, dy, y, sy, dz, z, sz )
+    Multiplies each element in a strided array `x` to a corresponding element in
+    a strided array `y` and assigns the results to elements in a strided array
+    `z`.
+
+    The `N` and stride parameters determine which elements in the strided arrays
+    are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    dx: any
+        Data type for `x`.
+
+    x: ArrayLikeObject
+        Input array.
+
+    sx: integer
+        Index increment for `x`.
+
+    dy: any
+        Data type for `y`.
+
+    y: ArrayLikeObject
+        Input array.
+
+    sy: integer
+        Index increment for `y`.
+
+    dz: any
+        Data type for `z`.
+
+    z: ArrayLikeObject
+        Destination array.
+
+    sz: integer
+        Index increment for `z`.
+
+    Returns
+    -------
+    z: ArrayLikeObject
+        Input array `z`.
+
+    Examples
+    --------
+    // Standard usage:
+    > var x = new {{alias:@stdlib/array/float64}}( [ -2.0, 1.0, 3.0, -5.0 ] );
+    > var y = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var z = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+    > var dt = 'float64';
+    > {{alias}}( x.length, dt, x, 1, dt, y, 1, dt, z, 1 )
+    <Float64Array>[ -2.0, 2.0, 9.0, -20.0 ]
+
+    // Using `N` and stride parameters:
+    > z = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+    > {{alias}}( 2, dt, x, 2, dt, y, -2, dt, z, 1 )
+    <Float64Array>[ -6.0, 3.0, 0.0, 0.0 ]
+
+    // Using view offsets:
+    > var x0 = new {{alias:@stdlib/array/float64}}( [ -2.0, 1.0, 3.0, -5.0 ] );
+    > var y0 = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var z0 = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+    > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > var y1 = new {{alias:@stdlib/array/float64}}( y0.buffer, y0.BYTES_PER_ELEMENT*2 );
+    > var z1 = new {{alias:@stdlib/array/float64}}( z0.buffer, z0.BYTES_PER_ELEMENT*2 );
+    > {{alias}}( 2, dt, x1, -2, dt, y1, 1, dt, z1, 1 )
+    <Float64Array>[ -15.0, 4.0 ]
+    > z0
+    <Float64Array>[ 0.0, 0.0, -15.0, 4.0 ]
+
+
+{{alias}}.ndarray( N, dx, x, sx, ox, dy, y, sy, oy, dz, z, sz, oz )
+    Multiplies each element in a strided array `x` to a corresponding element in
+    a strided array `y` and assigns the results to elements in a strided array
+    `z` using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    dx: any
+        Data type for `x`.
+
+    x: ArrayLikeObject
+        Input array.
+
+    sx: integer
+        Index increment for `x`.
+
+    ox: integer
+        Starting index for `x`.
+
+    dy: any
+        Data type for `y`.
+
+    y: ArrayLikeObject
+        Input array.
+
+    sy: integer
+        Index increment for `y`.
+
+    oy: integer
+        Starting index for `y`.
+
+    dz: any
+        Data type for `z`.
+
+    z: ArrayLikeObject
+        Destination array.
+
+    sz: integer
+        Index increment for `z`.
+
+    oz: integer
+        Starting index for `z`.
+
+    Returns
+    -------
+    z: ArrayLikeObject
+        Input array `z`.
+
+    Examples
+    --------
+    // Standard usage:
+    > var x = new {{alias:@stdlib/array/float64}}( [ -2.0, 1.0, 3.0, -5.0 ] );
+    > var y = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var z = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+    > var dt = 'float64';
+    > {{alias}}.ndarray( 4, dt, x, 1, 0, dt, y, 1, 0, dt, z, 1, 0 )
+    <Float64Array>[ -2.0, 2.0, 9.0, -20.0 ]
+
+    // Advanced indexing:
+    > x = new {{alias:@stdlib/array/float64}}( [ -2.0, 1.0, 3.0, -5.0 ] );
+    > y = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > z = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+    > {{alias}}.ndarray( 2, dt, x, 2, 1, dt, y, -1, 3, dt, z, 1, 1 )
+    <Float64Array>[ 0.0, 4.0, -15.0, 0.0 ]
+
+    See Also
+    --------
+

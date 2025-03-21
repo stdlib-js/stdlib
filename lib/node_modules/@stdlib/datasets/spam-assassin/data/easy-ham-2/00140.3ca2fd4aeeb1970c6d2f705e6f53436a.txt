@@ -1,0 +1,104 @@
+From ilug-admin@linux.ie  Mon Jul 29 11:28:30 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3355544159
+	for <jm@localhost>; Mon, 29 Jul 2002 06:25:21 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 11:25:21 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6T9BFi19277 for
+    <jm-ilug@jmason.org>; Mon, 29 Jul 2002 10:11:15 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA01105; Mon, 29 Jul 2002 10:08:55 +0100
+Received: from mandark.labs.netnoteinc.com ([213.105.180.140]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id KAA01071 for <ilug@linux.ie>;
+    Mon, 29 Jul 2002 10:08:47 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [213.105.180.140] claimed
+    to be mandark.labs.netnoteinc.com
+Received: from triton.labs.netnoteinc.com
+    (lbedford@triton.labs.netnoteinc.com [192.168.2.12]) by
+    mandark.labs.netnoteinc.com (8.11.6/8.11.6) with SMTP id g6T98kp06783 for
+    <ilug@linux.ie>; Mon, 29 Jul 2002 10:08:47 +0100
+Date: Mon, 29 Jul 2002 10:08:46 +0100
+From: Liam Bedford <lbedford@netnoteinc.com>
+To: ilug@linux.ie
+Subject: Re: [ILUG] Optimizing for Pentium Pt.2
+Message-Id: <20020729100846.359298c3.lbedford@netnoteinc.com>
+In-Reply-To: <3D44BE4F.8070603@esatclear.ie>
+References: <200207262228.XAA19581@lugh.tuatha.org>
+    <20020727015716.A6561@ie.suberic.net>
+    <200207271701.SAA23172@lugh.tuatha.org> <3D4359EE.9050405@esatclear.ie>
+    <002a01c23664$b7326d40$f264a8c0@sabeo.ie> <3D44BE4F.8070603@esatclear.ie>
+Organization: Netnote International
+X-Mailer: Sylpheed version 0.7.8claws69 (GTK+ 1.2.10; i386-debian-linux-gnu)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Mon, 29 Jul 2002 05:02:23 +0100
+Paul Kelly claiming to think:
+
+> Matthew French wrote:
+> >>Happiness was restored to the world with gcc 2.95 and later.
+> > I do not have the time to follow the compiler "wars", but I notice that I
+> > must use egcs to build 64 bit SPARC code.
+> 
+> 2.95 was where the reintegration effort started and work on the other 
+> projects fell away. 3.0 was the target for completion of that work.
+> 
+> > GCC 3 should do it, but because it is so "buggy"[1] it is not worth trying
+> > to use unless you really want to track down those compiler errors... :(
+> 
+> A lot of those problems seem to have been shaken out by Redhat's ballsy 
+> gcc 2.96 stunt. I've been trying out RedHat Limbo for a few weeks now, 
+> equipped with gcc 3.1. I haven't fallen foul of compiler issue so far, 
+> that I'm aware of anyhow. That said I'm glad I don't do much C++ - seems 
+> pretty much every version of gcc (2.95, 2.96, 3.0, 3.1, and the 
+> forthcoming 3.2) breaks C++ binary compatibility in some way or other.
+> 
+diary.codemonkey.org.uk [Dave Jones]:
+ Got a mail from Neil telling me about some whizzy new warnings in the cvs 
+version of gcc. Pulled it and spent a while playing with gcc, and after a 
+few false starts got it to spit out a bunch of warnings when compiling the 
+kernel. There's a boatload of stuff that still needs cleaning up for 2.5 
+(Things like __FUNCTION__ abuse and the like). 2.4 doesn't even compile due 
+to broken asm constraints and other such sillies. As 3.x isn't a recommended 
+compiler for 2.4, this isn't too important just yet. As more and more archs 
+start using 3.x for their standard compiler though, we should clean up some 
+of this stuff for 2.5. The new warning Neil tipped me off about 
+(-Wunused-macros) turns out far too much crap. From what I looked at, 
+it was correct in most cases, and yes there were macros being defined 
+but being unused. Cleaning them up however creates a maintenance nightmare 
+for anyone with patches in those areas already. (This sort of cleanup 
+particularly hurts people like myself who have huge patches touching large 
+parts of the tree). The recent gcc->c99 struct initialisers patch for instance 
+made large parts of my tree reject. With more to come, the fun isn't over yet either.
+
+that is the CVS version, but it seems that more breakage is to come with the
+kernel :(
+
+(Everyone will want to compile their machine on the latest greatest... I think
+they eventually persuaded Compaq's compiler to compile the kernel)...
+
+L.
+-- 
+     dBP   dBBBBb | If you're looking at me to be an accountant
+              dBP | Then you will look but you will never see
+   dBP    dBBBK'  | If you're looking at me to start having babies
+  dBP    dB' db   | Then you can wish because I'm not here to fool around
+ dBBBBP dBBBBP'   | Belle & Sebastian (Family Tree)
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

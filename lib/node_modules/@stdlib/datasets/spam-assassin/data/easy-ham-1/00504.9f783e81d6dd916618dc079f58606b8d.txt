@@ -1,0 +1,102 @@
+From fork-admin@xent.com  Mon Sep  9 10:46:20 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id E841C16F1B
+	for <jm@localhost>; Mon,  9 Sep 2002 10:45:52 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 10:45:52 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g893E4C29655 for <jm@jmason.org>;
+    Mon, 9 Sep 2002 04:14:04 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 218112942B8; Sun,  8 Sep 2002 20:07:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.superb.net (smtp1.superb.net [207.228.225.14]) by
+    xent.com (Postfix) with SMTP id 773FB2942B7 for <fork@xent.com>;
+    Sun,  8 Sep 2002 20:06:32 -0700 (PDT)
+Received: (qmail 21992 invoked from network); 9 Sep 2002 03:09:21 -0000
+Received: from unknown (HELO maya.dyndns.org) (207.61.5.143) by
+    smtp1.superb.net with SMTP; 9 Sep 2002 03:09:21 -0000
+Received: by maya.dyndns.org (Postfix, from userid 501) id 1FC381CC98;
+    Sun,  8 Sep 2002 23:09:17 -0400 (EDT)
+To: kragen@pobox.com (Kragen Sitaker)
+Cc: fork@spamassassin.taint.org
+Subject: Re: earthviewer (was Re: whoa}
+References: <20020908232416.51F943F4E8@panacea.canonical.org>
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m2bs77uaea.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 08 Sep 2002 23:09:17 -0400
+
+>>>>> "K" == Kragen Sitaker <kragen@pobox.com> writes:
+
+    K> Planning battle tactics; for this reason, the intelligence
+    K> press reports, spy satellites have had 1-meter resolution for
+    K> many years.
+
+The military already have these spy satellites; they are basically
+Hubble pointed the other way, so I doubt they will be a big enough
+customer of this service to justify a next-generation wireless
+network rollout for the rest of us.
+
+    K> Finding an individual vehicle in a city might occasionally be
+    K> possible with 1-m images and might occasionally also be worth
+    K> the money.
+
+My car is only just over 1.5 meters across and maybe 3 meters long, so
+that means roughly six pixels total surface area.  You might find a
+16-wheeler this way, but how often do people misplace a 16-wheeler
+such that it is _that_ important to get old images of the terrain?
+Since they can't send up aircraft to update images in realtime every
+time, how is this different from just releasing the map on DVDs?  Why
+wireless?
+
+I thought of the common problem of lost prize cattle, but there again,
+will there really be business-case for creating a hi-res map of
+wyoming on the fly instead of just doing what they do now and hiring a
+helicopter for a few hours?
+
+    K> For small areas you have legitimate access to, it's probably
+    K> cheaper to go there with a digital camera and a GPS and take
+    K> some snapshots from ground level.  Aerial photos might be
+    K> cheaper for large areas, areas where you're not allowed --- or,
+    K> perhaps, physically able --- to go, and cases where you don't
+    K> have time to send a ground guy around the whole area.
+
+I can see lower-res being useful for Geologists, but considering their
+points of interest change only a few times every few million years,
+there's not much need to be wireless based on up-to-the-minute data.
+I expect most geologists travel with a laptop perfectly capable of DVD
+playback, and I also expect the most interesting geology is in regions
+where the wireless ain't going to go ;)
+
+I don't mean to nit-pick, it's just that I'm curious as to (a) the
+need for this product that justifies the extreme cost and (b) how we'd
+justify the ubiquitous next-generation wireless network that this
+product postulates when we /still/ can't find the killer app for 3G.
+
+-- 
+Gary Lawrence Murphy <garym@teledyn.com> TeleDynamics Communications Inc
+ Business Advantage through Community Software : http://www.teledyn.com
+"Computers are useless.  They can only give you answers."(Pablo Picasso)
+
+

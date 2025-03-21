@@ -1,0 +1,80 @@
+From fork-admin@xent.com  Wed Sep 18 11:52:23 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 2245516F03
+	for <jm@localhost>; Wed, 18 Sep 2002 11:52:23 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 18 Sep 2002 11:52:23 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8I4MeC12215 for <jm@jmason.org>;
+    Wed, 18 Sep 2002 05:22:40 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 954A62940C7; Tue, 17 Sep 2002 21:19:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from c007.snv.cp.net (h013.c007.snv.cp.net [209.228.33.241]) by
+    xent.com (Postfix) with SMTP id 0346C29409F for <FoRK@xent.com>;
+    Tue, 17 Sep 2002 21:18:29 -0700 (PDT)
+Received: (cpmta 17587 invoked from network); 17 Sep 2002 21:21:48 -0700
+Received: from 65.189.7.13 (HELO alumni.rice.edu) by
+    smtp.directvinternet.com (209.228.33.241) with SMTP; 17 Sep 2002 21:21:48
+    -0700
+X-Sent: 18 Sep 2002 04:21:48 GMT
+Message-Id: <3D87FF0F.1000309@alumni.rice.edu>
+From: Wayne E Baisley <baisley@alumni.rice.edu>
+User-Agent: Mozilla/5.0 (Windows; U; Win98; en-US; rv:1.0.1)
+    Gecko/20020823 Netscape/7.0
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: FoRK@xent.com
+Subject: Re: storage bits
+References: <Pine.LNX.4.33.0209170748460.14309-100000@hydrogen.leitl.org>
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 17 Sep 2002 23:20:31 -0500
+
+At Fermi (yes I'm back there; long story), we're buying 4U systems like 
+the fiscal year is ending.  We have ~20 ASA IR4US1 systems (not pushing 
+them, there are some other similar units available), with 60 more on 
+order.  They're 2-1/2 TB for $10K, although we add a separate IDE or 
+SCSI system disk, because the 3Ware RAID controllers can saturate. 
+Intel SDS2 motherboard, 2 1.4GHz P3s, 2 GB ram, 2 3Ware 7850 Raid 
+controllers, 16 160GB Maxtors, SysKonnect gigabit enet, Fermi RedHat 7.3.
+
+http://www.asacomputers.com/cgi-bin/index.fcg?action=displayscreen&templateid=25
+
+There's some interesting info at:
+
+http://mit.fnal.gov/~msn/cdf/caf/server_evaluation.html
+
+We've decided to go with XFS (which Linus has just merged into the 2.5 
+tree), mostly because none of the other journaled fs's can maintain >30 
+GB/s rates with a nearly full filesystem (mostly GB files) with random 
+deletions (we use these systems for caching our 2 petabyte tape store). 
+  Ext3 almost did it but dropped from from ~38MB/s to 10 with random 
+deletions, and didn't want to do direct io at all.  Only concern is an 
+occasional system lock-up we haven't chased down yet.  A load avg > 100 
+is always a patio of fun.
+
+Oddly, even fairly beefy systems like these will breathe hard to keep up 
+with the new STK 9940B tape drives, which crank along at a steady 
+30GB/s.  And you oldforktimers will remember "doofus" my old file server 
+system.  It would only take 2.1" of rackspace now, instead of 14 racks.
+
+Cheers,
+Wayne
+
+

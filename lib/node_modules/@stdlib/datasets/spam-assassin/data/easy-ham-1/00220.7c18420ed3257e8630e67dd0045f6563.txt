@@ -1,0 +1,76 @@
+From ilug-admin@linux.ie  Wed Aug 28 10:49:47 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 022664415B
+	for <zzzz@localhost>; Wed, 28 Aug 2002 05:48:52 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 28 Aug 2002 10:48:52 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7S9OZZ18095 for
+    <zzzz-ilug@spamassassin.taint.org>; Wed, 28 Aug 2002 10:24:35 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA14364; Wed, 28 Aug 2002 10:23:52 +0100
+Received: from corvil.com. (k100-159.bas1.dbn.dublin.eircom.net
+    [159.134.100.159]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id KAA14339
+    for <ilug@linux.ie>; Wed, 28 Aug 2002 10:23:44 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host k100-159.bas1.dbn.dublin.eircom.net
+    [159.134.100.159] claimed to be corvil.com.
+Received: from corvil.com (pixelbeat.local.corvil.com [172.18.1.170]) by
+    corvil.com. (8.12.5/8.12.5) with ESMTP id g7S9Nin4053396 for
+    <ilug@linux.ie>; Wed, 28 Aug 2002 10:23:44 +0100 (IST) (envelope-from
+    padraig.brady@corvil.com)
+Message-Id: <3D6C9688.6010203@corvil.com>
+Date: Wed, 28 Aug 2002 10:23:20 +0100
+From: Padraig Brady <padraig.brady@corvil.com>
+Organization: Corvil Networks
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:0.9.9) Gecko/20020408
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: ILUG list <ilug@linux.ie>
+Subject: Re: [ILUG] converting strings of hex to ascii
+References: <Pine.LNX.4.44.0208261139100.25114-100000@fogarty.jakma.org>
+    <3D6A0BB1.8050607@corvil.com> <3D6A0DA5.6050104@corvil.com>
+    <20020827182940.A6217@wanadoo.fr>
+Content-Type: text/plain; charset=ISO-8859-15; format=flowed
+Content-Transfer-Encoding: 8bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+David Neary wrote:
+> Padraig Brady wrote:
+> 
+>>>Paul Jakma wrote:
+>>>
+>>>>chars in hex to plain ASCII?
+>>>>
+>>>>eg given
+>>>>   http://w%77%77%2Eo%70%74%6F%72%69um.n%65t/remove.html
+>>>>
+>>>>is there an easy way to turn it into
+>>>>
+>>>>   http://www.optorium.net/remove.html
+>>>>eg, whether by piping through some already available tool, or 
+>>>>programmatically (printf? - but i dont see how.).
+>>>
+>>Actually the following would be in some way sensible:
+>>echo -e "`echo "$enc" | sed 's/%\([0-9a-fA-F]\{2,2\}\)/\\\x\1/g'`"
+> 
+> 
+> Why {2,2}? Why not {2}?
+
+Me being silly, that's all.
+
+Pádraig.
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

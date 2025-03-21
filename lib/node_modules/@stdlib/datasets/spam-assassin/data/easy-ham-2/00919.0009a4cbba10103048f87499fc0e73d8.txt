@@ -1,0 +1,68 @@
+From fork-admin@xent.com  Mon Jul 29 11:29:18 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3319B44167
+	for <jm@localhost>; Mon, 29 Jul 2002 06:25:38 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 11:25:38 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6RMc4i00470 for <jm@jmason.org>;
+    Sat, 27 Jul 2002 23:38:05 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 60FE42940B0; Sat, 27 Jul 2002 15:36:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from isolnetsux.techmonkeys.net (isolnetsux.techmonkeys.net
+    [64.243.46.20]) by xent.com (Postfix) with SMTP id 540DB2940AF for
+    <fork@xent.com>; Sat, 27 Jul 2002 15:35:19 -0700 (PDT)
+Received: (qmail 21648 invoked by uid 501); 27 Jul 2002 22:35:14 -0000
+Received: from localhost (sendmail-bs@127.0.0.1) by localhost with SMTP;
+    27 Jul 2002 22:35:14 -0000
+From: CDale <cdale@techmonkeys.net>
+To: "Adam L. Beberg" <beberg@mithral.com>
+Cc: Tom <tomwhore@slack.net>, <fork@spamassassin.taint.org>
+Subject: Re: And Away We go
+In-Reply-To: <Pine.LNX.4.33.0207271440240.16119-100000@watcher.mithral.com>
+Message-Id: <Pine.LNX.4.44.0207271732150.27125-100000@isolnetsux.techmonkeys.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sat, 27 Jul 2002 17:35:14 -0500 (CDT)
+
+On Sat, 27 Jul 2002, Adam L. Beberg wrote:
+
+> On Sat, 27 Jul 2002, CDale wrote:
+> 
+> > A true geek.  Runs to the puter to post before taking a laboring wife to
+> > the hospital.  I'd kill you.  LOL
+> > Grats, Daddy-o!
+> 
+> Fear not poor Tom, between the pain & endorphins and/or massive amounts of
+> drugs, she should remember little of the process. Her body is designed to
+> block out the whole event, so that she can tell other women "oh having the
+> baby wasnt so bad, you should have one!". Why else would any woman be
+> willing to EVER have sex.
+
+This tells me two things: 
+1. You are truly male.
+2. You are a male who has a very narrow view of what sex is about.
+
+(:
+
+C
+
+http://xent.com/mailman/listinfo/fork
+
+

@@ -1,0 +1,106 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2022 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# Error Database
+
+> Standard library error code database.
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var database = require( '@stdlib/error/tools/database' );
+```
+
+#### database()
+
+Returns a mapping of standard library error codes to their corresponding error messages.
+
+```javascript
+var db = database();
+// returns {...}
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var invertObject = require( '@stdlib/utils/object-inverse' );
+var replace = require( '@stdlib/string/replace' );
+var database = require( '@stdlib/error/tools/database' );
+
+var db = database();
+var errorMap = invertObject( db );
+var RE_ERR_MSG = /Error\( '([^']+)' \)/;
+
+function replacer( match, p1 ) {
+    return 'Error( formatProdErrorMessage( \'' + errorMap[ p1 ] + '\' ) )';
+}
+
+var code = 'throw new Error( \'insufficient input arguments. Must provide at least one iterator function.\' );';
+var transformed = replace( code, RE_ERR_MSG, replacer );
+// returns 'throw new Error( formatProdErrorMessage( \'04\' ) );'
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- <license> -->
+
+## License
+
+The data files (databases) are licensed under an [Open Data Commons Public Domain Dedication & License 1.0][pddl-1.0] and their contents are licensed under [Creative Commons Zero v1.0 Universal][cc0]. The software is licensed under [Apache License, Version 2.0][apache-license].
+
+<!-- </license> -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+[pddl-1.0]: http://opendatacommons.org/licenses/pddl/1.0/
+
+[cc0]: https://creativecommons.org/publicdomain/zero/1.0
+
+[apache-license]: https://www.apache.org/licenses/LICENSE-2.0
+
+<!-- <related-links> -->
+
+<!-- </related-links> -->
+
+</section>
+
+<!-- /.links -->

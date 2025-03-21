@@ -1,0 +1,106 @@
+From spamassassin-devel-admin@lists.sourceforge.net  Mon Aug 26 16:47:05 2002
+Return-Path: <spamassassin-devel-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E36A74415A
+	for <jm@localhost>; Mon, 26 Aug 2002 11:46:47 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 16:46:47 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7QFa2Z30094 for <jm@jmason.org>; Mon, 26 Aug 2002 16:36:04 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17jLtR-0002O9-00; Mon,
+    26 Aug 2002 08:35:05 -0700
+Received: from www.ctyme.com ([209.237.228.10] helo=darwin.ctyme.com) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17jLt4-0005Pf-00 for
+    <SpamAssassin-devel@lists.sourceforge.net>; Mon, 26 Aug 2002 08:34:42
+    -0700
+Received: from m206-56.dsl.tsoft.com ([198.144.206.56] helo=perkel.com) by
+    darwin.ctyme.com with asmtp (TLSv1:RC4-MD5:128) (Exim 3.35 #1) id
+    17jLtd-0006g2-00; Mon, 26 Aug 2002 08:35:17 -0700
+Message-Id: <3D6A4A75.6070608@perkel.com>
+From: Marc Perkel <marc@perkel.com>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.1b)
+    Gecko/20020721
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: Justin Mason <yyyy@spamassassin.taint.org>,
+	SpamAssassin-devel@lists.sourceforge.net
+Subject: Re: [SAdev] Re: several messages
+References: <20020826150231.3DD4E43F99@phobos.labs.netnoteinc.com>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: spamassassin-devel-admin@example.sourceforge.net
+Errors-To: spamassassin-devel-admin@example.sourceforge.net
+X-Beenthere: spamassassin-devel@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-devel-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-devel@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Id: SpamAssassin Developers <spamassassin-devel.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-devel>
+X-Original-Date: Mon, 26 Aug 2002 08:34:13 -0700
+Date: Mon, 26 Aug 2002 08:34:13 -0700
+
+Political news T R U T H O U T uses it too.
+
+Justin Mason wrote:
+>>>>  0.978    0.540    1.184    0.31   -1.00  FWD_MSG
+>>>
+>>>I'm a bit surprised that any spams hit this one.  Did somebody forward a 
+>>>spam that then went into a corpus?
+>>
+>>My corpus is quite clean and I get spam hits.
+> 
+> 
+> yes, it's being frequently forged already.
+> 
+> 
+>>>>  1.582    2.226    1.279    0.64    0.39  GAPPY_TEXT
+>>>
+>>>Gappy text in a non-spam?  It must be a  H E A D L I N E  or something.  
+>>>Maybe just remove space from the list of "gap" characters?
+>>
+>>For 2.50, we could try to figure out which nonspams are hitting and
+>>improve the rule.
+> 
+> 
+> BTW I subscribe to the Media Unspun newsletter, and it and a few others
+> regularly use that H E A D L I N E thing.
+> 
+> splitting it into 2, one that matches gappy text with punctuation chars,
+> one that matches spaces between the chars, would probably help.  if
+> anyone's bothered, I'd suggest filing a bug.
+> 
+> --j.
+> 
+> 
+> -------------------------------------------------------
+> This sf.net email is sponsored by: OSDN - Tired of that same old
+> cell phone?  Get a new here for FREE!
+> https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+> _______________________________________________
+> Spamassassin-devel mailing list
+> Spamassassin-devel@lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+> 
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-devel mailing list
+Spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+

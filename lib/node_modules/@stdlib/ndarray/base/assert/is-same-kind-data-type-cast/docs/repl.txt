@@ -1,0 +1,31 @@
+
+{{alias}}( from, to )
+    Returns a boolean indicating whether a provided ndarray data type can be
+    safely cast to, or is of the same "kind" as, another ndarray data type.
+
+    Parameters
+    ----------
+    from: string
+        ndarray data type.
+
+    to: string
+        ndarray data type.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a provided data type can be cast to another
+        data type.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 'float32', 'float64' )
+    true
+    > bool = {{alias}}( 'uint16', 'int32' )
+    true
+    > bool = {{alias}}( 'uint16', 'int16' )
+    false
+
+    See Also
+    --------
+

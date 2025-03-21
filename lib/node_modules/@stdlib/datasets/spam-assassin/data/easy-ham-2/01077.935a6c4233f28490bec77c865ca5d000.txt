@@ -1,0 +1,94 @@
+From fork-admin@xent.com  Mon Aug 19 11:06:10 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id AE60A441BC
+	for <jm@localhost>; Mon, 19 Aug 2002 05:56:00 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:56:00 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7J6rD611221 for <jm@jmason.org>;
+    Mon, 19 Aug 2002 07:53:16 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 1384B294103; Sun, 18 Aug 2002 23:46:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mta7.pltn13.pbi.net (mta7.pltn13.pbi.net [64.164.98.8]) by
+    xent.com (Postfix) with ESMTP id EF884294102 for <fork@xent.com>;
+    Sun, 18 Aug 2002 23:45:37 -0700 (PDT)
+Received: from [192.168.123.100] ([64.173.24.253]) by mta7.pltn13.pbi.net
+    (iPlanet Messaging Server 5.1 (built May  7 2001)) with ESMTP id
+    <0H1200JLPW697N@mta7.pltn13.pbi.net> for fork@xent.com; Sun,
+    18 Aug 2002 23:46:57 -0700 (PDT)
+From: James Rogers <jamesr@best.com>
+Subject: Re: Infectious disease (was Re: Al'Qaeda's fantasy ideology)
+In-Reply-To: <20020819041119.A9B13C44E@argote.ch>
+To: fork@spamassassin.taint.org
+Message-Id: <B985E270.D304%jamesr@best.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+User-Agent: Microsoft-Entourage/9.0.1.3108
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 18 Aug 2002 23:46:56 -0700
+
+On 8/18/02 9:11 PM, "Robert Harley" <harley@argote.ch> wrote:
+> 
+> Another theory is that Europe was a rural backyard until the Renaissance,
+> certainly when compared to big urban centres like Constantinople and Baghdad.
+
+
+It is possible; hell if I know.
+
+ 
+> I don't know the genetic studies of which you speak, but I know of one that
+> is sort-of relevant: apparently men of Ashkenazi descent are susceptible
+> to sickle-cell anemia and the probable reason is that the same genetic
+> factor that causes that also protects women from tuberculosis (IIRC), which
+> would have come in handy in central European towns at a time when the Jewish
+> population was a lot more urbanised than average Joes.
+
+
+I actually hear about this from people who are researchers in
+pharma-biotech.  My authority isn't much better than "they say", but they
+say that they've uncovered quite a few advantageous mutations in the ethnic
+European genome that protect against quite a few different diseases,
+mutations which are not found in various African, Asian, and other
+populations that they also study.  Based on the genome research (as it
+relates to infectious disease, which is among their primary interests) of
+these various populations around the world, they and others are finding far
+more protective mutations in the Caucasian/European genome than in the other
+race populations they survey.  All the races and ethnic subgroups usually
+have genetic mutations specific to them that provide protection against
+specific infectious diseases.  What they are saying is that they are finding
+far more in the European genome than in the others, and it isn't because
+nobody is looking elsewhere.
+
+You can find studies and results like this in the science wires.  For
+example, one which I remember off the top of my head is the identified
+genetic mutation that makes something like 1% of Caucasians immune to HIV-1,
+and another 10-20% or so resistant to it.  Obviously, the protective
+mutation occurred at some point in time prior to HIV-1 being introduced into
+the European population.  What the researchers I've talked to seem to be
+saying is that Europeans express a lot more of these types of gene
+mutations, with similar protections from infectious disease, than other
+populations.  Nobody really knows why for sure.  On the upside, identifying
+genetic immunities to infectious disease helps the bio-techs come up with
+pharmacological solutions for people that don't have immunity.
+
+-James Rogers
+ jamesr@best.com
+
+http://xent.com/mailman/listinfo/fork
+

@@ -1,0 +1,40 @@
+
+{{alias}}( x, n, b )
+    Rounds a numeric value to the nearest multiple of `b^n` toward negative
+    infinity.
+
+    Due to floating-point rounding error, rounding may not be exact.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    n: integer
+        Integer power.
+
+    b: integer
+        Base.
+
+    Returns
+    -------
+    y: number
+        Rounded value.
+
+    Examples
+    --------
+    // Round to 4 decimal places:
+    > var y = {{alias}}( 3.14159, -4, 10 )
+    3.1415
+
+    // If `n = 0` or `b = 1`, standard round behavior:
+    > y = {{alias}}( 3.14159, 0, 2 )
+    3.0
+
+    // Round to nearest multiple of two toward negative infinity:
+    > y = {{alias}}( 5.0, 1, 2 )
+    4.0
+
+    See Also
+    --------
+

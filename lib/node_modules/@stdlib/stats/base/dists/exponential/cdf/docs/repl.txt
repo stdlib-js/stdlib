@@ -1,0 +1,62 @@
+
+{{alias}}( x, λ )
+    Evaluates the cumulative distribution function (CDF) for an exponential
+    distribution with rate parameter `λ` at a value `x`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided a negative value for `λ`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    λ: number
+        Rate parameter.
+
+    Returns
+    -------
+    out: number
+        Evaluated CDF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 2.0, 0.1 )
+    ~0.181
+    > y = {{alias}}( 1.0, 2.0 )
+    ~0.865
+    > y = {{alias}}( -1.0, 4.0 )
+    0.0
+    > y = {{alias}}( NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN )
+    NaN
+
+    // Negative rate parameter:
+    > y = {{alias}}( 2.0, -1.0 )
+    NaN
+
+{{alias}}.factory( λ )
+    Returns a function for evaluating the cumulative distribution function (CDF)
+    for an exponential distribution with rate parameter `λ`.
+
+    Parameters
+    ----------
+    λ: number
+        Rate parameter.
+
+    Returns
+    -------
+    cdf: Function
+        Cumulative distribution function (CDF).
+
+    Examples
+    --------
+    > var myCDF = {{alias}}.factory( 0.5 );
+    > var y = myCDF( 3.0 )
+    ~0.777
+
+    See Also
+    --------
+

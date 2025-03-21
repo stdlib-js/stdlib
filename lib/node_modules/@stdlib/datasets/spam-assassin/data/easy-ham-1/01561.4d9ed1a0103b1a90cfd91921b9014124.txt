@@ -1,0 +1,245 @@
+From razor-users-admin@lists.sourceforge.net  Fri Sep  6 11:34:24 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 5238B16F19
+	for <jm@localhost>; Fri,  6 Sep 2002 11:34:06 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 11:34:06 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g868cdW26208 for
+    <jm-razor@jmason.org>; Fri, 6 Sep 2002 09:38:50 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id DAA19774 for
+    <jm-razor@jmason.org>; Fri, 6 Sep 2002 03:23:07 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17n8dH-0003Pb-00; Thu,
+    05 Sep 2002 19:14:03 -0700
+Received: from nycsmtp2out.rdc-nyc.rr.com ([24.29.99.227]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17n8cJ-0006KG-00 for <razor-users@lists.sourceforge.net>; Thu,
+    05 Sep 2002 19:13:03 -0700
+Received: from lelandwoodbury.com (66-108-249-115.nyc.rr.com
+    [66.108.249.115]) by nycsmtp2out.rdc-nyc.rr.com (8.12.1/Road Runner SMTP
+    Server 1.0) with ESMTP id g862AbOx021295; Thu, 5 Sep 2002 22:10:37 -0400
+    (EDT)
+Message-Id: <3D780F2B.8090709@lelandwoodbury.com>
+From: Leland Woodbury <leland@lelandwoodbury.com>
+User-Agent: Mozilla/5.0 (Windows; U; Win98; en-US; rv:1.1a) Gecko/20020611
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: David Rees <dbr@greenhydrant.com>
+Cc: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] Problem with Razor 2.14 and Spamassassin 2.41
+References: <20020905160808.B2932@greenhydrant.com>
+    <Pine.LNX.4.44.0209051816270.22445-100000@burgers.bubbanfriends.org>
+    <20020906005315.GH29663@kluge.net> <20020905181308.B4905@greenhydrant.com>
+Content-Type: multipart/mixed; boundary="------------050101050502080302080407"
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Thu, 05 Sep 2002 22:12:59 -0400
+Date: Thu, 05 Sep 2002 22:12:59 -0400
+
+This is a multi-part message in MIME format.
+--------------050101050502080302080407
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+
+I found a nice little Perl script for this purpose called rotate, which 
+makes the process of rotating log files very simple.  If there's an 
+official source for this script, I couldn't find it.  (My hosting 
+provider, pair.com, has it installed, and that's where I found it.) 
+ However, redistribution appears to be allowed, so I've attached it.
+
+Good luck...
+
+L
+
+David Rees wrote:
+
+>On Thu, Sep 05, 2002 at 08:53:16PM -0400, Theo Van Dinter wrote:
+>  
+>
+>>On Thu, Sep 05, 2002 at 06:16:57PM -0500, Mike Burger wrote:
+>>    
+>>
+>>>You might be better asking this on the spamassassin-talk list.  The folks 
+>>>there will almost definitely have an answer for this.
+>>>      
+>>>
+>>I posted a fairly lengthy complete answer to this problem and how to
+>>get around it in SA 2.41 on the spamassassin-talk list. :)
+>>    
+>>
+>
+>Thanks for the post there, it answered all my questions about
+>spamassassin/razor interaction.
+>
+>Now for a razor question:
+>
+>I'm worried about having a server full of razor-agent.log files which keep
+>on growing.  Is it possible to configure razor log via SYSLOG to make it
+>easy to rotate logs?  Searching through the man pages didn't turn anything
+>up...  Otherwise I'll have to write a script to go through each user's home
+>directory looking for razor-agent.log files to rotate periodically.
+>
+>Thanks,
+>Dave
+>
+>
+>-------------------------------------------------------
+>This sf.net email is sponsored by: OSDN - Tired of that same old
+>cell phone?  Get a new here for FREE!
+>https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+>_______________________________________________
+>Razor-users mailing list
+>Razor-users@lists.sourceforge.net
+>https://lists.sourceforge.net/lists/listinfo/razor-users
+>  
+>
+
+--------------050101050502080302080407
+Content-Type: application/x-java-applet;version=1.1.1;
+ name="rotate"
+Content-Transfer-Encoding: base64
+Content-Disposition: inline;
+ filename="rotate"
+
+IyEvdXNyL2Jpbi9wZXJsCjsjCjsjIENvcHlyaWdodCAoYykgMTk5NS0xOTk5CjsjCUlrdW8g
+TmFrYWdhd2EuIEFsbCByaWdodHMgcmVzZXJ2ZWQuCjsjCjsjIFJlZGlzdHJpYnV0aW9uIGFu
+ZCB1c2UgaW4gc291cmNlIGFuZCBiaW5hcnkgZm9ybXMsIHdpdGggb3Igd2l0aG91dAo7IyBt
+b2RpZmljYXRpb24sIGFyZSBwZXJtaXR0ZWQgcHJvdmlkZWQgdGhhdCB0aGUgZm9sbG93aW5n
+IGNvbmRpdGlvbnMKOyMgYXJlIG1ldDoKOyMKOyMgMS4gUmVkaXN0cmlidXRpb25zIG9mIHNv
+dXJjZSBjb2RlIG11c3QgcmV0YWluIHRoZSBhYm92ZSBjb3B5cmlnaHQKOyMgICAgbm90aWNl
+IHVubW9kaWZpZWQsIHRoaXMgbGlzdCBvZiBjb25kaXRpb25zLCBhbmQgdGhlIGZvbGxvd2lu
+Zwo7IyAgICBkaXNjbGFpbWVyLgo7IyAyLiBSZWRpc3RyaWJ1dGlvbnMgaW4gYmluYXJ5IGZv
+cm0gbXVzdCByZXByb2R1Y2UgdGhlIGFib3ZlIGNvcHlyaWdodAo7IyAgICBub3RpY2UsIHRo
+aXMgbGlzdCBvZiBjb25kaXRpb25zIGFuZCB0aGUgZm9sbG93aW5nIGRpc2NsYWltZXIgaW4g
+dGhlCjsjICAgIGRvY3VtZW50YXRpb24gYW5kL29yIG90aGVyIG1hdGVyaWFscyBwcm92aWRl
+ZCB3aXRoIHRoZSBkaXN0cmlidXRpb24uCjsjCjsjIFRISVMgU09GVFdBUkUgSVMgUFJPVklE
+RUQgQlkgVEhFIEFVVEhPUiBBTkQgQ09OVFJJQlVUT1JTIGBgQVMgSVMnJyBBTkQKOyMgQU5Z
+IEVYUFJFU1MgT1IgSU1QTElFRCBXQVJSQU5USUVTLCBJTkNMVURJTkcsIEJVVCBOT1QgTElN
+SVRFRCBUTywgVEhFCjsjIElNUExJRUQgV0FSUkFOVElFUyBPRiBNRVJDSEFOVEFCSUxJVFkg
+QU5EIEZJVE5FU1MgRk9SIEEgUEFSVElDVUxBUgo7IyBQVVJQT1NFIEFSRSBESVNDTEFJTUVE
+LiAgSU4gTk8gRVZFTlQgU0hBTEwgVEhFIEFVVEhPUiBPUiBDT05UUklCVVRPUlMKOyMgQkUg
+TElBQkxFIEZPUiBBTlkgRElSRUNULCBJTkRJUkVDVCwgSU5DSURFTlRBTCwgU1BFQ0lBTCwg
+RVhFTVBMQVJZLAo7IyBPUiBDT05TRVFVRU5USUFMIERBTUFHRVMgKElOQ0xVRElORywgQlVU
+IE5PVCBMSU1JVEVEIFRPLCBQUk9DVVJFTUVOVAo7IyBPRiBTVUJTVElUVVRFIEdPT0RTIE9S
+IFNFUlZJQ0VTOyBMT1NTIE9GIFVTRSwgREFUQSwgT1IgUFJPRklUUzsgT1IKOyMgQlVTSU5F
+U1MgSU5URVJSVVBUSU9OKSBIT1dFVkVSIENBVVNFRCBBTkQgT04gQU5ZIFRIRU9SWSBPRiBM
+SUFCSUxJVFksCjsjIFdIRVRIRVIgSU4gQ09OVFJBQ1QsIFNUUklDVCBMSUFCSUxJVFksIE9S
+IFRPUlQgKElOQ0xVRElORyBORUdMSUdFTkNFCjsjIE9SIE9USEVSV0lTRSkgQVJJU0lORyBJ
+TiBBTlkgV0FZIE9VVCBPRiBUSEUgVVNFIE9GIFRISVMgU09GVFdBUkUsCjsjIEVWRU4gSUYg
+QURWSVNFRCBPRiBUSEUgUE9TU0lCSUxJVFkgT0YgU1VDSCBEQU1BR0UuCjsjCjsjICRJZDog
+cm90YXRlLHYgMS42IDE5OTkvMTEvMTAgMjM6MTI6MjggaWt1byBFeHAgJAo7Iwo7IyBIb3cg
+dG8gdXNlIGByb3RhdGUnIHByb2dyYW06CjsjCjsjICAgVG8gcm90YXRlICIvdmFyL2xvZy94
+eHgubG9nIiB0byAiL3Zhci9sb2cveHh4LmxvZy5vbGQiLCBhbmQKOyMgICBjcmVhdGUgYSBu
+ZXcgZmlsZSAiL3Zhci9sb2cveHh4LmxvZyI6CjsjCXJvdGF0ZSAvdmFyL2xvZy94eHgubG9n
+CjsjCjsjICAgSWYgeW91IHdhbnQgdG8gcm90YXRlIGZpbGVzIHdpdGggc3VmZml4ZXMsIHRy
+eSBhZGRpdGlvbmFsCjsjICAgYXJndW1lbnQgZm9yIGByb3RhdGUnIGNvbW1hbmQuCjsjCXJv
+dGF0ZSAvdmFyL2xvZy94eHgubG9nIDIgMSAwCjsjCjsjICAgWW91IGNhbiBzcGVjaWZ5IHRo
+ZSBvd25lci9ncm91cCBvciBmaWxlIHBlcm1pc3Npb24gbW9kZSBmb3IKOyMgICB0aGUgbmV3
+IGZpbGUgKGxpa2UgYGluc3RhbGwnIGNvbW1hbmQpOgo7Iwlyb3RhdGUgLW8gcm9vdCAtZyB3
+aGVlbCAtbSA2NDQgL3Zhci9sb2cvbWVzc2FnZXMgMiAxIDAKOyMKOyMgICBZb3UgY2FuIGFs
+c28gY29tcHJlc3Mgcm90YXRlZCBmaWxlIHdpdGggYGd6aXAnOgo7Iwlyb3RhdGUgLXogL3Zh
+ci9sb2cvYWNjZXNzLmxvZyAyIDEgMAo7Iwo7IyAgIG9yIHdpdGggYGNvbXByZXNzJzoKOyMJ
+cm90YXRlIC1aIC92YXIvbG9nL2FjY2Vzcy5sb2cgMiAxIDAKOyMKOyMgVGhpcyBpcyBiZWNh
+dXNlIHdlIHN1cHBvcnRzIHBlcmwgdmVyc2lvbiA0LgpyZXF1aXJlICdnZXRvcHRzLnBsJzsK
+CjsjIEdldCBwcm9ncmFtIG5hbWUKKCRwcm9ncmFtKSA9ICgkMCA9fiBtJShbXi9dKykkJSk7
+Cgo7IyBGb3IgemVybyBiYXNlZCBpbmRleC4KJFsgPSAwOwoKOyMgU2hvdyBkZWJ1ZyBsb2cg
+dG8gU1RET1VULgpzdWIgZGVidWcgewoJbG9jYWwoJF8pOyAjIHVzZWQgaW4gZ3JlcC4KCWdy
+ZXAoKHByaW50ICIkX1xuIiksIEBfKSBpZiAkb3B0X3Y7Cn0KCjsjIEluaXRpYWxpemUgb3B0
+aW9ucyAoZm9yICJwZXJsIC1jdyIpLgp1bmRlZiAkb3B0X047CnVuZGVmICRvcHRfVDsKdW5k
+ZWYgJG9wdF9aOwp1bmRlZiAkb3B0X2c7CnVuZGVmICRvcHRfbTsKdW5kZWYgJG9wdF9uOwp1
+bmRlZiAkb3B0X287CnVuZGVmICRvcHRfdDsKdW5kZWYgJG9wdF92Owp1bmRlZiAkb3B0X3o7
+Cgo7IyBQYXJzaW5nIG9wdGlvbnMKdW5sZXNzICgmR2V0b3B0cygiTlRaZzptOm5vOnR2eiIp
+ICYmIGRlZmluZWQoJHRhcmdldCA9IHNoaWZ0KSkgewoJZGllIDw8IkVORCI7ClVzYWdlOiAk
+cHJvZ3JhbSBbb3B0aW9uc10gcGF0aCBbc3VmZml4IHN1ZmZpeCAuLi5dCk9wdGlvbnM6Cgkt
+dgl2ZXJib3NlIG1vZGUuCgktbglkbyBub3QgcmVhbCB3b3JrLiBvbmx5IHNob3cgcHJvY2Vz
+c2luZy4KCS1OCWRvIG5vdCBjcmVhdGUgYSBuZXcgZmlsZS4KCS16CWNvbXByZXNzIHdpdGgg
+YGd6aXAnLgoJLVoJY29tcHJlc3Mgd2l0aCBgY29tcHJlc3MnLgoJLW8Jc3BlY2lmeSBvd25l
+ci4KCS1nCXNwZWNpZnkgZ3JvdXAuCgktbQlzcGVjaWZ5IG1vZGUuCgktVAl1c2UgYFlZWVkt
+TU0tREQnIChnaXZlbiBieSBjdXJyZW50IHRpbWUpIGFzIHRoZSBkZWZhdWx0CgkJc3VmZml4
+LCBpbnN0ZWFkIG9mIGBvbGQnLgoJLXQJdXNlIGBZWVlZLU1NLUREJyAoZnJvbSBsYXN0IG1v
+ZGlmaWVkIHRpbWUgb2YgdGhlIHRhcmdldCkKCQlhcyB0aGUgZGVmYXVsdCBzdWZmaXgsIGlu
+c3RlYWQgb2YgYG9sZCcuCkVORAp9Cgo7IyBUZXN0IG1vZGUgcmVxdWlyZXMgdmVyYm9zZSBv
+cHRpb24KJG9wdF92KysgaWYgJG9wdF9uOwoKOyMgSWYgbm8gc3VmZml4IHdhcyBnaXZlbiwg
+d2UgZ2VuZXJhdGUgZGVmYXVsdCBvbmUuCnVubGVzcyAoQEFSR1YpIHsKCWlmICgkb3B0X1Qg
+fHwgJG9wdF90KSB7CgkJaWYgKCRvcHRfdCAmJiAhIC1lICR0YXJnZXQpIHsKCQkJZGllKCIk
+dGFyZ2V0IG11c3QgZXhpc3QgaWYgLXQgZmxhZyBpcyBzcGVjaWZpZWQuXG4iKTsKCQl9CgkJ
+JHQgPSAkb3B0X3QgPyAoc3RhdCgkdGFyZ2V0KSlbOV0gOiB0aW1lOwoJCUB0ID0gcmV2ZXJz
+ZSgobG9jYWx0aW1lKCR0KSlbMC4uNV0pOwoJCSR0WzBdICs9IDE5MDA7CgkJJHRbMV0rKzsK
+CQlAQVJHViA9IChzcHJpbnRmKCIlMDRkLSUwMmQtJTAyZCIsIEB0KSk7Cgl9IGVsc2UgewoJ
+CUBBUkdWID0gKCdvbGQnKTsKCX0KfQoKOyMgUm90YXRlIHRoZSB0YXJnZXQgZmlsZS4KJnNh
+ZmVfcm90YXRlKCR0YXJnZXQsIEBBUkdWKTsKCjsjIFRvdWNoIHRoZSBuZXcgb25lLgomc2Fm
+ZV9jcmVhdGUoJHRhcmdldCkgdW5sZXNzICRvcHRfTjsKCjsjIE5vcm1hbCB0ZXJtaW5hdGlv
+bi4KZXhpdDsKCjsjIFRvdWNoIGEgZmlsZS4gQ3JlYXRlIGEgbmV3IG9uZSBpZiBpdCBkb2Vz
+IG5vdCBleGlzdC4Kc3ViIHRvdWNoIHsKCWxvY2FsKCRhKSA9IEBfOwoJbG9jYWwoKkZJTEUp
+OwoKCSRhIG5lICcnICYmIG9wZW4oRklMRSwgJz4+Jy4kYSkgJiYgY2xvc2UoRklMRSkgJiYg
+LWUgJGE7Cn0KCjsjCnN1YiBzYWZlX3VubGluayB7Cglsb2NhbCgkYSkgPSBAXzsKCglpZiAo
+LWUgJGEpIHsKCQkmZGVidWcoInVubGluayBcIiRhXCIiKTsKCQkkb3B0X24gfHwgdW5saW5r
+KCRhKSB8fCBkaWUoInVubGluaygkYSk6ICQhIik7Cgl9Cn0KCjsjCnN1YiBzYWZlX3JlbmFt
+ZSB7Cglsb2NhbCgkYSwgJGIpID0gQF87ICMgZnJvbSwgdG8KCglpZiAoLWUgJGEpIHsKCQkm
+ZGVidWcoInJlbmFtZSBcIiRhXCIgdG8gXCIkYlwiIik7CgkJJG9wdF9uIHx8IHJlbmFtZSgk
+YSwgJGIpIHx8IGRpZSgicmVuYW1lKCRhLCAkYik6ICQhIik7Cgl9Cn0KCjsjCnN1YiBzYWZl
+X2NvbXByZXNzIHsKCWxvY2FsKCRhKSA9IEBfOwoKCWlmICgteiAkYSkgeyAjIGNvbXByZXNz
+IHdpbGwgZmFpbCBpbiB0aGlzIGNhc2UKCQkmZGVidWcoIndlIHdvbid0IGNvbXByZXNzIHpl
+cm8tc2l6ZWQgZmlsZTogXCIkYVwiIik7Cgl9IGVsc2UgewoJCSZkZWJ1ZygiY29tcHJlc3Mg
+XCIkYVwiIik7CgkJJG9wdF9uCXx8IHN5c3RlbSgnY29tcHJlc3MnLCAkYSkgPT0gMAoJCQl8
+fCBkaWUoInN5c3RlbShjb21wcmVzcywgJGEpOiBmYWlsdXJlLlxuIik7Cgl9Cn0KCjsjCnN1
+YiBzYWZlX2d6aXAgewoJbG9jYWwoJGEpID0gQF87CgoJJmRlYnVnKCJnemlwIFwiJGFcIiIp
+OwoJJG9wdF9uCXx8IHN5c3RlbSgnZ3ppcCcsICRhKSA9PSAwCgkJfHwgZGllKCJzeXN0ZW0o
+Z3ppcCwgJGEpOiBmYWlsdXJlLlxuIik7Cn0KCjsjIENyZWF0ZSBhIG5ldyBvbmUKc3ViIHNh
+ZmVfY3JlYXRlIHsKCWxvY2FsKCRhKSA9IHNoaWZ0OwoKCSZkZWJ1ZygidG91Y2ggXCIkYVwi
+Iik7Cgkkb3B0X24gfHwgJnRvdWNoKCRhKSB8fCBkaWUoInRvdWNoKCRhKTogJCEiKTsKCgkj
+IHNldCBvd25lciBhbmQgZ3JvdXAKCWlmIChkZWZpbmVkKCRvcHRfbykgfHwgZGVmaW5lZCgk
+b3B0X2cpKSB7CgkJbG9jYWwoJHVpZCwgJGdpZCkgPSAoc3RhdCgkYSkpWzQsIDVdOwoJCSFk
+ZWZpbmVkKCRvcHRfbykKCQkJfHwgKCgkdWlkID0gJG9wdF9vKSA9fiAvXlxkKyQvKQoJCQl8
+fCBkZWZpbmVkKCR1aWQgPSBnZXRwd25hbSgkb3B0X28pKQoJCQl8fCBkaWUoImdldHB3bmFt
+KCRvcHRfbyk6ICQhIik7CgkJIWRlZmluZWQoJG9wdF9nKQoJCQl8fCAoKCRnaWQgPSAkb3B0
+X2cpID1+IC9eXGQrJC8pCgkJCXx8IGRlZmluZWQoJGdpZCA9IGdldGdybmFtKCRvcHRfZykp
+CgkJCXx8IGRpZSgiZ2V0Z3JuYW0oJG9wdF9nKTogJCEiKTsKCQkmZGVidWcoImNob3duKCR1
+aWQsICRnaWQsIFwiJGFcIikiKTsKCQkkb3B0X24JfHwgY2hvd24oJHVpZCwgJGdpZCwgJGEp
+CgkJCXx8IGRpZSgiY2hvd24oJGEpOiAkISIpOwoJfQoKCSMgc2V0IGZpbGUgbW9kZQoJaWYg
+KGRlZmluZWQoJG9wdF9tKSkgewoJCSRvcHRfbSA9fiAvXlxkKyQvIHx8IGRpZSAiaWxsZWdh
+bCBtb2RlOiAkb3B0X21cbiI7CgkJJG9wdF9tID0gb2N0KCRvcHRfbSk7CgkJJmRlYnVnKCJj
+aG1vZCAiLnNwcmludGYoIiUwNG8iLCAkb3B0X20pLiIsIFwiJGFcIiIpOwoJCSRvcHRfbiB8
+fCBjaG1vZCgkb3B0X20sICRhKSB8fCBkaWUoImNobW9kKCRhKTogJCEiKTsKCX0KCgkjIHN1
+Y2Nlc3MuCgkxOwp9Cgo7IyBSb3RhdGUgLSBkbyByZWFsIHdvcmsuCnN1YiBzYWZlX3JvdGF0
+ZSB7Cglsb2NhbCgkYSkgPSBzaGlmdDsKCgkjIGNoZWNrIGV4aXN0ZW5jZSwgYW5kIHN1ZmZp
+eGVzCglyZXR1cm4gMCB1bmxlc3MgJGEgbmUgJycgJiYgLWUgJGEgJiYgQF87CgoJIyBsb2cg
+bWVzc2FnZQoJJmRlYnVnKCJyb3RhdGluZyBcIiRhXCIiKTsKCgkjIHJlbW92ZSBvbGRlc3Qg
+b25lCglsb2NhbCgkYikgPSAkYS4nLicuc2hpZnQ7Cgkmc2FmZV91bmxpbmsoJGIpOwoJJnNh
+ZmVfdW5saW5rKCRiLicuWicpOwoJJnNhZmVfdW5saW5rKCRiLicuZ3onKTsKCgkjIGxvb3Ag
+dG8gcm90YXRlIGZpbGVzCgl3aGlsZSAoQF8pIHsKCQlsb2NhbCgkeCkgPSAkYS4nLicuc2hp
+ZnQ7CgkJJnNhZmVfcmVuYW1lKCR4LCAkYik7CgkJJnNhZmVfcmVuYW1lKCR4LicuWicsICRi
+LicuWicpOwoJCSZzYWZlX3JlbmFtZSgkeC4nLmd6JywgJGIuJy5neicpOwoJCSRiID0gJHg7
+Cgl9CgoJIyByb3RhdGUgbGFzdCBvbmUKCSZzYWZlX3JlbmFtZSgkYSwgJGIpOwoKCSMgc2hh
+bGwgd2UgY29tcHJlc3Mgcm90YXRlZCBvbmU/Cgkkb3B0X3ogPyAmc2FmZV9nemlwKCRiKSA6
+ICRvcHRfWiA/ICZzYWZlX2NvbXByZXNzKCRiKSA6IDE7Cn0K
+--------------050101050502080302080407--
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+

@@ -1,0 +1,82 @@
+From fork-admin@xent.com  Tue Aug 20 11:53:45 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E1E9A43C68
+	for <jm@localhost>; Tue, 20 Aug 2002 06:52:14 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 11:52:14 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7K2vGZ22062 for <jm@jmason.org>;
+    Tue, 20 Aug 2002 03:57:17 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id CB16829413F; Mon, 19 Aug 2002 19:55:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mail.evergo.net (unknown [206.191.151.2]) by xent.com
+    (Postfix) with SMTP id 6E2C029409D for <fork@xent.com>; Mon,
+    19 Aug 2002 19:54:20 -0700 (PDT)
+Received: (qmail 29439 invoked from network); 20 Aug 2002 02:55:54 -0000
+Received: from dsl.206.191.151.102.evergo.net (HELO JMHALL)
+    (206.191.151.102) by mail.evergo.net with SMTP; 20 Aug 2002 02:55:54 -0000
+Reply-To: <johnhall@evergo.net>
+From: "John Hall" <johnhall@evergo.net>
+To: <fork@spamassassin.taint.org>
+Subject: Test Test ignore <eom>
+Message-Id: <00a501c247f5$1561dd50$0200a8c0@JMHALL>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.2627
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Importance: Normal
+In-Reply-To: <8369845E-B3BF-11D6-A70E-000393A46DEA@alumni.caltech.edu>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 19 Aug 2002 19:55:46 -0700
+
+
+
+John Hall
+13464 95th Ave NE
+Kirkland WA 98034
+
+
+> -----Original Message-----
+> From: fork-admin@xent.com [mailto:fork-admin@xent.com] On Behalf Of
+Rohit
+> Khare
+> Sent: Monday, August 19, 2002 3:04 PM
+> To: fork@spamassassin.taint.org
+> Subject: POLICY CHANGE: subscriber-only posting
+> 
+> Sorry, gang, but I've flipped the switch. If your posting address
+> doesn't match your subscription address, or if you've instructed a
+robot
+> to forkpost on your behalf, it'll get held, silently, for me or Kragen
+> to review. Which will be rarely, so be warned.
+> 
+> Let's see how this works out for a week or so...
+> 
+> Rohit
+> 
+> ---
+> My permanent email address is khare@alumni.caltech.edu
+> 
+> http://xent.com/mailman/listinfo/fork
+
+
+http://xent.com/mailman/listinfo/fork
+

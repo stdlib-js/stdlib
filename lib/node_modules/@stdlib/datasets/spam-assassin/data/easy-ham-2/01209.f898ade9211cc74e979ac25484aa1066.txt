@@ -1,0 +1,63 @@
+From rpm-list-admin@freshrpms.net  Mon Aug 12 11:04:33 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id EBE3C44146
+	for <jm@localhost>; Mon, 12 Aug 2002 05:55:33 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:55:33 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7C8Xcb03343 for
+    <jm-rpm@jmason.org>; Mon, 12 Aug 2002 09:33:38 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7C8S3J32467; Mon, 12 Aug 2002 10:28:03
+    +0200
+Received: from hq.traderman.co.uk (demon-gw.traderman.co.uk
+    [212.240.172.105]) by egwn.net (8.11.6/8.11.6/EGWN) with SMTP id
+    g7C8RSJ24323 for <rpm-list@freshrpms.net>; Mon, 12 Aug 2002 10:27:28 +0200
+Received: (qmail+freegate 8970 invoked by alias); 12 Aug 2002 08:24:59 -0000
+Received: from unknown (HELO traderman.co.uk) (193.38.48.94) by
+    hq.traderman.co.uk with SMTP; 12 Aug 2002 08:24:59 -0000
+Message-Id: <3D577084.35B6B086@traderman.co.uk>
+From: Yen Ho <yenh@traderman.co.uk>
+X-Mailer: Mozilla 4.78 [en] (Win98; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: "rpm-zzzlist@freshrpms.net" <rpm-zzzlist@freshrpms.net>
+Subject: RPM / hardware device / software packages ?
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Mon, 12 Aug 2002 09:23:32 +0100
+Date: Mon, 12 Aug 2002 09:23:32 +0100
+
+I am new to linux.
+
+Is that an easy way to identify which rpm / rpms to which hardware
+devices or software packages?
+
+Regards,
+    Yen Ho
+(Technical Support)
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

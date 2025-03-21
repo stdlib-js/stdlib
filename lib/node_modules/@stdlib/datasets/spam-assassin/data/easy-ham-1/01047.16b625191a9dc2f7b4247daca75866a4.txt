@@ -1,0 +1,107 @@
+From rpm-list-admin@freshrpms.net  Thu Aug 29 12:08:26 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2269443F9B
+	for <jm@localhost>; Thu, 29 Aug 2002 07:08:26 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 12:08:26 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7TBA6Z09559 for
+    <jm-rpm@jmason.org>; Thu, 29 Aug 2002 12:10:06 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7TB53J17968; Thu, 29 Aug 2002 13:05:03
+    +0200
+Received: from smtp-send.myrealbox.com (smtp-send.myrealbox.com
+    [192.108.102.143]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g7TB40J03972 for <rpm-list@freshrpms.net>; Thu, 29 Aug 2002 13:04:00 +0200
+Received: from myrealbox.com danielpavel@smtp-send.myrealbox.com
+    [194.102.210.216] by smtp-send.myrealbox.com with NetMail SMTP Agent
+    $Revision:   3.11  $ on Novell NetWare via secured & encrypted transport
+    (TLS); Thu, 29 Aug 2002 05:03:58 -0600
+Message-Id: <3D6DFDED.3000304@myrealbox.com>
+From: Daniel Pavel <danielpavel@myrealbox.com>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.1)
+    Gecko/20020826
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: ALSA (almost) made easy
+References: <20020828004215.4bca2588.matthias@rpmforge.net>
+    <1030507320.3214.39.camel@herald.dragonsdawn.net>
+    <20020828100430.378c3856.matthias@rpmforge.net>
+    <1030546780.3214.54.camel@herald.dragonsdawn.net>
+    <20020828112645.B13047@ti19>
+    <1030551945.10627.4.camel@wanderlust.prognet.com>
+    <20020828190006.2200a154.matthias@rpmforge.net>
+    <1030567737.10901.9.camel@bobcat.ods.org>
+    <1030568564.10902.22.camel@bobcat.ods.org>
+    <20020829000606.5906404a.matthias@egwn.net>
+    <1030574318.1651.30.camel@bobcat.ods.org>
+    <20020829005025.160073af.matthias@egwn.net>
+    <3D6DED60.7070107@myrealbox.com>
+    <20020829120926.0e6f691e.matthias@egwn.net>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Thu, 29 Aug 2002 13:56:45 +0300
+Date: Thu, 29 Aug 2002 13:56:45 +0300
+
+Matthias Saou wrote:
+> OK, I'll add this.
+
+Cool :)
+
+> Requiring a file that isn't part of an rpm is not possible, no, except
+> maybe by stopping the build process if it isn't found... but that's errr...
+> ugly!
+> And I really think that for people who installed a kernel from sources, the
+> easiest is to install the alsa kernel drivers from source too...
+
+Yes, it is...  But then alsa-driver requires alsa-kernel, and I don't quite 
+like --nodeps...
+
+> This would be a tricky one since to use the "--with <name>" feature of
+> rpmbuild, I think you'd need to add individual handling of each and every
+> card :-/
+
+That's ok.  I was only considering it for the sake of tweaking anyway, not 
+for some real-world need :).
+
+> That's what the "alsa-driver" is there for, create all the base files
+> excluding the kernel drivers. What I would suggest for dependency reasons
+> it to install an "alsa-kernel" for the original kernel (you've kept it,
+> right? ;-)) and install ALSA modules from source for custom kernels built
+> from source.
+
+Um...  I keep 2.4.18-12.2 for emergency sitations (like I forget to include 
+keyboard support in kernel, dumb me), but alsa-kernel_2.4.18-10 does not 
+require kernel-2.4.18-10, so that's ok.
+
+> Matthias
+
+-silent
+
+-- 
+... And on the seventh day, God was arrested for tresspassing.
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

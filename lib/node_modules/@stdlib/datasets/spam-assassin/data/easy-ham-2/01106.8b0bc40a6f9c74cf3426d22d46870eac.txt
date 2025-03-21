@@ -1,0 +1,67 @@
+From fork-admin@xent.com  Tue Aug 20 22:51:27 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9D02543C32
+	for <jm@localhost>; Tue, 20 Aug 2002 17:51:27 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 22:51:27 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7KLpOZ25861 for <jm@jmason.org>;
+    Tue, 20 Aug 2002 22:51:24 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 2ED082940A6; Tue, 20 Aug 2002 14:49:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from venus.phpwebhosting.com (venus.phpwebhosting.com
+    [64.29.16.27]) by xent.com (Postfix) with SMTP id 07E34294099 for
+    <fork@xent.com>; Tue, 20 Aug 2002 14:48:24 -0700 (PDT)
+Received: (qmail 8702 invoked by uid 508); 20 Aug 2002 21:49:59 -0000
+Received: from unknown (HELO hydrogen.leitl.org) (217.80.40.15) by
+    venus.phpwebhosting.com with SMTP; 20 Aug 2002 21:49:59 -0000
+Received: from localhost (eugen@localhost) by hydrogen.leitl.org
+    (8.11.6/8.11.6) with ESMTP id g7KLnrc06186; Tue, 20 Aug 2002 23:49:54
+    +0200
+X-Authentication-Warning: hydrogen.leitl.org: eugen owned process doing -bs
+From: Eugen Leitl <eugen@leitl.org>
+To: "Joseph S. Barrera III" <joe@barrera.org>
+Cc: CDale <cdale@techmonkeys.net>, forkit! <fork@spamassassin.taint.org>
+Subject: Re: Snag Ware
+In-Reply-To: <3D627381.10100@barrera.org>
+Message-Id: <Pine.LNX.4.33.0208202342060.5921-100000@hydrogen.leitl.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 20 Aug 2002 23:49:53 +0200 (CEST)
+
+On Tue, 20 Aug 2002, Joseph S. Barrera III wrote:
+
+> I just use the free/adware version of Opera. I mean, half the pages
+
+I just use Mozilla, and don't have to think about ignoring toolbar ads
+altogether. I can tell Mozilla to ignore particularly obnoxious ads, and 
+businesses who're particularly "clever" about making me see them obviously 
+don't want me to see them after all (since I leave, and never come back).
+
+> I look at have ads on them anways, so I'm pretty good at ignoring them.
+> Plus, you can change settings that change what type of ads you get,
+> so the ads I get are pretty innocuous. I think I listed books and
+> sleeping as my interests :-)
+
+I notice Opera tends to ignore my advertisement preferences, so this is 
+the core reason why I don't use it. Mozilla does almost everything Opera 
+does, minus the obnoxious ad slime, so why use use Opera then?
+
+http://xent.com/mailman/listinfo/fork
+

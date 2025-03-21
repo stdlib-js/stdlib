@@ -1,0 +1,58 @@
+{
+  "name": "stdlib-id2pkg",
+  "version": "",
+  "title": "Error Identifiers and Standard Library Package Names",
+  "description": "A mapping between error identifier prefixes and standard library package names.",
+  "resources": [
+    {
+      "name": "stdlib-id2pkg-json",
+      "title": "Error Identifiers and Standard Library Package Names",
+      "description": "A mapping between error identifier prefixes and standard library package names.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.json"
+    },
+    {
+      "name": "stdlib-id2pkg-csv",
+      "title": "Error Identifiers and Standard Library Package Names",
+      "description": "A mapping between error identifier prefixes and standard library package names.",
+      "format": "csv",
+      "mediatype": "plain/csv",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "identifier",
+            "title": "Identifier",
+            "description": "Error identifier.",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "pkg",
+            "title": "Package Name",
+            "description": "Package name.",
+            "type": "string",
+            "format": "default"
+          }
+        ]
+      }
+    }
+  ],
+  "sources": [],
+  "keywords": [
+    "stdlib",
+    "namespace",
+    "identifier",
+    "error",
+    "ids",
+    "package",
+    "name",
+    "pkg"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}

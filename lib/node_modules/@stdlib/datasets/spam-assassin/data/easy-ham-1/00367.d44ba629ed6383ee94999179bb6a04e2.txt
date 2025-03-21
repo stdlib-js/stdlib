@@ -1,0 +1,72 @@
+From fork-admin@xent.com  Thu Aug 29 11:37:49 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7FCA444155
+	for <jm@localhost>; Thu, 29 Aug 2002 06:37:49 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:37:49 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7TAXiZ08357 for <jm@jmason.org>;
+    Thu, 29 Aug 2002 11:33:44 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 69282294191; Thu, 29 Aug 2002 03:28:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mandark.labs.netnoteinc.com (unknown [212.2.188.179]) by
+    xent.com (Postfix) with ESMTP id 6F3EF294109 for <FoRK@xent.com>;
+    Thu, 29 Aug 2002 03:27:38 -0700 (PDT)
+Received: from phobos.labs.netnoteinc.com (phobos.labs.netnoteinc.com
+    [192.168.2.14]) by mandark.labs.netnoteinc.com (8.11.6/8.11.6) with ESMTP
+    id g7TATZ502455; Thu, 29 Aug 2002 11:29:35 +0100
+Received: by phobos.labs.netnoteinc.com (Postfix, from userid 500) id
+    23F6343F99; Thu, 29 Aug 2002 06:27:08 -0400 (EDT)
+Received: from phobos (localhost [127.0.0.1]) by
+    phobos.labs.netnoteinc.com (Postfix) with ESMTP id 1E5D533D8D;
+    Thu, 29 Aug 2002 11:27:08 +0100 (IST)
+To: Eirikur Hallgrimsson <eh@mad.scientist.com>
+Cc: FoRK <FoRK@xent.com>
+Subject: Re: Internet saturation (but not in Iceland)
+In-Reply-To: Message from Eirikur Hallgrimsson <eh@mad.scientist.com> of
+    "Thu, 29 Aug 2002 03:58:03 EDT."
+    <200208290358.03815.eh@mad.scientist.com>
+From: yyyy@spamassassin.taint.org (Justin Mason)
+X-GPG-Key-Fingerprint: 0A48 2D8B 0B52 A87D 0E8A  6ADD 4137 1B50 6E58 EF0A
+X-Habeas-Swe-1: winter into spring
+X-Habeas-Swe-2: brightly anticipated
+X-Habeas-Swe-3: like Habeas SWE (tm)
+X-Habeas-Swe-4: Copyright 2002 Habeas (tm)
+X-Habeas-Swe-5: Sender Warranted Email (SWE) (tm). The sender of this
+X-Habeas-Swe-6: email in exchange for a license for this Habeas
+X-Habeas-Swe-7: warrant mark warrants that this is a Habeas Compliant
+X-Habeas-Swe-8: Message (HCM) and not spam.  Please report use of this
+X-Habeas-Swe-9: mark in spam to <http://www.habeas.com/report/>.
+Message-Id: <20020829102708.23F6343F99@phobos.labs.netnoteinc.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 29 Aug 2002 11:27:03 +0100
+
+
+Eirikur Hallgrimsson said:
+
+> Let me ask you....If you were on a rock in the middle of the Atlantic, 
+> mostly in the dark for half the year, wouldn't *you* like a bit of 
+> internet distraction?   They've already done the obvious and fiber-ringed 
+> the island.
+
+BTW did they do the same as they did in Ireland, namely: spend millions
+burying copious miles of dark fibre, then neglect to provide any way of
+actually hooking it up to any ISPs? ;)
+
+--j. (frustrated)
+

@@ -1,0 +1,24 @@
+{
+	"string": [
+		"port",
+		"maxport",
+		"hostname",
+		"address"
+	],
+	"boolean": [
+		"help",
+		"version",
+		"open"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		],
+		"port": [
+			"p"
+		]
+	}
+}

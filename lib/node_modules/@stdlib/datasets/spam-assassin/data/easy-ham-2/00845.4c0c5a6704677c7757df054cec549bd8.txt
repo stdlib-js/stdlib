@@ -1,0 +1,66 @@
+From fork-admin@xent.com  Wed Jul 24 12:51:30 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id F1299440CC
+	for <jm@localhost>; Wed, 24 Jul 2002 07:51:29 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 12:51:29 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6OBjm410336 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 12:45:48 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id D61FA294140; Wed, 24 Jul 2002 04:35:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hotmail.com (oe56.law12.hotmail.com [64.4.18.191]) by
+    xent.com (Postfix) with ESMTP id 9D744294140 for <fork@xent.com>;
+    Wed, 24 Jul 2002 04:34:12 -0700 (PDT)
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Wed, 24 Jul 2002 04:43:26 -0700
+X-Originating-Ip: [66.92.145.79]
+Reply-To: "Bill Kearney" <wkearney99@hotmail.com>
+From: "Bill Kearney" <wkearney99@hotmail.com>
+To: <fork@spamassassin.taint.org>
+References: <20020724015902.20915.57147.Mailman@lair.xent.com>
+Subject: Re: HD/ID: High-Def Independence Day
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.50.4807.1700
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4910.0300
+Message-Id: <OE560M3ZwExDEt88YT400012f99@hotmail.com>
+X-Originalarrivaltime: 24 Jul 2002 11:43:26.0188 (UTC) FILETIME=[5282B2C0:01C23307]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 24 Jul 2002 07:43:23 -0400
+
+> Turn it off! It not only risks silent false
+> positives, but suffers them in such a way that
+> individuals cannot adjust/detect/remedy them.
+
+Better yet, start another list; fork-spam and forward the suspect items to it.
+Much like the noarchive list.  This wouldn't be perfect but it'd be better than
+nothing at all.
+
+> Usually I figure if I miss a FoRK post,
+> no big deal, I'll pick it up by the replies if it's interesting.
+
++1
+
+-Bill Kearney
+http://xent.com/mailman/listinfo/fork
+
+

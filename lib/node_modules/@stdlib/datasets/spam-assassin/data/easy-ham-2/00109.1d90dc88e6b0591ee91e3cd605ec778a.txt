@@ -1,0 +1,78 @@
+From ilug-admin@linux.ie  Mon Jul 22 19:49:43 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A5332440C9
+	for <jm@localhost>; Mon, 22 Jul 2002 14:49:41 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 19:49:41 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MHQX403521 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 18:26:34 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id KAA22925 for <jm-ilug@jmason.org>;
+    Sat, 20 Jul 2002 10:46:42 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA27805; Sat, 20 Jul 2002 10:45:46 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail2.mail.iol.ie (mail2.mail.iol.ie [194.125.2.193]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id KAA27775 for <ilug@linux.ie>;
+    Sat, 20 Jul 2002 10:45:41 +0100
+Received: from dialup-0595.dublin.iol.ie ([193.203.146.83]
+    helo=Hobbiton.cod.ie) by mail2.mail.iol.ie with esmtp (Exim 3.35 #1) id
+    17Vqhi-0005Sx-00 for ilug@linux.ie; Sat, 20 Jul 2002 10:39:10 +0100
+Received: (from cdaly@localhost) by Hobbiton.cod.ie (8.11.6/8.9.3) id
+    g6JHjT602412 for ilug@linux.ie; Fri, 19 Jul 2002 18:45:29 +0100
+Date: Fri, 19 Jul 2002 18:45:28 +0100
+From: Conor Daly <conor.daly@oceanfree.net>
+To: ilug@linux.ie
+Subject: Re: [ILUG] OSI protocol
+Message-Id: <20020719184528.A2032@Hobbiton.cod.ie>
+Mail-Followup-To: ilug@linux.ie
+References: <20020719143536.GC2506@bagend.makalumedia.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <20020719143536.GC2506@bagend.makalumedia.com>;
+    from niall@linux.ie on Fri, Jul 19, 2002 at 03:35:36PM +0100
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Fri, Jul 19, 2002 at 03:35:36PM +0100 or so it is rumoured hereabouts, 
+Niall O Broin thought:
+> illustrates this admirably. The poster is in the form of a PDF file and to
+> be honest, is best appreciated if you have access to a HP DesignJet or
+
+Speaking of HP Designjets, has anyone managed to utilise the full width of
+the paper on a HP Designjet 750c under RH7.x?  The HP can take a 24" wide
+roll while the driver (dnj650c) lists a paper size of 16x24.
+Unfortunately, this will print only in protrait mode so I get a 24"x24"
+page with an unused 8" strip down one side!  I'd like to be able to print
+24x<infinity> or whatever (even 24x30!) but I don't seem able to do so.
+
+Any thoughts?
+
+Conor
+-- 
+Conor Daly <conor.daly@oceanfree.net>
+
+Domestic Sysadmin :-)
+---------------------
+Faenor.cod.ie
+  6:49pm  up 57 days,  4:07,  0 users,  load average: 0.03, 0.03, 0.00
+Hobbiton.cod.ie
+  6:38pm  up  1:15,  1 user,  load average: 0.03, 0.06, 0.04
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

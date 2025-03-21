@@ -1,0 +1,28 @@
+
+{{alias}}( σ )
+    Returns the variance of a Rayleigh distribution.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `σ < 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    σ: number
+        Scale parameter.
+
+    Returns
+    -------
+    out: number
+        Variance.
+
+    Examples
+    --------
+    > var v = {{alias}}( 9.0 )
+    ~34.765
+    > v = {{alias}}( 4.5 )
+    ~8.691
+
+    See Also
+    --------
+

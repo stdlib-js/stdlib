@@ -1,0 +1,85 @@
+From rpm-list-admin@freshrpms.net  Tue Aug 20 10:59:21 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 1992543C43
+	for <jm@localhost>; Tue, 20 Aug 2002 05:58:33 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 10:58:33 +0100 (IST)
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7JMowZ12354 for
+    <jm-rpm@jmason.org>; Mon, 19 Aug 2002 23:50:58 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7JMn2J09380; Tue, 20 Aug 2002 00:49:02
+    +0200
+Received: from gateway.gestalt.entity.net
+    (host217-39-58-142.in-addr.btopenworld.com [217.39.58.142]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7JMmNJ08246 for
+    <rpm-list@freshrpms.net>; Tue, 20 Aug 2002 00:48:23 +0200
+Received: from turner.gestalt.entity.net (turner.gestalt.entity.net
+    [192.168.0.253]) by gateway.gestalt.entity.net (8.11.6/8.11.2) with ESMTP
+    id g7JMrTg02454 for <rpm-list@freshrpms.net>; Mon, 19 Aug 2002 23:53:29
+    +0100
+Subject: Re: advice on 7.3.92 to 7.3.93, and Apt compiling (oh joy)
+From: Dave Cridland <dave@cridland.net>
+To: rpm-zzzlist@freshrpms.net
+In-Reply-To: <20020819.Tyh.17357700@www.dudex.net>
+References: <20020819.Tyh.17357700@www.dudex.net>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8 (1.0.8-6)
+Message-Id: <1029797609.32466.70.camel@turner.gestalt.entity.net>
+MIME-Version: 1.0
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: 19 Aug 2002 23:53:29 +0100
+Date: 19 Aug 2002 23:53:29 +0100
+
+On Mon, 2002-08-19 at 22:34, Angles Puglisi wrote:
+> Matthias Saou (matthias@egwn.net) wrote*:
+> >Then why bother : The new Red Hat Linux beta "(null)" is now available and
+> >should be announced anytime now. It contains rpm 4.1-0.81.
+> 
+> Ahhh ... this is funny. Last night I upgraded to Limbo II (.93).
+> 
+> Installed Limbo II kernel, Installed libstdc++ from rawhide (rpm -ivh) so the
+> newer apt would work, told apt it is OK to have multiple of libstdc++, copied
+> the actual rawhide "libstdc++.so.5.0.0" file to another directory, removed that
+> rawhide libstdc++ package, installed (rpm -ivh ) the Limbo II libstdc++ package
+> (new apt does not like it), make that symlink "libstdc++.so.5" point to that
+> rawhide file I moved earlier.
+
+You can just recompile the apt source RPM, if it's the newer one. (Such
+as mine). There's no dependancies on libstdc++ other than binary ones.
+
+Currently on release dwd2, which I'm using on my home rawhide box.
+(Obviously not production, since the old apt works fine on production
+boxes).
+
+Now... Does anyone know of a good way to delete "old" RPMS from a
+directory containing both "new" and "old" RPMS? Say I have
+blurb-0.1.0-1.i386.rpm, blurb-0.1.0-2.i386.rpm, and
+blurb-0.1.1-1.i386.rpm, and want to remove the blurb-0.1.0-* because of
+the presence of blurb-0.1.1-1? Anyone have a convenient script?
+
+Dave.
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

@@ -1,0 +1,76 @@
+From spamassassin-devel-admin@lists.sourceforge.net  Tue Sep 10 18:18:33 2002
+Return-Path: <spamassassin-devel-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id B7C4E16F03
+	for <jm@localhost>; Tue, 10 Sep 2002 18:18:32 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 10 Sep 2002 18:18:32 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8AFmpC05410 for <jm@jmason.org>; Tue, 10 Sep 2002 16:48:51 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17onDH-0001Xz-00; Tue,
+    10 Sep 2002 08:46:03 -0700
+Received: from maynard.mail.mindspring.net ([207.69.200.243]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17onCY-0005HC-00 for <spamassassin-devel@lists.sourceforge.net>;
+    Tue, 10 Sep 2002 08:45:18 -0700
+Received: from user-vcaur02.dsl.mindspring.com ([216.175.108.2]
+    helo=belphegore.hughes-family.org) by maynard.mail.mindspring.net with
+    esmtp (Exim 3.33 #1) id 17onCP-000239-00 for
+    spamassassin-devel@lists.sourceforge.net; Tue, 10 Sep 2002 11:45:09 -0400
+Received: by belphegore.hughes-family.org (Postfix, from userid 48) id
+    D02ED9EDBF; Tue, 10 Sep 2002 08:45:08 -0700 (PDT)
+From: bugzilla-daemon@hughes-family.org
+To: spamassassin-devel@example.sourceforge.net
+X-Bugzilla-Reason: AssignedTo
+Message-Id: <20020910154508.D02ED9EDBF@belphegore.hughes-family.org>
+Subject: [SAdev] [Bug 486] SpamAssassin causes zombies (network tests,
+    MIMEDefang 2.16)
+Sender: spamassassin-devel-admin@example.sourceforge.net
+Errors-To: spamassassin-devel-admin@example.sourceforge.net
+X-Beenthere: spamassassin-devel@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-devel-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-devel@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Id: SpamAssassin Developers <spamassassin-devel.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-devel>
+X-Original-Date: Tue, 10 Sep 2002 08:45:08 -0700 (PDT)
+Date: Tue, 10 Sep 2002 08:45:08 -0700 (PDT)
+
+http://www.hughes-family.org/bugzilla/show_bug.cgi?id=486
+
+
+
+
+
+------- Additional Comments From larry@5points.net  2002-09-10 08:45 -------
+Dan,
+
+To answer your question to my post (which maybe should be a seperate bug?) I'm 
+using Spamassassin version 2.30
+
+
+
+------- You are receiving this mail because: -------
+You are the assignee for the bug, or are watching the assignee.
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-devel mailing list
+Spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+
+

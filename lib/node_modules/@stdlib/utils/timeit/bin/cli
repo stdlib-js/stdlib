@@ -1,0 +1,204 @@
+#!/usr/bin/env node
+
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2018 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+'use strict';
+
+// MODULES //
+
+var resolve = require( 'path' ).resolve;
+var stdin = require( '@stdlib/process/read-stdin' );
+var readFileSync = require( '@stdlib/fs/read-file' ).sync;
+var CLI = require( '@stdlib/cli/ctor' );
+var stdinStream = require( '@stdlib/streams/node/stdin' );
+var nextTick = require( '@stdlib/utils/next-tick' );
+var timeit = require( './../lib' );
+
+
+// FUNCTIONS //
+
+/**
+* Prints results as JSON.
+*
+* @private
+* @param {Object} results - results
+*/
+function printJSON( results ) {
+	console.log( JSON.stringify( results ) ); // eslint-disable-line no-console
+}
+
+/**
+* Prints results as CSV.
+*
+* @private
+* @param {Object} results - results
+*/
+function printCSV( results ) {
+	var times = results.times;
+	var i;
+
+	console.log( '%s,%s', 'seconds', 'nanoseconds' ); // eslint-disable-line no-console
+	for ( i = 0; i < times.length; i++ ) {
+		console.log( '%d,%d', times[i][0], times[i][1] ); // eslint-disable-line no-console
+	}
+}
+
+/**
+* Pretty prints results.
+*
+* @private
+* @param {Object} results - results
+*/
+function prettyPrint( results ) {
+	var unit;
+	var r;
+
+	r = results.elapsed*1e6 / results.iterations;
+	if ( r < 1000 ) {
+		unit = 'usec';
+	} else {
+		r /= 1000;
+		if ( r < 1000 ) {
+			unit = 'msec';
+		} else {
+			r /= 1000;
+			unit = 'sec';
+		}
+	}
+	/* eslint-disable no-console */
+
+	console.log( '' );
+	console.log( 'iterations: %d', results.iterations );
+	console.log( 'repeats: %d', results.repeats );
+	console.log( 'iterations/s: %d', results.rate );
+	console.log( 'elapsed time: %d sec', results.elapsed );
+	console.log( 'lower bound: %d %s/iteration', r, unit );
+	console.log( '' );
+
+	/* eslint-enable no-console */
+}
+
+
+// MAIN //
+
+/**
+* Main execution sequence.
+*
+* @private
+* @returns {void}
+*/
+function main() {
+	var flags;
+	var args;
+	var code;
+	var opts;
+	var cli;
+
+	// Create a command-line interface:
+	cli = new CLI({
+		'pkg': require( './../package.json' ),
+		'options': require( './../etc/cli_opts.json' ),
+		'help': readFileSync( resolve( __dirname, '..', 'docs', 'usage.txt' ), {
+			'encoding': 'utf8'
+		})
+	});
+
+	// Get any provided command-line options:
+	flags = cli.flags();
+	if ( flags.help || flags.version ) {
+		return;
+	}
+
+	// Get any provided command-line arguments:
+	args = cli.args();
+
+	opts = {};
+	if ( flags.iterations ) {
+		opts.iterations = parseInt( flags.iterations, 10 );
+	} else {
+		opts.iterations = null;
+	}
+	if ( flags.repeats ) {
+		opts.repeats = parseInt( flags.repeats, 10 );
+	}
+	if ( flags.before ) {
+		opts.before = flags.before;
+	}
+	if ( flags.after ) {
+		opts.after = flags.after;
+	}
+	if ( flags.async ) {
+		opts.asynchronous = flags.async;
+	}
+
+	// Check if we are receiving data from `stdin`...
+	if ( !stdinStream.isTTY ) {
+		return stdin( onRead );
+	}
+	code = args[ 0 ];
+	nextTick( next );
+
+	/**
+	* Callback invoked upon reading from `stdin`.
+	*
+	* @private
+	* @param {(Error|null)} error - error object
+	* @param {Buffer} data - data
+	* @returns {void}
+	*/
+	function onRead( error, data ) {
+		if ( error ) {
+			return done( error );
+		}
+		code = data.toString();
+		next();
+	}
+
+	/**
+	* Times a snippet.
+	*
+	* @private
+	*/
+	function next() {
+		timeit( code, opts, done );
+	}
+
+	/**
+	* Callback invoked upon completion.
+	*
+	* @private
+	* @param {(Error|null)} error - error object
+	* @param {Object} results - results
+	* @returns {void}
+	*/
+	function done( error, results ) {
+		if ( error ) {
+			return cli.error( error );
+		}
+		if ( flags.format === 'json' ) {
+			printJSON( results );
+		} else if ( flags.format === 'csv' ) {
+			printCSV( results );
+		} else {
+			prettyPrint( results );
+		}
+	}
+}
+
+main();

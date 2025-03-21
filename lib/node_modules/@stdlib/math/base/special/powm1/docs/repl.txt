@@ -1,0 +1,42 @@
+
+{{alias}}( b, x )
+    Evaluates `bˣ - 1`.
+
+    When `b` is close to `1` and/or `x` is small, this function is more accurate
+    than naively computing `bˣ` and subtracting `1`.
+
+    Parameters
+    ----------
+    b: number
+        Base.
+
+    x: number
+        Exponent.
+
+    Returns
+    -------
+    y: number
+        Function value.
+
+    Examples
+    --------
+    > var y = {{alias}}( 2.0, 3.0 )
+    7.0
+    > y = {{alias}}( 4.0, 0.5 )
+    1.0
+    > y = {{alias}}( 0.0, 100.0 )
+    -1.0
+    > y = {{alias}}( 100.0, 0.0 )
+    0.0
+    > y = {{alias}}( 0.0, 0.0 )
+    0.0
+    > y = {{alias}}( {{alias:@stdlib/constants/float64/pi}}, 5.0 )
+    ~305.0197
+    > y = {{alias}}( NaN, 3.0 )
+    NaN
+    > y = {{alias}}( 5.0, NaN )
+    NaN
+
+    See Also
+    --------
+

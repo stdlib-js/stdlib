@@ -1,0 +1,65 @@
+From fork-admin@xent.com  Thu Sep 19 16:25:55 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id ADC1216F03
+	for <jm@localhost>; Thu, 19 Sep 2002 16:25:54 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 19 Sep 2002 16:25:54 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8JDZqC21671 for <jm@jmason.org>;
+    Thu, 19 Sep 2002 14:35:52 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id D8CCB294159; Thu, 19 Sep 2002 06:32:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hotmail.com (f174.law15.hotmail.com [64.4.23.174]) by
+    xent.com (Postfix) with ESMTP id A7D9629410C for <fork@xent.com>;
+    Thu, 19 Sep 2002 06:31:12 -0700 (PDT)
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Thu, 19 Sep 2002 06:34:36 -0700
+Received: from 216.30.74.2 by lw15fd.law15.hotmail.msn.com with HTTP;
+    Thu, 19 Sep 2002 13:34:36 GMT
+X-Originating-Ip: [216.30.74.2]
+From: "Russell Turpin" <deafbox@hotmail.com>
+To: fork@spamassassin.taint.org
+Subject: Re: [VoID] a new low on the personals tip...
+MIME-Version: 1.0
+Content-Type: text/plain; format=flowed
+Message-Id: <F174tgLzhVOJwnzsLqI000004a3@hotmail.com>
+X-Originalarrivaltime: 19 Sep 2002 13:34:36.0926 (UTC) FILETIME=[4C2049E0:01C25FE1]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 19 Sep 2002 13:34:36 +0000
+
+Owne Byrne:
+>Sure if you're willing to risk firing, lawsuits, etc. The last full time 
+>job I had the sexual harassement seminar was pretty clear - yes you can 
+>have relationships at the office, but its extremely difficult, and the 
+>pitfalls are
+>horrendous.
+
+Despite that, this is how a lot of couples meet.
+People tease me about Carolyn, that I just hired
+a lot of software engineering babes, and then
+chose the one I liked best. ;-)
+
+
+
+
+
+
+_________________________________________________________________
+Send and receive Hotmail on your mobile device: http://mobile.msn.com
+
+

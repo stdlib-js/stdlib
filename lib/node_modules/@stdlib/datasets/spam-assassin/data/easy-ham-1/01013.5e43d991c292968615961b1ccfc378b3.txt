@@ -1,0 +1,84 @@
+From exmh-users-admin@redhat.com  Fri Sep 13 13:36:00 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id D097916F03
+	for <jm@localhost>; Fri, 13 Sep 2002 13:35:59 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 13 Sep 2002 13:35:59 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8DAudC14907 for
+    <jm-exmh@jmason.org>; Fri, 13 Sep 2002 11:56:39 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id E901B3ED5E; Fri, 13 Sep 2002
+    06:57:02 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 4E0D53EC06
+    for <exmh-users@listman.redhat.com>; Fri, 13 Sep 2002 06:56:24 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g8DAuJ932477 for exmh-users@listman.redhat.com; Fri, 13 Sep 2002
+    06:56:19 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g8DAuIk32473 for
+    <exmh-users@redhat.com>; Fri, 13 Sep 2002 06:56:18 -0400
+Received: from ratree.psu.ac.th ([202.28.97.6]) by mx1.spamassassin.taint.org
+    (8.11.6/8.11.6) with SMTP id g8DAdUw22284 for <exmh-users@redhat.com>;
+    Fri, 13 Sep 2002 06:39:34 -0400
+Received: from delta.cs.mu.OZ.AU (delta.coe.psu.ac.th [172.30.0.98]) by
+    ratree.psu.ac.th (8.11.6/8.11.6) with ESMTP id g8DAtbt01502 for
+    <exmh-users@redhat.com>; Fri, 13 Sep 2002 17:55:50 +0700 (ICT)
+Received: from munnari.OZ.AU (localhost [127.0.0.1]) by delta.cs.mu.OZ.AU
+    (8.11.6/8.11.6) with ESMTP id g8DAtU826497 for <exmh-users@redhat.com>;
+    Fri, 13 Sep 2002 17:55:31 +0700 (ICT)
+From: Robert Elz <kre@munnari.OZ.AU>
+To: exmh-users@spamassassin.taint.org
+Subject: Re: bad focus/click behaviours
+In-Reply-To: <200209130126.g8D1QUf21470@hobbit.linuxworks.com.au.nospam>
+References: <200209130126.g8D1QUf21470@hobbit.linuxworks.com.au.nospam>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Message-Id: <26495.1031914530@munnari.OZ.AU>
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Fri, 13 Sep 2002 17:55:30 +0700
+
+    Date:        Fri, 13 Sep 2002 11:26:30 +1000
+    From:        Tony Nugent <tony@linuxworks.com.au>
+    Message-ID:  <200209130126.g8D1QUf21470@hobbit.linuxworks.com.au.nospam>
+
+  | I can cut'n'paste from exmh's message display window into spawned
+  | gvim processes, but not into anything else.
+
+That's odd.  I cut & paste between all kinds of windows (exmh into
+mozilla, xterm, another wish script of mine I use for DNS tasks (but
+that one I guess is to be expected) netscape (when I used to use it,
+but I suppose it and mozilla are the same codebase, approx) - in fact
+I can't thing of anything it fails for, that I have noticed.
+
+What is an example of an "anything else" that it fails for for you?
+
+kre
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

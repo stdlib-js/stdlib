@@ -1,0 +1,69 @@
+From ilug-admin@linux.ie  Wed Jul 17 19:24:24 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 93CA043F90
+	for <jm@localhost>; Wed, 17 Jul 2002 14:24:24 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 17 Jul 2002 19:24:24 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6HIKHJ11933 for
+    <jm-ilug@jmason.org>; Wed, 17 Jul 2002 19:20:17 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id TAA04233; Wed, 17 Jul 2002 19:17:51 +0100
+Received: from mail.tuatha.org ([212.96.2.55]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id TAA04203 for <ilug@linux.ie>; Wed,
+    17 Jul 2002 19:17:39 +0100
+Message-Id: <200207171817.TAA04203@lugh.tuatha.org>
+X-Authentication-Warning: lugh.tuatha.org: Host [212.96.2.55] claimed to
+    be mail.tuatha.org
+From: "DAVE   FRAMO" <daveframo@writeme.com>
+Date: Wed, 17 Jul 2002 19:09:57
+To: ilug@linux.ie
+MIME-Version: 1.0
+Content-Type: text/plain;charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+Subject: [ILUG] DEAL
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+SUBJECT: 
+                   Urgent Concern Pls.
+
+I am a serious officer with one of our main branches of CITI BANK,
+consumer Banking Department. Although we didn't have previous correspondence till date.
+However, based on the standard value place on everything about you,  I believed we could discuss, analyze and execute this transaction.The transaction is thus:
+I've a wealthy client, an American Citizen who had been residing in West Africa for decades now, he operates a fix deposit account with us which I am his account officer, and also 
+receives standing orders  for his chains of dividends share.
+However, this client Mr. David Brown died as an  out come of Heart attack,and the funds in his current account has  been claimed by his family, who had gone back finally to USA.
+At the end of Fiscal year, March 2001, an  accumulated share of US$12.360M was transferred into his account from the Stock Exchange.
+This was alone the instructions we issued to the Stock House to dispose all his stocks.
+
+Now the funds has arrived, I needed an associate whom I would present as the inheritor of this fund i.e. Associate partner of Mr. David Brown so as to receive this fund.
+Please note, his family has left since,and never  know about this stocks in the exchange and the funds has subsequently matured in his Fix Deposit Account, so I as the account officer 
+has prepared all documents for easy claims of this fund.
+Immediately, you reach me, I will furnish you  with further details and then negotiate on the sharing ratio once you show your sincere involvement to go along with me. It will be of 
+need for you to furnish me also your personal phone and fax  numbers for urgent
+messages. 
+I am anxiously waiting to hear your consent. 
+
+Be guided.
+
+Thanking you .Yours sincerely,
+
+Dave Framo.
+
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

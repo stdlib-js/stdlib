@@ -1,0 +1,15 @@
+
+watch()
+    Watches a presentation source file for changes.
+
+    "Renaming" a source file is *not* tracked. If a source presentation file is
+    renamed, watching stops.
+
+    Examples
+    --------
+    > watch();
+
+    See Also
+    --------
+    loadPresentation, redraw, reloadPresentation, unwatch
+

@@ -1,0 +1,239 @@
+From stephen.adler@allexecs.org  Thu Jul 25 11:05:40 2002
+Return-Path: <stephen.adler@allexecs.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8D192440D1
+	for <jm@localhost>; Thu, 25 Jul 2002 06:05:36 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 11:05:36 +0100 (IST)
+Received: from allexecs.org ([211.167.175.16]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6P3UK427948 for <jm-cv@jmason.org>;
+    Thu, 25 Jul 2002 04:30:22 +0100
+Received: from allexecs.org (mail [127.0.0.1]) by allexecs.org
+    (8.12.2/8.12.2) with SMTP id g6P3TX57026200 for <jm-cv@jmason.org>;
+    Thu, 25 Jul 2002 11:29:33 +0800
+Message-Id: <200207250329.g6P3TX57026200@allexecs.org>
+Date: Thu, 25 Jul 2002 11:29:33 +0800
+From: Steve Adler <stephen.adler@allexecs.org>
+Subject: Summer Job Interviews. . . .
+To: yyyy-cv@spamassassin.taint.org
+MIME-Version: 1.0
+X-Cidl: 5625291J
+Content-Type: multipart/mixed; boundary="----ack1234"
+
+
+
+------ack1234
+Content-Type: multipart/alternative; boundary="----alt_border_1"
+
+------alt_border_1
+Content-Type: text/plain; charset="ISO-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Greetings!
+
+If you're thinking about a new job, now's the time to
+aggressively pick up your search. Many people slow
+their job search donw in summer months when in fact
+it's the best time to look!
+
+Here's why.  Many companies implement a new direction
+or strategy at the first of the year, resulting in a
+first of the year hiring surge. By mid year, with
+results in hand, companies start hiring again to
+expand on or adjust for the results of their first of
+the year plans.
+
+While employers start hiring, job seekers start
+slowing their search efforts down. This creates an
+optimal job seeking environment of more jobs and less
+competition!
+
+To best take advantage of this situation you should give
+yourself massive exposure by signing up to all the top
+career sites as soon as possible. Of course it will take
+a little time, but it's well worth it. The top career
+sites are visited by 1.5 million employers and recruiters
+daily - And collectively list millions of jobs.
+
+If you want to save 60 hours of research and data entry,
+try a service called ResumeRabbit.com.  They instantly
+post your resume to 75 the top career sites at once.
+You'll find this service at http://start.resumerabbit.com
+
+With this service you fill out one simple form in about
+15 minutes and you'll be instantly seen on Monster.com,
+HotJobs.com, Job.com CareerBuilder.com, Dice.com and more!
+
+When searching for a new job, it's important to work
+smart and cover a lot of ground. Today's serious job
+seeker must take a multi-pronged approach to succeed.
+This should include networking, reading all the
+classifieds, posting your resume on all the top career
+sites and searching job listings on these sites daily.
+
+We recommend you try http://start.resumerabbit.com
+It's a quality service that delivers what it promises.
+
+>>From mid November to mid January, the holidays have
+a "slowing down" effect on hiring. Since the job search
+process can often be several months, waiting until the
+end of summer to get started may push your new job off
+well after the new year.  Now's the optimum time to
+aggressively mount your search!
+
+Sincerely,
+
+
+Steve Adler
+stephen.adler@allexecs.org
+
+
+========================================================
+ 
+The staff of AllExecs.com have years of recruiting
+experience and may from time to time send you a review of
+career tips and tools that have helped others in their job
+search. If you'd rather not receive these reviews go to
+http://www.allexecs.com/unsubscribe
+========================================================
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+------alt_border_1
+Content-Type: text/html; charset="ISO-8859-1"
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Allexecs.org</title>
+</head>
+
+<body>
+
+<p><font face="Courier New" size="2">Greetings!<br>
+<br>
+If you're thinking about a new job, now's the time to
+aggressively pick up your search. Many people slow
+their job search donw in summer months when in fact
+it's the best time to look!<br>
+<br>
+Here's why.  Many companies implement a new direction
+or strategy at the first of the year, resulting in a
+first of the year hiring surge. By mid year, with
+results in hand, companies start hiring again to
+expand on or adjust for the results of their first of
+the year plans.<br>
+<br>
+While employers start hiring, job seekers start
+slowing their search efforts down. This creates an
+optimal job seeking environment of more jobs and less
+competition!<br>
+<br>
+To best take advantage of this situation you should give
+yourself massive exposure by signing up to all the top
+career sites as soon as possible. Of course it will take
+a little time, but it's well worth it. The top career
+sites are visited by 1.5 million employers and recruiters
+daily - And collectively list millions of jobs.<br>
+<br>
+If you want to save 60 hours of research and data entry,
+try a service called ResumeRabbit.com.  They instantly
+post your resume to 75 the top career sites at once.
+You'll find this service at http://start.resumerabbit.com<br>
+<br>
+With this service you fill out one simple form in about
+15 minutes and you'll be instantly seen on Monster.com,
+HotJobs.com, Job.com CareerBuilder.com, Dice.com and more!<br>
+<br>
+When searching for a new job, it's important to work
+smart and cover a lot of ground. Today's serious job
+seeker must take a multi-pronged approach to succeed.
+This should include networking, reading all the
+classifieds, posting your resume on all the top career
+sites and searching job listings on these sites daily.<br>
+<br>
+We recommend you try http://start.resumerabbit.com<br>
+It's a quality service that delivers what it promises.<br>
+<br>
+>>From mid November to mid January, the holidays have
+a "slowing down" effect on hiring. Since the job search
+process can often be several months, waiting until the
+end of summer to get started may push your new job off
+well after the new year.  Now's the optimum time to
+aggressively mount your search!<br>
+<br>
+Sincerely,<br>
+<br>
+<br>
+Steve Adler<br>
+stephen.adler@allexecs.org<br>
+<br>
+<br>
+========================================================<br>
+The staff of AllExecs.com have years of recruiting
+experience and may from time to time send you a review of
+career tips and tools that have helped others in their job
+search. If you'd rather not receive these reviews go to 
+<A HREF="http://www.allexecs.com/unsubscribe">http://www.allexecs.com/unsubscribe</A><br>
+========================================================<br>
+</font></p>
+
+</body>
+
+</html>
+------alt_border_1--
+------ack1234--
+
+

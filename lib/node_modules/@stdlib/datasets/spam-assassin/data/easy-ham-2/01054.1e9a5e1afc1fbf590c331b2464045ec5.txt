@@ -1,0 +1,78 @@
+From fork-admin@xent.com  Mon Aug 19 11:04:08 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B2E88441AB
+	for <jm@localhost>; Mon, 19 Aug 2002 05:55:12 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:55:12 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7HFcU602927 for <jm@jmason.org>;
+    Sat, 17 Aug 2002 16:38:33 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 389812940E3; Sat, 17 Aug 2002 08:36:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.auracom.net (smtp1.auracom.net [165.154.140.23]) by
+    xent.com (Postfix) with ESMTP id AD8A5294098 for <fork@xent.com>;
+    Sat, 17 Aug 2002 08:35:17 -0700 (PDT)
+Received: from maya.dyndns.org (ts5-043.ptrb.interhop.net
+    [165.154.190.107]) by smtp1.auracom.net (8.11.2/8.11.2) with ESMTP id
+    g7HFAh107765 for <fork@xent.com>; Sat, 17 Aug 2002 11:10:43 -0400 (EDT)
+Received: by maya.dyndns.org (Postfix, from userid 501) id 662AD1C388;
+    Sat, 17 Aug 2002 11:28:20 -0400 (EDT)
+To: <fork@spamassassin.taint.org>
+Subject: Re: NASA mindreading
+References: <Pine.LNX.4.33.0208171049440.6577-100000@hydrogen.leitl.org>
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m2hehtcxnv.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 17 Aug 2002 11:28:20 -0400
+
+>>>>> "E" == Eugen Leitl <eugen@leitl.org> writes:
+
+    E> Seems somebody is so awfully eager to pick up a slice of
+    E> research grant pie from the heimatland securitate money they
+    E> haven't even bothered to invent a plausible lie.
+
+Seems also from the news being reported that it's likely they already
+have a slice of that pie, which says something about the mindset of
+the people handing out the slices.  Ditto for the biometric airport ID
+machines.
+
+My personal raw guess: The people with the pie /already/ /know/ the
+people with the Ghostbusters Gear, they play golf regularly, have for
+years, and perhaps even co-own some private venture that profits win
+or lose from the grant.  9-11 seems to have made every
+security-oriented-corp shareholder's eyes light up with
+red-white-and-blue dollar signs, and like sharks to a cut swimmer or
+psychologists to a distressed town, they came swarming on the
+motherlode.
+
+I only guess that because the pattern seems historically so
+statistically prevalent.
+
+-- 
+Gary Lawrence Murphy <garym@teledyn.com> TeleDynamics Communications Inc
+ Business Advantage through Community Software : http://www.teledyn.com
+"Computers are useless.  They can only give you answers."(Pablo Picasso)
+
+http://xent.com/mailman/listinfo/fork
+

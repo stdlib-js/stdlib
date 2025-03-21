@@ -1,0 +1,74 @@
+From ilug-admin@linux.ie  Mon Aug 12 11:07:03 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 16B324415B
+	for <jm@localhost>; Mon, 12 Aug 2002 05:56:03 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:56:03 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7BBreb32265 for
+    <jm-ilug@jmason.org>; Sun, 11 Aug 2002 12:53:41 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA21852; Sun, 11 Aug 2002 12:50:43 +0100
+Received: from homer.jinny.ie ([193.120.171.3]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA21814 for <ilug@linux.ie>; Sun,
+    11 Aug 2002 12:50:36 +0100
+Received: from jlooney.jinny.ie (fw [193.120.171.2]) by homer.jinny.ie
+    (8.9.3/8.11.2) with ESMTP id MAA25325 for <ilug@linux.ie>; Sun,
+    11 Aug 2002 12:50:06 +0100
+Received: (from john@localhost) by jlooney.jinny.ie (8.11.6/8.11.6) id
+    g7BBoQC05897 for ilug@linux.ie; Sun, 11 Aug 2002 12:50:26 +0100
+X-Authentication-Warning: jlooney.jinny.ie: john set sender to
+    jlooney@jinny.ie using -f
+Date: Sun, 11 Aug 2002 12:50:26 +0100
+From: "John P. Looney" <valen@tuatha.org>
+To: ilug@linux.ie
+Subject: Re: [ILUG] Alan Cox doesn't like 2.5 so far!
+Message-Id: <20020811115026.GB4847@jinny.ie>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: ilug@linux.ie
+References: <200208111018.LAA18371@lugh.tuatha.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <200208111018.LAA18371@lugh.tuatha.org>
+User-Agent: Mutt/1.4i
+X-Os: Red Hat Linux 7.3/Linux 2.4.18-3
+X-Url: http://www.redbrick.dcu.ie/~valen
+X-Gnupg-Publickey: http://www.redbrick.dcu.ie/~valen/public.asc
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Sun, Aug 11, 2002 at 11:17:47AM +0100, wintermute mentioned:
+> > The impression I get from reading lkml the odd time is
+> > that IDE has gone downhill since Andre Hedrick was 
+> > effectively removed as maintainer. Martin Dalecki seems
+> > to have been unable to further development without 
+> > much breakage. 
+> 
+> Hmm... begs the question, why remove Handrick?
+> If it ain't broke, don't fix it.
+
+ See, the IDE subsystem is like the One Ring. It's kludginess, due to
+having to support hundreds of dodgy chipsets & drives means that it is
+inherintly evil. A few months of looking at the code can turn you sour.
+Years of looking at it will turn you into an arsehole.
+
+ They haven't found a hobbit that can code, so mortal humans have to
+suffice. 
+
+Kate
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

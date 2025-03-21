@@ -1,0 +1,85 @@
+
+{{alias}}( [data,] [options] )
+    Returns a Sparkline instance.
+
+    This constructor is a base Sparkline constructor from which constructors
+    tailored to generating particular types of Sparkline graphics should be
+    derived.
+
+    At a minimum, descendants should implement a private `_render()` method
+    which will be automatically invoked by the public `render()` method.
+
+    The `data` argument takes precedence over the `data` option.
+
+    Parameters
+    ----------
+    data: ArrayLike|ndarray (optional)
+        Sparkline data.
+
+    options: Object (optional)
+        Options.
+
+    options.autoRender: boolean (optional)
+        Boolean indicating whether to re-render on a 'change' event. Default:
+        false.
+
+    options.bufferSize: integer|null (optional)
+        Data buffer size. If provided, data is kept in a first-in first-out
+        (FIFO) buffer which cannot exceed the buffer size. Default: +infinity.
+
+    options.data: ArrayLike|ndarray (optional)
+        Sparkline data.
+
+    options.description: string (optional)
+        Sparkline description.
+
+    options.isDefined: Function (optional)
+        An accessor function indicating whether a datum is defined.
+
+    options.label: string (optional)
+        Data label.
+
+    Returns
+    -------
+    sparkline: Sparkline
+        Sparkline instance.
+
+    sparkline.autoRender
+        Rendering mode. If `true`, an instance renders on each 'change' event;
+        otherwise, rendering must be triggered manually.
+
+    sparkline.bufferSize
+        Data buffer size.
+
+    sparkline.description
+        Sparkline description.
+
+    sparkline.data
+        Sparkline data.
+
+    sparkline.label
+        Data label.
+
+    sparkline.isDefined( d, i )
+        An accessor function which defines whether a datum is defined. This
+        accessor is used to define how missing values are encoded. The default
+        behavior is to ignore values which are `NaN`.
+
+    sparkline.render()
+        Renders a sparkline. This method calls `_render()` which must be
+        implemented by instances and child classes. The default behavior is
+        throw an error.
+
+    Examples
+    --------
+    > var sparkline = new {{alias}}()
+    <Sparkline>
+
+    // Provide sparkline data at instantiation:
+    > var data = [ 1, 2, 3 ];
+    > sparkline = new {{alias}}( data )
+    <Sparkline>
+
+    See Also
+    --------
+

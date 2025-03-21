@@ -1,0 +1,89 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug 22 10:50:01 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5CB4043C76
+	for <jm@localhost>; Thu, 22 Aug 2002 05:47:40 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 22 Aug 2002 10:47:40 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7LKrsZ09258 for <jm-sa@jmason.org>; Wed, 21 Aug 2002 21:53:54 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17hcTP-0002gP-00; Wed,
+    21 Aug 2002 13:53:03 -0700
+Received: from neo.pittstate.edu ([198.248.208.13]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17hcSl-0003dC-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 21 Aug 2002 13:52:23 -0700
+Received: from [198.248.208.11] (macdaddy.pittstate.edu [198.248.208.11])
+    by neo.pittstate.edu (8.12.2/8.12.2) with ESMTP id g7LKpkW7008049;
+    Wed, 21 Aug 2002 15:51:47 -0500
+MIME-Version: 1.0
+Message-Id: <p04310104b989ac1fad1d@[198.248.208.11]>
+In-Reply-To: <95D05F3FD1EBD311AE8B00508B5A968508BAB083@gvlexch4.gvl.esys.com>
+References: <95D05F3FD1EBD311AE8B00508B5A968508BAB083@gvlexch4.gvl.esys.com>
+To: "Rice, MA Mark (6750)" <RiceMA@ISL-3Com.com>,
+	zeek <zeek@sparklehouse.com>,
+	SA <spamassassin-talk@lists.sourceforge.net>
+From: Justin Shore <listuser@neo.pittstate.edu>
+Subject: RE: [SAtalk] Probing for valid addrs
+Content-Type: text/plain; charset="us-ascii" ; format="flowed"
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 21 Aug 2002 15:51:44 -0500
+Date: Wed, 21 Aug 2002 15:51:44 -0500
+
+At 3:39 PM -0500 8/21/02, Rice, MA Mark (6750 wrote:
+>I get hit with these probes or "Rumplestiltskin attacks" too.
+>Justin, could you explain what a "LART" is?  I've seen that term used on
+>this list before...
+
+Sure.  I described it the way I understand it to another person off 
+list a little while ago.
+
+
+It has a couple different definitions.  The most common is Luser 
+[sic] Attitude Readjustment Tool.  It was first used to describe the 
+reporting of spam to ISPs that didn't think spam was bad.  Their 
+attitude needed a little readjusting.  It has since taken on the 
+generic meaning of reporting email/security incidents to the 
+appropriate parties.  Somewhere the definition is online.  I can't 
+seem to find the page though.
+
+
+LART is about as good a word as any to describe reporting 
+Rumplestiltskin attacks.  Come to think of it, I generally get a much 
+better response to spam LARTs than I do to LARTs for other things. 
+I'm always careful to say in the LART that the massive amounts probes 
+on our system disrupted service to our customers and that we 
+therefore consider it a DoS attack.  That tends to ellict a better 
+response.  I also either include a log snippet in the email or I dump 
+it to a file and make it accessible on a web server with other logs 
+of hosts that abused our mail server.  That helps too. :)
+
+Justin
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

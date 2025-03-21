@@ -1,0 +1,122 @@
+From razor-users-admin@lists.sourceforge.net  Fri Aug  9 15:37:22 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id CB519440F2
+	for <jm@localhost>; Fri,  9 Aug 2002 10:34:12 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:34:12 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79ETMb07329 for
+    <jm-razor@jmason.org>; Fri, 9 Aug 2002 15:29:22 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id BAA02272 for
+    <jm-razor@jmason.org>; Fri, 9 Aug 2002 01:08:16 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17cxAH-00086Z-00; Thu,
+    08 Aug 2002 16:58:01 -0700
+Received: from longbow.wesolveit.com.au ([210.10.109.227]) by
+    usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17cx9Y-0004d5-00 for <razor-users@lists.sourceforge.net>; Thu,
+    08 Aug 2002 16:57:17 -0700
+Received: (qmail 1166 invoked from network); 8 Aug 2002 23:57:07 -0000
+Received: from unknown (HELO adamwin98se) (192.168.2.114) by 0 with SMTP;
+    8 Aug 2002 23:57:07 -0000
+From: "Adam Goryachev" <mailinglists@websitemanagers.com.au>
+To: <razor-users@example.sourceforge.net>
+Subject: RE: [Razor-users] What's wrong with the Razor servers now?
+Message-Id: <NDBBJPAGKLCMDEIEKOPBAEFOIHAA.mailinglists@websitemanagers.com.au>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2910.0)
+In-Reply-To: <81F8FF20-AB1F-11D6-BCF2-00039396ECF2@deersoft.com>
+X-Mimeole: Produced By Microsoft MimeOLE V5.00.2615.200
+Importance: Normal
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Fri, 9 Aug 2002 10:05:29 +1000
+Date: Fri, 9 Aug 2002 10:05:29 +1000
+
+> -----Original Message-----
+> From: razor-users-admin@example.sourceforge.net
+> [mailto:razor-users-admin@lists.sourceforge.net]On Behalf Of Craig
+> R.Hughes
+> On Thursday, August 8, 2002, at 02:28  PM, Vipul Ved Prakash wrote:
+>
+> I'm not sure I understand.  Let's say I am an honest
+> razor-submitter, and I submit lots of stuff that everyone agrees
+> is spam.
+
+Great, that is very nice of you.
+
+> Now I get some opt-in mail which looks to me like
+> spam.  I hit "this is spam".  My trust rating plummets --
+
+Good! Your opinion of what is spam is unreliable, and therefore, I don't
+*want* to trust you. IMHO, that is exactly the case that the trust system is
+supposed to sort out. People who incorrectly submit non-spam bulk mail to
+razor.
+
+> assuming most other people recognized that it was in fact
+> something they'd requested.  Now picture that this happens to
+> lots of people in the system.
+
+Then those lots of people are unreliable, and therefore will all have
+minimal trust, but the people with a decent reliability and therefore trust
+level will help us all...
+
+> Again, it might not be a problem, but I don't think we know
+> yet.  It will probably take a little while for there to be
+> enough data in the trust system for it to equilibriate (or has
+> it been initialized based on all the submissions/revocations
+> gathered before it was switched on?).  I suppose we'll know once
+> it's equilibriated.  Certainly as of right now, people don't
+> think SpamNet is working very well at all, where it had been
+> working great a week ago.
+
+IMHO, due to the number of messages you are sending, and the way you are
+discussing TeS, (considering that you know *nothing* about it), certainly
+looks like you are simply trying to throw doubt/negativity onto razor.
+
+Personally, I haven't used razor for a few months now because I want to
+integrate it into qmail-scanner *without* spam assassin, but haven't had the
+time to do that, so even I can't comment on Razor at all.....
+
+Vipul & co, I think it would be great if there was more transparency in the
+whole server process, ie, if you know there is a problem, then tell all of
+us, this will avoid all the stupid "Oh, it isn't working again, and it took
+me 324 days to work it out" etc...
+
+Just my $1 worth...
+
+Regards,
+Adam
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

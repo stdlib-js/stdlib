@@ -1,0 +1,110 @@
+From fork-admin@xent.com  Thu Jul 25 11:08:05 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id DD51F440D2
+	for <jm@localhost>; Thu, 25 Jul 2002 06:07:16 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 11:07:16 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6OHDn428769 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 18:13:50 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 04A77294143; Wed, 24 Jul 2002 10:03:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from t2.serverbox.net (t2.serverbox.net [64.71.187.100]) by
+    xent.com (Postfix) with SMTP id 924FF2940B2 for <fork@xent.com>;
+    Wed, 24 Jul 2002 10:02:03 -0700 (PDT)
+Received: (qmail 22916 invoked from network); 24 Jul 2002 17:11:13 -0000
+Received: from unknown (HELO techdirt) (12.236.16.241) by t2.serverbox.net
+    with SMTP; 24 Jul 2002 17:11:13 -0000
+Message-Id: <3.0.32.20020724100925.03a66df0@techdirt.com>
+X-Sender: mike@techdirt.com
+X-Mailer: Windows Eudora Pro Version 3.0 (32) -- [Cornell Modified]
+To: Eugen Leitl <eugen@leitl.org>
+From: Mike Masnick <mike@techdirt.com>
+Subject: Re: Mossberg on 'ChoiceMail': "In my tests, it cut my spam to zero."
+Cc: <fork@spamassassin.taint.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 24 Jul 2002 10:09:33 -0700
+
+At 11:49 AM 7/24/02 +0200, Eugen Leitl wrote:
+>On Tue, 23 Jul 2002, Mike Masnick wrote:
+>
+>> Lately, a fairly large % of the spam I've been getting has been coming
+>> from spam systems that forge my own address as the "from" address...
+>
+>Include a random token with an expiration date with anything you send.  
+>Valid whitelisting of From:you@here.net yet invalid random token would get 
+>blocked.
+
+Adds to the level of annoyance, and makes it even less likely that I'll
+ever use it.
+
+>> Those spam messages would get through any whitelist I set up
+>> (especially since I email stuff to myself all the time).  If
+>> whitelists become more popular, I imagine spammers will resort to
+>> doing that for the majority of their spams, making whitelists less
+>> helpful.
+>
+>Spammers cannot be bothered to keep track if individual whitelists 
+>associated with a given email address.
+
+They don't have to.  All they have to do is use some program (which, if
+they don't exist already, will certainly be around someday soon) that makes
+every spam they send show the recipient as the "from" address as well.
+
+>> Plus, I'm still not sure how I feel about whitelists.  I don't think I'm so
+>> special that people should need to fill out a special form just to send me
+>
+>Of course you populate your whitelist with contents of your inbox minus 
+>spam, and then add manually stuff from your addressbook.
+
+The adding manually thing doesn't seem like much fun.  And, anytime I speak
+to someone new, it just makes it more unlikely that they will be willing to
+contact me.  Having played around with whitelists in the past, you'd be
+amazed at how confused many people get by them as well.  They tend to
+ignore the "please apply" messages.
+
+As an aside, am I the only person around who simply does not use the
+addressbook feature in email programs?  I never have, and I don't see any
+reason to.  It (along with not opening attachments) has helped me not to
+send out viruses to people.  I generally use my own brain or my inbox as an
+addressbook, and search out the last email I received from someone and hit
+reply...
+
+>> email.  I could see certain friends of mine getting fairly annoyed
+>> (especially those with multiple email addresses...).
+>
+>What's the point of multiple email addresses? They're a pain.
+
+Well, yes.  *I* use one email address, but that doesn't mean all my friends
+do.  You would need to convince everyone I know of that.  Most people I
+know, at the very least, have a home and work email address.  But plenty
+others have other addresses for various reasons.  Keeping track of all of
+them for a whitelist seems like a pain.  It forces them to remember which
+email addresses are already approved and avoid using others.
+
+Plus, I know plenty of people who change jobs, and suddenly get a new email
+address from their new job.  Wouldn't it suck if, in sending out your new
+job info, you had to fill out a new application for each friend just to
+tell them about your new job email address?
+
+ -Mike
+http://xent.com/mailman/listinfo/fork
+
+

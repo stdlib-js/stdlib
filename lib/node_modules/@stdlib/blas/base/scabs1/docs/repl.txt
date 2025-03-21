@@ -1,0 +1,22 @@
+
+{{alias}}( z )
+    Computes the sum of the absolute values of the real and imaginary components
+    of a single-precision complex floating-point number.
+
+    Parameters
+    ----------
+    z: Complex64
+        Complex number.
+
+    Returns
+    -------
+    y: number
+        Result.
+
+    Examples
+    --------
+    > var y = {{alias}}( new {{alias:@stdlib/complex/float32/ctor}}( 5.0, -3.0 ) )
+    8.0
+
+    See Also
+    --------

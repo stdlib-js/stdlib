@@ -1,0 +1,75 @@
+
+{{alias}}( value )
+    Tests if a value is an array-like object containing only negative numbers.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is an array-like object containing only
+        negative numbers.
+
+    Examples
+    --------
+    > var bool = {{alias}}( [ -3.0, new Number(-3.0) ] )
+    true
+    > bool = {{alias}}( [ -3.0, '-3.0' ] )
+    false
+
+
+{{alias}}.primitives( value )
+    Tests if a value is an array-like object containing only primitive negative
+    numbers.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is an array-like object containing only
+        primitive negative numbers.
+
+    Examples
+    --------
+    > var bool = {{alias}}.primitives( [ -1.0, -10.0 ] )
+    true
+    > bool = {{alias}}.primitives( [ -1.0, 0.0, -10.0 ] )
+    false
+    > bool = {{alias}}.primitives( [ -3.0, new Number(-1.0) ] )
+    false
+
+
+{{alias}}.objects( value )
+    Tests if a value is an array-like object containing only number objects
+    having negative number values.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is an array-like object containing only
+        number objects having negative number values.
+
+    Examples
+    --------
+    > var bool = {{alias}}.objects( [ new Number(-1.0), new Number(-10.0) ] )
+    true
+    > bool = {{alias}}.objects( [ -1.0, 0.0, -10.0 ] )
+    false
+    > bool = {{alias}}.objects( [ -3.0, new Number(-1.0) ] )
+    false
+
+    See Also
+    --------
+

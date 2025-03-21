@@ -1,0 +1,17 @@
+
+{{alias}}()
+    Returns the directory for storing temporary files.
+
+    Returns
+    -------
+    dir: string
+        Directory for temporary files.
+
+    Examples
+    --------
+    > var dir = {{alias}}()
+    e.g., '/path/to/temporary/files/directory'
+
+    See Also
+    --------
+

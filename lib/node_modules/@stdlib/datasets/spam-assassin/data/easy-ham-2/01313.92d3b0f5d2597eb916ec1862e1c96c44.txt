@@ -1,0 +1,66 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Wed Jul 24 06:08:58 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 94B6A440CC
+	for <jm@localhost>; Wed, 24 Jul 2002 01:08:56 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 06:08:56 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6O56K421543 for <jm-sa@jmason.org>; Wed, 24 Jul 2002 06:06:21 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17XEIg-0005Si-00; Tue,
+    23 Jul 2002 22:03:02 -0700
+Received: from sidewinder.chesco.com ([209.195.204.10]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17XEIG-0000IT-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Tue, 23 Jul 2002 22:02:36 -0700
+Received: from nt3.chesco.com (nt4.chesco.com [10.10.10.110]) by
+    sidewinder.chesco.com with ESMTP id g6O4tUvI016716 for
+    <spamassassin-talk@lists.sourceforge.net>; Wed, 24 Jul 2002 00:55:30 -0400
+    (EDT)
+From: terry@ccis.net
+To: spamassassin-talk@example.sourceforge.net
+Message-Id: <OF4F82EF72.67BCA01E-ON85256C00.001B9085@chesco.com>
+X-Mimetrack: Serialize by Router on nt3.chesco.com/Chesco(Release 5.0.8
+    |June 18, 2001) at 07/24/2002 01:01:07 AM
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Subject: [SAtalk] Terry Ryan/Chesco is out of the office.
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 24 Jul 2002 01:01:04 -0400
+Date: Wed, 24 Jul 2002 01:01:04 -0400
+
+I will be out of the office starting  07/20/2002 and will not return until
+07/29/2002.
+
+I will respond to your message when I return. If there is an immediate need
+to contact a CCIS representative, you can call our office at 610-518-5700.
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

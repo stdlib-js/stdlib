@@ -1,0 +1,320 @@
+From fork-admin@xent.com  Tue Jul 23 06:16:17 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A7903440C8
+	for <jm@localhost>; Tue, 23 Jul 2002 01:16:16 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 23 Jul 2002 06:16:16 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6N5Hh428056 for <jm@jmason.org>;
+    Tue, 23 Jul 2002 06:17:44 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id BE6032940B3; Mon, 22 Jul 2002 22:07:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: by xent.com (Postfix, from userid 1002) id 742572940B0;
+    Mon, 22 Jul 2002 22:06:49 -0700 (PDT)
+To: FoRK@xent.com
+Subject: [EE Times] Iconoclast Designers Choose MIPS
+Message-Id: <20020723050649.742572940B0@xent.com>
+From: adam@xent.com (Adam Rifkin)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 22 Jul 2002 22:06:49 -0700 (PDT)
+
+"In fact, Caltech says that it actually spun out the same number of
+startups in 2001 -- a poor time, needless to say, for new ventures -- as
+it did in the boom year of 1999."  Oookaaaay...
+
+
+http://www.fulcrummicro.com/press/article_eeTimes_05-08-02.shtml
+
+Iconoclast designers choose MIPS
+By Anthony Cataldo
+May 28, 2002  
+
+SAN JOSE, Calif. -- A group of engineers in Calabasas Hills, CA wants to
+turn the microprocessor world on its head by doing the unthinkable:
+tossing out the clock and letting the signals move about unencumbered.
+For those designers, inspired by research conducted at nearby Caltech,
+clocks are for wimps.
+
+The Fulcrum Microsystems Inc. design team isn't the first to propose an
+asynchronous processor, but president and chief executive officer Robert
+Nunn wants to be the first to take a clockless, fire-breathing processor
+mainstream. "We really deal with an asynchronous world," he said. "We
+only make it synchronous for our own convenience."
+
+This is the kind of stuff that many in the processor industry would
+consider lunatic fringe, too weird for conservative embedded-systems
+designers. But the young processor company and more than a dozen others
+like it are anchored in the mainstream courtesy of the MIPS
+instruction-set architecture. More and more, MIPS is becoming the choice
+for maverick processor design teams seeking a place at the high end by
+fielding unorthodox devices. And if Motorola and IBM in the PowerPC camp
+aren't careful, they could see their performance leadership in the
+high-end embedded-processor market snatched away by some of these upstarts.
+
+In Austin, Texas, meanwhile, designers at another MIPS house, Intrinsity
+Inc., aren't prepared to ditch the clock. But they are putting a new
+spin on some old tricks such as giving each gate its own clock and then
+letting them overlap. Using such sleight of hand, the company hopes to
+soon deliver RISC-based processors that run at an eye-popping 2 GHz and
+consume just 10 to 15 watts.
+
+Fulcrum, Intrinsity and their brethren may once have been written off as
+interesting experiments, backed by venture capitalists who overlooked
+some of the finer details, like software compatibility. What lends them
+respectability is MIPS.
+
+Theirs for the asking 
+
+One reason young processor companies seem to be flocking to the platform
+is that its steward, MIPS Technologies Inc., has no qualms about
+licensing the instruction-set architecture (ISA), provided that the
+licensee agrees to meet a software-compatibility test suite. By
+contrast, processor-core rival ARM Ltd. has granted this privilege to
+just two of its many licensees, Intel and Motorola. And so far, the two
+PowerPC vendors, IBM Corp. and Motorola Inc., have rebuffed most
+requests to license that architecture, with the notable exception being
+FPGA vendor Xilinx Inc., which has licensed the 405 PowerPC from IBM.
+
+The MIPS ISA is also one of the simplest forms of
+reduced-instruction-set computing around, which tends to make it
+attractive to processor designers interested in extending the
+architecture. It was this and the wide availability of tools and
+software that drew Intrinsity to MIPS, even though the company is aiming
+at PowerPC sockets, as evidenced by its decision to adopt the RapidIO
+interface instead of HyperTransport, which has been favored by MIPS vendors.
+
+Good fit 
+
+"It's a nice, clean architecture and has an open model that allows us to
+add instructions," said Paul Nixon, chief executive officer of
+Intrinsity.  "You also get all the third-party tools that very easily
+fit into our base of platforms."
+
+There was a time when this openness was seen as a liability for MIPS. In
+the mid-1990s, before MIPS was spun out from Silicon Graphics Inc., the
+instruction set lacked a multiply-add instruction, so some MIPS vendors
+took it upon themselves to create their own. The problem was that this
+broke many of the development tools, causing headaches for compiler
+vendors like Green Hills Software Inc.
+
+"We went to MIPS and said we have 20 different compiler variants and
+it's embarrassing," said Craig Franklin, vice president of engineering
+at Green Hills and a respected microprocessor industry veteran. Franklin
+also wasn't shy about telling MIPS it needed to revamp its embedded
+application binary interface. "We went to MIPS and said we've done a
+dozen EABIs, let's clean up yours," he said.
+
+MIPS took the advice and wasted little time clamping down on
+architectural deviations, observers said. But the MIPS camp still has to
+live with a legacy of incompatible chips in the field. "To its credit,
+MIPS quickly caught on," said Jim Turley, a microprocessor industry
+analyst. "Going forward, MIPS is maintaining good control but they are
+still haunted by incompatibility among multiples."
+
+If the biggest risk to the MIPS camp is fragmentation, then the PowerPC
+camp has the opposite problem: architectural confinement. Though the
+PowerPC architecture carries the cachet of household names Motorola and
+IBM, these are essentially the only two companies that provide
+PowerPCs. It's not for lack of interest. Rather, the companies have been
+reluctant to cede control over the architecture. This could wind up
+hurting the PowerPC cause, though.
+
+"To get a PowerPC license is impossible or very expensive," Green Hills'
+Franklin said. "Tactically this may have been a mistake. If you're a
+Japanese company, all things being equal, you'd rather buy from another
+Japanese company."
+
+Analyst Turley, too, thinks the PowerPC camp will only stand to gain by
+licensing the architecture. "It's all about software compatibility and
+tool support. The more you can proliferate the architecture the better
+you're going to do," he said. "I don't think Motorola and IBM can
+address the entire market by themselves."
+
+There's a chance that this could change. IBM, for its part, is in the
+process of planning an expansion strategy for PowerPC that may involve
+more licensing. Though it's unlikely the PowerPC camp will ever have the
+open licensing model of MIPS Technologies, MIPS processor vendors may
+have more than just two competitors to worry about.
+
+"We're certainly not averse to [licensing]," said Lisa Su, director of
+PowerPC products at IBM. "The question is, how much do we do and who do
+we license to. There are various ways you could go, whether it's a hard
+core, soft core or licensing the ISA."
+
+But the fear of architectural fragmentation still looms large. "We know
+that if we have different microarchitectures we have to do work on
+software compatibility," Su said. "With MIPS there's a degree of
+fracturing. That may not always be a big problem, but if you go to other
+markets -- like consumer -- it becomes big. Our belief is there is a
+happy medium."
+
+Whatever path IBM takes it will act in its own best interest as a chip
+provider, not as a company that wants to hawk intellectual
+property. This is why the Xilinx licensing deal works for IBM: Big Blue
+is not so much interested in the royalties and fees it collects from
+Xilinx, but in the dual benefit of widening the appeal of the
+architecture and the revenue IBM generates from manufacturing the FPGAs
+for Xilinx in its own fabs. "We're not trying to make money off of
+licensing," Su said.
+
+Manufacturing is probably one of the most powerful weapons that PowerPC
+vendors IBM and Motorola wield. Both have gussied up their high-end
+lines with copper interconnect and silicon-on-insulator technology,
+still rarities among chip makers. This has helped both companies design
+relatively low-power embedded processors running at 1 GHz that are
+shipping today. IBM did it using 0.13-micron design rules and a
+four-stage pipeline; Motorola is using 0.18-micron design rules and a
+seven-stage pipe.
+
+The companies say there's more performance headroom in store. "When we
+get to 0.13 micron we'll get substantially faster," said Raj Handa,
+PowerPC and PowerQuicc marketing manager at Motorola.
+
+Proprietary processes 
+
+Most MIPS processor vendors, by contrast, rely on mainstream foundries
+that haven't developed the more-exotic process technologies. And even
+though companies like Motorola are shifting more capacity to outside
+foundries, they're keeping their special process recipes in-house to
+juice up their high-performance devices.
+
+Lacking this capability, most MIPS processor vendors will have little
+choice but to come up with dazzling architectural feats to keep up their
+chops at the high end. It should become clear in the next year or so how
+some of the newer players measure up.
+
+Intrinsity hopes to field its 2-GHz processors by the end of the
+year. Fulcrum is shooting for an early 2003 introduction. "We're going
+to shock the industry in terms of raw performance and speed-vs.-power
+performance," Fulcrum's Nunn said. "We really want to change the way the
+world designs semiconductors."
+
+
+
+http://www.fulcrummicro.com/press/article_fastco_04-02.shtml
+
+The Pasadena startup machine
+By Alison Overholt
+April, 2002  
+
+There was a time when every dorm room, it seemed, was a startup waiting
+to happen. Throughout the 1990s, kids cobbled together business plans
+between classes, won funding, and jumped into business. Risk? What risk?
+Plunging into a new venture seemed all too easy.
+
+Ah, the fickleness of youth. These days, most of the kids are back in
+class. Venture capitalists say that they're seeing precious few
+proposals out of MIT, Stanford, and almost every other university, save
+one: the California Institute of Technology.
+
+In fact, Caltech says that it actually spun out the same number of
+startups in 2001 -- a poor time, needless to say, for new ventures -- as
+it did in the boom year of 1999. While startup enthusiasm has faded on
+most campuses, Caltech has blossomed into a robust new-company machine.
+
+This didn't happen by accident. During the past seven years, Caltech's
+Office of Technology Transfer has carefully developed a strategy for
+cultivating commerce. "We focus on nurturing entrepreneurs
+scientifically more than other schools do," says Rich Wolfe, the
+office's associate director. That is, the university focuses more on the
+science itself than on the ensuing commercial opportunity.
+
+That's what grabbed Uri Cummings and Andrew Lines, two PhD students at
+Caltech who founded Fulcrum Microsystems in 2000. "There is a pervasive
+philosophy at Caltech that no problem is unsolvable," Cummings
+says. "There's a focus on scientific ingenuity that is thrilling to be
+around. Caltech has so many entrepreneurs because the school doesn't
+make it about business or focus on how much money they'll get out of
+it. Caltech is a catalyst, moving technology from the university out
+into industry, and students are thrilled to be a part of it."
+
+Before starting Fulcrum, Cummings and Lines worked for six years with
+Caltech computer-science professor Alain Martin on an
+asynchronous-circuit design for semiconductor chips. They ventured into
+commercialization while still in the throes of their doctoral program.
+
+That they could afford to do that points to another, more practical
+aspect to Caltech's approach. Other universities typically require
+entrepreneurs to pay up-front application and licensing fees for the use
+of technology patents. But Caltech believes that such payments stifle
+entrepreneurship, since young companies usually have little cash to
+spare. Instead, the school typically takes equity stakes in startups,
+and it defers collection of patent payments until fledgling companies
+are financially secure.
+
+For Caltech, it's a long-term bet. "The reality is that universities
+rely far more on their endowments than they could on any fees to be
+collected from the initial licensing process," Wolfe says. "So we seek a
+bite of the apple -- and we hope that if one of these entrepreneurs
+founds the next Intel, he'll not only share the equity but also bestow a
+gift on the university in remembrance that we took care of him when he
+was just getting started."
+
+Cummings and Lines may be in a position to do just that. Fulcrum has won
+about $20 million in venture funding amid the toughest venture market in
+recent history. Its founders have hired a credible CEO, Bob Nunn, who
+formerly ran Vitesse's telecom division, and hired 24 top students from
+their alma mater. And they've garnered rave reviews of their chip design
+from technology journals.
+
+One thing that Cummings and Lines haven't done yet: finished their
+degrees. Officially, both are now "on leave." They may not be back.
+
+
+
+----
+aDaM@XeNT.CoM
+
+
+High-tech startups fail for only three reasons: stupidity, luck, and greed. 
+
+Tip one for would-be entrepreneurs: Avoid stupid and unlucky people. If
+you are stupid or have bad luck, don't start a high-tech business.
+
+Tip two for would-be entrepreneurs: Do a product that you want to do,
+not one that they want you to do.
+
+Startup founders generally have only ideas, charisma, and equity to work
+with. Ideas and charisma are cheap, but equity is expensive.  To make a
+start-up work, the founder has to divvy out parts of the business at
+just the right rate to keep everyone happy until the product is a
+success. Give away too much of your company too soon to a venture
+capitalist, to your co-workers, or even to yourself, and you risk
+running out of distributable shares before the product is done. And that
+probably means the product won't be done. Ever.
+
+Tip three for would-be entrepreneurs: Don't take venture funding too soon. 
+
+If you are doing a software product, don't take venture money until you
+need it to introduce the product.  Don't take venture money until you
+have used up all of your own money, your mother-in-law's money, and
+everything you can borrow.
+
+Bootstrap. Rent, don't buy. Don't hire people to do things you can
+contract out because contractors don't require stock options.
+
+As the founder, the man or woman with the grand plan, your function is
+to manage the distribution of your own holdings so that you end up with
+fewer shares but more wealth.
+
+Tip four for would-be entrepreneurs: Invite me to lunch. I'm a cheap date.
+
+  -- Robert X. Cringely, http://www.pbs.org/cringely/pulpit/pulpit20010614.html
+http://xent.com/mailman/listinfo/fork
+
+

@@ -1,0 +1,15 @@
+/**
+* Evaluates a polynomial.
+*
+* ## Notes
+*
+* -   The implementation uses [Horner's rule][horners-method] for efficient computation.
+*
+* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
+*
+* @param x    value at which to evaluate the polynomial
+* @return     evaluated polynomial
+*/
+static {{dtype}} {{fname}}( const {{dtype}} x ) {
+	return {{horner}};
+}

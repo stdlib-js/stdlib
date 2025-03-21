@@ -1,0 +1,120 @@
+From rpm-list-admin@freshrpms.net  Wed Aug 28 10:45:55 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A89CC44158
+	for <zzzz@localhost>; Wed, 28 Aug 2002 05:45:22 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 28 Aug 2002 10:45:22 +0100 (IST)
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7RMwrZ29512 for
+    <zzzz-rpm@spamassassin.taint.org>; Tue, 27 Aug 2002 23:58:53 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7RMt8J31837; Wed, 28 Aug 2002 00:55:08
+    +0200
+Received: from unknown (80-24-132-206.uc.nombres.ttd.es [80.24.132.206])
+    (authenticated) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g7RMs1J23188; Wed, 28 Aug 2002 00:54:01 +0200
+From: Matthias Saou <matthias@rpmforge.net>
+To: valhalla-list@spamassassin.taint.org, RPM-List <rpm-zzzlist@freshrpms.net>
+Subject: ALSA (almost) made easy
+Message-Id: <20020828004215.4bca2588.matthias@rpmforge.net>
+Organization: freshrpms.net / rpmforge.net
+X-Mailer: Sylpheed version 0.8.1claws (GTK+ 1.2.10; i386-redhat-linux)
+X-Operating-System: Red Hat GNU/Linux forever!
+X-Subliminal-Message: Use Linux... use Linux... use Linux...
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Wed, 28 Aug 2002 00:42:15 +0200
+Date: Wed, 28 Aug 2002 00:42:15 +0200
+
+Hi all,
+
+I've decided at last to test the ALSA sound drivers. As usual the result is
+that I've spent much more time repackaging the darn thing than actually
+testing the functionalities or trying to hear the great sound quality
+people seem to think it outputs... but hey, some of you will benefit from
+that, right? ;-)
+
+I've got the whole thing working on a Valhalla system, but the packages
+should easily install or at least recompile on Enigma, Limbo/(null) and
+maybe others, who knows ;-)
+
+Here are quick instructions for those of you that wish to try it out :
+- Recompile the "alsa-driver" source rpm for your running kernel
+  (you can install the binary package if you're using the i686 2.4.18-10)
+- Install this "alsa-driver" package
+- Install the "alsa-libs" package
+- Install the "alsa-utils" package
+
+Now go to this URL and find out what you need to change in your
+/etc/modules.conf file to replace the default OSS driver loading :
+http://www.alsa-project.org/alsa-doc/
+(very complete and very good documentation!)
+Hopefully you'll see that your card *is* supported ;-)
+
+Reboot, or remove by hand your current sound modules (you'll probably need
+to stop many applications to free the sound resource...) "by hand" and
+insert the new ones. If all is well you've got ALSA working! ("dmesg" to
+check is a good idea), you now just need to adjust the volume levels with
+e.g. aumix and alsamixer because everything is muted by default.
+
+With "aplay" you can already test files to see if you hear anything. You
+can also install the XMMS plugin (seems to make my XMMS segfault on exit...
+hmmm, but maybe it's another plugin) to listen to your good ol' mp3
+files... that's it!
+
+It really isn't complicated, and has never been from what I see. The only
+thing I disliked was to have to install from source... but as I can't
+imagine myself doing that ;-) I've repackaged everything cleanly. Even the
+/dev entries are included in the rpm package (and *not* created by an ugly
+%post script, I insist!) and seamlessly integrate into the /etc/makedev.d
+structure. There are also a few other noticeable differences with the
+default provided ALSA spec files, for example I've split alsa-lib's
+development files into an alsa-lib-devel package and included static
+libraries... there are others of course (oh yes, the kernel version against
+which the "alsa-driver" package is compiled gets neatly integrated in the
+rpm release, so does the architecture!).
+
+I'm open to any comments or suggestions about these packages!
+
+Download :
+http://ftp.freshrpms.net/pub/freshrpms/testing/alsa/
+
+Current spec files :
+http://freshrpms.net/builds/alsa-driver/alsa-driver.spec
+http://freshrpms.net/builds/alsa-lib/alsa-lib.spec
+http://freshrpms.net/builds/alsa-utils/alsa-utils.spec
+(All others, patches etc. : http://freshrpms.net/builds/ )
+
+Matthias
+
+PS: As an extra bonus, I've also recompiled xine with alsa support! Simply
+run "xine -A alsa09" and off you go! It may even support 5.1 and S/PDIF ;-)
+
+-- 
+Clean custom Red Hat Linux rpm packages : http://freshrpms.net/
+Red Hat Linux release 7.3 (Valhalla) running Linux kernel 2.4.18-10
+Load : 0.57 0.42 0.42, AC on-line, battery charging: 29% (1:55)
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

@@ -1,0 +1,52 @@
+From 0xdeadbeef-request@petting-zoo.net  Fri Sep  6 15:24:22 2002
+Return-Path: <0xdeadbeef-request@petting-zoo.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 6A0DC16F21
+	for <jm@localhost>; Fri,  6 Sep 2002 15:24:19 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 15:24:19 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g86A0mC30399 for
+    <jm-deadbeef@jmason.org>; Fri, 6 Sep 2002 11:00:49 +0100
+Received: from petting-zoo.net (IDENT:postfix@petting-zoo.net
+    [64.166.12.219]) by webnote.net (8.9.3/8.9.3) with ESMTP id SAA16963 for
+    <jm-deadbeef@jmason.org>; Thu, 5 Sep 2002 18:26:57 +0100
+Received: by petting-zoo.net (Postfix, from userid 1004) id E46BFEA3D;
+    Thu,  5 Sep 2002 10:26:05 -0700 (PDT)
+Old-Return-Path: <gkm@petting-zoo.net>
+Delivered-To: 0xdeadbeef@petting-zoo.net
+Received: from petting-zoo.net (localhost [127.0.0.1]) by petting-zoo.net
+    (Postfix) with ESMTP id F2693EA0A for <0xdeadbeef@petting-zoo.net>;
+    Thu,  5 Sep 2002 10:26:01 -0700 (PDT)
+From: gkm@petting-zoo.net (glen mccready)
+To: 0xdeadbeef@petting-zoo.net
+Subject: QOTD: Cigarettes, fast food, beer.
+Date: Thu, 05 Sep 2002 10:26:01 -0700
+Sender: gkm@petting-zoo.net
+Message-Id: <20020905172602.F2693EA0A@petting-zoo.net>
+Resent-Message-Id: <ZBlbiB.A._tB.rO5d9@petting-zoo.net>
+Resent-From: 0xdeadbeef@petting-zoo.net
+X-Mailing-List: <0xdeadbeef@petting-zoo.net> archive/latest/537
+X-Loop: 0xdeadbeef@petting-zoo.net
+List-Post: <mailto:0xdeadbeef@petting-zoo.net>
+List-Help: <mailto:0xdeadbeef-request@petting-zoo.net?subject=help>
+List-Subscribe: <mailto:0xdeadbeef-request@petting-zoo.net?subject=subscribe>
+List-Unsubscribe: <mailto:0xdeadbeef-request@petting-zoo.net?subject=unsubscribe>
+Precedence: list
+Resent-Sender: 0xdeadbeef-request@petting-zoo.net
+Resent-Date: Thu,  5 Sep 2002 10:26:05 -0700 (PDT)
+
+
+Forwarded-by: Nev Dull <nev@sleepycat.com>
+Forwarded-by: Mike Olson <mao@olsons.net>
+Forwarded-by: Jim Frew <frew@icess.ucsb.edu>
+Forwarded-by: "Mark Mooney" <shadow.dweller@verizon.net>
+From: the "Vent", Scottsdale Tribune:
+
+First they sue the tobacco companies for giving them lung cancer,
+then the fast food places for making them fat.
+Guess I can sue Budweiser for all the ugly women I've slept with.
+
+

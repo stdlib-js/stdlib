@@ -1,0 +1,242 @@
+From aig@insiq.us  Tue Sep 24 23:55:56 2002
+Return-Path: <aig@insiq.us>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id BB0CF16F03
+	for <zzzz@localhost>; Tue, 24 Sep 2002 23:55:54 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Tue, 24 Sep 2002 23:55:54 +0100 (IST)
+Received: from mail1.insuranceiq.com (host66.insuranceiq.com
+    [65.217.159.66] (may be forged)) by dogma.slashnull.org (8.11.6/8.11.6)
+    with ESMTP id g8OMsMC26073 for <zzzz@jmason.org>; Tue, 24 Sep 2002 23:54:23
+    +0100
+Received: from mail pickup service by mail1.insuranceiq.com with Microsoft
+    SMTPSVC; Tue, 24 Sep 2002 18:55:48 -0400
+Subject: Financial Power You Can Depend On
+To: <zzzz@spamassassin.taint.org>
+Date: Tue, 24 Sep 2002 18:55:48 -0400
+From: "IQ - AIG" <aig@insiq.us>
+Message-Id: <19fbcd01c2641d$862becd0$6b01a8c0@insuranceiq.com>
+X-Mailer: Microsoft CDO for Windows 2000
+MIME-Version: 1.0
+Thread-Index: AcJkCWV2dc7W7ROJQ9uErUFVajNRCQ==
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4522.1200
+Content-Class: urn:content-classes:message
+X-Originalarrivaltime: 24 Sep 2002 22:55:48.0968 (UTC) FILETIME=[864AE680:01C2641D]
+Content-Type: multipart/alternative; boundary="----=_NextPart_000_181FC9_01C263E7.DE66F600"
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_181FC9_01C263E7.DE66F600
+Content-Type: text/plain;
+	charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+=20
+ Financial Power You Can Depend On
+=20
+ Very Competitive Rates=0A=
+Guaranteed 6 Years
+
+ Let AIG's Annuity Portfolio Work for You!=09
+A.M. Best Company	 "A+" Superior	=20
+Standard & Poor's Corp.	 "AA+" Very Strong	=20
+Fitch	 "AA+" Very Strong	=20
+Moody's Investors Service	 "Aa1" Excellent	=20
+Call today for more information!
+ 888-237-4210
+- or -
+
+Please fill out the form below for more information	=20
+Name:	  	 =09
+E-mail:	  =09
+Phone:	  =09
+City:	  	State:	  =09
+ 	    =09
+=20
+
+ AIG Annuity Insurance Company
+We don't want anyone to receive our mailings who does not wish to
+receive them. This is a professional communication sent to insurance
+professionals. To be removed from this mailing list, DO NOT REPLY to
+this message. Instead, go here: insuranceiq.com/optout
+<http://www.insuranceiq.com/optout/>=20
+
+Legal Notice <http://www.insiq.com/legal.htm>=20
+
+------=_NextPart_000_181FC9_01C263E7.DE66F600
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<title>Financial Power You Can Depend On</title>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; =
+charset=3Diso-8859-1">
+</head>
+<body bgcolor=3D"#666666" text=3D"#000000">
+<font face=3D"Arial, Helvetica, sans-serif">=20
+<table width=3D"550" border=3D"1" align=3D"center" cellpadding=3D"0" =
+cellspacing=3D"0" bordercolor=3D"#000000" bgcolor=3D"#FFFFFF">
+  <tr>=20
+    <td>
+			<img src=3D"http://iiq.us/images/aig/setrate/20020912-101.jpg" =
+width=3D"550" height=3D"110"><br>
+			<img src=3D"http://iiq.us/images/aig/setrate/20020912-102.jpg" =
+width=3D"550" height=3D"115" alt=3D'Financial Power You Can Depend =
+On'><br>
+			<img src=3D"http://iiq.us/images/aig/setrate/20020912-103.jpg" =
+width=3D"550" height=3D"107"><br>
+      <img src=3D"http://iiq.us/images/aig/setrate/20020912-104.jpg" =
+alt=3D"Very Competitive Rates&#10;Guaranteed 6 Years" width=3D"550" =
+height=3D"114"><br>
+			<table width=3D"100%" cellpadding=3D"4" cellspacing=3D"0" =
+bgcolor=3D"#000000">
+        <tr>=20
+          <td>
+            <table width=3D"100%" border=3D"1" cellpadding=3D"2" =
+cellspacing=3D"0" bordercolor=3D"#FFFFFF" bgcolor=3D"#CCCCCC">
+              <tr>=20
+                <td colspan=3D"2" align=3D"center" =
+bgcolor=3D"#FFFFFF"><img =
+src=3D"http://iiq.us/images/aig/setrate/20020912-5a.gif" alt=3D"Let =
+AIG's Annuity Portfolio Work for You!" width=3D"521" height=3D"47"></td>
+              </tr>
+              <tr align=3D"center">=20
+                <td width=3D"50%"><b><font size=3D"2">A.M. Best =
+Company</font></b></td>
+                <td width=3D"50%"><b><font size=3D"2">&quot;A+&quot; =
+Superior</font></b></td>
+              </tr>
+              <tr align=3D"center">=20
+                <td><b><font size=3D"2">Standard &amp; Poor's =
+Corp.</font></b></td>
+                <td><b><font size=3D"2">&quot;AA+&quot; Very =
+Strong</font></b></td>
+              </tr>
+              <tr align=3D"center">=20
+                <td><b><font size=3D"2">Fitch</font></b></td>
+                <td><b><font size=3D"2">&quot;AA+&quot; Very =
+Strong</font></b></td>
+              </tr>
+              <tr align=3D"center">=20
+                <td><b><font size=3D"2">Moody's Investors =
+Service</font></b></td>
+                <td><b><font size=3D"2">&quot;Aa1&quot; =
+Excellent</font></b></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td align=3D"center">
+            <b><font color=3D"#FFFFFF" size=3D"2">Call today for more =
+information!<br>
+            <img src=3D"http://iiq.us/images/aig/setrate/20020912-4.gif" =
+alt=3D"888-237-4210" width=3D"536" height=3D"93"><br>
+            - or -</font></b><br>
+            <table width=3D"95%" border=3D"1" cellpadding=3D"0" =
+cellspacing=3D"0" bordercolor=3D"#000000">
+              <tr>=20
+                <form method=3D"post" =
+action=3D"http://65.217.159.103/response/response.asp">
+                  <td>=20
+                    <table width=3D"100%" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"2" align=3D"center" bgcolor=3D"#eeeeee">
+                      <tr bgcolor=3D"#21467B">=20
+                        <td colspan=3D"5" align=3D"center"><b><font =
+color=3D"#FFFFFF" size=3D"2">Please fill out the form below for more =
+information</font></b></td>
+                      </tr>
+                      <tr>=20
+                        <td width=3D"15%" align=3D"right"><b><font =
+size=3D"2">Name:</font></b></td>
+                        <td colspan=3D"3">=20
+                          <input type=3D"text" name=3D"contactname" =
+size=3D"50">
+                        </td>
+                        <td rowspan=3D"5" valign=3D"middle" =
+align=3D"center"><img src=3D"http://iiq.us/images/q3.gif" width=3D"43" =
+height=3D"50"></td>
+                      </tr>
+                      <tr>=20
+                        <td width=3D"15%" align=3D"right"><b><font =
+size=3D"2">E-mail:</font></b></td>
+                        <td colspan=3D"3">=20
+                          <input type=3D"text" name=3D"email" =
+size=3D"50">
+                        </td>
+                      </tr>
+                      <tr>=20
+                        <td width=3D"15%" align=3D"right"><b><font =
+size=3D"2">Phone:</font></b></td>
+                        <td colspan=3D"3">=20
+                          <input type=3D"text" name=3D"phone" =
+size=3D"50">
+                        </td>
+                      </tr>
+                      <tr>=20
+                        <td width=3D"15%" align=3D"right"><b><font =
+size=3D"2">City:</font></b></td>
+                        <td width=3D"30%">=20
+                          <input type=3D"text" name=3D"city" =
+size=3D"20">
+                        </td>
+                        <td width=3D"15%" align=3D"right"><b><font =
+size=3D"2">State:</font></b></td>
+                        <td width=3D"20%">=20
+                          <input type=3D"text" name=3D"state" =
+size=3D"2">
+                        </td>
+                      </tr>
+                      <tr>=20
+                        <td width=3D"15%" align=3D"right">&nbsp;</td>
+                        <td width=3D"30%" colspan=3D'3'>=20
+                          <input type=3D"submit" name=3D"btnsubmit" =
+value=3D"Submit">
+                          <input type=3D"hidden" =
+name=3D"hdnRecipientTxt" value=3D"jerry_livers@aigannuity.com">
+                          <input type=3D"hidden" name=3D"hdnSubjectTxt" =
+value=3D"AIG SetRate Ad Inquiry">
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                <input type=3D'hidden' name=3D'SentTo' value=3D'304704'>
+</form>
+              </tr>
+            </table>
+            <br>
+            <img src=3D"http://iiq.us/images/aig/setrate/20020912-3.gif" =
+alt=3D"AIG Annuity Insurance Company" width=3D"540" height=3D"83">
+          </td>
+        </tr>
+      </table>
+		</td>
+  </tr>
+  <tr>=20
+    <td width=3D"100%" bgcolor=3D"#cccccc" align=3D"center">
+			<p><font face=3D"Arial, Helvetica, sans-serif" size=3D"1">We don't =
+want anyone to receive our mailings who does not=20
+			wish to receive them. This is a professional communication=20
+			sent to insurance professionals. To be removed from this mailing=20
+			list, <b>DO NOT REPLY</b> to this message. Instead, go here: <a =
+href=3D"http://www.insuranceiq.com/optout/">=20
+			insuranceiq.com/optout</a></font></p>
+    </td>
+  </tr>
+</table>
+<center>
+  <a href=3D"http://www.insiq.com/legal.htm"><font size=3D"1" =
+face=3D"Arial, Helvetica, sans-serif">Legal Notice </font></a>=20
+</center>
+</font>
+</body>
+</html>
+
+
+------=_NextPart_000_181FC9_01C263E7.DE66F600--
+
+

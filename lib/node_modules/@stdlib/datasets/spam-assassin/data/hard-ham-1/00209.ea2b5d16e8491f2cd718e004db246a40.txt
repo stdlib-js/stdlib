@@ -1,0 +1,732 @@
+Return-Path: linux-announce-recipients-owner-mothlight=fastmail.fm@senator-bedfellow.mit.edu
+Delivery-Date: Sat Sep  7 22:35:04 2002
+Return-Path: <linux-announce-recipients-owner-mothlight=fastmail.fm@senator-bedfellow.mit.edu>
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by mothlight.dyndns.org (8.11.6/8.11.6) with ESMTP id g882Z3l26475
+	for <nice@localhost>; Sat, 7 Sep 2002 22:35:03 -0400
+Received: from fastmail.fm [209.61.183.86]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for nice@localhost (single-drop); Sat, 07 Sep 2002 22:35:03 -0400 (EDT)
+Received: from www.fastmail.fm (server1.internal [10.202.2.132])
+	by server2.fastmail.fm (Cyrus v2.1.5) with LMTP; Sat, 07 Sep 2002 21:20:29 -0500
+X-Sieve: CMU Sieve 2.2
+Received: from www.fastmail.fm (server1.internal [10.202.2.132])
+	by www.fastmail.fm (Cyrus v2.1.3) with LMTP; Sat, 07 Sep 2002 21:20:30 -0500
+Received: from www.fastmail.fm (localhost [127.0.0.1])
+	by localhost.localdomain (Postfix) with ESMTP id 24AA66D9C7
+	for <mothlight@fastmail.fm>; Sat,  7 Sep 2002 21:20:24 -0500 (CDT)
+X-Mail-from: Linux-Announce-recipients-owner-mothlight=fastmail.fm@senator-bedfellow.mit.edu
+X-Delivered-to: <mothlight@fastmail.fm>
+X-Spam: spam
+  NORMAL_HTTP_TO_IP, NO_MX_FOR_FROM
+Received: from senator-bedfellow.mit.edu (SENATOR-BEDFELLOW.MIT.EDU [18.181.0.25])
+	by www.fastmail.fm (Postfix) with SMTP id C590C6D9C3
+	for <mothlight@fastmail.fm>; Sat,  7 Sep 2002 21:20:23 -0500 (CDT)
+Received: (qmail 25504 invoked by uid 35); 8 Sep 2002 02:13:07 -0000
+Delivered-To: Linux-Announce-recipients@senator-bedfellow.mit.edu
+Received: (qmail 25494 invoked by uid 35); 8 Sep 2002 02:13:06 -0000
+Message-ID: <20020908021306.25492.qmail@senator-bedfellow.mit.edu>
+From: Digestifier <Linux-Announce-Request@senator-bedfellow.mit.edu>
+To: Linux-Announce@senator-bedfellow.mit.edu
+Reply-To: Linux-Announce@senator-bedfellow.mit.edu
+Delivered-to: Linux-Announce
+Precedence: bulk
+Date:     Sat, 7 Sep 2002 22:13:03 EDT
+Subject:  Linux-Announce Digest #180
+X-Status: 
+X-Keywords:                  
+
+Linux-Announce Digest #180, Volume #4           Sat, 7 Sep 2002 22:13:03 EDT
+
+Contents:
+  OO Programming Newsletter #41 from Bruce Eckel (OOPList@BruceEckel.com)
+  The Linux Counter... (Frederick Noronha)
+  Linux Gazette #82 (September 2002) available (Linux Gazette)
+  bigtwo: coffee.marilith.1 released (Bernard yap)
+  NEWS: GNU/DEVELOPMENT... intl orgns take a close look at GNU/Linux (Frederick Noronha)
+  Attn programmers: support offered [FLOSS-Sarai Initiative] (Frederick Noronha)
+
+----------------------------------------------------------------------------
+
+From: OOPList@BruceEckel.com
+Subject: OO Programming Newsletter #41 from Bruce Eckel
+Date: 8 Sep 2002 01:25:28 GMT
+Reply-To: OOPList@BruceEckel.com
+
+To unsubscribe send a blank email to leave-eckel-oo-programming-6394293J@earth.lyris.net
+You are subscribed as linux-announce@sws1.ctd.ornl.gov 
+To modify your email address, go to http://earth.lyris.net/cgi-bin/lyris.pl?enter=eckel-oo-programming
+
+OO Programming Newsletter #41 from Bruce Eckel
+August 2002
+
+= = = Contents = = =
+* Come work on Thinking in Java in Crested Butte
+* Thinking in Java, 3rd edition, Revision 2 Imminent
+* Thinking in C++, Volume 2, Revision 6 Available
+* Thinking in Java Hands-on Seminar, Bay Area, November
+* Java2 Enterprise Programming Seminar, Bay Area, November
+* New seminars
+* Limited Number of Signed Copies of TIJ2 for sale
+
+See the Calendar for the current schedule:
+http://www.mindview.net/Calendar
+
+===================================
+* Come work on Thinking in Java, 3rd edition, in Crested Butte
+
+All but one of the Interns has departed (he's staying through
+December) and we have empty rooms in the condo that I rented in Mt.
+Crested Butte for the Interns to stay in. If you'd like to
+volunteer to come up (Crested Butte is gorgeous in late
+Summer/early Fall, with excellent hiking and mountain biking), stay
+in the condo, and help work on the 3rd edition of Thinking in Java,
+please email Sharlynn@Mindview.net with your resume and
+availability dates (note that the book is due at the end of
+October). There will be a technical and writing test, and
+interviews to reveal how well you self-motivate and work with
+others.
+
+This should be a great learning experience and a fun time.
+
+===================================
+* Thinking in Java, 3rd edition, Revision 2 Imminent
+
+The second revision will be up on the site soon, at:
+http://64.78.49.204/
+
+The biggest change is that I've rewritten significant part of the
+multithreading chapter (although it still has a ways to go). The
+goal is to rewrite the chapter to introduce the essence of
+threading with simplicity, and without GUI examples (this
+simplifies things, and allows threads to appear before GUIs).
+
+The chapters have also been reorganized into something like their
+final form, although the final chapter numbering hasn't been done
+yet. We have made more progress in the testing system.
+
+Other details of the changes made in the new version will be at the
+beginning of the book.
+
+The book is due at the end of October. The print version will
+appear in December.
+
+===================================
+* Thinking in C++, Volume 2, Revision 9 Available tomorrow
+
+Available at:
+http://64.78.49.204/
+
+Chapters 1-4 are finished
+
+===================================
+* Thinking in Java Hands-on Seminar
+November 4th-8th in San Francisco - Emeryville, CA.
+Registration opens on September 4th.
+http://www.mindview.net/Seminars/ThinkingInJava/
+
+Created by Bruce Eckel, taught by Andrea Provaglio. We believe this
+is the best in-depth introduction to Java that you'll find.  It's
+based on the book "Thinking in Java," which was created as the
+seminar evolved.
+
+Please note the early registration discount: 
+* $1,600 for payments received by October 12th
+* $1,950 for payments received after October 12th
+
+===================================
+* Java2 Enterprise Programming Seminar
+November 18th-22th in San Francisco - Emeryville, CA.
+Registration opens on September 4th.
+http://www.mindview.net/Seminars/J2EE/
+
+Created and taught by Andrea Provaglio, this seminar introduces you
+to the practical development of real-world, Web-enabled,
+distributed applications with Java. It covers J2EE and its key
+technologies: Enterprise JavaBeans, Servlets, Java ServerPages, and
+the basic architectural patterns used to combine these technologies
+into maintainable applications. 
+
+Andrea has been teaching this course in the US and in Europe for
+the last two years, and he has recently restructured and updated
+the seminar to include the latest J2EE features.
+
+You'll come out of this course with a comprehensive understanding
+of the J2EE architecture, of the problems that it is designed to
+solve, how to select the most appropriate tools, and how to code
+your solutions.
+
+Please note the early registration discount: 
+* $1,700 for payments received by October 26th
+* $2,300 for payments received after October 26th
+
+===================================
+* New seminars
+
+Bill Venners and I just finished giving the last "Objects &
+Patterns" seminar, and everyone (especially us) had a great time.
+
+We are now beginning to work towards the two new seminars spawned
+by Objects & Patterns, which Bill and I plan to teach together:
+Design Patterns in Java
+(Drawing primarily from "Thinking in Patterns")
+
+Designing Objects & Systems
+This will include a lot of material from Bill's upcoming book on
+Object Design, along with coverage of UML, XP, Object-Oriented
+Design techniques and guidelines, and of course exercises and
+projects.
+
+We hope to begin teaching the courses early next year. Stay tuned.
+
+===================================
+* Limited Number of Signed Copies of TIJ2 for sale
+
+I'm selling the last 17 of my author copies of Thinking in Java,
+2nd edition. I've signed each one and drawn a little cartoon with
+the signature (the books are in La Mesa, and I'm in Crested Butte,
+so unfortunately I can't personalize them). The cost in the USA is
+$40, which includes handling and mailing. Outside the USA, you'll
+have to email to the address below to find out the additional
+shipping cost.
+
+To order, divide your credit card number (Visa, MC, Amex) into two
+different emails (not high security, but highly likely to be safe),
+and include your credit card billing address and expiration date.
+Email your order to:
+Wayne@MindView.net
+Wayne will email you back to clarify any necessary details.
+
+
+___| Until Next Time... |________________________
+
+Computer nerd humor
+http://www.valleyofthegeeks.com/
+
+Java programming questions:
+http://www.mindview.net/Books/TIJ/JavaQuestions.html
+
+Speaking & Seminar schedule: 
+http://www.mindview.net/Calendar/
+
+Anyone can sign up for this free newsletter by visiting:
+http://www.mindview.net/mailman/listinfo/eckel-oo-programming 
+
+Bruce Eckel    http://www.mindview.net
+
+
+---
+You are currently subscribed to eckel-oo-programming as: linux-announce@sws1.ctd.ornl.gov
+To unsubscribe send a blank email to leave-eckel-oo-programming-6394293J@earth.lyris.net
+
+##########################################################################
+# Send submissions for comp.os.linux.announce to: cola@stump.algebra.com #
+# PLEASE remember a short description of the software and the LOCATION.  #
+# This group is archived at http://stump.algebra.com/~cola/              #
+##########################################################################
+
+
+------------------------------
+
+From: Frederick Noronha <fred@bytesforall.org>
+Subject: The Linux Counter...
+Date: 8 Sep 2002 01:25:32 GMT
+
+Please sign-up at the Linux Counter:
+
+Please visit it and sign up (if you haven't already) at 
+http://counter.li.org/
+
+Why?
+
+* It's a small way of saying 'thank you' to an excellent OS and
+  acknowledging you find it useful... 
+* Letting everyone out there know where all GNU/Linux is being used
+* Building a useful database of GNU/Linux in your locality (Goa)
+* Finding out where all other people in Goa are using GNU/Linux.
+* Just seeing how this volunteer driven model builds itself by
+  innovative styles of organising....
+
+FN
+
+##########################################################################
+# Send submissions for comp.os.linux.announce to: cola@stump.algebra.com #
+# PLEASE remember a short description of the software and the LOCATION.  #
+# This group is archived at http://stump.algebra.com/~cola/              #
+##########################################################################
+
+
+------------------------------
+
+From: Linux Gazette <gazette@ssc.com>
+Subject: Linux Gazette #82 (September 2002) available
+Date: 8 Sep 2002 01:25:35 GMT
+Reply-To: gazette@ssc.com
+
+"Linux Gazette...Making Linux just a little more fun!"
+
+Linux Gazette is a freely available, WWW e-zine that includes short articles
+giving tips and tricks, ideas and suggestions for customizing and running
+Linux. It is a member of the Linux Documentation Project.
+
+Linux Gazette issue #82, September 2002, is out and can be found at: 
+  http://www.linuxgazette.com/
+
+For download purposes, individual issues of LG are available at:
+  ftp://ftp.ssc.com/pub/lg/
+
+A list of mirror sites can be found at:
+  http://www.linuxgazette.com/mirrors.html
+
+While we do not mail issues of LG to our readers--it's just too big--we do
+have an announcement service. Write lg-announce-request@ssc.com with the
+word subscribe in the body, and each month you will receive an e-mail notice
+when we post Linux Gazette. 
+
+Topics in this issue include:
+
+     * The MailBag
+     * More 2-Cent Tips
+     * The Answer Gang
+     * News Bytes
+     * Ecol , by Javier Malonda at escomposlinux.org
+     * Qubism , by Jon "Sir Flakey" Harsem
+     * Writing your own Toy OS - Part III , by Raghu and Chitkala
+     * Kerberos: The watchdog of the Ether , by Raj Shekhar
+     * My Guide To Digital Photography , by Rob Tougher
+     * Adaptive Linux Firewalls , by Vasoo Veerapen
+     * Multihead Systems under Linux and Windows , by Alan Ward
+     * The Back Page
+
+Read all about it in Linux Gazette.
+
+Michael Orr
+Editor, Linux Gazette
+
+##########################################################################
+# Send submissions for comp.os.linux.announce to: cola@stump.algebra.com #
+# PLEASE remember a short description of the software and the LOCATION.  #
+# This group is archived at http://stump.algebra.com/~cola/              #
+##########################################################################
+
+
+------------------------------
+
+From: Bernard yap <lev@codenetic.net>
+Subject: bigtwo: coffee.marilith.1 released
+Date: 8 Sep 2002 01:25:38 GMT
+
+Greetings to all,
+
+'bigtwo' is an cross-platform (tho' it's meant to run on linux) object oriented
+game engine for the card game of "cho dai di" with integrated artificial
+intelligence to simplify the job of developing game servers/clients for the
+card game.
+
+- Release [coffee.marilith.1] -
+
+    This is an alpha release of the game engine (codenamed 'coffee') intended for
+    engine/AI testing. A simulation test of AI playing against each other and a
+    simple text-based single player client are included in the release for that
+    purpose.
+
+- ChangeLog -
+
+    o  some minor AI tweaks
+    o  added game engine version information
+    o  fixed bug in game initialization
+    o  fixed bugs that blocked the straights 23456 & A2345
+
+- Work in progress -
+
+    o  further fixes/improvements on the game engine/AI
+    o  a cross-platform GUI/graphical client.
+
+- SF Project Page -
+      http://sourceforge.net/projects/bigtwo/
+
+- Download -
+      https://sourceforge.net/project/showfiles.php?group_id=22941
+
+
+regards,
+
+-- 
+const char *me[] = { "Bernard", "http://www.codenetic.net/" };
+
+pain, n.: One thing, at least it proves that you're alive!
+
+
+##########################################################################
+# Send submissions for comp.os.linux.announce to: cola@stump.algebra.com #
+# PLEASE remember a short description of the software and the LOCATION.  #
+# This group is archived at http://stump.algebra.com/~cola/              #
+##########################################################################
+
+
+------------------------------
+
+From: Frederick Noronha <fred@bytesforall.org>
+Subject: NEWS: GNU/DEVELOPMENT... intl orgns take a close look at GNU/Linux
+Date: 8 Sep 2002 01:25:42 GMT
+
+GNU/DEVELOPMENT, INTERNATIONAL ORGANISATION TAKE A CLOSE LOOK AT GNU/LINUX
+
+>From Frederick Noronha
+
+INDIA: There's good news round the corner -- international organisations and
+prominent networks worldwide are waking up to the rich potential of
+Free/Open Source Software, a field that is slowly being recognised for the
+immense promise it holds out to the Third World.
+
+But can this be tapped speedily enough and effectively? 
+
+>From the Unesco to the World Bank, and other global organisations, all are
+catching up on the potential of using GNU/Linux as a potent tool in working
+towards development. More so in countries where the cost of a proprietorial
+office suite could eat up six months or more of the average citizen's
+earnings.
+
+United Nation's Development Programme's Ms. Radhika Lal
+<radhika.lal@undp.org>, a Information-Communication Technology Policy
+Advisor, recently drew attention to a conference on Open Source for
+E-Government. It is to be held in Washington, DC on October 17-18.
+
+infoDev, the Cyberspace Policy Institute of The George Washington
+University, and the UNDP are jointly behind this event. It is intended to
+draw participants from local, national and international organizations from
+both the public and private sector.
+
+This meet intends to present cases of 'best practices', raise awareness
+about the potential of open source and free software for e-governance. More
+importantly, it will be sharing experiences among policy makers, donors,
+users and consumers, universities, and industry specialists in Open Source,
+e-Government and related fields.
+
+Ms Lal works at the ICT-for-Development's Special Initiative Bureau for
+Development Policy at the UNDP's East 45th Street offices in New York.
+
+ICT-for-development is a campaign to use more of infotech and the Internet
+for global development and fighting problems like poverty and illiteracy.
+But despite quite a few shared goals and concerns with the GNU/Linux world,
+so far little networking has been done between these two separate circles.
+
+See http://www.egovos.org/
+
+OTHER ARMS OF THE U.N.
+======================
+
+Besides, the UNDP, other arms of the United Nations are also known to be
+showing increasing interest in the potential of free software/open source
+tools. 
+
+Paris-headquartered Unesco (United Nations Education, Scientific and
+Cultural Organisation) recently launched its own Free Software portal. 
+
+It's at http://www.unesco.org/webworld/portal_freesoft.
+
+UNESCO's Jean-Claude Dauphin <jc.dauphin@unesco.org> of the Information
+Society Division also announced that this international organisation has
+been looking out for contributors with a good knowledge of the Free Software
+movement in relation with UNESCO fields of competence -- education, science
+and culture.
+
+It zeroed in particularly on those coming from the Third World (also called
+the 'South' countries) who could could make propositions for "revising,
+updating and extending the UNESCO Free Software Portal" as well as for
+including new basic documents. 
+
+"This work could be done using a fee or consultant contract and the fee can
+be discussed depending on the amount of work described in the contract,"
+said Dauphin. 
+
+Check out the sites at
+
+UNESCO Libraries Portal (http://www.unesco.org/webworld/portal_bib/)
+UNESCO Archives Portal (http://www.unesco.org/webworld/portal_archives/)
+UNESCO Free Software Portal (http://www.unesco.org/webworld/portal_freesoft/)
+UNESCO Observatory on the Information Society (http://www.unesco.org/webworld/observatory/)
+
+NEW TOOLS FOR CDS/ISIS
+======================
+
+Recently, Unesco also announced the launch of new tools for data exchange
+from and to its CDS/ISIS software. These two new tools -- ImpExp2709 and
+IsisAscii v 0.92 -- have recently been released for data exchange from and
+to UNESCO's software package CDS/ISIS. 
+
+CDS/ISIS is a generalized information storage and retrieval system that is
+freely distributed, and has attracted users in places like libraries within
+the Third World. The new utilities have been released with their source code
+(GPL license). 
+
+See http://www.unesco.org/webworld/news/2002/020806_isis.shtml
+
+Meanwhile, UNDP's APDIP (Asia-Pacific Development Information Programme)
+based in Kuala Lumpur, Malaysia, is also learnt to be thinking seriously
+about organizing some kind of a consultation on open source, GNU/Linux and
+related issues.
+
+"We want to see how we can further this cause in the region," APDIP's Shahid
+Akhtar told this correspondent.
+
+Niranjan Rajani <niranjan.rajani@maailma.net>, of Pakistani origin but based
+in the birthplace of Linux, Finland, is now working on a research project on
+"Significance of Free/OpenSource Software for Developing Countries".
+
+This project is financed by the Finnish Foreign Ministry, and he has
+undertaken to write the paper by the end of November this year, for
+Maailma.Net, a local division of OneWorld.Net.
+
+This project's goal is to find out, evaluate and analyze the extent of use
+of FS/OSS, especially some of its most significant and popular projects;
+GNU/Linux, Apache, Mozilla, OpenOffice etc. in the developing or Third World
+countries. It will also look at its possible impact on economies, societies
+and lives of these countries.
+
+CONVINCING GOVERNMENTS
+======================
+
+In India, organisations like Red Hat have been putting out slick
+presentations to convince governments and officials to try out Open Source. 
+
+Shift over boldly to the world of 'open source' and 'free' software. That's
+the message that governments across India were recently with, as official
+computerisation efforts get bogged down due to spiraling software costs and
+speedy software-fuelled hardware obsolence.
+
+Senior IT and e-governance officials from across the country tuned in
+attentively during a recent seminar in Goa, as executives from computing
+giant IBM and leading Linux systems supplier Red Hat India narrated long
+lists of benefits that governments could get from going the Linux way.
+
+Pointing to examples from across the globe, Red Hat India argued that the US
+Department of Energy has built supercomputers on GNU/Linux, the Chinese are
+making Linux the official server operating system -- to be widely used in
+varsities, military installations and within government. 
+
+Some months back, an organisation under India's Ministry of Information
+Technology -- called the ER&DCI (Electronics Research and Development Centre
+of India) -- entered into a strategic alliance with leading Linux systems
+supplier Red Hat India to popularize the 'open source' solution in the
+government sector.
+
+On networks like the EDC/World Bank-support GKD (Global Knowledge for
+Development), issues of free software and open source often make it to the
+news.
+
+GNU/Linux is a suitable tool in organising too, as it was recently pointed
+out. (See http://www.lincproject.org)
+
+"The Low Income Networking and Communication (LINC) Project of the Welfare
+Law Center has helped many low-income led organizing groups acquire access
+to the Internet and use technology more effectively," says Dirk Slater
+<dirk@welfarelaw.org>. 
+
+While these groups have increased their abilities to communicate with one
+another and their allies by using the Internet, one communication hurdle
+remains -- communicating with their leadership via the Internet. 
+
+Despite many "digital divide" initiatives addressing access to the Internet
+in low-income communities, access is still an issue. 
+
+Public Internet access points, such as libraries and schools, are not
+sufficient, as Slater has pointed out. Many low-income leaders do not have
+access to the Internet where it would make the most impact -- in their
+homes. 
+
+LINC argues that the need for Internet communication is particularly great
+for rural groups whose members live far apart and cannot have frequent
+face-to-face meetings because of distance, time and money constraints.
+
+"We began to explore the idea of using Linux, a free operating system that
+works well on older computers, when we learned of Microsoft's decision to
+discontinue support of its older operating systems like Windows 95<
+according to Slater, who is 'senior circuit rider' for the Low-Income
+Networking and Communications (LINC) Project at the Welfare Law Center.
+
+LINC protagonists say they had also been "troubled" by the frequent problems
+that occur for Windows users just by having Windows run on its own. "Giving
+a person who lives in a rural area an older computer with Windows seemed
+like we were just asking for trouble. We also attempted to identify similar
+projects but had limited success," says Slater. 
+
+LINC wanted to increase its ability to provide stable desktop systems using
+donated computers for board members and leaders of low-income led
+organizations that LINC serves. 
+
+"Our goal is to increase the ability of LINC Project partner groups to use
+open-source software to support their organizing work. We also wanted to
+document the project as much as we possibly could, so we could provide
+details of our experiences for others doing similar projects," LINC
+explains.
+
+LINC identified a partner in Grass Roots Organizing in Mexico, MO, and
+installed GNU/Linux on 10 computers used as stand-alone workstations in
+people's homes. GNU/Linux was also installed on a brand new stand-alone
+computer to work as the main computer in the GRO office.
+
+Links were built with the Mizzou Linux Users Group for ongoing local
+support.
+
+"We still have a long way to go before we can call this a completely
+successful project. After a period of a few months we will assess whether
+the board members are actually using the computers to communicate more
+effectively," said Slater.
+
+To view the daily journals on the project with GRO please visit the LINC
+Project Linux pages at <http://www.lincproject.org/toolkit/linux>
+
+NEED TO NETWORK
+===============
+
+Bala Pillai <bala@tamil.net>, who was earlier based in Malaysia and now in
+Sydney-Australia, is founder of Tamil Innaiyam (http://www.tamil.net), an
+organisation to promote the Tamil language worldwide. He points to the
+impact GNU/Linux is making in some distant areas of the Third World.
+
+Says Pillai: "The most interactive open source/Linux community in our time
+zone/Asia springs out of the Philippines. Primarily because the Filipino
+psyche is a more secure psyche, a more self-confident psyche. 
+
+"Folks who are self-confident worry about the future less, and allocate more
+time diagnosing and solving problems rather than echoing and re-echoing it.
+Filipinos are also more into sharing and online sharing -- we should look to
+more symbiosis with them," says he. 
+
+Pillai also notes that the Manila-based Miguel Paraz, whom he interacted
+with since 1996, is a key catalyst in the Filipino Linux community.
+"http://www.q-linux.com is a good starting point to get a feel for the key
+Open Source catalysts in the Philippines," says he. 
+
+Kuala Lumpur, Malaysia-based Dinesh who runs http://www.alphaque.com is
+another lead Open Source catalyst from the region, explains Pillai. "Do look
+for symbiosis opportunities there too," he suggests. 
+
+"I see lots of room for us to symbiosis together. For example, there is
+likely to be areas where we diagnosing, documenting, analyzing, coding or
+publicizing where there is over-duplication. If we coordinated ourselves and
+found out where our circles and priorities intersect , we could share this
+work and get fruits out faster," he adds.
+--
+Frederick Noronha * Freelance Journalist * Goa * India 832.409490 / 409783
+BYTESFORALL www.bytesforall.org  * GNU-LINUX http://linuxinindia.pitas.com
+Email fred@bytesforall.org * Mobile +9822 122436 (Goa) * Saligao Goa India
+Writing with a difference... on what makes *the* difference
+
+
+##########################################################################
+# Send submissions for comp.os.linux.announce to: cola@stump.algebra.com #
+# PLEASE remember a short description of the software and the LOCATION.  #
+# This group is archived at http://stump.algebra.com/~cola/              #
+##########################################################################
+
+
+------------------------------
+
+From: Frederick Noronha <fred@bytesforall.org>
+Subject: Attn programmers: support offered [FLOSS-Sarai Initiative]
+Date: 8 Sep 2002 01:25:45 GMT
+
+Dear friends,
+
+Can we manage to get some money into backing Free/Libre Open Source
+Software initiatives, that would help young volunteers out there to
+support their cash-strapped initiatives? 
+
+Sarai.net, a Delhi-based initiative under the CSDS (Centre for the Study
+of Developing Societies) has been solidly supportive of such an idea.
+
+Jeebesh Bagchi <jeebesh@sarai.net> sent in this offer recently. It could
+surely be of help particularly to college students and others wanting to
+make a break in Free Software/Open Source, but hamstrung by resources. 
+
+It might help if projects are initially kept small and definitely 
+workable, I guess. This is my own gut-level feeling, but maybe bigger
+initiatives which are clearly workable could also prove convincing. If
+such experiments prove useful, maybe there would be a good case for
+greater support to free software/open source developers in regions like
+ours. --FN
+
+
+========== Forwarded message ==========
+
+The Sarai Programme, Centre for the Study of Developing Societies, Delhi
+(www.sarai.net) invites applications for Support Grants to projects in the
+area of Free Software, Open Source Software and Social Usage of Software
+
+Sarai invites programmers (practictioners as well as students) to
+propose projects in the area of free and open source software applications
+relevant to educational, social and community needs.  We are looking for
+original ideas, as well as proposals to localize and adapt existing software
+and applications to South Asian conditions,
+
+For example - Desktops in Hindi, Open Office and Gimp in Hindi. Lighter
+versions of desktops like KDE, Innovations that creatively optimises older
+lower configuration machines, Linux documentation in Hindi, games using local
+context, etc.
+
+What is Sarai
+
+Sarai is a public initiative of media practitioners and scholars looking at
+media cultures and urban life. Sarai's interests are in the field of old and
+new media, information and communication technologies, free software, cinema,
+and urban space - its politics, built form, ecology, culture and history,
+with a strong commitment to making knowledge available in the public domain.
+It is a programme of the Centre for the Study of Developing Societies, Delhi.
+For more information visit www.sarai.net. Sarai is committed to promoting the
+free software and open source vision.
+
+Conditions:
+Applicants should be resident in India, and should have a bank account in any
+bank operating in India.
+
+These are support grants and grantees will be free to pursue their primary
+occupations, if any.
+
+Mail your project proposal, workplan and CV to both the following addresses:
+<application@sarai.net> with a copy to <fred@bytesforall.org>. Please mark
+your subjectline 'FLOSS (Free/Libre Open Source Software) Initiative'. 
+Also point out what you see as the relevance of your work, and how you
+plan to share the resultant software once finalised.
+
+Enquires: dak@sarai.net
+Last date for submission: October 15th, 2002.
+
+Note: Proposals from teams, partnerships, collectives, faculty are welcome,
+so long as the grant amount is administered by a single individual, and the
+funds are deposited in a single bank account in the name of an individual.
+
+=======================================================
+
+
+
+
+##########################################################################
+# Send submissions for comp.os.linux.announce to: cola@stump.algebra.com #
+# PLEASE remember a short description of the software and the LOCATION.  #
+# This group is archived at http://stump.algebra.com/~cola/              #
+##########################################################################
+
+
+------------------------------
+
+
+** FOR YOUR REFERENCE **
+
+The service address, to which questions about the list itself and requests
+to be added to or deleted from it should be directed, is:
+
+    Internet: Linux-Announce-Request@NEWS-DIGESTS.MIT.EDU
+
+You can submit announcements to be moderated via:
+
+    Internet: linux-announce@NEWS.ORNL.GOV
+
+Linux may be obtained via one of these FTP sites:
+    ftp.funet.fi				pub/Linux
+    tsx-11.mit.edu				pub/linux
+    sunsite.unc.edu				pub/Linux
+
+End of Linux-Announce Digest
+******************************

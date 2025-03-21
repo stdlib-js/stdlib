@@ -1,0 +1,57 @@
+From fork-admin@xent.com  Thu Jul 25 11:09:33 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A0698440DC
+	for <jm@localhost>; Thu, 25 Jul 2002 06:08:44 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 11:08:44 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6OMjZ412422 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 23:45:35 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 4187A294166; Wed, 24 Jul 2002 15:40:12 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from doofus.fnal.gov (doofus.fnal.gov [131.225.81.36]) by
+    xent.com (Postfix) with ESMTP id ADD4F29415F for <FoRK@xent.com>;
+    Wed, 24 Jul 2002 15:39:48 -0700 (PDT)
+Received: from alumni.rice.edu (localhost.localdomain [127.0.0.1]) by
+    doofus.fnal.gov (8.11.6/8.11.6) with ESMTP id g6OMdmG06093; Wed,
+    24 Jul 2002 17:39:48 -0500
+Message-Id: <3D3F2CB3.50006@alumni.rice.edu>
+From: Wayne Baisley <baisley@alumni.rice.edu>
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.0rc2)
+    Gecko/20020513 Netscape/7.0b1
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: Flatware or Road Kill? <FoRK@xent.com>
+Subject: Re: "Ouch. Ouch. Ouch. Ouch. Ouch...."(was Re: My brain hurts)
+References: <Pine.LNX.4.44.0207241609280.27125-100000@isolnetsux.techmonkeys.net>
+    <3D3F2784.2010303@barrera.org>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 24 Jul 2002 17:39:47 -0500
+
+> There are so many good musician jokes.
+
+Young Lutheran's Guide To The Orchestra
+
+Cheers,
+Wayne
+
+http://xent.com/mailman/listinfo/fork
+
+

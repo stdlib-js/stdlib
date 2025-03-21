@@ -1,0 +1,67 @@
+
+{{alias}}( obj, [options,] transform )
+    Inverts an object, such that keys become values and values become keys,
+    according to a transform function.
+
+    The transform function is provided three arguments:
+
+    - key: object key.
+    - value: object value corresponding to `key`.
+    - obj: the input object.
+
+    The value returned by a transform function should be a value which can be
+    serialized as an object key. Hence, beware when providing objects having
+    values which are themselves objects. The function relies on native object
+    serialization (`#toString`) when converting transform function return values
+    to keys.
+
+    Insertion order is not guaranteed, as object key enumeration is not
+    specified according to the ECMAScript specification. In practice, however,
+    most engines use insertion order to sort an object's keys, thus allowing for
+    deterministic inversion.
+
+    Parameters
+    ----------
+    obj: ObjectLike
+        Input object.
+
+    options: Object (optional)
+        Options.
+
+    options.duplicates: boolean (optional)
+        Boolean indicating whether to store keys mapped to duplicate values in
+        arrays. Default: `true`.
+
+    transform: Function
+        Transform function.
+
+    Returns
+    -------
+    out: Object
+        Inverted object.
+
+    Examples
+    --------
+    // Basic usage:
+    > function transform( key, value ) { return key + value; };
+    > var obj = { 'a': 'beep', 'b': 'boop' };
+    > var out = {{alias}}( obj, transform )
+    { 'abeep': 'a', 'bboop': 'b' }
+
+    // Duplicate values:
+    > function transform( key, value ) { return value; };
+    > obj = { 'a': 'beep', 'b': 'beep' };
+    > out = {{alias}}( obj, transform )
+    { 'beep': [ 'a', 'b' ] }
+
+    // Override duplicate values:
+    > obj = {};
+    > obj.a = 'beep';
+    > obj.b = 'boop';
+    > obj.c = 'beep';
+    > out = {{alias}}( obj, { 'duplicates': false }, transform )
+    { 'beep': 'c', 'boop': 'b' }
+
+    See Also
+    --------
+

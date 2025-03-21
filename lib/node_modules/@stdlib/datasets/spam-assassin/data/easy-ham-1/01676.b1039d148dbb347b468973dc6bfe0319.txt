@@ -1,0 +1,23 @@
+Return-Path: skip@pobox.com
+Delivery-Date: Fri Sep  6 23:39:48 2002
+From: skip@pobox.com (Skip Montanaro)
+Date: Fri, 6 Sep 2002 17:39:48 -0500
+Subject: [Spambayes] understanding high false negative rate
+In-Reply-To: <LNBBLJKPBEHFEDALKOLCIEJKBCAB.tim.one@comcast.net>
+References: <15737.2576.315460.956295@slothrop.zope.com>
+        <LNBBLJKPBEHFEDALKOLCIEJKBCAB.tim.one@comcast.net>
+Message-ID: <15737.11956.18745.619040@12-248-11-90.client.attbi.com>
+
+
+    >> > ##Remove: jeremy@alum.mit.edu##
+
+    Tim> Yuck: it got two 0.01's from embedding your email address at the
+    Tim> bottom here.
+
+Which suggests that tagging email addresses in To/CC headers should be
+handled differently than in message bodies?
+
+Skip
+
+
+

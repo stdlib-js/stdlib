@@ -1,0 +1,79 @@
+From ilug-admin@linux.ie  Fri Aug 23 11:07:47 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6F82C4416B
+	for <zzzz@localhost>; Fri, 23 Aug 2002 06:06:31 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Fri, 23 Aug 2002 11:06:31 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7MIE5Z19072 for
+    <zzzz-ilug@spamassassin.taint.org>; Thu, 22 Aug 2002 19:14:05 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id TAA15460; Thu, 22 Aug 2002 19:12:03 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from nwkea-mail-1.sun.com (nwkea-mail-1.sun.com [192.18.42.13])
+    by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id TAA15419 for
+    <ilug@linux.ie>; Thu, 22 Aug 2002 19:11:56 +0100
+Received: from sunire.Ireland.Sun.COM ([129.156.220.30]) by
+    nwkea-mail-1.sun.com (8.9.3+Sun/8.9.3) with ESMTP id LAA04778 for
+    <ilug@linux.ie>; Thu, 22 Aug 2002 11:11:20 -0700 (PDT)
+Received: from sionnach.ireland.sun.com (sionnach [129.156.220.28]) by
+    sunire.Ireland.Sun.COM (8.11.6+Sun/8.11.6/ENSMAIL,v2.2) with ESMTP id
+    g7MIBJd19492 for <ilug@linux.ie>; Thu, 22 Aug 2002 19:11:19 +0100 (BST)
+Received: from sionnach (localhost [127.0.0.1]) by
+    sionnach.ireland.sun.com (8.12.2+Sun/8.12.2) with ESMTP id g7MIBJdr004189
+    for <ilug@linux.ie>; Thu, 22 Aug 2002 19:11:19 +0100 (BST)
+Message-Id: <200208221811.g7MIBJdr004189@sionnach.ireland.sun.com>
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4
+To: ilug@linux.ie
+From: Albert White - SUN Ireland <albert.white@ireland.sun.com>
+Subject: Re: [ILUG] Sun Solaris..
+In-Reply-To: Your message of
+    "Thu, 22 Aug 2002 18:42:33 BST."
+    <Pine.LNX.4.44.0208221841070.28604-100000@dunlop.admin.ie.alphyra.com>
+Date: Thu, 22 Aug 2002 19:11:19 +0100
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+
+> On Thu, 22 Aug 2002, John P. Looney wrote:
+> >  Sun's hardware in general is more reliable,
+> ROFL. not in our experience.
+
+Well at least our Caps-Lock keys work:
+
+peter@staunton.ie said:
+> Another problem. I have a Dell branded keyboard and if I hit Caps-Lock
+> twice, the whole machine crashes (in Linux, not Windows) - even the on/
+> off switch is inactive, leaving me to reach for the power cable
+> instead.
+
+:-P
+
+bauwolf@indigo.ie said:
+> as if he wanted Solaris 9 for x86, he'd be waiting a bit
+erm... it runs Solaris x86 as standard...
+
+Cheers,
+~Al
+
+-- 
+Expressed in this posting are my opinions.  They are in no way related
+to opinions held by my employer, Sun Microsystems.
+Statements on Sun products included here are not gospel and may
+be fiction rather than truth.
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

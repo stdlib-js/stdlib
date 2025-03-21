@@ -1,0 +1,84 @@
+From crackmice-admin@crackmice.com  Wed Jul  3 12:07:20 2002
+Return-Path: <crackmice-admin@crackmice.com>
+Delivered-To: yyyy@localhost.labs.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix on SuSE Linux 8.0 (i386)) with ESMTP id D49AA14F8E6
+	for <jm@localhost>; Wed,  3 Jul 2002 12:04:17 +0100 (IST)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 03 Jul 2002 12:04:17 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g45BrUu04627;
+    Sun, 5 May 2002 12:53:30 +0100
+Received: from Bak ([211.21.114.159]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with SMTP id g44F6fu18806 for <crackmice@crackmice.com>;
+    Sat, 4 May 2002 16:06:41 +0100
+Received: from kimo by mail.sysnet.net.tw with SMTP id
+    aKCxLmcpkdDSy2c44jBk7; Mon, 21 Jan 2002 11:09:07 +0800
+Message-Id: <WKjTNmZb02DPr@mail.seeder.net.tw>
+From: ased@hotmail.com
+To: 8qwy709@dogma.slashnull.org
+Subject: to  the  heaven gjOQ1LUGEh3axIEp2anbbYD
+MIME-Version: 1.0
+X-Mailer: r0AkzpUU4cjo0KGo3lCruA5aS
+X-Priority: 3
+X-Msmail-Priority: Normal
+Sender: crackmice-admin@crackmice.com
+Errors-To: crackmice-admin@crackmice.com
+X-Beenthere: crackmice@crackmice.com
+X-Mailman-Version: 2.0.7
+Precedence: bulk
+Reply-To: crackmice@crackmice.com
+List-Unsubscribe: <http://crackmice.com/mailman/listinfo/crackmice>,
+    <mailto:crackmice-request@crackmice.com?subject=unsubscribe>
+List-Id: http://crackmice.com/ <crackmice.crackmice.com>
+List-Post: <mailto:crackmice@crackmice.com>
+List-Help: <mailto:crackmice-request@crackmice.com?subject=help>
+List-Subscribe: <http://crackmice.com/mailman/listinfo/crackmice>,
+    <mailto:crackmice-request@crackmice.com?subject=subscribe>
+List-Archive: <http://crackmice.com/pipermail/crackmice/>
+X-Original-Date: Sat, 4 May 2002 16:06:41 +0100
+Date: Sat, 4 May 2002 16:06:41 +0100
+Content-Type: multipart/related; type="multipart/alternative"; boundary="----=_NextPart_KclG2AeIezUiae9B4w"
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_KclG2AeIezUiae9B4w
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_KclG2AeIezUiae9B4wAA"
+
+
+------=_NextPart_KclG2AeIezUiae9B4wAA
+Content-Type: text/html;
+	charset="big5"
+Content-Transfer-Encoding: base64
+
+PGEgaHJlZj1odHRwOi8vaGxjLm5vLWlwLm9yZz4NCjxpbWcgc3JjPWh0dHA6Ly9ncm91cHMueWFo
+b28uY29tL2dyb3VwL3hpbnhpbnJlbi9maWxlcy93aF9zbWFsbF9hMi5naWYgYWx0PWh0dHA6Ly9n
+cm91cHMueWFob28uY29tL2dyb3VwL3hpbnhpbnJlbi9maWxlcy93aF9zbWFsbF9hMi5naWY+DQo8
+L2E+DQoNCjxhIGhyZWY9aHR0cHM6Ly9oYXBweS5yZWRpcmVjdG1lLm5ldC8+DQo8aW1nIHNyYz1o
+dHRwOi8vZ3JvdXBzLnlhaG9vLmNvbS9ncm91cC94aW54aW5yZW4vZmlsZXMvd2hfc21hbGxfYi5n
+aWYgYWx0PWh0dHA6Ly9ncm91cHMueWFob28uY29tL2dyb3VwL3hpbnhpbnJlbi9maWxlcy93aF9z
+bWFsbF9iLmdpZj4NCjwvYT4NCg0KPGEgaHJlZj1odHRwOi8vZm9yZXZlcnNwLmhvcHRvLm9yZy96
+aXJlYWw+DQo8aW1nIHNyYz1odHRwOi8vZ3JvdXBzLnlhaG9vLmNvbS9ncm91cC96aGVuc2hpMDEv
+ZmlsZXMvd29ybGRrbm93LmpwZyBhbHQ9aHR0cDovL2dyb3Vwcy55YWhvby5jb20vZ3JvdXAvemhl
+bnNoaTAxL2ZpbGVzL3dvcmxka25vdy5qcGc+DQo8L2E+DQoNCjxhIGhyZWY9aHR0cDovL3d3dy54
+Y2VscjguY29tL3ZpZGVvL2hjX3ZpZGVvLmh0bT4NCjxpbWcgc3JjPWh0dHA6Ly93d3cuYW5nZWxm
+aXJlLmNvbS84MHMvcGljOS94dWVhbi5naWYgYWx0PWh0dHA6Ly93d3cuYW5nZWxmaXJlLmNvbS84
+MHMvcGljOS94dWVhbi5naWY+DQo8L2E+DQoNCjxhIGhyZWY9aHR0cDovL3JvY2lvNjMuaG9wdG8u
+b3JnL2ZsYXNoPg0KPGltZyBzcmM9aHR0cDovL3d3dy5hbmdlbGZpcmUuY29tLzgwcy9waWM5L2Fs
+bGFjY2VwdC5naWYgYWx0PWh0dHA6Ly93d3cuYW5nZWxmaXJlLmNvbS84MHMvcGljOS9hbGxhY2Nl
+cHQuZ2lmPg0KPC9hPg0KDQo8YSBocmVmPWh0dHA6Ly9leGFtLmhvcHRvLm9yZy9zZWU+DQo8aW1n
+IHNyYz1odHRwOi8vd3d3LmFuZ2VsZmlyZS5jb20vODBzL3BpYzkvc2hvdWppZS5qcGcgYWx0PWh0
+dHA6Ly93d3cuYW5nZWxmaXJlLmNvbS84MHMvcGljOS9zaG91amllLmpwZz4NCjwvYT4NCg0KPGEg
+aHJlZj1odHRwczovL3RpYW5kaS5zeXRlcy5uZXQ+DQo8aW1nIHNyYz1odHRwOi8vd3d3LmFuZ2Vs
+ZmlyZS5jb20vODBzL3BpYzkvdGFpd2FuLmdpZiBhbHQ9aHR0cDovL3d3dy5hbmdlbGZpcmUuY29t
+Lzgwcy9waWM5L3RhaXdhbi5naWY+DQo8L2E+
+
+
+------=_NextPart_KclG2AeIezUiae9B4wAA--
+------=_NextPart_KclG2AeIezUiae9B4w--
+
+
+
+

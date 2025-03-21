@@ -1,0 +1,55 @@
+From fork-admin@xent.com  Wed Jul 24 14:05:49 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 661E1440CD
+	for <jm@localhost>; Wed, 24 Jul 2002 09:05:49 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 14:05:49 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6OD4h414235 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 14:04:43 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id DDFAD29414C; Wed, 24 Jul 2002 05:46:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from imo-d03.mx.aol.com (imo-d03.mx.aol.com [205.188.157.35]) by
+    xent.com (Postfix) with ESMTP id CBE37294148 for <fork@xent.com>;
+    Wed, 24 Jul 2002 05:45:12 -0700 (PDT)
+Received: from ThosStew@aol.com by imo-d03.mx.aol.com (mail_out_v32.21.)
+    id p.50.ece47e1 (1320); Wed, 24 Jul 2002 08:54:07 -0400 (EDT)
+From: ThosStew@aol.com
+Message-Id: <50.ece47e1.2a6ffd6f@aol.com>
+Subject: Re: My brain hurts
+To: joe@barrera.org, harley@corton.inria.fr
+Cc: fork@spamassassin.taint.org
+MIME-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"
+Content-Transfer-Encoding: 7bit
+X-Mailer: AOL 5.0 for Mac sub 40
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 24 Jul 2002 08:54:07 EDT
+
+
+In a message dated 7/23/2002 8:51:00 PM, joe@barrera.org writes:
+
+>Okay, here's a joke I *just* made up while I was driving my car at home:
+
+
+Joe, I think you need a new car with more leg room
+
+Tom
+http://xent.com/mailman/listinfo/fork
+
+

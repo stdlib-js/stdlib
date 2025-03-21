@@ -1,0 +1,36 @@
+Return-Path: ler@lerami.lerctr.org
+Delivery-Date: Sat Sep 14 04:51:57 2002
+Return-Path: <ssksbp@yahoo.com>
+Received: from gpwyo (slkcdslgw14PoolD234.slkc.uswest.net [65.103.229.234])
+	by lerami.lerctr.org (8.12.2/8.12.2/20020902/$Revision: 1.30 $) with SMTP id g8E9poE9011985
+	for <ler@lerctr.org>; Sat, 14 Sep 2002 04:51:52 -0500 (CDT)
+From: Isa Aydogan <ssksbp@yahoo.com>
+To: <ler@lerctr.org>
+Subject: Yeni sürümde
+Date: Sat, 14 Sep 2002 10:49:08 -0400
+X-Mailer: Microsoft Outlook Express 5.00.2919.6700
+Mime-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: base64
+Message-Id: <hkcdtsradxes@lerctr.org>
+X-Virus-Scanned: by amavisd-milter (http://amavis.org/)
+X-Status: 
+X-Keywords: 
+
+PGh0bWw+DQo8aGVhZD4NCjxtZXRhIGh0dHAtZXF1aXY9IkNvbnRlbnQtVHlwZSIgY29udGVu
+dD0idGV4dC9odG1sOyBjaGFyc2V0PXdpbmRvd3MtMTI1NCI+DQo8dGl0bGU+U01TVFIgbGls
+aHdtdXh2cnN5cWN3amh2dHR4dzwvdGl0bGU+PC9oZWFkPg0KPGJvZHk+PHA+PGZvbnQgZmFj
+ZT0iQXJpYWwiIHNpemU9IjQiPkRlZ2VybGkgU01TVFIga3VsbGFuaWNpbWl6PGJyPg0KPGh0
+bWw+DQpTTVMgcHJvZ3JhbWltaXog52VzaXRsaSBha3Nha2xpa2xhciBzZWJlYmkgaWxlIGt1
+bGxhbmlsYW1heiBoYWxlIGdlbG1pc3Rpci4gQnUgDQpzZWJlcHRlbiBkb2xheWkgeWVuaSBi
+aXIgcHJvZ3JhbSBoYXppcmxhbWFrIHpvcnVuZGEga2FsZGlrLiBQcm9ncmFtaSBhc2FnaWRh
+a2kgbGlua2kgDQprdWxsYW5hcmFrIGluZGlyZWJpbGlyc2luaXouIFByb2dyYW1pIGJpeiB2
+aXL8cyBrb250cm9s/G5kZW4gZ2XnaXJtaXMgYnVsdW5tYWt0YXlpei4NCkJ1IHllbmkgdmVy
+c2l5b25kYSBzbXMgaW4geWVyaW5lIHVsYXNtYSBoaXppIOdvayBkYWhhIGFydGlyaWxtaXN0
+aXIuIEF5cmljYSBzaW5pcnNpeiANCnZlIHRvcGx1IHNtcyBn9m5kZXJlYmlsaXJzaW5pei4g
+x29rIHlha2luZGEgbG9nbyB2ZSBtZWxvZGkgdHJhbnNmZXJpIGhpem1ldGltaXogDQphY2ls
+YWNha3Rpci4gU2l6aSBiaXIgc3VyZSBzaW5pcnNpeiBzbXNkZW4gbWFocnVtIGV0dGlnaW1p
+eiBpY2luIG96dXIgDQpkaWxlcml6LjwvZm9udD48YnI+DQo8YnI+PGZvbnQgZmFjZT0iQXJp
+YWwiIHNpemU9IjQiPjxhIGhyZWY9Imh0dHA6Ly93d3cuZ2FyYW50aXNtcy5jb20vc21zdHIu
+ZXhlIj5TTVNUUg0KVmVyc2l5b24gNy4zIHUgaW5kaXJtZWsgaedpbiBidXJheWEgdGlrbGF5
+aW5pejwvYT48L2ZvbnQ+PC9wPg0KPC9ib2R5Pg0KPC9odG1sPg0KDQo=

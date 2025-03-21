@@ -1,0 +1,105 @@
+From spamassassin-devel-admin@lists.sourceforge.net  Fri Sep  6 19:36:59 2002
+Return-Path: <spamassassin-devel-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 237E016F19
+	for <jm@localhost>; Fri,  6 Sep 2002 19:36:52 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 19:36:52 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g86HvgC18460 for <jm@jmason.org>; Fri, 6 Sep 2002 18:57:42 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17nNLs-0000Nw-00; Fri,
+    06 Sep 2002 10:57:04 -0700
+Received: from eclectic.kluge.net ([66.92.69.221]) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17nNLF-0007Vl-00 for
+    <spamassassin-devel@lists.sourceforge.net>; Fri, 06 Sep 2002 10:56:25
+    -0700
+Received: from eclectic.kluge.net (localhost [127.0.0.1]) by
+    eclectic.kluge.net (8.12.6/8.12.6) with ESMTP id g86HuKnP020150;
+    Fri, 6 Sep 2002 13:56:20 -0400
+Received: (from felicity@localhost) by eclectic.kluge.net
+    (8.12.6/8.12.6/Submit) id g86HuJsS020148; Fri, 6 Sep 2002 13:56:19 -0400
+From: Theo Van Dinter <felicity@kluge.net>
+To: bugzilla-daemon@hughes-family.org
+Cc: spamassassin-devel@example.sourceforge.net
+Subject: Re: [SAdev] [Bug 840] spam_level_char option change/removal
+Message-Id: <20020906175619.GC18326@kluge.net>
+References: <20020906170919.C128CA4C29@belphegore.hughes-family.org>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+    protocol="application/pgp-signature";
+    boundary="sHrvAb52M6C8blB9"
+Content-Disposition: inline
+In-Reply-To: <20020906170919.C128CA4C29@belphegore.hughes-family.org>
+User-Agent: Mutt/1.4i
+X-GPG-Keyserver: http://wwwkeys.pgp.net
+X-GPG-Keynumber: 0xE580B363
+X-GPG-Fingerprint: 75B1 F6D0 8368 38E7 A4C5  F6C2 02E3 9051 E580 B363
+Sender: spamassassin-devel-admin@example.sourceforge.net
+Errors-To: spamassassin-devel-admin@example.sourceforge.net
+X-Beenthere: spamassassin-devel@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-devel-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-devel@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Id: SpamAssassin Developers <spamassassin-devel.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-devel>
+X-Original-Date: Fri, 6 Sep 2002 13:56:19 -0400
+Date: Fri, 6 Sep 2002 13:56:19 -0400
+
+
+--sHrvAb52M6C8blB9
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+On Fri, Sep 06, 2002 at 10:09:19AM -0700, bugzilla-daemon@hughes-family.org=
+ wrote:
+> another (or would look terrible).  Let's just use a letter.  If
+> aesthetics are your concern, I think an "x" will look just fine.
+
+"x" is fine, but let's not take out the config option.  if people really
+want to have it be something else, we shouldn't hinder them.
+
+--=20
+Randomly Generated Tagline:
+"And the next time you consider complaining that running Lucid Emacs
+ 19.05 via NFS from a remote Linux machine in Paraguay doesn't seem to
+ get the background colors right, you'll know who to thank."
+ (By Matt Welsh)
+
+--sHrvAb52M6C8blB9
+Content-Type: application/pgp-signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE9eOxDAuOQUeWAs2MRAuH1AKD8heTyLbbAWWkpWyjY6k4JwKhOMgCg4C++
+rl8B1iVlvS/M0aFW6DubyQA=
+=BibY
+-----END PGP SIGNATURE-----
+
+--sHrvAb52M6C8blB9--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-devel mailing list
+Spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+
+

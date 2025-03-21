@@ -1,0 +1,15 @@
+
+{{alias}}
+    Maximum safe single-precision floating-point integer.
+
+    The maximum safe single-precision floating-point integer is given by
+    `2^24 - 1`.
+
+    Examples
+    --------
+    > {{alias}}
+    16777215
+
+    See Also
+    --------
+

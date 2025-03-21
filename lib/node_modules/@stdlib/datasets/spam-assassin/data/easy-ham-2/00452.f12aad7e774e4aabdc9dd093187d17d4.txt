@@ -1,0 +1,67 @@
+From ilug-admin@linux.ie  Mon Aug 19 12:10:30 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E473443C32
+	for <jm@localhost>; Mon, 19 Aug 2002 07:10:28 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 12:10:28 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7JB68619991 for
+    <jm-ilug@jmason.org>; Mon, 19 Aug 2002 12:06:08 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA01978; Mon, 19 Aug 2002 12:05:01 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from frank.physics.dcu.ie (IDENT:root@frank.Physics.DCU.IE
+    [136.206.20.12]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id MAA01936
+    for <ilug@linux.ie>; Mon, 19 Aug 2002 12:04:54 +0100
+Received: from olga.physics.dcu.ie (IDENT:root@olga.physics.dcu.ie
+    [136.206.20.3]) by frank.physics.dcu.ie (8.11.6/8.11.6) with ESMTP id
+    g7JB4rD02350 for <ilug@linux.ie>; Mon, 19 Aug 2002 12:04:53 +0100
+Received: from physics.dcu.ie
+    (IDENT:+du1mALA2BHc4+UCDd7k49yYl/Ice2YU@feynman.Physics.DCU.IE
+    [136.206.21.4]) by olga.physics.dcu.ie (8.11.6/8.11.6) with ESMTP id
+    g7JB4rg01507 for <ilug@linux.ie>; Mon, 19 Aug 2002 12:04:53 +0100
+Message-Id: <3D60D081.6070008@physics.dcu.ie>
+Date: Mon, 19 Aug 2002 12:03:29 +0100
+From: Felipe Soberon Vargas Prada <fso@physics.dcu.ie>
+Reply-To: fso@physics.dcu.ie
+Organization: Dublin City University
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:0.9.4)
+    Gecko/20011126 Netscape6/6.2.1
+X-Accept-Language: en-us
+MIME-Version: 1.0
+To: ilug@linux.ie
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Subject: [ILUG] hwclock
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Hello,
+I've got a small problem but still annoying. I upgraded from RH 7.1 to 
+RH 7.3 and everything looks ok except that the time is ahead by one 
+hour. I've been looking the man files for hwclock and options but it 
+simply doesn't work, it gives the following error from he shell as well 
+as from the startup while loading the kernel:  hwclock: ioctl() to 
+/dev/rtc to turn on update interrupts failed unexpectedly, errno=25: 
+Inappropriate ioctl for device.
+.... my solution at the time is to enter the setup of the PC and reduce 
+the time by one hour (awful!)
+Regards,
+Felipe
+PRL, DCU
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

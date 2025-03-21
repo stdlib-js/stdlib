@@ -1,0 +1,24 @@
+Return-Path: skip@pobox.com
+Delivery-Date: Fri Sep  6 16:19:30 2002
+From: skip@pobox.com (Skip Montanaro)
+Date: Fri, 6 Sep 2002 10:19:30 -0500
+Subject: [Spambayes] Deployment
+In-Reply-To: <200209061506.g86F6Qo14777@pcp02138704pcs.reston01.va.comcast.net>
+References: <200209061431.g86EVM114413@pcp02138704pcs.reston01.va.comcast.net>
+        <15736.50015.881231.510395@12-248-11-90.client.attbi.com>
+        <200209061506.g86F6Qo14777@pcp02138704pcs.reston01.va.comcast.net>
+Message-ID: <15736.51074.369911.905337@12-248-11-90.client.attbi.com>
+
+
+    >> Dunno about the other tools, but SpamAssassin is a breeze ...
+    >> SpamAssassin also adds other headers as well, which give you more
+    >> detail ...
+
+    Guido> Do you feel capable of writing such a tool?  It doesn't look too
+    Guido> hard.
+
+Sure, but at the moment I have to stop reading email for a few hours and do
+some real work. ;-) I'll see if I can modify GBayes.py suitably over the
+weekend.
+
+Skip

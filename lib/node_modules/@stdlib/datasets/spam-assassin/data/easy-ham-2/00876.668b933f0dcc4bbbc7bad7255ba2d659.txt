@@ -1,0 +1,87 @@
+From fork-admin@xent.com  Thu Jul 25 11:09:51 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9D890440D2
+	for <jm@localhost>; Thu, 25 Jul 2002 06:09:07 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 11:09:07 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6P07Z416420 for <jm@jmason.org>;
+    Thu, 25 Jul 2002 01:07:35 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 4FD5B29415E; Wed, 24 Jul 2002 17:06:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from localhost.localdomain (pm3-8.sba1.netlojix.net
+    [207.71.218.152]) by xent.com (Postfix) with ESMTP id 8970F29414D for
+    <fork@xent.com>; Wed, 24 Jul 2002 17:05:20 -0700 (PDT)
+Received: (from dave@localhost) by maltesecat (8.8.7/8.8.7a) id RAA07560;
+    Wed, 24 Jul 2002 17:06:49 -0700
+Message-Id: <200207250006.RAA07560@maltesecat>
+To: fork@spamassassin.taint.org
+Subject: Re: [Baseline] Raising chickens the high-tech way
+In-Reply-To: Message from fork-request@xent.com of
+    "Wed, 24 Jul 2002 14:35:03 PDT."
+    <20020724213503.29233.28244.Mailman@lair.xent.com>
+From: Dave Long <dl@silcom.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 24 Jul 2002 17:06:49 -0700
+
+
+
+> > Unless your parents were selectively bred like livestock to produce you, 
+> > I don't think you can make that case...  :-)
+>
+> I'm saying that my parents selected each other, and that they did so
+> because (among other reasons) each wanted the other's genes to be
+> mixed with their own in the offspring that they were planning.
+>
+> What does it matter that they were selecting to produce their own
+> offspring, rather than the offspring of two unrelated animals?
+
+That doesn't matter.  What does matter
+is that they were going on phenotypes,
+and didn't engineer the genetics.  That
+example makes a good case for natural
+selection, but not for artificial.
+
+(do "married people live longer" because
+of the benefits of matrimony, or because
+acceptable health is one of the qualities
+selected for in spouses?)
+
+Of course, if there are FoRKs with six
+or fewer biological great grandparents
+(or who are offspring of Wilt) I should
+eat my words; otherwise, the micro/macro
+distinction seems much more relevant.
+
+-Dave
+
+> I guess that the reason that I disagree is that some groups arguing
+> against any checks on genetic engineering use that same argument -
+> "we've been doing it since prehistory, so we don't need to apply any
+> caution today".
+
+One can also view that argument as a case
+for checks: livestock owners have, over a
+period of millenia, altered the genetics
+of their herds to be dumber, meatier, and
+more tolerant of industrial living, so if
+caution is in order, they are some of the
+least likely people to volunteer it.
+http://xent.com/mailman/listinfo/fork
+
+

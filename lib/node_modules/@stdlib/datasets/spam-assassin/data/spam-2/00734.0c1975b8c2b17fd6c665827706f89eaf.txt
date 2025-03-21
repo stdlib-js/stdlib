@@ -1,0 +1,154 @@
+From steveadler@allexecs.com  Mon Jul 22 18:43:50 2002
+Return-Path: <steveadler@allexecs.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id ACCC5440CD
+	for <jm@localhost>; Mon, 22 Jul 2002 13:43:47 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:43:47 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MHQP403415 for
+    <jm-cv@jmason.org>; Mon, 22 Jul 2002 18:26:27 +0100
+Received: from allexecs.com ([211.167.175.17]) by webnote.net
+    (8.9.3/8.9.3) with ESMTP id NAA23418 for <jm-cv@jmason.org>;
+    Sat, 20 Jul 2002 13:04:41 +0100
+Received: from allexecs.com (mail [127.0.0.1]) by allexecs.com
+    (8.12.2/8.12.2) with SMTP id g6I2lAMt030846 for <jm-cv@jmason.org>;
+    Thu, 18 Jul 2002 10:47:10 +0800
+Message-Id: <200207180247.g6I2lAMt030846@allexecs.com>
+Date: Thu, 18 Jul 2002 10:47:10 +0800
+From: Steve Adler <steveadler@allexecs.com>
+Subject: Proven way to get a job....
+To: yyyy-cv@spamassassin.taint.org
+MIME-Version: 1.0
+X-Cidl: 5625291J
+Content-Type: multipart/mixed; boundary="----ack1234"
+
+
+
+------ack1234
+Content-Type: multipart/alternative; boundary="----alt_border_1"
+
+------alt_border_1
+Content-Type: text/plain; charset="ISO-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Greetings!
+
+One of the best ways land a new job quickly, especially in a 
+tight job market, is to email your resume to as many 
+recruiters as possible that work in your area and specialize
+in people with your skills.
+
+However, finding these recruiters and sending them each an 
+email can be an enormous amount of work. Many have 
+successfully used ResumeMailman.com to email their resume to
+1000's of these recruiters instantly!
+
+This service has exceptional recruiter targeting, long 
+standing experience, and a great reputation with a huge group
+of quality recruiters.
+
+ResumeMailman network recruiters have connections to tons
+of unadvertised jobs. Your resume is instantly emailed to 1000's
+of recruiters in your selected areas, specializing in your 
+selected skill sets.
+
+The whole process can be completed in about 10 minutes flat!
+You can even get a free confidential email address with your
+order AND receive a contact list of all the recruiters who
+received your resume!
+
+Just check out: 
+http://www.allexecs.com/offers/deal/02-07-17-1.html - it's easy.
+
+Since 1998 ResumeMailman.com's resume distribution engine has
+helped tens of 1000's of people distribute their resume and 
+get jobs.  Why not let them do the same for you.
+
+Sincerely,
+
+
+Steve Adler
+steveadler@allexecs.com
+
+
+=========================================================
+ 
+The staff of AllExecs.com have years of recruiting 
+experience and may from time to time send you a review of 
+career tips and tools that have helped others in their job 
+search. If you'd rather not receive these reviews go to
+http://www.allexecs.com/unsubscribe
+
+=========================================================
+------alt_border_1
+Content-Type: text/html; charset="ISO-8859-1"
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Allexecs.com</title>
+</head>
+
+<body>
+
+<p><font face="Courier New" size="2">Greetings!<br>
+<br>
+One of the best ways land a new job quickly, especially in a<br>
+tight job market, is to email your resume to as many<br>
+recruiters as possible that work in your area and specialize<br>
+in people with your skills.<br>
+<br>
+However, finding these recruiters and sending them each an<br>
+email can be an enormous amount of work. Many have<br>
+successfully used ResumeMailman.com to email their resume to<br>
+1000's of these recruiters instantly!<br>
+<br>
+This service has exceptional recruiter targeting, long&nbsp;<br>
+standing experience, and a great reputation with a huge group<br>
+of quality recruiters.<br>
+<br>
+ResumeMailman network recruiters have connections to tons<br>
+of unadvertised jobs. Your resume is instantly emailed to 1000's<br>
+of recruiters in your selected areas, specializing in your<br>
+selected skill sets.<br>
+<br>
+The whole process can be completed in about 10 minutes flat!<br>
+You can even get a free confidential email address with your<br>
+order AND receive a contact list of all the recruiters who<br>
+received your resume!<br>
+<br>
+Just check out <a href="http://www.allexecs.com/offers/deal/02-07-17-2.html"> http://www.resumemailman.com</a> - it's easy.<br>
+<br>
+Since 1998 ResumeMailman.com's resume distribution engine has<br>
+helped tens of 1000's of people distribute their resume and<br>
+get jobs.  Why not let them do the same for you.<br>
+<br>
+Sincerely,<br>
+<br>
+<br>
+Steve Adler<br>
+steveadler@allexecs.com<br>
+<br>
+<br>
+=========================================================<br>
+<br>
+The staff of AllExecs.com have years of recruiting&nbsp;<br>
+experience and may from time to time send you a review of<br>
+career tips and tools that have helped others in their job<br>
+search. If you'd rather not receive these reviews go to<br>
+<a href="http://www.allexecs.com/unsubscribe">http://www.allexecs.com/unsubscribe</a><br>
+<img src="http://www.allexecs.com/offers/images/02-07-17-2.gif">
+<br>
+=========================================================</font></p>
+
+</body>
+
+</html>
+------alt_border_1--
+------ack1234--
+
+

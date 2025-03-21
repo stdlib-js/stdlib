@@ -1,0 +1,102 @@
+From fork-admin@xent.com  Mon Sep 30 13:52:46 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id D83C616F7E
+	for <jm@localhost>; Mon, 30 Sep 2002 13:48:39 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 30 Sep 2002 13:48:39 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8S6XBg17611 for <jm@jmason.org>;
+    Sat, 28 Sep 2002 07:33:12 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id B35872940A2; Fri, 27 Sep 2002 23:29:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from pimout2-ext.prodigy.net (pimout2-ext.prodigy.net
+    [207.115.63.101]) by xent.com (Postfix) with ESMTP id 31DA329409A for
+    <FoRK@xent.com>; Fri, 27 Sep 2002 23:20:01 -0700 (PDT)
+Received: from MAX (adsl-64-171-27-180.dsl.sntc01.pacbell.net
+    [64.171.27.180]) by pimout2-ext.prodigy.net (8.12.3 da nor stuldap/8.12.3)
+    with ESMTP id g8S4FoI7444696 for <FoRK@xent.com>; Sat, 28 Sep 2002
+    00:15:59 -0400
+From: "Max Dunn" <maxdunn@siliconpublishing.com>
+To: "'FoRK'" <FoRK@xent.com>
+Subject: RE: OSCOM Berkeley report: Xopus, Bitflux, Plone, Xoops
+Message-Id: <000001c266a5$b5ba5600$6401a8c0@MAX>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.3416
+Importance: Normal
+In-Reply-To: <AMEPKEBLDJJCCDEJHAMIKEHBFIAA.ejw@cse.ucsc.edu>
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 27 Sep 2002 21:15:36 -0700
+
+I attended the same conference, and was impressed by a few systems that
+Jim didn't mention. In terms of CMS, the following all had apparently
+been used in some fairly large implementations and looked like some
+pretty strong competition to commercial systems:
+- Midgard, http://www.midgard-project.org/ , a PHP-based content
+management framework that with other programs combines to be a full CMS
+- Redhat CCM CMS, Java-based: http://www.spamassassin.taint.org/software/ccm/cms/
+- OpenCMS, Java-based: http://www.opencms.org
+
+There was agreement that usability has not generally been an open source
+strength, but both Plone and Xopus represented some real movement
+towards improving that situation.
+
+I was impressed by the spectrum of perspectives on XML. Some took for
+granted that XSLT was relevant to content management, others took it
+just as for granted that XSLT was irrelevant and seemed happy to ignore
+XML almost completely. 
+
+I attended realizing that "content management" is generally used to
+apply to *Web* content management, but I was still a bit shocked how
+completely out of scope document management was (almost no consideration
+of the potential print/PDF dimension to content other than the
+occasional "...and you can use FOP to make PDF" as if that was
+functional): this seems more the case in open source content management
+than in commercial content management, and probably makes XML easier to
+ignore (if HTML is the be-all and end-all of the output...).
+
+The honesty was refreshing, Phil Suh complained about the state of
+current tools (both open source and commercial), and I wish I'd written
+down what he said, something like "it sucks so extremely, it sucks so
+widely, and it is so generally sucking, that it seems sometimes there is
+no hope." For a moment there was contemplation that perhaps commercial
+systems scaled so well that the commercial "big boys" were really much
+more functional than open source, until someone pointed out, "OK, take
+some average blog software, spend $500,000 on the rollout... it'll scale
+pretty well." Another quote (citing Brendan Quinn): "content management
+problems are either trivial or impossible."
+
+Mac OS X is getting popular, of the laptops there it was an even 1/3
+each of Mac, Linux, Windows.
+
+I am sure it wasn't news to Jim, but I can't wait to try Subversion, a
+CVS replacement that supports some of the newer features of WebDAV:
+http://subversion.tigris.org/
+
+I'm also eager to try Xopus, I hope the developers make it back home
+safely, they said they'd only been in America four days but were already
+homeless...
+
+Max
+
+
+

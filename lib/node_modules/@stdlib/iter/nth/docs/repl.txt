@@ -1,0 +1,29 @@
+
+{{alias}}( iterator, n )
+    Returns the nth iterated value.
+
+    If `n` exceeds the total number of iterations, the function returns
+    `undefined`.
+
+    Parameters
+    ----------
+    iterator: Object
+        Input iterator over which to iterate.
+
+    n: integer
+        Iteration number.
+
+    Returns
+    -------
+    v: any
+        The nth iterated value.
+
+    Examples
+    --------
+    > var arr = {{alias:@stdlib/array/to-iterator}}( [ 0, 0, 1, 0, 0 ] );
+    > var v = {{alias}}( arr, 3 )
+    1
+
+    See Also
+    --------
+

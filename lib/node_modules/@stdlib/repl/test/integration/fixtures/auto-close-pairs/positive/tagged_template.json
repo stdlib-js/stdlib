@@ -1,0 +1,62 @@
+{
+  "expression": "foo`",
+  "cursor": 3,
+  "ast": {
+    "type": "Program",
+    "start": 0,
+    "end": 4,
+    "body": [
+      {
+        "type": "ExpressionStatement",
+        "start": 0,
+        "end": 4,
+        "expression": {
+          "type": "TaggedTemplateExpression",
+          "start": 0,
+          "end": 4,
+          "tag": {
+            "type": "Identifier",
+            "start": 0,
+            "end": 3,
+            "name": "foo"
+          },
+          "quasi": {
+            "type": "TemplateLiteral",
+            "start": 3,
+            "end": 4,
+            "expressions": [
+              {
+                "type": "Identifier",
+                "start": 4,
+                "end": 4,
+                "name": "✖"
+              }
+            ],
+            "quasis": [
+              {
+                "type": "TemplateElement",
+                "start": 4,
+                "end": 4,
+                "value": {
+                  "raw": ""
+                },
+                "tail": false
+              },
+              {
+                "type": "TemplateElement",
+                "start": 4,
+                "end": 4,
+                "value": {
+                  "cooked": "",
+                  "raw": ""
+                },
+                "tail": true
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "sourceType": "script"
+  }
+}

@@ -1,0 +1,48 @@
+From rssfeeds@jmason.org  Mon Oct  7 12:04:59 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 3C3C216F1C
+	for <jm@localhost>; Mon,  7 Oct 2002 12:03:35 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 07 Oct 2002 12:03:35 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9780DK23205 for
+    <jm@jmason.org>; Mon, 7 Oct 2002 09:00:14 +0100
+Message-Id: <200210070800.g9780DK23205@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: diveintomark <rssfeeds@spamassassin.taint.org>
+Subject: Accessibility watershed?
+Date: Mon, 07 Oct 2002 08:00:13 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://diveintomark.org/archives/2002/10/06.html#accessibility_watershed
+Date: 2002-10-06T23:41:43-05:00
+
+_Law.com_: Suit Over Airlines' Web Sites Tests Bounds of ADA[1]. [via Slashdot: 
+Blind User Sues Southwest Over Web Site, Cites ADA[2]] 
+
+    Gumson and a Miami Beach, Fla.- based disability rights group, Access Now, 
+    filed lawsuits in U.S. District Court in Miami in June and July against 
+    Dallas- based Southwest and Dallas-based American Airlines under the 
+    Americans with Disabilities Act. They are doing so under an untested legal 
+    theory. Namely, that ADA provisions on the accessibility of public 
+    accommodations to the disabled apply to Internet Web sites just as they do 
+    to brick-and-mortar facilities like movie theaters and department stores. 
+
+Five months ago, I said[3] &#8220;within the next 12 months, all web authoring 
+tools will fully embrace CSS, accessibility, and web standards. And I mean 
+fully, inside and out, as Macromedia appears to have done here [with 
+Dreamweaver MX]. Those tools that do not will simply fall by the wayside. This 
+is the new baseline.&#8221; Seven months to go on that prediction. Tick tock, 
+tick tock...
+
+
+
+[1] http://www.law.com/servlet/ContentServer?pagename=OpenMarket/Xcelerate/View&c=LawArticle&cid=1032128683422&t=LawArticleTech
+[2] http://slashdot.org/article.pl?sid=02/10/06/2340204
+[3] http://diveintomark.org/archives/2002/05/02.html#the_new_baseline
+    dive into mark, May 2, 2002: 
+
+

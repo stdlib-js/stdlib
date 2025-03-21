@@ -1,0 +1,16 @@
+{
+  "order": "column-major",
+  "trans": "no-transpose",
+  "diag": "non-unit",
+  "uplo": "lower",
+  "strideX": 1,
+  "offsetA": 0,
+  "offsetX": 0,
+  "LDA": 3,
+  "strideA1": 1,
+  "strideA2": 3,
+  "N": 3,
+  "A": [ 1.0, 2.0, 3.0, 0.0, 4.0, 5.0, 0.0, 0.0, 6.0 ],
+  "x": [ 1.0, 2.0, 3.0 ],
+  "x_out": [ 1.0, 10.0, 31.0 ]
+}

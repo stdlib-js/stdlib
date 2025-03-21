@@ -1,0 +1,67 @@
+From fork-admin@xent.com  Mon Aug 26 19:34:24 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 371FA44155
+	for <jm@localhost>; Mon, 26 Aug 2002 14:34:23 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 19:34:23 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7QIY4Z04572 for <jm@jmason.org>;
+    Mon, 26 Aug 2002 19:34:04 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id DAEAB29417D; Mon, 26 Aug 2002 11:29:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from cats.ucsc.edu (cats-mx2.ucsc.edu [128.114.129.35]) by
+    xent.com (Postfix) with ESMTP id 3657C29417B for <FoRK@xent.com>;
+    Mon, 26 Aug 2002 11:29:00 -0700 (PDT)
+Received: from Tycho (dhcp-63-177.cse.ucsc.edu [128.114.63.177]) by
+    cats.ucsc.edu (8.10.1/8.10.1) with SMTP id g7QIULg21491 for
+    <FoRK@xent.com>; Mon, 26 Aug 2002 11:30:21 -0700 (PDT)
+From: "Jim Whitehead" <ejw@cse.ucsc.edu>
+To: "FoRK" <FoRK@xent.com>
+Subject: How unlucky can you get?
+Message-Id: <AMEPKEBLDJJCCDEJHAMIOECLFFAA.ejw@cse.ucsc.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4133.2400
+Importance: Normal
+X-Ucsc-Cats-Mailscanner: Found to be clean
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 26 Aug 2002 11:28:11 -0700
+
+So, last night around 5:30AM I'm woken up by a loud *craaack*, followed by
+one of the most dreaded sounds a homeowner ever hears: vast quantities of
+water spilling onto the floor. The water is coming from the bathroom, the
+toilet specifically. Turns out the water cistern on the top of the toilet
+had cracked down the side, and was spilling out all the water.
+
+So, after shutting off the water and mopping up, I was left to ponder what
+are the odds of having mechanical failure of a large rectangular porcelain
+bowl, in the absence of any visible stressors (like someone striking it with
+a sledgehammer)? We hadn't done anything unusual to the toilet in the recent
+past -- just normal use. I've *never* heard of this happening to anyone I
+know. The guts, yeah, they fail all the time. But the storage bowl -- never.
+
+Geesh.
+
+- Jim
+
+http://xent.com/mailman/listinfo/fork
+

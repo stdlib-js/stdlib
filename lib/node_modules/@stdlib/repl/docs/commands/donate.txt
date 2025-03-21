@@ -1,0 +1,11 @@
+
+donate()
+    Prints donation information.
+
+    Examples
+    --------
+    > donate()
+
+    See Also
+    --------
+    contributors, help

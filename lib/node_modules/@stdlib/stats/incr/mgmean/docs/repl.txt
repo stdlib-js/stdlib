@@ -1,0 +1,45 @@
+
+{{alias}}( W )
+    Returns an accumulator function which incrementally computes a moving
+    geometric mean.
+
+    The `W` parameter defines the number of values over which to compute the
+    moving geometric mean.
+
+    If provided a value, the accumulator function returns an updated moving
+    geometric mean. If not provided a value, the accumulator function returns
+    the current moving geometric mean.
+
+    As `W` values are needed to fill the window buffer, the first `W-1` returned
+    values are calculated from smaller sample sizes. Until the window is full,
+    each returned value is calculated from all provided values.
+
+    Parameters
+    ----------
+    W: integer
+        Window size.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}( 3 );
+    > var v = accumulator()
+    null
+    > v = accumulator( 2.0 )
+    2.0
+    > v = accumulator( 5.0 )
+    ~3.16
+    > v = accumulator( 3.0 )
+    ~3.11
+    > v = accumulator( 5.0 )
+    ~4.22
+    > v = accumulator()
+    ~4.22
+
+    See Also
+    --------
+

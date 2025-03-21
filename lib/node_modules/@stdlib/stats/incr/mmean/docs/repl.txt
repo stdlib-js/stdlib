@@ -1,0 +1,45 @@
+
+{{alias}}( W )
+    Returns an accumulator function which incrementally computes a moving
+    arithmetic mean.
+
+    The `W` parameter defines the number of values over which to compute the
+    moving mean.
+
+    If provided a value, the accumulator function returns an updated moving
+    mean. If not provided a value, the accumulator function returns the current
+    moving mean.
+
+    As `W` values are needed to fill the window buffer, the first `W-1` returned
+    values are calculated from smaller sample sizes. Until the window is full,
+    each returned value is calculated from all provided values.
+
+    Parameters
+    ----------
+    W: integer
+        Window size.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}( 3 );
+    > var mu = accumulator()
+    null
+    > mu = accumulator( 2.0 )
+    2.0
+    > mu = accumulator( -5.0 )
+    -1.5
+    > mu = accumulator( 3.0 )
+    0.0
+    > mu = accumulator( 5.0 )
+    1.0
+    > mu = accumulator()
+    1.0
+
+    See Also
+    --------
+

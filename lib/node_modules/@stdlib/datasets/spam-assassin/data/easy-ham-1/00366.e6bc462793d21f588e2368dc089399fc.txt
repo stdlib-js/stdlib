@@ -1,0 +1,85 @@
+From fork-admin@xent.com  Thu Aug 29 11:27:33 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 074EC43F99
+	for <jm@localhost>; Thu, 29 Aug 2002 06:27:33 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:27:33 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7TASnZ08263 for <jm@jmason.org>;
+    Thu, 29 Aug 2002 11:28:49 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 7A1BF2940C4; Thu, 29 Aug 2002 03:26:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mandark.labs.netnoteinc.com (unknown [212.2.188.179]) by
+    xent.com (Postfix) with ESMTP id 00B5C294099 for <fork@xent.com>;
+    Thu, 29 Aug 2002 03:25:11 -0700 (PDT)
+Received: from phobos.labs.netnoteinc.com (phobos.labs.netnoteinc.com
+    [192.168.2.14]) by mandark.labs.netnoteinc.com (8.11.6/8.11.6) with ESMTP
+    id g7TARC502451; Thu, 29 Aug 2002 11:27:12 +0100
+Received: by phobos.labs.netnoteinc.com (Postfix, from userid 500) id
+    93A1F43F99; Thu, 29 Aug 2002 06:24:44 -0400 (EDT)
+Received: from phobos (localhost [127.0.0.1]) by
+    phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8EA5933D8D;
+    Thu, 29 Aug 2002 11:24:44 +0100 (IST)
+To: Gary Lawrence Murphy <garym@canada.com>
+Cc: harley@argote.ch (Robert Harley), fork@spamassassin.taint.org
+Subject: Re: Java is for kiddies
+In-Reply-To: Message from Gary Lawrence Murphy <garym@canada.com> of
+    "28 Aug 2002 15:06:39 EDT."
+    <m2vg5u3irk.fsf@maya.dyndns.org>
+From: yyyy@spamassassin.taint.org (Justin Mason)
+X-GPG-Key-Fingerprint: 0A48 2D8B 0B52 A87D 0E8A  6ADD 4137 1B50 6E58 EF0A
+X-Habeas-Swe-1: winter into spring
+X-Habeas-Swe-2: brightly anticipated
+X-Habeas-Swe-3: like Habeas SWE (tm)
+X-Habeas-Swe-4: Copyright 2002 Habeas (tm)
+X-Habeas-Swe-5: Sender Warranted Email (SWE) (tm). The sender of this
+X-Habeas-Swe-6: email in exchange for a license for this Habeas
+X-Habeas-Swe-7: warrant mark warrants that this is a Habeas Compliant
+X-Habeas-Swe-8: Message (HCM) and not spam.  Please report use of this
+X-Habeas-Swe-9: mark in spam to <http://www.habeas.com/report/>.
+Message-Id: <20020829102444.93A1F43F99@phobos.labs.netnoteinc.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 29 Aug 2002 11:24:39 +0100
+
+
+Gary Lawrence Murphy said:
+
+> I envy some of those posting to this list.  I've been in business for
+> 24 years and I haven't yet had the luxury of writing every line of
+> code for any project. We are always coerced by budgets and time to
+> maximize the amount of work done elsewhere.  
+
+For consultancy, integration or open source work, sure, perl, python or
+java with free use of external libs makes a lot of sense IMO.
+
+I should note that normally when I've used C or C++ in the past, it's
+dictated by the fact that I would be working on a commercial product,
+written from the ground up, where the code you're generating is important
+IP for the company; in this case, using a third-party lib often is not an
+option, or would be a PITA licensing-wise.
+
+Also, cutting out third-party dependencies can reduce the risk of "oops,
+there goes the company that makes that library I depend on, now to shop
+around for something vaguely similar, figure out what bugs it's got,
+rewrite my code to use the new API, and hope for the best".
+
+This can be a *very* big deal, for obvious reasons ;)    Open source
+knockers should note that this is not a problem when using LGPL'd libs ;)
+
+--j.
+

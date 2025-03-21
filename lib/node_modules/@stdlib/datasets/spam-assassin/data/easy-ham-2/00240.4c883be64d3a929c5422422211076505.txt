@@ -1,0 +1,83 @@
+From ilug-admin@linux.ie  Tue Aug  6 11:50:36 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BF0E4441D9
+	for <jm@localhost>; Tue,  6 Aug 2002 06:48:07 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:48:07 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g72Jd1v09868 for
+    <jm-ilug@jmason.org>; Fri, 2 Aug 2002 20:39:01 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id UAA25649; Fri, 2 Aug 2002 20:36:52 +0100
+Received: from mail.magicgoeshere.com (nw152-60.indigo.ie [194.125.152.60]
+    (may be forged)) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id UAA25616
+    for <ilug@linux.ie>; Fri, 2 Aug 2002 20:36:46 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host nw152-60.indigo.ie
+    [194.125.152.60] (may be forged) claimed to be mail.magicgoeshere.com
+Received: from bagend.magicgoeshere.com (ts14-119.dublin.indigo.ie
+    [194.125.175.119]) by mail.magicgoeshere.com (Postfix) with ESMTP id
+    5FE44F9B4 for <ilug@linux.ie>; Fri,  2 Aug 2002 20:21:29 +0100 (IST)
+Received: by bagend.magicgoeshere.com (Postfix, from userid 501) id
+    0638A3DBF1; Fri,  2 Aug 2002 20:40:10 +0100 (IST)
+Date: Fri, 2 Aug 2002 20:40:10 +0100
+From: Niall O Broin <niall@linux.ie>
+To: ILUG <ilug@linux.ie>
+Subject: Re: [ILUG] LCD monitors and linux
+Message-Id: <20020802194010.GC2530@bagend.makalumedia.com>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: Niall O Broin <niall@linux.ie>,
+	ILUG <ilug@linux.ie>
+References: <20020802172122.A19980@Hobbiton.cod.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20020802172122.A19980@Hobbiton.cod.ie>
+User-Agent: Mutt/1.3.27i
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Fri, Aug 02, 2002 at 05:21:22PM +0100, Conor Daly wrote:
+
+> My 17" CRT monitor having drowned in a flood (10cm squared of burned 
+> circuit board URGH!) , I'm thinking of a 15" LCD as a replacement.  
+> What with me going to the continent and all next week, I might wait and 
+> buy one there (for a reasonable price (Dave Neary!  Any good sources?)).
+
+Conor - it's a rather large continent - people might need to know where you
+are going to suggest sources. And if you're buying abroad, make sure you get
+to test it - many places won't have facilities for you to do that.
+
+> Question is: CAn I just plug in _any_ lcd monitor and expect it to work?  
+> Are there special incantations needed for XFree86 to work.  Needless to
+> say, it'll be a bit difficult to bring it back to the shop once I'm home 
+> in Dublin and find it doesn't work!
+
+Any monitor should just work - they all have VGA connectors and any half
+decent brand will be know about by XFree setup programs in modern
+distributions. However, if you have the budget (insurance paying for the
+dead monitor, perhaps ? - and WHERE was your monitor that it got caught in a
+flood ?) getting a monitor with a DVI input is best. Of course, you'll need
+a DVI out video card then, too. DVI provides a much better picture than VGA
+because it removes the analog stage - basically DVI gives you a direct
+connection from video ram pixels to monitor pixels - the best pictures I've
+ever seen on a computer is on my notebook screen at 1400x1050 (which doesn't
+use DVI, but an internal connection which has the same effect). Brand wise,
+I like Iiyama a lot and I think they may have a Europe wide warranty.
+
+
+
+Niall
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

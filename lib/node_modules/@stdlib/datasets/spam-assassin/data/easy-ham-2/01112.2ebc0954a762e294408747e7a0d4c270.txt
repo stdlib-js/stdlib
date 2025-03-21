@@ -1,0 +1,64 @@
+From fork-admin@xent.com  Wed Aug 21 18:16:18 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4FC0843C36
+	for <jm@localhost>; Wed, 21 Aug 2002 13:16:14 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 21 Aug 2002 18:16:14 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7LHH8Z02989 for <jm@jmason.org>;
+    Wed, 21 Aug 2002 18:17:08 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 5A90A29417A; Wed, 21 Aug 2002 10:12:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mandark.labs.netnoteinc.com (unknown [212.2.178.26]) by
+    xent.com (Postfix) with ESMTP id 6B5AF294162 for <fork@xent.com>;
+    Wed, 21 Aug 2002 10:11:34 -0700 (PDT)
+Received: from phobos.labs.netnoteinc.com (phobos.labs.netnoteinc.com
+    [192.168.2.14]) by mandark.labs.netnoteinc.com (8.11.6/8.11.6) with ESMTP
+    id g7LHD4p06600; Wed, 21 Aug 2002 18:13:04 +0100
+Received: by phobos.labs.netnoteinc.com (Postfix, from userid 500) id
+    9972E43C32; Wed, 21 Aug 2002 13:10:34 -0400 (EDT)
+Received: from phobos (localhost [127.0.0.1]) by
+    phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8745133D88;
+    Wed, 21 Aug 2002 18:10:34 +0100 (IST)
+To: "Gordon Mohr" <gojomo@usa.net>
+Cc: fork@spamassassin.taint.org
+Subject: Re: The Curse of India's Socialism
+In-Reply-To: Message from
+    "Gordon Mohr"
+    <gojomo@usa.net> of
+    "Wed, 21 Aug 2002 10:00:36 PDT."
+    <004701c24934$45af7950$640a000a@golden>
+From: yyyy@spamassassin.taint.org (Justin Mason)
+X-GPG-Key-Fingerprint: 0A48 2D8B 0B52 A87D 0E8A  6ADD 4137 1B50 6E58 EF0A
+Message-Id: <20020821171034.9972E43C32@phobos.labs.netnoteinc.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 21 Aug 2002 18:10:29 +0100
+
+
+"Gordon Mohr" said:
+
+> If you plan to spend most of your time in that broke/
+> unemployed/unexceptional mode, please, leave North America 
+> for Scandinavia. 
+
+hmm, I might, at least they've got affordable DSL there, and haven't
+signed a DMCA-like law yet ;)
+
+--j.
+http://xent.com/mailman/listinfo/fork
+

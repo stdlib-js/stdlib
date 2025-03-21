@@ -1,0 +1,33 @@
+{
+  "name": "stdlib-datasets-img-allium-oreophilum",
+  "version": "",
+  "title": "Allium ostrowskianum",
+  "description": "Allium oreophilum (pink lily leek).",
+  "resources": [
+    {
+      "name": "allium-oreophilum-jpg",
+      "title": "Allium ostrowskianum",
+      "description": "Allium oreophilum (pink lily leek).",
+      "format": "jpeg",
+      "mediatype": "image/jpeg",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/image.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Getty's Open Content Program",
+      "web": "http://www.getty.edu/art/collection/objects/35448/karl-blossfeldt-allium-ostrowskianum-knoblauchpflanze-german-1928/"
+    }
+  ],
+  "keywords": [
+    "image",
+    "img",
+    "acanthus",
+    "mollis",
+    "plant",
+    "flower"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}

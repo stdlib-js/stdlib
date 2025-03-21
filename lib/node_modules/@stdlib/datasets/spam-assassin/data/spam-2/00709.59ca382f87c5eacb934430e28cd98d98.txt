@@ -1,0 +1,46 @@
+From jim342u47@saintmail.net  Wed Jul 17 08:59:07 2002
+Return-Path: <jim342u47@saintmail.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by netnoteinc.com (Postfix) with ESMTP id DACDA43D45
+	for <jm@localhost>; Wed, 17 Jul 2002 03:59:06 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 17 Jul 2002 08:59:06 +0100 (IST)
+Received: from mandark.labs.netnoteinc.com ([213.105.180.140]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6H80FJ31630 for
+    <jm@jmason.org>; Wed, 17 Jul 2002 09:00:15 +0100
+Received: from localhost.localdomain ([213.227.69.161]) by
+    mandark.labs.netnoteinc.com (8.11.6/8.11.6) with ESMTP id g6H80DR20776 for
+    <jm@netnoteinc.com>; Wed, 17 Jul 2002 09:00:14 +0100
+Received: from ob-mail-com.mr.outblaze.com (ip-97.pex.de [213.187.11.97]
+    (may be forged)) by localhost.localdomain (8.11.6/8.11.6) with ESMTP id
+    g6H7m0Q26770; Wed, 17 Jul 2002 09:48:05 +0200
+Message-Id: <00001ef019bb$00000658$000046b0@sacbeemailsmtp1.prontomail.com>
+To: <yyyy@netnoteinc.com>
+Cc: <tsharp@texnet.net>, <rpitt@igs.net>, <lskeeter@iserv.net>
+From: jim342u47@saintmail.net
+Subject: `*Mortgage Approved !!*`
+Date: Sat, 13 Jul 2002 16:06:56 -1900
+MIME-Version: 1.0
+X-Mailer: Microsoft Outlook Express 5.62.4133.2400
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<HTML><FONT  SIZE=3D2 PTSIZE=3D10 FAMILY=3D"SANSSERIF" FACE=3D"Arial" LANG=3D=
+"0">Congratulations! Your mortgage<BR>
+<BR>
+has been approved. <BR>
+<BR>
+<A HREF=3D"http://website.e365.cc/site1/">Click Here</A><BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+To be removed <A HREF=3D"http://site1.kuhleersparnis.ch/Remove/">Click her=
+e</A></FONT></HTML>
+
+
+
+

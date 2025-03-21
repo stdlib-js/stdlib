@@ -1,0 +1,28 @@
+
+{{alias}}( σ )
+    Returns the standard deviation of a Rayleigh distribution.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `σ < 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    σ: number
+        Scale parameter.
+
+    Returns
+    -------
+    out: number
+        Standard deviation.
+
+    Examples
+    --------
+    > var v = {{alias}}( 9.0 )
+    ~5.896
+    > v = {{alias}}( 4.5 )
+    ~2.948
+
+    See Also
+    --------
+

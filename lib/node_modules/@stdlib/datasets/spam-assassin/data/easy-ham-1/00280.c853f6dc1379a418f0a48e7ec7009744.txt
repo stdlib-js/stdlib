@@ -1,0 +1,135 @@
+From rpm-list-admin@freshrpms.net  Wed Oct  9 10:49:52 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id E703F16F6C
+	for <zzzz@localhost>; Wed,  9 Oct 2002 10:48:03 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 09 Oct 2002 10:48:03 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g98MF6K04249 for
+    <zzzz-rpm@spamassassin.taint.org>; Tue, 8 Oct 2002 23:15:06 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g98M5Df17411; Wed, 9 Oct 2002 00:05:13
+    +0200
+Received: from mailout11.sul.t-online.com (mailout11.sul.t-online.com
+    [194.25.134.85]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g98M46f16709 for <rpm-list@freshrpms.net>; Wed, 9 Oct 2002 00:04:06 +0200
+Received: from fwd08.sul.t-online.de by mailout11.sul.t-online.com with
+    smtp id 17z2ST-0003jb-03; Wed, 09 Oct 2002 00:04:05 +0200
+Received: from puariko.homeip.net (520039812576-0001@[217.231.233.201]) by
+    fmrl08.sul.t-online.com with esmtp id 17z2SO-0ymuK8C; Wed, 9 Oct 2002
+    00:04:00 +0200
+Received: (from thimm@localhost) by bonzo.nirvana (8.12.5/8.12.5/Submit)
+    id g98M3scx019124; Wed, 9 Oct 2002 00:03:54 +0200
+From: Axel Thimm <Axel.Thimm@physik.fu-berlin.de>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: Nessus?
+Message-Id: <20021008220353.GA17382@bonzo.nirvana>
+References: <20021008114911.GB37924@nessus.org>
+    <1034013325.8419.88.camel@bobcat.ods.org>
+    <20021007200642.27614e1b.matthias@rpmforge.net>
+    <20021007230521.0f1727aa.matthias@rpmforge.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20021008114911.GB37924@nessus.org>
+    <20021007230521.0f1727aa.matthias@rpmforge.net>
+User-Agent: Mutt/1.4i
+X-Sender: 520039812576-0001@t-dialin.net
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Wed, 9 Oct 2002 00:03:53 +0200
+Date: Wed, 9 Oct 2002 00:03:53 +0200
+
+On Mon, Oct 07, 2002 at 11:05:21PM +0200, Matthias Saou wrote:
+> I've put up a new Red Hat Linux 8.0 build of nessus here :
+> http://ftp.freshrpms.net/pub/freshrpms/testing/nessus/
+> 
+> It's 100% untested, although the build should be ok. The new menu was
+> added, but some configuration files may be better with new or different
+> defaults.
+> 
+> Feedback is very welcome!
+
+It works very nice, would you consider upgrading it to 1.2.6 released only a
+few hours after your build?
+
+Thanks!
+
+On Tue, Oct 08, 2002 at 01:49:11PM +0200, Renaud Deraison wrote:
+> I'm pleased to announce the availability of Nessus 1.2.6, which should
+> be one of the last versions of Nessus 1.2.x (hopefully), as I will soon
+> open a new unstable tree and start to break things again :)
+> 
+> What is new in Nessus 1.2.6, in comparison to 1.2.5 :
+> 
+> * changes by Michael Slifcak (Michael.Slifcak at guardent.com)
+>      + Added Bugtraq cross reference in the plugins
+>      + Added support for BID in nessusd (this has yet to be done on
+>        the client side)
+>        
+> * changes by Axel Nennker (Axel.Nennker at t-systems.com)
+>      + fixed the xml and html outputs
+>      + fixed array issues in a couple of plugins
+>      
+> * changes by Michel Arboi (arboi at bigfoot.com)
+>      + find_service now detects services protected by TCP wrappers
+>        or ACL
+>      + find_service detects gnuserv
+>      + ptyexecvp() replaced by nessus_popen() (*)
+>      
+> * changes by Renaud Deraison (deraison at cvs.nessus.org)
+>      + Fixed a bug which may make nasl interpret backquoted strings
+>        (\n and \r) received from the network (problem noted by Pavel
+>        Kankovsky)
+>      + nmap_wrapper.nes calls _exit() instead of exit() (*)
+>      + Solved the lack of bpf's on Free/Open/NetBSD and MacOSX by
+>        sharing _one_ among all the Nessus processes. As a result,
+>        Nessus's ping is much more effective on these platforms
+>      + bugfix in plug_set_key() which would eventually make some
+>        scripts take too long when writing in the KB
+>      + Plugins of family ACT_SETTINGS are run *after* plugins of
+>        family ACT_SCANNERS
+>      + replaced the implementation of md5 which was used when
+>        OpenSSL is disabled by the one from RSA (the old one would
+>        not work on a big-endian host)
+>      + Fixed plugins build issues on MacOS X
+>      + The nessus client compiles and links against GTK+-2.0. Of
+>        course, it will be horrible and unstable, as the GTK team
+>        does not care about backward compatibility
+>   
+> (*) These two modifications solve the problems of nmap hanging under FreeBSD
+> 
+> 
+> 
+> Special thanks go to Michael Slifcak, whose work on Nessus during the
+> last months have been truly appreciated even if they have not always
+> been as underlined as they should have been. Michael, thanks again !
+> 
+> 
+> AVAILABILITY:
+> 
+> Nessus 1.2.6 is available at http://www.nessus.org/posix.html
+-- 
+Axel.Thimm@physik.fu-berlin.de
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

@@ -1,0 +1,82 @@
+{
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-complex128",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-complex128array",
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared"
+      ]
+    }
+  ]
+}

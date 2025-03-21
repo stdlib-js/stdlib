@@ -1,0 +1,27 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Sat Sep  7 01:18:18 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Fri, 06 Sep 2002 20:18:18 -0400
+Subject: [Spambayes] test sets?
+In-Reply-To: <15736.57093.811682.371784@anthem.wooz.org>
+Message-ID: <LNBBLJKPBEHFEDALKOLCKEKLBCAB.tim.one@comcast.net>
+
+[Barry]
+> Here's an interesting thing to test: discriminate words differently if
+> they are on a line that starts with `>' or, to catch styles like
+> above, that the first occurance on a line of < or > is > (to eliminate
+> html).
+
+Give me a mod to timtoken.py that does this, and I'll be happy to test it.
+
+> Then again, it may not be worth trying to un-false-positive that
+> Nigerian scam quote.
+
+If there's any sanity in the world, even the original poster would be glad
+to have his kneejerk response blocked <wink>.  OTOH, you know there are a
+great many msgs on c.l.py (all over Usenet) that do nothing except quote a
+previous post and add a one-line comment.  Remove the quoted sections from
+those, and there may be no content left to judge except for the headers.  So
+I can see this nudging the stats in either direction.  The only way to find
+out for sure is for you to write some code <wink>.
+

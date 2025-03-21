@@ -1,0 +1,96 @@
+
+{{alias}}( [n, p] )
+    Returns a binomial distribution object.
+
+    Parameters
+    ----------
+    n: integer (optional)
+        Number of trials. Must be a positive integer. Default: `1`.
+
+    p: number (optional)
+        Success probability. Must be a number between `0` and `1`. Default:
+        `0.5`.
+
+    Returns
+    -------
+    binomial: Object
+        Distribution instance.
+
+    binomial.n: number
+        Number of trials. If set, the value must be a positive integer.
+
+    binomial.p: number
+        Success probability. If set, the value must be a number between `0` and
+        `1`.
+
+    binomial.kurtosis: number
+        Read-only property which returns the excess kurtosis.
+
+    binomial.mean: number
+        Read-only property which returns the expected value.
+
+    binomial.median: number
+        Read-only property which returns the median.
+
+    binomial.mode: number
+        Read-only property which returns the mode.
+
+    binomial.skewness: number
+        Read-only property which returns the skewness.
+
+    binomial.stdev: number
+        Read-only property which returns the standard deviation.
+
+    binomial.variance: number
+        Read-only property which returns the variance.
+
+    binomial.cdf: Function
+        Evaluates the cumulative distribution function (CDF).
+
+    binomial.logpmf: Function
+        Evaluates the natural logarithm of the probability mass function (PMF).
+
+    binomial.mgf: Function
+        Evaluates the moment-generating function (MGF).
+
+    binomial.pmf: Function
+        Evaluates the probability mass function (PMF).
+
+    binomial.quantile: Function
+        Evaluates the quantile function at probability `p`.
+
+    Examples
+    --------
+    > var binomial = {{alias}}( 8, 0.5 );
+    > binomial.n
+    8.0
+    > binomial.p
+    0.5
+    > binomial.kurtosis
+    -0.25
+    > binomial.mean
+    4.0
+    > binomial.median
+    4.0
+    > binomial.mode
+    4.0
+    > binomial.skewness
+    0.0
+    > binomial.stdev
+    ~1.414
+    > binomial.variance
+    2.0
+    > binomial.cdf( 2.9 )
+    ~0.145
+    > binomial.logpmf( 3.0 )
+    ~-1.52
+    > binomial.mgf( 0.2 )
+    ~2.316
+    > binomial.pmf( 3.0 )
+    ~0.219
+    > binomial.quantile( 0.8 )
+    5.0
+
+    See Also
+    --------
+

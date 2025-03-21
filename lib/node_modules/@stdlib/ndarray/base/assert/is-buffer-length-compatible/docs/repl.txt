@@ -1,0 +1,38 @@
+
+{{alias}}( len, shape, strides, offset )
+    Returns a boolean indicating if a buffer length is compatible with provided
+    ndarray meta data.
+
+    Parameters
+    ----------
+    len: integer
+        Buffer length (number of elements).
+
+    shape: ArrayLike
+        Array shape.
+
+    strides: ArrayLike
+        Stride array.
+
+    offset: integer
+        Location of the first indexed value.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if a buffer length is compatible.
+
+    Examples
+    --------
+    > var d = [ 2, 3, 10 ];
+    > var s = [ 30, -10, 1 ];
+    > var o = 20;
+    > var bool = {{alias}}( 100, d, s, o )
+    true
+    > o = 80;
+    > bool = {{alias}}( 100, d, s, o )
+    false
+
+    See Also
+    --------
+

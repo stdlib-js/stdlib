@@ -1,0 +1,80 @@
+From ilug-admin@linux.ie  Wed Sep 18 11:52:03 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id 3005E16F03
+	for <zzzz@localhost>; Wed, 18 Sep 2002 11:52:02 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 18 Sep 2002 11:52:02 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8I0E0C02429 for
+    <zzzz-ilug@jmason.org>; Wed, 18 Sep 2002 01:14:00 +0100
+Received: from lugh.tuatha.org (list@localhost [127.0.0.1]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id BAA32252; Wed, 18 Sep 2002
+    01:13:16 +0100
+Received: from relay.dub-t3-1.nwcgroup.com
+    (postfix@relay.dub-t3-1.nwcgroup.com [195.129.80.16]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id BAA32159 for <ilug@linux.ie>; Wed,
+    18 Sep 2002 01:12:03 +0100
+Received: from glb03 (unknown [81.18.33.83]) by
+    relay.dub-t3-1.nwcgroup.com (Postfix) with SMTP id C45A67004B for
+    <ilug@linux.ie>; Wed, 18 Sep 2002 01:12:00 +0100 (IST)
+From: "Femi Daniel" <femidan@mail.com>
+To: <ilug@linux.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Message-Id: <20020918001200.C45A67004B@relay.dub-t3-1.nwcgroup.com>
+Subject: [ILUG] HELLO
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Beenthere: ilug@linux.ie
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:ilug-request@linux.ie?subject=help>
+List-Post: <mailto:ilug@linux.ie>
+List-Subscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=subscribe>
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+List-Unsubscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=unsubscribe>
+List-Archive: <http://www.linux.ie/pipermail/ilug/>
+X-Original-Date: Wed, 18 Sep 2002 01:11:54
+Date: Wed, 18 Sep 2002 01:11:54
+
+OFFICE OF:EGNR. FEMI DANIEL
+FEDERAL MINISTRY OF WORKS AND HOUSING
+FEDERAL SECRETARIAT OFFICE COMPLEX
+IKOYI-LAGOS.
+
+ATTN:,                  
+
+First, I must solicit your strictest confidence in this transaction, this is by virtue of it’s nature as being utterly confidential and top secret as you were introduced to me in confidence through the Nigeria Chamber of Commerce and Industries.
+
+We are top officials from the Federal Ministry of Works and Housing,(FMW&H), Federal Ministry of Finance and the Presidency, making up the Contract Review Panel(CRP) set up by the Federal Government of Nigeria to review contracts awarded by the past military administration. 
+
+In the course of our work on the CRP, we discovered this fund which resulted from grossly over - invoiced contracts which were executed for the FMW&H during the last administration.The companies that executed the contracts have been duly paid and the contracts commissioned leaving the sum of US$21.4 Million floating in the escrow account of the Central Bank of Nigeria ready for payment.
+
+I have therefore  been mandated as a matter of trust by my colleagues in the panel to look for an overseas partner to whom we could transfer the sum of US21.4 legally subcontracting the entitlement to your company.This is bearing in mind that our civil service code of conduct forbids us from owning foreign companies or operating foreign accounts while in government service, hence the need for an overseas partner.
+
+We have agreed that the funds will be shared thus after it has been paid into your account.
+(1) 30% of the money will go to you for acting as the beneficiary of the fund.
+(2) 10% has been set aside as an abstract projection for reimbursement to both parties for incidental expences that may be incurred in the course of the transaction.
+(3) 60% to us the government officials (with which we intend to commence an importation business in conjunction with you)
+
+All logistics are in place and all modalities worked out for the smooth conclusion of the transaction within ten to fourteen days of commencement after receipt of the following information; your full names, company's name, address,details & activities, telephone & fax numbers.These information will enable us make the applications and lodge claims to the concerned ministries & agencies in favour of your company and it is pertinent to state here that this transaction is entirely based on trust as the solar bank draft or certified cheque drawable in any of the Central Bank of Nigeria correspondent bankers around the world is going to be made in your name.
+
+Please acknowledge the reciept of this letter using the above e-mail or the Alternative: femi1855@aol.com to reply me. 
+
+Yours faithfully,
+
+Egnr. Femi Daniel.
+
+NB:Bank Account Details not necessary as preferred mode of payment is by draft or cheque. 
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

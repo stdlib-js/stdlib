@@ -1,0 +1,252 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6NMXdhY014986
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Tue, 23 Jul 2002 17:33:39 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6NMXcOF014983
+	for cypherpunks-forward@ds.pro-ns.net; Tue, 23 Jul 2002 17:33:38 -0500 (CDT)
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6NMXahY014953
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks@ds.pro-ns.net>; Tue, 23 Jul 2002 17:33:37 -0500 (CDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: from waste.minder.net (daemon@waste [66.92.53.73])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6NMXZJ52073
+	for <cypherpunks@ds.pro-ns.net>; Tue, 23 Jul 2002 18:33:35 -0400 (EDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: (from cpunks@localhost)
+	by waste.minder.net (8.11.6/8.11.6) id g6NMXYU18131
+	for cypherpunks@ds.pro-ns.net; Tue, 23 Jul 2002 18:33:34 -0400
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by waste.minder.net (8.11.6/8.11.6) with ESMTP id g6NMXWR18110
+	for <cpunks@minder.net>; Tue, 23 Jul 2002 18:33:32 -0400
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6NMXVJ52053
+	for <cpunks@minder.net>; Tue, 23 Jul 2002 18:33:31 -0400 (EDT)
+	(envelope-from cpunks@einstein.ssz.com)
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id RAA18313
+	for cpunks@minder.net; Tue, 23 Jul 2002 17:42:12 -0500
+Received: (from mdom@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id RAA18305
+	for cypherpunks-outgoing; Tue, 23 Jul 2002 17:41:50 -0500
+Received: from mkt2.verticalresponse.com (mkt2.verticalresponse.com [130.94.4.20])
+	by einstein.ssz.com (8.8.8/8.8.8) with SMTP id RAA18300
+	for <cypherpunks@einstein.ssz.com>; Tue, 23 Jul 2002 17:41:39 -0500
+Message-Id: <200207232241.RAA18300@einstein.ssz.com>
+Received: (qmail 1237 invoked from network); 23 Jul 2002 22:32:44 -0000
+Received: from unknown (130.94.4.23)
+  by 0 with QMQP; 23 Jul 2002 22:32:44 -0000
+From: "Special Deals" <unsubs-ab749eca98-cypherpunks=einstein.ssz.com@b.verticalresponse.com>
+To: cypherpunks@einstein.ssz.com
+Old-Subject: CDR: Take Action Immediately or Miss Out.
+Date: Tue, 23 Jul 2002 22:32:44 +0000
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: multipart/alternative;
+    boundary="__________MIMEboundary__________"
+Sender: owner-cypherpunks@einstein.ssz.com
+Precedence: bulk
+Reply-To: cypherpunks@einstein.ssz.com
+X-Mailing-List: cypherpunks@ssz.com
+X-Unsubscription-Info: http://einstein.ssz.com/cdr
+X-List-Admin: list@ssz.com
+X-Loop: ssz.com
+X-Acceptable-Languages: English, Russian, German, French, Spanish
+Subject: Take Action Immediately or Miss Out.
+
+This is a multi-part message in MIME format.
+
+--__________MIMEboundary__________
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+
+That's right! For a limited time, you are
+eligible to receive up to 4, yes four, Satellite TV
+receivers at absolutely NO COST from EliteDish
+As an added bonus, your first 3 months of Service
+will be free.  3 months..... Just think about what
+you could do with that extra money......
+You must act now! Click Here to Apply: 
+http://r.vresp.com/?A/41dd308805
+or call us 1-800-823-2466
+
+ 
+
+Sign up today and receive FREE Installation and guess what?
+Your first 3 months of programming are paid! Equipment,
+Installation and Programming at NO COST to you! Drop Cable
+go for Digital Entertainment.  If your paying for cable, 
+your paying too much.  Want proof? Look at what you will 
+receive with our Satellite package. 
+
+
+Here is what you qualify for:
+
+ 
+
+-FREE complete Satellite TV System (up to 4 rooms)  
+-FREE Professional Installation (anywhere in the USA)  
+-FREE 3 Months of Programming at no cost.  
+-FREE In Home Service Plan  
+-Over 170 channels to watch and hundreds of Pay-Per-View
+movies.  
+
+ 
+
+That's it! No hidden Charges. 100% Satisfaction Guarantee.
+
+ 
+
+Click Here to Apply:
+http://r.vresp.com/?A/1403f3d891
+
+
+______________________________________________________________________
+You have signed up with one of our network partners to receive email
+providing you with special offers that may appeal to you. If you do not
+wish to receive these offers in the future, reply to this email with
+"unsubscribe" in the subject or simply click on the following link:
+http://unsubscribe.verticalresponse.com/u.html?ab749eca98/aa3b97bcc2
+
+
+
+--__________MIMEboundary__________
+Content-Type: text/html
+Content-Transfer-Encoding: 7bit
+
+<HTML> <HEAD> <TITLE>Claim Your FREE Satellite TV System</TITLE> <META
+HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> </HEAD>
+<BODY BGCOLOR=#FFFFFF leftmargin="0" marginwidth="0" topmargin="0"
+marginheight="0" onUnload="this.focus()"> <div align="center">    <TABLE
+width="641" BORDER=0 CELLPADDING=0 CELLSPACING=0>     <TR>      <TD><IMG
+SRC="http://64.227.172.50/655410/images/spacer.gif" WIDTH=102
+HEIGHT=1></TD>      <TD width="229"><IMG
+SRC="http://64.227.172.50/655410/images/spacer.gif" WIDTH=229
+HEIGHT=1></TD>      <TD width="31"><IMG
+SRC="http://64.227.172.50/655410/images/spacer.gif" WIDTH=31
+HEIGHT=1></TD>      <TD width="177"><IMG
+SRC="http://64.227.172.50/655410/images/spacer.gif" WIDTH=177
+HEIGHT=1></TD>      <TD><IMG
+SRC="http://64.227.172.50/655410/images/spacer.gif" WIDTH=101
+HEIGHT=1></TD>      <TD></TD>     </TR>     <TR>             <TD
+ROWSPAN=9><a href="http://r.vresp.com/?A/7e86b0b62f"><IMG
+SRC="http://64.227.172.50/655410/images/Blue-Cert_left.gif" WIDTH=102
+HEIGHT=655 border="0"></a></TD>       <TD COLSPAN=3 width="437"><a
+href="http://r.vresp.com/?A/9720647819"><IMG
+SRC="http://64.227.172.50/655410/images/Blue-Cert_top.gif" WIDTH=437
+HEIGHT=120 border="0"></a></TD>             <TD ROWSPAN=9><a
+href="http://r.vresp.com/?A/638bbf2803"><IMG
+SRC="http://64.227.172.50/655410/images/Blue-Cert_right.gif" WIDTH=101
+HEIGHT=655 border="0"></a></TD>      <TD><IMG
+SRC="http://64.227.172.50/655410/images/spacer.gif" WIDTH=1
+HEIGHT=120></TD>     </TR>     <TR>      <TD rowspan="2" COLSPAN=3
+width="437"><a href="http://r.vresp.com/?A/be0f2b4499"><IMG
+SRC="http://64.227.172.50/655410/images/Blue-Cert_approved.gif" WIDTH=437
+HEIGHT=86 border="0"></a></TD>      <TD><IMG
+SRC="http://64.227.172.50/655410/images/spacer.gif" WIDTH=1
+HEIGHT=54></TD>     </TR>     <TR>      <TD><IMG
+SRC="http://64.227.172.50/655410/images/spacer.gif" WIDTH=1
+HEIGHT=32></TD>     </TR>     <TR height="82">             <TD height="82"
+width="229"><a href="http://r.vresp.com/?A/4592ce854d"><IMG
+SRC="http://64.227.172.50/655410/images/Blue-Cert_policy.gif" WIDTH=229
+HEIGHT=82 border="0"></a></TD>      <TD COLSPAN=2 width="208" height="82"
+background="http://64.227.172.50/655410/images/Blue-Cert_waves01.gif"
+valign="top">         <p align="center"><font
+face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"
+size="-1">003-300299717499832716<br>           <font
+color="#FF0000"><b>ATTENTION!</b></font><br>           </font><font
+face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="-1">Valued      
+     Customer# 772-00D87<br>           <a
+href="http://r.vresp.com/?A/9c46df281a">"Claim your FREE Systems"</a><br> 
+         or call<strong> 1-800-823-2466</strong></font></p>         </TD> 
+    <TD height="82"><IMG
+SRC="http://64.227.172.50/655410/images/spacer.gif" WIDTH=1
+HEIGHT=82></TD>     </TR>     <TR height="76">      <TD COLSPAN=2
+ROWSPAN=3 width="260"
+background="http://64.227.172.50/655410/images/Blue-Cert_waves02.gif"
+valign="top">                <table border="0" cellpadding="0"
+cellspacing="8" width="100%" height="100%">           <tr>             
+<td height="239" width="244" valign="top">               <p><font
+face="Verdana, Arial, Helvetica, sans-serif" color="#000000"><b><font
+size="2">Congratulations!</font></b></font></p>               <p><font
+face="Verdana, Arial, Helvetica, sans-serif" color="#3b346e"
+size="1"><span style="FONT-SIZE: 10pt; COLOR: #3b346e; FONT-FAMILY:
+Verdana">YOU                  HAVE BEEN SELECTED TO RECEIVE A <b><span
+style="FONT-WEIGHT: bold">FREE*</span></b>                  4 Receiver
+DISH Satellite Entertainment System! Risk Free.<a
+href="http://r.vresp.com/?A/e21ee3e89c">                  Click Here to
+Schedule your Free Installation </a>($446.00 value).</span></font></p>    
+          <p><font face="Verdana, Arial, Helvetica, sans-serif"
+color="#3b346e" size="1"><span style="FONT-SIZE: 10pt; COLOR: #3b346e;
+FONT-FAMILY: Verdana">This                  is a special, limited-time
+offer with no hidden costs. <em><a
+href="http://r.vresp.com/?A/40ebe42446">Order                 
+today</a></em> and receive 3 months of programming FREE. </span>          
+       <font size="2" color="#FF0000"><b><font color="#333366">Hurry      
+           Offer </font>Expires FRIDAY July 26th </b></font></font></p>   
+           </td>        </tr>         </table>      </TD>             <TD
+height="76" width="177"><a href="http://r.vresp.com/?A/19fbb0eb2b"><IMG
+SRC="http://64.227.172.50/655410/images/Blue-Cert_date_July26.gif"
+WIDTH=177 HEIGHT=76 border="0"></a></TD>      <TD height="76"><IMG
+SRC="http://64.227.172.50/655410/images/spacer.gif" WIDTH=1
+HEIGHT=76></TD>     </TR>     <TR height="146">             <TD
+width="177" height="146"
+background="http://64.227.172.50/655410/images/Blue-Cert_waves03.gif"
+valign="top">         <p><font face="Verdana, Arial, Helvetica,
+sans-serif" size="2" color="#000000"><b>Here's            what you'll
+get:</b></font></p>         <p><font face="Verdana, Arial, Helvetica,
+sans-serif" size="2" color="#000000">-1            20 inch dish<br>       
+   -4 satellite receivers (four rooms)<br>           -access card<br>     
+     -4 remote controls<br>           -owner's manual<br>          
+-Professional Installation</font></p>       </TD>      <TD
+height="146"><IMG SRC="http://64.227.172.50/655410/images/spacer.gif"
+WIDTH=1 HEIGHT=146></TD>     </TR>     <TR>             <TD width="177"><a
+href="http://r.vresp.com/?A/968109a68e"><IMG
+SRC="http://64.227.172.50/655410/images/Blue-Cert_signature.gif" WIDTH=177
+HEIGHT=33 border="0"></a></TD>      <TD><IMG
+SRC="http://64.227.172.50/655410/images/spacer.gif" WIDTH=1
+HEIGHT=33></TD>     </TR>     <TR>             <TD COLSPAN=3 ROWSPAN=2
+width="437"><a href="http://r.vresp.com/?A/8c35c0eb64"><IMG
+SRC="http://64.227.172.50/655410/images/Blue-Cert_barcode.gif" WIDTH=437
+HEIGHT=112 border="0"></a></TD>      <TD><IMG
+SRC="http://64.227.172.50/655410/images/spacer.gif" WIDTH=1 HEIGHT=9></TD>
+    </TR>     <TR>      <TD><IMG
+SRC="http://64.227.172.50/655410/images/spacer.gif" WIDTH=1
+HEIGHT=103></TD>     </TR>    </TABLE>   </div>  </BODY> </HTML>
+
+<br>
+                     <hr color=e0e0e0>
+                     <table border=0 cellpadding=5 cellspacing=0
+width=100%>
+                     <tr>
+                           <td><font face="arial,verdana" size=1>You have
+signed up with one of our network partners to receive email providing you
+with special offers that may appeal to you. If you do not wish to receive
+these offers in the future, reply to this email with "unsubscribe" in the
+subject or simply click on the following link: <a
+href="http://unsubscribe.verticalresponse.com/u.html?ab749eca98/aa3b97bcc2">Unsubscribe</a></td>
+                     </tr>
+                     </table>
+
+<img src=http://i.verticalresponse.com/blank.gif?ab749eca98/aa3b97bcc2>
+
+
+--__________MIMEboundary__________--
+
+.
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

@@ -1,0 +1,66 @@
+From easmith@beatrice.rutgers.edu  Thu Sep 26 16:29:49 2002
+Return-Path: <easmith@beatrice.rutgers.edu>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id E7CEA16F03
+	for <jm@localhost>; Thu, 26 Sep 2002 16:29:48 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 16:29:48 +0100 (IST)
+Received: from dogberry.rutgers.edu
+    (IDENT:ZZyo5NaveTUUTqXKkTS+TJzdiDPFTOoJ@dogberry.rutgers.edu
+    [165.230.209.227]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8QD5Vg19025 for <jm@jmason.org>; Thu, 26 Sep 2002 14:05:31 +0100
+Received: from puck2.rutgers.edu (sendmail@puck2.rutgers.edu
+    [165.230.209.234]) by dogberry.rutgers.edu (8.11.2/8.11.2) with ESMTP id
+    g8QD5BP13089103; Thu, 26 Sep 2002 09:05:11 -0400 (EDT)
+Received: (from easmith@localhost) by puck2.rutgers.edu (8.11.2/8.11.2) id
+    g8QD5At2678978; Thu, 26 Sep 2002 09:05:10 -0400 (EDT)
+From: "Allen Smith" <easmith@beatrice.rutgers.edu>
+Message-Id: <10209260905.ZM2657541@puck2.rutgers.edu>
+Date: Thu, 26 Sep 2002 09:05:08 -0400
+In-Reply-To: Daniel Quinlan <quinlan@pathname.com>
+    "Re: GA Development (was Re: [SAdev] [Bug 1030] NO_INVENTORY dangerous)"
+    (Sep 25,  7:35pm)
+References: <20020925231047.137DE9CE4C@belphegore.hughes-family.org>
+    <10209251923.ZM2637799@puck2.rutgers.edu>
+    <15762.18084.872694.456893@proton.pathname.com>
+X-Mailer: Z-Mail (3.2.3 08feb96 MediaMail)
+To: Daniel Quinlan <quinlan@pathname.com>
+Subject: Re: GA Development (was Re: [SAdev] [Bug 1030] NO_INVENTORY
+    dangerous)
+Cc: yyyy@spamassassin.taint.org, spamassassin-devel@example.sourceforge.net
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 8bit
+
+On Sep 25,  7:35pm, Daniel Quinlan wrote:
+> Allen Smith <easmith@beatrice.rutgers.edu> writes:
+> 
+> > Well, I have been doing a bit of fiddling with the GA. I don't have
+> > a _large_ corpus practically available to me (or processable within
+> > reasonable processor time - I can justify the GA fiddling part as
+> > being part of my research, but not the mail processing...), so in
+> > order to test out my changes someone needs to send me a copy of the
+> > "tmp/scores.h" and "tmp/tests.h" that get generated prior to the GA
+> > going into action.
+> 
+> Why not start with mass-check corpus results? It's much easier to get
+> those
+
+Ah. As in getting a directory listing of the corpus server and doing some
+downloads? OK, done.
+
+> and you can create your own tmp/scores.h and tmp/tests.h.
+
+Good point. Will report back on my results.
+
+	-Allen
+
+-- 
+Allen Smith			http://cesario.rutgers.edu/easmith/
+September 11, 2001		A Day That Shall Live In Infamy II
+"They that can give up essential liberty to obtain a little temporary
+safety deserve neither liberty nor safety." - Benjamin Franklin
+
+

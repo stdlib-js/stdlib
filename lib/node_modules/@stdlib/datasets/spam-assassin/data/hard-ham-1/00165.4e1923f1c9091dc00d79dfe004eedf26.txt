@@ -1,0 +1,71 @@
+Return-Path: <owner-nessus@list.nessus.org>
+Delivered-To: Jost.Krieger+nessus@ruhr-uni-bochum.de
+Received: (qmail 23578 invoked by alias); 27 Jul 2002 17:59:48 -0000
+Received: (qmail 23571 invoked by uid 82); 27 Jul 2002 17:59:47 -0000
+Received: from owner-nessus@list.nessus.org by mailhost with qmail-scanner-1.00 (uvscan: v4.1.40/v4214. . Clean. Processed in 0.579929 secs); 27 Jul 2002 17:59:47 -0000
+Received: from raccoon.nessus.org (66.88.91.100)
+  by mi-1.rz.ruhr-uni-bochum.de with SMTP; 27 Jul 2002 17:59:47 -0000
+Received: by raccoon.nessus.org (Postfix)
+	id D26EB1364D; Sat, 27 Jul 2002 13:48:44 -0400 (EDT)
+Delivered-To: list-nessus-outgoing@raccoon.nessus.org
+Received: by raccoon.nessus.org (Postfix, from userid 54)
+	id B1E931364B; Sat, 27 Jul 2002 13:48:44 -0400 (EDT)
+Delivered-To: list-nessus@raccoon.nessus.org
+Received: by raccoon.nessus.org (Postfix, from userid 1006)
+	id 635C61364D; Sat, 27 Jul 2002 13:48:44 -0400 (EDT)
+Received: from adsl.hlfl.org (adsl.hlfl.org [62.212.107.116])
+	by raccoon.nessus.org (Postfix) with ESMTP id 96FE41364B
+	for <nessus@list.nessus.org>; Sat, 27 Jul 2002 13:48:42 -0400 (EDT)
+Received: by adsl.hlfl.org (Postfix, from userid 501)
+	id E65D011295; Sat, 27 Jul 2002 19:59:02 +0200 (CEST)
+Received: by raccoon.nessus.org (Postfix, from userid 1006)
+	id CDA1D1364C; Sat, 27 Jul 2002 11:40:22 -0400 (EDT)
+Received: from fep7.cogeco.net (smtp.cogeco.net [216.221.81.25])
+	by raccoon.nessus.org (Postfix) with ESMTP id DE97B1364B
+	for <nessus@list.nessus.org>; Sat, 27 Jul 2002 11:40:20 -0400 (EDT)
+Received: from e-softinc.com (d141-80-2.home.cgocable.net [24.141.80.2])
+	by fep7.cogeco.net (Postfix) with ESMTP id CAE665913
+	for <nessus@list.nessus.org>; Sat, 27 Jul 2002 11:50:39 -0400 (EDT)
+Message-ID: <3D42C1A3.8010607@e-softinc.com>
+Date: Sat, 27 Jul 2002 11:52:03 -0400
+From: Thomas Reinke <reinke@e-softinc.com>
+User-Agent: Mozilla/5.0 (Windows; U; WinNT4.0; en-US; rv:1.0.0) Gecko/20020530
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: Nessus List <nessus@list.nessus.org>
+Subject: Re: remove
+References: <OF6DECDA9D.3B09D595-ON88256BFF.0027CD5F@stanford.edu> <Pine.GSO.3.96.1020726230535.21468A-100000@crypto> <20020727145131.A2635@nessus.org>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: owner-nessus@list.nessus.org
+Precedence: bulk
+
+> Seriously though, it spurs the question: should this list be moderated ? 
+> (and the next question: if "yes", who wants to co-moderate ?)
+
+
+No...the list has been on target i'd say about 95% of the time.
+Iff it starts being a problem, consider it. Right now, John's
+right - this remove thread is taking more time than any remove
+requests have in the entire past year.
+
+One thing you may want to consider (if feasible) - BugTraq's
+adopted a technique by which they add headers to each message
+indicating where to email to remove. The catch: the mail is
+not sent to "majordomo" - it is sent to "listname-remove"@domain.
+I've found that useful when I can't remember exactly which mail
+addr I used to signup (since my email addr never shows up in
+a received message, and I have multiple addresses going to the
+same box).
+
+For all that, remember, even if you put the actual removal
+instructions right in the bottom of your email, you will
+_still_ get the clueless asking you how to remove. (Trust me,
+we've been there.)
+
+Thomas
+
+-
+nessus@list.nessus.org: general discussions about Nessus.
+* To unsubscribe, send a mail to majordomo@list.nessus.org with
+"unsubscribe nessus" in the body.

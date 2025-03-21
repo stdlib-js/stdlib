@@ -1,0 +1,129 @@
+From spambayes-bounces@python.org  Tue Nov 26 19:05:40 2002
+Return-Path: <spambayes-bounces@python.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id AC79716F7B
+	for <jm@localhost>; Tue, 26 Nov 2002 19:00:15 +0000 (GMT)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 26 Nov 2002 19:00:15 +0000 (GMT)
+Received: from mail.python.org (mail.python.org [12.155.117.29]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id gAQGDpW10646 for
+    <jm@jmason.org>; Tue, 26 Nov 2002 16:13:51 GMT
+Received: from localhost.localdomain ([127.0.0.1] helo=mail.python.org) by
+    mail.python.org with esmtp (Exim 4.05) id 18GiMq-00055L-00; Tue,
+    26 Nov 2002 11:15:20 -0500
+Received: from [63.100.190.10] (helo=smtp.zope.com) by mail.python.org
+    with esmtp (Exim 4.05) id 18GiMl-00054Z-00 for spambayes@python.org;
+    Tue, 26 Nov 2002 11:15:15 -0500
+Received: from slothrop.zope.com ([208.251.201.42]) by smtp.zope.com
+    (8.12.5/8.12.5) with ESMTP id gAQGSu7C010012; Tue, 26 Nov 2002 11:28:58
+    -0500
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Message-Id: <15843.40441.659922.991160@slothrop.zope.com>
+Date: Tue, 26 Nov 2002 11:14:49 -0500
+From: jeremy@alum.mit.edu (Jeremy Hylton)
+To: skip@pobox.com
+Subject: Re: [Spambayes] Guidance re pickles versus DB for Outlook
+In-Reply-To: <15843.39397.770235.412408@montanaro.dyndns.org>
+References: <LCEPIIGDJPKCOIHOBJEPGEGPHOAA.mhammond@skippinet.com.au>
+    <KFDCKI53GFCALK829664VTA5074OJYX.3de2d94d@riven>
+    <15842.62697.829412.348546@slothrop.zope.com>
+    <15843.39397.770235.412408@montanaro.dyndns.org>
+X-Mailer: VM 7.00 under 21.4 (patch 6) "Common Lisp" XEmacs Lucid
+X-Mailscanner: Found to be clean
+Cc: Spambayes <spambayes@python.org>
+X-Beenthere: spambayes@python.org
+X-Mailman-Version: 2.1b5
+Precedence: list
+Reply-To: Jeremy Hylton <jeremy@alum.mit.edu>
+List-Id: Discussion list for Pythonic Bayesian classifier <spambayes.python.org>
+List-Help: <mailto:spambayes-request@python.org?subject=help>
+List-Post: <mailto:spambayes@python.org>
+List-Subscribe: <http://mail.python.org/mailman/listinfo/spambayes>,
+    <mailto:spambayes-request@python.org?subject=subscribe>
+List-Archive: <http://mail.python.org/pipermail/spambayes>
+List-Unsubscribe: <http://mail.python.org/mailman/listinfo/spambayes>,
+    <mailto:spambayes-request@python.org?subject=unsubscribe>
+Sender: spambayes-bounces@python.org
+Errors-To: spambayes-bounces@python.org
+
+>>>>> "SM" == Skip Montanaro <skip@pobox.com> writes:
+
+  Jeremy> Put another way, I'd be interested to hear why you don't
+  Jeremy> want to use ZODB.
+
+  SM> Disclaimer: I'm not saying I don't want to use ZODB.  I'm
+  SM> offering some reasons why it might not be everyone's obvious
+  SM> choice.
+
+But you're not saying you do want to use ZODB, so you're still part of
+the problem <wink>.
+
+  SM> For most of us who have *any* experience with ZODB it's probably
+  SM> all indirect via Zope, so there are probably some inaccurate
+  SM> perceptions about it.  These thoughts that have come to my mind
+  SM> at one time or another:
+
+  SM> * How could a database from a company (Zope) whose sole business
+  SM>       is not databases be more reliable than a database from
+  SM>       organizations whose sole raison d'etre is databases
+  SM>       (Sleepycat, Postgres, MySQL, ...)?
+
+I don't think I could argue that ZODB is more reliable that
+BerkeleyDB.  It's true that we have fewer database experts and expend
+fewer resources working on database reliability.  On the other hand,
+Barry is nearly finished with a BerkeleyDB-based storage for ZODB.
+
+ZODB is an object persistence tool that uses a database behind it.
+You can use our FileStorage or you can use someone else's database,
+although BerkeleyDB is the best we can offer at the moment.  (It would
+be really cool to do a Postgres storage...)
+
+  SM> * Dealing with Zope's monolithic system is frustrating to people
+  SM>       (like me) who are used to having files reside in
+  SM>       filesystems.  Some of that frustration probably carries
+  SM>       over to ZODB, though it's almost certainly not ZODB's
+  SM>       problem.
+
+
+This sounds like a Zope complaint that doesn't have anything to do
+with ZODB, but maybe I misunderstand you.  You don't have to store
+your code in the database, although that will be mostly possible in
+ZODB4.
+
+Seriously, ZODB stores object pickles in a database.  The storage
+layer is free to manage those pickles however it likes.  FileStorage
+uses a single file.  Toby Dickenson's DirectoryStorage represents each
+pickle as a separate file.
+
+  SM> * It seems to grow without bound, else why do I need to pack my
+  SM>       Data.fs file every now and then?
+
+It grows without bound unless you pack it.  Why is that a problem? 
+BerkeleyDB log files grow without bound, too.  Databases require some
+tending.  One possibility with FileStorage is to add an explicit
+pack() call to update training operation.  We'd need to think
+carefully about the performance impact.
+
+  SM> Also, there is the issue of availability.  While it's just an
+  SM> extra install, its use requires more than the usual Python
+  SM> install.  Having it in the core distribution would provide
+  SM> stronger assurances that it runs wherever Python runs (e.g.,
+  SM> does it run on MacOS 8 or 9, both of which I believe Jack still
+  SM> supports with his Mac installer?).
+
+I think we'd want a spambayes installer that packaged up spambayes,
+python, and zodb.
+
+Jeremy
+
+
+_______________________________________________
+Spambayes mailing list
+Spambayes@python.org
+http://mail.python.org/mailman/listinfo/spambayes
+
+

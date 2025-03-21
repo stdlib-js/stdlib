@@ -1,0 +1,91 @@
+From exmh-users-admin@redhat.com  Fri Sep 13 16:49:59 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 617DC16F03
+	for <jm@localhost>; Fri, 13 Sep 2002 16:49:59 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 13 Sep 2002 16:49:59 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8DEJGC21884 for
+    <jm-exmh@jmason.org>; Fri, 13 Sep 2002 15:19:16 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id AF2C03F162; Fri, 13 Sep 2002
+    10:19:11 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 3EFD13EA28
+    for <exmh-users@listman.redhat.com>; Fri, 13 Sep 2002 10:18:55 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g8DEIoH01540 for exmh-users@listman.redhat.com; Fri, 13 Sep 2002
+    10:18:50 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g8DEInk01536 for
+    <exmh-users@redhat.com>; Fri, 13 Sep 2002 10:18:49 -0400
+Received: from dimebox.bmc.com (adsl-66-140-152-233.dsl.hstntx.swbell.net
+    [66.140.152.233]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id
+    g8DE29w21593 for <exmh-users@redhat.com>; Fri, 13 Sep 2002 10:02:10 -0400
+Received: by dimebox.bmc.com (Postfix, from userid 1205) id 1428F38DAB;
+    Fri, 13 Sep 2002 09:18:46 -0500 (CDT)
+Received: from dimebox (localhost [127.0.0.1]) by dimebox.bmc.com
+    (Postfix) with ESMTP id 0A90338DA2 for <exmh-users@redhat.com>;
+    Fri, 13 Sep 2002 09:18:46 -0500 (CDT)
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4
+In-Reply-To: <26040.1031911795@munnari.OZ.AU>
+References: <23204.1031891193@dimebox>
+    <200209130231.g8D2VO021580@hobbit.linuxworks.com.au.nospam>
+    <26040.1031911795@munnari.OZ.AU>
+Comments: In-reply-to Robert Elz <kre@munnari.OZ.AU> message dated "Fri,
+    13 Sep 2002 17:09:55 +0700."
+To: exmh-users@spamassassin.taint.org
+Subject: Re: Linking message [was: Re: Patch to complete a change...]
+MIME-Version: 1.0
+From: Hal DeVore <haldevore@acm.org>
+X-Image-Url: http://www.geocities.com/hal_devore_ii/haleye48.gif
+Content-Type: text/plain; charset=us-ascii
+Message-Id: <25618.1031926721@dimebox>
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Fri, 13 Sep 2002 09:18:41 -0500
+
+
+
+>>>>> On Fri, 13 Sep 2002, "Robert" == Robert Elz wrote:
+
+  Robert> That (the way I have it configured, and it sounds as if
+  Robert> the way Tony does too) just does a move (rather than
+  Robert> select as target without moving).
+
+Ah.  I had forgotten that was settable.  
+
+Preferences, Folder Display, "Action when Target Button
+clicked..." set to "Select only" will change it.  I seem to
+recall that the button that is used as "Target button" is
+configurable but I haven't had enough caffeine to recall where
+that is.
+
+--Hal
+
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

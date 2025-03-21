@@ -1,0 +1,178 @@
+From fork-admin@xent.com  Wed Sep 11 13:49:40 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 1C45016F17
+	for <jm@localhost>; Wed, 11 Sep 2002 13:49:39 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 11 Sep 2002 13:49:39 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8B8HTC07346 for <jm@jmason.org>;
+    Wed, 11 Sep 2002 09:17:31 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id AA98A2940C2; Wed, 11 Sep 2002 01:14:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from frodo.hserus.net (202-77-223-48.outblaze.com
+    [202.77.223.48]) by xent.com (Postfix) with ESMTP id CA79329409A for
+    <FoRK@XeNT.CoM>; Wed, 11 Sep 2002 01:13:34 -0700 (PDT)
+Received: from ppp-177-198.bng.vsnl.net.in ([203.197.177.198]
+    helo=rincewind.pobox.com) by frodo.hserus.net with asmtp (Exim 4.10) id
+    17p2fg-000C65-00; Wed, 11 Sep 2002 16:16:25 +0800
+X-PGP-Dsskey: 0x55FAB8D3
+X-PGP-Rsakey: 0xCAA67415
+Message-Id: <5.1.0.14.2.20020911114003.02e170f0@frodo.hserus.net>
+X-Nil:
+To: Adam Rifkin <adam@KnowNow.com>, FoRK@xent.com
+From: Udhay Shankar N <udhay@pobox.com>
+Subject: storage bits
+In-Reply-To: <200012281832.MAA00992@server1.KnowNow.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"; format=flowed
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 11 Sep 2002 11:45:45 +0530
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g8B8HTC07346
+
+At 12:32 PM 12/28/00 -0600, Adam Rifkin wrote:
+
+>I repeat, IBM 76.8Gb ultra dma/100 hard drive at Fry's for $375...
+>"home of fast, friendly courteous service! (R)"
+>
+>I kid you not.  That's a half a cent a Megabyte for storage.
+>Not El Cheapo storage but top of the line storage.
+
+less than two years later, we have 320 GB for the same price:
+
+http://www.shareholder.com/maxtor/news/20020909-89588.cfm
+
+Maxtor Driving Capacity-Centric Enterprise Apps With "Super-Sized" ATA Drives
+
+Maxtor Continues its Leadership in the Market it Pioneered with a New 
+Category of High-Density ATA Drives
+
+MILPITAS, Calif., September 9, 2002-
+
+Maxtor Corporation (NYSE: MXO), a worldwide leader in hard disk drives and 
+data storage solutions, today announced Maxtor MaXLineTM, its newest 
+generation of ATA drives designed specifically for rapidly emerging 
+enterprise storage applications including near-line, media storage and 
+network storage. The MaXLine family features two critical differentiators: 
+huge capacities up to 320 GB for corporate archiving and media recording; 
+and unique manufacturing and quality for 24/7 operations with mean time to 
+failure (MTTF) rates exceeding one million hours.
+
+The MaXLine family is designed to bring hard disk drives into "near-line" 
+archive applications. By adding a layer of MaXLine drives to archive 
+architectures, companies can instantly recover time-critical data including 
+executive e-mail, transaction data and accounting data that may need to be 
+recovered on demand.
+
+These new drives are designed to solve another enterprise problem with the 
+storage of video, media and audio conference call files. Even compressed, 
+these files take up tremendous amounts of high-cost server space. Priced 
+starting around $299.95 to $399.95 MSRP, Maxtor's MaXLine family offers 
+high capacity drives for enterprise applications at price points between 
+traditional ATA and SCSI drives.
+
+For system OEMs and white box builders, MaXLine offers high-density, 
+easy-to-integrate storage for use in entry-level and mid-size server 
+environments.
+
+"The demand for instant recall of archived data is expanding as companies 
+are meeting their obligations to quickly access executive e-mails, 
+financial documents and transaction records," said Mike Dooley, senior 
+director of marketing for the Desktop Products Group at Maxtor. "Users may 
+not need to access information in these applications on a daily basis, but 
+when they do need access, it must be instant. Recent advances in ATA 
+technology and our manufacturing processes allow us to build upon our 
+legacy of experience and provide our customers with a family of premium ATA 
+hard drives that can be integrated into a variety of systems for these 
+enterprise applications."
+
+The MaXLine family includes the 5400-RPM MaXLine II, designed for 
+capacities up to 320 GB and the 7200-RPM MaXLine Plus II, designed for 
+capacities up to 250 GB. At these capacities, MaXLine offers higher storage 
+density than many tape and optical solutions. These drives have also been 
+tested and are projected to meet enterprise reliability requirements, 
+already exceeded by prior drives employing the same robust Maxtor designs, 
+which exceed MTTF of over one million hours. These drives will also carry a 
+three-year warranty.
+
+The MaXLine II and MaXLine Plus II feature the Maxtor Fast DriveTM 
+UltraATA/133 interface for data transfer speeds up to 133 MB per second. 
+The MaXLine II and MaXLine Plus II will be available with next-generation 
+serial ATA interface for higher performance. At 150 MB per second maximum 
+data transfer rate, serial ATA improves hard drive performance to keep pace 
+with the rapidly increasing performance requirements of data intensive 
+environments and enterprise applications.
+
+With a point-to-point connection architecture, and rich command set for 
+managing hard drive activity and data flow along the interface, serial ATA 
+advances the performance and efficiency of the drive to system interface. 
+The interface's reduced pin count allows for simpler cabling which in turn 
+allows better airflow within a system and further benefits the user with 
+increased design flexibility and hot plug capability.
+
+"Maxtor's MaXLine family of drives provide a solution for storing data that 
+has previously been too expensive to keep on disk," said Dave Reinsel, 
+analyst at IDC. "The ATA drives offer a great value, low cost per GB and 
+when integrated into storage systems and file servers offer a compelling 
+cost-effective alternative to tape libraries and optical drives, which have 
+been the traditional solutions used for near-line applications."
+
+Availability
+Limited qualification units of the parallel ATA versions of Maxtor MaXLine 
+II and MaXLine Plus II are now available; with volume units available in 
+the fourth quarter. Qualification units of the MaXLine II and MaXLine Plus 
+II with serial ATA will be available later this month with volume shipments 
+scheduled to begin in the first quarter of 2003.
+
+About Maxtor
+Maxtor Corporation (www.maxtor.com) is one of the world's leading suppliers 
+of information storage solutions. The company has an expansive line of 
+storage products for desktop computers, storage systems, high-performance 
+servers and consumer electronics. Maxtor has a reputation as a proven 
+market leader built by consistently providing high-quality products and 
+service and support for its customers. Maxtor and its products can be found 
+at www.maxtor.com or by calling toll-free (800) 2-MAXTOR. Maxtor is traded 
+on the NYSE under the MXO symbol.
+
+Note: Maxtor, MaXLine and the Maxtor logo are registered trademarks of 
+Maxtor Corporation. Fast Drive is a trademark of Maxtor Corporation. All 
+other trademarks are properties of their respective owners.
+
+GB means 1 billion bytes. Total accessible capacity varies depending on 
+operating environment.
+
+This announcement relating to Maxtor may contain forward-looking statements 
+concerning future technology, products incorporating that technology, and 
+Maxtor's execution. These statements are based on current expectations and 
+are subject to risks and uncertainties which could materially affect the 
+company's results, including, but not limited to, market demand for hard 
+disk drives, the company's ability to execute future production ramps and 
+utilize manufacturing assets efficiently, pricing, competition, and the 
+significant uncertainty of market acceptance of new products.  These and 
+other risk factors are contained in documents that the company files with 
+the SEC, including the Form 10-K for fiscal 2001 and its recent 10-Qs.
+
+Copyright © 2001, Maxtor Corporation ®. Privacy Policy.
+
+
+
+-- 
+((Udhay Shankar N)) ((udhay @ pobox.com)) ((www.digeratus.com))
+
+

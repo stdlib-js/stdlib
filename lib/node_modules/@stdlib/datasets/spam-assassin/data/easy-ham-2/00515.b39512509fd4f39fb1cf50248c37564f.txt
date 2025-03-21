@@ -1,0 +1,59 @@
+From webdev-admin@linux.ie  Mon Aug 19 12:17:39 2002
+Return-Path: <webdev-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 96EB343C32
+	for <jm@localhost>; Mon, 19 Aug 2002 07:17:37 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 12:17:37 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7JBFg620357 for
+    <jm-webdev@jmason.org>; Mon, 19 Aug 2002 12:15:42 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA02632; Mon, 19 Aug 2002 12:15:41 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from salmon.maths.tcd.ie (mmdf@salmon.maths.tcd.ie
+    [134.226.81.11]) by lugh.tuatha.org (8.9.3/8.9.3) with SMTP id MAA02590
+    for <webdev@linux.ie>; Mon, 19 Aug 2002 12:15:36 +0100
+Received: from walton.maths.tcd.ie by salmon.maths.tcd.ie with SMTP id
+    <aa10146@salmon>; 19 Aug 2002 12:15:35 +0100 (BST)
+To: webdev@linux.ie
+Subject: Re: [Webdev] site monitroring service?
+X-It'S: all good
+X-Wigglefluff: fuddtastic
+X-Zippy: NOT fucking!! Also not a PACKAGE of LOOSE-LEAF PAPER!!
+In-Reply-To: Your message of
+    "Mon, 19 Aug 2002 12:01:02 BST."
+    <003501c2476f$b5955580$1a8f43d9@ade2>
+Date: Mon, 19 Aug 2002 12:15:35 +0100
+From: Niall Brady <bradyn@maths.tcd.ie>
+Message-Id: <200208191215.aa10146@salmon.maths.tcd.ie>
+Sender: webdev-admin@linux.ie
+Errors-To: webdev-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: <webdev.linux.ie>
+X-Beenthere: webdev@linux.ie
+
+On Mon, 19 Aug 2002 12:01:02 BST, Adrian Murphy said:
+>
+>I wonder could anyone reccommend a good
+>website monitoring service-with sms alerts.
+>thx and sorry to be OT.
+
+It sounds more like you're looking for a commercial service, in which
+case "ain't got a bog", but on the offchance that you're looking for
+software, try nagios. (www.nagios.org)
+
+It'll do that and a lot more.
+
+-- 
+	Niall
+
+_______________________________________________
+Webdev mailing list
+Webdev@linux.ie
+http://www.linux.ie/mailman/listinfo/webdev
+

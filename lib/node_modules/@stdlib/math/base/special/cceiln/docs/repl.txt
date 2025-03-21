@@ -1,0 +1,30 @@
+
+{{alias}}( z, n )
+    Rounds each component of a double-precision complex number to the nearest
+    multiple of `10^n` toward positive infinity.
+
+    Parameters
+    ----------
+    z: Complex128
+        Complex number.
+
+    n: integer
+        Integer power of 10.
+
+    Returns
+    -------
+    out: Complex128
+        Real and imaginary components.
+
+    Examples
+    --------
+    > var out = {{alias}}( new {{alias:@stdlib/complex/float64/ctor}}( 5.555, -3.333 ), -2 )
+    <Complex128>
+    > var re = {{alias:@stdlib/complex/float64/real}}( out )
+    5.56
+    > var im = {{alias:@stdlib/complex/float64/imag}}( out )
+    -3.33
+
+    See Also
+    --------
+

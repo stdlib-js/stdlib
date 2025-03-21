@@ -1,0 +1,25 @@
+From rssfeeds@jmason.org  Tue Oct  1 10:36:58 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 66DC216F19
+	for <jm@localhost>; Tue,  1 Oct 2002 10:36:46 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 01 Oct 2002 10:36:46 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g91816K15547 for
+    <jm@jmason.org>; Tue, 1 Oct 2002 09:01:09 +0100
+Message-Id: <200210010801.g91816K15547@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: fark <rssfeeds@spamassassin.taint.org>
+Subject: Family's "pet" raccoon attacks baby in crib
+Date: Tue, 01 Oct 2002 08:01:06 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.newsisfree.com/click/-2,8417752,1717/
+Date: 2002-10-01T03:29:22+01:00
+
+(ClickOnDetroit)
+
+

@@ -1,0 +1,85 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Fri Aug 23 11:12:28 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0CDFE44171
+	for <jm@localhost>; Fri, 23 Aug 2002 06:08:32 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 23 Aug 2002 11:08:33 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7MIJaZ19382 for <jm-sa@jmason.org>; Thu, 22 Aug 2002 19:19:37 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17hwWx-0005Rd-00; Thu,
+    22 Aug 2002 11:18:03 -0700
+Received: from hall.mail.mindspring.net ([207.69.200.60]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17hwWD-0003Gh-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Thu, 22 Aug 2002 11:17:17 -0700
+Received: from user-105nd99.dialup.mindspring.com ([64.91.181.41]
+    helo=belphegore.hughes-family.org) by hall.mail.mindspring.net with esmtp
+    (Exim 3.33 #1) id 17hwWA-0006e8-00; Thu, 22 Aug 2002 14:17:14 -0400
+Received: from balam.hughes-family.org
+    (adsl-67-118-234-50.dsl.pltn13.pacbell.net [67.118.234.50]) by
+    belphegore.hughes-family.org (Postfix) with ESMTP id 29C06A002E;
+    Thu, 22 Aug 2002 11:17:13 -0700 (PDT)
+Subject: Re: [SAtalk] German spam corpus / foreign language spam
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+MIME-Version: 1.0 (Apple Message framework v482)
+Cc: SAtalk <spamassassin-talk@example.sourceforge.net>
+To: yyyy@spamassassin.taint.org (Justin Mason)
+From: "Craig R.Hughes" <craig@deersoft.com>
+In-Reply-To: <20020822163653.7246343F99@phobos.labs.netnoteinc.com>
+Message-Id: <62593AC6-B5FB-11D6-A91E-00039396ECF2@deersoft.com>
+Content-Transfer-Encoding: 7bit
+X-Mailer: Apple Mail (2.482)
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Thu, 22 Aug 2002 11:17:14 -0700
+Date: Thu, 22 Aug 2002 11:17:14 -0700
+
+
+On Thursday, August 22, 2002, at 09:36  AM, Justin Mason wrote:
+
+>
+> "Craig R.Hughes" said:
+>
+>> I thought we'd sort of decided that after 2.40 we'd switch the
+>> meaning of the "lang" prefix to actually mean "run these rules
+>> if language matches", where "language" is what TextCat spits out
+>> for a message, as opposed to using the locale which is how
+>> things currently work.
+>
+> ah, right -- I'd forgotten that.  :(
+>
+> doesn't help with the finding-broken-rules QA case though...
+
+It does, if you have a corpus of german spam and nonspam to feed 
+it, and you're not in a de locale.
+
+C
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

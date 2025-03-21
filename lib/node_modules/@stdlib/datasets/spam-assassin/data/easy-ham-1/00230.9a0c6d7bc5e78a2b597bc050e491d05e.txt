@@ -1,0 +1,89 @@
+From martin@srv0.ems.ed.ac.uk  Wed Aug 28 13:34:43 2002
+Return-Path: <martin@srv0.ems.ed.ac.uk>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5C66043F9B
+	for <zzzz@localhost>; Wed, 28 Aug 2002 08:34:42 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 28 Aug 2002 13:34:42 +0100 (IST)
+Received: from n21.grp.scd.yahoo.com (n21.grp.scd.yahoo.com
+    [66.218.66.77]) by dogma.slashnull.org (8.11.6/8.11.6) with SMTP id
+    g7SCXBZ24033 for <zzzz@spamassassin.taint.org>; Wed, 28 Aug 2002 13:33:11 +0100
+X-Egroups-Return: sentto-2242572-53154-1030537997-zzzz=spamassassin.taint.org@returns.groups.yahoo.com
+Received: from [66.218.67.198] by n21.grp.scd.yahoo.com with NNFMP;
+    28 Aug 2002 12:33:17 -0000
+X-Sender: martin@srv0.ems.ed.ac.uk
+X-Apparently-To: zzzzteana@yahoogroups.com
+Received: (EGP: mail-8_1_0_1); 28 Aug 2002 12:33:17 -0000
+Received: (qmail 84489 invoked from network); 28 Aug 2002 12:33:17 -0000
+Received: from unknown (66.218.66.216) by m5.grp.scd.yahoo.com with QMQP;
+    28 Aug 2002 12:33:17 -0000
+Received: from unknown (HELO haymarket.ed.ac.uk) (129.215.128.53) by
+    mta1.grp.scd.yahoo.com with SMTP; 28 Aug 2002 12:33:16 -0000
+Received: from srv0.ems.ed.ac.uk (srv0.ems.ed.ac.uk [129.215.117.0]) by
+    haymarket.ed.ac.uk (8.11.6/8.11.6) with ESMTP id g7SCXF319746 for
+    <forteana@yahoogroups.com>; Wed, 28 Aug 2002 13:33:15 +0100 (BST)
+Received: from EMS-SRV0/SpoolDir by srv0.ems.ed.ac.uk (Mercury 1.44);
+    28 Aug 02 13:33:14 +0000
+Received: from SpoolDir by EMS-SRV0 (Mercury 1.44); 28 Aug 02 13:33:05 +0000
+Organization: Management School
+To: zzzzteana@yahoogroups.com
+Message-Id: <3D6CD12A.10660.24D9E9BA@localhost>
+Priority: normal
+X-Mailer: Pegasus Mail for Windows (v4.01)
+Content-Description: Mail message body
+From: "Martin Adamson" <martin@srv0.ems.ed.ac.uk>
+MIME-Version: 1.0
+Mailing-List: list zzzzteana@yahoogroups.com; contact
+    forteana-owner@yahoogroups.com
+Delivered-To: mailing list zzzzteana@yahoogroups.com
+Precedence: bulk
+List-Unsubscribe: <mailto:zzzzteana-unsubscribe@yahoogroups.com>
+Date: Wed, 28 Aug 2002 13:32:56 +0100
+Subject: [zzzzteana] 'Lost' penguins found alive
+Reply-To: zzzzteana@yahoogroups.com
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+
+Evening Standard - 28 August 2002
+
+[Deft use of Fortean Unit of Measurement in 2nd para - MA]
+
+ 'Lost' penguins found alive
+ 
+ by Charles Miranda
+
+ A colony of emperor penguins which was thought to have starved to death in
+ Antarctica has been found alive in a "big huddle". 
+
+ The birds were spotted by the crew of a USAF jet returning to base in New
+ Zealand. Researchers had feared that a breakaway iceberg the size of Jamaica
+ had all but wiped out the colony at Cape Crozier on Ross Island. 
+ 
+ Thousands of chicks are believed to have died as an increase in sea ice made
+ it impossible for the adults to find food. A detailed count is planned in
+ October. Antarctica (New Zealand) chief executive Lou Sanson said: "The
+ penguins were in a big huddle. We can now hope that the emperors have had a
+ successful breeding season over the winter." 
+ 
+ Some 1,000 pairs of emperors - the largest penguins in the world at 3.3ft tall
+ and 88lb - usually nest at Cape Crozier, 50 miles from the US McMurdo research
+ station. The 200,000-strong Adelie penguin colony, which also nests at the
+ cape, may have lost up to third of its population. 
+
+
+------------------------ Yahoo! Groups Sponsor ---------------------~-->
+4 DVDs Free +s&p Join Now
+http://us.click.yahoo.com/pt6YBB/NXiEAA/MVfIAA/7gSolB/TM
+---------------------------------------------------------------------~->
+
+To unsubscribe from this group, send an email to:
+forteana-unsubscribe@egroups.com
+
+ 
+
+Your use of Yahoo! Groups is subject to http://docs.yahoo.com/info/terms/ 
+
+
+

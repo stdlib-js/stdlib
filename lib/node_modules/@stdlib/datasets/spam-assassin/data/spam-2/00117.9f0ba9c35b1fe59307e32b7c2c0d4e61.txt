@@ -1,0 +1,749 @@
+From FLN-Community@FreeLinksNetwork.com  Thu Aug  2 11:40:26 2001
+Return-Path: <FLN-Community@FreeLinksNetwork.com>
+Delivered-To: yyyy@netnoteinc.com
+Received: from rovdb001.roving.com (unknown [216.251.239.53]) by
+    mail.netnoteinc.com (Postfix) with ESMTP id 48A19114148 for
+    <jm@netnoteinc.com>; Thu,  2 Aug 2001 10:40:23 +0000 (Eire)
+Received: from rovweb003 (unknown [10.208.80.89]) by rovdb001.roving.com
+    (Postfix) with ESMTP id 65F3A1A56F3 for <jm@netnoteinc.com>;
+    Thu,  2 Aug 2001 06:30:51 -0400 (EDT)
+From: Your Membership Newsletter <FLN-Community@FreeLinksNetwork.com>
+To: yyyy@netnoteinc.com
+Subject: Your Membership Exchange, #441
+Content-Type: multipart/alternative;
+    boundary=90840724.996748272348.JavaMail.RovAdmin.rovweb003
+X-Roving-Queued: 20010802 06:31.12348
+X-Roving-Version: 4.1.Patch44.ThingOne_p44_07_18_01_PoolFix
+X-Mailer: Roving Constant Contact 4.1.Patch44.ThingOne_p44_07_18_01_PoolFi
+    x (http://www.constantcontact.com)
+X-Roving-Id: 996712293421
+Message-Id: <20010802103051.65F3A1A56F3@rovdb001.roving.com>
+Date: Thu,  2 Aug 2001 06:30:51 -0400 (EDT)
+
+--90840724.996748272348.JavaMail.RovAdmin.rovweb003
+Content-Type: text/plain; charset=iso-8859-1
+
+Your Membership Exchange, Issue #441 (August 2, 2001)
+ 
+______________________________________________________
+         Your Membership Daily Exchange
+>>>>>>>>>>> Issue #441 <> 08-02-01 <<<<<<<<<<<<
+Your place to exchange ideas, ask questions,
+swap links, and share your skills!
+______________________________________________________
+Removal/Unsubscribe instructions are included at the bottom
+for members who do not wish to receive additional issues of
+this publication.
+______________________________________________________
+
+You are a member in at least one of these programs
+- You should be in them all!
+http://www.BannersGoMLM.com
+http://www.ProfitBanners.com
+http://www.CashPromotions.com
+http://www.MySiteInc.com
+http://www.TimsHomeTownStories.com
+http://www.FreeLinksNetwork.com
+http://www.MyShoppingPlace.com
+http://www.BannerCo-op.com
+http://www.PutPEEL.com
+http://www.PutPEEL.net
+http://www.SELLinternetACCESS.com
+http://www.Be-Your-Own-ISP.com
+http://www.SeventhPower.com
+______________________________________________________
+Today's Special Announcement:
+
+Right now, this week only - We have left over inventory, it's 
+unsold, but not for long.  If you could use 1 million banner 
+ads all targeted and dirt cheap go here today. This package 
+is guaranteed!! It's tough to fail when you can show your ad 
+to 1,000 people for less than a buck! A free custom banner 
+will be made for you with this deal! 
+http://BannersGoMLM.com/promo/million-nl.html
+______________________________________________________
+______________________________________________________
+
+>> Ideas, Tips, & Information
+           R. DeLong: More on the SirCam virus 
+
+>> Q & A
+   ANSWERS:
+     - What can I do about my computer freezing?
+           J. Shofstall: Many factors in the operating system that cause conflicts
+
+>> MEMBER SHOWCASES
+
+>> MEMBER *REVIEWS*
+     - Sites to Review: #141, #142, #143  & #144!
+     - Site #140 Reviewed!
+
+______________________________________________________
+
+>>>>>> Ideas, Tips, & Information <<<<<<
+
+Do you have a special software program you find helpful, or
+even absolutely necessary? A neat tip that makes your online
+life a little easier? Share it and help other members save time,
+frustration, and a few steps in the learning curve. Submit
+your ideas, tips and information to MyInput@AEOpublishing.com
+
+From:  Richard DeLong   - homeaffiliate@mail.com
+Subject:  More on the SirCam virus 
+
+In Exchange Issue #440, JT wrote...
+
+>It's called the SirCam virus, and when it spreads, it sends
+>an apparently random file from the harddrives of infected
+>computers along with it. ANY file on your machine could
+>be copied and sent to hundreds of other users. 
+
+I also have received both the virus and email on how to get 
+rid of it.  Luckily I don't open ANY attachments, unless I'm 
+expecting them and then am still very careful.  
+
+Here's the ways I was told to get rid of the thing:
+
+One Fix Tool:
+
+Download fix_sircam.com and run the file. It will scan Drive
+C:\ and subfolders and runs in DOS.
+http://www.antivirus.com/vinfo/security/fix_sircam.com
+
+Another Trojan Fix Tool
+http://www.sarc.com/avcenter/FixSirc.com
+The fix tool will run from your desktop and will "automatically" 
+rid your computer from the SirCam Trojan and clean up an 
+entries from your registry files.
+
+After running either fix tool -- reboot your system.
+
+Hope this helps!
+
+Richard
+homeaffiliate@mail.com
+
+
+
+
+>>>>>> QUESTIONS & ANSWERS <<<<<<
+Submit your questions & answers to MyInput@AEOpublishing.com
+
+ANSWERS:
+
+From:  WonderPaint   - support@wonderpaint.com
+Subject:  Many factors in the operating system that cause conflicts
+
+>From:  NICETY7078@aol.com 
+>Subject:  What can I do about my computer freezing? (Issue #439)
+>
+>My computer freezes when I use AOL and sometimes when 
+>I'm just using the basic functions of Windows 98. My 
+>defragmentor  keeps starting over and over and my scan 
+>disk never finds anything wrong, but there has to be. 
+
+Dear Nicety,
+
+As regards your problem with Windoze freezing and locking 
+up your computer I'm afraid your "SOL" as finding a true solution.  
+There are many factors in the operating system that cause conflicts 
+resulting in a locked machine.  One major problem is that many 
+programs don't release memory when you exit.  When working 
+in Windoze I've always taken the approach of rebooting on a 
+regular basis before I've had problems, especially if I've opened 
+and closed several different applications.
+
+Back in August 1999 John Kirch, a Microsoft Certified Professional,
+wrote an extensive article discussing the merits of a *nix operating
+system vs Windows NT.  You can read it at 
+http://www.unix-vs-nt.org/kirch/.  What was true back then is 
+even truer today.  Every current "worm" you are hearing about 
+on the news lately occurs in Windoze operating systems. 
+
+ So, IMHO, the solution to your machine locking-up is to change 
+the OS.  Running Linux, my machine has been up for periods of 
+weeks at a time with no need to reboot.  In over a year of running 
+I can count the lock-ups on one hand and have fingers left over. 
+I have more software installed than I ever had in Windoze ... and 
+the price is right -- free.
+
+Jim Shofstall
+webmaster@wonderpaint.com
+http://www.wonderpaint.com
+
+______________________________________________________
+
+
+>>>>>> WEBSITE SHOWCASES <<<<<<
+
+Examine carefully - those with email addresses included WILL
+trade links with you, you are encouraged to contact them. And,
+there are many ways to build a successful business. Just look at
+these successful sites/programs other members are involved in...
+-------------------------------------------------
+
+Stop! - Find Out If You Qualify... 
+to Make $339-$527 A Week On-line or Off-line... 
+At Home On Your Computer. 
+mailto:wealthsolo@infogeneratorpro.com
+Free helpful file reveals Qualifications.
+-------------------------------------------------
+
+"It's The Most D-A-N-G-E-R-O-U-S Book on the Net" 
+Email 20,000 Targeted Leads Every Single Day! Slash Your 
+Time Online to just 1-2 Hours Daily! Build 11 Monthly 
+Income Streams Promoting ONE URL! Start building 
+YOUR Business - NOT everyone elses! 
+http://www.roibot.com/w.cgi?R8901_bd_shwc 
+-------------------------------------------------
+
+Start making money online right now Guaranteed! Look at 
+what you get for only $24.95:  (100% money back guarantee)
+ - Our exclusive money making internet marketing kit.
+ - Your own cash creating website ready to make money now.
+ - Live support ready to set up your website right now.
+Check it out at http://by.advertising.com/1/c/22555/26593/81371/81371
+-------------------------------------------------
+
+Attention All Web Marketers-$30k-$100k CASH This Year
+No experience needed, No product to sell. 
+The real go getters can make $100,000.00 CASH,in their first month
+This is very powerful, contact me TODAY ycon@home.com 
+or goto: http://www.makecashonline.com  GET EXCITED :)
+Trade Links - mailto:ycon@home.com
+-------------------------------------------------
+
+If you have a product, service, opportunity and/or quality
+merchandise that appeals to people worldwide, reach your
+target audience!
+
+For a fraction of what other large newsletters charge you
+can exhibit your website here for only $8 CPM. Why?...
+Because as a valuable member we want you to be successful!
+Order today - Exhibits are limited and published on a
+first come, first serve basis. http://bannersgomlm.com/ezine
+______________________________________________________
+
+>>>>>> MEMBER *REVIEWS* <<<<<<
+
+Visit these sites, look for what you like and any suggestions
+you can offer, and send your critique to MyInput
+And, after reviewing three sites, your web site will be added to
+the list! It's fun, easy, and it's a great opportunity to give
+some help and receive an informative review of your own site.
+Plus, you can also win a chance to have y our site chosen for
+a free website redesign. One randomly drawn winner each month!
+
+
+SITES TO REVIEW:
+
+Site #141:  http://www.floridarental.co.uk
+Carol Hall
+carol@floridarental.co.uk
+
+Site #142:  http://www.sharesmiles.com
+James Garrison
+webmaster@sharesmiles.com
+
+Site #143:  http://www.selltheworldonline.com/default2.asp?ref=1282
+gofreet@yahoo.com.au
+
+Site #144:  http://www.tpcenterprises.com/
+info@tpcenterprises.com
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+SITE  REVIEWED!
+
+Comments on Site #140:  http://www.prosperouswomen.bizland.com/masterminding
+Margarete
+MDegaston@aol.com
+~~~~
+
+I really love clean, uncluttered, easy to read and navigate 
+sites like these two. They are both very attractive and well 
+presented.  In my opinion, the book site could have been 
+a little softer, or with similar characteristics to the next site, 
+preparing me for the site that it links to, and having a 
+relationship to it.
+
+What I did feel most, was that I was expecting something 
+related to the url  "prosperouswomen" to come up, as this 
+"word" was what caught my attention and caused me to 
+click in the first place.
+
+I feel the book page should be a tool for the "PW" page and 
+not a preface to it.  The main site should be the PW and the 
+book site could be a link or a popup or an additional page.
+(You need to take e out of changing on the book page.)
+
+With these:
+
+Find out how you can receive the free book.
+Email us at directions4U@aol.com        
+and
+For this and a number of other free books on networkmarketing 
+write to us at directions4U@aol.com
+
+I would have liked these to be clickable links, rather than 
+copy and paste.
+
+Very nice job on the sites, Margarete ... I really liked them. 
+(and I have ordered the book!)
+~~~~
+
+I waited over 70 seconds and had yet to see the first page.  
+Could not determine if this was related to volume of graphics 
+or where we were headed.
+~~~~
+
+Very clear, focused site with one page promoting a free book.
+
+Don't underline text unless it's a link, or somehow distinguish 
+between the links and that which is not.
+
+I finally figured out the logo for properouswomen was also 
+linked so I checked that out also. I think you need to make that 
+link more noticeable, and also link to your bizland site.
+
+If you used a form for ordering the book instead of sending a 
+request message to an aol email address you would get more 
+requests, and also might be able to automate this process.
+~~~~
+
+I loved this site because it was clear, simple and to the point.
+It also peaked my curiosity and I followed the link supplied.  
+If only other sites we so simplistic!
+~~~~
+
+With the masterminding site, the first sentence 'Major Impact 
+on Your Life' is incomplete. There were also run-on sentences 
+in the copy, even though the copy is quite effective. The box 
+with "Life Changeing Insight" needs the 'e' taken out of 
+'changeing', and it looked like the text could have been extended 
+to go from side to side. In the first paragraph  '... an amazing 100 
+year old text...' felt like it should be 'book' or 'secret' instead of 
+using the word 'text'.  Also it would add credibility to say where 
+or how or by whom it was discovered.
+
+The message is clear, the site design simple. Two things that 
+would make the site more effective (on getting people to request 
+the book) would be to say if this is an ebook, how long it is, in 
+what format it is, etc. and then also using a form for people to 
+order instead of emailing. You should be able to pick up a form 
+for this just about anywhere.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+______________________________________________________
+moderator: Amy Mossel:  Moderator@AEOpublishing.com
+posting:  MyInput@AEOpublishing.com
+______________________________________________________
+
+Send posts and questions (or your answers) to:
+   mailto:MyInput@AEOpublishing.com
+Please send suggestions and comments to:
+   mailto:Moderator@AEOpublishing.com
+
+To change your subscribed address, send both new
+and old address to mailto:Moderator@AEOpublishing.com
+See below for unsubscribe instructions.
+
+Copyright 2001 AEOpublishing
+
+----- End of Your Membership Exchange
+------------------------------------------------
+
+
+------------------------------------------------
+
+This email has been sent to jm@netnoteinc.com at your 
+request, by Your Membership Newsletter Services.
+
+Visit our Subscription Center to edit your interests or unsubscribe.
+http://ccprod.roving.com/roving/d.jsp?p=oo&id=bd7n7877.6vihnja6&m=bd7n7877&ea=jm@netnoteinc.com
+
+View our privacy policy: http://ccprod.roving.com/roving/CCPrivacyPolicy.jsp
+
+Powered by 
+Constant Contact(R)
+www.constantcontact.com
+--90840724.996748272348.JavaMail.RovAdmin.rovweb003
+Content-Type: text/html; charset=iso-8859-1
+
+<HTML>
+<!-- 
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTML-FORMATTED MESSAGE BELOW
+
+The remainder of this message is in HTML format for use by email
+clients that can properly display it.   If you are seeing this message,
+it is because your email client cannot properly display HTML.  You can
+ignore the HTML code you will see below.
+
+
+
+
+
+
+
+
+
+ -->
+<head>
+	<title>Your Membership Exchange, #441</title>
+</head>
+<body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<IMG SRC="http://ccprod.roving.com/roving/sa/o.jsp?id=bd7n7877.6vihnja6&o=http://ccprod.roving.com/roving/images/p1x1.gif" WIDTH=1 HEIGHT=1 alt=" ">
+<!--  Do NOT delete previous line if you want to get statistics on the number of opened emails  -->
+<center>
+<!-- Begin Logo Include -->
+
+<!-- START CONDITIONAL HTML HIDING 
+ 
+            <img src="" border="0" vspace="2" alt="">
+ 
+ END OF CONDITIONAL HTML HIDING --> 
+ 
+<!-- End Logo Include -->
+<table border="0" cellpadding="0" cellspacing="0" width="575">
+<tr>
+	<td width="25"><img src="http://ccprod.roving.com/roving/images/letters/gray-corner-tl.gif" width="25" height="25" border="0" alt=""></td>
+	<td width="525" bgcolor="#666666"> </td>
+	<td width="25" bgcolor="#666666"> </td>
+</tr>
+<!-- Begin Title Row -->
+<tr>
+	<td width="25" bgcolor="#666666"> </td>
+	<td width="525" bgcolor="#CCCCCC"> <font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="5" color="#870000">Your Membership Exchange, Issue #441</font></td>
+	<td width="25" bgcolor="#666666"> </td>
+</tr>
+<!-- End Title Row -->
+<!-- Begin Date String Row -->
+<tr>
+	<td width="25" bgcolor="#666666"> </td>
+	<td width="525" bgcolor="#CCCCCC" align="right"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="2" color="#000000">August 2, 2001</font> </td>
+	<td width="25" bgcolor="#666666"> </td>
+</tr>
+<!-- End Date String Row -->
+<tr>
+	<td width="575" colspan="3" height="1" bgcolor="#666666"><img src="http://ccprod.roving.com/roving/images/letters/spacer.gif" width="1" height="1" border="0" alt=""></td>
+</tr>
+<tr>
+	<td width="25" bgcolor="#870000"> </td>
+	<td width="525" bgcolor="#FFFFFF">
+	<!-- Begin Content Table -->
+	<table border="0" cellpadding="6" cellspacing="0" width="100%">
+	<tr>
+		<td width="100%">
+		<font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="2" color="#000000">
+		<!-- Begin Greeting -->
+		Your place to exchange ideas, ask questions, swap links, and share your skills!
+		<!-- End Greeting -->
+		
+		<!-- Begin Letter Body -->
+		<p>______________________________________________________
+<br>You are a member in at least one of these programs
+<br>- You should be in them all!
+<br><a href="http://www.BannersGoMLM.com">BannersGoMLM.com</a>
+<br><a href="http://www.ProfitBanners.com">ProfitBanners.com</a>
+<br><a href="http://www.CashPromotions.com">CashPromotions.com</a>
+<br><a href="http://www.MySiteInc.com">MySiteInc.com</a>
+<br><a href="http://www.TimsHomeTownStories.com">TimsHomeTownStories.com</a>
+<br><a href="http://www.FreeLinksNetwork.com">FreeLinksNetwork.com</a>
+<br><a href="http://www.MyShoppingPlace.com">MyShoppingPlace.com</a>
+<br><a href="http://www.BannerCo-op.com">BannerCo-op.com</a>
+<br><a href="http://www.PutPEEL.com">PutPEEL.com</a>
+<br><a href="http://www.PutPEEL.net">PutPEEL.net</a>
+<br><a href="http://www.SELLinternetACCESS.com">SELLinternetACCESS.com</a>
+<br><a href="http://www.Be-Your-Own-ISP.com">Be-Your-Own-ISP.com</a>
+<br><a href="http://www.SeventhPower.com">SeventhPower.com</a>
+<br>______________________________________________________<br>
+<br>Today's Special Announcement:
+<p>Right now, this week only - We have left over inventory, it's
+<br>unsold, but not for long.&nbsp; If you could use 1 million banner
+<br>ads all targeted and dirt cheap go here today. This package
+<br>is guaranteed!! It's tough to fail when you can show your ad
+<br>to 1,000 people for less than a buck! A free custom banner
+<br>will be made for you with this deal!
+<br><a href="http://BannersGoMLM.com/promo/million-nl.html">http://BannersGoMLM.com/promo/million-nl.html</a>
+<br>______________________________________________________
+		<p><p>>> Ideas, Tips, &amp; Information
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; R. DeLong:
+More on the SirCam virus
+<p>>> Q &amp; A
+<br>&nbsp;&nbsp; ANSWERS:
+<br>&nbsp;&nbsp;&nbsp;&nbsp; - What can I do about my computer freezing?
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; J. Shofstall:
+Many factors in the operating system that cause conflicts
+<p>>> MEMBER SHOWCASES
+<p>>> MEMBER *REVIEWS*
+<br>&nbsp;&nbsp;&nbsp;&nbsp; - Sites to Review: #141, #142, #143&nbsp;
+&amp; #144!
+<br>&nbsp;&nbsp;&nbsp;&nbsp; - Site #140 Reviewed!
+<p>______________________________________________________
+<p>>>>>>> Ideas, Tips, &amp; Information &lt;&lt;&lt;&lt;&lt;&lt;
+<p><i>Do you have a special software program you find helpful, or</i>
+<br><i>even absolutely necessary? A neat tip that makes your online</i>
+<br><i>life a little easier? Share it and help other members save time,</i>
+<br><i>frustration, and a few steps in the learning curve. Submit</i>
+<br><i>your ideas, tips and information to <a href="mailto:MyInput@AEOpublishing.com">MyInput@AEOpublishing.com</a></i>
+<p>From:&nbsp; Richard DeLong&nbsp;&nbsp; - homeaffiliate@mail.com
+<br>Subject:&nbsp; More on the SirCam virus
+<p>In Exchange Issue #440, JT wrote...
+<p>>It's called the SirCam virus, and when it spreads, it sends
+<br>>an apparently random file from the harddrives of infected
+<br>>computers along with it. ANY file on your machine could
+<br>>be copied and sent to hundreds of other users.
+<p>I also have received both the virus and email on how to get
+<br>rid of it.&nbsp; Luckily I don't open ANY attachments, unless I'm
+<br>expecting them and then am still very careful.
+<p>Here's the ways I was told to get rid of the thing:
+<p>One Fix Tool:
+<p>Download fix_sircam.com and run the file. It will scan Drive
+<br>C:\ and subfolders and runs in DOS.
+<br><a href="http://www.antivirus.com/vinfo/security/fix_sircam.com">http://www.antivirus.com/vinfo/security/fix_sircam.com</a>
+<p>Another Trojan Fix Tool
+<br><a href="http://www.sarc.com/avcenter/FixSirc.com">http://www.sarc.com/avcenter/FixSirc.com</a>
+<br>The fix tool will run from your desktop and will "automatically"
+<br>rid your computer from the SirCam Trojan and clean up an
+<br>entries from your registry files.
+<p>After running either fix tool -- reboot your system.
+<p>Hope this helps!
+<p>Richard
+<br>homeaffiliate@mail.com
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<p>>>>>>> <b>QUESTIONS &amp; ANSWERS</b> &lt;&lt;&lt;&lt;&lt;&lt;
+<br><i>Submit your questions &amp; answers to <a href="mailto:MyInput@AEOpublishing.com">MyInput@AEOpublishing.com</a></i>
+<p><b>ANSWERS:</b>
+<p>From:&nbsp; WonderPaint&nbsp;&nbsp; - support@wonderpaint.com
+<br>Subject:&nbsp; Many factors in the operating system that cause conflicts
+<p>>From:&nbsp; NICETY7078@aol.com
+<br>>Subject:&nbsp; What can I do about my computer freezing? (Issue #439)
+<br>>
+<br>>My computer freezes when I use AOL and sometimes when
+<br>>I'm just using the basic functions of Windows 98. My
+<br>>defragmentor&nbsp; keeps starting over and over and my scan
+<br>>disk never finds anything wrong, but there has to be.
+<p>Dear Nicety,
+<p>As regards your problem with Windoze freezing and locking
+<br>up your computer I'm afraid your "SOL" as finding a true solution.
+<br>There are many factors in the operating system that cause conflicts
+<br>resulting in a locked machine.&nbsp; One major problem is that many
+<br>programs don't release memory when you exit.&nbsp; When working
+<br>in Windoze I've always taken the approach of rebooting on a
+<br>regular basis before I've had problems, especially if I've opened
+<br>and closed several different applications.
+<p>Back in August 1999 John Kirch, a Microsoft Certified Professional,
+<br>wrote an extensive article discussing the merits of a *nix operating
+<br>system vs Windows NT.&nbsp; You can read it at
+<br><a href="http://www.unix-vs-nt.org/kirch/">http://www.unix-vs-nt.org/kirch/</a>.&nbsp;
+What was true back then is
+<br>even truer today.&nbsp; Every current "worm" you are hearing about
+<br>on the news lately occurs in Windoze operating systems.
+<p>&nbsp;So, IMHO, the solution to your machine locking-up is to change
+<br>the OS.&nbsp; Running Linux, my machine has been up for periods of
+<br>weeks at a time with no need to reboot.&nbsp; In over a year of running
+<br>I can count the lock-ups on one hand and have fingers left over.
+<br>I have more software installed than I ever had in Windoze ... and
+<br>the price is right -- free.
+<p>Jim Shofstall
+<br>webmaster@wonderpaint.com
+<br><a href="http://www.wonderpaint.com">http://www.wonderpaint.com</a>
+		<p><p>______________________________________________________
+<p>>>>>>> <b>WEBSITE SHOWCASES</b> <<<<<<
+<p><i>Examine carefully - those with email addresses included WILL</i>
+<br><i>trade links with you, you are encouraged to contact them. And,</i>
+<br><i>there are many ways to build a successful business. Just look at</i>
+<br><i>these successful sites/programs other members are involved in..</i>
+<br>-------------------------------------------------
+<p>Stop! - Find Out If You Qualify...
+<br>to Make $339-$527 A Week On-line or Off-line...
+<br>At Home On Your Computer.
+<br><a href="mailto:wealthsolo@infogeneratorpro.com">mailto:wealthsolo@infogeneratorpro.com</a>
+<br>Free helpful file reveals Qualifications.
+<br>-------------------------------------------------
+<p>"It's The Most D-A-N-G-E-R-O-U-S Book on the Net"
+<br>Email 20,000 Targeted Leads Every Single Day! Slash Your
+<br>Time Online to just 1-2 Hours Daily! Build 11 Monthly
+<br>Income Streams Promoting ONE URL! Start building
+<br>YOUR Business - NOT everyone elses!
+<br><a href="http://www.roibot.com/w.cgi?R8901_bd_shwc">http://www.roibot.com/w.cgi?R8901_bd_shwc</a>
+<br>-------------------------------------------------
+<p>Start making money online right now Guaranteed! Look at
+<br>what you get for only $24.95:&nbsp; (100% money back guarantee)
+<br>&nbsp;- Our exclusive money making internet marketing kit.
+<br>&nbsp;- Your own cash creating website ready to make money now.
+<br>&nbsp;- Live support ready to set up your website right now.
+<br>Check it out at <a href="http://by.advertising.com/1/c/22555/26593/81371/81371">http://by.advertising.com/1/c/22555/26593/81371/81371</a>
+<br>-------------------------------------------------
+<p>Attention All Web Marketers-$30k-$100k CASH This Year
+<br>No experience needed, No product to sell.
+<br>The real go getters can make $100,000.00 CASH,in their first month
+<br>This is very powerful, contact me TODAY ycon@home.com
+<br>or goto: <a href="http://www.makecashonline.com">http://www.makecashonline.com</a>&nbsp;
+GET EXCITED :)
+<br>Trade Links - <a href="mailto:ycon@home.com">mailto:ycon@home.com</a>
+<br>-------------------------------------------------
+<p><i>If you have a product, service, opportunity and/or quality</i>
+<br><i>merchandise that appeals to people worldwide, reach your</i>
+<br><i>target audience!</i>
+<p><i>For a fraction of what other large newsletters charge you</i>
+<br><i>can exhibit your website here for only $8 CPM. Why?...</i>
+<br><i>Because as a valuable member we want you to be successful!</i>
+<br><i>Order today - Exhibits are limited and published on a</i>
+<br><i>first come, first serve basis. <a href="http://bannersgomlm.com/ezine">http://bannersgomlm.com/ezine</a></i>
+<br>
+		<p><br>______________________________________________________
+<p>>>>>>> <b>MEMBER *REVIEWS*</b> &lt;&lt;&lt;&lt;&lt;&lt;
+<p>Visit these sites, look for what you like and any suggestions
+<br>you can offer, and send your critique to MyInput
+<br>And, after reviewing three sites, your web site will be added to
+<br>the list! It's fun, easy, and it's a great opportunity to give
+<br>some help and receive an informative review of your own site.
+<br>Plus, you can also win a chance to have y our site chosen for
+<br>a free website redesign. One randomly drawn winner each month!
+<br>&nbsp;
+<p><b>SITES TO REVIEW:</b>
+<p>Site #141:&nbsp; <a href="http://www.floridarental.co.uk">http://www.floridarental.co.uk</a>
+<br>Carol Hall
+<br>carol@floridarental.co.uk
+<p>Site #142:&nbsp; <a href="http://www.sharesmiles.com">http://www.sharesmiles.com</a>
+<br>James Garrison
+<br>webmaster@sharesmiles.com
+<p>Site #143:&nbsp; <a href="http://www.selltheworldonline.com/default2.asp?ref=1282">http://www.selltheworldonline.com/default2.asp?ref=1282</a>
+<br>gofreet@yahoo.com.au
+<p>Site #144:&nbsp; <a href="http://www.tpcenterprises.com/">http://www.tpcenterprises.com/</a>
+<br>info@tpcenterprises.com
+<p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<p><b>SITE&nbsp; REVIEWED!</b>
+<p>Comments on Site #140:&nbsp; <a href="http://www.prosperouswomen.bizland.com/masterminding">http://www.prosperouswomen.bizland.com/masterminding</a>
+<br>Margarete
+<br>MDegaston@aol.com
+<br>~~~~
+<p>I really love clean, uncluttered, easy to read and navigate
+<br>sites like these two. They are both very attractive and well
+<br>presented.&nbsp; In my opinion, the book site could have been
+<br>a little softer, or with similar characteristics to the next site,
+<br>preparing me for the site that it links to, and having a
+<br>relationship to it.
+<p>What I did feel most, was that I was expecting something
+<br>related to the url&nbsp; "prosperouswomen" to come up, as this
+<br>"word" was what caught my attention and caused me to
+<br>click in the first place.
+<p>I feel the book page should be a tool for the "PW" page and
+<br>not a preface to it.&nbsp; The main site should be the PW and the
+<br>book site could be a link or a popup or an additional page.
+<br>(You need to take e out of changing on the book page.)
+<p>With these:
+<p>Find out how you can receive the free book.
+<br>Email us at directions4U@aol.com
+<br>and
+<br>For this and a number of other free books on networkmarketing
+<br>write to us at directions4U@aol.com
+<p>I would have liked these to be clickable links, rather than
+<br>copy and paste.
+<p>Very nice job on the sites, Margarete ... I really liked them.
+<br>(and I have ordered the book!)
+<br>~~~~
+<p>I waited over 70 seconds and had yet to see the first page.
+<br>Could not determine if this was related to volume of graphics
+<br>or where we were headed.
+<br>~~~~
+<p>Very clear, focused site with one page promoting a free book.
+<p>Don't underline text unless it's a link, or somehow distinguish
+<br>between the links and that which is not.
+<p>I finally figured out the logo for properouswomen was also
+<br>linked so I checked that out also. I think you need to make that
+<br>link more noticeable, and also link to your bizland site.
+<p>If you used a form for ordering the book instead of sending a
+<br>request message to an aol email address you would get more
+<br>requests, and also might be able to automate this process.
+<br>~~~~
+<p>I loved this site because it was clear, simple and to the point.
+<br>It also peaked my curiosity and I followed the link supplied.
+<br>If only other sites we so simplistic!
+<br>~~~~
+<p>With the masterminding site, the first sentence 'Major Impact
+<br>on Your Life' is incomplete. There were also run-on sentences
+<br>in the copy, even though the copy is quite effective. The box
+<br>with "Life Changeing Insight" needs the 'e' taken out of
+<br>'changeing', and it looked like the text could have been extended
+<br>to go from side to side. In the first paragraph&nbsp; '... an amazing
+100
+<br>year old text...' felt like it should be 'book' or 'secret' instead
+of
+<br>using the word 'text'.&nbsp; Also it would add credibility to say where
+<br>or how or by whom it was discovered.
+<p>The message is clear, the site design simple. Two things that
+<br>would make the site more effective (on getting people to request
+<br>the book) would be to say if this is an ebook, how long it is, in
+<br>what format it is, etc. and then also using a form for people to
+<br>order instead of emailing. You should be able to pick up a form
+<br>for this just about anywhere.
+<br>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<br>______________________________________________________
+		<p><br>moderator: Amy Mossel&nbsp; <a href="mailto:Moderator@AEOpublishing.com">Moderator</a>
+<br>posting:&nbsp;&nbsp; <a href="mailto:MyInput@AEOpublishing.com">MyInput@AEOpublishing.com</a>
+<br>______________________________________________________
+<p>Send posts and questions (or your answers) to:
+<br>&nbsp;&nbsp; <a href="mailto:MyInput@AEOpublishing.com">MyInput@AEOpublishing.com</a>
+<br>Please send suggestions and comments to:
+<br>&nbsp;&nbsp; <a href="mailto:Moderator@AEOpublishing.com">Moderator@AEOpublishing.com</a>
+<p>To change your subscribed address, send both new
+<br>and old address to <a href="mailto:Moderator@AEOpublishing.com">Moderator@AEOpublishing.com</a>
+<br>See below for unsubscribe instructions.
+<p>Copyright 2001 AEOpublishing
+<p>----- End of Your Membership Exchange
+		<!-- End Letter Body -->
+		
+		<!-- Begin Signature  -->
+		<p>
+		
+		<p>
+		<br>
+		<hr width="60%" size="1" align="left" NOSHADE>
+		<br>
+		
+
+		<!-- End Signature  -->
+		</font>
+		</td>
+	</tr>
+	</table>
+	<!-- End Content Table -->
+	</td>
+	<td width="25" bgcolor="#870000"> </td>
+</tr>
+<!-- Begin Phone Number Row -->
+<tr>
+	<td width="25" bgcolor="#870000"> </td>
+	<td width="525" bgcolor="#870000" align="right"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1" color="#FFFFFF"> </font></td>
+	<td width="25"><img src="http://ccprod.roving.com/roving/images/letters/red-corner-br.gif" width="25" height="25" border="0" alt=""></td>
+</tr>
+<!-- End Phone Number Row -->
+<tr>
+	<td colspan="3" bgcolor="#FFFFFF" align="center">
+	<!--  You are required by your Constant Contact user agreement to
+      provide the opt-out link shown below as by the property 'OptOut' -->
+
+	<font face="Verdana,Arial,Helvetica,sans-serif" size="1">
+	<br>This email was sent to jm@netnoteinc.com, at your request, by <a href="http://ccprod.roving.com/roving/sa/s.jsp?id=bd7n7877.6vihnja6">Your Membership Newsletter Services</a>.  
+	<br>Visit our Subscription Center to <a href="http://ccprod.roving.com/roving/d.jsp?p=oo&id=bd7n7877.6vihnja6&m=bd7n7877&ea=jm@netnoteinc.com">edit</a> your interests or <a href="http://ccprod.roving.com/roving/d.jsp?p=oo&id=bd7n7877.6vihnja6&m=bd7n7877&ea=jm@netnoteinc.com">unsubscribe</a>.
+	<br>View our <a href="http://ccprod.roving.com/roving/CCPrivacyPolicy.jsp">privacy policy</a>.
+	<p>Powered by
+	<br><a href="http://www.constantcontact.com/index.jsp?cc=ctrlr" target="_blank"><img src="http://ccprod.roving.com/roving/images/cc-logo-color-sm.gif" border="0" alt="Constant Contact"></a>
+	</font>
+	<!-- end opt-out area -->
+	</td>
+</tr>
+</table>
+
+</center>
+</body>
+</html>
+--90840724.996748272348.JavaMail.RovAdmin.rovweb003--
+
+
+

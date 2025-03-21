@@ -1,0 +1,63 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2017 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Prints an approximate number of bytes per file type.
+#
+# <percentage> <total_bytes> <number_of_files> <average> <file_type>
+#
+# Notes:
+#
+# -   `README.md` files are included in Markdown statistics.
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to compute the number of bytes per file:
+bytes_per_file="${root}/tools/git/scripts/bytes_per_file"
+
+# * `bytes_per_files`
+#   - Compute the number of bytes per file.
+# * `awk '{}'`
+#   - Compute statistics.
+# * `sort -nr`
+#   - Sort in reverse numeric order.
+"${bytes_per_file}" | awk '
+$3 ~ /README\.md$/ {
+	bytes["README"] += $2
+	N["README"] += 1
+}
+
+{
+	bytes[$1] += $2
+	N[$1] += 1
+
+	bytes["total"] += $2
+	N["total"] += 1
+}
+
+END {
+	total = bytes["total"]
+	for (k in bytes) {
+		len = bytes[k];
+		n = N[k]
+		pct = int(len/total*10000)/10000
+		mu = int(len/n*10000)/10000
+		print pct OFS len OFS n OFS mu OFS k
+	}
+}
+' | sort -nr

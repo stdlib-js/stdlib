@@ -1,0 +1,10 @@
+
+Usage: repstr [options] --n <repeats> [<string>]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --n repeats           Number of repetitions.
+         --split sep           Delimiter for stdin data. Default: '/\\r?\\n/'.
+

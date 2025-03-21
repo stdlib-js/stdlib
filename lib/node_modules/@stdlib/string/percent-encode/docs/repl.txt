@@ -1,0 +1,22 @@
+
+{{alias}}( str )
+    Percent-encodes a UTF-16 encoded string according to RFC 3986.
+
+    Parameters
+    ----------
+    str: string
+        UTF-16 encoded string.
+
+    Returns
+    -------
+    out: string
+        Percent-encoded string.
+
+    Examples
+    --------
+    > var out = {{alias}}( '☃' )
+    '%E2%98%83'
+
+    See Also
+    --------
+

@@ -1,0 +1,76 @@
+
+{{alias}}( [x0, Ɣ] )
+    Returns a Cauchy distribution object.
+
+    Parameters
+    ----------
+    x0: number (optional)
+        Location parameter. Default: `0.0`.
+
+    Ɣ: number (optional)
+        Scale parameter. Must be greater than `0`. Default: `1.0`.
+
+    Returns
+    -------
+    cauchy: Object
+        Distribution instance.
+
+    cauchy.x0: number
+        Location parameter.
+
+    cauchy.gamma: number
+        Scale parameter. If set, the value must be greater than `0`.
+
+    cauchy.entropy: number
+        Read-only property which returns the differential entropy.
+
+    cauchy.median: number
+        Read-only property which returns the median.
+
+    cauchy.mode: number
+        Read-only property which returns the mode.
+
+    cauchy.cdf: Function
+        Evaluates the cumulative distribution function (CDF).
+
+    cauchy.logcdf: Function
+        Evaluates the natural logarithm of the cumulative distribution function
+        (CDF).
+
+    cauchy.logpdf: Function
+        Evaluates the natural logarithm of the probability density function
+        (PDF).
+
+    cauchy.pdf: Function
+        Evaluates the probability density function (PDF).
+
+    cauchy.quantile: Function
+        Evaluates the quantile function at probability `p`.
+
+    Examples
+    --------
+    > var cauchy = {{alias}}( 0.0, 1.0 );
+    > cauchy.x0
+    0.0
+    > cauchy.gamma
+    1.0
+    > cauchy.entropy
+    ~2.531
+    > cauchy.median
+    0.0
+    > cauchy.mode
+    0.0
+    > cauchy.cdf( 0.8 )
+    ~0.715
+    > cauchy.logcdf( 1.0 )
+    ~-0.288
+    > cauchy.logpdf( 1.0 )
+    ~-1.838
+    > cauchy.pdf( 1.0 )
+    ~0.159
+    > cauchy.quantile( 0.8 )
+    ~1.376
+
+    See Also
+    --------
+

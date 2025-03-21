@@ -1,0 +1,117 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Sun Sep  8 23:57:37 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 3215C16F1A
+	for <jm@localhost>; Sun,  8 Sep 2002 23:51:55 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sun, 08 Sep 2002 23:51:55 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g88EIdC32338 for <jm-sa@jmason.org>; Sun, 8 Sep 2002 15:18:44 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17o2t3-0004jQ-00; Sun,
+    08 Sep 2002 07:18:05 -0700
+Received: from mailout10.sul.t-online.com ([194.25.134.21]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17o2rz-0005Ts-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Sun, 08 Sep 2002 07:16:59 -0700
+Received: from fwd00.sul.t-online.de by mailout10.sul.t-online.com with
+    smtp id 17o2rv-0003dY-00; Sun, 08 Sep 2002 16:16:55 +0200
+Received: from nebukadnezar.msquadrat.de
+    (520061089980-0001@[62.226.214.55]) by fmrl00.sul.t-online.com with esmtp
+    id 17o2rr-1VybIWC; Sun, 8 Sep 2002 16:16:51 +0200
+Received: from otherland (otherland.msquadrat.de [10.10.10.10]) by
+    nebukadnezar.msquadrat.de (Postfix on SuSE Linux 7.3 (i386)) with ESMTP id
+    F3CD32E9 for <spamassassin-talk@lists.sf.net>; Sun,  8 Sep 2002 16:16:50
+    +0200 (CEST)
+Content-Type: text/plain; charset="iso-8859-15"
+From: "Malte S. Stretz" <msquadrat.nospamplease@gmx.net>
+To: spamassassin-talk@example.sourceforge.net
+Subject: Re: [SAtalk] Lotus Notes users?
+User-Agent: KMail/1.4.3
+References: <DDAC0C3D-C298-11D6-B93E-00039396ECF2@hughes-family.org>
+    <yf2admta41m.fsf@proton.pathname.com>
+In-Reply-To: <yf2admta41m.fsf@proton.pathname.com>
+X-Accept-Language: de, en
+X-Habeas-Swe-1: winter into spring
+X-Habeas-Swe-2: brightly anticipated
+X-Habeas-Swe-3: like Habeas SWE (tm)
+X-Habeas-Swe-4: Copyright 2002 Habeas (tm)
+X-Habeas-Swe-5: Sender Warranted Email (SWE) (tm). The sender of this
+X-Habeas-Swe-6: email in exchange for a license for this Habeas
+X-Habeas-Swe-7: Warrant Mark warrants that this is a Habeas Compliant
+X-Habeas-Swe-8: Message (HCM) and not spam. Please report use of this
+X-Habeas-Swe-9: mark in spam to <http://www.habeas.com/report/>.
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Message-Id: <200209081619.34777@malte.stretz.eu.org>
+X-Sender: 520061089980-0001@t-dialin.net
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Sun, 8 Sep 2002 16:19:34 +0200
+Date: Sun, 8 Sep 2002 16:19:34 +0200
+
+On Saturday 07 September 2002 23:22 CET Daniel Quinlan wrote:
+> Craig Hughes <craig@hughes-family.org> writes:
+> > How about configuring SA to set precendence to "low" for spam
+> > messages, then filter on that -- no real human I've ever seen has
+> > actually set precendence to low on real mail.
+>
+> Assuming there isn't a better way for Lotus Notes users, we could
+> create a "Precedence: spam" convention.  The only two Precedence:
+> headers I've seen (aside from one or two odd messages) are "bulk" and
+> "list".  Adding a "spam" header makes sense given the convention.
+
+I'd suggest using Precedence: junk. Albeit it's no standard header does most 
+Software already recognize it. Courier eg. doesn't send auto-replies to 
+mails with the Precedence bulk or junk. I think Outlook does handle these 
+special, too. [1] says:
+| Autoresponses should always contain the header
+|          Precedence: junk
+| Notice the spelling of "prec-e-dence". In particular, count the number of
+| n:s (and a:s and s:es, if you're totally agraphic and/or from the United
+| States). This will prevent well-tempered mail programs from generating
+| bounce messages for these. If the recipient can't be reached, the
+| autoresponder message is simply discarded. 
+| [...]
+| (For what it's worth, the meaning of the Precedence header in practice is
+| that it affects Sendmail so that messages identified as less important get
+| moved back in the queue under high load. [...])
+
+>[...]
+
+Malte
+
+[1] Moronic Mail Autoresponders (A FAQ From Hell):
+http://www.ling.helsinki.fi/users/reriksso/mail/autoresponder-faq.html
+-- 
+--- Coding is art.
+-- 
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

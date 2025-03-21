@@ -1,0 +1,153 @@
+From fork-admin@xent.com  Tue Sep  3 14:24:41 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 04D8916F3D
+	for <jm@localhost>; Tue,  3 Sep 2002 14:22:59 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 03 Sep 2002 14:22:59 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8366uZ07156 for <jm@jmason.org>;
+    Tue, 3 Sep 2002 07:06:57 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 8C84F2940B3; Mon,  2 Sep 2002 23:04:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from venus.phpwebhosting.com (venus.phpwebhosting.com
+    [64.29.16.27]) by xent.com (Postfix) with SMTP id 1A407294099 for
+    <fork@xent.com>; Mon,  2 Sep 2002 23:03:06 -0700 (PDT)
+Received: (qmail 1783 invoked by uid 508); 3 Sep 2002 06:05:30 -0000
+Received: from unknown (HELO hydrogen.leitl.org) (217.80.40.48) by
+    venus.phpwebhosting.com with SMTP; 3 Sep 2002 06:05:30 -0000
+Received: from localhost (eugen@localhost) by hydrogen.leitl.org
+    (8.11.6/8.11.6) with ESMTP id g8365Sb03549; Tue, 3 Sep 2002 08:05:28 +0200
+X-Authentication-Warning: hydrogen.leitl.org: eugen owned process doing -bs
+From: Eugen Leitl <eugen@leitl.org>
+To: <transhumantech@yahoogroups.com>
+Cc: forkit! <fork@spamassassin.taint.org>
+Subject: Making a mesh on the move
+Message-Id: <Pine.LNX.4.33.0209030804570.3124-100000@hydrogen.leitl.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=ISO-8859-1
+Content-Transfer-Encoding: 8BIT
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 3 Sep 2002 08:05:27 +0200 (CEST)
+
+
+http://www.guardian.co.uk/Print/0%2c3858%2c4489999%2c00.html
+
+Making a mesh on the move
+
+A new way to give us fast mobile net access spells further trouble for 3G, 
+reports Peter Rojas
+
+Peter Rojas
+Thursday August 29, 2002
+The Guardian
+
+Imagine being able to surf the net at speeds faster than DSL from 
+anywhere, at any time - you could watch a live video webcast while waiting 
+for the bus, email photos to your friends while sitting in the park, or 
+download the MP3 of the song that's playing in the pub before it finishes.
+
+This is the vision of a high-speed wireless internet paradise that the 
+third-generation (3G) mobile phone companies have been promoting for 
+years. 3G services are just beginning to be rolled out, but a new 
+technology called mesh networking promises to deliver on this vision 
+sooner and more effectively than the mobile phone companies could ever 
+dream.
+
+Two companies, US startup MeshNetworks and Moteran Networks of Germany, 
+are each developing their own competing version of mesh networking. 
+Instead of the current hub-and-spoke model of wireless communications, 
+with every device connecting to an overburdened central antenna, any time 
+"mesh-enabled" devices - mobile phones, PDAs, laptops - are in close 
+proximity to each other, they automatically create a wireless mesh 
+network. Every device in the area acts as a repeater or router, relaying 
+traffic for everyone else. Traffic hops from person to person until it 
+reaches the nearest internet access point, reducing the need for central 
+antennas, and improving wireless coverage.
+
+As the number of mobile phones soars, and wireless PDAs, laptops, and 
+other devices begin to crowd the spectrum, this approach to wireless 
+networking may be inevitable.
+
+Mesh networks also have several other advantages over 3G wireless 
+networks. While 3G operators roll out mobile services that offer users 
+connection speeds of up to 144 kbps (roughly three times faster than a 
+dial-up modem), Moteran and MeshNetworks are able to offer connection 
+speeds of up to 6Mbps, over a hundred times faster than dial-up. The 
+technologies they use include Wi-Fi - the emerging standard for high-speed 
+wireless networking also known as 802.11b. A similarly short-range 
+protocol called UltraWideBand, which is poised to succeed Wi-Fi, is even 
+faster and could, by 2005, approach 400 Mbps.
+
+The range of a typical Wi-Fi network is generally too limited to be of 
+much use when travelling around a city. Mesh networks get around the 
+problem of coverage by having every device in the network relay traffic. 
+Even though the range of any individual device is relatively small, 
+because (in theory) there will be so many users in the surrounding area, 
+connections will be faster and better than that of a standard 3G wireless 
+connection.
+
+Because mesh networks use Wi-Fi, the equipment and infrastructure needed 
+to create them is cheap and readily available. Instead of building 
+cellular phone towers that often cost hundreds of thousands of pounds, all 
+that is needed to get a network going are wireless access points (around 
+£100 now) placed strategically around town to relay traffic, and the 
+proper software. Existing laptops and PDAs can be mesh-enabled by 
+software.
+
+It also means that anyone could set up their own mobile phone network. 
+Unlike with 3G cellular, the part of the spectrum that Wi-Fi operates on 
+is unregulated in the US, Britain. The mobile phone companies are none too 
+pleased about this, especially since many of them spent billions of pounds 
+acquiring 3G licences.
+
+All that's needed are cheap relays and mobile phones equipped to connect 
+to the network. With every additional customer that signs up coverage gets 
+better, instead of getting worse, as is the case with mobile phone 
+networks.
+
+But things get very interesting when you realise that when you have 
+high-speed internet connections everywhere, and everyone's laptops, PDAs, 
+and mobile phones are connected together at blazingly fast speeds, sharing 
+music, movies, or whatever else becomes ridiculously easy. When 
+UltraWideBand hits, all of this will just accelerate.
+
+At 400Mbps, copying a pirated copy of the Lord of the Rings from the 
+person sitting across from you at the cafe would take about 15 seconds. 
+Sooner or later, playgrounds will be filled with kids swapping files of 
+their favourite songs, movies, and video games.
+
+But the first mesh networks are not likely to be available to consumers. 
+MeshNetworks has no plans to offer its own high-speed wireless service. 
+Instead the company plans to sell its technology to others, such as cities 
+that want to provide wireless internet to police, fire, and public works 
+employees, or businesses that want to establish wireless networks on the 
+cheap. Moteran has similar aspirations for small businesses and for 
+enterprise networks.
+
+The first place average users may use the technology is when it is 
+incorporated into vehicles, enabling motorists to access the internet at 
+high speeds, which both companies see happening soon.
+
+When will you be able to wander around town with a 6Mbps connection in 
+your pocket? It's too soon to say, but just as broadband internet service 
+was initially available only to businesses and universities, eventually 
+someone will see the profit in bringing mesh networking to the masses.
+
+
+
+

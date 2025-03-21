@@ -1,0 +1,123 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6NCHIhY071382
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Tue, 23 Jul 2002 07:17:19 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6NCHIjI071378
+	for cypherpunks-forward@ds.pro-ns.net; Tue, 23 Jul 2002 07:17:18 -0500 (CDT)
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6NCHFhX071359
+	for <cypherpunks@ds.pro-ns.net>; Tue, 23 Jul 2002 07:17:16 -0500 (CDT)
+	(envelope-from cpunks@einstein.ssz.com)
+X-Authentication-Warning: hq.pro-ns.net: Host cpunks@[207.200.56.4] claimed to be einstein.ssz.com
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id HAA09169
+	for cypherpunks@ds.pro-ns.net; Tue, 23 Jul 2002 07:25:35 -0500
+Received: (from mdom@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id HAA09088
+	for cypherpunks-outgoing; Tue, 23 Jul 2002 07:24:34 -0500
+Received: from user ([195.166.233.251])
+	by einstein.ssz.com (8.8.8/8.8.8) with SMTP id HAA08882
+	for <cypherpunks@einstein.ssz.com>; Tue, 23 Jul 2002 07:22:13 -0500
+Message-Id: <200207231222.HAA08882@einstein.ssz.com>
+From: "Dr. Kataga Bakori" <kataga@africamail.com>
+To: <cypherpunks@einstein.ssz.com>
+Subject: Awiating your fax response.
+Mime-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Date: Tue, 23 Jul 2002 13:16:23
+Sender: owner-cypherpunks@einstein.ssz.com
+Precedence: bulk
+Reply-To: cypherpunks@einstein.ssz.com
+X-Mailing-List: cypherpunks@ssz.com
+X-Unsubscription-Info: http://einstein.ssz.com/cdr
+X-List-Admin: list@ssz.com
+X-Loop: ssz.com
+X-Acceptable-Languages: English, Russian, German, French, Spanish
+
+(Fax) to  my direct confidential  Fax No: 234 1 7591666  
+
+Dr. Kataga Bakori
+Lagos, Nigeria.
+23rd July 2002
+
+
+Attention President/C.E.O
+                   
+Dear Sir,
+
+REQUEST FOR URGENT BUSINESS RELATIONSHIP.
+
+Firstly I must solicit your strictest confidence in this subject. This is by virtue of its nature as 
+being utterly confidential and top secret. A member of the Nigeria Export Promotion Council 
+(N.E.P.C.) who was part of the federal government delegation to your country during a trade 
+exhibition gave your particulars to me. I have decided to seek a confidential operation with 
+you in the execution of the deal described hereunder for the benefit of all the parties and 
+hope that you keep it top secret because of the nature of the business.
+
+Within the ministry of petroleum resources where I work as a director of engineering and 
+projects, and with the co-operation of four other very top officials, we have under our 
+control as overdue contract payments, bills totaling Thirty One Million United States Dollars, 
+which we want to transfer to a foreign account, with the assistance and co-operation of a 
+foreign company to receive the said funds on our behalf or a reliable foreign individual 
+account to receive the funds.
+
+The source of the fund is as follows: during the last military government here in Nigeria 
+which lasted bout eleven months, government officials set up companies and awarded 
+themselves various contracts which were grossly over-invoiced in various ministries.  The 
+present civilian government is not aware of the atrocities committed by their predecessors 
+and as a result, we have a lot of such over invoiced contract payment s pending which we 
+have identified floating at the central bank of Nigeria ready for payment.  However by virtue 
+of our position as civil servants, we cannot acquire this money in our names.  I was 
+therefore delegated as a matter of urgency by my colleagues to look for an over seas 
+partner into whose account we would transfer the sum of  US$31,000,000.00 (THIRTY 
+ONE MILLION UNITED STATES DOLLARS) hence we are writing you this letter.
+
+ the present civilian government is determined to pay foreign contractors l debts owed 
+so as to maintain an amiable relationship with foreign governments and non-government 
+financial agencies.  We have decided to include our bills for approval with the co-operation 
+of some officials of the federal ministry of finance (F.M.F) and the central bank of Nigeria 
+(C.B.N).  We are seeking your assistance in providing us with a good company account or 
+any other offshore bank account into which we can remit this money by acting our main 
+partner and trustee or acting as the original contractor.  This we can do by swapping of 
+account information and changing of beneficiary and other pertinent information to apply for 
+payment.  By this act, we would be using your company information to apply for payment, 
+and prepare letters of claim and job description on behalf of your company.  This process 
+would be an internal arrangement with the departments concerned.
+
+I have the authority of my partners involved to propose that should you be willing to assist 
+us in this transaction, your share as compensation will be us$6.2 million (20%), us$21.7 
+million (70%) for us and us$3.1 (10%) for 
+taxation and miscellaneous expenses.
+
+The business itself is 100% safe, provided you treat it with utmost secrecy and 
+confidentiality.  Also your area of specialization is not m hindrance to the successful 
+execution of this transaction.  I have reposed my confidence in you and hope that you will 
+not disappoint me. 
+
+I will bring the complete picture of the transaction to your 
+knowledge when I have heard from you.
+
+Thanks for your co-operation,
+
+Yours faithfully,
+
+Dr. Kataga Bakori
+
+NB: Please respond by sending a facsimile (Fax) to  my direct confidential  Fax No: 234 1 
+7591666  
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

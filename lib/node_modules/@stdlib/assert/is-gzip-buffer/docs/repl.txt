@@ -1,0 +1,37 @@
+
+{{alias}}( value )
+    Tests if a value is a gzip buffer.
+
+    A gzip buffer is defined as either a Node.js Buffer or Uint8Array which
+    contains a 10-byte header, a body containing the compressed payload, and an
+    8-byte footer containing a CRC-32 checksum and the length of the original
+    uncompressed data, modulo 2^32.
+
+    This function only examines the 10-byte header to ensure the header includes
+    the expected magic number and compression method. The function does not
+    perform an integrity check.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is a gzip buffer.
+
+    Examples
+    --------
+    > var buf = new {{alias:@stdlib/array/uint8}}( 20 );
+    > buf[ 0 ] = 31;  // 0x1f => magic number
+    > buf[ 1 ] = 139; // 0x8b
+    > buf[ 2 ] = 8;   // 0x08 => compression method
+    > var bool = {{alias}}( buf )
+    true
+    > bool = {{alias}}( [] )
+    false
+
+    See Also
+    --------
+

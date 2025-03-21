@@ -1,0 +1,35 @@
+
+{{alias}}( x )
+    Evaluates the inverse complementary error function.
+
+    The domain of `x` is restricted to `[0,2]`. If `x` is outside this interval,
+    the function returns `NaN`.
+
+    If provided `NaN`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    y: number
+        Function value.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.5 )
+    ~0.4769
+    > y = {{alias}}( 0.8 )
+    ~0.1791
+    > y = {{alias}}( 0.0 )
+    Infinity
+    > y = {{alias}}( 2.0 )
+    -Infinity
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+

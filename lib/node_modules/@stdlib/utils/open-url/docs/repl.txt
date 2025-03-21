@@ -1,0 +1,25 @@
+
+{{alias}}( url )
+    Opens a URL in a user's default browser.
+
+    In a non-browser environment, the function returns an unreferenced child
+    process. In a browser environment, the function returns a reference to a
+    `window` object.
+
+    Parameters
+    ----------
+    url: string
+        URL to open.
+
+    Returns
+    -------
+    out: process|Window
+        Child process or `window` object.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'https://google.com' );
+
+    See Also
+    --------
+

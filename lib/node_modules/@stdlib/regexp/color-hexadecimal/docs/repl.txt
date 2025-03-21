@@ -1,0 +1,67 @@
+
+{{alias}}( [mode] )
+    Returns a regular expression to match a hexadecimal color.
+
+    Parameters
+    ----------
+    mode: string (optional)
+        Color format (`full`, `shorthand`, or `either`).
+
+    Returns
+    -------
+    re: RegExp
+        Regular expression.
+
+    Examples
+    --------
+    > var RE = {{alias}}();
+    > var bool = RE.test( 'ffffff' )
+    true
+    > bool = RE.test( '000' )
+    false
+    > bool = RE.test( 'beep' )
+    false
+
+
+{{alias}}.REGEXP
+    Regular expression to match a full hexadecimal color.
+
+    Examples
+    --------
+    > var bool = {{alias}}.REGEXP.test( 'ffffff' )
+    true
+    > bool = {{alias}}.REGEXP.test( '000' )
+    false
+    > bool = {{alias}}.REGEXP.test( 'beep' )
+    false
+
+
+{{alias}}.REGEXP_SHORTHAND
+    Regular expression to match a shorthand hexadecimal color.
+
+    Examples
+    --------
+    > var bool = {{alias}}.REGEXP_SHORTHAND.test( 'ffffff' )
+    false
+    > bool = {{alias}}.REGEXP_SHORTHAND.test( '000' )
+    true
+    > bool = {{alias}}.REGEXP_SHORTHAND.test( 'beep' )
+    false
+
+
+{{alias}}.REGEXP_EITHER
+    Regular expression to match either a shorthand or full length hexadecimal
+    color.
+
+    Examples
+    --------
+    > var bool = {{alias}}.REGEXP_EITHER.test( 'ffffff' )
+    true
+    > bool = {{alias}}.REGEXP_EITHER.test( '000' )
+    true
+    > bool = {{alias}}.REGEXP_EITHER.test( 'beep' )
+    false
+
+    See Also
+    --------
+

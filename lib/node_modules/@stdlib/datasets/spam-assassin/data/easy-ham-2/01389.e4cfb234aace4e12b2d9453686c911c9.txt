@@ -1,0 +1,335 @@
+From danny@spesh.com  Mon Aug 26 15:16:41 2002
+Return-Path: <danny@spesh.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 1268044166
+	for <jm@localhost>; Mon, 26 Aug 2002 10:15:00 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 15:15:00 +0100 (IST)
+Received: from prune.flirble.org (prune.flirble.org [195.40.6.30]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with SMTP id g7NJmtZ05959 for
+    <jm-ntk@jmason.org>; Fri, 23 Aug 2002 20:48:55 +0100
+Received: (qmail 65940 invoked by uid 7789); 23 Aug 2002 19:23:32 -0000
+Mailing-List: contact ntknow-help@lists.ntk.net; run by ezmlm
+Precedence: bulk
+X-No-Archive: yes
+Delivered-To: mailing list ntknow@lists.ntk.net
+Delivered-To: moderator for ntknow@lists.ntk.net
+Received: (qmail 65889 invoked from network); 23 Aug 2002 19:21:46 -0000
+Date: Fri, 23 Aug 2002 12:21:21 -0700
+From: "Danny O'Brien" <danny@spesh.com>
+To: NTK now <ntknow@lists.ntk.net>
+Subject: NTK now, 2002-08-23
+Message-Id: <20020823192121.GA15812@spesh.com>
+Reply-To: tips@spesh.com
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.4i
+X-Excuse: innocent bystander in Winer vs Lessig mud wrestle
+
+ _   _ _____ _  __ <*the* weekly high-tech sarcastic update for the uk>
+| \ | |_   _| |/ / _ __   __2002-08-23_ o join! mail an empty message to
+|  \| | | | | ' / | '_ \ / _ \ \ /\ / / o ntknow-subscribe@lists.ntk.net
+| |\  | | | | . \ | | | | (_) \ v  v /  o website (+ archive) lives at:
+|_| \_| |_| |_|\_\|_| |_|\___/ \_/\_/   o     http://www.ntk.net/
+
+
+         "Using a laptop computer in the shadow of Big Ben, we
+         identified 26 parcels of confidential computer information."
+                    - and inside each was a delicious chocolate treat
+www.sundaymirror.co.uk/homepage/news/page.cfm?objectid=12125585&method=sm_full
+
+
+                                >> HARD NEWS <<
+                              here falls shoe two
+
+         Well, it's getting late, and the government hasn't fallen,
+         so we better roll the presses on the bad news. The CAMPAIGN
+         FOR DIGITAL RIGHTS published its first in-depth analysis of
+         the EUCD. For this exciting installment, CD-R has
+         concentrated on what it does to people who have to
+         circumvent copy protection to do their job. The short
+         summary is: if they're not a teacher, a prison warder,
+         disabled, or the cops, they can forget their jobs. If you're
+         anyone else - like a musician, or a cryptographer -  and the
+         copy protection says you can't make a backup, you can't. And
+         even if you *are* a teacher or other exceptional person,
+         you'll have to ask the Secretary of State if you can crack
+         the protected CD. In writing. Each time.
+         http://uk.eurorights.org/issues/eucd/ukimpl/
+                                     - oh, don't worry, it gets worse
+         http://www.stand.org.uk/weblog/archive/2002/08/21/000243.php
+                                   - what you can do to stop all this
+
+         But there's plenty more to ooze out of the law than that.
+         One of the big questions about the EUCD is "is it the
+         European DMCA, or what?". Well, the DMCA spurted bad juice
+         in many different directions, but one way in which the two
+         are similiar is over "circumvention devices". Distributing
+         DeCSS, the DVD lobby have claimed, is a crime under the
+         DMCA. DeCSS is code that was also a magically dangerous
+         artifact: a circumvention device. Circumvention devices are
+         about to become illegal here. Specifically, three months in
+         chokey (or two years if you really nark the judge), for
+         those who "distribute otherwise than in the course of a
+         business to such an extent as to affect prejudicially the
+         copyright owner" one of them. "Otherwise in the course of
+         business" is legalese for "as an ordinary punter", so it's
+         not just mod-chip sellers who are liable. Anyone who
+         distributes such satanic machines is also a perp.
+         http://www.stand.org.uk/weblog/archive/2002/08/21/000243.php
+                                   - what you can do to stop all this
+
+         That's not going to go down well with ANDREW SIMMONS.
+         Regular NTK readers will remember Andrew as a lightning rod
+         to lawyers. Not only was he John Doe #13 in the American
+         DeCSS case, but in a completely unrelated affair, he waws
+         threatened with all manner of nastiness just for publishing
+         his list of doomed dotcoms on his Website [NTK 2000-09-22].
+         In the last week, he's had another letter via Demon, finally
+         ordering him to remove his shiny "circumvention device" (aka
+         DeCSS) from his site. It sounds like the lawyers may have
+         shot their wad a tad early: the EUCD rules don't kick in
+         until Christmas. But when the new laws do hit, and if what
+         Andrew's preposterous correspondent says is believed in a UK
+         court, hosting DeCSS *will* mean jail. There's been some
+         talk about how the EUCD rules are better than the DMCA,
+         because they specifically exclude computer programs from the
+         new rules. Well, it looks like DeCSS is no longer just a
+         computer program. From now on, it could become a special "nick me"
+         tag for your Website.
+         http://www.xenoclast.org/free-sklyarov-uk/2002-August/002923.html
+                                                   - here we go again
+         http://www.stand.org.uk/weblog/archive/2002/08/21/000243.php
+                                           - CLICK ON THE DAMN LINK
+
+
+                                >> ANTI-NEWS <<
+                             berating the obvious
+
+         surely approaching the end of the PUERILE GOOGLE MISSPELLINGS
+         soon: http://www.google.com/search?&q=%22penny+farting%22 vs
+         http://groups.google.com/groups?q=%22whitewater+farting%22 -
+         we suspect some people are using "poofreading" deliberately,
+         but probably not "potable document format", or the enigmatic:
+         http://www.google.com/search?q=%22To+Be+Set+Browser+Caption%22
+         ... presumably meant "interfaith" (unless of course they're
+         Mac loyalists): http://www.ntk.net/2002/08/23/dohfaith.gif ...
+         banner ads haven't been getting any less inappropriate either:
+         http://www.ntk.net/2002/08/23/dohcruz.gif ... A Keyboard,
+         Yesterday: http://news.bbc.co.uk/1/hi/technology/2208216.stm
+         ..."A levles" in "Phisics, Information Technoligies, Languges":
+  www.elance.com/c/fp/main/viewprofile.pl?view_person=insspirito&catid=10231
+         ... "Alcohol makes others better-looking" - scientists' shock
+         finding: http://www.msnbc.com/news/796225.asp ... not judging
+         them or anything: http://www.ntk.net/2002/08/23/dohsin.gif ...
+         experience required in handling the *really* big accounts:
+         http://www.ntk.net/2002/08/23/dohgod.gif ...
+
+
+                               >> EVENT QUEUE <<
+                         goto's considered non-harmful
+
+         Is it just us, but just 5 years after Lara Croft appeared on
+         the cover of "The Face", could it be that the PlayStation is
+         now even cooler than ever? As if anyone had any doubts, next
+         week's PLAYSTATION EXPERIENCE (from Thu 2002-08-29, Earl's
+         Court, London) features exclusive demos of imminent releases,
+         teen band "Blazing Squad", skateboarding, BMXing, plus DJ sets
+         from the likes of XFM bootleggers James Hyman and Eddie
+         Temple-Morris. And, best of all, Sony are charging you a mere
+         UKP8 (plus booking fee) for the privilege of allowing them to
+         market all their upcoming titles to you.
+         http://www.ects.co.uk/pressmore.html?type=1&articleID=43
+           - still, Gareth "Gaz Top" Jones is hosting the ECTS awards
+         http://www.caextreme.org/
+                   - coin-op collectors hit San Jose in 2 weeks' time
+         http://www.cobd.co.uk/yakfestpage.htm
+                       - Llamasoft all-dayer in Oxford pub end of Sep
+         http://www.frightfest.co.uk/programme2002.html
+              - this weekend: horror film fest in London, with "Lupo"
+
+
+                                >> TRACKING <<
+               sufficiently advanced technology : the gathering
+
+         The crazy counterintuitive conditional probability world of
+         BAYES THEOREM has a reputation for making judges look stupid
+         in DNA-testing murder cases, and search-engines look even
+         stupider when they suggest "relevant documents" - but it's
+         getting a bit of a re-renaissance in the spam filtering
+         world. Tradition states Naive Bayesian alone doesn't work
+         well enough at filtering by example, so it's good to see
+         dozens of people independently sloshing around the noospere
+         looking for better tweaked solutions. Including, of course,
+         leading noosphere cadet ERIC S RAYMOND, whose Bayesian
+         BOGOFILTER is fast, has extra smarts, and is up to version
+         0.2. Unfortunately, as with Raymond's abandoned kernel
+         configurator and recent anti-gay anti-islam anti-vegetable
+         rants, it requires taking on board just a *bit* too
+         much extra baggage to really take off. Rennies' IFILE around
+         has been around for a while, and has support for MH and
+         mutt. Gary Arnold's BAYESPAM is something he knocked up in
+         Perl for qmail; a good start if you want to try this
+         yourself. Which you should, because nobody's cracked it yet.
+         http://www.paulgraham.com/spam.html
+                   - what i did after i invented another new language
+http://www.sjdm.org/mail-archive/jdm-society/2000-November/002244.html
+- so, given a probability of 1% that a judge has understood Bayes before
+         http://tuxedo.org/~esr/bogofilter/bogofilter.html
+     - of course some say the bogofilter should be on ESR's outgoing mail
+         http://www.ai.mit.edu/~jrennie/ifile/
+                                                 - leading by example
+         http://www.garyarnold.com/projects.php#bayespam
+                                - "Don't hurt me, I'm a C programmer!"
+
+
+                                >> MEMEPOOL <<
+                ceci n'est pas une http://www.gagpipe.com/
+
+         worth it for the elaborate assembly instructions/ blank page
+         excuses alone: http://www.log.dial.pipex.com/things/ ...
+     http://news.yahoo.com/news?tmpl=story2&u=/nm/20020822/ts_nm/bush_dc_14
+         vs http://www.theonion.com/onion3724/bush_vows_to_remove.html
+         ... be a bit funnier if it read them out in her voice as
+         well: http://homepage.ntlworld.com/l_tabraham/jbrr.htm ...
+         hey, in future, why not try sending us these while they're
+         still vaguely topical?: http://www.chthonic.f9.co.uk/24/ vs
+         http://thesurrealist.co.uk/24/ ... When Audiophiles Attack #5
+         (or #6?) - THE QUANTUM PURIFIER: http://www.bybeetech.com/ vs
+     http://www.showandtellmusic.com/pages/galleries/gallery_q/morse.html
+         ... when oh when will the bloggers tire of putting a new word
+         in front of "chalking"?: http://zapatopi.net/psychalking.html
+         ... just one small step closer to "Star Trek" warp drives:
+         http://physicsweb.org/article/news/6/8/11/ ... doing well for
+         "teaser openings": http://humanity.berlios.de/usr-bin-perl/
+         ... CRONENBERG to direct (one of two) upcoming JUDGE DREDD
+         movies?... bloody students: http://www.elve.net/rtips0b.htm ...
+
+
+                                >> GEEK MEDIA <<
+                                  get out less
+
+         TV>> the week's late-night sci-fi selection starts off with
+         Yul Brunner 1970s post-apocalyptic beat-em-up THE ULTIMATE
+         WARRIOR (12.40am, Fri, C5), John "The Last Seduction" Dahl's
+         bonkers brainscanner UNFORGETTABLE (2.05am, Fri, C4), and the
+         seems-to-last-an-eternity STARGATE (11.05pm, Sat, BBC1)... the
+         BBC have swiftly replaced the advertised showing of serial
+         killer psycho-profiler "Messiah 2" with repeats of THE LOST
+         WORLD (9.15pm, Sat, BBC1)... and, considering what came after,
+         AMERICAN PIE (9.05pm, Sat, C4) may be eventually regarded as
+         one of the great teen movies of all time... it's a double-
+         Arnie fertility-horror double-bill in TWINS (6.20pm, Sun,
+         BBC1) and JUNIOR (4.50pm, Mon, BBC1)... Nell McAndrew and
+         Rhona Cameron contribute to a slightly vague interpretation of
+         "celebrity" in I'M A CELEBRITY - GET ME OUT OF HERE! (8pm,
+         Sun, ITV)... WHEN [DIANA] DIED - DEATH OF A PRINCESS (9pm,
+         Sun, C4) contains "scenes of nudity and religious ritual" -
+         funny what people find offensive nowadays ... and Jeff "Tron"
+         Bridges plays the other half of that K-Pax double-act in
+         STARMAN (2.30pm, Mon, C5) - all together now: "You don't
+         understand, Mrs Hayden: that *thing* is no longer your
+         husband!"... archaeology imitates "Coneheads" in ANCIENT
+         MURDER MYSTERY: RIDDLE OF THE CONE-SHAPED SKULLS (8pm, Mon,
+         C5)... odd scheduling for Bill Murray's kid-friendly identity
+         mixup THE MAN WHO KNEW TOO LITTLE (11.05pm, Tue, BBC1)... and
+         if only they'd got hold of Tim Burton's recent "reimagining"
+         to show after the run of BATTLE FOR/ FAREWELL TO/ BACK TO
+         THE PLANET OF THE APES (1.30pm, Tue-Thu, ITV), you could have
+         watched the franchise deteriorate before your very eyes...
+
+         FILM>> good to see Time Magazine's staff staying cool long
+         enough to publish their final "Humanity Doomed" collectors'
+         edition for the backstory of "X-Files" director Rob Bowman's
+         "2000AD"-style Brit-set monster apocalypse REIGN OF FIRE
+         ( http://www.capalert.com/capreports/reignoffire.htm : "Here's
+         to evolution!"; many deaths by incineration; child permitted
+         in hardhat construction area; massive tattoos)... it's Martin
+         "Bad Boys" Lawrence and Academy Award nominee Tom "In The
+         Bedroom" Wilkinson - together at last! - in funnier-than-
+         you'd-expect "Galaxy Quest"/"A Knight's Tale" hybrid BLACK
+         KNIGHT ( http://www.screenit.com/movies/2001/black_knight.html :
+         [Lawrence] does all sorts of mugging and facial contortions at
+         the camera that some kids might want to imitate; we hear the
+         King fart at dinner; some kids might want to imitate all of
+         the action-based fighting that occurs)... or there's badfilm
+         stalwart Heather Graham and "My Cousin Vinny" Academy Award
+         winner Marisa "In The Bedroom" Tomei in clumsy Bollywood porn
+         comedy pastiche THE GURU ( http://www.bbfc.co.uk/ : Contains
+         strong sex references and language)...
+
+         DRESS DOWN FRIDAY>> after an unexpected 3-month hiatus -
+         because, hey, who buys t-shirts in the summer? - NTK's online
+         store is back to full strength at http://www.geekstyle.co.uk/
+         and now features lengthy explanations of exactly what PayPal
+         will attempt to charge you. Also new this month: lots of
+         designs now available in XXL, including the ever-popular 404
+         /SHIRT/TIE NOT FOUND, a glow-in-the-dark variant of the ZX
+         font BORN TO RUN one, plus slightly more limited numbers of
+         the arcade-style HI-SCORE TABLE and the last few remaining
+         souvenirs from June's EXTREME COMPUTING show. Oh and copies of
+         Mark Bennett's BLACK ICE magazine (for just US$7 plus postage
+         and packing) - Brighton's very own answer to "Mondo 2000"...
+         meanwhile, your entries have continued to flood in, a leading
+         contender being CHRIS HOWE's possibly Designers-Republic-
+         influenced http://www.geekstyle.co.uk/images/chrismessiah.gif
+         - though his email address appears to have changed recently,
+         so if anyone knows where he is, could you ask him to get in
+         touch? We also enjoyed JAMES SWIFT's politically motivated
+         http://www.3dengineer.com/tshirts/privacylogged.gif , BRUCE's
+         heartfelt http://www.growf.org/shirts/crack.gif , and ASHLEY
+         POMEROY's whimsical http://www.ashleypomeroy.com/arpshirts.gif
+         - but remained puzzled by people sending us what appear to be
+         parodies of our existing parody designs, from OWAIN KENWAY's
+         http://www.angelfire.com/scifi2/dsky/1337spotting.html through
+         to JOF's http://www.overhope.org.uk/misc/revolution.jpg and
+         PAUL "THE FRIDAY THING" CARR's perhaps over-self-explanatory:
+         http://www.geekstyle.co.uk/images/tft-shirt.jpg . And if your
+         design skills aren't up to this high standard, you can of
+         course just mail us a text slogan, so long as it's at least as
+         funny as SIMON LIPSON's "NTK: ROTFL meets ROT-13", ANDREW
+         SIMMONS' "NTK: Notes you don't want to save, and for link
+         evaluation", or PHIL SOUTH's "Frieze - Marther - Farquhar" -
+         but designed to look like it's the name of a law company!...
+         meanwhile, the http://www.geekstyle.co.uk/images/ gallery
+         reveals the "Buy One, Subvert The Mass Media, Get One Free"
+         contest to be hotting up once again, as 25-year-old web
+         designer GRAEME DAVISON "just happened" to be wearing the
+         shirt that spells "fuck" in ASCII URL-encoding when he was
+         photographed by THE NORTHERN ECHO about his trip to see
+         "Attack Of The Clones" open in LA. Even though this was only a
+         local newspaper, the judging panel felt he deserved the full
+         prize (of another t-shirt), as the story goes on to cover the
+         ostensibly pointless nature of the entire exercise. That's the
+         kind of product placement that money just can't buy...
+
+                               >> SMALL PRINT <<
+
+       Need to Know is a useful and interesting UK digest of things that
+         happened last week or might happen next week. You can read it
+       on Friday afternoon or print it out then take it home if you have
+     nothing better to do. It is compiled by NTK from stuff they get sent.
+                       Registered at the Post Office as
+                              "geeks", apparently
+                              http://anews.co.uk/
+
+                                 NEED TO KNOW
+            THEY STOLE OUR REVOLUTION. NOW WE'RE STEALING IT BACK.
+                         Archive - http://www.ntk.net/
+              Unsubscribe? Mail ntknow-unsubscribe@lists.ntk.net
+                Subscribe? Mail ntknow-subscribe@lists.ntk.net
+ NTK now is supported by UNFORTU.NET, and by you: http://www.geekstyle.co.uk/
+
+                          (K) 2002 Special Projects.
+             Copying is fine, but include URL: http://www.ntk.net/
+
+                    Tips, news and gossip to tips@spesh.com
+             All communication is for publication, unless you beg.
+              Press releases from naive PR people to pr@spesh.com
+     Remember: Your work email may be monitored if sending sensitive material.
+       Sending >500KB attachments is forbidden by the Geneva Convention.
+              Your country may be at risk if you fail to comply.
+

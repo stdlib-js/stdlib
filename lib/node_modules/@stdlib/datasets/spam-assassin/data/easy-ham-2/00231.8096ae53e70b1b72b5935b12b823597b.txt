@@ -1,0 +1,101 @@
+From ilug-admin@linux.ie  Fri Aug  2 12:21:21 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D6797440F8
+	for <jm@localhost>; Fri,  2 Aug 2002 07:21:20 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 02 Aug 2002 12:21:20 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g72BHL219536 for
+    <jm-ilug@jmason.org>; Fri, 2 Aug 2002 12:17:21 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA04027; Fri, 2 Aug 2002 12:15:16 +0100
+Received: from mail.aculink.net (65-173-158-7.aculink.net [65.173.158.7])
+    by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id MAA03994 for
+    <ilug@linux.ie>; Fri, 2 Aug 2002 12:15:06 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host 65-173-158-7.aculink.net
+    [65.173.158.7] claimed to be mail.aculink.net
+Received: from cdm01.deedsmiscentral.net ([204.118.157.66]) by
+    mail.aculink.net (Merak 4.4.2) with ESMTP id EDA37003; Fri, 02 Aug 2002
+    05:22:16 -0600
+Received: from cdm01.deedsmiscentral.net
+    (IDENT:redneck@cdm01.deedsmiscentral.net [192.168.20.1]) by
+    cdm01.deedsmiscentral.net (8.11.6/8.11.6/ver) with ESMTP id g729UoT30389;
+    Fri, 2 Aug 2002 03:30:56 -0600
+Message-Id: <3D4A513F.5AF61C84@cdm01.deedsmiscentral.net>
+Date: Fri, 02 Aug 2002 03:30:39 -0600
+From: SoloCDM <deedsmis@aculink.net>
+Reply-To: deedsmis@aculink.net, ilug@linux.ie
+X-Mailer: Mozilla 4.78 [en] (X11; U; Linux 2.2.20-9.2mdk i586)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: Ciaran Mac Lochlainn <ciaran17@eircom.net>
+Cc: "ILUG (Request)" <ilug@linux.ie>
+References: <5FE418B3F962D411BED40000E818B33C9C8E65@HASSLE>
+    <3D4814D0.6A61E6E5@cdm01.deedsmiscentral.net>
+    <20020731173414.4123f075.lbedford@lbedford.org>
+    <3D4881F6.F899591@cdm01.deedsmiscentral.net>
+    <002201c2393c$d125c690$ac0305c0@ciaran>
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Subject: [ILUG] Re: removing lilo
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Ciaran Mac Lochlainn stated the following:
+> 
+> SoloCDM wrote:
+> 
+> > Liam Bedford stated the following:
+> 
+> <edit>
+> 
+> >> fdisk /mbr will restore a dos MBR.. it'll leave the partitions
+> >> alone.
+> 
+> >> linux fdisk and deleting all partitions will actually leave LILO in
+> >> the MBR though.
+> 
+> > While I am in Linux, the following message is the output when I
+> > execute fdisk /mbr, even though the drive is in read and write mode:
+> 
+> > Unable to open /mbr
+> 
+> > The mbr is on a separate drive -- not related to the Linux drive.
+> 
+> fdisk /mbr is a DOS command - if you are in Linux you will be running
+> Linux fdisk, which doesn't have the /mbr option.  The Linux equivalent
+> of "fdisk /mbr" is "lilo -u /dev/hda" (unless John Reilly was making
+> that up yesterday - I haven't tried it!)
+
+Thanks!
+
+In the past I tried "lilo -u /dev/hda" and it wouldn't work -- an
+original copy of the MBR must be in /boot directory for it to work. 
+Which is exactly what I didn't have.  The installation of Linux
+Mandrake didn't afford me that luxury.
+
+Also, I'm glad you cleared up the fdisk issue.  I know better now --
+previously I was under the impression that fdisk had a hidden switch. 
+This is obviously not the case.
+
+-- 
+Note: When you reply to this message, please include the mailing
+      list and/or newsgroup address and my email address in To:
+
+*********************************************************************
+Signed,
+SoloCDM
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

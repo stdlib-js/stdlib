@@ -1,0 +1,108 @@
+From fork-admin@xent.com  Fri Aug  2 16:34:00 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 113E5440FF
+	for <jm@localhost>; Fri,  2 Aug 2002 11:33:36 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 02 Aug 2002 16:33:36 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g72FKQE01214 for <jm@jmason.org>;
+    Fri, 2 Aug 2002 16:20:28 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 238DB2940A7; Fri,  2 Aug 2002 08:12:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from nycsmtp1out.rdc-nyc.rr.com (nycsmtp1out.rdc-nyc.rr.com
+    [24.29.99.226]) by xent.com (Postfix) with ESMTP id 738EE2940A6 for
+    <fork@xent.com>; Fri,  2 Aug 2002 08:11:57 -0700 (PDT)
+Received: from damien (66-108-144-106.nyc.rr.com [66.108.144.106]) by
+    nycsmtp1out.rdc-nyc.rr.com (8.12.1/Road Runner SMTP Server 1.0) with ESMTP
+    id g72FBGZa002289 for <fork@xent.com>; Fri, 2 Aug 2002 11:11:16 -0400
+    (EDT)
+From: "Damien Morton" <damien.morton@acm.org>
+To: <fork@spamassassin.taint.org>
+Subject: W3C approves HTML 4 'emotitags' - Now you'll be able to say it with feeling
+Message-Id: <001101c23a36$d2a6d8b0$6a906c42@damien>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.3416
+Importance: Normal
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4807.1700
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 2 Aug 2002 11:11:05 -0400
+
+http://www.therockalltimes.co.uk/2002/04/08/new-tags.html
+
+W3C approves HTML 4 'emotitags' - Now you'll be able to say it with
+feeling
+by Lester Haines
+
+The World Wide Web Consortium (W3C) has approved a number of new html
+'emotitags' which will revolutionise the web surfing experience.
+
+The tags have no physical effect, but rather elicit a strong emotional
+response from the reader. Top of the list is <wot> (War on TerrorT). The
+tag, when judiciously applied, will immediately provoke violent anger
+against ragheads, thus:
+
+<wot>Charity agencies report that Iraqi leader Sadaam Hussein has
+adopted the African dictatorial habit of eating his political
+opponents.</wot>
+
+Of particular interest to British code-monkeys is the new <iht> (I'm
+hurting too). This is designed for use when reporting on the life of
+Elizabeth the Queen Mother and other recently dead famous people:
+
+<iht>She touched our lives in so many ways with her common touch and her
+instinctive understanding of ordinary people. She will be sadly
+missed.</iht>
+
+The instantaneous effect is to reduce the reader to teary-eyed and
+self-indulgent wallowing in which he or she becomes unaccountably upset
+about the death of a complete stranger.
+
+Political reporting also looks to benefit from the new <spin> tag. Any
+government ministerial pronouncement is thus rendered immediately
+transparent:
+
+<spin>Tony Blair was quick to defend transport secretary Byers, calling
+him "the most honest man it has been my privilege to know".</spin>
+
+And, in a much-needed boost to satire sites, W3C has formally ratified
+the controversial <nolibel>. This guarantees any text contained within
+it complete immunity from prosecution:
+
+<nolibel>Naomi Campbell, we can confirm, is a talentless, drug-addicted
+perjurer who believes that good looks alone can justify her appalling
+and obnoxious behaviour.</nolibel>
+
+The new tags have been warmly received by the programming community. W3C
+has, however, warned that they are to be used economically. It has
+further cautioned that they should never be used together, since the
+effect on the reader could be catastrophic:
+
+<wot><iht><spin>In response to reports that the Queen Mother had fallen
+victim to Sadaam Hussein's Axis of EvilT chemical weapons programme,
+Stephen Byers noted: "She was everybody's favourite grandmother who
+touched the lives of billions. The only consolation we can gain from
+this tragedy is that all of the UK's trains will be running on time by
+next Monday. And you can quote me on that."</spin></iht></wot>
+
+http://xent.com/mailman/listinfo/fork
+
+

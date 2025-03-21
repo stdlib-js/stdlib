@@ -1,0 +1,221 @@
+Received: from rs6000.resqnet.com (rs6000.resqnet.com [64.209.23.67])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6P8NG406275
+	for <resqnet_com@spamtraps.taint.org>; Thu, 25 Jul 2002 09:23:17 +0100
+Received: from mailhost3 (nelson.techtarget.com [65.214.43.159])
+	by rs6000.resqnet.com (8.11.2/8.11.2) with ESMTP id g6P8MNS20510
+	for <zzzarotta@resqnet.com>; Thu, 25 Jul 2002 04:22:23 -0400
+Received: from localhost.localdomain (localhost.localdomain [127.0.0.1])
+	by mailhost3 (Postfix) with ESMTP
+	id ABBAF3E3348; Thu, 25 Jul 2002 04:00:12 -0400 (EDT)
+To: "SearchNetworking" <searchNetworking@lists.techtarget.com>
+From: "SearchNetworking" <searchNetworking-ED20D7B9A49E402C@lists.techtarget.com>
+Reply-To: "SearchNetworking" <searchNetworking-ED20D7B9A49E402C@lists.techtarget.com>
+Subject: VoIP tip: Troubleshooting voice
+Mime-Version: 1.0
+Content-type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+X-Mailer: TargetMail E-Mail By TechTarget.com
+X-Content_id: 451006
+Message-Id: <20020725080012.ABBAF3E3348@mailhost3>
+Date: Thu, 25 Jul 2002 04:00:12 -0400 (EDT)
+X-MailScanner: Found to be clean
+X-MailScanner-SpamCheck: not spam, SpamAssassin (score=-0.2, required 5,
+	FROM_HAS_MIXED_NUMS, TO_LOCALPART_EQ_REAL, CLICK_BELOW,
+	DEAR_SOMEBODY, COPYRIGHT_CLAIMED)
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+SEARCHNETWORKING | Voice over IP Tip
+July 25, 2002
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+FROM OUR SPONSOR:
+Looking for RISK FREE VoIP?
+http://searchNetworking.com/r/0,,4689,00.htm?quintum
+________________________________________________________________ 
+IN THIS ISSUE | Table of Contents 
+
+1. VOIP TIPS 
+   - Troubleshooting voice
+   - VoIP enable your telephony
+   - Understanding delay
+
+2. IMPORTANT ANNOUNCEMENTS AND LINKS
+   - Network management/VoIP/wireless strategies revealed
+   - SearchNetworking Webcast archives 
+   - Featured Topic: Networks of the future
+   - Expert response: Ted Studwell answers your questions
+   - Featured book: Microsoft encyclopedia of networking
+____________________________________________________________________
+***********************>> SPONSORED BY QUINTUM <<*******************
+LOOKING FOR RISK FREE VoIP?
+Get a RISK FREE VoIP solution that is easy to install and
+cost-effective. Quintum Tenor(R) MultiPath Switches assure voice QoS.
+PATENTED SelectNet provides real-time MID-CALL failover from IP to
+public switched phone network. PacketSaver voice compression reduces
+bandwidth use 50%.  NATAccess works behind NAT-enabled firewalls. 2
+port SOHOs to carrier solutions at:
+http://searchNetworking.com/r/0,,4689,00.htm?quintum
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+TROUBLESHOOTING VOICE | By Tom Lancaster
+
+When you're troubleshooting voice calls, particularly the signaling,
+it's often helpful to look at the detailed output of the device, be
+it a voice-enabled router, telephony server, gateway or whatever. 
+This detailed output can be in the form of logs or debug output as is
+the case in Cisco's IOS.  In any case, this output is likely to be
+somewhat cryptic.  One of the reasons is because this output often
+uses a set of standardized codes and it is simply easier to put more
+information on the screen using a short number than it is to write an
+essay about why some event happened.
+
+Read the entire tip at: 
+http://www.searchNetworking.com/tip/1,289483,sid7_gci840618,00.html
+
+
+Got a VoIP tip of your own? Why not send it in? We'll post it on our
+Web site, and we'll enter you in our tips contest for some neat
+prizes.   Submit your tip here:
+http://searchnetworking.techtarget.com/tipsSubmit/1,289485,sid7,00.html
+
+Like this tip?  Hate it?  Email us at
+mailto:tips@searchnetworking.com
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+VoIP ENABLE YOUR TELEPHONY | By Tom Lancaster
+
+One of the reasons VoIP has been slowly gaining traction is that
+large enterprises have quite a lot of legacy equipment, and migrating
+to VoIP from the circuit-switched networks of yore is no easy feat.
+These environments are typically complicated and the stakes are high
+because so many mission-critical systems rely on telephony.
+
+Click here for the full tip:
+http://searchnetworking.techtarget.com/tip/1,289483,sid7_gci779073,00.html
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+UNDERSTANDING RELAY | By Tom Lancaster
+
+Everyone knows that delay is one of the two primary causes of poor
+voice quality, particularly in VoIP networks, but where does this
+delay come from?  Delay is generally defined as the time it takes
+from the instant you speak into the phone until the instant that
+sound is regenerated on the far end. Quite a few things have to
+happen to transport this sound through the system, so delay actually
+has many components.
+
+Read the entire tip here:
+http://searchnetworking.techtarget.com/tip/1,289483,sid7_gci823706,00.html
+
+___________________________________________________________________ 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+::::::::::  DON'T MISS THESE IMPORTANT MESSAGES AND LINKS  ::::::::
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+NETWORK MANAGEMENT/VoIP/WIRELESS STRATEGIES | SearchNetworking
+
+SearchNetworking.com hosts the Networking Decisions conference in
+Chicago, October 16-18. Sessions focus not only on essential network
+management strategies, but feature critical insight on VoIP and
+wireless. You find out how to best prepare for these technologies now
+so you won't get left behind, the benefits to gain/pitfalls to avoid,
+plus the real ROI for your organization.
+
+Get the full story right here: http://www.networkingdecisions.com
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+WEBCAST ARCHIVES | SearchNetworking
+
+If you missed the original airing of our Webcast on the best
+practices for availability and performance management with Jon
+Oltsik, don't fret, it's available for you to view at your leisure. 
+And, while you're at it, take a look at all our previously aired
+Webcasts, as well our upcoming live events.  We're sure you'll find
+topics that interest you. 
+
+View of archive on best practices for availability and performance
+management with Jon Oltsik:
+http://searchnetworking.techtarget.com/webcastsTranscriptSecurity/1,289693,sid7_gci832106,00.html 
+
+View our upcoming events and Webcast archive list here:
+http://searchnetworking.techtarget.com/onlineEvents/0,289675,sid7,00.html
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=  
+NETWORKS OF THE FUTURE | SearchNetworking Featured Topic
+
+Last week we attended Burton Group's Catalyst Conference and heard
+all about the hottest trends in networking: VPNs, VoIP, wireless,
+identity management, and Web services. Read more about the issues
+surrounding each topic.
+
+Click here for the current Featured Topic:
+http://searchnetworking.techtarget.com/featuredTopic/0,290042,sid7_gci839778,00.html
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=  
+EXPERT ADVICE: TED STUDWELL | Voice over IP Expert
+
+Dear Ted,
+Where can we get information about Inmarsat services? 
+
+>> Click for Ted Studwell's response:
+http://searchnetworking.techtarget.com/ateQuestionNResponse/0,289625,sid7_cid478713_tax292243,00.html
+
+>> Click here for other Q&As with Ted that you might find useful:
+http://searchnetworking.techtarget.com/ateAnswers/0,289620,sid7_tax292243,00.html
+
+>> Click here to pose your VoIP question to Ted Studwell:
+http://searchnetworking.techtarget.com/ateQuestion/0,289624,sid7_cid466224_tax292243,00.html
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+FEATURED BOOK | SearchNetworking Bookstore
+
+Title: Microsoft encyclopedia of networking
+Author: Mitch Tulloch, and Ingrid Tulloch
+
+Description: This second edition of the award-winning Microsoft
+encyclopedia of networking has been fully updated with thousands of
+entries detailing the latest technologies, standards, products, and
+services. You get clear, concise explanations, including hundreds of
+new articles and diagrams that deftly take you from concept to
+real-world application. You also get the entire encyclopedia on
+CD-ROM, for definitive answers wherever you need them.
+
+>> Click here for ordering information:
+http://www.digitalguru.com/DigitalGuru/product_detail.asp?catalog_name=Books&category_name=&product_id=0735613788&partner_id=65
+
+____________________________________________________________________ 
+:::::::::::::::::::  SEARCHNETWORKING CONTACTS   ::::::::::::::::::: 
+
+ SUSAN FOGARTY, Site Editor (sfogarty@techtarget.com) 
+   >> Send us your suggestions for tips and articles. 
+____________________________________________________________________ 
+
+ KARA GATTINE, Assistant Site Editor (kgattine@techtarget.com)
+   >> Send your white papers, tips and best Web link recommendations.
+____________________________________________________________________ 
+
+ BETH QUIMBY, News Editor (bquimby@techtarget.com) 
+   >> Send in your product announcements and poll ideas. 
+____________________________________________________________________ 
+
+ GABRIELLE DERUSSY (gderussy@techtarget.com) 
+   >> Sponsor this or any other TechTarget newsletter. 
+____________________________________________________________________ 
+::::::::::::::::::::  ABOUT THIS NEWSLETTER   ::::::::::::::::::::: 
+Created by TechTarget (http://www.techtarget.com) 
+ TechTarget - The Most Targeted IT Media 
+ Copyright 2002, All Rights Reserved.  
+
+
+
+
+Unsubscribe from 'Voice Over IP Tips'
+ - Simply Reply to this Email with REMOVE within the Body or Subject
+>  or
+ - Go to: http://searchNetworking.techtarget.com/register
+ - Log in to edit your profile.
+ - Click on the link to Edit email subscriptions.
+ - Uncheck the box next to the newsletter you wish 
+   to unsubscribe from.
+ - When finished, click "Save Changes to My Profile."
+
+
+

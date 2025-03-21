@@ -1,0 +1,29 @@
+
+saveStop( id )
+    Stops saving commands to a file path associated with a specified record
+    identifier.
+
+    Parameters
+    ----------
+    id: number
+        Record identifier.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether the REPL successfully stopped saving
+        evaluated commands.
+
+    Examples
+    --------
+    > var id = saveStart( './path/to/file.txt' );
+    > 1 + 1
+    2
+    > 'foo'
+    'foo'
+    > saveStop( id );
+
+    See Also
+    --------
+    save, saveStart
+

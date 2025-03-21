@@ -1,0 +1,53 @@
+From jm@jmason.org  Wed Sep 18 12:57:54 2002
+Return-Path: <yyyy@spamassassin.taint.org>
+Delivered-To: yyyy@spamassassin.taint.org
+Received: by spamassassin.taint.org (Postfix, from userid 500)
+	id 4376516F1C; Wed, 18 Sep 2002 12:57:54 +0100 (IST)
+Received: from spamassassin.taint.org (localhost [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP
+	id 40A2CF7B1; Wed, 18 Sep 2002 12:57:54 +0100 (IST)
+To: Matt Kettler <mkettler_sa@comcast.net>
+Cc: yyyy@spamassassin.taint.org (Justin Mason),
+	SpamAssassin-devel@lists.sourceforge.net
+Subject: Re: [SAdev] phew! 
+In-Reply-To: Message from Matt Kettler <mkettler_sa@comcast.net> 
+   of "Wed, 18 Sep 2002 02:04:29 EDT." <5.1.1.6.0.20020918014722.00a99b20@mail.comcast.net> 
+From: yyyy@spamassassin.taint.org (Justin Mason)
+X-GPG-Key-Fingerprint: 0A48 2D8B 0B52 A87D 0E8A  6ADD 4137 1B50 6E58 EF0A
+X-Habeas-Swe-1: winter into spring
+X-Habeas-Swe-2: brightly anticipated
+X-Habeas-Swe-3: like Habeas SWE (tm)
+X-Habeas-Swe-4: Copyright 2002 Habeas (tm)
+X-Habeas-Swe-5: Sender Warranted Email (SWE) (tm). The sender of this
+X-Habeas-Swe-6: email in exchange for a license for this Habeas
+X-Habeas-Swe-7: warrant mark warrants that this is a Habeas Compliant
+X-Habeas-Swe-8: Message (HCM) and not spam.  Please report use of this
+X-Habeas-Swe-9: mark in spam to <http://www.habeas.com/report/>.
+Date: Wed, 18 Sep 2002 12:57:49 +0100
+Sender: yyyy@spamassassin.taint.org
+Message-Id: <20020918115754.4376516F1C@spamassassin.taint.org>
+
+
+Matt Kettler said:
+> Ok, first, the important stuff. Happy birthday Justin (a lil late, but
+> oh well)
+
+cheers!
+
+> a 13% miss ratio on the spam corpus at 5.0 seems awfully high, although 
+> that nice low FP percentage is quite nice, as is the narrow-in of average 
+> FP/FN scores compared to 2.40.
+
+As Dan said -- it's a hard corpus, made harder without the spamtrap data.
+
+Also -- and this is an important point -- those measurements can't be
+directly compared, because I changed the methodology.  In 2.40 the scores
+were evolved on the entire corpus, then evaluated using that corpus; ie.
+there was no "blind" testing, and the scores could overfit and still
+provide good statistics.
+
+In 2.42, they're evaluated "blind", on a totally unseen set of messages,
+so those figures would be a lot more accurate for real-world use.
+
+--j.
+

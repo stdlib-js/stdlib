@@ -1,0 +1,114 @@
+From exmh-workers-admin@redhat.com  Fri Aug 23 11:07:03 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0B32F43F9B
+	for <jm@localhost>; Fri, 23 Aug 2002 06:05:02 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 23 Aug 2002 11:05:02 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7N41MZ09475 for
+    <jm-exmh@jmason.org>; Fri, 23 Aug 2002 05:01:22 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 490A93ED5C; Fri, 23 Aug 2002
+    00:01:27 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 3A4823FEBE
+    for <exmh-workers@listman.redhat.com>; Thu, 22 Aug 2002 23:27:26 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g7N3RN705039 for exmh-workers@listman.redhat.com; Thu, 22 Aug 2002
+    23:27:23 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g7N3RNY05035 for
+    <exmh-workers@redhat.com>; Thu, 22 Aug 2002 23:27:23 -0400
+Received: from ratree.psu.ac.th ([202.28.97.6]) by mx1.spamassassin.taint.org
+    (8.11.6/8.11.6) with SMTP id g7N3Cel13970 for <exmh-workers@redhat.com>;
+    Thu, 22 Aug 2002 23:12:41 -0400
+Received: from delta.cs.mu.OZ.AU (delta.coe.psu.ac.th [172.30.0.98]) by
+    ratree.psu.ac.th (8.11.6/8.11.6) with ESMTP id g7N3QPl20072 for
+    <exmh-workers@redhat.com>; Fri, 23 Aug 2002 10:26:29 +0700 (ICT)
+Received: from munnari.OZ.AU (localhost [127.0.0.1]) by delta.cs.mu.OZ.AU
+    (8.11.6/8.11.6) with ESMTP id g7MJ5JW16325 for <exmh-workers@redhat.com>;
+    Fri, 23 Aug 2002 02:05:19 +0700 (ICT)
+From: Robert Elz <kre@munnari.OZ.AU>
+To: exmh-workers@spamassassin.taint.org
+Subject: Anolther sequence related traceback
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Message-Id: <16323.1030043119@munnari.OZ.AU>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Fri, 23 Aug 2002 02:05:19 +0700
+
+Just got this ... I was just reading mail, but in a very dark
+room, where the keyboard is illuminated mostly by the light from
+the (laptop) screen.   I think I put my fingers on the wrong keys.
+(I mostly use the keyboard exclusively while running exmh).
+
+This is from today's cvs (the fixes for the problems I mentioned
+yesterday are included) - I eventually managed to contact the cvs
+server.
+
+expected integer but got ""
+    while executing
+"incr m"
+    (procedure "MhSeqExpand" line 12)
+    invoked from within
+"MhSeqExpand $folder $msgids"
+    (procedure "MhSeq" line 2)
+    invoked from within
+"MhSeq $folder $seq $how $oldmsgids $msgids"
+    (procedure "Mh_SequenceUpdate" line 54)
+    invoked from within     
+"Mh_SequenceUpdate $folder replace $seq $msgids"
+    (procedure "Seq_Set" line 4)
+    invoked from within             
+"Seq_Set $folder cur $msgid"
+    (procedure "Mh_SetCur" line 7)      
+    invoked from within                     
+"Mh_SetCur $exmh(folder) $msgid"
+    (procedure "MsgChange" line 5)              
+    invoked from within                             
+"MsgChange - noshow"
+    invoked from within                                 
+"time [list MsgChange $msgid $show"
+    (procedure "Msg_Change" line 3)
+    invoked from within                                     
+"Msg_Change $select(sel) noshow"
+    (procedure "SelectTypein" line 14)                          
+    invoked from within
+"SelectTypein .mid.right.top.msg -"
+    (command bound to event)
+
+kre
+
+ps: I have the sequences window vertical instead of horizontal, and the
+"colours from the ftoc" stuff all deleted, and it is looking just about as
+good as the old unseen window used to look.   I still have some work to
+do to make it a little nicer (listboxes seem to have some strange habits)
+and then I need to make it all optional and parameterized, at the minute
+I'm just embedding stuff in the code, much quicker for prototyping.  Once
+its done, I'll send a patch for someone to look over.
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+

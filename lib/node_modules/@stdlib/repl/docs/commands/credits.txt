@@ -1,0 +1,11 @@
+
+credits()
+    Prints credits.
+
+    Examples
+    --------
+    > credits()
+
+    See Also
+    --------
+    contributors, donate, help

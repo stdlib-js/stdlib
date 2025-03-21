@@ -1,0 +1,113 @@
+
+{{alias}}( k[, ndims][, options] )
+    Returns an accumulator function which incrementally partitions data into `k`
+    clusters.
+
+    If not provided initial centroids, the accumulator caches data vectors for
+    subsequent centroid initialization. Until an accumulator computes initial
+    centroids, an accumulator returns `null`.
+
+    Once an accumulator has initial centroids (either provided or computed), if
+    provided a data vector, the accumulator function returns updated cluster
+    results. If not provided a data vector, the accumulator function returns the
+    current cluster results.
+
+    Cluster results are comprised of the following:
+
+    - centroids: a `k x ndims` matrix containing centroid locations. Each
+      centroid is the component-wise mean of the data points assigned to a
+      centroid's corresponding cluster.
+    - stats: a `k x 4` matrix containing cluster statistics.
+
+    Cluster statistics consists of the following columns:
+
+    - 0: number of data points assigned to a cluster.
+    - 1: total within-cluster sum of squared distances.
+    - 2: arithmetic mean of squared distances.
+    - 3: corrected sample standard deviation of squared distances.
+
+    Because an accumulator incrementally partitions data, one should *not*
+    expect cluster statistics to match similar statistics had provided data been
+    analyzed via a batch algorithm. In an incremental context, data points which
+    would not be considered part of a particular cluster when analyzed via a
+    batch algorithm may contribute to that cluster's statistics when analyzed
+    incrementally.
+
+    In general, the more data provided to an accumulator, the more reliable the
+    cluster statistics.
+
+    Parameters
+    ----------
+    k: integer|ndarray
+        Number of clusters or a `k x ndims` matrix containing initial centroids.
+
+    ndims: integer (optional)
+        Number of dimensions. This argument must accompany an integer-valued
+        first argument.
+
+    options: Object (optional)
+        Function options.
+
+    options.metric: string (optional)
+        Distance metric. Must be one of the following: 'euclidean', 'cosine', or
+        'correlation'. Default: 'euclidean'.
+
+    options.init: ArrayLike (optional)
+        Centroid initialization method and associated (optional) parameters. The
+        first array element specifies the initialization method and must be one
+        of the following: 'kmeans++', 'sample', or 'forgy'. The second array
+        element specifies the number of data points to use when calculating
+        initial centroids. When performing kmeans++ initialization, the third
+        array element specifies the number of trials to perform when randomly
+        selecting candidate centroids. Typically, more trials is correlated with
+        initial centroids which lead to better clustering; however, a greater
+        number of trials increases computational overhead. Default: ['kmeans++',
+        k, 2+⌊ln(k)⌋ ].
+
+    options.normalize: boolean (optional)
+        Boolean indicating whether to normalize incoming data. This option is
+        only relevant for non-Euclidean distance metrics. If set to `true`, an
+        accumulator partitioning data based on cosine distance normalizes
+        provided data to unit Euclidean length. If set to `true`, an accumulator
+        partitioning data based on correlation distance first centers provided
+        data and then normalizes data dimensions to have zero mean and unit
+        variance. If this option is set to `false` and the metric is either
+        cosine or correlation distance, then incoming data *must* already be
+        normalized. Default: true.
+
+    options.copy: boolean (optional)
+        Boolean indicating whether to copy incoming data to prevent mutation
+        during normalization. Default: true.
+
+    options.seed: any (optional)
+        PRNG seed. Setting this option is useful when wanting reproducible
+        initial centroids.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    acc.predict: Function
+        Predicts centroid assignment for each data point in a provided matrix.
+        To specify an output vector, provide a 1-dimensional ndarray as the
+        first argument. Each element in the returned vector corresponds to a
+        predicted cluster index for a respective data point.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}( 5, 2 );
+    > var buf = new {{alias:@stdlib/array/float64}}( 2 );
+    > var shape = [ 2 ];
+    > var strides = [ 1 ];
+    > var v = {{alias:@stdlib/ndarray/ctor}}( 'float64', buf, shape, strides, 0, 'row-major' );
+    > v.set( 0, 2.0 );
+    > v.set( 1, 1.0 );
+    > out = accumulator( v );
+    > v.set( 0, -5.0 );
+    > v.set( 1, 3.14 );
+    > out = accumulator( v );
+
+    See Also
+    --------
+

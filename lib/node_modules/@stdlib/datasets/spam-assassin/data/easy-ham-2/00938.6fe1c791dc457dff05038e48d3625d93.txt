@@ -1,0 +1,53 @@
+From fork-admin@xent.com  Wed Jul 31 21:36:59 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B9A42440A8
+	for <jm@localhost>; Wed, 31 Jul 2002 16:36:52 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 31 Jul 2002 21:36:52 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6VKXQ208315 for <jm@jmason.org>;
+    Wed, 31 Jul 2002 21:33:29 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id ECC992940BA; Wed, 31 Jul 2002 13:31:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from markbaker.ca (cpu2164.adsl.bellglobal.com [207.236.3.141])
+    by xent.com (Postfix) with ESMTP id 26D022940A2 for <fork@xent.com>;
+    Wed, 31 Jul 2002 13:30:25 -0700 (PDT)
+Received: (from mbaker@localhost) by markbaker.ca (8.9.3/8.8.7) id
+    QAA12756 for fork@xent.com; Wed, 31 Jul 2002 16:30:42 -0400
+From: Mark Baker <distobj@acm.org>
+To: fork@spamassassin.taint.org
+Subject: Clark on Munchkins
+Message-Id: <20020731163042.D10521@www.markbaker.ca>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+X-Mailer: Mutt 1.0.1i
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 31 Jul 2002 16:30:42 -0400
+
+With Mobile IP?  Ack! 8-O
+
+http://ana-www.lcs.mit.edu/anaweb/PDF/PR_whitepaper_v2.pdf
+
+MB
+-- 
+Mark Baker, CTO, Idokorro Mobile (formerly Planetfred)
+Ottawa, Ontario, CANADA.               distobj@acm.org
+http://www.markbaker.ca        http://www.idokorro.com
+http://xent.com/mailman/listinfo/fork
+
+

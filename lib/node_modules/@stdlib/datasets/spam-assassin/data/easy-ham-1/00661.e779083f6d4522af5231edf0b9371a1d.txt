@@ -1,0 +1,62 @@
+From fork-admin@xent.com  Fri Sep 20 11:32:42 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id CA74016F03
+	for <jm@localhost>; Fri, 20 Sep 2002 11:32:41 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 20 Sep 2002 11:32:41 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8JLlhC05097 for <jm@jmason.org>;
+    Thu, 19 Sep 2002 22:47:44 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id F0A9029416D; Thu, 19 Sep 2002 14:44:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hotmail.com (dav56.law15.hotmail.com [64.4.22.191]) by
+    xent.com (Postfix) with ESMTP id 650A729409C for <fork@xent.com>;
+    Thu, 19 Sep 2002 14:43:56 -0700 (PDT)
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Thu, 19 Sep 2002 14:47:21 -0700
+X-Originating-Ip: [207.202.171.254]
+From: "Mr. FoRK" <fork_list@hotmail.com>
+To: <fork@spamassassin.taint.org>
+References: <20020919171804.GA18065@canonical.org>
+Subject: Re: Avast there matey
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.50.4133.2400
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4133.2400
+Message-Id: <DAV56idcDjoYAPNXRPm00000075@hotmail.com>
+X-Originalarrivaltime: 19 Sep 2002 21:47:21.0730 (UTC) FILETIME=[221F5E20:01C26026]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 19 Sep 2002 14:51:59 -0700
+
+
+----- Original Message -----
+From: "Kragen Sitaker" <kragen@pobox.com>
+
+> > It's an exclamation that may allude to a ship striking some rock or
+> > other obstacle so hard that her timbers shiver, or shake, so implying a
+> > calamity has occurred. It is first recorded as being used by Captain
+> > Frederick Marryat in /Jacob Faithful/ in 1835: "I won't thrash you Tom.
+> > Shiver my timbers if I do".
+I think it went like this: "I won't thrash you Tom, if you shiver my
+timber..."
+Or maybe that was just the butt pirates...
+
+

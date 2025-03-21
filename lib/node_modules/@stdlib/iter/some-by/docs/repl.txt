@@ -1,0 +1,46 @@
+
+{{alias}}( iterator, n, predicate[, thisArg ] )
+    Tests whether at least `n` iterated values pass a test implemented by a
+    predicate function.
+
+    The predicate function is provided two arguments:
+
+    - value: iterated value.
+    - index: iteration index.
+
+    The function immediately returns upon encountering `n` truthy return values.
+
+    If provided an iterator which does not return any iterated values, the
+    function returns `false`.
+
+    Parameters
+    ----------
+    iterator: Object
+        Input iterator over which to iterate.
+
+    n: integer
+        Minimum number of successful values.
+
+    predicate: Function
+        The test function.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    bool: boolean
+        The function returns `true` if a predicate function returns a truthy
+        value for at least `n` iterated values. Otherwise, the function returns
+        `false`.
+
+    Examples
+    --------
+    > var arr = {{alias:@stdlib/array/to-iterator}}( [ 1, 1, 0, 0, 1 ] );
+    > function fcn( v ) { return ( v > 0 ); };
+    > var bool = {{alias}}( arr, 3, fcn )
+    true
+
+    See Also
+    --------
+

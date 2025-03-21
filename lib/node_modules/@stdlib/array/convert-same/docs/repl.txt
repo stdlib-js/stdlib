@@ -1,0 +1,27 @@
+
+{{alias}}( x, y )
+    Converts an input array to the same data type as a second input array.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Array to convert.
+
+    y: Array|TypedArray
+        Array having desired output data type.
+
+    Returns
+    -------
+    out: Array|TypedArray
+        Output array.
+
+    Examples
+    --------
+    > var x = [ 1.0, 2.0, 3.0, 4.0 ];
+    > var y = new {{alias:@stdlib/array/float32}}( 0 );
+    > var out = {{alias}}( x, y )
+    <Float32Array>[ 1.0, 2.0, 3.0, 4.0 ]
+
+    See Also
+    --------
+

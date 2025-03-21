@@ -1,0 +1,26 @@
+
+{{alias}}( p )
+    Returns the median of a geometric distribution with success probability `p`.
+
+    If `p < 0` or `p > 1`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    p: number
+        Success probability.
+
+    Returns
+    -------
+    out: integer
+        Median.
+
+    Examples
+    --------
+    > var v = {{alias}}( 0.1 )
+    6
+    > v = {{alias}}( 0.5 )
+    0
+
+    See Also
+    --------
+

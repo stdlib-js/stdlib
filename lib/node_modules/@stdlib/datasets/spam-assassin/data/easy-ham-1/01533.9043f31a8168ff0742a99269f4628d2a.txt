@@ -1,0 +1,52 @@
+From jm@jmason.org  Sat Oct  5 18:17:58 2002
+Return-Path: <yyyy@spamassassin.taint.org>
+Delivered-To: yyyy@spamassassin.taint.org
+Received: by spamassassin.taint.org (Postfix, from userid 500)
+	id 6038A16F03; Sat,  5 Oct 2002 18:17:58 +0100 (IST)
+Received: from spamassassin.taint.org (localhost [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP
+	id 4CA2BF7B1; Sat,  5 Oct 2002 18:17:58 +0100 (IST)
+To: Randy Bush <randy@psg.com>
+Cc: yyyy@spamassassin.taint.org (Justin Mason),
+	spamassassin list <spamassassin-talk@lists.sourceforge.net>
+Subject: Re: [SAtalk] razor2 auth? 
+In-Reply-To: Message from Randy Bush <randy@psg.com> 
+   of "Sat, 05 Oct 2002 09:16:29 PDT." <E17xrbR-000DpF-00@rip.psg.com> 
+From: yyyy@spamassassin.taint.org (Justin Mason)
+X-GPG-Key-Fingerprint: 0A48 2D8B 0B52 A87D 0E8A  6ADD 4137 1B50 6E58 EF0A
+X-Habeas-Swe-1: winter into spring
+X-Habeas-Swe-2: brightly anticipated
+X-Habeas-Swe-3: like Habeas SWE (tm)
+X-Habeas-Swe-4: Copyright 2002 Habeas (tm)
+X-Habeas-Swe-5: Sender Warranted Email (SWE) (tm). The sender of this
+X-Habeas-Swe-6: email in exchange for a license for this Habeas
+X-Habeas-Swe-7: warrant mark warrants that this is a Habeas Compliant
+X-Habeas-Swe-8: Message (HCM) and not spam.  Please report use of this
+X-Habeas-Swe-9: mark in spam to <http://www.habeas.com/report/>.
+Date: Sat, 05 Oct 2002 18:17:53 +0100
+Sender: yyyy@spamassassin.taint.org
+Message-Id: <20021005171758.6038A16F03@spamassassin.taint.org>
+
+
+Randy Bush said:
+
+> >> freebsd -stable
+> >> spamassassin 2.41
+> >>     spamasassin -r
+> >> results in
+> >> razor2 report failed: No such file or directory Razor2 reporting requires 
+> authentication at /usr/local/lib/perl5/site_perl/5.005/Mail/SpamAssassin/Repo
+> rter.pm line 77.
+> >> used to work until upgrade
+> > 
+> > using spamd?  try the -H switch. 
+> 
+> no, pipinng the message to "spamassassin -r" from within my mail
+> user agent, VM under Emacs.
+
+oops, sorry -- didn't notice the "report" bit.  Yes, you need to register
+for Razor2 -- "razor-register" or "razor-admin -register" if I recall
+correctly.
+
+--j.
+

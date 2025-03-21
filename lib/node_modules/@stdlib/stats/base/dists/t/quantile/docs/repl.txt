@@ -1,0 +1,70 @@
+
+{{alias}}( p, v )
+    Evaluates the quantile function for a Student's t distribution with degrees
+    of freedom `v` at a probability `p`.
+
+    If `p < 0` or `p > 1`, the function returns `NaN`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided a non-positive value for `v`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    p: number
+        Input probability.
+
+    v: number
+        Degrees of freedom.
+
+    Returns
+    -------
+    out: number
+        Evaluated quantile function.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.8, 1.0 )
+    ~1.376
+    > y = {{alias}}( 0.1, 1.0 )
+    ~-3.078
+    > y = {{alias}}( 0.5, 0.1 )
+    0.0
+
+    > y = {{alias}}( -0.2, 0.1 )
+    NaN
+
+    > y = {{alias}}( NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN )
+    NaN
+
+    > y = {{alias}}( 0.5, -1.0 )
+    NaN
+
+
+{{alias}}.factory( v )
+    Returns a function for evaluating the quantile function of a Student's t
+    distribution with degrees of freedom `v`.
+
+    Parameters
+    ----------
+    v: number
+        Degrees of freedom.
+
+    Returns
+    -------
+    quantile: Function
+        Quantile function.
+
+    Examples
+    --------
+    > var myQuantile = {{alias}}.factory( 4.0 );
+    > var y = myQuantile( 0.2 )
+    ~-0.941
+    > y = myQuantile( 0.9 )
+    ~1.533
+
+    See Also
+    --------
+

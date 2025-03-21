@@ -1,0 +1,64 @@
+
+{{alias}}( collection, [options,] indicator )
+    Groups values according to an indicator function.
+
+    When invoked, the indicator function is provided two arguments:
+
+    - value: collection value.
+    - index: collection index.
+
+    The value returned by an indicator function should be a value which can be
+    serialized as an object key.
+
+    If provided an empty collection, the function returns an empty object.
+
+    Parameters
+    ----------
+    collection: Array|TypedArray|Object
+        Input collection to group. If provided an object, the object must be
+        array-like (excluding strings and functions).
+
+    options: Object (optional)
+        Options.
+
+    options.thisArg: any (optional)
+        Execution context.
+
+    options.returns: string (optional)
+        If `values`, values are returned; if `indices`, indices are returned; if
+        `*`, both indices and values are returned. Default: 'values'.
+
+    indicator: Function
+        Indicator function specifying which group an element in the input
+        collection belongs to.
+
+    Returns
+    -------
+    out: Object
+        Group results.
+
+    Examples
+    --------
+    > function indicator( v ) {
+    ...     if ( v[ 0 ] === 'b' ) {
+    ...         return 'b';
+    ...     }
+    ...     return 'other';
+    ... };
+    > var collection = [ 'beep', 'boop', 'foo', 'bar' ];
+    > var out = {{alias}}( collection, indicator )
+    { 'b': [ 'beep', 'boop', 'bar' ], 'other': [ 'foo' ] }
+
+    // Output group results as indices:
+    > var opts = { 'returns': 'indices' };
+    > out = {{alias}}( collection, opts, indicator )
+    { 'b': [ 0, 1, 3 ], 'other': [ 2 ] }
+
+    // Output group results as index-value pairs:
+    > opts = { 'returns': '*' };
+    > out = {{alias}}( collection, opts, indicator )
+    { 'b': [ [0, 'beep'], [1, 'boop'], [3, 'bar'] ], 'other': [ [2, 'foo' ] ] }
+
+    See Also
+    --------
+

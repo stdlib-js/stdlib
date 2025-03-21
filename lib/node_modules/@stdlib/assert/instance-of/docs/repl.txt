@@ -1,0 +1,35 @@
+
+{{alias}}( value, constructor )
+    Tests whether a value has in its prototype chain a specified constructor as
+    a prototype property.
+
+    While the prototype of an `object` created using object literal notion is
+    `undefined`, the function returns `true` when provided an `object` literal
+    and the `Object` constructor. This maintains consistent behavior with the
+    `instanceof` operator.
+
+    Parameters
+    ----------
+    value: any
+        Input value.
+
+    constructor: Function
+        Constructor.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if a value is an instance of a provided constructor.
+
+    Examples
+    --------
+    > var bool = {{alias}}( [], Array )
+    true
+    > bool = {{alias}}( {}, Object )
+    true
+    > bool = {{alias}}( null, Object )
+    false
+
+    See Also
+    --------
+

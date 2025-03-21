@@ -1,0 +1,7 @@
+{
+  "expression": "var a = 4; const b = 5; let a = async () => {}; function foo() { return a; } class",
+  "expected": "\u001b[31mvar\u001b[0m a = 4; \u001b[31mconst\u001b[0m b = 5; \u001b[31mlet\u001b[0m a = \u001b[31masync\u001b[0m () => {}; \u001b[31mfunction\u001b[0m foo() { return a; } \u001b[31mclass\u001b[0m",
+  "theme": {
+    "keyword": "red"
+  }
+}

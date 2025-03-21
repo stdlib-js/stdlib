@@ -1,0 +1,28 @@
+
+{{alias}}( λ )
+    Returns the expected value of an exponential distribution.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided a negative value for `λ`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    λ: number
+        Rate parameter.
+
+    Returns
+    -------
+    out: number
+        Expected value.
+
+    Examples
+    --------
+    > var v = {{alias}}( 11.0 )
+    ~0.091
+    > v = {{alias}}( 4.5 )
+    ~0.222
+
+    See Also
+    --------
+

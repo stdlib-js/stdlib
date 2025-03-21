@@ -1,0 +1,91 @@
+From sentto-2242572-56000-1034048852-zzzz=spamassassin.taint.org@returns.groups.yahoo.com  Tue Oct  8 10:58:11 2002
+Return-Path: <sentto-2242572-56000-1034048852-zzzz=spamassassin.taint.org@returns.groups.yahoo.com>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id AD07516F1F
+	for <zzzz@localhost>; Tue,  8 Oct 2002 10:57:11 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Tue, 08 Oct 2002 10:57:11 +0100 (IST)
+Received: from n31.grp.scd.yahoo.com (n31.grp.scd.yahoo.com
+    [66.218.66.99]) by dogma.slashnull.org (8.11.6/8.11.6) with SMTP id
+    g983kpK31814 for <zzzz@spamassassin.taint.org>; Tue, 8 Oct 2002 04:46:51 +0100
+X-Egroups-Return: sentto-2242572-56000-1034048852-zzzz=spamassassin.taint.org@returns.groups.yahoo.com
+Received: from [66.218.66.96] by n31.grp.scd.yahoo.com with NNFMP;
+    08 Oct 2002 03:47:32 -0000
+X-Sender: felinda@frogstone.net
+X-Apparently-To: zzzzteana@yahoogroups.com
+Received: (EGP: mail-8_2_2_0); 8 Oct 2002 03:47:31 -0000
+Received: (qmail 25663 invoked from network); 8 Oct 2002 03:47:31 -0000
+Received: from unknown (66.218.66.216) by m13.grp.scd.yahoo.com with QMQP;
+    8 Oct 2002 03:47:31 -0000
+Received: from unknown (HELO mail2.athenet.net) (209.103.196.16) by
+    mta1.grp.scd.yahoo.com with SMTP; 8 Oct 2002 03:47:31 -0000
+Received: from [209.103.203.17] (209-103-203-17.dial-in1.osh.athenet.net
+    [209.103.203.17]) by mail2.athenet.net (8.11.6/8.11.6) with ESMTP id
+    g983lT426773 for <forteana@yahoogroups.com>; Mon, 7 Oct 2002 22:47:29
+    -0500
+X-Sender: felinda@pop2.athenet.net
+Message-Id: <a05200a03b9c8054f7303@[209.103.203.17]>
+In-Reply-To: <3DA1FE9D.B6AF7F34@attcanada.ca>
+References: <001601c26d25$c443f240$02628ac6@doug>
+    <050101c26e45$651a0cc0$9731e150@007730120202>
+    <3DA1FE9D.B6AF7F34@attcanada.ca>
+To: zzzzteana@yahoogroups.com
+From: That Goddess Chick <felinda@frogstone.net>
+X-Yahoo-Profile: felinda
+MIME-Version: 1.0
+Mailing-List: list zzzzteana@yahoogroups.com; contact
+    forteana-owner@yahoogroups.com
+Delivered-To: mailing list zzzzteana@yahoogroups.com
+Precedence: bulk
+List-Unsubscribe: <mailto:zzzzteana-unsubscribe@yahoogroups.com>
+Date: Mon, 7 Oct 2002 22:47:10 -0500
+Subject: Re: [zzzzteana] Fortean Times Online
+Reply-To: zzzzteana@yahoogroups.com
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+
+>Helen & Mike wrote:
+>
+>>  Chat tends to be on irc.quakenet #forteana most nights. I think this was
+>>  done mainly because of troll infestation.  Colin has control most nights on
+>>  there, and he keeps an eye on people and kicks them if they come in under
+>>  assumed names, or as soon as they show their true natures.  Just call him
+>>  Billy Goat Gruff :-)
+>
+>How do you sign up?
+>
+>Thanks!
+>
+>Kelly
+
+kelly, same thing as when you used to come to frogstone on Dalnet. 
+#frogstone is still there, and also #forteana. If you want to go to 
+quakenet, just change your server (in mIRC if that is what you use) 
+to that.
+-- 
+
+
+Fel
+NEW!! Cafe Forteana is back: http://www.frogstone.net/Cafe/CafeForteana.html
+http://www.frogstone.net
+Weird Page: http://my.athenet.net/~felinda/WeirdPage.html
+
+[Non-text portions of this message have been removed]
+
+
+------------------------ Yahoo! Groups Sponsor ---------------------~-->
+Plan to Sell a Home?
+http://us.click.yahoo.com/J2SnNA/y.lEAA/MVfIAA/7gSolB/TM
+---------------------------------------------------------------------~->
+
+To unsubscribe from this group, send an email to:
+forteana-unsubscribe@egroups.com
+
+ 
+
+Your use of Yahoo! Groups is subject to http://docs.yahoo.com/info/terms/ 
+
+
+

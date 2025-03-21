@@ -1,0 +1,9 @@
+Package: ttest2-test-fixtures
+Title: Test Fixtures
+Version: 0.0.0
+Authors@R: person("stdlib", "js", role = c("aut","cre"))
+Description: Generates test fixtures.
+Depends: R (>=3.4.0)
+Imports:
+	jsonlite
+LazyData: true

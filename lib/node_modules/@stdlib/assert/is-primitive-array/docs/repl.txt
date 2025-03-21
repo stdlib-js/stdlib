@@ -1,0 +1,28 @@
+
+{{alias}}( value )
+    Tests if a value is an array-like object containing only JavaScript
+    primitives.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is an array-like object containing only
+        JavaScript primitives.
+
+    Examples
+    --------
+    > var bool = {{alias}}( [ '3', 2, null ] )
+    true
+    > bool = {{alias}}( [ {}, 2, 1 ] )
+    false
+    > bool = {{alias}}( [ new String('abc'), '3.0' ] )
+    false
+
+    See Also
+    --------
+

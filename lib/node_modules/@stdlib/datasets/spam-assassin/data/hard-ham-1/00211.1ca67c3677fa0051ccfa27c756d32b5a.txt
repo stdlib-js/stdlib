@@ -1,0 +1,76 @@
+Return-Path: ler@lerami.lerctr.org
+Delivery-Date: Tue Sep 10 10:32:40 2002
+Received: via dmail-2002(12) for +lists/pgsql/novice; Tue, 10 Sep 2002 10:32:40 -0500 (CDT)
+Return-Path: <pgsql-novice-owner+M4679@postgresql.org>
+Received: from relay1.pgsql.com (relay1.pgsql.com [64.49.215.129])
+	by lerami.lerctr.org (8.12.2/8.12.2/20020902/$Revision: 1.30 $) with ESMTP id g8AFWXE9015200
+	for <ler@lerctr.org>; Tue, 10 Sep 2002 10:32:34 -0500 (CDT)
+Received: from postgresql.org (postgresql.org [64.49.215.8])
+	by relay1.pgsql.com (Postfix) with ESMTP
+	id E418F744506; Tue, 10 Sep 2002 11:32:25 -0400 (EDT)
+Received: from localhost (postgresql.org [64.49.215.8])
+	by postgresql.org (Postfix) with ESMTP id 0F199475ED1
+	for <pgsql-novice@postgresql.org>; Tue, 10 Sep 2002 11:32:15 -0400 (EDT)
+Received: from technovell.com (213-97-10-232.uc.nombres.ttd.es [213.97.10.232])
+	by postgresql.org (Postfix) with ESMTP id AF0A2476694
+	for <pgsql-novice@postgresql.org>; Tue, 10 Sep 2002 11:32:02 -0400 (EDT)
+Received: from technovell.com yapt@technovell.com [192.168.1.200]
+	by technovell.com with Novell NIMS $Revision:   2.88.1.1  $ on Linux;
+	Tue, 10 Sep 2002 17:46:54 +0100
+Message-ID: <3D7E1074.7C4B1520@technovell.com>
+Date: Tue, 10 Sep 2002 17:32:04 +0200
+From: Terry Yapt <yapt@technovell.com>
+X-Mailer: Mozilla 4.79 [en] (Windows NT 5.0; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: pgsql-novice@postgresql.org
+Subject: [NOVICE] pl/pgsql and returns timestamp type
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-Virus-Scanned: by amavisd-milter (http://amavis.org/)
+X-Virus-Scanned: by AMaViS new-20020517
+Precedence: bulk
+Sender: pgsql-novice-owner@postgresql.org
+X-Status: 
+X-Keywords: 
+
+Hi all,
+
+I cannot to get this to run...  I think I am mistaking some basic concept or I have a big brain-lock .  Somebody know what is the problem to execute this function ?
+
+Thanks in advance...
+
+--====================================
+DROP TABLE test;
+CREATE TABLE test
+(
+  clave numeric(7,0) not null,
+  PRIMARY KEY (clave)
+) WITHOUT OIDS;
+--====================================
+DROP FUNCTION f_test(numeric(7,0), numeric(7,0));
+CREATE OR REPLACE FUNCTION f_test(numeric(7,0), numeric(7,0)) RETURNS timestamp AS '
+  DECLARE
+    p_datod ALIAS FOR $1;
+    p_datoh ALIAS FOR $2;
+    --
+    tdesde timestamp;
+    thasta timestamp;
+  BEGIN
+    tdesde := now();
+    --
+    FOR X IN p_datod..p_datoh LOOP
+      INSERT INTO test VALUES (x);    
+    END LOOP;
+    --
+    thasta := now() - tdesde;
+    RETURN thasta;
+  COMMIT;
+  END;
+' LANGUAGE 'plpgsql';
+--====================================
+select f_test(1,9);
+
+---------------------------(end of broadcast)---------------------------
+TIP 1: subscribe and unsubscribe commands go to majordomo@postgresql.org
+

@@ -1,0 +1,78 @@
+From social-admin@linux.ie  Fri Aug  2 16:32:44 2002
+Return-Path: <social-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A9BCF44104
+	for <jm@localhost>; Fri,  2 Aug 2002 11:32:12 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 02 Aug 2002 16:32:12 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g72Ekjn01518 for
+    <jm+ilug-social@jmason.org>; Fri, 2 Aug 2002 15:46:45 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id OAA03192 for
+    <jm+ilug-social@jmason.org>; Fri, 2 Aug 2002 14:18:11 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id OAA09918; Fri, 2 Aug 2002 14:17:23 +0100
+Received: from mail.cs.tcd.ie (relay.cs.tcd.ie [134.226.32.56]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id OAA09873 for <social@linux.ie>;
+    Fri, 2 Aug 2002 14:17:17 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host relay.cs.tcd.ie
+    [134.226.32.56] claimed to be mail.cs.tcd.ie
+Received: from mail.cs.tcd.ie (localhost [127.0.0.1]) by relay.cs.tcd.ie
+    (Postfix) with ESMTP id A0047F5917 for <social@linux.ie>; Fri,
+    2 Aug 2002 14:17:16 +0100 (IST)
+Received: from foleys.dsg.cs.tcd.ie (foleys.dsg.cs.tcd.ie [134.226.36.58])
+    by mail.cs.tcd.ie (Postfix) with ESMTP id 30405F5952 for <social@linux.ie>;
+    Fri,  2 Aug 2002 14:17:15 +0100 (IST)
+Subject: Re: [ILUG-Social] Re: [ILUG] Fwd: Linux Beer Hike
+From: Arkaitz Bitorika <Arkaitz.Bitorika@cs.tcd.ie>
+To: social@linux.ie
+In-Reply-To: <20020731123822.A14110@ie.suberic.net>
+References: <20020731114006.B11938@ie.suberic.net>
+    <Pine.LNX.4.40.0207311157360.16670-100000@turing.maths.tcd.ie>
+    <20020731123822.A14110@ie.suberic.net>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.5
+Date: 02 Aug 2002 14:12:30 +0100
+Message-Id: <1028293950.4603.6.camel@foleys>
+MIME-Version: 1.0
+Sender: social-admin@linux.ie
+Errors-To: social-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group social events <social.linux.ie>
+X-Beenthere: social@linux.ie
+
+On Wed, 2002-07-31 at 12:38, kevin lyda wrote:
+> and see, that would be my retort to any overly zealous irish speaker.
+> there's a huge opportunity for a fully irish computing environment in
+> free software.  and yet i don't see much action from official irish
+> organisations.  the reason mandrake and some others have the irish
+> support they have is because of individuals like donnacha.
+
+Just a note to say that the Basque government has payed for having
+Mandrake translated to Basque (and release all the changes), so that you
+can just install it and the desktop and apps can be in your language. I
+think that whichever organization (Irish government I suppose) is in
+charge of promoting Irish here could learn a lot from them. 
+
+The Basque government used to pay MS for translating Windows, but they
+got pissed off because it was extremely expensive and the translations
+would come out when the software was already obsolete. Now they promote
+Free Software while helping the language at the same time, I think it's
+a win-win situation ;).
+
+cheers,
+Arkaitz
+
+
+
+-- 
+Irish Linux Users' Group Social Events: social@linux.ie
+http://www.linux.ie/mailman/listinfo/social for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

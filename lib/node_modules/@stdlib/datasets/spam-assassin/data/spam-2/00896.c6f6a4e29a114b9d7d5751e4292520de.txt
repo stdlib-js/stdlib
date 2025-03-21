@@ -1,0 +1,80 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6M1NYhY039893
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Sun, 21 Jul 2002 20:23:35 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6M1NY2e039889
+	for cypherpunks-forward@ds.pro-ns.net; Sun, 21 Jul 2002 20:23:34 -0500 (CDT)
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6M1NWhX039869
+	for <cypherpunks@ds.pro-ns.net>; Sun, 21 Jul 2002 20:23:32 -0500 (CDT)
+	(envelope-from cpunks@einstein.ssz.com)
+X-Authentication-Warning: hq.pro-ns.net: Host cpunks@[207.200.56.4] claimed to be einstein.ssz.com
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id UAA22470
+	for cypherpunks@ds.pro-ns.net; Sun, 21 Jul 2002 20:31:43 -0500
+Received: (from mdom@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id UAA22462
+	for cypherpunks-outgoing; Sun, 21 Jul 2002 20:31:37 -0500
+Received: from helimore2514.com ([217.78.76.138])
+	by einstein.ssz.com (8.8.8/8.8.8) with SMTP id UAA22453
+	for <cypherpunks@EINSTEIN.ssz.com>; Sun, 21 Jul 2002 20:30:55 -0500
+Message-Id: <200207220130.UAA22453@einstein.ssz.com>
+From: "BARRISTER JOHNSON AKERELE" <adewale1@mail.com>
+To: cypherpunks@einstein.ssz.com
+Date: Mon, 22 Jul 2002 14:35:46 -0700
+Subject: REQUEST FOR ASSISTANCE
+X-Mailer: Microsoft Outlook Express 5.00.2919.6900 DM
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by einstein.ssz.com id UAA22459
+Sender: owner-cypherpunks@einstein.ssz.com
+Precedence: bulk
+Reply-To: cypherpunks@einstein.ssz.com
+X-Mailing-List: cypherpunks@ssz.com
+X-Unsubscription-Info: http://einstein.ssz.com/cdr
+X-List-Admin: list@ssz.com
+X-Loop: ssz.com
+X-Acceptable-Languages: English, Russian, German, French, Spanish
+
+BARRISTER ADEWALE COKER CHAMBERS
+Legal Practitioners / Notary Public
+Blk 804- Law House Building
+Lagos-Nigeria.
+
+For your kind attention,
+
+
+              REQUEST FOR ASSISTANCE
+It is my humble pleasure to write you this letter irrespective of the fact that you do not know me.  However,I am in search of a reliable and trustworthy person that can handle a confidential transaction of this nature.
+
+I am BARRISTER ADEWALE COKER, a family lawyer to our former military rule,General Sani Abacha who died suddenly in power some years ago. Since his untimely demise, the family has suffered a lot of harassment from the regimes that succeeded him.  The regime and even the present civilian government are made up of Abacha's enemies.Recently, the wife was banned from traveling outside Kano State their home state as a kind of house arrest and the eldest son still in detention.Although, a lot of money have been recovered from Mrs. Abacha since the death of her husband by the present government, there's still huge sums of money in hard currencies that we have been able to move out of the country for safe keeping to the tune of US$50 million.This money US$50 Million is already in North American and if you are interested,we will prepare you as the beneficiary of the total funds,and you will share 25% of the total funds after clearance from the Security Company.
+
+Note, there is no risk involved in this project because l am involved as Abacha's confidant.Please you should keep this transaction a top secret and we are prepared to do more business with you pending your approach towards this project.I await your urgent response.Thanks.
+
+
+Yours Faithfully
+
+BARRISTER ADEWALE COKER.
+
+
+
+
+
+
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

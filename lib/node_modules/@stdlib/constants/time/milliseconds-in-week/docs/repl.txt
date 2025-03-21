@@ -1,0 +1,17 @@
+
+{{alias}}
+    Number of milliseconds in a week.
+
+    The value is a generalization and does **not** take into account
+    inaccuracies due to daylight savings conventions, crossing timezones, or
+    other complications with time and dates.
+
+    Examples
+    --------
+    > var weeks = 3.14;
+    > var ms = weeks * {{alias}}
+    1899072000
+
+    See Also
+    --------
+

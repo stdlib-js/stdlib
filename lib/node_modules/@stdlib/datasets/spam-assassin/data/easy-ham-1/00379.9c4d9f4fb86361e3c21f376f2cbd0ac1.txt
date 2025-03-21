@@ -1,0 +1,85 @@
+From fork-admin@xent.com  Mon Sep  2 23:01:30 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (unknown [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id C86A516F23
+	for <jm@localhost>; Mon,  2 Sep 2002 23:01:07 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 02 Sep 2002 23:01:07 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g82GXqZ09955 for <jm@jmason.org>;
+    Mon, 2 Sep 2002 17:33:53 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 751382940A6; Mon,  2 Sep 2002 09:31:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mojo-jojo.ebuilt.net (mojo-jojo.ebuilt.net [209.216.43.10])
+    by xent.com (Postfix) with SMTP id 9B7F2294099 for <fork@xent.com>;
+    Mon,  2 Sep 2002 09:30:17 -0700 (PDT)
+Received: (qmail 23019 invoked from network); 2 Sep 2002 16:32:40 -0000
+Received: from nat.ebuilt.com (HELO thedudebvi1wob) (209.216.46.200) by
+    mojo-jojo.ebuilt.net with SMTP; 2 Sep 2002 16:32:40 -0000
+Reply-To: <rbfar@ebuilt.com>
+From: "Reza B'Far (eBuilt)" <rbfar@ebuilt.com>
+To: "Adam L. Beberg" <beberg@mithral.com>,
+	"Mr. FoRK" <fork_list@hotmail.com>
+Cc: <fork@spamassassin.taint.org>
+Subject: RE: Java is for kiddies
+Message-Id: <NCBBJMBPOKEEKDAILFNGOEBKFEAA.rbfar@ebuilt.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2910.0)
+Importance: Normal
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4522.1200
+In-Reply-To: <Pine.LNX.4.33.0209012058020.3683-100000@watcher.mithral.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 2 Sep 2002 09:30:22 -0700
+
+With the increasing prevalence of web services (not that they are always a
+good thing), I doubt that parsing XML will be something that will remain at
+the Java application layer for long... Recent threads here on Fork
+indicating the move towards hardware parsing or this code even become part
+of the native implementation of Java on various platforms...
+
+Reza B'Far
+
+-----Original Message-----
+From: fork-admin@xent.com [mailto:fork-admin@xent.com]On Behalf Of Adam
+L. Beberg
+Sent: Sunday, September 01, 2002 9:01 PM
+To: Mr. FoRK
+Cc: fork@spamassassin.taint.org
+Subject: Re: Java is for kiddies
+
+
+On Sun, 1 Sep 2002, Mr. FoRK wrote:
+
+> > 6.  Hardware is getting so fast that I'm not sure if the performance
+> > difference between Java and C/C++ are relevant any more.
+>
+> When out-of-the-box parsing & transform of XML in java is 25x slower than
+> C++ on the same hardware then it does matter.
+
+Yea, and that on top of the 100x of all the parsing engines over just
+bigendian'ing it and passing the data (5x+++) in the raw. Then it REALLY
+matters.
+
+- Adam L. "Duncan" Beberg
+  http://www.mithral.com/~beberg/
+  beberg@mithral.com
+
+

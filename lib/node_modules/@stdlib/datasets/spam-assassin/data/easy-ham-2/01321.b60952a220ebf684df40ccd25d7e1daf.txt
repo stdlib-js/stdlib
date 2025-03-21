@@ -1,0 +1,83 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Fri Aug  2 16:36:10 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4B5074410D
+	for <jm@localhost>; Fri,  2 Aug 2002 11:35:27 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 02 Aug 2002 16:35:27 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g72Ekun01631 for
+    <jm-sa@jmason.org>; Fri, 2 Aug 2002 15:46:56 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id NAA02881 for
+    <jm-sa@jmason.org>; Fri, 2 Aug 2002 13:44:45 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17abi7-0003d0-00; Fri,
+    02 Aug 2002 05:39:15 -0700
+Received: from mail13.speakeasy.net ([216.254.0.213]
+    helo=mail.speakeasy.net) by usw-sf-list1.sourceforge.net with esmtp
+    (Cipher TLSv1:DES-CBC3-SHA:168) (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17abhe-0004no-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Fri, 02 Aug 2002 05:38:46 -0700
+Received: (qmail 14794 invoked from network); 2 Aug 2002 12:38:44 -0000
+Received: from unknown (HELO smoking) ([66.92.72.101]) (envelope-sender
+    <rOD@arsecandle.org>) by mail13.speakeasy.net (qmail-ldap-1.03) with SMTP
+    for <spamassassin-talk@lists.sourceforge.net>; 2 Aug 2002 12:38:44 -0000
+Message-Id: <00e701c23a21$886271c0$65485c42@smoking>
+From: "rODbegbie" <rOD@arsecandle.org>
+To: "Spam Assassin" <spamassassin-talk@example.sourceforge.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Subject: [SAtalk] why false positives are twenty times worse than false negatives
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Fri, 2 Aug 2002 08:38:40 -0400
+Date: Fri, 2 Aug 2002 08:38:40 -0400
+
+http://www.editorandpublisher.com/editorandpublisher/features_columns/articl
+e_display.jsp?vnu_content_id=1570036
+
+(or http://makeashorterlink.com/?A1D525B61 if that URL wrapped)
+
+rOD.
+--
+"If I was a front porch swing, would you let me hang?
+ If I was a dancefloor, would you shake your thang?
+ If I was a rubber check, would you let me bounce
+ Up and down inside your bank account?"
+
+>> Doing the blogging thang again at http://www.groovymother.com/ <<
+
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

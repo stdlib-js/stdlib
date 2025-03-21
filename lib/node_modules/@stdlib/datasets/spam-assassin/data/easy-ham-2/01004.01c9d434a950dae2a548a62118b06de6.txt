@@ -1,0 +1,66 @@
+From fork-admin@xent.com  Mon Aug 12 11:10:01 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9855D44172
+	for <jm@localhost>; Mon, 12 Aug 2002 05:57:06 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:57:06 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7BDwmb02739 for <jm@jmason.org>;
+    Sun, 11 Aug 2002 14:58:48 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 1A35C294167; Sun, 11 Aug 2002 06:55:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.auracom.net (smtp1.auracom.net [165.154.140.23]) by
+    xent.com (Postfix) with ESMTP id 483592940AD for <fork@xent.com>;
+    Sun, 11 Aug 2002 06:54:22 -0700 (PDT)
+Received: from maya.dyndns.org (ts5-016.ptrb.interhop.net
+    [165.154.190.80]) by smtp1.auracom.net (8.11.2/8.11.2) with ESMTP id
+    g7BDTqh14009 for <fork@xent.com>; Sun, 11 Aug 2002 09:29:52 -0400 (EDT)
+Received: by maya.dyndns.org (Postfix, from userid 501) id 3A5671C3B6;
+    Sun, 11 Aug 2002 09:55:00 -0400 (EDT)
+To: fork <fork@spamassassin.taint.org>
+Subject: Re: Forged whitelist spam
+References: <Pine.LNX.4.33.0208111214300.3981-100000@hydrogen.leitl.org>
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m265yh5wln.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 11 Aug 2002 09:55:00 -0400
+
+>>>>> "E" == Eugen Leitl <eugen@leitl.org> writes:
+
+    E> ... Moreover, worms which use email as vector exist *only*
+    E> because a single vendor ships mailers with broken default
+    E> settings, and insists to make documents executables. This makes
+    E> for very bad press, and eventually that vendor is going to wise
+    E> up, and stop shipping as many broken wares
+
+Do you suppose any of us will live long enough to see such a day?
+
+-- 
+Gary Lawrence Murphy <garym@teledyn.com> TeleDynamics Communications Inc
+Business Innovations Through Open Source Systems: http://www.teledyn.com
+"Computers are useless.  They can only give you answers."(Pablo Picasso)
+
+http://xent.com/mailman/listinfo/fork
+
+

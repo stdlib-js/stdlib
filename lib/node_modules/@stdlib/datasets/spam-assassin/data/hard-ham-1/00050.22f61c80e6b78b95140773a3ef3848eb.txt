@@ -1,0 +1,658 @@
+Return-Path: <Online#3.19860.f9-f6ASlANZLfc4x9RR.1.b@newsletter.online.com>
+Received: from acmta4.cnet.com (abv-sfo1-acmta4.cnet.com [206.16.1.163])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6C0bCJ22099
+	for <qqqqqqqqqq-cnet-newsletters@spamassassin.taint.org>; Fri, 12 Jul 2002 01:37:12 +0100
+Received: from abv-sfo1-ac-agent2 (206.16.0.224) by acmta4.cnet.com (PowerMTA(TM) v1.5); Thu, 11 Jul 2002 17:31:47 -0700 (envelope-from <Online#3.19860.f9-f6ASlANZLfc4x9RR.1.b@newsletter.online.com>)
+Message-ID: <3563843.1026434225596.JavaMail.root@abv-sfo1-ac-agent2>
+Date: Thu, 11 Jul 2002 17:37:05 -0700 (PDT)
+From: CNET Internet Services <Online#3.19860.f9-f6ASlANZLfc4x9RR.1@newsletter.online.com>
+To: qqqqqqqqqq-cnet-newsletters@spamassassin.taint.org
+Subject: Broadband ISPs wise up to wireless, defend (or don't) against hackers (CNET INTERNET SERVICES)
+Mime-Version: 1.0
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+X-Mailer: Accucast (http://www.accucast.com)
+X-Mailer-Version: 2.8.4-2
+
+
+<html><head><title>Internet Services Weekly Newsletter</title></head>
+<body bgcolor=3D"#eeeeee"><center>
+<a href=3D"top"></a>
+
+<!-- header -->
+<table cellpadding=3D0 cellspacing=3D0 border=3D0 width=3D612 bgcolor=3D"#f=
+fffff">
+<tr valign=3Dtop><td width=3D442 colspan=3D4><img src=3D"http://www.cnet.co=
+m/i/nl/ws/hd.gif" width=3D442 height=3D60 alt=3D"Internet Services Weekly N=
+ewsletter"><br>
+=09=09=09<table width=3D442 cellpadding=3D0 cellspacing=3D0 border=3D0 bgco=
+lor=3D"#ffcc00">
+=09=09=09=09<tr><td bgcolor=3D"#000000" colspan=3D3><img src=3D"http://home=
+.cnet.com/b.gif" width=3D"1" height=3D"1" border=3D"0"><br></td></tr>
+=09=09=09=09<tr>
+=09=09=09=09=09<td bgcolor=3D"#000000" width=3D1 rowspan=3D2><img src=3D"ht=
+tp://home.cnet.com/b.gif" width=3D"1" height=3D"10" border=3D"0"><br></td>
+=09=09=09=09=09<td width=3D10 rowspan=3D2><img src=3D"http://home.cnet.com/=
+b.gif" width=3D"1" height=3D"10" border=3D"0"><br></td>
+=09=09=09=09=09<td  width=3D430><img src=3D"http://home.cnet.com/b.gif" wid=
+th=3D"1" height=3D"10" border=3D"0"><br></td>
+=09=09=09=09</tr>
+=09=09=09=09<tr><td bgcolor=3D"#000000"><img src=3D"http://home.cnet.com/b.=
+gif" width=3D"1" height=3D"1" border=3D"0"><br></td></tr>
+      =09=09</table>=09
+=09</td>
+<!-- Skyscraper column -->
+=09<td width=3D160 rowspan=3D2>
+=09=09<img src=3D"http://home.cnet.com/i/dp/dd_b.gif" width=3D"160" height=
+=3D"18" border=3D"0"><br>
+=09=09<table cellpadding=3D0 cellspacing=3D0 border=3D0 width=3D160>
+=09=09<tr><td align=3Dcenter bgcolor=3D"#eeeeee"><br></td></tr>
+=09=09</table>
+<!-- tower ad -->
+<div align=3D"center"><img src=3D"http://i.i.com.com/cnwk.1d/Ads/common/adv=
+ertisement.gif" width=3D"120" height=3D"10" border=3D"0"></br>
+
+<a href=3D"http://clickthru.online.com/Click?q=3D0f-RM2lIqjktmdPkg9sUb9HGRJ=
+1bfZR" target=3D"new">  =20
+
+<img src=3D"http://www.techrepublic.com/images/ads/MAP BBQ_skyscraper.gif" =
+width=3D"160" height=3D"600" border=3D"0">
+
+</a></div>
+<!-- /tower ad --><!-- right column content -->
+
+<!-- most popular NEWSLETTER -->
+<br><img src=3D"http://www.cnet.com/i/nl/ws/rhc_pop.gif" width=3D150 height=
+=3D20 alt=3D"Most Popular">
+
+<br><font face=3D"arial, helvetica" size=3D-1 color=3D#333333>
+
+<b>Reseller Accounts</b><br><table width=3D150 cellpadding=3D2 cellspacing=
+=3D0 border=3D0><tr valign=3Dtop><td><font face=3D"arial, helvetica" size=
+=3D-2><b>1.</b>&nbsp;<a href=3D"http://clickthru.online.com/Click?q=3D24-8D=
+dMIcz6q--8CI6geUef92iqrwdR" >Infinology&nbsp;Corp.</a>, <a href=3D"http://c=
+lickthru.online.com/Click?q=3D39-7QgMIjI6y-waTUCCGLs-y39w-_cR" >$59</a><br>=
+<b>2.</b>&nbsp;<a href=3D"http://clickthru.online.com/Click?q=3D4e-0Y95InZA=
+4ufV6aJIKlsTn8N_JjiR" >ReadyHosting.com</a>, <a href=3D"http://clickthru.on=
+line.com/Click?q=3D63-tPKjIHWSsaa7VWtg_9-hwkp_WElR" >$4.12</a><br><b>3.</b>=
+&nbsp;<a href=3D"http://clickthru.online.com/Click?q=3D78-d5asIdUDx-1LLqR5v=
+nMUN5xspo4R" >Aplus.Net</a>, <a href=3D"http://clickthru.online.com/Click?q=
+=3D8d-nbL1Q7no54XkOhpIiSupcptbPMuR" >$79.95</a><br><b>4.</b>&nbsp;<a href=
+=3D"http://clickthru.online.com/Click?q=3Da2-6-M7QXZxTvb9b-K9R0CGk_HtsosR" =
+>One&nbsp;World&nbsp;Hosting</a>, <a href=3D"http://clickthru.online.com/Cl=
+ick?q=3Db8-smr2QQUwcaz9HOOlq9S_p8qkEi9R" >$10</a><br><b>5.</b>&nbsp;<a href=
+=3D"http://clickthru.online.com/Click?q=3Dcd-VHhSQzsKThHat4OFjAi_TOlRfXuR" =
+>Superb&nbsp;Internet</a>, <a href=3D"http://clickthru.online.com/Click?q=
+=3De2-J1OpQhyziskjKKBENBEZdihv9KsR" >$5</a><br><br></font><font face=3D"ari=
+al, helvetica" size=3D-1><a href=3D"http://clickthru.online.com/Click?q=3Df=
+7-N0QnQLgzoJWajWNlrZIGiR6ImOZR" ><b>More providers</b></a></font><br></td><=
+/tr></table>
+<!-- /most popular NEWSLETTER -->
+
+<br>
+
+<!-- Vertical Brick -->
+ <IMG alt=3D"Also from CNET" height=3D20 src=3D"http://home.cnet.com/Ads/Me=
+dia/Images/RHC_ALSOfromCNETnet.gif" width=3D150 NOSEND=3D"1"><BR>
+<TABLE border=3D0 cellPadding=3D2 cellSpacing=3D0 width=3D150><TBODY><TR vA=
+lign=3Dtop>
+<TD><FONT face=3D"arial, helvetica" size=3D-1><B>
+
+<a href=3D"http://clickthru.online.com/Click?q=3D0c-_Y3DIc8HTzkCJaQWDjP2qJ1=
+3b4dR" >Live tech help now</a><p>=20
+<a href=3D"http://clickthru.online.com/Click?q=3D21-UPROIjdDVFrmG_8oQqYoj1c=
+TQ4cR" >May's Editors' Choice</a><p> =20
+<a href=3D"http://clickthru.online.com/Click?q=3D36-wg7-IiI4oUHRfj_MxvH3Qai=
+nXQRR" >1 million open jobs</a><p>=20
+<a href=3D"http://clickthru.online.com/Click?q=3D4b-k_l7IBUPPQwb39aP9VA35c5=
+4JMlR" >News.com: Top CIOs</a> <p>=20
+<a href=3D"http://clickthru.online.com/Click?q=3D61-x9oAIoLj9Wf2Yu24JYndFK-=
+AWlrR" >ZDNet: PeopleSoft </a>=20
+
+</B></FONT></TD>
+</TR></TBODY></TABLE></P>
+<!-- End Vertical Brick-->
+
+
+
+
+</td><td width=3D9 rowspan=3D2><img src=3D"http://www.cnet.com/i/nl/dd_c.gi=
+f" width=3D9 height=3D60><br>
+<table width=3D9 cellpadding=3D0 cellspacing=3D0 border=3D0>
+=09<tr><td bgcolor=3D"#000000"><img src=3D"http://www.cnet.com/b.gif" width=
+=3D9 height=3D1></td></tr>
+=09<tr><td bgcolor=3D"#ffccoo"><img src=3D"http://www.cnet.com/b.gif" width=
+=3D1 height=3D10></td></tr>
+=09<tr><td bgcolor=3D"#000000"><img src=3D"http://www.cnet.com/b.gif" width=
+=3D1 height=3D1></td></tr>
+</table></td>
+=09<td width=3D1 bgcolor=3D"#000000" rowspan=3D2><table width=3D1 cellpaddi=
+ng=3D0 cellspacing=3D0 border=3D0>
+=09<tr><td bgcolor=3D"#eeeeee"><img src=3D"http://www.cnet.com/b.gif" width=
+=3D1 height=3D60></td></tr>
+</table></td></tr>
+<tr valign=3Dtop>
+=09<td width=3D1 bgcolor=3D"#000000"><img src=3D"http://home.cnet.com/b.gif=
+" width=3D"1" height=3D"1" border=3D"0"></td>
+=09<td width=3D10 bgcolor=3D"#ffcc00"><img src=3D"http://home.cnet.com/b.gi=
+f" width=3D"10" height=3D"1" border=3D"0"><br></td>
+=09<td width=3D1 bgcolor=3D"#000000"><img src=3D"http://home.cnet.com/b.gif=
+" width=3D"1" height=3D"1" border=3D"0"></td>
+=09<td width=3D410 bgcolor=3D"#ffffff">
+=09=09<table cellpadding=3D0 cellspacing=3D0 border=3D0 width=3D410 bgcolor=
+=3D"#ffffef">
+=09=09=09<tr valign=3Dtop>
+=09=09=09<td width=3D10><img src=3D"http://home.cnet.com/b.gif" alt=3D"" wi=
+dth=3D"10" height=3D"1" border=3D"0"><br></td>
+=09=09=09<td width=3D412>
+=09=09
+=09=09=09<img src=3D"http://home.cnet.com/b.gif" width=3D"1" height=3D"3" b=
+order=3D"0"><br>
+=09=09=09<img src=3D"http://home.cnet.com/b.gif" width=3D"10" height=3D"1" =
+border=3D"0"><font face=3D"Arial, Helvetica" size=3D"-2">July 11, 2002</fon=
+t><br>
+=09=09=09<img src=3D"http://home.cnet.com/b.gif" width=3D"1" height=3D"3" b=
+order=3D"0"><br>
+=09=09=09=09<table cellpadding=3D0 cellspacing=3D0 border=3D0 width=3D412>
+=09=09=09=09<tr valign=3Dtop>
+=09=09=09=09=09<td width=3D76 align=3Dright>
+=09=09=09=09=09=09<img src=3D"http://a.r.tv.com/cnet.1d/i/nl/sw/lindseyt.gi=
+f" width=3D66 height=3D86><br>
+=09=09=09=09=09=09<font face=3D"arial, helvetica" size=3D"-2" color=3D"#666=
+666">
+--<A HREF=3D"mailto:software_mailbag@cnet.com">Lindsey Turrentine</A><br>
+Senior editor<br>
+CNET Software and Internet<br></font>
+=09=09=09</td><td width=3D10> </td>
+=09=09=09<td><font face=3D"Arial, Helvetica">
+=09=09=09<font color=3D"#333333"><B>Dear Readers,</B></font><BR>
+=09=09=09<font size=3D"-1">
+Your ISP, if it's anything like mine, works like a very large
+boat: It moves slowly, it turns slowly, and sometimes it leaks.
+Take rogue wireless networks, for example. For many months now,
+some mischievous entrepreneurs have been hacking into major ISP
+networks and siphoning off bandwidth for neighborhood wireless
+networks. Only now, months later, are broadband bigwigs <a href=3D"http://c=
+lickthru.online.com/Click?q=3D76-vJf7InBP3QcLqhr1okYP2r70U6iR" ><B>doing
+something about it</b></a>. And what
+about ISP hackers? Could they break into your service provider?
+Probably. Thankfully, you can protect yourself against most of
+these leaks. Let Dan Tynan, our ISP guru, <a href=3D"http://clickthru.onlin=
+e.com/Click?q=3D8b-SBGBQY0y_2bkiJ1EYIEElDh4B1FR" ><B>show you how</b></a>.
+<P>
+
+=09=09</td>
+=09=09=09</tr>
+=09=09=09=09</table>
+=09=09=09=09</td>
+=09=09=09=09<td width=3D8><img src=3D"http://home.cnet.com/b.gif" alt=3D"" =
+width=3D"8" height=3D"1" border=3D"0"><br></td>
+=09=09=09</tr>
+=09=09</table>
+<!--Info Button Bar Web Hosting -->
+<table cellpadding=3D0 width=3D"100%">
+  <tr>
+    <td align=3Dcenter>
+      <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0=
+">
+=09    <tr>
+=09=09  <td align=3D"center" colspan=3D"5"><img src=3D"http://www.cnet.com/=
+Ads/Media/Images/ad10-dk.gif" width=3D"120" height=3D"10" alt=3D"advertisem=
+ent"></td>
+        </tr>
+        <tr valign=3D"middle">
+          <td colspan=3D"5" bgcolor=3D"#999999" height=3D"15" class=3D"w"><=
+b class=3D"v1"><font face=3D"verdana,geneva,helvetica" size=3D"-2" color=3D=
+"#ffffff"><b> Quick links to Services & Prices from these companies</b></fo=
+nt><br></td>
+        </tr>
+=09=09<tr valign=3D"middle" align=3D"center" bgcolor=3D"#eeeeee">
+=09=09  <td height=3D"35"> </td>
+=09=09  <FORM action=3Dhttp://www.cnet.com/cgi-acc/clickthru.acc method=3Dg=
+et>
+=09=09  <td width=3D"50%" align=3D"center">
+=09=09  <INPUT name=3Durl type=3Dhidden value=3Dhttp://home.cnet.com/go/to?=
+tag=3Dex.ws.ros.disptchbut.dellhost-disptch&destUrl=3Dhttp%3a%2f%2fwebservi=
+ces.cnet.com%2fcgi%2fpremier.asp%3fcid%3d1006102><INPUT type=3Dsubmit value=
+=3D"    DellHost    "></td></form><FORM action=3Dhttp://www.cnet.com/cgi-ac=
+c/clickthru.acc method=3Dget>
+=09=09  <td width=3D"50%" align=3D"center">
+=09=09  <INPUT name=3Durl type=3Dhidden value=3Dhttp://home.cnet.com/go/to?=
+tag=3Dex.ws.ros.disptchbut.aplus-disptch&destUrl=3Dhttp%3a%2f%2fwebservices=
+.cnet.com%2fcgi%2fpremier.asp%3fcid%3d1000015> <INPUT type=3Dsubmit value=
+=3D"    Aplus.Net   "></td></form>
+=09=09  <td> </td>
+=09=09</tr>
+=09  </table>   =20
+=09</td>
+  </tr>
+</table>
+<!--/Info Button Bar Web Hosting -->
+=09<!-- bottom rule -->
+=09<table cellpadding=3D0 cellspacing=3D0 border=3D0 width=3D410>
+=09<tr valign=3Dtop>
+=09=09<td bgcolor=3D"#F7D69C"><img src=3D"http://home.cnet.com/b.gif" width=
+=3D"1" height=3D"1" border=3D"0"></td>
+=09</tr>
+=09</table>
+=09
+<table border=3D"0" width=3D"100%" cellpadding=3D"10" cellspacing=3D"0">
+<tr><td>
+<img src=3D"http://www.cnet.com/i/gl/new-cc.gif" alt=3D"Crucial Clicks" wid=
+th=3D"120" height=3D"19" border=3D"0"><br>
+<table width=3D"100%"  cellpadding=3D"0" cellspacing=3D"0" border=3D"0" bgc=
+olor=3D"#ffffff">
+<tr bgcolor=3D"#cccccc"><td colspan=3D"7"><img src=3D"http://home.cnet.com/=
+b.gif" width=3D"1" height=3D"1" border=3D"0"></td></tr>
+<tr>
+<td bgcolor=3D"#cccccc" rowspan=3D"3"><img src=3D"http://home.cnet.com/b.gi=
+f" height=3D1 width=3D1></td>
+<td rowspan=3D"3"><img src=3D"http://home.cnet.com/b.gif" height=3D1 width=
+=3D5></td>
+<td colspan=3D"3"><img src=3D"http://home.cnet.com/b.gif" height=3D5 width=
+=3D1></td>
+<td rowspan=3D"3"><img src=3D"http://home.cnet.com/b.gif" height=3D1 width=
+=3D5></td>
+<td bgcolor=3D"#cccccc" rowspan=3D"3"><img src=3D"http://home.cnet.com/b.gi=
+f" height=3D1 width=3D1></td>
+</tr>
+<tr valign=3D"top">
+<td width=3D"100%">
+=09<table width=3D"100%"  cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+=09<tr valign=3D"top">
+=09<td width=3D"85"><a href=3D"http://clickthru.online.com/Click?q=3Da0-11h=
+8QQBqXB2HwGiUByjw2PB1s79R" ><img src=3D"http://a.r.tv.com/cnet.1d/i/p/03210=
+2_megapixcameras.jpg" width=3D"85" height=3D"110" border=3D"0" alt=3D"" /><=
+/a></td>
+=09<td width=3D"5"><img src=3D"http://home.cnet.com/b.gif" height=3D1 width=
+=3D5></td>
+=09<td width=3D"100%"><font face=3D"arial, helvetica" size=3D"-1"><a href=
+=3D"http://clickthru.online.com/Click?q=3Db5-50FcQ7U7vBndU_R1PHq15ZNEEZuR" =
+><b>5-megapixel shoot-out</b></a><br />Not all high-res cameras were create=
+d alike. We put four to the test to find out what sets each apart.</font></=
+td>
+=09</tr>
+=09<tr><td colspan=3D"3"><img src=3D"http://home.cnet.com/b.gif" height=3D3=
+ width=3D1><br /><font face=3D"arial, helvetica" size=3D"-1">
+=09&#149; <a href=3D"http://clickthru.online.com/Click?q=3Dca-iciuQUgFRmzCV=
+TQcl8jfOfRHHUsR" >Cameras coming soon</a><br />
+=09&#149; <a href=3D"http://clickthru.online.com/Click?q=3De0-cISRQfDH08pTG=
+wYkPhB7mxUT9A9R" >Point-and-shoot picks</a><br />
+=09</font></td></tr>
+=09</table>
+</td>
+<td><img src=3D"http://home.cnet.com/b.gif" height=3D1 width=3D5></td>
+<td width=3D"180">
+=09<table cellpadding=3D"0" cellspacing=3D"0" width=3D"180" border=3D"0" bg=
+color=3D"#ffffef">
+=09<tr><td colspan=3D"5" bgcolor=3D"#666666"><img src=3D"http://home.cnet.c=
+om/b.gif" width=3D"1" height=3D"1" alt=3D"" border=3D"0" /></td></tr>
+=09<tr>
+=09<td bgcolor=3D"#666666"><img src=3D"http://home.cnet.com/b.gif" width=3D=
+"1" height=3D"1" alt=3D"" border=3D"0" /></td>
+=09<td><img src=3D"http://home.cnet.com/b.gif" width=3D"10" height=3D"1" al=
+t=3D"" border=3D"0" /></td>
+=09<td><font face=3D"ms sans serif, geneva" size=3D"-2"><img src=3D"http://=
+home.cnet.com/b.gif" width=3D"1" height=3D"5" alt=3D"" border=3D"0" /><br /=
+>
+=09<font face=3D"arial, helvetica" color=3D"#666666" size=3D"-1"><b>Most po=
+pular</b></font><br /><img src=3D"http://home.cnet.com/b.gif" width=3D"1" h=
+eight=3D"5" alt=3D"" border=3D"0" /><br />
+=09<b>Desktops</b><br /><img src=3D"http://home.cnet.com/b.gif" width=3D"1"=
+ height=3D"7" alt=3D"" border=3D"0" /><br />
+=091. <a href=3D"http://clickthru.online.com/Click?q=3Df5-lTbRQgwx1jamoZg6D=
+mLwgkaZmRuR" >Dell Dimension 4400</a><br /><img src=3D"http://home.cnet.com=
+/b.gif" width=3D"1" height=3D"3" alt=3D"" border=3D"0" /><br />
+=092. <a href=3D"http://clickthru.online.com/Click?q=3D0a-ZnKCIrrscy9q3rUBw=
+hq6GOxuYzsR" >Sony VAIO PCV-RX650</a><br /><img src=3D"http://home.cnet.com=
+/b.gif" width=3D"1" height=3D"3" alt=3D"" border=3D"0" /><br />
+=093. <a href=3D"http://clickthru.online.com/Click?q=3D1f-rvwqI58w5nHc5A01x=
+mYgHobjqmZR" >Dell Dimension 4400 for Home</a><br /><img src=3D"http://home=
+.cnet.com/b.gif" width=3D"1" height=3D"3" alt=3D"" border=3D"0" /><br />
+=094. <a href=3D"http://clickthru.online.com/Click?q=3D34-pJpSIcd81RqArU33_=
+tvVyn4IcgdR" >Dell Dimension 8200</a><br /><img src=3D"http://home.cnet.com=
+/b.gif" width=3D"1" height=3D"3" alt=3D"" border=3D"0" /><br />
+=095. <a href=3D"http://clickthru.online.com/Click?q=3D49-ZM4cIEpSeyU90gbVX=
+4RVXFO5JSrR" >Dell Optiplex GX240</a><br /><img src=3D"http://home.cnet.com=
+/b.gif" width=3D"1" height=3D"6" alt=3D"" border=3D"0" /><br />
+=09<img src=3D"http://a.r.tv.com/cnet.1d/i/fd/yl_arrow.gif" width=3D"13" he=
+ight=3D"13" border=3D"0" alt=3D"" align=3D"absmiddle" /> <b><a href=3D"http=
+://clickthru.online.com/Click?q=3D5e-ssGdIn06t0yIdenhsnStcVTQzciR" >See all=
+ most popular</a></b><br />
+=09<img src=3D"http://home.cnet.com/b.gif" width=3D"1" height=3D"10" alt=3D=
+"" border=3D"0" /><br />
+=09</font></td>
+=09<td><img src=3D"http://home.cnet.com/b.gif" width=3D"10" height=3D"1" al=
+t=3D"" border=3D"0" /></td>
+=09<td bgcolor=3D"#666666"><img src=3D"http://home.cnet.com/b.gif" width=3D=
+"1" height=3D"1" alt=3D"" border=3D"0" /></td>
+=09</tr>
+=09<tr><td colspan=3D"5" bgcolor=3D"#666666"><img src=3D"http://home.cnet.c=
+om/b.gif" width=3D"1" height=3D"1" alt=3D"" border=3D"0" /></td></tr>
+=09</table>
+</td>
+</tr>
+<tr valign=3D"top"><td colspan=3D"3"><img src=3D"http://home.cnet.com/b.gif=
+" height=3D5 width=3D1></td></tr>
+<tr><td colspan=3D"7" bgcolor=3D"#cccccc"><img src=3D"http://home.cnet.com/=
+b.gif" height=3D1 width=3D1></td></tr>
+</table>
+<!-- /Leads Module -->
+
+</td></tr>
+
+
+
+
+
+<tr><td>
+<font face=3D"Arial, Helvetica">=09=09=09
+<img src=3D"http://www.cnet.com/i/nl/sh/sub_feat.gif" alt=3D"Review" width=
+=3D"150" height=3D"19" border=3D"0"><br>
+<img src=3D"http://home.cnet.com/i/nl/rule.gif" width=3D"410" height=3D"8" =
+border=3D"0"><br>
+<!-- Reviews gif=20
+<table cellpadding=3D0 cellspacing=3D0 border=3D0 width=3D93 align=3Dleft>
+<tr><td><img src=3D"http://a.r.tv.com/cnet.1d/i/p/082801ie6.jpg" width=3D"8=
+5" height=3D"110" border=3D"0"></td></tr>
+</table>
+End Reviews gif -->
+<font face=3D"arial, helvetica"><b>
+<a href=3D"http://clickthru.online.com/Click?q=3D74-VAV8IZZSNagNWyQRYG8Y0gS=
+PZxnR" >This week in Internet Services</a></b><br>
+<font size=3D"-1">
+Big broadband providers are ticked off about Wi-Fi hot spots.
+In fact, both AT&amp;T Broadband and Time Warner Cable have begun
+campaigns to stop subscribers from sharing their accounts with
+others at no charge. Also this week: we review Yahoo"s new
+dial-up service.
+</font><p>
+<font face=3D"arial, helvetica"><b>
+<a href=3D"http://clickthru.online.com/Click?q=3D89-h28bQ-J1Q02IDqlkUMBXB6W=
+5WWcR" >Is your ISP safe from hackers?</a></b><br>
+<font size=3D"-1">
+Surely, the folks who run your ISP have thought good and hard
+about security issues, but should you count on their skills to
+ward off intruders? Not wise, says our ISP expert. In this
+week"s column, Dan Tynan takes security matters into his own
+hands and shows you how to protect yourself.
+</font><p>
+
+<p>
+<!-- Scoop -->
+<img src=3D"http://www.cnet.com/i/nl/ws/sub_scoop.gif" width=3D150 height=
+=3D19 alt=3D"The Scoop"><br>
+<img src=3D"http://www.cnet.com/i/nl/rule.gif" width=3D410 height=3D8><br>
+<b><a href=3D"http://clickthru.online.com/Click?q=3D9e-tWQoQtMQJbivW7oHSCN0=
+U7nQUDRR" >Domain names</a></b><br>
+<font size=3D"-1">
+A domain name provides an online identity and contact point for
+your business, organization, or project. Almost every transaction
+on the Internet relies upon a domain name to conduct commerce,
+display Web pages, deliver e-mail, and more. Secure your own
+domain here.
+</font><br>
+<!-- End Scoop -->
+<br>
+<p>
+<!-- this week -->
+<img src=3D"http://www.cnet.com/i/nl/ws/sub_news.gif" width=3D150 height=3D=
+19 alt=3D"This Week in News"><br>
+<img src=3D"http://www.cnet.com/i/nl/rule.gif" width=3D410 height=3D8><br>
+<b><a href=3D"http://clickthru.online.com/Click?q=3Db3-QHzxQYKTqPwMqy4AE64q=
+DAwrPGFR" ><b>Comcast shareholders bless AT&T deal</b></a></b><br>
+<font size=3D"-1">
+Comcast shareholders on Wednesday approved the cable television
+company's $27 billion purchase of larger rival AT&T Broadband,
+which will create the nation's largest cable TV operator with
+more than 22 million customers.
+</font><br>
+<p>
+<b><a href=3D"http://clickthru.online.com/Click?q=3Dc8-2lPnQWOzdKSAi4xMKE-n=
+Fr99H29R" >U.S. Attorney investigates Qwest=20
+</a></b><br>
+<font size=3D"-1">
+Qwest Communications International, the number-four U.S. local
+telephone carrier, said Wednesday that the U.S. Attorney's office
+in Denver has begun a criminal investigation of the company.
+</font><br>
+<p>
+
+<!-- CNET WEEKLY tip -->
+<img src=3D"http://www.cnet.com/i/nl/ws/sub_tip.gif" width=3D150 height=3D1=
+9 alt=3D"Tip of the Week"><br>
+<img src=3D"http://www.cnet.com/i/nl/rule.gif" width=3D410 height=3D8><br>
+
+<b><a href=3D"http://clickthru.online.com/Click?q=3Ddd-tpm0QzWd3KwOlvmGZP85=
+eXsJh-uR" >Antivirus guide 2002</a></b><br>
+<font size=3D"-1">
+You want to protect your PC, of course. But how? We"ll walk you
+through some of your best antivirus options. Our reviewers
+looked at 10 top antivirus products and sorted out the features
+and levels of protection found in each.
+<br>
+</font>
+<br>
+
+
+<p>
+<img src=3D"http://home.cnet.com/i/dp/oncnet.gif" alt=3D"On the CNET Networ=
+k" width=3D"172" height=3D"14" border=3D"0"><br>
+<img src=3D"http://home.cnet.com/i/nl/rule.gif" width=3D"410" height=3D"8" =
+border=3D"0"><br>
+
+<table width=3D"410" cellpadding=3D0 cellspacing=3D0 border=3D0><tr valign=
+=3Dtop>
+<td><font face=3D"arial, helvetica" size=3D"-1"><b><ul>
+<li><a href=3D"http://clickthru.online.com/Click?q=3Df2-OZVTQUwWCP2AgW10pvV=
+di5Z7edsR" >Tech Trends</a>
+<li><a href=3D"http://clickthru.online.com/Click?q=3D07-HqCzI5rq9XaOumHiqzU=
+brvLkiDZR" >Hardware</a>
+<li><a href=3D"http://clickthru.online.com/Click?q=3D1c-cs_iIFr43L2_OlNn9kg=
+Ga2oXqGdR" >Software</a>
+<li><a href=3D"http://clickthru.online.com/Click?q=3D31-V_YRIjMsDVYpq0uyLxj=
+kqVAXXbcR" >Shopping</a>
+<li><a href=3D"http://clickthru.online.com/Click?q=3D46-19zwInpDS3qrjRaa1cN=
+0535V0YiR" >Downloads</a>
+</ul><b></font></td>
+<td><font face=3D"arial, helvetica" size=3D"-1"><b><ul>
+<li><a href=3D"http://clickthru.online.com/Click?q=3D5c-BnjPIZnPbrLr5mC53xl=
+Zk0f-IonR" >News</a>
+<li><a href=3D"http://clickthru.online.com/Click?q=3D71-GwdUIEZcfByHz91qwuB=
+Xvl3NU2rR" >Investing</a>
+<li><a href=3D"http://clickthru.online.com/Click?q=3D86-8fH1QCJonygfpsvSjae=
+TldfVpfRR" >Electronics</a>
+<li><a href=3D"http://clickthru.online.com/Click?q=3D9b-7-TFQSIo2xWnzLn0dAV=
+J9PZAKTFR" >Web Building</a>
+<li><a href=3D"http://clickthru.online.com/Click?q=3Db0-NZmfQQJr-Y4bf_XdxQM=
+KtNX8PQ9R" >Help & How-Tos</a>
+</ul><b></font></td>
+<td><font face=3D"arial, helvetica" size=3D"-1"><b><ul>
+<li><a href=3D"http://clickthru.online.com/Click?q=3Dc5-8BcDQzOaFArP3YTzSRO=
+UJEymxquR" >Internet</a>
+<li><a href=3D"http://clickthru.online.com/Click?q=3Dda-dT8jQUPq_yH_t95bjsM=
+VKpv3DxsR" >Games</a>
+<li><a href=3D"http://clickthru.online.com/Click?q=3Def-04uYQmkHvcw52NIqBxD=
+VAmoBamZR" >Message Boards</a>
+<li><a href=3D"http://clickthru.online.com/Click?q=3D04-k9W0IFQXF_UJZRS98Bb=
+BL7kOi_dR" >CNET Radio</a>
+<li><a href=3D"http://clickthru.online.com/Click?q=3D19-BLe0I2rXOlvEd1FKMZ2=
+Fz8IR7XcR" >Music Center</a>
+</ul><b></font></td></tr>
+</table>
+
+
+</td></tr></table>
+<!-- Begin search box -->
+=09<table border=3D"0" cellpadding=3D"1" cellspacing=3D"0" width=3D"90%"><t=
+r><td bgcolor=3D"#CCCCCC">
+
+=09<table border=3D0 cellspacing=3D0 cellpadding=3D0 width=3D"100%"><form m=
+ethod=3D"GET" action=3D"http://www.search.com/redirect">
+=09<tr align=3Dcenter valign=3Dmiddle bgcolor=3D"#FFFFFF">
+=09<td height=3D40 align=3Dright nowrap> </td>
+=09<td class=3D"f"><font face=3D"arial, helvetica" size=3D"-1"><b>Search</b=
+> </font></td>
+=09<td align=3Dleft><input type=3D"Text" class=3D"f" name=3D"qt" size=3D"12=
+" maxlength=3D"255"></td>
+=09<td> <select name=3D"target">
+=09<option value=3D"http://internet.search.com/search?tag=3Dex.is.lrg.srch.=
+is&sortby=3Dcompany%252Cservice&join=3Dand&keywords=3D%25%25q%25%25" select=
+ed> Internet Services
+=09<option value=3D"http://cnet.search.com/search?edition=3Dcnet&cat=3D103&=
+timeout=3D3&tag=3Dex.ws.sr.srch_top.cnet">All CNET
+=09<option value=3D"http://www.search.com/search?channel=3D1&tag=3Dex.ws.sr=
+.srch_top.web">The Web=09
+=09</select></font></center></td>
+=09<td> <input name=3D'search' type=3D'submit' class=3D'f' value=3D' Go! '>=
+=20
+=09<input type=3D"hidden" name=3D"tt" value=3D"st.sw.8888.sbsr"></td>
+=09</tr></form>
+=09</table>=20
+=09</td></tr></table>=20
+<!-- End search box -->
+
+<img src=3D"http://home.cnet.com/b.gif" width=3D"1" height=3D"8" border=3D"=
+0"><br>
+=09=09</td>
+=09</tr>
+</table>
+
+<!-- Thin grey line -->
+<table cellpadding=3D0 cellspacing=3D0 border=3D0 width=3D612>
+<tr valign=3Dtop>
+=09<td width=3D1 bgcolor=3D"#000000"><img src=3D"http://home.cnet.com/b.gif=
+" width=3D"1" height=3D"1" border=3D"0"></td>
+=09<td width=3D10 bgcolor=3D"#ffcc00"><img src=3D"http://home.cnet.com/b.gi=
+f" width=3D"10" height=3D"1" border=3D"0"></td>
+=09<td width=3D1 bgcolor=3D"#000000"><img src=3D"http://home.cnet.com/b.gif=
+" width=3D"1" height=3D"1" border=3D"0"></td>
+=09<td width=3D599 bgcolor=3D"#CCCCCC"><img src=3D"http://home.cnet.com/b.g=
+if" width=3D"1" height=3D"1" border=3D"0"></td>
+=09<td width=3D1 bgcolor=3D"#000000"><img src=3D"http://home.cnet.com/b.gif=
+" width=3D"1" height=3D"1" border=3D"0"></td>
+</tr>
+</table>
+
+
+
+<table cellpadding=3D0 cellspacing=3D0 border=3D0 width=3D612>
+<tr valign=3Dtop>
+=09<td width=3D1 bgcolor=3D"#000000"><img src=3D"http://home.cnet.com/b.gif=
+" width=3D"1" height=3D"1" border=3D"0"></td>
+=09<td width=3D10 bgcolor=3D"#ffcc00"><img src=3D"http://home.cnet.com/b.gi=
+f" width=3D"10" height=3D"1" border=3D"0"></td>
+=09<td width=3D1 bgcolor=3D"#000000"><img src=3D"http://home.cnet.com/b.gif=
+" width=3D"1" height=3D"1" border=3D"0"></td>
+=09<td width=3D600 bgcolor=3D"#000000"><img src=3D"http://home.cnet.com/b.g=
+if" width=3D"1" height=3D"1" border=3D"0"></td>
+</tr>
+</table>
+
+<!-- ### footer ### -->
+<table width=3D"612" bgcolor=3D"#000000" cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0">
+<tr><td width=3D"1"><img src=3D"http://www.cnet.com/b.gif" width=3D"1" heig=
+ht=3D"1"></td>
+<td width=3D"10" bgcolor=3D"#ffcc00"><img src=3D"http://www.cnet.com/b.gif"=
+ width=3D"10" height=3D"1"></td>
+<td width=3D"1"><img src=3D"http://www.cnet.com/b.gif" width=3D"1" height=
+=3D"1"></td>
+<td width=3D"599" bgcolor=3D"#cccccc"><img src=3D"http://www.cnet.com/b.gif=
+" width=3D"1" height=3D"1"></td>
+<td width=3D"1"><img src=3D"http://www.cnet.com/b.gif" width=3D"1" height=
+=3D"1"></td></tr>
+</table>
+<table width=3D"612" bgcolor=3D"#eeeeee" cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0">
+<tr><td width=3D"1" bgcolor=3D"#000000"><img src=3D"http://www.cnet.com/b.g=
+if" width=3D"1" height=3D"1"></td>
+<td width=3D"10" bgcolor=3D"#ffcc00"><img src=3D"http://www.cnet.com/b.gif"=
+ width=3D"10" height=3D"1"></td>
+<td width=3D"1" bgcolor=3D"#000000"><img src=3D"http://www.cnet.com/b.gif" =
+width=3D"1" height=3D"1"></td>
+<td width=3D"12"><img src=3D"http://www.cnet.com/b.gif" width=3D"12" height=
+=3D"1"></td>
+<td width=3D"575"><img src=3D"http://www.cnet.com/b.gif" width=3D"1" height=
+=3D"10"><br>
+<a href=3D'http://nl.com.com/servlet/url_login?email=3Dqqqqqqqqqq-cnet-news=
+letters@spamassassin.taint.org&brand=3Dcnet'>
+<img src=3D"http://a.r.tv.com/cnet.1d/i/nl/ft.gif" width=3D"375" height=3D"=
+18" border=3D"0" alt=3D"Sign up for more free newsletters from CNET!"></a><=
+br>
+
+<!-- subscription management -->
+
+<font face=3D"ms sans serif, geneva" size=3D"-2">
+The e-mail address for your subscription is&nbsp;qqqqqqqqqq-cnet-newsletter=
+s@spamassassin.taint.org<p>
+
+<A NOTRACK HREF=3D'http://clickthru.online.com/Click?q=3D2f-hYfFzInu3VK3rW5=
+M2V22j7XLQtJgy9RR'>Unsubscribe</A>&nbsp;|
+&nbsp;<a href=3D'http://nl.com.com/servlet/url_login?email=3Dqqqqqqqqqq-cne=
+t-newsletters@spamassassin.taint.org&brand=3Dcnet'>Manage My Subscriptions</a>
+&nbsp;|&nbsp;<a href=3D"http://clickthru.online.com/Click?q=3D44-9nxfIZUtYw=
+3DuzAEMLKlXBDgnVnR" >FAQ</A>&nbsp;|
+&nbsp;<a href=3D"http://clickthru.online.com/Click?q=3D59-y53oIEnthwdesBklp=
+W-B_KMqztrR" >Advertise</A><br></font>
+
+<!-- /subscription management-->
+
+</font><img src=3D"http://www.cnet.com/b.gif" width=3D"1" height=3D"8"></td=
+>
+<td width=3D"12"><img src=3D"http://www.cnet.com/b.gif" width=3D"12" height=
+=3D"1"></td>
+<td width=3D"1" bgcolor=3D"#000000"><img src=3D"http://www.cnet.com/b.gif" =
+width=3D"1" height=3D"1"></td></tr>
+</table>
+<table width=3D"612" bgcolor=3D"#000000" cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0">
+<tr><td width=3D"1"><img src=3D"http://www.cnet.com/b.gif" width=3D"1" heig=
+ht=3D"1"></td>
+<td width=3D"10" bgcolor=3D"#ffcc00"><img src=3D"http://www.cnet.com/b.gif"=
+ width=3D"10" height=3D"1"></td>
+<td width=3D"601"><img src=3D"http://www.cnet.com/b.gif" width=3D"1" height=
+=3D"1"></td></tr>
+</table>
+<table width=3D"612" bgcolor=3D"#ffcc00" cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0">
+<tr><td width=3D"1" bgcolor=3D"#000000"><img src=3D"http://www.cnet.com/b.g=
+if" width=3D"1" height=3D"1"></td>
+<td width=3D"10"><img src=3D"http://www.cnet.com/b.gif" width=3D"10" height=
+=3D"1"></td>
+<td width=3D"37"><a href=3D"http://clickthru.online.com/Click?q=3D6f-3x79IO=
+LAbHgqPca3RXvLF34ULXPR" ><img src=3D"http://www.cnet.com/i/dp/smrb.gif" wid=
+th=3D"37" height=3D"37" border=3D"0"></a></td>
+<td width=3D"563" nowrap><font face=3D"arial, helvetica" size=3D"-1">
+<a href=3D"http://clickthru.online.com/Click?q=3D84-CCOyQ60TyzpZTgMZsihsBSW=
+gp7dR" ><font color=3D"#000000">Price comparisons</font></a> |
+<a href=3D"http://clickthru.online.com/Click?q=3D99-4mtyQAdTjI4jtH02H3f2jvr=
+qULcR" ><font color=3D"#000000">Product reviews</font></a> |
+<a href=3D"http://clickthru.online.com/Click?q=3Dae-jOE6QMB1Lkl2_0N8-mhe2RY=
+EVuRR" ><font color=3D"#000000">Tech news</font></a> |
+<a href=3D"http://clickthru.online.com/Click?q=3Dc3-x1yCQJLx-_UPW2fZ5znP-Fd=
+WuuFR" ><font color=3D"#000000">Downloads</font></a> |
+<a href=3D"http://clickthru.online.com/Click?q=3Dd8-XW73QWLWI7jud7imkSWreAg=
+RDc9R" ><font color=3D"#000000">All CNET services</font></a>
+</font></td>
+<td width=3D"1" bgcolor=3D"#000000"><img src=3D"http://www.cnet.com/b.gif" =
+width=3D"1" height=3D"1"></td></tr>
+</table>
+<table width=3D"612" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tr><td bgcolor=3D"#000000"><img src=3D"http://www.cnet.com/b.gif" width=3D=
+"1" height=3D"1"></td></tr>
+<tr><td height=3D"25"><font face=3D"ms sans serif, geneva" size=3D"-2"><tab=
+le width=3D100% border=3D0 cellspacing=3D2 cellpadding=3D1> <tr valign=3Dbo=
+ttom> <td width=3D75% height=3D31> <p></font> <br><b><font face=3DArial, He=
+lvetica, sans-serif size=3D2>    Copyright 2002 CNET Networks, Inc. All rig=
+hts reserved.    </font></b> </p></td><td height=3D31 valign=3Dtop> <div al=
+ign=3Dright> <img src=3D"http://gserv-cnet.zdnet.com/clear/outbound.gif?APP=
+ID=3D2&EMID=3D25136487&NL=3De425&ISSUE=3D2002-07-11" height=3D1 width=3D1> =
+   </div></td></tr><tr>  <td colspan=3D2><font face=3DArial, Helvetica, san=
+s-serif size=3D2>    </font></td></tr></table></font></td></tr>
+</table>
+<!-- ### /footer ### -->
+
+<IMG HEIGHT=3D1 WIDTH=3D1 SRC=3D"http://clickthru.online.com/Click?q=3Dee-Z=
+bxW-CDsh4678RHPr7GzhmjzGRRR">
+

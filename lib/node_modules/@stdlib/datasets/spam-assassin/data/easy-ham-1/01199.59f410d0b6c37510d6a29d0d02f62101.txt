@@ -1,0 +1,66 @@
+From rpm-list-admin@freshrpms.net  Mon Sep 30 21:44:23 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id D361816F16
+	for <jm@localhost>; Mon, 30 Sep 2002 21:44:22 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 30 Sep 2002 21:44:22 +0100 (IST)
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8UJbAK13176 for
+    <jm-rpm@jmason.org>; Mon, 30 Sep 2002 20:37:11 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g8UJY1f10815; Mon, 30 Sep 2002 21:34:01
+    +0200
+Received: from mail.addix.net (kahless.addix.net [195.179.139.19]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g8UJXMf08732 for
+    <rpm-list@freshrpms.net>; Mon, 30 Sep 2002 21:33:22 +0200
+Received: from kushana.camperquake.de (kushana.camperquake.de
+    [194.64.167.57]) by mail.addix.net (8.9.3/8.9.3) with ESMTP id VAA15220
+    for <rpm-list@freshrpms.net>; Mon, 30 Sep 2002 21:33:22 +0200
+Received: from nausicaa.camperquake.de ([194.64.167.58] helo=nausicaa) by
+    kushana.camperquake.de with smtp (Exim 3.36 #1) id 17w6Un-0005P1-00 for
+    rpm-list@freshrpms.net; Mon, 30 Sep 2002 21:46:21 +0200
+From: Ralf Ertzinger <ralf@camperquake.de>
+To: rpm-zzzlist@freshrpms.net
+Subject: apt 0.5.7 on RH 7.x
+Message-Id: <20020930214204.5d631f5b.ralf@camperquake.de>
+Organization: [NDC] ;)
+X-Mailer: Sylpheed version 0.8.2claws (GTK+ 1.2.10; i386-redhat-linux)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Mon, 30 Sep 2002 21:42:04 +0200
+Date: Mon, 30 Sep 2002 21:42:04 +0200
+
+Hi.
+
+Are there any reasons _not_ to use the new apt releases on RH 7.x?
+
+-- 
+reiserfsck ist bekannt dafür, daß es leere Dateisysteme zurückläßt.
+Gut, formaljuristisch hat er das Dateisystem in einen wohldefinierten
+Zustand versetzt, aber ... nunja.  Man erwartet schon irgendwie, daß
+noch ein paar Daten drauf sind danach.      -- Felix v. Leitner, dasr
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

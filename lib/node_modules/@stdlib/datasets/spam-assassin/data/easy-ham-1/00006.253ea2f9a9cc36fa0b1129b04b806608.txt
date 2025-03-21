@@ -1,0 +1,74 @@
+From martin@srv0.ems.ed.ac.uk  Thu Aug 22 14:54:39 2002
+Return-Path: <martin@srv0.ems.ed.ac.uk>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 16FC743F99
+	for <zzzz@localhost>; Thu, 22 Aug 2002 09:54:38 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Thu, 22 Aug 2002 14:54:39 +0100 (IST)
+Received: from n14.grp.scd.yahoo.com (n14.grp.scd.yahoo.com
+    [66.218.66.69]) by dogma.slashnull.org (8.11.6/8.11.6) with SMTP id
+    g7MDoxZ08960 for <zzzz@spamassassin.taint.org>; Thu, 22 Aug 2002 14:50:59 +0100
+X-Egroups-Return: sentto-2242572-52737-1030024261-zzzz=spamassassin.taint.org@returns.groups.yahoo.com
+Received: from [66.218.66.95] by n14.grp.scd.yahoo.com with NNFMP;
+    22 Aug 2002 13:51:01 -0000
+X-Sender: martin@srv0.ems.ed.ac.uk
+X-Apparently-To: zzzzteana@yahoogroups.com
+Received: (EGP: mail-8_1_0_1); 22 Aug 2002 13:51:00 -0000
+Received: (qmail 71894 invoked from network); 22 Aug 2002 13:51:00 -0000
+Received: from unknown (66.218.66.218) by m7.grp.scd.yahoo.com with QMQP;
+    22 Aug 2002 13:51:00 -0000
+Received: from unknown (HELO haymarket.ed.ac.uk) (129.215.128.53) by
+    mta3.grp.scd.yahoo.com with SMTP; 22 Aug 2002 13:51:00 -0000
+Received: from srv0.ems.ed.ac.uk (srv0.ems.ed.ac.uk [129.215.117.0]) by
+    haymarket.ed.ac.uk (8.11.6/8.11.6) with ESMTP id g7MDow310334 for
+    <forteana@yahoogroups.com>; Thu, 22 Aug 2002 14:50:59 +0100 (BST)
+Received: from EMS-SRV0/SpoolDir by srv0.ems.ed.ac.uk (Mercury 1.44);
+    22 Aug 02 14:50:58 +0000
+Received: from SpoolDir by EMS-SRV0 (Mercury 1.44); 22 Aug 02 14:50:31 +0000
+Organization: Management School
+To: zzzzteana@yahoogroups.com
+Message-Id: <3D64FA3C.13325.63A5960@localhost>
+Priority: normal
+In-Reply-To: <3D64E94E.8060301@ee.ed.ac.uk>
+X-Mailer: Pegasus Mail for Windows (v4.01)
+Content-Description: Mail message body
+From: "Martin Adamson" <martin@srv0.ems.ed.ac.uk>
+MIME-Version: 1.0
+Mailing-List: list zzzzteana@yahoogroups.com; contact
+    forteana-owner@yahoogroups.com
+Delivered-To: mailing list zzzzteana@yahoogroups.com
+Precedence: bulk
+List-Unsubscribe: <mailto:zzzzteana-unsubscribe@yahoogroups.com>
+Date: Thu, 22 Aug 2002 14:50:31 +0100
+Subject: Re: [zzzzteana] Nothing like mama used to make
+Reply-To: zzzzteana@yahoogroups.com
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+
+
+> I just had to jump in here as Carbonara is one of my favourites to make and 
+> ask 
+> what the hell are you supposed to use instead of cream? 
+
+Isn't it just basically a mixture of beaten egg and bacon (or pancetta, 
+really)? You mix in the raw egg to the cooked pasta and the heat of the pasta 
+cooks the egg. That's my understanding.
+
+Martin
+
+------------------------ Yahoo! Groups Sponsor ---------------------~-->
+4 DVDs Free +s&p Join Now
+http://us.click.yahoo.com/pt6YBB/NXiEAA/mG3HAA/7gSolB/TM
+---------------------------------------------------------------------~->
+
+To unsubscribe from this group, send an email to:
+forteana-unsubscribe@egroups.com
+
+ 
+
+Your use of Yahoo! Groups is subject to http://docs.yahoo.com/info/terms/ 
+
+
+

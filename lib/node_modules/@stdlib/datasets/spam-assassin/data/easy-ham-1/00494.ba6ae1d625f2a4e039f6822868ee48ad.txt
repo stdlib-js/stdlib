@@ -1,0 +1,53 @@
+From fork-admin@xent.com  Sun Sep  8 23:50:34 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 234FF16F18
+	for <jm@localhost>; Sun,  8 Sep 2002 23:50:20 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sun, 08 Sep 2002 23:50:20 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g88F4BC00823 for <jm@jmason.org>;
+    Sun, 8 Sep 2002 16:04:11 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 31F1A294294; Sun,  8 Sep 2002 08:01:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from argote.ch (argote.ch [80.65.224.17]) by xent.com (Postfix)
+    with ESMTP id 510742940AD for <fork@xent.com>; Sun,  8 Sep 2002 08:00:52
+    -0700 (PDT)
+Received: by argote.ch (Postfix, from userid 500) id 44010C44D;
+    Sun,  8 Sep 2002 17:01:26 +0200 (CEST)
+To: fork@spamassassin.taint.org
+Subject: The Big Jump
+Message-Id: <20020908150126.44010C44D@argote.ch>
+From: harley@argote.ch (Robert Harley)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun,  8 Sep 2002 17:01:26 +0200 (CEST)
+
+Today a French officer called Michel Fournier is supposed to get in a
+350-metre tall helium balloon, ride it up to the edge of space (40 km
+altitude) and jump out.  His fall should last 6.5 minutes and reach
+speeds of Mach 1.5.  He hopes to open his parachute manually at the
+end, although with an automatic backup if he is 7 seconds from the
+ground and still hasn't opened it.
+
+R
+
+ObQuote:
+  "Vederò, si averò si grossi li coglioni, come ha il re di Franza."
+  ("Let's see if I've got as much balls as the King of France!")
+  - Pope Julius II, 2 January 1511
+
+

@@ -1,0 +1,62 @@
+From fork-admin@xent.com  Mon Sep  2 16:22:33 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BA1A444160
+	for <zzzz@localhost>; Mon,  2 Sep 2002 11:22:03 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 02 Sep 2002 16:22:03 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g826juZ22846 for <zzzz@spamassassin.taint.org>;
+    Mon, 2 Sep 2002 07:45:56 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 7006C294183; Sun,  1 Sep 2002 23:43:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hotmail.com (f98.law15.hotmail.com [64.4.23.98]) by
+    xent.com (Postfix) with ESMTP id 2C3F8294099 for <fork@xent.com>;
+    Sun,  1 Sep 2002 23:42:04 -0700 (PDT)
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Sun, 1 Sep 2002 23:44:26 -0700
+Received: from 216.30.74.2 by lw15fd.law15.hotmail.msn.com with HTTP;
+    Mon, 02 Sep 2002 06:44:25 GMT
+X-Originating-Ip: [216.30.74.2]
+From: "Russell Turpin" <deafbox@hotmail.com>
+To: fork@spamassassin.taint.org
+Subject: RE: Java is for kiddies
+MIME-Version: 1.0
+Content-Type: text/plain; format=flowed
+Message-Id: <F98rcUbV9BC27a2C3HV0001c5cc@hotmail.com>
+X-Originalarrivaltime: 02 Sep 2002 06:44:26.0154 (UTC) FILETIME=[2DF0C0A0:01C2524C]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 02 Sep 2002 06:44:25 +0000
+
+Adam Beberg:
+>Considering 90% of the fake job posting I see are for embedded systems or 
+>device drivers - C still rules the world.
+
+There is a lot of C++ in the embedded world. With
+static object allocation and a few other programming
+techniques, performance differences disappear, but
+C++ gives a boost in development and maintainability.
+The real issue is compiler availability. Almost every
+embedded platform has C cross-compilers. Many have
+C++ compilers. But there is still a range of
+platforms that have the first but not the second. Or
+at least, that was the story a few years ago.
+
+_________________________________________________________________
+Send and receive Hotmail on your mobile device: http://mobile.msn.com
+
+

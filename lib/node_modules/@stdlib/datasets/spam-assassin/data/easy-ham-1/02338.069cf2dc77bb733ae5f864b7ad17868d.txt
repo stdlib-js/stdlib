@@ -1,0 +1,60 @@
+From rssfeeds@jmason.org  Mon Oct  7 12:05:36 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 1A09216F83
+	for <jm@localhost>; Mon,  7 Oct 2002 12:04:13 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 07 Oct 2002 12:04:13 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9780HK23219 for
+    <jm@jmason.org>; Mon, 7 Oct 2002 09:00:17 +0100
+Message-Id: <200210070800.g9780HK23219@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: aaronsw <rssfeeds@spamassassin.taint.org>
+Subject: Our Dumb Pipeline
+Date: Mon, 07 Oct 2002 08:00:16 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.aaronsw.com/weblog/000640
+Date: 2002-10-06T21:28:33-06:00
+
+Ted Rall: My Government Went to Afghanistan and All I Got Was This Stupid 
+Pipeline[1] 
+
+Summary: The US begun planning courting the Taliban for permission to build an 
+oil pipeline since 1997. We even flew Mullah Omar to Texas to try and convince 
+him. After it was clear that wouldn't work, we threatened to bomb them and 
+begun attacking on a smaller scale for a year before 9-11. We already planned 
+to invade two months before the attacks. While it's not clear they knew about 
+9-11 it certainly provided a convenient cover for their plans. 
+
+Three days after we started bombing, we begun official work on the pipeline 
+Karzai, the Afghanistan president we installed (who incidentally used to work 
+for the oil company Unocal and was a former Talib) focused on the pipeline 
+rather than rebuilding his torn country. Yet, the entire pipeline is unworkable 
+because it's too expensive and will be sabotaged by warlords and Pakistan. 
+
+Bin Laden was essentially a venture capitalist: he funded attacks but didn't 
+carry them out. It's far more likely that an Egyptian group, Islamic Jihad, 
+carried out the attacks. If we wanted to stop the terrorists, we should have 
+gone after them. If we wanted to stop anti-Americanism, we should have gone 
+after Saudi Arabia and Pakistan. Instead, our bombing created the perfect 
+opportunity for Bin Laden to escape. Nor did we bother to stabilize 
+Afghanistan, the country is as ruined as ever. 
+
+"Unfortunately, our government seized the moment as well, not to do good or 
+right, but to take advantage--of our grief, of our naivete, of our lust for 
+justice and vengeance. They did it to line the pockets of themselves and their 
+friends, to gain political and economic advantage for a tiny coterie of 
+influential people. In doing so, they endangered the rest of us. They took 
+advantage of our ignorance about Islam, Caspian Sea oil and remote Central 
+Asia. I have faith that the fundamental goodness of the American people will 
+cause them to see what was done in their name, and to do something about it."
+
+
+
+[1] http://www.comicbookgalaxy.com/pipeline0.html
+
+

@@ -1,0 +1,87 @@
+From ilug-admin@linux.ie  Fri Aug  9 16:05:10 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 59159440DD
+	for <jm@localhost>; Fri,  9 Aug 2002 10:59:59 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:59:59 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79Ed3b08819 for
+    <jm-ilug@jmason.org>; Fri, 9 Aug 2002 15:39:03 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id UAA00305 for <jm-ilug@jmason.org>;
+    Thu, 8 Aug 2002 20:07:50 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id UAA32750; Thu, 8 Aug 2002 20:06:20 +0100
+Received: from florence.ie.alphyra.com
+    (IDENT:qgSdufUD3/NJsnJ521pE5VnrTXxRzFxf@itg-gw.cr008.cwt.esat.net
+    [193.120.242.226]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id UAA32717
+    for <ilug@linux.ie>; Thu, 8 Aug 2002 20:06:14 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host IDENT:qgSdufUD3/NJsnJ521pE5VnrTXxRzFxf@itg-gw.cr008.cwt.esat.net
+    [193.120.242.226] claimed to be florence.ie.alphyra.com
+Received: from dunlop.admin.ie.alphyra.com
+    (IDENT:CC0f5u60ueaorKp3yFhdVTp7Zp65KNNi@dunlop.admin.ie.alphyra.com
+    [192.168.11.193]) by florence.ie.alphyra.com (8.11.6/8.11.6) with ESMTP id
+    g78J6CQ32271; Thu, 8 Aug 2002 20:06:12 +0100
+Date: Thu, 8 Aug 2002 20:06:12 +0100 (IST)
+From: Paul Jakma <paulj@alphyra.ie>
+X-X-Sender: paulj@dunlop.admin.ie.alphyra.com
+To: kevin lyda <kevin@ie.suberic.net>
+Cc: irish linux users group <ilug@linux.ie>
+Subject: Re: [ILUG] TMDA (WAS --> slashdot EW Dijkstra humor]
+In-Reply-To: <20020808195245.C24688@ie.suberic.net>
+Message-Id: <Pine.LNX.4.44.0208081955150.32049-100000@dunlop.admin.ie.alphyra.com>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Thu, 8 Aug 2002, kevin lyda wrote:
+
+> the more the merrier
+
+indeed.
+
+> - makes it harder for spammers to do their work. however, tmda isn't
+> an smtp proxy normally.
+
+well, smtp being store and forward, what is an smtp proxy? :) that's 
+why i said "proxy".
+
+probably, the most effective way to stop spam in the long-term is to 
+configure your email server to use the SPEWS blacklist and a good open 
+relay blacklist.
+
+SPEWS: to force ISPs to take action against spammers 
+
+SPEWS /will/ list entire ISP netblocks /if/ the ISP consistently
+ignores/fails to take action on abuse reports over the course of
+several months. however, they're pretty quick at delisting once action
+is taken. in the long-term, and in absence of global and effective 
+anti-UCE regulations, it's the only realistic way to get to a spam 
+free internet.
+
+Open relay lists: to protect against relays obviously.
+
+> kevin
+
+regards,
+-- 
+Paul Jakma	Sys Admin	Alphyra
+	paulj@alphyra.ie
+Warning: /never/ send email to spam@dishone.st or trap@dishone.st
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

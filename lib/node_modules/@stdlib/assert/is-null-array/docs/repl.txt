@@ -1,0 +1,25 @@
+
+{{alias}}( value )
+    Tests if a value is an array-like object containing only null values.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is an array-like object containing only
+        null values.
+
+    Examples
+    --------
+    > var bool = {{alias}}( [ null, null, null ] )
+    true
+    > bool = {{alias}}( [ NaN, 2, null ] )
+    false
+
+    See Also
+    --------
+

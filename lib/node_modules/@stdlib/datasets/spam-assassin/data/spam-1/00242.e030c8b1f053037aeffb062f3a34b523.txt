@@ -1,0 +1,45 @@
+From tobaccodemon@terra.es  Sat Sep  7 22:05:58 2002
+Return-Path: <tobaccodemon@terra.es>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id 8AA5916F7A
+	for <zzzz@localhost>; Sat,  7 Sep 2002 21:57:51 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Sat, 07 Sep 2002 21:57:51 +0100 (IST)
+Received: from linux.local ([213.9.248.135]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with SMTP id g87CdAC18868 for <zzzz@dogma.slashnull.org>;
+    Sat, 7 Sep 2002 13:39:10 +0100
+Message-Id: <200209071239.g87CdAC18868@dogma.slashnull.org>
+Received: (qmail 13816 invoked from network); 7 Sep 2002 12:30:20 -0000
+Received: from unknown (HELO h) (192.168.0.2) by linux.local with SMTP;
+    7 Sep 2002 12:30:20 -0000
+From: "Sales Department" <tobaccodemon@terra.es>
+Subject: Half Price Cigarettes and Tobacco
+To: zzzz@dogma.slashnull.org
+Sender: Sales Department <tobaccodemon@terra.es>
+Reply-To: tobaccodemon@terra.es
+Date: Sat, 7 Sep 2002 14:36:20 +0200
+X-Priority: 3
+X-Library: Indy 8.0.25
+
+
+Dear Sir or Madam
+
+In the past you have requested information on discounted products. We hope that you find this of interest. If you are not a smoker, and find this email offensive, we sincerely apologise!  We will be only too happy to take you off our mailing list.
+
+If you are a smoker, however, and are fed up with paying high prices for your cigarettes and tobacco, take a look at what we have to offer  by clicking on this link.
+http://www.smokersunited.co.uk/?S=24&ID=2
+
+We can send you, legally, by registered air mail, direct to your door, 4 cartons of cigarettes or 40 pouches of rolling tobacco (all brands are available) from only 170 Euros - about 105 pounds - fully inclusive of postage and packing.  Why pay more?
+
+To remove yourself from our mailing list, please click below
+mailto:smokersclub@terra.es
+
+Yours faithfully.
+Smokers United
+http://www.smokersunited.co.uk/?S=24&ID=2
+
+xay1y
+
+

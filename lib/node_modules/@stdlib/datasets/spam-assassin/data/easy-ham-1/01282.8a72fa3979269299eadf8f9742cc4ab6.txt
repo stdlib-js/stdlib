@@ -1,0 +1,71 @@
+From rpm-list-admin@freshrpms.net  Mon Oct  7 22:40:35 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 8D63A16F03
+	for <jm@localhost>; Mon,  7 Oct 2002 22:40:35 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 07 Oct 2002 22:40:35 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g97LI9K17473 for
+    <jm-rpm@jmason.org>; Mon, 7 Oct 2002 22:18:10 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g97L67f26076; Mon, 7 Oct 2002 23:06:07
+    +0200
+Received: from python (80-24-132-206.uc.nombres.ttd.es [80.24.132.206])
+    (authenticated) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g97L5Vf25972 for <rpm-list@freshrpms.net>; Mon, 7 Oct 2002 23:05:31 +0200
+From: Matthias Saou <matthias@rpmforge.net>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: Nessus?
+Message-Id: <20021007230521.0f1727aa.matthias@rpmforge.net>
+In-Reply-To: <20021007200642.27614e1b.matthias@rpmforge.net>
+References: <1034013325.8419.88.camel@bobcat.ods.org>
+    <20021007200642.27614e1b.matthias@rpmforge.net>
+Organization: freshrpms.net / rpmforge.net
+X-Mailer: Sylpheed version 0.8.3claws (GTK+ 1.2.10; i386-redhat-linux)
+X-Operating-System: Red Hat GNU/Linux forever!
+X-Subliminal-Message: Use Linux... use Linux... use Linux...
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Mon, 7 Oct 2002 23:05:21 +0200
+Date: Mon, 7 Oct 2002 23:05:21 +0200
+
+I've put up a new Red Hat Linux 8.0 build of nessus here :
+http://ftp.freshrpms.net/pub/freshrpms/testing/nessus/
+
+It's 100% untested, although the build should be ok. The new menu was
+added, but some configuration files may be better with new or different
+defaults.
+
+Feedback is very welcome!
+
+Matthias
+
+-- 
+Clean custom Red Hat Linux rpm packages : http://freshrpms.net/
+Red Hat Linux release 7.3 (Valhalla) running Linux kernel 2.4.18-10acpi
+Load : 0.06 0.12 0.17
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

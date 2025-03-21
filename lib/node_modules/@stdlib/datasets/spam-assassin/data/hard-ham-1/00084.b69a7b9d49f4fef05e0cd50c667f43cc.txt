@@ -1,0 +1,663 @@
+Return-Path: <bounce-lglinux-2534371@sprocket.lockergnome.com>
+Received: from lockergnome.com (sprocket.lockergnome.com [130.94.96.247])
+	by dogma.slashnull.org (8.11.6/8.11.6) with SMTP id g6GJfGJ08986
+	for <qqqqqqqqqq-lg@spamassassin.taint.org>; Tue, 16 Jul 2002 20:41:16 +0100
+X-Mailer: ListManager Web Interface
+Date: Tue, 16 Jul 2002 12:17:29 -0500
+Subject: [Lockergnome Penguin Shell]  Good Hearts
+To: qqqqqqqqqq-lg@spamassassin.taint.org
+From: Lockergnome Penguin Shell<subscriptions@lockergnome.com>
+List-Unsubscribe: <mailto:leave-lglinux-2534371U@sprocket.lockergnome.com>
+List-Subscribe: <mailto:subscribe-lglinux@sprocket.lockergnome.com>
+List-Owner: <mailto:owner-lglinux@sprocket.lockergnome.com>
+X-URL: <http://www.lockergnome.com/>
+X-List-Host: Lockergnome <http://www.lockergnome.com/>
+Reply-To: leave-lglinux-2534371U@sprocket.lockergnome.com
+Sender: bounce-lglinux-2534371@sprocket.lockergnome.com
+Message-Id: <LISTMANAGERSQL-2534371-1680151-2002.07.16-12.17.44--qqqqqqqqqq-lg#spamassassin.taint.org@sprocket.lockergnome.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=us-ascii
+
+<html><head><!--
+
+      CLICK HERE to read this newsletter on the Web for FREE:
+
+      <a href="http://www.lockergnome.com/issues/penguinshell/20020715.html">
+      http://www.lockergnome.com/issues/penguinshell/20020715.html
+      </a>
+
+      Don't worry about anything else below this paragraph.
+      It's for those with HTML e-mail clients. Just go to
+      the above listed web address to view this issue
+      perfectly in your web browser. Thanks again! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+<!--
+ body      { BACKGROUND-IMAGE: 
+url(http://www.lockergnome.com/images/issue/top-right.gif); 
+scrollbar-3dlight-color: #DADADA; scrollbar-arrow-color: #17514B; 
+scrollbar-base-color: #007C7A; scrollbar-darkshadow-color: #808080; 
+scrollbar-face-color: #C0C0C0; scrollbar-highlight-color: #DADADA; 
+scrollbar-shadow-color: #808080 }
+ a:link    { COLOR: RED; TEXT-DECORATION: underline }
+ a:visited { COLOR: #FF8080; TEXT-DECORATION: underline }
+ a:active  { color: #000000; TEXT-DECORATION: none }
+ a:hover   { color: #820000; TEXT-DECORATION: none }
+ p.title   { BACKGROUND: #C0C0C0; BORDER-BOTTOM: #808080 4px solid; BORDER-LEFT: 
+
+
+
+#DADADA 4px solid; BORDER-RIGHT: #808080 4px solid; BORDER-TOP: #DADADA 4px 
+solid; COLOR: #000000; FONT-FAMILY: Comic Sans MS, Trebuchet MS, Helvetica, 
+Arial; FONT-SIZE: 14pt; FONT-WEIGHT: normal }
+ p.news    { BACKGROUND: #C0C0C0; BORDER-BOTTOM: #808080 4px solid; BORDER-LEFT: 
+
+
+
+#DADADA 4px solid; BORDER-RIGHT: #808080 4px solid; BORDER-TOP: #DADADA 4px 
+solid; COLOR: #000000; FONT-FAMILY: Comic Sans MS, Trebuchet MS, Helvetica, 
+Arial; FONT-SIZE: 18pt; FONT-WEIGHT: normal }
+ p.sidebar { BACKGROUND: #DADADA; BORDER-BOTTOM: #C0C0C0 3px solid; BORDER-LEFT: 
+
+
+
+#FFFFFF 3px solid; BORDER-RIGHT: #C0C0C0 3px solid; BORDER-TOP: #FFFFFF 3px 
+solid; COLOR: #000000; FONT-FAMILY: Comic Sans MS, Trebuchet MS, Helvetica, 
+Arial; FONT-SIZE: 10pt; FONT-WEIGHT: bold; TEXT-ALIGN: center }
+ .link     { BACKGROUND: #DADADA; BORDER-BOTTOM: #C0C0C0 3px solid; BORDER-LEFT: 
+
+
+
+#FFFFFF 3px solid; BORDER-RIGHT: #C0C0C0 3px solid; BORDER-TOP: #FFFFFF 3px 
+solid; COLOR: #808080; font-size: 9pt; font-family: Verdana; font-weight: bold; 
+padding: 3px; width: 100% }
+ .url      { font-size: 8pt; font-family: Verdana, Tahoma, Arial }
+ .fixed    { font-family: courier, courier new; font-size: 10px }
+-->
+</style><title>20020715 Lockergnome Penguin Shell</title></head>
+
+<body   MARGINHEIGHT="0" TOPMARGIN="0" BOTTOMMARGIN="0" bgcolor="#FFFFFF"   
+style="BACKGROUND-POSITION: right top; 
+BACKGROUND-REPEAT: no-repeat" MARGINWIDTH="0" LEFTMARGIN="0" rightmargin="0" 
+text="#000000" alink="#008080" link="RED" 
+vlink="RED">
+
+<!-- background="http://images.lockergnome.com/images/bg.head.gray.gif" 
+bgcolor="#C0C0C0" left width="610" 
+background="http://images.lockergnome.com/images/sp.back.top-r1.gif" -->
+
+ <table width="100%" border="0" cellspacing="0" cellpadding="7" align="CENTER" 
+valign="MIDDLE">
+  <tr><td background="http://www.lockergnome.com/images/issue/top-left.gif" 
+nowrap valign="middle" align="center" 
+colspan="2">
+
+ <!-- TOP BANNER AD -->
+ <center>
+ <a href="http://www.lockergnome.com/"><img 
+src="http://images.lockergnome.com/images/gnomedaily.gif" width="50" height="60" 
+
+
+
+hspace="5" alt="Lockergnome" border="0"></a>
+
+<a href="http://www.qksrv.net/click-471546-487847">
+<img src="http://www.qksrv.net/image-471546-487847" width="468" height="60" 
+alt="Linux Central" border="0"></a>
+<br>
+</center>
+ 
+ <!-- TOP BANNER AD -->
+
+ <!--#include virtual="/include/banner.txt" -->
+
+ </td></tr>
+
+  <tr><td valign="top" bgcolor="#FFFFFF"><font style="font-size: 10pt" 
+face="Verdana, Tahoma, Arial" size="2">
+
+<!-- NEWS -->
+
+<table bgcolor="#C0C0C0" border="0" cellspacing="0" cellpadding="0" 
+width="100%"><tr><td><p class="news">
+&nbsp; 07.15.2002 PenguinREPORT</p></td></tr></table><p>
+
+<p class="sidebar"><table cellpadding="10" cellspacing="0" border="0"><tr><td>
+<font style="font-size: 10pt" face="Verdana, Tahoma, Arial" size="2">
+<b>CAREER SERVICES FROM LOCKERGNOME AND DICE.COM:</b> We've teamed up with
+Dice.com to bring you a full service I.T. career enhancement solution.
+Whether you are looking for your
+<a href="http://seeker.dice.com/jobsearch/jobsearch.epl?rel_code=14">dream 
+job</a>
+or trying to
+<a href="http://seeker.dice.com/jobsearch/jobsearch.epl?rel_code=14">hire 
+talented people</a>,
+the full-featured career resource center is the place to start. Find your
+<a href="http://seeker.dice.com/jobsearch/jobsearch.epl?rel_code=14">IT talent 
+solution</a>
+today!
+</font></td></tr></table></p>
+You're a good bunch, you Penguins.<p>
+
+Today's GnomeVOICE really tells the story better than I can, but I'll give you a 
+
+
+
+quick summary. Through your efforts and compassion, reader Karl Steenblik has 
+found a new electronic home for the Foundation for Children and Youth With 
+Diabetes. I'll let Karl tell you which offered solution suited his needs. But, 
+with the volume of responses his request for help generated, it's almost 
+irrelevant. As I expected, we came together as a community and collectively 
+offered him many viable choices from which to pick a solution that would work 
+for the kids. The global scope of your concern and our collective ability to 
+effect a change has humbled me once again. Just when you start to get a little 
+callous about the 'Net ...<p>
+
+Accordingly, I'd like to sketch out an idea with you that can be an ongoing part 
+
+
+
+of Penguin Shell. It's an open discussion, really, about how we can further put 
+our technical skills (be they Linux <i>or</i> Windows skills) to work for a good 
+
+
+
+cause. I'm proposing that we start an organized volunteer effort, based in the 
+Penguin Shell readership, to provide volunteer technical services to worthwhile 
+charitable organizations. First, we need a <a 
+href="mailto:tony@lockergnome.com?subject=Penguin Shell Project Name 
+Suggestion">name</a> that clearly describes our purpose. Next, we need 
+volunteers with the time and ability to lend those <a 
+href="mailto:tony@lockergnome.com?subject=Penguin Shell - My Volunteer 
+Skills">skills</a> to a good cause. Finally, we'll need some suggestions as to 
+the charitable <a href="mailto:tony@lockergnome.com?subject=Penguin Shell - 
+Great Organizations">organizations</a> that are near and dear to your heart. Or, 
+
+
+
+maybe the organization is one you're already working with - one you're certain 
+can use some hands-on or remote volunteer help.<p>
+
+I'll start that ball rolling with a personal organizational suggestions - the <a 
+
+
+
+href="http://www.aicardi.com/" target="_blank">Aicardi Syndrome Foundation</a>. 
+Though I don't currently know their technical needs, I do know that the syndrome 
+
+
+
+is very rare - read "research and technical dollars are minimal." I'm sure we 
+can, as a group, provide them a way to fill existing technical holes.<p>
+
+That's just a suggestion. Feel free to use the mailto links above to make 
+others.<p>
+
+Over the next few weeks, I plan on modifying my current favorite blogging 
+program, <a href="http://geeklog.sourceforge.net/" target="_blank">GeekLog</a> 
+to pull together a community project area where interested parties can gather, 
+coordinate and discuss whatever this project might become. I'll keep you posted 
+on the details.<p>
+
+In one of the earliest issues of Penguin Shell, I told a story about Emperor 
+Penguins - how they huddle together on the shore, knowing that their protection 
+from predators lies in sheer numbers. When one takes the leap into the water, 
+all the others follow; individual involvement for the good of the community.<p>
+
+Where could the analogy possibly be more fitting?<p><p>
+
+<p align="right"><font style="font-size: 23pt" face="Tony Steidler-Dennison" 
+size="5">Tony
+Steidler-Dennison&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></P>
+
+<!-- TWEAK -->
+<p><br><table bgcolor="#C0C0C0" border="0" cellspacing="0" cellpadding="0" 
+width="100%"><tr><td><p 
+class="title">&nbsp;GnomeTWEAK</p></td></tr></table><p>
+
+<p class="sidebar"><table cellpadding="10" cellspacing="0" border="0"><tr><td>
+<font style="font-size: 10pt" face="Verdana, Tahoma, Arial" size="2">
+<b>Lockergnome readers, SAVE 50% on the Computing Encyclopedia!</b>
+Are you looking for the ultimate computing resource? Discover the
+<i>Computing Encyclopedia</i> from Smart Computing.  Regular price $59,
+SPECIAL OFFER for Lockergnome readers,
+<a 
+href="http://www.smartcomputing.com/offer/encyclopediaset.asp?source=2000">get 
+your set TODAY</a>, ONLY $29.95!
+</font></td></tr></table></p>
+<b>Quick Shortcuts</b><p>
+
+Linux is chock full of keyboard shortcuts that, when used, streamline the way 
+you use your system. Today's Tweaks are really user tweaks - built in shortcuts 
+you can use to maximize your Linux efficiency. You don't have to change your 
+system, just how you use what's already there. They're two tips that are quick 
+and very easy to learn and remember.<p>
+
+Got a cluttered console screen? Use <b>[ctrl]+l</b> to clear it. This does the 
+same thing as the <b>clear</b> command with far fewer keystrokes.<p>
+
+Do you want to log out of the console screen quickly? Use the <b>[ctrl+d</b> key 
+
+
+
+combination. This will log out the current user. If you're using bash and the 
+current user is not root, the [ctrl]+d combination will close the terminal 
+window, as well.<p>
+
+To me, any opportunity to save keystrokes is a good one. Better yet, if I can 
+avoid having to take my fingers from the keyboard to reach for the mouse, then 
+I've really saved some time. Though it's tough to quantify the time savings 
+using these keystroke combination shortcuts, intuitively I can tell you it's 
+substantial.<p>
+
+Maximum efficiency. That's what Tweaks are all about.<p><p>
+
+<p align="right"><a class="url" style="color: gray; text-decoration: none" 
+href="http://www.lockergnome.com/recommend.html">Recommend It!</a><br>
+<span align="right"><a class="url" style="color: gray; text-decoration: none" 
+href="mailto:tony@lockergnome.com?subject=GnomeCORE">Send us a 
+GnomeTWEAK</a></span>
+
+<!-- CORE -->
+<p><br><table bgcolor="#C0C0C0" border="0" cellspacing="0" cellpadding="0" 
+width="100%"><tr><td><p 
+class="title">&nbsp;GnomeCORE</p></td></tr></table><p>
+
+<b>Kernel Configuration - Part XI</b><p>
+
+We've covered some fairly light topics to this point in the kernel configuration 
+
+
+
+series. Today's topic requires a bit of review. We'll discuss configuring block 
+devices in your kernel.<p>
+
+We've talked about the different types of devices in previous Penguin Shell 
+issues. Fundamentally, the two that you'll deal with the most are block and 
+character devices. These draw their type names from the way they handle data. 
+Block devices receive data for storage in chunks, generally pre-set sizes of 
+data "blocks." Hard drives are block devices. They'll only write chunks of data 
+to storage. Thus, the problem with shutting down your machine uncleanly. Data 
+intended for storage may not, in fact, have been written at the time your power 
+dies or you hard kill your machine. The system may still be accumulating data up 
+
+
+
+to the proper block size before committing it to the hard drive.<p>
+
+Character devices, on the other hand, receive data in "streams," one character 
+at a time. Serial ports are a great example of character devices. They handle 
+data input and output on the fly, rather than filling a buffer <i>then</i> 
+committing the data.<p>
+
+The physical nature of these device types goes a long way toward explaining why 
+they handle data as they do. A hard drive has to physically spin up to store or 
+retrieve data. You're actually changing the magnetic properties of the disc 
+surface when you store data. Consequently, a hard drive has to know where 
+there's free space on the disc surface, has to move that area of the disc under 
+the write head and try, as best it can, to group blocks of related data 
+together.<p>
+
+Character devices really don't store data as much as they send it off and forget 
+
+
+
+about it. The process is purely electrical rather than electrical and physical. 
+The serial port, for example, sends data in a stream to your Palm Pilot. The 
+storage of the data is actually handled by the Palm itself, not a physical 
+storage device on the computer. There's no need to spin up a drive and account 
+for the data as is necessary with a hard drive. The Palm will also send a signal 
+
+
+
+back to the computer confirming receipt of data. That's an indication that 
+character devices often communicate in both directions, as well.<p>
+
+So, when you're configuring block devices in your kernel, you're preparing the 
+system for communicating with a device that will buffer data to a predetermined 
+level, then write that data as a block, changing the physical properties of the 
+hard drive disc surface. Even though that's the highest level view of the 
+process, it still shows how difficult a process physical data storage really 
+is.<p>
+
+In the block device section, you'll find many options for physical data storage. 
+
+
+
+When configuring this section, it's crucial to know as much about your existing 
+hardware as possible. What type (brand) of hard drives are you using? What's the 
+
+
+
+interface to the machine - IDE, parallel, etc? Where is the drive located - on 
+the local machine or on a network-connected box? Because the variables are so 
+broad, it's nearly impossible to give you a stock configuration tip that will 
+work for your personal machine every time. I can tell you this - you will have 
+block devices (normally a hard drive and a floppy), and you need to answer as 
+many of the above questions as you can. Find out as much about these physical 
+devices as you can, and the configuration process will be relatively 
+painless.<p>
+
+A warning - you'll see more configuration tips like this as the series continues 
+
+
+
+to progress. I'll certainly make hands-on configuration recommendations where 
+possible. There are quite a few areas where I can make such recommendations. 
+However, where the variable set is as broad as block devices, much of the 
+legwork will be up to you.<p>
+
+Tomorrow, we'll talk about RAID and multi-device support in Linux.<p>
+
+<p>
+
+<p align="right"><a class="url" style="color: gray; text-decoration: none" 
+href="http://www.lockergnome.com/recommend.html">Recommend It!</a><br>
+<span align="right"><a class="url" style="color: gray; text-decoration: none" 
+href="mailto:tony@lockergnome.com?subject=GnomeCORE">Send us a GnomeCORE 
+tip</a></span>
+
+<!-- FILE -->
+
+<p><br><table bgcolor="#C0C0C0" border="0" cellspacing="0" cellpadding="0" 
+width="100%"><tr><td><p 
+class="title">&nbsp;GnomeFILE</p></td></tr></table><p>
+
+<b>rxLinux</b><p>
+
+<a class="url" href=""></a><br>
+<a class="url" href="http://www.fusionw3.com/rxlinux/ 
+">http://www.fusionw3.com/rxlinux/ </a><p>
+
+"The concept behind rxlinux is to centralise configuration and management of 
+multiple Linux servers. New servers can be deployed in minutes. A Web interface 
+is used to build custom ISO CD-ROMs dedicated for specific servers. Servers, 
+also called rxnodes, boot up from that CD-ROM and get the rest of the 
+configuration and software from a master server. No administration is done 
+directly on the nodes; everything is controlled from the master servers. When 
+the rxnode has finished booting up and all software is running, it is completely 
+
+
+
+independent from the rxmaster until the next reboot."<p><p>
+
+<p align="right"><a class="url" style="color: gray; text-decoration: none" 
+href="http://www.lockergnome.com/recommend.html">Recommend It!</a><br>
+<span align="right"><a class="url" style="color: gray; text-decoration: none" 
+href="mailto:tony@lockergnome.com?subject=GnomeFILE">Send us a GnomeFILE 
+suggestion</a></span>
+
+<!-- VOICE -->
+
+<p><br><table bgcolor="#C0C0C0" border="0" cellspacing="0" cellpadding="0" 
+width="100%"><tr><td><p 
+class="title">&nbsp;GnomeVOICE</p></td></tr></table><p>
+
+<b>Penguin Hearts</b><br>
+<span class="url">Scribbled by Karl Steenblik</span><p>
+
+"I can not believe all of the help your posting to the Linux community has
+generated.  I have had over 20 offers for help.  Some of the offers would
+not fit our space needs but that number of responses shows that Linux
+people care.<p>
+
+"I am overwhelmed with gratitude with Lockergnome and
+<a href="http://digitaldaze.com/" target="_blank">http://digitaldaze.com/</a><p>
+
+"Bill at Digitaldaze has sent us a large gift of 100 MB of space.  More
+that I think we will ever use.<p>
+
+"I thank all of the people who offered help.  There are more generous
+people than I can type to individually.  Our camp will hold Linux people
+in the highest esteem and I will make sure Linux, Lockergnome, and
+Digitaldaze have a prominent places on our site in the future.<p>
+
+"Soon you will be able to visit our new site at
+<a href="http://fcyd.digitaldaze.com/" 
+target="_blank">http://fcyd.digitaldaze.com/</a>.<p>
+
+"Now the work for me begins, moving the site!  Oh the labors of love that
+make us whole.<p>
+
+"Everyone have a super day.<p>
+
+"Thank you again for all of your help.<p><p>
+
+<p align="right"><a class="url" style="color: gray; text-decoration: none" 
+href="http://www.lockergnome.com/recommend.html">Recommend It!</a><br>
+<span align="right"><a class="url" style="color: gray; text-decoration: none" 
+href="mailto:tony@lockergnome.com?subject=GnomeVOICE">Speak your 
+GnomeVOICE</a></span>
+
+<!-- CLICK -->
+<p><br><table bgcolor="#C0C0C0" border="0" cellspacing="0" cellpadding="0" 
+width="100%"><tr><td><p 
+class="title">&nbsp;GnomeCLICK</p></td></tr></table><p>
+
+<b>Software.Linux.Com</b><p>
+
+<a class="url" 
+href="http://software.linux.com/index/">http://software.linux.com/index/</a><p>
+
+Software.Linux.Com is the revitalized version of Linux.DaveCentral. True to its 
+roots, the site is a great starting point for Linux software and information. 
+Software is categorized under such headings as Audio, File Utilities, Office 
+Applications, and System Utilities. The site also features up-to-date listings 
+of the most recent and most popular Linux software, as well as a program of the 
+day. This site will definitely get bigger, but even for now, it's got nearly any 
+
+
+
+Linux app you're looking for.<p><p>
+
+<p align="right"><a class="url" style="color: gray; text-decoration: none" 
+href="http://www.lockergnome.com/recommend.html">Recommend It!</a><br>
+<span align="right"><a class="url" style="color: gray; text-decoration: none" 
+href="mailto:tony@lockergnome.com?subject=GnomeCLICK">Suggest a 
+GnomeCLICK</a></span>
+
+<!-- ADMINISTRIVIA -->
+<p><br><table cellpadding="0" cellspacing="0" border="0"><tr><td><p 
+class="sidebar">
+<table cellpadding="7" cellspacing="0" border="0"><tr><td><font 
+style="font-size: 8pt" face="Verdana, Tahoma, Arial" 
+size="1">
+<a 
+href="http://www.lockergnome.com/issues/penguinshell/20020715.html">http://www.lockergnome.com/issues/penguinshell/20020715.html</a>
+<p>Your subscribed e-mail address is: [qqqqqqqqqq-lg@spamassassin.taint.org] - To unsubscribe or 
+change your delivery address, please 
+visit the <A HREF="http://www.lockergnome.com/changesub.html">subscription 
+management</A>
+page. Use of the Gnome moniker by Penguin Shell does not imply endorsement of 
+the Gnome Desktop Environment. Penguin 
+Shell is an equal-opportunity desktop employer. For further information, please 
+refer to the GnomeCREDITS in the 
+sidebar.</font></td></tr></table></p></td></tr></table>
+
+
+<!--#include virtual="/include/subscription2.txt" -->
+
+</font></td>
+<td background="http://images.lockergnome.com/images/issue/sidebar.gif" 
+VALIGN="top" align="left" width="145"><font style="font-size: 8pt" 
+color="#990000" face="Verdana, Tahoma, Arial" size="1">
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td><p 
+class="sidebar">LOOK OVER HERE</p></td></tr></table><br>
+
+&nbsp;<a href="http://www.gnometomes.com/">Download Tip eBooks</a><br>
+<p>
+&nbsp;<a href="http://windowsdaily.lockergnome.com/">Latest Windows 
+Daily</a><br>
+&nbsp;<a href="http://digitalmedia.lockergnome.com/">Latest Digital
+Media</a><br>
+&nbsp;<a href="http://techspecialist.lockergnome.com/">Latest Tech 
+Specialist</a><br>
+&nbsp;<a href="http://penguinshell.lockergnome.com/">Latest Penguin 
+Shell</a><br>
+&nbsp;<a href="http://applecore.lockergnome.com/">Latest Apple Core</a><br>
+&nbsp;<a href="http://webmasterweekly.lockergnome.com/">Latest Web 
+Weekly</a><br>
+&nbsp;<a href="http://updates.lockergnome.com/">Latest Bits &amp; Bytes</a><br>
+&nbsp;<A HREF="http://www.gnomeradio.com/">Latest Audio Show</A><BR>
+<p>
+&nbsp;<A HREF="http://lockergnome.pricegrabber.com/">Low Price Search</A><br>
+&nbsp;<A HREF="http://www.gnomedex.com/">Our Tech Conference</A><br>
+<p>
+&nbsp;<a target="_blank" 
+href="http://www.gnometomes.com/tome/000628.html">Microsoft Office Tips</a><br>
+&nbsp;<a target="_blank" href="http://www.gnometomes.com/tome/000627.html">PC 
+Productivity Tips</a><br>
+&nbsp;<a target="_blank" href="http://www.gnometomes.com/tome/000626.html">Cool 
+Internet Tips</a><br>
+&nbsp;<a target="_blank" 
+href="http://www.gnometomes.com/tome/000625.html">Windows 2000 Tips</a><br>
+&nbsp;<a target="_blank" 
+href="http://www.gnometomes.com/tome/000623.html">Windows XP Tips</a><br>
+<p>
+
+<center>
+<a href="http://www.gnomedex.com/" target="_blank"><img alt="See You in August!" 
+
+
+
+
+
+src="http://chris.pirillo.com/archives/Gnomedex_Banner_going.gif" width="120" 
+height="60" border="0"></a>
+</center>
+
+<p>
+&nbsp;<a href="http://www.lockergnome.com/recommend.html">Tell a Friend About 
+Us!</a><br>
+&nbsp;<a href="http://www.lockergnome.com/advertise.html">Advertise With 
+Us</a><br>
+&nbsp;<A HREF="http://www.lockergnome.com/jobs.html">High-Tech Job 
+Search</A><br>
+&nbsp;<a href="http://www.lockergnome.com/chat.html">Chat With Gnomies</a><br>
+&nbsp;<a href="http://www.lockergnome.com/webcam.html">Watch The Webcams</a><br>
+&nbsp;<a
+href="https://www.sandhills.com/secure/smartcomputing/cpufreetrial3.asp?source=cp491bonus">Computer Power User</a><br>
+<p>
+&nbsp;<a href="http://www.lockergnome.com/issues/">Read Past Issues</a><br>
+&nbsp;<a href="http://www.xteq.com/">Download X-Setup</a><br>
+&nbsp;<a href="http://www.lockergnome.com/about.html">About Lockergnome</a><br>
+&nbsp;<a href="http://www.lockergnome.com/privacy.html">Our Privacy 
+Policy</a><br>
+&nbsp;<a href="http://www.lockergnome.com/options.html">View More 
+Options</a><br>
+&nbsp;<a href="http://www.lockergnome.com/lockergnome.xml">Our XML / RSS 
+Feed</a><br>
+&nbsp;<a href="http://www.lockergnome.com/options.html#syndicate">Syndicate Our 
+Tips</a><br>
+&nbsp;<a href="http://www.lockergnome.com/images/lockerlink.gif">Link To 
+Lockergnome</a><br>
+&nbsp;<A 
+HREF="http://lockergnome.pricegrabber.com/search_getprod.php/isbn=0966103254/">Get Chris's Book</A><br>
+&nbsp;<A HREF="http://www.tvcd.biz/lockergnome">Win a Digital Camera</A><br>
+<p>
+
+&nbsp;<a 
+href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#102;&#101;&#101;&#100;&#98;&#97;&#99;&#107;&#64;&#108;&#111;&#99;&#107;&#101;&#114;&#103;&#110;&#111;&#109;&#101;&#46;&#99;&#111;&#109;?subject=Lockergnome Site Feedback">General Feedback</a><br>
+&nbsp;<A HREF="http://chris.pirillo.com/">Chris's Blog</A><BR>
+&nbsp;<a href="mailto:tony@lockergnome.com?subject=Lockergnome Penguin Shell 
+Comment">E-mail the Editor</a><br>
+
+<!-- GNOME CERTIFICATION -->
+<!-- END GNOME CERTIFICATION -->
+
+<p>&nbsp;<p><table cellpadding="0" cellspacing="0" border="0" width="100%" 
+bgcolor="#FFEEDD"><tr><td><p 
+class="sidebar">GNOMESPECIALS</p></td></tr></table><br>
+&nbsp;<a target="_blank" title="Share your team/project contacts, calendars, 
+tasks, etc. in MS Oulook 2002, without a server!" 
+href="http://outlook.4team.biz/?fr=gnome">Manage Your Workgroup</a><br>
+&nbsp;<a target="_blank" title="Software for filling in paper forms on your 
+computer instead of a typewriter" 
+href="http://www.colorpilot.com/typewriter.html">Form Pilot</a><br>
+&nbsp;<a target="_blank" title="It's both fun and functional! Hear the time, set 
+
+
+
+alarms, style your taskbar clock, sync your PC time, and more. Try Say the Time 
+free for
+30 days." href="http://www.provenio.ws/saythetime/">Say the Time 5.0</a><br>
+&nbsp;<a target="_blank" title="Convert MP3, WAV, AVI, JPG, GIF, and PNG to the SWF format for no buffer streaming" href="http://www.gfx2swf.com/gnome-special/">Boomer - Stream Now</a><br>
+&nbsp;<a target="_blank" title="Creating Web/CD catalogs with HyperPublish is really a snap! Not just an editor but a quick, powerful all-in-one environment for creating stunning catalogs, CDs and Web sites!" href="http://www.hyperpublish.com/create_a_catalog_000018.htm">Create Web/CD catalog</a><br>
+&nbsp;<a target="_blank" title="Create your Web site in minutes with this easy-to-use visual tool!" href="http://www.easywebeditor.com/create_web_page_000004.htm">Easy Web Editor</a><br>
+&nbsp;<a target="_blank" title="Capture TEXT seen in folder trees, file lists, database reports, dialog boxes, menus, status lines, including areas that you could not highlight with your mouse. (Chris cannot live without it!;)" href="http://www.structurise.com/kleptomania">Kleptomania</a><br>
+&nbsp;<a target="_blank" title="Organize all your mp3 collection in seconds! You can rename mp3s quickly and easily, write tag information in batch, from file names or import it from cddb. Get your free trial now!" href="http://www.softpointer.com/tr_2.htm">Tag&amp;Rename</a><br>
+&nbsp;<a target="_blank" title="You will enjoy countless hours of fun with Pretty Good Solitaire!  Play 500 solitaire card games, from classic games like Klondike, FreeCell, and Spider, to original games found nowhere else.  Enjoy lush graphics, large easy-to-read cards, statistics, and quests, a unique new way to play for points." href="http://www.goodsol.com/lockergnome.html">Pretty Good Solitaire</a><br>
+&nbsp;<a target="_blank" title="Choosing color combinations for the web is a careful balance between a scheme designed to draw attention; while being respectful of established color-harmony principles.  ColorCombo's four panels scroll, allowing side-by-side color comparisons.  Also text on background checker, 4096 color array, + more. FREE." href="http://www.colorcombo.com">Visualize Color Combos</a><br>
+&nbsp;<a target="_blank" title="FirstStop WebSearch(TM) Deluxe Edition, a FREE trial version of this incredibly fast, award winning, customizable multi-search engine that has been described as the FASTEST no-nonsense meta search for the net. Now, Gnomies can save 50% when they register a copy of FirstStop WebSearch!" href="http://www.Firststopwebsearch.com/lockergnomeoffer.html">FirstStop WebSearch</a><br>
+&nbsp;<a target="_blank" title="Ecobuilder is the ultimate web application that allows you to get your portal, online community, intranet, extranet or any web site project online by saving time, money and manpower. Gnomies receive $400 off the cost of the software." href="http://www.ecobuilder.com/lockergnome.cfm">Ecobuilder</a><br>
+&nbsp;<a target="_blank" title="Software for organizing your personal book collection. Add books quickly - no typing required! Group, filter, sort and print your database. Click for free trial version." href="http://www.collectorz.com/book?from=lockergnome">Book Collector</a><br>
+<p align="center"><a href="http://www.lockergnome.com/special.html"><B>Get Listed Here</B></a></p>
+Question: which group is 250,000+ strong and always looking for stuff to make their personal and professional lives run smoother? 
+
+<p>
+
+<!--#include virtual="/include/subscribeside.txt" -->
+
+<p>
+<a href="http://images.lockergnome.com/images/video/.WMV"></a>
+
+<p>&nbsp;<p><font style="font-size: 8pt" face="Verdana, Tahoma, Arial" size="1">
+<table align="center" border="0"><tr><td><a href="http://www.lockergnome.com/webcam.html">
+<img width="125" height="94" alt="Lockergnome Webcam Image" src="http://www.lockergnome.com/images/webcam/steidler.jpg"></a></td></tr>
+<tr><td align="center"><font style="font-size: 7pt" size="1" face="Verdana, Tahoma, Arial">CLICK HERE TO ZOOM</font></td></tr></table>
+</font>
+
+<p>&nbsp;<p>
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td><p class="sidebar">LOOK IT UP</p></td></tr></table><br>
+<form method="post" action="http://www.lockergnome.com/cgi-bin/htsearch"><input type="hidden" name="method" value="and"><input type="hidden" name="format" value="long"><input type="hidden" name="sort" value="score"><input type="hidden" name="config" value="htdig"><input type="hidden" name="restrict" value=""><input type="hidden" name="exclude" value=""><input type="text" size="14" value=" Lockergnome" name="words"><input type="submit" class="Press" value="go"></form>
+<FORM method="get" action="http://www.amazon.com/exec/obidos/external-search"><INPUT type="text" name="keyword" size="14" value=" Amazon"><INPUT type="hidden" name="mode" value="blended"><INPUT type="hidden" name="tag" value="lockergnomedigit"><INPUT TYPE="submit" VALUE="go" class="Press" NAME="Go"></form>
+<form action="http://www.gnomejob.com/" method="POST"><input type="hidden" name="num_per_page" value="20"><input type="hidden" name="num_to_retrieve" value="500"><input type="hidden" name="iquery" value=""><input type="hidden" name="vlink_color" value="008080"><input type="hidden" name="link_color" value="990000"><input type="hidden" name="background_color" value="FFFFFF"><input type="hidden" name="text_color" value="000000"><input type="hidden" name="title_image" value="http://www.lockergnome.com/images/lgtopper.gif"><input type="hidden" name="site_url" value="http://www.lockergnome.com/"><input type="hidden" name="site_title" value="Lockergnome"><input type="hidden" name="title_text" value="Lockergnome"><input type="hidden" name="custom" value="1"><input value=" Jobs" type="TEXT" name="query" size="14"><input class="Press" type="SUBMIT" value="go"></form>
+<FORM method="get" action="http://lockergnome.pricegrabber.com/search_gen_top.php" target="_parent"><input type="hidden" name="topcat_search" value="1"><input value=" Hardware" size="14" type=text name=form_keyword><INPUT type="SUBMIT" value="go" class="Press" NAME="Go"></FORM>
+<FORM method="get" action="http://lockergnome.pricegrabber.com/search_gen_top.php" target="_parent"><input type="hidden" name="topcat_search" value="1"><input value=" Software" size="14" type=text name=form_keyword><INPUT type="SUBMIT" value="go" class="Press" NAME="Go"></FORM>
+
+<p>&nbsp;<p>
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td><p class="sidebar">BYTE ME NOW</p></td></tr></table><br>
+<font style="font-size: 8pt" face="Verdana, Tahoma, Arial" size="1">
+&copy;2002, Lockergnome LLC. ISSN: 1095-3965. All Rights Reserved. Please read our <a href="http://www.lockergnome.com/terms.html">Terms of Service</a>. Our Web site is hosted by <a href="http://www.digitaldaze.com/?lg">DigitalDaze</a>. Domain registered at <a href="http://www.dnscentral.com/?lg">DNS Central</a>.
+
+</table>
+</body>
+</html>
+
+

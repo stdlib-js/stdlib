@@ -1,0 +1,34 @@
+
+{{alias}}( fcn[, thisArg] )
+    Wraps a function in a try/catch block.
+
+    If provided an asynchronous function, the returned function only traps
+    errors which occur during the current event loop tick.
+
+    If a function throws a literal, the literal is serialized as a string and
+    returned as an `Error` object.
+
+    Parameters
+    ----------
+    fcn: Function
+        Function to wrap.
+
+    thisArg: any (optional)
+        Function context.
+
+    Returns
+    -------
+    out: Function
+        Wrapped function.
+
+    Examples
+    --------
+    > function fcn() { throw new Error( 'beep boop' ); };
+    > var f = {{alias}}( fcn );
+    > var out = f();
+    > out.message
+    'beep boop'
+
+    See Also
+    --------
+

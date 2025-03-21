@@ -1,0 +1,73 @@
+
+{{alias}}( value, path[, options] )
+    Returns a boolean indicating whether an object contains a nested key path.
+
+    The function tests for "own" properties and will return `false` for
+    inherited properties.
+
+    Value arguments other than `null` or `undefined` are coerced to objects.
+
+    Key path array elements are coerced to strings.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    path: string|Array
+        Key path.
+
+    options: Object (optional)
+        Options.
+
+    options.sep: string (optional)
+        Key path separator. Default: '.'.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an object has a specified path.
+
+    Examples
+    --------
+    > var obj = { 'a': { 'b': { 'c': 'd' } } };
+    > var bool = {{alias}}( obj, 'a.b.c' )
+    true
+
+    // Specify a custom separator via the `sep` option:
+    > obj = { 'a': { 'b': { 'c': 'd' } } };
+    > bool = {{alias}}( obj, 'a/b/c', { 'sep': '/' } )
+    true
+
+{{alias}}.factory( path[, options] )
+    Returns a function which tests whether an object contains a nested key path.
+
+    The returned function tests for "own" properties and will return `false` for
+    inherited properties.
+
+    Parameters
+    ----------
+    path: string|Array
+        Key path.
+
+    options: Object (optional)
+        Options.
+
+    options.sep: string (optional)
+        Key path separator. Default: '.'.
+
+    Returns
+    -------
+    out: Function
+        Function which tests whether an object contains a nested key path.
+
+    Examples
+    --------
+    > var has = {{alias}}.factory( 'a/b/c', { 'sep': '/' } );
+    > var obj = { 'a': { 'b': { 'c': 'd' } } };
+    > var bool = has( obj )
+    true
+
+    See Also
+    --------
+

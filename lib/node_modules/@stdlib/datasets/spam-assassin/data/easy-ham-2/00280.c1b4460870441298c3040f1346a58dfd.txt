@@ -1,0 +1,86 @@
+From ilug-admin@linux.ie  Thu Aug  8 14:10:53 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 716984412E
+	for <jm@localhost>; Thu,  8 Aug 2002 08:32:24 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 08 Aug 2002 13:32:24 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g78CCw201529 for
+    <jm-ilug@JMASON.ORG>; Thu, 8 Aug 2002 13:12:58 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id MAA29778 for <jm-ilug@jmason.org>;
+    Thu, 8 Aug 2002 12:16:10 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA11413; Thu, 8 Aug 2002 12:14:50 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from byron.heanet.ie (byron.heanet.ie [193.1.219.90]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id MAA11378 for <ilug@linux.ie>;
+    Thu, 8 Aug 2002 12:14:41 +0100
+Received: from dhcp169.heanet.ie ([193.1.219.169] helo=heanet.ie) by
+    byron.heanet.ie with esmtp (Exim 4.05) id 17clGl-0003RN-00 for
+    ilug@linux.ie; Thu, 08 Aug 2002 12:15:55 +0100
+Message-Id: <3D52537D.8000104@heanet.ie>
+Date: Thu, 08 Aug 2002 12:18:21 +0100
+From: Dave Wilson <dave.wilson@heanet.ie>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.0.0)
+    Gecko/20020530
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: ilug@linux.ie
+Subject: Re: [ILUG] slashdot EW Dijkstra humor
+References: <200208081032.LAA09312@lugh.tuatha.org>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+> Interesting. I've always wondered about things 'considered' to be bad. 
+> Example the GOTO, most languages support a goto of some sort, so are gotos really bad?
+
+Oh goodie. My final year project rears its head :-)
+
+> Is a loop or a recursive call actually any better than a goto 
+> or is the goto used as a kind of common enemy of 
+> programming syntax
+
+Much as I would like to answer an unqualified "yes", I must admit: if 
+you already code in a style that makes heavy use of GOTOs, coding in the 
+same style with GOSUBs or function calls does not improve code. Much the 
+same as when the manuals on "modular coding" said to write modules that 
+would fit on a single sheet of computer paper, lots of coders proceeded 
+to split their code into arbitrary 60-line chunks. :)
+
+However, "Go-to considered harmful" points out that to analyse (==debug) 
+code, you need to be able to tell what the point of execution is, and 
+what the values of the variables are at that point. This is an easy(tm) 
+job if the code uses assignment, if(), for() and functions, but not if 
+it uses GOTO. (See http://www.cs.utexas.edu/users/EWD/ewd02xx/EWD215.PDF 
+for the full letter).
+
+Despite being one of Dijkstra's brain-damaged children who learned BASIC 
+at an early age :) I never use GOTO anymore (or any of its bastard 
+offspring like break, continue, fudged function calls with sleight of 
+hand in the variables). My code is longer than it might be if I had used 
+GOTO at a critical, handy point. However, code is a bit like networks - 
+you always end up adding bits on where you didn't expect to - and the 
+benefit is felt when another person (like myself but in three months 
+time) is modifying or debugging it and doesn't have to go through the 
+hassle of dealing with the impact of the GOTO.
+
+Dave
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

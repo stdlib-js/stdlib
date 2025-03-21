@@ -1,0 +1,20 @@
+
+{{alias}}
+    Platform-specific path segment separator.
+
+    Examples
+    --------
+    > {{alias}}
+    <string>
+
+    // Windows environment:
+    > var parts = 'foo\\bar\\baz'.split( {{alias}} )
+    [ 'foo', 'bar', 'baz' ]
+
+    // POSIX environment:
+    > parts = 'foo/bar/baz'.split( {{alias}} )
+    [ 'foo', 'bar', 'baz' ]
+
+    See Also
+    --------
+

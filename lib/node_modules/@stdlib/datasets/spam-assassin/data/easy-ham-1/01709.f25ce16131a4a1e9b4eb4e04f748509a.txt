@@ -1,0 +1,12 @@
+Return-Path: skip@pobox.com
+Delivery-Date: Sun Sep  8 00:11:19 2002
+From: skip@pobox.com (Skip Montanaro)
+Date: Sat, 7 Sep 2002 18:11:19 -0500
+Subject: [Spambayes] spambayes package?
+Message-ID: <15738.34711.467756.145336@12-248-11-90.client.attbi.com>
+
+Before we get too far down this road, what do people think of creating a
+spambayes package containing classifier and tokenizer?  This is just to
+minimize clutter in site-packages.
+
+Skip

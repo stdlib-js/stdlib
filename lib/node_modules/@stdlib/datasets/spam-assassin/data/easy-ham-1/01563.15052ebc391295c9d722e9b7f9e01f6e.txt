@@ -1,0 +1,87 @@
+From razor-users-admin@lists.sourceforge.net  Fri Sep  6 11:35:10 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 9F98716F17
+	for <jm@localhost>; Fri,  6 Sep 2002 11:34:35 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 11:34:35 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g869ZYC28258 for
+    <jm-razor@jmason.org>; Fri, 6 Sep 2002 10:36:36 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id CAA19639 for
+    <jm-razor@jmason.org>; Fri, 6 Sep 2002 02:28:02 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17n7hF-0001Zy-00; Thu,
+    05 Sep 2002 18:14:05 -0700
+Received: from [208.48.139.185] (helo=forty.greenhydrant.com) by
+    usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17n7gP-00007z-00 for <razor-users@lists.sourceforge.net>; Thu,
+    05 Sep 2002 18:13:13 -0700
+Received: (qmail 5168 invoked by uid 501); 6 Sep 2002 01:13:08 -0000
+From: David Rees <dbr@greenhydrant.com>
+To: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] Problem with Razor 2.14 and Spamassassin 2.41
+Message-Id: <20020905181308.B4905@greenhydrant.com>
+Mail-Followup-To: David Rees <dbr@greenhydrant.com>,
+	razor-users@lists.sourceforge.net
+References: <20020905160808.B2932@greenhydrant.com>
+    <Pine.LNX.4.44.0209051816270.22445-100000@burgers.bubbanfriends.org>
+    <20020906005315.GH29663@kluge.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <20020906005315.GH29663@kluge.net>; from felicity@kluge.net
+    on Thu, Sep 05, 2002 at 08:53:16PM -0400
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Thu, 5 Sep 2002 18:13:08 -0700
+Date: Thu, 5 Sep 2002 18:13:08 -0700
+
+On Thu, Sep 05, 2002 at 08:53:16PM -0400, Theo Van Dinter wrote:
+> On Thu, Sep 05, 2002 at 06:16:57PM -0500, Mike Burger wrote:
+> > You might be better asking this on the spamassassin-talk list.  The folks 
+> > there will almost definitely have an answer for this.
+> 
+> I posted a fairly lengthy complete answer to this problem and how to
+> get around it in SA 2.41 on the spamassassin-talk list. :)
+
+Thanks for the post there, it answered all my questions about
+spamassassin/razor interaction.
+
+Now for a razor question:
+
+I'm worried about having a server full of razor-agent.log files which keep
+on growing.  Is it possible to configure razor log via SYSLOG to make it
+easy to rotate logs?  Searching through the man pages didn't turn anything
+up...  Otherwise I'll have to write a script to go through each user's home
+directory looking for razor-agent.log files to rotate periodically.
+
+Thanks,
+Dave
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+

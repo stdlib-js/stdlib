@@ -1,0 +1,283 @@
+From fork-admin@xent.com  Mon Aug 26 22:18:18 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0D76343F99
+	for <jm@localhost>; Mon, 26 Aug 2002 17:18:17 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 22:18:17 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7QLDMZ09780 for <jm@jmason.org>;
+    Mon, 26 Aug 2002 22:13:22 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id E08232941D6; Mon, 26 Aug 2002 13:39:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from seawall.homeport.org (Seawall.Homeport.org [66.152.246.82])
+    by xent.com (Postfix) with ESMTP id 503A5294099 for <fork@xent.com>;
+    Thu, 22 Aug 2002 07:06:28 -0700 (PDT)
+Received: from lightship.internal.homeport.org
+    (lightship.internal.homeport.org [10.0.0.11]) by seawall.homeport.org
+    (Postfix) with ESMTP id 2FCE9568; Thu, 22 Aug 2002 11:07:55 -0400 (EDT)
+Received: by lightship.internal.homeport.org (Postfix, from userid 125) id
+    372302C92B; Thu, 22 Aug 2002 10:08:09 -0400 (EDT)
+From: Adam Shostack <adam@homeport.org>
+To: Kragen Sitaker <kragen@pobox.com>
+Cc: fork@spamassassin.taint.org
+Subject: Re: the underground software vulnerability marketplace and its
+    hazards (fwd)
+Message-Id: <20020822100808.A72593@lightship.internal.homeport.org>
+References: <Pine.LNX.4.33.0208220842040.8506-100000@hydrogen.leitl.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <Pine.LNX.4.33.0208220842040.8506-100000@hydrogen.leitl.org>;
+    from eugen@leitl.org on Thu, Aug 22, 2002 at 08:42:12AM +0200
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 22 Aug 2002 10:08:09 -0400
+
+Hi Kragen,
+
+   This is an interesting analysis.  I think that there are a couple
+of nits I might pick (for example, I don't expect that the market will
+be well developed with highest bidders for while), I think that the
+most important issue, which is that end users won't be able to fix
+their systems, is almost passed over.  I know that you know this, and
+you allude to it, but your essay is getting passed around, so you
+might want to add to it bits about the sysadmin and others.
+
+   There's one other point which you don't make, which I think is very
+important, which is that research into defining and addressing classes
+of vulnerabilities can't happen without libraries of available
+vulnerability code.  I can think of three researchers into automated
+methods for addressing vulnerabilities who griped, uninvited, about
+the quality of the existing vulnerability sites.  Doing research into
+a set requires that you have enough examples, in the open, that you
+can define a set, and that the set is added to from time to time so
+you can make and test predictions.
+
+   I feel fairly confident in saying that without full disclosure, we
+wouldn't have Stackguard, ITS4, Nissus, or snort.  And the security
+admin's job would be a lot harder.
+
+Adam
+
+
+On Thu, Aug 22, 2002 at 08:42:12AM +0200, Eugen Leitl wrote:
+| -- 
+| -- Eugen* Leitl <a href="http://leitl.org">leitl</a>
+| ______________________________________________________________
+| ICBMTO: N48 04'14.8'' E11 36'41.2'' http://eugen.leitl.org
+| 83E5CA02: EDE4 7193 0833 A96B 07A7  1A88 AA58 0E89 83E5 CA02
+| 
+| 
+| ---------- Forwarded message ----------
+| Date: Thu, 22 Aug 2002 00:24:54 -0400 (EDT)
+| From: Kragen Sitaker <kragen@pobox.com>
+| To: fork@spamassassin.taint.org
+| Subject: the underground software vulnerability marketplace and its hazards
+| 
+| On August 7th, an entity known as "iDEFENSE" sent out an announcement,
+| which is appended to this email.  Briefly, "iDEFENSE", which bills
+| itself as "a global security intelligence company", is offering cash
+| for information about security vulnerabilities in computer software
+| that are not publicly known, especially if you promise not to tell
+| anyone else.
+| 
+| If this kind of secret traffic is allowed to continue, it will pose a
+| very serious threat to our computer communications infrastructure.
+| 
+| At the moment, the dominant paradigm for computer security research
+| known as "full disclosure"; people who discover security
+| vulnerabilities in software tell the vendor about them, and a short
+| while later --- after the vendor has had a chance to fix the problem
+| --- they publish the information, including code to exploit the
+| vulnerability, if possible.  
+| 
+| This method has proven far superior to the old paradigm established by
+| CERT in the late 1980s, which its proponents might call "responsible
+| disclosure" --- never release working exploit code, and never release
+| any information on the vulnerability before all vendors have released
+| a patch.  This procedure often left hundreds of thousands of computers
+| vulnerable to known bugs for months or years while the vendors worked
+| on features, and often, even after the patches were released, people
+| wouldn't apply them because they didn't know how serious the problem
+| was.
+| 
+| The underground computer criminal community would often discover and
+| exploit these same holes for months or years while the "responsible
+| disclosure" process kept their victims, who had no connections in the
+| underground, vulnerable.
+| 
+| The problem with this is that vulnerabilities that are widely known
+| are much less dangerous, because their victims can take steps to
+| reduce their potential impact --- including disabling software,
+| turning off vulnerable features, filtering traffic in transit, and
+| detecting and responding to intrusions.  They are therefore much less
+| useful to would-be intruders.  Also, software companies usually see
+| security vulnerabilities in their software as PR problems, and so
+| prefer to delay publication (and the expense of fixing the bugs) as
+| long as possible.
+| 
+| iDEFENSE is offering a new alternative that appears far more dangerous
+| than either of the two previous paradigms.  They want to be a buyer in
+| a marketplace for secret software vulnerability information, rewarding
+| discoverers of vulnerabilities with cash.  
+| 
+| Not long before, Snosoft, a group of security researchers evidently
+| including some criminal elements, apparently made an offer to sell the
+| secrecy of some software vulnerability information to the software
+| vendor; specifically, they apparently made a private offer to
+| Hewlett-Packard to keep a vulnerability in HP's Tru64 Unix secret if
+| HP retained Snosoft's "consulting services".  HP considered this
+| extortion and responded with legal threats, and Snosoft published the
+| information.
+| 
+| If this is allowed to happen, it will cause two problems which,
+| together, add up to a catastrophe.
+| 
+| First, secret software vulnerability information will be available to
+| the highest bidder, and to nobody else.  For reasons explained later,
+| I think the highest bidders will generally be organized crime
+| syndicates, although that will not be obvious to the sellers.
+| 
+| Second, finding software vulnerabilities and keeping them secret will
+| become lucrative for many more talented people.  The result will be
+| --- just as in the "responsible disclosure" days --- that the good
+| guys will remain vulnerable for months and years, while the majority
+| of current vulnerabilities are kept secret.
+| 
+| I've heard it argued that the highest bidders will generally be the
+| vendors of the vulnerable software, but I don't think that's
+| plausible.  If someone can steal $20 000 because a software bug lets
+| them, the software vendor is never held liable; often, in fact, the
+| people who administer the software aren't liable, either --- when
+| credit card data are stolen from an e-commerce site, for example.
+| Knowing about a vulnerability before anyone else might save a web-site
+| administrator some time, and it might save the software vendor some
+| negative PR, but it can net the thief thousands of dollars.
+| 
+| I think the highest bidders will be those for whom early vulnerability
+| information is most lucrative --- the thieves who can use it to
+| execute the largest heists without getting caught.  Inevitably, that
+| means organized crime syndicates, although the particular gangs who
+| are good at networked theft may not yet exist.
+| 
+| There might be the occasional case where a market leader, such as
+| Microsoft, could make more money by giving their competitors bad PR
+| than a gang could make by theft.  Think of a remote-root hole in
+| Samba, for example.
+| 
+| Right now, people who know how to find security exploits are either
+| motivated by personal interest in the subject, motivated by the public
+| interest, motivated by a desire for individual recognition, or
+| personally know criminals that benefit from their exploits.  Creating
+| a marketplace in secret vulnerability information would vastly
+| increase the availability of that information to the people who can
+| afford to pay the most for it: spies, terrorists, and organized crime.
+| 
+| Let's not let that happen.
+| 
+| 
+| 
+| 
+| This is the original iDEFENSE announcement:
+| 
+| From: Sunil James [mailto:SJames@iDefense.com]
+| Sent: Wednesday, August 07, 2002 12:32 PM
+| Subject: Introducing iDEFENSE's Vulnerability Contributor Program
+| 
+| 
+| Greetings,
+| 
+| iDEFENSE is pleased to announce the official launch of its Vulnerability
+| Contributor Program (VCP). The VCP pays contributors for the advance
+| notification of vulnerabilities, exploit code and malicious code.
+| 
+| iDEFENSE hopes you might consider contributing to the VCP. The following
+| provides answers to some basic questions about the program:
+| 
+| Q. How will it work?
+| A. iDEFENSE understands the majority of security researchers do not publish
+| security research for compensation; rather, it could be for any of a number
+| of motivations, including the following:
+| 
+|          * Pure love of security research
+|          * The desire to protect against harm to targeted networks
+|          * The desire to urge vendors to fix their products
+|          * The publicity that often accompanies disclosure
+| 
+| The VCP is for those who want to have their research made public to the
+| Internet community, but who would also like to be paid for doing the
+| work.The compensation will depend, among other things, on the following
+| items:
+| 
+|          * The kind of information being shared (i.e. vulnerability or exploit)
+|          * The amount of detail and analysis provided
+|          * The potential severity level for the information shared
+|          * The types of applications, operating systems, and other
+|            software and hardware potentially affected
+|          * Verification by iDEFENSE Labs
+|          * The level of exclusivity, if any, for data granted to iDEFENSE
+| 
+| Q. Who should contribute to the VCP?
+| A. The VCP is open to any individual, security research group or other
+| entity.
+| 
+| Q. Why are you launching this program?
+| A. Timeliness remains a key aspect in security intelligence. Contributions
+| to some lists take time before publication to the public at large. More
+| often, many of these services charge clients for access without paying the
+| original contributor. Under the iDEFENSE program, the contributor is
+| compensated, iDEFENSE Labs verifies the issue, and iDEFENSE clients and the
+| public at large are warned in a timely manner.
+| 
+| Q. Who gets the credit?
+| A. The contributor is always credited for discovering the vulnerability or
+| exploit information.
+| 
+| Q. When can I contribute?
+| The VCP is active. You are welcome to begin contributing today.
+| 
+| To learn more, go to http://www.idefense.com/contributor.html. If you have
+| questions or would like to sign up as a contributor to the VCP, please
+| contact us at contributor@idefense.com.
+| 
+| Regards,
+| 
+| Sunil James
+| Technical Analyst
+| iDEFENSE
+| 
+| "iDEFENSE is a global security intelligence company that proactively
+| monitors sources throughout the world -- from technical vulnerabilities and
+| hacker profiling to the global spread of viruses and other malicious code.
+| The iALERT security intelligence service provides decision-makers, frontline
+| security professionals and network administrators with timely access to
+| actionable intelligence and decision support on cyber-related threats.
+| iDEFENSE Labs is the research wing that verifies vulnerabilities, examines
+| the behavior of exploits and other malicious code and discovers new
+| software/hardware weaknesses in a controlled lab environment."
+| 
+| http://xent.com/mailman/listinfo/fork
+| 
+
+-- 
+"It is seldom that liberty of any kind is lost all at once."
+					               -Hume
+
+
+http://xent.com/mailman/listinfo/fork
+

@@ -1,0 +1,132 @@
+From razor-users-admin@lists.sourceforge.net  Thu Oct  3 19:28:43 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 0D45816F03
+	for <jm@localhost>; Thu,  3 Oct 2002 19:28:40 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 03 Oct 2002 19:28:40 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g93HkOK07821 for <jm-razor@jmason.org>; Thu, 3 Oct 2002 18:46:28 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17x9wH-0008HB-00; Thu,
+    03 Oct 2002 10:39:05 -0700
+Received: from 12-236-11-40.client.attbi.com ([12.236.11.40]
+    helo=cynosure.darkridge.com) by usw-sf-list1.sourceforge.net with esmtp
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17x9vX-0007mb-00 for
+    <razor-users@lists.sourceforge.net>; Thu, 03 Oct 2002 10:38:19 -0700
+Received: (from jpr5@localhost) by cynosure.darkridge.com (8.11.6/8.11.5)
+    id g93HcEm05276 for razor-users@lists.sourceforge.net; Thu, 3 Oct 2002
+    10:38:14 -0700
+From: Jordan Ritter <jpr5@darkridge.com>
+To: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] problems with hubris and/or discovery
+Message-Id: <20021003173813.GE2299@darkridge.com>
+References: <016601c26b00$e23f0c70$f2812d40@landshark>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+    protocol="application/pgp-signature";
+    boundary="ey/N+yb7u/X9mFhi"
+Content-Disposition: inline
+In-Reply-To: <016601c26b00$e23f0c70$f2812d40@landshark>
+User-Agent: Mutt/1.4i
+X-Copyright: This e-mail is Copyright (c) 2002 by jpr5@darkridge.com
+X-Spamadvice: Pursuant to US Code; Title 47; Chapter 5; Subchapter II; 227
+    any unsolicited commercial email to this address will be subject to a
+    download and archival fee of US$500.  Pursuant to California Business &
+    Professions Code; S17538.45 any email service provider involved in SPAM
+    activities will be liable for statutory damages of US$50 per message, up
+    to US$25,000 per day.  Pursuant to California Penal Code; S502 any
+    unsolicited email sent to this address is in violation of Federal Law and
+    is subject to fine and/or imprisonment.
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchives/forum.php?forum=razor-users>
+X-Original-Date: Thu, 3 Oct 2002 10:38:13 -0700
+Date: Thu, 3 Oct 2002 10:38:13 -0700
+
+
+--ey/N+yb7u/X9mFhi
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+Folks,
+
+     There have been several major internet outages this morning,
+     across major providers UUNet, Genuity, and god knows who else.
+     Various routes across the Internet backbones have been
+     disappearing, repropagating, and disappearing again.
+
+     This has caused and exacerbated several problems which we are
+     working on correcting right now.  We apologize for the
+     inconvenience..
+
+Best,=20
+
+--jordan
+
+
+
+On Thu, Oct 03, 2002 at 01:18:25PM -0400, Sven Willenberger wrote:
+# trying to report spam [razor chooses hubris] I timeout on the connection
+# (which seems to have gotten slower all morning) and receive the following
+# error message:
+#=20
+# razor-report error: connect4: nextserver: discover1: Error reading socket
+# connect4: nextserver: discover1: Error reading socket
+#=20
+# I then try to run razor-admin -discover and receive the same error .....
+# problems with the servers today? only one discovery server?
+#=20
+# Sven
+#=20
+#=20
+#=20
+# -------------------------------------------------------
+# This sf.net email is sponsored by:ThinkGeek
+# Welcome to geek heaven.
+# http://thinkgeek.com/sf
+# _______________________________________________
+# Razor-users mailing list
+# Razor-users@lists.sourceforge.net
+# https://lists.sourceforge.net/lists/listinfo/razor-users
+
+--ey/N+yb7u/X9mFhi
+Content-Type: application/pgp-signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.2.0 (GNU/Linux)
+
+iD8DBQE9nICFpwQdAVEbU7oRAiw+AJ966WR+zA0g47m0E7SkgCMbivfLkgCeOtGc
+V2cgz8USK1UPYH7YJwh1SyM=
+=dZej
+-----END PGP SIGNATURE-----
+
+--ey/N+yb7u/X9mFhi--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

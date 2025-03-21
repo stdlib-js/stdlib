@@ -1,0 +1,160 @@
+From fork-admin@xent.com  Thu Sep 26 11:04:32 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 90BF116F03
+	for <jm@localhost>; Thu, 26 Sep 2002 11:04:30 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 11:04:30 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8PLFFC14432 for <jm@jmason.org>;
+    Wed, 25 Sep 2002 22:15:15 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id CB1062940E9; Wed, 25 Sep 2002 14:11:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from cats.ucsc.edu (cats-mx2.ucsc.edu [128.114.129.35]) by
+    xent.com (Postfix) with ESMTP id BD72429409A for <fork@xent.com>;
+    Wed, 25 Sep 2002 14:10:49 -0700 (PDT)
+Received: from Tycho (dhcp-55-196.cse.ucsc.edu [128.114.55.196]) by
+    cats.ucsc.edu (8.10.1/8.10.1) with SMTP id g8PHxFT27510 for
+    <fork@xent.com>; Wed, 25 Sep 2002 10:59:15 -0700 (PDT)
+From: "Jim Whitehead" <ejw@cse.ucsc.edu>
+To: <fork@spamassassin.taint.org>
+Subject: RE: CO2 and climate (was RE: Goodbye Global Warming)
+Message-Id: <AMEPKEBLDJJCCDEJHAMIKEDKFIAA.ejw@cse.ucsc.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+In-Reply-To: <1032885762.24435.78.camel@avalon>
+Importance: Normal
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4133.2400
+X-Ucsc-Cats-Mailscanner: Found to be clean
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 25 Sep 2002 10:56:41 -0700
+
+OK, let's bring some data into the discussion:
+http://www.grida.no/climate/vital/02.htm
+(A graph, derived from Vostok ice core samples, of CO2 and temperature
+fluctuations over the past 400k years).
+
+> Recent high-resolution studies of historical CO2 concentrations and
+> temperatures over hundreds of thousands of years have shown a modest
+> correlation between the two. In a number of cases, CO2 level increases
+> are not in phase with temperature increases and actually trail the
+> increase in temperature by a short time i.e. increases in temperature
+> preceded increases in CO2 concentrations. The more studies that are done
+> of the geological record, the more it seems that CO2 concentrations are
+> correlated with temperature increases, but are not significantly
+> causative.
+
+Based on the Vostok data, you are right, there is a very strong correlation
+between temperature and CO2 concentrations, but it doesn't always appear to
+be causal.
+
+> With respect to absolute CO2 concentrations, it is also important to
+> point out that our best data to date suggests that they follow a fairly
+> regular cycle with a period of about 100,000 years.
+
+Also correct -- the peak of each cycle is at about 290-300 ppm CO2.
+
+> As it
+> happens, current CO2 concentrations are within 10% of other previous
+> cyclical concentration peaks for which we have good data.
+
+Not correct. Mauna Loa data <http://www.grida.no/climate/vital/06.htm> and
+<http://cdiac.ornl.gov/ftp/ndp001/maunaloa.co2> show that the current CO2
+concentrations are at 370ppm, 18% *greater* than the *highest* recorded
+value from the past 400k years. Furthermore, CO2 concentrations are growing
+at 15ppm every 10 years, much faster than any recorded increase in the
+Vostok data (though perhaps the Vostok data isn't capable of such fine
+resolution).
+
+> In other words, we may be adding to the CO2 levels,
+
+No, we are *definitely* adding to CO2 levels. Look at the following chart:
+http://www.grida.no/climate/vital/07.htm
+(Shows CO2 concentrations since 1870, the "historical record").
+
+Not only is the CO2 increase over 130 years unprecedented in the Vostok
+record, it is clear that the rate of change is *increasing*, not decreasing.
+There is no other compelling explanation for this increase, except for
+anthropogenic input. You're really out on the fringe if you're debating
+this -- even global warming skeptics generally concede this point.
+
+> but it looks a lot like we
+> would be building a molehill on top of a mountain in the historical
+> record.  At the very least, there is nothing anomalous about current CO2
+> concentrations.
+
+Wrong again. Current CO2 levels are currently unprecedented over the past
+400k years, unless there is some mechanism that allows CO2 levels to quickly
+spike, and then return back to "normal" background levels (and hence the
+spike might not show up in the ice cores).
+
+Still, by around 2075-2100 we will have reached 500 ppm CO2, a level that
+even you would have a hard time arguing away.
+
+> Also, CO2 levels interact with the biosphere in a manner that ultimately
+> affects temperature.  Again, the interaction is not entirely
+> predictable, but this is believed to be one of the regulating negative
+> feedback systems mentioned above.
+
+Yes, clouds and oceans are a big unknown. Still, we know ocean water has a
+finite capacity to store CO2, and if the world temperature doesn't increase,
+but we all have Seattle-like weather all the time, the effects would be
+enormous.
+
+> Last, as greenhouse gases go, CO2 isn't particularly potent, although it
+> makes up for it in volume in some cases.  Gases such as water and
+> methane have a far greater impact as greenhouse gases on a per molecule
+> basis.  Water vapor may actually be the key greenhouse gas, something
+> that CO2 only indirectly effects through its interaction with the
+> biosphere.
+
+Correct.
+
+Data on relative contributions of greenhouse gasses:
+http://www.grida.no/climate/vital/05.htm
+
+Note that methane concentrations now are *much* higher than pre-industrial
+levels (many cows farting, and rice paddies outgassing), and methane is also
+a contributor in the formation of atmospheric water vapor. Another clearly
+anthropogenic increase in a greenhouse gas. I'm in favor of reductions in
+methane levels as well.
+
+Data on water vapor here:
+http://www.agu.org/sci_soc/mockler.html
+
+> CO2 was an easy mark for early environmentalism, but all the recent
+> studies and data I've seen gives me the impression that it is largely a
+> passenger on the climate ride rather than the driver.
+
+I tend to think that holistic, and techical approaches would work best in
+reducing global warming. I favor an energy policy that has a mix of solar,
+wind and nuclear, with all carbon-based combustion using renewable sources
+of C-H bonds. Aggressive pursuit of carbon sink strategies also makes sense
+(burying trees deep underground, for example). Approaches that involve
+reductions in lifestyle to a "sustainable" level are unrealistic --
+Americans just won't do it (you'd be surprised at the number of climate
+change researchers driving SUVs). But, as California showed during last
+year's energy crisis, shifts in patterns of consumption are possible, and
+improved efficiency is an easy sell.
+
+- Jim
+
+

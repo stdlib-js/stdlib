@@ -1,0 +1,13 @@
+
+{{alias}}
+    Maximum safe nth Fibonacci number when stored in double-precision floating-
+    point format.
+
+    Examples
+    --------
+    > {{alias}}
+    78
+
+    See Also
+    --------
+

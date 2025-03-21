@@ -1,0 +1,145 @@
+From irregulars-admin@tb.tf  Thu Sep 19 11:05:24 2002
+Return-Path: <irregulars-admin@tb.tf>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id C15EC16F03
+	for <jm@localhost>; Thu, 19 Sep 2002 11:05:22 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 19 Sep 2002 11:05:22 +0100 (IST)
+Received: from web.tb.tf (route-64-131-126-36.telocity.com
+    [64.131.126.36]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8J2iJC01203 for <jm-irr@jmason.org>; Thu, 19 Sep 2002 03:44:24 +0100
+Received: from web.tb.tf (localhost.localdomain [127.0.0.1]) by web.tb.tf
+    (8.11.6/8.11.6) with ESMTP id g8J2rCI29343; Wed, 18 Sep 2002 22:53:20
+    -0400
+Received: from red.harvee.home (red [192.168.25.1] (may be forged)) by
+    web.tb.tf (8.11.6/8.11.6) with ESMTP id g8J2qXI29333 for
+    <irregulars@tb.tf>; Wed, 18 Sep 2002 22:52:49 -0400
+Received: from hall.mail.mindspring.net (hall.mail.mindspring.net
+    [207.69.200.60]) by red.harvee.home (8.11.6/8.11.6) with ESMTP id
+    g8J2hYD30568 for <irregulars@tb.tf>; Wed, 18 Sep 2002 22:43:37 -0400
+Received: from user-119ac86.biz.mindspring.com ([66.149.49.6]) by
+    hall.mail.mindspring.net with esmtp (Exim 3.33 #1) id 17rrHn-00086k-00;
+    Wed, 18 Sep 2002 22:43:24 -0400
+MIME-Version: 1.0
+X-Sender: rahettinga@pop.earthlink.net
+Message-Id: <p05111a35b9aee996db06@[66.149.49.6]>
+To: dcsb@ai.mit.edu, cryptography@wasabisystems.com, e$@vmeng.com,
+	mac_crypto@vmeng.com,
+	Digital Bearer Settlement List <dbs@philodox.com>, fork@xent.com,
+	irregulars@tb.tf
+From: "R. A. Hettinga" <rah@shipwright.com>
+Content-Type: text/plain; charset="us-ascii"
+Subject: [IRR] [dgc.chat] First public release of NeuDist Distributed
+    Transaction Clearing	Framework
+Sender: irregulars-admin@tb.tf
+Errors-To: irregulars-admin@tb.tf
+X-Beenthere: irregulars@tb.tf
+X-Mailman-Version: 2.0.6
+Precedence: bulk
+List-Help: <mailto:irregulars-request@tb.tf?subject=help>
+List-Post: <mailto:irregulars@tb.tf>
+List-Subscribe: <http://tb.tf/mailman/listinfo/irregulars>,
+    <mailto:irregulars-request@tb.tf?subject=subscribe>
+List-Id: New home of the TBTF Irregulars mailing list <irregulars.tb.tf>
+List-Unsubscribe: <http://tb.tf/mailman/listinfo/irregulars>,
+    <mailto:irregulars-request@tb.tf?subject=unsubscribe>
+List-Archive: <http://tb.tf/mailman/private/irregulars/>
+Date: Wed, 18 Sep 2002 22:42:35 -0400
+
+
+--- begin forwarded text
+
+
+Subject: [dgc.chat] First public release of NeuDist Distributed Transaction
+Clearing	Framework
+From: Pelle Braendgaard <pelle@neubia.com>
+To: dgcchat@lists.goldmoney.com
+Cc: Digital Bearer Settlement List <dbs@philodox.com>, DGCChat
+<dgcchat@lists.goldmoney.com>, xmlx <xml-api@intertrader.com>
+Date: 19 Sep 2002 00:05:39 -0500
+Reply-To: <dgcchat@lists.goldmoney.com>
+
+I'm happy to announce the first public release of NeuDist
+
+NeuDist is an Open Source Software framework for building applications
+for the Neubia Distributed Clearing Platform.
+
+This release contains early java libraries and documentation that would
+primarily be of interest to developers.
+
+Talking about documentation, it is still a bit slim and mainly oriented
+towards people with experience in Java/XML development.
+
+There are currently no sample applications, but they will be available
+in the next release.
+
+The framework currently contains the following:
+- Classes for creating "Named Objects", which are authenticated using
+digital signatures within a hierarchy.
+- Storage framework for "Named Objects".
+- Simple XML-Signature implementation (Almost certainly not yet
+interoperable with other implementations)
+- Simple SOAP client
+- Simple Servlet API for handling SOAP requests based on "Named
+  Objects".
+- Current types of "Named Objects" include:
+    NameSpace objects -- for maintaining the NameSpace Authentication
+ 	Framework
+    AuthenticationTickets -- for doing web site authentication using
+	digital signatures.
+
+
+Next major release is scheduled to contain:
+ - Core:
+	hard coded root public key, for authenticating top level 	NameSpaces
+ - Signing Services:
+	Implementation of web based signing services
+	End user hosted signing service
+ - Example User Authentication Application
+ - Example Payment System based on NeuDist
+
+I will be expanding the documentation over the next few weeks. This will
+cover not only more indepth technical documentation, but also higher
+level documentation about the business side of things.
+
+Read more about NeuDist or download our early version at
+http://neudist.org
+I would love to hear your questions and suggestions. To discuss it
+further please join neudist-discuss@lists.sourceforge.net
+You can join it at:
+http://lists.sourceforge.net/mailman/listinfo/neudist-discuss
+
+
+Regards
+Pelle
+-- 
+Antilles Software Ventures SA 		http://neubia.com/asv
+My Web Log Live and Direct from Panama	http://talk.org
+Views of an EconoFist			http://econofist.com
+
+
+
+subscribe: send blank email to dgcchat-join@lists.goldmoney.com
+unsubscribe: send blank email to dgcchat-leave@lists.goldmoney.com
+digest: send an email to dgcchat-request@lists.goldmoney.com
+with "set yourname@yourdomain.com digest=on" in the message body
+
+--- end forwarded text
+
+
+-- 
+-----------------
+R. A. Hettinga <mailto: rah@ibuc.com>
+The Internet Bearer Underwriting Corporation <http://www.ibuc.com/>
+44 Farquhar Street, Boston, MA 02131 USA
+"... however it may deserve respect for its usefulness and antiquity,
+[predicting the end of the world] has not been found agreeable to
+experience." -- Edward Gibbon, 'Decline and Fall of the Roman Empire'
+_______________________________________________
+Irregulars mailing list
+Irregulars@tb.tf
+http://tb.tf/mailman/listinfo/irregulars
+
+

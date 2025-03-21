@@ -1,0 +1,182 @@
+
+{{alias}}( μ, σ )
+    Returns a pseudorandom number drawn from a lognormal distribution.
+
+    If `μ` or `σ` is `NaN` or `σ <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    μ: number
+        Location parameter.
+
+    σ: number
+        Scale parameter.
+
+    Returns
+    -------
+    r: number
+        Pseudorandom number.
+
+    Examples
+    --------
+    > var r = {{alias}}( 2.0, 5.0 );
+
+
+{{alias}}.factory( [μ, σ, ][options] )
+    Returns a pseudorandom number generator (PRNG) for generating pseudorandom
+    numbers drawn from a lognormal distribution.
+
+    If provided `μ` and `σ`, the returned PRNG returns random variates drawn
+    from the specified distribution.
+
+    If not provided `μ` and `σ`, the returned PRNG requires that both `μ` and
+    `σ` be provided at each invocation.
+
+    Parameters
+    ----------
+    μ: number (optional)
+        Location parameter.
+
+    σ: number (optional)
+        Scale parameter.
+
+    options: Object (optional)
+        Options.
+
+    options.prng: Function (optional)
+        Pseudorandom number generator (PRNG) for generating uniformly
+        distributed pseudorandom numbers on the interval `[0,1)`. If provided,
+        the `state` and `seed` options are ignored. In order to seed the
+        returned pseudorandom number generator, one must seed the provided
+        `prng` (assuming the provided `prng` is seedable).
+
+    options.seed: integer|ArrayLikeObject<integer> (optional)
+        Pseudorandom number generator seed. The seed may be either a positive
+        unsigned 32-bit integer or, for arbitrary length seeds, an array-like
+        object containing unsigned 32-bit integers.
+
+    options.state: Uint32Array (optional)
+        Pseudorandom number generator state. If provided, the `seed` option is
+        ignored.
+
+    options.copy: boolean (optional)
+        Boolean indicating whether to copy a provided pseudorandom number
+        generator state. Setting this option to `false` allows sharing state
+        between two or more pseudorandom number generators. Setting this option
+        to `true` ensures that a returned generator has exclusive control over
+        its internal state. Default: true.
+
+    Returns
+    -------
+    rand: Function
+        Pseudorandom number generator (PRNG).
+
+    Examples
+    --------
+    // Basic usage:
+    > var rand = {{alias}}.factory();
+    > var r = rand( 0.1, 1.5 );
+    > r = rand( 2.0, 3.14 );
+
+    // Provide `μ` and `σ`:
+    > rand = {{alias}}.factory( 0.1, 1.5 );
+    > r = rand();
+    > r = rand();
+
+
+{{alias}}.NAME
+    Generator name.
+
+    Examples
+    --------
+    > var str = {{alias}}.NAME
+    'lognormal'
+
+
+{{alias}}.PRNG
+    Underlying pseudorandom number generator.
+
+    Examples
+    --------
+    > var prng = {{alias}}.PRNG;
+
+
+{{alias}}.seed
+    Pseudorandom number generator seed.
+
+    Examples
+    --------
+    > var seed = {{alias}}.seed;
+
+
+{{alias}}.seedLength
+    Length of generator seed.
+
+    Examples
+    --------
+    > var len = {{alias}}.seedLength;
+
+
+{{alias}}.state
+    Generator state.
+
+    Examples
+    --------
+    > var r = {{alias}}( 2.0, 5.0 )
+    <number>
+    > r = {{alias}}( 2.0, 5.0 )
+    <number>
+    > r = {{alias}}( 2.0, 5.0 )
+    <number>
+
+    // Get a copy of the current state:
+    > var state = {{alias}}.state
+    <Uint32Array>
+
+    > r = {{alias}}( 2.0, 5.0 )
+    <number>
+    > r = {{alias}}( 2.0, 5.0 )
+    <number>
+
+    // Set the state:
+    > {{alias}}.state = state;
+
+    // Replay the last two pseudorandom numbers:
+    > r = {{alias}}( 2.0, 5.0 )
+    <number>
+    > r = {{alias}}( 2.0, 5.0 )
+    <number>
+
+
+{{alias}}.stateLength
+    Length of generator state.
+
+    Examples
+    --------
+    > var len = {{alias}}.stateLength;
+
+
+{{alias}}.byteLength
+    Size (in bytes) of generator state.
+
+    Examples
+    --------
+    > var sz = {{alias}}.byteLength;
+
+
+{{alias}}.toJSON()
+    Serializes the pseudorandom number generator as a JSON object.
+
+    Returns
+    -------
+    out: Object
+        JSON representation.
+
+    Examples
+    --------
+    > var o = {{alias}}.toJSON()
+    { 'type': 'PRNG', 'name': '...', 'state': {...}, 'params': [] }
+
+    See Also
+    --------
+

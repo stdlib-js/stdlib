@@ -1,0 +1,50 @@
+/*
+* @license Apache-2.0
+*
+* Copyright (c) 2019 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+// TypeScript Version: 4.1
+
+type Capitalize<S extends string> = S extends `${infer F}${infer R}` ? `${Uppercase<F>}${R}` : S;
+
+/**
+* Capitalizes the first character in a string.
+*
+* @param str - input string
+* @returns capitalized string
+*
+* @example
+* var out = capitalize( 'last man standing' );
+* // returns 'Last man standing'
+*
+* @example
+* var out = capitalize( 'presidential election' );
+* // returns 'Presidential election'
+*
+* @example
+* var out = capitalize( 'javaScript' );
+* // returns 'JavaScript'
+*
+* @example
+* var out = capitalize( 'Hidden Treasures' );
+* // returns 'Hidden Treasures'
+*/
+declare function capitalize<S extends string>( str: S ): Capitalize<S>;
+
+
+// EXPORTS //
+
+export = capitalize;

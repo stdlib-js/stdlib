@@ -1,0 +1,49 @@
+From fork-admin@xent.com  Fri Sep  6 15:28:04 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 4F35B16F6B
+	for <jm@localhost>; Fri,  6 Sep 2002 15:26:08 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 15:26:08 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g86Ck4C07281 for <jm@jmason.org>;
+    Fri, 6 Sep 2002 13:46:05 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id C255B29429D; Fri,  6 Sep 2002 05:43:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from imo-m10.mx.aol.com (imo-m10.mx.aol.com [64.12.136.165]) by
+    xent.com (Postfix) with ESMTP id 7F28229429C for <fork@xent.com>;
+    Fri,  6 Sep 2002 05:42:08 -0700 (PDT)
+Received: from ThosStew@aol.com by imo-m10.mx.aol.com (mail_out_v34.10.)
+    id 9.ac.2ce1f831 (30950); Fri, 6 Sep 2002 08:44:38 -0400 (EDT)
+From: ThosStew@aol.com
+Message-Id: <ac.2ce1f831.2aa9fd36@aol.com>
+Subject: Re: sprint delivers the next big thing??
+To: hussein@stanfordalumni.org, fork@spamassassin.taint.org
+MIME-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"
+Content-Transfer-Encoding: 7bit
+X-Mailer: AOL 5.0 for Mac sub 45
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 6 Sep 2002 08:44:38 EDT
+
+these are being advertised all over the UK/ Chief come-on seems to be to the 
+same people who use phones for text messaging--i.e. teenagers. "Hi, we're at 
+the beach and I met this awesome guy--here's his pic"
+
+Tom
+
+

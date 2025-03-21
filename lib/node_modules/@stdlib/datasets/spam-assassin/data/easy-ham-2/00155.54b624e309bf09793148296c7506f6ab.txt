@@ -1,0 +1,93 @@
+From ilug-admin@linux.ie  Tue Jul 30 11:02:32 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 97AA3440F0
+	for <jm@localhost>; Tue, 30 Jul 2002 06:02:29 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 30 Jul 2002 11:02:29 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6UA39q19755 for
+    <jm-ilug@jmason.org>; Tue, 30 Jul 2002 11:03:09 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA31039; Tue, 30 Jul 2002 11:01:30 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from fiachra.ucd.ie (fiachra.ucd.ie [137.43.12.82]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id LAA31011 for <ilug@linux.ie>;
+    Tue, 30 Jul 2002 11:01:20 +0100
+Received: from gavin by fiachra.ucd.ie with local (Exim 3.12 #1 (Debian))
+    id 17ZTns-0005En-00 for <ilug@linux.ie>; Tue, 30 Jul 2002 11:00:32 +0100
+Date: Tue, 30 Jul 2002 11:00:32 +0100
+From: Gavin McCullagh <ilug_gmc@fiachra.ucd.ie>
+To: ilug@linux.ie
+Subject: Re: [ILUG] Mutt reply hooks
+Message-Id: <20020730110032.A19970@fiachra.ucd.ie>
+Reply-To: Irish Linux Users Group <ilug@linux.ie>
+Mail-Followup-To: ilug@linux.ie
+References: <20020730112811.A32231@wanadoo.fr>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <20020730112811.A32231@wanadoo.fr>; from dneary@wanadoo.fr on
+    Tue, Jul 30, 2002 at 11:28:11 +0200
+X-Gnupg-Publickey: http://fiachra.ucd.ie/~gavin/public.gpg
+X-Operating-System: Linux 2.4.18 i686
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Hi,
+
+havn't tried this, but looks like what you want.  I use procmail to filter
+different incomgin To/CCs to different folders then use folder hok, but
+this looks closer to what you want.
+
+
+http://www.linuxcare.com/viewpoints/ap-of-the-wk/03-31-00.epl
+
+**************************************************************************
+Some of the mailto links on our web site forward to me. When I reply to
+someone who writes to one of these aliases, I prefer to keep the mail alias
+as the From: address in my reply. For example, when someone sends email to
+coolapps@linuxcare.com to suggest a program for me to review [pardon the
+blatant plug...], it forwards to me. When I hit reply, the From: line in
+the email will contain coolapps@linuxcare.com instead of my main address
+bneely@linuxcare.com. My .muttrc file accomplishes this with two lines:
+
+set alternates = "kbeditor@linuxcare.com|coolapps@linuxcare.com"
+set reverse_name
+
+**************************************************************************
+
+On Tue, 30 Jul 2002, David Neary wrote:
+
+> I have 3 or 4 email addresses (which get used for different
+> reasons), and I'd prefer not to mix them up. So I was wondering
+> if anyone knows of a way that I can have mail (apart from list
+> mail, which I have already sorted) which arrives to a certain
+> e-mail address have the From: header in the reply automatically
+> set to the address it came to.
+> 
+> For example, say I have a company, and sales@company.com,
+> info@company.com and tech@company.com arrive in the same mailbox.
+> I don't want to reply to sales@company.com mails with the From:
+> set to dave@company.com, I would like the mail to come from
+> sales@company.com.
+> 
+> Is there any way to do this? Bearing in mind that mail can arrive
+> with my email in the To or Cc fields (and Bcc?), and it might be
+> buried in a couple of dozen other recipients...
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

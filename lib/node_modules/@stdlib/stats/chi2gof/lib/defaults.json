@@ -1,0 +1,6 @@
+{
+	"alpha": 0.05,
+	"ddof": 0,
+	"simulate": false,
+	"iterations": 500
+}

@@ -1,0 +1,38 @@
+
+{{alias}}()
+    Returns wage rates for U.S. workers that have not changed jobs within the
+    year.
+
+    Each array element has the following fields:
+
+    - date: collection date (month/day/year; e.g., 01/01/1980).
+    - all_workers: wage rates for hourly and non-hourly workers.
+    - hourly_workers: wage rates for hourly workers.
+    - non_hourly_workers: wage rates for non-hourly workers.
+    - less_than_high_school: wage rates for workers with less than a high school
+      education.
+    - high_school: wage rates for workers with a high school education.
+    - some_college: wage rates for workers with some college education.
+    - college: wage rates for workers with a college education.
+    - construction: wage rates for workers in the construction industry.
+    - finance: wage rates for workers in the finance industry.
+    - manufacturing: wage rates for workers in the manufacturing industry.
+
+    Returns
+    -------
+    out: Array<Object>
+        Wage rates.
+
+    Examples
+    --------
+    > var data = {{alias}}()
+    [ {...}, {...}, ... ]
+
+    References
+    ----------
+    - Federal Reserve Bank of San Francisco. 2017. "Wage Rigidity." <http://www.
+    frbsf.org/economic-research/indicators-data/nominal-wage-rigidity/>.
+
+    See Also
+    --------
+

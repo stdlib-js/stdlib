@@ -1,0 +1,31 @@
+
+{{alias}}( x )
+    Computes the cosine of a number minus one.
+
+    This function should be used instead of manually calculating `cos(x)-1` when
+    `x` is near unity.
+
+    Parameters
+    ----------
+    x: number
+        Input value (in radians).
+
+    Returns
+    -------
+    y: number
+        Cosine minus one.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.0 )
+    0.0
+    > y = {{alias}}( {{alias:@stdlib/constants/float64/pi}}/4.0 )
+    ~-0.293
+    > y = {{alias}}( -{{alias:@stdlib/constants/float64/pi}}/6.0 )
+    ~-0.134
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+

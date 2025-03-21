@@ -1,0 +1,123 @@
+From rpm-list-admin@freshrpms.net  Mon Sep  9 18:02:57 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id C95E816EFC
+	for <jm@localhost>; Mon,  9 Sep 2002 18:02:55 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 18:02:55 +0100 (IST)
+Received: from auth02.nl.egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g16EVp803907 for
+    <jm-rpm@jmason.org>; Wed, 6 Feb 2002 14:31:51 GMT
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by
+    auth02.nl.egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g16EV1t02426;
+    Wed, 6 Feb 2002 15:31:01 +0100
+Received: from porsta.cs.Helsinki.FI (root@porsta.cs.Helsinki.FI
+    [128.214.48.124]) by auth02.nl.egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g16EUat02413 for <rpm-list@freshrpms.net>; Wed, 6 Feb 2002 15:30:36 +0100
+Received: from melkki.cs.Helsinki.FI (sslwrap@localhost [127.0.0.1]) by
+    porsta.cs.Helsinki.FI (8.11.6/8.11.6) with ESMTP id g16EURp22133 for
+    <rpm-list@freshrpms.net>; Wed, 6 Feb 2002 16:30:37 +0200
+Received: (from hhaataja@localhost) by melkki.cs.Helsinki.FI
+    (8.11.6/8.11.2) id g16EUJJ22714 for rpm-list@freshrpms.net; Wed,
+    6 Feb 2002 16:30:19 +0200
+From: Harri Haataja <harri.haataja@cs.Helsinki.FI>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: Apt problems
+Message-Id: <20020206163018.C17717@cs.helsinki.fi>
+References: <20020206162953.C10950@pihlaja.kotilo>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-md5;
+    protocol="application/pgp-signature";
+    boundary="bg08WKrSYDhXBjb5"
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <20020206162953.C10950@pihlaja.kotilo>; from pisara@iki.fi on
+    Wed, Feb 06, 2002 at 04:29:53PM +0200
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Wed, 6 Feb 2002 16:30:18 +0200
+Date: Wed, 6 Feb 2002 16:30:18 +0200
+
+
+--bg08WKrSYDhXBjb5
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+On Wed, Feb 06, 2002 at 04:29:53PM +0200, Peter Peltonen wrote:
+> Two issues:
+>=20
+> --<snip>--
+> Sorry, but the following packages have unmet dependencies:
+>   openssh: Depends: openssl (=3D 0.9.5a) but 0.9.6b-8 is installed
+>   php-pgsql: Depends: postgresql but it is not installed
+>              Depends: libpq.so.2
+> E: Unmet dependencies. Try using -f.
+> --</snip>--
+>=20
+> 1. I have the following openssl packages installed:
+>=20
+> --<snip>--
+> openssl-perl-0.9.6b-8
+> openssl-0.9.6b-8
+> openssl095a-0.9.5a-11
+> openssl-devel-0.9.6b-8
+> --</snip>--
+>=20
+> The openssl095a package should provide the openssl-0.9.5a compatibility=
+=20
+> but apt doesn't think so?=20
+
+I believe that's just a matter of string parsing. If someone were to fix
+the openssh package, removing the explicit Requires:, I believe the
+automagic binary handler would figure the right libraries to use and
+install. I haven't met an openssh like that and in worst case I've had 3
+different openssl libraries (WTF can't they just bump a major version if
+it's incompatible?!?).
+
+> 2. I have postgresql installed from the source. So that's why I need=20
+> php-pgsql. Is there a way to tell apt about packages I don't want it to=
+=20
+> complain about?
+
+I have a few such things (with jdk, imlib, kernel DRI version..
+something) and Ive just made dummy packages (with verbose warning
+attached ;) that explicitly provide those capabilities. (or claim to,
+that is).
+
+--=20
+If you only want to go 500 miles, can you begin with a halfstep?
+
+--bg08WKrSYDhXBjb5
+Content-Type: application/pgp-signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE8YT35QF8Oi9XNck4RAuNpAJ90B0EUZ7Lkqpr+KYzWPRi+i4DcWACdHQd5
+Tb0GZvVivaW1rOzqP/Su9Gc=
+=h7Ff
+-----END PGP SIGNATURE-----
+
+--bg08WKrSYDhXBjb5--
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

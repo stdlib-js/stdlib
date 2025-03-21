@@ -1,0 +1,71 @@
+From rpm-list-admin@freshrpms.net  Tue Jul 30 16:08:00 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 1D7F0440F1
+	for <jm@localhost>; Tue, 30 Jul 2002 11:07:56 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 30 Jul 2002 16:07:56 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6UF87q01475 for
+    <jm-rpm@jmason.org>; Tue, 30 Jul 2002 16:08:08 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6UF03823764; Tue, 30 Jul 2002 17:00:03
+    +0200
+Received: from mail.addix.net (kahless.addix.net [195.179.139.19]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g6UExF823562 for
+    <rpm-list@freshrpms.net>; Tue, 30 Jul 2002 16:59:15 +0200
+Received: from wolf359 (cic.ision-kiel.de [195.179.139.139]) by
+    mail.addix.net (8.9.3/8.9.3) with SMTP id QAA16476 for
+    <rpm-list@freshrpms.net>; Tue, 30 Jul 2002 16:59:04 +0200
+From: Ralf Ertzinger <ralf@camperquake.de>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: building as non-root / newbie question
+Message-Id: <20020730170021.4ee67dc2.ralf@camperquake.de>
+In-Reply-To: <20020730142853.32654.qmail@linuxmail.org>
+References: <20020730142853.32654.qmail@linuxmail.org>
+Organization: [NDC] ;-)
+X-Mailer: Sylpheed version 0.8.1 (GTK+ 1.2.10; i386-redhat-linux)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Tue, 30 Jul 2002 17:00:21 +0200
+Date: Tue, 30 Jul 2002 17:00:21 +0200
+
+Hi.
+
+"Kevin Worthington" <kworthington@linuxmail.org> wrote:
+
+> into /home/dude/redhat etc. by running
+> #rpm -ivh foo.src.rpm
+
+Do this:
+echo "%_topdir /home/dude/redhat" >> /home/dude/.rpmmacros
+
+and make sure the directory structure (RPMS, SOURCES, SPECS, SRPMS, BUILD)
+is there.
+
+-- 
+R!
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

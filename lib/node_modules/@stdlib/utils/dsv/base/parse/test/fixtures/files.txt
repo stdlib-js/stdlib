@@ -1,0 +1,35 @@
+# Files
+
+## Public Data Sources
+
+-   `ssi_state_eligibility_2010.crlf.csv`
+
+	-   **Description**: The Supplemental Security Income (SSI) Recipients by Geographic Area, Sex and Eligibility (December 2010) is produced using the data found in Table 10 from the SSI Annual Statistical Report of 2010. This file contains the number of SSI recipients by state, sex, and eligibility category.
+	-   **URL**: <https://catalog.data.gov/dataset/supplemental-security-income-ssi-recipients-by-geographic-area-sex-and-eligibility-decembe>
+	-   **Access**: Public
+	-   **License**: Creative Commons CC0
+	-   **Accessed**: 2022/08/29
+
+-   `fy_2020_pension_recipients_by_state.csv`
+
+	-	**Description**: This report provides state-level estimates of the number of Veterans who received VA Pension benefits during fiscal year 2020. It includes the Veterans’ gender. Blank values represent small cell counts that have been suppressed to protect the identity of Veterans. Some categories may not sum to the total due to missing information (e.g., gender, etc.).
+	-   **URL**: <https://catalog.data.gov/dataset/fy-2020-pension-recipients-by-state>
+	-   **Access**: Public
+	-   **License**: Creative Commons CC0
+	-   **Accessed**: 2022/08/29
+
+-   `public_school_characteristics_2017-18.csv`
+
+	-	**Description**: The National Center for Education Statistics' (NCES) Education Demographic and Geographic Estimate (EDGE) program develops annually updated point locations (latitude and longitude) for public elementary and secondary schools included in the NCES Common Core of Data (CCD).The NCES EDGE program collaborates with the U.S. Census Bureau's Education Demographic, Geographic, and Economic Statistics (EDGE) Branch to develop point locations for schools reported in the annual CCD directory file. The CCD program annually collects administrative and fiscal data about all public schools, school districts, and state education agencies in the United States. The data are supplied by state education agency officials and include basic directory and contact information for schools and school districts, as well as characteristics about student demographics, number of teachers, school grade span, and various other administrative conditions. CCD school and agency point locations are derived from reported information about the physical location of schools and agency administrative offices. The point locations and administrative attributes in this data layer were developed from the 2017-2018 CCD collection.
+	-   **URL**: <https://catalog.data.gov/dataset/public-school-characteristics-2017-18-c16cf>
+	-   **Access**: Public
+	-   **License**: Public Domain
+	-   **Accessed**: 2022/08/29
+
+-   `veterans_affairs_geographic_distribution_of_expenditures_fy08_by_congressional_district.csv`
+
+	-	**Description**: The Geographic Distribution of VA Expenditures (GDX) is an annual report that shows estimated VA expenditures for major programmatic areas by geographic area (state, county, and congressional district). The major programmatic areas are: Compensation and Pension; Readjustment (Education) and Vocational Rehabilitation; Insurance; Construction; and, Medical and Administrative.
+	-   **URL**: <https://catalog.data.gov/dataset/veterans-affairs-geographic-distribution-of-expenditures-fy08-by-congressional-district>
+	-   **Access**: Public
+	-   **License**: Creative Commons CC0
+	-   **Accessed**: 2022/08/29

@@ -1,0 +1,160 @@
+From exmh-workers-admin@redhat.com  Thu Aug 22 18:17:16 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3936F43F9B
+	for <jm@localhost>; Thu, 22 Aug 2002 13:17:16 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 22 Aug 2002 18:17:16 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7MHCFZ16258 for
+    <jm-exmh@jmason.org>; Thu, 22 Aug 2002 18:12:15 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 98CA240F20; Thu, 22 Aug 2002
+    13:08:54 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 163BD3F5C4
+    for <exmh-workers@listman.redhat.com>; Thu, 22 Aug 2002 12:55:20 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g7MGtHh14426 for exmh-workers@listman.redhat.com; Thu, 22 Aug 2002
+    12:55:17 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g7MGtGY14422 for
+    <exmh-workers@redhat.com>; Thu, 22 Aug 2002 12:55:16 -0400
+Received: from milou.dyndns.org (h189n1fls22o974.telia.com
+    [213.64.79.189]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id
+    g7MGekl27238 for <exmh-workers@redhat.com>; Thu, 22 Aug 2002 12:40:46
+    -0400
+Received: by milou.dyndns.org (Postfix, from userid 500) id 1F95B3F24;
+    Thu, 22 Aug 2002 18:55:08 +0200 (CEST)
+Received: from tippex.localdomain (localhost [127.0.0.1]) by
+    milou.dyndns.org (Postfix) with ESMTP id F3AA03F23; Thu, 22 Aug 2002
+    18:55:08 +0200 (CEST)
+X-Mailer: exmh version 2.5_20020822 01/15/2001 with nmh-1.0.4
+To: Chris Garrigues <cwg-dated-1030460376.49ef5a@DeepEddy.Com>
+Cc: exmh-workers@spamassassin.taint.org
+Subject: Re: CVS report
+In-Reply-To: Message from Chris Garrigues
+    <cwg-dated-1030460376.49ef5a@DeepEddy.Com> of
+    "Thu, 22 Aug 2002 09:59:35 CDT."
+    <1030028377.4901.TMDA@deepeddy.vircio.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+From: Anders Eriksson <aeriksson@fastmail.fm>
+Message-Id: <20020822165508.1F95B3F24@milou.dyndns.org>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Thu, 22 Aug 2002 18:55:03 +0200
+
+
+
+
+> > > > Just cvs up'ed and nowadays Catch-up Unseen is __extremely__ slow on 
+> > > > large (>100 msgs) unseen sequences. Anybody else having this problem?
+> > > 
+> > > I'll take the blame.
+> > > 
+> > > The reason, I suspect, is that we're needlessly reading the .sequences file 
+> > > multiple times because of other sequences.  I need to make the code much 
+> > > smarter about handling that file, but first I have a few other fish to fry in 
+> > > my rather large patch that's on it's way.
+> > > 
+> > 
+> > No panic,
+> > 
+> > I'm all for cleaning things up before getting it optimized.
+> 
+> Okay, this fix is now checked in.
+> 
+I'm afraid it didn't help. It still seems to be slower than ~1 month 
+ago. Maybe slightly faster than yeasterday. I'm (still) seeing an 
+"unseen countdown" in the log.
+
+18:51:25 Writing /home/ander/Mail/lists/l-k/.mh_sequences
+18:51:25 lists/l-k has 57 msgs in unseen
+18:51:25 lists/l-k has 56 msgs in unseen
+18:51:25 lists/l-k has 55 msgs in unseen
+18:51:26 lists/l-k has 54 msgs in unseen
+18:51:26 lists/l-k has 53 msgs in unseen
+18:51:26 lists/l-k has 52 msgs in unseen
+18:51:26 lists/l-k has 51 msgs in unseen
+18:51:26 lists/l-k has 50 msgs in unseen
+18:51:26 lists/l-k has 49 msgs in unseen
+18:51:26 lists/l-k has 48 msgs in unseen
+18:51:26 lists/l-k has 47 msgs in unseen
+18:51:26 lists/l-k has 46 msgs in unseen
+18:51:26 lists/l-k has 45 msgs in unseen
+18:51:27 lists/l-k has 44 msgs in unseen
+18:51:27 lists/l-k has 43 msgs in unseen
+18:51:27 lists/l-k has 42 msgs in unseen
+18:51:27 lists/l-k has 41 msgs in unseen
+18:51:27 lists/l-k has 40 msgs in unseen
+18:51:27 lists/l-k has 39 msgs in unseen
+18:51:27 lists/l-k has 38 msgs in unseen
+18:51:27 lists/l-k has 37 msgs in unseen
+18:51:27 lists/l-k has 36 msgs in unseen
+18:51:28 lists/l-k has 35 msgs in unseen
+18:51:28 lists/l-k has 34 msgs in unseen
+18:51:28 lists/l-k has 33 msgs in unseen
+18:51:28 lists/l-k has 32 msgs in unseen
+18:51:28 lists/l-k has 31 msgs in unseen
+18:51:28 lists/l-k has 30 msgs in unseen
+18:51:28 lists/l-k has 29 msgs in unseen
+18:51:28 lists/l-k has 28 msgs in unseen
+18:51:28 lists/l-k has 27 msgs in unseen
+18:51:28 lists/l-k has 26 msgs in unseen
+18:51:29 lists/l-k has 25 msgs in unseen
+18:51:29 lists/l-k has 24 msgs in unseen
+18:51:29 lists/l-k has 23 msgs in unseen
+18:51:29 lists/l-k has 22 msgs in unseen
+18:51:29 lists/l-k has 21 msgs in unseen
+18:51:29 lists/l-k has 20 msgs in unseen
+18:51:29 lists/l-k has 19 msgs in unseen
+18:51:29 lists/l-k has 18 msgs in unseen
+18:51:29 lists/l-k has 17 msgs in unseen
+18:51:29 lists/l-k has 16 msgs in unseen
+18:51:30 lists/l-k has 15 msgs in unseen
+18:51:30 lists/l-k has 14 msgs in unseen
+18:51:30 lists/l-k has 13 msgs in unseen
+18:51:30 lists/l-k has 12 msgs in unseen
+18:51:30 lists/l-k has 11 msgs in unseen
+18:51:30 lists/l-k has 10 msgs in unseen
+18:51:30 lists/l-k has 9 msgs in unseen
+18:51:30 digits changed
+18:51:30 lists/l-k has 8 msgs in unseen
+18:51:30 lists/l-k has 7 msgs in unseen
+18:51:31 lists/l-k has 6 msgs in unseen
+18:51:31 lists/l-k has 5 msgs in unseen
+18:51:31 lists/l-k has 4 msgs in unseen
+18:51:31 lists/l-k has 3 msgs in unseen
+18:51:31 lists/l-k has 2 msgs in unseen
+18:51:31 lists/l-k has 1 msgs in unseen
+18:51:31 lists/l-k has 0 msgs in unseen
+18:51:31 FlistUnseenFolder lists/l-k
+18:51:31 ok
+18:51:47 Folder_Change lists/exmh {Msg_Show cur}
+
+
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+

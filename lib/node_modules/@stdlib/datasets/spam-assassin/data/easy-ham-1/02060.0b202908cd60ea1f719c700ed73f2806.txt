@@ -1,0 +1,50 @@
+From rssfeeds@jmason.org  Mon Sep 30 13:43:40 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 039DF16F17
+	for <jm@localhost>; Mon, 30 Sep 2002 13:43:40 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 30 Sep 2002 13:43:40 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8U80Xg21183 for
+    <jm@jmason.org>; Mon, 30 Sep 2002 09:00:33 +0100
+Message-Id: <200209300800.g8U80Xg21183@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: boingboing <rssfeeds@spamassassin.taint.org>
+Subject: My talk at UT Austin
+Date: Mon, 30 Sep 2002 08:00:33 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://boingboing.net/#85505995
+Date: Not supplied
+
+I've been in Austin all weekend. On Friday, I spoke at the University of Texas 
+about EFF issues. Jon Lebkowsky was there -- hell, he organized it -- and he 
+blogged the hell out of the talk: 
+
+    Entertainment industry has tradition of attacking technology: the piano 
+    roll, the radio (sued by vaudeville), television (would destroy cinema!), 
+    "the Betamax affair"... the latter being the first consumer VCR. In Betamax 
+    case, argued that the ability to make a full copy of a broadcast work would 
+    not be a fair use (in terms of copyright). It was illegal enough that the 
+    VCR should be kept off the market, they argued. The Supreme Court got the 
+    case, and the thing that shook out of it was the Betamax principle: a 
+    technology is legal so long as it has substantial non-infringeing uses. 
+    This principle is under attack. 
+
+    Digital Millennium Copyright Act, 1998. Illegal to defeat a copyright 
+    measure. Regionalization system for DVDs. This is a control that limits 
+    distribution. John Johansen in Norway figured out how to break the content 
+    scrambling system and allows you to move from one region to another, 
+    override copy protection. It was called DeCSS - Johansen is facing trial 
+    for creating a piece of code.  
+
+Link[1] (Wes blogged it, too[2]) Discuss[3]
+
+[1] http://www.weblogsky.com/2002_09_01_blarchive.html#85500802
+[2] http://wmf.editthispage.com/2002/09/27
+[3] http://www.quicktopic.com/boing/H/4rEePy7RSm38x
+
+

@@ -1,0 +1,77 @@
+From razor-users-admin@lists.sourceforge.net  Wed Oct  9 15:09:25 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 2A6ED16F18
+	for <jm@localhost>; Wed,  9 Oct 2002 15:08:57 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 09 Oct 2002 15:08:57 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g99DSAK03914 for <jm-razor@jmason.org>; Wed, 9 Oct 2002 14:28:11 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17zGi0-0007gK-00; Wed,
+    09 Oct 2002 06:17:04 -0700
+Received: from [207.106.111.252] (helo=digby.pffcu.org) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17zGh9-0005LD-00 for <razor-users@lists.sourceforge.net>; Wed,
+    09 Oct 2002 06:16:11 -0700
+Received: from tasker.pffcu.org ([200.1.1.57]) by digby.pffcu.org with
+    SMTP (Microsoft Exchange Internet Mail Service Version 5.5.2653.13) id
+    4GL6DPAK; Wed, 9 Oct 2002 09:16:10 -0400
+Received: from localhost (sc@localhost) by tasker.pffcu.org
+    (8.11.4/8.11.4) with ESMTP id g99DF4904395 for
+    <razor-users@lists.sourceforge.net>; Wed, 9 Oct 2002 09:15:04 -0400
+X-Authentication-Warning: tasker.pffcu.org: sc owned process doing -bs
+From: Samuel Checker <sc@pffcu.org>
+To: <razor-users@example.sourceforge.net>
+Message-Id: <Pine.LNX.4.33.0210090900200.4389-100000@tasker.pffcu.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Subject: [Razor-users] Razor and Pine
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchives/forum.php?forum=razor-users>
+X-Original-Date: Wed, 9 Oct 2002 09:15:03 -0400 (EDT)
+Date: Wed, 9 Oct 2002 09:15:03 -0400 (EDT)
+
+I've been testing Razor, invoked from sendmail/procmail and so far it
+seems pretty copacetic. Last night's spam to the list provided a good test
+- the spam itself as well as several of the responses were flagged, as
+other list members reported.
+
+This morning I piped the messages out from pine, being careful to use the
+RAW mode, to razor-check -d. None of the messages come back as spam, even
+the spam. Since folks revoked the false positives, I understand why they
+would not come up, but not the spam itself, unless that also was revoked.
+
+Is this spam just a bad one to test against, or is there some setting in
+pine or razor that I am missing?
+
+-- 
+sc
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

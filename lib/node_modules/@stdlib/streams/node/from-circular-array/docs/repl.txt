@@ -1,0 +1,163 @@
+
+{{alias}}( src[, options] )
+    Creates a readable stream from an array-like object which repeatedly
+    iterates over the provided value's elements.
+
+    In object mode, `null` is a reserved value. If an array contains `null`
+    values (e.g., as a means to encode missing values), the stream will
+    prematurely end. Consider an alternative encoding or filter `null` values
+    prior to invocation.
+
+    In binary mode, if an array contains `undefined` values, the stream will
+    emit an error. Consider providing a custom serialization function or
+    filtering `undefined` values prior to invocation.
+
+    If a serialization function fails to return a string or Buffer, the stream
+    emits an error.
+
+    Parameters
+    ----------
+    src: ArrayLikeObject
+        Source value.
+
+    options: Object (optional)
+        Options.
+
+    options.objectMode: boolean (optional)
+        Specifies whether a stream should operate in "objectMode". Default:
+        false.
+
+    options.encoding: string|null (optional)
+        Specifies how Buffer objects should be decoded to strings. Default:
+        null.
+
+    options.highWaterMark: integer (optional)
+        Specifies the maximum number of bytes to store in an internal buffer
+        before pausing the stream.
+
+    options.sep: string (optional)
+        Separator used to join streamed data. This option is only applicable
+        when a stream is not in "objectMode". Default: '\n'.
+
+    options.serialize: Function (optional)
+        Serialization function. The default behavior is to serialize streamed
+        values as JSON strings. This option is only applicable when a stream is
+        not in "objectMode".
+
+    options.iter: integer (optional)
+        Number of iterations. Default: 1e308.
+
+    options.dir: integer (optional)
+        Iteration direction. If set to `-1`, a stream iterates over elements
+        from right-to-left. Default: 1.
+
+    Returns
+    -------
+    stream: ReadableStream
+        Readable stream.
+
+    Examples
+    --------
+    > function fcn( chunk ) { console.log( chunk.toString() ); };
+    > var opts = { 'iter': 15 };
+    > var s = {{alias}}( [ 1, 2, 3 ], opts );
+    > var o = {{alias:@stdlib/streams/node/inspect-sink}}( fcn );
+    > s.pipe( o );
+
+
+{{alias}}.factory( [options] )
+    Returns a function for creating readable streams from array-like objects
+    which repeatedly iterate over the elements of provided values.
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Options.
+
+    options.objectMode: boolean (optional)
+        Specifies whether a stream should operate in "objectMode". Default:
+        false.
+
+    options.encoding: string|null (optional)
+        Specifies how Buffer objects should be decoded to strings. Default:
+        null.
+
+    options.highWaterMark: integer (optional)
+        Specifies the maximum number of bytes to store in an internal buffer
+        before pausing streaming.
+
+    options.sep: string (optional)
+        Separator used to join streamed data. This option is only applicable
+        when a stream is not in "objectMode". Default: '\n'.
+
+    options.serialize: Function (optional)
+        Serialization function. The default behavior is to serialize streamed
+        values as JSON strings. This option is only applicable when a stream is
+        not in "objectMode".
+
+    options.iter: integer (optional)
+        Number of iterations. Default: 1e308.
+
+    options.dir: integer (optional)
+        Iteration direction. If set to `-1`, a stream iterates over elements
+        from right-to-left. Default: 1.
+
+    Returns
+    -------
+    fcn: Function
+        Function for creating readable streams.
+
+    Examples
+    --------
+    > var opts = { 'objectMode': true, 'highWaterMark': 64 };
+    > var createStream = {{alias}}.factory( opts );
+
+
+{{alias}}.objectMode( src[, options] )
+    Returns an "objectMode" readable stream from an array-like object which
+    repeatedly iterates over a provided value's elements.
+
+    In object mode, `null` is a reserved value. If an array contains `null`
+    values (e.g., as a means to encode missing values), the stream will
+    prematurely end. Consider an alternative encoding or filter `null` values
+    prior to invocation.
+
+    Parameters
+    ----------
+    src: ArrayLikeObject
+        Source value.
+
+    options: Object (optional)
+        Options.
+
+    options.encoding: string|null (optional)
+        Specifies how Buffer objects should be decoded to strings. Default:
+        null.
+
+    options.highWaterMark: integer (optional)
+        Specifies the maximum number of objects to store in an internal buffer
+        before pausing streaming.
+
+    options.iter: integer (optional)
+        Number of iterations. Default: 1e308.
+
+    options.dir: integer (optional)
+        Iteration direction. If set to `-1`, a stream iterates over elements
+        from right-to-left. Default: 1.
+
+    Returns
+    -------
+    stream: ReadableStream
+        Readable stream operating in "objectMode".
+
+    Examples
+    --------
+    > function fcn( v ) { console.log( v ); };
+    > var opts = { 'iter': 15 };
+    > var s = {{alias}}.objectMode( [ 1, 2, 3 ], opts );
+    > var o = {{alias:@stdlib/streams/node/inspect-sink}}.objectMode( fcn );
+    > s.pipe( o );
+
+    See Also
+    --------
+

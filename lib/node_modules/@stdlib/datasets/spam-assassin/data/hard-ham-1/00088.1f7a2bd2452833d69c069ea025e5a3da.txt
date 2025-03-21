@@ -1,0 +1,223 @@
+Return-Path: <update@list.theregister.co.uk>
+Received: from list.theregister.co.uk (theregister-sql2.hosted.netline.net.uk [213.40.196.63])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6H2gWJ12561
+	for <qqqqqqqqqq-reg@spamassassin.taint.org>; Wed, 17 Jul 2002 03:42:33 +0100
+Received: from localhost ([127.0.0.1] helo=list.theregister.co.uk)
+	by list.theregister.co.uk with smtp (Exim 3.31 #1)
+	id 17UeB2-0008WG-0J
+	for <qqqqqqqqqq-reg@spamassassin.taint.org>; Wed, 17 Jul 2002 03:04:28 +0100
+Date: Wed, 17 Jul 2002 03:00:01 +0100
+From: update@list.theregister.co.uk
+Subject: Reg Headlines Wednesday July 17
+To: Reg Subscribers <update@list.theregister.co.uk>
+Precedence: list
+X-Bulkmail: 2.05
+Message-Id: <E17UeB2-0008WG-0J@list.theregister.co.uk>
+
+Today's Headlines from The Register
+-----------------------------------
+
+    To unsubscribe from this daily news update, see the instructions at
+    the end of this message.
+
+
+  --------ADVERTISEMENT------------------------------------------------
+
+  WIN tickets to a FORMULA ONE EUROPEAN GRAND PRIX!
+
+  Neverfail Group plc, business continuity software expert, sponsors Rubens
+  Barrichello driver of the Ferrari F1 team. Click here to find out more and
+  win tickets: www.neverfailgroup.com/f1theregister.html.
+
+  For every new customer that buys Neverfail(tm) products between the
+  July-September 2002 Grand Prix season, Neverfail Group plc will grant 2
+  tickets to a Grand Prix hospitality event with us next 2003 season.
+
+  ---------------------------------------------------------------------
+Software
+
+    Ballmer 'fesses up to Linux/Windows cost FUD
+    Just can't keep that myth alive
+        http://www.theregister.co.uk/content/4/26230.html
+
+    Microsoft backs Web services security standard
+    Security Assertion Markup Language
+        http://www.theregister.co.uk/content/4/26211.html
+
+    Liberty Alliance unveils secure sign-on specs
+    Authentic
+        http://www.theregister.co.uk/content/4/26210.html
+
+    Peru mulls Free Software, Gates gives $550k to Peru Prez
+    Funny old life...
+        http://www.theregister.co.uk/content/4/26207.html
+
+    Unisys takes high and middle roads with new ES7000s
+    Twin product streams
+        http://www.theregister.co.uk/content/4/26205.html
+
+    Microsoft lifts veil on Corona media platform
+    Ooh, you tease
+        http://www.theregister.co.uk/content/4/26204.html
+
+    MS to ship Media Center 'special edition' of XP in Q4
+    It's that remote control unit called Freestyle really...
+        http://www.theregister.co.uk/content/4/26201.html
+
+Enterprise Systems
+
+    Soft landing for firms caught in Web host fallout?
+    Silver lining
+        http://www.theregister.co.uk/content/53/26220.html
+
+    IBM sends Shark into feeding frenzy
+    Storage price wars
+        http://www.theregister.co.uk/content/53/26212.html
+
+    HP pulls plug on enterprise software lines
+    No Net Action
+        http://www.theregister.co.uk/content/53/26209.html
+
+Personal Hardware
+
+    PC makers to start taking the Tablets
+    Mira Image
+        http://www.theregister.co.uk/content/54/26222.html
+
+Semiconductors
+
+    Nvidia intros nForce 2 
+    The chipset formerly known as Crush 18
+        http://www.theregister.co.uk/content/3/26216.html
+
+    Fears emerge over Intel job cuts 
+    Fab 17 for the chop?
+        http://www.theregister.co.uk/content/3/26214.html
+
+Internet
+
+    HP suspends 100+UK staff in email porn probe
+    ExclusiveFiring squad
+
+        http://www.theregister.co.uk/content/6/26227.html
+
+    We don't need no stinking ID cards
+    Privacy International FAQ
+        http://www.theregister.co.uk/content/6/26224.html
+
+    Govt unveils plans for eDemocracy
+    Just 'elastoplast for a sickly politics'
+        http://www.theregister.co.uk/content/6/26221.html
+
+    MPEG 4 is go (licence fees capped)
+    Apple dances Quicktime 6 gig
+        http://www.theregister.co.uk/content/6/26219.html
+
+    UK2.net suffers outage
+    Like an 'alien abduction'
+        http://www.theregister.co.uk/content/6/26218.html
+
+    TFI wants suspended ISP service 'to be sorted'
+    The Free Internet liquidation has 'no bearing'
+        http://www.theregister.co.uk/content/6/26208.html
+
+    Yahoo! censors portal, kisses Beijing's ass
+    Mmmm, good!
+        http://www.theregister.co.uk/content/6/26203.html
+
+Net Security
+
+    Snouts in the honeypot
+    Get your Digital Ant Farm here. Only $50K
+        http://www.theregister.co.uk/content/55/26229.html
+
+    US Congress approves life terms for crackers
+    Bill aims to turn ISPs into snitches
+        http://www.theregister.co.uk/content/55/26217.html
+
+    Gweeds gets killed
+    Letters Too easy by half
+
+        http://www.theregister.co.uk/content/55/26202.html
+
+    O2 security bubble pricked
+    Lame coding error gives up u/n, pw
+        http://www.theregister.co.uk/content/55/26200.html
+
+Anti-Virus News
+
+    Frethem worm poses as Password file
+    More shenanigans
+        http://www.theregister.co.uk/content/56/26225.html
+
+Business
+
+    Ballmer 'fesses up to Linux/Windows cost FUD
+    Just can't keep that myth alive
+        http://www.theregister.co.uk/content/7/26230.html
+
+    Banks seal Energis takeover 
+    Norman conquest
+
+        http://www.theregister.co.uk/content/7/26215.html
+
+    NAI sweetens McAfee.com bid 
+    A spoonful of sugar makes the poison pill go down
+        http://www.theregister.co.uk/content/7/26206.html
+
+e-business
+
+    Microsoft backs Web services security standard
+    Security Assertion Markup Language
+        http://www.theregister.co.uk/content/23/26211.html
+
+    Liberty Alliance unveils secure sign-on specs
+    Authentic
+        http://www.theregister.co.uk/content/23/26210.html
+
+The Mac Channel
+
+    MPEG 4 is go (licence fees capped)
+    Apple dances Quicktime 6 gig
+        http://www.theregister.co.uk/content/39/26219.html
+
+Channel Flannel
+
+    Sun UK resellers under email siege
+    And told to stay away from France
+        http://www.theregister.co.uk/content/51/26226.html
+
+Site News
+
+    Reg Hackerettes - The jury delivers its verdict
+    You spoke, we listened
+        http://www.theregister.co.uk/content/31/26213.html
+
+
+  --------ADVERTISEMENT------------------------------------------------
+
+  WIN tickets to a FORMULA ONE EUROPEAN GRAND PRIX!
+
+  Neverfail Group plc, business continuity software expert, sponsors Rubens
+  Barrichello driver of the Ferrari F1 team. Click here to find out more and
+  win tickets: www.neverfailgroup.com/f1theregister.html.
+
+  For every new customer that buys Neverfail(tm) products between the
+  July-September 2002 Grand Prix season, Neverfail Group plc will grant 2
+  tickets to a Grand Prix hospitality event with us next 2003 season.
+
+  ---------------------------------------------------------------------
+The Register and its contents are copyright 2002 Situation Publishing.
+All rights reserved.
+
+    Tel:     +44 (0)20 7499 2264.
+    Fax:     +44 (0)20 7493 5922.
+    E-Mail:  press.releases@theregister.co.uk
+
+To unsubscribe from these daily updates, visit the following URL.  Make
+sure that you enter exactly the same e-mail address as you used to join
+this service.
+
+    http://list.theregister.co.uk/cgi-bin/unsub.cgi
+
+

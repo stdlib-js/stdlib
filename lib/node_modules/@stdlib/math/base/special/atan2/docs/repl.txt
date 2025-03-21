@@ -1,0 +1,40 @@
+
+{{alias}}( y, x )
+    Computes the angle in the plane (in radians) between the positive x-axis and
+    the ray from (0,0) to the point (x,y).
+
+    Parameters
+    ----------
+    y: number
+        Coordinate along y-axis.
+
+    x: number
+        Coordinate along x-axis.
+
+    Returns
+    -------
+    out: number
+        Angle (in radians).
+
+    Examples
+    --------
+    > var v = {{alias}}( 2.0, 2.0 )
+    ~0.785
+    > v = {{alias}}( 6.0, 2.0 )
+    ~1.249
+    > v = {{alias}}( -1.0, -1.0 )
+    ~-2.356
+    > v = {{alias}}( 3.0, 0.0 )
+    ~1.571
+    > v = {{alias}}( -2.0, 0.0 )
+    ~-1.571
+    > v = {{alias}}( 0.0, 0.0 )
+    0.0
+    > v = {{alias}}( 3.0, NaN )
+    NaN
+    > v = {{alias}}( NaN, 2.0 )
+    NaN
+
+    See Also
+    --------
+

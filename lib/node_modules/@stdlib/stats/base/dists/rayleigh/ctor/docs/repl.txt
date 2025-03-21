@@ -1,0 +1,98 @@
+
+{{alias}}( [σ] )
+    Returns a Rayleigh distribution object.
+
+    Parameters
+    ----------
+    σ: number (optional)
+        Scale parameter. Must be greater than `0`. Default: `1.0`.
+
+    Returns
+    -------
+    rayleigh: Object
+        Distribution instance.
+
+    rayleigh.sigma: number
+        Scale parameter. If set, the value must be greater than `0`.
+
+    rayleigh.entropy: number
+        Read-only property which returns the differential entropy.
+
+    rayleigh.kurtosis: number
+        Read-only property which returns the excess kurtosis.
+
+    rayleigh.mean: number
+        Read-only property which returns the expected value.
+
+    rayleigh.median: number
+        Read-only property which returns the median.
+
+    rayleigh.mode: number
+        Read-only property which returns the mode.
+
+    rayleigh.skewness: number
+        Read-only property which returns the skewness.
+
+    rayleigh.stdev: number
+        Read-only property which returns the standard deviation.
+
+    rayleigh.variance: number
+        Read-only property which returns the variance.
+
+    rayleigh.cdf: Function
+        Evaluates the cumulative distribution function (CDF).
+
+    rayleigh.logcdf: Function
+        Evaluates the natural logarithm of the cumulative distribution function
+        (CDF).
+
+    rayleigh.logpdf: Function
+        Evaluates the natural logarithm of the probability density function
+        (PDF).
+
+    rayleigh.mgf: Function
+        Evaluates the moment-generating function (MGF).
+
+    rayleigh.pdf: Function
+        Evaluates the probability density function (PDF).
+
+    rayleigh.quantile: Function
+        Evaluates the quantile function at probability `p`.
+
+    Examples
+    --------
+    > var rayleigh = {{alias}}( 6.0 );
+    > rayleigh.sigma
+    6.0
+    > rayleigh.entropy
+    ~2.734
+    > rayleigh.kurtosis
+    ~0.245
+    > rayleigh.mean
+    ~7.52
+    > rayleigh.median
+    ~7.064
+    > rayleigh.mode
+    6.0
+    > rayleigh.skewness
+    ~0.631
+    > rayleigh.stdev
+    ~3.931
+    > rayleigh.variance
+    ~15.451
+    > rayleigh.cdf( 1.0 )
+    ~0.014
+    > rayleigh.logcdf( 1.0 )
+    ~-4.284
+    > rayleigh.logpdf( 1.5 )
+    ~-3.209
+    > rayleigh.mgf( -0.5 )
+    ~-0.91
+    > rayleigh.pdf( 1.5 )
+    ~0.04
+    > rayleigh.quantile( 0.5 )
+    ~7.064
+
+    See Also
+    --------
+

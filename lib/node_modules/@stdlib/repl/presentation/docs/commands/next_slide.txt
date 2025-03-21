@@ -1,0 +1,12 @@
+
+nextSlide()
+    Moves the presentation to the next slide.
+
+    Examples
+    --------
+    > nextSlide();
+
+    See Also
+    --------
+    first, jumpTo, last, next, prev, prevSlide
+

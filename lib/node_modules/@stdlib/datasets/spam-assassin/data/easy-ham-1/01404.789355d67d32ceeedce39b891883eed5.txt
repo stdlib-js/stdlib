@@ -1,0 +1,77 @@
+From razor-users-admin@lists.sourceforge.net  Mon Aug 26 15:16:16 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3DB0844162
+	for <jm@localhost>; Mon, 26 Aug 2002 10:14:50 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 15:14:50 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7NIwMZ04380 for <jm-razor@jmason.org>; Fri, 23 Aug 2002 19:58:22 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17iJVU-0000TE-00; Fri,
+    23 Aug 2002 11:50:04 -0700
+Received: from mta01-svc.ntlworld.com ([62.253.162.41]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17iJUa-0004mT-00 for <razor-users@lists.sourceforge.net>; Fri,
+    23 Aug 2002 11:49:08 -0700
+Received: from jblaptop.voidstar.com ([62.255.184.173]) by
+    mta01-svc.ntlworld.com (InterMail vM.4.01.03.27 201-229-121-127-20010626)
+    with ESMTP id
+    <20020823184905.BGWT25423.mta01-svc.ntlworld.com@jblaptop.voidstar.com>
+    for <razor-users@lists.sourceforge.net>; Fri, 23 Aug 2002 19:49:05 +0100
+Message-Id: <Vk$KpqAZNoZ9EAV1@jblaptop.voidstar.com>
+To: razor-users@example.sourceforge.net
+From: Julian Bond <julian_bond@voidstar.com>
+Subject: Re: [Razor-users] Razor with sendmail
+References: <C106BE84A6B5D411883300508B55B83A01558FD2@tmwsystems.com>
+In-Reply-To: <C106BE84A6B5D411883300508B55B83A01558FD2@tmwsystems.com>
+MIME-Version: 1.0
+Content-Type: text/plain;charset=us-ascii;format=flowed
+User-Agent: Turnpike/6.02-U (<NihPaT1eq7QPEjqHWIMIZRyCL3>)
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Fri, 23 Aug 2002 19:47:53 +0100
+Date: Fri, 23 Aug 2002 19:47:53 +0100
+
+"Bort, Paul" <pbort@tmwsystems.com> wrote:
+>If your sendmail has been compiled with Milter support, you can add SMRazor
+>easily. We've been using it for a while without problems. Others on the list
+>have mentioned it as well.
+>
+>http://www.sapros.com/smrazor/
+
+Is there an easy way to tell if Milter is compiled in?
+
+-- 
+Julian Bond Email&MSM: julian.bond@voidstar.com
+Webmaster:              http://www.ecademy.com/
+Personal WebLog:       http://www.voidstar.com/
+CV/Resume:          http://www.voidstar.com/cv/
+M: +44 (0)77 5907 2173   T: +44 (0)192 0412 433
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+

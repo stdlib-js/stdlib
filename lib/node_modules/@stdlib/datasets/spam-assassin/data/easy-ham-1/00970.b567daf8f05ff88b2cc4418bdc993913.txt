@@ -1,0 +1,106 @@
+From exmh-users-admin@redhat.com  Mon Sep  2 13:12:40 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 20DEC4416D
+	for <jm@localhost>; Mon,  2 Sep 2002 07:38:28 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 02 Sep 2002 12:38:28 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g81K1WZ02392 for
+    <jm-exmh@jmason.org>; Sun, 1 Sep 2002 21:01:35 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 3607E3FCDB; Sun,  1 Sep 2002
+    16:01:34 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 131FF3EA2C
+    for <exmh-users@listman.redhat.com>; Sun,  1 Sep 2002 15:56:56 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g81JuqY32303 for exmh-users@listman.redhat.com; Sun, 1 Sep 2002
+    15:56:52 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g81JupY32299 for
+    <exmh-users@redhat.com>; Sun, 1 Sep 2002 15:56:51 -0400
+Received: from orion.dwf.com (bgp01360964bgs.sandia01.nm.comcast.net
+    [68.35.68.128]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id
+    g81JfLl20760 for <exmh-users@redhat.com>; Sun, 1 Sep 2002 15:41:21 -0400
+Received: from orion.dwf.com (localhost.dwf.com [127.0.0.1]) by
+    orion.dwf.com (8.12.1/8.12.1) with ESMTP id g81Ju7SO002623; Sun,
+    1 Sep 2002 13:56:07 -0600
+Received: from orion.dwf.com (reg@localhost) by orion.dwf.com
+    (8.12.1/8.12.1/Submit) with ESMTP id g81Ju6TE002619; Sun, 1 Sep 2002
+    13:56:06 -0600
+Message-Id: <200209011956.g81Ju6TE002619@orion.dwf.com>
+X-Mailer: exmh version 2.5 07/25/2002 with nmh-1.0.4
+To: exmh-users@spamassassin.taint.org, Ingo Frommholz <ingo@frommholz.org>
+Cc: reg@orion.dwf.com
+Subject: Re: ARRRGHHH Had GPG working, now it doesnt.
+In-Reply-To: Message from Ingo Frommholz <ingo@frommholz.org> of
+    "Sun, 01 Sep 2002 16:14:11 +0200."
+    <200209011414.g81EEBP05889@eva.local>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+From: Reg Clemens <reg@dwf.com>
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Sun, 01 Sep 2002 13:56:06 -0600
+
+> Hi,
+> 
+> On Sun, 01 Sep 2002 00:05:03 MDT Reg Clemens wrote: 
+>   
+> [...]
+> > in messages with GnuPG signatures.  But punching the line ALWAYS
+> > gives
+> > 
+> >         Signature made Thu Aug 29 00:27:17 2002 MDT using DSA key ID BDDF997A
+> >         Can't check signature: public key not found
+> > 
+> > So, something else is missing.
+> 
+> Yes, the public key of the signature you want to check :-).
+> 
+> Are you really sure that you have the public key of the message's
+> signature? If not, try downloading it or try to check a signature from
+> which you know you have the public key.
+> 
+> 
+> 
+
+Ah, sorry for not making that clearer.
+But no.
+Previously (v1.0.6 of GnuPG) there would be a slight pause at this point while
+it went out to get the public key from a keyserver.
+Now, whether I have the key or NOT, I get the failure message.
+
+Its as if it cant find gpg to execute it (but I fixed that path), so there
+must be something else that I am missing...
+
+
+-- 
+                                        Reg.Clemens
+                                        reg@dwf.com
+
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+

@@ -1,0 +1,86 @@
+From social-admin@linux.ie  Wed Aug  7 09:58:39 2002
+Return-Path: <social-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 678B5440CD
+	for <jm@localhost>; Wed,  7 Aug 2002 04:58:36 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 07 Aug 2002 09:58:36 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g778x5k18569 for
+    <jm+ilug-social@jmason.org>; Wed, 7 Aug 2002 09:59:05 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA12600; Wed, 7 Aug 2002 09:57:23 +0100
+Received: from mel-rto6.wanadoo.fr (smtp-out-6.wanadoo.fr [193.252.19.25])
+    by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id JAA12560 for
+    <social@linux.ie>; Wed, 7 Aug 2002 09:57:14 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host smtp-out-6.wanadoo.fr
+    [193.252.19.25] claimed to be mel-rto6.wanadoo.fr
+Received: from mel-rta10.wanadoo.fr (193.252.19.193) by
+    mel-rto6.wanadoo.fr (6.5.007) id 3D49FD9700212EB3 for social@linux.ie;
+    Wed, 7 Aug 2002 10:56:43 +0200
+Received: from bolsh.wanadoo.fr (80.8.210.91) by mel-rta10.wanadoo.fr
+    (6.5.007) id 3D49FFDD00206547 for social@linux.ie; Wed, 7 Aug 2002
+    10:56:43 +0200
+Received: from dave by bolsh.wanadoo.fr with local (Exim 3.32 #1 (Debian))
+    id 17cMh8-00045W-00 for <social@linux.ie>; Wed, 07 Aug 2002 11:01:30 +0200
+Date: Wed, 7 Aug 2002 11:01:30 +0200
+From: David Neary <bolsh@gimp.org>
+To: social@linux.ie
+Subject: Re: [ILUG-Social] Online Bookstores
+Message-Id: <20020807110130.A15637@wanadoo.fr>
+References: <20020806162122.B604@barge.tcd.ie>
+    <20020807074822.GA25190@skynet.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-15
+Content-Disposition: inline
+In-Reply-To: <20020807074822.GA25190@skynet.ie>
+User-Agent: Mutt/1.3.23i
+Sender: social-admin@linux.ie
+Errors-To: social-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group social events <social.linux.ie>
+X-Beenthere: social@linux.ie
+
+Caolan McNamara wrote:
+> On Tue, Aug 06, 2002 at 04:21:22 +0100, David O'Callaghan wrote:
+> > 
+> > Hello,
+> > 
+> > What are your recommendations for buying books (technical and
+> > otherwise) online, from Irish or European sellers. Is there 
+> > anywhere that has as good a selection as, say, Amazon but
+> > deals in Euro?
+> 
+> amazon.de and amazon.fr ? :-)
+
+Having recently checked out both of these, for a selection of
+books, the exact same basket of books cost more in both .de and
+.fr (taking delivery charges, VAT et al into account) than buying
+the same thing in amazon.co.uk
+
+The books I used to check were 
+1) C unleashed (Heathfield et al)
+2) Design Patterns (Gamma et al)
+3) Computer Graphics, principles and practice (Foley et al)
+
+I was hugely surprised that amazon.co.uk worked out cheapest - by
+a considerable margin, too - something like 12 euros after
+freight was taken into account.
+
+Cheers,
+Dave.
+
+-- 
+       David Neary,
+    Marseille, France
+  E-Mail: bolsh@gimp.org
+
+-- 
+Irish Linux Users' Group Social Events: social@linux.ie
+http://www.linux.ie/mailman/listinfo/social for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

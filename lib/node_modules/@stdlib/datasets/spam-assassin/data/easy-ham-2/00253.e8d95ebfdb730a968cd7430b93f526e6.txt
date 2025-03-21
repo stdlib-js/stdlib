@@ -1,0 +1,65 @@
+From ilug-admin@linux.ie  Tue Aug  6 11:53:34 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E293C441E9
+	for <jm@localhost>; Tue,  6 Aug 2002 06:48:22 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:48:22 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g74CGQv27599 for
+    <jm-ilug@jmason.org>; Sun, 4 Aug 2002 13:16:26 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA20040; Sun, 4 Aug 2002 13:14:31 +0100
+Received: from netsoc.ucd.ie (orca.ucd.ie [137.43.4.16]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with SMTP id NAA20004 for <ilug@linux.ie>;
+    Sun, 4 Aug 2002 13:14:25 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host orca.ucd.ie [137.43.4.16]
+    claimed to be netsoc.ucd.ie
+Received: (qmail 92728 invoked by uid 515); 4 Aug 2002 12:14:27 -0000
+Date: Sun, 4 Aug 2002 13:14:27 +0100
+From: Albert White <albertw@netsoc.ucd.ie>
+To: ilug@linux.ie
+Message-Id: <20020804121426.GA92548@orca.ucd.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.4i
+Subject: [ILUG] 3c509 & 2.4.19 problems
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Hi folks,
+
+I decided to upgrade the kernel on a machine at home from 2.2.18pre21 to the latest from kernel.org which is 2.4.19.
+
+However I have encountered one problem, my network card now dosent work, well kind of dosent work...
+
+Instead of one eth0 on IRQ 10 I now get:
+Aug  4 11:31:51 mira kernel: eth0: 3c5x9 at 0x220, 10baseT port, address  00 10 5a 3e 0e 48, IRQ 5.
+Aug  4 11:31:51 mira kernel: 3c509.c:1.18 12Mar2001 becker@scyld.com
+Aug  4 11:31:51 mira kernel: http://www.scyld.com/network/3c509.html
+Aug  4 11:31:51 mira kernel: eth1: 3c5x9 at 0x300, 10baseT port, address  00 10 5a be 0e 48, IRQ 10.
+Aug  4 11:31:51 mira kernel: 3c509.c:1.18 12Mar2001 becker@scyld.com
+Aug  4 11:31:51 mira kernel: http://www.scyld.com/network/3c509.html
+
+This results in the interface(s) coming up but while packets can go out they can not come in.
+
+I've tried not loading the 3c509 mdule on bootup and then `modload 3c509 IRQ=10` bit it still gets loaded as above, on IRQ 5 and 10. On 2.2 it loads to IRQ 10.
+
+Anyone got any suggestions on what to do here? Its a debian 3.0 distro. This works fine when booted to 2.2 so the hardware/BIOS etc seem ok, so it seems to be 2.4 spacific. Have I missed some kernel setting?
+
+Cheers,
+~Al
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

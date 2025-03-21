@@ -1,0 +1,50 @@
+From iiu-admin@taint.org  Thu Aug  1 17:03:20 2002
+Return-Path: <iiu-admin@taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 62A46440F0
+	for <jm@localhost>; Thu,  1 Aug 2002 12:03:20 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 01 Aug 2002 17:03:20 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g71G11220021 for
+    <jm-list-admin-iiu@jmason.org>; Thu, 1 Aug 2002 17:01:01 +0100
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g71G01219915 for
+    <iiu-admin@iiu.taint.org>; Thu, 1 Aug 2002 17:00:01 +0100
+Date: Thu, 01 Aug 2002 17:00:01 +0100
+Message-Id: <20020801160001.19909.90792.Mailman@dogma.slashnull.org>
+Subject: 1 IIU admin request(s) waiting
+From: iiu-admin@taint.org
+To: iiu-admin@taint.org
+X-Ack: no
+X-Beenthere: iiu@iiu.taint.org
+X-Mailman-Version: 2.0.10
+Precedence: bulk
+Sender: iiu-owner@taint.org
+Errors-To: iiu-owner@taint.org
+X-Beenthere: iiu@iiu.taint.org
+List-Unsubscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=unsubscribe>
+List-Id: Irish Internet Users <iiu.iiu.taint.org>
+List-Post: <mailto:iiu@iiu.taint.org>
+List-Help: <mailto:iiu-request@iiu.taint.org?subject=help>
+List-Subscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=subscribe>
+List-Archive: <http://iiu.taint.org/pipermail/iiu/>
+
+The IIU@iiu.taint.org mailing list has 1 request(s) waiting for your
+consideration at:
+
+	http://iiu.taint.org/mailman/admindb/iiu
+	
+Please attend to this at your earliest convenience.  This notice of
+pending requests, if any, will be sent out daily.
+
+
+Pending posts:
+     From: emailharvest@email.com on Wed Jul 31 17:08:17 2002
+    Cause: Post by non-member to a members-only list
+
+

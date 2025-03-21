@@ -1,0 +1,41 @@
+{
+  "name": "stdlib-datasets-stopwords-en",
+  "version": "",
+  "title": "English Stopwords",
+  "description": "A list of English stop words.",
+  "resources": [
+    {
+      "name": "stopwords-en-json",
+      "title": "English Stopwords",
+      "description": "A list of English stop words.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/words.json"
+    },
+    {
+      "name": "stopwords-en-txt",
+      "title": "English Stopwords",
+      "description": "A list of English stop words.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/words.txt"
+    }
+  ],
+  "sources": [],
+  "keywords": [
+    "list",
+    "stopwords",
+    "words",
+    "redundant",
+    "lexicon",
+    "nlp",
+    "language",
+    "english",
+    "en"
+  ],
+  "license": "CC0 AND PDDL-1.0"
+}

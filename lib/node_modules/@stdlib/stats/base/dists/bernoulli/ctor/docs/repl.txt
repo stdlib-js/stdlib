@@ -1,0 +1,81 @@
+
+{{alias}}( [p] )
+    Returns a Bernoulli distribution object.
+
+    Parameters
+    ----------
+    p: number (optional)
+        Success probability. Must be between `0` and `1`. Default: `0.5`.
+
+    Returns
+    -------
+    bernoulli: Object
+        Distribution instance.
+
+    bernoulli.p: number
+        Success probability. If set, the value must be between `0` and `1`.
+
+    bernoulli.entropy: number
+        Read-only property which returns the differential entropy.
+
+    bernoulli.kurtosis: number
+        Read-only property which returns the excess kurtosis.
+
+    bernoulli.mean: number
+        Read-only property which returns the expected value.
+
+    bernoulli.median: number
+        Read-only property which returns the median.
+
+    bernoulli.skewness: number
+        Read-only property which returns the skewness.
+
+    bernoulli.stdev: number
+        Read-only property which returns the standard deviation.
+
+    bernoulli.variance: number
+        Read-only property which returns the variance.
+
+    bernoulli.cdf: Function
+        Evaluates the cumulative distribution function (CDF).
+
+    bernoulli.mgf: Function
+        Evaluates the moment-generating function (MGF).
+
+    bernoulli.pmf: Function
+        Evaluates the probability mass function (PMF).
+
+    bernoulli.quantile: Function
+        Evaluates the quantile function at probability `p`.
+
+    Examples
+    --------
+    > var bernoulli = {{alias}}( 0.6 );
+    > bernoulli.p
+    0.6
+    > bernoulli.entropy
+    ~0.673
+    > bernoulli.kurtosis
+    ~-1.833
+    > bernoulli.mean
+    0.6
+    > bernoulli.median
+    1.0
+    > bernoulli.skewness
+    ~-0.408
+    > bernoulli.stdev
+    ~0.49
+    > bernoulli.variance
+    ~0.24
+    > bernoulli.cdf( 0.5 )
+    0.4
+    > bernoulli.mgf( 3.0 )
+    ~12.451
+    > bernoulli.pmf( 0.0 )
+    0.4
+    > bernoulli.quantile( 0.7 )
+    1.0
+
+    See Also
+    --------
+

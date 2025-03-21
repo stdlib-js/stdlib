@@ -1,0 +1,37 @@
+From rssfeeds@jmason.org  Mon Dec  2 11:20:34 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id ED43D16F16
+	for <jm@localhost>; Mon,  2 Dec 2002 11:18:11 +0000 (GMT)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 02 Dec 2002 11:18:12 +0000 (GMT)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id gB290E820147 for
+    <jm@jmason.org>; Mon, 2 Dec 2002 09:00:14 GMT
+Message-Id: <200212020900.gB290E820147@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: diveintomark <rssfeeds@spamassassin.taint.org>
+Subject: Fly free
+Date: Mon, 02 Dec 2002 09:00:14 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: 1983@http://diveintomark.org/
+Date: 2002-12-01T15:39:49-05:00
+
+Upon arriving safely in Raleigh, our stewardess sang us this, to the tune of 
+Barney's I Love You, You Love Me: 
+
+    We love you,
+    You love us,
+    We're much faster
+    Than the bus. 
+
+    We hope you've enjoyed our
+    hos-pi-tal-i-ty,
+    Marry one of us
+    And you'll fly free. 
+
+
+

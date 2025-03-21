@@ -1,0 +1,200 @@
+From exmh-users-admin@redhat.com  Mon Sep 30 10:45:20 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 8801916F03
+	for <jm@localhost>; Mon, 30 Sep 2002 10:45:19 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 30 Sep 2002 10:45:19 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8RCk1g09597 for
+    <jm-exmh@jmason.org>; Fri, 27 Sep 2002 13:46:05 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id DA41F3F80A; Fri, 27 Sep 2002
+    08:46:25 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 15C2C3FC41
+    for <exmh-users@listman.redhat.com>; Fri, 27 Sep 2002 08:44:02 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g8RCi1218084 for exmh-users@listman.redhat.com; Fri, 27 Sep 2002
+    08:44:01 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g8RCi1f18071 for
+    <exmh-users@redhat.com>; Fri, 27 Sep 2002 08:44:01 -0400
+Received: from cft.snafu.priv.at (outerworld.snafu.priv.at
+    [193.80.224.65]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id
+    g8RCPji32603 for <exmh-users@redhat.com>; Fri, 27 Sep 2002 08:25:46 -0400
+Received: from cft.snafu.priv.at (localhost [127.0.0.1]) by
+    cft.snafu.priv.at (8.12.3/8.12.3/Debian -4) with ESMTP id g8RCheOA016820
+    (version=TLSv1/SSLv3 cipher=EDH-RSA-DES-CBC3-SHA bits=168 verify=OK);
+    Fri, 27 Sep 2002 14:43:41 +0200
+Received: (from az@localhost) by cft.snafu.priv.at (8.12.3/8.12.3/Debian
+    -4) id g8RCgfWq015740; Fri, 27 Sep 2002 14:42:41 +0200
+Message-Id: <200209271242.g8RCgfWq015740@cft.snafu.priv.at>
+To: exmh-users@spamassassin.taint.org
+Subject: exmh and pgp: support for external passphrase cache (+patch)
+From: Alexander Zangerl <az@snafu.priv.at>
+Cc: welch@panasas.com
+MIME-Version: 1.0
+Content-Type: multipart/signed;
+    boundary="----------=_1033130560-1199-5";
+    micalg="pgp-sha1";
+    protocol="application/pgp-signature"
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Fri, 27 Sep 2002 14:42:27 +0200
+
+This is a multi-part message in MIME format.
+It has been signed conforming to RFC3156.
+You'll need GPG or PGP to check the signature.
+
+------------=_1033130560-1199-5
+Content-Type: multipart/mixed;
+ boundary="Multipart_Fri_Sep_27_14:42:27_2002-1"
+Content-Transfer-Encoding: 8bit
+
+--Multipart_Fri_Sep_27_14:42:27_2002-1
+Content-Type: text/plain; charset=US-ASCII
+
+i'm a very happy user of exmh, but i'm paranoid also :-)
+therefore i'm not too happy with exmh caching my pgp passphrases.
+
+usually i use a relatively secure tool called 'quintuple agent' 
+<URL:http://www.vibe.at/tools/secret-agent/> to store my passphrases,
+and i've just added the few lines of code to exmh which allow for such
+external caches.
+
+the patch is attached, it is against version 2.5-1 (debian), and the
+files modified are extrasInit.tcl and pgpExec.tcl.
+
+i've added three new preferences in the 'general pgp' section, which
+allow everybody to use his/her favourite external tool to get the
+passphrase (everything which spits out the phrase on stdout is ok).
+
+i'd be happy if somebody with cvs access thinks that this stuff 
+is worth to be added and does so; apart from that i'm happy for 
+suggestions, comments or critique (mind you, i'm not exactly a special 
+friend of tcl so my code may leave things to be desired...)
+
+regards
+az
+
+
+--Multipart_Fri_Sep_27_14:42:27_2002-1
+Content-Type: text/plain; charset=US-ASCII
+Content-Disposition: attachment; filename="exmh-patch"
+Content-Transfer-Encoding: 8bit
+
+--- /usr/lib/exmh/extrasInit.tcl	Sat Mar  2 17:26:38 2002
++++ ./extrasInit.tcl	Fri Sep 27 14:22:13 2002
+@@ -642,6 +642,18 @@
+     {pgp(passtimeout) pgpPassTimeout 60 {Minutes to cache PGP passphrase}
+ "Exmh will clear its memory of PGP passphrases after
+ this time period, in minutes, has elapsed." }
++{pgp(extpass) pgpExtPass OFF {Use external passphrase cache}
++"If this is enabled, then exmh will use an external program to retrieve 
++your passphrase when needed. pgpKeepPass and pgpPassTimeout will 
++be ignored."}
++{pgp(getextcmd) pgpGetExtCmd {/usr/bin/q-client get %s} {Method to query external passphrase cache}
++"This external program is used to retrieve the passphrase for your key,
++if pgpExtPass is active. The passphrase is expected on stdout.
++The key id is substituted with %s (using format)." }
++{pgp(delextcmd) pgpDelExtCmd {/usr/bin/q-client delete %s} {Method to invalidate external passphrase cache}
++"This external program is used to delete the passphrase for your key
++from the external cache, if pgpExtPass is active. 
++The key id is substituted with %s (using format)." }
+     }
+ 
+     # Make sure we don't inherit a bad pgp(version) from a previous setup
+--- /usr/lib/exmh/pgpExec.tcl	Sat Mar  2 17:26:39 2002
++++ ./pgpExec.tcl	Fri Sep 27 14:19:40 2002
+@@ -647,6 +647,33 @@
+ proc Pgp_GetPass { v key } {
+     global pgp
+ 
++    if {[info exists pgp(extpass)] && [set pgp(extpass)] \
++	    && [info exists pgp(getextcmd)]} {
++	Exmh_Debug "Pgp_GetPass $v $key external"
++	set keyid [lindex $key 0]
++	set cmd [format $pgp(getextcmd) $keyid]
++	while (1) {
++	    Exmh_Debug "running cmd $cmd"
++	    if [ catch {exec sh -c "$cmd"} result ] {
++		Exmh_Debug "error running cmd: $result"
++		Exmh_Status "Error executing external cmd" warn
++		return {}
++	    } else {
++		if {[Pgp_Exec_CheckPassword $v $result $key]} {
++		    return $result
++		} else {
++		    Exmh_Debug "bad passphrase"
++		    if {[info exists pgp(delextcmd)]} {
++			Exmh_Debug "trying to invalidate bad passphrase"
++			if [catch {exec sh -c "[format $pgp(delextcmd) $keyid]"}] {
++			    Exmh_Debug "invalidation failed"
++			    return {}
++			}
++		    }
++		}
++	    }
++	}
++    } else {
+     Exmh_Debug "Pgp_GetPass $v $key"
+ 
+     if {[lsearch -glob [set pgp($v,privatekeys)] "[lindex $key 0]*"] < 0} {
+@@ -695,6 +722,7 @@
+             }
+             return $password
+         }
++	}
+     }
+ }
+ 
+
+--Multipart_Fri_Sep_27_14:42:27_2002-1
+Content-Type: text/plain; charset=US-ASCII
+
+-- 
++ Alexander Zangerl + az@snafu.priv.at + DSA 42BD645D + (RSA 5B586291)
+Kind of like my 404K fund, "wealth not found." -- shrox
+
+--Multipart_Fri_Sep_27_14:42:27_2002-1--
+
+------------=_1033130560-1199-5
+Content-Type: application/pgp-signature; name="signature.ng"
+Content-Disposition: inline; filename="signature.ng"
+Content-Transfer-Encoding: 7bit
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.2.0 (GNU/Linux)
+
+iD8DBQE9lFJBpy/2bEK9ZF0RAq/1AJwLmyZx/zs+FgJkmvcMeL57gewE6ACbBWj0
+OYCcSYWXynxRpVtCbDE1R3A=
+=T+T4
+-----END PGP SIGNATURE-----
+
+------------=_1033130560-1199-5--
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

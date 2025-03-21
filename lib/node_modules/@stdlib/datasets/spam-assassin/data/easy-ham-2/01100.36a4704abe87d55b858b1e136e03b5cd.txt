@@ -1,0 +1,97 @@
+From fork-admin@xent.com  Tue Aug 20 20:52:16 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6D57A43C34
+	for <jm@localhost>; Tue, 20 Aug 2002 15:52:16 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 20:52:16 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7KJsNZ22053 for <jm@jmason.org>;
+    Tue, 20 Aug 2002 20:54:23 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 8566329414C; Tue, 20 Aug 2002 12:52:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from granger.mail.mindspring.net (granger.mail.mindspring.net
+    [207.69.200.148]) by xent.com (Postfix) with ESMTP id E06E0294099 for
+    <fork@xent.com>; Tue, 20 Aug 2002 12:52:00 -0700 (PDT)
+Received: from user-119ac86.biz.mindspring.com ([66.149.49.6]) by
+    granger.mail.mindspring.net with esmtp (Exim 3.33 #1) id 17hF4F-0005M6-00;
+    Tue, 20 Aug 2002 15:53:31 -0400
+MIME-Version: 1.0
+X-Sender: rahettinga@pop.earthlink.net
+Message-Id: <p05111a4ab9884dcb6c27@[66.149.49.6]>
+To: Digital Bearer Settlement List <dbs@philodox.com>,
+	dcsb@ai.mit.edu, fork@xent.com, irregulars@tb.tf,
+	nettime-l@bbs.thing.net
+From: "R. A. Hettinga" <rah@shipwright.com>
+Subject: IWT Bans RIAA From Accessing Its Network
+Content-Type: text/plain; charset="us-ascii"
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 20 Aug 2002 15:52:50 -0400
+
+http://www.informationwave.net/news/20020819riaa.php
+
+
+  IWT Bans RIAA From Accessing Its Network
+
+August 19, 2002
+
+Information Wave Technologies has announced it will actively deny the
+Recording Industry Association of America (RIAA) from accessing the
+contents of its network. Earlier this year, the RIAA announced its new plan
+to access computers without owner's consent for the sake of protecting its
+assets. Information Wave believes this policy puts its customers at risk of
+unintentional damage, corporate espionage, and invasion of privacy to say
+the least.
+
+Due to the nature of this matter and RIAA's previous history, we feel the
+RIAA will abuse software vulnerabilities in a client's browser after the
+browser accesses its site, potentially allowing the RIAA to access and/or
+tamper with your data. Starting at midnight on August 19, 2002, Information
+Wave customers will no longer be able to reach the RIAA's web site.
+Information Wave will also actively seek out attempts by the RIAA to thwart
+this policy and apply additional filters to protect our customers' data.
+
+Information Wave will also deploy peer-to-peer clients on the Gnutella
+network from its security research and development network (honeynet) which
+will offer files with popular song titles derived from the Billboard Top
+100 maintained by VNU eMedia. No copyright violations will take place,
+these files will merely have arbitrary sizes similar to the length of a 3
+to 4 minute MP3 audio file encoded at 128kbps. Clients which connect to our
+peer-to-peer clients, and then afterwards attempt to illegally access the
+network will be immediately blacklisted from Information Wave's network.
+The data collected will be actively maintained and distributed from our
+network operations site.
+
+The placement of this policy is not intended to hamper the RIAA's piracy
+elimination agenda or advocate Internet piracy, but to ensure the safety of
+our customers' data attached to our network from hackers or corporate
+espionage hidden by the veil of RIAA copyright enforcement.
+
+If you have questions, comments, or concerns regarding this policy, please
+e-mail riaa@informationwave.net.
+
+
+-- 
+-----------------
+R. A. Hettinga <mailto: rah@ibuc.com>
+The Internet Bearer Underwriting Corporation <http://www.ibuc.com/>
+44 Farquhar Street, Boston, MA 02131 USA
+"... however it may deserve respect for its usefulness and antiquity,
+[predicting the end of the world] has not been found agreeable to
+experience." -- Edward Gibbon, 'Decline and Fall of the Roman Empire'
+http://xent.com/mailman/listinfo/fork
+

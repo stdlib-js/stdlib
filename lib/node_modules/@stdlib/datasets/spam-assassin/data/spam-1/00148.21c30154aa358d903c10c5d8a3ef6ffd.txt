@@ -1,0 +1,70 @@
+From OWNER-NOLIST-SGODAILY*JM**NETNOTEINC*-COM@SMTP1.ADMANMAIL.COM  Thu Aug 29 10:57:20 2002
+Return-Path: <OWNER-NOLIST-SGODAILY*JM**NETNOTEINC*-COM@SMTP1.ADMANMAIL.COM>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.spamassassin.taint.org (Postfix) with ESMTP id 4B44843F9B
+	for <zzzz@localhost>; Thu, 29 Aug 2002 05:57:14 -0400 (EDT)
+Received: from mail.webnote.net [193.120.211.219]
+	by localhost with POP3 (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Thu, 29 Aug 2002 10:57:14 +0100 (IST)
+Received: from TIPSMTP1.ADMANMAIL.COM (TIPSMTP1.ADMANMAIL.COM [209.216.124.212])
+	by webnote.net (8.9.3/8.9.3) with ESMTP id DAA07921
+	for <JM@NETNOTEINC.COM>; Thu, 29 Aug 2002 03:56:31 +0100
+Message-Id: <200208290256.DAA07921@webnote.net>
+Received: from tiputil1 (tiputil1.corp.tiprelease.com) by TIPSMTP1.ADMANMAIL.COM (LSMTP for Windows NT v1.1b) with SMTP id <29.00000053@TIPSMTP1.ADMANMAIL.COM>; Wed, 28 Aug 2002 18:33:29 -0500
+Date: Wed, 28 Aug 2002 17:28:03 -0500
+From: Shannon <greatoffers@sendgreatoffers.com>
+To: JM@NETNOTEINC.COM
+Subject: Your Shipment Status
+X-Info: 134085
+X-Info2: SGO
+Mime-Version: 1.0
+Content-Type: text/html; charset="us-ascii"
+
+<html>
+   <head><title>FREE* cKbe fragrance</title></head>
+      <body>
+<table border="0" cellspacing="19" cellpadding="0" width="550">
+  <tr>
+    <td background="http://admanmail.com/ads/adman/silvercarrot/CKLogoBG.gif"><img src="http://admanmail.com/ads/adman/silvercarrot/thin.gif" width="72"></td>
+    <td>
+<p><h1 align="center"><font size="+2" color="red">Congratulations JM@NETNOTEINC.COM!</font></h1>
+
+<p>Dear JM@NETNOTEINC.COM,<img src="http://admanmail.com/ads/adman/silvercarrot/ckbelogo.jpg" align="right">
+
+<p>You've been selected to receive a bottle of Calvin Klein's® cKbe - <b><font color="red">FREE*</font></b>.
+
+<p><a href="http://theadmanager.com/server/c.asp?ad_key=GEWDVQGNFQVN&ext=1">Click here</a> now for the scent that's great for both men and women.
+
+<p>It's the perfect scent to wear for any occassion. It's light, and just a little citrusy - you'll love it for Summer!  <a href="http://theadmanager.com/server/c.asp?ad_key=GEWDVQGNFQVN&ext=1">Click here</a> now and we'll send this refreshing scent right out to you.
+
+<p>With only a few bottles on hand, I know they won't last long. Guarantee your own good fortune - and <a href="http://theadmanager.com/server/c.asp?ad_key=GEWDVQGNFQVN&ext=1">click here</a> to claim your very own bottle of Calvin Klein's® cKbe.
+
+<p>JM@NETNOTEINC.COM act now and <a href="http://theadmanager.com/server/c.asp?ad_key=GEWDVQGNFQVN&ext=1">click here</a> for a one time only chance!
+
+<p>Sincerely,
+<br><img src="http://admanmail.com/ads/adman/silvercarrot/lori.gif">
+<br>Lori Anderson<br>
+YourFreePresent.com
+
+<p>P.S. Please feel free to forward this great offer to a friend!
+
+<p><font size="2">*All offers are based on 100% customer satisfaction. Yourfreepresent reserves the right to cancel this offer any time once quantities run out. A handling charge of $5.93 will be applied to each item. All merchandise and offers are based on first come first serve. Offer not valid in the state of California.</font>
+</td>
+       </tr>
+</table>
+<img src="http://admanmail.com/server/t.asp?ad_key=GEWDVQGNFQVN" width="1" height="1" hspace="0" vspace="0" border="0" alt="T">
+<hr size="1" noshade>
+<font face="Arial" size="1" color="#000000">
+You are receiving this mailing because you are a
+member of SendGreatOffers.com and subscribed as:JM@NETNOTEINC.COM
+To unsubscribe <a href="http://admanmail.com/subscription.asp?em=JM@NETNOTEINC.COM&l=SGO">
+<font face="arial" size="1" color="#000000">Click Here</a>
+(http://admanmail.com/subscription.asp?em=JM@NETNOTEINC.COM&l=SGO)
+or reply to this email with REMOVE in the subject line - you must
+also include the body of this message to be unsubscribed. Any correspondence about
+the products/services should be directed to
+the company in the ad.
+%EM%JM@NETNOTEINC.COM%/EM%
+<BR></FONT> </body> </html>
+

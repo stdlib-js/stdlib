@@ -1,0 +1,67 @@
+From ilug-admin@linux.ie  Tue Aug 20 11:52:47 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 74AE743C4D
+	for <jm@localhost>; Tue, 20 Aug 2002 06:51:50 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 11:51:50 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7K9cxZ00412 for
+    <jm-ilug@jmason.org>; Tue, 20 Aug 2002 10:38:59 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA25626; Tue, 20 Aug 2002 10:37:51 +0100
+Received: from corvil.com. (k100-159.bas1.dbn.dublin.eircom.net
+    [159.134.100.159]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id KAA25591
+    for <ilug@linux.ie>; Tue, 20 Aug 2002 10:37:44 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host k100-159.bas1.dbn.dublin.eircom.net
+    [159.134.100.159] claimed to be corvil.com.
+Received: from corvil.com (pixelbeat.local.corvil.com [172.18.1.170]) by
+    corvil.com. (8.12.5/8.12.5) with ESMTP id g7K9bfn4000102; Tue,
+    20 Aug 2002 10:37:42 +0100 (IST) (envelope-from padraig.brady@corvil.com)
+Message-Id: <3D620DD3.5010204@corvil.com>
+Date: Tue, 20 Aug 2002 10:37:23 +0100
+From: Padraig Brady <padraig.brady@corvil.com>
+Organization: Corvil Networks
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:0.9.9) Gecko/20020408
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: Vincent Cunniffe <vincent@cunniffe.net>
+Cc: ilug <ilug@linux.ie>
+Subject: Re: [ILUG] linux pthreads problem
+References: <Pine.LNX.4.44.0208192219450.14173-100000@fogarty.jakma.org>
+    <3D620A6A.7040906@cunniffe.net>
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 8bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Vincent Cunniffe wrote:
+> 
+> Possibly. However, the amount of memory in use is stupid :
+> 
+> I start 50 threads, and the memory usage goes up to 411436 VSZ/840 RSS.
+> 
+> Then I stop those threads, and the usage stays there. I start another 50
+> threads, and the usage goes up to 821036 VSZ/1040 RSS. So, it's neither
+> freeing the resources correctly nor reusing them :-/
+> 
+> I've found several other people seeing the same VSZ issue with pthreads,
+> spread over a long time, but no solution as yet.
+
+Err, Is your code fixed now?
+You need a seperate pthread_t per thread.
+
+Pádraig.
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

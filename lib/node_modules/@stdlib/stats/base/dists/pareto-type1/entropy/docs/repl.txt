@@ -1,0 +1,34 @@
+
+{{alias}}( α, β )
+    Returns the differential entropy of a Pareto (Type I) distribution
+    (in nats).
+
+    If `α <= 0` or `β <= 0`, the function returns `NaN`.
+
+    If `α` or `β` is `NaN`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    α: number
+        Shape parameter.
+
+    β: number
+        Scale parameter.
+
+    Returns
+    -------
+    out: number
+        Differential entropy.
+
+    Examples
+    --------
+    > var v = {{alias}}( 0.8, 1.0 )
+    ~2.473
+    > v = {{alias}}( 4.0, 12.0 )
+    ~2.349
+    > v = {{alias}}( 8.0, 2.0 )
+    ~-0.261
+
+    See Also
+    --------
+

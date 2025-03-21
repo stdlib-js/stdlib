@@ -1,0 +1,33 @@
+
+{{alias}}( α, β )
+    Returns the mode of a beta distribution.
+
+    If `α <= 1` or `β <= 1`, the function returns `NaN`.
+
+    If `α` or `β` is `NaN`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    α: number
+        First shape parameter.
+
+    β: number
+        Second shape parameter.
+
+    Returns
+    -------
+    out: number
+        Mode.
+
+    Examples
+    --------
+    > var v = {{alias}}( 4.0, 12.0 )
+    ~0.214
+    > v = {{alias}}( 8.0, 2.0 )
+    ~0.875
+    > v = {{alias}}( 1.0, 1.0 )
+    NaN
+
+    See Also
+    --------
+

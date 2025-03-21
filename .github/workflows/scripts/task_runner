@@ -1,0 +1,404 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2019 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Build script to run continuous integration tasks on [GitHub][1].
+#
+# [1]: https://help.github.com/en/articles/about-github-actions
+
+# shellcheck disable=SC2181
+
+# Ensure that the exit status of pipelines is non-zero in the event that at least one of the commands in a pipeline fails:
+set -o pipefail
+
+
+# VARIABLES #
+
+# Get the name of the build task as the first argument to the build script:
+task="$1"
+
+# Get the path to a log file as the second argument to the build script:
+log_file="$2"
+
+# Define a heartbeat interval to periodically print messages in order to prevent CI from prematurely ending a build due to long running commands:
+heartbeat_interval='30s'
+
+# Declare a variable for storing the heartbeat process id:
+heartbeat_pid=""
+
+
+# FUNCTIONS #
+
+# Error handler.
+#
+# $1 - error status
+on_error() {
+	echo 'ERROR: An error was encountered during execution.' >&2
+	cleanup
+	exit "$1"
+}
+
+# Runs clean-up tasks.
+cleanup() {
+	stop_heartbeat
+}
+
+# Starts a heartbeat.
+#
+# $1 - heartbeat interval
+start_heartbeat() {
+	echo 'Starting heartbeat...' >&2
+
+	# Create a heartbeat and send to background:
+	heartbeat "$1" &
+
+	# Capture the heartbeat pid:
+	heartbeat_pid=$!
+	echo "Heartbeat pid: ${heartbeat_pid}" >&2
+}
+
+# Runs an infinite print loop.
+#
+# $1 - heartbeat interval
+heartbeat() {
+	while true; do
+		echo "$(date) - heartbeat..." >&2;
+		sleep "$1";
+	done
+}
+
+# Stops the heartbeat print loop.
+stop_heartbeat() {
+	echo 'Stopping heartbeat...' >&2
+	kill "${heartbeat_pid}"
+}
+
+# Prints a success message.
+print_success() {
+	echo 'Success!' >&2
+}
+
+# Runs benchmarks.
+#
+# $1 - log file
+benchmark() {
+	echo 'Running benchmarks...' >&2
+	make NODE_FLAGS='--no-deprecation' benchmark >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Benchmarks failed.' >&2
+		echo 'Retry 1 of 1...' >&2
+		sleep 15s
+		echo 'Running benchmarks...' >&2
+		make NODE_FLAGS='--no-deprecation' benchmark >> "$1" 2>&1
+		if [[ "$?" -ne 0 ]]; then
+			echo 'Benchmarks failed.' >&2
+			return 1
+		fi
+	fi
+	echo 'Successfully ran benchmarks.' >&2
+	return 0
+}
+
+# Checks dependencies.
+#
+# $1 - log file
+check_deps() {
+	echo 'Checking dependencies...' >&2
+	make check-deps >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Dependencies are out-of-date.' >&2
+		return 1
+	fi
+	echo 'Dependencies are up-to-date.' >&2
+	return 0
+}
+
+# Checks licenses.
+#
+# $1 - log file
+check_licenses() {
+	echo 'Checking licenses...' >&2
+	make check-licenses-production >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Detected dependency licensing issues.' >&2
+		return 1
+	fi
+	echo 'No dependency licensing issues detected.' >&2
+	return 0
+}
+
+# Runs examples.
+#
+# $1 - log file
+examples() {
+	echo 'Running examples...' >&2
+	make NODE_FLAGS='--no-deprecation' examples >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Examples failed.' >&2
+		echo 'Retry 1 of 1...' >&2
+		sleep 15s
+		echo 'Running examples...' >&2
+		make NODE_FLAGS='--no-deprecation' examples >> "$1" 2>&1
+		if [[ "$?" -ne 0 ]]; then
+			echo 'Examples failed.' >&2
+			return 1
+		fi
+	fi
+	echo 'Successfully ran examples.' >&2
+	return 0
+}
+
+# Performs install tasks.
+#
+# $1 - log file
+install() {
+	echo 'Installing...' >&2
+	make install >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Error occurred during install.' >&2
+		echo 'Retry 1 of 2...' >&2
+		sleep 15s
+		echo 'Installing...' >&2
+		make install >> "$1" 2>&1
+		if [[ "$?" -ne 0 ]]; then
+			echo 'Error occurred during install.' >&2
+			echo 'Retry 2 of 2...' >&2
+			sleep 30s
+			echo 'Installing...' >&2
+			make install >> "$1" 2>&1
+			if [[ "$?" -ne 0 ]]; then
+				echo 'Error occurred during install.' >&2
+				echo 'Failed to install 3 times. Aborting install.' >&2
+				return 1
+			fi
+		fi
+	fi
+	echo 'Install successful.' >&2
+	return 0
+}
+
+# Performs lint tasks.
+#
+# $1 - log file
+lint() {
+	echo 'Initializing development environment...' >&2
+	make init >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Linting failed as unable to initialize development environment.' >&2
+		return 1
+	fi
+	echo 'Initialization successful.' >&2
+
+	echo 'Linting filenames...' >&2
+	make lint-filenames >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Linting filenames failed.' >&2
+		return 1
+	fi
+	make lint-header-filenames >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Linting filenames failed.' >&2
+		return 1
+	fi
+	echo 'Linting package.json files...' >&2
+	make lint-pkg-json >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Linting package.json failed.' >&2
+		return 1
+	fi
+	# FIXME: linting of Markdown files takes too long; need to speed-up via distributed tasks or only linting files which changed
+	# echo 'Linting Markdown files...' >&2
+	# make lint-markdown >> "$1" 2>&1
+	# if [[ "$?" -ne 0 ]]; then
+	# 	echo 'Linting Markdown failed.' >&2
+	# 	return 1
+	# fi
+	echo 'Linting passed.' >&2
+	return 0
+}
+
+# Runs unit tests.
+#
+# $1 - log file
+tests() {
+	echo 'Running tests...' >&2
+	make NODE_FLAGS='--no-deprecation' test >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Tests failed.' >&2
+		echo 'Retry 1 of 1...' >&2
+		sleep 15s
+		echo 'Running tests...' >&2
+		make NODE_FLAGS='--no-deprecation' test >> "$1" 2>&1
+		if [[ "$?" -ne 0 ]]; then
+			echo 'Tests failed.' >&2
+			return 1
+		fi
+	fi
+	echo 'Tests passed.' >&2
+	return 0
+}
+
+# Runs test coverage.
+#
+# $1 - log file
+test_coverage() {
+	echo 'Running test coverage...' >&2
+	make NODE_FLAGS='--no-deprecation' test-cov >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Tests failed.' >&2
+		echo 'Retry 1 of 1...' >&2
+		sleep 15s
+		echo 'Running test coverage...' >&2
+		make NODE_FLAGS='--no-deprecation' test-cov >> "$1" 2>&1
+		if [[ "$?" -ne 0 ]]; then
+			echo 'Tests failed.' >&2
+			return 1
+		fi
+	fi
+	echo 'Tests passed.' >&2
+	return 0
+}
+
+# Sends test coverage report to coverage service.
+#
+# $1 - report title
+# $2 - log file
+test_coverage_report() {
+	echo 'Sending coverage report to coverage service...' >&2
+	make COVERAGE_NAME="$1" coverage >> "$2" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Sending coverage report to coverage service failed.' >&2
+		echo 'Retry 1 of 1...' >&2
+		sleep 15s
+		echo 'Sending coverage report to coverage service...' >&2
+		make COVERAGE_NAME="$1" coverage >> "$2" 2>&1
+		if [[ "$?" -ne 0 ]]; then
+			echo 'Sending coverage report to coverage service failed.' >&2
+			return 1
+		fi
+	fi
+	echo 'Coverage report sent to coverage service.' >&2
+	return 0
+}
+
+# Tests whether the project successfully installs via `npm`.
+#
+# $1 - log file
+test_npm_install() {
+	echo 'Testing npm install...' >&2
+	make test-npm-install >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Installation failed.' >&2
+		echo 'Retry 1 of 1...' >&2
+		sleep 15s
+		echo 'Testing npm install...' >&2
+		make test-npm-install >> "$1" 2>&1
+		if [[ "$?" -ne 0 ]]; then
+			echo 'Installation failed.' >&2
+			return 1
+		fi
+	fi
+	echo 'Successfully installed.' >&2
+
+	echo 'Testing npm install (via GitHub)...' >&2
+	make test-npm-install-github >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Installation (via GitHub) failed.' >&2
+		echo 'Retry 1 of 1...' >&2
+		sleep 15s
+		echo 'Testing npm install (via GitHub)...' >&2
+		make test-npm-install-github >> "$1" 2>&1
+		if [[ "$?" -ne 0 ]]; then
+			echo 'Installation (via GitHub) failed.' >&2
+			return 1
+		fi
+	fi
+	echo 'Successfully installed (via GitHub).' >&2
+
+	return 0
+}
+
+# Main execution sequence.
+main() {
+	start_heartbeat "${heartbeat_interval}"
+
+	echo "Task: ${task}." >&2
+
+	# Note: please keep tasks in alphabetical order...
+	if [[ "${task}" = "benchmark" ]]; then
+		benchmark "${log_file}"
+		if [[ "$?" -ne 0 ]]; then
+			on_error 1
+		fi
+	elif [[ "${task}" = "check_deps" ]]; then
+		check_deps "${log_file}"
+		if [[ "$?" -ne 0 ]]; then
+			on_error 1
+		fi
+	elif [[ "${task}" = "check_licenses" ]]; then
+		check_licenses "${log_file}"
+		if [[ "$?" -ne 0 ]]; then
+			on_error 1
+		fi
+	elif [[ "${task}" = "examples" ]]; then
+		examples "${log_file}"
+		if [[ "$?" -ne 0 ]]; then
+			on_error 1
+		fi
+	elif [[ "${task}" = "install" ]]; then
+		install "${log_file}"
+		if [[ "$?" -ne 0 ]]; then
+			on_error 1
+		fi
+	elif [[ "${task}" = "lint" ]]; then
+		lint "${log_file}"
+		if [[ "$?" -ne 0 ]]; then
+			on_error 1
+		fi
+	elif [[ "${task}" = "test" ]]; then
+		tests "${log_file}"
+		if [[ "$?" -ne 0 ]]; then
+			on_error 1
+		fi
+	elif [[ "${task}" = "test-coverage" ]]; then
+		test_coverage "${log_file}"
+		if [[ "$?" -ne 0 ]]; then
+			on_error 1
+		fi
+		test_coverage_report "unit_test" "${log_file}"
+		if [[ "$?" -ne 0 ]]; then
+			on_error 1
+		fi
+	elif [[ "${task}" = "test-npm-install" ]]; then
+		test_npm_install "${log_file}"
+		if [[ "$?" -ne 0 ]]; then
+			on_error 1
+		fi
+	else
+		echo "ERROR: unknown task: ${task}." >&2
+		on_error 1
+	fi
+	cleanup
+	print_success
+	exit 0
+}
+
+# Set an error handler to print captured output and perform any clean-up tasks:
+trap 'on_error' ERR
+
+# Run main:
+main

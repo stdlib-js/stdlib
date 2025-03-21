@@ -1,0 +1,12 @@
+
+{{alias}}
+    Boolean indicating if the runtime is the Electron renderer process.
+
+    Examples
+    --------
+    > {{alias}}
+    <boolean>
+
+    See Also
+    --------
+

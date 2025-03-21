@@ -1,0 +1,61 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2017 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Prints an approximate number of files per file type.
+#
+# <percentage> <total> <file_type>
+#
+# Notes:
+#
+# -   For files using alternative filename extensions, no attempt is made to infer the file type. Unrecognized filename extensions are categorized as "other".
+# -   `README.md` files are included in Markdown totals.
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to annotate a file statistic stream:
+annotate_file_type="${root}/tools/git/scripts/annotate_file_type.awk"
+
+# * `git ls-files`
+#   - List indexed files.
+# * `awk '{}'`
+#   - Prefix each file to match annotation interface.
+# * `annotate_file_type`
+#   - Annotate each file with a file type.
+# * `awk '{}'`
+#   - Compute totals.
+# * `sort -nr`
+#   - Sort in reverse numeric order.
+git ls-files | awk '{print 1 OFS $0}' | awk -f "${annotate_file_type}" | awk '
+$3 ~ /README\.md$/ {
+	lines["README"] += 1
+}
+{
+	lines[$1] += 1
+	total += 1
+}
+
+END {
+	print 1 OFS total OFS "total"
+	for (k in lines) {
+		n = lines[k]
+		pct = int(n/total*10000)/10000
+		print pct OFS n OFS k
+	}
+}
+' | sort -nr

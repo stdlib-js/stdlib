@@ -1,0 +1,48 @@
+
+{{alias}}( W[, mean] )
+    Returns an accumulator function which incrementally computes a moving
+    variance-to-mean (VMR).
+
+    The `W` parameter defines the number of values over which to compute the
+    moving variance-to-mean ratio.
+
+    If provided a value, the accumulator function returns an updated moving
+    variance-to-mean ratio. If not provided a value, the accumulator function
+    returns the current moving variance-to-mean ratio.
+
+    As `W` values are needed to fill the window buffer, the first `W-1` returned
+    values are calculated from smaller sample sizes. Until the window is full,
+    each returned value is calculated from all provided values.
+
+    Parameters
+    ----------
+    W: integer
+        Window size.
+
+    mean: number (optional)
+        Known mean.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}( 3 );
+    > var F = accumulator()
+    null
+    > F = accumulator( 2.0 )
+    0.0
+    > F = accumulator( 1.0 )
+    ~0.33
+    > F = accumulator( 3.0 )
+    0.5
+    > F = accumulator( 7.0 )
+    ~2.55
+    > F = accumulator()
+    ~2.55
+
+    See Also
+    --------
+

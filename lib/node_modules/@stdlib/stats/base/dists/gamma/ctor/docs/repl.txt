@@ -1,0 +1,101 @@
+
+{{alias}}( [α, β] )
+    Returns a gamma distribution object.
+
+    Parameters
+    ----------
+    α: number (optional)
+        Shape parameter. Must be greater than `0`. Default: `1.0`.
+
+    β: number (optional)
+        Rate parameter. Must be greater than `0`. Default: `1.0`.
+
+    Returns
+    -------
+    gamma: Object
+        Distribution instance.
+
+    gamma.alpha: number
+        Shape parameter. If set, the value must be greater than `0`.
+
+    gamma.beta: number
+        Rate parameter. If set, the value must be greater than `0`.
+
+    gamma.entropy: number
+        Read-only property which returns the differential entropy.
+
+    gamma.kurtosis: number
+        Read-only property which returns the excess kurtosis.
+
+    gamma.mean: number
+        Read-only property which returns the expected value.
+
+    gamma.mode: number
+        Read-only property which returns the mode.
+
+    gamma.skewness: number
+        Read-only property which returns the skewness.
+
+    gamma.stdev: number
+        Read-only property which returns the standard deviation.
+
+    gamma.variance: number
+        Read-only property which returns the variance.
+
+    gamma.cdf: Function
+        Evaluates the cumulative distribution function (CDF).
+
+    gamma.logcdf: Function
+        Evaluates the natural logarithm of the cumulative distribution function
+        (CDF).
+
+    gamma.logpdf: Function
+        Evaluates the natural logarithm of the probability density function
+        (PDF).
+
+    gamma.mgf: Function
+        Evaluates the moment-generating function (MGF).
+
+    gamma.pdf: Function
+        Evaluates the probability density function (PDF).
+
+    gamma.quantile: Function
+        Evaluates the quantile function at probability `p`.
+
+    Examples
+    --------
+    > var gamma = {{alias}}( 6.0, 5.0 );
+    > gamma.alpha
+    6.0
+    > gamma.beta
+    5.0
+    > gamma.entropy
+    ~0.647
+    > gamma.kurtosis
+    1.0
+    > gamma.mean
+    1.2
+    > gamma.mode
+    1.0
+    > gamma.skewness
+    ~0.816
+    > gamma.stdev
+    ~0.49
+    > gamma.variance
+    0.24
+    > gamma.cdf( 0.8 )
+    ~0.215
+    > gamma.logcdf( 0.8 )
+    ~-1.538
+    > gamma.logpdf( 1.0 )
+    ~-0.131
+    > gamma.mgf( -0.5 )
+    ~0.564
+    > gamma.pdf( 1.0 )
+    ~0.877
+    > gamma.quantile( 0.8 )
+    ~1.581
+
+    See Also
+    --------
+

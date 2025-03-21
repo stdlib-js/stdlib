@@ -1,0 +1,50 @@
+From fork-admin@xent.com  Thu Aug  1 12:40:14 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C24E8440EA
+	for <jm@localhost>; Thu,  1 Aug 2002 07:40:14 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 01 Aug 2002 12:40:14 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g71BZX210766 for <jm@jmason.org>;
+    Thu, 1 Aug 2002 12:35:35 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id D59FD294159; Thu,  1 Aug 2002 04:33:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mail1.cmpnet.com (mailhost.cmpnet.com [66.77.26.104]) by
+    xent.com (Postfix) with ESMTP id 5031F294158 for <fork@xent.com>;
+    Thu,  1 Aug 2002 04:32:56 -0700 (PDT)
+Received: from prod3.cmpnet.com (prod3.cmpnet.com [66.77.26.18]) by
+    mail1.cmpnet.com (8.12.1/8.12.1) with ESMTP id g71BXFOZ013457 for
+    <fork@xent.com>; Thu, 1 Aug 2002 04:33:15 -0700 (PDT)
+Received: (from webuser@localhost) by prod3.cmpnet.com (8.11.6+Sun/8.11.6)
+    id g71BXF507504 for fork@xent.com; Thu, 1 Aug 2002 04:33:15 -0700 (PDT)
+Message-Id: <200208011133.g71BXF507504@prod3.cmpnet.com>
+From: grlygrl201@aol.com
+To: fork@spamassassin.taint.org
+Subject: Not Surprised
+MIME-Version: 1.0
+Content-Type: text/html
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 1 Aug 2002 04:33:15 -0700 (PDT)
+
+
+It took me a week to get down to this;
+The towering pine and the hemlock.<p>
+<a href=http://www.informationweek.com/story/IWK20020723S0005>http://www.informationweek.com/story/IWK20020723S0005
+http://xent.com/mailman/listinfo/fork
+
+

@@ -1,0 +1,73 @@
+From fork-admin@xent.com  Mon Sep  2 16:22:33 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 63F7644157
+	for <jm@localhost>; Mon,  2 Sep 2002 11:22:05 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 02 Sep 2002 16:22:05 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g827KoZ23723 for <jm@jmason.org>;
+    Mon, 2 Sep 2002 08:20:51 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 1FA91294185; Mon,  2 Sep 2002 00:18:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from rwcrmhc51.attbi.com (rwcrmhc51.attbi.com [204.127.198.38])
+    by xent.com (Postfix) with ESMTP id 7B663294099 for <FoRK@xent.com>;
+    Mon,  2 Sep 2002 00:17:03 -0700 (PDT)
+Received: from Intellistation ([66.31.2.27]) by rwcrmhc51.attbi.com
+    (InterMail vM.4.01.03.27 201-229-121-127-20010626) with ESMTP id
+    <20020902071920.PLEQ12451.rwcrmhc51.attbi.com@Intellistation> for
+    <FoRK@xent.com>; Mon, 2 Sep 2002 07:19:20 +0000
+Content-Type: text/plain; charset="iso-8859-1"
+From: Eirikur Hallgrimsson <eh@mad.scientist.com>
+Organization: Electric Brain
+To: FoRK <FoRK@xent.com>
+Subject: Re: Java is for kiddies
+User-Agent: KMail/1.4.1
+References: <NCBBJMBPOKEEKDAILFNGGEBDFEAA.rbfar@ebuilt.com>
+In-Reply-To: <NCBBJMBPOKEEKDAILFNGGEBDFEAA.rbfar@ebuilt.com>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Message-Id: <200209020319.13260.eh@mad.scientist.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 2 Sep 2002 03:19:13 -0400
+
+On Sunday 01 September 2002 08:43 pm, Reza B'Far (eBuilt) wrote:
+> 3.  Java is not just a programming language!
+
+The astounding thing about java is that despite all of the many significant 
+points in its favor, it still manages to suck, and break across JVMs.
+
+I was really looking forward to being able to use a better language like 
+java and get it compiled to real platform-specific binaries via the GNU 
+compiler collection.   But this seems to have never really gotten anywhere 
+because it would require porting or reimplementing libraries, which are 
+probably not source-available or tolerably licenced.   When I looked at 
+what I had to do to gcc and link "hello world," I lost interest.
+
+Who the hell is writing the runtimes, anyway?   Why are Perl/Python/Ruby 
+more reliable?   In a world where the Macs all ran emulated 68K code 
+utterly reliably, it's just hard to accept that there can't be a single 
+portable JVM that just works.
+
+My opinion is biased because of the disgraceful state of non-Windoze 
+browser java implementations.
+
+Eirikur
+
+
+
+

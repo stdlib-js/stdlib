@@ -1,0 +1,317 @@
+From owner-worldwidewords@LISTSERV.LINGUISTLIST.ORG  Tue Aug  6 10:57:31 2002
+Return-Path: <owner-worldwidewords@LISTSERV.LINGUISTLIST.ORG>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6086044117
+	for <jm@localhost>; Tue,  6 Aug 2002 05:53:36 -0400 (EDT)
+Received: from mail.webnote.net [193.120.211.219]
+	by localhost with POP3 (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 10:53:36 +0100 (IST)
+Received: from listserv.linguistlist.org (listserv.linguistlist.org [164.76.102.107])
+	by webnote.net (8.9.3/8.9.3) with SMTP id FAA07076
+	for <jm@NETNOTEINC.COM>; Sat, 3 Aug 2002 05:04:03 +0100
+Received: (qmail 18353 invoked from network); 3 Aug 2002 04:01:22 -0000
+Received: from listserv.linguistlist.org (HELO listserv) (164.76.102.107)
+  by listserv.linguistlist.org with SMTP; 3 Aug 2002 04:01:22 -0000
+Received: from LISTSERV.LINGUISTLIST.ORG by LISTSERV.LINGUISTLIST.ORG
+          (LISTSERV-TCP/IP release 1.8d) with spool id 431549 for
+          WORLDWIDEWORDS@LISTSERV.LINGUISTLIST.ORG; Sat, 3 Aug 2002 00:00:45
+          -0400
+Approved-By: DoNotUse@WORLDWIDEWORDS.ORG
+Delivered-To: worldwidewords@listserv.linguistlist.org
+Received: (qmail 14024 invoked from network); 2 Aug 2002 15:26:40 -0000
+Received: from pc-80-192-8-147-az.blueyonder.co.uk (HELO dhcp-38-22)
+          (80.192.8.147) by listserv.linguistlist.org with SMTP; 2 Aug 2002
+          15:26:40 -0000
+Received: from prospero (prospero.tempest.lan [192.168.14.10]) by dhcp-38-22
+          (8.11.6/8.11.6) with ESMTP id g72FQbK01785 for
+          <worldwidewords@listserv.linguistlist.org>; Fri, 2 Aug 2002 16:26:38
+          +0100
+MIME-Version: 1.0
+Content-type: text/plain; charset=ISO-8859-1
+Priority: normal
+X-mailer: Pegasus Mail for Win32 (v3.12c)
+Message-ID: <3D4AB2C0.12594.1ACEC8D@localhost>
+Date: Fri, 2 Aug 2002 16:26:40 +0100
+Reply-To: DoNotUse@WORLDWIDEWORDS.ORG
+Sender: World Wide Words <worldwidewords@LISTSERV.LINGUISTLIST.ORG>
+From: Michael Quinion <DoNotUse@WORLDWIDEWORDS.ORG>
+Organization: World Wide Words
+Subject: World Wide Words -- 03 Aug 02
+To: WORLDWIDEWORDS@LISTSERV.LINGUISTLIST.ORG
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from Quoted-printable to 8bit by webnote.net id FAA07076
+
+WORLD WIDE WORDS          ISSUE 301          Saturday 3 August 2002
+-------------------------------------------------------------------
+Sent each Saturday to 15,000+ subscribers in at least 119 countries
+Editor: Michael Quinion, Thornbury, Bristol, UK      ISSN 1470-1448
+<http://www.worldwidewords.org>      <TheEditor@worldwidewords.org>
+-------------------------------------------------------------------
+ IF YOU RESPOND TO THIS MAILING, REMEMBER TO CHANGE THE OUTGOING
+   ADDRESS TO ONE OF THOSE IN THE 'CONTACT ADDRESSES' SECTION.
+
+
+Contents
+-------------------------------------------------------------------
+1. Feedback, notes and comments.
+2. Turns of Phrase: Thinspiration.
+3. Weird Words: Usufructuary.
+4. Q&A: Three sheets to the wind; Mogadored; Skunk works.
+5. Endnote.
+6. Subscription commands.
+7. Contact addresses.
+
+
+1. Feedback, notes and comments
+-------------------------------------------------------------------
+COCKLES OF ONE'S HEART  You may recall that I was a bit suspicious
+of the story I told in last week's issue. James Woodfield pointed
+out that there is another possible explanation. In medieval Latin,
+the ventricles of the heart were at times called "cochleae cordis",
+where the second word is derived from "cor", heart. Those unversed
+in Latin could have misinterpreted "cochleae" as "cockles". Oddly,
+"cochlea" in Latin means "snail" (from the shape of the ventricles
+- it's also the name of the spiral cavity of the inner ear), so if
+this story is right we should really be speaking of warming the
+snails of one's heart.
+
+SERRANCIFIED  Many of you supplied your own memories of this odd
+expression that I tried to make sense of last week. Taken together,
+they show that the expression is best known in Canada and that it
+was originally something like "My sufficiency has been suffonsified
+and anything additional would be superfluous". That form of the
+word is the one that is most common in online searches, where the
+Canadian focus is also obvious. Cheryl Caesar noted that it appears
+in a passage in Margaret Atwood's novel, "Cat's Eye": she has two
+teenage girls living in Toronto in the 1940s who say, "Are you
+sufficiently sophonisified?". A Vancouver restaurant reviewer has
+the pen name "Sufficiently Suffonsified". Oddly, there's also a
+1999 record by the Austrian band Cunning Dorx entitled "Paradigms
+Suffonsified". G H Gordon Paterson suggested that the word might be
+a punning blend of "sufficient" and "fancified". There are some
+tantalising suggestions that it may actually be Scots, and not New
+World at all.
+
+ABSQUATULATE  I have been gently remonstrated with for describing
+"sockdologer" as one of the products of early American linguistic
+inventiveness that hasn't survived to the present day. Many people
+gave me examples of current or recent use. I stand corrected.
+
+
+2. Turns of Phrase: Thinspiration
+-------------------------------------------------------------------
+This is one of the key words associated with a deeply disquieting
+online trend. In the past couple of years or so a number of Web
+sites and chatrooms have appeared which actively promote anorexia
+nervosa (known on the sites as "ana") and other eating disorders as
+lifestyle choices. Since 90% of anorexics are young women, these
+"pro-ana" sites are usually run by and attract that group (one term
+sometimes used for them is "weborexics"). Sites offer suggestions
+on how to become and remain thin, often through tips on avoiding
+eating, and how to disguise the condition from family and friends.
+Other themes sometimes featured on such sites are self-mutilation
+("cutting") and bulimia ("mia"). Thin women, such as supermodels
+and Calista Flockhart, are presented as "thinspirations", examples
+to emulate. Sites have had names such as Starving for Perfection,
+Wasting Away on the Web and Dying To Be Thin. Medical professionals
+in the US and UK are deeply concerned about them, because they
+accentuate the low self-regard of young women, who are particularly
+prone to eating disorders, put their lives at risk, and discourage
+them from facing their illness and seeking treatment for it.
+
+The Internet is home to a number of pro-eating disorder Web sites -
+- places where sufferers can discuss tips, trade low-calorie
+recipes and exchange poems and art that may be used as "triggers"
+or so-called "thinspiration."
+                                         ["Calgary Sun", Feb. 2002]
+
+A new trend among young adults has been sweeping the nation: pro-
+anorexia Web sites. Also known as pro-ana, these sites glorify
+anorexia nervosa and offer "thinspiration" on maintaining a
+starvation lifestyle.
+                                     ["University Wire", Apr. 2002]
+
+
+3. Weird Words: Usufructuary  /ju:zjU'frVktju:@rI/
+-------------------------------------------------------------------
+A person who has the use or enjoyment of something, especially
+property.
+
+We are short of words that contain four u's. Among the few that are
+even relatively common (leaving aside the Hawaiian "muu-muu") are
+"tumultuously" and "unscrupulous", although some rare words like
+"pustulocrustaceous" and "pseudotuberculous" are also recorded.
+
+The term comes from Roman law. "Usufruct" is the right of temporary
+possession or enjoyment of something that belongs to somebody else,
+so far as that can be done without causing damage or changing its
+substance. For example, a slave in classical Rome could not own
+anything. Things he acquired as the result of his labour he merely
+held "usus (et) fructus", under "use (and) enjoyment" - it was his
+master who actually owned them.
+
+The term remains in use in modern US legal practice and elsewhere.
+These days a "usufructuary" can be a trustee who enjoys the income
+from property he holds in trust for somebody else. Many Native
+American groups hold land on a "usufruct" basis, with rights to
+enjoy the renewable natural resources of the land for hunting and
+fishing.
+
+
+4. Q&A
+-------------------------------------------------------------------
+Q. How does the term "three sheets to the wind" denote drunkenness?
+[Benjamin Weatherston]
+
+A. It's a sailor's expression.
+
+We ignorant landlubbers might think that a sheet is a sail, but in
+traditional sailing-ship days, a "sheet" was actually a rope,
+particularly one attached to the bottom corner of a sail (it comes
+from an Old English term for the corner of a sail). The sheets were
+vital, since they trimmed the sail to the wind. If they ran loose,
+the sail would flutter about in the wind and the ship would wallow
+off its course out of control.
+
+Extend this idea to sailors on shore leave, staggering back to the
+ship after a good night on the town, well tanked up. The irregular
+and uncertain locomotion of the jolly seafarers must have reminded
+onlookers of the way a ship moved in which the sheets were loose.
+Perhaps one loose sheet might not have been enough to get the image
+across, so the saying became "three sheets to the wind".
+
+Our first written example comes from that recorder of low life,
+Pierce Egan, in his "Real life in London" of 1821. But it must
+surely be much older.
+
+                        -----------
+
+Q. My East End mother-in-law used to say she was "well and truly
+mogadored" when she was puzzled by something. Any idea of
+derivation and meaning? [Bryan]
+
+A. Now that's a bit of British slang I haven't heard in years,
+though it is still around (Nanny Ogg uses it in one of Terry
+Pratchett's Discworld fantasy stories, I am told). As you say, it
+means that somebody is puzzled, confused, or "all at sea". It's
+also sometimes spelled "moggadored", though it doesn't turn up in
+print much in either spelling. (No relation to the British word
+"moggy" for a cat, by the way, which seems to be a pet form of
+"Margaret".)
+
+The writers of slang dictionaries are decidedly mogadored about its
+origin. It looks very much like rhyming slang for "floored", which
+is likewise slang, meaning dumbfounded or confused. But the dispute
+arises over what the root is. Some say it is Irish, from "magagh",
+to mock, jeer or laugh at, via an unrecorded intermediate form
+"mogadói".
+
+Others suggest that, like some other East End slang terms, it
+derives from the Gypsy language Romany (Cockney slang is like
+London itself, a melting pot, in which words from many sources are
+amalgamated, including Yiddish and old-time forces slang derived
+from languages around the world). In this case the source may be
+"mokardi" or "mokodo", something tainted (these Romany words also
+provide the root for yet another slang phrase, "to put the mockers
+on something", to jinx it).
+
+Sorry not to be able to be more definite!
+
+                        -----------
+
+Q. I was having an interesting discussion with an American
+professor of business studies who also consults to industry. She
+was recalling an unbudgeted initiative within a major software
+corporate, which the UK managing director described as a "skunk
+project". I have seen this epithet before, usually in the phrase
+"skunk works", meaning a semi-official project team that is tacitly
+licensed to bend the rules and think outside the box. I wonder what
+the derivation is? I don't think it can refer to the smelly wild
+animal, but neither I think can it refer to the street term for a
+strong variant of marijuana. Can you shed any light? [Martin
+Hayman]
+
+A. We must start in Dogpatch, the fictional place in the backwoods
+of upper New York State made famous between 1934 and 1977 as the
+home of professional mattress tester Li'l Abner, in the comic strip
+written and drawn by Al Capp. The original was actually "Skonk
+Works", the place where Lonesome Polecat and Hairless Joe brewed
+their highly illicit bootleg Kickapoo Joy Juice from ingredients
+such as old shoes and dead skunks. ("Skonk" is a dialect variant of
+"skunk".)
+
+We must now move to the very real Burbank, California. In 1943, a
+small group of aeronautical engineers working for the then Lockheed
+Aircraft Corporation (headed by Clarence "Kelly" Johnson) were
+given the rush job of creating an entirely new plane from scratch,
+the P-80 "Shooting Star" jet fighter. This they did in 143 days, 37
+days ahead of schedule. Their secret project was housed in a
+temporary structure roofed over with an old circus tent, which had
+been thrown up next to a smelly plastics factory. The story goes
+that one of the engineers answered the phone on a hot summer day
+with the phrase "Skonk Works here" and the name stuck. It is also
+said that Al Capp objected to their use of his term and it was
+changed to Skunk Works.
+
+One division of the company, formally the Lockheed Martin Advanced
+Development Program, is still known as the Skunk Works. The term
+has been trademarked by Lockheed Martin, who have been aggressive
+in protecting it.
+
+As a generic term, it dates from the 1960s. One definition is very
+much that of the original and the one you describe: a small group
+of experts who drop out of the mainstream of a company's operations
+in order to develop some experimental technology or new application
+in secrecy or at speed, unhampered by bureaucracy or the strict
+application of regulations (Kelly Johnson formulated 14 visionary
+rules for running such an operation, which are still regarded as
+valid even now). It is also sometimes used for a similar group that
+operates semi-illicitly, without top-level official knowledge or
+support, though usually with the tacit approval of immediate
+management.
+
+
+5. Endnote
+-------------------------------------------------------------------
+The principal design of a grammar of any language is to teach us to
+express ourselves with propriety in that language; and to enable us
+to judge of every phrase and form of construction, whether it be
+right or not. [Robert Lowth, "A Short Introduction to English
+Grammar" (1762)]
+
+
+6. Subscription commands
+-------------------------------------------------------------------
+To leave the list, change your subscription address, or subscribe,
+please visit <http://www.worldwidewords.org/wordlist.htm>.
+
+Or, you can send a message to <listserv@listserv.linguistlist.org>
+from the address at which you are (or want to be) subscribed:
+
+  To leave, send: SIGNOFF WORLDWIDEWORDS
+  To join, send: SUBSCRIBE WORLDWIDEWORDS First-name Last-name
+
+
+7. Contact addresses
+-------------------------------------------------------------------
+Do not use the address that comes up when you hit 'Reply' on this
+mailing, or your message will be sent to an electronic dead-letter
+office. Either create a new message, or change the outgoing 'To:'
+address to one of these:
+
+  For general comments, especially responses to Q&A pieces:
+      <TheEditor@worldwidewords.org>.
+  For questions intended for reply in a future Q&A feature:
+      <QandA@worldwidewords.org>.
+
+-------------------------------------------------------------------
+World Wide Words is copyright (c) Michael Quinion 2002.  All rights
+reserved. The Words Web site is at <http://www.worldwidewords.org>.
+-------------------------------------------------------------------
+You may reproduce this newsletter in whole or in part in other free
+media online provided that you include this note and the copyright
+notice above. Reproduction in print media or on Web pages requires
+prior permission: contact <TheEditor@worldwidewords.org>.
+-------------------------------------------------------------------
+

@@ -1,0 +1,69 @@
+From ilug-admin@linux.ie  Fri Jul 19 16:13:14 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 39503440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 11:13:14 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 16:13:14 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JF8QJ07360 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 16:08:26 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA11494; Fri, 19 Jul 2002 16:04:53 +0100
+Received: from mail.tradesignals.com ([217.75.2.27]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA11457 for <ilug@linux.ie>; Fri,
+    19 Jul 2002 16:04:44 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [217.75.2.27] claimed to
+    be mail.tradesignals.com
+Received: from docaoimh.tradesignals.com (docaoimh.tradesignals.com
+    [192.168.1.26]) by mail.tradesignals.com (8.11.6/8.11.6) with ESMTP id
+    g6JF4Y111154 for <ilug@linux.ie>; Fri, 19 Jul 2002 16:04:34 +0100
+Received: from localhost (localhost [[UNIX: localhost]]) by
+    docaoimh.tradesignals.com (8.11.6/8.11.6) id g6JF4Zb21672 for
+    ilug@linux.ie; Fri, 19 Jul 2002 16:04:35 +0100
+Content-Type: text/plain; charset="us-ascii"
+From: Donncha O Caoimh <donncha.ocaoimh@tradesignals.com>
+To: ilug@linux.ie
+Date: Fri, 19 Jul 2002 16:04:34 +0100
+X-Mailer: KMail [version 1.4]
+MIME-Version: 1.0
+Message-Id: <200207191604.34890.donncha.ocaoimh@tradesignals.com>
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    QAA11457
+Subject: [ILUG] app of the day - Spackle
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+http://spackle.xidus.net/info.php
+
+>>From the website:
+"Spackle is designed to be a flexible client/server architecture for the 
+gathering and displaying of statistics, primarily suited to monitoring 
+servers. It's written in PHP and bash shell script, uses RRDtool  for stats 
+logging, and PostgreSQL for the server-side database. (soon to support MySQL 
+as well)"
+
+I had this up and running within a few hours. The hardest bit was getting 
+PostgreSQL running as it's been a few years since I used it. I had a bit of a 
+problem getting it to work on rh6.2 boxes but I documented the changes here: 
+http://xeer.blogspot.com/?/2002_07_01_xeer_archive.html#79148596
+
+Web interface is simple, but functional. It has a simple way of distributing 
+the monitoring scripts (which could be compromised but I digress), and the 
+resulting graphs are pretty!
+
+Donncha.
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

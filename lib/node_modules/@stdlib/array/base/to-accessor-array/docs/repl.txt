@@ -1,0 +1,35 @@
+
+{{alias}}( arr )
+    Converts an array-like object to a minimal array-like object supporting the
+    accessor protocol.
+
+    If a provided array-like object already supports the accessor protocol, the
+    function returns the provided array-like object; otherwise, the function
+    wraps the provided value in a object which uses accessors for getting and
+    setting elements.
+
+    Parameters
+    ----------
+    arr: ArrayLikeObject
+        Input array.
+
+    Returns
+    -------
+    out: Object
+        Accessor array.
+
+    Examples
+    --------
+    > var x = [ 1, 2, 3, 4 ];
+    > var out = {{alias}}( x );
+    > var v = out.get( 1 )
+    2
+    > var len = out.length
+    4
+    > out.set( 5, 0 );
+    > v = out.get( 0 )
+    5
+
+    See Also
+    --------
+

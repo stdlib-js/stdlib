@@ -1,0 +1,108 @@
+From rpm-list-admin@freshrpms.net  Wed Oct  2 11:44:09 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 77D6A16F03
+	for <jm@localhost>; Wed,  2 Oct 2002 11:44:08 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 02 Oct 2002 11:44:08 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9283uK31858 for
+    <jm-rpm@jmason.org>; Wed, 2 Oct 2002 09:03:58 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g927u1f09457; Wed, 2 Oct 2002 09:56:01
+    +0200
+Received: from mta7.pltn13.pbi.net (mta7.pltn13.pbi.net [64.164.98.8]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g927sxf03169 for
+    <rpm-list@freshrpms.net>; Wed, 2 Oct 2002 09:55:00 +0200
+Received: from eecs.berkeley.edu ([63.192.217.110]) by mta7.pltn13.pbi.net
+    (iPlanet Messaging Server 5.1 (built May  7 2001)) with ESMTP id
+    <0H3C00KKSGNKBC@mta7.pltn13.pbi.net> for rpm-list@freshrpms.net;
+    Wed, 02 Oct 2002 00:54:58 -0700 (PDT)
+From: Ben Liblit <liblit@eecs.berkeley.edu>
+Subject: alsa-driver.spec tweak for homemade kernels
+To: rpm-zzzlist@freshrpms.net
+Message-Id: <3D9AA650.2000909@eecs.berkeley.edu>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="Boundary_(ID_KtnWPrcWHTTzQa7OHxPjiA)"
+X-Accept-Language: en-us, en
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.1) Gecko/20020827
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Wed, 02 Oct 2002 00:54:56 -0700
+Date: Wed, 02 Oct 2002 00:54:56 -0700
+
+This is a multi-part message in MIME format.
+
+--Boundary_(ID_KtnWPrcWHTTzQa7OHxPjiA)
+Content-type: text/plain; charset=us-ascii; format=flowed
+Content-transfer-encoding: 7BIT
+
+I use a mostly Red Hat 8.0 system, but prefer to configure and build my 
+kernel by hand.  I'd like to humbly offer a tweak to alsa-driver.spec 
+that helps it build cleanly under such circumstances.  I recognize that 
+freshrpms.net packages are designed with standard Red Hat in mind, 
+including a standard kernel RPM.  However, I hope that Matthias will 
+consider the tweak small enough to justify its incorporation.
+
+The diff is attached below.  The first part of the diff contains a 
+conditional that checks to see if the expected RPM is installed.  If it 
+is, %{karch} is set as before and a new %{krpm} flag is set to 1.  If 
+the expected RPM is not installed, then %{karch} is instead set using 
+"uname -p", while %{krpm} is left undefined.
+
+The second part of the diff is simpler.  We only require that 
+kernel-source be installed if the kernel itself came from an RPM.  (If 
+the kernel was hand-built, the presumably the user knows enough to have 
+retained the sources in the expected place.)
+
+Again, I realize that I'm operating "off warrantee" by not using a Red 
+Hat kernel RPM.  Matthias, if you think this tweak is reasonable and not 
+too ugly, I'd love to see you pick it up.  If not, well at least this 
+message will sit in the archives and may help other folks in the future.
+
+--Boundary_(ID_KtnWPrcWHTTzQa7OHxPjiA)
+Content-type: video/mng; name=diffs
+Content-transfer-encoding: base64
+Content-disposition: inline; filename=diffs
+
+LS0tIGFsc2EtZHJpdmVyLnNwZWMub3JpZwkyMDAyLTEwLTAxIDEzOjExOjQ0LjAwMDAwMDAw
+MCAtMDcwMAorKysgYWxzYS1kcml2ZXIuc3BlYwkyMDAyLTEwLTAyIDAwOjM4OjIyLjAwMDAw
+MDAwMCAtMDcwMApAQCAtOCw3ICs4LDEyIEBACiAlaWYgJSh1bmFtZSAtciB8IGdyZXAgLWMg
+c21wKQogCSV7ZXhwYW5kOiUlZGVmaW5lIGtzbXAgLXNtcH0KICVlbmRpZgotJWRlZmluZQlr
+YXJjaAkJJShycG0gLXEgLS1xZiAnJSV7YXJjaH0nIGtlcm5lbCV7P2tzbXB9LSV7a3ZlcnNp
+b259KQorJWlmICUocnBtIC1xIGtlcm5lbCV7P2tzbXB9LSV7a3ZlcnNpb259ID4vZGV2L251
+bGw7IGVjaG8gJD8pCisJJWRlZmluZQlrYXJjaAkJJSh1bmFtZSAtcCkKKyVlbHNlCisJJWRl
+ZmluZSBrcnBtCQkxCisJJWRlZmluZQlrYXJjaAkJJShycG0gLXEgLS1xZiAnJSV7YXJjaH0n
+IGtlcm5lbCV7P2tzbXB9LSV7a3ZlcnNpb259KQorJWVuZGlmCiAlZGVmaW5lCWtyZWx2ZXIJ
+CSUoZWNobyAle2t2ZXJzaW9ufSB8IHRyIC1zICctJyAnXycpCiAKIFN1bW1hcnk6IFRoZSBB
+ZHZhbmNlZCBMaW51eCBTb3VuZCBBcmNoaXRlY3R1cmUgKEFMU0EpIGJhc2UgZmlsZXMuCkBA
+IC0yNSw3ICszMCw4IEBACiBCdWlsZFJvb3Q6ICV7X3RtcHBhdGh9LyV7bmFtZX0tJXt2ZXJz
+aW9ufS1yb290CiBCdWlsZEFyY2g6ICV7a2FyY2h9CiBSZXF1aXJlczogYWxzYS1rZXJuZWwg
+PSAle3ZlcnNpb259LCAvc2Jpbi9kZXBtb2QKLUJ1aWxkUmVxdWlyZXM6IGtlcm5lbC1zb3Vy
+Y2UgPSAle2t2ZXJzaW9ufSwgTUFLRURFVgorJXs/a3JwbTpCdWlsZFJlcXVpcmVzOiBrZXJu
+ZWwtc291cmNlID0gJXtrdmVyc2lvbn19CitCdWlsZFJlcXVpcmVzOiBNQUtFREVWCiAKICVk
+ZXNjcmlwdGlvbgogVGhlIEFkdmFuY2VkIExpbnV4IFNvdW5kIEFyY2hpdGVjdHVyZSAoQUxT
+QSkgcHJvdmlkZXMgYXVkaW8gYW5kIE1JREkK
+
+--Boundary_(ID_KtnWPrcWHTTzQa7OHxPjiA)--
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

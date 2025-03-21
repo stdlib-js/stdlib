@@ -1,0 +1,56 @@
+From fork-admin@xent.com  Thu Aug  8 14:13:01 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 92EDF4413C
+	for <jm@localhost>; Thu,  8 Aug 2002 08:32:54 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 08 Aug 2002 13:32:54 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g77MxJk25589 for <jm@jmason.org>;
+    Wed, 7 Aug 2002 23:59:21 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 2DC582940B1; Wed,  7 Aug 2002 15:56:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp01.mrf.mail.rcn.net (smtp01.mrf.mail.rcn.net
+    [207.172.4.60]) by xent.com (Postfix) with ESMTP id 7E37629409B for
+    <fork@xent.com>; Wed,  7 Aug 2002 15:55:43 -0700 (PDT)
+X-Info: This message was accepted for relay by smtp01.mrf.mail.rcn.net as
+    the sender used SMTP authentication
+X-Trace: UmFuZG9tSVYxzJnFYxMXNjqJ4lUEVQOm6YtA82BFhZbjjRi5tKZMbH8JePAdnW4tCKzy1BN++As=
+Received: from [165.112.63.34] (helo=TOSHIBA-L8QYR7M) by
+    smtp01.mrf.mail.rcn.net with asmtp (Exim 3.35 #6) id 17cZj5-0005L9-00 for
+    fork@xent.com; Wed, 07 Aug 2002 18:56:23 -0400
+From: "John Evdemon" <jevdemon@acm.org>
+To: fork@spamassassin.taint.org
+MIME-Version: 1.0
+Subject: Quitting Music
+Message-Id: <3D516D56.17345.1A207CB@localhost>
+Priority: normal
+X-Mailer: Pegasus Mail for Windows (v4.01)
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7BIT
+Content-Description: Mail message body
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 7 Aug 2002 18:56:22 -0400
+
+Keep your fingers crossed...
+
+Exhausted Britney 'wants to quit music'
+
+http://www.thisislondon.com/dynamic/news/story.html?in_review_id=661754&in_review_text_id=632865
+http://xent.com/mailman/listinfo/fork
+
+

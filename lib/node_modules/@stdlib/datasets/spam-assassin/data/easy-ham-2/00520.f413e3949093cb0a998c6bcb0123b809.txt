@@ -1,0 +1,69 @@
+From webdev-admin@linux.ie  Tue Aug 20 18:52:26 2002
+Return-Path: <webdev-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 02CC943C34
+	for <jm@localhost>; Tue, 20 Aug 2002 13:52:26 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 18:52:26 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7KHrrZ18007 for
+    <jm-webdev@jmason.org>; Tue, 20 Aug 2002 18:53:53 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id SAA16734; Tue, 20 Aug 2002 18:53:50 +0100
+Received: from mail.go2.ie ([62.17.153.101]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id SAA16693 for <webdev@linux.ie>; Tue,
+    20 Aug 2002 18:53:44 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [62.17.153.101] claimed to
+    be mail.go2.ie
+Received: from k100-50.bas1.dbn.dublin.eircom.net
+    (k100-50.bas1.dbn.dublin.eircom.net [159.134.100.50]) by mail.go2.ie
+    (Postfix) with ESMTP id 973DA1105 for <webdev@linux.ie>; Tue,
+    20 Aug 2002 18:53:12 +0100 (IST)
+Subject: Re: [Webdev] PHP+Javascript request
+From: Nick Murtagh <nickm@go2.ie>
+To: webdev@linux.ie
+In-Reply-To: <3D612ACA.4050100@heanet.ie>
+References: <5.1.0.14.0.20020819181835.00ac0eb8@holly.csn.ul.ie>
+    <3D612ACA.4050100@heanet.ie>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8-2mdk
+Date: 20 Aug 2002 18:49:35 +0100
+Message-Id: <1029865776.2182.6.camel@gemini.windmill>
+MIME-Version: 1.0
+Sender: webdev-admin@linux.ie
+Errors-To: webdev-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: <webdev.linux.ie>
+X-Beenthere: webdev@linux.ie
+
+On Mon, 2002-08-19 at 18:28, Dave Wilson wrote:
+> IIRC, if the query string contains
+> 
+> varname=FIRST&varname=SECOND
+> 
+> then PHP will create a variable called "varname" with result SECOND. 
+> However, if the query string contains
+> 
+> varname[]=FIRST&varname[]=SECOND
+> 
+> then PHP will create an array with varname[1]==FIRST and varname[2]==SECOND
+
+By far the coolest solution to this would be to "fix" php :)
+Take a look at main/php_variables.c in the php source distribution.
+You could mess around with the variable is_array in
+php_register_variable_ex() and see if you can force all variables to be
+arrays :) As far as I can tell the reason they do this is to save
+time by not having to work out which variables have multiple values.
+
+Nick
+
+
+_______________________________________________
+Webdev mailing list
+Webdev@linux.ie
+http://www.linux.ie/mailman/listinfo/webdev
+

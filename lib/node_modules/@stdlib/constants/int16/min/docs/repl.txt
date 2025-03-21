@@ -1,0 +1,14 @@
+
+{{alias}}
+    Minimum signed 16-bit integer.
+
+    The minimum signed 16-bit integer is given by `-(2^15)`.
+
+    Examples
+    --------
+    > {{alias}}
+    -32768
+
+    See Also
+    --------
+

@@ -1,0 +1,137 @@
+From exmh-users-admin@redhat.com  Mon Sep 23 12:06:18 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 9F1BE16F03
+	for <jm@localhost>; Mon, 23 Sep 2002 12:06:17 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 23 Sep 2002 12:06:17 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8N4wUC01425 for
+    <jm-exmh@jmason.org>; Mon, 23 Sep 2002 05:58:30 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 528BB3EA45; Mon, 23 Sep 2002
+    00:59:02 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id CF8A23EA09
+    for <exmh-users@listman.redhat.com>; Mon, 23 Sep 2002 00:58:37 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g8N4wbt18650 for exmh-users@listman.redhat.com; Mon, 23 Sep 2002
+    00:58:37 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g8N4wbh18646 for
+    <exmh-users@redhat.com>; Mon, 23 Sep 2002 00:58:37 -0400
+Received: from blackcomb.panasas.com (gw2.panasas.com [65.194.124.178]) by
+    mx1.redhat.com (8.11.6/8.11.6) with SMTP id g8N4ewi21751 for
+    <exmh-users@redhat.com>; Mon, 23 Sep 2002 00:40:58 -0400
+Received: from medlicott.panasas.com (IDENT:welch@medlicott.panasas.com
+    [172.17.132.188]) by blackcomb.panasas.com (8.9.3/8.9.3) with ESMTP id
+    AAA08321 for <exmh-users@redhat.com>; Mon, 23 Sep 2002 00:58:30 -0400
+Message-Id: <200209230458.AAA08321@blackcomb.panasas.com>
+To: exmh-users@spamassassin.taint.org
+Subject: Re: Linking message [was: Re: Patch to complete a change...]
+In-Reply-To: <26040.1031911795@munnari.OZ.AU>
+References: <23204.1031891193@dimebox>
+    <200209130231.g8D2VO021580@hobbit.linuxworks.com.au.nospam>
+    <26040.1031911795@munnari.OZ.AU>
+Comments: In-reply-to Robert Elz <kre@munnari.OZ.AU> message dated "Fri,
+    13 Sep 2002 17:09:55 +0700."
+From: Brent Welch <welch@panasas.com>
+X-Url: http://www.panasas.com/
+X-Face: "HxE|?EnC9fVMV8f70H83&{fgLE.|FZ^$>@Q(yb#N,Eh~N]e&]=>r5~UnRml1:4EglY{9B+
+    :'wJq$@c_C!l8@<$t,{YUr4K,QJGHSvS~U]H`<+L*x?eGzSk>XH\W:AK\j?@?c1o<k;j'Ei/UL)!*0
+    ILwSR)J\bc)gjz!rrGQ2#i*f:M:ydhK}jp4dWQW?;0{,#iWrCV$4~%e/3)$1/D
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Sun, 22 Sep 2002 21:58:30 -0700
+
+Both Move and Link are one-click actions.
+
+<Button-3> on a folder label Move's the current message
+<Shift-Button-3> on a folder label Link's the current message
+
+>>>Robert Elz said:
+ >     Date:        Thu, 12 Sep 2002 23:26:33 -0500
+ >     From:        Hal DeVore <haldevore@acm.org>
+ >     Message-ID:  <23204.1031891193@dimebox>
+ > 
+ >   | 1) Right click on the folder label in the folder list
+ > 
+ > That (the way I have it configured, and it sounds as if the way Tony does
+ > too) just does a move (rather than select as target without moving).
+ > 
+ > Of course, if you can manage to get no messages currently selected, then
+ > it works fine.
+ > 
+ >   | 2) In the main window, the "+" key puts you into a "change 
+ >   |    folder" mode (the first time you use it after starting exmh),
+ >   |    hit a second + and you go to "set a target" mode.  Type a few
+ >   |    characters of the folder name and hit space for autocomplete.
+ > 
+ > This works, but is not nice if you're not using the keyboard, but just
+ > the mouse.
+ > 
+ > Tony: I agree - a nice way to link in one click would be good, and should
+ > be easy to add, though currently adding mouse bindings (something like
+ > shift right click would be a good choice) is much harder than adding
+ > key bindings.
+ > 
+ > But note there's no need to "undo" - the way I generally use link, if
+ > the desired destination folder isn't the current selected target, is
+ > to right click on the target, which selects it and moves the message,
+ > (and because I have the "automatic move to the next message on move or
+ > link option set) select the message again, and then "Link".
+ > 
+ > Exmh only permits one uncomitted action to be selected for a message at a
+ > time, that is, one of delete, move, or link.   Selecting any of those
+ > implicitly undoes any previous choice from the three (so you cannot
+ > achieve a "move" by doing a link, then delete, then commit, it needs to
+ > be link, commit, delete, commit).  (xmh was just the same there incidentally
+     ).
+ > 
+ >   | How's spring shaping up "down under"?
+ > 
+ > No meaningful comment from me, I'm not there at the minute.   But I'm told
+ > that where I'm from it is cold, wet, and miserable, though has been better
+ > during the day (sunny days, cold nights) for the past few.    In any case,
+ > all of that is a good enough reason to stay away...
+ > 
+ > kre
+ > 
+ > 
+ > 
+ > _______________________________________________
+ > Exmh-users mailing list
+ > Exmh-users@redhat.com
+ > https://listman.redhat.com/mailman/listinfo/exmh-users
+
+--
+Brent Welch
+Software Architect, Panasas Inc
+Pioneering the World's Most Scalable and Agile Storage Network
+www.panasas.com
+welch@panasas.com
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

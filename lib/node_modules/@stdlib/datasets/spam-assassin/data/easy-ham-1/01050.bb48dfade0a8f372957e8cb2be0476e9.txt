@@ -1,0 +1,166 @@
+From rpm-list-admin@freshrpms.net  Tue Sep  3 14:20:51 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (unknown [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 90D3C16F45
+	for <jm@localhost>; Tue,  3 Sep 2002 14:19:11 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 03 Sep 2002 14:19:11 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g837PZZ08887 for
+    <jm-rpm@jmason.org>; Tue, 3 Sep 2002 08:25:35 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g837N3J21203; Tue, 3 Sep 2002 09:23:03
+    +0200
+Received: from bob.dudex.net (dsl092-157-004.wdc1.dsl.speakeasy.net
+    [66.92.157.4]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g837M4J17841
+    for <rpm-list@freshrpms.net>; Tue, 3 Sep 2002 09:22:08 +0200
+Received: from [66.92.157.3] (helo=www.dudex.net) by bob.dudex.net with
+    esmtp (Exim 3.35 #1) id 17m81B-0002vI-00; Tue, 03 Sep 2002 03:22:33 -0400
+X-Originating-Ip: [207.172.11.147]
+From: "" Angles " Puglisi" <angles@aminvestments.com>
+To: "Lance" <lance_tt@bellsouth.net>
+Cc: "FreshRPMs List" <rpm-zzzlist@freshrpms.net>
+Subject: Re: thanks for the gamix source rpms! [ALSA stuff]
+Message-Id: <20020903.3BF.49876600@www.dudex.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 8bit
+Content-Disposition: inline
+X-Mailer: AngleMail for phpGroupWare (http://www.phpgroupware.org) v
+    0.9.14.000
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Tue, 03 Sep 2002 07:21:19 +0000
+Date: Tue, 03 Sep 2002 07:21:19 +0000
+
+I wish I could answer your question but my laptop does not have the digital stuff
+hooked up :( so I so not know about it. I have an excellent ESS Maestro3 which OSS
+supports pretty lame so I was forced to learn about ALSA.
+
+I have used these commands to explore ALSA and my chip:
+
+arecord -l   (list devices)
+arecord -L   (list PCM decices)
+
+I get some output like this:
+
+> arecord -l
+card 0: MAESTRO3 [ESS Allegro PCI], device 0: Allegro [Allegro]
+  Subdevices: 1/1
+  Subdevice #0: subdevice #0
+
+> arecord -L
+PCM list:
+ (SNIP - craploads of output)
+
+I noticed that the output from this commands kind of maps to what the alsamixer or
+gamix have.
+
+For what it is worth, here is what I have in modules.conf for my sound stuff:
+
+> ## ALSA portion
+> alias char-major-116 snd
+> ## OSS/Free portion
+> alias char-major-14 soundcore
+>
+> ## ALSA portion
+> alias snd-card-0 snd-maestro3
+> ## OSS/Free portion
+> alias sound-slot-0 snd-card-0
+>
+> ## OSS/Free portion - card #1
+> alias sound-service-0-0 snd-mixer-oss
+> # BAD alias sound-service-0-1 snd-seq-oss
+> alias sound-service-0-3 snd-pcm-oss
+> # BAD alias sound-service-0-8 snd-seq-oss
+> alias sound-service-0-12 snd-pcm-oss
+> #
+> ## ALSA Options (optional)
+> options snd snd_major=116 snd_cards_limit=1 snd_device_mode=0666
+> options snd-maestro3 snd_index=0 snd_id=MAESTRO3 snd_amp_gpio=8
+> #
+> ## OSS Options (optional)
+> alias snd-card-1 off
+> alias snd-card-2 off
+> alias snd-card-3 off
+> alias sound-slot-1 off
+> alias sound-service-1-0 off
+>
+> ## Preserve Mixer Settings
+> #post-install /usr/sbin/alsactl restore MAESTRO3
+> #pre-remove /usr/sbin/alsactl store MAESTRO3
+> post-install /usr/sbin/alsactl restore
+> pre-remove /usr/sbin/alsactl store
+
+Hope that helps, good luck.
+
+
+Lance (lance_tt@bellsouth.net) wrote*:
+>
+>Hello,
+>
+>Thanks for these rpms, I removed the binary built from source (.tar.gz)
+>and installed your SRPM of gamix.  One quick question, is there a way to
+>switch between digital out and analog out with the ALSA driver and
+>utilities, or, for that matter, with gamix?  I know with the OSS drivers
+>I was using it was as simple as 'emu-config -d for digital and
+>emu-config -a for analog, with the emu-tools package for SBLive!  I
+>noticed there is SB Live Analog/Digital Output Jack in alsamixer but
+>haven't figured out the key to use, if this is the right control in
+>mixer.  Also, I tried to expand gamix to display all possible controls
+>but it defaults back to 'Wave' and 'Music'  With LFE, Center, Surround
+>and Playback under Wave (this is how I control output of front and rear
+>speakers for digital out...'Surround' and 'Playback')  Under 'Music'
+>there are two controls but unresponsive.  I have a tuner and cassette
+>deck hooked up to an audio/video switch that goes into 'Line In' on the
+>soundcard.  Again, with the OSS drivers, it was as simple as emu-config
+>-d and emu-config -a.  Digital out for anything coming from the
+>computer, analog out for the tuner and cassette deck.  I don't know if
+>this is necessary to switch inbetween to get 'Line In' to work or not,
+>but an expansion of gamix would help, where I could see all the
+>controls....
+>
+>Any help would be greatly appreciated and thanks again for the gamix
+>rpms.
+>
+>Kind Regards,
+>
+>Lance
+>--
+>:
+>####[ Linux One Stanza Tip (LOST) ]###########################
+>
+>Sub : Command line shortcuts (clear)                 LOST #310
+>
+>Tired of typing in "clear" every time you want the screen to
+>be cleared ? Press [Ctrl-L] ... This works for  most shells,
+>(except for ash, bsh and ksh)
+>
+>####<rtorvi@vsnl.net>#########################################
+>:
+>
+
+--
+That's "angle" as in geometry.
+
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

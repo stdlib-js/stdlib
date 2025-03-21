@@ -1,0 +1,137 @@
+From fork-admin@xent.com  Tue Sep 24 23:31:48 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id A36DC16F03
+	for <jm@localhost>; Tue, 24 Sep 2002 23:31:47 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 24 Sep 2002 23:31:47 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8OJD0C18266 for <jm@jmason.org>;
+    Tue, 24 Sep 2002 20:13:00 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 19D072940D3; Tue, 24 Sep 2002 12:09:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mail.evergo.net (unknown [206.191.151.2]) by xent.com
+    (Postfix) with SMTP id CB2E42940C8 for <fork@xent.com>; Tue,
+    24 Sep 2002 12:08:09 -0700 (PDT)
+Received: (qmail 30166 invoked from network); 24 Sep 2002 19:11:52 -0000
+Received: from dsl.206.191.151.102.evergo.net (HELO JMHALL)
+    (206.191.151.102) by mail.evergo.net with SMTP; 24 Sep 2002 19:11:52 -0000
+Reply-To: <johnhall@evergo.net>
+From: "John Hall" <johnhall@evergo.net>
+To: "FoRK" <fork@spamassassin.taint.org>
+Subject: RE: liberal defnitions
+Message-Id: <000d01c263fe$3df8be30$0200a8c0@JMHALL>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.2627
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Importance: Normal
+In-Reply-To: <ILEHJNJFPDLMDEKNIAKCEEJOCAAA.geege@barrera.org>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 24 Sep 2002 12:11:52 -0700
+
+
+Read the article.  I'm afraid I don't understand how the transmission
+prices could have hit $50/tcf.
+
+But I'm also really leery of telling a pipeline company they have to run
+a pipeline at a higher pressure and that they should forego maintenance.
+We had a big pipeline explosion up here awhile ago.
+
+So maybe the judge has a point.  We'll see as the appeals work its way
+out.
+
+> -----Original Message-----
+> From: Geege Schuman [mailto:geege@barrera.org]
+> Sent: Tuesday, September 24, 2002 5:16 AM
+> To: johnhall@evergo.net
+> Subject: RE: liberal defnitions
+> 
+> from slate's "today's papers":  The New York Times and Los Angeles
+Times
+> both lead with word that
+> a federal judge ruled yesterday that the nation's largest
+> national gas pipeline company, El Paso, illegally withheld gas
+> from the market during California's energy squeeze in 2000-01.
+> The judge concluded that El Paso left 21 percent of its capacity
+> in the state off-line, thus driving up the price of gas and
+> helping to induce rolling blackouts.
+> 
+> and this is the product of overregulation?
+> 
+> -----Original Message-----
+> From: fork-admin@xent.com [mailto:fork-admin@xent.com]On Behalf Of
+John
+> Hall
+> Sent: Monday, September 23, 2002 11:57 PM
+> To: FoRK
+> Subject: liberal defnitions
+> 
+> 
+> Depends on how much over spending vs. how much (and what type) over
+> regulation.
+> 
+> The biggest problem with over regulation is the costs can be
+invisible.
+> It also has the ability to single out particular people, while over
+> spending spreads the damage more evenly.  Rent control would be an
+> example of a regulation solution that is in general worse than
+spending
+> tons of money on public housing.
+> 
+> As for the definition of a liberal being someone who seeks to impose
+> both, I find no fault in that definition whatsoever.  The opinion that
+> EITHER we are spending too much OR we have too much regulation is
+pretty
+> much anathema to liberal politics.
+> 
+> Finally, those who argue that there are private replacements for much
+> government regulation are not saying that a state of nature (no
+private
+> replacements, no government regulation) is better than government
+> regulation itself.
+> 
+> And in my experience people who label themselves 'Green' (which does
+not
+> include everyone who loves trees and thinks smokestacks are ugly) is a
+> watermelon.
+> 
+> 
+> 
+> 
+> > -----Original Message-----
+> > From: fork-admin@xent.com [mailto:fork-admin@xent.com] On Behalf Of
+> Geege
+> > Schuman
+> >
+> > funny. i read it as green = red, as in accounting, as in fiscally
+> > irresponsible.  which do you think is the worse indictment -
+> > overregulation
+> > or overspending?  there are many (dickheads) who buy into the
+> > neo-conservative media's (fox's) definiton of "liberal" as "one who
+> seeks
+> > to
+> > impose both."
+> 
+> 
+> 
+
+
+

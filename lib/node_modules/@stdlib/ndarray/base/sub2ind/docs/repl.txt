@@ -1,0 +1,56 @@
+
+{{alias}}( shape, strides, offset, ...subscript, mode )
+    Converts subscripts to a linear index.
+
+    When provided a stride array containing negative strides, if an `offset` is
+    greater than `0`, the function treats subscripts as mapping to a linear
+    index in an underlying data buffer for the array, thus returning a linear
+    index from the perspective of that buffer. If an `offset` is equal to `0`,
+    the function treats subscripts as mapping to a linear index in an array
+    view, thus returning a linear index from the perspective of that view. In
+    short, from the perspective of a view, view data is always ordered.
+
+    When provided fewer modes than dimensions, the function recycles modes using
+    modulo arithmetic.
+
+    Parameters
+    ----------
+    shape: ArrayLike
+        Array shape.
+
+    strides: ArrayLike
+        Stride array.
+
+    offset: integer
+        Location of the first indexed value based on the stride array.
+
+    subscript: ...integer
+        Subscripts.
+
+    mode: Array<string>
+        Specifies how to handle subscripts which exceed array dimensions for
+        each dimension. If the mode for a dimension is equal to 'throw', the
+        function throws an error when a subscript exceeds array dimensions. If
+        equal to 'normalize', the function normalizes negative subscripts and
+        throws an error when a subscript exceeds array dimensions. If equal to
+        'wrap', the function wraps around subscripts exceeding array dimensions
+        using modulo arithmetic. If equal to 'clamp', the function sets
+        subscripts exceeding array dimensions to either `0` (minimum index) or
+        the maximum index along a particular dimension.
+
+    Returns
+    -------
+    idx: integer
+        Linear index.
+
+    Examples
+    --------
+    > var d = [ 3, 3, 3 ];
+    > var s = [ 9, 3, 1 ];
+    > var o = 0;
+    > var idx = {{alias}}( d, s, o, 1, 2, 2, [ 'throw' ] )
+    17
+
+    See Also
+    --------
+

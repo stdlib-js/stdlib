@@ -1,0 +1,374 @@
+From fork-admin@xent.com  Mon Aug 19 11:04:38 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 11BF5441AF
+	for <jm@localhost>; Mon, 19 Aug 2002 05:55:34 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:55:34 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7HNJd614509 for <jm@jmason.org>;
+    Sun, 18 Aug 2002 00:19:46 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id C92EB2940F1; Sat, 17 Aug 2002 16:17:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from alumnus.caltech.edu (alumnus.caltech.edu [131.215.49.51])
+    by xent.com (Postfix) with ESMTP id 8C09A294098 for <fork@xent.com>;
+    Sat, 17 Aug 2002 16:16:47 -0700 (PDT)
+Received: from dhcp31-164.ics.uci.edu (localhost [127.0.0.1]) by
+    alumnus.caltech.edu (8.12.3/8.12.3) with ESMTP id g7HNI2Sw013464;
+    Sat, 17 Aug 2002 16:18:02 -0700 (PDT)
+Subject: Some notes on Bollywood movies hitting it big abroad
+Content-Type: text/plain; charset=WINDOWS-1252; format=flowed
+MIME-Version: 1.0 (Apple Message framework v482)
+Cc: Archie Khare <arkhare@yahoo.com>, mxk1@cdc.gov,
+	Kakoli Mitra <kmitra@medicine.tamu.edu>
+To: fork@spamassassin.taint.org
+From: Rohit Khare <khare@alumni.caltech.edu>
+Message-Id: <989378CE-B237-11D6-90D8-000393A46DEA@alumni.caltech.edu>
+X-Mailer: Apple Mail (2.482)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sat, 17 Aug 2002 16:18:10 -0700
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g7HNJd614509
+
+NRI Number One
+
+Expats help Hindi films make dollars and sense even at their own expense
+
+By JEANNE E. FREDRIKSEN
+
+The expatriate in films is nothing new. Casablanca starring Humphrey 
+Bogart as the suave, mysterious Rick in Morocco remains the top favorite 
+60 years after its release in America. Although expat characters' lives 
+are traditionally painted as being extraordinary, the simple fact that 
+they live "elsewhere" adds a sense of adventure, a dash of romance, and 
+a bit of wishful longing. However, expats have never made the kind of 
+impact on films that non-resident Indians (NRIs) have with Hindi cinema, 
+both at the box office and on the big screen.
+
+According to India's 2001 census, the country's population exceeded the 
+1 billion persons milestone, and there are approximately 11 million 
+Indians living, working, and studying elsewhere around the world. NRIs 
+have become a serious market for the Hindi film industry, particularly 
+in the U.K., where approximately 3 percent of the population is 
+Indian/Pakistani, and in the U.S., where 1.7 million out of 281.5 
+million people are Indian. The rupee box office is now augmented quite 
+handsomely by the dollar-and-pound box office, much to the delight of 
+directors and producers.
+
+Among the films reporting a half-to-three-quarters-of-a-million-dollar 
+box office in the U.S. or the U.K. are Aa Ab Laut Chalen (1999), Kaho 
+Naa Pyaar Hai (2000), Refugee (2000), Lajja (2001), and Asoka (2001). 
+The NRI "million-dollar-box-office club" boasts such films as Yaadein 
+(2001) and Lagaan (2001) in the U.S. Taal (1999), Hum Saath Saath Hain 
+(HSSH, 1999), and Mohabbatein (2000) made the mark or better in the U.K. 
+Taal and HSSH doubled their U.K. intakes in the U.S. and brought in $2 
+million each. Kuch Kuch Hota Hai (1998) tallied up $2.6 million in the 
+U.K. Most recently, setting a new high-water mark in the overseas box 
+office, Kabhi Khushi Kabhie Gham (K3G, 2001) grabbed the No. 10 spot its 
+first week of release in the U.S. and earned $2.9 million during its 
+five-week run. In the U.K., K3G earned nearly $3.6 million over an 18 
+week run.
+
+Impressive? Yes, considering that promotion of Hindi films outside of 
+the Indian community is virtually zero, although that may be on the 
+brink of changing slightly. If nothing else, the figures indicate that 
+the NRI spends a big chunk of change on the films.
+
+During the past decade, the inclusion of NRI characters in both 
+commercial and non-commercial films has been on the rise, and in a 
+circular logic, it's only natural that they have become a part of these 
+films' stories. Each NRI touches someone in India, and these "global 
+Indians," as filmmaker Subhash Ghai has called them, cannot be shrugged 
+off as a passing phase. Films featuring or "made for" NRIs have been 
+criticized by some in India, but in reality, many of those films have 
+performed extremely well at the Indian box office. Could this speak to 
+the lure of adventure and the romance of the NRI?
+
+The first Hindi blockbuster to spotlight NRI characters was Dilwale 
+Dulhania Le Jayenge (DDLJ, 1995), the story of two young people who grew 
+up Indian in London. DDLJ introduced us to the mischievous, 
+prank-pulling Raj, who in the beginning fails to graduate but succeeds 
+in pilfering a case of beer from an Indian-owned convenience store. In 
+the end, he steadfastly applies Indian sensibilities in his pursuit of 
+the rebellious-but-trapped Simran as her unwanted arranged marriage 
+approaches. Very possibly, because of this juxtaposition of traits, 
+attitudes, and events, DDLJ enjoys the distinction of being the 
+longest-continually-running film in Indian cinema history.
+
+Popularity aside, there is the ongoing issue regarding accuracy in the 
+characterization of NRIs in films. Often they are drawn as stereotypes, 
+which are easy to lean on, requiring neither depth nor dimension. 
+Because of this, Hindi filmmakers may be said to straddle the border 
+separating East and West, staying securely at home and dipping into 
+their highly-fantasized world of the Indian diaspora.
+
+In many cases, commercial Hindi films present an overly-devised sense of 
+the NRI as being either corruptly-Westernized or as being more homesick 
+than a child gone away to camp for the first time. While these concepts 
+may carry a certain truth, the corresponding misconceptions come from 
+the minds of the at-home Indians, who wag a seemingly-envious finger at 
+the NRI's ability to exist in two worlds: one allowing space and upward 
+mobility, the other offering traditions and history.
+
+Pompous, materialistic, alcohol-drinking, cigarette-smoking, 
+drug-taking, affair-having, spoiled brats …
+
+The first Hindi film I saw was Subhash Ghai's Pardes (1997). Despite 
+encouraging me to see more films, it made me wonder if "NRI" actually 
+meant "Not Really Indian." If the NRI characters weren't silly, whiney 
+troublemakers, they were mean and nasty, embracing every possible 
+negative human quality in stark contrast to the pristine Kusum Ganga. 
+Even the dialogue and song lyrics in the film were designed to instruct 
+the viewer that the West is inferior but one can still bring India back 
+into one's life. The film is propaganda at its finest and filled with 
+relentless reminders of good vs. evil, purity vs. corruption, right vs. 
+wrong, traditional vs. modern … in short India vs. the West.
+
+But this is not where the negativity ends.
+
+Very often, there is a "dress code" for the female characters to help 
+the viewer understand her measure of purity or wickedness: the more 
+traditionally-dressed, the more Indian the woman. Unsurprisingly, this 
+does not seem to carry over to the men's characters.
+
+Running alongside this can be the "training guide" in which NRIs are 
+constantly reeducated that "This is not India …," "This is not America 
+…," "Only in India …," "This is our culture." The repetition seems less 
+designed to be a natural part of life than to foster reinforcement, as 
+if NRIs are too ignorant to appreciate it the first time.
+
+When Indians achieve success and wealth, have large homes, and own their 
+companies in these films, they are industrious, clever, and respected 
+businessmen. The NRI equivalent is held up to a double standard and 
+considered materialistic. Even the printed synopsis of Taal in the Eros 
+Entertainment/B4U DVD booklet refers to the NRI characters' "world of 
+ruthless materialism." On the other hand, the Mumbai-based, plagiarizing 
+Vikrant Kapoor character is likeable enough and presented as an 
+opportunist, which seems to be a step up.
+
+Italy is an unlikely origin for an NRI and offspring in a Hindi film, 
+but Hum Dil De Chuke Sanam (2000) filled the bill. For all the film's 
+splendor, it was regrettable that the Indo-Italian Sameer was presented 
+as a naïve, bumbling nerd who had little going for him beyond his 
+singing ability.
+
+Yaadein gave us a kind and loving, if slightly confused, single parent 
+from London raising three daughters who suffer enough issues to put a 
+therapist into a tailspin. As if that weren't enough, the film includes 
+an American-raised brat who wants nothing to do with parents, settling 
+down, or having babies—hardly the ideal Indian bride-to-be.
+
+And what happens when a married NRI couple splits into the "modern" vs. 
+the "old-fashioned?" The wife is tossed out like the garbage and sent 
+home to India as punishment for being unreceptive to having affairs 
+outside of marriage. Such is the initial setup for Lajja, Rajkumar 
+Santoshi's look into the world of Indian women.
+
+Show me the way to go home …
+
+The other extreme of NRIs in film is the homesick, culture-craving, 
+more-patriotic-than-thou Indian. Building their own mini-Indias for 
+maxi-memories, this NRI portrayal takes a real issue and magnifies it to 
+unreal proportions. And no film illustrates that as extravagantly as the 
+lush and sumptuous Kabhi Khushi Kabhi Gham (K3G).
+
+Not only did K3G enjoy a healthy run at home, it exploded worldwide onto 
+theater screens in Indian communities last December and played to packed 
+houses for weeks. And K3G is a film in which everything—homes, 
+transportation, finances, fashion, holidays, events, emotions, and 
+tears—sets a new standard for the term "larger-than-life."
+
+In K3G, much of the post-interval footage takes place in England. For 
+Anjali, life in London simmers with a patriotic zeal and an 
+all-consuming homesickness manifested in the meticulous maintenance of 
+Indian customs and rituals while she separates herself from her 
+surroundings. Her need for India is so overwhelming that she relies on 
+the false protection of mocking people and places outside of her own 
+family and home.
+
+Overkill? Certainly, as writer-director Karan Johar's inflated 
+representation of what have become some of the filmi passions of the 
+typical NRI. But when it boils down to the common denominators without 
+the fanfare, flash, and fervor, even those who move across country miss 
+their families and familiar surroundings; one always retains a credible 
+amount of home-turf loyalty; and if one's heritage is lost, the person 
+is rendered as no more than a racial statistic.
+
+"Those living in India are surrounded by our culture every minute, even 
+if they don't realize it," says Vivek Malhotra, a thirty-something NRI 
+and business owner in the Chicago area. "Here it's different, but we 
+will always be Indian," he continues, striking at the heart of the 
+perceived problem. "Sometimes, I feel that the movies think we've 
+forgotten that. Maybe the filmmakers should spend some time finding out 
+who we are. I really don't think they have a clue."
+
+On the upside is a beneficial aspect for the children of NRIs. "It's 
+good that these films show our kids what happens in India—the 
+traditions, customs, values," says Parag Gandhi, a long time theater 
+owner and promoter of Hindi films in Chicago. "They may be modernized in 
+India, but the traditional values remain." And many popular films target 
+the late-teens, twenty-something demographic. "Films such as Dilwale 
+Dulhania Le Jayenge, Kuch Kuch Hota Hai, and K3G," adds Gandhi, "are 
+examples of films that are half traditional, half modern, striking a 
+balance between the two for all of the markets."
+
+Another positive consideration is that not all films show NRIs in a 
+questionable light. Caricatures of NRIs have been challenged in 
+commercial films like Kaho Naa Pyaar Hai, Dil Chhata Hai (2001), Monsoon 
+Wedding (2001), and the recent Kitne Door Kitne Paas, all of which 
+present NRIs as more realistic, more human characters. Aa Ab Laut Chalen 
+offers a variety of NRI personalities from the selfish, the conniving, 
+and the party animal to the lovable cabbies and the pandit-cop who make 
+the best of their situations without complaint. Interestingly, the film 
+also dares to include shop owners, Dunkin' Donuts clerks, gas station 
+attendants: characters who aren't weighed down by palatial surroundings, 
+corporate crises, or overseas judgments.
+
+The U.S., the U.K., and Australia are represented in Bombay Boys (1999) 
+by three young men coming/returning to Bombay, India for personal 
+reasons. In a refreshing reversal of the typical attitude concerning 
+NRIs in film, the boys are the "good" Indians, and everyone they meet 
+has some relationship with the darker side of the city. At its most 
+basic, the film shows that if something is lost, it won't necessarily be 
+found in India.
+
+Even the non-commercial, multi-award-winning Bawandar (2001) 
+incorporates an NRI as a connecting thread in the piecing together of 
+Sanvri Devi's story. Curious, passionate about women's rights, the 
+Indo-English journalist represents the fact that the story has a wider 
+interest than a small, rural village.
+
+Stepping outside of the Hindi film industry for a moment, the 
+English/Telegu film Hyderabad Blues (1998) and the English/Tamil film 
+Mitr—My Friend (2002), both smaller-budget films built on delivering 
+messages without preaching, deserve mention. The former engages in the 
+questioning of, rather than the criticism of, East vs. West, and the 
+latter examines the challenges faced by women, NRIs, and their families. 
+The characters and stories of both films enjoy respect in their 
+presentation, partially due to the existence of layered issues that are 
+revealed and resolved (or not) without finger-snapping swiftness or 
+clichéd answers. Hyderabad Blues enjoyed a 31-week run in Mumbai alone, 
+and Mitr—My Friend is currently one of the most-rented films in Indian 
+communities in the U.S.
+
+While the inclusion of NRIs in Hindi films does not guarantee box office 
+success outside of India, it does send a strong signal that filmmakers 
+acknowledge this constantly growing and lucrative audience sector. If 
+the big-budget, big box-office commercial films coming out of Mumbai 
+often seem to bite one of the hands that feeds it, has the box office 
+anywhere been adversely affected? Well … no, not by any charted reports 
+that can be found. And that, itself, sends a loud and clear message back 
+to the industry in Mumbai: "if it isn't broken, don't fix it."
+
+Nevertheless, when filmmakers who see NRIs as falling only to the evil 
+side of Western ways look beyond their assumptions, perhaps they will 
+discard their reliance on stereotypes and start paying their overseas 
+family an increased measure of respect. And when filmmakers who take the 
+homesick and patriotic themes beyond believability analyze their own 
+feelings, perhaps they will realize that what NRIs hold dear in their 
+hearts is no different from what those at home should be proud of. n
+
+NOTE: All box office figures are reported as US$ and are courtesy of 
+Variety Magazine online archives. Not all Hindi films abroad report box 
+office, and not all box office reports are available.
+
+Jeanne E. Fredriksen writes from Chicago. She is family with, friends 
+with, acquainted with, and works for NRIs with an amazing variety of 
+personalities, attitudes, hopes, dreams, goals, livelihoods, needs, 
+wants, and beliefs.
+
+=========================================
+ 
+Dilwale Dulhaniya Le Jayenge
+
+So globally successful is the film that in 1999 it warranted a billboard 
+outside Shinjuku train station in Tokyo, Japan, announcing its 
+screenings sponsored by India Center there. Shinjuku is the 
+entertainment center of Tokyo, and there is plenty of high-profile 
+competition for attention, attendance, and box office. In Japan, where 
+Indian films enjoy a certain popularity with the natives, the country's 
+1995 population census of 125.6 million persons showed only 4,244 were 
+Indian with an additional 13,589 being other South Asians. Without 
+question, DDLJ continues to be a favorite whenever, wherever offered for 
+viewing.
+
+Kabhi Khushi Kabhie Gham
+
+According to a report in the South China Morning Post in January, 2002, 
+all screenings of K3G in December, 2001, were sell-outs in Hong Kong, 
+while pirated copies of the film were the hottest items circulating on 
+the island. Hong Kong's 2001 population census of 6.3 million people 
+revealed that 18,543 were Indian and another 23,581 were Nepalese and 
+Pakistani. K3G's popularity in the Special Administrative Region was 
+impressive because Hong Kong enjoys being the third-largest producer of 
+films by volume after India and the U.S.  	
+
+
+=====================================================
+Bhansali's Musical Heaven
+
+By ANIRUDDH CHAWDA
+
+DEVDAS (Universal, 2002). Hindi film soundtrack. Music: Ismail Darbar. 
+Lyrics: Nusrat Badr
+
+For perhaps the most eagerly anticipated film of the year, filmmaker 
+Sanjay Leela Bhansali's Devdas had to deliver a score that not only met 
+the hype but also let Ismail Darbar prove that the mega-selling Hum Dil 
+De Chuke Sanam was no one-time flash in the pan. By devising a 
+semi-classical, once-in-a-decade, 100 percent "Indian" musical score, 
+Bhansali and Darbar emerge victorious in baking and serving a 10-layer 
+monumental soundtrack.
+
+What is most groundbreaking is the powerful one-two punch of lyrics by 
+newcomer Nusrat Badr and the from-soul-voice of first-timer Shreya 
+Ghosal. Ghosal's voice, reminiscent of both Suman Kalyanpur with a 
+slightly thicker pitch and Anuradha Paudwal without the nasal monotone, 
+is the most original singing voice since Kavita Subramaniam appeared in 
+the Mangeshkar mold. Ghosal's "Silsila ye chaahat ka" is a sultry 
+tabla-dominated opening to 52 minutes of sheer musical bliss. "Maar 
+daala" (Subramaniam, KK) is an excellent example of the use of classical 
+ragas to complement, rather than fill-in, interludes between verses. On 
+"Kahe chhed," Pandit Birju Maharaj, using his own tune, adds an 
+intoxicating opening for Madhuri Dixit's vocals and Subramaniam to 
+finish out a piercing song of longing.
+
+While a combination of Ghosal and Subramaniam give life to on-screen 
+lip-synching for Madhuri Dixit and Aishwarya Rai, on the male side Udit 
+Narayan fronts for Shah Rukh Khan. Narayan's on-target "Bairi piya," a 
+duet with Ghosal, could find company in many Lata-Rafi duets of yore. 
+The up-tempo "Chalak chalak" again smoothly floats Narayan with Vinod 
+Rathod and Ghosal while Subramaniam and Ghosal's jugalbandhi on "Dola re 
+dola" simply shakes the rafters.
+
+Packaged in Universal's Bombay plant, the earliest CD pressings have a 
+cheap, paper-thin casing. Purists may consider replacing the cheap cover 
+with a store-bought sturdier one. At a suggested Bombay retail value of 
+about $2 and selling like hot cakes stateside for $10 a pop, Devdas is 
+without doubt a huge profit-maker for the multinational music marketer. 
+But buyers beware: avoid being distracted by bootleg CDs. This 
+exceptional music and exceptionally well-recorded CD deserve 
+unadulterated musical glory. Pop in only a properly copyrighted, 
+original CD and let Darbar & Co. whisk you away on a magical musical 
+ride.
+
+Lifelong cinephile Aniruddh Chawda lives, works, and writes from 
+Wisconsin, on America's north coast.
+
+http://xent.com/mailman/listinfo/fork
+

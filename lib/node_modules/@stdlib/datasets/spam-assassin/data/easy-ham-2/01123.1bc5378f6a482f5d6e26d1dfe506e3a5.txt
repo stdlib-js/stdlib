@@ -1,0 +1,86 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Fri Jul 19 15:05:56 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 280E243FB5
+	for <jm@localhost>; Fri, 19 Jul 2002 10:05:49 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 15:05:49 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6JE5VJ02606 for <jm-sa@jmason.org>; Fri, 19 Jul 2002 15:05:32 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17VYLc-0000ZL-00; Fri,
+    19 Jul 2002 07:03:08 -0700
+Received: from mail.akitogo.com ([213.146.183.160] helo=akitogo.com) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17VYKo-0003HX-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Fri, 19 Jul 2002 07:02:19 -0700
+Received: from [199.108.103.232] (account kiosk@f1online.de
+    [199.108.103.232] verified) by akitogo.com (CommuniGate Pro SMTP 3.5.9)
+    with ESMTP id 205675; Fri, 19 Jul 2002 16:02:28 +0200
+User-Agent: Microsoft-Entourage/10.1.0.2006
+From: Gunnar Lieb <kiosk@f1online.de>
+To: <spamassassin-talk@example.sourceforge.net>,
+	"(CommuniGate Pro Discussions)" <CGatePro@mail.stalker.com>
+Message-Id: <B95DE879.F91B%kiosk@f1online.de>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"
+Content-Transfer-Encoding: 7bit
+Subject: [SAtalk] Spamassassin webinterface for Communigate using PHP released
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Fri, 19 Jul 2002 16:02:01 +0200
+Date: Fri, 19 Jul 2002 16:02:01 +0200
+
+Hi,
+
+akitogo is happy to announce that Jochen Becker has just finished a small
+nice PHP interface which integrates Spammassassin in the webuser interface
+from Communigate.
+
+It currently tested with RedHat,PHP and CGPro
+
+What is does:
+-------------
+The users are able to:
+- edit the blacklist and whitelist
+- edit required hits (score)
+- define a mailbox in which every spam mail is dropped
+
+Spamassassin settings made by the webinterfaxe are handled domain wide.
+
+You can download it from:
+-------------------------
+http://www.akitogo.com/download/spamAssassinCommunigateWebinterface.tar.gz
+
+
+Enjoy,
+
+Gunnar Lieb, akitogo OHG
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

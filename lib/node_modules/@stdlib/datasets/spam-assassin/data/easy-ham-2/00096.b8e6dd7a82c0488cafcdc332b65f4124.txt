@@ -1,0 +1,87 @@
+From ilug-admin@linux.ie  Mon Jul 22 18:12:45 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3FE5E440D7
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:25 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:25 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFGv901750 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 16:16:57 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id PAA32424 for <jm-ilug@jmason.org>;
+    Mon, 22 Jul 2002 15:26:53 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA30102; Mon, 22 Jul 2002 15:21:57 +0100
+Received: from mail2.xelector.com ([62.17.160.138]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA30077 for <ilug@linux.ie>; Mon,
+    22 Jul 2002 15:21:50 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [62.17.160.138] claimed to
+    be mail2.xelector.com
+Received: from [172.18.80.15] (helo=xelwx002.xelector.com) by
+    mail2.xelector.com with esmtp (Exim 3.34 #1) id 17WdyF-0001up-00;
+    Mon, 22 Jul 2002 15:15:31 +0100
+Received: from xeljreilly (xeljreilly.talbot.xelector.com [172.18.80.234])
+    by xelwx002.xelector.com with SMTP (Microsoft Exchange Internet Mail
+    Service Version 5.5.2653.13) id 39X75HBN; Mon, 22 Jul 2002 15:19:01 +0100
+Message-Id: <000701c2318a$993a2e10$ea5012ac@xelector.com>
+From: "John Reilly" <jr@inconspicuous.org>
+To: "Paul O'Neil" <poneil@dbiassociates.net>, <ilug@linux.ie>
+References: <NIEFJJMMNPJNOPIDJBFBOEEECDAA.poneil@dbiassociates.net>
+Subject: Re: [ILUG] nmap results
+Date: Mon, 22 Jul 2002 15:18:06 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.00.2919.6600
+X-Mimeole: Produced By Microsoft MimeOLE V5.00.2919.6600
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+As far as I can remember, the fact that the IPID is zero was introduced into
+2.4 was to introduce correct behaviour, i.e. in the case where it is not
+needed, it is set to zero.  This was discussed on bugtraq a while
+ago....lemme see...
+http://cert.uni-stuttgart.de/archive/bugtraq/2002/03/msg00372.html shows a
+message from nmap's author on the subject.  The only thing having IPID==0
+achieves is that you have one more criteria on which to base your OS
+fingerprint which isn't really much of a problem to be honest.
+
+Stop worrying about it :)
+
+Cheers,
+jr
+----- Original Message -----
+From: "Paul O'Neil" <poneil@dbiassociates.net>
+To: <ilug@linux.ie>
+Sent: Monday, July 22, 2002 1:50 PM
+Subject: [ILUG] nmap results
+
+
+> I had posted previously about the 2.4 kernel using iptables I ran nmap
+> against. The IPID sequence generation was all zeros. Someone said this was
+> indicative of earlier kernels but was fixed about 2.4.5 version. Since I'm
+> running the latest what is causing this? I ran nmap against a 2.2 kernel
+> using chains and it had better results than the stock 2.4 kernel.
+>
+> --
+> Irish Linux Users' Group: ilug@linux.ie
+> http://www.linux.ie/mailman/listinfo/ilug for (un)subscription
+information.
+> List maintainer: listmaster@linux.ie
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

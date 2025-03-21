@@ -1,0 +1,18 @@
+{
+	"boolean": [
+		"help",
+		"version",
+		"ignore-case"
+	],
+	"string": [
+		"words"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		]
+	}
+}

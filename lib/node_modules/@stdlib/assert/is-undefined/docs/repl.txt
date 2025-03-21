@@ -1,0 +1,24 @@
+
+{{alias}}( value )
+    Tests if a value is undefined.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is undefined.
+
+    Examples
+    --------
+    > var bool = {{alias}}( void 0 )
+    true
+    > bool = {{alias}}( null )
+    false
+
+    See Also
+    --------
+

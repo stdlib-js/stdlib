@@ -1,0 +1,61 @@
+From ilug-admin@linux.ie  Tue Aug 20 12:23:08 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 408E143C3A
+	for <jm@localhost>; Tue, 20 Aug 2002 07:22:52 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 12:22:52 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7KBNRZ03842 for
+    <jm-ilug@jmason.org>; Tue, 20 Aug 2002 12:23:27 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA32097; Tue, 20 Aug 2002 12:22:48 +0100
+Received: from jinny.ie ([193.120.171.2]) by lugh.tuatha.org (8.9.3/8.9.3)
+    with ESMTP id MAA32071 for <ilug@linux.ie>; Tue, 20 Aug 2002 12:22:41
+    +0100
+Received: (from john@localhost) by jinny.ie (8.11.6/8.11.6) id
+    g7KBN4x18072; Tue, 20 Aug 2002 12:23:04 +0100
+X-Authentication-Warning: jlooney.jinny.ie: john set sender to
+    jlooney@jinny.ie using -f
+Date: Tue, 20 Aug 2002 12:23:04 +0100
+From: "John P. Looney" <valen@tuatha.org>
+To: "Wynne, Conor" <conor_wynne@maxtor.com>
+Cc: "'ilug@linux.ie'" <ilug@linux.ie>
+Subject: Re: [ILUG] mirroring on a running system
+Message-Id: <20020820112304.GE14073@jinny.ie>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: "Wynne, Conor" <conor_wynne@maxtor.com>,
+	"'ilug@linux.ie'" <ilug@linux.ie>
+References: <0D443C91DCE9CD40B1C795BA222A729E0188560F@milexc01.maxtor.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <0D443C91DCE9CD40B1C795BA222A729E0188560F@milexc01.maxtor.com>
+User-Agent: Mutt/1.4i
+X-Os: Red Hat Linux 7.3/Linux 2.4.18-3
+X-Url: http://www.redbrick.dcu.ie/~valen
+X-Gnupg-Publickey: http://www.redbrick.dcu.ie/~valen/public.asc
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Tue, Aug 20, 2002 at 12:21:12PM +0100, Wynne, Conor mentioned:
+> Well boyz, whats the story? Its tuesday an all. I've to work late today so
+> what time are we talking about? 
+
+ I've to leave the girlfriend home first. So, I'll be there sometime just
+after seven.
+
+Kate
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

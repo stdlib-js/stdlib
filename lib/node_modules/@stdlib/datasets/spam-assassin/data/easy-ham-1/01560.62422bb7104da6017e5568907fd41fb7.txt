@@ -1,0 +1,79 @@
+From razor-users-admin@lists.sourceforge.net  Thu Sep  5 11:26:08 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 4596C16F1F
+	for <jm@localhost>; Thu,  5 Sep 2002 11:26:08 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 05 Sep 2002 11:26:08 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g84IoYZ15135 for <jm-razor@jmason.org>; Wed, 4 Sep 2002 19:50:34 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17meze-0003Rp-00; Wed,
+    04 Sep 2002 11:35:10 -0700
+Received: from gwp-32.gwp.com ([206.117.30.231]
+    helo=gwpmail01.corp.vipmail.com) by usw-sf-list1.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17mezN-0003yS-00 for
+    <razor-users@lists.sourceforge.net>; Wed, 04 Sep 2002 11:34:53 -0700
+Received: from Ariel (unverified [198.6.50.33]) by
+    gwpmail01.corp.vipmail.com (Vircom SMTPRS 5.3.228) with ESMTP id
+    <B0001379876@gwpmail01.corp.vipmail.com> for
+    <razor-users@lists.sourceforge.net>; Wed, 4 Sep 2002 11:35:53 -0700
+From: "Bill Sobel" <bsobel@vipmail.com>
+To: <razor-users@example.sourceforge.net>
+Message-Id: <001101c25441$bdcd7000$7099409b@evergreen.local>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.2616
+In-Reply-To: <20020904165528.GA1935@darkridge.com>
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2800.1106
+Importance: Normal
+X-Vipmail-Smtpmailfrom: bsobel@vipmail.com
+X-Vopfilter-Ip: 198.6.50.33
+Subject: [Razor-users] Windows port / bug reports?
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Wed, 4 Sep 2002 11:34:44 -0700
+Date: Wed, 4 Sep 2002 11:34:44 -0700
+
+Hi,
+
+Newbie (to the list) question;  I've been working on porting the code to
+run under Perl on Windows.  The changes are fairly minor and can be made
+to interoperate with the current code.  How would one best go about
+getting those changes merged in (better question, would there be
+interest in such a version and getting those changes merged in)?
+
+Bill
+
+
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+

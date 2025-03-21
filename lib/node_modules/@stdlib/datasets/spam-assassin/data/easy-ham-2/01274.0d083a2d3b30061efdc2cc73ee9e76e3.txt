@@ -1,0 +1,31 @@
+From nobody@dogma.slashnull.org  Wed Aug 21 17:23:10 2002
+Return-Path: <nobody@dogma.slashnull.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B5B8943C32
+	for <jm@localhost>; Wed, 21 Aug 2002 12:23:10 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 21 Aug 2002 17:23:10 +0100 (IST)
+Received: (from mail@localhost) by dogma.slashnull.org (8.11.6/8.11.6) id
+    g7LGMmA01223; Wed, 21 Aug 2002 17:22:48 +0100
+Date: Wed, 21 Aug 2002 17:22:48 +0100
+Message-Id: <200208211622.g7LGMmA01223@dogma.slashnull.org>
+From: nobody@dogma.slashnull.org
+Subject: blogged item
+To: yyyy+blogged@spamassassin.taint.org
+
+<a href=http://www.aaronsw.com/weblog/>
+Aaron</a> sez:
+
+  It's 1:30AM. Hours ago, my server seemed to stop working. I could ping
+  it, but I couldn't do anything else. We drove over to see what was up.
+  ... I'll just say that everything broke. Repeatedly.  ...  I think I
+  have a small idea what it's like to be Evan now. This is not what I want
+  to be when I grow up.
+
+Never mind that -- I think you now have an idea what it's like to be
+an on-call sysadmin ;)
+
+
+

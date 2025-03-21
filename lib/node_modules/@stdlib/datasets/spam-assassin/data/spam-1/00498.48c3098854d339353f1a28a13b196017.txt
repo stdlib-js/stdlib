@@ -1,0 +1,54 @@
+From removeme@marysstore.com  Tue Dec  3 15:16:09 2002
+Return-Path: <removeme@marysstore.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 21DD516F18
+	for <jm@localhost>; Tue,  3 Dec 2002 15:16:08 +0000 (GMT)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 03 Dec 2002 15:16:08 +0000 (GMT)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id gB3EBA811998 for
+    <jm@jmason.org>; Tue, 3 Dec 2002 14:11:11 GMT
+Received: from mail.webnote.net (adsl-67-64-113-55.dsl.rcsntx.swbell.net
+    [67.64.113.55] (may be forged)) by webnote.net (8.9.3/8.9.3) with SMTP id
+    OAA16696 for <jm@netnoteinc.com>; Tue, 3 Dec 2002 14:12:45 GMT
+From: "Mary's Store" <removeme@marysstore.com>
+Date: Tue, 03 Dec 2002 08:14:54
+To: yyyy@netnoteinc.com
+Subject: 
+MIME-Version: 1.0
+Content-Type: multipart/related; boundary="----=_NextPart_OOMLWVMESG"
+Content-Transfer-Encoding: 7bit
+Message-Id: PM20008:14:54 AM
+
+This is an HTML email message.  If you see this, your mail client does not support HTML messages.
+
+------=_NextPart_OOMLWVMESG
+Content-Type: text/html;charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+
+<TABLE border=0 cellPadding=0 cellSpacing=10 height=416 width="75%">
+<TBODY>
+<TR>
+<TD align=middle bgColor=#0000ff colSpan=3 height=28 vAlign=center width="100%"><STRONG><BIG><BIG>THANK YOU FOR SHOPPING WITH US</BIG></BIG></STRONG></TD></TR>
+<TR>
+<TD align=middle height=108 vAlign=top width="19%">
+<P align=center><EM><STRONG><FONT color=#ff0000>GIFTS FOR ALL OCCASIONS</FONT></STRONG></EM></P>
+<P align=center>&nbsp;</P>
+<P align=center>FREE GIFT WITH $50.00 PURCHASE</P></TD>
+<TD align=middle height=108 vAlign=center width="31%"><IMG alt="31509.jpg (37077 bytes)" height=186 src="http://www.marysstore.com/images/products/images/31509.jpg" width=185></TD>
+<TD align=left height=108 vAlign=top width="45%"><FONT face=Arial size=2>For a limited time only, receive this 11” plush Santa Bear, FREE, with your purchase of $50.00 or more. 
+<P>When your order totals $50.00 or more (order must be $50.00 or more before shipping and handling) this Santa Bear is added to your cart for free, while supplies last.</FONT></P></TD></TR>
+<TR>
+<TD height=250 width="19%"><IMG alt="wpe8.jpg (15433 bytes)" height=248 src="http://www.marysstore.com/images/products/newpag1.jpg" width=174></TD>
+<TD align=left colSpan=2 height=250 vAlign=top width="69%">
+<P align=left><FONT color=#0000ff>Mary's Store would like to thank you for being a valued customer.&nbsp;&nbsp; As our way of saying thanks to you, the customer, we are offering a 15% discount&nbsp; on all purchases made during the month of&nbsp; November.&nbsp; Just enter the word:</FONT></P>
+<P align=center><FONT color=#0000ff><STRONG>THANKS</STRONG>&nbsp;&nbsp; </FONT></P>
+<P align=left><FONT color=#0000ff>In the discount code box during checkout to receive your automatic 15% discount.</FONT></P>
+<P align=center><FONT color=#0000ff><A href="http://www.marysstore.com">CLICK HERE</A> <A href="http://www.marysstore.com">TO ENTER </A></FONT></P>
+<P align=center><A href="http://www.marysstore.com"><FONT color=#0000ff>MARY'S STORE</FONT></A></P></TD></TR></TBODY></TABLE>
+<P><SMALL><SMALL>If you do not wish to receive further discounts please <A href="mailto:removeme@marysstore.com">click here</A> and type remove in the subject line.</SMALL></SMALL></P>
+------=_NextPart_OOMLWVMESG--
+
+

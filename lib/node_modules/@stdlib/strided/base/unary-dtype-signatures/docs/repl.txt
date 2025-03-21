@@ -1,0 +1,43 @@
+
+{{alias}}( dtypes1, dtypes2[, options] )
+    Generates a list of unary interface signatures from strided array data
+    types.
+
+    The function returns a strided array having a stride length of two (i.e.,
+    every two elements define a unary interface signature).
+
+    For each signature (i.e., set of two consecutive non-overlapping strided
+    array elements), the first element is the input data type and the second
+    element is the return data type.
+
+    All signatures follow type promotion rules.
+
+    Parameters
+    ----------
+    dtypes1: ArrayLike<any>
+        List of supported data types for the input argument.
+
+    dtypes2: ArrayLike<any>
+        List of supported data types for the output argument.
+
+    options: Object (optional)
+        Options.
+
+    options.enums: boolean (optional)
+        Boolean flag indicating whether to return signatures as a list of data
+        type enumeration constants. Default: false.
+
+    Returns
+    -------
+    out: Array
+        Strided array containing unary interface signatures.
+
+    Examples
+    --------
+    > var dt = {{alias:@stdlib/strided/dtypes}}();
+    > var out = {{alias}}( dt, dt )
+    [...]
+
+    See Also
+    --------
+

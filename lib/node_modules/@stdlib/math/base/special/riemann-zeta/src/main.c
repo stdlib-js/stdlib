@@ -1,0 +1,813 @@
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2024 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*
+*
+* ## Notice
+*
+* The original C++ code and copyright notice are from the [Boost library]{@link http://www.boost.org/doc/libs/1_85_0/boost/math/special_functions/zeta.hpp}. The implementation follows the original, but has been modified for JavaScript.
+*
+* ```text
+* (C) Copyright John Maddock 2006.
+*
+* Use, modification and distribution are subject to the
+* Boost Software License, Version 1.0. (See accompanying file
+* LICENSE or copy at http://www.boost.org/LICENSE_1_0.txt)
+* ```
+*/
+
+#include "stdlib/math/base/special/riemann_zeta.h"
+#include "stdlib/math/base/assert/is_nan.h"
+#include "stdlib/math/base/assert/is_integer.h"
+#include "stdlib/math/base/special/abs.h"
+#include "stdlib/math/base/special/exp.h"
+#include "stdlib/math/base/special/floor.h"
+#include "stdlib/math/base/special/gamma.h"
+#include "stdlib/math/base/special/gammaln.h"
+#include "stdlib/math/base/special/sinpi.h"
+#include "stdlib/math/base/special/pow.h"
+#include "stdlib/math/base/special/powm1.h"
+#include "stdlib/math/base/special/ln.h"
+#include "stdlib/constants/float64/pinf.h"
+#include "stdlib/constants/float64/ninf.h"
+#include "stdlib/constants/float64/two_pi.h"
+#include "stdlib/constants/float64/sqrt_eps.h"
+#include "stdlib/constants/float64/ln_sqrt_two_pi.h"
+#include "stdlib/constants/float64/max_safe_nth_factorial.h"
+#include <stdint.h>
+
+static const int32_t MAX_BERNOULLI_2N = 129;
+static const double MAX_LN = 709.0;
+static const double Y1 = 1.2433929443359375;
+static const double Y3 = 0.6986598968505859375;
+
+// -ln(eps)/2 => -ln(2.220446049250313e-16)/2 = 18.021826694558577
+static const int32_t N = 18;
+
+// 2**N
+static const int32_t TWO_N = 262144;
+static const int32_t NEG_TWO_N = -TWO_N;
+static const double BERNOULLI[ 130 ] = {
+	1.00000000000000000000000000000000000000000,
+	0.166666666666666666666666666666666666666667,
+	-0.0333333333333333333333333333333333333333333,
+	0.0238095238095238095238095238095238095238095,
+	-0.0333333333333333333333333333333333333333333,
+	0.0757575757575757575757575757575757575757576,
+	-0.253113553113553113553113553113553113553114,
+	1.16666666666666666666666666666666666666667,
+	-7.09215686274509803921568627450980392156863,
+	54.9711779448621553884711779448621553884712,
+	-529.124242424242424242424242424242424242424,
+	6192.12318840579710144927536231884057971014,
+	-86580.2531135531135531135531135531135531136,
+	1.42551716666666666666666666666666666666667e6,
+	-2.72982310678160919540229885057471264367816e7,
+	6.01580873900642368384303868174835916771401e8,
+	-1.51163157670921568627450980392156862745098e10,
+	4.29614643061166666666666666666666666666667e11,
+	-1.37116552050883327721590879485616327721591e13,
+	4.88332318973593166666666666666666666666667e14,
+	-1.92965793419400681486326681448632668144863e16,
+	8.41693047573682615000553709856035437430786e17,
+	-4.03380718540594554130768115942028985507246e19,
+	2.11507486380819916056014539007092198581560e21,
+	-1.20866265222965259346027311937082525317819e23,
+	7.50086674607696436685572007575757575757576e24,
+	-5.03877810148106891413789303052201257861635e26,
+	3.65287764848181233351104308429711779448622e28,
+	-2.84987693024508822262691464329106781609195e30,
+	2.38654274996836276446459819192192149717514e32,
+	-2.13999492572253336658107447651910973926742e34,
+	2.05009757234780975699217330956723102516667e36,
+	-2.09380059113463784090951852900279701847092e38,
+	2.27526964884635155596492603527692645814700e40,
+	-2.62577102862395760473030497361582020814490e42,
+	3.21250821027180325182047923042649852435219e44,
+	-4.15982781667947109139170744952623589366896e46,
+	5.69206954820352800238834562191210586444805e48,
+	-8.21836294197845756922906534686173330145509e50,
+	1.25029043271669930167323398297028955241772e53,
+	-2.00155832332483702749253291988132987687242e55,
+	3.36749829153643742333966769033387530162196e57,
+	-5.94709705031354477186604968440515408405791e59,
+	1.10119103236279775595641307904376916046305e62,
+	-2.13552595452535011886583850190410656789733e64,
+	4.33288969866411924196166130593792062184514e66,
+	-9.18855282416693282262005552155018971389604e68,
+	2.03468967763290744934550279902200200659751e71,
+	-4.70038339580357310785752555350060606545967e73,
+	1.13180434454842492706751862577339342678904e76,
+	-2.83822495706937069592641563364817647382847e78,
+	7.40642489796788506297508271409209841768797e80,
+	-2.00964548027566044834656196727153631868673e83,
+	5.66571700508059414457193460305193569614195e85,
+	-1.65845111541362169158237133743199123014950e88,
+	5.03688599504923774192894219151801548124424e90,
+	-1.58614682376581863693634015729664387827410e93,
+	5.17567436175456269840732406825071225612408e95,
+	-1.74889218402171173396900258776181591451415e98,
+	6.11605199949521852558245252642641677807677e100,
+	-2.21227769127078349422883234567129324455732e103,
+	8.27227767987709698542210624599845957312047e105,
+	-3.19589251114157095835916343691808148735263e108,
+	1.27500822233877929823100243029266798669572e111,
+	-5.25009230867741338994028246245651754469199e113,
+	2.23018178942416252098692981988387281437383e116,
+	-9.76845219309552044386335133989802393011669e118,
+	4.40983619784529542722726228748131691918758e121,
+	-2.05085708864640888397293377275830154864566e124,
+	9.82144332797912771075729696020975210414919e126,
+	-4.84126007982088805087891967099634127611305e129,
+	2.45530888014809826097834674040886903996737e132,
+	-1.28069268040847475487825132786017857218118e135,
+	6.86761671046685811921018885984644004360924e137,
+	-3.78464685819691046949789954163795568144895e140,
+	2.14261012506652915508713231351482720966602e143,
+	-1.24567271371836950070196429616376072194583e146,
+	7.43457875510001525436796683940520613117807e148,
+	-4.55357953046417048940633332233212748767721e151,
+	2.86121128168588683453638472510172325229190e154,
+	-1.84377235520338697276882026536287854875414e157,
+	1.21811545362210466995013165065995213558174e160,
+	-8.24821871853141215484818457296893447301419e162,
+	5.72258779378329433296516498142978615918685e165,
+	-4.06685305250591047267679693831158655602196e168,
+	2.95960920646420500628752695815851870426379e171,
+	-2.20495225651894575090311752273445984836379e174,
+	1.68125970728895998058311525151360665754464e177,
+	-1.31167362135569576486452806355817153004431e180,
+	1.04678940094780380821832853929823089643829e183,
+	-8.54328935788337077185982546299082774593270e185,
+	7.12878213224865423522884066771438224721245e188,
+	-6.08029314555358993000847118686477458461988e191,
+	5.29967764248499239300942910043247266228490e194,
+	-4.71942591687458626443646229013379911103761e197,
+	4.29284137914029810894168296541074669045521e200,
+	-3.98767449682322074434477655542938795106651e203,
+	3.78197804193588827138944181161393327898220e206,
+	-3.66142336836811912436858082151197348755196e209,
+	3.61760902723728623488554609298914089477541e212,
+	-3.64707726451913543621383088655499449048682e215,
+	3.75087554364544090983452410104814189306842e218,
+	-3.93458672964390282694891288533713429355657e221,
+	4.20882111481900820046571171111494898242731e224,
+	-4.59022962206179186559802940573325591059371e227,
+	5.10317257726295759279198185106496768539760e230,
+	-5.78227623036569554015377271242917142512200e233,
+	6.67624821678358810322637794412809363451080e236,
+	-7.85353076444504163225916259639312444428230e239,
+	9.41068940670587255245443288258762485293948e242,
+	-1.14849338734651839938498599206805592548354e246,
+	1.42729587428487856771416320087122499897180e249,
+	-1.80595595869093090142285728117654560926719e252,
+	2.32615353076608052161297985184708876161736e255,
+	-3.04957517154995947681942819261542593785327e258,
+	4.06858060764339734424012124124937318633684e261,
+	-5.52310313219743616252320044093186392324280e264,
+	7.62772793964343924869949690204961215533859e267,
+	-1.07155711196978863132793524001065396932667e271,
+	1.53102008959691884453440916153355334355847e274,
+	-2.22448916821798346676602348865048510824835e277,
+	3.28626791906901391668189736436895275365183e280,
+	-4.93559289559603449020711938191575963496999e283,
+	7.53495712008325067212266049779283956727824e286,
+	-1.16914851545841777278088924731655041783900e290,
+	1.84352614678389394126646201597702232396492e293,
+	-2.95368261729680829728014917350525183485207e296,
+	4.80793212775015697668878704043264072227967e299,
+	-7.95021250458852528538243631671158693036798e302,
+	1.33527841873546338750122832017820518292039e306
+};
+static const double ODD_POSITIVE_INTEGERS[ 56 ] = {
+	1.202056903159594285399738161511449990764986292340498881792,
+	1.036927755143369926331365486457034168057080919501912811974,
+	1.008349277381922826839797549849796759599863560565238706417,
+	1.002008392826082214417852769232412060485605851394888756548,
+	1.000494188604119464558702282526469936468606435758208617119,
+	1.000122713347578489146751836526357395714275105895509845136,
+	1.000030588236307020493551728510645062587627948706858177506,
+	1.000007637197637899762273600293563029213088249090262679095,
+	1.000001908212716553938925656957795101353258571144838630235,
+	1.000000476932986787806463116719604373045966446694784937600,
+	1.000000119219925965311073067788718882326387254997784519858,
+	1.000000029803503514652280186063705069366011844730919543312,
+	1.000000007450711789835429491981004170604119454719031882565,
+	1.000000001862659723513049006403909945416948061665330469200,
+	1.000000000465662906503378407298923325122007106269185336947,
+	1.000000000116415501727005197759297383545630951652247172763,
+	1.000000000029103850444970996869294252278840464106981987433,
+	1.000000000007275959835057481014520869012338059264850925555,
+	1.000000000001818989650307065947584832100730085030589309618,
+	1.000000000000454747378304215402679911202948857033904529911,
+	1.000000000000113686840768022784934910483802590643743590284,
+	1.000000000000028421709768893018554550737049426620743688265,
+	1.000000000000007105427395210852712877354479956800022742043,
+	1.000000000000001776356843579120327473349014400279570155508,
+	1.000000000000000444089210314381336419777094026812133645960,
+	1.000000000000000111022302514106613372054456992138270248322,
+	1.000000000000000027755575621361241725816324538540697689849,
+	1.000000000000000006938893904544153697446085326249809274836,
+	1.000000000000000001734723476047576572048972969937595907478,
+	1.000000000000000000433680869002065048749702356590624136125,
+	1.000000000000000000108420217249424140630127111654613825894,
+	1.000000000000000000027105054312234688319546213119497764319,
+	1.000000000000000000006776263578045189097995298741556686206,
+	1.000000000000000000001694065894509799165406492747124861940,
+	1.000000000000000000000423516473627283334786227048335793441,
+	1.000000000000000000000105879118406802338522650015392383985,
+	1.000000000000000000000026469779601698529611341166842038716,
+	1.000000000000000000000006617444900424404067355245332308220,
+	1.000000000000000000000001654361225106075646229923677181049,
+	1.000000000000000000000000413590306276516092600938245550814,
+	1.000000000000000000000000103397576569128709932840955917459,
+	1.000000000000000000000000025849394142282142681277617708450,
+	1.000000000000000000000000006462348535570531803438002161122,
+	1.000000000000000000000000001615587133892632521206011405705,
+	1.000000000000000000000000000403896783473158082562226281299,
+	1.000000000000000000000000000100974195868289515336192507001,
+	1.000000000000000000000000000025243548967072378244674341938,
+	1.000000000000000000000000000006310887241768094495682609394,
+	1.000000000000000000000000000001577721810442023616644432783,
+	1.000000000000000000000000000000394430452610505903352639355,
+	1.000000000000000000000000000000098607613152626475748329968,
+	1.000000000000000000000000000000024651903288156618927101395,
+	1.000000000000000000000000000000006162975822039154730666338,
+	1.000000000000000000000000000000001540743955509788682543361,
+	1.000000000000000000000000000000000385185988877447170622149,
+	1.000000000000000000000000000000000096296497219361792654016
+};
+static const double EVEN_NONNEGATIVE_INTEGERS[ 28 ] = {
+	-0.5,
+	1.644934066848226436472415166646025189218949901206798437735,
+	1.082323233711138191516003696541167902774750951918726907682,
+	1.017343061984449139714517929790920527901817490032853561842,
+	1.004077356197944339378685238508652465258960790649850020329,
+	1.000994575127818085337145958900319017006019531564477517257,
+	1.000246086553308048298637998047739670960416088458003404533,
+	1.000061248135058704829258545105135333747481696169154549482,
+	1.000015282259408651871732571487636722023237388990471531153,
+	1.000003817293264999839856461644621939730454697218953331143,
+	1.000000953962033872796113152038683449345943794187410595750,
+	1.000000238450502727732990003648186752994935041821779658269,
+	1.000000059608189051259479612440207935801227503918837302795,
+	1.000000014901554828365041234658506630698628864788167885910,
+	1.000000003725334024788457054819204018402423232893059295811,
+	1.000000000931327432419668182871764735021219813567955136816,
+	1.000000000232831183367650549200145597594049502482982284530,
+	1.000000000058207720879027008892436859891063054173122604617,
+	1.000000000014551921891041984235929632245318420983808894124,
+	1.000000000003637979547378651190237236355873273512646028384,
+	1.000000000000909494784026388928253311838694908753860000990,
+	1.000000000000227373684582465251522682157797869121382982198,
+	1.000000000000056843419876275856092771829675240685530571588,
+	1.000000000000014210854828031606769834307141739537678698605,
+	1.000000000000003552713691337113673298469534059342992145655,
+	1.000000000000000888178421093081590309609138639138632560887,
+	1.000000000000000222044605079804198399932009420465396423665,
+	1.000000000000000055511151248454812437237365905094302816723
+};
+
+/* Begin auto-generated functions. The following functions are auto-generated. Do not edit directly. */
+
+// BEGIN: rational_p1q1
+
+/**
+* Evaluates a rational function (i.e., the ratio of two polynomials described by the coefficients stored in \\(P\\) and \\(Q\\)).
+*
+* ## Notes
+*
+* -   Coefficients should be sorted in ascending degree.
+* -   The implementation uses [Horner's rule][horners-method] for efficient computation.
+*
+* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
+*
+* @param x    value at which to evaluate the rational function
+* @return     evaluated rational function
+*/
+static double rational_p1q1( const double x ) {
+	double ax;
+	double ix;
+	double s1;
+	double s2;
+	if ( x == 0.0 ) {
+		return 0.2433929443359375;
+	}
+	if ( x < 0.0 ) {
+		ax = -x;
+	} else {
+		ax = x;
+	}
+	if ( ax <= 1.0 ) {
+		s1 = 0.2433929443359375 + (x * (-0.4909247051635357 + (x * (0.055761621477604675 + (x * (-0.003209124988790859 + (x * (0.0004515345286457964 + (x * -0.000009332412703570615)))))))));
+		s2 = 1.0 + (x * (-0.27996033431034445 + (x * (0.04196762233099861 + (x * (-0.00413421406552171 + (x * (0.00024978985622317937 + (x * -0.000010185578841856403)))))))));
+	} else {
+		ix = 1.0 / x;
+		s1 = -0.000009332412703570615 + (ix * (0.0004515345286457964 + (ix * (-0.003209124988790859 + (ix * (0.055761621477604675 + (ix * (-0.4909247051635357 + (ix * 0.2433929443359375)))))))));
+		s2 = -0.000010185578841856403 + (ix * (0.00024978985622317937 + (ix * (-0.00413421406552171 + (ix * (0.04196762233099861 + (ix * (-0.27996033431034445 + (ix * 1.0)))))))));
+	}
+	return s1 / s2;
+}
+
+// END: rational_p1q1
+
+// BEGIN: rational_p2q2
+
+/**
+* Evaluates a rational function (i.e., the ratio of two polynomials described by the coefficients stored in \\(P\\) and \\(Q\\)).
+*
+* ## Notes
+*
+* -   Coefficients should be sorted in ascending degree.
+* -   The implementation uses [Horner's rule][horners-method] for efficient computation.
+*
+* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
+*
+* @param x    value at which to evaluate the rational function
+* @return     evaluated rational function
+*/
+static double rational_p2q2( const double x ) {
+	double ax;
+	double ix;
+	double s1;
+	double s2;
+	if ( x == 0.0 ) {
+		return 0.5772156649015329;
+	}
+	if ( x < 0.0 ) {
+		ax = -x;
+	} else {
+		ax = x;
+	}
+	if ( ax <= 1.0 ) {
+		s1 = 0.5772156649015329 + (x * (0.24321064694010716 + (x * (0.04173646739882165 + (x * (0.003902520870728433 + (x * (0.0002496063671518772 + (x * 0.00001101084409767329)))))))));
+		s2 = 1.0 + (x * (0.29520127712663174 + (x * (0.043460910607305496 + (x * (0.004349305820858264 + (x * (0.0002557842261404885 + (x * 0.000010991819782396113)))))))));
+	} else {
+		ix = 1.0 / x;
+		s1 = 0.00001101084409767329 + (ix * (0.0002496063671518772 + (ix * (0.003902520870728433 + (ix * (0.04173646739882165 + (ix * (0.24321064694010716 + (ix * 0.5772156649015329)))))))));
+		s2 = 0.000010991819782396113 + (ix * (0.0002557842261404885 + (ix * (0.004349305820858264 + (ix * (0.043460910607305496 + (ix * (0.29520127712663174 + (ix * 1.0)))))))));
+	}
+	return s1 / s2;
+}
+
+// END: rational_p2q2
+
+// BEGIN: rational_p3q3
+
+/**
+* Evaluates a rational function (i.e., the ratio of two polynomials described by the coefficients stored in \\(P\\) and \\(Q\\)).
+*
+* ## Notes
+*
+* -   Coefficients should be sorted in ascending degree.
+* -   The implementation uses [Horner's rule][horners-method] for efficient computation.
+*
+* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
+*
+* @param x    value at which to evaluate the rational function
+* @return     evaluated rational function
+*/
+static double rational_p3q3( const double x ) {
+	double ax;
+	double ix;
+	double s1;
+	double s2;
+	if ( x == 0.0 ) {
+		return -0.053725830002359504;
+	}
+	if ( x < 0.0 ) {
+		ax = -x;
+	} else {
+		ax = x;
+	}
+	if ( ax <= 1.0 ) {
+		s1 = -0.053725830002359504 + (x * (0.04451634732923656 + (x * (0.012867767353451996 + (x * (0.0009754177045739176 + (x * (0.00007698751015736541 + (x * (0.000003280325100003831 + (x * 0.0)))))))))));
+		s2 = 1.0 + (x * (0.3338319455303405 + (x * (0.048779843129140764 + (x * (0.0047903970857355845 + (x * (0.00027077670395633634 + (x * (0.000010695186753205734 + (x * 2.3627662397497864e-8)))))))))));
+	} else {
+		ix = 1.0 / x;
+		s1 = 0.0 + (ix * (0.000003280325100003831 + (ix * (0.00007698751015736541 + (ix * (0.0009754177045739176 + (ix * (0.012867767353451996 + (ix * (0.04451634732923656 + (ix * -0.053725830002359504)))))))))));
+		s2 = 2.3627662397497864e-8 + (ix * (0.000010695186753205734 + (ix * (0.00027077670395633634 + (ix * (0.0047903970857355845 + (ix * (0.048779843129140764 + (ix * (0.3338319455303405 + (ix * 1.0)))))))))));
+	}
+	return s1 / s2;
+}
+
+// END: rational_p3q3
+
+// BEGIN: rational_p4q4
+
+/**
+* Evaluates a rational function (i.e., the ratio of two polynomials described by the coefficients stored in \\(P\\) and \\(Q\\)).
+*
+* ## Notes
+*
+* -   Coefficients should be sorted in ascending degree.
+* -   The implementation uses [Horner's rule][horners-method] for efficient computation.
+*
+* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
+*
+* @param x    value at which to evaluate the rational function
+* @return     evaluated rational function
+*/
+static double rational_p4q4( const double x ) {
+	double ax;
+	double ix;
+	double s1;
+	double s2;
+	if ( x == 0.0 ) {
+		return -2.497101906022594;
+	}
+	if ( x < 0.0 ) {
+		ax = -x;
+	} else {
+		ax = x;
+	}
+	if ( ax <= 1.0 ) {
+		s1 = -2.497101906022594 + (x * (-2.600133018094757 + (x * (-0.9392604353771099 + (x * (-0.13844861799574154 + (x * (-0.007017212405498024 + (x * (-0.000022925731059489392 + (x * (0.0 + (x * (0.0 + (x * 0.0)))))))))))))));
+		s2 = 1.0 + (x * (0.7060390259377451 + (x * (0.15739599649558628 + (x * (0.010611795097684508 + (x * (-0.000036910273311764616 + (x * (0.0000049340956392759 + (x * (-2.3405548702528722e-7 + (x * (7.188337293654598e-9 + (x * -1.1292001134749475e-10)))))))))))))));
+	} else {
+		ix = 1.0 / x;
+		s1 = 0.0 + (ix * (0.0 + (ix * (0.0 + (ix * (-0.000022925731059489392 + (ix * (-0.007017212405498024 + (ix * (-0.13844861799574154 + (ix * (-0.9392604353771099 + (ix * (-2.600133018094757 + (ix * -2.497101906022594)))))))))))))));
+		s2 = -1.1292001134749475e-10 + (ix * (7.188337293654598e-9 + (ix * (-2.3405548702528722e-7 + (ix * (0.0000049340956392759 + (ix * (-0.000036910273311764616 + (ix * (0.010611795097684508 + (ix * (0.15739599649558628 + (ix * (0.7060390259377451 + (ix * 1.0)))))))))))))));
+	}
+	return s1 / s2;
+}
+
+// END: rational_p4q4
+
+// BEGIN: rational_p5q5
+
+/**
+* Evaluates a rational function (i.e., the ratio of two polynomials described by the coefficients stored in \\(P\\) and \\(Q\\)).
+*
+* ## Notes
+*
+* -   Coefficients should be sorted in ascending degree.
+* -   The implementation uses [Horner's rule][horners-method] for efficient computation.
+*
+* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
+*
+* @param x    value at which to evaluate the rational function
+* @return     evaluated rational function
+*/
+static double rational_p5q5( const double x ) {
+	double ax;
+	double ix;
+	double s1;
+	double s2;
+	if ( x == 0.0 ) {
+		return -4.785580284951356;
+	}
+	if ( x < 0.0 ) {
+		ax = -x;
+	} else {
+		ax = x;
+	}
+	if ( ax <= 1.0 ) {
+		s1 = -4.785580284951356 + (x * (-1.8919736488197254 + (x * (-0.21140713487441282 + (x * (-0.0001892047582600767 + (x * (0.0011514092388917874 + (x * (0.00006399492042131645 + (x * (0.000001393489324453249 + (x * (0.0 + (x * 0.0)))))))))))))));
+		s2 = 1.0 + (x * (0.24434533737818856 + (x * (0.008733707544922887 + (x * (-0.0011759276533443448 + (x * (-0.00007437436828999331 + (x * (-0.0000021750464515767985 + (x * (4.710012640030765e-9 + (x * (-8.333784406253855e-11 + (x * 6.998415452048457e-13)))))))))))))));
+	} else {
+		ix = 1.0 / x;
+		s1 = 0.0 + (ix * (0.0 + (ix * (0.000001393489324453249 + (ix * (0.00006399492042131645 + (ix * (0.0011514092388917874 + (ix * (-0.0001892047582600767 + (ix * (-0.21140713487441282 + (ix * (-1.8919736488197254 + (ix * -4.785580284951356)))))))))))))));
+		s2 = 6.998415452048457e-13 + (ix * (-8.333784406253855e-11 + (ix * (4.710012640030765e-9 + (ix * (-0.0000021750464515767985 + (ix * (-0.00007437436828999331 + (ix * (-0.0011759276533443448 + (ix * (0.008733707544922887 + (ix * (0.24434533737818856 + (ix * 1.0)))))))))))))));
+	}
+	return s1 / s2;
+}
+
+// END: rational_p5q5
+
+// BEGIN: rational_p6q6
+
+/**
+* Evaluates a rational function (i.e., the ratio of two polynomials described by the coefficients stored in \\(P\\) and \\(Q\\)).
+*
+* ## Notes
+*
+* -   Coefficients should be sorted in ascending degree.
+* -   The implementation uses [Horner's rule][horners-method] for efficient computation.
+*
+* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
+*
+* @param x    value at which to evaluate the rational function
+* @return     evaluated rational function
+*/
+static double rational_p6q6( const double x ) {
+	double ax;
+	double ix;
+	double s1;
+	double s2;
+	if ( x == 0.0 ) {
+		return -10.39489505733089;
+	}
+	if ( x < 0.0 ) {
+		ax = -x;
+	} else {
+		ax = x;
+	}
+	if ( ax <= 1.0 ) {
+		s1 = -10.39489505733089 + (x * (-2.858272196711067 + (x * (-0.34772826653924577 + (x * (-0.025115606465534634 + (x * (-0.001194591734169687 + (x * (-0.00003825293235079675 + (x * (-7.855236337967234e-7 + (x * -8.214657090954655e-9)))))))))))));
+		s2 = 1.0 + (x * (0.2081963335726719 + (x * (0.019568765731720502 + (x * (0.0011107963810248593 + (x * (0.000040850774626603926 + (x * (9.555611230656935e-7 + (x * (1.185071534740229e-8 + (x * 2.226094836273526e-15)))))))))))));
+	} else {
+		ix = 1.0 / x;
+		s1 = -8.214657090954655e-9 + (ix * (-7.855236337967234e-7 + (ix * (-0.00003825293235079675 + (ix * (-0.001194591734169687 + (ix * (-0.025115606465534634 + (ix * (-0.34772826653924577 + (ix * (-2.858272196711067 + (ix * -10.39489505733089)))))))))))));
+		s2 = 2.226094836273526e-15 + (ix * (1.185071534740229e-8 + (ix * (9.555611230656935e-7 + (ix * (0.000040850774626603926 + (ix * (0.0011107963810248593 + (ix * (0.019568765731720502 + (ix * (0.2081963335726719 + (ix * 1.0)))))))))))));
+	}
+	return s1 / s2;
+}
+
+// END: rational_p6q6
+
+/* End auto-generated functions. */
+
+/**
+* Evaluates the Riemann zeta function using a polynomial series.
+*
+* ## References
+*
+* -   P. Borwein. "An Efficient Algorithm for the Riemann Zeta Function". Canadian Mathematical Society, Conference Proceedings. See algorithm [3][p155].
+*
+* [p155]: http://www.cecm.sfu.ca/personal/pborwein/PAPERS/P155.pdf
+*
+* @param s    input value
+* @return     function value
+*
+* @example
+* double out = series( 3.0 );
+* // returns ~1.202
+*/
+static double series( const double s ) {
+	double sign;
+	double term;
+	double sum;
+	double tmp;
+	int32_t N2;
+	int32_t i;
+
+	sum = 0.0;
+	sign = 1.0;
+	for ( i = 0; i < N; i++ ) {
+		sum += sign * NEG_TWO_N / stdlib_base_pow( (double)( i + 1 ), s );
+		sign *= -1.0; // flip the sign
+	}
+	tmp = 1.0;
+	term = 1.0;
+	N2 = 2 * N;
+	for ( i = N; i <= N2 - 1; i++ ) {
+		sum += sign * ( tmp - TWO_N ) / stdlib_base_pow( (double)( i + 1 ), s );
+		sign *= -1.0; // flip the sign
+		term *= N2 - i;
+		term /= i - N + 1.0;
+		tmp += term;
+	}
+	return sum / ( TWO_N * stdlib_base_powm1( 2.0, 1.0 - s ) );
+}
+
+/**
+* Evaluates the Riemann zeta function for an odd positive integer.
+*
+* @param s    input value
+* @return     function value
+*
+* @example
+* double out = zeta( 3.0 );
+* // returns ~1.202
+*/
+static double zeta( const double s ) {
+	int32_t idx;
+
+	idx = ( s - 3 ) / 2;
+	if ( idx >= 56 ) {
+		return series( s );
+	}
+	return ODD_POSITIVE_INTEGERS[ idx ];
+}
+
+/**
+* Evaluates the Riemann zeta function.
+*
+* ## Method
+*
+* 1.  First, we use the reflection formula
+*
+*     ```tex
+*     \zeta(1-s) = 2 \sin\biggl(\frac{\pi(1-s)}{2}\biggr)(2\pi^{-s})\Gamma(s)\zeta(s)
+*     ```
+*
+*     to make \\(s\\) positive.
+*
+* 2.  For \\(s \in (0,1)\\), we use the approximation
+*
+*     ```tex
+*     \zeta(s) = \frac{C + \operatorname{R}(1-s) - s}{1-s}
+*     ```
+*
+*     with rational approximation \\(\operatorname{R}(1-z)\\) and constant \\(C\\).
+*
+* 3.  For \\(s \in (1,4)\\), we use the approximation
+*
+*     ```tex
+*     \zeta(s) = C + \operatorname{R}(s-n) + \frac{1}{s-1}
+*     ```
+*
+*     with rational approximation \\(\operatorname{R}(z-n)\\), constant \\(C\\), and integer \\(n\\).
+*
+* 4.  For \\(s > 4\\), we use the approximation
+*
+*     ```tex
+*     \zeta(s) = 1 + e^{\operatorname{R}(z-n)}
+*     ```
+*
+*     with rational approximation \\(\operatorname{R}(z-n)\\) and integer \\(n\\).
+*
+* 5.  For negative odd integers, we use the closed form
+*
+*     ```tex
+*     \zeta(-n) = \frac{(-1)^n}{n+1} B_{n+1}
+*     ```
+*
+*     where \\(B_{n+1}\\) is a Bernoulli number.
+*
+* 6.  For negative even integers, we use the closed form
+*
+*     ```tex
+*     \zeta(-2n) = 0
+*     ```
+*
+* 7.  For nonnegative even integers, we could use the closed form
+*
+*     ```tex
+*     \zeta(2n) = \frac{(-1)^{n-1}2^{2n-1}\pi^{2n}}{(2n)!} B_{2n}
+*     ```
+*
+*     where \\(B_{2n}\\) is a Bernoulli number. However, to speed computation, we use precomputed values (Wolfram Alpha).
+*
+* 8.  For positive negative integers, we use precomputed values (Wolfram Alpha), as these values are useful for certain infinite series calculations.
+*
+* ## Notes
+*
+* -   \\(\[\approx 1.5\mbox{e-}8, 1)\\)
+*
+*     -   max deviation: \\(2.020\mbox{e-}18\\)
+*     -   expected error: \\(-2.020\mbox{e-}18\\)
+*     -   max error found (double): \\(3.994987\mbox{e-}17\\)
+*
+* -   \\(\[1,2\]\\)
+*
+*     -   max deviation: \\(9.007\mbox{e-}20\\)
+*     -   expected error: \\(9.007\mbox{e-}20\\)
+*
+* -   \\((2,4\]\\)
+*
+*     -   max deviation: \\(5.946\mbox{e-}22\\)
+*     -   expected error: \\(-5.946\mbox{e-}22\\)
+*
+* -   \\((4,7\]\\)
+*
+*     -   max deviation: \\(2.955\mbox{e-}17\\)
+*     -   expected error: \\(2.955\mbox{e-}17\\)
+*     -   max error found (double): \\(2.009135\mbox{e-}16\\)
+*
+* -   \\((7,15)\\)
+*
+*     -   max deviation: \\(7.117\mbox{e-}16\\)
+*     -   expected error: \\(7.117\mbox{e-}16\\)
+*     -   max error found (double): \\(9.387771\mbox{e-}16\\)
+*
+* -   \\(\[15,36)\\)
+*
+*     -   max error (in interpolated form): \\(1.668\mbox{e-}17\\)
+*     -   max error found (long double): \\(1.669714\mbox{e-}17\\)
+*
+* @param s    input value
+* @return     function value
+*
+* @example
+* double out = stdlib_base_zeta( 1.1 );
+* // returns ~10.584
+*/
+double stdlib_base_zeta( const double s ) {
+	double tmp;
+	double scc;
+	int32_t is;
+	int32_t as;
+	int32_t n;
+	double sc;
+	double r;
+
+	// Check for `NaN`:
+	if ( stdlib_base_is_nan( s ) ) {
+		return 0.0 / 0.0; // NaN
+	}
+
+	// Check for a pole:
+	if ( s == 1.0 ) {
+		return 0.0 / 0.0; // NaN
+	}
+
+	// Check for large value:
+	if ( s >= 56.0 ) {
+		return 1.0;
+	}
+
+	// Check for a closed form (integers):
+	if ( stdlib_base_is_integer( s ) ) {
+		// Cast `s` to a 32-bit signed integer:
+		is = (int32_t)s;
+
+		// Check that `s` does not exceed MAX_INT32:
+		if ( (double)is == s ) {
+			if ( is < 0 ) {
+				as = -is;
+
+				// Check if even negative integer:
+				if ( ( as & 1 ) == 0 ) {
+					return 0.0;
+				}
+				n = ( ( as + 1 ) / 2 );
+
+				// Check if less than max Bernoulli number:
+				if ( n <= MAX_BERNOULLI_2N ) {
+					return -BERNOULLI[ n ] / ( as + 1 );
+				}
+
+				// Fall through...
+			} else if ( ( is & 1 ) == 0 ) { // Check if even nonnegative integer:
+				return EVEN_NONNEGATIVE_INTEGERS[ is / 2 ];
+			} else { // Must be a odd positive integer:
+				return ODD_POSITIVE_INTEGERS[ ( is - 3 ) / 2 ];
+			}
+		}
+		// Fall through...
+	}
+	if ( stdlib_base_abs( s ) < STDLIB_CONSTANT_FLOAT64_SQRT_EPS ) {
+		return -0.5 - ( STDLIB_CONSTANT_FLOAT64_LN_SQRT_TWO_PI * s );
+	}
+	scc = s;
+	sc = 1.0 - scc;
+	if ( scc < 0.0 ) {
+		// Check if even negative integer:
+		if ( stdlib_base_floor( scc / 2.0 ) == scc / 2.0 ) {
+			return 0.0;
+		}
+
+		// Swap `scc` and `sc`:
+		tmp = scc;
+		scc = sc;
+		sc = tmp;
+
+		// Determine if computation will overflow:
+		if ( scc > STDLIB_CONSTANT_FLOAT64_MAX_SAFE_NTH_FACTORIAL ) {
+			tmp = stdlib_base_sinpi( 0.5 * sc ) * 2.0 * stdlib_base_zeta( scc );
+			r = stdlib_base_gammaln( scc );
+			r -= scc * stdlib_base_ln( STDLIB_CONSTANT_FLOAT64_TWO_PI );
+			if ( r > MAX_LN ) {
+				return ( tmp < 0.0 ) ? STDLIB_CONSTANT_FLOAT64_NINF : STDLIB_CONSTANT_FLOAT64_PINF;
+			}
+			return tmp * stdlib_base_exp( r );
+		}
+		return stdlib_base_sinpi( 0.5 * sc ) * 2.0 * stdlib_base_pow( STDLIB_CONSTANT_FLOAT64_TWO_PI, -scc ) * stdlib_base_gamma( scc ) * stdlib_base_zeta( scc );
+	}
+	if ( scc < 1.0 ) {
+		tmp = rational_p1q1( sc );
+		tmp -= Y1;
+		tmp += sc;
+		tmp /= sc;
+		return tmp;
+	}
+	if ( scc <= 2.0 ) {
+		sc = -sc;
+		tmp = 1.0 / sc;
+		return tmp + rational_p2q2( sc );
+	}
+	if ( scc <= 4.0 ) {
+		tmp = Y3 + ( 1.0 / ( -sc ) );
+		return tmp + rational_p3q3( scc - 2.0 );
+	}
+	if ( scc <= 7.0 ) {
+		tmp = rational_p4q4( scc - 4.0 );
+		return 1.0 + stdlib_base_exp( tmp );
+	}
+	if ( scc < 15.0 ) {
+		tmp = rational_p5q5( scc - 7.0 );
+		return 1.0 + stdlib_base_exp( tmp );
+	}
+	if ( scc < 36.0 ) {
+		tmp = rational_p6q6( scc - 15.0 );
+		return 1.0 + stdlib_base_exp( tmp );
+	}
+
+	// scc < 56
+	return 1.0 + stdlib_base_pow( 2.0, -scc );
+}

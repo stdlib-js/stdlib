@@ -1,0 +1,112 @@
+From rpm-list-admin@freshrpms.net  Fri Aug 16 11:24:40 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 1262F44191
+	for <jm@localhost>; Fri, 16 Aug 2002 06:02:54 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 16 Aug 2002 11:02:55 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7G6PFa05309 for
+    <jm-rpm@jmason.org>; Fri, 16 Aug 2002 07:25:15 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7G6M3J30287; Fri, 16 Aug 2002 08:22:03
+    +0200
+Received: from bob.dudex.net (dsl092-157-004.wdc1.dsl.speakeasy.net
+    [66.92.157.4]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g7G6LCJ22602
+    for <rpm-list@freshrpms.net>; Fri, 16 Aug 2002 08:21:12 +0200
+Received: from [66.92.157.3] (helo=www.dudex.net) by bob.dudex.net with
+    esmtp (Exim 3.35 #1) id 17faTz-0005VM-00 for rpm-list@freshrpms.net;
+    Fri, 16 Aug 2002 02:21:15 -0400
+X-Originating-Ip: [4.64.217.36]
+From: "" Angles " Puglisi" <angles@aminvestments.com>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: making rpms from already-compiled source trees
+Message-Id: <20020816.VgB.49123300@www.dudex.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 8bit
+Content-Disposition: inline
+X-Mailer: AngleMail for phpGroupWare (http://www.phpgroupware.org) v
+    0.9.14.000
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Fri, 16 Aug 2002 06:22:50 +0000
+Date: Fri, 16 Aug 2002 06:22:50 +0000
+
+Please see:
+
+http://dudex.net/rpms/lincvs-0.9.90-rh7.123.spec
+
+snipet:
+># extract the ESP package archive
+>tar xvf lincvs.ss
+
+That *.ss file is really a tar file, I had to use the linCVS pre-compiled binary
+from their ESP install thingie because the one I compiled on my RH box would not run
+on as many systems. The guy said something like this: "it's an evil binary that only
+runs on one system", so I took the hint :)
+
+NOTE: I think I understand why RPM makes you go thru the whole build process: prep,
+patch, build, install, package ... there are ways to get around this, but the
+package would not be "from pristine sources" so to speak. I read that the 1st big
+change they made to RPM was to always use "pristine" sources, then have prep apply
+the packager's patches; whereas the early RPMS were already RH patched, apparently,
+not having the "pristine" sources as the author had released them.
+
+Just a guess ... ???
+
+Gary Peck (gbpeck@sbcglobal.net) wrote*:
+>
+>On Wed, Aug 14, 2002 at 10:14:18PM -0700, Jesse Keating wrote:
+>> On Wed, 14 Aug 2002 22:03:36 -0700
+>> Gary Peck <gbpeck@sbcglobal.net> wrote:
+>>
+>> #
+>> #The closest I've gotten is to use "rpmbuild -bi --short-circuit" but
+>> #that falls one step short of actually creating the rpm files. There
+>> #must be some obvious option I'm missing...
+>>
+>> By design, I don't believe there is a way to do what you are asking.
+>
+>Out of curiousity, is there any particular reason for the design? It
+>seems like it'd be an extremely useful option to have -- especially
+>when building large programs that take hours to compile.
+>
+><rant>
+>The current implementation already does EVERYTHING (including checking
+>the %files list and running find-provides and find-requires) except
+>for generating the actual rpm files. I'm sure if I were to look into
+>the source, I could write a patch that wouldn't take more than a
+>handful of lines.
+></rant>
+>
+>gary
+>
+>_______________________________________________
+>RPM-List mailing list <RPM-List@freshrpms.net>
+>
+
+--
+That's "angle" as in geometry.
+
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

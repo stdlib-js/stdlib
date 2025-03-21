@@ -1,0 +1,104 @@
+From rpm-list-admin@freshrpms.net  Fri Oct  4 11:01:14 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 17B7216F16
+	for <jm@localhost>; Fri,  4 Oct 2002 11:01:13 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 04 Oct 2002 11:01:13 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g946jjK07048 for
+    <jm-rpm@jmason.org>; Fri, 4 Oct 2002 07:45:45 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g946i1f01474; Fri, 4 Oct 2002 08:44:01
+    +0200
+Received: from babyruth.hotpop.com (babyruth.hotpop.com [204.57.55.14]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g946hHf30715 for
+    <rpm-list@freshrpms.net>; Fri, 4 Oct 2002 08:43:17 +0200
+Received: from punkass.com (kubrick.hotpop.com [204.57.55.16]) by
+    babyruth.hotpop.com (Postfix) with SMTP id 4C928211394 for
+    <rpm-list@freshrpms.net>; Fri,  4 Oct 2002 06:42:52 +0000 (UTC)
+Received: from punkass.com (unknown [80.178.1.203]) by smtp-2.hotpop.com
+    (Postfix) with ESMTP id 786AC1B8421 for <rpm-list@freshrpms.net>;
+    Fri,  4 Oct 2002 06:42:11 +0000 (UTC)
+Message-Id: <3D9D38DA.1040600@punkass.com>
+From: Roi Dayan <dejavo@punkass.com>
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.0.1) Gecko/20020830
+X-Accept-Language: en-us, en, he
+MIME-Version: 1.0
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: Mplayer
+References: <20021002.siy.77121800@www.dudex.net>
+    <3D9BEC4A.2050900@punkass.com>
+    <20021003110510.1c619b15.matthias@rpmforge.net>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+X-Hotpop: ----------------------------------------------- Sent By
+    HotPOP.com FREE Email Get your FREE POP email at www.HotPOP.com
+    -----------------------------------------------
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Fri, 04 Oct 2002 09:44:42 +0300
+Date: Fri, 04 Oct 2002 09:44:42 +0300
+
+Matthias Saou wrote:
+
+>Once upon a time, Roi wrote :
+>
+>  
+>
+>>Since I upgraded to redhat8 mplayer -vo sdl isnt working for me
+>>It gives me black screen and I only hear sound.
+>>
+>>can anyone help me with this ?
+>>    
+>>
+>
+>I'll test this as soon as I can.
+>
+>  
+>
+>>btw,
+>>also the source rpm specified that I can do --without libdv
+>>but it didn't work, worked for lirc and arts.
+>>    
+>>
+>
+>Should be fixed : You probably had libdv-devel installed and MPlayer
+>automatically detected it. The new spec file explicitely passes
+>--disable-libdv when the package is rebuilt with --without libdv.
+>  
+>
+I didn't had libdv at all, I installed it just to install mplayer.
+
+>Grab the "fr2.1" spec from here :
+>http://freshrpms.net/builds/index.html?build=mplayer
+>
+>Matthias
+>
+>  
+>
+
+
+
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

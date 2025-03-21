@@ -1,0 +1,84 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6M4YfhY015080
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Sun, 21 Jul 2002 23:34:41 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6M4Yf6q015073
+	for cypherpunks-forward@ds.pro-ns.net; Sun, 21 Jul 2002 23:34:41 -0500 (CDT)
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6M4YchX015004
+	for <cypherpunks@ds.pro-ns.net>; Sun, 21 Jul 2002 23:34:38 -0500 (CDT)
+	(envelope-from cpunks@einstein.ssz.com)
+X-Authentication-Warning: hq.pro-ns.net: Host cpunks@[207.200.56.4] claimed to be einstein.ssz.com
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id XAA28567
+	for cypherpunks@ds.pro-ns.net; Sun, 21 Jul 2002 23:42:50 -0500
+Received: (from mdom@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id XAA28558
+	for cypherpunks-outgoing; Sun, 21 Jul 2002 23:42:46 -0500
+Received: from anchor-post-35.mail.demon.net (anchor-post-35.mail.demon.net [194.217.242.85])
+	by einstein.ssz.com (8.8.8/8.8.8) with ESMTP id XAA28549
+	for <cypherpunks@ssz.com>; Sun, 21 Jul 2002 23:42:41 -0500
+From: precision_ppp@yahoo.com
+Received: from [193.195.82.221] (helo=server1.bppartners.co.uk)
+	by anchor-post-35.mail.demon.net with esmtp (Exim 3.36 #2)
+	id 17WUsr-0000Kl-0U; Mon, 22 Jul 2002 05:33:21 +0100
+Received: from mx1.mail.yahoo.com (mail.baseairlines.nl [194.134.221.194]) by server1.bppartners.co.uk with SMTP (Microsoft Exchange Internet Mail Service Version 5.5.2653.13)
+	id PHK24A8M; Mon, 22 Jul 2002 05:31:54 +0100
+Message-ID: <000013991edf$00002d09$00000bbd@mx1.mail.yahoo.com>
+To: <Recipient@einstein.ssz.com>
+Subject: MSNBC: Rates Hit 18 year Low 4.75% ...26666
+Date: Sun, 21 Jul 2002 20:32:19 -1900
+MIME-Version: 1.0
+Content-Type: text/plain;
+	charset="Windows-1252"
+Content-Transfer-Encoding: 7bit
+Sender: owner-cypherpunks@einstein.ssz.com
+Precedence: bulk
+Reply-To: cypherpunks@einstein.ssz.com
+X-Mailing-List: cypherpunks@ssz.com
+X-Unsubscription-Info: http://einstein.ssz.com/cdr
+X-List-Admin: list@ssz.com
+X-Loop: ssz.com
+X-Acceptable-Languages: English, Russian, German, French, Spanish
+
+========================================================
+
+Now you can have HUNDREDS of lenders compete for your loan!
+
+FACT: Interest Rates are at their lowest point in 40 years!
+
+You're eligible even with less than perfect credit !!
+
+	* Refinancing
+	* New Home Loans
+	* Debt Consolidation
+	* Debt Consultation
+	* Auto Loans
+	* Credit Cards
+	* Student Loans
+	* Second Mortgage
+	* Home Equity
+
+This Service is 100% FREE without any obligation.
+
+Visit Our Web Site at:  http://61.129.68.19/user0201/index.asp?Afft=QM3
+
+=========================================================
+
+To Unsubscribe: http://61.129.68.19/light/watch.asp
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

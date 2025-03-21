@@ -1,0 +1,59 @@
+From nix@esperi.demon.co.uk  Fri Jul 19 21:51:59 2002
+Return-Path: <nix@esperi.demon.co.uk>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6F7B2440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 16:51:59 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 21:51:59 +0100 (IST)
+Received: from esperi.demon.co.uk (0@esperi.demon.co.uk [194.222.138.8])
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JKqLJ02381 for
+    <jm@jmason.org>; Fri, 19 Jul 2002 21:52:21 +0100
+Received: from amaterasu.srvr.nix (0@amaterasu.srvr.nix [192.168.1.14]) by
+    esperi.demon.co.uk (8.11.6/8.11.6) with ESMTP id g6JKpog31117;
+    Fri, 19 Jul 2002 21:51:50 +0100
+Received: (from nix@localhost) by amaterasu.srvr.nix (8.11.6/8.11.4) id
+    g6JKpnp06336; Fri, 19 Jul 2002 21:51:49 +0100
+Sender: nix@esperi.demon.co.uk
+To: yyyy@spamassassin.taint.org (Justin Mason)
+Cc: Shane Williams <shanew@shanew.net>,
+	spamassassin-talk@lists.sourceforge.net
+Subject: Re: [SAtalk] Two rule suggestions
+References: <20020719110444.E7CD444073@phobos.labs.netnoteinc.com>
+X-Emacs: the prosecution rests its case.
+From: Nix <nix@esperi.demon.co.uk>
+Date: 19 Jul 2002 21:51:49 +0100
+In-Reply-To: <20020719110444.E7CD444073@phobos.labs.netnoteinc.com>
+Message-Id: <874revl9ui.fsf@amaterasu.srvr.nix>
+User-Agent: Gnus/5.0808 (Gnus v5.8.8) XEmacs/21.4 (Informed Management (RC1))
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+
+On Fri, 19 Jul 2002, Justin Mason mused:
+> Shane Williams said:
+>> Also, if a single line of yelling scores -0.036, why not just round
+>> it off to 0 and not have the test run at all?
+> 
+> good question ;)
+
+It seems reasonable to have a configurable minimum below which
+spamassassin flattens the test to zero (turning it off): by default set
+to zero; but if you set it to say 0.01, spamassassin would ignore tests
+with scores -0.01<0<0.01 (trading accuracy for time).
+
+The overkill variant of this feature would have scores scored by (score
+* relative-time-taken) with relative-time-taken computed over a large
+corpus (probably Craig's ;} ). Then you could specify a minimum value of
+*that* parameter to flatten at, giving assurances that you're killing
+only tests that are expensive for their utility.
+
+Unfortunately I can't think of a good name for that parameter.
+
+I can whip up a patch if anyone thinks this is any use.
+
+-- 
+`There's something satisfying about killing JWZ over and over again.'
+                                        -- 1i, personal communication
+
+

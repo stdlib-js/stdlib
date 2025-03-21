@@ -1,0 +1,35 @@
+
+{{alias}}( k, λ )
+    Returns the excess kurtosis of an Erlang distribution.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If not provided a positive integer for `k`, the function returns `NaN`.
+
+    If provided a non-positive value for `λ`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    k: integer
+        Shape parameter.
+
+    λ: number
+        Rate parameter.
+
+    Returns
+    -------
+    out: number
+        Excess kurtosis.
+
+    Examples
+    --------
+    > var v = {{alias}}( 1, 1.0 )
+    6.0
+    > v = {{alias}}( 4, 12.0 )
+    1.5
+    > v = {{alias}}( 8, 2.0 )
+    0.75
+
+    See Also
+    --------
+

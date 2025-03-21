@@ -1,0 +1,72 @@
+{
+	"options": {
+		"task": "build"
+	},
+	"fields": [
+		{
+			"field": "src",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "include",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "libraries",
+			"resolve": false,
+			"relative": false
+		},
+		{
+			"field": "libpath",
+			"resolve": true,
+			"relative": false
+		}
+	],
+	"confs": [
+		{
+			"task": "build",
+			"src": [
+				"./src/rampf.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [],
+			"libpath": [],
+			"dependencies": [
+				"@stdlib/math/base/napi/unary",
+				"@stdlib/math/base/assert/is-nanf"
+			]
+		},
+		{
+			"task": "benchmark",
+			"src": [
+				"./src/rampf.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [],
+			"libpath": [],
+			"dependencies": [
+				"@stdlib/math/base/assert/is-nanf"
+			]
+		},
+		{
+			"task": "examples",
+			"src": [
+				"./src/rampf.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [],
+			"libpath": [],
+			"dependencies": [
+				"@stdlib/math/base/assert/is-nanf"
+			]
+		}
+	]
+}

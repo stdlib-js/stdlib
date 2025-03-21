@@ -1,0 +1,39 @@
+Return-Path: anthony@interlink.com.au
+Delivery-Date: Thu Sep 12 01:23:51 2002
+From: anthony@interlink.com.au (Anthony Baxter)
+Date: Thu, 12 Sep 2002 10:23:51 +1000
+Subject: [Spambayes] Current histograms 
+In-Reply-To: <LNBBLJKPBEHFEDALKOLCKEJBBDAB.tim.one@comcast.net> 
+Message-ID: <200209120023.g8C0NpQ18478@localhost.localdomain>
+
+
+
+> How were these msgs broken up into the 5 sets?  Set4 in particular is giving
+> the other sets severe problems, and Set5 blows the f-n rate on everything
+> it's predicting -- when the rates across runs within a training set vary by
+> as much as a factor of 25, it suggests there was systematic bias in the way
+> the sets were chosen.  For example, perhaps they were broken into sets by
+> arrival time.  If that's what you did, you should go back and break them
+> into sets randomly instead.  If you did partition them randomly, the wild
+> variance across runs is mondo mysterious.
+
+They weren't partitioned in any particular scheme - I think I'll write a
+reshuffler and move them all around, just in case (fwiw, I'm using MH 
+style folders with numbered files - means you can just use MH tools to 
+manipulate the sets.)
+
+
+> For whatever reason, there appear to be few of those in BruceG's spam
+> collection.  I added code to strip uuencoded sections, and pump out uuencode
+> summary tokens instead.  I'll check it in.  It didn't make a significant
+> difference on my usual test run (a single spam in my Set4 is now judged as
+> ham by the other 4 sets; nothing else changed).  It does shrink the database
+> size here by a few percent.  Let us know whether it helps you!
+
+I'll give it a go.
+
+
+-- 
+Anthony Baxter     <anthony@interlink.com.au>   
+It's never too late to have a happy childhood.
+

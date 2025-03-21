@@ -1,0 +1,28 @@
+
+{{alias}}( value )
+    Tests if a value is a complex number-like object.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a value is a complex number-like object.
+
+    Examples
+    --------
+    > var bool = {{alias}}( new {{alias:@stdlib/complex/float32/ctor}}( 2.0, 2.0 ) )
+    true
+    > bool = {{alias}}( new {{alias:@stdlib/complex/float64/ctor}}( 3.0, 1.0 ) )
+    true
+    > bool = {{alias}}( 3.14 )
+    false
+    > bool = {{alias}}( {} )
+    false
+
+    See Also
+    --------
+

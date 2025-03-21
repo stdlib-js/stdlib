@@ -1,0 +1,12 @@
+
+last()
+    Jumps to the last slide.
+
+    Examples
+    --------
+    > last();
+
+    See Also
+    --------
+    end, first, jumpTo, next, prev
+

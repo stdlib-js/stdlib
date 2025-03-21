@@ -1,0 +1,51 @@
+From rssfeeds@jmason.org  Tue Oct  8 10:55:38 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 837A716F03
+	for <jm@localhost>; Tue,  8 Oct 2002 10:55:34 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 08 Oct 2002 10:55:34 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g98809K06025 for
+    <jm@jmason.org>; Tue, 8 Oct 2002 09:00:09 +0100
+Message-Id: <200210080800.g98809K06025@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: aaronsw <rssfeeds@spamassassin.taint.org>
+Subject: Eldred Press Watch
+Date: Tue, 08 Oct 2002 08:00:08 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.aaronsw.com/weblog/000641
+Date: 2002-10-07T15:55:20-06:00
+
+Eric Eldred _himself_ was just on Marketplace[1]. 
+
+NYTimes: Debate to Intensify on Copyright Extension Law[2] (front page of the 
+business section, below the fold). " It will fall to Mr. Lessig, who is a 
+former clerk for Supreme Court Justice Antonin Scalia and who has become a kind 
+of rock star for the digital liberties set, to convince the justices to accept 
+the unconventional analysis. If they do, the decision could be a turning point 
+in redefining a balance between copyright consumers and producers — and the 
+technology companies that are often in the middle." 
+
+Newsweek: Glitterati vs. Geeks[3]. "Larry Lessig admits it: he’s nervous. Who 
+wouldn’t be? [...] In its narrowest context, Eldred v. Ashcroft deals with the 
+seemingly arcane issue of the length of copyrights for books, films and music. 
+But it’s actually a high-noon showdown between two great industries at odds in 
+the age of the Internet." 'There’s a sense of deja vu to this. Television was 
+supposed to be the death of movies. And in 1982, the film industry’s 
+silver-tongued lobbyist Jack Valenti testified that “the VCR is to the American 
+film producer and the American public as the Boston strangler is to the woman 
+home alone.” (Video sales are now the studios’ biggest moneymaker.) Naturally, 
+Hollywood regards the computer/Internet combo as scarier than “Nightmare on Elm 
+Street.”'
+
+
+
+[1] http://www.marketplace.org/
+[2] http://www.nytimes.com/2002/10/07/business/media/07ARGU.html
+[3] http://www.msnbc.com/news/817175.asp
+
+

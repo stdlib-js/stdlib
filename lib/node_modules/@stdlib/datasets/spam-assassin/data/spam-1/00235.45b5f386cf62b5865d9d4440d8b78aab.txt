@@ -1,0 +1,126 @@
+From ilug-admin@linux.ie  Fri Sep  6 11:40:11 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id 99AAF16F67
+	for <zzzz@localhost>; Fri,  6 Sep 2002 11:38:10 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Fri, 06 Sep 2002 11:38:10 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g869TqC28057 for
+    <zzzz-ilug@jmason.org>; Fri, 6 Sep 2002 10:29:52 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA04148; Fri, 6 Sep 2002 10:28:59 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from relay.dub-t3-1.nwcgroup.com
+    (postfix@relay.dub-t3-1.nwcgroup.com [195.129.80.16]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA04073 for <ilug@linux.ie>; Fri,
+    6 Sep 2002 10:28:20 +0100
+Received: from localhst2711.com (host-66-133-58-215.verestar.net
+    [66.133.58.215]) by relay.dub-t3-1.nwcgroup.com (Postfix) with SMTP id
+    707AE70041 for <ilug@linux.ie>; Fri,  6 Sep 2002 10:28:08 +0100 (IST)
+From: "George Osawa" <babalola3@post.com>
+Reply-To: babalola3@post.com
+To: ilug@linux.ie
+Date: Fri, 6 Sep 2002 10:28:15 +0100
+X-Mailer: Microsoft Outlook Express 5.00.2919.6900DM
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Message-Id: <20020906092808.707AE70041@relay.dub-t3-1.nwcgroup.com>
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    KAA04073
+Subject: [ILUG] From the desk of : George Osawa
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+NIGERIA ELECTIRC POWER AUTHORITY 
+FEDERAL SECRETARIAT 
+IKOYI-LAGOS.
+
+FROM THE DESK OF:George Osawa
+I am the Chairman Contract Review Committee of National 
+
+Electric Power Authority (NEPA). 
+Although this 
+proposal might come to you as a surprise since it is 
+
+coming from someone you do not know 
+or ever seen
+before, but after due deliberations with my colleagues, I 
+
+decided to contact you based on 
+Intuition. 
+
+We are soliciting for your humble and confidential 
+
+assistance to take custody of Seventy-
+One Million,
+Five Hundred Thousand United States 
+
+Dollars.{US$71,500,000.00}. This sum 
+(US$71.5M) is an over 
+invoice contract sum which is currently in an offshore 
+
+payment account of the Central Bank 
+of Nigeria as an 
+unclaimed contract entitlement which can easily be 
+
+withdrawn or drafted or pay to any 
+recommended 
+beneficiary by my committee.
+
+On this note, you will be presented as a contractor to 
+
+NEPA who has executed a contract 
+to a tune of the
+above sum and has not been paid. 
+Proposed Sharing Partern (%): 
+
+1. 70% for me and my colleagues. 
+
+2. 20% for you as a partner/fronting for us.
+
+3. 10% for expenses that may be incurred by both parties 
+
+during the cause of this 
+transacton.
+
+Our law prohibits a civil servant from operating a 
+
+foreign account, hence we are contacting 
+you. If this
+proposal satisfies you, do respon as soon as possible 
+
+with the following information: 
+
+1. The name you wish to use as the beneficiary of the 
+
+fund. 
+
+2. Your Confidential Phone and Fax Numbers. 
+
+Further discussion will be centered on how the fund shall 
+
+be transfer and full details on how 
+to accomplish this 
+great opportunity of ours.
+
+Thank you and God bless. 
+
+Best regards, 
+George Osawa 
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

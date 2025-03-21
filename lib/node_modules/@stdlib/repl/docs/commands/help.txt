@@ -1,0 +1,55 @@
+
+help()
+    Prints help text.
+
+    Examples
+    --------
+    > help()
+
+
+help( alias )
+    Prints help text for a specified alias.
+
+    Parameters
+    ----------
+    alias: any
+        Alias (an object path string or reference).
+
+    Examples
+    --------
+    > help( help )
+    > help( 'help' )
+
+
+help( property )
+    Prints help text for a specified property.
+
+    Parameters
+    ----------
+    property: any
+        Alias property (an object path string or reference).
+
+    Examples
+    --------
+    > help( isString.isPrimitive )
+    > help( 'isString.isPrimitive' )
+
+
+help( instance )
+    Prints help text for a provided class instance.
+
+    Only direct instances of documented built-in constructors are supported.
+
+    Parameters
+    ----------
+    instance: any
+        Class instance.
+
+    Examples
+    --------
+    > help( new Float64Array( 10 ) )
+
+    See Also
+    --------
+    example, info
+

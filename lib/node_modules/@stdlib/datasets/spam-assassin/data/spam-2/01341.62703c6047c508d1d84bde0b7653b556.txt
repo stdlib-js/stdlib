@@ -1,0 +1,117 @@
+From emailharvest@email.com  Thu Aug  8 14:36:01 2002
+Return-Path: <emailharvest@email.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 12B9E441F0
+	for <jm@localhost>; Thu,  8 Aug 2002 08:39:45 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 08 Aug 2002 13:39:45 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g77M07k23264 for
+    <jm-cv@jmason.org>; Wed, 7 Aug 2002 23:00:07 +0100
+Received: from localhost.com ([61.174.203.230]) by webnote.net
+    (8.9.3/8.9.3) with SMTP id WAA26408 for <jm-cv@jmason.org>; Wed,
+    7 Aug 2002 22:57:29 +0100
+From: emailharvest@email.com
+Message-Id: <200208072157.WAA26408@webnote.net>
+Reply-To: emailharvest@email.com
+To: yyyy-cv@spamassassin.taint.org
+Date: Thu, 8 Aug 2002 05:57:29 +0800
+Subject: ADV: Harvest lots of E-mail addresses quickly !
+X-Mailer: QuickSender 1.05
+MIME-Version: 1.0
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Dear jm-cv =2C
+
+=3CBODY bgColor=3D#ffccff=3E
+=3CTABLE border=3D0 cellPadding=3D0 cellSpacing=3D0 width=3D475=3E
+  =3CTBODY=3E
+  =3CTR=3E
+    =3CTD align=3Dmiddle vAlign=3Dtop=3E=3C=2FTD=3E=3C=2FTR=3E=3C=2FTBODY=3E=3C=2FTABLE=3E=3CBR=3E
+=3CTABLE=3E
+  =3CTBODY=3E
+  =3CTR=3E
+    =3CTD width=3D=225%=22=3E=3C=2FTD=3E
+    =3CTD bgColor=3D#b8ecff borderColor=3D#0000ff width=3D=2290%=22=3E=3CFONT color=3D#ff0000 
+      face=3D=22Arial Black=22 
+      size=3D6=3E&nbsp=3B&nbsp=3B&nbsp=3B&nbsp=3B&nbsp=3B&nbsp=3B&nbsp=3B&nbsp=3B&nbsp=3B&nbsp=3B Want   
+      To Harvest A Lot Of Email&nbsp=3B&nbsp=3B Addresses In A Very Short Time=3F=3C=2FFONT=3E   
+      =3CP=3E=3CB=3E=3CFONT color=3D#0000ff face=3DArial size=3D4=3EEasy Email   
+      Searcher=3C=2FFONT=3E=3CFONT color=3D#ff00ff face=3DArial size=3D4=3E&nbsp=3B is&nbsp=3B   
+      a&nbsp=3B powerful&nbsp=3B Email&nbsp=3B software&nbsp=3B&nbsp=3B that&nbsp=3B   
+      harvests general Email lists from mail servers&nbsp=3B&nbsp=3B =3C=2FFONT=3E=3CFONT   
+      color=3D#0000ff face=3DArial size=3D4=3EEasy Email Searcher =3C=2FFONT=3E=3CFONT   
+      color=3D#ff00ff face=3DArial size=3D4=3Ecan get 100=2C000 Email=3C=2FFONT=3E=3C=2FB=3E =3CFONT   
+      color=3D#ff00ff face=3DArial size=3D4=3E=3CB=3Eaddresses directly from the Email   
+      servers in only one hour!&nbsp=3B=3C=2FB=3E=3C=2FFONT=3E=3C=2FP=3E  
+      =3CUL=3E  
+        =3CLI=3E=3CFONT face=3DArial size=3D2=3E=3CB=3E=3CFONT color=3D#0000ff=3EEasy Email   
+        Searcher=3C=2FFONT=3E=3C=2FB=3E is a 32 bit Windows Program for e-mail marketing=2E It   
+        is intended for easy and convenient search large e-mail address lists   
+        from mail servers=2E The program can be operated on Windows 95=2F98=2FME=2F2000   
+        and NT=2E=3C=2FFONT=3E   
+        =3CLI=3E=3CFONT face=3DArial size=3D2=3E=3CB=3E=3CFONT color=3D#0000ff=3EEasy Email   
+        Searcher=3C=2FFONT=3E =3C=2FB=3Esupport multi-threads =28up to 512   
+        connections=29=2E=3C=2FFONT=3E   
+        =3CLI=3E=3CFONT face=3DArial size=3D2=3E=3CB=3E=3CFONT color=3D#0000ff=3EEasy Email   
+        Searcher=3C=2FFONT=3E=3C=2FB=3E has the ability&nbsp=3B to reconnect to the mail   
+        server if the server has disconnected and continue the searching at the   
+        point where it has been interrupted=2E=3C=2FFONT=3E   
+        =3CLI=3E=3CFONT face=3DArial size=3D2=3E=3CB=3E=3CFONT color=3D#0000ff=3EEasy Email   
+        Searcher=3C=2FFONT=3E=3C=2FB=3E has an ergonomic interface that is easy to set up   
+        and simple to use=2E=3C=2FFONT=3E =3C=2FLI=3E=3C=2FUL=3E  
+      =3CP=3E=A1=A1=3CB=3E=3CFONT color=3D#0000ff face=3DArial=3EEasy Email Searcher is an email   
+      address searcher and bulk e-mail sender=2E It can verify more than 5500   
+      email addresses per minute at only 56Kbps speed=2E It even allows you send   
+      email to valid email address while searching=2E You can save the searching   
+      progress and load it to resume work at your convenience=2E All you need to   
+      do is just input an email address=2C and press the =22Search=22   
+      button=2E=3C=2FFONT=3E=3C=2FB=3E=3C=2FP=3E  
+      =3CP=3E=3CB=3E=3CFONT color=3D#0000ff face=3DArial=3E=3CBR=3E=3C=2FFONT=3E=3Cfont face=3D=22Comic Sans MS=22 size=3D=224=22 color=3D=22#FF00FF=22=3EVery 
+      Low Price ! -------&nbsp=3B Now=2C&nbsp=3B The full version of Easy Email 
+      Searcher only costs =3C=2Ffont=3E=3Cfont face=3D=22Comic Sans MS=22 size=3D=224=22 color=3D=22#0000FF=22=3E$ 
+      39=2E 95=3C=2Ffont=3E=3C=2FB=3E=3C=2FP=3E 
+      =3CP=3E=3CB=3E=3CFONT color=3D#ff0000 face=3DArial size=3D4=3E=3CI=3EClick The Following Link To   
+      Download The Demo =3A=3C=2FI=3E=3C=2FFONT=3E=3C=2FB=3E=3C=2FP=3E 
+      =3CP=3E=3CB=3E=3CFONT color=3D#ff0000 face=3DArial size=3D4=3E=3CA  
+      href=3D=22http=3A=2F=2Fwww=2Ewldinfo=2Ecom=2Fdownload=2Femail=2Fnewees=2Ezip=22=3EDownload Site   
+      1=3C=2FA=3E=3C=2FFONT=3E=3C=2FB=3E=3C=2FP=3E  
+      =3CP=3E=3CB=3E=3CFONT color=3D#ff0000 face=3DArial size=3D4=3E=3CA   
+      href=3D=22http=3A=2F=2Fbestsoft=2E3322=2Eorg=2Fonlinedown=2Fnewees=2Ezip=22=3EDownload Site   
+      2=3C=2FA=3E&nbsp=3B&nbsp=3B&nbsp=3B&nbsp=3B&nbsp=3B&nbsp=3B&nbsp=3B&nbsp=3B&nbsp=3B&nbsp=3B&nbsp=3B =3C=2FFONT=3E=3C=2FB=3E=A1=A1=3CFONT color=3D#0000a0 face=3DArial 
+      size=3D3=3E=3CSTRONG=3EIf&nbsp=3B you can not download this program =2C&nbsp=3B please   
+      copy the following link into your URL =2C and then click =22 Enter=22 on your   
+      Computer Keyboard=2E=3C=2FSTRONG=3E=3C=2FFONT=3E=3C=2FP=3E  
+      =3CP=3E=3CFONT size=3D2=3E=3CFONT color=3D#0000a0 face=3DArial size=3D3=3E=3CSTRONG=3EHere is the   
+      download links=3A=3C=2FSTRONG=3E=3C=2FFONT=3E=3C=2FP=3E  
+      =3CDIV=3E  
+      =3CP=3Ehttp=3A=2F=2Fwww=2Ewldinfo=2Ecom=2Fdownload=2Femail=2Fnewees=2Ezip=3C=2FP=3E  
+      =3CP=3Ehttp=3A=2F=2Fbestsoft=2E3322=2Eorg=2Fonlinedown=2Fnewees=2Ezip=3C=2FP=3E=3C=2FFONT=3E=3C=2FDIV=3E  
+      =3CP=3E=3C=2FP=3E=3C=2FTD=3E  
+    =3CTD width=3D=225%=22=3E=3C=2FTD=3E=3C=2FTR=3E  
+  =3CTR=3E  
+    =3CTD width=3D=225%=22=3E=3C=2FTD=3E  
+    =3CTD bgColor=3D#0f95de width=3D=2290%=22=3E=3CFONT color=3D#ffffff   
+      face=3D=22Verdana=2C Tahoma=2C Helvetica=2C SansSerif=22   
+      size=3D1=3E=3CB=3EDisclaimer=3A=3C=2FB=3E=3CBR=3EWe are strongly against continuously sending   
+      unsolicited emails to those who do not wish to receive our special   
+      mailings=2E We have attained the services of an independent 3rd party to   
+      overlook list management and removal services=2E This is not unsolicited   
+      email=2E If you do not wish to receive further mailings=2C please click this   
+      link =3CA href=3D=22 mailto=3Aremoval=40btamail=2Enet=2Ecn =22   
+      target=3D=5Fblank=3E=3CFONT   
+      color=3D#fdd32a=3E=3CB=3Emailto=3Aremoval=40btamail=2Enet=2Ecn  
+      =3C=2FB=3E=3C=2FFONT=3E=3C=2FA=3E=2E&nbsp=3B=3C=2FFONT=3E=3CB=3E=3CFONT class=3Ddisclaimer color=3D#000080  
+      face=3DArial=3E=3CBR=3EThis message is a commercial advertisement=2E It is compliant  
+      with all federal and state laws regarding email messages including the  
+      California Business and Professions Code=2E We have provided the subject  
+      line =22ADV=22 to provide you notification that this is a commercial  
+      advertisement for persons over 18yrs old=2E=3C=2FFONT=3E=3C=2FB=3E=3C=2FTD=3E 
+    =3CTD width=3D=225%=22=3E=3C=2FTD=3E=3C=2FTR=3E=3C=2FTBODY=3E=3C=2FTABLE=3E 
+=3CBR=3E
+
+
+

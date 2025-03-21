@@ -1,0 +1,86 @@
+From spambayes-bounces@python.org  Mon Nov 25 20:49:28 2002
+Return-Path: <spambayes-bounces@python.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 7796316F16
+	for <jm@localhost>; Mon, 25 Nov 2002 20:49:27 +0000 (GMT)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 25 Nov 2002 20:49:27 +0000 (GMT)
+Received: from mail.python.org (mail.python.org [12.155.117.29]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id gAPKEqW23428 for
+    <jm@jmason.org>; Mon, 25 Nov 2002 20:14:53 GMT
+Received: from localhost.localdomain ([127.0.0.1] helo=mail.python.org) by
+    mail.python.org with esmtp (Exim 4.05) id 18GPeP-0007Gy-01; Mon,
+    25 Nov 2002 15:16:13 -0500
+Received: from anchor-post-31.mail.demon.net ([194.217.242.89]) by
+    mail.python.org with esmtp (Exim 4.05) id 18GPeG-0007Ah-00 for
+    spambayes@python.org; Mon, 25 Nov 2002 15:16:04 -0500
+Received: from sundog.demon.co.uk ([158.152.226.183]) by
+    anchor-post-31.mail.demon.net with smtp (Exim 3.35 #1) id 18GPe9-0001kx-0V;
+    Mon, 25 Nov 2002 20:15:58 +0000
+From: Richie Hindle <richie@entrian.com>
+To: "Moore, Paul" <Paul.Moore@atosorigin.com>
+Subject: Re: [Spambayes] Current version
+Date: Mon, 25 Nov 2002 20:16:08 +0000
+Organization: entrian.com
+Message-Id: <luo4uugdble02ipu1keho1fmn9v50t71tn@4ax.com>
+References: <16E1010E4581B049ABC51D4975CEDB88619957@UKDCX001.uk.int.atosorigin.com>
+In-Reply-To: <16E1010E4581B049ABC51D4975CEDB88619957@UKDCX001.uk.int.atosorigin.com>
+X-Mailer: Forte Agent 1.7/32.534
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Cc: spambayes@python.org
+X-Beenthere: spambayes@python.org
+X-Mailman-Version: 2.1b5
+Precedence: list
+Reply-To: richie@entrian.com
+List-Id: Discussion list for Pythonic Bayesian classifier <spambayes.python.org>
+List-Help: <mailto:spambayes-request@python.org?subject=help>
+List-Post: <mailto:spambayes@python.org>
+List-Subscribe: <http://mail.python.org/mailman/listinfo/spambayes>,
+    <mailto:spambayes-request@python.org?subject=subscribe>
+List-Archive: <http://mail.python.org/pipermail/spambayes>
+List-Unsubscribe: <http://mail.python.org/mailman/listinfo/spambayes>,
+    <mailto:spambayes-request@python.org?subject=unsubscribe>
+Sender: spambayes-bounces@python.org
+Errors-To: spambayes-bounces@python.org
+
+
+[Paul Moore]
+>    but let's walk before we run - after all, we may end up
+>    all using Zodb in any case :-)
+
+I'd like this (despite the additional installation burden - we can ship
+binaries for Windows and Mac) and not only for technical reasons.  As I
+understand it, post-1.8x versions of the core bsddb code ship under the
+Sleepycat license, which demands that projects using it must be
+published-source.  This is a problem if we want Spambayes to be fully
+PSF-licensed - if someone wants to take the Spambayes source and fund their
+addictions by creating a commercial, closed-source spam-filter product, the
+PSF license allows that but not if the code relies on bsddb.  Not that I'm
+in favour of people making money from Spambayes (unless it's me 8-) but the
+PSF license does allow for it - it should be all or nothing.  Or do I have
+this all wrong?
+
+Slightly OT: This has concerned me since PLabs announced that they were
+integrating bsddb into Python 2.3 - it's going to make it very easy
+(especially on Windows) for someone to write code that uses anydbm, wrap it
+up with Py2exe and ship it under a commercial license, not knowing that
+they're breaking the Sleepycat license.  They've never heard of Sleepycat
+Software or even bsddb - as far as they're concerned, this "bsddb.pyd" file
+that Py2exe tells them they need to ship is just another part of Python,
+like _socket.pyd or select.pyd.
+
+-- 
+Richie Hindle
+richie@entrian.com
+
+
+_______________________________________________
+Spambayes mailing list
+Spambayes@python.org
+http://mail.python.org/mailman/listinfo/spambayes
+
+

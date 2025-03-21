@@ -1,0 +1,93 @@
+From ilug-admin@linux.ie  Mon Jul 29 11:28:04 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6014E440F9
+	for <jm@localhost>; Mon, 29 Jul 2002 06:25:12 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 11:25:12 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6RIJsi20324 for
+    <jm-ilug@jmason.org>; Sat, 27 Jul 2002 19:19:54 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id TAA26068; Sat, 27 Jul 2002 19:15:55 +0100
+Received: from ie.suberic.net (owsla.ie.suberic.net [62.17.162.83]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id TAA26032 for <ilug@linux.ie>;
+    Sat, 27 Jul 2002 19:15:46 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host owsla.ie.suberic.net
+    [62.17.162.83] claimed to be ie.suberic.net
+Received: from owsla.ie.suberic.net (owsla [127.0.0.1]) by ie.suberic.net
+    (8.11.6/8.11.6) with ESMTP id g6RIFix19140 for <ilug@linux.ie>;
+    Sat, 27 Jul 2002 19:15:44 +0100
+Date: Sat, 27 Jul 2002 19:15:43 +0100
+To: irish linux users group <ilug@linux.ie>
+Message-Id: <20020727191542.A19057@ie.suberic.net>
+References: <20020726182224.GA6308@dangerousideas.com>
+    <20020727165855.GG12078@vipersoft.co.uk>
+    <mutt-users-3d42d3a9-19504@klaus.daprodeges.dyndns.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <mutt-users-3d42d3a9-19504@klaus.daprodeges.dyndns.org>;
+    from s1118644@mail.inf.tu-dresden.de on Sat, Jul 27, 2002 at 07:08:57PM
+    +0200
+X-Operating-System: Linux 2.4.18-5 i686
+X-GPG-Fingerprint: 9C1D 16F4 11F1 6BD2 933C  048D ACC7 9840 89D0 7646
+From: kevin lyda <kevin+dated+1028225744.d700ac@ie.suberic.net>
+X-Delivery-Agent: TMDA/0.57
+Subject: [ILUG] Re: Mutt + Outbox
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+saw this on mutt users.  might be a handy trick for those of with
+hyperactive archiving genes...  :)
+
+this might work better in this long run though:
+
+   set record='~/Mail/outbox-`date "+%Y-%m"`'
+
+On Sat, Jul 27, 2002 at 07:08:57PM +0200, Rocco Rutte wrote:
+> Hi,
+> 
+> * Dean Richard Benson [02-07-27 19:05:49 +0200] wrote:
+> 
+> [...]
+> > So in my mutt config file I have this:
+> > set record=Mail/outbox
+> 
+> > ..that works a treat, except that its starting to grow a
+> > little (after 4 months), and I think maybe the ability to
+> > have an outbox folder and then for the above command to
+> > auto-assign to the correct month?
+> 
+> What about:
+> 
+>   set record='~/Mail/outbox-`date "+%m"`'
+> 
+> You could also leave it as it currently is and use the
+> <limit> function to view only mails within a specific 
+> date range.
+> 
+>    bye, Rocco
+> 
+
+kevin
+
+-- 
+kevin@suberic.net     that a believer is happier than a skeptic is no more to
+fork()'ed on 37058400    the point than the fact that a drunken man is happier
+meatspace place: home       than a sober one. the happiness of credulity is a
+http://ie.suberic.net/~kevin   cheap & dangerous quality -- g.b. shaw
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

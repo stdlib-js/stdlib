@@ -1,0 +1,144 @@
+From exmh-workers-admin@redhat.com  Wed Aug 28 17:25:40 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 266F744155
+	for <jm@localhost>; Wed, 28 Aug 2002 12:25:36 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 28 Aug 2002 17:25:36 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7SGRKZ00435 for
+    <jm-exmh@jmason.org>; Wed, 28 Aug 2002 17:27:20 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id D5EA140D9E; Wed, 28 Aug 2002
+    12:27:04 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 25DCF3F5A2
+    for <exmh-workers@listman.redhat.com>; Wed, 28 Aug 2002 12:07:11 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g7SG77623708 for exmh-workers@listman.redhat.com; Wed, 28 Aug 2002
+    12:07:07 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g7SG77Y23695 for
+    <exmh-workers@redhat.com>; Wed, 28 Aug 2002 12:07:07 -0400
+Received: from austin-jump.vircio.com (jump-austin.vircio.com
+    [192.12.3.99]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id g7SFq2l01887
+    for <exmh-workers@redhat.com>; Wed, 28 Aug 2002 11:52:02 -0400
+Received: (qmail 32032 invoked by uid 104); 28 Aug 2002 16:07:06 -0000
+Received: from cwg-exmh@DeepEddy.Com by localhost.localdomain with
+    qmail-scanner-0.90 (uvscan: v4.1.60/v4219. . Clean. Processed in 0.322653
+    secs); 28/08/2002 11:07:06
+Received: from deepeddy.vircio.com (@[10.1.2.1]) (envelope-sender
+    <cwg-exmh@DeepEddy.Com>) by austin-jump.vircio.com (qmail-ldap-1.03) with
+    SMTP for <exmh-workers@redhat.com>; 28 Aug 2002 16:07:06 -0000
+Received: (qmail 18053 invoked from network); 28 Aug 2002 16:07:03 -0000
+Received: from localhost (HELO deepeddy.vircio.com)
+    (?Q0BayOH9epkaCyxIHBZgJNZAb+NawCfg?@[127.0.0.1]) (envelope-sender
+    <cwg-exmh@DeepEddy.Com>) by localhost (qmail-ldap-1.03) with SMTP for
+    <exmh-workers@redhat.com>; 28 Aug 2002 16:07:03 -0000
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4
+To: Anders Eriksson <aeriksson@fastmail.fm>
+Cc: exmh-workers@spamassassin.taint.org
+Subject: Re: Exmh && speed
+In-Reply-To: <20020826180041.913C73F05@milou.dyndns.org>
+References: <20020826180041.913C73F05@milou.dyndns.org>
+X-Url: http://www.DeepEddy.Com/~cwg
+X-Image-Url: http://www.DeepEddy.Com/~cwg/chris.gif
+MIME-Version: 1.0
+Content-Type: multipart/signed;
+    boundary="==_Exmh_927886807P";
+    micalg=pgp-sha1;
+    protocol="application/pgp-signature"
+Content-Transfer-Encoding: 7bit
+Message-Id: <1030550822.18045.TMDA@deepeddy.vircio.com>
+From: Chris Garrigues <cwg-exmh@DeepEddy.Com>
+X-Delivery-Agent: TMDA/0.57
+Reply-To: Chris Garrigues <cwg-dated-1030982823.94b7d5@DeepEddy.Com>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Wed, 28 Aug 2002 11:07:01 -0500
+
+--==_Exmh_927886807P
+Content-Type: text/plain; charset=us-ascii
+
+> From:  Anders Eriksson <aeriksson@fastmail.fm>
+> Date:  Mon, 26 Aug 2002 20:00:36 +0200
+>
+> 
+> lately I've got the feeling that exmh is getting slower and slower. I 
+> just decided to check that vs. reality, and yes, speed has left the 
+> scene somewhere between the release of 2.5 and now.
+> 
+> I checked on a number of small messages in a big folder (~10000 
+> msgs). The delay of the Next button has increased considerably:
+> 
+> 2.5-release: 350-450 msec
+> latest cvs: 1000-12000 msec
+> 
+> Frankly I think this is getting close to non-acceptable since the 
+> user settings hasn't changed.
+> 
+> Anybody have any ideas where performance disappeared?
+
+Here's a fix that I think will make a real difference.
+
+Ftoc_ShowSequences needs to be able to be called with an optional list of msgids 
+to update and if it's called that way it only removes or adds tags for those 
+messages.  Then in places like MsgChange, we only update the messages which have
+changed.
+
+Also, a separate Ftoc_ShowSequence function which only updates the display of 
+one sequence should be written which also takes an optional list of msgids.  
+In a place like MsgChange, it would only need to update the cur sequence.
+
+If nobody else gets to it, I'll do this when I get back.
+
+Chris
+
+-- 
+Chris Garrigues                 http://www.DeepEddy.Com/~cwg/
+virCIO                          http://www.virCIO.Com
+716 Congress, Suite 200
+Austin, TX  78701		+1 512 374 0500
+
+  World War III:  The Wrong-Doers Vs. the Evil-Doers.
+
+
+
+
+--==_Exmh_927886807P
+Content-Type: application/pgp-signature
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: Exmh version 2.2_20000822 06/23/2000
+
+iD8DBQE9bPUlK9b4h5R0IUIRAqCdAJkBYATj6wLY6RM/EPECD3yGkXMXVgCcDADM
+4n+q/8HdvWmkRlGJn3lUb1M=
+=Rd2E
+-----END PGP SIGNATURE-----
+
+--==_Exmh_927886807P--
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+

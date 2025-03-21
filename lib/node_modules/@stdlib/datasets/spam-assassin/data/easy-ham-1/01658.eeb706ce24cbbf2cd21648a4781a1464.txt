@@ -1,0 +1,104 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Fri Sep  6 17:45:09 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Fri, 06 Sep 2002 12:45:09 -0400
+Subject: [Spambayes] test sets?
+In-Reply-To: <15736.54481.733005.644033@anthem.wooz.org>
+Message-ID: <LNBBLJKPBEHFEDALKOLCKEICBCAB.tim.one@comcast.net>
+
+[Barry A. Warsaw, gives answers and asks questions]
+
+Here's the code that produced the header tokens:
+
+    x2n = {}
+    for x in msg.keys():
+        x2n[x] = x2n.get(x, 0) + 1
+    for x in x2n.items():
+        yield "header:%s:%d" % x
+
+
+Some responses:
+
+>  0.01    19  3559 'header:X-Mailman-Version:1'
+>  0.01    19  3559 'header:List-Id:1'
+>  0.01    19  3557 'header:X-BeenThere:1'
+>
+> These three are definitely MM artifacts, although the second one
+> /could/ be inserted by other list management software (it's described
+> in an RFC).
+
+Since all the ham came from Mailman, and only 19 spam had it, it's quite
+safe to assume then that I should ignore these for now.
+
+>  0.01     0  3093 'header:Newsgroups:1'
+>  0.01     0  3054 'header:Xref:1'
+>  0.01     0  3053 'header:Path:1'
+>
+> These aren't MM artifacts, but are byproducts of gating a message off
+> of an nntp feed.  Some of the other NNTP-* headers are similar, but I
+> won't point them out below.
+
+I should ignore these too then.
+
+>  0.01    19  2668 'header:List-Unsubscribe:1'
+>  0.01    19  2668 'header:List-Subscribe:1'
+>  0.01    19  2668 'header:List-Post:1'
+>  0.01    19  2668 'header:List-Help:1'
+>  0.01    19  2668 'header:List-Archive:1'
+>
+> RFC recommended generic listserve headers that MM injects.
+
+Ditto.
+
+> So why do you get two entries for this one?
+>
+>  0.99   519     0 'header:Received:8'
+>  0.99   466     1 'header:Received:7'
+
+Read the code <wink>.  The first line counts msgs that had 8 instances of a
+'Received' header, and the second counts msgs that had 7 instances.  I
+expect this is a good clue!  The more indirect the mail path, the more of
+those thingies we'll see, and if you're posting from a spam trailer park in
+Tasmania you may well need to travel thru more machines.
+
+> ...
+> Note that header names are case insensitive, so this one's no
+> different than "MIME-Version:".  Similarly other headers in your list.
+
+Ignoring case here may or may not help; that's for experiment to decide.
+It's plausible that case is significant, if, e.g., a particular spam mailing
+package generates unusual case, or a particular clueless spammer
+misconfigures his package.
+
+>  0.02    65  3559 'header:Precedence:1'
+>
+> Could be Mailman, or not.  This header is supposed to tell other
+> automated software that this message was automated.  E.g. a replybot
+> should ignore any message with a Precedence: {bulk|junk|list}.
+
+Rule of thumb:  if Mailman inserts a thing, I should ignore it.  Or, better,
+I should stop trying to out-think the flaws in the test data and get better
+test data instead!
+
+>  0.50     4     0 'header:2:1'
+>
+> !?
+> ...
+>  0.50     0     2 'header:'
+>
+> Heh?
+
+I sucked out all the wordinfo keys that began with "header:".  The last line
+there  was probably due to unrelated instances of the string "header:" in
+message bodies.  Harder to guess about the first line.
+
+> ...
+> Some headers of course are totally unreliable as to their origin.  I'm
+> thinking stuff like MIME-Version, Content-Type, To, From, etc, etc.
+> Everyone sticks those in.
+
+The brilliance of Anthony's "just count them" scheme is that it requires no
+thought, so can't be fooled <wink>.  Header lines that are evenly
+distributed across spam and ham will turn out to be worthless indicators
+(prob near 0.5), so do no harm.
+

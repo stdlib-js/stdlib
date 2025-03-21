@@ -1,0 +1,81 @@
+From ilug-admin@linux.ie  Fri Aug 16 14:00:51 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 225F043C34
+	for <jm@localhost>; Fri, 16 Aug 2002 09:00:44 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 16 Aug 2002 14:00:44 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7GCuua18656 for
+    <jm-ilug@jmason.org>; Fri, 16 Aug 2002 13:56:56 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA27889; Fri, 16 Aug 2002 13:55:36 +0100
+Received: from hotmail.com (oe76.law4.hotmail.com [216.33.148.172]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id NAA27862 for <ilug@linux.ie>;
+    Fri, 16 Aug 2002 13:55:27 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host oe76.law4.hotmail.com
+    [216.33.148.172] claimed to be hotmail.com
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Fri, 16 Aug 2002 05:54:56 -0700
+X-Originating-Ip: [213.121.187.98]
+From: "David Crozier" <davidcrozier@hotmail.com>
+To: "Kenn Humborg" <kenn@bluetree.ie>
+Cc: <ilug@linux.ie>
+References: <NBBBIGEGHIGMPCNKHCECOEHBEAAA.kenn@bluetree.ie>
+Subject: Re: [ILUG] Autorun CDs
+Date: Fri, 16 Aug 2002 13:52:42 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.50.4807.1700
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4807.1700
+Message-Id: <OE76ox7nyeKzGZuNY1S00010025@hotmail.com>
+X-Originalarrivaltime: 16 Aug 2002 12:54:56.0015 (UTC) FILETIME=[1EF299F0:01C24524]
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Apologies all.  I have comitted a cardinal sin by not specifying that this
+was for a windows machine.
+
+
+----- Original Message -----
+From: "Kenn Humborg" <kenn@bluetree.ie>
+To: "David Crozier" <davidcrozier@hotmail.com>
+Cc: <ilug@linux.ie>
+Sent: Friday, August 16, 2002 1:51 PM
+Subject: RE: [ILUG] Autorun CDs
+
+
+> > Cheers All for your words of wisdom.
+> >
+> > I came across this which has worked a treat:-
+> >
+> > http://www.avdf.com/mar97/art_autorun.html
+>
+> (This is all Windows-related autorun stuff).
+>
+> So why did you waste the time of those who looked
+> up Linux-related info for you?  If you said that it
+> was for Windows, you'd probably have gotten both
+> more relevant answers and flames for asking this on
+> a _Linux_ mailing list.
+>
+> Sheesh...
+>
+> Later,
+> Kenn
+>
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

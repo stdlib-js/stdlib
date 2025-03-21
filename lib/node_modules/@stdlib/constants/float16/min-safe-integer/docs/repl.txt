@@ -1,0 +1,15 @@
+
+{{alias}}
+    Minimum safe half-precision floating-point integer.
+
+    The minimum safe half-precision floating-point integer is given by
+    `-(2^11 - 1)`.
+
+    Examples
+    --------
+    > {{alias}}
+    -2047
+
+    See Also
+    --------
+

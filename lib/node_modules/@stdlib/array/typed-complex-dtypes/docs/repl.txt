@@ -1,0 +1,17 @@
+
+{{alias}}()
+    Returns a list of complex typed array data types.
+
+    Returns
+    -------
+    out: Array<string>
+        List of complex typed array data types.
+
+    Examples
+    --------
+    > var out = {{alias}}()
+    <Array>
+
+    See Also
+    --------
+

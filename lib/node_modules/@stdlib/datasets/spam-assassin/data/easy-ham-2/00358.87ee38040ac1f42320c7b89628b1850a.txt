@@ -1,0 +1,95 @@
+From ilug-admin@linux.ie  Tue Aug 13 10:28:43 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7B0E444128
+	for <jm@localhost>; Tue, 13 Aug 2002 05:21:43 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:21:43 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7CKktb00886 for
+    <jm-ilug@jmason.org>; Mon, 12 Aug 2002 21:46:55 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id VAA06551; Mon, 12 Aug 2002 21:46:24 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from linuxmafia.com (linuxmafia.COM [198.144.195.186]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id VAA06436 for <ilug@linux.ie>;
+    Mon, 12 Aug 2002 21:46:04 +0100
+Received: from rick by linuxmafia.com with local (Exim 3.35 #1 (Debian))
+    id 17eM4h-0000lp-00 for <ilug@linux.ie>; Mon, 12 Aug 2002 13:46:03 -0700
+Date: Mon, 12 Aug 2002 13:46:03 -0700
+To: ilug@linux.ie
+Subject: Re: [ILUG] SUSE 8 disks? (thread changed slightly)
+Message-Id: <20020812204603.GK25331@linuxmafia.com>
+References: <20020811182012.GD25331@linuxmafia.com>
+    <20020812094352.97487.qmail@web13906.mail.yahoo.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20020812094352.97487.qmail@web13906.mail.yahoo.com>
+User-Agent: Mutt/1.4i
+From: Rick Moen <rick@linuxmafia.com>
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Quoting Paul Linehan (plinehan@yahoo.com):
+
+> I'm confused. I thought it was GPL'ed and that the money you paid SuSE
+> was for your 60 day support or whatever? 
+
+Yes, you're confused.
+
+A Linux distribution (_any_ Linux distribution) contains lots and lots
+of separate codebases.  Some are under the GNU GPL.  Many are not.  Are
+you clear on this point, now?  This is my second try.  One suspects that
+you actually understand perfectly, but just don't like it.
+
+You're further confused if you think the GNU GPL gives you the right to
+get covered software for free.  It does not.  It provides that _if_
+you've lawfully received a copy of the covered binary version, you have
+rights to also receive the matching source code.
+
+> I don't particularly need support, so I'm not really interested in
+> purchasing a set of disks with 4 billion apps which I'll never use.
+
+Then, if you nonetheless want a SuSE boxed set's contents, the only way
+you can do that without copyright violation _and_ without having to pay
+the purchase price is to get someone to _give_ (not "lend" or duplicate) 
+you his copy.
+
+> Yes, thanks for your input. Anyway, I've a friend with 7.3 pro, so
+> I'll just ask him.
+
+Ask him _what_?  If you're asking him to "lend" or duplicate his CDs,
+then you'll be ripping off SuSE Linux AG illegally.
+
+Don't like SuSE's product licensing?  Write your own distribution.  You
+can even grab most of what you need _from SuSE_.  All you have to do is 
+heed the licensing terms on the individual pieces.
+
+What, you think that's too much work?  Then, try a different
+distribution.  Clue:  _Not_ one packaged in a retail boxed set.  Even RH
+7.3 retail boxed sets include non-freely redistributable applications on
+the Star office 5.2 CD and the Productivity Applications CD, among
+others.  (The core 3-CD set of the basic RH distribution, on the other
+hand, contains only software that may be freely redistributed, whether 
+open source or not.)
+
+-- 
+Hi! I'm a .signature virus! Copy me into your ~/.signature  to help me spread.
+Hi!p I'm a .signature spread virus! Copy into your ~/.signature to help me
+Hilp I'm .sign turepread virus! into your ~/.signature! help me! Copy
+Help I'm traped in your ~/signature help me!       -- Joe Slater
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

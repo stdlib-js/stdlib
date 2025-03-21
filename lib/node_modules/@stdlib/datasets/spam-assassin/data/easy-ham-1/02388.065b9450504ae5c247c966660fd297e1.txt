@@ -1,0 +1,26 @@
+From rssfeeds@jmason.org  Wed Oct  9 10:52:50 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 5207016F1E
+	for <jm@localhost>; Wed,  9 Oct 2002 10:51:52 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 09 Oct 2002 10:51:52 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9980vK25241 for
+    <jm@jmason.org>; Wed, 9 Oct 2002 09:00:57 +0100
+Message-Id: <200210090800.g9980vK25241@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: guardian <rssfeeds@spamassassin.taint.org>
+Subject: JJB Sports chief found hanged
+Date: Wed, 09 Oct 2002 08:00:57 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.newsisfree.com/click/-2,8670380,215/
+Date: 2002-10-08T14:51:59+01:00
+
+*Business:* Illness and City's mailing of sports empire share are blamed for 
+death.
+
+

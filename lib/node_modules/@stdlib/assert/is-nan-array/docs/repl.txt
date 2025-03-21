@@ -1,0 +1,73 @@
+
+{{alias}}( value )
+    Tests if a value is an array-like object containing only NaN values.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is an array-like object containing only
+        NaN values.
+
+    Examples
+    --------
+    > var bool = {{alias}}( [ NaN, NaN, NaN ] )
+    true
+    > bool = {{alias}}( [ NaN, 2 ] )
+    false
+
+
+{{alias}}.primitives( value )
+    Tests if a value is an array-like object containing only primitive NaN
+    values.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is an array-like object containing only
+        primitive NaN values.
+
+    Examples
+    --------
+    > var bool = {{alias}}.primitives( [ NaN, new Number( NaN ) ] )
+    false
+    > bool = {{alias}}.primitives( [ NaN, NaN, NaN ] )
+    true
+
+
+{{alias}}.objects( value )
+    Tests if a value is an array-like object containing only number objects
+    having NaN values.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is an array-like object containing only
+        number objects having NaN values.
+
+    Examples
+    --------
+    > var bool = {{alias}}.objects( [ new Number( NaN ), new Number( NaN ) ] )
+    true
+    > bool = {{alias}}.objects( [ NaN, new Number( NaN ), new Number( NaN ) ] )
+    false
+    > bool = {{alias}}.objects( [ NaN, NaN, NaN ] )
+    false
+
+    See Also
+    --------
+

@@ -1,0 +1,148 @@
+Return-Path: <newsletter@jobfair24.de>
+Received: from sunu422.rz.ruhr-uni-bochum.de (sunu422.rz.ruhr-uni-bochum.de [134.147.64.14])
+	by yoda.bph.ruhr-uni-bochum.de (8.8.8/8.8.8) with SMTP id XAA04507
+	for <Xxx@bph.ruhr-uni-bochum.de>; Mon, 24 Jun 2002 23:11:58 +0200
+Received: (qmail 19702 invoked by alias); 24 Jun 2002 21:11:55 -0000
+Received: (qmail 19692 invoked by uid 82); 24 Jun 2002 21:11:55 -0000
+Received: from newsletter@jobfair24.de by mailhost with qmail-scanner-1.00 (uvscan: v4.1.40/v4208. . Clean. Processed in 0.651766 secs); 24 Jun 2002 21:11:55 -0000
+Received: from sunu450.rz.ruhr-uni-bochum.de (134.147.32.69)
+  by mi-1.rz.ruhr-uni-bochum.de with SMTP; 24 Jun 2002 21:11:54 -0000
+Received: (qmail 22557 invoked by alias); 24 Jun 2002 21:11:53 -0000
+Received: (qmail 22548 invoked from network); 24 Jun 2002 21:11:53 -0000
+Received: from mx15.web.de (217.72.192.174)
+  by sunu450.rz.ruhr-uni-bochum.de with SMTP; 24 Jun 2002 21:11:53 -0000
+Received: from [192.76.144.150] (helo=smtp01ffm.de.uu.net)
+	by mx15.web.de with esmtp (WEB.DE(Exim) 4.70 #5)
+	id 17Mb7o-0007Uv-00
+	for Xxxxxxxxx.Yyyyyyy@web.de; Mon, 24 Jun 2002 23:11:52 +0200
+Received: from jobfair24.de ([194.175.230.123])
+	by smtp01ffm.de.uu.net (5.5.5/5.5.5) with ESMTP id XAA20750
+	for <Xxxxxxxxx.Yyyyyyy@web.de>; Mon, 24 Jun 2002 23:11:52 +0200 (MET DST)
+Message-ID: <241620026124211749807@jobfair24.de>
+X-EM-Version: 4, 5, 0, 0
+X-EM-Registration: #30C3410514B417038530
+Reply-To: newsletter@jobfair24.de
+From: "jobfair24" <newsletter@jobfair24.de>
+To: "Xxxxxxxxx.Yyyyyyy@web.de" <Xxxxxxxxx.Yyyyyyy@web.de>
+Subject: Virtueller Messetag der jobfair24 am Mittwoch, 03. Juli 2002
+Date: Mon, 24 Jun 2002 23:17:49 +0200
+MIME-Version: 1.0
+Content-type: text/plain; charset=iso-8859-1
+X-MIME-Autoconverted: from 8bit to quoted-printable by smtp01ffm.de.uu.net id XAA20750
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by yoda.bph.ruhr-uni-bochum.de id XAA04507
+X-Mozilla-Status2: 00000000
+
+Hallo Xxxxxxxxx Yyyyyyy,
+
+diesen Monat im Newsletter: heisse Karrieregespraeche in kurzen Hosen und
+wie Sie mit der Profi-Stellensuche schneller ans Ziel kommen!
+
+Viel Erfolg bei der Jobsuche wuenscht Ihnen das
+jobfair24-Team
+
+--
+Inhalt:
+---
+1. Die erste virtuelle MBA-Messe
+2. Virtueller Messetag am Mittwoch, 03. Juli 2002
+3. Wir stellen vor: Unternehmen auf der jobfair24
+4. Profi-Stellensuche
+
+
+---
+1. Die erste virtuelle MBA-Messe
+---
+Am Donnerstag, 20. Juni hat sie eroeffnet, die erste virtuelle MBA-Messe im
+Internet. Unter www.jobfair24.de/virtualworldmbatour koennen Sie sich bei
+rund 40 der Top 100 Business Schools weltweit ueber Studiengaenge,
+Schwerpunktthemen, Studiengebuehren, Stipendien, und vieles mehr
+informieren. Noch bis zum 04. Juli 2002 sind die 3D-Messehallen fuer Sie
+geoeffnet - rund um die Uhr.
+Zum virtuellen Messetag am Donnerstag, 27. Juli stehen Ihnen dann zwischen
+13 und 19 Uhr die Vertreter der Business Schools in Chat Gespraechen zur
+Verfuegung. Wer moechte, kann sich bereits im Vorfeld online fuer
+Chat-Termine bei den einzelnen Instituten bewerben.
+Unter anderem vertreten sind: Columbia Business School (USA), London School
+of Economics (Grossbritannien),  HEC MBA Program (Frankreich), SDA Bocconi
+(Italien), Instituto de Empresa (Spanien), HEC Montreal (Kanada),
+University of Westminster (Grossbritannien), ...
+
+Zur VirtualWorldMBATour geht´s hier:
+http://www.jobfair24.de/virtualworldmbatour/start/
+
+---
+2. Virtueller Messetag am Mittwoch, 03. Juli 2002
+---
+Drueckende Hitze draussen und im Buero stehende Luft? Gehen Sie doch einen
+Mittwoch nachmittag eher nach Hause und geniessen Sie den Besuch einer
+Rekrutierungsmesse - ohne Anzug und ohne Anreise!
+Mit einem kuehlen Getraenk in der Hand, in Shorts und T-Sirt koennen Sie
+vom eigenen Sofa aus die virtuelle 3D-Job-Messe besuchen und
+Karrieregespraeche mit den Personalverantwortlichen zahlreicher
+international taetiger Unternehmen fuehren.
+Am Mittwoch, 03. Juli 2002 zwischen 13 und 18 Uhr ist es wieder so weit -
+also am Besten schon mal die Getraenke kalt stellen ;-)
+
+Login: http://www.jobfair24.de/cgi-bin/bewerber/login.cgi
+
+---
+3. Wir stellen vor: Unternehmen auf der jobfair24
+--
+Deutsche Krankenversicherung AG - Mit ueber 2,9 mio Versicherten ist die
+DKV Europas fuehrender Spezialist fuer die private Krankenversicherung.
+2002 wird weiter expandiert und dafuer werden bundesweit
+Hochschulabsolventen mit wirtschafts- oder rechtswissenschaftlichem Studium
+gesucht. Weitere Infos rund um die DKV stehen im Firmenprofil:
+http://www.jobfair24.de/firmen/dkv/profil/dkv.html
+
+SCA Hygiene Products - Das internationale Unternehmen mit Hauptsitz
+Muenchen-Flughafen ist im Bereich Hygiene Producs taetig. Fuer 2002 werden
+vor allem Mitarbeiter aus den Bereichen Ingenieurwesen (z.B. Papier,
+Verfahrenstechnik, Maschinenbau) aber auch BWL und Informatik gesucht.
+Viele weitere Informationen gibt´s im Firmenprofil:
+http://www.jobfair24.de/firmen/sca/profil/sca.html
+
+Firmenprofile der anderen ausstellenden Unternehmen finden Sie hier:
+http://www.jobfair24.de/cgi-bin/stellensuche/firmaprofil.cgi
+
+--
+4. Profi-Stellensuche
+---
+Heute suchen, im Herbst arbeiten? Klingt gut!
+Ein Besuch auf der virtuellen 3D-Job-Messe ist dabei der richtige Weg zum
+Traumjob. Um sich ideal auf die Chat-Gespraeche vorzubereiten, sollten Sie
+nicht nur Ihre digitale Bewerbungsmappe bereits ausgefuellt haben. 
+Auch ein Blick in die Profi-Stellensuche kann sehr hilfreich sein!
+Hier koennen Sie nach Berufsfeldern, nach der Art der Einstellung, nach
+Laendern,... suchen und dann am Messetag ganz gezielt auf die
+Personalmanager zugehen. Das spart Zeit und Nerven.
+
+Mal ausprobieren? Einfach hier klicken:
+http://www.jobfair24.de/cgi-bin/stellensuche/stellen_suche.cgi?SEARCH=1
+
+
+--------------
+Infos zum Newsletter:
+-------
+Dieser Newsletter wurde versendet an: Xxxxxxxxx.Yyyyyyy@web.de 
+
+Falls Sie Fragen haben, Hilfe benoetigen bzw. Anregungen oder Kritik
+aeussern wollen (oder vielleicht ein kleines Lob :-)), wenden Sie sich
+bitte an: newsletter@jobfair24.de Wenn Sie den Newsletter wieder
+abbestellen wollen, klicken Sie hier:
+http://www.jobfair24.de/cgi-bin/newsletter/unsubscribe.cgi
+Falls Sie diesen Newsletter durch einen Freund erhalten haben und ihn gerne
+abonnieren wuerden:
+http://www.jobfair24.de/cgi-bin/newsletter/newsletter.cgi 
+Es kann leider hin und wieder passieren, dass durch fehlerhafte
+Eintragungen von E-Mail Adressen Mails falsch zugestellt werden. Dies ist
+natuerlich unbeabsichtigt... Um sich aus der Liste zu loeschen einfach hier
+klicken: http://www.jobfair24.de/cgi-bin/newsletter/unsubscribe.cgi oder
+besuchen Sie uns doch einmal auf unserer Homepage
+http://www.jobfair24.de/start.html und lassen Sie sich vom Flair der
+weltweit ersten virtuellen 3D-Job-Messe begeistern!
+
+
+
+

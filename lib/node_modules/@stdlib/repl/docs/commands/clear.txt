@@ -1,0 +1,15 @@
+
+clear()
+    Clears the entire REPL screen and scrollback history.
+
+    This function is only applicable for TTY REPLs. In non-TTY REPLs, this
+    function is a non-operation.
+
+    Examples
+    --------
+    > clear()
+
+    See Also
+    --------
+    quit, reset, save
+

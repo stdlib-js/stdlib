@@ -1,0 +1,143 @@
+From razor-users-admin@lists.sourceforge.net  Sat Sep 21 10:41:08 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 0FDAA16F03
+	for <jm@localhost>; Sat, 21 Sep 2002 10:41:05 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 21 Sep 2002 10:41:05 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8KLDAC23190 for <jm-razor@jmason.org>; Fri, 20 Sep 2002 22:13:11 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17sUyV-00054C-00; Fri,
+    20 Sep 2002 14:06:07 -0700
+Received: from dsl092-097-160.nyc2.dsl.speakeasy.net ([66.92.97.160]
+    helo=sunserver.sunilactive.com) by usw-sf-list1.sourceforge.net with esmtp
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17sUyA-00027j-00 for
+    <razor-users@lists.sourceforge.net>; Fri, 20 Sep 2002 14:05:46 -0700
+Received: from inthespace.com (localhost.localdomain [127.0.0.1]) by
+    sunserver.sunilactive.com (Postfix) with SMTP id 3C1E337917;
+    Fri, 20 Sep 2002 17:05:16 -0400 (EDT)
+Received: from 208.236.42.2 (SquirrelMail authenticated user
+    savkar@inthespace.com) by sunserver.sunilactive.com with HTTP;
+    Fri, 20 Sep 2002 17:05:16 -0400 (EDT)
+Message-Id: <20930.208.236.42.2.1032555916.squirrel@sunserver.sunilactive.com>
+Subject: Re: [Razor-users] Using razor with maildrop
+From: "Sunil William Savkar" <lists.savkar@inthespace.com>
+To: <jeff.taylor@ieee.org>
+In-Reply-To: <20020919161158.GA19733@pogo.bearhouse.lan>
+References: <000e01c25fcb$f8427560$fd0010ac@sunpower>
+    <20020919161158.GA19733@pogo.bearhouse.lan>
+X-Priority: 3
+Importance: Normal
+X-Msmail-Priority: Normal
+Cc: <razor-users@example.sourceforge.net>
+Reply-To: lists.savkar@inthespace.com
+X-Mailer: SquirrelMail (version 1.2.7)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchives/forum.php?forum=razor-users>
+X-Original-Date: Fri, 20 Sep 2002 17:05:16 -0400 (EDT)
+Date: Fri, 20 Sep 2002 17:05:16 -0400 (EDT)
+
+Jeff--
+
+What is the maildrop recipe you use with spamassassin?  I was trying to
+set mine up but I am running into a few difficulties.
+
+I think I will try spamassassin first and see how it goes, and then
+perhaps fold in razor2... is it easy to fold in?
+
+Sunil
+
+>
+> Here is my recipe for Maildrop:
+>
+> # Vipul's Razor check
+> #
+> log `/usr/bin/razor-check`
+> log "razor-check = $RETURNCODE"
+> if ( $RETURNCODE == 0 )
+> {
+>   xfilter "reformail -a'X-Razor: SPAM'"
+>   log "SPAM caught by Vipul's Razor"
+>   to "$FOLDERS/.SPAM/"
+> }
+>
+> I used this with Razor version 1.  I'm not sure if it was ever used with
+> Razor2.  I am now using SpamAssassin w/ Razor2.  You may wish to remove
+> the log statements once running.
+>
+> I use both.  SpamAssassin (SA) catches things that Razor does not.
+> There were enough false positives with Razor that I do not trust it
+> alone. After whitelisting all the newsletters I receive, SA w/ Razor2
+> does a very good job.
+>
+> HTH,
+>   Jeffrey
+>
+>
+> Quoting Sunil William Savkar <sunil@inthespace.com>:
+>> Hi.
+>>
+>> I just finished installing and getting running maildrop with my
+>> virtual users.  I was thinking to set up razor with maildrop as my
+>> first test of its filtering capabilities..
+>>
+>> I have seen documentation out there for procmail, but is there similar
+>> documentation for integrating maildrop with razor?
+>>
+>>
+>>
+>> Separately, it looks like many people use spamassassin with razor.  If
+>> I am using razor2, is there still an advantage to this?
+>>
+>>
+>>
+>> Thanks in advance.
+>>
+>>
+>>
+>> Sunil
+>>
+>
+>
+> -------------------------------------------------------
+> This sf.net email is sponsored by:ThinkGeek
+> Welcome to geek heaven.
+> http://thinkgeek.com/sf
+> _______________________________________________
+> Razor-users mailing list
+> Razor-users@lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/razor-users
+
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

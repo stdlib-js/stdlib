@@ -1,0 +1,61 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Mon Sep  9 15:45:52 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Mon, 09 Sep 2002 10:45:52 -0400
+Subject: [Spambayes] test sets?
+In-Reply-To: <200209091410.g89EA0428928@pcp02138704pcs.reston01.va.comcast.net>
+Message-ID: <LNBBLJKPBEHFEDALKOLCIECBBDAB.tim.one@comcast.net>
+
+[Tim]
+>> I'd prefer to strip HTML tags from everything, but last time I tried
+>> that it still had bad effects on the error rates in my corpora
+
+[Guido]
+> Your corpora are biased in this respect though -- newsgroups have a
+> strong social taboo on posting HTML, but in many people's personal
+> inboxes it is quite abundant.
+
+We're in violent agreement there:  the comments in tokenizer.py say that as
+strongly as possible, and I've repeated it endlessly here too.  But so long
+as I was the only one doing serious testing, it was a dubious idea to make
+the code maximally clumsy for me to use on the c.l.py task <wink>.
+
+> Getting a good ham corpus may prove to be a bigger hurdle than I
+> though!  My own saved mail doesn't reflect what I receive, since I
+> save and throw away selectively (much more so than in the past :-).
+
+Yup, the system picks up on *everything* in the tokens.  Graham's proposed
+"delete as ham" and "delete as spam" keys would probably work very well for
+motivated geeks.  But Paul Svensson has pointed out here that they probably
+wouldn't work nearly so well for real people.
+
+>> Ah!  That explains why the HTML tags didn't get stripped.  I'd again
+>> offer to add an optional argument to tokenize() so that they'd get
+>> stripped here too, but if it gets glossed over a third time that
+>> would feel too much like a loss <wink>.
+
+> I'll bite.  Sounds like a good idea to strip the HTML in this case;
+> I'd like to see how this improves the f-p rate on this corpus.
+
+I'll soon check in this change:
+
+    def tokenize_body(self, msg, retain_pure_html_tags=False):
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        """Generate a stream of tokens from an email Message.
+
+        If a multipart/alternative section has both text/plain and text/html
+        sections, the text/html section is ignored.  This may not be a good
+        idea (e.g., the sections may have different content).
+
+        HTML tags are always stripped from text/plain sections.
+
+        By default, HTML tags are also stripped from text/html sections.
+        However, doing so hurts the false negative rate on Tim's
+        comp.lang.python tests (where HTML-only messages are almost never
+        legitimate traffic).  If optional argument retain_pure_html_tags
+        is specified and True, HTML tags are retained in text/html sections.
+        """
+
+You should do a cvs up and establish a new baseline first, as I checked in a
+pure-win change in the wee hours that cut the fp and fn rates in my tests.
+

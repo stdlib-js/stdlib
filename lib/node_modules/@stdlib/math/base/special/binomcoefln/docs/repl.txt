@@ -1,0 +1,41 @@
+
+{{alias}}( n, k )
+    Computes the natural logarithm of the binomial coefficient of two integers.
+
+    If `k < 0`, the function returns negative infinity.
+
+    The function returns `NaN` for non-integer `n` or `k`.
+
+    Parameters
+    ----------
+    n: integer
+        First input value.
+
+    k: integer
+        Second input value.
+
+    Returns
+    -------
+    out: number
+        Natural logarithm of the binomial coefficient.
+
+    Examples
+    --------
+    > var v = {{alias}}( 8, 2 )
+    ~3.332
+    > v = {{alias}}( 0, 0 )
+    0.0
+    > v = {{alias}}( -4, 2 )
+    ~2.303
+    > v = {{alias}}( 88, 3 )
+    ~11.606
+    > v = {{alias}}( NaN, 3 )
+    NaN
+    > v = {{alias}}( 5, NaN )
+    NaN
+    > v = {{alias}}( NaN, NaN )
+    NaN
+
+    See Also
+    --------
+

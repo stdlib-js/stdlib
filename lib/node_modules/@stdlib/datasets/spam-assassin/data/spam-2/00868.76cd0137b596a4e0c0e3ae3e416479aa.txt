@@ -1,0 +1,121 @@
+Return-Path: <tomkelly2fg7@address.com>
+Received: from user2.pro-ns.net (user2.pro-ns.net [208.200.182.45])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6LMqkCT076963
+	for <wmo+webmaster@hq.pro-ns.net>; Sun, 21 Jul 2002 17:52:46 -0500 (CDT)
+	(envelope-from tomkelly2fg7@address.com)
+Received: from IIS.The9thInning.Net (cdm-66-7-222-bent.cox-internet.com [66.233.7.222])
+	by user2.pro-ns.net (8.12.3/8.12.2) with ESMTP id g6LMqjrR042595
+	for <webmaster@prons.com>; Sun, 21 Jul 2002 17:52:45 -0500 (CDT)
+	(envelope-from tomkelly2fg7@address.com)
+X-Authentication-Warning: user2.pro-ns.net: Host cdm-66-7-222-bent.cox-internet.com [66.233.7.222] claimed to be IIS.The9thInning.Net
+Received: from postoffice.address.com (host110250.arnet.net.ar [200.45.110.250]) by IIS.The9thInning.Net with SMTP (Microsoft Exchange Internet Mail Service Version 5.5.2653.13)
+	id PKX05FBX; Sun, 21 Jul 2002 17:48:21 -0500
+Message-ID: <000010d30e52$000009e1$00003484@postoffice.address.com>
+To: <Undisclosed.Recipients@user2.pro-ns.net>
+From: tomkelly2fg7@address.com
+Subject: Your application is below. Expires July 27.
+Date: Sun, 21 Jul 2002 18:53:01 -1600
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Reply-To: tomkelly2fg7@address.com
+
+<html>
+
+
+<HEAD> 
+<META charset=3DUTF-8></HEAD>
+<BODY background=3D""><FONT color=3D#000000 face=3DArial>
+<TABLE border=3D1 borderColorDark=3D#e0e0e0 cellPadding=3D1 cellSpacing=3D=
+0 frame=3Dbox rules=3Dgroups 
+style=3D"BACKGROUND-COLOR:#e0e0e0; FONT-SIZE: x-small" width=3D"100%">
+<TBODY>
+<TR>
+<TD bgColor=3D#e0e0e0 color=3D"#000000">
+<TR align=3Dleft bgColor=3D#e0e0e0 color=3D"#000000">
+<TR>
+<TD>
+</STYLE>
+
+<META content=3D"MSHTML 5.50.4807.2300" name=3DGENERATOR>
+<DIV align=3Dcenter>
+<TABLE bgColor=3D#0033ff cellPadding=3D0 cellSpacing=3D3 width=3D652>
+<TBODY>
+<TR>
+<TD>
+<TABLE bgColor=3D#71a5cc cellPadding=3D0 cellSpacing=3D0 width=3D646>
+<TBODY>
+<TR>
+<TD bgColor=3D#71a5cc></TD></TR>
+<TR>
+<TD align=3Dmiddle bgColor=3D#71a5cc><FONT color=3Dwhite face=3Darial,helv=
+etica><B>
+<font size=3D"5">
+<BR>Your application for the Grant is below. <BR> <BR>Remember, because of=
+ the type of Grant this is,<BR> you will never need to repay!<BR></B>
+
+</FONT></TD></TR>
+<TR>
+<TD bgColor=3D#71a5cc><BR>
+<UL><FONT color=3Dwhite face=3Darial,helvetica>
+
+<font size=3D"5">
+<center><font color=3D"red">>>
+<font color=3D"yellow">
+Time is limited. <font color=3D"red"><<<br> <FONT color=3Dwhite face=3Dari=
+al,helvetica>
+<font size=3D"4">You must place your order by<font size=3D"5"><font color=3D=
+"yellow"> Midnight, Saturday July 27, 2002<font size=3D"4"> <br><FONT colo=
+r=3Dwhite face=3Darial,helvetica>
+in order to secure a place in these programs.<br><br><br><br>
+</center>
+
+
+ Too many people can qualify for this program, so by limiting the initial =
+applicants<br>
+ to the most serious,  sincere and honest individuals. It will ensure that=
+ the <br>
+program money is used for beneficial, constructive uses. <br>
+ Remember there is <b>no risk</b> on your part.<br>
+Also, each Grant is usually a <b>minimum of $10,000,</b> so this is a grea=
+t opportunity!</b><br><br>
+<center>
+<a href=3D"http://www.freehostchina.com/grant/web2pleasure/index.html">
+SEE IF YOU ARE ELIGIBLE FOR A LARGER GRANT!</a><br><br></center>
+
+<br> If you do not qualify for the Free Grant Program, <b>you lose nothing=
+!</b><br>
+But if you don't even apply, you lose EVERYTHING! <br>Remember,
+ not everyone gets this opportunity, <br>
+and you get to be one of the first people to apply! <br>
+So your chances are so much higher!<br><br><br><br>
+
+<FONT SIZE=3D"6">
+<center>
+<a href=3D"http://www.freehostchina.com/grant/web2pleasure/index.html">
+APPLY NOW! <FONT SIZE=3D"5"><br>
+Deadline is almost here!</a><br><br></center>
+
+
+
+<br><br><br><br><br><br> 
+
+<DIV align=3Dcenter></DIV></A></LI></UL>
+<DIV align=3Dcenter><BR><BR><BR><BR></DIV></TD></TR> 
+</BODY> </HTML>
+
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

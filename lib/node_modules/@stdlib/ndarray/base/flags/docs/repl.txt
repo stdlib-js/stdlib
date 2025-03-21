@@ -1,0 +1,30 @@
+
+{{alias}}( x, copy )
+    Returns the flags of a provided ndarray.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray.
+
+    copy: boolean
+        Boolean indicating whether to explicitly copy the value assigned to the
+        input ndarray's `flags` property. When `copy` is `false`, changes to the
+        returned object may mutate the input ndarray strides. If there is a
+        chance that the returned object will be mutated (either directly or by
+        downstream consumers), set `copy` to `true` to prevent unintended side
+        effects.
+
+    Returns
+    -------
+    out: Object
+        Flags.
+
+    Examples
+    --------
+    > var out = {{alias}}( {{alias:@stdlib/ndarray/zeros}}( [ 3, 3, 3 ] ), false )
+    {...}
+
+    See Also
+    --------
+

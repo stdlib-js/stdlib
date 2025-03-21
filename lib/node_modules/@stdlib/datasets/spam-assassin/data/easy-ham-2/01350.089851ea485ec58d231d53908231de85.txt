@@ -1,0 +1,59 @@
+From craig@deersoft.com  Tue Aug  6 22:50:20 2002
+Return-Path: <craig@deersoft.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B1BCA440C8
+	for <jm@localhost>; Tue,  6 Aug 2002 17:50:20 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 22:50:20 +0100 (IST)
+Received: from maynard.mail.mindspring.net (maynard.mail.mindspring.net
+    [207.69.200.243]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g76Lkvk20040 for <jm@jmason.org>; Tue, 6 Aug 2002 22:46:58 +0100
+Received: from user-1121e1b.dsl.mindspring.com ([66.32.184.43]
+    helo=belphegore.hughes-family.org) by maynard.mail.mindspring.net with
+    esmtp (Exim 3.33 #1) id 17cC8v-0003oH-00; Tue, 06 Aug 2002 17:45:29 -0400
+Received: from balam.hughes-family.org
+    (adsl-67-118-234-50.dsl.pltn13.pacbell.net [67.118.234.50]) by
+    belphegore.hughes-family.org (Postfix) with ESMTP id E4A6F92774;
+    Tue,  6 Aug 2002 14:45:26 -0700 (PDT)
+Date: Tue, 6 Aug 2002 14:45:23 -0700
+Subject: Re: [SAtalk] BIG CHANGE coming up in cvs
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+MIME-Version: 1.0 (Apple Message framework v482)
+Cc: SpamAssassin-talk@example.sourceforge.net
+To: yyyy@spamassassin.taint.org (Justin Mason)
+From: "Craig R.Hughes" <craig@deersoft.com>
+In-Reply-To: <20020806171934.7D996440A8@phobos.labs.netnoteinc.com>
+Message-Id: <CFBCDEE0-A985-11D6-A5A1-00039396ECF2@deersoft.com>
+Content-Transfer-Encoding: 7bit
+X-Mailer: Apple Mail (2.482)
+
+
+On Tuesday, August 6, 2002, at 10:19  AM, Justin Mason wrote:
+
+>
+> "Craig R.Hughes" said:
+>
+>> Excellent.  After that, I'd suggest we work on stabilizing (ie
+>> no new features) for a bit, and getting 2.40 released.  I think
+>> we're in reasonably good shape now with 2.40 (plus or minus some
+>> build issues occasionally creeping in), and Razor2 is starting
+>> to get a little less flakey (minus one or two server issues in
+>> the last few days).
+>
+> Yeah, I agree.  Although note: I'd like to see the proposal to use
+> Received IPs in the AWL, get into 2.40 too.  That's being actively
+> exploited right now.
+
+Yeah, AWL IPs is a good thing for 2.40
+
+> Razor2 is definitely getting solid, and getting some good hits too!
+
+When it works, yeah.  But it's so flakey I have to turn it off 
+so that my mail can be guaranteed to actually get through in a 
+decent timeframe.
+
+C
+
+

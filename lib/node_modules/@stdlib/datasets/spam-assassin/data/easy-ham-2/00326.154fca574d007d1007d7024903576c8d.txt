@@ -1,0 +1,62 @@
+From ilug-admin@linux.ie  Mon Aug 12 11:05:23 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 954FA4414E
+	for <jm@localhost>; Mon, 12 Aug 2002 05:55:50 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:55:50 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79MJib27680 for
+    <jm-ilug@jmason.org>; Fri, 9 Aug 2002 23:19:44 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id XAA32051; Fri, 9 Aug 2002 23:15:54 +0100
+Received: from hawk.dcu.ie (mail.dcu.ie [136.206.1.5]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id XAA32018 for <ilug@linux.ie>; Fri,
+    9 Aug 2002 23:15:47 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host mail.dcu.ie [136.206.1.5]
+    claimed to be hawk.dcu.ie
+Received: from prodigy.redbrick.dcu.ie (136.206.15.10) by hawk.dcu.ie
+    (6.0.040) id 3D36BB4A00082CCF; Fri, 9 Aug 2002 23:15:46 +0100
+Received: by prodigy.redbrick.dcu.ie (Postfix, from userid 666) id
+    288A8DA4A; Fri,  9 Aug 2002 23:15:46 +0100 (IST)
+Date: Fri, 9 Aug 2002 23:15:45 +0100
+From: =?iso-8859-1?Q?Colm_MacC=E1rthaigh?= <colmmacc@redbrick.dcu.ie>
+To: Paul Linehan <plinehan@yahoo.com>
+Cc: ilug@linux.ie
+Subject: Re: [ILUG] ILUG newsgroup(s)?
+Message-Id: <20020809231545.A2206@prodigy.Redbrick.DCU.IE>
+References: <20020709103958.GA670@skynet.ie>
+    <20020809180733.63093.qmail@web13906.mail.yahoo.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <20020809180733.63093.qmail@web13906.mail.yahoo.com>;
+    from plinehan@yahoo.com on Fri, Aug 09, 2002 at 08:07:33PM +0200
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Fri, Aug 09, 2002 at 08:07:33PM +0200, Paul Linehan wrote:
+> Is there any way that the mailing list can be 
+> turned into newsgroup?
+
+yep, mail to news gateways are common.
+
+http://www.tldp.org/HOWTO/mini/Mail2News.html
+
+-- 
+colmmacc@redbrick.dcu.ie        PubKey: colmmacc+pgp@redbrick.dcu.ie  
+Web:                                 http://devnull.redbrick.dcu.ie/ 
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

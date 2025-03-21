@@ -1,0 +1,27 @@
+
+{{alias}}( [dtype] )
+    Returns a list of array data types to which a provided array data type can
+    be safely cast and, for floating-point data types, can be downcast.
+
+    If not provided an array data type, the function returns a casting table.
+
+    If provided an unrecognized array data type, the function returns `null`.
+
+    Parameters
+    ----------
+    dtype: any (optional)
+        Array data type value.
+
+    Returns
+    -------
+    out: Object|Array<string>|null
+        Array data types to which a data type can be cast.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'float32' )
+    <Array>
+
+    See Also
+    --------
+

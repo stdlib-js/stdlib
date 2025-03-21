@@ -1,0 +1,93 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Fri Aug 23 11:12:29 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8B0F247C68
+	for <jm@localhost>; Fri, 23 Aug 2002 06:08:35 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 23 Aug 2002 11:08:35 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7MILwZ19409 for <jm-sa@jmason.org>; Thu, 22 Aug 2002 19:21:58 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17hwZs-0005oO-00; Thu,
+    22 Aug 2002 11:21:04 -0700
+Received: from tisch.mail.mindspring.net ([207.69.200.157]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17hwYx-0003zN-00; Thu, 22 Aug 2002 11:20:07 -0700
+Received: from user-105nd99.dialup.mindspring.com ([64.91.181.41]
+    helo=belphegore.hughes-family.org) by tisch.mail.mindspring.net with esmtp
+    (Exim 3.33 #1) id 17hwYo-00005D-00; Thu, 22 Aug 2002 14:19:58 -0400
+Received: from balam.hughes-family.org
+    (adsl-67-118-234-50.dsl.pltn13.pacbell.net [67.118.234.50]) by
+    belphegore.hughes-family.org (Postfix) with ESMTP id 9A465B5CE;
+    Thu, 22 Aug 2002 11:19:57 -0700 (PDT)
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+MIME-Version: 1.0 (Apple Message framework v482)
+Cc: SpamAssassin-talk@example.sourceforge.net,
+	SpamAssassin-devel@lists.sourceforge.net
+To: yyyy@spamassassin.taint.org (Justin Mason)
+From: "Craig R.Hughes" <craig@deersoft.com>
+In-Reply-To: <20020822164954.699E343F99@phobos.labs.netnoteinc.com>
+Message-Id: <C37FB068-B5FB-11D6-A91E-00039396ECF2@deersoft.com>
+Content-Transfer-Encoding: 7bit
+X-Mailer: Apple Mail (2.482)
+Subject: [SAtalk] Re: [SAdev] 2.40 RELEASE PROCESS: mass-check status, folks?
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Thu, 22 Aug 2002 11:19:57 -0700
+Date: Thu, 22 Aug 2002 11:19:57 -0700
+
+I think with the confusion and all, we should give these folks 
+until the end of the day to get fixed logs uploaded :)
+
+Justin, on a related note -- I didn't include the spamtrap stuff 
+from the corpus directory on your server in my logs, but that 
+should definitely be in there -- don't know if you'd included it 
+in yours or not.  I think it's from Kelsey's mailtraps...
+
+C
+
+On Thursday, August 22, 2002, at 09:49  AM, Justin Mason wrote:
+
+> Files that are out of date (as far as I can tell -- they have no date
+> comment), and will be ignored:
+>
+>         nonspam-danielp.log
+>         nonspam-danielr.log
+>         nonspam-duncan.log
+>         nonspam-james.log
+>         nonspam-laager.log
+>         nonspam-messagelabs.log
+>         nonspam-msquadrat.log
+>         nonspam-olivier.log
+>         nonspam-oliviern.log
+>         nonspam-quinlan.log
+>         nonspam-rodbegbie.log
+>         nonspam-sean.log
+>         nonspam-theo.log
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

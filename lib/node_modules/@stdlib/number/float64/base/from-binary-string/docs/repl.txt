@@ -1,0 +1,56 @@
+
+{{alias}}( bstr )
+    Creates a double-precision floating-point number from a literal bit
+    representation.
+
+    Parameters
+    ----------
+    bstr: string
+        Literal bit representation.
+
+    Returns
+    -------
+    out: number
+        Double-precision floating-point number.
+
+    Examples
+    --------
+    > var bstr;
+    > bstr = '0100000000010000000000000000000000000000000000000000000000000000';
+    > var val = {{alias}}( bstr )
+    4.0
+    > bstr = '0100000000001001001000011111101101010100010001000010110100011000';
+    > val = {{alias}}( bstr )
+    3.141592653589793
+    > bstr = '1111111111100001110011001111001110000101111010111100100010100000';
+    > val = {{alias}}( bstr )
+    -1.0e308
+
+    // The function handles subnormals:
+    > bstr = '1000000000000000000000000000000000000000000000000001100011010011';
+    > val = {{alias}}( bstr )
+    -3.14e-320
+    > bstr = '0000000000000000000000000000000000000000000000000000000000000001';
+    > val = {{alias}}( bstr )
+    5.0e-324
+
+    // The function handles special values:
+    > bstr = '0000000000000000000000000000000000000000000000000000000000000000';
+    > val = {{alias}}( bstr )
+    0.0
+    > bstr = '1000000000000000000000000000000000000000000000000000000000000000';
+    > val = {{alias}}( bstr )
+    -0.0
+    > bstr = '0111111111111000000000000000000000000000000000000000000000000000';
+    > val = {{alias}}( bstr )
+    NaN
+    > bstr = '0111111111110000000000000000000000000000000000000000000000000000';
+    > val = {{alias}}( bstr )
+    Infinity
+    > bstr = '1111111111110000000000000000000000000000000000000000000000000000';
+    > val = {{alias}}( bstr )
+    -Infinity
+
+    See Also
+    --------
+

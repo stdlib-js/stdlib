@@ -1,0 +1,211 @@
+From zzz@spamassassin.taint.org  Wed Sep  4 18:34:33 2002
+Return-Path: <zzz@spamassassin.taint.org>
+Delivered-To: zzz@spamassassin.taint.org
+Received: by spamassassin.taint.org (Postfix, from userid 500)
+	id 27C6716F70; Wed,  4 Sep 2002 18:34:02 +0100 (IST)
+Received: from timhunt.net (ns1.timhunt.net [216.27.147.130])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6Q74M431124
+	for <tim_timhunt_net@spamtraps.taint.org>; Fri, 26 Jul 2002 08:04:22 +0100
+Received: from abv-sfo1-acmta5.cnet.com (abv-sfo1-acmta5.cnet.com [206.16.1.164])
+	by timhunt.net (8.11.3/8.11.1) with ESMTP id g6Q73aE47732
+	for <sdfs@fsg.com>; Fri, 26 Jul 2002 03:03:37 -0400 (EDT)
+	(envelope-from Online#3.21186.45-m2NUOKj6j6GVpsRR.1.b@newsletter.online.com)
+Received: from abv-sfo1-ac-agent2 (206.16.0.224) by abv-sfo1-acmta5.cnet.com (PowerMTA(TM) v1.5); Thu, 25 Jul 2002 23:56:36 -0700 (envelope-from <Online#3.21186.45-m2NUOKj6j6GVpsRR.1.b@newsletter.online.com>)
+Message-ID: <8050738.1027667010946.JavaMail.root@abv-sfo1-ac-agent2>
+Date: Fri, 26 Jul 2002 00:03:30 -0700 (PDT)
+From: CNET Delivers <Online#3.21186.45-m2NUOKj6j6GVpsRR.1@newsletter.online.com>
+To: sdfs@fsg.com
+Subject: UBID Auction Alert
+Mime-Version: 1.0
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+X-Mailer: Accucast (http://www.accucast.com)
+X-Mailer-Version: 2.8.4-2
+
+<html>
+<head>
+<title>CNET Announcement</title>
+</head>
+<body bgcolor="#eeeeee">
+<center>
+<!-- header -->
+<table width="624" cellpadding="0" cellspacing="0" border="0">
+<tr><td><img src="http://www.cnet.com/i/nl/ann/hd.gif" alt="CNET Announce" width="442" height="60"></td>
+<td><img src="http://www.cnet.com/i/nl/ann/rt.gif" width="184" height="60"></td></tr>
+</table>
+<table width="624" bgcolor="#000000" cellpadding="0" cellspacing="0" border="0">
+<tr><td colspan="4"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td></tr>
+<tr><td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="10"></td>
+<td width="9" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="9" height="1"></td>
+<td width="624" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+<tr><td><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td colspan="2"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<!-- /header -->
+
+<!-- content -->
+<table width="624" bgcolor="#000000" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="9" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="9" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="624" bgcolor="#ffffff"><img src="/b.gif" width="1" height="8"><br><div align="center"><img src="http://home.cnet.com/Ads/Media/Images/ad10-dk.gif" width="120" height="10"></div></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="624" bgcolor="#000000" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="9" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="9" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="624" bgcolor="#ffffff"><font face="verdana, geneva" size="-2" color="#333333">&nbsp;<sup>&nbsp;</sup>
+
+<!-- date -->
+July 26, 2002
+<!-- /date -->
+</font><br>
+
+<!-- ### promo content ### -->
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>uBid.com</title>
+</head>
+
+<body bgcolor="#0099ff" marginheight="10" marginwidth="0" topmargin="10" leftmargin="0">
+<center>
+<table width="500" cellpadding="5" cellspacing="0" border="0"><tr><td bgcolor="#0099ff">
+
+<table width="490" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td colspan="3" bgcolor="#ffffff"><img src="http://image.atdmt.com/ds/AAAVEUBIDUBD/http://image.atdmt.com/ds/AAAVEUBIDUBD/clear_dot.gif" width="490" height="5" alt="" border="0"></td>
+	</tr>
+	<tr>
+		<td bgcolor="#ffffff" width="5"><img src="http://image.atdmt.com/ds/AAAVEUBIDUBD/clear_dot.gif" width="5" height="1" alt="" border="0"></td>
+		<td bgcolor="#ffffff" width="480">
+		
+		<table width="480" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td><a href="http://cgi.zdnet.com/slink?183537"><img src="http://image.atdmt.com/ds/AAAVEUBIDUBD/header.gif" width="480" height="85" alt="uBid.com-Where you win at paying less!" border="0"></a></td>
+			</tr>
+			<tr>
+				<td><a href="http://cgi.zdnet.com/slink?183537"><img src="http://image.atdmt.com/ds/AAAVEUBIDUBD/products_1.gif" width="480" height="50" alt="uBid.com-Where you win at paying less!" border="0"></a></td>
+			</tr>
+			<tr>
+				<td><a href="http://cgi.zdnet.com/slink?183537"><img src="http://image.atdmt.com/ds/AAAVEUBIDUBD/products_2.gif" width="480" height="50" alt="uBid.com-Where you win at paying less!" border="0"></a></td>
+			</tr>
+			<tr>
+				<td><a href="http://cgi.zdnet.com/slink?183537"><img src="http://image.atdmt.com/ds/AAAVEUBIDUBD/products_3.gif" width="480" height="50" alt="uBid.com-Where you win at paying less!" border="0"></a></td>
+			</tr>
+			<tr>
+				<td><a href="http://cgi.zdnet.com/slink?183537"><img src="http://image.atdmt.com/ds/AAAVEUBIDUBD/products_4.gif" width="480" height="50" alt="uBid.com-Where you win at paying less!" border="0"></a></td>
+			</tr>
+			<tr>
+				<td><a href="http://cgi.zdnet.com/slink?183537"><img src="http://image.atdmt.com/ds/AAAVEUBIDUBD/clear_dot.gif" width="480" height="5" alt="" border="0"></a></td>
+			</tr>
+			<tr>
+				<td>
+<p><font face="arial" size="2" color="#003399"><a href="http://cgi.zdnet.com/slink?183537"><b>uBid</b></a>  helps you save more on your technology purchases.  Name your own price auction format lets you buy below wholesale.  Our service and prices have provided value to close to one million customers.  Thousands of new items go up for sale each day, so there's always new merchandise to bid on.</font></p>
+
+<p><font face="arial" size="2" color="#003399">Visit <a href="http://cgi.zdnet.com/slink?183537"><b>uBid</b></a> today and put in a bid on that item you've been shopping for.</font></p>
+<br>
+
+
+
+				</td>
+			</tr>
+			<tr>
+				<td align="center"><a href="http://cgi.zdnet.com/slink?183537"><img src="http://image.atdmt.com/ds/AAAVEUBIDUBD/ubid_logo.gif" width="92" height="40" alt="uBid.com-Where you win at paying less!" border="0"></a></td>
+			</tr>
+			<tr>
+				<td><img src="http://image.atdmt.com/ds/AAAVEUBIDUBD/clear_dot.gif" width="480" height="5" alt="" border="0"></td>
+			</tr>
+		</table>
+		
+		
+		
+		
+		
+		</td>
+		<td bgcolor="#ffffff" width="5"><img src="http://image.atdmt.com/ds/AAAVEUBIDUBD/img/clear_dot.gif" width="5" height="1" alt="" border="0"></td>
+	</tr>
+</table>		
+		
+		
+
+
+</td></tr></table>
+</center>
+
+</body>
+</html>
+
+<!-- ### /promo content ### -->
+</td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+
+<!-- ### footer ### -->
+<table width="624" bgcolor="#000000" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="599" bgcolor="#cccccc"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="624" bgcolor="#eeeeee" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="12"><img src="http://www.cnet.com/b.gif" width="12" height="1"></td>
+<td width="575"><img src="http://www.cnet.com/b.gif" width="1" height="10"><br>
+<a href='http://nl.com.com/servlet/url_login?email=sdfs@fsg.com'><img src="http://a.r.tv.com/cnet.1d/i/nl/ft.gif" width="375" height="18" border="0" alt="Sign up for more free newsletters from CNET!"></a><br>
+
+<!-- subscription management -->
+
+<font face="ms sans serif, geneva" size="-2">
+The e-mail address for your subscription is&nbsp;sdfs@fsg.com<p>
+
+<A NOTRACK HREF="http://clickthru.online.com/Click?q=5b-5L3wzNKWZUeFYLNuRjK9DYwbMzCtQsRR">Unsubscribe</A>&nbsp|&nbsp<a href='http://nl.com.com/servlet/url_login?email=sdfs@fsg.com'>Manage My Subscriptions</a>
+&nbsp;|&nbsp;<a href="http://www.cnet.com/subscription/0-16335-7-6770019.html">FAQ</A>
+&nbsp|&nbsp<a href="http://www.cnet.com/aboutcnet/0-13618.html?tag=ft">Advertise</A><br></font>
+
+<!-- /subscription management-->
+
+</font><img src="http://www.zdnet.com/b.gif" width="1" height="8"></td>
+<td width="12"><img src="http://www.cnet.com/b.gif" width="12" height="1"></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="624" bgcolor="#000000" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="601"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="624" bgcolor="#ffcc00" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="37"><a href="http://www.cnet.com/frontdoor/0-1.html"><img src="http://www.cnet.com/i/dp/smrb.gif" width="37" height="37" border="0"></a></td>
+<td width="563" nowrap><font face="arial, helvetica" size="-1">
+<a href="http://shopper.cnet.com/shopping/0-1257.html"><font color="#000000">Price comparisons</font></a> | 
+<a href="http://computers.cnet.com/hardware/0-1016.html"><font color="#000000">Product reviews</font></a> | 
+<a href="http://news.cnet.com/"><font color="#000000">Tech news</font></a> |
+<a href="http://download.cnet.com/downloads/0-10000.html"><font color="#000000">Downloads</font></a> | 
+<a href="http://www.cnet.com/sitemap/0-2253447.html"><font color="#000000">All CNET services</font></a>
+</font></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="624" cellpadding="0" cellspacing="0" border="0">
+<tr><td bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+<tr><td height="25"><font face="ms sans serif, geneva" size="-2"><tr:ad name="copyright"/>
+</a>.</font></td></tr>
+</table>
+<!-- ### /footer ### -->
+
+</body>
+</html>
+
+<IMG HEIGHT=1 WIDTH=1 SRC="http://clickthru.online.com/Click?q=70-3vdJn9pCyGeVgo8Lns55s_HQUdRR">
+
+

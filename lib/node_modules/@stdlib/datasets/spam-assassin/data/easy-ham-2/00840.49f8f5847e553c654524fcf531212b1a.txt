@@ -1,0 +1,68 @@
+From fork-admin@xent.com  Wed Jul 24 00:21:33 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D1322440CC
+	for <jm@localhost>; Tue, 23 Jul 2002 19:21:32 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 00:21:32 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6NNIm403078 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 00:18:48 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 82A9E2940E2; Tue, 23 Jul 2002 16:08:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mis-dns.mv.timesten.com (host209.timesten.com
+    [63.75.22.209]) by xent.com (Postfix) with ESMTP id 37B122940E0 for
+    <fork@xent.com>; Tue, 23 Jul 2002 16:07:28 -0700 (PDT)
+Received: from mis-exchange.mv.timesten.com (mis-exchange.mv.timesten.com
+    [10.10.10.8]) by mis-dns.mv.timesten.com (8.11.0/8.11.0) with ESMTP id
+    g6NNGab13116; Tue, 23 Jul 2002 16:16:36 -0700
+Received: by mis-exchange.mv.timesten.com with Internet Mail Service
+    (5.5.2653.19) id <35H9VS7P>; Tue, 23 Jul 2002 16:16:36 -0700
+Message-Id: <80CE2C46294CD61198BA00508BADCA830FCE5C@mis-exchange.mv.timesten.com>
+From: Sherry Listgarten <sherry@timesten.com>
+To: "'harley@argote.ch'" <harley@argote.ch>, fork@spamassassin.taint.org
+Subject: RE: My brain hurts
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain; charset="iso-8859-1"
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 23 Jul 2002 16:16:34 -0700
+
+> Someone tell me a joke, or email me a beer or something...
+
+A man is out driving in the country, and drives past a farm with the most
+beautiful pig -- fat, healthy, pink, clean, etc. Just a lovely pig. He gets
+out to admire the pig, and notices that it has a wooden leg! The farmer
+comes by and says "Howdie", and the passerby says "I was just stopping to
+admire your pig. What a lovely pig. But what's with the woo..." The farmer
+interrupts "Oh, yes, this is the most wonderful pig! When our house had a
+huge fire a few years back, and was burning down, this pig came in and
+squealed and made sure we all woke up and got out. She really saved our
+lives!" "My", says the passerby, "what a great story. But what's with the
+wooden l..?" The farmer jumps in again: "And then, when my youngest was out
+in the street playing just a few months ago, and a big tractor trailer came
+barrelling down on her, this pig jumped right in and pushed her out of the
+way, getting them both to the side of the road before the truck came by!"
+"I'll say, that does show great bravery," said the passerby. "But, if you
+don't mind my asking, what *is* the deal with the wooden leg?" The farmer
+paused. "Well," he said, "a pig like that -- you don't want to eat it all at
+once!"
+
+-- Sherry.
+http://xent.com/mailman/listinfo/fork
+
+

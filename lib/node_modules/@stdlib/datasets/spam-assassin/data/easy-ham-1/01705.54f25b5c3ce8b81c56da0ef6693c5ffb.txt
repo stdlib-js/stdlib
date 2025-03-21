@@ -1,0 +1,121 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Sat Sep  7 20:45:18 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Sat, 07 Sep 2002 15:45:18 -0400
+Subject: [Spambayes] understanding high false negative rate
+In-Reply-To: <15738.13529.407748.635725@slothrop.zope.com>
+Message-ID: <LNBBLJKPBEHFEDALKOLCOENBBCAB.tim.one@comcast.net>
+
+>   TP> I'm reading this now as that you trained on about 220 spam and
+>   TP> about 220 ham.  That's less than 10% of the sizes of the
+>   TP> training sets I've been using.  Please try an experiment: train
+>   TP> on 550 of each, and test once against the other 550 of each.
+
+[Jeremy]
+> This helps a lot!
+
+Possibly.  I checked in a change to classifier.py overnight (getting rid of
+MINCOUNT) that gave a major improvement in the f-n rate too, independent of
+tokenization.
+
+> Here are results with the stock tokenizer:
+
+Unsure what "stock tokenizer" means to you.  For example, it might mean
+tokenizer.tokenize, or mboxtest.MyTokenizer.tokenize.
+
+> Training on <mbox: /home/jeremy/Mail/INBOX 0> & <mbox:
+> /home/jeremy/Mail/spam 8>
+>  ... 644 hams & 557 spams
+>       0.000  10.413
+>       1.398   6.104
+>       1.398   5.027
+> Training on <mbox: /home/jeremy/Mail/INBOX 0> & <mbox:
+> /home/jeremy/Mail/spam 0>
+>  ... 644 hams & 557 spams
+>       0.000   8.259
+>       1.242   2.873
+>       1.242   5.745
+> Training on <mbox: /home/jeremy/Mail/INBOX 2> & <mbox:
+> /home/jeremy/Mail/spam 3>
+>  ... 644 hams & 557 spams
+>       1.398   5.206
+>       1.398   4.488
+>       0.000   9.336
+> Training on <mbox: /home/jeremy/Mail/INBOX 2> & <mbox:
+> /home/jeremy/Mail/spam 0>
+>  ... 644 hams & 557 spams
+>       1.553   5.206
+>       1.553   5.027
+>       0.000   9.874
+> total false pos 139 5.39596273292
+> total false neg 970 43.5368043088
+
+Note that those rates remain much higher than I got using just 220 of ham
+and 220 of spam.  That remains A Mystery.
+
+> And results from the tokenizer that looks at all headers except Date,
+> Received, and X-From_:
+
+Unsure what that means too.  For example, "looks at" might mean you enabled
+Anthony's count-them gimmick, and/or that you're tokenizing them yourself,
+and/or ...?
+
+> Training on <mbox: /home/jeremy/Mail/INBOX 0> & <mbox:
+> /home/jeremy/Mail/spam 8>
+>  ... 644 hams & 557 spams
+>       0.000   7.540
+>       0.932   4.847
+>       0.932   3.232
+> Training on <mbox: /home/jeremy/Mail/INBOX 0> & <mbox:
+> /home/jeremy/Mail/spam 0>
+>  ... 644 hams & 557 spams
+>       0.000   7.181
+>       0.621   2.873
+>       0.621   4.847
+> Training on <mbox: /home/jeremy/Mail/INBOX 2> & <mbox:
+> /home/jeremy/Mail/spam 3>
+>  ... 644 hams & 557 spams
+>       1.087   4.129
+>       1.087   3.052
+>       0.000   6.822
+> Training on <mbox: /home/jeremy/Mail/INBOX 2> & <mbox:
+> /home/jeremy/Mail/spam 0>
+>  ... 644 hams & 557 spams
+>       0.776   3.411
+>       0.776   3.411
+>       0.000   6.463
+> total false pos 97 3.76552795031
+> total false neg 738 33.1238779174
+>
+> Is it safe to conclude that avoiding any cleverness with headers is a
+> good thing?
+
+Since I don't know what you did, exactly, I can't guess.  What you seemed to
+show is that you did *something* clever with headers and that doing so
+helped (the "after" numbers are better than the "before" numbers, right?).
+Assuming that what you did was override what's now
+tokenizer.Tokenizer.tokenize_headers with some other routine, and didn't
+call the base Tokenizer.tokenize_headers at all, then you're missing
+carefully tested treatment of just a few header fields, but adding many
+dozens of other header fields.  There's no question that adding more header
+fields should help; tokenizer.Tokenizer.tokenize_headers doesn't do so only
+because my testing corpora are such that I can't add more headers without
+getting major benefits for bogus reasons.
+
+Apart from all that, you said you're skipping Received.  By several
+accounts, that may be the most valuable of all the header fields.  I'm
+(meaning tokenizer.Tokenizer.tokenize_headers) skipping them too for the
+reason explained above.  Offline a week or two ago, Neil Schemenauer
+reported good results from this scheme:
+
+    ip_re = re.compile(r'(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})')
+
+    for header in msg.get_all("received", ()):
+        for ip in ip_re.findall(header):
+            parts = ip.split(".")
+            for n in range(1, 5):
+                yield 'received:' + '.'.join(parts[:n])
+
+This makes a lot of sense to me; I just checked it in, but left it disabled
+for now.
+

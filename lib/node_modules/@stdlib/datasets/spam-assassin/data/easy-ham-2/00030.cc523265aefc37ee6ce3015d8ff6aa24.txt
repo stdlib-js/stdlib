@@ -1,0 +1,64 @@
+From social-admin@linux.ie  Fri Jul 19 23:23:00 2002
+Return-Path: <social-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 24517440CC
+	for <jm@localhost>; Fri, 19 Jul 2002 18:22:58 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 23:22:58 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JMMDJ09408 for
+    <jm+ilug-social@jmason.org>; Fri, 19 Jul 2002 23:22:13 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id XAA03757; Fri, 19 Jul 2002 23:21:21 +0100
+Received: from matrix.netsoc.tcd.ie (netsoc.tcd.ie [134.226.83.50]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id XAA03716 for <social@linux.ie>;
+    Fri, 19 Jul 2002 23:21:15 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host netsoc.tcd.ie
+    [134.226.83.50] claimed to be matrix.netsoc.tcd.ie
+Received: by matrix.netsoc.tcd.ie (Postfix, from userid 1088) id
+    ACC313445B; Fri, 19 Jul 2002 23:21:14 +0100 (IST)
+Received: from localhost (localhost [127.0.0.1]) by matrix.netsoc.tcd.ie
+    (Postfix) with ESMTP id A4AC331006 for <social@linux.ie>; Fri,
+    19 Jul 2002 23:21:14 +0100 (IST)
+Date: Fri, 19 Jul 2002 23:21:14 +0100 (IST)
+From: Greg Farrel <greg@netsoc.tcd.ie>
+X-Sender: greg@matrix
+To: social@linux.ie
+Message-Id: <Pine.GSO.4.10.10207192318220.27597-100000@matrix>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Subject: [ILUG-Social] Completely silent pc
+Sender: social-admin@linux.ie
+Errors-To: social-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group social events <social.linux.ie>
+X-Beenthere: social@linux.ie
+
+Hi, 
+I'm looking to build a completely silent pc. It's gonna be a gateway for
+a wireless network and will sit in my room (as my room is only
+spitting distance from the chimney where i'll be mounting the aerial) 
+It has to be completely silent, or it'll do my nut. What do I need? 
+
+I'll prob use a shitty p166 i have here, it doesnt have a fan, and I'm not
+worried about HD noise too much as it'll be idle mostly (should I be?) 
+any info would be appreciated. I can't afford one of those lovely new
+shoebox size totally silent pcs and I cant use an old laptop as I have a
+pci wireless card and cable already bought (160$ or so)
+
+And where can I get a fanless psu? I know they exist because the lads
+at antefacto had them (lads, where can I get one?). Although I do remember
+a slight lack of metal box around the humongous voltage parts!
+	Greg
+
+
+
+-- 
+Irish Linux Users' Group Social Events: social@linux.ie
+http://www.linux.ie/mailman/listinfo/social for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

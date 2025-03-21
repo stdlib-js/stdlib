@@ -1,0 +1,82 @@
+From fork-admin@xent.com  Wed Oct  2 17:51:19 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id F178116F03
+	for <jm@localhost>; Wed,  2 Oct 2002 17:51:09 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 02 Oct 2002 17:51:10 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g92FDDK14240 for <jm@jmason.org>;
+    Wed, 2 Oct 2002 16:13:13 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 9953229410A; Wed,  2 Oct 2002 08:13:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.superb.net (smtp1.superb.net [207.228.225.14]) by
+    xent.com (Postfix) with SMTP id D68E529409C for <fork@xent.com>;
+    Wed,  2 Oct 2002 08:12:37 -0700 (PDT)
+Received: (qmail 3216 invoked from network); 2 Oct 2002 15:12:43 -0000
+Received: from unknown (HELO maya.dyndns.org) (207.61.5.143) by
+    smtp1.superb.net with SMTP; 2 Oct 2002 15:12:43 -0000
+Received: by maya.dyndns.org (Postfix, from userid 501) id 6F3AB1B62C;
+    Wed,  2 Oct 2002 11:12:42 -0400 (EDT)
+To: fork <fork@spamassassin.taint.org>
+Subject: Polit-spam
+References: <20021002103833.700FC1B624@maya.dyndns.org>
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m2heg4ri1h.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 02 Oct 2002 11:12:42 -0400
+
+
+This is something new, or at least new to me: 
+
+    Politspam (n): Using a spam engine for political purposes.
+
+In this particular case, to get back at the University of Groningen.
+The content suggests its more prank than vigilante activism (in the
+old days we used to say "someone left their terminal unguarded")
+but what's interesting is that it's not trying to sell me anything
+or lead me to any for-fee service, it's just trying to spread
+a meme that RUG is evil.
+
+>>>>> "w" == wpin  <lslifriend> writes:
+
+    w> Those who want to leave for the Netherlands to carry on any
+    w> kind of education,including for PHD, must be careful
+    w> . Especially the university of Groningen(RUG) should be
+    w> avoided. This university was once a good one but now it has
+    w> lost its reputation. ... Studying is a good investment in time
+    w> and money. So invest in the right place and time. You are
+    w> warned.
+
+    w> Sincerely yours,
+    w> hyohxsycjlakdbmhjpiouupngoqrm
+
+Has anyone else started to receive either consumer vigilante or
+political activism messages via spam methods?
+
+-- 
+Gary Lawrence Murphy - garym@teledyn.com - TeleDynamics Communications
+ - blog: http://www.auracom.com/~teledyn - biz: http://teledyn.com/ -
+  "Computers are useless. They can only give you answers." (Picasso)
+
+

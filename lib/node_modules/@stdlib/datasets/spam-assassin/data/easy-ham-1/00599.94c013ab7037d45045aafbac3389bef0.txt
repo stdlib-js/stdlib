@@ -1,0 +1,64 @@
+From fork-admin@xent.com  Tue Sep 17 18:42:38 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id E307E16F03
+	for <jm@localhost>; Tue, 17 Sep 2002 18:42:37 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 17 Sep 2002 18:42:37 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8HHRaC20431 for <jm@jmason.org>;
+    Tue, 17 Sep 2002 18:27:37 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 526962940ED; Tue, 17 Sep 2002 10:24:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from argote.ch (argote.ch [80.65.224.17]) by xent.com (Postfix)
+    with ESMTP id C1FCC29409F for <fork@xent.com>; Tue, 17 Sep 2002 10:23:31
+    -0700 (PDT)
+Received: by argote.ch (Postfix, from userid 500) id A1DBDC44D;
+    Tue, 17 Sep 2002 19:26:27 +0200 (CEST)
+To: fork@spamassassin.taint.org
+Subject: Re: Hanson's Sept 11 message in the National Review
+Message-Id: <20020917172627.A1DBDC44D@argote.ch>
+From: harley@argote.ch (Robert Harley)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 17 Sep 2002 19:26:27 +0200 (CEST)
+
+Chuck Murcko wrote:
+> > The usual crud.  Why do morons ranting and beating their chests in the
+> > National Review (or similar rags) merit FoRKing?
+> Probably because we have this pesky 1st Amendment thing here.  [...]
+
+It must be so great in the US.  The rest of us live in caves and have
+no such thing as free speech.
+ 
+BTW, I wasn't aware that the 1st Amendment mandated that crap must be FoRKed.
+
+
+> You can just ignore it if you wish.
+
+I will, thanks.
+
+
+> But I must feel obligated to defend to the death your right to do so.
+
+«Je désapprouve ce que vous dites, mais je défendrai jusqu'à ma mort votre
+droit de le dire»
+- Arouet Le Jeune, dit «Voltaire» (1694-1778).
+
+
+R
+
+

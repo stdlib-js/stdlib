@@ -1,0 +1,356 @@
+| \b\*A Better Node.js REPL\s\s
+
+~~~
+
+Speaker notes.
+
+---
+
+| Who Am I?
+
+
+---
+
+| \b\*stdlib\s\s
+
+
+---
+
+| :books: standard library for JavaScript and Node.js :books:
+\s
+
+--
+
+| \b\*numerical\s\s and \b\*scientific\s\s computing applications
+
+
+---
+
+| \_\*Standard Library\s\s
+
+
+---
+
+| \_Utilities\s
+
+• \rgroupBy\s
+
+```
+function cb(v) { if (v[0] === 'b') { return 'b'; } return 'other'; };
+var collection = [ 'beep', 'boop', 'foo', 'bar' ];
+var out = groupBy( collection, cb )
+```
+
+
+---
+
+• \rpluck\s
+
+```
+var arr = [ {'a': 1, 'b': 2}, {'a': 0.5, 'b': 3} ];
+var out = pluck( arr, 'a' )
+```
+
+
+---
+
+| \_Data Structures\s
+
+• \rLinkedList\s
+• \rDoublyLinkedList\s
+• \rStack\s
+• \rFIFO\s
+• \rndarray\s
+• ...
+
+
+---
+
+• consistent interfaces
+
+--
+
+• unified documentation
+
+--
+
+• tests, benchmarks, examples
+
+
+---
+
+| \_\*Scientific Computing\s\s
+\s
+
+--
+
+• special math functions
+  • \rbase.erf\s
+
+--
+
+• low-level linear algebra
+  • \rbase.daxpy\s
+
+--
+
+• pseudorandom number generators (PRNGs)
+  • \rbase.random\s
+
+--
+
+• statistics
+  • \rbase.dists\s
+
+--
+
+• machine learning
+  • \rincrkmeans\s
+
+--
+
+• natural language processing
+  • \rporterStemmer\s
+
+--
+
+• plotting
+  • \rplot\s
+
+
+---
+
+```
+openURL( 'https://github.com/stdlib-js/stdlib' );
+```
+
+
+---
+
+| What is a REPL?
+\s
+
+--
+
+• read-eval-print loop
+
+--
+
+• interactive programming environment
+
+--
+
+• individual user inputs (e.g., single expressions)
+
+--
+
+• evaluates those inputs
+
+--
+
+• returns the result
+
+--
+
+\s
+Accordingly, an entered program is executed piecewise and sequentially.
+
+
+---
+
+| Why use a REPL?
+\s
+
+--
+
+• learning the language
+
+--
+
+• debugging (embedding)
+
+--
+
+• interactivity
+
+
+---
+
+| \*Built-in Node.js REPL\s
+\s
+
+--
+
+• basic functionality
+• tab completion
+• limited "magics"
+
+
+---
+
+| \b\*stdlib\s\s
+
+
+---
+
+| \*Customization\s
+
+• welcome
+• prompts
+• ...
+
+
+---
+
+| \*Integrated Help\s
+
+• \rhelp\s
+• \rinfo\s
+• \rexample\s
+
+
+---
+
+| \*Semicolons\s
+
+
+---
+
+| \*Tab Completion\s
+\s
+
+--
+
+• filesystem APIs
+
+--
+
+• computed properties
+
+--
+
+• local scope
+
+
+---
+
+| \*Workspaces\s
+
+
+---
+
+| \*await\s
+\s
+
+--
+
+• newer environments
+
+```
+await new Promise((resolve) => setTimeout(() => resolve( 'beep' ), 2000))
+```
+\s
+
+--
+
+• older environments
+
+```
+function foo() {setTimeout(() => __done__(null, 'beep'), 2000)};
+"async";  foo()
+```
+
+
+---
+
+| \*Rerun\s
+
+
+---
+
+| \*Reload\s
+
+
+---
+
+| \*Plotting\s
+\s
+
+```
+var plt = new Plot();
+plt.x = [ inmap(new Int32Array(100), (v,i) => i) ];
+plt.y = [ [...random.iterators.randu({'iter':100})] ];
+plt.view('window')
+plt.view('browser')
+```
+
+---
+
+| \*Presentations!\s
+
+
+---
+
+| \*Future Work\s
+\s
+
+--
+
+• eager evaluation (?)
+
+--
+
+• hints/suggestions
+
+--
+
+• start-up file support
+
+--
+
+• additional "magic" commands
+
+--
+
+• macros
+
+--
+
+• fuzzy completion
+
+--
+
+• pretty tables
+
+--
+
+• less/more
+
+
+---
+
+| \*Conclusions\s
+\s
+
+--
+
+• use the REPL more
+
+--
+
+• contribute to stdlib
+
+
+---
+
+| \*Questions?\s
+
+
+---
+
+| http://github.com/stdlib-js/stdlib
+
+
+---
+
+| The End

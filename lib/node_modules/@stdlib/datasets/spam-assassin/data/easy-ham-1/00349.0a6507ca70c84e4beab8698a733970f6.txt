@@ -1,0 +1,75 @@
+From fork-admin@xent.com  Wed Aug 28 18:07:13 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id DF39144155
+	for <jm@localhost>; Wed, 28 Aug 2002 13:07:11 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 28 Aug 2002 18:07:11 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7SGxkZ01730 for <jm@jmason.org>;
+    Wed, 28 Aug 2002 17:59:46 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 6D0B929421A; Wed, 28 Aug 2002 09:57:10 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.auracom.net (smtp1.auracom.net [165.154.140.23]) by
+    xent.com (Postfix) with ESMTP id 950BB29421A for <fork@xent.com>;
+    Wed, 28 Aug 2002 09:56:53 -0700 (PDT)
+Received: from maya.dyndns.org (ts5-044.ptrb.interhop.net
+    [165.154.190.108]) by smtp1.auracom.net (8.11.2/8.11.2) with ESMTP id
+    g7SGWeV29536; Wed, 28 Aug 2002 12:32:41 -0400 (EDT)
+Received: by maya.dyndns.org (Postfix, from userid 501) id E85451C388;
+    Wed, 28 Aug 2002 12:57:04 -0400 (EDT)
+To: "Russell Turpin" <deafbox@hotmail.com>
+Cc: fork@spamassassin.taint.org
+Subject: Re: Canadians
+References: <F29ySsxVY60mJWEsBk30000ddb3@hotmail.com>
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m265xu53bz.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 28 Aug 2002 12:57:04 -0400
+
+>>>>> "R" == Russell Turpin <deafbox@hotmail.com> writes:
+
+    R> Things aren't all that bad. I remember Vancouver as having a
+    R> broad variety of good, local eateries.  And Toronto as having a
+    R> variety of good, local strip joints. ;-) 
+
+I haven't been to Van in years, but I do know that in Toronto, outside
+of the small deeply ethnic neighbourhoods, if you stray more than 50
+feet from Wellesley and Jarvis or Queen and Spadina, you're in
+doughnutland; there's far more like the eateries in the Eaton Centre
+than there are quaint cafes like McCaul north of Dundas, and the rare
+little eateries are not brimming with lunchtime traffic (you can still
+find a seat at noon at Village by the Grange)
+
+When most of Toronto does not live in those neighbourhoods but instead
+lives in Scarborough, Malton, Mississauga and Markham (franchisevilles), you
+will quickly see that one or two trendy strips does not save an entire
+nation.
+
+
+-- 
+Gary Lawrence Murphy <garym@teledyn.com> TeleDynamics Communications Inc
+ Business Advantage through Community Software : http://www.teledyn.com
+"Computers are useless.  They can only give you answers."(Pablo Picasso)
+
+

@@ -1,0 +1,32 @@
+
+{{alias}}( bstr )
+    Creates an unsigned 32-bit integer from a literal bit representation.
+
+    Parameters
+    ----------
+    bstr: string
+        Literal bit representation.
+
+    Returns
+    -------
+    out: integer
+        Unsigned 32-bit integer.
+
+    Examples
+    --------
+    > var bstr = '01010101010101010101010101010101';
+    > var val = {{alias}}( bstr )
+    1431655765
+    > bstr = '00000000000000000000000000000000';
+    > val = {{alias}}( bstr )
+    0
+    > bstr = '00000000000000000000000000000010';
+    > val = {{alias}}( bstr )
+    2
+    > bstr = '11111111111111111111111111111111';
+    > val = {{alias}}( bstr )
+    4294967295
+
+    See Also
+    --------
+

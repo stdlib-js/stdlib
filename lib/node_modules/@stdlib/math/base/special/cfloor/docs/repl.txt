@@ -1,0 +1,27 @@
+
+{{alias}}( z )
+    Rounds a double-precision complex floating-point number toward negative
+    infinity.
+
+    Parameters
+    ----------
+    z: Complex128
+        Complex number.
+
+    Returns
+    -------
+    out: Complex128
+        Result.
+
+    Examples
+    --------
+    > var v = {{alias}}( new {{alias:@stdlib/complex/float64/ctor}}( 5.5, 3.3 ) )
+    <Complex128>
+    > var re = {{alias:@stdlib/complex/float64/real}}( v )
+    5.0
+    > var im = {{alias:@stdlib/complex/float64/imag}}( v )
+    3.0
+
+    See Also
+    --------
+

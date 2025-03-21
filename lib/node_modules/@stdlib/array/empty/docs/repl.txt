@@ -1,0 +1,35 @@
+
+{{alias}}( length[, dtype] )
+    Creates an uninitialized array having a specified length.
+
+    In browser environments, the function always returns zero-filled arrays.
+
+    If `dtype` is 'generic', the function always returns a zero-filled array.
+
+    In Node.js versions >=3.0.0, the underlying memory of returned typed arrays
+    is *not* initialized. Memory contents are unknown and may contain
+    *sensitive* data.
+
+    Parameters
+    ----------
+    length: integer
+        Array length.
+
+    dtype: string (optional)
+        Data type. Default: 'float64'.
+
+    Returns
+    -------
+    out: TypedArray|Array
+        Output array.
+
+    Examples
+    --------
+    > var arr = {{alias}}( 2 )
+    <Float64Array>
+    > arr = {{alias}}( 2, 'float32' )
+    <Float32Array>
+
+    See Also
+    --------
+

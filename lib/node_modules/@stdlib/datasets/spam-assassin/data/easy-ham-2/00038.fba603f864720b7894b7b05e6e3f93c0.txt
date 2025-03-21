@@ -1,0 +1,76 @@
+From social-admin@linux.ie  Mon Jul 22 19:28:40 2002
+Return-Path: <social-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2ED6B440C9
+	for <jm@localhost>; Mon, 22 Jul 2002 14:28:39 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 19:28:39 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MHQT403455 for
+    <jm+ilug-social@jmason.org>; Mon, 22 Jul 2002 18:26:29 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id MAA23305 for
+    <jm+ilug-social@jmason.org>; Sat, 20 Jul 2002 12:23:48 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA31551; Sat, 20 Jul 2002 12:23:24 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail2.mail.iol.ie (mail2.mail.iol.ie [194.125.2.193]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id MAA31519 for <social@linux.ie>;
+    Sat, 20 Jul 2002 12:23:16 +0100
+Received: from [194.165.167.234] (helo=excalibur.research.wombat.ie) by
+    mail2.mail.iol.ie with esmtp (Exim 3.35 #1) id 17VsE4-0003TP-00;
+    Sat, 20 Jul 2002 12:16:41 +0100
+Received: (from kenn@localhost) by excalibur.research.wombat.ie
+    (8.11.6/8.11.6) id g6KBN0J27900; Sat, 20 Jul 2002 12:23:00 +0100
+Date: Sat, 20 Jul 2002 12:23:00 +0100
+From: Kenn Humborg <kenn@linux.ie>
+To: Greg Farrel <greg@netsoc.tcd.ie>
+Cc: Rick Moen <rick@linuxmafia.com>, social@linux.ie
+Subject: Re: [ILUG-Social] Completely silent pc
+Message-Id: <20020720122300.B27503@excalibur.research.wombat.ie>
+References: <20020720051950.GE28205@linuxmafia.com>
+    <Pine.GSO.4.10.10207201204580.2055-100000@matrix>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <Pine.GSO.4.10.10207201204580.2055-100000@matrix>;
+    from greg@netsoc.tcd.ie on Sat, Jul 20, 2002 at 12:06:35PM +0100
+Sender: social-admin@linux.ie
+Errors-To: social-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group social events <social.linux.ie>
+X-Beenthere: social@linux.ie
+
+On Sat, Jul 20, 2002 at 12:06:35PM +0100, Greg Farrel wrote:
+> 
+> > An old laptop would probably be ideal.  That way, it comes with its own 
+> > UPS (the battery).
+> D'oh. I ment to say that I cant use a laptop, as I have a pci wireless
+> card and the cable for it (about 180 dollars). So it has to be a pc, with
+> a pci 2.2 connector (ie some pentiums, and anything above)
+> 
+>  > 
+> > Some people strip down old 486 boxes, take out the hard drive, disable
+> > the fans, and run the thing from just a floppy drive or a CDR you've
+> > burned for the purpose.  
+> I'd do that with my 166, but the psu has a fan. And a 486 wont support my
+> wireless card :( I know. I'm awkward,
+
+Try www.quietpc.com.  Don't know if they have fanless PSUs but they claim
+to have really, really quiet ones.
+
+Later,
+Kenn
+
+
+-- 
+Irish Linux Users' Group Social Events: social@linux.ie
+http://www.linux.ie/mailman/listinfo/social for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

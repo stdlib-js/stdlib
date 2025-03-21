@@ -1,0 +1,104 @@
+
+{{alias}}( x, y[, options] )
+    Computes a two-sample F-test for equal variances.
+
+    The returned object comes with a `.print()` method which when invoked will
+    print a formatted output of the results of the hypothesis test.
+
+    Parameters
+    ----------
+    x: Array<number>
+        First data array.
+
+    y: Array<number>
+        Second data array.
+
+    options: Object (optional)
+        Options.
+
+    options.alpha: number (optional)
+        Number in the interval `[0,1]` giving the significance level of the
+        hypothesis test. Default: `0.05`.
+
+    options.alternative: string (optional)
+        Either `two-sided`, `less` or `greater`.
+
+    options.ratio: number (optional)
+        Positive number denoting the ratio of the two population variances under
+        the null hypothesis. Default: `1`.
+
+    Returns
+    -------
+    out: Object
+        Test result object.
+
+    out.alpha: number
+        Used significance level.
+
+    out.rejected: boolean
+        Test decision.
+
+    out.pValue: number
+        p-value of the test.
+
+    out.statistic: number
+        Value of test statistic.
+
+    out.ci: Array<number>
+        1-alpha confidence interval for the ratio of variances.
+
+    out.nullValue: number
+        Assumed ratio of variances under H0.
+
+    out.xvar: number
+        Sample variance of `x`.
+
+    out.yvar: number
+        Sample variance of `y`.
+
+    out.alternative: string
+        Alternative hypothesis (`two-sided`, `less` or `greater`).
+
+    out.dfX: number
+        Numerator degrees of freedom.
+
+    out.dfY: number
+        Denominator degrees of freedom.
+
+    out.method: string
+        Name of test.
+
+    out.print: Function
+        Function to print formatted output.
+
+    Examples
+    --------
+    > var x = [ 610, 610, 550, 590, 565, 570 ];
+    > var y = [ 560, 550, 580, 550, 560, 590, 550, 590 ];
+    > var out = {{alias}}( x, y )
+    {
+        rejected: false,
+        pValue: ~0.399,
+        statistic: ~1.976,
+        ci: [ ~0.374, ~13.542 ],
+        // ...
+    }
+
+    // Print table output:
+    > var table = out.print()
+    F test for comparing two variances
+
+    Alternative hypothesis: True ratio in variances is not equal to 1
+
+        pValue: 0.3992
+        statistic: 1.976
+        variance of x: 617.5 (df of x: 5)
+        variance of y: 312.5 (df of y: 7)
+        95% confidence interval: [0.3739,13.5417]
+
+    Test Decision: Fail to reject null in favor of alternative at 5%
+    significance level
+
+    See Also
+    --------
+

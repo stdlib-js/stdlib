@@ -1,0 +1,92 @@
+From fork-admin@xent.com  Mon Aug 12 11:09:46 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BDB414416D
+	for <jm@localhost>; Mon, 12 Aug 2002 05:56:48 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:56:48 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7B6Zob24755 for <jm@jmason.org>;
+    Sun, 11 Aug 2002 07:35:50 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 1D39129414B; Sat, 10 Aug 2002 23:32:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hotmail.com (f214.law15.hotmail.com [64.4.23.214]) by
+    xent.com (Postfix) with ESMTP id DBBF42940BF for <fork@xent.com>;
+    Sat, 10 Aug 2002 23:31:37 -0700 (PDT)
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Sat, 10 Aug 2002 23:32:35 -0700
+Received: from 216.30.74.2 by lw15fd.law15.hotmail.msn.com with HTTP;
+    Sun, 11 Aug 2002 06:32:35 GMT
+X-Originating-Ip: [216.30.74.2]
+From: "Russell Turpin" <deafbox@hotmail.com>
+To: fork@spamassassin.taint.org
+Subject: Re: Forged whitelist spam
+MIME-Version: 1.0
+Content-Type: text/plain; format=flowed
+Message-Id: <F214QazXoB9kNx2UkO60000b8da@hotmail.com>
+X-Originalarrivaltime: 11 Aug 2002 06:32:35.0812 (UTC) FILETIME=[E174AA40:01C24100]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 11 Aug 2002 06:32:35 +0000
+
+Gary Lawrence Murphy:
+>This is for the whitelist fans: Can someone please tell us why the 
+>following extremely frequent spam header pattern would _not_ pass a 
+>whitelist test? The letter itself is most certainly spam/viral and
+>was most certainly not sent by me, but I see no way you might tell that it 
+>was not, nor can I see how I might charge the sender with fraud for having 
+>'impersonated' my account. .. My uneducated guess  is that all they need to 
+>jump expensive whitelist
+>walls would be buckshot a spam-laden Klez ..
+
+There are several issues here.
+
+(1) For reasons that have nothing to do with
+commercial advertising, we need email software that
+prevents virus attacks a la Melissa and Klez. We
+simply can't continue down the path where every
+script kiddie with a grudge or political agenda can
+cause millions or billions of dollars worth of
+damage.
+
+(2) Very likely, email practices will evolve to the
+point that digital signatures are the standard way
+to recognize the sender of a message. Sabotaging
+your machine or otherwise compromising your private
+key will be the only way that someone can forge a
+message from you. I don't see any reason that email
+software that automatically uses digital signatures
+for contact management and whitelisting would be
+any more expensive than existing email clients.
+Unless Microsoft manages to get a defacto monopoly
+on it.
+
+(3) I think identity theft should be made a felony,
+with very stiff penalties, for reasons that have
+nothing to do with spam. No, obviously, simply
+parading around with a sign that says "I'm George
+Bush" is not identity theft. On the other hand,
+I think using a virus to compromise someone else's
+private key should should fall into that category.
+
+
+_________________________________________________________________
+MSN Photos is the easiest way to share and print your photos: 
+http://photos.msn.com/support/worldwide.aspx
+
+http://xent.com/mailman/listinfo/fork
+
+

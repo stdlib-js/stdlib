@@ -1,0 +1,28 @@
+
+{{alias}}( word )
+    Extracts the stem of a given word.
+
+    Parameters
+    ----------
+    word: string
+        Input word.
+
+    Returns
+    -------
+    out: string
+        Word stem.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'walking' )
+    'walk'
+    > out = {{alias}}( 'walked' )
+    'walk'
+    > out = {{alias}}( 'walks' )
+    'walk'
+    > out = {{alias}}( '' )
+    ''
+
+    See Also
+    --------
+

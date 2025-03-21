@@ -1,0 +1,42 @@
+
+{{alias}}( iterator[, out][, mapFcn[, thisArg]] )
+    Creates (or fills) an array from an iterator.
+
+    When invoked, an input function is provided two arguments:
+
+    - value: iterated value.
+    - index: iterated value index (zero-based).
+
+    If provided an output array, the function fills the output array with
+    iterated values.
+
+    Iteration stops when an output array is full or an iterator finishes;
+    whichever comes first.
+
+    Parameters
+    ----------
+    iterator: Object
+        Source iterator.
+
+    out: ArrayLikeObject (optional)
+        Output array-like object.
+
+    mapFcn: Function (optional)
+        Function to invoke for each iterated value.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    > var opts = { 'iter': 10 };
+    > var arr = {{alias}}( {{alias:@stdlib/random/iter/randu}}( opts ) )
+
+    See Also
+    --------
+

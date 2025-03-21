@@ -1,0 +1,68 @@
+From fork-admin@xent.com  Mon Sep 30 13:53:28 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 978C016F1E
+	for <jm@localhost>; Mon, 30 Sep 2002 13:49:18 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 30 Sep 2002 13:49:18 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8TGCPg18864 for <jm@jmason.org>;
+    Sun, 29 Sep 2002 17:12:28 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id B73752940B8; Sun, 29 Sep 2002 09:12:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mta7.pltn13.pbi.net (mta7.pltn13.pbi.net [64.164.98.8]) by
+    xent.com (Postfix) with ESMTP id E98312940A0 for <fork@xent.com>;
+    Sun, 29 Sep 2002 09:11:04 -0700 (PDT)
+Received: from cse.ucsc.edu ([63.194.88.161]) by mta7.pltn13.pbi.net
+    (iPlanet Messaging Server 5.1 (built May  7 2001)) with ESMTP id
+    <0H3700IVFJMHS3@mta7.pltn13.pbi.net> for fork@xent.com; Sun,
+    29 Sep 2002 09:11:06 -0700 (PDT)
+From: Elias <elias@cse.ucsc.edu>
+Subject: Content management for MP3s
+To: fork@spamassassin.taint.org
+Message-Id: <3D972433.40804@cse.ucsc.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; format=flowed; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-Accept-Language: en,pdf
+User-Agent: Mozilla/5.0 (Windows; U; WinNT4.0; en-US; rv:0.9.2)
+    Gecko/20010726 Netscape6/6.1
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 29 Sep 2002 09:02:59 -0700
+
+Dear flatware,
+
+I'm about to undertake a massive project to index/catalog well over one 
+thousand CDs that have been ripped to MP3 and set up a server to stream 
+them to different rooms in the house. (Yes, I own them all, no I'm not 
+broadcasting them to the 'net.) Can anyone give me some recommendations 
+as to what (free? opensource?) software is best suited for this task? I 
+know there are a few FoRKs out there who have tackled this problem before...
+
+I'd like to be able to dynamically generate play lists from queries like 
+"Jazz released between 1950 and 1960" or "Artist such and such between 
+these dates" or "Just these artists" or "Just this genre" - you get the 
+idea. In addition to having multiple streams that I can tune in to (a la 
+DMX), I'd like to be able to browse the database through a web interface 
+from other computers in the house and pull specific music down to 
+wherever I am.
+
+
+Thanks,
+Elias
+
+

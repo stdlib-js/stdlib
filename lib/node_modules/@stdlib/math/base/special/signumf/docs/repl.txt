@@ -1,0 +1,38 @@
+
+{{alias}}( x )
+    Evaluates the signum function for a single-precision floating-point number.
+
+    Value | Sign
+    ----- | -----
+    x > 0 |    +1
+    x < 0 |    -1
+        0 |     0
+       -0 |    -0
+      NaN |   NaN
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    sign: number
+        Function value.
+
+    Examples
+    --------
+    > var sign = {{alias}}( -5.0 )
+    -1.0
+    > sign = {{alias}}( 5.0 )
+    1.0
+    > sign = {{alias}}( -0.0 )
+    -0.0
+    > sign = {{alias}}( 0.0 )
+    0.0
+    > sign = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+

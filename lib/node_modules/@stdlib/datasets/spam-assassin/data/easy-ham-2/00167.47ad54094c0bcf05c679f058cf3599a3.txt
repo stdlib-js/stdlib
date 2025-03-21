@@ -1,0 +1,80 @@
+From ilug-admin@linux.ie  Wed Jul 31 10:58:41 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id AC5C14406D
+	for <jm@localhost>; Wed, 31 Jul 2002 05:58:41 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 31 Jul 2002 10:58:41 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6VA0c215046 for
+    <jm-ilug@jmason.org>; Wed, 31 Jul 2002 11:00:38 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA27163; Wed, 31 Jul 2002 10:58:54 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from cerberus.bluetree.ie (cerberus.bluetree.ie [62.17.24.129])
+    by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id KAA27139 for
+    <ilug@linux.ie>; Wed, 31 Jul 2002 10:58:48 +0100
+Received: (from mail@localhost) by cerberus.bluetree.ie (8.11.6/8.11.6) id
+    g6V9wlJ16090 for ilug@linux.ie; Wed, 31 Jul 2002 10:58:47 +0100
+X-Virus-Checked: Checked on cerberus.bluetree.ie at Wed Jul 31 10:58:42
+    IST 2002
+Received: from atlas.bluetree.ie (IDENT:root@atlas.bluetree.ie
+    [192.168.3.2]) by cerberus.bluetree.ie (8.11.6/8.11.6) with ESMTP id
+    g6V9wf816010 for <ilug@linux.ie>; Wed, 31 Jul 2002 10:58:41 +0100
+Received: from arafel (arafel.bluetree.ie [192.168.3.42]) by
+    atlas.bluetree.ie (8.11.6/8.11.6) with SMTP id g6V9wfd06462 for
+    <ilug@linux.ie>; Wed, 31 Jul 2002 10:58:41 +0100
+From: "Kenn Humborg" <kenn@bluetree.ie>
+To: <ilug@linux.ie>
+Subject: RE: [ILUG] Installing lilo on another disk.
+Date: Wed, 31 Jul 2002 10:58:47 +0100
+Message-Id: <NBBBIGEGHIGMPCNKHCECEEFFEAAA.kenn@bluetree.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+In-Reply-To: <20020730144740.GA3482@bagend.makalumedia.com>
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Importance: Normal
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+> I thought perhaps I should just do   lilo -b /dev/hdb -r /mnt  but I think
+> that -b is analogous to the boot keyword in lilo.conf. Or will this just
+> work automagically ?  i.e. boot = /dev/hda tells lilo what numbers to poke
+> where, and it figures out where the disk is from the -r ?
+
+That won't work like you want.  You'll end up with a boot loader
+on the backup disk that contains the 'physical' location of
+the /boot/map file on the main disk.  That won't necessarily
+be the same as the backup disk.
+
+I can't think of a right way to do his with LILO.  I've got
+a similar seup on my home machine (rsync to a backup disk
+every night), but I'll be pulling out the RH install CDs to
+get LILO sorted if I have to do a disk swap.
+
+GRUB should be able to handle this no problem, since it
+doesn't record sector numbers like LILO does.  Not much help
+for you though...
+
+Later,
+Kenn
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

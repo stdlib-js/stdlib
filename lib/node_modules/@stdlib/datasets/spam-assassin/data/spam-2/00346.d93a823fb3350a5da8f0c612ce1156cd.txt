@@ -1,0 +1,110 @@
+From edum@hkem.com  Mon Jun 24 17:04:26 2002
+Return-Path: dcms-dev-admin@eros.cs.jhu.edu
+Delivery-Date: Fri May 17 01:53:20 2002
+Received: from eros.cs.jhu.edu (eros.cs.jhu.edu [128.220.223.245]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g4H0rKe04014 for
+    <jm@jmason.org>; Fri, 17 May 2002 01:53:20 +0100
+Received: from www.opencm.org (localhost.localdomain [127.0.0.1]) by
+    eros.cs.jhu.edu (8.11.6/8.11.6) with ESMTP id g4H16b703822; Thu,
+    16 May 2002 21:06:37 -0400
+Received: from hkem.com ([212.100.64.82]) by eros.cs.jhu.edu
+    (8.11.6/8.11.6) with SMTP id g4H14Z703790 for <dcms-dev@eros-os.org>;
+    Thu, 16 May 2002 21:04:37 -0400
+Message-Id: <200205170104.g4H14Z703790@eros.cs.jhu.edu>
+From: "edum" <edum@hkem.com>
+To: <dcms-dev@eros-os.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="ISO-8859-1"
+Subject: [dcms-dev] MY INHERITANCE
+Sender: dcms-dev-admin@eros.cs.jhu.edu
+Errors-To: dcms-dev-admin@eros.cs.jhu.edu
+X-Beenthere: dcms-dev@eros.cs.jhu.edu
+X-Mailman-Version: 2.0.8
+Precedence: bulk
+Reply-To: dcms-dev@eros.cs.jhu.edu
+List-Help: <mailto:dcms-dev-request@eros.cs.jhu.edu?subject=help>
+List-Post: <mailto:dcms-dev@eros.cs.jhu.edu>
+List-Subscribe: <http://www.eros-os.org/mailman/listinfo/dcms-dev>,
+    <mailto:dcms-dev-request@eros.cs.jhu.edu?subject=subscribe>
+List-Id: DCMS development list <dcms-dev.eros.cs.jhu.edu>
+List-Unsubscribe: <http://www.eros-os.org/mailman/listinfo/dcms-dev>,
+    <mailto:dcms-dev-request@eros.cs.jhu.edu?subject=unsubscribe>
+List-Archive: <http://www.eros-os.org/pipermail/dcms-dev/>
+Date: Fri, 17 May 2002 01:46:42 -0700
+X-Keywords: 
+Content-Transfer-Encoding: 8bit
+
+Date:May 16,2002. 
+Email:edum@hkem.com. 
+
+Dear Sir, 
+
+I am Mr.Eduado de Mello, one of the Principal 
+Commanders of the Union for the Total Independence of 
+Angola,UNITA.Well needless telling a very long story 
+here for our story is indeed interwoven with the 
+history of the world and the liberation struggle in 
+the Southern African region of the African continent. 
+The bubble burst just about some weeks ago today when my supreme 
+commander, the late Dr.Jonas Savimbi was killed in an 
+encounter with the government forces of the MPLA 
+government of my country.The rest is now history but 
+suffice it to say that I am tired of the unfortunate 
+role of waging a war against my fatherland.I have 
+therefore decided to pull out my troupes from the bush 
+even if the other field commanders decide otherwise am 
+therefore poised to effect a new beginning in my life 
+and I have decided to make South Africa my new home at 
+least for the interim period until I am sufficiently 
+sure that I would be welcome home whole heartedly by 
+the MPLA government in Luanda the capital of Angola. 
+Needles to say I was the single most important 
+commander who was very close to the late supreme 
+commander; Dr.Jonas Savimbi.Indeed because I am a 
+brother to one of his wives,he confided in me a great 
+deal.The result of such trust is my reason for 
+contacting you I was the commander whom he sent to 
+deposit the sum of Thirty two million USD ($32million) 
+with a security/finance company in South Africa.This 
+was immediately after the events of September 11,2001 
+in the United States of America.Indeed it had become 
+increasingly difficult to move large volumes of money 
+around the world particularly for a liberation 
+movement like UNITA hence the recourse to keeping the 
+money with the security company in South Africa. I 
+have decided to inherit this money which was taken out 
+and deposited with the said security/finance company 
+as cash in Hundred dollar denominations.The money is 
+kept in my signature and would have been used in the 
+purchase of arms and ammunition for the purposes of 
+continuing the civil war in Angola.The supreme 
+commander is dead and as already stated I have decided 
+to quite the whole thing and this is without regard to 
+the fact that other commanders may wish to continue ! 
+I want to cooperate with you in my decision to inherit 
+the $32million.I am still in the bush here but I have 
+been able to establish contact with the company in 
+South Africa to the effect that I would soon come to 
+take possession of the money that I kept with them. 
+Note also that I deposited the money as a foreign 
+national who is the head of a Mining company in Angola 
+(Never as a commander of UNITA). If you are able to 
+cooperate with me over this am willing to give you 20% 
+of the $32million.Please come back to me through 
+email: edum@hkem.com.The security/finance 
+company is standing by to receive my instructions on 
+this and I will link you up with them as soon as you 
+are ready to take possession of the $32million. 
+Finally you are to note that in you reply, you are to 
+state your residential or company address and if 
+possible send a copy of your international passport so 
+as to assure me that my money is safe in your hands. 
+Yours truly, 
+Eduado de Mello 
+
+
+
+_______________________________________________
+dcms-dev mailing list
+dcms-dev@eros.cs.jhu.edu
+http://www.eros-os.org/mailman/listinfo/dcms-dev

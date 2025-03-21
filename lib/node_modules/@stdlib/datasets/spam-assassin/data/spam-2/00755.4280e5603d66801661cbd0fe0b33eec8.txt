@@ -1,0 +1,242 @@
+From aa@insurancemail.net  Fri Jul 19 00:17:29 2002
+Return-Path: <aa@insurancemail.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0882D43F90
+	for <jm@localhost>; Thu, 18 Jul 2002 19:17:29 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 00:17:29 +0100 (IST)
+Received: from mail1.insuranceiq.com (host66.insuranceiq.com
+    [65.217.159.66] (may be forged)) by dogma.slashnull.org (8.11.6/8.11.6)
+    with ESMTP id g6IN0SJ25491 for <jm@jmason.org>; Fri, 19 Jul 2002 00:00:28
+    +0100
+Received: from mail pickup service by mail1.insuranceiq.com with Microsoft
+    SMTPSVC; Thu, 18 Jul 2002 19:01:01 -0400
+Subject: $50,000 Giveaway!
+To: <yyyy@spamassassin.taint.org>
+Date: Thu, 18 Jul 2002 19:01:00 -0400
+From: "IQ - Ann Arbor" <aa@insurancemail.net>
+Message-Id: <6280401c22eae$fc1ab0b0$6b01a8c0@insuranceiq.com>
+MIME-Version: 1.0
+X-Mailer: Microsoft CDO for Windows 2000
+Thread-Index: AcIumfQqJkUiZI08QAi0jyldK92wsA==
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4522.1200
+Content-Class: urn:content-classes:message
+X-Originalarrivaltime: 18 Jul 2002 23:01:01.0062 (UTC) FILETIME=[FC39AA60:01C22EAE]
+Content-Type: multipart/alternative; boundary="----=_NextPart_000_436A1_01C22E78.6D2241B0"
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_436A1_01C22E78.6D2241B0
+Content-Type: text/plain;
+	charset="Windows-1252"
+Content-Transfer-Encoding: 7bit
+
+ Ann Arbor Annuity Exchange $50,000 Giveaway!	
+ When You Think Annuities...Think Ann Arbor	
+Just a short list of the many companies we represent 	
+ 	
+ 	
+Fill out this form for a FREE entry in our $50,000 Giveaway!	 
+Name:	  	
+E-mail:	  	
+Phone:	  	
+Fax:	  	
+City:	  	State:	  	 	
+ 	  	 	   	
+ 
+Agent Use Only. Employees and family members of Ann Arbor Annuity
+Exchange and the 
+subsidiaries are ineligible.
+
+We don't want anybody to receive our mailing who does not wish to
+receive them. This is a professional communication sent to insurance
+professionals. To be removed from this mailing list, DO NOT REPLY to
+this message. Instead, go here: http://www.insurancemail.net
+Legal Notice <http://www.insuranceiq.com/legal.htm>  
+
+
+------=_NextPart_000_436A1_01C22E78.6D2241B0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<title>$50,000 Giveaway!</title>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; =
+charset=3Diso-8859-1">
+</head>
+
+<body bgcolor=3D"#FFFFFF" text=3D"#000000">
+  <table width=3D"550" border=3D"2" cellspacing=3D"0" cellpadding=3D"0" =
+bordercolor=3D"#000066" align=3D"center">
+    <tr>
+      <td>
+        <table width=3D"550" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0">
+          <tr>=20
+            <td><img src=3D"http://iiq.us/images/arbor2/top.gif" =
+width=3D"550" height=3D"85" alt=3D'Ann Arbor Annuity Exchange $50,000 =
+Giveaway!'></td>
+          </tr>
+          <tr>=20
+            <td><img src=3D"http://iiq.us/images/arbor2/bottom.jpg" =
+width=3D"550" height=3D"113" alt=3D'When You Think Annuities...Think Ann =
+Arbor'></td>
+          </tr>
+        </table>
+        <table width=3D"550" border=3D"1" cellspacing=3D"0" =
+cellpadding=3D"4">
+          <tr>=20
+            <td bgcolor=3D"#FFFF99" align=3D"center">
+              <font face=3D"Verdana, Arial, Helvetica, sans-serif" =
+size=3D"3"><b>Just a short list of the many companies we =
+represent</b></font>
+            </td>
+          </tr>
+        </table>
+        <table width=3D"550" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0">
+          <tr>=20
+            <td align=3D"center">=20
+              <table width=3D"30" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0">
+                <tr>=20
+                  <td><img =
+src=3D"http://iiq.us/images/arbor2/insani2.gif" width=3D"447" =
+height=3D"355" border=3D"1"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>=20
+            <td><img src=3D"http://iiq.us/images/arbor2/logo.gif" =
+width=3D"550" height=3D"87"></td>
+          </tr>
+          <tr>=20
+            <td>=20
+              <table width=3D"100%" bgcolor=3D"#FFFFFF" border=3D"1" =
+bordercolor=3D"#000000">
+                <tr>=20
+                  <form method=3D"post" =
+action=3D"http://65.217.159.103/response/response.asp">
+                    <td>=20
+                      <table width=3D"100%" border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"2" align=3D"center" =
+bgcolor=3D"#ffffff">
+                        <tr bgcolor=3D"#000066">=20
+                          <td colspan=3D"5" align=3D"center"><b><font =
+color=3D"#FFFFFF" face=3D"Arial, Helvetica, sans-serif" size=3D"2">Fill =
+out this form for a FREE entry in our $50,000 Giveaway!</font></b></td>
+                        </tr>
+                        <tr>=20
+                          <td width=3D"15%" align=3D"right"><b><font =
+size=3D"2" face=3D"Arial, Helvetica, sans-serif">Name:</font></b></td>
+                          <td colspan=3D"4">=20
+                            <input type=3D"text" name=3D"contactname" =
+size=3D"50">
+                          </td>
+                        </tr>
+                        <tr>=20
+                          <td width=3D"15%" align=3D"right"><b><font =
+face=3D"Arial, Helvetica, sans-serif" size=3D"2">E-mail:</font></b></td>
+                          <td colspan=3D"4">=20
+                            <input type=3D"text" name=3D"email" =
+size=3D"50">
+                          </td>
+                        </tr>
+                        <tr>=20
+                          <td width=3D"15%" align=3D"right"><b><font =
+face=3D"Arial, Helvetica, sans-serif" size=3D"2">Phone:</font></b></td>
+                          <td colspan=3D"4">=20
+                            <input type=3D"text" name=3D"phone" =
+size=3D"50">
+                          </td>
+                        </tr>
+                        <tr>=20
+                          <td width=3D"15%" align=3D"right"><b><font =
+face=3D"Arial, Helvetica, sans-serif" size=3D"2">Fax:</font></b></td>
+                          <td colspan=3D"4">=20
+                            <input type=3D"text" name=3D"fax" =
+size=3D"50">
+                          </td>
+                        </tr>
+                        <tr>=20
+                          <td width=3D"15%" align=3D"right"><b><font =
+face=3D"Verdana, Arial, Helvetica, sans-serif" =
+size=3D"2">City:</font></b></td>
+                          <td width=3D"30%">=20
+                            <input type=3D"text" name=3D"city" =
+size=3D"20">
+                          </td>
+                          <td width=3D"15%" align=3D"right"><font =
+face=3D"Arial, Helvetica, sans-serif" =
+size=3D"2"><b>State:</b></font></td>
+                          <td width=3D"20%">=20
+                            <input type=3D"text" name=3D"state" =
+size=3D"2">
+                          </td>
+                          <td rowspan=3D"2" align=3D"center" =
+valign=3D"middle"><img src=3D"http://iiq.us/images/q.gif" width=3D"43" =
+height=3D"50"></td>
+                        </tr>
+                        <tr>=20
+                          <td width=3D"15%" align=3D"right">&nbsp;</td>
+                          <td width=3D"30%">=20
+                            <input type=3D"submit" name=3D"btnsubmit" =
+value=3D"Submit">
+                          </td>
+                          <td width=3D"15%" align=3D"right">&nbsp;</td>
+                          <td width=3D"20%">=20
+                            <input type=3D"hidden" =
+name=3D"hdnRecipientTxt" value=3D"tlucas@a2xonline.com">
+                            <input type=3D"hidden" =
+name=3D"hdnSubjectTxt" value=3D"A2X Inquiry">
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  <input type=3D'hidden' name=3D'SentTo' =
+value=3D'304704'>
+</form>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table width=3D"550" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"5">
+          <tr>=20
+            <td bgcolor=3D"#FFFF99" align=3D"center">=20
+              <font size=3D"1" face=3D"Verdana, Arial, Helvetica, =
+sans-serif" color=3D"#000000">
+              <p>Agent Use Only. Employees and family members of Ann =
+Arbor Annuity Exchange and the <br>
+                subsidiaries are ineligible.</p>
+              <p>We don't want anybody to receive our mailing who does =
+not wish=20
+                to receive them. This is a professional communication =
+sent to=20
+                insurance professionals. To be removed from this mailing =
+list,=20
+                DO NOT REPLY to this message. Instead, go here:
+                <a =
+href=3D"http://www.insurancemail.net">http://www.insurancemail.net</a><br=
+>
+                <a href=3D"http://www.insuranceiq.com/legal.htm">Legal =
+Notice</a></font>=20
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+
+------=_NextPart_000_436A1_01C22E78.6D2241B0--
+
+

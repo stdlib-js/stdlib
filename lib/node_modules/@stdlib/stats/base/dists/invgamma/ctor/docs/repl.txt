@@ -1,0 +1,90 @@
+
+{{alias}}( [α, β] )
+    Returns an inverse gamma distribution object.
+
+    Parameters
+    ----------
+    α: number (optional)
+        Shape parameter. Must be greater than `0`. Default: `1.0`.
+
+    β: number (optional)
+        Scale parameter. Must be greater than `0`. Default: `1.0`.
+
+    Returns
+    -------
+    invgamma: Object
+        Distribution instance.
+
+    invgamma.alpha: number
+        Shape parameter. If set, the value must be greater than `0`.
+
+    invgamma.beta: number
+        Scale parameter. If set, the value must be greater than `0`.
+
+    invgamma.entropy: number
+        Read-only property which returns the differential entropy.
+
+    invgamma.kurtosis: number
+        Read-only property which returns the excess kurtosis.
+
+    invgamma.mean: number
+        Read-only property which returns the expected value.
+
+    invgamma.mode: number
+        Read-only property which returns the mode.
+
+    invgamma.skewness: number
+        Read-only property which returns the skewness.
+
+    invgamma.stdev: number
+        Read-only property which returns the standard deviation.
+
+    invgamma.variance: number
+        Read-only property which returns the variance.
+
+    invgamma.cdf: Function
+        Evaluates the cumulative distribution function (CDF).
+
+    invgamma.logpdf: Function
+        Evaluates the natural logarithm of the probability density function
+        (PDF).
+
+    invgamma.pdf: Function
+        Evaluates the probability density function (PDF).
+
+    invgamma.quantile: Function
+        Evaluates the quantile function at probability `p`.
+
+    Examples
+    --------
+    > var invgamma = {{alias}}( 6.0, 5.0 );
+    > invgamma.alpha
+    6.0
+    > invgamma.beta
+    5.0
+    > invgamma.entropy
+    ~0.454
+    > invgamma.kurtosis
+    19.0
+    > invgamma.mean
+    1.0
+    > invgamma.mode
+    ~0.714
+    > invgamma.skewness
+    ~2.667
+    > invgamma.stdev
+    0.5
+    > invgamma.variance
+    0.25
+    > invgamma.cdf( 0.8 )
+    ~0.406
+    > invgamma.pdf( 1.0 )
+    ~0.877
+    > invgamma.logpdf( 1.0 )
+    ~-0.131
+    > invgamma.quantile( 0.8 )
+    ~1.281
+
+    See Also
+    --------
+

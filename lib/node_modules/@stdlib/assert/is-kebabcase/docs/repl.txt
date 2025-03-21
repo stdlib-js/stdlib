@@ -1,0 +1,23 @@
+
+{{alias}}( value )
+    Tests if a value is a string in kebab case.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a value is a string in kebab case.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 'beep-boop' )
+    true
+    > bool = {{alias}}( 'BEEP_BOOP' )
+    false
+
+    See Also
+    --------

@@ -1,0 +1,12 @@
+
+{{alias}}
+    Size (in bytes) of a single-precision floating-point number.
+
+    Examples
+    --------
+    > {{alias}}
+    4
+
+    See Also
+    --------
+

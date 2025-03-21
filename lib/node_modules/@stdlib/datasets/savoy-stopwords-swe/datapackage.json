@@ -1,0 +1,47 @@
+{
+  "name": "stdlib-datasets-savoy-stopwords-swe",
+  "version": "",
+  "title": "Swedish Stop Words",
+  "description": "A list of Swedish stop words.",
+  "resources": [
+    {
+      "name": "savoy-stopwords-swe-json",
+      "title": "Swedish Stop Words",
+      "description": "A list of Swedish stop words.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/words.json"
+    },
+    {
+      "name": "savoy-stopwords-swe-txt",
+      "title": "Swedish Stop Words",
+      "description": "A list of Swedish stop words.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/words.txt"
+    }
+  ],
+  "sources": [
+    {
+      "name": "IR Multilingual Resources at UniNE",
+      "web": "http://members.unine.ch/jacques.savoy/clef/"
+    }
+  ],
+  "keywords": [
+    "list",
+    "stopwords",
+    "words",
+    "redundant",
+    "lexicon",
+    "nlp",
+    "language",
+    "swedish",
+    "sweden",
+    "swe"
+  ],
+  "license": "BSD-2-Clause"
+}

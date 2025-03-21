@@ -1,0 +1,209 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2022 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: check_required_files
+
+# Workflow triggers:
+on:
+  # Allow the workflow to be triggered by other workflows
+  workflow_call:
+    # Define the input parameters for the workflow:
+    inputs:
+      pull_request_number:
+        description: 'Pull request number'
+        required: true
+        type: number
+      user:
+        required: true
+        type: string
+
+    # Define the secrets accessible by the workflow:
+    secrets:
+      STDLIB_BOT_GITHUB_TOKEN:
+        description: 'stdlib-bot GitHub token to create pull request comments'
+        required: true
+
+  # Allow the workflow to be manually triggered:
+  workflow_dispatch:
+    inputs:
+      pull_request_number:
+        description: 'Pull request number'
+        required: true
+        type: number
+      user:
+        required: true
+        type: string
+
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
+# Workflow jobs:
+jobs:
+
+  # Define a job for checking that pull requests contain the required files...
+  check_required_files:
+
+    # Define a display name:
+    name: 'Check Required Files'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps...
+    steps:
+
+      # Get list of added files:
+      - name: 'Get list of added files'
+        id: added-files
+        env:
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+          PR_NUMBER: ${{ inputs.pull_request_number }}
+        run: |
+          page=1
+          files=""
+          while true; do
+              new_files=$(curl -s -H "Accept: application/vnd.github.v3+json" -H "Authorization: Bearer $GITHUB_TOKEN" "https://api.github.com/repos/stdlib-js/stdlib/pulls/$PR_NUMBER/files?page=$page&per_page=100" | jq -r '.[] | select(.status == "added") | .filename')
+              if [ -z "$new_files" ]; then
+                  break
+              fi
+              files="$files $new_files"
+              page=$((page+1))
+          done
+          files=$(echo "$files" | tr '\n' ' ' | sed 's/ $//')
+          echo "files=${files}" >> $GITHUB_OUTPUT
+
+      # Check whether the pull request contains a new `README.md` file; if not, exit with a non-zero exit code:
+      - name: 'Exit if pull request does not contain a new README.md file'
+        run: |
+          if [[ ! "${{ steps.added-files.outputs.files }}" =~ "README.md" ]]; then
+            echo "Pull request does not contain a new README.md file."
+            exit 1
+          fi
+
+      # Check whether the pull request contains files which are required to be present for all packages:
+      - name: 'Check whether the pull request contains files which are required to be present for all packages'
+        run: |
+          # Define a list of required files:
+          required_files=(
+            "package.json"
+            "README.md"
+            "docs/repl.txt"
+            "docs/types/index.d.ts"
+            "docs/types/test.ts"
+            "lib/index.js"
+            "lib/main.js"
+            "benchmark/benchmark.js"
+            "examples/index.js"
+            "test/test.js"
+          )
+          # Get path of first added `README.md` file:
+          readme_path=$(echo "${{ steps.added-files.outputs.files }}" | tr ' ' '\n' | grep -E 'README.md$' | head -n 1)
+
+          if grep -q '## CLI' "${readme_path}"; then
+            required_files+=("bin/cli")
+            required_files+=("docs/usage.txt")
+            required_files+=("etc/cli_opts.json")
+            required_files+=("test/test.cli.js")
+          fi
+
+          if grep -q '## C APIs' "${readme_path}"; then
+            required_files+=("manifest.json")
+            required_files+=("binding.gyp")
+            required_files+=("include.gypi")
+            required_files+=("src/Makefile")
+            required_files+=("include/stdlib")
+          fi
+
+          if grep -q '### Examples\n\n```c' "${readme_path}"; then
+            required_files+=("examples/c/example.c")
+            required_files+=("examples/c/Makefile")
+            required_files+=("benchmark/c/Makefile")
+            required_files+=("benchmark/c/benchmark.c")
+          fi
+
+          # Define a list of missing files:
+          missing_files=()
+
+          # Define a string with a Markdown list of checkboxes for all files:
+          checkbox_list=""
+
+          # Iterate over the list of required files:
+          for file in "${required_files[@]}"; do
+            # Check whether the file is present in the pull request:
+            if [[ ! "${{ steps.added-files.outputs.files }}" =~ "${file}" ]]; then
+              # If not, add the file to the list of missing files:
+              missing_files+=("${file}")
+
+              # Add a non-ticked checkbox for the file to the Markdown list of checkboxes:
+              checkbox_list+="-   [ ] ${file}"
+            else
+              # Add a ticked checkbox for the file to the Markdown list of checkboxes:
+              checkbox_list+="-   [x] ${file}"
+            fi
+            # Add a newline to the Markdown list of checkboxes:
+            checkbox_list+="
+            "
+          done
+
+          # Add the list of missing and required files to the workflow output:
+          echo "missing_files=${missing_files[*]}" >> $GITHUB_OUTPUT
+          echo "required_files=${required_files[*]}" >> $GITHUB_OUTPUT
+
+          body=""
+          if [[ "${#missing_files[@]}" -eq 0 ]]; then
+            body="Hi @${{ inputs.user }}, thank you for your contribution!
+
+            :tada: Your pull request contains all required files for the new package: :tada:
+
+            ${checkbox_list}
+
+            -- stdlib-bot"
+          else
+            body="Hi @${{ inputs.user }}, thank you for your contribution! Your pull request contains a new package, but is missing some of the required files.
+
+            Use the following checklist to keep track of the required files and which ones are still missing:
+
+            ${checkbox_list}
+
+            Please add the missing files to the pull request.
+
+            -- stdlib-bot"
+          fi
+
+          # Write the comment body to a file:
+          echo "${body}" > ./comment-body.txt
+
+        shell: bash
+        timeout-minutes: 10
+
+      # Create a comment on the pull request informing the user whether the pull request is missing required files:
+      - name: 'Create a comment on the pull request informing the user whether the pull request is missing required files'
+        # Pin action to full length commit SHA
+        uses: peter-evans/create-or-update-comment@71345be0265236311c031f5c7866368bd1eff043 # v4.0.0
+        with:
+          # Specify the issue or pull request number:
+          issue-number: ${{ inputs.pull_request_number }}
+
+          # Specify the comment body path:
+          body-path: ./comment-body.txt
+
+          # GitHub token:
+          token: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}

@@ -1,0 +1,171 @@
+From razor-users-admin@lists.sourceforge.net  Tue Aug  6 12:28:42 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0B7064418D
+	for <jm@localhost>; Tue,  6 Aug 2002 06:33:06 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:33:06 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g75ESck14360 for <jm-razor@jmason.org>; Mon, 5 Aug 2002 15:28:39 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17bihK-0001Fa-00; Mon,
+    05 Aug 2002 07:19:02 -0700
+Received: from [208.7.1.205] (helo=everest.mckee.com) by
+    usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17bigd-0005U5-00 for <razor-users@lists.sourceforge.net>; Mon,
+    05 Aug 2002 07:18:19 -0700
+Received: (qmail 9445 invoked from network); 5 Aug 2002 09:16:12 -0000
+Received: from unknown (HELO belvoir) (208.7.1.202) by 208.7.1.205 with
+    SMTP; 5 Aug 2002 09:16:12 -0000
+Message-Id: <001701c23c8a$edd2be00$7c640f0a@mfc.corp.mckee.com>
+From: "Fox" <lds0062@cdc.net>
+To: <razor-users@example.sourceforge.net>
+References: <000a01c23c86$e252b2f0$6600a8c0@dhiggins>
+Subject: Re: [Razor-users] Reliability of the razor servers?
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+    boundary="----=_NextPart_000_0014_01C23C69.66A70650"
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Mon, 5 Aug 2002 10:18:11 -0400
+Date: Mon, 5 Aug 2002 10:18:11 -0400
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0014_01C23C69.66A70650
+Content-Type: text/plain;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+I use a perl script that disables Razor for thirty minutes any time it =
+times out.  Not a true fix, but a workaround.
+
+Fox
+  ----- Original Message -----=20
+  From: Daniel Higgins=20
+  To: razor-users@example.sourceforge.net=20
+  Sent: Monday, August 05, 2002 9:49 AM
+  Subject: [Razor-users] Reliability of the razor servers?
+
+
+  ok so after waiting all this time before upgrading to V2 (just did it =
+this morning because V1 isn't effective at all anymore) i ran into =
+problems with reliability of the servers. it took me about half an hour =
+to do a razor-admin -create and razor-admin -register constantly =
+retrying because it kept timing out
+
+  connect1: nextserver: Could not get valid info from Discovery Servers
+
+  is it a problem just now or is that standard issue? up until now i've =
+been advocating razor to all, but i it starts to have reliability issues =
+we might as well look for another way to catch the spam, we can't afford =
+to have one anti spam trick, no matter how effective, bog down the =
+entire mail server
+
+  --
+  Daniel Higgins
+  Netcommunications Inc.
+
+------=_NextPart_000_0014_01C23C69.66A70650
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META http-equiv=3DContent-Type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 6.00.2600.0" name=3DGENERATOR>
+<STYLE></STYLE>
+</HEAD>
+<BODY bgColor=3D#ffffff>
+<DIV><FONT face=3DArial size=3D2>I use a perl script that disables Razor =
+for thirty=20
+minutes any time it times out.&nbsp; Not a true fix, but a=20
+workaround.</FONT></DIV>
+<DIV><FONT face=3DArial size=3D2></FONT>&nbsp;</DIV>
+<DIV><FONT face=3DArial size=3D2>Fox</FONT></DIV>
+<BLOCKQUOTE dir=3Dltr=20
+style=3D"PADDING-RIGHT: 0px; PADDING-LEFT: 5px; MARGIN-LEFT: 5px; =
+BORDER-LEFT: #000000 2px solid; MARGIN-RIGHT: 0px">
+  <DIV style=3D"FONT: 10pt arial">----- Original Message ----- </DIV>
+  <DIV=20
+  style=3D"BACKGROUND: #e4e4e4; FONT: 10pt arial; font-color: =
+black"><B>From:</B>=20
+  <A title=3Ddhiggins@netc.net href=3D"mailto:dhiggins@netc.net">Daniel =
+Higgins</A>=20
+  </DIV>
+  <DIV style=3D"FONT: 10pt arial"><B>To:</B> <A=20
+  title=3Drazor-users@lists.sourceforge.net=20
+  =
+href=3D"mailto:razor-users@lists.sourceforge.net">razor-users@lists.sourc=
+eforge.net</A>=20
+  </DIV>
+  <DIV style=3D"FONT: 10pt arial"><B>Sent:</B> Monday, August 05, 2002 =
+9:49=20
+  AM</DIV>
+  <DIV style=3D"FONT: 10pt arial"><B>Subject:</B> [Razor-users] =
+Reliability of the=20
+  razor servers?</DIV>
+  <DIV><BR></DIV>
+  <DIV><FONT face=3DArial size=3D2>ok so after waiting all this time =
+before=20
+  upgrading to V2 (just did it this morning because V1 isn't effective =
+at all=20
+  anymore) i ran into problems with reliability of the servers. it took =
+me about=20
+  half an hour to do a razor-admin -create and razor-admin -register =
+constantly=20
+  retrying because it kept timing out</FONT></DIV>
+  <DIV><FONT face=3DArial size=3D2></FONT>&nbsp;</DIV>
+  <DIV><FONT face=3DArial size=3D2>connect1: nextserver: Could not get =
+valid info=20
+  from Discovery Servers</FONT></DIV>
+  <DIV>&nbsp;</DIV>
+  <DIV><FONT face=3DArial size=3D2>is it a problem just now or is that =
+standard=20
+  issue? up until now i've been advocating razor to all, but i it starts =
+to have=20
+  reliability issues we might as well look for another way to catch the =
+spam, we=20
+  can't afford to have one anti spam trick, no matter how effective, bog =
+down=20
+  the entire mail server</FONT></DIV>
+  <DIV>&nbsp;</DIV>
+  <DIV><FONT face=3DArial size=3D2>--<BR>Daniel =
+Higgins<BR>Netcommunications=20
+  Inc.</FONT></DIV></BLOCKQUOTE></BODY></HTML>
+
+------=_NextPart_000_0014_01C23C69.66A70650--
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

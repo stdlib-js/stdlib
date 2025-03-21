@@ -1,0 +1,88 @@
+From ilug-admin@linux.ie  Mon Jul 22 18:12:16 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4F429440C9
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:13 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:13 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFklI10365 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 16:46:47 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id XAA29256 for <jm-ilug@jmason.org>;
+    Sun, 21 Jul 2002 23:07:38 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id XAA27862; Sun, 21 Jul 2002 23:06:40 +0100
+Received: from hibernia.jakma.org (hibernia.clubi.ie [212.17.32.129]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id XAA27824 for <ilug@linux.ie>;
+    Sun, 21 Jul 2002 23:06:34 +0100
+Received: from fogarty.jakma.org (fogarty.jakma.org [192.168.0.4]) by
+    hibernia.jakma.org (8.11.6/8.11.6) with ESMTP id g6LMCcw14609;
+    Sun, 21 Jul 2002 23:12:38 +0100
+Received: from localhost (paul@localhost) by fogarty.jakma.org
+    (8.11.6/8.11.6) with ESMTP id g6LMCZl09031; Sun, 21 Jul 2002 23:12:36
+    +0100
+X-Authentication-Warning: fogarty.jakma.org: paul owned process doing -bs
+Date: Sun, 21 Jul 2002 23:12:34 +0100 (IST)
+From: Paul Jakma <paul@clubi.ie>
+X-X-Sender: paul@fogarty.jakma.org
+To: kevin lyda <kevin+dated+1027480289.5c6047@ie.suberic.net>
+Cc: irish linux users group <ilug@linux.ie>
+Subject: Re: [ILUG] jpeg patented...
+In-Reply-To: <20020719041127.A29748@ie.suberic.net>
+Message-Id: <Pine.LNX.4.44.0207190449520.16137-100000@fogarty.jakma.org>
+X-Nsa: iraq saddam hammas hisballah rabin ayatollah korea vietnam revolt
+    mustard gas
+X-Dumb-Filters: aryan marijuiana cocaine heroin hardcore cum pussy porn
+    teen tit sex lesbian group
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Fri, 19 Jul 2002, kevin lyda wrote:
+
+> go after next?  how many jpeg rendering/creating apps/os's has ms
+> distributed to their customers since 1986?
+
+pah.. MS'd just buy them. (and i'm sure they'd happy for this to
+happen).
+
+> kevin
+
+oh yes, see you've setup that tdma thingy, so here's a thought. do
+you reckon spammers (or the software they use) is/are smart enough to
+
+	s/\(.\)+\+.*@\([a-zA-Z\.0-9\-]\)/\1@\2/
+
+on email addresses? it's a fairly old trick, so i dont see why they
+wouldnt.
+
+personally, i rarely get spam to any of the plussed addresses
+i've given out - i think i've only ever gotten /one/ cause ebay 
+seem to have sold on my address. apart from that - never, not even 
+to +usenet, so i wonder whether harvesting software does the above.
+
+regards,
+-- 
+Paul Jakma	paul@clubi.ie	paul@jakma.org	Key ID: 64A2FF6A
+Fortune:
+Thus spake the master programmer:
+	"After three days without programming, life becomes meaningless."
+		-- Geoffrey James, "The Tao of Programming"
+
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

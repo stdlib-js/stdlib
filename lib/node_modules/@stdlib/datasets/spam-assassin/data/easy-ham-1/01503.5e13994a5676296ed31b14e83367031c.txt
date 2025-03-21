@@ -1,0 +1,149 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Tue Sep 24 23:33:11 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 2EDC616F03
+	for <jm@localhost>; Tue, 24 Sep 2002 23:33:10 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 24 Sep 2002 23:33:10 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8OMScC25067 for <jm-sa@jmason.org>; Tue, 24 Sep 2002 23:28:38 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17ty92-0008AH-00; Tue,
+    24 Sep 2002 15:27:04 -0700
+Received: from ns1.apexvoice.com ([64.52.111.15]
+    helo=popeye.apexvoice.com) by usw-sf-list1.sourceforge.net with esmtp
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17ty84-00085i-00 for
+    <spamassassin-talk@lists.sourceforge.net>; Tue, 24 Sep 2002 15:26:04 -0700
+Received: from sthomas (64-52-111-64.apexvoice.com [64.52.111.64]) by
+    popeye.apexvoice.com (8.12.3/8.12.3) with SMTP id g8OMPrba011319;
+    Tue, 24 Sep 2002 15:25:53 -0700
+From: "Steve Thomas" <sthomas@apexvoice.com>
+To: "Cheryl L. Southard" <cld@astro.caltech.edu>,
+	<spamassassin-talk@lists.sourceforge.net>
+Subject: RE: [SAtalk] user_prefs ignored
+Message-Id: <PIEHJPLNKGMNAHJKHLFCCECJCEAA.sthomas@apexvoice.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+Importance: Normal
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2800.1106
+In-Reply-To: <20020924212731.GA24786@deimos.caltech.edu>
+X-Virus-Scanned: by amavisd-milter (http://amavis.org/)
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchives/forum.php?forum=spamassassin-talk>
+X-Original-Date: Tue, 24 Sep 2002 15:25:54 -0700
+Date: Tue, 24 Sep 2002 15:25:54 -0700
+
+This is just an semi-educated guess - if I'm wrong, someone please correct
+me!
+
+Spamd setuid's to the user running spamc. Since you're calling spamc from a
+global procmailrc file, it's being run as root (most likely). If called as
+root, spamd won't open user_prefs files.
+
+>>From the spamc man page:
+
+       -u username
+           This argument has been semi-obsoleted.  To have spamd use
+           per-user-config files, run spamc as the user whose config
+           files spamd should load.  If you're running spamc as some
+           other user though (eg. root, mail, nobody, cyrus, etc.)
+           then you can still use this flag.
+
+
+The solution is to set DROPPRIVS=yes in /etc/procmailrc, just before running
+spamc. From the procmailrc man page:
+
+       DROPPRIVS   If set to `yes' procmail will drop all privileges
+                   it might have had (suid or sgid).  This  is  only
+                   useful  if  you  want  to guarantee that the bottom
+                   half of the /etc/procmailrc file is executed on
+                   behalf of the recipient.
+
+
+I hope that helps, and I also hope it's right!
+
+St-
+
+
+| -----Original Message-----
+| From: spamassassin-talk-admin@example.sourceforge.net
+| [mailto:spamassassin-talk-admin@lists.sourceforge.net]On Behalf Of
+| Cheryl L. Southard
+| Sent: Tuesday, September 24, 2002 2:28 PM
+| To: spamassassin-talk@example.sourceforge.net
+| Subject: [SAtalk] user_prefs ignored
+|
+|
+| Hi All,
+|
+| I am running SpamAssassin 2.41 with procmail as my local delivery agent
+| with sendmail.  I use spamc/spamd so that it runs site-wide from
+| /etc/procmailrc.
+|
+| spamd is run as root with the flags "-d -a -c", and spamc isn't run with
+| any flags.
+|
+| When I was testing the program, I deployed spamc from my personal
+| ~/.procmailrc file, my ~/.spamassassin/user_prefs file was read each time.
+| I can see this because I have a non-default "required_hits" value which
+| gets reported in every e-mail on the "X-Spam-Status" line.
+|
+| Now that I run spamc from the global /etc/procmailrc file, my
+| ~/.spamassassin/user_prefs file is no longer being read or processed from
+| e-mails from outside computers.  The "required_hits" value gets set back
+| to the one in /etc/mail/spamassassin/local.cf.  However, if I send local
+| e-mail, my user_prefs file is read and processed correctly.
+|
+| Does anyone know how to fix this problem?  if this is a spamassassin or
+| procmail bug?
+|
+| Thanks,
+|
+| Cheryl
+|
+| --
+| Cheryl Southard
+| cld@astro.caltech.edu
+|
+|
+| -------------------------------------------------------
+| This sf.net email is sponsored by:ThinkGeek
+| Welcome to geek heaven.
+| http://thinkgeek.com/sf
+| _______________________________________________
+| Spamassassin-talk mailing list
+| Spamassassin-talk@lists.sourceforge.net
+| https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+|
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

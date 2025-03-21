@@ -1,0 +1,60 @@
+From ilug-admin@linux.ie  Tue Aug 13 10:30:32 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5D8C94413A
+	for <jm@localhost>; Tue, 13 Aug 2002 05:22:19 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:22:19 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7D9Adb24717 for
+    <jm-ilug@jmason.org>; Tue, 13 Aug 2002 10:10:39 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA03398; Tue, 13 Aug 2002 10:07:44 +0100
+Received: from ie.suberic.net (owsla.ie.suberic.net [62.17.162.83]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id KAA03368 for <ilug@linux.ie>;
+    Tue, 13 Aug 2002 10:07:38 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host owsla.ie.suberic.net
+    [62.17.162.83] claimed to be ie.suberic.net
+Received: from germain.ie.suberic.net (germain.g.dev.ie.alphyra.com
+    [192.168.7.200]) by ie.suberic.net (8.11.6/8.11.6) with ESMTP id
+    g7D97bY27969 for <ilug@linux.ie>; Tue, 13 Aug 2002 10:07:37 +0100
+Received: from germain.ie.suberic.net (germain [127.0.0.1]) by
+    germain.ie.suberic.net (8.11.6/8.11.6) with ESMTP id g7D97bA29916 for
+    <ilug@linux.ie>; Tue, 13 Aug 2002 10:07:37 +0100
+Date: Tue, 13 Aug 2002 10:07:32 +0100
+To: ilug@linux.ie
+Subject: Re: [ILUG] SUSE 8 disks? (thread changed slightly)
+Message-Id: <20020813100732.A29907@ie.suberic.net>
+References: <9C498074D5419A44B05349F5BF2C26301CFA8C@sdubtalex01.education.gov.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <9C498074D5419A44B05349F5BF2C26301CFA8C@sdubtalex01.education.gov.ie>;
+    from Shane_Ryan@education.gov.ie on Tue, Aug 13, 2002 at 09:55:49AM +0100
+X-Operating-System: Linux 2.4.18-5 i686
+X-GPG-Fingerprint: 9C1D 16F4 11F1 6BD2 933C  048D ACC7 9840 89D0 7646
+From: kevin lyda <kevin+dated+1029661657.64143c@ie.suberic.net>
+Mail-Followup-To: kevin+dated+1029661657.64143c@ie.suberic.net,
+	ilug@linux.ie
+X-Delivery-Agent: TMDA/0.57
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Tue, Aug 13, 2002 at 09:55:49AM +0100, Ryan, Shane wrote:
+> distro.  There's even a tarball[1] with this
+
+segfault.  core dumped.
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

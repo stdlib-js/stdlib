@@ -1,0 +1,82 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Fri Aug 23 11:12:12 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 1446344175
+	for <jm@localhost>; Fri, 23 Aug 2002 06:08:18 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 23 Aug 2002 11:08:18 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7MI2nZ18679 for <jm-sa@jmason.org>; Thu, 22 Aug 2002 19:02:49 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17hwHW-00087x-00; Thu,
+    22 Aug 2002 11:02:06 -0700
+Received: from server1.shellworld.net ([64.39.15.178]) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17hwHF-0005mI-00 for
+    <spamassassin-talk@lists.sourceforge.net>; Thu, 22 Aug 2002 11:01:49 -0700
+Received: from localhost (admin@localhost) by server1.shellworld.net
+    (8.11.1/8.11.1) with ESMTP id g7MI1ic24484 for
+    <spamassassin-talk@lists.sourceforge.net>; Thu, 22 Aug 2002 13:01:44 -0500
+    (CDT) (envelope-from admin@shellworld.net)
+From: Ken Scott <admin@shellworld.net>
+To: spamassassin-talk@example.sourceforge.net
+Message-Id: <Pine.BSF.4.44.0208221259380.24381-100000@server1.shellworld.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Subject: [SAtalk] Some Stupid Questions
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Thu, 22 Aug 2002 13:01:44 -0500 (CDT)
+Date: Thu, 22 Aug 2002 13:01:44 -0500 (CDT)
+
+As the subject line indicates, I'm sure these are stupid questions, but
+I'm having trouble getting SA working like I understand it should work,
+and have about given up on trying to figure it out myself.
+
+If a user has a line like:
+
+whitelist_from *@yahoogroups.com
+
+in his .spamassassin/user_prefs file, does that line not, in effect,
+tell the program to take no action at all against any mail coming in from
+yahoogroups.com, or is there still checking being done against it?  And if
+the latter, what does he need to place in user_prefs to cause such mail
+to be ignored?  I'm testing SA here with a few users who happen to be on
+yahoogroups lists, before deploying it system-wide, and although the above
+line has been added to their user_prefs files, much of their list mail is
+still going to the spam folder due to all the usual things you would
+expect to trigger SA.
+
+Thanks in advance for any help.
+
+--
+Ken Scott,
+admin@shellworld.net
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

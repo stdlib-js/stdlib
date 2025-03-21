@@ -1,0 +1,73 @@
+From rpm-list-admin@freshrpms.net  Tue Aug 13 12:18:58 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 60BF243C32
+	for <jm@localhost>; Tue, 13 Aug 2002 07:18:58 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 12:18:58 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7DBFPe29072 for
+    <jm-rpm@jmason.org>; Tue, 13 Aug 2002 12:15:25 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7DBD3J08393; Tue, 13 Aug 2002 13:13:03
+    +0200
+Received: from marvin.home.priv (adsl-66-124-58-30.dsl.anhm01.pacbell.net
+    [66.124.58.30]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g7D6P6J29598 for <rpm-list@freshrpms.net>; Tue, 13 Aug 2002 08:25:06 +0200
+Received: by marvin.home.priv (Postfix, from userid 500) id 5443A207F0;
+    Mon, 12 Aug 2002 23:25:54 -0700 (PDT)
+From: Gary Peck <gbpeck@sbcglobal.net>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: Limbo beta 2 ?
+Message-Id: <20020813062553.GA28164@marvin.home.priv>
+Mail-Followup-To: Gary Peck <gbpeck@sbcglobal.net>,
+	rpm-list@freshrpms.net
+References: <20020812.fZ4.64416600@www.dudex.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20020812.fZ4.64416600@www.dudex.net>
+User-Agent: Mutt/1.4i
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Mon, 12 Aug 2002 23:25:54 -0700
+Date: Mon, 12 Aug 2002 23:25:54 -0700
+
+On Mon, Aug 12, 2002 at 11:06:18PM +0000,  Angles  Puglisi wrote:
+> Michel Alexandre Salim (salimma1@yahoo.co.uk) wrote*:
+> Limbo beta2 ? I'm running Limbo 7.3.92 with kernel 4.2.18-5.58, is what I am running
+> an "older" version of the Limbo beta, it is it "the" limbo beta?
+
+The current version of the Limbo beta is 7.3.93 (yeah, they should
+have renamed it, but they didn't). It's in the same
+redhat/linux/beta/limbo directory on the ftp servers. Just check the
+redhat-release package to find out which version is on the server. 
+Looking at ftp.redhat.com, the current one is redhat-release-7.3.93-2.
+
+If you're using GNOME2 from the beta, I'd upgrade as there were some
+important bugfixes since the first beta. The only thing to watch out
+for is that Limbo2 switched gcc to 3.2, which is once again
+incompatible with the previous gcc (v3.1 shipped in Limbo1).
+
+gary
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

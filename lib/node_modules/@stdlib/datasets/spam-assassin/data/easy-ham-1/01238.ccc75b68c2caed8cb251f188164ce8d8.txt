@@ -1,0 +1,87 @@
+From rpm-list-admin@freshrpms.net  Fri Oct  4 10:59:53 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 4399516F18
+	for <jm@localhost>; Fri,  4 Oct 2002 10:59:51 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 04 Oct 2002 10:59:51 +0100 (IST)
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g93NNXK20294 for
+    <jm-rpm@jmason.org>; Fri, 4 Oct 2002 00:23:33 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g93NL2f14788; Fri, 4 Oct 2002 01:21:02
+    +0200
+Received: from mel-rto6.wanadoo.fr (smtp-out-6.wanadoo.fr [193.252.19.25])
+    by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g93NKYf14698 for
+    <rpm-list@freshrpms.net>; Fri, 4 Oct 2002 01:20:34 +0200
+Received: from mel-rta9.wanadoo.fr (193.252.19.69) by mel-rto6.wanadoo.fr
+    (6.5.007) id 3D760C25010C8EC7 for rpm-list@freshrpms.net; Fri,
+    4 Oct 2002 01:20:28 +0200
+Received: from free.fr (80.13.203.123) by mel-rta9.wanadoo.fr (6.5.007) id
+    3D80120400D13925 for rpm-list@freshrpms.net; Fri, 4 Oct 2002 01:20:28
+    +0200
+Message-Id: <3D9CEE0A.9030400@free.fr>
+From: Vincent <cult@free.fr>
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.0.1) Gecko/20020826
+X-Accept-Language: en-us, en, fr
+MIME-Version: 1.0
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: K3B
+References: <3D9CCF54.5070909@free.fr>
+    <20021003142457.77f1d07b.hosting@j2solutions.net>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Fri, 04 Oct 2002 03:25:30 +0200
+Date: Fri, 04 Oct 2002 03:25:30 +0200
+
+Jesse Keating wrote:
+
+>On Fri, 04 Oct 2002 01:14:28 +0200
+>Vincent <cult@free.fr> wrote:
+>
+># Hello,
+># 
+># I'm looking for the package k3b for the redhat 8.0, Does anyone know
+># 
+># where to get it ? I tried to compile but it did an error message:
+>
+>I've been working on a .src.rpm for it.  Their rpm and spec file is
+>very dirty, so I"m cleaning it up.  I think I have all the build-req's
+>and the install req's sorted out, but I need more testers.
+>
+>http://geek.j2solutions.net/rpms/k3b/
+>
+>Please try it.
+>
+>  
+>
+If I get troubles with the .tar.gz source file compilation, will it work 
+with the .src.rpm source file compilation ?
+If it will, how do I manage with a .src.rpm file, sorry, I don't remeber :(
+
+Thanks.
+
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

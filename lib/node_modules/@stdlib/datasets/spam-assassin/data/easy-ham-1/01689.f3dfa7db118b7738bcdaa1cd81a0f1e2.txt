@@ -1,0 +1,17 @@
+Return-Path: skip@pobox.com
+Delivery-Date: Sat Sep  7 05:05:45 2002
+From: skip@pobox.com (Skip Montanaro)
+Date: Fri, 6 Sep 2002 23:05:45 -0500
+Subject: [Spambayes] Maybe change X-Spam-Disposition to something else...
+Message-ID: <15737.31513.555967.915801@12-248-11-90.client.attbi.com>
+
+
+I actually like Neale's X-Spam-Disposition header, I just wonder if maybe we
+should choose something with a different prefix than "X-Spam-" so that
+people don't confuse it with SpamAssassin, all of whose headers begin with
+that prefix.
+
+Also, some sort of version information would be useful.  Perhaps the CVS
+version number for the classifier module could be tacked on.
+
+Skip

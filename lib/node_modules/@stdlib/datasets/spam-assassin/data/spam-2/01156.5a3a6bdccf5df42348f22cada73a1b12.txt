@@ -1,0 +1,116 @@
+From fork-admin@xent.com  Mon Jul 29 11:40:41 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 65E4B44116
+	for <jm@localhost>; Mon, 29 Jul 2002 06:36:00 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 11:36:00 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6SA35i32679 for <jm@jmason.org>;
+    Sun, 28 Jul 2002 11:03:05 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id BE4CE2940B3; Sun, 28 Jul 2002 03:01:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from ariserver.cts.com (unknown [65.105.193.98]) by xent.com
+    (Postfix) with ESMTP id E08302940A2 for <fork@xent.com>; Sun,
+    28 Jul 2002 03:00:53 -0700 (PDT)
+Received: from mx06.hotmail.com (ACBF65CA.ipt.aol.com [172.191.101.202])
+    by ariserver.cts.com with SMTP (Microsoft Exchange Internet Mail Service
+    Version 5.5.2653.13) id PXRY9F8Y; Sun, 28 Jul 2002 03:02:47 -0700
+Message-Id: <00001f316be1$00005f8c$00000afa@mx06.hotmail.com>
+To: <mpb@rocketsoftware.com>
+Cc: <ellendew@aol.com>, <uvfr36@aol.com>, <aster@utilicorp.com>,
+	<fork@xent.com>, <boyhawk1@aol.com>, <nickerss@usa.net>,
+	<icp1121@aol.com>
+From: "Faith" <zi7wynx2g1686@hotmail.com>
+Subject: Are you at risk? Get covered!...           CZFQNT
+MIME-Version: 1.0
+Reply-To: zi7wynx2g1686@hotmail.com
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 28 Jul 2002 03:02:07 -1900
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+</head>
+<body>
+
+<center>
+<font face=3D"times" size=3D"6" color=3D"#000000">Save up to
+
+<font color=3D"#ff0000">75%</font> on your Term Life
+Insurance!</font>
+<br>  
+<font face=3D"times" size=3D"4" color=3D"#000000">
+<i>Compare rates from top insurance companies around
+the country</i></font>
+<br><br>
+<font face=3D"arial" size=3D"4" color=3D"#7084D6">
+<b>In our life and times, it's important to plan for
+your family's future, while 
+<br>being comfortable financially.  Choose the right
+Life Insurance policy today.</font>
+<p>
+<font face=3D"arial" size=3D"3" color=3D"#000000">
+<i>Click the link below to compare the lowest rates
+and save up to <font
+color=3D"#ff0000">75%</font></i></b></font>  
+<p>
+<a
+href=3D"http://www.marketing-leader.com/user0202/termquotes/473400/index.h=
+tm"><font
+face=3D"arial"
+size=3D"4">
+<b>COMPARE YOUR COVERAGE</b></font></a>
+<p>
+<font face=3D"times" size=3D"5" color=3D"#000000">
+You'll be able to compare rates and get a free
+application in <i>less than a minute!</i></font>
+<p>
+<font face=3D"arial" size=3D"5" color=3D"#ff0000">
+<b>*Get your FREE instant quotes...<br>
+*Compare the lowest prices, then...<br>
+*Select a company and Apply Online.</b></font>
+<p>
+<a
+href=3D"http://www.marketing-leader.com/user0202/termquotes/473400/index.h=
+tm"><font
+face=3D"arial"
+size=3D"5">
+<b>GET A FREE QUOTE NOW!</b></font></a>
+<br>
+<font face=3D"arial" size=3D"2" color=3D"#000000">
+<i>You can't predict the future, but you can always
+prepare for it.</i></font>
+
+</center></TR></TABLE></CENTER><br><br>
+<font face=3D"arial,verdana" size=3D1.5 color=3D"#8182AB"><p
+align=3D"center"><br><br>
+<a
+href=3D"http://www.marketing-leader.com/light/watch.asp">to be
+excluded from future contacts </a></p></font>
+</body>
+</html>
+aster
+
+
+
+
+
+http://xent.com/mailman/listinfo/fork
+
+

@@ -1,0 +1,86 @@
+From fork-admin@xent.com  Sat Oct  5 12:38:46 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 4FD6D16F03
+	for <jm@localhost>; Sat,  5 Oct 2002 12:38:46 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 05 Oct 2002 12:38:46 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g94J8PK04887 for <jm@jmason.org>;
+    Fri, 4 Oct 2002 20:08:28 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 4A27F2940B5; Fri,  4 Oct 2002 12:08:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hotmail.com (dav19.law15.hotmail.com [64.4.22.123]) by
+    xent.com (Postfix) with ESMTP id EDC8829409A for <fork@xent.com>;
+    Fri,  4 Oct 2002 12:07:10 -0700 (PDT)
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Fri, 4 Oct 2002 12:07:27 -0700
+X-Originating-Ip: [207.202.171.254]
+From: "Mr. FoRK" <fork_list@hotmail.com>
+To: <fork@spamassassin.taint.org>
+Subject: Documentum Acquires E-Room, Melding Content, Collaboration
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.50.4133.2400
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4133.2400
+Message-Id: <DAV19uS7sBdxkiiZIHd0000ac6c@hotmail.com>
+X-Originalarrivaltime: 04 Oct 2002 19:07:27.0088 (UTC) FILETIME=[47776F00:01C26BD9]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 4 Oct 2002 12:12:44 -0700
+
+
+Don't know much about eRoom - but there is the magic phrase 'collaborate in
+real-time'... Groove really has people running scared. Wonder if any users
+actually /benefit/ from collaborating in real-time.
+
+
+===
+http://www.internetwk.com/breakingNews/INW20021004S0001
+
+Content-management vendor Documentum said late Thursday it plans to acquire
+privately held e-Room Technologies in a deal worth about $100 million.
+
+Documentum will issue approximately 7.7 million shares of its common stock
+and pay about $12.6 million in cash for all of the outstanding shares of
+eRoom.
+
+Documentum makes a platform for enterprise-wide content management. ERoom
+makes tools for enterprise collaboration. Its customers include Airbus,
+Bausch & Lomb, Ford Motor Co., and Sony.
+
+Documentum announced plans this summer to deliver a new Collaboration
+Edition of its content-management suite. ERoom was already integrating its
+tools to the Documentum platform, making an acquisition an easy target,
+according to Documentum president and CEO Dave DeWalt.
+
+With the upcoming joint product, customers will be able to collaborate in
+real-time via virtual workspaces, sharing schedules, resources, and even
+jointly creating content.
+
+Content creation and management has always been a collaborative task, but
+workflow has usually been delivered via a Web browser interface or even
+simple e-mail -- and rarely in real-time.
+
+For now, Documentum will sell the eRoom platform and its own
+content-management system through combined sales channels. Further
+integration is planned down the line, the companies said.
+
+
+

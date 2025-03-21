@@ -1,0 +1,44 @@
+Return-Path: neale@woozle.org
+Delivery-Date: Fri Sep  6 22:44:33 2002
+From: neale@woozle.org (Neale Pickett)
+Date: 06 Sep 2002 14:44:33 -0700
+Subject: [Spambayes] Deployment
+In-Reply-To: <LNBBLJKPBEHFEDALKOLCGEJOBCAB.tim.one@comcast.net>
+References: <LNBBLJKPBEHFEDALKOLCGEJOBCAB.tim.one@comcast.net>
+Message-ID: <w53vg5ibxoe.fsf@woozle.org>
+
+So then, Tim Peters <tim.one@comcast.net> is all like:
+
+> [Tim]
+> > My tests train on about 7,000 msgs, and a binary pickle of the database is
+> > approaching 10 million bytes.
+> 
+> That shrinks to under 2 million bytes, though, if I delete all the WordInfo
+> records with spamprob exactly equal to UNKNOWN_SPAMPROB.  Such records
+> aren't needed when scoring (an unknown word gets a made-up probability of
+> UNKNOWN_SPAMPROB).  Such records are only needed for training; I've noted
+> before that a scoring-only database can be leaner.
+
+That's pretty good.  I wonder how much better you could do by using some
+custom pickler.  I just checked my little dbm file and found a lot of
+what I would call bloat:
+
+  >>> import anydbm, hammie
+  >>> d = hammie.PersistentGrahamBayes("ham.db")
+  >>> db = anydbm.open("ham.db")
+  >>> db["neale"], len(db["neale"])
+  ('ccopy_reg\n_reconstructor\nq\x01(cclassifier\nWordInfo\nq\x02c__builtin__\nobject\nq\x03NtRq\x04(GA\xce\xbc{\xfd\x94\xbboK\x00K\x00K\x00G?\xe0\x00\x00\x00\x00\x00\x00tb.', 106)
+  >>> d.wordinfo["neale"], len(`d.wordinfo["neale"]`)
+  (WordInfo'(1031337979.16197, 0, 0, 0, 0.5)', 42)
+
+Ignoring the fact that there are too many zeros in there, the pickled
+version of that WordInfo object is over twice as large as the string
+representation.  So we could get a 50% decrease in size just by using
+the string representation instead of the pickle, right?
+
+Something about that logic seems wrong to me, but I can't see what it
+is.  Maybe pickling is good for heterogeneous data types, but every
+value of our big dictionary is going to have the same type, so there's a
+ton of redundancy.  I guess that explains why it compressed so well.
+
+Neale

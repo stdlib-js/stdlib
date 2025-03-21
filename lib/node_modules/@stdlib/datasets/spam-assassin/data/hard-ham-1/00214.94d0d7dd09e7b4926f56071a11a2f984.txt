@@ -1,0 +1,466 @@
+Return-Path: env_21986283-1597827694@hermes.sun.com
+Delivery-Date: Sun Sep 15 00:26:41 2002
+Return-Path: <env_21986283-1597827694@hermes.sun.com>
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by mothlight.dyndns.org (8.11.6/8.11.6) with ESMTP id g8F4Q1h03999
+	for <nice@localhost>; Sun, 15 Sep 2002 00:26:01 -0400
+Received: from fastmail.fm [209.61.183.86]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for nice@localhost (single-drop); Sun, 15 Sep 2002 00:26:01 -0400 (EDT)
+Received: from www.fastmail.fm (server1.internal [10.202.2.132])
+	by server2.fastmail.fm (Cyrus v2.1.5) with LMTP; Thu, 12 Sep 2002 18:09:24 -0500
+X-Sieve: CMU Sieve 2.2
+Received: from www.fastmail.fm (server1.internal [10.202.2.132])
+	by www.fastmail.fm (Cyrus v2.1.3) with LMTP; Thu, 12 Sep 2002 18:09:25 -0500
+Received: from www.fastmail.fm (localhost [127.0.0.1])
+	by localhost.localdomain (Postfix) with ESMTP id 160176DA9E
+	for <mothlight@fastmail.fm>; Thu, 12 Sep 2002 18:09:18 -0500 (CDT)
+X-Mail-from: env_21986283-1597827694@hermes.sun.com
+X-Delivered-to: <mothlight@fastmail.fm>
+X-Spam: spam
+  HTTP_CTRL_CHARS_HOST, UNSUB_PAGE, MAILTO_LINK, WEB_BUGS, PORN_3,
+  NO_MX_FOR_FROM, CTYPE_JUST_HTML
+Received: from hermes.sun.com (hermes.sun.com [64.124.140.169])
+	by www.fastmail.fm (Postfix) with SMTP id AB4086DA6A
+	for <mothlight@fastmail.fm>; Thu, 12 Sep 2002 18:09:17 -0500 (CDT)
+Date: 12 Sep 2002 13:59:54 -0800
+From: "JDC Editorial Staff" <body_21986283-1597827694@hermes.sun.com>
+To: mothlight@fastmail.fm
+Message-Id: <21986283-1597827694@hermes.sun.com>
+Subject: September Core Java Technologies Newsletter
+Mime-Version: 1.0
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-Mailer: SunMail 1.0
+X-Status: 
+X-Keywords:                  
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<title>Core Java Technologies Newsletter</title>
+
+<style type="text/css">
+
+CODE {color: #333333; font-family: Verdana, Courier, Monospace; font-size: 10pt}
+PRE {color: #333333; font-family: Verdana, Courier, Monospace; font-size: 10pt}
+BODY, div, span {color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 10pt}
+td, th {color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 10pt}
+tr {color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 10pt}
+table {font-family: Arial, Helvetica, sans-serif; font-size: 10pt}
+p {color: #333333; font-family: arial,helvetica,sans-serif; font-size: 10pt}
+li {color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 10pt}
+br {color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 10pt}
+div {color: #666699; font-family: Arial, Helvetica, sans-serif; font-size: 10pt}
+sup {color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 5pt}
+h3 {color: #666699; font-family: Arial, Helvetica, sans-serif; font-size: 11pt}
+h4, h5, h6 {color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 10pt}
+blockquote, input, select {color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 
+10pt}
+ul, ol, font {color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 10pt}
+a:link {font-size: 10pt; font-family: Arial, Helvetica, sans-serif; color:#666699 }
+span.small {font-size: 8pt; font-family: Arial, Helvetica, sans-serif; color:#333333 }
+span.link {font-size: 8pt; font-family: Arial, Helvetica, sans-serif; color:#666699 }
+</style>
+
+</head>
+
+<body>
+<table bgcolor="#666699" width="613" cellspacing="0" cellpadding="1" border="0">
+<tr>
+<!-- BEGIN WRAPPER -->
+<td>
+<table bgcolor="#ffffff" width="611" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td bgcolor="#ffffff" colspan="7">
+<a href="http://developer.java.sun.com?s=04&w=37"><img 
+src="http://developer.java.sun.com/images/headers/core_news_hdr.jpg" width="611" height="160" 
+border="0" alt="header"></a>
+</td>
+</tr>
+<tr>
+<td bgcolor="#ffffff" width="10"><img src="http://developer.java.sun.com/images/pixel.gif" 
+width="10" height="1" alt=""></td>
+
+<!-- BEGIN LEFT COLUMN -->
+
+<td valign="top" bgcolor="#ffffff" width="175">
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr valign="top">
+<td>
+<br><br>
+Welcome to the new Core Java<sup>TM</sup> Technologies Newsletter (formerly, the JDC Newsletter). 
+Here you'll find links to the latest products, tools, resources, and events relating to development 
+with the Java<sup>TM</sup> 2 Platform, Standard Edition (J2SE<sup>TM</sup>).
+<br><br>
+</td></tr>
+</table>
+
+<hr noshade color="#666699">
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr valign="top">
+<td>
+<p>
+<h3>Special Announcement:</h3> Special SunNetwork<sup>SM</sup> Conference Discount for Developers. 
+Registered members of the Java Developer Connection<sup>SM</sup> and Solaris Developer 
+Connection<sup>SM</sup> programs will receive $300 off the registration price of $995.
+ </p>
+
+<p>
+SunNetwork 2002 Conference and Pavilion<br>
+Moscone Center<br>
+San Francisco, California<br>
+Sept. 18-20, 2002<br>
+</p>
+
+<p>
+<a href="http://www.sun.com/sunnetwork13?s=04&w=37">Register for the SunNetwork 2002 Conference</a>, 
+use the code JDC334.
+
+</p>
+</td></tr>
+</table>
+
+<hr noshade color="#666699">
+
+<h3>Product and Technology Releases</h3>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr valign="top">
+<td>
+The following J2SE products and technologies were recently released.<br><br>
+
+<p><a href="http://java.sun.com/products/javawebstart/?s=04&w=37">Java Web Start v1.2 RC</a><br>
+Launch applications simply by clicking on a Web page. Now available for download as part of J2SE 
+v1.4.1. (Aug 20, 2002)
+</p>
+
+<p>
+<a href="http://java.sun.com/j2se/1.4.1/?s=04&w=37">Java 2 SDK, Standard Edition Release Candidate 
+(RC) v1.4.1</a><br>
+Builds upon Java technology's cross-platform support and robust security model with new features and 
+functionality, enhanced performance and scalability. (Aug 20, 2002)
+</p>
+
+<p>
+<a href="http://jcp.org/aboutJava/communityprocess/first/jsr152/index.html?s=04&w=37">JSR-000152 
+JavaServer Pages Specification v2.0,</a><br>
+Proposed Final Draft. This is next revision of the JavaServer Pages specification. (Aug 16, 2002)
+</p>
+
+</td></tr>
+</table>
+
+<hr noshade color="#666699">
+
+<table border="0" cellpadding="1" cellspacing="0" width="100%">
+<tr><td><h3>Early Access Releases</h3>
+</td></tr>
+<tr><td>
+
+<p>
+The following J2SE products and technologies were recently made available through the Early Access 
+Release Program.
+</p>
+
+<p>
+<a href="http://developer.java.sun.com/developer/releases/javawebstart/?s=04&w=37">Java Web Start 
+v1.2 RC Sample Applications</a> Contains descriptions and downloads of sample applications, ranging 
+from CORBA to a WebPad application, for the Java Web Start product. (Aug 20, 2002)
+</p>
+
+</td></tr>
+</table>
+
+<hr noshade color="#666699">
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr valign="top">
+<td>
+<h3>Hot Downloads</h3>
+
+<p>
+<a href="http://java.sun.com/products/javawebstart/download-solaris.html?s=04&w=37">Java Web 
+Start</a>
+</p>
+
+<p>
+<a href="http://java.sun.com/products/jdk/1.1/jre/?s=04&w=37">Java Runtime Environment</a>
+</p>
+
+<p>
+<a href="http://java.sun.com/products/java-media/zzzf/2.1.1/download.html?s=04&w=37">Java Media 
+Framework Software v2.1.1</a>
+</p>
+
+<p>
+<a href="http://java.sun.com/xml/download.html?s=04&w=37">Java Technology XML and Web Services 
+Products</a>
+</p>
+
+<p>
+<a href="http://java.sun.com/j2se/1.4/download.html?s=04&w=37">Java Development Kit</a>
+</p>
+
+</td></tr>
+</table>
+
+<img src="http://developer.java.sun.com/images/pixel.gif" width="175" height="1" alt="pixel"></td>
+
+<!-- END LEFT COLUMN -->
+
+<td bgcolor="#ffffff" width="10"><img src="http://developer.java.sun.com/images/pixel.gif" 
+width="10" height="1" alt="pixel"></td>
+<td bgcolor="#666699" width="1"><img src="http://developer.java.sun.com/images/pixel.gif" width="1" 
+height="1" alt="pixel"></td>
+<td bgcolor="#ffffff" width="10"><img src="http://developer.java.sun.com/images/pixel.gif" 
+width="10" height="1" alt="pixel"></td>
+
+
+<!-- BEGIN RIGHT CONTENT -->
+
+<!-- BEGIN SEARCH BOX -->
+
+<td valign="top" bgcolor="#ffffff" width="395">
+
+<div align="right"><b>September 12, 2002</b></div>
+
+<FORM METHOD="GET" ACTION="http://search.java.sun.com/search/java/">
+<table border="0" cellpadding="3" cellspacing="0" width="100%">
+<tr>
+<td width="50%"><h3>Resources</h3>
+</td>
+
+<td valign="middle" align="right">
+<font size="2">
+<INPUT TYPE="text" SIZE="15" MAXLENGTH="128" NAME=qt></FONT></td>
+
+<td VALIGN="middle" WIDTH="55">
+<INPUT TYPE="image" SRC="http://developer.java.sun.com/images/v4a_search.gif" ALT="Search" 
+value="search" BORDER="0" WIDTH="55"></td>
+</tr>
+</table>
+
+</FORM>
+
+<!-- END SEARCH BOX -->
+
+<p>
+Learn more about, and get &quot;hands-on&quot; training for J2SE<sup>TM</sup> technologies through 
+the following resources.
+</p>
+
+<h3>Technical Articles</h3>
+<ul>
+<li><a href="http://java.sun.com/features/2002/08/j2se-network.html?s=04&w=37">Network Programming 
+with J2SE v1.4</a><br>
+Take advantage of the new features and enhancements of J2SE v1.4, such as new protocols, and 
+improved performance of existing features. (September 3, 2002)
+<br><br></li>
+
+<li><a href="http://java.sun.com/features/2002/09/pword_mask.html?s=04&w=37">Password Masking in the 
+Java Programming Language</a><br>
+Read how to easily mask passwords with AWT/Swing methods. (September 5, 2002)
+<br><br></li>
+
+<li><a href="http://forte.sun.com/ffj/articles/macOSX.html?s=04&w=37">Installing Sun ONE Studio 
+Software on Macintosh OS X</a><br>
+Read about installation of Sun ONE Studio release 3.0 and 4, and NetBeans 3.3.1 on Apple Macintosh 
+OS X, and configuration of the IDE to use an external browser. (August 15, 2002)
+<br><br></li>
+</ul>
+
+<h3>Tech Tips</h3>
+
+<ul>
+  <li><a href="http://java.sun.com/jdc/JDCTechTips/2002/tt0910.html?s=04&w=37">Get insights into 
+ArrayList and LinkedList,</a> and where each is the better programming choice. Also learn how to 
+effectively use zero-length arrays. (September 10, 2002)<br><br></li>
+
+  <li><a href="http://java.sun.com/jdc/JDCTechTips/2002/tt0821.html?s=04&w=37">Maintaining a 
+Priority Queue, and Displaying Text in Multiple Styles.</a>  Learn to build prioritization into a 
+collection of items and to display text in multiple colors with JTextPane. (August 21, 
+2002)<br><br></li>
+</ul>
+
+
+<h3>Chat</h3>
+<p>
+<a href="http://developer.java.sun.com/developer/community/chat/index.html">New I/O (NIO) APIs</a>:
+    The NIO APIs added to J2SE v1.4 provide new features and improved performance in the areas of 
+buffer management, character-set support, regular-expression matching,
+    file I/O, and scalable network I/O. Don't miss the opportunity to
+    learn more about the NIO APIs, and get questions answered in this chat with two key
+    members of the NIO engineering team: Mark Reinhold and Michael
+    McCloskey.<br>(Sept. 19, 11:00 A.M. PDT/6:00 P.M. GMT)
+</p>
+
+
+<h3>Tutorials &amp; Code Samples</h3>
+
+<ul>
+  <li>Error Handling: <code>ListOfNumbers.java</code> code sample shows how to use a try and catch 
+block to catch exceptions. For supporting information see &quot;The Java Tutorial: Handling Errors 
+Using Exceptions.&quot; (September 3, 2002)<br><br>
+
+<a 
+href="http://java.sun.com/docs/books/tutorial/essential/exceptions/example-1dot1/ListOfNumbers.java?
+s=04&w=37"><b>Code Sample</b></a> | <a 
+href="http://java.sun.com/docs/books/tutorial/essential/exceptions/index.html?s=04&w=37"><b>Tutorial
+</b></a>
+<br><br></li>
+
+
+<li><a href="http://developer.java.sun.com/developer/Quizzes/aboutjava/?s=04&w=37">Tutorial 
+Quiz:</a> The first page of the lesson, &quot;The Java Technology Phenomenon,&quot; by Mary Campione 
+and Kathy Walrath establishes some basic facts about the Java platform. Take this quiz to test your 
+basic knowledge. (September 3, 2002)
+<br><br></li>
+
+</ul>
+
+
+<h3>Sun Technology Audiocast</h3>
+
+<p>
+<a href="http://java.sun.com/jdc/onlineTraining/webcasts/20plus/cchan2.html?s=04&w=37">Java Web 
+Start:</a> This beginner-level code camp covers how Java Web Start works, how to package an 
+application for deployment, and using the JNLP (Java Network Launch Protocol) API. (July 31, 2002)
+</p>
+
+<hr noshade color="#666699">
+
+<h3>In The Spotlight</h3>
+
+<p>
+The latest version of the <a href="http://java.sun.com/j2se/javadoc/mifdoclet/?s=04&w=37">MIF 
+Doclet</a> is now available. It works with Java 2 SDK v1.4, and includes 10 new features and 48 bug 
+fixes.
+</p>
+
+<h3>Events</h3>
+
+<ul>
+  <li><a href="http://www.sun.com/sunnetwork13?s=04&w=37">SunNetwork 2002 Conference and 
+Pavilion</a><br>
+Moscone Center<br>
+San Francisco, California<br>
+September 18-20, 2002
+<br><br></li>
+
+  <li><a href="http://java.sun.com/javaone?s=04&w=37">2002 JavaOne Conference in Japan</a><br>
+Yokohama, Japan,<br>
+September 25-27, 2002<br>
+<br><br></li>
+
+  <li><a href="http://www.sys-con.com/webservicesEdge2002West/">JDJEdge 2002 West Conference</a><br>
+San Jose, CA<br>
+October 1-3, 2002<br>
+<br><br></li>
+</ul>
+
+
+<!-- DO NOT REMOVE IMAGE BELOW -->
+<img src="http://developer.java.sun.com/images/pixel.gif" width="395" height="1" alt="pixel"></td>
+
+<!-- END RIGHT CONTENT -->
+
+<td bgcolor="#ffffff" width="10"><img src="http://developer.java.sun.com/images/pixel.gif" 
+width="10" height="1" alt="pixel"></td>
+</tr>
+</table>
+
+<!-- BEGIN FOOTER -->
+
+<table bgcolor="#ffffff" width="611" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td width="10"><img src="http://developer.java.sun.com/images/pixel.gif" width="10" height="1" 
+alt="pixel"></td>
+<td width="591">
+<hr noshade color="#666699">
+
+<span class="small">IMPORTANT: Please read our Terms of Use, Privacy, and Licensing policies:<br>
+<a href="http://www.sun.com/share/text/termsofuse.html?s=04&w=37"><span 
+class="link">http://www.sun.com/share/text/termsofuse.html</span></a><br>
+<a href="http://www.sun.com/privacy/?s=04&w=37"><span 
+class="link">http://www.sun.com/privacy/</span></a>
+</span><br><br>
+
+<span class="small">
+Comments? Send your feedback on the Core Java Technologies Newsletter to: <a 
+href="mailto:jdc-webmaster@java.sun.com"><span class="link">jdc-webmaster@java.sun.com</span></a>
+</span><br><br>
+
+<span class="small">
+Subscribe to other Java technology newsletters:
+</span><br><br>
+
+<span class="small">
+  - Java Technology Fundamentals Newsletter. Learn the basics of
+    the Java programming language and keep up-to-date on
+    additions to the New-to-Java Programming Center.<br>
+  - Enterprise Java Technologies Newsletter. Learn about new
+    products, tools, resources, and events of interest to
+    developers working with enterprise Java technologies.<br>
+  - Wireless Developer Newsletter. Learn about the latest
+    releases, tools, and resources for developers working on
+    wireless and Java Card technologies and applications.<br><br>
+</span>
+
+<span class="small">
+
+  - To subscribe, visit the <a href="http://developer.java.sun.com/subscription/?s=04&w=37"><span 
+class="link">JDC Newsletters and Publications page,</span></a>
+    select the newsletters you want to subscribe to and click &quot;Update&quot;.<br>
+  - To unsubscribe, go to the <a href="http://developer.java.sun.com/subscription/?s=04&w=37"><span 
+class="link">subscriptions page</span></a>, uncheck the appropriate checkbox, and click 
+&quot;Update&quot;.
+</span><br><br>
+
+<span class="small">ARCHIVES: You'll find the Core Java Newsletter archives at:<br>
+<a href="http://java.sun.com/jdc/techDocs/Newsletters/jdc_newsletters.html?s=04&w=37"><span 
+class="link">http://java.sun.com/jdc/techDocs/Newsletters/jdc_newsletters.html</span></a>
+</span><br><br>
+
+<span class="small"><a href="http://java.sun.com/jdc/copyright.html"><span class="link"> Copyright 
+</span></a> 2002 <a href="http://www.sun.com"><span class="link">Sun Microsystems, Inc.</span></a> 
+All rights reserved. 4150 Network Circle, Santa Clara, CA 95054 USA
+</span><br><br>
+
+
+<span class="small">Sun, Sun Microsystems, SunNetwork, Java, Java Developer Connection, Solaris 
+Developer Connection, NetBeans, JavaServer Pages, and J2SE are trademarks or registered trademarks 
+of Sun Microsystems, Inc. in the United States and other countries.
+</span><br><br>
+
+<center>
+<a href="http://www.sun.com?s=04&w=37"><img src="http://developer.java.sun.com/images/lgsun.gif" 
+border="0"
+alt="Sun Microsystems, Inc."></a>
+</center>
+
+</td>
+
+
+<td width="10"><img src="http://developer.java.sun.com/images/pixel.gif" width="10" height="1"
+alt="pixel"></td>
+</tr>
+</table>
+
+
+<!-- END FOOTER -->
+
+</td>
+<!-- END WRAPPER -->
+</tr>
+
+</table>
+
+
+
+<table bgcolor = "#efefef"><tr><td><a href="http://bulkmail.sun.com/servlet/PreferenceServlet?action=change&pref_name=content-type&pref_value=text&id=21986283-1597827694">Please send me newsletters in text.</a><br><a href="http://bulkmail.sun.com/unsubscribe?21986283-1597827694">Please unsubscribe me from this newsletter.</a><img src="http://bulkmail2.sun.com/OTServlet?id=21986283-1597827694" width=1 height=1></td></tr></table></body>
+</html>
+

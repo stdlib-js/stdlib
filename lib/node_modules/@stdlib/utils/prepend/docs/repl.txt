@@ -1,0 +1,46 @@
+
+{{alias}}( collection1, collection2 )
+    Adds the elements of one collection to the beginning of another collection.
+
+    If the input collection is a typed array, the output value does not equal
+    the input reference and the underlying `ArrayBuffer` may *not* be the same
+    as the `ArrayBuffer` belonging to the input view.
+
+    For purposes of generality, always treat the output collection as distinct
+    from the input collection.
+
+    Parameters
+    ----------
+    collection1: Array|TypedArray|Object
+        A collection. If the collection is an `Object`, the collection should be
+        array-like.
+
+    collection2: Array|TypedArray|Object
+        A collection containing the elements to add. If the collection is an
+        `Object`, the collection should be array-like.
+
+    Returns
+    -------
+    out: Array|TypedArray|Object
+        Updated collection.
+
+    Examples
+    --------
+    // Arrays:
+    > var arr = [ 1.0, 2.0, 3.0, 4.0, 5.0 ];
+    > arr = {{alias}}( arr, [ 6.0, 7.0 ] )
+    [ 6.0, 7.0, 1.0, 2.0, 3.0, 4.0, 5.0 ]
+
+    // Typed arrays:
+    > arr = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0 ] );
+    > arr = {{alias}}( arr, [ 3.0, 4.0 ] )
+    <Float64Array>[ 3.0, 4.0, 1.0, 2.0 ]
+
+    // Array-like object:
+    > arr = { 'length': 1, '0': 1.0 };
+    > arr = {{alias}}( arr, [ 2.0, 3.0 ] )
+    { 'length': 3, '0': 2.0, '1': 3.0, '2': 1.0 }
+
+    See Also
+    --------
+

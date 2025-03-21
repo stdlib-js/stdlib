@@ -1,0 +1,83 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2017 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Script to run the `makie` utility.
+
+
+# VARIABLES #
+
+# Cache provided arguments:
+# shellcheck disable=SC2124
+args="$@"
+
+# Define the command for `node`:
+if [[ -z "${NODE}" ]]; then
+	cmd=node
+else
+	cmd="${NODE}"
+fi
+
+# Determine the script directory:
+dir=$(dirname "$0")
+
+# Define the path to the `makie` executable:
+makie="${dir}/../../lib/node_modules/@stdlib/_tools/makie/makie/bin/cli"
+
+# Define the path to the `makie` configuration file:
+makie_config="${dir}/../../etc/.makie.js"
+
+# Define the path to the Makefile directory:
+makie_makefile_dir="${dir}/../../"
+
+
+# FUNCTIONS #
+
+# Defines an error handler.
+#
+# $1 - error status
+on_error() {
+	echo 'ERROR: An error was encountered during execution.' >&2
+	cleanup
+	exit "$1"
+}
+
+# Runs clean-up tasks.
+cleanup() {
+	echo '' >&2
+}
+
+# Runs makie.
+run() {
+	"${cmd}" "${makie}" "--config=${makie_config}" "--dir=${makie_makefile_dir}" "${args}"
+}
+
+# Main execution sequence.
+main() {
+	run
+	cleanup
+	exit 0
+}
+
+# Exit immediately if one of the executed commands exits with a non-zero status:
+set -e
+
+# Set an error handler to print captured output and perform any clean-up tasks:
+trap 'on_error' ERR
+
+# Run main:
+main

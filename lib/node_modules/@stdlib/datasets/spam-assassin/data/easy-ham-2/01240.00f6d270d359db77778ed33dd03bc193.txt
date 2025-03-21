@@ -1,0 +1,79 @@
+From rpm-list-admin@freshrpms.net  Fri Aug 16 11:25:10 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 82C3D44195
+	for <jm@localhost>; Fri, 16 Aug 2002 06:03:00 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 16 Aug 2002 11:03:00 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7G77fa06359 for
+    <jm-rpm@jmason.org>; Fri, 16 Aug 2002 08:07:41 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7G753J25495; Fri, 16 Aug 2002 09:05:03
+    +0200
+Received: from athlon.ckloiber.com (rdu25-28-106.nc.rr.com [24.25.28.106])
+    by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g7G74bJ25378 for
+    <rpm-list@freshrpms.net>; Fri, 16 Aug 2002 09:04:37 +0200
+Received: (from ckloiber@localhost) by athlon.ckloiber.com (8.11.6/8.11.6)
+    id g7G74bh16109; Fri, 16 Aug 2002 03:04:37 -0400
+X-Authentication-Warning: athlon.ckloiber.com: ckloiber set sender to
+    ckloiber@ckloiber.com using -f
+Subject: Re: making rpms from already-compiled source trees
+From: Chris Kloiber <ckloiber@ckloiber.com>
+To: rpm-zzzlist@freshrpms.net
+In-Reply-To: <1029423207.14536.9.camel@trial>
+References: <20020815050336.GB2408@marvin.home.priv>
+    <20020814221418.012b296f.hosting@j2solutions.net>
+    <20020815055904.GA2681@marvin.home.priv>
+    <20020815064512.2c7d5f3e.hosting@j2solutions.net>
+    <1029421888.1847.1033.camel@turner.gestalt.entity.net>
+    <1029422204.14538.2.camel@trial>
+    <20020815164938.59299be9.ralf@camperquake.de>
+    <1029423207.14536.9.camel@trial>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.3 (1.0.3-6)
+Message-Id: <1029481477.15494.10.camel@athlon.ckloiber.com>
+MIME-Version: 1.0
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: 16 Aug 2002 03:04:37 -0400
+Date: 16 Aug 2002 03:04:37 -0400
+
+On Thu, 2002-08-15 at 10:53, Erik Williamson wrote:
+> > 
+> > That's not the same problem. Making a RPM from given binaries is simple.
+> > 
+> 
+> Sweet - do you know where can I find out more info on this?  
+
+Officially no. But also on my ftp://people.redhat.com/ckloiber page is
+rpms for the rar-3.00 file archiving/unarchiving program. This is
+distributed as a binary tarball only, and I repackaged it based
+originally on an earlier version of rar I found on the net, just for
+practice. It also makes use of subpackages, and I was both proud of
+myself for getting it to work, and sickened that I repackaged
+binary-only crap. Enjoy.
+
+-- 
+Chris Kloiber
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

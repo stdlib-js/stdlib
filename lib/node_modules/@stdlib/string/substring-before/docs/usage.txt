@@ -1,0 +1,9 @@
+
+Usage: substring-before [options] --search=<string> [<string>]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --search string       Search string.
+         --split sep           Delimiter for stdin data. Default: '/\\r?\\n/'.

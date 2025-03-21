@@ -1,0 +1,77 @@
+From dev-null@rhn.redhat.com  Tue Oct  1 21:09:02 2002
+Return-Path: <dev-null@rhn.spamassassin.taint.org>
+Delivered-To: zzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id 928E216F03
+	for <zzz@localhost>; Tue,  1 Oct 2002 21:09:01 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzz@localhost (single-drop); Tue, 01 Oct 2002 21:09:01 +0100 (IST)
+Received: from rhn-mail.rdu-colo.spamassassin.taint.org (mail.rhn.spamassassin.taint.org
+    [66.187.232.120]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g91K47K09345 for <zzz-redhat@spamassassin.taint.org>; Tue, 1 Oct 2002 21:04:08 +0100
+Received: from scripts.rdu-colo.spamassassin.taint.org (nat-pix.rdu.spamassassin.taint.org
+    [10.255.18.200] (may be forged)) by rhn-mail.rdu-colo.redhat.com
+    (8.11.6/8.11.6) with ESMTP id g91K4l128538 for <zzz-redhat@spamassassin.taint.org>;
+    Tue, 1 Oct 2002 16:04:47 -0400
+Received: (from root@localhost) by scripts.rdu-colo.spamassassin.taint.org
+    (8.11.6/8.11.6) id g91K26b28196; Tue, 1 Oct 2002 16:02:06 -0400
+Date: Tue, 1 Oct 2002 16:02:06 -0400
+Message-Id: <200210012002.g91K26b28196@scripts.rdu-colo.spamassassin.taint.org>
+To: zzz-redhat@spamassassin.taint.org
+From: Red Hat Network <rhn-admin@rhn.spamassassin.taint.org>
+Subject: Red Hat Linux 8.0 now available on Red Hat Network
+Content-Type: text/plain; charset=US-ASCII
+Precedence: first-class
+Errors-To: dev-null@rhn.spamassassin.taint.org
+
+Red Hat Linux 8.0 is now available.  Get priority access to the Red Hat
+Linux 8.0 upgrade by subscribing to Red Hat Network Basic service for just
+$60 USD annually.  Get it now:
+ 
+https://rhn.redhat.com/network/sales/purchase.pxt
+ 
+What does $60 a year get you?
+ 
+  * Instant ISOs of any Red Hat Linux public release for the duration of
+    your subscription.
+
+  * Priority access to updates and ISOs -- no busy signals, no searching
+    mirror sites, no waiting.
+
+What's new in Red Hat Linux 8.0, anyway?
+
+  * A new interface -- a user-friendly desktop with graphical enhancements
+    and improved menu organization.
+
+  * The latest Gnu Compiler Collection, gcc-3.2, and a specially tuned
+    and tested high-performace kernel, 2.4.18.
+
+  * Cutting-edge web server technology powered by the latest release
+    of Apache, 2.0.
+ 
+  * Updated graphical configuration tools that make setting up a Linux
+    server a truly point-and-click experience.
+ 
+  * A single interface for package selection during and after installation
+ 
+  * Enhanced personal security, featuring a point-and-click firewall
+    tool to protect your system from Internet intruders.
+ 
+How do I upgrade once I subscribe to Red Hat Network Basic service?
+ 
+  * After purchase, you will be directed to the Instant ISO page.
+    From there, follow the instructions for downloading and installing
+    Red Hat Linux 8.0 from the ISO images.
+ 
+Read more at: http://www.spamassassin.taint.org/software/linux/
+ 
+DOWNLOAD 8.0 NOW.
+ 
+Subscribe to Red Hat Network Basic and start downloading Red Hat Linux 8.0
+instantly.
+ 
+https://rhn.redhat.com/network/sales/purchase.pxt
+ 
+
+

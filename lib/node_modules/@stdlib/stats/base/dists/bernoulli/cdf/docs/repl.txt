@@ -1,0 +1,66 @@
+
+{{alias}}( x, p )
+    Evaluates the cumulative distribution function (CDF) for a Bernoulli
+    distribution with success probability `p` at a value `x`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If `p < 0` or `p > 1`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    p: number
+        Success probability.
+
+    Returns
+    -------
+    out: number
+        Evaluated CDF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.5, 0.5 )
+    0.5
+    > y = {{alias}}( 0.8, 0.1 )
+    0.9
+    > y = {{alias}}( -1.0, 0.4 )
+    0.0
+    > y = {{alias}}( 1.5, 0.4 )
+    1.0
+    > y = {{alias}}( NaN, 0.5 )
+    NaN
+    > y = {{alias}}( 0.0, NaN )
+    NaN
+    // Invalid probability:
+    > y = {{alias}}( 2.0, 1.4 )
+    NaN
+
+
+{{alias}}.factory( p )
+    Returns a function for evaluating the cumulative distribution function (CDF)
+    of a Bernoulli distribution with success probability `p`.
+
+    Parameters
+    ----------
+    p: number
+        Success probability.
+
+    Returns
+    -------
+    cdf: Function
+        Cumulative distribution function (CDF).
+
+    Examples
+    --------
+    > var mycdf = {{alias}}.factory( 0.5 );
+    > var y = mycdf( 3.0 )
+    1.0
+    > y = mycdf( 0.7 )
+    0.5
+
+    See Also
+    --------
+

@@ -1,0 +1,77 @@
+From fork-admin@xent.com  Mon Sep  9 10:46:21 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id D246D16F1C
+	for <jm@localhost>; Mon,  9 Sep 2002 10:45:54 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 10:45:54 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g893HIC29684 for <jm@jmason.org>;
+    Mon, 9 Sep 2002 04:17:18 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id B6EB12942BC; Sun,  8 Sep 2002 20:11:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.superb.net (smtp1.superb.net [207.228.225.14]) by
+    xent.com (Postfix) with SMTP id B2B352942BB for <fork@xent.com>;
+    Sun,  8 Sep 2002 20:10:08 -0700 (PDT)
+Received: (qmail 23455 invoked from network); 9 Sep 2002 03:12:58 -0000
+Received: from unknown (HELO maya.dyndns.org) (207.61.5.143) by
+    smtp1.superb.net with SMTP; 9 Sep 2002 03:12:58 -0000
+Received: by maya.dyndns.org (Postfix, from userid 501) id BDC5C1CC98;
+    Sun,  8 Sep 2002 23:12:53 -0400 (EDT)
+To: James Rogers <jamesr@best.com>
+Cc: fork@spamassassin.taint.org
+Subject: Re: whoa
+References: <B9A13131.D7F8%jamesr@best.com>
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m28z2bua8a.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 08 Sep 2002 23:12:53 -0400
+
+>>>>> "J" == James Rogers <jamesr@best.com> writes:
+
+    J> ...  They aren't selling the software, which is pretty pricy as
+    J> it happens.  They are using it to optimize next generation
+    J> wireless canopies over metro areas and fiber networks on a
+    J> large scale.  There are an essentially infinite number of metro
+    J> wireless configurations, some of which generate far more dead
+    J> or marginal spots and others which are very expensive to
+    J> operate (due to backhaul transit considerations) or both.  This
+    J> software can be used as a tool to optimize the canopy coverage
+    J> and minimize the actual transit costs since the wireless is
+    J> tied into fiber at multiple points.
+
+So you only need to map a handful of metropolitan areas?
+
+    J> Or at least investors find this capability very sexy and
+    J> compelling
+
+Ah ... now /that/ I will believe :)
+
+Don't mind me; I'm just getting even more cynical in my old age.   
+
+-- 
+Gary Lawrence Murphy <garym@teledyn.com> TeleDynamics Communications Inc
+ Business Advantage through Community Software : http://www.teledyn.com
+"Computers are useless.  They can only give you answers."(Pablo Picasso)
+
+

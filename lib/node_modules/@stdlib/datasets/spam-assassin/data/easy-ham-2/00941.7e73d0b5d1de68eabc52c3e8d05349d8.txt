@@ -1,0 +1,84 @@
+From fork-admin@xent.com  Wed Jul 31 23:53:35 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 26A3E440CD
+	for <jm@localhost>; Wed, 31 Jul 2002 18:53:33 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 31 Jul 2002 23:53:33 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6VMqS212298 for <jm@jmason.org>;
+    Wed, 31 Jul 2002 23:52:33 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id AE1BB2940E2; Wed, 31 Jul 2002 15:50:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from jamesr.best.vwh.net (jamesr.best.vwh.net [192.220.76.165])
+    by xent.com (Postfix) with SMTP id 2088C2940D8 for <fork@xent.com>;
+    Wed, 31 Jul 2002 15:49:07 -0700 (PDT)
+Received: (qmail 56882 invoked by uid 19621); 31 Jul 2002 22:49:27 -0000
+Received: from unknown (HELO avalon) ([64.125.200.18]) (envelope-sender
+    <jamesr@best.com>) by 192.220.76.165 (qmail-ldap-1.03) with SMTP for
+    <fork@xent.com>; 31 Jul 2002 22:49:27 -0000
+Subject: Re: What's cool about doing nothing
+From: James Rogers <jamesr@best.com>
+To: fork@spamassassin.taint.org
+In-Reply-To: <3D4861B4.6090501@cse.ucsc.edu>
+References: <Pine.LNX.4.44.0207311705290.19500-100000@isolnetsux.techmonkeys.net>
+    <3D4861B4.6090501@cse.ucsc.edu>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Evolution/1.0.2-5mdk
+Message-Id: <1028156521.6887.25.camel@avalon>
+MIME-Version: 1.0
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 31 Jul 2002 16:02:01 -0700
+
+On Wed, 2002-07-31 at 15:16, Elias Sinderson wrote:
+> Heh. Never mind the perfectly good desert in the southwest, right? Or is 
+> that area too hot for desert warfare training? I'll never understand.
+
+
+The primary desert warfare facilities and schools ARE in the Southwest,
+most notably Fort Irwin deep in the Mojave/Anza Borrego (the
+headquarters and core training facilities for all things desert warfare
+related), and have been for a long time. There are two reasons that
+immediately come to mind as to why they do not use the Fort Irwin,
+Edwards AFB, and other expanses of desert that they have traditionally
+used for desert warfare training and exercises.  
+
+The first is logistical: Virtually all the mechanized infantry units are
+located east of the Rockies, and it must be very expensive to move
+entire heavy combat divisions a couple thousand miles every time they
+want to run training exercises.  This is particularly true since so much
+of our military is made up of reserve components these days, meaning
+that you can't move the soldiers to where the training facilities are.
+
+The second is environmental lawsuits and pending judicial action and
+injunctions. The desert training facilities in the Southwest deserts
+have been aggressively assaulted by environmental organizations who are
+making the case that heavy mechanized units zipping back and forth
+across the deep desert endanger the desert tortoise and a bunch of other
+theoretically endangered species that are concentrated in the southwest
+deserts. The ability of the military to use the desert facilities has
+been significantly impeded these days while all the lawsuits and whatnot
+with the various environmental groups are being sorted out.
+
+-James Rogers
+ jamesr@best.com
+
+
+http://xent.com/mailman/listinfo/fork
+
+

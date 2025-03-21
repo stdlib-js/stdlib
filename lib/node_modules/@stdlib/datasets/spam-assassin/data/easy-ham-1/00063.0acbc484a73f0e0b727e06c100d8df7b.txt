@@ -1,0 +1,184 @@
+From DNS-swap@lists.ironclad.net.au  Mon Sep  2 12:29:02 2002
+Return-Path: <DNS-swap@lists.ironclad.net.au>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id EE14044155
+	for <zzzz@localhost>; Mon,  2 Sep 2002 07:28:59 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 02 Sep 2002 12:29:00 +0100 (IST)
+Received: from lists.ironclad.net.au ([203.30.247.12]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with SMTP id g7UFZJZ31030 for
+    <zzzz@spamassassin.taint.org>; Fri, 30 Aug 2002 16:35:19 +0100
+Received: from linkcreations.com.mx by lists.ironclad.net.au with SMTP;
+    Sat, 31 Aug 2002 01:30:02 +1000
+Date: Fri, 30 Aug 2002 10:30:36 -0500
+Subject: Re: Tiny DNS Swap
+Content-Type: multipart/alternative; boundary=Apple-Mail-2-874629474
+MIME-Version: 1.0 (Apple Message framework v543)
+From: Javier Cota <javier@linkcreations.com.mx>
+To: "DNS-swap" <DNS-swap@lists.ironclad.net.au>
+In-Reply-To: <00c401c25039$7b055460$976fa8c0@cfl.rr.com>
+Message-Id: <6EA7567E-BC2D-11D6-9CA1-00306565A7B2@linkcreations.com.mx>
+X-Mailer: Apple Mail (2.543)
+Reply-To: "DNS-swap" <DNS-swap@lists.ironclad.net.au>
+Sender: <DNS-swap@lists.ironclad.net.au>
+Precedence: Bulk
+List-Software: LetterRip Pro 3.0.7 by Fog City Software, Inc.
+List-Subscribe: <mailto:DNS-swap-on@lists.ironclad.net.au>
+List-Digest: <mailto:DNS-swap-digest@lists.ironclad.net.au>
+List-Unsubscribe: <mailto:DNS-swap-off@lists.ironclad.net.au>
+
+(This list is sponsored by Ironclad Networks http://www.ironclad.net.au/)
+
+
+--Apple-Mail-2-874629474
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain;
+	charset=ISO-8859-1;
+	format=flowed
+
+Bob
+
+We are a commercial company who host around 150 web sites on each of it=20=
+
+servers, we can=B4t swap with you because we need someone in a similar=20=
+
+position.
+
+Thank you
+
+Javier
+
+El Viernes, 30 agosto, 2002, a las 10:25 AM, Bob Musser escribi=F3:
+
+> I'm using Simple DNS from JHSoft.=A0 We support only a few web sites =
+and=20
+> I'd like to swap secondary services with someone in a similar > =
+position.
+> =A0
+> We have a static IP, DSL line and a 24/7 set of web, SQL, mail and now=20=
+
+> a DNS server.=A0 As I said, we are hosting about 10 web sites, web and=20=
+
+> DNS traffic is almost nothing.=A0 Everything is on lightly loaded APC=20=
+
+> battery backups so we are very seldom down.
+> =A0
+> I'd like to swap with someone also using Simple DNS to take advantage=20=
+
+> of the trusted zone file transfer option.
+> =A0
+> =A0
+> =A0
+> Bob Musser
+> Database Services, Inc.
+> Makers of:
+> =A0=A0 Process Server's Toolbox
+> =A0=A0 Courier Service Toolbox
+> BobM@dbsinfo.com
+> www.dbsinfo.com
+> 106 Longhorn Road
+> Winter Park FL 32792
+> (407) 679-1539
+> =A0
+> =A0
+>
+---
+Atentamente
+Javier Cota
+Integraci=F3n tecnol=F3gica
+52723341
+javier@linkcreations.com.mx
+
+
+--Apple-Mail-2-874629474
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/enriched;
+	charset=ISO-8859-1
+
+Bob
+
+
+We are a commercial company who host around 150 web sites on each of
+it servers, we can=B4t swap with you because we need someone in a
+similar position.
+
+
+Thank you
+
+
+Javier=20
+
+
+El Viernes, 30 agosto, 2002, a las 10:25 AM, Bob Musser escribi=F3:
+
+
+<excerpt><smaller>I'm using Simple DNS from JHSoft.=A0 We support only a
+few web sites and I'd like to swap secondary services with someone in
+a similar position.</smaller>
+
+=A0
+
+<smaller>We have a static IP, DSL line and a 24/7 set of web, SQL,
+mail and now a DNS server.=A0 As I said, we are hosting about 10 web
+sites, web and DNS traffic is almost nothing.=A0 Everything is on
+lightly loaded APC battery backups so we are very seldom down.</smaller>
+
+=A0
+
+<smaller>I'd like to swap with someone also using Simple DNS to take
+advantage of the trusted zone file transfer option.</smaller>
+
+=A0
+
+=A0
+
+=A0
+
+<smaller>Bob Musser
+
+Database Services, Inc.
+
+Makers of:
+
+=A0=A0 Process Server's Toolbox
+
+=A0=A0 Courier Service Toolbox
+
+<underline><color><param>1999,1999,FFFF</param>BobM@dbsinfo.com
+
+www.dbsinfo.com
+
+</color></underline>106 Longhorn Road
+
+Winter Park FL 32792
+
+(407) 679-1539</smaller>
+
+=A0
+
+=A0
+
+
+</excerpt>---
+
+Atentamente
+
+Javier Cota
+
+Integraci=F3n tecnol=F3gica
+
+52723341
+
+javier@linkcreations.com.mx
+
+
+
+--Apple-Mail-2-874629474--
+
+
+--
+To Unsubscribe: <dns-swap-off@lists.ironclad.net.au>
+Sponsor & Host: Ironclad Networks <http://www.ironclad.net.au/>
+

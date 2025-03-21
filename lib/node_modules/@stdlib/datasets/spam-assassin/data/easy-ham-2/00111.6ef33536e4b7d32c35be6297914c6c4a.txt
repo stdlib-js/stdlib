@@ -1,0 +1,79 @@
+From ilug-admin@linux.ie  Mon Jul 22 19:49:55 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C65E3440C9
+	for <jm@localhost>; Mon, 22 Jul 2002 14:49:53 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 19:49:53 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MHQX403517 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 18:26:33 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id KAA22935 for <jm-ilug@jmason.org>;
+    Sat, 20 Jul 2002 10:50:41 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA28089; Sat, 20 Jul 2002 10:48:13 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from holly.csn.ul.ie (holly.csn.ul.ie [136.201.105.4]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id KAA28062 for <ilug@linux.ie>;
+    Sat, 20 Jul 2002 10:48:07 +0100
+Received: from skynet.csn.ul.ie (skynet [136.201.105.2]) by
+    holly.csn.ul.ie (Postfix) with ESMTP id 3AB4B2B303 for <ilug@linux.ie>;
+    Sat, 20 Jul 2002 10:47:37 +0100 (IST)
+Received: by skynet.csn.ul.ie (Postfix, from userid 2196) id 183B7E958;
+    Sat, 20 Jul 2002 10:47:37 +0100 (IST)
+Date: Sat, 20 Jul 2002 10:47:36 +0100
+From: Stephen Shirley <diamond@skynet.ie>
+To: Irish Linux Users Group <ilug@linux.ie>
+Message-Id: <20020720094736.GA16224@skynet.ie>
+Mail-Followup-To: Irish Linux Users Group <ilug@linux.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.3.24i
+Subject: [ILUG] vanquishing the daemons of shell scripting
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Mornin' all,
+	Last night, i was involved in an epic struggle to write a shell
+script to do a certain task. The battle raged for hours, but, i'm glad
+to inform you, i emerged victorious. The problem was as follows:
+	It's very easy to get one program to act on the output of a second
+program: cmd1 | cmd2. But, what if you want cmd1 to act on the output of
+cmd2 as well? Hmm. Eventually, I came up with this solution:
+
+	mkfifo io
+	cmd1 <io | cmd2 > io
+	
+and bingo, all was well with the world. Now, I have (and had) a sneaking
+suspcion that it might be possible to do this without using a fifo, and
+can be done using something like:
+
+	exec 3>&1
+	cmd1 <&3 | cmd2 >&3
+	exec 3>&-
+
+but that doesn't work in that form, and i couldn't work out an
+incantation that would. Anyone got any suggestions? Anyway, victory is
+mine, and i is happy person once again. In case you were wondering, the
+aim of all of this was to write a shell script that could check for new
+mail on an imap server.
+
+Steve
+-- 
+"Oh look, it's the Pigeon of Love."
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

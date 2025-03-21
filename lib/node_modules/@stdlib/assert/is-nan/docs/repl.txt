@@ -1,0 +1,73 @@
+
+{{alias}}( value )
+    Tests if a value is NaN.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is NaN.
+
+    Examples
+    --------
+    > var bool = {{alias}}( NaN )
+    true
+    > bool = {{alias}}( new Number( NaN ) )
+    true
+    > bool = {{alias}}( 3.14 )
+    false
+    > bool = {{alias}}( null )
+    false
+
+
+{{alias}}.isPrimitive( value )
+    Tests if a value is a NaN number primitive.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is a NaN number primitive.
+
+    Examples
+    --------
+    > var bool = {{alias}}.isPrimitive( NaN )
+    true
+    > bool = {{alias}}.isPrimitive( 3.14 )
+    false
+    > bool = {{alias}}.isPrimitive( new Number( NaN ) )
+    false
+
+
+{{alias}}.isObject( value )
+    Tests if a value is a number object having a value of NaN.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is a number object having a value of
+        NaN.
+
+    Examples
+    --------
+    > var bool = {{alias}}.isObject( NaN )
+    false
+    > bool = {{alias}}.isObject( new Number( NaN ) )
+    true
+
+    See Also
+    --------
+

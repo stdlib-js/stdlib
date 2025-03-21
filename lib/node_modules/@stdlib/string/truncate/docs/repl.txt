@@ -1,0 +1,31 @@
+
+{{alias}}( str, len[, ending] )
+    Truncates a string to a specified length.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    len: integer
+        Output string length.
+
+    ending: string (optional)
+        Custom ending. Default: '...'.
+
+    Returns
+    -------
+    out: string
+        Truncated string.
+
+    Examples
+    --------
+    > var str = 'beep boop';
+    > var out = {{alias}}( str, 5 )
+    'be...'
+
+    > out = {{alias}}( str, 5, '|' )
+    'beep|'
+
+    See Also
+    --------

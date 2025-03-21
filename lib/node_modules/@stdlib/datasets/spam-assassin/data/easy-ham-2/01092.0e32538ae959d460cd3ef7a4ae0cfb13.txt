@@ -1,0 +1,78 @@
+From fork-admin@xent.com  Tue Aug 20 11:53:50 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B0AE243C69
+	for <jm@localhost>; Tue, 20 Aug 2002 06:52:15 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 11:52:15 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7K4RIZ24861 for <jm@jmason.org>;
+    Tue, 20 Aug 2002 05:27:19 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 38E14294142; Mon, 19 Aug 2002 21:25:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from rwcrmhc51.attbi.com (rwcrmhc51.attbi.com [204.127.198.38])
+    by xent.com (Postfix) with ESMTP id 7AFED29409D for <fork@xent.com>;
+    Mon, 19 Aug 2002 21:24:49 -0700 (PDT)
+Received: from Intellistation ([66.31.2.27]) by rwcrmhc51.attbi.com
+    (InterMail vM.4.01.03.27 201-229-121-127-20010626) with ESMTP id
+    <20020820042623.QJWK1746.rwcrmhc51.attbi.com@Intellistation> for
+    <fork@xent.com>; Tue, 20 Aug 2002 04:26:23 +0000
+Content-Type: text/plain; charset="iso-8859-1"
+From: Eirikur Hallgrimsson <eh@mad.scientist.com>
+Organization: Electric Brain
+Subject: Spam nostalgia, Annoyance Calls, good ideas with no analysis
+User-Agent: KMail/1.4.1
+To: fork@spamassassin.taint.org
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Message-Id: <200208200025.11856.eh@mad.scientist.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 20 Aug 2002 00:25:11 -0400
+
+Am I going to long for the good old days of Nigerian 419?
+
+After picking up the land-line phone mid-day (always a bad idea) only to 
+slam it down before the telemarketer even spoke, I have in mind an 
+invention.  If my brain can detect the crosstalk from a call-center before 
+the human, sub-human, or machine starts speaking, why not have a box that 
+just hangs up for me?  Maybe it could blow a police whistle (play a 
+sample) into the phone first.
+
+Currently, a strategy of leaving the machine on as a screener works pretty 
+well, but I still get Carey-on-RIAA style mad when the damn phone rings 
+and it's NOT anyone I want to talk to.
+
+.....
+
+I want to like Spider Robinson's works.  Really.  I mean having a "Bridge 
+of Birds" attraction in the "China that never was" portion of the theme 
+part in "The Free Lunch...."   But, I really fell for his anti-paparatzi 
+device (invented by a princess Diana fan).   Doggone.  I've now completely 
+reasoned my way around it.  It has a built-in defense against the first 
+obvious way of confounding it, but that leads directly to an exploit that 
+uses off the shelf hardware that a paparatzi ought to have in her kit.
+That's so often the problem with Robinson.  He doesn't think that you the 
+reader are nearly so smart as he.  Heh.   I admit that reading a lot of 
+slushpile manuscripts does not improve one's opinion of fellow-man, but
+I always resent him for not being thorough.
+
+Eirikur
+
+
+
+http://xent.com/mailman/listinfo/fork
+

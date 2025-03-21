@@ -1,0 +1,287 @@
+From fork-admin@xent.com  Mon Aug 12 11:11:44 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id CE6524417F
+	for <jm@localhost>; Mon, 12 Aug 2002 05:57:23 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:57:23 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7C5btb31187 for <jm@jmason.org>;
+    Mon, 12 Aug 2002 06:37:56 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id B85FD2941AB; Sun, 11 Aug 2002 22:36:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from sierra.birch.net (sierra.birch.net [216.212.0.61]) by
+    xent.com (Postfix) with ESMTP id 7BF182941AA for <fork@xent.com>;
+    Sun, 11 Aug 2002 22:35:06 -0700 (PDT)
+Received: (qmail 25580 invoked from network); 12 Aug 2002 05:35:58 -0000
+Received: from unknown (HELO there) ([216.212.1.169]) (envelope-sender
+    <signa@birch.net>) by mailserver.birch.net (qmail-ldap-1.03) with SMTP for
+    <fork@xent.com>; 12 Aug 2002 05:35:58 -0000
+Content-Type: text/plain; charset="iso-8859-1"
+From: Steve Nordquist <signa@birch.net>
+To: fork@spamassassin.taint.org
+Subject: Re: Re[3]: Forged whitelist spam
+X-Mailer: KMail [version 1.3.2]
+References: <Pine.LNX.4.33.0208112046550.3981-100000@hydrogen.leitl.org>
+    <275599992.20020811152042@magnesium.net>
+In-Reply-To: <275599992.20020811152042@magnesium.net>
+MIME-Version: 1.0
+Message-Id: <20020812053506.7BF182941AA@xent.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 11 Aug 2002 23:34:48 -0600
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g7C5btb31187
+
+&> EL> Yeah, I was thinking of the G4 keyboard when I wrote this. Otherwise ousy 
+&> EL> feel and key placement, though. (That's why I'm holding on to
+&> EL> My IBM Model M Space Saver. Once I get an PS2 to USB converter, I
+&> EL> expect it will outlive several generations of computer hardware).
+
+The Fingerworks dvorty ergo keyboards are pretty good for that; unfold, plug
+the USB port and go, but you don't get the angle unless you put the castiron
+(sort of) bracket (and optional gel palm-rests) in your pack.  Big airport fun there.
+The flexi-PCB connecting the halves is probably only good for 100,000 flexes too.
+(The keyboard is $200-400, hence minor concern.)
+
+Kind of useless for keysigning though; is it not law that when you have to sign,
+you will be packed and ready to leave/arrive elsewhere?  Thats why F-u-F-mi
+is such a handy accessible proxy signing method and Dragon Naturally
+Authorized canceled its IPO.
+	Seriously, the nifty Palm thing where you enter your password
+and (or by) a series of naturally cryptic buttonpressed and screentaps is a
+good method.  Keyed steganography (<---bad term! sorry) is it until I
+hear more about spoofed braille.
+
+
+
+[the below digresses to laptopianism]
+
+
+
+&> EL> Very good for sticking in USB fobs into, though. CRTs/LCD panels are
+ even &> EL> better for that, though.
+
+The DPMS connector is supposed to do -what- again?
+
+
+&> >> near close to keyboard/usb connection as one can get, without the real
+&> >> thing)
+
+&> EL> I think laptops are largely useless because of the battery and the
+&> EL> keyboard issue.
+
+Once you get something to cut the backlight power low when not needed for
+image proofing (or off, in case of FLCD) and cache CDs as virtual devices,
+is battery life still bad?
+
+&> Dunno.. Some of the new Sonys (I'm hunting again for a lappy, as the
+&> Toshiba I have is a large piece of cow manure)  which promise a 4 hour
+&> battery life off of ONE battery are pretty damn impressive.  As far as
+&> the keyboard issue, the Toshiba actually came out with a good
+&> keyboard, nearly equivalent to most standard keyboards (Not ergonomic,
+&> alas, but I have a USB happy ergo keyboard I can always plug in if I
+&> get restless).   I can't imagine surviving at Law school without a
+&> lappy, but thats just me.
+
+Once used to being surrounded by lawyers with webcams,
+I cant imagine being flummoxed dealing with courts.
+
+Lots of the tabletPCs have daylight readable FLCDs.  (From looking
+at http://www.infocater.com  I don't know where you'll get Microsoft 
+Tablet OS though.)   An item from their handy pres. below.
+
+
+So after looking at Transmetazone, tell me where (also) stateside I'm 
+supposed to be\ shopping for the new Made-for-Japan laptops?
+
+The Sony U series is all Crusoe, but then TigerDirect will be all grins
+to sell you a lappad that gets you to 10h on a P4m...maybe a P4, who's to
+say Tulatin P4s can't do that massive multithreading trick.
+(Besides which, a brown cowpie-colored Dell 8200 with a 
+GeForce4Go400-32 is ca. $1550, before you buy car adapters 
+and firewire drives.  Popular in OpenGL law school.)
+
+Revamping the Sony C1 every year strikes me as a cruel joke though,
+and I don't know any tricks for using 1400x2800 virtual screens on
+the lovely NEC LaVie MX and Versa Daylite (FLCDs, 1 yr old) or
+Toshiba Libretto L5/080 knkw (the KW has 802.11b built in, maybe
+not as good as the 22MBps version or .a)
+
+&> then again, I don't know what you do with your laptops, Gene :)
+
+
+----8< ---ancillary.bar: disclaimer: Before the dollar fell below the euro.
+ Return-Path: <gpalmer@infocater.com>  
+Dear Steve,
+
+Thank you for your inquiry regarding the Tablet PC's. 
+
+InfoCater is a Tablet Computer Value Added Reseller and Systems Integrator that specializes in wireless tablet computers. 
+
+We provide:
+
+> hardware selection expertise
+> software application evaluation, specification, implementation and delivery
+> extensive hands-on experience with all forms of touch screen and Tablet Computers.
+
+We work with you the way you prefer. 
+
+We will listen to your needs, recommend the appropriate tablet, accessories and software, and be available to assist you as desired to make your project a success! Our services include product selection, consulting, training, implementation and custom development. 
+
+We carry the complete line of Tablet PC's tablets and accessories.
+
+We have software solutions that you may find interesting, and even have Bluetooth products to eliminate cables to printers, mobile phones, bar code scanners, and other devices.
+
+Please let us know your exact specifications and the environment you will be using your tablets.
+
+Please visit http://www.infocater.com and select "specs" at the top of the page for more information and PDF files on our products and services.
+
+Some other details:
+
+Communicating:
+
+We strive to make it easy for you to communicate with is, using whatever method you prefer.
+
+Phone: 
+
+You can call me at 617.969.6853 anytime it's convenient for you and we can discuss further. If you get a voice mail message, we apologize and if you leave your phone number and a convenient time to return the call we will get back to you as soon as possible. 
+
+Email:
+
+Email also works well. Please Email gpalmer@infocater.com 
+
+Shipping:
+
+The Tablet PC's and accessories are available for same day shipping. 
+
+If you require a custom configuration, it will take a few weeks to get built to your specification. 
+
+The shipping charges are based on the speed of service that you require. We insure all shipments
+
+Payment: 
+
+We accept payment by credit card, purchase order or wire transfer, as you prefer. 
+
+We look forward to working with you and serving your tablet computer needs.
+
+
+Regards,
+
+
+Geoff
+
+
+Geoffrey Palmer
+President
+InfoCater, Inc. 
+
+14 Buswell Park
+Newton, MA 02458
+
+Email: gpalmer@infocater.com 
+WWW: http://www.infocater.com
+
+Phone: 617-969-6853
+Fax: 508-448-8375 
+IM: Yahoo: infocater AOL: infocaterinc 
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Product Information:
+
+ViewSonic ViewPad 1000 Tablet PC - SAME DAY SHIPPING AVAILABLE
+
+The ViewPad 1000 is a full function PC featuring a 10.0 GB hard drive, an 800 MHz Intel Celeron processor and Microsoft Windows 2000 Professional operating system, all in an easy-to-use tablet design. Built for connectivity, the ViewPad 1000 come equipped with built-in WAN, LAN, and WiFi (802.11b) wireless LAN connectivity, giving users network access in nearly any environment. This innovative device gives users mobile access to information, captures, sends and receives live images (it's got a built-in digital camera), and shares information of all kinds for a rich multimedia viewing experience. 
+
+The 10.4 inch high-resolution touch screen makes for easy navigation with the touch of a finger or stylus. Accessories such as a docking station are also available. 
+
+The price for the Microsoft Windows 2000 Professional based ViewSonic ViewPad 1000 is $1975. The optional docking station costs $299.
+
+Microsoft Internet Explorer 5.0, Microsoft Outlook Express, Microsoft NetMeeting, Microsoft Windows Media player, Adobe Acrobat Reader, handwriting recognition and a virtual keyboard are included.
+
+The unit has an 10.4 inch 800 x 600 High Luminance SVGA resistive touch screen display that can be used either in portrait or landscape mode, 128 MB RAM (expandable to 512MB), a 10 GB hard disk drive, two USB ports, an open type II PCMCIA slot, an infrared wireless keyboard port (keyboard included) and an infrared data port. In addition, a VGA port is available for an external monitor at up to 1024x768. The ViewPad 1000 is powered by a 800 MHz Intel Mobile Celeron.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Fujitsu Stylistic 3500 and LT-P600: 
+
+The Fujitsu Stylistic 3500 and LT-P600 products are available in several configurations depending on disk, screen, memory capacity and wireless options. The prices range from $3559 to $3859 and offer the choice of Windows 2000 or Windows 98. The screen options include models for indoor, outdoor or both indoor and outdoor use. Screen resolution options are 800x600 or 1024x768. These products are built to your specific configuration and usually take about two weeks to deliver. 
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+ViewSonic ViewPad 100 Super PDA - SAME DAY SHIPPING AVAILABLE
+
+The ViewPad 100 Super PDA enables you to access important applications and data from virtually anywhere. Not only is information easy to get (with options added to the included PC Card and CompactFlash slots), but it's also easy to keep organized by synchronizing the ViewPad 100 to a PC. You can also access server-based applications remotely with the provided Citrix ICA or Microsoft's RDP software. 
+
+The price for the Microsoft Windows CE 3.0 based ViewSonic ViewPad 100 is $1225. The cradle is an additional $129. The unit features a PCMCIA slot and a CF slot which enable you to insert either a 802.11b WLAN card or a cellular based WAN card (not included).
+
+Internet Explorer 4.0 with Java Virtual Machine and Macromedia Flash support are included, as are viewers for many types of files, PTab Spreadsheet software (Microsoft Excel compatible), Citrix ICA 6.0 and Microsoft RDP 5.0, Microsoft Inbox, Microsoft Pocket Word, PowerPoint, Pocket On-Schedule and Primer PDF Viewer. 
+
+The unit features Microsoft ActiveSync, handwriting recognition software, and a virtual keyboard.
+
+The unit has an 10 inch 800 x 600 High Luminance SVGA resistive touch screen display that can be used either in portrait or landscape mode, 128 MB RAM and 32MB Flash, one USB port, an open type II PCMCIA slot and an open type II CompactFlash slot . In addition, a VGA port is available for an external monitor at up to 1024x768. The ViewPad 100 is powered by a 206 MHz Intel StrongARM SA-1110.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Honeywell WebPAD II - SAME DAY SHIPPING AVAILABLE
+
+The Honeywell WebPad II is an information appliance with wireless high speed connection to the Internet that enables you to surf the web, send and receive email, and enter information via a pop-up touch screen keyboard. 
+
+The price for the Microsoft Windows CE 3.0 based Honeywell WebPad II with integrated 802.11b wireless card, cradle and power supply is $1625. Microsoft Internet Explorer 4.0 with Java Virtual Machine and Macromedia Flash support are included, as are viewers for many types of files, Citrix ICA and Microsoft RDP, Microsoft Windows Media player, Microsoft Inbox and Microsoft Pocket Word. 
+
+The unit has an 10 inch 800 x 600 TFT active matrix touch screen SVGA display with pop-up keyboard, 64 MB RAM and 32MB Flash, one USB port and an open type II CompactFlash slot. The unit is powered by a National Semiconductor 300 MHz Geode GS1 processor. 
+
+If you do not have an 802.11b access point, I recommend the Dlink DI-713P which costs $250.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+FIC AquaPAD - SAME DAY SHIPPING AVAILABLE
+
+AquaPAD combines the functionality and power of a cumbersome notebook with the convenience and simplicity of a PDA. This compact handheld Internet appliance offers high-speed wireless Internet access and can communicate with Bluetooth™-enabled devices. With its two USB inputs, a PCMCIA Type II slot, and a Compact Flash slot, there is truly no limit to AquaPAD's functionality. Additionally, AquaPAD comes loaded with Windows® CE and a full suite of utilities, including MS Word. The AquaPAD features a complete, highly rich, multimedia capability. With AquaPAD, the ability to surf the web, read a book, listen to a MP3, or watch a MPEG movie is right in the palm of your hand-literally!
+
+Whether you need to access a local network or the Internet, the AquaPAD is the only solution to provide the power and capability to harness all the possibilities of wireless.
+
+When it comes to performance, the AquaPAD takes no prisoners. The AquaPAD offers an incredibly fast 500MHz Transmeta Crusoe 5400 processor coupled with 128MB of SDRAM memory-so you'll have all the power you need. Plus, with the Crusoe's special energy saving design, you'll enjoy up to 3+ hours of battery life. The AquaPAD comes loaded with MS Windows® CE -and all of the functionality that comes with them. Plus, with our suite of utilities, the AquaPAD is immediately ready to get down to business.
+
+Windows CE 3.0, Windows 2000*, Windows Me* and Linux versions available!
+
+The FIC AquaPAD is $1,399 with a Cisco 802.11b wireless card with your choice of CE or Linux.
+
+* Optional IBM 1GB Microdrive required for Windows 2000 ($499) or Windows Me($399).
+
+Spare batteries are $139, and a cradle that can charge both the AquaPAD and a second battery is $79.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Siemens SIMpad SL4 - SAME DAY SHIPPING AVAILABLE
+
+The Siemens SIMpad SL4 includes a brilliant color TFT touchscreen which shows a complete HTML page, recognizes handwriting, is PC Card enabled, uses Windows CE, and links effortlessly and wirelessly in just ten seconds to the web or to your LAN. This ligheweight tablet features an 8.4" TFT touchscreen, SVGA (800 x 600 pixel), 16 bit colors (65536 colors), photo quality display. The proccessor is an Intel StrongARM 1110, 206 MHz 32-bit RISC. There is a PC-Card-Slot, RS-232, IrDA, SmartCard, headset connection and a Li-Ion battery. There is 64MB RAM and 32 MB Flash. The operating system is Microsoft Windows CE 3.0 for Handheld PC 2000. The software included in the standard package is MS Internet Explorer 4.0 for HPC, MS Pocket Outlook (Inbox, Tasks, Calendar, Contacts), MS Pocket Office (Word, Excel, Powerpoint, Access), MS Pocket Paint, Jot handwriting recognition, Java Virtual Machine, Terminal Server Client, Electronic Notebook, Calculator, Games, Macromedia Flash player, Virtual Keyboard. The standard package inclused the SIMpad SL4, AC adapter, power cable, serial cable, stylus pens, software CD-ROM, manuals for $1495, and a cradle with charger is $70.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Fujitsu PenCentra 200: 
+
+The Fujitsu PenCentra products are available in several configurations depending on the operating system, wireless and screen selections. The prices range from $1500-1600 and offer the choice of Windows CE or Windows CE H/PC 2000. The screen options include models for indoor or outdoor use. Screen resolution is 640x480. These products are built to your specific configuration and usually take about two weeks to deliver. 
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Advantech MobiPanel 100
+
+InfoCater proudly introduces its first ruggedized web tablet, the MobiPanel 100, a portable wireless Windows CE-based appliance combining data capture and communication technology. The MobiPanel 100 is designed to provide mobile professionals a real time wireless solution to access information from remote databases via the Internet or an Intranet. The MobiPanel 100 is ideal for applications in retail, healthcare, warehousing, home networking, manufacturing process monitoring, hospitality, logistic support and on-site service. This is essentially a ruggedized version of the ViewSonic ViewPad 100 with an integrated 802.11 wireless card and antenna.
+
+The I/O ports, LCD panel and internal circuitries of the MPC-100 have been designed to resist spill and water damage. The product is dust-resistant with protected LCD, sealed ports and card slots for protection against unexpected accidents and damages. These features have been approved by the IP53 standard.
+
+
+The I/O ports, LCD panel and internal circuitries of the MPC-100 have been designed to resist spill and water damage. The product is dust-resistant with protected LCD, sealed ports and card slots for protection against unexpected accidents and damages. These features have been approved by the IP53 standard.
+
+ 
+http://xent.com/mailman/listinfo/fork
+
+

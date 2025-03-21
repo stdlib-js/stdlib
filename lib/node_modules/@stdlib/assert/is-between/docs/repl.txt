@@ -1,0 +1,46 @@
+
+{{alias}}( value, a, b[, left, right] )
+    Tests if a value is between two values.
+
+    Parameters
+    ----------
+    value: any
+        Input value.
+
+    a: any
+        Left comparison value.
+
+    b: any
+        Right comparison value.
+
+    left: string (optional)
+        Indicates whether the left comparison value is inclusive. Must be either
+        'closed' or 'open'. Default: 'closed' (i.e., inclusive).
+
+    right: string (optional)
+        Indicates whether the right comparison value is inclusive. Must be
+        either 'closed' or 'open'. Default: 'closed' (i.e., inclusive).
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a value is between two values.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 3.14, 3.0, 4.0 )
+    true
+    > bool = {{alias}}( 3.0, 3.0, 4.0 )
+    true
+    > bool = {{alias}}( 4.0, 3.0, 4.0 )
+    true
+    > bool = {{alias}}( 3.0, 3.14, 4.0 )
+    false
+    > bool = {{alias}}( 3.14, 3.14, 4.0, 'open', 'closed' )
+    false
+    > bool = {{alias}}( 3.14, 3.0, 3.14, 'closed', 'open' )
+    false
+
+    See Also
+    --------
+

@@ -1,0 +1,73 @@
+From ilug-admin@linux.ie  Fri Jul 19 14:32:52 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9310B43FAD
+	for <jm@localhost>; Fri, 19 Jul 2002 09:32:52 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 14:32:52 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JDUlJ32430 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 14:30:47 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id OAA07130; Fri, 19 Jul 2002 14:30:09 +0100
+Received: from roeex01.renre-europe.com ([62.17.152.2]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id OAA07103 for <ilug@linux.ie>; Fri,
+    19 Jul 2002 14:30:02 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [62.17.152.2] claimed to
+    be roeex01.renre-europe.com
+Received: from localhost.localdomain (ThisAddressDoesNotExist
+    [172.17.1.250]) by roeex01.renre-europe.com with SMTP (Microsoft Exchange
+    Internet Mail Service Version 5.5.2653.13) id PGQ2R2QQ; Fri,
+    19 Jul 2002 14:54:06 +0100
+Subject: Re: [ILUG] How to copy some files
+From: Mark Kilmartin <mrk@renre-europe.com>
+To: ilug@linux.ie
+In-Reply-To: <20020719132842.GA2506@bagend.makalumedia.com>
+References: <20020719132842.GA2506@bagend.makalumedia.com>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.7
+Date: 19 Jul 2002 14:29:34 +0100
+Message-Id: <1027085376.4944.9.camel@klein>
+MIME-Version: 1.0
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+How about rsync.
+
+It doesn't only work for remote files.
+
+MArk
+
+
+On Fri, 2002-07-19 at 14:28, Niall O Broin wrote:
+> I have about 60G of data which I need to copy from one disk to another.
+> However, I'm not sure how I should best copy it. The problem is the bulk of
+> the data is images and most of these image have two directory entries i.e.
+> there is a hard link to each file. If I copy them using cp -a or my usual
+> favourite of find .|cpio -pmd other_dir it's going to copy each file twice,
+> which is not what I want. dump / restore would take care of this if the
+> source filesystem wasn't reiserfs :-( Any suggestions ?
+> 
+> 
+> Niall
+> 
+> -- 
+> Irish Linux Users' Group: ilug@linux.ie
+> http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+> List maintainer: listmaster@linux.ie
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

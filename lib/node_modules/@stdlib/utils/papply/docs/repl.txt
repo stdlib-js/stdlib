@@ -1,0 +1,32 @@
+
+{{alias}}( fcn, ...args )
+    Returns a function of smaller arity by partially applying arguments.
+
+    The implementation does not set the `length` property of the returned
+    function. Accordingly, the returned function `length` is always zero.
+
+    The evaluation context is always `null`.
+
+    Parameters
+    ----------
+    fcn: Function
+        Function to partially apply.
+
+    args: ...any
+        Arguments to partially apply.
+
+    Returns
+    -------
+    out: Function
+        Partially applied function.
+
+    Examples
+    --------
+    > function add( x, y ) { return x + y; };
+    > var add2 = {{alias}}( add, 2 );
+    > var sum = add2( 3 )
+    5
+
+    See Also
+    --------
+

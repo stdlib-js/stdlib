@@ -1,0 +1,276 @@
+From fork-admin@xent.com  Wed Aug 21 02:44:56 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id DC9D943C32
+	for <jm@localhost>; Tue, 20 Aug 2002 21:44:54 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 21 Aug 2002 02:44:54 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7L1gPZ04534 for <jm@jmason.org>;
+    Wed, 21 Aug 2002 02:42:26 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 85C2D2940A7; Tue, 20 Aug 2002 18:40:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mail.evergo.net (unknown [206.191.151.2]) by xent.com
+    (Postfix) with SMTP id 587E3294099 for <fork@xent.com>; Tue,
+    20 Aug 2002 18:39:05 -0700 (PDT)
+Received: (qmail 21260 invoked from network); 21 Aug 2002 01:40:42 -0000
+Received: from dsl.206.191.151.102.evergo.net (HELO JMHALL)
+    (206.191.151.102) by mail.evergo.net with SMTP; 21 Aug 2002 01:40:42 -0000
+Reply-To: <johnhall@evergo.net>
+From: "John Hall" <johnhall@evergo.net>
+To: <fork@spamassassin.taint.org>
+Subject: RE: The Curse of India's Socialism
+Message-Id: <000c01c248b3$bbf95260$0200a8c0@JMHALL>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.2627
+In-Reply-To: <20020820194356.27509.qmail@web14007.mail.yahoo.com>
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Importance: Normal
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 20 Aug 2002 18:40:30 -0700
+
+
+The question is why are they still poor?
+
+Especially given the success of Indian immigrants in other societies?
+
+South Korea was a lot poorer after the Korean war than Ghana when it
+gained its independence at about the same time.  That was after India
+gained independence, and Korea couldn't have been in better shape at
+that point than India (my impression).
+
+> -----Original Message-----
+> From: fork-admin@xent.com [mailto:fork-admin@xent.com] On Behalf Of
+> sateesh narahari
+> Sent: Tuesday, August 20, 2002 12:44 PM
+> To: fork@spamassassin.taint.org
+> Subject: Re: The Curse of India's Socialism
+> 
+> All good arguments, except till you realize that
+> majority of indians were poor even before
+> independence.
+> 
+> Sateesh
+> 
+> 
+> --- "R. A. Hettinga" <rah@shipwright.com> wrote:
+> >
+> http://online.wsj.com/article_print/0,,SB1029790639190441115,00.html
+> >
+> >
+> > The Wall Street Journal
+> >
+> > August 20, 2002
+> > COMMENTARY
+> >
+> > The Curse of India's Socialism
+> >
+> > By CHRISTOPHER LINGLE
+> >
+> > In a classic case of deflecting blame for their own
+> > shortcomings,
+> > politicians in India have identified the size of the
+> > population as the
+> > country's biggest problem. This position was stated
+> > in a unanimous
+> > parliamentary resolution passed on the 50th
+> > anniversary of independence.
+> > Half a decade later, it is a belief that still
+> > resonates with many. Yet it
+> > is hard to imagine a more cynical view. If left free
+> > from the extensive
+> > interference of various levels of government, the
+> > energy and creativity of
+> > the Indian people could soon allow them to be among
+> > the richest on earth.
+> >
+> > Indians are not poor because there are too many of
+> > them; they are poor
+> > because there are too many regulations and too much
+> > government intervention
+> > -- even today, a decade after reforms were begun.
+> > India's greatest problems
+> > arise from a political culture guided by socialist
+> > instincts on the one
+> > hand and an imbedded legal obligation on the other
+> > hand.
+> >
+> > While India's political culture reflects the beliefs
+> > of its founding
+> > fathers, there is the additional matter of the
+> > modified preamble to its
+> > constitution that specifies: "India is a sovereign,
+> > secular, socialist
+> > republic." It was Indira Gandhi who had the words
+> > "socialist" and "secular"
+> > added in the late 1970s. At the same time, she also
+> > amended the relevant
+> > section in the Representation of Peoples Act to
+> > require that all recognized
+> > and registered parties swear by this preamble. Since
+> > all parties must stand
+> > for socialism, no party espouses classical
+> > liberalism (yet there are
+> > numerous communist parties).
+> >
+> > While one can appreciate the difficulty of
+> > abandoning ideas with such
+> > honored lineage, the fact that socialism has been
+> > widely discredited and
+> > abandoned in most places should prompt Indians to
+> > reconsider this
+> > commitment. Despite evidence of its failure as an
+> > economic system, many of
+> > the socialists who carry on do so by trying to
+> > proclaim that their dogma
+> > reinforces certain civic virtues. A presumed merit
+> > of socialism is that it
+> > aims to nurture a greater sense of collective
+> > identity by suppressing the
+> > narrow self-interest of individuals. However, this
+> > aspect of socialism lies
+> > at the heart of its failure both as a political tool
+> > as well as the basis
+> > for economic policy.
+> >
+> > Let's start with the economic failures of socialism.
+> > Most of the grand
+> > experiments have been ignominiously abandoned or
+> > recast in tortured terms
+> > such as the "Third Way" that defer to the importance
+> > of markets and
+> > individual incentives. Unfortunately, it took a
+> > great deal of human
+> > suffering before socialists abandoned their goal of
+> > trying to create an
+> > economic system on the basis of collective goals.
+> >
+> > Socialist ideologues are impervious to evidence that
+> > their system inspires
+> > even more human misery in the civic realm. This is
+> > because socialism
+> > provides the political mechanism for and legitimacy
+> > by which people
+> > identify as members of groups. While it may suit the
+> > socialist agenda to
+> > create them-and-us scenarios relating to workers and
+> > capitalists or
+> > peasants and urban dwellers, this logic is readily
+> > converted to other types
+> > of divisions.
+> >
+> > In the case of India, competition for power has
+> > increasingly become
+> > identified with religiosity or ethnicity, as is
+> > evident by the rise of the
+> > Bharatiya Janata Party, supported by radical
+> > Hindutva supporters. As
+> > elsewhere, political parties based on religion are
+> > by their very nature
+> > exclusionary. These narrow concepts of identity work
+> > against nation
+> > building since such a politics forces arrangements
+> > that cannot accommodate
+> > notions of universal values.
+> >
+> > Socialism also sets the stage for populist promises
+> > of taking from one
+> > group to support another. This variety of political
+> > posturing by the
+> > Congress Party was used to build a coalition of
+> > disaffected minorities. In
+> > turn, the BJP built its power base on a promise to
+> > restore power to Hindus.
+> > And so it is that India's heritage of socialist
+> > ideology provided the
+> > beginnings of a political culture that evolved into
+> > sectarian populism that
+> > has wrought cycles of communal violence. Populism
+> > with its solicitations of
+> > political patronage, whether based upon nationalism
+> > or some other ploy, is
+> > also open to the sort of rampant corruption so
+> > evident in India.
+> >
+> > At issue in India is nothing less than the role of
+> > the state. Should it be
+> > used as a mechanism to protect the freedom and
+> > rights of individuals? Or
+> > should the state be a vehicle for groups to gain
+> > power? It should be clear
+> > the latter approach would lead to the destruction of
+> > India's democracy
+> > while the former will allow it to survive.
+> >
+> > It is undeniable that India's public policy guided
+> > by socialism has
+> > promoted divisions that contributed to social
+> > instability and economic
+> > destruction. This dangerous game has only served the
+> > narrow interests of
+> > those who seek to capture or preserve power. That
+> > India is a "socialist"
+> > state, specified in a preamble to the constitution,
+> > makes this binding
+> > commitment evident in the nature of interventionist
+> > policies that have
+> > wrought slower economic growth causing great harm to
+> > the poor and unskilled
+> > who have lost access to economic opportunities.
+> > Socialism also introduced
+> > forces that are destroying India's hard-earned
+> > democracy. A paradigm shift
+> > in the nature of Indian politics is needed so the
+> > state ceases serving as a
+> > mechanism for groups to gain power and instead
+> > becomes an instrument to
+> > secure rights and freedoms for individuals.
+> >
+> > Mr. Lingle is professor of economics at Universidad
+> > Francisco Marroquin in
+> > Guatemala, and global strategist for
+> > eConoLytics.com.
+> >
+> >
+> >
+> > --
+> > -----------------
+> > R. A. Hettinga <mailto: rah@ibuc.com>
+> > The Internet Bearer Underwriting Corporation
+> > <http://www.ibuc.com/>
+> > 44 Farquhar Street, Boston, MA 02131 USA
+> > "... however it may deserve respect for its
+> > usefulness and antiquity,
+> > [predicting the end of the world] has not been found
+> > agreeable to
+> > experience." -- Edward Gibbon, 'Decline and Fall of
+> > the Roman Empire'
+> > http://xent.com/mailman/listinfo/fork
+> 
+> 
+> __________________________________________________
+> Do You Yahoo!?
+> HotJobs - Search Thousands of New Jobs
+> http://www.hotjobs.com
+> http://xent.com/mailman/listinfo/fork
+
+http://xent.com/mailman/listinfo/fork
+

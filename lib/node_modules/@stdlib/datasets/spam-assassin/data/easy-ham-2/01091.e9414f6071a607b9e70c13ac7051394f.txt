@@ -1,0 +1,74 @@
+From fork-admin@xent.com  Tue Aug 20 11:53:51 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BFE4843C6A
+	for <jm@localhost>; Tue, 20 Aug 2002 06:52:16 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 11:52:16 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7K5dGZ26407 for <jm@jmason.org>;
+    Tue, 20 Aug 2002 06:39:17 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 86D80294145; Mon, 19 Aug 2002 22:37:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hotmail.com (dav51.law15.hotmail.com [64.4.22.40]) by
+    xent.com (Postfix) with ESMTP id D2E0929409D for <fork@xent.com>;
+    Mon, 19 Aug 2002 22:37:00 -0700 (PDT)
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Mon, 19 Aug 2002 22:38:35 -0700
+X-Originating-Ip: [207.202.171.254]
+From: "Mr. FoRK" <fork_list@hotmail.com>
+To: <fork@spamassassin.taint.org>
+References: <002401c24652$725b64d0$0200a8c0@JMHALL>
+    <006c01c24656$2a052ff0$640a000a@golden>
+Subject: Re: Mailing addresses against spam? Re: Al'Qaeda's fantasy ideology:  Policy Review no. 114
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.50.4133.2400
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4133.2400
+Message-Id: <DAV51uno2J1Y4VkHC8D00001535@hotmail.com>
+X-Originalarrivaltime: 20 Aug 2002 05:38:35.0839 (UTC) FILETIME=[D3FFC4F0:01C2480B]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 19 Aug 2002 22:41:50 -0700
+
+
+
+
+
+> John Hall signs his message:
+> > John Hall
+> > 13464 95th Ave NE
+> > Kirkland WA 98034
+>
+> Is this some new "I'm not spam" signal, to include a
+> valid mailing address?
+>
+> - Gordon
+
+Dear Gawd - /I/ live in Kirkland. I hope I don't wake up one day and realize
+/I/ am John Hall...
+
+I wonder if I can get GPS lat/long from street address... start a new
+GeoTrashing sport or something...
+
+Hmm... that address is only a quarter-mile from my old house... and about a
+block from a friend of mine. Weird...
+
+http://xent.com/mailman/listinfo/fork
+

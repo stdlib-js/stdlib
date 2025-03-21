@@ -1,0 +1,36 @@
+
+{{alias}}( key, value )
+    Revives a JSON-serialized error object.
+
+    The following built-in error types are supported:
+
+    - Error
+    - URIError
+    - ReferenceError
+    - SyntaxError
+    - RangeError
+    - EvalError
+    - TypeError
+
+    Parameters
+    ----------
+    key: string
+        Key.
+
+    value: any
+        Value.
+
+    Returns
+    -------
+    out: any
+        Value or error object.
+
+    Examples
+    --------
+    > var str = '{"type":"TypeError","message":"beep"}';
+    > var err = JSON.parse( str, {{alias}} )
+    <TypeError>
+
+    See Also
+    --------
+

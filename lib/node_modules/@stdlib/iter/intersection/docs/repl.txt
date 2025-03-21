@@ -1,0 +1,50 @@
+
+{{alias}}( iter0, ...iterator )
+    Returns an iterator which returns the intersection of two or more iterators.
+
+    Value "uniqueness" is determined according to strict equality.
+
+    A returned iterator internally buffers unique values and, thus, has O(N)
+    memory requirements, where `N` is the length of the first iterator.
+
+    Do *not* provide iterators having infinite length.
+
+    If an environment supports Symbol.iterator and all provided iterators are
+    iterable, the returned iterator is iterable.
+
+    Parameters
+    ----------
+    iter0: Object
+        Input iterator.
+
+    iterator: ...Object
+        Input iterators.
+
+    Returns
+    -------
+    iterator: Object
+        Iterator.
+
+    iterator.next(): Function
+        Returns an iterator protocol-compliant object containing the next
+        iterated value (if one exists) and a boolean flag indicating whether the
+        iterator is finished.
+
+    iterator.return( [value] ): Function
+        Finishes an iterator and returns a provided value.
+
+    Examples
+    --------
+    > var it1 = {{alias:@stdlib/array/to-iterator}}( [ 1, 2, 1, 2, 4 ] );
+    > var it2 = {{alias:@stdlib/array/to-iterator}}( [ 1, 2, 5, 2, 3 ] );
+    > var it = {{alias}}( it1, it2 );
+    > var v = it.next().value
+    1
+    > v = it.next().value
+    2
+    > var bool = it.next().done
+    true
+
+    See Also
+    --------
+

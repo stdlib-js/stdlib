@@ -1,0 +1,144 @@
+From exmh-workers-admin@redhat.com  Wed Aug 28 18:49:09 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B0CDC43F99
+	for <jm@localhost>; Wed, 28 Aug 2002 13:49:08 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 28 Aug 2002 18:49:08 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7SHhuZ03444 for
+    <jm-exmh@jmason.org>; Wed, 28 Aug 2002 18:43:56 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 67A4B3EC06; Wed, 28 Aug 2002
+    13:44:05 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id D3BD33EE6F
+    for <exmh-workers@listman.redhat.com>; Wed, 28 Aug 2002 13:33:23 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g7SHXKV16333 for exmh-workers@listman.redhat.com; Wed, 28 Aug 2002
+    13:33:20 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g7SHXKY16329 for
+    <exmh-workers@redhat.com>; Wed, 28 Aug 2002 13:33:20 -0400
+Received: from blackcomb.panasas.com (gw2.panasas.com [65.194.124.178]) by
+    mx1.redhat.com (8.11.6/8.11.6) with SMTP id g7SHIEl27113 for
+    <exmh-workers@redhat.com>; Wed, 28 Aug 2002 13:18:14 -0400
+Received: from medlicott.panasas.com (IDENT:welch@medlicott.panasas.com
+    [172.17.132.188]) by blackcomb.panasas.com (8.9.3/8.9.3) with ESMTP id
+    NAA05316; Wed, 28 Aug 2002 13:32:46 -0400
+Message-Id: <200208281732.NAA05316@blackcomb.panasas.com>
+X-Mailer: exmh version 2.5.9 07/25/2002 with nmh-1.0.4
+To: Robert Elz <kre@munnari.OZ.AU>
+Cc: Chris Garrigues <cwg-dated-1030976555.34ad5b@DeepEddy.Com>,
+	exmh-workers@redhat.com
+Subject: Re: New Sequences Window
+In-Reply-To: <22628.1030545866@munnari.OZ.AU>
+References: <1030544555.28815.TMDA@deepeddy.vircio.com>
+    <1030028647.6462.TMDA@deepeddy.vircio.com>
+    <1029945287.4797.TMDA@deepeddy.vircio.com>
+    <1029882468.3116.TMDA@deepeddy.vircio.com> <9627.1029933001@munnari.OZ.AU>
+    <1029943066.26919.TMDA@deepeddy.vircio.com>
+    <1029944441.398.TMDA@deepeddy.vircio.com> <13277.1030015920@munnari.OZ.AU>
+    <21099.1030543590@munnari.OZ.AU> <22628.1030545866@munnari.OZ.AU>
+Comments: In-reply-to Robert Elz <kre@munnari.OZ.AU> message dated "Wed,
+    28 Aug 2002 21:44:26 +0700."
+From: Brent Welch <welch@panasas.com>
+X-Url: http://www.panasas.com/
+X-Face: "HxE|?EnC9fVMV8f70H83&{fgLE.|FZ^$>@Q(yb#N,Eh~N]e&]=>
+    r5~UnRml1:4EglY{9B+ :'wJq$@c_C!l8@<$t,{YUr4K,QJGHSvS~U]H`<+L*x?eGzSk>XH\W:AK\j?@?c1o<k;j'Ei/UL)!*0
+    ILwSR)J\bc)gjz!rrGQ2#i*f:M:ydhK}jp4dWQW?;0{,#iWrCV$4~%e/3)$1/D
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Wed, 28 Aug 2002 10:32:42 -0700
+
+
+>>>Robert Elz said:
+ >     Date:        Wed, 28 Aug 2002 09:22:34 -0500
+ >     From:        Chris Garrigues <cwg-dated-1030976555.34ad5b@DeepEddy.Co
+m>
+ >     Message-ID:  <1030544555.28815.TMDA@deepeddy.vircio.com>
+ > 
+ > 
+ >   | so I'll probably poke around at the sequences performance issues,
+ > 
+ > Well, there's this wonderful piece of code in MhSeqExpand ...
+ > 
+ >     # Hack to weed out sequence numbers for messages that don't exist
+ >     foreach m $rseq {
+ >         if ![file exists $mhProfile(path)/$folder/$m] {
+ >             Exmh_Debug $mhProfile(path)/$folder/$m not found
+ >             set ix [lsearch $seq $m]
+ >             set seq [lreplace $seq $ix $ix]
+ >         } else {
+ >             # Real hack
+
+At least I'm up-front about my hacks :-)
+
+ >             break
+ >         }
+ >     }
+ > 
+ > which is going to run slow if a sequence happens to start with a bunch
+ > of messages that don't exist.   I'm not sure why it is important that the
+ > first message in the sequence returned exists, but not necessarily any
+ > of the others, but I'm sure glad it is, as MhSeqExpand gets called lots,
+ > and I don't know if I could cope if it were checking every file in the
+ > sequences it is looking at, all the time...
+
+That was my thinking.  My recollection about the first message being valid
+is that the ftoc code wants to find that message to start its highlighting,
+for example, or you are selecting a message to display.
+
+ > It may help to keep a list of the valid message numbers for the current
+ > folder (though that would then need to be verified against changes to the
+ > directory).   Does tcl have a directory read function?   I assume so...
+
+glob -nocomplain $mhProfile(path)/$folder *
+will return an unsorted list of the directory's contents.
+But the thought of keeping an in memory list of valid messages is not fun.
+Exmh already maintains in-core lists of messages in sequences, which is
+already pretty tricky
+
+ > Mh_Sequence also goes and rereads the files (.mh_sequences and the
+ > context file) but I'm not sure how frequently that one is called.
+
+In some places I maintain caches of files by checking their modify time,
+but the sequence files are soo small that by the time you stat them to
+check their date stamp, you could just read them again.  Also, now that
+we checkpoint message state on every message view, that file will change
+every time.  In the old days exmh used to cache a bunch of state about
+the folder.
+
+--
+Brent Welch
+Software Architect, Panasas Inc
+Pioneering the World's Most Scalable and Agile Storage Network
+www.panasas.com
+welch@panasas.com
+
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+

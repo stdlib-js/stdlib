@@ -1,0 +1,92 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug 29 11:05:54 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9C6EA44162
+	for <jm@localhost>; Thu, 29 Aug 2002 06:04:47 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:04:47 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7SKURZ09244 for <jm-sa@jmason.org>; Wed, 28 Aug 2002 21:30:27 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17k9R2-000138-00; Wed,
+    28 Aug 2002 13:29:04 -0700
+Received: from yrex.com ([216.40.247.31] helo=host.yrex.com) by
+    usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17k9QQ-0002eH-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 28 Aug 2002 13:28:26 -0700
+Received: (qmail 14249 invoked from network); 28 Aug 2002 20:28:21 -0000
+Received: from mgm.dsl.xmission.com (HELO opus) (204.228.152.186) by
+    yrex.com with SMTP; 28 Aug 2002 20:28:21 -0000
+From: "Michael Moncur" <mgm@starlingtech.com>
+To: <spamassassin-talk@example.sourceforge.net>
+Subject: RE: [SAtalk] O.T. Habeus -- Why?
+Message-Id: <NEBBKLEDELIODOCJHLPCCEJENAAA.mgm@starlingtech.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-15"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2910.0)
+In-Reply-To: <1030560510.17408.TMDA@omega.paradigm-omega.net>
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Importance: Normal
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 28 Aug 2002 14:28:16 -0600
+Date: Wed, 28 Aug 2002 14:28:16 -0600
+
+> I may be dense, but why would anyone want to utilize Habeus?  To
+> me, it looks like a potential backdoor to anyone's defenses against spam.
+
+You're not dense. I'm going to zero the habeas scores on my copy of
+SpamAssassin. I think they were added to SA quite prematurely. To me it's
+simple:
+
+1. People who send me legitimate email have absolutely no motivation to use
+Habeas, at least until it gets lots more press, and even then only
+bulk-mailing companies like Amazon or eBay are going to bother, and I
+already whitelist them. Individuals won't bother.
+
+2. Spammers have lots of motivation to forge the Habeas headers, and a good
+percentage of them are completely out of the legal reach of Habeas.
+
+I think it should be subjected to the same testing and scrutiny as any other
+potential new rule. When I test against my corpus here's what I get:
+
+OVERALL     SPAM  NONSPAM     S/O   SCORE  NAME
+  13851     8919     4932    0.64    0.00  (all messages)
+      0        0        0    0.00   -1.00  HABEAS_SWE
+
+The score of -1.0 is pretty harmless right now, but it still looks like a
+useless rule so far.
+
+--
+Michael Moncur  mgm at starlingtech.com  http://www.starlingtech.com/
+"Never interrupt your enemy when he is making a mistake." --Napoleon
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

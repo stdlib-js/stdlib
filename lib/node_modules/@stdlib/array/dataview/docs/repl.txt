@@ -1,0 +1,74 @@
+
+{{alias}}( buffer[, byteOffset[, byteLength]] )
+    Returns a data view representing a provided array buffer.
+
+    Parameters
+    ----------
+    buffer: ArrayBuffer|SharedArrayBuffer
+        Array buffer.
+
+    byteOffset: integer (optional)
+        Offset (in bytes) to the first byte in the array buffer for the new view
+        to reference. Default: 0.
+
+    byteLength: integer (optional)
+        Number of elements in the byte array. If not provided, the view's length
+        will equal the buffer's length.
+
+    Returns
+    -------
+    out: DataView
+        A data view.
+
+    Examples
+    --------
+    > var buf = new {{alias:@stdlib/array/buffer}}( 5 )
+    <ArrayBuffer>
+    > var dv = new {{alias}}( buf )
+    <DataView>
+
+
+{{alias}}.prototype.buffer
+    Read-only property which returns the underyling array buffer.
+
+    Examples
+    --------
+    > var buf1 = new {{alias:@stdlib/array/buffer}}( 5 );
+    > var dv = new {{alias}}( buf1 );
+    > var buf2 = dv.buffer
+    <ArrayBuffer>
+    > var b = ( buf1 === buf2 )
+    true
+
+
+{{alias}}.prototype.byteLength
+    Read-only property which returns the length (in bytes) of the view.
+
+    Examples
+    --------
+    > var buf = new {{alias:@stdlib/array/buffer}}( 5 );
+    > var dv = new {{alias}}( buf );
+    > dv.byteLength
+    5
+
+
+{{alias}}.prototype.byteOffset
+    Read-only property which returns the offset (in bytes) of the view to the
+    start of the underlying array buffer.
+
+    Examples
+    --------
+    > var buf = new {{alias:@stdlib/array/buffer}}( 5 );
+    > var dv = new {{alias}}( buf, 2 );
+    > dv.byteLength
+    3
+    > dv.byteOffset
+    2
+
+
+TODO: document properties/methods
+
+
+    See Also
+    --------
+

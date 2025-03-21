@@ -1,0 +1,89 @@
+From rpm-list-admin@freshrpms.net  Thu Aug  1 11:59:12 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A458A440CD
+	for <jm@localhost>; Thu,  1 Aug 2002 06:59:11 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 01 Aug 2002 11:59:11 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g71B05208999 for
+    <jm-rpm@jmason.org>; Thu, 1 Aug 2002 12:00:05 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g71As1J10365; Thu, 1 Aug 2002 12:54:01
+    +0200
+Received: from python (gw01.es3.egwn.net [212.9.66.13]) (authenticated) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g71ArYJ10009 for
+    <rpm-list@freshrpms.net>; Thu, 1 Aug 2002 12:53:34 +0200
+From: Matthias Saou <matthias@egwn.net>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: Quick php advice needed :-)
+Message-Id: <20020801125300.38a3da03.matthias@egwn.net>
+In-Reply-To: <20020801052322.0ba23786.kilroy@kamakiriad.com>
+References: <20020801105156.73fb7f9f.matthias@egwn.net>
+    <20020801052322.0ba23786.kilroy@kamakiriad.com>
+Organization: Electronic Group Interactive
+X-Mailer: Sylpheed version 0.8.1claws (GTK+ 1.2.10; i386-redhat-linux)
+Reply-BY: Tue, 24 Jul 2000 19:02:00 +1000
+X-Operating-System: GNU/Linux power!
+X-Message-Flag: Try using a real operating system : GNU/Linux power!
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Thu, 1 Aug 2002 12:53:00 +0200
+Date: Thu, 1 Aug 2002 12:53:00 +0200
+
+Once upon a time, Brian wrote :
+
+> On Thu, 1 Aug 2002 10:51:56 +0200, Matthias Saou <matthias@egwn.net>
+> wrote:
+> 
+> > Sorry, this hasn't got much to do with rpm packages directly ;-)
+> > 
+> > My "builds" page is getting bigger and bigger, and quite messy as
+> > directories are listed in no particular order :
+> > http://freshrpms.net/builds...
+> 
+>     Yep.  Make sure there's a field in the database called (for example)
+>     "Updated" and when it comes time to generate the list, add "order by
+>     updated".  This'll put it in that particular order for ya.  You can
+>     also chose to order it by name, etc by changing this field.
+> 
+>     This should be the same for both MySql and Postgressql (any modern
+>     SQL, really).  Which are you using?
+
+None for that "builds" part : It's just an export of the CVS tree in which
+I keep my spec files and patches! ;-)
+I think the filemtime() php function that Ville uses in his sript is what
+I'm looking for, then I guess I just need to fill an array with the names
+and mtimes, sort it, then display what I want :-)
+
+Matthias
+
+-- 
+Matthias Saou                                World Trade Center
+-------------                                Edificio Norte 4 Planta
+System and Network Engineer                  08039 Barcelona, Spain
+Electronic Group Interactive                 Phone : +34 936 00 23 23
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

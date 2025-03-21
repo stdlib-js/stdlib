@@ -1,0 +1,83 @@
+From social-admin@linux.ie  Mon Jul 22 19:24:30 2002
+Return-Path: <social-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 98BBD440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 14:24:29 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 19:24:29 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFIB902770 for
+    <jm+ilug-social@jmason.org>; Mon, 22 Jul 2002 16:18:11 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id LAA31420 for
+    <jm+ilug-social@jmason.org>; Mon, 22 Jul 2002 11:45:41 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA21951; Mon, 22 Jul 2002 11:45:02 +0100
+Received: from mandark.labs.netnoteinc.com ([213.105.180.140]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id LAA21912 for <social@linux.ie>;
+    Mon, 22 Jul 2002 11:44:56 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [213.105.180.140] claimed
+    to be mandark.labs.netnoteinc.com
+Received: from triton.labs.netnoteinc.com
+    (lbedford@triton.labs.netnoteinc.com [192.168.2.12]) by
+    mandark.labs.netnoteinc.com (8.11.6/8.11.6) with SMTP id g6MAitp08916 for
+    <social@linux.ie>; Mon, 22 Jul 2002 11:44:56 +0100
+Date: Mon, 22 Jul 2002 11:44:55 +0100
+From: Liam Bedford <lbedford@lbedford.org>
+To: social@linux.ie
+Subject: Re: [ILUG-Social] Completely silent pc
+Message-Id: <20020722114455.080be6c6.lbedford@lbedford.org>
+In-Reply-To: <20020720181512.D23917@ie.suberic.net>
+References: <Pine.GSO.4.10.10207192318220.27597-100000@matrix>
+    <20020720051950.GE28205@linuxmafia.com>
+    <20020720181512.D23917@ie.suberic.net>
+Organization: Netnote International
+X-Mailer: Sylpheed version 0.7.8claws69 (GTK+ 1.2.10; i386-debian-linux-gnu)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-15
+Content-Transfer-Encoding: 8bit
+Sender: social-admin@linux.ie
+Errors-To: social-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group social events <social.linux.ie>
+X-Beenthere: social@linux.ie
+
+On Sat, 20 Jul 2002 18:15:12 +0100
+kevin lyda claiming to think:
+
+> On Fri, Jul 19, 2002 at 10:19:50PM -0700, Rick Moen wrote:
+> > Some people strip down old 486 boxes, take out the hard drive, disable
+> > the fans, and run the thing from just a floppy drive or a CDR you've
+> > burned for the purpose.  
+> 
+> what about using a pcmcia card and a compaq flash card?  or doing an
+> nfs boot to a server in a noiser part of the house?  (the boiler room
+> or something like that)
+> 
+hmm. there are versions of OpenBSD that run from a 32M compact flash IIRC.
+
+and antefacto's software ran in 64M.
+
+there are CF->IDE adapters anyway, so get a 256M CF (100¤+), mount it RO,
+and use that?
+
+/me is also in the market for one of the 60W fanless PSU's that antefacto had,
+if someone wants to get a few of them.
+
+L.
+-- 
+     dBP   dBBBBb | If you're looking at me to be an accountant
+              dBP | Then you will look but you will never see
+   dBP    dBBBK'  | If you're looking at me to start having babies
+  dBP    dB' db   | Then you can wish because I'm not here to fool around
+ dBBBBP dBBBBP'   | Belle & Sebastian (Family Tree)
+
+-- 
+Irish Linux Users' Group Social Events: social@linux.ie
+http://www.linux.ie/mailman/listinfo/social for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

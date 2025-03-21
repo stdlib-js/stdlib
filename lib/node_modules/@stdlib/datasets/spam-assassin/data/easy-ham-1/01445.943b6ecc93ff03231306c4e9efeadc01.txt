@@ -1,0 +1,72 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Fri Sep  6 15:29:56 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 7160216F22
+	for <jm@localhost>; Fri,  6 Sep 2002 15:26:41 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 15:26:41 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g86A0qC30406 for
+    <jm-sa@jmason.org>; Fri, 6 Sep 2002 11:00:53 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id SAA17222 for
+    <jm-sa@jmason.org>; Thu, 5 Sep 2002 18:53:54 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17n0nW-00050j-00; Thu,
+    05 Sep 2002 10:52:06 -0700
+Received: from mx-out.daemonmail.net ([216.104.160.37]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17n0n8-000405-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Thu, 05 Sep 2002 10:51:42 -0700
+Received: from mx0.emailqueue.net (localhost.daemonmail.net [127.0.0.1])
+    by mx-out.daemonmail.net (8.9.3/8.9.3) with SMTP id KAA61959 for
+    <spamassassin-talk@lists.sourceforge.net>; Thu, 5 Sep 2002 10:51:38 -0700
+    (PDT) (envelope-from brian@unearthed.com)
+Received: from brianmay (brianmay [64.52.135.194]) by mail.unearthed.com
+    with ESMTP id F4G0l8M2 Thu, 05 Sep 2002 10:51:01 -0700 (PDT)
+Message-Id: <00c701c25504$da88e530$8801020a@brianmay>
+From: "Brian May" <brian@unearthed.com>
+To: "SpamAssassin Users' list" <spamassassin-talk@example.sourceforge.net>
+References: <00c201c254ff$bc2acb30$8801020a@brianmay>
+Subject: Re: [SAtalk] [OT] SpamAssassin figures...
+Organization: UnEarthed.Com
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Thu, 5 Sep 2002 10:51:23 -0700
+Date: Thu, 5 Sep 2002 10:51:23 -0700
+
+sorry for the dupe.. thought the com address would bounce.. my bad.
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

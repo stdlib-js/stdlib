@@ -1,0 +1,60 @@
+From fork-admin@xent.com  Tue Sep 24 10:49:29 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id EE33A16F03
+	for <jm@localhost>; Tue, 24 Sep 2002 10:49:28 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 24 Sep 2002 10:49:28 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8O250C16259 for <jm@jmason.org>;
+    Tue, 24 Sep 2002 03:05:00 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 1871C29423B; Mon, 23 Sep 2002 18:58:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hotmail.com (f68.law15.hotmail.com [64.4.23.68]) by
+    xent.com (Postfix) with ESMTP id BDEA82940FD for <fork@xent.com>;
+    Mon, 23 Sep 2002 18:57:17 -0700 (PDT)
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Mon, 23 Sep 2002 19:00:58 -0700
+Received: from 216.30.74.2 by lw15fd.law15.hotmail.msn.com with HTTP;
+    Tue, 24 Sep 2002 02:00:58 GMT
+X-Originating-Ip: [216.30.74.2]
+From: "Russell Turpin" <deafbox@hotmail.com>
+To: fork@spamassassin.taint.org
+Subject: Re: Goodbye Global Warming
+MIME-Version: 1.0
+Content-Type: text/plain; format=flowed
+Message-Id: <F68kmx42WGYwvimdzhU00004be9@hotmail.com>
+X-Originalarrivaltime: 24 Sep 2002 02:00:58.0571 (UTC) FILETIME=[39B809B0:01C2636E]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 24 Sep 2002 02:00:58 +0000
+
+Mr. FoRK:
+>Of the three lying politicians, which liar would you take?
+
+No, no. The riddle is, asking only one question, how
+do you determine which is which? "If I were to ask
+you whether he would say you were a crook, or if the
+other had sex ..?"
+
+
+
+
+
+_________________________________________________________________
+Send and receive Hotmail on your mobile device: http://mobile.msn.com
+
+

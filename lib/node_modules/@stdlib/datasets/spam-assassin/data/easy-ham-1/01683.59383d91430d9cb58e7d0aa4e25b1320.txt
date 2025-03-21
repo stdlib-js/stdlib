@@ -1,0 +1,197 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Sat Sep  7 03:51:24 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Fri, 06 Sep 2002 22:51:24 -0400
+Subject: [Spambayes] understanding high false negative rate
+In-Reply-To: <15737.16782.542869.368986@slothrop.zope.com>
+Message-ID: <LNBBLJKPBEHFEDALKOLCIEKOBCAB.tim.one@comcast.net>
+
+[Jeremy]
+> The total collections are 1100 messages.  I trained with 1100/5
+> messages.
+
+While that's not a lot of training data, I picked random subsets of my
+corpora and got much better behavior (this is rates.py output; f-p rate per
+run in left column, f-n rate in right):
+
+Training on Data/Ham/Set1 & Data/Spam/Set1 ... 220 hams & 220 spams
+      0.000   1.364
+      0.000   0.455
+      0.000   1.818
+      0.000   1.364
+Training on Data/Ham/Set2 & Data/Spam/Set2 ... 220 hams & 220 spams
+      0.455   2.727
+      0.455   0.455
+      0.000   0.909
+      0.455   2.273
+Training on Data/Ham/Set3 & Data/Spam/Set3 ... 220 hams & 220 spams
+      0.000   2.727
+      0.455   0.909
+      0.000   0.909
+      0.000   1.818
+Training on Data/Ham/Set4 & Data/Spam/Set4 ... 220 hams & 220 spams
+      0.000   2.727
+      0.000   0.909
+      0.000   0.909
+      0.000   1.818
+Training on Data/Ham/Set5 & Data/Spam/Set5 ... 220 hams & 220 spams
+      0.000   1.818
+      0.000   1.364
+      0.000   0.909
+      0.000   2.273
+total false pos 4 0.363636363636
+total false neg 29 2.63636363636
+
+Another full run with another randomly chosen (but disjoint) 220 of each in
+each set was much the same.  The score distribution is also quite sharp:
+
+Ham distribution for all runs:
+* = 74 items
+  0.00 4381 ************************************************************
+  2.50    3 *
+  5.00    3 *
+  7.50    1 *
+ 10.00    0
+ 12.50    0
+ 15.00    1 *
+ 17.50    1 *
+ 20.00    1 *
+ 22.50    0
+ 25.00    0
+ 27.50    0
+ 30.00    1 *
+ 32.50    0
+ 35.00    0
+ 37.50    0
+ 40.00    1 *
+ 42.50    0
+ 45.00    0
+ 47.50    0
+ 50.00    0
+ 52.50    0
+ 55.00    0
+ 57.50    1 *
+ 60.00    0
+ 62.50    0
+ 65.00    0
+ 67.50    1 *
+ 70.00    0
+ 72.50    0
+ 75.00    0
+ 77.50    0
+ 80.00    0
+ 82.50    0
+ 85.00    0
+ 87.50    1 *
+ 90.00    0
+ 92.50    2 *
+ 95.00    0
+ 97.50    2 *
+
+Spam distribution for all runs:
+* = 73 items
+  0.00   13 *
+  2.50    0
+  5.00    4 *
+  7.50    5 *
+ 10.00    0
+ 12.50    2 *
+ 15.00    1 *
+ 17.50    1 *
+ 20.00    2 *
+ 22.50    1 *
+ 25.00    0
+ 27.50    1 *
+ 30.00    0
+ 32.50    3 *
+ 35.00    0
+ 37.50    0
+ 40.00    0
+ 42.50    0
+ 45.00    1 *
+ 47.50    3 *
+ 50.00   16 *
+ 52.50    0
+ 55.00    0
+ 57.50    0
+ 60.00    1 *
+ 62.50    0
+ 65.00    2 *
+ 67.50    1 *
+ 70.00    1 *
+ 72.50    0
+ 75.00    1 *
+ 77.50    0
+ 80.00    3 *
+ 82.50    2 *
+ 85.00    1 *
+ 87.50    2 *
+ 90.00    2 *
+ 92.50    4 *
+ 95.00    4 *
+ 97.50 4323 ************************************************************
+
+It's hard to say whether you need better ham or better spam, but I suspect
+better spam <wink>.  18 of the 30 most powerful discriminators here were
+HTML-related spam indicators; the top 10 overall were:
+
+        '<font' 266 0.99
+        'content-type:text/plain' 275 0.172932
+        '</body>' 312 0.99
+        '</html>' 329 0.99
+        'click' 334 0.99
+        '<html>' 335 0.99
+        'wrote:' 381 0.01
+        'skip:< 10' 398 0.99
+        'python' 428 0.01
+        'content-type:text/html' 454 0.99
+
+The HTML tags come from non-multipart/alternative HTML messages, from which
+HTML tags aren't stripped, and there are lots of these in my spam sets.
+
+That doesn't account for it, though.  If I strip HTML tags out of those too,
+the rates are only a little worse:
+
+raining on Data/Ham/Set1 & Data/Spam/Set1 ... 220 hams & 220 spams
+     0.000   1.364
+     0.000   1.818
+     0.455   1.818
+     0.000   1.818
+raining on Data/Ham/Set2 & Data/Spam/Set2 ... 220 hams & 220 spams
+     0.000   1.364
+     0.455   1.818
+     0.455   0.909
+     0.000   1.818
+raining on Data/Ham/Set3 & Data/Spam/Set3 ... 220 hams & 220 spams
+     0.000   2.727
+     0.000   0.909
+     0.909   0.909
+     0.455   1.818
+raining on Data/Ham/Set4 & Data/Spam/Set4 ... 220 hams & 220 spams
+     0.000   1.818
+     0.000   0.909
+     0.455   0.909
+     0.000   1.364
+raining on Data/Ham/Set5 & Data/Spam/Set5 ... 220 hams & 220 spams
+     0.000   2.727
+     0.000   1.364
+     0.455   2.273
+     0.455   2.273
+otal false pos 4 0.363636363636
+otal false neg 34 3.09090909091
+
+The 4th-strongest discriminator *still* finds another HTML clue, though!
+
+        'subject:Python' 164 0.01
+        'money' 169 0.99
+        'content-type:text/plain' 185 0.2
+        'charset:us-ascii' 191 0.127273
+        "i'm" 232 0.01
+        'content-type:text/html' 248 0.983607
+        '&nbsp;' 255 0.99
+        'wrote:' 372 0.01
+        'python' 431 0.01
+        'click' 519 0.99
+
+Heh.  I forgot all about &nbsp;.
+

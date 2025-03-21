@@ -1,0 +1,83 @@
+From fork-admin@xent.com  Tue Oct  1 16:29:00 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id B5F6916F1E
+	for <jm@localhost>; Tue,  1 Oct 2002 16:28:05 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 01 Oct 2002 16:28:05 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g91EuCK29923 for <jm@jmason.org>;
+    Tue, 1 Oct 2002 15:56:13 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id EB2802940C2; Tue,  1 Oct 2002 07:56:01 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from usilms55.ca.com (mail3.cai.com [141.202.248.42]) by
+    xent.com (Postfix) with ESMTP id 0EECB29409E for <fork@xent.com>;
+    Tue,  1 Oct 2002 07:55:10 -0700 (PDT)
+Received: from usilms27.ca.com ([141.202.201.27]) by usilms55.ca.com with
+    Microsoft SMTPSVC(5.0.2195.4905); Tue, 1 Oct 2002 10:55:14 -0400
+Content-Class: urn:content-classes:message
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+X-Mimeole: Produced By Microsoft Exchange V6.0.6249.0
+Subject: RE: MIT OpenCourseWare
+Message-Id: <B397C4F18189C34B9BD6C5F82461FCBE7C2470@usilms27.ca.com>
+X-MS-Has-Attach:
+X-MS-Tnef-Correlator:
+Thread-Topic: MIT OpenCourseWare
+Thread-Index: AcJpVBJpAYFVF5dGSoq/PBdsu9oYGgAByyyy0A
+From: "Meltsner, Kenneth" <Kenneth.Meltsner@ca.com>
+To: "forkit!" <fork@spamassassin.taint.org>
+X-Originalarrivaltime: 01 Oct 2002 14:55:14.0868 (UTC) FILETIME=[8CB8A740:01C2695A]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 1 Oct 2002 10:55:14 -0400
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g91EuCK29923
+
+Better late than never -- I received a grant from Project Athena, MIT's original courseware effort, and found at the end that they hadn't thought much about distribution of the courseware.  Instead, they had gotten wrapped up with X and various Unix tools, and other useful, but not strictly educational efforts.
+
+Ken
+
+
+> -----Original Message-----
+> From: B.K. DeLong [mailto:bkdelong@pobox.com]
+> Sent: Tuesday, October 01, 2002 9:06 AM
+> To: Eugen Leitl; forkit!
+> Subject: Re: MIT OpenCourseWare
+> 
+> 
+> At 05:38 PM 9/30/2002 +0200, Eugen Leitl wrote:
+> 
+> 
+> >Looks useful. Hopefully, they'll put up some more material soon.
+> >
+> >         http://ocw.mit.edu/global/all-courses.html
+> 
+> I'll be sure to keep everyone posted on the next update. :)
+> 
+> 
+> --
+> B.K. DeLong
+> bkdelong@ceci.mit.edu
+> OpenCourseWare
+> 
+> +1.617.258.0360
+> +1.617.877.3271 (cell)
+> 
+> 
+
+

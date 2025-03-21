@@ -1,0 +1,65 @@
+From fork-admin@xent.com  Thu Sep 19 16:26:19 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id A41F016F16
+	for <jm@localhost>; Thu, 19 Sep 2002 16:26:18 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 19 Sep 2002 16:26:18 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8JF7oC24538 for <jm@jmason.org>;
+    Thu, 19 Sep 2002 16:07:50 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 1EFA3294160; Thu, 19 Sep 2002 08:01:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from barrera.org (unknown [63.145.31.2]) by xent.com (Postfix)
+    with ESMTP id C194D29413C for <fork@xent.com>; Thu, 19 Sep 2002 08:00:06
+    -0700 (PDT)
+Received: from  (127.0.0.1 [127.0.0.1]) by MailEnable Inbound Mail Agent
+    with ESMTP; Thu, 19 Sep 2002 15:02:14 -08:00
+Message-Id: <3D89E6F6.2060105@barrera.org>
+From: "Joseph S. Barrera III" <joe@barrera.org>
+Organization: NERV
+User-Agent: Mutt 5.00.2919.6900 DM (Nigerian Scammer Special Edition)
+X-Accept-Language: en-us, en, ja
+MIME-Version: 1.0
+To: Geege Schuman <geege@barrera.org>
+Cc: Tom <tomwhore@slack.net>, "R. A. Hettinga" <rah@shipwright.com>,
+	fork@xent.com
+Subject: Re: AA Meetings the Hottest Place to Meet Women With Big Bucks
+References: <ILEHJNJFPDLMDEKNIAKCIEHKCAAA.geege@barrera.org>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 19 Sep 2002 08:02:14 -0700
+
+Geege Schuman wrote:
+> less obscure haiku 
+> 
+> buy a puppy, ro!
+> they are chick magnets. master
+> ventriloquism.
+
+Reminds me of a Gary Larson cartoon,
+woman walking dog, man walking aligator,
+dog mostly eaten by aligator, thought cloud
+above man's head,
+"This is *such* a great way to meet chicks!"
+
+- Joe
+
+
+
+

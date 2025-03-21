@@ -1,0 +1,116 @@
+From exmh-users-admin@redhat.com  Sat Jul 20 03:29:20 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 30210440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 22:29:20 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 20 Jul 2002 03:29:20 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6K2OjJ02230 for
+    <jm-exmh@jmason.org>; Sat, 20 Jul 2002 03:24:45 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 80FE6401B7; Fri, 19 Jul 2002
+    22:02:04 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 2C52640AD5
+    for <exmh-users@listman.redhat.com>; Fri, 19 Jul 2002 21:51:41 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g6K1pfm20663 for exmh-users@listman.redhat.com; Fri, 19 Jul 2002
+    21:51:41 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g6K1pfR20659 for
+    <exmh-users@redhat.com>; Fri, 19 Jul 2002 21:51:41 -0400
+Received: from dingo.home.kanga.nu ([198.144.204.213]) by mx1.spamassassin.taint.org
+    (8.11.6/8.11.6) with SMTP id g6K1eLs27797 for <exmh-users@redhat.com>;
+    Fri, 19 Jul 2002 21:40:21 -0400
+Received: from kanga.nu (localhost [127.0.0.1]) by dingo.home.kanga.nu
+    (Postfix) with ESMTP id BE73A11E8 for <exmh-users@redhat.com>;
+    Fri, 19 Jul 2002 18:51:39 -0700 (PDT)
+To: exmh-users@spamassassin.taint.org
+Subject: Folder computed replcomps (and replgroupcomps
+X-Face: ?<YUs-cNP1\Oc-H>^_yw@fA`CEX&}--=*&XqXbF-oePvxaT4(kyt\nwM9]{]N!>b^K}-Mb9
+    YH%saz^>nq5usBlD"s{(.h'_w|U^3ldUq7wVZz$`u>MB(-4$f\a6Eu8.e=Pf\
+X-Image-Url: http://www.kanga.nu/~claw/kanga.face.tiff
+X-Url: http://www.kanga.nu/~claw/
+Message-Id: <8128.1027129899@kanga.nu>
+From: J C Lawrence <claw@kanga.nu>
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Fri, 19 Jul 2002 18:51:39 -0700
+
+
+Is there a relatively clean way to dynamically build comp files based on
+the path of the current folder?
+
+  Yeah, I know exmh will pull the first comp in the path up from the
+  current folder to the mail root, but that's not what I want.
+
+I'm starting to use plus addressing heavily as part of my SPAM controls.
+Specifically I each mailing list with a list-specific address.
+
+  eg I would subscribe to this list as claw+exmh@kanga.nu or perhaps
+  claw+exmh-users@kanga.nu instead of claw@kanga.nu
+
+However to do this I need a new set of comp files for each list folder.
+As I'm subscribed to something just over 600 lists, that's rather a
+pain.  I really don't want to go create and maintain ~1,800 comp files
+(components, replcomps, replgroupcomps), especially not as I suspect
+I'll be changing or adapting my naming pattern a few times as I adapt
+various supporting tools.
+
+What would be great is if I could build the relevant comp file
+dynamically at runtime.  That way I don't need to maintain a couple
+thousand comp files, I just need to make my plus addresses
+predictable/computable based (say) on the folder path.
+
+  eg I'm currently in folder:
+
+    +-Lists-/Products/Exmh-L
+
+    The script would dynamically build a compfile which had a From: of
+    claw+exmh@kanga.nu for repl, comp, etc.
+
+  Similarly when in folder:
+
+    +-Lists-/Linux/SVLUG-L
+
+  I'd get a From: of claw+svlug@kanga.nu
+
+That way I can use lookup tables for those folders which have multiple
+lists being delivered into them.
+
+Any ideas how this might be done in an automatic/maintainable fashion?
+It would be more than good enough if all I had to do was drop a tiny
+FROM_HEADER file in each folder that somehow got picked up by the comp
+file...
+
+-- 
+J C Lawrence                
+---------(*)                Satan, oscillate my metallic sonatas. 
+claw@kanga.nu               He lived as a devil, eh?		  
+http://www.kanga.nu/~claw/  Evil is a name of a foeman, as I live.
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

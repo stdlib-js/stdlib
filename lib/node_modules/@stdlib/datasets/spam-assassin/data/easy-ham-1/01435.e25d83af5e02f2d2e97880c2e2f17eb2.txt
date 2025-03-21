@@ -1,0 +1,102 @@
+From spamassassin-commits-admin@lists.sourceforge.net  Wed Sep  4 16:53:14 2002
+Return-Path: <spamassassin-commits-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id D056716F21
+	for <jm@localhost>; Wed,  4 Sep 2002 16:52:15 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 04 Sep 2002 16:52:15 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g84FMqZ07608 for <jm@jmason.org>; Wed, 4 Sep 2002 16:22:52 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17mbzp-0001lU-00; Wed,
+    04 Sep 2002 08:23:09 -0700
+Received: from usw-sf-sshgate.sourceforge.net ([216.136.171.253]
+    helo=usw-sf-netmisc.sourceforge.net) by usw-sf-list1.sourceforge.net with
+    esmtp (Cipher TLSv1:DES-CBC3-SHA:168) (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17mbzP-000328-00 for <spamassassin-commits@lists.sourceforge.net>;
+    Wed, 04 Sep 2002 08:22:43 -0700
+Received: from usw-pr-cvs1-b.sourceforge.net ([10.5.1.7]
+    helo=usw-pr-cvs1.sourceforge.net) by usw-sf-netmisc.sourceforge.net with
+    esmtp (Exim 3.22 #1 (Debian)) id 17mbzP-0007kh-00 for
+    <spamassassin-commits@lists.sourceforge.net>; Wed, 04 Sep 2002 08:22:43
+    -0700
+Received: from yyyyason by usw-pr-cvs1.sourceforge.net with local (Exim 3.22
+    #1 (Debian)) id 17mbzO-0004fH-00 for
+    <spamassassin-commits@lists.sourceforge.net>; Wed, 04 Sep 2002 08:22:42
+    -0700
+To: spamassassin-commits@example.sourceforge.net
+Message-Id: <E17mbzO-0004fH-00@usw-pr-cvs1.sourceforge.net>
+From: Justin Mason <yyyyason@users.sourceforge.net>
+Subject: [SACVS] CVS: spamassassin/lib/Mail/SpamAssassin Conf.pm,1.91.2.7,1.91.2.8
+Sender: spamassassin-commits-admin@example.sourceforge.net
+Errors-To: spamassassin-commits-admin@example.sourceforge.net
+X-Beenthere: spamassassin-commits@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-commits-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-commits@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-commits>,
+    <mailto:spamassassin-commits-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <spamassassin-commits.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-commits>,
+    <mailto:spamassassin-commits-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-commits>
+X-Original-Date: Wed, 04 Sep 2002 08:22:42 -0700
+Date: Wed, 04 Sep 2002 08:22:42 -0700
+
+Update of /cvsroot/spamassassin/spamassassin/lib/Mail/SpamAssassin
+In directory usw-pr-cvs1:/tmp/cvs-serv17809/lib/Mail/SpamAssassin
+
+Modified Files:
+      Tag: b2_4_0
+	Conf.pm 
+Log Message:
+added deprecation regarding starting line with space; reserved for future use; also changed sample version_tag
+
+Index: Conf.pm
+===================================================================
+RCS file: /cvsroot/spamassassin/spamassassin/lib/Mail/SpamAssassin/Conf.pm,v
+retrieving revision 1.91.2.7
+retrieving revision 1.91.2.8
+diff -b -w -u -d -r1.91.2.7 -r1.91.2.8
+--- Conf.pm	29 Aug 2002 14:52:43 -0000	1.91.2.7
++++ Conf.pm	4 Sep 2002 15:22:39 -0000	1.91.2.8
+@@ -24,8 +24,11 @@
+ files, loaded from the /usr/share/spamassassin and /etc/mail/spamassassin
+ directories.
+ 
+-The C<#> character starts a comment, which continues until end of line,
+-and whitespace in the files is not significant.
++The C<#> character starts a comment, which continues until end of line.
++
++Whitespace in the files is not significant, but please note that starting a
++line with whitespace is deprecated, as we reserve its use for multi-line rule
++definitions, at some point in the future.
+ 
+ Paths can use C<~> to refer to the user's home directory.
+ 
+@@ -257,7 +260,7 @@
+ 
+ eg.
+ 
+-  version_tag perkel2    # version=2.40-perkel2
++  version_tag myrules1    # version=2.41-myrules1
+ 
+ =cut
+ 
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-commits mailing list
+Spamassassin-commits@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-commits
+

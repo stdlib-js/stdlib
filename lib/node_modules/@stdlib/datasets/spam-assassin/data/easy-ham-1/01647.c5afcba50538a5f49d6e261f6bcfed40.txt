@@ -1,0 +1,42 @@
+Return-Path: skip@pobox.com
+Delivery-Date: Fri Sep  6 16:01:51 2002
+From: skip@pobox.com (Skip Montanaro)
+Date: Fri, 6 Sep 2002 10:01:51 -0500
+Subject: [Spambayes] Deployment
+In-Reply-To: <200209061431.g86EVM114413@pcp02138704pcs.reston01.va.comcast.net>
+References: <200209061431.g86EVM114413@pcp02138704pcs.reston01.va.comcast.net>
+Message-ID: <15736.50015.881231.510395@12-248-11-90.client.attbi.com>
+
+
+    Guido> Takers?  How is ESR's bogofilter packaged?  SpamAssassin?  The
+    Guido> Perl Bayes filter advertised on slashdot?
+
+Dunno about the other tools, but SpamAssassin is a breeze to incorporate
+into a procmail environment.  Lots of people use it in many other ways.  For
+performance reasons, many people run a spamd process and then invoke a small
+C program called spamc which shoots the message over to spamd and passes the
+result back out.  I think spambayes in incremental mode is probably fast
+enough to not require such tricks (though I would consider changing the
+pickle to an anydbm file).
+
+Basic procmail usage goes something like this:
+
+    :0fw
+    | spamassassin -P
+
+    :0
+    * ^X-Spam-Status: Yes
+    $SPAM
+
+Which just says, "Run spamassassin -P reinjecting its output into the
+processing stream.  If the resulting mail has a header which begins
+"X-Spam-Status: Yes", toss it into the folder indicated by the variable
+$SPAM.
+
+SpamAssassin also adds other headers as well, which give you more detail
+about how its tests fared.  I'd like to see spambayes operate in at least
+this way: do its thing then return a message to stdout with a modified set
+of headers which further processing downstream can key on.
+
+Skip
+

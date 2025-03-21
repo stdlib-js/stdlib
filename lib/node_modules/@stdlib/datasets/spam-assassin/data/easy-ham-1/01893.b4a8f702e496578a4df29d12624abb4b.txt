@@ -1,0 +1,52 @@
+From rssfeeds@jmason.org  Wed Sep 25 10:23:59 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id CF5F216F16
+	for <jm@localhost>; Wed, 25 Sep 2002 10:23:58 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 25 Sep 2002 10:23:58 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8P83hC18346 for
+    <jm@jmason.org>; Wed, 25 Sep 2002 09:03:43 +0100
+Message-Id: <200209250803.g8P83hC18346@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: boingboing <rssfeeds@spamassassin.taint.org>
+Subject: Roman chariots responsible for Space Shuttle design constraints
+Date: Wed, 25 Sep 2002 08:03:43 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://boingboing.net/#85485894
+Date: Not supplied
+
+Ben Hammersley posts a parable about design specifications, showing the link 
+between Roman Chariots and the Space Shuttle. It has the ring of something 
+apocraphyl to me, but it's a good read, nevertheless. 
+
+    The U.S. standard railroad gauge (distance between the rails) is 4 feet, 
+    8.5 inches. That is an exceedingly odd number. Why was that gauge used? 
+    Because that's the way they built them in England, and the U.S. railroads 
+    were built by English expatriates. 
+
+    Why did the English build them that way? Because the first rail lines were 
+    built by the same people who built the pre-railroad tramways, and that's 
+    the gauge they used. 
+
+    Why did "they" use that gauge? Because the people who built the tramways 
+    used the same jigs and tools that they used for building wagons, which used 
+    that wheel spacing. 
+
+    So why did the wagons have that particular odd spacing? Well, if they tried 
+    to use any other spacing, the wagon wheels would break on some of the old, 
+    long distance roads in England, because that was the spacing of the wheel 
+    ruts... 
+
+Snopes says it's false[1], but from their notes, it appears that it's actually 
+largely true, albeit subject to interpretation. Link[2] Discuss[3]
+
+[1] http://www.snopes.com/history/american/gauge.htm
+[2] http://www.benhammersley.com/archives/001404.html#001404
+[3] http://www.quicktopic.com/boing/H/ibHLzVeWnweZ
+
+

@@ -1,0 +1,51 @@
+'use strict';
+
+// MODULES //
+
+var float64ToFloat32 = require( '@stdlib/number/float64/base/to-float32' );
+
+
+// VARIABLES //
+
+var C = [
+{{coefficients}}
+];
+var END = C.length - 1;
+
+
+// MAIN //
+
+/**
+* Evaluates a polynomial.
+*
+* ## Notes
+*
+* -   The implementation uses [Horner's rule][horners-method] for efficient computation.
+*
+* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
+*
+* @private
+* @param {number} x - value at which to evaluate the polynomial
+* @returns {number} evaluated polynomial
+*/
+function evalpoly( x ) {
+	var p;
+	var i;
+
+	if ( x === 0.0 ) {
+		return C[ 0 ];
+	}
+	i = END;
+	p = float64ToFloat32( float64ToFloat32( C[ i ] * x ) + C[ i-1 ] );
+	i -= 2;
+	while ( i >= 0 ) {
+		p = float64ToFloat32( float64ToFloat32( p * x ) + C[ i ] );
+		i -= 1;
+	}
+	return p;
+}
+
+
+// EXPORTS //
+
+module.exports = evalpoly;

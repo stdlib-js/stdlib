@@ -1,0 +1,22 @@
+
+{{alias}}()
+    Returns a list of complex number data types.
+
+    The output array contains the following data types:
+
+    - complex64: single-precision complex floating-point numbers.
+    - complex128: double-precision complex floating-point numbers.
+
+    Returns
+    -------
+    out: Array<string>
+        List of complex number data types.
+
+    Examples
+    --------
+    > var out = {{alias}}()
+    <Array>
+
+    See Also
+    --------
+

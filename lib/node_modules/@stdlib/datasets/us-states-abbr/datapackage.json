@@ -1,0 +1,38 @@
+{
+  "name": "stdlib-datasets-us-states-abbr",
+  "version": "",
+  "title": "US State Abbreviations",
+  "description": "A list of US state abbreviations in alphabetical order according to state name.",
+  "resources": [
+    {
+      "name": "us-states-abbr-json",
+      "title": "US State Abbreviations",
+      "description": "A list of US state abbreviations in alphabetical order according to state name.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.json"
+    },
+    {
+      "name": "us-states-abbr-txt",
+      "title": "US State Abbreviations",
+      "description": "A list of US state abbreviations in alphabetical order according to state name.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.txt"
+    }
+  ],
+  "sources": [],
+  "keywords": [
+    "list",
+    "us",
+    "united",
+    "states",
+    "abbreviations",
+    "abbr"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}

@@ -1,0 +1,55 @@
+From iiu-owner@taint.org  Mon Aug 26 15:48:24 2002
+Return-Path: <iiu-owner@taint.org>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.spamassassin.taint.org (Postfix) with ESMTP id EBC5243F9B
+	for <zzzz@localhost>; Mon, 26 Aug 2002 10:41:35 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 26 Aug 2002 15:41:35 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7NIi1Z03974 for
+    <zzzz-list-admin-iiu@jmason.org>; Fri, 23 Aug 2002 19:44:01 +0100
+Received: from linux.local ([213.9.245.86]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with SMTP id g7NIh1Z03951 for <iiu-admin@zzzzason.org>;
+    Fri, 23 Aug 2002 19:43:02 +0100
+Message-Id: <200208231843.g7NIh1Z03951@dogma.slashnull.org>
+Received: (qmail 28873 invoked from network); 23 Aug 2002 18:18:58 -0000
+Received: from unknown (HELO h) (192.168.0.2) by linux.local with SMTP;
+    23 Aug 2002 18:18:58 -0000
+From: "Sales Department" <info@cheapsmoking.com>
+Subject: Low Price Tobacco
+To: iiu-admin@zzzzason.org
+Reply-To: info@cheapsmoking.com
+Date: Fri, 23 Aug 2002 20:24:48 +0200
+X-Priority: 3
+X-Library: Indy 8.0.25
+Sender: iiu-owner@taint.org
+Errors-To: iiu-owner@taint.org
+X-Beenthere: iiu@iiu.taint.org
+X-Mailman-Version: 2.0.10
+Precedence: bulk
+List-Unsubscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=unsubscribe>
+List-Id: Irish Internet Users <iiu.iiu.taint.org>
+List-Post: <mailto:iiu@iiu.taint.org>
+List-Help: <mailto:iiu-request@iiu.taint.org?subject=help>
+List-Subscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=subscribe>
+List-Archive: <http://iiu.taint.org/pipermail/iiu/>
+
+Dear Sir / Madam
+
+If you are fed up of being 'ripped off' by the British government every time you buy your tobacco, then you should visit our website, where you can now buy 4 cartons of cigarettes, or 40 pouches of rolling tobacco from as little as 170 Euros (approx 105 pounds), inclusive of delivery by registered air mail from our office in Spain.  
+
+Why pay more???
+
+Visit our website at
+http://www.cheapsmoking.com/?ID=2
+
+Best regards
+Sales Department
+Cheap Smoking
+Spain
+xay1992391y
+

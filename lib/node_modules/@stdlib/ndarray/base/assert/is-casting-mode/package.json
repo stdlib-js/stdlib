@@ -1,0 +1,77 @@
+{
+  "name": "@stdlib/ndarray/base/assert/is-casting-mode",
+  "version": "0.0.0",
+  "description": "Test if an input value is a supported ndarray casting mode.",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "main": "./lib",
+  "directories": {
+    "benchmark": "./benchmark",
+    "doc": "./docs",
+    "example": "./examples",
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "scripts": {},
+  "homepage": "https://github.com/stdlib-js/stdlib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stdlib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
+  "keywords": [
+    "stdlib",
+    "stdtypes",
+    "types",
+    "base",
+    "ndarray",
+    "casting",
+    "cast",
+    "convert",
+    "multidimensional",
+    "array",
+    "utilities",
+    "utility",
+    "utils",
+    "util",
+    "assert",
+    "test",
+    "check",
+    "is",
+    "valid",
+    "validate",
+    "validation",
+    "isvalid",
+    "ismode"
+  ],
+  "__stdlib__": {}
+}

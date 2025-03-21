@@ -1,0 +1,87 @@
+From rssfeeds@jmason.org  Thu Sep 26 16:43:15 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id E543516F69
+	for <jm@localhost>; Thu, 26 Sep 2002 16:42:08 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 16:42:08 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8QFRgg24226 for
+    <jm@jmason.org>; Thu, 26 Sep 2002 16:27:42 +0100
+Message-Id: <200209261527.g8QFRgg24226@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: "hyatt@mozilla" <rssfeeds@spamassassin.taint.org>
+Subject: Priceless
+Date: Thu, 26 Sep 2002 15:27:41 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.mozillazine.org/weblogs/hyatt/#85443744
+Date: Not supplied
+
+I just finished reading an article about Mozilla[1] for Salon.com[2]. This 
+excerpt was rather amusing.
+
+_It is a good question, because in almost every way, Mozilla is a better 
+browser than Navigator. For example, Netscape's best new feature, tabbed 
+browsing -- which lets you have several Web pages open in the same browser 
+window, and allows you to bookmark all the pages under one name -- was in 
+Mozilla many months ago, and the Mozilla project that created it (called 
+MultiZilla) already has an improved version available. When asked about this, 
+Yecies, of Netscape, said, "That's true, but the engineer who's working on it 
+[for Mozilla] is a Netscape employee. It was always done with the intention of 
+fostering general browsing usability for Netscape." 
+_
+Yes, ok, I suppose that's true if by "Netscape employee" you really meant 
+"Apple employee." and by "always done with the intention of fostering general 
+browsing usability for Netscape" you meant "was done in a weekend for Mozilla 
+because I thought MultiZilla was cool." 
+
+Here's how the whole tabbed browsing thing happened. One night I finally 
+downloaded an extension called MultiZilla (go check it out on mozdev.org[3]. I 
+was particularly impressed with a feature contained in MultiZilla called tabbed 
+browsing. I started doing research and discovered NetCaptor[4], a tabbed 
+browser that embedded WinIE. 
+
+MultiZilla was cool but at the time suffered from two fundamental flaws that 
+prevented the code from being incorporated into the Mozilla tree. The first was 
+a UI flaw, namely that at the time it had ripped off NetCaptor down to the last 
+context menu item. The GUI was similar enough that there would have been 
+definite concerns about so obviously copying some of NetCaptor's more obscure 
+capabilities (like sticky names and tab locking). The second concern was that 
+the tab behavior wasn't encapsulated cleanly into a widget. 
+
+I produced a simplified version of tabbed browsing on my own time (did it in a 
+weekend) that removed some of the geekier NetCaptor features and that 
+encapsulated the tab behavior so that the changes to other Navigator files 
+would be minimal. Once I established that it didn't degrade performance in the 
+single tab case, I checked it in as an experiment.
+
+The response was overwhelming, as were the bugs that started being filed. So 
+much so that at first I wanted to back tabbed browsing out of the tree. I was 
+overruled by Mozilla, which turned out to be a good thing for all I think. :) 
+Even with all the excitement and hoopla surrounding the advent of tabbed 
+browsing on the engineering side (and in the Mozilla community), Netscape still 
+didn't get it. Netscape marketing prioritized all sorts of useless work that 
+nobody had even started above tabbed browsing in their marketing document. They 
+continued to do so for months, simply not getting it. It was this odd curiosity 
+that one of their engineers had checked in, and they didn't know what to make 
+of it.
+
+Only after the press raved about it did Netscape really jump on board. I'm sure 
+Netscape is doing the same thing now with popup blocking. Can't you just see it 
+now? We'll have a Popup Manager, and a Manager to manage the Popup Manager, and 
+twenty-seven preferences for fine-grained control of all aspects of popups. 
+
+Can you believe how disfunctional Netscape is? When their engineers say "you 
+should do this" or "you should do that", they get completely ignored (or blown 
+off), but when CNet says "We didn't like this, or we didn't like that.", 
+Netscape scurries to meet their demands. That is simply pathetic.
+
+[1] http://archive.salon.com/tech/feature/2002/09/10/browser_wars/
+[2] http://www.salon.com
+[3] http://www.mozdev.org
+[4] http://www.netcaptor.com
+
+

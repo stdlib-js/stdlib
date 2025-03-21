@@ -1,0 +1,79 @@
+
+{{alias}}( [a, b] )
+    Returns a Kumaraswamy's double bounded distribution object.
+
+    Parameters
+    ----------
+    a: number (optional)
+        First shape parameter. Must be greater than `0`. Default: `1.0`.
+
+    b: number (optional)
+        Second shape parameter. Must be greater than `0`. Default: `1.0`.
+
+    Returns
+    -------
+    kumaraswamy: Object
+        Distribution instance.
+
+    kumaraswamy.a: number
+        First shape parameter. If set, the value must be greater than `0`.
+
+    kumaraswamy.b: number
+        Second shape parameter. If set, the value must be greater than `0`.
+
+    kumaraswamy.kurtosis: number
+        Read-only property which returns the excess kurtosis.
+
+    kumaraswamy.mean: number
+        Read-only property which returns the expected value.
+
+    kumaraswamy.mode: number
+        Read-only property which returns the mode.
+
+    kumaraswamy.skewness: number
+        Read-only property which returns the skewness.
+
+    kumaraswamy.stdev: number
+        Read-only property which returns the standard deviation.
+
+    kumaraswamy.variance: number
+        Read-only property which returns the variance.
+
+    kumaraswamy.cdf: Function
+        Evaluates the cumulative distribution function (CDF).
+
+    kumaraswamy.pdf: Function
+        Evaluates the probability density function (PDF).
+
+    kumaraswamy.quantile: Function
+        Evaluates the quantile function at probability `p`.
+
+    Examples
+    --------
+    > var kumaraswamy = {{alias}}( 6.0, 5.0 );
+    > kumaraswamy.a
+    6.0
+    > kumaraswamy.b
+    5.0
+    > kumaraswamy.kurtosis
+    ~3.194
+    > kumaraswamy.mean
+    ~0.696
+    > kumaraswamy.mode
+    ~0.746
+    > kumaraswamy.skewness
+    ~-0.605
+    > kumaraswamy.stdev
+    ~0.126
+    > kumaraswamy.variance
+    ~0.016
+    > kumaraswamy.cdf( 0.8 )
+    ~0.781
+    > kumaraswamy.pdf( 1.0 )
+    ~0.0
+    > kumaraswamy.quantile( 0.8 )
+    ~0.807
+
+    See Also
+    --------
+

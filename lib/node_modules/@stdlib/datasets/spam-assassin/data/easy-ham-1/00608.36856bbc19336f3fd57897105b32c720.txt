@@ -1,0 +1,64 @@
+From fork-admin@xent.com  Tue Sep 17 23:29:50 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 7517616F03
+	for <jm@localhost>; Tue, 17 Sep 2002 23:29:50 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 17 Sep 2002 23:29:50 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8HKbbC25882 for <jm@jmason.org>;
+    Tue, 17 Sep 2002 21:37:38 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 3B2DE2940C8; Tue, 17 Sep 2002 13:34:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hotmail.com (dav26.law15.hotmail.com [64.4.22.83]) by
+    xent.com (Postfix) with ESMTP id B4D652940C8 for <fork@xent.com>;
+    Tue, 17 Sep 2002 13:33:04 -0700 (PDT)
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Tue, 17 Sep 2002 13:36:22 -0700
+X-Originating-Ip: [207.202.171.254]
+From: "Mr. FoRK" <fork_list@hotmail.com>
+To: "Luis Villa" <louie@ximian.com>, <fork@spamassassin.taint.org>
+References: <20020917165028.4F4EA16F03@spamassassin.taint.org>
+    <1032284209.2347.186.camel@towel.boston.ximian.com>
+Subject: Re: Slaughter in the Name of God
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.50.4133.2400
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4133.2400
+Message-Id: <DAV26BcLJjiOivDY1FF00000bce@hotmail.com>
+X-Originalarrivaltime: 17 Sep 2002 20:36:22.0259 (UTC) FILETIME=[E2742C30:01C25E89]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 17 Sep 2002 13:40:12 -0700
+
+
+----- Original Message -----
+From: "Luis Villa" <louie@ximian.com>
+
+>
+> They were the ruling class of a feudal, farming society for quite some
+> time; I believe there were more than a few issues there. Certainly, not
+> everyone in Tibet is as excited about the Dalai Lama as Hollywood
+> appears to be. [Not that the Chinese are much better rights-wise, but
+> they've actually built roads and such, which led to the creation of
+> merchant classes and the like that never existed under the Tibetans.]
+And it's not /going/ to exist under the Tibetans, because it'll be owned and
+operated by Chinese nationals.
+
+

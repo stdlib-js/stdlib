@@ -1,0 +1,29 @@
+
+{{alias}}( iterator )
+    Tests whether all iterated values are falsy.
+
+    The function immediately returns upon encountering a truthy value.
+
+    If provided an iterator which does not return any iterated values, the
+    function returns `true`.
+
+    Parameters
+    ----------
+    iterator: Object
+        Input iterator over which to iterate.
+
+    Returns
+    -------
+    bool: boolean
+        The function returns `false` if a value is truthy; otherwise, the
+        function returns `true`.
+
+    Examples
+    --------
+    > var arr = {{alias:@stdlib/array/to-iterator}}( [ 0, 0, 0, 0, 1 ] );
+    > var bool = {{alias}}( arr )
+    false
+
+    See Also
+    --------
+

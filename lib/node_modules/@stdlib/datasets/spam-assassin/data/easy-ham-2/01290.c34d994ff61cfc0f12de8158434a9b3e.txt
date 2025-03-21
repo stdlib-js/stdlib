@@ -1,0 +1,92 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Mon Jul 22 18:27:48 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7B9E7440C9
+	for <jm@localhost>; Mon, 22 Jul 2002 13:27:47 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:27:47 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFGv901755 for
+    <jm-sa@jmason.org>; Mon, 22 Jul 2002 16:16:57 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id PAA32412 for
+    <jm-sa@jmason.org>; Mon, 22 Jul 2002 15:22:19 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17We1e-0000Ms-00; Mon,
+    22 Jul 2002 07:19:02 -0700
+Received: from moon.campus.luth.se ([130.240.202.158]) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17We1J-0005Sp-00 for
+    <spamassassin-talk@lists.sourceforge.net>; Mon, 22 Jul 2002 07:18:41 -0700
+Received: from moon.campus.luth.se (tony@moon.campus.luth.se
+    [130.240.202.158]) by moon.campus.luth.se (8.12.3/8.12.3) with ESMTP id
+    g6MEI3Zl010277; Mon, 22 Jul 2002 16:18:03 +0200 (CEST) (envelope-from
+    tony@svanstrom.com)
+From: "Tony L. Svanstrom" <tony@svanstrom.com>
+X-X-Sender: tony@moon.campus.luth.se
+To: Olivier Nicole <on@cs.ait.ac.th>
+Cc: yyyyates@sial.org, <spamassassin-talk@example.sourceforge.net>
+Subject: Re: [SAtalk] Apple, Kmail, Adaptive Rules
+In-Reply-To: <200207220241.JAA18805@banyan.cs.ait.ac.th>
+Message-Id: <20020722161427.V10232-100000@moon.campus.luth.se>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Mon, 22 Jul 2002 16:18:03 +0200 (CEST)
+Date: Mon, 22 Jul 2002 16:18:03 +0200 (CEST)
+
+On Mon, 22 Jul 2002 the voices made Olivier Nicole write:
+
+> >How would forgeries (e.g. viruses) be detected?  Would there be an
+> >"oops-I-didn't-mean-to-submit-that" option somehow?
+>
+> Real viruses are filtered before they reach any mailbox for delivery.
+>
+> Tose two addresses could be accessible only for internal mail.
+>
+> And as a user is using this mechanism to build his own database of
+> spam/non-spam, that's his problem is he sumbit something wrong.
+>
+> BTW, same forgery or wrong submission problems would exist if each
+> user had his own set of 2 addresses.
+
+ Not really, because you could use [user]-[action]-[passw]@domain.tld; instead
+of letting 100'000 other users mess with your settings; not to mention virii
+that randomly pick sendernames from addressbooks and the future virii that
+target these "not spam"-functions...
+
+
+	/Tony
+-- 
+# Per scientiam ad libertatem! // Through knowledge towards freedom! #
+# Genom kunskap mot frihet! =*= (c) 1999-2002 tony@svanstrom.com =*= #
+
+    perl -e'print$_{$_} for sort%_=`lynx -source svanstrom.com/t`'
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

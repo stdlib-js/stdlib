@@ -1,0 +1,34 @@
+
+{{alias}}()
+    Returns a list of simple American-English words (revised Spache).
+
+    Returns
+    -------
+    out: Array<string>
+        List of simple American-English words.
+
+    Examples
+    --------
+    > var list = {{alias}}()
+    [ 'a', 'able', 'about', 'above', ... ]
+
+    References
+    ----------
+    - Spache, George. 1953. "A New Readability Formula for Primary-Grade Reading
+    Materials." *The Elementary School Journal* 53 (7): 410–13. doi:10.1086/
+    458513.
+    - Klare, George R. 1974. "Assessing Readability." *Reading Research
+    Quarterly* 10 (1). Wiley, International Reading Association: 62–102.
+    <http://www.jstor.org/stable/747086>.
+    - Stone, Clarence R. 1956. "Measuring Difficulty of Primary Reading
+    Material: A Constructive Criticism of Spache's Measure." *The Elementary
+    School Journal* 57 (1). University of Chicago Press: 36–41.
+    <http://www.jstor.org/stable/999700>.
+    - Perera, Katherine. 2012. "The assessment of linguistic difficulty in
+    reading material." In *Linguistics and the Teacher*, edited by Ronald
+    Carter, 101–13. Routledge Library Editions: Education. Taylor & Francis.
+    <https://books.google.com/books?id=oNXFQ9Gn6XIC>.
+
+    See Also
+    --------
+

@@ -1,0 +1,129 @@
+From exmh-users-admin@redhat.com  Mon Aug 19 10:58:56 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9AE604413A
+	for <jm@localhost>; Mon, 19 Aug 2002 05:50:39 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:50:39 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7I0V5618967 for
+    <jm-exmh@jmason.org>; Sun, 18 Aug 2002 01:31:05 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 6927A3EAB6; Sat, 17 Aug 2002
+    20:31:01 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id B14503EAB6
+    for <exmh-users@listman.redhat.com>; Sat, 17 Aug 2002 20:29:59 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g7I0TvV19637 for exmh-users@listman.redhat.com; Sat, 17 Aug 2002
+    20:29:57 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g7I0TvY19633 for
+    <exmh-users@redhat.com>; Sat, 17 Aug 2002 20:29:57 -0400
+Received: from austin-jump.vircio.com
+    (IDENT:cp+g1M2SlwtDFzQdp2pQ72ohdC1Pws9G@jump-austin.vircio.com
+    [192.12.3.99]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id g7I0Fsl02285
+    for <exmh-users@redhat.com>; Sat, 17 Aug 2002 20:15:54 -0400
+Received: (qmail 7193 invoked by uid 104); 18 Aug 2002 00:29:56 -0000
+Received: from cwg-exmh@DeepEddy.Com by localhost.localdomain with
+    qmail-scanner-0.90 (uvscan: v4.1.60/v4218. . Clean. Processed in 0.01994
+    secs); 17/08/2002 19:29:56
+Received: from deepeddy.vircio.com (@[10.1.2.1]) (envelope-sender
+    <cwg-exmh@DeepEddy.Com>) by austin-jump.vircio.com (qmail-ldap-1.03) with
+    SMTP for <exmh-users@redhat.com>; 18 Aug 2002 00:29:56 -0000
+Received: (qmail 29127 invoked from network); 18 Aug 2002 00:29:53 -0000
+Received: from localhost (HELO deepeddy.vircio.com)
+    (?Dz2g4IoZxLT4mPaWoRX8J4OGKC1pU283?@[127.0.0.1]) (envelope-sender
+    <cwg-exmh@DeepEddy.Com>) by localhost (qmail-ldap-1.03) with SMTP for
+    <exmh-users@redhat.com>; 18 Aug 2002 00:29:53 -0000
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4
+To: exmh-users@spamassassin.taint.org
+Subject: Re: V2.4 keeps incorrectly blue-ing folders
+In-Reply-To: <20020817234026.4645C6F980@washington.bellatlantic.net>
+References: <20020817234026.4645C6F980@washington.bellatlantic.net>
+X-Url: http://www.DeepEddy.Com/~cwg
+X-Image-Url: http://www.DeepEddy.Com/~cwg/chris.gif
+MIME-Version: 1.0
+Content-Type: multipart/signed;
+    boundary="==_Exmh_-882253667P";
+    micalg=pgp-sha1;
+    protocol="application/pgp-signature"
+Content-Transfer-Encoding: 7bit
+From: Chris Garrigues <cwg-exmh@DeepEddy.Com>
+Message-Id: <1029630592.29122.TMDA@deepeddy.vircio.com>
+X-Delivery-Agent: TMDA/0.57
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+X-Reply-To: Chris Garrigues <cwg-dated-1030062593.697ad3@DeepEddy.Com>
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Sat, 17 Aug 2002 19:29:51 -0500
+
+--==_Exmh_-882253667P
+Content-Type: text/plain; charset=us-ascii
+
+> From:  Harlan Feinstein <harlan@feinsteins.net>
+> Date:  Sat, 17 Aug 2002 19:40:21 -0400
+>
+> Exmh keeps turning the folder indicator blue for one folder, and I've read 
+> all the messages in the folder.  Driving me nuts.  I've packed the folder, 
+> I've deleted the .mh_sequences file there, keeps doing it.  Help!  
+> 
+> I've just recently started using 2.4 (was using 2.2), so perhaps there are 
+> things that needed to be deleted/changed in my settings?
+
+2.4?
+
+2.5 has been out for over a year.
+
+I can't think of anything with those symptoms in 2.4, but why don't you try 
+the upgrade and see if you still have the problem.
+
+Chris
+
+-- 
+Chris Garrigues                 http://www.DeepEddy.Com/~cwg/
+virCIO                          http://www.virCIO.Com
+716 Congress, Suite 200
+Austin, TX  78701		+1 512 374 0500
+
+  World War III:  The Wrong-Doers Vs. the Evil-Doers.
+
+
+
+
+--==_Exmh_-882253667P
+Content-Type: application/pgp-signature
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: Exmh version 2.2_20000822 06/23/2000
+
+iD8DBQE9Xup/K9b4h5R0IUIRAgvAAJ9y5U/x3/bIv3J1ZIvg68MveMoMWACfcRbJ
+rzUKLzFVnLfNIVg3qKRgGhw=
+=mlhE
+-----END PGP SIGNATURE-----
+
+--==_Exmh_-882253667P--
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+

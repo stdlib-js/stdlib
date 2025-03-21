@@ -1,0 +1,44 @@
+{
+	"options": {},
+	"fields": [
+		{
+			"field": "src",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "include",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "libraries",
+			"resolve": false,
+			"relative": false
+		},
+		{
+			"field": "libpath",
+			"resolve": true,
+			"relative": false
+		}
+	],
+	"confs": [
+		{
+			"src": [],
+			"include": [
+				"./include"
+			],
+			"libraries": [],
+			"libpath": [],
+			"dependencies": [
+				"@stdlib/math/base/special/abs",
+				"@stdlib/math/base/special/absf",
+				"@stdlib/math/base/special/labs",
+				"@stdlib/strided/base/function-object",
+				"@stdlib/strided/base/unary",
+				"@stdlib/strided/dtypes",
+				"@stdlib/strided/napi/unary"
+			]
+		}
+	]
+}

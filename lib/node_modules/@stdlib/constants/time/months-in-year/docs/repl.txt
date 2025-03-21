@@ -1,0 +1,17 @@
+
+{{alias}}
+    Number of months in a year.
+
+    The value is a generalization and does **not** take into account
+    inaccuracies due to daylight savings conventions, crossing timezones, or
+    other complications with time and dates.
+
+    Examples
+    --------
+    > var yrs = 3.14;
+    > var mons = yrs * {{alias}}
+    37.68
+
+    See Also
+    --------
+

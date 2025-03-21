@@ -1,0 +1,261 @@
+From spam-request@z1.example.com  Sat Oct  5 17:23:18 2002
+Return-Path: <spam-request@z1.example.com>
+Delivered-To: zzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id A9BCD16F17
+	for <zzz@localhost>; Sat,  5 Oct 2002 17:22:56 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzz@localhost (single-drop); Sat, 05 Oct 2002 17:22:56 +0100 (IST)
+Received: from z2.example.com (z2.example.com [204.74.68.55]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g95EYGK12689 for
+    <zzz@spamassassin.taint.org>; Sat, 5 Oct 2002 15:34:17 +0100
+Received: from localhost (daemon@localhost) by z2.example.com
+    (8.11.6/8.9.3) with SMTP id g95EYre54183; Sat, 5 Oct 2002 07:34:53 -0700
+    (PDT) (envelope-from spam-request@z1.example.com)
+Received: by z2.example.com (bulk_mailer v1.13); Sat, 5 Oct 2002
+    07:34:46 -0700
+Received: (from daemon@localhost) by z2.example.com (8.11.6/8.9.3) id
+    g95EYFi54153 for spam-relay; Sat, 5 Oct 2002 07:34:15 -0700 (PDT)
+    (envelope-from neil@petemoss.com)
+Received: (from smap@localhost) by z2.example.com (8.11.6/8.9.3) id
+    g95EYEn54095 for <zzzzz@z1.example.com>; Sat, 5 Oct 2002 07:34:14 -0700
+    (PDT) (envelope-from neil@petemoss.com)
+Received: from tomts23.bellnexxia.net(209.226.175.185) by z2.example.com
+    via smap (V1.3) id xma054092; Sat, 5 Oct 02 07:34:07 -0700
+Received: from [192.168.0.102] ([65.94.231.199]) by
+    tomts23-srv.bellnexxia.net (InterMail vM.5.01.04.19
+    201-253-122-122-119-20020516) with ESMTP id
+    <20021005143405.TYJM24834.tomts23-srv.bellnexxia.net@[192.168.0.102]> for
+    <zzzzz@z1.example.com>; Sat, 5 Oct 2002 10:34:05 -0400
+MIME-Version: 1.0
+X-Sender: b1gcux43@pop2.sympatico.ca
+Message-Id: <p05200a0db9c4a8c4bd16@[192.168.0.102]>
+X-Plug: http://spamNEWS.com
+X-Habeas-Swe-1: winter into spring
+X-Habeas-Swe-2: brightly anticipated
+X-Habeas-Swe-3: like Habeas SWE (tm)
+X-Habeas-Swe-4: Copyright 2002 Habeas (tm)
+X-Habeas-Swe-5: Sender Warranted Email (SWE) (tm). The sender of this
+X-Habeas-Swe-6: email in exchange for a license for this Habeas
+X-Habeas-Swe-7: warrant mark warrants that this is a Habeas Compliant
+X-Habeas-Swe-8: Message (HCM) and not spam. Please report use of this
+X-Habeas-Swe-9: mark in spam to <http://www.habeas.com/report/>.
+Date: Sat, 5 Oct 2002 10:33:46 -0400
+To: zzzzz@z1.example.com
+From: Neil Schwartzman <neil@petemoss.com>
+Subject: MEDIA: spamNEWS Digest September 30 - October 05, 2002
+Content-Type: text/plain; charset="us-ascii"
+X-Requests-To: spam-request@z1.example.com
+X-Originally-To: zzzzz@z1.example.com
+
+spamNEWS: Providing the news about junk E-mail to Internet professionals        
+______________________________________________________________________________
+This is a weekly digest form of spamNEWS, posted to USENET and spam-oriented mailing lists. For the complete, DAILY VERSION of spamNEWS, including a weekly calendar of email-related events and conferences, free confirmed opt-in subscriptions are available at http://survey.whitehat.com/survey.php?s=2650
+________________________________________________________________________________
+Did we miss something? Know of a hot story? Send leads to: http://survey.whitehat.com/predirect.php?c=6688
+________________________________________________________________________________
+spamNEWS DATABASE @ SPAMCON.org http://survey.whitehat.com/predirect.php?c=6689
+________________________________________________________________________________
+spamNEWS is sponsored by POSTINI http://survey.whitehat.com/predirect.php?c=6687
+________________________________________________________________________________
+SPAM FILTERING TECHNIQUES - IBM developerWorks 9/1/2002 <http://click.wh5.com/redirect.php?c=8552&u=lXoyuP..CahrNet_0bkttg>
+
+HELP ON THE WAY IN SPAM WARS - internet.com 9/17/2002 <http://click.wh5.com/redirect.php?c=8556&u=lXoyuP..CahrNet_0bkttg>
+
+ACTIVESTATE RELEASES PERLMX 2.1 - Canada IT 9/18/2002 <http://click.wh5.com/redirect.php?c=8551&u=lXoyuP..CahrNet_0bkttg>
+
+SPAM: E-MARKETING'S ALTER EGO - CRM 9/19/2002 <http://click.wh5.com/redirect.php?c=8560&u=lXoyuP..CahrNet_0bkttg>
+
+NEW WEAPON IN THE WAR AGAINST SPAM: CATS - Seattle Times 9/21/2002 <http://click.wh5.com/redirect.php?c=8548&u=lXoyuP..CahrNet_0bkttg>
+
+FOCUSED APPS EASE E-MAIL OVERLOAD - eWEEK 9/23/2002 <http://click.wh5.com/redirect.php?c=8498&u=lXoyuP..CahrNet_0bkttg>
+
+MARKETERS USE TRICKS TO SPAM YOU - News Channel 8 9/25/2002 <http://click.wh5.com/redirect.php?c=8547&u=lXoyuP..CahrNet_0bkttg>
+
+NEEDED NOW: LAWS TO CAN SPAM - Business Week 9/26/2002 <http://click.wh5.com/redirect.php?c=8508&u=lXoyuP..CahrNet_0bkttg>
+
+BEWARE OF SECONDHAND SPAMMING - DM News 9/26/2002 <http://click.wh5.com/redirect.php?c=8542&u=lXoyuP..CahrNet_0bkttg>
+
+WILL E-MAIL KILL WALL STREET? - Forbes 9/26/2002 <http://click.wh5.com/redirect.php?c=8501&u=lXoyuP..CahrNet_0bkttg>
+
+CALIFORNIA SUES MARKETING FIRM FOR SPAMMING - Mercury News 9/26/2002 <http://click.wh5.com/redirect.php?c=8503&u=lXoyuP..CahrNet_0bkttg>
+
+U DECLARES WAR ON SPAM E-MAIL; FILTERS TO DEBUT - Minnesota Daily 9/26/2002 <http://click.wh5.com/redirect.php?c=8546&u=lXoyuP..CahrNet_0bkttg>
+
+ONLINE PAYMENT SERVICE PAYPAL HIT BY SCAM - Computer World 9/27/2002 <http://click.wh5.com/redirect.php?c=8486&u=lXoyuP..CahrNet_0bkttg>
+
+AMAZON TO TUNE PRIVACY POLICY - E-Commerce Times 9/27/2002 <http://click.wh5.com/redirect.php?c=8509&u=lXoyuP..CahrNet_0bkttg>
+
+WHAT DO YOU USE TO BATTLE SPAM? - eWEEK 9/27/2002 <http://click.wh5.com/redirect.php?c=8496&u=lXoyuP..CahrNet_0bkttg>
+
+SPAM, AND WHAT YOU CAN DO ABOUT IT - INT Media Group 9/27/2002 <http://click.wh5.com/redirect.php?c=8489&u=lXoyuP..CahrNet_0bkttg>
+
+UNIVERSITY TAKES AIM AT CAMPUS SPAM - Internet Broadcasting Systems 9/27/2002 <http://click.wh5.com/redirect.php?c=8555&u=lXoyuP..CahrNet_0bkttg>
+
+STUDY: E-MAIL TO DOUBLE BY 2006 - internetnews.com 9/27/2002 <http://click.wh5.com/redirect.php?c=8497&u=lXoyuP..CahrNet_0bkttg>
+
+GOOD NEWS ON PRIVACY - Nando Media 9/27/2002 <http://click.wh5.com/redirect.php?c=8510&u=lXoyuP..CahrNet_0bkttg>
+
+SPAM-BUSTER BRIGHTMAIL DELIVERS - San Francisco Business Journals 9/27/2002 <http://click.wh5.com/redirect.php?c=8543&u=lXoyuP..CahrNet_0bkttg>
+
+THE FUTILE FIGHT AGAINST SPAM - St. Petersburg Times 9/27/2002 <http://click.wh5.com/redirect.php?c=8507&u=lXoyuP..CahrNet_0bkttg>
+
+VIRUSES ARE DEAD. LONG LIVE VIRUSES! - The Register 9/27/2002 <http://click.wh5.com/redirect.php?c=8511&u=lXoyuP..CahrNet_0bkttg>
+
+EMAIL REMOVER 3.0 - VNU 9/27/2002 <http://click.wh5.com/redirect.php?c=8495&u=lXoyuP..CahrNet_0bkttg>
+
+ANTI-SPAM LAWS A TOUGH 'CELL' - Wired 9/27/2002 <http://click.wh5.com/redirect.php?c=8500&u=lXoyuP..CahrNet_0bkttg>
+
+LONG ARM OF THE LAW STRETCHES - News.com AU 9/28/2002 <http://click.wh5.com/redirect.php?c=8499&u=lXoyuP..CahrNet_0bkttg>
+
+SPAM - Boston Globe 9/29/2002 <http://click.wh5.com/redirect.php?c=8506&u=lXoyuP..CahrNet_0bkttg>
+
+FIGHT BACK AGAINST E-MAIL SPAM - Calgary Herald 9/30/2002 <http://click.wh5.com/redirect.php?c=8545&u=lXoyuP..CahrNet_0bkttg>
+
+ADVERTISING BY E-MAIL -- WITHOUT RAISING HACKLES! - eMail Results 9/30/2002 <http://click.wh5.com/redirect.php?c=8529&u=lXoyuP..CahrNet_0bkttg>
+
+TOWARD OPTIMAL CYBERSPACE SECURITY - eWEEK 9/30/2002 <http://click.wh5.com/redirect.php?c=8601&u=lXoyuP..CahrNet_0bkttg>
+
+TIME TO CAN THE SPAM - Federal Computer Week 9/30/2002 <http://click.wh5.com/redirect.php?c=8531&u=lXoyuP..CahrNet_0bkttg>
+
+ANTI-SPAM CULTURE HELPED SPAWN LIST THEFT - iMarketing News 9/30/2002 <http://click.wh5.com/redirect.php?c=8504&u=lXoyuP..CahrNet_0bkttg>
+
+SPAM BUSTERS - Independent Digital 9/30/2002 <http://click.wh5.com/redirect.php?c=8550&u=lXoyuP..CahrNet_0bkttg>
+
+HOLD THE SPAM - Information Week 9/30/2002 <http://click.wh5.com/redirect.php?c=8523&u=lXoyuP..CahrNet_0bkttg>
+
+SMS SPAM PROBLEM STARTS TO SNOWBALL - Inquirer 9/30/2002 <http://click.wh5.com/redirect.php?c=8553&u=lXoyuP..CahrNet_0bkttg>
+
+STATE PROSECUTORS TRYING TO DELETE SPAM - Los Angeles Times 9/30/2002 <http://click.wh5.com/redirect.php?c=8524&u=lXoyuP..CahrNet_0bkttg>
+
+KILL THAT SPAM! - Mercury News 9/30/2002 <http://click.wh5.com/redirect.php?c=8505&u=lXoyuP..CahrNet_0bkttg>
+
+NEW 'BUGBEAR' BITES NET USERS - MSNBC
+
+9/30/2 9/30/2002 <http://click.wh5.com/redirect.php?c=8533&u=lXoyuP..CahrNet_0bkttg>
+
+THE LAST MILE - Network Computing 9/30/2002 <http://click.wh5.com/redirect.php?c=8519&u=lXoyuP..CahrNet_0bkttg>
+
+TIRED OF SPAM? - New York Times Service 9/30/2002 <http://click.wh5.com/redirect.php?c=8554&u=lXoyuP..CahrNet_0bkttg>
+
+CALEO & EMERIS ON EMAIL QUEST - Opt-in News 9/30/2002 <http://click.wh5.com/redirect.php?c=8487&u=lXoyuP..CahrNet_0bkttg>
+
+EUNIVERSE ACQUIRES RESPONSEBASE - Opt-in News 9/30/2002 <http://click.wh5.com/redirect.php?c=8488&u=lXoyuP..CahrNet_0bkttg>
+
+ECLEANER V2.01 - PC World 9/30/2002 <http://click.wh5.com/redirect.php?c=8516&u=lXoyuP..CahrNet_0bkttg>
+
+SPAM OPPONENTS TURN TO LAWSUITS TO STOP JUNK E-MAIL - Reuters 9/30/2002 <http://click.wh5.com/redirect.php?c=8525&u=lXoyuP..CahrNet_0bkttg>
+
+EU MULLS DATA PRIVACY LAW REVIEW - Reuters 9/30/2002 <http://click.wh5.com/redirect.php?c=8526&u=lXoyuP..CahrNet_0bkttg>
+
+VODAFONE IRELAND FACES SKI SPAM ALLEGATIONS - The Register 9/30/2002 <http://click.wh5.com/redirect.php?c=8520&u=lXoyuP..CahrNet_0bkttg>
+
+YOU HAVE MAIL: 31 BILLION A DAY - VNU 9/30/2002 <http://click.wh5.com/redirect.php?c=8518&u=lXoyuP..CahrNet_0bkttg>
+
+MARYLAND LAW TARGETS SPAMMERS - Washington Times 9/30/2002 <http://click.wh5.com/redirect.php?c=8514&u=lXoyuP..CahrNet_0bkttg>
+
+PORN SPAM: IT'S GETTING RAUNCHIER - Wired 9/30/2002 <http://click.wh5.com/redirect.php?c=8521&u=lXoyuP..CahrNet_0bkttg>
+
+CITING NON-EXISTENT LAW, JUDGE RULES AGAINST SPAM VICTIM - AboutSpam.com 10/1/2002 <http://click.wh5.com/redirect.php?c=8534&u=lXoyuP..CahrNet_0bkttg>
+
+AOL TO DELIVER ABDUCTED-CHILDREN ALERTS TO ITS 26M MEMBERS - Associated Press 10/1/2002 <http://click.wh5.com/redirect.php?c=8540&u=lXoyuP..CahrNet_0bkttg>
+
+SURESH RAMASUBRAMANIAN: ANTI-SPAM MAN - Business Week 10/1/2002 <http://click.wh5.com/redirect.php?c=8513&u=lXoyuP..CahrNet_0bkttg>
+
+WE TRIED EMAIL -- IT DIDN'T WORK - ClickZ 10/1/2002 <http://click.wh5.com/redirect.php?c=8527&u=lXoyuP..CahrNet_0bkttg>
+
+INTERVIEW WITH SURESH RAMASUBRAMANIAN: OUTBLAZE ANTI-SPAM MAN - CNN 10/1/2002 <http://click.wh5.com/redirect.php?c=8583&u=lXoyuP..CahrNet_0bkttg>
+
+INTERNET EMAIL ADDRESSES - Computer Bits 10/1/2002 <http://click.wh5.com/redirect.php?c=8528&u=lXoyuP..CahrNet_0bkttg>
+
+COMPUTER CURMUGEON - Computer Bits 10/1/2002 <http://click.wh5.com/redirect.php?c=8530&u=lXoyuP..CahrNet_0bkttg>
+
+CALIFORNIA POLS WANT TO BAN CELL PHONE SPAM - DIRECT Newsline 10/1/2002 <http://click.wh5.com/redirect.php?c=8559&u=lXoyuP..CahrNet_0bkttg>
+
+BIG PUSH FROM IBM ON LOTUS APPS - Information Week 10/1/2002 <http://click.wh5.com/redirect.php?c=8549&u=lXoyuP..CahrNet_0bkttg>
+
+IBM'S NOTES UPGRADES FOCUS ON COLLABORATION, COSTS, STOPPING SPAM - InternetWeek 10/1/2002 <http://click.wh5.com/redirect.php?c=8535&u=lXoyuP..CahrNet_0bkttg>
+
+EMAIL MARKETER SEARCHES FOR PARTNER - Opt-in News 10/1/2002 <http://click.wh5.com/redirect.php?c=8515&u=lXoyuP..CahrNet_0bkttg>
+
+HOW SECURE IS INSTANT MESSAGING? - PC World 10/1/2002 <http://click.wh5.com/redirect.php?c=8532&u=lXoyuP..CahrNet_0bkttg>
+
+DON'T REACH OUT AND TOUCH THIS SOMEONE, ESPECIALLY AT DINNERTIME - Scripps-McClatchy Western Service 10/1/2002 <http://click.wh5.com/redirect.php?c=8600&u=lXoyuP..CahrNet_0bkttg>
+
+NOIE SPAM REVIEW GETS 32 SUBMISSIONS - The Age 10/1/2002 <http://click.wh5.com/redirect.php?c=8522&u=lXoyuP..CahrNet_0bkttg>
+
+DEAR SPAM, GLAD YOU'RE NOT HERE ... - The Age 10/1/2002 <http://click.wh5.com/redirect.php?c=8517&u=lXoyuP..CahrNet_0bkttg>
+
+FIGHTING SPAM AS AN INDIVIDUAL USER - Yomiuri Shimbun 10/1/2002 <http://click.wh5.com/redirect.php?c=8544&u=lXoyuP..CahrNet_0bkttg>
+
+COMPANIES THAT SOLD STUDENT DATA SETTLE FEDERAL CHARGES - Associated Press 10/2/2002 <http://click.wh5.com/redirect.php?c=8557&u=lXoyuP..CahrNet_0bkttg>
+
+OH, THAT DOCTORATE IN BUSINESS ADMINISTRATION - Australian IT 10/2/2002 <http://click.wh5.com/redirect.php?c=8539&u=lXoyuP..CahrNet_0bkttg>
+
+INTERNET PIONEER DAVE RAND JOINS PEER 1 NETWORK BOARD OF DIRECTORS - Canadian Corporate News 10/2/2002 <http://click.wh5.com/redirect.php?c=8584&u=lXoyuP..CahrNet_0bkttg>
+
+COMBATING SPAM - CBS Marketwatch 10/2/2002 <http://click.wh5.com/redirect.php?c=8590&u=lXoyuP..CahrNet_0bkttg>
+
+FAINT POLITICAL VOICES RISE FROM E-MAIL - CNET News.com 10/2/2002 <http://click.wh5.com/redirect.php?c=8558&u=lXoyuP..CahrNet_0bkttg>
+
+YAHOO MARKETING ANGERS STORE OWNERS - CNET News.com 10/2/2002 <http://click.wh5.com/redirect.php?c=8561&u=lXoyuP..CahrNet_0bkttg>
+
+FBI NAMES MOST WANTED SECURITY FLAWS - CNET News.com 10/2/2002 <http://click.wh5.com/redirect.php?c=8602&u=lXoyuP..CahrNet_0bkttg>
+
+LISTS LIVE ON AFTER COMPANY IS GONE - DM News 10/2/2002 <http://click.wh5.com/redirect.php?c=8541&u=lXoyuP..CahrNet_0bkttg>
+
+COMMUNICATIONS SURVEILLANCE - Email 10/2/2002 <http://click.wh5.com/redirect.php?c=8562&u=lXoyuP..CahrNet_0bkttg>
+
+BUGBEAR VIRUS STILL RUNNING WILD - eWeek 10/2/2002 <http://click.wh5.com/redirect.php?c=8603&u=lXoyuP..CahrNet_0bkttg>
+
+TANATOS - A WORM WITH A "TROJAN" IN ITS POCKET - INB 10/2/2002 <http://click.wh5.com/redirect.php?c=8563&u=lXoyuP..CahrNet_0bkttg>
+
+WAYS TO PUT YOUR COMPUTER ON A SPAM-FREE DIET - SuburbanChicagoNews 10/2/2002 <http://click.wh5.com/redirect.php?c=8592&u=lXoyuP..CahrNet_0bkttg>
+
+PIONEERS IN THE EMAIL HIGHLANDS - ClickZ 10/3/2002 <http://click.wh5.com/redirect.php?c=8596&u=lXoyuP..CahrNet_0bkttg>
+
+OUTLOOK, EXCHANGE TO GET NEW FEATURES - CNET News.com 10/3/2002 <http://click.wh5.com/redirect.php?c=8586&u=lXoyuP..CahrNet_0bkttg>
+
+JUDGE ORDERS FCC TO STOP PURSUIT OF FAX.COM - DM News 10/3/2002 <http://click.wh5.com/redirect.php?c=8594&u=lXoyuP..CahrNet_0bkttg>
+
+INFORMATION INUNDATION - INT Media Group 10/3/2002 <http://click.wh5.com/redirect.php?c=8597&u=lXoyuP..CahrNet_0bkttg>
+
+READER REVIEW: HOW I USE OPEN-SOURCE TOOLS TO STUNT SPAM - InternetWeek 10/3/2002 <http://click.wh5.com/redirect.php?c=8587&u=lXoyuP..CahrNet_0bkttg>
+
+OUR VIEWS: FTC SHOULD CURB SPAM AVALANCHE - Los Angeles Times 10/3/2002 <http://click.wh5.com/redirect.php?c=8599&u=lXoyuP..CahrNet_0bkttg>
+
+SPAMFIRE FILTERS OUT A JAGUAR UPDATE - Mac Observer 10/3/2002 <http://click.wh5.com/redirect.php?c=8588&u=lXoyuP..CahrNet_0bkttg>
+
+FILTERING TOOLS OFFER HOPE AGAINST SPAM ONSLAUGHT - Mike Langberg 10/3/2002 <http://click.wh5.com/redirect.php?c=8591&u=lXoyuP..CahrNet_0bkttg>
+
+EMAIL MARKETING TUNE-UP GUIDE - Opt-in News 10/3/2002 <http://click.wh5.com/redirect.php?c=8598&u=lXoyuP..CahrNet_0bkttg>
+
+KINDER SHIELD LABS INTRODUCES CHILD SAFE EMAIL SOFTWARE - PR Newswire 10/3/2002 <http://click.wh5.com/redirect.php?c=8589&u=lXoyuP..CahrNet_0bkttg>
+
+NIGERIAN EMAIL SCAM BROKEN UP - Sydney Morning Herald 10/3/2002 <http://click.wh5.com/redirect.php?c=8582&u=lXoyuP..CahrNet_0bkttg>
+
+CALIFORNIANS SEEK SPAM SHELTER - Wired 10/3/2002 <http://click.wh5.com/redirect.php?c=8595&u=lXoyuP..CahrNet_0bkttg>
+
+PSYCHIC NETWORK EXECS PLEAD GUILTY, MISS CLEO HEADS FOR HEARING - DM News 10/4/2002 <http://click.wh5.com/redirect.php?c=8593&u=lXoyuP..CahrNet_0bkttg>
+
+APPLE NETWORKING TAKES A GIANT LEAP WITH JAGUAR - Wall Street Journal 10/4/2002 <http://click.wh5.com/redirect.php?c=8585&u=lXoyuP..CahrNet_0bkttg>
+
+HABEAS NAMES SPAM AUTHORITY TO HEAD PRODUCT MARKETING - Press Release 10/3/2002 <http://library.northernlight.com/FB20021003550000020.html?cb=200&dx=1006&sc=0#doc>
+________________________________________________________________________________
+spamNEWS is sponsored by POSTINI http://survey.whitehat.com/predirect.php?c=6687
+________________________________________________________________________________
+spamNEWS is published by Pete Moss Publications, Montreal, Canada.
+spamNEWS is a trademark of Pete Moss Publications. ISSN 1499-075X
+Compilation copyright 2002 by Neil Schwartzman, all rights reserved.
+All stories are the copyright of the individual authors and publishers cited.
+
+spamNEWS in any of its forms (web, e-mail, archive) is intended to enhance and provide information. No claim is made as to the accuracy or authenticity of the material provided here. Pete Moss Publications neither extends nor assumes any liability with regard to the information quoted herein.
+
+All broadcast, publication, re-transmission to e-mail lists, the WWW or any other copying or storage, in any medium, on-line or not, must include this section and no fee may be charged for access to this compilation.
+
+--------------------------------------------------------------------------
+spamNEWS is powered by Whitehat http://survey.whitehat.com/predirect.php?c=6695
+--------------------------------------------------------------------------
+
+

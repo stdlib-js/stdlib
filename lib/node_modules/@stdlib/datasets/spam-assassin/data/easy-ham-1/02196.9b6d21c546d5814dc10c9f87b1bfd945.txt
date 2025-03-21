@@ -1,0 +1,35 @@
+From rssfeeds@jmason.org  Wed Oct  2 11:44:52 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id B9A3A16F03
+	for <jm@localhost>; Wed,  2 Oct 2002 11:44:51 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 02 Oct 2002 11:44:51 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9281BK31726 for
+    <jm@jmason.org>; Wed, 2 Oct 2002 09:01:13 +0100
+Message-Id: <200210020801.g9281BK31726@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: boingboing <rssfeeds@spamassassin.taint.org>
+Subject: Big Five record companies guilty of price fixing
+Date: Wed, 02 Oct 2002 08:01:11 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://boingboing.net/#85512062
+Date: Not supplied
+
+Hypocrites in the recording industry have been screaming about people stealing 
+music. All the while, they've been robbing CD buyers. 
+
+    ...five of the largest U.S. distributors of pre-recorded music CDs and 
+    three large retailers agreed to pay millions of dollars in cash and free 
+    CDs as part of an agreement on price-fixing allegations.  
+
+Link[1] Discuss[2]
+
+[1] http://blogcritics.org/archives/2002/09/30/123242.php#20020930123242
+[2] http://www.quicktopic.com/16/H/VL2YSRjKGRqHc
+
+

@@ -1,0 +1,37 @@
+From rssfeeds@jmason.org  Fri Oct  4 11:01:59 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 34BDB16F22
+	for <jm@localhost>; Fri,  4 Oct 2002 11:01:34 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 04 Oct 2002 11:01:34 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9480OK08793 for
+    <jm@jmason.org>; Fri, 4 Oct 2002 09:00:24 +0100
+Message-Id: <200210040800.g9480OK08793@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: boingboing <rssfeeds@spamassassin.taint.org>
+Subject: Robot census
+Date: Fri, 04 Oct 2002 08:00:24 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://boingboing.net/#85519849
+Date: Not supplied
+
+A new census of the world's robot population reveals disturbing negative robot 
+population growth, but still, our fleshless offspring's numbers point to a 
+machinery future: 
+
+    Some 20,000 domestic-help robots were sold worldwide last year, half 
+    designed to mow lawns. Vacuum-cleaning robots were introduced late in 2001 
+    and a study in Sweden found that 5,000 were sold in the last two months of 
+    the year. Window-cleaning robots are set to boom, said the U.N. study.  
+
+Link[1] Discuss[2] (_Thanks, Gatfishing!_)
+
+[1] http://story.news.yahoo.com/news?tmpl=story&u=/ap/20021003/ap_on_hi_te/un_robots
+[2] http://www.quicktopic.com/boing/H/WM8CuKADkMJR
+
+

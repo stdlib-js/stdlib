@@ -1,0 +1,73 @@
+From fork-admin@xent.com  Tue Sep 10 11:07:36 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 9112B16F03
+	for <jm@localhost>; Tue, 10 Sep 2002 11:07:35 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 10 Sep 2002 11:07:35 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8A3HQC14875 for <jm@jmason.org>;
+    Tue, 10 Sep 2002 04:17:30 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 5679E29421B; Mon,  9 Sep 2002 20:14:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.superb.net (smtp1.superb.net [207.228.225.14]) by
+    xent.com (Postfix) with SMTP id 045C929409A for <fork@xent.com>;
+    Mon,  9 Sep 2002 20:13:16 -0700 (PDT)
+Received: (qmail 2423 invoked from network); 10 Sep 2002 03:16:08 -0000
+Received: from unknown (HELO maya.dyndns.org) (207.61.5.143) by
+    smtp1.superb.net with SMTP; 10 Sep 2002 03:16:08 -0000
+Received: by maya.dyndns.org (Postfix, from userid 501) id F11ED1CC98;
+    Mon,  9 Sep 2002 23:16:01 -0400 (EDT)
+To: "Geege Schuman" <geege@barrera.org>
+Cc: <johnhall@evergo.net>, "FoRK" <fork@spamassassin.taint.org>
+Subject: Re: Recommended Viewing
+References: <ILEHJNJFPDLMDEKNIAKCIEEICAAA.geege@barrera.org>
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m2bs76mt5a.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 09 Sep 2002 23:16:01 -0400
+
+>>>>> "G" == Geege Schuman <geege@barrera.org> writes:
+
+    G> ...  i'm sure it's some neurochemical process initiated during
+    G> the dream that is still cycling thru - like a deja vu,
+    G> triggered by memory processes, where you don't actually
+    G> remember but you feel like you're remembering.
+
+That's very perceptive of you.  Many people are not so willing to
+accept their personal reality as skewed by their neuro-physiology.  A
+great many popular con games exist by exploiting the perceptions of
+these states.
+
+Another oft-exploited neuro-plausibility: The brain is a pretty darn
+fine analog associative computer, so it could be the neurochemical
+events during the dream have associated themselves with some inner or
+external cue to mentally _recreate_ the state-perception like the
+predictable tone on striking a bell.
+
+-- 
+Gary Lawrence Murphy <garym@teledyn.com> TeleDynamics Communications Inc
+ Business Advantage through Community Software : http://www.teledyn.com
+"Computers are useless.  They can only give you answers."(Pablo Picasso)
+
+

@@ -1,0 +1,65 @@
+From QGo0@yahoo.com  Wed Jul 24 03:17:36 2002
+Return-Path: <QGo0@yahoo.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D7B68440CD
+	for <jm@localhost>; Tue, 23 Jul 2002 22:17:34 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 03:17:34 +0100 (IST)
+Received: from USER ([210.200.244.145]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with SMTP id g6O2IY414328 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 03:18:35 +0100
+Date: Wed, 24 Jul 2002 03:18:35 +0100
+Received: from pchome by ksts.seed.net.tw with SMTP id D9i2IdchjbiZg5O;
+    Wed, 24 Jul 2002 10:24:17 +0800
+Message-Id: <KCW9nPlnJ0p@mail.ht.net.tw>
+From: lover3388@seed.net.tw
+To: 0720002@dogma.slashnull.org
+Subject: =?big5?Q?=B3o=ACO=A7A=A4W=A6=B8=ADn=AA=BA=AAF=A6=E8!?=
+MIME-Version: 1.0
+X-Mailer: MMQrAVyalWchd7xNWJgJ
+X-Priority: 3
+X-Msmail-Priority: Normal
+Content-Type: multipart/related; type="multipart/alternative"; boundary="----=_NextPart_5O8i9UYbYKxGWktq5bsk5OC8"
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_5O8i9UYbYKxGWktq5bsk5OC8
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_5O8i9UYbYKxGWktq5bsk5OC8AA"
+
+
+------=_NextPart_5O8i9UYbYKxGWktq5bsk5OC8AA
+Content-Type: text/html;
+	charset="big5"
+Content-Transfer-Encoding: base64
+
+PGh0bWw+DQoNCjxoZWFkPg0KPG1ldGEgaHR0cC1lcXVpdj0iQ29udGVudC1MYW5ndWFnZSIgY29u
+dGVudD0iemgtdHciPg0KPG1ldGEgaHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0
+ZXh0L2h0bWw7IGNoYXJzZXQ9YmlnNSI+DQo8bWV0YSBuYW1lPSJHRU5FUkFUT1IiIGNvbnRlbnQ9
+Ik1pY3Jvc29mdCBGcm9udFBhZ2UgNC4wIj4NCjxtZXRhIG5hbWU9IlByb2dJZCIgY29udGVudD0i
+RnJvbnRQYWdlLkVkaXRvci5Eb2N1bWVudCI+DQo8dGl0bGU+pnCm86ZirmGkpKdRpc669Lj0rd3C
+vrPQt348L3RpdGxlPg0KPC9oZWFkPg0KDQo8Ym9keT4NCg0KPHA+PGI+PGZvbnQgc2l6ZT0iNCIg
+Y29sb3I9IiMwMDgwMDAiPqZwpvOmYq5hpKSnUaXOuvS49K3dwr6z0Ld+Jm5ic3A7ICAgIA0KLKSj
+qPypyqdPICwgpn7E1iAsIK7JtqEgLCCmYcJJICwgra2o7iAhITwvZm9udD48L2I+PC9wPiAgIA0K
+PHA+PGZvbnQgc2l6ZT0iNCI+NC8yMjwvZm9udD48Zm9udCBzaXplPSI1Ij4mbmJzcDsmbmJzcDs8
+L2ZvbnQ+Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7ICAgIA0KPGZvbnQgY29sb3I9IiMw
+MDAwRkYiPjxiPjxmb250IHNpemU9IjUiPlRWQlM8L2ZvbnQ+PC9iPiZuYnNwOyZuYnNwOyZuYnNw
+OzwvZm9udD4mbmJzcDsgICAgDQqkziZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyA8Zm9udCBzaXplPSI1IiBjb2xvcj0iIzAwMDBGRiI+PGI+qka0y7dzu0QmbmJzcDs8L2I+PC9m
+b250PiZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyAgICANCsFwpliz+L7JPC9wPg0KPHA+PGZvbnQg
+Y29sb3I9IiNGRjAwMDAiPjxiPq74tk+0Tq/gs9C3fqq6r3WkSK91qMYgISE8L2I+PC9mb250Pjwv
+cD4gICANCjxwPjxmb250IGNvbG9yPSIjRkYwMDAwIj48Yj6kUaTAxMGquq7JtqGlsql3r+CssKdB
+qrqlzalStn2x0qV0pECusLWhPC9iPjwvZm9udD48L3A+DQo8cD669Kd9LS0tLS0tLTxhIGhyZWY9
+Imh0dHA6Ly90aWdob25nLmg4aC5jb20udHciPmh0dHA6Ly90aWdob25nLmg4aC5jb20udHc8L2E+
+PC9wPg0KPHA+pnCqR711pFekSLzGuUymaL3QtXmr4aT5qOg8L3A+DQo8cD6pzqq9sbXCSb/vpXi7
+eaqpPC9wPg0KPHA+r6ynQaaopVw8L3A+DQo8cD6hQDwvcD4NCg0KPC9ib2R5Pg0KDQo8L2h0bWw+
+
+
+------=_NextPart_5O8i9UYbYKxGWktq5bsk5OC8AA--
+------=_NextPart_5O8i9UYbYKxGWktq5bsk5OC8--
+
+
+
+

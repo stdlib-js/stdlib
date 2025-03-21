@@ -1,0 +1,76 @@
+From ilug-admin@linux.ie  Tue Aug 20 11:52:05 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4085B43C44
+	for <jm@localhost>; Tue, 20 Aug 2002 06:51:40 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 11:51:40 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7JNqLZ14362 for
+    <jm-ilug@jmason.org>; Tue, 20 Aug 2002 00:52:21 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id AAA03148; Tue, 20 Aug 2002 00:50:17 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail02.svc.cra.dublin.eircom.net
+    (mail02.svc.cra.dublin.eircom.net [159.134.118.18]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id AAA03113 for <ilug@linux.ie>; Tue,
+    20 Aug 2002 00:50:09 +0100
+Received: (qmail 88186 messnum 72906 invoked from
+    network[159.134.113.123/p113-123.as1.bdt.dublin.eircom.net]);
+    19 Aug 2002 23:45:44 -0000
+Received: from p113-123.as1.bdt.dublin.eircom.net (HELO calm.mc)
+    (159.134.113.123) by mail02.svc.cra.dublin.eircom.net (qp 88186) with SMTP;
+    19 Aug 2002 23:45:44 -0000
+Received: from mconry by calm.mc with local (Exim 3.35 #1 (Debian)) id
+    17gwDS-0000ld-00; Tue, 20 Aug 2002 00:45:46 +0100
+Date: Tue, 20 Aug 2002 00:45:46 +0100
+From: Michael Conry <michael.conry@ucd.ie>
+To: Anthony <ant@elivefree.net>, ilug@linux.ie
+Subject: Re: [ILUG] hwclock
+Message-Id: <20020819234546.GA2940@calm.mc>
+Reply-To: michael.conry@ucd.ie
+References: <3D60D081.6070008@physics.dcu.ie>
+    <20020819123308.GB1474@calm.mc> <3D617173.F806D59D@elivefree.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <3D617173.F806D59D@elivefree.net>
+User-Agent: Mutt/1.3.28i
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On 0020 +0100 %{!Mon, Aug 19, 2002 at 11:30:12PM +0100}, Anthony wrote:
+> to the net. However, I didn't realise that Windows altered the hw clock
+> as there was no mention of it in any of the docs I read. 
+> I still dual-boot on a regular basis and if Windows is sneakily messing
+> with the clock, I'd be interested to know in what way it is and how it
+> couild be stopped from doing so.
+In my experience Windows will change the hardware clock the first time
+you boot into it after the clocks have gone forward/back an hour.  This
+will only happen twice a year. How to stop it, I have not checked (I
+just switch the clock back an hour from within windows after such a
+reboot).  Is there a GMT windows timezone?
+
+With ntp, it is a big no-no (afaik) to have other programs messing with
+the clock as it will put ntp's calculations of drift etc., out. (maybe
+this only applies to chrony, which is what I use).  If the windows
+change only moves forward an hour, and you shift back an hour, maybe ntp
+will be (relatively) ok (depends if all the remaining digits of time
+precision are left unchanged, probably they aren't exactly).
+m
+-- 
+Michael Conry   Ph.:+353-1-7161987, Web: http://www.acronymchile.com
+Key fingerprint = 5508 B563 6791 5C84 A947  CB01 997B 3598 09DE 502C
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

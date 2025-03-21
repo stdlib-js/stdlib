@@ -1,0 +1,12 @@
+
+{{alias}}
+    Canonical single-precision complex floating-point NaN.
+
+    Examples
+    --------
+    > {{alias}}
+    <Complex64>
+
+    See Also
+    --------
+

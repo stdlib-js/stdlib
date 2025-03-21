@@ -1,0 +1,73 @@
+From Stewart.Smith@ee.ed.ac.uk  Wed Aug 28 10:53:47 2002
+Return-Path: <Stewart.Smith@ee.ed.ac.uk>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 301D743F99
+	for <zzzz@localhost>; Wed, 28 Aug 2002 05:53:47 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 28 Aug 2002 10:53:47 +0100 (IST)
+Received: from n11.grp.scd.yahoo.com (n11.grp.scd.yahoo.com
+    [66.218.66.66]) by dogma.slashnull.org (8.11.6/8.11.6) with SMTP id
+    g7S82gZ15666 for <zzzz@spamassassin.taint.org>; Wed, 28 Aug 2002 09:02:42 +0100
+X-Egroups-Return: sentto-2242572-53127-1030521768-zzzz=spamassassin.taint.org@returns.groups.yahoo.com
+Received: from [66.218.67.196] by n11.grp.scd.yahoo.com with NNFMP;
+    28 Aug 2002 08:02:48 -0000
+X-Sender: Stewart.Smith@ee.ed.ac.uk
+X-Apparently-To: zzzzteana@yahoogroups.com
+Received: (EGP: mail-8_1_0_1); 28 Aug 2002 08:02:48 -0000
+Received: (qmail 52522 invoked from network); 28 Aug 2002 08:02:47 -0000
+Received: from unknown (66.218.66.217) by m3.grp.scd.yahoo.com with QMQP;
+    28 Aug 2002 08:02:47 -0000
+Received: from unknown (HELO postbox.ee.ed.ac.uk) (129.215.80.253) by
+    mta2.grp.scd.yahoo.com with SMTP; 28 Aug 2002 08:02:47 -0000
+Received: from ee.ed.ac.uk (sxs@dunblane [129.215.34.86]) by
+    postbox.ee.ed.ac.uk (8.11.0/8.11.0) with ESMTP id g7S82kP07514 for
+    <forteana@yahoogroups.com>; Wed, 28 Aug 2002 09:02:46 +0100 (BST)
+Message-Id: <3D6C83A6.9040504@ee.ed.ac.uk>
+Organization: Scottish Microelectronics Centre
+User-Agent: Mozilla/5.0 (X11; U; SunOS sun4u; en-US; rv:1.1b) Gecko/20020628
+X-Accept-Language: en, en-us
+To: zzzzteana@yahoogroups.com
+References: <v03007833b991c5e93641@[207.243.107.34]>
+From: Stewart Smith <Stewart.Smith@ee.ed.ac.uk>
+X-Yahoo-Profile: stochasticus
+MIME-Version: 1.0
+Mailing-List: list zzzzteana@yahoogroups.com; contact
+    forteana-owner@yahoogroups.com
+Delivered-To: mailing list zzzzteana@yahoogroups.com
+Precedence: bulk
+List-Unsubscribe: <mailto:zzzzteana-unsubscribe@yahoogroups.com>
+Date: Wed, 28 Aug 2002 09:02:46 +0100
+Subject: Re: [zzzzteana] The Coming Firestorm
+Reply-To: zzzzteana@yahoogroups.com
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+
+> So now Osama bin Laden is Hitler. And Saddam Hussein is Hitler. And
+> George Bush is fighting the Nazis. 
+
+Someone should shout "Godwin!" at him at a press conference.  Then he'd have to 
+shut up.  Or does that only work on Usenet?
+
+Stew
+-- 
+Stewart Smith
+Scottish Microelectronics Centre, University of Edinburgh.
+http://www.ee.ed.ac.uk/~sxs/
+
+
+------------------------ Yahoo! Groups Sponsor ---------------------~-->
+4 DVDs Free +s&p Join Now
+http://us.click.yahoo.com/pt6YBB/NXiEAA/MVfIAA/7gSolB/TM
+---------------------------------------------------------------------~->
+
+To unsubscribe from this group, send an email to:
+forteana-unsubscribe@egroups.com
+
+ 
+
+Your use of Yahoo! Groups is subject to http://docs.yahoo.com/info/terms/ 
+
+
+

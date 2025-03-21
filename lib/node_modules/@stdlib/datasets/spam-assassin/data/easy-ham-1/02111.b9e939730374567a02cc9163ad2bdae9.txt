@@ -1,0 +1,31 @@
+From rssfeeds@jmason.org  Tue Oct  1 10:36:50 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 5343816F1B
+	for <jm@localhost>; Tue,  1 Oct 2002 10:36:32 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 01 Oct 2002 10:36:32 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g91806K15328 for
+    <jm@jmason.org>; Tue, 1 Oct 2002 09:00:06 +0100
+Message-Id: <200210010800.g91806K15328@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: diveintomark <rssfeeds@spamassassin.taint.org>
+Subject: Wedding etiquette
+Date: Tue, 01 Oct 2002 08:00:06 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://diveintomark.org/archives/2002/09/30.html#wedding_etiquette
+Date: 2002-09-30T12:16:54-05:00
+
+_Margaret Berry_: Don't Be Rude: Part IV, Weddings[1]. &#8220;There's a lot of 
+room for error with invitations. It's helpful to think of them as petite social 
+landmines with quaint wax seals.&#8221;
+
+
+
+[1] http://www.themorningnews.org/archives/editorial/dont_be_rude_part_iv_weddings.shtml
+
+

@@ -1,0 +1,132 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Sep 12 21:09:59 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id A34BC16F03
+	for <jm@localhost>; Thu, 12 Sep 2002 21:09:58 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 12 Sep 2002 21:09:58 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8CJBWC12013 for <jm-sa@jmason.org>; Thu, 12 Sep 2002 20:11:32 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17pZJw-0001FZ-00; Thu,
+    12 Sep 2002 12:08:08 -0700
+Received: from corpmail.cwie.net ([63.214.164.17]) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17pZJK-00014S-00 for
+    <spamassassin-talk@lists.sourceforge.net>; Thu, 12 Sep 2002 12:07:30 -0700
+Received: (qmail 11441 invoked by uid 507); 12 Sep 2002 19:07:23 -0000
+Received: from paul@cwie.net by corpmail.cwie.net by uid 510 with
+    CWIE-scanner-1.14 (sweep: 2.10/3.61. spamassassin: 2.41.  Clear:.
+    Processed in 0.422956 secs); 12 Sep 2002 19:07:23 -0000
+Received: from unknown (HELO paul01) (64.38.194.14) by corpmail.cwie.net
+    with SMTP; 12 Sep 2002 19:07:22 -0000
+From: "Paul Fries" <paul@cwie.net>
+To: <spamassassin-talk@example.sourceforge.net>
+Subject: RE: [SAtalk] 2.41/2.50 spamd/spamc problem
+Message-Id: <031001c25a8f$9faa5a80$d900000a@paul01>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.4024
+In-Reply-To: <5DEC3FFCDE2F7C4DA45433EE09A4F22C599F85@COLOSSUS.dyadem.corp>
+Importance: Normal
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2800.1106
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php=spamassassin-talk>
+X-Original-Date: Thu, 12 Sep 2002 12:07:22 -0700
+Date: Thu, 12 Sep 2002 12:07:22 -0700
+
+Heh. RTFM.. Sorry about that.
+
+Yep, that did the trick.
+
+Thanks for the help!
+
+Regards,
+Paul Fries
+paul@cwie.net
+
+-----Original Message-----
+From: spamassassin-talk-admin@example.sourceforge.net
+[mailto:spamassassin-talk-admin@lists.sourceforge.net] On Behalf Of
+Vince Puzzella
+Sent: Thursday, September 12, 2002 11:23 AM
+To: Paul Fries; spamassassin-talk@example.sourceforge.net
+Subject: RE: [SAtalk] 2.41/2.50 spamd/spamc problem
+
+defang_mime 0
+
+-----Original Message-----
+From: Paul Fries [mailto:paul@cwie.net] 
+Sent: Thursday, September 12, 2002 2:12 PM
+To: spamassassin-talk@example.sourceforge.net
+Subject: [SAtalk] 2.41/2.50 spamd/spamc problem
+
+
+I noticed that after upgrading to 2.41 (or 2.50) from 2.31, the -F
+option was removed from spamd. 
+
+This is fine because all of the HTML format mail seems to arrive
+properly. However, messages that get tagged as Spam arrive as just html
+source.
+
+Is there any way around this? I would like all HTML/RTF messages to
+retain their formatting even if they are flagged as spam. I would
+accomplish this on 2.31 by using the "-F 0" flag when starting spamd.
+
+Thanks!
+
+Regards,
+Paul Fries
+paul@cwie.net
+CWIE LLC 
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf _______________________________________________
+Spamassassin-talk mailing list Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

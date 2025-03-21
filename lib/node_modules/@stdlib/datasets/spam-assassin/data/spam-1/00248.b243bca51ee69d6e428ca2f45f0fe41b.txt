@@ -1,0 +1,374 @@
+From 4s@insiq.us  Sun Sep  8 23:59:14 2002
+Return-Path: <4s@insiq.us>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id 7184A16F8B
+	for <zzzz@localhost>; Sun,  8 Sep 2002 23:52:39 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Sun, 08 Sep 2002 23:52:39 +0100 (IST)
+Received: from mail1.insuranceiq.com (host66.insuranceiq.com
+    [65.217.159.66] (may be forged)) by dogma.slashnull.org (8.11.6/8.11.6)
+    with ESMTP id g88I2xC04846 for <zzzz@jmason.org>; Sun, 8 Sep 2002 19:03:00
+    +0100
+Received: from mail pickup service by mail1.insuranceiq.com with Microsoft
+    SMTPSVC; Sun, 8 Sep 2002 14:04:06 -0400
+Subject: The "Business-Owner Friendly" Pension Plan
+To: <zzzz@spamassassin.taint.org>
+Date: Sun, 8 Sep 2002 14:04:06 -0400
+From: "IQ - Four Seasons" <4s@insiq.us>
+Message-Id: <64caa01c25762$1f3406b0$6b01a8c0@insuranceiq.com>
+MIME-Version: 1.0
+Thread-Index: AcJXRrD0cRYAG5pLS7G/+in8DFa8mA==
+X-Mailer: Microsoft CDO for Windows 2000
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4522.1200
+Content-Class: urn:content-classes:message
+X-Originalarrivaltime: 08 Sep 2002 18:04:06.0375 (UTC) FILETIME=[1F532770:01C25762]
+Content-Type: multipart/alternative; boundary="----=_NextPart_000_4103D_01C25725.29EA69B0"
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_4103D_01C25725.29EA69B0
+Content-Type: text/plain;
+	charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+ 421(i) A Fully Insured, Tax Qualified Retirement Plan!=09
+ 	 	 	 	 =09
+$353,253*	 $145,496*	 $40,000	 $30,000	 $11,000
+
+=A7412(i)	 Defined Benefit	 Profit Sharing	 SEP	 401(K)	=20
+ =09
+ Designed For Business Owners Over Age 50=09
+?  Contributions Are 100% Tax Deductible
+
+?  US Government Approved ERISA Pension Plan Since 1974
+
+?  Up To 90% of The Benefit Goes Directly To The Business Owner =09
+Make Your Client's Retirement Dreams Come True! =09
+ =09
+For a personalized proposal, please call the pension department: =09
+1-800-235-7949	=20
+Or e-mail your request to us at: pensions@fsfginc.com
+<mailto:pensions@fsfginc.com>  =09
+ =09
+=20
+" Innovative Solutions For Changing Economic Climates" =09
+Please fill out the form below for more information	=20
+Name:	 	=20
+E-mail:	 	=20
+Phone:	 	=20
+City:	 	 State:	 	  =09
+ 	    =09
+=20
+ =09
+1-800-235-7949   Fax: 856-596-9309
+pensions@fsfginc.com <mailto:pensions@fsfginc.com>     www.fsfginc.com
+<http://www.fsfginc.com>  =09
+ American National Independent Marketing=09
+* Assumes 55 year old making a maximum tax deductible contribution.
+
+We don't want anybody to receive our mailings who does not wish to
+receive them. This is professional communication sent to insurance
+professionals. To be removed from this mailing list, DO NOT REPLY to
+this message. Instead, go here: http://www.InsuranceIQ.com/optout
+Legal Notice <http://www.insiq.com/legal.htm>=20
+
+
+------=_NextPart_000_4103D_01C25725.29EA69B0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Language" content=3D"en-us">
+<meta http-equiv=3D"Content-Type" content=3D"text/html; =
+charset=3Diso-8859-1">
+<title>The "Business-Owner Friendly" Pension Plan</title>
+</head>
+<body>
+<table border=3D"1" width=3D"550" cellspacing=3D"0" cellpadding=3D"0" =
+bgcolor=3D"#FFFFFF" bordercolor=3D"#000000" align=3D"center">
+  <tr>=20
+    <td width=3D"100%" height=3D"17" =
+background=3D"http://iiq.us/images/4s/20011105-5a.gif">=20
+      <table border=3D"0" width=3D"100%" height=3D"499" =
+cellpadding=3D"3" cellspacing=3D"3">
+        <tr>=20
+          <td width=3D"100%" height=3D"21" align=3D"center"><img =
+border=3D"0" src=3D"http://iiq.us/images/4s/20011105-1a.gif" =
+width=3D"550" height=3D"110" alt=3D'421(i) A Fully Insured, Tax =
+Qualified Retirement Plan!'></td>
+        </tr>
+        <tr>=20
+          <td width=3D"100%" height=3D"28" valign=3D"top">=20
+            <table border=3D"0" width=3D"102%" cellpadding=3D"2" =
+height=3D"158">
+              <tr>=20
+                <td width=3D"28%" height=3D"121" valign=3D"bottom"><img =
+border=3D"0" src=3D"http://iiq.us/images/4s/20011105-3a.gif" =
+width=3D"135" height=3D"129"></td>
+                <td width=3D"21%" height=3D"121" valign=3D"bottom" =
+align=3D"center"><img border=3D"0" =
+src=3D"http://iiq.us/images/4s/20011105-6a.gif" width=3D"50" =
+height=3D"52"></td>
+                <td width=3D"17%" height=3D"121" valign=3D"bottom" =
+align=3D"center"><img border=3D"0" =
+src=3D"http://iiq.us/images/4s/20011105-6a.gif" width=3D"50" =
+height=3D"52"></td>
+                <td width=3D"16%" height=3D"121" valign=3D"bottom" =
+align=3D"center"><img border=3D"0" =
+src=3D"http://iiq.us/images/4s/20011105-6a.gif" width=3D"50" =
+height=3D"52"></td>
+                <td width=3D"20%" height=3D"121" valign=3D"bottom" =
+align=3D"center"><img border=3D"0" =
+src=3D"http://iiq.us/images/4s/20011105-6a.gif" width=3D"50" =
+height=3D"52"></td>
+              </tr>
+              <tr>=20
+                <td width=3D"28%" height=3D"21" =
+align=3D"center"><b><font face=3D"Arial" size=3D"4" =
+color=3D"#800000">$353,253*</font></b></td>
+                <td width=3D"21%" height=3D"21" =
+align=3D"center"><b><font face=3D"Arial" size=3D"4" =
+color=3D"#800000">$145,496*</font></b></td>
+                <td width=3D"17%" height=3D"21" =
+align=3D"center"><b><font face=3D"Arial" size=3D"4" =
+color=3D"#800000">$40,000</font></b></td>
+                <td width=3D"16%" height=3D"21" =
+align=3D"center"><b><font face=3D"Arial" size=3D"4" =
+color=3D"#800000">$30,000</font></b></td>
+                <td width=3D"20%" height=3D"21" =
+align=3D"center"><b><font face=3D"Arial" size=3D"4" =
+color=3D"#800000">$11,000</font></b></td>
+              </tr>
+              <tr>=20
+                <td width=3D"28%" height=3D"21" =
+align=3D"center"><b><font face=3D"Arial" size=3D"2" =
+color=3D"#000000">=A7412(i)</font></b></td>
+                <td width=3D"21%" height=3D"21" =
+align=3D"center"><b><font face=3D"Arial" size=3D"2" =
+color=3D"#000000">Defined Benefit</font></b></td>
+                <td width=3D"17%" height=3D"21" =
+align=3D"center"><b><font face=3D"Arial" size=3D"2" =
+color=3D"#000000">Profit Sharing</font></b></td>
+                <td width=3D"16%" height=3D"21" =
+align=3D"center"><b><font face=3D"Arial" size=3D"2" =
+color=3D"#000000">SEP</font></b></td>
+                <td width=3D"20%" height=3D"21" =
+align=3D"center"><b><font face=3D"Arial" size=3D"2" =
+color=3D"#000000">401(K)</font></b></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>=20
+          <td width=3D"100%" height=3D"4" valign=3D"top">=20
+            <table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0">
+              <tr>=20
+                <td width=3D"100%" bgcolor=3D"#006600"><img border=3D"0" =
+src=3D"http://iiq.us/images/4s/spacer.gif" width=3D"2" =
+height=3D"2"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>=20
+          <td width=3D"100%" height=3D"28" valign=3D"top" =
+align=3D"center"><img border=3D"0" =
+src=3D"http://iiq.us/images/4s/20011105-2a.gif" width=3D"542" =
+height=3D"29" alt=3D"Designed For Business Owners Over Age 50"></td>
+        </tr>
+        <tr>=20
+          <td width=3D"100%" height=3D"28" valign=3D"top"> <b><font =
+face=3D"Arial" size=3D"3">=20
+            &#149;&nbsp; Contributions Are 100% Tax Deductible<br><br>
+            &#149;&nbsp; US Government Approved ERISA Pension Plan Since =
+1974<br><br>
+            &#149;&nbsp; Up To 90% of The Benefit Goes Directly To The =
+Business Owner</font></b>=20
+          </td>
+        </tr>
+        <tr>=20
+          <td width=3D"100%" height=3D"24" align=3D"center">=20
+            <b><font color=3D"#006600" face=3D"Times New Roman" =
+size=3D"5"><i>Make Your Client's Retirement Dreams Come =
+True!</i></font></b>=20
+          </td>
+        </tr>
+        <tr>=20
+          <td width=3D"100%" height=3D"13">=20
+            <table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0">
+              <tr>=20
+                <td width=3D"100%" bgcolor=3D"#006600"><img border=3D"0" =
+src=3D"http://iiq.us/images/4s/spacer.gif" width=3D"2" =
+height=3D"2"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>=20
+          <td width=3D"100%" height=3D"24" align=3D"center">=20
+            <b><font face=3D"Times New Roman" size=3D"4" =
+color=3D"#666666">For a personalized proposal, please call the pension =
+department:</font></b>=20
+          </td>
+        </tr>
+        <tr>=20
+          <td width=3D"100%" height=3D"38" align=3D"center"> <b><font =
+face=3D"Times New Roman" size=3D"6" =
+color=3D"#006600">1-800-235-7949</font></b></td>
+        </tr>
+        <tr>=20
+          <td width=3D"100%" height=3D"28" align=3D"center">=20
+            <b><font face=3D"Times New Roman" size=3D"4" =
+color=3D"#666666">Or e-mail your request to us at: <a =
+href=3D"mailto:pensions@fsfginc.com">pensions@fsfginc.com</a></font></b> =
+
+          </td>
+        </tr>
+        <tr>=20
+          <td width=3D"100%" height=3D"4">=20
+            <table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0">
+              <tr>=20
+                <td width=3D"100%" bgcolor=3D"#006600"><img border=3D"0" =
+src=3D"http://iiq.us/images/4s/spacer.gif" width=3D"2" =
+height=3D"2"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>=20
+          <td width=3D"100%" height=3D"107">=20
+            <p align=3D"center"><img border=3D"0" =
+src=3D"http://iiq.us/images/4s/20011105-4a.gif" width=3D"330" =
+height=3D"105"><br>
+              <font color=3D"#333333">&quot; Innovative Solutions For =
+Changing Economic Climates&quot;</font>=20
+          </td>
+        </tr>
+        <tr>=20
+          <td width=3D"100%" height=3D"107">=20
+            <table width=3D"100%" bgcolor=3D"#006600">
+              <tr>=20
+                <form method=3D"post" =
+action=3D"http://65.217.159.103/response/response.asp">
+                  <td>=20
+                    <table width=3D"100%" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"2" align=3D"center" bgcolor=3D"#ffffff">
+                      <tr bgcolor=3D"#FFFFFF">=20
+                        <td colspan=3D"5" align=3D"center"><font =
+size=3D"2" face=3D"Arial, Helvetica, sans-serif">Please fill out the =
+form below for more information</font></td>
+                      </tr>
+                      <tr bgcolor=3D"#FFFFFF">=20
+                        <td width=3D"15%" align=3D"right"><font =
+face=3D"Arial, Helvetica, sans-serif" size=3D"2">Name:</font></td>
+                        <td colspan=3D"4"><input type=3D"text" =
+name=3D"contactname" size=3D"50"></td>
+                      </tr>
+                      <tr bgcolor=3D"#FFFFFF">=20
+                        <td width=3D"15%" align=3D"right"><font =
+face=3D"Arial, Helvetica, sans-serif" size=3D"2">E-mail:</font></td>
+                        <td colspan=3D"4"><input type=3D"text" =
+name=3D"email" size=3D"50"></td>
+                      </tr>
+                      <tr bgcolor=3D"#FFFFFF">=20
+                        <td width=3D"15%" align=3D"right"><font =
+face=3D"Arial, Helvetica, sans-serif" size=3D"2">Phone:</font></td>
+                        <td colspan=3D"4"><input type=3D"text" =
+name=3D"phone" size=3D"50"></td>
+                      </tr>
+                      <tr bgcolor=3D"#FFFFFF">=20
+                        <td width=3D"15%" align=3D"right"><font =
+face=3D"Arial, Helvetica, sans-serif" size=3D"2">City:</font></td>
+                        <td width=3D"30%"><input type=3D"text" =
+name=3D"city" size=3D"20"></td>
+                        <td width=3D"15%" align=3D"right"><font =
+face=3D"Arial, Helvetica, sans-serif" size=3D"2">State:</font></td>
+                        <td width=3D"20%"><input type=3D"text" =
+name=3D"state" size=3D"2"></td>
+                        <td rowspan=3D"2" align=3D"center" =
+valign=3D"middle"><img src=3D"http://iiq.us/images/q2.gif" width=3D"43" =
+height=3D"50"></td>
+                      </tr>
+                      <tr bgcolor=3D"#FFFFFF">=20
+                        <td width=3D"15%" align=3D"right">&nbsp;</td>
+                        <td width=3D"30%" colspan=3D'3'>=20
+                          <input type=3D"submit" name=3D"btnsubmit" =
+value=3D"Submit">
+                          <input type=3D"hidden" =
+name=3D"hdnRecipientTxt" value=3D"pensions@fsfginc.com">
+                          <input type=3D"hidden" name=3D"hdnSubjectTxt" =
+value=3D"Four Seasons Ad Inquiry">
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                <input type=3D'hidden' name=3D'SentTo' value=3D'304704'>
+</form>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>=20
+          <td width=3D"100%" height=3D"1">=20
+            <table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0">
+              <tr>=20
+                <td width=3D"100%" bgcolor=3D"#006600"><img border=3D"0" =
+src=3D"http://iiq.us/images/4s/spacer.gif" width=3D"2" =
+height=3D"2"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>=20
+          <td width=3D"100%" height=3D"40" align=3D"center">=20
+            <font face=3D"Times New Roman" =
+size=3D"3"><b>1-800-235-7949&nbsp;&nbsp;&nbsp;Fax: 856-596-9309</b><br>
+            <a =
+href=3D"mailto:pensions@fsfginc.com">pensions@fsfginc.com</a>&nbsp;&nbsp;=
+&nbsp;<a href=3D"http://www.fsfginc.com">www.fsfginc.com</a></font>=20
+          </td>
+        </tr>
+        <tr>=20
+          <td align=3D"center"><img =
+src=3D"http://iiq.us/images/4s/20020122-3a.gif" width=3D"181" =
+height=3D"86" alt=3D"American National Independent Marketing"></td>
+        </tr>
+        <tr>=20
+          <td width=3D"100%" height=3D"21" align=3D"center">=20
+            <p><font color=3D"#000000" face=3D"Arial" size=3D"1">* =
+Assumes=20
+              55 year old making a maximum tax deductible =
+contribution.</font></p>
+            <font face=3D"Verdana" size=3D"1">=20
+            <p>We don't want anybody to receive our mailings=20
+              who does not wish to receive them. This is professional=20
+              communication sent to insurance professionals. To be =
+removed from=20
+              this mailing list, DO NOT REPLY to this message. Instead, =
+go here: =20
+              <a =
+href=3D"http://www.InsuranceIQ.com/optout">http://www.InsuranceIQ.com/opt=
+out</a><br>
+              <a href=3D'http://www.insiq.com/legal.htm'>Legal =
+Notice</a></p>
+            </font>=20
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+
+------=_NextPart_000_4103D_01C25725.29EA69B0--
+
+

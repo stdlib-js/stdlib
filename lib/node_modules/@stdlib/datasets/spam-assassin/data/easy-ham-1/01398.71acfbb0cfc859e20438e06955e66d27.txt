@@ -1,0 +1,80 @@
+From razor-users-admin@lists.sourceforge.net  Fri Aug 23 11:06:18 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 328704415C
+	for <jm@localhost>; Fri, 23 Aug 2002 06:04:24 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 23 Aug 2002 11:04:24 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7MM9TZ27056 for <jm-razor@jmason.org>; Thu, 22 Aug 2002 23:09:29 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17hzvv-0004ra-00; Thu,
+    22 Aug 2002 14:56:03 -0700
+Received: from h-66-166-21-186.snvacaid.covad.net ([66.166.21.186]
+    helo=rover.vipul.net) by usw-sf-list1.sourceforge.net with esmtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17hzvJ-0007dk-00 for
+    <razor-users@lists.sourceforge.net>; Thu, 22 Aug 2002 14:55:26 -0700
+Received: (from vipul@localhost) by rover.vipul.net (8.11.6/8.11.6) id
+    g7MLtNi02178 for razor-users@lists.sf.net; Thu, 22 Aug 2002 14:55:23 -0700
+From: Vipul Ved Prakash <mail@vipul.net>
+To: razor-users@example.sourceforge.net
+Message-Id: <20020822145523.A2125@rover.vipul.net>
+Reply-To: mail@vipul.net
+Mail-Followup-To: razor-users@lists.sf.net
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+X-Operating-System: Linux rover.vipul.net 2.4.18
+X-Privacy: If possible, encrypt your reply.  Key at http://vipul.net/
+Subject: [Razor-users] honor is not in csl
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Thu, 22 Aug 2002 14:55:23 -0700
+Date: Thu, 22 Aug 2002 14:55:23 -0700
+
+Folks, 
+
+Some of you seem to have hardcoded honor as the default catalogue server.
+There are three catalogue only servers running now, and honor is acting
+as a nomination only server. Tonight we will be completely turning off
+catalogue support on honor, so if you are specifying honor with the -rs
+option, please take it out and let the agents discover a closeby
+catalogue server.
+
+cheers,
+vipul.
+
+
+-- 
+
+Vipul Ved Prakash          |   "The future is here, it's just not 
+Software Design Artist     |    widely distributed."
+http://vipul.net/          |              -- William Gibson
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+

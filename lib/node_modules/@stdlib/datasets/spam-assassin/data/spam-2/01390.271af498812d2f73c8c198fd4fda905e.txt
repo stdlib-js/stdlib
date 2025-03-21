@@ -1,0 +1,59 @@
+From OWNER-NOLIST-SGODAILY*JM**NETNOTEINC*-COM@SMTP1.ADMANMAIL.COM  Tue Dec  3 11:46:31 2002
+Return-Path: <OWNER-NOLIST-SGODAILY*JM**NETNOTEINC*-COM@SMTP1.ADMANMAIL.COM>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id CA88216F18
+	for <jm@localhost>; Tue,  3 Dec 2002 11:46:29 +0000 (GMT)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 03 Dec 2002 11:46:29 +0000 (GMT)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id gB3B6U801830 for
+    <jm@jmason.org>; Tue, 3 Dec 2002 11:06:30 GMT
+Received: from SMTP1.ADMANMAIL.COM (SMTP1.ADMANMAIL.COM [66.111.250.61]
+    (may be forged)) by webnote.net (8.9.3/8.9.3) with ESMTP id LAA15846 for
+    <JM@NETNOTEINC.COM>; Tue, 3 Dec 2002 11:07:53 GMT
+Message-Id: <200212031107.LAA15846@webnote.net>
+Received: from tiputil1 (tiputil1.corp.tiprelease.com) by
+    SMTP1.ADMANMAIL.COM (LSMTP for Windows NT v1.1b) with SMTP id
+    <150.00034782@SMTP1.ADMANMAIL.COM>; Tue, 3 Dec 2002 4:35:55 -0600
+Date: Tue, 3 Dec 2002 04:00:34 -0600
+From: Omaha Steaks <steakssgo37@SendGreatOffers.com>
+To: JM@NETNOTEINC.COM
+Subject: Get 12 free Burgers + 1/2 Price Omaha Steaks!
+X-Info: 134085
+X-Info2: SGO
+MIME-Version: 1.0
+Content-Type: text/html; charset="us-ascii"
+
+<html><body background="http://a725.g.akamai.net/7/725/1095/0001/www.omahasteaks.com/gifs/email/dotcom_3rdparty_bkg.gif" MARGINWIDTH="0" MARGINHEIGHT="0"><div align="center"><span style="font-family:arial; font-size:12px; color:black">
+<table width="100%" leftmargin="0" topmargin="0" border="0" cellpadding="0" cellspacing="0" background="http://a725.g.akamai.net/7/725/1095/0001/www.omahasteaks.com/gifs/email/dotcom_3rdparty_bkg.gif" style="border-collapse: collapse" bordercolor="#111111">
+<tr><td align="center"><font color="#FFFFFF" size="1">This message was not sent
+  to you unsolicited. You received this email as a member of <b>SendGreatOffers.com</b>.<br>
+ Unsubscription instructions are at the bottom of the message</font><font size="2" color="#FFFFFF"><br>
+ </font></td></tr>
+<tr><td align="center"><table width="541" border="0" cellpadding="0" cellspacing="0"><tr><td><span style="font-family:arial; font-size:12px; color:black">
+  <a href="http://admanmail.com/server/c.asp?ad_key=AIVRWBPFEVOV&ext=1"><img src="http://a725.g.akamai.net/7/725/1095/0001/www.omahasteaks.com/gifs/email/dotcom_3rdgen01a.gif" width="405" height="34" border="0"><br><img src="http://a725.g.akamai.net/7/725/1095/0001/www.omahasteaks.com/gifs/email/dotcom_3rdgen02a.gif" width="405" height="69" border="0"></a></span></td><td>
+  <a href="http://admanmail.com/server/c.asp?ad_key=AIVRWBPFEVOV&ext=1"><img src="http://a725.g.akamai.net/7/725/1095/0001/www.omahasteaks.com/gifs/email/dotcom_3rdgen03.gif" width="136" height="103" border="0"></a></td></tr></table><table width="541" border="0" cellpadding="3" cellspacing="0" background="http://a725.g.akamai.net/7/725/1095/0001/www.omahasteaks.com/gifs/email/fill_00AD00.gif"><tr><td><table width="535" border="0" cellpadding="0" cellspacing="0" background="http://a725.g.akamai.net/7/725/1095/0001/www.omahasteaks.com/gifs/email/fill_CC0000.gif"><tr>
+    <td height="25" align="center"><span style="font-family:arial; font-size:16px; color:white"><b>GIVE THE GIFT OF EXCEPTIONAL TASTE!</b></span></td></tr><tr>
+      <td><a href="http://admanmail.com/server/c.asp?ad_key=AIVRWBPFEVOV&ext=1"><img src="http://a725.g.akamai.net/7/725/1095/0001/www.omahasteaks.com/gifs/email/dotcom_3rdgen06.jpg" width="260" height="268" border="0"><img src="http://a725.g.akamai.net/7/725/1095/0001/www.omahasteaks.com/gifs/email/dotcom_3rdgen07.gif" width="275" height="268" border="0"></a></td></tr><tr>
+      <td height="25" align="center"><span style="font-family:arial; font-size:16px; color:#F7ED31"><b>SAVE 50% on these Best Sellers...</b></span></td></tr>
+    <span style="font-family:arial; font-size:12px; color:black"><tr>
+      <td height="25" align="center"><span style="font-family:arial; font-size:12px; color:white"><b>Prefer to order by phone? <span style="color:#FFFF00">CALL 1.800.960.8400</span>& mention coupon code RZ3073.</b></span></td></tr></table></span></td></tr></table><table width="541" border="0" cellpadding="0" cellspacing="0"><tr><td colspan="3"></td></tr></table></td></tr></table></div>
+
+<img src="http://admanmail.com/server/v.asp?ad_key=AIVRWBPFEVOV" width="1" height="1" hspace="0" vspace="0" border="0" alt="T">
+<hr size="1" noshade>
+<font face="Arial" size="1" color="#000000">
+You are receiving this mailing because you are a
+member of SendGreatOffers.com and subscribed as:JM@NETNOTEINC.COM
+To unsubscribe <a href="http://admanmail.com/subscription.asp?em=JM@NETNOTEINC.COM&l=SGO">
+<font face="arial" size="1" color="#000000">Click Here</a>
+(http://admanmail.com/subscription.asp?em=JM@NETNOTEINC.COM&l=SGO)
+or reply to this email with REMOVE in the subject line - you must
+also include the body of this message to be unsubscribed. Any correspondence about
+the products/services should be directed to
+the company in the ad.
+%EM%JM@NETNOTEINC.COM%/EM%
+<BR></FONT> </body> </html>
+
+

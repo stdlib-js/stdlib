@@ -1,0 +1,182 @@
+From exmh-workers-admin@redhat.com  Wed Aug 28 17:25:35 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id DD35543F9B
+	for <jm@localhost>; Wed, 28 Aug 2002 12:25:33 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 28 Aug 2002 17:25:33 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7SGOjZ00420 for
+    <jm-exmh@jmason.org>; Wed, 28 Aug 2002 17:24:45 +0100
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id RAA05535 for <jm-exmh@jmason.org>;
+    Wed, 28 Aug 2002 17:24:56 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 904EC40FA9; Wed, 28 Aug 2002
+    12:17:08 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 5EB54411CA
+    for <exmh-workers@listman.redhat.com>; Wed, 28 Aug 2002 11:40:09 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g7SFe5i16307 for exmh-workers@listman.redhat.com; Wed, 28 Aug 2002
+    11:40:05 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g7SFe5Y16300 for
+    <exmh-workers@redhat.com>; Wed, 28 Aug 2002 11:40:05 -0400
+Received: from austin-jump.vircio.com (jump-austin.vircio.com
+    [192.12.3.99]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id g7SFP0l27152
+    for <exmh-workers@redhat.com>; Wed, 28 Aug 2002 11:25:00 -0400
+Received: (qmail 30298 invoked by uid 104); 28 Aug 2002 15:40:04 -0000
+Received: from cwg-exmh@DeepEddy.Com by localhost.localdomain with
+    qmail-scanner-0.90 (uvscan: v4.1.60/v4219. . Clean. Processed in 0.361811
+    secs); 28/08/2002 10:40:04
+Received: from deepeddy.vircio.com (@[10.1.2.1]) (envelope-sender
+    <cwg-exmh@DeepEddy.Com>) by austin-jump.vircio.com (qmail-ldap-1.03) with
+    SMTP for <exmh-workers@redhat.com>; 28 Aug 2002 15:40:04 -0000
+Received: (qmail 11441 invoked from network); 28 Aug 2002 15:40:01 -0000
+Received: from localhost (HELO deepeddy.vircio.com)
+    (?t2lZKiBIqj1XaYC6urc1Q8OBukd5uEA0?@[127.0.0.1]) (envelope-sender
+    <cwg-exmh@DeepEddy.Com>) by localhost (qmail-ldap-1.03) with SMTP for
+    <exmh-workers@redhat.com>; 28 Aug 2002 15:40:01 -0000
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4
+To: Robert Elz <kre@munnari.OZ.AU>
+Cc: exmh-workers@spamassassin.taint.org
+Subject: Re: New Sequences Window
+In-Reply-To: <22628.1030545866@munnari.OZ.AU>
+References: <1030544555.28815.TMDA@deepeddy.vircio.com>
+    <1030028647.6462.TMDA@deepeddy.vircio.com>
+    <1029945287.4797.TMDA@deepeddy.vircio.com>
+    <1029882468.3116.TMDA@deepeddy.vircio.com> <9627.1029933001@munnari.OZ.AU>
+    <1029943066.26919.TMDA@deepeddy.vircio.com>
+    <1029944441.398.TMDA@deepeddy.vircio.com> <13277.1030015920@munnari.OZ.AU>
+    <21099.1030543590@munnari.OZ.AU> <22628.1030545866@munnari.OZ.AU>
+X-Url: http://www.DeepEddy.Com/~cwg
+X-Image-Url: http://www.DeepEddy.Com/~cwg/chris.gif
+MIME-Version: 1.0
+Content-Type: multipart/signed;
+    boundary="==_Exmh_893671157P";
+    micalg=pgp-sha1;
+    protocol="application/pgp-signature"
+Content-Transfer-Encoding: 7bit
+Message-Id: <1030549201.11428.TMDA@deepeddy.vircio.com>
+From: Chris Garrigues <cwg-exmh@DeepEddy.Com>
+X-Delivery-Agent: TMDA/0.57
+Reply-To: Chris Garrigues <cwg-dated-1030981201.767997@DeepEddy.Com>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Wed, 28 Aug 2002 10:39:59 -0500
+
+--==_Exmh_893671157P
+Content-Type: text/plain; charset=us-ascii
+
+> From:  Robert Elz <kre@munnari.OZ.AU>
+> Date:  Wed, 28 Aug 2002 21:44:26 +0700
+>
+>     Date:        Wed, 28 Aug 2002 09:22:34 -0500
+>     From:        Chris Garrigues <cwg-dated-1030976555.34ad5b@DeepEddy.Com>
+>     Message-ID:  <1030544555.28815.TMDA@deepeddy.vircio.com>
+> 
+> 
+>   | so I'll probably poke around at the sequences performance issues,
+> 
+> Well, there's this wonderful piece of code in MhSeqExpand ...
+> 
+>     # Hack to weed out sequence numbers for messages that don't exist
+>     foreach m $rseq {
+>         if ![file exists $mhProfile(path)/$folder/$m] {
+>             Exmh_Debug $mhProfile(path)/$folder/$m not found
+>             set ix [lsearch $seq $m]
+>             set seq [lreplace $seq $ix $ix]
+>         } else {
+>             # Real hack
+>             break
+>         }
+>     }
+> 
+> which is going to run slow if a sequence happens to start with a bunch
+> of messages that don't exist.   I'm not sure why it is important that the
+> first message in the sequence returned exists, but not necessarily any
+> of the others, but I'm sure glad it is, as MhSeqExpand gets called lots,
+> and I don't know if I could cope if it were checking every file in the
+> sequences it is looking at, all the time...
+
+Although my fingerprints are all over that, it's not actually my code and has 
+been in there since before 1998.  (It's code that I moved from mh.tcl to 
+sequences.tcl and back again).  I'm no5 sure either, but it should be a 
+one-time penalty because the sequence will be re-written with the bad messages 
+removed.  (I think.)
+
+> It may help to keep a list of the valid message numbers for the current
+> folder (though that would then need to be verified against changes to the
+> directory).   Does tcl have a directory read function?   I assume so...
+> 
+> Mh_Sequence also goes and rereads the files (.mh_sequences and the
+> context file) but I'm not sure how frequently that one is called.
+
+That *was* a problem, but if you look at Mh_Sequence (and Mh_Sequences and 
+Mh_SequenceUpdate), they all call MhReadSeqs to do the actual reading and it 
+only reads the sequences if the file has been touched.  Look for the 
+"Exmh_Debug Reading $filename" output in the debug log to see when sequences 
+are actually reread from disk.
+
+
+My theory is that Ftoc_ShowSequences is being called too often.  I'm about to 
+investigate that.
+
+>   | I'll email anything I figure out since I'm leaving town in less 
+>   | than 48 hours.
+> 
+> Have a good vacation.
+
+Thanks.
+
+Chris
+
+-- 
+Chris Garrigues                 http://www.DeepEddy.Com/~cwg/
+virCIO                          http://www.virCIO.Com
+716 Congress, Suite 200
+Austin, TX  78701		+1 512 374 0500
+
+  World War III:  The Wrong-Doers Vs. the Evil-Doers.
+
+
+
+
+--==_Exmh_893671157P
+Content-Type: application/pgp-signature
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: Exmh version 2.2_20000822 06/23/2000
+
+iD8DBQE9bO7PK9b4h5R0IUIRAqBBAJ4uhmwloTb4sSG6jDwcm0ul4RvDegCfe8no
++6oHNBLG/UnfWMlQoaSidZA=
+=44Ra
+-----END PGP SIGNATURE-----
+
+--==_Exmh_893671157P--
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+

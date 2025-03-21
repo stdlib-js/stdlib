@@ -1,0 +1,28 @@
+
+{{alias}}( value )
+    Tests if an input value is a BLAS diagonal type.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an input value is a diagonal type.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 'unit' )
+    true
+    > bool = {{alias}}( 'non-unit' )
+    true
+    > bool = {{alias}}( '' )
+    false
+    > bool = {{alias}}( 'beep' )
+    false
+
+    See Also
+    --------
+

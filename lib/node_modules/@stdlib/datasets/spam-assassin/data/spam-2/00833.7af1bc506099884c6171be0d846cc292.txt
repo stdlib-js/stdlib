@@ -1,0 +1,59 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6LJW3CU095372
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Sun, 21 Jul 2002 14:32:04 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6LJW3ra095369
+	for cypherpunks-forward@ds.pro-ns.net; Sun, 21 Jul 2002 14:32:03 -0500 (CDT)
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6LJW1CT095361
+	for <cypherpunks@ds.pro-ns.net>; Sun, 21 Jul 2002 14:32:02 -0500 (CDT)
+	(envelope-from cpunks@einstein.ssz.com)
+X-Authentication-Warning: hq.pro-ns.net: Host cpunks@[207.200.56.4] claimed to be einstein.ssz.com
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id OAA12179
+	for cypherpunks@ds.pro-ns.net; Sun, 21 Jul 2002 14:40:06 -0500
+Received: (from mdom@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id OAA12171
+	for cypherpunks-outgoing; Sun, 21 Jul 2002 14:39:58 -0500
+Received: from server7.hypermart.net (server7.go2net.com [66.150.0.137])
+	by einstein.ssz.com (8.8.8/8.8.8) with SMTP id OAA12130
+	for <cypherpunks@ssz.com>; Sun, 21 Jul 2002 14:38:22 -0500
+Received: (qmail 4584 invoked by uid 299370); 21 Jul 2002 19:29:29 -0000
+Date: 21 Jul 2002 19:29:29 -0000
+Message-ID: <20020721192929.4583.qmail@server2011.virtualave.net>
+To: cypherpunks@einstein.ssz.com
+From: oceandrive@email.is ()
+Subject: Copy DVD's to regular CD-R discs and watch on your DVD Player.d7l7
+Sender: owner-cypherpunks@einstein.ssz.com
+Precedence: bulk
+Reply-To: cypherpunks@einstein.ssz.com
+X-Mailing-List: cypherpunks@ssz.com
+X-Unsubscription-Info: http://einstein.ssz.com/cdr
+X-List-Admin: list@ssz.com
+X-Loop: ssz.com
+X-Acceptable-Languages: English, Russian, German, French, Spanish
+
+
+Below is the result of your feedback form.  It was submitted by
+ (oceandrive@email.is) on Sunday, July 21, 2002 at 12:29:29
+---------------------------------------------------------------------------
+
+: Why Spend upwards of $4000 on a DVD Burner when we will show you an alternative that will do the exact same thing for just a fraction of the cost? Copy your DVD's NOW. Best Price on the net. Click here: http://005@www.dvdcopyxp.com/cgi-bin/enter.cgi?marketing_id=dcx007 Click to remove http://005@www.spambites.com/cgi-bin/enter.cgi?spambytes_id=100115 
+
+---------------------------------------------------------------------------
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

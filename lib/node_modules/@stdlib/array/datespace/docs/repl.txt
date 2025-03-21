@@ -1,0 +1,44 @@
+
+{{alias}}( start, stop[, length][ , options] )
+    Generates an array of linearly spaced dates.
+
+    Parameters
+    ----------
+    start: number
+        Start time as either a `Date` object, Unix timestamp, JavaScript
+        timestamp, or date string.
+
+    stop: number
+        Stop time as either a `Date` object, Unix timestamp, JavaScript
+        timestamp, or date string.
+
+    length: integer (optional)
+        Length of output array. Default: `100`.
+
+    options: Object (optional)
+        Options.
+
+    options.round: string (optional)
+        Specifies how sub-millisecond times should be rounded:
+        [ 'floor', 'ceil', 'round' ]. Default: 'floor'.
+
+    Returns
+    -------
+    arr: Array
+        Array of dates.
+
+    Examples
+    --------
+    > var stop = '2014-12-02T07:00:54.973Z';
+    > var start = new Date( stop ) - 60000;
+    > var arr = {{alias}}( start, stop, 6 )
+    [...]
+
+    // Equivalent of Math.ceil():
+    > var opts = { 'round': 'ceil' };
+    > arr = {{alias}}( 1417503655000, 1417503655001, 3, opts )
+    [...]
+
+    See Also
+    --------
+

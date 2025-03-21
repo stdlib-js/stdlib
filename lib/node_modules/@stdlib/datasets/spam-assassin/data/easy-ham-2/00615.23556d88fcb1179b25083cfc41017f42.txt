@@ -1,0 +1,88 @@
+From razor-users-admin@lists.sourceforge.net  Fri Aug  9 15:56:43 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A8B50440DD
+	for <jm@localhost>; Fri,  9 Aug 2002 10:55:35 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:55:35 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79Ea9b08448 for
+    <jm-razor@jmason.org>; Fri, 9 Aug 2002 15:36:09 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id VAA00814 for
+    <jm-razor@jmason.org>; Thu, 8 Aug 2002 21:21:34 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17cteY-0007Ao-00; Thu,
+    08 Aug 2002 13:13:02 -0700
+Received: from smtp-gw-cl-b.dmv.com ([64.45.128.111]) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17ctdb-0002id-00 for
+    <razor-users@lists.sourceforge.net>; Thu, 08 Aug 2002 13:12:03 -0700
+Received: from landshark (landshark.dmv.com [64.45.129.242]) by
+    smtp-gw-cl-b.dmv.com (8.12.3/8.12.3) with SMTP id g78K5xQl040183 for
+    <razor-users@lists.sourceforge.net>; Thu, 8 Aug 2002 16:05:59 -0400 (EDT)
+    (envelope-from sven@dmv.com)
+Message-Id: <002601c23f17$dab92680$f2812d40@landshark>
+From: "Sven Willenberger" <sven@dmv.com>
+To: <razor-users@example.sourceforge.net>
+References: <E17crtC-0003D8-00@usw-sf-list2.sourceforge.net>
+Subject: Re: [Razor-users] Using Razor with non-mbox files
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Thu, 8 Aug 2002 16:12:00 -0400
+Date: Thu, 8 Aug 2002 16:12:00 -0400
+
+> ----- Original Message -----
+> Date: Thu, 08 Aug 2002 11:58:36 -0400
+> From: wertzscott@cs.com
+> To: razor-users@example.sourceforge.net
+> Subject: [Razor-users] Using Razor with non-mbox files
+>
+> Greetings!  I'm new to this list, and new to Razor.  Trying to get it to
+compile now (perhaps more on that later), but I'm wondering if it can really
+do what I need anyway.  In short my question is whether Razor can process
+files directly from sendmail's queues.  Here's the situation.
+>
+
+You can use a milter with sendmail that will add an X-header labeling the
+mail as spam for procmail processing later (see smrazor:
+http://www.sapros.com/smrazor/ ). You can modify the .c file to reject the
+email instead. I have been using this with sendmail 8.12.5 and Solaris 9
+with razor-agents 2.14 quite successfully (barring network/catalogue server
+issues) ...
+
+Sven
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

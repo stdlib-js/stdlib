@@ -1,0 +1,75 @@
+From razor-users-admin@lists.sourceforge.net  Mon Aug 26 15:19:27 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8F47A44172
+	for <jm@localhost>; Mon, 26 Aug 2002 10:16:28 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 15:16:28 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7OCoHZ03126 for <jm-razor@jmason.org>; Sat, 24 Aug 2002 13:50:18 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17iaEu-0001JM-00; Sat,
+    24 Aug 2002 05:42:04 -0700
+Received: from spoons.net1.nerim.net ([80.65.224.36]
+    helo=cyborgnation.org) by usw-sf-list1.sourceforge.net with esmtp (Cipher
+    TLSv1:DES-CBC3-SHA:168) (Exim 3.31-VA-mm2 #1 (Debian)) id 17iaEO-0002hx-00
+    for <razor-users@lists.sourceforge.net>; Sat, 24 Aug 2002 05:41:32 -0700
+Received: (qmail 31109 invoked from network); 24 Aug 2002 12:41:22 -0000
+Received: from unknown (HELO musclor) (192.168.0.6) by 0 with SMTP;
+    24 Aug 2002 12:41:22 -0000
+From: Toorop <toorop@cyborgnation.org>
+X-Mailer: The Bat! (v1.61)
+Reply-To: Toorop <toorop@cyborgnation.org>
+Organization: Cyborg Nation
+X-Priority: 3 (Normal)
+Message-Id: <13711665921.20020824144120@cyborgnation.org>
+To: razor-users@example.sourceforge.net
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Subject: [Razor-users] Where can i find a positif mail(spam) for test
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Sat, 24 Aug 2002 14:41:20 +0200
+Date: Sat, 24 Aug 2002 14:41:20 +0200
+
+Bonjour,
+
+   I'm writting a Python script, in order to use Razor with Qmail.
+   The script is finish, but i want to test the result with positive
+   mail (spam). Somebody knows, whrere can i find one.
+
+   PS : Escuse my pooooooor English ;-))
+   
+--
+Toorop 
+Lorsque que vous avez éliminé l'impossible, ce qui reste, 
+même si c'est improbable, doit être la vérité.
+www.spoonsdesign.com
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+

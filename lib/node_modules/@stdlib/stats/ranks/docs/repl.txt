@@ -1,0 +1,63 @@
+
+{{alias}}( arr[, options] )
+    Computes the sample ranks for the values of an array-like object.
+
+    When all elements of the `array` are different, the ranks are uniquely
+    determined. When there are equal elements (called *ties*), the `method`
+    option determines how they are handled. The default, `'average'`, replaces
+    the ranks of the ties by their mean. Other possible options are `'min'` and
+    `'max'`, which replace the ranks of the ties by their minimum and maximum,
+    respectively. `'dense'` works like `'min'`, with the difference that the
+    next highest element after a tie is assigned the next smallest integer.
+    Finally, `ordinal` gives each element in `arr` a distinct rank, according to
+    the position they appear in.
+
+    The `missing` option is used to specify how to handle missing data.
+    By default, `NaN` or `null` are treated as missing values. `'last'`specifies
+    that missing values are placed last, `'first'` that the are assigned the
+    lowest ranks and `'remove'` means that they are removed from the array
+    before the ranks are calculated.
+
+    Parameters
+    ----------
+    arr: Array<number>
+        Input values.
+
+    options: Object (optional)
+        Function options.
+
+    options.method (optional)
+        Method name determining how ties are treated (`average`, `min`, `max`,
+        `dense`, or `ordinal`). Default: `'average'`.
+
+    options.missing (optional)
+        Determines where missing values go (`first`, `last`, or `remove`).
+        Default: `'last'`.
+
+    options.encoding (optional)
+        Array of values encoding missing values. Default: `[ null, NaN ]`.
+
+    Returns
+    -------
+    out: Array
+        Array containing the computed ranks for the elements of the input array.
+
+    Examples
+    --------
+    > var arr = [ 1.1, 2.0, 3.5, 0.0, 2.4 ] ;
+    > var out = {{alias}}( arr )
+    [ 2, 3, 5, 1, 4 ]
+
+    // Ties are averaged:
+    > arr =  [ 2, 2, 1, 4, 3 ];
+    > out = {{alias}}( arr )
+    [ 2.5, 2.5, 1, 5, 4 ]
+
+    // Missing values are placed last:
+    > arr = [ null, 2, 2, 1, 4, 3, NaN, NaN ];
+    > out = {{alias}}( arr )
+    [ 6, 2.5, 2.5, 1, 5, 4, 7 ,8 ]
+
+    See Also
+    --------
+

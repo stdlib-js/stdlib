@@ -1,0 +1,76 @@
+From rpm-list-admin@freshrpms.net  Thu Sep 19 13:02:12 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 5E12716F03
+	for <jm@localhost>; Thu, 19 Sep 2002 13:02:11 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 19 Sep 2002 13:02:11 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8JApkC16151 for
+    <jm-rpm@jmason.org>; Thu, 19 Sep 2002 11:51:47 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g8JAn3f17228; Thu, 19 Sep 2002 12:49:03
+    +0200
+Received: from zeus.scania.co.za ([196.41.10.170]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g8JAmHf13834 for
+    <rpm-list@freshrpms.net>; Thu, 19 Sep 2002 12:48:18 +0200
+Received: from leenx.co.za ([10.1.1.130]) by zeus.scania.co.za
+    (8.11.6/8.11.2) with ESMTP id g8JAgWC10724 for <rpm-list@freshrpms.net>;
+    Thu, 19 Sep 2002 12:42:36 +0200
+Message-Id: <3D89AA17.4090005@leenx.co.za>
+From: "C.Lee Taylor" <leet@leenx.co.za>
+Organization: LeeNX
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.0.0) Gecko/20020607
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: --with ...
+References: <20020919100001.21684.81501.Mailman@auth02>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Thu, 19 Sep 2002 12:42:31 +0200
+Date: Thu, 19 Sep 2002 12:42:31 +0200
+
+Greetings ...
+
+> PS: Yup, I'm back from my holidays ;-)
+	I hope you did not miss us at all ... ;-0
+
+ > I think I'll use this "--with <whatever>" switch more and more where
+ > possible.
+	Mmm, great stuff ... Now to get the RedHat Samba packager to do the same 
+thing ...
+
+	I have used there spec file and fun a few problems in it, and one of them 
+was just hashing out things for other use ...
+
+	Now to get to grips with the Kernel ... still have not found and easy way to 
+rebuild the Kernel without having to wait and hour for it to generate the 
+headers for all arch ... arrrrhhhh ...
+
+Mailed
+Lee
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

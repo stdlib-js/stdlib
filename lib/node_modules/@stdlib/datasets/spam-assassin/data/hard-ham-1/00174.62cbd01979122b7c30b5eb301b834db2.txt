@@ -1,0 +1,449 @@
+From sentto-2242572-51739-1029158217-zzz=spamassassin.taint.org@returns.groups.yahoo.com  Mon Aug 12 14:17:20 2002
+Return-Path: <sentto-2242572-51739-1029158217-zzz=spamassassin.taint.org@returns.groups.yahoo.com>
+Delivered-To: zzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E888444178
+	for <zzz@localhost>; Mon, 12 Aug 2002 09:17:17 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzz@localhost (single-drop); Mon, 12 Aug 2002 14:17:17 +0100 (IST)
+Received: from n21.grp.scd.yahoo.com (n21.grp.scd.yahoo.com
+    [66.218.66.77]) by dogma.slashnull.org (8.11.6/8.11.6) with SMTP id
+    g7CDH2b14452 for <zzz@spamassassin.taint.org>; Mon, 12 Aug 2002 14:17:03 +0100
+X-Egroups-Return: sentto-2242572-51739-1029158217-zzz=spamassassin.taint.org@returns.groups.yahoo.com
+Received: from [66.218.67.192] by n21.grp.scd.yahoo.com with NNFMP;
+    12 Aug 2002 13:16:57 -0000
+X-Sender: barbarabarrett@orchidserve.com
+X-Apparently-To: zzzzteana@yahoogroups.com
+Received: (EGP: mail-8_0_7_4); 12 Aug 2002 13:16:57 -0000
+Received: (qmail 50371 invoked from network); 12 Aug 2002 13:16:56 -0000
+Received: from unknown (66.218.66.217) by m10.grp.scd.yahoo.com with QMQP;
+    12 Aug 2002 13:16:56 -0000
+Received: from unknown (HELO clustermail.minx.net.uk) (212.85.249.136) by
+    mta2.grp.scd.yahoo.com with SMTP; 12 Aug 2002 13:16:56 -0000
+Received: from [80.47.231.174] (helo=orchidserve.com) by
+    clustermail.minx.net.uk with esmtp (Exim 3.22 #7) id 17eF5R-0001TM-00 for
+    forteana@yahoogroups.com; Mon, 12 Aug 2002 14:18:21 +0100
+Message-Id: <3D57B4C6.FC790DB3@orchidserve.com>
+X-Mailer: Mozilla 4.73 [en] (Win95; I)
+X-Accept-Language: en
+To: "zzzzteana@yahoogroups.com" <zzzzteana@yahoogroups.com>
+From: Barbara Barrett <barbarabarrett@orchidserve.com>
+X-Yahoo-Profile: nfrwalso
+MIME-Version: 1.0
+Mailing-List: list zzzzteana@yahoogroups.com; contact
+    forteana-owner@yahoogroups.com
+Delivered-To: mailing list zzzzteana@yahoogroups.com
+Precedence: bulk
+List-Unsubscribe: <mailto:zzzzteana-unsubscribe@yahoogroups.com>
+Date: Mon, 12 Aug 2002 14:14:46 +0100
+Subject: [zzzzteana] Fwd: Explorator 5.15
+Reply-To: zzzzteana@yahoogroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g7CDH2b14452
+
+
+
+================================================================
+explorator 5.15                                  August 15, 2002
+================================================================
+Editor's note: Depending on your mail software, some urls may
+wrap (especially those from the Telegraph) which will require
+you to rebuild the url at your end; if you get a 'file not
+found', check to see if the url wrapped on you. Most urls should
+be active for at least eight hours from the time of publication.
+================================================================
+================================================================
+
+Thanks to Bill Thayer, Ross Sargent, 'Salinas17', Michael Ruggieri,
+Maurice O'Sullivan, Terry Gibson, 'mb2400', Bill Kennedy, Paul James
+Cowie, Arthur Shippee, Joseph Nicholas, W. Richard Frahm,'alesmonetos',
+and Sally Winchester for headses upses this week (a.a.h.i.h.l.n.o.o.)
+
+n.b. Last week I carelessly suggested the team which had claimed
+to have found El Dorado was Polish; it is, in fact, an international
+team led by a "Polish-Italian" journalist/explorer. Apologies for
+any confusion this may have caused.
+
+================================================================
+================================================================
+AFRICA, EUROPE, AND ASIA
+================================================================
+John Noble Wilford attempts to clarify the Chadian skull thing:
+
+http://www.nytimes.com/2002/08/06/science/06SKUL.html
+
+In the what-can-DNA-tell-us-about-antiquity department, the latest
+suggestion is that there is genetic evidence "middle easter farmers
+'civilised' Europe":
+
+http://www.newscientist.com/news/news.jsp?id=ns99992634
+http://portal.telegraph.co.uk/news/main.jhtml?xml=%2Fnews%2F2002%2F08%2F06%2Fngene06.xml
+
+A log boat which might date to 3000 B.C. has been found off the
+coast of Ireland:
+
+http://www.ireland.com/newspaper/ireland/2002/0805/2854861586HM2LOGBOAT.html
+http://www.unison.ie/irish_independent/index.php3?ti=41&ca=9&si=801897&issue_id=7825
+
+The Cerne Abbas Giant was recently, er, 'defaced' (not permanently ...
+potentially offensive content in this one):
+
+http://story.news.yahoo.com/news?tmpl=story2&u=/nm/20020806/od_nm/sex_dc_1
+
+Satellite technology has revealed a prehistoric site near
+Northumberland:
+
+http://news.bbc.co.uk/2/hi/england/2178530.stm
+
+... and a prehistoric cemetery has been found near Cheshire:
+
+http://www.ananova.com/news/story/sm_644681.html
+
+They're still making significant finds in the 'workers village'near
+the pyramids:
+
+http://news.nationalgeographic.com/news/2002/08/0805_020805_giza.html
+
+Gulf News has a nice feature on the alignment of a Dilmun temple at
+Saar:
+
+http://www.gulf-daily-news.com/arc_Articles.asp?Article=29638&Sn=BNEW&IssueID=25142
+
+Plenty of coverage of a story on Bronze Age 'drug trade':
+
+http://www.abcnews.go.com/wire/World/ap20020807_922.html
+http://story.news.yahoo.com/news?tmpl=story&u=/ap/20020808/ap_wo_en_po/israel_ancient_narcotics_1
+http://stacks.msnbc.com/news/791265.asp
+http://europe.cnn.com/2002/WORLD/meast/08/08/ancientnarcotics.ap/index.html
+http://www.jpost.com/servlet/Satellite?pagename=JPost/A/JPArticle/ShowFull&cid=1028814634905
+
+The Egyptian Museum in Cairo will be marking its centennial by
+hauling up a bunch of never-before-seen artifacts from the basement:
+
+http://story.news.yahoo.com/news?tmpl=story&u=/nm/20020805/sc_nm/leisure_egypt_museum_dc_1
+http://www.chron.com/cs/CDA/story.hts/world/1522113
+
+Another piece on politics and archaeology in the Holy Land:
+
+http://www.orlandosentinel.com/news/nationworld/orl-asecisraeldig04080402aug04.story
+
+... while archaeologists seem to be quietly excavating a Byzantine
+monastery in Gaza:
+
+http://www.ekathimerini.com/4dcgi/news/content.asp?aid=19621
+
+A first century cemetery has come to light near Palmyra:
+
+http://story.news.yahoo.com/news?tmpl=story&u=/ap/20020809/ap_wo_en_ge/syria_archaeology_1
+
+A human-size statue of Baal Addir was recently revealed in a Sardinian
+context:
+
+http://www.news.com.au/common/story_page/0,4057,4855902%255E1702,00.html
+
+A Celtic Iron Age fort in Wales is "revealing its secrets":
+
+http://news.bbc.co.uk/2/hi/wales/2178489.stm
+
+A large number of Eastern Zhou Dynasty tombs have been found in
+China:
+
+http://news.xinhuanet.com/english/2002-08/10/content_519198.htm
+
+... as has an important tomb of an aristocrat:
+
+http://www1.chinadaily.com.cn/news/lf/2002-08-11/81655.html
+
+Four Buddhas have been found hidden inside another Buddha rarely
+seen by the public:
+
+http://www.ananova.com/news/story/sm_643946.html
+
+Sanskrit is in danger of becoming extinct:
+
+http://news.bbc.co.uk/2/hi/south_asia/2173400.stm
+
+There's a battle brewing over the fate of the "Welsh Mary Rose":
+
+http://www.guardian.co.uk/arts/news/story/0,11711,771543,00.html
+http://news.bbc.co.uk/2/hi/wales/2183191.stm
+
+================================================================
+THE AMERICAS
+================================================================
+There is evidence of pre-Columbian dentistry in Mexico:
+
+http://www.thenewsmexico.com/printedformat.asp?id=31882
+
+Bones found near Lake Jackson (Texas) might be 11,000 years old:
+
+http://www.chron.com/cs/CDA/printstory.hts/metropolitan/1528019
+
+A nice report on excavations near Fort Vancouver:
+
+http://www.canoe.ca/NationalTicker/CANOE-wire.Bay-Dig.html
+
+Home construction in Virginia has revealed the grave of a slave:
+
+http://story.news.yahoo.com/news?tmpl=story&u=/ap/20020808/ap_wo_en_ge/us_slave_remains_1
+================================================================
+ON THE NEWSSTANDS
+================================================================
+A new issue of Bible Review, with online articles on a collection
+of New Testament manuscripts, the Exodus debate, and other things:
+
+http://www.bib-arch.org/bswb_BR/indexBR.html
+
+... and Archaeology Odyssey, with articles on the ten most endangered
+archaeological sites, Moses Shapira (wow), et alia:
+
+http://www.bib-arch.org/bswb_AO/indexAO.html
+================================================================
+ON THE WEB
+================================================================
+I came across the Into Archaeology website this week; it's worth a 
+look for a number of reasons, but in particular its articles section
+has some good stuff (currently, an interview with Adrienne Mayor, a
+piece
+on the Thera ships, and a piece on the work at Bird Cove):
+
+http://www.intoarch.com/
+
+The Oriental Institute has recently added a whole pile of publically-
+accessible articles to its News and Notes section:
+
+http://www-oi.uchicago.edu/OI/DEPT/PUB/NewsAndNotes.html
+================================================================
+NEW ONLINE BOOKS
+================================================================
+George Dennis, *Cities and Cemeteries of Etruria*:
+
+http://www.ukans.edu/history/index/europe/ancient_rome/E/Gazetteer/Places/Europe/Italy/.Periods/Roman/Archaic/Etruscan/.Texts/DENETR*/home.html
+
+Horace, *Odes and Carmen Saeculare* (Conington trans.):
+
+http://digital.library.upenn.edu/webbin/gutbook/lookup?num=5432
+
+Horace, *Satires, Epistles, and Ars Poetica* (Conington trans.):
+
+http://digital.library.upenn.edu/webbin/gutbook/lookup?num=5419
+================================================================
+ON  THE ARCHAEOLOGY CHANNEL
+================================================================
+Calleva: The Roman Town of Silchester:
+
+http://www.archaeologychannel.org/
+================================================================
+CRIME BEAT
+================================================================
+There are claims that recent Al-Qaeda casualties were actually
+potential antiquity thieves:
+
+http://europe.cnn.com/2002/WORLD/asiapcf/central/08/07/afghan.gunfights/index.html
+================================================================
+AT ABOUT.COM
+================================================================
+... can't seem to connect today (hmmmmm...)
+================================================================
+REVIEWS
+================================================================
+Iain Pears, *Dream of Scipio*:
+
+http://www.nytimes.com/2002/08/07/books/07PEAR.html
+http://www.nytimes.com/2002/06/23/books/review/23CROWLET.html
+
+Tony Perrottet, *Route 66 A.D.: On the Trail of Ancient Roman Tourists* 
+
+http://seattletimes.nwsource.com/html/artsentertainment/134447835_route66ad05.html
+
+Anton Powell, * Athens and Sparta: Constructing Greek political and
+social history from 478 BC*
+
+http://www.athensnews.gr/athweb/nathens.print_unique?e=C&f=12974&m=A19&aa=2&eidos=S
+
+Antigone (Epidavros):
+
+http://www.ekathimerini.com/4dcgi/news/content.asp?aid=19644
+
+================================================================
+EXHIBITIONS
+================================================================
+Treasures from a Lost Civilization (Toronto):
+
+http://story.news.yahoo.com/news?tmpl=story&u=/nm/20020809/wl_canada_nm/canada_arts_china_col_1
+================================================================
+CLASSICIST'S CORNER
+================================================================
+Famed debunker James Randi has been running a series on Lucian's
+debunking of  Alexander of Abonutichus which is worth a look. 
+It's in four parts (you'll have to skim through some other, readable,
+stuff to get to the bits on Lucian ... it tends to be near the end):
+
+http://www.randi.org/jr/071902.html
+http://www.randi.org/jr/072602.html
+http://www.randi.org/jr/080202.html
+http://www.randi.org/jr/080902.html
+
+In case you meet someone who asks, "What's all the hubbub about those
+Elgin Marbles?", here's a nice article to hand them:
+
+http://www.japantimes.co.jp/cgi-bin/getarticle.pl5?fv20020806a1.htm
+
+Classical precedents cited in a piece on gossip:
+
+http://www.nytimes.com/2002/08/10/arts/10GOSS.html
+
+Latin content in a story of a man with way too much time on his hands:
+
+http://www.guardian.co.uk/international/story/0,3604,770241,00.html
+
+How not to pursue a classics degree:
+
+http://www.thisisoxfordshire.co.uk/oxfordshire/news/NEWS6.html
+
+Some guy is studying why ancient Greek buildings seem to do so well
+in earthquakes (do they?):
+
+http://www.ekathimerini.com/4dcgi/news/content.asp?aid=19704
+
+A reader alerted me to LewRockwell.com, this week, which is a political
+site which at least one item of interest ... a piece by Daniel
+McCarthy on Greek ideas of liberty:
+
+http://www.lewrockwell.com/dmccarthy/dmccarthy35.html
+
+Plenty of ClassCon in a Newsweek piece "Why We Need Heaven":
+
+http://www.msnbc.com/news/789252.asp
+
+... and a reason for studying Latin and Greek in an interview with
+David McCollough:
+
+http://www.neh.gov/news/humanities/2002-07/danger.html
+
+Not sure whether there's comparanda potential in this bit on the 
+crowning of King Puck:
+
+http://story.news.yahoo.com/news?tmpl=story2&cid=856&ncid=856&e=1&u=/nm/20020810/od_uk_nm/oukoe_ireland_puck_1
+
+Peter Jones in the Spectator (there's a Hannibal movie coming!):
+
+http://www.spectator.co.uk/article.php3?table=old&section=current&issue=2002-08-10&id=2137
+
+... and Dot Wordsworth:
+
+http://www.spectator.co.uk/article.php3?table=old&section=current&issue=2002-08-10&id=2138
+
+Perfess'r Harris' Classics Corner:
+
+http://www.realchangenews.org/issue/current/classics/classics_corner.html
+
+Radio Finland's Nuntii Latini
+http://www.yle.fi/fbc/latini/trans.html
+
+Radio Bremen's Der Monatsrückblick - auf Latein 
+http://www.radiobremen.de/online/latein/
+
+U.S. Weather in Latin:
+http://latin.wunderground.com/
+================================================================
+FOLLOWUPS
+================================================================
+Ancient Chinese Mail:
+
+http://www.guardian.co.uk/china/story/0,7369,770922,00.html
+
+Birth Bricks:
+
+http://www.nytimes.com/2002/08/06/science/social/06BRIC.html?ex=1029729600&en=cbb6833f14483e22&ei=5040&partner=MOREOVER
+
+"Hidden Nazi Gold":
+
+http://www.nytimes.com/aponline/international/AP-Germany-Nazi-Gold.html
+http://www.heraldsun.news.com.au/common/story_page/0,5478,4859169%255E663,00.html
+http://www.haaretzdaily.com/hasen/pages/ShArt.jhtml?itemNo=195691&contrassID=1&subContrassID=8&sbSubContrassID=0&listSrc=Y
+
+Monitor (the coverage varies quite a bit in these):
+
+http://www.cnn.com/2002/US/08/05/uss.monitor.ap/index.html
+http://www.nytimes.com/2002/08/09/science/09MONI.html
+http://story.news.yahoo.com/news?tmpl=story&u=/ap/20020805/ap_on_go_ca_st_pe/uss_monitor_5
+http://www.msnbc.com/news/789905.asp
+
+Ninkasi Beer:
+
+http://story.news.yahoo.com/news?tmpl=story&u=/nm/20020806/od_uk_nm/oukoe_britain_beer_1
+
+Old Chess Piece:
+
+http://portal.telegraph.co.uk/news/main.jhtml?xml=%2Fnews%2F2002%2F08%2F06%2Fwchess06.xml
+
+Replica Egyptian Tombs:
+
+http://www.ahram.org.eg/weekly/2002/598/hr1.htm
+
+Return of Ramses I:
+
+http://www.theartnewspaper.com/news/article.asp?idart=9856
+
+Return of Roman sculpture by Princeton:
+
+http://www.theartnewspaper.com/news/article.asp?idart=9855
+
+Roman Plane from York:
+
+http://www.fragmentsoftime.com/new_page_8.htm
+
+Vinland Map:
+
+http://story.news.yahoo.com/news?tmpl=story2&cid=624&ncid=624&e=12&u=/ap/20020730/ap_on_sc/vinland_map_3
+================================================================
+EXPLORATOR is a weekly newsletter representing the fruits of
+the labours of 'media research division' of The Atrium. Various
+on-line news and magazine sources are scoured for news of the
+ancient world (broadly construed: practically anything relating
+to archaeology or history  prior to about 1700 or so is fair
+game) and every Sunday they are delivered to your mailbox free of
+charge!
+================================================================
+Useful Addresses
+================================================================
+
+Past issues of Explorator are available on the web at:
+http://groups.yahoo.com/group/Explorator/messages
+
+To subscribe to Explorator, send a blank email message to:
+mailto:Explorator-subscribe@yahoogroups.com
+
+To unsubscribe, send a blank email message to:
+mailto:Explorator-unsubscribe@yahoogroups.com
+
+To send a 'heads up' to the editor:
+mailto:dmeadows@idirect.com
+
+================================================================
+Explorator is Copyright (c) 2002 David Meadows. Feel free to
+distribute these listings via email to your pals, students,
+teachers, etc., but please include this copyright notice. These
+listings are not to be posted to a website; instead, please
+provide a link to the past issues and/or the media archive
+mentioned above. Thanks!
+================================================================
+
+------------------------ Yahoo! Groups Sponsor ---------------------~-->
+4 DVDs Free +s&p Join Now
+http://us.click.yahoo.com/pt6YBB/NXiEAA/RN.GAA/7gSolB/TM
+---------------------------------------------------------------------~->
+
+To unsubscribe from this group, send an email to:
+forteana-unsubscribe@egroups.com
+
+ 
+
+Your use of Yahoo! Groups is subject to http://docs.yahoo.com/info/terms/ 
+
+
+

@@ -1,0 +1,101 @@
+From ilug-admin@linux.ie  Mon Sep  2 16:21:52 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 33EF544156
+	for <zzzz@localhost>; Mon,  2 Sep 2002 11:21:34 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 02 Sep 2002 16:21:34 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g82C8TZ31762 for
+    <zzzz-ilug@spamassassin.taint.org>; Mon, 2 Sep 2002 13:08:29 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA03451; Mon, 2 Sep 2002 13:08:06 +0100
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id NAA03417 for <ilug@linux.ie>;
+    Mon, 2 Sep 2002 13:07:54 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host mail.webnote.net
+    [193.120.211.219] claimed to be webnote.net
+Received: (from lbedford@localhost) by webnote.net (8.9.3/8.9.3) id
+    NAA27423 for ilug@linux.ie; Mon, 2 Sep 2002 13:07:54 +0100
+Date: Mon, 2 Sep 2002 13:07:54 +0100
+From: Liam Bedford <pro@linux.ie>
+To: ilug@linux.ie
+Message-Id: <20020902120754.GC27311@mail.webnote.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.4i
+Subject: [ILUG] Marketing SIG has a good start :)
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+         |::::::::::::::::::::::::::::::::::::::::::::::::::|
+
+                IT's Monday 520      02 September 2002
+
+              |::::::::::::::::::::::::::::::::::::::::|
+
+
+
+STUDENT LIFE BEGINS WITH LINUX
+by
+John Sterne
+
+The launch last month of a marketing special interest group by the
+Irish Linux Users Group (ILUG)  -  open source and marketing, it
+seems, might not be mutually exclusive concepts  -  has already
+sparked an interesting initiative at University College Cork.  When
+the new academic year begins at UCC, every incoming student will
+be offered a copy of Red Hat Linux 7.3.
+
+ILUG member Braun Brelin proposed this promotion, when he ran a
+training class for staff at the UCC computer science department.
+Brelin, who is the director of technology at OpenApp, says that the
+Linux offer could be extended to any or all of the other Irish
+universities.
+
+The user group is tapping into an international Red Hat programme
+that aims to introduce students at all levels to the open source
+style of computing.  The Linux distributor runs an 'educational
+channel' to reach this audience, bundling educational software
+with its operating environment and offering networked support
+services to eligible applicants.  This scheme was originally designed
+to suit the educational structures in the US, but is now available to
+schools and universities throughout the world.
+
+Red Hat Linux 7.3 incorporates ease of use and maintenance
+features and is intended to counter objections that Linux is hard to
+master on personal systems.
+
+The Linux-for-all project at UCC could also raise the profile of Red
+Hat Ireland.  Based in Cork, this operation has run shared financial
+services for other Red Hat offices in Europe since 2000.  Until now
+its involvement with users in Ireland has been fairly limited,
+although it does sometimes refer them to other Red Hat offices in
+Europe that offer consulting or technical support services.
+
+David Owens, Red Hat's director of global logistics and production,
+sees the formation of the ILUG marketing group as a reason to take
+a more proactive approach.  In the last three months, he notes, his
+office in Cork has received more and more calls from Irish
+companies that are interested in adopting Linux and has introduced
+some to Red Hat pre-sales consultants.
+
+
+-------------
+Many thanks are due to Braun and David for working together on this one.
+
+Regards
+L.
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

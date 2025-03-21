@@ -1,0 +1,395 @@
+From news@risingtidestudios.com  Fri Sep 13 13:35:19 2002
+Return-Path: <news@risingtidestudios.com>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id 9110A16F03
+	for <zzzz@localhost>; Fri, 13 Sep 2002 13:35:16 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Fri, 13 Sep 2002 13:35:16 +0100 (IST)
+Received: from rtsq9.risingtidestudios.com (82.siliconalleyreporter.com
+    [209.11.52.209] (may be forged)) by dogma.slashnull.org (8.11.6/8.11.6)
+    with SMTP id g8D55JC02668 for <zzzz@jmason.org>; Fri, 13 Sep 2002 06:05:19
+    +0100
+Received: (qmail 20326 invoked by uid 508); 12 Sep 2002 18:21:31 -0000
+Date: 12 Sep 2002 18:21:31 -0000
+Message-Id: <20020912182131.20322.qmail@rtsq9.risingtidestudios.com>
+Reply-To: news@risingtidestudios.com
+X-Organization: Venture Reporter
+From: "Venture Reporter" <news@risingtidestudios.com>
+To: "zzzz@spamassassin.taint.org" <yyyy@spamassassin.taint.org>
+Subject: Invite: Content Management Summit, Oct. 10th New York City
+MIME-Version: 1.0
+Content-Type: text/html; charset=US-ASCII
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>This email is being sent to zzzz@jmason.org. To unsubscribe please
+visit http://www.venturereporter.net/myaccount/ . If you ever have a problem
+removing or changing your email subscriptions on our newsletters, or getting
+in touch with us, please don't hesitate to email support@venturereporter.net
+and a human will get in touch with you immediately. Venture Reporter 307
+West 36th Street, 10th Floor New York, New York 10018 Phoe: 646.473.2222
+The online content business.</title>
+      
+  <meta http-equiv="content-type"
+ content="text/html; charset=ISO-8859-1">
+</head>
+  <body text="#000000" bgcolor="#ffffff" link="#000099" vlink="#990099"
+ alink="#000099">
+    
+<p><font class="body"><font size="3" class="title"><img
+ src="http://www.cmsummit.com/images/right_02.gif" alt="CMS" width="127"
+ height="110">
+ <img src="http://www.cmsummit.com/images/cms_title.gif" alt="CMS"
+ width="350" height="85">
+ <br>
+ </font></font></p>
+    
+<p style="margin-bottom: 0cm;"><font class="body"><font
+ face="Verdana, 
+
+
+
+
+
+sans-serif"><font size="2">Dear Friends,<br>
+ <br>
+ <font color="#009900"><b>The online content business is doing fantastic.</b></font></font></font></font></p>
+    
+<p style="margin-bottom: 0cm;"><font class="body"><font
+ face="Verdana, 
+
+
+
+
+
+sans-serif"><font size="2">Sound crazy? Perhaps.  With 
+advertising,<span lang="en-US"> online </span>and off,  taking it on the chin
+for the past two years,  online content sites have been shutting down,  laying
+off staff and pulling back on their offerings.</font></font></font></p>
+    
+<p style="margin-bottom: 0cm;"><font class="body"><font
+ face="Verdana, 
+
+
+
+
+
+sans-serif"><font size="2">However,  this horrible environment
+has resulted in an undeniable trend:  content businesses are challenging
+people to pay for content.  Finally,  after five years of free,  people are<span
+ lang="en-US"> beginning </span>to understand that online,  as in the real
+world,  you get what you pay for and they are taking out their credit cards.
+ U.S.  consumers spent $675 million&nbsp;on paid&nbsp;online content last
+year,  a 92 percent increase over 2000 spending levels,  according to Online
+Publishers Association,  and that figure is expected to increase exponentially
+this year.  Look at these success stories:</font></font></font></p>
+    
+<ul>
+   <li>      
+    <div style="margin-bottom: 0cm;"><font class="body"><font
+ face="Verdana, 
+
+
+
+
+
+sans-serif"><font size="2">New York Times Digital has 
+been steadily increasing its paid content services over the last year,  and 
+registered a 16 percent increase in its total revenues for the latest quarter.</font></font></font></div>
+  </li>
+   <li>      
+    <div style="margin-bottom: 0cm;"><font class="body"><font
+ face="Verdana, 
+
+
+
+
+
+sans-serif"><font size="2">TheStreet.com brought over 
+$3 million in subscriptions last quarter,  an increase of almost 50 percent 
+over the year-ago quarter.</font></font></font></div>
+  </li>
+   <li>      
+    <div style="margin-bottom: 0cm;"><font class="body"><font
+ face="Verdana, 
+
+
+
+
+
+sans-serif"><font size="2">ConsumerReports.com will 
+reach over a million paying subscribers by the end of this year.</font></font></font></div>
+  </li>
+   <li>      
+    <div style="margin-bottom: 0cm;"><font class="body"><font
+ face="Verdana, 
+
+
+
+
+
+sans-serif"><font size="2">RealNetworks' consumer multi-media 
+subscription service has more than 750,000 subscribers,  bringing in $17.8 
+million in the last quarter.</font></font></font></div>
+  </li>
+   <li>      
+    <div style="margin-bottom: 0cm;"><font class="body"><font
+ face="Verdana, 
+
+
+
+
+
+sans-serif"><font size="2">The Wall Street Journal Online
+added over 6,000 new paying customers last quarter,  bringing its subscriber
+base to 646,000.</font></font></font></div>
+  </li>
+   <li>      
+    <div style="margin-bottom: 0cm;"><font class="body"><font
+ face="Verdana, 
+
+
+
+
+
+sans-serif"><font size="2">FT.com has signed up 17,000 
+subscribers in three months since it launched its premium site in May.</font></font></font></div>
+  </li>
+ 
+</ul>
+    
+<p style="margin-bottom: 0cm;"><font class="body"><font size="2"><font
+ face="Verdana, 
+
+
+
+
+
+sans-serif">In recognition of this trend we're hosting 
+the third installation of our innovative <a class=""
+ href="http://www.cmsummit.com">Content Management Summit on October 10, 
+2002</a>.  The event charts the changes in the content industry from free 
+to paid subscription services,  and the technologies that are<span
+ lang="en-US"> enabling </span>the management and monetizing of content.</font></font></font></p>
+    
+<p style="margin-bottom: 0cm;"><font class="body"><font
+ face="Verdana, 
+
+
+
+
+
+sans-serif"><font size="2">Our previous Content Management 
+Summit (aka Digital Rights Summit) on October 18 last year in New York City 
+and January 29 in Los Angeles were unqualified successes.</font></font></font></p>
+    
+<p style="margin-bottom: 0cm;"><font class="body"><font
+ face="Verdana, 
+
+
+
+
+
+sans-serif"><font size="2">The Content Management Summit 
+III,  taking place in New York at the Millennium Broadway on October 10, 
+2002,  will bring together the 100 executives from the leading content and 
+distribution firms for a focused day of networking and discovering practical 
+solutions.</font></font></font></p>
+    
+<p style="margin-bottom: 0cm;"><font class="body"><font
+ face="Verdana, 
+
+
+
+
+
+sans-serif"><font size="2">The event will feature presentations 
+from software and services<span lang="en-US"> companies </span>providing services
+and solutions for selling,  distributing,  managing,  and protecting content.</font></font></font></p>
+    
+<p style="margin-bottom: 0cm;"><font class="body"><font size="2"><font
+ face="Verdana, 
+
+
+
+
+
+sans-serif">We're<span lang="en-US"> thrilled </span>that 
+Microsoft,  TeleKnowledge,  eMeta,  and Liquify will all be demonstrating 
+their latest products and services.</font></font></font></p>
+    
+<p style="margin-bottom: 0cm;"><font class="body"><font size="2"><font
+ face="Verdana, 
+
+
+
+
+
+sans-serif">The event will also feature six intimate<span
+ lang="en-US"> round tables </span>focusing on various aspects of online content.
+ These panels are meant to provide an informal forum to discuss the challenges
+facing these specific vertical markets,  the changes in the sectors since
+the dot-com downfall,  and best practices in the industry.  The panels will
+feature leading practitioners in each sector,  and will also include an interactive
+question and answer session with the audience.</font></font></font></p>
+    
+<p style="margin-bottom: 0cm;"><font class="body"><font
+ face="Verdana, 
+
+
+
+
+
+sans-serif"><font size="2">Among the<span
+ lang="en-US"> round table </span>topics will be:</font></font></font></p>
+    
+<ul>
+   <li>      
+    <div style="margin-bottom: 0cm;"><font class="body"><font size="2"><font
+ face="Verdana, 
+
+
+
+
+
+sans-serif">Weblogs:  how they are affecting big media 
+companies,  editorially as well as in content delivery/production mechanisms.</font></font></font></div>
+  </li>
+   <li>      
+    <div style="margin-bottom: 0cm;"><font class="body"><font
+ face="Verdana, 
+
+
+
+
+
+sans-serif"><font size="2">Financial news and information 
+companies:  how they are using technologies to deliver content to users, 
+and how the economics have changed since the stock market downfall.</font></font></font></div>
+  </li>
+   <li>      
+    <div style="margin-bottom: 0cm;"><font class="body"><font
+ face="Verdana, 
+
+
+
+
+
+sans-serif"><font size="2">Business information services 
+such as Hoovers,  Lexis-Nexis and others:  best practices in the industry, 
+ niche product launches and revenue streams.</font></font></font></div>
+  </li>
+   <li>      
+    <div style="margin-bottom: 0cm;"><font class="body"><font
+ face="Verdana, 
+
+
+
+
+
+sans-serif"><font size="2">Daily news/newspaper companies 
+publishing online:  how speed dictates technology choices,  and the move towards
+paid content and its implications,  among other issues.</font></font></font></div>
+  </li>
+   <li>      
+    <div style="margin-bottom: 0cm;"><font class="body"><font
+ face="Verdana, 
+
+
+
+
+
+sans-serif"><font size="2">Consumer and entertainment 
+publishers:  how do publishers determine the value of entertainment content, 
+ the push towards paid subscriptions,  online advertising and other issues.</font></font></font></div>
+  </li>
+ 
+</ul>
+    
+<p style="margin-bottom: 0cm;"><font class="body"><font
+ face="Verdana, 
+
+
+
+
+
+sans-serif"><font size="2">Join us on October 10<sup>th</sup> 
+for this very important event.  If you are directly<span lang="en-US"> responsible 
+</span>for content management at a major content site you may qualify for 
+a VIP ticket.  Please e-mail your request with your name,  title and bio to
+<a href="mailto:invite@cmsummit.com">invite@cmsummit.com</a>.  If you are
+with a software or services provider,  or anyone not directly responsible 
+for the purchase of content management software or solutions,  you can purchase 
+a ticket to this event for $1,200 at <a
+ href="mailto:invite@cmsummit.com">invite@cmsummit.com</a>.  </font></font></font></p>
+    
+<p style="margin-bottom: 0cm;"><font class="body"><font
+ face="Verdana, 
+
+
+
+
+
+sans-serif"><font size="2">Best Regards,</font></font></font></p>
+    
+<p style="margin-bottom: 0cm;"><font class="body"><font
+ face="Verdana, 
+
+
+
+
+
+sans-serif"><font size="2">Jason McCabe Calacanis<br>
+  E</font></font><font face="Verdana, 
+
+
+
+
+
+sans-serif"><font size="2">ditor-in-Chief 
+&amp;  CEO,  </font></font><font face="Verdana, 
+
+
+
+
+
+sans-serif"><font
+ size="2">Venture Reporter &amp;  Silicon Alley Reporter </font></font></font></p>
+             
+<hr width="100%" size="2">           
+<p class="body"><small><font face="Helvetica, Arial, sans-serif">This email
+ is being   sent to zzzz@jmason.org. </font></small></p>
+ 
+<p class="body"><small><font face="Helvetica, Arial, sans-serif">If you would
+ rather   not receive  these infrequent updates simply click <a
+ href="http://venturereporter.net/myaccount/k.asp?E=zzzz@jmason.org">    
+  here</a>        and you will be removed instantly. </font></small></p>
+ <small><font face="Helvetica, Arial, sans-serif">You can also click   the
+ link here or cut and paste it into your browser:<br>
+ <a href="http://venturereporter.net/myaccount/k.asp?E=zzzz@jmason.org"> http://venturereporter.net/myaccount/k.asp?E=jm@jmason.org</a> 
+      &nbsp;</font></small> 
+<p class="body"><small><font face="Helvetica, Arial, sans-serif"><br>
+     </font></small></p>
+               
+<div align="center"><small><font face="Helvetica, Arial, sans-serif"> Venture 
+     Reporter </font></small><br>
+     </div>
+               
+<div align="center"><small><font face="Helvetica, Arial, sans-serif"> 307 
+West 36th Street, 10th Floor</font></small><small><br>
+     </small><small><font face="Helvetica, Arial, sans-serif">New York, New 
+ York      10018</font></small><small><br>
+     </small><small><font face="Helvetica, Arial, sans-serif">Phoe: 646.473.2222</font></small></div>
+<p style="margin-bottom: 0cm;"><br>
+ <font class="body"><br>
+ </font></p>
+ <br>
+ <br>
+</body>
+</html>
+
+

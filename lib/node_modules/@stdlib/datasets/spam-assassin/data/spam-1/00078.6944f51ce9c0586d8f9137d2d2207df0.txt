@@ -1,0 +1,49 @@
+From zaferunlu5352c84@yahoo.com  Mon Aug 26 15:48:36 2002
+Return-Path: <zaferunlu5352c84@yahoo.com>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.spamassassin.taint.org (Postfix) with ESMTP id DF2F647CC4
+	for <zzzz@localhost>; Mon, 26 Aug 2002 10:41:39 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 26 Aug 2002 15:41:39 +0100 (IST)
+Received: from yahoo.com ([61.179.116.50]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with SMTP id g7NJYBZ05419 for <webmaster@efi.ie>;
+    Fri, 23 Aug 2002 20:34:12 +0100
+Received: from unknown (196.112.125.16) by m10.grp.snv.yahui.com with QMQP;
+    Sat, 24 Aug 2002 21:35:22 -0600
+Received: from q4.quickslow.com ([118.205.184.163]) by
+    smtp013.mail.yahou.com with SMTP; Sat, 24 Aug 2002 15:31:55 +0400
+Received: from unknown (HELO anther.webhostingtotalk.com) (154.108.153.99)
+    by web.mail.halfeye.com with NNFMP; Sat, 24 Aug 2002 19:28:28 -0900
+Reply-To: <zaferunlu5352c84@yahoo.com>
+Message-Id: <007a70c54b3a$8343c3d0$7ce30cd7@dtfxjx>
+From: <zaferunlu5352c84@yahoo.com>
+To: Consolidate@dogma.slashnull.org
+Subject: ** You're -Approved-!
+Date: Fri, 23 Aug 2002 22:18:32 +1200
+MIME-Version: 1.0
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.2627
+Importance: Normal
+Content-Type: multipart/mixed; boundary="----=_NextPart_000_00D7_08E60D5B.E5437E70"
+
+------=_NextPart_000_00D7_08E60D5B.E5437E70
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: base64
+
+
+PGh0bWw+DQo8Ym9keT4NCjxmb250IGNvbG9yPSJmZmZmZmYiPmRyeXdhbGw8
+L2ZvbnQ+DQo8cD5Zb3VyIGhvbWUgcmVmaW5hbmNlIGxvYW4gaXMgYXBwcm92
+ZWQhPGJyPjwvcD48YnI+DQo8cD5UbyBnZXQgeW91ciBhcHByb3ZlZCBhbW91
+bnQgPGEgaHJlZj0iaHR0cDovL3d3dy5tb3J0Z2FnZXBvd2VyMy5jb20vIj5n
+bw0KaGVyZTwvYT4uPC9wPg0KPGJyPjxicj48YnI+PGJyPjxicj48YnI+PGJy
+Pjxicj48YnI+PGJyPjxicj48YnI+PGJyPjxicj48YnI+PGJyPjxicj48YnI+
+PGJyPg0KPHA+VG8gYmUgZXhjbHVkZWQgZnJvbSBmdXJ0aGVyIG5vdGljZXMg
+PGEgaHJlZj0iaHR0cDovL3d3dy5tb3J0Z2FnZXBvd2VyMy5jb20vcmVtb3Zl
+Lmh0bWwiPmdvDQpoZXJlPC9hPi48L3A+DQo8Zm9udCBjb2xvcj0iZmZmZmZm
+Ij5kcnl3YWxsPC9mb250Pg0KPC9ib2R5Pg0KPGZvbnQgY29sb3I9ImZmZmZm
+ZiI+MWdhdGUNCjwvaHRtbD4NCjUyOTdnZHFLNi00OThqeXhsMzAzM1JhZkQz
+LTE5NVJUY3o2NDg1b2JRVTktNjE1TE9MZzlsNDk=
+

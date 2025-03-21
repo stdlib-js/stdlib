@@ -1,0 +1,47 @@
+
+{{alias}}( iter0, ...iterator )
+    Returns an iterator which iterates over the values of two or more iterators.
+
+    If an environment supports Symbol.iterator and provided iterators are
+    iterable, the returned iterator is iterable.
+
+    Parameters
+    ----------
+    iter0: Object
+        Input iterator.
+
+    iterator: ...Object
+        Iterators to concatenate.
+
+    Returns
+    -------
+    iterator: Object
+        Iterator.
+
+    iterator.next(): Function
+        Returns an iterator protocol-compliant object containing the next
+        iterated value (if one exists) and a boolean flag indicating whether the
+        iterator is finished.
+
+    iterator.return( [value] ): Function
+        Finishes an iterator and returns a provided value.
+
+    Examples
+    --------
+    > var it1 = {{alias:@stdlib/array/to-iterator}}( [ 1, 2 ] );
+    > var it2 = {{alias:@stdlib/array/to-iterator}}( [ 3, 4 ] );
+    > var it = {{alias}}( it1, it2 );
+    > var v = it.next().value
+    1
+    > v = it.next().value
+    2
+    > v = it.next().value
+    3
+    > v = it.next().value
+    4
+    > var bool = it.next().done
+    true
+
+    See Also
+    --------
+

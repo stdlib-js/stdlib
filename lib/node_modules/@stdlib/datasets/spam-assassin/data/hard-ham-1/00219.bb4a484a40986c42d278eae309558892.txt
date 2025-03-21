@@ -1,0 +1,64 @@
+Return-Path: volunteer-reply@robertreich.org
+Delivery-Date: Sun Sep 15 23:27:43 2002
+Return-Path: <volunteer-reply@robertreich.org>
+Received: from mail3.intermedia.net (mail3.intermedia.net [206.40.48.153])
+	by eclectic.kluge.net (8.12.6/8.12.6) with ESMTP id g8G3RfOk029859
+	for <reich@vandinter.org>; Sun, 15 Sep 2002 23:27:42 -0400
+Received: from dh7863-68 (unverified [64.78.63.68]) by mail3.intermedia.net
+ (Rockliffe SMTPRA 4.5.4) with SMTP id <B0055250236@mail3.intermedia.net> for <reich@vandinter.org>;
+ Sun, 15 Sep 2002 20:27:39 -0700
+Message-ID: <B0055250236@mail3.intermedia.net>
+From: Robert Reich For Governor <volunteer-reply@robertreich.org>
+To: <reich@vandinter.org>
+Date: Mon, 16 Sep 2002 03:27:38 (GMT)
+X-MSMail-Priority: Normal
+X-mailer: AspMail 3.53 (SMTP2D571B)
+Subject: You're signed up for the Reich Report!
+Mime-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by eclectic.kluge.net id g8G3RfOk029859
+X-Reject: Spamassassin match!
+
+SPAM: This mail is probably spam.  The original message has been altered
+SPAM: so you can recognise or block similar unwanted mail in future.
+SPAM: See http://spamassassin.org/tag/ for more details.
+SPAM: 
+SPAM: Content analysis details:   (5.30 hits, 5 required)
+SPAM: INVALID_DATE       (1.6 points)  Invalid Date: header (not RFC 2822)
+SPAM: REMOVE_SUBJ        (1.7 points)  BODY: List removal information
+SPAM: SPAM_PHRASE_05_08  (0.7 points)  BODY: Spam phrases score is 05 to 08 (medium)
+SPAM:                    [score: 6]
+SPAM: SUPERLONG_LINE     (-2.2 points) BODY: Contains a line >=199 characters long
+SPAM: MSG_ID_ADDED_BY_MTA_3 (0.2 points)  'Message-Id' was added by a relay (3)
+SPAM: MISSING_MIMEOLE    (1.6 points)  Message has X-MSMail-Priority, but no X-MimeOLE
+SPAM: MISSING_OUTLOOK_NAME (1.7 points)  Message looks like Outlook, but isn't
+SPAM: 
+
+*************************************
+*   Reich for Governor Committee    *
+*   Newsletter Sign-up Confirmation *
+*************************************
+
+Thank you for signing up for the Reich Report, the weekly newsletter of the Reich for Governor campaign. You can read our previous newsletter on our website at http://RobertReich.org/gov/Newsletter.asp . If you would like to volunteer for the campaign, please contact our volunteer coordinator, Meg Ansara, at Meg@RobertReich.org or call (617) 547-2206 x132. 
+
+Our headquarters is located at 625 Mount Auburn Street, near the Star Market in Cambridge.  We are open from 9 am to 9 pm Monday through Thursday, 9 am to 6 pm Friday, 10 am to 6 pm Saturday, and 12 noon to 8 pm on Sundays. We are a bus ride away from Harvard Square (bus #71 or #73) and parking is readily available in the back of the building. We encourage all Reich supporters to come to the headquarters for events, to volunteer for phone banking, or just to see how we operate. 
+
+We encourage you to forward this e-mail to your friends, family, and colleagues, and ask them to sign up for our newsletter at http://www.robertreich.org/gov/emailpage.asp . Help us start a 'virtual' campaign!
+
+If you do not want to receive future newsletters, please send an e-mail to newsletter@RobertReich.org with 'Remove' as the subject line. 
+
+-- Jesse Alan Gordon
+Technology Director
+Reich for Governor Committee
+Jesse@RobertReich.org
+
+*************************************
+*   Reich for Governor Committee    *
+*   P.O. Box 381483                 *
+*   Cambridge, MA 02238             *
+*   http://www.RobertReich.org      *
+*************************************
+
+
+

@@ -1,0 +1,1363 @@
+From fork-admin@xent.com  Fri Jul 19 15:05:58 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 09DA443FB7
+	for <jm@localhost>; Fri, 19 Jul 2002 10:05:52 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 15:05:52 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6JE52J02555 for <jm@jmason.org>;
+    Fri, 19 Jul 2002 15:05:03 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 8E47F2940A5; Fri, 19 Jul 2002 06:55:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from zephers.com (unknown [63.218.225.157]) by xent.com
+    (Postfix) with SMTP id C16F5294098 for <fork@xent.com>; Fri,
+    19 Jul 2002 06:54:58 -0700 (PDT)
+X-Sender: vanity@zephers.com
+From: vanity@zephers.com
+Received: from zephers.com by 1IPR7CCT4G7S17.zephers.com with SMTP for
+    fork@xent.com; Fri, 19 Jul 2002 10:03:47 -0500
+Importance: $KWH_IMP
+Date: Fri, 19 Jul 2002 10:03:47 -0500
+X-Msmail-Priority: $KWH_XMSP
+MIME-Version: 1.0
+To: fork@spamassassin.taint.org
+Reply-To: lookinggood@zephers.com
+X-Priority: 3
+X-Encoding: MIME
+X-Mailer: Microsoft Outlook Express, Build 5.2.4600
+Subject: LOOKING FOR LEADERS IN YOUR AREA
+Message-Id: <03887N5.2G0T7J9L8H0.vanity@zephers.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Friends of Rohit Khare <fork.xent.com>
+X-Beenthere: fork@spamassassin.taint.org
+Content-Type: multipart/alternative; boundary="----=_NextPart_244_43836275737818467044071"
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_244_43836275737818467044071
+Content-Type: text/plain;
+	charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<!-- saved from url=3D(0022)http://internet.e-mail -->
+=
+
+<html xmlns:o=3D"urn:schemas-microsoft-com:office:office"
+=
+
+xmlns:w=3D"urn:schemas-microsoft-com:office:word"
+=
+
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+=
+
+
+=
+
+<head>
+=
+
+<meta http-equiv=3DContent-Type content=3D"text/html; charset=3Dwindows-1252">
+=
+
+<meta name=3DProgId content=3DWord.Document>
+=
+
+<meta name=3DGenerator content=3D"Microsoft Word 9">
+=
+
+<meta name=3DOriginator content=3D"Microsoft Word 9">
+=
+
+<link rel=3DFile-List
+=
+
+href=3D"./PROFIT%20FROM%20THE%20BOOMERS-july%209_files/filelist.xml">
+=
+
+<title>HOW DO I PROFIT FROM THE BOOMERS </title>
+=
+
+<!--[if gte mso 9]><xml>
+=
+
+ <o:DocumentProperties>
+=
+
+  <o:Author>Val Curl</o:Author>
+=
+
+  <o:Template>Normal</o:Template>
+=
+
+  <o:LastAuthor>Val Curl</o:LastAuthor>
+=
+
+  <o:Revision>2</o:Revision>
+=
+
+  <o:TotalTime>95</o:TotalTime>
+=
+
+  <o:Created>2002-07-13T21:21:00Z</o:Created>
+=
+
+  <o:LastSaved>2002-07-13T21:21:00Z</o:LastSaved>
+=
+
+  <o:Pages>2</o:Pages>
+=
+
+  <o:Words>333</o:Words>
+=
+
+  <o:Characters>1903</o:Characters>
+=
+
+  <o:Lines>15</o:Lines>
+=
+
+  <o:Paragraphs>3</o:Paragraphs>
+=
+
+  <o:CharactersWithSpaces>2337</o:CharactersWithSpaces>
+=
+
+  <o:Version>9.2720</o:Version>
+=
+
+ </o:DocumentProperties>
+=
+
+</xml><![endif]-->
+=
+
+<style>
+=
+
+<!--
+=
+
+ /* Font Definitions */
+=
+
+@font-face
+=
+
+	{font-family:"Lucida Handwriting";
+=
+
+	panose-1:3 1 1 1 1 1 1 1 1 1;
+=
+
+	mso-font-charset:0;
+=
+
+	mso-generic-font-family:script;
+=
+
+	mso-font-pitch:variable;
+=
+
+	mso-font-signature:3 0 0 0 1 0;}
+=
+
+@font-face
+=
+
+	{font-family:Impact;
+=
+
+	panose-1:2 11 8 6 3 9 2 5 2 4;
+=
+
+	mso-font-charset:0;
+=
+
+	mso-generic-font-family:swiss;
+=
+
+	mso-font-pitch:variable;
+=
+
+	mso-font-signature:647 0 0 0 159 0;}
+=
+
+ /* Style Definitions */
+=
+
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+=
+
+	{mso-style-parent:"";
+=
+
+	margin:0in;
+=
+
+	margin-bottom:.0001pt;
+=
+
+	mso-pagination:widow-orphan;
+=
+
+	font-size:12.0pt;
+=
+
+	font-family:"Times New Roman";
+=
+
+	mso-fareast-font-family:"Times New Roman";}
+=
+
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+=
+
+	{margin:0in;
+=
+
+	margin-bottom:.0001pt;
+=
+
+	text-align:center;
+=
+
+	mso-pagination:widow-orphan;
+=
+
+	font-size:12.0pt;
+=
+
+	font-family:Arial;
+=
+
+	mso-fareast-font-family:"Times New Roman";}
+=
+
+p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+=
+
+	{margin:0in;
+=
+
+	margin-bottom:.0001pt;
+=
+
+	text-align:center;
+=
+
+	mso-pagination:widow-orphan;
+=
+
+	font-size:28.0pt;
+=
+
+	mso-bidi-font-size:12.0pt;
+=
+
+	font-family:Impact;
+=
+
+	mso-fareast-font-family:"Times New Roman";
+=
+
+	mso-bidi-font-family:Arial;
+=
+
+	color:purple;}
+=
+
+a:link, span.MsoHyperlink
+=
+
+	{color:blue;
+=
+
+	text-decoration:underline;
+=
+
+	text-underline:single;}
+=
+
+a:visited, span.MsoHyperlinkFollowed
+=
+
+	{color:purple;
+=
+
+	text-decoration:underline;
+=
+
+	text-underline:single;}
+=
+
+@page Section1
+=
+
+	{size:8.5in 11.0in;
+=
+
+	margin:.6in .6in .6in .6in;
+=
+
+	mso-header-margin:.2in;
+=
+
+	mso-footer-margin:.2in;
+=
+
+	mso-paper-source:0;}
+=
+
+div.Section1
+=
+
+	{page:Section1;}
+=
+
+-->
+=
+
+</style>
+=
+
+</head>
+=
+
+
+=
+
+<body lang=3DEN-US link=3Dblue vlink=3Dpurple style=3D'tab-interval:.5in'>
+=
+
+
+=
+
+<div class=3DSection1>
+=
+
+
+=
+
+<p class=3DMsoBodyText2><span style=3D'font-size:36.0pt;mso-bidi-font-size:12.=
+0pt'>HOW
+=
+
+DO I PROFIT FROM THE<br>
+=
+
+90 MILLION BABY BOOMERS ?<o:p></o:p></span></p>
+=
+
+
+=
+
+<p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span
+=
+
+style=3D'color:#666699'>--------------------------------------------------------=
+--------------------------------------------------------<br
+=
+
+style=3D'mso-special-character:line-break'>
+=
+
+<![if !supportLineBreakNewLine]><br style=3D'mso-special-character:line-break'>
+=
+
+<![endif]></span><span style=3D'font-family:Arial'><o:p></o:p></span></p>
+=
+
+
+=
+
+<p class=3DMsoBodyText><b><span style=3D'font-size:18.0pt;mso-bidi-font-size:12.=
+0pt;
+=
+
+color:#666699'>Become an <u>EXCLUSIVE</u> <u>PROVIDER</u> of a<br>
+=
+
+“LOOK YOUNGER” PRODUCT<br>
+=
+
+that the Boomers <u>WANT</u> !</span></b><span style=3D'color:#666699'><br>
+=
+
+<br>
+=
+
+</span><b><span style=3D'font-size:18.0pt;mso-bidi-font-size:12.0pt;=
+color:#666699'>Provide
+=
+
+a <u>PATENTED</u> product that successfully addresses</span></b><br>
+=
+
+<b><span style=3D'font-size:20.0pt;mso-bidi-font-size:12.0pt;=
+font-family:"Lucida Handwriting";
+=
+
+color:fuchsia'>Wrinkles, Dark Circles, Age Spots, Fine Lines, Cellulite, =
+Spider
+=
+
+Veins, and MORE !</span></b><span style=3D'font-size:20.0pt;mso-bidi-font-size:
+=
+
+12.0pt;color:fuchsia'><br>
+=
+
+</span><br>
+=
+
+<b><span style=3D'font-size:18.0pt;mso-bidi-font-size:12.0pt;=
+color:#666699'>Provide
+=
+
+an AFFORDABLE, <u>HEALTHY</u> product that<br>
+=
+
+shows <u>FAST RESULTS</u> on the OUTSIDE of the body<br>
+=
+
+while providing the proven benefits of<br>
+=
+
+SUPER ANTIOXIDANTS at the cellular level !<br>
+=
+
+</span></b><span style=3D'color:#666699'><br>
+=
+
+------------------------------------------------------------------------------=
+----------------------------------<br>
+=
+
+</span><br>
+=
+
+<b><span style=3D'font-size:24.0pt;mso-bidi-font-size:12.0pt;color:#666699'>We =
+<u>ALL</u>
+=
+
+know that</span></b><br>
+=
+
+<span style=3D'font-size:48.0pt;mso-bidi-font-size:12.0pt;font-family:Impact;
+=
+
+color:fuchsia'>VANITY SELLS !</span><span style=3D'font-size:24.0pt;=
+mso-bidi-font-size:
+=
+
+12.0pt;font-family:Impact;color:fuchsia'><br>
+=
+
+</span><span =
+style=3D'color:#666699'>---------------------------------------------------------=
+-------------------------------------------------------<br>
+=
+
+</span><br>
+=
+
+<b><u><span style=3D'font-size:18.0pt;mso-bidi-font-size:12.0pt;=
+color:#666699'>WHY
+=
+
+NOT</span></u></b><b><span style=3D'font-size:18.0pt;mso-bidi-font-size:12.0pt;
+=
+
+color:#666699'><br>
+=
+
+</span></b><b><span style=3D'font-size:18.0pt;mso-bidi-font-size:12.0pt;
+=
+
+color:fuchsia'>LOOK TEN YEARS YOUNGER and <u>GET PAID FOR IT</u> ?=
+</span></b><b><span
+=
+
+style=3D'font-size:18.0pt;mso-bidi-font-size:12.0pt;color:#993366'><br>
+=
+
+</span></b><span =
+style=3D'color:#666699'>---------------------------------------------------------=
+-------------------------------------------------------<br>
+=
+
+</span><br>
+=
+
+<b><span style=3D'font-size:20.0pt;mso-bidi-font-size:12.0pt;=
+color:#666699'>THIS
+=
+
+“BOOMER” PHENOMENON IS HAPPENING<br>
+=
+
+WITH or WITHOUT<br>
+=
+
+YOU or ME …<br>
+=
+
+<br>
+=
+
+THIS RECEPTIVE MARKETPLACE WILL CREATE</span></b><span =
+style=3D'color:#FF99CC'><br>
+=
+
+</span><span style=3D'font-size:36.0pt;mso-bidi-font-size:12.0pt;font-family:
+=
+
+Impact;color:fuchsia'>MILLIONAIRES !!!</span><span style=3D'font-size:36.0pt;
+=
+
+mso-bidi-font-size:12.0pt;font-family:Impact'><br>
+=
+
+<br>
+=
+
+</span><b><i><u><span style=3D'font-size:26.0pt;mso-bidi-font-size:12.0pt;
+=
+
+color:#666699'>WHY NOT</span></u></i></b><b><i><span style=3D'font-size:26.0pt;
+=
+
+mso-bidi-font-size:12.0pt;color:#666699'> BE ONE OF THEM ?</span></i></b><br>
+=
+
+<span =
+style=3D'color:#666699'>---------------------------------------------------------=
+-------------------------------------------------------<br>
+=
+
+</span><br>
+=
+
+<span style=3D'font-size:48.0pt;mso-bidi-font-size:12.0pt;font-family:Impact;
+=
+
+color:fuchsia'><a href=3D"mailto:go@tytcorp.com"><span style=3D'color:
+=
+
+fuchsia'>CLICK HERE</span></a></span><b><span style=3D'font-size:48.0pt;
+=
+
+mso-bidi-font-size:12.0pt'><br>
+=
+
+</span></b><b><span style=3D'font-size:16.0pt;mso-bidi-font-size:12.0pt'>with =
+“</span></b><span
+=
+
+style=3D'font-size:24.0pt;mso-bidi-font-size:12.0pt;font-family:Impact;
+=
+
+color:#666699'>I’m Your Leader</span><b><span style=3D'font-size:16.0pt;
+=
+
+mso-bidi-font-size:12.0pt'>” or “</span></b><span style=3D'font-size:24.0pt;
+=
+
+mso-bidi-font-size:12.0pt;font-family:Impact;color:#666699'>Product =
+Only</span><b><span
+=
+
+style=3D'font-size:16.0pt;mso-bidi-font-size:12.0pt'>” in the Subject Line<br>
+=
+
+<br>
+=
+
+</span></b><b><span style=3D'font-size:18.0pt;mso-bidi-font-size:12.0pt;
+=
+
+color:#666699'>You Will be emailed information sufficient for you to make an
+=
+
+Educated Business Decision as to whether this phenomenon is something you =
+want
+=
+
+to pursue or not …<br>
+=
+
+NO HYPE / NO OBLIGATION<br style=3D'mso-special-character:line-break'>
+=
+
+<![if !supportLineBreakNewLine]><br style=3D'mso-special-character:line-break'>
+=
+
+<![endif]><o:p></o:p></span></b></p>
+=
+
+
+=
+
+<p class=3DMsoBodyText><b><span style=3D'font-size:18.0pt;mso-bidi-font-size:12.=
+0pt;
+=
+
+color:#666699'><![if !supportEmptyParas]>&nbsp;<!=
+[endif]><o:p></o:p></span></b></p>
+=
+
+
+=
+
+<p =
+class=3DMsoNormal>---------------------------------------------------------------=
+-------------------------------------------------------------------</p>
+=
+
+
+=
+
+<p class=3DMsoBodyText><span style=3D'font-size:10.0pt;mso-bidi-font-size:8.=
+0pt'>Your
+=
+
+email address was obtained from an opt-in list.<span style=3D"mso-spacerun:
+=
+
+yes">  </span>If you wish to unsubscribe from this list please Click on =
+“REMOVE
+=
+
+ME”, below, and Click send.</span><span style=3D'font-size:10.0pt;=
+mso-bidi-font-size:
+=
+
+7.5pt'><br>
+=
+
+TO BE REMOVED:<span style=3D"mso-spacerun: yes">  </span>PLEASE <u>DO NOT</u>
+=
+
+CLICK ON THE “REPLY” BUTTON… <br>
+=
+
+JUST <u>CLICK HERE</u> AT </span><b><span style=3D'font-size:16.0pt;=
+mso-bidi-font-size:
+=
+
+10.0pt'><a href=3D"mailto:remove@nouce1.com">REMOVE ME</a></span></b><span
+=
+
+style=3D'font-size:10.0pt;mso-bidi-font-size:7.5pt'> with &quot;REMOVE ME&quot;
+=
+
+in Subject Line. You will be immediately and permanently removed from this
+=
+
+database, and please accept our apologies for any inconvenience. BEST OF
+=
+
+SUCCESS IN WHATEVER YOU CHOOSE TO DO IN LIFE!<br>
+=
+
+</span>-----------------------------------------------------------------------=
+-----------------------------------------------------------<span
+=
+
+style=3D'color:#666699'><o:p></o:p></span></p>
+=
+
+
+=
+
+</div>
+=
+
+
+=
+
+</body>
+=
+
+
+=
+
+</html>
+=
+
+
+
+
+------=_NextPart_244_43836275737818467044071
+Content-Type: text/html;
+	charset="us-ascii"
+Content-Transfer-Encoding: Quoted-Printable
+
+<!-- saved from url=3D(0022)http://internet.e-mail -->
+=
+
+<html xmlns:o=3D"urn:schemas-microsoft-com:office:office"
+=
+
+xmlns:w=3D"urn:schemas-microsoft-com:office:word"
+=
+
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+=
+
+
+=
+
+<head>
+=
+
+<meta http-equiv=3DContent-Type content=3D"text/html; charset=3Dwindows-1252">
+=
+
+<meta name=3DProgId content=3DWord.Document>
+=
+
+<meta name=3DGenerator content=3D"Microsoft Word 9">
+=
+
+<meta name=3DOriginator content=3D"Microsoft Word 9">
+=
+
+<link rel=3DFile-List
+=
+
+href=3D"./PROFIT%20FROM%20THE%20BOOMERS-july%209_files/filelist.xml">
+=
+
+<title>HOW DO I PROFIT FROM THE BOOMERS </title>
+=
+
+<!--[if gte mso 9]><xml>
+=
+
+ <o:DocumentProperties>
+=
+
+  <o:Author>Val Curl</o:Author>
+=
+
+  <o:Template>Normal</o:Template>
+=
+
+  <o:LastAuthor>Val Curl</o:LastAuthor>
+=
+
+  <o:Revision>2</o:Revision>
+=
+
+  <o:TotalTime>95</o:TotalTime>
+=
+
+  <o:Created>2002-07-13T21:21:00Z</o:Created>
+=
+
+  <o:LastSaved>2002-07-13T21:21:00Z</o:LastSaved>
+=
+
+  <o:Pages>2</o:Pages>
+=
+
+  <o:Words>333</o:Words>
+=
+
+  <o:Characters>1903</o:Characters>
+=
+
+  <o:Lines>15</o:Lines>
+=
+
+  <o:Paragraphs>3</o:Paragraphs>
+=
+
+  <o:CharactersWithSpaces>2337</o:CharactersWithSpaces>
+=
+
+  <o:Version>9.2720</o:Version>
+=
+
+ </o:DocumentProperties>
+=
+
+</xml><![endif]-->
+=
+
+<style>
+=
+
+<!--
+=
+
+ /* Font Definitions */
+=
+
+@font-face
+=
+
+	{font-family:"Lucida Handwriting";
+=
+
+	panose-1:3 1 1 1 1 1 1 1 1 1;
+=
+
+	mso-font-charset:0;
+=
+
+	mso-generic-font-family:script;
+=
+
+	mso-font-pitch:variable;
+=
+
+	mso-font-signature:3 0 0 0 1 0;}
+=
+
+@font-face
+=
+
+	{font-family:Impact;
+=
+
+	panose-1:2 11 8 6 3 9 2 5 2 4;
+=
+
+	mso-font-charset:0;
+=
+
+	mso-generic-font-family:swiss;
+=
+
+	mso-font-pitch:variable;
+=
+
+	mso-font-signature:647 0 0 0 159 0;}
+=
+
+ /* Style Definitions */
+=
+
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+=
+
+	{mso-style-parent:"";
+=
+
+	margin:0in;
+=
+
+	margin-bottom:.0001pt;
+=
+
+	mso-pagination:widow-orphan;
+=
+
+	font-size:12.0pt;
+=
+
+	font-family:"Times New Roman";
+=
+
+	mso-fareast-font-family:"Times New Roman";}
+=
+
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+=
+
+	{margin:0in;
+=
+
+	margin-bottom:.0001pt;
+=
+
+	text-align:center;
+=
+
+	mso-pagination:widow-orphan;
+=
+
+	font-size:12.0pt;
+=
+
+	font-family:Arial;
+=
+
+	mso-fareast-font-family:"Times New Roman";}
+=
+
+p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+=
+
+	{margin:0in;
+=
+
+	margin-bottom:.0001pt;
+=
+
+	text-align:center;
+=
+
+	mso-pagination:widow-orphan;
+=
+
+	font-size:28.0pt;
+=
+
+	mso-bidi-font-size:12.0pt;
+=
+
+	font-family:Impact;
+=
+
+	mso-fareast-font-family:"Times New Roman";
+=
+
+	mso-bidi-font-family:Arial;
+=
+
+	color:purple;}
+=
+
+a:link, span.MsoHyperlink
+=
+
+	{color:blue;
+=
+
+	text-decoration:underline;
+=
+
+	text-underline:single;}
+=
+
+a:visited, span.MsoHyperlinkFollowed
+=
+
+	{color:purple;
+=
+
+	text-decoration:underline;
+=
+
+	text-underline:single;}
+=
+
+@page Section1
+=
+
+	{size:8.5in 11.0in;
+=
+
+	margin:.6in .6in .6in .6in;
+=
+
+	mso-header-margin:.2in;
+=
+
+	mso-footer-margin:.2in;
+=
+
+	mso-paper-source:0;}
+=
+
+div.Section1
+=
+
+	{page:Section1;}
+=
+
+-->
+=
+
+</style>
+=
+
+</head>
+=
+
+
+=
+
+<body lang=3DEN-US link=3Dblue vlink=3Dpurple style=3D'tab-interval:.5in'>
+=
+
+
+=
+
+<div class=3DSection1>
+=
+
+
+=
+
+<p class=3DMsoBodyText2><span style=3D'font-size:36.0pt;mso-bidi-font-size:12.=
+0pt'>HOW
+=
+
+DO I PROFIT FROM THE<br>
+=
+
+90 MILLION BABY BOOMERS ?<o:p></o:p></span></p>
+=
+
+
+=
+
+<p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span
+=
+
+style=3D'color:#666699'>--------------------------------------------------------=
+--------------------------------------------------------<br
+=
+
+style=3D'mso-special-character:line-break'>
+=
+
+<![if !supportLineBreakNewLine]><br style=3D'mso-special-character:line-break'>
+=
+
+<![endif]></span><span style=3D'font-family:Arial'><o:p></o:p></span></p>
+=
+
+
+=
+
+<p class=3DMsoBodyText><b><span style=3D'font-size:18.0pt;mso-bidi-font-size:12.=
+0pt;
+=
+
+color:#666699'>Become an <u>EXCLUSIVE</u> <u>PROVIDER</u> of a<br>
+=
+
+“LOOK YOUNGER” PRODUCT<br>
+=
+
+that the Boomers <u>WANT</u> !</span></b><span style=3D'color:#666699'><br>
+=
+
+<br>
+=
+
+</span><b><span style=3D'font-size:18.0pt;mso-bidi-font-size:12.0pt;=
+color:#666699'>Provide
+=
+
+a <u>PATENTED</u> product that successfully addresses</span></b><br>
+=
+
+<b><span style=3D'font-size:20.0pt;mso-bidi-font-size:12.0pt;=
+font-family:"Lucida Handwriting";
+=
+
+color:fuchsia'>Wrinkles, Dark Circles, Age Spots, Fine Lines, Cellulite, =
+Spider
+=
+
+Veins, and MORE !</span></b><span style=3D'font-size:20.0pt;mso-bidi-font-size:
+=
+
+12.0pt;color:fuchsia'><br>
+=
+
+</span><br>
+=
+
+<b><span style=3D'font-size:18.0pt;mso-bidi-font-size:12.0pt;=
+color:#666699'>Provide
+=
+
+an AFFORDABLE, <u>HEALTHY</u> product that<br>
+=
+
+shows <u>FAST RESULTS</u> on the OUTSIDE of the body<br>
+=
+
+while providing the proven benefits of<br>
+=
+
+SUPER ANTIOXIDANTS at the cellular level !<br>
+=
+
+</span></b><span style=3D'color:#666699'><br>
+=
+
+------------------------------------------------------------------------------=
+----------------------------------<br>
+=
+
+</span><br>
+=
+
+<b><span style=3D'font-size:24.0pt;mso-bidi-font-size:12.0pt;color:#666699'>We =
+<u>ALL</u>
+=
+
+know that</span></b><br>
+=
+
+<span style=3D'font-size:48.0pt;mso-bidi-font-size:12.0pt;font-family:Impact;
+=
+
+color:fuchsia'>VANITY SELLS !</span><span style=3D'font-size:24.0pt;=
+mso-bidi-font-size:
+=
+
+12.0pt;font-family:Impact;color:fuchsia'><br>
+=
+
+</span><span =
+style=3D'color:#666699'>---------------------------------------------------------=
+-------------------------------------------------------<br>
+=
+
+</span><br>
+=
+
+<b><u><span style=3D'font-size:18.0pt;mso-bidi-font-size:12.0pt;=
+color:#666699'>WHY
+=
+
+NOT</span></u></b><b><span style=3D'font-size:18.0pt;mso-bidi-font-size:12.0pt;
+=
+
+color:#666699'><br>
+=
+
+</span></b><b><span style=3D'font-size:18.0pt;mso-bidi-font-size:12.0pt;
+=
+
+color:fuchsia'>LOOK TEN YEARS YOUNGER and <u>GET PAID FOR IT</u> ?=
+</span></b><b><span
+=
+
+style=3D'font-size:18.0pt;mso-bidi-font-size:12.0pt;color:#993366'><br>
+=
+
+</span></b><span =
+style=3D'color:#666699'>---------------------------------------------------------=
+-------------------------------------------------------<br>
+=
+
+</span><br>
+=
+
+<b><span style=3D'font-size:20.0pt;mso-bidi-font-size:12.0pt;=
+color:#666699'>THIS
+=
+
+“BOOMER” PHENOMENON IS HAPPENING<br>
+=
+
+WITH or WITHOUT<br>
+=
+
+YOU or ME …<br>
+=
+
+<br>
+=
+
+THIS RECEPTIVE MARKETPLACE WILL CREATE</span></b><span =
+style=3D'color:#FF99CC'><br>
+=
+
+</span><span style=3D'font-size:36.0pt;mso-bidi-font-size:12.0pt;font-family:
+=
+
+Impact;color:fuchsia'>MILLIONAIRES !!!</span><span style=3D'font-size:36.0pt;
+=
+
+mso-bidi-font-size:12.0pt;font-family:Impact'><br>
+=
+
+<br>
+=
+
+</span><b><i><u><span style=3D'font-size:26.0pt;mso-bidi-font-size:12.0pt;
+=
+
+color:#666699'>WHY NOT</span></u></i></b><b><i><span style=3D'font-size:26.0pt;
+=
+
+mso-bidi-font-size:12.0pt;color:#666699'> BE ONE OF THEM ?</span></i></b><br>
+=
+
+<span =
+style=3D'color:#666699'>---------------------------------------------------------=
+-------------------------------------------------------<br>
+=
+
+</span><br>
+=
+
+<span style=3D'font-size:48.0pt;mso-bidi-font-size:12.0pt;font-family:Impact;
+=
+
+color:fuchsia'><a href=3D"mailto:go@tytcorp.com"><span style=3D'color:
+=
+
+fuchsia'>CLICK HERE</span></a></span><b><span style=3D'font-size:48.0pt;
+=
+
+mso-bidi-font-size:12.0pt'><br>
+=
+
+</span></b><b><span style=3D'font-size:16.0pt;mso-bidi-font-size:12.0pt'>with =
+“</span></b><span
+=
+
+style=3D'font-size:24.0pt;mso-bidi-font-size:12.0pt;font-family:Impact;
+=
+
+color:#666699'>I’m Your Leader</span><b><span style=3D'font-size:16.0pt;
+=
+
+mso-bidi-font-size:12.0pt'>” or “</span></b><span style=3D'font-size:24.0pt;
+=
+
+mso-bidi-font-size:12.0pt;font-family:Impact;color:#666699'>Product =
+Only</span><b><span
+=
+
+style=3D'font-size:16.0pt;mso-bidi-font-size:12.0pt'>” in the Subject Line<br>
+=
+
+<br>
+=
+
+</span></b><b><span style=3D'font-size:18.0pt;mso-bidi-font-size:12.0pt;
+=
+
+color:#666699'>You Will be emailed information sufficient for you to make an
+=
+
+Educated Business Decision as to whether this phenomenon is something you =
+want
+=
+
+to pursue or not …<br>
+=
+
+NO HYPE / NO OBLIGATION<br style=3D'mso-special-character:line-break'>
+=
+
+<![if !supportLineBreakNewLine]><br style=3D'mso-special-character:line-break'>
+=
+
+<![endif]><o:p></o:p></span></b></p>
+=
+
+
+=
+
+<p class=3DMsoBodyText><b><span style=3D'font-size:18.0pt;mso-bidi-font-size:12.=
+0pt;
+=
+
+color:#666699'><![if !supportEmptyParas]>&nbsp;<!=
+[endif]><o:p></o:p></span></b></p>
+=
+
+
+=
+
+<p =
+class=3DMsoNormal>---------------------------------------------------------------=
+-------------------------------------------------------------------</p>
+=
+
+
+=
+
+<p class=3DMsoBodyText><span style=3D'font-size:10.0pt;mso-bidi-font-size:8.=
+0pt'>Your
+=
+
+email address was obtained from an opt-in list.<span style=3D"mso-spacerun:
+=
+
+yes">  </span>If you wish to unsubscribe from this list please Click on =
+“REMOVE
+=
+
+ME”, below, and Click send.</span><span style=3D'font-size:10.0pt;=
+mso-bidi-font-size:
+=
+
+7.5pt'><br>
+=
+
+TO BE REMOVED:<span style=3D"mso-spacerun: yes">  </span>PLEASE <u>DO NOT</u>
+=
+
+CLICK ON THE “REPLY” BUTTON… <br>
+=
+
+JUST <u>CLICK HERE</u> AT </span><b><span style=3D'font-size:16.0pt;=
+mso-bidi-font-size:
+=
+
+10.0pt'><a href=3D"mailto:remove@nouce1.com">REMOVE ME</a></span></b><span
+=
+
+style=3D'font-size:10.0pt;mso-bidi-font-size:7.5pt'> with &quot;REMOVE ME&quot;
+=
+
+in Subject Line. You will be immediately and permanently removed from this
+=
+
+database, and please accept our apologies for any inconvenience. BEST OF
+=
+
+SUCCESS IN WHATEVER YOU CHOOSE TO DO IN LIFE!<br>
+=
+
+</span>-----------------------------------------------------------------------=
+-----------------------------------------------------------<span
+=
+
+style=3D'color:#666699'><o:p></o:p></span></p>
+=
+
+
+=
+
+</div>
+=
+
+
+=
+
+</body>
+=
+
+
+=
+
+</html>
+=
+
+
+=
+
+
+
+
+------=_NextPart_244_43836275737818467044071--
+
+
+
+http://xent.com/mailman/listinfo/fork
+
+

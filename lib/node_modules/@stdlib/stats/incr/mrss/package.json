@@ -1,0 +1,91 @@
+{
+  "name": "@stdlib/stats/incr/mrss",
+  "version": "0.0.0",
+  "description": "Compute a moving residual sum of squares (RSS) incrementally.",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "main": "./lib",
+  "directories": {
+    "benchmark": "./benchmark",
+    "doc": "./docs",
+    "example": "./examples",
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "scripts": {},
+  "homepage": "https://github.com/stdlib-js/stdlib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stdlib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "statistics",
+    "stats",
+    "mathematics",
+    "math",
+    "error",
+    "err",
+    "rss",
+    "ssr",
+    "sse",
+    "residuals",
+    "sum",
+    "total",
+    "squares",
+    "deviation",
+    "difference",
+    "diff",
+    "delta",
+    "incremental",
+    "accumulator",
+    "sliding window",
+    "sliding",
+    "window",
+    "moving",
+    "time series",
+    "timeseries",
+    "forecasting",
+    "forecast",
+    "model",
+    "selection",
+    "evaluation",
+    "prediction",
+    "manhattan",
+    "cityblock",
+    "city-block",
+    "distance",
+    "dist"
+  ]
+}

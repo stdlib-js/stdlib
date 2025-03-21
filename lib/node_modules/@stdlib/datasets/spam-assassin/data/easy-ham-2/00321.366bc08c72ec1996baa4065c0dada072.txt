@@ -1,0 +1,68 @@
+From ilug-admin@linux.ie  Mon Aug 12 11:05:07 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2FDDA4414A
+	for <jm@localhost>; Mon, 12 Aug 2002 05:55:47 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:55:47 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79IGFb19562 for
+    <jm-ilug@jmason.org>; Fri, 9 Aug 2002 19:16:15 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id TAA22955; Fri, 9 Aug 2002 19:13:52 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from web13901.mail.yahoo.com (web13901.mail.yahoo.com
+    [216.136.175.27]) by lugh.tuatha.org (8.9.3/8.9.3) with SMTP id TAA22924
+    for <ilug@linux.ie>; Fri, 9 Aug 2002 19:13:43 +0100
+Message-Id: <20020809181342.48823.qmail@web13901.mail.yahoo.com>
+Received: from [159.134.176.26] by web13901.mail.yahoo.com via HTTP;
+    Fri, 09 Aug 2002 20:13:42 CEST
+Date: Fri, 9 Aug 2002 20:13:42 +0200 (CEST)
+From: =?iso-8859-1?q?Paul=20Linehan?= <plinehan@yahoo.com>
+To: ilug@linux.ie
+In-Reply-To: <20020709103958.GA670@skynet.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+Subject: [ILUG] SUSE 8 disks?
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+
+Hi all,
+
+
+I'm looking for the disks for SUSE 8. Does anybody
+have them for a reasonable price?
+
+
+I'm available to collect at the time of your
+convenience anywhere in the East/Greater
+Dublin area!
+
+
+TIA.
+
+
+Paul...
+
+
+
+
+___________________________________________________________
+Do You Yahoo!? -- Une adresse @yahoo.fr gratuite et en français !
+Yahoo! Mail : http://fr.mail.yahoo.com
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

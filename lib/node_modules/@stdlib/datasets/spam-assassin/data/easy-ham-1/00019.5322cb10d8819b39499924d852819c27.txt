@@ -1,0 +1,65 @@
+From robert.chambers@baesystems.com  Thu Aug 22 17:19:36 2002
+Return-Path: <robert.chambers@baesystems.com>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C1E1343F9B
+	for <zzzz@localhost>; Thu, 22 Aug 2002 12:19:26 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Thu, 22 Aug 2002 17:19:26 +0100 (IST)
+Received: from n23.grp.scd.yahoo.com (n23.grp.scd.yahoo.com
+    [66.218.66.79]) by dogma.slashnull.org (8.11.6/8.11.6) with SMTP id
+    g7MGHeZ14192 for <zzzz@spamassassin.taint.org>; Thu, 22 Aug 2002 17:17:41 +0100
+X-Egroups-Return: sentto-2242572-52743-1030033059-zzzz=spamassassin.taint.org@returns.groups.yahoo.com
+Received: from [66.218.67.201] by n23.grp.scd.yahoo.com with NNFMP;
+    22 Aug 2002 16:17:41 -0000
+X-Sender: robert.chambers@baesystems.com
+X-Apparently-To: zzzzteana@yahoogroups.com
+Received: (EGP: mail-8_1_0_1); 22 Aug 2002 16:17:39 -0000
+Received: (qmail 96345 invoked from network); 22 Aug 2002 16:17:38 -0000
+Received: from unknown (66.218.66.218) by m9.grp.scd.yahoo.com with QMQP;
+    22 Aug 2002 16:17:38 -0000
+Received: from unknown (HELO n10.grp.scd.yahoo.com) (66.218.66.65) by
+    mta3.grp.scd.yahoo.com with SMTP; 22 Aug 2002 16:17:40 -0000
+Received: from [66.218.67.189] by n10.grp.scd.yahoo.com with NNFMP;
+    22 Aug 2002 16:17:40 -0000
+To: zzzzteana@yahoogroups.com
+Message-Id: <ak32r3+4q45@eGroups.com>
+User-Agent: eGroups-EW/0.82
+X-Mailer: Yahoo Groups Message Poster
+From: "uncle_slacky" <robert.chambers@baesystems.com>
+X-Originating-Ip: 20.138.254.2
+X-Yahoo-Profile: uncle_slacky
+MIME-Version: 1.0
+Mailing-List: list zzzzteana@yahoogroups.com; contact
+    forteana-owner@yahoogroups.com
+Delivered-To: mailing list zzzzteana@yahoogroups.com
+Precedence: bulk
+List-Unsubscribe: <mailto:zzzzteana-unsubscribe@yahoogroups.com>
+Date: Thu, 22 Aug 2002 16:17:39 -0000
+Subject: [zzzzteana] Which Muppet Are You?
+Reply-To: zzzzteana@yahoogroups.com
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+
+Apols if this has been posted before:
+
+http://www.pinkpaperclips.net/subs/quiz2.html
+
+Rob
+
+
+------------------------ Yahoo! Groups Sponsor ---------------------~-->
+4 DVDs Free +s&p Join Now
+http://us.click.yahoo.com/pt6YBB/NXiEAA/mG3HAA/7gSolB/TM
+---------------------------------------------------------------------~->
+
+To unsubscribe from this group, send an email to:
+forteana-unsubscribe@egroups.com
+
+ 
+
+Your use of Yahoo! Groups is subject to http://docs.yahoo.com/info/terms/ 
+
+
+

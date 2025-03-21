@@ -1,0 +1,405 @@
+From sondageexpress3@ifrance.com  Mon Jun 24 17:47:06 2002
+Return-Path: sondageexpress3@ifrance.com
+Delivery-Date: Wed Apr 24 20:36:09 2002
+Received: from smtp4.9tel.net (smtp.9tel.net [213.203.124.147]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g3OJa9606593 for
+    <jm@jmason.org>; Wed, 24 Apr 2002 20:36:09 +0100
+Received: from ifrance.com (40.105-30-212.9massy1-1-ro-as-i2-2.9tel.net
+    [212.30.105.40]) by smtp4.9tel.net (Postfix) with ESMTP id 844F25CA1E;
+    Wed, 24 Apr 2002 21:34:44 +0200 (CEST)
+Message-Id: <847720024324193611984@ifrance.com>
+X-Em-Version: 5, 0, 0, 21
+X-Em-Registration: #01B0530810E603002D00
+X-Priority: 3
+Reply-To: sondageexpress3@ifrance.com
+To: "-" <sondageexpress3@ifrance.com>
+From: "SondageExpress" <sondageexpress3@ifrance.com>
+Subject: Le dernier sondage avant les élections presidentielles 2002 !
+Date: Wed, 24 Apr 2002 21:36:11 +0200
+MIME-Version: 1.0
+X-Keywords: 
+Content-Type: multipart/alternative; boundary="----=_NextPart_84815C5ABAF209EF376268C8"
+
+------=_NextPart_84815C5ABAF209EF376268C8
+Content-type: text/plain; charset="US-ASCII"
+
+
+
+
+
+------=_NextPart_84815C5ABAF209EF376268C8
+Content-Type: text/html; charset="US-ASCII"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859=
+-1">
+</head>
+
+<body bgcolor=3D"#FFFFFF" text=3D"#000000" topmargin=3D"0" marginheight=3D=
+"0">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+  <tr>
+    <td>
+      <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0">
+        <tr>
+          <td width=3D"350"><font size=3D"4" face=3D"Verdana, Arial, Helve=
+tica, sans-serif"><b><font size=3D"6"><img src=3D"http://www=2Eimp20=2Ecom=
+/sondageexpress/logosondageexpress=2Egif" width=3D"356" height=3D"55"></fo=
+nt></b></font></td>
+          <td>
+            <div align=3D"center"><font size=3D"2" face=3D"Verdana, Arial,=
+ Helvetica, sans-serif"><b>En=20
+              partenariat avec</b></font></div>
+          </td>
+          <td width=3D"200">=20
+            <div align=3D"right"><a href=3D"http://www=2Eok2mail=2Ecom"><i=
+mg src=3D"http://www=2Eok2mail=2Ecom/Images/logo=2Egif" border=3D"0"></a><=
+/div>
+          </td>
+        </tr>
+      </table>
+      <font size=3D"4" face=3D"Verdana, Arial, Helvetica, sans-serif"><b><=
+font size=3D"6"><br>
+      <font size=3D"3">&nbsp;&nbsp;&nbsp;&nbsp; </font><font size=3D"3"> <=
+/font></font></b></font></td>
+  </tr>
+  <tr>
+    <td> <font size=3D"2" face=3D"Verdana, Arial, Helvetica, sans-serif"><=
+b><i><u>Le=20
+      dernier sondage avant le second tour des &eacute;lections pr&eacute;=
+sidentielles=20
+      2002<br>
+      <br>
+      </u> </i> </b> Sondage Express r&eacute;alise le dernier sondage ava=
+nt le=20
+      second tour des &eacute;lections pr&eacute;sidentielles=2E Les r&eac=
+ute;sultats=20
+      seront envoy&eacute;s par e-mail &agrave; tous les participants avan=
+t les=20
+      24 et 26 avril et le 3 mai 2002 &agrave; minuit <b>par e-mail</b>=2E=
+<br>
+      <br>
+      <u><b>Pour quel candidat allez vous voter le dimanche 5 mai 2002 ?<b=
+r>
+      <br>
+      </b></u><b> </b> </font>=20
+      <FORM name=3Dpresidentielle action=3D"http://www=2Elettredumarketing=
+=2Ecom/cgi-bin/sondageexpress=2Ecgi" method=3Dpost>
+=09  <INPUT type=3Dhidden value=3D"candidat,choix,1e_tour,civilite,anneede=
+naissance,situation, email" name=3Dparam_order>
+=09  <INPUT type=3Dhidden value=3Dsondageexpress=2Etxt name=3Dparam_databa=
+se>
+        <INPUT type=3Dhidden name=3Dparam_required>
+        <table width=3D"100%" border=3D"1" cellspacing=3D"0" cellpadding=3D=
+"0">
+          <tr>
+            <td height=3D"151">=20
+              <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpad=
+ding=3D"2">
+                <tr>=20
+                  <td width=3D"50%" valign=3D"top" height=3D"71">=20
+                    <table width=3D"100%" border=3D"0" cellspacing=3D"0" c=
+ellpadding=3D"1">
+                      <tr valign=3D"top">=20
+                        <td width=3D"24" height=3D"100"> <font face=3D"Ver=
+dana, Arial, Helvetica, sans-serif" size=3D"1">=20
+                          <input type=3D"radio" name=3D"candidat" value=3D=
+"chirac">
+                          </font></td>
+                        <td   width=3D"59" height=3D"100"><font face=3D"Ve=
+rdana, Arial, Helvetica, sans-serif" size=3D"1"><img src=3D"http://www=2Ei=
+mp20=2Ecom/sondageexpress/chirac=2Ejpg"></font></td>
+                        <td height=3D"100" width=3D"361"><font face=3D"Ver=
+dana, Arial, Helvetica, sans-serif" size=3D"1"><b>Jacques=20
+                          Chirac<br>
+                          </b></font><font face=3D"Verdana, Arial, Helveti=
+ca, sans-serif" size=3D"1">&#149;=20
+                          Parti politique : Rassemblement pour la R&eacute=
+;publique<br>
+                          </font><font face=3D"Verdana, Arial, Helvetica, =
+sans-serif" size=3D"1">&#149;=20
+                          &Acirc;ge : 69 ans<br>
+                          </font><font face=3D"Verdana, Arial, Helvetica, =
+sans-serif" size=3D"1">&#149;=20
+                          Situation de famille : Mari&eacute; et p&egrave;=
+re de=20
+                          deux filles<br>
+                          </font><font face=3D"Verdana, Arial, Helvetica, =
+sans-serif" size=3D"1">&#149;=20
+                          M&eacute;tier d'origine : Haut-fonctionnaire<br>=
+
+                          </font><font face=3D"Verdana, Arial, Helvetica, =
+sans-serif" size=3D"1">&#149;=20
+                          Mandat en cours : Pr&eacute;sident de la R&eacut=
+e;publique=20
+                          depuis 1995</font></td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td width=3D"50%" valign=3D"top" height=3D"71">=20
+                    <table width=3D"100%" border=3D"0" cellspacing=3D"0" c=
+ellpadding=3D"1">
+                      <tr valign=3D"top">=20
+                        <td width=3D"24" height=3D"83"> <font face=3D"Verd=
+ana, Arial, Helvetica, sans-serif" size=3D"1">=20
+                          <input type=3D"radio" name=3D"candidat" value=3D=
+"lepen">
+                          </font></td>
+                        <td   width=3D"63" height=3D"83"><font face=3D"Ver=
+dana, Arial, Helvetica, sans-serif" size=3D"1"><img src=3D"http://www=2Eim=
+p20=2Ecom/sondageexpress/Lepen=2Ejpg"></font></td>
+                        <td height=3D"83" width=3D"356"><font face=3D"Verd=
+ana, Arial, Helvetica, sans-serif" size=3D"1"><b>Jean-Marie=20
+                          Le Pen<br>
+                          </b></font><font face=3D"Verdana, Arial, Helveti=
+ca, sans-serif" size=3D"1">&#149;=20
+                          Parti politique : Front national<br>
+                          </font><font face=3D"Verdana, Arial, Helvetica, =
+sans-serif" size=3D"1">&#149;=20
+                          &Acirc;ge : 73 ans<br>
+                          </font><font face=3D"Verdana, Arial, Helvetica, =
+sans-serif" size=3D"1">&#149;=20
+                          Situation de famille : P&egrave;re de trois fill=
+es<br>
+                          </font><font face=3D"Verdana, Arial, Helvetica, =
+sans-serif" size=3D"1">&#149;=20
+                          M&eacute;tier d&#146;origine : Chef d&#146;entre=
+prise<br>
+                          </font><font face=3D"Verdana, Arial, Helvetica, =
+sans-serif" size=3D"1">&#149;=20
+                          Mandats en cours : D&eacute;put&eacute; europ&ea=
+cute;en=20
+                          depuis 1984</font></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+              <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpad=
+ding=3D"1">
+                <tr>=20
+                  <td width=3D"20">=20
+                    <input type=3D"radio" name=3D"candidat" value=3D"abste=
+ntion">
+                  </td>
+                  <td><font face=3D"Verdana, Arial, Helvetica, sans-serif"=
+ size=3D"2"><b>Je=20
+                    ne voterai pas</b></font></td>
+                </tr>
+              </table>
+              <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpad=
+ding=3D"1">
+                <tr>=20
+                  <td width=3D"20">=20
+                    <input type=3D"radio" name=3D"candidat" value=3D"nsp">=
+
+                  </td>
+                  <td><font face=3D"Verdana, Arial, Helvetica, sans-serif"=
+ size=3D"2"><b>NSP</b></font></td>
+                </tr>
+              </table>
+             =20
+            </td>
+          </tr>
+        </table>
+        <br>
+        <table width=3D"100%" border=3D"1" cellspacing=3D"0" cellpadding=3D=
+"0">
+          <tr>
+            <td>
+              <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpad=
+ding=3D"1">
+                <tr>=20
+                  <td width=3D"20">=20
+                    <input type=3D"radio" name=3D"choix" value=3D"certain"=
+>
+                  </td>
+                  <td><font face=3D"Verdana, Arial, Helvetica, sans-serif"=
+ size=3D"2"><b>Je=20
+                    suis certain de mon choix</b></font></td>
+                </tr>
+                <tr>=20
+                  <td width=3D"20">=20
+                    <input type=3D"radio" name=3D"choix" value=3D"non_defi=
+nitif">
+                  </td>
+                  <td><font face=3D"Verdana, Arial, Helvetica, sans-serif"=
+ size=3D"2"><b>Mon=20
+                    choix n'est pas encore d&eacute;finitif</b></font></td=
+>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <br>
+        <table width=3D"100%" border=3D"1" cellspacing=3D"0" cellpadding=3D=
+"4">
+          <tr>
+            <td height=3D"8"><b><font face=3D"Verdana, Arial, Helvetica, s=
+ans-serif" size=3D"2">Pour=20
+              quel candidat avez vous vot&eacute; au 1er tour ?</font></b>=
+=20
+              <select name=3D"1e_tour">
+                <option value=3D"Choisir">Choisir</option>
+                <option value=3D"abstention">Je n'ai pas vot&eacute;</opti=
+on>
+                <option value=3D"A=2E Laguiller">A=2E Laguiller</option>
+                <option value=3D"A=2E Madelin">A=2E Madelin</option>
+                <option value=3D"B=2E Megret">B=2E Megret</option>
+                <option value=3D"C=2E Boutin">C=2E Boutin</option>
+                <option value=3D"C=2E Lepage">C=2E Lepage</option>
+                <option value=3D"C=2E Taubira">C=2E Taubira</option>
+                <option value=3D"D=2E Gluckstein">D=2E Gluckstein</option>=
+
+                <option value=3D"F=2E Bayrou">F=2E Bayrou</option>
+                <option value=3D"J=2E Chirac">J=2E Chirac</option>
+                <option value=3D"J=2E Saint-Josse">J=2E Saint-Josse</optio=
+n>
+                <option value=3D"J=2EM=2E Le Pen">J=2EM=2E Le Pen</option>=
+
+                <option value=3D"J=2EP=2E Chevenement">J=2EP=2E Chevenemen=
+t</option>
+                <option value=3D"L=2E Jospin">L=2E Jospin</option>
+                <option value=3D"N=2E Mamere">N=2E Mamere</option>
+                <option value=3D"O=2E Besancenot">O=2E Besancenot</option>=
+
+                <option value=3D"R=2E Hue">R=2E Hue</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+        <br>
+        <table width=3D"100%" border=3D"1" cellspacing=3D"0" cellpadding=3D=
+"0">
+          <tr>
+            <td>
+              <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpad=
+ding=3D"2">
+                <tr>=20
+                  <td width=3D"17%"><font face=3D"Verdana, Arial, Helvetic=
+a, sans-serif" size=3D"2">Votre=20
+                    civilit&eacute; :</font></td>
+                  <td width=3D"17%"> <font face=3D"Verdana, Arial, Helveti=
+ca, sans-serif" size=3D"2">=20
+                    <select name=3D"civilite">
+                      <option value=3D"Mr">Mr</option>
+                      <option value=3D"Mme">Mme</option>
+                      <option value=3D"Mlle">Mlle</option>
+                    </select>
+                    </font></td>
+                  <td width=3D"20%"><font face=3D"Verdana, Arial, Helvetic=
+a, sans-serif" size=3D"2">Ann&eacute;e=20
+                    de naissance :</font></td>
+                  <td width=3D"14%"> <font face=3D"Verdana, Arial, Helveti=
+ca, sans-serif" size=3D"2">=20
+                    <input type=3D"text" name=3D"anneedenaissance" value=3D=
+"19??" size=3D"4" maxlength=3D"4">
+                    </font></td>
+                  <td width=3D"17%"><font face=3D"Verdana, Arial, Helvetic=
+a, sans-serif" size=3D"2">Votre=20
+                    situation : </font></td>
+                  <td width=3D"17%"> <font face=3D"Verdana, Arial, Helveti=
+ca, sans-serif" size=3D"2">=20
+                    <select name=3D"situation">
+                      <option value=3D"Agriculteur, p=EAcheur">Agriculteur=
+, p=EAcheur</option>
+                      <option value=3D"Artisan">Artisan</option>
+                      <option value=3D"Cadre, ing=E9nieur">Cadre, ing=E9ni=
+eur</option>
+                      <option value=3D"Commer=E7ant">Commer=E7ant</option>=
+
+                      <option value=3D"Dirigeant(e), cadre sup=E9rieur">Di=
+rigeant(e),=20
+                      cadre sup=E9rieur</option>
+                      <option value=3D"Employ=E9(e) ou =E9quivalent">Emplo=
+y=E9(e) ou =E9quivalent</option>
+                      <option value=3D"Enseignant(e), chercheur(se)">Ensei=
+gnant(e),=20
+                      chercheur(se)</option>
+                      <option value=3D"Etudiant(e)">Etudiant(e)</option>
+                      <option value=3D"Femme ou Homme au foyer">Femme ou H=
+omme au=20
+                      foyer</option>
+                      <option value=3D"Profession lib=E9rale">Profession l=
+ib=E9rale</option>
+                      <option value=3D"Prof=2E artistique ou sportive">Pro=
+f=2E artistique=20
+                      ou sportive</option>
+                      <option value=3D"Ouvrier(e)">Ouvrier(e)</option>
+                      <option value=3D"Retrait=E9(e)">Retrait=E9(e)</optio=
+n>
+                      <option value=3D"Sans profession">Sans profession</o=
+ption>
+                      <option value=3D"Technicien, agent de ma=EEtrise">Te=
+chnicien,=20
+                      agent de ma=EEtrise</option>
+                    </select>
+                    </font></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <br>
+        <i><font face=3D"Verdana, Arial, Helvetica, sans-serif" size=3D"2"=
+>Si vous=20
+        souhaitez recevoir le resultat du sondage par mail, precisez votre=
+ Email=20
+        : </font> </i>
+<input type=3D"text" name=3D"email">
+        <p><br>
+          <input type=3D"submit" name=3D"Submit" value=3D"Valider le formu=
+laire">
+      </form>
+       =20
+      <br>
+        <br>
+      <font size=3D"2"><i><font face=3D"Verdana, Arial, Helvetica, sans-se=
+rif">Attention=20
+      : ce sondage non nominatif est adress&eacute; &agrave; un panel de 1=
+00 000=20
+      internautes=2E Il ne peut en aucun cas &ecirc;tre consid&eacute;r&ea=
+cute;=20
+      comme repr&eacute;sentatif de la population fran&ccedil;aise et ne d=
+oit=20
+      en aucun cas porter une influence quelconque sur les votes r&eacute;=
+els=20
+      des &eacute;lections pr&eacute;sidentielles du dimanche 5 mai 2002=2E=
+ Aucun=20
+      fichier informatique nominatif n'est constitu&eacute; par Sondage Ex=
+press&reg;=2E<br>
+      R&eacute;sultat pris en compte jusqu'au vendredi 3 mai &agrave; 18h0=
+0=2E<br>
+      <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font></i></font></td>
+  </tr>
+  <tr>
+    <td>
+=09<form action=3D"http://www=2Eimp20=2Ecom/cgi-bin/formmail=2Epl" method=3D=
+"post" target=3D"_top" name=3D"Send"> <INPUT name=3Drecipient type=3Dhidde=
+n value=3Dsondexpress@imp20=2Ecom><INPUT name=3Dredirect type=3Dhidden val=
+ue=3D"http://www=2Eimp20=2Ecom/sondageexpress/merci=2Ehtm"> <INPUT name=3D=
+subject type=3Dhidden value=3D"Desinscription_SondageExpress">
+        <font size=3D"2" face=3D"Verdana, Arial, Helvetica, sans-serif"><i=
+>Pour ne=20
+        plus participer aux sondages express, indiquez votre email dans le=
+ champs=20
+        ci-dessous et validez :<br>
+        Email : </i></font> <i><font face=3D"Verdana, Arial, Helvetica, sa=
+ns-serif">=20
+        <input type=3D"text" name=3D"textfield">
+        <input type=3D"submit" name=3D"Valider" value=3D"Valider">
+      </font></i> </form></td>
+  </tr>
+</table>
+</body>
+</html>
+
+------=_NextPart_84815C5ABAF209EF376268C8--
+

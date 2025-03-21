@@ -1,0 +1,27 @@
+From rssfeeds@jmason.org  Sun Oct  6 22:54:33 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 1162516F73
+	for <jm@localhost>; Sun,  6 Oct 2002 22:52:51 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sun, 06 Oct 2002 22:52:51 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9680aK15245 for
+    <jm@jmason.org>; Sun, 6 Oct 2002 09:00:36 +0100
+Message-Id: <200210060800.g9680aK15245@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: guardian <rssfeeds@spamassassin.taint.org>
+Subject: The boy for Brazil?
+Date: Sun, 06 Oct 2002 08:00:36 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.newsisfree.com/click/-0,8597656,215/
+Date: 2002-10-06T02:27:59+01:00
+
+*The Observer Profile: *Brazil goes to the polls today, and all the indications 
+are that its 110 million voters will elect a man who once sold peanuts on the 
+street: *Luis 'Lula' da Silva*.
+
+

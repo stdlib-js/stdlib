@@ -1,0 +1,88 @@
+From rpm-list-admin@freshrpms.net  Fri Aug 23 11:06:27 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 78C504415E
+	for <jm@localhost>; Fri, 23 Aug 2002 06:04:27 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 23 Aug 2002 11:04:27 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7MNG1Z29565 for
+    <jm-rpm@jmason.org>; Fri, 23 Aug 2002 00:16:01 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7MNB2J07914; Fri, 23 Aug 2002 01:11:02
+    +0200
+Received: from yak.fluid.com
+    (IDENT:pxKWT0cuA+V9VHAuVghBFUQZ5my3ivDF@yak.fluid.com [63.76.105.204]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g7MNAkJ07823 for
+    <rpm-list@freshrpms.net>; Fri, 23 Aug 2002 01:10:46 +0200
+Received: from lefty.fluid.com ([63.76.105.89]) by yak.fluid.com with
+    esmtp (Exim 4.10 #1) for rpm-list@freshrpms.net id 17i15U-0008EV-00;
+    Thu, 22 Aug 2002 16:10:00 -0700
+Message-Id: <3D656F6E.3050504@fluid.com>
+From: Troy Engel <tengel@fluid.com>
+Organization: Fluid
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.0.0) Gecko/20020607
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: rpm-zzzlist@freshrpms.net
+Subject: latest php upgrade in 7.3
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+X-Reply-To: tengel@fluid.com
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Thu, 22 Aug 2002 16:10:38 -0700
+Date: Thu, 22 Aug 2002 16:10:38 -0700
+
+Today an apt-get upgrade holds back php (and submodules, like php-imap). 
+  Running an apt-get install php to see what's up, I get:
+
+# apt-get install php
+Processing File Dependencies... Done
+Reading Package Lists... Done
+Building Dependency Tree... Done
+The following extra packages will be installed:
+   curl-devel imap imap-devel mysql mysql-devel php-imap php-ldap postgresql
+   postgresql-devel postgresql-libs pspell-devel ucd-snmp-devel 
+ucd-snmp-utils
+   unixODBC unixODBC-devel
+The following NEW packages will be installed:
+   curl-devel imap imap-devel mysql mysql-devel postgresql postgresql-devel
+   postgresql-libs pspell-devel ucd-snmp-devel ucd-snmp-utils unixODBC
+   unixODBC-devel
+The following packages will be upgraded
+   php php-imap php-ldap
+3 packages upgraded, 13 newly installed, 0 to remove(replace) and 1 not 
+upgraded.
+
+Anyone have an idea what the heck RedHat did here, and why we're now 
+trying to install a ton of crap I don't want?  (I'm hoping someone else 
+has chased this down and could save me time... ;) )
+
+thx,
+-te
+
+-- 
+Troy Engel, Systems Engineer
+Cool as the other side of the pillow
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

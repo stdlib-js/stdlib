@@ -1,0 +1,91 @@
+
+{{alias}}( [λ] )
+    Returns a Poisson distribution object.
+
+    Parameters
+    ----------
+    λ: number (optional)
+        Mean parameter. Must be greater than `0`. Default: `1.0`.
+
+    Returns
+    -------
+    poisson: Object
+        Distribution instance.
+
+    poisson.lambda: number
+        Mean parameter. If set, the value must be greater than `0`.
+
+    poisson.entropy: number
+        Read-only property which returns the differential entropy.
+
+    poisson.kurtosis: number
+        Read-only property which returns the excess kurtosis.
+
+    poisson.mean: number
+        Read-only property which returns the expected value.
+
+    poisson.median: number
+        Read-only property which returns the median.
+
+    poisson.mode: number
+        Read-only property which returns the mode.
+
+    poisson.skewness: number
+        Read-only property which returns the skewness.
+
+    poisson.stdev: number
+        Read-only property which returns the standard deviation.
+
+    poisson.variance: number
+        Read-only property which returns the variance.
+
+    poisson.cdf: Function
+        Evaluates the cumulative distribution function (CDF).
+
+    poisson.logpmf: Function
+        Evaluates the natural logarithm of the probability mass function (PMF).
+
+    poisson.mgf: Function
+        Evaluates the moment-generating function (MGF).
+
+    poisson.pmf: Function
+        Evaluates the probability mass function (PMF).
+
+    poisson.quantile: Function
+        Evaluates the quantile function at probability `p`.
+
+    Examples
+    --------
+    > var poisson = {{alias}}( 6.0 );
+    > poisson.lambda
+    6.0
+    > poisson.entropy
+    ~2.3
+    > poisson.kurtosis
+    ~0.167
+    > poisson.mean
+    6.0
+    > poisson.median
+    6.0
+    > poisson.mode
+    6.0
+    > poisson.skewness
+    ~0.408
+    > poisson.stdev
+    ~2.449
+    > poisson.variance
+    6.0
+    > poisson.cdf( 4.0 )
+    ~0.285
+    > poisson.logpmf( 2.0 )
+    ~-3.11
+    > poisson.mgf( 0.5 )
+    ~49.025
+    > poisson.pmf( 2.0 )
+    ~0.045
+    > poisson.quantile( 0.5 )
+    6.0
+
+    See Also
+    --------
+

@@ -1,0 +1,37 @@
+Return-Path: neale@woozle.org
+Delivery-Date: Sat Sep  7 06:17:28 2002
+From: neale@woozle.org (Neale Pickett)
+Date: 06 Sep 2002 22:17:28 -0700
+Subject: [Spambayes] Ditching WordInfo
+In-Reply-To: <LNBBLJKPBEHFEDALKOLCOEKKBCAB.tim.one@comcast.net>
+References: <LNBBLJKPBEHFEDALKOLCOEKKBCAB.tim.one@comcast.net>
+Message-ID: <w53n0qubcpj.fsf@woozle.org>
+
+So then, Tim Peters <tim.one@comcast.net> is all like:
+
+> I'm not sure what you're doing, but suspect you're storing individual
+> WordInfo pickles.  If so, most of the administrative pickle bloat is
+> due to that, and doesn't happen if you pickle an entire classifier
+> instance directly.
+
+Yeah, that's exactly what I was doing--I didn't realize I was incurring
+administrative pickle bloat this way.  I'm specifically trying to make
+things faster and smaller, so I'm storing individual WordInfo pickles
+into an anydbm dict (keyed by token).  The result is that it's almost 50
+times faster to score messages one per run our of procmail (.408s vs
+18.851s).
+
+However, it *does* say all over the place that the goal of this project
+isn't to make the fastest or the smallest implementation, so I guess
+I'll hold off doing any further performance tuning until the goal starts
+to point more in that direction.  .4 seconds is probably fast enough for
+people to use it in their procmailrc, which is what I was after.
+
+> If you're desparate to save memory, write a subclass?
+
+That's probably what I'll do if I get too antsy :)
+
+Trying to think of ways to sneak "administrative pickle boat" into
+casual conversation,
+
+Neale

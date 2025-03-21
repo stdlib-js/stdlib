@@ -1,0 +1,35 @@
+{
+  "name": "stdlib-datasets-img-nagasaki-boats",
+  "version": "",
+  "title": "Boats in River, Nagasaki",
+  "description": "Image of boats in a river in Nagasaki.",
+  "resources": [
+    {
+      "name": "nagasaki-boats-jpg",
+      "title": "Boats in River, Nagasaki",
+      "description": "Image of boats in a river in Nagasaki.",
+      "format": "jpeg",
+      "mediatype": "image/jpeg",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/image.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Getty's Open Content Program",
+      "web": "http://www.getty.edu/art/collection/objects/241797/felice-beato-boats-in-river-nagasaki-british-about-1865/"
+    }
+  ],
+  "keywords": [
+    "image",
+    "img",
+    "river",
+    "canyon",
+    "nagasaki",
+    "boat",
+    "japan",
+    "village"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}

@@ -1,0 +1,72 @@
+From spamassassin-devel-admin@lists.sourceforge.net  Thu Aug 22 15:25:29 2002
+Return-Path: <spamassassin-devel-admin@example.sourceforge.net>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id AE2D043F9B
+	for <zzzz@localhost>; Thu, 22 Aug 2002 10:25:29 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Thu, 22 Aug 2002 15:25:29 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7MENlZ09984 for <zzzz@spamassassin.taint.org>; Thu, 22 Aug 2002 15:23:47 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17hsof-00042r-00; Thu,
+    22 Aug 2002 07:20:05 -0700
+Received: from vivi.uptime.at ([62.116.87.11] helo=mail.uptime.at) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17hsoM-0000Ge-00 for <spamassassin-devel@lists.sourceforge.net>;
+    Thu, 22 Aug 2002 07:19:47 -0700
+Received: from [192.168.0.4] (chello062178142216.4.14.vie.surfer.at
+    [62.178.142.216]) (authenticated bits=0) by mail.uptime.at (8.12.5/8.12.5)
+    with ESMTP id g7MEI7Vp022036 for
+    <spamassassin-devel@lists.sourceforge.net>; Thu, 22 Aug 2002 16:18:07
+    +0200
+User-Agent: Microsoft-Entourage/10.0.0.1309
+From: David H=?ISO-8859-1?B?9g==?=hn <dh@uptime.at>
+To: <spamassassin-devel@example.sourceforge.net>
+Message-Id: <B98ABFA4.1F87%dh@uptime.at>
+MIME-Version: 1.0
+X-Trusted: YES
+X-From-Laptop: YES
+Content-Type: text/plain; charset="US-ASCII"
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Nothing found, baby
+Subject: [SAdev] Interesting approach to Spam handling..
+Sender: spamassassin-devel-admin@example.sourceforge.net
+Errors-To: spamassassin-devel-admin@example.sourceforge.net
+X-Beenthere: spamassassin-devel@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-devel-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-devel@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Id: SpamAssassin Developers <spamassassin-devel.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-devel>
+X-Original-Date: Thu, 22 Aug 2002 16:19:48 +0200
+Date: Thu, 22 Aug 2002 16:19:48 +0200
+
+Hello, have you seen and discussed this article and his approach?
+
+Thank you
+
+http://www.paulgraham.com/spam.html
+-- "Hell, there are no rules here-- we're trying to accomplish something."
+-- Thomas Alva Edison
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-devel mailing list
+Spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+

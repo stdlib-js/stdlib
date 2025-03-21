@@ -1,0 +1,82 @@
+
+{{alias}}( p, α, β )
+    Evaluates the quantile function for a Pareto (Type I) distribution with
+    shape parameter `α` and scale parameter `β` at a probability `p`.
+
+    If `p < 0` or `p > 1`, the function returns `NaN`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If `α <= 0` or `β <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    p: number
+        Input probability.
+
+    α: number
+        Shape parameter.
+
+    β: number
+        Scale parameter.
+
+    Returns
+    -------
+    out: number
+        Evaluated quantile function.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.8, 2.0, 1.0 )
+    ~2.236
+    > y = {{alias}}( 0.8, 1.0, 10.0 )
+    ~50.0
+    > y = {{alias}}( 0.1, 1.0, 10.0 )
+    ~11.111
+
+    > y = {{alias}}( 1.1, 1.0, 1.0 )
+    NaN
+    > y = {{alias}}( -0.2, 1.0, 1.0 )
+    NaN
+
+    > y = {{alias}}( NaN, 1.0, 1.0 )
+    NaN
+    > y = {{alias}}( 0.5, NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 0.5, 1.0, NaN )
+    NaN
+
+    > y = {{alias}}( 0.5, -1.0, 1.0 )
+    NaN
+    > y = {{alias}}( 0.5, 1.0, -1.0 )
+    NaN
+
+
+{{alias}}.factory( α, β )
+    Returns a function for evaluating the quantile function of a Pareto (Type I)
+    distribution with shape parameter `α` and scale parameter `β`.
+
+    Parameters
+    ----------
+    α: number
+        Shape parameter.
+
+    β: number
+        Scale parameter.
+
+    Returns
+    -------
+    quantile: Function
+        Quantile function.
+
+    Examples
+    --------
+    > var myQuantile = {{alias}}.factory( 2.5, 0.5 );
+    > var y = myQuantile( 0.5 )
+    ~0.66
+    > y = myQuantile( 0.8 )
+    ~0.952
+
+    See Also
+    --------
+

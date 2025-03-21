@@ -1,0 +1,8 @@
+
+Usage: seconds-in-month [options] [month] [year]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+

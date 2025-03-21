@@ -1,0 +1,115 @@
+From razor-users-admin@lists.sourceforge.net  Fri Sep  6 11:36:39 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 149AD16F1A
+	for <jm@localhost>; Fri,  6 Sep 2002 11:36:05 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 11:36:05 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g869rLC29266 for
+    <jm-razor@jmason.org>; Fri, 6 Sep 2002 10:53:21 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id XAA19026 for
+    <jm-razor@jmason.org>; Thu, 5 Sep 2002 23:27:21 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17n4yr-0007vl-00; Thu,
+    05 Sep 2002 15:20:05 -0700
+Received: from cpe3439333139383434.cpe.net.cable.rogers.com
+    ([24.101.225.150] helo=lserv4.espoircompany.com) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17n4xx-0001y5-00 for <razor-users@lists.sourceforge.net>; Thu,
+    05 Sep 2002 15:19:09 -0700
+Received: (from uucp@localhost) by lserv4.espoircompany.com
+    (8.12.5/8.12.5) id g85MIwAw009726; Thu, 5 Sep 2002 18:18:58 -0400
+Cc: <razor-users@example.sourceforge.net>
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="us-ascii"
+From: "Eugene Chiu" <eugene@chiu.bz>
+Importance: Normal
+In-Reply-To: <20020905203817.GX8101@kluge.net>
+Message-Id: <FJEOJLEKLOEKPMMADEJDMEJOCCAA.eugene@chiu.bz>
+MIME-Version: 1.0
+Received: from win2kpro ([192.168.100.11] [192.168.100.11]) by
+    ns1.espoircompany.com (AvMailGate-2.0.0.6) id 09721-136129B5;
+    Thu, 05 Sep 2002 18:18:44 -0400
+Subject: RE: [Razor-users] spamassassin+razor2
+To: "Theo Van Dinter" <felicity@kluge.net>
+X-Antivirus: OK! AntiVir MailGate Version 2.0.0.6 at lserv4 has not found
+    any known virus in this email.
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+X-Msmail-Priority: Normal
+X-Priority: 3 (Normal)
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Thu, 5 Sep 2002 18:18:55 -0400
+Date: Thu, 5 Sep 2002 18:18:55 -0400
+
+
+Theo,
+
+Thank you very much, it solves the problem!!!!
+
+Eugene
+
+
+-----Original Message-----
+From: razor-users-admin@example.sourceforge.net
+[mailto:razor-users-admin@lists.sourceforge.net]On Behalf Of Theo Van
+Dinter
+Sent: September 5, 2002 4:38 PM
+To: Eugene Chiu
+Cc: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] spamassassin+razor2
+
+
+On Thu, Sep 05, 2002 at 04:27:08PM -0400, Eugene Chiu wrote:
+> razor2 check skipped: Bad file descriptor Insecure dependency in open
+while runn
+> ing setuid at /usr/local/lib/perl5/site_perl/5.6.1/Razor2/Client/Config.pm
+line
+> 410, <GEN23> line 1.
+> >From info@znion.com  Thu Sep  5 11:55:15 2002
+>  Subject: *****SPAM***** Computer Maintenance
+>   Folder: /home/eugene/caughtspam
+8343
+
+It looks like you're running via procmail -- what are the permissions
+on procmail?  "Insecure dependency" screams "I'm in taint mode!", which
+is a typical problem when procmail is setuid/setgid (the permissions
+should be 755).
+
+If this is in fact the problem, an easy solution is to put "DROPPRIVS=yes"
+in the procmailrc. :)
+
+--
+Randomly Generated Tagline:
+"The bus had no heat, blew over in the wind and used the driver's legs
+ as its first line of defense in an accident." - Unknown about the VW Bus
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

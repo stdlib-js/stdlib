@@ -1,0 +1,45 @@
+
+{{alias}}( x, low )
+    Sets the less significant 32 bits of a double-precision floating-point
+    number.
+
+    Setting the lower order bits of `NaN` or positive or negative infinity will
+    return `NaN`, as `NaN` is defined as a double whose exponent bit sequence is
+    all ones and whose fraction can be any bit sequence except all zeros.
+    Positive and negative infinity are defined as doubles with an exponent bit
+    sequence equal to all ones and a fraction equal to all zeros. Hence,
+    changing the less significant bits of positive and negative infinity
+    converts each value to `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    low: integer
+        Unsigned 32-bit integer to replace the lower order word of `x`.
+
+    Returns
+    -------
+    out: number
+        Double having the same higher order word as `x`.
+
+    Examples
+    --------
+    > var low = 5 >>> 0;
+    > var x = 3.14e201;
+    > var y = {{alias}}( x, low )
+    3.139998651394392e+201
+
+    // Special cases:
+    > var low = 12345678;
+    > var y = {{alias}}( {{alias:@stdlib/constants/float64/pinf}}, low )
+    NaN
+    > y = {{alias}}( {{alias:@stdlib/constants/float64/ninf}}, low )
+    NaN
+    > y = {{alias}}( NaN, low )
+    NaN
+
+    See Also
+    --------
+

@@ -1,0 +1,27 @@
+
+{{alias}}
+    Operating system CPU architecture for which the JavaScript runtime binary
+    was compiled.
+
+    Current possible values:
+
+    - arm
+    - arm64
+    - ia32
+    - mips
+    - mipsel
+    - ppc
+    - ppc64
+    - s390
+    - s390x
+    - x32
+    - x64
+
+    Examples
+    --------
+    > {{alias}}
+    <string>
+
+    See Also
+    --------
+

@@ -1,0 +1,28 @@
+From rssfeeds@jmason.org  Thu Sep 26 16:42:20 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 5061516F49
+	for <jm@localhost>; Thu, 26 Sep 2002 16:41:26 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 16:41:26 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8QFVpg25072 for
+    <jm@jmason.org>; Thu, 26 Sep 2002 16:31:51 +0100
+Message-Id: <200209261531.g8QFVpg25072@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: zawodny <rssfeeds@spamassassin.taint.org>
+Subject: ru stupid
+Date: Thu, 26 Sep 2002 15:31:51 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://jeremy.zawodny.com/blog/archives/000185.html
+Date: 2002-09-19T22:30:15-08:00
+
+Dan thinks it is evolution. To me it's stupidity, laziness, and apathy. I have 
+to respectfully disagree. Or maybe I'm just being stubborn. For whatever 
+reason, whenever I get e-mail from someone who: Writes "ur" instead of "you 
+are" or...
+
+

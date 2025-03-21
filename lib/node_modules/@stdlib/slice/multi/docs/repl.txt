@@ -1,0 +1,86 @@
+
+{{alias}}( ...slice )
+    Returns a multi-slice.
+
+    Parameters
+    ----------
+    ...slice: Slice|integer|null|undefined
+        Slice arguments.
+
+    Returns
+    -------
+    s: MultiSlice
+        MultiSlice instance.
+
+    Examples
+    --------
+    > var s = new {{alias:@stdlib/slice/ctor}}( 2, 10 );
+    > var ms = new {{alias}}( 2, s, 1 );
+
+
+{{alias}}.prototype.ndims
+    Read-only property returning the number of slice dimensions.
+
+    Returns
+    -------
+    ndims: integer
+        Number of slice dimensions.
+
+    Examples
+    --------
+    > var s = new {{alias:@stdlib/slice/ctor}}( 2, 10 );
+    > var ms = new {{alias}}( 2, s, 1 );
+    > ms.ndims
+    3
+
+
+{{alias}}.prototype.data
+    Read-only property returning the slice data.
+
+    Returns
+    -------
+    data: Array<Slice|integer|null>
+        Slice data.
+
+    Examples
+    --------
+    > var s = new {{alias:@stdlib/slice/ctor}}( 2, 10 );
+    > var ms = new {{alias}}( 2, s, 1 );
+    > ms.data
+    [ 2, <Slice>, 1 ]
+
+
+{{alias}}.prototype.toString()
+    Serializes a multi-slice as a string.
+
+    Returns
+    -------
+    str: string
+        Serialized multi-slice string.
+
+    Examples
+    --------
+    > var s = new {{alias:@stdlib/slice/ctor}}( 2, 10 );
+    > var ms = new {{alias}}( 2, s, 1 );
+    > ms.toString()
+    'MultiSlice(2,Slice(2,10,null),1)'
+
+
+{{alias}}.prototype.toJSON()
+    Serializes a multi-slice as a JSON object.
+
+    Returns
+    -------
+    obj: Object
+        JSON object.
+
+    Examples
+    --------
+    > var s = new {{alias:@stdlib/slice/ctor}}( 2, 10, 1 );
+    > var ms = new {{alias}}( 2, s );
+    > ms.toJSON()
+    {'type':'MultiSlice','data':[2,{'type':'Slice','data':[2,10,1]}]}
+
+    See Also
+    --------
+

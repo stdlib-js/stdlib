@@ -1,0 +1,97 @@
+From rpm-list-admin@freshrpms.net  Thu Aug 29 10:59:36 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5A04343F99
+	for <jm@localhost>; Thu, 29 Aug 2002 05:59:35 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 10:59:35 +0100 (IST)
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7SNEKZ14749 for
+    <jm-rpm@jmason.org>; Thu, 29 Aug 2002 00:14:20 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7SN93J30796; Thu, 29 Aug 2002 01:09:03
+    +0200
+Received: from posti.pp.htv.fi (posti.pp.htv.fi [212.90.64.50]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g7SN83J30677 for
+    <rpm-list@freshrpms.net>; Thu, 29 Aug 2002 01:08:03 +0200
+Received: from cs78128057.pp.htv.fi ([62.78.128.57]) by posti.pp.htv.fi
+    (8.11.1/8.11.1) with ESMTP id g7SN84622061 for <rpm-list@freshrpms.net>;
+    Thu, 29 Aug 2002 02:08:04 +0300 (EETDST)
+Subject: Re: ALSA (almost) made easy
+From: Ville =?ISO-8859-1?Q?Skytt=E4?= <ville.skytta@iki.fi>
+To: rpm-zzzlist@freshrpms.net
+In-Reply-To: <20020829005025.160073af.matthias@egwn.net>
+References: <20020828004215.4bca2588.matthias@rpmforge.net>
+    <1030507320.3214.39.camel@herald.dragonsdawn.net>
+    <20020828100430.378c3856.matthias@rpmforge.net>
+    <1030546780.3214.54.camel@herald.dragonsdawn.net>
+    <20020828112645.B13047@ti19>
+    <1030551945.10627.4.camel@wanderlust.prognet.com>
+    <20020828190006.2200a154.matthias@rpmforge.net>
+    <1030567737.10901.9.camel@bobcat.ods.org>
+    <1030568564.10902.22.camel@bobcat.ods.org>
+    <20020829000606.5906404a.matthias@egwn.net>
+    <1030574318.1651.30.camel@bobcat.ods.org>
+    <20020829005025.160073af.matthias@egwn.net>
+Content-Type: text/plain; charset=ISO-8859-1
+X-Mailer: Ximian Evolution 1.0.3 (1.0.3-6)
+Message-Id: <1030576078.1643.61.camel@bobcat.ods.org>
+MIME-Version: 1.0
+X-Mailscanner: Found to be clean, Found to be clean
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by egwn.net id
+    g7SN83J30677
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: 29 Aug 2002 02:07:58 +0300
+Date: 29 Aug 2002 02:07:58 +0300
+
+On Thu, 2002-08-29 at 01:50, Matthias Saou wrote:
+
+> > Ah!  The mixer stuff was what made me look for an init script in the
+> > first place, I didn't bother to check whether the existing stuff would
+> > have worked with that.  Will try that out, you can assume silence ==
+> > success :)
+> 
+> Well, from what I've tried, both the main and the PCM (at least) volume
+> levels can be controlled either by "alsamixer" or the good old "aumix".
+
+Cool, I'll try it out as well as the new RPMs tomorrow.
+
+> > > >From what I can tell after only 2 days using it : ALSA rocks,
+> > > >especially
+> > > since having a full OSS compatibility results that it breaks nothing at
+> > > all! :-)
+> > 
+> > Agreed.  Though with only 2 hours experience...
+> 
+> I guess/hope some other people from the list will try it out ;-)
+> 
+> Both problems you reported (libasound.so and wrong xine dependency) are now
+> fixed in the current packages.
+
+Thanks, that was quick!
+
+-- 
+\/ille Skyttä
+ville.skytta at iki.fi
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

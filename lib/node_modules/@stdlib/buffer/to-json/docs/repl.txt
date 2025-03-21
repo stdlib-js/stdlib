@@ -1,0 +1,31 @@
+
+{{alias}}( buffer )
+    Returns a JSON representation of a buffer.
+
+    Parameters
+    ----------
+    buffer: Buffer
+        Buffer to serialize.
+
+    Returns
+    -------
+    out: Object
+        JSON representation.
+
+    out.type: string
+        Value type. The assigned value is always "Buffer".
+
+    out.data: Array
+        Buffer data.
+
+    Examples
+    --------
+    > var buf = new {{alias:@stdlib/buffer/alloc-unsafe}}( 2 );
+    > buf[ 0 ] = 1;
+    > buf[ 1 ] = 2;
+    > var json = {{alias}}( buf )
+    { 'type': 'Buffer', 'data': [ 1, 2 ] }
+
+    See Also
+    --------
+

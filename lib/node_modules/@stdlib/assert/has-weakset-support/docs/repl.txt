@@ -1,0 +1,17 @@
+
+{{alias}}()
+    Tests for native `WeakSet` support.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an environment has `WeakSet` support.
+
+    Examples
+    --------
+    > var bool = {{alias}}()
+    <boolean>
+
+    See Also
+    --------
+

@@ -1,0 +1,37 @@
+
+{{alias}}( x )
+    Computes the hyperbolic arctangent of a number.
+
+    The domain of `x` is restricted to `[-1,1]`. If `|x| > 1`, the function
+    returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    out: number
+        Hyperbolic arctangent (in radians).
+
+    Examples
+    --------
+    > var v = {{alias}}( 0.0 )
+    0.0
+    > v = {{alias}}( 0.9 )
+    ~1.472
+    > v = {{alias}}( 1.0 )
+    Infinity
+    > v = {{alias}}( -1.0 )
+    -Infinity
+    > v = {{alias}}( NaN )
+    NaN
+
+    // The function underflows for small `x`:
+    > v = {{alias}}( 1.0e-17 )
+    0.0
+
+    See Also
+    --------
+

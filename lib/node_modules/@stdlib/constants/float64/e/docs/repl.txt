@@ -1,0 +1,12 @@
+
+{{alias}}
+    Euler's number.
+
+    Examples
+    --------
+    > {{alias}}
+    2.718281828459045
+
+    See Also
+    --------
+

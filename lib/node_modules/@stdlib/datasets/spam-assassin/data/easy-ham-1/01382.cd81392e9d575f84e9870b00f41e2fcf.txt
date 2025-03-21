@@ -1,0 +1,90 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug 29 11:08:40 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 96C1647C76
+	for <jm@localhost>; Thu, 29 Aug 2002 06:06:17 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:06:17 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7T5lcZ00342 for <jm-sa@jmason.org>; Thu, 29 Aug 2002 06:47:38 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17kI82-0001mr-00; Wed,
+    28 Aug 2002 22:46:02 -0700
+Received: from 12-248-14-26.client.attbi.com ([12.248.14.26]
+    helo=12-248-11-90.client.attbi.com) by usw-sf-list1.sourceforge.net with
+    esmtp (Cipher TLSv1:DES-CBC3-SHA:168) (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17kI75-00013x-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 28 Aug 2002 22:45:03 -0700
+Received: (from skip@localhost) by 12-248-11-90.client.attbi.com
+    (8.11.6/8.11.6) id g7T5isf30319; Thu, 29 Aug 2002 00:44:54 -0500
+From: Skip Montanaro <skip@pobox.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Message-Id: <15725.46293.831269.315365@12-248-11-90.client.attbi.com>
+To: Daniel Quinlan <quinlan@pathname.com>
+Cc: "Dan Kohn" <dan@dankohn.com>,
+	<spamassassin-talk@lists.sourceforge.net>
+Subject: Re: [SAtalk] O.T. Habeus -- Why?
+In-Reply-To: <yf2k7majkol.fsf@proton.pathname.com>
+References: <A23DE7A325D23B49A76B54080E0BCB9E2924A9@kabul.ad.skymv.com>
+    <yf2k7majkol.fsf@proton.pathname.com>
+X-Mailer: VM 6.96 under 21.4 (patch 6) "Common Lisp" XEmacs Lucid
+Reply-To: skip@pobox.com
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Thu, 29 Aug 2002 00:44:53 -0500
+Date: Thu, 29 Aug 2002 00:44:53 -0500
+
+
+    DanQ> I think it would make more sense to start Habeas with a less
+    DanQ> aggressive score (one which will not give spammers a quick path
+    DanQ> into everyone's inbox) and after we've seen evidence that the
+    DanQ> system works, then we can increase the magnitude of the score.
+
+Better yet, let the GA figure out the correct score. ;-) That will obviously
+take awhile since you'll have to acquire enough messages with it, but it
+should give you a good idea if the presence of Habeus headers are good spam
+indicators or not.  If they are, my guess is that Habeus will probably not
+succeed.
+
+Taking things further off-topic: Does Habeus charge a license fee to
+organizations who want to use their copyrighted material or is their sole
+revenue stream to come from legal judgements?  On the one hand, if they
+charge license fees, I'd worry that when times got tough they'd be somewhat
+less critical of organizations we'd call spammers today in order to generate
+license fees.  If not, I'd worry the pendulum would swing the other way and
+they'd go after legitimate businesses in an attempt to generate more
+revenues from judgements and/or out of court settlements.  Either way, it
+seems like they have an interesting tightrope to walk.
+
+-- 
+Skip Montanaro
+skip@pobox.com
+consulting: http://manatee.mojam.com/~skip/resume.html
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

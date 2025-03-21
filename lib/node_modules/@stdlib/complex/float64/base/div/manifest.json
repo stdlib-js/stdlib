@@ -1,0 +1,87 @@
+{
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/napi/binary",
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/complex/float64/reim",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/constants/float64/max",
+        "@stdlib/constants/float64/eps",
+        "@stdlib/constants/float64/smallest-normal"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/complex/float64/reim",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/constants/float64/max",
+        "@stdlib/constants/float64/eps",
+        "@stdlib/constants/float64/smallest-normal"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/complex/float64/reim",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/constants/float64/max",
+        "@stdlib/constants/float64/eps",
+        "@stdlib/constants/float64/smallest-normal"
+      ]
+    }
+  ]
+}

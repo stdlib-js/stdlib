@@ -1,0 +1,92 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug 29 17:13:53 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6876B43F9B
+	for <jm@localhost>; Thu, 29 Aug 2002 12:13:53 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 17:13:53 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7TG90Z19705 for <jm-sa@jmason.org>; Thu, 29 Aug 2002 17:09:00 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17kRp4-0004cM-00; Thu,
+    29 Aug 2002 09:07:06 -0700
+Received: from moutng.kundenserver.de ([212.227.126.189]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17kRog-0005uh-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Thu, 29 Aug 2002 09:06:42 -0700
+Received: from [212.227.126.160] (helo=mrelayng0.kundenserver.de) by
+    moutng6.kundenserver.de with esmtp (Exim 3.35 #2) id 17kRod-0005OZ-00 for
+    spamassassin-talk@lists.sourceforge.net; Thu, 29 Aug 2002 18:06:39 +0200
+Received: from [80.129.0.32] (helo=silence.homedns.org) by
+    mrelayng0.kundenserver.de with asmtp (Exim 3.35 #2) id 17kRod-00062Q-00
+    for spamassassin-talk@lists.sourceforge.net; Thu, 29 Aug 2002 18:06:39
+    +0200
+Received: (qmail 2094 invoked by uid 1000); 29 Aug 2002 16:06:29 -0000
+From: Klaus Heinz <k.heinz.aug.zwei@onlinehome.de>
+To: spamassassin-talk@example.sourceforge.net
+Cc: urban@boquist.net
+Subject: Re: [SAtalk] SA very slow (hangs?) on this message, or is it just me?
+Message-Id: <20020829180628.A1796@silence.homedns.org>
+Mail-Followup-To: spamassassin-talk@example.sourceforge.net,
+	urban@boquist.net
+References: <15726.1821.102072.86673@iller.crt.se>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <15726.1821.102072.86673@iller.crt.se>; from
+    urban@boquist.net on Thu, Aug 29, 2002 at 01:35:57PM +0200
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Thu, 29 Aug 2002 18:06:29 +0200
+Date: Thu, 29 Aug 2002 18:06:29 +0200
+
+Urban Boquist wrote:
+
+> it seems to hang. Memory usage goes up to 73MB and stays there. I have
+> let it run for an hour before I killed it. This was on a
+> Pentium-II-366. Yes, I know, a bit slow, but still...
+> 
+> Can anyone else confirm this hang? Maybe I should just upgrade...
+> 
+> My environment is: SA-2.31, perl-5.6 running on NetBSD-1.6F.
+
+Version 2.40-cvs (from today) on NetBSD/i386 1.5.2 (Athlon 1500):
+
+  Aug 29 17:55:53 silence spamd[2052]: processing message
+  <20020829093613.6A00319300@groda.boquist.net> for kh:1234, expecting
+  1744014 bytes. 
+  Aug 29 17:57:10 silence spamd[2052]: clean message (2.5/5.0) for
+  kh:1234 in  77 seconds, 1744014 bytes. 
+
+Resident size about 75MB, according to top.
+
+ciao
+     Klaus
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

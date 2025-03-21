@@ -1,0 +1,37 @@
+
+{{alias}}( x, y )
+    Computes `x * ln(y)` so that the result is `0` if `x = 0`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    y: number
+        Input value.
+
+    Returns
+    -------
+    out: number
+        Function value.
+
+    Examples
+    --------
+    > var out = {{alias}}( 3.0, 2.0 )
+    ~2.079
+    > out = {{alias}}( 1.5, 5.9 )
+    ~2.662
+    > out = {{alias}}( 0.9, 1.0 )
+    0.0
+    > out = {{alias}}( 0.0, -2.0 )
+    0.0
+    > out = {{alias}}( 1.5, NaN )
+    NaN
+    > out = {{alias}}( 0.0, NaN )
+    NaN
+    > out = {{alias}}( NaN, 2.3 )
+    NaN
+
+    See Also
+    --------
+

@@ -1,0 +1,125 @@
+From rssfeeds@jmason.org  Thu Sep 26 16:33:42 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id B6FF416F17
+	for <jm@localhost>; Thu, 26 Sep 2002 16:33:40 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 16:33:40 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8QFReg24218 for
+    <jm@jmason.org>; Thu, 26 Sep 2002 16:27:40 +0100
+Message-Id: <200209261527.g8QFReg24218@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: "hyatt@mozilla" <rssfeeds@spamassassin.taint.org>
+Subject: Missing the Point
+Date: Thu, 26 Sep 2002 15:27:40 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.mozillazine.org/weblogs/hyatt/#85471617
+Date: Not supplied
+
+A lot of people seem to be missing the point of Phoenix, as evidenced by the 
+responses on Mozilla News[1] and MozillaZine[2]. Let me emphasize something 
+here: if you think Mozilla's current UI is acceptable, then you are clearly not 
+the target audience for Phoenix.
+
+Here is a quiz to test whether or not Phoenix is the right browser for you.
+
+
+- The link toolbar is: 
+
+
+- critical to my day-to-day use 
+- vital when using Bugzilla! Doesn't everybody use Bugzilla?
+-  link what?
+
+
+
+- The sidebar is 
+
+
+- indispensable since i run at 1600x1200 resolution 
+- not cool enough, since i can't float and dock all my panels and have 
+splitters between all panels and see web page progress for individual HTML 
+panels and check my email entirely from within sidebar and... 
+- a waste of real estate
+
+
+
+- Form auto-fill 
+
+
+- is not useful for me unless I can fill out 20 pages of personal information 
+first 
+- should just happen automatically
+
+
+
+- Downloads 
+
+
+- should take place in a tree view with progress meters in the columns! 
+- should be clearly visible and understandable.
+
+
+
+- Toolbars should 
+
+
+- be dockable to all four corners of the screen, be able to float outside the 
+window, be fully customizable such that I can make my own custom commands, be 
+able to edit existing buttons' commands, be able to create my own toolbars, be 
+able to put toolbars on the same line, and be able to edit the submenus and 
+context menus of items (including the items on the menu bar) and browse my file 
+system and cook me dinner and wash my car and walk my dog and do my taxes and 
+mow my lawn and... 
+- be customizable within reason
+
+
+
+- Composer should 
+
+
+- always come with my browser. I want composer options all over my UI. 
+Everywhere! 
+- not be part of a Web browser.
+
+
+
+- Mail should 
+
+
+- be part of my browser program. Aren't they the same app? There is a 
+difference? 
+- be a separate application.
+
+
+
+
+Now to those people who want the full-blown functionality of the Mozilla trunk, 
+you can still get that with Phoenix. The idea is to relegate more features to 
+the "optional add-on" category. If you want the link toolbar or the sidebar or 
+mouse gestures or any other features, you can download and install them 
+yourself. I expect Phoenix will have a little add-in manager that will 
+facilitate this process. There is currently an expectation on the part of an 
+alarming number of people that every feature implemented by anyone should 
+automatically be part of the default Mozilla install/download. 
+
+Why? 
+
+A layered approach scales better. You can then have a browser that can become 
+as complex as you want to make it, but the choice is left in your hands. The 
+geek features aren't inflicted on you by default.
+
+Finally, remember that Phoenix's UI is not controlled by Netscape. This is an 
+opportunity for some of the core Mozilla Navigator developers to build the 
+browser that they have always wanted to build, without having to compromise the 
+user interface to satisfy the various conflicting pressures exerted by factions 
+within Netscape.
+
+[1] http://www.mozillanews.org
+[2] http://www.mozillazine.org
+
+

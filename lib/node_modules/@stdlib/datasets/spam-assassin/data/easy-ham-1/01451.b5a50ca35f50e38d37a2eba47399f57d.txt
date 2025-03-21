@@ -1,0 +1,90 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Sun Sep  8 23:57:15 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id E960716F19
+	for <jm@localhost>; Sun,  8 Sep 2002 23:51:52 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sun, 08 Sep 2002 23:51:52 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g88E25C31776 for <jm-sa@jmason.org>; Sun, 8 Sep 2002 15:02:06 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17o2bc-0006T7-00; Sun,
+    08 Sep 2002 07:00:04 -0700
+Received: from mailman.rexus.com ([216.136.83.173] helo=Mr-Mailman) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17o2az-0006pF-00 for
+    <spamassassin-talk@lists.sourceforge.net>; Sun, 08 Sep 2002 06:59:25 -0700
+Received: from 65.90.104.216 [65.90.104.216] by Mr-Mailman with SMTPBeamer
+    v3.30 ; Sun, 8 Sep 2002 09:56:46 -0400
+Received: from omega.paradigm-omega.net (localhost.localdomain
+    [127.0.0.1]) by omega.paradigm-omega.net (Postfix) with ESMTP id
+    34B6E9FB5B for <spamassassin-talk@lists.sourceforge.net>; Sun,
+    8 Sep 2002 06:59:08 -0700 (PDT)
+Content-Type: text/plain; charset="iso-8859-15"
+Organization: Paradigm-Omega, LLC
+To: spamassassin-talk@example.sourceforge.net
+X-Mailer: KMail [version 1.3.1]
+X-PGP-Key-1: 8828 DA31 F788 2F87 CE6D  F563 5568 BABC 647E C336
+X-PGP-Key_2: D152 7DD6 C0E8 F2CB 4CD3  B5D7 5F67 B017 38D0 A14E
+X-Copyright(C): 2002
+X-Owner: Paradigm-Omega,LLC(tm)
+X-All-Rights: Reserved
+X-Dissemination: Prohibited
+X-Classification: Confidential/Proprietary
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+From: Robin Lynn Frank <rlfrank@paradigm-omega.com>
+Message-Id: <1031493547.12768.TMDA@omega.paradigm-omega.net>
+X-Delivery-Agent: TMDA/0.62
+X-Identifier: Robin Lynn Frank <rlfrank-sender-6a38a9@paradigm-omega.com>
+Reply-To: Robin Lynn Frank <rlfrank-dated-1031925547.7882bf@paradigm-omega.com>
+Subject: [SAtalk] spamd can't find...
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Sun, 8 Sep 2002 06:59:04 -0700
+Date: Sun, 8 Sep 2002 06:59:04 -0700
+
+I thought I'd installed razor correctly, but I am seeing the following in my 
+logs.  Can anyone give me a hitn?
+
+Sep  8 06:46:45 omega spamd[6514]: razor2 check skipped: No such file or 
+directory Can't locate object method "new" via package "Net::DNS::Resolver" 
+(perhaps you forgot to load "Net::DNS::Resolver"?) at (eval 31) line 1, 
+<STDIN> line 114. ^I...propagated at 
+/usr/lib/perl5/site_perl/5.6.1/Mail/SpamAssassin/Dns.pm line 392, <STDIN> 
+line 114.
+
+-- 
+Robin Lynn Frank
+Paradigm-Omega, LLC
+==================================
+The only certainty about documentation is that
+whoever wrote it "might" have understood it.
+The rest of us may not be so lucky.
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

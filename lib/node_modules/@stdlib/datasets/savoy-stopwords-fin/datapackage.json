@@ -1,0 +1,47 @@
+{
+  "name": "stdlib-datasets-savoy-stopwords-fin",
+  "version": "",
+  "title": "Finnish Stop Words",
+  "description": "A list of Finnish stop words.",
+  "resources": [
+    {
+      "name": "savoy-stopwords-fin-json",
+      "title": "Finnish Stop Words",
+      "description": "A list of Finnish stop words.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/words.json"
+    },
+    {
+      "name": "savoy-stopwords-fin-txt",
+      "title": "Finnish Stop Words",
+      "description": "A list of Finnish stop words.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/words.txt"
+    }
+  ],
+  "sources": [
+    {
+      "name": "IR Multilingual Resources at UniNE",
+      "web": "http://members.unine.ch/jacques.savoy/clef/"
+    }
+  ],
+  "keywords": [
+    "list",
+    "stopwords",
+    "words",
+    "redundant",
+    "lexicon",
+    "nlp",
+    "language",
+    "finland",
+    "finnish",
+    "fin"
+  ],
+  "license": "BSD-2-Clause"
+}

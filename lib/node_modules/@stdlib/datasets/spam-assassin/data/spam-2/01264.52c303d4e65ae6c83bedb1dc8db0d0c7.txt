@@ -1,0 +1,58 @@
+From fork-admin@xent.com  Tue Aug  6 11:58:41 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 1AD8E441F6
+	for <jm@localhost>; Tue,  6 Aug 2002 06:49:12 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:49:12 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g73Nn9v32244 for <jm@jmason.org>;
+    Sun, 4 Aug 2002 00:49:11 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id BDCF62940D6; Sat,  3 Aug 2002 16:46:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from M5Mailer (unknown [202.59.255.35]) by xent.com (Postfix)
+    with SMTP id C774B2940D1 for <fork@xent.com>; Sat,  3 Aug 2002 16:45:47
+    -0700 (PDT)
+From: "dojogirl" <dojo_4gl@yahoo.com>
+To: fork@spamassassin.taint.org
+Subject: Re: new url
+X-Mailer: Mach5 Mailer-2.50 PID{bfc4014b-116b-4892-9902-43b79ba938d2} RC{}
+Reply-To: 
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="----000000000000000000000"
+Message-Id: <200283234515262TGLTBOJSDESY@M5Mailer>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 04 Aug 2002 06:45:12 +0700
+
+------000000000000000000000
+Content-Type: text/plain;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+
+Hi Sweetie,
+
+Come see me and my Hot girl friends school at our new web site->
+
+http://freexmovies.net/mypic/
+
+Come to see FAST before delete this page.
+
+
+------000000000000000000000--
+http://xent.com/mailman/listinfo/fork
+
+

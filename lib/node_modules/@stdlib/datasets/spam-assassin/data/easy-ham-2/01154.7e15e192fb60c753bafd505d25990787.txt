@@ -1,0 +1,108 @@
+From rpm-list-admin@freshrpms.net  Tue Jul 23 21:23:35 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3CF20440CC
+	for <jm@localhost>; Tue, 23 Jul 2002 16:23:35 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 23 Jul 2002 21:23:35 +0100 (IST)
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6NKKb426197 for
+    <jm-rpm@jmason.org>; Tue, 23 Jul 2002 21:20:37 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6NKF3C14525; Tue, 23 Jul 2002 22:15:03
+    +0200
+Received: from imf22bis.bellsouth.net (mail022.mail.bellsouth.net
+    [205.152.58.62]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g6NKEZC13522 for <rpm-list@freshrpms.net>; Tue, 23 Jul 2002 22:14:35 +0200
+Received: from adsl-157-17-58.msy.bellsouth.net ([66.157.17.58]) by
+    imf22bis.bellsouth.net (InterMail vM.5.01.04.19
+    201-253-122-122-119-20020516) with ESMTP id
+    <20020723201427.VWKR19755.imf22bis.bellsouth.net@adsl-157-17-58.msy.bellsouth.net>
+    for <rpm-list@freshrpms.net>; Tue, 23 Jul 2002 16:14:27 -0400
+Subject: Re: central management
+From: Lance <lance_tt@bellsouth.net>
+To: rpm-zzzlist@freshrpms.net
+In-Reply-To: <20020723115021.3c01e04a.matthias@egwn.net>
+References: <20020722144004.3e8e8f0a.che666@uni.de>
+    <20020722212529.6ad783b8.kilroy@kamakiriad.com>
+    <20020723115021.3c01e04a.matthias@egwn.net>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8
+Message-Id: <1027455503.8885.0.camel@localhost.localdomain>
+MIME-Version: 1.0
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: 23 Jul 2002 15:18:23 -0500
+Date: 23 Jul 2002 15:18:23 -0500
+
+Thanks for this, Matthias!  Hope you feel better.
+
+Lance
+
+On Tue, 2002-07-23 at 04:50, Matthias Saou wrote:
+> Once upon a time, Brian wrote :
+> 
+> >     I was thinkinf about an addition of another file: apt-repositories.
+> >     Stick it on apt.freshmeat.net (the center of the apt universe, IMHO)
+> >     and every time a new repository is added, the RPM can be rebuilt. 
+> >     Heck, if I could get out of my depression, I could make the whole
+> >     submission process automated....even making the RPM...
+> 
+> Well, I already keep a list of known apt repositories on
+> http://freshrpms.net/apt/ although I haven't added the ones that were
+> talked about lately (actually I've been very busy over the week-end and I'm
+> sick right now...).
+> 
+> You could make the whole submission automated, even making the rpm?
+> <subliminal message>
+> http://rpmforge.net/ needs *you*!
+> </subliminal message>
+> 
+> Matthias
+> 
+> -- 
+> Matthias Saou                                World Trade Center
+> -------------                                Edificio Norte 4 Planta
+> System and Network Engineer                  08039 Barcelona, Spain
+> Electronic Group Interactive                 Phone : +34 936 00 23 23
+> 
+> _______________________________________________
+> RPM-List mailing list <RPM-List@freshrpms.net>
+> http://lists.freshrpms.net/mailman/listinfo/rpm-list
+-- 
+:
+####[ Linux One Stanza Tip (LOST) ]###########################
+
+Sub : Knowing contents of .tgz files                 LOST #015
+
+To know the contents of a .tgz file without decompressing: 
+
+$tar -ztvf filename.tgz | less          
+
+A .tgz file is essentially a gzipped tarball (.tar.gz) file.
+
+####<bish@nde.vsnl.net.in>####################################
+:
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

@@ -1,0 +1,59 @@
+From fork-admin@xent.com  Fri Sep 20 16:15:28 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 2B7D716F03
+	for <jm@localhost>; Fri, 20 Sep 2002 16:15:27 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 20 Sep 2002 16:15:27 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8KDVtC07056 for <jm@jmason.org>;
+    Fri, 20 Sep 2002 14:31:55 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id DE396294177; Fri, 20 Sep 2002 06:28:12 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from imo-d10.mx.aol.com (imo-d10.mx.aol.com [205.188.157.42]) by
+    xent.com (Postfix) with ESMTP id 6519529409C for <fork@xent.com>;
+    Fri, 20 Sep 2002 06:27:22 -0700 (PDT)
+Received: from ThosStew@aol.com by imo-d10.mx.aol.com (mail_out_v34.11.)
+    id k.53.1c91dda8 (3310); Fri, 20 Sep 2002 09:30:30 -0400 (EDT)
+From: ThosStew@aol.com
+Message-Id: <53.1c91dda8.2abc7cf6@aol.com>
+Subject: Re: [meta-forkage]
+To: dl@silcom.com, fork@spamassassin.taint.org
+MIME-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"
+Content-Transfer-Encoding: 7bit
+X-Mailer: AOL 5.0 for Mac sub 45
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 20 Sep 2002 09:30:30 EDT
+
+
+In a message dated 9/19/2002 3:45:45 PM, dl@silcom.com writes:
+
+>I don't mind if people advocate nuking
+>gay baby whales for jesus, if they can
+>make a good, original, argument for it.
+
+
+I can't imagine any other kind of argument for nuking gay baby whales for 
+jesus. But do you mean nuking baby gay whales who are for jesus; or nuking 
+baby gay whales for Jesus's sake?
+
+splitting hairs with a FoRK,
+
+Tom
+
+

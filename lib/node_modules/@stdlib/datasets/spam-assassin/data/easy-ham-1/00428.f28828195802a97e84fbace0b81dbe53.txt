@@ -1,0 +1,142 @@
+From fork-admin@xent.com  Thu Sep  5 11:31:06 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 8C39616F7D
+	for <jm@localhost>; Thu,  5 Sep 2002 11:28:32 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 05 Sep 2002 11:28:32 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g85302Z01844 for <jm@jmason.org>;
+    Thu, 5 Sep 2002 04:00:03 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 797F429420D; Wed,  4 Sep 2002 19:57:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mis-dns.mv.timesten.com (host209.timesten.com
+    [63.75.22.209]) by xent.com (Postfix) with ESMTP id 226EF2940AA for
+    <fork@xent.com>; Wed,  4 Sep 2002 19:56:05 -0700 (PDT)
+Received: from mis-exchange.mv.timesten.com (mis-exchange.mv.timesten.com
+    [10.10.10.8]) by mis-dns.mv.timesten.com (8.11.0/8.11.0) with ESMTP id
+    g852waA32721 for <fork@xent.com>; Wed, 4 Sep 2002 19:58:36 -0700
+Received: by mis-exchange.mv.timesten.com with Internet Mail Service
+    (5.5.2653.19) id <SJF7CJ6C>; Wed, 4 Sep 2002 19:58:36 -0700
+Message-Id: <80CE2C46294CD61198BA00508BADCA830FD384@mis-exchange.mv.timesten.com>
+From: Sherry Listgarten <sherry@timesten.com>
+To: "'fork@spamassassin.taint.org'" <fork@spamassassin.taint.org>
+Subject: RE: Java is for kiddies
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain; charset="iso-8859-1"
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 4 Sep 2002 19:58:36 -0700
+
+<snip>
+Misc rants about finding jobs, java vs C, what makes a good programmer, etc.
+</snip>
+
+Okay, hmm, I thought twice about this, but what the hey, jobs are hard to
+come by. There's a company hiring in Mountain View, looking for a few good
+hackers, no Java, no GUI, not even C++ -- just C and Linux and networking
+and good old stuff like that. They just raised a wad of money and they're
+looking for a few "really good programmers", says the CTO. I know him --
+very smart guy. Drives too fast, though, for what that's worth.
+
+Joe Bob says "check it out". I'd be happy to pass on your resume, or you can
+send it straight to them. Probably won't matter if I pass it on, since I
+don't know you guys anyway...
+
+http://www.netli.com
+
+-- Sherry.
+
+> -----Original Message-----
+> From: Joseph S. Barrera III [mailto:joe@barrera.org]
+> Sent: Tuesday, August 27, 2002 8:58 AM
+> To: Adam L. Beberg
+> Cc: fork@spamassassin.taint.org
+> Subject: Re: Java is for kiddies
+> 
+> 
+> Adam L. Beberg wrote:
+>  >>> Forwarding me stuff from a list is hardly handing me a job.
+>  >>
+>  >> I was talking about the open reqs at Kana (the company I 
+> work for).
+>  >>  Oh, but programming in Java is beneath you.
+>  >
+>  > Nope just lacking years and years of it. For some silly 
+> reason people
+>  > always want things to be reliable, fast, and 
+> cross-platform so all my
+>  > employers have forced me to code in C :)
+> 
+> C is more reliable than Java??
+> 
+> As for cross-platform, C exists on more platforms, but a Java program
+> is much easier to move from one platform to another. So I'm not sure
+> what you mean.
+> 
+> I'm not trying to fight a language war, but I'm puzzled by the depth
+> of your anti-Java hatred.
+> 
+>  > I know lots of high school
+>  > kiddies with plenty of Java tho, not having to teach people about
+>  > pointers or optimization or anything shaves years off the 
+> coder boot
+>  > time. I'll send them your way when they graduate.
+> 
+> Pointers. So a language has to have pointers to be real? And 
+> references
+> don't count, I gather. What's so great about pointers? Why do you
+> miss them? If your doing embedded stuff, fine, yes, you need the
+> performance and control over memory that C provides. Probably.
+> But if your implementing tier N-1 of a tier N system, and pounding
+> against a database, then Java is OFTEN a very reasonable choice.
+> Especially if you want that system to run without leaking memory.
+> 
+> Optimization. Who says you can't optimize Java? I can and have,
+> and there are good tools that allow you to do it (I use OptimizeIt).
+> But usually I find myself optimizing (reducing) database accesses
+> instead. I sped one part of the system up by a factor of ten by
+> grouping more operations into fewer transactions.
+> 
+> But this is beside the point. If you have decent C++ experience, and
+> have poked around in Java, you should be able to convince most
+> employers that you can be trusted writing Java. That's what I did --
+> I mean, I joined Kana from Microsoft, and I didn't exactly write
+> a lot of Java code at Microsoft.
+> 
+>  > I'm not displeased you're trying to help, just frustrated that
+>  > employers can demand such rediculous combinations of skills with
+>  > insane years of experience.
+> 
+> I don't think I've ever interviewed at a place where I actually
+> met all the prerequisites. Do you just give up when you don't?
+> 
+>  > Interview tommorow with Kodak, doing I have no idea what as the
+>  > recruiter isnt even sure, but cross your fingers it wont require 10
+>  > years of Java and 5 years of Windows/IA-64's device driver 
+> experience
+>  > (both common requirements).
+> 
+> I wish you best of luck, and I apologies for being a bitch.
+> But God DAMN, you piss me off sometimes. My son occasionally
+> displays your "can't-do" attitude and I do my damnest to
+> get him to reverse course.
+> 
+> - Joe
+> 
+> 
+

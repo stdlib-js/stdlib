@@ -1,0 +1,160 @@
+Return-Path: <update@list.theregister.co.uk>
+Received: from list.theregister.co.uk (theregister-sql2.hosted.netline.net.uk [213.40.196.63])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6I2osJ20578
+	for <qqqqqqqqqq-reg@spamassassin.taint.org>; Thu, 18 Jul 2002 03:50:54 +0100
+Received: from localhost ([127.0.0.1] helo=list.theregister.co.uk)
+	by list.theregister.co.uk with smtp (Exim 3.31 #1)
+	id 17V0eb-0002p9-05
+	for <qqqqqqqqqq-reg@spamassassin.taint.org>; Thu, 18 Jul 2002 03:04:29 +0100
+Date: Thu, 18 Jul 2002 03:00:01 +0100
+From: update@list.theregister.co.uk
+Subject: Reg Headlines Thursday July 18
+To: Reg Subscribers <update@list.theregister.co.uk>
+Precedence: list
+X-Bulkmail: 2.05
+Message-Id: <E17V0eb-0002p9-05@list.theregister.co.uk>
+
+Today's Headlines from The Register
+-----------------------------------
+
+    To unsubscribe from this daily news update, see the instructions at
+    the end of this message.
+
+
+  --------ADVERTISEMENT------------------------------------------------
+
+  WIN tickets to a FORMULA ONE EUROPEAN GRAND PRIX!
+
+  Neverfail Group plc, business continuity software expert, sponsors Rubens
+  Barrichello driver of the Ferrari F1 team. Click here to find out more and
+  win tickets: www.neverfailgroup.com/f1theregister.html.
+
+  For every new customer that buys Neverfail(tm) products between the
+  July-September 2002 Grand Prix season, Neverfail Group plc will grant 2
+  tickets to a Grand Prix hospitality event with us next 2003 season.
+
+  ---------------------------------------------------------------------
+Software
+
+    Sun's Java-Liberty moves risk industry scuffles
+    It's a trust thing
+        http://www.theregister.co.uk/content/4/26234.html
+
+    MS white paper says Palladium open, clean, not DRM
+    Quite plausibly, too. They're really trying very hard here...
+        http://www.theregister.co.uk/content/4/26231.html
+
+Semiconductors
+
+    Itanic OEM slams Itanic
+    Never mind our servers, it's b*ll*cks
+        http://www.theregister.co.uk/content/3/26248.html
+
+Internet
+
+    Apple joins in 'end of free Internet' bandwagon
+    Cough up or else
+        http://www.theregister.co.uk/content/6/26244.html
+
+    Team demos 'first quantum crypto prototype machine'
+    The secret comes out of the lab
+        http://www.theregister.co.uk/content/6/26243.html
+
+    BT suspends techie over Angus Deayton phone tap claim
+    Man arrested
+        http://www.theregister.co.uk/content/6/26242.html
+
+    Energis shareholders are revolting
+    Create Web site to 'fight for small investor'
+        http://www.theregister.co.uk/content/6/26240.html
+
+    Domain Registry of Europe defends tactics, sues Tucows
+    Says it says here, not a bill
+        http://www.theregister.co.uk/content/6/26239.html
+
+    MS to charge for MSN 8 browser - msn.co.uk for chop?
+    Seems to be losing interest in the things MSN UK does
+        http://www.theregister.co.uk/content/6/26238.html
+
+    Oftel rejects BT break-up call
+    Reckons it can handle BT
+        http://www.theregister.co.uk/content/6/26233.html
+
+Net Security
+
+    'Hacker' security biz built on FBI snitches
+    Gweeds gets L0pht/@Stake's number
+
+
+        http://www.theregister.co.uk/content/55/26247.html
+
+    Team demos 'first quantum crypto prototype machine'
+    The secret comes out of the lab
+        http://www.theregister.co.uk/content/55/26243.html
+
+    NetIQ claims detects Hacktivismo tool
+    Spoilsports?
+        http://www.theregister.co.uk/content/55/26235.html
+
+Business
+
+    HP confirms 150 suspended in email porn probe
+    Disciplinary process
+        http://www.theregister.co.uk/content/7/26246.html
+
+    Apple earnings fall but meet forecasts 
+    Whatever
+        http://www.theregister.co.uk/content/7/26245.html
+
+    Europe extends employment rules to teleworkers
+    Three year transition period
+        http://www.theregister.co.uk/content/7/26241.html
+
+    Energis reborn as 'Chelys,' but still called Energis
+    Bankers move in
+        http://www.theregister.co.uk/content/7/26237.html
+
+    Motorola chalks up biggest ever loss, but returns to profit
+    It's the way you tell them...
+        http://www.theregister.co.uk/content/7/26236.html
+
+The Mac Channel
+
+    Mac drought fails to lift Street, spirits
+    Widescreen iMac, iPod... er, that's it
+        http://www.theregister.co.uk/content/39/26249.html
+
+Bootnotes
+
+    Vulture Central welcomes new hatchling
+    Bouncing baby boy joins nest
+        http://www.theregister.co.uk/content/28/26232.html
+
+
+  --------ADVERTISEMENT------------------------------------------------
+
+  WIN tickets to a FORMULA ONE EUROPEAN GRAND PRIX!
+
+  Neverfail Group plc, business continuity software expert, sponsors Rubens
+  Barrichello driver of the Ferrari F1 team. Click here to find out more and
+  win tickets: www.neverfailgroup.com/f1theregister.html.
+
+  For every new customer that buys Neverfail(tm) products between the
+  July-September 2002 Grand Prix season, Neverfail Group plc will grant 2
+  tickets to a Grand Prix hospitality event with us next 2003 season.
+
+  ---------------------------------------------------------------------
+The Register and its contents are copyright 2002 Situation Publishing.
+All rights reserved.
+
+    Tel:     +44 (0)20 7499 2264.
+    Fax:     +44 (0)20 7493 5922.
+    E-Mail:  press.releases@theregister.co.uk
+
+To unsubscribe from these daily updates, visit the following URL.  Make
+sure that you enter exactly the same e-mail address as you used to join
+this service.
+
+    http://list.theregister.co.uk/cgi-bin/unsub.cgi
+
+

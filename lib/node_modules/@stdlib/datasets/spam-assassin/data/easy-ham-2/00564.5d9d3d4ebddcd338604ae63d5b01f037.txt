@@ -1,0 +1,102 @@
+From razor-users-admin@lists.sourceforge.net  Tue Aug  6 11:08:54 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B75374412A
+	for <jm@localhost>; Tue,  6 Aug 2002 06:04:06 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:04:06 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g72NTEv15890 for <jm-razor@jmason.org>; Sat, 3 Aug 2002 00:29:14 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17aljs-0004z9-00; Fri,
+    02 Aug 2002 16:21:44 -0700
+Received: from 208-150-110-21-adsl.precisionet.net ([208.150.110.21]
+    helo=neofelis.ixazon.lan) by usw-sf-list1.sourceforge.net with esmtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17aliS-0000ur-00 for
+    <razor-users@lists.sourceforge.net>; Fri, 02 Aug 2002 16:20:17 -0700
+Received: by neofelis.ixazon.lan (Postfix, from userid 504) id CFFCA3C47A;
+    Fri,  2 Aug 2002 19:20:01 -0400 (EDT)
+Content-Type: text/plain; charset="iso-8859-1"
+From: "cmeclax po'u le cmevi'u ke'umri" <cmeclax@gmx.co.uk>
+Reply-To: cmeclax@ixazon.dynip.com
+To: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] False Positives on EFF Messages
+X-Mailer: KMail [version 1.2]
+References: <3D4B0146.20604@perkel.com>
+In-Reply-To: <3D4B0146.20604@perkel.com>
+Comment: li 0x18080B5EBAEAEC17619A6B51DFF93585D986F633 cu sevzi le mi ckiku
+MIME-Version: 1.0
+Message-Id: <02080219195506.20486@neofelis>
+Content-Transfer-Encoding: 8bit
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Fri, 2 Aug 2002 19:19:55 -0400
+Date: Fri, 2 Aug 2002 19:19:55 -0400
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+de'i Friday 02 August 2002 18:01 la Marc Perkel cusku di'e
+> Hi everyone,
+>
+> I'm the systems admin for the Electronic Frontier Foundation and I'm using
+> razor running under spam assassin there and one my own personal server.
+> Generally it works fine with near 0 false positives - except - that almost
+> all the false positives I've seen are on messages that originated at EFF.
+>
+> So - I am wondering why RAZOR is catching EFF email and how is this
+> happening. Below is an example of what I'm talking about.
+
+I added code to my procmailrc (on the other account) so that anything that 
+comes on Bugtraq and is in Razor is revoked. Bugtraq is moderated, so spam 
+doesn't get through it. The recipe revoked a message about an hour after I 
+added it.
+
+:0 Wc
+| razor-check
+
+:0 a
+{
+   :0
+   * !^(some Bugtraq-specific header)
+   !fesmri@ixazon.dynip.com
+
+   :0 E
+   | razor-revoke
+}
+
+cmeclax
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.7 (GNU/Linux)
+
+iD8DBQE9SxOd3/k1hdmG9jMRAqz2AJ4yYsmri9qP3l8c61T9SFL5yQ1y6gCeJA71
+CretKENIo9OyI7HgLm112jI=
+=jodf
+-----END PGP SIGNATURE-----
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

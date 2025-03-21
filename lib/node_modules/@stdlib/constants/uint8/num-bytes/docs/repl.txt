@@ -1,0 +1,12 @@
+
+{{alias}}
+    Size (in bytes) of an 8-bit unsigned integer.
+
+    Examples
+    --------
+    > {{alias}}
+    1
+
+    See Also
+    --------
+

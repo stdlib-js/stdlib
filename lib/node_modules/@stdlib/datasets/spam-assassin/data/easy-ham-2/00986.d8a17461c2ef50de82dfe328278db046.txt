@@ -1,0 +1,59 @@
+From fork-admin@xent.com  Fri Aug  9 19:00:03 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 73B594406D
+	for <jm@localhost>; Fri,  9 Aug 2002 14:00:03 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 19:00:03 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g79Hw1b18776 for <jm@jmason.org>;
+    Fri, 9 Aug 2002 18:58:04 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 5DB6E294132; Fri,  9 Aug 2002 10:54:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from crank.slack.net (slack.net [166.84.151.181]) by xent.com
+    (Postfix) with ESMTP id 39B7C294104 for <fork@xent.com>; Fri,
+    9 Aug 2002 10:53:14 -0700 (PDT)
+Received: by crank.slack.net (Postfix, from userid 596) id 40F3B3EDA8;
+    Fri,  9 Aug 2002 13:54:59 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1]) by crank.slack.net
+    (Postfix) with ESMTP id 3F74B3ED50; Fri,  9 Aug 2002 13:54:59 -0400 (EDT)
+From: Tom <tomwhore@slack.net>
+To: James Rogers <jamesr@best.com>
+Cc: fork@spamassassin.taint.org
+Subject: Re: Re[2]: Bukkake
+In-Reply-To: <1028913223.7814.12.camel@avalon>
+Message-Id: <Pine.BSO.4.44.0208091354130.5877-100000@crank.slack.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 9 Aug 2002 13:54:59 -0400 (EDT)
+
+On 9 Aug 2002, James Rogers wrote:
+
+--]my version of the English language as the word for "eye goop".  Arguably
+--]better than "smegma" anyway.
+
+Unless of course the goop in your eye was a result of a botched tea
+bagging.
+
+Muta, I like that.
+
+-tom
+
+http://xent.com/mailman/listinfo/fork
+
+

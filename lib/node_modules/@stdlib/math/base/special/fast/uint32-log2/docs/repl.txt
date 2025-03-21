@@ -1,0 +1,32 @@
+
+{{alias}}( x )
+    Returns an approximate binary logarithm (base two) of an unsigned 32-bit
+    integer `x`.
+
+    This function provides a performance boost when requiring only approximate
+    computations for integer arguments.
+
+    For high-precision applications, this function is never suitable.
+
+    Parameters
+    ----------
+    x: uinteger
+        Input value.
+
+    Returns
+    -------
+    out: uinteger
+        Integer binary logarithm (base two).
+
+    Examples
+    --------
+    > var v = {{alias}}( 4 >>> 0 )
+    2
+    > v = {{alias}}( 8 >>> 0 )
+    3
+    > v = {{alias}}( 9 >>> 0 )
+    3
+
+    See Also
+    --------
+

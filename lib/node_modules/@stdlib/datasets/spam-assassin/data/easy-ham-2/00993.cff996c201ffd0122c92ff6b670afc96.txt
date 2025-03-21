@@ -1,0 +1,69 @@
+From fork-admin@xent.com  Mon Aug 12 11:08:43 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4FAD444105
+	for <jm@localhost>; Mon, 12 Aug 2002 05:56:27 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:56:27 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g79NIvb29721 for <jm@jmason.org>;
+    Sat, 10 Aug 2002 00:19:00 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 18BC52940C3; Fri,  9 Aug 2002 16:15:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from venus.phpwebhosting.com (venus.phpwebhosting.com
+    [64.29.16.27]) by xent.com (Postfix) with SMTP id 472132940AB for
+    <fork@xent.com>; Fri,  9 Aug 2002 16:14:46 -0700 (PDT)
+Received: (qmail 28452 invoked by uid 508); 9 Aug 2002 23:15:35 -0000
+Received: from unknown (HELO hydrogen.leitl.org) (217.80.40.22) by
+    venus.phpwebhosting.com with SMTP; 9 Aug 2002 23:15:35 -0000
+Received: from localhost (eugen@localhost) by hydrogen.leitl.org
+    (8.11.6/8.11.6) with ESMTP id g79NFTF03914; Sat, 10 Aug 2002 01:15:29
+    +0200
+X-Authentication-Warning: hydrogen.leitl.org: eugen owned process doing -bs
+From: Eugen Leitl <eugen@leitl.org>
+To: Gary Lawrence Murphy <garym@canada.com>
+Cc: <fork@spamassassin.taint.org>
+Subject: Re: David Friedman: Mail Me the Money!
+In-Reply-To: <m2ofcbuclp.fsf@maya.dyndns.org>
+Message-Id: <Pine.LNX.4.33.0208100110590.2267-100000@hydrogen.leitl.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sat, 10 Aug 2002 01:15:29 +0200 (CEST)
+
+On 9 Aug 2002, Gary Lawrence Murphy wrote:
+
+> This only restates the assertion, it doesn't clarify /how/ government
+> restrains you, other than under laws of criminal conduct and violent
+> crimes (if you meant the above literally)
+
+Of course. What we need is an anonymous betting pool on prominent 
+spammer's time of demise. Unfortunately, the government tends to take a 
+dim view of this, for some unfathomable reason.
+
+> If I can trace a spammer to their ISP, I can /generally/ get that
+> account revoked, and if you trace one to their parent corporation, I
+
+Uh, account revokation doesn't have quite the same level of deterrence as 
+cranial indentation with a heavy, blunt object. Honestly, how many people 
+will still spam if they knew they'd be running a real risk of losing life 
+and limb?
+
+
+http://xent.com/mailman/listinfo/fork
+
+

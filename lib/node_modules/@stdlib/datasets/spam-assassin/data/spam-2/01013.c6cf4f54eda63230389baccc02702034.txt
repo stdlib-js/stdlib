@@ -1,0 +1,257 @@
+From fork-admin@xent.com  Wed Jul 24 18:00:07 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 95CB4440CD
+	for <jm@localhost>; Wed, 24 Jul 2002 13:00:06 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 18:00:06 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6OGvx427822 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 17:58:02 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 17D532940B2; Wed, 24 Jul 2002 09:47:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mail1.artmarket.com (mail1.artmarket.com [194.242.43.183])
+    by xent.com (Postfix) with ESMTP id B20BB2940B2 for <fork@xent.com>;
+    Wed, 24 Jul 2002 09:46:24 -0700 (PDT)
+From: "Artprice.com" <info@artmarket.com>
+To: <fork@spamassassin.taint.org>
+Subject: Become an affiliate. Devenez site affilié.
+MIME-Version: 1.0
+Message-Id: <20020724164624.B20BB2940B2@xent.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 24 Jul 2002 09:46:24 -0700 (PDT)
+Content-Type: text/html;	charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+
+<HTML>
+    <HEAD>
+    <style type="text/css">
+    BODY { FONT-SIZE: 12px; FONT-FAMILY: Arial, Helvetica, sans-serif }
+    H1 { MARGIN-TOP: 5px; FONT-WEIGHT: bold; FONT-SIZE: 18px; MARGIN-BOTTOM: 2px; FONT-FAMILY: Arial, Helvetica, sans-serif }
+	H2 { MARGIN-TOP: 3px; FONT-WEIGHT:bold; FONT-SIZE: 16px; MARGIN-BOTTOM: 2px; FONT-FAMILY: Arial, Helvetica, sans-serif } 
+	H3 { MARGIN-TOP: 2px; FONT-WEIGHT: bold; FONT-SIZE: 14px;MARGIN-BOTTOM: 2px; FONT-FAMILY: Arial, Helvetica, sans-serif } 
+	TD { FONT-SIZE: 12px; FONT-FAMILY: Arial,Helvetica, sans-serif }
+	p { FONT-SIZE: 12px; FONT-FAMILY: Arial, Helvetica, sans-serif } 
+	A:hover { COLOR: #ff0000 } 
+	A:active { COLOR: #ff0000 } 
+   	HR { HEIGHT: 1px }
+	</style>
+    </HEAD>
+    <body rightmargin="0" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+        
+<table width="100%" border="0" cellspacing="0" cellpadding="5">
+  <tr>
+                <td>
+                    <h2><a name="En"></a></h2>
+                    <h2>With Artprice, the world leader in art market information, enhance your
+                        website content! <br>
+                        Make the most valuable information on artist available to your customers,
+                        and get high commissions!
+                    </h2>
+                    Posez sur votre site la barre de recherche Artprice et bénéficiez immédiatement
+                    de revenus supplémentaires…&nbsp;<a href="#fr">(en fran&ccedil;ais)</a><br>
+                    <br>
+<!-- search artprice -->
+                <table border="0" id="TableEn" align="center" cellpadding="2" cellspacing="0">
+        <tr> 
+          <form method="get" action="http://web.artprice.com/en/artistsearch.aspx">
+            <td> <a href="http://web.artprice.com/"><img src="http://web.artprice.com/Img/B/artprice_140.gif" align="absMiddle" border="0" alt="artprice"></a> 
+              <input type="text" name="searcharti" size="25">
+              <input type="submit" value="Search this artist" style="CURSOR: hand">
+              <input type="hidden" name="L" value="en">
+            </td>
+          </form>
+        </tr>
+      </table>
+<!-- search artprice -->
+
+                    <h2>Paying right from the moment the link is available to your visitors
+                        !
+                        <!-- search artprice -->
+                    </h2>
+                    <table width="90%" border="0" cellspacing="1" cellpadding="3" align="center">
+                        <tr>
+                            <td>
+                                <h3><font color="#ff0000">By becoming an Artprice affiliate, each
+                                        month you'll get from 20 to 50% in revenue share for all purchases
+                                        at www.artprice.com by customers coming from your site.</font></h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table width="100%" border="0" cellspacing="1" cellpadding="2" bgcolor="#999999">
+                                    <tr bgcolor="#e0dfde" align="middle">
+                                        <td> <font size="1">Total monthly purchase</font></td>
+                                        <td> <font size="1">Commission rate</font></td>
+                                        <td> <font size="1">Monthly revenue share</font></td>
+                                    </tr>
+                                    <tr bgcolor="#fff4f0" valign="baseline">
+                                        <td nowrap><b>From USD0 to USD1000 </b></td>
+                                        <td nowrap bgcolor="#fffbef"><b>20%</b></td>
+                                        <td nowrap bgcolor="#fff7de"><b>Up to USD200 </b></td>
+                                    </tr>
+                                    <tr bgcolor="#fff4f0" valign="baseline">
+                                        <td nowrap bgcolor="#fffaea"><b>From USD1001 to USD5000</b></td>
+                                        <td nowrap bgcolor="#fff7de"><font size="4"><b><font size="3">30%</font></b></font></td>
+                                        <td nowrap bgcolor="#ffefce"><b>From USD<font size="2">300</font>
+                                                to USD<font size="3">1500</font></b></td>
+                                    </tr>
+                                    <tr bgcolor="#ffe7bd" valign="baseline">
+                                        <td nowrap bgcolor="#fff4dd"><b>From USD5001 to USD15000 </b>
+                                        </td>
+                                        <td nowrap bgcolor="#ffefce"><font size="6"><b><font size="4">40%</font></b></font></td>
+                                        <td nowrap><b>From USD<font size="4"><font size="3">2000</font></font>
+                                                to USD<font size="4">6000</font></b></td>
+                                    </tr>
+                                    <tr bgcolor="#fff4f0" valign="baseline">
+                                        <td nowrap bgcolor="#ffefce"><b>Over USD15 001 </b></td>
+                                        <td nowrap bgcolor="#fee7ba"> <font size="7"><b><font size="5">50%</font></b></font></td>
+                                        <td nowrap bgcolor="#ffdfa4"><b>Over USD<font size="5">7500</font></b></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <ul>
+                        
+        <li>
+          <p>More information on our affiliation program!&nbsp;<a href="mailto:marketing@artprice.com?subject=Affiliation">Marketing@artprice.com</a> 
+            <br>
+            Tel : +33 472 421 732 or +33 478 220 000<br>
+          </p>
+        </li>
+                    </ul>
+                    <p><a href='http://list.artmarket.com/default.aspx?E=fork@xent.com&L=1'>To be removed from our mailing list</a></p>
+                    <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+					<br>
+                    <br>
+                    <a name="fr"></a><a href="#En">(In english)</a>
+                    <h2>Avec Artprice, le leader mondial de l'information sur le march&eacute;
+                        de l'art, enrichissez votre contenu en offrant aux visiteurs de votre
+                        site la barre de recherche artistes Artprice… </h2>
+<!-- search artprice -->
+    <table border="0" id="TableFR" align="center" cellpadding="2" cellspacing="0">
+        <tr>
+          <form method=get action="http://web.artprice.com/fr/artistsearch.aspx">
+		  <td>
+            <a href="http://web.artprice.com/"><img src="http://web.artprice.com/Img/B/artprice_140.gif" align="absMiddle" border="0" alt="artprice"></a> 
+            <input type=text name=searcharti size=25>
+            <input type=submit value="Chercher cet artiste" style="CURSOR: hand">
+            <input type=hidden name=L value=fr>
+			</td>
+        </form>
+                          </tr>
+                    </table>
+                    <h2>...et bénéficiez immédiatement de revenus supplémentaires comme déjà
+                        des centaines d'autres affiliés !
+                        <!-- search artprice -->
+                    </h2>
+                    <table width="90%" border="0" cellspacing="1" cellpadding="3" align="center">
+                        <tr>
+                            <td>
+                                <h3><font color="#ff0000">Artprice vous reverse tous les mois de 20%
+                                        à 50% sur les achats effectués par les clients venant de votre site
+                                        :</font></h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table width="100%" border="0" cellspacing="1" cellpadding="2" bgcolor="#999999">
+                                    <tr bgcolor="#e0dfde" align="middle">
+                                        <td> <font size="1">Tranche de CA mensuel HT</font></td>
+                                        <td> <font size="1">Taux de reversion</font></td>
+                                        <td> <font size="1">Montant de la reversion mensuelle</font></td>
+                                    </tr>
+                                    <tr bgcolor="#fff4f0" valign="baseline">
+                                        <td nowrap><b>&nbsp;De 0 à 1000 euros</b></td>
+                                        <td nowrap bgcolor="#fffbef"><b>20%</b></td>
+                                        <td nowrap bgcolor="#fff7de"><b>Jusqu'à 200 euros</b></td>
+                                    </tr>
+                                    <tr bgcolor="#fff4f0" valign="baseline">
+                                        <td nowrap bgcolor="#fffaea"><b>&nbsp;De 1001 à 5000 euros</b></td>
+                                        <td nowrap bgcolor="#fff7de"><font size="4"><b><font size="3">30%</font></b></font></td>
+                                        <td nowrap bgcolor="#ffefce"><b>De <font size="2">300</font> à
+                                                <font size="3">1500</font> euros</b></td>
+                                    </tr>
+                                    <tr bgcolor="#ffe7bd" valign="baseline">
+                                        <td nowrap bgcolor="#fff4dd"><b>&nbsp;De 5001 à 15000 euros</b></td>
+                                        <td nowrap bgcolor="#ffefce"><font size="6"><b><font size="4">40%</font></b></font></td>
+                                        <td nowrap><b>De<font size="4"> <font size="3">2000</font></font>
+                                                à <font size="4">6000</font> euros</b></td>
+                                    </tr>
+                                    <tr bgcolor="#fff4f0" valign="baseline">
+                                        <td nowrap bgcolor="#ffefce"><b>&nbsp;Au dessus de 15 000 euros</b></td>
+                                        <td nowrap bgcolor="#fee7ba"> <font size="7"><b><font size="5">50%</font></b></font></td>
+                                        <td nowrap bgcolor="#ffdfa4"><b>Plus de <font size="5">7500</font>
+                                                euros</b></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <ul>
+                        <li>
+                            <p>Plus d'informations sur notre programme d'affiliation : <a href="mailto:marketing@artprice.com?subject=Affiliation">
+                                    Marketing@artprice.com</a> <br>
+                                Tél : +33 472 421 732 ou +33 478 220 000</p>
+                        </li>
+                    </ul>
+                    <p><a href='http://list.artmarket.com/default.aspx?E=fork@xent.com&L=1'>Se désinscrire</a></p>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+    </td>
+            </tr>
+        </table>
+    </body>
+</HTML>
+
+
+
+http://xent.com/mailman/listinfo/fork
+
+

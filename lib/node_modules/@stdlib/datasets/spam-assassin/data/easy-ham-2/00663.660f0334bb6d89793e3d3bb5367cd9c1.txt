@@ -1,0 +1,460 @@
+From bruces@yami.57thstreet.com  Mon Jul 22 17:54:50 2002
+Return-Path: <bruces@yami.57thstreet.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 69628440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 12:54:43 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 17:54:43 +0100 (IST)
+Received: from yami.57thstreet.com ([66.100.224.110]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with SMTP id g6MFujd13636 for
+    <jm@jmason.org>; Mon, 22 Jul 2002 16:56:46 +0100
+Received: (qmail 44612 invoked by uid 1045); 22 Jul 2002 15:55:30 -0000
+Date: 22 Jul 2002 15:55:30 -0000
+Message-Id: <20020722155530.44611.qmail@yami.57thstreet.com>
+From: Bruce Sterling <bruces@well.com>
+To: yyyy@spamassassin.taint.org
+Subject: Viridian Note 00324: 911.net
+
+Key concepts: ubiquitous computation,
+emergency relief, Khaki Green, 911.net,
+Terrorspace, Cradle.net, Battlespace,
+Prosthetic Ubicomp, SO/HO Ubicomp,
+Safetyspace, Street.net, Punish.net,
+Industrial Ubicomp, Ubitopia
+
+Attention Conservation Notice:  It's the
+Pope-Emperor blue-skying it at some
+computer industry event in Brussels.
+
+Links:
+
+I was there.
+http://www.highgrounddesign.com/design/design.htm
+
+And then I went to Brussels and delivered this speech.
+http://www.ttivanguard.com/
+
+And next I'm going here!
+http://conferences.oreillynet.com/os2002/
+
+And right after that I'm going to another, weirder event
+that I can't even tell you about!
+
+-------------------------------------------
+Entries in the Global Civil Society Design Contest.
+
+From: Steven W. Schuldt <swschuldt*mac.com>
+http://www.americanrobotz.com/images2/Soon_GlobalCivilSocietyLaptop.jpg
+
+From: Ben Davis <bend*earthlink.net>
+http://www.digitaleverything.com/GlobalComputer.htm
+
+From: Joerg F. Wittenberger <Joerg.Wittenberger*pobox.com>
+http://www.askemos.org/ 
+http://www.askemos.org:9080/RomePaper.pdf
+
+From: Scott Vandehey <scot*spaceninja.com >
+http://spaceninja.com/viridian/notebook.html
+
+From: Bob Morris <bob*bomoco.com>
+http://viridianrepository.com/GlobalCivil/
+
+From: Anonymous
+http://home.freiepresse.de/befis/zx2000.html
+http://apollo.spaceports.com/~bodo4all/zx/zx97.htm
+http://www.vkb.co.il/
+
+From: Jim Thompson <jim*musenki.com>
+http://www.simputer.org
+http://www.cnn.com/2002/TECH/ptech/07/05/india.simputer.reut/index.html
+
+From: Mike Rosing <eresrch*eskimo.com>
+http://www.eskimo.com/~eresrch/viridian
+
+From: till*tillwe.de (Till Westermayer)
+Date: Sun Jul 14, 2002  05:38:00 PM US/Central
+
+"What do we need for a global civil society notebook? Six design
+criteria are highlighted, combined with some rough sketches."
+
+http://www.westermayer.de/till/projekte/02gcsdl.htm
+
+Best regards,
+Till Westermayer - till we *)
+http://www.westermayer.de/till/index.htm
+
+This contest expires August 15, 2002. 
+--------------------------------------------------------
+
+
+Speech at TTI Vanguard: "Designing for Resiliency" 
+Conference
+
+"911.net"
+
+by Bruce Sterling
+
+     Late last month I had the joy and privilege
+of hanging out with a big crowd of American computer
+scientists who were, basically, trying to find some 
+reasons to live.
+
+    Despite all evidence to the contrary, they've
+definitely got some reasons.
+
+    When you go to a conference which is very high-energy, 
+with a lot of paradigmatic reassessment going on, where 
+ideas are being flung around bodily well outside the box, 
+well, that's an impressive thing.  But it's my principle 
+as a sometime working journalist  not to get all carried 
+away whenever I witness something like that.  They might 
+well be drinking their own bathwater.  This sort of thing 
+generally requires a reality check from some *other* 
+conference. 
+
+   So, I'm now fresh back from Colorado, from the yearly 
+meeting of the High Ground Design Conversation.  These are 
+my best pals in the industrial design world, some dear, 
+long-time friends of mine, whose judgment I always trust.  
+And why would a science fiction writer trust the judgment 
+of industrial designers?  Well, because they're very 
+*trendy.*  They're very shrewd,  and very stylish, and very 
+hands-on people.  They're  peculiarly self-effacing and modest,
+yet quite  imaginative.  Better yet, they're even practical.  
+So they're kind of like science fiction writers, only with 
+much better shoes.
+
+    Usually when I go to this High Ground event, I just 
+deliver some wacko chat about popular aspects of 
+cyberculture and then I take some worshipful notes.  But!  
+I have to report that when I took them my notes from the 
+"CRA Grand Challenges in Computation" conference, I was 
+bringing the noise.
+
+    This is the first time I have ever seen their jaws 
+drop.  They're still kinda wringing their hands over the 
+dotcom boom and the Ka-boom. They miss those glory days of 
+the World Wide Web == because for them, that was the 
+Graphic Designers Full Employment Act.  So they're pretty 
+broke, and they're a little shell-shocked, so I guess they 
+should join the club.  But  when I brought them *this* 
+stuff == a rather extensively worked-out vision in 
+worldbuilding from the point of view of ubiquitous 
+computation in the 21st century...  Well, of course this 
+is merely a scenario, but to me, "911.net" smells like the 
+future.
+
+     And frankly, it doesn't smell good.  But that's all 
+right.  Because these aren't good times.  These are rather 
+harsh, dark times, and in its own peculiar way, 911.net is 
+a similarly harsh, dark concept.
+
+    "Ubiquitous computation" is by no means a new idea.   
+The guy who invented the term is dead, and even his R&D 
+lab doesn't look all that great these days.  Ubicomp has 
+been around for quite some time == in the table-napkin, 
+handwaving stage.  But it's lacked the means, motive and 
+opportunity to get any real-world traction.
+
+   I believe that may be changing.  If so, it's mostly due 
+to the events of September 11.  After that experience, 
+ubicomp has got motive and opportunity as it never had 
+before.  And the means, although they are still 
+speculative, are starting to make some sense.
+
+    What am I talking about when I use the term "ubicomp"?  
+Well, the term is a grab-bag, a congelation of different 
+technologies.  Some are here, commercially available off 
+the shelf; some are in the lab; and some may be physically 
+impossible.
+
+    Let's get down to some brass virtual tacks.  What are 
+the key technical drivers for widely distributed, self-
+organizing networks of sensors, processors and actuators, 
+embedded in the physical world?  And what do you do with 
+these things?
+
+    Okay, number one:  fuel cells.  Not chemical 
+batteries.  Small, portable, dependable, long-lasting, 
+power sources with some punch.  They may not be fuel cells 
+as they are now known.  They might be MEMS fuel cells, or 
+aluminum-air cells, or something enzymatic, I don't care; 
+just something much, much better than today's batteries.  
+Portable power is the crux.  Ubicomp's  future, if it has one,
+entirely hinges on this.  If we don't get some seriously 
+advanced,  portable sources of power then everything I am 
+about to tell you is a sci-fi phantasm. (Not that there's 
+anything wrong with that!)
+
+    Number two, RFID.  Radio-Frequency ID == gotta have 
+some taggers.  Gotta be on the Net.  It'd be nice if they 
+had some powered processors in them.  Something internal, 
+pervasive, a little computational action that is going on 
+inside physical objects.
+
+    Number three, wireless broadband.  Getting real close 
+here.
+
+   Number four, dongles.  I think this part is seriously 
+underappreciated.  This is the weird part of ubicomp, the 
+part that may turn out to be its Achilles heel:  some way 
+to turn the damn thing off.  And to *know* it's off.  The 
+problem of the authorized user.  The authorized 
+administrator, the authorized access.  This is likely to 
+play out as ubicomp's functional equivalent of the 
+Internet's intellectual-property problem.  In other words, 
+it's a very serious issue which is going to be neglected 
+from the get-go, as people are eagerly building the basic 
+infrastructure.  Then, as they lamely try to build it in 
+later, they are going to find out that they have 
+inadvertently poisoned the water-stream for everybody.
+
+    You don't want to wander into a Kazaa and Napster 
+version of George Orwell.  Ubiquitous computation, unlike 
+information, does not "want to be free."  This is not a 
+technology of freedom. Ubiquitous computation wants to 
+make you its slave. Try to remember that, for all our 
+sakes, all right?  This is not a water-cooler for gossip, 
+like the Internet is.  This is a hard-case, hard-times, 
+hands-on, rather ruthless command-and-control system.
+
+    Number five, GPS, global positioning systems.  Been 
+there, done that.
+
+    Number six, convoy traffic.  I think this is also 
+underestimated, for when I started looking at serious 
+applications for ubicomp, time and again, rapidly shipping 
+large amounts of physical material in and out of the 
+ubicomp zone is a killer application.  Getting stuff in, 
+numbering it, assembling it, moving it out. Lots of it. 
+Train loads, truck loads, bus loads. And airlifts.
+
+    Bringing up the van, a whole bunch of other ubi-stuff, 
+of varying degrees of use and practicality.  High speed 
+fiber optic networks, check.  Massive storage and routers, 
+check.  Big databases, check, but they need to be fast and 
+flexible. Some "MobiHoc" action: mobile ad-hoc self-
+assembling networks: networks that are always 
+reconfiguring in real-time, always on the move.  
+
+    Facial recognition has a considerable number of 
+ubicomp applications, by no means all of them good.  Human 
+presence-sensing systems?  Oh yes.  Ruggedized hardware 
+suitable for outdoor deployment in all conditions and 
+weathers.  Real-time simulation of ongoing major 
+situations.  Toxin detectors of various kinds, 
+environmental monitoring of almost every sort, biometric 
+ID...  I have a long list of these.  I'm cross-checking 
+them.  I'm using them to build scenarios.
+
+    One thing about 911.net makes it very distinct from 
+earlier visions of ubicomp.  This is not Microsoft Windows 
+for Housekeeping.  This is a hard, tough web that you 
+throw down fast over dire emergencies.  The key concept 
+here is that we are finally moving computation out of the 
+ivory tower, for good and all.  No more glass boxes of the 
+1950s, no more clean abstractions of cyberspace.  We are 
+deploying computation at unheard-of speed, into the 
+darkest, dirtiest, most dangerous places in the world.
+
+    It is a resilient security apparatus for emergencies. 
+That is 911.net.  
+
+    Now, you might well argue that ubicomp is very 
+invasive of privacy.  That's just what my industrial 
+design pals said about it, immediately, and they were 
+right.  It's been hard to find reasonable deployments for 
+ubicomp in peacetime commerce and in private homes, 
+because it is so Orwellian. However.  Under certain 
+circumstances, other social circumstances do trump this 
+issue.
+
+    For instance, when you are breathing your last under a 
+pile of earthquake rubble, you don't really care much 
+about privacy under your circumstances.  What you really 
+want is  a smart bulldozer, a tourniquet, and some direct 
+pressure against your open wounds.  And that is what 
+911.net is about == or will be about, should it find its 
+way out of the computer-science talking-shop and into 
+daylight.  
+
+     It is an emergency response system for the planet's 
+open wounds.  And those wounds exist in plenty.  There are 
+more of them all the time.
+
+    I rather doubt that the Orwellian version of ubicomp 
+has much of a future.  That's a scenario that I have 
+dubbed "Terrorspace", which is ubicomp in the context of 
+airports and nuclear power sites.  If you've been in 
+airports recently, I believe you are seeing a pretty apt, 
+early version of Terrorspace.  At any random moment, you 
+can have your possessions rifled through by strangers.  
+Your shoes are scanned, and various small but vital 
+objects in your pockets can be confiscated by semi-
+educated security geeks.  They're either pathetically 
+under-trained for the job (in which case you certainly 
+feel no safer), or else they are intelligent and capable 
+people (in which case you pity them and wish they had some 
+other job, for the sake of general human happiness and the 
+GNP).  Rather than making us any safer, Terrorspace 
+airports serve as political indoctrination centers that 
+humiliate our voting population on a broad scale. They are 
+meant to inure us to ever-escalating levels of 
+governmental clumsiness and general harm.
+
+    The difficulty with this Terrorspace approach is that 
+airports and airlines are going broke.  Airports are 
+hemorrhaging money trying to maintain this terrorspace 
+apparatus.  It is likely to spread to the brittle power of 
+nuclear power plants, nuclear waste dumps, bio-sites, 
+chemical sites, liquid petroleum gas centers and so forth. 
+That will hugely increase the overhead of all these 
+dangerous industries. 
+
+    That's a very considerable tax burden.  So, though 
+Terrorspace may serve as a full employment program for the 
+loyal and slightly stupid, that's not going to pay off 
+socially or economically in the long run.
+
+   However, 911.net is a different matter.   An air-
+deployable 911.net that allowed first responders to 
+rapidly deal with fires, floods and other major disasters 
+would *save* money, especially for the insurers, who are 
+already on the ropes.
+
+    The actual September 11 event, 9/11, was a rare and 
+remarkable thing.  And, with fewer than 3,000 people dead, 
+it's just not that big a deal as genuine catastrophes go.  
+Politically, theologically and militarily it was huge, but 
+a workaday 911.net wouldn't fret much about terrorism.  
+Instead, it would have to deal mostly with floods, fires, 
+climate change, earthquakes, volcanoes and (let's hope 
+never) asteroids and weapons of mass destruction.
+
+   So, basically, with 911.net, we are describing a social 
+re-definition of computer geeks as firemen.  Native 
+twenty-first century computer geeks as muscular, with-it, 
+first-responder types.  I think this would be pretty good 
+for the computer industry.  We all need to take the 
+dysfunctional physical world far more seriously.  This 
+week, Italy's flooding, Texas is flooding, Colorado's on 
+fire.  This morning, the brand-new wilderness forests 
+around the site of the former Chernobyl are on fire, 
+spewing radioactive ash hither and yon.   Chunks of 
+Antarctica the size of Rhode Island have fallen into the 
+sea. I could go on.
+
+    This is the sort of activity that humanity is required 
+to deal with in this new century. If we build a successful 
+method with which to do this, those useful tactics will 
+spread across the fabric of our civilization.  I believe 
+they are already spreading.  An innovation like 911.net 
+will likely serve as a camel's nose in the tent for a 
+whole series of ubicomp applications across society.
+
+    I've been speculating about these new forms of 
+ubicomp, and giving them some flashy neologisms, because 
+that is what science fiction writers bring to the table.  
+We build little scenario worlds and make up names for 
+them.  First we've got "911.net," then "Terrorspace," but 
+there are others.
+
+BATTLESPACE.  A term already much-used by the Pentagon.  
+Battlespace means military C4ISR. The "Revolution in 
+Military Affairs."  I would point out that the military, 
+unlike some sectors, is not reneging on their enthusiastic 
+commitment to the digital revolution.  On the contrary.  I 
+haven't seen anybody in the military saying that they long 
+to go back to the good-old-fashioned, solid, easy-to-
+understand methods of the War in Vietnam.  The military 
+are very into "network-centric warfare," and they couldn't 
+be happier about their spysats and surveillance drones.
+
+PROSTHETIC UBICOMP.  This is eldercare.  A huge, steadily 
+growing market. Alzheimer's disease is a flat-out domestic 
+catastrophe that lasts seven years.  Any computational 
+help here == in elder-proofing spaces, tracking the sick 
+and so forth == would be of huge benefit to society.
+
+CRADLE.NET.  Babies have no privacy.  Children have little 
+privacy. Child-proofing a room against a crawling tot... 
+if you've ever done this, you can realize how much use it 
+might be to have this process automated.  Any two-year-old 
+always wonders:  "Why can't Mr Fork and Miss Wall Socket 
+be friends?"  A real-time checklist, at the very least!  
+And then we're faced with the interesting, large-scale 
+prospects of "K-12.net."
+
+STREET.NET.  This would be traffic management and urban 
+systems management.  Water networks, power networks,
+subways, sidewalks and so forth.
+
+PUNISH.NET.  Two million people are in the American prison 
+population.  They've got no privacy.  They've gotta be 
+watched all the time.  They're basically crammed in iron 
+cages now.
+
+INDUSTRIAL UBICOMP. Managing supply chains, industrial 
+assembly and so forth.  This will eventually be the 
+biggest application.
+
+SO/HO UBICOMP.  Ubicomp in the home, the home office and 
+small office.  Some very interesting consumer uses here, 
+but in the grand scheme of things, not that big a deal.
+
+SAFETYSPACE.  These would be military bases, U.N. safety 
+zones, refugee camps, and disaster evacuation centers.  
+It's fairly easy to imagine ubiquitous computation as a 
+sinister "gated community" that walls off privileged areas 
+under threat.  But we can also think of it as importing 
+some human comfort, solidarity, mercy and safety into 
+various benighted areas that are severely disturbed.  One 
+can imagine a Gorazde UN safe zone version of this, new 
+and improved of course: a black helicopter ghosts over in 
+the dead of night, deploys a scattering of small drones, 
+smart-mines and sensors, and suddenly the war just stops 
+within these bounds of Safetyspace.  Rapine, looting, 
+sacking, smashing and burning are  ruled out of existence 
+through computer awareness.  The handiness of a technique 
+like that for life in the 21st century... well, it might 
+be a bit underestimated.
+
+And last, coming up with a bullet should the good times 
+return in all their carefree glory:  UBITOPIA.  This I 
+take to be ubicomp as an Urban Entertainment Destination.  
+You go there for fun just because there is cool, wacky 
+stuff embedded in the physical world, and it's behaving in 
+a way that brings joy and hilarity and good spirits, like 
+the funhouse mirror at a digital carnival.  
+
+    When and if Ubitopia really hits, it will mean that 
+humanity's basic relationship with our material goods has 
+been radically redefined.  That is the apotheosis of 
+ubiquitous computation. Just: material goods, and the way 
+we deal with them, are different.  Different in character, 
+different in quality.  Not recognizable by 20th century 
+standards.
+
+     So. I have no idea if the Homeland Security 
+department, or FEMA or DARPA or the NSF, are going to pony 
+up any money for any of these notions.  That's not my 
+lookout.  I'm a science fiction writer.  And ladies and 
+gentlemen, with this material, I have struck platinum.  
+This stuff is really hot.  This is a great, attractive, 
+contemporary idea that is really new, really different, 
+and really ominous.  The implications are huge and they 
+spread across the board of society. I am going to be a 
+very busy guy with this material.  If you want to help me, 
+send some email.
+
+Thanks a lot for your attention.
+
+O=c=O O=c=O O=c=O
+IT'S HERE
+IT'S THERE
+IT'S EVERYWHERE
+O=c=O O=c=O O=c=O
+
+

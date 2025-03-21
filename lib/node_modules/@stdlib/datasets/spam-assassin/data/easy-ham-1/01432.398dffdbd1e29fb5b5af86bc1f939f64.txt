@@ -1,0 +1,61 @@
+From jm@jmason.org  Tue Sep  3 14:38:29 2002
+Return-Path: <yyyy@spamassassin.taint.org>
+Delivered-To: yyyy@spamassassin.taint.org
+Received: by spamassassin.taint.org (Postfix, from userid 500)
+	id 6798116F23; Tue,  3 Sep 2002 14:38:29 +0100 (IST)
+Received: from spamassassin.taint.org (localhost [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP
+	id 6221BF7A7; Tue,  3 Sep 2002 14:38:29 +0100 (IST)
+To: "Craig R.Hughes" <craig@deersoft.com>
+Cc: quinlan@pathname.com, yyyy@spamassassin.taint.org (Justin Mason),
+	spamassassin-devel@lists.sourceforge.net
+Subject: Re: [SAdev] 2.41 release? 
+In-Reply-To: Message from "Craig R.Hughes" <craig@deersoft.com> 
+   of "Mon, 02 Sep 2002 22:37:10 PDT." <312D1C89-BEFF-11D6-9DD0-00039396ECF2@deersoft.com> 
+From: yyyy@spamassassin.taint.org (Justin Mason)
+X-GPG-Key-Fingerprint: 0A48 2D8B 0B52 A87D 0E8A  6ADD 4137 1B50 6E58 EF0A
+X-Habeas-Swe-1: winter into spring
+X-Habeas-Swe-2: brightly anticipated
+X-Habeas-Swe-3: like Habeas SWE (tm)
+X-Habeas-Swe-4: Copyright 2002 Habeas (tm)
+X-Habeas-Swe-5: Sender Warranted Email (SWE) (tm). The sender of this
+X-Habeas-Swe-6: email in exchange for a license for this Habeas
+X-Habeas-Swe-7: warrant mark warrants that this is a Habeas Compliant
+X-Habeas-Swe-8: Message (HCM) and not spam.  Please report use of this
+X-Habeas-Swe-9: mark in spam to <http://www.habeas.com/report/>.
+Date: Tue, 03 Sep 2002 14:38:24 +0100
+Sender: yyyy@spamassassin.taint.org
+Message-Id: <20020903133829.6798116F23@spamassassin.taint.org>
+
+
+"Craig R.Hughes" said:
+
+> Seems like a good idea.  We might get one of two other issues 
+> raised tomorrow too once US people get back to work tomorrow and 
+> start downloading 2.40 in earnest.
+
+yep, I reckon that's likely.
+
+BTW I'm hearing reports about problems resolving spamassassin.org.
+Anyone else noticing this?  if it's serious I'll see if I can get
+Mark Reynolds to add a 2ndary in the US, to go with the primaries
+in Oz.
+
+> >    - looks like there may be a razor2 issue
+
+I think this is a Razor bug/glitch triggered when file permissions
+don't allow its own log system to work.  At least that's the report
+I heard on the Razor list in the past...
+
+Theo, does it work now that you /dev/null'd the logfile?
+
+> >    - version number (says "cvs")
+> >    - tag tree as "Rel" this time too
+
+I won't bother tagging with Rel, IMO; I don't think we should
+rely on the version control system inside our code, so I've just
+put a line in Mail/SpamAssassin.pm instead.   I will of course
+tag with a release *label* though.
+
+--j.
+

@@ -1,0 +1,289 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2017 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Print dependency information.
+#
+# Usage: deps_info
+#
+
+# MAIN #
+
+CLANG=$(command -v clang 2>/dev/null)
+echo '-----'
+echo 'clang:' >&2
+echo '' >&2
+if [[ -x "${CLANG}" ]]; then
+	"${CLANG}" --version >&2
+else
+	echo 'Unable to detect clang.' >&2
+fi
+echo '' >&2
+
+CMAKE=$(command -v cmake 2>/dev/null)
+echo '-----'
+echo 'CMake:' >&2
+echo '' >&2
+if [[ -x "${CMAKE}" ]]; then
+	"${CMAKE}" --version >&2
+else
+	echo 'Unable to detect CMake.' >&2
+fi
+echo '' >&2
+
+CURL=$(command -v curl 2>/dev/null)
+echo '-----'
+echo 'curl:' >&2
+echo '' >&2
+if [[ -x "${CURL}" ]]; then
+	"${CURL}" --version >&2
+else
+	echo 'Unable to detect curl.' >&2
+fi
+echo '' >&2
+
+FETCH=$(command -v fetch 2>/dev/null)
+echo '-----'
+echo 'fetch:' >&2
+echo '' >&2
+if [[ -x "${FETCH}" ]]; then
+	"${FETCH}" --version >&2
+else
+	echo 'Unable to detect fetch.' >&2
+fi
+echo '' >&2
+
+GCC=$(command -v gcc 2>/dev/null)
+echo '-----'
+echo 'gcc:' >&2
+echo '' >&2
+if [[ -x "${GCC}" ]]; then
+	"${GCC}" --version >&2
+else
+	echo 'Unable to detect gcc.' >&2
+fi
+echo '' >&2
+
+GFORTRAN=$(command -v gfortran 2>/dev/null)
+echo '-----'
+echo 'gfortran:' >&2
+echo '' >&2
+if [[ -x "${GFORTRAN}" ]]; then
+	"${GFORTRAN}" --version >&2
+else
+	echo 'Unable to detect gfortran.' >&2
+fi
+echo '' >&2
+
+GIT=$(command -v git 2>/dev/null)
+echo '-----'
+echo 'git:' >&2
+echo '' >&2
+if [[ -x "${GIT}" ]]; then
+	"${GIT}" --version >&2
+else
+	echo 'Unable to detect git.' >&2
+fi
+echo '' >&2
+
+GNU_MAKE=$(command -v make 2>/dev/null)
+echo '-----'
+echo 'GNU make:' >&2
+echo '' >&2
+if [[ -x "${GNU_MAKE}" ]]; then
+	"${GNU_MAKE}" --version >&2
+else
+	echo 'Unable to detect GNU make.' >&2
+fi
+echo '' >&2
+
+GPP=$(command -v g++ 2>/dev/null)
+echo '-----'
+echo 'g++:' >&2
+echo '' >&2
+if [[ -x "${GPP}" ]]; then
+	"${GPP}" --version >&2
+else
+	echo 'Unable to detect g++.' >&2
+fi
+echo '' >&2
+
+JULIA=$(command -v julia 2>/dev/null)
+echo '-----'
+echo 'Julia:' >&2
+echo '' >&2
+if [[ -x "${JULIA}" ]]; then
+	"${JULIA}" --version >&2
+else
+	echo 'Unable to detect Julia.' >&2
+fi
+echo '' >&2
+
+RSCRIPT=$(command -v Rscript 2>/dev/null)
+echo '-----'
+echo 'lintr:' >&2
+echo '' >&2
+if [[ -x "${RSCRIPT}" ]] && "${RSCRIPT}" -e 'packageVersion("lintr")' &>/dev/null; then
+	"${RSCRIPT}" -e 'packageVersion("lintr")' >&2
+else
+	echo 'Unable to detect lintr.' >&2
+fi
+echo '' >&2
+
+NODEJS=$(command -v node 2>/dev/null)
+echo '-----'
+echo 'Node.js:' >&2
+echo '' >&2
+if [[ -x "${NODEJS}" ]]; then
+	"${NODEJS}" --version >&2
+else
+	echo 'Unable to detect Node.js.' >&2
+fi
+echo '' >&2
+
+NPM=$(command -v npm 2>/dev/null)
+echo '-----'
+echo 'npm:' >&2
+echo '' >&2
+if [[ -x "${NPM}" ]]; then
+	"${NPM}" --version >&2
+else
+	echo 'Unable to detect npm.' >&2
+fi
+echo '' >&2
+
+PYTHON=$(command -v python 2>/dev/null)
+echo '-----'
+echo 'NumPy:' >&2
+echo '' >&2
+if [[ -x "${PYTHON}" ]] && "${PYTHON}" -m pip show numpy &>/dev/null; then
+	"${PYTHON}" -m pip show numpy >&2
+else
+	echo 'Unable to detect NumPy.' >&2
+fi
+echo '' >&2
+
+PANDOC=$(command -v pandoc 2>/dev/null)
+echo '-----'
+echo 'pandoc:' >&2
+echo '' >&2
+if [[ -x "${PANDOC}" ]]; then
+	"${PANDOC}" -v >&2
+else
+	echo 'Unable to detect pandoc.' >&2
+fi
+echo '' >&2
+
+PIP=$(command -v pip 2>/dev/null)
+echo '-----'
+echo 'pip:' >&2
+echo '' >&2
+if [[ -x "${PIP}" ]]; then
+	"${PIP}" --version >&2
+else
+	echo 'Unable to detect pip.' >&2
+fi
+echo '' >&2
+
+PYCODESTYLE=$(command -v pycodestyle 2>/dev/null)
+echo '-----'
+echo 'pycodestyle:' >&2
+echo '' >&2
+if [[ -x "${PYCODESTYLE}" ]]; then
+	"${PYCODESTYLE}" --version >&2
+else
+	echo 'Unable to detect pycodestyle.' >&2
+fi
+echo '' >&2
+
+PYDOCSTYLE=$(command -v pydocstyle 2>/dev/null)
+echo '-----'
+echo 'pydocstyle:' >&2
+echo '' >&2
+if [[ -x "${PYDOCSTYLE}" ]]; then
+	"${PYDOCSTYLE}" --version >&2
+else
+	echo 'Unable to detect pydocstyle.' >&2
+fi
+echo '' >&2
+
+PYLINT=$(command -v pylint 2>/dev/null)
+echo '-----'
+echo 'Pylint:' >&2
+echo '' >&2
+if [[ -x "${PYLINT}" ]]; then
+	"${PYLINT}" --version >&2
+else
+	echo 'Unable to detect Pylint.' >&2
+fi
+echo '' >&2
+
+PYTHON=$(command -v python 2>/dev/null)
+echo '-----'
+echo 'Python:' >&2
+echo '' >&2
+if [[ -x "${PYTHON}" ]]; then
+	"${PYTHON}" --version >&2
+else
+	echo 'Unable to detect Python.' >&2
+fi
+echo '' >&2
+
+R=$(command -v R 2>/dev/null)
+echo '-----'
+echo 'R:' >&2
+echo '' >&2
+if [[ -x "${R}" ]]; then
+	"${R}" --version >&2
+else
+	echo 'Unable to detect R.' >&2
+fi
+echo '' >&2
+
+RSCRIPT=$(command -v Rscript 2>/dev/null)
+echo '-----'
+echo 'Rscript:' >&2
+echo '' >&2
+if [[ -x "${RSCRIPT}" ]]; then
+	"${RSCRIPT}" --version >&2
+else
+	echo 'Unable to detect Rscript.' >&2
+fi
+echo '' >&2
+
+PYTHON=$(command -v python 2>/dev/null)
+echo '-----'
+echo 'SciPy:' >&2
+echo '' >&2
+if [[ -x "${PYTHON}" ]] && "${PYTHON}" -m pip show scipy &>/dev/null; then
+	"${PYTHON}" -m pip show scipy >&2
+else
+	echo 'Unable to detect SciPy.' >&2
+fi
+echo '' >&2
+
+WGET=$(command -v wget 2>/dev/null)
+echo '-----'
+echo 'wget:' >&2
+echo '' >&2
+if [[ -x "${WGET}" ]]; then
+	"${WGET}" --version >&2
+else
+	echo 'Unable to detect wget.' >&2
+fi
+echo '' >&2
+

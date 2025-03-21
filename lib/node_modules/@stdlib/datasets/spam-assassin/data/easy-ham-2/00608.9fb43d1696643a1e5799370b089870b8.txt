@@ -1,0 +1,85 @@
+From razor-users-admin@lists.sourceforge.net  Fri Aug  9 15:39:48 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7373B440FB
+	for <jm@localhost>; Fri,  9 Aug 2002 10:34:31 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:34:31 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79EWrb07882 for
+    <jm-razor@jmason.org>; Fri, 9 Aug 2002 15:32:53 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id XAA01773 for
+    <jm-razor@jmason.org>; Thu, 8 Aug 2002 23:31:53 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17cvhL-0001av-00; Thu,
+    08 Aug 2002 15:24:03 -0700
+Received: from adsl-67-118-106-171.dsl.snfc21.pacbell.net
+    ([67.118.106.171] helo=frontier.limbo.net) by usw-sf-list1.sourceforge.net
+    with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17cvgt-0001nm-00 for
+    <razor-users@lists.sourceforge.net>; Thu, 08 Aug 2002 15:23:35 -0700
+Received: by frontier.limbo.net (Postfix, from userid 500) id C6F6630E945;
+    Thu,  8 Aug 2002 15:26:38 -0700 (PDT)
+From: Chip Paswater <turk182@chipware.net>
+Cc: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] keep submitting known spam?
+Message-Id: <20020808152638.A32536@frontier.limbo.net>
+References: <20020808111842.J1593@rover.vipul.net>
+    <FB680A85-AB10-11D6-BCF2-00039396ECF2@deersoft.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <FB680A85-AB10-11D6-BCF2-00039396ECF2@deersoft.com>;
+    from craig@deersoft.com on Thu, Aug 08, 2002 at 01:54:07PM -0700
+X-MY-PGP-Fingerprint: 4D42 5220 2EB4 21F4 39C4 BDDA C948 F15C DE2E F798
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Thu, 8 Aug 2002 15:26:38 -0700
+Date: Thu, 8 Aug 2002 15:26:38 -0700
+
+> > To reiterate, the idea behind Razor is to turn 1 bit of 
+> > information from
+> > the user (this message is or isn't spam) into a comprehensive 
+> > filteration
+> > system. Everything from computation of signatures for content
+> > identification, to assignment of confidence and trust, distribution of
+> > signatures, etc is done automagically.
+> 
+> Well, a little more than one bit -- you have to transmit the 
+> signature, plus now the entire message body.  Plus your ID.  
+> Plus the rights to all intellectual property contained in any 
+> email message you submit (I guess technically there are no bits 
+> in the rights assignment)
+
+Perhaps a feature can be added to razor-report, so that it checks whether a
+message is spam before it submits it.  If it is spam, then don't send the
+body, 4 signatures, etc, just up the "rating" for that individual spam.
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

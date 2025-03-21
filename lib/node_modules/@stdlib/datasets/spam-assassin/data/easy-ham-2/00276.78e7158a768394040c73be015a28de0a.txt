@@ -1,0 +1,69 @@
+From ilug-admin@linux.ie  Tue Aug  6 15:04:32 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 23E5544126
+	for <jm@localhost>; Tue,  6 Aug 2002 10:04:22 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 15:04:22 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g76E4Rk01519 for
+    <jm-ilug@jmason.org>; Tue, 6 Aug 2002 15:04:27 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA01955; Tue, 6 Aug 2002 15:00:31 +0100
+Received: from corvil.com (k100-159.bas1.dbn.dublin.eircom.net
+    [159.134.100.159]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id PAA01916
+    for <ilug@linux.ie>; Tue, 6 Aug 2002 15:00:24 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host k100-159.bas1.dbn.dublin.eircom.net
+    [159.134.100.159] claimed to be corvil.com
+Received: from corvil.com (pixelbeat.local.corvil.com [172.18.1.170]) by
+    corvil.com (8.12.5/8.12.5) with ESMTP id g76E0NRx047014; Tue,
+    6 Aug 2002 15:00:24 +0100 (IST) (envelope-from padraig.brady@corvil.com)
+Message-Id: <3D4FD670.8070202@corvil.com>
+Date: Tue, 06 Aug 2002 15:00:16 +0100
+From: Padraig Brady <padraig.brady@corvil.com>
+Organization: Corvil Networks
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:0.9.9) Gecko/20020408
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: bryan roycroft <bryanroycroft@yahoo.com.au>
+Cc: ilug@linux.ie
+Subject: Re: [ILUG] ffs
+References: <20020806131941.89321.qmail@web21103.mail.yahoo.com>
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 8bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+bryan roycroft wrote:
+> has anyone got information on enabling ffs support in
+> the kernel, i was looking around, and information on
+> the subject seems to be sparse. 
+
+Is this to mount an OS-X partition?
+The following would be of interest in that case:
+http://marc.theaimsgroup.com/?l=linux-kernel&m=101198676827824&w=2
+
+summary is you should be able to mount FFS readonly,
+and the config item probably UFS:
+
+[padraig@pixelbeat ~]$ grep UFS /boot/config-2.4.18-3
+CONFIG_UFS_FS=m
+# CONFIG_UFS_FS_WRITE is not set
+
+So `modprobe ufs` should work on a standard RH7.3 install?
+
+Pádraig.
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

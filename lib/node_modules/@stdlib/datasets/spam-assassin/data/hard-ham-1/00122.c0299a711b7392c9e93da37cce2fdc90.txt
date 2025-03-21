@@ -1,0 +1,488 @@
+Return-Path: <Online#3.20510.39-CTjLgE3RyAhaFsRR.1.b@newsletter.online.com>
+Received: from acmta4.cnet.com (abv-sfo1-acmta4.cnet.com [206.16.1.163])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6INV5J29523
+	for <qqqqqqqqqq-cnet-newsletters@spamassassin.taint.org>; Fri, 19 Jul 2002 00:31:06 +0100
+Received: from abv-sfo1-ac-agent6 (206.16.0.241) by acmta4.cnet.com (PowerMTA(TM) v1.5); Thu, 18 Jul 2002 16:25:38 -0700 (envelope-from <Online#3.20510.39-CTjLgE3RyAhaFsRR.1.b@newsletter.online.com>)
+Message-ID: <1855693.1027035060165.JavaMail.root@abv-sfo1-ac-agent6>
+Date: Thu, 18 Jul 2002 16:31:00 -0700 (PDT)
+From: CNET Shopper Newsletter Alerts <Online#3.20510.39-CTjLgE3RyAhaFsRR.1@newsletter.online.com>
+To: qqqqqqqqqq-cnet-newsletters@spamassassin.taint.org
+Subject: Great deals on the Summer's hottest MP3 players (CNET SHOPPER)
+Mime-Version: 1.0
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+X-Mailer: Accucast (http://www.accucast.com)
+X-Mailer-Version: 2.8.4-2
+
+
+<html>
+<head>
+	<title>Shopper Newsletter: Alerts</title>
+
+</head>
+<body bgcolor="#EEEEEE" alink="#0000FF" vlink="#0000FF">
+<center>
+<A href="top"></A><!-- header -->
+	<table border=0 cellpadding=0 cellspacing=0 width=612 bgcolor="#ffffff">
+	<tr valign=top>
+		<td width=442 colspan=5>
+			<img src="http://www.cnet.com/i/sh/nl/442_shopperALERT.gif" width="442" height="60" border="0" alt="CNET Shopper Newsletter Alerts"><br>
+				<table width=442 cellpadding=0 cellspacing=0 border=0 bgcolor="#CCCCCC">
+					<tr>
+						<td bgcolor="#999999" colspan=1>
+							<img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"><br>
+						</td>
+						<td bgcolor="#666666" colspan=1>
+							<img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"><br>
+						</td>
+						<td bgcolor="#666666" colspan=2>
+							<img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"><br>
+						</td>
+					</tr>
+					<tr>
+						<td bgcolor="#999999" width=1 rowspan=2>
+							<img src="http://home.cnet.com/b.gif" width="1" height="10" border="0"><br>
+						</td>
+						<td bgcolor="#666666" width=1 rowspan=2>
+							<img src="http://home.cnet.com/b.gif" width="1" height="10" border="0"><br>
+						</td>
+						<td width=9 rowspan=2>
+							<img src="http://home.cnet.com/b.gif" width="1" height="10" border="0"><br>
+						</td>
+						<td  width=430>
+							<img src="http://home.cnet.com/b.gif" width="1" height="10" border="0"><br>
+						</td>				
+					</tr>
+					<tr>
+						<td bgcolor="#666666">
+							<img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"><br>
+						</td>
+					</tr>
+      			</table>	
+<!-- Right column -->
+
+		</td>
+		<td width=160 rowspan=2>
+			<img src="http://www.cnet.com/i/dp/dd_b.gif" width="160" height="18" border="0"><br>
+<!-- advertisement label gif -->
+				<table cellpadding=0 cellspacing=0 border=0 width=160>
+					<tr>
+						<td align=middle bgcolor="#eeeeee">
+
+						</td>
+					</tr>
+				</table>
+<!-- /advertisement label gif -->
+
+<!-- insert ad here -->
+
+<div align="center"><img src="http://i.i.com.com/cnwk.1d/Ads/common/advertisement.gif" width="120" height="10" border="0"></br>
+
+<a href="http://clickthru.online.com/Click?q=4e-0Y95InZ3aFUoY0vIKlsTn8N_JjiR" target="new">   
+
+<img src="http://www.techrepublic.com/images/ads/Toshiba.sky.e310_399_160x600.gif" width="160" height="600" border="0">
+
+</a></div>
+
+<!-- /insert ad here -->
+<br>
+
+
+
+<!-- Most Popular -->
+
+
+
+
+				
+
+<!-- /Most Popular -->
+
+
+
+
+
+				
+<!-- End Vertical Brick-->
+					<td width=9 rowspan=2><img src="http://www.cnet.com/i/nl/dd_c.gif" width=9 height=60><br>
+
+						<table width=9 cellpadding=0 cellspacing=0 border=0>
+							<tr>
+								<td bgcolor="#666666"><img src="http://www.cnet.com/b.gif" width=9 height=1></td>
+							</tr>
+							<tr>
+								<td bgcolor="#CCCCCC"><img src="http://www.cnet.com/b.gif" width=1 height=10></td>
+							</tr>
+							<tr>
+								<td bgcolor="#666666"><img src="http://www.cnet.com/b.gif" width=9 height=1></td>
+							</tr>
+						</table>
+					</td>
+					<td width=1 bgcolor="#666666" rowspan=2>
+						<table width=1 cellpadding=0 cellspacing=0 border=0>
+							<tr>
+								<td bgcolor="#eeeeee"><img src="http://www.cnet.com/b.gif" width=1 height=60></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr valign=top>
+					<td width=1 bgcolor="#999999"><img src="http://www.cnet.com/b.gif" width=1 height=1></td>
+					<td width=1 bgcolor="#666666"><img src="http://www.cnet.com/b.gif" width=1 height=1></td>
+					<td width=9 bgcolor="#CCCCCC"><img src="http://www.cnet.com/b.gif" width=9 height=1></td>
+					<td width=1 bgcolor="#666666"><img src="http://www.cnet.com/b.gif" width=1 height=1></td>
+					<td width=410 bgcolor="#ffffff">
+
+						
+
+						
+
+						<table cellpadding=0 cellspacing=0 border=0 width=430 bgcolor="#EEEEEE">
+							<tr valign=top>
+								<td width=10></td>
+<!-- Date -->
+								<td>
+									
+			
+									<table cellpadding=0 cellspacing=0 border=0 width=400>
+										<tr>
+											<td><img src="http://www.cnet.com/b.gif" width=1 height=6></td>
+										</tr>
+										<tr valign=top>
+											<td width=10><img src="http://www.cnet.com/b.gif" width=10 height=1></td>
+											<td align=right width=400><img src="http://www.cnet.com/b.gif"><br>
+											<font face="arial, helvetica" size="-2">July 18, 2002</font></td>
+										
+											
+										<tr valign=top>
+<!--C4S-->									<td><A href="#c4s"><img src="http://www.cnet.com/i/nl/arr.gif" width=10 height=12														border=0></A></td>
+											<td><font face="arial, helvetica" size="-1"><A href="#c4s"><b>From Computers4Sure.com</b></A><BR> iRiver's versatile SlimX just $149 </font></td>
+										</tr>
+										<tr>
+											<td><img src="http://www.cnet.com/b.gif" width=1 height=4></td>
+										</tr>
+<!--buy-->							<td><img src="http://www.cnet.com/b.gif" width=1 height=4></td>
+										</tr>
+										<tr valign=top>
+											<td><A href="#CDW"><img src="http://www.cnet.com/i/nl/arr.gif" width=10 height=12 border=0></A></td>
+											<td><font face="arial, helvetica" size="-1"><A href="#CDW"><b>From CDW</b></A> <BR>Apple's groundbreaking iPod just $399</font></td>
+										</tr>
+										<tr>
+											<td><img src="http://www.cnet.com/b.gif" width=1 height=6></td>
+										</tr>
+								</table>
+					
+								<table cellpadding=0 cellspacing=0 border=0 width=410>
+									<tr>
+										<td><img src="http://www.cnet.com/b.gif" width=1 height=8></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+					<table cellpadding=0 cellspacing=0 border=0 width=430>
+						<tr>
+							<td bgcolor="#999999"><img src="http://www.cnet.com/b.gif" width=1 height=1></td>
+						</tr>
+					</table>
+<br>
+<div style="MARGIN-LEFT: 10px; MARGIN-RIGHT: 10px">
+
+
+
+<!-- C4S TEMPLATE -->
+<a name="c4s">
+					<table cellpadding="0" cellspacing="0" border=0 width="410">
+						<TBODY>
+							<tr>
+								<td valign=bottom><font face="arial, helvetica" size="3"><b>Computers4Sure</b></font></td>
+								<td>
+									<P align=right>	
+										<img style="border: #CCCCCC solid 1px;" src="http://shopper.cnet.com/Images/Resellers/Premier/235579.gif""></P>
+								</td>
+							</tr>
+							<tr>
+								<td bgcolor="#eeeeee"> <img src="http://www.cnet.com/i/nl/rule.gif" width=205 height=8></td>
+								<td bgcolor="#eeeeee"> <img src="http://www.cnet.com/i/nl/rule.gif" width=205 height=8></td>
+							</tr>
+						</TBODY>
+					</table>
+
+						
+
+<!-- Intro Blurb -->
+						<table cellpadding=0 cellspacing=0 border=0 width=400 align=left>
+							<tr>
+								<td width="410" colspan="4">
+									<font face="arial, helvetica" size="-1" >
+								
+								</td>
+							</tr>
+							<tr>
+								<td width="400" colspan="4"><img src="http://www.cnet.com/b.gif" width=1 height=8></td>
+							</tr>
+						
+<!-- Product 1 -->
+
+							<tr valign="top">
+								<td width="120">
+									<a href="http://clickthru.online.com/Click?q=64-UBOhIuLecuWMdWyNGWF8w6YrPhnR" ><img style="border: #CCCCCC solid 1px;" src="http://shopper.cnet.com/i/ce/ps/120/8591280_120_1.gif"></a></td>
+
+								
+								<td width="10"><img src="http://www.cnet.com/b.gif" width=10 height=1></td>
+								<td width=270 colspan="2">
+								<font face="arial, helvetica" size="-1" >
+								<a href="http://clickthru.online.com/Click?q=79-rsQHIEBe5mGccyfmFz_e0CvgparR" ><B>iRiver SlimX iMP-350</b></a> <BR>
+								&#149; Ultra-slim, 16.7mm in width<BR>
+								&#149; Supports MP3/WMA/ASF/CD formats<BR>
+								&#149; Rechargeable batteries included<BR>
+								&nbsp;&nbsp;<B>Just <font color="#CC0000">$149</font></B>
+								</td>
+							</tr>
+							<tr>
+								<td width="400" colspan="4"><img src="http://www.cnet.com/b.gif" width=1 height=12></td>
+							</tr>						
+<!-- Product 2 -->
+							<tr valign=top>
+								<td width=120>
+									<a href="http://clickthru.online.com/Click?q=8e-Ve-cQCnqnXT-diaPDuYWD0V_WyRR" ><img style="border: #CCCCCC solid 1px;" src="http://shopper.cnet.com/i/ce/ps/120/8530672_120_1.gif"></a></td>
+
+								<td width="10"><img src="http://www.cnet.com/b.gif" width=10 height=1></td>
+								
+								<td width=270 colspan="2">
+								<font face="arial, helvetica" size="-1" >
+								<a href="http://clickthru.online.com/Click?q=a3-qXf6QYU2RSEhSe8fQffN5r5ls4FR" ><B>Sonicblue Rio Riot</b></a><BR>
+								&#149; Stores over 400 complete albums <BR>
+								&#149; Built-in FM tuner/custom presets<BR>
+								&#149; Extra-large, backlit LCD <BR>
+								&nbsp;&nbsp;<B>Just <font color="#CC0000">$300</font></B>
+								</td>
+							</tr>
+							<tr>
+								<td width="400" colspan="4"><img src="http://www.cnet.com/b.gif" width=1 height=12></td>
+							</tr>
+	
+<!-- Product 3 -->
+							<tr valign=top>
+									<td width=120>
+									<a href="http://clickthru.online.com/Click?q=b8-smr2QQUsXVklH5Dlq9S_p8qkEi9R" ><img style="border: #CCCCCC solid 1px;" src="http://shopper.cnet.com/i/ce/ps/120/5603188_120_1.gif" width=120 height=90></a></td>
+
+								<td width="10"><img src="http://www.cnet.com/b.gif" width=10 height=1></td>
+								
+								<td width=270 colspan="2">
+								<font face="arial, helvetica" size="-1" >
+								<a href="http://clickthru.online.com/Click?q=ce-Sd0CQMsHsEpBkSn3ufz1Jey2fPRR" ><B>TDK Mojo CD-MP3</b></a><BR>
+								&#149; Play up to 10 hours of music<BR>
+								&#149; 8-minute MP3 skip protection<BR>
+								&#149; Supports MP3, Audio CD<BR>
+							    &nbsp;&nbsp;<B>Just <font color="#CC0000">$125</font></B>
+								</td>
+							</tr>
+							<tr>
+								<td width="400" colspan="4"><img src="http://www.cnet.com/b.gif" width=1 height=12></td>
+							</tr>
+							<!-- Product 4 -->
+							<tr valign=top>
+								<td width=120>
+									<a href="http://clickthru.online.com/Click?q=e3-ze2WQkVDQ-1FbL2-JM2mPpt29eFR" ><img style="border: #CCCCCC solid 1px;" src="http://shopper.cnet.com/i/ce/ps/120/2522367_120_1.gif"></a></td>
+
+								<td width="10"><img src="http://www.cnet.com/b.gif" width=10 height=1></td>
+								
+								<td width=270 colspan="2">
+								<font face="arial, helvetica" size="-1" >
+								<a href="http://clickthru.online.com/Click?q=f8-57BSQfscKTc7TWDpiaRL6DCwol9R" ><B>Sonicblue Rio 600 (32MB)</b></a><BR>
+								&#149; Customize your music!<BR>
+								&#149; 32MB, supports MP3 and WMA<BR>
+								&#149; USB, PC/Mac compatible<BR>
+								&nbsp;&nbsp;<B>Just <font color="#CC0000">$97</font></B>
+								</td>
+							</tr>
+							<tr>
+								<td width="400" colspan="4"><img src="http://www.cnet.com/b.gif" width=1 height=12></td>
+							</tr>
+
+						</table>	
+		<p>	<BR CLEAR=ALL>	
+
+
+<!-- center ad -->
+<P>
+		
+<P>
+<!-- /center ad -->
+
+
+<!-- CDW TEMPLATE -->
+<a name="CDW">
+					<table cellpadding="0" cellspacing="0" border=0 width="410">
+						<TBODY>
+							<tr>
+								<td valign=bottom><font face="arial, helvetica" size="3"><b>CDW</b></font></td>
+								<td>
+									<P align=right>	
+										<img style="border: #CCCCCC solid 1px;" src="http://shopper.cnet.com/Images/Resellers/Premier/235003.gif""></P>
+								</td>
+							</tr>
+							<tr>
+								<td bgcolor="#eeeeee"> <img src="http://www.cnet.com/i/nl/rule.gif" width=205 height=8></td>
+								<td bgcolor="#eeeeee"> <img src="http://www.cnet.com/i/nl/rule.gif" width=205 height=8></td>
+							</tr>
+						</TBODY>
+					</table>
+
+						
+
+<!-- Intro Blurb -->
+						<table cellpadding=0 cellspacing=0 border=0 width=400 align=left>
+							<tr>
+								<td width="410" colspan="4">
+									<font face="arial, helvetica" size="-1" >
+								
+								</td>
+							</tr>
+							<tr>
+								<td width="400" colspan="4"><img src="http://www.cnet.com/b.gif" width=1 height=8></td>
+							</tr>
+						
+<!-- Product 1 -->
+
+							<tr valign="top">
+								<td width="120">
+									<a href="http://clickthru.online.com/Click?q=0d-3aGuIbr1Rb13R2hNv0T0QkY6b7uR" ><img style="border: #CCCCCC solid 1px;" src="http://shopper.cnet.com/i/ce/ps/120/7654493_120_1.gif"></a></td>
+
+								
+								<td width="10"><img src="http://www.cnet.com/b.gif" width=10 height=1></td>
+								<td width=270 colspan="2">
+								<font face="arial, helvetica" size="-1" >
+								<a href="http://clickthru.online.com/Click?q=22-xNrrIrd3QQ97VXtuo4I9yc99NcsR" ><B>Apple iPod</b></a> <BR>
+								&#149; 5 Gig capacity<BR>
+								&#149; 3x optical/2.5 digital zoom<BR>
+								&#149; 6.5 oz<BR>
+								&nbsp;&nbsp;<B>Just <font color="#CC0000">$299</font></B>
+								</td>
+							</tr>
+							<tr>
+								<td width="400" colspan="4"><img src="http://www.cnet.com/b.gif" width=1 height=12></td>
+							</tr>						
+<!-- Product 2 -->
+							<tr valign=top>
+								<td width=120>
+									<a href="http://clickthru.online.com/Click?q=37-EMLQIqzTGPN3Ps0Q93KjZ6eJcnZR" ><img style="border: #CCCCCC solid 1px;" src="http://shopper.cnet.com/i/ce/ps/120/6232194_120_1.gif"></a></td>
+
+								<td width="10"><img src="http://www.cnet.com/b.gif" width=10 height=1></td>
+								
+								<td width=270 colspan="2">
+								<font face="arial, helvetica" size="-1" >	
+								<a href="http://clickthru.online.com/Click?q=4c-jxi2IZpziJtPk9uAu7hgvo2AKenR" ><B>Sonicblue Rio One (32 MB)</b></a><BR>
+								&#149; Affordable MP3 player!<BR>
+								&#149; 32MB, USB, Mac/PC comp.<BR>
+								&#149; Upgradeable w/flash memory<BR>
+								&nbsp;&nbsp;<B>Just <font color="#CC0000">$100</font> </B>
+								</td>
+							</tr>
+							<tr>
+								<td width="400" colspan="4"><img src="http://www.cnet.com/b.gif" width=1 height=12></td>
+							</tr>
+	<!-- Product 3 -->
+							<tr valign=top>
+								<td width=120>
+									<a href="http://clickthru.online.com/Click?q=61-x9oAIoL8tQU5bZ34JYndFK-AWlrR" ><img style="border: #CCCCCC solid 1px;" src="http://shopper.cnet.com/i/ce/ps/120/7103844_120_1.gif"></a></td>
+
+								<td width="10"><img src="http://www.cnet.com/b.gif" width=10 height=1></td>
+								
+								<td width=270 colspan="2">
+								<font face="arial, helvetica" size="-1" >	
+								<a href="http://clickthru.online.com/Click?q=76-vJf7InBWAWlz7U91okYP2r70U6iR" ><B>Imation RipGo</b></a><BR>
+								&#149; Palm-sized CD-R Drive<BR>
+								&#149; Plays CD, WMA, MP3, D-Audio<BR>
+								&#149; 6 hours WMA, 3 hours MP3<BR>
+								&nbsp;&nbsp;<B>Just <font color="#CC0000">$199</font> </B>
+								</td>
+							</tr>
+							<tr>
+								<td width="400" colspan="4"><img src="http://www.cnet.com/b.gif" width=1 height=12></td>
+							</tr>
+							</tr>
+
+						</table>	
+		<p>	<BR CLEAR=ALL>		 
+
+
+<BR>
+<BR>
+
+<p>
+</p></font></FONT></FONT></FONT></FONT></DIV></FONT></FONT></FONT></TD></TR></TBODY></TABLE>
+
+<!-- ### footer ### -->
+<table width="612" bgcolor="#666666" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#CCCCCC"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="599" bgcolor="#cccccc"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#666666" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td width="1" bgcolor="#999999"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="1" bgcolor="#666666"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="9" bgcolor="#CCCCCC"><img src="http://www.cnet.com/b.gif" width="9" height="1"></td>
+<td width="1" bgcolor="#666666"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="599" bgcolor="#EEEEEE"><img src="http://www.cnet.com/b.gif" width="1" height="4"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#EEEEEE" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td width="1" bgcolor="#999999"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="1" bgcolor="#666666"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="9" bgcolor="#CCCCCC"><img src="http://www.cnet.com/b.gif" width="9" height="1"></td>
+<td width="1" bgcolor="#666666"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="12"><img src="http://www.cnet.com/b.gif" width="12" height="1"></td>
+<td width="575">
+<a href='http://nl.com.com/servlet/url_login?email=qqqqqqqqqq-cnet-newsletters@spamassassin.taint.org&brand=cnet'><img src="http://a.r.tv.com/cnet.1d/i/nl/ft.gif" width="375" height="18" border="0" alt="Sign up for more free newsletters from CNET!"></a><br>
+
+
+<!-- subscription management -->
+
+<font face="ms sans serif, geneva" size="-2">
+The e-mail address for your subscription is&nbsp;qqqqqqqqqq-cnet-newsletters@spamassassin.taint.org<p>
+
+<A NOTRACK HREF='http://clickthru.online.com/Click?q=8c-Ldpar0JwxMtAtkzzzF8JY_nhlEHPLLRRR'>Unsubscribe</A>&nbsp;|
+&nbsp;<a href='http://nl.com.com/servlet/url_login?email=qqqqqqqqqq-cnet-newsletters@spamassassin.taint.org&brand=cnet'>Manage My Subscriptions</a>
+&nbsp;|&nbsp;<a href="http://clickthru.online.com/Click?q=a1-AfVtQ-ZJdj3zMFuGkeHaXeD3gBcR" >FAQ</A>&nbsp;|
+&nbsp;<a href="http://clickthru.online.com/Click?q=b6-llkUQCKVBmP_jF2T_PUCch20LgRR" >Advertise</A><br></font>
+
+<!-- /subscription management-->
+
+</font><img src="http://www.zdnet.com/b.gif" width="1" height="8"></td>
+<td width="12"><img src="http://www.cnet.com/b.gif" width="12" height="1"></td>
+<td width="1" bgcolor="#666666"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#666666" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td width="1" bgcolor="#999999"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="9" bgcolor="#CCCCCC"><img src="http://www.cnet.com/b.gif" width="9" height="1"></td>
+<td width="601"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#CCCCCC" cellpadding="0" cellspacing="0" border="0">
+<tr height="18">
+<td width="1" bgcolor="#999999"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="1" bgcolor="#666666"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="9"><img src="http://www.cnet.com/b.gif" width="9" height="1"></td>
+<td width="563" nowrap><font face="arial, helvetica" size="-1">
+</font></td>
+<td width="1" bgcolor="#666666"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" cellpadding="0" cellspacing="0" border="0">
+<tr><td bgcolor="#666666"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+<tr><td height="25"><font face="ms sans serif, geneva" size="-2"><table width=100% border=0 cellspacing=2 cellpadding=1> <tr valign=bottom> <td width=75% height=31> <p></font> <br><b><font face=Arial, Helvetica, sans-serif size=2>    Copyright 2002 CNET Networks, Inc. All rights reserved.    </font></b> </p></td><td height=31 valign=top> <div align=right> <img src="http://gserv-cnet.zdnet.com/clear/outbound.gif?APPID=2&EMID=25136487&NL=e443&ISSUE=2002-07-18" height=1 width=1>    </div></td></tr><tr>  <td colspan=2><font face=Arial, Helvetica, sans-serif size=2>    </font></td></tr></table></a>.</font></td></tr>
+</table>
+<!-- ### /footer ### -->
+
+</body>
+</html>
+
+<IMG HEIGHT=1 WIDTH=1 SRC="http://clickthru.online.com/Click?q=cc-h4hQ-aOb9aNXRIMN7luymgPXosRR">
+

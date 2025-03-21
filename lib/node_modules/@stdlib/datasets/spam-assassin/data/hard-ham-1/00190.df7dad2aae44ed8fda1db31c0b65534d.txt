@@ -1,0 +1,65 @@
+From pudge@perl.org  Mon Aug 19 11:29:50 2002
+Return-Path: <pudge@perl.org>
+Delivered-To: zzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6892244206
+	for <zzz@localhost>; Mon, 19 Aug 2002 06:17:09 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzz@localhost (single-drop); Mon, 19 Aug 2002 11:17:09 +0100 (IST)
+Received: from cpu59.osdn.com (slashdot.org [64.28.67.73] (may be forged))
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7I20Z621519 for
+    <zzz-use-perl@spamassassin.taint.org>; Sun, 18 Aug 2002 03:00:36 +0100
+Received: from [10.2.181.14] (helo=perl.org) by cpu59.osdn.com with smtp
+    (Exim 3.35 #1 (Debian)) id 17gFLo-0005BD-01 for <zzz-use-perl@spamassassin.taint.org>;
+    Sat, 17 Aug 2002 21:59:32 -0400
+Date: Sun, 18 Aug 2002 02:00:29 +0000
+From: pudge@perl.org
+Subject: [use Perl] Stories for 2002-08-18
+To: zzz-use-perl@spamassassin.taint.org
+Precedence: list
+X-Bulkmail: 2.051
+Message-Id: <E17gFLo-0005BD-01@cpu59.osdn.com>
+
+use Perl Daily Newsletter
+
+In this issue:
+    * TPJ Ceases Publication
+
++--------------------------------------------------------------------+
+| TPJ Ceases Publication                                             |
+|   posted by hfb on Friday August 16, @21:17 (news)                 |
+|   http://use.perl.org/article.pl?sid=02/08/17/0118230              |
++--------------------------------------------------------------------+
+
+[0]TorgoX writes "Bad news, folks: [1]SysAdmin is stopping publishing The
+Perl Journal. I just heard from the SysAdmin editors. Ad revenues are
+down so much that all tech mags are apparently in dire straits, and
+SysAdmin has basically been taking a big loss on TPJ for a while now; and
+the money people say that it just can't keep doing that. So the issue
+that's in the mail now is apparently [2]the last."
+
+Discuss this story at:
+    http://use.perl.org/comments.pl?sid=02/08/17/0118230
+
+Links:
+    0. http://%7Bsburke%7D%20%7Bat%7D%20%7Bcpan.org%7D
+    1. http://www.sysadminmag.com/
+    2. http://www.sysadminmag.com/tpj/images/covers/issue25.jpg
+
+
+
+Copyright 1997-2002 pudge.  All rights reserved.
+
+
+======================================================================
+
+You have received this message because you subscribed to it
+on use Perl.  To stop receiving this and other
+messages from use Perl, or to add more messages
+or change your preferences, please go to your user page.
+
+	http://use.perl.org/my/messages/
+
+You can log in and change your preferences from there.
+

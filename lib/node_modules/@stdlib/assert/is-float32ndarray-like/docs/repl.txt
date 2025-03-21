@@ -1,0 +1,42 @@
+
+{{alias}}( value )
+    Tests if a value is an ndarray-like object containing single-precision
+    floating-point numbers.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a value is an ndarray-like object containing
+        single-precision floating-point numbers.
+
+    Examples
+    --------
+    > var M = {};
+    > M.data = new {{alias:@stdlib/array/float32}}( [ 0, 0, 0, 0 ] );
+    > M.ndims = 2;
+    > M.shape = [ 2, 2 ];
+    > M.strides = [ 2, 1 ];
+    > M.offset = 0;
+    > M.order = 'row-major';
+    > M.dtype = 'float32';
+    > M.length = 4;
+    > M.flags = {};
+    > M.get = function get( i, j ) {};
+    > M.set = function set( i, j ) {};
+    > var bool = {{alias}}( M )
+    true
+    > bool = {{alias}}( [ 1, 2, 3, 4 ] )
+    false
+    > bool = {{alias}}( 3.14 )
+    false
+    > bool = {{alias}}( {} )
+    false
+
+    See Also
+    --------
+

@@ -1,0 +1,77 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Mon Aug 26 16:57:11 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B491743F99
+	for <jm@localhost>; Mon, 26 Aug 2002 11:57:04 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 16:57:04 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7QFopZ31540 for <jm-sa@jmason.org>; Mon, 26 Aug 2002 16:50:51 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17jM71-0006j9-00; Mon,
+    26 Aug 2002 08:49:07 -0700
+Received: from adsl-209-204-188-196.sonic.net ([209.204.188.196]
+    helo=sidebone.sidney.com) by usw-sf-list1.sourceforge.net with esmtp
+    (Cipher TLSv1:DES-CBC3-SHA:168) (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17jM6Y-0003PI-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Mon, 26 Aug 2002 08:48:38 -0700
+Received: from siddhi (siddhi.sidney.com [192.168.93.20]) by
+    sidebone.sidney.com (8.12.5/8.12.5) with SMTP id g7QFmVCp013874 for
+    <spamassassin-talk@lists.sourceforge.net>; Mon, 26 Aug 2002 08:48:31 -0700
+Message-Id: <009901c24d18$0777a2b0$145da8c0@sidney.com>
+From: "Sidney Markowitz" <sidney@sidney.com>
+To: <spamassassin-talk@example.sourceforge.net>
+References: <Pine.LNX.4.44.0208251909050.24834-100000@aztec.zanshin.com>
+    <yf2it1ykuf1.fsf@proton.pathname.com>
+Subject: Re: [SAtalk] 2.40 RELEASE: oops -- newer freqs.
+MIME-Version: 1.0
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+X-Scanned-BY: MIMEDefang 2.19 (www . roaringpenguin . com / mimedefang)
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Mon, 26 Aug 2002 08:48:31 -0700
+Date: Mon, 26 Aug 2002 08:48:31 -0700
+
+Daniel Quinlan <quinlan@pathname.com> wrote:
+> Exactly, except that I think you may be too optimistic
+> about the reporting, the timeframe, and the accuracy.
+
+That's another argument for a "HLL" (Habeas Licensee List) which would be less
+inclusive than a test for the mark of for HIL, but more timely and accurate. When an
+ip address is on the HLL it could get a huge negative score, bigger than the Habeas
+mark alone.
+
+ -- sidney
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

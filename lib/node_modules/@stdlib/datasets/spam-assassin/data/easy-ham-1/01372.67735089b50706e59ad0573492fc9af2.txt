@@ -1,0 +1,74 @@
+From spamassassin-devel-admin@lists.sourceforge.net  Thu Aug 29 11:07:41 2002
+Return-Path: <spamassassin-devel-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0872947C6B
+	for <jm@localhost>; Thu, 29 Aug 2002 06:05:54 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:05:54 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7SNa8Z15513 for <jm@jmason.org>; Thu, 29 Aug 2002 00:36:09 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17kCL2-0001Un-00; Wed,
+    28 Aug 2002 16:35:04 -0700
+Received: from dogma.slashnull.org ([212.17.35.15]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17kCKk-0008J2-00 for <SpamAssassin-devel@lists.sourceforge.net>;
+    Wed, 28 Aug 2002 16:34:46 -0700
+Received: (from apache@localhost) by dogma.slashnull.org (8.11.6/8.11.6)
+    id g7SNYIr15334; Thu, 29 Aug 2002 00:34:18 +0100
+X-Authentication-Warning: dogma.slashnull.org: apache set sender to
+    jmmail@jmason.org using -f
+Received: from 194.125.173.10 (SquirrelMail authenticated user yyyymail) by
+    jmason.org with HTTP; Thu, 29 Aug 2002 00:34:17 +0100 (IST)
+Message-Id: <32978.194.125.173.10.1030577657.squirrel@spamassassin.taint.org>
+Subject: Re: [SAdev] 2.40: ready for release?
+From: "Justin Mason" <yyyy@spamassassin.taint.org>
+To: felicity@kluge.net
+In-Reply-To: <20020828230545.GB6877@kluge.net>
+References: <20020828230545.GB6877@kluge.net>
+Cc: yyyy@spamassassin.taint.org, SpamAssassin-devel@example.sourceforge.net
+X-Mailer: SquirrelMail (version 1.0.6)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+Sender: spamassassin-devel-admin@example.sourceforge.net
+Errors-To: spamassassin-devel-admin@example.sourceforge.net
+X-Beenthere: spamassassin-devel@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-devel-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-devel@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Id: SpamAssassin Developers <spamassassin-devel.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-devel>
+X-Original-Date: Thu, 29 Aug 2002 00:34:17 +0100 (IST)
+Date: Thu, 29 Aug 2002 00:34:17 +0100 (IST)
+
+
+> t/db_based_whitelist.Use of bare << to mean <<"" is deprecated at
+> ../lib/Mail/SpamAssassin/HTML.pm line 1. Use of bare << to mean <<"" is
+> deprecated at ../lib/Mail/SpamAssassin/HTML.pm line 6. Unquoted string
+
+hmm, could you check your installation?  those chars aren't in my
+version at all.
+
+--j.
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-devel mailing list
+Spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+

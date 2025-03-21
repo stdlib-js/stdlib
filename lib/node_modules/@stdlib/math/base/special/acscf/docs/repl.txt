@@ -1,0 +1,30 @@
+
+{{alias}}( x )
+    Computes the arccosecant of a single-precision floating-point number.
+
+    If `|x| < 1`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    y: number
+        Arccosecant (in radians).
+
+    Examples
+    --------
+    > var y = {{alias}}( 1.0 )
+    ~1.57
+    > y = {{alias}}( 3.141592653589793 )
+    ~0.32
+    > y = {{alias}}( -3.141592653589793 )
+    ~-0.32
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+

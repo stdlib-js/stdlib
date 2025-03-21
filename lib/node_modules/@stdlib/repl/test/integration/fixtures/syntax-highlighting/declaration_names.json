@@ -1,0 +1,7 @@
+{
+  "expression": "let a; function b(x) => 4; class d",
+  "expected": "let \u001b[31ma\u001b[0m; function \u001b[31mb\u001b[0m(\u001b[31mx\u001b[0m) => 4; class \u001b[31md\u001b[0m",
+  "theme": {
+    "name": "red"
+  }
+}

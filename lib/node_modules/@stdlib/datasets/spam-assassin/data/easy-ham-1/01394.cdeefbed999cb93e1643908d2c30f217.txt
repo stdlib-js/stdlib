@@ -1,0 +1,39 @@
+From craig@deersoft.com  Mon Sep  2 12:35:35 2002
+Return-Path: <craig@deersoft.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E03D543F99
+	for <jm@localhost>; Mon,  2 Sep 2002 07:35:30 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 02 Sep 2002 12:35:30 +0100 (IST)
+Received: from hall.mail.mindspring.net (hall.mail.mindspring.net
+    [207.69.200.60]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7VKGZZ13334 for <jm@jmason.org>; Sat, 31 Aug 2002 21:16:35 +0100
+Received: from user-11fad9j.dsl.mindspring.com ([66.245.53.51]
+    helo=belphegore.hughes-family.org) by hall.mail.mindspring.net with esmtp
+    (Exim 3.33 #1) id 17lEfo-0002DR-00; Sat, 31 Aug 2002 16:16:48 -0400
+Received: from balam.hughes-family.org (balam.hughes-family.org
+    [10.0.240.3]) by belphegore.hughes-family.org (Postfix) with ESMTP id
+    8E71AA4AD3; Sat, 31 Aug 2002 13:16:47 -0700 (PDT)
+Date: Sat, 31 Aug 2002 13:16:52 -0700
+Subject: Re: [SAdev] results of scorer evaluation
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+MIME-Version: 1.0 (Apple Message framework v482)
+Cc: spamassassin-devel@example.sourceforge.net
+To: "Justin Mason" <yyyy@spamassassin.taint.org>
+From: "Craig R.Hughes" <craig@deersoft.com>
+In-Reply-To: <32836.194.125.148.31.1030699168.squirrel@spamassassin.taint.org>
+Message-Id: <96B7CA2C-BD1E-11D6-92D9-00039396ECF2@deersoft.com>
+Content-Transfer-Encoding: 7bit
+X-Mailer: Apple Mail (2.482)
+
+Nanananana
+
+C
+
+On Friday, August 30, 2002, at 02:19  AM, Justin Mason wrote:
+
+> Looks like my algos aren't flexible enough, and Craig wins ;)
+
+

@@ -1,0 +1,18 @@
+
+{{alias}}()
+    Returns a list of US state capitals in alphabetical order according to state
+    name.
+
+    Returns
+    -------
+    out: Array<string>
+        List of US state capitals.
+
+    Examples
+    --------
+    > var list = {{alias}}()
+    [ 'Montgomery', 'Juneau', 'Phoenix', ... ]
+
+    See Also
+    --------
+

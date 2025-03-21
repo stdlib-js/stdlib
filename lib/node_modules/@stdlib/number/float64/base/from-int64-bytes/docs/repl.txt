@@ -1,0 +1,31 @@
+
+{{alias}}( bytes, stride, offset )
+    Converts a signed 64-bit integer byte array to a double-precision floating-
+    point number.
+
+    The function assumes host byte order (endianness).
+
+    Parameters
+    ----------
+    bytes: Array<number>|TypedArray|Object
+        Byte array.
+
+    stride: integer
+        Index stride.
+
+    offset: integer
+        Index offset.
+
+    Returns
+    -------
+    out: number
+        Number.
+
+    Examples
+    --------
+    > var bytes = new {{alias:@stdlib/array/uint8}}( [ 255, 255, 255, 255, 255, 255, 255, 255 ] );
+    > var y = {{alias}}( bytes, 1, 0 )
+    -1.0
+
+    See Also
+    --------

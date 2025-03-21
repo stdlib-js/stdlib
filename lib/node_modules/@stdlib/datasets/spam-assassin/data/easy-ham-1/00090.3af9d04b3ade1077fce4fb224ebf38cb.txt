@@ -1,0 +1,74 @@
+From ilug-admin@linux.ie  Mon Sep  2 13:13:12 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0430947C7A
+	for <zzzz@localhost>; Mon,  2 Sep 2002 07:42:48 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 02 Sep 2002 12:42:48 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g82AaFZ28780 for
+    <zzzz-ilug@spamassassin.taint.org>; Mon, 2 Sep 2002 11:36:15 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA30726; Mon, 2 Sep 2002 11:35:06 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from [193.95.181.146] ([193.95.181.146]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id LAA30670 for <ilug@linux.ie>; Mon,
+    2 Sep 2002 11:34:56 +0100
+Received: from athens.itsmobile.com by [193.95.181.146] via smtpd (for
+    lugh.tuatha.org [194.125.145.45]) with SMTP; 2 Sep 2002 10:26:06 UT
+X-Mimeole: Produced By Microsoft Exchange V6.0.5762.3
+Content-Class: urn:content-classes:message
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Date: Mon, 2 Sep 2002 11:45:50 +0100
+Message-Id: <CD1F3D770345B24D8ACC7824F0B2D815059594@athens.itsmobile.com>
+X-MS-Has-Attach: 
+X-MS-Tnef-Correlator: 
+Thread-Topic: What HOWTOs for SOHO system
+Thread-Index: AcJSbGP3hSOj275NEdaF/AABAgjiLA==
+From: "Dermot Daly" <dermot.daly@itsmobile.com>
+To: <ilug@linux.ie>
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    LAA30670
+Subject: [ILUG] What HOWTOs for SOHO system
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Hi All,
+I'm trying to set up the following:
+
+1. A Linux server running with a modem for internet connectivity and an
+ethernet card for LAN connectivity
+2. Other LAN pcs with ethernet cards, using the Linux server for
+DNS/DHCP etc.
+
+Basically, I want to route any non LAN traffic through the ppp0.
+
+I've got some of the way, but like a similar post earlier about modem
+problems, when I am connected to the internet with eht0 up, the routing
+is all incorrect and noting goes out through ppp0 (eh0 must be the
+default route or something).
+
+Is there standard "out of the box" Linux tools that will carry out
+portmapping on behalf of the LAN PCs ?  (I'm planning on non routable
+addresses 192.168.x.x for the LAN, routed outwards via the ppp0
+interface).
+
+Can someone point me at the right HOWTOs or routing documentation I need
+to follow ? 
+Thanks,
+Dermot.
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

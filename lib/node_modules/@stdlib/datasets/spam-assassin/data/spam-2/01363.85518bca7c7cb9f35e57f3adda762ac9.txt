@@ -1,0 +1,365 @@
+From fork-admin@xent.com  Thu Aug  8 15:56:41 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4BEE344112
+	for <jm@localhost>; Thu,  8 Aug 2002 09:55:50 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 08 Aug 2002 14:55:50 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g78Dt0210333 for <jm@jmason.org>;
+    Thu, 8 Aug 2002 14:55:06 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id C64AA2940C8; Thu,  8 Aug 2002 06:51:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from Mail2L.com (unknown [213.132.0.33]) by xent.com (Postfix)
+    with ESMTP id A839A2940B3 for <fork@xent.com>; Thu,  8 Aug 2002 06:50:27
+    -0700 (PDT)
+From: news@bluecom.com
+To: fork@spamassassin.taint.org
+Message-Id: <Mail2L:3143783:fork@spamassassin.taint.org>
+Subject: Super Cool Monitor Deals!
+MIME-Version: 1.0
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu,  8 Aug 2002 06:50:27 -0700 (PDT)
+Content-Type: multipart/alternative; boundary="---=c_8xk3gaozmp2il98g4_xq03eowmlk"
+
+
+-----=c_8xk3gaozmp2il98g4_xq03eowmlk
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 8bit
+
+Click here to see our promotion mail on monitors:
+
+http://www.bluecom.com/Promo/monitors_exp
+
+Best regards
+
+BlueCom Danmark A/S
+Worldwide IT Volume Distributor
+
+Blokken 11-13, DK-3460 Birkeroed, Denmark
+Phone: + 45 45 94 55 55, Fax: + 45 45 94 55 00
+Web: http://www.bluecom.com
+
+
+
+-----=c_8xk3gaozmp2il98g4_xq03eowmlk
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-1">
+<title>BlueCom promotion mail</title>
+</head>
+<body bgcolor=3D"#FFFFFF" text=3D"#333333" link=3D"#0000FF" vlink=3D"#0000FF" alink=3D"#0000FF">
+
+
+<!-- styretabel -->
+<table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tr>
+<td>
+
+
+
+<!-- navigation -->
+
+<table align=3D"center" width=3D"738" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+
+<tr>
+<td colspan=3D"3" align=3D"right"><font face=3D"Verdana, Arial, Helvetica" size=3D"1" color=3D"#333333">This mail has been sent to: fork@spamassassin.taint.org <a href=3D"http://ocms.ocms.dk/engine/redirectord.cfm?ID=3D1264">Click Here</a> to unsubscribe.</font><p></td>
+</tr>
+
+<tr>
+<td width=3D"361" bgcolor=3D"#FFFFFF"><a href=3D"http://ocms.ocms.dk/engine/redirectord.cfm?ID=3D1265"><img src=3D"http://www.bluecom.com/Promo/monitors/images/bc_cut270602_03.gif" width=3D"226" height=3D"53" border=3D"0" alt=3D""></a></td>
+<td width=3D"170" bgcolor=3D"#FFFFFF"><img src=3D"http://www.bluecom.com/Promo/monitors/images/ibm_partners.jpg" width=3D"128" height=3D"53" border=3D"0" alt=3D""></td>
+<td align=3D"left" width=3D"207"><img src=3D"http://www.bluecom.com/Promo/monitors/images/bc_cut270602_07.gif" width=3D"207" height=3D"53" alt=3D""></td>
+</tr>
+
+<tr>
+<td colspan=3D"3"><img src=3D"http://www.bluecom.com/Promo/monitors/images/bc_cut270602_10.gif" width=3D"738" height=3D"13" border=3D"0" alt=3D""></td>
+</tr>
+
+</table>
+
+<table align=3D"center" width=3D"738" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#033262">
+
+<tr>
+<td align=3D"left">
+ 
+<table border=3D"0" cellspacing=3D"2" cellpadding=3D"2">
+
+<tr>
+<td><a href=3D"http://ocms.ocms.dk/engine/redirectord.cfm?ID=3D1265"><img src=3D"http://www.bluecom.com/Promo/monitors/images/btn_menu_home.gif" width=3D"39" height=3D"13" border=3D"0" alt=3D""></a></td>
+
+<td><a href=3D"http://ocms.ocms.dk/engine/redirectord.cfm?ID=3D1266"><img src=3D"http://www.bluecom.com/Promo/monitors/images/btn_menu_aboutus.gif" width=3D"62" height=3D"13" border=3D"0" alt=3D""></a></td>
+
+<td><a href=3D"http://ocms.ocms.dk/engine/redirectord.cfm?ID=3D1267"><img src=3D"http://www.bluecom.com/Promo/monitors/images/btn_menu_contact.gif" width=3D"63" height=3D"13" border=3D"0" alt=3D""></a></td>
+
+<td><a href=3D"http://ocms.ocms.dk/engine/redirectord.cfm?ID=3D1268"><img src=3D"http://www.bluecom.com/Promo/monitors/images/btn_menu_products.gif" width=3D"63" height=3D"13" border=3D"0" alt=3D""></a></td>
+
+<td><a href=3D"http://ocms.ocms.dk/engine/redirectord.cfm?ID=3D1269"><img src=3D"http://www.bluecom.com/Promo/monitors/images/btn_menu_terms.gif" width=3D"43" height=3D"13" border=3D"0" alt=3D""></a></td>
+
+<td><a href=3D"http://ocms.ocms.dk/engine/redirectord.cfm?ID=3D1270"><img src=3D"http://www.bluecom.com/Promo/monitors/images/btn_menu_rma.gif" width=3D"32" height=3D"13" border=3D"0" alt=3D""></a></td>
+
+<td><a href=3D"http://ocms.ocms.dk/engine/redirectord.cfm?ID=3D1271"><img src=3D"http://www.bluecom.com/Promo/monitors/images/btn_menu_jobs.gif" width=3D"36" height=3D"13" border=3D"0" alt=3D""></a></td>
+
+<td><a href=3D"http://ocms.ocms.dk/engine/redirectord.cfm?ID=3D1272"><img src=3D"http://www.bluecom.com/Promo/monitors/images/btn_menu_faq.gif" width=3D"28" height=3D"13" border=3D"0" alt=3D""></a></td>
+
+<td><a href=3D"http://ocms.ocms.dk/engine/redirectord.cfm?ID=3D1274"><img src=3D"http://www.bluecom.com/Promo/monitors/images/btn_menu_news.gif" width=3D"38" height=3D"13" border=3D"0" alt=3D""></a></td>
+
+<td><a href=3D"http://ocms.ocms.dk/engine/redirectord.cfm?ID=3D1275"><img src=3D"http://www.bluecom.com/Promo/monitors/images/btn_menu_press.gif" width=3D"43" height=3D"13"  border=3D"0" alt=3D""></a></td>
+
+<td><a href=3D"http://ocms.ocms.dk/engine/redirectord.cfm?ID=3D1276"><img src=3D"http://www.bluecom.com/Promo/monitors/images/btn_menu_site.gif" width=3D"32" height=3D"13" border=3D"0" alt=3D""></a></td>
+</tr>
+
+</table>
+
+</td>
+</tr>
+</table>
+<!-- navigation slut -->
+
+
+<br>
+<table align=3D"center" width=3D"738" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tr>
+<td><img src=3D"http://www.bluecom.com/Promo/monitors/images/banner.gif" border=3D"0" width=3D"738" height=3D"50" align=3D"bottom" alt=3D""><p></td>
+</tr>
+</table>
+
+<!-- Indhold -->
+
+<table align=3D"center" width=3D"738" cellpadding=3D"5" cellspacing=3D"0" border=3D"0">
+
+<!-- 1 -->
+<tr>
+<td><img src=3D"http://www.bluecom.com/Promo/monitors/products/tmx528black.jpg" border=3D"0" width=3D"100" height=3D"100" align=3D"bottom" alt=3D""></td>
+<td width=3D"250"><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1"><b>BLUESOLUTIONS 15"  TFT Monitor<br>
+Black</b> TMX528 (Retail)</font><p><font face=3D"Verdana, Arial, Helvetica" size=3D"1" color=3D"#FF0000"><b>$ 345.00</b><br>&euro; 381,00</font></td>
+
+<td width=3D"50">&nbsp;</td>
+
+<td><img src=3D"http://www.bluecom.com/Promo/monitors/products/tft_t860.jpg" border=3D"0" width=3D"100" height=3D"100" align=3D"bottom" alt=3D""></td>
+<td width=3D"250"><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1"><b>IBM T860 18,1" TFT Stealth Black</b><br>
+T4HB0DK (Retail)</font><p><font face=3D"Verdana, Arial, Helvetica" size=3D"1" color=3D"#FF0000"><b>$ 1,070.00</b><br>&euro; 1.070,00</font></td>
+</tr>
+
+<tr>
+<td colspan=3D5><img src=3D"http://www.bluecom.com/Promo/monitors/images/grayline.gif" border=3D"0" width=3D"728" height=3D"2" align=3D"bottom" alt=3D""></td>
+</tr>
+
+
+<!-- 2 -->
+<tr>
+<td><img src=3D"http://www.bluecom.com/Promo/monitors/products/hp72_17.jpg" border=3D"0" width=3D"100" height=3D"100" align=3D"bottom" alt=3D""></td>
+<td width=3D"250"><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1"><b>HP 72 TCO 17"  Color Monitor</b><br>
+D8905ARR-ABB (Retail)</font><p><font face=3D"Verdana, Arial, Helvetica" size=3D"1" color=3D"#FF0000"><b>$ 144.00</b><br>&euro; 149,00</font></td>
+
+<td width=3D"50">&nbsp;</td>
+
+<td><img src=3D"http://www.bluecom.com/Promo/monitors/products/hp72_17.jpg" border=3D"0" width=3D"100" height=3D"100" align=3D"bottom" alt=3D""></td>
+<td width=3D"250"><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1"><b>HP 72 17"  Color Monitor </b><br>
+D8904ARR-ABB (Retail)</font><p><font face=3D"Verdana, Arial, Helvetica" size=3D"1" color=3D"#FF0000"><b>$ 144.00</b><br>&euro; 148,00</font></td>
+</tr>
+
+
+<tr>
+<td colspan=3D5><img src=3D"http://www.bluecom.com/Promo/monitors/images/grayline.gif" border=3D"0" width=3D"728" height=3D"2" align=3D"bottom" alt=3D""></td>
+</tr>
+
+<!-- 3 -->
+<tr>
+<td><img src=3D"http://www.bluecom.com/Promo/monitors/products/15tft_llt15v1.jpg" border=3D"0" width=3D"100" height=3D"100" align=3D"bottom" alt=3D""></td>
+<td width=3D"250"><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1"><b>SHARP 15" TFT Monitor White</b><br>
+LL-T15V1 (Retail)</font><p><font face=3D"Verdana, Arial, Helvetica" size=3D"1" color=3D"#FF0000"><b>$ 335.00</b><br>&euro; 345,00</font></td>
+
+<td width=3D"50">&nbsp;</td>
+
+<td><img src=3D"http://www.bluecom.com/Promo/monitors/products/lt541f_17.jpg" border=3D"0" width=3D"100" height=3D"100" align=3D"bottom" alt=3D""></td>
+<td width=3D"250"><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1"><b>MAG 15" TFT Monitor White</b><br>
+LT-541F (Retail)</font><p><font face=3D"Verdana, Arial, Helvetica" size=3D"1" color=3D"#FF0000"><b>$ 299.00</b><br>&euro; 311,00</font></td>
+</tr>
+
+<tr>
+<td colspan=3D5><img src=3D"http://www.bluecom.com/Promo/monitors/images/grayline.gif" border=3D"0" width=3D"728" height=3D"2" align=3D"bottom" alt=3D""></td>
+</tr>
+
+<!-- 4 -->
+<tr>
+<td><img src=3D"http://www.bluecom.com/Promo/monitors/products/l1520_15tft.jpg" border=3D"0" width=3D"100" height=3D"100" align=3D"bottom" alt=3D""></td>
+<td width=3D"250"><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1"><b>HP L1520 15"  LCD Multimedia<br>
+Monitor</b> D5063MR (Retail)</font><p><font face=3D"Verdana, Arial, Helvetica" size=3D"1" color=3D"#FF0000"><b>$ 360.00</b><br>&euro; 371,50</font></td>
+
+<td width=3D"50">&nbsp;</td>
+
+<td><img src=3D"http://www.bluecom.com/Promo/monitors/products/yakumo17.jpg" border=3D"0" width=3D"100" height=3D"100" align=3D"bottom" alt=3D""></td>
+<td width=3D"250"><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1"><b>YAKUMO 17"  TFT Monitor White</b><br>
+LCZ-EOT-7C778-D (Retail)</font><p><font face=3D"Verdana, Arial, Helvetica" size=3D"1" color=3D"#FF0000"><b>$ 495.00</b><br>&euro; 519,00</font></td>
+</tr>
+
+
+<tr>
+<td colspan=3D5><img src=3D"http://www.bluecom.com/Promo/monitors/images/grayline.gif" border=3D"0" width=3D"728" height=3D"2" align=3D"bottom" alt=3D""></td>
+</tr>
+
+</table>
+
+<br>
+
+<table align=3D"center" width=3D"738" border=3D"0" cellpadding=3D0 cellspacing=3D0>
+
+<tr>
+<td><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1"><b>P/N:</b></font></td>
+<td><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1"><b>Description:</b></font></td>
+<td><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1"><b>Packing:</b></font></td>
+<td align=3Dright><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1"><b>Price (USD):</b></font></td>
+<td align=3Dright><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1"><b>Price (EUR):</b></font></td>
+</tr>
+
+
+<tr bgcolor=3D"#eeeeee">
+<td><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1">TMX528</font></td>
+<td><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1">BLUESOLUTIONS 15" TFT Monitor White</font></td>
+<td><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1">Retail</font></td> 
+<td align=3Dright><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1">$ 345.00</font></td>
+<td align=3Dright><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1">&euro; 381,00</font></td>
+</tr>
+
+<tr>
+<td><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1">04N7160</font></td>
+<td><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1">IBM P260 21" FD Trinitron</font></td>
+<td><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1">Retail</font></td> 
+<td align=3Dright><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1">$ 599.00</font></td>
+<td align=3Dright><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1">&euro; 611,00</font></td>
+</tr>
+
+
+<tr bgcolor=3D"#eeeeee">
+<td><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1">D8902ARR-ABB</font></td>
+<td><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1">HP 71 17"  Color Monitor</font></td>
+<td><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1">Retail</font></td> 
+<td align=3Dright><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1">$ 144.00</font></td>
+<td align=3Dright><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1">&euro; 148,00</font></td>
+</tr>
+
+<tr>
+<td><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1">11J8846</font></td>
+<td><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1">HITACHI 12" LCD Panel 800x600</font></td>
+<td><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1">Retail</font></td> 
+<td align=3Dright><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1">$ &nbsp;&nbsp;97.00</font></td>
+<td align=3Dright><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1">&euro; &nbsp;&nbsp;99,00</font></td>
+</tr>
+
+
+<tr bgcolor=3D"#eeeeee">
+<td><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1">LW871</font></td>
+<td><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1">HEAD 17" TFT Monitor White</font></td>
+<td><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1">Retail</font></td> 
+<td align=3Dright><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1">$ 552.00</font></td>
+<td align=3Dright><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1">&euro; 563,00</font></td>
+</tr>
+
+
+<tr>
+<td><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1">D5063AR</font></td>
+<td><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1">HP L1520 15" LCD Color Monitor</font></td>
+<td><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1">Retail</font></td> 
+<td align=3Dright><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1">$ 360.00</font></td>
+<td align=3Dright><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1">&euro; 371,50</font></td>
+</tr>
+
+<tr bgcolor=3D"#eeeeee">
+<td><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1">D8906AR</font></td>
+<td><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1">HP P700 17" CRT Monitor</font></td>
+<td><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1">Retail</font></td> 
+<td align=3Dright><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1">$ 135.00</font></td>
+<td align=3Dright><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1">&euro; 139,50</font></td>
+</tr>
+
+
+
+
+</table>
+
+
+
+
+<!-- Indhold slut -->
+
+
+
+
+<!-- links -->
+<table align=3Dcenter width=3D"738" border=3D"0" cellpadding=3D"10" cellspacing=3D"0">
+<tr>
+<td align=3D"left"><font face=3D"Verdana, Arial, Helvetica" size=3D"1" color=3D"#333333"><b>Please, also visit:</b><br>
+<ul type=3D"disc">
+<li><a href=3D"http://ocms.ocms.dk/engine/redirectord.cfm?ID=3D1265">Our website at www.bluecom.com</a>
+<li><a href=3D"http://ocms.ocms.dk/engine/redirectord.cfm?ID=3D1277">Online web shop</a>
+<li><a href=3D"http://ocms.ocms.dk/engine/redirectord.cfm?ID=3D1278">PC-component pricelist</a>
+<li><a href=3D"http://ocms.ocms.dk/engine/redirectord.cfm?ID=3D1277">IBM, Compaq, HP stocklist</a><br>
+</ul>
+</font></td>
+<td align=3D"right"><font face=3D"Verdana, Arial, Helvetica" color=3D"#333333" size=3D"1">Click here to contact us now!<p><a href=3D"http://ocms.ocms.dk/engine/redirectord.cfm?ID=3D1267"><img src=3D"http://www.bluecom.com/Promo/monitors/images/contact_info.gif" border=3D"0" width=3D"80" height=3D"15" align=3D"bottom" alt=3D"Click here to contact us now!"></a></font></td>
+</tr>
+</table>
+<!-- links slut -->
+
+
+
+
+<!-- footer -->
+<table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tr>
+<td>
+<table align=3D"center" width=3D"738" border=3D"0" cellspacing=3D"0" cellpadding=3D"2" bgcolor=3D"#033262">
+<tr>
+<td align=3D"center"><font face=3D"Verdana, Arial, Helvetica" size=3D"1" color=3D"#FFFFFF">BLUECOM DANMARK A/S &middot BLOKKEN 11-13 &middot DK-3460 BIRKEROED &middot DENMARK &middot TELEPHONE +45 45 94 55 55 &middot WWW.BLUECOM.COM</font></td>
+</tr>
+</table>
+<div align=3Dcenter><img src=3D"http://www.bluecom.com/Promo/monitors/images/spacer.gif" width=3D"738" height=3D"1" alt=3D""></div>
+<table align=3D"center" width=3D"738" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tr>
+<td><font face=3D"Verdana, Arial, Helvetica" size=3D"1" color=3D"#000000">&copy; BlueCom Danmark A/S. 1996 - 2002. All rights reserved.</font></td>
+<td align=3D"right"><img src=3D"http://www.bluecom.com/Promo/monitors/images/bc_cut270602_64.gif" width=3D"355" height=3D"12" alt=3D""></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- footer slut -->
+
+</td>
+</tr>
+</table>
+<!-- styretabel slut -->
+
+
+<p>
+
+<img src=3D"http://bluecom.mail2l.com/postingread/postingread.cfm?C=3D7B0F29BE-8C5C-4843-9C6F21B476889157&P=3D2511&E=3Dfork%40xent%2Ecom&EID=3D1280992&EXT=3D0&KEY=3DB2222E6B584B88F3E4815D2C2CF77C45" width=3D"1" height=3D"1" border=3D"0"></body>
+</html>
+
+
+
+-----=c_8xk3gaozmp2il98g4_xq03eowmlk--
+
+
+http://xent.com/mailman/listinfo/fork
+
+

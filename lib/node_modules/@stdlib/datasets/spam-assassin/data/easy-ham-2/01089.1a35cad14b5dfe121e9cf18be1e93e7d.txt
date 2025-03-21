@@ -1,0 +1,135 @@
+From fork-admin@xent.com  Tue Aug 20 11:53:44 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A223D43C62
+	for <jm@localhost>; Tue, 20 Aug 2002 06:52:13 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 11:52:13 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7K2KHZ21045 for <jm@jmason.org>;
+    Tue, 20 Aug 2002 03:20:17 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id BD36029409E; Mon, 19 Aug 2002 19:18:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from rwcrmhc51.attbi.com (rwcrmhc51.attbi.com [204.127.198.38])
+    by xent.com (Postfix) with ESMTP id 472A629409D for <fork@xent.com>;
+    Mon, 19 Aug 2002 19:17:57 -0700 (PDT)
+Received: from localhost ([24.61.140.132]) by rwcrmhc51.attbi.com
+    (InterMail vM.4.01.03.27 201-229-121-127-20010626) with ESMTP id
+    <20020820021931.HOTE1746.rwcrmhc51.attbi.com@localhost>; Tue,
+    20 Aug 2002 02:19:31 +0000
+From: bitbitch@magnesium.net
+X-Mailer: The Bat! (v1.53d) Educational
+Reply-To: bitbitch@magnesium.net
+X-Priority: 3 (Normal)
+Message-Id: <044025976.20020819221917@magnesium.net>
+To: fork@spamassassin.taint.org
+Subject: This little domain went to China....
+In-Reply-To: <Pine.BSO.4.44.0208191514400.17583-100000@crank.slack.net>
+References: <Pine.BSO.4.44.0208191514400.17583-100000@crank.slack.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 19 Aug 2002 22:19:17 -0400
+
+The RIAA continues to amaze me.    Everyone might want to grok the
+news yahoo has:
+
+http://rd.yahoo.com/dailynews/nm/tc_nm/inlinks/*http://Listen4ever.com
+
+
+And if you're really bored, go ahead and read the papers that were
+filed by the RIAA against the major backbone providers.
+
+http://www.riaa.com/pdf/Listen4Ever.pdf
+
+
+So it looks like the RIAA is getting bored with its usual tack of
+suing the peer-to-peer services, and is instead using the DMCA
+to sue ISPs and backbones into compliance --  They want said backbones
+to block the ip address of the listen4ever.com server due to
+listen4ever's alleged infringement of copyright.  To quote
+the Motion that the RIAA issued:  "Plaintiffs request that
+the Court issue a preliminary injunction requiring Defendants to block
+communication to and from Listen4ever's servers that travel through
+Defendants' backbone routing systems".
+
+At least according to the RIAA (probably for bonus terror tactics )
+the Listen4ever site is even more formidable than that bane of p2p
+goodness, Napster, due to the fact that its on a centralized server,
+out of their reach of RIAA/DMCA control (its located in China), and
+because according to the RIAA it facilitates the downloading of entire albums.
+Apparently listen4ever has a few other sites floating around, and the RIAA has been
+unsuccessful in getting any of them to voluntarily surrender
+service(1).
+
+Gotta love the RIAA for jumping into this lawsuit with the customer's
+interests in mind.  How lawyers can write drivel along the lines of
+'if you dont stop these guys, we'll run out of money and we won't be
+able to supply you new music!' just blows my mind, especially in this
+day and age.   The RIAA has enough money to file inane lawsuits
+against backbone providers, but they don't have enough money to
+produce new artists?  Something seems wrong here.
+
+Here's my problem.  Say the RIAA wins in court, and the backbone
+providers comply.   Their biggest hurdle is now accomplished, and one
+hell of a terrible precident is/can be set.   At least in the RIAA's
+case, I'm sure once they get a Court-mandated Ok for this particular
+site, they'll just go ahead, write their nice friendly lawyer letters,
+and demand that subsequent IP addresses also be blocked, as they too
+route to sites that are problematic to the RIAA.
+
+Even worse, the concept that other groups (the first that flashed into
+my little brain being the Scientologists) also decide that this is the way
+to go.   If the RIAA prevails, they have record set, albiet in NY
+only, that can be pointed back to, and used in other cases.
+Eventually this will hit a large enough court that precident will set,
+ and we have a very quiet, very non-reported event occuring from then
+ on, the systematic C&Ding of the Internet.   Anything that violates the
+DMCA, given its takedown provisions, might now potentially
+fall prey to a Cease & Desist letter.  Rather than appealing, the
+backbone providers will just agree -- as they seem likely to do
+'provided a court order'.
+
+Point being is that soon this won't take a court order.  A nastygram
+will suffice and we'll wonder where all the new
+music/information/dissenting opinions/ criticisms went.
+
+This is a scary road we're running down here.   So nice to see that
+its still hush-hush in the geek community.
+
+Whats more bizzare is some of the support(?) that the RIAA seemed to
+get.   I'm curious for instance, how Dave Farber got dragged into
+this...  (2) Dave, you still read FoRK?
+
+(1) Save for one, lmp3.com, which was listed as a redirect site in the
+court documents, has since gone down.   Their website has a humorous little note:  "Lmp3
+will be closed and will never come back! ".  Listen4ever.com is not
+responding, but i'm not quite sure if thats due to backbone compliance
+or the site being overburdened.
+
+(2) Declaration of Prof. David J. Farber:
+http://www.riaa.com/pdf/Listen4Ever.pdf (p. 95)
+
+
+A very disgruntled,
+
+bitbitch
+
+
+http://xent.com/mailman/listinfo/fork
+

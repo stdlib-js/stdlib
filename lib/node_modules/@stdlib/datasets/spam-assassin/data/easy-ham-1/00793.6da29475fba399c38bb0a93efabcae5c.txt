@@ -1,0 +1,196 @@
+From fork-admin@xent.com  Fri Sep 27 10:43:18 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 6B87616F18
+	for <jm@localhost>; Fri, 27 Sep 2002 10:42:52 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 27 Sep 2002 10:42:52 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8R7O9g32127 for <jm@jmason.org>;
+    Fri, 27 Sep 2002 08:24:10 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 2B16C2940B7; Fri, 27 Sep 2002 00:20:10 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mta6.snfc21.pbi.net (mta6.snfc21.pbi.net [206.13.28.240])
+    by xent.com (Postfix) with ESMTP id 6B1E229409A for <fork@xent.com>;
+    Fri, 27 Sep 2002 00:19:51 -0700 (PDT)
+Received: from [192.168.123.100] ([64.171.2.19]) by mta6.snfc21.pbi.net
+    (iPlanet Messaging Server 5.1 (built May  7 2001)) with ESMTP id
+    <0H33001IM5VJWJ@mta6.snfc21.pbi.net> for fork@xent.com; Fri,
+    27 Sep 2002 00:23:43 -0700 (PDT)
+From: James Rogers <jamesr@best.com>
+Subject: Native American economics (was Re: sed /s/United States/Roman
+    Empire/g)
+In-Reply-To: <000f01c2628a$e71a61f0$0200a8c0@JMHALL>
+To: fork@spamassassin.taint.org
+Message-Id: <B9B9558B.DAC3%jamesr@best.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+User-Agent: Microsoft-Entourage/9.0.1.3108
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 27 Sep 2002 00:23:39 -0700
+
+
+I wanted to get back to this but didn't have the time.  I actually lived on
+a couple different Indian reservations growing up in the Pacific Northwest
+and also spent a fair amount time in Lakota/Sioux country as well.  And my
+parents have lived on an even more diverse range of Indian reservations than
+I have (my experience being a direct result of living with my parents).  I
+do get a lot of my information first-hand, or in some cases, second-hand
+from my father.
+
+The income figures for the Indians are somewhat misleading, mostly because
+it is really hard to do proper accounting of the effective income.  While it
+is true that some Indians live in genuine poverty, it is typically as a
+consequence of previous poor decisions that were made by the tribe, not
+something that was impressed upon them.
+
+The primary problem with the accounting is that there is a tribal entity
+that exists separately from the individuals, typically an "Indian
+Corporation" of one type or another where each member of the tribe owns a
+single share (the details of when and how a share becomes active varies from
+tribe to tribe).  In most tribes, a dividend is paid out to each of the
+tribal members from the corporation, usually to the tune of $10-30k per
+person, depending on the tribe.  The dividend money comes from a number of
+places, with the primary sources being the Federal Gov't and various
+businesses/assets owned by the Indian corporation.
+
+You have to understand a couple things:  First, a great many Indian tribes
+are run as purely communist enterprises.  Everyone gets a check for their
+share no matter what.  One of the biggest problems this has caused is very
+high unemployment (often 70-90%) for tribal members, who are more than happy
+take their dividend and not work.  The dividend they receive from the
+corporation often constitutes their sole "income" for government accounting
+purposes.  Unfortunately, to support this type of economics when no one
+works, they've had to sell off most of their useful assets to maintain those
+dividends.  Many of the tribes genuinely living in poverty do so because
+they have run out of things to sell yet nobody works.  One of the ironies is
+that on many of the reservations where the tribes still have assets to burn,
+many of the people working in the stores and such are actually poor white
+folk, not Indians.
+
+Second, even though the tribe members each get a cash dividend, they also
+receive an enormous range of benefits and perks from the Indian corporation
+to the tune of tens of thousands of dollars per person annually.  By
+benefits and perks, we are talking about the kinds of things no other
+ordinary American receives from either their employer or the government.
+
+It should be pointed out that while many of these Indian corporations are
+ineptly run, and mostly provide sinecures for other Indians, a minority are
+very smartly managed and a few hire non-Indian business executives with good
+credentials to run their business divisions.  An example of this is the
+Haida Corporation, which while having less 1,000 tribal shareholders, has
+billions of dollars in assets and the various corporations they own have
+gross revenues in the $200-300 million range (and growing).  Yet the
+dividend paid out is strictly controlled, about $20k in this particular
+case, and they engaged in a practice of waiting a couple decades before
+drawing money from any of the assets they were granted which has led to
+intelligent investment and use.  They don't eat their seed corn, and have
+actually managed to grow their stash.  In contrast, a couple islands over,
+there is another tribe of ~2,000 people that has a net loss of about $50
+million annually IIRC while being regularly endowed by the Federal
+government with several billions of dollars in valuable assets.  This
+particular tribe has a modest income in theory, but the actual expenditures
+per person annually is in the hundreds of thousands of dollars, and many
+borrow money against future income.  Incidentally, in this particular case,
+the people that ARE working frequently pull in a few hundred thousand
+dollars a year, much of which goes back to the tribal corporation rather
+than their own pockets.
+
+Somewhat annoying, the Federal government semi-regularly grants valuable
+assets to these tribes when they've burned through the ones previously given
+where feasible, typically selling the assets to American or foreign
+companies.  And the cycle continues.
+
+So what is the primary problem for the tribes that have problems?  In a
+nutshell, a thoroughly pathological culture and society.
+
+Few women reach the age of 16 without getting pregnant.  Incest, rape, and
+gross promiscuity is rampant.  Inbreeding, heavy drug abuse during
+pregnancy, and other environmental factors have created tribes where a very
+substantial fraction of the tribe is literally mentally retarded.  Many of
+the thoughtful and intelligent tribe members leave the reservation at the
+earliest opportunity, mostly to avoid the problems mentioned above.  On one
+reservation my parents lived, the HIV infection rate was >70%.  Many of
+these societies are thoroughly corrupt, and the administration of the law is
+arbitrary and capricious (they do have their own judges, courts, police
+etc).
+
+In short, many of these tribes that are still hanging together are in a
+shambles because they have become THE most pathological societies that I
+have ever seen anywhere.  Because of their legal status, there really aren't
+that many consequences for their behavior.  There are many things that I
+could tell you that I've seen that you probably would not believe unless
+you'd seen it yourself.  There are always good people in these tribes, but
+it has gotten to the point where the losers and idiots outnumber the good
+guys by a fair margin many times, and this IS a mobocracy typically.  (BTW,
+if any of you white folk wants to experience overt and aggressive racism as
+a minority in a place where the rule of law is fiction and the police are
+openly thugs, try living on one of these messed up Indian reservations.  It
+will give you an interesting perspective on things.)
+
+There are only two real situations where you find reasonably prosperous
+Indians.  The first is in the rare case of tribes run by disciplined and
+intelligent people that have managed their assets wisely.  The second is
+where the tribe has dispersed and assimilated for the most part, even if
+they maintain their tribal identity.  In both of these cases, the tribal
+leaders reject the insular behavior that tends to lead to the pathological
+cases mentioned above.
+
+The Indians are often quite wealthy technically, and a lot of money is spent
+by the tribe per capita.  And the actual reportable income is quite high
+when you consider how many are living entirely off the tribal dole.  It is
+just that their peculiar economic structure does not lend itself well to
+ordinary economic analysis by merely looking at their nominal income.  The
+poverty is social and cultural in nature, not economic.  This was my
+original point.
+
+
+On a tangent:
+
+One thing that has always interested me is the concept of quasi-tribal
+corporate socialism.  Many Indian tribes implement a type of corporate
+socialism that is mind-bogglingly bad in execution.  That they use this
+structure at all is an accident of history more than anything.  But what has
+interested me is that the very smartly managed ones do surprisingly well
+over the long run.  It is like a Family Corporation writ large.
+
+It seems that in a future where "familial" ties will be increasingly
+voluntary, the general concept may have some merit in general Western
+society, serving to create a facsimile of a biological extended family with
+the included dynamics, but with an arbitrary set of self-selecting
+individuals.
+
+Damn that was long (and its late), and it could have been a lot longer.
+
+-James Rogers
+ jamesr@best.com 
+
+
+
+On 9/22/02 3:53 PM, "John Hall" <johnhall@evergo.net> wrote:
+> 
+> As I understand it, there is a huge difference between native Americans
+> who speak english at home and those who do not.  I don't have figures
+> that separate those at hand, though.
+> 
+> 1989 American Indians (US Pop as a whole) -- Families below poverty
+> 27.2% (10%), Persons below poverty 31.2 (13.1), Speak a language other
+> than English 23 (13.8) Married couple families 65.8 (79.5) Median family
+> income $21,619 ($35,225) Per Capita $8,284 ($14,420).
+
+

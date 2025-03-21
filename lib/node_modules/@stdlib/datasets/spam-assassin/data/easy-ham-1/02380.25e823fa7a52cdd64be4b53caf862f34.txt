@@ -1,0 +1,45 @@
+From rssfeeds@jmason.org  Wed Oct  9 10:52:41 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id A296916F6B
+	for <jm@localhost>; Wed,  9 Oct 2002 10:51:41 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 09 Oct 2002 10:51:41 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9980VK25162 for
+    <jm@jmason.org>; Wed, 9 Oct 2002 09:00:31 +0100
+Message-Id: <200210090800.g9980VK25162@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: boingboing <rssfeeds@spamassassin.taint.org>
+Subject: $15,000 umbrella stand: nothing exceeds like excess
+Date: Wed, 09 Oct 2002 08:00:31 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://boingboing.net/#85541081
+Date: Not supplied
+
+Teresa's written a wonderful blog post about the revelation that Tyco's crooked 
+CEO spent "6,000 on a shower curtain, $15,000 for an umbrella stand, $2,900 on 
+coat hangers, $5,960 on bedsheets and $2,200 for a wastebasket." 
+
+    Naturally, they assured her that not only is it possible to pay $6,000 for 
+    your shower curtains and $2,200 for a wastebasket, it's a Good Thing to do 
+    so, practically essential. Then they explain how: 
+
+    "Sometimes the wastebasket is exposed," said Joel Joves, a designer with 
+    offices in Rancho Santa Fe and Beverly Hills. "If you have a fabulous study 
+    or master bedroom, then maybe we need a pewter-finished basket with 
+    decorative pearl beadings or semiprecious stones to complete the look of a 
+    room." 
+
+    That's Fool Money at work. If you can't find a sufficiently fabulous 
+    wastebasket for $200, $500 absolute tops, you're not half trying.  
+
+Link[1] Discuss[2]
+
+[1] http://nielsenhayden.com/makinglight/archives/2002_10.html#001484
+[2] http://www.quicktopic.com/boing/H/mUp57FGXT7VJ
+
+

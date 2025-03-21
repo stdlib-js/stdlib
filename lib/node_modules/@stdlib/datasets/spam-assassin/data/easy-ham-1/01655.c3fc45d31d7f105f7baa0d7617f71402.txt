@@ -1,0 +1,69 @@
+Return-Path: paul-bayes@svensson.org
+Delivery-Date: Fri Sep  6 17:27:57 2002
+From: paul-bayes@svensson.org (Paul Svensson)
+Date: Fri, 6 Sep 2002 12:27:57 -0400 (EDT)
+Subject: [Spambayes] Corpus Collection (Was: Re: Deployment)
+In-Reply-To: <200209061431.g86EVM114413@pcp02138704pcs.reston01.va.comcast.net>
+Message-ID: <Pine.LNX.4.44.0209061150430.6840-100000@familjen.svensson.org>
+
+On Fri, 6 Sep 2002, Guido van Rossum wrote:
+
+>Quite independently from testing and tuning the algorithm, I'd like to
+>think about deployment.
+>
+>Eventually, individuals and postmasters should be able to download a
+>spambayes software distribution, answer a few configuration questions
+>about their mail setup, training and false positives, and install it
+>as a filter.
+>
+>A more modest initial goal might be the production of a tool that can
+>easily be used by individuals (since we're more likely to find
+>individuals willing to risk this than postmasters).
+
+My impression is that a pre-collected corpus would not fit most individuals
+very well, but each individual (or group?) should collect their own corpus.
+
+One problem that comes upp immediately: individuals are lazy.
+
+If I currently get 50 spam and 50 ham a day, and I'll have to
+press the 'delete' button once for each spam, I'll be happy
+to press the 'spam' button instead.  However, if in addition
+have to press a 'ham' button for each ham, it starts to look
+much less like a win to me.  Add the time to install and setup
+the whole machinery, and I'll just keep hitting delete.
+
+The suggestions so far have been to hook something on the delete
+action, that adds a message to the ham corpus.  I see two problems
+with this: the ham will be a bit skewed; mail that I keep around
+without deleting will not be counted.  Secondly, if I by force of
+habit happen to press the 'delete' key instead of the 'spam' key,
+I'll end up with spam in the ham, anyways.
+
+I would like to look for a way to deal with spam in the ham.
+
+The obvious thing to do is to trigger on the 'spam' button,
+and at that time look for messages similar to the deleted one
+in the ham corpus, and simply remove them.  To do this we
+need a way to compare two word count histograms, to see
+how similar they are.  Any ideas ?
+
+Also, I personally would prefer to not see the spam at all.
+If they get bounced (preferably already in the SMTP),
+false positives become the senders problem, to rewrite
+to remove the spam smell.
+
+In a well tuned system then, there spam corpus will be much
+smaller than the ham corpus, so it would be possible to be
+slightly over-agressive when clearing potential spam from
+the ham corpus.  This should make it easier to keep it clean.
+
+Having a good way to remove spam from the ham corpus,
+there's less need to worry about it getting there by mistake,
+and we might as well simply add all messages to the ham corpus,
+that didn't get deleted by the spam filtering.
+
+It might also be useful to have a way to remove messages from
+the spam corpus, in case of user ooops.
+
+	/Paul
+

@@ -1,0 +1,186 @@
+From bruces@yami.57thstreet.com  Mon Aug 12 11:02:36 2002
+Return-Path: <bruces@yami.57thstreet.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B059A4412F
+	for <jm@localhost>; Mon, 12 Aug 2002 05:55:01 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:55:01 +0100 (IST)
+Received: from yami.57thstreet.com ([66.100.224.110]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with SMTP id g7BHqeb09004 for
+    <jm@jmason.org>; Sun, 11 Aug 2002 18:52:41 +0100
+Received: (qmail 23648 invoked by uid 1045); 11 Aug 2002 17:48:43 -0000
+Date: 11 Aug 2002 17:48:43 -0000
+Message-Id: <20020811174843.23647.qmail@yami.57thstreet.com>
+From: Bruce Sterling <bruces@well.com>
+To: yyyy@spamassassin.taint.org
+Subject: Viridian Note 00328: Fuel from CO2
+
+Key concepts:  Nakamichi Yamasaki, hydrocarbon
+generation, carbon dioxide, industrial chemistry
+
+Attention Conservation Notice: Yet another
+weird Nipponese scheme, about some miracle
+gizmo that runs on pollution
+
+Links:
+
+Tornados in Britain?  Maybe it really is the 51st State.
+http://www.thesun.co.uk/article/0,,2-2002362050,00.html
+
+Newfangled suntan pill alleged to have peculiar side-
+effects.
+http://timesofindia.indiatimes.com/articleshow.asp?art_id=18672487
+
+See all those really bright places? Well, that's
+where the Greenhouse comes from.
+http://www3.cosmiverse.com/news/earthobservatory/0802/images/land_ocean_ice_lights_080602_1bi
+g.jpg 
+
+The West Nile plague has reached Austin.
+http://www.planetark.org/dailynewsstory.cfm/newsid/17239/story.htm
+
+---------------------------------------------------
+Entries in the Global Civil Society Design Contest.
+
+From: Steven W. Schuldt <swschuldt*mac.com>
+http://www.americanrobotz.com/images2/Soon_GlobalCivilSocietyLaptop.jpg
+
+From: Ben Davis <bend*earthlink.net>
+http://www.digitaleverything.com/GlobalComputer.htm
+
+From: Joerg F. Wittenberger <Joerg.Wittenberger*pobox.com>
+http://www.askemos.org/ 
+http://www.askemos.org:9080/RomePaper.pdf
+
+From: Scott Vandehey <scot*spaceninja.com >
+http://spaceninja.com/viridian/notebook.html
+
+From: Bob Morris <bob*bomoco.com>
+http://viridianrepository.com/GlobalCivil/
+
+From: Anonymous
+http://home.freiepresse.de/befis/zx2000.html
+http://apollo.spaceports.com/~bodo4all/zx/zx97.htm
+http://www.vkb.co.il/
+
+From: Jim Thompson <jim*musenki.com>
+http://www.simputer.org
+http://www.cnn.com/2002/TECH/ptech/07/05/india.simputer.reut/index.html
+
+From: Mike Rosing <eresrch*eskimo.com>
+http://www.eskimo.com/~eresrch/viridian
+
+From: Till Westermayer <till*tillwe.de>
+http://www.westermayer.de/till/projekte/02gcsdl.htm
+
+From: Duncan Stewart <stewarts*stewarts.org?>
+http://www.stewarts.org/viridian/GCS
+
+From: R. Charles Flickinger <idlewild*mac.com>
+http://homepage.mac.com/iHUG/GCS2000.html
+
+From: Kevin Prichard <kevin*indymedia.org>
+http://www.nah6.com/
+http://www.nah6.com/nah6-h2k2_files/v3_document.html
+
+From: Dave Phelan <dphelan*pavilion.co.uk
+
+"Please find my entry here:"
+http://www.btinternet.com/~dphelan/viridian/gcs-computer.html
+
+"I'm no graphic artist == the feature list is the 
+important part of the design."
+
+dphelan*pavilion.co.uk  Blog: 
+http://www.btinternet.com/~dphelan
+
+This contest expires in four days:   August 15, 2002. 
+----------------------------------------------------
+Source:
+http://www.newscientist.com/news/news.jsp?id=ns99992620
+
+"Carbon dioxide turned into hydrocarbon fuel 
+(((Please, no immediate lectures on the second law of 
+thermodynamics. I have plenty of those.)))
+
+"16:00 02 August 02
+
+"A way to turn carbon dioxide into hydrocarbons has caused 
+a big stir at an industrial chemistry conference in New 
+Brunwick, New Jersey. Nakamichi Yamasaki of the Tokushima 
+Industrial Technology Center in Japan says he has a 
+process that makes propane and butane at relatively low 
+temperatures and pressures."
+
+Link: Yes, he actually exists:
+http://www.it.sakura.ne.jp/~koatsu/c_journal/ab/1_10/01-2.html
+http://www.itc.pref.tokushima.jp/English/eindex.html
+
+"Making fuel from greenhouse gases
+
+"While his work still needs independent verification,  
+(((okay, go fetch us some, then))) if he can make even 
+heavier hydrocarbons, it might be possible to make petrol. 
+It has carbon chains that are between five and 12 atoms 
+long == butane is four atoms long.  ((("That's right, 
+Professor: I just hook it up to the sky and I make 
+gasoline!")))
+
+   "The work suggests the tantalising prospect that CO2, 
+the main greenhouse gas, could be recycled instead of 
+being pumped into the atmosphere.
+
+    "Many people have tried before to make hydrocarbons by 
+mixing carbon with hydrogen gas in a reaction chamber at 
+very high temperatures, but yields have always been 
+pitiful. Yamasaki has used hydrochloric acid as his source 
+of hydrogen ions. ((("But where are we s'posed to get all 
+that hydrochloric acid?" Yes, I know, I know.)))
+
+    "He bubbles the CO2 into a reaction vessel where it is 
+heated to about 300 C at 100 times atmospheric pressure. 
+The heat and pressure are low enough, says Yamasaki, to 
+make it feasible to scale up the reaction so it can run on 
+a power station's waste heat. (((Imagine the fun when a 
+giant tank of pressurized acid blows up.)))
+
+"Iron powder 
+
+   "Using iron powder as a catalyst, Yamasaki says he has 
+made substantial amounts of methane, ethane, propane and 
+butane, which he was able to vent off as gases when the 
+mixture cooled. If he can improve the catalyst's 
+performance he is hopeful of making heavier hydrocarbons 
+such as petrol, too. 
+
+    "William Siegfried, who has lead similar experiments 
+at the University of Minnesota in the twin cities of 
+Minneapolis and St Paul, says his group was only able to 
+make methane at far higher temperatures. But his process 
+also used a nickel-based alloy as a catalyst, rather than 
+iron.
+
+    "Siegfried's group was investigating whether natural 
+methane deposits might have formed chemically with the 
+metal in rocks acting as a catalyst rather than forming 
+from the decay of rotting biological material over aeons.  
+(((Paging Thomas Gold! "Deep Hot Biosphere" calling on 
+line one.)))
+
+   "Unless Yamasaki's technology can make the more 
+valuable heavier hydrocarbons such as petroleum, which are 
+liquid at room temperature, it will not be much more use 
+than present-day bioreactors, in which bacteria that like 
+to feed on CO2 are induced to produce methane. 'Organisms 
+have a special talent for that kind of reaction,' says 
+Siegfried.
+
+O=c=O O=c=O O=c=O O=c=O
+FED-EX IS HERE WITH
+YOUR WORLD-SAVING
+MIRACLE GIZMO
+O=c=O O=c=O O=c=O O=c=O
+
+

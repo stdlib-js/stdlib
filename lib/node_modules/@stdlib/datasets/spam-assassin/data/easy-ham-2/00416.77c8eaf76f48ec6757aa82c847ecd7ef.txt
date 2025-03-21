@@ -1,0 +1,60 @@
+Return-Path: ilug-admin@linux.ie
+Delivery-Date: Wed Aug 14 12:02:06 2002
+Return-Path: <ilug-admin@linux.ie>
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7EB26411368
+	for <jm-ilug@jmason.org>; Wed, 14 Aug 2002 12:02:06 +0100
+Received: from lugh (root@localhost [127.0.0.1])
+	by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id MAA02363;
+	Wed, 14 Aug 2002 12:00:44 +0100
+Received: from corvil.com. (k100-159.bas1.dbn.dublin.eircom.net [159.134.100.159])
+	by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id MAA02324
+	for <ilug@linux.ie>; Wed, 14 Aug 2002 12:00:36 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host k100-159.bas1.dbn.dublin.eircom.net [159.134.100.159] claimed to be corvil.com.
+Received: from corvil.com (pixelbeat.local.corvil.com [172.18.1.170])
+	by corvil.com. (8.12.5/8.12.5) with ESMTP id g7EB0Zn4035158;
+	Wed, 14 Aug 2002 12:00:35 +0100 (IST)
+	(envelope-from padraig.brady@corvil.com)
+Message-ID: <3D5A3846.3030909@corvil.com>
+Date: Wed, 14 Aug 2002 12:00:22 +0100
+From: Padraig Brady <padraig.brady@corvil.com>
+Organization: Corvil Networks
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:0.9.9) Gecko/20020408
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: ssuciu@sitelite.com
+CC: ilug@linux.ie
+Subject: RE: [ILUG] Server Partitioning
+Content-Type: text/plain; charset=ISO-8859-15; format=flowed
+Content-Transfer-Encoding: 8bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-BeenThere: ilug@linux.ie
+
+Partitioning is an ambiguous term
+but I think I know what you mean.
+Have you looked at: http://freevsd.org/
+
+Pádraig.
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+
+
+
+
+
+
+
+
+
+

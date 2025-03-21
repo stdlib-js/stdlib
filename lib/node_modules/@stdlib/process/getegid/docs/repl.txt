@@ -1,0 +1,20 @@
+
+{{alias}}()
+    Returns the effective numeric group identity of the calling process.
+
+    The function only returns an effective group identity on POSIX platforms.
+    For all other platforms (e.g., Windows and Android), the function returns
+    `null`.
+
+    Returns
+    -------
+    id: integer|null
+        Effective numeric group identity.
+
+    Examples
+    --------
+    > var gid = {{alias}}()
+
+    See Also
+    --------
+

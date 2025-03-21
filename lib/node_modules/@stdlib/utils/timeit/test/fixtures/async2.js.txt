@@ -1,0 +1,49 @@
+"use strict";
+
+var __ctx$0__ = this;
+var __state$0__ = {};
+var __i$0__, __t$0__, __d$0__;
+
+function __before$0__( state, next ) {
+	next();;
+}
+
+function __cb1$0__( error ) {
+	if ( error ) {
+		return __ctx$0__.done( error );
+	}
+	__i$0__ = 0;
+	__t$0__ = __ctx$0__.tic();
+	__main$0__( __state$0__, __cb2$0__ );
+}
+
+function __main$0__( state, next ) {
+	next();;
+}
+
+function __cb2$0__( error ) {
+	if ( error ) {
+		return __ctx$0__.done( error );
+	}
+	__i$0__ += 1;
+	if ( __i$0__ < 1000 ) {
+		return __main$0__( __state$0__, __cb2$0__ );
+	}
+	__d$0__ = __ctx$0__.toc( __t$0__ );
+	__after$0__( __state$0__, __cb3$0__ );
+}
+
+function __after$0__( state, next ) {
+	next();;
+}
+
+function __cb3$0__( error ) {
+	if ( error ) {
+		return __ctx$0__.done( error );
+	}
+	__ctx$0__.done( null, __d$0__ );
+}
+
+__before$0__( __state$0__, __cb1$0__ );
+
+return 0;

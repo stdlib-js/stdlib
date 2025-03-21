@@ -1,0 +1,119 @@
+
+{{alias}}( table )
+    Returns a function which dispatches to specified functions based on input
+    argument types.
+
+    A `table` resolution object may contain one or more of the following fields:
+
+    - scalar: strided look-up table for scalar arguments.
+    - array: strided look-up table for array-like object arguments.
+    - ndarray: strided look-up table for ndarray arguments.
+
+    Each strided look-up table should be comprised as follows:
+
+      [ <dtype>, <fcn>, <dtype>, <fcn>, ... ]
+
+    If an argument's data type is *not* found in the argument's corresponding
+    look-up table and if a 'generic' data type is present in that same table,
+    the returned dispatch function will resolve the "generic" implementation. In
+    other words, an implementation associated with a 'generic' data type will be
+    treated as the default implementation.
+
+    If unable to resolve an implementation for a provided argument data type,
+    the returned function throws an error.
+
+    If provided a number, the returned function returns a number.
+
+    If provided an ndarray or array-like object, the returned function performs
+    element-wise computation.
+
+    If provided an array-like object, the returned function returns an array-
+    like object having the same length and data type as the provided input
+    argument.
+
+    If provided an ndarray, the returned function returns an ndarray having the
+    same shape and data type as the provided input argument.
+
+    Parameters
+    ----------
+    table: Object
+        Table resolution object.
+
+    table.scalar: ArrayLikeObject (optional)
+        Strided look-up table for scalar arguments. Supported data types:
+        'number' and 'complex'.
+
+    table.array: ArrayLikeObject (optional)
+        Strided look-up table for array-like object arguments. Implementation
+        functions must follow strided array interface argument conventions:
+
+          fcn( N, x, strideX, y, strideY )
+
+        where
+
+        - N: number of indexed elements.
+        - x: input strided array.
+        - strideX: index increment for `x`.
+        - y: destination strided array.
+        - strideY: index increment for `y`.
+
+        Supported array data types consist of all supported ndarray data types.
+
+    table.ndarray: ArrayLikeObject (optional)
+        Strided look-up table for ndarray arguments. Implementation functions
+        must follow strided array ndarray interface argument conventions:
+
+        fcn( N, x, strideX, offsetX, y, strideY, offsetY )
+
+        where
+
+        - N: number of indexed elements.
+        - x: input strided array (i.e., underlying input ndarray buffer).
+        - strideX: index increment for `x`.
+        - offsetX: starting index for `x`.
+        - y: destination strided array (i.e., underlying output ndarray buffer).
+        - strideY: index increment for `y`.
+        - offsetY: starting index for `y`.
+
+        Supported data types consist of all supported ndarray data types.
+
+    Returns
+    -------
+    fcn: Function
+        Dispatch function.
+
+    Examples
+    --------
+    > var t = {};
+    > t.scalar = [ 'number', {{alias:@stdlib/math/base/special/abs}} ];
+    > t.array = [
+    ...    'float64', {{alias:@stdlib/math/strided/special/dabs}},
+    ...    'float32', {{alias:@stdlib/math/strided/special/sabs}},
+    ...    'generic', {{alias:@stdlib/math/strided/special/abs}}
+    ... ];
+    > t.ndarray = [
+    ...    'float64', {{alias:@stdlib/math/strided/special/dabs}}.ndarray,
+    ...    'float32', {{alias:@stdlib/math/strided/special/sabs}}.ndarray,
+    ...    'generic', {{alias:@stdlib/math/strided/special/abs}}.ndarray
+    ... ];
+    > var fcn = {{alias}}( t );
+
+    // Provide a number:
+    > var y = fcn( -1.0 )
+    1.0
+
+    // Provide an array-like object:
+    > var x = new {{alias:@stdlib/array/float64}}( [ -1.0, -2.0 ] );
+    > y = fcn( x )
+    <Float64Array>[ 1.0, 2.0 ]
+
+    // Provide an ndarray:
+    > x = {{alias:@stdlib/ndarray/array}}( [ [ -1.0, -2.0 ], [ -3.0, -4.0 ] ] );
+    > y = fcn( x )
+    <ndarray>
+    > y.get( 0, 1 )
+    2.0
+
+    See Also
+    --------
+

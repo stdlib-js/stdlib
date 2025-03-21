@@ -1,0 +1,46 @@
+From Your_Friend@indians.org  Thu Jul 25 11:07:02 2002
+Return-Path: <Your_Friend@indians.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 17C17440D2
+	for <jm@localhost>; Thu, 25 Jul 2002 06:06:44 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 11:06:44 +0100 (IST)
+Received: from mandark.labs.netnoteinc.com ([213.105.180.140]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6P5lo400449 for
+    <jm@jmason.org>; Thu, 25 Jul 2002 06:47:53 +0100
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    mandark.labs.netnoteinc.com (8.11.6/8.11.6) with ESMTP id g6P5kjp20924 for
+    <jm@netnoteinc.com>; Thu, 25 Jul 2002 06:46:51 +0100
+Received: from loaner02.dsl-verizon.net
+    (washdc3-ar2-4-64-142-158.washdc3.dsl-verizon.net [4.64.142.158]) by
+    webnote.net (8.9.3/8.9.3) with SMTP id GAA08441 for <jm@netnoteinc.com>;
+    Thu, 25 Jul 2002 06:46:37 +0100
+Message-Id: <200207250546.GAA08441@webnote.net>
+From: "Pale Moon" <Your_Friend@indians.org>
+To: <yyyy@netnoteinc.com>
+Subject: National Charity Suffering Since 9/11
+MIME-Version: 1.0
+Date: Thu, 25 Jul 2002 01:54:29
+Content-Type: text/html; charset="iso-8859-1"
+
+<BODY bgColor=#ffffff>
+<DIV><FONT face=Arial size=2>Dear Friend,</FONT></DIV>
+<DIV><FONT face=Arial size=2>&nbsp;</FONT></DIV>
+<DIV><FONT face=Arial size=2>"Serving the Tribes While Sharing the Culture"... Has been the mission for the American Indian Heritage Foundation for the past 29 years.</FONT></DIV>
+<DIV><FONT face=Arial size=2>&nbsp;</FONT></DIV>
+<DIV><FONT face=Arial size=2>For many years, AIHF has met the emergency requests from hundreds of Tribes with food, clothing, medical supplies, emergency grants and more. Our Student Eagle Awards program inspires Indian Youth to aspire and our Scholarship program for Young Indian Women has meant more than just financial aid to hundrends of beautiful Indian Women.</FONT></DIV>
+<DIV><FONT face=Arial size=2>&nbsp;</FONT></DIV>
+<DIV><FONT face=Arial size=2>This worthwhile endeavor is entirely funded by very generous people like you who want to help and make a difference. We need your help NOW more than ever.</FONT></DIV>
+<DIV><FONT face=Arial size=2>&nbsp;</FONT></DIV>
+<DIV><FONT face=Arial size=2><a href="http://www.indians.org/gift/gift.html"> Click Here To learn more... maybe YOU can help.</a>  </FONT></DIV>
+<DIV><FONT face=Arial size=2>&nbsp;</FONT></DIV>
+<DIV><FONT face=Arial size=2>"May You Always Walk In Beauty"</FONT></DIV>
+<DIV><FONT face=Arial size=2>Pale Moon</FONT></DIV>
+<DIV><FONT face=Arial size=2>&nbsp;</FONT></DIV>
+<DIV><FONT face=Arial size=2>&nbsp;</FONT></DIV>
+<DIV><FONT face=Arial size=2>&nbsp;</FONT></DIV>
+<DIV><FONT face=Arial size=2>We appologize if this message has been an inconvenience. You may comment to our <a href="mailto:Webmaster@indians.org">webmaster.</a>  </FONT></DIV>
+
+

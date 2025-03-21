@@ -1,0 +1,95 @@
+From ilug-admin@linux.ie  Fri Aug  2 09:56:12 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 21B52440F0
+	for <jm@localhost>; Fri,  2 Aug 2002 04:56:12 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 02 Aug 2002 09:56:12 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g728or213235 for
+    <jm-ilug@jmason.org>; Fri, 2 Aug 2002 09:50:53 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA27405; Fri, 2 Aug 2002 09:49:26 +0100
+Received: from mailsweeper.met.ie (gw.met.ie [195.7.35.20]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with SMTP id JAA27372 for <ilug@linux.ie>;
+    Fri, 2 Aug 2002 09:49:20 +0100
+Received: from SMTP agent by mail gateway Fri, 02 Aug 2002 09:50:49 -0000
+Received: from rain1.met.ie (unverified) by mailsweeper.met.ie (Content
+    Technologies SMTPRS 4.2.5) with ESMTP id
+    <T5c76c9316dc07adfaa4e0@mailsweeper.met.ie> for <ilug@linux.ie>;
+    Fri, 2 Aug 2002 09:51:28 +0100
+Received: with ESMTP id JAA12432
+Received: (from cdaly@localhost) by bofh.irmet.ie (8.11.6/8.11.0) id
+    g729t2j12686 for ilug@linux.ie; Fri, 2 Aug 2002 09:55:02 GMT
+X-Authentication-Warning: bofh.irmet.ie: cdaly set sender to
+    conor.daly@met.ie using -f
+Date: Fri, 2 Aug 2002 09:55:02 +0000
+From: Conor Daly <conor.daly@met.ie>
+To: ILUG main list <ilug@linux.ie>
+Message-Id: <20020802095502.E6407@bofh.irmet.ie>
+Mail-Followup-To: ILUG main list <ilug@linux.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+Subject: [ILUG] Fwd: OpenSSH trojan?
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Saw this on the secure shell mailing list...
+
+Conor
+
+----- Forwarded message from quentyn@fotango.com -----
+
+Date: Thu, 01 Aug 2002 12:26:53 +0100
+From: quentyn@fotango.com
+To: "secureshell@securityfocus.com" <secureshell@securityfocus.com>
+Subject: OpenSSH trojan?
+
+Posts doing the rounds ( probably loads of these posts sitting awaiting
+moderation)
+
+looks like there is a trojan in the latest OpenSSH
+
+
+http://www.mavetju.org/weblog/weblog.php
+
+
+http://docs.freebsd.org/cgi/getmsg.cgi?fetch=394609+0+current/freebsd-security
+
+----- End forwarded message -----
+
+-- 
+Conor Daly 
+Met Eireann, Glasnevin Hill, Dublin 9, Ireland
+Ph +353 1 8064276 Fax +353 1 8064247
+------------------------------------
+bofh.irmet.ie running RedHat Linux  9:54am  up 22:32,  9 users,  load average: 0.67, 0.36, 0.29
+
+
+**********************************************************************
+This email and any files transmitted with it are confidential and
+intended solely for the use of the individual or entity to whom they
+are addressed. If you have received this email in error please notify
+the system manager.
+
+This footnote also confirms that this email message has been swept 
+for the presence of computer viruses.
+
+
+**********************************************************************
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

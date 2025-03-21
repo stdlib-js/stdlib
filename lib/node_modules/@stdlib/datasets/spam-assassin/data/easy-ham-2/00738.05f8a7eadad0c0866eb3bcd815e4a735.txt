@@ -1,0 +1,87 @@
+From exmh-workers-admin@redhat.com  Mon Jul 29 11:24:32 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 09A2144121
+	for <jm@localhost>; Mon, 29 Jul 2002 06:22:44 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 11:22:44 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6RAEoi19126 for
+    <jm-exmh@JMASON.ORG>; Sat, 27 Jul 2002 11:14:51 +0100
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id AAA14689 for <jm-exmh@jmason.org>;
+    Sat, 27 Jul 2002 00:40:50 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 855553EE50; Fri, 26 Jul 2002
+    19:40:27 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 31C443EAE9
+    for <exmh-workers@listman.redhat.com>; Fri, 26 Jul 2002 19:38:16 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g6QNcGx05054 for exmh-workers@listman.redhat.com; Fri, 26 Jul 2002
+    19:38:16 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g6QNcGR05050 for
+    <exmh-workers@redhat.com>; Fri, 26 Jul 2002 19:38:16 -0400
+Received: from dimebox.bmc.com (adsl-66-140-152-233.dsl.hstntx.swbell.net
+    [66.140.152.233]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id
+    g6QNQIs26051 for <exmh-workers@redhat.com>; Fri, 26 Jul 2002 19:26:18
+    -0400
+Received: by dimebox.bmc.com (Postfix, from userid 1205) id B29C838DA9;
+    Fri, 26 Jul 2002 18:38:14 -0500 (CDT)
+Received: from dimebox (localhost [127.0.0.1]) by dimebox.bmc.com
+    (Postfix) with ESMTP id A4BBF38DA2; Fri, 26 Jul 2002 18:38:14 -0500 (CDT)
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4
+In-Reply-To: <200207262200.SAA15582@blackcomb.panasas.com>
+References: <200207262200.SAA15582@blackcomb.panasas.com>
+Comments: In-reply-to Brent Welch <welch@panasas.com> message dated "Fri,
+    26 Jul 2002 15:00:57 -0700."
+To: Brent Welch <welch@panasas.com>
+Cc: exmh-workers@spamassassin.taint.org
+Subject: Re: cvs access working?
+MIME-Version: 1.0
+From: Hal DeVore <haldevore@acm.org>
+X-Image-Url: http://www.geocities.com/hal_devore_ii/haleye48.gif
+Content-Type: text/plain; charset=us-ascii
+Message-Id: <24284.1027726689@dimebox>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Fri, 26 Jul 2002 18:38:09 -0500
+
+
+I just successfully did a cvs update via ssh.
+
+My CVS root looks a little different than yours.
+
+cat CVS/Root 
+:ext:haldevore@cvs.exmh.sourceforge.net:/cvsroot/exmh
+
+
+
+--Hal
+
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+

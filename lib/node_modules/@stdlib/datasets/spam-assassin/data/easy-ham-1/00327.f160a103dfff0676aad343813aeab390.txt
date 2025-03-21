@@ -1,0 +1,96 @@
+From fork-admin@xent.com  Mon Aug 26 22:28:34 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id DEFB243F99
+	for <jm@localhost>; Mon, 26 Aug 2002 17:28:33 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 22:28:33 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7QLMwZ10120 for <jm@jmason.org>;
+    Mon, 26 Aug 2002 22:22:58 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 878672941DE; Mon, 26 Aug 2002 13:39:22 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mta6.snfc21.pbi.net (mta6.snfc21.pbi.net [206.13.28.240])
+    by xent.com (Postfix) with ESMTP id A9E7F2940F8 for <fork@xent.com>;
+    Sat, 24 Aug 2002 08:02:21 -0700 (PDT)
+Received: from endeavors.com ([66.126.120.171]) by mta6.snfc21.pbi.net
+    (iPlanet Messaging Server 5.1 (built May  7 2001)) with ESMTP id
+    <0H1C007C2SIRJB@mta6.snfc21.pbi.net> for fork@xent.com; Sat,
+    24 Aug 2002 08:04:11 -0700 (PDT)
+From: Gregory Alan Bolcer <gbolcer@endeavors.com>
+Subject: Re: Entrepreneurs
+To: fork@spamassassin.taint.org
+Message-Id: <3D67A063.7080502@endeavors.com>
+Organization: Endeavors Technology, Inc.
+MIME-Version: 1.0
+Content-Type: text/plain; format=flowed; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-Accept-Language: en-us
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:0.9.4.1)
+    Gecko/20020508 Netscape6/6.2.3
+References: <DD4216FF-B66F-11D6-837F-003065F93D3A@topsail.org>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sat, 24 Aug 2002 08:04:03 -0700
+
+There's been well documented articles, studies of the
+French tax laws, corporate governance, and financial
+oversight that 1) dont' easily allow for ISOs, the root
+of almost all entrepreneurialship, and 2) the easy flow
+of capital to new ventures.  It was an extremely large
+issue, even debated widely in France.
+
+Greg
+
+Chuck Murcko wrote:
+
+> According to my son, it was actually Homer Simpson, who claimed the 
+> French had no word for victory.
+> 
+> Chuck
+> 
+> On Thursday, August 22, 2002, at 01:58 PM, Robert Harley wrote:
+> 
+>> An apparent quote from Dubya, from the Times (sent to me by my Dad):
+>>
+>> http://www.timesonline.co.uk/printFriendly/0,,1-43-351083,00.html
+>>
+>> ------------------------------------------------------------------------------ 
+>>
+>> TONY BLAIR's special relationship with George W. Bush is under
+>> considerable strain. Not only do the two disagree on Yassir Arafat's
+>> tenure as leader of the Palestinian Authority, but Blair has started
+>> telling disparaging anecdotes about the President.
+>>
+>> Baroness Williams of Crosby recalled a story told to her by 'my good
+>> friend Tony Blair' recently in Brighton. Blair, Bush and Jacques
+>> Chirac were discussing economics and, in particular, the decline of
+>> the French economy. 'The problem with the French,' Bush confided in
+>> Blair, 'is that they don't have a word for entrepreneur.'
+>> ------------------------------------------------------------------------------ 
+>>
+>>
+>> R
+>> http://xent.com/mailman/listinfo/fork
+>>
+> 
+> http://xent.com/mailman/listinfo/fork
+> 
+
+
+
+http://xent.com/mailman/listinfo/fork
+

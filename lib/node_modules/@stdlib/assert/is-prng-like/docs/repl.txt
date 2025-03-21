@@ -1,0 +1,28 @@
+
+{{alias}}( value )
+    Tests if a value is PRNG-like.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a value is PRNG-like.
+
+    Examples
+    --------
+    > var bool = {{alias}}( {{alias:@stdlib/random/base/randu}} )
+    true
+    > bool = {{alias}}( [ 1, 2, 3, 4 ] )
+    false
+    > bool = {{alias}}( 3.14 )
+    false
+    > bool = {{alias}}( {} )
+    false
+
+    See Also
+    --------
+

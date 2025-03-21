@@ -1,0 +1,142 @@
+From exmh-workers-admin@redhat.com  Mon Jul 22 22:46:01 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B4737440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 17:46:00 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 22:46:00 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MLiW401386 for
+    <jm-exmh@jmason.org>; Mon, 22 Jul 2002 22:44:32 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 086A43F9BB; Mon, 22 Jul 2002
+    17:40:04 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id B171B3F93C
+    for <exmh-workers@listman.redhat.com>; Mon, 22 Jul 2002 17:32:58 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g6MLWx213200 for exmh-workers@listman.redhat.com; Mon, 22 Jul 2002
+    17:32:59 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g6MLWwR13196 for
+    <exmh-workers@redhat.com>; Mon, 22 Jul 2002 17:32:58 -0400
+Received: from austin-jump.vircio.com
+    (IDENT:J9za5Dz4xkUw76rkDnoSfMp5d5TuY5UB@jump-austin.vircio.com
+    [192.12.3.99]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id g6MLLRs16910
+    for <exmh-workers@redhat.com>; Mon, 22 Jul 2002 17:21:27 -0400
+Received: (qmail 27383 invoked by uid 104); 22 Jul 2002 21:32:58 -0000
+Received: from cwg-exmh@DeepEddy.Com by localhost.localdomain with
+    qmail-scanner-0.90 (uvscan: v4.1.60/v4213. . Clean. Processed in 0.842216
+    secs); 22/07/2002 16:32:57
+Received: from deepeddy.vircio.com (@[10.1.2.1]) (envelope-sender
+    <cwg-exmh@DeepEddy.Com>) by austin-jump.vircio.com (qmail-ldap-1.03) with
+    SMTP for <exmh-workers@redhat.com>; 22 Jul 2002 21:32:57 -0000
+Received: (qmail 13572 invoked from network); 22 Jul 2002 21:32:53 -0000
+Received: from localhost (HELO deepeddy.vircio.com)
+    (?+pLzqKCsj+aActJA3EHH2mj2mJFTKBPh?@[127.0.0.1]) (envelope-sender
+    <cwg-exmh@DeepEddy.Com>) by localhost (qmail-ldap-1.03) with SMTP for
+    <exmh-workers@redhat.com>; 22 Jul 2002 21:32:53 -0000
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4
+To: Anders Eriksson <aeriksson@fastmail.fm>, exmh-workers@spamassassin.taint.org
+Subject: Re: Another bug
+In-Reply-To: <1027362794.8011.TMDA@deepeddy.vircio.com>
+References: <20020722181516.9D292470D@tippex.localdomain>
+    <1027362794.8011.TMDA@deepeddy.vircio.com>
+X-Url: http://www.DeepEddy.Com/~cwg
+X-Image-Url: http://www.DeepEddy.Com/~cwg/chris.gif
+MIME-Version: 1.0
+Content-Type: multipart/signed;
+    boundary="==_Exmh_834464772P";
+    micalg=pgp-sha1;
+    protocol="application/pgp-signature"
+Content-Transfer-Encoding: 7bit
+Message-Id: <1027373573.13274.TMDA@deepeddy.vircio.com>
+From: Chris Garrigues <cwg-exmh@DeepEddy.Com>
+X-Delivery-Agent: TMDA/0.57
+Reply-To: Chris Garrigues <cwg-dated-1027805573.3ce2ae@DeepEddy.Com>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Mon, 22 Jul 2002 16:32:50 -0500
+
+--==_Exmh_834464772P
+Content-Type: text/plain; charset=us-ascii
+
+> From:  Chris Garrigues <cwg-exmh@DeepEddy.Com>
+> Date:  Mon, 22 Jul 2002 13:33:13 -0500
+>
+> > From:  Anders Eriksson <aeriksson@fastmail.fm>
+> > Date:  Mon, 22 Jul 2002 20:15:11 +0200
+> >
+> > My feeling of this is that we really do not want to have a 
+> > Ftoc_ClearCurrent, but rather just a RescanLine and the caller had 
+> > better know the line or msgid. That routine shoud just put in the '+' 
+> > if the line/msg in question happened to be the cur msg. Thoughts?
+> 
+> Intuitively, that sounds right to me.  It does also call "tag remove", so 
+> you'll have to make sure that gets set correctly as well.
+> 
+> I think any changes that make it behave more intuitively are a good thing even 
+> if they mean we have something else to fix.  Of course, that attitude is why 
+> I've been fixing exmh bugs for 3 weeks.
+
+I just checked in a code cleanup which doesn't address this issue, but does 
+take a machete to code right around it.  You ought to 'cvs update' and see if 
+your issue becomes any clearer with all the brush removed.
+
+My patch notes that 'msgid' and 'line' are redundant with one another and removes 
+one or the other from functions which takes both.  The callers are then 
+changed to pass what the function expects.  In the case of Msg_Change, the 
+'line' argument is removed and we only have the msgid argument.  Ftoc_ClearCurrent
+is now the first line of MsgChange.
+
+Chris
+
+-- 
+Chris Garrigues                 http://www.DeepEddy.Com/~cwg/
+virCIO                          http://www.virCIO.Com
+716 Congress, Suite 200
+Austin, TX  78701		+1 512 374 0500
+
+  World War III:  The Wrong-Doers Vs. the Evil-Doers.
+
+
+
+
+--==_Exmh_834464772P
+Content-Type: application/pgp-signature
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: Exmh version 2.2_20000822 06/23/2000
+
+iD8DBQE9PHoCK9b4h5R0IUIRAl9kAJ9C/pnFLKlVYbRToLtffnXa+ffZJwCfahTx
+BE9ZJXQ6LnbKyCuhuS3IJBg=
+=aAkz
+-----END PGP SIGNATURE-----
+
+--==_Exmh_834464772P--
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+

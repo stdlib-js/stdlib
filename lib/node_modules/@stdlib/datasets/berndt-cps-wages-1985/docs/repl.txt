@@ -1,0 +1,43 @@
+
+{{alias}}()
+    Returns a random sample of 534 workers from the Current Population Survey
+    (CPS) from 1985, including their wages and and other characteristics.
+
+    Each array element has the following eleven fields:
+
+    - education: number of years of education.
+    - south: indicator variable for southern region (1 if a person lives in the
+    South; 0 if a person does not live in the South).
+    - gender: gender of the person.
+    - experience: number of years of work experience.
+    - union: indicator variable for union membership (1 if union member; 0 if
+    not a union member).
+    - wage: wage (in dollars per hour).
+    - age: age (in years).
+    - race: ethnicity/race (white, hispanic, and other).
+    - occupation: occupational category (management, sales, clerical, service,
+    professional, and other).
+    - sector: sector (other, manufacturing, or construction).
+    - married: marital status (0 if unmarried; 1 if married).
+
+    Based on residual plots, wages were log-transformed to stabilize the
+    variance.
+
+    Returns
+    -------
+    out: Array<Object>
+        CPS data.
+
+    Examples
+    --------
+    > var data = {{alias}}()
+    [ {...}, {...}, ... ]
+
+    References
+    ----------
+    - Berndt, Ernst R. 1991. _The Practice of Econometrics_. Addison Wesley
+    Longman Publishing Co.
+
+    See Also
+    --------
+

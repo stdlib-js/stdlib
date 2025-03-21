@@ -1,0 +1,77 @@
+From rpm-list-admin@freshrpms.net  Wed Jul 24 08:56:48 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4B98A440CC
+	for <jm@localhost>; Wed, 24 Jul 2002 03:56:46 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 08:56:46 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6O7rc428384 for
+    <jm-rpm@jmason.org>; Wed, 24 Jul 2002 08:53:38 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6O7n2C07312; Wed, 24 Jul 2002 09:49:02
+    +0200
+Received: from bob.dudex.net (dsl092-157-004.wdc1.dsl.speakeasy.net
+    [66.92.157.4]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g6O7lXC29449
+    for <rpm-list@freshrpms.net>; Wed, 24 Jul 2002 09:47:33 +0200
+Received: from [66.92.157.3] (helo=www.dudex.net) by bob.dudex.net with
+    esmtp (Exim 3.35 #1) id 17XGtM-0000gs-00 for rpm-list@freshrpms.net;
+    Wed, 24 Jul 2002 03:49:05 -0400
+X-Originating-Ip: [4.64.217.201]
+From: "" Angles " Puglisi" <angles@aminvestments.com>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: Ximian apt repos?
+Message-Id: <20020724.FRs.59646600@www.dudex.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 8bit
+Content-Disposition: inline
+X-Mailer: AngleMail for phpGroupWare (http://www.phpgroupware.org) v
+    0.9.14.000
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Wed, 24 Jul 2002 07:50:51 +0000
+Date: Wed, 24 Jul 2002 07:50:51 +0000
+
+Lance (lance_tt@bellsouth.net) wrote*:
+>
+>well, from the looks of things, Evolution mail client isn't supported
+>just yet, so I reckon I'll wait a bit.  Whoever posted these gnome2 apt
+>repositories, thanks!!!
+>
+
+I'm uising Havoc Pennington's Gnomehide and it rocks. I installed it before I
+knew about apt, but one of the previous emails had an apt repository that
+claimed to have gnomehide. Just remember there is one kew file that makes the
+difference between Gnome1 and Gnome2 being used. I *think* it is "gnome-core"
+vs. "gnome-session" but I can not remember.
+
+Note that that those same files are probably in the Limbo beta, except
+updated. There has not been a major change to "gnomehide" in a while, I
+suspect Havoc's work went into Limbo then.
+
+--
+That's "angle" as in geometry.
+
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

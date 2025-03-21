@@ -1,0 +1,78 @@
+From fork-admin@xent.com  Mon Sep  9 14:34:35 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 5238816EFC
+	for <jm@localhost>; Mon,  9 Sep 2002 14:34:33 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 14:34:34 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g89BSDC11487 for <jm@jmason.org>;
+    Mon, 9 Sep 2002 12:28:13 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 5384A2942D0; Mon,  9 Sep 2002 04:25:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from homer.perfectpresence.com (unknown [209.123.207.194]) by
+    xent.com (Postfix) with ESMTP id 1CA9D2942CF for <fork@xent.com>;
+    Mon,  9 Sep 2002 04:24:52 -0700 (PDT)
+Received: from adsl-157-233-109.jax.bellsouth.net ([66.157.233.109]
+    helo=regina) by homer.perfectpresence.com with smtp (Exim 3.36 #1) id
+    17oMi0-0008Uu-00; Mon, 09 Sep 2002 07:28:01 -0400
+From: "Geege Schuman" <geege@barrera.org>
+To: "John Evdemon" <jevdemon@acm.org>
+Cc: <fork@spamassassin.taint.org>
+Subject: RE: Recommended Viewing
+Message-Id: <ILEHJNJFPDLMDEKNIAKCMEECCAAA.geege@barrera.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+In-Reply-To: <3D7C479A.6222.1C08076@localhost>
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4910.0300
+Importance: Normal
+X-Antiabuse: This header was added to track abuse, please include it with
+    any abuse report
+X-Antiabuse: Primary Hostname - homer.perfectpresence.com
+X-Antiabuse: Original Domain - xent.com
+X-Antiabuse: Originator/Caller UID/GID - [0 0] / [0 0]
+X-Antiabuse: Sender Address Domain - barrera.org
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 9 Sep 2002 07:25:59 -0400
+
+Agreed, completely.  I totally grokked the notion of unintened consequence
+with the original.
+
+-----Original Message-----
+From: fork-admin@xent.com [mailto:fork-admin@xent.com]On Behalf Of John
+Evdemon
+Sent: Monday, September 09, 2002 7:03 AM
+To: Fork@xent.com
+Subject: Re: Recommended Viewing
+
+
+On 8 Sep 2002 at 22:15, Geege Schuman wrote:
+
+> who watched Lathe of Heaven?  (A&E, 8 pm EDT)  who has seen
+> the original?
+>
+By "original" if you are referring to the old PBS version, I liked that
+version much better.  Much more thought provoking.
+
+
+
+
+

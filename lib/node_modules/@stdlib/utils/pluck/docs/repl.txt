@@ -1,0 +1,51 @@
+
+{{alias}}( arr, prop[, options] )
+    Extracts a property value from each element of an object array.
+
+    The function skips `null` and `undefined` array elements.
+
+    Extracted values are not cloned.
+
+    Parameters
+    ----------
+    arr: Array
+        Source array.
+
+    prop: string
+        Property to access.
+
+    options: Object (optional)
+        Options.
+
+    options.copy: boolean (optional)
+        Boolean indicating whether to return a new data structure. To mutate the
+        input data structure (e.g., when input values can be discarded or when
+        optimizing memory usage), set the `copy` option to `false`. Default:
+        true.
+
+    Returns
+    -------
+    out: Array
+        Destination array.
+
+    Examples
+    --------
+    > var arr = [
+    ...     { 'a': 1, 'b': 2 },
+    ...     { 'a': 0.5, 'b': 3 }
+    ... ];
+    > var out = {{alias}}( arr, 'a' )
+    [ 1, 0.5 ]
+
+    > arr = [
+    ...     { 'a': 1, 'b': 2 },
+    ...     { 'a': 0.5, 'b': 3 }
+    ... ];
+    > out = {{alias}}( arr, 'a', { 'copy': false } )
+    [ 1, 0.5 ]
+    > var bool = ( arr[ 0 ] === out[ 0 ] )
+    true
+
+    See Also
+    --------
+

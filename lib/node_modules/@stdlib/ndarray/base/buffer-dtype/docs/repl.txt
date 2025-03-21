@@ -1,0 +1,28 @@
+
+{{alias}}( buffer )
+    Returns the data type of an ndarray data buffer.
+
+    If provided a buffer argument having an unknown or unsupported type, the
+    function returns `null`.
+
+    Parameters
+    ----------
+    buffer: any
+        ndarray data buffer.
+
+    Returns
+    -------
+    out: string|null
+        Data type.
+
+    Examples
+    --------
+    > var buf = new {{alias:@stdlib/array/float64}}( 10 );
+    > var dt = {{alias}}( buf )
+    'float64'
+    > dt = {{alias}}( 'beep' )
+    null
+
+    See Also
+    --------
+

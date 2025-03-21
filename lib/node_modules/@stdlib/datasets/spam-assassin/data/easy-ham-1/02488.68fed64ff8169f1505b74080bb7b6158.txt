@@ -1,0 +1,67 @@
+From ilug-admin@linux.ie  Wed Dec  4 11:52:38 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 3DF4616F18
+	for <jm@localhost>; Wed,  4 Dec 2002 11:52:37 +0000 (GMT)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 04 Dec 2002 11:52:37 +0000 (GMT)
+Received: from lugh.tuatha.org (postfix@lugh.tuatha.org [194.125.145.45])
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id gB4B9c811445 for
+    <jm-ilug@jmason.org>; Wed, 4 Dec 2002 11:09:39 GMT
+Received: from lugh.tuatha.org (localhost [127.0.0.1]) by lugh.tuatha.org
+    (Postfix) with ESMTP id 6A0C534030; Wed,  4 Dec 2002 11:11:11 +0000 (GMT)
+Delivered-To: linux.ie-ilug@localhost
+Received: from corvil.com. (k100-145.bas1.dbn.dublin.eircom.net
+    [159.134.100.145]) by lugh.tuatha.org (Postfix) with ESMTP id 7811134030
+    for <ilug@linux.ie>; Wed,  4 Dec 2002 11:10:35 +0000 (GMT)
+Received: from corvil.com (pixelbeat.local.corvil.com [172.18.1.170]) by
+    corvil.com. (8.12.5/8.12.5) with ESMTP id gB4BAYPU093486 for
+    <ilug@linux.ie>; Wed, 4 Dec 2002 11:10:34 GMT (envelope-from
+    padraig.brady@corvil.com)
+Message-Id: <3DEDE21E.1010705@corvil.com>
+From: Padraig Brady <padraig.brady@corvil.com>
+Organization: Corvil Networks
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.2a) Gecko/20020913
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: ilug@linux.ie
+Subject: Re: [ILUG] PostgreSQL vs. MySQL
+References: <3A29493B9B18D6118AD80090278AECA2026B84EB@EXCHANGE>
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 8bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Beenthere: ilug@linux.ie
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:ilug-request@linux.ie?subject=help>
+List-Post: <mailto:ilug@linux.ie>
+List-Subscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=subscribe>
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+List-Unsubscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=unsubscribe>
+List-Archive: <http://www.linux.ie/pipermail/ilug/>
+X-Original-Date: Wed, 04 Dec 2002 11:08:14 +0000
+Date: Wed, 04 Dec 2002 11:08:14 +0000
+
+Sean O'Donnell wrote:
+> Doesnt answer your question, but theres a very simple reason i 
+ > develop a lot on mysql, it runs on windows and linux, a lot of
+ > clients only have windows servers, and last time i checked
+ > you can only run postgresql on windows with a lot of fecking
+> around with cygwin. give postgres a decent standalone windows 
+ > build and i reckon you would see a lot of defections.
+
+This is pertinent: http://lwn.net/Articles/17067/
+
+Pádraig.
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

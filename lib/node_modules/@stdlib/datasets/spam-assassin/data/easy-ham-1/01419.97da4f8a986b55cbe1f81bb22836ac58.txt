@@ -1,0 +1,30 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Fri Sep  6 03:14:07 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Thu, 05 Sep 2002 22:14:07 -0400
+Subject: [Spambayes] test sets?
+In-Reply-To: <15735.50243.135743.32180@12-248-11-90.client.attbi.com>
+Message-ID: <LNBBLJKPBEHFEDALKOLCIEFEBCAB.tim.one@comcast.net>
+
+[Skip Montanaro]
+> Any thought to wrapping up your spam and ham test sets for
+> inclusion w/ the spambayes project?
+
+I gave it all the thought it deserved <wink>.  It would be wonderful to get
+several people cranking on the same test data, and I'm all in favor of that.
+OTOH, my Data/ subtree currently has more than 35,000 files slobbering over
+134 million bytes -- even if I had a place to put that much stuff, I'm not
+sure my ISP would let me email it in one msg <wink>.
+
+Apart from that, there was a mistake very early on whose outcome was that
+this isn't the data I hoped I was using.  I *hoped* I was using a snapshot
+of only recent msgs (to match the snapshot this way of only spam from 2002),
+but turns out they actually go back to the last millennium.  Greg Ward is
+currently capturing a stream coming into python.org, and I hope we can get a
+more modern, and cleaner, test set out of that.  But if that stream contains
+any private email, it may not be ethically possible to make that available.
+Can you think of anyplace to get a large, shareable ham sample apart from a
+public mailing list?  Everyone's eager to share their spam, but spam is so
+much alike in so many ways that's the easy half of the data collection
+problem.
+

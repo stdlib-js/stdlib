@@ -1,0 +1,165 @@
+From fork-admin@xent.com  Mon Sep  2 16:22:39 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E18EC44161
+	for <zzzz@localhost>; Mon,  2 Sep 2002 11:22:07 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 02 Sep 2002 16:22:07 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g829uqZ27657 for <zzzz@spamassassin.taint.org>;
+    Mon, 2 Sep 2002 10:56:53 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id E5391294189; Mon,  2 Sep 2002 02:54:01 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from argote.ch (argote.ch [80.65.224.17]) by xent.com (Postfix)
+    with ESMTP id E262F294099 for <fork@xent.com>; Mon,  2 Sep 2002 02:53:06
+    -0700 (PDT)
+Received: by argote.ch (Postfix, from userid 500) id EDC5CC44D;
+    Mon,  2 Sep 2002 11:54:55 +0200 (CEST)
+To: fork@spamassassin.taint.org
+Subject: RE: Java is for kiddies
+Message-Id: <20020902095455.EDC5CC44D@argote.ch>
+From: harley@argote.ch (Robert Harley)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon,  2 Sep 2002 11:54:55 +0200 (CEST)
+
+Reza B'Far wrote:
+>This thread kind of surprises me... I started coding with C, then C++, and
+>moved on to Java... And, I think that:
+
+Looks like a case of "MY experience is comprehensive, YOUR'S is
+anecdotal, THEY don't know what they're talking about".
+
+
+>1.  The people who pay the wages don't give a flyin' heck what programming
+>language you write things in... they just want it to work.
+
+In my experience, they do care.  It has to work certainly, and in
+particular it has to work with what they've already got, and it has to
+work on client's systems.
+
+My limited experience of Java started a few years ago when support on
+Linux was so terrible that I ran away screaming and haven't come back yet.
+
+Microsoft has announced that they plan to remove Java from Windows.
+They took it out of XP already and it has to be installed with a
+service pack.  Somehow, I can't imagine them removing the ability to
+run C programs.
+
+
+>2.  C and C++ forces the developer to solve problems such as memory
+>management over and over again.
+
+Can't say I spend any noticeable amount of time on memory management
+issues, apart from the fact that I frequently need > 4 GB.
+
+
+>It's about design patterns, architecture, high level stuff...
+
+If your problem just requires application of a "design pattern" to solve,
+then it's trivial anyway irrespective of language.
+
+
+>I am amazed by the amount of time wasted by people talking about low
+>level problems that have been solved 10 million times over and over
+>and over again...
+
+You appear to be gratuitously asserting that C programmers waste time
+on irrelevant low-level problems and Java programmers don't.  Depends
+entirely on the programmer, not the language.
+
+
+>3.  Java is not just a programming language! It's also a platform...
+
+Buzzword.
+
+
+>a monolithic set of API's or a crap load of different API's slicing
+>and dicing the same problems 50 different ways?
+
+Unsupported assertion.
+
+
+>4.  If you have a program of any type of high complexity written in C, you
+>can't possibly think that you could port it to different platforms within
+>the same magnitude of cost as Java....
+
+Dunno.  E.g., I ported a wee 15000-line C program to Darwin on PowerPC
+in a few minutes yesterday.  Sure if it was badly designed it would be
+10 times the size and harder to port.  If it depended on unavailable
+libraries it would be much harder.  Portable code is easy to port.
+At least that is the case when then language you used is available on
+the target platform: I also run on ARM systems with no proper Java.
+
+
+>5.  Makes no sense for a scientific or a business project to depend on a
+>person... Java, IMHO, reduces the dependence of these entities on the
+>individual developer as it is much easier to reverse engineer Java as it is
+>to reverse engineer C (large applications).
+
+You can pay a good programmer to solve your problem now, or else get
+some kids to hack spaghetti Fortran in any language and then pay for
+maintenance headaches ad infinitum.
+
+ 
+>6.  Hardware is getting so fast that I'm not sure if the performance
+>difference between Java and C/C++ are relevant any more.
+
+Whoah!!!  Performance matters to me every day.  (Right now I'm taking
+time out to write email while waiting for a job to run).  Sure I could
+wait 5 years until everyone's PC is fast enough to generate random EC's
+in no time, when any twit will be able to program inefficient code
+that is fast enough and the market will be overrun by competitors,
+or I can do it now when very few people can.
+
+ 
+>The end goal is the scientific or business problem to be solved.
+
+Yes.
+
+
+>And for those problems, languages such as Java, SmallTalk, and others
+>allow you to think more high level than low level.  Thinking of bits
+>and bytes takes too much gray matter away from the real important
+>problems....
+
+It's true!  I admit everything!  Mea maxima culpa!  Working in C makes
+me spend all day thinking base, rank thoughts about hard-core bitography!
+Not.
+
+Actually I spend most of my time thinking in high-level mathematics.
+
+
+>Why do most computer scientists insist on solving the same problems
+>over and over again [...]
+
+Dunno, and frankly I don't see the relevance to the issue at hand.
+
+
+I'm sure Java is fine for some stuff, as is C or whatever.  Horses for
+courses.
+
+
+Bye,
+  Rob.
+     .-.                                                               .-.
+    /   \           .-.                                 .-.           /   \
+   /     \         /   \       .-.     _     .-.       /   \         /     \
+  /       \       /     \     /   \   / \   /   \     /     \       /       \
+ /         \     /       \   /     `-'   `-'     \   /       \     /         \
+            \   /         `-'                     `-'         \   /
+             `-'                                               `-'
+

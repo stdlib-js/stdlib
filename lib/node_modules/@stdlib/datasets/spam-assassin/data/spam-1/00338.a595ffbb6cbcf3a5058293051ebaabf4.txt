@@ -1,0 +1,120 @@
+From 27WHlzIOcxxfl@mail.ht.net.tw  Mon Sep 16 19:09:40 2002
+Return-Path: <27WHlzIOcxxfl@mail.ht.net.tw>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id 1187616F03
+	for <zzzz@localhost>; Mon, 16 Sep 2002 19:09:39 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 16 Sep 2002 19:09:39 +0100 (IST)
+Received: from vic (61-230-27-47.HINET-IP.hinet.net [61.230.27.47]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with SMTP id g8GHbBC03550 for
+    <zzzz@jmason.org>; Mon, 16 Sep 2002 18:37:11 +0100
+Date: Mon, 16 Sep 2002 18:37:11 +0100
+Received: from party by gcn.net.tw with SMTP id 7AEqQF0sKZQlE5DgCKCEvOP;
+    Tue, 15 Sep 2015 01:42:02 +0800
+Message-Id: <be6DqittO@mail.seeder.net.tw>
+From: abc@ms22.hinet.net
+To: ¥¼©R¦W.txt@dogma.slashnull.org, 0913.10.TXT@dogma.slashnull.org,
+	0913.11.TXT@dogma.slashnull.org, 0913.12.TXT@dogma.slashnull.org,
+	0913.13.TXT@dogma.slashnull.org, 0913.14.TXT@dogma.slashnull.org,
+	0913.2.TXT@dogma.slashnull.org, 0913.3.TXT@dogma.slashnull.org,
+	0913.4.TXT@dogma.slashnull.org, 0913.5.TXT@dogma.slashnull.org,
+	0913.6.TXT@dogma.slashnull.org, 0913.7.TXT@dogma.slashnull.org,
+	0913.8.TXT@dogma.slashnull.org, 0913.9.TXT@dogma.slashnull.org,
+	0915.1.TXT@dogma.slashnull.org, 0915.10.TXT@dogma.slashnull.org,
+	0915.11.TXT@dogma.slashnull.org, 0915.12.TXT@dogma.slashnull.org,
+	0915.13.TXT@dogma.slashnull.org, 0915.14.TXT@dogma.slashnull.org,
+	0915.15.TXT@dogma.slashnull.org, 0915.16.TXT@dogma.slashnull.org,
+	0915.2.TXT@dogma.slashnull.org, 0915.3.TXT@dogma.slashnull.org,
+	0915.4.TXT@dogma.slashnull.org, 0915.5.TXT@dogma.slashnull.org,
+	0915.6.TXT@dogma.slashnull.org, 0915.7.TXT@dogma.slashnull.org,
+	0915.8.TXT@dogma.slashnull.org, 0915.9.TXT@dogma.slashnull.org,
+	0916.1.TXT@dogma.slashnull.org, 0916.10.TXT@dogma.slashnull.org,
+	0916.11.TXT@dogma.slashnull.org, 0916.12.TXT@dogma.slashnull.org,
+	0916.13.TXT@dogma.slashnull.org, 0916.14.TXT@dogma.slashnull.org,
+	0916.15.TXT@dogma.slashnull.org, 0916.16.TXT@dogma.slashnull.org,
+	0916.17.TXT@dogma.slashnull.org, 0916.18.TXT@dogma.slashnull.org,
+	0916.19.TXT@dogma.slashnull.org, 0916.20.TXT@dogma.slashnull.org,
+	0916.21.TXT@dogma.slashnull.org, 0916.22.TXT@dogma.slashnull.org,
+	0916.23.TXT@dogma.slashnull.org, 0916.24.TXT@dogma.slashnull.org,
+	0916.3.TXT@dogma.slashnull.org, 0916.4.TXT@dogma.slashnull.org,
+	0916.5.TXT@dogma.slashnull.org, 0916.6.TXT@dogma.slashnull.org,
+	0916.7.TXT@dogma.slashnull.org, 0916.8.TXT@dogma.slashnull.org,
+	0916.9.TXT@dogma.slashnull.org, 0913.1.TXT@dogma.slashnull.org
+Subject: =?big5?Q?re:=B7Q=ADn=ADP=B4I,=A7A=C1=D9=ADn=B5=A5=A6h=A4[?=
+MIME-Version: 1.0
+X-Mailer: bNngf4C0mjSsqJIXFFxHjZeAH9ON5
+X-Priority: 3
+X-Msmail-Priority: Normal
+Content-Type: multipart/related; type="multipart/alternative"; boundary="----=_NextPart_dDSo3gGXsd1lAyTI8"
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_dDSo3gGXsd1lAyTI8
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_dDSo3gGXsd1lAyTI8AA"
+
+
+------=_NextPart_dDSo3gGXsd1lAyTI8AA
+Content-Type: text/html;
+	charset="big5"
+Content-Transfer-Encoding: base64
+
+PGh0bWw+DQoNCjxoZWFkPg0KPG1ldGEgaHR0cC1lcXVpdj0iQ29udGVudC1MYW5ndWFnZSIgY29u
+dGVudD0iemgtdHciPg0KPG1ldGEgbmFtZT0iR0VORVJBVE9SIiBjb250ZW50PSJNaWNyb3NvZnQg
+RnJvbnRQYWdlIDUuMCI+DQo8bWV0YSBuYW1lPSJQcm9nSWQiIGNvbnRlbnQ9IkZyb250UGFnZS5F
+ZGl0b3IuRG9jdW1lbnQiPg0KPG1ldGEgaHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50
+PSJ0ZXh0L2h0bWw7IGNoYXJzZXQ9YmlnNSI+DQo8dGl0bGU+s2+sT6llsFWl0bFNt368c6dppL2l
+caVOtW+kxaq9sbWmXqtItUyqa7G1pqwgy+c8L3RpdGxlPg0KPC9oZWFkPg0KDQo8Ym9keT4NCg0K
+PHAgc3R5bGU9Im1hcmdpbi10b3A6IDBweDsgbWFyZ2luLWJvdHRvbTogMHB4Ij48Zm9udCBjb2xv
+cj0iIzgwODA4MCI+DQqzb6xPqWWwVaXRsU23frxzp2mkvaVxpU61b6TFqr2xtaZeq0i1TKprsbWm
+rCDL5yB+ICE8L2ZvbnQ+PC9wPg0KPGhyIFNJWkU9IjEiPg0KPGRpdiBhbGlnbj0iY2VudGVyIj4N
+CiAgPGNlbnRlcj4NCiAgPHRhYmxlIHN0eWxlPSJib3JkZXI6IDFweCBkb3R0ZWQgI0ZGMDAwMDsg
+OyBib3JkZXItY29sbGFwc2U6Y29sbGFwc2UiIGhlaWdodD0iMzY1IiBjZWxsU3BhY2luZz0iMCIg
+Y2VsbFBhZGRpbmc9IjAiIHdpZHRoPSI2MDQiIGJvcmRlcj0iMCIgYm9yZGVyY29sb3JsaWdodD0i
+IzAwODAwMCIgYm9yZGVyY29sb3I9IiMxMTExMTEiPg0KICAgIDx0cj4NCiAgICAgIDx0ZCB2QWxp
+Z249ImNlbnRlciIgYWxpZ249Im1pZGRsZSIgd2lkdGg9IjU5OCIgYmdDb2xvcj0iI0ZGRkYwMCIg
+aGVpZ2h0PSIzNjUiPg0KICAgICAgPHAgYWxpZ249ImNlbnRlciI+oUA8L3A+DQogICAgICA8cCBh
+bGlnbj0iY2VudGVyIj48Zm9udCBmYWNlPSK80LeixekiIHNpemU9IjQiIGNvbG9yPSIjMDAwMEZG
+Ij6mbqpCpM2w2iE8L2ZvbnQ+PC9wPg0KICAgICAgPHAgYWxpZ249ImNlbnRlciI+PGZvbnQgZmFj
+ZT0ivNC3osXpIiBzaXplPSI0IiBjb2xvcj0iIzAwMDBGRiI+DQogICAgICCzXKZopEiv4KRPqFOm
+s6Txp0GmbiymXaywtHi0pKRGrsm+9zwvZm9udD48L3A+DQogICAgICA8cCBhbGlnbj0iY2VudGVy
+Ij48Zm9udCBmYWNlPSK80LeixekiIHNpemU9IjQiIGNvbG9yPSIjMDAwMEZGIj6p0qVIpGq1b6dR
+passs9C3fq1QtEksPC9mb250PjwvcD4NCiAgICAgIDxwIGFsaWduPSJjZW50ZXIiPjxmb250IGZh
+Y2U9IrzQt6LF6SIgc2l6ZT0iNCIgY29sb3I9IiMwMDAwRkYiPrNcpmg8L2ZvbnQ+PGZvbnQgZmFj
+ZT0ivNC3osXpIiBjb2xvcj0iI0ZGMDAwMCIgc2l6ZT0iNiI+vve3fDwvZm9udD48Zm9udCBmYWNl
+PSK80LeixekiIHNpemU9IjQiIGNvbG9yPSIjMDAwMEZGIj6lbqr5rsksqbmpuaV1PC9mb250Pjxm
+b250IGZhY2U9IrzQt6LF6SIgY29sb3I9IiNGRjAwRkYiIHNpemU9IjYiPqazM6ztxMEhPC9mb250
+PjwvcD4NCiAgICAgIDxwIGFsaWduPSJjZW50ZXIiPjxmb250IGZhY2U9IrzQt6LF6SIgc2l6ZT0i
+NCIgY29sb3I9IiMwMDAwRkYiPrROpl2ssCZxdW90OzwvZm9udD48Zm9udCBmYWNlPSK80Leixeki
+IGNvbG9yPSIjMDAwMEZGIiBzaXplPSI1Ij6ko6XMpN8mcXVvdDs8L2ZvbnQ+PGZvbnQgZmFjZT0i
+vNC3osXpIiBzaXplPSI0IiBjb2xvcj0iIzAwMDBGRiI+s3m0TrNcpmikSKZis2+4zKaopVw8L2Zv
+bnQ+PC9wPg0KICAgICAgPHAgYWxpZ249ImNlbnRlciI+PGZvbnQgZmFjZT0ivNC3osXpIiBzaXpl
+PSI0IiBjb2xvcj0iIzAwMDBGRiI+s8yxTbd+qrq5zraku7K+ybF6PC9mb250PjwvcD4NCiAgICAg
+IDxwIGFsaWduPSJjZW50ZXIiPjxhIGhyZWY9Imh0dHA6Ly92aWMuaDhoLmNvbS50dy8iPg0KICAg
+ICAgPGZvbnQgc2l6ZT0iNiIgZmFjZT0ivNC3osXpIiBjb2xvcj0iI0ZGMDAwMCI+MrhVpLi26qRA
+rdOkcKbRwfOqurnaPC9mb250PjwvYT48L3A+DQogICAgICA8cCBhbGlnbj0iY2VudGVyIj4yMKTA
+xMGs3cC0s2+t0773t3wsp0G0TqxPptukdqq6pUSkSCGvrLF6pm65QjwvcD4NCiAgICAgIDxwPjxm
+b250IGNvbG9yPSIjZmYwMGZmIj48YSBocmVmPSJodHRwOi8vdmljLmg4aC5jb20udHcvIj4NCiAg
+ICAgIGh0dHA6Ly92aWMuaDhoLmNvbS50dzwvYT48L2ZvbnQ+PHA+PGZvbnQgY29sb3I9IiNGRjAw
+MDAiPg0KICAgICAgPHNwYW4gbGFuZz0iZW4tdXMiPjxmb250IHNpemU9IjciPnBzOjwvZm9udD48
+L3NwYW4+t1G2aaRAqEKqvrlEpnCm86ZirmG7tMNQpc669Lj0wcikar/6LKVpPC9mb250Pjxmb250
+IHNpemU9IjQiIGNvbG9yPSIjMDAwMEZGIj6nS7ZPs/imV7r0uPSvU7BWPC9mb250PjxwPg0KICAg
+ICAgPGZvbnQgY29sb3I9IiNGRjAwMDAiPqZwqkesebZxuUywqqzdpKOo7L11pFe8dqT5LKVpr8Go
++qdLtk+z0Ld+pfq60DwvZm9udD48Zm9udCBjb2xvcj0iIzAwMDBGRiI+KL3QpmKtuq22r2SkValt
+ple5cbjcpu2nfSk8L2ZvbnQ+PHA+oUA8cD4NCiAgICAgIKFAPHA+oUA8cD6hQDwvdGQ+DQogICAg
+PC90cj4NCiAgPC90YWJsZT4NCiAgPC9jZW50ZXI+DQo8L2Rpdj4NCjxociBTSVpFPSIxIj4NCjxw
+IHN0eWxlPSJtYXJnaW4tdG9wOiAwcHg7IG1hcmdpbi1ib3R0b206IDBweCIgYWxpZ249ImNlbnRl
+ciI+DQo8Zm9udCBjb2xvcj0iI2ZmMDAwMCI+pnCms6W0wlq90KijvcyhQaSjt1GmQaasqOymuatI
+vdCr9iZuYnNwOyAtJmd0OyZuYnNwOyAoPGEgaHJlZj0iaHR0cDovL3gtbWFpbC5oOGguY29tLnR3
+IiB0YXJnZXQ9Il9ibGFuayI+qdqmrLxzp2k8L2E+KTwvZm9udD48L3A+DQoNCjwvYm9keT4NCg0K
+PC9odG1sPg==
+
+
+------=_NextPart_dDSo3gGXsd1lAyTI8AA--
+------=_NextPart_dDSo3gGXsd1lAyTI8--
+
+
+
+

@@ -1,0 +1,89 @@
+{
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/number/float64/base/from-words",
+        "@stdlib/number/float64/base/to-words",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/constants/float64/exponent-bias",
+        "@stdlib/constants/float64/high-word-exponent-mask",
+        "@stdlib/constants/float64/high-word-significand-mask"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/number/float64/base/from-words",
+        "@stdlib/number/float64/base/to-words",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/constants/float64/exponent-bias",
+        "@stdlib/constants/float64/high-word-exponent-mask",
+        "@stdlib/constants/float64/high-word-significand-mask"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/number/float64/base/from-words",
+        "@stdlib/number/float64/base/to-words",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/constants/float64/exponent-bias",
+        "@stdlib/constants/float64/high-word-exponent-mask",
+        "@stdlib/constants/float64/high-word-significand-mask"
+      ]
+    }
+  ]
+}

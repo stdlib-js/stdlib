@@ -1,0 +1,154 @@
+From fork-admin@xent.com  Mon Sep 23 23:34:29 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 1841616F03
+	for <jm@localhost>; Mon, 23 Sep 2002 23:34:26 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 23 Sep 2002 23:34:26 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8NMSIC05539 for <jm@jmason.org>;
+    Mon, 23 Sep 2002 23:28:19 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 529EB2941DD; Mon, 23 Sep 2002 15:22:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from alumnus.caltech.edu (alumnus.caltech.edu [131.215.49.51])
+    by xent.com (Postfix) with ESMTP id 067E12941DC for <Fork@xent.com>;
+    Mon, 23 Sep 2002 15:21:02 -0700 (PDT)
+Received: from localhost (localhost [127.0.0.1]) by alumnus.caltech.edu
+    (8.12.3/8.12.3) with ESMTP id g8NMOeSV005331; Mon, 23 Sep 2002 15:24:40
+    -0700 (PDT)
+Subject: SF Weekly's Ultimate SF Date lineup :-)
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+MIME-Version: 1.0 (Apple Message framework v482)
+Cc: arvind@bea.com
+To: Fork@xent.com
+From: Rohit Khare <khare@alumni.caltech.edu>
+Message-Id: <431A5C36-CF43-11D6-817E-000393A46DEA@alumni.caltech.edu>
+X-Mailer: Apple Mail (2.482)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 23 Sep 2002 15:24:44 -0700
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g8NMSIC05539
+
+I love the absurd sense of humor it takes to build up such an elaborate 
+evening only to note that "even if the date's a bust you can always have 
+a hundred people up for cocktails" in your penthouse suite at the end of 
+the night :-)
+
+Personally, I'd put one point in favor of the Redwood Room over Lapis: 
+on a weeknight, you can still whip out a TiBook and write, since it's a 
+hotel bar. And it seems to give people all sorts of license to 
+interrogate you as to why you're writing with a double of scotch :-)
+
+Best,
+   Rohit
+
+> Five Best Ways to Impress Your Date
+>
+> You've met the biped of your dreams at the corner laundromat and, 
+> wonder of wonders, she's agreed to go out with you this Saturday. Don't 
+> blow it! Follow the instructions below and even if you impress your 
+> date so much you never see her again, your evening will be a memorable 
+> one. All you need are a chauffeur, a change of clothes, and several 
+> hundred thousand dollars.
+>
+> Luxury Suite at Pacific Bell Park
+>
+> Third and King streets, 972-2000, www.sfgiants.com
+>
+> Kick off your date with an afternoon at the ballpark -- not just any 
+> ballpark, but just about the best ballpark in the country, and not in 
+> some drafty, behind-the-plate box seat but in one of the park's lushly 
+> accessorized luxury suites. An elevator whisks you from a private 
+> entrance on Willie Mays Plaza to your dwelling place above the infield. 
+> Besides the excellent views of the bay, the park, and the Giants in 
+> action, there's a balcony, a wet bar, a refrigerator, two televisions, 
+> a stereo/CD player, a dual-line phone, Internet access, room service, 
+> and a concierge to call you a cab or make your restaurant reservations 
+> for you. No one is admitted without proper clearance, ensuring your 
+> utmost privacy. Next: Pull yourself together for ...
+>
+> Cocktails at Lapis
+>
+> Pier 33 (Embarcadero at Bay), 982-0203,
+>
+> www.lapis-sf.com
+>
+> Now that the Redwood Room has devolved into just another velvet-rope 
+> yuppie hangout, the city has no clear-cut, top-of-the-line cocktail 
+> lounge such as Chicago's Pump Room or New York's King Cole Bar 
+> (although Maxfield's, the Compass Rose, and the Top of the Mark are 
+> excellent runners-up). Best of all is Lapis, where the wannabe Noel 
+> Coward can sip an estimable Gibson in the lounge adjoining the dining 
+> room. The dramatically backlit bar is framed by lush bronze draperies 
+> that complement the room's deep-blue setting, and towering ceilings 
+> give the lounge a graceful, airy ambience. Floor-to-ceiling windows 
+> provide a lush panorama of the bay and the hills beyond.
+>
+>
+> Dinner at the Dining Room
+>
+> Ritz-Carlton Hotel, 600 Stockton (between Pine and
+>
+> California), 296-7465, www.ritzcarlton.com
+>
+> Your next stop on the road to beguilement is one of the handsomest 
+> dining rooms in the country. The tranquil sounds of a harp underscore a 
+> sumptuous setting of polished mahogany, soft linens, and fine crystal 
+> gleaming in the candlelight. Chef Sylvain Portay prepares luxurious 
+> nouvelle cuisine in several courses: lobster salad with caviar cream; 
+> turbot with crayfish and truffles; roasted squab with port-marinated 
+> figs; saffron-poached pear with guanaja chocolate gratin. Sommelier 
+> Stéphane Lacroix maintains a fabulous cellar, the service is impeccable 
+> and inviting, and intimate discourse is practically inevitable. Next:
+>
+> Charter the Rendezvous From Rendezvous Charters
+>
+> Pier 40 (in South Beach Harbor), 543-7333,
+>
+> www.baysail.com
+>
+> Nothing's more enticing than an evening cruise around San Francisco 
+> Bay, and the islands, bridges, and lights of the city are especially 
+> entrancing viewed from this vintage brigantine schooner. Built in 1933 
+> and recently restored to its former glory, the 78-foot Rendezvous looks 
+> like a clipper ship out of the Gold Rush era, with its 80-foot masts 
+> and square-rigged sails. Intricately carved mahogany, pecan, ash, and 
+> rosewood accent the brass-railed, velvet-cushioned rooms below decks, 
+> the perfect spot for a sip of Veuve Cliquot and some subtle canoodling.
+>
+> Penthouse Suite at the Fairmont Hotel
+>
+> 950 Mason (between California and Sacramento),
+>
+> 772-5000, www.fairmont.com
+>
+> Last but not least, escort your companion to what has been described as 
+> the most expensive hotel accommodation in the world: the Fairmont's 
+> elaborate penthouse. The eight-room suite (including three bedrooms, 
+> three baths, a dining room, a library, a billiard room, a fully 
+> equipped kitchen, and a living room with fireplace and baby grand 
+> piano) comes with its own maid, butler, and limousine and is accessed 
+> by private elevator. The library alone is worth investigating: two 
+> circular floors of books encapsulated by a domed ceiling etched with 
+> the constellations. The view from the terrace is enthralling, and even 
+> if the date's a bust you can always have a hundred people up for 
+> cocktails.
+>
+> sfweekly.com | originally published: May 15, 2002
+
+

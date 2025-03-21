@@ -1,0 +1,95 @@
+From fork-admin@xent.com  Fri Jul 26 00:52:52 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id EBB3D440E7
+	for <jm@localhost>; Thu, 25 Jul 2002 19:52:50 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 26 Jul 2002 00:52:50 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6PNsd407771 for <jm@jmason.org>;
+    Fri, 26 Jul 2002 00:54:40 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 8029E2940F8; Thu, 25 Jul 2002 16:53:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from tripper.magisoftware.com (tripper.magisoftware.com
+    [208.179.190.4]) by xent.com (Postfix) with ESMTP id 13F9B2940F8 for
+    <fork@xent.com>; Thu, 25 Jul 2002 16:52:23 -0700 (PDT)
+Received: from endeavors.com ([208.179.190.254]) by
+    tripper.magisoftware.com (Netscape Messaging Server 4.1) with ESMTP id
+    GZTX0Q00.D7S for <fork@xent.com>; Thu, 25 Jul 2002 16:53:14 -0700
+Message-Id: <3D408FD3.6060801@endeavors.com>
+From: "Gregory Alan Bolcer" <gbolcer@endeavors.com>
+Organization: Endeavors Technology, Inc.
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:0.9.4.1)
+    Gecko/20020508 Netscape6/6.2.3
+X-Accept-Language: en,pdf
+MIME-Version: 1.0
+To: FoRK <fork@spamassassin.taint.org>
+Subject: OpenWave
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 25 Jul 2002 16:54:59 -0700
+
+OPWV and a bad moon rising.
+
+> Zacks Issues Recommendations on 4 Stocks: DYN, MANU, SWY and OPWV
+> 
+> PR Newswire, Thursday, July 25, 2002 at 06:03
+> 
+> /FROM PR NEWSWIRE CHICAGO 888-776-6551/ [STK] DYN MANU SWY OPWV [IN] FIN MLM [SU] INO -- 
+
+
+WITH PHOTO -- TO BUSINESS EDITOR:
+> 
+> Zacks Issues Recommendations on 4 Stocks: DYN, MANU, SWY and OPWV
+> 
+> CHICAGO, July 25 /PRNewswire/ -- Zacks.com releases details on four more 
+
+stocks that are part of their exclusive list of Stocks to Sell Now. These 
+
+stocks are currently rated as a Zacks Rank #5 (Strong Sell). These stocks have 
+
+been proven to under-perform the S&P 500 by 89.8% since its inception in 1980. 
+
+While the rest of Wall Street continued to tout stocks during the market declines 
+
+of the last few years, we were telling our customers which stocks to sell in order 
+
+to save themselves the misery of unrelenting losses. Among the #5 ranked stocks today 
+
+we highlight the following companies: Dynegy, Inc. (NYSE:DYN) and Manugistics Group, Inc. 
+
+(NASDAQ:MANU), Safeway, Inc. (NYSE:SWY) and Openwave Systems, Inc. (NASDAQ:OPWV). To see 
+
+the full Zacks #5 Ranked list of Stocks to Sell Now then visit http://stockstosellpr.zacks.com .
+
+
+-- 
+Gregory Alan Bolcer, CTO   | work: +1.949.833.2800 | gbolcer at endeavors.com
+Endeavors Technology, Inc. | cell: +1.714.928.5476 | http://endeavors.com
+
+
+
+
+
+
+
+
+
+http://xent.com/mailman/listinfo/fork
+
+

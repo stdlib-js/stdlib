@@ -1,0 +1,20 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Sat Sep  7 01:32:26 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Fri, 06 Sep 2002 20:32:26 -0400
+Subject: [Spambayes] understanding high false negative rate
+In-Reply-To: <15737.16782.542869.368986@slothrop.zope.com>
+Message-ID: <LNBBLJKPBEHFEDALKOLCCEKNBCAB.tim.one@comcast.net>
+
+[Jeremy Hylton[
+> The total collections are 1100 messages.  I trained with 1100/5
+> messages.
+
+I'm reading this now as that you trained on about 220 spam and about 220
+ham.  That's less than 10% of the sizes of the training sets I've been
+using.  Please try an experiment:  train on 550 of each, and test once
+against the other 550 of each.  Do that a few times making a random split
+each time (it won't be long until you discover why directories of individual
+files are a lot easier to work -- e.g., random.shuffle() makes this kind of
+thing trivial for me).
+

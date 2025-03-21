@@ -1,0 +1,107 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Wed Aug 28 19:30:34 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2CD9244155
+	for <jm@localhost>; Wed, 28 Aug 2002 14:30:30 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 28 Aug 2002 19:30:30 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7SIW0Z05462 for <jm-sa@jmason.org>; Wed, 28 Aug 2002 19:32:00 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17k7Zs-0008QL-00; Wed,
+    28 Aug 2002 11:30:04 -0700
+Received: from libadm.ucr.edu ([138.23.89.79] helo=library.ucr.edu) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17k7ZG-0008RR-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 28 Aug 2002 11:29:26 -0700
+Received: by library.ucr.edu (Postfix, from userid 33) id 68DE17D32;
+    Wed, 28 Aug 2002 11:29:27 -0700 (PDT)
+Received: from dragonball.ucr.edu ([138.23.89.42]) (SquirrelMail
+    authenticated user simonian) by library.ucr.edu with HTTP; Wed,
+    28 Aug 2002 11:29:27 -0700 (PDT)
+Message-Id: <36033.138.23.89.42.1030559367.squirrel@library.ucr.edu>
+Subject: Re: [SAtalk] Too funny
+From: "Tanniel Simonian" <simonian@library.ucr.edu>
+To: <spamassassin-talk@example.sourceforge.net>
+In-Reply-To: <5.1.0.14.0.20020828133216.00b48160@192.168.50.2>
+References: <000801c24ea1$8a8023f0$af672e04@winxp>
+    <000801c24ea1$8a8023f0$af672e04@winxp>
+    <5.1.0.14.0.20020828133216.00b48160@192.168.50.2>
+X-Priority: 3
+Importance: Normal
+X-Msmail-Priority: Normal
+Reply-To: simonian@library.ucr.edu
+X-Mailer: SquirrelMail (version 1.2.6)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 28 Aug 2002 11:29:27 -0700 (PDT)
+Date: Wed, 28 Aug 2002 11:29:27 -0700 (PDT)
+
+
+Well if you're talking about epiphany, which is in January, then yes it is
+5 months.Some people do celebrate Christmas on january 6th, or even the 13th.
+
+But I am certain that what you are thinking is the correct thought.
+
+Please don't flame me. Just trying to be humerous =)
+
+
+Matt Kettler said:
+> On an unrelated, but similarly amusing note, a spam I received (and was
+>  tagged by SA) today began with:
+>
+>
+> > I bet you haven't even realized that Christmas is just 5 months away,
+> >
+> did you?
+>
+>
+> Strangely, no I wasn't aware that Christmas was 5 months away. Here in
+> the  US Christmas is a bit less than 4 months away. Where exactly is
+> the  "international month line" anyway? I've never seen the -74400
+> timezone  before, but I bet it qualifies as INVALID_DATE_TZ_ABSURD :)
+>
+>
+>
+>
+> -------------------------------------------------------
+> This sf.net email is sponsored by: Jabber - The world's fastest growing
+>  real-time communications platform! Don't just IM. Build it in!
+> http://www.jabber.com/osdn/xim
+> _______________________________________________
+> Spamassassin-talk mailing list
+> Spamassassin-talk@lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

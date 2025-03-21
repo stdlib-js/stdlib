@@ -1,0 +1,147 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug 29 11:06:55 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 78DD64415D
+	for <jm@localhost>; Thu, 29 Aug 2002 06:05:21 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:05:21 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7SMPuZ12725 for <jm-sa@jmason.org>; Wed, 28 Aug 2002 23:25:56 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17kBEJ-0003eE-00; Wed,
+    28 Aug 2002 15:24:03 -0700
+Received: from info.uah.edu ([146.229.5.36]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17kBDn-0001Ho-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 28 Aug 2002 15:23:31 -0700
+Received: from info.uah.edu (localhost [127.0.0.1]) by info.uah.edu
+    (8.12.5/8.12.5) with ESMTP id g7SMNTWI008078 for
+    <spamassassin-talk@lists.sourceforge.net>; Wed, 28 Aug 2002 17:23:29 -0500
+    (CDT)
+Received: from localhost (jim@localhost) by info.uah.edu
+    (8.12.5/8.12.5/Submit) with ESMTP id g7SMNT2U008075 for
+    <spamassassin-talk@lists.sourceforge.net>; Wed, 28 Aug 2002 17:23:29 -0500
+    (CDT)
+From: Jim McCullars <jim@info.uah.edu>
+To: spamassassin-talk@example.sourceforge.net
+Message-Id: <Pine.GSO.4.44.0208281721030.7994-100000@info.uah.edu>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+X-Scanned-BY: MIMEDefang 2.17 (www . roaringpenguin . com / mimedefang)
+Subject: [SAtalk] Compile error under Digital Unix
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 28 Aug 2002 17:23:29 -0500 (CDT)
+Date: Wed, 28 Aug 2002 17:23:29 -0500 (CDT)
+
+Hi, I'm trying to build SA under Digital Unix 4.0f and am receiving a
+compile error (and many warnings) for spamc.  The "perl Makefile.PL"
+does OK, but when I do the make, I get this:
+
+cc -std -fprm d -ieee -D_INTRINSICS -I/usr/local/include -DLANGUAGE_C
+-O4 spamd
+/spamc.c  -o spamd/spamc -L/usr/local/lib -lbind -ldbm -ldb -lm -liconv
+-lutil
+cc: Error: spamd/spamc.c, line 50: In this declaration, "in_addr_t" has
+no linkage and has a prior declaration in this scope at line number 592 in file
+/usr/include/sys/types.h. (nolinkage)
+typedef unsigned long   in_addr_t;      /* base type for internet
+address */
+------------------------^
+cc: Warning: spamd/spamc.c, line 169: In this statement, the referenced
+type of
+the pointer value "msg_buf" is "char", which is not compatible with
+"unsigned char". (ptrmismatch)
+  if((bytes = full_read (in, msg_buf, max_size+1024, max_size+1024)) >
+max_size)
+-----------------------------^
+cc: Warning: spamd/spamc.c, line 174: In this statement, the referenced
+type of
+the pointer value "header_buf" is "char", which is not compatible with
+"const unsigned char". (ptrmismatch)
+    full_write (out,header_buf,bytes2);
+--------------------^
+cc: Warning: spamd/spamc.c, line 202: In this statement, the referenced
+type of
+the pointer value "header_buf" is "char", which is not compatible with
+"const unsigned char". (ptrmismatch)
+    full_write (out,header_buf,bytes2);
+--------------------^
+cc: Warning: spamd/spamc.c, line 203: In this statement, the referenced
+type of the pointer value "msg_buf" is "char", which is not compatible
+with "const unsigned char". (ptrmismatch)
+    full_write (out,msg_buf,bytes);
+--------------------^
+cc: Warning: spamd/spamc.c, line 306: In this statement, the referenced
+type of the pointer value "buf" is "char", which is not compatible with
+"unsigned char".
+ (ptrmismatch)
+          if(full_read (in,buf,2,2) != 2 || !('\r' == buf[0] && '\n' ==
+buf[1]))
+---------------------------^
+cc: Warning: spamd/spamc.c, line 321: In this statement, the referenced
+type of
+the pointer value "buf" is "char", which is not compatible with
+"unsigned char".
+ (ptrmismatch)
+    while((bytes=full_read (in,buf,8192, 8192)) > 0)
+-------------------------------^
+cc: Warning: spamd/spamc.c, line 348: In this statement, the referenced
+type of
+the pointer value "out_buf" is "char", which is not compatible with
+"const unsigned char". (ptrmismatch)
+      full_write (out, out_buf, out_index);
+-----------------------^
+cc: Warning: spamd/spamc.c, line 497: In this statement, the referenced
+type of
+the pointer value "msg_buf" is "char", which is not compatible with
+"const unsigned char". (ptrmismatch)
+      full_write (STDOUT_FILENO,msg_buf,amount_read);
+--------------------------------^
+cc: Warning: spamd/spamc.c, line 512: In this statement, the referenced
+type of
+the pointer value "msg_buf" is "char", which is not compatible with
+"const unsigned char". (ptrmismatch)
+      full_write(STDOUT_FILENO,msg_buf,amount_read);
+-------------------------------^
+*** Exit 1
+Stop.
+
+Can anyone suggest a way to get around this?   TIA...
+
+Jim
+*-------------------------------------------------------------------------*
+* James H. McCullars                 I Phone: (256) 824-2610              *
+* Director of Systems & Operations   I Fax:   (256) 824-6643              *
+* Computer & Network Services        I Internet: mccullj@email.uah.edu    *
+* The University of Alabama          I -----------------------------------*
+*    in Huntsville                   I                                    *
+* Huntsville, AL 35899               I This space for rent - CHEAP!       *
+*-------------------------------------------------------------------------*
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

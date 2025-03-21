@@ -1,0 +1,144 @@
+From fork-admin@xent.com  Wed Jul 24 16:28:34 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 671A9440A8
+	for <jm@localhost>; Wed, 24 Jul 2002 11:28:34 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 16:28:34 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6OFOk422414 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 16:24:51 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 836CA294143; Wed, 24 Jul 2002 08:14:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.auracom.net (smtp1.auracom.net [165.154.140.23]) by
+    xent.com (Postfix) with ESMTP id F3B8929413D for <FoRK@xent.com>;
+    Wed, 24 Jul 2002 08:13:40 -0700 (PDT)
+Received: from maya.dyndns.org (ts5-027.ptrb.interhop.net
+    [165.154.190.91]) by smtp1.auracom.net (8.11.2/8.11.2) with ESMTP id
+    g6OEw5I23032 for <FoRK@xent.com>; Wed, 24 Jul 2002 10:58:06 -0400 (EDT)
+Received: by maya.dyndns.org (Postfix, from userid 501) id D53F81C3A0;
+    Wed, 24 Jul 2002 11:15:45 -0400 (EDT)
+To: Flatware or Road Kill? <FoRK@xent.com>
+Subject: Re: "Ouch. Ouch. Ouch. Ouch. Ouch...."(was Re: My brain hurts)
+References: <Pine.LNX.4.44.0207241023140.3214-100000@localhost.localdomain>
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m2wurlp36m.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 24 Jul 2002 11:15:45 -0400
+
+
+This thread is starting to rapidly decay ...
+
+these are old bits which I cannot explain exactly why I thought they
+were important now or why I went rummaging through back folders to
+find them or even why I felt compelled by a deep sense of inner
+purpose to post them here ...
+
+http://www.weeklyworldnews.com/stories/2238.html
+
+20 NEW SIGNS THAT YOU WERE ABDUCTED BY SPACE ALIENS!
+
+WINSTON-SALEM, N.C. -- You may have been abducted by space aliens --
+and not even know it!
+
+Psychiatrists, psychologists and UFO experts say millions of people
+all over the world have been kidnapped by extraterrestrials. But most
+of them can't recall the experience because the memory is so painful
+that they've buried it deep in their subconscious minds.
+
+But there are strong tip-offs that you may be one of the millions who
+have encountered beings from another planet, if you know what to watch
+for.
+
+Experts at Wake Forest University here, as well as other respected
+institutions around the world, offer 20 startling new indicators that
+you may have had a close encounter:
+
+1. You experience unexplained nausea or a strange sense of uneasiness
+around the same time each day.
+
+2. You have an unusual new scar or strange mark on your body --
+particularly on the roof of your mouth or behind an ear.
+
+3. You often find yourself hungry for oranges or lemons -- even after
+you've had a large meal or eaten enough food to fill your
+stomach. Researchers at Oslo University say this hunger for citrus is
+common in alien abductees.
+
+4. You have a strong, ever-present feeling that there is some mission
+or important thing you're supposed to do in life and you find yourself
+constantly driven to achieve it or discover what it might be.
+
+5. You often find yourself going through your trash, or the trash of
+others, without knowing exactly what you're looking for. Swiss UFO
+researchers found that people who have been abducted often find
+themselves unaccountably digging through refuse.
+
+6. You frequently dream of cattle. Psychologists at the University of
+Paris say it's common for the subconscious mind to substitute a cow or
+bull for an alien being.
+
+7. You feel you're "special" or "chosen."
+
+8. You are a vegetarian -- but can't exactly explain why.
+
+9. You have an overpowering feeling of dread when you see photos or
+drawings of space aliens.
+
+10. You are prone to addictive or compulsive behavior. This in itself
+is not necessarily indicative of alien abduction. But if there are
+other indicators as well, you could be an abductee.
+
+11. You wet the bed. Studies in Peru show there's a connection.
+
+12. You have frequent insomnia.
+
+13. You are strangely intrigued by old western movies. Psychologists
+say they can't yet explain abductees' fascination with cowboy movies,
+but they say it exists in at least 75 percent of victims.
+
+14. Electronic devices often go haywire around you for no discernible
+reason.
+
+15. You have seen -- or think you've seen -- a mysterious, hooded
+figure in or near your home more than once.
+
+16. Your fingers are stiff, numb or unresponsive for more than an hour
+after you wake up.
+
+17. You have had -- or currently have -- severe back or neck problems.
+
+18. You frequently experience a ringing in one ear.
+
+19. You often get sinusitis or other nasal pain.
+
+20. You are frequently haunted by the sense that you're being watched.
+
+-- 
+Gary Lawrence Murphy <garym@teledyn.com> TeleDynamics Communications Inc
+Business Innovations Through Open Source Systems: http://www.teledyn.com
+"Computers are useless.  They can only give you answers."(Pablo Picasso)
+
+http://xent.com/mailman/listinfo/fork
+
+

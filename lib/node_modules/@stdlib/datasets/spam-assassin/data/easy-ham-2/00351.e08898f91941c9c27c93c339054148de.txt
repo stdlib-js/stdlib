@@ -1,0 +1,64 @@
+From ilug-admin@linux.ie  Tue Aug 13 10:28:22 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 07AEB44124
+	for <jm@localhost>; Tue, 13 Aug 2002 05:21:37 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:21:37 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7CJ5ob30258 for
+    <jm-ilug@jmason.org>; Mon, 12 Aug 2002 20:05:50 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id UAA01843; Mon, 12 Aug 2002 20:05:25 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from linuxmafia.com (linuxmafia.COM [198.144.195.186]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id UAA01818 for <ilug@linux.ie>;
+    Mon, 12 Aug 2002 20:05:18 +0100
+Received: from rick by linuxmafia.com with local (Exim 3.35 #1 (Debian))
+    id 17eKVA-0005lC-00 for <ilug@linux.ie>; Mon, 12 Aug 2002 12:05:16 -0700
+Date: Mon, 12 Aug 2002 12:05:15 -0700
+To: ilug@linux.ie
+Subject: Re: [ILUG] SUSE 8 disks? (thread changed slightly)
+Message-Id: <20020812190515.GC25331@linuxmafia.com>
+References: <20020812174932.58511.qmail@web13904.mail.yahoo.com>
+    <NBBBIGEGHIGMPCNKHCECOEGJEAAA.kenn@bluetree.ie>
+    <20020812182625.GA25331@linuxmafia.com>
+    <1029178811.9166.10.camel@gemini.windmill>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <1029178811.9166.10.camel@gemini.windmill>
+User-Agent: Mutt/1.4i
+From: Rick Moen <rick@linuxmafia.com>
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Quoting Nick Murtagh (nickm@go2.ie):
+
+> The same one as provided on www.sapdb.org? 
+> Which is released under the GPL/LGPL?
+
+I honestly don't know.  I made that list a long time ago, and certainly
+didn't re-research it before posting it today.  So, I offer three
+candidate explanations:
+
+1.  I muffed that part, the first time, and was talking through my hat.
+2.  SAP had a proprietary version licensed to SuSE at the time.
+3.  SAP still have one licensed to SuSE today.
+
+I'm not sure which applies.  #1 is certainly a good possibility.
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

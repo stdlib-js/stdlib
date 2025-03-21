@@ -1,0 +1,36 @@
+From rssfeeds@jmason.org  Mon Oct  7 12:05:01 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id B3DA216F6E
+	for <jm@localhost>; Mon,  7 Oct 2002 12:03:36 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 07 Oct 2002 12:03:36 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9780EK23208 for
+    <jm@jmason.org>; Mon, 7 Oct 2002 09:00:14 +0100
+Message-Id: <200210070800.g9780EK23208@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: diveintomark <rssfeeds@spamassassin.taint.org>
+Subject: All digital
+Date: Mon, 07 Oct 2002 08:00:14 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://diveintomark.org/archives/2002/10/06.html#all_digital
+Date: 2002-10-06T23:38:12-05:00
+
+_Slashdot_: Digital Camera Quality Passing Film?[1] We just hired a 
+photographer for our wedding yesterday, Light Touch Imagery[2]. They offer 
+competitive prices; they can design the type of albums we want (with some 
+amount of artistic touchup); they do bridal and engagement portraits as well as 
+full wedding day coverage; they shoot all digital; and they give us all the 
+digital negatives on CD&#8212;that is, the raw pictures that come straight out 
+of their cameras. No other photographer we met with came close.
+
+
+
+[1] http://slashdot.org/article.pl?sid=02/10/04/1549200&mode=nested&tid=126&threshold=3
+[2] http://www.lighttouchimagery.com/
+
+

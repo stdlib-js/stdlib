@@ -1,0 +1,70 @@
+From secprog-return-492-jm=jmason.org@securityfocus.com  Fri Sep  6 11:36:01 2002
+Return-Path: <secprog-return-492-yyyy=spamassassin.taint.org@securityfocus.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id E66B916F18
+	for <jm@localhost>; Fri,  6 Sep 2002 11:35:06 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 11:35:06 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g869rVC29298 for
+    <jm@jmason.org>; Fri, 6 Sep 2002 10:53:31 +0100
+Received: from outgoing.securityfocus.com (outgoing3.securityfocus.com
+    [66.38.151.27]) by webnote.net (8.9.3/8.9.3) with ESMTP id XAA18901 for
+    <jm@jmason.org>; Thu, 5 Sep 2002 23:06:36 +0100
+Received: from lists.securityfocus.com (lists.securityfocus.com
+    [66.38.151.19]) by outgoing.securityfocus.com (Postfix) with QMQP id
+    868A2A33C1; Thu,  5 Sep 2002 14:19:21 -0600 (MDT)
+Mailing-List: contact secprog-help@securityfocus.com; run by ezmlm
+Precedence: bulk
+List-Id: <secprog.list-id.securityfocus.com>
+List-Post: <mailto:secprog@securityfocus.com>
+List-Help: <mailto:secprog-help@securityfocus.com>
+List-Unsubscribe: <mailto:secprog-unsubscribe@securityfocus.com>
+List-Subscribe: <mailto:secprog-subscribe@securityfocus.com>
+Delivered-To: mailing list secprog@securityfocus.com
+Delivered-To: moderator for secprog@securityfocus.com
+Received: (qmail 24062 invoked from network); 5 Sep 2002 19:24:13 -0000
+Message-Id: <3D77A587.405@wirex.com>
+Date: Thu, 05 Sep 2002 11:42:15 -0700
+From: Crispin Cowan <crispin@wirex.com>
+Organization: WireX Communications, Inc.
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.1) Gecko/20020827
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: scottm@crystal.ncc.cc.nm.us
+Cc: Ben Mord <bmord@icon-nicholson.com>,
+	"Webappsec Securityfocus.Com" <webappsec@securityfocus.com>,
+	SECPROG Securityfocus <SECPROG@securityfocus.com>
+Subject: Re: FW: use of base image / delta image for automated recovery
+    from attacks
+References: <NAEOJLMPJMJDFPLHIOJOOEGMDBAA.bmord@icon-nicholson.com>
+    <3D7793B5.8344A1B5@crystal.ncc.cc.nm.us>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+
+Scott MacKenzie wrote:
+
+>There is a software package that is used (or was up through w2k) 
+>on MicroSloth for this purpose. Ghost, or some such. One essentially 
+>"takes a picture" of the machine's proper config, and then upon 
+>schedule or demand replaces the machine's current config with the 
+>proper picture. It essentially over-writes the entire disk drive. 
+>Especially good for student access machines at libraries, etc.
+>
+And it is pretty common practice in some environments with public 
+workstations to just wipe and re-install Windows machines on a weekly 
+(or even daily) basis. It's easier than trying to maintain Windows.
+
+Crispin
+
+-- 
+Crispin Cowan, Ph.D.
+Chief Scientist, WireX                      http://wirex.com/~crispin/
+Security Hardened Linux Distribution:       http://immunix.org
+Available for purchase: http://wirex.com/Products/Immunix/purchase.html
+
+
+
+

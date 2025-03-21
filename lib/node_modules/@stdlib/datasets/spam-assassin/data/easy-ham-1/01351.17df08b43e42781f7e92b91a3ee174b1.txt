@@ -1,0 +1,149 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug 29 11:05:32 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id EC3AA4415E
+	for <jm@localhost>; Thu, 29 Aug 2002 06:04:33 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:04:33 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7SIpXZ06083 for <jm-sa@jmason.org>; Wed, 28 Aug 2002 19:51:33 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17k7sK-0005nc-00; Wed,
+    28 Aug 2002 11:49:08 -0700
+Received: from email.uah.edu ([146.229.1.200]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17k7s7-0005Tn-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 28 Aug 2002 11:48:55 -0700
+Received: from email.uah.edu ([146.229.5.22]) by email.uah.edu
+    (8.11.2/8.11.2) with ESMTP id g7SImrs21805 for
+    <spamassassin-talk@lists.sourceforge.net>; Wed, 28 Aug 2002 13:48:53 -0500
+    (CDT)
+Message-Id: <3D6D1AB2.DEDDDC0C@email.uah.edu>
+From: Jim McCullars <mccullj@email.uah.edu>
+X-Mailer: Mozilla 4.7 [en] (Win98; U)
+X-Accept-Language: en,pdf
+MIME-Version: 1.0
+To: spamassassin-talk@example.sourceforge.net
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Subject: [SAtalk] Compile error under Digital Unix
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 28 Aug 2002 13:47:14 -0500
+Date: Wed, 28 Aug 2002 13:47:14 -0500
+
+Hi, I'm trying to build SA under Digital Unix 4.0f and am receiving a
+compile error (and many warnings) for spamc.  The "perl Makefile.PL"
+does OK, but when I do the make, I get this:
+
+cc -std -fprm d -ieee -D_INTRINSICS -I/usr/local/include -DLANGUAGE_C
+-O4 spamd
+/spamc.c  -o spamd/spamc -L/usr/local/lib -lbind -ldbm -ldb -lm -liconv
+-lutil
+cc: Error: spamd/spamc.c, line 50: In this declaration, "in_addr_t" has
+no linka
+ge and has a prior declaration in this scope at line number 592 in file
+/usr/inc
+lude/sys/types.h. (nolinkage)
+typedef unsigned long   in_addr_t;      /* base type for internet
+address */
+------------------------^
+cc: Warning: spamd/spamc.c, line 169: In this statement, the referenced
+type of
+the pointer value "msg_buf" is "char", which is not compatible with
+"unsigned ch
+ar". (ptrmismatch)
+  if((bytes = full_read (in, msg_buf, max_size+1024, max_size+1024)) >
+max_size)
+-----------------------------^
+cc: Warning: spamd/spamc.c, line 174: In this statement, the referenced
+type of
+the pointer value "header_buf" is "char", which is not compatible with
+"const un
+signed char". (ptrmismatch)
+    full_write (out,header_buf,bytes2);
+--------------------^
+cc: Warning: spamd/spamc.c, line 202: In this statement, the referenced
+type of
+the pointer value "header_buf" is "char", which is not compatible with
+"const un
+signed char". (ptrmismatch)
+    full_write (out,header_buf,bytes2);
+--------------------^
+cc: Warning: spamd/spamc.c, line 203: In this statement, the referenced
+type of
+the pointer value "msg_buf" is "char", which is not compatible with
+"const unsig
+ned char". (ptrmismatch)
+    full_write (out,msg_buf,bytes);
+--------------------^
+cc: Warning: spamd/spamc.c, line 306: In this statement, the referenced
+type of
+the pointer value "buf" is "char", which is not compatible with
+"unsigned char".
+ (ptrmismatch)
+          if(full_read (in,buf,2,2) != 2 || !('\r' == buf[0] && '\n' ==
+buf[1]))
+---------------------------^
+cc: Warning: spamd/spamc.c, line 321: In this statement, the referenced
+type of
+the pointer value "buf" is "char", which is not compatible with
+"unsigned char".
+ (ptrmismatch)
+    while((bytes=full_read (in,buf,8192, 8192)) > 0)
+-------------------------------^
+cc: Warning: spamd/spamc.c, line 348: In this statement, the referenced
+type of
+the pointer value "out_buf" is "char", which is not compatible with
+"const unsig
+ned char". (ptrmismatch)
+      full_write (out, out_buf, out_index);
+-----------------------^
+cc: Warning: spamd/spamc.c, line 497: In this statement, the referenced
+type of
+the pointer value "msg_buf" is "char", which is not compatible with
+"const unsig
+ned char". (ptrmismatch)
+      full_write (STDOUT_FILENO,msg_buf,amount_read);
+--------------------------------^
+cc: Warning: spamd/spamc.c, line 512: In this statement, the referenced
+type of
+the pointer value "msg_buf" is "char", which is not compatible with
+"const unsig
+ned char". (ptrmismatch)
+      full_write(STDOUT_FILENO,msg_buf,amount_read);
+-------------------------------^
+*** Exit 1
+Stop.
+
+Can anyone suggest a way to get around this?   TIA...
+
+Jim McCullars
+The University of Alabama in Huntsville
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

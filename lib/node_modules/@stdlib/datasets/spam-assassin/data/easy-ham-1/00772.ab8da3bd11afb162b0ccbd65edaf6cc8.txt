@@ -1,0 +1,63 @@
+From fork-admin@xent.com  Tue Sep 24 23:31:49 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 6232A16F03
+	for <jm@localhost>; Tue, 24 Sep 2002 23:31:49 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 24 Sep 2002 23:31:49 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8OKN0C20652 for <jm@jmason.org>;
+    Tue, 24 Sep 2002 21:23:01 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 42D262940C7; Tue, 24 Sep 2002 13:19:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from localhost.localdomain (pm2-36.sba1.netlojix.net
+    [207.71.218.132]) by xent.com (Postfix) with ESMTP id 68C3029409A for
+    <fork@xent.com>; Tue, 24 Sep 2002 13:18:18 -0700 (PDT)
+Received: (from dave@localhost) by maltesecat (8.8.7/8.8.7a) id NAA07757;
+    Tue, 24 Sep 2002 13:28:04 -0700
+Message-Id: <200209242028.NAA07757@maltesecat>
+To: fork@spamassassin.taint.org
+Subject: Re: SF Weekly's Ultimate SF Date lineup :-)
+In-Reply-To: Message from fork-request@xent.com of
+    "Tue, 24 Sep 2002 10:15:01 PDT."
+    <20020924171501.13381.94248.Mailman@lair.xent.com>
+From: Dave Long <dl@silcom.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 24 Sep 2002 13:28:04 -0700
+
+
+
+> Proving, once again, that aviators get all the chicks...
+
+Just as long as they have the wherewithal
+for avgas, anyway.
+
+I think Turpin once calculated that one
+could do a decent amount of messing about
+for about $30K of boat and $12K/year in
+living expenses.
+
+What are the equivalent figures for live
+aboard aircraft?
+
+-Dave
+
+(How difficult would it be to find the
+harbormaster, after mooring to the top
+of the Empire State Building?)
+
+

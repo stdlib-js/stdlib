@@ -1,0 +1,95 @@
+From sitescooper-talk-admin@lists.sourceforge.net  Mon Sep  2 12:23:07 2002
+Return-Path: <sitescooper-talk-admin@example.sourceforge.net>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 00C9643F9B
+	for <zzzz@localhost>; Mon,  2 Sep 2002 07:23:07 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 02 Sep 2002 12:23:07 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7U0RvZ06008 for <zzzz-scoop@spamassassin.taint.org>; Fri, 30 Aug 2002 01:27:57 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17kZdr-0006yt-00; Thu,
+    29 Aug 2002 17:28:03 -0700
+Received: from [210.14.43.56] (helo=min.kssp.upd.edu.ph) by
+    usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17kZdM-0007Tc-00 for <sitescooper-talk@lists.sourceforge.net>;
+    Thu, 29 Aug 2002 17:27:33 -0700
+Received: (qmail 30374 invoked from network); 30 Aug 2002 00:27:18 -0000
+Received: from unknown (HELO elayne.kssp.upd.edu.ph) (10.34.130.14) by 0
+    with SMTP; 30 Aug 2002 00:27:18 -0000
+Received: from elayne.kssp.upd.edu.ph (localhost.kssp.upd.edu.ph
+    [127.0.0.1]) by elayne.kssp.upd.edu.ph (8.12.3/8.12.3) with ESMTP id
+    g7U0RMjS024015 for <sitescooper-talk@lists.sourceforge.net>;
+    Fri, 30 Aug 2002 08:27:23 +0800 (PHT)
+Received: (from barryg@localhost) by elayne.kssp.upd.edu.ph
+    (8.12.3/8.12.3/Submit) id g7U0R9eT031218 for
+    sitescooper-talk@lists.sourceforge.net; Fri, 30 Aug 2002 08:27:09 +0800
+    (PHT)
+X-Authentication-Warning: elayne.kssp.upd.edu.ph: barryg set sender to
+    barryg@kssp.upd.edu.ph using -f
+From: "Barry Dexter A. Gonzaga" <barryg@kssp.upd.edu.ph>
+To: sitescooper-talk@example.sourceforge.net
+Subject: Re: [scoop] Scoop MS Word .doc file into something that plucker or other Palm app can display?
+Message-Id: <20020830002709.GA21600@elayne.kssp.upd.edu.ph>
+Mail-Followup-To: sitescooper-talk@example.sourceforge.net
+References: <20020829171046.AAB1816@cas.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20020829171046.AAB1816@cas.org>
+User-Agent: Mutt/1.3.99i
+Sender: sitescooper-talk-admin@example.sourceforge.net
+Errors-To: sitescooper-talk-admin@example.sourceforge.net
+X-Beenthere: sitescooper-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:sitescooper-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:sitescooper-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/sitescooper-talk>,
+    <mailto:sitescooper-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Discussion of sitescooper - see http://sitescooper.org/
+    <sitescooper-talk.lists.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/sitescooper-talk>,
+    <mailto:sitescooper-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=sitescooper-talk>
+X-Original-Date: Fri, 30 Aug 2002 08:27:09 +0800
+Date: Fri, 30 Aug 2002 08:27:09 +0800
+
+Good Day!
+
+On Thu, Aug 29, 2002 at 05:10:47PM -0400, Larry W. Virden wrote:
+> I am wondering whether there's a way that I can use sitescooper and/or plucker
+> or some other free utility to convert word documents into something a bit
+> more palmos friendly?
+
+	You could try antiword (http://www.winfield.demon.nl/linux/).
+It's consoled based and converts word 6+ docs to text and some images to
+postscript and png.  You could also try openoffice and/or abiword if you
+have x installed.
+
+> I don't have a Windows machine, so it becomes problematic to convert them;
+> I know that if this were not the case, in Word I could save them as some
+> other more friendly format.
+
+	Great! ;)
+
+Mabuhay! barryg
+
+-- 
+Barry Dexter A. Gonzaga, bofh
+barryg@kssp.upd.edu.ph 
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Sitescooper-talk mailing list
+Sitescooper-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/sitescooper-talk
+

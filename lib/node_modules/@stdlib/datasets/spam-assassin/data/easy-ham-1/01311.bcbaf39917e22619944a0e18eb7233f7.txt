@@ -1,0 +1,79 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Fri Aug 23 11:12:07 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 216BF47C93
+	for <jm@localhost>; Fri, 23 Aug 2002 06:08:14 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 23 Aug 2002 11:08:14 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7MI1nZ18649 for <jm-sa@jmason.org>; Thu, 22 Aug 2002 19:01:50 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17hwGX-0007qg-00; Thu,
+    22 Aug 2002 11:01:05 -0700
+Received: from p995.as3.adl.dublin.eircom.net ([159.134.231.227]
+    helo=mandark.labs.netnoteinc.com) by usw-sf-list1.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17hwG9-0005es-00 for
+    <spamassassin-talk@lists.sourceforge.net>; Thu, 22 Aug 2002 11:00:42 -0700
+Received: from phobos.labs.netnoteinc.com (phobos.labs.netnoteinc.com
+    [192.168.2.14]) by mandark.labs.netnoteinc.com (8.11.6/8.11.6) with ESMTP
+    id g7MHxv800975; Thu, 22 Aug 2002 18:59:57 +0100
+Received: by phobos.labs.netnoteinc.com (Postfix, from userid 500) id
+    1E6E343F99; Thu, 22 Aug 2002 13:58:06 -0400 (EDT)
+Received: from phobos (localhost [127.0.0.1]) by
+    phobos.labs.netnoteinc.com (Postfix) with ESMTP id 197A733D8C;
+    Thu, 22 Aug 2002 18:58:06 +0100 (IST)
+To: "Craig R.Hughes" <craig@deersoft.com>
+Cc: yyyy@spamassassin.taint.org (Justin Mason),
+	Justin Shore <listuser@neo.pittstate.edu>,
+	SpamAssassin List <spamassassin-talk@lists.sourceforge.net>
+Subject: Re: [SAtalk] Highest-scoring false positive
+In-Reply-To: Message from
+    "Craig R.Hughes"
+    <craig@deersoft.com> of
+    "Thu, 22 Aug 2002 10:50:57 PDT."
+    <B624EDE6-B5F7-11D6-A91E-00039396ECF2@deersoft.com>
+From: yyyy@spamassassin.taint.org (Justin Mason)
+X-GPG-Key-Fingerprint: 0A48 2D8B 0B52 A87D 0E8A  6ADD 4137 1B50 6E58 EF0A
+Message-Id: <20020822175806.1E6E343F99@phobos.labs.netnoteinc.com>
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Thu, 22 Aug 2002 18:58:01 +0100
+Date: Thu, 22 Aug 2002 18:58:01 +0100
+
+
+"Craig R.Hughes" said:
+
+> Are you filtering the nonspamtrap for spam when those 
+> newsletters sold your address to someone you didn't sign up 
+> with?  You should probably manually verify that all the mail in 
+> the trap is in fact nonspam!
+
+Yep.  so far it's all opt-in stuff, no "affiliate deals" etc.
+
+--j.
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

@@ -1,0 +1,94 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Sun Sep  8 08:48:28 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Sun, 08 Sep 2002 03:48:28 -0400
+Subject: [Spambayes] test sets?
+In-Reply-To: <LNBBLJKPBEHFEDALKOLCGEOIBCAB.tim.one@comcast.net>
+Message-ID: <LNBBLJKPBEHFEDALKOLCEEOJBCAB.tim.one@comcast.net>
+
+[Tim]
+> ...
+> I'd prefer to strip HTML tags from everything, but last time I
+> tried that it still had bad effects on the error rates in my
+> corpora (the full test results with and without HTML tag stripping
+> is included in the "What about HTML?" comment block).  But as the
+> comment block also says,
+>
+> # XXX So, if another way is found to slash the f-n rate, the decision here
+> # XXX not to strip HTML from HTML-only msgs should be revisited.
+>
+> and we've since done several things that gave significant f-n rate
+> reductions.  I should test that again now.
+
+I did so.  Alas, stripping HTML tags from all text still hurts the f-n rate
+in my test data:
+
+false positive percentages
+    0.000  0.000  tied
+    0.000  0.000  tied
+    0.050  0.075  lost   +50.00%
+    0.025  0.025  tied
+    0.075  0.025  won    -66.67%
+    0.000  0.000  tied
+    0.100  0.100  tied
+    0.050  0.075  lost   +50.00%
+    0.025  0.025  tied
+    0.025  0.000  won   -100.00%
+    0.050  0.075  lost   +50.00%
+    0.050  0.050  tied
+    0.050  0.025  won    -50.00%
+    0.000  0.000  tied
+    0.000  0.000  tied
+    0.075  0.075  tied
+    0.025  0.025  tied
+    0.000  0.000  tied
+    0.025  0.025  tied
+    0.050  0.050  tied
+
+won   3 times
+tied 14 times
+lost  3 times
+
+total unique fp went from 13 to 11
+
+false negative percentages
+    0.327  0.400  lost   +22.32%
+    0.400  0.400  tied
+    0.327  0.473  lost   +44.65%
+    0.691  0.654  won     -5.35%
+    0.545  0.473  won    -13.21%
+    0.291  0.364  lost   +25.09%
+    0.218  0.291  lost   +33.49%
+    0.654  0.654  tied
+    0.364  0.473  lost   +29.95%
+    0.291  0.327  lost   +12.37%
+    0.327  0.291  won    -11.01%
+    0.691  0.654  won     -5.35%
+    0.582  0.655  lost   +12.54%
+    0.291  0.400  lost   +37.46%
+    0.364  0.436  lost   +19.78%
+    0.436  0.582  lost   +33.49%
+    0.436  0.364  won    -16.51%
+    0.218  0.291  lost   +33.49%
+    0.291  0.400  lost   +37.46%
+    0.254  0.327  lost   +28.74%
+
+won   5 times
+tied  2 times
+lost 13 times
+
+total unique fn went from 106 to 122
+
+Last time I tried this (see tokenizer.py comments), the f-n rate after
+stripping tags ranged from 0.982% to 1.781%, with a median of about 1.34%,
+so we've made tons of progress on the f-n rate since then.  But the mere
+presence of HTML tags still remains a significant clue for c.l.py traffic,
+so I'm left with the same comment:
+
+> # XXX So, if another way is found to slash the f-n rate, the decision here
+> # XXX not to strip HTML from HTML-only msgs should be revisited.
+
+If we want to take the focus of this away from c.l.py traffic, I can't say
+what effect HTML stripping would have (I don't have suitable test data to
+measure that on).
+

@@ -1,0 +1,51 @@
+
+{{alias}}( iter0, ...iterator )
+    Returns an iterator which performs element-wise subtraction of two or more
+    iterators.
+
+    The length of the returned iterator is equal to the length of the shortest
+    provided iterator. In other words, the returned iterator ends once *one* of
+    the provided iterators ends.
+
+    If provided a numeric value as an iterator argument, the value is broadcast
+    as an infinite iterator which always returns the provided value.
+
+    If an environment supports Symbol.iterator and provided iterators are
+    iterable, the returned iterator is iterable.
+
+    Parameters
+    ----------
+    iter0: Object
+        Input iterator.
+
+    iterator: ...Object
+        Iterators to subtract.
+
+    Returns
+    -------
+    iterator: Object
+        Iterator.
+
+    iterator.next(): Function
+        Returns an iterator protocol-compliant object containing the next
+        iterated value (if one exists) and a boolean flag indicating whether the
+        iterator is finished.
+
+    iterator.return( [value] ): Function
+        Finishes an iterator and returns a provided value.
+
+    Examples
+    --------
+    > var it1 = {{alias:@stdlib/array/to-iterator}}( [ 1.0, 5.0 ] );
+    > var it2 = {{alias:@stdlib/array/to-iterator}}( [ 3.0, 4.0 ] );
+    > var it = {{alias}}( it1, it2 );
+    > var v = it.next().value
+    -2.0
+    > v = it.next().value
+    1.0
+    > var bool = it.next().done
+    true
+
+    See Also
+    --------
+

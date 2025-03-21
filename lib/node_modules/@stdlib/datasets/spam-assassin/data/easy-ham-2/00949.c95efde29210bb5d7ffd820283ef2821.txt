@@ -1,0 +1,51 @@
+From fork-admin@xent.com  Thu Aug  1 16:52:19 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0C3AC440F0
+	for <jm@localhost>; Thu,  1 Aug 2002 11:52:18 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 01 Aug 2002 16:52:18 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g71Fnv219184 for <jm@jmason.org>;
+    Thu, 1 Aug 2002 16:49:59 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 7D2922940A9; Thu,  1 Aug 2002 08:47:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from argote.ch (argote.ch [80.65.224.17]) by xent.com (Postfix)
+    with ESMTP id 87B702940A6 for <fork@xent.com>; Thu,  1 Aug 2002 08:46:10
+    -0700 (PDT)
+Received: by argote.ch (Postfix, from userid 500) id 0A0E8C44E;
+    Thu,  1 Aug 2002 17:44:35 +0200 (CEST)
+To: fork@spamassassin.taint.org
+Subject: Re: Scramjet works? : HyShot experiment takes-off
+Message-Id: <20020801154435.0A0E8C44E@argote.ch>
+From: harley@argote.ch (Robert Harley)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu,  1 Aug 2002 17:44:35 +0200 (CEST)
+
+Quoth R. A. Hettinga:
+>The HyShot experiment - attempting the world`s first flight test of the
+>supersonic combustion process - was launched at 1135 local time (1205 AEST)
+>at the Woomera Prohibited Area, 500km north of Adelaide today.
+
+Eh?  AFAIK, the Russian Kholod program achieved successful supersonic
+combustion in a scramjet about 10 years ago.
+
+Bye,
+  Rob.
+http://xent.com/mailman/listinfo/fork
+
+

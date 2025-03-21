@@ -1,0 +1,7 @@
+
+var hypot = require( '@stdlib/math/base/special/hypot' );
+var randu = require( '@stdlib/random/base/randu' );
+
+var x;
+var y;
+var h;

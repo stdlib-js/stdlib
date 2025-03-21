@@ -1,0 +1,50 @@
+From fork-admin@xent.com  Mon Jul 22 22:13:41 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9F5B6440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 17:13:41 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 22:13:41 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6MLCu429279 for <jm@jmason.org>;
+    Mon, 22 Jul 2002 22:12:59 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id EA7CB2940AE; Mon, 22 Jul 2002 14:02:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mithral.com (watcher.mithral.com [204.153.244.1]) by
+    xent.com (Postfix) with SMTP id 905192940A8 for <fork@xent.com>;
+    Mon, 22 Jul 2002 14:01:48 -0700 (PDT)
+Received: (qmail 23269 invoked by uid 1111); 22 Jul 2002 21:10:44 -0000
+From: "Adam L. Beberg" <beberg@mithral.com>
+To: <fork@spamassassin.taint.org>
+Subject: spam maps
+In-Reply-To: <415-22002712219375752@user-bbxdmnnh9d>
+Message-Id: <Pine.LNX.4.33.0207221409350.23228-100000@watcher.mithral.com>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 22 Jul 2002 14:10:44 -0700 (PDT)
+
+Did someone invert the spam filters? I'm getting almost nothing but spam on
+fork now...
+
+- Adam L. "Duncan" Beberg
+  http://www.mithral.com/~beberg/
+  beberg@mithral.com
+
+http://xent.com/mailman/listinfo/fork
+
+

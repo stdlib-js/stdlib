@@ -1,0 +1,52 @@
+
+{{alias}}( iterator, W )
+    Returns an iterator which iteratively computes a moving arithmetic mean of
+    squared absolute values.
+
+    The `W` parameter defines the number of iterated values over which to
+    compute the moving mean of squared absolute values.
+
+    As `W` values are needed to fill the window buffer, the first `W-1` returned
+    values are calculated from smaller sample sizes. Until the window is full,
+    each returned value is calculated from all previously iterated values.
+
+    If an environment supports Symbol.iterator, the returned iterator is
+    iterable.
+
+    Parameters
+    ----------
+    iterator: Object
+        Input iterator.
+
+    W: integer
+        Window size.
+
+    Returns
+    -------
+    iterator: Object
+        Iterator.
+
+    iterator.next(): Function
+        Returns an iterator protocol-compliant object containing the next
+        iterated value (if one exists) and a boolean flag indicating whether the
+        iterator is finished.
+
+    iterator.return( [value] ): Function
+        Finishes an iterator and returns a provided value.
+
+    Examples
+    --------
+    > var arr = {{alias:@stdlib/array/to-iterator}}( [ 2.0, -5.0, 3.0, 5.0 ] );
+    > var it = {{alias}}( arr, 3 );
+    > var m = it.next().value
+    4.0
+    > m = it.next().value
+    14.5
+    > m = it.next().value
+    ~12.67
+    > m = it.next().value
+    ~19.67
+
+    See Also
+    --------
+

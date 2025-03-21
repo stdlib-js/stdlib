@@ -1,0 +1,30 @@
+
+{{alias}}( fcn )
+    Returns the name of a function.
+
+    If provided an anonymous function, the function returns an empty `string` or
+    the string `"anonymous"`.
+
+
+    Parameters
+    ----------
+    fcn: Function
+        Input function.
+
+    Returns
+    -------
+    out: string
+        Function name.
+
+    Examples
+    --------
+    > var v = {{alias}}( String )
+    'String'
+    > v = {{alias}}( function foo(){} )
+    'foo'
+    > v = {{alias}}( function(){} )
+    '' || 'anonymous'
+
+    See Also
+    --------
+

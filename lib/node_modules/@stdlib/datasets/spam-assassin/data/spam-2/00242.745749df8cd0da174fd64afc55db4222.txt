@@ -1,0 +1,257 @@
+From rha@insurancemail.net  Wed Jul  3 12:35:07 2002
+Return-Path: <rha@insurancemail.net>
+Delivered-To: yyyy@localhost.labs.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix on SuSE Linux 8.0 (i386)) with ESMTP id F091514F8F3
+	for <jm@localhost>; Wed,  3 Jul 2002 12:32:12 +0100 (IST)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 03 Jul 2002 12:32:13 +0100 (IST)
+Received: from insurance-mail.insuranceiq.com (host66.insuranceiq.com
+    [65.217.159.66] (may be forged)) by dogma.slashnull.org (8.11.6/8.11.6)
+    with ESMTP id g471NA208798 for <jm@jmason.org>; Tue, 7 May 2002 02:23:10
+    +0100
+Received: from mail pickup service by insurance-mail.insuranceiq.com with
+    Microsoft SMTPSVC; Mon, 6 May 2002 21:22:46 -0400
+Subject: $500 1st Annuity Sale Bonus
+To: <yyyy@spamassassin.taint.org>
+Date: Mon, 6 May 2002 21:22:46 -0400
+From: "Rex Huffman & Associates" <rha@insurancemail.net>
+Message-Id: <25714301c1f565$b17fa880$6701a8c0@insuranceiq.com>
+MIME-Version: 1.0
+X-Mailer: Microsoft CDO for Windows 2000
+Thread-Index: AcH1UEIeEsc8uXgVRlWzWXhIPF7h/A==
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4522.1200
+Content-Class: urn:content-classes:message
+X-Originalarrivaltime: 07 May 2002 01:22:46.0352 (UTC) FILETIME=[B19E2D00:01C1F565]
+Content-Type: multipart/alternative; boundary="----=_NextPart_000_237950_01C1F52E.BB0EE1E0"
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_237950_01C1F52E.BB0EE1E0
+Content-Type: text/plain;
+	charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+
+ Rising Rates Guaranteed=0A=
+UP Your Income...First Sale Bonus $500=09
+ 	=20
+A New GUARANTEED ANNUITY
+That Keeps Going UP And UP And UP....
+=09
+Increasing Rates - All Guaranteed 	Flexible or Single Premiums =09
+Nursing Home Waiver* 	Issue Age 0-85** =09
+ Rising Interest Rates Graph=09
+ Rex Huffman & Associates=0A=
+800-749-9900 ext. 123=0A=
+Call today...$500 Bonus=09
+=09
+Please fill out the form below for more information	=20
+Name:	  	 Insurance IQ Logo=09
+E-mail:	  =09
+Phone:	  =09
+City:	  	State:	  =09
+ 	  	 	   =09
+ =20
+*Most States. **Surrender charge varies for ages 56+ in CT, IN, MD, OK,
+SC. Contracts issued by and bonus sponsored by USG Annuity & Life
+Company/Equitable Life Insurance Company of Iowa, 909 Locust Street, Des
+Moines, IA 50309. For agents only. Rates subject to change. Product and
+features not available in all states. IRAs/qualified plans are already
+tax deferred. Consider other annuity features. We reserve the right to
+alter or end bonuses at any time. Minimum premium for bonus $20,000.
+(AD020257). =09
+We don't want anyone to receive our mailings who does not wish to. This
+is professional communication sent to insurance professionals. To be
+removed from this mailing list, DO NOT REPLY to this message. Instead,
+go here: http://www.insurancemail.net
+Legal Notice <http://www.insiq.com/legal.htm>=20
+
+
+------=_NextPart_000_237950_01C1F52E.BB0EE1E0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<HTML>
+<HEAD>
+<TITLE>$500 1st Annuity Sale Bonus</TITLE>
+<BODY bgColor=3D#FFFFFF link=3D#ffffff text=3D#000000>
+<BR>
+<TABLE align=3Dcenter bgColor=3D#000000 cellPadding=3D0 cellSpacing=3D2 =
+width=3D550>
+  <TR>=20
+    <TD vAlign=3Dtop>=20
+      <TABLE bgColor=3D#000000 border=3D0 cellPadding=3D0 =
+cellSpacing=3D0 width=3D"100%">
+        <TR>=20
+          <TD colSpan=3D2 vAlign=3Dtop><IMG alt=3D"Rising Rates =
+Guaranteed&#10;UP Your Income...First Sale Bonus $500" height=3D267 =
+src=3D"http://63.211.81.87/images/huffman/20020410-1a.jpg" =
+width=3D550></TD>
+        </TR>
+        <TR>=20
+          <TD colSpan=3D2 vAlign=3Dtop>&nbsp;</TD>
+        </TR>
+        <TR>=20
+          <TD align=3D"center" colSpan=3D2>
+            <B><FONT color=3D#ffffff face=3D"Arial, Helvetica, =
+sans-serif" size=3D4>A New GUARANTEED ANNUITY<BR>
+            That Keeps Going UP And UP And UP....<BR></FONT></B>=20
+          </TD>
+        </TR>
+        <TR>=20
+          <TD align=3D"center">
+            <B><FONT color=3D#ffffff face=3D"Arial, Helvetica, =
+sans-serif" size=3D3>
+            Increasing Rates - All Guaranteed</FONT></B>=20
+          </TD>
+          <TD align=3D"center">
+            <B><FONT color=3D#ffffff face=3D"Arial, Helvetica, =
+sans-serif" size=3D3>Flexible or Single Premiums</FONT></B>=20
+          </TD>
+        </TR>
+        <TR>=20
+          <TD align=3D"center">
+            <B><FONT color=3D#ffffff face=3D"Arial, Helvetica, =
+sans-serif" size=3D3>Nursing Home Waiver*</FONT></B>=20
+          </TD>
+          <TD align=3D"center">
+            <B><FONT color=3D#ffffff face=3D"Arial, Helvetica, =
+sans-serif" size=3D3>Issue Age 0-85**</FONT></B>=20
+          </TD>
+        </TR>
+        <TR>=20
+          <TD align=3D"center" colSpan=3D2><IMG alt=3D"Rising Interest =
+Rates Graph" height=3D150 =
+src=3D"http://63.211.81.87/images/huffman/20020410-2.gif" =
+width=3D550></TD>
+        </TR>
+        <TR>=20
+          <TD align=3D"center" colSpan=3D2><IMG height=3D150 =
+src=3D"http://63.211.81.87/images/huffman/20020410-3.gif" width=3D550 =
+alt=3D"Rex Huffman & Associates&#10;800-749-9900 ext. 123&#10;Call =
+today...$500 Bonus"></TD>
+        </TR>
+        <TR>=20
+          <TD colSpan=3D2></TD>
+        <TR>=20
+          <TD align=3D"center" colSpan=3D2>=20
+            <TABLE bgColor=3D#000000 cellSpacing=3D0 width=3D"95%">
+              <TR>=20
+                <FORM =
+action=3Dhttp://65.217.159.103/response/response.asp method=3Dpost>
+                  <TD>=20
+                    <TABLE align=3Dcenter bgColor=3D#ffffff border=3D0 =
+cellPadding=3D2 cellSpacing=3D0 width=3D"100%">
+                      <TR>=20
+                        <TD align=3D"center" bgColor=3D#2a4295 =
+colSpan=3D4><B><FONT color=3D#ffffff face=3D"Verdana, Arial, Helvetica, =
+sans-serif" size=3D2>Please fill out the form below for more =
+information</FONT></B></TD>
+                      </TR>
+                      <TR>=20
+                        <TD align=3Dright width=3D"15%"><FONT =
+face=3D"Arial, Helvetica, sans-serif" size=3D2><B>Name:</B></FONT></TD>
+                        <TD>=20
+                          <INPUT name=3Dcontactname size=3D50>
+                        </TD>
+                        <TD align=3D"center" colSpan=3D2 =
+rowSpan=3D2><IMG alt=3D"Insurance IQ Logo" =
+src=3D"http://63.211.81.87/images/q.gif"></TD>
+                      </TR>
+                      <TR>=20
+                        <TD align=3Dright width=3D"15%"><FONT =
+face=3D"Arial, Helvetica, sans-serif" =
+size=3D2><B>E-mail:</B></FONT></TD>
+                        <TD>=20
+                          <INPUT name=3Demail size=3D50>
+                        </TD>
+                      </TR>
+                      <TR>=20
+                        <TD align=3Dright width=3D"15%"><FONT =
+face=3D"Arial, Helvetica, sans-serif" size=3D2><B>Phone:</B></FONT></TD>
+                        <TD colSpan=3D3>=20
+                          <INPUT name=3Dphone size=3D50>
+                        </TD>
+                      </TR>
+                      <TR>=20
+                        <TD align=3Dright width=3D"15%"><FONT =
+face=3D"Arial, Helvetica, sans-serif" size=3D2><B>City:</B></FONT></TD>
+                        <TD width=3D"30%">=20
+                          <INPUT name=3Dcity>
+                        </TD>
+                        <TD align=3Dright width=3D"15%"><FONT =
+face=3D"Arial, Helvetica, sans-serif" size=3D2><B>State:</B></FONT></TD>
+                        <TD width=3D"40%">=20
+                          <INPUT name=3Dstate size=3D2>
+                        </TD>
+                      </TR>
+                      <TR>=20
+                        <TD align=3Dright width=3D"15%">&nbsp;</TD>
+                        <TD width=3D"30%">=20
+                          <INPUT name=3D"btnsubmit" type=3D"submit" =
+value=3D"Submit">
+                        </TD>
+                        <TD align=3Dright width=3D"15%">&nbsp;</TD>
+                        <TD width=3D"40%">=20
+                          <INPUT name=3D"hdnRecipientTxt" =
+type=3D"hidden" value=3D"kevin@rhanet.com">
+                          <INPUT name=3D"hdnSubjectTxt" type=3D"hidden" =
+value=3D"Huffman InsuranceIQ Ad Inquiry">
+                        </TD>
+                      </TR>
+                    </TABLE>
+                    &nbsp; </TD>
+                </FORM>
+              </TR>
+            </TABLE>
+          </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+  <TR>=20
+    <TD align=3D"center" bgColor=3D#000000 width=3D"100%">
+      <FONT color=3D#ffffff face=3D"Arial, Helvetica, sans-serif" =
+size=3D1>*Most States. **Surrender charge=20
+      varies for ages 56+ in CT, IN, MD, OK, SC. Contracts issued by and =
+bonus=20
+      sponsored by USG Annuity &amp; Life Company/Equitable Life =
+Insurance Company=20
+      of Iowa, 909 Locust Street, Des Moines, IA 50309. For agents only. =
+Rates=20
+      subject to change. Product and features not available in all =
+states. IRAs/qualified=20
+      plans are already tax deferred. Consider other annuity features. =
+We reserve=20
+      the right to alter or end bonuses at any time. Minimum premium for =
+bonus=20
+      $20,000. (AD020257).</FONT>
+    </TD>
+  </TR>
+  <TR>=20
+    <TD align=3D"center" bgColor=3D#000000 width=3D"100%">=20
+      <P><FONT color=3D#ffffff face=3D"Arial, Helvetica, sans-serif" =
+size=3D1>We don't=20
+        want anyone to receive our mailings who does not wish to. This =
+is professional=20
+        communication sent to insurance professionals. To be removed =
+from this=20
+        mailing list, <B>DO NOT REPLY</B> to this message. Instead, go =
+here:=20
+        <A =
+href=3D"http://www.insurancemail.net">http://www.insurancemail.net</A><br=
+>
+        <a href=3D'http://www.insiq.com/legal.htm'>Legal =
+Notice</a></FONT></P>
+    </TD>
+  </TR>
+</TABLE>
+</BODY>
+</HTML>
+
+------=_NextPart_000_237950_01C1F52E.BB0EE1E0--
+
+

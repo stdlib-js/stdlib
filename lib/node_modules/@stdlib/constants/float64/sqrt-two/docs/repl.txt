@@ -1,0 +1,12 @@
+
+{{alias}}
+    Square root of `2`.
+
+    Examples
+    --------
+    > {{alias}}
+    1.4142135623730951
+
+    See Also
+    --------
+

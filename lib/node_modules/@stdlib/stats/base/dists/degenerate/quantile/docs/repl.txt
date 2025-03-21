@@ -1,0 +1,60 @@
+
+{{alias}}( p, μ )
+    Evaluates the quantile function for a degenerate distribution with mean `μ`.
+
+    If `p < 0` or `p > 1`, the function returns `NaN`.
+
+    If provided `NaN` for any argument, the function returns `NaN`.
+
+    Parameters
+    ----------
+    p: number
+        Input probability.
+
+    μ: number
+        Constant value of distribution.
+
+    Returns
+    -------
+    out: number
+        Evaluated quantile function.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.5, 2.0 )
+    2.0
+    > y = {{alias}}( 0.9, 4.0 )
+    4.0
+    > y = {{alias}}( 1.1, 0.0 )
+    NaN
+    > y = {{alias}}( -0.2, 0.0 )
+    NaN
+    > y = {{alias}}( NaN, 0.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN )
+    NaN
+
+
+{{alias}}.factory( μ )
+    Returns a function for evaluating the quantile function of a degenerate
+    distribution with mean `μ`.
+
+    Parameters
+    ----------
+    μ: number
+        Constant value of distribution.
+
+    Returns
+    -------
+    quantile: Function
+        Quantile function.
+
+    Examples
+    --------
+    > var myQuantile = {{alias}}.factory( 10.0, 2.0 );
+    > var y = myQuantile( 0.5 )
+    10.0
+
+    See Also
+    --------
+

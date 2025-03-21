@@ -1,0 +1,84 @@
+From fork-admin@xent.com  Tue Oct  1 10:41:31 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 01DB116F71
+	for <jm@localhost>; Tue,  1 Oct 2002 10:39:22 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 01 Oct 2002 10:39:22 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8UKtFK15666 for <jm@jmason.org>;
+    Mon, 30 Sep 2002 21:55:15 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id C0D8D2940F2; Mon, 30 Sep 2002 13:55:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from cats.ucsc.edu (cats-mx2.ucsc.edu [128.114.129.35]) by
+    xent.com (Postfix) with ESMTP id 5D7C329409E for <FoRK@xent.com>;
+    Mon, 30 Sep 2002 13:54:36 -0700 (PDT)
+Received: from Tycho (dhcp-55-196.cse.ucsc.edu [128.114.55.196]) by
+    cats.ucsc.edu (8.10.1/8.10.1) with SMTP id g8UKsRT08173 for
+    <FoRK@xent.com>; Mon, 30 Sep 2002 13:54:27 -0700 (PDT)
+From: "Jim Whitehead" <ejw@cse.ucsc.edu>
+To: "FoRK" <FoRK@xent.com>
+Subject: Internet Archive bookmobile
+Message-Id: <AMEPKEBLDJJCCDEJHAMIKELBFIAA.ejw@cse.ucsc.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+Importance: Normal
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4133.2400
+X-Ucsc-Cats-Mailscanner: Found to be clean
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 30 Sep 2002 13:51:47 -0700
+
+http://www.sfgate.com/cgi-bin/article.cgi?file=/gate/archive/2002/09/26/bono
+act.DTL
+
+Opening arguments are set to begin early next month in Eldred vs. Ashcroft,
+a landmark U.S. Supreme Court case that will decide the future of copyright
+law, including how and when artists and writers can build upon the work of
+others.
+
+....
+
+To heighten public awareness of the importance of the case an Internet
+bookmobile is set to depart San Francisco next Monday on a trip that will
+bring it to the steps of the Supreme Court building in Washington, D.C.,
+before arguments wrap up. The van, which will be stopping at schools,
+libraries and senior centers along the way, is equipped to provide free
+high-speed access to thousands of literary and artistic works that are
+already in the public domain.
+
+--------
+
+I had the opportunity to visit the Internet Archive about a month ago, and
+saw the bookmobile under construction. It's a neat idea. Take an SUV, put a
+small satellite dish on the top, and put a computer, printer, and binding
+machine in the back. Voila -- people can search for a book, then print out a
+copy right there on the spot. Quite literally on-demand printing. Total
+fixed cost of the computer/printer/binding machine, if bought new (the IA
+had the equipment donated) is under $10k.
+
+One of the goals is to show libraries across the country that they could, if
+they wished, add these "virtual holdings" (public domain materials) to their
+existing library, at a fixed cost most libraries can afford. This should be
+compelling to small libraries in remote areas.
+
+- Jim
+
+

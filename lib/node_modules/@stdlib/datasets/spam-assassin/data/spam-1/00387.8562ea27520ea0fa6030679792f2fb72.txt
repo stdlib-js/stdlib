@@ -1,0 +1,48 @@
+From davrem@btamail.net.cn  Fri Sep 20 11:41:25 2002
+Return-Path: <davrem@btamail.net.cn>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id 2E23916F03
+	for <zzzz@localhost>; Fri, 20 Sep 2002 11:41:24 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Fri, 20 Sep 2002 11:41:24 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8K6qWC26061 for
+    <zzzz@jmason.org>; Fri, 20 Sep 2002 07:52:33 +0100
+Received: from nigaserver2.nigasoft.com (rrcs-se-24-129-185-122.biz.rr.com
+    [24.129.185.122]) by webnote.net (8.9.3/8.9.3) with ESMTP id HAA04458 for
+    <zzzz@spamassassin.taint.org>; Fri, 20 Sep 2002 07:53:03 +0100
+From: davrem@btamail.net.cn
+Message-Id: <200209200653.HAA04458@webnote.net>
+Received: from smtp0221.mail.yahoo.com
+    (24-205-239-139.slo-cres.charterpipeline.net [24.205.239.139]) by
+    nigaserver2.nigasoft.com with SMTP (Microsoft Exchange Internet Mail
+    Service Version 5.5.2653.13) id R7TB34PT; Thu, 19 Sep 2002 20:53:35 -0400
+Date: Thu, 19 Sep 2002 20:40:45 -0700
+X-Priority: 3
+To: dpreware@netnoir.net
+Subject: Email marketing info
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/html; charset=us-ascii
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Untitled</TITLE>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<META content="MSHTML 5.00.2614.3500" name=GENERATOR></HEAD>
+<BODY>Would you like to advertise your website inexpensively?<BR><BR>Would you 
+like <B>Double Opt-in Email for as little as $1 CPM</B> (cost per 
+thousand)?<BR><BR>We have over 40 million Double Opt-in emails.<BR>* All Emails 
+are Double Opt-In <BR>* Email contains only your advertisement<BR>* Email a Web 
+Page (HTML) or Text Message<BR>* All Emails sent within 72 hours<BR>* Get 
+Immediate Results<BR><BR><B>Call 954.757.3869 for more info</B><BR><BR>Member 
+Services - You are receiving this email because you signed up, as a member and 
+are currently subscribed to receive special offers from us or one of our 
+affiliates. This message was not sent to you unsolicited. If you do not want to 
+receive future offers from us click below and type 'remove' in the subject line. 
+<BR><A 
+href="mailto:no_thanks3321@btamail.net.cn%20<no_thanks3321@btamail.net.cn>">Unsubscribe</A> 
+</BODY></HTML>
+
+

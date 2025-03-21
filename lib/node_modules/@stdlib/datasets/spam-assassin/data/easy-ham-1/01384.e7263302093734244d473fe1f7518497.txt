@@ -1,0 +1,86 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug 29 11:08:46 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9BB5A47C77
+	for <jm@localhost>; Thu, 29 Aug 2002 06:06:18 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:06:18 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7T66TZ01029 for <jm-sa@jmason.org>; Thu, 29 Aug 2002 07:06:30 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17kIQS-0006mo-00; Wed,
+    28 Aug 2002 23:05:04 -0700
+Received: from yrex.com ([216.40.247.31] helo=host.yrex.com) by
+    usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17kIPo-0005vK-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 28 Aug 2002 23:04:25 -0700
+Received: (qmail 4581 invoked from network); 29 Aug 2002 06:04:22 -0000
+Received: from mgm.dsl.xmission.com (HELO opus) (204.228.152.186) by
+    yrex.com with SMTP; 29 Aug 2002 06:04:22 -0000
+From: "Michael Moncur" <mgm@starlingtech.com>
+To: <spamassassin-talk@example.sourceforge.net>
+Subject: RE: [SAtalk] O.T. Habeus -- Why?
+Message-Id: <NEBBKLEDELIODOCJHLPCKEJNNAAA.mgm@starlingtech.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2910.0)
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Importance: Normal
+In-Reply-To: <yf2k7majkol.fsf@proton.pathname.com>
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Thu, 29 Aug 2002 00:04:14 -0600
+Date: Thu, 29 Aug 2002 00:04:14 -0600
+
+> I think I've worked on SA enough to understand that I can localize a
+> score.  I'm just not comfortable with using SpamAssassin as a vehicle
+> for drumming up your business at the expense of our user base.
+
+This is exactly what I think. SpamAssassin has always been conservative
+about adding unproven RBLs and such, and this should be the same.
+
+> I think it would make more sense to start Habeas with a less aggressive
+> score (one which will not give spammers a quick path into everyone's
+> inbox) and after we've seen evidence that the system works, then we can
+> increase the magnitude of the score.
+
+I say start it with a zero score and put it in 70_cvs_rules_under_test like
+any other unproven rule. Then score it based on actual results, not
+promises. My corpus does not yet contain a single non-spam (or spam) message
+with a Habeas mark. Based on that, it doesn't impress me and it wouldn't
+impress the GA either. Rules with exactly the same statistics are being
+dropped from SA right now, and I don't see why this should be any different.
+
+--
+Michael Moncur  mgm at starlingtech.com  http://www.starlingtech.com/
+"Furious activity is no substitute for understanding." --H. H. Williams
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

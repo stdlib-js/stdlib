@@ -1,0 +1,64 @@
+From fork-admin@xent.com  Thu Sep 19 11:04:53 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 229DB16F03
+	for <jm@localhost>; Thu, 19 Sep 2002 11:04:53 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 19 Sep 2002 11:04:53 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8IHweC10151 for <jm@jmason.org>;
+    Wed, 18 Sep 2002 18:58:43 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id AA8072940A9; Wed, 18 Sep 2002 10:55:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from venus.phpwebhosting.com (venus.phpwebhosting.com
+    [64.29.16.27]) by xent.com (Postfix) with SMTP id 2B3C229409E for
+    <fork@xent.com>; Wed, 18 Sep 2002 10:54:02 -0700 (PDT)
+Received: (qmail 12294 invoked by uid 508); 18 Sep 2002 17:57:04 -0000
+Received: from unknown (HELO hydrogen.leitl.org) (62.155.144.50) by
+    venus.phpwebhosting.com with SMTP; 18 Sep 2002 17:57:04 -0000
+Received: from localhost (eugen@localhost) by hydrogen.leitl.org
+    (8.11.6/8.11.6) with ESMTP id g8IHvFP15382; Wed, 18 Sep 2002 19:57:15
+    +0200
+X-Authentication-Warning: hydrogen.leitl.org: eugen owned process doing -bs
+From: Eugen Leitl <eugen@leitl.org>
+To: Tom <tomwhore@slack.net>
+Cc: CDale <cdale@techmonkeys.net>,
+	Gary Lawrence Murphy <garym@canada.com>, <fork@xent.com>
+Subject: Re: boycotting yahoo
+In-Reply-To: <Pine.BSO.4.44.0209181012190.26668-100000@crank.slack.net>
+Message-Id: <Pine.LNX.4.33.0209181955030.18827-100000@hydrogen.leitl.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 18 Sep 2002 19:57:15 +0200 (CEST)
+
+On Wed, 18 Sep 2002, Tom wrote:
+
+> The others are on mailing list only status for now. A few of the
+> groups I was in that are run by others are harder to deal with since
+> many folks just dont want to have to deal with the inconvienence of a
+> understanding.
+
+I've terminated a number of my own mailing lists at yahoogroups many
+months ago because of similiar sentiments. I've tried lobbying other
+people to move, but with about zero success.
+
+I've got currently only one own mailing list there, which I'm going to
+move as soon as it is technically possible (which is my ISP's problem,
+basically). After that, I intend to kick yahoogroups for good.
+
+

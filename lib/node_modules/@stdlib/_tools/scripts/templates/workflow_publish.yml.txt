@@ -1,0 +1,252 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2021 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: publish
+
+# Workflow triggers:
+on:
+  # Allow the workflow to be manually run:
+  workflow_dispatch:
+    # Workflow inputs:
+    inputs:
+      version:
+        description: 'Version Increment'
+        type: choice
+        default: 'none'
+        options:
+          - 'none'
+          - 'major'
+          - 'minor'
+          - 'patch'
+          - 'premajor'
+          - 'preminor'
+          - 'prepatch'
+          - 'prerelease'
+
+# Workflow jobs:
+jobs:
+
+  # Define job to publish package to npm:
+  publish:
+
+    # Define display name:
+    name: 'Publish package to npm'
+
+    # Define the type of virtual host machine on which to run the job:
+    runs-on: ubuntu-latest
+
+    # Define environment variables:
+    env:
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+    # Define the sequence of job steps...
+    steps:
+
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        # Pin action to full length commit SHA
+        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4.1.0
+
+      # Install Node.js:
+      - name: 'Install Node.js'
+        # Pin action to full length commit SHA
+        uses: actions/setup-node@b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8 # v4.0.1
+        with:
+          node-version: 20
+        timeout-minutes: 5
+
+      # Configure Git:
+      - name: 'Configure Git'
+        run: |
+          git config --local user.email "noreply@stdlib.io"
+          git config --local user.name "stdlib-bot"
+
+      # Increment package version (if requested):
+      - name: 'Increment package version (if requested)'
+        if: ${{ github.event.inputs.version != 'none' }}
+        run: |
+          # Save NPM_TOKEN to user's .npmrc:
+          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+
+          # Increment package version:
+          npm version ${{ github.event.inputs.version }} --no-git-tag-version
+
+          # Define variable for new version:
+          NEW_VERSION=$(node -p "require('./package.json').version")
+
+          # Replace branch in README.md link definitions for badges with the new version:
+          find . -type f -name '*.md' -print0 | xargs -0 sed -Ei "s/branch([=:])[^ ]+/branch\1v${NEW_VERSION}/g"
+
+          # Rewrite CHANGELOG.md to replace "Unreleased" with the new version:
+          sed -Ei "s/Unreleased/${NEW_VERSION}/g" CHANGELOG.md
+          sed -Ei "s/unreleased/v${NEW_VERSION}/g" CHANGELOG.md
+
+          # Create a new commit and tag:
+          git add package.json README.md
+          git commit -m "Release v${NEW_VERSION}"
+          git tag -a "v${NEW_VERSION}" -m "Release v${NEW_VERSION}"
+
+          # Push changes to GitHub:
+          SLUG=${{ github.repository }}
+          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" --follow-tags
+
+      # Remove CLI:
+      - name: 'Remove CLI'
+        if: ${{ github.ref == 'refs/heads/main' }}
+        run: |
+          # Exit if the package does not have a CLI:
+          if ! grep -q '"bin":' package.json; then
+            exit 0
+          fi
+          rm -rf ./bin/cli
+          rm -f test/test.cli.js
+          rm -f etc/cli_opts.json
+          rm -f docs/usage.txt
+
+          # For all dependencies, check in all *.js files if they are still used; if not, remove them:
+          jq -r '.dependencies | keys[]' ./package.json | while read -r dep; do
+            dep=$(echo "$dep" | xargs)
+            if ! find lib -name "*.js" -exec grep -q "$dep" {} + && ! grep -q -s "$dep" manifest.json && ! grep -q -s "$dep" include.gypi; then
+              jq --indent 2 "del(.dependencies[\"$dep\"])" ./package.json > ./package.json.tmp
+              mv ./package.json.tmp ./package.json
+            fi
+          done
+
+          # Set `devDependencies` to an empty object:
+          jq --indent 2 '.devDependencies = {}' ./package.json > ./package.json.tmp
+          mv ./package.json.tmp ./package.json
+
+          # Remove CLI section:
+          find . -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/(\* \* \*\n+)?<section class=\"cli\">[\s\S]+?<\!\-\- \/.cli \-\->//"
+
+          # Remove CLI from package.json:
+          jq -r 'del(.bin)' package.json > package.json.tmp
+          mv package.json.tmp package.json
+
+          # Add entry for CLI package to See Also section of README.md:
+          cliPkgName=$(jq -r '.name' package.json)-cli
+          escapedPkg=$(echo "$cliPkgName" | sed -e 's/\//\\\//g')
+          escapedPkg=$(echo "$escapedPkg" | sed -e 's/\@/\\\@/g')
+          find . -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/<section class=\"related\">(?:\n\n\* \* \*\n\n## See Also\n\n)?/<section class=\"related\">\n\n## See Also\n\n-   <span class=\"package-name\">[\`$escapedPkg\`][$escapedPkg]<\/span><span class=\"delimiter\">: <\/span><span class=\"description\">CLI package for use as a command-line utility.<\/span>\n/"
+
+          # Add link definition for CLI package to README.md:
+          find . -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/<section class=\"links\">/<section class=\"links\">\n\n[$escapedPkg]: https:\/\/www.npmjs.com\/package\/$escapedPkg/"
+
+      # Replace GitHub MathJax equations with SVGs:
+      - name: 'Replace GitHub MathJax equations with SVGs'
+        run: |
+          find . -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe 's/```math\n([\s\S]+?)\n```\n\n//g'
+          find . -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe 's/<!-- <div class="equation"(.*)(<\/div>\s*-->)/<div class="equation"$1<\/div>/sg'
+
+      # Replace GitHub links to individual packages with npm links:
+      - name: 'Replace all GitHub links to individual packages with npm links'
+        run: |
+          find . -type f -name '*.md' -print0 | xargs -0 sed -Ei '/tree\/main/b; s/@stdlib\/([^:]*)\]: https:\/\/github.com\/stdlib-js/@stdlib\/\1\]: https:\/\/www.npmjs.com\/package\/@stdlib/g'
+
+      # Replace list with links to other branches from installation section:
+      - name: 'Replace list with links to other branches from installation section'
+        run: |
+          find . -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/\`\`\`\n\nAlternatively,[^<]+<\/section>/\`\`\`\n\n<\/section>/"
+
+      # Remove unnecessary files:
+      - name: 'Remove unnecessary files'
+        run: |
+          rm -f docs/repl.txt
+          rm -f docs/types/test.ts
+
+      # Replace all stdlib GitHub dependencies with the respective npm packages:
+      - name: 'Replace all stdlib GitHub dependencies with the respective npm packages'
+        run: |
+          for dep in $(jq -r '.dependencies | keys | .[]' package.json); do
+            if [[ "$dep" != "@stdlib"* ]]; then
+              continue
+            fi
+            # Trim leading and trailing whitespace:
+            dep=$(echo "$dep" | xargs)
+            version="$(npm view $dep version)"
+            if [[ -z "$version" ]]; then
+              continue
+            fi
+            version="^$version"
+            jq -r --arg dep "$dep" --arg version "$version" '.dependencies[$dep] = $version' package.json > package.json.tmp
+            mv package.json.tmp package.json
+          done
+          for dep in $(jq -r '.devDependencies | keys | .[]' package.json); do
+            if [[ "$dep" != "@stdlib"* ]]; then
+              continue
+            fi
+            # Trim leading and trailing whitespace:
+            dep=$(echo "$dep" | xargs)
+            version="$(npm view $dep version)"
+            if [[ -z "$version" ]]; then
+              continue
+            fi
+            version="^$version"
+            jq -r --arg dep "$dep" --arg version "$version" '.devDependencies[$dep] = $version' package.json > package.json.tmp
+            mv package.json.tmp package.json
+          done
+
+      # Publish package to npm:
+      - name: 'Publish package to npm'
+        # Pin action to full length commit SHA
+        uses: JS-DevTools/npm-publish@19c28f1ef146469e409470805ea4279d47c3d35c # v3.1.1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
+          access: public
+
+      # Discard any uncommitted changes:
+      - name: 'Discard any uncommitted changes'
+        run: |
+          git reset --hard
+
+      # Send status to Slack channel if job fails:
+      - name: 'Send status to Slack channel in case of failure'
+        # Pin action to full length commit SHA
+        uses: 8398a7/action-slack@28ba43ae48961b90635b50953d216767a6bea486 # v3.16.2
+        with:
+          status: ${{ job.status }}
+          channel: '#npm-ci'
+        if: failure()
+
+  # Define job to cancel any running or queued workflow runs...
+  cancel:
+
+    # Define the type of virtual host machine on which to run the job:
+    runs-on: ubuntu-latest
+
+    # Time out the job after 3 minutes:
+    timeout-minutes: 3
+
+    # Define the sequence of job steps...
+    steps:
+
+      # Cancel any running or queued workflow runs:
+      - name: 'Cancel running or queued workflow runs'
+        # Pin action to full length commit SHA
+        uses: styfle/cancel-workflow-action@85880fa0301c86cca9da44039ee3bb12d3bedbfa # v0.12.1
+        with:
+          workflow_id: >-
+            benchmark.yml,
+            examples.yml,
+            test.yml,
+            test_coverage.yml,
+            test_install.yml,
+            publish.yml
+          access_token: ${{ github.token }}

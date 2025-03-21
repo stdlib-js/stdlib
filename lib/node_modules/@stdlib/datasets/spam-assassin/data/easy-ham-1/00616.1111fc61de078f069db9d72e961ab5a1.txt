@@ -1,0 +1,46 @@
+From fork-admin@xent.com  Wed Sep 18 11:52:32 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 6697216F03
+	for <jm@localhost>; Wed, 18 Sep 2002 11:52:32 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 18 Sep 2002 11:52:32 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8IAmeC26123 for <jm@jmason.org>;
+    Wed, 18 Sep 2002 11:48:40 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 976052940D4; Wed, 18 Sep 2002 03:45:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from argote.ch (argote.ch [80.65.224.17]) by xent.com (Postfix)
+    with ESMTP id BA31D29409F for <fork@xent.com>; Wed, 18 Sep 2002 03:44:51
+    -0700 (PDT)
+Received: by argote.ch (Postfix, from userid 500) id 5A00BC44D;
+    Wed, 18 Sep 2002 12:47:40 +0200 (CEST)
+To: fork@spamassassin.taint.org
+Subject: Re: [VoID] a new low on the personals tip...
+Message-Id: <20020918104740.5A00BC44D@argote.ch>
+From: harley@argote.ch (Robert Harley)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 18 Sep 2002 12:47:40 +0200 (CEST)
+
+Pity.  Reading that woman's ad and knowing Rohit for years, they sound
+like a match made in heaven.  But why, oh, why, keep that shaved-head
+photo on prominent display???  There are lots of photos of Rohit
+looking rather dashing, and with the crucial hair feature enabled!
+
+R
+
+

@@ -1,0 +1,193 @@
+From WebBuilders@YourService.com  Thu Sep 26 11:11:58 2002
+Return-Path: <WebBuilders@YourService.com>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id D4FFF16F03
+	for <zzzz@localhost>; Thu, 26 Sep 2002 11:11:55 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Thu, 26 Sep 2002 11:11:55 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8PISRC08752 for
+    <zzzz@jmason.org>; Wed, 25 Sep 2002 19:28:27 +0100
+Received: from rack3.easydns.com (rack3.easydns.com [205.210.42.50]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id TAA27238 for <zzzz@spamassassin.taint.org>;
+    Wed, 25 Sep 2002 19:29:02 +0100
+Received: from 52.25.36.25 (216-91-88-22.biltmorecomm.com [216.91.88.22])
+    by rack3.easydns.com (Postfix) with SMTP id 9821F4BE98 for
+    <zzzz@spamassassin.taint.org>; Wed, 25 Sep 2002 14:28:58 -0400 (EDT)
+From: WebXperts@no.hostname.specified, Design@no.hostname.specified,
+	"Inc." <WebBuilders@YourService.com>
+To: zzzz@spamassassin.taint.org
+Reply-To: WebBuilders@YourService.com
+Subject: We Build The Internet.  WebXperts.com  (Design / Programming / Consultation)
+Date: Wed, 25 Sep 2002 14:25:38 -0400
+MIME-Version: 1.0
+Message-Id: <20020925182858.9821F4BE98@rack3.easydns.com>
+Content-Type: multipart/related; boundary="1d9d507a-d864-478d-ba24-917611e50332"
+
+
+This is a multi-part message in MIME format
+--1d9d507a-d864-478d-ba24-917611e50332
+Content-Type: text/html; charset=iso-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+<!-- If this flyer does not appear correctly and/or images do not appear, go =
+to the following in your browser window www.webxperts.com -->
+<html>
+<head>
+<title>WebXperts Design, Inc.    We Build The Internet.</title>
+<style type=3D"text/css"><!--body{font-family: Verdana; font-size:10px; =
+color:white;}td{font-family:  Verdana; font-size:10px; =
+color:white;}a{font-family: Verdana; font-size:10px; =
+color:cccccc;}a:hover{font-family: Verdana; font-size:10px; =
+color:yellow;}--></style>
+</head>
+<body bgcolor=3D"#666666"><div align=3D"center">
+<table width=3D"720"><tr><td><hr>
+If This Flyer does not appear correctly and/or images do not appear, please =
+click the following link: <a href=3D=
+"http://www.webxperts.com">http://www.webxperts.com</a>.<hr align=3D=
+"center"></td></tr></table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"720">
+  <tr>   <td><img src=3D"http://www.eluxmedia.com/forms/spacer.gif" width=3D=
+"94" height=3D"1" border=3D"0"></td>   <td><img src=3D=
+"http://www.eluxmedia.com/forms/spacer.gif" width=3D"106" height=3D"1" =
+border=3D"0"></td>   <td><img src=3D=
+"http://www.eluxmedia.com/forms/spacer.gif" width=3D"47" height=3D"1" =
+border=3D"0"></td>   <td><img src=3D=
+"http://www.eluxmedia.com/forms/spacer.gif" width=3D"59" height=3D"1" =
+border=3D"0"></td>   <td><img src=3D=
+"http://www.eluxmedia.com/forms/spacer.gif" width=3D"119" height=3D"1" =
+border=3D"0"></td>   <td><img src=3D=
+"http://www.eluxmedia.com/forms/spacer.gif" width=3D"34" height=3D"1" =
+border=3D"0"></td>   <td><img src=3D=
+"http://www.eluxmedia.com/forms/spacer.gif" width=3D"73" height=3D"1" =
+border=3D"0"></td>   <td><img src=3D=
+"http://www.eluxmedia.com/forms/spacer.gif" width=3D"111" height=3D"1" =
+border=3D"0"></td>   <td><img src=3D=
+"http://www.eluxmedia.com/forms/spacer.gif" width=3D"77" height=3D"1" =
+border=3D"0"></td>   <td><img src=3D=
+"http://www.eluxmedia.com/forms/spacer.gif" width=3D"1" height=3D"1" border=3D=
+"0"></td>  </tr>
+  <tr>
+   <td>
+ <form action=3D"http://www.webxperts.com/webxflyer2002.asp" method=3D=
+"post"><input type=3D"hidden" name=3D"email" value=3D=
+"zzzz@spamassassin.taint.org"><input type=3D"hidden" name=3D"m" value=3D=
+"sept2002"><input type=3D"hidden" name=3D"page" value=3D"webdesign"><input =
+type=3D"hidden" name=3D"typeof" value=3D"homes and apartments"><INPUT TYPE=3D=
+"image" SRC=3D"http://www.eluxmedia.com/forms/flyer2002_r1_c1.gif" ALT=3D"Web =
+Design" ></form>
+</td>
+   <td>
+ <form action=3D"http://www.webxperts.com/webxflyer2002.asp" method=3D=
+"post"><input type=3D"hidden" name=3D"email" value=3D=
+"zzzz@spamassassin.taint.org"><input type=3D"hidden" name=3D"m" value=3D=
+"sept2002"><input type=3D"hidden" name=3D"page" value=3D"app_dev"><input =
+type=3D"hidden" name=3D"typeof" value=3D"homes and apartments"><INPUT TYPE=3D=
+"image" SRC=3D"http://www.eluxmedia.com/forms/flyer2002_r1_c2.gif" ALT=3D=
+"Application Development" ></form>
+</td>
+   <td colspan=3D"2">
+  <form action=3D"http://www.webxperts.com/webxflyer2002.asp" method=3D=
+"post"><input type=3D"hidden" name=3D"email" value=3D=
+"zzzz@spamassassin.taint.org"><input type=3D"hidden" name=3D"m" value=3D=
+"sept2002"><input type=3D"hidden" name=3D"page" value=3D"webmain"><input =
+type=3D"hidden" name=3D"typeof" value=3D"homes and apartments"><INPUT TYPE=3D=
+"image" SRC=3D"http://www.eluxmedia.com/forms/flyer2002_r1_c3.gif" ALT=3D=
+"Website Maintenance" ></form>
+</td>
+   <td>
+  <form action=3D"http://www.webxperts.com/webxflyer2002.asp" method=3D=
+"post"><input type=3D"hidden" name=3D"email" value=3D=
+"zzzz@spamassassin.taint.org"><input type=3D"hidden" name=3D"m" value=3D=
+"sept2002"><input type=3D"hidden" name=3D"page" value=3D"guaranteed"><input =
+type=3D"hidden" name=3D"typeof" value=3D"homes and apartments"><INPUT TYPE=3D=
+"image" SRC=3D"http://www.eluxmedia.com/forms/flyer2002_r1_c5.gif" ALT=3D=
+"Guarenteed Site Placement" ></form>
+ </td>
+   <td colspan=3D"2">
+  <form action=3D"http://www.webxperts.com/webxflyer2002.asp" method=3D=
+"post"><input type=3D"hidden" name=3D"email" value=3D=
+"zzzz@spamassassin.taint.org"><input type=3D"hidden" name=3D"m" value=3D=
+"sept2002"><input type=3D"hidden" name=3D"page" value=3D"ecommerce"><input =
+type=3D"hidden" name=3D"typeof" value=3D"homes and apartments"><INPUT TYPE=3D=
+"image" SRC=3D"http://www.eluxmedia.com/forms/flyer2002_r1_c6.gif" ALT=3D=
+"E-Commerce Solutions" ></form>
+ </td>
+   <td>
+  <form action=3D"http://www.webxperts.com/webxflyer2002.asp" method=3D=
+"post"><input type=3D"hidden" name=3D"email" value=3D=
+"zzzz@spamassassin.taint.org"><input type=3D"hidden" name=3D"m" value=3D=
+"sept2002"><input type=3D"hidden" name=3D"page" value=3D"wireless"><input =
+type=3D"hidden" name=3D"typeof" value=3D"homes and apartments"><INPUT TYPE=3D=
+"image" SRC=3D"http://www.eluxmedia.com/forms/flyer2002_r1_c8.gif" ALT=3D=
+"Wireless Development" ></form>
+</td>
+   <td>
+  <form action=3D"http://www.webxperts.com/webxflyer2002.asp" method=3D=
+"post"><input type=3D"hidden" name=3D"email" value=3D=
+"zzzz@spamassassin.taint.org"><input type=3D"hidden" name=3D"m" value=3D=
+"sept2002"><input type=3D"hidden" name=3D"page" value=3D"intranets"><input =
+type=3D"hidden" name=3D"typeof" value=3D"homes and apartments"><INPUT TYPE=3D=
+"image" SRC=3D"http://www.eluxmedia.com/forms/flyer2002_r1_c9.gif" ALT=3D=
+"Intranets" ></form>
+</td>
+   <td><img src=3D"http://www.eluxmedia.com/forms/spacer.gif" width=3D"1" =
+height=3D"33" border=3D"0"></td>
+  </tr>
+  <tr>
+   <td colspan=3D"9"><img name=3D"logoandmiddle" src=3D=
+"http://www.eluxmedia.com/forms/logoandmiddle.gif" width=3D"720" height=3D=
+"150" border=3D"0"></td>
+   <td><img src=3D"http://www.eluxmedia.com/forms/spacer.gif" width=3D"1" =
+height=3D"150" border=3D"0"></td>
+  </tr>
+  <tr>
+   <td colspan=3D"3">
+ <form action=3D"http://www.webxperts.com/webxflyer2002.asp" method=3D=
+"post"><input type=3D"hidden" name=3D"email" value=3D=
+"zzzz@spamassassin.taint.org"><input type=3D"hidden" name=3D"m" value=3D=
+"sept2002"><input type=3D"hidden" name=3D"page" value=3D"webdesign"><input =
+type=3D"hidden" name=3D"typeof" value=3D"homes and apartments"><INPUT TYPE=3D=
+"image" SRC=3D"http://www.eluxmedia.com/forms/flyer2002_r3_c1.gif" ALT=3D=
+"HTML Version" ></form>
+</td>
+   <td colspan=3D"3">
+ <form action=3D"http://www.webxperts.com/webxflyer2002.asp" method=3D=
+"post"><input type=3D"hidden" name=3D"email" value=3D=
+"zzzz@spamassassin.taint.org"><input type=3D"hidden" name=3D"m" value=3D=
+"sept2002"><input type=3D"hidden" name=3D"page" value=3D"mixedmedia"><input =
+type=3D"hidden" name=3D"typeof" value=3D"homes and apartments"><INPUT TYPE=3D=
+"image" SRC=3D"http://www.eluxmedia.com/forms/flyer2002_r3_c4.gif" ALT=3D=
+"Mixed Media Version" ></form>
+</td>
+   <td colspan=3D"3">
+ <form action=3D"http://www.webxperts.com/webxflyer2002.asp" method=3D=
+"post"><input type=3D"hidden" name=3D"email" value=3D=
+"zzzz@spamassassin.taint.org"><input type=3D"hidden" name=3D"m" value=3D=
+"sept2002"><input type=3D"hidden" name=3D"page" value=3D"flash"><input type=3D=
+"hidden" name=3D"typeof" value=3D"homes and apartments"><INPUT TYPE=3D"image" =
+SRC=3D"http://www.eluxmedia.com/forms/flyer2002_r3_c7.gif" ALT=3D"Flash =
+Version" ></form>
+</td>
+   <td><img src=3D"http://www.eluxmedia.com/forms/spacer.gif" width=3D"1" =
+height=3D"277" border=3D"0"></td>
+  </tr>
+</table>
+<table width=3D"720"<tr><td><br><br><hr align=3D"center">
+Your email address was obtained from a purchased list. You are receiving this =
+from Eluxmedia LLC, and are a part of their mailing list. If you wish to =
+unsubscribe from this list, please <a href=3D=
+"http://www.eluxmedia.com/unsub/unsubscribe.asp">click here</a> and enter =
+your name into the remove box.<br><br>If you have previously unsubscribed and =
+are still receiving this message, you may email our <a href=3D=
+"mailto:solutions@eluxmedia.com">Abuse Control Center</a>.</font><hr align=3D=
+"center"></td></tr></table>
+</div>
+</body>
+</html>  
+--1d9d507a-d864-478d-ba24-917611e50332--
+
+

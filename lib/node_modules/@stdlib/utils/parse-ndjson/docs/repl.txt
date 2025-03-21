@@ -1,0 +1,45 @@
+
+{{alias}}( str[, reviver] )
+    Attempts to parse a string as newline-delimited JSON (NDJSON).
+
+    Function behavior differs from `JSON.parse()` as follows:
+
+    - Returns array of parsed JSON
+    - Throws a `TypeError` if provided any value which is not a string.
+    - Returns a `SyntaxError` if unable to parse a string as NDJSON.
+    - Throws a `TypeError` if provided a `reviver` argument which 
+    is not a function.
+
+    Parameters
+    ----------
+    str: string
+        String to parse as newline-delimited JSON.
+
+    reviver: Function (optional)
+        Transformation function.
+
+    Returns
+    -------
+    out: Array | Error
+        Array of parsed values or an error.
+
+    Examples
+    --------
+    > var obj = '{"beep":"boop"}\n{"example":42}\n{"data":[1,2,3]}';
+    > var result = {{alias}}( obj )
+    [ { 'beep': 'boop' }, { 'example': 42 }, { 'data': [ 1, 2, 3 ] } ]
+
+    // Provide a reviver:
+    > function reviver( key, value ) {
+    ...     if ( key === '' || key === 'beep' ) {
+    ...         return ( typeof value === 'string' ) 
+    ...         ? value.toUpperCase() : value;
+    ...     };
+    ...     return typeof value === 'number' ? value * 2 : value;
+    ... };
+    > var ndjsonString = '{"beep":"boop"}\n{"example":42}\n{"data":[1,2,3]}';
+    > var resultWithReviver = {{alias}}( ndjsonString, reviver )
+    [ { 'beep': 'boop' }, { 'example': 84 }, { 'data': [ 2, 4, 6 ] } ]
+
+    See Also
+    --------

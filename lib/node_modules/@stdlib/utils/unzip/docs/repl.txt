@@ -1,0 +1,32 @@
+
+{{alias}}( arr[, idx] )
+    Unzips a zipped array (i.e., a nested array of tuples).
+
+    Parameters
+    ----------
+    arr: Array
+        Zipped array.
+
+    idx: Array<number> (optional)
+        Array of indices specifying which tuple elements to unzip.
+
+    Returns
+    -------
+    out: Array
+        Array of unzipped arrays.
+
+    Examples
+    --------
+    // Basic usage:
+    > var arr = [ [ 1, 'a', 3 ], [ 2, 'b', 4 ] ];
+    > var out = {{alias}}( arr )
+    [ [ 1, 2 ], [ 'a', 'b' ], [ 3, 4 ] ]
+
+    // Provide indices:
+    > arr = [ [ 1, 'a', 3 ], [ 2, 'b', 4 ] ];
+    > out = {{alias}}( arr, [ 0, 2 ] )
+    [ [ 1, 2 ], [ 3, 4 ] ]
+
+    See Also
+    --------
+

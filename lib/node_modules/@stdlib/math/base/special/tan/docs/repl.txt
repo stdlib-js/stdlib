@@ -1,0 +1,28 @@
+
+{{alias}}( x )
+    Computes the tangent of a number.
+
+    Parameters
+    ----------
+    x: number
+        Input value (in radians).
+
+    Returns
+    -------
+    y: number
+        Tangent.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.0 )
+    ~0.0
+    > y = {{alias}}( -{{alias:@stdlib/constants/float64/pi}}/4.0 )
+    ~-1.0
+    > y = {{alias}}( {{alias:@stdlib/constants/float64/pi}}/4.0 )
+    ~1.0
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+

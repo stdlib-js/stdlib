@@ -1,0 +1,94 @@
+From pudge@perl.org  Wed Aug 14 10:56:42 2002
+Return-Path: <pudge@perl.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 65BB444122
+	for <jm@localhost>; Wed, 14 Aug 2002 05:50:34 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 14 Aug 2002 10:50:34 +0100 (IST)
+Received: from cpu59.osdn.com (slashdot.org [64.28.67.73] (may be forged))
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7E20b429966 for
+    <jm-use-perl@jmason.org>; Wed, 14 Aug 2002 03:00:37 +0100
+Received: from [10.2.181.14] (helo=perl.org) by cpu59.osdn.com with smtp
+    (Exim 3.35 #1 (Debian)) id 17enRp-000844-01 for <jm-use-perl@jmason.org>;
+    Tue, 13 Aug 2002 21:59:45 -0400
+Date: Wed, 14 Aug 2002 02:00:29 +0000
+From: pudge@perl.org
+Subject: [use Perl] Stories for 2002-08-14
+To: yyyy-use-perl@spamassassin.taint.org
+Precedence: list
+X-Bulkmail: 2.051
+Message-Id: <E17enRp-000844-01@cpu59.osdn.com>
+
+use Perl Daily Newsletter
+
+In this issue:
+    * Apress Publishes 'Writing Perl Modules for CPAN'
+    * Lessig's 'Freeing Culture' Keynote Online
+
++--------------------------------------------------------------------+
+| Apress Publishes 'Writing Perl Modules for CPAN'                   |
+|   posted by pudge on Tuesday August 13, @09:50 (books)             |
+|   http://use.perl.org/article.pl?sid=02/08/13/1354231              |
++--------------------------------------------------------------------+
+
+[0]samtregar writes "My new book, [1]Writing Perl Modules for CPAN, is
+now available. If you ever wanted to learn to write modules and release
+them on CPAN, now is the time. For experienced module makers, the book
+offers advanced training in XS, Inline::C and CGI::Application. You can
+[2]read the first chapter online for free. The book is shipping now from
+[3]Amazon, [4]BN and others."
+
+Discuss this story at:
+    http://use.perl.org/comments.pl?sid=02/08/13/1354231
+
+Links:
+    0. mailto:sam@tregar.com
+    1. http://apress.com/book/bookDisplay.html?bID=14
+    2. http://apress.com/book/supplementDownload.html?bID=14&sID=617
+    3. http://www.amazon.com/exec/obidos/ASIN/159059018X
+    4. http://search.barnesandnoble.com/bookSearch/isbnInquiry.asp?isbn=159059018X&pdf=Y
+
+
++--------------------------------------------------------------------+
+| Lessig's 'Freeing Culture' Keynote Online                          |
+|   posted by KM on Tuesday August 13, @11:27 (links)                |
+|   http://use.perl.org/article.pl?sid=02/08/13/1527257              |
++--------------------------------------------------------------------+
+
+[0]Ask writes "Leonard Lin put up [1]Lawrence Lessig's Freeing Culture
+keynote from OSCON. It's excellent. It's great. It's the slides with
+audio in flash. So download that flash player already and click the url.
+I also [2]mirrored it at perl.org. You still here? See it already, you
+*will* be entertained. Near the end of the keynote Lessig asked how many
+had donated to the EFF. Many hands went up. We felt great. 'Yeah, we're
+helping!' Then he asked how many had donated more than they spend on
+their broadband connection... I don't think I was alone in feeling a bit
+busted. :-)"
+
+Discuss this story at:
+    http://use.perl.org/comments.pl?sid=02/08/13/1527257
+
+Links:
+    0. http://www.askbjoernhansen.com/
+    1. http://randomfoo.net/oscon/2002/lessig/
+    2. http://www.perl.org/tpc/2002/lessig/
+
+
+
+Copyright 1997-2002 pudge.  All rights reserved.
+
+
+======================================================================
+
+You have received this message because you subscribed to it
+on use Perl.  To stop receiving this and other
+messages from use Perl, or to add more messages
+or change your preferences, please go to your user page.
+
+	http://use.perl.org/my/messages/
+
+You can log in and change your preferences from there.
+
+

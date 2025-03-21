@@ -1,0 +1,86 @@
+
+{{alias}}( value )
+    Tests if a value is an array-like object containing only safe integers.
+
+    An integer valued number is "safe" when the number can be exactly
+    represented as a double-precision floating-point number.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is an array-like object containing
+        only safe integers.
+
+    Examples
+    --------
+    > var arr = [ -3.0, new Number(0.0), 2.0 ];
+    > var bool = {{alias}}( arr )
+    true
+    > arr = [ -3.0, '3.0' ];
+    > bool = {{alias}}( arr )
+    false
+
+
+{{alias}}.primitives( value )
+    Tests if a value is an array-like object containing only primitive safe
+    integer values.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is an array-like object containing only
+        primitive safe integer values.
+
+    Examples
+    --------
+    > var arr = [ -1.0, 10.0 ];
+    > var bool = {{alias}}.primitives( arr )
+    true
+    > arr = [ -1.0, 0.0, 5.0 ];
+    > bool = {{alias}}.primitives( arr )
+    true
+    > arr = [ -3.0, new Number(-1.0) ];
+    > bool = {{alias}}.primitives( arr )
+    false
+
+
+{{alias}}.objects( value )
+    Tests if a value is an array-like object containing only `Number` objects
+    having safe integer values.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is an array-like object containing only
+        `Number` objects having safe integer values.
+
+    Examples
+    --------
+    > var arr = [ new Number(1.0), new Number(3.0) ];
+    > var bool = {{alias}}.objects( arr )
+    true
+    > arr = [ -1.0, 0.0, 3.0 ];
+    > bool = {{alias}}.objects( arr )
+    false
+    > arr = [ 3.0, new Number(-1.0) ];
+    > bool = {{alias}}.objects( arr )
+    false
+
+    See Also
+    --------
+

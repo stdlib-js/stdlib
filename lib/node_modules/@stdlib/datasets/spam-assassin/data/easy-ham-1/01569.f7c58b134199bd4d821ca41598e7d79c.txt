@@ -1,0 +1,119 @@
+From razor-users-admin@lists.sourceforge.net  Fri Sep  6 11:36:23 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 8E88C16F19
+	for <jm@localhost>; Fri,  6 Sep 2002 11:36:02 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 11:36:02 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g869q7C29105 for
+    <jm-razor@jmason.org>; Fri, 6 Sep 2002 10:52:07 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id AAA19308 for
+    <jm-razor@jmason.org>; Fri, 6 Sep 2002 00:46:09 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17n6AR-0000B9-00; Thu,
+    05 Sep 2002 16:36:07 -0700
+Received: from mailgate.sri.com ([128.18.243.11]) by
+    usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17n69N-0002sW-00 for <razor-users@lists.sourceforge.net>; Thu,
+    05 Sep 2002 16:35:01 -0700
+Received: (qmail 6143 invoked from network); 5 Sep 2002 23:34:28 -0000
+Received: from localhost (HELO mailgate.SRI.COM) (127.0.0.1) by
+    mailgate.sri.com with SMTP; 5 Sep 2002 23:34:28 -0000
+Received: from newmail.sri.com ([128.18.30.43]) by mailgate.SRI.COM (NAVGW
+    2.5.1.18) with SMTP id M2002090516342709381 for
+    <razor-users@lists.sourceforge.net>; Thu, 05 Sep 2002 16:34:27 -0700
+Received: from sri.com ([128.18.28.107]) by newmail.sri.com (Netscape
+    Messaging Server 4.15) with ESMTP id H1ZO6L00.H5K; Thu, 5 Sep 2002
+    16:35:09 -0700
+Message-Id: <3D77EACB.7040600@sri.com>
+From: "Michael Duff" <michael.duff@sri.com>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.1)
+    Gecko/20020826
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: David Rees <dbr@greenhydrant.com>
+Cc: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] Problem with Razor 2.14 and Spamassassin 2.41
+References: <20020905160808.B2932@greenhydrant.com>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Thu, 05 Sep 2002 16:37:47 -0700
+Date: Thu, 05 Sep 2002 16:37:47 -0700
+
+This is due to insufficient write privileges to the "razor-agent.log" 
+file. A quick work-around is to do a "chmod go+rx" on that file (of 
+course, it's better to restrict the access as much as possible).
+
+In Agent.pm, when the Razor2::Logger object is created, if it doesn't 
+have write permission to the log file it does not succeed. Then, later 
+in the code when the log object is used, it fails with the "unblessed" 
+error.
+
+Hope this helps,
+Michael Duff
+
+David Rees wrote:
+
+>This is my first time running Razor, heard a lot of good things about it so
+>I thought I'd give it a shot.  I also run SpamAssassin so I'd like to
+>integrate the two.
+>
+>I'm not sure if this problem is with SpamAssassin or Razor, so I though I'd
+>shoot the message here first
+>
+>With a freshly installed SpamAssassin 2.41 and Razor 2.14 I'm seeing these
+>messages spit out from spamd:
+>
+>razor2 check skipped: No such file or directory Can't call method "log" on
+>unblessed reference at /usr/lib/perl5/site_perl/5.6.0/Razor2/Client/Agent.pm
+>line 211, <STDIN> line 75.
+>
+>Any ideas?  razor seems to run correctly over the command line.
+>
+>Thanks,
+>-Dave
+>
+>
+>-------------------------------------------------------
+>This sf.net email is sponsored by: OSDN - Tired of that same old
+>cell phone?  Get a new here for FREE!
+>https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+>_______________________________________________
+>Razor-users mailing list
+>Razor-users@lists.sourceforge.net
+>https://lists.sourceforge.net/lists/listinfo/razor-users
+>  
+>
+
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

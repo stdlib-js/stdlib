@@ -1,0 +1,135 @@
+Received: from rs6000.resqnet.com (rs6000.resqnet.com [64.209.23.67])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6PIph423946
+	for <resqnet_com@spamtraps.taint.org>; Thu, 25 Jul 2002 19:51:43 +0100
+Received: from columbia.lp.org (columbia.kia.net [205.252.89.231])
+	by rs6000.resqnet.com (8.11.2/8.11.2) with ESMTP id g6PIoqe17480
+	for <ccastell@resqnet.com>; Thu, 25 Jul 2002 14:50:52 -0400
+Received: from localhost (daemon@localhost)
+	by columbia.lp.org (8.9.3/8.9.3) with SMTP id OAA51643;
+	Thu, 25 Jul 2002 14:47:50 -0400 (EDT)
+	(envelope-from owner-announce@hq.lp.org)
+Received: by columbia.kia.net (bulk_mailer v1.12); Thu, 25 Jul 2002 12:02:38 -0400
+Received: (from majordom@localhost)
+	by columbia.lp.org (8.9.3/8.9.3) id MAA40103
+	for announce-outgoing; Thu, 25 Jul 2002 12:02:38 -0400 (EDT)
+	(envelope-from owner-announce@hq.lp.org)
+Received: (from lpadmin@localhost)
+	by columbia.lp.org (8.9.3/8.9.3) id MAA40088;
+	Thu, 25 Jul 2002 12:02:37 -0400 (EDT)
+	(envelope-from lpadmin)
+Date: Thu, 25 Jul 2002 12:02:37 -0400 (EDT)
+Message-Id: <200207251602.MAA40088@columbia.lp.org>
+To: announce@hq.lp.org
+Subject: LP RELEASE: Outrageous military spending
+From: Libertarian Party Announcements <owner-announce@lp.org>
+Reply-To: owner-announce@hq.lp.org
+X-MailScanner: Found to be clean
+X-MailScanner-SpamCheck: not spam, SpamAssassin (score=-5.1, required 5,
+	PGP_SIGNATURE)
+
+-----BEGIN PGP SIGNED MESSAGE-----
+
+===============================
+NEWS FROM THE LIBERTARIAN PARTY
+2600 Virginia Avenue, NW, Suite 100
+Washington DC 20037
+World Wide Web: http://www.LP.org
+===============================
+For release: July 25, 2002
+===============================
+For additional information:
+George Getz, Press Secretary
+Phone: (202) 333-0008 Ext. 222
+E-Mail: pressreleases@hq.LP.org
+===============================
+
+Thousands spent on strippers, golf memberships
+shows Pentagon spending is out of control, Libertarians say
+
+WASHINGTON, DC -- Quiz question: Which of the following items have been 
+charged to the taxpayers recently by military personnel wielding 
+government-issued credit cards?
+
+(a) $38,000 for lap dancing at strip clubs near military bases.
+
+(b) $3,400 for a Sumo wrestling suit and $9,800 for Halloween costumes.
+
+(c) $7,373 for closing costs on a home and $16,000 for a corporate golf 
+membership.
+
+(d) $4,600 for white beach sand and $19,000 worth of decorative "river 
+rock" at a military base in the Arabian desert.
+
+(e) all of the above.
+
+"Incredibly, the answer is 'all of the above,' said Steve Dasbach, 
+Libertarian Party executive director. "Thanks to the federal 
+government's policy of doling out credit cards with no questions asked, 
+the military has launched a raid on your wallet."
+
+The shocking revelations are contained in a General Accounting Office 
+audit released last week that uncovered $101 million in "seemingly 
+unneeded expenditures" made by the Air Force and Army in 2000 and 
+2001. The purchases were made possible by the federal government's lax 
+credit card policy: At least 1.4 million Defense Department employees 
+carry credit cards, and last year they used them to splurge on $6.1 
+billion in goods and services, the audit found.
+
+In one case, a group of 200 soldiers used their military IDs and 
+government-issued travel cards to get cash at adult-entertainment bars, 
+then spent the money there. The clubs charged a 10 percent fee to 
+supply the soldiers with cash -- then billed the full amount to their 
+travel cards as a restaurant charge, the GAO found.
+
+"Are these warriors really fighting terrorism while frolicking in a 
+strip club, or defending our country while wearing a Sumo wrestling 
+suit?" asked Dasbach. "Americans who support a bigger defense budget, 
+take note: The Pentagon frequently behaves like any other bloated, 
+reckless government agency. It promises your money will be spent on the 
+worthiest of causes, then squanders it on things you could never even 
+imagine."
+
+Other spending uncovered by the audit included $45,000 for luxury 
+cruises, $1,800 for executive pillows, and $24,000 for a sofa and 
+armchair at a military installation in the Middle East, Dasbach noted.
+ 
+Some military employees actually defended the purchases, the audit 
+noted, by saying that recreational items such as golf memberships can 
+be "a useful tool for building good relations with a host country" 
+such as Saudi Arabia or the United Arab Emirates. 
+
+Not surprisingly, Dasbach said, the audit found "little evidence of 
+documented disciplinary action" against those who misused the cards, 
+so taxpayers may end up paying the tab.
+  
+"It's time to impose a little military discipline on these deadbeat 
+Defense Department workers, and force them to personally reimburse 
+taxpayers for every penny of improper spending," he said.
+ 
+"Then cut the Pentagon's massive $379 billion budget to help guard 
+against such wasteful spending in the future. Perhaps that's one way to 
+force the Pentagon to spend its resources defending the country, 
+instead of offending the taxpayer."
+
+
+-----BEGIN PGP SIGNATURE-----
+Version: 2.6.2
+
+iQCVAwUBPUA6FdCSe1KnQG7RAQGAKwP/Zpfw0Uq3BPLnXXmnlWQ2aFFb1FSaj+nJ
+QOMt9q4TBhiYJhIdgdd+uGxoubiPfvyIweSR1PjOdoFe8dYf2h/V4gNS9hSmkSgC
+76RZVuitNf2DbEsaY8TtcUDLDC51m/jgxiGcgPkcyJ+0Wn11RRbktkVEefSNTaBz
+M8ibVFiDPyI=
+=9fYc
+-----END PGP SIGNATURE-----
+
+
+
+-----------------------------------------------------------------------
+The Libertarian Party                                http://www.lp.org/
+2600 Virginia Ave. NW, Suite 100                    voice: 202-333-0008
+Washington DC 20037                                   fax: 202-333-0072
+-----------------------------------------------------------------------
+For subscription changes, please use the WWW form at: 
+http://www.lp.org/action/email.html
+
+

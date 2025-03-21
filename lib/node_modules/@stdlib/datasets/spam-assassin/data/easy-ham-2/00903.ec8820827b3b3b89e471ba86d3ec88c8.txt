@@ -1,0 +1,99 @@
+From fork-admin@xent.com  Fri Jul 26 10:34:10 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 35871440E7
+	for <jm@localhost>; Fri, 26 Jul 2002 05:34:10 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 26 Jul 2002 10:34:10 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6Q9Vh405667 for <jm@jmason.org>;
+    Fri, 26 Jul 2002 10:31:44 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 538C42940A1; Fri, 26 Jul 2002 02:30:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from venus.phpwebhosting.com (venus.phpwebhosting.com
+    [64.29.16.27]) by xent.com (Postfix) with SMTP id 1F87D2940AA for
+    <fork@xent.com>; Fri, 26 Jul 2002 02:29:13 -0700 (PDT)
+Received: (qmail 29173 invoked by uid 508); 26 Jul 2002 09:29:16 -0000
+Received: from unknown (HELO hydrogen.leitl.org) (62.226.149.80) by
+    venus.phpwebhosting.com with SMTP; 26 Jul 2002 09:29:16 -0000
+Received: from localhost (eugen@localhost) by hydrogen.leitl.org
+    (8.11.6/8.11.6) with ESMTP id g6Q9TB002478; Fri, 26 Jul 2002 11:29:12
+    +0200
+X-Authentication-Warning: hydrogen.leitl.org: eugen owned process doing -bs
+From: Eugen Leitl <eugen@leitl.org>
+To: "Jon O." <jono@networkcommand.com>
+Cc: <bitbitch@magnesium.net>, <garym@canada.com>, <fork@spamassassin.taint.org>
+Subject: Re: Asteroids anyone ?
+In-Reply-To: <20020725154846.M85654@networkcommand.com>
+Message-Id: <Pine.LNX.4.33.0207261105480.693-100000@hydrogen.leitl.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 26 Jul 2002 11:29:11 +0200 (CEST)
+
+On Thu, 25 Jul 2002, Jon O. wrote:
+
+ 
+> Has anyone considered the fact that these occurrances appear to
+> be increasing. I'm aware that maybe more publicity surrounding
+
+No, it's just we've started looking. After we've actually started looking 
+for deep infrasound (pressure waves) with a network of stations designed 
+to enforced the nuke test ban treaty we've discovered that pretty big 
+impacts are the norm. Current infrasound stations can detect 
+bolides/meteoroids in ~10 T TNT scale, but some 10 kT events are 
+relatively frequent. A number of people died in the Tunguska event (1908, 
+10-15 MT), despite it hitting in the middle of nowhere.
+
+http://216.239.39.100/search?q=cache:637JrhGDB5gC:www.lpi.usra.edu/meetings/5thMars99/pdf/6081.pdf+bolide+impact+kT+wave&hl=en&ie=UTF-8
+
+In the Earth atmosphere a large number of bright light flashes of energies
+in light impulse of about 0.1- 1 kt TNT and higher have been registered by
+USA DoD satellites equipped with photoelectric detectors [9-11]. Intense
+light impulses are created by impacts of meteoroids disrupted in the
+atmosphere (mainly at altitudes of about 30-45 km). Several techniques for
+the assessment of meteor- oid's characteristics from the light curves and
+heights of peak intensities have been developed [3,12]. Using these
+techniques the preatmospheric kinetic energy for Fifth International
+Conference on Mars INITIATION OF SANDSTORMS: I.V.Nemtchinov, O.P.Popova,
+V.A.Rybakov, V.V.Shuvalov a number of events was determined. The biggest
+event is the 1 February 1994 with ini- tial energy as high as 30-40 kt TNT
+(or initial mass of about 400 t). The bright flash with light energy of
+about 4.5 kt TNT was caused by this meteoroid which deeply penetrated into
+the atmosphere (at an angle of 45 degrees and velocity of 24 km/s) and
+disintegrated above at altitudes of about 34 km and 21 km [9,12]. Another
+famous impact event, the Sikhote-Alin meteor shower (12 February 1947
+event), may be compared with the 1 February 1994 event. Initial masses of
+these meteoroids are probably the same, as well as the angle of trajectory
+inclination, but the initial velocity of the Sikhote-Alin is almost twice
+smaller. That caused fragmentation of 1 February 1994 meteoroid at higher
+altitudes and probably large fragments constitute a smaller part of the
+pre- breakdown mass in contrast to the Sikhote-Alin event. In a rarefied
+atmosphere of Mars analogous im- pactors will penetrate into deeper layers
+of the atmos- phere.They will disintegrate lower 15 km or even reach the
+planet surface, partially in disrupted form. Only the first disruption
+would occur if a meteoroid similar to that caused the 1 February 1994 will
+enter into the Martian atmosphere. And this body would reach the Mars
+surface as a tense swarm of fragments. The meteoroid similar to that
+caused the Sikhote-Alin event would hit the surface in a form of large
+frag- ments due to its low velocity. They will create crater with the size
+similar to that of the undisrupted meteoroid.
+
+
+http://xent.com/mailman/listinfo/fork
+
+

@@ -1,0 +1,88 @@
+From rssfeeds@jmason.org  Thu Sep 26 16:34:02 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 6664D16F18
+	for <jm@localhost>; Thu, 26 Sep 2002 16:34:00 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 16:34:00 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8QFSTg24435 for
+    <jm@jmason.org>; Thu, 26 Sep 2002 16:28:29 +0100
+Message-Id: <200209261528.g8QFSTg24435@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: joelonsoftware <rssfeeds@spamassassin.taint.org>
+Subject: We're trying to decide if FogBUGZ 3.0 should support custom
+    fields. Histor
+Date: Thu, 26 Sep 2002 15:28:28 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.joelonsoftware.com/news/20020912.html
+Date: Not supplied
+
+We're trying to decide if FogBUGZ[1] 3.0 should support custom fields. 
+Historically, I am opposed to custom fields in principle, because they get 
+abused. People add so many fields to their bug databases to capture everything 
+they think might be important that entering a bug is like applying to Harvard. 
+End result: people don't enter bugs, which is much, much worse than not 
+capturing all that information. You can always "page fault" to get the 
+information if the original report forgot it. Rather than having a field in 
+every bug where you enter the version numbers of every DLL on your machine 
+(this is an actual customer request), information which is likely to be 
+relevant only for a tiny percentage of bugs, why not just have the 
+programmer-assignee look at the bug first, and if they think it might be 
+dll-version-related, only _then_ bounce the bug back to the originator asking 
+for the DLL info? Similarly, it's always tempting to add a field in which you 
+ask for the OS version in which the bug occurred. This sounds logical, but 
+trust me: adding fields like this is guaranteed to do one thing and one thing 
+only: reduce the number of bug reports that get into the system in the first 
+place. Only a small percentage of bugs are really OS dependant and you can 
+always include that info in the text description of the bug if it happens to be 
+relevant. (But then how do you search for, say, all bugs which only happen on 
+Windows 98SE? Aha! You can't. Ever. Even with the custom field. Because not 
+every bug has been regressed on every version of every operating system, so 
+this search doesn't make sense in the first place. The info wasn't captured. Do 
+a full text search for 98SE and you'll find some of them. Life is imperfect.) 
+
+Life would be more perfect if every bug report included megabytes of 
+information -- a complete dump of every byte on the hard drive and in RAM on 
+the computer in question and while you're at it, a photograph of the tester's 
+workspace. But the goal of a bug tracking database is to _keep track of bugs_, 
+which, all else being equal, takes priority over making it easy to find them. I 
+have heard countless stories of development teams where the bug tracking 
+package was so high-ceremony that people were afraid to enter bugs in the 
+system, because they didn't know what all those fields were. The _real_ 
+bug-"tracking" happened in email, post-its, and hallway conversations. Great. 
+
+A pretty common question we get on the customer service line is, "does 
+FogBUGZ support custom fields?" Rather than giving our usual answer ("no. on 
+purpose.") over the last few weeks I've been saying, "can you please tell me 
+what fields you would need? We're trying to decide whether to implement that 
+feature in 3.0 and we want to know why people need it." The interesting thing 
+is, almost all of the fields people ask for _are already in FogBUGZ,_ and the 
+other ones, in my educated opinion, shouldn't be fields. And in fact, our 
+existing customers are certainly happy without custom fields. One of our 
+biggest site licenses was sold to a semiconductor company, and I myself wanted 
+to add a custom field for them to keep track of versions of the circuit design, 
+but I didn't, and they never needed it (even though they had been keeping track 
+of it with the old bug tracking package which had custom fields), and they are 
+happy and keep buying more site licenses. 
+
+But the dilemma for us is that many customers are evaluating bug tracking 
+software and they consider the lack of custom fields to be a major weakness in 
+our product. "Gosh, even Filemaker has custom fields." Righto. It's true. And 
+who am I to tell my customers they are wrong? One person who I was talking to 
+yesterday would have used a custom field for something that we already have a 
+built-in field for. This would have made their database confusing and 
+inconsistent and would have definitely caused more problems than it solved. But 
+it's still rude of me to tell customers that we don't have that feature _for 
+their own good_, even though it usually is, and we're losing some sales because 
+of it. 
+
+Sigh. I guess we could have a custom fields feature but hide it and make it so 
+hard to use that people don't use it. At least we won't lose any sales :)
+
+[1] http://www.fogcreek.com/FogBUGZ
+
+

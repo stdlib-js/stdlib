@@ -1,0 +1,77 @@
+From razor-users-admin@lists.sourceforge.net  Sat Sep 14 16:22:01 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 0D8B716F03
+	for <jm@localhost>; Sat, 14 Sep 2002 16:22:01 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 14 Sep 2002 16:22:01 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8DLXmC03388 for <jm-razor@jmason.org>; Fri, 13 Sep 2002 22:33:48 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17pxt6-0001Sl-00; Fri,
+    13 Sep 2002 14:22:05 -0700
+Received: from r2d2.easydns.com ([216.220.40.242] helo=mail.easydns.com)
+    by usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian))
+    id 17pxst-0008UB-00 for <razor-users@lists.sourceforge.net>;
+    Fri, 13 Sep 2002 14:21:51 -0700
+Received: from easydns.com (localhost [127.0.0.1]) by mail.easydns.com
+    (8.11.3/8.11.0) with ESMTP id g8DLLiA13426 for
+    <razor-users@lists.sourceforge.net>; Fri, 13 Sep 2002 17:21:44 -0400
+Message-Id: <3D8256E3.5040908@easydns.com>
+From: Colin Viebrock <colin@easydns.com>
+Reply-To: colin@easydns.com
+Organization: easyDNS Technologies Inc.
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.1)
+    Gecko/20020826
+X-Accept-Language: en-ca, en-us, en
+MIME-Version: 1.0
+To: razor-users@example.sourceforge.net
+References: <010501c24f82$947b3340$7c640f0a@mfc.corp.mckee.com>
+    <Pine.LNX.4.44.0209121659110.6254-314159@home.unex.es>
+    <20020912121017.A2630@rover.vipul.net>
+    <001601c25b31$80d2d0e0$7c640f0a@mfc.corp.mckee.com>
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Subject: [Razor-users] Bug ... still
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=razor-users>
+X-Original-Date: Fri, 13 Sep 2002 17:21:39 -0400
+Date: Fri, 13 Sep 2002 17:21:39 -0400
+
+Haven't heard anything about this, so excuse the repost but:
+
+	http://sf.net/tracker/index.php?func=detail&aid=600311&
+	  group_id=3978&atid=103978
+
+Or should bugs be reported somewhere other than on the SF bug tracker?
+
+- Colin
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

@@ -1,0 +1,87 @@
+From fork-admin@xent.com  Tue Sep 17 15:09:10 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id E911B16F03
+	for <jm@localhost>; Tue, 17 Sep 2002 15:09:09 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 17 Sep 2002 15:09:09 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8HDlaC12241 for <jm@jmason.org>;
+    Tue, 17 Sep 2002 14:47:37 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 7D0BD2940A2; Tue, 17 Sep 2002 06:44:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mta5.snfc21.pbi.net (mta5.snfc21.pbi.net [206.13.28.241])
+    by xent.com (Postfix) with ESMTP id 6DA1E29409F for <fork@xent.com>;
+    Tue, 17 Sep 2002 06:43:06 -0700 (PDT)
+Received: from endeavors.com ([66.126.120.174]) by mta5.snfc21.pbi.net
+    (iPlanet Messaging Server 5.1 (built May  7 2001)) with ESMTP id
+    <0H2L005KI4X92S@mta5.snfc21.pbi.net> for fork@xent.com; Tue,
+    17 Sep 2002 06:46:22 -0700 (PDT)
+From: Gregory Alan Bolcer <gbolcer@endeavors.com>
+Subject: Re: introductions
+To: Geege Schuman <geege@barrera.org>
+Cc: FoRK <fork@spamassassin.taint.org>
+Reply-To: gbolcer@endeavors.com
+Message-Id: <3D872FE0.651D6DD7@endeavors.com>
+Organization: Endeavors Technology, Inc.
+MIME-Version: 1.0
+X-Mailer: Mozilla 4.79 [en] (X11; U; IRIX 6.5 IP32)
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-Accept-Language: en, pdf
+References: <ILEHJNJFPDLMDEKNIAKCMEGBCAAA.geege@barrera.org>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 17 Sep 2002 06:36:32 -0700
+
+I'd like to claim the parenthood of desktop web services,
+but then there's a ton of people doing it now.  
+
+What I am the parent of is, Jackson Alan Bolcer--I just
+realized that the birth announcement was something that
+didn't get sent through due to my general laziness of
+being kicked off of FoRK from our stupid DNS fiasco
+mixed with the post filtering.   August 20th, 7lbs, 14oz,
+8:30pm.  
+
+Greg
+
+
+
+Geege Schuman wrote:
+> 
+> Aren't you Dr. Gregory A. Bolcer, Dutch Uncle of P2P?
+> 
+> -----Original Message-----
+> From: fork-admin@xent.com [mailto:fork-admin@xent.com]On Behalf Of
+> Gregory Alan Bolcer
+> Sent: Saturday, September 14, 2002 10:21 AM
+> To: FoRK
+> Subject: introductions
+> 
+> As I've had to resubscribe to fork and fork-noarchive,
+> I guess I have to reintroduce myself.  I'm formerly
+> known as gbolcer at endtech dot com to the FoRK
+> mailman program, formerly an overposter, and love
+> soaking up bits through avid reading or scanning
+> of almost every single list that's got informative to say.
+> 
+> Hopefully all those overpost will get cleared out at
+> somepoint and fork-archived.
+> 
+> Greg
+
+

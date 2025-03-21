@@ -1,0 +1,213 @@
+
+{{alias}}( collection, n, [options,] predicate, done )
+    Tests whether a collection contains at least `n` elements which pass a test
+    implemented by a predicate function, iterating from right to left.
+
+    When invoked, the predicate function is provided a maximum of four
+    arguments:
+
+    - value: collection value.
+    - index: collection index.
+    - collection: the input collection.
+    - next: a callback to be invoked after processing a collection value.
+
+    The actual number of provided arguments depends on function length. If the
+    predicate function accepts two arguments, the predicate function is
+    provided:
+
+    - value
+    - next
+
+    If the predicate function accepts three arguments, the predicate function is
+    provided:
+
+    - value
+    - index
+    - next
+
+    For every other predicate function signature, the predicate function is
+    provided all four arguments.
+
+    The `next` callback takes two arguments:
+
+    - error: error argument.
+    - result: test result.
+
+    If a provided function calls the `next` callback with a truthy `error`
+    argument, the function suspends execution and immediately calls the `done`
+    callback for subsequent `error` handling.
+
+    The function immediately returns upon receiving `n` non-falsy `result`
+    values and calls the `done` callback with `null` as the first argument and
+    `true` as the second argument.
+
+    If all elements fail, the function calls the `done` callback with `null`
+    as the first argument and `false` as the second argument.
+
+    Execution is *not* guaranteed to be asynchronous. To guarantee asynchrony,
+    wrap the `done` callback in a function which either executes at the end of
+    the current stack (e.g., `nextTick`) or during a subsequent turn of the
+    event loop (e.g., `setImmediate`, `setTimeout`).
+
+    The function does not support dynamic collection resizing.
+
+    The function does not skip `undefined` elements.
+
+    Parameters
+    ----------
+    collection: Array|TypedArray|Object
+        Input collection over which to iterate. If provided an object, the
+        object must be array-like (excluding strings and functions).
+
+    n: number
+        Minimum number of successful elements.
+
+    options: Object (optional)
+        Function options.
+
+    options.limit: integer (optional)
+        Maximum number of pending invocations. Default: Infinity.
+
+    options.series: boolean (optional)
+        Boolean indicating whether to process each collection element
+        sequentially. Default: false.
+
+    options.thisArg: any (optional)
+        Execution context.
+
+    predicate: Function
+        The test function to invoke for each element in a collection.
+
+    done: Function
+        A callback invoked either upon processing all collection elements or
+        upon encountering an error.
+
+    Examples
+    --------
+    // Basic usage:
+    > function predicate( value, next ) {
+    ...     setTimeout( onTimeout, value );
+    ...     function onTimeout() {
+    ...         console.log( value );
+    ...         next( null, false );
+    ...     }
+    ... };
+    > function done( error, bool ) {
+    ...     if ( error ) {
+    ...         throw error;
+    ...     }
+    ...     console.log( bool );
+    ... };
+    > var arr = [ 1000, 2500, 3000 ];
+    > {{alias}}( arr, 2, predicate, done )
+    1000
+    2500
+    3000
+    false
+
+    // Limit number of concurrent invocations:
+    > function predicate( value, next ) {
+    ...     setTimeout( onTimeout, value );
+    ...     function onTimeout() {
+    ...         console.log( value );
+    ...         next( null, false );
+    ...     }
+    ... };
+    > function done( error, bool ) {
+    ...     if ( error ) {
+    ...         throw error;
+    ...     }
+    ...     console.log( bool );
+    ... };
+    > var opts = { 'limit': 2 };
+    > var arr = [ 1000, 2500, 3000 ];
+    > {{alias}}( arr, 2, opts, predicate, done )
+    2500
+    3000
+    1000
+    false
+
+    // Process sequentially:
+    > function predicate( value, next ) {
+    ...     setTimeout( onTimeout, value );
+    ...     function onTimeout() {
+    ...         console.log( value );
+    ...         next( null, false );
+    ...     }
+    ... };
+    > function done( error, bool ) {
+    ...     if ( error ) {
+    ...         throw error;
+    ...     }
+    ...     console.log( bool );
+    ... };
+    > var opts = { 'series': true };
+    > var arr = [ 1000, 2500, 3000 ];
+    > {{alias}}( arr, 2, opts, predicate, done )
+    3000
+    2500
+    1000
+    false
+
+
+{{alias}}.factory( [options,] predicate )
+    Returns a function which tests whether a collection contains at least `n`
+    elements which pass a test implemented by a predicate function, iterating
+    from right to left.
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Function options.
+
+    options.limit: integer (optional)
+        Maximum number of pending invocations. Default: Infinity.
+
+    options.series: boolean (optional)
+        Boolean indicating whether to process each collection element
+        sequentially. Default: false.
+
+    options.thisArg: any (optional)
+        Execution context.
+
+    predicate: Function
+        The test function to invoke for each element in a collection.
+
+    Returns
+    -------
+    out: Function
+        A function which tests each element in a collection.
+
+    Examples
+    --------
+    > function predicate( value, next ) {
+    ...     setTimeout( onTimeout, value );
+    ...     function onTimeout() {
+    ...         console.log( value );
+    ...         next( null, false );
+    ...     }
+    ... };
+    > var opts = { 'series': true };
+    > var f = {{alias}}.factory( opts, predicate );
+    > function done( error, bool ) {
+    ...     if ( error ) {
+    ...         throw error;
+    ...     }
+    ...     console.log( bool );
+    ... };
+    > var arr = [ 1000, 2500, 3000 ];
+    > f( arr, 2, done )
+    3000
+    2500
+    1000
+    false
+    > arr = [ 1000, 1500, 2000 ];
+    > f( arr, 2, done )
+    2000
+    1500
+    1000
+    false
+
+    See Also
+    --------
+

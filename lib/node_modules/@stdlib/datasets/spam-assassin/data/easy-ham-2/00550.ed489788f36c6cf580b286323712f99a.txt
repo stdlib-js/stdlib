@@ -1,0 +1,75 @@
+From razor-users-admin@lists.sourceforge.net  Fri Jul 26 06:54:57 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id CE672440E8
+	for <jm@localhost>; Fri, 26 Jul 2002 01:54:55 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 26 Jul 2002 06:54:55 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6Q5tG427338 for <jm-razor@jmason.org>; Fri, 26 Jul 2002 06:55:16 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17XxvO-0002N4-00; Thu,
+    25 Jul 2002 22:46:02 -0700
+Received: from 72-17-237-24-cable.juneau.ak.net ([24.237.17.72]
+    helo=pen.homeip.net) by usw-sf-list1.sourceforge.net with esmtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17XxvG-0001Gk-00 for
+    <razor-users@lists.sourceforge.net>; Thu, 25 Jul 2002 22:45:54 -0700
+Received: from localhost (localhost [[UNIX: localhost]]) by pen.homeip.net
+    (8.11.6/8.11.6/SuSE Linux 0.5) id g6Q5jhG29143; Thu, 25 Jul 2002 21:45:43
+    -0800
+Message-Id: <200207260545.g6Q5jhG29143@pen.homeip.net>
+Content-Type: text/plain; charset="iso-8859-1"
+From: John Andersen <jsa@pen.homeip.net>
+Reply-To: jsa@pen.homeip.net
+To: Kylus <kylus@pizzle.org>, razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] unsubscribe
+X-Mailer: KMail [version 1.3.2]
+References: <00f101c23331$1bdda5c0$b554a8c0@RAGING>
+    <001301c233e4$b75d4ba0$7c640f0a@mfc.corp.mckee.com>
+    <20020725101603.A25951@blkdragon>
+In-Reply-To: <20020725101603.A25951@blkdragon>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Thu, 25 Jul 2002 21:45:42 -0800
+Date: Thu, 25 Jul 2002 21:45:42 -0800
+
+On Thursday 25 July 2002 06:16 am, Kylus wrote:
+> Much thanks and my apologies if I come across as a jerk.
+
+It needed saying.  Thanks for stepping up.
+
+-- 
+_________________________________________________
+No I Don't Yahoo!
+And I'm getting pretty sick of being asked if I do.
+_________________________________________________
+John Andersen / Juneau Alaska
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

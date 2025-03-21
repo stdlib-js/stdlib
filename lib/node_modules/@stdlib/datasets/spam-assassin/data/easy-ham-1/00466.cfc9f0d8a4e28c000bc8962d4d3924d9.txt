@@ -1,0 +1,84 @@
+From fork-admin@xent.com  Fri Sep  6 15:28:01 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id CD1FC16F03
+	for <jm@localhost>; Fri,  6 Sep 2002 15:26:06 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 15:26:06 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g869uDC29684 for
+    <jm@jmason.org>; Fri, 6 Sep 2002 10:56:14 +0100
+Received: from xent.com ([64.161.22.236]) by webnote.net (8.9.3/8.9.3)
+    with ESMTP id WAA18500 for <jm@jmason.org>; Thu, 5 Sep 2002 22:03:22 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id B4C442940CF; Thu,  5 Sep 2002 14:00:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from cats.ucsc.edu (cats-mx1.ucsc.edu [128.114.129.36]) by
+    xent.com (Postfix) with ESMTP id 63F082940AA for <FoRK@xent.com>;
+    Thu,  5 Sep 2002 13:59:20 -0700 (PDT)
+Received: from Tycho (dhcp-63-177.cse.ucsc.edu [128.114.63.177]) by
+    cats.ucsc.edu (8.10.1/8.10.1) with SMTP id g85L1cq01833 for
+    <FoRK@xent.com>; Thu, 5 Sep 2002 14:01:38 -0700 (PDT)
+From: "Jim Whitehead" <ejw@cse.ucsc.edu>
+To: "FoRK" <FoRK@xent.com>
+Subject: SoE at UCSC looking for an experienced IT support person
+Message-Id: <AMEPKEBLDJJCCDEJHAMIKEEPFGAA.ejw@cse.ucsc.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4133.2400
+Importance: Normal
+X-Ucsc-Cats-Mailscanner: Found to be clean
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 5 Sep 2002 13:59:19 -0700
+
+Hi all,
+
+We're looking for an experienced IT support person in the School of
+Engineering at UC Santa Cruz -- please foward to anyone who you think might
+be interested.
+
+- Jim
+
+-----Original Message-----
+From: Michael Perrone [mailto:mperrone@cs.ucsc.edu]
+Sent: Thursday, September 05, 2002 12:31 PM
+To: techstaff@cse.ucsc.edu
+Subject: Recruiting for PAIII-IV Supervisor
+
+
+
+Dear SoE Community,
+
+Forgive the spam, but I wanted to make sure that everyone is aware that
+we are recruiting to replace the position vacated by Gary Moro.
+
+This is a technical position with supervisor responsibilities. The focus is
+on Solaris and Linux systems administration with Veritas and Irix experience
+a plus.
+
+The posting is here:
+
+http://www2.ucsc.edu/staff_hr/employment/listings/020809.htm
+
+Regards,
+
+Michael Perrone
+
+

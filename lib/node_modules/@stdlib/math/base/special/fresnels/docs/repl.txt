@@ -1,0 +1,30 @@
+
+{{alias}}( x )
+    Computes the Fresnel integral S(x).
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    y: number
+        S(x).
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.0 )
+    ~0.0
+    > y = {{alias}}( 1.0 )
+    ~0.438
+    > y = {{alias}}( {{alias:@stdlib/constants/float64/pinf}} )
+    ~0.5
+    > y = {{alias}}( {{alias:@stdlib/constants/float64/ninf}} )
+    ~-0.5
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+

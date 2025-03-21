@@ -1,0 +1,101 @@
+From spamassassin-devel-admin@lists.sourceforge.net  Mon Jul 22 18:28:29 2002
+Return-Path: <spamassassin-devel-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3F9CD440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 13:28:28 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:28:28 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MG0uY16208 for
+    <jm@jmason.org>; Mon, 22 Jul 2002 17:00:56 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id PAA27966 for
+    <jm@jmason.org>; Sun, 21 Jul 2002 15:34:51 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17WHho-0007gh-00; Sun,
+    21 Jul 2002 07:29:04 -0700
+Received: from www.ctyme.com ([209.237.228.10] helo=darwin.ctyme.com) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17WHhT-0002Cl-00 for
+    <spamassassin-devel@lists.sourceforge.net>; Sun, 21 Jul 2002 07:28:43
+    -0700
+Received: from m206-56.dsl.tsoft.com ([198.144.206.56] helo=perkel.com) by
+    darwin.ctyme.com with asmtp (TLSv1:RC4-MD5:128) (Exim 3.35 #1) id
+    17WHgz-0001o3-00; Sun, 21 Jul 2002 07:28:13 -0700
+Message-Id: <3D3AC50E.5060708@perkel.com>
+From: Marc Perkel <marc@perkel.com>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.0.0)
+    Gecko/20020530
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: Daniel Quinlan <quinlan@pathname.com>
+Cc: Theo Van Dinter <felicity@kluge.net>,
+	bugzilla-daemon@hughes-family.org,
+	spamassassin-devel@lists.sourceforge.net
+Subject: Re: [SAdev] [Bug 584] New: More general rule cleanup
+References: <20020720212016.0397C91B46@belphegore.hughes-family.org>
+    <3D3A057D.2000502@perkel.com> <20020721012742.GA26908@kluge.net>
+    <yf2it391osq.fsf@proton.pathname.com>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: spamassassin-devel-admin@example.sourceforge.net
+Errors-To: spamassassin-devel-admin@example.sourceforge.net
+X-Beenthere: spamassassin-devel@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-devel-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-devel@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Id: SpamAssassin Developers <spamassassin-devel.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-devel>
+X-Original-Date: Sun, 21 Jul 2002 07:28:30 -0700
+Date: Sun, 21 Jul 2002 07:28:30 -0700
+
+Thanks Dan. And the changes were very clever. Some of his rule changes 
+actually did make thing more readable and he is highly skilled at 
+regular expressions.  I have found that readability and 
+understandability is important in maintaining code. I think in a group 
+project that it's more important.
+
+Daniel Quinlan wrote:
+
+>This is not a big deal, but I think Marc has a good point.  The
+>performance difference is probably insignificant.  On the other hand, we
+>continually have errors in regular expressions, often when "excessive
+>cleverness" has been applied.
+>
+>This seems like a pretty good example of premature/excessive
+>optimization.  There is no data showing that the relevant code is run
+>for any significant period of time or that these changes produce a
+>measurable improvement in performance.  Maybe they do, but it would be
+>nice to know before we complicate every regular expression.
+>
+>In contrast, your changes to the eval loops in PerMsgStatus.pm were
+>great.  The code was responsible for a lot of our execution time and
+>there was a huge speed improvement.  Even better, the code was just as
+>easy to understand as the original.
+>
+>Dan
+>
+>  
+>
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-devel mailing list
+Spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+
+

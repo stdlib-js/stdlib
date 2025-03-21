@@ -1,0 +1,84 @@
+From spamassassin-devel-admin@lists.sourceforge.net  Mon Jul 22 18:22:31 2002
+Return-Path: <spamassassin-devel-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 985F1440CD
+	for <jm@localhost>; Mon, 22 Jul 2002 13:22:27 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:22:27 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFwEY14524 for
+    <jm@jmason.org>; Mon, 22 Jul 2002 16:58:14 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id UAA28913 for
+    <jm@jmason.org>; Sun, 21 Jul 2002 20:26:30 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17WMKJ-00054q-00; Sun,
+    21 Jul 2002 12:25:07 -0700
+Received: from adsl-216-103-211-240.dsl.snfc21.pacbell.net
+    ([216.103.211.240] helo=proton.pathname.com) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17WMJk-0006eA-00 for <spamassassin-devel@lists.sourceforge.net>;
+    Sun, 21 Jul 2002 12:24:32 -0700
+Received: from quinlan by proton.pathname.com with local (Exim 3.35 #1
+    (Debian)) id 17WMJj-0001cY-00; Sun, 21 Jul 2002 12:24:31 -0700
+To: Marc Perkel <marc@perkel.com>
+Cc: spamassassin-devel@example.sourceforge.net
+Subject: Re: [SAdev] Debug Support Feature
+References: <3D3ACD3D.9020600@perkel.com>
+From: Daniel Quinlan <quinlan@pathname.com>
+In-Reply-To: Marc Perkel's message of "Sun, 21 Jul 2002 08:03:25 -0700"
+Message-Id: <yf2vg78hok0.fsf@proton.pathname.com>
+X-Mailer: Gnus v5.7/Emacs 20.7
+Sender: spamassassin-devel-admin@example.sourceforge.net
+Errors-To: spamassassin-devel-admin@example.sourceforge.net
+X-Beenthere: spamassassin-devel@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-devel-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-devel@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Id: SpamAssassin Developers <spamassassin-devel.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-devel>
+X-Original-Date: 21 Jul 2002 12:24:31 -0700
+Date: 21 Jul 2002 12:24:31 -0700
+
+Marc Perkel <marc@perkel.com> writes:
+
+> Here something I want - maybe it's in there. I want a way to pipe a file 
+> containing messages into one of the "masses" tools and have it output 
+> the messages that match a specific rule.
+> 
+> The reason I want this is to pipe non-spam corpus through a rule and get 
+> a file of messages so I can look at the false positives and try to 
+> figure out why there was a match. IDEALLY - I would like this debug 
+> modes to put [[ ]] around the phrase that triggered the match. I think 
+> this would be a good tool for fixing/improving otherwise good rules that 
+> have unexplained FP.
+
+  $ cd mass-check
+  $ ./mass-check [options] > nonspam.log
+  $ egrep RULE_NAME nonspam.log|awk '{print $3}'|xargs cat > RULE_NAME.fp
+
+It's pretty easy to figure out what matched if you write a short perl
+script to match regular expressions or just use pcregrep (perl regular
+expression grep).
+
+Dan
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-devel mailing list
+Spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+
+

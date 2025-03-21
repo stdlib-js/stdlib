@@ -1,0 +1,62 @@
+From ilug-admin@linux.ie  Wed Aug 28 10:47:51 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BD9B044156
+	for <zzzz@localhost>; Wed, 28 Aug 2002 05:47:26 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 28 Aug 2002 10:47:26 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7RKKoZ24338 for
+    <zzzz-ilug@spamassassin.taint.org>; Tue, 27 Aug 2002 21:20:50 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id VAA14593; Tue, 27 Aug 2002 21:19:19 +0100
+Received: from marklar.elive.net (smtp.elive.ie [212.120.138.41]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id VAA14557 for <ilug@linux.ie>;
+    Tue, 27 Aug 2002 21:19:09 +0100
+Received: from gonzo.waider.ie
+    (IDENT:zbCsu2qvvPxAMgKG5/1BoVz7fvAHq4ae@1Cust48.tnt3.dub2.ie.uudial.net
+    [213.116.44.48]) by marklar.elive.net (8.11.6/8.11.6) with ESMTP id
+    g7RJolM28597 for <ilug@linux.ie>; Tue, 27 Aug 2002 20:50:47 +0100
+Received: from klortho.waider.ie
+    (IDENT:rRil9DCzd2WX06YswshhhkU/ahFcueXZ@klortho.waider.ie [10.0.0.100]) by
+    gonzo.waider.ie (8.11.6/8.11.6) with ESMTP id g7RKJ8730825 for
+    <ilug@linux.ie>; Tue, 27 Aug 2002 21:19:08 +0100
+Received: (from waider@localhost) by klortho.waider.ie (8.11.6/8.11.6) id
+    g7RKJAA18082; Tue, 27 Aug 2002 21:19:10 +0100
+X-Authentication-Warning: klortho.waider.ie: waider set sender to
+    waider@waider.ie using -f
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Message-Id: <15723.57022.25028.68954@klortho.waider.ie>
+Date: Tue, 27 Aug 2002 21:19:10 +0100
+From: Ronan Waide <waider@waider.ie>
+To: ILUG list <ilug@linux.ie>
+X-Mailer: VM 7.07 under Emacs 21.2.1
+Organization: poor at best.
+Subject: [ILUG] doolin
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+If you're not in Doolin, beg, borrow, or steal your way there before
+the LBW folk depart. It's far too much fun.
+
+Cheers,
+Waider. Just back.
+-- 
+waider@waider.ie / Yes, it /is/ very personal of me.
+"...we are in fact well and truly doomed. She says that if I leave now, 
+ I can probably get a good head start before they realize that I'm gone."
+                                                    - Jamie Zawinski
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

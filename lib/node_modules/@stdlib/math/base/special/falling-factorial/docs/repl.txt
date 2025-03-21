@@ -1,0 +1,35 @@
+
+{{alias}}( x, n )
+    Computes the falling factorial of `x` and `n`.
+
+    If not provided a nonnegative integer for `n`, the function returns `NaN`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        First function parameter.
+
+    n: integer
+        Second function parameter.
+
+    Returns
+    -------
+    y: number
+        Function value.
+
+    Examples
+    --------
+    > var v = {{alias}}( 0.9, 5 )
+    ~0.644
+    > v = {{alias}}( -9.0, 3 )
+    -990.0
+    > v = {{alias}}( 0.0, 2 )
+    0.0
+    > v = {{alias}}( 3.0, -2 )
+    NaN
+
+    See Also
+    --------
+

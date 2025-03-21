@@ -1,0 +1,34 @@
+
+{{alias}}( value, property )
+    Tests if an object has an inherited property.
+
+    Value arguments other than `null` or `undefined` are coerced to objects.
+
+    Non-symbol property arguments are coerced to strings.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    property: any
+        Property to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an object has an inherited property.
+
+    Examples
+    --------
+    > var beep = { 'boop': true };
+    > var bool = {{alias}}( beep, 'boop' )
+    false
+    > bool = {{alias}}( beep, 'toString' )
+    true
+    > bool = {{alias}}( beep, 'bop' )
+    false
+
+    See Also
+    --------
+

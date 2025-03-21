@@ -1,0 +1,36 @@
+
+{{alias}}()
+    Returns fifteen observations of the vertical semidiameter of Venus, made by
+    Lieutenant Herndon, with the meridian circle at Washington, in the year
+    1846.
+
+    This dataset is a classic dataset commonly used in examples demonstrating
+    outlier detection.
+
+    Returns
+    -------
+    out: Array<number>
+        Observations.
+
+    Examples
+    --------
+    > var d = {{alias}}()
+    [ -0.30, -0.44, ..., 0.39, 0.10 ]
+
+    References
+    ----------
+    - Chauvenet, William. 1868. _A Manual of Spherical and Practical Astronomy_.
+    5th ed. Vol. 5. London, England: Trübner & Co.
+    - Grubbs, Frank E. 1950. "Sample Criteria for Testing Outlying
+    Observations." _The Annals of Mathematical Statistics_ 21 (1). The Institute
+    of Mathematical Statistics: 27–58. doi:10.1214/aoms/1177729885.
+    - Grubbs, Frank E. 1969. "Procedures for Detecting Outlying Observations in
+    Samples." _Technometrics_ 11 (1). Taylor & Francis: 1–21. doi:10.1080/
+    00401706.1969.10490657.
+    - Tietjen, Gary L., and Roger H. Moore. 1972. "Some Grubbs-Type Statistics
+    for the Detection of Several Outliers." _Technometrics_ 14 (3). Taylor &
+    Francis: 583–97. doi:10.1080/00401706.1972.10488948.
+
+    See Also
+    --------
+

@@ -1,0 +1,85 @@
+From ilug-admin@linux.ie  Mon Jul 22 18:13:16 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5A2A7440DD
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:32 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:32 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MG4QY17730 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 17:04:26 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id OAA23692 for <jm-ilug@jmason.org>;
+    Sat, 20 Jul 2002 14:27:09 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id OAA04712; Sat, 20 Jul 2002 14:26:41 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from smtp013.mail.yahoo.com (smtp013.mail.yahoo.com
+    [216.136.173.57]) by lugh.tuatha.org (8.9.3/8.9.3) with SMTP id OAA04597
+    for <ilug@linux.ie>; Sat, 20 Jul 2002 14:26:19 +0100
+Received: from p102.as1.cra.dublin.eircom.net (HELO mfrenchw2k)
+    (mfrench42@159.134.176.102 with login) by smtp.mail.vip.sc5.yahoo.com with
+    SMTP; 20 Jul 2002 13:26:16 -0000
+Message-Id: <002d01c22ff0$81f10cb0$f264a8c0@sabeo.ie>
+From: "Matthew French" <mfrench42@yahoo.co.uk>
+To: "kevin lyda" <kevin+dated+1027549838.74d3af@linux.ie>,
+	<ilug@linux.ie>
+References: <200207191959.g6JJxHX04486@linux.local>
+    <002c01c22f67$4216c280$f264a8c0@sabeo.ie>
+    <20020719233036.B12390@ie.suberic.net>
+Subject: Re: [ILUG] hard- vs. soft-links [was: How to copy some files ]
+Date: Sat, 20 Jul 2002 14:22:30 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Kevin wrote:
+> am i the only one who thinks this is like "friday night 80's" for ilug?
+> and here's an answer from 1989.  for those perceptive folks in the
+> audience you'll note that it makes no reference to a windows icons.
+<snip>
+> so yeah, unrm would be nice, but obviously it's not a simple problem.
+> millions of lines of code, hundreds of projects, no unrm.  heck, the
+> hurd will probably release 1.0 before unrm shows up.
+
+So what this tells us is:
+1) There are very few new ideas.
+2) Problems exists until someone gets annoyed enough to actually fix them
+rather than find bizarre ways to solve the problem.
+3) I have too much creative time on my hands with not enough productive
+time.
+
+>>From which we can infer that no work on unrm will be happening on my
+computer for a long time.
+
+:)
+
+- Matthew
+
+
+__________________________________________________
+Do You Yahoo!?
+Everything you'll ever need on one web page
+from News and Sport to Email and Music Charts
+http://uk.my.yahoo.comm
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

@@ -1,0 +1,57 @@
+
+{{alias}}( fcn[, arity, ][thisArg] )
+    Transforms a curried function into a function invoked with multiple
+    arguments.
+
+    Parameters
+    ----------
+    fcn: Function
+        Curried function.
+
+    arity: integer (optional)
+        Number of parameters.
+
+    thisArg: any (optional)
+        Evaluation context.
+
+    Returns
+    -------
+    out: Function
+        Uncurried function.
+
+    Examples
+    --------
+    > function addX( x ) {
+    ...     return function addY( y ) {
+    ...         return x + y;
+    ...     };
+    ... };
+    > var fcn = {{alias}}( addX );
+    > var sum = fcn( 2, 3 )
+    5
+
+    // To enforce a fixed number of parameters, provide an `arity` argument:
+    > function add( x ) {
+    ...     return function add( y ) {
+    ...         return x + y;
+    ...     };
+    ... };
+    > fcn = {{alias}}( add, 2 );
+    > sum = fcn( 9 )
+    <Error>
+
+    // To specify an execution context, provide a `thisArg` argument:
+    > function addX( x ) {
+    ...     this.x = x;
+    ...     return addY;
+    ... };
+    > function addY( y ) {
+    ...     return this.x + y;
+    ... };
+    > fcn = {{alias}}( addX, {} );
+    > sum = fcn( 2, 3 )
+    5
+
+    See Also
+    --------
+

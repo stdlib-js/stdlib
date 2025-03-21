@@ -1,0 +1,28 @@
+From rssfeeds@jmason.org  Tue Oct  8 10:55:29 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 3CA5F16F16
+	for <jm@localhost>; Tue,  8 Oct 2002 10:55:24 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 08 Oct 2002 10:55:24 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9880AK06028 for
+    <jm@jmason.org>; Tue, 8 Oct 2002 09:00:10 +0100
+Message-Id: <200210080800.g9880AK06028@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: oblomovka <rssfeeds@spamassassin.taint.org>
+Subject: At last, I have an excuse
+Date: Tue, 08 Oct 2002 08:00:10 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.oblomovka.com/entries/2002/10/07#1034055900
+Date: 2002-10-07T22:45:00-0700
+
+... for not updating: I'm doing the guestblog at Boing Boing[1]. Now to find an 
+excuse for missing last week.
+
+[1] http://www.boingboing.net/
+
+

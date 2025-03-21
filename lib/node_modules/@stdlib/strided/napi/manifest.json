@@ -1,0 +1,69 @@
+{
+	"options": {},
+	"fields": [
+		{
+			"field": "src",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "include",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "libraries",
+			"resolve": false,
+			"relative": false
+		},
+		{
+			"field": "libpath",
+			"resolve": true,
+			"relative": false
+		}
+	],
+	"confs": [
+		{
+			"src": [],
+			"include": [
+				"./include"
+			],
+			"libraries": [],
+			"libpath": [],
+			"dependencies": [
+				"@stdlib/strided/base/binary",
+        "@stdlib/strided/base/cmap",
+				"@stdlib/strided/base/dmap",
+        "@stdlib/strided/base/dmap2",
+				"@stdlib/strided/base/dmskmap",
+        "@stdlib/strided/base/dmskmap2",
+				"@stdlib/strided/base/function-object",
+				"@stdlib/strided/base/mskunary",
+        "@stdlib/strided/base/nullary",
+				"@stdlib/strided/base/smap",
+        "@stdlib/strided/base/smap2",
+				"@stdlib/strided/base/smskmap",
+        "@stdlib/strided/base/smskmap2",
+				"@stdlib/strided/base/unary",
+        "@stdlib/strided/base/zmap",
+
+				"@stdlib/strided/dtypes",
+
+        "@stdlib/strided/napi/binary",
+        "@stdlib/strided/napi/cmap",
+        "@stdlib/strided/napi/dmap",
+        "@stdlib/strided/napi/dmap2",
+				"@stdlib/strided/napi/dmskmap",
+        "@stdlib/strided/napi/dmskmap2",
+				"@stdlib/strided/napi/mskunary",
+        "@stdlib/strided/napi/nullary",
+				"@stdlib/strided/napi/smap",
+        "@stdlib/strided/napi/smap2",
+				"@stdlib/strided/napi/smskmap",
+        "@stdlib/strided/napi/smskmap2",
+				"@stdlib/strided/napi/unary",
+        "@stdlib/strided/napi/zmap"
+			]
+		}
+	]
+}

@@ -1,0 +1,73 @@
+
+{{alias}}( t, a, b )
+    Evaluates the moment-generating function (MGF) for a discrete uniform
+    distribution with minimum support `a` and maximum support `b` at a value
+    `t`.
+
+    If `a > b`, the function returns `NaN`.
+
+    If `a` or `b` is not an integer value, the function returns `NaN`.
+
+    Parameters
+    ----------
+    t: number
+        Input value.
+
+    a: integer
+        Minimum support.
+
+    b: integer
+        Maximum support.
+
+    Returns
+    -------
+    out: number
+        Evaluated MGF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 2.0, 0, 4 )
+    ~689.475
+    > y = {{alias}}( -0.2, 0, 4 )
+    ~0.697
+    > y = {{alias}}( 2.0, 0, 1 )
+    ~4.195
+    > y = {{alias}}( 0.5, 3, 2 )
+    NaN
+    > y = {{alias}}( NaN, 0, 1  )
+    NaN
+    > y = {{alias}}( 0.0, NaN, 1 )
+    NaN
+    > y = {{alias}}( 0.0, 0, NaN )
+    NaN
+
+
+{{alias}}.factory( a, b )
+    Returns a function for evaluating the moment-generating function (MGF)
+    of a discrete uniform distribution with minimum support `a` and maximum
+    support `b`.
+
+    Parameters
+    ----------
+    a: integer
+        Minimum support.
+
+    b: integer
+        Maximum support.
+
+    Returns
+    -------
+    mgf: Function
+        Moment-generating function (MGF).
+
+    Examples
+    --------
+    > var mymgf = {{alias}}.factory( 6, 7 );
+    > var y = mymgf( 0.1 )
+    ~1.918
+    > y = mymgf( 1.1 )
+    ~1471.722
+
+    See Also
+    --------
+

@@ -1,0 +1,92 @@
+From ilug-admin@linux.ie  Wed Jul 31 18:36:16 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B3EE4440FC
+	for <jm@localhost>; Wed, 31 Jul 2002 13:17:07 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 31 Jul 2002 18:17:07 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6VH5h202076 for
+    <jm-ilug@jmason.org>; Wed, 31 Jul 2002 18:05:43 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id SAA18419; Wed, 31 Jul 2002 18:03:21 +0100
+Received: from mail.aculink.net (65-173-158-7.aculink.net [65.173.158.7])
+    by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id SAA18398 for
+    <ilug@linux.ie>; Wed, 31 Jul 2002 18:03:16 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host 65-173-158-7.aculink.net
+    [65.173.158.7] claimed to be mail.aculink.net
+Received: from cdm01.deedsmiscentral.net ([204.118.157.90]) by
+    mail.aculink.net (Merak 4.4.2) with ESMTP id EDA37003; Wed, 31 Jul 2002
+    11:10:27 -0600
+Received: from cdm01.deedsmiscentral.net
+    (IDENT:redneck@cdm01.deedsmiscentral.net [192.168.20.1]) by
+    cdm01.deedsmiscentral.net (8.11.6/8.11.6/ver) with ESMTP id g6VHTCT21138;
+    Wed, 31 Jul 2002 11:29:15 -0600
+Message-Id: <3D481E58.55223704@cdm01.deedsmiscentral.net>
+Date: Wed, 31 Jul 2002 11:28:56 -0600
+From: SoloCDM <deedsmis@aculink.net>
+Reply-To: deedsmis@aculink.net, ilug@linux.ie
+X-Mailer: Mozilla 4.78 [en] (X11; U; Linux 2.2.20-9.2mdk i586)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: David Neary <dneary@wanadoo.fr>
+Cc: "ILUG (Request)" <ilug@linux.ie>
+References: <200207311043.g6VAhuq10699@cdm01.deedsmiscentral.net>
+    <20020731125129.B11532@wanadoo.fr>
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Subject: [ILUG] Re: C++ and C Mailing Lists for Beginners and Advanced
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+David Neary stated the following:
+> 
+> SoloCDM wrote:
+> 
+> > Are there any mailing lists (non-newsgroups) for C++ and C Beginners
+> > and Advanced programmers?
+> 
+> Try the following newsgroups - Beginners: news:comp.lang.learn.c-c++
+
+I tried news:comp.lang.learn.c-c++ and it wouldn't work.  Is there a
+typo?
+
+> More advanced: news:comp.lang.c news:comp.lang.c++
+> news:comp.lang.c.moderated
+> 
+> Also, you should keep a bookmark pointing at the comp.lang.c FAQ at
+> http://www.eskimo.com/~scs/C-faq/top.html
+> 
+> For tutorials, the guy who maintains the clc FAQ (Steve Summit) has
+> a tutorial - http://www.eskimo.com/~scs/cclass/notes/top.html Also
+> you could have a look at the excercises he poses - all linked from
+> http://www.eskimo.com/~scs/cclass/cclass.html
+> 
+> For C++, I would guess that the comp.lang.c++ FAQ is a good place to
+> start - they're likely to have links to suggested reading material.
+> 
+> If you're going to do any amount of C programming, you should
+> think about getting K&R2 (The C programming language, 2nd edition,
+> by Kernighan and Ritchie), for C++ the equivalent book is
+> Stroustrup. Although the C++ book is a lot bigger :)
+
+-- 
+Note: When you reply to this message, please include the mailing
+      list and/or newsgroup address and my email address in To:
+
+*********************************************************************
+Signed,
+SoloCDM
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

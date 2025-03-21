@@ -1,0 +1,106 @@
+From rpm-list-admin@freshrpms.net  Mon Jul 22 19:24:48 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3DB35440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 14:24:46 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 19:24:46 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MG13Y16341 for
+    <jm-rpm@jmason.org>; Mon, 22 Jul 2002 17:01:03 +0100
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by webnote.net
+    (8.9.3/8.9.3) with ESMTP id OAA27722 for <jm-rpm@jmason.org>;
+    Sun, 21 Jul 2002 14:34:37 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6LDJ2C10288; Sun, 21 Jul 2002 15:19:02
+    +0200
+Received: from basket.ball.reliam.net (basket.ball.reliam.net
+    [213.91.6.7]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g6LDHsC06663
+    for <rpm-list@freshrpms.net>; Sun, 21 Jul 2002 15:17:54 +0200
+Received: from localhost.localdomain (pD9EB58B9.dip.t-dialin.net
+    [217.235.88.185]) by basket.ball.reliam.net (Postfix) with SMTP id
+    957473DD2 for <rpm-list@freshrpms.net>; Sun, 21 Jul 2002 15:17:41 +0200
+    (CEST)
+From: che <che666@uni.de>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: Ximian apt repos?
+Message-Id: <20020721151211.7140ecdb.che666@uni.de>
+In-Reply-To: <20020721145013.4dc253d6.che666@uni.de>
+References: <1027203479.5354.14.camel@athena>
+    <20020720211551.6fb70f27.kilroy@kamakiriad.com>
+    <1027218043.3516.5.camel@localhost.localdomain>
+    <20020721051108.0fd207d5.che666@uni.de>
+    <20020721142007.03c02bc4.che666@uni.de>
+    <1027252799.12983.0.camel@localhost.localdomain>
+    <20020721145013.4dc253d6.che666@uni.de>
+Organization: che
+X-Mailer: Sylpheed version 0.8.0 (GTK+ 1.2.10; i386-redhat-linux)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Sun, 21 Jul 2002 15:12:11 -0400
+Date: Sun, 21 Jul 2002 15:12:11 -0400
+
+On Sun, 21 Jul 2002 14:50:13 -0400
+che <che666@uni.de> wrote:
+
+> On 21 Jul 2002 23:59:59 +1200
+> Mark Derricutt <mark@talios.com> wrote:
+> 
+> > On Mon, 2002-07-22 at 06:20, che wrote:
+> > 
+> > > The server mentioned above works again now :)!
+> > 
+> > Any problems with the rpm's they provided?
+> > 
+> > 
+> > _______________________________________________
+> > RPM-List mailing list <RPM-List@freshrpms.net>
+> > http://lists.freshrpms.net/mailman/listinfo/rpm-list
+> 
+> #redhat 7.3
+> rpm http://apt.sunnmore.net gnome2 73
+> rpm-src http://apt.sunnmore.net gnome2 73
+> 
+> #redhat 7.2
+> rpm http://apt.sunnmore.net gnome2 72
+> rpm-src http://apt.sunnmore.net gnome2 72
+> 
+> thats the correct lines to be added to sources.list for the repository
+> 
+> i just did a apt-get install gnome-session its still progressing :)
+> 
+
+after apt-get install gnome-session
+i did another apt-get upgrade (25 more packages) and it works now... i am in gnome 2.0 wohooooo :) looks very great very "tidy" only error message i got was about a mixer applet on login (no biggie to me) even the old sawfish still works. yet its great and works cant say anythign negative yet :)
+
+just btw. if someone knows any other nice repositorys please post em :).
+
+thanks in advance,
+che
+> _______________________________________________
+> RPM-List mailing list <RPM-List@freshrpms.net>
+> http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

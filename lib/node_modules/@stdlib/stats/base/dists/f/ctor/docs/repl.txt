@@ -1,0 +1,87 @@
+
+{{alias}}( [d1, d2] )
+    Returns an F distribution object.
+
+    Parameters
+    ----------
+    d1: number (optional)
+        Numerator degrees of freedom. Must be greater than `0`. Default: `1.0`.
+
+    d2: number (optional)
+        Denominator degrees of freedom. Must be greater than `0`.
+        Default: `1.0`.
+
+    Returns
+    -------
+    f: Object
+        Distribution instance.
+
+    f.d1: number
+        Numerator degrees of freedom. If set, the value must be greater than
+        `0`.
+
+    f.d2: number
+        Denominator degrees of freedom. If set, the value must be greater than
+        `0`.
+
+    f.entropy: number
+        Read-only property which returns the differential entropy.
+
+    f.kurtosis: number
+        Read-only property which returns the excess kurtosis.
+
+    f.mean: number
+        Read-only property which returns the expected value.
+
+    f.mode: number
+        Read-only property which returns the mode.
+
+    f.skewness: number
+        Read-only property which returns the skewness.
+
+    f.stdev: number
+        Read-only property which returns the standard deviation.
+
+    f.variance: number
+        Read-only property which returns the variance.
+
+    f.cdf: Function
+        Evaluates the cumulative distribution function (CDF).
+
+    f.pdf: Function
+        Evaluates the probability density function (PDF).
+
+    f.quantile: Function
+        Evaluates the quantile function at probability `p`.
+
+    Examples
+    --------
+    > var f = {{alias}}( 6.0, 9.0 );
+    > f.d1
+    6.0
+    > f.d2
+    9.0
+    > f.entropy
+    ~1.134
+    > f.kurtosis
+    ~104.564
+    > f.mean
+    ~1.286
+    > f.mode
+    ~0.545
+    > f.skewness
+    ~4.535
+    > f.stdev
+    ~1.197
+    > f.variance
+    ~1.433
+    > f.cdf( 3.0 )
+    ~0.932
+    > f.pdf( 2.5 )
+    ~0.095
+    > f.quantile( 0.8 )
+    ~1.826
+
+    See Also
+    --------
+

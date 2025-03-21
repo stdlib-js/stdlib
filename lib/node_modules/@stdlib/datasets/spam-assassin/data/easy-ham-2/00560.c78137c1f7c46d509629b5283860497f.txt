@@ -1,0 +1,72 @@
+From razor-users-admin@lists.sourceforge.net  Fri Aug  2 11:38:46 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E2CD5440F7
+	for <jm@localhost>; Fri,  2 Aug 2002 06:38:45 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 02 Aug 2002 11:38:45 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g72AWV216689 for <jm-razor@jmason.org>; Fri, 2 Aug 2002 11:32:31 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17aZW7-0005LM-00; Fri,
+    02 Aug 2002 03:18:43 -0700
+Received: from mail014.syd.optusnet.com.au ([210.49.20.172]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17aXqo-0002wG-00 for <razor-users@lists.sourceforge.net>; Fri,
+    02 Aug 2002 01:31:58 -0700
+Received: from dennis (c18584.rivrw1.nsw.optusnet.com.au [211.28.44.179])
+    by mail014.syd.optusnet.com.au (8.11.1/8.11.1) with SMTP id g728VeH24912
+    for <razor-users@lists.sourceforge.net>; Fri, 2 Aug 2002 18:31:40 +1000
+Message-Id: <003101c239ff$05bf44e0$3d00a8c0@dennis>
+From: "zenn" <zenn@optushome.com.au>
+To: <razor-users@example.sourceforge.net>
+References: <7njikuo9efrl4s4gvs5od9vt3eleto20ee@localhost>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Subject: [Razor-users] razor-cache ?
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Fri, 2 Aug 2002 18:31:38 +1000
+Date: Fri, 2 Aug 2002 18:31:38 +1000
+
+suggestion...
+as I see it, there is a valid need for a "razor-cache" server that is
+available to the local smtp host...
+recursiveness would also be a nice feature, giving us the option to link
+caches to offload the burden on the razor servers...
+it could also allow us to setup local razor caches for private networks that
+can bypass the razor servers all together...
+any commensts ?
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

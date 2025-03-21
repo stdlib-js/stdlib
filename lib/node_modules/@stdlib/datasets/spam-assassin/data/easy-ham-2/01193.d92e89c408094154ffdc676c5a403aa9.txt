@@ -1,0 +1,90 @@
+From rpm-list-admin@freshrpms.net  Thu Aug  1 15:29:39 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C4FD8440F0
+	for <jm@localhost>; Thu,  1 Aug 2002 10:29:38 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 01 Aug 2002 15:29:38 +0100 (IST)
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g71EPs216084 for
+    <jm-rpm@jmason.org>; Thu, 1 Aug 2002 15:25:54 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g71EB0J15084; Thu, 1 Aug 2002 16:11:01
+    +0200
+Received: from blueyonder.co.uk (pcow058o.blueyonder.co.uk
+    [195.188.53.98]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g71EA4J11525 for <rpm-list@freshrpms.net>; Thu, 1 Aug 2002 16:10:04 +0200
+Received: from pcow058m.blueyonder.co.uk ([127.0.0.1]) by blueyonder.co.uk
+    with Microsoft SMTPSVC(5.5.1877.757.75); Thu, 1 Aug 2002 15:10:03 +0100
+Received: from localhost.localdomain (unverified [62.31.166.240]) by
+    pcow058m.blueyonder.co.uk (Content Technologies SMTPRS 4.2.9) with ESMTP
+    id <T5c72c681aeac1785c30d4@pcow058m.blueyonder.co.uk> for
+    <rpm-list@freshrpms.net>; Thu, 1 Aug 2002 15:10:03 +0100
+Content-Type: text/plain; charset="iso-8859-1"
+From: John Hinsley <johnhinsley@blueyonder.co.uk>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: OpenGL
+User-Agent: KMail/1.4.1
+References: <200207310534.37053.johnhinsley@blueyonder.co.uk>
+    <200207311635.18353.johnhinsley@blueyonder.co.uk>
+    <20020801142956.1c1c55b3.ralf@camperquake.de>
+In-Reply-To: <20020801142956.1c1c55b3.ralf@camperquake.de>
+MIME-Version: 1.0
+Message-Id: <200208011508.59608.johnhinsley@blueyonder.co.uk>
+X-Mailscanner: Found to be clean, Found to be clean
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by egwn.net id
+    g71EA4J11525
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Thu, 1 Aug 2002 15:08:59 +0100
+Date: Thu, 1 Aug 2002 15:08:59 +0100
+
+On Thursday 01 Aug 2002 1:29 pm, Ralf Ertzinger wrote:
+> Hi.
+>
+> John Hinsley <johnhinsley@blueyonder.co.uk> wrote:
+> > So, I *do* have OpenGL, thanks all.
+>
+> And it is using your hardware.
+>
+> > Problem is that I can't find an rpm of plib which will install (or
+> > recognise that I have open GL). I guess I'll have to try and do that
+> > from source, unless anyone has any ideas?
+>
+> plib as in plib.sf.net? They do not provide RPMs, as far as I have seen
+> (and I did not look inside the tarballs). Maybe it will be best to
+> build your RPMS yourself (and maybe Matthias can share some insight
+> in building RPMS with NVIDIAs drivers installed, it seems to be a
+> little tricky to do that and get RPMS which install on systems
+> without these drivers).
+
+Please! It does seem that with 7.3 something rather extraordinary has 
+happened! And while there are rpms for plib (as in plib.sf.net), TuxRacer, 
+FlightGear and so on (for SuSE, Mandy and Connectiva, IIRC) dotted around, 
+there are none for 7.3. 
+
+Cheers
+
+John
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

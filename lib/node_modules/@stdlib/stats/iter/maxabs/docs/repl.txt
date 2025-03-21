@@ -1,0 +1,23 @@
+
+{{alias}}( iterator )
+    Computes the maximum absolute value of all iterated values.
+
+    Parameters
+    ----------
+    iterator: Object
+        Input iterator.
+
+    Returns
+    -------
+    out: number|null
+        Maximum absolute value.
+
+    Examples
+    --------
+    > var arr = {{alias:@stdlib/array/to-iterator}}( [ 1.0, -2.0, 3.0, -4.0 ] );
+    > var m = {{alias}}( arr )
+    4.0
+
+    See Also
+    --------
+

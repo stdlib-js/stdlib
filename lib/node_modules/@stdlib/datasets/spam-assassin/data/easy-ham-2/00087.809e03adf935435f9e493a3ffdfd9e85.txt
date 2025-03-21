@@ -1,0 +1,79 @@
+From ilug-admin@linux.ie  Mon Jul 22 18:12:23 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7E11E440CC
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:16 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:16 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFjQI09414 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 16:45:26 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id FAA30306 for <jm-ilug@jmason.org>;
+    Mon, 22 Jul 2002 05:33:32 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id FAA08215; Mon, 22 Jul 2002 05:32:30 +0100
+Received: from mail.magicgoeshere.com (nw152-60.indigo.ie [194.125.152.60]
+    (may be forged)) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id FAA08179
+    for <ilug@linux.ie>; Mon, 22 Jul 2002 05:32:23 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host nw152-60.indigo.ie
+    [194.125.152.60] (may be forged) claimed to be mail.magicgoeshere.com
+Received: from bagend.magicgoeshere.com (ts15-029.dublin.indigo.ie
+    [194.125.176.29]) by mail.magicgoeshere.com (Postfix) with ESMTP id
+    E38EAF8FD for <ilug@linux.ie>; Mon, 22 Jul 2002 05:17:14 +0100 (IST)
+Received: by bagend.magicgoeshere.com (Postfix, from userid 501) id
+    346C43C4E3; Mon, 22 Jul 2002 05:39:38 +0100 (IST)
+Date: Mon, 22 Jul 2002 05:39:37 +0100
+From: Niall O Broin <niall@linux.ie>
+To: ilug@linux.ie
+Message-Id: <20020722043937.GA1732@bagend.makalumedia.com>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: Niall O Broin <niall@linux.ie>, ilug@linux.ie
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.3.27i
+Subject: [ILUG] Samba login question
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+I have a situation with a small network as follows:
+
+A number of client workstations which are running VMware, each of which will
+run a local copy of Samba (not the VMware autoinstalled version) to let
+VMware access local linux disks.
+
+An NIS/NFS server which will also run Samba to allow the VMware clients
+access to its filesystems.
+
+How can I set things up so that all the VMware clients (all running 'doze
+98, possibly being upgraded in future to W2K) authenticate against the NIS
+server's Samba ? I have read the Samab documentation in  large quantities
+down through the years but as I've never wanted to do anything like this, I
+never paid much attention to all the stuff about domain controllers etc.
+which I presume is what I will need to have running here.
+
+I would also like, if at all possible, to have synchronisation of passwords
+between the NIS domain and the NIS server's Samba with minimal manual
+intervention.
+
+Ideas, accompanied by annotated Samba configration files :-) , gratefully
+received.
+
+
+
+
+Niall
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

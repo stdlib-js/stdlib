@@ -1,0 +1,83 @@
+From razor-users-admin@lists.sourceforge.net  Fri Aug  9 15:33:27 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D521C4406D
+	for <jm@localhost>; Fri,  9 Aug 2002 10:33:26 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:33:26 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79EN5b06645 for
+    <jm-razor@jmason.org>; Fri, 9 Aug 2002 15:23:10 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id FAA03549 for
+    <jm-razor@jmason.org>; Fri, 9 Aug 2002 05:49:21 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17d1e4-0000vU-00; Thu,
+    08 Aug 2002 21:45:04 -0700
+Received: from 208-150-110-21-adsl.precisionet.net ([208.150.110.21]
+    helo=neofelis.ixazon.lan) by usw-sf-list1.sourceforge.net with esmtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17d1dD-000508-00 for
+    <razor-users@lists.sourceforge.net>; Thu, 08 Aug 2002 21:44:11 -0700
+Received: by neofelis.ixazon.lan (Postfix, from userid 504) id DE6753C477;
+    Fri,  9 Aug 2002 00:43:49 -0400 (EDT)
+Content-Type: text/plain; charset="iso-8859-1"
+From: "cmeclax po'u le cmevi'u ke'umri" <cmeclax@gmx.co.uk>
+Reply-To: cmeclax@ixazon.dynip.com
+To: razor-users@example.sourceforge.net
+X-Mailer: KMail [version 1.2]
+Comment: li 0x18080B5EBAEAEC17619A6B51DFF93585D986F633 cu sevzi le mi ckiku
+MIME-Version: 1.0
+Message-Id: <02080900434000.12649@neofelis>
+Content-Transfer-Encoding: 8bit
+Subject: [Razor-users] report and revoke the same message
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Fri, 9 Aug 2002 00:43:39 -0400
+Date: Fri, 9 Aug 2002 00:43:39 -0400
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+I send mail detected by Razor as spam to the spamtrap, which again reports it 
+as spam. Before I added the procmail rule to revoke (as my real life account) 
+Bugtraq messages that were flagged as spam, I manually revoked them as the 
+spamtrap (which keeps the last 32 messages sent to it). Thus the spamtrap 
+both reported as spam and revoked the same message. What happens to its trust 
+rating?
+
+Btw, what does "TeS" stand for?
+
+cmeclax
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.7 (GNU/Linux)
+
+iD8DBQE9U0iD3/k1hdmG9jMRArnxAKCpw8ZpBWFo3+h7Y2mscN4WER6HEwCfauH9
+54LgdFZN2QQONm7awjHKN1c=
+=yKwF
+-----END PGP SIGNATURE-----
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

@@ -1,0 +1,62 @@
+From rssfeeds@jmason.org  Thu Sep 26 16:33:47 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id D4D9216F03
+	for <jm@localhost>; Thu, 26 Sep 2002 16:33:45 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 16:33:45 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8QFRfg24223 for
+    <jm@jmason.org>; Thu, 26 Sep 2002 16:27:41 +0100
+Message-Id: <200209261527.g8QFRfg24223@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: "hyatt@mozilla" <rssfeeds@spamassassin.taint.org>
+Subject: A Line in the Sand
+Date: Thu, 26 Sep 2002 15:27:41 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.mozillazine.org/weblogs/hyatt/#85443841
+Date: Not supplied
+
+Bug 22056 has to do with enabling different toolbar modes. It's a pretty basic 
+browser feature that has been missing from Navigator for years. Even simplified 
+browsers like Chimera have this feature. Neil did some excellent work in 22056 
+and his code finally landed. It naturally spiked startup time and window time 
+slightly, and so it ended up being backed out because of Mozilla's no tolerance 
+policy for regressions.
+
+While this "line in the sand" policy is in many ways a good one, I feel like it 
+misses the point. There is a natural tendency when designing applications to 
+add features in every new version of the software. Only rarely do you see 
+features removed. With each passing version, you get more and more bloated, 
+relying on faster machines and more memory to save the day. Who cares if the 
+user interface is now full of 3000 menu items? You still support every last 
+feature since version 1.0, so no customers can possibly be dissatisfied!
+
+You can really only cram so many features into a product before its size 
+requirements and performance requirements have to change. This is an obvious 
+rule. It's like you start with an empty elevator that says "Capacity: 10 
+people." The elevator stops at the first floor (version 1.0) and a bunch of 
+people (features) get on. Continuing on its journey, the elevator stops at the 
+second floor, and still more people get on. The elevator is now full, and it 
+continues to the third floor (version 3.0). Unfortunately the elevator is full, 
+but there are a bunch of people waiting at the third floor to get on. Some of 
+them squeeze in anyway, past the fat person from the first floor (the Mozilla 
+sidebar feature) who is taking up enough space for 3 people. Everyone wishes 
+he'd get off at the third floor or even the fourth floor, but he doesn't. 
+Someone (the Mozilla wallet feature) from the second floor cuts one on the way 
+to the third floor, so he's useless, and everyone wishes he'd get off too. He 
+doesn't though. Nobody does. People keep piling in at floor after floor, until 
+eventually the elevator support cable snaps and everybody dies.
+
+We need to forcibly eject people from the elevator. Remove the features that 
+nobody wants and replace them with the features that matter. Cull out the 
+features that didn't work in Mozilla 1.0 and make sure they aren't there in 
+Mozilla 2.0. Make more of the features optional plugins so that geeks who want 
+some of the more obscure features (and that have powerhouse machines) can go 
+download them on their own. Only if we actively fight the trend towards bloat 
+will we finally produce an awesome Mozilla browser.
+
+

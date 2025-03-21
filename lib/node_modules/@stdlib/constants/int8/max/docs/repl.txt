@@ -1,0 +1,14 @@
+
+{{alias}}
+    Maximum signed 8-bit integer.
+
+    The maximum signed 8-bit integer is given by `2^7 - 1`.
+
+    Examples
+    --------
+    > {{alias}}
+    127
+
+    See Also
+    --------
+

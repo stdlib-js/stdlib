@@ -1,0 +1,103 @@
+From ems+P8T5PED6GPLZ4A@bounces.amazon.com  Sat Nov  9 15:22:29 2002
+Return-Path: <ems+P8T5PED6GPLZ4A@bounces.amazon.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id C978C16F19
+	for <jm@localhost>; Sat,  9 Nov 2002 15:21:59 +0000 (GMT)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 09 Nov 2002 15:21:59 +0000 (GMT)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id gA993eW01933 for
+    <jm@jmason.org>; Sat, 9 Nov 2002 09:03:40 GMT
+Received: from mm-outgoing-107.amazon.com (mm-outgoing-107.amazon.com
+    [207.171.188.108]) by webnote.net (8.9.3/8.9.3) with ESMTP id JAA17636 for
+    <jm@netnoteinc.com>; Sat, 9 Nov 2002 09:04:54 GMT
+Received: from mail-ems-101.amazon.com by mm-outgoing-107.amazon.com with
+    ESMTP (crosscheck: mail-ems-101.amazon.com [10.16.42.228]) id
+    AAA-24721820-04309; Sat, 9 Nov 2002 00:19:20 -0800
+Received: by mail-ems-101.amazon.com id AAA-24721820-08683,4237;
+    9 Nov 2002 00:19:14 -0800
+Date: 9 Nov 2002 00:19:14 -0800
+Message-Id: <.AAA-24721820-08683,4237.1036829954@mail-ems-101.amazon.com>
+X-Amazon-Track: 24721820
+To: yyyy@netnoteinc.com
+From: Jeff Bezos <jeffb@amazon.com>
+Subject: Try our new Apparel store and get a 30 dollar thank you
+Bounces-To: ems+P8T5PED6GPLZ4A@bounces.amazon.com
+
+For almost a year, we've been working on a new effort that we're
+finally ready to show you. We're proud to introduce our new Apparel
+and Accessories store with over 400 major clothing brands (including
+Gap, Old Navy, Nordstrom, Lands' End, Target, Eddie Bauer, Foot
+Locker, and many more).
+
+Our goal is to provide complete apparel selection and offer it the
+Amazon way—-with easy navigation, a single shopping cart, your
+shipping and payment information already on file, etc. Of course, none
+of this would be possible without our many apparel store partners
+(we're thankful to have such an amazing group of companies working
+with us).
+
+We released a beta version of the Apparel store about a week ago, and
+much to our surprise, tens of thousands of clothing and accessory
+items have already been ordered. Through the first few days of our
+beta, customers have ordered:
+
+* 14,487 shirts (Polo Ralph Lauren button-downs to DKNY blouses)
+
+* 1,843 jackets (Old Navy fleece to Polartec windbreakers)
+
+* 2,712 sweaters (Eddie Bauer V-necks to Liz Claiborne cardigans)
+
+* 140 swimsuits (Tommy Bahama to Speedo)
+
+* 9,408 pants (Gap khakis to Guess jeans)
+
+* 485 skirts (Nordstrom suede to Spiegel leather)
+
+* 1,461 sleepwear items (Marshall Field's satin robes to Lands' End
+  flannel pajamas)
+
+* 3,254 pairs of shoes (Nike Air Max to Nine West boots)
+
+* 1,870 pairs of socks (Cole Haan cashmere-blend to OshKosh B'Gosh
+  cotton)
+
+* 2,805 accessories (handbags, watches, scarves, etc.)
+
+* 3,287 pairs of underwear (Jockey briefs to Hugo Boss boxers). We all
+  need clean underwear, right?
+
+We hope you'll check it out. You'll get a $30 promotional certificate
+when you spend $50 or more in the new Apparel store (see details
+below). We'd especially appreciate any feedback you have (please
+reply to this email to share your thoughts).
+
+http://www.amazon.com/apparel
+
+Sincerely,
+
+Jeff Bezos
+Founder & CEO
+Amazon.com
+
+----------------------------------------------------------------------
+To receive your $30 Amazon.com promotional certificate, click through
+to:
+
+http://www.amazon.com/apparel
+
+and see the prominent link for the $30 offer. All details are there.
+  
+We hope you enjoyed receiving this message. However, if you'd rather
+not receive future e-mails announcing new store launches, please click
+the Your Account button in the top right corner of any page on the
+Amazon.com Web site. In the Personal Information box under the Account
+Settings heading, click the "Update your communication preferences"
+link.
+
+Please note that this message was sent to the following e-mail
+address: yyyy@netnoteinc.com
+
+

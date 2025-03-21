@@ -1,0 +1,33 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Fri Sep  6 20:43:56 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Fri, 06 Sep 2002 15:43:56 -0400
+Subject: [Spambayes] Deployment
+In-Reply-To: <200209061431.g86EVM114413@pcp02138704pcs.reston01.va.comcast.net>
+Message-ID: <LNBBLJKPBEHFEDALKOLCEEJCBCAB.tim.one@comcast.net>
+
+[Guido]
+> Takers?  How is ESR's bogofilter packaged?  SpamAssassin?  The Perl
+> Bayes filter advertised on slashdot?
+
+WRT the last, it's a small pile of Windows .exe files along with
+cygwin1.dll.  The .exes are cmdline programs.  One is a POP3 proxy.  If I
+currently have an email server named, say, mail.comcast.net, with user name
+timmy, then I change my email reader to say that my server is 127.0.0.1, and
+that my user name on that server is mail.comcast.net:timmy.  In that way the
+proxy picks up both the real server and user names from what the mail reader
+tells it the user name is.
+
+This is an N-way classifier (like ifile that way), and "all it does" is
+insert a
+
+    X-Text-Classification:  one_of_the_class_names_you_picked
+
+header into your email before passing it on to your mail reader.  The user
+then presumably fiddles their mail reader to look for such headers and "do
+something about it" (and even Outlook can handle *that* much <wink>).
+
+The user is responsible for generating text files with appropriate examples
+of each class of message, and for running the cmdline tools to train the
+classifier.
+

@@ -1,0 +1,10 @@
+
+Usage: starts-with [options] --search=<string> [<string>]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --search string       Search string.
+         --pos int             Search position.
+         --split sep           Delimiter for stdin data. Default: '/\\r?\\n/'.

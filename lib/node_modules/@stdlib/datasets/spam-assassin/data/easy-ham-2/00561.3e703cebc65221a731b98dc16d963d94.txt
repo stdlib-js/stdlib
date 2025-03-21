@@ -1,0 +1,101 @@
+From razor-users-admin@lists.sourceforge.net  Fri Aug  2 16:33:33 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D025444107
+	for <jm@localhost>; Fri,  2 Aug 2002 11:32:38 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 02 Aug 2002 16:32:38 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g72FK8E01112 for
+    <jm-razor@jmason.org>; Fri, 2 Aug 2002 16:20:08 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id QAA04241 for
+    <jm-razor@jmason.org>; Fri, 2 Aug 2002 16:03:59 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17adne-0003u0-00; Fri,
+    02 Aug 2002 07:53:06 -0700
+Received: from 12.ws.pa.net ([206.228.70.126] helo=sparrow.stearns.org) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17adnI-0004De-00 for <razor-users@lists.sourceforge.net>; Fri,
+    02 Aug 2002 07:52:46 -0700
+Received: from localhost (localhost [127.0.0.1]) by sparrow.stearns.org
+    (8.11.6/8.11.6) with ESMTP id g72Epxb22418; Fri, 2 Aug 2002 10:52:01 -0400
+From: William Stearns <wstearns@pobox.com>
+X-X-Sender: wstearns@sparrow
+Reply-To: William Stearns <wstearns@pobox.com>
+To: zenn <zenn@optushome.com.au>
+Cc: ML-razor-users <razor-users@example.sourceforge.net>,
+	William Stearns <wstearns@pobox.com>,
+	Jordan Ritter <jpr5@darkridge.com>
+Subject: Re: [Razor-users] razor-cache ?
+In-Reply-To: <003101c239ff$05bf44e0$3d00a8c0@dennis>
+Message-Id: <Pine.LNX.4.44.0208021047130.18296-100000@sparrow>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Fri, 2 Aug 2002 10:51:58 -0400 (EDT)
+Date: Fri, 2 Aug 2002 10:51:58 -0400 (EDT)
+
+Good day, zenn,
+
+On Fri, 2 Aug 2002, zenn wrote:
+
+> as I see it, there is a valid need for a "razor-cache" server that is
+> available to the local smtp host...
+> recursiveness would also be a nice feature, giving us the option to link
+> caches to offload the burden on the razor servers...
+> it could also allow us to setup local razor caches for private networks that
+> can bypass the razor servers all together...
+> any commensts ?
+
+	http://www.stearns.org/razor-caching-proxy/ is what you're looking 
+for for the razor1 protocol.  The equivalent for razor2 is on hold pending 
+documentation of the razor2 protocol.
+	Jordan, is that still in the "finishing touches" stage?  *smile*  
+I'm betting that the infinite demands of getting a startup going put it on 
+the back burner.  Please let me know if I can help; if you need someone to 
+check it over, I'd be glad to do that.
+	Cheers,
+	- Bill
+
+---------------------------------------------------------------------------
+	"Power concedes nothing without a demand. It never did, and it
+never will.  Find out just what people will submit to, and you have
+found out the exact amount of injustice and wrong which will be imposed
+upon them; and these will continue until they are resisted with either
+words or blows, or with both.  The limits of tyrants are prescribed by
+the endurance of those whom they oppress."
+	-- Frederick Douglass, August 4, 1857
+(Courtesy of Eric S. Raymond)
+--------------------------------------------------------------------------
+William Stearns (wstearns@pobox.com).  Mason, Buildkernel, named2hosts, 
+and ipfwadm2ipchains are at:                        http://www.stearns.org
+--------------------------------------------------------------------------
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

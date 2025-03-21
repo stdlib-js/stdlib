@@ -1,0 +1,8 @@
+
+Usage: iso-weeks-in-year [options] [year]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+

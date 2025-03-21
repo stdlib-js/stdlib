@@ -1,0 +1,30 @@
+From rssfeeds@jmason.org  Mon Sep 30 13:44:09 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id F076416F03
+	for <jm@localhost>; Mon, 30 Sep 2002 13:44:08 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 30 Sep 2002 13:44:08 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8U81ng21379 for
+    <jm@jmason.org>; Mon, 30 Sep 2002 09:01:49 +0100
+Message-Id: <200209300801.g8U81ng21379@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: ask <rssfeeds@spamassassin.taint.org>
+Subject: YOUR a STUPID Idj0t
+Date: Mon, 30 Sep 2002 08:01:49 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.askbjoernhansen.com/archives/2002/09/20.html
+Date: 2002-09-20T16:13:37-08:00
+
+Jeremy writes about people who ignore basic language rules I entirely agree 
+with him. Writing "how r u 2day." is the best way to make me shift my attention 
+and respect away from you really fast. Another pet peeve: I have only been 
+speaking English on a regular basis for a bit more than three years, and even I 
+can grok the difference between "you are" and "your". As mjd wrote on clpm and 
+said in the YAPC movie: "You...
+
+

@@ -1,0 +1,66 @@
+From ilug-admin@linux.ie  Mon Jul 29 11:28:35 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 46722440FE
+	for <jm@localhost>; Mon, 29 Jul 2002 06:25:22 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 11:25:22 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6T9FKi19524 for
+    <jm-ilug@jmason.org>; Mon, 29 Jul 2002 10:15:20 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA01734; Mon, 29 Jul 2002 10:13:41 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from relay.dub-t3-1.nwcgroup.com
+    (postfix@relay.dub-t3-1.nwcgroup.com [195.129.80.16]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA01702 for <ilug@linux.ie>; Mon,
+    29 Jul 2002 10:13:34 +0100
+Received: from bramg1.net.external.hp.com (bramg1.net.external.hp.com
+    [192.6.126.73]) by relay.dub-t3-1.nwcgroup.com (Postfix) with ESMTP id
+    9E3D470008 for <ilug@linux.ie>; Mon, 29 Jul 2002 10:13:31 +0100 (IST)
+Received: from fowey.BR.ITC.HP.COM (fowey.br.itc.hp.com [15.145.8.186]) by
+    bramg1.net.external.hp.com (Postfix) with SMTP id 7599CA10 for
+    <ilug@linux.ie>; Mon, 29 Jul 2002 11:12:48 +0200 (METDST)
+Received: from 15.145.8.186 by fowey.BR.ITC.HP.COM (InterScan E-Mail
+    VirusWall NT); Mon, 29 Jul 2002 10:12:48 +0100
+Received: by fowey.br.itc.hp.com with Internet Mail Service (5.5.2655.55)
+    id <PR15Z2SQ>; Mon, 29 Jul 2002 10:12:48 +0100
+Message-Id: <253B1BDA4E68D411AC3700D0B77FC5F80771934B@patsydan.dublin.hp.com>
+From: "HAMILTON,DAVID (HP-Ireland,ex2)" <david_hamilton3@hp.com>
+To: "'ilug@linux.ie'" <ilug@linux.ie>
+Date: Mon, 29 Jul 2002 10:12:38 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2655.55)
+Content-Type: text/plain
+Subject: [ILUG] [OT] Renaming Cookies
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Hi All,
+
+Does anyone know if it is possible to just rename the cookie files, as in
+user1@site.com -> user2@site.com?
+If so, what's the easiest way to do this.
+The cookies are on a windows box, but I can smbmount the hard disk if this
+is the best way to do it.
+
+Thanks,
+	David.
+
+David Hamilton
+Senior Technical Consultant
+HP Ireland 
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

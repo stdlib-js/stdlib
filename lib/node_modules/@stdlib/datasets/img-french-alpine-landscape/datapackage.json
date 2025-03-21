@@ -1,0 +1,36 @@
+{
+  "name": "stdlib-datasets-img-french-alpine-landscape",
+  "version": "",
+  "title": "French Alpine Landscape",
+  "description": "Image of a French alpine landscape.",
+  "resources": [
+    {
+      "name": "french-alpine-landscape-jpg",
+      "title": "French Alpine Landscape",
+      "description": "Image of a French alpine landscape.",
+      "format": "jpeg",
+      "mediatype": "image/jpeg",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/image.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Getty's Open Content Program",
+      "web": "http://www.getty.edu/art/collection/objects/54324/adolphe-braun-alpine-landscape-french-1865-1870/"
+    }
+  ],
+  "keywords": [
+    "image",
+    "img",
+    "landscape",
+    "alpine",
+    "mountains",
+    "france",
+    "alps",
+    "french",
+    "nature"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}

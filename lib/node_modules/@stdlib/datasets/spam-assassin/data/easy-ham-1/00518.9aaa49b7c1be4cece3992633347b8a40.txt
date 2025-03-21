@@ -1,0 +1,61 @@
+From fork-admin@xent.com  Mon Sep  9 19:27:31 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 5787D16F03
+	for <jm@localhost>; Mon,  9 Sep 2002 19:27:31 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 19:27:31 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g89EBEC18519 for <jm@jmason.org>;
+    Mon, 9 Sep 2002 15:11:14 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 5C5E22941D0; Mon,  9 Sep 2002 07:05:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from crank.slack.net (slack.net [166.84.151.181]) by xent.com
+    (Postfix) with ESMTP id 729112941CC for <fork@xent.com>; Mon,
+    9 Sep 2002 07:04:02 -0700 (PDT)
+Received: by crank.slack.net (Postfix, from userid 596) id 722573EDCA;
+    Mon,  9 Sep 2002 10:10:18 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1]) by crank.slack.net
+    (Postfix) with ESMTP id 6510A3EDC6; Mon,  9 Sep 2002 10:10:18 -0400 (EDT)
+From: Tom <tomwhore@slack.net>
+To: Gordon Mohr <gojomo@usa.net>
+Cc: fork@spamassassin.taint.org
+Subject: Re: earthviewer apps Re: whoa
+In-Reply-To: <02f701c257be$6f1d9e50$640a000a@golden>
+Message-Id: <Pine.BSO.4.44.0209091006370.22022-100000@crank.slack.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 9 Sep 2002 10:10:18 -0400 (EDT)
+
+On Sun, 8 Sep 2002, Gordon Mohr wrote:
+
+--]Gary Lawrence Murphy cynicizes:
+--]> Hmmm, just as I thought.  In other words, it has no practical uses
+--]> whatsoever ;)
+--]
+--]Online gaming continues to grow. Screw "Britannia",
+--]real-life Britain would be a fun world to wander/
+--]conquer/explore virtually, in role-playing or real-
+--]time-strategy games.
+
+
+Andthus....Geocaching.....this would make a nice little "let me check this
+set of coord out before we trek into 10 feet of quicksand"
+
+
+

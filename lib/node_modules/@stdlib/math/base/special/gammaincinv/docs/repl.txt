@@ -1,0 +1,51 @@
+
+{{alias}}( p, a[, upper] )
+    Computes the inverse of the lower incomplete gamma function.
+
+    In contrast to a more commonly used definition, the first argument is the
+    probability `p` and the second argument is the scale factor `a`.
+
+    By default, the function inverts the lower regularized incomplete gamma
+    function, `P(x,a)`. To invert the upper function `Q(x,a)`, set the `upper`
+    argument to `true`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `p < 0` or `p > 1`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    p: number
+        Probability.
+
+    a: number
+        Scale parameter.
+
+    upper: boolean (optional)
+        Boolean indicating if the function should invert the upper tail of the
+        incomplete gamma function; i.e., compute `xr` such that `Q(a,xr) = p`.
+        Default: `false`.
+
+    Returns
+    -------
+    y: number
+        Function value.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.5, 2.0 )
+    ~1.678
+    > y = {{alias}}( 0.1, 10.0 )
+    ~6.221
+    > y = {{alias}}( 0.75, 3.0 )
+    ~3.92
+    > y = {{alias}}( 0.75, 3.0, true )
+    ~1.727
+    > y = {{alias}}( 0.75, NaN )
+    NaN
+    > y = {{alias}}( NaN, 3.0 )
+    NaN
+
+    See Also
+    --------
+

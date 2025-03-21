@@ -1,0 +1,47 @@
+From pudge@perl.org  Fri Sep 20 11:29:30 2002
+Return-Path: <pudge@perl.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id CCCDE16F03
+	for <jm@localhost>; Fri, 20 Sep 2002 11:29:29 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 20 Sep 2002 11:29:29 +0100 (IST)
+Received: from cpu59.osdn.com (slashdot.org [64.28.67.73] (may be forged))
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8K202C16018 for
+    <jm-use-perl@jmason.org>; Fri, 20 Sep 2002 03:00:02 +0100
+Received: from [10.2.181.14] (helo=perl.org) by cpu59.osdn.com with smtp
+    (Exim 3.35 #1 (Debian)) id 17sD32-00014x-00 for <jm-use-perl@jmason.org>;
+    Thu, 19 Sep 2002 21:57:36 -0400
+Date: Fri, 20 Sep 2002 02:00:23 +0000
+From: pudge@perl.org
+Subject: [use Perl] Headlines for 2002-09-20
+To: yyyy-use-perl@spamassassin.taint.org
+Precedence: list
+X-Bulkmail: 2.051
+Message-Id: <E17sD32-00014x-00@cpu59.osdn.com>
+
+use Perl Daily Headline Mailer
+
+PerlQT 3 Released
+    posted by ziggy on Thursday September 19, @10:41 (tools)
+    http://use.perl.org/article.pl?sid=02/09/19/1443213
+
+
+
+
+Copyright 1997-2002 pudge.  All rights reserved.
+
+
+======================================================================
+
+You have received this message because you subscribed to it
+on use Perl.  To stop receiving this and other
+messages from use Perl, or to add more messages
+or change your preferences, please go to your user page.
+
+	http://use.perl.org/my/messages/
+
+You can log in and change your preferences from there.
+
+

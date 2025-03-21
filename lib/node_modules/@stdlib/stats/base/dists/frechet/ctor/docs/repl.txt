@@ -1,0 +1,109 @@
+
+{{alias}}( [α, s, m] )
+    Returns a Fréchet distribution object.
+
+    Parameters
+    ----------
+    α: number (optional)
+        Shape parameter. Must be greater than `0`. Default: `1.0`.
+
+    s: number (optional)
+        Scale parameter. Must be greater than `0`. Default: `1.0`.
+
+    m: number (optional)
+        Location parameter. Default: `0.0`.
+
+    Returns
+    -------
+    frechet: Object
+        Distribution instance.
+
+    frechet.alpha: number
+        Shape parameter. If set, the value must be greater than `0`.
+
+    frechet.s: number
+        Scale parameter. If set, the value must be greater than `0`.
+
+    frechet.m: number
+        Location parameter.
+
+    frechet.entropy: number
+        Read-only property which returns the differential entropy.
+
+    frechet.kurtosis: number
+        Read-only property which returns the excess kurtosis.
+
+    frechet.mean: number
+        Read-only property which returns the expected value.
+
+    frechet.median: number
+        Read-only property which returns the median.
+
+    frechet.mode: number
+        Read-only property which returns the mode.
+
+    frechet.skewness: number
+        Read-only property which returns the skewness.
+
+    frechet.stdev: number
+        Read-only property which returns the standard deviation.
+
+    frechet.variance: number
+        Read-only property which returns the variance.
+
+    frechet.cdf: Function
+        Evaluates the cumulative distribution function (CDF).
+
+    frechet.logcdf: Function
+        Evaluates the natural logarithm of the cumulative distribution function
+        (CDF).
+
+    frechet.logpdf: Function
+        Evaluates the natural logarithm of the probability density function
+        (PDF).
+
+    frechet.pdf: Function
+        Evaluates the probability density function (PDF).
+
+    frechet.quantile: Function
+        Evaluates the quantile function at probability `p`.
+
+    Examples
+    --------
+    > var frechet = {{alias}}( 1.0, 1.0, 0.0 );
+    > frechet.alpha
+    1.0
+    > frechet.s
+    1.0
+    > frechet.m
+    0.0
+    > frechet.entropy
+    ~2.154
+    > frechet.kurtosis
+    Infinity
+    > frechet.mean
+    Infinity
+    > frechet.median
+    ~1.443
+    > frechet.mode
+    0.5
+    > frechet.skewness
+    Infinity
+    > frechet.stdev
+    Infinity
+    > frechet.variance
+    Infinity
+    > frechet.cdf( 0.8 )
+    ~0.287
+    > frechet.logcdf( 0.8 )
+    -1.25
+    > frechet.logpdf( 0.8 )
+    ~-0.804
+    > frechet.pdf( 0.8 )
+    ~0.448
+    > frechet.quantile( 0.8 )
+    ~4.481
+
+    See Also
+    --------
+

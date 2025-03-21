@@ -1,0 +1,86 @@
+From rpm-list-admin@freshrpms.net  Mon Sep  9 18:00:30 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 9FDD516EFC
+	for <jm@localhost>; Mon,  9 Sep 2002 18:00:29 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 18:00:29 +0100 (IST)
+Received: from auth02.nl.egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g123ec832356 for
+    <jm-rpm@jmason.org>; Sat, 2 Feb 2002 03:40:38 GMT
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by
+    auth02.nl.egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g123a1327082;
+    Sat, 2 Feb 2002 04:36:02 +0100
+Received: from imf17bis.bellsouth.net (mail317.mail.bellsouth.net
+    [205.152.58.177]) by auth02.nl.egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g123Zp327072 for <rpm-list@freshrpms.net>; Sat, 2 Feb 2002 04:35:51 +0100
+Received: from adsl-157-22-214.msy.bellsouth.net ([66.157.22.214]) by
+    imf17bis.bellsouth.net (InterMail vM.5.01.04.00 201-253-122-122-20010827)
+    with ESMTP id
+    <20020202033703.ZMCA22816.imf17bis.bellsouth.net@adsl-157-22-214.msy.bellsouth.net>
+    for <rpm-list@freshrpms.net>; Fri, 1 Feb 2002 22:37:03 -0500
+Subject: Re: problems with 'apt-get -f install'
+From: Lance <lance_tt@bellsouth.net>
+To: rpm-zzzlist@freshrpms.net
+In-Reply-To: <14220000.1012602017@spawn.se7en.org>
+References: <14220000.1012602017@spawn.se7en.org>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Evolution/1.0.2
+Message-Id: <1012620964.5580.5.camel@localhost.localdomain>
+MIME-Version: 1.0
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: 01 Feb 2002 21:36:04 -0600
+Date: 01 Feb 2002 21:36:04 -0600
+
+I have failed dependencies in RPM database to I am unable to use
+apt-get.  I requests to run 'apt-get -f install' to fix these
+dependencies, however, I get these errors when running 'apt-get -f
+install' :
+
+[root@localhost root]# apt-get -f install
+Processing File Dependencies... Done
+Reading Package Lists... Done       
+Building Dependency Tree... Done
+Correcting dependencies... Done
+The following extra packages will be installed:
+  libgcj 
+The following NEW packages will be installed:
+  libgcj 
+0 packages upgraded, 1 newly installed, 0 to remove(replace) and 68 not
+upgraded.
+Need to get 2407kB of archives. After unpacking 8598kB will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://apt-rpm.tuxfamily.org redhat-7.2-i386/redhat/os libgcj
+2.96-27 [2407kB]
+Fetched 2407kB in 22s
+(105kB/s)                                                                                                                         
+Executing RPM (-U)...
+Preparing...                ###########################################
+[100%]
+   1:libgcj                 error: unpacking of archive failed on file
+/usr/share/libgcj.zip;3c5b5e75: cpio: MD5 sum mismatch
+E: Sub-process /bin/rpm returned an error code (1)
+[root@localhost root]# 
+
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

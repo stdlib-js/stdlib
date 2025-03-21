@@ -1,0 +1,40 @@
+
+{{alias}}( n, x )
+    Evaluates the polygamma function of order `n`; i.e., the (n+1)th derivative
+    of the natural logarithm of the gamma function.
+
+    If `n` is not a nonnegative integer, the function returns `NaN`.
+
+    If `x` is zero or a negative integer, the function returns `NaN`.
+
+    If provided `NaN` as either parameter, the function returns `NaN`.
+
+    Parameters
+    ----------
+    n: integer
+        Derivative order.
+
+    x: number
+        Input value.
+
+    Returns
+    -------
+    y: number
+        Function value.
+
+    Examples
+    --------
+    > var v = {{alias}}( 3, 1.2 )
+    ~3.245
+    > v = {{alias}}( 5, 1.2 )
+    ~41.39
+    > v = {{alias}}( 3, -4.9 )
+    ~60014.239
+    > v = {{alias}}( -1, 5.3 )
+    NaN
+    > v = {{alias}}( 2, -1.0 )
+    Infinity
+
+    See Also
+    --------
+

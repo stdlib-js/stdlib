@@ -1,0 +1,30 @@
+
+{{alias}}( value )
+    Tests if an input value is a supported ndarray index mode.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an input value is a supported ndarray index mode.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 'throw' )
+    true
+    > bool = {{alias}}( 'clamp' )
+    true
+    > bool = {{alias}}( 'wrap' )
+    true
+    > bool = {{alias}}( '' )
+    false
+    > bool = {{alias}}( 'beep' )
+    false
+
+    See Also
+    --------
+

@@ -1,0 +1,63 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Mon Oct  7 13:15:13 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id D150A16F22
+	for <jm@localhost>; Mon,  7 Oct 2002 13:12:57 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 07 Oct 2002 13:12:57 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g97BYYK29665 for <jm-sa@jmason.org>; Mon, 7 Oct 2002 12:34:34 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17yW4R-0004WO-00; Mon,
+    07 Oct 2002 04:29:07 -0700
+Received: from zurich.ai.mit.edu ([18.43.0.244]) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17yW4K-00072G-00 for
+    <spamassassin-talk@lists.sourceforge.net>; Mon, 07 Oct 2002 04:29:00 -0700
+Received: from nestle.ai.mit.edu (nestle.ai.mit.edu [18.43.0.45]) by
+    zurich.ai.mit.edu (8.12.3/8.12.3/Debian -4) with ESMTP id g97BSqJ0023380;
+    Mon, 7 Oct 2002 07:28:52 -0400
+Received: from dsaklad by nestle.ai.mit.edu with local (Exim 3.12 #1
+    (Debian)) id 17yW4C-00077t-00; Mon, 07 Oct 2002 07:28:52 -0400
+From: Don Saklad <dsaklad@zurich.ai.mit.edu>
+To: spamassassin-talk@example.sourceforge.net,
+	dsaklad@zurich.ai.mit.edu
+Message-Id: <E17yW4C-00077t-00@nestle.ai.mit.edu>
+Subject: [SAtalk] emacs rmail  How to sort subject lines and headers.
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchives/forum.php?forum=spamassassin-talk>
+X-Original-Date: Mon, 07 Oct 2002 07:28:52 -0400
+Date: Mon, 07 Oct 2002 07:28:52 -0400
+
+In emacs rmail what varieties of different techniques are there for
+sorting your favorite correspondents from the mix?... leaving the hundreds
+of spam commercials. A filter for the campus computer system puts subject
+lines and headers on many of the hundreds of spam commercials
+with http://spamassassin.org
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

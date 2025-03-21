@@ -1,0 +1,59 @@
+From fork-admin@xent.com  Tue Aug 13 10:31:12 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 67131440FA
+	for <jm@localhost>; Tue, 13 Aug 2002 05:22:34 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:22:34 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7D4xvb18010 for <jm@jmason.org>;
+    Tue, 13 Aug 2002 05:59:58 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 0F4AB2941C3; Mon, 12 Aug 2002 21:58:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from nycsmtp3out.rdc-nyc.rr.com (nycsmtp3out.rdc-nyc.rr.com
+    [24.29.99.228]) by xent.com (Postfix) with ESMTP id 0E4CE2941C2 for
+    <fork@xent.com>; Mon, 12 Aug 2002 21:57:09 -0700 (PDT)
+Received: from damien (66-108-144-106.nyc.rr.com [66.108.144.106]) by
+    nycsmtp3out.rdc-nyc.rr.com (8.12.1/Road Runner SMTP Server 1.0) with ESMTP
+    id g7D50Vkl001231; Tue, 13 Aug 2002 01:00:32 -0400 (EDT)
+From: "Damien Morton" <damien.morton@acm.org>
+To: <gojomo@usa.net>
+Cc: <fork@spamassassin.taint.org>
+Subject: NYTimes.com Article: Bigger Bar Code Inches Up on Retailers
+Message-Id: <000101c24285$d1c8da40$6a906c42@damien>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.3416
+Importance: Normal
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4807.1700
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 13 Aug 2002 00:56:43 -0400
+
+
+How about a highly error corrected atomic level 3D encoding scheme that
+relies on shape, colour and chemical make up to uniquely identify every
+object in the universe.
+
+Objects uniquely identify themselves - theres no need for barcodes.
+
+
+http://xent.com/mailman/listinfo/fork
+
+

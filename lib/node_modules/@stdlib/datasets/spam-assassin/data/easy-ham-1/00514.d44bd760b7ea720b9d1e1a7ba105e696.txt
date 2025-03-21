@@ -1,0 +1,64 @@
+From fork-admin@xent.com  Mon Sep  9 14:34:38 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id B86F816EFC
+	for <jm@localhost>; Mon,  9 Sep 2002 14:34:37 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 14:34:37 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g89DS9C15806 for <jm@jmason.org>;
+    Mon, 9 Sep 2002 14:28:10 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id A7D812942D6; Mon,  9 Sep 2002 06:25:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from venus.phpwebhosting.com (venus.phpwebhosting.com
+    [64.29.16.27]) by xent.com (Postfix) with SMTP id 8E3032940B8 for
+    <fork@xent.com>; Mon,  9 Sep 2002 06:24:38 -0700 (PDT)
+Received: (qmail 5996 invoked by uid 508); 9 Sep 2002 13:27:23 -0000
+Received: from unknown (HELO hydrogen.leitl.org) (217.80.40.112) by
+    venus.phpwebhosting.com with SMTP; 9 Sep 2002 13:27:23 -0000
+Received: from localhost (eugen@localhost) by hydrogen.leitl.org
+    (8.11.6/8.11.6) with ESMTP id g89DRJu05727; Mon, 9 Sep 2002 15:27:20 +0200
+X-Authentication-Warning: hydrogen.leitl.org: eugen owned process doing -bs
+From: Eugen Leitl <eugen@leitl.org>
+To: Chris Haun <chris@noskillz.com>
+Cc: CDale <cdale@techmonkeys.net>, Tom <tomwhore@slack.net>,
+	Gordon Mohr <gojomo@usa.net>, <fork@xent.com>
+Subject: Re: Selling Wedded Bliss (was Re: Ouch...)
+In-Reply-To: <Pine.LNX.4.44.0209090750320.23413-100000@isolnetsux.techmonkeys.net>
+Message-Id: <Pine.LNX.4.33.0209091524050.32400-100000@hydrogen.leitl.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 9 Sep 2002 15:27:19 +0200 (CEST)
+
+On Mon, 9 Sep 2002, Chris Haun wrote:
+
+> ok i read back, thats not a typo, you mean three thousand lovers.
+> where do you get your data? It seems very unlikely, but if you have 
+> supporting evidence i'd like to see it.
+
+I haven't seen any official data on the web (the high-ranking hits are 
+overrun by religious bigots), but there's some anecdotal evidence to be 
+found in
+
+	http://sunsite.berkeley.edu:2020/dynaweb/teiproj/oh/science/aidsnur2/@Generic__BookTextView/5406
+
+(search for promiscuity). They mention 300 to 500 partners a year. 
+(Anecdotally. This is not a statistic). They also mention that this was 
+specific to gay males. Lesbians don't dig promiscuity in that degree.
+
+

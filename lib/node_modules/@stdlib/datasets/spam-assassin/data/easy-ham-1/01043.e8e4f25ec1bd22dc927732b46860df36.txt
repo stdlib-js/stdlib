@@ -1,0 +1,140 @@
+From rpm-list-admin@freshrpms.net  Thu Aug 29 11:01:06 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6AE6043F99
+	for <jm@localhost>; Thu, 29 Aug 2002 06:01:04 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:01:04 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7T0IgZ20518 for
+    <jm-rpm@jmason.org>; Thu, 29 Aug 2002 01:18:42 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7T0G6J12978; Thu, 29 Aug 2002 02:16:06
+    +0200
+Received: from imf24bis.bellsouth.net (mail124.mail.bellsouth.net
+    [205.152.58.84]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g7T0FHJ03427 for <rpm-list@freshrpms.net>; Thu, 29 Aug 2002 02:15:17 +0200
+Received: from adsl-157-16-61.msy.bellsouth.net ([66.157.16.61]) by
+    imf24bis.bellsouth.net (InterMail vM.5.01.04.19
+    201-253-122-122-119-20020516) with ESMTP id
+    <20020829001508.JZK24863.imf24bis.bellsouth.net@adsl-157-16-61.msy.bellsouth.net>
+    for <rpm-list@freshrpms.net>; Wed, 28 Aug 2002 20:15:08 -0400
+Subject: Re: ALSA (almost) made easy
+From: Lance <lance_tt@bellsouth.net>
+To: RPM-List <rpm-zzzlist@freshrpms.net>
+In-Reply-To: <1030576177.6448.1.camel@localhost.localdomain>
+References: <20020828004215.4bca2588.matthias@rpmforge.net>
+    <1030507320.3214.39.camel@herald.dragonsdawn.net>
+    <20020828100430.378c3856.matthias@rpmforge.net>
+    <1030546780.3214.54.camel@herald.dragonsdawn.net>
+    <20020828112645.B13047@ti19>
+    <1030551945.10627.4.camel@wanderlust.prognet.com>
+    <20020828190006.2200a154.matthias@rpmforge.net>
+    <1030576177.6448.1.camel@localhost.localdomain>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8 (1.0.8-6)
+Message-Id: <1030580111.1388.2.camel@localhost.localdomain>
+MIME-Version: 1.0
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: 28 Aug 2002 19:15:10 -0500
+Date: 28 Aug 2002 19:15:10 -0500
+
+Ok, I got ALSA installed and there is no static inbetween mp3s like
+before which is great!  My setup is digital 4.1 but sound is only coming
+from front 2 speakers and subwoofer, rear speakers there is no sound. 
+Also alsamixer or aumix are unresponsive as well. 
+
+Lance
+
+On Wed, 2002-08-28 at 18:09, Lance wrote:
+> Thanks for this, I'm going to give them another try.  One question: How
+> do I switch between digital out and analog out with ALSA?  With
+> emu10k1-tools it's easy enough (emu-config -d for digital, emu-config -a
+> for analog)  Is there a similar method with ALSA?
+> 
+> Lance
+> 
+> On Wed, 2002-08-28 at 12:00, Matthias Saou wrote:
+> > Followup to the story :
+> > 
+> > I've now made a sub-package of alsa-driver called "alsa-kernel" which
+> > contains only the kernel modules, and alsa-driver contains everything else
+> > from the original package (device entries, include files and docs).
+> > 
+> > This should allow installation of a single "alsa-driver" package and
+> > multiple "alsa-kernel" if you have more than one kernel installed. Right
+> > now the dependencies make it mandatory to have kernels installed through
+> > rpm... people who install from source can still install the ALSA modules
+> > from the source though ;-)
+> > 
+> > The devices are there now, thank Gordon for reporting the problem (and as I
+> > said, you were the only one). Any further comments are very welcome!
+> > 
+> > Download : http://ftp.freshrpms.net/pub/freshrpms/testing/alsa/
+> > New spec : http://freshrpms.net/builds/alsa-driver/alsa-driver.spec
+> > 
+> > If you aren't running kernel-2.4.18-10 for i686, simply --rebuild the
+> > alsa-driver source rpm and you'll get a package for your running kernel.
+> > 
+> > Matthias
+> > 
+> > -- 
+> > Clean custom Red Hat Linux rpm packages : http://freshrpms.net/
+> > Red Hat Linux release 7.3 (Valhalla) running Linux kernel 2.4.18-10
+> > Load : 0.08 0.42 0.84, AC on-line, battery charging: 100% (6:36)
+> > 
+> > _______________________________________________
+> > RPM-List mailing list <RPM-List@freshrpms.net>
+> > http://lists.freshrpms.net/mailman/listinfo/rpm-list
+> -- 
+> :
+> ####[ Linux One Stanza Tip (LOST) ]###########################
+> 
+> Sub : Finding out files larger than given size       LOST #324
+> 
+> To find out all files in a dir over a given size, try:
+> find /path/to/dir_of_file -type f -size +Nk
+> [Where N is a number like 1024 for 1mb, and multiples thereof] 
+> 
+> ####[Discussions on LIH : 04 Jul 2002]########################
+> :
+> 
+> 
+> _______________________________________________
+> RPM-List mailing list <RPM-List@freshrpms.net>
+> http://lists.freshrpms.net/mailman/listinfo/rpm-list
+-- 
+:
+####[ Linux One Stanza Tip (LOST) ]###########################
+
+Sub : Finding out files larger than given size       LOST #324
+
+To find out all files in a dir over a given size, try:
+find /path/to/dir_of_file -type f -size +Nk
+[Where N is a number like 1024 for 1mb, and multiples thereof] 
+
+####[Discussions on LIH : 04 Jul 2002]########################
+:
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

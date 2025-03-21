@@ -1,0 +1,91 @@
+From fork-admin@xent.com  Mon Sep  9 19:28:13 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 3C68F16EFC
+	for <jm@localhost>; Mon,  9 Sep 2002 19:28:12 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 19:28:12 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g89I6gC26382 for <jm@jmason.org>;
+    Mon, 9 Sep 2002 19:06:43 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 0928D2942E9; Mon,  9 Sep 2002 11:00:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mail.evergo.net (unknown [206.191.151.2]) by xent.com
+    (Postfix) with SMTP id ED9D22942BF for <fork@xent.com>; Mon,
+    9 Sep 2002 11:00:00 -0700 (PDT)
+Received: (qmail 18058 invoked from network); 9 Sep 2002 18:02:49 -0000
+Received: from dsl.206.191.151.102.evergo.net (HELO JMHALL)
+    (206.191.151.102) by mail.evergo.net with SMTP; 9 Sep 2002 18:02:49 -0000
+Reply-To: <johnhall@evergo.net>
+From: "John Hall" <johnhall@evergo.net>
+To: "FoRK" <fork@spamassassin.taint.org>
+Subject: RE: Recommended Viewing
+Message-Id: <002301c2582b$1c040a20$0200a8c0@JMHALL>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.2627
+Importance: Normal
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+In-Reply-To: <ILEHJNJFPDLMDEKNIAKCMEECCAAA.geege@barrera.org>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 9 Sep 2002 11:02:49 -0700
+
+Isn't this the story where someone's "Dream" has the ability to change
+reality -- then you find the whole world is their dream?
+
+
+
+
+> -----Original Message-----
+> From: fork-admin@xent.com [mailto:fork-admin@xent.com] On Behalf Of
+Geege
+> Schuman
+> Sent: Monday, September 09, 2002 4:26 AM
+> To: John Evdemon
+> Cc: fork@spamassassin.taint.org
+> Subject: RE: Recommended Viewing
+> 
+> Agreed, completely.  I totally grokked the notion of unintened
+consequence
+> with the original.
+> 
+> -----Original Message-----
+> From: fork-admin@xent.com [mailto:fork-admin@xent.com]On Behalf Of
+John
+> Evdemon
+> Sent: Monday, September 09, 2002 7:03 AM
+> To: Fork@xent.com
+> Subject: Re: Recommended Viewing
+> 
+> 
+> On 8 Sep 2002 at 22:15, Geege Schuman wrote:
+> 
+> > who watched Lathe of Heaven?  (A&E, 8 pm EDT)  who has seen
+> > the original?
+> >
+> By "original" if you are referring to the old PBS version, I liked
+that
+> version much better.  Much more thought provoking.
+> 
+> 
+> 
+
+
+

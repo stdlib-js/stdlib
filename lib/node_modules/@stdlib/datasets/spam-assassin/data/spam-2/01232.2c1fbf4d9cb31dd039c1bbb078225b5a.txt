@@ -1,0 +1,246 @@
+From starwars@tytcorp.com  Fri Aug  2 00:51:59 2002
+Return-Path: <starwars@tytcorp.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9C5D4440F0
+	for <jm@localhost>; Thu,  1 Aug 2002 19:51:57 -0400 (EDT)
+Received: from mail.webnote.net [193.120.211.219]
+	by localhost with POP3 (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 02 Aug 2002 00:51:57 +0100 (IST)
+Received: from smtp.easydns.com (smtp.easydns.com [205.210.42.30])
+	by webnote.net (8.9.3/8.9.3) with ESMTP id AAA32286
+	for <jm@netnoteinc.com>; Fri, 2 Aug 2002 00:48:54 +0100
+From: starwars@tytcorp.com
+Received: from mail.tytcorp.com (unknown [63.218.225.154])
+	by smtp.easydns.com (Postfix) with SMTP id 800662BF81
+	for <jm@netnoteinc.com>; Thu,  1 Aug 2002 19:48:43 -0400 (EDT)
+MIME-Version: 1.0
+To: yyyy@netnoteinc.com
+Reply-To: starwars@tytcorp.com
+Content-Transfer-Encoding: 7bit
+Received: from mail.tytcorp.com by 0RD01FNX8B7D.mail.tytcorp.com with SMTP for yyyy@netnoteinc.com; Thu, 01 Aug 2002 19:15:23 -0500
+Date: Thu, 01 Aug 2002 19:15:23 -0500
+Subject: FREE ORIGINAL STAR WARS CARS Adv:
+Message-Id: <8I8DB.0NFTITHWWFDEQEOM4M.starwars@tytcorp.com>
+X-Encoding: MIME
+X-MSMail-Priority: Normal
+Content-Type: multipart/alternative; boundary="----=_NextPart_434_2562770446087"
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_434_2562770446087
+Content-Type: text/plain;
+	charset=us-ascii
+Content-Transfer-Encoding: 7BIT
+
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft Developer Studio">
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=iso-8859-1">
+<TITLE>Document Title</TITLE>
+</HEAD>
+<BODY>
+
+	<table width=600 align="center" cellspacing=0 cellpadding=0>
+		<tr align="center">
+			<td colspan=3 bgcolor=black>
+				<IMG alt="Star Wars" src="http://www.zephers.com/SW/starwars.gif">
+			</td>
+		</tr>
+		<tr>
+			<td colspan=3 bgcolor=black>
+				<IMG width=600 alt="Empire Strikes Back Logo" src="http://www.zephers.com/SW/EmpStrikesBack.gif">
+			</td>
+		</tr>
+		<tr>
+			<td colspan=3 align=center>
+				<font size=6><STRONG>OWN A UNIQUE, ONE-OF-A-KIND PIECE OF STAR-WARS HISTORY!<STRONG></font><br>
+			</td>
+		</tr>
+		<tr  align="center">
+			<td>
+				<IMG width=80 height=60 alt="Willitts Logo" src="http://www.zephers.com/SW/WillittsLogo.jpg">
+			</td>
+
+			<td align=center>
+				<font size=5 color=Firebrick>Exclusively Licensed From<br>Lucas Film Ltd.</font><br><br>
+			</td>
+			<td>
+				<IMG width=80 height=60 alt="Willitts Logo" src="http://www.zephers.com/SW/WillittsLogo.jpg">
+			</td>
+		</tr>
+		<tr  align="center">
+			<td colspan=3 >
+				This Innovative New Collectible is the First to Display an Authentic One of Kind 70mm Film Frame From
+				 the <font color=Firebrick>Star Wars/Empire Strikes Back Movie</font><br>
+				 containing a One of a Kind 70mm Frame in a 7-1/2" x 2-3/4" Diamond Cut, Acrylic,
+				 <br>Mint Collector's Case.
+				 <BR><br>
+				 <font size=5><STRONG>FACT: NO TWO FRAMES ARE ALIKE</STRONG></font><br>
+				 <font size=4>Each Film Frame Is A Unique Original and Will Never Be Reproduced.</font>
+			</td>
+		</tr>
+		<tr>
+			<td colspan=3>
+				Each fully licensed original film frame is sealed and individually serial numbered with identification codes
+				tamper proof holographic seals to prevent fraudulent duplication.
+			</td>
+		</tr>
+		<tr>
+			<td colspan=3>
+				<br>
+				<IMG alt="Empire Strikes Back Light Saber Duel" src="http://www.zephers.com/SW/ESBLightSaberDuel.jpg">
+				<br>
+				<b>#50049 LIGHTSABER DUEL Special Edition:</b><BR>
+				Features the fantastic lightsaber duel between Luke Skywalker and Darth Vader.
+			</td>
+		</tr>
+		<tr>
+			<td colspan=3>
+				This Special Edition #50049 LIGHTSABER DUEL was only available with the Willitts premium package #50707, 
+				which sold in retail shops for $125.00.
+			</td>
+		</tr>
+		<tr>
+			<td colspan=3>
+				<br>
+				<center><font size=5>Special, Internet offer!<br>
+				Order now and receive the above <br>Rare Special Edition #50049 LIGHTSABER DUEL<br>
+				<strong>for this Special Internet price of only <font color=Firebrick>$19.95!</font></strong>
+				<br>
+				<font color=Firebrick>Special Bonus</font> <font color="green">with your order, you will receive
+				  10 Original 1980 Topps Star Wars/Empire Strikes Back Collector Cards </font><font color=Firebrick>
+				  Absultely Free!</font>
+				</font><br>
+				These are Original 1980 Topps Star Wars/Empire Strikes Back Collector Cards
+				<br>from 22 years ago! Not reprints!
+				<br>
+				<br>HURRY! Please, respond now before our limited supplies are exhausted!!
+				<br>Your film cell image may differ from the above sample.
+				</center>
+				<a href="http://www.zephers.com/SW/default.asp?e=jm@netnoteinc.com">Click here!</a>
+			</td>
+		</tr>
+		<tr>
+			<td colspan=3>
+				<br><br><hr><br>
+				You have received this email as an opted-in subscriber, if this is not the case, please click on the following link
+				 to be permanently removed from our database.
+				<a href="mailto:swdelete@nouce1.com">Please take me off this list</a>
+				<br><br>866-667-5399<br>NOUCE 1<br>6822 22nd Avenue North<br>Saint Petersburg, FL 33710-3918<br></FONT>
+			</td>
+		</tr>
+	</table>
+</BODY>
+</HTML>
+
+
+------=_NextPart_434_2562770446087
+Content-Type: text/html;
+	charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft Developer Studio">
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=iso-8859-1">
+<TITLE>Document Title</TITLE>
+</HEAD>
+<BODY>
+
+	<table width=600 align="center" cellspacing=0 cellpadding=0>
+		<tr align="center">
+			<td colspan=3 bgcolor=black>
+				<IMG alt="Star Wars" src="http://www.zephers.com/SW/starwars.gif">
+			</td>
+		</tr>
+		<tr>
+			<td colspan=3 bgcolor=black>
+				<IMG width=600 alt="Empire Strikes Back Logo" src="http://www.zephers.com/SW/EmpStrikesBack.gif">
+			</td>
+		</tr>
+		<tr>
+			<td colspan=3 align=center>
+				<font size=6><STRONG>OWN A UNIQUE, ONE-OF-A-KIND PIECE OF STAR-WARS HISTORY!<STRONG></font><br>
+			</td>
+		</tr>
+		<tr  align="center">
+			<td>
+				<IMG width=80 height=60 alt="Willitts Logo" src="http://www.zephers.com/SW/WillittsLogo.jpg">
+			</td>
+
+			<td align=center>
+				<font size=5 color=Firebrick>Exclusively Licensed From<br>Lucas Film Ltd.</font><br><br>
+			</td>
+			<td>
+				<IMG width=80 height=60 alt="Willitts Logo" src="http://www.zephers.com/SW/WillittsLogo.jpg">
+			</td>
+		</tr>
+		<tr  align="center">
+			<td colspan=3 >
+				This Innovative New Collectible is the First to Display an Authentic One of Kind 70mm Film Frame From
+				 the <font color=Firebrick>Star Wars/Empire Strikes Back Movie</font><br>
+				 containing a One of a Kind 70mm Frame in a 7-1/2" x 2-3/4" Diamond Cut, Acrylic,
+				 <br>Mint Collector's Case.
+				 <BR><br>
+				 <font size=5><STRONG>FACT: NO TWO FRAMES ARE ALIKE</STRONG></font><br>
+				 <font size=4>Each Film Frame Is A Unique Original and Will Never Be Reproduced.</font>
+			</td>
+		</tr>
+		<tr>
+			<td colspan=3>
+				Each fully licensed original film frame is sealed and individually serial numbered with identification codes
+				tamper proof holographic seals to prevent fraudulent duplication.
+			</td>
+		</tr>
+		<tr>
+			<td colspan=3>
+				<br>
+				<IMG alt="Empire Strikes Back Light Saber Duel" src="http://www.zephers.com/SW/ESBLightSaberDuel.jpg">
+				<br>
+				<b>#50049 LIGHTSABER DUEL Special Edition:</b><BR>
+				Features the fantastic lightsaber duel between Luke Skywalker and Darth Vader.
+			</td>
+		</tr>
+		<tr>
+			<td colspan=3>
+				This Special Edition #50049 LIGHTSABER DUEL was only available with the Willitts premium package #50707, 
+				which sold in retail shops for $125.00.
+			</td>
+		</tr>
+		<tr>
+			<td colspan=3>
+				<br>
+				<center><font size=5>Special, Internet offer!<br>
+				Order now and receive the above <br>Rare Special Edition #50049 LIGHTSABER DUEL<br>
+				<strong>for this Special Internet price of only <font color=Firebrick>$19.95!</font></strong>
+				<br>
+				<font color=Firebrick>Special Bonus</font> <font color="green">with your order, you will receive
+				  10 Original 1980 Topps Star Wars/Empire Strikes Back Collector Cards </font><font color=Firebrick>
+				  Absultely Free!</font>
+				</font><br>
+				These are Original 1980 Topps Star Wars/Empire Strikes Back Collector Cards
+				<br>from 22 years ago! Not reprints!
+				<br>
+				<br>HURRY! Please, respond now before our limited supplies are exhausted!!
+				<br>Your film cell image may differ from the above sample.
+				</center>
+				<a href="http://www.zephers.com/SW/default.asp?e=jm@netnoteinc.com">Click here!</a>
+			</td>
+		</tr>
+		<tr>
+			<td colspan=3>
+				<br><br><hr><br>
+				You have received this email as an opted-in subscriber, if this is not the case, please click on the following link
+				 to be permanently removed from our database.
+				<a href="mailto:swdelete@nouce1.com">Please take me off this list</a>
+				<br><br>866-667-5399<br>NOUCE 1<br>6822 22nd Avenue North<br>Saint Petersburg, FL 33710-3918<br></FONT>
+			</td>
+		</tr>
+	</table>
+</BODY>
+</HTML>
+
+
+------=_NextPart_434_2562770446087--
+

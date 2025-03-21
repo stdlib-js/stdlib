@@ -1,0 +1,152 @@
+From rpm-list-admin@freshrpms.net  Thu Aug 29 11:37:45 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A351843F99
+	for <jm@localhost>; Thu, 29 Aug 2002 06:37:44 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:37:44 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7TAV8Z08321 for
+    <jm-rpm@jmason.org>; Thu, 29 Aug 2002 11:31:08 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7TAS2J09618; Thu, 29 Aug 2002 12:28:02
+    +0200
+Received: from python (gw01.es3.egwn.net [212.9.66.13]) (authenticated) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g7TARYJ09551 for
+    <rpm-list@freshrpms.net>; Thu, 29 Aug 2002 12:27:35 +0200
+From: Matthias Saou <matthias@egwn.net>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: ALSA (almost) made easy
+Message-Id: <20020829120926.0e6f691e.matthias@egwn.net>
+In-Reply-To: <3D6DED60.7070107@myrealbox.com>
+References: <20020828004215.4bca2588.matthias@rpmforge.net>
+    <1030507320.3214.39.camel@herald.dragonsdawn.net>
+    <20020828100430.378c3856.matthias@rpmforge.net>
+    <1030546780.3214.54.camel@herald.dragonsdawn.net>
+    <20020828112645.B13047@ti19>
+    <1030551945.10627.4.camel@wanderlust.prognet.com>
+    <20020828190006.2200a154.matthias@rpmforge.net>
+    <1030567737.10901.9.camel@bobcat.ods.org>
+    <1030568564.10902.22.camel@bobcat.ods.org>
+    <20020829000606.5906404a.matthias@egwn.net>
+    <1030574318.1651.30.camel@bobcat.ods.org>
+    <20020829005025.160073af.matthias@egwn.net>
+    <3D6DED60.7070107@myrealbox.com>
+Organization: Electronic Group Interactive
+X-Mailer: Sylpheed version 0.8.1claws (GTK+ 1.2.10; i386-redhat-linux)
+Reply-BY: Tue, 24 Jul 2000 19:02:00 +1000
+X-Operating-System: GNU/Linux power!
+X-Message-Flag: Try using a real operating system : GNU/Linux power!
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Thu, 29 Aug 2002 12:09:26 +0200
+Date: Thu, 29 Aug 2002 12:09:26 +0200
+
+Once upon a time, Daniel wrote :
+
+>  > And yes, I accept patches/comments/suggestions about all those spec
+>  > files!
+> 
+> Sure thing :)
+
+Cool :-)
+
+> I've added to the spec some flags to remove OSS and ISA-PNP support at
+> build time if one wishes to, so is's possible to do a
+> 
+> 	rpmbuild --recompile <rpm> --without oss --without isapnp
+
+OK, I'll add this.
+
+> Also, having the kernel compiled by me, I have no kernel-source package
+> installed.  I've added a flag "kernsrc", that also can be used
+> --without, to remove the dependency for kernel-source at build time.  It
+> would be nice to check the correct kernel include files actually exist
+> (/lib/modules/`uname -r`/build/include/linux/*.h), though; however, I'm
+> a beginner in RPM building -- is it possible to BuildRequire for a file
+> not provided by a package at all?  I've googled a bit, and found no way
+> to do that.
+
+Requiring a file that isn't part of an rpm is not possible, no, except
+maybe by stopping the build process if it isn't found... but that's errr...
+ugly!
+And I really think that for people who installed a kernel from sources, the
+easiest is to install the alsa kernel drivers from source too...
+
+> I was also considering adding some sort of flag for the --with-cards
+> option in alsa's ./configure, but don't know how to do that.  Only found
+> out about --without from your first alsa-driver.spec, and existing RPM
+> docs don't help much.
+
+This would be a tricky one since to use the "--with <name>" feature of
+rpmbuild, I think you'd need to add individual handling of each and every
+card :-/
+
+> Oh, and one more thing :).  At first I've installed the first version of
+> alsa-driver for 2.4.18-10, although I don't have that kernel, to supply
+> the dependency for the rest of the alsa rpm's, and compiled the modules
+> from source.  It created the /dev files and all.
+
+That's what the "alsa-driver" is there for, create all the base files
+excluding the kernel drivers. What I would suggest for dependency reasons
+it to install an "alsa-kernel" for the original kernel (you've kept it,
+right? ;-)) and install ALSA modules from source for custom kernels built
+from source.
+
+> Then wanted to make my own rpm for 2.4.19, so now I'm trying to rpmbuild
+> the alsa-kernel package.  Removed all alsa rpms, and tried my spec:
+> 
+> rpmbuild --ba alsa-driver.spec.mine --without oss --without isapnp
+> --without kernsrc
+> 
+> But I get this:
+> 
+> ==[long successful compile snipped]=====================================
+> RPM build errors:
+>       File listed twice: /dev/adsp
+>       File listed twice: /dev/amidi
+>       Installed (but unpackaged) file(s) found:
+>      /etc/makedev.d/00macros
+>      /etc/rc.d/init.d/alsasound
+> ========================================================================
+> 
+> Oh, and I think I've forgot to mention, I'm running beta-null :).
+
+Indeed : The rpm 4.1 snapshot in (null) has a few new features among which
+having the build fail when files are present in the build root but not
+listed in the %files section. I should remove them manually as part of the
+build process... or maybe the new "%exclude /path/to/file" in the %files
+section would do, but I don't know how older versions of rpm would handle
+it. On my (null) build system, I've simply set the variable :
+%_unpackaged_files_terminate_build 0
+
+Matthias
+
+-- 
+Matthias Saou                                World Trade Center
+-------------                                Edificio Norte 4 Planta
+System and Network Engineer                  08039 Barcelona, Spain
+Electronic Group Interactive                 Phone : +34 936 00 23 23
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

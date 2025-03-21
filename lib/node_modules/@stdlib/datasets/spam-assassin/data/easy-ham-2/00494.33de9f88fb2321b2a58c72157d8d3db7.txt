@@ -1,0 +1,51 @@
+From iiu-admin@taint.org  Wed Jul 31 17:10:30 2002
+Return-Path: <iiu-admin@taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 807FE440C8
+	for <jm@localhost>; Wed, 31 Jul 2002 12:10:29 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 31 Jul 2002 17:10:29 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6VG90232573 for
+    <jm-list-admin-iiu@jmason.org>; Wed, 31 Jul 2002 17:09:00 +0100
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6VG8H232539 for
+    <iiu-admin@iiu.taint.org>; Wed, 31 Jul 2002 17:08:17 +0100
+Date: Wed, 31 Jul 2002 17:08:17 +0100
+Message-Id: <20020731160817.32495.49086.Mailman@dogma.slashnull.org>
+Subject: IIU post from emailharvest@email.com requires approval
+From: iiu-admin@taint.org
+To: iiu-admin@taint.org
+X-Ack: no
+X-Beenthere: iiu@iiu.taint.org
+X-Mailman-Version: 2.0.10
+Precedence: bulk
+Sender: iiu-owner@taint.org
+Errors-To: iiu-owner@taint.org
+X-Beenthere: iiu@iiu.taint.org
+List-Unsubscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=unsubscribe>
+List-Id: Irish Internet Users <iiu.iiu.taint.org>
+List-Post: <mailto:iiu@iiu.taint.org>
+List-Help: <mailto:iiu-request@iiu.taint.org?subject=help>
+List-Subscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=subscribe>
+List-Archive: <http://iiu.taint.org/pipermail/iiu/>
+
+As list administrator, your authorization is requested for the
+following mailing list posting:
+
+    List:    IIU@iiu.taint.org
+    From:    emailharvest@email.com
+    Subject: ADV: Harvest lots of E-mail addresses quickly !
+    Reason:  Post by non-member to a members-only list
+
+At your convenience, visit:
+
+    http://iiu.taint.org/mailman/admindb/iiu
+        
+to approve or deny the request.
+
+

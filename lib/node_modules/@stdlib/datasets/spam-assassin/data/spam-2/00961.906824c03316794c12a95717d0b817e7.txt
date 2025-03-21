@@ -1,0 +1,122 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6N6xLhY045980
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Tue, 23 Jul 2002 01:59:21 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6N6xKUx045975
+	for cypherpunks-forward@ds.pro-ns.net; Tue, 23 Jul 2002 01:59:20 -0500 (CDT)
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6N6x8hX045874
+	for <cypherpunks@ds.pro-ns.net>; Tue, 23 Jul 2002 01:59:13 -0500 (CDT)
+	(envelope-from cpunks@ssz.com)
+X-Authentication-Warning: hq.pro-ns.net: Host cpunks@[207.200.56.4] claimed to be einstein.ssz.com
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id CAA01271
+	for cypherpunks@ds.pro-ns.net; Tue, 23 Jul 2002 02:07:37 -0500
+Received: (from mdom@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id CAB01224
+	for cypherpunks-outgoing; Tue, 23 Jul 2002 02:06:12 -0500
+Received: from post.webmailer.de (natwar.webmailer.de [192.67.198.70])
+	by einstein.ssz.com (8.8.8/8.8.8) with ESMTP id CAA01220
+	for <cypherpunks@einstein.ssz.com>; Tue, 23 Jul 2002 02:06:05 -0500
+Received: from gateway.de (pD95009C2.dip.t-dialin.net [217.80.9.194])
+	by post.webmailer.de (8.9.3/8.8.7) with ESMTP id IAA10321;
+	Tue, 23 Jul 2002 08:56:17 +0200 (MEST)
+Received: from smtp-gw-4.msn.com ([194.168.161.197])
+	by gateway.de (8.10.2/8.10.2/SuSE Linux 8.10.0-0.3) with ESMTP id g6N6p5j28893;
+	Tue, 23 Jul 2002 08:51:06 +0200
+X-Authentication-Warning: gateway.de: Host [194.168.161.197] claimed to be smtp-gw-4.msn.com
+Message-ID: <000039a91559$000060f1$000073ac@smtp-gw-4.msn.com>
+To: <Valued.Clients@gateway.de>
+From: "Josie Rosinski" <vnmxchgfjghfd345@msn.com>
+Subject: Fw: Keep it under wraps, but this one works a treat!             25031
+Date: Tue, 23 Jul 2002 01:53:27 -1700
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Sender: owner-cypherpunks@ssz.com
+Precedence: bulk
+Reply-To: cypherpunks@ssz.com
+X-Mailing-List: cypherpunks@ssz.com
+X-Unsubscription-Info: http://einstein.ssz.com/cdr
+X-List-Admin: list@ssz.com
+X-Loop: ssz.com
+X-Acceptable-Languages: English, Russian, German, French, Spanish
+
+<!-- saved from url=3D(0022)http://internet.e-mail -->
+<html>
+<HEAD> 
+<TITLE>creditfix</TITLE> 
+</HEAD> 
+<BODY BGCOLOR=3D#FFFFFF TEXT=3D#000000 LINK=3D#000000 VLINK=3D#000000 ALIN=
+K=3D#000000> 
+<BR> 
+<CENTER> 
+<TABLE WIDTH=3D400 BORDER=3D0 CELLPADDING=3D0 CELLSPACING=3D1 BGCOLOR=3D99=
+9999> 
+<TR> 
+<TD> 
+<TABLE BORDER=3D0 CELLPADDING=3D4 CELLSPACING=3D0 BGCOLOR=3D#FFFFFF BACKGR=
+OUND=3Dhttp://365.sunshinehui.com/creditfix/email/background_arrow.gif WID=
+TH=3D400> 
+<TR> 
+<TD><A HREF=3Dhttp://365.sunshinehui.com/creditfix/?cid=3D1580&mid=3D17600=
+><IMG SRC=3Dhttp://365.sunshinehui.com/creditfix/email/banner_email.gif BO=
+RDER=3D0></A><BR> 
+<IMG SRC=3Dhttp://365.sunshinehui.com/creditfix/email/line.gif><BR><BR> 
+<A HREF=3Dhttp://365.sunshinehui.com/creditfix/?cid=3D1580&mid=3D17600><im=
+g src=3Dhttp://365.sunshinehui.com/creditfix/email/body_email.gif alt=3D""=
+ border=3D"0"></A> 
+<BR> 
+<FONT FACE=3DVerdana SIZE=3D2>Thank You,</FONT><BR> 
+<IMG SRC=3Dhttp://365.sunshinehui.com/creditfix/email/thankyou.gif> 
+<BR> 
+</TD> 
+</TR> 
+<TR> 
+<TD> 
+<IMG SRC=3Dhttp://365.sunshinehui.com/creditfix/email/line.gif><BR><br> 
+<FONT FACE=3DVerdana SIZE=3D1>Your email address was obtained from a purch=
+ased 
+list, Reference # 1580-17600.&nbsp;&nbsp;If you wish to unsubscribe from t=
+his list, please 
+<a href=3D"http://61.172.250.143/remove/remove1.html">Click here</a> and e=
+nter your 
+name into the remove box. If you have previously 
+unsubscribed and are still receiving this message, you may email our 
+<a href=3D"mailto:nospamws@yahoo.com?Subject=3DAbuse Report">Abuse Control=
+ Center</a>, 
+or call 1-888-763-2497, or write us at: NoSpam, 6484 Coral Way, 
+Miami, FL, 33155".</FONT><br> 
+<BR> 
+<IMG SRC=3Dhttp://365.sunshinehui.com/creditfix/email/line.gif><BR> 
+<FONT FACE=3DVerdana SIZE=3D1>&copy; 2002 Web Credit Inc. All Rights Reser=
+ved</FONT><FONT FACE=3D"Verdana" SIZE=3D"1">.</FONT></TD> 
+</TR> 
+</TABLE> 
+</TD> 
+</TR> 
+</TABLE> 
+</CENTER> 
+<BR> 
+</BODY> 
+
+</BODY>
+</HTML>
+
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

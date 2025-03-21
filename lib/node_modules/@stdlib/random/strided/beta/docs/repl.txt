@@ -1,0 +1,175 @@
+
+{{alias}}( N, alpha, sa, beta, sb, out, so[, options] )
+    Fills a strided array with pseudorandom numbers drawn from a beta
+    distribution.
+
+    The `N` and stride parameters determine which elements in the provided
+    strided arrays are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If `N` is less than or equal to `0`, the output strided array is left
+    unchanged.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    alpha: ArrayLikeObject
+        First shape parameter.
+
+    sa: integer
+        Index increment for `alpha`.
+
+    beta: ArrayLikeObject
+        Second shape parameter.
+
+    sb: integer
+        Index increment for `beta`.
+
+    out: ArrayLikeObject
+        Output array.
+
+    so: integer
+        Index increment for `out`.
+
+    options: Object (optional)
+        Options.
+
+    options.prng: Function (optional)
+        Pseudorandom number generator (PRNG) for generating uniformly
+        distributed pseudorandom numbers on the interval `[0,1)`. If provided,
+        the `state` and `seed` options are ignored. In order to seed the
+        underlying pseudorandom number generator, one must seed the provided
+        `prng` (assuming the provided `prng` is seedable).
+
+    options.seed: integer|ArrayLikeObject<integer> (optional)
+        Pseudorandom number generator seed. The seed may be either a positive
+        unsigned 32-bit integer or, for arbitrary length seeds, an array-like
+        object containing unsigned 32-bit integers.
+
+    options.state: Uint32Array (optional)
+        Pseudorandom number generator state. If provided, the `seed` option is
+        ignored.
+
+    options.copy: boolean (optional)
+        Boolean indicating whether to copy a provided pseudorandom number
+        generator state. Setting this option to `false` allows sharing state
+        between two or more pseudorandom number generators. Setting this option
+        to `true` ensures that the underlying generator has exclusive control
+        over its internal state. Default: true.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    // Standard usage:
+    > var a = {{alias:@stdlib/array/linspace}}( 1.0, 5.0, 5 );
+    > var b = {{alias:@stdlib/array/linspace}}( 1.0, 5.0, 5 );
+    > var out = {{alias:@stdlib/array/zeros}}( 5, 'generic' );
+    > {{alias}}( out.length, a, 1, b, 1, out, 1 )
+    [...]
+
+    // Advanced indexing:
+    > a = {{alias:@stdlib/array/linspace}}( 1.0, 5.0, 6 );
+    > b = {{alias:@stdlib/array/linspace}}( 1.0, 5.0, 6 );
+    > out = {{alias:@stdlib/array/zeros}}( 6, 'generic' );
+    > {{alias}}( 3, a, -2, b, 1, out, 1 )
+    [...]
+
+
+{{alias}}.ndarray( N, alpha, sa, oa, beta, sb, ob, out, so, oo[, options] )
+    Fills a strided array with pseudorandom numbers drawn from a beta
+    distribution using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    alpha: ArrayLikeObject
+        First shape parameter.
+
+    sa: integer
+        Index increment for `alpha`.
+
+    oa: integer
+        Starting index for `alpha`.
+
+    beta: ArrayLikeObject
+        Second shape parameter.
+
+    sb: integer
+        Index increment for `beta`.
+
+    ob: integer
+        Starting index for `beta`.
+
+    out: ArrayLikeObject
+        Output array.
+
+    so: integer
+        Index increment for `out`.
+
+    oo: integer
+        Starting index for `out`.
+
+    options: Object (optional)
+        Options.
+
+    options.prng: Function (optional)
+        Pseudorandom number generator (PRNG) for generating uniformly
+        distributed pseudorandom numbers on the interval `[0,1)`. If provided,
+        the `state` and `seed` options are ignored. In order to seed the
+        underlying pseudorandom number generator, one must seed the provided
+        `prng` (assuming the provided `prng` is seedable).
+
+    options.seed: integer|ArrayLikeObject<integer> (optional)
+        Pseudorandom number generator seed. The seed may be either a positive
+        unsigned 32-bit integer or, for arbitrary length seeds, an array-like
+        object containing unsigned 32-bit integers.
+
+    options.state: Uint32Array (optional)
+        Pseudorandom number generator state. If provided, the `seed` option is
+        ignored.
+
+    options.copy: boolean (optional)
+        Boolean indicating whether to copy a provided pseudorandom number
+        generator state. Setting this option to `false` allows sharing state
+        between two or more pseudorandom number generators. Setting this option
+        to `true` ensures that the underlying generator has exclusive control
+        over its internal state. Default: true.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    // Standard usage:
+    > var a = {{alias:@stdlib/array/linspace}}( 1.0, 5.0, 5 );
+    > var b = {{alias:@stdlib/array/linspace}}( 1.0, 5.0, 5 );
+    > var out = {{alias:@stdlib/array/zeros}}( 5, 'generic' );
+    > {{alias}}.ndarray( out.length, a, 1, 0, b, 1, 0, out, 1, 0 )
+    [...]
+
+    // Advanced indexing:
+    > a = {{alias:@stdlib/array/linspace}}( 1.0, 5.0, 6 );
+    > b = {{alias:@stdlib/array/linspace}}( 1.0, 5.0, 6 );
+    > out = {{alias:@stdlib/array/zeros}}( 6, 'generic' );
+    > {{alias}}.ndarray( 3, a, 2, 1, b, -1, b.length-1, out, 1, 0 )
+    [...]
+
+    See Also
+    --------
+

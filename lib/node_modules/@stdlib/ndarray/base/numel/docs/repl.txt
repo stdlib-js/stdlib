@@ -1,0 +1,22 @@
+
+{{alias}}( shape )
+    Returns the number of elements in an array.
+
+    Parameters
+    ----------
+    shape: Array<integer>
+        Array shape.
+
+    Returns
+    -------
+    n: integer
+        Number of elements.
+
+    Examples
+    --------
+    > var n = {{alias}}( [ 3, 3, 3 ] )
+    27
+
+    See Also
+    --------
+

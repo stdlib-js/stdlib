@@ -1,0 +1,23 @@
+
+{{alias}}( str )
+    Converts a string to snake case.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    Returns
+    -------
+    out: string
+        Snake-cased string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'Hello World!' )
+    'hello_world'
+    > out = {{alias}}( 'I am a tiny little teapot' )
+    'i_am_a_tiny_little_teapot'
+
+    See Also
+    --------

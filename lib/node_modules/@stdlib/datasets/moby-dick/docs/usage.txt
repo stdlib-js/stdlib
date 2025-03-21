@@ -1,0 +1,9 @@
+
+Usage: moby-dick [options]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --format fmt          Output format: 'txt' or 'ndjson'.
+

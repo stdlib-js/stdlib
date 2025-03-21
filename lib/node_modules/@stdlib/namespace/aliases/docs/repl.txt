@@ -1,0 +1,24 @@
+
+{{alias}}( [namespace] )
+    Returns a list of standard library aliases.
+
+    Parameters
+    ----------
+    namespace: string (optional)
+        Namespace filter.
+
+    Returns
+    -------
+    out: Array
+        List of aliases.
+
+    Examples
+    --------
+    > var o = {{alias}}()
+    [...]
+    > o = {{alias}}( '@stdlib/math/base/special' )
+    [...]
+
+    See Also
+    --------
+

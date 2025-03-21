@@ -1,0 +1,28 @@
+
+{{alias}}( v )
+    Returns the differential entropy of a Student's t distribution.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `v < 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    v: number
+        Degrees of freedom.
+
+    Returns
+    -------
+    out: number
+        Entropy.
+
+    Examples
+    --------
+    > var v = {{alias}}( 11.0 )
+    ~1.512
+    > v = {{alias}}( 4.5 )
+    ~1.652
+
+    See Also
+    --------
+

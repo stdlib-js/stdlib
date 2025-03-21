@@ -1,0 +1,98 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6MFnHhY081898
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Mon, 22 Jul 2002 10:49:17 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6MFnHXK081891
+	for cypherpunks-forward@ds.pro-ns.net; Mon, 22 Jul 2002 10:49:17 -0500 (CDT)
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6MFlnhX081399
+	for <cypherpunks@ds.pro-ns.net>; Mon, 22 Jul 2002 10:47:55 -0500 (CDT)
+	(envelope-from cpunks@ssz.com)
+X-Authentication-Warning: hq.pro-ns.net: Host cpunks@[207.200.56.4] claimed to be einstein.ssz.com
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id KAA12591
+	for cypherpunks@ds.pro-ns.net; Mon, 22 Jul 2002 10:56:06 -0500
+Received: (from mdom@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id KAA12427
+	for cypherpunks-outgoing; Mon, 22 Jul 2002 10:53:18 -0500
+Received: from 52jsp.com ([61.129.64.146])
+	by einstein.ssz.com (8.8.8/8.8.8) with ESMTP id KAA12364
+	for <cypherpunks@einstein.ssz.com>; Mon, 22 Jul 2002 10:51:52 -0500
+From: 233233@333223.com
+Received: from ME ([210.83.94.193])
+	by 52jsp.com (8.11.6/8.11.6) with SMTP id g6MFZrG00781;
+	Mon, 22 Jul 2002 23:35:54 +0800
+Date: Mon, 22 Jul 2002 23:35:54 +0800
+Message-Id: <200207221535.g6MFZrG00781@52jsp.com>
+Subject: 手机短信息包月卡和短信息群发软件
+X-Priority: 1 (Highest)
+X-Mailer: Microsoft Outlook Express 5.00.2615.200
+MIME-Version: 1.0
+Content-type: multipart/mixed; boundary="#MYBOUNDARY#"
+Sender: owner-cypherpunks@ssz.com
+Precedence: bulk
+Reply-To: cypherpunks@ssz.com
+X-Mailing-List: cypherpunks@ssz.com
+X-Unsubscription-Info: http://einstein.ssz.com/cdr
+X-List-Admin: list@ssz.com
+X-Loop: ssz.com
+X-Acceptable-Languages: English, Russian, German, French, Spanish
+To: undisclosed-recipients:;
+
+
+--#MYBOUNDARY#
+Content-Type: text/html; charset=GB2312
+Content-Transfer-Encoding: base64
+X-MIME-Autoconverted: from 8bit to base64 by hq.pro-ns.net id g6MG9khX090283
+
+PGh0bWw+DQo8aGVhZD4NCjx0aXRsZT5VbnRpdGxlZCBEb2N1bWVudDwvdGl0bGU+DQo8bWV0
+YSBodHRwLWVxdWl2PSJDb250ZW50LVR5cGUiIGNvbnRlbnQ9InRleHQvaHRtbDsgY2hhcnNl
+dD1nYjIzMTIiPg0KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4NCjwhLS0NCi5ib2R5IHsgIGxp
+bmUtaGVpZ2h0OiAyMnB4OyBmb250LXNpemU6IDE0cHh9DQotLT4NCjwvc3R5bGU+DQo8L2hl
+YWQ+DQo8YnI+DQo8dGFibGUgd2lkdGg9IjczJSIgYm9yZGVyPSIwIiBjZWxsc3BhY2luZz0i
+MCIgY2VsbHBhZGRpbmc9IjAiIGFsaWduPSJjZW50ZXIiIGhlaWdodD0iMzk5Ij4NCiAgPHRy
+PiANCiAgICA8dGQgYWxpZ249ImNlbnRlciIgaGVpZ2h0PSIxNyI+Jm5ic3A7PC90ZD4NCiAg
+PC90cj4NCiAgPHRyPiANCiAgICA8dGQgY2xhc3M9ImJvZHkiIGhlaWdodD0iMzk0Ij4gPGZv
+bnQgY29sb3I9IiMzMzMzMzMiPiZuYnNwOyZuYnNwOzwvZm9udD4gDQogICAgICA8cD48Zm9u
+dCBjb2xvcj0iIzMzMzMzMyI+PGI+PGZvbnQgY29sb3I9IiMzMzMzMzMiPjxiPjxmb250IGNv
+bG9yPSIjMzMzMzMzIj48Yj48Zm9udCBjb2xvcj0iIzMzMzMzMyI+PGI+PGZvbnQgY29sb3I9
+IiMzMzMzMzMiPjxiPjxmb250IGNvbG9yPSIjMzMzMzMzIj48Yj48Zm9udCBjb2xvcj0iIzMz
+MzMzMyI+PGI+PGZvbnQgY29sb3I9IiMzMzMzMzMiPjxiPjxmb250IGNvbG9yPSIjMzMzMzMz
+Ij48Yj48L2I+PC9mb250PjwvYj48L2ZvbnQ+PC9iPjwvZm9udD48L2I+PC9mb250PjwvYj48
+L2ZvbnQ+PC9iPjwvZm9udD48L2I+PC9mb250PjwvYj48L2ZvbnQ+PC9iPjwvZm9udD65qSAN
+CiAgICAgICAgyta7+rbM0MXPorD81MK/qLrNtszQxc+iyLq3osjtvP6hozwvcD4NCiAgICAg
+IDxwPjEuIEHA4LbM0MWw/NTCv6ijurD81MK30TIwMDDUqqGjv8nS1Nans9a2zNDFzagyNNCh
+yrHBrND4sru2z7eiy822zNDFz6KjrM7exrW0zs/e1sajrMjVt6LLzcG/1NoxzfLM9dLUyc+h
+ozxicj4NCiAgICAgICAgMi4gQsDgtszQxbD81MK/qKO6sPzUwrfRNTAw1Kqho8jVt6LLzcG/
+zqozMDAwzPXX89PSoaO0y7+o09DGtbTOz97WxqGjt6LLzdK70KHKsbrz0qrNo7Dr0KHKsdTZ
+t6LLzaGjPGJyPg0KICAgICAgICDXoqO60tTJz7eiy83Bv9Kq1Nq2zNDFzai1yLbM0MXIurei
+yO28/tans9bPwrLFxNy077W9tcSho9LUyc/BvcDgv6jOqtLGtq+2zNDFv6ijrLbUt6LN+dLG
+tq/K1rv608O7p7XEtszQxc+isPzUwqOsttS3orj4warNqNPDu6e1xLbM0MXPorrNzai7sMv5
+svrJ+rXEt9HTw7K7sPzUwqGjw7/Vxb+o0OjRur3wMjAw1Kqhozxicj4NCiAgICAgICAgMy4g
+uam2zNDFz6LIureiyO28/qOttszQxc2oo7q/yc/y1ri2qLXYx/i1xMv509DK1rv608O7p7ei
+y822zNDFz6KjrMjtvP7E2rTmyKu5+rj3tdjK1rv6usXC67bOo6y/ydfUtqjK1rv6usXC67XE
+xKnOu7rFt6LLzaOs0rK/ydfUseDK1rv6usXC67K+vfjQ0Leiy82hozwvcD4NCiAgICAgIDxw
+PsGqz7W157uwo7owNTc0o602NTc2MjQ3NCC0q9Xmo7owNTc0o602NTc2MzMwMiDK1rv6o7ox
+MzAwODk4OTA4MDxicj4NCiAgICAgICAgwaogz7UgyMujutDsz8jJ+jxicj4NCiAgICAgICAg
+u+O/7rWlzrujutXjva0gz/PJvSDTytX+vtYgPGJyPg0KICAgICAgICC/qiAmbmJzcDu7p6O6
+z/PJvbmkyczS+NDQINXKusWjujM5MDEzNDAwMDkwMDAwNTU4MjI8YnI+DQogICAgICA8L3A+
+DQogICAgICA8cD48YnI+DQogICAgICA8L3A+DQogICAgPC90ZD4NCiAgPC90cj4NCiAgPHRy
+PiANCiAgICA8dGQ+Jm5ic3A7PC90ZD4NCiAgPC90cj4NCjwvdGFibGU+DQo8YnI+DQo8L2Jv
+ZHk+DQo8L2h0bWw+DQoNCg0K
+--#MYBOUNDARY#--
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

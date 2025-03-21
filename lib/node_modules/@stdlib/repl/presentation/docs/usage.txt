@@ -1,0 +1,26 @@
+
+Usage: stdlib-repl-presentation [options] [<filepath>]
+
+Options:
+
+  -h, --help                    Print this message.
+  -V, --version                 Print the package version.
+      --border-top <str>        Top border. Default: '*'.
+      --border-bottom <str>     Bottom border. Default: '*'.
+      --border-left <str>       Left border. Default: '* '.
+      --border-right <str>      Right border. Default: ' *'.
+      --counter <value>         Show slide counter.
+      --width <width>           Presentation width.
+      --height <height>         Presentation height.
+      --workspace <workspace>   REPL workspace name. Default: presentation.
+      --input-prompt <prompt>   Input prompt. Default: 'In [%d]: '.
+      --output-prompt <prompt>  Output prompt. Default: 'Out[%d]: '.
+      --padding <padding>       Empty lines between commands. Default: 1.
+      --save <filepath>         File to save REPL command history.
+      --logfile <filepath>      File to log REPL commands and printed output.
+      --timeout <timeout>       Milliseconds before terminating a command.
+      --quiet                   Disable printing of REPL logs and diagnostics.
+      --no-autoclear            Disable automatic clearing when rendering.
+      --loop                    Loop a presentation.
+      --watch                   Watch the source presentation file for changes.
+

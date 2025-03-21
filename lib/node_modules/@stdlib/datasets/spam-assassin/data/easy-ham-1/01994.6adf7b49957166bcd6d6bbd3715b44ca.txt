@@ -1,0 +1,27 @@
+From rssfeeds@jmason.org  Thu Sep 26 16:43:19 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 615F916F73
+	for <jm@localhost>; Thu, 26 Sep 2002 16:42:18 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 16:42:18 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8QFVkg25055 for
+    <jm@jmason.org>; Thu, 26 Sep 2002 16:31:46 +0100
+Message-Id: <200209261531.g8QFVkg25055@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: zawodny <rssfeeds@spamassassin.taint.org>
+Subject: New Blog Category: Yahoo
+Date: Thu, 26 Sep 2002 15:31:46 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://jeremy.zawodny.com/blog/archives/000191.html
+Date: 2002-09-25T22:31:04-08:00
+
+I've added a new blog category: Yahoo. Why? Because occasionally I post stuff 
+about work, so I might as well categorize. Plus, some private e-mail has 
+convinced me that it might be a good idea. (You know who you are....
+
+

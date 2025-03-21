@@ -1,0 +1,30 @@
+From rssfeeds@jmason.org  Wed Oct  9 10:52:54 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id A659316F71
+	for <jm@localhost>; Wed,  9 Oct 2002 10:51:56 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 09 Oct 2002 10:51:56 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9980YK25184 for
+    <jm@jmason.org>; Wed, 9 Oct 2002 09:00:34 +0100
+Message-Id: <200210090800.g9980YK25184@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: boingboing <rssfeeds@spamassassin.taint.org>
+Subject: Ink is speech
+Date: Wed, 09 Oct 2002 08:00:34 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://boingboing.net/#85540997
+Date: Not supplied
+
+Ken "Oral Fixation" Starr has a new cause: fighting in the Supreme Court for 
+the First Amendment rights of Soth Carolinans to get and give tattoos. Link[1] 
+Discuss[2] (_Thanks, Jeremy!_)
+
+[1] http://story.news.yahoo.com/news?tmpl=story2&u=/ap/20021007/ap_on_go_su_co/scotus_tattooing&e=1
+[2] http://www.quicktopic.com/boing/H/yAyiDLnD6uew
+
+

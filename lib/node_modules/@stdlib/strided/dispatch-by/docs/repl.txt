@@ -1,0 +1,160 @@
+
+{{alias}}( fcns, types, data, nargs, nin, nout )
+    Returns a strided array function interface which accepts a callback function
+    and performs multiple dispatch.
+
+    Without offsets, a strided array function interface has the following
+    signature:
+
+        f( N, dx, x, sx, dy, y, sy, ..., clbk[, thisArg] )
+
+    where
+
+    - N: number of indexed elements.
+    - dx: data type for `x`.
+    - x: strided array.
+    - sx: index increment for `x`.
+    - dy: data type for `y`.
+    - y: strided array.
+    - sy: index increment for `y`.
+    - ...: additional strided arrays, data types, and associated strides.
+    - clbk: callback function.
+    - thisArg: callback function execution context.
+
+    The number of parameters is derived from `nargs`, the number of input
+    strided arrays is derived from `nin`, and the number of output strided
+    arrays is derived from `nout`.
+
+    Without offsets, the number of parameters must obey the following relation:
+
+        nargs = 3*(nout+nin) + 2
+
+    With offsets, the number of parameters must obey the following relation:
+
+        nargs = 4*(nout+nin) + 2
+
+    With offsets, a strided array function interface has the following
+    signature:
+
+        f( N, dx, x, sx, ox, dy, y, sy, oy, ..., clbk[, thisArg] )
+
+    where
+
+    - N: number of indexed elements.
+    - dx: data type for `x`.
+    - x: strided array.
+    - sx: index increment for `x`.
+    - ox: starting index for `x`.
+    - dy: data type for `y`.
+    - y: strided array.
+    - sy: index increment for `y`.
+    - oy: starting index for `y`.
+    - ...: additional strided arrays and associated data types, strides, and
+    offsets.
+    - clbk: callback function.
+    - thisArg: callback function execution context.
+
+    The choice of which strided array function interface to return depends on
+    the use case. The former is suitable for typed array views; while the latter
+    affords alternative indexing semantics more suitable for n-dimensional
+    arrays (ndarrays).
+
+    Parameters
+    ----------
+    fcns: Function|ArrayLikeObject<Function>
+        List of strided array functions. Without offsets, a strided array
+        function should have the following signature:
+
+            f( arrays, shape, strides, data, clbk, thisArg )
+
+        where
+
+        - arrays: array containing strided input and output arrays.
+        - shape: array containing a single element, the number of indexed
+        elements.
+        - strides: array containing the stride lengths for the strided input and
+        output arrays.
+        - data: strided array function data (e.g., a callback).
+        - clbk: callback function.
+        - thisArg: callback function execution context.
+
+        With offsets, a strided array function should have the following
+        signature:
+
+            f( arrays, shape, strides, offsets, data, clbk, thisArg )
+
+        where
+
+        - offsets: array containing the starting indices (i.e., index offsets)
+        for the strided input and output arrays.
+
+        For convenience, a single strided array function may be provided which
+        will be invoked whenever the strided array argument data types match a
+        sequence of types in `types`. Providing a single strided array function
+        is particularly convenient for the case where, regardless of array data
+        types, traversing arrays remains the same, but the strided array
+        function `data` differs (e.g., callbacks which differ based on the array
+        data types).
+
+    types: ArrayLikeObject
+        One-dimensional list of strided array argument data types.
+
+    data: ArrayLikeObject|null
+        Strided array function data (e.g., callbacks). If `null`, a returned
+        strided array function interface does **not** provide a `data` argument
+        to an invoked strided array function.
+
+    nargs: integer
+        Total number of strided array function interface arguments (including
+        data types, strides, offsets, and the callback function).
+
+    nin: integer
+        Number of input strided arrays.
+
+    nout: integer
+        Number of output strided arrays.
+
+    Returns
+    -------
+    fcn: Function
+        Strided array function interface.
+
+    Examples
+    --------
+    // Define strided array argument data types:
+    > var t = [ 'float64', 'float64', 'float32', 'float32' ];
+
+    // Define a list of strided array function data (callbacks):
+    > var d = [ {{alias:@stdlib/math/base/special/abs}}, {{alias:@stdlib/math/base/special/absf}} ];
+
+    // Create a strided array function interface for applying unary callbacks:
+    > var f = {{alias}}( {{alias:@stdlib/strided/base/unary-by}}, t, d, 8, 1, 1 );
+
+    // Create an input strided array:
+    > var x = new {{alias:@stdlib/array/float64}}( [ -1.0, -2.0, -3.0, -4.0 ] );
+
+    // Create an output strided array:
+    > var y = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+
+    // Compute the element-wise absolute value:
+    > f( x.length, 'float64', x, 1, 'float64', y, 1, {{alias:@stdlib/number/float64/base/identity}} );
+    > y
+    <Float64Array>[ 1.0, 2.0, 3.0, 4.0 ]
+
+    // Create a strided array function interface supporting offsets:
+    > f = {{alias}}( {{alias:@stdlib/strided/base/unary}}.ndarray, t, d, 10, 1, 1 );
+
+    // Create an input strided array:
+    > x = new {{alias:@stdlib/array/float64}}( [ -1.0, -2.0, -3.0, -4.0 ] );
+
+    // Create an output strided array:
+    > y = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+
+    // Compute the element-wise absolute value starting from the third element:
+    > f( 2, 'float64', x, 1, 2, 'float64', y, 1, 2, {{alias:@stdlib/number/float64/base/identity}} );
+    > y
+    <Float64Array>[ 0.0, 0.0, 3.0, 4.0 ]
+
+    See Also
+    --------
+

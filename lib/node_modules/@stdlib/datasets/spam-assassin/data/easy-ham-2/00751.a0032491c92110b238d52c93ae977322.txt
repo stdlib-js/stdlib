@@ -1,0 +1,109 @@
+From fork-admin@xent.com  Thu Aug  1 00:44:28 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9D45A440E6
+	for <jm@localhost>; Wed, 31 Jul 2002 19:44:22 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 01 Aug 2002 00:44:22 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6VNfP213477 for <jm@jmason.org>;
+    Thu, 1 Aug 2002 00:41:27 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 17BD629413A; Wed, 31 Jul 2002 16:34:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from 10-0-0-223.boston.ximian.com (gateway.ximian.com
+    [141.154.95.125]) by xent.com (Postfix) with ESMTP id 9A32B294133 for
+    <FoRK@xent.com>; Wed, 31 Jul 2002 16:33:01 -0700 (PDT)
+Received: (from louie@localhost) by 10-0-0-223.boston.ximian.com
+    (8.11.6/8.11.6) id g6VNWEW03519 for FoRK@xent.com; Wed, 31 Jul 2002
+    19:32:14 -0400
+X-Authentication-Warning: 10-0-0-223.boston.ximian.com: louie set sender
+    to louie@ximian.com using -f
+Subject: Re: RealNames ceases trading
+From: Luis Villa <louie@ximian.com>
+To: FoRK <FoRK@xent.com>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+Organization: 
+Message-Id: <1028157061.3371.4.camel@10-0-0-223.boston.ximian.com>
+MIME-Version: 1.0
+X-Mailer: Ximian Evolution 1.1.0.99 (Preview Release)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 31 Jul 2002 19:32:14 -0400
+
+Um, you've confused RealAudio and RealNames. Bad bits.
+Luis
+
+On Wed, 2002-07-31 at 18:28, Gregory Alan Bolcer wrote:
+> This comment probably goes into better late than never but:
+> I wonder if their decision to open source their code had
+> anything to do with it.
+> 
+> I've read through their asset sheet, but it doesn't say anything
+> about their real assets--their customers.  Anyone know if they
+> have any left?
+> 
+> Greg
+> 
+> Jim Whitehead wrote:
+> 
+> > Via Dave's Scripting News:
+> > 
+> > http://www.theregister.co.uk/content/23/25245.html
+> > 
+> > RealNames Corp., the VC-funded wheeze that promised to short-circuit the DNS
+> > system by doing an exclusive deal with Microsoft, has announced that it will
+> > cease trading as of today.
+> > 
+> > RealNames' proposition was simple, and on the face of it, a no-brainer. Type
+> > a real word or phrase into your browser and it would guide you to your
+> > destination, bypassing all this cumbersome domain name business. A nice
+> > idea, but one based on the assumption that people are fairly stupid, and
+> > couldn't figure out that Comp USA's website might be say, CompUSA.com, and
+> > that even if you mistook whitehouse.gov for whitehouse.org, you'd be unhappy
+> > about the serendipitous diversion.
+> > 
+> > *snip*
+> > 
+> > Microsoft cancelled its contract with RealNames earlier this year, and as a
+> > consequence - the company has no "Plan B" - it's now toast.
+> > 
+> > - Jim
+> > 
+> > 
+> > 
+> > http://xent.com/mailman/listinfo/fork
+> > 
+> > 
+> 
+> 
+> -- 
+> Gregory Alan Bolcer, CTO   | work: +1.949.833.2800 | gbolcer at endeavors.com
+> Endeavors Technology, Inc. | cell: +1.714.928.5476 | http://endeavors.com
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> http://xent.com/mailman/listinfo/fork
+> 
+http://xent.com/mailman/listinfo/fork
+
+

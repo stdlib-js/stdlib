@@ -1,0 +1,67 @@
+From ilug-admin@linux.ie  Wed Aug 21 13:26:21 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7622F43C32
+	for <jm@localhost>; Wed, 21 Aug 2002 08:26:21 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 21 Aug 2002 13:26:21 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7LCPpZ24231 for
+    <jm-ilug@jmason.org>; Wed, 21 Aug 2002 13:25:51 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA29002; Wed, 21 Aug 2002 13:25:07 +0100
+Received: from mail.nuvotem.com (IDENT:root@nuvotem.iol.ie
+    [194.125.3.198]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id NAA28948
+    for <ilug@linux.ie>; Wed, 21 Aug 2002 13:24:58 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host IDENT:root@nuvotem.iol.ie
+    [194.125.3.198] claimed to be mail.nuvotem.com
+Received: from declan.nuvotem.com (IDENT:0@declan [192.168.0.100]) by
+    mail.nuvotem.com (8.12.3/8.12.3) with ESMTP id g7LDPQhr008289 for
+    <ilug@linux.ie>; Wed, 21 Aug 2002 14:25:26 +0100
+Received: from declan.nuvotem.com (IDENT:500@localhost.localdomain
+    [127.0.0.1]) by declan.nuvotem.com (8.12.5/8.12.5) with ESMTP id
+    g7LCS12g008495 for <ilug@linux.ie>; Wed, 21 Aug 2002 13:28:01 +0100
+Received: (from declan@localhost) by declan.nuvotem.com
+    (8.12.5/8.12.5/Submit) id g7LCS0kL008494 for ilug@linux.ie; Wed,
+    21 Aug 2002 13:28:00 +0100
+Date: Wed, 21 Aug 2002 13:28:00 +0100
+From: Declan Grady <Declan.Grady@nuvotem.com>
+To: Irish Linux Users Group <ilug@linux.ie>
+Subject: Re: [ILUG] relating data from 2 ascii files ?
+Message-Id: <20020821122800.GA8467@nuvotem.com>
+Mail-Followup-To: Irish Linux Users Group <ilug@linux.ie>
+References: <20020821112629.GA7858@nuvotem.com> <3D6379C4.3070201@corvil.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <3D6379C4.3070201@corvil.com>
+User-Agent: Mutt/1.4i
+X-Nuvotem-Mailscanner: Found to be clean
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Cheers Padraig.
+
+Exactly what I needed.
+
+I knew I liked linux !!!
+
+Cheers,
+Declan
+
+
+On Wed, Aug 21, 2002 at 12:30:12PM +0100, Padraig Brady mentioned:
+> 
+> man join
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

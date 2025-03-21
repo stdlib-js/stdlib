@@ -1,0 +1,31 @@
+
+{{alias}}( str[, fromIndex] )
+    Returns the next extended grapheme cluster break in a string after a
+    specified position.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    fromIndex: integer (optional)
+        Position. Default: 0.
+
+    Returns
+    -------
+    out: integer
+        Next extended grapheme cluster break position.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'last man standing', 4 )
+    5
+    > out = {{alias}}( 'presidential election', 8 )
+    9
+    > out = {{alias}}( 'अनुच्छेद', 1 )
+    3
+    > out = {{alias}}( '🌷' )
+    -1
+
+    See Also
+    --------

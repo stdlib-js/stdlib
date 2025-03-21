@@ -1,0 +1,32 @@
+
+{{alias}}( ...pt )
+    Creates a string from a sequence of Unicode code points.
+
+    In addition to multiple arguments, the function also supports providing an
+    array-like object as a single argument containing a sequence of Unicode code
+    points.
+
+    Parameters
+    ----------
+    pt: ...integer
+        Sequence of Unicode code points.
+
+    Returns
+    -------
+    out: string
+        Output string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 9731 )
+    '☃'
+    > out = {{alias}}( [ 9731 ] )
+    '☃'
+    > out = {{alias}}( 97, 98, 99 )
+    'abc'
+    > out = {{alias}}( [ 97, 98, 99 ] )
+    'abc'
+
+    See Also
+    --------
+

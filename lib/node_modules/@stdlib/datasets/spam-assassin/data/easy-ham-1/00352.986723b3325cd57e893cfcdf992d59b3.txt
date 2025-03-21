@@ -1,0 +1,57 @@
+From fork-admin@xent.com  Wed Aug 28 18:17:25 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7157043F99
+	for <jm@localhost>; Wed, 28 Aug 2002 13:17:25 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 28 Aug 2002 18:17:25 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7SHBYZ02287 for <jm@jmason.org>;
+    Wed, 28 Aug 2002 18:11:34 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 95A6A294224; Wed, 28 Aug 2002 10:07:10 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from argote.ch (argote.ch [80.65.224.17]) by xent.com (Postfix)
+    with ESMTP id DEE3229421D for <fork@xent.com>; Wed, 28 Aug 2002 10:06:49
+    -0700 (PDT)
+Received: by argote.ch (Postfix, from userid 500) id B53E9C44D;
+    Wed, 28 Aug 2002 18:59:37 +0200 (CEST)
+To: fork@spamassassin.taint.org
+Subject: Re: Java is for kiddies
+Message-Id: <20020828165937.B53E9C44D@argote.ch>
+From: harley@argote.ch (Robert Harley)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 28 Aug 2002 18:59:37 +0200 (CEST)
+
+GLM wrote:
+>And a Java program, due to the extensive class libraries, will weigh
+>in at 10% the number of lines of the equivalent C program.  QED.
+
+Quod erat not demonstrandum at all.
+
+There are massive amounts of libraries for C, Fortran and so on.
+To pick an obvious example., if you want to do linear algebra, then
+Java isn't a serious candidate at all.
+
+Furthermore, plenty of bugs occur in the libraries too, at a lower
+rate due to more users having been bitten by them, but they are much
+harder for you to fix than in your own code.
+
+Why do so many people outside of Sun's marketing department consider
+Java to be "Write Once, Debug Everywhere" ?
+
+R
+

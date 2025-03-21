@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[@inproceedings{id,
+    abstract = {},
+    author = {},
+    booktitle = {},
+    keywords = {},
+    publisher = {},
+    title = {{}},
+    year = {},
+}
+]]></content>
+
+    <!-- Tab trigger to activate the snippet -->
+    <tabTrigger>stdlib.inproceedings</tabTrigger>
+
+    <!-- Scope the tab trigger will be active in -->
+    <scope>text.bibtex</scope>
+
+    <!-- Description to show in the menu -->
+    <description>BibTeX in-proceedings template</description>
+</snippet>

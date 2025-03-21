@@ -1,0 +1,72 @@
+
+{{alias}}( path, data[, options], clbk )
+    Asynchronously appends data to a file.
+
+    Parameters
+    ----------
+    path: string|Buffer|integer
+        Filename or file descriptor.
+
+    data: string|Buffer
+        Data to append.
+
+    options: Object|string (optional)
+        Options. If a string, the value is the encoding.
+
+    options.encoding: string|null (optional)
+        Encoding. Default: 'utf8'.
+
+    options.flag: string (optional)
+        Flag. Default: 'a'.
+
+    options.mode: integer (optional)
+        Mode. Default: 0o666.
+
+    clbk: Function
+        Callback to invoke upon appending data to the file.
+
+    Examples
+    --------
+    > function onAppend( err ) {
+    ...     if ( err ) {
+    ...         console.error( err.message );
+    ...     }
+    ... };
+    > {{alias}}( './beep/boop.txt', 'beep boop', onAppend );
+
+
+{{alias}}.sync( path, data[, options] )
+    Synchronously appends data to a file.
+
+    Parameters
+    ----------
+    path: string|Buffer|integer
+        Filename or file descriptor.
+
+    data: string|Buffer
+        Data to append.
+
+    options: Object|string (optional)
+        Options. If a string, the value is the encoding.
+
+    options.encoding: string|null (optional)
+        Encoding. Default: 'utf8'.
+
+    options.flag: string (optional)
+        Flag. Default: 'a'.
+
+    options.mode: integer (optional)
+        Mode. Default: 0o666.
+
+    Returns
+    -------
+    err: Error|null
+        Error object or null.
+
+    Examples
+    --------
+    > var err = {{alias}}.sync( './beep/boop.txt', 'beep boop' );
+    
+    See Also
+    --------
+

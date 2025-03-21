@@ -1,0 +1,464 @@
+From senews-nov@euromailer.lists.apple.com  Thu Nov 28 11:41:16 2002
+Return-Path: <senews-nov@euromailer.lists.apple.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id CBDDD16F19
+	for <jm@localhost>; Thu, 28 Nov 2002 11:41:08 +0000 (GMT)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 28 Nov 2002 11:41:08 +0000 (GMT)
+Received: from applenews.lists.apple.com (applenews.lists.apple.com
+    [17.254.0.152]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    gAS5BnW20971 for <jm-apple@jmason.org>; Thu, 28 Nov 2002 05:11:50 GMT
+Received: from localhost.localdomain (localhost [127.0.0.1]) by
+    applenews.lists.apple.com (8.11.6/8.11.6) with ESMTP id gAS5CXU11578 ;
+    Wed, 27 Nov 2002 21:12:33 -0800 (PST)
+Date: Wed, 27 Nov 2002 21:12:33 -0800 (PST)
+Message-Id: <200211280512.gAS5CXU11578@applenews.lists.apple.com>
+X-Mailer: STORE-MAILER/0.5 Apple Inc.
+MIME-Version: 1.0
+Reply-To: <email@euro.apple.com>
+To: Apple Store eNews <yyyy-apple@spamassassin.taint.org>
+From: "Apple Store eNews" <senews-nov@euromailer.lists.apple.com>
+Subject: Apple Store eNews : November 2002
+Content-Type: MULTIPART/ALTERNATIVE;
+    BOUNDARY="EG3OZ08L.0DOB2JAQ-euro.apple.com";
+    charset=US-ASCII
+
+--EG3OZ08L.0DOB2JAQ-euro.apple.com
+Content-Type: text/plain; charset="ISO-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+You appear to be using an email application that won't properly display
+the graphical (or HTML) version of our newsletter. Because we want you
+to enjoy reading Apple Store eNews, we recommend that you visit the
+following  web page where it has been posted :
+http://registration.euro.apple.com/asnews/november2002/ie/
+
+--EG3OZ08L.0DOB2JAQ-euro.apple.com
+Content-type: text/html
+Content-disposition: inline
+Content-transfer-encoding: 7BIT
+
+
+<html>
+<head>
+<title>Apple Store eNews ::: November 2002 </title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="http://registration.euro.apple.com/asnews/subscribe/style.css" type="text/css">
+<style type="text/css">
+<!--
+a:link {  font-family: Geneva, Arial, Helvetica, sans-serif; font-size: 9px; color: #0066FF}
+a:hover {  font-family: Geneva, Arial, Helvetica, sans-serif; font-size: 9px; color: #CC0000}
+a:visited {  font-family: Geneva, Arial, Helvetica, sans-serif; font-size: 9px; color: #767575}
+A.TOPAPPS                  {text-decoration: none; color:#000000; font-size: 9px; font-family: Geneva, Arial, Helvetica, sans-serif }
+A:hover.TOPAPPS	   		{text-decoration: none; color:#0066FF; font-size: 9px; font-family: Geneva, Arial, Helvetica, sans-serif }
+.searchbox {  font-family: Geneva, Arial, Helvetica, sans-serif; font-size: 9px}
+-->
+</style>
+<BODY BGCOLOR="#ffffff" LEFTMARGIN="0" TOPMARGIN="0" MARGINWIDTH="0" MARGINHEIGHT="0">
+
+  
+  
+<a name="top"></a><!--startmsg--><br>
+<table width="598" border="0" cellspacing="0" cellpadding="0" align="center">
+	<tr>
+		<td align="center"><font size="1" face="Geneva, Arial, Helvetica, sans-serif">If this message does not display correctly, <A HREF="http://www.komtools.net/tracker_court/routage.fdml?F=asenews-november&D=http%3A%2F%2Femail.euro.apple.com%2Fstore%2Fasnews%2Fnovember2002%2Fie%2F&P=ie_display">Click here</A></font></td>
+	<tr>
+</table><!--endmsg-->
+<br>
+<table width="598" border="0" cellspacing="0" cellpadding="0" align="center">
+  <!--Start Shell Guide -->
+  <tr> 
+	<td width="1" height="1"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif"></td>
+	<td width="596" height="1"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif"></td>
+	<td width="1" height="1"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif"></td>
+  </tr>
+  <!--End Shell Guide -->
+  <!--Start Banner Span-->
+  <tr> 
+	<td colspan="3" width="598" background="http://email.euro.apple.com/store/asnews/november2002/ie/images/bg_bug.gif"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/store_cap.jpg" width="598" height="92" border="0" usemap="#top_cap_map" alt="Apple Store eNews"></td>
+  </tr>
+  <!--End Banner Span-->
+  <!--Start Meat & Potatoes-->
+  <tr> 
+	<td width="1" background="http://email.euro.apple.com/store/asnews/november2002/ie/images/grey_dot.gif" NOWRAP><IMG SRC="http://email.euro.apple.com/store/asnews/november2002/ie/images/grey_dot.gif" HEIGHT="1" WIDTH="1"></td>
+	<td> <a name="story1"></a><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif" width="596" height="10"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif" width="0" height="0"> 
+	  <table width="596" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+		  <td width="13"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif" width="13" height="1"></td>
+		  <td width="420" valign="top"> 
+			<table width="420" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td><a href="#top"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/title1.gif" width="420" height="32" border="0" alt="The SuperDrive to go"></a></td>
+			  </tr>
+			  <tr>
+				<td><A HREF="http://www.komtools.net/tracker_court/routage.fdml?F=asenews-november&D=http%3A%2F%2Fstore.apple.com%2FApple%2FWebObjects%2Firlstore%3Ffamily%3DPowerBook&P=ie_gStory1"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/illustr1.jpg" align="left" alt="illustr1" border="0"></A><font size="1" face="Arial, Geneva, Helvetica, sans-serif">The top-of-the-line Titanium PowerBook G4 now comes with a 1GHz 
+G4 processor and a DVD-burning SuperDrive. To glimpse its power, 
+just imagine a movie studio with all you need to 
+go from raw footage to completely finished DVDs. Now shrink 
+that studio down into a one-inch thin, ultra light package 
+with excellent battery life and a terrific mega-wide 15.2-inch (diagonal) 
+screen driven by a Mobility Radeon 9000 graphics card with 
+64MB of DDR SDRAM&#151;all for just 3.992 Euro inc VAT. The bottom line? 
+The portable of choice for truly demanding users just became 
+an even better choice. <br>
+				  </font></td>
+			  </tr>
+			</table>
+		    <table width="420" border="0" cellspacing="0" cellpadding="0">
+			  <tr> 
+				<td><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif" width="310" height="1"></td>
+				<td width="110" align="right"><A HREF="http://www.komtools.net/tracker_court/routage.fdml?F=asenews-november&D=http%3A%2F%2Fstore.apple.com%2FApple%2FWebObjects%2Firlstore%3Ffamily%3DPowerBook&P=ie_gStory1"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/learn_more.gif" width="104" height="28" border="0" alt="Learn More"></a></td>
+			  </tr>
+			  <tr> 
+				<td colspan="2"><a name="story2"></a><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/horizontal_line.gif" width="420" height="13"></td>
+			  </tr>
+			</table>
+		    <table width="420" border="0" cellspacing="0" cellpadding="0">
+			  <tr> 
+				<td><a href="#top"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/title2.gif" width="420" height="32" border="0" alt="The most affordable Mac portable ever"></a></td>
+			  </tr>
+			  <tr> 
+				<td><A HREF="http://www.komtools.net/tracker_court/routage.fdml?F=asenews-november&D=http%3A%2F%2Fstore.apple.com%2FApple%2FWebObjects%2Firlstore%3Ffamily%3DiBook&P=ie_gStory2"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/illustr2.jpg" align="left" alt="illustr2" border="0"></A><font size="1" face="Arial, Geneva, Helvetica, sans-serif">The iBook is the perfect holiday gift for your favourite 
+student, portable user, or anyone in need of the ultimate 
+in light, compact, portable computing. The battery lasts as long 
+as 5 hours between charges on the 12.1-inch (diagonal) display 
+model and as long as 6 hours on the 14.1-inch 
+(diagonal) model. The high-resolution displays on both models are outstanding, 
+and it comes out of the box with all the 
+hardware features and software you need to plug directly into 
+everything from your digital camera to the Internet. Altogether it&#146;s 
+a no compromises, &#147;your life to go&#148; marvel, and now 
+it&#146;s even faster (up to 800MHz) and comes with a 
+Mobility Radeon 7500 graphics card that can contain up to 
+32MB of SDRAM. With pricing starting as low as 1.330 Euro inc VAT, 
+there&#146;s never been a better time to buy.<br>
+				  </font></td>
+			  </tr>
+			</table>
+			<table width="420" border="0" cellspacing="0" cellpadding="0">
+			  <tr> 
+				<td><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif" width="310" height="1"></td>
+				<td width="110" align="right"><A HREF="http://www.komtools.net/tracker_court/routage.fdml?F=asenews-november&D=http%3A%2F%2Fstore.apple.com%2FApple%2FWebObjects%2Firlstore%3Ffamily%3DiBook&P=ie_gStory2"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/learn_more.gif" width="104" height="28" border="0" alt="Learn More"></a></td>
+			  </tr>
+			  <tr> 
+				<td colspan="2"><a name="story3"></a><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/horizontal_line.gif" width="420" height="13"></td>
+			  </tr>
+			</table>
+		    <table width="420" border="0" cellspacing="0" cellpadding="0">
+			  <tr> 
+				<td><a href="#top"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/title3.gif" width="420" height="32" border="0" alt="A carrying case for the first 100 Zire purchasers"></a></td>
+			  </tr>
+			  <tr> 
+				<td><A HREF="http://www.komtools.net/tracker_court/routage.fdml?F=asenews-november&D=http%3A%2F%2Fstore.apple.com%2FApple%2FWebObjects%2Firlstore%3FproductLearnMore%3DSB5447&P=ie_gStory3"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/illustr3.jpg" align="left" alt="illustr3" border="0"></A><font size="1" face="Arial, Geneva, Helvetica, sans-serif">Stay organised with less effort. Use the Palm Zire handheld 
+to keep events, appointments, names and phone numbers all in 
+one place so you'll always know where to find them. 
+And it's small and light, so you can take your 
+information with you wherever you go. You can use iSync 
+to synchronise your Address Book contacts and iCal calendar and 
+To Do information on your Mac with the contacts and 
+calendar on your Palm Zire. And if you&#146;re of of 
+the first 100 to order, a carrying case will be 
+included with your Palm Zire.<br>
+				  </font></td>
+			  </tr>
+			</table>
+			<table width="420" border="0" cellspacing="0" cellpadding="0">
+			  <tr> 
+				<td><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif" width="310" height="1"></td>
+				<td width="110" align="right"><A HREF="http://www.komtools.net/tracker_court/routage.fdml?F=asenews-november&D=http%3A%2F%2Fstore.apple.com%2FApple%2FWebObjects%2Firlstore%3FproductLearnMore%3DSB5447&P=ie_gStory3"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/learn_more.gif" width="104" height="28" border="0" alt="Learn More"></a></td>
+			  </tr>
+			  <tr> 
+				<td colspan="2"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/horizontal_line.gif" width="420" height="13"></td>
+			  </tr>
+			</table>
+		    <a name="spotlight"></a><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif" width="420" height="10"> 
+			<table width="420" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td width="200" valign="top">
+				  <table width="200" border="0" cellspacing="0" cellpadding="0">
+					<tr> 
+					  <td align="center" valign="top"><a href="#top"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/title4.gif" width="198" height="48" border="0" alt="5 DVD-R"></a></td>
+					</tr>
+					<tr>
+					  <td align="center" valign="top"><A HREF="http://www.komtools.net/tracker_court/routage.fdml?F=asenews-november&D=http%3A%2F%2Fstore.apple.com%2FApple%2FWebObjects%2Firlstore%3FproductLearnMore%3DM8405&P=ie_g3part1"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/illustr4.jpg" alt="illustr4" border="0"></A></td>
+					</tr>
+					<tr> 
+					  <td align="center" valign="top"><font size="1" face="Arial, Geneva, Helvetica, sans-serif">The ideal media for the superdrive at an amazing price. 
+Use iDVD and DVD Studio Pro to store your creations 
+on these 4.7 GB discs.<br>
+						<br>
+						</font></td>
+					</tr>
+					</table>
+				</td>
+				<td width="10"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif" width="10" height="1"></td>
+				<td background="http://email.euro.apple.com/store/asnews/november2002/ie/images/vertical_line.gif" width="1" valign="top"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/vertical_line.gif" width="1" height="8"></td>
+				<td width="10"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif" width="10" height="1"></td>
+				<td width="199" valign="top">
+				  <table width="199" border="0" cellspacing="0" cellpadding="0">
+					<tr> 
+					  <td align="center" valign="top"><a href="#top"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/title5.gif" width="198" height="48" border="0" alt="Unibrain Fire-i"></a></td>
+					</tr>
+					<tr>
+					  <td align="center" valign="top"><A HREF="http://www.komtools.net/tracker_court/routage.fdml?F=asenews-november&D=http%3A%2F%2Fstore.apple.com%2FApple%2FWebObjects%2Firlstore%3FproductLearnMore%3DT4791&P=ie_g3part2"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/illustr5.jpg" alt="illustr5" border="0"></A></td>
+					</tr>
+					<tr> 
+					  <td align="center" valign="top"><font size="1" face="Arial, Geneva, Helvetica, sans-serif">Enjoy uncompromised quality for video conferencing. No driver needed with 
+Mac OS X v.10.2 and QuickTime Broadcaster.<br>
+						<br>
+						</font></td>
+					</tr>
+					</table>
+				</td>
+			  </tr>
+			</table>
+		    <table width="420" border="0" cellspacing="0" cellpadding="0">
+			  <tr> 
+				<td width="200" align="center"><table width="180" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+					  <td align="center"><A HREF="http://www.komtools.net/tracker_court/routage.fdml?F=asenews-november&D=http%3A%2F%2Fstore.apple.com%2FApple%2FWebObjects%2Firlstore%3FproductLearnMore%3DM8405&P=ie_g3part1"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/learn_more.gif" width="104" height="28" border="0" alt="Learn More"></a></td>
+					</tr>
+				  </table>
+					  <br><font size="1" face="Arial, Geneva, Helvetica, sans-serif"><b>35 Euro inc VAT</b></font></td>
+				<td width="10"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif" width="10" height="1"></td>
+				<td background="http://email.euro.apple.com/store/asnews/november2002/ie/images/vertical_line.gif" width="1" valign="top"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/vertical_line.gif" width="1" height="8"></td>
+				<td width="10"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif" width="10" height="1"></td>
+				<td width="199" align="center"><table width="180" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+					  <td align="center"><A HREF="http://www.komtools.net/tracker_court/routage.fdml?F=asenews-november&D=http%3A%2F%2Fstore.apple.com%2FApple%2FWebObjects%2Firlstore%3FproductLearnMore%3DT4791&P=ie_g3part2"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/learn_more.gif" width="104" height="28" border="0" alt="Learn More"></a></td>
+					</tr>
+				  </table>
+					  <br><font size="1" face="Arial, Geneva, Helvetica, sans-serif"><b>129 Euro inc VAT</b></font></td>
+			  </tr>
+			</table>
+		  </td>
+		  <td width="13"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif" width="13" height="1"></td>
+		  <td width="140" valign="top"> 
+			<table width="140" border="0" cellspacing="0" cellpadding="0">
+			  <tr> 
+				<td colspan="3"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/whatsnew.gif" width="140" height="23"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif" width="0" height="0"></td>
+			  </tr>
+			  <tr> 
+				<td width="3" background="http://email.euro.apple.com/store/asnews/november2002/ie/images/table_left.gif"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/table_left.gif" width="3" height="3"></td>
+				<td width="134"> 
+				  <table width="134" border="0" cellspacing="0" cellpadding="0">
+					<tr> 
+					  <td colspan="2" valign="top"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif" width="134" height="5"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif" width="0" height="0"></td>
+					</tr>
+					<tr> 
+					  <td width="19" valign="top"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/arrow.gif" width="19" height="14"></td>
+					  <td valign="top" width="115"><font face="Arial, Geneva, Helvetica, sans-serif" size="1"><a href="#story1" class="TOPAPPS">New PowerBook</a></font></td>
+					</tr>
+					<tr> 
+					  <td valign="top"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/arrow.gif" width="19" height="14"></td>
+					  <td valign="top"><font face="Arial, Geneva, Helvetica, sans-serif" size="1"><a href="#story2" class="TOPAPPS">New iBook</a></font></td>
+					</tr>
+					<tr> 
+					  <td valign="top"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/arrow.gif" width="19" height="14"></td>
+					  <td valign="top"><font face="Arial, Geneva, Helvetica, sans-serif" size="1"><a href="#story3" class="TOPAPPS">Palm Zire Offer</a></font></td>
+					</tr>
+					<tr> 
+					  <td valign="top"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/arrow.gif" width="19" height="14"></td>
+					  <td valign="top"><font size="1" face="Arial, Geneva, Helvetica, sans-serif"><a href="#spotlight" class="TOPAPPS">5 DVD-R Media Pack</a></font></td>
+					</tr>
+					<tr> 
+					  <td valign="top"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/arrow.gif" width="19" height="14"></td>
+					  <td valign="top"><font size="1" face="Arial, Geneva, Helvetica, sans-serif"><a href="#spotlight" class="TOPAPPS">Fire-i FireWire Webcam</a></font></td>
+					</tr>
+				  </table>
+				  <img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif" width="134" height="3"></td>
+				<td width="3" background="http://email.euro.apple.com/store/asnews/november2002/ie/images/table_right.gif"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/table_right.gif" width="3" height="3"></td>
+			  </tr>
+			  <tr> 
+				<td colspan="3"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/search.gif" width="140" height="17"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif" width="0" height="0"></td>
+			  </tr>
+			  <tr> 
+				<td width="3" background="http://email.euro.apple.com/store/asnews/november2002/ie/images/table_left.gif"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/table_left.gif" width="3" height="3"></td>
+				<td> 
+				  <table width="134" border="0" cellspacing="0" cellpadding="0">
+					<tr> 
+					  <form action="http://store.apple.com/Apple/WebObjects/irlstore">
+						<td><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif" width="3" height="1"> 
+						  <input type="text" name="jknr" size="12" maxlength="30" class="searchbox"><input type="hidden" name="cat" value="All">
+						</td>
+						<td width="30" height="26"> 
+						  <input type="image" border="0" src="http://email.euro.apple.com/store/asnews/november2002/ie/images/search_button.gif" ONFOCUS="this.blur();">
+						</td>
+					  </form>
+					</tr>
+				  </table>
+				</td>
+				<td width="3" background="http://email.euro.apple.com/store/asnews/november2002/ie/images/table_right.gif"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/table_right.gif" width="3" height="3"></td>
+			  </tr>
+			  <tr> 
+				<td colspan="3"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/hotdeals.gif" width="140" height="23"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif" width="0" height="0"></td>
+			  </tr>
+			  <tr> 
+				<td colspan="3"><a href="http://www.komtools.net/tracker_court/routage.fdml?F=asenews-november&D=http%3A%2F%2Fwww.apple.com%2Fie%2Fpromo%2Foffice%2F&P=ie_sticker1"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/promo_office.gif" width="140" border="0">
+</a><a href="http://www.komtools.net/tracker_court/routage.fdml?F=asenews-november&D=http%3A%2F%2Fpromo.euro.apple.com%2Fpromo%2Fdigital%5Fsouvenirs%2Fuk%2F&P=ie_sticker2"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/promo_nikon.gif" width="140" border="0">
+</a>
+				<a href="http://www.komtools.net/tracker_court/routage.fdml?F=asenews-november&D=http%3A%2F%2Fpromo.euro.apple.com%2Fpromo%2Fchristmaspack%2Fie%2Findex.html&P=ie_sticker3"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/promo_christmaspack.gif" width="140" border="0">
+</a></td>
+			  </tr>
+			  <tr> 
+				<td colspan="3"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/top_apps.gif" width="140"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif" width="0" height="0"></td>
+			  </tr>
+			  <tr> 
+				<td width="3" background="http://email.euro.apple.com/store/asnews/november2002/ie/images/table_left.gif"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/table_left.gif" width="3" height="3"></td>
+				<td> 
+				  <table width="134" border="0" cellspacing="0" cellpadding="0">
+					<tr> 
+					  <td colspan="2"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif" width="134" height="5"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif" width="0" height="0"></td>
+					</tr>
+					<tr> 
+					  <td width="19"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/square.gif" width="19" height="8"></td>
+					  <td width="115" class="topapps"><A HREF="http://www.komtools.net/tracker_court/routage.fdml?F=asenews-november&D=http%3A%2F%2Fstore.apple.com%2FApple%2FWebObjects%2Firlstore%3FproductLearnMore%3DM8433&P=ie_gMacApp1"><font face="Arial, Geneva, Helvetica, sans-serif" size="1">Battery Crystal iBook 12.1&#148;</font></a></td>
+					</tr>
+					<tr> 
+					  <td><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/square.gif" width="19" height="8"></td>
+					  <td><A HREF="http://www.komtools.net/tracker_court/routage.fdml?F=asenews-november&D=http%3A%2F%2Fstore.apple.com%2FApple%2FWebObjects%2Firlstore%3FproductLearnMore%3DM8956&P=ie_gMacApp2"><font face="Arial, Geneva, Helvetica, sans-serif" size="1">Battery iBook 12.1&#148;</font></a></td>
+					</tr>
+					<tr> 
+					  <td><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/square.gif" width="19" height="8"></td>
+					  <td><A HREF="http://www.komtools.net/tracker_court/routage.fdml?F=asenews-november&D=http%3A%2F%2Fstore.apple.com%2FApple%2FWebObjects%2Firlstore%3FproductLearnMore%3DM8665&P=ie_gMacApp3"><font face="Arial, Geneva, Helvetica, sans-serif" size="1">Battery iBook 14&#148;</font></a></td>
+					</tr>
+					<tr> 
+					  <td><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/square.gif" width="19" height="8"></td>
+					  <td><A HREF="http://www.komtools.net/tracker_court/routage.fdml?F=asenews-november&D=http%3A%2F%2Fstore.apple.com%2FApple%2FWebObjects%2Firlstore%3FproductLearnMore%3DM8244&P=ie_gMacApp4"><font face="Arial, Geneva, Helvetica, sans-serif" size="1">Battery PowerBook</font></a></td>
+					</tr>
+					<tr> 
+					  <td><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/square.gif" width="19" height="8"></td>
+					  <td><A HREF="http://www.komtools.net/tracker_court/routage.fdml?F=asenews-november&D=http%3A%2F%2Fstore.apple.com%2FApple%2FWebObjects%2Firlstore%3FproductLearnMore%3DM8943&P=ie_gMacApp5"><font face="Arial, Geneva, Helvetica, sans-serif" size="1">Power Adaptor</font></a></td>
+					</tr>
+					<tr> 
+					  <td><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/square.gif" width="19" height="8"></td>
+					  <td><A HREF="http://www.komtools.net/tracker_court/routage.fdml?F=asenews-november&D=http%3A%2F%2Fstore.apple.com%2FApple%2FWebObjects%2Firlstore%3FproductLearnMore%3DM8661&P=ie_gMacApp6"><font face="Arial, Geneva, Helvetica, sans-serif" size="1">Display Adaptor</font></a></td>
+					</tr>
+					<tr> 
+					  <td><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/square.gif" width="19" height="8"></td>
+					  <td><A HREF="http://www.komtools.net/tracker_court/routage.fdml?F=asenews-november&D=http%3A%2F%2Fstore.apple.com%2FApple%2FWebObjects%2Firlstore%3FproductLearnMore%3DT4843&P=ie_gMacApp7"><font face="Arial, Geneva, Helvetica, sans-serif" size="1">64MB Handydrive</font></a></td>
+					</tr>
+					<tr>
+					  <td><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/square.gif" width="19" height="8"></td>
+					  <td><A HREF="http://www.komtools.net/tracker_court/routage.fdml?F=asenews-november&D=http%3A%2F%2Fstore.apple.com%2FApple%2FWebObjects%2Firlstore%3Ffamily%3DiPod&P=ie_gMacApp8"><font face="Arial, Geneva, Helvetica, sans-serif" size="1">iPod</font></a></td>
+					</tr>					
+					<tr>
+					  <td><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/square.gif" width="19" height="8"></td>
+					  <td><A HREF="http://www.komtools.net/tracker_court/routage.fdml?F=asenews-november&D=http%3A%2F%2Fstore.apple.com%2FApple%2FWebObjects%2Firlstore%3Ffamily%3DAccessories&P=ie_gMacApp9"><font face="Arial, Geneva, Helvetica, sans-serif" size="1">More Accessories</font></a></td>
+					</tr>
+					
+				  </table>
+				  <img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif" width="134" height="7"></td>
+				<td width="3" background="http://email.euro.apple.com/store/asnews/november2002/ie/images/table_right.gif"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/table_right.gif" width="3" height="3"></td>
+			  </tr>
+			  <tr> 
+				<td colspan="3"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/sep-bottom.gif"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif" width="0" height="0"></td>
+			  </tr>
+			  <tr> 
+				<td colspan="3">
+				</td>
+			  </tr>
+			</table>
+		  </td>
+		  <td><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif" width="10" height="1"></td>
+		</tr>
+	  </table>
+	  <img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif" width="596" height="10"><br>
+	</td>
+	<td width="1" background="http://email.euro.apple.com/store/asnews/november2002/ie/images/grey_dot.gif" NOWRAP><IMG SRC="http://email.euro.apple.com/store/asnews/november2002/ie/images/grey_dot.gif" HEIGHT="1" WIDTH="1"></td>
+  </tr>
+  <!--End Meat & Potatoes-->
+  <!--Start Cap Span-->
+  <tr> 
+	<td colspan="3"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/bottom_cap.gif" width="598" height="14"></td>
+  </tr>
+  <!--End Cap Span-->
+  <!--Start Shell Guide -->
+  <tr> 
+	<td width="1" height="1"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif"></td>
+	<td width="596" height="1"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif"></td>
+	<td width="1" height="1"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif"></td>
+  </tr>
+  <!--End Shell Guide -->
+</table>
+<!--START Ts and Cs Section--><br>
+<br>
+	<table width="598" border="0" cellspacing="0" cellpadding="0" align="center">
+	<!--Start Shell Guide -->
+		<tr>
+			<td width="1" height="1"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif"></td>
+			<td width="5" height="1"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif"></td>
+			<td width="586" height="1"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif"></td>
+			<td width="5" height="1"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif"></td>
+			<td width="1" height="1"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif"></td>
+		</tr>
+	<!--End Shell Guide -->
+	<!--Start Banner Span-->
+		<tr>
+			<td colspan="5" background="http://email.euro.apple.com/store/asnews/november2002/ie/images/bg_bug.gif"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/top_cap_blank.gif" width="598" height="13"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif" width="0" height="0"></td>
+		</tr>
+	<!--End Banner Span-->
+	<!--Start Ts and Cs-->
+		<tr>
+			<td width="1" background="http://email.euro.apple.com/store/asnews/november2002/ie/images/grey_dot.gif" NOWRAP><IMG SRC="http://email.euro.apple.com/store/asnews/november2002/ie/images/grey_dot.gif" HEIGHT="1" WIDTH="1"></td>
+			<td width="5" NOWRAP></td>
+			<td width="586" BGCOLOR="#FFFFFF" ALIGN="center"><IMG SRC="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif" HEIGHT="1" WIDTH="586">
+<FONT SIZE="1" face="Arial, Geneva, Helvetica, sans-serif"><BLOCKQUOTE>Apple Store eNews 
+		is a free, monthly, subscription-based email publication from Apple. If 
+		you'd prefer not to receive the newsletter anymore, click the &quot;Unsubscribe&quot; 
+		link below and update your profile or send an eMail reply with &quot;Unsubscribe&quot; 
+		in the subject line of the email reply.<br>
+		<br>Some products or promotions are not available in all countries. Visit your local Apple Store or call 1800 92 38 98 for more information. Prices are estimated retail prices and are listed in local currencies including VAT. Product specifications are subject to change.<br><br>
+Apple does not make any representation about the features or functionality of non-Apple products. Any questions or requests for support relating to non-Apple products should be addressed to the manufacturer. Support line and/or support web site are mentioned in the documentation enclosed with the product.<br>
+		<br>
+		*iTunes software may be used to reproduce materials. It is licensed to 
+		you only for reproduction of non-copyrighted materials, materials in which 
+		you own the copyright, or materials you are authorized or legally permitted 
+		to reproduce. <br>
+		<br>
+		<img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/white_apple.gif" width="25" height="31"><br>
+		<BR>
+		Copyright &#169; 2002 Apple Computer Inc. <A HREF="http://www.apple.com/uk/legal">All 
+		Rights Reserved</A>.<br>
+		<a href="http://registration.euro.apple.com/applenews/uk/subscribe">Subscribe</a> 
+		/ <a href="http://registration.euro.apple.com/applenews/uk/change">Change 
+		Address</a> / <a href="http://registration.euro.apple.com/applenews/uk/unsubscribe">Unsubscribe</a> 
+		/ <a href="http://www.apple.com/uk/legal/privacy/">Apple Privacy Policy</a> 
+		/ <a href="http://store.apple.com/Catalog/uk/Images/salespolicies.html">Store 
+		Policies</A></BLOCKQUOTE></font>
+	</td>
+			<td width="5" NOWRAP></td>
+			<td width="1" background="http://email.euro.apple.com/store/asnews/november2002/ie/images/grey_dot.gif" NOWRAP><IMG SRC="http://email.euro.apple.com/store/asnews/november2002/ie/images/grey_dot.gif" HEIGHT="1" WIDTH="1"></td>
+		</tr>
+	<!--End Ts and Cs-->
+	<!--Start Cap Span-->
+		<tr>
+			<td colspan="5"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/bottom_cap.gif" width="598" height="13"></td>
+		</tr>
+	<!--End Cap Span-->
+	<!--Start Shell Guide -->
+		<tr>
+			<td width="1" height="1"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif"></td>
+			<td width="5" height="1"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif"></td>
+			<td width="586" height="1"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif"></td>
+			<td width="5" height="1"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif"></td>
+			<td width="1" height="1"><img src="http://email.euro.apple.com/store/asnews/november2002/ie/images/spacer.gif"></td>
+		</tr>
+	<!--End Shell Guide -->
+	</table><map name="top_cap_map"> 
+		<area href="http://www.komtools.net/tracker_court/routage.fdml?F=asenews-november&D=http://www.apple.com/uk/&P=ie_header1" shape="rect" coords="3,66,147,88">
+		<area href="mailto:?body=http://registration.euro.apple.com/asnews/subscribe/current/ie/" shape="rect" coords="152,66,296,88">
+		<area href="http://www.komtools.net/tracker_court/routage.fdml?F=asenews-november&D=http://promo.euro.apple.com/promo/10_reasons/uk/&P=ie_header3" shape="rect" coords="301,66,446,88">
+		<area href="http://www.komtools.net/tracker_court/routage.fdml?F=asenews-november&D=http://www.apple.com/irelandstore/&P=ie_header4" shape="rect" coords="451,66,595,88">
+	  </map>
+	<br>
+<!--END Ts and Cs-->
+<img src="http://www.komtools.net/spacer/spacer.fdml?F=asenews-november" width="1" height="1">
+</body>
+</html>
+
+--EG3OZ08L.0DOB2JAQ-euro.apple.com--
+
+

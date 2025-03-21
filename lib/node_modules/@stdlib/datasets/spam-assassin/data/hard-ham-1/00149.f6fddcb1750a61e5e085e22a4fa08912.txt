@@ -1,0 +1,146 @@
+Return-Path: <owner-mgi_englishlist@matrox.com>
+Received: (qmail 3737 invoked by alias); 23 Jul 2002 19:33:04 -0000
+Received: (qmail 3727 invoked by uid 82); 23 Jul 2002 19:33:04 -0000
+Received: from owner-mgi_englishlist@matrox.com by mailhost with qmail-scanner-1.00 (uvscan: v4.1.40/v4213. . Clean. Processed in 0.742928 secs); 23 Jul 2002 19:33:04 -0000
+Received: from oasis.matrox.com (HELO oasis.matrox.net) (138.11.240.18)
+  by mi-1.rz.ruhr-uni-bochum.de with SMTP; 23 Jul 2002 19:33:03 -0000
+Received: from host (localhost [127.0.0.1])
+	by oasis.matrox.net (8.11.6/8.11.6) with SMTP id g6NJUOK05207;
+	Tue, 23 Jul 2002 15:30:24 -0400 (EDT)
+Received: from scratchy.matrox.com (scratchy.matrox.com [138.11.254.205])
+	by oasis.matrox.net (8.11.6/8.11.6) with ESMTP id g6NIcSK18622
+	for <mgi_englishlist@oasis.matrox.net>; Tue, 23 Jul 2002 14:38:28 -0400 (EDT)
+Received: from venus.matrox.com (venus.matrox.com [192.168.1.30])
+	by scratchy.matrox.com (Postfix) with ESMTP id DF6E32C6F9
+	for <mgi_englishlist@oasis.matrox.net>; Tue, 23 Jul 2002 14:37:30 -0400 (EDT)
+Received: (from root@localhost)
+	by venus.matrox.com (8.11.6/8.11.6) id g6NIcSQ19578
+	for <mgi_englishlist@matrox.com>; Tue, 23 Jul 2002 14:38:28 -0400 (EDT)
+Received: from nodnsquery(192.168.148.165) by venus.matrox.com via csmap (V1.5)
+	id srcAAAXSaOnM; Tue, 23 Jul 02 14:38:26 -0400
+Message-Id: <4.3.1.2.20020723143656.00a96a60@mailbox.matrox.com>
+Date: Tue, 23 Jul 2002 14:37:05 -0400
+Sender: owner-mgi_englishlist@matrox.com
+From: Matrox In-the-Loop newsletter <newsletter@matrox.com>
+To: mgi_englishlist@matrox.com
+Subject: =?iso-8859-1?Q?Matrox_Parhelia=99_now_available?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="=====================_22773175==_.ALT"
+X-Sender: newsletter@mailbox.matrox.com (Unverified)
+X-Mailer: QUALCOMM Windows Eudora Version 4.3.1
+X-Listprocessor-Version: 8.1 -- ListProcessor(tm) by CREN
+
+
+--=====================_22773175==_.ALT
+Content-Type: text/plain; charset="us-ascii"; format=flowed
+
+
+Matrox Parhelia - available now!
+The Matrox Parhelia graphics board is now available for purchase. Visit the 
+Buy Matrox section of our Web site for a complete list of locations where 
+Matrox products are available:
+http://www.matrox.com/mga/start/newsletter/jul_2002/buymatrox.cfm
+
+Immerse yourself in a high-fidelity underwater world with the Matrox 
+Parhelia Reef Demo
+Developed in-house by Matrox, the Matrox Reef Demo showcases the quality, 
+realism and complex rendering power of the Parhelia-512 and includes more 
+than 50 realistic underwater denizens rendered simultaneously. While you 
+can't get the full effect of the demo without having your very own Matrox 
+graphics board based on the Parhelia-512 GPU, we have put together a few 
+pre-rendered avi versions for you to download. Click here for more:
+http://www.matrox.com/mga/start/newsletter/jul_2002/reefstory.cfm
+
+New Matrox Parhelia wallpapers
+Decorate your desktop with the Matrox Parhelia! Choose from images of the 
+Parhelia logo, the Immerse yourself in High Fidelity Graphics grid, and 
+numerous screenshots from the spectacular Parhelia Reef Demo! Download your 
+favorite shot now  click here:
+http://www.matrox.com/mga/start/newsletter/jul_2002/wallpapers.cfm
+
+New Matrox Parhelia screensaver
+We also have a new Matrox Parhelia screensaver - download it here:
+http://www.matrox.com/mga/start/newsletter/jul_2002/screensaver.cfm
+
+Parhelia-512 previews and reviews
+The press is talking - check out the latest Matrox Parhelia previews and 
+reviews here:
+http://www.matrox.com/mga/start/newsletter/jul_2002/reviews.cfm
+
+Have a great day!
+
+Matrox Graphics Web Team
+
+***************************************************************************
+Please send your comments about this newsletter to: 
+<mailto:newsletter@matrox.com>newsletter@matrox.<mailto:newsletter@matrox.com>com
+To unsubscribe, please visit:
+http://www.matrox.com/mga/start/newsletter/jul_2002/unsubscribe.cfm
+To change your e-mail address or make changes to your profile, please visit:
+http://www.matrox.com/mga/start/newsletter/jul_2002/registration.cfm
+
+***************************************************************************
+
+
+
+--=====================_22773175==_.ALT
+Content-Type: text/html; charset="us-ascii"
+
+<html>
+<br>
+<font size=2><b>Matrox Parhelia - available now!<br>
+</b>The Matrox Parhelia graphics board is now available for purchase.
+Visit the Buy Matrox section of our Web site for a complete list of
+locations where Matrox products are available:<br>
+</font><font size=2 color="#0000FF"><u><a href="http://www.matrox.com/mga/start/newsletter/jul_2002/buymatrox.cfm" eudora="autourl">http://www.matrox.com/mga/start/newsletter/jul_2002/buymatrox.</a><a href="http://www.matrox.com/mga/start/newsletter/jul_2002/buymatrox.cfm" eudora="autourl">cfm<br>
+<br>
+</a></u></font><font size=2><b>Immerse yourself in a high-fidelity
+underwater world with the Matrox Parhelia Reef Demo<br>
+</b>Developed in-house by Matrox, the Matrox Reef Demo showcases the
+quality, realism and complex rendering power of the Parhelia-512 and
+includes more than 50 realistic underwater denizens rendered
+simultaneously. While you can't get the full effect of the demo without
+having your very own Matrox graphics board based on the Parhelia-512 GPU,
+we have put together a few pre-rendered avi versions for you to download.
+Click here for more:<br>
+</font><font size=2 color="#0000FF"><u><a href="http://www.matrox.com/mga/start/newsletter/jul_2002/reefstory.cfm" eudora="autourl">http://www.matrox.com/mga/start/newsletter/jul_2002/reefstory.</a><a href="http://www.matrox.com/mga/start/newsletter/jul_2002/reefstory.cfm" eudora="autourl">cfm<br>
+<br>
+</a></u></font><font size=2><b>New Matrox Parhelia wallpapers<br>
+</b>Decorate your desktop with the Matrox Parhelia! Choose from images of
+the Parhelia logo, the Immerse yourself in High Fidelity Graphics grid,
+and numerous screenshots from the spectacular Parhelia Reef Demo!
+Download your favorite shot now&nbsp; click here:<br>
+</font><font size=2 color="#0000FF"><u><a href="http://www.matrox.com/mga/start/newsletter/jul_2002/wallpapers.cfm" eudora="autourl">http://www.matrox.com/mga/start/newsletter/jul_2002/wallpapers.</a><a href="http://www.matrox.com/mga/start/newsletter/jul_2002/wallpapers.cfm" eudora="autourl">cfm<br>
+<br>
+</a></u></font><font size=2><b>New Matrox Parhelia screensaver<br>
+</b>We also have a new Matrox Parhelia screensaver - download it
+here:<br>
+</font><font size=2 color="#0000FF"><u><a href="http://www.matrox.com/mga/start/newsletter/jul_2002/screensaver.cfm" eudora="autourl">http://www.matrox.com/mga/start/newsletter/jul_2002/screensaver.</a><a href="http://www.matrox.com/mga/start/newsletter/jul_2002/screensaver.cfm" eudora="autourl">cfm<br>
+<br>
+</a></u></font><font size=2><b>Parhelia-512 previews and reviews<br>
+</b>The press is talking - check out the latest Matrox Parhelia previews
+and reviews here:<br>
+</font><font size=2 color="#0000FF"><u><a href="http://www.matrox.com/mga/start/newsletter/jul_2002/reviews.cfm" eudora="autourl">http://www.matrox.com/mga/start/newsletter/jul_2002/reviews.</a><a href="http://www.matrox.com/mga/start/newsletter/jul_2002/reviews.cfm" eudora="autourl">cfm<br>
+<br>
+</a></u></font><font size=2>Have a great day!<br>
+<br>
+Matrox Graphics Web Team<br>
+<br>
+***************************************************************************<br>
+Please send your comments about this newsletter to:
+</font><a href="mailto:newsletter@matrox.com"><font size=2 color="#0000FF"><u>newsletter@</a>matrox.<a href="mailto:newsletter@matrox.com">com<br>
+</a></u></font><font size=2>To unsubscribe, please visit:<br>
+</font><font size=2 color="#0000FF"><u><a href="http://www.matrox.com/mga/start/newsletter/jul_2002/unsubscribe.cfm" eudora="autourl">http://www.matrox.com/mga/start/newsletter/jul_2002/unsubscribe.</a><a href="http://www.matrox.com/mga/start/newsletter/jul_2002/unsubscribe.cfm" eudora="autourl">cfm<br>
+</a></u></font><font size=2>To change your e-mail address or make changes
+to your profile, please visit:<br>
+</font><font size=2 color="#0000FF"><u><a href="http://www.matrox.com/mga/start/newsletter/jul_2002/registration.cfm" eudora="autourl">http://www.matrox.com/mga/start/newsletter/jul_2002/registration.</a><a href="http://www.matrox.com/mga/start/newsletter/jul_2002/registration.cfm" eudora="autourl">cfm<br>
+<br>
+</a></u></font><font size=2>***************************************************************************<br>
+<br>
+<br>
+</font></html>
+
+--=====================_22773175==_.ALT--
+
+

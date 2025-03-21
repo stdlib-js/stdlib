@@ -1,0 +1,61 @@
+From ilug-admin@linux.ie  Tue Aug  6 14:11:11 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0D6A0440CD
+	for <jm@localhost>; Tue,  6 Aug 2002 09:10:47 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 14:10:47 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g76D7ck30705 for
+    <jm-ilug@jmason.org>; Tue, 6 Aug 2002 14:07:38 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id OAA31245; Tue, 6 Aug 2002 14:04:17 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from salmon.maths.tcd.ie (mmdf@salmon.maths.tcd.ie
+    [134.226.81.11]) by lugh.tuatha.org (8.9.3/8.9.3) with SMTP id OAA31211
+    for <ilug@linux.ie>; Tue, 6 Aug 2002 14:04:12 +0100
+Received: from walton.maths.tcd.ie by salmon.maths.tcd.ie with SMTP id
+    <aa38271@salmon>; 6 Aug 2002 14:04:11 +0100 (BST)
+To: ilug@linux.ie
+Subject: Re: [ILUG] Sparc Solaris (was: Dell GX260 V Redhat 7.3)
+X-It'S: all good
+X-Wigglefluff: fuddtastic
+X-Zippy: I want EARS!  I want two ROUND BLACK EARS to make me feel warm 'n
+    secure!!  WHOA!!  Ken and Barbie are having TOO MUCH FUN!!  It must be the
+    NEGATIVE IONS!!
+In-Reply-To: Your message of
+    "Tue, 06 Aug 2002 12:56:17 BST."
+    <20020806125617.F17211@ie.suberic.net>
+Date: Tue, 06 Aug 2002 14:04:11 +0100
+From: Niall Brady <bradyn@maths.tcd.ie>
+Message-Id: <200208061404.aa38271@salmon.maths.tcd.ie>
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Tue, 06 Aug 2002 12:56:17 BST, kevin lyda said:
+>
+>sorry, i missed this.  redhat supplies something similar called kickstart
+>(guess who inspired them?).  pc hardware is dumb, so you'll need to use
+>a floppy.  otoh, every jumpstart config i've seen required rarp plus
+>plugging the new box's ethernet+ip into a file.  a kickstart boot can
+>just use a dhcp server.
+
+Aye, but it'll still need a /boot/kickstart/$VER/$IP-kickstart won't it
+to proceed automatically?  [or am I completely off track there?]
+
+-- 
+	Niall
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

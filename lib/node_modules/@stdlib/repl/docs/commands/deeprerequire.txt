@@ -1,0 +1,34 @@
+
+deeprerequire( id )
+    Re-imports a module, JSON, or local file and all its associated module
+    dependencies.
+
+    Modules can be imported from `node_modules`.
+
+    Local modules and JSON files can be imported using a relative path (e.g.,
+    './foo.js', './../bar.json', etc) that will be resolved against the current
+    working directory.
+
+    Parameters
+    ----------
+    id: string
+        Module name or path to re-import.
+
+    Returns
+    -------
+    m: any
+        Module export.
+
+    Examples
+    --------
+    > var foo = require( './foo.js' );
+
+    // Modify `./foo.js` and/or its module dependencies...
+
+    // Re-import the module:
+    > foo = deeprerequire( './foo.js' );
+
+    See Also
+    --------
+    load, require, rerequire
+

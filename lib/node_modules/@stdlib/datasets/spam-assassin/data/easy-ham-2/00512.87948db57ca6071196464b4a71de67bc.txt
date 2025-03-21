@@ -1,0 +1,58 @@
+From webdev-admin@linux.ie  Thu Aug  1 17:17:21 2002
+Return-Path: <webdev-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 1886B440F1
+	for <jm@localhost>; Thu,  1 Aug 2002 12:17:20 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 01 Aug 2002 17:17:20 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g71GCl220959 for
+    <jm-webdev@jmason.org>; Thu, 1 Aug 2002 17:12:47 +0100
+Received: from lugh (www-data@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id RAA18889; Thu, 1 Aug 2002 17:11:21 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host www-data@localhost
+    [127.0.0.1] claimed to be lugh
+Received: from nmrc.ucc.ie (nmrc.ucc.ie [143.239.64.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id RAA18716 for <webdev@linux.ie>; Thu,
+    1 Aug 2002 17:10:01 +0100
+Received: from localhost (localhost [127.0.0.1]) by mailhost.nmrc.ucc.ie
+    (Postfix) with ESMTP id E2744EE99 for <webdev@linux.ie>; Thu,
+    1 Aug 2002 17:09:30 +0100 (BST)
+Received: (from lhecking@localhost) by tehran.nmrc.ucc.ie
+    (8.11.6+Sun/8.11.6) id g71G9U008019 for webdev@linux.ie; Thu,
+    1 Aug 2002 17:09:30 +0100 (IST)
+Date: Thu, 1 Aug 2002 17:09:29 +0100
+From: Lars Hecking <lhecking@nmrc.ie>
+To: webdev@linux.ie
+Message-Id: <20020801160929.GA7945@nmrc.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.1i
+Subject: [Webdev] php-mailsettings anyone?
+Sender: webdev-admin@linux.ie
+Errors-To: webdev-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: <webdev.linux.ie>
+X-Beenthere: webdev@linux.ie
+
+
+ Hi all,
+
+ I'm looking for a copy of the php-mailsettings package, or PHP Cyrus-Tools,
+ which should include the former. All web references point to the canonical
+ location, which is unavailable. Author hasn't responded either.
+
+ Thanks!
+
+
+
+_______________________________________________
+Webdev mailing list
+Webdev@linux.ie
+http://www.linux.ie/mailman/listinfo/webdev
+
+

@@ -1,0 +1,171 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6OBCfhY012590
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Wed, 24 Jul 2002 06:12:42 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6OBCf73012583
+	for cypherpunks-forward@ds.pro-ns.net; Wed, 24 Jul 2002 06:12:41 -0500 (CDT)
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6OBCWhY012525
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks@ds.pro-ns.net>; Wed, 24 Jul 2002 06:12:33 -0500 (CDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: from waste.minder.net (daemon@waste [66.92.53.73])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6OBCVJ83540
+	for <cypherpunks@ds.pro-ns.net>; Wed, 24 Jul 2002 07:12:31 -0400 (EDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: (from cpunks@localhost)
+	by waste.minder.net (8.11.6/8.11.6) id g6OBCU906210
+	for cypherpunks@ds.pro-ns.net; Wed, 24 Jul 2002 07:12:30 -0400
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by waste.minder.net (8.11.6/8.11.6) with ESMTP id g6OBCSR06192
+	for <cpunks@minder.net>; Wed, 24 Jul 2002 07:12:28 -0400
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6OBCRJ83529
+	for <cpunks@minder.net>; Wed, 24 Jul 2002 07:12:27 -0400 (EDT)
+	(envelope-from cpunks@einstein.ssz.com)
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id GAA25686
+	for cpunks@minder.net; Wed, 24 Jul 2002 06:21:12 -0500
+Received: (from mdom@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id GAA25669
+	for cypherpunks-outgoing; Wed, 24 Jul 2002 06:21:00 -0500
+Received: from mailmx.ada.net.tr (ns3.ada.net.tr [213.232.0.6])
+	by einstein.ssz.com (8.8.8/8.8.8) with ESMTP id GAA25658
+	for <cypherpunks@einstein.ssz.com>; Wed, 24 Jul 2002 06:20:47 -0500
+From: ankara@dunyagazetesi.com.tr
+Received: from ankara.ada.net.tr (root@ns.ada.net.tr [195.112.155.130])
+	by mailmx.ada.net.tr (8.11.6/8.11.2) with ESMTP id g6PBC4A30731
+	for <cypherpunks@einstein.ssz.com>; Thu, 25 Jul 2002 14:12:04 +0300
+Received: from plain (abn167-99.ank-ports.kablonet.net.tr [195.174.167.99])
+	by ankara.ada.net.tr (8.11.2/8.11.2) with SMTP id g6OBF1S27440
+	for <cypherpunks@ssz.com>; Wed, 24 Jul 2002 14:15:03 +0300
+Message-Id: <200207241115.g6OBF1S27440@ankara.ada.net.tr>
+To: cypherpunks@einstein.ssz.com
+Old-Subject: CDR: Kime Oy Vereceksiniz ?
+Date: Wed, 24 Jul 2002 14:09:44
+Mime-Version: 1.0
+Content-Type: text/plain; charset="DEFAULT_CHARSET"
+X-Priority: 3
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.00.2919.6700
+X-MimeOLE: Produced By Microsoft MimeOLE V5.00.2919.6700
+Sender: owner-cypherpunks@einstein.ssz.com
+Precedence: bulk
+Reply-To: cypherpunks@einstein.ssz.com
+X-Mailing-List: cypherpunks@ssz.com
+X-Unsubscription-Info: http://einstein.ssz.com/cdr
+X-List-Admin: list@ssz.com
+X-Loop: ssz.com
+X-Acceptable-Languages: English, Russian, German, French, Spanish
+Subject: Kime Oy Vereceksiniz ?
+Content-Transfer-Encoding: quoted-printable
+X-MIME-Autoconverted: from 8bit to quoted-printable by hq.pro-ns.net id g6OFIdhX009137
+
+=DDyi g=FCnler
+
+=20
+D=DCNYA Gazetesi, i=E7inde bulundu=F0umuz siyasi karma=FEa d=F6neminin se=
+=E7imler sonras=FDnda nas=FDl bir hal alaca=F0=FD konusunda kapsaml=FD bi=
+r ara=FEt=FDrma yapmaktad=FDr. Bu =E7er=E7evede toplumumuzun m=FCmk=FCn o=
+ldu=F0unca geni=FE bir kesiminin g=F6r=FC=FElerine ba=FEvurmay=FD gerekli=
+ g=F6rd=FCk.=20
+
+=20
+3 Kas=FDm 2002 tarihinde yap=FDlmas=FD =F6ng=F6r=FClen se=E7imler sonras=FD=
+nda siyasi belirsizli=F0in, dolay=FDs=FDyla da ekonomik belirsizli=F0in s=
+ona erip ermeyece=F0i y=F6n=FCnde bir tahmin yapmam=FDz ve bu konuda kamu=
+oyunu bilgilendirmemiz gerekti=F0ini d=FC=FE=FCn=FCyoruz. Sizin de g=F6r=FC=
+=FElerinizi bize iletmeniz anketin sa=F0l=FDkl=FD olmas=FD =E7er=E7evesin=
+de =F6nem ta=FE=FDmaktad=FDr.=20
+
+=20
+D=DCNYA Gazetesi, anketi cevaplayanlar=FDn kimlikleri konusunda herhangi =
+bir a=E7=FDklaman=FDn yap=FDlmayaca=F0=FD, sadece cevaplar=FDn=FDn dikkat=
+e al=FDnaca=F0=FD y=F6n=FCnde tam garanti verir. =DDlginiz i=E7in te=FEek=
+k=FCr eder, =E7al=FD=FEmalar=FDn=FDzda ba=FEar=FDlar dileriz.
+
+=20
+Anketin , daha geni=FE kapsaml=FD olmasi ve b=FCy=FCk kitlelere ula=FEabi=
+lmesi i=E7in ,
+
+Tan=FDd=FDklar=FDn=FDza bu mail=92i g=F6nderebilirsiniz .
+
+=20
+
+Soru 1
+
+=20
+
+Se=E7imde hangi partiye oy vermeyi d=FC=FE=FCn=FCyorsunuz?
+
+=20
+
+=20
+
+=20
+
+Soru 2
+
+Sizce se=E7imlerde en =E7ok oyu hangi partiler alacak, bir s=FDralama yap=
+abilir misiniz?
+
+=20
+
+=20
+
+=20
+
+Soru 3
+
+Se=E7imlerin sonucunu etkileyebilecek temel geli=FEmeler ne olabilir?
+
+=20
+
+=20
+
+=20
+
+=20
+
+=20
+
+=20
+
+=20
+
+=20
+D=DCNYA GAZETES=DD ANKARA TEMS=DDLC=DDL=DD=D0=DD
+
+Tel: 312 446 99 24
+
+Fax: 446 91 54
+
+ankara@dunyagazetesi.com.tr
+
+=20
+
+=20
+
+=20
+
+=20
+
+=20
+
+=20
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

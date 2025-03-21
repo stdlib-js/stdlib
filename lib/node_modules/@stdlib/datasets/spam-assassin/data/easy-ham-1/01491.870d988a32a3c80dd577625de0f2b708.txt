@@ -1,0 +1,131 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Wed Sep 18 14:07:12 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 1B34B16F03
+	for <jm@localhost>; Wed, 18 Sep 2002 14:07:12 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 18 Sep 2002 14:07:12 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8IBnfC28425 for <jm-sa@jmason.org>; Wed, 18 Sep 2002 12:49:42 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17rdJM-0003kl-00; Wed,
+    18 Sep 2002 04:48:04 -0700
+Received: from cedar.shu.ac.uk ([143.52.2.51]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17rdIU-0007j4-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 18 Sep 2002 04:47:10 -0700
+Received: from cis-sys-03.csv.shu.ac.uk ([143.52.20.90]
+    helo=videoproducer) by cedar.shu.ac.uk with esmtp (Exim 3.36 #2) id
+    17rdFf-0005hM-00 for spamassassin-talk@lists.sourceforge.net;
+    Wed, 18 Sep 2002 12:44:15 +0100
+Message-Id: <005901c25f08$b6d5b0b0$5a14348f@videoproducer>
+From: "Ray Gardener" <R.A.Gardener@shu.ac.uk>
+To: <spamassassin-talk@example.sourceforge.net>
+Organization: Shefield Hallam University
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+    boundary="----=_NextPart_000_0056_01C25F11.18554780"
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+X-Mailscanner: Found to be clean
+Subject: [SAtalk] spamc and DCC
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchives/forum.php?forum=spamassassin-talk>
+X-Original-Date: Wed, 18 Sep 2002 12:44:14 +0100
+Date: Wed, 18 Sep 2002 12:44:14 +0100
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0056_01C25F11.18554780
+Content-Type: text/plain;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Hi -=20
+
+I upgraded to 2.40 (now 2.41) last week and the messages which are =
+definitely in the DCC database aren't being marked as such by =
+spamassassin when connected to via spamc. Interestingly it is detected =
+when running spamassassin -t < sample-spam.txt (using the same userid =
+incidentally). Is this a known "feature" of spamc under 2.4x or is there =
+anything obvious that I am not implementing correctly? Note that as I =
+implied above this used to work under 2.3x of spamassassin and =
+spamd/spamc
+
+Regards
+
+Ray Gardener
+Sheffield Hallam University
+UK
+
+
+------=_NextPart_000_0056_01C25F11.18554780
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META http-equiv=3DContent-Type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 6.00.2719.2200" name=3DGENERATOR>
+<STYLE></STYLE>
+</HEAD>
+<BODY bgColor=3D#ffffff>
+<DIV><FONT face=3DArial size=3D2>Hi - </FONT></DIV>
+<DIV><FONT face=3DArial size=3D2></FONT>&nbsp;</DIV>
+<DIV><FONT face=3DArial size=3D2>I&nbsp;upgraded to 2.40 (now 2.41) last =
+week and=20
+the messages which are definitely in the DCC database&nbsp;aren't being =
+marked=20
+as such by spamassassin when connected to via spamc. Interestingly it is =
+
+detected when running spamassassin -t &lt; sample-spam.txt (using the =
+same=20
+userid incidentally). Is this a known "feature" of spamc under 2.4x or =
+is there=20
+anything obvious that I am not implementing correctly? Note that as I =
+implied=20
+above this used to work under 2.3x of spamassassin and =
+spamd/spamc</FONT></DIV>
+<DIV><FONT face=3DArial size=3D2></FONT>&nbsp;</DIV>
+<DIV><FONT face=3DArial size=3D2>Regards</FONT></DIV>
+<DIV><FONT face=3DArial size=3D2></FONT>&nbsp;</DIV>
+<DIV><FONT face=3DArial size=3D2>Ray Gardener</FONT></DIV>
+<DIV><FONT face=3DArial size=3D2>Sheffield Hallam =
+University</FONT></DIV>
+<DIV><FONT face=3DArial size=3D2>UK</FONT></DIV>
+<DIV><FONT face=3DArial size=3D2></FONT>&nbsp;</DIV></BODY></HTML>
+
+------=_NextPart_000_0056_01C25F11.18554780--
+
+
+
+-------------------------------------------------------
+This SF.NET email is sponsored by: AMD - Your access to the experts
+on Hammer Technology! Open Source & Linux Developers, register now
+for the AMD Developer Symposium. Code: EX8664
+http://www.developwithamd.com/developerlab
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

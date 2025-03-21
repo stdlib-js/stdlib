@@ -1,0 +1,64 @@
+From rpm-list-admin@freshrpms.net  Fri Sep 20 11:30:18 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 1152C16F03
+	for <jm@localhost>; Fri, 20 Sep 2002 11:30:18 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 20 Sep 2002 11:30:18 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8K5NIC23544 for
+    <jm-rpm@jmason.org>; Fri, 20 Sep 2002 06:23:18 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g8K5E2f12491; Fri, 20 Sep 2002 07:14:02
+    +0200
+Received: from mail.j2solutions.net (seattle.connectednw.com
+    [216.163.77.13]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g8K5Dcf06500 for <rpm-list@freshrpms.net>; Fri, 20 Sep 2002 07:13:38 +0200
+Received: from yoda (12-231-69-107.client.attbi.com
+    [::ffff:12.231.69.107]) (AUTH: CRAM-MD5 hosting@j2solutions.net) by
+    mail.j2solutions.net with esmtp; Thu, 19 Sep 2002 22:13:32 -0700
+From: Jesse Keating <hosting@j2solutions.net>
+To: rpm-zzzlist@freshrpms.net
+Subject: sylpheed-claws
+Message-Id: <20020919221046.7484dec6.hosting@j2solutions.net>
+Organization: j2Solutions
+X-Mailer: Sylpheed version 0.7.5claws (GTK+ 1.2.10; i386-redhat-linux)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Thu, 19 Sep 2002 22:10:46 -0700
+Date: Thu, 19 Sep 2002 22:10:46 -0700
+
+Have you thought of bumping up sylpheed-claws?  I see sylpheed got a
+bump... show some claws love?  (;
+
+-- 
+Jesse Keating
+j2Solutions.net
+Mondo DevTeam (www.mondorescue.org)
+
+Was I helpful?  Let others know:
+ http://svcs.affero.net/rm.php?r=jkeating
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

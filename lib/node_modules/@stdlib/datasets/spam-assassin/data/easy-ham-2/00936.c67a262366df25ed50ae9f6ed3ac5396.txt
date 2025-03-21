@@ -1,0 +1,76 @@
+From fork-admin@xent.com  Wed Jul 31 18:35:23 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2CB85440FD
+	for <jm@localhost>; Wed, 31 Jul 2002 13:17:27 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 31 Jul 2002 18:17:27 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6VHDT202507 for <jm@jmason.org>;
+    Wed, 31 Jul 2002 18:13:32 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id D876B294142; Wed, 31 Jul 2002 10:11:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from qu.to (njl.ne.client2.attbi.com [24.218.112.39]) by
+    xent.com (Postfix) with SMTP id DE78B294141 for <fork@xent.com>;
+    Wed, 31 Jul 2002 10:10:10 -0700 (PDT)
+Received: (qmail 15804 invoked by uid 500); 31 Jul 2002 17:13:23 -0000
+From: Ned Jackson Lovely <fork@qu.to>
+To: fork@spamassassin.taint.org
+Subject: Re: What's cool about doing nothing
+Message-Id: <20020731171323.GG1206@ibu.internal.qu.to>
+References: <5.1.0.14.0.20020731100838.00ac34e0@jidmail.nmcourts.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <5.1.0.14.0.20020731100838.00ac34e0@jidmail.nmcourts.com>
+User-Agent: Mutt/1.3.25i
+X-Cell: +1.617.877.3444
+X-Web: http://www.njl.us/
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 31 Jul 2002 13:13:23 -0400
+
+On Wed, Jul 31, 2002 at 10:37:31AM -0600, Marty Halvorson wrote:
+> A Forest Service official has stated flat out that the tree lovers need to 
+> understand their responsibility in contributing to the number of 
+> uncontrollable (i.e., crown fires caused by very dense tree stands and 
+> under growth) fires by their suits to stop any tree removal from the 
+> forests managed by the Forest Service.
+
+Boy, that is rather strange. I've always been under the impression that
+the uncontrollable forest fires were the result of the Forest Service's
+long-standing "10:00 A.M. policy", in place until the decision in 1963 to
+switch over to "let-it-burn".
+
+The 10:00 A.M. policy was based on theories about forest management from
+Europe, and wasn't as applicable to the American wilds. So, we went from a
+policy of containment for 100 years to one of letting things burn unless they
+directly threatened property.
+
+40 years after the end of the containment policy there is still a lot of stuff
+left to burn. I can't imagine that artificially planted replacement
+forests, with dense stands of identical trees, help that much either. 
+
+I would be comfortable laying the fault for these contributing factors
+squarely with the Forest Service. I would put the blame for many burned homes
+upon the people who chose to build their dwelling with an unwise combination of
+materials, location, and landscaping.
+
+-- 
+njl
+http://xent.com/mailman/listinfo/fork
+
+

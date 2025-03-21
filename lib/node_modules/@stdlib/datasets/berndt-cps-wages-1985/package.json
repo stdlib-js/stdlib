@@ -1,0 +1,85 @@
+{
+  "name": "@stdlib/datasets/berndt-cps-wages-1985",
+  "version": "0.0.0",
+  "description": "A random sample of 534 workers from the Current Population Survey (CPS) from 1985.",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "bin": {
+    "berndt-cps-wages-1985": "./bin/cli"
+  },
+  "main": "./lib",
+  "browser": "./lib/browser.js",
+  "directories": {
+    "benchmark": "./benchmark",
+    "data": "./data",
+    "doc": "./docs",
+    "example": "./examples",
+    "lib": "./lib",
+    "scripts": "./scripts",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "scripts": {},
+  "homepage": "https://github.com/stdlib-js/stdlib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stdlib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
+  "keywords": [
+    "stdlib",
+    "datasets",
+    "dataset",
+    "data",
+    "cps",
+    "census",
+    "survey",
+    "population",
+    "wages",
+    "workers",
+    "determinants",
+    "pay",
+    "industry",
+    "work",
+    "salary",
+    "us",
+    "united",
+    "states",
+    "economics",
+    "econometrics",
+    "pay gap",
+    "statistics",
+    "stats",
+    "multiple regression",
+    "confounding",
+    "multicollinearity"
+  ]
+}

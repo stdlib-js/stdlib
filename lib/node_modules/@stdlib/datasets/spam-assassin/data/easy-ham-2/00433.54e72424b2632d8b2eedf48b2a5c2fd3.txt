@@ -1,0 +1,95 @@
+From ilug-admin@linux.ie  Fri Aug 16 15:28:00 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8914643C34
+	for <jm@localhost>; Fri, 16 Aug 2002 10:27:59 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 16 Aug 2002 15:27:59 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7GEPca22215 for
+    <jm-ilug@jmason.org>; Fri, 16 Aug 2002 15:25:38 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA00576; Fri, 16 Aug 2002 15:23:56 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail.it-tallaght.ie (mail.it-tallaght.ie [193.1.120.163])
+    by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id PAA00537 for
+    <ilug@linux.ie>; Fri, 16 Aug 2002 15:23:49 +0100
+Received: by mail.it-tallaght.ie with Internet Mail Service (5.5.2656.59)
+    id <QSA349G4>; Fri, 16 Aug 2002 15:21:48 +0100
+Message-Id: <A357A6B62E30D511804500B0D0AA789C0112E4BC@mail.it-tallaght.ie>
+From: "Smith, Graham - Computing Technician" <Graham.Smith@it-tallaght.ie>
+To: ilug@linux.ie
+Subject: RE: [ILUG] Backup solutions
+Date: Fri, 16 Aug 2002 15:21:42 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2656.59)
+Content-Type: text/plain; charset="iso-8859-15"
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+DDS-4 will hold 40 GB, media is about 42 (ex vat)euros per tape
+HP do DDS-4 backup tape drives to take those but they're
+about 1236 euros (ex vat) and thats for an internal model (taken from
+DCB Groups catalogue). There are other brands and various
+other tape formats to choose from, but just to give you a rough
+benchmark of pricing for that sorta capacity.
+
+Ther are options that will go up to crazy capacities by using
+using multiple tapes in a caddy... of course its gonna cost
+a lot more.
+
+I'd also be ensuring I had some sort of disk mirroring set up
+also... the more redundancy the better (within reason).
+
+G.
+
+___________________________
+ Graham Smith,
+ Network Administrator,
+ Department of Computing,
+ Institute of Technology,
+ Tallaght, Dublin 24
+ Phone: + 353 (01) 4042840
+
+-----Original Message-----
+From: Ciaran Johnston [mailto:cj@nologic.org]
+Sent: 16 August 2002 15:09
+To: ilug@linux.ie
+Subject: [ILUG] Backup solutions
+
+
+Hi folks,
+I maintain a colocated server on behalf of a small group of individuals,
+and am looking at backup solutions. Is it possible to get some sort of low-
+end internal tape / other solution that could be used to back up approx. 40
+Gigs of data or am I just dreaming? My ISP does offer backups at extra cost
+but the only problem with that is, well, the extra cost.
+
+What I was hoping to do was to install some kind of internal tape device,
+then swap tapes round every month, so I had an onsite backup of say the
+last 24 hours and an offsite backup of the last month. Is this feasible?
+I'm beginning to think it isn't. External devices are not an option as part
+of the charge for colocation is rackspace.
+
+Thanks,
+Ciaran.
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

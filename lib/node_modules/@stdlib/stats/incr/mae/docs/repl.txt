@@ -1,0 +1,32 @@
+
+{{alias}}()
+    Returns an accumulator function which incrementally computes the mean
+    absolute error (MAE).
+
+    If provided input values, the accumulator function returns an updated mean
+    absolute error. If not provided input values, the accumulator function
+    returns the current mean absolute error.
+
+    If provided `NaN` or a value which, when used in computations, results in
+    `NaN`, the accumulated value is `NaN` for all future invocations.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}();
+    > var m = accumulator()
+    null
+    > m = accumulator( 2.0, 3.0 )
+    1.0
+    > m = accumulator( -5.0, 2.0 )
+    4.0
+    > m = accumulator()
+    4.0
+
+    See Also
+    --------
+

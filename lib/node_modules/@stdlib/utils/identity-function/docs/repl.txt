@@ -1,0 +1,22 @@
+
+{{alias}}( x )
+    Identity function.
+
+    Parameters
+    ----------
+    x: any
+        Input value.
+
+    Returns
+    -------
+    out: any
+        Input value.
+
+    Examples
+    --------
+    > var v = {{alias}}( 3.14 )
+    3.14
+
+    See Also
+    --------
+

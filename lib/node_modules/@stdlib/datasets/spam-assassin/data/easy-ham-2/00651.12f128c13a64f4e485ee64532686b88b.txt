@@ -1,0 +1,81 @@
+Return-Path: razor-users-admin@example.sourceforge.net
+Delivery-Date: Thu Aug 15 02:06:18 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net [216.136.171.252])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7F16H413712
+	for <jm-razor@jmason.org>; Thu, 15 Aug 2002 02:06:17 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13] helo=usw-sf-list1.sourceforge.net)
+	by usw-sf-list2.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian))
+	id 17f90Z-0000ox-00; Wed, 14 Aug 2002 18:01:03 -0700
+Received: from h-66-166-21-186.snvacaid.covad.net ([66.166.21.186] helo=rover.vipul.net)
+	by usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian))
+	id 17f8zv-0003LN-00
+	for <razor-users@lists.sourceforge.net>; Wed, 14 Aug 2002 18:00:23 -0700
+Received: (from vipul@localhost)
+	by rover.vipul.net (8.11.6/8.11.6) id g7F10GK24783;
+	Wed, 14 Aug 2002 18:00:16 -0700
+From: Vipul Ved Prakash <mail@vipul.net>
+To: Patrick <patrick@stealthgeeks.net>
+Cc: "Craig R . Hughes" <craig@deersoft.com>, razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] Re: What's wrong with the Razor servers now?
+Message-ID: <20020814180016.A24501@rover.vipul.net>
+Reply-To: mail@vipul.net
+Mail-Followup-To: Patrick <patrick@stealthgeeks.net>,
+	"Craig R . Hughes" <craig@deersoft.com>,
+	razor-users@lists.sourceforge.net
+References: <20020812203326.A1211@rover.vipul.net> <20020814141317.Q68104-100000@rockstar.stealthgeeks.net>
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <20020814141317.Q68104-100000@rockstar.stealthgeeks.net>; from patrick@stealthgeeks.net on Wed, Aug 14, 2002 at 02:47:02PM -0700
+X-Operating-System: Linux rover.vipul.net 2.4.18
+X-Privacy: If possible, encrypt your reply.  Key at http://vipul.net/
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-BeenThere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+	<mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+	<mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Wed, 14 Aug 2002 18:00:16 -0700
+Date: Wed, 14 Aug 2002 18:00:16 -0700
+
+On Wed, Aug 14, 2002 at 02:47:02PM -0700, Patrick wrote:
+> Is there a point that you plan on releasing detailed information about
+> TeS, so we can stop engaging in idle speculation?
+>
+> It's not my desire to second-guess you Vipul (however much my missives
+> may appear otherwise) or question the hard work you and the other
+> developers have put into the system, however it seems that every request
+> for such information has been met with silence.
+
+There are no plans for releasing details about TeS. Before the
+release of Razor2, I'd pointed out that Razor2 backend (specially
+TeS) will be closed.
+
+cheers,
+vipul.
+
+-- 
+
+Vipul Ved Prakash          |   "The future is here, it's just not 
+Software Design Artist     |    widely distributed."
+http://vipul.net/          |              -- William Gibson
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Dice - The leading online job board
+for high-tech professionals. Search and apply for tech jobs today!
+http://seeker.dice.com/seeker.epl?rel_code=31
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users

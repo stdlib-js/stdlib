@@ -1,0 +1,32 @@
+
+{{alias}}( x )
+    Computes the half-value versed cosine.
+
+    The half-value versed cosine is defined as `(1 + cos(x)) / 2`.
+
+    Parameters
+    ----------
+    x: number
+        Input value (in radians).
+
+    Returns
+    -------
+    y: number
+        Half-value versed cosine.
+
+    Examples
+    --------
+    > var y = {{alias}}( 3.14 )
+    ~0.0
+    > y = {{alias}}( -4.2 )
+    ~0.2549
+    > y = {{alias}}( -4.6 )
+    ~0.4439
+    > y = {{alias}}( 9.5 )
+    ~0.0014
+    > y = {{alias}}( -0.0 )
+    1.0
+
+    See Also
+    --------
+

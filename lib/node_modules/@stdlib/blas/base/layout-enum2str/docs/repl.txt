@@ -1,0 +1,23 @@
+
+{{alias}}( layout )
+    Returns the BLAS memory layout string associated with a BLAS memory layout
+    enumeration constant.
+
+    Parameters
+    ----------
+    layout: integer
+        Layout enumeration constant.
+
+    Returns
+    -------
+    out: string|null
+        Layout string.
+
+    Examples
+    --------
+    > var out = {{alias}}( {{alias:@stdlib/blas/base/layout-str2enum}}( 'row-major' ) )
+    'row-major'
+
+    See Also
+    --------
+

@@ -1,0 +1,75 @@
+
+{{alias}}( x, a, b )
+    Evaluates the probability mass function (PMF) for a discrete uniform
+    distribution with minimum support `a` and maximum support `b` at a value
+    `x`.
+
+    If `a > b`, the function returns `NaN`.
+
+    If `a` or `b` is not an integer value, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    a: integer
+        Minimum support.
+
+    b: integer
+        Maximum support.
+
+    Returns
+    -------
+    out: number
+        Evaluated PMF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 2.0, 0, 4 )
+    ~0.2
+    > y = {{alias}}( 5.0, 0, 4 )
+    0.0
+    > y = {{alias}}( 3.0, -4, 4 )
+    ~0.111
+    > y = {{alias}}( NaN, 0, 1 )
+    NaN
+    > y = {{alias}}( 0.0, NaN, 1 )
+    NaN
+    > y = {{alias}}( 0.0, 0, NaN )
+    NaN
+    > y = {{alias}}( 2.0, 3, 1 )
+    NaN
+    > y = {{alias}}( 2.0, 1, 2.4 )
+    NaN
+
+
+{{alias}}.factory( a, b )
+    Returns a function for evaluating the probability mass function (PMF) of
+    a discrete uniform distribution with minimum support `a` and maximum support
+    `b`.
+
+    Parameters
+    ----------
+    a: integer
+        Minimum support.
+
+    b: integer
+        Maximum support.
+
+    Returns
+    -------
+    pmf: Function
+        Probability mass function (PMF).
+
+    Examples
+    --------
+    > var myPMF = {{alias}}.factory( 6, 7 );
+    > var y = myPMF( 7.0 )
+    0.5
+    > y = myPMF( 5.0 )
+    0.0
+
+    See Also
+    --------
+

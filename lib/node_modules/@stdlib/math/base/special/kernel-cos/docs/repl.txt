@@ -1,0 +1,40 @@
+
+{{alias}}( x, y )
+    Computes the cosine of a double-precision floating-point number on the
+    interval [-π/4, π/4].
+
+    For increased accuracy, the number for which the cosine should be evaluated
+    can be supplied as a double-double number (i.e., a non-evaluated sum of two
+    double-precision floating-point numbers `x` and `y`).
+
+    The two numbers must satisfy `|y| < 0.5 * ulp( x )`.
+
+    If either argument is `NaN`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value (in radians).
+
+    y: number
+        Tail of `x`.
+
+    Returns
+    -------
+    out: number
+        Cosine.
+
+    Examples
+    --------
+    > var out = {{alias}}( 0.0, 0.0 )
+    ~1.0
+    > out = {{alias}}( {{alias:@stdlib/constants/float64/pi}}/6.0, 0.0 )
+    ~0.866
+    > out = {{alias}}( 0.785, -1.144e-17 )
+    ~0.707
+    > out = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+

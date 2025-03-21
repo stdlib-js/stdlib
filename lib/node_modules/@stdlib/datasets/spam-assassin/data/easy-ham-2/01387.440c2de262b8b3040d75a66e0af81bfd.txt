@@ -1,0 +1,31 @@
+From root@jmason.org  Fri Aug 23 11:05:05 2002
+Return-Path: <root@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id DD35844168
+	for <jm@localhost>; Fri, 23 Aug 2002 06:03:58 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 23 Aug 2002 11:03:58 +0100 (IST)
+Received: from relay06.indigo.ie (relay06.indigo.ie [194.125.133.230]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with SMTP id g7MKecZ23708 for
+    <root@jmason.org>; Thu, 22 Aug 2002 21:40:38 +0100
+Received: (qmail 75520 messnum 1047120 invoked from
+    network[194.125.172.55/ts12-055.dublin.indigo.ie]); 22 Aug 2002 20:40:45
+    -0000
+Received: from ts12-055.dublin.indigo.ie (HELO jalapeno.spamassassin.taint.org)
+    (194.125.172.55) by relay06.indigo.ie (qp 75520) with SMTP; 22 Aug 2002
+    20:40:45 -0000
+Received: by jalapeno.spamassassin.taint.org (Postfix, from userid 0) id 033F716F16;
+    Thu, 22 Aug 2002 22:16:04 +0100 (IST)
+From: root@spamassassin.taint.org (Anacron)
+To: root@spamassassin.taint.org
+Subject: Anacron job 'cron.daily'
+Message-Id: <20020822211604.033F716F16@jalapeno.spamassassin.taint.org>
+Date: Thu, 22 Aug 2002 22:16:04 +0100 (IST)
+
+/etc/cron.daily/tripwire-check:
+
+****    Error: Tripwire database for jalapeno not found.    ****
+**** Run /etc/tripwire/twinstall.sh and/or tripwire --init. ****
+

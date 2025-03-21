@@ -1,0 +1,85 @@
+{
+  "name": "@stdlib/utils/parallel",
+  "version": "0.0.0",
+  "description": "Execute scripts in parallel.",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "bin": {
+    "parallel": "./bin/cli"
+  },
+  "main": "./lib",
+  "browser": {
+    "./lib": "./lib/browser/index.js",
+    "process": "process/"
+  },
+  "directories": {
+    "doc": "./docs",
+    "example": "./examples",
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "scripts": {},
+  "homepage": "https://github.com/stdlib-js/stdlib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stdlib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
+  "keywords": [
+    "stdlib",
+    "stdutils",
+    "stdutil",
+    "utilities",
+    "utility",
+    "utils",
+    "util",
+    "parallel",
+    "concurrency",
+    "concurrent",
+    "runner",
+    "multi-core",
+    "multi-cpu",
+    "multi-process",
+    "worker",
+    "workers",
+    "execute",
+    "exec",
+    "run",
+    "scripts",
+    "commands",
+    "cmd",
+    "node",
+    "nodejs",
+    "node.js"
+  ],
+  "__stdlib__": {}
+}

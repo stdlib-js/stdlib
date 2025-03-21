@@ -1,0 +1,43 @@
+From none@none.com  Mon Sep  2 16:28:01 2002
+Return-Path: <none@none.com>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.spamassassin.taint.org (Postfix) with ESMTP id DD0F944171
+	for <zzzz@localhost>; Mon,  2 Sep 2002 11:26:45 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 02 Sep 2002 16:26:45 +0100 (IST)
+Received: from 203.160.254.50 (proxy.mon.hu [80.75.224.3]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with SMTP id g828eIZ25706 for
+    <webmaster@efi.ie>; Mon, 2 Sep 2002 09:40:18 +0100
+Message-Id: <200209020840.g828eIZ25706@dogma.slashnull.org>
+Received: from unknown (74.38.244.167) by asy100.as122.sol.superonline.com
+    with NNFMP; Sep, 02 2002 4:11:57 PM +0400
+Received: from 87.15.78.89 ([87.15.78.89]) by pet.vosn.net with local;
+    Sep, 02 2002 3:40:05 PM -0000
+Received: from unknown (HELO web13708.mail.yahoo.com) (141.52.163.69) by
+    smtp4.cyberec.com with SMTP; Sep, 02 2002 2:35:51 PM +0700
+Received: from [190.198.219.49] by a231242.upc-a.chello.nl with QMQP;
+    Sep, 02 2002 1:39:01 PM +1200
+From: Jenny <none@none.com>
+To: Undisclosed.Recipients@dogma.slashnull.org
+Cc: 
+Subject: CyberAge Dating - Invitation from Jenny
+Sender: Jenny <none@none.com>
+MIME-Version: 1.0
+Date: Mon, 2 Sep 2002 16:41:14 -0700
+X-Mailer: Internet Mail Service (5.5.2650.21)
+Content-Type: text/html; charset="iso-8859-1"
+
+<p>Dear user,</p>
+<p>CyberAge Dating Club is contacting you on behalf of Jenny.</p>
+<p>You have been carefully chosen as a matching partner for the other party using 
+  our advanced profile-matching system. We have determined that you do not currently 
+  have an account with us and invite you to join. It's absolutely FREE and there's 
+  no obligations or hidden charges. Come see for yourself and prepare to have 
+  fun! </p>
+<p><a href="http://80.71.66.102/easysexmatch2/index.html">Click here to Join 
+  Now</a> or simply disregard this request if you're not interested.</p>
+<p>Sincerely yours,<br>
+  CyberAge Dating Club Staff.</p>
+

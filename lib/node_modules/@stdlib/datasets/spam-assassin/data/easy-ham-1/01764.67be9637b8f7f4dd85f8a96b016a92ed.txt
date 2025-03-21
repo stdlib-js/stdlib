@@ -1,0 +1,69 @@
+From 0xdeadbeef-request@petting-zoo.net  Mon Aug 26 15:24:00 2002
+Return-Path: <0xdeadbeef-request@petting-zoo.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C18A044166
+	for <jm@localhost>; Mon, 26 Aug 2002 10:21:20 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 15:21:20 +0100 (IST)
+Received: from petting-zoo.net (IDENT:postfix@petting-zoo.net
+    [64.166.12.219]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7PLB4Z26591 for <jm-deadbeef@jmason.org>; Sun, 25 Aug 2002 22:11:05 +0100
+Received: by petting-zoo.net (Postfix, from userid 1004) id 452F0EA3D;
+    Sun, 25 Aug 2002 14:10:31 -0700 (PDT)
+Old-Return-Path: <gkm@petting-zoo.net>
+Delivered-To: 0xdeadbeef@petting-zoo.net
+Received: from petting-zoo.net (localhost [127.0.0.1]) by petting-zoo.net
+    (Postfix) with ESMTP id 6FAFFEA0A for <0xdeadbeef@petting-zoo.net>;
+    Sun, 25 Aug 2002 14:10:27 -0700 (PDT)
+From: gkm@petting-zoo.net (glen mccready)
+To: 0xdeadbeef@petting-zoo.net
+Subject: Family Targetted Advertising
+Date: Sun, 25 Aug 2002 14:10:27 -0700
+Sender: gkm@petting-zoo.net
+Message-Id: <20020825211027.6FAFFEA0A@petting-zoo.net>
+Resent-Message-Id: <vxq5dC.A.uYD.FfUa9@petting-zoo.net>
+Resent-From: 0xdeadbeef@petting-zoo.net
+X-Mailing-List: <0xdeadbeef@petting-zoo.net> archive/latest/530
+X-Loop: 0xdeadbeef@petting-zoo.net
+List-Post: <mailto:0xdeadbeef@petting-zoo.net>
+List-Help: <mailto:0xdeadbeef-request@petting-zoo.net?subject=help>
+List-Subscribe: <mailto:0xdeadbeef-request@petting-zoo.net?subject=subscribe>
+List-Unsubscribe: <mailto:0xdeadbeef-request@petting-zoo.net?subject=unsubscribe>
+Precedence: list
+Resent-Sender: 0xdeadbeef-request@petting-zoo.net
+Resent-Date: Sun, 25 Aug 2002 14:10:31 -0700 (PDT)
+
+
+Forwarded-by: Rob Windsor <windsor@warthog.com>
+Forwarded-by: "Dave Bruce" <dbruce@wwd.net>
+Forwarded by: Gary Williams <garyaw1990@aol.com>
+
+A Mother had 3 virgin daughters. They were all getting married within a 
+short time period. Because Mom was a bit worried about how their sex 
+life would get started, she made them all promise to send a postcard 
+from the honeymoon with a few words on how marital sex felt. 
+
+The first girl sent a card from Hawaii two days after the wedding.  The 
+card said nothing but "Maxwell House".  Mom was puzzled at first, but 
+then went to the kitchen and got out the Nescafe jar. It said: "Good till 
+the last drop." Mom blushed, but was pleased for her daughter. 
+
+The second girl sent the card from Vermont a week after the wedding, 
+and the card read: "Benson & Hedges".  Mom now knew to go straight to 
+her husband's cigarettes, and she read from the Benson & Hedges pack: 
+"Extra Long, King Size".  She was again slightly embarrassed but still 
+happy for her daughter. 
+
+The third girl left for her honeymoon in the Caribbean.  Mom waited for 
+a week, nothing. Another week went by and still nothing.  Then after a 
+whole month, a card finally arrived.  Written on it with shaky 
+handwriting were the words: "British Airways".  Mom took out her latest 
+Harper's Bazaar magazine, flipped through the pages fearing the worst, 
+and finally found the ad for the airline.  The ad said: "Three times a 
+day, seven days a week, both ways." 
+
+Mom fainted. 
+
+

@@ -1,0 +1,23 @@
+
+{{alias}}( iterator )
+    Consumes an entire iterator and returns the number of iterated values.
+
+    Parameters
+    ----------
+    iterator: Object
+        Input iterator over which to iterate.
+
+    Returns
+    -------
+    len: integer
+        Iterator length.
+
+    Examples
+    --------
+    > var arr = {{alias:@stdlib/array/to-iterator}}( [ 0, 0, 0, 0, 1 ] );
+    > var len = {{alias}}( arr )
+    5
+
+    See Also
+    --------
+

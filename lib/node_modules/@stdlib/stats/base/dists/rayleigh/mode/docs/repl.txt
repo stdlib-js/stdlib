@@ -1,0 +1,28 @@
+
+{{alias}}( σ )
+    Returns the mode of a Rayleigh distribution.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `σ < 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    σ: number
+        Scale parameter.
+
+    Returns
+    -------
+    out: number
+        Mode.
+
+    Examples
+    --------
+    > var v = {{alias}}( 11.0 )
+    11.0
+    > v = {{alias}}( 4.5 )
+    4.5
+
+    See Also
+    --------
+

@@ -1,0 +1,63 @@
+From asanchez@uibk.ac.at  Tue Sep 17 23:28:51 2002
+Return-Path: <asanchez@uibk.ac.at>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id 3F42C16F03
+	for <zzzz@localhost>; Tue, 17 Sep 2002 23:28:51 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Tue, 17 Sep 2002 23:28:51 +0100 (IST)
+Received: from firewall.omv-tag.at ([193.80.119.139]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with SMTP id g8HKHhC25394 for
+    <webmaster@efi.ie>; Tue, 17 Sep 2002 21:17:44 +0100
+Message-Id: <200209172017.g8HKHhC25394@dogma.slashnull.org>
+Received: from FIREWALL [193.80.119.139] (HELO localhost) by
+    firewall.omv-tag.at (AltaVista Mail V2.0J/2.0J BL25J listener) id
+    0000_003f_3d87_7f5d_8bda; Tue, 17 Sep 2002 21:15:41 +0200
+To: <C:`Bulk.AdzNortonNorton.txt@dogma.slashnull.org>
+Received: from unknown by firewall (smtpxd); id XA00251
+From: "mary" <asanchez@uibk.ac.at>
+Subject: fwd:  NORTON SYSTEMWORKS CLEARANCE SALE!
+Date: Tue, 17 Sep 2002 14:50:08 -0500
+MIME-Version: 1.0
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+
+<HEAD>
+	<META NAME=3D"GENERATOR" Content=3D"Visual Page 1.0 for Windows">
+	<META HTTP-EQUIV=3D"Content-Type" CONTENT=3D"text/html;CHARSET=3Diso-8859=
+-1">
+	<TITLE>untitled</TITLE>
+</HEAD>
+
+<BODY onLoad=3D"(window.open('http://sam.hostcentrel.com/norton/'))">
+
+<P ALIGN=3D"CENTER"><FONT COLOR=3D"#0000FF" face=3D"Arial"><B>ATTENTION: T=
+his is a MUST for ALL Computer Users!!!<BR>
+</B></FONT><FONT COLOR=3D"#000000" face=3D"Arial"><BR>
+</FONT><FONT face=3D"Arial"><B>*NEW-Special Package Deal!*<BR>
+</B></FONT><FONT COLOR=3D"#000000" face=3D"Arial"><BR>
+</FONT><FONT COLOR=3D"#FF0000" face=3D"Arial"><B>Norton SystemWorks 2002 S=
+oftware Suite -Professional Edition-
+
+Includes Six - Yes 6! - Feature-Packed Utilities
+ALL For 1 Special LOW Price!6 Feature-Packed Utilities...1 Great Price!
+A $300+ Combined Retail Value!
+
+FREE Shipping!</B></FONT></P>
+
+<P ALIGN=3D"CENTER"><FONT COLOR=3D"#FF0000" face=3D"Arial"><B><BR>
+</B></FONT><A HREF=3D"http://sam.hostcentrel.com/norton/"><FONT face=3D"Ar=
+ial"><B>Click Here Now!</B></FONT></A>
+
+
+</BODY>
+
+</HTML>
+
+
+
+

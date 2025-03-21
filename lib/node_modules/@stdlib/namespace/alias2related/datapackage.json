@@ -1,0 +1,56 @@
+{
+  "name": "stdlib-alias2related",
+  "version": "",
+  "title": "Standard Library Aliases and Related Aliases",
+  "description": "A mapping between standard library aliases and related aliases.",
+  "resources": [
+    {
+      "name": "stdlib-alias2related-json",
+      "title": "Standard Library Aliases and Related Aliases",
+      "description": "A mapping between standard library aliases and related aliases.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.json"
+    },
+    {
+      "name": "stdlib-alias2related-csv",
+      "title": "Standard Library Aliases and Related Aliases",
+      "description": "A mapping between standard library aliases and related aliases.",
+      "format": "csv",
+      "mediatype": "plain/csv",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "alias",
+            "title": "Alias",
+            "description": "Alias.",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "related",
+            "title": "Related",
+            "description": "Comma-delimited aliases.",
+            "type": "string",
+            "format": "default"
+          }
+        ]
+      }
+    }
+  ],
+  "sources": [],
+  "keywords": [
+    "stdlib",
+    "namespace",
+    "aliases",
+    "package",
+    "name",
+    "related"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}

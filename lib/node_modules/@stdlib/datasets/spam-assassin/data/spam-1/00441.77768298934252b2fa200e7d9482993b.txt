@@ -1,0 +1,43 @@
+From dbarr4now@earthlink.net  Tue Sep 24 10:52:29 2002
+Return-Path: <dbarr4now@earthlink.net>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id DF91816F16
+	for <zzzz@localhost>; Tue, 24 Sep 2002 10:52:28 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Tue, 24 Sep 2002 10:52:28 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8O6n5C24704 for
+    <zzzz@jmason.org>; Tue, 24 Sep 2002 07:49:05 +0100
+Received: from nexus.wbmultimedia.com.sg ([203.117.141.248]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id HAA17241 for <zzzz@spamassassin.taint.org>;
+    Tue, 24 Sep 2002 07:49:39 +0100
+Date: Tue, 24 Sep 2002 07:49:39 +0100
+From: dbarr4now@earthlink.net
+Message-Id: <200209240649.HAA17241@webnote.net>
+Received: from onz (204.145.237.129 [204.145.237.129]) by
+    nexus.wbmultimedia.com.sg with SMTP (Microsoft Exchange Internet Mail
+    Service Version 5.5.2653.13) id TC5LX1H8; Tue, 24 Sep 2002 14:04:50 +0800
+Subject: Vacation Time,House need work,Behind in Bills? Refinance while rates are low
+To: undisclosed-recipients:;
+Content-Type: text/html
+
+<html>
+<body>
+<p align="center"><a href="http://www.directmedium.com/bestrates/">
+<img border="0" src="http://www.directmedium.com/images/mort19.gif" width="500" height="300"></a></p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p><font face="Arial" size="1">We are strongly against sending unsolicited emails
+to those who do not wish to receive our special mailings.You have opted in to one or more of our affiliate
+sites requesting to be notified of any special offers we may run from time to
+time. If you do not wish to receive further mailings, please
+<a href="http://www.directmedium.com/remove.htm">click this link </a>.
+Please accept our apologies if you have been sent this email in error. We honor
+all removal requests.</font></p>
+</body>
+</html>
+22
+
+

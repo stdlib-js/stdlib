@@ -1,0 +1,71 @@
+
+{{alias}}( p, a, b[, upper] )
+    Computes the inverse of the lower incomplete beta function.
+
+    In contrast to a more commonly used definition, the first argument is the
+    probability `p` and the second and third arguments are `a` and `b`,
+    respectively.
+
+    By default, the function inverts the lower regularized incomplete beta
+    function. To invert the upper function, set the `upper` argument to `true`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `p < 0` or `p > 1`, the function returns `NaN`.
+
+    If provided `a <= 0` or `b <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    p: number
+        Probability.
+
+    a: number
+        Second function parameter.
+
+    b: number
+        Third function parameter.
+
+    upper: boolean (optional)
+        Boolean indicating if the function should invert the upper tail of the
+        incomplete beta function. Default: `false`.
+
+    Returns
+    -------
+    y: number
+        Function value.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.2, 3.0, 3.0 )
+    ~0.327
+    > y = {{alias}}( 0.4, 3.0, 3.0 )
+    ~0.446
+    > y = {{alias}}( 0.4, 3.0, 3.0, true )
+    ~0.554
+    > y = {{alias}}( 0.4, 1.0, 6.0 )
+    ~0.082
+    > y = {{alias}}( 0.8, 1.0, 6.0 )
+    ~0.235
+    > y = {{alias}}( NaN, 1.0, 1.0 )
+    NaN
+    > y = {{alias}}( 0.5, NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 0.5, 1.0, NaN )
+    NaN
+    > y = {{alias}}( 1.2, 1.0, 1.0 )
+    NaN
+    > y = {{alias}}( -0.5, 1.0, 1.0 )
+    NaN
+    > y = {{alias}}( 0.5, -2.0, 2.0 )
+    NaN
+    > y = {{alias}}( 0.5, 0.0, 2.0 )
+    NaN
+    > y = {{alias}}( 0.5, 2.0, -2.0 )
+    NaN
+    > y = {{alias}}( 0.5, 2.0, 0.0 )
+    NaN
+
+    See Also
+    --------
+

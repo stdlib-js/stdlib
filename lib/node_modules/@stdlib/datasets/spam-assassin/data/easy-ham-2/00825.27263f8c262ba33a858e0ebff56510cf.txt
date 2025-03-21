@@ -1,0 +1,79 @@
+From fork-admin@xent.com  Wed Jul 24 10:55:23 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 306EB440CC
+	for <jm@localhost>; Wed, 24 Jul 2002 05:55:23 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 10:55:23 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6O9po402167 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 10:51:51 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 288CB29410C; Wed, 24 Jul 2002 02:41:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from venus.phpwebhosting.com (venus.phpwebhosting.com
+    [64.29.16.27]) by xent.com (Postfix) with SMTP id 73DD82940F0 for
+    <fork@xent.com>; Wed, 24 Jul 2002 02:40:26 -0700 (PDT)
+Received: (qmail 25165 invoked by uid 508); 24 Jul 2002 09:49:37 -0000
+Received: from unknown (HELO hydrogen.leitl.org) (217.80.40.47) by
+    venus.phpwebhosting.com with SMTP; 24 Jul 2002 09:49:37 -0000
+Received: from localhost (eugen@localhost) by hydrogen.leitl.org
+    (8.11.6/8.11.6) with ESMTP id g6O9nU820638; Wed, 24 Jul 2002 11:49:31
+    +0200
+X-Authentication-Warning: hydrogen.leitl.org: eugen owned process doing -bs
+From: Eugen Leitl <eugen@leitl.org>
+To: Mike Masnick <mike@techdirt.com>
+Cc: Gordon Mohr <gojomo@usa.net>, <fork@spamassassin.taint.org>
+Subject: Re: Mossberg on 'ChoiceMail': "In my tests, it cut my spam to  zero."
+In-Reply-To: <3.0.32.20020723231125.03bc2cf0@techdirt.com>
+Message-Id: <Pine.LNX.4.33.0207241144280.18093-100000@hydrogen.leitl.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 24 Jul 2002 11:49:30 +0200 (CEST)
+
+On Tue, 23 Jul 2002, Mike Masnick wrote:
+
+> Lately, a fairly large % of the spam I've been getting has been coming
+> from spam systems that forge my own address as the "from" address...
+
+Include a random token with an expiration date with anything you send.  
+Valid whitelisting of From:you@here.net yet invalid random token would get 
+blocked.
+
+> Those spam messages would get through any whitelist I set up
+> (especially since I email stuff to myself all the time).  If
+> whitelists become more popular, I imagine spammers will resort to
+> doing that for the majority of their spams, making whitelists less
+> helpful.
+
+Spammers cannot be bothered to keep track if individual whitelists 
+associated with a given email address.
+ 
+> Plus, I'm still not sure how I feel about whitelists.  I don't think I'm so
+> special that people should need to fill out a special form just to send me
+
+Of course you populate your whitelist with contents of your inbox minus 
+spam, and then add manually stuff from your addressbook.
+
+> email.  I could see certain friends of mine getting fairly annoyed
+> (especially those with multiple email addresses...).
+
+What's the point of multiple email addresses? They're a pain.
+
+http://xent.com/mailman/listinfo/fork
+
+

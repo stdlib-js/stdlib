@@ -1,0 +1,60 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Fri Sep  6 15:45:27 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Fri, 06 Sep 2002 10:45:27 -0400
+Subject: [Spambayes] test sets?
+In-Reply-To: <15736.5577.157228.229200@12-248-11-90.client.attbi.com>
+Message-ID: <LNBBLJKPBEHFEDALKOLCGEHCBCAB.tim.one@comcast.net>
+
+[Tim]
+> OTOH, my Data/ subtree currently has more than 35,000 files slobbering
+> over 134 million bytes -- even if I had a place to put that much stuff,
+> I'm not sure my ISP would let me email it in one msg <wink>.
+
+[Skip]
+> Do you have a dialup or something more modern <wink>?
+
+Much more modern:  a cable modem with a small upload rate cap.  There's a
+reason the less modern uncapped @Home went out of business <wink>.
+
+> 134MB of messages zipped would probably compress pretty well - under 50MB
+> I'd guess with all the similarity in the headers and such.  You could zip
+> each of the 10 sets individually and upload them somewhere.
+
+I suppose this could finish over the course of an afternoon.  Now where's
+"somewhere"?  I expect we'll eventually collect several datasets;
+SourceForge isn't a good place for it (they expect projects to distribute
+relatively small code files, and complain if even those get big).
+
+> ...
+> How about random sampling lots of public mailing lists via gmane or
+> something similar, manually cleaning it (distributing that load over a
+> number of people) and then relying on your clever code and your
+> rebalancing script to help further cleanse it?
+
+What then are we training the classifier to do?  Graham's scoring scheme is
+based on an assumption that the ham-vs-spam task is *easy*, and half of that
+is due to that the ham has a lot in common.  It was an experiment to apply
+his scheme to all the comp.lang.python traffic, which is a lot broader than
+he had in mind (c.l.py has long had a generous definition of "on topic"
+<wink>).  I don't expect good things to come of making it ever broader,
+*unless* your goal is to investigate just how broad it can be made before it
+breaks down.
+
+> The "problem" with the ham is it tends to be much more tied to one person
+> (not just intimate, but unique) than the spam.
+
+Which is "a feature" from Graham's POV:  the more clues, the better this
+"smoking guns only" approach should work.
+
+> I save all incoming email for ten days (gzipped mbox format) before it
+rolls
+> over and disappears.  At any one time I think I have about 8,000-10,000
+> messages.  Most of it isn't terribly personal (which I would cull before
+> passing along anyway) and much of it is machine-generated, so would be of
+> marginal use.  Finally, it's all ham-n-spam mixed together.  Do we call
+> that an omelette or a Denny's Grand Slam?
+
+Unless you're volunteering to clean it, tag it, package it, and distribute
+it, I'd call it irrelevant <wink>.
+

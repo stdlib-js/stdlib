@@ -1,0 +1,81 @@
+
+{{alias}}( p, μ, β )
+    Evaluates the quantile function for a Gumbel distribution with location
+    parameter `μ` and scale parameter `β` at a probability `p`.
+
+    If `p < 0` or `p > 1`, the function returns `NaN`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `β <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    p: number
+        Input probability.
+
+    μ: number
+        Location parameter.
+
+    β: number
+        Scale parameter.
+
+    Returns
+    -------
+    out: number
+        Evaluated quantile function.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.8, 0.0, 1.0 )
+    ~1.5
+    > y = {{alias}}( 0.5, 4.0, 2.0 )
+    ~4.733
+    > y = {{alias}}( 0.5, 4.0, 4.0 )
+    ~5.466
+
+    > y = {{alias}}( 1.1, 0.0, 1.0 )
+    NaN
+    > y = {{alias}}( -0.2, 0.0, 1.0 )
+    NaN
+
+    > y = {{alias}}( NaN, 0.0, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, 0.0, NaN )
+    NaN
+
+    // Negative scale parameter:
+    > y = {{alias}}( 0.5, 0.0, -1.0 )
+    NaN
+
+
+{{alias}}.factory( μ, β )
+    Returns a function for evaluating the quantile function of a Gumbel
+    distribution with location parameter `μ` and scale parameter `β`.
+
+    Parameters
+    ----------
+    μ: number
+        Location parameter.
+
+    β: number
+        Scale parameter.
+
+    Returns
+    -------
+    quantile: Function
+        Quantile function.
+
+    Examples
+    --------
+    > var myQuantile = {{alias}}.factory( 8.0, 2.0 );
+    > var y = myQuantile( 0.5 )
+    ~8.733
+    > y = myQuantile( 0.7 )
+    ~10.062
+
+    See Also
+    --------
+

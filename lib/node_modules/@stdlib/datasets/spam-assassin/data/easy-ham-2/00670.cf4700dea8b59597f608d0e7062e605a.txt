@@ -1,0 +1,77 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Fri Jul 19 16:42:11 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C4FE4440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 11:42:11 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 16:42:11 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6JFbAJ09807 for <jm-sa@jmason.org>; Fri, 19 Jul 2002 16:37:10 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17VZmb-0004j9-00; Fri,
+    19 Jul 2002 08:35:05 -0700
+Received: from [213.105.180.140] (helo=mandark.labs.netnoteinc.com) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17VZln-00062I-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Fri, 19 Jul 2002 08:34:15 -0700
+Received: from phobos.labs.netnoteinc.com (phobos.labs.netnoteinc.com
+    [192.168.2.14]) by mandark.labs.netnoteinc.com (8.11.6/8.11.6) with ESMTP
+    id g6JFY4p01691; Fri, 19 Jul 2002 16:34:04 +0100
+Received: by phobos.labs.netnoteinc.com (Postfix, from userid 500) id
+    56071440C8; Fri, 19 Jul 2002 11:33:30 -0400 (EDT)
+Received: from phobos (localhost [127.0.0.1]) by
+    phobos.labs.netnoteinc.com (Postfix) with ESMTP id 51401341DA;
+    Fri, 19 Jul 2002 16:33:30 +0100 (IST)
+To: "Christopher Crowley" <ccrowley@tulane.edu>
+Cc: gagel@cnc.bc.ca, spamassassin-talk@example.sourceforge.net
+Subject: Re: [SAtalk] Removing SPAM: from SA notice
+In-Reply-To: Message from
+    "Christopher Crowley"
+    <ccrowley@tulane.edu> of
+    "Fri, 19 Jul 2002 10:16:06 CDT."
+    <3e3101c22f37$3a652890$19775181@netview>
+From: yyyy@spamassassin.taint.org (Justin Mason)
+X-GPG-Key-Fingerprint: 0A48 2D8B 0B52 A87D 0E8A  6ADD 4137 1B50 6E58 EF0A
+Message-Id: <20020719153330.56071440C8@phobos.labs.netnoteinc.com>
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Fri, 19 Jul 2002 16:33:25 +0100
+Date: Fri, 19 Jul 2002 16:33:25 +0100
+
+
+"Christopher Crowley" said:
+
+> That says that every line is prefixed with "SPAM: ". Could you
+> explain how to configure that in 10_misc.cf or in local.cf ?
+
+The problem with the "SPAM: " prefix, is that it's required for
+spamassassin -d (removing SpamAssassin markup) to work correctly.
+
+--j.
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

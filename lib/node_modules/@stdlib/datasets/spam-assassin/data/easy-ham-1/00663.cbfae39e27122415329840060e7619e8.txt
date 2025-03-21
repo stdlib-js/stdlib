@@ -1,0 +1,58 @@
+From fork-admin@xent.com  Fri Sep 20 11:32:46 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 3F4B416F03
+	for <jm@localhost>; Fri, 20 Sep 2002 11:32:46 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 20 Sep 2002 11:32:46 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8JLxjC05374 for <jm@jmason.org>;
+    Thu, 19 Sep 2002 22:59:45 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 2BFDB294171; Thu, 19 Sep 2002 14:56:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from crank.slack.net (slack.net [166.84.151.181]) by xent.com
+    (Postfix) with ESMTP id 4071F29409C for <fork@xent.com>; Thu,
+    19 Sep 2002 14:55:07 -0700 (PDT)
+Received: by crank.slack.net (Postfix, from userid 596) id 812293EDAF;
+    Thu, 19 Sep 2002 18:02:52 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1]) by crank.slack.net
+    (Postfix) with ESMTP id 7F93F3EB72; Thu, 19 Sep 2002 18:02:52 -0400 (EDT)
+From: Tom <tomwhore@slack.net>
+To: "Mr. FoRK" <fork_list@hotmail.com>
+Cc: fork@spamassassin.taint.org
+Subject: Re: Avast there matey
+In-Reply-To: <DAV56idcDjoYAPNXRPm00000075@hotmail.com>
+Message-Id: <Pine.BSO.4.44.0209191756310.6216-100000@crank.slack.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 19 Sep 2002 18:02:52 -0400 (EDT)
+
+On Thu, 19 Sep 2002, Mr. FoRK wrote:
+--]I think it went like this: "I won't thrash you Tom, if you shiver my
+--]timber..."
+--]Or maybe that was just the butt pirates...
+--]
+
+How did I get wrangled into this thread?
+Do I really need to make pewp deck jokes at this point.
+
+Arrrrg ye mateys, now best ya be off tis topic or Ill hoist my jib and
+hope for a stiff wind. Arrrg when Im happy and arrrg when Im not.
+
+
+

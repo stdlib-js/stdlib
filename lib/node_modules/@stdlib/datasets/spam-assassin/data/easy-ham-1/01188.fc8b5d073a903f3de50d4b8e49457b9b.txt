@@ -1,0 +1,72 @@
+From rpm-list-admin@freshrpms.net  Tue Sep 24 19:48:36 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id A98EC16F03
+	for <jm@localhost>; Tue, 24 Sep 2002 19:48:34 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 24 Sep 2002 19:48:34 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8OI3GC15695 for
+    <jm-rpm@jmason.org>; Tue, 24 Sep 2002 19:03:17 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g8OHx2f06770; Tue, 24 Sep 2002 19:59:02
+    +0200
+Received: from yak.fluid.com
+    (IDENT:c3KwZIjjSfPfhCErniJnTbxW3U8s/NCK@yak.fluid.com [63.76.105.204]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g8OHvjf28951 for
+    <rpm-list@freshrpms.net>; Tue, 24 Sep 2002 19:57:45 +0200
+Received: from lefty.fluid.com ([63.76.105.89]) by yak.fluid.com with
+    esmtp (Exim 4.10 #2) for rpm-list@freshrpms.net id 17tttq-0001RD-00;
+    Tue, 24 Sep 2002 10:55:06 -0700
+Message-Id: <3D90A792.6070307@fluid.com>
+From: Troy Engel <tengel@fluid.com>
+Organization: Fluid
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.1) Gecko/20020827
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: freshrpms <rpm-zzzlist@freshrpms.net>
+Subject: netatalk-1.5.5-1rh7
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+X-Reply-To: tengel@fluid.com
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Tue, 24 Sep 2002 10:57:38 -0700
+Date: Tue, 24 Sep 2002 10:57:38 -0700
+
+Hi folks, I just uploaded RPMS of the new netatalk 1.5.5 released 
+yesterday, thought folks here might be interested.  This release fixes a 
+nastygram in saving files via Illustrator that I personally have been 
+waiting for....
+
+   http://ftp.falsehope.com/home/tengel/netatalk/
+
+(will be mirrored on rpmfind.net by tomorrow, usually).
+
+-te
+
+-- 
+Troy Engel, Systems Engineer
+Cool as the other side of the pillow
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

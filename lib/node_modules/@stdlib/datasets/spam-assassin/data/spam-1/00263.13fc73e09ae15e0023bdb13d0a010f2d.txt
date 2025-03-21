@@ -1,0 +1,64 @@
+Return-Path: ler@lerami.lerctr.org
+Delivery-Date: Sat Sep  7 06:14:26 2002
+Received: via dmail-2002(12) for +lists/freebsd/ports; Sat, 7 Sep 2002 06:14:26 -0500 (CDT)
+Return-Path: <owner-freebsd-ports@FreeBSD.ORG>
+Received: from mx2.freebsd.org (mx2.FreeBSD.org [216.136.204.119])
+	by lerami.lerctr.org (8.12.2/8.12.2/20020902/$Revision: 1.30 $) with ESMTP id g87BEIX2008158
+	for <ler@lerctr.org>; Sat, 7 Sep 2002 06:14:19 -0500 (CDT)
+Received: from hub.freebsd.org (hub.FreeBSD.org [216.136.204.18])
+	by mx2.freebsd.org (Postfix) with ESMTP
+	id D6B0B5548A; Sat,  7 Sep 2002 04:14:14 -0700 (PDT)
+	(envelope-from owner-freebsd-ports@FreeBSD.ORG)
+Received: by hub.freebsd.org (Postfix, from userid 538)
+	id 448B137B401; Sat,  7 Sep 2002 04:14:14 -0700 (PDT)
+Received: from localhost (localhost [127.0.0.1])
+	by hub.freebsd.org (Postfix) with SMTP
+	id 33D712E8016; Sat,  7 Sep 2002 04:14:14 -0700 (PDT)
+Received: by hub.freebsd.org (bulk_mailer v1.12); Sat, 7 Sep 2002 04:14:14 -0700
+Delivered-To: freebsd-ports@freebsd.org
+Received: from mx1.FreeBSD.org (mx1.FreeBSD.org [216.136.204.125])
+	by hub.freebsd.org (Postfix) with ESMTP id 31C6137B400
+	for <ports@freebsd.org>; Sat,  7 Sep 2002 04:14:13 -0700 (PDT)
+Received: from mgate.netpath.ne.jp (lilac.netpath.ne.jp [210.253.168.208])
+	by mx1.FreeBSD.org (Postfix) with SMTP id 4816543E65
+	for <ports@freebsd.org>; Sat,  7 Sep 2002 04:14:12 -0700 (PDT)
+	(envelope-from joko@rs.128.ne.jp)
+Received: (qmail 46020 invoked from network); 7 Sep 2002 09:24:03 -0000
+Received: from p6044-ipad22marunouchi.tokyo.ocn.ne.jp (HELO D) (61.214.35.44)
+  by lilac.netpath.ne.jp with SMTP; 7 Sep 2002 09:24:03 -0000
+From: =?iso-2022-jp?B?am9rb0Bycy4xMjgubmUuanA=?=@FreeBSD.ORG
+To: =?iso-2022-jp?B?MTIx?=@FreeBSD.ORG
+Reply-To: joko@rs.128.ne.jp
+Date: Sat, 07 Sep 2002 18:24:06 +0900
+Subject: =?iso-2022-jp?B?GyRCJDckOCRfJEgkYiRiJE4lMyVpJVwlbCE8JTclZyVzGyhK?=
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+Message-Id: <20020907111412.4816543E65@mx1.FreeBSD.org>
+Sender: owner-freebsd-ports@FreeBSD.ORG
+List-ID: <freebsd-ports.FreeBSD.ORG>
+List-Archive: <http://docs.freebsd.org/mail/> (Web Archive)
+List-Help: <mailto:majordomo@FreeBSD.ORG?subject=help> (List Instructions)
+List-Subscribe: <mailto:majordomo@FreeBSD.ORG?subject=subscribe%20freebsd-ports>
+List-Unsubscribe: <mailto:majordomo@FreeBSD.ORG?subject=unsubscribe%20freebsd-ports>
+X-Loop: FreeBSD.org
+Precedence: bulk
+X-Virus-Scanned: by amavisd-milter (http://amavis.org/)
+X-Status: 
+X-Keywords: 
+
+ももがはじけてぶどうがゆれる
+しじみともものコラボレーション
+ロリータビデオ（ＤＶＤ）専門
+いつまで営業できるかわかりません
+ご注文はお早めに！
+http://www.transrave.com/PC/rori
+作品例
+少女伝説　名古屋団地9　少女の道草
+などなど132作品。好評発売中！
+(^-^)/~ロリ炉利ムトー
+
+
+To Unsubscribe: send mail to majordomo@FreeBSD.org
+with "unsubscribe freebsd-ports" in the body of the message
+

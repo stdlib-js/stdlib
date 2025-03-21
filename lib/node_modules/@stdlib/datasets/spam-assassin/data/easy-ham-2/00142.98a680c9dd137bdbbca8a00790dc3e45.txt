@@ -1,0 +1,75 @@
+From ilug-admin@linux.ie  Mon Jul 29 11:28:36 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id ACB414415B
+	for <jm@localhost>; Mon, 29 Jul 2002 06:25:22 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 11:25:22 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6T9ZTi20423 for
+    <jm-ilug@jmason.org>; Mon, 29 Jul 2002 10:35:29 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA03097; Mon, 29 Jul 2002 10:33:44 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from bbnmg1.net.external.hp.com (bbnmg1.net.external.hp.com
+    [192.6.76.73]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id KAA03057 for
+    <ilug@linux.ie>; Mon, 29 Jul 2002 10:33:27 +0100
+Received: from eiach.bbn.hp.com (eiach.bbn.hp.com [15.140.168.10]) by
+    bbnmg1.net.external.hp.com (Postfix) with SMTP id 7F699239 for
+    <ilug@linux.ie>; Mon, 29 Jul 2002 11:33:27 +0200 (METDST)
+Received: from 15.140.168.10 by eiach.bbn.hp.com (InterScan E-Mail
+    VirusWall NT); Mon, 29 Jul 2002 11:33:24 +0200
+Received: by eiach.bbn.hp.com with Internet Mail Service (5.5.2655.55) id
+    <PTBV8594>; Mon, 29 Jul 2002 11:33:24 +0200
+Message-Id: <07A9D2E3B03BD4119FD300D0B747AB2906CEF8C9@mahler.bbn.hp.com>
+From: "PETAZZONI,THOMAS (Non-HP-Germany,ex1)" <thomas.petazzoni@non.hp.com>
+To: "'ilug@linux.ie'" <ilug@linux.ie>
+Date: Mon, 29 Jul 2002 11:33:17 +0200
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2655.55)
+Content-Type: text/plain; charset="iso-8859-1"
+Subject: [ILUG] Training in Ireland ?
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Hi,
+
+This might appear as a very strange email. Maybe it is ;)
+
+I'm french, and I'm currently studying in a engineer school in France,
+called UTBM (http://www.utbm.fr). Next year, from February to July, I have
+to do a practice somewhere in the world (in France or elsewhere).
+
+I'm a Linux user and developer since a couple of years now (I coordinate the
+KOS project, http://kos.enix.org). That's why I'm looking for a practice in
+which I can use Linux and/or develop Linux/BSD Software. I also prefer
+working in a small company (< 100 people). But since I've never been to
+Ireland (that's why I want to discover this country), and since I have no
+contact there, it is very difficult to find companies.
+
+So, I thought that the local Linux community maybe was able to help me by
+giving some list of companies that are known to work with Linux/BSD or any
+other free software.
+
+Thank you very much for your help
+
+Thomas
+
+Thomas Petazzoni
+thomas.petazzoni@non.hp.com
+KOS : http://kos.enix.org
+Perso : http://kos.enix.org/~thomas/ 
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

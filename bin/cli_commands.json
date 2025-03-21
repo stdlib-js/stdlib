@@ -1,0 +1,956 @@
+[
+	{
+		"command": "help [command]",
+		"description": "Print a help message.",
+		"path": "",
+		"group": "general"
+	},
+	{
+		"command": "arch",
+		"description": "Operating system CPU architecture.",
+		"path": "@stdlib/os/arch",
+		"group": "system"
+	},
+	{
+		"command": "bench",
+		"description": "Run JavaScript benchmark files.",
+		"path": "@stdlib/bench",
+		"group": "benchmarking"
+	},
+	{
+		"command": "bundle-pkg-list",
+		"description": "Bundle a list of stdlib packages.",
+		"path": "@stdlib/_tools/bundle/pkg-list",
+		"group": "tools"
+	},
+	{
+		"command": "capitalize",
+		"description": "Capitalize the first character in a string.",
+		"path": "@stdlib/string/capitalize",
+		"group": "utilities"
+	},
+	{
+		"command": "configdir",
+		"description": "Configuration directory path.",
+		"path": "@stdlib/os/configdir",
+		"group": "system"
+	},
+	{
+		"command": "convert-path",
+		"description": "Convert between Windows and POSIX paths.",
+		"path": "@stdlib/utils/convert-path",
+		"group": "utilities"
+	},
+	{
+		"command": "cwd",
+		"description": "Current working directory.",
+		"path": "@stdlib/process/cwd",
+		"group": "system"
+	},
+	{
+		"command": "datasets",
+		"description": "Retrieve a dataset.",
+		"path": "@stdlib/datasets",
+		"group": "general"
+	},
+	{
+		"command": "day-of-quarter",
+		"description": "Calculate day of quarter.",
+		"path": "@stdlib/time/day-of-quarter",
+		"group": "time"
+	},
+	{
+		"command": "day-of-year",
+		"description": "Calculate day of year.",
+		"path": "@stdlib/time/day-of-year",
+		"group": "time"
+	},
+	{
+		"command": "days-in-month",
+		"description": "Calculate the number of days in a month.",
+		"path": "@stdlib/time/days-in-month",
+		"group": "time"
+	},
+	{
+		"command": "days-in-year",
+		"description": "Calculate the number of days in a year.",
+		"path": "@stdlib/time/days-in-year",
+		"group": "time"
+	},
+	{
+		"command": "ends-with",
+		"description": "Test if a string ends with another string.",
+		"path": "@stdlib/string/ends-with",
+		"group": "utilities"
+	},
+	{
+		"command": "exists",
+		"description": "Test if a file exists.",
+		"path": "@stdlib/fs/exists",
+		"group": "filesystem"
+	},
+	{
+		"command": "from-code-point",
+		"description": "Create a string from code points.",
+		"path": "@stdlib/string/from-code-point",
+		"group": "utilities"
+	},
+	{
+		"command": "has-arraybuffer-support",
+		"description": "Detect ArrayBuffer support.",
+		"path": "@stdlib/assert/has-arraybuffer-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-async-await-support",
+		"description": "Detect async/await support.",
+		"path": "@stdlib/assert/has-async-await-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-async-iterator-symbol-support",
+		"description": "Detect Symbol.asyncIterator support.",
+		"path": "@stdlib/assert/has-async-iterator-symbol-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-class-support",
+		"description": "Detect ES6 class support.",
+		"path": "@stdlib/assert/has-class-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-float32array-support",
+		"description": "Detect Float32Array support.",
+		"path": "@stdlib/assert/has-float32array-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-float64array-support",
+		"description": "Detect Float64Array support.",
+		"path": "@stdlib/assert/has-float64array-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-function-name-support",
+		"description": "Detect function name support.",
+		"path": "@stdlib/assert/has-function-name-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-generator-support",
+		"description": "Detect generator support.",
+		"path": "@stdlib/assert/has-generator-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-int16array-support",
+		"description": "Detect Int16Array support.",
+		"path": "@stdlib/assert/has-int16array-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-int32array-support",
+		"description": "Detect Int32Array support.",
+		"path": "@stdlib/assert/has-int32array-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-int8array-support",
+		"description": "Detect Int8Array support.",
+		"path": "@stdlib/assert/has-int8array-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-iterator-symbol-support",
+		"description": "Detect Symbol.iterator support.",
+		"path": "@stdlib/assert/has-iterator-symbol-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-map-support",
+		"description": "Detect Map support.",
+		"path": "@stdlib/assert/has-map-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-node-buffer-support",
+		"description": "Detect Node buffer support.",
+		"path": "@stdlib/assert/has-node-buffer-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-proxy-support",
+		"description": "Detect Proxy support.",
+		"path": "@stdlib/assert/has-proxy-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-set-support",
+		"description": "Detect Set support.",
+		"path": "@stdlib/assert/has-set-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-sharedarraybuffer-support",
+		"description": "Detect SharedArrayBuffer support.",
+		"path": "@stdlib/assert/has-sharedarraybuffer-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-symbol-support",
+		"description": "Detect Symbol support.",
+		"path": "@stdlib/assert/has-symbol-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-tostringtag-support",
+		"description": "Detect Symbol.toStringTag support.",
+		"path": "@stdlib/assert/has-tostringtag-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-uint16array-support",
+		"description": "Detect Uit16Array support.",
+		"path": "@stdlib/assert/has-uint16array-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-uint32array-support",
+		"description": "Detect Uit32Array support.",
+		"path": "@stdlib/assert/has-uint32array-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-uint8array-support",
+		"description": "Detect Uit8Array support.",
+		"path": "@stdlib/assert/has-uint8array-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-uint8clampedarray-support",
+		"description": "Detect Uit8ClampedArray support.",
+		"path": "@stdlib/assert/has-uint8clampedarray-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-wasm-support",
+		"description": "Detect WebAssembly support.",
+		"path": "@stdlib/assert/has-wasm-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-weakmap-support",
+		"description": "Detect WeakMap support.",
+		"path": "@stdlib/assert/has-weakmap-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-weakset-support",
+		"description": "Detect WeakSet support.",
+		"path": "@stdlib/assert/has-weakset-support",
+		"group": "assert"
+	},
+	{
+		"command": "homedir",
+		"description": "Home directory path.",
+		"path": "@stdlib/os/homedir",
+		"group": "system"
+	},
+	{
+		"command": "hours-in-month",
+		"description": "Calculate the number of hours in a month.",
+		"path": "@stdlib/time/hours-in-month",
+		"group": "time"
+	},
+	{
+		"command": "hours-in-year",
+		"description": "Calculate the number of hours in a year.",
+		"path": "@stdlib/time/hours-in-year",
+		"group": "time"
+	},
+	{
+		"command": "iso-weeks-in-year",
+		"description": "Calculate the number of ISO weeks in a year.",
+		"path": "@stdlib/time/iso-weeks-in-year",
+		"group": "time"
+	},
+	{
+		"command": "is-absolute-path",
+		"description": "Assert an absolute path.",
+		"path": "@stdlib/assert/is-absolute-path",
+		"group": "assert"
+	},
+	{
+		"command": "is-alphagram",
+		"description": "Assert if a value is an alphagram.",
+		"path": "@stdlib/assert/is-alphagram",
+		"group": "assert"
+	},
+	{
+		"command": "is-alphanumeric",
+		"description": "Assert if a value is alphanumeric.",
+		"path": "@stdlib/assert/is-alphanumeric",
+		"group": "assert"
+	},
+	{
+		"command": "is-anagram",
+		"description": "Assert if a value is an anagram.",
+		"path": "@stdlib/assert/is-anagram",
+		"group": "assert"
+	},
+	{
+		"command": "is-ascii",
+		"description": "Assert if a value is ASCII.",
+		"path": "@stdlib/assert/is-ascii",
+		"group": "assert"
+	},
+	{
+		"command": "is-binary-string",
+		"description": "Assert if a value is a binary string.",
+		"path": "@stdlib/assert/is-binary-string",
+		"group": "assert"
+	},
+	{
+		"command": "is-capitalized",
+		"description": "Assert if a value is capitalized.",
+		"path": "@stdlib/assert/is-capitalized",
+		"group": "assert"
+	},
+	{
+		"command": "is-digit-string",
+		"description": "Assert if a value is a digit string.",
+		"path": "@stdlib/assert/is-digit-string",
+		"group": "assert"
+	},
+	{
+		"command": "is-email-address",
+		"description": "Assert if a value is an email address.",
+		"path": "@stdlib/assert/is-email-address",
+		"group": "assert"
+	},
+	{
+		"command": "is-hex-string",
+		"description": "Assert if a value is a hexadecimal string.",
+		"path": "@stdlib/assert/is-hex-string",
+		"group": "assert"
+	},
+	{
+		"command": "is-leap-year",
+		"description": "Assert if a leap year.",
+		"path": "@stdlib/assert/is-leap-year",
+		"group": "assert"
+	},
+	{
+		"command": "is-little-endian",
+		"description": "Assert if little endian.",
+		"path": "@stdlib/assert/is-little-endian",
+		"group": "assert"
+	},
+	{
+		"command": "is-lowercase",
+		"description": "Assert if a value is lowercase.",
+		"path": "@stdlib/assert/is-lowercase",
+		"group": "assert"
+	},
+	{
+		"command": "is-regexp-string",
+		"description": "Assert if a value is a regexp string.",
+		"path": "@stdlib/assert/is-regexp-string",
+		"group": "assert"
+	},
+	{
+		"command": "is-unc-path",
+		"description": "Assert a UNC path.",
+		"path": "@stdlib/assert/is-unc-path",
+		"group": "assert"
+	},
+	{
+		"command": "is-uppercase",
+		"description": "Assert if a value is uppercase.",
+		"path": "@stdlib/assert/is-uppercase",
+		"group": "assert"
+	},
+	{
+		"command": "is-uri",
+		"description": "Assert if a value is a URI.",
+		"path": "@stdlib/assert/is-uri",
+		"group": "assert"
+	},
+	{
+		"command": "is-whitespace",
+		"description": "Assert if a value is only whitespace.",
+		"path": "@stdlib/assert/is-whitespace",
+		"group": "assert"
+	},
+	{
+		"command": "js-eval",
+		"description": "Evaluate a JavaScript string.",
+		"path": "@stdlib/utils/eval",
+		"group": "utilities"
+	},
+	{
+		"command": "library-manifest",
+		"description": "Load a manifest for compiling source files.",
+		"path": "@stdlib/utils/library-manifest",
+		"group": "meta"
+	},
+	{
+		"command": "lpad",
+		"description": "Left pad a string.",
+		"path": "@stdlib/string/left-pad",
+		"group": "utilities"
+	},
+	{
+		"command": "ltrim",
+		"description": "Left trim a string.",
+		"path": "@stdlib/string/left-trim",
+		"group": "utilities"
+	},
+	{
+		"command": "lowercase",
+		"description": "Lowercase a string.",
+		"path": "@stdlib/string/lowercase",
+		"group": "utilities"
+	},
+	{
+		"command": "ls",
+		"description": "List stdlib package names.",
+		"path": "@stdlib/_tools/pkgs/names",
+		"group": "meta"
+	},
+	{
+		"command": "ls-tree",
+		"description": "Show stdlib package tree.",
+		"path": "@stdlib/_tools/pkgs/tree",
+		"group": "meta"
+	},
+	{
+		"command": "minutes-in-month",
+		"description": "Calculate the number of minutes in a month.",
+		"path": "@stdlib/time/minutes-in-month",
+		"group": "time"
+	},
+	{
+		"command": "minutes-in-year",
+		"description": "Calculate the number of minutes in a year.",
+		"path": "@stdlib/time/minutes-in-year",
+		"group": "time"
+	},
+	{
+		"command": "node-version",
+		"description": "Node.js version.",
+		"path": "@stdlib/process/node-version",
+		"group": "meta"
+	},
+	{
+		"command": "now",
+		"description": "Number of seconds since the epoch.",
+		"path": "@stdlib/time/now",
+		"group": "time"
+	},
+	{
+		"command": "ns",
+		"description": "Print stdlib namespace.",
+		"path": "@stdlib/namespace",
+		"group": "meta"
+	},
+	{
+		"command": "num-cpus",
+		"description": "Number of CPUs.",
+		"path": "@stdlib/os/num-cpus",
+		"group": "system"
+	},
+	{
+		"command": "random-arcsine",
+		"description": "Arcsine distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/arcsine",
+		"group": "random"
+	},
+	{
+		"command": "random-bernoulli",
+		"description": "Bernoulli distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/bernoulli",
+		"group": "random"
+	},
+	{
+		"command": "random-beta",
+		"description": "Beta distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/beta",
+		"group": "random"
+	},
+	{
+		"command": "random-betaprime",
+		"description": "Beta prime distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/betaprime",
+		"group": "random"
+	},
+	{
+		"command": "random-box-muller",
+		"description": "Box-Muller pseudorandom numbers.",
+		"path": "@stdlib/random/streams/box-muller",
+		"group": "random"
+	},
+	{
+		"command": "random-cauchy",
+		"description": "Cauchy distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/cauchy",
+		"group": "random"
+	},
+	{
+		"command": "random-chi",
+		"description": "Chi distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/chi",
+		"group": "random"
+	},
+	{
+		"command": "random-chisquare",
+		"description": "Chi-square distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/chisquare",
+		"group": "random"
+	},
+	{
+		"command": "random-cosine",
+		"description": "Raised cosine distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/cosine",
+		"group": "random"
+	},
+	{
+		"command": "random-discrete-uniform",
+		"description": "Uniformly distributed pseudorandom integers.",
+		"path": "@stdlib/random/streams/discrete-uniform",
+		"group": "random"
+	},
+	{
+		"command": "random-erlang",
+		"description": "Erlang distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/erlang",
+		"group": "random"
+	},
+	{
+		"command": "random-exponential",
+		"description": "Exponentially distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/exponential",
+		"group": "random"
+	},
+	{
+		"command": "random-f",
+		"description": "F distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/f",
+		"group": "random"
+	},
+	{
+		"command": "random-gamma",
+		"description": "Gamma distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/gamma",
+		"group": "random"
+	},
+	{
+		"command": "random-geometric",
+		"description": "Geometric distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/geometric",
+		"group": "random"
+	},
+	{
+		"command": "random-gumbel",
+		"description": "Gumbel distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/gumbel",
+		"group": "random"
+	},
+	{
+		"command": "random-improved-ziggurat",
+		"description": "Improved Ziggurat pseudorandom numbers.",
+		"path": "@stdlib/random/streams/improved-ziggurat",
+		"group": "random"
+	},
+	{
+		"command": "random-invgamma",
+		"description": "Inverse gamma distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/invgamma",
+		"group": "random"
+	},
+	{
+		"command": "random-kumaraswamy",
+		"description": "Kumaraswamy distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/kumaraswamy",
+		"group": "random"
+	},
+	{
+		"command": "random-laplace",
+		"description": "Laplace distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/laplace",
+		"group": "random"
+	},
+	{
+		"command": "random-levy",
+		"description": "Lévy distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/levy",
+		"group": "random"
+	},
+	{
+		"command": "random-logistic",
+		"description": "Logistic distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/logistic",
+		"group": "random"
+	},
+	{
+		"command": "random-lognormal",
+		"description": "Lognormal distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/lognormal",
+		"group": "random"
+	},
+	{
+		"command": "random-minstd",
+		"description": "Park and Miller LCG pseudorandom numbers.",
+		"path": "@stdlib/random/streams/minstd",
+		"group": "random"
+	},
+	{
+		"command": "random-minstd-shuffle",
+		"description": "Shuffled LCG pseudorandom numbers.",
+		"path": "@stdlib/random/streams/minstd-shuffle",
+		"group": "random"
+	},
+	{
+		"command": "random-mt19937",
+		"description": "32-bit Mersenne Twister pseudorandom numbers.",
+		"path": "@stdlib/random/streams/mt19937",
+		"group": "random"
+	},
+	{
+		"command": "random-normal",
+		"description": "Normally distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/normal",
+		"group": "random"
+	},
+	{
+		"command": "random-pareto-type1",
+		"description": "Pareto (type 1) distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/pareto-type1",
+		"group": "random"
+	},
+	{
+		"command": "random-poisson",
+		"description": "Poisson distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/poisson",
+		"group": "random"
+	},
+	{
+		"command": "random-randi",
+		"description": "Pseudorandom numbers having integer values.",
+		"path": "@stdlib/random/streams/randi",
+		"group": "random"
+	},
+	{
+		"command": "random-randn",
+		"description": "Normally distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/randn",
+		"group": "random"
+	},
+	{
+		"command": "random-randu",
+		"description": "Pseudorandom numbers between 0 and 1.",
+		"path": "@stdlib/random/streams/randu",
+		"group": "random"
+	},
+	{
+		"command": "random-Rayleigh",
+		"description": "Rayleigh distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/rayleigh",
+		"group": "random"
+	},
+	{
+		"command": "random-t",
+		"description": "Student's t distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/t",
+		"group": "random"
+	},
+	{
+		"command": "random-uniform",
+		"description": "Uniformly distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/uniform",
+		"group": "random"
+	},
+	{
+		"command": "random-weibull",
+		"description": "Weibull distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/weibull",
+		"group": "random"
+	},
+	{
+		"command": "open-url",
+		"description": "Open a URL.",
+		"path": "@stdlib/utils/open-url",
+		"group": "utilities"
+	},
+	{
+		"command": "padstr",
+		"description": "Pad a string.",
+		"path": "@stdlib/string/pad",
+		"group": "utilities"
+	},
+	{
+		"command": "parallel",
+		"description": "Execute scripts in parallel.",
+		"path": "@stdlib/utils/parallel",
+		"group": "utilities"
+	},
+	{
+		"command": "percent-encode",
+		"description": "Percent-encode a UTF-16 encoded string.",
+		"path": "@stdlib/string/percent-encode",
+		"group": "utilities"
+	},
+	{
+		"command": "platform",
+		"description": "Platform.",
+		"path": "@stdlib/os/platform",
+		"group": "system"
+	},
+	{
+		"command": "quarter-of-year",
+		"description": "Calculate the quarter of a year.",
+		"path": "@stdlib/time/quarter-of-year",
+		"group": "time"
+	},
+	{
+		"command": "read-dir",
+		"description": "Read all files in a directory.",
+		"path": "@stdlib/fs/read-dir",
+		"group": "filesystem"
+	},
+	{
+		"command": "read-file",
+		"description": "Read a file.",
+		"path": "@stdlib/fs/read-file",
+		"group": "filesystem"
+	},
+	{
+		"command": "read-file-list",
+		"description": "Read a list of files.",
+		"path": "@stdlib/fs/read-file-list",
+		"group": "filesystem"
+	},
+	{
+		"command": "realmax",
+		"description": "Maximum representable finite value.",
+		"path": "@stdlib/utils/real-max",
+		"group": "utilities"
+	},
+	{
+		"command": "realmin",
+		"description": "Minimum representable finite value.",
+		"path": "@stdlib/utils/real-min",
+		"group": "utilities"
+	},
+	{
+		"command": "remove-first",
+		"description": "Remove the first character in a string.",
+		"path": "@stdlib/string/remove-first",
+		"group": "utilities"
+	},
+	{
+		"command": "remove-last",
+		"description": "Remove the last character in a string.",
+		"path": "@stdlib/string/remove-last",
+		"group": "utilities"
+	},
+	{
+		"command": "remove-punctuation",
+		"description": "Remove punctuation characters from a string.",
+		"path": "@stdlib/string/remove-punctuation",
+		"group": "utilities"
+	},
+	{
+		"command": "remove-utf8-bom",
+		"description": "Remove a UTF-8 byte order mark (BOM).",
+		"path": "@stdlib/string/remove-first",
+		"group": "utilities"
+	},
+	{
+		"command": "remove-words",
+		"description": "Remove a list of words from a string.",
+		"path": "@stdlib/string/remove-words",
+		"group": "utilities"
+	},
+	{
+		"command": "rename",
+		"description": "Rename a file.",
+		"path": "@stdlib/fs/rename",
+		"group": "filesystem"
+	},
+	{
+		"command": "repstr",
+		"description": "Repeat a string.",
+		"path": "@stdlib/string/repeat",
+		"group": "utilities"
+	},
+	{
+		"command": "repl",
+		"description": "Start a REPL.",
+		"path": "@stdlib/repl",
+		"group": "general"
+	},
+	{
+		"command": "repl-presentation",
+		"description": "Start a REPL presentation.",
+		"path": "@stdlib/repl/presentation",
+		"group": "general"
+	},
+	{
+		"command": "replace",
+		"description": "Replace search occurrences in a string.",
+		"path": "@stdlib/string/replace",
+		"group": "utilities"
+	},
+	{
+		"command": "resolve-parent-path",
+		"description": "Resolve a path by walking parent directories.",
+		"path": "@stdlib/fs/resolve-parent-path",
+		"group": "filesystem"
+	},
+	{
+		"command": "reverse",
+		"description": "Reverse a string.",
+		"path": "@stdlib/string/reverse",
+		"group": "utilities"
+	},
+	{
+		"command": "rpad",
+		"description": "Right pad a string.",
+		"path": "@stdlib/string/right-pad",
+		"group": "utilities"
+	},
+	{
+		"command": "rtrim",
+		"description": "Right trim a string.",
+		"path": "@stdlib/string/right-trim",
+		"group": "utilities"
+	},
+	{
+		"command": "safeintmax",
+		"description": "Maximum representable safe integer value.",
+		"path": "@stdlib/utils/safe-int-max",
+		"group": "utilities"
+	},
+	{
+		"command": "safeintmin",
+		"description": "Minimum representable safe integer value.",
+		"path": "@stdlib/utils/safe-int-min",
+		"group": "utilities"
+	},
+	{
+		"command": "seconds-in-month",
+		"description": "Calculate the number of seconds in a month.",
+		"path": "@stdlib/time/seconds-in-month",
+		"group": "time"
+	},
+	{
+		"command": "seconds-in-year",
+		"description": "Calculate the number of seconds in a year.",
+		"path": "@stdlib/time/seconds-in-year",
+		"group": "time"
+	},
+	{
+		"command": "sizeof",
+		"description": "Size (in bytes) of a numeric data type.",
+		"path": "@stdlib/utils/size-of",
+		"group": "utilities"
+	},
+	{
+		"command": "sparkline",
+		"description": "Plot a sparkline.",
+		"path": "@stdlib/plot/sparklines/unicode",
+		"group": "plot"
+	},
+	{
+		"command": "startcase",
+		"description": "Capitalize each word in a string.",
+		"path": "@stdlib/string/startcase",
+		"group": "utilities"
+	},
+	{
+		"command": "starts-with",
+		"description": "Test if a string starts with another string.",
+		"path": "@stdlib/string/starts-with",
+		"group": "utilities"
+	},
+	{
+		"command": "temp-http-server",
+		"description": "Create a temporary HTTP server.",
+		"path": "@stdlib/net/disposable-http-server",
+		"group": "utilities"
+	},
+	{
+		"command": "timeit",
+		"description": "Time a JavaScript snippet.",
+		"path": "@stdlib/utils/timeit",
+		"group": "benchmarking"
+	},
+	{
+		"command": "tmpdir",
+		"description": "Directory path for storing temporary files.",
+		"path": "@stdlib/os/tmpdir",
+		"group": "system"
+	},
+	{
+		"command": "trim",
+		"description": "Trim a string.",
+		"path": "@stdlib/string/trim",
+		"group": "utilities"
+	},
+	{
+		"command": "typemax",
+		"description": "Maximum value for a numeric data type.",
+		"path": "@stdlib/utils/type-max",
+		"group": "utilities"
+	},
+	{
+		"command": "typemin",
+		"description": "Minimum value for a numeric data type.",
+		"path": "@stdlib/utils/type-min",
+		"group": "utilities"
+	},
+	{
+		"command": "umask",
+		"description": "Process mask.",
+		"path": "@stdlib/process/umask",
+		"group": "system"
+	},
+	{
+		"command": "uncapitalize",
+		"description": "Uncapitalize a string.",
+		"path": "@stdlib/string/uncapitalize",
+		"group": "utilities"
+	},
+	{
+		"command": "unlink",
+		"description": "Remove a file.",
+		"path": "@stdlib/fs/unlink",
+		"group": "filesystem"
+	},
+	{
+		"command": "uppercase",
+		"description": "Uppercase a string.",
+		"path": "@stdlib/string/uppercase",
+		"group": "utilities"
+	},
+	{
+		"command": "write-file",
+		"description": "Write to file.",
+		"path": "@stdlib/fs/write-file",
+		"group": "filesystem"
+	},
+	{
+		"command": "constant-stream",
+		"description": "Stream a constant value.",
+		"path": "@stdlib/streams/node/from-constant",
+		"group": "utilities"
+	},
+	{
+		"command": "empty-stream",
+		"description": "Empty stream.",
+		"path": "@stdlib/streams/node/empty",
+		"group": "utilities"
+	}
+]

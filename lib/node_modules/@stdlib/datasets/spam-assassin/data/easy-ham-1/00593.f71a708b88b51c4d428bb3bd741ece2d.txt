@@ -1,0 +1,88 @@
+From fork-admin@xent.com  Tue Sep 17 11:30:12 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 8ABEC16F03
+	for <jm@localhost>; Tue, 17 Sep 2002 11:30:11 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 17 Sep 2002 11:30:11 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8H9JaC03588 for <jm@jmason.org>;
+    Tue, 17 Sep 2002 10:19:37 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id AB2CD2940D8; Tue, 17 Sep 2002 02:16:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from venus.phpwebhosting.com (venus.phpwebhosting.com
+    [64.29.16.27]) by xent.com (Postfix) with SMTP id 7132229409F for
+    <FoRK@xent.com>; Tue, 17 Sep 2002 02:15:25 -0700 (PDT)
+Received: (qmail 24536 invoked by uid 508); 17 Sep 2002 09:18:40 -0000
+Received: from unknown (HELO hydrogen.leitl.org) (217.80.40.43) by
+    venus.phpwebhosting.com with SMTP; 17 Sep 2002 09:18:40 -0000
+Received: from localhost (eugen@localhost) by hydrogen.leitl.org
+    (8.11.6/8.11.6) with ESMTP id g8H9IXY03200; Tue, 17 Sep 2002 11:18:33
+    +0200
+X-Authentication-Warning: hydrogen.leitl.org: eugen owned process doing -bs
+From: Eugen Leitl <eugen@leitl.org>
+To: "Stephen D. Williams" <sdw@lig.net>
+Cc: Gary Lawrence Murphy <garym@canada.com>,
+	Udhay Shankar N <udhay@pobox.com>, Adam Rifkin <adam@KnowNow.com>,
+	<FoRK@xent.com>
+Subject: Re: storage bits
+In-Reply-To: <3D8684B4.7060801@lig.net>
+Message-Id: <Pine.LNX.4.33.0209170748460.14309-100000@hydrogen.leitl.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 17 Sep 2002 11:18:33 +0200 (CEST)
+
+On Mon, 16 Sep 2002, Stephen D. Williams wrote:
+
+> To make what work?  I already pointed out that a single drive is
+> comparable between IDE/SCSI.
+
+Alas, that's wrong. Both the drives are faster (10..15 krpm vs. ~7 krpm,
+faster seek), and the EIDE protocol is ridiculously dumb (queing;
+disconnect).
+ 
+> I think you're wrong with recent releases.  I'll check this week. 
+> There's also JFS and XFS.
+
+None of them are production quality. Right now only ext2 and ext3 qualify.  
+It will take a good while (a year, or two) before we can trust anything
+else.
+ 
+> >SCSI has got advantages still, particular if it comes to off-shelf 
+> >high-density racks.
+> >
+> Check out RaidZone.com.
+
+Have you looked inside a dual-CPU 1U Dell? Three drives are easy to get 
+in. Anything else would require a redesign, and would in nontrivial 
+thermal engineering issues.
+ 
+> A number of vendors are putting the Promise IDE hardware on the
+> motherboard.  All that remains is the proper drive socket.
+
+I can't think of a single major vendor who sells 1U systems with hardware
+EIDE RAID.
+
+> Additionally, you can get hardware IDE raid as a pair of drive bays or
+> even an IDE-IDEx2 controller that can be screwed into a 1U chassis.
+
+I believe you that stuff can be found, if one is looking for it. However, 
+I wouldn't put this into production unless I've had that system hanging in 
+the local rack under simulated load for a half a year.
+
+

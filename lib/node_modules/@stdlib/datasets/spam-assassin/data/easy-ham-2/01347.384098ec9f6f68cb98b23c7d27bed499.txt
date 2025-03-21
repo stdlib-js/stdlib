@@ -1,0 +1,83 @@
+Return-Path: yyyy
+Delivery-Date: Tue Aug  6 17:06:20 2002
+Return-Path: <spamassassin-devel-admin@example.sourceforge.net>
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 17:06:20 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g76G62k08769 for <jm@jmason.org>; Tue, 6 Aug 2002 17:06:02 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17c6nW-0000Bd-00; Tue,
+    06 Aug 2002 09:03:02 -0700
+Received: from [194.165.165.199] (helo=mandark.labs.netnoteinc.com) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17c6n2-00057X-00 for <spamassassin-devel@lists.sourceforge.net>;
+    Tue, 06 Aug 2002 09:02:32 -0700
+Received: from phobos.labs.netnoteinc.com (phobos.labs.netnoteinc.com
+    [192.168.2.14]) by mandark.labs.netnoteinc.com (8.11.6/8.11.6) with ESMTP
+    id g76G2Np24031; Tue, 6 Aug 2002 17:02:23 +0100
+Received: by phobos.labs.netnoteinc.com (Postfix, from userid 500) id
+    B11D9440E9; Tue,  6 Aug 2002 09:19:03 -0400 (EDT)
+Received: from phobos (localhost [127.0.0.1]) by
+    phobos.labs.netnoteinc.com (Postfix) with ESMTP id AC6B0341C3;
+    Tue,  6 Aug 2002 14:19:03 +0100 (IST)
+To: Marc Perkel <marc@perkel.com>
+Cc: spamassassin-devel@example.sourceforge.net
+Subject: Re: [SAdev] Adding Scripting to Spam Assassin
+In-Reply-To: Message from Marc Perkel <marc@perkel.com> of
+    "Sat, 03 Aug 2002 09:13:43 PDT."
+    <3D4C0137.9010508@perkel.com>
+From: yyyy@spamassassin.taint.org (Justin Mason)
+X-GPG-Key-Fingerprint: 0A48 2D8B 0B52 A87D 0E8A  6ADD 4137 1B50 6E58 EF0A
+Message-Id: <20020806131903.B11D9440E9@phobos.labs.netnoteinc.com>
+Sender: spamassassin-devel-admin@example.sourceforge.net
+Errors-To: spamassassin-devel-admin@example.sourceforge.net
+X-Beenthere: spamassassin-devel@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-devel-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-devel@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Id: SpamAssassin Developers <spamassassin-devel.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-devel>
+X-Original-Date: Tue, 06 Aug 2002 14:18:58 +0100
+Date: Tue, 06 Aug 2002 14:18:58 +0100
+
+
+Marc -- 
+
+Since perl itself is a scripting language, and allows code to be eval'ed,
+I can't see why we need to go the whole hog and implement another
+turing-complete scripting language in perl.
+
+Let's go back to *why* this would be useful.  As far as I can see, you're
+proposing this to deal with multi-match rules.  There's already a tracker
+in the bug DB for these, with a proposed implementation.
+
+  http://www.hughes-family.org/bugzilla/show_bug.cgi?id=47
+
+I think this might have stalled due to shortcomings in the existnig
+proposal, so I've just added my own thoughts on how to implement them. ;)
+Comments on the proposed system would be welcome folks.... reply to the
+bug db.
+
+--j.
+
+-- 
+'Justin Mason' => { url => http://jmason.org/ , blog => http://taint.org/ }
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-devel mailing list
+Spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+

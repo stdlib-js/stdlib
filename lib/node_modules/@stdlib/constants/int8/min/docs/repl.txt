@@ -1,0 +1,14 @@
+
+{{alias}}
+    Minimum signed 8-bit integer.
+
+    The minimum signed 8-bit integer is given by `-(2^7)`.
+
+    Examples
+    --------
+    > {{alias}}
+    -128
+
+    See Also
+    --------
+

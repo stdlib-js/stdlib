@@ -1,0 +1,13 @@
+{
+	"scale": null,
+	"label": "",
+	"ticks": null,
+	"numTicks": null,
+	"tickFormat": null,
+	"tickSize": 6,
+	"innerTickSize": 6,
+	"outerTickSize": 6,
+	"tickPadding": 3,
+	"orientation": "bottom",
+	"autoRender": false
+}

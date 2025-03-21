@@ -1,0 +1,220 @@
+From razor-users-admin@lists.sourceforge.net  Thu Aug 15 10:50:51 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6C04143C47
+	for <jm@localhost>; Thu, 15 Aug 2002 05:49:29 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 15 Aug 2002 10:49:29 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7EMnb407158 for <jm-razor@jmason.org>; Wed, 14 Aug 2002 23:49:37 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17f6q4-0002hz-00; Wed,
+    14 Aug 2002 15:42:04 -0700
+Received: from pcp01330322pcs.chrstn01.pa.comcast.net ([68.81.131.45]
+    helo=dingus.sparklehouse.com) by usw-sf-list1.sourceforge.net with esmtp
+    (Cipher TLSv1:DES-CBC3-SHA:168) (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17f6pZ-0005BW-00 for <razor-users@lists.sourceforge.net>; Wed,
+    14 Aug 2002 15:41:33 -0700
+Received: from [192.168.1.50] (helo=DARLA) by dingus.sparklehouse.com with
+    smtp (Exim 6.66 #1) id 17f6pP-0007i2-00; Wed, 14 Aug 2002 18:41:23 -0400
+From: "zeek" <zeek@sparklehouse.com>
+To: "Sven Willenberger" <sven@dmv.com>
+Cc: <razor-users@example.sourceforge.net>
+Subject: RE: [Razor-users] Ricochet Question Actually
+Message-Id: <FMEDICOOPIIAHELGINPCEECCCGAA.zeek@sparklehouse.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2910.0)
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+In-Reply-To: <01a101c24304$c8f7d310$f2812d40@landshark>
+Importance: Normal
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Wed, 14 Aug 2002 18:41:32 -0400
+Date: Wed, 14 Aug 2002 18:41:32 -0400
+
+
+
+formail did the trick. Thanks to those who answered. For the sake of
+archives, here's how to "patch" ricochet:
+
+
+1. procmailrc (/tmp/pmrc):
+
+RICOCHET=/usr/local/etc/ricochet
+PMDIR=/tmp
+LOGFILE=$PMDIR/pmlog
+VERBOSE=yes
+MAILDIR=/tmp
+LOGABSTRACT=all
+
+:0 f
+| /usr/local/bin/ri2
+
+
+2. /usr/local/bin/ri2 (to test):
+
+#!/bin/sh
+/usr/local/bin/ricochet -DONT_SEND >/tmp/rico.$$
+
+3. formmail exec:
+
+formail -ds procmail /tmp/pmrc </tmp/spm
+
+-end-
+
+Sorry for such brief instructions. The only problem here is that I get
+another copy of the spam in the spambox again. This can be fixed with some
+procmailrc tweaking (the ":0 f" part).
+
+Cheers,
+-zeek
+
+
+
+> -----Original Message-----
+> From: razor-users-admin@example.sourceforge.net
+> [mailto:razor-users-admin@lists.sourceforge.net]On Behalf Of Sven
+> Willenberger
+> Sent: Tuesday, August 13, 2002 4:06 PM
+> To: zeek@sparklehouse.com
+> Cc: razor-users@example.sourceforge.net
+> Subject: Re: [Razor-users] Ricochet Question Actually
+>
+>
+>
+>
+> ----- Original Message -----
+> > From: "zeek" <zeek@sparklehouse.com>
+> > To: <razor-users@example.sourceforge.net>
+> > Date: Tue, 13 Aug 2002 12:07:10 -0400
+> > Subject: [Razor-users] Ricochet Question Actually
+> >
+> >
+> > Greetings,
+> >
+> > I've not been able to find a list regarding ricochet (closely related to
+> > razor: http://www.vipul.net/ricochet/) so I'm posting here.
+> >
+> > Every few days I manually go through a spam harvest that Spamassassin
+> > collects (by way of checking against osirosoft, razor, et.
+> al.). I do this
+> > with elm and for each piece of verified spam I pipe it to ricochet which
+> > sends it off to the various parties involved (not as accurate
+> as I'd like
+> > BTW). Needless to mention this is quite tedious and takes a considerable
+> > amount of time.
+> >
+> > My question, which is more of a perl/regexp question, is anyone
+> aware of a
+> > script that can take an entire mailbox (in proper UNIX mbox format) and
+> > handle each piece of mail in it? To clarify, I'm looking for something
+> which
+> > takes each piece of mail in a mailbox and pipes it to ricochet. This is
+> very
+> > similar to what razor-report does with the -M option.
+> >
+>
+> Assuming that you have procmail installed you also have its companion
+> formail. Formail can be used to parse an mbox into its component
+> emails and
+> pass them to procmail. Specifiy a procmailrc file to use to
+> filter/test/send
+> each email and you're good to go. You could even set it up as a cron ...
+>
+> example: assuming your mailbox/email is "spambox"
+>
+> `formail -ds procmail /home/spambox/customProcmailrc < /var/mail/spambox`
+>
+> This will take the mbox /var/mail/spambox break it apart at the message
+> separator ('^From '), send it off to procmail and instruct procmail to use
+> the "customProcmailrc" config file found in spambox's home directory. That
+> "customProcmailrc" would contain your rules for how to handle
+> each mail and
+> send it where it needs to go ....
+>
+>
+> > Cheers,
+> > -zeek
+> >
+> >
+> >
+> > --__--__--
+> >
+> > Message: 11
+> > Date: Tue, 13 Aug 2002 11:58:03 -0500
+> > To: razor-users@example.sourceforge.net
+> > From: Justin Shore <listuser@neo.pittstate.edu>
+> > Subject: [Razor-users] Stripping the SpamAssassin report
+> >
+> > I'm assuming I need to strip the SpamAssassinReport.txt attachments
+> > from my spam mailbox before I run the mailbox through razor-report,
+> > correct?  Does anyone know of an easy way to do this?
+> >
+> > Thanks
+> >   Justin
+> > --
+> >
+> > --
+> > Justin Shore, ES-SS ES-SSR      Pittsburg State University
+> > Network & Systems Manager       Kelce 157Q
+> > Office of Information Systems   Pittsburg, KS 66762
+> > Voice: (620) 235-4606           Fax: (620) 235-4545
+> > http://www.pittstate.edu/ois/
+> >
+> > Warning:  This message has been quadruple Rot13'ed for your protection.
+> >
+> >
+> >
+> > --__--__--
+> >
+> > _______________________________________________
+> > Razor-users mailing list
+> > Razor-users@lists.sourceforge.net
+> > https://lists.sourceforge.net/lists/listinfo/razor-users
+> >
+> >
+> > End of Razor-users Digest
+>
+>
+>
+> -------------------------------------------------------
+> This sf.net email is sponsored by: Dice - The leading online job board
+> for high-tech professionals. Search and apply for tech jobs today!
+> http://seeker.dice.com/seeker.epl?rel_code=31
+> _______________________________________________
+> Razor-users mailing list
+> Razor-users@lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/razor-users
+>
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Dice - The leading online job board
+for high-tech professionals. Search and apply for tech jobs today!
+http://seeker.dice.com/seeker.epl?rel_code=31
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

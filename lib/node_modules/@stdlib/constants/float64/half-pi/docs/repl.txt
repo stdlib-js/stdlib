@@ -1,0 +1,12 @@
+
+{{alias}}
+    One half times the mathematical constant `π`.
+
+    Examples
+    --------
+    > {{alias}}
+    1.5707963267948966
+
+    See Also
+    --------
+

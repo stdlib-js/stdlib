@@ -1,0 +1,75 @@
+From fork-admin@xent.com  Tue Sep 24 17:55:30 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 070DF16F03
+	for <jm@localhost>; Tue, 24 Sep 2002 17:55:30 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 24 Sep 2002 17:55:30 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8OGAEC11404 for <jm@jmason.org>;
+    Tue, 24 Sep 2002 17:10:14 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id ACE072940DA; Tue, 24 Sep 2002 09:06:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from imo-r09.mx.aol.com (imo-r09.mx.aol.com [152.163.225.105])
+    by xent.com (Postfix) with ESMTP id 522F329409A for <fork@xent.com>;
+    Tue, 24 Sep 2002 09:05:51 -0700 (PDT)
+Received: from ThosStew@aol.com by imo-r09.mx.aol.com (mail_out_v34.10.)
+    id 2.1a3.92f0d57 (4418) for <fork@xent.com>; Tue, 24 Sep 2002 12:09:26
+    -0400 (EDT)
+From: ThosStew@aol.com
+Message-Id: <1a3.92f0d57.2ac1e836@aol.com>
+Subject: Re: liberal defnitions
+To: fork@spamassassin.taint.org
+MIME-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"
+Content-Transfer-Encoding: 7bit
+X-Mailer: AOL 5.0 for Mac sub 45
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 24 Sep 2002 12:09:26 EDT
+
+
+In a message dated 9/24/2002 11:24:58 AM, jamesr@best.com writes:
+
+>This situation wouldn't have happened in the first place if California
+>didn't have economically insane regulations.  They created a regulatory
+>climate that facilitated this.  So yes, it is the product of
+>over-regulation.
+>
+
+Which is to say, if you reduce the argument to absurdity, that law causes 
+crime. 
+
+(Yes, I agree that badly written law can make life so frustrating that people 
+have little choice but to subvery it if they want to get anything done. This 
+is also true of corporate policies, and all other attempts to regulate 
+conduct by rules. Rules just don't work well when situations are fluid or 
+ambiguous. But I don't think that the misbehavior of energy companies in 
+California can properly be called well-intentioned lawbreaking by parties who 
+were trying to do the right thing but could do so only by falling afoul of 
+some technicality.)
+
+If you want to get to root causes, we should probably go to the slaying of 
+Abel by Cain. Perhaps we can figure out what went wrong then, and roll our 
+learning forward through history and create a FoRKtopia.
+
+Nonpartisanly, which is to say casting stones on all houses, whether 
+bicameral or unicameral, built on sand or on rock, to the left of them or to 
+the right of them, of glass or brick or twig or straw, 
+
+Tom
+
+

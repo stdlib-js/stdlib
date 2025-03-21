@@ -1,0 +1,91 @@
+
+{{alias}}( [α, β] )
+    Returns a beta prime distribution object.
+
+    Parameters
+    ----------
+    α: number (optional)
+        First shape parameter. Must be greater than `0`. Default: `1.0`.
+
+    β: number (optional)
+        Second shape parameter. Must be greater than `0`. Default: `1.0`.
+
+    Returns
+    -------
+    betaprime: Object
+        Distribution instance.
+
+    betaprime.alpha: number
+        First shape parameter. If set, the value must be greater than `0`.
+
+    betaprime.beta: number
+        Second shape parameter. If set, the value must be greater than `0`.
+
+    betaprime.kurtosis: number
+        Read-only property which returns the excess kurtosis.
+
+    betaprime.mean: number
+        Read-only property which returns the expected value.
+
+    betaprime.mode: number
+        Read-only property which returns the mode.
+
+    betaprime.skewness: number
+        Read-only property which returns the skewness.
+
+    betaprime.stdev: number
+        Read-only property which returns the standard deviation.
+
+    betaprime.variance: number
+        Read-only property which returns the variance.
+
+    betaprime.cdf: Function
+        Evaluates the cumulative distribution function (CDF).
+
+    betaprime.logcdf: Function
+        Evaluates the natural logarithm of the cumulative distribution function
+        (CDF).
+
+    betaprime.logpdf: Function
+        Evaluates the natural logarithm of the probability density function
+        (PDF).
+
+    betaprime.pdf: Function
+        Evaluates the probability density function (PDF).
+
+    betaprime.quantile: Function
+        Evaluates the quantile function at probability `p`.
+
+    Examples
+    --------
+    > var betaprime = {{alias}}( 6.0, 5.0 );
+    > betaprime.alpha
+    6.0
+    > betaprime.beta
+    5.0
+    > betaprime.kurtosis
+    44.4
+    > betaprime.mean
+    1.5
+    > betaprime.mode
+    ~0.833
+    > betaprime.skewness
+    ~3.578
+    > betaprime.stdev
+    ~1.118
+    > betaprime.variance
+    1.25
+    > betaprime.cdf( 0.8 )
+    ~0.25
+    > betaprime.logcdf( 0.8 )
+    ~-1.387
+    > betaprime.logpdf( 1.0 )
+    ~-0.486
+    > betaprime.pdf( 1.0 )
+    ~0.615
+    > betaprime.quantile( 0.8 )
+    ~2.06
+
+    See Also
+    --------
+

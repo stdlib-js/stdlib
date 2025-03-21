@@ -1,0 +1,93 @@
+From exmh-workers-admin@redhat.com  Thu Aug 22 10:45:52 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 86E4A43C40
+	for <jm@localhost>; Thu, 22 Aug 2002 05:45:38 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 22 Aug 2002 10:45:38 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7M2IrZ21456 for
+    <jm-exmh@jmason.org>; Thu, 22 Aug 2002 03:18:57 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id F397F409D6; Wed, 21 Aug 2002
+    22:17:57 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 9A5A93EA0B
+    for <exmh-workers@listman.redhat.com>; Wed, 21 Aug 2002 16:36:25 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g7LKaMT26316 for exmh-workers@listman.redhat.com; Wed, 21 Aug 2002
+    16:36:22 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g7LKaMY26312 for
+    <exmh-workers@redhat.com>; Wed, 21 Aug 2002 16:36:22 -0400
+Received: from blackcomb.panasas.com (gw2.panasas.com [65.194.124.178]) by
+    mx1.redhat.com (8.11.6/8.11.6) with SMTP id g7LKLwl16823 for
+    <exmh-workers@redhat.com>; Wed, 21 Aug 2002 16:21:58 -0400
+Received: from medlicott.panasas.com (IDENT:welch@medlicott.panasas.com
+    [172.17.132.188]) by blackcomb.panasas.com (8.9.3/8.9.3) with ESMTP id
+    QAA14776; Wed, 21 Aug 2002 16:35:29 -0400
+Message-Id: <200208212035.QAA14776@blackcomb.panasas.com>
+X-Mailer: exmh version 2.5.9 07/25/2002 with nmh-1.0.4
+To: Robert Elz <kre@munnari.OZ.AU>
+Cc: Valdis.Kletnieks@vt.edu,
+	Chris Garrigues <cwg-dated-1030314468.7c7c85@DeepEddy.Com>,
+	exmh-workers@redhat.com
+Subject: Re: New Sequences Window
+In-Reply-To: <8176.1029916867@munnari.OZ.AU>
+References: <200208210251.g7L2pqKb001805@turing-police.cc.vt.edu>
+    <1029882468.3116.TMDA@deepeddy.vircio.com> <8176.1029916867@munnari.OZ.AU>
+Comments: In-reply-to Robert Elz <kre@munnari.OZ.AU> message dated "Wed,
+    21 Aug 2002 15:01:07 +0700."
+From: Brent Welch <welch@panasas.com>
+X-Url: http://www.panasas.com/
+X-Face: "HxE|?EnC9fVMV8f70H83&{fgLE.|FZ^$>@Q(yb#N,Eh~N]e&]=>
+    r5~UnRml1:4EglY{9B+ :'wJq$@c_C!l8@<$t,{YUr4K,QJGHSvS~U]H`<+L*x?eGzSk>XH\W:AK\j?@?c1o<k;j'Ei/UL)!*0
+    ILwSR)J\bc)gjz!rrGQ2#i*f:M:ydhK}jp4dWQW?;0{,#iWrCV$4~%e/3)$1/D
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Wed, 21 Aug 2002 13:35:27 -0700
+
+
+>>>Robert Elz said:
+
+ > I kind of doubt that any pre built-in sequence name is going to be
+ > very general.   Even "unseen" can be changed (fortunately that one
+ > is easy to find in the MH profile - though whether exmh does that,
+ > os just uses "unseen" I haven't bothered to find out).
+
+exmh uses the profile setting - it appears as mhProfile(unseen-sequence)
+in the code.
+
+--
+Brent Welch
+Software Architect, Panasas Inc
+Pioneering the World's Most Scalable and Agile Storage Network
+www.panasas.com
+welch@panasas.com
+
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+

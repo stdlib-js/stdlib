@@ -1,0 +1,12 @@
+
+{{alias}}
+    Size (in bytes) of a 128-bit complex number.
+
+    Examples
+    --------
+    > {{alias}}
+    16
+
+    See Also
+    --------
+

@@ -1,0 +1,54 @@
+From ilug-admin@linux.ie  Fri Aug 23 11:07:52 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7D6804416D
+	for <zzzz@localhost>; Fri, 23 Aug 2002 06:06:34 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Fri, 23 Aug 2002 11:06:34 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7MLTQZ25658 for
+    <zzzz-ilug@spamassassin.taint.org>; Thu, 22 Aug 2002 22:29:26 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id WAA23320; Thu, 22 Aug 2002 22:26:40 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from relay06.indigo.ie (relay06.indigo.ie [194.125.133.230]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with SMTP id WAA23285 for <ilug@linux.ie>;
+    Thu, 22 Aug 2002 22:26:30 +0100
+Received: (qmail 8720 messnum 1046742 invoked from
+    network[194.125.156.67/unknown]); 22 Aug 2002 21:26:29 -0000
+Received: from unknown (HELO localhost) (194.125.156.67) by
+    relay06.indigo.ie (qp 8720) with SMTP; 22 Aug 2002 21:26:29 -0000
+Date: Thu, 22 Aug 2002 22:25:12 +0100
+MIME-Version: 1.0 (Apple Message framework v482)
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+From: Mark Twomey <bauwolf@indigo.ie>
+To: ilug@linux.ie
+Content-Transfer-Encoding: 7bit
+Message-Id: <A49FCAEE-B615-11D6-9F96-000393679BE4@indigo.ie>
+X-Mailer: Apple Mail (2.482)
+Subject: [ILUG] Re: Sun Solaris
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Al white wrote:
+
+ >erm... it runs Solaris x86 as standard...
+
+It runs Solaris 8 x86 as standard.
+(I was joking Al)
+
+M.
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

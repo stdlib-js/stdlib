@@ -1,0 +1,11 @@
+
+Usage: ltrimn [options] --n=<number>
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --n number            Number of characters to trim.
+         --chars str           Characters to trim. Default: whitespace.
+         --split sep           Delimiter for stdin data. Default: '/\\r?\\n/'.
+

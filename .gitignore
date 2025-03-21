@@ -1,0 +1,194 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2017 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Files #
+#########
+package.json.copy
+.stdlibrc
+
+# Directories #
+###############
+build/
+downloads/
+reports/
+tmp/
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.o
+*.so
+*.slo
+*.lo
+*.obj
+*.dylib
+*.lai
+*.la
+*.a
+*.lib
+*.ko
+*.elf
+*.node
+
+# Precompiled headers #
+#######################
+*.gch
+*.pch
+
+# Executables #
+###############
+*.exe
+*.out
+*.app
+
+# Packages #
+############
+# It is better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Temporary files #
+###################
+*~
+
+# Node.js #
+###########
+/node_modules/
+lib/node_modules/**/node_modules/
+docs/**/node_modules/
+pids
+*.pid
+*.seed
+yarn.lock
+package-lock.json
+
+# Typescript #
+##############
+*.tsbuildinfo
+lib/node_modules/**/tsconfig.json
+lib/node_modules/**/tslint.json
+
+# Matlab #
+##########
+*.asv
+*.mex*
+
+# Fortran #
+###########
+*.mod
+
+# R #
+#####
+.Rhistory
+.Rapp.history
+.Rproj.user/
+
+# Python #
+##########
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+
+# TeX #
+#######
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.dvi
+*-converted-to.*
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.brf
+*.run.xml
+*.fdb_latexmk
+*.synctex
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+*.alg
+*.loa
+acs-*.bib
+*.thm
+*.nav
+*.snm
+*.vrb
+*.acn
+*.acr
+*.glg
+*.glo
+*.gls
+*-concordance.tex
+*.tikz
+*-tikzDictionary
+*.idx
+*.ilg
+*.ind
+*.ist
+
+# Visual Studio #
+#################
+.vscode/
+jsconfig.json
+
+# Sublime Text #
+################
+*.sublime-workspace
+*.sublime-project
+
+# Other editor files #
+######################
+.idea/
+
+# Cursor #
+##########
+.cursorignore

@@ -1,0 +1,39 @@
+
+{{alias}}( x, y )
+    If a function does not throw, returns the function return value; otherwise,
+    returns the value returned by a second function `y`.
+
+    The function `y` is provided a single argument:
+
+    - error: the error thrown by `x`.
+
+    Parameters
+    ----------
+    x: Function
+        Function to try invoking.
+
+    y: Function
+        Function to invoke if an initial function throws an error.
+
+    Returns
+    -------
+    z: any
+        The return value of either `x` or `y`.
+
+    Examples
+    --------
+    > function x() {
+    ...     if ( {{alias:@stdlib/random/base/randu}}() < 0.5 ) {
+    ...         throw new Error( 'beep' );
+    ...     }
+    ...     return 1.0;
+    ... };
+    > function y() {
+    ...     return -1.0;
+    ... };
+    > var z = {{alias}}( x, y )
+    <number>
+
+    See Also
+    --------
+

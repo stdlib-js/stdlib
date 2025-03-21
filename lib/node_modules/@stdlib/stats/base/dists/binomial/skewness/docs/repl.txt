@@ -1,0 +1,40 @@
+
+{{alias}}( n, p )
+    Returns the skewness of a binomial distribution.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided a number of trials `n` which is not a nonnegative integer, the
+    function returns `NaN`.
+
+    If `p < 0` or `p > 1`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    n: integer
+        Number of trials.
+
+    p: number
+        Success probability.
+
+    Returns
+    -------
+    out: number
+        Skewness.
+
+    Examples
+    --------
+    > var v = {{alias}}( 100, 0.1 )
+    ~0.267
+    > v = {{alias}}( 20, 0.5 )
+    0.0
+    > v = {{alias}}( 10.3, 0.5 )
+    NaN
+    > v = {{alias}}( 20, 1.1 )
+    NaN
+    > v = {{alias}}( 20, NaN )
+    NaN
+
+    See Also
+    --------
+

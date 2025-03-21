@@ -1,0 +1,61 @@
+From social-admin@linux.ie  Fri Jul 19 16:13:01 2002
+Return-Path: <social-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BAF91440CC
+	for <jm@localhost>; Fri, 19 Jul 2002 11:12:59 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 16:12:59 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JFBwJ07589 for
+    <jm+ilug-social@jmason.org>; Fri, 19 Jul 2002 16:11:58 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA11877; Fri, 19 Jul 2002 16:11:43 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail05.svc.cra.dublin.eircom.net
+    (mail05.svc.cra.dublin.eircom.net [159.134.118.21]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id QAA11838 for <social@linux.ie>; Fri,
+    19 Jul 2002 16:11:37 +0100
+From: ciaran17@eircom.net
+Message-Id: <200207191511.QAA11838@lugh.tuatha.org>
+Received: (qmail 23596 messnum 301540 invoked from
+    network[159.134.237.75/jimbo.eircom.net]); 19 Jul 2002 15:09:49 -0000
+Received: from jimbo.eircom.net (HELO webmail.eircom.net) (159.134.237.75)
+    by mail05.svc.cra.dublin.eircom.net (qp 23596) with SMTP; 19 Jul 2002
+    15:09:49 -0000
+To: "Wynne, Conor" <conor_wynne@maxtor.com>,
+	"'Colm Buckley'" <colm@tuatha.org>
+Cc: social@linux.ie
+Subject: RE: [ILUG-Social] Completely OT, Siamese Cats???
+Date: Fri, 19 Jul 2002 16:09:49 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 8bit
+X-Originating-Ip: 159.134.146.204
+X-Mailer: Eircom Net CRC Webmail (http://www.eircom.net/)
+Organization: Eircom Net (http://www.eircom.net/)
+Sender: social-admin@linux.ie
+Errors-To: social-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group social events <social.linux.ie>
+X-Beenthere: social@linux.ie
+
+You could pay a visit to your local cat sanctuary|cats home|shelter|pound and see if they have a beastie which matches your search terms (healthy + looks like Persian + good with kids); they won't charge you $ARM+LEG (probably they'll just ask for a donation) and I doubt your daughter will mind much where the cat came from.  The cat certainly won't mind, if he/she is well cared for afterwards!
+
+Do take the cat to a vet for a checkup and make sure it gets the proper shots, etc.  Might be a good idea to have the "snip" done too while you're there. (the cat, not you!!)  Most sanctuaries will make sure these jobs are already done but you should make sure.
+
+A word of warning, some cats in sanctuaries will have been mistreated in past lives and might not be good with kids, or could be quite nervous.  Bring your daughter to see the cat you've chosen to see how they react to one another.
+
+Ciaran (0wned by a consortium of felines)
+
+
+
+-- 
+Irish Linux Users' Group Social Events: social@linux.ie
+http://www.linux.ie/mailman/listinfo/social for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

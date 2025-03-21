@@ -1,0 +1,67 @@
+From fork-admin@xent.com  Mon Jul 29 11:29:25 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id EC8E14416A
+	for <jm@localhost>; Mon, 29 Jul 2002 06:25:39 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 11:25:39 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6S4D4i19338 for <jm@jmason.org>;
+    Sun, 28 Jul 2002 05:13:04 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 61F062940AF; Sat, 27 Jul 2002 21:08:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from crank.slack.net (slack.net [166.84.151.181]) by xent.com
+    (Postfix) with ESMTP id 2793C2940AB for <fork@xent.com>; Sat,
+    27 Jul 2002 21:07:31 -0700 (PDT)
+Received: by crank.slack.net (Postfix, from userid 596) id 848683EDEA;
+    Sun, 28 Jul 2002 00:08:02 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1]) by crank.slack.net
+    (Postfix) with ESMTP id 8317E3EDD2; Sun, 28 Jul 2002 00:08:02 -0400 (EDT)
+From: Tom <tomwhore@slack.net>
+To: fork@spamassassin.taint.org
+Cc: vox@mindvox.com
+Subject: Benjamin Wallace Higgins
+Message-Id: <Pine.BSO.4.44.0207280005490.24840-100000@crank.slack.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 28 Jul 2002 00:08:02 -0400 (EDT)
+
+
+At 12:45 am Benjamin Wallace Higgins made a crash entry into
+ the world. After a night of on again off again activity a C section
+ was called for near noon. Seems the little hacker was messing
+ with the internal cables and got three turns of the umbilical cord
+ around his neck for the effort. Ill have to teach him about the art
+ of cable bundling. Benjamin Wallace came out at 6 lbs 13 oz 20
+ somthing inches tall and doing what all Higgins boys do best...
+ feed and sleep. Mother and Child are doing great.
+
+MOre when I get teh chance. We are in the hospital for 3 days but I have a
+free terminal scoped out that now has ssh on it.
+
+The first pewp...man they prep you for it but northing really can...Wowzer
+that stuff is road tar.
+
+
+lates
+
+-tom
+
+http://xent.com/mailman/listinfo/fork
+
+

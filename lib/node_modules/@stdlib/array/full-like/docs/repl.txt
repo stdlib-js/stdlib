@@ -1,0 +1,30 @@
+
+{{alias}}( x[, dtype] )
+    Returns a filled array having the same length and data type as a provided
+    input array.
+
+    Parameters
+    ----------
+    x: TypedArray|Array
+        Input array.
+
+    dtype: string (optional)
+        Data type. If not provided, the output array data type is inferred from
+        the input array.
+
+    Returns
+    -------
+    out: TypedArray|Array
+        Output array.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/float64}}( 2 );
+    > var y = {{alias}}( x, 1.0 )
+    <Float64Array>[ 1.0, 1.0 ]
+    > y = {{alias}}( x, 1.0, 'float32' )
+    <Float32Array>[ 1.0, 1.0 ]
+
+    See Also
+    --------
+

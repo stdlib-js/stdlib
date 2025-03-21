@@ -1,0 +1,122 @@
+From fork-admin@xent.com  Fri Oct  4 11:03:48 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 041BB16F1B
+	for <jm@localhost>; Fri,  4 Oct 2002 11:02:30 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 04 Oct 2002 11:02:30 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g940FIK25684 for <jm@jmason.org>;
+    Fri, 4 Oct 2002 01:15:19 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 6CDF1294183; Thu,  3 Oct 2002 17:15:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from barry.mail.mindspring.net (barry.mail.mindspring.net
+    [207.69.200.25]) by xent.com (Postfix) with ESMTP id 3094B29409C for
+    <fork@xent.com>; Thu,  3 Oct 2002 17:14:47 -0700 (PDT)
+Received: from user-119ac86.biz.mindspring.com ([66.149.49.6]) by
+    barry.mail.mindspring.net with esmtp (Exim 3.33 #1) id 17xG7I-0005TS-00;
+    Thu, 03 Oct 2002 20:14:52 -0400
+MIME-Version: 1.0
+X-Sender: rahettinga@pop.earthlink.net
+Message-Id: <p05111a5ab9c2875b09bf@[66.149.49.6]>
+To: dcsb@ai.mit.edu, cryptography@wasabisystems.com,
+	mac_crypto@vmeng.com, e$@vmeng.com, fork@xent.com, irregulars@tb.tf
+From: "R. A. Hettinga" <rah@shipwright.com>
+Subject: Re: The 3rd Annual Consult Hyperion Digital Identity Forum
+Content-Type: text/plain; charset="us-ascii"
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 3 Oct 2002 20:13:32 -0400
+
+
+--- begin forwarded text
+
+
+To: rah@shipwright.com
+From: hacker@vudu.net
+Date: Thu, 03 Oct 2002 06:01:38 -0700 (PDT)
+Subject: Re: The 3rd Annual Consult Hyperion Digital Identity Forum
+
+
+
+The guy messed up his own URL. It should be
+http://www.digitalidforum.com which redirects to
+http://www.consult.hyperion.co.uk/digid3.html
+
+
+"R. A. Hettinga" wrote:
+>
+> Dear All,
+>
+> See www.digitalidentityforum.com for more details. Speakers
+include
+> Microsoft and Liberty Alliance, UK central and local government,
+> law
+> enforcement, financial services (Egg and RBS/NatWest), EC
+Research
+> Centre, a
+> psychologist and others. Look forward to seeing you there.
+>
+> Regards,
+> Dave Birch.
+>
+> --
+> -- David Birch, Director, Consult Hyperion
+> --
+> -- tel +44 (0)1483 301793, fax +44 (0)1483 561657
+> -- mail dave@chyp.com, web <a
+href="http://mail.vudu.net//jump/http://www.chyp.com">http://www.chyp.com</a>
+> --
+> -- See you at the 2nd Annual Digital Transactions Forum in
+> Singapore
+> -- October 16th/17th 2002, see
+> <a
+href="http://mail.vudu.net//jump/http://www.digitaltransactionsforum.com">http://www.digitaltransactionsforum.com</a>/
+>
+> --- end forwarded text
+>
+>
+> --
+> -----------------
+> R. A. Hettinga &lt;mailto: rah@ibuc.com&gt;
+> The Internet Bearer Underwriting Corporation &lt;<a
+href="http://mail.vudu.net//jump/http://www.ibuc.com/&gt">http://www.ibuc.com/&gt</a>;
+> 44 Farquhar Street, Boston, MA 02131 USA
+> &quot;... however it may deserve respect for its usefulness and
+> antiquity,
+> [predicting the end of the world] has not been found agreeable to
+> experience.&quot; -- Edward Gibbon, 'Decline and Fall of the
+Roman
+> Empire'
+>
+> For help on using this list (especially unsubscribing), send a
+> message to
+> &quot;dcsb-request@reservoir.com&quot; with one line of text:
+&quot;help&quot;.
+
+--- end forwarded text
+
+
+-- 
+-----------------
+R. A. Hettinga <mailto: rah@ibuc.com>
+The Internet Bearer Underwriting Corporation <http://www.ibuc.com/>
+44 Farquhar Street, Boston, MA 02131 USA
+"... however it may deserve respect for its usefulness and antiquity,
+[predicting the end of the world] has not been found agreeable to
+experience." -- Edward Gibbon, 'Decline and Fall of the Roman Empire'
+
+

@@ -1,0 +1,30 @@
+
+{{alias}}( x )
+    Computes the Bessel function of the first kind of order zero.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    y: number
+        Function value.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.0 )
+    1.0
+    > y = {{alias}}( 1.0 )
+    ~0.765
+    > y = {{alias}}( {{alias:@stdlib/constants/float64/pinf}} )
+    0.0
+    > y = {{alias}}( {{alias:@stdlib/constants/float64/ninf}} )
+    0.0
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+

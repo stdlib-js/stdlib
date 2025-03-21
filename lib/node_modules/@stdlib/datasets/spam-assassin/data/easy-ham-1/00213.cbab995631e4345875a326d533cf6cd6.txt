@@ -1,0 +1,96 @@
+From ilug-admin@linux.ie  Wed Aug 28 10:49:13 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C7CCF4415E
+	for <zzzz@localhost>; Wed, 28 Aug 2002 05:48:09 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 28 Aug 2002 10:48:09 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7S8eIZ16642 for
+    <zzzz-ilug@spamassassin.taint.org>; Wed, 28 Aug 2002 09:40:18 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA11246; Wed, 28 Aug 2002 09:39:22 +0100
+Received: from kbs01.kbs.ie ([213.190.156.48]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA11221 for <ilug@linux.ie>; Wed,
+    28 Aug 2002 09:39:14 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [213.190.156.48] claimed
+    to be kbs01.kbs.ie
+Received: by KBS01 with Internet Mail Service (5.5.2653.19) id <R2N9ALQL>;
+    Wed, 28 Aug 2002 09:56:42 +0100
+Message-Id: <55DA5264CE16D41186F600D0B74D6B092472BB@KBS01>
+From: "Brian O'Donoghue" <Brian.ODonoghue@kbs.ie>
+To: "'ilug@linux.ie'" <ilug@linux.ie>
+Subject: RE: [ILUG] [OT] Dell machine giving me hassle.
+Date: Wed, 28 Aug 2002 09:56:41 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain; charset="iso-8859-1"
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+
+
+> -----Original Message-----
+> From: Aherne Peter-pahern02 [mailto:peter.aherne@motorola.com]
+> Sent: 28 August 2002 09:29
+> To: 'ilug@linux.ie'
+> Subject: [ILUG] [OT] Dell machine giving me hassle.
+> 
+> Ok, Iknow this is blatantly OT but I'm beginning to go insane.
+> Had an old Dell Dimension XPS sitting in the corner and decided to
+> put it to use, I know it was working pre being stuck in the
+> corner, but when I plugged it in, hit the power nothing happened.
+> I opened her up and had a look and say nothing much. A little orange
+> LED comes on when I plug her in but that's it, after some googling
+> I found some reference to re-seating all the parts, but no change.
+> The problem I'm having is that since the power supply is some Dell
+> specific one, ATX block with what looks like one of the old AT
+> power connectors, I cant figure out weather this is a Mobo prob
+> or a PSU prob. Just to futily try and drag this back OT, I want
+> to install Linux on it when I get it working. If anyone knows
+> what the problem might be give me a shout.
+
+
+Here is what you do.
+
+Remove all the PCI & ISA/EISA cards.
+Remove the floppy disk cable from the mobo, the ide cables from the mobo...
+essentially leaving only a video card... ram and a keyboard plugged in.
+
+Turn on the system.
+If it doesn't POST then, switch it off and remove the video card.
+
+Switch it back on ... if your mobo doesn't emit some beeps complaining about
+lack of video card then.
+
+Switch it off.
+Remove it's ram.
+
+Same procedure as above.
+
+If you still don't have any kind of mobo beep codes then you can try as a
+last ditch effort to reseat the cpu... (remembering to never ever ever power
+up your system without a heatsink & fan).
+
+If after reseating the cpu into the mobo... you still get no beep codes,
+from it with just the cpu inserted into the mobo ie(no pci,*isa cards or and
+no actual ide or floppy cables connected to the system)... even though you
+have power... you either have a faulty motherboard or a faulty cpu.
+
+Once you get beep codes various permutations of the above should eventually
+disjunct which device it is, is causing the lack of POST.
+Power On Self Test.
+
+Bod
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

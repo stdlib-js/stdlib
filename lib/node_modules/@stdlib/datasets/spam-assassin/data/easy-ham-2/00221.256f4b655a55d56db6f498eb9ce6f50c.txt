@@ -1,0 +1,67 @@
+From ilug-admin@linux.ie  Fri Aug  2 09:56:13 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id DD7FC440F1
+	for <jm@localhost>; Fri,  2 Aug 2002 04:56:12 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 02 Aug 2002 09:56:12 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g728vS213526 for
+    <jm-ilug@jmason.org>; Fri, 2 Aug 2002 09:57:28 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA27739; Fri, 2 Aug 2002 09:55:13 +0100
+Received: from homer.jinny.ie ([193.120.171.3]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA27692 for <ilug@linux.ie>; Fri,
+    2 Aug 2002 09:55:04 +0100
+Received: from jlooney.jinny.ie (fw [193.120.171.2]) by homer.jinny.ie
+    (8.9.3/8.11.2) with ESMTP id JAA10335; Fri, 2 Aug 2002 09:54:33 +0100
+Received: (from john@localhost) by jlooney.jinny.ie (8.11.6/8.11.6) id
+    g728tFd11573; Fri, 2 Aug 2002 09:55:15 +0100
+X-Authentication-Warning: jlooney.jinny.ie: john set sender to
+    jlooney@jinny.ie using -f
+Date: Fri, 2 Aug 2002 09:55:15 +0100
+From: "John P. Looney" <valen@tuatha.org>
+To: Padraig Brady <padraig.brady@corvil.com>
+Cc: ilug@linux.ie
+Subject: Re: [ILUG] stupid pics of the day
+Message-Id: <20020802085515.GZ5178@jinny.ie>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: Padraig Brady <padraig.brady@corvil.com>,
+	ilug@linux.ie
+References: <3D494DAB.9060207@corvil.com> <20020801164332.GK5178@jinny.ie>
+    <3D4A4594.7020704@corvil.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <3D4A4594.7020704@corvil.com>
+User-Agent: Mutt/1.4i
+X-Os: Red Hat Linux 7.3/Linux 2.4.18-3
+X-Url: http://www.redbrick.dcu.ie/~valen
+X-Gnupg-Publickey: http://www.redbrick.dcu.ie/~valen/public.asc
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Fri, Aug 02, 2002 at 09:40:52AM +0100, Padraig Brady mentioned:
+> > Most likely.
+> > Hey...is that one of my nice wai-yip stuffed ones ?
+> Ah, I new I had one extra.
+> Ransom is a pint.
+
+ Well, as you seem to be mating them up in Longford, keep it till it has
+chicks, and send me two :)
+
+Kate
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

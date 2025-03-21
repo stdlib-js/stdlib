@@ -1,0 +1,43 @@
+From rssfeeds@jmason.org  Thu Sep 26 11:03:04 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id D014816F03
+	for <jm@localhost>; Thu, 26 Sep 2002 11:03:03 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 11:03:03 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8Q81bC06471 for
+    <jm@jmason.org>; Thu, 26 Sep 2002 09:01:37 +0100
+Message-Id: <200209260801.g8Q81bC06471@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: scripting <rssfeeds@spamassassin.taint.org>
+Subject: A productive thread
+Date: Thu, 26 Sep 2002 08:01:36 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://scriptingnews.userland.com/backissues/2002/09/25#aProductiveThread
+Date: Thu, 26 Sep 2002 00:18:04 GMT
+
+"rssflowersalignright"A productive thread[1] on RSS-DEV confronts the 
+negativeness about RSS 2.0[2] head-on. This will go someplace interesting.  
+
+I left a big hint there in the way the blogChannel module[3] is designed, 
+patterned after the Syndication module[4] designed by the RDF folk. In other 
+words, the place where they're expressing discomfort with RSS 2.0 is where they 
+can make it their own. Lead. Instead of feeling disempowered, be powerful.  
+
+At one point I saw clearly where the compromise between RSS 0.9x and 1.0 was. 
+We could have gotten there in early 2001, so instead we get there in late 2002. 
+So what, not a big deal. Think about how much better it will be _when we're all 
+advocating the same format._ Visualize peace. That's basically what I did when 
+I did the 2.0 spec. I know it's hard to swallow, but swallow anyway. If I did 
+it, you can too.
+
+[1] http://groups.yahoo.com/group/rss-dev/message/4032
+[2] http://backend.userland.com/rss
+[3] http://backend.userland.com/blogChannelModule
+[4] http://web.resource.org/rss/1.0/modules/syndication/
+
+

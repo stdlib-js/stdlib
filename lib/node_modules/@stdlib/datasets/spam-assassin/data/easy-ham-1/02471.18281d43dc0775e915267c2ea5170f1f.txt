@@ -1,0 +1,109 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Mon Nov 25 18:54:01 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 466E316F16
+	for <jm@localhost>; Mon, 25 Nov 2002 18:54:01 +0000 (GMT)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 25 Nov 2002 18:54:01 +0000 (GMT)
+Received: from sc8-sf-list2.sourceforge.net (example.sourceforge.net
+    [66.35.250.206]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    gAPIoiW19164 for <jm-sa@jmason.org>; Mon, 25 Nov 2002 18:50:44 GMT
+Received: from sc8-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=sc8-sf-list1.sourceforge.net) by sc8-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 18GOFJ-0005JD-00; Mon,
+    25 Nov 2002 10:46:13 -0800
+Received: from 208-39-141-94.isp.comcastbusiness.net ([208.39.141.94]
+    helo=xanadu-int.evi-inc.com) by sc8-sf-list1.sourceforge.net with esmtp
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 18GODP-0008Ii-00 for
+    <Spamassassin-talk@lists.sourceforge.net>; Mon, 25 Nov 2002 10:44:15 -0800
+Received: from mkettler-xpmain.evi-inc.com (tcp-4-021.evi-inc.com
+    [10.0.4.21]) by xanadu-int.evi-inc.com (8.11.6/8.11.6) with ESMTP id
+    gAPIfw717059; Mon, 25 Nov 2002 13:41:59 -0500
+Message-Id: <5.1.1.6.0.20021125134159.0182b5a8@192.168.50.2>
+X-Sender: mkettler@192.168.50.2
+X-Mailer: QUALCOMM Windows Eudora Version 5.1.1
+To: Erik Jakobsen <erik@urbakken.dk>,
+	Spamassassin-talk@lists.sourceforge.net
+From: Matt Kettler <mkettler@evi-inc.com>
+Subject: Re: [SAtalk] Blocking ?
+In-Reply-To: <200211251455.33507.erik@urbakken.dk>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"; format=flowed
+X-Evi-Mailscanner: Found to be clean
+X-Evi-Mailscanner-Spamcheck: not spam (whitelisted), SpamAssassin
+    (score=-11, required 5.5, IN_REP_TO, SOURCEFORGE_MENTIONED,
+    SPAMASSASSIN_MENTIONED, SPAM_PHRASE_00_01, USER_IN_WHITELIST_TO)
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=spamassassin-talk>
+X-Original-Date: Mon, 25 Nov 2002 13:45:51 -0500
+Date: Mon, 25 Nov 2002 13:45:51 -0500
+
+This is possible, however using SA as a block criteria is not recommended. 
+SA does have a very realistic chance of mis-marking mail so using it as an 
+autodelete function is at best extraordinarily foolish.
+
+
+However, here's what the procmail rule will look like (dug up from an old 
+post to this list by Steve Thomas):
+--------------------------------------------------------------------
+in your .procmailrc file:
+
+:0
+* x-spam-status: yes
+/dev/null
+
+
+DO NOT DO THIS! You'll throw out a LOT of legitimate messages over time.
+
+Instead, do what the docs suggest and put them into a separate mail folder:
+
+:0:
+* x-spam-status: yes
+$MAILDIR/spam
+--------------------------------------------------------------------
+
+
+At 02:55 PM 11/25/2002 +0100, Erik Jakobsen wrote:
+>Hi.
+>
+>How can I block e-mails comming to me by aid of SA ??.
+>--
+>Med venlig hilsen - Best regards.
+>Erik Jakobsen - erik@urbakken.dk
+>SuSE Linux 8.1
+>
+>
+>-------------------------------------------------------
+>This sf.net email is sponsored by:ThinkGeek
+>Welcome to geek heaven.
+>http://thinkgeek.com/sf
+>_______________________________________________
+>Spamassassin-talk mailing list
+>Spamassassin-talk@lists.sourceforge.net
+>https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+
+
+-------------------------------------------------------
+This SF.net email is sponsored by: Get the new Palm Tungsten T 
+handheld. Power & Color in a compact size! 
+http://ads.sourceforge.net/cgi-bin/redirect.pl?palm0002en
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

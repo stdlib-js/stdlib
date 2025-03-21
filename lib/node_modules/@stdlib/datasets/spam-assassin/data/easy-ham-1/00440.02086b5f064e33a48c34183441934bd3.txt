@@ -1,0 +1,71 @@
+From fork-admin@xent.com  Thu Sep  5 17:23:04 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 59B7A16F69
+	for <jm@localhost>; Thu,  5 Sep 2002 17:22:01 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 05 Sep 2002 17:22:01 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g85Ds1Z22871 for <jm@jmason.org>;
+    Thu, 5 Sep 2002 14:54:02 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 4BB8329424F; Thu,  5 Sep 2002 06:51:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hotmail.com (oe57.law12.hotmail.com [64.4.18.192]) by
+    xent.com (Postfix) with ESMTP id 7ED7A2940AA for <fork@xent.com>;
+    Thu,  5 Sep 2002 06:50:01 -0700 (PDT)
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Thu, 5 Sep 2002 06:52:35 -0700
+X-Originating-Ip: [66.92.145.79]
+Reply-To: "Bill Kearney" <wkearney99@hotmail.com>
+From: "Bill Kearney" <wkearney99@hotmail.com>
+To: <fork@spamassassin.taint.org>
+References: <20020905132642.29383.47386.Mailman@lair.xent.com>
+Subject: Re: CD player UI for toddlers
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.50.4807.1700
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4910.0300
+Message-Id: <OE57UPmRyCTsyP0ktOP00015c79@hotmail.com>
+X-Originalarrivaltime: 05 Sep 2002 13:52:35.0281 (UTC) FILETIME=[7D17B410:01C254E3]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 5 Sep 2002 09:52:33 -0400
+
+> Now for Benjamin, yea id love to have something like the amazingly cool
+> Fisher Price My First (cd, casset, vasectomy, dirtybomb) products. Perhaps
+> the My First Cd might work...time to let ebay do the walking.
+
+Sony makes such a line of products.
+
+My father was legendary for his abilty to break things.  His 'thumbs of death'
+would rival anything a toddler could do to devices.  After countless numbers of
+Walkman devices having their lids broken or buttons pressed into oblivion I
+found the Sony devices.  I got him a "My First Sony" (be afraid of the
+marketing) CD player.   It was /fire engine red/ but was completely
+indestructible.  I hacked a headphone jack into it and gave it to him.  He
+complained of it's looks but used it nonetheless.  I also gave him a pack of
+headphones as there's no such things indestuctible headphones that aren't
+obscenely bulky.
+
+Now that we're riding up the curve of an ever increasing geezer population, how
+soon before device makers get wise?  Not to be morbid, but would the marketing
+be "My Last Sony"?  <ducks and runs>
+
+-Bill Kearney
+

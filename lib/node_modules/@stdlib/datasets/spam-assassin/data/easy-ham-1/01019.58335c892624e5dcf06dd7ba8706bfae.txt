@@ -1,0 +1,113 @@
+From exmh-users-admin@redhat.com  Fri Sep 13 16:50:08 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 5437616F03
+	for <jm@localhost>; Fri, 13 Sep 2002 16:50:08 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 13 Sep 2002 16:50:08 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8DFJvC24079 for
+    <jm-exmh@jmason.org>; Fri, 13 Sep 2002 16:19:57 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 9EC4E3F1F5; Fri, 13 Sep 2002
+    11:17:18 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id EBA9F40653
+    for <exmh-users@listman.redhat.com>; Fri, 13 Sep 2002 11:15:40 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g8DFFZU15677 for exmh-users@listman.redhat.com; Fri, 13 Sep 2002
+    11:15:35 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g8DFFZk15671 for
+    <exmh-users@redhat.com>; Fri, 13 Sep 2002 11:15:35 -0400
+Received: from mail2.lsil.com (mail2.lsil.com [147.145.40.22]) by
+    mx1.redhat.com (8.11.6/8.11.6) with SMTP id g8DEwtw02432 for
+    <exmh-users@redhat.com>; Fri, 13 Sep 2002 10:58:55 -0400
+Received: from mhbs.lsil.com (mhbs [147.145.31.100]) by mail2.lsil.com
+    (8.9.3+Sun/8.9.1) with ESMTP id IAA24135 for <exmh-users@redhat.com>;
+    Fri, 13 Sep 2002 08:15:24 -0700 (PDT)
+From: kchrist@lsil.com
+Received: from inca.co.lsil.com by mhbs.lsil.com with ESMTP;
+    Fri, 13 Sep 2002 08:15:10 -0700
+Received: from flytrap.co.lsil.com (flytrap.co.lsil.com [172.20.3.234]) by
+    inca.co.lsil.com (8.9.3/8.9.3) with ESMTP id JAA25467; Fri, 13 Sep 2002
+    09:15:09 -0600 (MDT)
+Received: from bhuta.co.lsil.com (bhuta [172.20.12.135]) by
+    flytrap.co.lsil.com (8.9.3+Sun/8.9.1) with ESMTP id JAA11684;
+    Fri, 13 Sep 2002 09:15:08 -0600 (MDT)
+Received: from bhuta (localhost [127.0.0.1]) by bhuta.co.lsil.com
+    (8.10.2+Sun/8.9.1) with ESMTP id g8DFEwd26734; Fri, 13 Sep 2002 09:14:58
+    -0600 (MDT)
+X-Mailer: exmh version 2.5 07/09/2001 with nmh-1.0.4+dev
+To: exmh-users@spamassassin.taint.org
+Cc: Tony Nugent <tony@linuxworks.com.au>
+Subject: Re: Linking message [was: Re: Patch to complete a change...]
+In-Reply-To: Your message of
+    "Fri, 13 Sep 2002 12:31:24 +1000."
+    <200209130231.g8D2VO021580@hobbit.linuxworks.com.au.nospam>
+References: <200209130231.g8D2VO021580@hobbit.linuxworks.com.au.nospam>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Message-Id: <26732.1031930098@bhuta>
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+X-Reply-To: Kevin.Christian@lsil.com
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Fri, 13 Sep 2002 09:14:58 -0600
+
+
+In message <200209130231.g8D2VO021580@hobbit.linuxworks.com.au.nospam>, Tony Nu
+gent writes:
+> 
+> I have set my right mouse button to [Move] a message to another
+> folder, which works fine.
+> 
+> However, [Link] also uses the same destination folder as [Move], and
+> so if I want to use [Link] I first have to mark the destination
+> folder with a message-move, undo the move, then I can use the
+> [Link].  Very inconvenient.
+> 
+> Is there a better way for me to set this up so that [Link] works
+> with one or two simple clicks?
+> 
+
+According to some old documentation (man exmh-ref)
+
+     The mouse bindings for the folders labels are:
+
+          Left - Change to folder.
+          Middle - View nested folders.
+          Right - Refile current messages to the folder.
+          Shift-Right - Link current messages to the folder.
+          Shift-Middle - Drag a folder label to some drop target.
+          Control-Right - Clear the current target folder.
+
+It should be possible to link using shift-right-click the same way you 
+can move using only right-click.
+
+Kevin
+
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

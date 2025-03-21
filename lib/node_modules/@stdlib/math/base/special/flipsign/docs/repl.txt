@@ -1,0 +1,44 @@
+
+{{alias}}( x, y )
+    Returns a double-precision floating-point number with the magnitude of `x`
+    and the sign of `x*y`.
+
+    The function only returns `-x` when `y` is a negative number.
+
+    According to the IEEE 754 standard, a `NaN` has a biased exponent equal to
+    `2047`, a significand greater than `0`, and a sign bit equal to either `1`
+    or `0`. In which case, `NaN` may not correspond to just one but many binary
+    representations. Accordingly, care should be taken to ensure that `y` is not
+    `NaN`; otherwise, behavior may be indeterminate.
+
+    Parameters
+    ----------
+    x: number
+        Number from which to derive a magnitude.
+
+    y: number
+        Number from which to derive a sign.
+
+    Returns
+    -------
+    z: number
+        Double-precision floating-point number.
+
+    Examples
+    --------
+    > var z = {{alias}}( -3.0, 10.0 )
+    -3.0
+    > z = {{alias}}( -3.0, -1.0 )
+    3.0
+    > z = {{alias}}( 1.0, -0.0 )
+    -1.0
+    > z = {{alias}}( -3.0, -0.0 )
+    3.0
+    > z = {{alias}}( -0.0, 1.0 )
+    -0.0
+    > z = {{alias}}( 0.0, -1.0 )
+    -0.0
+
+    See Also
+    --------
+

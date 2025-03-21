@@ -1,0 +1,50 @@
+From fork-admin@xent.com  Wed Sep 11 20:16:24 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 1D89F16F03
+	for <jm@localhost>; Wed, 11 Sep 2002 20:16:24 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 11 Sep 2002 20:16:24 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8BJ9WC27901 for <jm@jmason.org>;
+    Wed, 11 Sep 2002 20:09:35 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 2D3B82940BD; Wed, 11 Sep 2002 12:06:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from isolnetsux.techmonkeys.net (isolnetsux.techmonkeys.net
+    [64.243.46.20]) by xent.com (Postfix) with SMTP id 875BF29409A for
+    <fork@xent.com>; Wed, 11 Sep 2002 12:05:33 -0700 (PDT)
+Received: (qmail 29242 invoked by uid 500); 11 Sep 2002 19:08:10 -0000
+Received: from localhost (sendmail-bs@127.0.0.1) by localhost with SMTP;
+    11 Sep 2002 19:08:10 -0000
+From: Chris Haun <chris@noskillz.com>
+X-X-Sender: chris@isolnetsux.techmonkeys.net
+To: fork@spamassassin.taint.org
+Subject: From salon.com - Forbidden thoughts about 9/11
+Message-Id: <Pine.LNX.4.44.0209111507050.31122-100000@isolnetsux.techmonkeys.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 11 Sep 2002 15:08:10 -0400 (EDT)
+
+i though this was all rather interesting, first bit of 9/11 coverage that 
+i've liked.
+
+http://www.salon.com/mwt/feature/2002/09/11/forbidden_letters/index.html
+
+Chris
+
+

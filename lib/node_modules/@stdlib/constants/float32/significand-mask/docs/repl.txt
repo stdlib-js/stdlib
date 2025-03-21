@@ -1,0 +1,14 @@
+
+{{alias}}
+    Mask for the significand of a single-precision floating-point number.
+
+    Examples
+    --------
+    > {{alias}}
+    8388607
+    > {{alias:@stdlib/number/uint32/base/to-binary-string}}( {{alias}} )
+    '00000000011111111111111111111111'
+
+    See Also
+    --------
+

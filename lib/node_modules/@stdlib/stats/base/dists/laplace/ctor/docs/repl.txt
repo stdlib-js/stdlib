@@ -1,0 +1,106 @@
+
+{{alias}}( [μ, b] )
+    Returns a Laplace distribution object.
+
+    Parameters
+    ----------
+    μ: number (optional)
+        Location parameter. Default: `0.0`.
+
+    b: number (optional)
+        Scale parameter. Must be greater than `0`. Default: `1.0`.
+
+    Returns
+    -------
+    laplace: Object
+        Distribution instance.
+
+    laplace.mu: number
+        Location parameter.
+
+    laplace.b: number
+        Scale parameter. If set, the value must be greater than `0`.
+
+    laplace.entropy: number
+        Read-only property which returns the differential entropy.
+
+    laplace.kurtosis: number
+        Read-only property which returns the excess kurtosis.
+
+    laplace.mean: number
+        Read-only property which returns the expected value.
+
+    laplace.median: number
+        Read-only property which returns the median.
+
+    laplace.mode: number
+        Read-only property which returns the mode.
+
+    laplace.skewness: number
+        Read-only property which returns the skewness.
+
+    laplace.stdev: number
+        Read-only property which returns the standard deviation.
+
+    laplace.variance: number
+        Read-only property which returns the variance.
+
+    laplace.cdf: Function
+        Evaluates the cumulative distribution function (CDF).
+
+    laplace.logcdf: Function
+        Evaluates the natural logarithm of the cumulative distribution function
+        (CDF).
+
+    laplace.logpdf: Function
+        Evaluates the natural logarithm of the probability density function
+        (PDF).
+
+    laplace.mgf: Function
+        Evaluates the moment-generating function (MGF).
+
+    laplace.pdf: Function
+        Evaluates the probability density function (PDF).
+
+    laplace.quantile: Function
+        Evaluates the quantile function at probability `p`.
+
+    Examples
+    --------
+    > var laplace = {{alias}}( -2.0, 3.0 );
+    > laplace.mu
+    -2.0
+    > laplace.b
+    3.0
+    > laplace.entropy
+    ~2.792
+    > laplace.kurtosis
+    3.0
+    > laplace.mean
+    -2.0
+    > laplace.median
+    -2.0
+    > laplace.mode
+    -2.0
+    > laplace.skewness
+    0.0
+    > laplace.stdev
+    ~4.243
+    > laplace.variance
+    18.0
+    > laplace.cdf( 0.8 )
+    ~0.803
+    > laplace.logcdf( 0.8 )
+    ~-0.219
+    > laplace.logpdf( 1.0 )
+    ~-2.792
+    > laplace.mgf( 0.2 )
+    ~1.047
+    > laplace.pdf( 2.0 )
+    ~0.044
+    > laplace.quantile( 0.9 )
+    ~2.828
+
+    See Also
+    --------
+

@@ -1,0 +1,18 @@
+
+{{alias}}()
+    Tests for `Object.defineProperty` support.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an environment has `Object.defineProperty`
+        support.
+
+    Examples
+    --------
+    > var bool = {{alias}}()
+    <boolean>
+
+    See Also
+    --------
+

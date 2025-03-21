@@ -1,0 +1,251 @@
+From Unsubscribe@sqlcare.com  Tue Jul 30 19:42:28 2002
+Return-Path: <Unsubscribe@sqlcare.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 924FF4406D
+	for <jm@localhost>; Tue, 30 Jul 2002 14:42:28 -0400 (EDT)
+Received: from mandark.labs.netnoteinc.com [213.105.180.140]
+	by localhost with POP3 (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 30 Jul 2002 19:42:28 +0100 (IST)
+Received: from whiteshadow (eyeserver.com [216.62.8.226])
+	by mandark.labs.netnoteinc.com (8.11.6/8.11.6) with SMTP id g6UIXNp12326
+	for <jm@netnoteinc.com>; Tue, 30 Jul 2002 19:33:24 +0100
+Message-Id: <200207301833.g6UIXNp12326@mandark.labs.netnoteinc.com>
+From: "SQLCare, Inc." <Unsubscribe@sqlcare.com>
+To: <yyyy@netnoteinc.com>
+Subject: Hassle-Free Microsoft SQL Server Remote Database Administration
+Mime-Version: 1.0
+Date: Tue, 30 Jul 2002 13:29:51
+Content-Type: text/html; charset="iso-8859-1"
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML xmlns="http://www.sqlcare.com/TR/REC-html40" xmlns:v = 
+"urn:schemas-microsoft-com:vml" xmlns:o = 
+"urn:schemas-microsoft-com:office:office" xmlns:w = 
+"urn:schemas-microsoft-com:office:word"><HEAD><TITLE>Message</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META content=FrontPage.Editor.Document name=ProgId>
+<META content="Microsoft FrontPage 4.0" name=GENERATOR>
+<META content="Microsoft Word 10" name=Originator><LINK 
+href="../Hassle-Free%20Microsoft%20SQL%20Server%20Remote%20Database%
+20Administration_files/filelist.xml" 
+rel=File-List><LINK 
+href="../Hassle-Free%20Microsoft%20SQL%20Server%20Remote%20Database%
+20Administration_files/editdata.mso" 
+rel=Edit-Time-Data><!--[if !mso]>
+<STYLE>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</STYLE>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:DoNotRelyOnCSS/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:DocumentKind>DocumentEmail</w:DocumentKind>
+  <w:EnvelopeVis/>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<STYLE>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoAutoSig, li.MsoAutoSig, div.MsoAutoSig
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.EmailStyle19
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	color:navy;}
+span.EmailStyle20
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	color:navy;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</STYLE>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]--></HEAD>
+<BODY lang=EN-US style="tab-interval: .5in" vLink=blue link=blue 
+bgColor=white>
+<DIV class=Section1>
+<DIV>
+<TABLE class=MsoNormalTable 
+style="MARGIN-LEFT: 1in; WIDTH: 438pt; mso-cellspacing: 0in; mso-padding-alt: 0in 0in 
+0in 0in" 
+cellSpacing=0 cellPadding=0 width=584 border=0>
+  <TBODY>
+  <TR style="mso-yfti-irow: 0; mso-yfti-lastrow: yes">
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; 
+PADDING-TOP: 0in" 
+    vAlign=top>
+      <P class=MsoNormal><FONT face="Times New Roman" size=3><SPAN 
+      style="FONT-SIZE: 12pt"><IMG id=_x0000_i1025 height=96 
+      src="http://www.sqlcare.com/images/sql_01.gif" width=144 border=0 
+      NOSEND="1"><BR><A 
+      href="http://www.sqlcare.com/pixel/click.php?ref=324
+&amp;go=http://www.sqlcare.com/"><SPAN 
+      style="TEXT-DECORATION: none; text-underline: none"><IMG id=_x0000_i1026 
+      height=27 src="http://www.sqlcare.com/images/sql_02.gif" width=144 
+      border=0 NOSEND="1"></SPAN></A><BR><A 
+      href="http://www.sqlcare.com/pixel/click.php?ref=324
+&amp;go=http://www.sqlcare.com/complete.htm"><SPAN 
+      style="TEXT-DECORATION: none; text-underline: none"><IMG id=_x0000_i1027 
+      height=26 src="http://www.sqlcare.com/images/sql_03.gif" width=144 
+      border=0 NOSEND="1"></SPAN></A><BR><A 
+      href="http://www.sqlcare.com/pixel/click.php?ref=324
+&amp;go=http://www.sqlcare.com/profile.htm"><SPAN 
+      style="TEXT-DECORATION: none; text-underline: none"><IMG id=_x0000_i1028 
+      height=35 src="http://www.sqlcare.com/images/sql_04.gif" width=144 
+      border=0 NOSEND="1"></SPAN></A><BR><A 
+      href="http://www.sqlcare.com/pixel/click.php?ref=324
+&amp;go=http://www.sqlcare.com/services.htm"><SPAN 
+      style="TEXT-DECORATION: none; text-underline: none"><IMG id=_x0000_i1029 
+      height=39 src="http://www.sqlcare.com/images/sql_05.gif" width=144 
+      border=0 NOSEND="1"></SPAN></A><BR><A 
+      href="http://www.sqlcare.com/pixel/click.php?ref=324
+&amp;go=http://www.sqlcare.com/faqs.htm"><SPAN 
+      style="TEXT-DECORATION: none; text-underline: none"><IMG id=_x0000_i1030 
+      height=36 src="http://www.sqlcare.com/images/sql_06.gif" width=144 
+      border=0 NOSEND="1"></SPAN></A><BR><A 
+      href="http://www.sqlcare.com/pixel/click.php?ref=324
+&amp;go=http://www.sqlcare.com/contact.htm"><SPAN 
+      style="TEXT-DECORATION: none; text-underline: none"><IMG id=_x0000_i1031 
+      height=30 src="http://www.sqlcare.com/images/sql_07.gif" width=144 
+      border=0 NOSEND="1"></SPAN></A><BR><IMG id=_x0000_i1032 height=114 
+      src="http://www.sqlcare.com/images/sql_08.gif" width=144 border=0 
+      NOSEND="1"></SPAN></FONT></P></TD>
+    <TD 
+    style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; 
+PADDING-TOP: 0in" 
+    vAlign=top>
+      <P><FONT face="Times New Roman" size=3><SPAN style="FONT-SIZE: 12pt">
+<IMG 
+      id=_x0000_i1033 height=96 src="http://www.sqlcare.com/images/sql_09.gif" 
+      width=440 border=0 NOSEND="1"></SPAN></FONT></P>
+      <DIV align=center>
+      <TABLE class=MsoNormalTable 
+      style="WIDTH: 90%; mso-cellspacing: 0in; mso-padding-alt: 0in 0in 0in 0in" 
+      cellSpacing=0 cellPadding=0 width="90%" border=0>
+        <TBODY>
+        <TR style="mso-yfti-irow: 0; mso-yfti-lastrow: yes">
+          <TD 
+          style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; 
+PADDING-TOP: 0in">
+            <P><FONT face=Arial color=#000066 size=3><SPAN 
+            style="FONT-SIZE: 12pt; COLOR: #000066; FONT-FAMILY: Arial"><IMG 
+            id=_x0000_i1034 height=105 
+            src="http://www.sqlcare.com/images/sql_10.jpg" width=440 border=0 
+            NOSEND="1"><BR><BR><IMG id=_x0000_i1035 height=111 
+            src="http://www.sqlcare.com/images/sql_11.jpg" width=440 border=0 
+            NOSEND="1"></SPAN></FONT></P>
+            <DIV align=center>
+            <TABLE class=MsoNormalTable 
+            style="WIDTH: 281.25pt; mso-cellspacing: 0in; mso-padding-alt: 0in 0in 0in 0in" 
+            cellSpacing=0 cellPadding=0 width=375 border=0>
+              <TBODY>
+              <TR style="mso-yfti-irow: 0; mso-yfti-lastrow: yes">
+                <TD 
+                style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; 
+PADDING-TOP: 0in">
+                  <P style="TEXT-ALIGN: center" align=center><B><FONT face=Arial 
+                  size=3><SPAN 
+                  style="FONT-WEIGHT: bold; FONT-SIZE: 12pt; FONT-FAMILY: Arial"><A 
+                  href="http://www.sqlcare.com/pixel/click.php?ref=324
+&amp;go=http://www.sqlcare.com"><FONT 
+                  color=#5555ff size=5><SPAN 
+                  style="FONT-SIZE: 18pt; COLOR: #5555ff">visit us at 
+                  www.sqlcare.com</SPAN></FONT></A></SPAN></FONT></B><B><FONT 
+                  face=Arial size=5><SPAN 
+                  style="FONT-WEIGHT: bold; FONT-SIZE: 18pt; FONT-FAMILY: Arial"><BR>or 
+                  call us at (214) 740.0923</SPAN></FONT></B> </P>
+                  <P style="TEXT-ALIGN: center" align=center><FONT 
+                  face="Times New Roman" size=3><SPAN 
+                  style="FONT-SIZE: 12pt"></SPAN></FONT>&nbsp;</P></TD></TR>
+</TBODY></TABLE></DIV>
+            <P class=MsoNormal><FONT face="Times New Roman" size=3><SPAN 
+            style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></FONT></P></TD></TR>
+</TBODY></TABLE></DIV>
+      <P class=MsoNormal><FONT face="Times New Roman" size=3><SPAN 
+      style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></FONT></P></TD></TR>
+</TBODY></TABLE></DIV>
+<P class=MsoNormal style="MARGIN-LEFT: 1in"><FONT face="Times New Roman" 
+size=2><SPAN style="FONT-SIZE: 10pt"><BR>To be Removed, reply with REMOVE in 
+the
+subject line.</SPAN></FONT></P></DIV></BODY></HTML>
+
+

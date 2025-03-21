@@ -1,0 +1,44 @@
+
+{{alias}}( str )
+    Converts a UTF-16 encoded string to an array of integers using UTF-8
+    encoding.
+
+    The following byte sequences are used to represent a character. The sequence
+    depends on the code point:
+
+        0x00000000 - 0x0000007F:
+            0xxxxxxx
+
+        0x00000080 - 0x000007FF:
+            110xxxxx 10xxxxxx
+
+        0x00000800 - 0x0000FFFF:
+            1110xxxx 10xxxxxx 10xxxxxx
+
+        0x00010000 - 0x001FFFFF:
+            11110xxx 10xxxxxx 10xxxxxx 10xxxxxx
+
+    The `x` bit positions correspond to code point bits.
+
+    Only the shortest possible multi-byte sequence which can represent a code
+    point is used.
+
+    Parameters
+    ----------
+    str: string
+        UTF-16 encoded string.
+
+    Returns
+    -------
+    out: Array
+        Array of integers.
+
+    Examples
+    --------
+    > var str = '☃';
+    > var out = {{alias}}( str )
+    [ 226, 152, 131 ]
+
+    See Also
+    --------
+

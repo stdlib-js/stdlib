@@ -1,0 +1,911 @@
+From YourMembership2@AEOpublishing.com  Fri Jun 29 06:24:56 2001
+Return-Path: <YourMembership2@AEOpublishing.com>
+Delivered-To: yyyy@netnoteinc.com
+Received: from rovdb001.roving.com (rovdb001.roving.com [216.251.239.53])
+    by mail.netnoteinc.com (Postfix) with ESMTP id D26BC130028 for
+    <jm@netnoteinc.com>; Fri, 29 Jun 2001 06:24:52 +0100 (IST)
+Received: from rovweb002 (unknown [10.208.80.86]) by rovdb001.roving.com
+    (Postfix) with ESMTP id 38465236DB for <jm@netnoteinc.com>; Fri,
+    29 Jun 2001 01:24:40 -0400 (EDT)
+From: 'Your Membership' Editor <YourMembership2@AEOpublishing.com>
+To: yyyy@netnoteinc.com
+Subject: Your Membership Exchange
+X-Roving-Queued: 20010629 01:19.12000
+X-Roving-Version: 4.1.patch39.ThingOne_p39_06_25_01.OrderErrorAndDebugFixes
+X-Mailer: Roving Constant Contact 4.1.patch39.ThingOne_p39_06_25_01.OrderE
+    rrorAndDebugFixes (http://www.constantcontact.com)
+X-Roving-Id: 993704044281
+Message-Id: <20010629052440.38465236DB@rovdb001.roving.com>
+Date: Fri, 29 Jun 2001 01:24:40 -0400 (EDT)
+
+
+--1074482631.993802752000.JavaMail.RovAdmin.rovweb002
+Content-Type: text/plain; charset=iso-8859-1
+
+Your Membership Exchange, Issue #423 (June 28, 2001)
+ 
+Your place to exchange ideas, ask questions, swap links, and share your skills! 
+
+You are a member in at least one of these programs 
+- You should be in them all! 
+<a href="BannersGoMLM.com"> BannersGoMLM.com </a><br>
+<a href="ProfitBanners.com"> ProfitBanners.com </a><br>
+<a href="CashPromotions.com"> CashPromotions.com </a><br>
+<a href="MySiteInc.com"> MySiteInc.com </a><br>
+<a href="TimsHomeTownStories.com"> TimsHomeTownStories.com </a><br>
+<a href="FreeLinksNetwork.com"> FreeLinksNetwork.com </a><br>
+<a href="MyShoppingPlace.com"> MyShoppingPlace.com </a><br>
+<a href="BannerCo-op.com"> BannerCo-op.com </a><br>
+<a href="PutPEEL.com"> PutPEEL.com </a><br>
+<a href="PutPEEL.net"> PutPEEL.net </a><br>
+<a href="SELLinternetACCESS.com"> SELLinternetACCESS.com </a><br>
+<a href="Be-Your-Own-ISP.com"> Be-Your-Own-ISP.com </a><br>
+<a href="SeventhPower.com"> SeventhPower.com </a>
+<p>______________________________________________________<br>
+Today's Special Announcement:<p>
+
+I'll Put Your Ad on 2,000 Sites FREE! Free This Week Only, 
+Just For Our Subscribers! Learn the secrets of marketing 
+online on this global FREE teleseminar. Limited lines 
+available, only three time slots available... reserve today. 
+You will not be disappointed! I'll be your personal host. 
+We operate several sites, all successful. I'll teach you what 
+to do and how to do it! Click here: 
+<a href="http://bannerco-op.com/freeseminar/ezine">FREE Teleseminar</a>
+Michael T. Glaspie - Founder 
+
+______________________________________________________<br>
+We apologize for any technical problems you may have had with
+our last mailing, we are working hard to ensure that such problems 
+will not occur again.<p>
+
+In This Issue:<p>
+<b>>> Q & A </b><br>
+<b>    QUESTIONS: </b><br>
+     - Using pictures as links? <br>
+<b>    ANSWERS: </b><br>
+     - Unblocking sites so I can access? <br>
+       Z. OConan: Access using a proxy <br>
+       G. Bendickson: Using A Proxy To Visit Blocked Sites <p>
+
+<b>>> MEMBER SHOWCASES</b> <p>
+
+<b>>> MEMBER *REVIEWS* </b><br>
+     - Sites to Review: #124, #125 & #126! <br>
+     - Site #123 Reviewed! <br>
+     - Vote on Your Favorite Website Design! <br>
+<p>
+______________________________________________________<br>
+
+<b>>>>>>>> QUESTIONS & ANSWERS <<<<<<< </b><p>
+<i>Do you a burning question about promoting your website, html design, 
+or anything that is hindering your online success? Submit your questions
+to <a href="mailto:MyInput@AEOpublishing.com">MyInput</a><br>Are you net savvy? Have you learned from your own trials and errors and 
+are willing to share your experience? Look over the questions each day, 
+and if you have an answer or can provide help, post your answer to 
+<a href="mailto:MyInput@AEOpublishing.com">MyInput@AEOpublishing.com</a>  Be sure to include your signature 
+file so you get credit (and exposure to your site). </i><p>
+
+
+
+<b>QUESTIONS: </b><p>
+
+From: moviebuff@cliffhanger.com <br>
+Subject: Using pictures as links <p>
+
+I'm changing my website and want to use pictures for the links to other pages. 
+But, someone told me I should still put a 'click here' underneath all the 
+pictures. To me, this removes all purpose of using the pictures.  <p>
+
+How can I get across that you click on the pictures to get to other pages 
+without coming right out and saying so? For example, I have a page with 
+actor and actress information and just want to have a picture of my 
+favorite stars to click on and change the picture every couple of days. <p>
+
+Mark <br>
+moviebuff@cliffhanger.com <br>
+<p>
+
+
+
+<b>ANSWERS:</b><p>
+
+From: Zaak  - Zaako@linkpaks.com <br>
+Subject: Access using a proxy <p>
+
+>From: CJ  (cj5000@post.com) <br>
+>Subject: Unblocking sites so I can access? (Issue #422) <p>
+
+--> I am currently living in a place where the ISP is 
+blocking 50% of 
+the web. I was told by someone that you can unblock these web sites by 
+using a proxy, but I don't know what that means. I am wondering is 
+there a way to get access to these sites? -- <br>
+<p>
+A proxy is easy to use if you use someone elses, they can be tricky to setup yourself. 
+I have had very good results with Surfola. Basically you surf to their servers and then 
+from there you surf Through/From their servers. I have several places I surf from that 
+block content. Surfola easily bypasses them! Its also Free! You can also make money 
+with them but I just use them to bypass anal retentive ISP/Corporate providers and 
+because they allow me to surf anonymously! <p>
+
+I have a detailed right-up on them at <a href="http://linkpaks.com/paidtosurf/Surfola.php"> http://linkpaks.com/paidtosurf/Surfola.php </a>
+See there for more info. If anything is not clear feel free to ask. 
+(Email & Sign-up Links on http://linkpaks.com/paidtosurf/Surfola.php page) <p>
+
+Zaak OConan <br>
+Netrepreneur <br>
+<a href="Http://LinkPaks.com">Http://LinkPaks.com</a> - Surf & Earn Guides <br>
+<a href="Http://LinktoCash.com">Http://LinktoCash.com</a> - Internet Businesses for under $100 <br>
+<a href="Http://ITeam.ws">Http://ITeam.ws</a> - The Hottest Product on the Net Today <p>
+
+
+++++ <b>Next Answer - Same Question</b> ++++ <p>
+
+From: Wyn Publishing - wynpublishing@iname.com <br>
+Subject: Using A Proxy To Visit Blocked Sites <p>
+
+>From: CJ  (cj5000@post.com) <br>
+>Subject: Unblocking sites so I can access? (Issue #422) <p>
+
+CJ, <p>
+
+Two such sites that allows proxy surfing are: <br>
+http://www.anonymise.com and
+http://www.anonymizer.com . <p>
+
+However, if you cannot get to that site then obviously it will not work. 
+Also note, that if your ISP is dictating to you which sites you may or 
+may not visit, then it is time to change providers! <p>
+
+Gregory Bendickson, Wyn Publishing <br>
+Over 28 Free Traffic exchange services reviewed in a fully <br>
+customizable e-book. Download yours free and get multiple <br>
+signups while learning the art of free web traffic! <br>
+<a href="http://www.trafficmultipliers.com">http://www.trafficmultipliers.com</a> <p> 
+
+______________________________________________________ <p>
+
+>>>>>>> <b>WEBSITE SHOWCASES</b> <<<<<<< <p>
+
+<i>Examine carefully - those with email addresses included WILL 
+trade links with you, you are encouraged to contact them. And, there 
+are many ways to build a successful business. Just look at these 
+successful sites/programs other members are involved in... </i><p>
+----------------------------------------------------- <p>
+
+"It's The Most D-A-N-G-E-R-O-U-S Book on the Net"
+Email 20,000 Targeted Leads Every Single Day! Slash Your 
+Time Online to just 1-2 Hours Daily! Build 11 Monthly Income 
+Streams Promoting ONE URL! Start building YOUR Business - 
+NOT everyone elses! <a href="http://www.roibot.com/w.cgi?R8901_bd_shwc"> http://www.roibot.com/w.cgi?R8901_bd_shwc</a> <br>
+----------------------------------------------------- <p>
+
+Is your website getting traffic but not orders?
+Profile, Analyze, Promote, and Track your site to 
+get the results you want. Fully Guaranteed!
+Free Trial Available! <a href="http://www.roibot.com/w.cgi?R4887_saa"> http://www.roibot.com/w.cgi?R4887_saa</a> <br>
+------------------------------------------------------<p>
+
+OVER 7168 SITES TO PLACE YOUR FREE AD! 
+Get immediate FREE exposure on thousands of sites. 
+Plus two FREE programs that will AUTOMATICALLY type 
+your ad for you! Pay one time, promote all the time.
+<a href="http://www.hitekhosting.net/cgi-bin/club_click.cgi?ID2932"> http://www.hitekhosting.net/cgi-bin/club_click.cgi?ID2932</a> <br>
+----------------------------------------------------- <p>
+
+<i>If you have a product, service, opportunity and/or quality 
+merchandise that appeals to people worldwide, reach your 
+target audience! 
+
+For a fraction of what other large newsletters charge you 
+can exhibit your website here for only $8 CPM. Why?... 
+Because as a valuable member we want you to be successful! 
+Order today - Exhibits are limited and published on a 
+first come, first serve basis. </i><a href="http://bannersgomlm.com/ezine"> http://bannersgomlm.com/ezine </a> <br>
+<p>
+______________________________________________________<br>
+
+>>>>>>> <b>MEMBER *REVIEWS*</b> <<<<<<<<<p>
+
+<i>Visit these sites, look for what you like and any suggestions 
+you can offer, and send your critique to <a href="mailto:MyInput@AEOpublishing.com">MyInput@AEOpublishing.com</a> 
+And, after reviewing three sites, your web site will be added to 
+the list! It's fun, easy, and it's a great opportunity to give 
+some help and receive an informative review of your own site. 
+Plus, you can also win a chance to have your site chosen for 
+a free website redesign. One randomly drawn winner each month! </i><p>
+
+
+<b>SITES TO REVIEW:</b><p>
+
+Site #124: <a href="http://www.BestWayToShop.com">http://www.BestWayToShop.com</a><br>
+Dale Pike <br>
+rhinopez@aol.com <p>
+ 
+Site #125: <a href="http://www.wedeliverparties.com">http://www.wedeliverparties.com</a><br>
+Dawn Clemons <br>
+dclemons7@home.com <p>
+
+Site #126: <a href="http://www.EClassifiedshq.com">http://www.EClassifiedshq.com</a> <br>
+Carol Cohen <br>
+Opp0rtunity@aol.com <p> 
+
+<b>SITE REVIEWED:</b><p>
+
+Comments on Site #123: <a href="http://netsbestinfo.homestead.com/nbi.html">http://netsbestinfo.homestead.com/nbi.html</a><br>
+Dennis <br>
+damorganjr@yahoo.com<br>
+~~~~<p>
+
+I reviewed site 123 and found the size of the font to be too aggressive and 
+I don't like mustard yellow for a background. Also in the second or third 
+paragraph is a misspelled word which should be "first-come" not as 
+shown on the page.<p>
+
+I feel a sample of the type of information offered in the newsletter should 
+be displayed on the page as well as a sample of the free ads offered 
+on the site. I will probably submit a free ad just to see the content of the newsletter.  <p>
+
+As has been mentioned many times, some information about the person 
+doing the page is always good.  We need some information about 
+why this newsletter will be worthwhile to subscribe to. <br>
+~~~~<p>
+
+Dennis - I took a look at your site, and have recommendations 
+for improving your page.<br>
+1- I use Internet Explorer and view web pages with my text size set to 
+'smaller'. The text you used was quite large, like a font used for a heading 
+for all the text. By making the text size smaller it wouldn't feel like 
+you were screaming at me. Also, the background was just too much.<br>
+2- There were spelling errors in the text. Often it might be difficult for you 
+to spot these yourself if you see the page all the time, but have a friend 
+look it over. Spelling errors make the page look unprofessional.<br>
+3- Offer a sample of your newsletter so people can see what it looks like 
+before they subscribe. Also, if you are asking for a person to give you 
+their email address, you MUST have a privacy policy and let them know 
+they can unsubscribe.<br>
+4- Think about adding a form for people to subscribe to the newsletter. 
+It looks more professional than just offering an email address to send to.<br>
+5- Offer information about yourself, and the kinds of information your 
+newsletter contains. Maybe extend your site to include back issues or 
+an archive to see what information you have offered in the past.<br>
+6- Build another page for 'sponsoring info' and put prices on that 
+page. Remove all pricing information from the home page.<br>
+~~~~<p>
+
+I feel that the background is a little too bold and busy for the text. 
+I also believe that the text is too large which makes it difficult to read 
+quickly, and forces the reader to scroll down unnecessarily. 
+I noticed some spelling errors, and I think that a link to the classifieds 
+site should be provided, and online payments should be accepted. 
+A site that sells advertising should have advertisments on it!<br>
+~~~~<p>
+
+This is a very clear site with nothing interfering with the 
+message.  I did not like the background colour, however that is 
+personal, it did not detract from the information.  I was tempted 
+to sign up for the newsletter but would have liked a link to see 
+a current issue. There was an error in the wording (a word 
+missed) which needs correction and I think the fonts could be 
+smaller. Overall a non-confusing site which makes a nice change. *cheers*<br>
+
+~~~~<p>
+
+Could use a better background and the fonts are very large, there also 
+are errors in the following paragraphs : 
+"first com-first serve" and "to place a sponsor advertisement, 
+send your to my email"<br>
+~~~~<p>
+
+A single page site. It is necessary to subscribe to the webmaster's 
+newsletter to see what he's doing, and it doesn't seem to me to be 
+a way to get people to visit. I wouldn't, for example. He claims to 
+have lots of tidbits of information that, he says, we probably 
+didn't know, and this is possible, but in my opinion, he would be 
+better served if he at least put some of the things out there for 
+all to see - when the appetite, so to speak, if he want people to 
+subscribe. As it is, I would not bother.<br>
+~~~~<p>
+
+What does one expect from a site like netsbestinfo? Some useful 
+resources and some useful tips and also some forms of easy 
+advertisement on the net. But what we get here is a newsletter 
+with the owner (whose email reads damorgarjr@yahoo.com) 
+asking us to subscribe us to his newsletter for a free 4-line ad. 
+He also tells of paid category of advertisements. This is all we get 
+from a site which has a grand title. Even the information about 
+the newsletter is hardly impressive and is presented in about 35-to-40 
+points size which gets difficult to read. <br>
+~~~~<p>
+
+A neat enough site but the background could be a little hard on 
+the eyes. There is only really one problem with this page - its 
+just an advertisement for a newsletter. No, scratch that, its an 
+advertisement to place free ads in a newsletter. A bold enough 
+move perhaps but I learned hardly anything about the newsletter 
+itself and immediately started worrying about getting a flood of 
+ads to my email account so I didn't even subscribe. Presumably 
+you'd want to get people to sign up so might I suggest splitting 
+the page into the newsletter itself, perhaps a sample issue, 
+a privacy policy and a promise not to drown in ads and then click 
+for more info on your free ads. <p>
+________________________________________<br>
+
+<b>VOTE ON YOUR FAVORITE WEBSITE DESIGN!</b><br>
+
+Help out the winner of the free website redesign by voting for 
+YOUR favorite!  <p>
+
+You can help out Teddy at <a href="http://www.links4profit.com"> links4profit.com</a> by taking a 
+look at his site, then checking out the three new layouts Jana of 
+AkkaBay Designs <a href="http://AkkaBay.com">AkkaBay.com</a> has designed specifically 
+for him.  After you've visited all three, vote for your favorite. 
+To make this as easy as possible for you, just click on the e-mail 
+address that matches your choice - you do not need to enter 
+any information in the subject or body of the message.<p>
+
+I have included a note from Jana, and the links to Teddy's  
+current site along with the three new designs:<p>
+
+>From Jana: The pages have been created as non-frame pages 
+although with minor modification, the pages could be adapted 
+for use in a frames environment<p>
+
+Please take a look at the existing site: <a href="http://www.links4profit.com">http://www.links4profit.com</a><p>
+
+Here are the 3 redesigns: <p>
+
+<a href="http://AkkaBay.com/links4profit/index.html">http://AkkaBay.com/links4profit/index.html</a><br>
+Vote for this design:  <a href="mailto:design1@AEOpublishing.com">design1@AEOpublishing.com</a><p>
+
+<a href="http://AkkaBay.com/links4profit/index2.html">http://AkkaBay.com/links4profit/index2.html</a><br>
+Vote for this design:  <a href="mailto:design2@AEOpublishing.com">design2@AEOpublishing.com</a><p>
+
+<a href="http://AkkaBay.com/links4profit/index3.html">http://AkkaBay.com/links4profit/index3.html</a><br>
+Vote for this design:  <a href="mailto:design3@AEOpublishing.com">design3@AEOpublishing.com</a><p>
+
+You will have all of this week to vote (through June 29), and 
+we'll list the favorite and most voted for layout next week.  
+Teddy of course will be able to choose his favorite, and 
+colors, font style/size, backgrounds, textures, etc, can all 
+easily be changed on the "layout" that he likes. 
+<p>
+Free website re-designs and original graphics are provided to 
+FLN Showcase winners courtesy of AkkaBay Designs. 
+<a href="http://AkkaBay.com"> http://AkkaBay.com </a><p>
+
+If you have any questions about how this works or how you can 
+participate, please email Amy at <a href="mailto:Moderator@AEOpublishing.com> Moderator </a><p> 
+
+______________________________________________________<br>
+moderator:Amy Mossel <br>
+posting: <a href="MyInput@AEOpublishing.com">MyInput@AEOpublishing.com</a><br>
+______________________________________________________<br>
+______________________________________________________<br>
+
+Send posts and questions (or your answers) to:<br>
+  <a href="MyInput@AEOpublishing.com">MyInput@AEOpublishing.com</a><br>
+Please send suggestions and comments to:<br>
+  <a href="mailto:Moderator@AEOpublishing.com">Moderator@AEOpublishing.com</a><p>
+
+To change your subscribed address, send both new 
+and old address to <a href="mailto:Moderator@AEOpublishing.com">Moderator@AEOpublishing.com</a><br>
+See below for unsubscribe instructions.<br>
+
+Copyright 2001 AEOpublishing <br>
+
+-----End of Your Membership Exchange<p>
+
+
+
+
+
+------------------------------------------------
+
+
+------------------------------------------------
+
+This email has been sent to jm@netnoteinc.com at your 
+request, by Your Membership Newsletter Services.
+
+Visit our Subscription Center to edit your interests or unsubscribe.
+http://ccprod.roving.com/roving/d.jsp?p=oo&id=bd7n7877.a4dfur67&m=bd7n7877&ea=jm@netnoteinc.com
+
+View our privacy policy: http://ccprod.roving.com/roving/CCPrivacyPolicy.jsp
+
+Powered by 
+Constant Contact(R)
+www.constantcontact.com
+--1074482631.993802752000.JavaMail.RovAdmin.rovweb002
+Content-Type: text/html; charset=iso-8859-1
+
+<HTML>
+<!-- 
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTML-FORMATTED MESSAGE BELOW
+
+The remainder of this message is in HTML format for use by email
+clients that can properly display it.   If you are seeing this message,
+it is because your email client cannot properly display HTML.  You can
+ignore the HTML code you will see below.
+
+
+
+
+
+
+
+
+
+ -->
+<head>
+	<title>Your Membership Exchange</title>
+</head>
+<body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<IMG SRC="http://ccprod.roving.com/roving/sa/o.jsp?id=bd7n7877.a4dfur67&o=http://ccprod.roving.com/roving/images/p1x1.gif" WIDTH=1 HEIGHT=1 alt=" ">
+<!--  Do NOT delete previous line if you want to get statistics on the number of opened emails  -->
+<center>
+<!-- Begin Logo Include -->
+
+<!-- START CONDITIONAL HTML HIDING 
+ 
+            <img src="" border="0" vspace="2" alt="">
+ 
+ END OF CONDITIONAL HTML HIDING --> 
+ 
+<!-- End Logo Include -->
+<table border="0" cellpadding="0" cellspacing="0" width="575">
+<tr>
+	<td width="25"><img src="http://ccprod.roving.com/roving/images/letters/gray-corner-tl.gif" width="25" height="25" border="0" alt=""></td>
+	<td width="525" bgcolor="#666666"> </td>
+	<td width="25" bgcolor="#666666"> </td>
+</tr>
+<!-- Begin Title Row -->
+<tr>
+	<td width="25" bgcolor="#666666"> </td>
+	<td width="525" bgcolor="#CCCCCC"> <font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="5" color="#870000">Your Membership Exchange, Issue #423</font></td>
+	<td width="25" bgcolor="#666666"> </td>
+</tr>
+<!-- End Title Row -->
+<!-- Begin Date String Row -->
+<tr>
+	<td width="25" bgcolor="#666666"> </td>
+	<td width="525" bgcolor="#CCCCCC" align="right"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="2" color="#000000">June 28, 2001</font> </td>
+	<td width="25" bgcolor="#666666"> </td>
+</tr>
+<!-- End Date String Row -->
+<tr>
+	<td width="575" colspan="3" height="1" bgcolor="#666666"><img src="http://ccprod.roving.com/roving/images/letters/spacer.gif" width="1" height="1" border="0" alt=""></td>
+</tr>
+<tr>
+	<td width="25" bgcolor="#870000"> </td>
+	<td width="525" bgcolor="#FFFFFF">
+	<!-- Begin Content Table -->
+	<table border="0" cellpadding="6" cellspacing="0" width="100%">
+	<tr>
+		<td width="100%">
+		<font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="2" color="#000000">
+		<!-- Begin Greeting -->
+		Your place to exchange ideas, ask questions, swap links, and share your skills!
+		<!-- End Greeting -->
+		
+		<!-- Begin Letter Body -->
+		<p>You are a member in at least one of these programs 
+- You should be in them all! 
+<a href="BannersGoMLM.com"> BannersGoMLM.com </a><br>
+<a href="ProfitBanners.com"> ProfitBanners.com </a><br>
+<a href="CashPromotions.com"> CashPromotions.com </a><br>
+<a href="MySiteInc.com"> MySiteInc.com </a><br>
+<a href="TimsHomeTownStories.com"> TimsHomeTownStories.com </a><br>
+<a href="FreeLinksNetwork.com"> FreeLinksNetwork.com </a><br>
+<a href="MyShoppingPlace.com"> MyShoppingPlace.com </a><br>
+<a href="BannerCo-op.com"> BannerCo-op.com </a><br>
+<a href="PutPEEL.com"> PutPEEL.com </a><br>
+<a href="PutPEEL.net"> PutPEEL.net </a><br>
+<a href="SELLinternetACCESS.com"> SELLinternetACCESS.com </a><br>
+<a href="Be-Your-Own-ISP.com"> Be-Your-Own-ISP.com </a><br>
+<a href="SeventhPower.com"> SeventhPower.com </a>
+<p>______________________________________________________<br>
+Today's Special Announcement:<p>
+
+I'll Put Your Ad on 2,000 Sites FREE! Free This Week Only, 
+Just For Our Subscribers! Learn the secrets of marketing 
+online on this global FREE teleseminar. Limited lines 
+available, only three time slots available... reserve today. 
+You will not be disappointed! I'll be your personal host. 
+We operate several sites, all successful. I'll teach you what 
+to do and how to do it! Click here: 
+<a href="http://bannerco-op.com/freeseminar/ezine">FREE Teleseminar</a>
+Michael T. Glaspie - Founder
+		<p>______________________________________________________<br>
+We apologize for any technical problems you may have had with
+our last mailing, we are working hard to ensure that such problems 
+will not occur again.<p>
+
+In This Issue:<p>
+<b>>> Q & A </b><br>
+<b>    QUESTIONS: </b><br>
+     - Using pictures as links? <br>
+<b>    ANSWERS: </b><br>
+     - Unblocking sites so I can access? <br>
+       Z. OConan: Access using a proxy <br>
+       G. Bendickson: Using A Proxy To Visit Blocked Sites <p>
+
+<b>>> MEMBER SHOWCASES</b> <p>
+
+<b>>> MEMBER *REVIEWS* </b><br>
+     - Sites to Review: #124, #125 & #126! <br>
+     - Site #123 Reviewed! <br>
+     - Vote on Your Favorite Website Design! <br>
+<p>
+______________________________________________________<br>
+
+<b>>>>>>>> QUESTIONS & ANSWERS <<<<<<< </b><p>
+<i>Do you a burning question about promoting your website, html design, 
+or anything that is hindering your online success? Submit your questions
+to <a href="mailto:MyInput@AEOpublishing.com">MyInput</a><br>Are you net savvy? Have you learned from your own trials and errors and 
+are willing to share your experience? Look over the questions each day, 
+and if you have an answer or can provide help, post your answer to 
+<a href="mailto:MyInput@AEOpublishing.com">MyInput@AEOpublishing.com</a>  Be sure to include your signature 
+file so you get credit (and exposure to your site). </i><p>
+
+
+
+<b>QUESTIONS: </b><p>
+
+From: moviebuff@cliffhanger.com <br>
+Subject: Using pictures as links <p>
+
+I'm changing my website and want to use pictures for the links to other pages. 
+But, someone told me I should still put a 'click here' underneath all the 
+pictures. To me, this removes all purpose of using the pictures.  <p>
+
+How can I get across that you click on the pictures to get to other pages 
+without coming right out and saying so? For example, I have a page with 
+actor and actress information and just want to have a picture of my 
+favorite stars to click on and change the picture every couple of days. <p>
+
+Mark <br>
+moviebuff@cliffhanger.com <br>
+<p>
+
+
+
+<b>ANSWERS:</b><p>
+
+From: Zaak  - Zaako@linkpaks.com <br>
+Subject: Access using a proxy <p>
+
+>From: CJ  (cj5000@post.com) <br>
+>Subject: Unblocking sites so I can access? (Issue #422) <p>
+
+--> I am currently living in a place where the ISP is 
+blocking 50% of 
+the web. I was told by someone that you can unblock these web sites by 
+using a proxy, but I don't know what that means. I am wondering is 
+there a way to get access to these sites? -- <br>
+<p>
+A proxy is easy to use if you use someone elses, they can be tricky to setup yourself. 
+I have had very good results with Surfola. Basically you surf to their servers and then 
+from there you surf Through/From their servers. I have several places I surf from that 
+block content. Surfola easily bypasses them! Its also Free! You can also make money 
+with them but I just use them to bypass anal retentive ISP/Corporate providers and 
+because they allow me to surf anonymously! <p>
+
+I have a detailed right-up on them at <a href="http://linkpaks.com/paidtosurf/Surfola.php"> http://linkpaks.com/paidtosurf/Surfola.php </a>
+See there for more info. If anything is not clear feel free to ask. 
+(Email & Sign-up Links on http://linkpaks.com/paidtosurf/Surfola.php page) <p>
+
+Zaak OConan <br>
+Netrepreneur <br>
+<a href="Http://LinkPaks.com">Http://LinkPaks.com</a> - Surf & Earn Guides <br>
+<a href="Http://LinktoCash.com">Http://LinktoCash.com</a> - Internet Businesses for under $100 <br>
+<a href="Http://ITeam.ws">Http://ITeam.ws</a> - The Hottest Product on the Net Today <p>
+
+
+++++ <b>Next Answer - Same Question</b> ++++ <p>
+
+From: Wyn Publishing - wynpublishing@iname.com <br>
+Subject: Using A Proxy To Visit Blocked Sites <p>
+
+>From: CJ  (cj5000@post.com) <br>
+>Subject: Unblocking sites so I can access? (Issue #422) <p>
+
+CJ, <p>
+
+Two such sites that allows proxy surfing are: <br>
+http://www.anonymise.com and
+http://www.anonymizer.com . <p>
+
+However, if you cannot get to that site then obviously it will not work. 
+Also note, that if your ISP is dictating to you which sites you may or 
+may not visit, then it is time to change providers! <p>
+
+Gregory Bendickson, Wyn Publishing <br>
+Over 28 Free Traffic exchange services reviewed in a fully <br>
+customizable e-book. Download yours free and get multiple <br>
+signups while learning the art of free web traffic! <br>
+<a href="http://www.trafficmultipliers.com">http://www.trafficmultipliers.com</a> <p>
+		<p>______________________________________________________ <p>
+
+>>>>>>> <b>WEBSITE SHOWCASES</b> <<<<<<< <p>
+
+<i>Examine carefully - those with email addresses included WILL 
+trade links with you, you are encouraged to contact them. And, there 
+are many ways to build a successful business. Just look at these 
+successful sites/programs other members are involved in... </i><p>
+----------------------------------------------------- <p>
+
+"It's The Most D-A-N-G-E-R-O-U-S Book on the Net"
+Email 20,000 Targeted Leads Every Single Day! Slash Your 
+Time Online to just 1-2 Hours Daily! Build 11 Monthly Income 
+Streams Promoting ONE URL! Start building YOUR Business - 
+NOT everyone elses! <a href="http://www.roibot.com/w.cgi?R8901_bd_shwc"> http://www.roibot.com/w.cgi?R8901_bd_shwc</a> <br>
+----------------------------------------------------- <p>
+
+Is your website getting traffic but not orders?
+Profile, Analyze, Promote, and Track your site to 
+get the results you want. Fully Guaranteed!
+Free Trial Available! <a href="http://www.roibot.com/w.cgi?R4887_saa"> http://www.roibot.com/w.cgi?R4887_saa</a> <br>
+------------------------------------------------------<p>
+
+OVER 7168 SITES TO PLACE YOUR FREE AD! 
+Get immediate FREE exposure on thousands of sites. 
+Plus two FREE programs that will AUTOMATICALLY type 
+your ad for you! Pay one time, promote all the time.
+<a href="http://www.hitekhosting.net/cgi-bin/club_click.cgi?ID2932"> http://www.hitekhosting.net/cgi-bin/club_click.cgi?ID2932</a> <br>
+----------------------------------------------------- <p>
+
+<i>If you have a product, service, opportunity and/or quality 
+merchandise that appeals to people worldwide, reach your 
+target audience! 
+
+For a fraction of what other large newsletters charge you 
+can exhibit your website here for only $8 CPM. Why?... 
+Because as a valuable member we want you to be successful! 
+Order today - Exhibits are limited and published on a 
+first come, first serve basis. </i><a href="http://bannersgomlm.com/ezine"> http://bannersgomlm.com/ezine </a> <br>
+<p>
+______________________________________________________<br>
+
+>>>>>>> <b>MEMBER *REVIEWS*</b> <<<<<<<<<p>
+
+<i>Visit these sites, look for what you like and any suggestions 
+you can offer, and send your critique to <a href="mailto:MyInput@AEOpublishing.com">MyInput@AEOpublishing.com</a> 
+And, after reviewing three sites, your web site will be added to 
+the list! It's fun, easy, and it's a great opportunity to give 
+some help and receive an informative review of your own site. 
+Plus, you can also win a chance to have your site chosen for 
+a free website redesign. One randomly drawn winner each month! </i><p>
+
+
+<b>SITES TO REVIEW:</b><p>
+
+Site #124: <a href="http://www.BestWayToShop.com">http://www.BestWayToShop.com</a><br>
+Dale Pike <br>
+rhinopez@aol.com <p>
+ 
+Site #125: <a href="http://www.wedeliverparties.com">http://www.wedeliverparties.com</a><br>
+Dawn Clemons <br>
+dclemons7@home.com <p>
+
+Site #126: <a href="http://www.EClassifiedshq.com">http://www.EClassifiedshq.com</a> <br>
+Carol Cohen <br>
+Opp0rtunity@aol.com <p>
+		<p><b>SITE REVIEWED:</b><p>
+
+Comments on Site #123: <a href="http://netsbestinfo.homestead.com/nbi.html">http://netsbestinfo.homestead.com/nbi.html</a><br>
+Dennis <br>
+damorganjr@yahoo.com<br>
+~~~~<p>
+
+I reviewed site 123 and found the size of the font to be too aggressive and 
+I don't like mustard yellow for a background. Also in the second or third 
+paragraph is a misspelled word which should be "first-come" not as 
+shown on the page.<p>
+
+I feel a sample of the type of information offered in the newsletter should 
+be displayed on the page as well as a sample of the free ads offered 
+on the site. I will probably submit a free ad just to see the content of the newsletter.  <p>
+
+As has been mentioned many times, some information about the person 
+doing the page is always good.  We need some information about 
+why this newsletter will be worthwhile to subscribe to. <br>
+~~~~<p>
+
+Dennis - I took a look at your site, and have recommendations 
+for improving your page.<br>
+1- I use Internet Explorer and view web pages with my text size set to 
+'smaller'. The text you used was quite large, like a font used for a heading 
+for all the text. By making the text size smaller it wouldn't feel like 
+you were screaming at me. Also, the background was just too much.<br>
+2- There were spelling errors in the text. Often it might be difficult for you 
+to spot these yourself if you see the page all the time, but have a friend 
+look it over. Spelling errors make the page look unprofessional.<br>
+3- Offer a sample of your newsletter so people can see what it looks like 
+before they subscribe. Also, if you are asking for a person to give you 
+their email address, you MUST have a privacy policy and let them know 
+they can unsubscribe.<br>
+4- Think about adding a form for people to subscribe to the newsletter. 
+It looks more professional than just offering an email address to send to.<br>
+5- Offer information about yourself, and the kinds of information your 
+newsletter contains. Maybe extend your site to include back issues or 
+an archive to see what information you have offered in the past.<br>
+6- Build another page for 'sponsoring info' and put prices on that 
+page. Remove all pricing information from the home page.<br>
+~~~~<p>
+
+I feel that the background is a little too bold and busy for the text. 
+I also believe that the text is too large which makes it difficult to read 
+quickly, and forces the reader to scroll down unnecessarily. 
+I noticed some spelling errors, and I think that a link to the classifieds 
+site should be provided, and online payments should be accepted. 
+A site that sells advertising should have advertisments on it!<br>
+~~~~<p>
+
+This is a very clear site with nothing interfering with the 
+message.  I did not like the background colour, however that is 
+personal, it did not detract from the information.  I was tempted 
+to sign up for the newsletter but would have liked a link to see 
+a current issue. There was an error in the wording (a word 
+missed) which needs correction and I think the fonts could be 
+smaller. Overall a non-confusing site which makes a nice change. *cheers*<br>
+
+~~~~<p>
+
+Could use a better background and the fonts are very large, there also 
+are errors in the following paragraphs : 
+"first com-first serve" and "to place a sponsor advertisement, 
+send your to my email"<br>
+~~~~<p>
+
+A single page site. It is necessary to subscribe to the webmaster's 
+newsletter to see what he's doing, and it doesn't seem to me to be 
+a way to get people to visit. I wouldn't, for example. He claims to 
+have lots of tidbits of information that, he says, we probably 
+didn't know, and this is possible, but in my opinion, he would be 
+better served if he at least put some of the things out there for 
+all to see - when the appetite, so to speak, if he want people to 
+subscribe. As it is, I would not bother.<br>
+~~~~<p>
+
+What does one expect from a site like netsbestinfo? Some useful 
+resources and some useful tips and also some forms of easy 
+advertisement on the net. But what we get here is a newsletter 
+with the owner (whose email reads damorgarjr@yahoo.com) 
+asking us to subscribe us to his newsletter for a free 4-line ad. 
+He also tells of paid category of advertisements. This is all we get 
+from a site which has a grand title. Even the information about 
+the newsletter is hardly impressive and is presented in about 35-to-40 
+points size which gets difficult to read. <br>
+~~~~<p>
+
+A neat enough site but the background could be a little hard on 
+the eyes. There is only really one problem with this page - its 
+just an advertisement for a newsletter. No, scratch that, its an 
+advertisement to place free ads in a newsletter. A bold enough 
+move perhaps but I learned hardly anything about the newsletter 
+itself and immediately started worrying about getting a flood of 
+ads to my email account so I didn't even subscribe. Presumably 
+you'd want to get people to sign up so might I suggest splitting 
+the page into the newsletter itself, perhaps a sample issue, 
+a privacy policy and a promise not to drown in ads and then click 
+for more info on your free ads. <p>
+________________________________________<br>
+
+<b>VOTE ON YOUR FAVORITE WEBSITE DESIGN!</b><br>
+
+Help out the winner of the free website redesign by voting for 
+YOUR favorite!  <p>
+
+You can help out Teddy at <a href="http://www.links4profit.com"> links4profit.com</a> by taking a 
+look at his site, then checking out the three new layouts Jana of 
+AkkaBay Designs <a href="http://AkkaBay.com">AkkaBay.com</a> has designed specifically 
+for him.  After you've visited all three, vote for your favorite. 
+To make this as easy as possible for you, just click on the e-mail 
+address that matches your choice - you do not need to enter 
+any information in the subject or body of the message.<p>
+
+I have included a note from Jana, and the links to Teddy's  
+current site along with the three new designs:<p>
+
+>From Jana: The pages have been created as non-frame pages 
+although with minor modification, the pages could be adapted 
+for use in a frames environment<p>
+
+Please take a look at the existing site: <a href="http://www.links4profit.com">http://www.links4profit.com</a><p>
+
+Here are the 3 redesigns: <p>
+
+<a href="http://AkkaBay.com/links4profit/index.html">http://AkkaBay.com/links4profit/index.html</a><br>
+Vote for this design:  <a href="mailto:design1@AEOpublishing.com">design1@AEOpublishing.com</a><p>
+
+<a href="http://AkkaBay.com/links4profit/index2.html">http://AkkaBay.com/links4profit/index2.html</a><br>
+Vote for this design:  <a href="mailto:design2@AEOpublishing.com">design2@AEOpublishing.com</a><p>
+
+<a href="http://AkkaBay.com/links4profit/index3.html">http://AkkaBay.com/links4profit/index3.html</a><br>
+Vote for this design:  <a href="mailto:design3@AEOpublishing.com">design3@AEOpublishing.com</a><p>
+
+You will have all of this week to vote (through June 29), and 
+we'll list the favorite and most voted for layout next week.  
+Teddy of course will be able to choose his favorite, and 
+colors, font style/size, backgrounds, textures, etc, can all 
+easily be changed on the "layout" that he likes. 
+<p>
+Free website re-designs and original graphics are provided to 
+FLN Showcase winners courtesy of AkkaBay Designs. 
+<a href="http://AkkaBay.com"> http://AkkaBay.com </a><p>
+
+If you have any questions about how this works or how you can 
+participate, please email Amy at <a href="mailto:Moderator@AEOpublishing.com> Moderator </a><p>
+		<p>______________________________________________________<br>
+moderator:Amy Mossel <br>
+posting: <a href="MyInput@AEOpublishing.com">MyInput@AEOpublishing.com</a><br>
+______________________________________________________<br>
+______________________________________________________<br>
+
+Send posts and questions (or your answers) to:<br>
+  <a href="MyInput@AEOpublishing.com">MyInput@AEOpublishing.com</a><br>
+Please send suggestions and comments to:<br>
+  <a href="mailto:Moderator@AEOpublishing.com">Moderator@AEOpublishing.com</a><p>
+
+To change your subscribed address, send both new 
+and old address to <a href="mailto:Moderator@AEOpublishing.com">Moderator@AEOpublishing.com</a><br>
+See below for unsubscribe instructions.<br>
+
+Copyright 2001 AEOpublishing <br>
+
+-----End of Your Membership Exchange<p>
+		<!-- End Letter Body -->
+		
+		<!-- Begin Signature  -->
+		<p>
+		
+		<p>
+		<br>
+		<hr width="60%" size="1" align="left" NOSHADE>
+		<br>
+		
+
+		<!-- End Signature  -->
+		</font>
+		</td>
+	</tr>
+	</table>
+	<!-- End Content Table -->
+	</td>
+	<td width="25" bgcolor="#870000"> </td>
+</tr>
+<!-- Begin Phone Number Row -->
+<tr>
+	<td width="25" bgcolor="#870000"> </td>
+	<td width="525" bgcolor="#870000" align="right"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1" color="#FFFFFF"> </font></td>
+	<td width="25"><img src="http://ccprod.roving.com/roving/images/letters/red-corner-br.gif" width="25" height="25" border="0" alt=""></td>
+</tr>
+<!-- End Phone Number Row -->
+<tr>
+	<td colspan="3" bgcolor="#FFFFFF" align="center">
+	<!--  You are required by your Constant Contact user agreement to
+      provide the opt-out link shown below as by the property 'OptOut' -->
+
+	<font face="Verdana,Arial,Helvetica,sans-serif" size="1">
+	<br>This email was sent to jm@netnoteinc.com, at your request, by <a href="http://ccprod.roving.com/roving/sa/s.jsp?id=bd7n7877.a4dfur67">Your Membership Newsletter Services</a>.  
+	<br>Visit our Subscription Center to <a href="http://ccprod.roving.com/roving/d.jsp?p=oo&id=bd7n7877.a4dfur67&m=bd7n7877&ea=jm@netnoteinc.com">edit</a> your interests or <a href="http://ccprod.roving.com/roving/d.jsp?p=oo&id=bd7n7877.a4dfur67&m=bd7n7877&ea=jm@netnoteinc.com">unsubscribe</a>.
+	<br>View our <a href="http://ccprod.roving.com/roving/CCPrivacyPolicy.jsp">privacy policy</a>.
+	<p>Powered by
+	<br><a href="http://www.constantcontact.com/index.jsp?cc=ctrlr" target="_blank"><img src="http://ccprod.roving.com/roving/images/cc-logo-color-sm.gif" border="0" alt="Constant Contact"></a>
+	</font>
+	<!-- end opt-out area -->
+	</td>
+</tr>
+</table>
+
+</center>
+</body>
+</html>
+--1074482631.993802752000.JavaMail.RovAdmin.rovweb002--
+
+
+

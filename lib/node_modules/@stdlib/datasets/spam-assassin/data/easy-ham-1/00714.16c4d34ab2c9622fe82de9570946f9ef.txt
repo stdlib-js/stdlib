@@ -1,0 +1,101 @@
+From fork-admin@xent.com  Mon Sep 23 12:09:42 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 8B84816F03
+	for <jm@localhost>; Mon, 23 Sep 2002 12:09:41 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 23 Sep 2002 12:09:41 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8N995C09508 for <jm@jmason.org>;
+    Mon, 23 Sep 2002 10:09:06 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id BB4F12940B0; Mon, 23 Sep 2002 02:05:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from argote.ch (argote.ch [80.65.224.17]) by xent.com (Postfix)
+    with ESMTP id 1F41029409A for <fork@xent.com>; Mon, 23 Sep 2002 02:04:19
+    -0700 (PDT)
+Received: by argote.ch (Postfix, from userid 500) id 0A6ABC44D;
+    Mon, 23 Sep 2002 11:06:05 +0200 (CEST)
+To: fork@spamassassin.taint.org
+Subject: Re: Goodbye Global Warming
+Cc: ""@argote.ch
+Message-Id: <20020923090605.0A6ABC44D@argote.ch>
+From: harley@argote.ch (Robert Harley)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 23 Sep 2002 11:06:05 +0200 (CEST)
+
+Gary Lawrence Murphy wrote:
+>and say hello to the cool:  Oooo ... /this/ is going to cause some stir ...
+
+Of course not.  Some people just don't want to be confused by the facts.
+
+
+>SUMMARY
+>
+>As part of an ongoing NASA/UAH joint project, Dr. John Christy of UAH
+>and Dr. Roy Spencer of NASA's Marshall Space Flight Center use data
+>gathered by microwave sounding units (MSUs) on National Oceanic and
+>Atmospheric Administration TIROS-N satellites to get accurate, direct
+>measurements of atmospheric temperatures for almost all regions of the
+>Earth [...]
+
+But some plonker will come up with yet another computer model
+predicting global warming and storms and floods in 50 years even
+though it can't predict next week's weather.  And predict widespread
+cooling in some parts of the globe (which is now part of global
+"warming").  And will get plenty of publicity for even more conclusive
+scaremong^H^H^H^H^H^H^H^H^H proof.
+
+
+>[...]
+>Globally, however, the satellite data show a cooling trend of 0.03
+>degrees Celsius per decade since the first NOAA TIROS-N satellites
+>went into service.
+
+Umpteen studies have already shown that temperature variations, when
+even detectable in the noise, go either way depending on which data
+you look at.
+
+
+>Of great concern to scientists is the lack of consistency in the way
+>readings are taken [...] the construction of
+>nearby roads, parking lots, runways and buildings may cause the
+>temperature to rise a little due of urbanization. This temperature
+>change may be an artifact of a local "asphalt effect" rather than a
+>long-term widespread climate change.
+
+One study from Vienna showed long-term warming from thermometers at
+the airport, and none from other sites.  Another study with data from
+Antarctica which was touted as supporting global warming while being
+free from this urbanization effect later turned out to be dominated by
+the time of day at which the airplane that made the measurements flew
+(I may have mentioned this one b4...)
+
+
+"There are no facts, only interpretations."
+- Friedrich Nietzsche.
+"Bullshit!"
+- Rob.
+
+     .-.                                                               .-.
+    /   \           .-.                                 .-.           /   \
+   /     \         /   \       .-.     _     .-.       /   \         /     \
+  /       \       /     \     /   \   / \   /   \     /     \       /       \
+ /         \     /       \   /     `-'   `-'     \   /       \     /         \
+            \   /         `-'                     `-'         \   /
+             `-'                                               `-'
+
+

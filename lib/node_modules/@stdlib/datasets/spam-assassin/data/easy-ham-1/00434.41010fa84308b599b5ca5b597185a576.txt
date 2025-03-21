@@ -1,0 +1,87 @@
+From fork-admin@xent.com  Thu Sep  5 11:31:38 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 62B7916F72
+	for <jm@localhost>; Thu,  5 Sep 2002 11:28:44 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 05 Sep 2002 11:28:44 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g854v0Z04855 for <jm@jmason.org>;
+    Thu, 5 Sep 2002 05:57:01 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 528BA294248; Wed,  4 Sep 2002 21:54:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from relay.pair.com (relay1.pair.com [209.68.1.20]) by xent.com
+    (Postfix) with SMTP id A2B1E2940AA for <FoRK@xent.com>; Wed,
+    4 Sep 2002 21:53:54 -0700 (PDT)
+Received: (qmail 69458 invoked from network); 5 Sep 2002 04:56:26 -0000
+Received: from adsl-63-196-1-72.dsl.snfc21.pacbell.net (HELO golden)
+    (63.196.1.72) by relay1.pair.com with SMTP; 5 Sep 2002 04:56:26 -0000
+X-Pair-Authenticated: 63.196.1.72
+Message-Id: <02ff01c25498$9695d840$640a000a@golden>
+From: "Gordon Mohr" <gojomo@usa.net>
+To: "FoRK" <FoRK@xent.com>
+References: <AMEPKEBLDJJCCDEJHAMIIECDFGAA.ejw@cse.ucsc.edu>
+    <DAV16XoivCNoMKrwDVT0000bc1e@hotmail.com>
+Subject: Re: CD player UI for toddlers
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 4 Sep 2002 21:56:24 -0700
+
+Mr Fork writes:
+  Jim Whitehead writes:
+> > For toddlers, pressing play must cause the music to start immediately,
+> > within half a second, for the toddler to get the causality and not press
+> the
+> > button multiple times.
+> Or some sound indicating that the music will start real soon now.
+
+A tonal countdown would be nice.
+
+> > What would the ideal toddler CD player be like? It would immediately start
+> > playing a CD after it was loaded.
+> It'd be an MP3 player with solid state storage... instant on.
+
+Hmm. Seems like every CD player should include the
+capability to rip, encode, and cache the last few CDs 
+inserted. 
+
+Playback would then never need to face seek delays... 
+after the initial ripping, the only use of the laser 
+pickup would be recognizing which CD is inserted --
+which might be doable faster than a seek-and-start-at-
+first-track operation.
+
+You could also take the CD out while it is "playing".
+
+Hmm. If the CD is still in the cache, maybe you don't
+even have to insert it. Or choose it from a step-through
+UI. Instead, you just wave it at an electronic eye of
+some sort... and the player recognizes it from the 
+silkscreening. Kids would like that. "Play this," they'd
+say, facing the CD at the player, and the player would
+start immediately.
+
+- Gordon
+
+
+

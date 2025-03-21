@@ -1,0 +1,64 @@
+From ilug-admin@linux.ie  Fri Aug 16 14:01:08 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A034343C32
+	for <jm@localhost>; Fri, 16 Aug 2002 09:00:51 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 16 Aug 2002 14:00:51 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7GD1La18761 for
+    <jm-ilug@jmason.org>; Fri, 16 Aug 2002 14:01:21 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id OAA28128; Fri, 16 Aug 2002 14:00:18 +0100
+Received: from corvil.com. (k100-159.bas1.dbn.dublin.eircom.net
+    [159.134.100.159]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id OAA28098
+    for <ilug@linux.ie>; Fri, 16 Aug 2002 14:00:11 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host k100-159.bas1.dbn.dublin.eircom.net
+    [159.134.100.159] claimed to be corvil.com.
+Received: from corvil.com (pixelbeat.local.corvil.com [172.18.1.170]) by
+    corvil.com. (8.12.5/8.12.5) with ESMTP id g7GD0An4037116 for
+    <ilug@linux.ie>; Fri, 16 Aug 2002 14:00:10 +0100 (IST) (envelope-from
+    padraig.brady@corvil.com)
+Message-Id: <3D5CF74B.7@corvil.com>
+Date: Fri, 16 Aug 2002 13:59:55 +0100
+From: Padraig Brady <padraig.brady@corvil.com>
+Organization: Corvil Networks
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:0.9.9) Gecko/20020408
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: ilug@linux.ie
+Subject: Re: [ILUG] Autorun CDs
+References: <NBBBIGEGHIGMPCNKHCECOEHBEAAA.kenn@bluetree.ie>
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 8bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Kenn Humborg wrote:
+>>Cheers All for your words of wisdom.
+>>
+>>I came across this which has worked a treat:-
+>>
+>>http://www.avdf.com/mar97/art_autorun.html
+> 
+> 
+> (This is all Windows-related autorun stuff).
+
+Which was obvious since he mentioned:
+`start file.html`
+And the reason I didn't reply, Doh!
+
+Pádraig.
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

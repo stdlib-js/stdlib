@@ -1,0 +1,45 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Fri Sep  6 07:09:11 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Fri, 06 Sep 2002 02:09:11 -0400
+Subject: [Spambayes] all but one testing
+In-Reply-To: <20020905224923.GA20480@glacier.arctrix.com>
+Message-ID: <LNBBLJKPBEHFEDALKOLCCEFOBCAB.tim.one@comcast.net>
+
+[Tim]
+> Another area for potentially fruitful study:  it's clear that the
+> highest-value indicators usually appear "early" in msgs, and for spam
+> there's an actual reason for that:  advertising has to strive
+> to get your attention early.  So, for example, if we only bothered to
+> tokenize the first 90% of a msg, would results get worse?
+
+[Neil Schemenauer]
+> Spammers could exploit this including a large MIME part at the beginning
+> of the message.  In pratice that would probably work fine.
+
+Note that timtest.py's current tokenizer only looks at decoded text/* MIME
+sections (or raw message text if no MIME exists); spammers could put
+megabytes of other crap before that and it wouldn't even be looked at
+(except that the email package has to parse non-text/* parts well enough to
+skip over them, and tokens for the most interesting parts of Content-{Type,
+Disposition, Transfer-Encoding} decorations are generated for all MIME
+sections).
+
+Schemes that remain ignorant of MIME are vulnerable to spammers putting
+arbitrary amounts of "nice text" in the preamble area (after the headers and
+before the first MIME section), which most mail readers don't display, but
+which appear first in the file so are latched on to by Graham's scoring
+scheme.
+
+But I don't worry about clever spammers -- I've seen no evidence that they
+exist <0.5 wink>.  Even if they do, the Open Source zoo is such that no
+particular scheme will gain dominance, and there's no percentage for
+spammers in trying to fool just one scheme.  Even if they did, for the kind
+of scheme we're using here they can't *know* what "nice text" is, not unless
+they pay a lot of attention to the spam targets and highly tailor their
+messages to each different one.  At that point they'd be doing targeted
+marketing, and the cost of the game to them would increase enormously.
+
+if-you're-out-to-make-a-quick-buck-you-don't-waste-a-second-on-hard-
+    targets-ly y'rs  - tim
+

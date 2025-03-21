@@ -1,0 +1,32 @@
+
+presentationStop( [id] )
+    Stops a REPL presentation.
+
+    If provided a presentation identifier, the corresponding presentation is
+    stopped. Otherwise, assuming the command is invoked in a presentation
+    workspace, the current presentation is stopped.
+
+    When stopping a REPL presentation, the presentation's REPL workspace is
+    both cleared and deleted.
+
+    Parameters
+    ----------
+    id: number|string (optional)
+        Presentation identifier. Must be provided if not currently in a
+        presentation workspace.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether the REPL successfully stopped a REPL
+        presentation.
+
+    Examples
+    --------
+    > var id = presentationStart( 'beep\n---\nboop\n' );
+    > presentationStop();
+
+    See Also
+    --------
+    presentationStart, workspace, workspaces
+

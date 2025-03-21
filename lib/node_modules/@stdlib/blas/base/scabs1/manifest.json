@@ -1,0 +1,441 @@
+{
+  "options": {
+    "task": "build",
+    "os": "linux",
+    "blas": "",
+    "wasm": false
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "os": "linux",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/scabs1.f",
+        "./src/scabs1sub.f",
+        "./src/scabs1_f.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-complex64",
+        "@stdlib/napi/create-double",
+        "@stdlib/complex/float32/ctor"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "linux",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/scabs1.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/absf",
+        "@stdlib/complex/float32/ctor",
+        "@stdlib/complex/float32/reim"
+      ]
+    },
+    {
+      "task": "examples",
+      "os": "linux",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/scabs1.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/absf",
+        "@stdlib/complex/float32/ctor",
+        "@stdlib/complex/float32/reim",
+        "@stdlib/complex/float32/real",
+        "@stdlib/complex/float32/imag"
+      ]
+    },
+
+    {
+      "task": "build",
+      "os": "linux",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/scabs1_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-complex64",
+        "@stdlib/napi/create-double",
+        "@stdlib/complex/float32/ctor"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "linux",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/scabs1_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/complex/float32/ctor"
+      ]
+    },
+    {
+      "task": "examples",
+      "os": "linux",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/scabs1_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/complex/float32/ctor",
+        "@stdlib/complex/float32/real",
+        "@stdlib/complex/float32/imag"
+      ]
+    },
+
+    {
+      "task": "build",
+      "os": "mac",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/scabs1.f",
+        "./src/scabs1sub.f",
+        "./src/scabs1_f.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-complex64",
+        "@stdlib/napi/create-double",
+        "@stdlib/complex/float32/ctor"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "mac",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/scabs1.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/absf",
+        "@stdlib/complex/float32/ctor",
+        "@stdlib/complex/float32/reim"
+      ]
+    },
+    {
+      "task": "examples",
+      "os": "mac",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/scabs1.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/absf",
+        "@stdlib/complex/float32/ctor",
+        "@stdlib/complex/float32/reim",
+        "@stdlib/complex/float32/real",
+        "@stdlib/complex/float32/imag"
+      ]
+    },
+
+    {
+      "task": "build",
+      "os": "mac",
+      "blas": "apple_accelerate_framework",
+      "wasm": false,
+      "src": [
+        "./src/scabs1_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lblas"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-complex64",
+        "@stdlib/napi/create-double",
+        "@stdlib/complex/float32/ctor"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "mac",
+      "blas": "apple_accelerate_framework",
+      "wasm": false,
+      "src": [
+        "./src/scabs1_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lblas"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/complex/float32/ctor"
+      ]
+    },
+    {
+      "task": "examples",
+      "os": "mac",
+      "blas": "apple_accelerate_framework",
+      "wasm": false,
+      "src": [
+        "./src/scabs1_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lblas"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/complex/float32/ctor",
+        "@stdlib/complex/float32/real",
+        "@stdlib/complex/float32/imag"
+      ]
+    },
+
+    {
+      "task": "build",
+      "os": "mac",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/scabs1_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-complex64",
+        "@stdlib/napi/create-double",
+        "@stdlib/complex/float32/ctor"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "mac",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/scabs1_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/complex/float32/ctor"
+      ]
+    },
+    {
+      "task": "examples",
+      "os": "mac",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/scabs1_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/complex/float32/ctor",
+        "@stdlib/complex/float32/real",
+        "@stdlib/complex/float32/imag"
+      ]
+    },
+
+    {
+      "task": "build",
+      "os": "win",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/scabs1.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-complex64",
+        "@stdlib/napi/create-double",
+        "@stdlib/complex/float32/ctor",
+        "@stdlib/math/base/special/absf",
+        "@stdlib/complex/float32/reim"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "win",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/scabs1.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/absf",
+        "@stdlib/complex/float32/ctor",
+        "@stdlib/complex/float32/reim"
+      ]
+    },
+    {
+      "task": "examples",
+      "os": "win",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/scabs1.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/absf",
+        "@stdlib/complex/float32/ctor",
+        "@stdlib/complex/float32/reim",
+        "@stdlib/complex/float32/real",
+        "@stdlib/complex/float32/imag"
+      ]
+    },
+
+    {
+      "task": "build",
+      "os": "",
+      "blas": "",
+      "wasm": true,
+      "src": [
+        "./src/scabs1.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/absf",
+        "@stdlib/complex/float32/ctor",
+        "@stdlib/complex/float32/reim"
+      ]
+    }
+  ]
+}

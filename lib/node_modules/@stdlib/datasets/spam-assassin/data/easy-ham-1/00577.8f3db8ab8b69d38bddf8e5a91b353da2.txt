@@ -1,0 +1,63 @@
+From fork-admin@xent.com  Fri Sep 13 13:37:25 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id B297916F03
+	for <jm@localhost>; Fri, 13 Sep 2002 13:37:24 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 13 Sep 2002 13:37:24 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8CKYhC14626 for <jm@jmason.org>;
+    Thu, 12 Sep 2002 21:34:46 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 0D3A82940E5; Thu, 12 Sep 2002 13:31:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from Boron.MeepZor.Com (i.meepzor.com [204.146.167.214]) by
+    xent.com (Postfix) with ESMTP id D38FF29409A for <fork@xent.com>;
+    Thu, 12 Sep 2002 13:30:29 -0700 (PDT)
+Received: from sashimi (dmz-firewall [206.199.198.4]) by Boron.MeepZor.Com
+    (8.11.6/8.11.6) with SMTP id g8CKXVO32620 for <fork@xent.com>;
+    Thu, 12 Sep 2002 16:33:31 -0400
+From: "Bill Stoddard" <bill@wstoddard.com>
+To: "Fork@Xent.Com" <fork@spamassassin.taint.org>
+Subject: RE: dylsexics of the wrold, untie!
+Message-Id: <JHEPKCEMGPKFFDHHDDKDAEIOFFAA.bill@wstoddard.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+In-Reply-To: <1031860743.14237.42.camel@avalon>
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Importance: Normal
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 12 Sep 2002 16:32:52 -0400
+
+> If the text recognition algorithm/architecture humans use is anything
+> like the algorithm/structure we've been working with, the reason the
+> first letter (and to a lesser extent, the last letter) is important is
+> that without it the text pattern recognition problem is exponentially
+> more difficult (from a theoretical standpoint anyway) and has to be
+> resolved using deeper abstraction analysis.  The middle letters are far
+> less important and computationally much easier to resolve correctly.
+
+I think keeping the number of middle letters consistent with the correct
+spelling is important.  Would be interesting to see if this same effect is
+applicable to written forms of other languages, maybe even Japanese romongi.
+
+Bill
+
+

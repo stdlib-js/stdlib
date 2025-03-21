@@ -1,0 +1,43 @@
+
+{{alias}}( obj, transform )
+    Maps keys from one object to a new object having the same values.
+
+    The transform function is provided three arguments:
+
+    - key: object key.
+    - value: object value corresponding to `key`.
+    - obj: the input object.
+
+    The value returned by a transform function should be a value which can be
+    serialized as an object key.
+
+    The function only maps own properties. Hence, the function does not map
+    inherited properties.
+
+    The function shallow copies key values.
+
+    Key iteration order is *not* guaranteed.
+
+    Parameters
+    ----------
+    obj: Object
+        Source object.
+
+    transform: Function
+        Transform function. Return values specify the keys of the output object.
+
+    Returns
+    -------
+    out: Object
+        New object.
+
+    Examples
+    --------
+    > function transform( key, value ) { return key + value; };
+    > var obj = { 'a': 1, 'b': 2 };
+    > var out = {{alias}}( obj, transform )
+    { 'a1': 1, 'b2': 2 }
+
+    See Also
+    --------
+

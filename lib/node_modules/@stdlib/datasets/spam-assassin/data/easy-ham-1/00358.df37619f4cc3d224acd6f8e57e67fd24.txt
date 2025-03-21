@@ -1,0 +1,119 @@
+From fork-admin@xent.com  Thu Aug 29 11:03:53 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 55F2C44156
+	for <jm@localhost>; Thu, 29 Aug 2002 06:03:45 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:03:45 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7SJIkZ07106 for <jm@jmason.org>;
+    Wed, 28 Aug 2002 20:18:47 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 4B6B129423C; Wed, 28 Aug 2002 12:16:10 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.auracom.net (smtp1.auracom.net [165.154.140.23]) by
+    xent.com (Postfix) with ESMTP id 7200129423B for <fork@xent.com>;
+    Wed, 28 Aug 2002 12:15:20 -0700 (PDT)
+Received: from maya.dyndns.org (ts5-015.ptrb.interhop.net
+    [165.154.190.79]) by smtp1.auracom.net (8.11.2/8.11.2) with ESMTP id
+    g7SIp0V22231; Wed, 28 Aug 2002 14:51:01 -0400 (EDT)
+Received: by maya.dyndns.org (Postfix, from userid 501) id 643D01C388;
+    Wed, 28 Aug 2002 15:06:40 -0400 (EDT)
+To: harley@argote.ch (Robert Harley)
+Cc: fork@spamassassin.taint.org
+Subject: Re: Java is for kiddies
+References: <20020828165937.B53E9C44D@argote.ch>
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m2vg5u3irk.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 28 Aug 2002 15:06:39 -0400
+
+>>>>> "R" == Robert Harley <harley@argote.ch> writes:
+
+    R> GLM wrote:
+    >> And a Java program, due to the extensive class libraries, will
+    >> weigh in at 10% the number of lines of the equivalent C
+    >> program.  QED.
+
+    R> There are massive amounts of libraries for C, Fortran and so
+    R> on.  To pick an obvious example., if you want to do linear
+    R> algebra, then Java isn't a serious candidate at all.
+
+If you want to do http, C gets pretty muddy (curl is about the best
+choice I've found) but I grant you that: No language is the be-all and
+end-all.
+
+I envy some of those posting to this list.  I've been in business for
+24 years and I haven't yet had the luxury of writing every line of
+code for any project. We are always coerced by budgets and time to
+maximize the amount of work done elsewhere.  
+
+As much as I hate dealing with someone else's blackbox, as much as
+I've spent sleepless nights second-guessing external libs, I've never
+ever had the luxury to do otherwise. It must be wonderful to be
+responsible for something you are actually responsible for, and I am
+so sick of being blamed for other people's design mistakes.
+
+Maybe there's an archive somewhere I need to know about, but I've been
+using C since DrDobbs first published SmallC and yet I've never found
+any decent LGPL libs cataloged in such a way that I can just type in
+the task and get back an API.  Because of Javadoc, which is by no
+means perfect, Java provides me the second best catalog of 3rd-party
+libs, second only to Perl's CPAN -- Perl is one language I also really
+hate with a passion, yet end up using the most for exactly this reason.
+
+For example, take the recent CBC Olympics site: I needed to roll
+together a telnet client with a tokenizer, perl-regex preprocessing a
+stream to produce parseable XML, project that XML into relational
+databases using only the DTD to generate the rdbms schema, and open an
+XMLRPC interface to read and post items into the news stream.  Where
+can I find C libs for those components?  
+
+On the webserver, we then needed a multithreaded read-only http socket
+which can spawn persistent data-caching servlets that periodically
+refresh themselves over socket connections to the relational database,
+presenting the retreived values through XSLT-defined transforms, and
+again, where can I find such stuff for C ... or for any other langauge
+but Java?  Wombat (servlet spec for Perl) was inviting, but it's not
+ready for prime-time, and re-inventing that entire shopping list in C
+is just not feasible for one programmer to do inside of 8 weeks.
+
+When you need C libs, or even C++ libs, where's the best place to shop?
+Where do you find standards-based portable RDBMS API? (ODBC?) How do
+you evaluate these things without actually fetching every one and
+trying it out?
+
+In a perfect universe, I'd use Ocaml or even Ruby, but I don't see the
+social infrastructure for either happening during my professional
+lifetime.
+
+    R> Why do so many people outside of Sun's marketing department
+    R> consider Java to be "Write Once, Debug Everywhere" ?
+
+A collegue at Cognos (Henk?) called C "the nearly-portable assembler"
+
+-- 
+Gary Lawrence Murphy <garym@teledyn.com> TeleDynamics Communications Inc
+ Business Advantage through Community Software : http://www.teledyn.com
+"Computers are useless.  They can only give you answers."(Pablo Picasso)
+
+

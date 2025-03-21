@@ -1,0 +1,89 @@
+{
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/constants/float64/nan",
+        "@stdlib/constants/float64/phi",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/math/base/assert/is-integer",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/floor",
+        "@stdlib/math/base/special/ln"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/constants/float64/nan",
+        "@stdlib/constants/float64/phi",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/math/base/assert/is-integer",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/floor",
+        "@stdlib/math/base/special/ln"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/constants/float64/nan",
+        "@stdlib/constants/float64/phi",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/math/base/assert/is-integer",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/floor",
+        "@stdlib/math/base/special/ln"
+      ]
+    }
+  ]
+}

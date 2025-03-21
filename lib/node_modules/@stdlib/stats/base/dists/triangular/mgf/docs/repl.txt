@@ -1,0 +1,83 @@
+
+{{alias}}( t, a, b, c )
+    Evaluates the moment-generating function (MGF) for a triangular distribution
+    with minimum support `a`, maximum support `b`, and mode `c` at a value `t`.
+
+    If the condition `a <= c <= b` is not satisfied, the function returns `NaN`.
+
+    If either `a`, `b`, or `c` is `NaN`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    t: number
+        Input value.
+
+    a: number
+        Minimum support.
+
+    b: number
+        Maximum support.
+
+    c: number
+        Mode.
+
+    Returns
+    -------
+    out: number
+        Evaluated MGF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.5, -1.0, 1.0, 0.0 )
+    ~1.021
+    > y = {{alias}}( 0.5, -1.0, 1.0, 0.5 )
+    ~1.111
+    > y = {{alias}}( -0.3, -20.0, 0.0, -2.0 )
+    ~24.334
+    > y = {{alias}}( -2.0, -1.0, 1.0, 0.0 )
+    ~1.381
+    > y = {{alias}}( NaN, 0.0, 1.0, 0.5 )
+    NaN
+    > y = {{alias}}( 0.0, NaN, 1.0, 0.5 )
+    NaN
+    > y = {{alias}}( 0.0, 0.0, NaN, 0.5 )
+    NaN
+    > y = {{alias}}( 0.5, 1.0, 0.0, NaN )
+    NaN
+    > y = {{alias}}( 0.5, 1.0, 0.0, 1.5 )
+    NaN
+
+
+{{alias}}.factory( a, b, c )
+    Returns a function for evaluating the moment-generating function (MGF) of a
+    triangular distribution with minimum support `a`, maximum support `b`, and
+    mode `c`.
+
+    Parameters
+    ----------
+    a: number
+        Minimum support.
+
+    b: number
+        Maximum support.
+
+    c: number
+        Mode.
+
+    Returns
+    -------
+    mgf: Function
+        Moment-generating function (MGF).
+
+    Examples
+    --------
+    > var mymgf = {{alias}}.factory( 0.0, 2.0, 1.0 );
+    > var y = mymgf( -1.0 )
+    ~0.3996
+    > y = mymgf( 2.0 )
+    ~10.205
+
+    See Also
+    --------
+
+

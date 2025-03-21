@@ -1,0 +1,60 @@
+/*
+* @license Apache-2.0
+*
+* Copyright (c) 2019 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+import Complex128 = require( '@stdlib/complex/float64/ctor' );
+import cfloorn = require( './index' );
+
+
+// TESTS //
+
+// The function returns a double-precision complex floating-point number...
+{
+	cfloorn( new Complex128( 1.0, 2.0 ), -2 ); // $ExpectType Complex128
+}
+
+// The compiler throws an error if the first argument of the function is provided a value other than a complex number...
+{
+	cfloorn( 3, -2 ); // $ExpectError
+	cfloorn( true, -2 ); // $ExpectError
+	cfloorn( false, -2 ); // $ExpectError
+	cfloorn( null, -2 ); // $ExpectError
+	cfloorn( undefined, -2 ); // $ExpectError
+	cfloorn( '5', -2 ); // $ExpectError
+	cfloorn( [], -2 ); // $ExpectError
+	cfloorn( {}, -2 ); // $ExpectError
+	cfloorn( ( x: number ): number => x, -2 ); // $ExpectError
+}
+
+// The compiler throws an error if the second argument of the function is provided a value other than a number...
+{
+	cfloorn( new Complex128( 1.0, 2.0 ), 3, -2 ); // $ExpectError
+	cfloorn( new Complex128( 1.0, 2.0 ), true, -2 ); // $ExpectError
+	cfloorn( new Complex128( 1.0, 2.0 ), false, -2 ); // $ExpectError
+	cfloorn( new Complex128( 1.0, 2.0 ), null, -2 ); // $ExpectError
+	cfloorn( new Complex128( 1.0, 2.0 ), undefined, -2 ); // $ExpectError
+	cfloorn( new Complex128( 1.0, 2.0 ), '5', -2 ); // $ExpectError
+	cfloorn( new Complex128( 1.0, 2.0 ), [], -2 ); // $ExpectError
+	cfloorn( new Complex128( 1.0, 2.0 ), {}, -2 ); // $ExpectError
+	cfloorn( new Complex128( 1.0, 2.0 ), ( x: number ): number => x, -2 ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided insufficient arguments...
+{
+	cfloorn(); // $ExpectError
+	cfloorn( 2 ); // $ExpectError
+}

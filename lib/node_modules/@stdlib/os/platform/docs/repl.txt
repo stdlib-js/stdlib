@@ -1,0 +1,20 @@
+
+{{alias}}
+    Platform on which the current process is running.
+
+    Possible values:
+
+    - win32
+    - darwin
+    - linux
+    - freebsd
+    - sunos
+
+    Examples
+    --------
+    > {{alias}}
+    <string>
+
+    See Also
+    --------
+

@@ -1,0 +1,68 @@
+From ilug-admin@linux.ie  Fri Aug  2 09:45:58 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5C8A5440F1
+	for <jm@localhost>; Fri,  2 Aug 2002 04:45:58 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 02 Aug 2002 09:45:58 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g728hC213042 for
+    <jm-ilug@jmason.org>; Fri, 2 Aug 2002 09:43:12 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA26786; Fri, 2 Aug 2002 09:41:52 +0100
+Received: from homer.jinny.ie ([193.120.171.3]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA26755 for <ilug@linux.ie>; Fri,
+    2 Aug 2002 09:41:45 +0100
+Received: from jlooney.jinny.ie (fw [193.120.171.2]) by homer.jinny.ie
+    (8.9.3/8.11.2) with ESMTP id JAA09575 for <ilug@linux.ie>; Fri,
+    2 Aug 2002 09:41:14 +0100
+Received: (from john@localhost) by jlooney.jinny.ie (8.11.6/8.11.6) id
+    g728fvE11205 for ilug@linux.ie; Fri, 2 Aug 2002 09:41:57 +0100
+X-Authentication-Warning: jlooney.jinny.ie: john set sender to
+    jlooney@jinny.ie using -f
+Date: Fri, 2 Aug 2002 09:41:57 +0100
+From: "John P. Looney" <valen@tuatha.org>
+To: ilug@linux.ie
+Subject: Re: [ILUG] Dell GX260 V Redhat 7.3
+Message-Id: <20020802084157.GV5178@jinny.ie>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: ilug@linux.ie
+References: <5FE418B3F962D411BED40000E818B33C9C8E7D@HASSLE>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <5FE418B3F962D411BED40000E818B33C9C8E7D@HASSLE>
+User-Agent: Mutt/1.4i
+X-Os: Red Hat Linux 7.3/Linux 2.4.18-3
+X-Url: http://www.redbrick.dcu.ie/~valen
+X-Gnupg-Publickey: http://www.redbrick.dcu.ie/~valen/public.asc
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Fri, Aug 02, 2002 at 09:28:57AM +0100, Hunt, Bryan mentioned:
+> I'm not knocking dell in general, my next machine is going to be a dell.
+> But buying a random dell box is likely to result in much tearing out of
+> hair. 
+
+ Buying any new machine is going to cause problems with a six month old
+set of drivers. Same happens in windows - you have to go get your drivers.
+
+ Yes, dell use the most recent stuff they can, to save money. That's not a
+bad thing. Just a bad thing for those that hope a distro will work out of
+the box.
+
+Kate
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

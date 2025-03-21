@@ -1,0 +1,30 @@
+
+{{alias}}( id )
+    Wraps `require` in a `try/catch` block.
+
+    This function traps and returns any errors encountered when attempting to
+    require a module.
+
+    Use caution when attempting to resolve a relative path or a local module.
+    This function attempts to resolve a module from its current path. Thus, the
+    function is unable to resolve anything which is not along its search path.
+    For local requires, use an absolute file path.
+
+    Parameters
+    ----------
+    id: string
+        Module id.
+
+    Returns
+    -------
+    out: any|Error
+        Resolved module or an `Error`.
+
+    Examples
+    --------
+    > var out = {{alias}}( '_unknown_module_id_' )
+    <Error>
+
+    See Also
+    --------
+

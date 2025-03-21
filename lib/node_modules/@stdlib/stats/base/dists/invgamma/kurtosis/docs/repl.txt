@@ -1,0 +1,33 @@
+
+{{alias}}( α, β )
+    Returns the excess kurtosis of an inverse gamma distribution.
+
+    If `α <= 4` or `β <= 0`, the function returns `NaN`.
+
+    If `α` or `β` is `NaN`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    α: number
+        Shape parameter.
+
+    β: number
+        Rate parameter.
+
+    Returns
+    -------
+    out: number
+        Excess kurtosis.
+
+    Examples
+    --------
+    > var v = {{alias}}( 7.0, 5.0 )
+    12.0
+    > v = {{alias}}( 6.0, 12.0 )
+    19.0
+    > v = {{alias}}( 8.0, 2.0 )
+    ~8.7
+
+    See Also
+    --------
+

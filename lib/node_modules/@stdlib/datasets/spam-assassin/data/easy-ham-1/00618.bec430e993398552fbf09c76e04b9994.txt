@@ -1,0 +1,75 @@
+From fork-admin@xent.com  Wed Sep 18 14:06:40 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id B1A4716F03
+	for <jm@localhost>; Wed, 18 Sep 2002 14:06:39 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 18 Sep 2002 14:06:39 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8IBUcC27697 for <jm@jmason.org>;
+    Wed, 18 Sep 2002 12:30:39 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 5EEED2940E1; Wed, 18 Sep 2002 04:27:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from permafrost.net (unknown [64.5.214.38]) by xent.com
+    (Postfix) with SMTP id 2A5332940E0 for <fork@xent.com>; Wed,
+    18 Sep 2002 04:26:51 -0700 (PDT)
+Received: (qmail 767 invoked by uid 1000); 18 Sep 2002 11:21:39 -0000
+From: "Owen Byrne" <owen@permafrost.net>
+To: Paul Prescod <paul@prescod.net>
+Cc: Owen Byrne <owen@permafrost.net>, fork@spamassassin.taint.org
+Subject: Re: Hanson's Sept 11 message in the National Review
+Message-Id: <20020918112139.GA740@www.NT-NETWORK>
+References: <96394F38-CA61-11D6-A53C-003065F93D3A@topsail.org>
+    <20020917173852.GB5613@www.NT-NETWORK> <3D87FCD5.8000302@prescod.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <3D87FCD5.8000302@prescod.net>
+User-Agent: Mutt/1.4i
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 18 Sep 2002 08:21:39 -0300
+
+On Tue, Sep 17, 2002 at 09:11:01PM -0700, Paul Prescod wrote:
+> Owen Byrne wrote:
+> >...
+> >
+> >Except that parroting the party line doesn't really require much
+> >freedom of speech. Now if you had posted something from a left of
+> >center source, you would have been shouted down in flames, buried in 
+> >ad hominem attacks, and probably get your name added to an FBI list. 
+> 
+> Do you think it is really useful to combat hysterical right-wing 
+> propoganda with hysterical left-wing propoganda?
+> 
+Sure it is - it tends to bring out the people who let "hysterical
+right wing propaganda" spew forth, while reaching for their gun 
+whenever a "liberal" enters the room.
+
+my hysterical left wing "propaganda" is generally an emotional
+reaction on a mailing list, not an organizaed attempt at converting
+people's thinking through lies and distortion (as was the original
+article). 
+
+Whereas your constant and predictable brandings of my postings are, to
+ my mind, a deliberate and reasoned  effort to reduce debate, and
+ discourage left of center postngs. 
+
+Owen
+
+
+
+

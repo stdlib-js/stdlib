@@ -1,0 +1,88 @@
+From fork-admin@xent.com  Mon Sep  9 19:27:46 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 1159116F03
+	for <jm@localhost>; Mon,  9 Sep 2002 19:27:46 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 19:27:46 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g89FIvC20754 for <jm@jmason.org>;
+    Mon, 9 Sep 2002 16:19:01 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 168242940E2; Mon,  9 Sep 2002 08:15:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from relay.pair.com (relay1.pair.com [209.68.1.20]) by xent.com
+    (Postfix) with SMTP id 762402940C9 for <fork@xent.com>; Mon,
+    9 Sep 2002 08:14:22 -0700 (PDT)
+Received: (qmail 86095 invoked from network); 9 Sep 2002 15:16:59 -0000
+Received: from adsl-63-196-1-228.dsl.snfc21.pacbell.net (HELO golden)
+    (63.196.1.228) by relay1.pair.com with SMTP; 9 Sep 2002 15:16:59 -0000
+X-Pair-Authenticated: 63.196.1.228
+Message-Id: <00e701c25813$eec5ab70$640a000a@golden>
+From: "Gordon Mohr" <gojomo@usa.net>
+To: <fork@spamassassin.taint.org>
+References: <Pine.LNX.4.33.0209091553450.32400-100000@hydrogen.leitl.org>
+    <15773384464.20020909103246@magnesium.net>
+Subject: Re: Re[3]: Selling Wedded Bliss (was Re: Ouch...)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 9 Sep 2002 08:16:53 -0700
+
+Bitbitch writes:
+> Listen.  If you pull numbers like that without a fact, the automagic
+> assumption is yes, they were extracted out of your neither orifice.
+> Point wasn't to conclude otherwise unless you had any relevant bits.
+> Its not my job to do _your_ bit searching for you, but I figured I'd
+> humor fork with this bit of finding:
+> 
+> http://www.thebody.com/bp/apr01/research_notebook.html  (Pointing ot
+> averages of about 13 for every 3 months (for gay men), which totals to
+> about  52 a year.  52 a year doesn't equal 3000.   Or even 300.
+
+Er, that study would seem to lend credence to Eugen's
+estimations, rather than casting fresh doubts. 
+
+52 a year *does* exceed 300, in under 6 years' time. The average
+age of that study's participants was *39* -- meaning some 
+participants may have had 20-25+ years of active sex life. 
+
+At that age, and further ** HIV+ **, it seems reasonable to
+think that some the participants may have actually slowed 
+their pace a bit. 
+
+So while this study's summary info is incomplete, you could 
+easily conclude that the *average* participant in this one study
+will have had over a thousand partners over a 40-50+ year active 
+sex life, and so the even-more-active tails of the distribution
+could easily be in the 3000+ range.
+
+Of course this says very little, almost nothing, about the overall 
+population behavior, gay or straight, and the relative prevalence
+of 3K+ individuals in either group. But it does strongly suggest 
+that gay males with 3K+ partners exist in measurable numbers, so
+people should stop treating Eugen's anecdotal estimation as if it
+were sheer fantasy. BitBitch's own citation suggests otherwise.
+
+- Gordon
+
+
+

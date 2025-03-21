@@ -1,0 +1,101 @@
+
+{{alias}}( [a, b] )
+    Returns a uniform distribution object.
+
+    Parameters
+    ----------
+    a: number (optional)
+        Minimum support. Must be smaller than `b`. Default: `0.0`.
+
+    b: number (optional)
+        Maximum support. Must be greater than `a`. Default: `1.0`.
+
+    Returns
+    -------
+    uniform: Object
+        Distribution instance.
+
+    uniform.a: number
+        Minimum support. If set, the value must be smaller than `b`.
+
+    uniform.b: number
+        Maximum support. If set, the value must be greater than `a`.
+
+    uniform.entropy: number
+        Read-only property which returns the differential entropy.
+
+    uniform.kurtosis: number
+        Read-only property which returns the excess kurtosis.
+
+    uniform.mean: number
+        Read-only property which returns the expected value.
+
+    uniform.median: number
+        Read-only property which returns the median.
+
+    uniform.skewness: number
+        Read-only property which returns the skewness.
+
+    uniform.stdev: number
+        Read-only property which returns the standard deviation.
+
+    uniform.variance: number
+        Read-only property which returns the variance.
+
+    uniform.cdf: Function
+        Evaluates the cumulative distribution function (CDF).
+
+    uniform.logcdf: Function
+        Evaluates the natural logarithm of the cumulative distribution function
+        (CDF).
+
+    uniform.logpdf: Function
+        Evaluates the natural logarithm of the probability density function
+        (PDF).
+
+    uniform.mgf: Function
+        Evaluates the moment-generating function (MGF).
+
+    uniform.pdf: Function
+        Evaluates the probability density function (PDF).
+
+    uniform.quantile: Function
+        Evaluates the quantile function at probability `p`.
+
+    Examples
+    --------
+    > var uniform = {{alias}}( 0.0, 1.0 );
+    > uniform.a
+    0.0
+    > uniform.b
+    1.0
+    > uniform.entropy
+    0.0
+    > uniform.kurtosis
+    -1.2
+    > uniform.mean
+    0.5
+    > uniform.median
+    0.5
+    > uniform.skewness
+    0.0
+    > uniform.stdev
+    ~0.289
+    > uniform.variance
+    ~0.083
+    > uniform.cdf( 0.8 )
+    0.8
+    > uniform.logcdf( 0.5 )
+    ~-0.693
+    > uniform.logpdf( 1.0 )
+    ~-0.0
+    > uniform.mgf( 0.8 )
+    ~1.532
+    > uniform.pdf( 0.8 )
+    1.0
+    > uniform.quantile( 0.8 )
+    0.8
+
+    See Also
+    --------
+

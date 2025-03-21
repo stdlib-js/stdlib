@@ -1,0 +1,56 @@
+From fork-admin@xent.com  Tue Aug 20 22:25:35 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 07CA443C32
+	for <jm@localhost>; Tue, 20 Aug 2002 17:25:35 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 22:25:35 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7KLOkZ25002 for <jm@jmason.org>;
+    Tue, 20 Aug 2002 22:24:47 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id E757529415D; Tue, 20 Aug 2002 14:07:41 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mail3.panix.com (mail3.panix.com [166.84.1.74]) by xent.com
+    (Postfix) with ESMTP id B7D99294099 for <fork@xent.com>; Tue,
+    20 Aug 2002 08:43:50 -0700 (PDT)
+Received: from 159-98.nyc.dsl.access.net (159-98.nyc.dsl.access.net
+    [166.84.159.98]) by mail3.panix.com (Postfix) with ESMTP id 2E9A598358 for
+    <fork@xent.com>; Tue, 20 Aug 2002 11:45:25 -0400 (EDT)
+From: Lucas Gonze <lgonze@panix.com>
+X-X-Sender: lgonze@localhost.localdomain
+Cc: FoRK <fork@spamassassin.taint.org>
+Subject: Re: Snag Ware
+In-Reply-To: <Pine.LNX.4.44.0208200335130.32191-100000@isolnetsux.techmonkeys.net>
+Message-Id: <Pine.LNX.4.44.0208201134370.17440-100000@localhost.localdomain>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 20 Aug 2002 11:38:16 -0400 (EDT)
+
+
+I paid for CuteFTP on my Windows box.  Well worth the money despite there 
+being free alternatives, no regrets whatsoever.
+
+Now that Mozilla isn't taking X down twice a day I'm unlikely to pay for 
+Opera, but if that hadn't happened around the same time I made the switch 
+to 100% unix I would have been happy to.
+
+- Lucas
+
+
+http://xent.com/mailman/listinfo/fork
+

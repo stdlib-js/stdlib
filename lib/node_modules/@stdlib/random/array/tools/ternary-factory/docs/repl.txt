@@ -1,0 +1,55 @@
+
+{{alias}}( prng, dtypes, dtype )
+    Returns a factory function for generating pseudorandom values drawn from a
+    ternary PRNG.
+
+    Parameters
+    ----------
+    prng: Function
+        Ternary pseudorandom value generator.
+
+    dtypes: Array<string>
+        List of supported output array data types.
+
+    dtype: string
+        Default output array data type.
+
+    Returns
+    -------
+    fcn: Function
+        Factory function which returns a function for creating arrays. The
+        returned factory function accepts four optional arguments:
+
+        - param1: first PRNG parameter.
+        - param2: second PRNG parameter.
+        - param3: third PRNG parameter.
+        - options: function options.
+
+        If provided PRNG parameters, the factory function returns a partially
+        applied function for creating arrays.
+
+        The function supports the following options:
+
+        - prng: pseudorandom number generator which generates uniformly
+          distributed pseudorandom numbers.
+        - seed: pseudorandom value generator seed.
+        - state: pseudorandom value generator state.
+        - copy: boolean indicating whether to copy a provided pseudorandom value
+          generator state.
+        - dtype: default output array data type. Setting this option overrides
+          the default array data type specified when invoking the parent
+          function.
+
+    Examples
+    --------
+    > var dt = [ 'float64', 'float32', 'generic' ];
+    > var f = {{alias}}( {{alias:@stdlib/random/base/triangular}}, dt, dt[0] );
+    > var fcn = f();
+    > var x = fcn( 5, 2.0, 5.0, 3.33 )
+    <Float64Array>
+    > x = fcn( 5, 2.0, 5.0, 3.33, { 'dtype': 'float32' } )
+    <Float32Array>
+
+    See Also
+    --------
+

@@ -1,0 +1,12 @@
+
+firstFragment()
+    Jumps to the first fragment of the current slide.
+
+    Examples
+    --------
+    > firstFragment();
+
+    See Also
+    --------
+    lastFragment, next, prev
+

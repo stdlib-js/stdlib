@@ -1,0 +1,81 @@
+From fork-admin@xent.com  Wed Sep 25 21:33:31 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id CE0C416F03
+	for <jm@localhost>; Wed, 25 Sep 2002 21:33:30 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 25 Sep 2002 21:33:30 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8PIM9C08544 for <jm@jmason.org>;
+    Wed, 25 Sep 2002 19:22:09 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 4263029409F; Wed, 25 Sep 2002 11:18:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from localhost.localdomain
+    (pool-162-83-148-146.ny5030.east.verizon.net [162.83.148.146]) by xent.com
+    (Postfix) with ESMTP id 2507429409A for <fork@xent.com>; Wed,
+    25 Sep 2002 11:17:46 -0700 (PDT)
+Received: from localhost (lgonze@localhost) by localhost.localdomain
+    (8.11.6/8.11.6) with ESMTP id g8PIKQg00488 for <fork@xent.com>;
+    Wed, 25 Sep 2002 14:20:30 -0400
+X-Authentication-Warning: localhost.localdomain: lgonze owned process
+    doing -bs
+From: Lucas Gonze <lgonze@panix.com>
+X-X-Sender: lgonze@localhost.localdomain
+Cc: FoRK <fork@spamassassin.taint.org>
+Subject: Re: The Great Power-Shortage Myth
+In-Reply-To: <p05111a19b9b64babd4ae@[66.149.49.6]>
+Message-Id: <Pine.LNX.4.44.0209251403550.451-100000@localhost.localdomain>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 25 Sep 2002 14:20:26 -0400 (EDT)
+
+> The only circumstances in which a business will not be ready--indeed,
+> eager--to do an additional volume of business is if it is physically unable
+> to do so because it lacks the necessary physical means of doing so, or
+> because the costs it incurs in doing so exceed the additional sales revenue
+> it will receive.
+
+That is a fully retarded view of economics, and pretty much the same kind
+of clueless oversimplication that led to the blackouts.  There are a
+bazillion factors that affect game strategies, which is what the state of
+California messed up and the energy producers exploited.
+
+I'm not convinced that the only way to prevent future energy debacles like
+the blackouts is to reregulate.  Ultimately we have to blame the people
+who crafted the game rules in a way that invited blackouts and
+exploitation.  Given that the particular set of rules crafted by the state
+of California sucked, does there exist a set of rules that doesn't suck?  
+If there does exist a better set of rules, then reregulation isn't
+necessarily the answer.
+
+You can't blame businesses for being profit maximizers.  Yes, the people 
+involved were heartless and corrupt.  But mainly they just did their 
+jobs.
+
+The guilty parties are either the mathematicians and economists who wrote
+the rules or, if the mathematicians and economists said there were no good
+rules, pro-deregulation politicians who went ahead anyway.
+
+- Lucas
+
+
+
+
+
+
+

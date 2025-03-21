@@ -1,0 +1,9 @@
+Package: sinh-benchmarks
+Title: Benchmarks
+Version: 0.0.0
+Authors@R: person("stdlib", "js", role = c("aut","cre"))
+Description: Benchmarks.
+Depends: R (>=3.4.0)
+Imports:
+	microbenchmark
+LazyData: true

@@ -1,0 +1,70 @@
+From ilug-admin@linux.ie  Fri Aug 16 15:02:19 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id AB2C643C40
+	for <jm@localhost>; Fri, 16 Aug 2002 09:58:56 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 16 Aug 2002 14:58:56 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7GDtHa20160 for
+    <jm-ilug@jmason.org>; Fri, 16 Aug 2002 14:55:17 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id OAA13986 for <jm-ilug@jmason.org>;
+    Fri, 16 Aug 2002 14:10:07 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id OAA28702; Fri, 16 Aug 2002 14:09:32 +0100
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id OAA28678 for <ilug@linux.ie>;
+    Fri, 16 Aug 2002 14:09:26 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host mail.webnote.net
+    [193.120.211.219] claimed to be webnote.net
+Received: (from lbedford@localhost) by webnote.net (8.9.3/8.9.3) id
+    OAA13977 for ilug@linux.ie; Fri, 16 Aug 2002 14:09:26 +0100
+Date: Fri, 16 Aug 2002 14:09:25 +0100
+From: Liam Bedford <lbedford@lbedford.org>
+To: ilug@linux.ie
+Subject: Re: [ILUG] Autorun CDs
+Message-Id: <20020816130925.GH12901@mail.webnote.net>
+References: <NBBBIGEGHIGMPCNKHCECOEHBEAAA.kenn@bluetree.ie>
+    <3D5CF74B.7@corvil.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <3D5CF74B.7@corvil.com>
+User-Agent: Mutt/1.4i
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Fri, Aug 16, 2002 at 01:59:55PM +0100, Padraig Brady wrote:
+> Kenn Humborg wrote:
+> >>Cheers All for your words of wisdom.
+> >>
+> >>I came across this which has worked a treat:-
+> >>
+> >>http://www.avdf.com/mar97/art_autorun.html
+> >
+> >
+> >(This is all Windows-related autorun stuff).
+> 
+> Which was obvious since he mentioned:
+> `start file.html`
+> And the reason I didn't reply, Doh!
+> 
+I actually assumed that the windows implementation was the only
+one he'd seen, and he wanted the same for linux.
+
+where's that Rick Moen thing about how to ask a question?
+
+L.
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

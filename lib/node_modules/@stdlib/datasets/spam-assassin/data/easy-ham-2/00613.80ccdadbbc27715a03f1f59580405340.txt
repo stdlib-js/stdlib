@@ -1,0 +1,102 @@
+From razor-users-admin@lists.sourceforge.net  Fri Aug  9 15:56:14 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 536FB440D9
+	for <jm@localhost>; Fri,  9 Aug 2002 10:55:23 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:55:23 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79EWxb07911 for
+    <jm-razor@jmason.org>; Fri, 9 Aug 2002 15:32:59 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id XAA01668 for
+    <jm-razor@jmason.org>; Thu, 8 Aug 2002 23:16:08 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17cvTo-0003PD-00; Thu,
+    08 Aug 2002 15:10:04 -0700
+Received: from h-66-166-21-186.snvacaid.covad.net ([66.166.21.186]
+    helo=cynosure.darkridge.com) by usw-sf-list1.sourceforge.net with esmtp
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17cvTI-0007RS-00 for
+    <razor-users@lists.sourceforge.net>; Thu, 08 Aug 2002 15:09:32 -0700
+Received: (from jpr5@localhost) by cynosure.darkridge.com (8.11.6/8.11.5)
+    id g78M9Pn02405; Thu, 8 Aug 2002 15:09:25 -0700
+From: Jordan Ritter <jpr5@darkridge.com>
+To: "Craig R . Hughes" <craig@deersoft.com>,
+	razor-users@lists.sourceforge.net
+Message-Id: <20020808220925.GF1767@darkridge.com>
+References: <007001c23ef4$25af8f40$6600a8c0@dhiggins>
+    <BB00AA31-AB0A-11D6-BCF2-00039396ECF2@deersoft.com>
+    <20020808142859.A4489@rover.vipul.net>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+    protocol="application/pgp-signature";
+    boundary="f0KYrhQ4vYSV2aJu"
+Content-Disposition: inline
+In-Reply-To: <20020808142859.A4489@rover.vipul.net>
+User-Agent: Mutt/1.4i
+X-Copyright: This e-mail is Copyright (c) 2002 by jpr5@darkridge.com
+X-Spamadvice: Pursuant to US Code; Title 47; Chapter 5; Subchapter II; 227 any unsolicited commercial email to this address will be subject to a download and archival fee of US$500.  Pursuant to California Business & Professions Code; S17538.45 any email service provider involved in SPAM activities will be liable for statutory damages of US$50 per message, up to US$25,000 per day.  Pursuant to California Penal Code; S502 any unsolicited email sent to this address is in violation of Federal Law and is subject to fine and/or imprisonment.
+Subject: [Razor-users] Re: intentions
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Thu, 8 Aug 2002 15:09:25 -0700
+Date: Thu, 8 Aug 2002 15:09:25 -0700
+
+
+--f0KYrhQ4vYSV2aJu
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+
+Craig,
+
+    I don't really understand how you can make the claims that you
+    make without a full understanding of TeS, which you can't have
+    because we haven't published the details.
+
+    In the end, given that you don't know much about TeS or how it
+    works, your statements really call into question your intentions
+    given that you have a competing product in this space.
+
+Regards,
+
+--jordan
+
+--f0KYrhQ4vYSV2aJu
+Content-Type: application/pgp-signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.7 (GNU/Linux)
+
+iD8DBQE9UuwVpwQdAVEbU7oRAgPAAKCBgOAqyCLpbBmryq53F7IZo8yvtQCfQYms
+6dk7xDTKr9UIZeG9Z0Y1AZg=
+=7tWy
+-----END PGP SIGNATURE-----
+
+--f0KYrhQ4vYSV2aJu--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

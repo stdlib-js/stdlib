@@ -1,0 +1,59 @@
+From social-admin@linux.ie  Mon Aug 19 11:46:11 2002
+Return-Path: <social-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A202A43C47
+	for <jm@localhost>; Mon, 19 Aug 2002 06:28:46 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 11:28:46 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7JAHx618179 for
+    <jm+ilug-social@jmason.org>; Mon, 19 Aug 2002 11:17:59 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA32021; Mon, 19 Aug 2002 11:17:44 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail05.svc.cra.dublin.eircom.net
+    (mail05.svc.cra.dublin.eircom.net [159.134.118.21]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id LAA31993 for <social@linux.ie>; Mon,
+    19 Aug 2002 11:17:38 +0100
+Received: (qmail 16061 messnum 264764 invoked from
+    network[159.134.146.25/pc537.as1.galway1.eircom.net]); 19 Aug 2002
+    10:17:08 -0000
+Received: from pc537.as1.galway1.eircom.net (HELO ciaran) (159.134.146.25)
+    by mail05.svc.cra.dublin.eircom.net (qp 16061) with SMTP; 19 Aug 2002
+    10:17:08 -0000
+Message-Id: <006701c2476a$64297820$ac0305c0@ciaran>
+From: "Ciaran Mac Lochlainn" <ciaran17@eircom.net>
+To: "Linux Socials" <social@linux.ie>
+Date: Mon, 19 Aug 2002 11:22:58 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2462.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2462.0000
+Subject: [ILUG-Social] Tim O'Reilly, Bill Gates and Edgar Villanueva
+Sender: social-admin@linux.ie
+Errors-To: social-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group social events <social.linux.ie>
+X-Beenthere: social@linux.ie
+
+Interesting take...
+
+"But the more I think about it, the more you I realize that having
+governments specify software licensing policies is a bad idea."
+
+http://www.oreillynet.com/pub/wlg/1840
+
+
+
+-- 
+Irish Linux Users' Group Social Events: social@linux.ie
+http://www.linux.ie/mailman/listinfo/social for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

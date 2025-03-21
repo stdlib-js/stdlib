@@ -1,0 +1,108 @@
+From razor-users-admin@lists.sourceforge.net  Fri Aug 16 10:57:54 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3143D43C47
+	for <jm@localhost>; Fri, 16 Aug 2002 05:56:33 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 16 Aug 2002 10:56:33 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7FIvU713790 for <jm-razor@jmason.org>; Thu, 15 Aug 2002 19:57:30 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17fPj1-0006jt-00; Thu,
+    15 Aug 2002 11:52:03 -0700
+Received: from h-66-134-120-173.lsanca54.covad.net ([66.134.120.173]
+    helo=stealthgeeks.net) by usw-sf-list1.sourceforge.net with smtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17fPik-00035h-00 for
+    <razor-users@lists.sourceforge.net>; Thu, 15 Aug 2002 11:51:46 -0700
+Received: (qmail 85707 invoked by uid 1001); 15 Aug 2002 18:51:43 -0000
+Received: from localhost (sendmail-bs@127.0.0.1) by localhost with SMTP;
+    15 Aug 2002 18:51:43 -0000
+From: Patrick <patrick@stealthgeeks.net>
+To: Chip Paswater <turk182@chipware.net>
+Cc: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] Re: What's wrong with the Razor servers now?
+In-Reply-To: <20020814215136.A18098@frontier.limbo.net>
+Message-Id: <20020815113236.T85313-100000@rockstar.stealthgeeks.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Thu, 15 Aug 2002 11:51:43 -0700 (PDT)
+Date: Thu, 15 Aug 2002 11:51:43 -0700 (PDT)
+
+On Wed, 14 Aug 2002, Chip Paswater wrote:
+
+> > > > It's not my desire to second-guess you Vipul (however much my missives
+> > > > may appear otherwise) or question the hard work you and the other
+> > > > developers have put into the system, however it seems that every request
+> > > > for such information has been met with silence.
+> > >
+> > > There are no plans for releasing details about TeS. Before the
+> > > release of Razor2, I'd pointed out that Razor2 backend (specially
+> > > TeS) will be closed.
+> >
+> > Thanks for the clarification. Guess it's time to find something that is
+> > open.
+> >
+> > Good luck.
+>
+> Why do the details of the backend need to be open?
+>
+> I don't think that Ebay publishes it's proprietary trust backend, why
+> should Razor?
+
+[last message before I unsub]
+
+It's a very poor comparison.
+
+There is no question as to what Ebay's trust model is. It's
+completely transparent. The ratings and the feedback is there for all to
+see. Most importantly it relies on the individual to make the decision for
+themselves rather or not to trust a buyer/seller.
+
+Contrast this with TeS which utilizes "sooper secret" methodologies to
+determine rather or not a submitter is trusted or not and at what point
+something becomes spam at some level of "confidence."
+
+The unfortunate thing is that in my experience Razor is an incredibly
+ineffective filter at this point. The spot checking I've done indicates about
+a 40% hit rate. Submissions I made a week ago still don't count as spam,
+apparently because I'm not trusted enough, or enough people haven't submitted
+the item, or some unknown combination thereof. Why anyone would continue to
+waste their time submitting items when they aren't being accepted due to
+a series of calculations which will not be shared is beyond me.
+
+Any trust model that cannot survive public scrutiny isn't worth trusting IMHO.
+
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+                               Patrick Greenwell
+         Asking the wrong questions is the leading cause of wrong answers
+\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+

@@ -1,0 +1,55 @@
+From sitescooper-talk-admin@lists.sourceforge.net  Mon Aug 26 20:15:19 2002
+Return-Path: <sitescooper-talk-admin@example.sourceforge.net>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.spamassassin.taint.org (Postfix) with ESMTP id 92C1843F9B
+	for <zzzz@localhost>; Mon, 26 Aug 2002 15:15:19 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 26 Aug 2002 20:15:19 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7QJ9ZZ05743 for <zzzz-scoop@jmason.org>; Mon, 26 Aug 2002 20:09:35 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17jPEm-0001Sc-00; Mon,
+    26 Aug 2002 12:09:20 -0700
+Received: from [65.198.220.134] (helo=ejhvvet) by
+    usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17jPDw-0006Aq-00 for <sitescooper-talk@lists.sourceforge.net>;
+    Mon, 26 Aug 2002 12:08:29 -0700
+From: Senem Oncul <smgrdphcv@t-online.de>
+To: <sitescooper-talk@example.sourceforge.net>
+X-Mailer: Microsoft Outlook Express 5.50.4133.2400
+Content-Type: text/plain
+Message-Id: <vewaeurtngep@example.sourceforge.net>
+Subject: [scoop] Haberdar olun
+Sender: sitescooper-talk-admin@example.sourceforge.net
+Errors-To: sitescooper-talk-admin@example.sourceforge.net
+X-Beenthere: sitescooper-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:sitescooper-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:sitescooper-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/sitescooper-talk>,
+    <mailto:sitescooper-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Discussion of sitescooper - see http://sitescooper.org/
+    <sitescooper-talk.lists.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/sitescooper-talk>,
+    <mailto:sitescooper-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=sitescooper-talk>
+X-Original-Date: Mon, 26 Aug 2002 20:05:24 -0400
+Date: Mon, 26 Aug 2002 20:05:24 -0400
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from base64 to 8bit by dogma.slashnull.org id
+    g7QJ9ZZ05743
+
+HABERDAR.COM - HABER VE MEDYA PORTALI
+Artık tüm haberleri sadece tek siteden takip edebileceksiniz. Haberdar.com açıldı!
+Haber başlıkları, spor haberleri, teknoloji haberleri, kültür ve sanat haberleri, internet haberleri, bilim ve uzay, 
+sinema, sağlık...
+Aradığınız içerik http://www.haberdar.com adresinde
+Sadece tıklayın ve haberdar olun
+
+ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÓ†+,ùŞµéšŠX¬²š'²ŠŞu¼ÿ9 Íı8«yÚ¶­±©¢W\zYi†‰Şüg­jw°…êŞ~ŠÅDAÿ†Ûi³ÿÿÃÿŠza¢xœıÊ&ş¿Ú²Ÿë­ÇŸ¢¸×úŞ}Ê{³}ıÓÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿJ+^±Ê(¥êÿµ©d™¨¥Šx%ŠËRŠ×¬rŠ)z¿íjYÿ–+-³û(º·~Šà{ùŞ¶m¦ÏÿşX¬¶Ïì¢êÜyú+ïçzßåŠËlşX¬¶)ß£û"µë¢Š^¯ûZ
+

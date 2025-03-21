@@ -1,0 +1,88 @@
+From ilug-admin@linux.ie  Thu Aug 29 16:52:52 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D36DD43F99
+	for <zzzz@localhost>; Thu, 29 Aug 2002 11:52:51 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Thu, 29 Aug 2002 16:52:51 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7TFlwZ18861 for
+    <zzzz-ilug@spamassassin.taint.org>; Thu, 29 Aug 2002 16:47:58 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA31616; Thu, 29 Aug 2002 16:46:26 +0100
+Received: from dspsrv.com (vir.dspsrv.com [193.120.211.34]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id QAA31563 for <ilug@linux.ie>;
+    Thu, 29 Aug 2002 16:45:49 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host vir.dspsrv.com
+    [193.120.211.34] claimed to be dspsrv.com
+Received: from itg-gw.cr008.cwt.esat.net ([193.120.242.226]
+    helo=waider.ie) by dspsrv.com with asmtp (Exim 3.35 #1) id
+    17kRUR-00052Y-00; Thu, 29 Aug 2002 16:45:47 +0100
+Message-Id: <3D6E409A.9030605@waider.ie>
+Date: Thu, 29 Aug 2002 16:41:14 +0100
+From: Waider <waider@waider.ie>
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.1) Gecko/20020827
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: macarthy@iol.ie
+Cc: "Ilug@Linux.Ie" <ilug@linux.ie>
+Subject: Re: [ILUG] Looking for a file / directory in zip file
+References: <OFEGLPGPCHPACFLJPAILIECKECAA.macarthy@iol.ie>
+X-Enigmail-Version: 0.65.2.0
+X-Enigmail-Supports: pgp-inline, pgp-mime
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+-----BEGIN PGP SIGNED MESSAGE-----
+
+Justin MacCarthy wrote:
+| Is there a way to look for a particular file or directory in 100's of zip
+| files??
+| Something like zgrep but for the filename instead of a word
+|
+| Thanks Justin
+|
+|
+
+probably there are more elegant solutions, but if your zips are in one
+directory you can do something like
+
+for i in *.zip
+do
+if unzip -v $i | grep -q FILEYOUWANT
+then
+~  echo $i
+fi
+done
+
+Cheers,
+Waider.
+- --
+waider@waider.ie / Yes, it /is/ very personal of me
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org
+
+iQEVAwUBPW5AmaHbXyzZsAb3AQH+qQgA1vnUjJUwGDa1yCRQd3vZAnhkCF0KDBBA
+o9MYq4CUg9cEzKALkTyZu4eOprhL50ReaICUGLMMEc5htU9zove4F+CSuvbAKKHL
+nx7xa6kk2V+LFnwS6hWpdQolCaT+4iGZZbdFwmyNAWb/IrEYB0R4gp05sitDOl5U
+RRlzYSM3IUYDrYpDUuX7Ta7bLvSdC1PpWSqy/wXphNIh7Bs2+eB9ERAujuqi6vJo
+MBichYb3f3teVCQUbxTcaMowjpmv/Xm3gdUlGrUFbpc2O7447Xi5uDfRexzzDoJT
+HlFS6OO2ZqzcMrtUYEgsfyqpaF1WuD38JoFpa2TmSyX74bBhxS8ecw==
+=KYCm
+-----END PGP SIGNATURE-----
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

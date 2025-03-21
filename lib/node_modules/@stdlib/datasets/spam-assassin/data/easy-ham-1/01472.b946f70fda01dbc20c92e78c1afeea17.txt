@@ -1,0 +1,96 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Fri Sep 13 20:45:22 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 769B216F03
+	for <jm@localhost>; Fri, 13 Sep 2002 20:45:22 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 13 Sep 2002 20:45:22 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8DIijC30740 for <jm-sa@jmason.org>; Fri, 13 Sep 2002 19:44:46 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17pvMK-0005TS-00; Fri,
+    13 Sep 2002 11:40:04 -0700
+Received: from [209.176.10.157] (helo=linux.eopenex.com) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17pvLP-0008Ke-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Fri, 13 Sep 2002 11:39:07 -0700
+Received: from www.mp-i.com (printer.net-nation.com [209.176.10.8]) by
+    linux.eopenex.com (8.11.6/8.11.6) with ESMTP id g8DIXhU28824 for
+    <spamassassin-talk@lists.sourceforge.net>; Fri, 13 Sep 2002 14:33:47 -0400
+From: "vernon" <vernon@b2unow.com>
+To: "spamassassin-talk" <spamassassin-talk@example.sourceforge.net>
+Reply-To: vernon@comp-wiz.com
+Message-Id: <20020913183343.M49078@b2unow.com>
+In-Reply-To: <20020913151635.M21128@b2unow.com>
+References: <20020913151635.M21128@b2unow.com>
+X-Mailer: MP-I.com Messaging OpenWebMail 1.71 20020827
+X-Originatingip: 67.81.72.77 (vernon)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+X-Mailscanner: Found to be clean
+X-Mailscanner-Spamcheck: not spam, SpamAssassin (score=-3, required 5,
+    IN_REP_TO, FROM_NAME_NO_SPACES, TO_LOCALPART_EQ_REAL)
+Subject: [SAtalk] OT: DNS MX Record Clarification Please
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=spamassassin-talk>
+X-Original-Date: Fri, 13 Sep 2002 13:33:43 -0500
+Date: Fri, 13 Sep 2002 13:33:43 -0500
+
+
+This may be a little off topic but thought people here would have a better
+response to this elsewhere.
+
+I have setup two MX records (mail and bmail) for my mail server. The one I
+gave a 10 (bmail) the other a 20 (mail).
+
+bmail(10) I gave a 10 because I want all mail to go through this server to
+be scanned for SPAM and viruses and then relayed to the mail(20) server for
+delivery.
+
+As I understand it, DNS A records are used in a rotating fashion for load
+balancing, but DNS MX records are used in order or prority, meaning the 10
+before the 20 and only 20 if the 10 isn't available.
+
+But only some of the mail is actually being scanned which leads me to
+believe that not all of the mail is actually hitting that box and the 10
+never goes down. Why? Have I got something confused here?
+
+Thanks,
+V
+------- End of Forwarded Message -------
+
+
+
+
+-- 
+This message has been scanned for viruses and
+dangerous content by MailScanner at comp-wiz.com,
+and is believed to be clean.
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

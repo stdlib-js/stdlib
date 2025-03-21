@@ -1,0 +1,48 @@
+
+{{alias}}( [month[, year]] )
+    Returns the number of hours in a month.
+
+    By default, the function returns the number of hours in the current month of
+    the current year (according to local time). To determine the number of hours
+    for a particular month and year, provide `month` and `year` arguments.
+
+    A `month` may be either a month's integer value, three letter abbreviation,
+    or full name (case insensitive).
+
+    The function's return value is a generalization and does **not** take into
+    account inaccuracies due to daylight savings conventions, crossing
+    timezones, or other complications with time and dates.
+
+    Parameters
+    ----------
+    month: string|Date|integer (optional)
+        Month.
+
+    year: integer (optional)
+        Year.
+
+    Returns
+    -------
+    out: integer
+        Hours in a month.
+
+    Examples
+    --------
+    > var num = {{alias}}()
+    <number>
+    > num = {{alias}}( 2 )
+    <number>
+    > num = {{alias}}( 2, 2016 )
+    696
+    > num = {{alias}}( 2, 2017 )
+    672
+
+    // Other ways to supply month:
+    > num = {{alias}}( 'feb', 2016 )
+    696
+    > num = {{alias}}( 'february', 2016 )
+    696
+
+    See Also
+    --------
+

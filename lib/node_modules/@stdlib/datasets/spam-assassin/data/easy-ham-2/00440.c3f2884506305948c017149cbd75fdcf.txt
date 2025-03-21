@@ -1,0 +1,54 @@
+From ilug-admin@linux.ie  Mon Aug 19 11:02:42 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B805444195
+	for <jm@localhost>; Mon, 19 Aug 2002 05:54:21 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:54:21 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7HI43606318 for
+    <jm-ilug@jmason.org>; Sat, 17 Aug 2002 19:04:03 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id TAA02190; Sat, 17 Aug 2002 19:03:06 +0100
+Received: from claymore.diva.ie (diva.ie [195.218.115.17] (may be forged))
+    by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id TAA02147 for
+    <ilug@linux.ie>; Sat, 17 Aug 2002 19:02:57 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host diva.ie [195.218.115.17]
+    (may be forged) claimed to be claymore.diva.ie
+Received: from diva.ie (gavin.diva.ie [62.77.168.221]) by claymore.diva.ie
+    (8.9.3/8.9.3) with ESMTP id TAA26129; Sat, 17 Aug 2002 19:02:55 +0100
+Message-Id: <3D5E9077.1090105@diva.ie>
+Date: Sat, 17 Aug 2002 19:05:43 +0100
+From: Gavin Henrick <gavin@diva.ie>
+Reply-To: gavin@diva.ie
+Organization: Diva Consulting Ireland Ltd
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.0rc2)
+    Gecko/20020510
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: ilug@linux.ie
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Subject: [ILUG] linux based IVR
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Just wondering if anyone has implemented one before, and any suggestions 
+etc.
+
+Yes i am googling, but would like some experienced opinion if available ;)
+
+Gavin
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

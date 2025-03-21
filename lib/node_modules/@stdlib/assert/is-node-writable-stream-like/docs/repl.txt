@@ -1,0 +1,26 @@
+
+{{alias}}( value )
+    Tests if a value is Node writable stream-like.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is Node writable stream-like.
+
+    Examples
+    --------
+    > var Stream = require( 'stream' ).Writable;
+    > s = new Stream();
+    > var bool = {{alias}}( s )
+    true
+    > bool = {{alias}}( {} )
+    false
+
+    See Also
+    --------
+

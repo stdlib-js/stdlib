@@ -1,0 +1,76 @@
+From exmh-users-admin@redhat.com  Tue Aug  6 11:42:26 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 15CA4441CD
+	for <jm@localhost>; Tue,  6 Aug 2002 06:41:07 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:41:07 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g761gWk08761 for
+    <jm-exmh@jmason.org>; Tue, 6 Aug 2002 02:42:33 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 413BC3F228; Mon,  5 Aug 2002
+    21:41:02 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 5FC9E3EAF0
+    for <exmh-users@listman.redhat.com>; Mon,  5 Aug 2002 21:40:05 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g761e4e28766 for exmh-users@listman.redhat.com; Mon, 5 Aug 2002
+    21:40:04 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g761e4q28762 for
+    <exmh-users@redhat.com>; Mon, 5 Aug 2002 21:40:04 -0400
+Received: from whatexit.org (postfix@whatexit.org [64.7.3.122]) by
+    mx1.redhat.com (8.11.6/8.11.6) with SMTP id g761RCl28460 for
+    <exmh-users@redhat.com>; Mon, 5 Aug 2002 21:27:12 -0400
+Received: from joisey.whatexit.org (localhost [127.0.0.1]) by whatexit.org
+    (Postfix) with ESMTP id 48D429E for <exmh-users@redhat.com>;
+    Mon,  5 Aug 2002 21:40:00 -0400 (EDT)
+To: exmh-users@spamassassin.taint.org
+Subject: curses interface to nmh
+From: Tom Reingold <noglider@pobox.com>
+X-Mailer: exmh version 2.5 07/13/2001
+X-Uri: http://whatexit.org/~tommy
+X-Image-Url: http://whatexit.org/~tommy/zombie.gif
+In-Reply-To: Message from pll@lanminds.com of Fri, 26 Jul 2002 10:06:41
+    EDT <200207252206.g6PM6lFw021279@fsck.intern.waldner.priv.at>
+    <20020726140641.72641F6EB@tater>
+Message-Id: <20020806014000.48D429E@whatexit.org>
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Mon, 05 Aug 2002 21:39:59 -0400
+
+
+On Fri, 26 Jul 2002 10:06:41 EDT,
+	pll@lanminds.com wrote:
+
+> [...]Unless someone writes a really neat curses based 
+> interface to ride on top of nmh :)
+
+Years ago, there was a package called mh-e which was an emacs interface
+to MH.  I don't know if it's still around or works.  But it's an idea.
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

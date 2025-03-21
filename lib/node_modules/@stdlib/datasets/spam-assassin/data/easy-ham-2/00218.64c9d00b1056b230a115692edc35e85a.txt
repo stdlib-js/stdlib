@@ -1,0 +1,68 @@
+From ilug-admin@linux.ie  Fri Aug  2 09:45:57 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B6F5F440F0
+	for <jm@localhost>; Fri,  2 Aug 2002 04:45:57 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 02 Aug 2002 09:45:57 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g728h2212909 for
+    <jm-ilug@jmason.org>; Fri, 2 Aug 2002 09:43:02 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA26691; Fri, 2 Aug 2002 09:41:04 +0100
+Received: from corvil.com (k100-75.bas1.dbn.dublin.eircom.net
+    [159.134.100.75]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id JAA26648
+    for <ilug@linux.ie>; Fri, 2 Aug 2002 09:40:57 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host k100-75.bas1.dbn.dublin.eircom.net
+    [159.134.100.75] claimed to be corvil.com
+Received: from corvil.com (pixelbeat.local.corvil.com [172.18.1.170]) by
+    corvil.com (8.11.6/8.11.6) with ESMTP id g728eur51816 for <ilug@linux.ie>;
+    Fri, 2 Aug 2002 09:40:57 +0100 (IST) (envelope-from
+    padraig.brady@corvil.com)
+Message-Id: <3D4A4594.7020704@corvil.com>
+Date: Fri, 02 Aug 2002 09:40:52 +0100
+From: Padraig Brady <padraig.brady@corvil.com>
+Organization: Corvil Networks
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:0.9.9) Gecko/20020408
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: ilug@linux.ie
+Subject: Re: [ILUG] stupid pics of the day
+References: <3D494DAB.9060207@corvil.com> <20020801164332.GK5178@jinny.ie>
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 8bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+John P. Looney wrote:
+> On Thu, Aug 01, 2002 at 04:03:07PM +0100, Padraig Brady mentioned:
+> 
+>>Some local Irish wildlife
+>>
+>>http://www.iol.ie/~padraiga/pics/wild1.jpg
+>>http://www.iol.ie/~padraiga/pics/wild2.jpg
+>>
+>>was I bored or what?
+> 
+>  Most likely.
+> 
+>  Hey...is that one of my nice wai-yip stuffed ones ?
+
+Ah, I new I had one extra.
+Ransom is a pint.
+
+Pádraig.
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

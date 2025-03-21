@@ -1,0 +1,61 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6NCxqhY087719
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Tue, 23 Jul 2002 07:59:52 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6NCxq3H087715
+	for cypherpunks-forward@ds.pro-ns.net; Tue, 23 Jul 2002 07:59:52 -0500 (CDT)
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6NCxnhY087709
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks@ds.pro-ns.net>; Tue, 23 Jul 2002 07:59:50 -0500 (CDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: from waste.minder.net (daemon@waste [66.92.53.73])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6NCxmJ16256
+	for <cypherpunks@ds.pro-ns.net>; Tue, 23 Jul 2002 08:59:48 -0400 (EDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: (from cpunks@localhost)
+	by waste.minder.net (8.11.6/8.11.6) id g6NCxm100708
+	for cypherpunks@ds.pro-ns.net; Tue, 23 Jul 2002 08:59:48 -0400
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by waste.minder.net (8.11.6/8.11.6) with ESMTP id g6NCxlR00695
+	for <cpunks@minder.net>; Tue, 23 Jul 2002 08:59:47 -0400
+Received: from mailin.minder.net (66-178-46-38.newskies.net [66.178.46.38] (may be forged))
+	by locust.minder.net (8.11.6/8.11.6) with SMTP id g6NCxiJ16246
+	for <cpunks@minder.net>; Tue, 23 Jul 2002 08:59:45 -0400 (EDT)
+	(envelope-from a_gidado@go.com)
+Message-Id: <200207231259.g6NCxiJ16246@locust.minder.net>
+From: "mabacha5@lycos.com" <a_gidado@go.com>
+Date: Tue, 23 Jul 2002 14:05:04
+To: cpunks@minder.net
+Subject: Assistance requested(Please Read).
+MIME-Version: 1.0
+Content-Type: text/plain;charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+
+Dear Sir/Ma, 
+I am HAJIYA MARYAM ABACHA, wife of the late Nigeria Head of State,General Sanni Abacha who died on the 8th of June, 1998 while still on active duty. l am contacting you in view of the fact that we will be of great assistance to each other likeness developing a cordial relationship. I currently have within my reach the sum of THIRTY FIVE MILLION US Dollars (US$35,000,000.00) cash which l intend to use for investment, like Real Estate Development or import/export business specifically in your country. This money came as a payback contract deal between my late husband and a Russian Firm on our countries multi-billion dollars Ajaokuta Steel Plant Project. The Russian Partners returned my husband's share of USD$35,000,000.00 after the death of my husband and lodged in my husband's security company of which l am director right now, the new Civilian Government have intensified their probe on my husband's financial and oil company. In view of these, l acted fast to withdraw the US$3!
+ 5,000,000.00 from the company's vault and deposited in another private security company vault within the country. I have since declared the Security Company bankrupt. No record ever existed concerning the money traceable by the government because there is no documentation showing that we received the money from the Russian. Due to the current situation in the country concerning government attitude towards my family, it has become quite impossible for me to make use of this money within. Let me refer you to the front page of This Day Newspapers of 10th March 2001. You can check it through their website : www.thisdayonline.com , click on archives,8th. june, 2001) The present government in Nigeria had frozen and seized all my bank accounts both here in Nigeria and abroad. Thus consent l shall expect you to contact me urgently to enable us discuss in detail about this transaction. Bearing in mind that your assistance is needed to transfer this fund, l proposed a percentage of 3!
+ 0% of the total sum to you for the expected service and assistance, 10
+% for offsetting minor expenses incurred in the course of this transaction. Your urgent response is highly needed as to stop further contacts. All correspondence must be by the email address above. l must use this opportunity to implore you to exercise the utmost indulgence to keep this matter extraordinarily confidential whatever your decision while await your prompt response. NB: Because of the security being mounted on the members of my family, l have decided that this transaction be kept in utmost secrecy, remember to include your private Telephone or fax number for easy communication. You can also contact my trusted friend and family attorney,Barrister Aishat Gidado at aishatgidado@go.com or her number 248033044180.
+Best Regards. 
+Hajia Maryam Abacha.
+
+
+
+
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

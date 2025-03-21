@@ -1,0 +1,56 @@
+From ilug-admin@linux.ie  Wed Aug 14 17:00:29 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6A3DE43C34
+	for <jm@localhost>; Wed, 14 Aug 2002 12:00:29 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 14 Aug 2002 17:00:29 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7EFxS423302 for
+    <jm-ilug@jmason.org>; Wed, 14 Aug 2002 16:59:28 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA17160; Wed, 14 Aug 2002 16:52:44 +0100
+Received: from mail.acquirer.com ([213.190.156.21]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA17127 for <ilug@linux.ie>; Wed,
+    14 Aug 2002 16:52:38 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [213.190.156.21] claimed
+    to be mail.acquirer.com
+Received: from pancake.netability.ie (pancake.netability.ie
+    [192.168.100.44]) by mail.acquirer.com (8.12.3/8.12.3) with ESMTP id
+    g7EFqbiU070777 for <ilug@linux.ie>; Wed, 14 Aug 2002 16:52:38 +0100 (IST)
+    (envelope-from nick-list@netability.ie)
+Subject: Re: [ILUG] Compiling for X
+From: Nick Hilliard <nick-list@netability.ie>
+To: ilug@linux.ie
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8
+Date: 14 Aug 2002 16:52:37 +0100
+Message-Id: <1029340357.56098.10.camel@pancake.netability.ie>
+MIME-Version: 1.0
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+> Mmmph. You may actually need -L/usr/lib/X11 (or -L/usr/X11R6/lib) to
+> make this work. I'm sure ld/gcc is smart enough to cope with out of
+> order args.
+
+ld does not generally cope with out of order args by design.
+
+Nick
+
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

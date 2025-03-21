@@ -1,0 +1,12 @@
+
+{{alias}}
+    Arbitrary constant `g` to be used in Lanczos approximation functions.
+
+    Examples
+    --------
+    > {{alias}}
+    10.900511
+
+    See Also
+    --------
+

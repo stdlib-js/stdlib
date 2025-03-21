@@ -1,0 +1,184 @@
+
+{{alias}}( obj, [options,] transform, done )
+    Maps values from one object to a new object having the same keys.
+
+    When invoked, `transform` is provided a maximum of four arguments:
+
+    - value: object value corresponding to `key`.
+    - key: object key.
+    - obj: the input object.
+    - next: a callback to be invoked after processing an object `value`.
+
+    The actual number of provided arguments depends on function length. If
+    `transform` accepts two arguments, `transform` is provided:
+
+    - value
+    - next
+
+    If `transform` accepts three arguments, `transform` is provided:
+
+    - value
+    - key
+    - next
+
+    For every other `transform` signature, `transform` is provided all four
+    arguments.
+
+    The `next` callback accepts two arguments:
+
+    - error: error argument.
+    - value: transformed value.
+
+    If a `transform` function calls the `next` callback with a truthy `error`
+    argument, the function suspends execution and immediately calls the `done`
+    callback for subsequent `error` handling.
+
+    Execution is *not* guaranteed to be asynchronous. To guarantee asynchrony,
+    wrap the `done` callback in a function which either executes at the end of
+    the current stack (e.g., `nextTick`) or during a subsequent turn of the
+    event loop (e.g., `setImmediate`, `setTimeout`).
+
+    The function only maps values from own properties. Hence, the function does
+    not map inherited properties.
+
+    The function shallow copies key values.
+
+    Key iteration and insertion order are *not* guaranteed.
+
+    Parameters
+    ----------
+    obj: Object
+        Source object.
+
+    options: Object (optional)
+        Function options.
+
+    options.limit: integer (optional)
+        Maximum number of pending invocations. Default: Infinity.
+
+    options.series: boolean (optional)
+        Boolean indicating whether to process each property sequentially.
+        Default: false.
+
+    options.thisArg: any (optional)
+        Execution context.
+
+    transform: Function
+        Transform function. Return values are the key values of the output
+        object.
+
+    done: Function
+        A callback invoked either upon processing all own properties or upon
+        encountering an error.
+
+    Examples
+    --------
+    // Basic usage:
+    > function transform( value, key, next ) {
+    ...     setTimeout( onTimeout, value );
+    ...     function onTimeout() {
+    ...         next( null, key+':'+value );
+    ...     }
+    ... };
+    > function done( error, out ) {
+    ...     if ( error ) {
+    ...         throw error;
+    ...     }
+    ...     console.log( out );
+    ... };
+    > var obj = { 'a': 1, 'b': 2 };
+    > {{alias}}( obj, transform, done )
+    { 'a': 'a:1', 'b': 'b:2' }
+
+    // Limit number of concurrent invocations:
+    > function transform( value, key, next ) {
+    ...     setTimeout( onTimeout, value );
+    ...     function onTimeout() {
+    ...         next( null, key+':'+value );
+    ...     }
+    ... };
+    > function done( error, out ) {
+    ...     if ( error ) {
+    ...         throw error;
+    ...     }
+    ...     console.log( out );
+    ... };
+    > var opts = { 'limit': 2 };
+    > var obj = { 'a': 1, 'b': 2, 'c': 3 };
+    > {{alias}}( obj, opts, transform, done )
+    { 'a': 'a:1', 'b': 'b:2', 'c': 'c:3' }
+
+    // Process sequentially:
+    > function transform( value, key, next ) {
+    ...     setTimeout( onTimeout, value );
+    ...     function onTimeout() {
+    ...         next( null, key+':'+value );
+    ...     }
+    ... };
+    > function done( error, out ) {
+    ...     if ( error ) {
+    ...         throw error;
+    ...     }
+    ...     console.log( out );
+    ... };
+    > var opts = { 'series': true };
+    > var obj = { 'a': 1, 'b': 2, 'c': 3 };
+    > {{alias}}( obj, opts, transform, done )
+    { 'a': 'a:1', 'b': 'b:2', 'c': 'c:3' }
+
+
+{{alias}}.factory( [options,] transform )
+    Returns a function which maps values from one object to a new object having
+    the same keys.
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Function options.
+
+    options.limit: integer (optional)
+        Maximum number of pending invocations. Default: Infinity.
+
+    options.series: boolean (optional)
+        Boolean indicating whether to process each property sequentially.
+        Default: false.
+
+    options.thisArg: any (optional)
+        Execution context.
+
+    transform: Function
+        Transform function. Return values are the key values of the output
+        object.
+
+    Returns
+    -------
+    out: Function
+        A function which maps values from one object to a new object having the
+        same keys.
+
+    Examples
+    --------
+    > function transform( value, key, next ) {
+    ...     setTimeout( onTimeout, value );
+    ...     function onTimeout() {
+    ...         next( null, key+':'+value );
+    ...     }
+    ... };
+    > var opts = { 'series': true };
+    > var f = {{alias}}.factory( opts, transform );
+    > function done( error, out ) {
+    ...     if ( error ) {
+    ...         throw error;
+    ...     }
+    ...     console.log( out );
+    ... };
+    > var obj = { 'a': 1, 'b': 2, 'c': 3 };
+    > f( obj, done )
+    { 'a': 'a:1', 'b': 'b:2', 'c': 'c:3' }
+    > obj = { 'beep': 'boop' };
+    > f( obj, done )
+    { 'beep': 'beep:boop' }
+
+    See Also
+    --------
+

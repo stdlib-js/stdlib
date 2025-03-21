@@ -1,0 +1,81 @@
+From fork-admin@xent.com  Fri Sep  6 18:24:16 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 45BAE16F1A
+	for <jm@localhost>; Fri,  6 Sep 2002 18:23:48 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 18:23:48 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g86G14C13913 for <jm@jmason.org>;
+    Fri, 6 Sep 2002 17:01:05 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id D9ACF2940B7; Fri,  6 Sep 2002 08:58:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hotmail.com (f66.law15.hotmail.com [64.4.23.66]) by
+    xent.com (Postfix) with ESMTP id CEB102940AE for <fork@xent.com>;
+    Fri,  6 Sep 2002 08:57:57 -0700 (PDT)
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Fri, 6 Sep 2002 09:00:35 -0700
+Received: from 216.30.74.2 by lw15fd.law15.hotmail.msn.com with HTTP;
+    Fri, 06 Sep 2002 16:00:34 GMT
+X-Originating-Ip: [216.30.74.2]
+From: "Russell Turpin" <deafbox@hotmail.com>
+To: fork@spamassassin.taint.org
+Subject: Re: Selling Wedded Bliss (was Re: Ouch...)
+MIME-Version: 1.0
+Content-Type: text/plain; format=flowed
+Message-Id: <F66Cl9FopYC98Bi89Qt00000219@hotmail.com>
+X-Originalarrivaltime: 06 Sep 2002 16:00:35.0000 (UTC) FILETIME=[88F99380:01C255BE]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 06 Sep 2002 16:00:34 +0000
+
+Turpin:
+>>Do we have any statistics on the poor man's divorce from centuries past?
+
+Eugen Leitl:
+>That's easy. Divorce didn't happen.
+
+You seem not to know what a "poor man's divorce" is.
+It is an old term, from the time when divorce was
+difficult, but walking was easy, and identity was
+not so locked down as it is today. Not every widow
+had a dead husband.
+
+>I'm seeing lack of innovation ..
+
+That doesn't tell us anything except what is
+happening in Eugen Leitl's life. The more common
+observation is that the rate of change is increasing.
+Do you have any data that might persuade us that what
+you see is more telling than what others see?
+
+>gerontocracy favors gerontocracy.
+
+I would have thought that gerontocracy favors biotech
+research and plenty of young workers to pay taxes.
+Note that the fertility rate doesn't result from
+decisions made by the old, but by the young. If we
+want more kids, we have to convince people who are
+in their twenties to become parents.
+
+
+
+
+_________________________________________________________________
+Join the world’s largest e-mail service with MSN Hotmail. 
+http://www.hotmail.com
+
+

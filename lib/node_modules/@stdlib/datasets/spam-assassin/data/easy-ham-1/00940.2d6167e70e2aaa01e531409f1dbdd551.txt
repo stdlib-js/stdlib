@@ -1,0 +1,88 @@
+From fork-admin@xent.com  Wed Oct  9 22:44:53 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id B320A16F22
+	for <jm@localhost>; Wed,  9 Oct 2002 22:41:48 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 09 Oct 2002 22:41:48 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g99HfZK14316 for <jm@jmason.org>;
+    Wed, 9 Oct 2002 18:41:35 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 9C11529409C; Wed,  9 Oct 2002 10:41:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mail.endeavors.com (unknown [66.161.8.83]) by xent.com
+    (Postfix) with ESMTP id 542C629409A for <fork@xent.com>; Wed,
+    9 Oct 2002 10:40:38 -0700 (PDT)
+Received: from endeavors.com ([66.161.8.83] RDNS failed) by
+    mail.endeavors.com with Microsoft SMTPSVC(5.0.2195.5329); Wed,
+    9 Oct 2002 10:28:03 -0700
+Message-Id: <3DA4671F.3030501@endeavors.com>
+From: Gregory Alan Bolcer <gbolcer@endeavors.com>
+Organization: Endeavors Technology, Inc.
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.0.1)
+    Gecko/20020823 Netscape/7.0
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: FoRK <fork@spamassassin.taint.org>
+Subject: Netscape 7 Review
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+X-Originalarrivaltime: 09 Oct 2002 17:28:03.0620 (UTC) FILETIME=[39072E40:01C26FB9]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 09 Oct 2002 10:27:59 -0700
+
+This is my Netscape 7.0 Review.
+
+o They finally got the email search speed back up to
+   where it was in 4.7.x
+o Setting up user mail accounts doesn't have that really
+   odd, sometimes it lets me sometimes it doesn't problem that
+   previous versions had.
+o I still have to manually update all my address books by
+   hand but at least it lets me import them as Netscape 4.x
+   address books (there's not 6.x import as they just assume
+   it works--which it doesn't)
+o The mail filters are still broken and have the same problem that
+   I've tried to report since 4.0.2 where you can't store a mail
+   filter of the type: Age in days, is greater than, 21 (or some number)
+   Gawd I'd really wish they'd fix that freakin' bug, it's the single
+   biggest annoyance that I have with Netscape as it's one of the
+   most effective anti-spam tools that I have.
+o Webex doesn't support Netscape 7.0 and the plugin doesn't
+   work which causes problems when you want to use Webex to
+   work on something with someone remotely.
+
+I've given up trying to report bugs and any changes to the
+source I send always get lost.
+
+Greg
+
+
+-- 
+Gregory Alan Bolcer, CTO  | work: +1.949.833.2800
+gbolcer at endeavors.com  | http://endeavors.com
+Endeavors Technology, Inc.| cell: +1.714.928.5476
+
+
+
+
+
+
+
+
+
+

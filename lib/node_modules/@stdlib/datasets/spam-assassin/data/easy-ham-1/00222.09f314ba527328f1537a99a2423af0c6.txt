@@ -1,0 +1,58 @@
+From ilug-admin@linux.ie  Wed Aug 28 10:50:01 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 947BF44157
+	for <zzzz@localhost>; Wed, 28 Aug 2002 05:49:06 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 28 Aug 2002 10:49:06 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7S9l1Z18753 for
+    <zzzz-ilug@spamassassin.taint.org>; Wed, 28 Aug 2002 10:47:01 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA15554; Wed, 28 Aug 2002 10:45:58 +0100
+Received: from webshield (webshield.tcd.ie [134.226.1.66]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with SMTP id KAA15518 for <ilug@linux.ie>;
+    Wed, 28 Aug 2002 10:45:51 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host webshield.tcd.ie
+    [134.226.1.66] claimed to be webshield
+Received: FROM barge.dsg.cs.tcd.ie BY webshield ; Wed Aug 28 10:45:49 2002
+    +0100
+Received: (from david@localhost) by barge.dsg.cs.tcd.ie (8.11.2/8.11.2) id
+    g7S9mDY03689 for ilug@linux.ie; Wed, 28 Aug 2002 10:48:13 +0100
+Date: Wed, 28 Aug 2002 10:48:13 +0100
+From: "David O'Callaghan" <ocalladw@tcd.ie>
+To: ilug@linux.ie
+Subject: Re: [ILUG] Newbie seeks advice - Suse 7.2
+Message-Id: <20020828104813.C1470@barge.tcd.ie>
+Mail-Followup-To: ilug@linux.ie
+References: <3d65260f.948.0@mail.dnet.co.uk> <3D65F1C7.3080500@corvil.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.3.12i
+In-Reply-To: <3D65F1C7.3080500@corvil.com>; from padraig.brady@corvil.com
+    on Fri, Aug 23, 2002 at 09:26:47AM +0100
+X-Operating-System: Linux barge 2.4.19
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Fri, Aug 23, 2002 at 09:26:47AM +0100, Padraig Brady wrote:
+[...]
+> probably a bit old, 7.3 and 8.0 are out.
+
+And I've been told by a SuSE rep that 8.1 will be out in October,
+for those who are interested.
+
+David	
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

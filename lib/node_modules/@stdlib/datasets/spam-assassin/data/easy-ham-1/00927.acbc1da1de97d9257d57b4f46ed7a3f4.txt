@@ -1,0 +1,79 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug 22 18:41:28 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 947DD47C67
+	for <jm@localhost>; Thu, 22 Aug 2002 13:41:24 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 22 Aug 2002 18:41:24 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7MHYcZ17839 for <jm-sa@jmason.org>; Thu, 22 Aug 2002 18:34:38 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17hvqO-0002io-00; Thu,
+    22 Aug 2002 10:34:04 -0700
+Received: from hall.mail.mindspring.net ([207.69.200.60]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17hvpz-0007Ng-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Thu, 22 Aug 2002 10:33:39 -0700
+Received: from user-105nd99.dialup.mindspring.com ([64.91.181.41]
+    helo=belphegore.hughes-family.org) by hall.mail.mindspring.net with esmtp
+    (Exim 3.33 #1) id 17hvpw-0000t6-00; Thu, 22 Aug 2002 13:33:36 -0400
+Received: from balam.hughes-family.org
+    (adsl-67-118-234-50.dsl.pltn13.pacbell.net [67.118.234.50]) by
+    belphegore.hughes-family.org (Postfix) with ESMTP id 5399CA3FEB;
+    Thu, 22 Aug 2002 10:33:32 -0700 (PDT)
+Subject: Re: [SAtalk] Highest-scoring false positive
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+MIME-Version: 1.0 (Apple Message framework v482)
+Cc: SpamAssassin List <spamassassin-talk@example.sourceforge.net>
+To: "Karsten M. Self" <karsten@freerun.com>
+From: "Craig R.Hughes" <craig@deersoft.com>
+In-Reply-To: <20020822000239.GJ30870@miles.freerun.com>
+Message-Id: <47DAEAB9-B5F5-11D6-A91E-00039396ECF2@deersoft.com>
+Content-Transfer-Encoding: 7bit
+X-Mailer: Apple Mail (2.482)
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Thu, 22 Aug 2002 10:33:33 -0700
+Date: Thu, 22 Aug 2002 10:33:33 -0700
+
+Interesting.  It's possible, of course, that the shitty economy 
+is hurting the spammers as much as anyone else.  But if you've 
+been aggressively reporting, then it could just be that.  Could 
+be your upstream ISP is being more aggressive too...
+
+C
+
+On Wednesday, August 21, 2002, at 05:02  PM, Karsten M. Self wrote:
+
+> ...what these plots *don't* show is the drop from ~55 
+> mails/daily to ~30
+> daily that I've seen at work, since 1st week of May, when spam receipts
+> peaked.  Not sure if it's aggressive reporting that's getting us off
+> lists, or if other people are seeing similar.
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

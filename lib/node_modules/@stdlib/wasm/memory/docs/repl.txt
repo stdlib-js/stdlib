@@ -1,0 +1,85 @@
+
+{{alias}}( descriptor )
+    WebAssembly memory constructor.
+
+    Parameters
+    ----------
+    descriptor: Object
+        Memory descriptor object.
+
+    descriptor.initial: integer
+        Initial memory size in units of WebAssembly pages (i.e., 64KiB).
+
+    descriptor.maximum: integer (optional)
+        Maximum memory size in units of WebAssembly pages (i.e., 64KiB).
+
+    descriptor.shared: boolean (optional)
+        Boolean indicating whether the memory is shared. Default: false.
+
+    Returns
+    -------
+    out: Memory
+        WebAssembly memory instance.
+
+    Examples
+    --------
+    > var mem = new {{alias}}( { 'initial': 0 } )
+    <Memory>
+
+
+{{alias}}.prototype.buffer
+    Read-only property which returns the ArrayBuffer (or SharedArrayBuffer)
+    referenced by the memory instance.
+
+    Examples
+    --------
+    > var mem = new {{alias}}( { 'initial': 0 } );
+    > mem.buffer
+    <ArrayBuffer>
+
+
+{{alias}}.prototype.grow( delta )
+    Increases the size of the memory instance by a specified number of
+    WebAssembly pages (i.e., 64KiB).
+
+    Upon increasing the size, the previous ArrayBuffer is detached, thus
+    invalidating any typed arrays which were views over the previous
+    ArrayBuffer.
+
+    Detachment means that the previous ArrayBuffer byte length becomes zero, and
+    it no longer has bytes accessible to JavaScript.
+
+    ArrayBuffer detachment applies even when `delta` is zero.
+
+    Detachment only applies for non-shared memory instances. For a shared memory
+    instance, the initial buffer (which is a SharedArrayBuffer) will not become
+    detached and, instead, its length will not be updated.
+
+    Accesses to the `buffer` property after growing a SharedArrayBuffer will
+    yield a larger SharedArrayBuffer which may access a larger span of memory
+    than the buffer before growing memory.
+
+    Every SharedArrayBuffer accessed via the `buffer` property will always refer
+    to the start of the same memory address range and thus manipulate the same
+    data.
+
+    Parameters
+    ----------
+    delta: integer
+        Number of WebAssembly pages (i.e., 64KiB) by which to grow the
+        underlying memory.
+
+    Returns
+    -------
+    out: integer
+        Size of the previous memory (in units of pages).
+
+    Examples
+    --------
+    > var mem = new {{alias}}( { 'initial': 0 } );
+    > mem.grow( 1 )
+    <number>
+
+    See Also
+    --------
+

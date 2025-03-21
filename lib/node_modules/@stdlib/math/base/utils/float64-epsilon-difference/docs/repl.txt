@@ -1,0 +1,67 @@
+
+{{alias}}( x, y[, scale] )
+    Computes the relative difference of two real numbers in units of double-
+    precision floating-point epsilon.
+
+    By default, the function scales the absolute difference by dividing the
+    absolute difference by the maximum absolute value of `x` and `y`. To scale
+    by a different function, specify a scale function name.
+
+    The following `scale` functions are supported:
+
+    - 'max-abs': maximum absolute value of `x` and `y` (default).
+    - 'max': maximum value of `x` and `y`.
+    - 'min-abs': minimum absolute value of `x` and `y`.
+    - 'min': minimum value of `x` and `y`.
+    - 'mean-abs': arithmetic mean of the absolute values of `x` and `y`.
+    - 'mean': arithmetic mean of `x` and `y`.
+    - 'x': `x` (*noncommutative*).
+    - 'y': `y` (*noncommutative*).
+
+    To use a custom scale function, provide a function which accepts two numeric
+    arguments `x` and `y`.
+
+    If computing the relative difference in units of epsilon will result in
+    overflow, the function returns the maximum double-precision floating-point
+    number.
+
+    If the absolute difference of `x` and `y` is `0`, the relative difference is
+    always `0`.
+
+    If `|x| = |y| = infinity`, the function returns `NaN`.
+
+    If `|x| = |-y| = infinity`, the relative difference is `+infinity`.
+
+    If a `scale` function returns `0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        First number.
+
+    y: number
+        Second number.
+
+    scale: string|Function (optional)
+        Scale function. Default: `'max-abs'`.
+
+    Returns
+    -------
+    out: number
+        Relative difference in units of double-precision floating-point epsilon.
+
+    Examples
+    --------
+    > var d = {{alias}}( 12.15, 12.149999999999999 )
+    ~0.658
+    > d = {{alias}}( 2.4341309458983933, 2.4341309458633909, 'mean-abs' )
+    ~64761.512
+
+    // Custom scale function:
+    > function scale( x, y ) { return ( x > y ) ? y : x; };
+    > d = {{alias}}( 1.0000000000000002, 1.0000000000000100, scale )
+    ~44
+
+    See Also
+    --------
+

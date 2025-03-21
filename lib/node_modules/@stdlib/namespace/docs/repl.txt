@@ -1,0 +1,26 @@
+
+{{alias}}()
+    Returns the standard library namespace.
+
+    Each array element is an object having the following fields:
+
+    - alias: a unique identifier suitable for use within a shared context such
+      as a REPL environment.
+    - path: the package path from which the namespace element originates.
+    - value: the actual value included in the namespace.
+    - type: the value type (e.g., function, number, string, object, etc.).
+    - related: related namespace elements, as identified by their package paths.
+
+    Returns
+    -------
+    out: Array<Object>
+        Standard library namespace.
+
+    Examples
+    --------
+    > var o = {{alias}}()
+    [ {...}, {...}, ... ]
+
+    See Also
+    --------
+

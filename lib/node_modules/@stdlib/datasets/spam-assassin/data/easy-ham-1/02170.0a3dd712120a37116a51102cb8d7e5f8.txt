@@ -1,0 +1,51 @@
+From rssfeeds@jmason.org  Wed Oct  2 11:43:38 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id AD6B216F16
+	for <jm@localhost>; Wed,  2 Oct 2002 11:43:37 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 02 Oct 2002 11:43:37 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9280OK31670 for
+    <jm@jmason.org>; Wed, 2 Oct 2002 09:00:25 +0100
+Message-Id: <200210020800.g9280OK31670@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: diveintomark <rssfeeds@spamassassin.taint.org>
+Subject: There are four lights
+Date: Wed, 02 Oct 2002 08:00:24 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://diveintomark.org/archives/2002/10/01.html#there_are_four_lights
+Date: 2002-10-01T12:53:57-05:00
+
+One year ago today, my (now former) manager told me to shut down my weblog and 
+remove all traces of it from my server. He tried to convince me that the 
+Internet was too small to mix the professional[1] and the personal[2]. 
+
+One year ago today, I gave him my answer[3], and the rest is history[4]. 
+
+Today, to celebrate this anniversary, I would like everyone to read my resume
+[5], admire this full-screen picture of my cat[6], and link to this post[7]. 
+
+There are four lights.
+
+
+
+[1] http://diveintopython.org/
+    Dive Into Python
+[2] http://diveintomark.org/archives/2001/09/22.html#addiction_is
+    dive into mark 9/22/2001: 
+[3] http://diveintomark.org/archives/2001/10/01.html#write
+    dive into mark 10/1/2001: 
+[4] http://diveintomark.org/archives/2001/10/
+    dive into mark October 2001 archives
+[5] http://diveintomark.org/resume/resume.html
+    my resume in HTML format
+[6] http://diveintomark.org/images/j.jpg
+    J, 1024 x 768
+[7] http://diveintomark.org/archives/2002/10/01.html#there_are_four_lights
+    permanent link to this post
+
+

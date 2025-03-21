@@ -1,0 +1,52 @@
+From rssfeeds@jmason.org  Tue Oct  1 10:36:29 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 97B5116F20
+	for <jm@localhost>; Tue,  1 Oct 2002 10:35:58 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 01 Oct 2002 10:35:58 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9180XK15349 for
+    <jm@jmason.org>; Tue, 1 Oct 2002 09:00:34 +0100
+Message-Id: <200210010800.g9180XK15349@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: boingboing <rssfeeds@spamassassin.taint.org>
+Subject: Dan Gillmor responds to Jack Valenti
+Date: Tue, 01 Oct 2002 08:00:33 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://boingboing.net/#85506950
+Date: Not supplied
+
+Dan Gillmor interviewed Jack Valenti[1] last week in his column and did the 
+impartial thing, representing Valenti's beliefs as fairly as possible. This 
+week, Dan takes Valenti's arguments apart, looking at what Hollywood's agenda 
+really entails: 
+
+    So the movie and music companies are going back to Congress for another 
+    helping. They are asking for laws that would force technology innovators to 
+    restrict the capabilities of devices -- cripple PCs and other machines that 
+    communicate so they can't make copies the copyright holders don't 
+    explicitly allow. Amazingly, the entertainment industry also wants 
+    permission to hack into networks and machines they believe are being used 
+    to violate copyrights. 
+
+    Here is what it all means. To protect a business model and thwart even the 
+    possibility of infringement, the cartel wants technology companies to ask 
+    permission before they can innovate. The media giants want to keep 
+    information flow centralized, to control the new medium as if it's nothing 
+    but a jazzed-up television. Instead of accepting, as they do today, that a 
+    certain amount of penny-ante infringement will occur and then going after 
+    the major-league pirates, they call every act of infringement -- and some 
+    things that aren't infringement at all -- an act of piracy or stealing. 
+    Saying it doesn't make it so.  
+
+Link[2] Discuss[3]
+
+[1] http://www.siliconvalley.com/mld/siliconvalley/business/columnists/dan_gillmor/4132447.htm
+[2] http://www.siliconvalley.com/mld/siliconvalley/4175607.htm
+[3] http://www.quicktopic.com/boing/H/WDUVXyKf9qUj
+
+

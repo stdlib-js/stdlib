@@ -1,0 +1,42 @@
+
+{{alias}}( str, search[, len] )
+    Tests if a string ends with the characters of another string.
+
+    If provided an empty search string, the function always returns `true`.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    search: string
+        Search string.
+
+    len: integer (optional)
+        Substring length. Restricts the search to a substring within the input
+        string beginning from the leftmost character. If provided a negative
+        value, `len` indicates to ignore the last `len` characters, returning
+        the same output as `str.length + len`. Default: `str.length`.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a string ends with the characters of another
+        string.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 'beep', 'ep' )
+    true
+    > bool = {{alias}}( 'Beep', 'op' )
+    false
+    > bool = {{alias}}( 'Beep', 'ee', 3 )
+    true
+    > bool = {{alias}}( 'Beep', 'ee', -1 )
+    true
+    > bool = {{alias}}( 'beep', '' )
+    true
+
+    See Also
+    --------
+

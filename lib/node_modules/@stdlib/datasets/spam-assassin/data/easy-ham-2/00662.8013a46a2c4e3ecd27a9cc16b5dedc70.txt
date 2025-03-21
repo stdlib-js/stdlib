@@ -1,0 +1,68 @@
+From webmake-talk-admin@lists.sourceforge.net  Thu Aug 22 11:53:31 2002
+Return-Path: <webmake-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A3A4E43C34
+	for <jm@localhost>; Thu, 22 Aug 2002 06:53:31 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 22 Aug 2002 11:53:31 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7MAn3Z03140 for <jm@jmason.org>; Thu, 22 Aug 2002 11:49:03 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17hpWU-0004OJ-00; Thu,
+    22 Aug 2002 03:49:06 -0700
+Received: from mailout2-eri1.midsouth.rr.com ([24.165.200.7]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17hpW3-0002eZ-00 for <webmake-talk@lists.sourceforge.net>; Thu,
+    22 Aug 2002 03:48:39 -0700
+Received: from cpe-024-024-103-227.midsouth.rr.com
+    (cpe-024-024-103-227.midsouth.rr.com [24.24.103.227]) by
+    mailout2-eri1.midsouth.rr.com (8.11.4/8.11.4) with ESMTP id g7MAl7k08533
+    for <webmake-talk@lists.sourceforge.net>; Thu, 22 Aug 2002 05:47:07 -0500
+    (CDT)
+From: Joe Hester <joeh@midsouth.rr.com>
+To: webmake-talk@example.sourceforge.net
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8
+Message-Id: <1030013234.11490.4.camel@mymachine.mydomain.com>
+MIME-Version: 1.0
+Subject: [WM] Problem with textarea tags
+Sender: webmake-talk-admin@example.sourceforge.net
+Errors-To: webmake-talk-admin@example.sourceforge.net
+X-Beenthere: webmake-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:webmake-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:webmake-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/webmake-talk>,
+    <mailto:webmake-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Discussion of WebMake. <webmake-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/webmake-talk>,
+    <mailto:webmake-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=webmake-talk>
+X-Original-Date: 22 Aug 2002 05:47:14 -0500
+Date: 22 Aug 2002 05:47:14 -0500
+
+I had a problem with extra whitespace being added between textarea tags.
+Solved the problem by adding textarea to $INLINE_TAGS= list in
+HTMLCleaner.pm
+
+Hope this might help someone else
+Joe
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+webmake-talk mailing list
+webmake-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/webmake-talk
+

@@ -1,0 +1,38 @@
+
+{{alias}}( μ, σ )
+    Returns the skewness of a normal distribution with mean `μ` and standard
+    deviation `σ`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `σ <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    μ: number
+        Location parameter.
+
+    σ: number
+        Standard deviation.
+
+    Returns
+    -------
+    out: number
+        Skewness.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.0, 1.0 )
+    0.0
+    > y = {{alias}}( 4.0, 3.0 )
+    0.0
+    > y = {{alias}}( NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN )
+    NaN
+    > y = {{alias}}( 0.0, 0.0 )
+    NaN
+
+    See Also
+    --------
+

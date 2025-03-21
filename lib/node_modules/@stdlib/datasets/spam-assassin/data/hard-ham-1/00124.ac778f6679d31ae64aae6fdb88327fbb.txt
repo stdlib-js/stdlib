@@ -1,0 +1,321 @@
+Return-Path: <Online#3.20520.de-C6GhlCa9O-fqvRRR.1.b@newsletter.online.com>
+Received: from acmta3.cnet.com (abv-sfo1-acmta3.cnet.com [206.16.1.162])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6J0KeJ05971
+	for <qqqqqqqqqq-zdnet@spamassassin.taint.org>; Fri, 19 Jul 2002 01:20:40 +0100
+Received: from abv-sfo1-ac-agent3 (206.16.0.225) by acmta3.cnet.com (PowerMTA(TM) v1.5); Thu, 18 Jul 2002 17:12:58 -0700 (envelope-from <Online#3.20520.de-C6GhlCa9O-fqvRRR.1.b@newsletter.online.com>)
+Message-ID: <121189.1027038020800.JavaMail.root@abv-sfo1-ac-agent3>
+Date: Thu, 18 Jul 2002 17:20:20 -0700 (PDT)
+From: CNET Cell Phone Weekly Newsletter <Online#3.20520.de-C6GhlCa9O-fqvRRR.1@newsletter.online.com>
+To: qqqqqqqqqq-zdnet@spamassassin.taint.org
+Subject: Cordless phones: the other wireless devices
+Mime-Version: 1.0
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+X-Mailer: Accucast (http://www.accucast.com)
+X-Mailer-Version: 2.8.4-2
+
+
+<html>
+<head>
+	<title>CNET Cell Phone Newsletter</title>
+</head>
+<body bgcolor="#eeeeee">
+<center>
+<a href="top"></a>
+
+<!-- header -->
+<table cellpadding=0 cellspacing=0 border=0 width=612 bgcolor="#ffffff">
+<tr valign=top>
+	<td width=442 colspan=4><img src="http://a.r.tv.com/cnet.1d/i/nl/wr/442_cellphone_nwsltr.gif" width="442" height="60" border="0" alt="CNET Wireless Dispatch"><br>
+	<table width=442 cellpadding=0 cellspacing=0 border=0 bgcolor="#ffcc00">
+		<tr><td bgcolor="#000000" colspan=3><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"><br></td></tr>
+		<tr><td bgcolor="#000000" width=1 rowspan=2><img src="http://home.cnet.com/b.gif" width="1" height="10" border="0"><br></td>
+			<td width=10 rowspan=2><img src="http://home.cnet.com/b.gif" width="1" height="10" border="0"><br></td>
+			<td  width=430><img src="http://home.cnet.com/b.gif" width="1" height="10" border="0"><br></td>
+		</tr>
+		<tr><td bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"><br></td></tr>
+    </table>	
+	</td>
+	
+	<!-- Skyscraper column -->
+	<td width=160 rowspan=2>
+
+<!-- shopping  -->
+<div align="center"><img src="http://i.i.com.com/cnwk.1d/Ads/common/advertisement.gif" width="120" height="10" border="0"></br>
+
+<a href="http://clickthru.online.com/Click?q=f3-LjwgQJOs8dNuIYkCs3CyJqsjeorR" target="new">   
+
+<img src="http://view.atdmt.com/AVE/view/aws05000012ave/direct;wi.160;hi.600/01/" width="160" height="600" border="0">
+
+</a></div>
+<!-- /shopping -->
+
+	<br><!-- right column content -->
+	
+	<!-- search form -->
+	<table cellspacing=0 cellpadding=0 width=150 border=0>
+		<form method="get" action="http://www.search.com/redirect">
+		<tr valign=top><td>
+			<font size="-1" face="arial,helvetica,sans-serif">
+			<img src="http://a.r.tv.com/cnet.1d/i/se/dispatch_hd.gif" width=150 height=20 alt="CNET Search.com" border=0><br>
+			<img src="http://cnet.com/b.gif" width=1 height=1><br><input type=text name=q size=17 value=""><br>
+			<select name=target class=frmel>
+ 			<option value="http://wireless.search.com/search?tag=ex.wireless.dispatch.srch.cnet">Wireless
+ 			<option value="http://cnet.search.com/search?tag=ex.wireless.dispatch.srch.cnet">All CNET
+ 			<option value="http://www.search.com/search?tag=ex.wireless.dispatch.srch.web">The Web
+			</select>&nbsp;
+			<input type=submit value="Go!"></font>
+		</td></tr>
+		</form>
+	</table><p>
+	<!-- /search form -->
+
+	</td>
+	<td width=9 rowspan=2><img src="http://home.cnet.com/i/dp/dd_c.gif" width="9" height="60" border="0"><br>
+		<table width=9 cellpadding=0 cellspacing=0 border=0>
+			<tr><td bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="9" height="1" border="0"><br></td></tr>
+			<tr><td bgcolor="#ffccoo"><img src="http://home.cnet.com/b.gif" width="9" height="10" border="0"><br></td></tr>
+			<tr><td bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="9" height="1" border="0"><br></td></tr>
+		</table>		
+	</td>
+	<td width=1 bgcolor="#000000" rowspan=2>
+		<table width=1 cellpadding=0 cellspacing=0 border=0>
+			<tr><td bgcolor="#eeeeee"><img src="http://home.cnet.com/b.gif" width="1" height="60" border="0"><br></td></tr>
+		</table>		
+
+	</td>
+</tr>
+<!-- promo section -->
+
+<tr valign=top>
+	<td width=1 bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td>
+	<td width=10 bgcolor="#ffcc00"><img src="http://home.cnet.com/b.gif" width="10" height="1" border="0"><br></td>
+	<td width=1 bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td>
+	<td width=430 bgcolor="#ffffff">
+	
+	<table cellpadding=0 cellspacing=0 border=0 width=430 bgcolor="#ffffef">
+		<tr valign=top>
+			<td width=10><img src="http://home.cnet.com/b.gif" alt="" width="10" height="1" border="0"><br></td>
+			<!-- td width=252> --><td width=150><img src="http://home.cnet.com/b.gif" width="1" height="8" border="0"><br>
+			<font face="Arial, Helvetica" size="-2">July 18, 2002</font><br>
+			<img src="http://home.cnet.com/b.gif" width="1" height="4" border="0"><br>
+				<table cellpadding=0 cellspacing=0 border=0 width=170>
+					<tr valign=top><td><a href="#h1"><img src="http://home.cnet.com/i/dp/arrow2.gif" alt="" width="10" height="12" border="0"></a></td>
+					 	<td><font face="Arial, Helvetica" size="-1"><a href="#h1">Cordless phones: the other wireless devices</a><br></td>
+					</tr>
+					<tr valign=top><td><a href="#h2"><img src="http://home.cnet.com/i/dp/arrow2.gif" alt="" width="10" height="12" border="0"></a></td>
+					 	<td><font face="Arial, Helvetica" size="-1"><a href="#h2">Samsung SPH-A460</a><br></td>
+					</tr>
+					<tr valign=top><td width=15><a href="#h3"><img src="http://home.cnet.com/i/dp/arrow2.gif" alt="" width="10" height="12" border="0"></a></td>
+						<td><font face="Arial, Helvetica" size="-1"><a href="#h3">What phones are hot in Asia--updated</a><br></td>
+					</tr>
+				</table>
+			<img src="http://home.cnet.com/b.gif" width="1" height="8" border="0"><br>	
+			</td>
+			<td width=5><img src="http://home.cnet.com/b.gif" alt="" width="8" height="1" border="0"><br></td>
+			<td width=1 bgcolor="#F7D69C"><img src="http://home.cnet.com/b.gif" alt="" width="1" height="1" border="0"><br></td>
+			<td width=5><img src="http://home.cnet.com/b.gif" alt="" width="8" height="1" border="0"><br></td>
+			<td width=240><font face="Arial, Helvetica" size="-1">
+				<div style="padding: 8px 0px 8px"><font size="-1"><b>Wireless Top 5s</b></font><br>
+					<ul>
+					<li><a href="http://clickthru.online.com/Click?q=09-joDSIj8jsk9his8LYSS7ZMgtY8lR" >Top 5 AT&T Wireless cell phones</a><br>
+					<li><a href="http://clickthru.online.com/Click?q=1e-JQuLI4jPx9j-7tPqEsB8LE27qd4R" >Top 5 Sprint PCS phones</a><br>
+					<li><a href="http://clickthru.online.com/Click?q=33-vUjnINjcJokhsUgz6yClxb-7XsrR" >Top 5 Verizon Wireless cell phones</a>
+				<p><a href="http://clickthru.online.com/Click?q=48-ggFbIdBwVs_7VN_Xl_kj2ZBSJuRR" >All Top 5s</a></ul></div>
+				<img src="http://home.cnet.com/b.gif" height=6 width=1><br>
+			</td>
+			<td width=5><img src="http://home.cnet.com/b.gif" alt="" width="8" height="1" border="0"><br></td>
+		</tr>
+	</table>
+
+	<!-- bottom rule -->
+	<table cellpadding=0 cellspacing=0 border=0 width=430>
+		<tr valign=top><td bgcolor="#F7D69C"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td></tr>
+	</table><br>
+	
+	<!-- Leads Module -->
+<img src="http://www.cnet.com/i/gl/new-cc.gif" alt="Crucial Clicks" width="120" height="19" border="0"><br>
+<table width="100%"  cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
+<tr bgcolor="#cccccc"><td colspan="7"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td></tr>
+<tr>
+<td bgcolor="#cccccc" rowspan="3"><img src="http://home.cnet.com/b.gif" height=1 width=1></td>
+<td rowspan="3"><img src="http://home.cnet.com/b.gif" height=1 width=5></td>
+<td colspan="3"><img src="http://home.cnet.com/b.gif" height=5 width=1></td>
+<td rowspan="3"><img src="http://home.cnet.com/b.gif" height=1 width=5></td>
+<td bgcolor="#cccccc" rowspan="3"><img src="http://home.cnet.com/b.gif" height=1 width=1></td>
+</tr>
+<tr valign="top">
+<td width="100%">
+	<table width="100%"  cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+	<td width="85"><a href="http://clickthru.online.com/Click?q=5d-JN-bIK0w8sxTOwBobvZm5yGKIaZR" ><img src="http://a.r.tv.com/cnet.1d/i/p/042502mpsplayers.jpg" width="85" height="110" border="0" alt="" /></a></td>
+	<td width="5"><img src="http://home.cnet.com/b.gif" height=1 width=5></td>
+	<td width="100%"><font face="arial, helvetica" size="-1"><a href="http://clickthru.online.com/Click?q=72-R8PHIPUeno9qCzfrqMtNXjoCKqdR" ><b>Next-generation MP3 players</b></a><br />These three hard drive-based MP3 players turn last year's models into paperweights.</font></td>
+	</tr>
+	<tr><td colspan="3"><img src="http://home.cnet.com/b.gif" height=3 width=1><br /><font face="arial, helvetica" size="-1">
+	&#149; <a href="http://clickthru.online.com/Click?q=87-izDOQ8n4W11B-hleplrQ8kasp4eR" >Mojo rising: TDK's new MP3 CD player</a><br />
+	&#149; <a href="http://clickthru.online.com/Click?q=9c-xt6pQanVDf4DloYlXdIl9Oi-UiyR" >The Nomad Jukebox 3 breaks new ground</a><br />
+	</font></td></tr>
+	</table>
+</td>
+<td><img src="http://home.cnet.com/b.gif" height=1 width=5></td>
+<td width="180">
+	<table cellpadding="0" cellspacing="0" width="180" border="0" bgcolor="#ffffef">
+	<tr><td colspan="5" bgcolor="#666666"><img src="http://home.cnet.com/b.gif" width="1" height="1" alt="" border="0" /></td></tr>
+	<tr>
+	<td bgcolor="#666666"><img src="http://home.cnet.com/b.gif" width="1" height="1" alt="" border="0" /></td>
+	<td><img src="http://home.cnet.com/b.gif" width="10" height="1" alt="" border="0" /></td>
+	<td><font face="ms sans serif, geneva" size="-2"><img src="http://home.cnet.com/b.gif" width="1" height="5" alt="" border="0" /><br />
+	<font face="arial, helvetica" color="#666666" size="-1"><b>Most popular</b></font><br /><img src="http://home.cnet.com/b.gif" width="1" height="5" alt="" border="0" /><br />
+	<b>MP3 &amp; Audio</b><br /><img src="http://home.cnet.com/b.gif" width="1" height="7" alt="" border="0" /><br />
+	1. <a href="http://clickthru.online.com/Click?q=b1-YjxJQ-0MIpriPYUr9i_f_B0NLnlR" >Creative Labs Nomad Jukebox 3</a><br /><img src="http://home.cnet.com/b.gif" width="1" height="3" alt="" border="0" /><br />
+	2. <a href="http://clickthru.online.com/Click?q=c7-KG43QLPPHrPhpi7NWtUoF24wxeeR" >Digitalway MPIO-DMK (128 MB)</a><br /><img src="http://home.cnet.com/b.gif" width="1" height="3" alt="" border="0" /><br />
+	3. <a href="http://clickthru.online.com/Click?q=dc-40zzQ0LQvq0arTSBz6gEwTinhlyR" >Bantam Interactive Explor BA350</a><br /><img src="http://home.cnet.com/b.gif" width="1" height="3" alt="" border="0" /><br />
+	4. <a href="http://clickthru.online.com/Click?q=f1-MtTuQpsTLuoIfIMH3XX8owMnerlR" >iRiver SlimX iMP-350</a><br /><img src="http://home.cnet.com/b.gif" width="1" height="3" alt="" border="0" /><br />
+	5. <a href="http://clickthru.online.com/Click?q=06-fP6uI481hKhaT6Hmap_vCgSyiL4R" >Sonicblue Rio Volt SP250</a><br /><img src="http://home.cnet.com/b.gif" width="1" height="6" alt="" border="0" /><br />
+	<img src="http://a.r.tv.com/cnet.1d/i/fd/yl_arrow.gif" width="13" height="13" border="0" alt="" align="absmiddle" /> <b><a href="http://clickthru.online.com/Click?q=1b-wAnhI3N1z0zxtloQ1U5MauO37xrR" >See all most popular</a></b><br />
+	<img src="http://home.cnet.com/b.gif" width="1" height="10" alt="" border="0" /><br />
+	</font></td>
+	<td><img src="http://home.cnet.com/b.gif" width="10" height="1" alt="" border="0" /></td>
+	<td bgcolor="#666666"><img src="http://home.cnet.com/b.gif" width="1" height="1" alt="" border="0" /></td>
+	</tr>
+	<tr><td colspan="5" bgcolor="#666666"><img src="http://home.cnet.com/b.gif" width="1" height="1" alt="" border="0" /></td></tr>
+	</table>
+</td>
+</tr>
+<tr valign="top"><td colspan="3"><img src="http://home.cnet.com/b.gif" height=5 width=1></td></tr>
+<tr><td colspan="7" bgcolor="#cccccc"><img src="http://home.cnet.com/b.gif" height=1 width=1></td></tr>
+</table>
+<!-- /Leads Module -->
+
+<table border="0" width="100%" cellpadding="10" cellspacing="0">
+	<tr><td><font face="Arial, Helvetica">			
+		<img src="http://a.r.tv.com/cnet.1d/i/nl/lx/sub_rev.gif" alt="Reviews & Features" width="200" height="19" border="0"><br>
+		<img src="http://home.cnet.com/i/nl/rule.gif" width="410" height="8" border="0"><br />
+		
+<!--item 1-->		
+<a name="h1"></a>
+<font face="arial, helvetica"><b><a href="http://clickthru.online.com/Click?q=30-u8NEIRrPLwAEz718IeOdSKzjX1iR" >Cordless phones: the other wireless devices</a></b><br>
+<font size="-1">
+In the market for a new cordless phone but don't know 
+whether to buy a 900MHz or 2.4GHz model or what manufacturer 
+offers the best product? No sweat--check out our new line 
+coverage to find the phone that fits your personal style 
+and needs.
+<br>
+<b><a href="http://clickthru.online.com/Click?q=45-fNkJIKBij6bgZak-EDvznhjonlZR" >Read the reviews</a> <!-- &nbsp;&#124;&nbsp;
+<a href="http://clickthru.online.com/Click?q=5a-ahD1IP0zdKP6JGV24YOLpk6Td6dR" >Notify me when this is available</a> --></b>
+<br clear="all"><br></font>
+
+<!--item 2-->
+<a name="h2"></a>
+<font face="arial, helvetica"><b><a href="http://clickthru.online.com/Click?q=70-3vnJIdpiybZfgomKns2asfI8UkRR" >Samsung SPH-A460</a></b><br>
+<font size="-1">
+The update to the SPH-A400 offers some cool enhancements, 
+such as an external LCD. Is this the flip phone of the 
+moment for Sprint PCS service? 
+<br><b><a href="http://clickthru.online.com/Click?q=85-2G2oQ7KreJD6Vn_af70SVbToBBPR" >Read the review</a>
+&nbsp;&#124;&nbsp;<a href="http://clickthru.online.com/Click?q=9a-b6_GQTMpSkCDs08Figi7yr9FKgnR" >Check latest prices</a></b>
+<br></font>
+
+<!-- center1 -->
+
+<!-- /center1 -->
+
+<img src="http://home.cnet.com/b.gif" width="410" height="8" border="0"><br>
+<a name="h3"></a>
+<font face="arial, helvetica"><b><a href="http://clickthru.online.com/Click?q=af--dB8QLp7D-ceh8YydDX7NdmUVSeR" >What phones are hot in Asia--updated</a></b><br>
+<font size="-1">
+Wonder what people are talking on over on the other side 
+of the Pacific? Check out the most current top 10 list from 
+our sister site in Singapore.
+<br><b><a href="http://clickthru.online.com/Click?q=c4-Iy9lQ0WstJ9ENoukHF6q-jPexAyR" >See the list</a>
+<br><br></font>
+
+<!--Horizontal Brick-->
+<P>
+<IMG border=0 height=20 src="http://home.cnet.com/Ads/Media/Images/RHC_ALSOfromCNETnet.gif" width=150 NOSEND="1"> 
+<IMG border=0 height=8 src="http://home.cnet.com/i/it/newsletter/rule2.gif" width=410 NOSEND="1">
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+	<TBODY><TR vAlign=top>
+    	<TD><FONT face="arial, helvetica" size=-1><B>
+            <UL><LI><a href="http://clickthru.online.com/Click?q=d9-b7L_QpPspJB07a4ie23s1N87hJlR" >Live tech help; submit your question now</A> 
+				<LI><a href="http://clickthru.online.com/Click?q=ee-ZbmWQwDDxi06jsO0QzbMuLbLad4R" >CNET News.com: Top CIOs on the future of IT</A> 
+				<LI><a href="http://clickthru.online.com/Click?q=03-13t3I3rIIxo0mMdhKQcaLlAI6OrR" >Find a job you love, with more than 1 million postings</A> 
+				<LI><a href="http://clickthru.online.com/Click?q=18-WhdzI987phkswbgTiMEyR1N675iR" >ZDNet: This IT director has had enough of Microsoft</A> 
+				<LI><a href="http://clickthru.online.com/Click?q=2d-OxQyIbKxNl5DhZgVdngyV7VDjSPR" >May Editors' Choice award: Pioneer's home-theater system, the HTS-910DV</A> 
+			</UL>
+			</B></FONT>
+		</TD></TR>
+	</TBODY>
+</TABLE></P>
+<!-- End Horizontal Brick-->
+
+	</td></tr>
+</table>
+<!-- <br><img src="http://home.cnet.com/b.gif" width="1" height="30" border="1"><br> -->
+</td></tr>
+</table>
+
+<!-- ### footer ### -->
+<table width="612" bgcolor="#000000" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="599" bgcolor="#cccccc"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#eeeeee" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="12"><img src="http://www.cnet.com/b.gif" width="12" height="1"></td>
+<td width="575"><img src="http://www.cnet.com/b.gif" width="1" height="10"><br>
+<a href='http://nl.com.com/servlet/url_login?email=qqqqqqqqqq-zdnet@spamassassin.taint.org&brand=cnet'>
+<img src="http://a.r.tv.com/cnet.1d/i/nl/ft.gif" width="375" height="18" border="0" alt="Sign up for more free newsletters from CNET!"></a><br>
+
+<!-- subscription management -->
+
+<font face="ms sans serif, geneva" size="-2">
+The e-mail address for your subscription is&nbsp;qqqqqqqqqq-zdnet@spamassassin.taint.org<p>
+
+<A NOTRACK HREF='http://clickthru.online.com/Click?q=43-coY5zNJRL1zD_lgTZI_0XxbpK39OTdRR'>Unsubscribe</A>&nbsp;|
+&nbsp;<a href='http://nl.com.com/servlet/url_login?email=qqqqqqqqqq-zdnet@spamassassin.taint.org&brand=cnet'>Manage My Subscriptions</a>
+&nbsp;|&nbsp;<a href="http://clickthru.online.com/Click?q=58-mr2xIdJxs_imtwDYjKHbtbXYzHRR" >FAQ</A>&nbsp;|
+&nbsp;<a href="http://clickthru.online.com/Click?q=6d-e8plIDEzJC842xE7Bc1bJBykEmZR" >Advertise</A><br></font>
+
+<!-- /subscription management-->
+
+</font><img src="http://www.cnet.com/b.gif" width="1" height="8"></td>
+<td width="12"><img src="http://www.cnet.com/b.gif" width="12" height="1"></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#000000" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="601"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#ffcc00" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="37"><a href="http://clickthru.online.com/Click?q=82-P0EYQXK2G6PdEh46gJLkjCXMZHnR" ><img src="http://www.cnet.com/i/dp/smrb.gif" width="37" height="37" border="0"></a></td>
+<td width="563" nowrap><font face="arial, helvetica" size="-1">
+<a href="http://clickthru.online.com/Click?q=97-dlfYQ1M2Zi6YKdT3V0z6qjySJGeR" ><font color="#000000">Price comparisons</font></a> |
+<a href="http://clickthru.online.com/Click?q=ac-RbKtQ0UJo8PwZwydWfGJ0kSyVjyR" ><font color="#000000">Product reviews</font></a> |
+<a href="http://clickthru.online.com/Click?q=c1-PIljQpW7B441TXEwiOPYOLipujlR" ><font color="#000000">Tech news</font></a> |
+<a href="http://clickthru.online.com/Click?q=d6-yw2KQMPMW6zs43rnOIRzw0LGkk4R" ><font color="#000000">Downloads</font></a> |
+<a href="http://clickthru.online.com/Click?q=eb-HlpoQkDTzhBV2Pedo6MzbuNK5xrR" ><font color="#000000">All CNET services</font></a>
+</font></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" cellpadding="0" cellspacing="0" border="0">
+<tr><td bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+<tr><td height="25"><font face="ms sans serif, geneva" size="-2"><table width=100% border=0 cellspacing=2 cellpadding=1> <tr valign=bottom> <td width=75% height=31> <p></font> <br><b><font face=Arial, Helvetica, sans-serif size=2>    Copyright 2002 CNET Networks, Inc. All rights reserved.    </font></b> </p></td><td height=31 valign=top> <div align=right> <img src="http://gserv-cnet.zdnet.com/clear/outbound.gif?APPID=2&EMID=25136482&NL=e459&ISSUE=2002-07-18" height=1 width=1>    </div></td></tr><tr>  <td colspan=2><font face=Arial, Helvetica, sans-serif size=2>    </font></td></tr></table></font></td></tr>
+</table>
+<!-- ### /footer ### -->
+
+</body>
+</html>
+
+<IMG HEIGHT=1 WIDTH=1 SRC="http://clickthru.online.com/Click?q=01-9oQDnEjoOqM_8eC3hPwESegnYsRR">
+

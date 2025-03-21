@@ -1,0 +1,48 @@
+
+{{alias}}( buf[, byteOffset[, length]] )
+    Allocates a buffer from an ArrayBuffer.
+
+    The behavior of this function varies across Node.js versions due to changes
+    in the underlying Node.js APIs:
+
+    - <3.0.0: the function copies ArrayBuffer bytes to a new Buffer instance.
+    - >=3.0.0 and <5.10.0: if provided a byte offset, the function copies
+      ArrayBuffer bytes to a new Buffer instance; otherwise, the function
+      returns a view of an ArrayBuffer without copying the underlying memory.
+    - <6.0.0: if provided an empty ArrayBuffer, the function returns an empty
+      Buffer which is not an ArrayBuffer view.
+    - >=6.0.0: the function returns a view of an ArrayBuffer without copying
+      the underlying memory.
+
+    Parameters
+    ----------
+    buf: ArrayBuffer
+        Input array buffer.
+
+    byteOffset: integer (optional)
+        Index offset specifying the location of the first byte.
+
+    length: integer (optional)
+        Number of bytes to expose from the underlying ArrayBuffer.
+
+    Returns
+    -------
+    out: Buffer
+        Buffer instance.
+
+    Examples
+    --------
+    > var ab = new {{alias:@stdlib/array/buffer}}( 10 )
+    <ArrayBuffer>
+    > var buf = {{alias}}( ab )
+    <Buffer>
+    > var len = buf.length
+    10
+    > buf = {{alias}}( ab, 2, 6 )
+    <Buffer>
+    > len = buf.length
+    6
+
+    See Also
+    --------
+

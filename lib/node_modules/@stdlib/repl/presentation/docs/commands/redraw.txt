@@ -1,0 +1,12 @@
+
+redraw()
+    Redraws the current presentation slide.
+
+    Examples
+    --------
+    > redraw();
+
+    See Also
+    --------
+    next, nextSlide, prev, prevSlide, reloadPresentation
+

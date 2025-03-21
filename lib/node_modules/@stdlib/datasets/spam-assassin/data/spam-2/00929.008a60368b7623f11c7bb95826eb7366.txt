@@ -1,0 +1,158 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6N09lhY083930
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Mon, 22 Jul 2002 19:09:48 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6N09lAv083923
+	for cypherpunks-forward@ds.pro-ns.net; Mon, 22 Jul 2002 19:09:47 -0500 (CDT)
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6N09ehY083874
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks@ds.pro-ns.net>; Mon, 22 Jul 2002 19:09:41 -0500 (CDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: from waste.minder.net (daemon@waste [66.92.53.73])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6N09dJ71208
+	for <cypherpunks@ds.pro-ns.net>; Mon, 22 Jul 2002 20:09:39 -0400 (EDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: (from cpunks@localhost)
+	by waste.minder.net (8.11.6/8.11.6) id g6N09c915045
+	for cypherpunks@ds.pro-ns.net; Mon, 22 Jul 2002 20:09:38 -0400
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by waste.minder.net (8.11.6/8.11.6) with ESMTP id g6N09ZR14977
+	for <cpunks@minder.net>; Mon, 22 Jul 2002 20:09:35 -0400
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6N09YJ71164
+	for <cpunks@minder.net>; Mon, 22 Jul 2002 20:09:34 -0400 (EDT)
+	(envelope-from cpunks@einstein.ssz.com)
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id TAA24165
+	for cpunks@minder.net; Mon, 22 Jul 2002 19:17:58 -0500
+Received: (from mdom@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id TAA24074
+	for cypherpunks-outgoing; Mon, 22 Jul 2002 19:16:25 -0500
+Received: from pelayo.covad.net (h-66-134-53-162.LSANCA54.covad.net [66.134.53.162])
+	by einstein.ssz.com (8.8.8/8.8.8) with ESMTP id TAA24055
+	for <cypherpunks@ssz.com>; Mon, 22 Jul 2002 19:16:15 -0500
+Received: from mx1.mail.lycos.com=0 (211.55.81.51 [211.55.81.51]) by pelayo.covad.net with SMTP (Microsoft Exchange Internet Mail Service Version 5.5.2653.13)
+	id 3GXS74QT; Mon, 22 Jul 2002 17:02:46 -0700
+Message-ID: <000021e105ad$00006939$00004215@mx1.mail.lycos.com=0>
+To: <undisclosed-recipients:@einstein.ssz.com;>
+From: "Todd Linfoot" <three_naomi091667@netzero.net>
+Old-Subject: CDR: Juiceman II                 19819
+Date: Mon, 22 Jul 2002 17:14:11 -1900
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+Sender: owner-cypherpunks@einstein.ssz.com
+Precedence: bulk
+Reply-To: cypherpunks@einstein.ssz.com
+X-Mailing-List: cypherpunks@ssz.com
+X-Unsubscription-Info: http://einstein.ssz.com/cdr
+X-List-Admin: list@ssz.com
+X-Loop: ssz.com
+X-Acceptable-Languages: English, Russian, German, French, Spanish
+Subject: Juiceman II                 19819
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META content=3D"text/html; charset=3Diso-8859-1" http-equiv=3DContent-Typ=
+e>
+<STYLE></STYLE>
+</HEAD>
+<BODY bgColor=3D#ffffff>
+<CENTER>
+<TABLE border=3D2 borderColor=3Dgreen cellPadding=3D0 cellSpacing=3D0 widt=
+h=3D500>
+  <TBODY>
+  <TR>
+    <TD align=3Dmiddle vAlign=3Dtop>
+      <TABLE border=3D0 cellPadding=3D5 width=3D500>
+        <TBODY>
+        <TR>
+          <TD align=3Dmiddle colSpan=3D2 vAlign=3Dtop><img border=3D"0" sr=
+c=3D"http://3286983112/%70%65%72%73%6Fnal%39/%35%30%301%30%33/ju%69c%65ma%=
+6E%2D%68%65a%64e%72.%67%69%66"> </TD></TR>
+        <TR>
+          <TD colSpan=3D2><FONT color=3Dred 
+            face=3DVerdana,Geneva,Arial,Helvetica,sans-serif size=3D2>
+            <CENTER><B>
+            <H3><i>Juice... for Your Health!</i> </H3></B></CENTER></FONT>=
+</TD></TR>
+        <TR>
+          <TD colSpan=3D2><FONT face=3DVerdana,Geneva,Arial,Helvetica,sans=
+-serif 
+            size=3D2><IMG align=3Dright alt=3D"" border=3D0 
+            src=3D"http://3286983112/%70%65r%73%6F%6Eal9/%35%30%301%30%33/=
+%6A%75i%63%65%6D%61%6E%32.%6A%70%67"><font face=3D"Arial, Helvetica, sans-=
+serif, Verdana" size=3D"2">Turn your favorite fruits and vegetables into g=
+ood-for-you juice! Juiceman II is the quick and easy juicer to help meet y=
+our nutritional needs. A few of the benefits of juicing are increased ener=
+gy, a glowing complexion, strengthened immune system, stronger bones and a=
+ reduced risk of disease. &nbsp;</font> <BR><BR><font face=3D"Arial, Helve=
+tica, sans-serif, Verdana" size=3D"2">Why pay for bottled juice that may h=
+ave lost its valuable nutrients when you can enjoy healthier, fresh squeez=
+ed, homemade juice with fruits and vegetables growing in your garden or fr=
+om the farmer's market? </font></FONT><font face=3D"Arial, Helvetica, sans=
+-serif, Verdana" size=3D"2">.</font></TD></TR>
+        <TR>
+          <TD vAlign=3Dtop><FONT color=3Dred 
+            face=3DVerdana,Geneva,Arial,Helvetica,sans-serif size=3D2><B>P=
+roduct Includes:</B> </FONT><FONT 
+            face=3DVerdana,Geneva,Arial,Helvetica,sans-serif size=3D2>
+            <ul>
+            <LI>6-Tape Audio Cassette Series
+            <LI>Recipe & Menu Planner
+            <LI>Instruction Manual and Salton-Maxim Coupon Booklet
+            <LI><B>BONUS: "Juiceman's Power of Juicing" Book by Jay Kordic=
+h, Anti-Aging Juice Diet Plan, Immune Strengthening Juice Diet Plan and We=
+ight Loss Juice Diet Plan. </B> <BR>
+			<LI><font color=3D"#FF0000"><b>30-day Money Back Guarantee</b></font><B=
+R><BR></FONT></LI>
+            </ul>
+            </TD></TR>
+        <TR>
+          <TD align=3Dmiddle colSpan=3D2>
+            <p align=3D"center"><A 
+            href=3D"http://www.myratedoctor.com/tvdeals/index2.html"><IMG 
+            border=3D0 
+            src=3D"http://3286983112/p%65%72%73%6Fn%61%6C%39/%350%30%31%30=
+%33/%6A%75%69%63%65ma%6E_%62ut%74%6Fn%2E%67%69%66"></A> 
+            </p>
+          </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></CENTER>
+<CENTER><FONT size=3D-1><a href=3D"mailto:tvdeals1@excite.com?subject=3Dre=
+move">Click 
+here</a> to unsubscribe from these mailings. </FONT></CENTER><BR>
+<table>
+  <TR><TD><FONT 
+color=3Dblack size=3D2>Your privacy is extremely important to us. You requ=
+ested to 
+receive this mailing by registering at TV Deals or by subscribing through =
+one 
+of our marketing partners. As a leader in permission-based email marketing=
+, we 
+are committed to delivering a highly rewarding experience that includes mo=
+ney 
+saving offers from your favorite brands, on-line bargains, and entertainme=
+nt. 
+However, if you wish to unsubscribe, please click the link above. 
+</FONT></TD></TR></BODY>
+</BODY>
+</HTML>
+
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

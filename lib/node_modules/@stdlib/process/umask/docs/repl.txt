@@ -1,0 +1,133 @@
+
+{{alias}}( [mask,] [options] )
+    Returns the current process mask, if not provided a mask; otherwise, sets
+    the process mask and returns the previous mask.
+
+    A mask is a set of bits, each of which restricts how its corresponding
+    permission is set for newly created files.
+
+    On POSIX platforms, each file has a set of attributes that control who can
+    read, write, or execute that file. Upon creating a file, file permissions
+    must be set to an initial setting. The process mask restricts those
+    permission settings.
+
+    If the mask contains a bit set to "1", the corresponding initial file
+    permission is disabled. If the mask contains a bit set to "0", the
+    corresponding permission is left to be determined by the requesting process
+    and the system.
+
+    The process mask is thus a filter that removes permissions as a file is
+    created; i.e., each bit set to a "1" removes its corresponding permission.
+
+    In octal representation, a mask is a four digit number, e.g., 0077,
+    comprised as follows:
+
+    - 0: special permissions (setuid, setgid, sticky bit)
+    - 0: (u)ser/owner permissions
+    - 7: (g)roup permissions
+    - 7: (o)thers/non-group permissions
+
+    Octal codes correspond to the following permissions:
+
+    - 0: read, write, execute
+    - 1: read, write
+    - 2: read, execute
+    - 3: read
+    - 4: write, execute
+    - 5: write
+    - 6: execute
+    - 7: no permissions
+
+    If provided fewer than four digits, the mask is left-padded with zeros.
+
+    Note, however, that only the last three digits (i.e., the file permissions
+    digits) of the mask are actually used when the mask is applied.
+
+    Permissions can be represented using the following symbolic form:
+
+        u=rwx,g=rwx,o=rwx
+
+    where
+
+    - u: user permissions
+    - g: group permissions
+    - o: other/non-group permissions
+    - r: read
+    - w: write
+    - x: execute
+
+    When setting permissions using symbolic notation, the function accepts a
+    mask expression of the form:
+
+        [<classes>]<operator><symbols>
+
+    where "classes" may be a combination of
+
+    - u: user
+    - g: group
+    - o: other/non-group
+    - a: all
+
+    "symbols" may be a combination of
+
+    - r: read
+    - w: write
+    - x: execute
+    - X: special execute
+    - s: setuid/gid on execution
+    - t: sticky
+
+    and "operator" may be one of
+
+    - +: enable
+    - -: disable
+    - =: enable specified and disable unspecified permissions
+
+    For example,
+
+    - u-w: disable user write permissions
+    - u+w: enable user write permissions
+    - u=w: enable user write permissions and disable user read and execute
+
+    To specify multiple changes, provide a comma-separated list of mask
+    expressions. For example,
+
+        u+rwx,g-x,o=r
+
+    would enable user read, write, and execute permissions, disable group
+    execute permissions, enable other read permissions, and disable other
+    write and execute permissions.
+
+    The `a` class indicates "all", which is the same as specifying "ugo". This
+    is the default class if a class is omitted when specifying permissions. For
+    example, `+x` is equivalent to `a+x` which is equivalent to `ugo+x` which
+    is equivalent to `u+x,g+x,o+x` and enables execution for all classes.
+
+    Parameters
+    ----------
+    mask: integer|string (optional)
+        Mask or mask expression. If the mask is a string, the mask is assumed to
+        be in symbolic notation.
+
+    options: Object (optional)
+        Options.
+
+    options.symbolic: boolean (optional)
+        Boolean indicating whether to return the mask using symbolic notation.
+
+    Returns
+    -------
+    mask: integer|string
+        Process mask. If provided a mask, the returned value is the previous
+        mask; otherwise, the returned value is the current process mask.
+
+    Examples
+    --------
+    > var mask = {{alias}}()
+    <number>
+    > mask = {{alias}}( { 'symbolic': true } )
+    <string>
+
+    See Also
+    --------
+

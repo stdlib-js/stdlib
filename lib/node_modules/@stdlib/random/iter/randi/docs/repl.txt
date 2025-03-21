@@ -1,0 +1,88 @@
+
+{{alias}}( [options] )
+    Create an iterator for generating pseudorandom numbers having integer
+    values.
+
+    The default underlying pseudorandom number generator (PRNG) *may* change in
+    the future. If exact reproducibility is required, either explicitly specify
+    a PRNG via the `name` option or use an underlying PRNG directly.
+
+    If an environment supports Symbol.iterator, the returned iterator is
+    iterable.
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Options.
+
+    options.name: string (optional)
+        Name of a supported pseudorandom number generator (PRNG), which will
+        serve as the underlying source of pseudorandom numbers. The following
+        PRNGs are supported:
+
+        - mt19937: 32-bit Mersenne Twister.
+        - minstd: linear congruential PRNG based on Park and Miller.
+        - minstd-shuffle: linear congruential PRNG whose output is shuffled.
+
+        Default: `'mt19937'`.
+
+    options.seed: any (optional)
+        Pseudorandom number generator seed. Valid seed values vary according to
+        the underlying PRNG.
+
+    options.state: any (optional)
+        Pseudorandom number generator state. Valid state values vary according
+        to the underling PRNG. If provided, the `seed` option is ignored.
+
+    options.copy: boolean (optional)
+        Boolean indicating whether to copy a provided pseudorandom number
+        generator state. Setting this option to `false` allows sharing state
+        between two or more pseudorandom number generators. Setting this option
+        to `true` ensures that a returned generator has exclusive control over
+        its internal state. Default: true.
+
+    options.iter: integer (optional)
+        Number of iterations.
+
+    Returns
+    -------
+    iterator: Object
+        Iterator.
+
+    iterator.next(): Function
+        Returns an iterator protocol-compliant object containing the next
+        iterated value (if one exists) and a boolean flag indicating whether the
+        iterator is finished.
+
+    iterator.return( [value] ): Function
+        Finishes an iterator and returns a provided value.
+
+    iterator.PRNG: Function
+        Underlying pseudorandom number generator.
+
+    iterator.seed: any
+        Pseudorandom number generator seed.
+
+    iterator.seedLength: integer
+        Length of generator seed.
+
+    iterator.state: any
+        Generator state.
+
+    iterator.stateLength: integer
+        Length of generator state.
+
+    iterator.byteLength: integer
+        Size (in bytes) of generator state.
+
+    Examples
+    --------
+    > var it = {{alias}}();
+    > var r = it.next().value
+    <number>
+    > r = it.next().value
+    <number>
+
+    See Also
+    --------
+

@@ -1,0 +1,89 @@
+Return-Path: jeremy@alum.mit.edu
+Delivery-Date: Sat Sep  7 18:18:17 2002
+From: jeremy@alum.mit.edu (Jeremy Hylton)
+Date: Sat, 7 Sep 2002 13:18:17 -0400
+Subject: [Spambayes] understanding high false negative rate
+In-Reply-To: <LNBBLJKPBEHFEDALKOLCCEKNBCAB.tim.one@comcast.net>
+References: <15737.16782.542869.368986@slothrop.zope.com>
+	<LNBBLJKPBEHFEDALKOLCCEKNBCAB.tim.one@comcast.net>
+Message-ID: <15738.13529.407748.635725@slothrop.zope.com>
+
+>>>>> "TP" == Tim Peters <tim.one@comcast.net> writes:
+
+  TP> [Jeremy Hylton[
+  >> The total collections are 1100 messages.  I trained with 1100/5
+  >> messages.
+
+  TP> I'm reading this now as that you trained on about 220 spam and
+  TP> about 220 ham.  That's less than 10% of the sizes of the
+  TP> training sets I've been using.  Please try an experiment: train
+  TP> on 550 of each, and test once against the other 550 of each.
+
+This helps a lot!  Here are results with the stock tokenizer:
+
+Training on <mbox: /home/jeremy/Mail/INBOX 0> & <mbox: /home/jeremy/Mail/spam 8>
+ ... 644 hams & 557 spams
+      0.000  10.413
+      1.398   6.104
+      1.398   5.027
+Training on <mbox: /home/jeremy/Mail/INBOX 0> & <mbox: /home/jeremy/Mail/spam 0>
+ ... 644 hams & 557 spams
+      0.000   8.259
+      1.242   2.873
+      1.242   5.745
+Training on <mbox: /home/jeremy/Mail/INBOX 2> & <mbox: /home/jeremy/Mail/spam 3>
+ ... 644 hams & 557 spams
+      1.398   5.206
+      1.398   4.488
+      0.000   9.336
+Training on <mbox: /home/jeremy/Mail/INBOX 2> & <mbox: /home/jeremy/Mail/spam 0>
+ ... 644 hams & 557 spams
+      1.553   5.206
+      1.553   5.027
+      0.000   9.874
+total false pos 139 5.39596273292
+total false neg 970 43.5368043088
+
+And results from the tokenizer that looks at all headers except Date,
+Received, and X-From_:
+
+Training on <mbox: /home/jeremy/Mail/INBOX 0> & <mbox: /home/jeremy/Mail/spam 8>
+ ... 644 hams & 557 spams
+      0.000   7.540
+      0.932   4.847
+      0.932   3.232
+Training on <mbox: /home/jeremy/Mail/INBOX 0> & <mbox: /home/jeremy/Mail/spam 0>
+ ... 644 hams & 557 spams
+      0.000   7.181
+      0.621   2.873
+      0.621   4.847
+Training on <mbox: /home/jeremy/Mail/INBOX 2> & <mbox: /home/jeremy/Mail/spam 3>
+ ... 644 hams & 557 spams
+      1.087   4.129
+      1.087   3.052
+      0.000   6.822
+Training on <mbox: /home/jeremy/Mail/INBOX 2> & <mbox: /home/jeremy/Mail/spam 0>
+ ... 644 hams & 557 spams
+      0.776   3.411
+      0.776   3.411
+      0.000   6.463
+total false pos 97 3.76552795031
+total false neg 738 33.1238779174
+
+Is it safe to conclude that avoiding any cleverness with headers is a
+good thing?
+
+  TP> Do that a few times making a random split each time (it won't be
+  TP> long until you discover why directories of individual files are
+  TP> a lot easier to work -- e.g., random.shuffle() makes this kind
+  TP> of thing trivial for me).
+
+You haven't looked at mboxtest.py, have you?  I'm using
+random.shuffle(), too.  You don't need to have many files to make an
+arbitrary selection of messages from an mbox.
+
+I'll report some more results when they're done.
+
+Jeremy
+
+

@@ -1,0 +1,56 @@
+From OWNER-NOLIST-SGODAILY*JM**NETNOTEINC*-COM@SMTP1.ADMANMAIL.COM  Mon Sep 23 22:50:16 2002
+Return-Path: <OWNER-NOLIST-SGODAILY*JM**NETNOTEINC*-COM@SMTP1.ADMANMAIL.COM>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id 44D1516F03
+	for <zzzz@localhost>; Mon, 23 Sep 2002 22:50:15 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 23 Sep 2002 22:50:15 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8NHdUC27675 for
+    <zzzz@jmason.org>; Mon, 23 Sep 2002 18:39:30 +0100
+Received: from TIPSMTP1.ADMANMAIL.COM (tipsmtp1.theadmanager.com
+    [66.111.219.130] (may be forged)) by webnote.net (8.9.3/8.9.3) with ESMTP
+    id SAA15732 for <JM@NETNOTEINC.COM>; Mon, 23 Sep 2002 18:40:04 +0100
+Message-Id: <200209231740.SAA15732@webnote.net>
+Received: from TIPUTIL2 (tiputil2.corp.tiprelease.com) by
+    TIPSMTP1.ADMANMAIL.COM (LSMTP for Windows NT v1.1b) with SMTP id
+    <178.00008157@TIPSMTP1.ADMANMAIL.COM>; Mon, 23 Sep 2002 12:25:39 -0500
+Date: Mon, 23 Sep 2002 12:00:04 -0500
+From: Your Weight-Loss Partner <greatoffers@sendgreatoffers.com>
+To: JM@NETNOTEINC.COM
+Subject: *Do Your Butt, Hips And Thighs Embarrass You?*
+X-Info: 134085
+X-Info2: SGO
+MIME-Version: 1.0
+Content-Type: text/html; charset="us-ascii"
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<body>
+<table align="center" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center"><a href="http://theadmanager.com/server/c.asp?ad_key=NFYNEAOKPTPK&ext=1"><img src="http://admanmail.com/ads/adman/trim_life/creative--002.gif" width="450" height="300" border="0"></a></td>
+  </tr>
+</table>
+<img src="http://admanmail.com/server/t.asp?ad_key=NFYNEAOKPTPK" width="1" height="1" hspace="0" vspace="0" border="0" alt="T">
+<hr size="1" noshade>
+<font face="Arial" size="1" color="#000000">
+You are receiving this mailing because you are a
+member of SendGreatOffers.com and subscribed as:JM@NETNOTEINC.COM
+To unsubscribe <a href="http://admanmail.com/subscription.asp?em=JM@NETNOTEINC.COM&l=SGO">
+<font face="arial" size="1" color="#000000">Click Here</a>
+(http://admanmail.com/subscription.asp?em=JM@NETNOTEINC.COM&l=SGO)
+or reply to this email with REMOVE in the subject line - you must
+also include the body of this message to be unsubscribed. Any correspondence about
+the products/services should be directed to
+the company in the ad.
+%EM%JM@NETNOTEINC.COM%/EM%
+<BR></FONT> </body> </html>
+
+

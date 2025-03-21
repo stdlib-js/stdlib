@@ -1,0 +1,19 @@
+{
+	"boolean": [
+		"help",
+		"version"
+	],
+	"string": [
+		"n",
+		"split",
+		"mode"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		]
+	}
+}

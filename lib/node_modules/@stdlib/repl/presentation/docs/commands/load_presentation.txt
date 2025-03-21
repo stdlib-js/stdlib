@@ -1,0 +1,19 @@
+
+loadPresentation( file )
+    Loads a presentation from a file.
+
+    Relative file paths are resolved relative to the current working directory.
+
+    Parameters
+    ----------
+    file: string
+    	File path.
+
+    Examples
+    --------
+    > loadPresentation( './path/to/presentation.txt' );
+
+    See Also
+    --------
+    reloadPresentation
+

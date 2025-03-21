@@ -1,0 +1,81 @@
+From rpm-list-admin@freshrpms.net  Tue Jul 30 18:00:13 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D25134407C
+	for <jm@localhost>; Tue, 30 Jul 2002 13:00:12 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 30 Jul 2002 18:00:12 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6UGxN206496 for
+    <jm-rpm@jmason.org>; Tue, 30 Jul 2002 17:59:23 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6UGt3826785; Tue, 30 Jul 2002 18:55:03
+    +0200
+Received: from fep01-app.kolumbus.fi (fep01-0.kolumbus.fi [193.229.0.41])
+    by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g6UGs1826623 for
+    <rpm-list@freshrpms.net>; Tue, 30 Jul 2002 18:54:01 +0200
+Received: from azrael.blades.cxm ([62.248.237.162]) by
+    fep01-app.kolumbus.fi with ESMTP id
+    <20020730165359.TGJR18308.fep01-app.kolumbus.fi@azrael.blades.cxm> for
+    <rpm-list@freshrpms.net>; Tue, 30 Jul 2002 19:53:59 +0300
+Received: (from blades@localhost) by azrael.blades.cxm (SGI-8.9.3/8.9.3)
+    id TAA24669 for rpm-list@freshrpms.net; Tue, 30 Jul 2002 19:53:59 +0300
+    (EEST)
+X-Authentication-Warning: azrael.blades.cxm: blades set sender to
+    harri.haataja@cs.helsinki.fi using -f
+From: Harri Haataja <harri.haataja@cs.helsinki.fi>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: req: Falcon's eye
+Message-Id: <20020730195358.E14123@azrael.smilehouse.com>
+References: <20020726125254.B11334@azrael.smilehouse.com>
+    <1027977442.1921.5.camel@bobcat.ods.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-15
+Content-Disposition: inline
+Content-Transfer-Encoding: 8bit
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <1027977442.1921.5.camel@bobcat.ods.org>; from
+    ville.skytta@iki.fi on Tue, Jul 30, 2002 at 12:17:21AM +0300
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Tue, 30 Jul 2002 19:53:59 +0300
+Date: Tue, 30 Jul 2002 19:53:59 +0300
+
+On Tue, Jul 30, 2002 at 12:17:21AM +0300, Ville Skyttä wrote:
+> On Fri, 2002-07-26 at 12:52, Harri Haataja wrote:
+> > Another thing I see in debian but not in my RH boxen.
+> > http://falconseye.sourceforge.net/
+> > It's a GL(?) interface to nethack :)
+> Take a look at <http://cachalot.ods.org/>, I have RPMs for RH7.3
+> there, based on (and compatible with) the NH3.x that last appeared in
+> RH7.1 powertools.  apt'able, of course :)
+
+And Text-Iconv too, nice :)
+
+Gpg key is nowhere in sight though even while vendors.list lists key
+id's.
+
+-- 
+<@zomby[tm]> tea is just like noodle soup without noodles
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

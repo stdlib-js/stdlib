@@ -1,0 +1,141 @@
+
+{{alias}}( value[, options] )
+    Returns a readable stream which always streams the same value.
+
+    In object mode, `null` is a reserved value. If provided `null`, the
+    returned stream will prematurely end.
+
+    Parameters
+    ----------
+    value: string|Buffer|Uint8Array|any
+        Value to stream.
+
+    options: Object (optional)
+        Options.
+
+    options.objectMode: boolean (optional)
+        Specifies whether a stream should operate in "objectMode". Default:
+        false.
+
+    options.encoding: string|null (optional)
+        Specifies how Buffer objects should be decoded to strings. Default:
+        null.
+
+    options.highWaterMark: integer (optional)
+        Specifies the maximum number of bytes to store in an internal buffer
+        before pausing streaming.
+
+    options.sep: string (optional)
+        Separator used to join streamed data. This option is only applicable
+        when a stream is not in "objectMode". Default: '\n'.
+
+    options.iter: integer (optional)
+        Number of iterations.
+
+    Returns
+    -------
+    stream: ReadableStream
+        Readable stream.
+
+    Examples
+    --------
+    > function fcn( chunk ) { console.log( chunk.toString() ); };
+    > var opts = { 'iter': 10 };
+    > var s = {{alias}}( 'beep', opts );
+    > var o = {{alias:@stdlib/streams/node/inspect-sink}}( fcn );
+    > s.pipe( o );
+
+
+{{alias}}.factory( [value, ][options] )
+    Returns a function for creating readable streams which always stream the
+    same value.
+
+    If provided a value to stream, the returned function returns readable always
+    streams the provided value.
+
+    If not provided a value to stream, the returned function requires that a
+    value be provided at each invocation.
+
+    If provided only one argument and that argument is an object (either empty
+    or not containing any recognized options properties), the function treats
+    the argument as a value to be streamed, not as an options argument.
+
+    Parameters
+    ----------
+    value: string|Buffer|Uint8Array|any (optional)
+        Value to stream.
+
+    options: Object (optional)
+        Options.
+
+    options.objectMode: boolean (optional)
+        Specifies whether a stream should operate in "objectMode". Default:
+        false.
+
+    options.encoding: string|null (optional)
+        Specifies how Buffer objects should be decoded to strings. Default:
+        null.
+
+    options.highWaterMark: integer (optional)
+        Specifies the maximum number of bytes to store in an internal buffer
+        before pausing streaming.
+
+    options.sep: string (optional)
+        Separator used to join streamed data. This option is only applicable
+        when a stream is not in "objectMode". Default: '\n'.
+
+    options.iter: integer (optional)
+        Number of iterations.
+
+    Returns
+    -------
+    fcn: Function
+        Function for creating readable streams.
+
+    Examples
+    --------
+    > var opts = { 'objectMode': true, 'highWaterMark': 64 };
+    > var createStream = {{alias}}.factory( opts );
+
+
+{{alias}}.objectMode( value[, options] )
+    Returns an "objectMode" readable stream which always streams the same value.
+
+    In object mode, `null` is a reserved value. If provided `null`, the
+    returned stream will prematurely end.
+
+    Parameters
+    ----------
+    value: any
+        Value to stream.
+
+    options: Object (optional)
+        Options.
+
+    options.encoding: string|null (optional)
+        Specifies how Buffer objects should be decoded to strings. Default:
+        null.
+
+    options.highWaterMark: integer (optional)
+        Specifies the maximum number of objects to store in an internal buffer
+        before pausing streaming.
+
+    options.iter: integer (optional)
+        Number of iterations.
+
+    Returns
+    -------
+    stream: ReadableStream
+        Readable stream operating in "objectMode".
+
+    Examples
+    --------
+    > function fcn( v ) { console.log( v ); };
+    > var opts = { 'iter': 10 };
+    > var s = {{alias}}.objectMode( 3.14, opts );
+    > var o = {{alias:@stdlib/streams/node/inspect-sink}}.objectMode( fcn );
+    > s.pipe( o );
+
+    See Also
+    --------
+

@@ -1,0 +1,78 @@
+From irregulars-admin@tb.tf  Thu Aug 22 14:23:39 2002
+Return-Path: <irregulars-admin@tb.tf>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9DAE147C66
+	for <zzzz@localhost>; Thu, 22 Aug 2002 09:23:38 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Thu, 22 Aug 2002 14:23:38 +0100 (IST)
+Received: from web.tb.tf (route-64-131-126-36.telocity.com
+    [64.131.126.36]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7MDGOZ07922 for <zzzz-irr@spamassassin.taint.org>; Thu, 22 Aug 2002 14:16:24 +0100
+Received: from web.tb.tf (localhost.localdomain [127.0.0.1]) by web.tb.tf
+    (8.11.6/8.11.6) with ESMTP id g7MDP9I16418; Thu, 22 Aug 2002 09:25:09
+    -0400
+Received: from red.harvee.home (red [192.168.25.1] (may be forged)) by
+    web.tb.tf (8.11.6/8.11.6) with ESMTP id g7MDO4I16408 for
+    <irregulars@tb.tf>; Thu, 22 Aug 2002 09:24:04 -0400
+Received: from prserv.net (out4.prserv.net [32.97.166.34]) by
+    red.harvee.home (8.11.6/8.11.6) with ESMTP id g7MDFBD29237 for
+    <irregulars@tb.tf>; Thu, 22 Aug 2002 09:15:12 -0400
+Received: from [209.202.248.109]
+    (slip-32-103-249-10.ma.us.prserv.net[32.103.249.10]) by prserv.net (out4)
+    with ESMTP id <2002082213150220405qu8jce>; Thu, 22 Aug 2002 13:15:07 +0000
+MIME-Version: 1.0
+X-Sender: @ (Unverified)
+Message-Id: <p04330137b98a941c58a8@[209.202.248.109]>
+To: undisclosed-recipient: ;
+From: Monty Solomon <monty@roscom.com>
+Content-Type: text/plain; charset="us-ascii"
+Subject: [IRR] Klez: The Virus That  Won't Die
+Sender: irregulars-admin@tb.tf
+Errors-To: irregulars-admin@tb.tf
+X-Beenthere: irregulars@tb.tf
+X-Mailman-Version: 2.0.6
+Precedence: bulk
+List-Help: <mailto:irregulars-request@tb.tf?subject=help>
+List-Post: <mailto:irregulars@tb.tf>
+List-Subscribe: <http://tb.tf/mailman/listinfo/irregulars>,
+    <mailto:irregulars-request@tb.tf?subject=subscribe>
+List-Id: New home of the TBTF Irregulars mailing list <irregulars.tb.tf>
+List-Unsubscribe: <http://tb.tf/mailman/listinfo/irregulars>,
+    <mailto:irregulars-request@tb.tf?subject=unsubscribe>
+List-Archive: <http://tb.tf/mailman/private/irregulars/>
+Date: Thu, 22 Aug 2002 09:15:25 -0400
+
+Klez: The Virus That Won't Die
+ 
+Already the most prolific virus ever, Klez continues to wreak havoc.
+
+Andrew Brandt
+>>From the September 2002 issue of PC World magazine
+Posted Thursday, August 01, 2002
+
+
+The Klez worm is approaching its seventh month of wriggling across 
+the Web, making it one of the most persistent viruses ever. And 
+experts warn that it may be a harbinger of new viruses that use a 
+combination of pernicious approaches to go from PC to PC.
+
+Antivirus software makers Symantec and McAfee both report more than 
+2000 new infections daily, with no sign of letup at press time. The 
+British security firm MessageLabs estimates that 1 in every 300 
+e-mail messages holds a variation of the Klez virus, and says that 
+Klez has already surpassed last summer's SirCam as the most prolific 
+virus ever.
+
+And some newer Klez variants aren't merely nuisances--they can carry 
+other viruses in them that corrupt your data.
+
+...
+
+http://www.pcworld.com/news/article/0,aid,103259,00.asp
+_______________________________________________
+Irregulars mailing list
+Irregulars@tb.tf
+http://tb.tf/mailman/listinfo/irregulars
+

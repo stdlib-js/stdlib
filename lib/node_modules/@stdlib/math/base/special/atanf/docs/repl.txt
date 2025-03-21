@@ -1,0 +1,28 @@
+
+{{alias}}( x )
+    Computes the arctangent of a single-precision floating-point number.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    y: number
+        Arctangent (in radians).
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.0 )
+    0.0
+    > y = {{alias}}( -3.14/4.0 )
+    ~-0.666
+    > y = {{alias}}( 3.14/4.0 )
+    ~0.666
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+

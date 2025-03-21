@@ -1,0 +1,72 @@
+{
+  "name": "stdlib-datasets-afinn-96",
+  "version": "",
+  "title": "AFINN-96",
+  "description": "A list of English words rated for valence.",
+  "resources": [
+    {
+      "name": "afinn-96-json",
+      "title": "AFINN-96",
+      "description": "A list of English words rated for valence.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/words.json"
+    },
+    {
+      "name": "afinn-96-csv",
+      "title": "AFINN-96",
+      "description": "A list of English words rated for valence.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/words.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "word",
+            "title": "Word",
+            "description": "Word rated for valence.",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "valence",
+            "title": "Valence",
+            "description": "Word valence. Negative words have a negative valence (min: -5), and positive words have a positive valence (max: +5).",
+            "type": "integer",
+            "format": "default"
+          }
+        ]
+      }
+    }
+  ],
+  "sources": [
+    {
+      "name": "AFINN",
+      "web": "http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=6010"
+    }
+  ],
+  "keywords": [
+    "words",
+    "list",
+    "sentiment",
+    "opinion",
+    "positive",
+    "negative",
+    "emotion",
+    "emotive",
+    "subjectivity",
+    "valence",
+    "text mining",
+    "opinion mining",
+    "lexicon",
+    "nlp",
+    "language",
+    "english",
+    "en"
+  ],
+  "license": "ODC-BY-1.0 AND CC-BY-4.0"
+}

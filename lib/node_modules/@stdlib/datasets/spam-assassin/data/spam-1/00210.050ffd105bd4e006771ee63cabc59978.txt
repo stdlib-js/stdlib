@@ -1,0 +1,63 @@
+From karen_duarte@emailaccount.com  Tue Sep  3 14:37:18 2002
+Return-Path: <karen_duarte@emailaccount.com>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id 648B016F7B
+	for <zzzz@localhost>; Tue,  3 Sep 2002 14:31:00 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Tue, 03 Sep 2002 14:31:00 +0100 (IST)
+Received: from pf129.minsk-mazowiecki.sdi.tpnet.pl
+    (pf129.minsk-mazowiecki.sdi.tpnet.pl [80.49.3.129]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with SMTP id g831SQZ32566 for <webmaster@efi.ie>;
+    Tue, 3 Sep 2002 02:28:26 +0100
+X-Authentication-Warning: dogma.slashnull.org: pf129.minsk-mazowiecki.sdi.tpnet.pl
+    [80.49.3.129] didn't use HELO protocol
+Received: from [199.41.174.112] by q4.quik.com with smtp; 02 Sep 2002
+    23:30:41 +0200
+Received: from f64.law4.hotmail.com ([95.249.114.70]) by
+    smtp-server6.tampabay.rr.com with local; Mon, 02 Sep 2002 18:27:01 +0700
+Received: from unknown (HELO hd.regsoft.net) (11.116.203.190) by
+    mx.rootsystems.net with local; 02 Sep 2002 17:23:21 +0800
+Received: from mx.rootsystems.net ([175.135.162.9]) by mta6.snfc21.pbi.net
+    with asmtp; Mon, 02 Sep 2002 19:19:41 +0600
+Received: from unknown (71.125.178.167) by hd.regsoft.net with esmtp;
+    03 Sep 2002 11:16:01 -1000
+Reply-To: "<Karen Duarte" <karen_duarte@emailaccount.com>
+Message-Id: <003d15e77e2e$2223b1e0$2cd16bc8@fqaqrv>
+From: "<Karen Duarte" <karen_duarte@emailaccount.com>
+To: <webmaster@efi.ie>
+Subject: $14.95 per year for .COM, .BIZ, and .INFO extensions
+Date: Mon, 02 Sep 2002 22:18:23 +0300
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: AOL 7.0 for Windows US sub 118
+Importance: Normal
+Content-Transfer-Encoding: 8bit
+
+IMPORTANT INFORMATION:
+
+The new domain names are finally available to the general public at discount prices. Now you can register one of the exciting new .BIZ or .INFO domain names, as well as the original .COM and .NET names for just $14.95. These brand new domain extensions were recently approved by ICANN and have the same rights as the original .COM and .NET domain names. The biggest benefit is of-course that the .BIZ and .INFO domain names are currently more available. i.e. it will be much easier to register an attractive and easy-to-remember domain name for the same price.  Visit: http://www.affordable-domains.com today for more info.
+ 
+Register your domain name today for just $14.95 at: http://www.affordable-domains.com/  Registration fees include full access to an easy-to-use control panel to manage your domain name in the future.
+ 
+Sincerely,
+ 
+Domain Administrator
+Affordable Domains
+
+
+To remove your email address from further promotional mailings from this company, click here:
+http://www.centralremovalservice.com/cgi-bin/domain-remove.cgi
+(g1-ss2)5592OxeR3-424uQKh2259kCdl5-189GEil31
+
+
+
+
+
+
+
+
+

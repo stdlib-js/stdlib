@@ -1,0 +1,26 @@
+
+clearVars( [options] )
+    Deletes user-defined variables in the current workspace.
+
+    Parameters
+    ----------
+    options: Object (optional)
+    	Options.
+
+    options.include: RegExp|ArrayLikeObject (optional)
+    	Variable name inclusion filter.
+
+    options.exclude: RegExp|ArrayLikeObject (optional)
+    	Variable name exclusion filter.
+
+    Examples
+    --------
+    > var x = 3.14;
+    > x
+    > clearVars();
+    > x
+
+    See Also
+    --------
+    clearWorkspace, vars
+

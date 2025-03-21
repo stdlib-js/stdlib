@@ -1,0 +1,31 @@
+
+{{alias}}( x )
+    Computes the squared absolute value of a double-precision floating-point
+    `x`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    y: number
+        Squared absolute value.
+
+    Examples
+    --------
+    > var y = {{alias}}( -1.0 )
+    1.0
+    > y = {{alias}}( 2.0 )
+    4.0
+    > y = {{alias}}( 0.0 )
+    0.0
+    > y = {{alias}}( -0.0 )
+    0.0
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+

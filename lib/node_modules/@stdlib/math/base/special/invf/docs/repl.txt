@@ -1,0 +1,33 @@
+
+{{alias}}( x )
+    Computes the multiplicative inverse of a single-precision floating-point
+    number `x`.
+
+    The multiplicative inverse is defined as `1/x`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    y: number
+        Multiplicative inverse.
+
+    Examples
+    --------
+    > var y = {{alias}}( -1.0 )
+    -1.0
+    > y = {{alias}}( 2.0 )
+    0.5
+    > y = {{alias}}( 0.0 )
+    Infinity
+    > y = {{alias}}( -0.0 )
+    -Infinity
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+

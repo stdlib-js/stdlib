@@ -1,0 +1,72 @@
+From ilug-admin@linux.ie  Wed Jul 31 11:50:14 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 427F1440C8
+	for <jm@localhost>; Wed, 31 Jul 2002 06:50:12 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 31 Jul 2002 11:50:12 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6VAhc216986 for
+    <jm-ilug@jmason.org>; Wed, 31 Jul 2002 11:43:38 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA29700; Wed, 31 Jul 2002 11:40:54 +0100
+Received: from mel-rto4.wanadoo.fr (smtp-out-4.wanadoo.fr [193.252.19.23])
+    by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id LAA29648 for
+    <ilug@linux.ie>; Wed, 31 Jul 2002 11:40:43 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host smtp-out-4.wanadoo.fr
+    [193.252.19.23] claimed to be mel-rto4.wanadoo.fr
+Received: from mel-rta7.wanadoo.fr (193.252.19.61) by mel-rto4.wanadoo.fr
+    (6.5.007) id 3D18589F01290CA1 for ilug@linux.ie; Wed, 31 Jul 2002 12:40:11
+    +0200
+Received: from bolsh.wanadoo.fr (80.8.224.71) by mel-rta7.wanadoo.fr
+    (6.5.007) id 3D2A78FA00A17C9A for ilug@linux.ie; Wed, 31 Jul 2002 12:40:11
+    +0200
+Received: from dave by bolsh.wanadoo.fr with local (Exim 3.32 #1 (Debian))
+    id 17ZqyR-00030J-00 for <ilug@linux.ie>; Wed, 31 Jul 2002 12:44:59 +0200
+Date: Wed, 31 Jul 2002 12:44:59 +0200
+From: David Neary <dneary@wanadoo.fr>
+To: Irish LUG <ilug@linux.ie>
+Subject: Re: [ILUG] Fwd: Linux Beer Hike
+Message-Id: <20020731124459.A11532@wanadoo.fr>
+References: <A92DB5482F76D51193290002A50A5612015632A9@irsmsx103.ir.intel.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-15
+Content-Disposition: inline
+Content-Transfer-Encoding: 8bit
+In-Reply-To: <A92DB5482F76D51193290002A50A5612015632A9@irsmsx103.ir.intel.com>
+User-Agent: Mutt/1.3.23i
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Satelle, StevenX wrote:
+> When I was in school they pushed Irish down my throat. I developed a hatred
+> for Irish. I did French for 3 years and German for 6 months, I could
+> (almost) hold a basic conversation. I am proud of the fact that I don't know
+> one word of Irish. 
+
+Well, I'm hardly a Gaeilgóir, but in general I wouldn't consider
+either ability or inability in a language something to be proud
+of... maybe it's just me, but I'm not proud that I can't speak
+Italian, no more than I'm proud that I can speak French or
+English.
+
+Cheers,
+Dave.
+
+-- 
+       David Neary,
+    Marseille, France
+  E-Mail: bolsh@gimp.org
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

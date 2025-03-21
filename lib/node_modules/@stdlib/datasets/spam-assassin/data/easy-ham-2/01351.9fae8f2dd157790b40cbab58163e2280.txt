@@ -1,0 +1,51 @@
+From updates-admin@ximian.com  Wed Aug  7 00:15:55 2002
+Return-Path: <updates-admin@ximian.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B114E440A8
+	for <jm@localhost>; Tue,  6 Aug 2002 19:15:55 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 07 Aug 2002 00:15:55 +0100 (IST)
+Received: from trna.ximian.com (trna.ximian.com [141.154.95.22]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g76NF4k23125;
+    Wed, 7 Aug 2002 00:15:04 +0100
+Received: from trna.ximian.com (localhost [127.0.0.1]) by trna.ximian.com
+    (8.11.6/8.11.6) with ESMTP id g76Lb9332558; Tue, 6 Aug 2002 17:38:29 -0400
+Received: from peabody.ximian.com (peabody.ximian.com [141.154.95.10]) by
+    trna.ximian.com (8.11.6/8.11.6) with ESMTP id g76L3I326682 for
+    <updates@ximian.com>; Tue, 6 Aug 2002 17:03:18 -0400
+Date: Tue, 6 Aug 2002 17:03:18 -0400
+Message-Id: <200208062103.g76L3I326682@trna.ximian.com>
+Received: (qmail 17845 invoked from network); 6 Aug 2002 21:03:01 -0000
+Received: from localhost (127.0.0.1) by localhost with SMTP;
+    6 Aug 2002 21:03:01 -0000
+From: Ximian GNOME Security Team <distribution@ximian.com>
+To: Ximian Updates <updates@ximian.com>
+Subject: [Ximian Updates] Ximian Security Updates
+Sender: updates-admin@ximian.com
+Errors-To: updates-admin@ximian.com
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Announcements about updates to the Ximian GNOME distribution.
+    <updates.ximian.com>
+X-Beenthere: updates@ximian.com
+
+The Ximian Security Team has been issuing advisories for security 
+problems in Ximian GNOME for some time now at this URL:
+
+http://support.ximian.com/s?&p_cat_lvl1=12
+
+Starting today we will begin to also email security advisories to
+this list (updates@ximian.com) to raise the awareness of potential 
+problems.
+
+The Ximian Security Team
+
+
+_______________________________________________
+updates maillist  -  updates@ximian.com
+http://lists.ximian.com/mailman/listinfo/updates
+Please DO NOT reply to this list!  Use bugs@helixcode.com or hello@helixcode.com instead.
+
+

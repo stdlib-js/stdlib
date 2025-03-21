@@ -1,0 +1,101 @@
+From razor-users-admin@lists.sourceforge.net  Fri Aug 23 11:06:52 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BEC6344161
+	for <jm@localhost>; Fri, 23 Aug 2002 06:04:46 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 23 Aug 2002 11:04:46 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7N2N7Z05763 for <jm-razor@jmason.org>; Fri, 23 Aug 2002 03:23:08 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17i3yZ-0001kI-00; Thu,
+    22 Aug 2002 19:15:03 -0700
+Received: from med-core07.med.wayne.edu ([146.9.19.23]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17i3xv-00078P-00 for <razor-users@lists.sourceforge.net>; Thu,
+    22 Aug 2002 19:14:23 -0700
+Content-Class: urn:content-classes:message
+MIME-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"
+X-Mimeole: Produced By Microsoft Exchange V6.0.6249.0
+Subject: RE: [Razor-users] honor is not in csl
+Message-Id: <D79A56AD131896448D0860DEE07CBE1F3BABD6@med-core07.med.wayne.edu>
+X-MS-Has-Attach:
+X-MS-Tnef-Correlator:
+Thread-Topic: [Razor-users] honor is not in csl
+Thread-Index: AcJKJ21KJv3jzfLET8CZTYqNyhijJwAIy+hA
+From: "Rose, Bobby" <brose@med.wayne.edu>
+To: <mail@vipul.net>, <razor-users@example.sourceforge.net>
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Thu, 22 Aug 2002 22:14:13 -0400
+Date: Thu, 22 Aug 2002 22:14:13 -0400
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g7N2N7Z05763
+
+I know that I did this during the week that all the catalogue's were
+hokey but after that I changed it back to discovery.  So I can see why
+people are using honor.
+
+-----Original Message-----
+From: Vipul Ved Prakash [mailto:mail@vipul.net] 
+Sent: Thursday, August 22, 2002 5:55 PM
+To: razor-users@example.sourceforge.net
+Subject: [Razor-users] honor is not in csl
+
+
+Folks, 
+
+Some of you seem to have hardcoded honor as the default catalogue
+server. There are three catalogue only servers running now, and honor is
+acting as a nomination only server. Tonight we will be completely
+turning off catalogue support on honor, so if you are specifying honor
+with the -rs option, please take it out and let the agents discover a
+closeby catalogue server.
+
+cheers,
+vipul.
+
+
+-- 
+
+Vipul Ved Prakash          |   "The future is here, it's just not 
+Software Design Artist     |    widely distributed."
+http://vipul.net/          |              -- William Gibson
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old cell
+phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+

@@ -1,0 +1,30 @@
+
+{{alias}}( str )
+    Tests whether a string contains only hexadecimal digits.
+
+    The function does not recognize `x` (as in the standard `0x` prefix).
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a string contains only hexadecimal digits.
+
+    Examples
+    --------
+    > var bool = {{alias}}( '0123456789abcdefABCDEF' )
+    true
+    > bool = {{alias}}( '0xffffff' )
+    false
+    > bool = {{alias}}( 'x' )
+    false
+    > bool = {{alias}}( '' )
+    false
+
+    See Also
+    --------
+

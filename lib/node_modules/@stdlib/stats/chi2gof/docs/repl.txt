@@ -1,0 +1,133 @@
+
+{{alias}}( x, y[, ...args][, options] )
+    Performs a chi-square goodness-of-fit test.
+
+    A chi-square goodness-of-fit test is computed for the null hypothesis that
+    the values of `x` come from the discrete probability distribution specified
+    by `y`.
+
+    The second argument can either be expected frequencies, population
+    probabilities summing to one, or a discrete probability distribution name to
+    test against.
+
+    When providing a discrete probability distribution name, distribution
+    parameters *must* be supplied as additional arguments.
+
+    The function returns an object containing the test statistic, p-value, and
+    decision.
+
+    By default, the p-value is computed using a chi-square distribution with
+    `k-1` degrees of freedom, where `k` is the length of `x`.
+
+    If provided distribution arguments are estimated (e.g., via maximum
+    likelihood estimation), the degrees of freedom should be corrected. Set the
+    `ddof` option to use `k-1-n` degrees of freedom, where `n` is the degrees of
+    freedom adjustment.
+
+    The chi-square approximation may be incorrect if the observed or expected
+    frequencies in each category are too small. Common practice is to require
+    frequencies greater than five.
+
+    Instead of relying on chi-square approximation to calculate the p-value, one
+    can use Monte Carlo simulation. When the `simulate` option is `true`, the
+    simulation is performed by re-sampling from the discrete probability
+    distribution specified by `y`.
+
+    Parameters
+    ----------
+    x: ndarray|Array<number>|TypedArray
+        Observation frequencies.
+
+    y: ndarray|Array<number>|TypedArray|string
+        Expected frequencies, population probabilities, or a discrete
+        probability distribution name.
+
+    args: ...number (optional)
+        Distribution parameters. Distribution parameters will be passed to a
+        probability mass function (PMF) as arguments.
+
+    options: Object (optional)
+        Options.
+
+    options.alpha: number (optional)
+        Significance level of the hypothesis test. Must be on the interval
+        [0,1]. Default: 0.05.
+
+    options.ddof: number (optional)
+        Delta degrees of freedom adjustment. Default: 0.
+
+    options.simulate: boolean (optional)
+        Boolean indicating whether to calculate p-values by Monte Carlo
+        simulation. The simulation is performed by re-sampling from the discrete
+        distribution specified by `y`. Default: false.
+
+    options.iterations: number (optional)
+        Number of Monte Carlo iterations. Default: 500.
+
+    Returns
+    -------
+    out: Object
+        Test results object.
+
+    out.alpha: number
+        Significance level.
+
+    out.rejected: boolean
+        Test decision.
+
+    out.pValue: number
+        Test p-value.
+
+    out.statistic: number
+        Test statistic.
+
+    out.df: number|null
+        Degrees of freedom.
+
+    out.method: string
+        Test name.
+
+    out.toString: Function
+        Serializes results as formatted output.
+
+    out.toJSON: Function
+        Serializes results as JSON.
+
+    Examples
+    --------
+    // Provide expected probabilities...
+    > var x = [ 89, 37, 30, 28, 2 ];
+    > var p = [ 0.40, 0.20, 0.20, 0.15, 0.05 ];
+    > var out = {{alias}}( x, p );
+    > var o = out.toJSON()
+    { 'pValue': ~0.0406, 'statistic': ~9.9901, ... }
+    > out.toString()
+
+    // Set significance level...
+    > var opts = { 'alpha': 0.01 };
+    > out = {{alias}}( x, p, opts );
+    > out.toString()
+
+    // Calculate the test p-value via Monte Carlo simulation...
+    > x = [ 89, 37, 30, 28, 2 ];
+    > p = [ 0.40, 0.20, 0.20, 0.15, 0.05 ];
+    > opts = { 'simulate': true, 'iterations': 1000 };
+    > out = {{alias}}( x, p, opts );
+    > out.toString()
+
+    // Verify that data comes from Poisson distribution...
+    > var lambda = 3.0;
+    > var rpois = {{alias:@stdlib/random/base/poisson}}.factory( lambda );
+    > var len = 400;
+    > x = [];
+    > for ( var i = 0; i < len; i++ ) { x.push( rpois() ); };
+
+    // Generate a frequency table...
+    > var freqs = new {{alias:@stdlib/array/int32}}( len );
+    > for ( i = 0; i < len; i++ ) { freqs[ x[ i ] ] += 1; };
+    > out = {{alias}}( freqs, 'poisson', lambda );
+    > out.toString()
+
+    See Also
+    --------
+

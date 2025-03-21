@@ -1,0 +1,12 @@
+
+{{alias}}
+    Natural logarithm of the mathematical constant `π`.
+
+    Examples
+    --------
+    > {{alias}}
+    1.1447298858494002
+
+    See Also
+    --------
+

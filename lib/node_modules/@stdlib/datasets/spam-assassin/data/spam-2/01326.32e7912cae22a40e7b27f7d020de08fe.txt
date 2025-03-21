@@ -1,0 +1,741 @@
+From fork-admin@xent.com  Wed Aug  7 04:33:41 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 201FC440CD
+	for <jm@localhost>; Tue,  6 Aug 2002 23:33:37 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 07 Aug 2002 04:33:37 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g773TUk07889 for <jm@jmason.org>;
+    Wed, 7 Aug 2002 04:29:37 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 848AE294099; Tue,  6 Aug 2002 20:26:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mailface.roving.com (mailface.roving.com [63.251.135.75])
+    by xent.com (Postfix) with ESMTP id 707C8294098 for <fork@xent.com>;
+    Tue,  6 Aug 2002 20:25:55 -0700 (PDT)
+Received: from tracking2 (tracking2.roving.com [10.20.40.142]) by
+    mailface.roving.com (Postfix) with ESMTP id AB18E3409A for <fork@xent.com>;
+    Tue,  6 Aug 2002 23:24:00 -0400 (EDT)
+Message-Id: <1245954529.1028690797672.JavaMail.wasadmin@tracking2>
+From: PHIL SWANN <swann@TVPredictions.com>
+Reply-To: swann@TVPredictions.com
+To: fork@spamassassin.taint.org
+Subject: Special Report! TiVo: Now or Never?
+MIME-Version: 1.0
+X-Roving-Queued: 20020806 23:26.37657
+X-Mailer: Roving Constant Contact 5.0.Patch146.P121_Trellix_07_26_02
+    (http://www.constantcontact.com)
+X-Roving-Id: 1011005088243
+X-Return-Path-Hint: ESC1011005088243_1011005006660@in.roving.com
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue,  6 Aug 2002 23:24:00 -0400 (EDT)
+Content-Type: multipart/alternative; boundary="----=_Part_1210763_-1358544416.1028690797657"
+
+------=_Part_1210763_-1358544416.1028690797657
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: 7bit
+
+TVPredictions.com Newsletter (August 7, 2002)
+The #1 Newsletter on the Future of TV
+
+Hi Everyone,
+
+First of all, I want to welcome those<br>
+subscribers who are getting this newsletter<br>
+for the first time. Here you will find <br>
+hard-hitting commentary and analysis<br>
+on issues related to the future of television.<br>
+Whether it's Interactive TV, the battle between<br>
+the cable news networks, the latest in <br>
+the Emmy race, or the federal government's<br>
+fight to promote HDTV, TV Predictions will <br>
+give you the scoop -- before it actually <br>
+occurs. And, as long-time subscribers<br>
+will tell you, we pull no punches. <br>
+<br>
+(FYI -- TVPredictions.com, based in Los <br>
+Angeles, is owned and managed by Phillip Swann,<br>
+author of "TV dot Com: The Future of <br>
+Interactive Television." He has been <br>
+quoted as an expert on TV issues in publications<br>
+such as The Hollywood Reporter, Variety and <br>
+Electronic Media.) <br>
+<br>
+Now, in this issue, we offer an all-new edition of...<br>
+the Interactive TV Power Rankings! Plus: Why TiVo<br>
+desperately needs to boost its sub numbers during<br>
+the next five months. And, the latest news on <br>
+the future of TV. <br>
+
+-------------
+IN THIS ISSUE
+-------------
+Interactive TV Power Rankings!
+TiVo: Now or Never?
+Breaking News
+Coming Attractions!
+
+
+
+||| =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=>>
+    Be a Star!
+||| =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=>>
+http://rs6.net/tn.jsp?t=tpysjsn6.e9iqjsn6.s8u5brn6&p=http%3A%2F%2Fwww.tvpredictions.com%2Fadvertising1.html
+By advertising today in <br>
+<b>TVPredictions'<br>
+weekly newsletter!</b><br>
+<br>
+Reach more than <br>
+<b>3,000 subscribers,</b><br>
+including TV's top<br>
+decision-makers. <br>
+<br>
+<b>Promoting</b> an Event?<br>
+<br>
+Selling a <b>New</b> Service?<br>
+<br>
+Looking for <b>Brand</b> Awareness?<br>
+<br>
+Well..advertise already!!<br>
+<br>
+Past advertisers include:<br>
+<br>
+<b>American Film Institute<br>
+The Carmel Group<br>
+ISeeTV<br>
+Iacta<br>
+Espial</b><br>
+<br>
+Learn how YOU can<br>
+reach our targeted<br>
+audience, by clicking below<br>
+or sending an e-mail to:<br>
+<br>
+<b>advertising@<br>
+TVPredictions.com</b> <br>
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Interactive TV Power Rankings!
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+http://rs6.net/tn.jsp?t=tpysjsn6.e9iqjsn6.pqhvuqn6&p=http%3A%2F%2Fwww.TVPredictions.com%2Frankings.html
+Every week, we publish the Interactive <br>
+TV Power Rankings. We rank the 10 companies<br>
+that are benefiting most from the deployment<br>
+of new TV technology. <br>
+<br>
+This week's highlights:<br>
+Will the FCC approve the Echostar-DIRECTV<br>
+merger?; why did Cox scale back its Video<br>
+on Demand plans?; why did Liberty Media buy<br>
+a cable company in the Netherlands?; and <br>
+who at NBC is smoking crack?<br>
+Find out in this all-new edition of...<br>
+The Interactive TV Power Rankings!<br>
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+TiVo: Now or Never?
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+http://rs6.net/tn.jsp?t=tpysjsn6.e9iqjsn6.wxb5wqn6&p=http%3A%2F%2Fwww.tvpredictions.com%2Fpredictions.html
+Ready for this?<br>
+<br>
+The next five months could determine whether<br> 
+TiVo, the Personal Video Recorder service,<br>
+ultimately survives as a business.<br>
+<br>
+TiVo, which launched five years ago, has less <br>
+than 500,000 subscribers. The company's stock<br>
+dipped below three this week. And network execs<br>
+are openly questioning whether the digital recorder,<br>
+which permits skipping commercials with a few <br>
+clicks of the remote, will destroy their advertising<br>
+models. There even have been hints that the <br>
+networks could support a move by the cable <br>
+industry to offer a PVR that does not permit<br>
+commercial skipping. And that PVR would not <br>
+be a TiVo. <br>
+<br>
+To its credit, TiVo has been remarkably successful <br>
+at building brand loyalty and awareness. TiVo <br>
+reports that 97 percent of its subscribers have<br>
+recommended the service to a friend. And when<br>
+people talk about PVRs, they say TiVo. (Just <br>
+like the way people say "Coke" when they talk<br>
+about soft drinks. )<br>
+<br>
+But Wall Street, the media and the industry <br>
+are all growing impatient. TiVo needs to start<br>
+putting some big numbers on the board -- <br>
+and it needs to do it this holiday season. If <br>
+it doesn't, stock analysts who have supported TiVo <br>
+until now will run for the hills. That will push<br>
+the company's stock price down even further. And<br>
+if that happens, TiVo could have just two choices:<br>
+Sell the company under duress or wait until its <br>
+funding dries up. <br>
+<br>
+Consequently, I predict that TiVo will launch <br>
+an intensive marketing blitz over the next <br>
+five months, right through the holiday season.<br>
+The blitz will include a sharp increase in <br>
+retail distribution, TV advertising and PR <br>
+efforts. The company needs to show Wall <br>
+Street -- and the industry -- that it will be <br>
+the brand leader in the PVR category. And it<br>
+needs to show that it can generate<br>
+mass consumer demand. <br>
+<br>
+How does TiVo demonstrate that?<br>
+<br>
+Anything short of 750,000 subs at year's end<br>
+will have people questioning whether TiVo has<br>
+the right stuff. Cable execs, who are watching<br>
+TiVo closely, might decide that adding the <br>
+service is not such a great selling point <br>
+after all. And Echostar, which currently does<br>
+not have an agreement with TiVo, may decide<br>
+to stay with its unbranded PVR service after <br>
+its merger with DIRECTV is approved in D.C. <br>
+(TiVo currently has a partnership with DIRECTV,<br>
+but it's unclear what will happen to the deal if <br>
+the merger is approved.) <br>
+<br>
+So there is much at stake -- and it's not extreme<br>
+to say that TiVo's ultimate future could be decided<br>
+in the next several months. <br>
+<br>
+Will it succeed? I predict that TiVo will achieve<br>
+a partial success. The company will boost its <br>
+subscriber numbers and it will maintain its claim<br>
+as the #1 PVR service. However, in time, I <br>
+also predict it will decide to sell the company<br>
+to a large media outfit, such as Sony or perhaps<br>
+even Liberty Media. This would give TiVo the <br>
+necessary funding and industry connections<br>
+for long-term growth and survival.<br>
+<br>
+To see more predictions on the future of TV, <br>
+click below! <br>
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Breaking News
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+http://rs6.net/tn.jsp?t=tpysjsn6.e9iqjsn6.rqhvuqn6&p=http%3A%2F%2Fwww.tvpredictions.com
+Did you know that...<br>
+<br>
+* Cox Cable has decided to slow down its <br>
+roll-out of Video on Demand?<br>
+<br>
+* Consumers have no idea what HDTV is <br>
+all about, according to a new study?<br>
+<br>
+* One top network exec says viewers may <br>
+soon have to pay for off-air, free TV? <br>
+<br>
+* According to the Associated Press, <br>
+the cable news networks may be spreading fear<br>
+in our culture?<br>
+<br>
+* Las Vegas says West Wing's Martin Sheen<br>
+is a shoo-in for a Best Actor Emmy? <br>
+<br>
+These are just some of the many stories now <br>
+available for reading at TVPredictions.com <br>
+You can also read our prediction on CNN and<br>
+Larry King, our expose of Forrester Research<br>
+and Josh Bernoff, and perhaps our most <br>
+provocative story, "Sex and the Interactive <br>
+TV." <br>
+<br>
+Click below to get the latest on the future of <br>
+TV! <br>
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Coming Attractions!
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+http://rs6.net/tn.jsp?t=tpysjsn6.e9iqjsn6.rqhvuqn6&p=http%3A%2F%2Fwww.tvpredictions.com
+The TVPredictions.com newsletter is published<br>
+every Friday. Coming in future issues:<br>
+<br>
+* Donahue: Will He Survive the Cable News War?<br>
+<br>
+* What's Wrong -- and Right -- With Interactive<br>
+TV? <br>
+<br>
+* Why HDTV Could Change Hollywood Forever<br>
+<br>
+* Who Will Win the Emmy? An Exclusive Forecast.<br>
+<br>
+And check in daily at TVPredictions.com for more<br>
+coverage of issues related to the future of TV. <br>
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+
+
+------------------------------------------------
+email:  swann@TVPredictions.com
+voice:  310-314-0603
+web: http://www.tvpredictions.com
+------------------------------------------------
+
+This email has been sent to  at your 
+request, by TVPredictions.com.
+
+Visit our Subscription Center to edit your interests or unsubscribe.
+http://ccprod.roving.com/roving/d.jsp?p=oo&m=995762919359&ea=fork@xent.com
+
+View our privacy policy: http://ccprod.roving.com/roving/CCPrivacyPolicy.jsp
+
+Powered by 
+Constant Contact(R)
+www.constantcontact.com
+------=_Part_1210763_-1358544416.1028690797657
+Content-Type: text/html; charset=iso-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+<!--=20
+
+
+
+HTML-FORMATTED MESSAGE BELOW
+
+The remainder of this message is in HTML format for use by email
+clients that can properly display it.   If you are seeing this message,
+it is because your email client cannot properly display HTML.  You can
+ignore the HTML code you will see below.
+
+
+
+
+
+
+
+
+
+ -->
+<head>
+=09<title>Special Report! TiVo: Now or Never?</title>
+</head>
+<body bgcolor=3D"#ffffff" leftmargin=3D"0" topmargin=3D"0" marginwidth=3D"0=
+" marginheight=3D"0">
+<IMG SRC=3D"http://rs6.net/on.jsp?t=3D1011005088243.1011005006660&o=3Dhttp:=
+//ccprod.roving.com/roving/images/p1x1.gif" WIDTH=3D1 HEIGHT=3D1 alt=3D" ">
+<!--  Do NOT delete previous line if you want to get statistics on the numb=
+er of opened emails  -->
+<center>
+<table border=3D"1" bordercolor=3D"#003366" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"610">
+<tr>
+=09<td>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+<!-- Begin Logo Include -->
+
+<!-- START CONDITIONAL HTML HIDING=20
+=20
+<tr>
+=09<td colspan=3D"2" align=3D"center"><img src=3D"" border=3D"0" alt=3D"TVP=
+redictions.com"></td>
+</tr>
+=20
+ END OF CONDITIONAL HTML HIDING -->=20
+=20
+<!-- End Logo Include -->
+<tr>
+=09<td colspan=3D"2" align=3D"center" valign=3D"middle" bgcolor=3D"#668ABE"=
+ height=3D"60"><font face=3D"Georgia,'Times New Roman',Times,serif" size=3D=
+"6" color=3D"#ffffff">TVPredictions.com Newsletter</font></td>
+</tr>
+<tr>
+=09<td align=3D"left">=A0=A0<font size=3D"2" face=3D"Verdana,Arial,Helvetic=
+a" color=3D"#003366"><b>The #1 Newsletter on the Future of TV</b></font></t=
+d>
+=09<td align=3D"right"><font size=3D"2" face=3D"Verdana,Arial,Helvetica" co=
+lor=3D"#003366"><b>August 7, 2002</b></font>=A0=A0</td>
+</tr>
+</table>
+<p>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+<tr>
+=09<td width=3D"190" bgcolor=3D"#EEEEDF" align=3D"center" valign=3D"top">
+=09<!-- Begin Table of Contents Header Table -->
+=09=09<table border=3D"1" bordercolor=3D"#003366" cellpadding=3D"2" cellspa=
+cing=3D"0" width=3D"190">
+=09=09<tr>
+=09=09=09<td bgcolor=3D"#ffffff" align=3D"center" valign=3D"top">
+=09=09=09<font face=3D"Georgia,'Times New Roman',Times,serif" size=3D"3" co=
+lor=3D"#003366">
+=09=09=09<b>in this issue</b>
+=09=09=09</font>
+=09=09=09</td>
+=09=09</tr>
+=09=09</table>
+=09<!-- End Table of Contents Header Table -->
+=09
+=09<!-- Begin Article Headlines Table -->
+=09=09<table border=3D"0" cellpadding=3D"2" cellspacing=3D"0" width=3D"190"=
+>
+=09=09<tr>
+=09=09=09<td bgcolor=3D"#DBE8F4" align=3D"center" valign=3D"top">
+=09=09=09<font size=3D"2" face=3D"Verdana,Arial,Helvetica" color=3D"#003366=
+"><b>
+=09=09=09<br><a href=3D"#article1">Interactive TV Power Rankings!</a>
+=09=09=09<p><a href=3D"#article2">TiVo: Now or Never?</a>
+=09=09=09<p><a href=3D"#article3">Breaking News</a>
+=09=09=09<p><a href=3D"#article4">Coming Attractions!</a>
+=09=09=09<p><a href=3D"#article5"></a>
+=09=09    <br><br></font>
+=09=09    </td>
+=09=09</tr>
+=09=09<tr>
+=09=09=09<td bgcolor=3D"#003366" align=3D"center" valign=3D"top"><br></td>
+=09=09</tr>
+=09=09</table>
+    <!-- End Article Headlines Table -->
+
+    <!-- PROMOTION START -->
+=09=09<font size=3D"2" face=3D"Verdana,Arial,Helvetica" color=3D"#003366">
+=09=09<br><b>Be a Star!</b><br>
+=09=09<!-- Promotion Image -->
+=09=09<br>
+=09=09By advertising today in <br>
+<b>TVPredictions'<br>
+weekly newsletter!</b><br>
+<br>
+Reach more than <br>
+<b>3,000 subscribers,</b><br>
+including TV's top<br>
+decision-makers. <br>
+<br>
+<b>Promoting</b> an Event?<br>
+<br>
+Selling a <b>New</b> Service?<br>
+<br>
+Looking for <b>Brand</b> Awareness?<br>
+<br>
+Well..advertise already!!<br>
+<br>
+Past advertisers include:<br>
+<br>
+<b>American Film Institute<br>
+The Carmel Group<br>
+ISeeTV<br>
+Iacta<br>
+Espial</b><br>
+<br>
+Learn how YOU can<br>
+reach our targeted<br>
+audience, by clicking below<br>
+or sending an e-mail to:<br>
+<br>
+<b>advertising@<br>
+TVPredictions.com</b> <br>
+        <br><br><a href=3D"http://rs6.net/tn.jsp?t=3Dtpysjsn6.e9iqjsn6.s8u5=
+brn6&p=3Dhttp%3A%2F%2Fwww.tvpredictions.com%2Fadvertising1.html">Be a Star!=
+</A><br><br>
+=09=09</font>
+    <!-- PROMOTION END -->
+=09</td>
+=09<td rowspan=3D"2" width=3D"420" valign=3D"top">
+=09<!-- Begin Greeting and Intro paragraph -->
+=09=09<table border=3D"0" cellpadding=3D"2" cellspacing=3D"0" width=3D"100%=
+">
+=09=09<tr>
+=09=09=09<td bgcolor=3D"#ffffff" valign=3D"top">=A0=A0</td>
+=09=09=09<td bgcolor=3D"#ffffff" valign=3D"top">
+            <font size=3D"2" face=3D"Verdana,Arial,Helvetica">
+            <b>Hi Everyone,</b>
+=09=09=09<br>First of all, I want to welcome those<br>
+subscribers who are getting this newsletter<br>
+for the first time. Here you will find <br>
+hard-hitting commentary and analysis<br>
+on issues related to the future of television.<br>
+Whether it's Interactive TV, the battle between<br>
+the cable news networks, the latest in <br>
+the Emmy race, or the federal government's<br>
+fight to promote HDTV, TV Predictions will <br>
+give you the scoop -- before it actually <br>
+occurs. And, as long-time subscribers<br>
+will tell you, we pull no punches. <br>
+<br>
+(FYI -- TVPredictions.com, based in Los <br>
+Angeles, is owned and managed by Phillip Swann,<br>
+author of "TV dot Com: The Future of <br>
+Interactive Television." He has been <br>
+quoted as an expert on TV issues in publications<br>
+such as The Hollywood Reporter, Variety and <br>
+Electronic Media.) <br>
+<br>
+Now, in this issue, we offer an all-new edition of...<br>
+the Interactive TV Power Rankings! Plus: Why TiVo<br>
+desperately needs to boost its sub numbers during<br>
+the next five months. And, the latest news on <br>
+the future of TV. <br>
+=09=09=09<br><br></font>
+=09=09=09</td>
+=09=09</tr>
+=09=09<tr>
+=09=09=09<td bgcolor=3D"#003366" colspan=3D"2" height=3D"3" valign=3D"botto=
+m"> </td>
+=09=09</tr>
+=09=09<tr>
+=09=09=09<td bgcolor=3D"#ffffff" colspan=3D"2" height=3D"2" valign=3D"botto=
+m"> </td>
+=09=09</tr>
+=09=09<tr>
+=09=09=09<td bgcolor=3D"#003366" colspan=3D"2" height=3D"2" valign=3D"botto=
+m"> </td>
+=09=09</tr>
+=09=09</table>
+=09<!-- End Greeting and Intro paragraph -->
+=09
+=09<!-- Begin Article Table -->
+=09=09<table border=3D"0" cellpadding=3D"4" cellspacing=3D"0" width=3D"100%=
+">
+         <tr><td bgcolor=3D"#ffffff" colspan=3D"2" valign=3D"top"><a name=
+=3D"article1"></a><font size=3D"2" face=3D"Verdana,Arial,Helvetica" color=
+=3D"#003366"><li><b>Interactive TV Power Rankings!</b></font></td></tr><tr>=
+<td bgcolor=3D"#ffffff" valign=3D"top">=A0=A0</td><td bgcolor=3D"#ffffff" v=
+align=3D"top"><font size=3D"2" face=3D"Verdana,Arial,Helvetica">Every week,=
+ we publish the Interactive <br>
+TV Power Rankings. We rank the 10 companies<br>
+that are benefiting most from the deployment<br>
+of new TV technology. <br>
+<br>
+This week's highlights:<br>
+Will the FCC approve the Echostar-DIRECTV<br>
+merger?; why did Cox scale back its Video<br>
+on Demand plans?; why did Liberty Media buy<br>
+a cable company in the Netherlands?; and <br>
+who at NBC is smoking crack?<br>
+Find out in this all-new edition of...<br>
+The Interactive TV Power Rankings!<br><br><p><a href=3D"http://rs6.net/tn.j=
+sp?t=3Dtpysjsn6.e9iqjsn6.pqhvuqn6&p=3Dhttp%3A%2F%2Fwww.TVPredictions.com%2F=
+rankings.html">Interactive TV Power Rankings!</A><p></font></td></tr><tr><t=
+d bgcolor=3D"#003366" colspan=3D"2" valign=3D"bottom"> </td></tr>=20
+         <tr><td bgcolor=3D"#DBE8F4" colspan=3D"2" valign=3D"top"><a name=
+=3D"article2"></a><font size=3D"2" face=3D"Verdana,Arial,Helvetica" color=
+=3D"#003366"><li><b>TiVo: Now or Never?</b></font></td></tr><tr><td bgcolor=
+=3D"#DBE8F4" valign=3D"top">=A0=A0</td><td bgcolor=3D"#DBE8F4" valign=3D"to=
+p"><font size=3D"2" face=3D"Verdana,Arial,Helvetica">Ready for this?<br>
+<br>
+The next five months could determine whether<br>=20
+TiVo, the Personal Video Recorder service,<br>
+ultimately survives as a business.<br>
+<br>
+TiVo, which launched five years ago, has less <br>
+than 500,000 subscribers. The company's stock<br>
+dipped below three this week. And network execs<br>
+are openly questioning whether the digital recorder,<br>
+which permits skipping commercials with a few <br>
+clicks of the remote, will destroy their advertising<br>
+models. There even have been hints that the <br>
+networks could support a move by the cable <br>
+industry to offer a PVR that does not permit<br>
+commercial skipping. And that PVR would not <br>
+be a TiVo. <br>
+<br>
+To its credit, TiVo has been remarkably successful <br>
+at building brand loyalty and awareness. TiVo <br>
+reports that 97 percent of its subscribers have<br>
+recommended the service to a friend. And when<br>
+people talk about PVRs, they say TiVo. (Just <br>
+like the way people say "Coke" when they talk<br>
+about soft drinks. )<br>
+<br>
+But Wall Street, the media and the industry <br>
+are all growing impatient. TiVo needs to start<br>
+putting some big numbers on the board -- <br>
+and it needs to do it this holiday season. If <br>
+it doesn't, stock analysts who have supported TiVo <br>
+until now will run for the hills. That will push<br>
+the company's stock price down even further. And<br>
+if that happens, TiVo could have just two choices:<br>
+Sell the company under duress or wait until its <br>
+funding dries up. <br>
+<br>
+Consequently, I predict that TiVo will launch <br>
+an intensive marketing blitz over the next <br>
+five months, right through the holiday season.<br>
+The blitz will include a sharp increase in <br>
+retail distribution, TV advertising and PR <br>
+efforts. The company needs to show Wall <br>
+Street -- and the industry -- that it will be <br>
+the brand leader in the PVR category. And it<br>
+needs to show that it can generate<br>
+mass consumer demand. <br>
+<br>
+How does TiVo demonstrate that?<br>
+<br>
+Anything short of 750,000 subs at year's end<br>
+will have people questioning whether TiVo has<br>
+the right stuff. Cable execs, who are watching<br>
+TiVo closely, might decide that adding the <br>
+service is not such a great selling point <br>
+after all. And Echostar, which currently does<br>
+not have an agreement with TiVo, may decide<br>
+to stay with its unbranded PVR service after <br>
+its merger with DIRECTV is approved in D.C. <br>
+(TiVo currently has a partnership with DIRECTV,<br>
+but it's unclear what will happen to the deal if <br>
+the merger is approved.) <br>
+<br>
+So there is much at stake -- and it's not extreme<br>
+to say that TiVo's ultimate future could be decided<br>
+in the next several months. <br>
+<br>
+Will it succeed? I predict that TiVo will achieve<br>
+a partial success. The company will boost its <br>
+subscriber numbers and it will maintain its claim<br>
+as the #1 PVR service. However, in time, I <br>
+also predict it will decide to sell the company<br>
+to a large media outfit, such as Sony or perhaps<br>
+even Liberty Media. This would give TiVo the <br>
+necessary funding and industry connections<br>
+for long-term growth and survival.<br>
+<br>
+To see more predictions on the future of TV, <br>
+click below! <br><br><p><a href=3D"http://rs6.net/tn.jsp?t=3Dtpysjsn6.e9iqj=
+sn6.wxb5wqn6&p=3Dhttp%3A%2F%2Fwww.tvpredictions.com%2Fpredictions.html">TiV=
+o: Now or Never?</A><p></font></td></tr><tr><td bgcolor=3D"#003366" colspan=
+=3D"2" valign=3D"bottom"> </td></tr>=20
+=09=09 <tr><td bgcolor=3D"#FFFFFF" colspan=3D"2" valign=3D"top"><a name=3D"=
+article3"></a><font size=3D"2" face=3D"Verdana,Arial,Helvetica" color=3D"#0=
+03366"><li><b>Breaking News</b></font></td></tr><tr><td bgcolor=3D"#FFFFFF"=
+ valign=3D"top">=A0=A0</td><td bgcolor=3D"#FFFFFF" valign=3D"top"><font siz=
+e=3D"2" face=3D"Verdana,Arial,Helvetica">Did you know that...<br>
+<br>
+* Cox Cable has decided to slow down its <br>
+roll-out of Video on Demand?<br>
+<br>
+* Consumers have no idea what HDTV is <br>
+all about, according to a new study?<br>
+<br>
+* One top network exec says viewers may <br>
+soon have to pay for off-air, free TV? <br>
+<br>
+* According to the Associated Press, <br>
+the cable news networks may be spreading fear<br>
+in our culture?<br>
+<br>
+* Las Vegas says West Wing's Martin Sheen<br>
+is a shoo-in for a Best Actor Emmy? <br>
+<br>
+These are just some of the many stories now <br>
+available for reading at TVPredictions.com <br>
+You can also read our prediction on CNN and<br>
+Larry King, our expose of Forrester Research<br>
+and Josh Bernoff, and perhaps our most <br>
+provocative story, "Sex and the Interactive <br>
+TV." <br>
+<br>
+Click below to get the latest on the future of <br>
+TV! <br><br><p><a href=3D"http://rs6.net/tn.jsp?t=3Dtpysjsn6.e9iqjsn6.rqhvu=
+qn6&p=3Dhttp%3A%2F%2Fwww.tvpredictions.com">Breaking News</A><p></font></td=
+></tr><tr><td bgcolor=3D"#003366" colspan=3D"2" valign=3D"bottom"> </td></t=
+r>=20
+=09=09 <tr><td bgcolor=3D"#DBE8F4" colspan=3D"2" valign=3D"top"><a name=3D"=
+article4"></a><font size=3D"2" face=3D"Verdana,Arial,Helvetica" color=3D"#0=
+03366"><li><b>Coming Attractions!</b></font></td></tr><tr><td bgcolor=3D"#D=
+BE8F4" valign=3D"top">=A0=A0</td><td bgcolor=3D"#DBE8F4" valign=3D"top"><fo=
+nt size=3D"2" face=3D"Verdana,Arial,Helvetica">The TVPredictions.com newsle=
+tter is published<br>
+every Friday. Coming in future issues:<br>
+<br>
+* Donahue: Will He Survive the Cable News War?<br>
+<br>
+* What's Wrong -- and Right -- With Interactive<br>
+TV? <br>
+<br>
+* Why HDTV Could Change Hollywood Forever<br>
+<br>
+* Who Will Win the Emmy? An Exclusive Forecast.<br>
+<br>
+And check in daily at TVPredictions.com for more<br>
+coverage of issues related to the future of TV. <br><br><p><a href=3D"http:=
+//rs6.net/tn.jsp?t=3Dtpysjsn6.e9iqjsn6.rqhvuqn6&p=3Dhttp%3A%2F%2Fwww.tvpred=
+ictions.com">Coming Attractions!</A><p></font></td></tr><tr><td bgcolor=3D"=
+#003366" colspan=3D"2" valign=3D"bottom"> </td></tr>=20
+       =20
+<!-- START CONDITIONAL HTML HIDING=20
+ <tr><td bgcolor=3D"#ffffff" colspan=3D"2" valign=3D"top"><a name=3D"articl=
+e5"></a><font size=3D"2" face=3D"Verdana,Arial,Helvetica" color=3D"#003366"=
+><li><b></b></font></td></tr><tr><td bgcolor=3D"#ffffff" valign=3D"top">=A0=
+=A0</td><td bgcolor=3D"#ffffff" valign=3D"top"><font size=3D"2" face=3D"Ver=
+dana,Arial,Helvetica"><br><p></font></td></tr><tr><td bgcolor=3D"#ffffff" c=
+olspan=3D"2" valign=3D"bottom"> </td></tr>=20
+ END OF CONDITIONAL HTML HIDING -->=20
+=20
+        </table>
+=09<!-- End Article Table -->
+=09
+=09</td>
+</tr>
+<tr>
+=09<td bgcolor=3D"EEEEDF" valign=3D"bottom" align=3D"center">
+=09
+=09<!-- Begin Email and Site URL Links -->
+=09<hr color=3D"#003366" size=3D"1" width=3D"100%">
+=09<font size=3D"1" face=3D"Verdana,Arial,Helvetica" color=3D"#003366">
+=09<b><a href=3D"mailto:swann@TVPredictions.com"><font size=3D"1" face=3D"V=
+erdana,Arial,Helvetica" color=3D"#003366">email us</font></a> =A0::=A0 <a h=
+ref=3D"http://www.tvpredictions.com"><font size=3D"1" color=3D"#003366">vis=
+it our site</font></a></b>
+=09<hr color=3D"#003366" size=3D"1" width=3D"100%">
+    <b>phone: 310-314-0603</b>
+    <hr color=3D"#003366" size=3D"1" width=3D"100%">
+=09<!-- End Email and Site URL Links -->
+=09
+=09<!--  You are required by your Constant Contact user agreement to
+=09    provide the opt-out link shown below as by the property 'OptOut'. --=
+>
+    <font size=3D"1" face=3D"Verdana,Arial,Helvetica">
+    This email was sent to <br>, <br>at your request, <br>by <a href=3D"htt=
+p://rs6.net/tn.jsp?t=3Dtpysjsn6.e9iqjsn6.rqhvuqn6&p=3Dhttp%3A%2F%2Fwww.tvpr=
+edictions.com">TVPredictions.com</a>. =20
+    <p>Visit our Subscription Center <br>to <a href=3D"http://ccprod.roving=
+.com/roving/d.jsp?p=3Doo&m=3D995762919359&ea=3Dfork@xent.com">edit</a> your=
+ interests or <a href=3D"http://ccprod.roving.com/roving/d.jsp?p=3Doo&m=3D9=
+95762919359&ea=3Dfork@xent.com">unsubscribe</a>.
+    <p>View our <a href=3D"http://ccprod.roving.com/roving/CCPrivacyPolicy.=
+jsp">privacy policy</a>. =20
+    <p>Powered by<br><a href=3D"http://www.constantcontact.com/index.jsp?cc=
+=3Dccnws" target=3D"_blank"><img src=3D"http://ccprod.roving.com/roving/ima=
+ges/cc-logo-color-sm.gif" border=3D"0" alt=3D"Constant Contact"></a>
+    </font>
+    <br><br>
+=09</td>
+</tr>
+</table>
+
+=09</td>
+</tr>
+</table>
+</center>
+</body>
+</HTML>
+------=_Part_1210763_-1358544416.1028690797657--
+
+http://xent.com/mailman/listinfo/fork
+
+

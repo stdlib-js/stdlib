@@ -1,0 +1,32 @@
+
+{{alias}}( [dtype] )
+    Returns the single letter character abbreviation for a specified underlying
+    array data type.
+
+    If not provided a data type value, the function returns an object mapping
+    data type strings to single letter character abbreviations.
+
+    If provided an unknown/unsupported data type, the function returns `null`.
+
+    Parameters
+    ----------
+    dtype: any (optional)
+        Data type value.
+
+    Returns
+    -------
+    ch: Object|string|null
+        Single letter character abbreviation(s).
+
+    Examples
+    --------
+    > var ch = {{alias}}( 'float64' )
+    'd'
+    > ch = {{alias}}( 'foobar' )
+    null
+    > var obj = {{alias}}()
+    {...}
+
+    See Also
+    --------
+

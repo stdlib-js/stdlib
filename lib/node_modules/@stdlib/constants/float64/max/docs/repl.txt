@@ -1,0 +1,12 @@
+
+{{alias}}
+    Maximum double-precision floating-point number.
+
+    Examples
+    --------
+    > {{alias}}
+    1.7976931348623157e+308
+
+    See Also
+    --------
+

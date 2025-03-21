@@ -1,0 +1,76 @@
+From ilug-admin@linux.ie  Tue Aug 13 10:29:32 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0327E4412F
+	for <jm@localhost>; Tue, 13 Aug 2002 05:22:02 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:22:02 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7D7lCb21870 for
+    <jm-ilug@jmason.org>; Tue, 13 Aug 2002 08:47:12 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id IAA31172; Tue, 13 Aug 2002 08:46:44 +0100
+Received: from homer.jinny.ie ([193.120.171.3]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id IAA31150 for <ilug@linux.ie>; Tue,
+    13 Aug 2002 08:46:38 +0100
+Received: from jlooney.jinny.ie (fw [193.120.171.2]) by homer.jinny.ie
+    (8.9.3/8.11.2) with ESMTP id IAA04605 for <ilug@linux.ie>; Tue,
+    13 Aug 2002 08:46:08 +0100
+Received: (from john@localhost) by jlooney.jinny.ie (8.11.6/8.11.6) id
+    g7D7kMM04946 for ilug@linux.ie; Tue, 13 Aug 2002 08:46:22 +0100
+X-Authentication-Warning: jlooney.jinny.ie: john set sender to
+    jlooney@jinny.ie using -f
+Date: Tue, 13 Aug 2002 08:46:22 +0100
+From: "John P. Looney" <valen@tuatha.org>
+To: ilug@linux.ie
+Subject: Re: [ILUG] RH7.3 on Cobalt - the saga continues
+Message-Id: <20020813074622.GE1858@jinny.ie>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: ilug@linux.ie
+References: <20020812164951.GB1858@jinny.ie> <1029218068.4889.9.camel@aholm>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <1029218068.4889.9.camel@aholm>
+User-Agent: Mutt/1.4i
+X-Os: Red Hat Linux 7.3/Linux 2.4.18-3
+X-Url: http://www.redbrick.dcu.ie/~valen
+X-Gnupg-Publickey: http://www.redbrick.dcu.ie/~valen/public.asc
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Tue, Aug 13, 2002 at 06:54:28AM +0100, Anders Holm mentioned:
+> let me guess, you haven't tried the boot parameter root=/dev/hda2 if you
+> are using lilo??
+
+ Ah, you see - cobalt's don't use lilo. They have an openboot-like prom
+that looks in an ext2 partition in /dev/hda1 for a file called
+/boot/vmlinux.gz - nothing else.
+
+ The only way I think you can set parameters is with a "set_params" line.
+
+ However, when I run 
+    set_params root=/dev/hda2
+ and then run:
+    bfd /boot/vmlinux.gz
+
+ It boots the old kernel, I assume from the prom. It seems to do this, if
+something goes wrong - no error, just boots the default kernel.
+
+ BTW, 'bfd' means 'boot from disk'.
+
+Kate
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

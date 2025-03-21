@@ -1,0 +1,67 @@
+From rpm-list-admin@freshrpms.net  Mon Aug 12 11:00:56 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 28A7944120
+	for <jm@localhost>; Mon, 12 Aug 2002 05:54:12 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:54:12 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7B9iVb29319 for
+    <jm-rpm@jmason.org>; Sun, 11 Aug 2002 10:44:31 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7B9c0J27309; Sun, 11 Aug 2002 11:38:01
+    +0200
+Received: from bennew01.localdomain (pD900DDF2.dip.t-dialin.net
+    [217.0.221.242]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g7B9brJ25638 for <rpm-list@freshrpms.net>; Sun, 11 Aug 2002 11:37:54 +0200
+Received: from bennew01.localdomain (bennew01.localdomain [192.168.3.1])
+    by bennew01.localdomain (8.11.6/linuxconf) with SMTP id g7B9bed14628;
+    Sun, 11 Aug 2002 11:37:41 +0200
+From: Matthias Haase <matthias_haase@bennewitz.com>
+To: rpm-zzzlist@freshrpms.net
+Cc: Manfred Usselmann <usselmann.m@icg-online.de>
+Subject: Re: gentoo 0.11.31 relased...
+Message-Id: <20020811113740.12aa33f2.matthias_haase@bennewitz.com>
+In-Reply-To: <20020811111136.28aab804.matthias_haase@bennewitz.com>
+References: <20020811111136.28aab804.matthias_haase@bennewitz.com>
+X-Operating-System: customized linux smp kernel 2.4* on i686
+X-Mailer: Sylpheed
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Sun, 11 Aug 2002 11:37:40 +0200
+Date: Sun, 11 Aug 2002 11:37:40 +0200
+
+..it's a major release and supports now SGI's FAM technology
+(see http://www.oss.sgi.com/projects/fam/), meaning gentoo will
+now be aware of changes made to the directories it's viewing.
+
+More details see emils ChangeLog on 
+https://sourceforge.net/project/shownotes.php?release_id=103492
+
+--
+regards from Germany
+                   Matthias
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

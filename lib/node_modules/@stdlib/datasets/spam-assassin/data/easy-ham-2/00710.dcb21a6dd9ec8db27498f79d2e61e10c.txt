@@ -1,0 +1,60 @@
+From fork-admin@xent.com  Tue Jul 23 22:33:46 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 49BE6440CC
+	for <jm@localhost>; Tue, 23 Jul 2002 17:33:46 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 23 Jul 2002 22:33:46 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6NLWk429693 for <jm@jmason.org>;
+    Tue, 23 Jul 2002 22:32:46 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 3D9332940A9; Tue, 23 Jul 2002 14:22:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from venus.phpwebhosting.com (venus.phpwebhosting.com
+    [64.29.16.27]) by xent.com (Postfix) with SMTP id 066D02940A5 for
+    <fork@xent.com>; Tue, 23 Jul 2002 14:21:29 -0700 (PDT)
+Received: (qmail 17406 invoked by uid 508); 23 Jul 2002 21:30:39 -0000
+Received: from unknown (HELO hydrogen.leitl.org) (217.80.40.47) by
+    venus.phpwebhosting.com with SMTP; 23 Jul 2002 21:30:39 -0000
+Received: from localhost (eugen@localhost) by hydrogen.leitl.org
+    (8.11.6/8.11.6) with ESMTP id g6NLUXP00546; Tue, 23 Jul 2002 23:30:33
+    +0200
+X-Authentication-Warning: hydrogen.leitl.org: eugen owned process doing -bs
+From: Eugen Leitl <eugen@leitl.org>
+To: "Joseph S. Barrera III" <joe@barrera.org>
+Cc: Lucas Gonze <lgonze@panix.com>, FoRK <fork@spamassassin.taint.org>
+Subject: Re: spam maps
+In-Reply-To: <3D3D8D09.1040107@barrera.org>
+Message-Id: <Pine.LNX.4.33.0207232329410.438-100000@hydrogen.leitl.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 23 Jul 2002 23:30:33 +0200 (CEST)
+
+On Tue, 23 Jul 2002, Joseph S. Barrera III wrote:
+
+> BTW, guys, I'm *kidding*! I'm actually in a pretty good mood right now.
+> I'm not actually a very hateful person, and I certainly can't think of
+> anyone right now I hate, and certainly not anyone on this list!
+
+You cannot fool us. We know you inside out.
+
+P.S. We hate you, too.
+
+http://xent.com/mailman/listinfo/fork
+
+

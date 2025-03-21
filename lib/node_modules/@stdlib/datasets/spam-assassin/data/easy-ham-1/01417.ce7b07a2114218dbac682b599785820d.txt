@@ -1,0 +1,55 @@
+Return-Path: nas@python.ca
+Delivery-Date: Thu Sep  5 23:49:23 2002
+From: nas@python.ca (Neil Schemenauer)
+Date: Thu, 5 Sep 2002 15:49:23 -0700
+Subject: [Spambayes] all but one testing
+In-Reply-To: <BIEJKCLHCIOIHAGOKOLHEEGCDKAA.tim.one@comcast.net>
+References: <20020905190420.GB19726@glacier.arctrix.com>
+	<BIEJKCLHCIOIHAGOKOLHEEGCDKAA.tim.one@comcast.net>
+Message-ID: <20020905224923.GA20480@glacier.arctrix.com>
+
+Tim Peters wrote:
+> I've run no experiments on training set size yet, and won't hazard a guess
+> as to how much is enough.  I'm nearly certain that the 4000h+2750s I've been
+> using is way more than enough, though.
+
+Okay, I believe you.
+
+> Each call to learn() and to unlearn() computes a new probability for every
+> word in the database.  There's an official way to avoid that in the first
+> two loops, e.g.
+> 
+>     for msg in spam:
+>         gb.learn(msg, True, False)
+>     gb.update_probabilities()
+
+I did that.  It's still really slow when you have thousands of messages.
+
+> In each of the last two loops, the total # of ham and total # of spam in the
+> "learned" set is invariant across loop trips, and you *could* break into the
+> abstraction to exploit that:  the only probabilities that actually change
+> across those loop trips are those associated with the words in msg.  Then
+> the runtime for each trip would be proportional to the # of words in the msg
+> rather than the number of words in the database.
+
+I hadn't tried that.  I figured it was better to find out if "all but
+one" testing had any appreciable value.  It looks like it doesn't so
+I'll forget about it.
+
+> Another area for potentially fruitful study:  it's clear that the
+> highest-value indicators usually appear "early" in msgs, and for spam
+> there's an actual reason for that:  advertising has to strive to get your
+> attention early.  So, for example, if we only bothered to tokenize the first
+> 90% of a msg, would results get worse?
+
+Spammers could exploit this including a large MIME part at the beginning
+of the message.  In pratice that would probably work fine.  
+
+> sometimes an on-topic message starts well but then rambles.
+
+Never.  I remember the time when I was ten years old and went down to
+the fishing hole with my buddies.  This guy named Gordon had a really
+huge head.  Wait, maybe that was Joe.  Well, no matter.  As I recall, it
+was a hot day and everyone was tired...Human Growth Hormone...girl with
+huge breasts...blah blah blah......
+

@@ -1,0 +1,369 @@
+Return-Path: <bounce-lgmac-2534372@sprocket.lockergnome.com>
+Received: from lockergnome.com (sprocket.lockergnome.com [130.94.96.247])
+	by dogma.slashnull.org (8.11.6/8.11.6) with SMTP id g6AIF0J27858
+	for <qqqqqqqqqq-lg@spamassassin.taint.org>; Wed, 10 Jul 2002 19:15:01 +0100
+X-Mailer: ListManager Web Interface
+Date: Wed, 10 Jul 2002 10:57:10 -0500
+Subject: [Lockergnome Apple Core]  Skip Content
+To: qqqqqqqqqq-lg@spamassassin.taint.org
+From: Lockergnome Apple Core <subscriptions@lockergnome.com>
+List-Unsubscribe: <mailto:leave-lgmac-2534372C@sprocket.lockergnome.com>
+List-Subscribe: <mailto:subscribe-lgmac@sprocket.lockergnome.com>
+List-Owner: <mailto:owner-lgmac@sprocket.lockergnome.com>
+X-URL: <http://www.lockergnome.com/>
+X-List-Host: Lockergnome <http://www.lockergnome.com/>
+Reply-To: leave-lgmac-2534372C@sprocket.lockergnome.com
+Sender: bounce-lgmac-2534372@sprocket.lockergnome.com
+Message-Id: <LISTMANAGERSQL-2534372-1671039-2002.07.10-10.59.04--qqqqqqqqqq-lg#spamassassin.taint.org@sprocket.lockergnome.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=us-ascii
+
+<html><head><!--
+
+
+      CLICK HERE to read this newsletter on the Web for FREE:
+
+      <a href="http://www.lockergnome.com/issues/applecore/20020709.html">
+      http://www.lockergnome.com/issues/applecore/20020709.html
+      </a>
+
+      To unsubscribe, simply reply to this e-mail message.
+
+      To resubscribe, visit our site: http://www.lockergnome.com/
+
+      Don't worry about anything else below this paragraph.
+      It's for those with HTML e-mail clients. Just go to
+      the above listed web address to view this issue
+      perfectly in your web browser. Thanks again! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+<!--
+ body      { BACKGROUND-IMAGE: url(http://images.lockergnome.com/images/issue/top-right.gif); color: #14367A }
+ a:link    { COLOR: #2E64DC; TEXT-DECORATION: underline; font-weight: normal }
+ a:visited { COLOR: #000000; TEXT-DECORATION: underline; font-weight: normal }
+ a:active  { COLOR: GRAY; text-decoration: none }
+ a:hover   { color: GRAY; TEXT-DECORATION: none }
+ p.title   { BACKGROUND: #2E64DC; BORDER-BOTTOM: #14367A 4px solid; BORDER-LEFT: #94B2EE 4px solid; BORDER-RIGHT: #14367A 4px solid; BORDER-TOP: #94B2EE 4px solid; COLOR: #FFFFFF; FONT-FAMILY: Comic Sans MS, Trebuchet MS, Helvetica, Arial; FONT-SIZE: 14pt; FONT-WEIGHT: normal }
+ p.sidebar { BACKGROUND: #94B2EE; BORDER-BOTTOM: #2E64DC 3px solid; BORDER-LEFT: #FFFFFF 3px solid; BORDER-RIGHT: #2E64DC 3px solid; BORDER-TOP: #FFFFFF 3px solid; COLOR: #14367A; FONT-FAMILY: Comic Sans MS, Trebuchet MS, Helvetica, Arial; FONT-SIZE: 10pt; FONT-WEIGHT: bold; TEXT-ALIGN: center }
+ .url      { font-size: 8pt; font-family: Verdana, Tahoma, Arial }
+-->
+</style><title>20020709 Lockergnome Apple Core</title></head>
+
+<body   MARGINHEIGHT="0" TOPMARGIN="0" BOTTOMMARGIN="0" bgcolor="#FFFFFF"   style="BACKGROUND-POSITION: right top; BACKGROUND-REPEAT: no-repeat" MARGINWIDTH="0" LEFTMARGIN="0" rightmargin="0">
+
+<!-- background="http://images.lockergnome.com/images/bg.head.gray.gif" bgcolor="#C0C0C0" left width="610" background="http://www.lockergnome.com/images/issue/top-right-2.gif" -->
+
+ <table width="100%" border="0" cellspacing="0" cellpadding="7" align="CENTER" valign="MIDDLE">
+  <tr><td background="http://images.lockergnome.com/images/issue/top-left.gif" nowrap valign="middle" align="center" colspan="2">
+
+ <!-- TOP BANNER AD -->
+ <center>
+ <a href="http://www.lockergnome.com/"><img src="http://images.lockergnome.com/images/gnomedaily.gif" width="50" height="60" hspace="5" alt="Lockergnome" border="0"></a>
+<a target="_blank" href="http://www.gnomedex.com/"><img src="http://www.lockergnome.com/images/ads/gnomedex2002banner.gif" width="468" height="60" alt="See You at Gnomedex 2002!" border="0"></a>
+ <br>
+ </center>
+ <!-- TOP BANNER AD -->
+
+ <!--#include virtual="/include/banner.txt" -->
+
+ </td></tr>
+
+  <tr><td valign="top" bgcolor="#FFFFFF"><font color="#14367A" face="Verdana, Tahoma, Arial" style="font-size: 10pt" size="2">
+
+<!-- NEWS -->
+<table bgcolor="#FFCC99" border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><p class="title">
+&nbsp; 07.09.2002 GnomeREPORT </p></td></tr></table><p>
+<p class="sidebar"><table cellpadding="10" cellspacing="0" border="0"><tr><td>
+<font style="font-size: 10pt" face="Verdana, Tahoma, Arial" size="2">
+<b>Content Management Is Key:</b> Need a reason your boss should be sending you to Gnomedex? Some of the leading experts on content management solutions (those things we affectionately call blogs) will be sharing the future of blogging and how you can adapt it to both the way you do business and the way you communicate in general. Join Evan Williams and Doc Searls as they share pearls of wisdom on blogging, Linux and other open source applications that are changing our lives. If that's not enough incentive, remind the boss that THE Internet security guru, Steve Gibson, will be sharing his wisdom as well. 
+<a href="http://www.gnomedex.com">Register for Gnomedex today</a>!   
+</font></td></tr></table></p>
+
+I've finally done it! Lockrgnome's Top 50 
+<a href="http://www.gnometomes.com/tome/cat_macintosh.html">Mac OS X Tips</a> is in publication 
+and available for purchase at GnomeTomes.com. Less than half the tips have 
+appeared in the Apple Core newsletter already, so purchasing them means 
+getting mostly brand new content. This represents the first thing I've 
+written that people might actually pay to read, so if we sell one copy, 
+I'll be ecstatic. And hopefully, any of you who check out the tips will 
+find them useful. I know that figuring out how to do each of the 50 things 
+on the list has improved my personal OS X experience.
+<p>
+Although this newsletter started out with Chris, Randy, and I writing 
+sections of the newsletter, time constraints have limited the 
+contributions of the other two guys. This does not mean either of them is 
+truly less involved, it just means I'm doing more writing. Both Chris and 
+Randy regularly send me links to cool Mac stuff they find, much of which 
+will ultimately end up in upcoming issues. Since the writing will be 
+primarily mine, I've opted to eliminate the "Review by" links at the bottom 
+of each article. Unless otherwise noted, you can safely assume I wrote it. 
+If you need to send me an e-mail, the E-mail The Editors Link in the 
+sidebar will reach me, as well as putting your message in front of Chris 
+and Randy.
+<p>
+I've been doing some exploring of AppleScript over the past several months 
+and believe I'm finally confidant enough in writing scripts that I'm going 
+to add a section on scripting to the newsletter. I'm curious to know what 
+your level of experience with scripting is, because I can either start with 
+some really basic stuff, or skip the basics and dive into meatier scripting 
+topics. Either way, I'm open to some 
+<a href="mailto:jake@lockergnome.com?subject=AppleScript">AppleScript suggestions</a>.
+
+
+
+<p align="right">See You in <a target="_blank" href="http://www.gnomedex.com/">August</a>,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><font style="font-size: 23pt" face="Jake Ludington, Script" size="5">Jake Ludington&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></P>
+
+<p class="url">For Mac Outlook users:<br>
+OS X Tips - http://www.gnometomes.com/tome/cat_macintosh.html</p>
+
+<!-- DOWNLOADS -->
+<p><br><table bgcolor="#FFCC99" border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><p class="title">&nbsp;GnomeDOWNLOADS</p></td></tr></table><p>
+<b>Sherlock Plugins v2.2 [600k] Mac OS 9/OSX FREE</b><p>
+
+<a class="url" href="http://www.searchstandard.com/">http://www.searchstandard.com/</a><p>
+
+
+While doing some research for my top 50 tips, I discovered that turning 
+off some of Sherlock's extras, like multi-language indexing, in the 
+preferences will speed things up considerably, particularly for local 
+machine searches. This renewed my interest in finding ways to add-on 
+search capabilities to the bundled sleuth, resulting in my discovery of 
+SearchStandard.com. This bundled collection of search plug-ins makes it 
+possible to look for almost anything using Sherlock. Their Web site 
+won't wow you, but SearchStandard's free plugins most certainly make 
+finding things online, including searches on your favorite Mac sites, 
+that much easier.
+
+
+
+<!-- GnomeNETWORK -->
+<p><br><table bgcolor="#FFCC99" border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><p class="title">&nbsp;GnomeNETWORK</p></td></tr></table><p>
+<b>Xnet v1.0.6 [216k] OSX $48</b><p>
+
+<a class="url" href="http://bitcom.ch/products-xnet-e.html">http://bitcom.ch/products-xnet-e.html</a><p>
+
+Dealing with servers that offer mission critical services, like 
+intranet access, e-mail, or Web serving, means dealing with those 
+services failing from time to time. Don't be left in the dark 
+when one of your services go down, let Xnet keep you informed. 
+The unregistered version of the product lets you verify http, 
+ping, smtp, and ftp service availability, with many more service 
+verifications included in the pro version. Xnet runs on your 
+local machine, verifying remote service availability and sending 
+you a message when those services go down. The interface allows 
+for user-defined services, with alert features for both an e-mail 
+account (mine alerts are going to my cell phone) and locally via 
+a sound from your machine.
+
+
+
+<!--  GnomeTERMINAL -->
+<p><br><table bgcolor="#FFCC99" border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><p class="title">&nbsp;GnomeTERMINAL</p></td></tr></table><p>
+
+For OS X installs with multiple users, there may come a time when you 
+need to change ownership of a particular file. This is particularly 
+useful in situations where one user created a file, but an entirely 
+different user is the only one who will ever make future decisions 
+relating to that file, like whether to keep it or throw it in the 
+Trash. chown is the Terminal command designed to handle this. From 
+the command line type:
+<p>
+sudo chown username filename
+<p>
+You'll of course want to substitute the username of the new owner for 
+username. The name of the file receiving a change of ownership will 
+replace filename.
+
+
+
+
+<p class="sidebar"><table cellpadding="10" cellspacing="0" border="0"><tr><td>
+<font style="font-size: 10pt" face="Verdana, Tahoma, Arial" size="2">
+<b>50 LINUX TIPS:</b> From the mind behind the Penguin Shell come two 
+more eBooks in the GnomeTome series. Whether you are a Linux newbie 
+or command line guru, you'll want these tips as part of your 
+information arsenal. 
+<a href="http://www.gnometomes.com/tome/cat_linux.html">Get your copy</a> 
+of Tony's Top 50 PenguinTWEAKS or Top 50 PenguinCORE tips today!    
+</font></td></tr></table></p>
+
+<!-- FAVORITE -->
+<p><br><table bgcolor="#FFCC99" border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><p class="title">&nbsp;GnomeFAVORITE</p></td></tr></table><p>
+<b>Susan Kare</b><p>
+
+<a class="url" href="http://www.kare.com">http://www.kare.com</a><p>
+
+As we move further into the future of Apple's Mac OS evolution, it 
+remains important to understand where things evolved from. Susan 
+Kare designed all the original icons for the Mac OS, way back in 
+1983. In fact, that smiling Mac that appears as OS X boots is her 
+creation. Check out her collection of UI artwork, from both Windows 
+and Mac operating systems. Also available from Kare.com are Kare 
+designed icon apparel and collections of fonts as designed by Susan.
+
+<!-- GnomeTIP -->
+<p><br><table bgcolor="#FFCC99" border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><p class="title">&nbsp;GnomeTIP</p></td></tr></table><p>
+
+Show Info gives you access to change the application associated with a 
+particular file type, rename files, and reassign permissions. One of 
+the best features of Show Info is it's ability to store "comments" 
+related to a file or application. This can be a great place to store 
+information on recently made changes to a file, information from others 
+who've looked at a file, or in the case of applications, serial numbers 
+and other pertinent data you may need when dealing with tech support.
+
+
+
+<!-- ADMINISTRIVIA -->
+<p><br><table cellpadding="0" cellspacing="0" border="0"><tr><td><p class="sidebar">
+<table cellpadding="7" cellspacing="0" border="0"><tr><td>
+<font style="font-size: 8pt" face="Verdana, Tahoma, Arial" size="1">
+<a href="http://www.lockergnome.com/issues/applecore/20020709.html">http://www.lockergnome.com/issues/applecore/20020709.html</a>
+<p>Your subscribed e-mail address is: [qqqqqqqqqq-lg@spamassassin.taint.org] - To unsubscribe or change your delivery address, please visit the <A HREF="http://www.lockergnome.com/changesub.html">subscription management</A> page. For further information, please refer to the GnomeCREDITS in the sidebar.
+</font></td></tr></table>
+</p></td></tr></table>
+
+<!--#include virtual="/include/subscription2.txt" -->
+
+</font></td>
+<td background="http://images.lockergnome.com/images/issue/sidebar.gif" VALIGN="top" align="left" width="145"><font color="#14367A" face="Verdana, Tahoma, Arial" style="font-size: 8pt" size="1">
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td><p class="sidebar">LOOK OVER HERE</p></td></tr></table><br>
+
+&nbsp;<a href="http://www.gnometomes.com/">Download Tip eBooks</a><br>
+<p>
+&nbsp;<a href="http://windowsdaily.lockergnome.com/">Latest Windows Daily</a><br>
+&nbsp;<a href="http://digitalmedia.lockergnome.com/">Latest Digital Media</a><br>
+&nbsp;<a href="http://techspecialist.lockergnome.com/">Latest Tech Specialist</a><br>
+&nbsp;<a href="http://penguinshell.lockergnome.com/">Latest Penguin Shell</a><br>
+&nbsp;<a href="http://applecore.lockergnome.com/">Latest Apple Core</a><br>
+&nbsp;<a href="http://webmasterweekly.lockergnome.com/">Latest Web Weekly</a><br>
+&nbsp;<a href="http://updates.lockergnome.com/">Latest Bits &amp; Bytes</a><br>
+&nbsp;<A HREF="http://www.gnomeradio.com/">Latest Audio Show</A><BR>
+<p>
+&nbsp;<A HREF="http://lockergnome.pricegrabber.com/">Low Price Search</A><br>
+&nbsp;<A HREF="http://www.gnomedex.com/">Our Tech Conference</A><br>
+<p>
+&nbsp;<a target="_blank" href="http://www.gnometomes.com/tome/000628.html">Microsoft Office Tips</a><br>
+&nbsp;<a target="_blank" href="http://www.gnometomes.com/tome/000627.html">PC Productivity Tips</a><br>
+&nbsp;<a target="_blank" href="http://www.gnometomes.com/tome/000626.html">Cool Internet Tips</a><br>
+&nbsp;<a target="_blank" href="http://www.gnometomes.com/tome/000625.html">Windows 2000 Tips</a><br>
+&nbsp;<a target="_blank" href="http://www.gnometomes.com/tome/000623.html">Windows XP Tips</a><br>
+&nbsp;<a target="_blank" HREF="http://www.gnometomes.com/tome/001106.html">Top 50 Fun Sites</a><br>
+&nbsp;<a target="_blank" HREF="http://www.gnometomes.com/tome/001104.html">Must-Know Tech Terms</a><br>
+&nbsp;<a target="_blank" HREF="http://www.gnometomes.com/tome/001105.html">Top 50 Useful Sites</a><br>
+&nbsp;<a target="_blank" HREF="http://www.gnometomes.com/tome/001099.html">Top 75 Tech Sites</a><br>
+&nbsp;<a target="_blank" HREF="http://www.gnometomes.com/tome/001629.html">Top 50 PenguinCORE</a><br>
+&nbsp;<a target="_blank" HREF="http://www.gnometomes.com/tome/001630.html">Top 50 PenguinTWEAKS</a><br>
+<p>
+
+<center>
+<a href="http://www.gnomedex.com/" target="_blank"><img alt="See You in August!" src="http://chris.pirillo.com/archives/Gnomedex_Banner_going.gif" width="120" height="60" border="0"></a>
+</center>
+
+<p>
+&nbsp;<a href="http://www.lockergnome.com/recommend.html">Tell a Friend About Us!</a><br>
+&nbsp;<a href="http://www.lockergnome.com/submit.html">Suggest a Feature</a><br>
+&nbsp;<a href="http://www.lockergnome.com/advertise.html">Advertise With Us</a><br>
+&nbsp;<A HREF="http://www.lockergnome.com/jobs.html">High-Tech Job Search</A><br>
+&nbsp;<a href="http://www.lockergnome.com/chat.html">Chat With Gnomies</a><br>
+&nbsp;<a href="http://www.lockergnome.com/webcam.html">Watch The Webcams</a><br>
+&nbsp;<a href="https://www.sandhills.com/secure/smartcomputing/cpufreetrial.asp?source=cpu235">Computer Power User</a><br>
+<p>
+&nbsp;<a href="http://www.lockergnome.com/issues/">Read Past Issues</a><br>
+&nbsp;<a href="http://www.xteq.com/">Download X-Setup</a><br>
+&nbsp;<a href="http://www.lockergnome.com/about.html">About Lockergnome</a><br>
+&nbsp;<a href="http://www.lockergnome.com/privacy.html">Our Privacy Policy</a><br>
+&nbsp;<a href="http://www.lockergnome.com/options.html">View More Options</a><br>
+&nbsp;<a href="http://www.lockergnome.com/lockergnome.xml">Our XML / RSS Feed</a><br>
+&nbsp;<a href="http://www.lockergnome.com/options.html#syndicate">Syndicate Our Tips</a><br>
+&nbsp;<a href="http://www.lockergnome.com/images/lockerlink.gif">Link To Lockergnome</a><br>
+&nbsp;<A HREF="http://lockergnome.pricegrabber.com/search_getprod.php/isbn=0966103254/">Get Chris's Book</A><br>
+<p>
+&nbsp;<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#102;&#101;&#101;&#100;&#98;&#97;&#99;&#107;&#64;&#108;&#111;&#99;&#107;&#101;&#114;&#103;&#110;&#111;&#109;&#101;&#46;&#99;&#111;&#109;?subject=Lockergnome Site Feedback">General Feedback</a><br>
+&nbsp;<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#102;&#101;&#101;&#100;&#98;&#97;&#99;&#107;&#64;&#108;&#111;&#99;&#107;&#101;&#114;&#103;&#110;&#111;&#109;&#101;&#46;&#99;&#111;&#109;?subject=Lockergnome Apple Core Comment">E-mail the Editors</a><br>
+
+
+
+<p>&nbsp;<p><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td><p class="sidebar">GNOMESPECIALS</p></td></tr></table><br>
+&nbsp;<a target="_blank" title="Share your team/project contacts, calendars, tasks, etc. in MS Oulook 2002, without a server!" href="http://outlook.4team.biz/?fr=gnome">Manage Your Workgroup</a><br>
+&nbsp;<a target="_blank" title="Software for filling in paper forms on your computer instead of a typewriter" href="http://www.colorpilot.com/typewriter.html">Form Pilot</a><br>
+&nbsp;<a target="_blank" title="It's both fun and functional! Hear the time, set alarms, style your taskbar clock, sync your PC time, and more. Try Say the Time free for
+30 days." href="http://www.provenio.ws/saythetime/">Say the Time 5.0</a><br>
+&nbsp;<a target="_blank" title="Convert MP3, WAV, AVI, JPG, GIF, and PNG to the SWF format for no buffer streaming" href="http://www.gfx2swf.com/gnome-special/">Boomer - Stream Now</a><br>
+&nbsp;<a target="_blank" title="Creating Web/CD catalogs with HyperPublish is really a snap! Not just an editor but a quick, powerful all-in-one environment for creating stunning catalogs, CDs and Web sites!" href="http://www.hyperpublish.com/create_a_catalog_000018.htm">Create Web/CD catalog</a><br>
+&nbsp;<a target="_blank" title="Create your Web site in minutes with this easy-to-use visual tool!" href="http://www.easywebeditor.com/create_web_page_000004.htm">Easy Web Editor</a><br>
+&nbsp;<a target="_blank" title="Capture TEXT seen in folder trees, file lists, database reports, dialog boxes, menus, status lines, including areas that you could not highlight with your mouse. (Chris cannot live without it!;)" href="http://www.structurise.com/kleptomania">Kleptomania</a><br>
+&nbsp;<a target="_blank" title="Organize all your mp3 collection in seconds! You can rename mp3s quickly and easily, write tag information in batch, from file names or import it from cddb. Get your free trial now!" href="http://www.softpointer.com/tr_2.htm">Tag&amp;Rename</a><br>
+&nbsp;<a target="_blank" title="You will enjoy countless hours of fun with Pretty Good Solitaire!  Play 500 solitaire card games, from classic games like Klondike, FreeCell, and Spider, to original games found nowhere else.  Enjoy lush graphics, large easy-to-read cards, statistics, and quests, a unique new way to play for points." href="http://www.goodsol.com/lockergnome.html">Pretty Good Solitaire</a><br>
+&nbsp;<a target="_blank" title="Choosing color combinations for the web is a careful balance between a scheme designed to draw attention; while being respectful of established color-harmony principles.  ColorCombo's four panels scroll, allowing side-by-side color comparisons.  Also text on background checker, 4096 color array, + more. FREE." href="http://www.colorcombo.com">Visualize Color Combos</a><br>
+&nbsp;<a target="_blank" title="FirstStop WebSearch(TM) Deluxe Edition, a FREE trial version of this incredibly fast, award winning, customizable multi-search engine that has been described as the FASTEST no-nonsense meta search for the net. Now, Gnomies can save 50% when they register a copy of FirstStop WebSearch!" href="http://www.Firststopwebsearch.com/lockergnomeoffer.html">FirstStop WebSearch</a><br>
+&nbsp;<a target="_blank" title="Ecobuilder is the ultimate web application that allows you to get your portal, online community, intranet, extranet or any web site project online by saving time, money and manpower. Gnomies receive $400 off the cost of the software." href="http://www.ecobuilder.com/lockergnome.cfm">Ecobuilder</a><br>
+&nbsp;<a target="_blank" title="Software for organizing your personal book collection. Add books quickly - no typing required! Group, filter, sort and print your database. Click for free trial version." href="http://www.collectorz.com/book?from=lockergnome">Book Collector</a><br>
+<p align="center"><a href="http://www.lockergnome.com/special.html"><B>Get Listed Here</B></a></p>
+Question: which group is 250,000+ strong and always looking for stuff to make their personal and professional lives run smoother? 
+
+<!--#include virtual="/include/subscribeside.txt" -->
+
+
+<p>&nbsp;<p><font style="font-size: 8pt" face="Verdana, Tahoma, Arial" size="1">
+<table align="center" border="0"><tr><td><a href="http://www.lockergnome.com/webcam.html">
+<img width="125" height="94" alt="Lockergnome Webcam Image" src="http://www.lockergnome.com/images/webcam/webcam32.jpg"></a></td></tr>
+<tr><td align="center"><font style="font-size: 7pt" size="1" face="Verdana, Tahoma, Arial">CLICK HERE TO ZOOM</font></td></tr></table>
+</font>
+
+<p>&nbsp;<p>
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td><p class="sidebar">LOOK IT UP</p></td></tr></table><br>
+<form method="post" action="http://www.lockergnome.com/cgi-bin/htsearch"><input type="hidden" name="method" value="and"><input type="hidden" name="format" value="long"><input type="hidden" name="sort" value="score"><input type="hidden" name="config" value="htdig"><input type="hidden" name="restrict" value=""><input type="hidden" name="exclude" value=""><input type="text" size="14" value=" Lockergnome" name="words"><input type="submit" class="Press" value="go"></form>
+<FORM method="get" action="http://www.amazon.com/exec/obidos/external-search"><INPUT type="text" name="keyword" size="14" value=" Amazon"><INPUT type="hidden" name="mode" value="blended"><INPUT type="hidden" name="tag" value="lockergnomedigit"><INPUT TYPE="submit" VALUE="go" class="Press" NAME="Go"></form>
+<form action="http://www.gnomejob.com/" method="POST"><input type="hidden" name="num_per_page" value="20"><input type="hidden" name="num_to_retrieve" value="500"><input type="hidden" name="iquery" value=""><input type="hidden" name="vlink_color" value="008080"><input type="hidden" name="link_color" value="990000"><input type="hidden" name="background_color" value="FFFFFF"><input type="hidden" name="text_color" value="000000"><input type="hidden" name="title_image" value="http://www.lockergnome.com/images/lgtopper.gif"><input type="hidden" name="site_url" value="http://www.lockergnome.com/"><input type="hidden" name="site_title" value="Lockergnome"><input type="hidden" name="title_text" value="Lockergnome"><input type="hidden" name="custom" value="1"><input value=" Jobs" type="TEXT" name="query" size="14"><input class="Press" type="SUBMIT" value="go"></form>
+<FORM method="get" action="http://lockergnome.pricegrabber.com/search_gen_top.php" target="_parent"><input type="hidden" name="topcat_search" value="1"><input value=" Hardware" size="14" type=text name=form_keyword><INPUT type="SUBMIT" value="go" class="Press" NAME="Go"></FORM>
+<FORM method="get" action="http://lockergnome.pricegrabber.com/search_gen_top.php" target="_parent"><input type="hidden" name="topcat_search" value="1"><input value=" Software" size="14" type=text name=form_keyword><INPUT type="SUBMIT" value="go" class="Press" NAME="Go"></FORM>
+
+<p>&nbsp;<p>
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td><p class="sidebar">BYTE ME NOW</p></td></tr></table><br>
+<font style="font-size: 8pt" face="Verdana, Tahoma, Arial" size="1">
+&copy;2002, Lockergnome LLC. ISSN: 1095-3965. All Rights Reserved. Please read our <a href="http://www.lockergnome.com/terms.html">Terms of Service</a>. Our Web site is hosted by <a href="http://www.digitaldaze.com/?lg">DigitalDaze</a>. Domain registered at <a href="http://www.dnscentral.com/?lg">DNS Central</a>.
+
+<!-- FUNNY COMMENT    -->
+
+
+
+
+</font>
+
+</font></td></tr></table>
+</body></html>
+
+
+

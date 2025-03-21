@@ -1,0 +1,56 @@
+From crackmice-admin@crackmice.com  Thu Aug 29 17:13:43 2002
+Return-Path: <crackmice-admin@crackmice.com>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B715843F99
+	for <zzzz@localhost>; Thu, 29 Aug 2002 12:13:43 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Thu, 29 Aug 2002 17:13:43 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7TG7DZ19542;
+    Thu, 29 Aug 2002 17:07:13 +0100
+Received: from mir.eWare.com (mail.eware.com [212.120.152.162]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7TG6IZ19504 for
+    <mice@crackmice.com>; Thu, 29 Aug 2002 17:06:18 +0100
+X-Mimeole: Produced By Microsoft Exchange V6.0.5762.3
+Content-Class: urn:content-classes:message
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Subject: people we know on the web
+Message-Id: <0FF9F9D21D89554C8FF8930FFD39BD03A3F587@mir.eWare.com>
+X-MS-Has-Attach: 
+X-MS-Tnef-Correlator: 
+Thread-Topic: What kind of celebrity are you? quiz
+Thread-Index: AcJPWriCN9BF8CjcT1CZSIoGcK21hQAG1WjQ
+From: "Gerry Carr" <Gerry.Carr@eWare.com>
+To: <mice@crackmice.com>
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g7TG6IZ19504
+Sender: crackmice-admin@crackmice.com
+Errors-To: crackmice-admin@crackmice.com
+X-Beenthere: crackmice@crackmice.com
+X-Mailman-Version: 2.0.10
+Precedence: bulk
+Reply-To: mice@crackmice.com
+List-Unsubscribe: <http://crackmice.com/mailman/listinfo/crackmice>,
+    <mailto:crackmice-request@crackmice.com?subject=unsubscribe>
+List-Id: http://crackmice.com/ <crackmice.crackmice.com>
+List-Post: <mailto:crackmice@crackmice.com>
+List-Help: <mailto:crackmice-request@crackmice.com?subject=help>
+List-Subscribe: <http://crackmice.com/mailman/listinfo/crackmice>,
+    <mailto:crackmice-request@crackmice.com?subject=subscribe>
+List-Archive: <http://crackmice.com/pipermail/crackmice/>
+Date: Thu, 29 Aug 2002 17:07:35 +0100
+
+http://www.bbc.co.uk/radio1/alt/nireland/ni_team.shtml	
+
+first of a very short series.
+
+gerry
+_______________________________________________
+Crackmice mailing list
+Crackmice@crackmice.com
+http://crackmice.com/mailman/listinfo/crackmice
+

@@ -1,0 +1,17 @@
+
+{{alias}}()
+    Returns a list of typed array data types.
+
+    Returns
+    -------
+    out: Array<string>
+        List of typed array data types.
+
+    Examples
+    --------
+    > var out = {{alias}}()
+    <Array>
+
+    See Also
+    --------
+

@@ -1,0 +1,146 @@
+From ilug-admin@linux.ie  Mon Aug 19 11:02:23 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9BDC944190
+	for <jm@localhost>; Mon, 19 Aug 2002 05:54:13 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:54:13 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7GKF9601957 for
+    <jm-ilug@jmason.org>; Fri, 16 Aug 2002 21:15:09 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id VAA18889; Fri, 16 Aug 2002 21:14:07 +0100
+Received: from orion.jtlnet.com ([209.115.42.142]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id VAA18844 for <ilug@linux.ie>; Fri,
+    16 Aug 2002 21:13:59 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [209.115.42.142] claimed
+    to be orion.jtlnet.com
+Received: from dialup-0542.dublin.iol.ie ([193.203.146.30] helo=nmtbmedia)
+    by orion.jtlnet.com with smtp (Exim 3.35 #1) id 17fnUi-0004yY-00 for
+    ilug@linux.ie; Fri, 16 Aug 2002 16:14:52 -0400
+From: "AJ McKee" <aj.mckee@nmtbmedia.com>
+To: <ilug@linux.ie>
+Subject: RE: [ILUG] ADSL, routers and firewalls
+Date: Fri, 16 Aug 2002 21:14:14 +0100
+Message-Id: <LAEAIGLCKFNPNHBDGGEGMEKJCEAA.aj.mckee@nmtbmedia.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2910.0)
+Importance: Normal
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+In-Reply-To: <55DA5264CE16D41186F600D0B74D6B0924728F@KBS01>
+X-Antiabuse: This header was added to track abuse, please include it with
+    any abuse report
+X-Antiabuse: Primary Hostname - orion.jtlnet.com
+X-Antiabuse: Original Domain - linux.ie
+X-Antiabuse: Originator/Caller UID/GID - [0 0] / [0 0]
+X-Antiabuse: Sender Address Domain - nmtbmedia.com
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Ok
+
+Well I am having fun with ADSL now at the moment. I had gotten the
+full package from eircom and elected to take the Zytel Prestige 645M
+(that M is very important) But alas I cannot get it to work even with
+another Major and popular graphical OS. So after almost 8 hours onto
+adsl support trying to conince them that they did actually supplu and
+support the 645M and not just the 643 and 645R its still not working.
+So, after all that I am going to try a poweredge to connect and if
+all else fails I will wait till Eircom send me out a replacement ( I
+am going to have to look for the Alcatel this time :-) But while I
+was doing my googleing I came acroos this
+
+http://www.roaringpenguin.com/pppoe/how-to-connect.txt
+http://www.roaringpenguin.com/pppoe/
+
+And they look very cool for the beginner. Also the is a cool article
+on www.linux.ie about USB and ADSL with PPPoE on Linux. ANyhow when I
+do get it working (either with the 645 MMMMM or something else) I
+will put up a howto but really the above is quite cool.
+
+Aj
+
+
+
+- ----------------------------------------
+AJ McKee
+NMTB media
+
+Phone: (Europe) +353 1 473 53 72
+       (North America) +1 206 339 4326
+
+Fax:   (Europe) +353 1 473 53 73
+       (North America) +1 206 339 4326
+
+Website: http://www.nmtbmedia.com
+- -----------------------------------------
+
+
+>-----Original Message-----
+>From: ilug-admin@linux.ie [mailto:ilug-admin@linux.ie]On Behalf Of
+>Brian O'Donoghue
+>Sent: 16 August 2002 17:42
+>To: 'ilug@linux.ie'
+>Subject: RE: [ILUG] ADSL, routers and firewalls
+>
+>
+>> To get the 3 computers talking to each other, you need a hub 
+>which you can
+>> pick up for a small amount of money.  The internal interface of 
+>the router
+>> (which may be a linux box) is connected to the hub, and the
+>> external interface is connected to the ADSL device.
+>
+>
+>Like this
+>
+>
+>[DSL Connection]--------[Alcatel modem]---[ehternet card1]-[Linux
+>box] 	
+>[         ]
+>				[Hub]-------------[Ethernet card2]-[
+>]
+>				|
+>				|
+>				|
+>			[Other machines on your lan]
+>The other machines on your lan reference the Linux box as their
+>'default gateway'... the Linux box runs nat, firewalling... dhcp(if
+>you want) and so on.
+>
+>-- 
+>Irish Linux Users' Group: ilug@linux.ie
+>http://www.linux.ie/mailman/listinfo/ilug for (un)subscription
+>information. List maintainer: listmaster@linux.ie
+>
+>
+
+-----BEGIN PGP SIGNATURE-----
+Version: PGPfreeware 6.5.8 for non-commercial use <http://www.pgp.com>
+Comment: PGP/GPG Keys located at http://www.nmtbmedia.com/keys/
+
+iQA/AwUBPV1dFIHmA/TOOP95EQL/kgCg8Ge94omOuirLYokN1UauZzApHEQAn0In
+6r/o13G+0YEgjlc/XDwQOUN1
+=yGuw
+-----END PGP SIGNATURE-----
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

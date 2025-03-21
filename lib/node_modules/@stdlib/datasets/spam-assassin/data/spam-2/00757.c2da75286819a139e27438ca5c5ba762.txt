@@ -1,0 +1,62 @@
+From ilug-admin@linux.ie  Fri Jul 19 01:52:24 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C95CA43F90
+	for <jm@localhost>; Thu, 18 Jul 2002 20:52:23 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 01:52:23 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6J0h3J10082 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 01:43:03 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id BAA11009; Fri, 19 Jul 2002 01:37:44 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from rs03.singnet.com.sg (rs03.singnet.com.sg [165.21.101.93])
+    by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id BAA10977 for
+    <ilug@linux.ie>; Fri, 19 Jul 2002 01:37:36 +0100
+From: clones4ruddog00@juno.com
+Received: from juno.com ([68.116.86.226]) by rs03.singnet.com.sg
+    (8.12.3/8.12.3) with SMTP id g6J0Whx1031740; Fri, 19 Jul 2002 08:37:28
+    +0800
+Message-Id: <00003e8651e0$00003ea0$00001bb4@juno.com>
+To: <iluesby@msn.com>
+Cc: <iluf@hotmail.com>, <ilug@linux.ie>, <ilufa@hotmail.com>,
+	<ilug-request@sgi.com>, <ilufya@hotmail.com>, <iluff@hotmail.com>,
+	<ilug@hotmail.com>, <ilufyou@hotmail.com>
+Date: Thu, 18 Jul 2002 17:37:33 -0700
+MIME-Version: 1.0
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+Subject: [ILUG] THE TRUTH OF INTERNET MARKETING--A REALISTIC WAY OF MARKETING
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+We offer some of the best bulk e-mail prices on the Internet. We do all 
+the mailing for you. 
+You just provide us with the ad! It's that simple!
+
+prices start at   $200.00 for 1-million e-mails sent. 
+our target list start at $400.00 for 1-million e-mails sent. 
+
+We give you a free mllion for ordering within 2 days.  I can also send 
+you the names on cd w/sending tools.  
+So thats us mailing +
+the names on CD with tools.
+
+209-656-9143
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

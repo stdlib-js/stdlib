@@ -1,0 +1,131 @@
+From mrhealth@btamail.net.cn  Tue Aug  6 12:52:17 2002
+Return-Path: <mrhealth@btamail.net.cn>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7D196441F0
+	for <jm@localhost>; Tue,  6 Aug 2002 07:18:05 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 12:18:05 +0100 (IST)
+Received: from mailout05.sul.t-online.com (mailout05.sul.t-online.com
+    [194.25.134.82]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g73J6mv23969 for <sales@sitescooper.cx>; Sat, 3 Aug 2002 20:06:48 +0100
+Received: from fwd03.sul.t-online.de by mailout05.sul.t-online.com with
+    smtp id 17b4CY-0000wf-05; Sat, 03 Aug 2002 21:04:34 +0200
+Received: from orion.bischops.de (320089800769-0001@[62.226.1.106]) by
+    fmrl03.sul.t-online.com with esmtp id 17b4DU-1k1kUpC; Sat, 3 Aug 2002
+    21:05:32 +0200
+Received: from 210.242.20.202 ([210.242.20.202]) by orion.bischops.de
+    (Lotus Domino Release 5.0.8) with SMTP id 2002080320494075:1288 ;
+    Sat, 3 Aug 2002 20:49:40 +0200
+From: "mrhealth@btamail.net.cn" <mrhealth@btamail.net.cn>
+To: <sales@sitescom.com>
+Date: 03 Aug 02 18:48:41 -0000
+Subject: Safely Send Bulk Email Using your Cable or DSL
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000.31498
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+MIME-Version: 1.0
+X-Mimetrack: Itemize by SMTP Server on auriga/Bi-Net(Release 5.0.8 |June
+    18, 2001) at 08/03/2002 08:49:50 PM, Serialize by Router on
+    auriga/Bi-Net(Release 5.0.8 |June 18, 2001) at 08/03/2002 09:04:42 PM,
+    Serialize complete at 08/03/2002 09:04:42 PM
+Message-Id: <OF4BF919AE.A278DFCE-ONC1256C0A.00677081@bischops.de>
+X-Sender: 320089800769-0001@t-dialin.net
+Content-Type: multipart/alternative; boundary=NS_MAIL_Boundary_07132002
+
+This is a multi-part message in MIME format.
+--NS_MAIL_Boundary_07132002
+Content-Type: text/html
+
+
+<HTML><HEAD><TITLE>BonFire Anonymous Bulk Emailing Software</TITLE></HEAD>
+<BODY BGCOLOR="White" TEXT="Navy" LINK="Green" VLINK="Blue" ALINK="Red">
+<FONT SIZE="+3" FACE="Xerox Sans Serif Narrow" COLOR="Red">
+Introducing the brand new "BonFire" mailer.</FONT><BR>
+<FONT SIZE="+1" FACE="Xerox Sans Serif Wide" COLOR="Black">Anonymous worry
+free bulk email software.</FONT><P>
+<FONT SIZE="-1" FACE="Xerox Sans Serif Wide" COLOR="Green">
+Send bulk email using your DSL or cable connection.<BR>
+.and never lose your connection ISP again.<P></FONT>
+<FONT SIZE="-1" FACE="Xerox Sans Serif Wide" COLOR="Navy">
+What is BonFire?<BR>
+BonFire software uses unique technology to provide complete anonymous
+delivery.<BR>
+Your IP will never be shown in the headers of any mail sent using
+BonFire.<BR>
+<B>BonFire is Cost Effective</B>, and is very easy software to use.<BR>
+Simply load your list, message, subject and press 'Send'.<BR>
+Its as easy as that.<P></FONT>
+<FONT SIZE="-1" FACE="Xerox Sans Serif Wide" COLOR="Navy">
+° True anonymity (using proxy routing - the new wave in bulk email stealth
+technology).<BR>
+° No more hunting for relays or paying hundreds of dollars for open
+servers.<BR>
+° You can run multiple copies simultaneously on different computers.<BR>  
+° Port 25 ISP not required (not affected by port 25 blocking).<BR> 
+° Speeds of over 300,000 emails per hour confirmed.<BR>
+° Simply purchase one of the mailing packages.<BR> 
+° Client side software control.<BR>  
+° Easy to use interface.<BR>  
+° Free upgrades.<P></FONT>
+<FONT SIZE="-1" FACE="Xerox Sans Serif Wide" COLOR="Navy">
+<B>Pricing..</B><BR>
+BonFire is free,<BR>
+<B>BUT.. YOU MUST PURCHASE EMAIL CREDITS IN BLOCKS.</B><BR>
+BonFire is subscription based bulk email software system.<BR>
+Our email credits are the lowest priced in the industry.<BR>
+<B>For example:</B><BR>
+A purchase of 10 million credits will enable BonFire to send 10 million
+emails,<BR>
+but additional credits must be purchased when the credits run out.<BR>
+BonFire comes with 50,000 <B>FREE</B> credits..<BR>
+so you can test it for yourself.<P></FONT>
+<FONT SIZE="-1" FACE="Xerox Sans Serif Wide" COLOR="Navy">
+<B>Credit Prices:</B><BR>
+1 Million Email Credits......$99.00<BR>
+5 Million Email Credits......$299.00<BR>
+10 Million Email Credits....$349.00<BR>
+50 Million Email Credits....$899.00<BR> 
+100 Million Email Credits..$1499.00<BR>
+250 Million Email Credits..$2599.00<BR>
+500 Million Email Credits..$3999.00<BR>
+1 Billion Email Credits.......$5999.00<BR>
+10 Billion Email Credits.....$9999.00<BR></FONT>
+<FONT SIZE="+1" FACE="Xerox Sans Serif Narrow" COLOR="Red">
+Free bulletproof mailbox with purchase.<P></FONT>
+<FONT SIZE="-1" FACE="Xerox Sans Serif Wide" COLOR="Navy"> 
+<B>Performance:</B><BR>
+The main premise behind BonFire is anonymity to hide your IP
+connection.<BR>
+This has been achieved without any sacrifice in email delivery speed.<BR>
+Best results are on Cable, ADSL, DSL, T1, or a T3 connection,<BR>  
+but a dialup connection will work just fine.<P>
+<FONT SIZE="-1" FACE="Xerox Sans Serif Wide" COLOR="Navy">
+The type of email lists you use may also affect the software's
+performance.<BR>
+Single domain lists will mail faster than a mixed domain email list.<BR> 
+A smaller message puts less strain on the mail servers,<BR>
+therefore, smaller messages mean faster delivery.<BR>
+A small text or html message is all you need,<BR>
+to get your customers attention.<P></FONT>
+<FONT SIZE="-1" FACE="Xerox Sans Serif Wide" COLOR="Navy">
+<B>An eye catching subject line is also very important.</B><BR>
+BonFire will send either html or text messages.<BR>
+You can also control the BCC count.<P></FONT>
+<FONT SIZE="-1" FACE="Xerox Sans Serif Wide" COLOR="Navy">
+Just check a few boxes and send yourself some messages as a test..<BR>
+You'll see for yourself the great value of the BonFire mailer.</FONT><P>
+<FONT SIZE="+2" FACE="Xerox Sans Serif Narrow" COLOR="Red">
+Click <A HREF="mailto:bonfire1@btamail.net.cn?subject=I am interested in
+BonFire">Here</A> to receive BonFire.</FONT><P>
+<CENTER>
+----<BR>
+Save the Planet, Save the Trees, Save the Ozone.<BR>
+Advertise via E-mail, No wasted paper.<BR>
+Delete with one simple keystroke.<BR>
+<FONT COLOR="Red">Click <A
+HREF="mailto:Remove-Please@btamail.net.cn?subject=Remove">Here</A> To Be Removed.</FONT>
+</CENTER></BODY></HTML>
+--NS_MAIL_Boundary_07132002--
+
+

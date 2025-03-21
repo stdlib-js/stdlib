@@ -1,0 +1,26 @@
+
+{{alias}}( strides )
+    Infers whether an array is row-major based on a provided stride array.
+
+    Parameters
+    ----------
+    strides: ArrayLike
+        Stride array.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether an array is row-major.
+
+    Examples
+    --------
+    > var s = [ 30, -10, 1 ];
+    > var bool = {{alias}}( s )
+    true
+    > s = [ 1, 10, 30 ];
+    > bool = {{alias}}( s )
+    false
+
+    See Also
+    --------
+

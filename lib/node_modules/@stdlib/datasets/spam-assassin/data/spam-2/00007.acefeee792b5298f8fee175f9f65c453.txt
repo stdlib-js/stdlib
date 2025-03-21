@@ -1,0 +1,71 @@
+From sales@outsrc-em.com  Mon Jun 24 17:53:15 2002
+Return-Path: sales@outsrc-em.com
+Delivery-Date: Thu Jun 20 20:08:33 2002
+Received: from outsrc-em.com ([166.70.149.104]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with SMTP id g5KJ8WI08701 for <jm@jmason.org>;
+    Thu, 20 Jun 2002 20:08:32 +0100
+Message-Id: <200206201908.g5KJ8WI08701@dogma.slashnull.org>
+From: "Outsource Sales" <sales@outsrc-em.com>
+To: "yyyy@spamassassin.taint.org" <yyyy@spamassassin.taint.org>
+Subject: New Product Announcement
+Sender: "Outsource Sales" <sales@outsrc-em.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="ISO-8859-1"
+Date: Fri, 3 Jan 1997 17:24:47 -0700
+Reply-To: "Outsource Sales" <sales@outsrc-em.com>
+Content-Transfer-Encoding: 8bit
+X-Keywords: 
+
+NEW PRODUCT ANNOUNCEMENT
+
+From: OUTSOURCE ENG.& MFG. INC.
+
+
+Sir/Madam;
+
+This note is to inform you of new watchdog board technology for maintaining
+continuous unattended operation of PC/Servers etc. that we have released for
+distribution.
+  
+We are proud to announce Watchdog Control Center featuring MAM (Multiple
+Applications Monitor) capability.
+The key feature of this application enables you to monitor as many
+applications as you
+have resident on any computer as well as the operating system for
+continuous unattended operation.  The Watchdog Control Center featuring
+MAM capability expands third party application "control" of a Watchdog as
+access to the application's
+source code is no longer needed.
+
+Here is how it all works:
+Upon installation of the application and Watchdog, the user may select
+many configuration options, based on their model of Watchdog, to fit their
+operational needs.  If the MAM feature is enabled, the user may select any
+executable program that they wish for monitoring.
+
+A lock up of the operating system or if any one of the selected
+applications is not running, the MAM feature, in
+conjunction with the Watchdog, will reset the system allowing for
+continuous operation.
+
+It's that simple!
+
+Watchdog Control Center is supported on most Microsoft Windows platforms
+(Win9x/WinNT/Win2k) and includes a Linux version for PCI Programmable
+Watchdogs.
+
+Watchdog Control Center Features:
+- Automated installation
+- Controls all Outsource Engineering Watchdogs
+- User selectable Watchdog timeout period
+- User selectable Watchdog stroke interval
+- Multiple Application Monitoring
+
+Included on the Installation CD:
+- Watchdog Control Center
+- Watchdog Drivers
+- Documentation
+
+For more information, please visit out website at
+http://www.outsrc-em.com/ or send an e-mail to sales@outsrc-em.com
+

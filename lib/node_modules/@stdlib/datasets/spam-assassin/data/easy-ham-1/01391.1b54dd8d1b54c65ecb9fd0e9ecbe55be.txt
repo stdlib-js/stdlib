@@ -1,0 +1,81 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug 29 17:24:07 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 271B243F99
+	for <jm@localhost>; Thu, 29 Aug 2002 12:24:07 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 17:24:07 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7TGInZ20012 for <jm-sa@jmason.org>; Thu, 29 Aug 2002 17:18:50 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17kRzk-0007Cu-00; Thu,
+    29 Aug 2002 09:18:08 -0700
+Received: from mail.island.net ([199.60.19.4] helo=mimas.island.net) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17kRzR-0001SF-00 for
+    <spamassassin-talk@lists.sourceforge.net>; Thu, 29 Aug 2002 09:17:49 -0700
+Received: from nanaimo.island.net (IDENT:root@nanaimo.island.net
+    [199.60.19.1]) by mimas.island.net (8.12.4/8.12.4) with ESMTP id
+    g7TGHkDR025680; Thu, 29 Aug 2002 09:17:46 -0700
+Received: from nanaimo.island.net (IDENT:rogersd@localhost [127.0.0.1]) by
+    nanaimo.island.net (8.12.4/8.12.4) with ESMTP id g7TGHjME006951;
+    Thu, 29 Aug 2002 09:17:45 -0700
+Received: (from rogersd@localhost) by nanaimo.island.net
+    (8.12.4/8.12.4/Submit) id g7TGHjgQ006949; Thu, 29 Aug 2002 09:17:45 -0700
+From: Daniel Rogers <rogersd@nanaimo.island.net>
+To: "Clayton, Nik [IT]" <nik.clayton@citigroup.com>
+Cc: "'spamassassin-talk@example.sourceforge.net'" <spamassassin-talk@example.sourceforge.net>
+Subject: Re: [SAtalk] UPPERCASE_* rules and foreign character sets
+Message-Id: <20020829091745.A6605@nanaimo.island.net>
+Mail-Followup-To: "Clayton, Nik [IT]" <nik.clayton@citigroup.com>,
+	"'spamassassin-talk@lists.sourceforge.net'" <spamassassin-talk@lists.sourceforge.net>
+References: <F58968066573D4118FC600508BCF7EDA0786128A@exchuk19.eu.ssmb.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <F58968066573D4118FC600508BCF7EDA0786128A@exchuk19.eu.ssmb.com>;
+    from nik.clayton@citigroup.com on Thu, Aug 29, 2002 at 11:37:02AM +0100
+X-Scanned-BY: MIMEDefang 2.11 (www dot roaringpenguin dot com slash
+    mimedefang)
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Thu, 29 Aug 2002 09:17:45 -0700
+Date: Thu, 29 Aug 2002 09:17:45 -0700
+
+On Thu, Aug 29, 2002 at 11:37:02AM +0100, Clayton, Nik [IT] wrote:
+> Have the UPPERCASE_* rules been tested on messages in non-English 
+> character sets, and/or where the message is MIME encoded in some way?
+> 
+> I'm getting a lot of false positives on Japanese mail, and I think the 
+> encoding is responsible for triggering this rule.
+
+Like Justin said, this is fixed in CVS.
+
+Dan.
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

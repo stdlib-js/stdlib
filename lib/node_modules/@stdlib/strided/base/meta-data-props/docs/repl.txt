@@ -1,0 +1,52 @@
+
+{{alias}}( meta, dtypes, obj, bool )
+    Defines non-enumerable read-only properties which expose strided array
+    function meta data.
+
+    Parameters
+    ----------
+    meta: Object
+        Function meta data.
+
+    meta.nargs: integer
+        Total number of arguments (excluding offsets).
+
+    meta.nin: integer
+        Total number of input arrays.
+
+    meta.nout: integer
+        Total number of output arrays.
+
+    dtypes: ArrayLikeObject
+        List of strided array data types.
+
+    obj: Object|Function
+        Object on which to define properties.
+
+    bool: boolean
+        Boolean indicating whether the provided object should describe an
+        "ndarray" function interface.
+
+    Returns
+    -------
+    out: Object|Function
+        Object on which properties were defined.
+
+    Examples
+    --------
+    > var meta = { 'nargs': 7, 'nin': 1, 'nout': 1 };
+    > var dt = [ 'float64', 'float64' ];
+    > var obj = {};
+    > {{alias}}( meta, dt, obj, false );
+    > obj.nargs
+    7
+    > obj.nin
+    1
+    > obj.nout
+    1
+    > obj.types
+    [...]
+
+    See Also
+    --------
+

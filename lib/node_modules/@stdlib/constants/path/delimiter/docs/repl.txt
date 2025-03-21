@@ -1,0 +1,22 @@
+
+{{alias}}
+    Platform-specific path delimiter.
+
+    Examples
+    --------
+    > {{alias}}
+    <string>
+
+    // POSIX environment:
+    > var path = '/usr/bin:/bin:/usr/sbin';
+    > var parts = path.split( {{alias}} )
+    [ '/usr/bin', '/bin', '/usr/sbin' ]
+
+    // Windows environment:
+    > path = 'C:\\Windows\\system32;C:\\Windows';
+    > parts = path.split( {{alias}} )
+    [ 'C:\\Windows\system32', 'C:\\Windows' ]
+
+    See Also
+    --------
+

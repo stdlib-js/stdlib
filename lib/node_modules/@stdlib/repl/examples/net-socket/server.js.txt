@@ -1,0 +1,63 @@
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2019 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+'use strict';
+
+var net = require( 'net' );
+var REPL = require( './../../lib' );
+
+// Define a counter for keeping track of the number of current connections:
+var connections = 0;
+
+// Create a new TCP server:
+var server = net.createServer( onSocket );
+
+// Start listening for TCP connections:
+server.listen( 1337 );
+console.log( 'Listening for connections on port %d.', 1337 );
+
+function onSocket( socket ) {
+	var repl;
+	var opts;
+
+	connections += 1;
+	console.log( 'Established a new connection.' );
+	console.log( 'Connections: %d.', connections );
+
+	// Define REPL options, leveraging the fact that a socket connection is a duplex stream:
+	opts = {
+		'input': socket,
+		'output': socket,
+		'global': true,
+		'isTTY': true
+	};
+
+	// Create a new REPL instance:
+	repl = new REPL( opts );
+
+	// Listen for when the REPL exits:
+	repl.on( 'exit', onExit );
+
+	function onExit() {
+		// When a REPL exits, we can close the socket:
+		socket.end();
+		connections -= 1;
+		console.log( 'Client exited REPL. Connection closed.' );
+		console.log( 'Connections: %d.', connections );
+	}
+}

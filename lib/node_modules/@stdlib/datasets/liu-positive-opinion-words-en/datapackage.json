@@ -1,0 +1,50 @@
+{
+  "name": "stdlib-datasets-liu-positive-opinion-words-en",
+  "version": "",
+  "title": "Positive Opinion Words",
+  "description": "A list of positive opinion words.",
+  "resources": [
+    {
+      "name": "liu-positive-opinion-words-en-json",
+      "title": "Positive Opinion Words",
+      "description": "A list of positive opinion words.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/words.json"
+    },
+    {
+      "name": "liu-positive-opinion-words-en-txt",
+      "title": "Positive Opinion Words",
+      "description": "A list of positive opinion words.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/words.txt"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Opinion Lexicion",
+      "web": "https://www.cs.uic.edu/~liub/FBS/sentiment-analysis.html#lexicon"
+    }
+  ],
+  "keywords": [
+    "words",
+    "list",
+    "sentiment",
+    "opinion",
+    "positive",
+    "emotion",
+    "emotive",
+    "subjectivity",
+    "lexicon",
+    "nlp",
+    "language",
+    "english",
+    "en"
+  ],
+  "license": "ODC-BY-1.0 AND CC-BY-4.0"
+}

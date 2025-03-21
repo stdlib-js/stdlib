@@ -1,0 +1,865 @@
+From linux-secnews-return-67-legit-lists-secfocus=jmason.org@securityfocus.com  Tue Aug  6 17:21:19 2002
+Return-Path: <linux-secnews-return-67-legit-lists-secfocus=spamassassin.taint.org@securityfocus.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6B029440C8
+	for <jm@localhost>; Tue,  6 Aug 2002 12:21:00 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 17:21:00 +0100 (IST)
+Received: from outgoing.securityfocus.com (outgoing3.securityfocus.com
+    [66.38.151.27]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g76GLIk09510 for <legit-lists-secfocus@jmason.org>; Tue, 6 Aug 2002
+    17:21:18 +0100
+Received: from lists.securityfocus.com (lists.securityfocus.com
+    [66.38.151.19]) by outgoing.securityfocus.com (Postfix) with QMQP id
+    9D913A30D7; Tue,  6 Aug 2002 10:12:42 -0600 (MDT)
+Mailing-List: contact linux-secnews-help@securityfocus.com; run by ezmlm
+Precedence: bulk
+List-Id: <linux-secnews.list-id.securityfocus.com>
+List-Post: <mailto:linux-secnews@securityfocus.com>
+List-Help: <mailto:linux-secnews-help@securityfocus.com>
+List-Unsubscribe: <mailto:linux-secnews-unsubscribe@securityfocus.com>
+List-Subscribe: <mailto:linux-secnews-subscribe@securityfocus.com>
+Delivered-To: mailing list linux-secnews@securityfocus.com
+Delivered-To: moderator for linux-secnews@securityfocus.com
+Received: (qmail 14854 invoked from network); 6 Aug 2002 16:05:02 -0000
+Date: Tue, 6 Aug 2002 10:03:52 -0600 (MDT)
+From: John Boletta <jboletta@securityfocus.com>
+To: linux-secnews@securityfocus.com
+Subject: SecurityFocus Linux Newsletter #92
+Message-Id: <Pine.LNX.4.43.0208061003200.9767-100000@mail.securityfocus.com>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+
+
+SecurityFocus Linux Newsletter #92
+----------------------------------
+
+This newsletter is sponsored by: SecurityFocus DeepSight Threat Management
+System
+
+>>From June 24th - August 31st, 2002, SecurityFocus announces a FREE
+two-week trial of the DeepSight Threat Management System: the only early
+warning system providing customizable and comprehensive early warning of
+cyber attacks and bulletproof countermeasures to prevent attacks before
+they hit your network.
+
+With the DeepSight Threat Management System, you can focus on proactively
+deploying prioritized and specific patches to protect your systems from
+attacks, rather than reactively searching dozens of Web sites or hundreds
+of emails frantically trying to gather information on the attack and how
+to recover from it.
+
+Sign up today!
+http://www.securityfocus.com/corporate/products/promo/tmstrial-lx.shtml
+-------------------------------------------------------------------------------
+
+I. FRONT AND CENTER
+     1. Advanced Log Processing
+     2. Assessing Internet Security Risk, Part Three: an Internet...
+     3. Copyright, Security, and the Hollywood Hacking Bill
+     4. SecurityFocus DPP Program
+II. LINUX VULNERABILITY SUMMARY
+     1. OpenSSL SSLv2 Malformed Client Key Remote Buffer Overflow...
+     2. Abyss Web Server HTTP GET Request Directory Contents Disclosure...
+     3. DotProject User Cookie Authentication Bypass Vulnerability
+     4. OpenSSL SSLv3 Session ID Buffer Overflow Vulnerability
+     5. phpBB2 Gender Mod Remote SQL Injection Vulnerability
+     6. ShoutBox Form Field HTML Injection Vulnerability
+     7. Sympoll File Disclosure Vulnerability
+     8. OpenSSL ASN.1 Parsing Error Denial Of Service Vulnerability
+     9. William Deich Super SysLog Format String Vulnerability
+     10. Frederic Tyndiuk Eupload Plain Text Password Storage...
+     11. Util-linux File Locking Race Condition Vulnerability
+     12. OpenSSL Kerberos Enabled SSLv3 Master Key Exchange Buffer...
+     13. OpenSSL ASCII Representation Of Integers Buffer Overflow...
+     14. ParaChat Phantom User Denial Of Service Vulnerability
+     15. OpenSSH Trojan Horse Vulnerability
+     16. Bharat Mediratta Gallery Remote File Include Vulnerability
+     17. John G. Myers MUnpack Malformed MIME Encoded Message Buffer...
+     18. Dispair Remote Command Execution Vulnerability
+     19. Mailreader Session Hijacking Vulnerability
+     20. John G. Myers MPack/MUnpack Malformed Filename Vulnerability
+     21. Fake Identd Client Query Remote Buffer Overflow Vulnerability
+III. LINUX FOCUS LIST SUMMARY
+     1. LDAP Auth? (Thread)
+     2. LDAP auth (Thread)
+     3. Administrivia: Gone Fishin' (Thread)
+IV. NEW PRODUCTS FOR LINUX PLATFORMS
+     1. Gateway Guardian
+     2. PakSecured Linux
+     3. Progressive Systems VPN
+V. NEW TOOLS FOR LINUX PLATFORMS
+     1. Astaro Security Linux (Stable 3.x) v3.202
+     2. FCheck 2.07.59
+     3. The @stake Sleuth Kit (TASK) v1.50
+VI. SPONSORSHIP INFORMATION
+
+
+I. FRONT AND CENTER
+-------------------
+1. Advanced Log Processing
+By Anton Chuvakin
+
+Reading logs is a crucial part of incident detection and response.
+However, it is easy for security personnel to be overwhelmed by the sheer
+volume of logs. This article will offer a brief overview of log analysis,
+particularly: log transmission, log collection and log analysis. It will
+also briefly touch upon log storing and archival.
+
+http://online.securityfocus.com/infocus/1613
+
+2.  Assessing Internet Security Risk, Part Three: an Internet Assessment
+Methodology Continued
+by Charl van der Walt
+
+This article is the third in a series that is designed to help readers to
+assess the risk that their Internet-connected systems are exposed to. In
+the first installment, we established the reasons for doing a technical
+risk assessment. In the second part, we started to discuss the methodology
+that we follow in performing this kind of assessment. In this installment,
+we will continue to discuss methodology, particularly visibility and
+vulnerability scanning.
+
+http://online.securityfocus.com/infocus/1612
+
+3. Copyright, Security, and the Hollywood Hacking Bill
+By Richard Forno
+
+Proposed copyright enforcement legislation may allow the powerful
+entertainment lobby to circumvent fundamental constitutional protections,
+and may create chaos on the Internet.
+
+http://online.securityfocus.com/columnists/99
+
+4. SecurityFocus DPP Program
+
+Attention Non-profit Organizations and Universities!!
+Sign-up now for preferred pricing on the only global early-warning system
+for cyber attacks - SecurityFocus DeepSight Threat Management System.
+
+Click here for more information:
+http://www.securityfocus.com/corporate/products/dpsection.shtml
+
+
+II. BUGTRAQ SUMMARY
+-------------------
+1. OpenSSL SSLv2 Malformed Client Key Remote Buffer Overflow Vulnerability
+BugTraq ID: 5363
+Remote: Yes
+Date Published: Jul 30 2002 12:00AM
+Relevant URL:
+http://www.securityfocus.com/bid/5363
+Summary:
+
+OpenSSL is an open source implementation of the SSL protocol. It is used
+by a number of other projects, including but not restricted to Apache,
+Sendmail, Bind, etc.. It is commonly found on Linux and Unix based
+systems.
+
+A buffer overflow vulnerability has been reported in some versions of
+OpenSSL.
+
+When initiating an OpenSSL session, some information is shared between the
+client and the server, including key data. The reported vulnerability lies
+in the handling of the client key value during the negotiation of the
+SSLv2 protocol.
+
+A malicious client may exploit this vulnerability by transmitting a
+malformed key to the vulnerable server. Careful exploitation may result in
+execution of arbitrary code as the server process, and the attacker
+gaining local access to the vulnerable system. More primitive attacks may
+result in the server process crashing, possibly producing a denial of
+service condition.
+
+The consequences of exploitation may vary with the nature of the
+application using OpenSSL.
+
+Oracle reports that CorporateTime Outlook Connector is only vulnerable
+under Microsoft Windows 98, NT, 2K, and XP.
+
+** This vulnerability was originally part of BID 5353, Multiple OpenSSL
+Buffer Overflow Vulnerabilities. It has now been reissued as a separate
+vulnerability.
+
+2. Abyss Web Server HTTP GET Request Directory Contents Disclosure Vulnerability
+BugTraq ID: 5345
+Remote: Yes
+Date Published: Jul 29 2002 12:00AM
+Relevant URL:
+http://www.securityfocus.com/bid/5345
+Summary:
+
+Abyss Web Server is a freely available personal web server. It is
+maintained by Aprelium Technologies and runs on Microsoft Windows
+operating systems, as well as Linux.
+
+A vulnerability has been reported for Abyss Web Server 1.0.3 running on a
+Microsoft Windows platform. It is possible for an attacker to make a
+request such that the contents of the specified directory are revealed.
+
+The vulnerability occurs due to the manner in which excessive '/'
+characters are handled in web requests. An attacker making a GET request
+followed by 256 '/' characters will cause Abyss Web Server to return an
+error page containing the directory listing of the specified directory.
+
+An attacker may be able to use this information to launch further,
+potentially damaging attacks, against a vulnerable system.
+
+3. DotProject User Cookie Authentication Bypass Vulnerability
+BugTraq ID: 5347
+Remote: Yes
+Date Published: Jul 29 2002 12:00AM
+Relevant URL:
+http://www.securityfocus.com/bid/5347
+Summary:
+
+dotproject is web-based project management software, written in PHP.  It
+is designed to run on Unix and Linux variants.
+
+dotproject is prone to an issue which may allow remote attackers to bypass
+authentication and gain administrative access to the software.
+
+This may be accomplished by submitting a maliciously crafted 'user_cookie'
+value either manually or via manipulation of URI parameters.  For example,
+the attacker may manually craft a cookie with a 'user_cookie' value of 1
+and submit it to the project management system.  An attacker may also
+submit a malicious web request with the 'user_cookie' URI parameter set to
+1.  In both instances, the attacker will gain administrative access to the
+project management system.
+
+This problem is due to the software relying on the 'user_cookie' value to
+authenticate the user.
+
+4. OpenSSL SSLv3 Session ID Buffer Overflow Vulnerability
+BugTraq ID: 5362
+Remote: Yes
+Date Published: Jul 30 2002 12:00AM
+Relevant URL:
+http://www.securityfocus.com/bid/5362
+Summary:
+
+OpenSSL is an open source implementation of the SSL protocol. It is used
+by a number of other projects, including but not restricted to Apache,
+Sendmail, Bind, etc.. It is commonly found on Linux and Unix based
+systems.
+
+A vulnerability has been reported for OpenSSL. The vulnerability affects
+SSLv3 session IDs.
+
+When initiating contact with SSLv3 servers, clients and servers alike
+exchange information. Session information is stored in a session key with
+a unique session ID.
+
+Reportedly when a an oversized SSL version 3 session ID is supplied to a
+client from a malicious server, it is possible to overflow a buffer on the
+remote system. This could result in key memory areas on the vulnerable,
+remote system being overwritten, including stack frame data.
+
+An attacker may be able to take advantage of this vulnerability to execute
+malicious code on a vulnerable SSLv3 client machine.
+
+Oracle reports that CorporateTime Outlook Connector is only vulnerable
+under Microsoft Windows 98, NT, 2K, and XP.
+
+** This vulnerability was originally part of BID 5353, Multiple OpenSSL
+Buffer Overflow Vulnerabilities. It has now been reissued as a separate
+vulnerability.
+
+5. phpBB2 Gender Mod Remote SQL Injection Vulnerability
+BugTraq ID: 5342
+Remote: Yes
+Date Published: Jul 29 2002 12:00AM
+Relevant URL:
+http://www.securityfocus.com/bid/5342
+Summary:
+
+phpBB2 is an open-source web forum application that is written in PHP and
+backended by a number of database products. It will run on most Unix and
+Linux variants, as well as Microsoft Windows operating systems.
+
+Gender Mod is a modification for phpBB2 which allows the association of a
+gender with a given user profile. A SQL injection vulnerability has been
+reported in this mod.
+
+A malicious user may modify the specified value for 'gender' when updating
+their profile. It is possible to include additional SQL statements in this
+string, and subvert the SQL statement used to update the user profile.
+
+It has been reported possible to gain administrative access to the phpBB2
+site through exploitation of this issue. Other attacks may be possible,
+including the ability to view sensitive database information or to modify
+additional information stored in the database.
+
+6. ShoutBox Form Field HTML Injection Vulnerability
+BugTraq ID: 5354
+Remote: Yes
+Date Published: Jul 29 2002 12:00AM
+Relevant URL:
+http://www.securityfocus.com/bid/5354
+Summary:
+
+shoutBOX is web-based user feedback software.  It is written in PHP and
+runs on Unix and Linux variants as well as Microsoft Windows operating
+systems.
+
+ShoutBox does not sufficiently sanitize HTML tags from input supplied via
+form fields.  In particular, the user website URL field of the feedback
+form is not sanitized of HTML tags.
+
+Attackers may exploit this lack of input validation to inject arbitrary
+HTML and script code into pages that are generated by the script.  This
+may result in execution of attacker-supplied code in the web client of a
+user who visits such a page.  HTML and script code will be executed in the
+security context of the site hosting the software.
+
+This condition may be exploited to hijack web content or potentially steal
+cookie-based authentication credentials.
+
+7. Sympoll File Disclosure Vulnerability
+BugTraq ID: 5360
+Remote: Yes
+Date Published: Jul 30 2002 12:00AM
+Relevant URL:
+http://www.securityfocus.com/bid/5360
+Summary:
+
+Sympoll is web-based voting booth software.  It is implemented in PHP and
+will run on most Unix and Linux variants as well as Microsoft Windows
+operating systems.
+
+Sympoll is prone to an issue which may allow remote attackers to disclose
+the contents of arbitrary webserver readable files.  This vulnerability is
+only present on hosts which are running the vulnerable version of the
+software and have the PHP 'register_globals' directive enabled.  The
+source of this vulnerability is reported to be insufficient integrity
+checking of variables.
+
+The vendor has stated that this issue is only believed to affect Sympoll
+version 1.2.
+
+Exploitation of this issue on Microsoft Windows operating systems may
+potentially expose arbitrary system files since webservers typically run
+in the SYSTEM context.
+
+8. OpenSSL ASN.1 Parsing Error Denial Of Service Vulnerability
+BugTraq ID: 5366
+Remote: Yes
+Date Published: Jul 30 2002 12:00AM
+Relevant URL:
+http://www.securityfocus.com/bid/5366
+Summary:
+
+OpenSSL is an open source implementation of the SSL protocol.  It is used
+by a number of other projects, including but not restricted to Apache,
+Sendmail, Bind, etc..  It is commonly found on Linux and Unix based
+systems.
+
+A remotely exploitable denial of service condition has been reported in
+the OpenSSL ASN.1 library.
+
+This vulnerability is due to parsing errors and affects SSL, TLS, S/MIME,
+PKCS#7 and certificate creation routines.  In particular, malformed
+certificate encodings could cause a denial of service to server and client
+implementations which depend on OpenSSL.
+
+Oracle reports that CorporateTime Outlook Connector is only vulnerable
+under Microsoft Windows 98, NT, 2K, and XP.
+
+** This vulnerability was originally part of BID 5353, Multiple OpenSSL
+Buffer Overflow Vulnerabilities. It has now been reissued as a separate
+vulnerability.
+
+9. William Deich Super SysLog Format String Vulnerability
+BugTraq ID: 5367
+Remote: No
+Date Published: Jul 31 2002 12:00AM
+Relevant URL:
+http://www.securityfocus.com/bid/5367
+Summary:
+
+super is an open source set-uid root utility that allows for a similar
+functionality to that of the sudo utility. It is written for use on Linux
+and Unix variant operating systems.
+
+super is prone to a format string vulnerability. This problem is due to
+incorrect use of the syslog() function to log error messages. It is
+possible to corrupt memory by passing format strings through the
+vulnerable logging function. This may potentially be exploited to
+overwrite arbitrary locations in memory with attacker-specified values.
+
+The vulnerability is a result of compiling super with syslog support. Due
+to an error in the file, error.c, users that are not in the super
+configuration file will still be able to execute code with root
+privileges.
+
+Successful exploitation of this issue may allow the attacker to execute
+arbitrary instructions with root privileges.
+
+10. Frederic Tyndiuk Eupload Plain Text Password Storage Vulnerability
+BugTraq ID: 5369
+Remote: Yes
+Date Published: Jul 31 2002 12:00AM
+Relevant URL:
+http://www.securityfocus.com/bid/5369
+Summary:
+
+Frederic Tyndiuk Eupload is a small script designed to facilitate
+uploading of files to a remote server. It is written in Perl and should
+work with Microsoft Windows and Linux and Unix variant operating systems.
+
+A problem with Eupload 1.0 may make it possible for remote attackers to
+gain access to sensitive information.
+
+Eupload does not cryptographically protect stored passwords. Passwords
+contained in the configuration file, password.txt, are stored in plain
+text. They may be read by simply viewing the file. The file, password.txt,
+is stored in a web accessible location and is, itself, accessible for
+retrieval. Thus it is trivial for an attacker to obtain user passwords and
+abuse the Eupload service.
+
+This problem could allow an attacker to gain access to the passwords to
+protected resources.
+
+11. Util-linux File Locking Race Condition Vulnerability
+BugTraq ID: 5344
+Remote: No
+Date Published: Jul 29 2002 12:00AM
+Relevant URL:
+http://www.securityfocus.com/bid/5344
+Summary:
+
+The util-linux package is a set of commonly used system utilities such as
+'chfn' and 'chsh'.  It is included with many Linux distributions.
+
+A race condition has been reported in code shared by the util-linux
+utilities.  The condition is related to file locking.  Failure to check
+for the existence of a lockfile prior to sensitive operations may, under
+specific circumstances, open a window of opportunity for attack.  The
+util-linux utilities often write to sensitive files such as /etc/passwd/.
+Attackers may exploit the condition to inject arbitrary data into these
+files to elevate privileges.
+
+The reported attacks are complex, time dependent and require specific
+circumstances such as system administrator interaction and a large passwd
+file.
+
+Red Hat Linux is known to ship with util-linux as a core component.
+Other distributions, those that are derived from Red Hat in particular,
+may also be vulnerable.
+
+It should be noted that the utilities included with the shadow-utils
+package (shipped with SuSE Linux) are not vulnerable.
+
+12. OpenSSL Kerberos Enabled SSLv3 Master Key Exchange Buffer Overflow Vulnerability
+BugTraq ID: 5361
+Remote: Yes
+Date Published: Jul 30 2002 12:00AM
+Relevant URL:
+http://www.securityfocus.com/bid/5361
+Summary:
+
+OpenSSL is an open source implementation of the SSL protocol. It is used
+by a number of other projects, including but not restricted to Apache,
+Sendmail, Bind, etc.. It is commonly found on Linux and Unix based
+systems.
+
+A vulnerability has been reported for OpenSSL 0.9.7 pre-release versions.
+
+This vulnerability is present only when Kerberos is enabled for a system
+using SSL version 3.
+
+When initiatiating contact between a SSLv3 server, master keys are
+exchanged between the client and the server. When an oversized master key
+is supplied to a SSL version 3 server by a malicious client, it may cause
+a buffer to overflow on the vulnerable system. As a result, stack memory
+on the vulnerable server will become corrupted. This could enable the
+attacker to take control of the SSLv3 server process and cause it to
+execute malicious, attacker supplied code.
+
+** This vulnerability was originally part of BID 5353, Multiple OpenSSL
+Buffer Overflow Vulnerabilities. It has now been reissued as a separate
+vulnerability.
+
+13. OpenSSL ASCII Representation Of Integers Buffer Overflow Vulnerability
+BugTraq ID: 5364
+Remote: Yes
+Date Published: Jul 30 2002 12:00AM
+Relevant URL:
+http://www.securityfocus.com/bid/5364
+Summary:
+
+OpenSSL is an open source implementation of the SSL protocol.  It is used
+by a number of other projects, including but not restricted to Apache,
+Sendmail, Bind, etc..  It is commonly found on Linux and Unix based
+systems.
+
+Remotely exploitable buffer overflow conditions have been reported in
+OpenSSL.  This issue is due to insufficient checking of bounds with
+regards to ASCII representations of integers on 64 bit platforms.  It is
+possible to overflow these buffers on a vulnerable system if overly large
+values are submitted by a malicious attacker.
+
+Exploitation of this vulnerability may allow execution of arbitrary code
+with the privileges of the vulnerable application, service or client.
+
+Oracle reports that CorporateTime Outlook Connector is only vulnerable
+under Microsoft Windows 98, NT, 2K, and XP.
+
+** This vulnerability was originally part of BID 5353, Multiple OpenSSL
+Buffer Overflow Vulnerabilities. It has now been reissued as a separate
+vulnerability.
+
+14. ParaChat Phantom User Denial Of Service Vulnerability
+BugTraq ID: 5370
+Remote: Yes
+Date Published: Jul 31 2002 12:00AM
+Relevant URL:
+http://www.securityfocus.com/bid/5370
+Summary:
+
+ParaChat is a web-based chatting system.  It is available for most Unix
+and Linux variants as well as Microsoft Windows operating systems.
+
+ParaChat chat servers are prone to a denial of service condition.
+
+If a user has left the webpage for a chat room using the Back or Forward
+buttons of their browser in lieu of logging out, their account will still
+be logged into the chat room until it times out 15 minutes later.  A
+malicious user may do this repeatedly as different users to overload the
+chat server with "phantom" users.  A denial of service may be the result.
+
+15. OpenSSH Trojan Horse Vulnerability
+BugTraq ID: 5374
+Remote: Yes
+Date Published: Aug 01 2002 12:00AM
+Relevant URL:
+http://www.securityfocus.com/bid/5374
+Summary:
+
+OpenSSH is a freely available implementation of the SSH client-server
+protocol. It is distributed and maintained by the OpenSSH team.
+
+Reportedly, the server hosting openssh, ftp.openbsd.org, was compromised
+recently. It has been reported that the intruder made modifications to the
+source code of openssh to include trojan horse code. Downloads of the
+openssh source code from ftp.openbsd.org between July 30, 2002 and July
+31, 2002 likely contain the trojan code.
+
+The trojan code appears to be included in the file, bf-test.c. Reports say
+that the trojan will run once upon compilation of openssh. The trojan
+process is named 'sh' or the compiling user's default shell. Once executed
+the trojan attempts to connect to 203.62.158.32 on port 6667. The trojan
+will then wait for one of three commands. A connection to the specified
+address is attempted once every hour.
+
+'D' will cause the trojan to execute '/bin/sh'. 'M' will cause the trojan
+to respawn and 'A' will terminate the trojan process. It is highly
+probable that this trojan will give remote root access to vulnerable
+systems.
+
+The following sites also have been reported to carry the trojaned version of openssh-3.4p1.tar.gz:
+ftp://ftp.openbsd.org/pub/OpenBSD/OpenSSH/
+ftp://ftp.usa.openbsd.org/pub/OpenBSD/OpenSSH/
+ftp://ftp1.se.openbsd.org/pub/OpenBSD/OpenSSH/
+
+It is not known whether other sites are affected as well.
+
+FreeBSD has reported the following MD5 checksum information. The following
+is the MD5 checksum of the trojaned version of openssh: MD5
+(openssh-3.4p1.tar.gz) = 3ac9bc346d736b4a51d676faa2a08a57
+
+The following is the MD5 checksum of openssh in the FreeBSD ports
+directory: MD5 (openssh-3.4p1.tar.gz) = 459c1d0262e939d6432f193c7a4ba8a8
+
+Note that a different checksum does not mean the backdoor does not exist.
+
+*** The OpenSSH team has released an advisory. Fixed versions of openssh
+are available for download since 1300 UTC August 1, 2002. The following
+MD5 checksum information was provided for fixed versions of openssh:
+
+MD5 (openssh-3.4p1.tar.gz) = 459c1d0262e939d6432f193c7a4ba8a8
+MD5 (openssh-3.4p1.tar.gz.sig) = d5a956263287e7fd261528bb1962f24c
+MD5 (openssh-3.4.tgz) = 39659226ff5b0d16d0290b21f67c46f2
+MD5 (openssh-3.2.2p1.tar.gz) = 9d3e1e31e8d6cdbfa3036cb183aa4a01
+MD5 (openssh-3.2.2p1.tar.gz.sig) = be4f9ed8da1735efd770dc8fa2bb808a
+
+16. Bharat Mediratta Gallery Remote File Include Vulnerability
+BugTraq ID: 5375
+Remote: Yes
+Date Published: Aug 01 2002 12:00AM
+Relevant URL:
+http://www.securityfocus.com/bid/5375
+Summary:
+
+Gallery is an open source web based photo album. It is written in PHP and
+is available for Linux and Unix variant as well as Microsoft Windows
+operating systems.
+
+Gallery is prone to an issue which may allow remote attackers to include
+arbitrary files located on remote servers. This issue is present in the
+following PHP script files provided with Gallery: errors/configmode.php
+errors/needinit.php errors/reconfigure.php errors/unconfigured.php
+captionator.php
+
+An attacker may exploit this by supplying a path to a file, 'init.php', on
+a remote host as a value for the 'GALLERY_BASEDIR' parameter.
+
+If the remote file is a PHP script, this may allow for execution of
+attacker-supplied PHP code with the privileges of the webserver.
+Successful exploitation may provide local access to the attacker.
+
+17. John G. Myers MUnpack Malformed MIME Encoded Message Buffer Overflow Vulnerability
+BugTraq ID: 5385
+Remote: No
+Date Published: Aug 02 2002 12:00AM
+Relevant URL:
+http://www.securityfocus.com/bid/5385
+Summary:
+
+John G. Myers mpack/munpack is a pair of utilities to encode and decode
+MIME format email. Versions are available for Linux and Unix variant
+operating systems as well as Microsoft DOS.
+
+A buffer overflow vulnerability has been reported for munpack 1.5.
+Reportedly, it is possible to cause munpack to crash when it receives a
+malformed email or NNTP news article.
+
+As this vulnerability is the result of a buffer overflow condition, it may
+be possible for an attacker to cause munpack to execute malicious attacker
+supplied code. This has not, however, been confirmed.
+
+18. Dispair Remote Command Execution Vulnerability
+BugTraq ID: 5392
+Remote: Yes
+Date Published: Jul 30 2002 12:00AM
+Relevant URL:
+http://www.securityfocus.com/bid/5392
+Summary:
+
+Dispair is a web-based .tar.gz archive viewer.  It is written in Perl and
+is available for Linux and Unix operating systems.
+
+Dispair fails to sufficiently validate user-supplied input before it is
+passed to the shell via the Perl open() function.  A remote attacker may
+exploit this condition by injecting arbitrary commands into CGI parameters
+in a request to the vulnerable script.
+
+The result of successful exploitation is that attackers may potentially
+exploit this issue to execute arbitrary commands on the underlying shell
+with the privileges of the webserver process.
+
+19. Mailreader Session Hijacking Vulnerability
+BugTraq ID: 5393
+Remote: Yes
+Date Published: Aug 02 2002 12:00AM
+Relevant URL:
+http://www.securityfocus.com/bid/5393
+Summary:
+
+Mailreader is an open source project which allows POP3 mail access through
+a web interface. Mailreader is implemented in Perl, and should work under
+Microsoft Windows, Linux and other Unix based operating systems.
+
+A vulnerability has been reported in some versions of Mailreader. It may
+be possible for a remote attacker to hijack the session of a legitimate
+user of the system. This may result in access to sensitive information, or
+the ability to send mail and otherwise function as the legitimate user.
+
+Full exploit details are not available. It is possible that this
+vulnerability results from session information being tracked through CGI
+parameters, which may be trivially spoofed by a remote user. This
+possibility has not, however, been confirmed.
+
+20. John G. Myers MPack/MUnpack Malformed Filename Vulnerability
+BugTraq ID: 5386
+Remote: No
+Date Published: Aug 02 2002 12:00AM
+Relevant URL:
+http://www.securityfocus.com/bid/5386
+Summary:
+
+John G. Myers mpack/munpack is a pair of utilities to encode and decode
+MIME format email. Versions are available for Linux and Unix variant
+operating systems as well as Microsoft DOS.
+
+A vulnerability has been reported for mpack/munpack 1.5. Reportedly, it is
+possible to cause munpack to create files outside of a designated
+directory. When mpack/munpack receives a MIME encoded message with an
+attachment that refers to a file, using a '../' sequence followed by the
+filename, it may decode the attachment outside of a designated directory.
+
+The impact of this vulnerability is limited as it has been reported that
+munpack will only accept a single '../' sequence and will not overwrite
+any existing files.
+
+21. Fake Identd Client Query Remote Buffer Overflow Vulnerability
+BugTraq ID: 5351
+Remote: Yes
+Date Published: Jul 29 2002 12:00AM
+Relevant URL:
+http://www.securityfocus.com/bid/5351
+Summary:
+
+Fake Identd is an open source Ident server designed to return the same
+information to all incoming requests. It is implemented by Tomi Ollila,
+and available for Linux and a number of other Unix based operating
+systems.
+
+Reportedly, some versions of Fake Identd fail to properly handle long
+client requests. A specially formatted request split across multiple TCP
+packets may cause an internal buffer to overflow. Reportedly, execution of
+arbitrary code as the Fake Identd server process is possible.
+
+Fake Identd is designed to drop privileges. However, it has also been
+reported that this behavior is flawed in some versions. As a result,
+exploitation may result in the execution of code with root privileges.
+
+
+III. LINUX FOCUS LIST SUMMARY
+---------------------------------
+1. LDAP Auth? (Thread)
+Relevant URL:
+
+http://online.securityfocus.com/archive/91/285167
+
+2. LDAP auth (Thread)
+Relevant URL:
+
+http://online.securityfocus.com/archive/91/285168
+
+3. Administrivia: Gone Fishin' (Thread)
+Relevant URL:
+
+http://online.securityfocus.com/archive/91/285159
+
+
+IV. NEW PRODUCTS FOR LINUX PLATFORMS
+------------------------------------
+1. Gateway Guardian
+by NetMaster Networking Solutions, Inc.
+Platforms: Linux
+Relevant URL:
+http://www.netmaster.com/products/gatewayguardian.html
+Summary:
+
+Developed with NetMaster's own Linux distribution tailored specifically
+for firewall applications, Gateway Guardian is a very flexible, high-end
+firewall that takes a revolutionary approach to allowing a company to use
+a lower-end PC as their Internet gateway. Running on a PC that is not the
+Internet gateway, Gateway Guardian uses a pure Java application to
+preconfigure hardware, Internet provider settings, and firewall rules
+through a wizard like format. When the information has been entered, the
+Java application writes an entire Linux operating system and the custom
+firewall configuration onto a 3-1/4" floppy diskette.
+
+2. PakSecured Linux
+by Paktronix Systems
+Platforms: Linux
+Relevant URL:
+http://www.paktronix.com/products/paklinux.php
+Summary:
+
+PakSecured Linux PakSecured Linux is currently the only complete Policy
+Routing Operating System with a broad computing platform base. Based on
+the Linux OS, PakSecured Linux runs on all processor families capable of
+running the Linux kernel. Policy Routing encompasses Quality of Service
+(QoS), Advanced TCP/IP routing of IPv4 and IPv6, IPSec encryption and VPN
+structures, Bandwidth Allocation and Traffic Shaping, and Address
+Allocation features such as NAT and IP Masquerade. While these features
+are available independently in various products, PakSecured Linux
+implements the full range of Policy Routing. All of these features are
+integrated into a hardened OS distribution designed to operate in hostile
+network environments. PakSecured Linux has no desktop or user based
+functionality and is specifically targeted at servers with a need for high
+security, 24x7 uptime, and which are required to run without operator
+intervention. Coupling these needs with the flexibility and power of a
+complete Policy Routing structure puts PakSecured Linux into a unique
+niche.
+
+3. Progressive Systems VPN
+by Progressive Systems
+Platforms: Linux, Propietary Hardware
+Relevant URL:
+http://www.progressive-systems.com/products/vpn/
+Summary:
+
+Progressive Systems VPN is a remote access VPN designed to let you quickly
+and securely allow remote network access to whomever you choose, and to
+only those you allow. Progressive Systems VPN features SmartGate from
+V-One. SmartGate is the market share leading extranet VPN product now
+available for Linux or as an appliance through Progressive Systems.
+
+
+V. NEW TOOLS FOR LINUX PLATFORMS
+--------------------------------
+1. Astaro Security Linux (Stable 3.x) v3.202
+by astaro
+Relevant URL:
+http://www.astaro.com/products/index.html
+Platforms: Linux, POSIX
+Summary:
+
+Astaro Security Linux is a firewall solution. It does stateful packet
+inspection filtering, content filtering, user authentication, virus
+scanning, VPN with IPSec and PPTP, and much more. With its Web-based
+management tool, WebAdmin, and the ability to pull updates via the
+Internet, it is pretty easy to manage. It is based on a special hardened
+Linux 2.4 distribution where most daemons are running in change-roots and
+are protected by kernel capabilities.
+
+2. FCheck 2.07.59
+by Michael A. Gumienny
+Relevant URL:
+http://www.geocities.com/fcheck2000/FCheck_2.07.59.tar.gz
+Platforms: AIX, BSDI, DG-UX, Digital UNIX/Alpha, FreeBSD, HP-UX, Linux,
+NetBSD, OpenBSD, Perl (any system supporting perl), SCO, Solaris, SunOS,
+UNIX, Unixware, Windows 2000, Windows 3.x, Windows 95/98, Windows NT
+Summary:
+
+FCHECK is a very stable PERL script written to generate and comparatively
+monitor a UNIX system against its baseline for any file alterations and
+report them through syslog, console, or any log monitoring interface.
+Monitoring events can be done in as little as one minute intervals if a
+system's drive space is small enough, making it very difficult to
+circumvent. This is a freely-available open-source alternative to
+'tripwire' that is time tested, and is easier to configure and use.
+
+3. The @stake Sleuth Kit (TASK) v1.50
+by @stake
+Relevant uRL:
+http://www.atstake.com/research/tools/task/
+Platforms: FreeBSD, Linux, MacOS, OpenBSD, Solaris
+Summary:
+
+The @stake Sleuth Kit (TASK) is the only open source forensic toolkit for
+a complete analysis of Microsoft and UNIX file systems. TASK enables
+investigators to identify and recover evidence from images acquired during
+incident response or from live systems. TASK is also open source, allowing
+investigators to verify the actions of the tool or customize it to
+specific needs.
+
+
+VI. SPONSORSHIP INFORMATION
+---------------------------
+This newsletter is sponsored by: SecurityFocus DeepSight Threat Management
+System
+
+>>From June 24th - August 31st, 2002, SecurityFocus announces a FREE
+two-week trial of the DeepSight Threat Management System: the only early
+warning system providing customizable and comprehensive early warning of
+cyber attacks and bulletproof countermeasures to prevent attacks before
+they hit your network.
+
+With the DeepSight Threat Management System, you can focus on proactively
+deploying prioritized and specific patches to protect your systems from
+attacks, rather than reactively searching dozens of Web sites or hundreds
+of emails frantically trying to gather information on the attack and how
+to recover from it.
+
+Sign up today!
+http://www.securityfocus.com/corporate/products/promo/tmstrial-lx.shtml
+-------------------------------------------------------------------------------
+
+

@@ -1,0 +1,31 @@
+
+{{alias}}( value )
+    Tests if a value is an alphagram (i.e., a sequence of characters arranged in
+    alphabetical order).
+
+    The function first checks that an input value is a string before validating
+    that the value is an alphagram. For non-string values, the function returns
+    `false`.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is an alphagram.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'beep' )
+    true
+    > out = {{alias}}( 'zba' )
+    false
+    > out = {{alias}}( '' )
+    false
+
+    See Also
+    --------
+

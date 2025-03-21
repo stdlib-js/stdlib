@@ -1,0 +1,28 @@
+
+{{alias}}( [dtype] )
+    Returns a list of ndarray data types to which a provided ndarray data type
+    can be safely cast or cast within the same "kind".
+
+    If not provided an ndarray data type, the function returns a casting table.
+
+    If provided an unrecognized ndarray data type, the function returns `null`.
+
+    Parameters
+    ----------
+    dtype: any (optional)
+        ndarray data type value.
+
+    Returns
+    -------
+    out: Object|Array<string>|null
+        ndarray data types to which a data type can be safely cast or cast
+        within the same "kind".
+
+    Examples
+    --------
+    > var out = {{alias}}( 'float32' )
+    <Array>
+
+    See Also
+    --------
+

@@ -1,0 +1,68 @@
+From fork-admin@xent.com  Tue Aug 20 18:36:48 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 58E2543C32
+	for <jm@localhost>; Tue, 20 Aug 2002 13:36:46 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 18:36:46 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7KHcMZ17606 for <jm@jmason.org>;
+    Tue, 20 Aug 2002 18:38:23 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id BF5C5294102; Tue, 20 Aug 2002 10:36:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hotmail.com (f110.law15.hotmail.com [64.4.23.110]) by
+    xent.com (Postfix) with ESMTP id 43C4D294099 for <fork@xent.com>;
+    Tue, 20 Aug 2002 10:35:20 -0700 (PDT)
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Tue, 20 Aug 2002 10:36:56 -0700
+Received: from 216.30.74.2 by lw15fd.law15.hotmail.msn.com with HTTP;
+    Tue, 20 Aug 2002 17:36:56 GMT
+X-Originating-Ip: [216.30.74.2]
+From: "Russell Turpin" <deafbox@hotmail.com>
+To: fork@spamassassin.taint.org
+Subject: Re: Snag Ware
+MIME-Version: 1.0
+Content-Type: text/plain; format=flowed
+Message-Id: <F110TDwMiUtmGc7adXT0000f5b7@hotmail.com>
+X-Originalarrivaltime: 20 Aug 2002 17:36:56.0894 (UTC) FILETIME=[2E3AD5E0:01C24870]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 20 Aug 2002 17:36:56 +0000
+
+Joseph S. Barrera III:
+>I just use the free/adware version of Opera. I mean,
+>half the pages I look at have ads on them anways ..
+
+I didn't mind the ads. The problem is that the ad
+server Opera puts on your machine is a PIG. Every
+time it goes to change the ad, it thrashes my
+laptop for thirty seconds. So no, I don't mind
+the ad, but I do mind that serving ads cripples
+the browser.
+
+Alas, Mozilla is also a PIG. So I'm back to using
+IE, which seems to be the only free, reasonably
+featured browser that runs decently on my laptop.
+I'm open to alternatives ..
+
+
+
+_________________________________________________________________
+MSN Photos is the easiest way to share and print your photos: 
+http://photos.msn.com/support/worldwide.aspx
+
+http://xent.com/mailman/listinfo/fork
+

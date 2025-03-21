@@ -1,0 +1,97 @@
+
+{{alias}}( x, N, K, n )
+    Evaluates the probability mass function (PMF) for a hypergeometric
+    distribution with population size `N`, subpopulation size `K`, and number of
+    draws `n` at a value `x`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided a population size `N`, subpopulation size `K` or draws `n` which
+    is not a nonnegative integer, the function returns `NaN`.
+
+    If the number of draws `n` or the subpopulation size `K` exceed population
+    size `N`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    N: integer
+        Population size.
+
+    K: integer
+        Subpopulation size.
+
+    n: integer
+        Number of draws.
+
+    Returns
+    -------
+    out: number
+        Evaluated PMF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 1.0, 8, 4, 2 )
+    ~0.571
+    > y = {{alias}}( 2.0, 8, 4, 2 )
+    ~0.214
+    > y = {{alias}}( 0.0, 8, 4, 2 )
+    ~0.214
+    > y = {{alias}}( 1.5, 8, 4, 2 )
+    0.0
+
+    > y = {{alias}}( NaN, 10, 5, 2 )
+    NaN
+    > y = {{alias}}( 0.0, NaN, 5, 2 )
+    NaN
+    > y = {{alias}}( 0.0, 10, NaN, 2 )
+    NaN
+    > y = {{alias}}( 0.0, 10, 5, NaN )
+    NaN
+
+    > y = {{alias}}( 2.0, 10.5, 5, 2 )
+    NaN
+    > y = {{alias}}( 2.0, 5, 1.5, 2 )
+    NaN
+    > y = {{alias}}( 2.0, 10, 5, -2.0 )
+    NaN
+    > y = {{alias}}( 2.0, 10, 5, 12 )
+    NaN
+    > y = {{alias}}( 2.0, 8, 3, 9 )
+    NaN
+
+
+{{alias}}.factory( N, K, n )
+    Returns a function for evaluating the probability mass function (PMF) of a
+    hypergeometric distribution with population size `N`, subpopulation size
+    `K`, and number of draws `n`.
+
+    Parameters
+    ----------
+    N: integer
+        Population size.
+
+    K: integer
+        Subpopulation size.
+
+    n: integer
+        Number of draws.
+
+    Returns
+    -------
+    pmf: Function
+        Probability mass function (PMF).
+
+    Examples
+    --------
+    > var myPMF = {{alias}}.factory( 30, 20, 5 );
+    > var y = myPMF( 4.0 )
+    ~0.34
+    > y = myPMF( 1.0 )
+    ~0.029
+
+    See Also
+    --------
+

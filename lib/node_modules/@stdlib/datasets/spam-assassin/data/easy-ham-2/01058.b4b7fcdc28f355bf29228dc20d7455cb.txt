@@ -1,0 +1,66 @@
+From fork-admin@xent.com  Mon Aug 19 11:04:22 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C15FC441AD
+	for <jm@localhost>; Mon, 19 Aug 2002 05:55:28 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:55:28 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7HJ7V607870 for <jm@jmason.org>;
+    Sat, 17 Aug 2002 20:07:34 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 5CA252940D7; Sat, 17 Aug 2002 12:05:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from rwcrmhc52.attbi.com (rwcrmhc52.attbi.com [216.148.227.88])
+    by xent.com (Postfix) with ESMTP id 6CEA8294098 for <fork@xent.com>;
+    Sat, 17 Aug 2002 12:04:33 -0700 (PDT)
+Received: from localhost ([24.61.140.132]) by rwcrmhc52.attbi.com
+    (InterMail vM.4.01.03.27 201-229-121-127-20010626) with ESMTP id
+    <20020817190553.VAMY1186.rwcrmhc52.attbi.com@localhost> for
+    <fork@xent.com>; Sat, 17 Aug 2002 19:05:53 +0000
+From: bitbitch@magnesium.net
+X-Mailer: The Bat! (v1.53d) Educational
+Reply-To: bitbitch@magnesium.net
+X-Priority: 3 (Normal)
+Message-Id: <19717091666.20020817150551@magnesium.net>
+To: fork@spamassassin.taint.org
+Subject: Heh heh heh -- Geekmod!
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sat, 17 Aug 2002 15:05:51 -0400
+
+Hello fork,
+
+  Whilst digitally meandering around google answers
+  (answers.google.com) I came upon an interesting question:  'Whats
+  the coolest geektoy for under $50'  and an equally nifty answer
+  (albiet a bit off the mark for the question, but it wasn't my money,
+  so who cares).
+
+  http://www.soundwise.org/id49.htm
+
+  Hee.   Visualization with real lights instead of just winamp.
+  Sliiiiccckk.
+
+-- 
+Best regards,
+ bitbitch                          mailto:bitbitch@magnesium.net
+
+
+http://xent.com/mailman/listinfo/fork
+

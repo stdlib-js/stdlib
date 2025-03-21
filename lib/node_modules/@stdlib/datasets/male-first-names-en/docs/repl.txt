@@ -1,0 +1,22 @@
+
+{{alias}}()
+    Returns a list of common male first names in English speaking countries.
+
+    Returns
+    -------
+    out: Array<string>
+        List of common male first names.
+
+    Examples
+    --------
+    > var list = {{alias}}()
+    [ 'Aaron', 'Ab', 'Abba', 'Abbe', ... ]
+
+    References
+    ----------
+    - Ward, Grady. 2002. 'Moby Word II.' <http://www.gutenberg.org/files/3201/
+    3201.txt>.
+
+    See Also
+    --------
+

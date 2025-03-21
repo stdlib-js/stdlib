@@ -1,0 +1,22 @@
+
+{{alias}}( str )
+    Removes a UTF-8 byte order mark (BOM) from the beginning of a `string`.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    Returns
+    -------
+    out: string
+        String with BOM removed.
+
+    Examples
+    --------
+    > var out = {{alias}}( '\ufeffbeep' )
+    'beep'
+
+    See Also
+    --------
+

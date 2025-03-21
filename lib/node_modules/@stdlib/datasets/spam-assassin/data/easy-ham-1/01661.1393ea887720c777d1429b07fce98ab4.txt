@@ -1,0 +1,75 @@
+Return-Path: neale@woozle.org
+Delivery-Date: Fri Sep  6 18:13:17 2002
+From: neale@woozle.org (Neale Pickett)
+Date: 06 Sep 2002 10:13:17 -0700
+Subject: [Spambayes] Deployment
+In-Reply-To: <200209061506.g86F6Qo14777@pcp02138704pcs.reston01.va.comcast.net>
+References: <200209061431.g86EVM114413@pcp02138704pcs.reston01.va.comcast.net>
+	<15736.50015.881231.510395@12-248-11-90.client.attbi.com>
+	<200209061506.g86F6Qo14777@pcp02138704pcs.reston01.va.comcast.net>
+Message-ID: <w53lm6fca8i.fsf@woozle.org>
+
+So then, Guido van Rossum <guido@python.org> is all like:
+
+> > Basic procmail usage goes something like this:
+> > 
+> >     :0fw
+> >     | spamassassin -P
+> > 
+> >     :0
+> >     * ^X-Spam-Status: Yes
+> >     $SPAM
+> > 
+> 
+> Do you feel capable of writing such a tool?  It doesn't look too hard.
+
+Not to beat a dead horse, but that's exactly what my spamcan package
+did.  For those just tuning in, spamcan is a thingy I wrote before I
+knew about Tim & co's work on this crazy stuff; you can download it from
+<http://woozle.org/~neale/src/spamcan/spamcan.html>, but I'm not going
+to work on it anymore.
+
+I'm currently writing a new one based on classifier (and timtest's
+booty-kicking tokenizer).  I'll probably have something soon, like maybe
+half an hour, and no, it's not too hard.  The hard part is storing the
+data somewhere.  I don't want to use ZODB, as I'd like something a
+person can just drop in with a default Python install.  So anydbm is
+looking like my best option.
+
+I already have a setup like this using Xavier Leroy's SpamOracle, which
+does the same sort of thing.  You call it from procmail, it adds a new
+header, and then you can filter on that header.  Really easy.
+
+Here's how I envision this working.  Everybody gets four new mailboxes:
+
+  train-eggs
+  train-spam
+  trained-eggs
+  trained-spam
+
+You copy all your spam and eggs* into the "train-" boxes as you get it.
+How frequently you do this would be up to you, but you'd get better
+results if you did it more often, and you'd be wise to always copy over
+anything which was misclassified.  Then, every night, the spam fairy
+swoops down and reads through your folders, learning about what sorts of
+things you think are eggs and what sorts of things are spam.  After she's
+done, she moves your mail into the "trained-" folders.
+
+This would work for anybody using IMAP on a Unix box, or folks who read
+their mail right off the server.  I've spoken with some fellows at work
+about Exchange and they seem to beleive that Exchange exports
+appropriate functionality to implement a spam fairy as well.
+
+Advanced users could stay ahead of the game by reprogramming their mail
+client to bind the key "S" to "move to train-spam" and "H" to "move to
+train-eggs".  Eventually, if enough people used this sort of thing, it'd
+start showing up in mail clients.  That's the "delete as spam" button
+Paul Graham was talking about.
+
+* The Hormel company might not think well of using the word "ham" as the
+  opposite of "spam", and they've been amazingly cool about the use of
+  their product name for things thus far.  So I propose we start calling
+  non-spam something more innocuous (and more Monty Pythonic) such as
+  "eggs".
+
+Neale

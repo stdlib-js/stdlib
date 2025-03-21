@@ -1,0 +1,81 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6P0noi5039766
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Wed, 24 Jul 2002 19:49:50 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6P0noq9039754
+	for cypherpunks-forward@ds.pro-ns.net; Wed, 24 Jul 2002 19:49:50 -0500 (CDT)
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6P0nfi5039680
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks@ds.pro-ns.net>; Wed, 24 Jul 2002 19:49:43 -0500 (CDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: from waste.minder.net (daemon@waste [66.92.53.73])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6P0neJ58304
+	for <cypherpunks@ds.pro-ns.net>; Wed, 24 Jul 2002 20:49:40 -0400 (EDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: (from cpunks@localhost)
+	by waste.minder.net (8.11.6/8.11.6) id g6P0ncr08201
+	for cypherpunks@ds.pro-ns.net; Wed, 24 Jul 2002 20:49:38 -0400
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by waste.minder.net (8.11.6/8.11.6) with ESMTP id g6P0naR08175
+	for <cpunks@minder.net>; Wed, 24 Jul 2002 20:49:36 -0400
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6P0nYJ58290
+	for <cpunks@minder.net>; Wed, 24 Jul 2002 20:49:35 -0400 (EDT)
+	(envelope-from cpunks@einstein.ssz.com)
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id TAA13505
+	for cpunks@minder.net; Wed, 24 Jul 2002 19:58:14 -0500
+Received: (from mdom@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id TAA13480
+	for cypherpunks-outgoing; Wed, 24 Jul 2002 19:57:56 -0500
+Received: from national-adv.com (squid@gw-goold.augusta.mint.net [216.227.131.17])
+	by einstein.ssz.com (8.8.8/8.8.8) with SMTP id TAA13446
+	for <cypherpunks@einstein.ssz.com>; Wed, 24 Jul 2002 19:57:27 -0500
+From: qdaaobwe@national-adv.com
+Message-ID: <XJFIEESSSS35293845076959780906586-qdaaobwe>
+Date: Thu, 25 Jul 2002 08:54:14 +1000
+To: <cypherpunks@einstein.ssz.com>
+Old-Subject: CDR: BOOST Your Cell Phone!
+MIME-Version: 1.0
+Content-Type: text/html
+Sender: owner-cypherpunks@einstein.ssz.com
+Precedence: bulk
+Reply-To: cypherpunks@einstein.ssz.com
+X-Mailing-List: cypherpunks@ssz.com
+X-Unsubscription-Info: http://einstein.ssz.com/cdr
+X-List-Admin: list@ssz.com
+X-Loop: ssz.com
+X-Acceptable-Languages: English, Russian, German, French, Spanish
+Subject: BOOST Your Cell Phone!
+
+<HTML><P ALIGN=CENTER><FONT  SIZE=2 PTSIZE=10 FAMILY="SANSSERIF" FACE="Arial" LANG="0"><B>SAY GOODBYE <BR>
+TO Dropped calls Forever!<BR>
+</FONT><FONT  COLOR="#ff0000" BACK="#ffffff" style="BACKGROUND-COLOR: #ffffff" SIZE=2 PTSIZE=10 FAMILY="SANSSERIF" FACE="Arial" LANG="0">New Technological Breakthrough</FONT><FONT  COLOR="#000000" BACK="#ffffff" style="BACKGROUND-COLOR: #ffffff" SIZE=2 PTSIZE=10 FAMILY="SANSSERIF" FACE="Arial" LANG="0"><BR>
+ for Cell Phones, Pcs Phones and Cordless Phones!<BR>
+Special Members Only Deal!!<BR>
+&nbsp; <A HREF="http://www.optin.national-adv.com/cellbooster">They Will Sell Out Fast!!! Click Here Now And end dropped calls FOREVER!</A> <BR>
+</B></P></FONT>
+<br><br><br><br><br><br>
+<p align="center">
+<a href="http://optin.national-adv.com/unsubscribe">CLick Here To Unsubscribe From Our Mailing List</a>
+</p>
+
+
+qdaaobwe</HTML>
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

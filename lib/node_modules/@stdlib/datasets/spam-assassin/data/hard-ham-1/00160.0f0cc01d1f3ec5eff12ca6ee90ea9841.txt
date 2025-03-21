@@ -1,0 +1,506 @@
+Return-Path: nobody@example.com
+Delivery-Date: Wed Sep 18 00:00:00 1972
+Received: from timhunt.net (ns1.timhunt.net [216.27.147.130])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6Q4AC423036
+	for <tim_timhunt_net@spamtraps.taint.org>; Fri, 26 Jul 2002 05:10:13 +0100
+Received: from applenews.lists.apple.com (applenews.lists.apple.com [17.254.0.152])
+	by timhunt.net (8.11.3/8.11.1) with ESMTP id g6Q49SE45947
+	for <sagfsg@fsg.com>; Fri, 26 Jul 2002 00:09:28 -0400 (EDT)
+	(envelope-from owner-quicktime_news@applenews.lists.apple.com)
+Received: from localhost (daemon@localhost)
+        by applenews.lists.apple.com (8.11.6/8.11.6) with SMTP id g6Q3QAX10809
+        ; Thu, 25 Jul 2002 20:26:10 -0700 (PDT)
+Date: Thu, 25 Jul 2002 20:26:10 -0700 (PDT)
+Errors-to: owner-quicktime_news@applenews.lists.apple.com
+Received: by applenews.lists.apple.com (ulkbay_ailermay v1.5); Thu, 25 Jul 2002 20:13:25 -0700
+To: QuickTime News <quicktime_news@applenews.lists.apple.com>
+From: QuickTime News <quicktime_news@applenews.lists.apple.com>
+Subject: QuickTime News: July 26, 2002
+MIME-Version: 1.0
+Content-Type: multipart/alternative; charset=us-ascii;
+	boundary="This_is_the_boundary_hip_ho"
+Content-Transfer-Encoding: 7bit
+Precedence: bulk
+Message-ID: <bulk.1889.20020725201325@applenews.lists.apple.com>
+
+
+--This_is_the_boundary_hip_ho
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+You appear to be using an email application that won't properly
+display the graphical (or HTML) version of our newsletter. Because
+we want you to enjoy reading QuickTime News, we recommend that you
+visit the following site and switch to the plain text version of
+this newsletter:
+
+    http://www.apple.com/enews/change/
+
+If you have trouble reading today's issue of QuickTime News, please
+consider visiting the following web page where it has been posted
+for your enjoyment:
+
+    http://www.apple.com/enews/currentqissue/
+    
+If you receive a blank message with an enclosure, drag the enclosure
+into the window of your web browser and today's issue of QuickTime News
+will display in your web browser.
+
+Thank you.
+
+
+--This_is_the_boundary_hip_ho
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>QuickTime News: July 26, 2002</title>
+	<meta name="generator" content="BBEdit 6.0.1">
+</head>
+<body background="http://a772.g.akamai.net/7/772/51/c241f0d493a981/www.apple.com/enews/eimages/stripes.gif" bgcolor="#CCCCCC">
+
+<!-- START MAIN TABLE -->
+<a name="top"></a>
+
+<table border="0" width="600" cellspacing="0" cellpadding="0" align="center">
+	<tr>
+		<td><img src="http://a772.g.akamai.net/7/772/51/9fa804f4688ffc/www.apple.com/enews/2002/05/images/box-topleft.gif" alt="" width="1" height="14" border="0"></td>
+		<td><img src="http://a772.g.akamai.net/7/772/51/c22ed219eeb953/www.apple.com/enews/2002/05/images/box-topmiddle.gif" alt="" width="598" height="14" border="0"></td>
+		<td><img src="http://a772.g.akamai.net/7/772/51/97518749dde4f5/www.apple.com/enews/2002/05/images/box-topright.gif" alt="" width="1" height="14" border="0"></td>
+	</tr>
+	<tr>
+		<td bgcolor="#7e7e7e"><img src="http://a772.g.akamai.net/7/772/51/84485f130fd0fe/www.apple.com/enews/eimages/spacer.gif" alt="" width="1" height="1" border="0"></td>
+		<td bgcolor="#ffffff">
+		<a href="http://www.apple.com/quicktime/"><img src="http://a772.g.akamai.net/7/772/51/8c1280c5572c24/www.apple.com/enews/2002/05/images/logo-quicktime.gif" alt="" width="366" height="52" border="0"></a><a href="http://www.apple.com/enews/schedule/"><img src="http://a772.g.akamai.net/7/772/51/405c7d71bf1a3b/www.apple.com/enews/2002/07/images/26vol.gif" alt="" width="232" height="52" border="0"></a><br>
+		<a href="http://www.apple.com/hotnews/"><img src="http://a1552.g.akamai.net/7/1552/51/1e05f706dc3a33/www.apple.com/enews/2002/07/images/25ticker.gif" alt="" width="598" height="28" border="0"></a><br><br>
+		
+		<table border="0" cellpadding="0" cellspacing="0" width="598">
+			<tr>
+				<td><img src="http://a772.g.akamai.net/7/772/51/84485f130fd0fe/www.apple.com/enews/eimages/spacer.gif" alt="" width="8" height="1" border="0"></td>
+				<td valign="top">
+				<img src="http://a772.g.akamai.net/7/772/51/93e5c294690bb5/www.apple.com/enews/eimages/thisissue.gif" alt="In This Issue:" width="150" height="40" border="0"><br>
+				<a href="#article1"><img src="http://a772.g.akamai.net/7/772/51/3efcf8160adc84/www.apple.com/enews/eimages/toc_arrow.gif" alt="" width="11" height="20" border="0"><img src="http://a772.g.akamai.net/7/772/51/bb9fb46de41f5f/www.apple.com/enews/2002/07/images/26qtc1.gif" alt="" width="340" height="20" border="0"></a><br>
+				<a href="#article2"><img src="http://a772.g.akamai.net/7/772/51/3efcf8160adc84/www.apple.com/enews/eimages/toc_arrow.gif" alt="" width="11" height="20" border="0"><img src="http://a772.g.akamai.net/7/772/51/f8e16e24427062/www.apple.com/enews/2002/07/images/26qtc2.gif" alt="" width="340" height="20" border="0"></a><br>
+				<a href="#article3"><img src="http://a772.g.akamai.net/7/772/51/3efcf8160adc84/www.apple.com/enews/eimages/toc_arrow.gif" alt="" width="11" height="20" border="0"><img src="http://a772.g.akamai.net/7/772/51/95c481448e9005/www.apple.com/enews/2002/07/images/26qtc3.gif" alt="" width="340" height="20" border="0"></a><br>
+				<a href="#article4"><img src="http://a772.g.akamai.net/7/772/51/3efcf8160adc84/www.apple.com/enews/eimages/toc_arrow.gif" alt="" width="11" height="20" border="0"><img src="http://a772.g.akamai.net/7/772/51/67f3124e242d18/www.apple.com/enews/2002/07/images/26qtc4.gif" alt="" width="340" height="20" border="0"></a><br>
+				<a href="#article5"><img src="http://a772.g.akamai.net/7/772/51/3efcf8160adc84/www.apple.com/enews/eimages/toc_arrow.gif" alt="" width="11" height="20" border="0"><img src="http://a772.g.akamai.net/7/772/51/9562dd6341274e/www.apple.com/enews/eimages/toc_qtpark.gif" alt="" width="340" height="20" border="0"></a><br>
+				<a href="#article1"><img src="http://a772.g.akamai.net/7/772/51/3efcf8160adc84/www.apple.com/enews/eimages/toc_arrow.gif" alt="" width="11" height="20" border="0"><img src="http://a772.g.akamai.net/7/772/51/7cee5fe5dea417/www.apple.com/enews/eimages/toc_qtmusic.gif" alt="" width="340" height="20" border="0"></a><br>
+				<a href="#article7"><img src="http://a772.g.akamai.net/7/772/51/3efcf8160adc84/www.apple.com/enews/eimages/toc_arrow.gif" alt="" width="11" height="20" border="0"><img src="http://a772.g.akamai.net/7/772/51/5de80697882f02/www.apple.com/enews/eimages/toc_quicktakes.gif" alt="" width="340" height="20" border="0"></a><br>
+				</td>
+				<td>
+				<a href="http://www.apple.com/trailers/wb/matrix_reloaded.html"><img src="http://a772.g.akamai.net/7/772/51/f12e1402a6f4b5/www.apple.com/enews/2002/07/images/matrix2.jpg" alt="" width="160" height="132" border="0"></a>
+				</td>
+			</tr>
+		</table>
+		<br>
+		
+		<table border="0" cellpadding="0" cellspacing="0" width="598">
+			<tr>
+				<td bgcolor="#e5e5e5" colspan="3"><img src="http://a772.g.akamai.net/7/772/51/358f94896524e7/www.apple.com/enews/2002/05/images/greypixel.gif" alt="" width="598" height="1" border="0"></td>
+			</tr>
+			<tr>
+				<td bgcolor="#ffffff" valign="top" width="377">
+				<img src="http://a772.g.akamai.net/7/772/51/84485f130fd0fe/www.apple.com/enews/eimages/spacer.gif" alt="" width="377" height="1" border="0">
+				
+				<!-- Article 1 --><a name="article1"></a>
+				<table border="0" cellpadding="8" cellspacing="0">
+					<tr>
+						<td><font size=2 face="Lucida Grande,Geneva,Arial,Helvetica,sans-serif" class="L12">
+						<a href="#top"><img src="http://a772.g.akamai.net/7/772/51/05d9778050e4e9/www.apple.com/enews/2002/07/images/26qh1.gif" alt="" width="344" height="27" border="0"></a><br>
+
+						<a href="http://www.apple.com/hotnews/articles/2002/07/mwny/"><img src="http://a772.g.akamai.net/7/772/51/78c70455db9bfe/www.apple.com/enews/2002/07/images/nycab.jpg" alt="" width="155" height="121" border="0" align="left"></a>
+						On July 17, tens of thousands packed New York City&#146;s Jacob K. Javitz
+						Center&#151;and more than 50,000 tuned in online &#151; to watch Apple CEO
+						Steve Jobs unveil exciting new Apple products and technologies at
+						Macworld.
+						<br><br>
+						Miss the keynote? Not to worry, we already have an <a href="http://www.apple.com/quicktime/qtv/mwny02/">MPEG-4 stream</a>
+						available on our website.
+						<br><br>
+						What can you expect to see?
+						<br><br>
+						Watch Jobs highlight the amazing new features&#151;there are over
+						150 of them&#151;in Jaguar, Mac OS X v10.2, due to ship in late August.
+						Learn about the new benefits of Apple&#146;s online .Mac service. And
+						check out the new 17-inch widescreen iMac, as well as the newest
+						iPod models&#151;including iPod for Windows.
+						</font>
+						</td>
+					</tr>
+				</table>
+				
+				<img src="http://a772.g.akamai.net/7/772/51/358f94896524e7/www.apple.com/enews/2002/05/images/greypixel.gif" alt="" width="377" height="1" border="0">
+				
+				<!-- Article 2 --><a name="article2"></a>
+				<table border="0" cellpadding="8" cellspacing="0">
+					<tr>
+						<td><font size=2 face="Lucida Grande,Geneva,Arial,Helvetica,sans-serif" class="L12">
+						<a href="#top"><img src="http://a772.g.akamai.net/7/772/51/de19f93c7c8fd5/www.apple.com/enews/2002/07/images/26qh2.gif" alt="" width="344" height="27" border="0"></a><br>
+
+						<a href="http://www.apple.com/quicktime/products/qt/"><img src="http://a772.g.akamai.net/7/772/51/b34cb1cb78c08a/www.apple.com/enews/2002/07/images/QTlogo.gif" alt="" width="100" height="82" border="0" align="left"></a>
+						QuickTime 6 is now available for <a href="http://www.apple.com/quicktime/download/">download</a>.
+						<br><br>
+						Incorporating MPEG-4 and its next-generation digital media
+						technology, QuickTime 6 delivers an unparalleled multimedia
+						experience. It features:
+						<br clear="all"><br>
+						<table border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td valign="top"><font size=2 face="Lucida Grande,Geneva,Arial,Helvetica,sans-serif" class="L12">&#149;&nbsp;&nbsp; </font></td>
+								<td valign="top"><font size=2 face="Lucida Grande,Geneva,Arial,Helvetica,sans-serif" class="L12">Instant-On streaming. No more waiting through buffer delays.
+						Instant-On gives you instant access to whatever section of a movie
+						you want to jump to.</font></td>
+							</tr>
+							<tr>
+								<td valign="top"><font size=2 face="Lucida Grande,Geneva,Arial,Helvetica,sans-serif" class="L12">&#149;&nbsp;&nbsp; </font></td>
+								<td valign="top"><font size=2 face="Lucida Grande,Geneva,Arial,Helvetica,sans-serif" class="L12">Advanced Audio Coding (AAC). The new standard in professional audio,
+						AAC provides more efficient compression than ever yet delivers
+						sound quality rivaling that of uncompressed CD audio.</font></td>
+							</tr>
+							<tr>
+								<td valign="top"><font size=2 face="Lucida Grande,Geneva,Arial,Helvetica,sans-serif" class="L12">&#149;&nbsp;&nbsp; </font></td>
+								<td valign="top"><font size=2 face="Lucida Grande,Geneva,Arial,Helvetica,sans-serif" class="L12">An updated user interface. Accessing QuickTime content is now easier
+						than ever. We&#146;ve also added a new Favorites menu, so you can bookmark
+						you favorite QuickTime movies.</font></td>
+							</tr>
+						</table>
+						<br>
+						And that&#146;s just the <a href="http://www.apple.com/quicktime/products/qt/">beginning</a> of the great QuickTime 6 story.
+
+						</font>
+						</td>
+					</tr>
+				</table>
+				
+				<img src="http://a772.g.akamai.net/7/772/51/358f94896524e7/www.apple.com/enews/2002/05/images/greypixel.gif" alt="" width="377" height="1" border="0">
+				
+				<!-- Article 3 --><a name="article3"></a>
+				<table border="0" cellpadding="8" cellspacing="0">
+					<tr>
+						<td><font size=2 face="Lucida Grande,Geneva,Arial,Helvetica,sans-serif" class="L12">
+						<a href="#top"><img src="http://a772.g.akamai.net/7/772/51/fa075b8742884b/www.apple.com/enews/2002/07/images/26qh3.gif" alt="" width="344" height="27" border="0"></a><br>
+						
+						<a href="http://www.apple.com/ipod/"><img src="http://a772.g.akamai.net/7/772/51/c69266217d00c8/www.apple.com/enews/2002/07/images/ipodwin.jpg" alt="" width="155" height="165" border="0" align="left"></a>
+						We know that QuickTime News readers love music. And soon, more of
+						you will be able to take your favorite tunes with you wherever you
+						go. That&#146;s because iPod, Apple&#146;s incredibly popular MP3 player, is
+						now available for both Mac and Windows users.
+						<br><br>
+
+						<a href="http://www.apple.com/ipod">iPod for Windows</a> comes with the leading jukebox software for
+						PCs&#151;MUSICMATCH Jukebox Plus. So you can easily manage your digital
+						music library. Quickly transfer your music collection&#151;and
+						playlists&#151;to iPod via FireWire. Automatically sync with iPod when
+						your music library changes. And use it to convert your music CDs,
+						tapes and vinyl to MP3s.
+						<br><br>
+						iPod for Windows ships in August, but you can order yours today from
+						the Apple Store. 
+
+
+						
+						</font>
+						</td>
+					</tr>
+				</table>
+				
+				<img src="http://a772.g.akamai.net/7/772/51/358f94896524e7/www.apple.com/enews/2002/05/images/greypixel.gif" alt="" width="377" height="1" border="0">
+				
+				<!-- Article 4 --><a name="article4"></a>
+				<table border="0" cellpadding="8" cellspacing="0">
+					<tr>
+						<td><font size=2 face="Lucida Grande,Geneva,Arial,Helvetica,sans-serif" class="L12">
+						<a href="#top"><img src="http://a772.g.akamai.net/7/772/51/eb4a44cf4859cc/www.apple.com/enews/2002/07/images/26qh4.gif" alt="" width="344" height="28" border="0"></a><br><br>
+
+						<a href="http://www.apple.com/quicktime/whatson/"><img src="http://a772.g.akamai.net/7/772/51/ded24b6aeecb8f/www.apple.com/enews/2002/07/images/ozzy.jpg" alt="" width="130" height="113" border="0" align="left"></a>
+						Like to find great QuickTime content all in one place? Visit our new
+						streamlined website. You&#146;ll now find links to a vast assortment of
+						QuickTime video and audio consolidated onto our new <a href="http://www.apple.com/quicktime/whatson/">What&#146;s On</a> page.
+						<br><br>
+						Tune in, for example, to Ozzy Osbourne. Enjoying new-found celebrity
+						thanks to his hit cable series, Ozzy performs &#147;Junkie&#148; live at Budokan on Epic 
+						Records&#146; New Music Mondays.
+						<br><br>
+						Or explore the surreal world of realMyst. MacPlay&#146;s 3D version of
+						the classic game Myst takes you on a dreamlike journey of mystical
+						adventure. Is it really just a game?
+						<br><br>
+						Jump back into reality by visiting VRway. Over 3000 QuickTime VRs
+						take you to some of the most beautiful sites of Europe.
+						
+						</font>
+						</td>
+					</tr>
+				</table>
+				
+				
+				<img src="http://a772.g.akamai.net/7/772/51/358f94896524e7/www.apple.com/enews/2002/05/images/greypixel.gif" alt="" width="377" height="1" border="0">
+
+				<!-- Article 4b --><a name="article4"></a>
+				<table border="0" cellpadding="8" cellspacing="0">
+					<tr>
+						<td><font size=2 face="Lucida Grande,Geneva,Arial,Helvetica,sans-serif" class="L12">
+						<a href="#top"><img src="http://a772.g.akamai.net/7/772/51/74d5945dcc6372/www.apple.com/enews/2002/05/images/03qh4.gif" alt="" width="344" height="27" border="0"></a><br>
+
+						<a href="http://www.apple.com/quicktime/upgrade/"><img src="http://a772.g.akamai.net/7/772/51/5d9f53de4124f7/www.apple.com/enews/2002/07/images/qtpro.jpg" alt="" width="140" height="125" border="0" align="left"></a>
+						Eager to author content in the new international standard format for
+						the Internet&#151;MPEG-4? Now you can do so easily by upgrading to
+						QuickTime 6 Pro.
+						<br><br>
+						With QuickTime 6 Pro, not only can you harness the power of MPEG-4,
+						but you can play movies in full screen, edit movies by simply
+						cutting and pasting, prepare movies for streaming.
+						<br><br>
+						Learn more about <a href="http://www.apple.com/quicktime/upgrade/">QuickTime 6 Pro</a> on our website.
+						
+						<p align="center">
+						<img src="http://a772.g.akamai.net/7/772/51/82815b4b56f654/www.apple.com/enews/eimages/separator.jpg" alt="" width="33" height="12" border="0" align="middle">				
+						</p>
+						
+						For those of you who want the ability to preview MPEG-2 content, we
+						now offer the <a href="http://www.apple.com/quicktime/products/mpeg2playback/">QuickTime 6 MPEG-2 Playback Component</a>, available for
+						purchase at the online Apple Store.
+						<br><br>
+						By adding this component to QuickTime 6, you have the perfect tool
+						for previewing and sharing your work with your clients throughout
+						the production process.
+						
+						</font>
+						</td>
+					</tr>
+				</table>
+				
+				
+				<img src="http://a772.g.akamai.net/7/772/51/358f94896524e7/www.apple.com/enews/2002/05/images/greypixel.gif" alt="" width="377" height="1" border="0">
+				
+				<!-- Article 5 --><a name="article5"></a>
+				<table border="0" cellpadding="8" cellspacing="0">
+					<tr>
+						<td><font size=2 face="Lucida Grande,Geneva,Arial,Helvetica,sans-serif" class="L12">
+						<a href="#top"><img src="http://a772.g.akamai.net/7/772/51/b1ef1322d15e1c/www.apple.com/enews/2002/05/images/31qh6.gif" alt="" width="204" height="27" border="0"></a><br>
+						
+						<a href="http://www.apple.com/trailers/touchstone/signs/"><img src="http://a772.g.akamai.net/7/772/51/fe5a07ea09f1a8/www.apple.com/enews/2002/07/images/signs.jpg" alt="" width="105" height="150" border="0" align="right"></a>
+						In rural Pennsylvania, pastor Graham Hess and his family are
+						terrified when mysterious giant crop circles appear in their
+						cornfield&#151;as well as around the world. Is it a sign from alien
+						beings? Or something else?
+						<br><br>
+						Starring Mel Gibson and directed by M. Night Shyamalan (&#147;The Sixth
+						Sense&#148;), &#147;<a href="http://www.apple.com/trailers/touchstone/signs/">Signs</a>&#148; opens in U.S. theaters on August 2.
+						<br><br>
+						Some believe that supernatural forces create crop circles, while
+						others remain skeptical. To help you decide, Touchstone Pictures
+						presents images of actual circles, as well as interviews with
+						witnesses and experts. Click on &#147;<a href="http://bventertainment.go.com/movies/signs/">Is it a Sign?</a>&#148; to find out more.
+
+						</font>
+						</td>
+					</tr>
+				</table>
+				
+				<img src="http://a772.g.akamai.net/7/772/51/358f94896524e7/www.apple.com/enews/2002/05/images/greypixel.gif" alt="" width="377" height="1" border="0">
+				
+				<table border="0" cellpadding="8" cellspacing="0" width="100%">
+					<tr>
+						<td align="center"><font size=2 face="Lucida Grande,Geneva,Arial,Helvetica,sans-serif" class="L12">
+						
+						We hope you enjoyed reading this issue of QuickTime News.<br>
+						We&#146;ll send your next issue on August 9.<br>
+						</font>
+						</td>
+					</tr>
+				</table>
+
+				</td>
+				<td bgcolor="#e5e5e5" width="1"><img src="http://a772.g.akamai.net/7/772/51/358f94896524e7/www.apple.com/enews/2002/05/images/greypixel.gif" alt="" width="1" height="1" border="0"></td>
+				<td bgcolor="#ffffff" valign="top" width="220">
+				<img src="http://a772.g.akamai.net/7/772/51/84485f130fd0fe/www.apple.com/enews/eimages/spacer.gif" alt="" width="220" height="1" border="0"><br>
+				
+				<!-- Article 5 --><a name="article1"></a>
+				<table border="0" cellpadding="8" cellspacing="0">
+					<tr>
+						<td><font size=2 face="Lucida Grande,Geneva,Arial,Helvetica,sans-serif" class="L12">
+						<a href="#top"><img src="http://a772.g.akamai.net/7/772/51/6f9427aa8f03c0/www.apple.com/enews/2002/05/images/03qh5.gif" alt="" width="204" height="27" border="0"></a><br>
+
+						<a href="http://getmusic.com/microsites/michaelbolton/"><img src="http://a772.g.akamai.net/7/772/51/3d1a049d1ddfe2/www.apple.com/enews/2002/07/images/MBoltonCD.jpg" alt="" width="100" height="100" border="0" align="left"></a>
+						After four years out of the spotlight, singer/songwriter Michael
+						Bolton returns with a new album, &#147;<a href="http://www.michaelboltonmusic.com">Only a Woman Like You</a>.&#148; Watch the
+						video for the first single (which bears the same name as the album),
+						co-written by Bolton, country sensation Shania Twain, and her
+						husband, record producer Mutt Lang.
+						
+						<p align="center">
+						<img src="http://a772.g.akamai.net/7/772/51/82815b4b56f654/www.apple.com/enews/eimages/separator.jpg" alt="" width="33" height="12" border="0" align="middle">				
+						</p>
+						
+						<a href="http://www.bethorton.mu"><img src="http://a772.g.akamai.net/7/772/51/6e4cdf6a36f414/www.apple.com/enews/2002/07/images/bethorton.jpg" alt="" border="0" align="right"></a>
+						Beth Orton&#151;the British singer/songwriter whose eagerly awaited third album arrives 
+						on US store shelves next week&#151;invited a few vocal friends to join her on &#147;<a href="http://www.bethorton.mu">Daybreaker</a>.&#148;
+						Like Emmylou Harris (who chimes in on &#147;God Song&#148;), the Chemical Brothers, Ben Watt, Johnny Marr and William Orbit.
+						<br><br>
+						Visit Orton&#146;s site and watch the music <i>video</i> for &#147;Concrete Sky&#148; and hear 
+						three <i>audio</i> tracks from the album: &#147;Carmella,&#148; &#147;Daybreaker,&#148; and &#147;Thinking 
+						About Tomorrow.&#148;
+
+						<p align="center">
+						<img src="http://a772.g.akamai.net/7/772/51/82815b4b56f654/www.apple.com/enews/eimages/separator.jpg" alt="" width="33" height="12" border="0" align="middle">				
+						</p>
+				
+						What&#146;s new on Columbia&#146;s Midweek Music?
+						<br><br>
+						<a href="http://columbiarecords.com/midweekmusic/"><img src="http://a772.g.akamai.net/7/772/51/d27baaa466600d/www.apple.com/enews/2002/07/images/aerials.jpg" alt="" width="100" height="86" border="0" align="right"></a>
+						One of the headlining bands at this year&#146;s Ozzfest, L.A.&#146;s
+						multicultural metal men System of a Down perform &#147;<a href="http://columbiarecords.com/midweekmusic/">Aerials</a>,&#148; the
+						latest from their 2001 album &#147;Toxicity.&#148; Watch the video through
+						July 31.
+						<br><br>
+						
+						And from <i>July 31 to August 7</i>, check out &#147;<a href="http://columbiarecords.com/midweekmusic/">Girls of Summer</a>,&#148; the
+						video for one of two new tracks included on the classic compilation,
+						&#147;O Yeah! Ultimate Aerosmith Hits.&#148;
+												
+						<p align="center">
+						<img src="http://a772.g.akamai.net/7/772/51/82815b4b56f654/www.apple.com/enews/eimages/separator.jpg" alt="" width="33" height="12" border="0" align="middle">				
+						</p>
+												
+						&#147;They&#146;re personal/political odes with the bite of twenty
+						rottweilers. Passionate songs full of fear and loathing, but with a
+						pop rush.&#148; So says the REM-inspired, London band Wilt about their
+						new album, &#147;My Medicine.&#148;
+						<br><br>
+						Ready for a dose? Then tune in to hear <a href="http://www.w-mm.co.uk">eleven complete tracks</a>.
+												
+						<p align="center">
+						<img src="http://a772.g.akamai.net/7/772/51/82815b4b56f654/www.apple.com/enews/eimages/separator.jpg" alt="" width="33" height="12" border="0" align="middle">				
+						</p>
+						
+						<a href="http://www.rhino.com/fun/listeningparties/78184_PartyPlayer.mgi2?P=RHIQT"><img src="http://a772.g.akamai.net/7/772/51/59514d2e33f301/www.apple.com/enews/2002/07/images/RandyTravis.jpg" alt="" width="100" height="90" border="0" align="left"></a>
+						In 1986, with his debut album &#147;Storms of Life,&#148; Randy Travis became
+						the first country music artist to go multi-platinum. &#147;Trail of
+						Memories: The Randy Travis Anthology&#148; brings together over 40 of the
+						legendary star&#146;s hits from 1986 to 1999, including duets with George
+						Jones, B.B. King, Tammy Wynette, and Merle Haggard. Join the <a href="http://www.rhino.com/fun/listeningparties/78184_PartyPlayer.mgi2?P=RHIQT">Randy
+						Travis Listening Party</a> and enjoy Disc One of this 2-disc collection.
+												
+						
+						<p align="center">
+						<img src="http://a772.g.akamai.net/7/772/51/82815b4b56f654/www.apple.com/enews/eimages/separator.jpg" alt="" width="33" height="12" border="0" align="middle">				
+						</p>
+						
+						The music of alternative rock band <a href="http://www.swither.com/">Swither</a> evokes both the opacity
+						and richness of human emotions. Watch the MPEG-4 videos of &#147;Here and
+						Now&#148; and &#147;Pri-Mer.&#148;
+												
+						</font>
+						</td>
+					</tr>
+				</table>
+				
+				<img src="http://a772.g.akamai.net/7/772/51/358f94896524e7/www.apple.com/enews/2002/05/images/greypixel.gif" alt="" width="220" height="1" border="0">
+				
+				<!-- Article 7 --><a name="article7"></a>
+				<table border="0" cellpadding="8" cellspacing="0">
+					<tr>
+						<td><font size=2 face="Lucida Grande,Geneva,Arial,Helvetica,sans-serif" class="L12">
+						<a href="#top"><img src="http://a772.g.akamai.net/7/772/51/39bcd94d38b883/www.apple.com/enews/2002/05/images/02ih8.gif" alt="" width="204" height="27" border="0"></a><br>
+						
+						&#147;So much music, it makes me feel powerful.&#148; That&#146;s <a href="http://www.apple.com/hotnews/articles/2002/07/mwny/hamiltonmorris.html">Hamilton Morris</a>
+						talking about his iPod in one of the new ads featured in last
+						week&#146;s Macworld New York expo. Catch the QuickTime movie.
+
+						<p align="center">
+						<img src="http://a772.g.akamai.net/7/772/51/82815b4b56f654/www.apple.com/enews/eimages/separator.jpg" alt="" width="33" height="12" border="0" align="middle">				
+						</p>
+
+						<img src="http://a772.g.akamai.net/7/772/51/3dfa419404e68b/www.apple.com/enews/2002/07/images/tiefly.jpg" alt="" width="100" height="76" border="0" align="right">
+						How good are your fly-tying techniques? Watch these tutorials from
+						about.com and learn how fly fishermen tie one on the right way.
+						
+						First up, watch <a href="http://flyfishing.about.com/library/ffm/ftb/aajbwhipfinish.htm">QuickTime video seminars</a> illustrating how to tie the
+						Double Hitch and Hand Whip-Finish and how to use a Matarelli
+						Whip-finish Tool.
+						<br><br>
+						Then, in <a href="http://flyfishing.miningco.com/library/ffm/skills/aajbknotvideos.htm">another video seminar</a>, find out how to tie the Improved
+						Clinch Knot, Non-Slip Loop, George Harvey Dry-Fly Knot, and
+						Nail-less Nail Knot.
+
+						<p align="center">
+						<img src="http://a772.g.akamai.net/7/772/51/82815b4b56f654/www.apple.com/enews/eimages/separator.jpg" alt="" width="33" height="12" border="0" align="middle">				
+						</p>
+						
+						If you&#146;re dying to know what the dead relatives of famous people are
+						thinking, investigate the celebrity readings on psychic John
+						Edward&#146;s <a href="http://www.scifi.com/johnedward/celebrity/">Crossing Over</a> website.
+
+						</font>
+						</td>
+					</tr>
+				</table>
+
+				</td>
+			</tr>
+			<tr>
+				<td bgcolor="#e5e5e5" colspan="3"><img src="http://a772.g.akamai.net/7/772/51/358f94896524e7/www.apple.com/enews/2002/05/images/greypixel.gif" alt="" width="598" height="1" border="0"></td>
+			</tr>
+			<tr>
+				<td bgcolor="#ffffff" colspan="3">
+				
+				<table border="0" cellpadding="8" cellspacing="0">
+					<tr>
+						<td><font face="Geneva, Verdana, Arial, Helvetica, sans-serif" size="1" class="G10">
+						
+						QuickTime News is a free, bi-weekly email publication.<br><br>
+		
+						Event dates are subject to change. Some products, programs, or promotions are not available outside the U.S. Visit your local 
+						Apple site or call your local authorized Apple reseller for more information. Prices are estimated retail prices and are listed 
+						in U.S. dollars. Product specifications are subject to change.		
+						
+						</font></td>
+					</tr>
+				</table>
+				
+				</td>
+			</tr>
+			<tr>
+				<td bgcolor="#e5e5e5" colspan="3"><img src="http://a772.g.akamai.net/7/772/51/358f94896524e7/www.apple.com/enews/2002/05/images/greypixel.gif" alt="" width="598" height="1" border="0"></td>
+			</tr>
+			<tr>
+				<td bgcolor="#ffffff" colspan="3" align="center">
+				
+				<table border="0" cellpadding="8" cellspacing="0">
+					<tr>
+						<td align="center"><font face="Geneva, Verdana, Arial, Helvetica, sans-serif" size="1" class="G10">
+						
+						<img src="http://a772.g.akamai.net/7/772/51/c219cc85bc9fbf/www.apple.com/enews/eimages/red_apple_logo.gif" width="25" height="30" border="0" alt=""><br>
+						
+						Copyright&#169;2002 Apple Computer, Inc.&nbsp;&nbsp;<a href="http://www.apple.com/legal/default.html">All Rights Reserved</a><br>
+						<a href="http://www.apple.com/enews/subscribe/">Subscribe</a> | <a href="http://www.apple.com/enews/unsubscribe/">Unsubscribe</a> | <a href="http://www.apple.com/enews/change/">Change Settings</a> | <a href="http://www.apple.com/legal/privacy/">Privacy Policy</a></font>
+						
+						</font></td>
+					</tr>
+				</table>
+				
+				</td>
+			</tr>
+		</table>
+		
+		</td>		
+		<td bgcolor="#7e7e7e"><img src="http://a772.g.akamai.net/7/772/51/84485f130fd0fe/www.apple.com/enews/eimages/spacer.gif" alt="" width="1" height="1" border="0"></td>
+	</tr>		
+	<tr>
+		<td colspan="3"><img src="http://a772.g.akamai.net/7/772/51/aa230f243aeaa0/www.apple.com/enews/2002/05/images/box-bottom.gif" alt="" width="600" height="12" border="0"></td>
+	</tr>
+</table>
+
+
+</body>
+
+
+
+
+--This_is_the_boundary_hip_ho--
+
+

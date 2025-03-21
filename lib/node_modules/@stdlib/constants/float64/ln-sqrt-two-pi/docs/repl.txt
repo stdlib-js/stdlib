@@ -1,0 +1,12 @@
+
+{{alias}}
+    Natural logarithm of the square root of `2π`.
+
+    Examples
+    --------
+    > {{alias}}
+    0.9189385332046728
+
+    See Also
+    --------
+

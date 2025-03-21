@@ -1,0 +1,76 @@
+From rpm-list-admin@freshrpms.net  Mon Sep  9 18:02:34 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 2D28F16EFC
+	for <jm@localhost>; Mon,  9 Sep 2002 18:02:34 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 18:02:34 +0100 (IST)
+Received: from auth02.nl.egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g15IeD819423 for
+    <jm-rpm@jmason.org>; Tue, 5 Feb 2002 18:40:13 GMT
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by
+    auth02.nl.egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g15Id1t04196;
+    Tue, 5 Feb 2002 19:39:01 +0100
+Received: from drone4.qsi.net.nz (drone4-svc-skyt.qsi.net.nz
+    [202.89.128.4]) by auth02.nl.egwn.net (8.11.6/8.11.6/EGWN) with SMTP id
+    g15Icst04185 for <rpm-list@freshrpms.net>; Tue, 5 Feb 2002 19:38:55 +0100
+Received: (qmail 84042 invoked by uid 0); 5 Feb 2002 18:39:22 -0000
+Received: from unknown (HELO se7en.org) ([202.89.145.8]) (envelope-sender
+    <mark@talios.com>) by 0 (qmail-ldap-1.03) with SMTP for
+    <rpm-list@freshrpms.net>; 5 Feb 2002 18:39:22 -0000
+Received: from spawn.se7en.org ([10.0.0.3]) by se7en.org with esmtp (Exim
+    3.12 #1 (Debian)) id 16YC7H-0007eW-00 for <rpm-list@freshrpms.net>;
+    Wed, 06 Feb 2002 09:22:59 +1300
+From: Mark Derricutt <mark@talios.com>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: Problem with an rpm...
+Message-Id: <16550000.1012934680@spawn.se7en.org>
+In-Reply-To: <16380000.1012934264@spawn.se7en.org>
+References: <1740000.1012898468@spawn.se7en.org>
+    <3C5FE6E4.6040608@sunnmore.net> <16380000.1012934264@spawn.se7en.org>
+X-Mailer: Mulberry/2.2.0b1 (Linux/x86)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Wed, 06 Feb 2002 07:44:40 +1300
+Date: Wed, 06 Feb 2002 07:44:40 +1300
+
+Never mind, there was some cron thing doing rpm -qf ???  seems fine now.
+
+--On Wednesday, February 06, 2002 07:37:44 +1300 Mark Derricutt 
+<mark@talios.com> wrote:
+
+> Fetched 88.1kB in 2m31s (581B/s)
+> error: cannot get exclusive lock on /var/lib/rpm/Packages
+> error: cannot open Packages index using db3 - Operation not permitted (1)
+> E: could not open RPM database:cannot open Packages index using db3 -
+> Operation not permitted (1)
+
+
+
+                                    -- \m/ --
+  "...if I seem super human I have been misunderstood." (c) Dream Theater
+         mark@talios.com - ICQ: 1934853 JID: talios@myjabber.net
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

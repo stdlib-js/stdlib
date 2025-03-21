@@ -1,0 +1,78 @@
+From contact@soft2reg.com  Mon Jun 24 17:47:24 2002
+Return-Path: anonymous@soft2reg.com
+Delivery-Date: Mon Apr 29 19:12:45 2002
+Received: from soft2reg.com (ppp151.interbgc.com [217.9.224.151]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with SMTP id g3TICRR05647 for
+    <jm-palmgear@jmason.org>; Mon, 29 Apr 2002 19:12:42 +0100
+Received: (qmail 17117 invoked by uid 500); 29 Apr 2002 17:38:04 -0000
+Date: 29 Apr 2002 17:38:04 -0000
+Message-Id: <20020429173804.17116.qmail@soft2reg.com>
+To: yyyy-palmgear@spamassassin.taint.org
+Subject: ADV: Payment processing - 8% flat fee
+From: contact@soft2reg.com
+Reply-To: contact@soft2reg.com
+X-Keywords: 
+Content-Type: text/html
+
+
+<html>
+<head>
+   <title>The Soft2Reg Team</title>
+</head>
+<link rel=STYLESHEET type=text/css href=css/main.css>
+<STYLE type=text/css>
+.Black11 {FONT-SIZE: 11px; COLOR: black; FONT-FAMILY: Verdana;  FONT-WEIGHT: normal; TEXT-DECORATION: none}
+.Red13 {font-size : 13px; font-family :Verdana, Arial, Helvetica, sans-serif;font-weight : bold;color : Red}
+</style>
+
+<body bgcolor=ffffff>
+<center>
+<table border=0 width=600 cellpadding=2 cellspacing=0>
+	<tr>
+		<td width=275>
+			<a href=http://www.soft2reg.com>
+				<img src=http://www.soft2reg.com/images/logo.gif border=0 alt=www.soft2reg ></a>
+		</td>
+		<td align=right width=100%>
+			<hr size=0>
+		</td>
+	</tr>
+</table>
+<p>
+<table border=0 width=600 cellpadding=4 cellspacing=0 bgcolor=6699cc>
+	<tr>
+		<td>
+			<font face=arial size=+1 color=000000>
+				<b>Soft2reg.com -- Service Update</b></font>
+		</td>
+	</tr>
+</table>
+<p>
+<table border=0 width=600 cellpadding=4 cellspacing=0>
+	<tr>
+		<td class=Black11>
+			Hello,<br><br>
+
+			<br>We apologize for the unsolicited e-mail, 
+				but we have noticed that you are using an online credit card processor on your web 
+				site that charges you much more than what you should be paying.
+
+ 			<br><br>
+				We are Soft2Reg.com and we <b>specialize in low cost online credit 
+				card processing for developers of electronic products</b>. 
+				Our rates are the lowest in the industry - <span class=Red13>8% flat fee</span> for all online credit card transactions. 
+				We provide you with a link for every one of your products that contains your logo and you put it on your web site for seamless credit card processing integration. For that simple, yet efficient service we charge only 8% of your online sales.
+ 			
+			<br><br>
+			If you would like to see more information about us, please visit <a href=http://www.soft2reg.com>http://www.soft2reg.com</a>.
+			<br><br>
+			<HR noShade SIZE=1>
+			<br>Thank you,
+			<br>The Soft2Reg Team
+			<br>-----------------------------------
+			<br><a href=http://www.soft2reg.com>www.soft2reg.com</a>.
+</td></tr></table>
+</center>
+</body>
+</html>
+

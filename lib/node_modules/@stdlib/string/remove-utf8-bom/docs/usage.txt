@@ -1,0 +1,7 @@
+
+Usage: remove-utf8-bom [options] [<string>]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.

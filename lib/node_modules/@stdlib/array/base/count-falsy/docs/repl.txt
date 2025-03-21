@@ -1,0 +1,22 @@
+
+{{alias}}( x )
+    Counts the number of falsy values in an array.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    Returns
+    -------
+    out: integer
+        Number of falsy values.
+
+    Examples
+    --------
+    > var out = {{alias}}( [ 0, 1, 1 ] )
+    1
+
+    See Also
+    --------
+

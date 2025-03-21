@@ -1,0 +1,12 @@
+
+{{alias}}
+    Boolean indicating if the current process is running on Darwin.
+
+    Examples
+    --------
+    > {{alias}}
+    <boolean>
+
+    See Also
+    --------
+

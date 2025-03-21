@@ -1,0 +1,84 @@
+From rpm-list-admin@freshrpms.net  Mon Jul 22 19:24:23 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4263E440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 14:24:21 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 19:24:21 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFI5902681 for
+    <jm-rpm@jmason.org>; Mon, 22 Jul 2002 16:18:05 +0100
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by webnote.net
+    (8.9.3/8.9.3) with ESMTP id MAA31522 for <jm-rpm@jmason.org>;
+    Mon, 22 Jul 2002 12:20:10 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6MBH2C24883; Mon, 22 Jul 2002 13:17:02
+    +0200
+Received: from kamakiriad.com (cable-b-36.sigecom.net [63.69.210.36]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g6MBGUC24503 for
+    <rpm-list@freshrpms.net>; Mon, 22 Jul 2002 13:16:30 +0200
+Received: from aquila.kamakiriad.local (aquila.kamakiriad.local
+    [192.168.1.3]) by kamakiriad.com (8.11.6/8.11.0) with SMTP id g6MBGJo16350;
+    Mon, 22 Jul 2002 06:16:19 -0500
+From: Brian Fahrlander <kilroy@kamakiriad.com>
+To: rpm-zzzlist@freshrpms.net
+Cc: noselasd@Utel.no
+Subject: Re: My Repository...
+Message-Id: <20020722061619.326b0142.kilroy@kamakiriad.com>
+In-Reply-To: <200207220742.g6M7gIe29136@localhost.localdomain>
+References: <200207220742.g6M7gIe29136@localhost.localdomain>
+X-Mailer: Sylpheed version 0.8.0 (GTK+ 1.2.10; i386-redhat-linux)
+X-Message-Flag: : Shame on you!  You know Outlook is how viruses are spread!
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Mon, 22 Jul 2002 06:16:19 -0500
+Date: Mon, 22 Jul 2002 06:16:19 -0500
+
+On Mon, 22 Jul 2002 09:42:18 +0200, "Nils O. Selåsdal" <noselasd@Utel.no> wrote:
+
+> Just for your information, I have an apt-repository for RH 7.3 at
+> http://utelsystems.dyndns.org
+> --
+> NOS@Utel.no
+
+    Your page has a typo;
+
+http://utelsystems.dyndns.org lists:
+    rpm http://utelsystems.dyndns.org/apt redhat testingrh73
+    rpm-src http://utelsystems.dyndns.org/apt redhat testing73  <--
+
+    This is why I'm so stubborn about using cut-and-paste; not only is it easy, it's typo-free.  :)
+
+Wouldn't it be nice if there was a way to manage these automagically?  Some central site to make them available to the rest of the world, every time there's a "apt-get update"?  :)
+  
+------------------------------------------------------------------------
+Brian Fahrländer              Linux Zealot, Conservative, and Technomad
+Evansville, IN                    My Voyage: http://www.CounterMoon.com
+ICQ  5119262
+------------------------------------------------------------------------
+I don't want to hear news from Isreal until the news contains the words
+"Bullet", "Brain", and "Arafat".
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

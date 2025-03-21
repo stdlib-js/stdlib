@@ -1,0 +1,38 @@
+
+{{alias}}( x[, dtype] )
+    Creates an uninitialized array having the same length and data type as a
+    provided input array.
+
+    In browser environments, the function always returns zero-filled arrays.
+
+    If `dtype` is 'generic', the function always returns a zero-filled array.
+
+    In Node.js versions >=3.0.0, the underlying memory of returned typed arrays
+    is *not* initialized. Memory contents are unknown and may contain
+    *sensitive* data.
+
+    Parameters
+    ----------
+    x: TypedArray|Array
+        Input array.
+
+    dtype: string (optional)
+        Data type. If not provided, the output array data type is inferred from
+        the input array.
+
+    Returns
+    -------
+    out: TypedArray|Array
+        Output array.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/float64}}( 2 );
+    > var arr = {{alias}}( x )
+    <Float64Array>
+    > arr = {{alias}}( x, 'float32' )
+    <Float32Array>
+
+    See Also
+    --------
+

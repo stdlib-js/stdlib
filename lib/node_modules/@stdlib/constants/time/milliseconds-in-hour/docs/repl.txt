@@ -1,0 +1,17 @@
+
+{{alias}}
+    Number of milliseconds in an hour.
+
+    The value is a generalization and does **not** take into account
+    inaccuracies due to daylight savings conventions, crossing timezones, or
+    other complications with time and dates.
+
+    Examples
+    --------
+    > var hrs = 3.14;
+    > var ms = hrs * {{alias}}
+    11304000
+
+    See Also
+    --------
+

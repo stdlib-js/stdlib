@@ -1,0 +1,8 @@
+
+Usage: ssa-us-births-2000-2014 [options]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+

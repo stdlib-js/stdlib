@@ -1,0 +1,65 @@
+
+{{alias}}( path[, flags[, mode]], clbk )
+    Asynchronously opens a file.
+
+    Some characters, such as <>:"/\|?*, are reserved under Windows.
+    Under NTFS, if the path contains a colon, Node.js will open a file system
+    stream.
+
+    Parameters
+    ----------
+    path: string|Buffer
+        Filename.
+
+    flags: string|number (optional)
+        File system flags. Default: 'r'.
+
+    mode: integer (optional)
+        File mode (permission and sticky bits). This sets the file mode, but
+        only if the file was created. On Windows, only the write permission can
+        be manipulated. Default: 0o666.
+
+    clbk: Function
+        Callback to invoke upon opening a file.
+
+    Examples
+    --------
+    > function onOpen( error, fd ) {
+    ...     if ( error ) {
+    ...         console.error( error.message );
+    ...     } else {
+    ...         {{alias:@stdlib/fs/close}}.sync( fd );
+    ...     }
+    ... };
+    > {{alias}}( './beep/boop.txt', onOpen );
+
+
+{{alias}}.sync( path[, flags[, mode]] )
+    Synchronously opens a file.
+
+    Parameters
+    ----------
+    path: string|Buffer
+        Filename.
+
+    flags: string|number (optional)
+        File system flags. Default: 'r'.
+
+    mode: integer (optional)
+        File mode (permission and sticky bits).  This sets the file mode, but
+        only if the file was created. On Windows, only the write permission can
+        be manipulated. Default: 0o666.
+
+    Returns
+    -------
+    fd: Error|integer
+        File descriptor.
+
+    Examples
+    --------
+    > var fd = {{alias}}.sync( './beep/boop.txt' );
+    > if ( !{{alias:@stdlib/assert/is-error}}( fd ) ) { {{alias:@stdlib/fs/close}}.sync( fd ); };
+
+    See Also
+    --------
+

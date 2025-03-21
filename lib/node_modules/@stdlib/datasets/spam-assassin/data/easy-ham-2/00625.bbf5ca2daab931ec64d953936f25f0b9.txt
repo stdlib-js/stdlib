@@ -1,0 +1,100 @@
+From razor-users-admin@lists.sourceforge.net  Tue Aug 13 10:23:29 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 70FCB44101
+	for <jm@localhost>; Tue, 13 Aug 2002 05:19:41 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:19:41 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7D1Jab12235 for <jm-razor@jmason.org>; Tue, 13 Aug 2002 02:19:36 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17eQE7-00060l-00; Mon,
+    12 Aug 2002 18:12:03 -0700
+Received: from h-66-166-21-186.snvacaid.covad.net ([66.166.21.186]
+    helo=nexus.cloudmark.com) by usw-sf-list1.sourceforge.net with esmtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17eQDk-0006hK-00 for
+    <razor-users@lists.sourceforge.net>; Mon, 12 Aug 2002 18:11:40 -0700
+Received: (from chad@localhost) by nexus.cloudmark.com (8.11.6/8.11.6) id
+    g7D19q702576; Mon, 12 Aug 2002 18:09:52 -0700
+X-Authentication-Warning: nexus.cloudmark.com: chad set sender to
+    chad@cloudmark.com using -f
+From: Chad Norwood <chad@cloudmark.com>
+To: Raghavendra Bhat <ragu@vsnl.com>
+Cc: razor-users@example.sourceforge.net
+Message-Id: <20020813010952.GF11270@nexus.cloudmark.com>
+References: <20020810051803.GA4315@gnuhead.dyndns.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20020810051803.GA4315@gnuhead.dyndns.org>
+User-Agent: Mutt/1.4i
+Subject: [Razor-users] Re: Reporting: connection refused
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Mon, 12 Aug 2002 18:09:52 -0700
+Date: Mon, 12 Aug 2002 18:09:52 -0700
+
+  You should not be reporting spam to 64.90.187.2 (apt).
+  
+  You need to report only to nomination servers, which, like
+  catalogue servers, can and will be changed, and are
+  set by the discovery servers.  Razor agents do discovery
+  for you automatically, storing server names in .razor/*.lst files
+  
+  -chad
+
+
+On 10/08/02 10:48 +0530, Raghavendra Bhat wrote:
+) Hello List:
+) 
+) I have been  using Razor for quite a while.  I  have been reporting spam
+) to the server at 64.90.187.2 from mutt.
+) 
+) I am  unable to report as  of the past  two days.  The message  which is
+) echoed back says 'Connection refused'.
+) 
+) Am I  doing some brain  dead thing ?   If not are there  other reporting
+) servers ?
+) 
+) -- 
+) ragOO, VU2RGU<->http://gnuhead.dyndns.org/<->GPG: 1024D/F1624A6E     
+)        Helping to keep the  Air-Waves FREE         Amateur Radio
+)        Helping to keep your Software  FREE       the GNU Project          
+)        Helping to keep the  W W W     FREE  Debian GNU/${kernel}
+) 
+) 
+) -------------------------------------------------------
+) This sf.net email is sponsored by:ThinkGeek
+) Welcome to geek heaven.
+) http://thinkgeek.com/sf
+) _______________________________________________
+) Razor-users mailing list
+) Razor-users@lists.sourceforge.net
+) https://lists.sourceforge.net/lists/listinfo/razor-users
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Dice - The leading online job board
+for high-tech professionals. Search and apply for tech jobs today!
+http://seeker.dice.com/seeker.epl?rel_code=31
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

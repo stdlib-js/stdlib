@@ -1,0 +1,123 @@
+From ilug-admin@linux.ie  Fri Aug  2 09:25:26 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id EB675440F3
+	for <jm@localhost>; Fri,  2 Aug 2002 04:25:23 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 02 Aug 2002 09:25:23 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g728P5212559 for
+    <jm-ilug@jmason.org>; Fri, 2 Aug 2002 09:25:05 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA25741; Fri, 2 Aug 2002 09:23:21 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from paat.pair.com (paat.pair.com [209.68.1.209]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with SMTP id JAA25710 for <ilug@linux.ie>;
+    Fri, 2 Aug 2002 09:23:14 +0100
+Received: (qmail 21847 invoked by uid 3138); 2 Aug 2002 08:23:07 -0000
+Date: Fri, 2 Aug 2002 04:23:07 -0400
+From: Wesley Darlington <wesley@yelsew.com>
+To: ilug@linux.ie
+Subject: Re: [ILUG] Strange ssh problem
+Message-Id: <20020802082307.GA20507@paat.pair.com>
+References: <20020801145112.GB2500@bagend.makalumedia.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20020801145112.GB2500@bagend.makalumedia.com>
+User-Agent: Mutt/1.3.25i
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Hi Niall,
+
+Some thoughts...
+
+o Run the ssh client with verbosity 3 (ssh -v -v -v)
+o Run an sshd with debugging level three (sshd -d -d -d)
+o ~alfio doesn't seem to be nfs-mounted like ~alfred
+
+(The following aren't really applicable, but...
+    o Has alfred been logged in for ages? Has the tmpsweeper swept
+      through /tmp removing alfred's ssh-agent directory in its wake?
+    o Is /tmp a+rwxt? Does /dev/null exist?
+    o Has alfred been messing with his TMPDIR envar?
+    o What does lsof on his ssh-agent say? What about on alfio's?
+    o What are the permissions on ~alfred and ~alfred/.ssh?
+    o Does alfred's uid conflict with somebody else's?
+    o Does alfred's $SSH_AGENT_PID correspond to his agent? alfio's?
+)
+
+Wesley.
+
+
+On Thu, Aug 01, 2002 at 03:51:12PM +0100, Niall O Broin wrote:
+> I have a strange problem with one user in a small network using ssh.
+> Everyone in the network uses ssh and they run an ssh-agent on login. This
+> works fine for conveniently wandering around the network and to some of our
+> external boxes - or did, until today. Suddenly, when one user (alfred) tries
+> to ssh anywhere he's asked for a password. He says He changed nothing (don't
+> they all) but I do actually believe him. I used ssh-keygen to make new keys
+> but that didn't help. 
+> 
+> I created a new user alfio into whose home directory I copied alfred's .ssh
+> directory - alfio can wander around free as a bird without being asked for a
+> password ever (except of course for the passphrase to load the identiy into
+> the agent).
+> 
+> In case there was something else in Alfred' environment, I copied .??* from
+> alfred's home directory to alfio's, remembering to change ownership
+> afterwards. Still alfio is as free as a bird.
+> 
+> We use only SSH2 with DSA keys. An extract from a ssh -v for alfio is below
+> 
+> debug1: got SSH2_MSG_SERVICE_ACCEPT
+> debug1: authentications that can continue: publickey,password
+> debug1: next auth method to try is publickey
+> debug1: userauth_pubkey_agent: testing agent key /home/alfio/.ssh/id_dsa
+> debug1: input_userauth_pk_ok: pkalg ssh-dss blen 434 lastkey 0x80916f0 hint -1
+> debug1: ssh-userauth2 successful: method publickey
+> 
+> and before starting this ssh attempt, ssh-add -l for alfio said:
+> 
+> 1024 07:4c:7c:90:0d:28:41:3a:95:c2:81:3d:ba:c4:3d:03 /home/alfio/.ssh/id_dsa (DSA)
+> 
+> whereas with alfred the same segment of the debug log went
+> 
+> debug1: got SSH2_MSG_SERVICE_ACCEPT
+> debug1: authentications that can continue: publickey,password
+> debug1: next auth method to try is publickey
+> debug1: userauth_pubkey_agent: testing agent key /nfshome/alfred/.ssh/id_dsa
+> debug1: authentications that can continue: publickey,password
+> 
+> and before starting this ssh attempt, ssh-add -l for alfred said:
+> 
+> 1024 07:4c:7c:90:0d:28:41:3a:95:c2:81:3d:ba:c4:3d:03 /home/alfred/.ssh/id_dsa (DSA)
+> 
+> 
+> This problem is definitely related to alfred as a user - it happens when he
+> logs in on differing workstations (all NFS mounting the same home
+> directories) and the other users (including good old alfio) don't have any
+> problems.
+> 
+> 
+> Niall
+> 
+> -- 
+> Irish Linux Users' Group: ilug@linux.ie
+> http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+> List maintainer: listmaster@linux.ie
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

@@ -1,0 +1,84 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6M8vphY019126
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Mon, 22 Jul 2002 03:57:51 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6M8vpGu019114
+	for cypherpunks-forward@ds.pro-ns.net; Mon, 22 Jul 2002 03:57:51 -0500 (CDT)
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6M8vlhY019088
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks@ds.pro-ns.net>; Mon, 22 Jul 2002 03:57:49 -0500 (CDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: from waste.minder.net (daemon@waste [66.92.53.73])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6M8vkJ24412
+	for <cypherpunks@ds.pro-ns.net>; Mon, 22 Jul 2002 04:57:46 -0400 (EDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: (from cpunks@localhost)
+	by waste.minder.net (8.11.6/8.11.6) id g6M8vj507222
+	for cypherpunks@ds.pro-ns.net; Mon, 22 Jul 2002 04:57:45 -0400
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by waste.minder.net (8.11.6/8.11.6) with ESMTP id g6M8viR07209
+	for <cpunks@minder.net>; Mon, 22 Jul 2002 04:57:44 -0400
+Received: from hotmail.com (IDENT:nobody@[211.250.35.188])
+	by locust.minder.net (8.11.6/8.11.6) with SMTP id g6M8vgJ24398
+	for <cpunks@minder.net>; Mon, 22 Jul 2002 04:57:42 -0400 (EDT)
+	(envelope-from mesmith6557f20@hotmail.com)
+Received: from unknown (118.56.211.232)
+	by sydint1.microthink.com.au with QMQP; 22 Jul 0102 06:02:09 +0200
+Received: from unknown (70.75.162.111)
+	by anther.webhostingtotalk.com with SMTP; Mon, 22 Jul 0102 07:54:53 -0400
+Received: from unknown (HELO smtp-server.tampabayr.com) (44.48.142.34)
+	by anther.webhostingtotalk.com with QMQP; Mon, 22 Jul 0102 03:47:37 +0800
+Reply-To: <mesmith6557f20@hotmail.com>
+Message-ID: <013b81d52b3b$4832d4d6$8ec81bb4@gydjyj>
+From: <mesmith6557f20@hotmail.com>
+To: <cpunks@minder.net>
+Subject: Life Insurance Price Wars 8870Hgdg0-306fFSQ8613J-21
+Date: Mon, 22 Jul 0102 20:53:57 -0900
+MiME-Version: 1.0
+Content-Type: text/html; charset="iso-8859-1"
+X-Priority: 3 (Normal)
+X-MSMail-Priority: Normal
+X-Mailer: AOL 7.0 for Windows US sub 118
+Importance: Normal
+
+<HTML>
+<font color="#FFFFFF"><i>It costs nothing!</i></font>
+<BODY TEXT="#000000" LINK="#0000ff" BGCOLOR="#ffffff">
+<FONT SIZE=5><STRONG><P ALIGN="CENTER">TOP Life Companies Continue to Slash Rates</FONT></STRONG><FONT FACE="Arial" SIZE=2> </P>
+</FONT><FONT SIZE=5><STRONG><P ALIGN="CENTER"><font color="#FF0000"><i>Save</i></font> up to 70% on your LIFE INSURANCE today! </P>
+</STRONG></FONT><P ALIGN="CENTER"><a HREF="http://www.all-life-ins.com/E72127.htm"><I><FONT FACE="Verdana">Term Insurance Comparisons</I></FONT></I></a><FONT FACE="Verdana" SIZE=2> </P>
+</FONT><P ALIGN="CENTER"><a HREF="http://www.all-life-ins.com/E72127.htm"><I><FONT FACE="Verdana">Permanent (Whole/Universal) Life</I></FONT></I></a><FONT FACE="Verdana" SIZE=2> </P>
+</FONT><P ALIGN="CENTER"><a HREF="http://www.all-life-ins.com/E72127.htm"><I><FONT FACE="Verdana">Burial/Final Expense</FONT></I></a> </P>
+<P ALIGN="CENTER"><font face="Verdana" size="4"><u><b><a href="http://www.all-life-ins.com/E72127.htm">Get
+a Quote Here!</a></b></u></font> </P>
+<P ALIGN="CENTER"><FONT FACE="Arial">Choose</FONT> <FONT FACE="Arial">the coverage that </P>
+<B><EM><P ALIGN="CENTER">Bests suits YOUR needs.</B></FONT></EM><FONT FACE="Verdana" SIZE=2> </P>
+</FONT><B><EM><P ALIGN="CENTER">Quotes from over 300 top rated companies </P>
+<P ALIGN="CENTER"></EM></B><FONT FACE="Verdana" SIZE=2> </P>
+<P ALIGN="CENTER">&nbsp;</P>
+</FONT>
+<p align="center"><font size="1">We don't want anyone to receive correspondence
+who does not wish too.&nbsp; Just go to <a href="http://www.all-life-ins.com/stopit.htm">http://www.all-life/stopit</a>
+and you will not get any mail from us in the future.</font></p>
+<FONT FACE="Arial" SIZE=2><P>. </P>
+</FONT></BODY>
+</HTML>
+
+11l2
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

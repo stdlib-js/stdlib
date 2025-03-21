@@ -1,0 +1,36 @@
+
+{{alias}}( α )
+    Returns an accumulator function which incrementally computes an
+    exponentially weighted mean, where α is a smoothing factor between 0 and 1.
+
+    If provided a value, the accumulator function returns an updated mean. If
+    not provided a value, the accumulator function returns the current mean.
+
+    If provided `NaN` or a value which, when used in computations, results in
+    `NaN`, the accumulated value is `NaN` for all future invocations.
+
+    Parameters
+    ----------
+    α: number
+        Smoothing factor (value between 0 and 1).
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}( 0.5 );
+    > var v = accumulator()
+    null
+    > v = accumulator( 2.0 )
+    2.0
+    > v = accumulator( -5.0 )
+    -1.5
+    > v = accumulator()
+    -1.5
+
+    See Also
+    --------
+

@@ -1,0 +1,78 @@
+From ilug-admin@linux.ie  Tue Jul 30 19:42:40 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5E5EF440E5
+	for <jm@localhost>; Tue, 30 Jul 2002 14:42:32 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 30 Jul 2002 19:42:32 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6UIcI211548 for
+    <jm-ilug@jmason.org>; Tue, 30 Jul 2002 19:38:18 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id TAA21967; Tue, 30 Jul 2002 19:35:39 +0100
+Received: from claymore.diva.ie (diva.ie [195.218.115.17] (may be forged))
+    by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id TAA21856 for
+    <ilug@linux.ie>; Tue, 30 Jul 2002 19:35:22 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host diva.ie [195.218.115.17]
+    (may be forged) claimed to be claymore.diva.ie
+Received: from localhost (claymore [195.218.115.17]) by claymore.diva.ie
+    (8.9.3/8.9.3) with ESMTP id TAA13755 for <ilug@linux.ie>; Tue,
+    30 Jul 2002 19:35:20 +0100
+Received: from 194.125.220.16 ( [194.125.220.16]) as user
+    rcunniff@mail.boxhost.net by webmail.gameshrine.com with HTTP;
+    Tue, 30 Jul 2002 19:35:20 +0100
+Message-Id: <1028054120.3d46dc68ce59c@webmail.gameshrine.com>
+Date: Tue, 30 Jul 2002 19:35:20 +0100
+From: Ronan Cunniffe <ronan@cunniffe.net>
+To: ilug@linux.ie
+Subject: Re: [ILUG] Installing lilo on another disk.
+References: <20020730144740.GA3482@bagend.makalumedia.com>
+In-Reply-To: <20020730144740.GA3482@bagend.makalumedia.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+User-Agent: Internet Messaging Program (IMP) 3.0
+X-Originating-Ip: 194.125.220.16
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Quoting Niall O Broin <niall@linux.ie>:
+
+> I'm installing warm standby disks on a number of boxes. These disks will be
+> the same size (sometimes bigger) than the main disk. The idea is that every
+> night I'll rsync the partitions on the main disk to the standby disk so
+> that
+> in the case of disaster, the first port of call, before the tapes, is the
+> standby disk. (We did consider running Linux md RAID on the disks but RAID
+> gives you no protection against slips of the finger)
+
+Do I get beaten round the head for saying "floppy"?
+Assuming the machines are networked, let each one send a copy of its kernel to
+the others.  If the drives are open-the-box-and-switch-cables, then you can
+start dd'ing a floppy before you start.  If the drives are in drawers, then this
+might slow you down by all of 60 seconds.
+
+Alternatively, you could use netboot.  No, I'm serious.  Set the boot sequence
+to first hard disk then network.  Do NOT make any partition on the standby
+active.  Have a look at the etherboot package.  One of the things it contains is
+a pascal-ish language for writing boot menus.  You can write a one-liner that
+basically says "boot /dev/hda1" (or whatever, there's example code).  IIRC, the
+resulting "bootable image" is a whopping 4K.  The downside is you'll need a
+bootp and tftp server somewhere....
+
+hth,
+Ronan.
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

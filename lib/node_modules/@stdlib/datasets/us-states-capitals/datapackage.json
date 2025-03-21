@@ -1,0 +1,38 @@
+{
+  "name": "stdlib-datasets-us-states-capitals",
+  "version": "",
+  "title": "US State Capitals",
+  "description": "A list of US state capitals in alphabetical order according to state name.",
+  "resources": [
+    {
+      "name": "us-states-capitals-json",
+      "title": "US State Capitals",
+      "description": "A list of US state capitals in alphabetical order according to state name.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.json"
+    },
+    {
+      "name": "us-states-capitals-txt",
+      "title": "US State Capitals",
+      "description": "A list of US state capitals in alphabetical order according to state name.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.txt"
+    }
+  ],
+  "sources": [],
+  "keywords": [
+    "list",
+    "us",
+    "united",
+    "states",
+    "capitals",
+    "names"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}

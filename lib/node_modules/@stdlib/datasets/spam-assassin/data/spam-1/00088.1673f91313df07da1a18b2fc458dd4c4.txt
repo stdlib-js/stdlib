@@ -1,0 +1,154 @@
+From sitescooper-talk-admin@lists.sourceforge.net  Mon Aug 26 15:49:29 2002
+Return-Path: <sitescooper-talk-admin@example.sourceforge.net>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.spamassassin.taint.org (Postfix) with ESMTP id 91A3E44158
+	for <zzzz@localhost>; Mon, 26 Aug 2002 10:42:00 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 26 Aug 2002 15:42:00 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7PJKLZ23639 for <zzzz-scoop@jmason.org>; Sun, 25 Aug 2002 20:20:21 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17j2vi-0007l8-00; Sun,
+    25 Aug 2002 12:20:10 -0700
+Received: from abn161-55.ank-avrupa-ports.kablonet.net.tr
+    ([195.174.161.55] helo=yahoo.com) by usw-sf-list1.sourceforge.net with
+    smtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17j2ux-0006Mt-00 for
+    <sitescooper-talk@lists.sourceforge.net>; Sun, 25 Aug 2002 12:19:24 -0700
+From: "BILSAG" <bilsag@yahoo.com>
+To: <sitescooper-talk@example.sourceforge.net>
+MIME-Version: 1.0
+Reply-To: "BILSAG" <bilsag@yahoo.com>
+Message-Id: <E17j2ux-0006Mt-00@usw-sf-list1.sourceforge.net>
+Subject: [scoop] CEVIRI YAZILIMLARI
+Sender: sitescooper-talk-admin@example.sourceforge.net
+Errors-To: sitescooper-talk-admin@example.sourceforge.net
+X-Beenthere: sitescooper-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:sitescooper-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:sitescooper-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/sitescooper-talk>,
+    <mailto:sitescooper-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Discussion of sitescooper - see http://sitescooper.org/
+    <sitescooper-talk.lists.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/sitescooper-talk>,
+    <mailto:sitescooper-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=sitescooper-talk>
+X-Original-Date: Sun, 25 Aug 2002 22:19:23 +0300
+Date: Sun, 25 Aug 2002 22:19:23 +0300
+Content-Type: text/html; charset="ISO-8859-9"
+Content-Transfer-Encoding: 8bit
+
+HTML>
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+<BODY bgcolor=white>
+<table>
+<tr>
+   <td>
+   <center><br>
+   <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     </center></B>
+
+   </td>
+</tr>
+</table>
+<P align=center><FONT  color=white size =7 ><STRONG>
+<TABLE cellSpacing=1 cellPadding=1 width="501" border=5 style="WIDTH: 501px; HEIGHT: 907px">
+  <TBODY>
+  
+  <TR>
+    <TD><IMG alt="" 
+      src="http://www.bilsag.com/web1.jpg"></TD>
+    <TD bgcolor=red><FONT size=4
+      
+      color=white><EM><STRONG>ÝNTERNETTE KENDÝNÝZÝ DAHA ÝYÝ HÝSSEDECEKSÝNÝZ.
+	  ÝNGÝLÝZCE WEB SAYFALARININ TÜRKÇE'YE ÇEVÝRÝ YAZILIMI
+	   </STRONG></EM> </FONT></TD></TR>
+  <TR>
+  <TD bgcolor=palegoldenrod><FONT size=7 
+      color=darkblue><EM><STRONG>$ 39+KDV</STRONG></EM> </FONT></TD></TR>
+  <TR>
+    <TD  ><IMG alt="" 
+      src="http://www.bilsag.com/cev1.jpg"></TD>
+    <TD bgcolor=red><FONT size=4
+      
+      color=white><STRONG><EM> ÝNGÝLÝZCE'DEN TÜRKÇE'YE BÝLGÝSAYAR DESTEKLÝ
+	    METÝN ÇEVÝRÝ YAZILIMI  
+	 
+	 (MS-WORD ALTINDA KULLANIM, TÜM WINDOWS VERSÝYONLARI ÝLE UYUMLU)
+	  </EM></STRONG> </FONT></TD></TR>
+  <TR>
+  <TD bgcolor=palegoldenrod><FONT size=7 
+      color=darkblue><STRONG><EM>$ 69+KDV</EM></STRONG> </FONT></TD></TR>
+  <TR>
+    <TD bgcolor=darkblue><FONT size=6 color=white><STRONG><EM>ÝKÝ YAZILIM &nbsp; BÝRLÝKTE</FONT></EM>    </STRONG></TD>
+    <TD bgcolor=darkblue><FONT size=7 
+      color=white><STRONG><EM>$ 
+  89+KDV</EM></STRONG> 
+</FONT></TD></TR></TBODY></TABLE></STRONG></FONT></P>
+      <P align=center><STRONG><a href="http://www.bilsag.com/index.html"><FONT color=darkcyan size=2>Ayrýntýlý Bilgi 
+      Ýçin&nbsp; </FONT></STRONG><STRONG><FONT 
+      color=darkcyan size=2>  týklayýn</FONT></A></STRONG> 
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </P>
+      <P align=center>
+     
+      &nbsp;<A href="http://www.bilsag.com/siparis.htm"><IMG alt="" src="http://www.bilsag.com/sipbuton.gif" border=0
+      ></A> </P>
+      <P align=center><FONT color=#ff0000><STRONG>BÝLSAG Ltd.</STRONG></FONT></P>
+      <P align=center><FONT size=2><FONT color=#ff0000><STRONG>AHMET MÝTHAT 
+      EFENDÝ SOK. 22/1 ÇANKAYA 06700 / ANKARA /</STRONG></FONT></FONT></P>
+      <P align=center><FONT size=2><FONT color=#ff0000><STRONG><FONT 
+      size=+0>Tlf: 0312. 439 2850/ Fax: 0312. 439 9347</FONT> 
+      </STRONG></FONT></FONT></P>
+      <P align=center><A href="mailto:bilsag@msn.com"><FONT color=#ff0000 
+      size=3><STRONG>bilsag@msn.com</STRONG></FONT></A></P>
+      
+  
+    <TD>
+    
+      <P align=center>&nbsp;</P>
+      <P align=center>&nbsp;</P>
+      </TD></TR></TABLE>
+<P></P>
+    
+<form action="http://www.bilsag.com/iptal1.asp" method="post">
+<center>
+<TABLE WIDTH="540" CELLSPACING=1 CELLPADDING=1 BORDER=0 bgcolor="#dddddd">
+<TR>
+<TD BGCOLOR="#eeeeee" align="middle"><FONT FACE="Verdana, Arial" SIZE="-1" COLOR="#000000">
+<strong>E-posta adres listemizden</strong> çýkmak için<strong>ÇIKAR</strong> tuþuna basýnýz
+</FONT>
+</TD></TR>
+<TR>
+<TD BGCOLOR="#eeeeee" align="middle">
+<INPUT NAME="e" VALUE="sitescooper-talk@lists.sourceforge.net" SIZE=25 
+     ></FONT>                   
+<INPUT TYPE="submit" VALUE="Çýkar">
+</TD></TR>
+<TR>
+<TD BGCOLOR="#ffffff" align=right>
+<FONT FACE="arial" SIZE="1" COLOR="#000000">Bu elektronik posta: sitescooper-talk@example.sourceforge.net e gönderilmiþtir</FONT>
+      
+
+
+</TD></TR></TABLE>
+</center>
+</form>
+</BODY>
+</HTML>
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Sitescooper-talk mailing list
+Sitescooper-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/sitescooper-talk
+

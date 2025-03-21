@@ -1,0 +1,183 @@
+From fork-admin@xent.com  Tue Sep 17 15:09:19 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 87A8516F03
+	for <jm@localhost>; Tue, 17 Sep 2002 15:09:17 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 17 Sep 2002 15:09:17 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8HE0kC12569 for <jm@jmason.org>;
+    Tue, 17 Sep 2002 15:00:47 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 2BA312940E2; Tue, 17 Sep 2002 06:57:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mta7.pltn13.pbi.net (mta7.pltn13.pbi.net [64.164.98.8]) by
+    xent.com (Postfix) with ESMTP id 69F8129409F for <fork@xent.com>;
+    Tue, 17 Sep 2002 06:56:53 -0700 (PDT)
+Received: from endeavors.com ([66.126.120.174]) by mta7.pltn13.pbi.net
+    (iPlanet Messaging Server 5.1 (built May  7 2001)) with ESMTP id
+    <0H2L0038T5K9KU@mta7.pltn13.pbi.net> for fork@xent.com; Tue,
+    17 Sep 2002 07:00:10 -0700 (PDT)
+From: Gregory Alan Bolcer <gbolcer@endeavors.com>
+Subject: Re: RSA (repost)
+To: fork@spamassassin.taint.org
+Reply-To: gbolcer@endeavors.com
+Message-Id: <3D87331C.4AC53007@endeavors.com>
+Organization: Endeavors Technology, Inc.
+MIME-Version: 1.0
+X-Mailer: Mozilla 4.79 [en] (X11; U; IRIX 6.5 IP32)
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: 8BIT
+X-Accept-Language: en, pdf
+References: <Pine.LNX.4.33.0203311705580.19486-100000@watcher.mithral.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 17 Sep 2002 06:50:20 -0700
+
+"Adam L. Beberg" wrote:
+> 
+> So, who has done RSA implementation before?
+> Having a typo-I-cant-spot problem with my CRT...
+> 
+> - Adam L. "Duncan" Beberg
+>   http://www.mithral.com/~beberg/
+>   beberg@mithral.com
+> 
+> http://xent.com/mailman/listinfo/fork
+
+Done a ton of them, both with and without their
+stuff.  With is definitely easier.[1]
+
+Greg
+
+[1] http://www.endeavors.com/PressReleases/rsa.htm
+
+
+
+
+
+ Endeavors Technology and RSA Security Form Strategic Partnership to 
+ Enhance SSL Performance in Secure, Enterprise-Scalable P2P Computing
+
+Endeavors Technology and RSA Security combine their respective peer-to-peer Magi Enterprise 
+Web collaboration and RSA BSAFE® software for SSL users to instantly extend security and improve performance
+of 
+desktop and corporate data sharing, and Web interaction between workgroups inside and across corporations.
+
+Irvine (CA) and Cambridge (UK), September 12, 2002 - Secure web collaboration software leader Endeavors
+Technology, Inc. today
+announced a technology sharing and marketing agreement with RSA Security Inc. the most trusted name in
+e-security.® This strategic
+partnership is aimed at extending the security and improving the performance of the standard SSL security
+protocol used by every e-based
+desktop, laptop and server. 
+
+Under the terms of the agreement, RSA Security's trusted security tools are embedded into Endeavors
+Technology's award-winning Magi
+Enterprise software product. The combined solution enables IT managers and users to simply extend security and
+encryption to every
+Magi-enabled device for the direct device-to-device sharing and interaction of corporate data and workflow
+between workgroups within and
+beyond the enterprise.
+
+Secure collaboration between desktops and corporate systems calls for enterprises to build complex and costly
+network infrastructures. This
+combination of technologies from the two companies eliminates both overheads, and also the need for specific
+security tools for each desktop
+application such as Microsoft Project. With Magi's secure RSA Security-based peer environment, collaboration
+can now be rapidly, easily and
+securely extended across all devices and company firewalls, and workgroups can interact with colleagues,
+partners and clients without concern
+in compromising corporate information. This brings true Internet scaling to corporations needing to interact
+highly securely with strong
+encryption and authentication across firewalls.
+
+"In these challenging times, there can be no compromise in safeguarding corporate data and knowledge," says
+Bernard Hulme, chairman and
+CEO of Endeavors Technology. "Embedding RSA Security encryption software into Magi products provides IT
+managers with added
+assurance, speed and cost savings, and a proven security net to accelerate the deployment of business-centric
+peer-to-peer computing"
+
+Endeavors Technology joins the RSA Secured® Partner Program. The program is designed to ensure complete
+interoperability between
+partner products and RSA Security's solutions including RSA SecurID® two-factor authentication, RSA
+ClearTrust® Web access
+management, RSA BSAFE® encryption and RSA Keon® digital certificate management.
+
+The strategic partnership paves the way for Magi Enterprise to bear the RSA Secured brand on product packaging
+and advertising, be listed in
+RSA Secured Partner Solutions directories, and have RSA Security's out-of-the-box, certified interoperability.
+It will also lead to joint
+marketing and promotional activities between the two firms, mutual field sales engagement opportunities on
+joint accounts, and 24x7 worldwide
+business continuity support.
+
+"Endeavors Technology is taking a leadership role by providing the highest-level of security in its enterprise
+products and streamlining the
+deployment process for IT managers," says Stuart Cohen, director of partner development at RSA Security. "By
+combining our products,
+enterprise customers have a solution that provides encryption and authentication across firewalls."
+
+About Magi
+Magi Enterprise 3.0, an award-winning web collaboration system, transforms today's Web into a highly secure
+inter- and intra-enterprise
+collaboration network. For the first time, enterprises can implement ad-hoc Virtual Private Networks for
+collaboration very rapidly and
+affordably without disrupting existing applications, networks or work practices. Magi Enterprise 3.0 does this
+by effectively transforming
+unsecured, "read-only" Web networks into two-way trusted and transparent collaboration environments, through
+the use of such features as
+cross-firewall connections, advanced data extraction, an intuitive graphical interface, and universal name
+spaces generating "follow me URLs"
+for mobile professionals.
+
+About RSA Security, Inc.
+RSA Security Inc., the most trusted name in e-security, helps organizations build secure, trusted foundations
+for e-business through its RSA
+SecurID two-factor authentication, RSA ClearTrust Web access management, RSA BSAFE encryption and RSA Keon
+digital certificate
+management product families. With approximately one billion RSA BSAFE-enabled applications in use worldwide,
+more than ten million RSA
+SecurID authentication users and almost 20 years of industry experience, RSA Security has the proven
+leadership and innovative technology to
+address the changing security needs of e-business and bring trust to the online economy. RSA Security can be
+reached at
+www.rsasecurity.com.
+
+About Endeavors Technology, Inc.
+Endeavors Technology, Inc. is a wholly-owned subsidiary of mobile computing and network infrastructure vendor
+Tadpole Technology plc
+(www.tadpole.com), which has plants and offices in Irvine and Carlsbad (California), and Cambridge, Edinburgh,
+and Bristol (UK). For further
+information on Endeavors' P2P solutions, call 949-833-2800, email to p2p@endeavors.com, or visit the company's
+website
+www.endeavors.com. 
+
+
+Copyright 2002 Endeavors Technology, Inc. Magi, and Magi Enterprise are registered trademarks of Endeavors
+Technology, Inc. RSA, BSAFE, ClearTrust, Keon, SecurID, RSA Secured and The Most
+Trusted Name in e-Security are registered trademarks or trademarks of RSA Security Inc. in the United States
+and/or other countries. All other products and services mentioned are trademarks of their
+respective companies. 
+
+
+
+           © 2002 Endeavors Technology, Inc., 19600 Fairchild, Suite 350, Irvine, CA 92612, phone
+949-833-2800, fax 949-833-2881, email info@endeavors.com.
+                           All rights reserved; specifications and descriptions subject to change without
+notice.
+
+

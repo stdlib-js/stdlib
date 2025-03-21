@@ -1,0 +1,79 @@
+From fork-admin@xent.com  Tue Sep 17 11:29:52 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 4667316F03
+	for <jm@localhost>; Tue, 17 Sep 2002 11:29:52 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 17 Sep 2002 11:29:52 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8GL4ZC09586 for <jm@jmason.org>;
+    Mon, 16 Sep 2002 22:04:35 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 23AD52940D2; Mon, 16 Sep 2002 14:01:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from homer.perfectpresence.com (unknown [209.123.207.194]) by
+    xent.com (Postfix) with ESMTP id 5EE0E2940CD for <fork@xent.com>;
+    Mon, 16 Sep 2002 14:00:40 -0700 (PDT)
+Received: from adsl-157-233-109.jax.bellsouth.net ([66.157.233.109]
+    helo=regina) by homer.perfectpresence.com with smtp (Exim 3.36 #1) id
+    17r32k-00063A-00; Mon, 16 Sep 2002 17:04:31 -0400
+From: "Geege Schuman" <geege@barrera.org>
+To: "Jim Whitehead" <ejw@cse.ucsc.edu>, "FoRK" <fork@spamassassin.taint.org>
+Subject: RE: introductions
+Message-Id: <ILEHJNJFPDLMDEKNIAKCAEGLCAAA.geege@barrera.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+Importance: Normal
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2800.1106
+In-Reply-To: <AMEPKEBLDJJCCDEJHAMIKEEBFHAA.ejw@cse.ucsc.edu>
+X-Antiabuse: This header was added to track abuse, please include it with
+    any abuse report
+X-Antiabuse: Primary Hostname - homer.perfectpresence.com
+X-Antiabuse: Original Domain - xent.com
+X-Antiabuse: Originator/Caller UID/GID - [0 0] / [0 0]
+X-Antiabuse: Sender Address Domain - barrera.org
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 16 Sep 2002 17:02:29 -0400
+
+the doctor wears many hats, including but not limited to a rubber skullcap
+for playing water polo, a beret for making sparkling wines, and an oversized
+fedora to deflect his own cigar smoke, which he regularly blows up my ...
+
+<cough>
+geege
+
+-----Original Message-----
+From: fork-admin@xent.com [mailto:fork-admin@xent.com]On Behalf Of Jim
+Whitehead
+Sent: Monday, September 16, 2002 2:08 PM
+To: FoRK
+Subject: RE: introductions
+
+
+> Aren't you Dr. Gregory A. Bolcer, Dutch Uncle of P2P?
+
+I thought he was Greg Bolcer, recovering XPilot & Doom junkie...
+
+- Jim
+
+
+
+
+

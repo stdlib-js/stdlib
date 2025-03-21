@@ -1,0 +1,146 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug 29 16:42:46 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id EDB0C43F9B
+	for <zzzz@localhost>; Thu, 29 Aug 2002 11:42:43 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Thu, 29 Aug 2002 16:42:44 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7TFYvZ18369 for <zzzz-sa@spamassassin.taint.org>; Thu, 29 Aug 2002 16:34:58 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17kRI7-0008KP-00; Thu,
+    29 Aug 2002 08:33:03 -0700
+Received: from moonbase.zanshin.com ([167.160.213.139]) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17kRHG-000488-00 for
+    <spamassassin-talk@lists.sourceforge.net>; Thu, 29 Aug 2002 08:32:10 -0700
+Received: from aztec.zanshin.com (IDENT:schaefer@aztec.zanshin.com
+    [167.160.213.132]) by moonbase.zanshin.com (8.11.0/8.11.0) with ESMTP id
+    g7TFW8J23933 for <spamassassin-talk@lists.sourceforge.net>; Thu,
+    29 Aug 2002 08:32:08 -0700
+From: Bart Schaefer <schaefer@zanshin.com>
+To: Spamassassin-Talk <spamassassin-talk@example.sourceforge.net>
+Subject: Re: [SAtalk] O.T. Habeus -- Why?
+In-Reply-To: <3D6E255A.CB569D9B@hallikainen.com>
+Message-Id: <Pine.LNX.4.44.0208290714450.30051-100000@aztec.zanshin.com>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Thu, 29 Aug 2002 08:32:08 -0700 (PDT)
+Date: Thu, 29 Aug 2002 08:32:08 -0700 (PDT)
+
+On 28 Aug 2002, Daniel Quinlan wrote:
+
+> Dan Kohn <dan@dankohn.com> writes:
+> 
+> > Daniel, it's easy enough for you to change the Habeas scores yourself
+> > on your installation.  If Habeas fails to live up to its promise to
+> > only license the warrant mark to non-spammers and to place all
+> > violators on the HIL, then I have no doubt that Justin and Craig will
+> > quickly remove us from the next release.  But, you're trying to kill
+> > Habeas before it has a chance to show any promise.
+> 
+> I think I've worked on SA enough to understand that I can localize a
+> score.  I'm just not comfortable with using SpamAssassin as a vehicle
+> for drumming up your business at the expense of our user base.
+
+I have to agree here.  If Habeas is going to die just because SA does not
+support it, that's a serious problem with the business model; but that is
+nobody's problem but Habeas's.
+
+A possible solution is for Habeas's business model to include some kind of
+incentive for users of SA to give it the benefit of the doubt.  I have yet
+to think of an incentive that fits the bill ...
+
+On Thu, 29 Aug 2002, Justin Mason wrote:
+
+> I don't see a problem supporting it in SpamAssassin -- but I see Dan's
+> points.
+> 
+>   - high score: as far as I can see, that's because SpamAssassin is
+>     assigning such high scores to legit newsletters these days, and the
+>     Habeas mark has to bring it down below that. :(   IMO we have to fix
+>     the high-scorers anyway -- no spam ever *needs* to score over 5 in our
+>     scoring system, 5 == tagged anyway.
+
+This is off the topic of the rest of this discussion, but amavisd (in all
+its incarnations) and MIMEDefang and several other MTA plugins all reject
+at SMTP time messages that scores higher than some threshold (often 10).  
+If some new release were to start scoring all spam no higher than 5.1,
+there'd better be _zero_ FPs, because all those filters would drop their
+thresholds to 5.
+
+On Thu, 29 Aug 2002, Michael Moncur wrote:
+
+> But I agree that there needs to be more focus on eliminating rules that
+> frequently hit on newsletters. If any newsletters actually use the Habeas
+> mark, that will be one way to help.
+
+Newsletters won't use the mark.  Habeas is priced way too high -- a factor
+of at least 20 over what the market will bear, IMO -- on a per-message
+basis for most typical mailing lists (Lockergnome, say) to afford it.
+
+On Thu, 29 Aug 2002, Harold Hallikainen wrote:
+
+> Habeus has come up with a very clever way to use existing law to battle
+> spam. It seems that at some point they could drop the licensing fee to
+> $1 or less and make all their income off suing the spammers for
+> copyright infringement.
+
+Sorry, that just can't work.
+
+If the Habeas mark actually becomes both widespread enough in non-spam,
+and effectively-enforced enough to be absent from spam, such that, e.g.,
+SA could assign a positive score to messages that do NOT have it, then
+spammers are out of business and Habeas has no one to sue.  There's nobody
+left to charge except the people who want (or are forced against their
+will because their mail won't get through otherwise) to use the mark.
+
+Conversely, if there are enough spammers forging the mark for Habeas to
+make all its income suing them, then the mark is useless for the purpose
+for which it was designed.
+
+Either way it seems to me that, after maybe a couple of lawsuits against
+real spammers and a lot of cease-and-desist letters to clueless Mom&Pops,
+then either (a) they're out of business, (b) they have to sell the rights
+to use the mark to increasingly questionable senders, or (c) they've both
+created and monopolized a market for "internet postage stamps" that
+everybody has to pay them for.
+
+The latter would be quite a coup if they [*] could pull it off -- they do
+absolutely nothing useful, unless you consider threatening people with
+lawsuits useful, yet still collect a fee either directly or indirectly
+from everyone on the internet -- effectively we'll be paying them for the
+privilege of policing their trademark for them.  I don't believe they'll
+ever get that far, but I don't particularly want to help them make it.
+
+[*] And I use the term "they" loosely, because the whole company could 
+consist of one lawyer if it really got to that point.
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

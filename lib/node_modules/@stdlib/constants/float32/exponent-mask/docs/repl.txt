@@ -1,0 +1,14 @@
+
+{{alias}}
+    Mask for the exponent of a single-precision floating-point number.
+
+    Examples
+    --------
+    > {{alias}}
+    2139095040
+    > {{alias:@stdlib/number/uint32/base/to-binary-string}}( {{alias}} )
+    '01111111100000000000000000000000'
+
+    See Also
+    --------
+

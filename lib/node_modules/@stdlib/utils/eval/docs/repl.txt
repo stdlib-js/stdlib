@@ -1,0 +1,29 @@
+
+{{alias}}( str )
+    Alias for `eval` global.
+
+    A reference to `eval` is treated differently by the compiler. For example,
+    when evaluating code containing block-scoped declarations  (e.g., `let`,
+    `const`, `function`, `class`), the compiler may throw an `error` complaining
+    that block-scoped declarations are not yet supported outside of
+    `strict mode`. One possible workaround is to include `"use strict";` in the
+    evaluated code.
+
+    Parameters
+    ----------
+    str: string
+        Code to evaluate.
+
+    Returns
+    -------
+    out: any
+        Returned value if applicable.
+
+    Examples
+    --------
+    > var v = {{alias}}( '5*4*3*2*1' )
+    120
+
+    See Also
+    --------
+

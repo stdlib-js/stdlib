@@ -1,0 +1,99 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug 22 10:49:11 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D926143C4F
+	for <jm@localhost>; Thu, 22 Aug 2002 05:47:12 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 22 Aug 2002 10:47:12 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7LHvHZ04091 for <jm-sa@jmason.org>; Wed, 21 Aug 2002 18:57:17 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17hZiA-0008Iy-00; Wed,
+    21 Aug 2002 10:56:06 -0700
+Received: from gc-na5.alcatel.fr ([64.208.49.5] helo=smail2.alcatel.fr) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17hZhm-0007v9-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 21 Aug 2002 10:55:42 -0700
+Received: from iww.netfr.alcatel.fr (iww.netfr.alcatel.fr
+    [155.132.180.114]) by smail2.alcatel.fr (ALCANET/NETFR) with ESMTP id
+    g7LHsTWb005902 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 21 Aug 2002 19:54:29 +0200
+Received: by iww.netfr.alcatel.fr
+    ("Mikrosoft Xchange",
+    from userid 513) id 32F5E1C2D; Wed, 21 Aug 2002 19:55:29 +0200 (CEST)
+From: Stephane Lentz <Stephane.Lentz@ansf.alcatel.fr>
+To: spamassassin-talk@example.sourceforge.net
+Subject: Re: [SAtalk] spamc processes
+Message-Id: <20020821175528.GA653@iww.netfr.alcatel.fr>
+Mail-Followup-To: Stephane Lentz <Stephane.Lentz@ansf.alcatel.fr>,
+	spamassassin-talk@lists.sourceforge.net
+References: <1029947173.32120.23.camel@localhost.localdomain>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <1029947173.32120.23.camel@localhost.localdomain>
+X-Mailer: Bogus Notes 5.10.666 (Corporate Release)
+X-Virus-Scanned: by amavisd-milter (http://amavis.org/)
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 21 Aug 2002 19:55:29 +0200
+Date: Wed, 21 Aug 2002 19:55:29 +0200
+
+On Wed, Aug 21, 2002 at 11:26:13AM -0500, brad angelcyk wrote:
+> 
+> 
+> Hi,
+> 
+> I have been using SpamAssassin for a few weeks, and I have noticed that
+> the speed of scanning of email has drastically reduced since we switched
+> to it.  My configuration is Sendmail 8.12.3 with SA 2.31 (using the
+> spamass-milter sendmail milter).  There are 125 spamc processes running
+> right now, and there were about 109 an hour ago.  They don't seem to be
+> clearing up.  Does anybody have any information on what I can do?
+> 
+> Thanks,
+> Brad
+> 
+the check_local tarball includes a program called miltrassassin.
+It's a C Milter program speaking the SPAMD protocol so it will be
+far more efficient than spamass-milter.
+Check http://www.digitalanswers.org/check_local/miltrassassin.html
+for some details about miltrassassin.                                                                                                                                                                     
+The check_local tarball can be downloaded on
+http://www.digitalanswers.org/check_local/beta.html
+
+Another alternative solution is to use Mimedefang : it offers
+anti-spam, attachment defanging, custom filtering.
+
+regards, 
+
+SL/
+
+---
+Stephane Lentz / Alcanet International - Internet Services
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

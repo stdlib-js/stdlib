@@ -1,0 +1,81 @@
+{
+  "name": "@stdlib/assert/is-complex-like",
+  "version": "0.0.0",
+  "description": "Test if a value is a complex number-like object.",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "main": "./lib",
+  "directories": {
+    "benchmark": "./benchmark",
+    "doc": "./docs",
+    "example": "./examples",
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "scripts": {},
+  "homepage": "https://github.com/stdlib-js/stdlib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stdlib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
+  "keywords": [
+    "stdlib",
+    "stdassert",
+    "assertion",
+    "assert",
+    "utilities",
+    "utility",
+    "utils",
+    "util",
+    "is",
+    "iscomplex",
+    "complex",
+    "complex64",
+    "complex128",
+    "64-bit",
+    "128-bit",
+    "float32",
+    "float64",
+    "single",
+    "single-precision",
+    "double",
+    "double-precision",
+    "ieee754",
+    "type",
+    "check",
+    "test",
+    "validate",
+    "valid",
+    "isvalid"
+  ]
+}

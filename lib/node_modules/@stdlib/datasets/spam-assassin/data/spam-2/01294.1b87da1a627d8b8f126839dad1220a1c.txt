@@ -1,0 +1,78 @@
+From fork-admin@xent.com  Tue Aug  6 12:01:13 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 1434A441CC
+	for <jm@localhost>; Tue,  6 Aug 2002 06:49:37 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:49:37 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g75G86k17540 for <jm@jmason.org>;
+    Mon, 5 Aug 2002 17:08:07 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id DF7A5294131; Mon,  5 Aug 2002 09:05:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from RHFSVR.rhf.local (unknown [64.45.229.51]) by xent.com
+    (Postfix) with SMTP id DBFB2294108 for <fork@xent.com>; Mon,
+    5 Aug 2002 09:04:25 -0700 (PDT)
+Received: from INTERNET02.rhf.local ([192.168.16.62]) by RHFSVR.rhf.local
+    with Microsoft SMTPSVC(5.0.2195.4453); Mon, 5 Aug 2002 12:00:28 -0400
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Mailer: PSS Bulk Mailer
+To: fork@spamassassin.taint.org
+From: davidm@rollinghillsford.com
+Subject: FORD MOTOR SALUTES ARMED SERVICES - Please Review
+Message-Id: <RHFSVRVuz1c9LShC4m000004ec9@RHFSVR.rhf.local>
+X-Originalarrivaltime: 05 Aug 2002 16:00:28.0643 (UTC) FILETIME=[37F79330:01C23C99]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 05 Aug 2002 12:00:28 -0400
+
+FORD SALUTES THE MILITARY.
+
+THIS OFFER IS EXTENDED EXCLUSIVELY TO ALL ACTIVE DUTY, RESERVE, RETIRED, MILITARY VETERANS AND THEIR DIRECT DEPENDANTS ONLY.
+
+** DELIVERY TO ANY MILITARY INSTALLATION OR THE CLOSEST PORT IS AVAILABLE. **
+
+ROLLING HILLS FORD, Inc. LOCATED IN CLERMONT, FLORIDA, IS OFFERING DURING THE MONTHS OF AUGUST AND SEPTEMBER 2002, A PERSONAL INVITATION.  
+
+FOR A LIMITED TIME, A SPECIALTY PERIOD SALES PROGRAM FOR THE ABOVE MENTIONED, WILL BE OFFERED, *UNADVERTISED TO THE GENERAL PUBLIC.*
+  
+CURRENT FORD INCENTIVES ARE ALSO HONORED *IN ADDITION* TO THIS MILITARY PROGRAM, INCLUDING REBATES UP TO $3000 DOLLARS OR 0.0% FINANCING ON SELECT VEHICLES.
+
+THIS OFFER INCLUDES PRE-OWNED VEHICLES.
+
+SPECIAL CREDIT SITUATIONS WILL BE GERNEROUSLY REVIEWED BY OUR FINANCE DIRECTORS.
+
+CONFORMATION CODE - MILITARY: 009AAKKY1109
+THIS CODE MUST BE PRESENTED TO QUALIFY.
+
+EMAIL FOR DETAILS:
+
+davidm@rollinghillsford.com
+
+OR CALL FOR DETAILS:
+
+(352) 394-6161 , ext 1051
+David Mitchell, I.T. Department
+davidm@rollinghillsford.com
+(352) 394 - 6161 EXT 1015
+Rolling Hills Ford
+Clermont Florida 
+http://xent.com/mailman/listinfo/fork
+
+

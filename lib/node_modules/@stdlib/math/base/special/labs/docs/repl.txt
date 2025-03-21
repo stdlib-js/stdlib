@@ -1,0 +1,27 @@
+
+{{alias}}( x )
+    Computes an absolute value of a signed 32-bit integer in two's complement
+    format.
+
+    Parameters
+    ----------
+    x: integer
+        Signed 32-bit integer.
+
+    Returns
+    -------
+    out: integer
+        Absolute value.
+
+    Examples
+    --------
+    > var v = {{alias}}( -1|0 )
+    1
+    > v = {{alias}}( 2|0 )
+    2
+    > v = {{alias}}( 0|0 )
+    0
+
+    See Also
+    --------
+

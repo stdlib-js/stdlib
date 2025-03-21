@@ -1,0 +1,34 @@
+
+{{alias}}( x )
+    Evaluates the common logarithm (base 10).
+
+    For negative numbers, the common logarithm is not defined.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    y: number
+        Function value.
+
+    Examples
+    --------
+    > var y = {{alias}}( 100.0 )
+    2.0
+    > y = {{alias}}( 8.0 )
+    ~0.903
+    > y = {{alias}}( 0.0 )
+    -Infinity
+    > y = {{alias}}( {{alias:@stdlib/constants/float64/pinf}} )
+    Infinity
+    > y = {{alias}}( NaN )
+    NaN
+    > y = {{alias}}( -4.0 )
+    NaN
+
+    See Also
+    --------
+

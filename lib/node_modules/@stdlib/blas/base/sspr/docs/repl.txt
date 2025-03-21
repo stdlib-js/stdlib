@@ -1,0 +1,109 @@
+
+{{alias}}( ord, uplo, N, α, x, sx, AP )
+    Performs the symmetric rank 1 operation `A = α*x*x^T + A` where `α` is a
+    scalar, `x` is an `N` element vector, and `A` is an `N` by `N` symmetric
+    matrix supplied in packed form.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If `N` is equal to `0` or `α` is equal to `0`, the function returns `AP`
+    unchanged.
+
+    Parameters
+    ----------
+    ord: string
+        Row-major (C-style) or column-major (Fortran-style) order. Must be
+        either 'row-major' or 'column-major'.
+
+    uplo: string
+        Specifies whether the upper or lower triangular matrix of `A` is
+        supplied. Must be either 'upper' or 'lower'.
+
+    N: integer
+        Number of elements along each dimension of `A`.
+
+    α: number
+        Scalar constant.
+
+    x: Float32Array
+        Input vector `x`.
+
+    sx: integer
+        Index increment for `x`.
+
+    AP: Float32Array
+        Matrix in packed form.
+
+    Returns
+    -------
+    AP: Float32Array
+        Matrix in packed form.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/float32}}( [ 1.0, 1.0 ] );
+    > var AP = new {{alias:@stdlib/array/float32}}( [ 1.0, 2.0, 3.0 ] );
+    > {{alias}}( 'row-major', 'upper', 2, 1.0, x, 1, AP )
+    <Float32Array>[ 2.0, 3.0, 4.0 ]
+
+
+{{alias}}.ndarray( ord, uplo, N, α, x, sx, ox, AP, sap, oap )
+    Performs the symmetric rank 1 operation `A = α*x*x^T + A` using alternative
+    indexing semantics and where `α` is a scalar, `x` is an `N` element vector,
+    and `A` is an `N` by `N` symmetric matrix supplied in packed form.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    ord: string
+        Row-major (C-style) or column-major (Fortran-style) order. Must be
+        either 'row-major' or 'column-major'.
+
+    uplo: string
+        Specifies whether the upper or lower triangular matrix of `A` is
+        supplied. Must be either 'upper' or 'lower'.
+
+    N: integer
+        Number of elements along each dimension of `A`.
+
+    α: number
+        Scalar.
+
+    x: Float32Array
+        Input vector `x`.
+
+    sx: integer
+        Index increment for `x`.
+
+    ox: integer
+        Starting index for `x`.
+
+    AP: Float32Array
+        Matrix in packed form.
+
+    sap: integer
+        Index increment for `ap`.
+
+    oap: integer
+        Starting index for `ap`.
+
+    Returns
+    -------
+    AP: Float32Array
+        Matrix in packed form.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/float32}}( [ 1.0, 1.0 ] );
+    > var AP = new {{alias:@stdlib/array/float32}}( [ 1.0, 2.0, 3.0 ] );
+    > var ord = 'row-major';
+    > var uplo = 'upper';
+    > {{alias}}.ndarray( ord, uplo, 2, 1.0, x, 1, 0, AP, 1, 0 )
+    <Float32Array>[ 2.0, 3.0, 4.0 ]
+
+    See Also
+    --------

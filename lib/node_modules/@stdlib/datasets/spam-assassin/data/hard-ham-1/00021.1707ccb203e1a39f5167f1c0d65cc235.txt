@@ -1,0 +1,555 @@
+Return-Path: <replies@oracleeblast.com>
+Received: (qmail 19678 invoked by alias); 10 Jul 2002 13:22:47 -0000
+Received: (qmail 19416 invoked by uid 82); 10 Jul 2002 13:22:42 -0000
+Received: from replies@oracleeblast.com by mailhost with qmail-scanner-1.00 (uvscan: v4.1.40/v4210. . Clean. Processed in 8.59332 secs); 10 Jul 2002 13:22:42 -0000
+Received: from inet-mail6.oracle.com (209.246.10.170)
+  by mi-1.rz.ruhr-uni-bochum.de with SMTP; 10 Jul 2002 13:22:30 -0000
+Received: from blaster-smtp.oracle.com (eblast01.oracleeblast.com [148.87.9.11])
+	by inet-mail6.oracle.com (Switch-2.2.2/Switch-2.2.0) with ESMTP id g6ADMHs25188
+	for XXXXXX.YYYYY@RUHR-UNI-BOCHUM.DE; Wed, 10 Jul 2002 06:22:17 -0700 (PDT)
+Date: Wed, 10 Jul 2002 06:22:17 -0700 (PDT)
+Message-Id: <200207101322.g6ADMHs25188@inet-mail6.oracle.com>
+Subject: Oracle Technology Network TechBlast - July 2002
+From: Oracle Technology Network<replies@oracleeblast.com>
+To: XXXXXX.YYYYY@RUHR-UNI-BOCHUM.DE
+Reply-To: replies@oracleeblast.com
+Content-Transfer-Encoding: 8bit
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+    boundary="next_part_of_message"
+
+
+--next_part_of_message
+
+
+
+e
+e
+ssage
+Content-type: text/plain; charset=iso-8859-1
+
+
+
+--next_part_of_message
+Content-Type: text/html
+
+
+<body bgcolor="#FFFFFF" link="#000000" vlink="#000000">
+<a href="http://otn.oracle.com/index.html" target="_top"><img src="http://otn.oracle.com/otn300x65.gif" width=300 height=65 border=0 alt="Oracle Technology Network" hspace=5 vspace=5></a> 
+<div align="center"><font face="Arial, Helvetica, sans-serif"><b><font size="+2">OTN 
+  TechBlast </font><font size="+1"><br>
+  </font> <i>July 2002 Issue</i></b><font size="2"><br>
+  <font size="1">The monthly TechBlast is also available through the <a href="http://otn.oracle.com/techblast/index.htm">Oracle 
+  Technology Network</a> website.</font></font></font> <br>
+  <div align="left"> 
+    <hr>
+  </div>
+</div>
+<table width="100%" border="0" cellspacing="10" >
+  <tr> 
+    <td valign="top" width="14%" ><font size="2" face="Arial, Helvetica, sans-serif"><b>In 
+      this issue:</b></font> 
+      <table width="100%" border="0" cellspacing="2" cellpadding="0">
+        <tr> 
+          <td><font size="1"><a href="#topnews"><img src="http://otn.oracle.com/images/bullets_and_symbols/red_arrow_bullet_10.gif" width="12" height="13" border="0"></a></font></td>
+          <td><font face="Arial, Helvetica, sans-serif" size="1"><a href="#feature">This 
+            Month's Feature</a></font></td>
+        </tr>
+        <tr> 
+          <td height="12"><font size="1"><a href="#newdownloads"><img src="http://otn.oracle.com/images/bullets_and_symbols/red_arrow_bullet_10.gif" width="12" height="13" border="0"></a></font></td>
+          <td><font face="Arial, Helvetica, sans-serif" size="1"><a href="#news"> 
+            News</a></font></td>
+        </tr>
+        <tr> 
+          <td height="9"><font size="1"><a href="#newdownloads"><img src="http://otn.oracle.com/images/bullets_and_symbols/red_arrow_bullet_10.gif" width="12" height="13" border="0"></a></font></td>
+          <td><font face="Arial, Helvetica, sans-serif" size="1"><a href="#downloads">Software 
+            Downloads</a></font></td>
+        </tr>
+        <tr> 
+          <td><font size="1"><a href="#ou"><img src="http://otn.oracle.com/images/bullets_and_symbols/red_arrow_bullet_10.gif" width="12" height="13" border="0"></a></font></td>
+          <td><font face="Arial, Helvetica, sans-serif" size="1"><a href="#ou">Oracle 
+            University</a></font></td>
+        </tr>
+        <tr> 
+          <td height="2"><font size="1"><a href="#events"><img src="http://otn.oracle.com/images/bullets_and_symbols/red_arrow_bullet_10.gif" width="12" height="13" border="0"></a></font></td>
+          <td><font face="Arial, Helvetica, sans-serif" size="1"><a href="#books">New 
+            Books</a></font></td>
+        </tr>
+        <tr> 
+          <td valign="top"><font size="1"><a href="#ebn"><img src="http://otn.oracle.com/images/bullets_and_symbols/red_arrow_bullet_10.gif" width="12" height="13" border="0"></a></font></td>
+          <td valign="top"> 
+            <p><font size="1" face="Arial, Helvetica, sans-serif" color="#000000">Worldwide 
+              Events: <a href="#americas"><br>
+              Americas</a> | <a href="#emea">EMEA</a> | <a href="#apac">APAC</a></font></p>
+          </td>
+        </tr>
+      </table>
+      <p align="left"><a href="mailto:?subject=OTN%20newsletter%20&body=Interesting%20reading%20from%20the%20Oracle%20Technology%20Network:%20%20http://otn.oracle.com/techblast"><img src="http://otn.oracle.com/techblast/images/email2friend.gif" width="70" height="80" border="0"></a></p>
+    </td>
+    <td valign="top" width="69%" > 
+      <p><font face="Arial, Helvetica, sans-serif"><a name="feature"></a> <b><font size="4"><i>This 
+        Month's Feature: </i></font><font face="Arial, Helvetica, sans-serif" size="4"> 
+        <i>New Developer Services on OTN</i></font></b></font></p>
+      <p><b><font face="Arial, Helvetica, sans-serif" size="2">OTN Members: Get 
+        Oracle Software on CD </font></b><font face="Arial, Helvetica, sans-serif" size="2"><b>Shipped 
+        to you Today!<br>
+        </b> Order <a href="https://www.oracle.com/jsp/otntt/index.jsp">OTN TechTracks</a> 
+        and receive Oracle9i Database Release 2, Oracle9i Application Server Release 
+        2, and Oracle Developer Suite (including JDeveloper) CDs for the platform 
+        of your choice. TechTracks is a one-year subscription, and it includes 
+        access to Oracle Support's KnowledgeBase and CD updates shipped to you 
+        whenever there are major new releases of Oracle software. <i>Enter promo 
+        code OWC for a $50 savings during the month of July</i>.</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"><b>Exchange your Knowledge 
+        through OTN Community Code Services<br>
+        </b><a href="http://otncast.otnxchange.oracle.com/">OTN Community Code</a> 
+        is a web-browsable CVS repository that lets you review, customize, extend, 
+        and share Oracle-related code and coding techniques. OTN populated it 
+        with sample application projects, so that you can view sample code source 
+        online, download it, submit bugs and suggestions to the development teams, 
+        and get email notifications when code is updated. Participate in an Oracle-sponsored 
+        project, and then create your own project and share your code with the 
+        OTN community.</font></p>
+      <p><b><font size="2" face="Arial, Helvetica, sans-serif">Web Services Center 
+        Now Available on OTN</font></b><font size="2" face="Arial, Helvetica, sans-serif"><br>
+        The <a href="http://otn.oracle.com/tech/webservices/">OTN Web Services 
+        Center</a> is a new resource for the development and deployment of Web 
+        services. Visitors to this new Center can experience live Web service 
+        examples, access the latest Web services technical information, and build 
+        their own Web services using <a href="http://otn.oracle.com/products/jdev/content.html">Oracle9i 
+        JDeveloper</a>. The Web Services Center offers information of value to 
+        Web services <a href="http://otn.oracle.com/tech/webservices/ws_architect.html">architects</a>, 
+        <a href="http://otn.oracle.com/tech/webservices/ws_appdev.html">developers</a> 
+        and <a href="http://otn.oracle.com/tech/webservices/learner.html">newcomers</a>.</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><b>Win Great Prizes 
+        in the OTN Web Services Challenge</b><br>
+        Developers are encouraged to submit their own Web services to the OTN 
+        Web Services Challenge. Entering your Web services makes you eligible 
+        for fantastic prizes, including a fully decked-out Dell mobile workstation. 
+        The Challenge starts August 1, so <a href="http://otn.oracle.com/tech/webservices/challenge.html">get 
+        a head start today</a> by learning more about the rules. You can even 
+        <a href="http://www.oracle.com/go/?&Src=1215798&Act=21">preregister your 
+        interest</a> in the Challenge.</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><b>New Internet Seminar: 
+        J2EE and Web Services on Linux with Oracle9iAS Release 2 </b><br>
+        <a href="http://www.oracle.com/go/?&Src=1377459&amp;Act=7">Attend</a> 
+        this on-demand Internet Seminar to learn how to use Oracle9i Application 
+        Server Release 2 to develop high performance J2EE and Web Services applications 
+        on the Linux operating systems.</font></p>
+      <p align="center"><font face="Arial, Helvetica, sans-serif" size="2"><a name="newdownloads"></a><a href="#feature">This 
+        Month's Feature</a> | <a href="#news">News</a> | <a href="#downloads">Software 
+        Downloads</a> | <a href="#ou">Oracle University</a> | <a href="#books">New 
+        Books</a> | <a href="#events">Worldwide Events</a></font></p>
+      <p align="left"><font face="Arial, Helvetica, sans-serif"><b><a name="news"></a>News</b></font></p>
+      <p align="left"><b><font size="2" face="Arial, Helvetica, sans-serif">Special 
+        Discount on Red Hat Linux Advanced Server</font></b> <font size="2" face="Arial, Helvetica, sans-serif"><br>
+        Receive up to 45% discount on the initial purchase of Red Hat Linux Advanced 
+        Server. <a href="http://www.oracle.com/go/?&Src=1376382&amp;Act=11">Find 
+        out how</a>! Offer valid July 1- July 31, 2002. To get more information 
+        on Oracle and Linux, <a href="http://otn.oracle.com/tech/linux">click 
+        here</a>. </font></p>
+      <p><b><font size="2" face="Arial, Helvetica, sans-serif">Helping WebGain 
+        Developers Move to Oracle9i JDeveloper</font></b><font size="2" face="Arial, Helvetica, sans-serif"><br>
+        With all the consolidation taking place in the Java tools space, developers 
+        are seeking tools that provide a complete and integrated environment for 
+        developing J2EE applications and Web services, and also offer security 
+        and stability for the future. Oracle9i JDeveloper delivers on all counts, 
+        and the new <a href="http://otn.oracle.com/products/jdev/htdocs/vcmigration/content.html">WebGain 
+        Developer Center on OTN</a> has been created to give VisualCafe users 
+        the resources to <a href="http://otn.oracle.com/products/jdev/htdocs/vcmigration/move.html">move</a> 
+        rapidly and smoothly to the integrated development environment of Oracle9i 
+        JDeveloper. <a href="http://www.oracle.com/ebusinessnetwork/showiseminar.html?1379826&">Listen</a> 
+        to the interview with Ted Farrell, Oracle's Senior Director of Applications 
+        Tools Technology and former WebGain CTO, on &quot;moving to Oracle9i JDeveloper&quot;. 
+        </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><b>Oracle9i Application 
+        Server # 1 in ECperf Benchmarks</b> <br>
+        In its first ECperf submissions, Oracle9i Application Server Release 2 
+        achieved the industry's best ever 'performance' benchmark at 61,863 BBops/min, 
+        beating IBM by 39% and BEA by 63%. The proof is in: Oracle9iAS is still 
+        faster than IBM and BEA. Oracle9iAS also achieved the best results in 
+        the ECperf 'price/performance' category at $5/BBop, 28% better than BEA's 
+        top result, and 54% better than IBM's top result. Get the facts: <a href="http://www.oracle.com/go/?&Src=1380990&amp;Act=7">read</a> 
+        the Oracle9iAS ECperf Benchmark Report now and <a href="http://www.oracle.com/ebusinessnetwork/showiseminar.html?1392270">tune 
+        into</a> a Live Internet Seminar and Q&amp;A on Wednesday, July 17 at 
+        8:00 a.m. PDT for a live presentation and discussion of these record setting 
+        results. </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><b>Four Internet Seminars 
+        on the New Security Features in Oracle9i Application Server Release 2</b> 
+        <br>
+        <a href="http://www.oracle.com/ip/deploy/ias/sso/index.html?iseminars.html">Watch</a> 
+        these four Internet Seminars to learn about the new security features 
+        in Oracle9i Application Server Release 2. Oracle9i Application Server 
+        Release 2 is the first application server to offer integrated support 
+        for Single Sign-On, JAAS and an LDAP compliant directory that together 
+        let you cost efficiently secure all your J2EE applications, portals, and 
+        Web services.</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><b>OTN Toolbar</b><br>
+        Search OTN from anywhere on the internet with OTN Toolbar. <a href="http://otn.oracle.com/toolbar/content.html">Download</a> 
+        today to easily gain access to many of the key features of OTN (including 
+        downloads, sample code, documentation, and discussion forums).</font></p>
+      <p><b><font size="2" face="Arial, Helvetica, sans-serif">New Internet Seminar 
+        on Oracle9iAS Web Cache and ESI</font></b> <font size="2" face="Arial, Helvetica, sans-serif"><br>
+        <a href="http://www.oracle.com/ebusinessnetwork/showiseminar.html?1293857">Watch</a> 
+        this Internet Seminar and learn how Oracle9iAS Web Cache lets you accelerate 
+        any Web application running on any server by up to 20 times. Speed applications 
+        built in Active Server Pages, Java Server Pages, Servlets, EJBs and more. 
+        Deploy with Web servers like Apache and Microsoft IIS as well as application 
+        servers like BEA WebLogic, IBM WebSphere, Sun/iPlanet and, of course, 
+        Oracle9iAS. Best of all, Oracle9iAS Web Cache uniquely supports caching 
+        of both static and dynamically generated content without changing the 
+        application, enabling dynamic Web sites to more efficiently deliver rich 
+        content and therefore improving the user experience. </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><b>Oracle9i Reports 
+        data source SDK available now</b><br>
+        The <a href="http://otn.oracle.com/products/reports/apis/pdstutorial/textPDS/index.html">Oracle9i 
+        Reports data source SDK</a> allows you to plug in your own data sources 
+        and benefit from the sophisticated report creation and distribution environment 
+        of <a href="http://otn.oracle.com/products/reports/content.html">Oracle9i 
+        Reports</a>. Check out the new documentation and samples. </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><b>Putting Forms on 
+        the Web </b><br>
+        Looking to move your existing Forms application from client/server to 
+        the Web? Want the easy access and maintainability of a web deployed Forms 
+        application? Then <a href="http://otn.oracle.com/products/forms/pdf/forms9icstowebmigration.pdf">check 
+        out this new paper</a>.</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><b>Struts and Oracle9i 
+        JDeveloper</b><br>
+        Here's a <a href="http://otn.oracle.com/products/jdev/howtos/jsp/StrutsHowTo.html">cool 
+        new article</a> with detailed instructions on how to configure and use 
+        the Jakarta Struts open source Model-View-Controller framework with <a href="http://otn.oracle.com/products/jdev/content.html">Oracle9i 
+        JDeveloper</a>.</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> <b>Quickstart with 
+        Oracle9i JDeveloper for BEA developers</b><br>
+        Are you using BEA's WebLogic and looking for development tools? Here is 
+        the <a href="http://otn.oracle.com/centers/mov2jdev">easy way to start</a> 
+        using the award winning Oracle9i JDeveloper with WebLogic. And if you 
+        want to use the fastest J2EE container, check out the <a href="http://www.oracle.com/go/?&Src=1260040&Act=8">migration 
+        kit</a> to Oracle9iAS.</font> </p>
+      <p><b><font size="2" face="Arial, Helvetica, sans-serif">Wireless and Voice 
+        Made Easy With Oracle9i Application Server</font></b> <font size="2" face="Arial, Helvetica, sans-serif"><br>
+        New Internet lessons give viewers the low-down on how to use the wireless 
+        and voice services of Oracle9i Application Server (Oracle9iAS Wireless) 
+        to quickly and easily give access to applications and data using any device, 
+        over any network. Learn why Oracle is a leader in wireless and voice infrastructure 
+        for yourselves! <a href="http://www.oracle.com/go/?&Src=1393043&amp;Act=9">Check 
+        out</a> the new Internet lessons in the FREE Mobile eKit!</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><b>Snapshot Seminar: 
+        Interwoven &amp; Oracle9iAS Content Management</b><br>
+        Oracle and Interwoven together offer a portal ready, proven, and flexible 
+        Enterprise Content Management solution. . Watch a 15 minute on-demand 
+        <a href="http://www.oracle.com/go/?&Src=1295633&Act=45">snapshot seminar</a> 
+        and learn how you can let your users control their content through a portal 
+        powered by Oracle and Interwoven. </font></p>
+      <p><b><font size="2" face="Arial, Helvetica, sans-serif">Updated Oracle9iAS 
+        Portal Developer Kit (PDK) - July<br>
+        </font></b><font size="2" face="Arial, Helvetica, sans-serif">The <a href="http://portalstudio.oracle.com">updated 
+        Oracle9iAS Portal Developer Kit (PDK)</a> highlights portlet communication. 
+        Using the PDK, you can build smart portlets with such features as inter-portlet 
+        communication, page to portlet communication, and portlet reusability. 
+        This release includes new J2EE-based and Web Services samples. </font></p>
+      <p><b><font size="2" face="Arial, Helvetica, sans-serif">Snapshot Seminar: 
+        Documentum &amp; Oracle9iAS Content Management</font></b><font size="2" face="Arial, Helvetica, sans-serif"><br>
+        Oracle and Documentum now offer a joint solution to create, manage and 
+        deliver content through Web sites and portals. Watch a 15 minute on-demand 
+        <a href="http://www.oracle.com/go/?&Src=1295633&Act=44">snapshot 
+        seminar</a> and learn how you can let your users control their content 
+        through a portal powered by Oracle and Documentum.</font></p>
+      <p></p>
+      <p align="center"><font face="Arial, Helvetica, sans-serif" size="2"><a name="newdownloads"></a><a href="#feature">This 
+        Month's Feature</a> | <a href="#news">News</a> | <a href="#downloads">Software 
+        Downloads</a> | <a href="#ou">Oracle University</a> | <a href="#books">New 
+        Books</a> | <a href="#events">Worldwide Events</a></font></p>
+      <p align="left"><font face="Arial, Helvetica, sans-serif"><b><a name="downloads"></a> 
+        New Software Downloads</b></font></p>
+      <p align="left"><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://otn.oracle.com/software/products/ias/devuse.html">Oracle9i 
+        Application Server Release 2 for Windows NT/2000, AIX, and Compaq Tru64 
+        UNIX</a> </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://otn.oracle.com/software/products/ias/devuse.html">Oracle9iAS 
+        TopLink 4.6 for Linux, UNIX, and Windows NT/2000</a> </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://otn.oracle.com/software/products/lite/content.html">Oracle9i 
+        Lite Release 5.0.2.0.0 for Sun SPARC Solaris</a> </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://otn.oracle.com/software/tech/windows/odpnet/content.html">Oracle 
+        Data Provider for .NET (ODP.NET) Beta</a> </font></p>
+      <p align="center"><font face="Arial, Helvetica, sans-serif" size="2"><a name="newdownloads"></a><a href="#feature">This 
+        Month's Feature</a> | <a href="#news">News</a> | <a href="#downloads">Software 
+        Downloads</a> | <a href="#ou">Oracle University</a> | <a href="#books">New 
+        Books</a> | <a href="#events">Worldwide Events</a></font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"><b><a name="ou"></a></b></font><font face="Arial, Helvetica, sans-serif"><b>Oracle 
+        University</b></font></p>
+      <p><b><font size="2" face="Arial, Helvetica, sans-serif">Special Offer! 
+        Save 45% on Oracle9i DBA Certification Training</font></b> <font size="2" face="Arial, Helvetica, sans-serif"><br>
+        The expanded Oracle Certification Program now offers a true certification 
+        levels that are built to fit the needs of IT professionals as well as 
+        organizations looking to hire them. Each level constitutes reaching a 
+        benchmark of experience and expertise that is industry recognized and 
+        approved. And, with each new credential can come increased opportunities, 
+        higher pay, and more benefits to keep Oracle professionals successful. 
+        </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">Oracle9i Certification 
+        Savings Plan &#150; Save 45% on 4 Instructor Led inClass courses. 4 for 
+        the price of 2! <a href="http://www.oracle.com/education/index.html?promotions.html">Click 
+        here</a> to learn more! </font></p>
+      </td>
+    <td valign="top" width="14%" > 
+      <div align="center"> 
+        <table width="100%" border="0" cellspacing="0" cellpadding="1" bgcolor="#FF0000">
+          <tr> 
+            <td bgcolor="#000000"> 
+              <table width="100%" border="0" cellpadding="5" bgcolor="#FFFF00" cellspacing="0">
+                <tr> 
+                  <td bgcolor="#FFFFFF" valign="top"> 
+                    <p align="center"><img src="http://otn.oracle.com/techblast/images/LightBulb.gif" width="80" height="109"></p>
+                    <p align="left"><font size="1" face="Arial, Helvetica, sans-serif">Seeking 
+                      a new job? Check out <a href="http://seeker.dice.com/seeker.epl?rel_code=26&op=2&skill=oracle">OTN 
+                      Skills Marketplace</a> for all open Oracle-trained positions.</font></p>
+                    <p align="left"><font face="Arial, Helvetica, sans-serif" size="1">Need 
+                      help implementing technology solutions to business problems? 
+                      <a href="http://otn.oracle.com/products/oracle9i/htdocs/9iober2/index.html">Oracle9i 
+                      by Example Series tutorials</a> can save you time.</font></p>
+                    <p align="left"><font size="1" face="Arial, Helvetica, sans-serif">Taking 
+                      an OCP exam? OTN members, take advantage of the 20% exam 
+                      <a href="http://www.oracle.com/education/certification/faq/index.html?otndisc.html">discount</a>.</font></p>
+                    </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<body bgcolor="#FFFFFF" text="#000000">
+<table width="100%" border="0" cellspacing="10" >
+  <tr> 
+    <td valign="top" width="17%" > 
+      <h5>&nbsp;</h5>
+    </td>
+    <td valign="top" width="67%" > 
+      <div align="center"> 
+        <p align="center"><font face="Arial, Helvetica, sans-serif" size="2"><a name="newdownloads"></a><a href="#feature">This 
+          Month's Feature</a> | <a href="#news">News</a> | <a href="#downloads">Software 
+          Downloads</a> | <a href="#ou">Oracle University</a> | <a href="#books">New 
+          Books</a> | <a href="#events">Worldwide Events</a></font></p>
+        <div align="center"> 
+          <div align="center"> 
+            <div align="center"> 
+              <p align="left"><font face="Arial, Helvetica, sans-serif"><b><a name="books"></a>New 
+                Books </b></font></p>
+              <p align="left"><b><font size="2" face="Arial, Helvetica, sans-serif">Oracle9i 
+                DBA 101</font></b><font size="2" face="Arial, Helvetica, sans-serif"><br>
+                <a href="http://shop.osborne.com/cgi-bin/oraclepress/0072224746.html">Oracle9i 
+                DBA 101</a> by Marlene Theriault, Rachel Carmichael, &amp; James 
+                Viscusi (ISBN 0-07-222474-6) explains, step-by-step, how to effectively 
+                administer an Oracle database. Readers will find coverage of the 
+                key Oracle9i new features as well as details on the daily responsibilities 
+                of a DBA and tips on how to successfully accomplish those tasks. 
+                From the exclusive publishers of Oracle Press books, this is the 
+                ideal resource for the aspiring Oracle database administrator. 
+                </font></p>
+              <p align="left"><font size="2" face="Arial, Helvetica, sans-serif"><b>Oracle9i 
+                Mobile</b><br>
+                <a href="http://shop.osborne.com/cgi-bin/oraclepress/007222455X.html">Oracle9i 
+                Mobile</a> by Alan Yeung, Philip Stephenson, &amp; Nicholas Pang 
+                (ISBN 0-07-222455-X) helps readers design, deploy, and manage 
+                flexible mobile applications on the Oracle platform. From the 
+                exclusive publishers of Oracle Press books, this resource explains 
+                how to use and extend the mobile services available in Oracle9iAS 
+                Wireless and integrate with other Oracle technologies. Mobilize 
+                any e-business, reach new customers, and deliver critical information 
+                to mobile users with the most scalable and reliable mobile infrastructure 
+                available. </font></p>
+              <p align="left"><font size="2" face="Arial, Helvetica, sans-serif"> 
+                <b>Oracle Press User Group Program</b><br>
+                Oracle Press has a new User Group Program! Oracle Press supports 
+                the service that User Groups provide to the technical community. 
+                We value our relationship with community-based groups and welcome 
+                the opportunity to form partnerships with User Groups to disseminate 
+                the latest technological information available in Osborne publications. 
+                Osborne encourages participation by technical User Groups that 
+                meet regularly, discuss, teach, and troubleshoot technical topics, 
+                write book reviews, and publish print and/or online newsletters. 
+                </font></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div align="left"> 
+        <p><font size="2" face="Arial, Helvetica, sans-serif">Oracle Press can 
+          provide User Groups: </font></p>
+      </div>
+      <ul>
+        <li> 
+          <div align="left"><font size="2" face="Arial, Helvetica, sans-serif">Review 
+            copies of Oracle Press books for newsletter reviews </font></div>
+        </li>
+        <li> 
+          <div align="left"><font size="2" face="Arial, Helvetica, sans-serif">Book 
+            donations and promotional items for User Group events </font></div>
+        </li>
+        <li> 
+          <div align="left"><font size="2" face="Arial, Helvetica, sans-serif">30% 
+            discount on bulk purchases of 10 or more books </font></div>
+        </li>
+        <li>
+          <div align="left"><font size="2" face="Arial, Helvetica, sans-serif">And 
+            more...</font></div>
+        </li>
+      </ul>
+      <div align="center"> 
+        <div align="center"> 
+          <div align="center"> 
+            <div align="center"> 
+              <p align="left"><font size="2" face="Arial, Helvetica, sans-serif"> 
+                <a href="http://www.osborne.com/usergroups/index.shtml">Click 
+                here</a> for complete details about Oracle Press' User Group Program.</font><font size="2"> 
+                </font> </p>
+              <p align="center"><font face="Arial, Helvetica, sans-serif" size="2"><a name="newdownloads"></a><a href="#feature">This 
+                Month's Feature</a> | <a href="#news">News</a> | <a href="#downloads">Software 
+                Downloads</a> | <a href="#ou">Oracle University</a> | <a href="#books">New 
+                Books</a> | <a href="#events">Worldwide Events</a></font></p>
+              <p align="left"><font face="Arial, Helvetica, sans-serif" size="2"><b><a name="events"></a></b></font><font face="Arial, Helvetica, sans-serif"><b>Worldwide 
+                Events </b></font></p>
+            </div>
+            <p align="left"><b><font face="Arial, Helvetica, sans-serif" size="2"><a name="americas"></a>Americas</font></b></p>
+            <p align="left"><b><font face="Arial, Helvetica, sans-serif" size="2">Oracle 
+              User Group Events</font></b><font face="Arial, Helvetica, sans-serif" size="2"><br>
+              <a href="http://otn.oracle.com/collaboration/user_group/events.html">Find 
+              out</a> where new user group events are happening in your area. 
+              </font> </p>
+            <p align="left"><font face="Arial, Helvetica, sans-serif" size="2"><b><a name="apac"></a>APAC</b></font></p>
+          </div>
+        </div>
+      </div>
+      <div align="left"> 
+        <table width="100%" border="0" cellpadding="5">
+          <tr> 
+            <td width="16%" height="47"><b><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.oracle.com/oracleworld"><img src="http://otn.oracle.com/events/nsmailH020.gif" align=absmiddle 
+			width="104" height="104" border="0"></a></font></b></td>
+            <td width="84%" valign="top"><b><font face="Arial, Helvetica, sans-serif" size="2">OracleWorld 
+              Online - Beijing <br>
+              </font></b><font size="2" face="Arial, Helvetica, sans-serif">Over 
+              5,000 industry professionals from all over China and the world gathered 
+              to learn how Oracle can help your business reduce costs, improve 
+              efficiencies, and improve the way you run your business. If you 
+              missed OracleWorld in Copenhagen, you can get all the highlights 
+              including keynotes, conference presentations and whitepapers <a href="http://www.oracle.com/oracleworld/online/beijing/">online</a>.</font></td>
+          </tr>
+        </table>
+        <br>
+      </div>
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2"><b>Oracle 
+        iSeminars: Free &amp; Live @ Your Desktop<br>
+        </b> Attend a FREE Oracle APAC iSeminar to learn more about how Oracle9i 
+        - Application Server, Database &amp; Tools could provide you with a complete 
+        and cost-effective e-business infrastructure. </font></p>
+      <div align="left"></div>
+      <div align="center"> 
+        <div align="center"> 
+          <div align="center"> 
+            <p align="left"><font face="Arial, Helvetica, sans-serif" size="2">Please 
+              <a href="http://isdapac.oracle.com/iccdocs/seminarList.shtml">click 
+              here</a> for further information and online registration for all 
+              iseminars. (Please select correct time zone &amp; click &quot;reset&quot;). 
+              </font><font face="Arial, Helvetica, sans-serif" size="2">For any 
+              questions, please <a href="mailto:oracleisd_au@oracle.com">email</a> 
+              us.</font> </p>
+            <p align="left"><font face="Arial, Helvetica, sans-serif" size="2"><b><a name="emea"></a>EMEA</b></font></p>
+            <table width="100%" border="0" cellpadding="5">
+              <tr> 
+                <td width="16%" height="56"><b><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.oracle.com/oracleworld"><img src="http://otn.oracle.com/events/nsmailH020.gif" align=absmiddle 
+			width="104" height="104" border="0"></a></font></b></td>
+                <td width="84%" valign="top"><b><font size="2" face="Arial, Helvetica, sans-serif">OracleWorld 
+                  Online - Copenhagen<br>
+                  </font></b><font size="2" face="Arial, Helvetica, sans-serif">Thousands 
+                  of professionals from all over the world gathered to learn how 
+                  Oracle can help your business reduce costs, improve efficiencies, 
+                  and improve the way you run your business. If you missed OracleWorld 
+                  in Copenhagen, you can get all the highlights including keynotes, 
+                  conference presentations and whitepapers <a href="http://www.oracle.com/oracleworld/online/copenhagen/">online</a>.</font></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div align="left"><br>
+        </div>
+        <div align="left"><b><font size="2" face="Arial, Helvetica, sans-serif">Oracle 
+          Technology Days Belgian &amp; Luxembourg<br>
+          </font></b><font size="2" face="Arial, Helvetica, sans-serif">Join us 
+          for the Oracle Technology Days - Featuring Oracle9i Release 2 &#150; 
+          Live, Local, Free! </font></div>
+      </div>
+      <p align="left"><font size="2" face="Arial, Helvetica, sans-serif">Join 
+        us for this executive full-day event :<br>
+        29/8/2002 - Brussels (sessions in English)<br>
+        3/9/2002 - Gent (sessies in het Nederlands)<br>
+        12/9/2002 - Li&egrave;ge (session en fran&ccedil;ais)</font></p>
+      <p align="left"><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.oracle.com/go/?&Src=1336077&Act=17">Click 
+        here</a> for more information and registration.</font></p>
+      <p align="left"><font size="2" face="Arial, Helvetica, sans-serif">Regards,</font></p>
+      <p align="left"><font size="2" face="Arial, Helvetica, sans-serif">Oracle 
+        Technology Network Team</font></p>
+      <p align="left"><font size="2" face="Arial, Helvetica, sans-serif"><b><font size="1">UNSUBSCRIBE<br>
+        </font></b><font size="1"> When you registered at OTN, you indicated you 
+        would like to receive e-mail updates from us. If you do not want to receive 
+        future e-mails, please visit our <a href="http://otn.oracle.com/admin/account/membership.html">update 
+        section</a> , log in with your username and password, and UNCHECK the 
+        I wish to receive informational e-mails box. </font></font></p>
+      <p align="left"><font size="1" face="Arial, Helvetica, sans-serif"><b>USERNAME 
+        AND PASSWORD QUESTIONS?<br>
+        </b> Forget your OTN login information? Use our <a href="http://otn.oracle.com/admin/account/membership.html">password 
+        lookup</a>.</font></p>
+      <p align="left"><b><font size="1" face="Arial, Helvetica, sans-serif">DUPLICATE 
+        MESSAGES?<br>
+        </font></b><font face="Arial, Helvetica, sans-serif" size="1"> You may 
+        have multiple accounts on OTN. Please send a message to <a href="mailto:otn_us@oracle.com">OTN</a> 
+        with the username you're using to access http://otn.oracle.com. We'll 
+        then contact you and delete the unused account. </font> 
+          </td>
+    <td valign="top" width="16%" > 
+      <div align="center"> </div>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+
+<p><font face="Arial, helvetica" size="1">
+<br>To be removed from Oracle's mailing lists, send an email to: 
+<br><a href="mailto:unsubscribe@oracleeblast.com?subject=REMOVE OF ORACLE MAILING LIST 1400444&body=REMOVE XXXXXX.YYYYY@RUHR-UNI-BOCHUM.DE ">unsubscribe@oracleeblast.com</a> 
+<br>with the following in the message body: 
+<br>REMOVE XXXXXX.YYYYY@RUHR-UNI-BOCHUM.DE
+<br>STOP 
+<p>
+[250000/116/137209217] 
+</font>
+<img src="http://www.oracle.com/elog/trackurl?di=1400444&si1=137209217" border=0> 
+
+
+
+
+
+
+
+
+
+

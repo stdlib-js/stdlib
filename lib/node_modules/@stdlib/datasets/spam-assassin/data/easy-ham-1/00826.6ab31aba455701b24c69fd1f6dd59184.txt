@@ -1,0 +1,61 @@
+From fork-admin@xent.com  Tue Oct  1 10:41:35 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 9A12916F73
+	for <jm@localhost>; Tue,  1 Oct 2002 10:39:25 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 01 Oct 2002 10:39:25 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8ULUFK16923 for <jm@jmason.org>;
+    Mon, 30 Sep 2002 22:30:15 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 023022940FA; Mon, 30 Sep 2002 14:30:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from venus.phpwebhosting.com (venus.phpwebhosting.com
+    [64.29.16.27]) by xent.com (Postfix) with SMTP id D3C1629409E for
+    <FoRK@xent.com>; Mon, 30 Sep 2002 14:29:11 -0700 (PDT)
+Received: (qmail 13272 invoked by uid 508); 30 Sep 2002 21:28:37 -0000
+Received: from unknown (HELO hydrogen.leitl.org) (217.80.40.106) by
+    venus.phpwebhosting.com with SMTP; 30 Sep 2002 21:28:37 -0000
+Received: from localhost (eugen@localhost) by hydrogen.leitl.org
+    (8.11.6/8.11.6) with ESMTP id g8ULSxF29136; Mon, 30 Sep 2002 23:28:59
+    +0200
+X-Authentication-Warning: hydrogen.leitl.org: eugen owned process doing -bs
+From: Eugen Leitl <eugen@leitl.org>
+To: Tom <tomwhore@slack.net>
+Cc: Jim Whitehead <ejw@cse.ucsc.edu>, FoRK <FoRK@xent.com>
+Subject: Re: Internet Archive bookmobile
+In-Reply-To: <Pine.BSO.4.44.0209301711220.24219-100000@crank.slack.net>
+Message-Id: <Pine.LNX.4.33.0209302326120.24718-100000@hydrogen.leitl.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 30 Sep 2002 23:28:59 +0200 (CEST)
+
+On Mon, 30 Sep 2002, Tom wrote:
+
+> If the set passes around enough then more people have these works. the
+> more folks  that have them now, while they are still legal to have, the
+> likely they  will be left behind in the possible/probabale copyright
+> chillout..and if  that doesnt happen then more folks than not will still
+
+We will be getting BlackNet-like guerilla P2P pretty soon. Packaging it 
+into wormcode with an initial userbase of a few 100 k to Mnodes gives you 
+pretty bulletproof plausible deniability.
+
+> have it for uses all manner of shades.
+
+

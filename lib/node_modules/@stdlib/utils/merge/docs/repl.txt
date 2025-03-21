@@ -1,0 +1,134 @@
+
+{{alias}}( target, ...source )
+    Merges objects into a target object.
+
+    The target object is mutated.
+
+    Only plain objects are merged and extended. Other values/types are either
+    deep copied or assigned.
+
+    Support for deep merging class instances is inherently fragile.
+
+    `Number`, `String`, and `Boolean` objects are merged as primitives.
+
+    Functions are not deep copied.
+
+    Parameters
+    ----------
+    target: Object
+        Target object.
+
+    source: ...Object
+        Source objects (i.e., objects to be merged into the target object).
+
+    Returns
+    -------
+    out: Object
+        Merged (target) object.
+
+    Examples
+    --------
+    > var target = { 'a': 'beep' };
+    > var source = { 'a': 'boop', 'b': 'bap' };
+    > var out = {{alias}}( target, source )
+    { 'a': 'boop', 'b': 'bap' }
+    > var bool = ( out === target )
+    true
+
+
+{{alias}}.factory( options )
+    Returns a function for merging and extending objects.
+
+    Parameters
+    ----------
+    options: Object
+        Options.
+
+    options.level: integer (optional)
+        Merge level. Default: Infinity.
+
+    options.copy: boolean (optional)
+        Boolean indicating whether to deep copy merged values. Deep copying
+        prevents shared references and source object mutation. Default: true.
+
+    options.override: boolean|Function (optional)
+        Defines the merge strategy. If `true`, source object values will always
+        override target object values. If `false`, source values never override
+        target values (useful for adding, but not overwriting, properties). To
+        define a custom merge strategy, provide a function. Default: true.
+
+    options.extend: boolean (optional)
+        Boolean indicating whether new properties can be added to the target
+        object. If `false`, only shared properties are merged. Default: true.
+
+    Returns
+    -------
+    fcn: Function
+        Function which can be used to merge objects.
+
+    Examples
+    --------
+    > var opts = {
+    ...     'level': 100,
+    ...     'copy': true,
+    ...     'override': true,
+    ...     'extend': true
+    ... };
+    > var merge = {{alias}}.factory( opts )
+    <Function>
+
+    // Set the `level` option to limit the merge depth:
+    > merge = {{alias}}.factory( { 'level': 2 } );
+    > var target = {
+    ...     '1': { 'a': 'beep', '2': { '3': null, 'b': [ 5, 6, 7 ] } }
+    ... };
+    > var source = {
+    ...     '1': { 'b': 'boop', '2': { '3': [ 1, 2, 3 ] } }
+    ... };
+    > var out = merge( target, source )
+    { '1': { 'a': 'beep', 'b': 'boop', '2': { '3': [ 1, 2, 3 ] } } }
+
+    // Set the `copy` option to `false` to allow shared references:
+    > merge = {{alias}}.factory( { 'copy': false } );
+    > target = {};
+    > source = { 'a': [ 1, 2, 3 ] };
+    > out = merge( target, source );
+    > var bool = ( out.a === source.a )
+    true
+
+    // Set the `override` option to `false` to preserve existing properties:
+    > merge = {{alias}}.factory( { 'override': false } );
+    > target = { 'a': 'beep', 'b': 'boop' };
+    > source = { 'a': null, 'c': 'bop' };
+    > out = merge( target, source )
+    { 'a': 'beep', 'b': 'boop', 'c': 'bop' }
+
+    // Define a custom merge strategy:
+    > function strategy( a, b, key ) {
+    ...     // a => target value
+    ...     // b => source value
+    ...     // key => object key
+    ...     if ( key === 'a' ) {
+    ...         return b;
+    ...     }
+    ...     if ( key === 'b' ) {
+    ...         return a;
+    ...     }
+    ...     return 'bebop';
+    ... };
+    > merge = {{alias}}.factory( { 'override': strategy } );
+    > target = { 'a': 'beep', 'b': 'boop', 'c': 1234 };
+    > source = { 'a': null, 'b': {}, 'c': 'bop' };
+    > out = merge( target, source )
+    { 'a': null, 'b': 'boop', 'c': 'bebop' }
+
+    // Prevent non-existent properties from being added to the target object:
+    > merge = {{alias}}.factory( { 'extend': false } );
+    > target = { 'a': 'beep', 'b': 'boop' };
+    > source = { 'b': 'hello', 'c': 'world' };
+    > out = merge( target, source )
+    { 'a': 'beep', 'b': 'hello' }
+
+    See Also
+    --------
+

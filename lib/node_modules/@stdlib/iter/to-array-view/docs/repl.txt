@@ -1,0 +1,49 @@
+
+{{alias}}( iterator, dest[, begin[, end]][, mapFcn[, thisArg]] )
+    Fills an array-like object view with values returned from an iterator.
+
+    When invoked, an input function is provided three arguments:
+
+    - value: iterated value.
+    - index: destination index (zero-based).
+    - n: iteration index (zero-based).
+
+    Iteration stops when an output array view is full or an iterator finishes;
+    whichever comes first.
+
+    Parameters
+    ----------
+    iterator: Object
+        Source iterator.
+
+    dest: ArrayLikeObject
+        Output array-like object.
+
+    begin: integer (optional)
+        Starting index (inclusive). When negative, determined relative to the
+        last element. Default: 0.
+
+    end: integer (optional)
+        Ending index (non-inclusive). When negative, determined relative to the
+        last element. Default: dest.length.
+
+    mapFcn: Function (optional)
+        Function to invoke for each iterated value.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    > var it = {{alias:@stdlib/random/iter/randu}}({ 'iter': 10 });
+    > var out = new {{alias:@stdlib/array/float64}}( 20 );
+    > var arr = {{alias}}( it, out, 5, 15 )
+
+    See Also
+    --------
+

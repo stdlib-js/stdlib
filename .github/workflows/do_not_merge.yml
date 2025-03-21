@@ -1,0 +1,59 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2024 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: do_not_merge
+
+# Workflow triggers:
+on:
+  pull_request:
+    types:
+      - synchronize
+      - opened
+      - reopened
+      - labeled
+      - unlabeled
+
+# Workflow jobs:
+jobs:
+
+  # Define a job which fails a pull request if the pull request has a "Do Not Merge" label:
+  do_not_merge:
+
+    # Define job name:
+    name: 'Check for Do Not Merge label'
+
+    # Only run this job if the pull request has a "Do Not Merge" label:
+    if: ${{ contains(github.event.*.labels.*.name, 'Do Not Merge') }}
+
+    # Define job permissions:
+    permissions:
+      pull-requests: read
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps:
+    steps:
+
+      # Fail the pull request:
+      - name: 'Prevent merge'
+        run: |
+          echo "Pull request is labeled as 'Do Not Merge'."
+          echo "This workflow fails so that the pull request cannot be merged."
+          exit 1

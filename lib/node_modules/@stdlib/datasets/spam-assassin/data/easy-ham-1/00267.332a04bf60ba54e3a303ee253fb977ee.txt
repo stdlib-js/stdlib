@@ -1,0 +1,68 @@
+From fork-admin@xent.com  Wed Oct  9 10:56:00 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id 8CAA216F19
+	for <zzzz@localhost>; Wed,  9 Oct 2002 10:53:17 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 09 Oct 2002 10:53:17 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g9959VK20233 for <zzzz@spamassassin.taint.org>;
+    Wed, 9 Oct 2002 06:09:32 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id A36DA2940E3; Tue,  8 Oct 2002 22:09:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from frodo.hserus.net (202-77-223-48.outblaze.com
+    [202.77.223.48]) by xent.com (Postfix) with ESMTP id DAF4029409A for
+    <fork@xent.com>; Tue,  8 Oct 2002 22:08:10 -0700 (PDT)
+Received: from [202.56.248.94] (helo=rincewind.pobox.com) by
+    frodo.hserus.net with asmtp (Exim 4.10) id 17z95B-0007kV-00;
+    Wed, 09 Oct 2002 13:08:33 +0800
+X-PGP-Dsskey: 0x55FAB8D3
+X-PGP-Rsakey: 0xCAA67415
+Message-Id: <5.1.0.14.2.20021009103526.02ec2050@frodo.hserus.net>
+X-Nil:
+To: "Stephen D. Williams" <sdw@lig.net>,
+	Lorin Rivers <lrivers@realsoftware.com>
+From: Udhay Shankar N <udhay@pobox.com>
+Subject: Re: ActiveBuddy
+Cc: "Mr. FoRK" <fork_list@hotmail.com>, FoRK List <fork@spamassassin.taint.org>
+In-Reply-To: <6E8631AD.30501@lig.net>
+References: <B9C28892.35FF2%lrivers@realsoftware.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"; format=flowed
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 09 Oct 2002 10:35:55 +0530
+
+At 12:05 PM 10/4/28 -0400, Stephen D. Williams wrote:
+
+>Date: Wed, 04 Oct 2028 12:05:01 -0400
+>
+>I actually thought of this kind of active chat at AOL (in 1996 I think), 
+>bringing up ads based on what was being discussed and other features.  For 
+>a while, the VP of dev. (now still CTO I think) was really hot on the idea 
+>and they discussed patenting it.  Then they lost interest.  Probably a 
+>good thing.
+
+[note date: header]
+
+Can I borrow your time machine, pretty please?
+
+Udhay
+
+-- 
+((Udhay Shankar N)) ((udhay @ pobox.com)) ((www.digeratus.com))
+
+

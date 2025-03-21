@@ -1,0 +1,59 @@
+From fork-admin@xent.com  Tue Oct  1 16:28:55 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id EBCB816F1C
+	for <jm@localhost>; Tue,  1 Oct 2002 16:28:03 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 01 Oct 2002 16:28:03 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g91EfDK29340 for <jm@jmason.org>;
+    Tue, 1 Oct 2002 15:41:13 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 8F0B32940AC; Tue,  1 Oct 2002 07:41:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from rwcrmhc53.attbi.com (rwcrmhc53.attbi.com [204.127.198.39])
+    by xent.com (Postfix) with ESMTP id 5B2FD29409E for <fork@xent.com>;
+    Tue,  1 Oct 2002 07:40:09 -0700 (PDT)
+Received: from h0004ac962bf6neclient2attbicom ([66.31.2.27]) by
+    rwcrmhc53.attbi.com (InterMail vM.4.01.03.27 201-229-121-127-20010626)
+    with ESMTP id
+    <20021001144014.OAUG18767.rwcrmhc53.attbi.com@h0004ac962bf6neclient2attbicom>;
+    Tue, 1 Oct 2002 14:40:14 +0000
+Content-Type: text/plain; charset="iso-8859-1"
+From: Eirikur Hallgrimsson <eh@mad.scientist.com>
+Organization: Electric Brain
+To: "Mr. FoRK" <fork_list@hotmail.com>, <fork@spamassassin.taint.org>
+Subject: Re: The Wrong Business
+User-Agent: KMail/1.4.1
+References: <DAV40V7xfRyxRl7wJI100007e04@hotmail.com>
+In-Reply-To: <DAV40V7xfRyxRl7wJI100007e04@hotmail.com>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Message-Id: <200210011040.01502.eh@mad.scientist.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 1 Oct 2002 10:40:01 -0400
+
+On Tuesday 01 October 2002 01:27 am, Mr. FoRK wrote:
+> http://www.rathergood.com/vikings/
+
+Some classics from this period, now in a new English translation:
+"The Sagas of Icelanders" in trade paperback, from (duh) Viking, in 2000.
+Remaindered at my local Barnes & Ignoble.   The historical reference 
+material is useful.
+
+Eirikur
+
+

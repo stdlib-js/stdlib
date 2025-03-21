@@ -1,0 +1,96 @@
+From exmh-users-admin@redhat.com  Thu Jul 25 15:13:49 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9305E440D1
+	for <jm@localhost>; Thu, 25 Jul 2002 10:13:47 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 15:13:47 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6PEAx406664 for
+    <jm-exmh@jmason.org>; Thu, 25 Jul 2002 15:10:59 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 8FCAA3EDB2; Thu, 25 Jul 2002
+    10:10:07 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 1103040886
+    for <exmh-users@listman.redhat.com>; Thu, 25 Jul 2002 10:06:47 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g6PE6lM10443 for exmh-users@listman.redhat.com; Thu, 25 Jul 2002
+    10:06:47 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g6PE6lR10439 for
+    <exmh-users@redhat.com>; Thu, 25 Jul 2002 10:06:47 -0400
+Received: from sm10.texas.rr.com (sm10.texas.rr.com [24.93.35.222]) by
+    mx1.redhat.com (8.11.6/8.11.6) with SMTP id g6PDsws31072 for
+    <exmh-users@redhat.com>; Thu, 25 Jul 2002 09:54:58 -0400
+Received: from bleep.craftncomp.com (cs662552-58.houston.rr.com
+    [66.25.52.58]) by sm10.texas.rr.com (8.12.0.Beta16/8.12.0.Beta16) with
+    ESMTP id g6PE6jJv027115 for <exmh-users@redhat.com>; Thu, 25 Jul 2002
+    09:06:45 -0500
+Received: from houston.rr.com
+    (IDENT:sKCAngvfwdN+0QojpoCrtzvnC+8kb9d0@boggle.craftncomp.com
+    [202.12.111.2]) by bleep.craftncomp.com (8.12.3/8.12.3) with ESMTP id
+    g6PE5FAW021717 for <exmh-users@redhat.com>; Thu, 25 Jul 2002 09:05:15
+    -0500 (CDT) (envelope-from shocking@houston.rr.com)
+Received: from boggle.craftncomp.com (shocking@localhost) by
+    houston.rr.com (8.11.6/8.9.3) with ESMTP id g6PE6gV24296 for
+    <exmh-users@redhat.com>; Thu, 25 Jul 2002 09:06:42 -0500 (envelope-from
+    shocking@boggle.craftncomp.com)
+Message-Id: <200207251406.g6PE6gV24296@houston.rr.com>
+X-Mailer: exmh version 2.4 06/23/2000 with nmh-1.0.4
+To: exmh-users@spamassassin.taint.org
+Subject: Imap servers that support the MH folder/file standards
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+From: Stephen Hocking <shocking@houston.rr.com>
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Thu, 25 Jul 2002 09:06:42 -0500
+
+
+>>>From time to time I have to travel, and seem to end up with a rather slow
+link back home that makes remote display of exmh rather slow, even over
+ssh and/or VNC. What I'd  like to do is use an imap capable mailer to
+communicate with an imap server that is serving up my MH folders. Does
+anyone know of any Imap servers that can do this? I'd like it to be able
+to handle the  mailstore using MH commands so things don't get out of
+sync. At the moment I use a combo of fetchmail and procmail to handle
+soring things when I'm local, and it's possible that an imap server
+would mung this when I deleted a message remotely.
+
+
+
+	Stephen
+
+-- 
+  The views expressed above are not those of PGS Tensor.
+
+    "We've heard that a million monkeys at a million keyboards could produce
+     the Complete Works of Shakespeare; now, thanks to the Internet, we know
+     this is not true."            Robert Wilensky, University of California
+
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

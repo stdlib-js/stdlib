@@ -1,0 +1,134 @@
+From rpm-list-admin@freshrpms.net  Thu Aug  1 11:26:21 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 38B2C440E5
+	for <jm@localhost>; Thu,  1 Aug 2002 06:26:17 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 01 Aug 2002 11:26:17 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g719Wh205362 for
+    <jm-rpm@jmason.org>; Thu, 1 Aug 2002 10:32:43 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g719R1J25247; Thu, 1 Aug 2002 11:27:01
+    +0200
+Received: from python (gw01.es3.egwn.net [212.9.66.13]) (authenticated) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g719PnJ12492 for
+    <rpm-list@freshrpms.net>; Thu, 1 Aug 2002 11:25:49 +0200
+From: Matthias Saou <matthias@egwn.net>
+To: RPM-List <rpm-zzzlist@freshrpms.net>
+Subject: Quick php advice needed :-)
+Message-Id: <20020801105156.73fb7f9f.matthias@egwn.net>
+Organization: Electronic Group Interactive
+X-Mailer: Sylpheed version 0.8.1claws (GTK+ 1.2.10; i386-redhat-linux)
+Reply-BY: Tue, 24 Jul 2000 19:02:00 +1000
+X-Operating-System: GNU/Linux power!
+X-Message-Flag: Try using a real operating system : GNU/Linux power!
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+    boundary="Multipart_Thu__1_Aug_2002_10:51:56_+0200_0865e508"
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Thu, 1 Aug 2002 10:51:56 +0200
+Date: Thu, 1 Aug 2002 10:51:56 +0200
+
+This is a multi-part message in MIME format.
+
+--Multipart_Thu__1_Aug_2002_10:51:56_+0200_0865e508
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+
+Sorry, this hasn't got much to do with rpm packages directly ;-)
+
+My "builds" page is getting bigger and bigger, and quite messy as
+directories are listed in no particular order :
+http://freshrpms.net/builds/
+
+What I'd need is to have last modification date of the directory displayed
+next to the directory name (sort of like "mplayer - Thu Aug 1 2002"), and
+the list ordered to have the most recent entries at the top.
+
+Now, if there are php programmers on this list, I'd love to have their help
+on how to do this ;-) It must be quite simple to get the system mtime for
+the directory, it's the ordering that scares me a bit more.
+
+Attached is the current code (please keep in mind that I'm not a
+programmer, it usually explains a lot ;-)).
+
+Matthias
+
+-- 
+Matthias Saou                                World Trade Center
+-------------                                Edificio Norte 4 Planta
+System and Network Engineer                  08039 Barcelona, Spain
+Electronic Group Interactive                 Phone : +34 936 00 23 23
+
+--Multipart_Thu__1_Aug_2002_10:51:56_+0200_0865e508
+Content-Type: text/html;
+ name="index.html"
+Content-Disposition: attachment;
+ filename="index.html"
+Content-Transfer-Encoding: 7bit
+
+<?
+include("main.inc");
+global $redhat_conn;
+
+page_header ("Fresh meat for fresh rpms");
+
+page_start ("");
+?>
+
+<p>
+These are the current versions of all spec files and patches used for the builds you may find here. An anonymous CVS repository may be available some day so that all older releases become available too... "maybe", that is...
+
+<?
+
+if (!$build) {
+	$open_dir = opendir(".");
+	echo "<p>Builds which have files publicly available :\n\n<p>\n";
+	while ( $file = readdir( $open_dir ) ) {
+		if ( ( is_dir( $file ) ) and ( !eregi("^\.|CVS$", $file) ) ) {
+			echo "<img src=\"/img/bluearrow.png\" width=\"5\" height=\"9\" alt=\"dot\"> <a href=\"$PHP_SELF?build=$file\">$file</a><br>\n";
+		}
+	}
+} else {
+	if ( is_dir( $build ) ) {
+		$open_dir = opendir( $build );
+		echo "<p>Files available for build \"$build\" :\n\n<p>\n";
+		while ( $file = readdir( $open_dir ) ) {
+			if ( !is_dir( $file ) ) {
+				echo "<img src=\"/img/bluearrow.png\" width=\"5\" height=\"9\" alt=\"dot\"> <a href=\"$build/$file\">$file</a><br>\n";
+			}
+		}
+	} else {
+		echo "<p>\nEeeek! I can't find that build.\n</p>\n\n";
+	}
+	echo "<p><a href=\"$PHP_SELF\">Back to the list of builds</a>\n\n";
+}
+?>
+
+<? page_stop ('$Id: index.html,v 1.2 2002/05/11 13:15:54 dude Exp $') ?>
+
+
+--Multipart_Thu__1_Aug_2002_10:51:56_+0200_0865e508--
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

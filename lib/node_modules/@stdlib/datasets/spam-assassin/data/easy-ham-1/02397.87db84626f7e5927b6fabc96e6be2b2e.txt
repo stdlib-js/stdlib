@@ -1,0 +1,26 @@
+From rssfeeds@jmason.org  Wed Oct  9 10:53:02 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id E208716F77
+	for <jm@localhost>; Wed,  9 Oct 2002 10:52:03 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 09 Oct 2002 10:52:03 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g99813K25269 for
+    <jm@jmason.org>; Wed, 9 Oct 2002 09:01:03 +0100
+Message-Id: <200210090801.g99813K25269@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: newscientist <rssfeeds@spamassassin.taint.org>
+Subject: Critical breast cancer gene identified
+Date: Wed, 09 Oct 2002 08:01:03 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.newsisfree.com/click/-2,8664946,1440/
+Date: Not supplied
+
+Damaged forms of the newly identified gene are implicated in many breast and 
+lung cancers - new treatments for thousands may result
+
+

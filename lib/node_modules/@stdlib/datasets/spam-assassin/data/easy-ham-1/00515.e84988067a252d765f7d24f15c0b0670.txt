@@ -1,0 +1,104 @@
+From fork-admin@xent.com  Mon Sep  9 19:27:24 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id D77F816EFC
+	for <jm@localhost>; Mon,  9 Sep 2002 19:27:23 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 19:27:23 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g89DgDC16853 for <jm@jmason.org>;
+    Mon, 9 Sep 2002 14:42:14 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 348A82942DA; Mon,  9 Sep 2002 06:39:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from rwcrmhc51.attbi.com (rwcrmhc51.attbi.com [204.127.198.38])
+    by xent.com (Postfix) with ESMTP id 4E3402942D9 for <fork@xent.com>;
+    Mon,  9 Sep 2002 06:38:26 -0700 (PDT)
+Received: from h00e098788e1f.ne.client2.attbi.com ([24.61.143.15]) by
+    rwcrmhc51.attbi.com (InterMail vM.4.01.03.27 201-229-121-127-20010626)
+    with ESMTP id
+    <20020909134114.LFBW19682.rwcrmhc51.attbi.com@h00e098788e1f.ne.client2.attbi.com>;
+    Mon, 9 Sep 2002 13:41:14 +0000
+From: bitbitch@magnesium.net
+X-Mailer: The Bat! (v1.52f) Educational
+Reply-To: bitbitch@magnesium.net
+X-Priority: 3 (Normal)
+Message-Id: <10770315074.20020909094137@magnesium.net>
+To: Eugen Leitl <eugen@leitl.org>
+Cc: fork@spamassassin.taint.org
+Subject: Re[2]: Selling Wedded Bliss (was Re: Ouch...)
+In-Reply-To: <Pine.LNX.4.33.0209091305070.32400-100000@hydrogen.leitl.org>
+References: <Pine.LNX.4.33.0209091305070.32400-100000@hydrogen.leitl.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 9 Sep 2002 09:41:37 -0400
+
+
+EL> On Sun, 8 Sep 2002, CDale wrote:
+
+>> I agree w/ ya Tom.  That kind of thinking is SO idiotic.  Sure, gays
+
+EL> So how many of your hetero friends had >3 k lovers?
+
+So Eugen, how many of your homo friends have -had- 3k lovers?
+
+In fact, thats a general question for FoRK proper.
+
+Do you know anyone, outside of meybee Wilt Chamberlin and a few of the
+gang-bang porn queens who -have- had even 1.5k lovers?
+
+Eegads, if you're hypothesizing numbers like -that- Eugen, you at
+least owe it to FoRK to back that shit up.
+
+Otherwise we're liable to assume rampant unfounded homophobia and that
+would just be a lose.
+
+Just a quick assumption here.   I'm not a math geek or anything, but
+assuming 1 lover every day, that would be like at least one lover
+everyday for 8 years and some change.   I don't know about you, but
+very very few of us are -that- lucky (or even close to that lucky)
+and after awhile, even the sexaholics get bored and have to mingle
+something new into their weekends.   You really are assumiing that the
+homosexual population is a) that large in a given area (The meccas
+might qualify, but try finding that kind of homosexual population in
+say, Tulsa, Oklahoma or Manchester, NH (Tho Manchester does have quite
+a few nifty gaybars, but thats a different story)  b) that bored/sex
+obsessed/recreationally free to pursue sex that often, with that many
+partners or that they'd even WANT that many partners.
+
+Qualify yourself, or at least lower your outrageous numbers.
+
+=BB
+>> are promiscuous, and so are hets, but I betcha gays are more
+>> AIDSphobic than hets, generally speaking....
+
+EL> The virus load issue is orthogonal to the fact. Bzzt. Switch on your
+EL> brain, you both. I was mentioning that a subpopulation outside of the sex
+EL> industry is/used to be extremely promiscuous, about two orders of
+EL> magnitude higher than average.
+
+
+
+
+
+
+-- 
+Best regards,
+ bitbitch                            mailto:bitbitch@magnesium.net
+
+

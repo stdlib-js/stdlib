@@ -1,0 +1,99 @@
+From fork-admin@xent.com  Mon Aug 26 15:32:28 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 25B3444162
+	for <jm@localhost>; Mon, 26 Aug 2002 10:26:38 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 15:26:38 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7PGqXZ19440 for <jm@jmason.org>;
+    Sun, 25 Aug 2002 17:52:34 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id D98332940AA; Sun, 25 Aug 2002 09:50:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from www.fastmail.fm (fastmail.fm [209.61.183.86]) by xent.com
+    (Postfix) with ESMTP id EC96C2940A2 for <fork@xent.com>; Sun,
+    25 Aug 2002 09:49:07 -0700 (PDT)
+Received: from www.fastmail.fm (localhost [127.0.0.1]) by
+    localhost.localdomain (Postfix) with ESMTP id 6EF3D6DB19; Sun,
+    25 Aug 2002 11:50:57 -0500 (CDT)
+Received: from server3.fastmail.fm (server3.internal [10.202.2.134]) by
+    www.fastmail.fm (Postfix) with ESMTP id 9B61F6DAFF; Sun, 25 Aug 2002
+    11:50:56 -0500 (CDT)
+Received: by server3.fastmail.fm (Postfix, from userid 99) id C0EE52FD33;
+    Sun, 25 Aug 2002 11:50:54 -0500 (CDT)
+Content-Disposition: inline
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain; charset="ISO-8859-1"
+MIME-Version: 1.0
+X-Mailer: MIME::Lite 1.2  (F2.6; T1.001; A1.48; B2.12; Q2.03)
+From: "James Tauber" <jtauber@jtauber.com>
+To: johnhall@evergo.net, fork@spamassassin.taint.org
+X-Epoch: 1030294257
+X-Sasl-Enc: P8OwrRaDs2VlLKfQnqm1Zg
+Subject: Re: A biblical digression
+Message-Id: <20020825165054.C0EE52FD33@server3.fastmail.fm>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 25 Aug 2002 16:50:54 UT
+
+On Sat, 24 Aug 2002 11:07:00 -0700, "John Hall" <johnhall@evergo.net>
+said:
+> Ran across a site which claimed to explain the original meaning of the
+> Ten Commandments.  It seems some of those meanings have evolved a bit,
+> too.
+
+By "meanings have evolved" do you [or they] mean that the Hebrew words
+have changed meaning or that our understanding of the Hebrew words have
+changed? Or do they posit a pre-Mosaic form of the laws that had
+evolved by time of the Pentateuch?
+
+> In particular, there was a claim that the commandment on stealing was
+> actually specifically about 'man stealing -- selling a free man into
+> slavery.
+
+This seems bogus to me. A quick check of the text indicates the the
+Hebrew word in question is GANAV which elsewhere in the Pentateuch (eg
+Gen 44.8) is used to mean steal silver and gold amongst other things.
+
+In July 1999, I made the following comment in response to a similar
+claim about the "real" meaning of one of the ten commandments:
+
+"""
+> The translations since cause problems at each successive remove
+
+We have the original language versions, though, so this is not an
+issue.
+
+> I'm sure most everyone is familiar with the argument that the meaning of the commandment
+> is 'thou shalt not murder' rather than 'kill,'
+
+This has nothing to do with successive translations. It is based on our
+knowledge of the meaning of the Hebrew word "ratsach". Most modern
+translations I've seen translate it "murder" but elsewhere the word is
+used
+of an animal killing a human (something for which most English speakers
+wouldn't use the word "murder").
+"""
+- http://www.xent.com/FoRK-archive/july99/0163.html
+
+
+
+James
+-- 
+  James Tauber
+  jtauber@jtauber.com
+http://xent.com/mailman/listinfo/fork
+

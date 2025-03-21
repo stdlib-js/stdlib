@@ -1,0 +1,68 @@
+
+{{alias}}( t, μ, s )
+    Evaluates the moment-generating function (MGF) for a raised cosine
+    distribution with location parameter `μ` and scale parameter `s` at a value
+    `t`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `s <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    t: number
+        Input value.
+
+    μ: number
+        Location parameter.
+
+    s: number
+        Scale parameter.
+
+    Returns
+    -------
+    out: number
+        Evaluated MGF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 2.0, 0.0, 3.0 )
+    ~7.234
+    > y = {{alias}}( 9.0, 10.0, 3.0 )
+    ~1.606e+47
+
+    > y = {{alias}}( 0.5, 0.0, NaN )
+    NaN
+    > y = {{alias}}( 0.5, NaN, 1.0 )
+    NaN
+    > y = {{alias}}( NaN, 0.0, 1.0 )
+    NaN
+
+
+{{alias}}.factory( μ, s )
+    Returns a function for evaluating the moment-generating function (MGF) of a
+    raised cosine distribution with location parameter `μ` and scale parameter
+    `s`.
+
+    Parameters
+    ----------
+    μ: number
+        Location parameter.
+
+    s: number
+        Scale parameter.
+
+    Returns
+    -------
+    mgf: Function
+        Moment-generating function (MGF).
+
+    Examples
+    --------
+    > var mymgf = {{alias}}.factory( 3.0, 1.5 );
+    > var y = mymgf( 1.9 )
+    ~495.57
+
+    See Also
+    --------
+

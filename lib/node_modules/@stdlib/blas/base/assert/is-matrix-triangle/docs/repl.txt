@@ -1,0 +1,28 @@
+
+{{alias}}( value )
+    Tests if an input value is a BLAS matrix triangle.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an input value is a matrix triangle.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 'lower' )
+    true
+    > bool = {{alias}}( 'upper' )
+    true
+    > bool = {{alias}}( '' )
+    false
+    > bool = {{alias}}( 'beep' )
+    false
+
+    See Also
+    --------
+

@@ -1,0 +1,35 @@
+
+{{alias}}( k, λ )
+    Returns the skewness of an Erlang distribution.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If not provided a positive integer for `k`, the function returns `NaN`.
+
+    If provided a non-positive value for `λ`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    k: integer
+        Shape parameter.
+
+    λ: number
+        Rate parameter.
+
+    Returns
+    -------
+    out: number
+        Skewness.
+
+    Examples
+    --------
+    > var v = {{alias}}( 1, 1.0 )
+    2.0
+    > v = {{alias}}( 4, 12.0 )
+    1.0
+    > v = {{alias}}( 8, 2.0 )
+    ~0.707
+
+    See Also
+    --------
+

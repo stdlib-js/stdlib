@@ -1,0 +1,64 @@
+From fork-admin@xent.com  Tue Oct  1 10:41:45 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id C87C916F1F
+	for <jm@localhost>; Tue,  1 Oct 2002 10:39:35 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 01 Oct 2002 10:39:35 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g914V8K08142 for <jm@jmason.org>;
+    Tue, 1 Oct 2002 05:31:08 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 1FBAF2940C5; Mon, 30 Sep 2002 21:31:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hotmail.com (f101.law15.hotmail.com [64.4.23.101]) by
+    xent.com (Postfix) with ESMTP id CEBD429409E for <Fork@xent.com>;
+    Mon, 30 Sep 2002 21:30:57 -0700 (PDT)
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Mon, 30 Sep 2002 21:31:01 -0700
+Received: from 216.30.74.2 by lw15fd.law15.hotmail.msn.com with HTTP;
+    Tue, 01 Oct 2002 04:31:01 GMT
+X-Originating-Ip: [216.30.74.2]
+From: "Russell Turpin" <deafbox@hotmail.com>
+To: Fork@xent.com
+Subject: Re: A moment of silence for the First Amendment & Angry Liberal Yutes
+MIME-Version: 1.0
+Content-Type: text/plain; format=flowed
+Message-Id: <F101ZbLAX3cf3ednHM300000284@hotmail.com>
+X-Originalarrivaltime: 01 Oct 2002 04:31:01.0444 (UTC) FILETIME=[58BDB040:01C26903]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 01 Oct 2002 04:31:01 +0000
+
+Gregory Alan Bolcer:
+>I'm not sure since I haven't attended civics class
+>in quite some time, but the First Amendment doesn't cover protected speech, 
+>hate speech, or actions. ..
+
+The first two are wrong. The first amendment DOES
+protect speech the Supreme Court decides it protects
+(duh!), and that happens to include most of what
+people consider hate speech. Unlike many other
+nations, the US has no laws against hate speech, per
+se. And the first amendment is the reason for that.
+
+
+
+
+_________________________________________________________________
+Join the world’s largest e-mail service with MSN Hotmail. 
+http://www.hotmail.com
+
+

@@ -1,0 +1,88 @@
+From razor-users-admin@lists.sourceforge.net  Mon Aug 26 15:19:50 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 765A544163
+	for <jm@localhost>; Mon, 26 Aug 2002 10:16:36 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 15:16:36 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7OEPXZ05337 for <jm-razor@jmason.org>; Sat, 24 Aug 2002 15:25:33 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17ibjo-0006RZ-00; Sat,
+    24 Aug 2002 07:18:04 -0700
+Received: from spoons.net1.nerim.net ([80.65.224.36]
+    helo=cyborgnation.org) by usw-sf-list1.sourceforge.net with esmtp (Cipher
+    TLSv1:DES-CBC3-SHA:168) (Exim 3.31-VA-mm2 #1 (Debian)) id 17ibjX-0006YH-00
+    for <razor-users@lists.sourceforge.net>; Sat, 24 Aug 2002 07:17:47 -0700
+Received: (qmail 500 invoked from network); 24 Aug 2002 14:17:39 -0000
+Received: (Scanned by Protecmail Filter for Cyborg Nation)24 Aug 2002
+    14:17:39 -0000
+Received: from unknown (HELO musclor) (192.168.0.6) by 0 with SMTP;
+    24 Aug 2002 14:17:39 -0000
+From: Toorop <toorop@cyborgnation.org>
+X-Mailer: The Bat! (v1.61)
+Reply-To: Toorop <toorop@cyborgnation.org>
+Organization: Cyborg Nation
+X-Priority: 3 (Normal)
+Message-Id: <5217441703.20020824161736@cyborgnation.org>
+To: razor-users@example.sourceforge.net
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Subject: [Razor-users] Exit.status =13 ?
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Sat, 24 Aug 2002 16:17:36 +0200
+Date: Sat, 24 Aug 2002 16:17:36 +0200
+
+Bonjour,
+
+ Always for my script, if i run it manually in console all is ok
+ whether is the user.
+ But if i try to implement it in my general script filter running
+ whith qmailq UID (503) :
+
+ I've got 13 has exit status, and in my mail log :
+ "Can't call method "log" on unblessed reference at
+  /usr/lib/perl5/site_perl/5.6.0/Razor2/Client/Agent.pm line 211."
+
+  My log file is in /home/user/.razor/razor-agent.log
+  and have write permission for qmailq user.
+
+  Any idea ??
+
+--
+Toorop 
+Lorsque que vous avez éliminé l'impossible, ce qui reste, 
+même si c'est improbable, doit être la vérité.
+www.spoonsdesign.com
+
+---------------------------------
+Mail scanné par Protecmail filter 
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+

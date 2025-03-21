@@ -1,0 +1,33 @@
+
+{{alias}}( x, limit, equalNaNs )
+    Removes consecutive duplicated values.
+
+    The function mutates the input array.
+
+    Parameters
+    ----------
+    x: Array
+        Input array.
+
+    limit: integer
+        Number of allowed consecutive duplicates.
+
+    equalNaNs: boolean
+        Boolean indicating whether NaNs should be considered equal.
+
+    Returns
+    -------
+    out: Array
+        Input array.
+
+    Examples
+    --------
+    > var x = [ 1, 1, 2, 3, 3 ];
+    > var out = {{alias}}( x, 1, false )
+    [ 1, 2, 3 ]
+    > var bool = ( out === x )
+    true
+
+    See Also
+    --------
+

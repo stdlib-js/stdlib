@@ -1,0 +1,100 @@
+From fork-admin@xent.com  Thu Jul 25 11:08:13 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A0FC6440DA
+	for <jm@localhost>; Thu, 25 Jul 2002 06:07:21 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 11:07:21 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6OHbw430145 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 18:37:58 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id C32C9294149; Wed, 24 Jul 2002 10:27:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from magnesium.net (toxic.magnesium.net [207.154.84.15]) by
+    xent.com (Postfix) with SMTP id BF10C294146 for <fork@xent.com>;
+    Wed, 24 Jul 2002 10:26:30 -0700 (PDT)
+Received: (qmail 8360 invoked by uid 65534); 24 Jul 2002 17:35:44 -0000
+Received: from ppp-192-216-194-129.tstonramp.com ([192.216.194.129])
+    (SquirrelMail authenticated user bitbitch) by webmail.magnesium.net with
+    HTTP; Wed, 24 Jul 2002 10:35:44 -0700 (PDT)
+Message-Id: <2518.192.216.194.129.1027532144.squirrel@webmail.magnesium.net>
+Subject: Re: Mossberg on 'ChoiceMail': 'In my tests, it cut my spam to  zero.'
+From: <bitbitch@magnesium.net>
+To: <eugen@leitl.org>
+In-Reply-To: <Pine.LNX.4.33.0207241144280.18093-100000@hydrogen.leitl.org>
+References: <3.0.32.20020723231125.03bc2cf0@techdirt.com>
+    <Pine.LNX.4.33.0207241144280.18093-100000@hydrogen.leitl.org>
+X-Priority: 3
+Importance: Normal
+X-Msmail-Priority: Normal
+Cc: <fork@spamassassin.taint.org>
+X-Mailer: SquirrelMail (version 1.2.6)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 24 Jul 2002 10:35:44 -0700 (PDT)
+
+ email.  I could see certain friends of mine getting fairly annoyed
+>> (especially those with multiple email addresses...).
+>
+> What's the point of multiple email addresses? They're a pain.
+>
+
+
+Ah the great spam debate wages on ...
+
+So where's Kragen in this whole mess ;-)
+
+Eugen, the reason for multiple email addresses (at least _my_ reason) is
+that I like to separate my friends from say, FoRK, from say, my school
+accounts, from say my spam box.   I tend to get a veritable buttload of
+mail from various sources, and sometimes I don't have a chance to go
+through it all.   I have it mostly setup on a filter basis (those friends
+that go to the carey@ address do get filtered _generally_ speaking into
+the friends box, those fork posts, _generally_ go into the FoRK pile. )  
+Its still nice to know that if I need to get someone's response and I
+haven't gotten around to putting them into the friends section of my
+carey@ address, that I can give them another address (bitbitch, which gets
+considerably less traffic) and I can be assured of flagging it down.
+When I setup my PC to run BSD and then I can get sendmail or procmail or
+whatnot to be a better mail program and  I can spend the time making even
+_better_ filters than The Bat! provides for me now, I'll probably change
+my mind on the multiple email address thing.   I still like knowing that I
+can send the assholes (or undesirable guys I don't feel like dating ;)  to
+my @hotmail account.
+
+I'm also going to also rescind my prior request not to have a member-only
+fork.   As snobby and elitist as a member-only FoRK would be, I'm starting
+to feel the pain of the whole spam to bits ratio on fork.   I'd be
+willing, multiple email addresses and all, to sign up for a whitelist
+provided the system could handle email sent from say cnn.com that was
+referenced to my address (say the On Behalf of) emails that a few of us
+tend to send.   Does such a system exist?  I'm rather ignorant on the
+whole whitelist concept, and I know a few of you are far far more
+knowledgable.
+
+My half a cent here...
+
+<sidenote>: I will be so damn glad when I am done with this whole moving
+thing... back on fork when I'm in NH.. :)
+Woo hoo!   Law school!)   </sidenote>
+
+
+http://xent.com/mailman/listinfo/fork
+
+

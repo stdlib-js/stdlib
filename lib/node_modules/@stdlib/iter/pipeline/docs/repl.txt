@@ -1,0 +1,29 @@
+
+{{alias}}( iterFcn[, ...iterFcn] )
+    Returns an iterator pipeline.
+
+    Parameters
+    ----------
+    iterFcn: Function|Array
+        Iterator function or an array of iterator functions.
+
+    iterFcn: ...Function (optional)
+        Iterator functions.
+
+    Returns
+    -------
+    fcn( src ): Function
+        Iterator pipeline which accepts a single argument, a source iterator.
+
+    Examples
+    --------
+    > var it1 = {{alias:@stdlib/iter/pipeline-thunk}}( {{alias:@stdlib/iter/head}}, 100 );
+    > function f( r ) { return ( r > 0.95 ); };
+    > var it2 = {{alias:@stdlib/iter/pipeline-thunk}}( {{alias:@stdlib/iter/some-by}}, 5, f );
+    > var p = {{alias}}( it1, it2 );
+    > var bool = p( {{alias:@stdlib/random/iter/randu}}() )
+    <boolean>
+
+    See Also
+    --------
+

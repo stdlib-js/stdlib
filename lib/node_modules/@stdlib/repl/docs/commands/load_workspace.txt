@@ -1,0 +1,35 @@
+
+loadWorkspace( name[, options] )
+    Loads variables from a specified workspace into the current workspace.
+
+    Parameters
+    ----------
+    name: string
+        Workspace name.
+
+    options: Object (optional)
+    	Options.
+
+    options.include: RegExp|ArrayLikeObject (optional)
+    	Variable name inclusion filter.
+
+    options.exclude: RegExp|ArrayLikeObject (optional)
+    	Variable name exclusion filter.
+
+    options.override: boolean (optional)
+    	Boolean indicating whether to override existing workspace variables.
+        Default: true.
+
+    Examples
+    --------
+    > workspace( 'foobar' );
+    > var x = 3.14;
+    > workspace( 'barfoo' );
+    > typeof x
+    > loadWorkspace( 'foobar' );
+    > x
+
+    See Also
+    --------
+    vars, varsWorkspace, workspace, workspaces
+

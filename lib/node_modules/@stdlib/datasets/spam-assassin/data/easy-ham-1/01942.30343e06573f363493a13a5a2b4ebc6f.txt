@@ -1,0 +1,26 @@
+From rssfeeds@jmason.org  Thu Sep 26 16:41:34 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 94CEA16F19
+	for <jm@localhost>; Thu, 26 Sep 2002 16:40:53 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 16:40:53 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8QFSvg24536 for
+    <jm@jmason.org>; Thu, 26 Sep 2002 16:28:57 +0100
+Message-Id: <200209261528.g8QFSvg24536@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: fark <rssfeeds@spamassassin.taint.org>
+Subject: Teens videotape themselves shooting stapleguns into their arms
+    and vomiting on dead squirrels. Nation weeps for future
+Date: Thu, 26 Sep 2002 15:28:57 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.newsisfree.com/click/-4,8269406,1717/
+Date: 2002-09-26T09:23:44+01:00
+
+[IMG: http://www.newsisfree.com/Images/fark/bostonglobe.gif ([BostonGlobe])]
+
+

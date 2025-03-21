@@ -1,0 +1,81 @@
+From fork-admin@xent.com  Thu Jul 25 18:56:13 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 1D3B1440E6
+	for <jm@localhost>; Thu, 25 Jul 2002 13:56:11 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 18:56:11 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6PHug420971 for <jm@jmason.org>;
+    Thu, 25 Jul 2002 18:56:43 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 12BC72940DE; Thu, 25 Jul 2002 10:55:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from tripper.magisoftware.com (tripper.magisoftware.com
+    [208.179.190.4]) by xent.com (Postfix) with ESMTP id F3C432940B5 for
+    <fork@xent.com>; Thu, 25 Jul 2002 10:54:05 -0700 (PDT)
+Received: from endeavors.com ([208.179.190.254]) by
+    tripper.magisoftware.com (Netscape Messaging Server 4.1) with ESMTP id
+    GZTGFK00.96Y for <fork@xent.com>; Thu, 25 Jul 2002 10:54:56 -0700
+Message-Id: <3D403BD7.8080602@endeavors.com>
+From: "Gregory Alan Bolcer" <gbolcer@endeavors.com>
+Organization: Endeavors Technology, Inc.
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:0.9.4.1)
+    Gecko/20020508 Netscape6/6.2.3
+X-Accept-Language: en,pdf
+MIME-Version: 1.0
+To: FoRK <fork@spamassassin.taint.org>
+Subject: Covalent.NET
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 25 Jul 2002 10:56:39 -0700
+
+[1] Covalent works with Microsoft to provide ASP.NET capabilities for
+Apache 2.0.  ASP.NET actually has some really elegant tools for doing
+load testing and analysis. Perhaps Microsoft's desire to embrace, extend, and
+extinguish comes from a scathing Gartner report recommending not to deploy
+IIS for enterprise applications at all.   Now users get the best of both
+worlds: all the development tools of ASP.Net and the security and reliability
+of Apache.
+
+Greg
+
+-- 
+Gregory Alan Bolcer, CTO   | work: +1.949.833.2800 | gbolcer at endeavors.com
+Endeavors Technology, Inc. | cell: +1.714.928.5476 | http://endeavors.com
+
+
+[1]http://www.infoworld.com/articles/hn/xml/02/07/25/020725hnapachenet.xml
+
+> With help from Microsoft in Redmond, Wash., Covalent said it was able to develop a 
+
+> module for its Enterprise Ready Server that would allow ASP.Net applications to run on 
+
+> Apache 2.0. However, organizations that use the freely available Web server won't be able 
+
+> to run ASP.Net applications unless they purchase Covalent's software. Zemlin said that the 
+
+> company doesn't plan to release an open-source version of its .Net module.
+
+
+
+
+
+
+http://xent.com/mailman/listinfo/fork
+
+

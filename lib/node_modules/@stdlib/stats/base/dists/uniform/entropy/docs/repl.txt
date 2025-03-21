@@ -1,0 +1,33 @@
+
+{{alias}}( a, b )
+    Returns the differential entropy of a uniform distribution.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `a >= b`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    a: number
+        Minimum support.
+
+    b: number
+        Maximum support.
+
+    Returns
+    -------
+    out: number
+        Differential entropy.
+
+    Examples
+    --------
+    > var v = {{alias}}( 0.0, 1.0 )
+    0.0
+    > v = {{alias}}( 4.0, 12.0 )
+    ~2.079
+    > v = {{alias}}( 2.0, 8.0 )
+    ~1.792
+
+    See Also
+    --------
+

@@ -1,0 +1,26 @@
+
+{{alias}}( str )
+    Tests whether a character belongs to the ASCII character set and whether
+    this is true for all characters in a provided string.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a string has all ASCII characters.
+
+    Examples
+    --------
+    > var str = 'beep boop';
+    > var bool = {{alias}}( str )
+    true
+    > bool = {{alias}}( {{alias:@stdlib/string/from-code-point}}( 130 ) )
+    false
+
+    See Also
+    --------
+

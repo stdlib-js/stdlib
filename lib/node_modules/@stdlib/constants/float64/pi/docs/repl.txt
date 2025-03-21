@@ -1,0 +1,12 @@
+
+{{alias}}
+    The mathematical constant `π`.
+
+    Examples
+    --------
+    > {{alias}}
+    3.141592653589793
+
+    See Also
+    --------
+

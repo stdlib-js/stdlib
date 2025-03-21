@@ -1,0 +1,47 @@
+
+example( alias )
+    Runs examples for a specified alias.
+
+    Parameters
+    ----------
+    alias: any
+        Alias (an object path string or reference).
+
+    Examples
+    --------
+    > example( base.sin )
+    > example( 'base.sin' )
+
+
+example( property )
+    Runs examples for a specified property.
+
+    Parameters
+    ----------
+    property: any
+        Alias property (an object path string or reference).
+
+    Examples
+    --------
+    > example( isString.isPrimitive )
+    > example( 'isString.isPrimitive' )
+
+
+example( instance )
+    Runs examples for a provided class instance.
+
+    Only direct instances of documented built-in constructors are supported.
+
+    Parameters
+    ----------
+    instance: any
+        Class instance.
+
+    Examples
+    --------
+    > example( new Float64Array( 10 ) )
+
+    See Also
+    --------
+    help, info
+

@@ -1,0 +1,101 @@
+
+{{alias}}( value )
+    Tests if a value is an array-like object containing only symbols.
+
+    In pre-ES2015 environments, the function always returns `false`.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a value is an array-like object containing
+        only symbols.
+
+    Examples
+    --------
+    > var bool = {{alias}}( [ Symbol( 'beep' ), Symbol( 'boop' ) ] )
+    true
+    > bool = {{alias}}( Symbol( 'beep' ) )
+    false
+    > bool = {{alias}}( [] )
+    false
+    > bool = {{alias}}( {} )
+    false
+    > bool = {{alias}}( null )
+    false
+    > bool = {{alias}}( true )
+    false
+
+
+{{alias}}.primitives( value )
+    Tests if a value is an array-like object containing only `symbol`
+    primitives.
+
+    In pre-ES2015 environments, the function always returns `false`.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a value is an array-like object containing
+        only `symbol` primitives.
+
+    Examples
+    --------
+    > var bool = {{alias}}.primitives( [ Symbol( 'beep' ) ] )
+    true
+    > bool = {{alias}}.primitives( [ Object( Symbol( 'beep' ) ) ] )
+    false
+    > bool = {{alias}}.primitives( [] )
+    false
+    > bool = {{alias}}.primitives( {} )
+    false
+    > bool = {{alias}}.primitives( null )
+    false
+    > bool = {{alias}}.primitives( true )
+    false
+
+
+{{alias}}.objects( value )
+    Tests if a value is an array-like object containing only `Symbol`
+    objects.
+
+    In pre-ES2015 environments, the function always returns `false`.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a value is an array-like object containing
+        only `Symbol` objects.
+
+    Examples
+    --------
+    > var bool = {{alias}}.objects( [ Object( Symbol( 'beep' ) ) ] )
+    true
+    > bool = {{alias}}.objects( [ Symbol( 'beep' ) ] )
+    false
+    > bool = {{alias}}.objects( [] )
+    false
+    > bool = {{alias}}.objects( {} )
+    false
+    > bool = {{alias}}.objects( null )
+    false
+    > bool = {{alias}}.objects( true )
+    false
+
+    See Also
+    --------
+

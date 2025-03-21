@@ -1,0 +1,216 @@
+From ilug-admin@linux.ie  Tue Aug 13 10:28:49 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B7CAC4412A
+	for <jm@localhost>; Tue, 13 Aug 2002 05:21:45 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:21:45 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7CNfmb06779 for
+    <jm-ilug@jmason.org>; Tue, 13 Aug 2002 00:41:48 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id AAA13159; Tue, 13 Aug 2002 00:40:34 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from web13901.mail.yahoo.com (web13901.mail.yahoo.com
+    [216.136.175.27]) by lugh.tuatha.org (8.9.3/8.9.3) with SMTP id AAA13130
+    for <ilug@linux.ie>; Tue, 13 Aug 2002 00:40:26 +0100
+Message-Id: <20020812234021.17803.qmail@web13901.mail.yahoo.com>
+Received: from [159.134.176.75] by web13901.mail.yahoo.com via HTTP;
+    Tue, 13 Aug 2002 01:40:21 CEST
+Date: Tue, 13 Aug 2002 01:40:21 +0200 (CEST)
+From: =?iso-8859-1?q?Paul=20Linehan?= <plinehan@yahoo.com>
+Subject: Re: [ILUG] SUSE 8 disks? (thread changed slightly)
+To: ilug@linux.ie
+In-Reply-To: <20020812204603.GK25331@linuxmafia.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+
+Rick Moen <rick@linuxmafia.com> a écrit:
+
+> > I'm confused. I thought it was GPL'ed and that 
+> > the money you paid SuSE was for your 60 day
+> > support or whatever? 
+ 
+> Yes, you're confused.
+
+
+I *_was_* confused.
+
+
+> A Linux distribution (_any_ Linux distribution)
+> contains lots and lots of separate codebases.
+> Some are under the GNU GPL. Many are not.
+
+
+Indeed - that I actually had understood prior
+to all this - for example commercial entities
+with trial/limited/crippled editions. 
+
+Which is no problem - I don't see why that should
+be a problem for SuSE though - surely the 
+more the merrrier as far as they're concerned.
+
+
+> Are you clear on this point, now?
+
+
+Vide supra.
+
+
+> This is my second try. 
+
+
+Mighty white of you, old bean.
+
+
+>  One suspects that you actually understand
+>  perfectly, but just don't like it.
+
+
+One can suspect what one likes. What I didn't 
+understand was that SuSE had proprietary 
+extensions that it wasn't prepared to allow
+people to use under the GPL or even under  a
+FreeBSD style licence.
+
+
+I thought that the model for the likes of 
+SuSE was selling support and customisation, 
+rather than what I thought of as the core
+"product". I thought that the likes of Yast
+came under core - maybe it worked in the glory
+days before, say, 2001 - I can understand that
+they might want to make more money, but the way
+in which they have done it, seems to me, to be 
+be against the spirit of the GPL.
+
+ 
+> You're further confused if you think the GNU 
+> GPL gives you the right to get covered software
+> for free.  It does not.  
+
+All I want is the OS and GNU apps. I was under
+the impression that for *_those_* all one
+needed was to pay for the media and not for the
+code itself?
+
+Ai-je tort?
+
+
+> It provides that _if_ you've lawfully received
+> a copy of the covered binary version, you have
+> rights to also receive the matching source code.
+
+My understanding was that binaries or whatever
+could be received for the cost of the media plus
+a token of one's appreciation (the latter being
+subject to agreement between the parties) - I was
+offering a bottle of wine plus maybe a pint or two
+and a chat for a copy - I don't know what the going
+rate is.
+
+
+If I wanted support from SuSE, that would be a
+different issue, and one for which I would be
+willing to pay.
+ 
+
+> > I don't particularly need support, so I'm 
+> > no really interested in purchasing a set of 
+> > disks with 4 billion apps which I'll never use.
+
+
+> Then, if you nonetheless want a SuSE boxed set's
+> contents, the only way you can do that without
+> copyright violation _and_ without having to pay
+> the purchase price is to get someone to _give_ 
+> (not "lend" or duplicate) you his copy.
+
+
+I have a friend with 7.3 - I think that I'll
+end up doing that!
+
+Seems to me to go against the spirit of
+the GPL though.
+
+
+> > Yes, thanks for your input. Anyway, I've a 
+> > friend with 7.3 pro, so I'll just ask him.
+
+
+> Ask him _what_?  If you're asking him to "lend" or
+> duplicate his CDs, then you'll be ripping off SuSE
+> Linux AG illegally.
+
+
+I have now realised this, thanks to your kind
+explanations. I can borrow them, but not 
+copy them? That's fine - IMHO, it goes against
+the spirit of the GPL though.
+
+ 
+> Don't like SuSE's product licensing?  Write your 
+> own distribution.  
+
+
+And why not my own OS, while I'm at it?
+
+
+> You can even grab most of what you need 
+> _from SuSE_.  All you have to do is heed the
+> licensing terms on the individual pieces.
+
+
+And, as I've tried to explain, is not the licence
+terms on, say, trials for commercial company x
+to which I object, it is the way SuSE appears, 
+at least to my I.T. peasant self, to have
+mixed up proprietary and open stuff.
+
+ 
+> What, you think that's too much work?  Then, 
+> try a different distribution.
+
+
+Hence my "To hell with SuSE" post...
+
+
+> Clue: _Not_ one packaged in a retail
+> boxed set.  Even RH 7.3 retail boxed sets include
+> non-freely redistributable applications on
+> the Star office 5.2 CD and the Productivity
+> Applications CD, among others.
+
+
+And I have no problem with people sticking trial
+editions along with GPL'ed stuff. Why you 
+can't pass those on though, is beyond me.
+
+
+Paul...
+
+
+
+
+
+___________________________________________________________
+Do You Yahoo!? -- Une adresse @yahoo.fr gratuite et en français !
+Yahoo! Mail : http://fr.mail.yahoo.com
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

@@ -1,0 +1,51 @@
+/*
+* @license Apache-2.0
+*
+* Copyright (c) 2021 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+/* eslint-disable @typescript-eslint/no-unused-expressions */
+
+import CircularBuffer = require( './index' );
+
+
+// FIXME: add tests
+
+
+// TESTS //
+
+// The function returns a circular buffer instance...
+{
+	new CircularBuffer( 3 ); // $ExpectType CircularBuffer<unknown>
+	new CircularBuffer( [ 1, 2, 3 ] ); // $ExpectType CircularBuffer<number>
+	new CircularBuffer( 'abc' ); // $ExpectType CircularBuffer<string>
+	new CircularBuffer( { 'length': 10 } ); // $ExpectType CircularBuffer<unknown>
+}
+
+// The compiler throws an error if the constructor function is provided an invalid number of arguments...
+{
+	new CircularBuffer(); // $ExpectError
+	new CircularBuffer( 3, 4 ); // $ExpectError
+}
+
+// The compiler throws an error if the constructor function is provided a first argument which is not a number or an array-like object...
+{
+	new CircularBuffer( true ); // $ExpectError
+	new CircularBuffer( false ); // $ExpectError
+	new CircularBuffer( null ); // $ExpectError
+	new CircularBuffer( undefined ); // $ExpectError
+	new CircularBuffer( {} ); // $ExpectError
+	new CircularBuffer( ( x: number ): number => x ); // $ExpectError
+}

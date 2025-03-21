@@ -1,0 +1,194 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2024 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: labeler
+
+# Workflow triggers:
+on:
+  pull_request_target:
+    types:
+      - opened
+      - closed
+      - synchronize
+      - reopened
+      - edited
+      - review_requested
+      - review_request_removed
+      - ready_for_review
+      - converted_to_draft
+      - labeled
+
+# Workflow jobs:
+jobs:
+
+  # Define a job which automatically labels pull requests based on the contents of the pull request:
+  labeler:
+
+    # Define job name:
+    name: 'Labeler'
+
+    # Only run this job if the pull request did not have label `automated-pr`:
+    if: contains(github.event.pull_request.labels.*.name, 'automated-pr') == false
+
+    # Define job permissions:
+    permissions:
+      contents: read
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps:
+    steps:
+
+      # Automatically label pull requests:
+      - name: 'Automatically label pull requests'
+        # Pin action to full length commit SHA
+        uses: actions/labeler@8558fd74291d67161a8a78ce36a881fa63b766a9 # v5.0.0
+        with:
+          configuration-path: .github/labeler.yml
+          repo-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+
+      # Add "First-time Contributor" label if PR is from a first-time contributor:
+      - name: 'Add "First-time Contributor" label if PR is from a first-time contributor'
+        if: ${{ github.event.action == 'opened' || github.event.action == 'reopened' }}
+        # Pin action to full-length commit SHA
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        with:
+          github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          script: |
+            const { data: pr } = await github.rest.pulls.get({
+              'owner': context.repo.owner,
+              'repo': context.repo.repo,
+              'pull_number': context.payload.pull_request.number
+            });
+            if ( pr.author_association === 'FIRST_TIME_CONTRIBUTOR' ) {
+              const labels = context.payload.pull_request.labels.map( label => label.name );
+              if ( !labels.includes( 'First-time Contributor' ) ) {
+                await github.rest.issues.addLabels({
+                  'owner': context.repo.owner,
+                  'repo': context.repo.repo,
+                  'issue_number': context.payload.pull_request.number,
+                  'labels': [ 'First-time Contributor' ]
+                });
+              }
+            }
+
+      # Add "Needs Review" label when PR is opened and not a draft:
+      - name: 'Add "Needs Review" label if PR is opened and not draft'
+        if: ${{ github.event.action == 'opened' && github.event.pull_request.draft == false }}
+        # Pin action to full length commit SHA
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        with:
+          github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          script: |
+            await github.rest.issues.addLabels({
+              'owner': context.repo.owner,
+              'repo': context.repo.repo,
+              'issue_number': context.payload.pull_request.number,
+              'labels': [ 'Needs Review' ]
+            })
+
+      # Add "Needs Review" label when PR is marked ready for review or review is requested:
+      - name: 'Add "Needs Review" label if PR is ready for review or review is requested'
+        if: ${{ github.event.action == 'ready_for_review' || github.event.action == 'review_requested' }}
+        # Pin action to full length commit SHA
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        with:
+          github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          script: |
+            await github.rest.issues.addLabels({
+              'owner': context.repo.owner,
+              'repo': context.repo.repo,
+              'issue_number': context.payload.pull_request.number,
+              'labels': [ 'Needs Review' ]
+            })
+
+      # Remove "Needs Review" label when PR is converted to draft or closed:
+      - name: 'Remove "Needs Review" label if PR is converted to draft or closed'
+        if: ${{ github.event.action == 'converted_to_draft' || github.event.action == 'closed' }}
+        # Pin action to full length commit SHA
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        with:
+          github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          script: |
+            try {
+              await github.rest.issues.removeLabel({
+                'owner': context.repo.owner,
+                'repo': context.repo.repo,
+                'issue_number': context.payload.pull_request.number,
+                'name': 'Needs Review'
+              })
+            } catch ( error ) {
+              console.log( 'Error removing label: %s', error.message );
+            }
+
+      # Remove "Needs Review" and "Needs Changes" labels when "Ready To Merge" is assigned:
+      - name: 'Remove "Needs Review" and "Needs Changes" labels when "Ready To Merge" is assigned'
+        if: ${{ github.event.action == 'labeled' && github.event.label.name == 'Ready To Merge' }}
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        with:
+          github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          script: |
+            const labelsToRemove = [ 'Needs Review', 'Needs Changes' ];
+            for ( const label of labelsToRemove ) {
+              try {
+                await github.rest.issues.removeLabel({
+                  'owner': context.repo.owner,
+                  'repo': context.repo.repo,
+                  'issue_number': context.payload.pull_request.number,
+                  'name': label
+                })
+              } catch ( error ) {
+                console.log( 'Error removing label %s: %s', label, error.message );
+              }
+            }
+
+      # Remove "First-time Contributor" label from other open PRs of same author if PR is merged:
+      - name: 'Remove "First-time Contributor" label from other open PRs of same author if PR is merged'
+        if: ${{ github.event.action == 'closed' && github.event.pull_request.merged == true }}
+        # Pin action to full length commit SHA
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        with:
+          github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          script: |
+            const prAuthor = context.payload.pull_request.user.login;
+            const { owner, repo } = context.repo;
+
+            // Search for all open PRs from the PR author:
+            const query = `repo:${owner}/${repo} type:pr state:open author:${prAuthor}`;
+            const response = await github.rest.search.issuesAndPullRequests({
+              'q': query,
+              'per_page': 100
+            });
+
+            const pullRequests = response.data.items;
+            for ( const pull of pullRequests ) {
+              if ( pull.user.login === prAuthor ) {
+                try {
+                  await github.rest.issues.removeLabel({
+                    'owner': context.repo.owner,
+                    'repo': context.repo.repo,
+                    'issue_number': pull.number,
+                    'name': 'First-time Contributor'
+                  });
+                } catch ( error ) {
+                  console.log( 'Error removing "First-time Contributor" label from PR #%d: %s', pull.number, error.message );
+                }
+              }
+            }

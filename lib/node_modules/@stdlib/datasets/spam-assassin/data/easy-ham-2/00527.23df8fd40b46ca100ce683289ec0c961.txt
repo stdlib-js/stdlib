@@ -1,0 +1,100 @@
+From razor-users-admin@lists.sourceforge.net  Mon Jul 22 17:45:12 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9FC91440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 12:45:11 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 17:45:11 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFkHI09950 for
+    <jm-razor@jmason.org>; Mon, 22 Jul 2002 16:46:17 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id CAA29637 for
+    <jm-razor@jmason.org>; Mon, 22 Jul 2002 02:49:37 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17WS7G-00067R-00; Sun,
+    21 Jul 2002 18:36:02 -0700
+Received: from habanero.hesketh.net ([66.45.6.196]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17WS77-0000R7-00 for <razor-users@lists.sourceforge.net>; Sun,
+    21 Jul 2002 18:35:53 -0700
+Received: (from schampeo@localhost) by habanero.hesketh.net
+    (8.11.6/8.11.1) id g6LNkId07042 for razor-users@lists.sourceforge.net;
+    Sun, 21 Jul 2002 19:46:18 -0400
+X-Received-From: schampeo
+X-Delivered-To: razor-users@example.sourceforge.net
+X-Originating-Ip: []
+From: Steven Champeon <schampeo@hesketh.com>
+To: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] Re: revoke problem
+Message-Id: <20020721194618.B6402@hesketh.com>
+Mail-Followup-To: razor-users@example.sourceforge.net
+References: <20020714214044.B31831@hesketh.com>
+    <20020718151337.D23651@hesketh.com>
+    <20020718201801.GA5443@nexus.cloudmark.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <20020718201801.GA5443@nexus.cloudmark.com>; from Chad
+    Norwood on Thu, Jul 18, 2002 at 01:18:01PM -0700
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Sun, 21 Jul 2002 19:46:18 -0400
+Date: Sun, 21 Jul 2002 19:46:18 -0400
+
+on Thu, Jul 18, 2002 at 01:18:01PM -0700, Chad Norwood wrote:
+> On 18/07/02 15:13 -0400, Steven Champeon wrote:
+> ) 
+> ) Chad, has there been any progress on this? Thanks.
+> 
+> 
+>   We are constantly working and improving the overall system,
+>   client code, server code, logic, etc.  Sometimes the long term
+>   fix is not apparent right away with specific issues seen by 
+>   razor-users.  
+> 
+>   If a mail is reported and revoked by the same identity,
+>   it still might be considered spam.  
+
+Oh, OK. That doesn't make sense. :) Can someone manually remove/revoke
+the message in question, then, while you work constantly to improve and
+tweak the system? Thanks :)
+ 
+<snip>
+
+> ) > I immediately revoked it, using the mutt command "|" and "razor-revoke",
+> ) > but it appears to still be in razor. Hashes are as follows:
+> ) > 
+> ) > 1 part N/A e1: Zh19_7n6GRBFk6lyr8PYJcIWGJ8A
+> ) > 1 part 0 e3: q_vLZZ9m-ZAD3N3e7ieSzeeYekaYF83f6G11dfcTy9kA
+> ) > 1 part 0 e4: dcq2LaohnBmKsqUJW4xnOsdyk9EA, ep4: 7542-10
+
+-- 
+hesketh.com/inc. v: (919) 834-2552 f: (919) 834-2554 w: http://hesketh.com
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

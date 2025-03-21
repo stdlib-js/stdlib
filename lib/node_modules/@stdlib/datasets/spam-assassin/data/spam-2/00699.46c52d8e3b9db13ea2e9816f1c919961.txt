@@ -1,0 +1,250 @@
+From fork-admin@xent.com  Thu Aug  8 14:36:41 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A7253441F8
+	for <jm@localhost>; Thu,  8 Aug 2002 08:40:04 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 08 Aug 2002 13:40:04 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g78CC1201442 for
+    <jm@JMASON.ORG>; Thu, 8 Aug 2002 13:12:01 +0100
+Received: from xent.com ([64.161.22.236]) by webnote.net (8.9.3/8.9.3)
+    with ESMTP id MAA29886 for <jm@jmason.org>; Thu, 8 Aug 2002 12:40:12 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 3DE7C2940B3; Thu,  8 Aug 2002 04:25:13 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from ds1.nurel.net (unknown [208.255.148.10]) by xent.com
+    (Postfix) with SMTP id 6A8042940B2 for <fork@xent.com>; Thu,
+    8 Aug 2002 04:24:16 -0700 (PDT)
+Received: by ds1.nurel.net (Postfix, from userid 48) id DE66823669;
+    Tue,  9 Jul 2002 20:28:46 -0400 (EDT)
+From: special@ds1.nurel.net
+To: fork@spamassassin.taint.org
+Subject: A Situation That Could Revolutionize the Health Care Industry
+Message-Id: <20020710002846.DE66823669@ds1.nurel.net>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue,  9 Jul 2002 20:28:46 -0400 (EDT)
+Content-Type: text/html
+
+Date: Tuesday, July 9, 2002<br><br>
+<br><!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'>
+<html>
+<head>
+<title>IBXG E-mailer 7/9/02</title>
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>
+</head>
+
+<body>
+<table width='90%' border='1' align='center' cellpadding='3' cellspacing='3' bordercolor='#000099'>
+  <tr>
+    <td><div align='center'> <div align='center'> <font size='1' face='Arial, Helvetica, sans-serif'><strong><em><font size='2' face='Georgia, Times New Roman, Times, serif'>Rapid 
+        Growth Health Care Company: Stock Symbol “IBXG” Trading Around<font size='3' face='Times New Roman, Times, serif'> 
+        16</font> Cents</font></em></strong></font><br>
+        <br>
+        <font color='#000099' size='7' face='Times New Roman, Times, serif'> 
+        Market Watch Corporation</font><br>
+        <font size='1' face='Arial, Helvetica, sans-serif'><br>
+        <strong><font size='1' face='Arial, Helvetica, sans-serif'><strong><font size='3'>REVENUES 
+        TO SOAR OVER 500% TO $18 MILLION</font></strong></font> <font size='3'>FOR 
+        OTC-BB "IBXG" <br>
+        ACQUISITION OF TWO CYBERCARE, INC. OPERATING UNITS MOVES FORWARD<br>
+        <br>
+        </font></strong> <br>
+        <font size='2'>OTC-BB Symbol:</font><strong> </strong><font color='#000099' size='2'>IBXG</font><br>
+        <font size='2'>Shares Outstanding (est.):</font><strong><font face='Georgia, Times New Roman, Times, serif'> 
+        </font></strong><font size='2'>38,983,380</font></font><font size='1' face='Arial, Helvetica, sans-serif'><br>
+        <font size='2'>Float (est.):</font><strong> </strong><font size='2'>7,887,966</font><strong><br>
+        </strong><font size='2'>Recent Price:<strong> </strong>16 cents</font><font face='Georgia, Times New Roman, Times, serif'><br>
+        <font size='2' face='Arial, Helvetica, sans-serif'>Year Low/High:</font> 
+        <font size='2' face='Arial, Helvetica, sans-serif'>$0.10 - $0.90</font></font><br>
+        <font size='2'>Contact: 561-998-3435</font><br>
+        <font size='2'>Websites: <a href='http://www.marketwatchcorp.com'>Market 
+        Watch Corporation</a>, <a href='http://www.ibxg.com'>iBX Group, Inc.</a></font><br>
+        <font size='2'>Press Releases:</font><strong><font face='Georgia, Times New Roman, Times, serif'> 
+        </font></strong><font face='Georgia, Times New Roman, Times, serif'><a href='http://finance.yahoo.com/q?s=IBXG.OB'><font size='2' face='Arial, Helvetica, sans-serif'>IBXG 
+        Press Releases</font></a><strong><br>
+        </strong></font><strong><br>
+        <br>
+        <em></em> </strong></font><font color='#000000' size='2' face='Georgia, Times New Roman, Times, serif'><em><strong>A 
+        Situation That Could Revolutionize the Health Care Industry<br>
+        </strong></em></font> <font size='1' face='Arial, Helvetica, sans-serif'><strong> 
+        <br>
+        </strong></font> </div>
+      <table width='100%' border='0' cellspacing='10' cellpadding='3'>
+          <tr>
+            <td width='50%' valign='top'>
+<div align='justify'><font size='1' face='Arial, Helvetica, sans-serif'><strong><u><font face='Georgia, Times New Roman, Times, serif'>STRONG HEALTH CARE SECTOR GROWTH</font></u></strong> 
+               Most investors desire to be in a stock from the beginning 
+              of its growth, “IBXG” is one of those opportunities. 
+              <font color='#FF0000'><strong><u>Revenues to increase over 500 % 
+              to over $18 Million from $3 Million</u></strong></font> with its 
+              pending acquisition of 47 physical therapy outpatient centers and 
+              institutional pharmacy businesses, currently owned by <a href='http://www.cyber-care.net/'>CyberCare, 
+              Inc.</a> “IBXG” also just announced a national alliance 
+              with <strong><a href='http://www.patient-pay.com'>Patient-Pay.com</a></strong> 
+              that will enable “IBXG” to market its services on a 
+              national scale. We believe the potential is enormous for this expanding 
+              dynamic Health Care Information Technology Company.<br>
+              <br>
+              <u><strong><font face='Georgia, Times New Roman, Times, serif'>HEALTH CARE SECTOR REREPRESENTS <font face='Times New Roman, Times, serif'>15%</font> OF THE TOTAL US 
+              GROSS DOMESTIC PRODUCT</font></strong></u> While inflation 
+              in the US has been around 2% per year, the US Health Care’s 
+              inflationary rate rose over 11% per year. Health care costs are 
+              spiraling out of control. “IBXG” provides technology 
+              based products and services in full compliance with newly mandated 
+              government requirements (HIPAA), that help medical professionals 
+              save time and money, by utilizing “IBXG”s state of the 
+              art systems.<br>
+              <br>
+              <u><strong><font face='Georgia, Times New Roman, Times, serif'>UNDERSTANDING HIPAA</font></strong></u> 
+              The Health Insurance Portability and Accountability Act of 1996 
+              (<strong><a href='http://www.hipaa-iq.com/'>Public Law 104-191</a></strong>), 
+              also known as HIPAA, was enacted as part of a broad Congressional 
+              attempt at incremental healthcare reform. Part of the law requires 
+              the US Dept. of Health and Human Services (DHHS) to develop standards 
+              and requirements for maintenance and transmission of health information 
+              that identifies individual patients. The requirements outlined by 
+              the law are far-reaching for all healthcare organizations that maintain 
+              or transmit electronic health information must comply. “IBXG” 
+              offers all health care providers with a viable, already in place 
+              solution to “HIPAA” compliance.<br>
+              <br>
+              <strong><font face='Georgia, Times New Roman, Times, serif'><u>IBXG  SPECIALIZES IN HEALTH DATA MANAGEMENT</u></font></strong> 
+              It is a huge market comprised of over one million health care professionals. 
+              This company has emerged, with solutions to many problems facing 
+              the Health Care Industry, by providing health care professionals 
+              the ability to deliver outstanding patient care with optimum efficiency. 
+              In past years, venture capitalists have invested more than $20 billion 
+              in information technology companies, confirming a very large financial 
+              interest in the health care sector.<br>
+              <u><strong><font face='Georgia, Times New Roman, Times, serif'><br>
+              WILL IBXG REVOLUTIONIZE THE HEALTH CARE INDUSTRY?</font></strong></u> 
+              They could. Virtually every aspect of the way health care is delivered 
+              is impacted in a positive fashion, by IBXG's technology. IBXG has 
+              developed and deployed innovative, cost-effective methods for integrating 
+              financial, administrative and information services for the health 
+              care industry. Utilizing in-house development capabilities combined 
+              with the latest technologies and Internet–based communication 
+              services, “IBXG” assists hospital-based physician groups, 
+              multi-physician specialty practice and health care service organizations 
+              in managing the efficiency of account receivable, workflow and compliance.virtually 
+              every aspect of the way health care is delivered. Imagine your doctor 
+              being able to access your medical records from any location, anywhere 
+              in the world . . . instantly! <br>
+              </font> </div></td>
+            
+          <td width='50%' valign='top'><font size='2' face='Arial, Helvetica, sans-serif'> 
+            <font size='2' face='Georgia, Times New Roman, Times, serif'><strong><u>OUTSTANDING 
+            RECENT DEVELOPMENTS</u></strong></font> 
+            <ul type='disc'>
+              <li> Revenues to increase over <strong>500%</strong> to <strong>$18 
+                MILLION.<font face='Georgia, Times New Roman, Times, serif'> </font></strong> 
+              <li> National alliance with <a href='http://www.patient-pay.com'><strong>Patient-Pay.Com</strong></a>. 
+              <li> Wall Street Corporate Reporter interview, <strong><a href='http://www.wscr.com/'>available 
+                here</a></strong> <br>
+                July 15, 2002. 
+              <li> Significant gains in quarterly year to year revenues.
+              <li> Extension of agreements with Intracoastal Health Systems and 
+                Providence Hospital (one of <strong><a href='http://www.ascensionhealth.org'>Ascension 
+                Health Group’s</a></strong> 87 affiliated hospitals). 
+              <li> Increased revenues with Cerberus Capital Management, L.P.,a 
+                multi-billion dollar New York hedge fund. 
+              <li> Service contract with <strong><a href='http://mdvip.com/'>MDVIP</a></strong>, 
+                MDVIP was featured in an NBC Nightly News <strong><a href='http://www.msnbc.com/news/732472.asp'>Tom 
+                Brokaw interview</a></strong>. 
+              <li> Acquired <a href='http://www.sportshealthnet.com'><strong>Sportshealthnet.com</strong></a>. 
+              <li> Contract with award winning software company, <strong><a href='http://www.millbrook.com'>Millbrook 
+                Software Corporation</a></strong> for additional revenue. 
+              <li> Two national product launches were announced, one for the<strong> 
+                </strong>$1.5 BILLION durable medical equipment industry and the 
+                other a proprietary online consumer medical reports and information 
+                service. 
+              <li> Alliance with <strong><a href='http://www.suncapitalinc.com/'>Sun 
+                Capital</a></strong> that will allow IBXG to offer accounts receivable 
+                funding programs nationwide. 
+              <li> Extended partnership alliance with Advanced Information Technologies 
+                that taps the $5 BILLION document management industry. 
+              <li> Alliance with <strong><a href='http://www.digitalingenuity.com/index_flash.html'>Digital 
+                Ingenuity</a></strong> to provide Internet- protocol telephony 
+                services (a billion-dollar industry).
+            </ul>
+            </font> </td>
+          </tr>
+        </table>
+        
+      <div align='center'> </div>
+  </tr>
+</table>
+<table width='90%' border='1' align='center' cellpadding='3' cellspacing='3' bordercolor='#000099'>
+  <tr>
+    <td><div align='justify'><font size='1' face='Times New Roman, Times, serif'><strong>Disclaimer 
+        & Disclosure:</strong> Market Watch Corporation is not a registered 
+        financial advisory. The information presented by Market Watch Corporation 
+        is not an offer to buy or sell securities. Market Watch Corporation accumulates 
+        information based from public sources and the advertised company, then 
+        distributes opinions and comments. Penny stocks are considered to be highly 
+        speculative and may be unsuitable for all but very aggressive investors. 
+        Market Watch Corporation may hold positions in companies mentioned and 
+        may buy or sell at any time. This profile of IBXG was a paid advertisement 
+        by IBXG. IBXG has paid Market Watch Corporation $3,500 for this advertisement 
+        and 750,000 restricted shares for investor awareness services for one 
+        year, an affiliated company of Market Watch Corporation has been paid 
+        250,000 restricted shares of IBXG stock from a third party shareholder. 
+        Please always consult a registered financial advisor before making any 
+        decisions. Information within this advertisement contains forward looking 
+        statements within the meaning of Section 27(e) of the U.S. Securities 
+        Act of 1933 and Section 21(g) of the U.S. Securities Exchange Act of 1934 
+        and the Private Securities Litigation Reform Act Of 1995. Forward looking 
+        statements are based on expectations, estimates and projections at the 
+        time the statements are made that involve a number of risks and uncertainties 
+        which could cause actual results or events to differ materially from those 
+        presently anticipated. Forward looking statements may be identified through 
+        the use of words such as expects, will, anticipates, estimates, believes, 
+        or by statements indicating certain actions may, could or might occur. 
+        We encourage our readers to invest carefully and read the investor information 
+        available at the Web sites of the U.S. Securities and Exchange Commission 
+        (SEC) at <a href='http://www.sec.gov'>http://www.sec.gov</a> and/or the 
+        National Association of Securities Dealers (NASD) at <a href='http://www.nasd.com'>http://www.nasd.com</a>. 
+        Readers can review all public filings by companies at the SEC’s 
+        EDGAR page. The NASD has published information on how to invest carefully 
+        at its Web site.</font></div></td>
+  </tr>
+</table>
+ <font face='arial,helvetica,sans-serif' size='1'><p class='MsoNormal' align='center'>
+      <font face='Arial'><span style='font-family: Arial'> You are receiving 
+      this message because you subscribed on one of our partner sites using the 
+      refer a friend page. We value privacy as our clients demand it and we  
+      will gladly unsubscribe you upon request. To send a request, simply
+      <a href='http://www.nurel.net/Unsubscribe.htm'>click here</a> and follow directions. We 
+      guarantee that you will be unsubscribed within 48 hours. Nurel is 
+      only the delivery source for this message.  Under SEC rules, we are 
+      required to inform you that we were paid three thousand five hundred 
+      dollars (US) for our services which is limited to the delivery of this 
+      message only. </span></font></p>
+      <p class='MsoNormal' align='center'><font face='Arial'>
+      <span style='font-family: Arial'>Thank you.</span></font></p>
+      <p class='MsoNormal' align='center'><font face='Arial'>
+      <span style='font-family: Arial'>(c) 2002 Nurel</span></font></p>
+      </font>
+      <p>
+<br>
+</body>
+</html><br>
+<br>
+<br><font size = 1><br><br><a href = 'http://www.applytools.com' target = '_blank'>ApplyLeads v3.2</a> Commercial E-mail List Manager.<br></font><Br>
+http://xent.com/mailman/listinfo/fork
+
+

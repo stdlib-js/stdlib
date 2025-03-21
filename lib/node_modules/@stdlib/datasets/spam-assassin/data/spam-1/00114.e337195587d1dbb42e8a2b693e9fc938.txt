@@ -1,0 +1,86 @@
+From OWNER-NOLIST-SGODAILY*JM**NETNOTEINC*-COM@SMTP1.ADMANMAIL.COM  Tue Aug 27 05:48:54 2002
+Return-Path: <OWNER-NOLIST-SGODAILY*JM**NETNOTEINC*-COM@SMTP1.ADMANMAIL.COM>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.spamassassin.taint.org (Postfix) with ESMTP id C6B6C43F99
+	for <zzzz@localhost>; Tue, 27 Aug 2002 00:48:53 -0400 (EDT)
+Received: from mail.webnote.net [193.120.211.219]
+	by localhost with POP3 (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Tue, 27 Aug 2002 05:48:53 +0100 (IST)
+Received: from TIPSMTP1.ADMANMAIL.COM (TIPSMTP1.ADMANMAIL.COM [209.216.124.212])
+	by webnote.net (8.9.3/8.9.3) with ESMTP id FAA29576
+	for <JM@NETNOTEINC.COM>; Tue, 27 Aug 2002 05:47:57 +0100
+Message-Id: <200208270447.FAA29576@webnote.net>
+Received: from tiputil1 (tiputil1.corp.tiprelease.com) by TIPSMTP1.ADMANMAIL.COM (LSMTP for Windows NT v1.1b) with SMTP id <0.00000094@TIPSMTP1.ADMANMAIL.COM>; Mon, 26 Aug 2002 23:44:56 -0500
+Date: Mon, 26 Aug 2002 22:38:04 -0500
+From: Police Seized Goods <greatoffers@sendgreatoffers.com>
+To: JM@NETNOTEINC.COM
+Subject: FBI & IRS seized goods at 99% off! Police Auctions!
+X-Info: 134085
+X-Info2: SGO
+Mime-Version: 1.0
+Content-Type: text/html; charset="us-ascii"
+
+<html>
+<head>
+<title>PoliceAuctions.com</title>
+<style type=text/css>
+a:link{font-family:verdana;color:003399;font-size:14px;font-weight:bold;text-decoration:none;}
+a:hover{font-family:verdana;color:ff0000;font-size:14px;font-weight:bold;text-decoration:underline;}
+a:active{font-family:verdana;color:ff0000;font-size:14px;font-weight:bold;text-decoration:underline;}
+a:visited{font-family:verdana;color:003399;font-size:14px;font-weight:bold;text-decoration:underline;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table width="62%" border="1" cellspacing="0" cellpadding="0" bordercolor="#FF0000" align="center">
+  <tr>
+    <td>
+      <table border="0" cellpadding="0" cellspacing="0" width="608">
+        <tr>
+          <td><img src="http://www.policeauctions.com/affiliates/html/spacer.gif" width="234" height="1" border="0"></td>
+          <td><img src="http://www.policeauctions.com/affiliates/html/spacer.gif" width="28" height="1" border="0"></td>
+          <td><img src="http://www.policeauctions.com/affiliates/html/spacer.gif" width="162" height="1" border="0"></td>
+          <td><img src="http://www.policeauctions.com/affiliates/html/spacer.gif" width="184" height="1" border="0"></td>
+          <td><img src="http://www.policeauctions.com/affiliates/html/spacer.gif" width="1" height="1" border="0"></td>
+        </tr>
+        <tr>
+          <td rowspan="2" colspan="3"><a href="http://theadmanager.com/server/c.asp?ad_key=XRAUHQDEFYUB&ext=1" target="_blank"><img src="http://policeauctions.com/affiliates/html/successpage_ad_r1_c1.gif" width="424" height="246" border="0" alt="PoliceAuctions.com"></a></td>
+          <td bgcolor="#FFFFFF"> </td>
+          <td><img src="http://www.policeauctions.com/affiliates/html/spacer.gif" width="1" height="128" border="0"></td>
+        </tr>
+        <tr>
+          <td><a href="http://theadmanager.com/server/c.asp?ad_key=XRAUHQDEFYUB&ext=1" target="_blank"><img src="http://policeauctions.com/affiliates/html/successpage_ad_r2_c4.gif" width="184" height="118" border="0" alt="PoliceAuctions.com"></a></td>
+          <td><img src="http://www.policeauctions.com/affiliates/html/spacer.gif" width="1" height="118" border="0"></td>
+        </tr>
+        <tr>
+          <td><a href="http://theadmanager.com/server/c.asp?ad_key=XRAUHQDEFYUB&ext=1" target="_blank"><img src="http://policeauctions.com/affiliates/html/successpage_ad_r3_c1.gif" width="234" height="149" border="0" alt="PoliceAuctions.com"></a></td>
+          <td colspan="3" bgcolor="#FFFFFF">
+            <p align="left"><a href="http://theadmanager.com/server/c.asp?ad_key=XRAUHQDEFYUB&ext=1" target="_blank">
+			Awesome deals on seized and unclaimed <br>
+              property the government auctions to the public. Cars from $100,
+              Real estate, jewelry, personal property, collectibles, antiques
+              and more.</a></p>
+            <p><font face="Verdana, Arial, Helvetica, sans-serif" size="4"><b><font color="#003399">
+			<a href="http://theadmanager.com/server/c.asp?ad_key=XRAUHQDEFYUB&ext=1" target="_blank">CLICK HERE</a></font></b></font></p>
+          </td>
+          <td><img src="http://www.policeauctions.com/affiliates/html/spacer.gif" width="1" height="149" border="0"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<img src="http://admanmail.com/server/t.asp?ad_key=XRAUHQDEFYUB" width="1" height="1" hspace="0" vspace="0" border="0" alt="T">
+<hr size="1" noshade>
+<font face="Arial" size="1" color="#000000">
+You are receiving this mailing because you are a
+member of SendGreatOffers.com and subscribed as:JM@NETNOTEINC.COM
+To unsubscribe <a href="http://admanmail.com/subscription.asp?em=JM@NETNOTEINC.COM&l=SGO">
+<font face="arial" size="1" color="#000000">Click Here</a>
+(http://admanmail.com/subscription.asp?em=JM@NETNOTEINC.COM&l=SGO)
+or reply to this email with REMOVE in the subject line - you must
+also include the body of this message to be unsubscribed. Any correspondence about
+the products/services should be directed to
+the company in the ad.
+%EM%JM@NETNOTEINC.COM%/EM%
+<BR></FONT> </body> </html>
+

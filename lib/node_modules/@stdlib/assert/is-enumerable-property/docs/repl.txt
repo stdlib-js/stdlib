@@ -1,0 +1,28 @@
+
+{{alias}}( value, property )
+    Tests if an object's own property is enumerable.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    property: any
+        Property to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an object's own property is enumerable.
+
+    Examples
+    --------
+    > var beep = { 'boop': true };
+    > var bool = {{alias}}( beep, 'boop' )
+    true
+    > bool = {{alias}}( beep, 'hasOwnProperty' )
+    false
+
+    See Also
+    --------
+

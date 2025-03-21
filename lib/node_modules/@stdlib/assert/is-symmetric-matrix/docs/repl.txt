@@ -1,0 +1,32 @@
+
+{{alias}}( value )
+    Tests if a value is a square matrix which equals its transpose.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a value is a symmetric matrix.
+
+    Examples
+    --------
+    > var buf = [ 0, 1, 1, 2 ];
+    > var sh = [ 2, 2 ];
+    > var st = [ 2, 1 ];
+    > var M = {{alias:@stdlib/ndarray/ctor}}( 'generic', buf, sh, st, 0, 'row-major' );
+    > var bool = {{alias}}( M )
+    true
+    > bool = {{alias}}( [ 1, 2, 3, 4 ] )
+    false
+    > bool = {{alias}}( 3.14 )
+    false
+    > bool = {{alias}}( {} )
+    false
+
+    See Also
+    --------
+

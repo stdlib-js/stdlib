@@ -1,0 +1,123 @@
+From ilug-admin@linux.ie  Wed Aug 28 10:48:11 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3DDB64415A
+	for <zzzz@localhost>; Wed, 28 Aug 2002 05:47:34 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 28 Aug 2002 10:47:34 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7RKXmZ24942 for
+    <zzzz-ilug@spamassassin.taint.org>; Tue, 27 Aug 2002 21:33:48 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id VAA15298; Tue, 27 Aug 2002 21:32:40 +0100
+Received: from hibernia.jakma.org (hibernia.clubi.ie [212.17.32.129]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id VAA15263 for <ilug@linux.ie>;
+    Tue, 27 Aug 2002 21:32:32 +0100
+Received: from fogarty.jakma.org (fogarty.jakma.org [192.168.0.4]) by
+    hibernia.jakma.org (8.11.6/8.11.6) with ESMTP id g7RKWT715112;
+    Tue, 27 Aug 2002 21:32:29 +0100
+Received: from localhost (paul@localhost) by fogarty.jakma.org
+    (8.11.6/8.11.6) with ESMTP id g7RKWRn04752; Tue, 27 Aug 2002 21:32:27
+    +0100
+X-Authentication-Warning: fogarty.jakma.org: paul owned process doing -bs
+Date: Tue, 27 Aug 2002 21:32:26 +0100 (IST)
+From: Paul Jakma <paul@clubi.ie>
+X-X-Sender: paul@fogarty.jakma.org
+To: David Neary <dneary@wanadoo.fr>
+Cc: ILUG list <ilug@linux.ie>
+Subject: Re: [ILUG] converting strings of hex to ascii
+In-Reply-To: <20020827182940.A6217@wanadoo.fr>
+Message-Id: <Pine.LNX.4.44.0208272128390.3982-100000@fogarty.jakma.org>
+X-Nsa: iraq saddam hammas hisballah rabin ayatollah korea vietnam revolt
+    mustard gas
+X-Dumb-Filters: aryan marijuiana cocaine heroin hardcore cum pussy porn
+    teen tit sex lesbian group
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Tue, 27 Aug 2002, David Neary wrote:
+
+> > Actually the following would be in some way sensible:
+> > echo -e "`echo "$enc" | sed 's/%\([0-9a-fA-F]\{2,2\}\)/\\\x\1/g'`"
+> 
+> Why {2,2}? Why not {2}?
+
+no idea.
+
+the above was something along the lines i was attempting, once i 
+realised it was a straight swap. but i couldnt get awk's gensub to 
+insert the \x for %'s and ='s.
+
+anyway, in the end i found something on the internet and adapted it:
+
+function decode_url (str,    hextab,i,c,c1,c2,len,code) {
+
+        # hex to dec lookup table
+        hextab ["0"] = 0;       hextab ["8"] = 8;
+        hextab ["1"] = 1;       hextab ["9"] = 9;
+        hextab ["2"] = 2;       hextab ["A"] = 10;
+        hextab ["3"] = 3;       hextab ["B"] = 11;
+        hextab ["4"] = 4;       hextab ["C"] = 12;
+        hextab ["5"] = 5;       hextab ["D"] = 13;
+        hextab ["6"] = 6;       hextab ["E"] = 14;
+        hextab ["7"] = 7;       hextab ["F"] = 15;
+
+        decoded = "";
+        i   = 1;
+        len = length (str);
+        while ( i <= len ) {
+                c = substr (str, i, 1);
+                # check for usual start of URI hex encoding chars
+                if ( c == "%" || c == "=" ) {
+                        if ( i+2 <= len ) {
+                                # valid hex encoding?
+                                c1 = toupper(substr(str, i+1, 1));
+                                c2 = toupper(substr(str, i+2, 1));
+                                if ( !(hextab [c1] == "" && hextab [c2] == "") ) {
+                                        code = 0 + hextab [c1] * 16 + hextab [c2] + 0
+                                        c = sprintf ("%c", code)
+                                        i = i + 2
+                                }
+                        }
+                # + is space apparently
+                } else if ( c == "+" ) {
+                        c = " "
+                }
+                decoded = decoded c;
+                ++i;
+        }
+        return decoded
+}
+
+> Cheers,
+> Dave.
+
+> PS the late reply is because the footer on the original mail (If
+> you received this mail in error yadda yadda) got caught in my
+> spam filter, and ended up in my junkmail directory.
+
+he he...
+
+might not have been the footer - check my headers. :)
+
+regards,
+-- 
+Paul Jakma	paul@clubi.ie	paul@jakma.org	Key ID: 64A2FF6A
+	warning: do not ever send email to spam@dishone.st
+Fortune:
+One nuclear bomb can ruin your whole day.
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

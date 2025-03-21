@@ -1,0 +1,62 @@
+From fork-admin@xent.com  Fri Sep  6 11:42:19 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 3777816F75
+	for <jm@localhost>; Fri,  6 Sep 2002 11:39:50 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 11:39:50 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g869VOC28104 for
+    <jm@jmason.org>; Fri, 6 Sep 2002 10:31:24 +0100
+Received: from xent.com ([64.161.22.236]) by webnote.net (8.9.3/8.9.3)
+    with ESMTP id KAA20920 for <jm@jmason.org>; Fri, 6 Sep 2002 10:23:30 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 4DB6229428D; Fri,  6 Sep 2002 02:20:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from isolnetsux.techmonkeys.net (isolnetsux.techmonkeys.net
+    [64.243.46.20]) by xent.com (Postfix) with SMTP id BB54729428C for
+    <fork@xent.com>; Fri,  6 Sep 2002 02:19:27 -0700 (PDT)
+Received: (qmail 25953 invoked by uid 501); 6 Sep 2002 09:21:45 -0000
+Received: from localhost (sendmail-bs@127.0.0.1) by localhost with SMTP;
+    6 Sep 2002 09:21:45 -0000
+From: CDale <cdale@techmonkeys.net>
+To: Kragen Sitaker <kragen@pobox.com>
+Cc: fork@spamassassin.taint.org
+Subject: Re: Ouch... [Bebergflame]
+In-Reply-To: <20020906082637.DDBB83F4EB@panacea.canonical.org>
+Message-Id: <Pine.LNX.4.44.0209060421080.13901-100000@isolnetsux.techmonkeys.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 6 Sep 2002 04:21:45 -0500 (CDT)
+
+On Fri, 6 Sep 2002, Kragen Sitaker wrote:
+
+> Adam Beberg writes:
+> > Shouldn't a politician know not to tell the truth? Odds he's impeached by
+> 
+> As the article you forwarded explained in the second line of text,
+> this politician is a woman.
+> 
+> > next Monday? [ob: no-clue-how-they-remove-mayors-in-italy]
+> 
+> ob: no-clue-full-stop, as in nearly all Adam Beberg posts.
+
+posts, or pouts?
+in rare webster form,
+C
+
+

@@ -1,0 +1,96 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6O3AjhY023815
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Tue, 23 Jul 2002 22:10:46 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6O3Aj7N023811
+	for cypherpunks-forward@ds.pro-ns.net; Tue, 23 Jul 2002 22:10:45 -0500 (CDT)
+Received: from slack.lne.com (dns.lne.com [209.157.136.81] (may be forged))
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6O3AZhX023710
+	for <cypherpunks@ds.pro-ns.net>; Tue, 23 Jul 2002 22:10:36 -0500 (CDT)
+	(envelope-from cpunk@lne.com)
+X-Authentication-Warning: hq.pro-ns.net: Host dns.lne.com [209.157.136.81] (may be forged) claimed to be slack.lne.com
+Received: (from cpunk@localhost)
+	by slack.lne.com (8.11.0/8.11.0) id g6O3AYv18362
+	for cypherpunks@ds.pro-ns.net; Tue, 23 Jul 2002 20:10:34 -0700
+Received: from ok6127.com ([217.78.76.157])
+	by slack.lne.com (8.11.0/8.11.0) with SMTP id g6O39jg18353
+	for <cpunk@lne.com>; Tue, 23 Jul 2002 20:09:59 -0700
+Message-Id: <200207240309.g6O39jg18353@slack.lne.com>
+From: "MR MABO LOKO" <jyyyyl19582000@rediff.com>
+Reply-To: jyyyyl19582000@rediff.com
+To: cpunk@lne.com
+Date: Wed, 24 Jul 2002 03:44:37 +0200
+Subject: Profitable Business Relationship
+X-Mailer: Microsoft Outlook Express 5.00.2919.6900 DM
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by slack.lne.com id g6O39jg18353
+X-spam: 90 
+
+MR MABO LOKO
+BRANCH OFFICER,
+UNITED BANK FOR AFRICA PLC
+ILUPEJU LAGOS NIGERIA
+                               
+                              
+ATT:PRESIDENT/C.E.O
+
+SIR                 
+
+          AN URGENT BUSINESS PROPOSAL
+I am pleased to get across to you for a very urgent and profitable 
+business proposal,Though I don't know you neither have I seen you before but my confidence was reposed On you when the Chief Executive of Lagos State
+chamber of Commerce and Industry handed me your contact for a 
+confidential business. 
+
+I am AN OFFICER with the United Bank for Africa Plc (UBA),Ilupeju branch,
+Lagos Nigeria.
+
+The intended business is thus; We had a customer, a Foreigner (a 
+Turkish)resident in Nigeria, he was a Contractor with one of the Government Parastatals. He has in his Account in my branch the sum of US$35 Million(Thirty five Million U.S. Dollars).
+ 
+Unfortunately, the man died four years ago until today non-of his next
+of kin has come Forward to claim the money. 
+Having noticed this, I in collaboration with two other top Officials
+of the bank we have covered up the account all this while.  
+ Now we want you (being a foreigner) to be fronted as one of his next
+of kin and forward Your account and other relevant documents to be 
+advised to you by us to attest to the Claim. 
+
+We will use our positions to get all internal documentations to back
+up the claims .The whole procedures will last only ten working days to
+get the fund retrieved successfully Without trace even in future.
+ 
+Your response is only what we are waiting for as we have arranged all
+necessary things  As soon as this message comes to you kindly get back to me indicating your interest ,Then I will furnish you with the whole procedures to ensure that the deal is successfully Concluded 
+
+For your assistance we have agreed to give you thirty percent (30%) of
+the Total sum at the end of the transaction. It is risk free and a mega
+fortune. 
+All correspondence Towards this transaction will be through the e-mail
+addresses. 
+ 
+I await your earliest response.  
+Thanks, 
+
+Yours Sincerel
+
+MR MABO LOKO
+
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

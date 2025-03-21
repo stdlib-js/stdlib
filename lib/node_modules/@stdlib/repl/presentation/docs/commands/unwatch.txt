@@ -1,0 +1,17 @@
+
+unwatch( [error] )
+    Stops watching a presentation file for changes.
+
+    Parameters
+    ----------
+    error: Error (optional)
+    	Error object.
+
+    Examples
+    --------
+    > unwatch();
+
+    See Also
+    --------
+    loadPresentation, redraw, reloadPresentation, watch
+

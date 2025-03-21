@@ -1,0 +1,31 @@
+
+{{alias}}( z1, z2 )
+    Tests whether two single-precision complex floating-point numbers are the
+    same value.
+
+    The function differs from the `===` operator in that the function treats
+    `-0` and `+0` as distinct and `NaNs` as the same.
+
+    Parameters
+    ----------
+    z1: Complex64
+        First complex number.
+
+    z2: Complex64
+        Second complex number.
+
+    Returns
+    -------
+    out: boolean
+        Result.
+
+    Examples
+    --------
+    > var z1 = new {{alias:@stdlib/complex/float32/ctor}}( 5.0, 3.0 );
+    > var z2 = new {{alias:@stdlib/complex/float32/ctor}}( 5.0, 3.0 );
+    > var v = {{alias}}( z1, z2 )
+    true
+
+    See Also
+    --------
+

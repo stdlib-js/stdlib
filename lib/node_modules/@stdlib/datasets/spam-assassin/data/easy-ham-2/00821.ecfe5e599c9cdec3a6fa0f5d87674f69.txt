@@ -1,0 +1,58 @@
+From fork-admin@xent.com  Wed Jul 24 04:47:42 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E8F24440CD
+	for <jm@localhost>; Tue, 23 Jul 2002 23:47:41 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 04:47:41 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6O3kf418126 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 04:46:42 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id AB8D0294137; Tue, 23 Jul 2002 20:32:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from c007.snv.cp.net (h013.c007.snv.cp.net [209.228.33.241]) by
+    xent.com (Postfix) with SMTP id 4E360294136 for <fork@xent.com>;
+    Tue, 23 Jul 2002 20:31:27 -0700 (PDT)
+Received: (cpmta 23426 invoked from network); 23 Jul 2002 20:40:37 -0700
+Received: from 65.189.7.13 (HELO alumni.rice.edu) by
+    smtp.directvinternet.com (209.228.33.241) with SMTP; 23 Jul 2002 20:40:37
+    -0700
+X-Sent: 24 Jul 2002 03:40:37 GMT
+Message-Id: <3D3E20A2.70403@alumni.rice.edu>
+From: Wayne E Baisley <baisley@alumni.rice.edu>
+User-Agent: Mozilla/5.0 (Windows; U; Win98; en-US; rv:0.9.4)
+    Gecko/20011128 Netscape6/6.2.1
+X-Accept-Language: en-us
+MIME-Version: 1.0
+To: Robert Harley <harley@argote.ch>
+Cc: fork@spamassassin.taint.org
+Subject: Re: My brain hurts
+References: <20020723224802.E54D3C44E@argote.ch>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 23 Jul 2002 22:36:02 -0500
+
+Perhaps it's time to revisit ...
+
+http://www.engrish.com/recentdiscoveries.html
+
+"evirob" is the essence of weird life.
+
+http://xent.com/mailman/listinfo/fork
+
+

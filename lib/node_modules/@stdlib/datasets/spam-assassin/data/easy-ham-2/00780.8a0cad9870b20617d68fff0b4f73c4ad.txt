@@ -1,0 +1,85 @@
+From exmh-users-admin@redhat.com  Mon Aug 19 10:56:38 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3768244110
+	for <jm@localhost>; Mon, 19 Aug 2002 05:48:35 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:48:35 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7H1P3613240 for
+    <jm-exmh@jmason.org>; Sat, 17 Aug 2002 02:25:04 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 8A0973EA6A; Fri, 16 Aug 2002
+    21:25:02 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 67C253EA22
+    for <exmh-users@listman.redhat.com>; Fri, 16 Aug 2002 21:24:32 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g7H1OUK30062 for exmh-users@listman.redhat.com; Fri, 16 Aug 2002
+    21:24:30 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g7H1OUY30058 for
+    <exmh-users@redhat.com>; Fri, 16 Aug 2002 21:24:30 -0400
+Received: from philonline.com ([202.95.239.41]) by mx1.spamassassin.taint.org
+    (8.11.6/8.11.6) with SMTP id g7H1AMl01127 for <exmh-users@redhat.com>;
+    Fri, 16 Aug 2002 21:10:26 -0400
+Received: from philonline.com (pfheiss@localhost) by philonline.com
+    (8.11.6/8.11.6) with ESMTP id g7H1OCX01329 for <exmh-users@redhat.com>;
+    Sat, 17 Aug 2002 09:24:19 +0800
+Message-Id: <200208170124.g7H1OCX01329@philonline.com>
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4
+To: exmh-users@spamassassin.taint.org
+Subject: No more spell-check
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+From: Peter <pfheiss@philonline.com>
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Sat, 17 Aug 2002 09:24:12 +0800
+
+Hi,
+
+my exmh-2.5 suddenly will not spell-check anymore. If I click More..., Spell...
+a window opens and is gone just as fast.
+
+I don't recall having tinkered with anything.
+
+How can I get spell-checking back?
+
+If you explain please do it so a standard PC user will understand.
+
+Thanks in advance!
+
+-- 
+Peter
+
+
+
+
+
+
+
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+

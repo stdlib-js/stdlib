@@ -1,0 +1,59 @@
+From ilug-admin@linux.ie  Mon Aug 12 11:05:47 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 577F544150
+	for <jm@localhost>; Mon, 12 Aug 2002 05:55:52 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:55:52 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79NMZb29786 for
+    <jm-ilug@jmason.org>; Sat, 10 Aug 2002 00:22:35 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id AAA01947; Sat, 10 Aug 2002 00:18:18 +0100
+Received: from hotmail.com (f25.law11.hotmail.com [64.4.17.25]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id AAA01912 for <ilug@linux.ie>;
+    Sat, 10 Aug 2002 00:18:12 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host f25.law11.hotmail.com
+    [64.4.17.25] claimed to be hotmail.com
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Fri, 9 Aug 2002 16:17:40 -0700
+Received: from 213.116.42.196 by lw11fd.law11.hotmail.msn.com with HTTP;
+    Fri, 09 Aug 2002 23:17:40 GMT
+X-Originating-Ip: [213.116.42.196]
+From: "Michael Treacy" <delphi91@hotmail.com>
+To: bryanroycroft@yahoo.com.au, ilug@linux.ie
+Subject: Re: [ILUG] yast2
+Date: Fri, 09 Aug 2002 23:17:40 +0000
+MIME-Version: 1.0
+Content-Type: text/plain; format=flowed
+Message-Id: <F25kD5p0ZDR0cTc1yK100003fa7@hotmail.com>
+X-Originalarrivaltime: 09 Aug 2002 23:17:40.0321 (UTC) FILETIME=[F4EAFD10:01C23FFA]
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+>has anyone had a problem with Yast2 not being able to
+>mount a source medium for installing new packages, on
+>suse 8.0?
+
+Nope, can't say that I had any problems installing SuSE 8.0. Just stuck in 
+the DVD, did the install and WHAM, got a working distro. QUite an impressive 
+one too, by the way!
+
+Mike
+
+_________________________________________________________________
+Send and receive Hotmail on your mobile device: http://mobile.msn.com
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

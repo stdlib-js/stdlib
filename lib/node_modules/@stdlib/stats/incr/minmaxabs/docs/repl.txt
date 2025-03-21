@@ -1,0 +1,41 @@
+
+{{alias}}( [out] )
+    Returns an accumulator function which incrementally computes a minimum and
+    maximum absolute value.
+
+    If provided a value, the accumulator function returns an updated minimum and
+    maximum. If not provided a value, the accumulator function returns the
+    current minimum and maximum.
+
+    If provided `NaN`, the minimum and maximum values are equal to `NaN` for all
+    future invocations.
+
+    Parameters
+    ----------
+    out: Array|TypedArray (optional)
+        Output array.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}();
+    > var mm = accumulator()
+    null
+    > mm = accumulator( 2.0 )
+    [ 2.0, 2.0 ]
+    > mm = accumulator( -5.0 )
+    [ 2.0, 5.0 ]
+    > mm = accumulator( 3.0 )
+    [ 2.0, 5.0 ]
+    > mm = accumulator( 5.0 )
+    [ 2.0, 5.0 ]
+    > mm = accumulator()
+    [ 2.0, 5.0 ]
+
+    See Also
+    --------
+

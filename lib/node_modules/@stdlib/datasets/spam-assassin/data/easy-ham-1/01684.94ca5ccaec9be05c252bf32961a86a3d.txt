@@ -1,0 +1,33 @@
+Return-Path: anthony@interlink.com.au
+Delivery-Date: Sat Sep  7 04:38:51 2002
+From: anthony@interlink.com.au (Anthony Baxter)
+Date: Sat, 07 Sep 2002 13:38:51 +1000
+Subject: [Spambayes] test sets? 
+In-Reply-To: <LNBBLJKPBEHFEDALKOLCKEICBCAB.tim.one@comcast.net> 
+Message-ID: <200209070338.g873cpp20640@localhost.localdomain>
+
+
+> > Note that header names are case insensitive, so this one's no
+> > different than "MIME-Version:".  Similarly other headers in your list.
+> 
+> Ignoring case here may or may not help; that's for experiment to decide.
+> It's plausible that case is significant, if, e.g., a particular spam mailing
+> package generates unusual case, or a particular clueless spammer
+> misconfigures his package.
+
+I found it made no difference for my testing.
+
+> The brilliance of Anthony's "just count them" scheme is that it requires no
+> thought, so can't be fooled <wink>.  Header lines that are evenly
+> distributed across spam and ham will turn out to be worthless indicators
+> (prob near 0.5), so do no harm.
+
+zactly. I started off doing clever clever things, and, as always with
+this stuff, found that stupid with a rock beats smart with scissors,
+every time.
+
+
+-- 
+Anthony Baxter     <anthony@interlink.com.au>   
+It's never too late to have a happy childhood.
+

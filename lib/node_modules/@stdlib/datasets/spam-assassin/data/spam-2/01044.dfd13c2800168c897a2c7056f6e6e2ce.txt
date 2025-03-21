@@ -1,0 +1,63 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6ONfwi5013534
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Wed, 24 Jul 2002 18:41:59 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6ONfwEx013525
+	for cypherpunks-forward@ds.pro-ns.net; Wed, 24 Jul 2002 18:41:58 -0500 (CDT)
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6ONfui5013499
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks@ds.pro-ns.net>; Wed, 24 Jul 2002 18:41:57 -0500 (CDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: from waste.minder.net (daemon@waste [66.92.53.73])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6ONfsJ55404
+	for <cypherpunks@ds.pro-ns.net>; Wed, 24 Jul 2002 19:41:55 -0400 (EDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: (from cpunks@localhost)
+	by waste.minder.net (8.11.6/8.11.6) id g6ONfoW02834
+	for cypherpunks@ds.pro-ns.net; Wed, 24 Jul 2002 19:41:50 -0400
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by waste.minder.net (8.11.6/8.11.6) with ESMTP id g6ONfnR02821
+	for <cpunks@minder.net>; Wed, 24 Jul 2002 19:41:49 -0400
+Received: from txxy (203-109-229-103.ultrawholesale.com.au [203.109.229.103])
+	by locust.minder.net (8.11.6/8.11.6) with SMTP id g6ONfhJ55387
+	for <cpunks@minder.net>; Wed, 24 Jul 2002 19:41:45 -0400 (EDT)
+	(envelope-from yjnssjvy@kahkaha.com)
+From: S Demir <yjnssjvy@kahkaha.com>
+To: <cpunks@minder.net>
+Subject: Mp3 ve klipler
+Date: Thu, 25 Jul 2002 00:38:21 -0400
+X-Mailer: Microsoft Outlook Express 5.50.4133.2400
+Content-Type: text/plain
+Message-Id: nmurgvodtqjc@minder.net
+X-MIME-Autoconverted: from base64 to 8bit by waste.minder.net id g6ONfnR02821
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+X-MIME-Autoconverted: from 8bit to quoted-printable by hq.pro-ns.net id g6PDX5i4038858
+
+JetMp3 T=FCrkiye'de ilk kez uygulanan bir sistemi hayata ge=E7irdi.
+http://www.jetmp3.com
+Bu sistemle art=FDk =DDstedi=F0iniz MP3 leri ister tek tek isterseniz alb=
+=FCmler halinde ve birka=E7 dakika i=E7inde sanki disketten bilgisayar=FD=
+n=FDza y=FCkler gibi s=FCratle indirebilirsiniz. Turk ve Yabanc=FD alb=FC=
+mler, klipler ve daha fazlas=FD...
+11gb lik ar=FEivimize g=F6z atmak i=E7in t=FDklay=FDn: http://www.jetmp3.=
+com
+
+
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

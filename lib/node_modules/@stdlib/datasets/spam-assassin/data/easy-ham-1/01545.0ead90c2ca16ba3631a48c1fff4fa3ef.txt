@@ -1,0 +1,70 @@
+From quinlan@pathname.com  Thu Oct 10 12:29:12 2002
+Return-Path: <quinlan@pathname.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 4B24416F03
+	for <jm@localhost>; Thu, 10 Oct 2002 12:29:11 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 10 Oct 2002 12:29:11 +0100 (IST)
+Received: from proton.pathname.com
+    (adsl-216-103-211-240.dsl.snfc21.pacbell.net [216.103.211.240]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9A4kRK08872 for
+    <jm@jmason.org>; Thu, 10 Oct 2002 05:46:27 +0100
+Received: from quinlan by proton.pathname.com with local (Exim 3.35 #1
+    (Debian)) id 17zVDy-0006cM-00; Wed, 09 Oct 2002 21:47:02 -0700
+To: yyyy@spamassassin.taint.org (Justin Mason)
+Cc: SpamAssassin-talk@example.sourceforge.net,
+	SpamAssassin-devel@lists.sourceforge.net,
+	Steve Atkins <steve@blighty.com>, ion@aueb.gr, donatespam@archub.org,
+	spambayes@python.org
+Subject: Re: [SAdev] fully-public corpus of mail available
+References: <20021009122116.6EB2416F03@spamassassin.taint.org>
+From: Daniel Quinlan <quinlan@pathname.com>
+Date: 09 Oct 2002 21:47:02 -0700
+In-Reply-To: yyyy@spamassassin.taint.org's message of "Wed, 09 Oct 2002 13:21:11 +0100"
+Message-Id: <yf2r8eygat5.fsf@proton.pathname.com>
+X-Mailer: Gnus v5.7/Emacs 20.7
+
+> (Please feel free to forward this message to other possibly-interested
+> parties.)
+
+Some caveats (in decending order of concern):
+
+1. These messages could end up being falsely (or incorrectly) reported
+   to Razor, DCC, Pyzor, etc.  Certain RBLs too.  I don't think the
+   results for these distributed tests can be trusted in any way,
+   shape, or form when running over a public corpus.
+
+2. These messages could also be submitted (more than once) to projects
+   like SpamAssassin that rely on filtering results submission for GA
+   tuning and development.
+
+3. Spammers could adopt elements of the good messages to throw off
+   filters.  And, of course, there's always progression in technology
+   (by both spammers and non-spammers).
+
+The second problem could be alleviated somewhat by adding a Nilsimsa
+signature (or similar) to the mass-check file (the results format used
+by SpamAssassin) and giving the message files unique names (MD5 or
+SHA-1 of each file).
+
+The third problem doesn't really worry me.
+
+These problems (and perhaps others I have not identified) are unique
+to spam filtering.  Compression corpuses and other performance-related
+corpuses have their own set of problems, of course.
+
+In other words, I don't think there's any replacement for having
+multiple independent corpuses.  Finding better ways to distribute
+testing and collate results seems like a more viable long-term solution
+(and I'm glad we're working on exactly that for SpamAssassin).  If
+you're going to seriously work on filter development, building a corpus
+of 10000-50000 messages (half spam/half non-spam) is not really that
+much work.  If you don't get enough spam, creating multi-technique
+spamtraps (web, usenet, replying to spam) is pretty easy.  And who
+doesn't get thousands of non-spam every week?  ;-)
+
+Dan
+
+

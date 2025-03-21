@@ -1,0 +1,88 @@
+From sitescooper-talk-admin@lists.sourceforge.net  Tue Aug  6 14:01:00 2002
+Return-Path: <sitescooper-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id EBE44441D6
+	for <jm@localhost>; Tue,  6 Aug 2002 08:51:01 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 13:51:01 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g76C4lk26748 for <jm-scoop@jmason.org>; Tue, 6 Aug 2002 13:04:47 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17c33I-0007c9-00; Tue,
+    06 Aug 2002 05:03:04 -0700
+Received: from 200-171-175-91.dsl.telesp.net.br ([200.171.175.91]
+    helo=natrnly) by usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2
+    #1 (Debian)) id 17c32Y-0005G7-00 for
+    <sitescooper-talk@lists.sourceforge.net>; Tue, 06 Aug 2002 05:02:18 -0700
+From: Bahtiyar C <gxihba@aol.com>
+To: <sitescooper-talk@example.sourceforge.net>
+X-Mailer: Microsoft Outlook Express 5.50.4133.2400
+MIME-Version: 1.0
+Message-Id: xgswcamkkdij@example.sourceforge.net
+Subject: [scoop] Liseli kayit
+Sender: sitescooper-talk-admin@example.sourceforge.net
+Errors-To: sitescooper-talk-admin@example.sourceforge.net
+X-Beenthere: sitescooper-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:sitescooper-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:sitescooper-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/sitescooper-talk>,
+    <mailto:sitescooper-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Discussion of sitescooper - see http://sitescooper.org/
+    <sitescooper-talk.lists.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/sitescooper-talk>,
+    <mailto:sitescooper-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=sitescooper-talk>
+X-Original-Date: Tue, 06 Aug 2002 14:03:42 +0200
+Date: Tue, 06 Aug 2002 14:03:42 +0200
+Content-Type: text/html
+Content-Transfer-Encoding: base64
+
+PEhUTUw+PEhFQUQ+PFRJVExFPkV2IHlhcGltaSBhbWF09nIgdmlkZW9sYXIgdHFka3FqZG5s
+IDwvVElUTEU+PC9IRUFEPjxCT0RZPg0KPERJViBBTElHTj0iY2VudGVyIj48VEFCTEUgYm9y
+ZGVyPTAgY2VsbFBhZGRpbmc9MCBjZWxsU3BhY2luZz0wIHdpZHRoPTYwMD4NCiAgPFRCT0RZ
+Pg0KICA8VFI+DQogICAgPFREIGNvbFNwYW49Mz4NCiAgICAgIDxQIGFsaWduPWNlbnRlcj4m
+bmJzcDs8L1A+DQogICAgICA8UCBhbGlnbj1jZW50ZXI+PEZPTlQgZmFjZT1WZXJkYW5hPjxC
+PlllbmkgVmlkZW9sYXIgRWtsZW5kaTs8L0I+PC9GT05UPjwvUD4NCiAgICAgIDxVTD4NCiAg
+ICAgICAgPExJPg0KICAgICAgICA8UCBhbGlnbj1jZW50ZXI+PEZPTlQgZmFjZT1WZXJkYW5h
+PjxCPjxBIEhSRUY9Imh0dHA6Ly93d3cuc2Vrc2xpc2VzaS5jb20iPis1NjAgYWRldCB2aWRl
+byA6IDM4IHRhbmVzaSBFdiANCiAgICAgICAgeWFwaW1pPC9BPjwvQj48L0ZPTlQ+PC9QPg0K
+ICAgICAgICA8TEk+DQogICAgICAgIDxQIGFsaWduPWNlbnRlcj48Rk9OVCBmYWNlPVZlcmRh
+bmE+PEI+PEEgSFJFRj0iaHR0cDovL3d3dy5zZWtzbGlzZXNpLmNvbSI+MTIwIEFkZXQgSGlr
+YXllPC9BPjwvQj48L0ZPTlQ+PC9QPg0KICAgICAgICA8TEk+DQogICAgICAgIDxQIGFsaWdu
+PWNlbnRlcj48Rk9OVCBmYWNlPVZlcmRhbmE+PEI+PEEgSFJFRj0iaHR0cDovL3d3dy5zZWtz
+bGlzZXNpLmNvbSI+S2FkaW5sYXJpbiBPcmdhem0gDQpWaWRlb2xhcmk8L0E+PC9CPjwvRk9O
+VD48L1A+DQogICAgICAgIDxMST4NCiAgICAgICAgPFAgYWxpZ249Y2VudGVyPjxGT05UIGZh
+Y2U9VmVyZGFuYT48Qj48QSBIUkVGPSJodHRwOi8vd3d3LnNla3NsaXNlc2kuY29tIj5EZXZv
+biB2ZSBTeWx2aWEgU2FpbnRpbiANCiAgICAgICAgVmlkZW9sYXJpLNxubPxsZXI8L0E+PC9C
+PjwvRk9OVD48L1A+DQogICAgICAgIDxMST4NCiAgICAgICAgPFAgYWxpZ249Y2VudGVyPjxG
+T05UIGZhY2U9VmVyZGFuYT48Qj48QSBIUkVGPSJodHRwOi8vd3d3LnNla3NsaXNlc2kuY29t
+Ij41IEFkZXQgQWR1bHQgQm91bmNlciBTaWZyZSAoMjcwMEdCIA0KICAgICAgICBGaWxtKTwv
+QT48L0I+PC9GT05UPjwvUD4NCiAgICAgICAgPExJPg0KICAgICAgICA8UCBhbGlnbj1jZW50
+ZXI+PEZPTlQgZmFjZT1WZXJkYW5hPjxCPjxBIEhSRUY9Imh0dHA6Ly93d3cuc2Vrc2xpc2Vz
+aS5jb20iPkZsYXNoIFBvcm5vIFZpZGVvbGFyLCAgSGVyc2V5IA0KYnVyYWRhPC9BPjwvQj48
+L0ZPTlQ+PC9QPjwvTEk+PC9VTD4NCiAgICAgIDxQIGFsaWduPWNlbnRlcj48Qj4mbmJzcDs8
+L0I+PC9QPg0KICAgICAgPFAgYWxpZ249Y2VudGVyPjxTVFJPTkc+Jm5ic3A7PEZPTlQgY29s
+b3I9I2ZmMDAwMD5GaWxtbGVyaW4gYm95dXRsYXJpIGtpc2Egb2xkdWd1bmRhbiBoaXpsaSBk
+b3dubG9hZDxCUj4NCgkgIDxBIEhSRUY9Imh0dHA6Ly93d3cuc2Vrc2xpc2VzaS5jb20iPjxG
+T05UIEZBQ0U9IlZlcmRhbmEsIEFyaWFsIiBTSVpFPSszIA0KQ09MT1I9IiNGRjAwRkYiPjxC
+Pnd3dy5TZWtzTGlzZXNpLmNvbTwvQj48L0ZPTlQ+PC9BPjwvRk9OVD48L1NUUk9ORz48L1A+
+PC9URD48L1RSPjwvVEJPRFk+PC9UQUJMRT48L0RJVj4NCjwvQk9EWT48L0hUTUw+DQo=
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Sitescooper-talk mailing list
+Sitescooper-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/sitescooper-talk
+
+

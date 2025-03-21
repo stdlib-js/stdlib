@@ -1,0 +1,29 @@
+
+{{alias}}( obj, prop, fcn )
+    Defines a memoized read-only object property.
+
+    Read-only properties are enumerable and non-configurable.
+
+    Parameters
+    ----------
+    obj: Object
+        Object on which to define the property.
+
+    prop: string|symbol
+        Property name.
+
+    fcn: Function
+        Synchronous function whose return value will be memoized and set as the
+        property value.
+
+    Examples
+    --------
+    > var obj = {};
+    > function foo() { return 'bar'; };
+    > {{alias}}( obj, 'foo', foo );
+    > obj.foo
+    'bar'
+
+    See Also
+    --------
+

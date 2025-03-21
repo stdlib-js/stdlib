@@ -1,0 +1,33 @@
+
+{{alias}}( value, property )
+    Tests if an object's own property has a data descriptor.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    property: any
+        Property to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an object's own property has a data descriptor.
+
+    Examples
+    --------
+    > var obj = { 'boop': true };
+    > var desc = {};
+    > desc.configurable = false;
+    > desc.enumerable = false;
+    > desc.get = function getter() { return 'beep'; };
+    > {{alias:@stdlib/utils/define-property}}( obj, 'beep', desc );
+    > var bool = {{alias}}( obj, 'boop' )
+    true
+    > bool = {{alias}}( obj, 'beep' )
+    false
+
+    See Also
+    --------
+

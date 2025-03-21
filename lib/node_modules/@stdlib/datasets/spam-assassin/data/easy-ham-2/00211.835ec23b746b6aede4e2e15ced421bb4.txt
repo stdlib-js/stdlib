@@ -1,0 +1,58 @@
+From ilug-admin@linux.ie  Thu Aug  1 22:18:07 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 68126440F1
+	for <jm@localhost>; Thu,  1 Aug 2002 17:18:07 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 01 Aug 2002 22:18:07 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g71LJD230220 for
+    <jm-ilug@jmason.org>; Thu, 1 Aug 2002 22:19:13 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id WAA00855; Thu, 1 Aug 2002 22:16:54 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from linuxmafia.com (linuxmafia.COM [198.144.195.186]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id WAA00820 for <ilug@linux.ie>;
+    Thu, 1 Aug 2002 22:16:45 +0100
+Received: from rick by linuxmafia.com with local (Exim 3.35 #1 (Debian))
+    id 17aNJK-0000o2-00 for <ilug@linux.ie>; Thu, 01 Aug 2002 14:16:42 -0700
+Date: Thu, 1 Aug 2002 14:16:38 -0700
+From: Rick Moen <rick@linuxmafia.com>
+To: ilug@linux.ie
+Message-Id: <20020801211638.GT6467@linuxmafia.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.4i
+Subject: [ILUG] ispell _and_ aspell in Irish
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+I just heard from Kevin Patrick Scannell, author of the Irish-language
+ispell dictionary ("ispell-gaeilge") discussed a month or two ago.
+He's revised it, and moreover has added a version for the much-better
+aspell package ("aspell-gaeilge").  The latter is particularly good news
+for users of OpenOffice.org.
+
+Details for us anglophones:  http://borel.slu.edu/ispell/index-en.html
+And in Irish:  http://borel.slu.edu/ispell/
+
+-- 
+Cheers,      "Transported to a surreal landscape, a young girl kills the first
+Rick Moen     woman she meets, and then teams up with three complete strangers
+rick@linuxmafia.com       to kill again."  -- Rick Polito's That TV Guy column,
+              describing the movie _The Wizard of Oz_
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

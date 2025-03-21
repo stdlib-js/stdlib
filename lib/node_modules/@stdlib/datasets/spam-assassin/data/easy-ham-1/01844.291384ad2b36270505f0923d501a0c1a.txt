@@ -1,0 +1,49 @@
+From rssfeeds@jmason.org  Tue Sep 24 10:47:47 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 2377D16F03
+	for <jm@localhost>; Tue, 24 Sep 2002 10:47:47 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 24 Sep 2002 10:47:47 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8O80aC26625 for
+    <jm@jmason.org>; Tue, 24 Sep 2002 09:00:36 +0100
+Message-Id: <200209240800.g8O80aC26625@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: boingboing <rssfeeds@spamassassin.taint.org>
+Subject: Janis Ian interviewed on Slashdot
+Date: Tue, 24 Sep 2002 08:00:36 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://boingboing.net/#85482094
+Date: Not supplied
+
+Janis Ian, a brave and talented recording artist (and budding and talented 
+science fiction writer) has done a terrific interview with the Slashdot 
+groupmind about her views on the music industry. 
+
+    Seriously, diversity is something record companies can't afford anymore - 
+    not the majors, at any rate. I'd go to this article, posted at Linux 
+    Journal, which quotes a Newsweet article (July 15,2002) by Steven Levy 
+    saying "So why are the record labels taking such a hard line? My guess is 
+    that it's all about protecting their Internet-challenged business model. 
+    Their profit comes from blockbuster artists. If the industry moved to a 
+    more varied ecology, independent labels and artists would thrive--to the 
+    detriment of the labels, which would have trouble rustling up the rubes to 
+    root for the next Britney. The smoking gun comes from testimony of an 
+    RIAA-backed economist who told the government fee panel that a dramatic 
+    shakeout in Webcasting is "inevitable and desirable because it will bring 
+    about market consolidation." That's really it in a nutshell. "Market 
+    consolidation" means the less artists they have to promote, the less 
+    ultimate dollars they'll spend. The smaller the playlist, the greater the 
+    chance that audiences will buy something from that playlist alone - because 
+    that's all you'll be able to find out there.  
+
+Link[1] Discuss[2]
+
+[1] http://slashdot.org/article.pl?sid=02/09/23/133228
+[2] http://www.quicktopic.com/boing/H/8nEQCxZaP8U6X
+
+

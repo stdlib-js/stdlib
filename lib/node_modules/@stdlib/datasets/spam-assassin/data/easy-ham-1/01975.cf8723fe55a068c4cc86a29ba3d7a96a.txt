@@ -1,0 +1,26 @@
+From rssfeeds@jmason.org  Thu Sep 26 16:42:45 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 7280016F1C
+	for <jm@localhost>; Thu, 26 Sep 2002 16:41:42 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 16:41:42 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8QFWHg25131 for
+    <jm@jmason.org>; Thu, 26 Sep 2002 16:32:17 +0100
+Message-Id: <200209261532.g8QFWHg25131@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: newscientist <rssfeeds@spamassassin.taint.org>
+Subject: Human-chimp DNA difference trebled
+Date: Thu, 26 Sep 2002 15:32:17 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.newsisfree.com/click/-2,8182249,1440/
+Date: Not supplied
+
+We are more unique than previously thought, according to new comparisons with 
+the genetic code of our closest relatives
+
+

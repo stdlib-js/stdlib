@@ -1,0 +1,117 @@
+
+{{alias}}( N[, options] )
+    Returns an accumulator function which incrementally performs binary
+    classification using stochastic gradient descent (SGD).
+
+    If provided a feature vector and response value, the accumulator function
+    updates a binary classification model and returns updated model
+    coefficients.
+
+    If not provided a feature vector and response value, the accumulator
+    function returns the current model coefficients.
+
+    Stochastic gradient descent is sensitive to the scaling of the features. One
+    is advised to either scale each feature to `[0,1]` or `[-1,1]` or to
+    transform the features into z-scores with zero mean and unit variance. One
+    should keep in mind that the same scaling has to be applied to training data
+    in order to obtain accurate predictions.
+
+    In general, the more data provided to an accumulator, the more reliable the
+    model predictions.
+
+    Parameters
+    ----------
+    N: integer
+        Number of features.
+
+    options: Object (optional)
+        Function options.
+
+    options.intercept: boolean (optional)
+        Boolean indicating whether to include an intercept. Default: true.
+
+    options.lambda: number (optional)
+        Regularization parameter. Default: 1.0e-4.
+
+    options.learningRate: ArrayLike (optional)
+        Learning rate function and associated (optional) parameters. The first
+        array element specifies the learning rate function and must be one of
+        the following:
+
+        - ['constant', ...]: constant learning rate function. To set the
+        learning rate, provide a second array element. By default, when the
+        learn rate function is 'constant', the learning rate is set to 0.02.
+
+        - ['basic']: basic learning rate function according to the formula
+        `10/(10+t)` where `t` is the current iteration.
+
+        - ['invscaling', ...]: inverse scaling learning rate function according
+        to the formula `eta0/pow(t, power_t)` where `eta0` is the initial
+        learning rate and `power_t` is the exponent controlling how quickly the
+        learning rate decreases. To set the initial learning rate, provide a
+        second array element. By default, the initial learning rate is 0.02. To
+        set the exponent, provide a third array element. By default, the
+        exponent is 0.5.
+
+        - ['pegasos']: Pegasos learning rate function according to the formula
+        `1/(lambda*t)` where `t` is the current iteration and `lambda` is the
+        regularization parameter.
+
+        Default: ['basic'].
+
+    options.loss: string (optional)
+        Loss function. Must be one of the following:
+
+        - hinge: hinge loss function. Corresponds to a soft-margin linear
+        Support Vector Machine (SVM), which can handle non-linearly separable
+        data.
+
+        - log: logistic loss function. Corresponds to Logistic Regression.
+
+        - modifiedHuber: Huber loss function variant for classification.
+
+        - perceptron: hinge loss function without a margin. Corresponds to the
+        original Perceptron by Rosenblatt.
+
+        - squaredHinge: squared hinge loss function SVM (L2-SVM).
+
+        Default: 'log'.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    acc.predict: Function
+        Predicts response values for one ore more observation vectors. Provide a
+        second argument to specify the prediction type. Must be one of the
+        following: 'label', 'probability', or 'linear'. Default: 'label'.
+
+        Note that the probability prediction type is only compatible with 'log'
+        and 'modifiedHuber' loss functions.
+
+    Examples
+    --------
+    // Create an accumulator:
+    > var opts = {};
+    > opts.intercept = true;
+    > opts.lambda = 1.0e-5;
+    > var acc = {{alias}}( 3, opts );
+
+    // Update the model:
+    > var buf = new {{alias:@stdlib/array/float64}}( [ 2.3, 1.0, 5.0 ] );
+    > var x = {{alias:@stdlib/ndarray/array}}( buf );
+    > var coefs = acc( x, 1 )
+    <ndarray>
+
+    // Create a new observation vector:
+    > buf = new {{alias:@stdlib/array/float64}}( [ 2.3, 5.3, 8.6 ] );
+    > x = {{alias:@stdlib/ndarray/array}}( buf );
+
+    // Predict the response value:
+    > var yhat = acc.predict( x )
+    <ndarray>
+
+    See Also
+    --------
+
