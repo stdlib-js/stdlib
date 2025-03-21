@@ -124,7 +124,7 @@ Consider whether the heading/line can be shortened by renaming variables (e.g., 
 
 ## What should I do if JavaScript linting on my commits fails because my function exceeds the maximum permissible number of parameters?
 
-Consider whether the number of parameters can be reduced. If reducing is not possible, disable the lint rule at the top level using:
+Consider whether the number of parameters can be reduced. If reduction is not possible, disable the lint rule at the top level using:
 
 ```javascript
 // eslint-disable-line max-params
