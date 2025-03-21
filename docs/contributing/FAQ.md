@@ -102,7 +102,7 @@ If they pass, adjust the tolerance and add a note to the C tests indicating that
 
 ## What should I do if linting on my commits fails because my headings or lines exceed the maximum permissible length?
 
-Consider whether the heading can be shortened by renaming variables (e.g., changing `strideX` to `sx`). If shortening is not possible, disable the lint rule at the top level using:
+Consider whether the heading/line can be shortened by renaming variables (e.g., changing `strideX` to `sx`). If shortening is not possible, disable the lint rule at the top level using:
 
 - For Javascript Files
 
