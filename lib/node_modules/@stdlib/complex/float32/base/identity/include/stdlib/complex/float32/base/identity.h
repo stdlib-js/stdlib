@@ -19,7 +19,7 @@
 #ifndef STDLIB_COMPLEX_FLOAT32_BASE_IDENTITY_H
 #define STDLIB_COMPLEX_FLOAT32_BASE_IDENTITY_H
 
-#include <complex.h>
+#include "stdlib/complex/float32/ctor.h"
 
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
@@ -31,7 +31,7 @@ extern "C" {
 /**
 * Evaluates the identity function for a single-precision complex floating-point number.
 */
-float complex stdlib_base_complex64_identity( const float complex z );
+stdlib_complex64_t stdlib_base_complex64_identity( const stdlib_complex64_t z );
 
 #ifdef __cplusplus
 }

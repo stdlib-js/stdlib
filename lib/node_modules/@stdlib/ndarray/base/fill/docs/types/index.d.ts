@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { typedndarray, complexndarray } from '@stdlib/types/ndarray';
+import { typedndarray, complexndarray, genericndarray } from '@stdlib/types/ndarray';
 import { ComplexLike } from '@stdlib/types/complex';
 
 /**
@@ -101,7 +101,7 @@ declare function fill( x: complexndarray, value: number | ComplexLike ): void;
 * console.log( x.data );
 * // => <Float64Array>[ 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ]
 */
-declare function fill<T = unknown>( x: typedndarray<T>, value: T ): void;
+declare function fill<T = unknown>( x: typedndarray<T> | genericndarray<T>, value: T ): void;
 
 
 // EXPORTS //
