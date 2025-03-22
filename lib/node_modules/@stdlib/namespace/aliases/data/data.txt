@@ -2593,6 +2593,7 @@ ndarrayStrides
 ndat
 ndempty
 ndemptyLike
+ndfill
 ndfilter
 ndfilterMap
 ndforEach
