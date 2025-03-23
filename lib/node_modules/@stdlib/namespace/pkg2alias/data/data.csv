@@ -2594,6 +2594,7 @@
 "@stdlib/ndarray/empty",ndempty
 "@stdlib/ndarray/empty-like",ndemptyLike
 "@stdlib/ndarray/fill",ndfill
+"@stdlib/ndarray/fill-by",ndfillBy
 "@stdlib/ndarray/filter",ndfilter
 "@stdlib/ndarray/filter-map",ndfilterMap
 "@stdlib/ndarray/for-each",ndforEach
