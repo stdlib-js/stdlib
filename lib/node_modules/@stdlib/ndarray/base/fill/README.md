@@ -96,7 +96,7 @@ A provided ndarray should be an object with the following properties:
 ## Notes
 
 -   If `value` is a number and `x` has a complex [data type][@stdlib/ndarray/dtypes], the function fills an input ndarray with a complex number whose real component equals the provided scalar `value` and whose imaginary component is zero.
--   A `value` must be able to safely cast to the input ndarray [data type][@stdlib/ndarray/dtypes]. Scalar values having floating-point data types (both real and complex) are allowed to downcast to a lower precision data type of the same kind (e.g., a scalar double-precision floating-point number can be used to fill a 'float32' input ndarray).
+-   A `value` must be able to safely cast to the input ndarray [data type][@stdlib/ndarray/dtypes]. Scalar values having floating-point data types (both real and complex) are allowed to downcast to a lower precision data type of the same kind (e.g., a scalar double-precision floating-point number can be used to fill a `'float32'` input ndarray).
 -   The function **mutates** the input ndarray.
 
 </section>
