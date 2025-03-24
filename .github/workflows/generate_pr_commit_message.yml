@@ -1,7 +1,7 @@
 #/
 # @license Apache-2.0
 #
-# Copyright (c) 2025 The Stdlib Authors.
+# Copyright (c) 2024 The Stdlib Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,9 +24,6 @@ on:
   pull_request_target:
     types:
       - labeled
-      - opened
-      - edited
-      - synchronize
 
 # Global permissions:
 permissions:
@@ -42,6 +39,9 @@ jobs:
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
+
+    # Ensure the job only runs when the specified label is added:
+    if: github.event.label.name == 'Ready to Merge'
 
     # Define environment variables:
     env:
@@ -64,22 +64,16 @@ jobs:
       - name: "Generate commit message"
         id: commit_message
         run: |
-          if [[ "${{ contains(github.event.pull_request.labels.*.name, 'Ready to Merge') }}" == "true" ]]; then
-            COMMIT_MESSAGE=$($GITHUB_WORKSPACE/.github/workflows/scripts/generate_pr_commit_message $PR_NUMBER)
-            EXIT_CODE=$?
+          COMMIT_MESSAGE=$($GITHUB_WORKSPACE/.github/workflows/scripts/generate_pr_commit_message $PR_NUMBER)
+          EXIT_CODE=$?
 
-            echo "commit_message<<EOF" >> $GITHUB_OUTPUT
-            echo "$COMMIT_MESSAGE" >> $GITHUB_OUTPUT
-            echo "EOF" >> $GITHUB_OUTPUT
+          echo "commit_message<<EOF" >> $GITHUB_OUTPUT
+          echo "$COMMIT_MESSAGE" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
 
-            if [ $EXIT_CODE -eq 200 ]; then
-              echo "has_tracking_issue=true" >> $GITHUB_OUTPUT
-            else
-              echo "has_tracking_issue=false" >> $GITHUB_OUTPUT
-            fi
+          if [ $EXIT_CODE -eq 200 ]; then
+            echo "has_tracking_issue=true" >> $GITHUB_OUTPUT
           else
-            echo "Generated commit message draft successfully."
-            echo "commit_message=Skipped due to missing 'Ready to Merge' label" >> $GITHUB_OUTPUT
             echo "has_tracking_issue=false" >> $GITHUB_OUTPUT
           fi
 
@@ -88,7 +82,6 @@ jobs:
 
       # Post commit message as PR comment:
       - name: "Post commit message as PR comment"
-        if: contains(github.event.pull_request.labels.*.name, 'Ready to Merge')
         # Pin action to full length commit SHA
         uses: peter-evans/create-or-update-comment@71345be0265236311c031f5c7866368bd1eff043 # v4.0.0
         with:
@@ -99,3 +92,8 @@ jobs:
 
             ```text
             ${{ steps.commit_message.outputs.commit_message }}
+            ```
+
+            *Please review the above commit message and make any necessary adjustments.*
+
+            ${{ steps.commit_message.outputs.has_tracking_issue == 'true' && '⚠️ **Action Required**: This PR references tracking issues. Please update the PR description to replace any "Closes", "Fixes", or "Resolves" keywords with "Ref" when referencing these issues.' || '' }}
