@@ -1,7 +1,7 @@
 #/
 # @license Apache-2.0
 #
-# Copyright (c) 2024 The Stdlib Authors.
+# Copyright (c) 2025 The Stdlib Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -23,29 +23,31 @@ name: autoclose
 on:
   pull_request_target:
     types:
+      - opened
+      - synchronize
       - labeled
+      - unlabeled
 
 # Workflow jobs:
 jobs:
-
   # Define a job which closes a pull request if a contributor failed to setup EditorConfig:
   editorconfig:
-
     # Define job name:
-    name: 'Check for EditorConfig label'
-
-    # Only run this job if the pull request has a specific label:
-    if: "${{ github.event.label.name == 'autoclose: EditorConfig' }}"
+    name: "Check for EditorConfig label"
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
     # Define the sequence of job steps:
     steps:
-
-      # Close the pull request:
-      - name: 'Close pull request'
-        run: gh pr close "$NUMBER" --comment "$BODY"
+      # Close the pull request if the label is present, otherwise mark as successful:
+      - name: "Close pull request or mark as successful"
+        run: |
+          if [[ "${{ contains(github.event.pull_request.labels.*.name, 'autoclose: EditorConfig') }}" == "true" ]]; then
+            gh pr close "$NUMBER" --comment "$BODY"
+          else
+            echo "Check for 'autoclose: EditorConfig' label passed."
+          fi
         env:
           GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           GH_REPO: ${{ github.repository }}
@@ -61,22 +63,22 @@ jobs:
 
   # Define a job which closes a pull request if a contributor failed to follow contributing guidelines:
   contributor_guidelines:
-
     # Define job name:
-    name: 'Check for contributor guidelines label'
-
-    # Only run this job if the pull request has a specific label:
-    if: "${{ github.event.label.name == 'autoclose: Contributor Guidelines' }}"
+    name: "Check for contributor guidelines label"
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
     # Define the sequence of job steps:
     steps:
-
-      # Close the pull request:
-      - name: 'Close pull request'
-        run: gh pr close "$NUMBER" --comment "$BODY"
+      # Close the pull request if the label is present, otherwise mark as successful:
+      - name: "Close pull request or mark as successful"
+        run: |
+          if [[ "${{ contains(github.event.pull_request.labels.*.name, 'autoclose: Contributor Guidelines') }}" == "true" ]]; then
+            gh pr close "$NUMBER" --comment "$BODY"
+          else
+            echo "Check for 'autoclose: Contributor Guidelines' label passed."
+          fi
         env:
           GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           GH_REPO: ${{ github.repository }}
@@ -92,22 +94,22 @@ jobs:
 
   # Define a job which closes a pull request if a contributor failed to follow project conventions:
   project_conventions:
-
     # Define job name:
-    name: 'Check for project conventions label'
-
-    # Only run this job if the pull request has a specific label:
-    if: "${{ github.event.label.name == 'autoclose: Project Conventions' }}"
+    name: "Check for project conventions label"
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
     # Define the sequence of job steps:
     steps:
-
-      # Close the pull request:
-      - name: 'Close pull request'
-        run: gh pr close "$NUMBER" --comment "$BODY"
+      # Close the pull request if the label is present, otherwise mark as successful:
+      - name: "Close pull request or mark as successful"
+        run: |
+          if [[ "${{ contains(github.event.pull_request.labels.*.name, 'autoclose: Project Conventions') }}" == "true" ]]; then
+            gh pr close "$NUMBER" --comment "$BODY"
+          else
+            echo "Check for 'autoclose: Project Conventions' label passed."
+          fi
         env:
           GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           GH_REPO: ${{ github.repository }}
@@ -127,22 +129,22 @@ jobs:
 
   # Define a job which closes a pull request if a pull request is considered spam:
   spam:
-
     # Define job name:
-    name: 'Check for spam label'
-
-    # Only run this job if the pull request has a specific label:
-    if: "${{ github.event.label.name == 'autoclose: Spam' }}"
+    name: "Check for spam label"
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
     # Define the sequence of job steps:
     steps:
-
-      # Close the pull request:
-      - name: 'Close pull request'
-        run: gh pr close "$NUMBER" --comment "$BODY"
+      # Close the pull request if the label is present, otherwise mark as successful:
+      - name: "Close pull request or mark as successful"
+        run: |
+          if [[ "${{ contains(github.event.pull_request.labels.*.name, 'autoclose: Spam') }}" == "true" ]]; then
+            gh pr close "$NUMBER" --comment "$BODY"
+          else
+            echo "Check for 'autoclose: Spam' label passed."
+          fi
         env:
           GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           GH_REPO: ${{ github.repository }}
@@ -152,8 +154,9 @@ jobs:
 
             Thank you again for your interest in stdlib, and we look forward to reviewing your future contributions.
 
-      # Lock pull request conversation:
-      - name: 'Lock conversation'
+      # Lock pull request conversation if the label is present:
+      - name: "Lock conversation"
+        if: contains(github.event.pull_request.labels.*.name, 'autoclose: Spam')
         run: gh pr lock "$NUMBER" --reason spam
         env:
           GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
@@ -162,21 +165,22 @@ jobs:
 
   # Define a job which closes a pull request if a pull request is considered stale:
   stale:
-
     # Define job name:
-    name: 'Check for stale label'
-
-    # Only run this job if the pull request has a specific label:
-    if: "${{ github.event.label.name == 'autoclose: Stale' }}"
+    name: "Check for stale label"
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
     # Define the sequence of job steps:
     steps:
-      # Close the pull request:
-      - name: 'Close pull request'
-        run: gh pr close "$NUMBER" --comment "$BODY"
+      # Close the pull request if the label is present, otherwise mark as successful:
+      - name: "Close pull request or mark as successful"
+        run: |
+          if [[ "${{ contains(github.event.pull_request.labels.*.name, 'autoclose: Stale') }}" == "true" ]]; then
+            gh pr close "$NUMBER" --comment "$BODY"
+          else
+            echo "Check for 'autoclose: Stale' label passed."
+          fi
         env:
           GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           GH_REPO: ${{ github.repository }}
@@ -188,22 +192,22 @@ jobs:
 
   # Define a job which closes a pull request if a PR has an inappropriate Git history:
   git_history:
-
     # Define job name:
-    name: 'Check for Git History label'
-
-    # Only run this job if the pull request has a specific label:
-    if: "${{ github.event.label.name == 'autoclose: Git History' }}"
+    name: "Check for Git History label"
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
     # Define the sequence of job steps:
     steps:
-
-      # Close the pull request:
-      - name: 'Close pull request'
-        run: gh pr close "$NUMBER" --comment "$BODY"
+      # Close the pull request if the label is present, otherwise mark as successful:
+      - name: "Close pull request or mark as successful"
+        run: |
+          if [[ "${{ contains(github.event.pull_request.labels.*.name, 'autoclose: Git History') }}" == "true" ]]; then
+            gh pr close "$NUMBER" --comment "$BODY"
+          else
+            echo "Check for 'autoclose: Git History' label passed."
+          fi
         env:
           GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           GH_REPO: ${{ github.repository }}
@@ -224,22 +228,22 @@ jobs:
 
   # Define a job which closes a pull request if proposed changes duplicate already included changes:
   already_resolved:
-
     # Define job name:
-    name: 'Check for already resolved label'
-
-    # Only run this job if the pull request has a specific label:
-    if: "${{ github.event.label.name == 'autoclose: Already Resolved' }}"
+    name: "Check for already resolved label"
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
     # Define the sequence of job steps:
     steps:
-
-      # Close the pull request:
-      - name: 'Close pull request'
-        run: gh pr close "$NUMBER" --comment "$BODY"
+      # Close the pull request if the label is present, otherwise mark as successful:
+      - name: "Close pull request or mark as successful"
+        run: |
+          if [[ "${{ contains(github.event.pull_request.labels.*.name, 'autoclose: Already Resolved') }}" == "true" ]]; then
+            gh pr close "$NUMBER" --comment "$BODY"
+          else
+            echo "Check for 'autoclose: Already Resolved' label passed."
+          fi
         env:
           GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           GH_REPO: ${{ github.repository }}
