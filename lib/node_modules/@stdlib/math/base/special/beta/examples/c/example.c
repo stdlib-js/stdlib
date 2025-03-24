@@ -28,7 +28,7 @@ int main( void ) {
 	int i;
 	int j;
 	for ( i = 0; i < 5; i++ ) {
-		for ( j = 0; j < 5; j++ ){
+		for ( j = 0; j < 5; j++ ) {
 			out = stdlib_base_beta( x[ i ], y[ j ] );
 			printf ( "x: %lf, y: %lf, out: %lf\n", x[ i ], y[ j ], out );
 		}

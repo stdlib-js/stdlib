@@ -227,7 +227,7 @@ static double polyval_lp( const double x ) {
 *     See HP-15C Advanced Functions Handbook, p.193.
 *
 * @param x    input value
-* @return	  output value
+* @return     output value
 *
 * @example
 * double out = stdlib_base_log1p( 4.0 );
@@ -311,7 +311,7 @@ double stdlib_base_log1p( const double x ) {
 		}
 		// Apply a bit mask (0 00000000000 11111111111111111111) to remove the exponent:
 		hu &= 0x000fffff; // max value => 0x000fffff => 1048575
-		
+
 		// The approximation to sqrt(2) used in thresholds is not critical.  However, the ones used above must give less strict bounds than the one here so that the k==0 case is never reached from here, since here we have committed to using the correction term but don't use it if k==0.
 
 		// Check if u significand is less than sqrt(2) significand => 0x6a09e => 01101010000010011110

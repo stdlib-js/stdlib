@@ -1,0 +1,12 @@
+
+{{alias}}
+    Square root of `2` as a single-precision floating-point number.
+
+    Examples
+    --------
+    > {{alias}}
+    1.4142135381698608
+
+    See Also
+    --------
+

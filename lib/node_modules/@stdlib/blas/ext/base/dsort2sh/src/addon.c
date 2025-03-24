@@ -32,17 +32,17 @@
 * @return       Node-API value
 */
 static napi_value addon( napi_env env, napi_callback_info info ) {
-    STDLIB_NAPI_ARGV( env, info, argv, argc, 6 );
-    STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
-    STDLIB_NAPI_ARGV_DOUBLE( env, order, argv, 1 );
-    STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, order, argv, 2 );
-    STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 3 );
-    STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, Y, N, order, argv, 4 );
-    STDLIB_NAPI_ARGV_INT64( env, strideY, argv, 5 );
+	STDLIB_NAPI_ARGV( env, info, argv, argc, 6 );
+	STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
+	STDLIB_NAPI_ARGV_DOUBLE( env, order, argv, 1 );
+	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, order, argv, 2 );
+	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 3 );
+	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, Y, N, order, argv, 4 );
+	STDLIB_NAPI_ARGV_INT64( env, strideY, argv, 5 );
 
-    c_dsort2sh( N, order, X, strideX, Y, strideY );
+	c_dsort2sh( N, order, X, strideX, Y, strideY );
 
-    return NULL;
+	return NULL;
 }
 
 STDLIB_NAPI_MODULE_EXPORT_FCN( addon )

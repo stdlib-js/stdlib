@@ -85,8 +85,8 @@ double tic() {
 * @return elapsed time in seconds
 */
 double benchmark() {
+	double x[ 100 ];
 	double elapsed;
-	double x;
 	double y;
 	double t;
 	int i;
@@ -97,10 +97,13 @@ double benchmark() {
 	// Define a uniform distribution for generating pseudorandom numbers as "doubles" between a minimum value (inclusive) and a maximum value (exclusive):
 	uniform_real_distribution<> randu( 1.0, 101.0 );
 
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = randu( rng );
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = randu( rng );
-		y = boost::math::acosh( x );
+		y = boost::math::acosh( x[ i % 100 ] );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;

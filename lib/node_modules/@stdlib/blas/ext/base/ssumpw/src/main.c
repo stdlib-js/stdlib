@@ -17,7 +17,6 @@
 */
 
 #include "stdlib/blas/ext/base/ssumpw.h"
-#include "stdlib/math/base/assert/is_nanf.h"
 #include "stdlib/blas/base/shared.h"
 #include "stdlib/strided/base/stride2offset.h"
 
@@ -37,9 +36,9 @@
 * @param strideX  stride length
 * @return         output value
 */
-double API_SUFFIX(stdlib_strided_ssumpw)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX ) {
+float API_SUFFIX(stdlib_strided_ssumpw)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX ) {
 	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
-	API_SUFFIX(stdlib_strided_ssumpw_ndarray)( N, X, strideX, ox );
+	return API_SUFFIX(stdlib_strided_ssumpw_ndarray)( N, X, strideX, ox );
 }
 
 /**
@@ -59,29 +58,26 @@ double API_SUFFIX(stdlib_strided_ssumpw)( const CBLAS_INT N, const float *X, con
 * @param offsetX  starting index
 * @return         output value
 */
-double API_SUFFIX(stdlib_strided_ssumpw_ndarray)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+float API_SUFFIX(stdlib_strided_ssumpw_ndarray)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
 	CBLAS_INT ix;
 	CBLAS_INT M;
 	CBLAS_INT n;
 	CBLAS_INT i;
-	double sum;
-	double s0;
-	double s1;
-	double s2;
-	double s3;
-	double s4;
-	double s5;
-	double s6;
-	double s7;
+	float sum;
+	float s0;
+	float s1;
+	float s2;
+	float s3;
+	float s4;
+	float s5;
+	float s6;
+	float s7;
 
 	if ( N <= 0 ) {
 		return 0.0f;
 	}
 	ix = offsetX;
 	if ( strideX == 0 ) {
-		if ( stdlib_base_is_nanf( X[ ix ] ) ) {
-			return 0.0f;
-		}
 		return N * X[ ix ];
 	}
 	if ( N < 8 ) {

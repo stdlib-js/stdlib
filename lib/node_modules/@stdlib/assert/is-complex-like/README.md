@@ -59,7 +59,7 @@ bool = isComplexLike( x );
 <!-- /.usage -->
 
 <section class="notes">
-    
+
 ## Notes
 
 -   A complex number-like `object` is defined as an `object` having the following properties assigned to numeric values:

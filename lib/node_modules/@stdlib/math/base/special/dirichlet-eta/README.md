@@ -72,7 +72,7 @@ var eta = require( '@stdlib/math/base/special/dirichlet-eta' );
 
 #### eta( s )
 
-Evaluates the [Dirichlet eta][eta-function] function as a function of a real variable `s`.
+Evaluates the Dirichlet eta function for a double-precision floating-point number `s`.
 
 ```javascript
 var v = eta( 0.0 ); // Abel sum of 1-1+1-1+...
@@ -116,6 +116,91 @@ for ( i = 0; i < s.length; i++ ) {
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/dirichlet_eta.h"
+```
+
+#### stdlib_base_eta( s )
+
+Evaluates the Dirichlet eta function for a double-precision floating-point number `s`.
+
+```c
+double y = stdlib_base_eta( 0.0 );
+// returns 0.5
+```
+
+The function accepts the following arguments:
+
+-   **s**: `[in] double` input value.
+
+```c
+double stdlib_base_eta( const double s );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/dirichlet_eta.h"
+#include <stdio.h>
+
+int main( void ) {
+    const double x[] = { 45.0, 90.0, 0.0, 0.0 / 0.0 };
+
+    double y;
+    int i;
+    for ( i = 0; i < 4; i++ ) {
+        y = stdlib_base_eta( x[ i ] );
+        printf( "η(%lf) = %lf\n", x[ i ], y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 

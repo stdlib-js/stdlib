@@ -188,7 +188,7 @@ double stdlib_base_erfc( const double x );
 
 int main( void ) {
     const double x[] = { -10.0, -7.78, -5.56, -3.33, -1.11, 1.11, 3.33, 5.56, 7.78, 10.0 };
-    
+
     double v;
     int i;
     for ( i = 0; i < 10; i++ ) {

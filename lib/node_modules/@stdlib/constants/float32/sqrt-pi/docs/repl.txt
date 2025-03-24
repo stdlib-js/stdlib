@@ -1,0 +1,13 @@
+
+{{alias}}
+    Square root of the mathematical constant `π` as a single-precision
+    floating-point number.
+
+    Examples
+    --------
+    > {{alias}}
+    1.7724539041519165
+
+    See Also
+    --------
+
