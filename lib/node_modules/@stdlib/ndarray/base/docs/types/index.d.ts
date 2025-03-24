@@ -952,6 +952,10 @@ interface Namespace {
 	/**
 	* Fills an input ndarray with a specified value.
 	*
+	* ## Notes
+	*
+	* -   A `value` must be able to safely cast to the input ndarray data type. Scalar values having floating-point data types (both real and complex) are allowed to downcast to a lower precision data type of the same kind (e.g., a scalar double-precision floating-point number can be used to fill a 'float32' input ndarray).
+	*
 	* @param x - input ndarray
 	* @param value - scalar value
 	*
