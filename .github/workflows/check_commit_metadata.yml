@@ -25,14 +25,11 @@ on:
   pull_request_target:
     types:
       - opened
-      - synchronize
 
 # Global permissions:
 permissions:
   # Allow read-only access to the repository contents:
   contents: read
-  # Allow writing to pull requests (e.g., for adding labels/comments):
-  pull-requests: write
 
 # Workflow jobs:
 jobs:
@@ -43,6 +40,9 @@ jobs:
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
+
+    # Temporarily disable the entire workflow:
+    if: false
 
     # Define the sequence of job steps...
     steps:
@@ -63,15 +63,11 @@ jobs:
         # Pin action to full length commit SHA
         uses: stdlib-js/metadata-action@3ccf68f24c51ae23470319e8e5619d539df8212b # v3.0.0
 
-      # Check commit metadata or mark as successful:
-      - name: "Check commit metadata or mark as successful"
+      # Check commit metadata:
+      - name: "Check commit metadata"
         env:
           PR_NUMBER: ${{ github.event.pull_request.number }}
           COMMIT_METADATA: ${{ steps.extract-metadata.outputs.metadata }}
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
         run: |
-          if [[ "${{ contains(github.event.pull_request.labels.*.name, 'check:commit-metadata') }}" == "true" ]]; then
-            . "$GITHUB_WORKSPACE/.github/workflows/scripts/check_commit_metadata" $PR_NUMBER $COMMIT_METADATA
-          else
-            echo "Commit metadata check passed."
-          fi
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/check_commit_metadata" $PR_NUMBER $COMMIT_METADATA

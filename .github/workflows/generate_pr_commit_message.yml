@@ -23,17 +23,15 @@ name: generate_pr_commit_message
 on:
   pull_request_target:
     types:
+      - labeled
       - opened
       - edited
       - synchronize
-      - labeled
 
 # Global permissions:
 permissions:
   # Allow read-only access to the repository contents:
   contents: read
-  # Allow writing to pull requests (e.g., for posting comments):
-  pull-requests: write
 
 # Workflow jobs:
 jobs:
@@ -62,8 +60,8 @@ jobs:
             .mailmap
           sparse-checkout-cone-mode: false
 
-      # Generate commit message or mark as successful:
-      - name: "Generate commit message or mark as successful"
+      # Generate commit message:
+      - name: "Generate commit message"
         id: commit_message
         run: |
           if [[ "${{ contains(github.event.pull_request.labels.*.name, 'Ready to Merge') }}" == "true" ]]; then

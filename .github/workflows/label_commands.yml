@@ -28,13 +28,6 @@ on:
       - opened
       - synchronize
 
-# Global permissions:
-permissions:
-  # Allow writing to pull requests (e.g., for managing labels):
-  pull-requests: write
-  # Allow writing to repository contents (e.g., for branch operations):
-  contents: write
-
 # Workflow jobs:
 jobs:
 
@@ -50,14 +43,14 @@ jobs:
     # Define the job's steps:
     steps:
 
-      - name: 'Remove label or mark as successful'
+      - name: 'Remove label'
         # Pin action to full length commit SHA
         uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
         with:
           github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           script: |
             const labels = ['bot: Merge', 'bot: Rebase', 'bot: Check Files', 'bot: Lint Autofix', 'bot: Update Copyright Years'];
-            const hasLabel = labels.some(label => context.payload.pull_request.labels.some(l => l.name === label));
+            const hasLabel = labels.includes('${{ github.event.label.name }}');
             if (hasLabel) {
               try {
                 await github.rest.issues.removeLabel({
@@ -231,7 +224,7 @@ jobs:
 
     # Define the job's steps:
     steps:
-      - name: 'Remove in-progress label or mark as successful'
+      - name: 'Remove in-progress label'
         # Run the step regardless of the outcome of previous steps:
         if: always()
         # Pin action to full length commit SHA

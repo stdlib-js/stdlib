@@ -23,9 +23,9 @@ name: autoclose
 on:
   pull_request_target:
     types:
+      - labeled
       - opened
       - synchronize
-      - labeled
       - unlabeled
 
 # Workflow jobs:
@@ -40,8 +40,8 @@ jobs:
 
     # Define the sequence of job steps:
     steps:
-      # Close the pull request if the label is present, otherwise mark as successful:
-      - name: "Close pull request or mark as successful"
+      # Close the pull request:
+      - name: "Close pull request"
         run: |
           if [[ "${{ contains(github.event.pull_request.labels.*.name, 'autoclose: EditorConfig') }}" == "true" ]]; then
             gh pr close "$NUMBER" --comment "$BODY"
@@ -71,8 +71,8 @@ jobs:
 
     # Define the sequence of job steps:
     steps:
-      # Close the pull request if the label is present, otherwise mark as successful:
-      - name: "Close pull request or mark as successful"
+      # Close the pull request:
+      - name: "Close pull request"
         run: |
           if [[ "${{ contains(github.event.pull_request.labels.*.name, 'autoclose: Contributor Guidelines') }}" == "true" ]]; then
             gh pr close "$NUMBER" --comment "$BODY"
@@ -102,8 +102,8 @@ jobs:
 
     # Define the sequence of job steps:
     steps:
-      # Close the pull request if the label is present, otherwise mark as successful:
-      - name: "Close pull request or mark as successful"
+      # Close the pull request:
+      - name: "Close pull request"
         run: |
           if [[ "${{ contains(github.event.pull_request.labels.*.name, 'autoclose: Project Conventions') }}" == "true" ]]; then
             gh pr close "$NUMBER" --comment "$BODY"
@@ -137,8 +137,8 @@ jobs:
 
     # Define the sequence of job steps:
     steps:
-      # Close the pull request if the label is present, otherwise mark as successful:
-      - name: "Close pull request or mark as successful"
+      # Close the pull request:
+      - name: "Close pull request"
         run: |
           if [[ "${{ contains(github.event.pull_request.labels.*.name, 'autoclose: Spam') }}" == "true" ]]; then
             gh pr close "$NUMBER" --comment "$BODY"
@@ -154,7 +154,7 @@ jobs:
 
             Thank you again for your interest in stdlib, and we look forward to reviewing your future contributions.
 
-      # Lock pull request conversation if the label is present:
+      # Lock pull request conversation:
       - name: "Lock conversation"
         if: contains(github.event.pull_request.labels.*.name, 'autoclose: Spam')
         run: gh pr lock "$NUMBER" --reason spam
@@ -173,8 +173,8 @@ jobs:
 
     # Define the sequence of job steps:
     steps:
-      # Close the pull request if the label is present, otherwise mark as successful:
-      - name: "Close pull request or mark as successful"
+      # Close the pull request:
+      - name: "Close pull request"
         run: |
           if [[ "${{ contains(github.event.pull_request.labels.*.name, 'autoclose: Stale') }}" == "true" ]]; then
             gh pr close "$NUMBER" --comment "$BODY"
@@ -200,8 +200,8 @@ jobs:
 
     # Define the sequence of job steps:
     steps:
-      # Close the pull request if the label is present, otherwise mark as successful:
-      - name: "Close pull request or mark as successful"
+      # Close the pull request:
+      - name: "Close pull request"
         run: |
           if [[ "${{ contains(github.event.pull_request.labels.*.name, 'autoclose: Git History') }}" == "true" ]]; then
             gh pr close "$NUMBER" --comment "$BODY"
@@ -236,8 +236,8 @@ jobs:
 
     # Define the sequence of job steps:
     steps:
-      # Close the pull request if the label is present, otherwise mark as successful:
-      - name: "Close pull request or mark as successful"
+      # Close the pull request:
+      - name: "Close pull request"
         run: |
           if [[ "${{ contains(github.event.pull_request.labels.*.name, 'autoclose: Already Resolved') }}" == "true" ]]; then
             gh pr close "$NUMBER" --comment "$BODY"
