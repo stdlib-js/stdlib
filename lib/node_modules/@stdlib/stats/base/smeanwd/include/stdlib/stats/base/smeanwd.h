@@ -19,7 +19,7 @@
 #ifndef STDLIB_STATS_BASE_SMEANWD_H
 #define STDLIB_STATS_BASE_SMEANWD_H
 
-#include <stdint.h>
+#include "stdlib/blas/base/shared.h"
 
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
@@ -31,7 +31,12 @@ extern "C" {
 /**
 * Computes the arithmetic mean of a single-precision floating-point strided array using Welford's algorithm.
 */
-float stdlib_strided_smeanwd( const int64_t N, const float *X, const int64_t stride );
+float API_SUFFIX(stdlib_strided_smeanwd)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX );
+
+/**
+* Computes the arithmetic mean of a single-precision floating-point strided array using Welford's algorithm and alternative indexing semantics.
+*/
+float API_SUFFIX(stdlib_strided_smeanwd_ndarray)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
 
 #ifdef __cplusplus
 }

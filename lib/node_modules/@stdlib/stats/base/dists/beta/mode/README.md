@@ -124,7 +124,6 @@ v = mode( 1.0, -1.0 );
 
 ```javascript
 var randu = require( '@stdlib/random/base/randu' );
-var EPS = require( '@stdlib/constants/float64/eps' );
 var mode = require( '@stdlib/stats/base/dists/beta/mode' );
 
 var alpha;
@@ -133,8 +132,8 @@ var v;
 var i;
 
 for ( i = 0; i < 10; i++ ) {
-    alpha = ( randu()*10.0 ) + 1.0 + EPS;
-    beta = ( randu()*10.0 ) + 1.0 + EPS;
+    alpha = ( randu()*10.0 ) + 1.0;
+    beta = ( randu()*10.0 ) + 1.0;
     v = mode( alpha, beta );
     console.log( 'α: %d, β: %d, mode(X;α,β): %d', alpha.toFixed( 4 ), beta.toFixed( 4 ), v.toFixed( 4 ) );
 }
@@ -208,7 +207,6 @@ double stdlib_base_dists_beta_mode( const double alpha, const double beta );
 
 ```c
 #include "stdlib/stats/base/dists/beta/mode.h"
-#include "stdlib/constants/float64/eps.h"
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -223,8 +221,8 @@ int main( void ) {
     double y;
     int i;
     for ( i = 0; i < 25; i++ ) {
-        alpha = random_uniform( 0.0, 10.0 ) + 1.0 + STDLIB_CONSTANT_FLOAT64_EPS;
-        beta = random_uniform( 0.0, 10.0 ) + 1.0 + STDLIB_CONSTANT_FLOAT64_EPS;
+        alpha = random_uniform( 1.0, 11.0 );
+        beta = random_uniform( 1.0, 11.0 );
         y = stdlib_base_dists_beta_mode( alpha, beta );
         printf( "alpha: %lf, beta: %lf, mode(X;alpha,beta): %lf\n", alpha, beta, y );
     }

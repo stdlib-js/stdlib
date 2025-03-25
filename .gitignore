@@ -188,3 +188,7 @@ jsconfig.json
 # Other editor files #
 ######################
 .idea/
+
+# Cursor #
+##########
+.cursorignore

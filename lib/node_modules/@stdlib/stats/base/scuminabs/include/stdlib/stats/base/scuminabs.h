@@ -19,7 +19,7 @@
 #ifndef STDLIB_STATS_BASE_SCUMINABS_H
 #define STDLIB_STATS_BASE_SCUMINABS_H
 
-#include <stdint.h>
+#include "stdlib/blas/base/shared.h"
 
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
@@ -31,7 +31,12 @@ extern "C" {
 /**
 * Computes the cumulative minimum absolute value of single-precision floating-point strided array elements.
 */
-void stdlib_strided_scuminabs( const int64_t N, const float *X, const int64_t strideX, float *Y, const int64_t strideY );
+void API_SUFFIX(stdlib_strided_scuminabs)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, float *Y, const CBLAS_INT strideY );
+
+/**
+* Computes the cumulative minimum absolute value of single-precision floating-point strided array elements using alternative indexing semantics.
+*/
+void API_SUFFIX(stdlib_strided_scuminabs_ndarray)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, float *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY );
 
 #ifdef __cplusplus
 }

@@ -103,15 +103,18 @@ double heaviside( double x ) {
 */
 static double benchmark( void ) {
 	double elapsed;
-	double x;
+	double x[ 100 ];
 	double y;
 	double t;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = ( 100.0*rand_double() ) - 50.0;
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = ( 100.0*rand_double() ) - 50.0;
-		y = heaviside( x );
+		y = heaviside( x[ i%100 ] );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;

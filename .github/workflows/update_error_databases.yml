@@ -54,7 +54,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -64,12 +64,15 @@ jobs:
 
           # Specify whether to download Git-LFS files:
           lfs: false
+
+          # Avoid storing GitHub token in local Git configuration:
+          persist-credentials: false
         timeout-minutes: 10
 
       # Install Node.js:
       - name: 'Install Node.js'
         # Pin action to full length commit SHA
-        uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af # v4.1.0
+        uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
         with:
           node-version: '20' # 'lts/*'
         timeout-minutes: 5
@@ -156,14 +159,14 @@ jobs:
         if: steps.check_changes.outputs.has_changes == 'true'
         id: cpr
         # Pin action to full length commit SHA
-        uses: peter-evans/create-pull-request@5e914681df9dc83aa4e4905692ca88beb2f9e91f # v7.0.5
+        uses: peter-evans/create-pull-request@67ccf781d68cd99b580ae25a5c18a1cc84ffff1f # v7.0.6
         with:
           title: 'feat: update error databases'
           body-path: /tmp/body.md
           commit-message: 'feat: update error databases'
           committer: 'stdlib-bot <82920195+stdlib-bot@users.noreply.github.com>'
           signoff: true
-          token: ${{ secrets.PULL_REQUEST_TOKEN }}
+          token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           labels: |
             documentation
             automated-pr

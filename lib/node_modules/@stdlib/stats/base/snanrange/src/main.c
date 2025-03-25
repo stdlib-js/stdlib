@@ -35,7 +35,7 @@ float API_SUFFIX(stdlib_strided_snanrange)( const CBLAS_INT N, const float *X, c
 }
 
 /**
-* Computes the range of a single-precision floating-point strided array, ignoring `NaN` values.
+* Computes the range of a single-precision floating-point strided array, ignoring `NaN` values and using alternative indexing semantics.
 *
 * @param N        number of indexed elements
 * @param X        input array

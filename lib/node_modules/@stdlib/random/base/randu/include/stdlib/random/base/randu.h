@@ -19,9 +19,8 @@
 #ifndef STDLIB_RANDOM_BASE_RANDU_H
 #define STDLIB_RANDOM_BASE_RANDU_H
 
-// Note: keep project includes in alphabetical order...
+#include "stdlib/random/base/shared.h"
 #include <stdarg.h>
-#include "stdlib/random/base.h"
 
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.

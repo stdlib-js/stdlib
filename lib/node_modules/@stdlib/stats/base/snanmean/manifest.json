@@ -24,6 +24,44 @@
   ],
   "confs": [
     {
+      "task": "build",
+      "src": [
+        "./src/snanmean.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/stats/base/snanmeanpn",
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-float32array",
+        "@stdlib/napi/create-double"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/snanmean.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/stats/base/snanmeanpn"
+      ]
+    },
+    {
+      "task": "examples",
       "src": [
         "./src/snanmean.c"
       ],

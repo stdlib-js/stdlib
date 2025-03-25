@@ -69,17 +69,17 @@ trycatchAsync( x, -1.0, done );
 
 The function `x` is provided a single argument:
 
--   `clbk`: callback to invoke upon function completion
+-   `clbk`: callback to invoke upon function completion.
 
 The callback accepts two arguments:
 
--   `error`: error object
--   `result`: function result
+-   `error`: error object.
+-   `result`: function result.
 
 The `done` callback is invoked upon function completion and is provided two arguments:
 
--   `error`: error object
--   `result`: either the result of `x` or the provided value `y`
+-   `error`: error object.
+-   `result`: either the result of `x` or the provided value `y`.
 
 If the function `x` does not return a truthy `error` argument, the `error` argument provided to the `done` callback is `null`. If `x` does return a truthy `error` argument, the `done` callback is invoked with both the `error` and the provided value `y`.
 

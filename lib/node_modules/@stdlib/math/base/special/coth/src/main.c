@@ -62,7 +62,7 @@
 *
 * @example
 * double out = stdlib_base_coth( 0.0 );
-* // returns INFINITY
+* // returns +Infinity
 */
 
 double stdlib_base_coth( const double x ) {

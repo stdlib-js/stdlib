@@ -19,7 +19,7 @@
         Input array.
 
     strideX: integer
-        Stride Length.
+        Stride length.
 
     Returns
     -------
@@ -63,7 +63,7 @@
         Input array.
 
     strideX: integer
-        Stride Length.
+        Stride length.
 
     offsetX: integer
         Starting index.
