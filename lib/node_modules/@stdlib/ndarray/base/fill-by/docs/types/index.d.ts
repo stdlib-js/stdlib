@@ -151,7 +151,7 @@ declare function fillBy<T = unknown, U = unknown, V extends complexndarray = com
 * console.log( x.data );
 * // => <Float64Array>[ 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ]
 */
-declare function fillBy<T = unknown, U = unknown, V extends typedndarray<T> = typedndarray<unknown>, ThisArg = unknown>( x: V, fcn: Callback<T, U, V, ThisArg>, thisArg?: ThisParameterType<Callback<T, U, V, ThisArg>> ): void;
+declare function fillBy<T = unknown, U = unknown, V extends typedndarray<T> = typedndarray<T>, ThisArg = unknown>( x: V, fcn: Callback<T, U, V, ThisArg>, thisArg?: ThisParameterType<Callback<T, U, V, ThisArg>> ): void;
 
 
 // EXPORTS //

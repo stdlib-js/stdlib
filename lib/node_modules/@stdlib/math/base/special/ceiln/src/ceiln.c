@@ -19,6 +19,7 @@
 #include "stdlib/math/base/special/ceiln.h"
 #include "stdlib/math/base/special/ceil.h"
 #include "stdlib/math/base/special/abs.h"
+#include "stdlib/math/base/special/pow.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/assert/is_infinite.h"
 #include "stdlib/constants/float64/max_base10_exponent.h"
@@ -27,7 +28,6 @@
 #include "stdlib/constants/float64/max_safe_integer.h"
 #include "stdlib/constants/float64/pinf.h"
 #include <stdint.h>
-#include <math.h>
 
 
 // VARIABLES //
@@ -90,14 +90,14 @@ double stdlib_base_ceiln( const double x, const int32_t n ) {
 	}
 	// If we overflow, return `x`, as the number of digits to the right of the decimal is too small (i.e., `x` is too large / lacks sufficient fractional precision) for there to be any effect when rounding...
 	if ( n < STDLIB_CONSTANT_FLOAT64_MIN_BASE10_EXPONENT ) {
-		s = pow( 10.0, -( n + STDLIB_CONSTANT_FLOAT64_MAX_BASE10_EXPONENT ) ); // TODO: replace use of `pow` once have stdlib equivalent
+		s = stdlib_base_pow( 10.0, -( n + STDLIB_CONSTANT_FLOAT64_MAX_BASE10_EXPONENT ) );
 		y = ( x * HUGE_VALUE ) * s; // order of operation matters!
 		if ( stdlib_base_is_infinite( y ) ) {
 			return x;
 		}
 		return ( stdlib_base_ceil( y ) / HUGE_VALUE ) / s;
 	}
-	s = pow( 10.0, -n ); // TODO: replace use of `pow` once have stdlib equivalent
+	s = stdlib_base_pow( 10.0, -n );
 	y = x * s;
 	if ( stdlib_base_is_infinite( y ) ) {
 		return x;
