@@ -130,10 +130,10 @@ double out = stdlib_base_factorial2( 3 );
 
 The function accepts the following arguments:
 
--   **x**: `[in] int32_t` input value.
+-   **n**: `[in] int32_t` input value.
 
 ```c
-double stdlib_base_factorial2( const int32_t x );
+double stdlib_base_factorial2( const int32_t n );
 ```
 
 </section>
