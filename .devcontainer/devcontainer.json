@@ -10,9 +10,7 @@
   "postCreateCommand": "./.devcontainer/post-create",
   "customizations": {
     "codespaces": {
-      "openFiles": [
-        "README.md"
-      ]
+      "openFiles": ["README.md"]
     },
     "vscode": {
       "settings": {

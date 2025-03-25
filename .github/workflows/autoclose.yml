@@ -27,12 +27,10 @@ on:
 
 # Workflow jobs:
 jobs:
-
   # Define a job which closes a pull request if a contributor failed to setup EditorConfig:
   editorconfig:
-
     # Define job name:
-    name: 'Check for EditorConfig label'
+    name: "Check for EditorConfig label"
 
     # Only run this job if the pull request has a specific label:
     if: "${{ github.event.label.name == 'autoclose: EditorConfig' }}"
@@ -42,9 +40,8 @@ jobs:
 
     # Define the sequence of job steps:
     steps:
-
       # Close the pull request:
-      - name: 'Close pull request'
+      - name: "Close pull request"
         run: gh pr close "$NUMBER" --comment "$BODY"
         env:
           GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
@@ -61,9 +58,8 @@ jobs:
 
   # Define a job which closes a pull request if a contributor failed to follow contributing guidelines:
   contributor_guidelines:
-
     # Define job name:
-    name: 'Check for contributor guidelines label'
+    name: "Check for contributor guidelines label"
 
     # Only run this job if the pull request has a specific label:
     if: "${{ github.event.label.name == 'autoclose: Contributor Guidelines' }}"
@@ -73,9 +69,8 @@ jobs:
 
     # Define the sequence of job steps:
     steps:
-
       # Close the pull request:
-      - name: 'Close pull request'
+      - name: "Close pull request"
         run: gh pr close "$NUMBER" --comment "$BODY"
         env:
           GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
@@ -92,9 +87,8 @@ jobs:
 
   # Define a job which closes a pull request if a contributor failed to follow project conventions:
   project_conventions:
-
     # Define job name:
-    name: 'Check for project conventions label'
+    name: "Check for project conventions label"
 
     # Only run this job if the pull request has a specific label:
     if: "${{ github.event.label.name == 'autoclose: Project Conventions' }}"
@@ -104,9 +98,8 @@ jobs:
 
     # Define the sequence of job steps:
     steps:
-
       # Close the pull request:
-      - name: 'Close pull request'
+      - name: "Close pull request"
         run: gh pr close "$NUMBER" --comment "$BODY"
         env:
           GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
@@ -127,9 +120,8 @@ jobs:
 
   # Define a job which closes a pull request if a pull request is considered spam:
   spam:
-
     # Define job name:
-    name: 'Check for spam label'
+    name: "Check for spam label"
 
     # Only run this job if the pull request has a specific label:
     if: "${{ github.event.label.name == 'autoclose: Spam' }}"
@@ -139,9 +131,8 @@ jobs:
 
     # Define the sequence of job steps:
     steps:
-
       # Close the pull request:
-      - name: 'Close pull request'
+      - name: "Close pull request"
         run: gh pr close "$NUMBER" --comment "$BODY"
         env:
           GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
@@ -153,7 +144,7 @@ jobs:
             Thank you again for your interest in stdlib, and we look forward to reviewing your future contributions.
 
       # Lock pull request conversation:
-      - name: 'Lock conversation'
+      - name: "Lock conversation"
         run: gh pr lock "$NUMBER" --reason spam
         env:
           GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
@@ -162,9 +153,8 @@ jobs:
 
   # Define a job which closes a pull request if a pull request is considered stale:
   stale:
-
     # Define job name:
-    name: 'Check for stale label'
+    name: "Check for stale label"
 
     # Only run this job if the pull request has a specific label:
     if: "${{ github.event.label.name == 'autoclose: Stale' }}"
@@ -175,7 +165,7 @@ jobs:
     # Define the sequence of job steps:
     steps:
       # Close the pull request:
-      - name: 'Close pull request'
+      - name: "Close pull request"
         run: gh pr close "$NUMBER" --comment "$BODY"
         env:
           GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
@@ -188,9 +178,8 @@ jobs:
 
   # Define a job which closes a pull request if a PR has an inappropriate Git history:
   git_history:
-
     # Define job name:
-    name: 'Check for Git History label'
+    name: "Check for Git History label"
 
     # Only run this job if the pull request has a specific label:
     if: "${{ github.event.label.name == 'autoclose: Git History' }}"
@@ -200,9 +189,8 @@ jobs:
 
     # Define the sequence of job steps:
     steps:
-
       # Close the pull request:
-      - name: 'Close pull request'
+      - name: "Close pull request"
         run: gh pr close "$NUMBER" --comment "$BODY"
         env:
           GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
@@ -224,9 +212,8 @@ jobs:
 
   # Define a job which closes a pull request if proposed changes duplicate already included changes:
   already_resolved:
-
     # Define job name:
-    name: 'Check for already resolved label'
+    name: "Check for already resolved label"
 
     # Only run this job if the pull request has a specific label:
     if: "${{ github.event.label.name == 'autoclose: Already Resolved' }}"
@@ -236,9 +223,8 @@ jobs:
 
     # Define the sequence of job steps:
     steps:
-
       # Close the pull request:
-      - name: 'Close pull request'
+      - name: "Close pull request"
         run: gh pr close "$NUMBER" --comment "$BODY"
         env:
           GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
