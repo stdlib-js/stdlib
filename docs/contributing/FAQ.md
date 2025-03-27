@@ -46,7 +46,7 @@ limitations under the License.
 
 ## Introduction
 
-We appreciate your interest in contributing to stdlib! Below, we’ve compiled answers to some frequently asked questions (FAQs) from first-time contributors. If you’re new to the project or encounter any challenges, this guide is a great place to start.
+We appreciate your interest in contributing to stdlib! Below, we've compiled answers to some frequently asked questions (FAQs) from first-time contributors. If you're new to the project or encounter any challenges, this guide is a great place to start.
 
 <a name="first-time-contributor"></a>
 

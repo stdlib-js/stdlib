@@ -86,7 +86,7 @@ git checkout -b feature/my-new-feature
 
 ## Changes
 
-Now comes the fun part of actually writing code! After making your changes, it's always good to check what’s modified:
+Now comes the fun part of actually writing code! After making your changes, it's always good to check what's modified:
 
 <!-- run-disable -->
 
@@ -157,7 +157,7 @@ Once your branch is ready, you need to push your **local** changes to your forke
 git push
 ```
 
-If this is the first time you’re pushing the branch, [Git][git] may prompt you to set an [upstream][git-remotes] branch. You can do this manually by running:
+If this is the first time you're pushing the branch, [Git][git] may prompt you to set an [upstream][git-remotes] branch. You can do this manually by running:
 
 <!-- run-disable -->
 
@@ -307,7 +307,7 @@ Use **Rebase** if:
 
 Use **Merge** if:
 
--   You want a safer approach that doesn’t rewrite history.
+-   You want a safer approach that doesn't rewrite history.
 -   You are unsure about rebase or are collaborating on the branch.
 
 > **When in doubt, use merge.** It is safer and avoids potential conflicts caused by rewriting history. If you use the GitHub UI to update your branches, it also performs a merge.
