@@ -483,6 +483,11 @@ Congratulations! You now have all the essential Git commands to navigate your wo
 
 To get started with your first contribution, check out the [Contributing Guide][stdlib-contributing] and [Development Guide][stdlib-development]. If you have any further questions, feel free to join our [Gitter][stdlib-gitter] channel to connect with the community and get support.
 
+## Other Links
+
+-   [GitHub Education Cheat Sheet][github-edu]
+-   [GitHub Training Cheat Sheet][github-training]
+
 <section class="links">
 
 [stdlib-contributing]: https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md
@@ -500,6 +505,10 @@ To get started with your first contribution, check out the [Contributing Guide][
 [github-fork]: https://help.github.com/articles/fork-a-repo/
 
 [github-style-guide]: https://github.com/stdlib-js/stdlib/tree/develop/docs/style-guides/git#git-commit-messages
+
+[github-edu]: https://education.github.com/git-cheat-sheet-education.pdf
+
+[github-training]: https://training.github.com/downloads/github-git-cheat-sheet.pdf
 
 </section>
 
