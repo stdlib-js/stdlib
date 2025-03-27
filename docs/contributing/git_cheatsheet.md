@@ -33,8 +33,8 @@ Before you start using [Git][git], it's important to introduce yourself. This st
 <!-- run-disable -->
 
 ```bash
-git config --global user.name "Your Name"
-git config --global user.email "your.email@example.com"
+$ git config --global user.name "Your Name"
+$ git config --global user.email "your.email@example.com"
 ```
 
 > You only need to do this once.
@@ -44,8 +44,8 @@ To confirm that your identity is set correctly, run:
 <!-- run-disable -->
 
 ```bash
-git config --global user.name
-git config --global user.email
+$ git config --global user.name
+$ git config --global user.email
 ```
 
 This should display the name and email you configured. If there's a mistake, simply re-run the configuration commands with the correct details.
@@ -59,8 +59,8 @@ Once you've forked the repository, clone your fork onto your local machine:
 <!-- run-disable -->
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/stdlib.git
-cd stdlib
+$ git clone https://github.com/YOUR_GITHUB_USERNAME/stdlib.git
+$ cd stdlib
 ```
 
 Since the official `stdlib` repository keeps updating, link it as the [upstream][git-remotes] remote to fetch the latest changes:
@@ -68,8 +68,8 @@ Since the official `stdlib` repository keeps updating, link it as the [upstream]
 <!-- run-disable -->
 
 ```bash
-git remote add upstream https://github.com/stdlib-js/stdlib.git
-git fetch upstream
+$ git remote add upstream https://github.com/stdlib-js/stdlib.git
+$ git fetch upstream
 ```
 
 > In [Git][git], a [remote][github-remote] is a reference to a repository. Your fork is called `origin`, while the official `stdlib` repository is referred to as `upstream`. Adding an [upstream][git-remotes] remote allows you to consistently fetch the latest updates from the original repository and incorporate them into your work.
@@ -81,17 +81,17 @@ In `stdlib`, the `develop` branch is the primary branch for development. Instead
 <!-- run-disable -->
 
 ```bash
-git checkout -b feature/my-new-feature
+$ git checkout -b feature/my-new-feature
 ```
 
 ## Changes
 
-Now comes the fun part of actually writing code! After making your changes, it's always good to check what’s modified:
+Now comes the fun part of actually writing code! After making your changes, it's always good to check what's modified:
 
 <!-- run-disable -->
 
 ```bash
-git status
+$ git status
 ```
 
 Once you're happy with your changes, add them to the staging area for a final confirmation:
@@ -99,8 +99,8 @@ Once you're happy with your changes, add them to the staging area for a final co
 <!-- run-disable -->
 
 ```bash
-git add <file1> <file2>  # Add specific files
-git add .                # Add all changes
+$ git add <file1> <file2>  # Add specific files
+$ git add .                # Add all changes
 ```
 
 Then, commit with a meaningful message:
@@ -108,7 +108,7 @@ Then, commit with a meaningful message:
 <!-- run-disable -->
 
 ```bash
-git commit -m "feat: add support for new function"
+$ git commit -m "feat: add support for new function"
 ```
 
 For **multi-line** commit messages (like when you want to include a longer description), you can use:
@@ -116,12 +116,12 @@ For **multi-line** commit messages (like when you want to include a longer descr
 <!-- run-disable -->
 
 ```bash
-git commit
+$ git commit
 ```
 
 This opens an editor where you can write something like:
 
-```bash
+```plaintext
 feat: add support for new function
 
 This adds the initial version of <function_name>, with support for <brief explanation>.
@@ -140,7 +140,7 @@ To make this even easier, you can also use:
 <!-- run-disable -->
 
 ```bash
-make commit
+$ make commit
 ```
 
 This gives you an interactive prompt to help you craft a properly formatted commit message. Super handy!
@@ -154,15 +154,15 @@ Once your branch is ready, you need to push your **local** changes to your forke
 <!-- run-disable -->
 
 ```bash
-git push
+$ git push
 ```
 
-If this is the first time you’re pushing the branch, [Git][git] may prompt you to set an [upstream][git-remotes] branch. You can do this manually by running:
+If this is the first time you're pushing the branch, [Git][git] may prompt you to set an [upstream][git-remotes] branch. You can do this manually by running:
 
 <!-- run-disable -->
 
 ```bash
-git push --set-upstream origin feature/my-new-feature
+$ git push --set-upstream origin feature/my-new-feature
 ```
 
 > **Note:** This is a **one-time setup** for this branch. After this, you can simply use `git push` for future updates.
@@ -188,8 +188,8 @@ To update your local `develop` branch while making sure there are no unwanted ch
 <!-- run-disable -->
 
 ```bash
-git checkout develop
-git pull --ff-only upstream develop
+$ git checkout develop
+$ git pull --ff-only upstream develop
 ```
 
 > **Why use `--ff-only`?** This ensures your branch updates **only if no merge commits are needed**. If your `develop` branch has unexpected changes, this command will fail, alerting you that something is wrong.
@@ -199,8 +199,8 @@ If the above pull fails because you accidentally made changes to `develop`, you 
 <!-- run-disable -->
 
 ```bash
-git checkout develop
-git reset --hard upstream/develop
+$ git checkout develop
+$ git reset --hard upstream/develop
 ```
 
 > **Warning:** This will delete any changes you made to `develop`. Make sure you don't have important work in this branch before running this command.
@@ -210,7 +210,7 @@ After updating `develop`, you can push it to your fork to keep everything in syn
 <!-- run-disable -->
 
 ```bash
-git push origin develop
+$ git push origin develop
 ```
 
 ## Integration
@@ -226,8 +226,8 @@ Rebasing **moves** your commits on top of the latest `develop`, as if you had st
 <!-- run-disable -->
 
 ```bash
-git checkout feature/my-branch
-git rebase develop
+$ git checkout feature/my-branch
+$ git rebase develop
 ```
 
 If there are conflicts, resolve them and continue:
@@ -235,8 +235,8 @@ If there are conflicts, resolve them and continue:
 <!-- run-disable -->
 
 ```bash
-git add <resolved-file>
-git rebase --continue
+$ git add <resolved-file>
+$ git rebase --continue
 ```
 
 #### Example: How Rebase Works
@@ -266,8 +266,8 @@ Merging **combines** your feature branch with `develop`, keeping both histories 
 <!-- run-disable -->
 
 ```bash
-git checkout feature/my-branch
-git merge develop
+$ git checkout feature/my-branch
+$ git merge develop
 ```
 
 If there are conflicts, resolve them, then commit the merge. Finally, push the updated branch:
@@ -275,7 +275,7 @@ If there are conflicts, resolve them, then commit the merge. Finally, push the u
 <!-- run-disable -->
 
 ```bash
-git push origin feature/my-branch
+$ git push origin feature/my-branch
 ```
 
 > Alternatively, if you have a running PR and want to update that branch directly to the `stdlib` develop branch, comment `/stdlib merge` on the PR, wait for the bot to merge your branch automatically, and then run `git pull`.
@@ -307,7 +307,7 @@ Use **Rebase** if:
 
 Use **Merge** if:
 
--   You want a safer approach that doesn’t rewrite history.
+-   You want a safer approach that doesn't rewrite history.
 -   You are unsure about rebase or are collaborating on the branch.
 
 > **When in doubt, use merge.** It is safer and avoids potential conflicts caused by rewriting history. If you use the GitHub UI to update your branches, it also performs a merge.
@@ -354,7 +354,7 @@ We will consider the conflict in the `isEven` function above. Let's say you want
     <!-- run-disable -->
 
     ```bash
-    git add <file>
+    $ git add <file>
     ```
 
 -   Continue the rebase or merge:
@@ -362,8 +362,8 @@ We will consider the conflict in the `isEven` function above. Let's say you want
     <!-- run-disable -->
 
     ```bash
-    git rebase --continue # If rebasing
-    git merge --continue  # If merging
+    $ git rebase --continue # If rebasing
+    $ git merge --continue  # If merging
     ```
 
 > **Tip:** Many editors like VS Code highlight conflicts and even give you buttons to accept incoming or current changes. This can make resolving conflicts much easier.
@@ -383,9 +383,9 @@ Assuming you've already cloned the repository and set up your identity:
     <!-- run-disable -->
 
     ```bash
-    git checkout develop
-    git pull --ff-only upstream develop
-    git push origin develop # Optional: Update your fork
+    $ git checkout develop
+    $ git pull --ff-only upstream develop
+    $ git push origin develop # Optional: Update your fork
     ```
 
 2.  **Create a new branch**:
@@ -393,7 +393,7 @@ Assuming you've already cloned the repository and set up your identity:
     <!-- run-disable -->
 
     ```bash
-    git checkout -b feature/is-even
+    $ git checkout -b feature/is-even
     ```
 
 3.  **Make changes**: This could involve adding the new function, writing tests, benchmarks, examples, updating documentation, etc.
@@ -403,9 +403,9 @@ Assuming you've already cloned the repository and set up your identity:
     <!-- run-disable -->
 
     ```bash
-    git status # Optional: Check what's modified
-    git add .
-    git commit -m "feat: add isEven function"
+    $ git status # Optional: Check what's modified
+    $ git add .
+    $ git commit -m "feat: add isEven function"
     ```
 
     If you prefer a multi-line commit message, use:
@@ -413,7 +413,7 @@ Assuming you've already cloned the repository and set up your identity:
     <!-- run-disable -->
 
     ```bash
-    git commit
+    $ git commit
     ```
 
     Then write your message like:
@@ -431,7 +431,7 @@ Assuming you've already cloned the repository and set up your identity:
     <!-- run-disable -->
 
     ```bash
-    git push --set-upstream origin feature/is-even
+    $ git push --set-upstream origin feature/is-even
     ```
 
     > **Note:** As mentioned earlier, this is a one-time setup for this branch. After this, you can simply use `git push` for future updates.
@@ -443,7 +443,7 @@ Assuming you've already cloned the repository and set up your identity:
     <!-- run-disable -->
 
     ```bash
-    git pull origin feature/is-even # git pull also works
+    $ git pull origin feature/is-even # git pull also works
     ```
 
     Additionally, if new changes are added to the [upstream][git-remotes] `develop` branch, you can integrate them into your feature branch using rebase or merge:
@@ -451,10 +451,10 @@ Assuming you've already cloned the repository and set up your identity:
     <!-- run-disable -->
 
     ```bash
-    git checkout develop
-    git pull --ff-only upstream develop # Update local develop first
-    git checkout feature/is-even
-    git rebase develop # or git merge develop
+    $ git checkout develop
+    $ git pull --ff-only upstream develop # Update local develop first
+    $ git checkout feature/is-even
+    $ git rebase develop # or git merge develop
     ```
 
     Resolve any conflicts with the steps mentioned earlier, then continue the rebase:
@@ -462,7 +462,7 @@ Assuming you've already cloned the repository and set up your identity:
     <!-- run-disable -->
 
     ```bash
-    git rebase --continue
+    $ git rebase --continue
     ```
 
     Finally, push your changes:
@@ -470,7 +470,7 @@ Assuming you've already cloned the repository and set up your identity:
     <!-- run-disable -->
 
     ```bash
-    git push --force # Force push after rebasing
+    $ git push --force # Force push after rebasing
     ```
 
     > **Note:** Force pushing is required after rebasing because it rewrites history. This is safe as long as you're the only one working on the branch. If you want to avoid force pushing, use merge instead of rebase.
