@@ -28,7 +28,7 @@
     {
       "task": "build",
       "src": [
-        "./src/floorn.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -53,7 +53,7 @@
     {
       "task": "benchmark",
       "src": [
-        "./src/floorn.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -77,7 +77,7 @@
     {
       "task": "examples",
       "src": [
-        "./src/floorn.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"

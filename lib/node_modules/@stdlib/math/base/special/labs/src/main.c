@@ -39,6 +39,7 @@
 * // returns 5
 */
 int32_t stdlib_base_labs( const int32_t x ) {
+	// cppcheck-suppress shiftTooManyBitsSigned
 	int32_t mask = x >> 31;
 	return (x ^ mask) - mask;
 }
