@@ -297,7 +297,7 @@ To see other available bot commands, comment `/stdlib help` on your PR.
 
 When you open a pull request or push changes to your feature branch, GitHub compares your feature branch against your `develop` branch and shows all the differences. If your feature branch contains outdated or extra changes, they will appear in the PR, even if they are unrelated to your work.
 
-To fix this, ensure that your feature branch is based on the latest `develop` branch. You can do this by rebasing/merging your feature branch with the `develop` branch:
+To fix this, ensure that your feature branch is based on your latest `develop` branch. You can do this by rebasing/merging your feature branch with the `develop` branch:
 
 ```bash
 $ git checkout develop
