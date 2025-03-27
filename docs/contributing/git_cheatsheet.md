@@ -203,7 +203,7 @@ git checkout develop
 git reset --hard upstream/develop
 ```
 
-> **Warning:** This will delete any changes you made to `develop`. Make sure you don’t have important work in this branch before running this command.
+> **Warning:** This will delete any changes you made to `develop`. Make sure you don't have important work in this branch before running this command.
 
 After updating `develop`, you can push it to your fork to keep everything in sync:
 
