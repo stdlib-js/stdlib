@@ -381,6 +381,7 @@ For more `make` commands, refer to the [documentation][benchmark] on running ben
 ## Other Links:
 
 - [Style Guide][style-guide]
+- [Git Cheatsheet][git-guide]
 - [Other make commands][make-commands]
 
 <section class="links">
