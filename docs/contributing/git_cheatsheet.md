@@ -72,7 +72,7 @@ git remote add upstream https://github.com/stdlib-js/stdlib.git
 git fetch upstream
 ```
 
-> In [Git][git], a [remote][github-remote] is a reference to a repository. Your fork is called `origin`, while the official `stdlib` repository is referred to as `upstream`. Adding an upstream remote allows you to consistently fetch the latest updates from the original repository and incorporate them into your work.
+> In [Git][git], a [remote][github-remote] is a reference to a repository. Your fork is called `origin`, while the official `stdlib` repository is referred to as `upstream`. Adding an [upstream][git-remotes] remote allows you to consistently fetch the latest updates from the original repository and incorporate them into your work.
 
 ## Branching
 
@@ -111,6 +111,40 @@ Then, commit with a meaningful message:
 git commit -m "feat: add support for new function"
 ```
 
+For **multi-line** commit messages (like when you want to include a longer description), you can use:
+
+<!-- run-disable -->
+
+```bash
+git commit
+```
+
+This opens an editor where you can write something like:
+
+```bash
+feat: add support for new function
+
+This adds the initial version of <function_name>, with support for <brief explanation>.
+```
+
+**After writing your message:**
+
+-   **Vim**: press `Esc`, type `:wq`, then press `Enter`
+-   **Nano**: `Ctrl+O`, then `Enter`, then `Ctrl+X`
+-   **VS Code**: save and close the editor
+
+> Multi-line commits are especially useful for giving extra context on why the change was made, or summarizing multiple related changes.
+
+To make this even easier, you can also use:
+
+<!-- run-disable -->
+
+```bash
+make commit
+```
+
+This gives you an interactive prompt to help you craft a properly formatted commit message. Super handy!
+
 Try to keep your commit messages clear and concise! Adhering to stdlib's [Git Style Guide][github-style-guide] ensures a well-structured and understandable commit history.
 
 ## Pushing
@@ -123,7 +157,7 @@ Once your branch is ready, you need to push your **local** changes to your forke
 git push
 ```
 
-If this is the first time you’re pushing the branch, [Git][git] may prompt you to set an upstream branch. You can do this manually by running:
+If this is the first time you’re pushing the branch, [Git][git] may prompt you to set an [upstream][git-remotes] branch. You can do this manually by running:
 
 <!-- run-disable -->
 
@@ -158,8 +192,7 @@ git checkout develop
 git pull --ff-only upstream develop
 ```
 
-> **Why use `--ff-only`?**
-> This ensures your branch updates **only if no merge commits are needed**. If your `develop` branch has unexpected changes, this command will fail, alerting you that something is wrong.
+> **Why use `--ff-only`?** This ensures your branch updates **only if no merge commits are needed**. If your `develop` branch has unexpected changes, this command will fail, alerting you that something is wrong.
 
 If the above pull fails because you accidentally made changes to `develop`, you can **reset** it to match the official repository:
 
@@ -278,6 +311,171 @@ Use **Merge** if:
 -   You are unsure about rebase or are collaborating on the branch.
 
 > **When in doubt, use merge.** It is safer and avoids potential conflicts caused by rewriting history. If you use the GitHub UI to update your branches, it also performs a merge.
+
+## Merge Conflicts
+
+Merge conflicts occur when Git can't automatically resolve differences between two commits (e.g., your branch and `develop`). This usually happens when you rebase or merge branches with conflicting changes. This is how a conflict looks in a file:
+
+```plaintext
+function isEven(x) {
+<<<<<<< HEAD
+    return ( x % 2 ) === 0;
+=======
+    return ( x & 1 ) === 0;
+>>>>>>> feature/bitwise-check
+}
+```
+
+> Note: The `HEAD` section represents your current branch (`feature/bitwise-check`), while the `incoming` section represents the branch you're merging or rebasing (e.g., `develop`).
+
+To resolve a merge conflict:
+
+-   Open the file in your editor.
+-   Choose which changes to keep.
+-   Remove the conflict markers (`<<<<<<<`, `=======`, `>>>>>>>`).
+-   Save the file.
+-   Add the file to the staging area.
+-   Continue the rebase or merge process.
+
+### Example
+
+We will consider the conflict in the `isEven` function above. Let's say you want to keep your changes and use the bitwise AND operator (`&`) instead of the modulo operator (`%`). Here's how you can resolve the conflict:
+
+-   Modify the file to look like this:
+
+    ```plaintext
+    function isEven(x) {
+        return ( x & 1 ) === 0;
+    }
+    ```
+
+-   Add the file to the staging area:
+
+    <!-- run-disable -->
+
+    ```bash
+    git add <file>
+    ```
+
+-   Continue the rebase or merge:
+
+    <!-- run-disable -->
+
+    ```bash
+    git rebase --continue # If rebasing
+    git merge --continue  # If merging
+    ```
+
+> **Tip:** Many editors like VS Code highlight conflicts and even give you buttons to accept incoming or current changes. This can make resolving conflicts much easier.
+
+Merge conflicts can be annoying, but they’re a natural part of working with others. Take your time, and don’t hesitate to ask for help if you're stuck.
+
+## Example Workflow
+
+Now that you have all the essential commands, let's put them together in a typical workflow:
+
+**Goal**: Add a new function `isEven` to `stdlib`.
+
+Assuming you've already cloned the repository and set up your identity:
+
+1.  **Sync `develop`**:
+
+    <!-- run-disable -->
+
+    ```bash
+    git checkout develop
+    git pull --ff-only upstream develop
+    git push origin develop # Optional: Update your fork
+    ```
+
+2.  **Create a new branch**:
+
+    <!-- run-disable -->
+
+    ```bash
+    git checkout -b feature/is-even
+    ```
+
+3.  **Make changes**: This could involve adding the new function, writing tests, benchmarks, examples, updating documentation, etc.
+
+4.  **Commit your changes**:
+
+    <!-- run-disable -->
+
+    ```bash
+    git status # Optional: Check what's modified
+    git add .
+    git commit -m "feat: add isEven function"
+    ```
+
+    If you prefer a multi-line commit message, use:
+
+    <!-- run-disable -->
+
+    ```bash
+    git commit
+    ```
+
+    Then write your message like:
+
+    ```plaintext
+    feat: add isEven function
+
+    This adds the complete implementation of the isEven function, along with benchmarks, examples, tests, and documentation. The implementation is based on the modulo operator.
+    ```
+
+    Save and close the editor. As mentioned earlier, you can also use `make commit` for an interactive prompt.
+
+5.  **Push your branch**:
+
+    <!-- run-disable -->
+
+    ```bash
+    git push --set-upstream origin feature/is-even
+    ```
+
+    > **Note:** As mentioned earlier, this is a one-time setup for this branch. After this, you can simply use `git push` for future updates.
+
+6.  **Create a pull request**: Go to your fork on GitHub, click "Compare & pull request", add a title and description, and create the PR.
+
+7.  **Review and update**: If you or the reviewers make changes to your PR through the GitHub UI, you need to update your local branch with those changes:
+
+    <!-- run-disable -->
+
+    ```bash
+    git pull origin feature/is-even # git pull also works
+    ```
+
+    Additionally, if new changes are added to the [upstream][git-remotes] `develop` branch, you can integrate them into your feature branch using rebase or merge:
+
+    <!-- run-disable -->
+
+    ```bash
+    git checkout develop
+    git pull --ff-only upstream develop # Update local develop first
+    git checkout feature/is-even
+    git rebase develop # or git merge develop
+    ```
+
+    Resolve any conflicts with the steps mentioned earlier, then continue the rebase:
+
+    <!-- run-disable -->
+
+    ```bash
+    git rebase --continue
+    ```
+
+    Finally, push your changes:
+
+    <!-- run-disable -->
+
+    ```bash
+    git push --force # Force push after rebasing
+    ```
+
+    > **Note:** Force pushing is required after rebasing because it rewrites history. This is safe as long as you're the only one working on the branch. If you want to avoid force pushing, use merge instead of rebase.
+
+8.  **Repeat**: After resolving conflicts and updating your branch, you can continue making changes, committing, and pushing until your PR is ready to be merged.
 
 ## Conclusion
 
