@@ -368,7 +368,7 @@ We will consider the conflict in the `isEven` function above. Let's say you want
 
 > **Tip:** Many editors like VS Code highlight conflicts and even give you buttons to accept incoming or current changes. This can make resolving conflicts much easier.
 
-Merge conflicts can be annoying, but they’re a natural part of working with others. Take your time, and don’t hesitate to ask for help if you're stuck.
+Merge conflicts can be annoying, but they're a natural part of working with others. Take your time, and don't hesitate to ask for help if you're stuck.
 
 ## Example Workflow
 
