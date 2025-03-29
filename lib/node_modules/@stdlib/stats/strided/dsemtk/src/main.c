@@ -17,7 +17,7 @@
 */
 
 #include "stdlib/stats/strided/dsemtk.h"
-#include "stdlib/stats/base/dvariancetk.h"
+#include "stdlib/stats/strided/dvariancetk.h"
 #include "stdlib/blas/base/shared.h"
 #include "stdlib/strided/base/stride2offset.h"
 #include "stdlib/math/base/special/sqrt.h"

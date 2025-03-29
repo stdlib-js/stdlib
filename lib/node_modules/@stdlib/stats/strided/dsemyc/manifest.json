@@ -41,7 +41,7 @@
         "@stdlib/blas/base/shared",
         "@stdlib/strided/base/stride2offset",
         "@stdlib/math/base/special/sqrt",
-        "@stdlib/stats/base/dvarianceyc",
+        "@stdlib/stats/strided/dvarianceyc",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
@@ -65,7 +65,7 @@
         "@stdlib/blas/base/shared",
         "@stdlib/strided/base/stride2offset",
         "@stdlib/math/base/special/sqrt",
-        "@stdlib/stats/base/dvarianceyc"
+        "@stdlib/stats/strided/dvarianceyc"
       ]
     },
     {
@@ -83,7 +83,7 @@
         "@stdlib/blas/base/shared",
         "@stdlib/strided/base/stride2offset",
         "@stdlib/math/base/special/sqrt",
-        "@stdlib/stats/base/dvarianceyc"
+        "@stdlib/stats/strided/dvarianceyc"
       ]
     },
     {
@@ -101,7 +101,7 @@
         "@stdlib/blas/base/shared",
         "@stdlib/strided/base/stride2offset",
         "@stdlib/math/base/special/sqrt",
-        "@stdlib/stats/base/dvarianceyc"
+        "@stdlib/stats/strided/dvarianceyc"
       ]
     }
   ]
