@@ -1098,10 +1098,10 @@
 "@stdlib/stats/strided/dnanmaxabs",base.strided.dnanmaxabs
 "@stdlib/stats/strided/dnanmean",base.strided.dnanmean
 "@stdlib/stats/strided/dnanmeanors",base.strided.dnanmeanors
-"@stdlib/stats/base/dnanmeanpn",base.strided.dnanmeanpn
+"@stdlib/stats/strided/dnanmeanpn",base.strided.dnanmeanpn
 "@stdlib/stats/base/dnanmeanpw",base.strided.dnanmeanpw
 "@stdlib/stats/base/dnanmeanwd",base.strided.dnanmeanwd
-"@stdlib/stats/base/dnanmin",base.strided.dnanmin
+"@stdlib/stats/strided/dnanmin",base.strided.dnanmin
 "@stdlib/stats/base/dnanminabs",base.strided.dnanminabs
 "@stdlib/stats/base/dnanmskmax",base.strided.dnanmskmax
 "@stdlib/stats/base/dnanmskmin",base.strided.dnanmskmin
