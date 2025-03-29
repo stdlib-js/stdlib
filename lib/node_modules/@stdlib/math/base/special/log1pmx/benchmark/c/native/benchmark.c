@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2023 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,6 +16,7 @@
 * limitations under the License.
 */
 
+#include "stdlib/math/base/special/log1pmx.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
@@ -25,7 +26,6 @@
 #define NAME "log1pmx"
 #define ITERATIONS 1000000
 #define REPEATS 3
-#define DBL_EPSILON 2.2204460492503131e-16
 
 /**
 * Prints the TAP version.
@@ -85,28 +85,6 @@ static double rand_double( void ) {
 }
 
 /**
-* Evaluates \\( \operatorname{log1pmx}(x) = \ln(1+x) - x \\).
-*
-* @return calculated value
-*/
-double log1pmx( double x ) {
-	double ax;
-
-	if ( x <= -1.0 ) {
-		return NAN;
-	}
-	ax = fabs( x );
-	if ( ax > 0.95 ) {
-		// cppcheck-suppress unpreciseMathCall
-		return log( 1.0 + x ) - x;
-	}
-	if ( ax < DBL_EPSILON ) {
-		return -x * x / 2.0;
-	}
-	return log1p( x );
-}
-
-/**
 * Runs a benchmark.
 *
 * @return elapsed time in seconds
@@ -124,7 +102,7 @@ static double benchmark( void ) {
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		y = log1pmx( x[ i%100 ] );
+		y = stdlib_base_log1pmx( x[ i%100 ] );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;
@@ -149,7 +127,7 @@ int main( void ) {
 
 	print_version();
 	for ( i = 0; i < REPEATS; i++ ) {
-		printf( "# c::%s\n", NAME );
+		printf( "# c::native::%s\n", NAME );
 		elapsed = benchmark();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", i+1 );
