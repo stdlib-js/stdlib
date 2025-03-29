@@ -37,6 +37,7 @@ limitations under the License.
 -   [When should I use decimals in examples, benchmarks, and documentation, and when should I avoid them?](#decimal-usage)
 -   [How should I name my pull request?](#pr-naming)
 -   [How do I call the stdlib bot on my PR?](#stdlib-bot)
+-   [Why were many unrelated files automatically pushed to my PR when I committed my changes?](#auto-push)
 -   [Frequently used `make` commands](#freq-make-commands)
 -   [Other Links](#other-links)
 
@@ -46,7 +47,7 @@ limitations under the License.
 
 ## Introduction
 
-We appreciate your interest in contributing to stdlib! Below, we’ve compiled answers to some frequently asked questions (FAQs) from first-time contributors. If you’re new to the project or encounter any challenges, this guide is a great place to start.
+We appreciate your interest in contributing to stdlib! Below, we've compiled answers to some frequently asked questions (FAQs) from first-time contributors. If you're new to the project or encounter any challenges, this guide is a great place to start.
 
 <a name="first-time-contributor"></a>
 
@@ -290,6 +291,32 @@ Once you have created your PR, you can call the **stdlib-bot** to perform basic 
 
 To see other available bot commands, comment `/stdlib help` on your PR.
 
+<a name="auto-push"></a>
+
+## Why were many unrelated files automatically pushed to my PR when I committed my changes?
+
+When you open a pull request or push changes to your feature branch, GitHub compares your feature branch against your `develop` branch and shows all the differences. If your feature branch contains outdated or extra changes, they will appear in the PR, even if they are unrelated to your work.
+
+To fix this, ensure that your feature branch is based on the latest `develop` branch. You can do this by updating your local `develop` branch and then merging it into your feature branch:
+
+```bash
+$ git checkout develop
+$ git pull upstream develop
+$ git push origin develop
+$ git checkout feature-branch
+$ git merge develop
+```
+
+After merging, push your changes to the remote repository:
+
+```bash
+$ git push origin feature-branch # git push also works
+```
+
+> **Note**: When developing stdlib, we recommend using `merge` instead of `rebase` once a PR is open. Rebasing rewrites your branch history, which usually requires a force-push to update the remote branch. This can disrupt other contributors who are reviewing or collaborating on your PR. Since stdlib uses squash and merge for PRs, we don't require a clean, linear commit history. Merge commits are acceptable as long as your diff only contains relevant changes. If you want to learn more about rebasing/merging, you can refer to our [Git guide][git-guide].
+
+Alternatively, you can call the **stdlib-bot** to merge changes from the `develop` branch into your PR. To do this, comment `/stdlib merge` on your PR.
+
 <a name="freq-make-commands"></a>
 
 ## Frequently used `make` commands
@@ -355,6 +382,7 @@ For more `make` commands, refer to the [documentation][benchmark] on running ben
 ## Other Links:
 
 - [Style Guide][style-guide]
+- [Git Cheatsheet][git-guide]
 - [Other make commands][make-commands]
 
 <section class="links">
@@ -366,6 +394,8 @@ For more `make` commands, refer to the [documentation][benchmark] on running ben
 [vscode]: https://code.visualstudio.com/
 
 [github-fork]: https://help.github.com/articles/fork-a-repo/
+
+[git-guide]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/git_cheatsheet.md#integration
 
 [development-guide]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/development.md
 
