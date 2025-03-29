@@ -313,7 +313,7 @@ After merging, push your changes to the remote repository:
 $ git push origin feature-branch # git push also works
 ```
 
-> **Note**: When developing stdlib, we recommend using `merge` instead of `rebase` once a PR is open. Rebasing rewrites your branch history, which usually requires a force-push to update the remote branch. This can disrupt other contributors who are reviewing or collaborating on your PR. Since stdlib uses squash and merge for PRs, we don't require a clean, linear commit history. Merge commits are totally fine as long as your diff only contains relevant changes. If you want to learn more about rebasing/merging, you can refer to our [Git guide][git-guide].
+> **Note**: When developing stdlib, we recommend using `merge` instead of `rebase` once a PR is open. Rebasing rewrites your branch history, which usually requires a force-push to update the remote branch. This can disrupt other contributors who are reviewing or collaborating on your PR. Since stdlib uses squash and merge for PRs, we don't require a clean, linear commit history. Merge commits are acceptable as long as your diff only contains relevant changes. If you want to learn more about rebasing/merging, you can refer to our [Git guide][git-guide].
 
 Alternatively, you can call the **stdlib-bot** to merge changes from the `develop` branch into your PR. To do this, comment `/stdlib merge` on your PR.
 
