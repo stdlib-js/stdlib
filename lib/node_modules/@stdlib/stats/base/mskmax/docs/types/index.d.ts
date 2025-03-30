@@ -20,7 +20,12 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { NumericArray } from '@stdlib/types/array';
+import { NumericArray, Collection, AccessorArrayLike } from '@stdlib/types/array';
+
+/**
+* Input array.
+*/
+type InputArray = NumericArray | Collection<number> | AccessorArrayLike<number>;
 
 /**
 * Interface describing `mskmax`.
@@ -31,9 +36,9 @@ interface Routine {
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param strideX - `x` stride length
+	* @param strideX - stride length for `x`
 	* @param mask - mask array
-	* @param strideMask - `mask` stride length
+	* @param strideMask - stride length for `mask`
 	* @returns maximum value
 	*
 	* @example
@@ -43,17 +48,17 @@ interface Routine {
 	* var v = mskmax( x.length, x, 1, mask, 1 );
 	* // returns 2.0
 	*/
-	( N: number, x: NumericArray, strideX: number, mask: NumericArray, strideMask: number ): number;
+	( N: number, x: InputArray, strideX: number, mask: InputArray, strideMask: number ): number;
 
 	/**
 	* Computes the maximum value of a strided array according to a mask and using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param strideX - `x` stride length
+	* @param strideX - stride length for `x`
 	* @param offsetX - `x` starting index
 	* @param mask - mask array
-	* @param strideMask - `mask` stride length
+	* @param strideMask - stride length for `mask`
 	* @param offsetMask - `mask` starting index
 	* @returns maximum value
 	*
@@ -64,7 +69,7 @@ interface Routine {
 	* var v = mskmax.ndarray( x.length, x, 1, 0, mask, 1, 0 );
 	* // returns 2.0
 	*/
-	ndarray( N: number, x: NumericArray, strideX: number, offsetX: number, mask: NumericArray, strideMask: number, offsetMask: number ): number;
+	ndarray( N: number, x: InputArray, strideX: number, offsetX: number, mask: InputArray, strideMask: number, offsetMask: number ): number;
 }
 
 /**
@@ -72,9 +77,9 @@ interface Routine {
 *
 * @param N - number of indexed elements
 * @param x - input array
-* @param strideX - `x` stride length
+* @param strideX - stride length for `x`
 * @param mask - mask array
-* @param strideMask - `mask` stride length
+* @param strideMask - stride length for `mask`
 * @returns maximum value
 *
 * @example

@@ -1,0 +1,36 @@
+
+{{alias}}( x, fcn[, thisArg] )
+    Invoke a callback function once for each array element.
+
+    The callback function is provided the following arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: the input array.
+
+    If provided an array-like object having a `forEach` method , the function
+    defers execution to that method and assumes that the method has the
+    following signature:
+
+        x.forEach( clbk, thisArg )
+
+    Parameters
+    ----------
+    x: Array|TypedArray|Object
+        Input array.
+
+    fcn: Function
+        Callback function.
+
+    thisArg: any (optional)
+        Callback execution context.
+
+    Examples
+    --------
+    > var x = [ 1, 2, 3, 4 ];
+    > function f( v ) { if ( v !== v ) { throw new Error( '...' ); } };
+    > {{alias}}( x, f );
+
+    See Also
+    --------
+
