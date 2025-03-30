@@ -27,7 +27,7 @@ interface Routine {
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns sum
 	*
 	* @example
@@ -38,15 +38,15 @@ interface Routine {
 	* var v = sdssum( x.length, x, 1 );
 	* // returns 1.0
 	*/
-	( N: number, x: Float32Array, stride: number ): number;
+	( N: number, x: Float32Array, strideX: number ): number;
 
 	/**
 	* Computes the sum of single-precision floating-point strided array elements using extended accumulation and alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param stride - stride length
-	* @param offset - starting index
+	* @param strideX - stride length
+	* @param offsetX - starting index
 	* @returns sum
 	*
 	* @example
@@ -57,7 +57,7 @@ interface Routine {
 	* var v = sdssum.ndarray( x.length, x, 1, 0 );
 	* // returns 1.0
 	*/
-	ndarray( N: number, x: Float32Array, stride: number, offset: number ): number;
+	ndarray( N: number, x: Float32Array, strideX: number, offsetX: number ): number;
 }
 
 /**
@@ -65,7 +65,7 @@ interface Routine {
 *
 * @param N - number of indexed elements
 * @param x - input array
-* @param stride - stride length
+* @param strideX - stride length
 * @returns sum
 *
 * @example

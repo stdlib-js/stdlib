@@ -26,7 +26,7 @@
 * @return          mean
 *
 * @example
-* double y = stdlib_base_exponential_mean( 9.0 );
+* double y = stdlib_base_dists_exponential_mean( 9.0 );
 * // returns ~0.111
 */
 double stdlib_base_dists_exponential_mean( const double lambda ) {

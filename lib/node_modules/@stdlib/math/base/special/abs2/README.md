@@ -68,17 +68,15 @@ v = abs2( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var abs2 = require( '@stdlib/math/base/special/abs2' );
 
-var x;
-var i;
+var x = discreteUniform( 100, -50, 50, {
+    'dtype': 'float64'
+});
 
-for ( i = 0; i < 100; i++ ) {
-    x = round( randu() * 100.0 ) - 50.0;
-    console.log( 'abs2(%d) = %d', x, abs2( x ) );
-}
+logEachMap( 'abs2(%d) = %d', x, abs2 );
 ```
 
 </section>

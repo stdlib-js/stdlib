@@ -41,7 +41,7 @@
         "@stdlib/math/base/napi/quaternary",
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/special/exp",
-        "@stdlib/math/base/special/pow"
+        "@stdlib/math/base/special/expm1"
       ]
     },
     {

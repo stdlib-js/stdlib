@@ -45,7 +45,7 @@ type Ternary<T, U, V, W> = ( v1: T, v2: U, v3: V ) => W;
 * @param fcn - ternary callback
 *
 * @example
-* var add = require( '@stdlib/math/base/ops/add3' );
+* var add = require( '@stdlib/number/float64/base/add3' );
 * var ones5d = require( '@stdlib/array/base/ones5d' );
 * var zeros5d = require( '@stdlib/array/base/zeros5d' );
 *

@@ -29,7 +29,7 @@ static const double PI_OVER_SQRT6 = 1.282549830161864; // Pi divided by the squa
 * @return        standard deviation
 *
 * @example
-* double y = stdlib_base_gumbel_stdev( 0.0, 1.0 );
+* double y = stdlib_base_dists_gumbel_stdev( 0.0, 1.0 );
 * // returns ~1.283
 */
 double stdlib_base_dists_gumbel_stdev( const double mu, const double beta ) {

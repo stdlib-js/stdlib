@@ -47,12 +47,12 @@
     > var x = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
     > var y = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
     > var z = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
-    > {{alias}}( x.length, x, 1, y, 1, z, 1, {{alias:@stdlib/math/base/ops/add}} )
+    > {{alias}}( x.length, x, 1, y, 1, z, 1, {{alias:@stdlib/number/float64/base/add}} )
     <Float64Array>[ 2.0, 4.0, 6.0, 8.0 ]
 
     // Using `N` and stride parameters:
     > z = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
-    > {{alias}}( 2, x, 2, y, -1, z, 1, {{alias:@stdlib/math/base/ops/add}} )
+    > {{alias}}( 2, x, 2, y, -1, z, 1, {{alias:@stdlib/number/float64/base/add}} )
     <Float64Array>[ 3.0, 4.0, 0.0, 0.0 ]
 
     // Using view offsets:
@@ -62,7 +62,7 @@
     > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
     > var y1 = new {{alias:@stdlib/array/float64}}( y0.buffer, y0.BYTES_PER_ELEMENT*2 );
     > var z1 = new {{alias:@stdlib/array/float64}}( z0.buffer, z0.BYTES_PER_ELEMENT*2 );
-    > {{alias}}( 2, x1, -2, y1, 1, z1, 1, {{alias:@stdlib/math/base/ops/add}} )
+    > {{alias}}( 2, x1, -2, y1, 1, z1, 1, {{alias:@stdlib/number/float64/base/add}} )
     <Float64Array>[ 7.0, 6.0 ]
     > z0
     <Float64Array>[ 0.0, 0.0, 7.0, 6.0 ]
@@ -123,14 +123,14 @@
     > var x = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
     > var y = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
     > var z = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
-    > {{alias}}.ndarray( x.length, x, 1, 0, y, 1, 0, z, 1, 0, {{alias:@stdlib/math/base/ops/add}} )
+    > {{alias}}.ndarray( x.length, x, 1, 0, y, 1, 0, z, 1, 0, {{alias:@stdlib/number/float64/base/add}} )
     <Float64Array>[ 2.0, 4.0, 6.0, 8.0 ]
 
     // Advanced indexing:
     > x = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
     > y = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
     > z = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
-    > {{alias}}.ndarray( 2, x, 2, 1, y, -1, y.length-1, z, 1, 1, {{alias:@stdlib/math/base/ops/add}} )
+    > {{alias}}.ndarray( 2, x, 2, 1, y, -1, y.length-1, z, 1, 1, {{alias:@stdlib/number/float64/base/add}} )
     <Float64Array>[ 0.0, 6.0, 7.0, 0.0 ]
 
     See Also
