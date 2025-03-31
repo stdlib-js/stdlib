@@ -2785,7 +2785,7 @@ constantStream,"constantStream( value:string|Buffer|Uint8Array|any[, options:Obj
 constantStream.factory,"constantStream.factory( [value:string|Buffer|Uint8Array|any, ][options:Object] )"
 constantStream.objectMode,"constantStream.objectMode( value:any[, options:Object] )"
 constructorName,"constructorName( val:any )"
-contains,"contains( val:ArrayLike, searchValue:any[, position:integer] )"
+contains,"contains( value:ArrayLike, searchValue:any[, position:integer] )"
 convertArray,"convertArray( arr:ArrayLikeObject, dtype:string )"
 convertArraySame,"convertArraySame( x:ArrayLikeObject, y:Array|TypedArray )"
 convertPath,"convertPath( from:string, to:string )"

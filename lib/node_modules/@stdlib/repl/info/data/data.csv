@@ -2762,7 +2762,7 @@ constantStream,"\nconstantStream( value:string|Buffer|Uint8Array|any[, options:O
 constantStream.factory,"\nconstantStream.factory( [value:string|Buffer|Uint8Array|any, ][options:Object] )\n    Returns a function for creating readable streams which always stream the\n    same value.\n"
 constantStream.objectMode,"\nconstantStream.objectMode( value:any[, options:Object] )\n    Returns an \"objectMode\" readable stream which always streams the same value.\n"
 constructorName,"\nconstructorName( val:any )\n    Determines the name of a value's constructor.\n"
-contains,"\ncontains( val:ArrayLike, searchValue:any[, position:integer] )\n    Tests if an array-like value contains a search value.\n"
+contains,"\ncontains( value:ArrayLike, searchValue:any[, position:integer] )\n    Tests if an array-like value contains a search value.\n"
 convertArray,"\nconvertArray( arr:ArrayLikeObject, dtype:string )\n    Converts an input array to an array of a different data type.\n"
 convertArraySame,"\nconvertArraySame( x:ArrayLikeObject, y:Array|TypedArray )\n    Converts an input array to the same data type as a second input array.\n"
 convertPath,"\nconvertPath( from:string, to:string )\n    Converts between POSIX and Windows paths.\n"
