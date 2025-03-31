@@ -1,0 +1,30 @@
+
+{{alias}}()
+    Returns an accumulator function which incrementally computes an arithmetic
+    mean, ignoring `NaN` values.
+
+    If provided a value, the accumulator function returns an updated mean. If
+    not provided a value, the accumulator function returns the current mean.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}();
+    > var mu = accumulator()
+    null
+    > mu = accumulator( 2.0 )
+    2.0
+    > mu = accumulator( NaN )
+    2.0
+    > mu = accumulator( -5.0 )
+    -1.5
+    > mu = accumulator()
+    -1.5
+
+    See Also
+    --------
+

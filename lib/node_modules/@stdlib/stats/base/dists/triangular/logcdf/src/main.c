@@ -52,7 +52,7 @@ double stdlib_base_dists_triangular_logcdf( const double x, const double a, cons
 	if ( x <= c ) {
 		return ( 2.0 * stdlib_base_ln( x - a ) - stdlib_base_ln( ( b - a ) * ( c - a ) ) );
 	}
-	if( x < b ){
+	if ( x < b ) {
 		return stdlib_base_ln( 1.0 - ( stdlib_base_pow( b - x, 2.0 ) / ( ( b - a ) * ( b - c ) ) ) );
 	}
 	return 0.0;

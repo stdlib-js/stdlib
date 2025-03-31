@@ -186,7 +186,7 @@ for ( i = 0; i < 25; i++ ) {
 
 #### stdlib_base_dists_triangular_quantile( p, a, b, c )
 
-Evaluates the [quantile function][quantile-function] for a [triangular][triangular-distribution] distribution with parameters `a` (lower limit), `b` (upper limit) and `c` (mode).
+Evaluates the [quantile function][quantile-function] for a [triangular][triangular-distribution] distribution with parameters `a` (lower limit), `b` (upper limit), and `c` (mode).
 
 ```c
 double out = stdlib_base_dists_triangular_quantile( 0.9, -1.0, 1.0, 0.0 );
