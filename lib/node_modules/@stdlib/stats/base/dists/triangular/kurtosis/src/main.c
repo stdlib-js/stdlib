@@ -28,7 +28,7 @@
 * @return     excess kurtosis
 *
 * @example
-* double y = stdlib_base_triangular_kurtosis( 0.0, 1.0, 0.5 );
+* double y = stdlib_base_dists_triangular_kurtosis( 0.0, 1.0, 0.5 );
 * // returns -0.6
 */
 double stdlib_base_dists_triangular_kurtosis( const double a, const double b, const double c ) {

@@ -20,7 +20,12 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { NumericArray } from '@stdlib/types/array';
+import { NumericArray, Collection, AccessorArrayLike } from '@stdlib/types/array';
+
+/**
+* Input array.
+*/
+type InputArray = NumericArray | Collection<number> | AccessorArrayLike<number>;
 
 /**
 * Interface describing `gsorthp`.
@@ -32,7 +37,7 @@ interface Routine {
 	* @param N - number of indexed elements
 	* @param order - sort order
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns `x`
 	*
 	* @example
@@ -41,7 +46,7 @@ interface Routine {
 	* gsorthp( x.length, 1, x, 1 );
 	* // x => [ -4.0, -2.0, 1.0, 3.0 ]
 	*/
-	( N: number, order: number, x: NumericArray, stride: number ): NumericArray;
+	<T extends InputArray>( N: number, order: number, x: T, stride: number ): T;
 
 	/**
 	* Sorts a strided array using heapsort and alternative indexing semantics.
@@ -49,8 +54,8 @@ interface Routine {
 	* @param N - number of indexed elements
 	* @param order - sort order
 	* @param x - input array
-	* @param stride - stride length
-	* @param offset - starting index
+	* @param strideX - stride length
+	* @param offsetX - starting index
 	* @returns `x`
 	*
 	* @example
@@ -59,7 +64,7 @@ interface Routine {
 	* gsorthp.ndarray( x.length, 1, x, 1, 0 );
 	* // x => [ -4.0, -2.0, 1.0, 3.0 ]
 	*/
-	ndarray( N: number, order: number, x: NumericArray, stride: number, offset: number ): NumericArray;
+	ndarray<T extends InputArray>( N: number, order: number, x: T, stride: number, offset: number ): T;
 }
 
 /**
@@ -68,7 +73,7 @@ interface Routine {
 * @param N - number of indexed elements
 * @param order - sort order
 * @param x - input array
-* @param stride - stride length
+* @param strideX - stride length
 * @returns `x`
 *
 * @example

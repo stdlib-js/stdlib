@@ -1,7 +1,7 @@
 
 {{alias}}( μ, c )
-    Returns the entropy of a Lévy distribution with location parameter `μ` and
-    scale parameter `c`.
+    Returns the differential entropy of a Lévy distribution with location
+    parameter `μ` and scale parameter `c`.
 
     If provided `NaN` as any argument, the function returns `NaN`.
 
@@ -18,7 +18,7 @@
     Returns
     -------
     out: number
-        Entropy.
+        Differential entropy.
 
     Examples
     --------
