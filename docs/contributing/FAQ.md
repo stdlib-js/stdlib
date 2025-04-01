@@ -31,7 +31,6 @@ limitations under the License.
 -   [What should I do if JavaScript linting on my commits fails because my function exceeds the maximum permissible number of parameters?](#max-params)
 -   [I have opened a pull request, where can I seek feedback?](#pr-feedback)
 -   [I need to generate fixtures for my tests. How can I do that, and what are the best references for inspiration?](#generate-fixtures)
--   [I am facing a `Shadowed declaration` linting error in my C files, how can I fix it?](#shadowed-declaration)
 -   [I am facing a `Uninitialized variable` linting error in my C files, how can I fix it?](#uninitialized-variable)
 -   [I have the required packages in the expected paths, but I am still encountering an error like this while compiling the native add-on.](#compilation-error)
 -   [When should I use decimals in examples, benchmarks, and documentation, and when should I avoid them?](#decimal-usage)
@@ -144,23 +143,6 @@ Consider joining our [Gitter channel][stdlib-gitter]! We are proud to have a ver
 ## I need to generate fixtures for my tests. How can I do that, and what are the best references for inspiration?
 
 Tests are a crucial part of any standard library package. We take our goal of achieving 100% test coverage very seriously and expect your work to be backed by tests. Often, you may need to generate fixtures to validate your implementation against an existing reliable source. You can use Julia, R, Python, or other languages to generate fixtures. To see how we do this, refer to these example scripts: [Python fixture script][python-fixtures], [Julia fixture script][julia-fixtures].
-
-<a name="shadowed-declaration"></a>
-
-## I am facing a `Shadowed declaration` linting error in my C files, how can I fix it?
-
-```bash
-STDLIB_MATH_BASE_NAPI_MODULE_FF_F( stdlib_base_gcdf ) ^
-/home/runner/work/stdlib/stdlib/lib/node_modules/@stdlib/math/base/special/gcdf/include/stdlib/math/base/special/gcdf.h:32:7:
-note: Shadowed declaration float stdlib_base_gcdf( const float a, const float b );
-```
-
-You can suppress that warning by adding a `// cppcheck-suppress shadowFunction` comment above the function. For example:
-
-```c
-// cppcheck-suppress shadowFunction
-STDLIB_MATH_BASE_NAPI_MODULE_FF_F( stdlib_base_gcdf )
-```
 
 <a name="uninitialized-variable"></a>
 
