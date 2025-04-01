@@ -2856,8 +2856,12 @@ interface Namespace {
 	*
 	* ## Notes
 	*
+	* -   The function uses the [SameValue Algorithm][ecma-262-same-value-algorithm], as specified in ECMAScript 5.
+	* -   In contrast to the strict equality operator `===`, `-0` and `+0` are distinguishable and `NaNs` are the same.
 	* -   If unable to find an element which equals a provided search element, the function returns `-1`.
 	* -   If `fromIndex` is less than zero, the starting index is resolved relative to the last array element, with the last array element corresponding to `fromIndex = -1`.
+	*
+	* [ecma-262-same-value-algorithm]: http://ecma-international.org/ecma-262/5.1/#sec-9.12
 	*
 	* @param x - input array
 	* @param searchElement - search element
@@ -2979,9 +2983,13 @@ interface Namespace {
 	*
 	* ## Notes
 	*
+	* -   The function uses the [SameValue Algorithm][ecma-262-same-value-algorithm], as specified in ECMAScript 5.
+	* -   In contrast to the strict equality operator `===`, `-0` and `+0` are distinguishable and `NaNs` are the same.
 	* -   The function scans an input array from the starting index to the beginning of the array (i.e., backward).
 	* -   If unable to find an element which equals a provided search element, the function returns `-1`.
 	* -   If `fromIndex` is less than zero, the starting index is resolved relative to the last array element, with the last array element corresponding to `fromIndex = -1`.
+	*
+	* [ecma-262-same-value-algorithm]: http://ecma-international.org/ecma-262/5.1/#sec-9.12
 	*
 	* @param x - input array
 	* @param searchElement - search element
