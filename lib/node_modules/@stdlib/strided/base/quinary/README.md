@@ -41,7 +41,7 @@ var quinary = require( '@stdlib/strided/base/quinary' );
 Applies a quinary callback to strided input array elements and assigns results to elements in a strided output array.
 
 ```javascript
-var add = require( '@stdlib/math/base/ops/add5' );
+var add = require( '@stdlib/number/float64/base/add5' );
 var Float64Array = require( '@stdlib/array/float64' );
 
 var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
@@ -65,7 +65,7 @@ The function accepts the following arguments:
 The `shape` and `strides` parameters determine which elements in the strided input and output arrays are accessed at runtime. For example, to index every other value in the strided input arrays and to index the first `N` elements of the strided output array in reverse order,
 
 ```javascript
-var add = require( '@stdlib/math/base/ops/add5' );
+var add = require( '@stdlib/number/float64/base/add5' );
 var Float64Array = require( '@stdlib/array/float64' );
 
 var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
@@ -82,7 +82,7 @@ quinary( [ x, y, z, w, u, v ], [ 3 ], [ 2, 2, 2, 2, 2, -1 ], add );
 Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][mdn-typed-array] views.
 
 ```javascript
-var add = require( '@stdlib/math/base/ops/add5' );
+var add = require( '@stdlib/number/float64/base/add5' );
 var Float64Array = require( '@stdlib/array/float64' );
 
 // Initial arrays...
@@ -112,7 +112,7 @@ Applies a quinary callback to strided input array elements and assigns results t
 <!-- eslint-disable max-len -->
 
 ```javascript
-var add = require( '@stdlib/math/base/ops/add5' );
+var add = require( '@stdlib/number/float64/base/add5' );
 var Float64Array = require( '@stdlib/array/float64' );
 
 var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
@@ -135,7 +135,7 @@ While [`typed array`][mdn-typed-array] views mandate a view offset based on the 
 <!-- eslint-disable max-len -->
 
 ```javascript
-var add = require( '@stdlib/math/base/ops/add5' );
+var add = require( '@stdlib/number/float64/base/add5' );
 var Float64Array = require( '@stdlib/array/float64' );
 
 var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
@@ -169,7 +169,7 @@ quinary.ndarray( [ x, y, z, w, u, v ], [ 3 ], [ 2, 2, 2, 2, 2, -1 ], [ 1, 1, 1, 
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var filledarray = require( '@stdlib/array/filled' );
 var filledarrayBy = require( '@stdlib/array/filled-by' );
-var add = require( '@stdlib/math/base/ops/add5' );
+var add = require( '@stdlib/number/float64/base/add5' );
 var quinary = require( '@stdlib/strided/base/quinary' );
 
 var N = 10;

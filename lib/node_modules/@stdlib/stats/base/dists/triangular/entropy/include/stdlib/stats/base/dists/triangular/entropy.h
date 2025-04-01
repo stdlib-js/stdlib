@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Returns the entropy of a triangular distribution.
+* Returns the differential entropy of a triangular distribution.
 */
 double stdlib_base_dists_triangular_entropy( const double a, const double b, const double c );
 

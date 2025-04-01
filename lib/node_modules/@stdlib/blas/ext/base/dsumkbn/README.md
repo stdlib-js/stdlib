@@ -132,7 +132,7 @@ var v = dsumkbn.ndarray( 4, x, 2, 1 );
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var dsumkbn = require( '@stdlib/blas/ext/base/dsumkbn' );
 
-var x = discreteUniform( 10.0, -100, 100, {
+var x = discreteUniform( 10, -100, 100, {
     'dtype': 'float64'
 });
 console.log( x );

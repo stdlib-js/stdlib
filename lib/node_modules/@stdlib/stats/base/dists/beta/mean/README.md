@@ -185,7 +185,7 @@ The function accepts the following arguments:
 -   **beta**: `[in] double` second shape parameter.
 
 ```c
-double stdlib_base_dists_beta_mean( const double a, const double b );
+double stdlib_base_dists_beta_mean( const double alpha, const double beta );
 ```
 
 </section>
@@ -222,7 +222,7 @@ int main( void ) {
     double beta;
     double y;
     int i;
-    
+
     for ( i = 0; i < 25; i++ ) {
         alpha = random_uniform( 0.0, 10.0 );
         beta = random_uniform( 0.0, 10.0 );
