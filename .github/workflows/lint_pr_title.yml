@@ -62,8 +62,8 @@ jobs:
           # Specify whether to remove untracked files before checking out the repository:
           clean: false
 
-          # Limit clone depth to the most recent 100 commits:
-          fetch-depth: 100
+          # Limit clone depth to the most recent commit:
+          fetch-depth: 1
 
           # Specify whether to download Git-LFS files:
           lfs: false
@@ -90,5 +90,7 @@ jobs:
         run: |
           echo "Pull request titles should follow stdlib's Git commit message conventions."
           echo "Linting pull request title..."
-          make lint-commit-message GIT_COMMIT_MESSAGE="${PR_TITLE}"
+          PR_TITLE_FILE="${GITHUB_WORKSPACE}/pr_title.txt"
+          printf '%s\n' "$PR_TITLE" > "$PR_TITLE_FILE"
+          make lint-commit-files FILES="$PR_TITLE_FILE"
         timeout-minutes: 5

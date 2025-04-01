@@ -170,8 +170,8 @@ for ( i = 0; i < 10; i++ ) {
 Evaluates the [cumulative distribution function][cdf] (CDF) for a [Cauchy][cauchy-distribution] distribution with parameters `x0` (location parameter) and `gamma > 0` (scale parameter).
 
 ```c
-double out = stdlib_base_dists_cauchy_cdf( 0.5, 0.0, 2.0 );
-// returns ~0.333
+double out = stdlib_base_dists_cauchy_cdf( 4.0, 0.0, 2.0 );
+// returns ~0.852
 ```
 
 The function accepts the following arguments:
@@ -214,9 +214,9 @@ static double random_uniform( const double min, const double max ) {
 
 int main( void ) {
     double gamma;
-    double x;
     double x0;
     double y;
+    double x;
     int i;
 
     for ( i = 0; i < 25; i++ ) {
