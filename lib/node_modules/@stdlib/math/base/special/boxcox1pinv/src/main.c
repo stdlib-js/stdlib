@@ -30,7 +30,7 @@
 * @return          inverse of the Box-Cox transformation
 *
 * @example
-* double v = boxcox1pinv( 1.0, 2.5 );
+* double v = stdlib_base_boxcox1pinv( 1.0, 2.5 );
 * // returns ~0.6505
 */
 double stdlib_base_boxcox1pinv( const double y, const double lambda ) {

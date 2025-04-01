@@ -30,7 +30,7 @@
       "task": "build",
       "wasm": false,
       "src": [
-        "./src/sqrt.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -47,7 +47,7 @@
       "task": "benchmark",
       "wasm": false,
       "src": [
-        "./src/sqrt.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -62,7 +62,7 @@
       "task": "examples",
       "wasm": false,
       "src": [
-        "./src/sqrt.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -77,7 +77,7 @@
       "task": "build",
       "wasm": true,
       "src": [
-        "./src/sqrt.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
