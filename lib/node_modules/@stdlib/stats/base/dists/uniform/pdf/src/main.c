@@ -28,7 +28,7 @@
 * @return     evaluated PDF
 *
 * @example
-* double y = pdf( 2.0, 0.0, 4.0 );
+* double y = stdlib_base_dists_uniform_pdf( 2.0, 0.0, 4.0 );
 * // returns 0.25
 */
 double stdlib_base_dists_uniform_pdf( const double x, const double a, const double b ) {
