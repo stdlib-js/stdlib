@@ -19,5 +19,4 @@
 #include "stdlib/stats/base/dists/discrete-uniform/cdf.h"
 #include "stdlib/math/base/napi/ternary.h"
 
-// cppcheck-suppress shadowFunction
 STDLIB_MATH_BASE_NAPI_MODULE_DII_D( stdlib_base_dists_discrete_uniform_cdf )

@@ -29,7 +29,7 @@ extern "C" {
 /**
 * Computes the Fibonacci number index.
 */
-double stdlib_base_fibonacci_index( const double x );
+double stdlib_base_fibonacci_index( const double F );
 
 #ifdef __cplusplus
 }

@@ -136,7 +136,7 @@ var x = uniform( 25, -10.0, 10.0, opts );
 var a = uniform( x.length, -20.0, 0.0, opts );
 var b = uniform( x.length, 0.0, 40.0, opts );
 
-logEachMap( 'x: %d, a: %d, b: %d, ln(f(x;a,b)): %d', x, a, b, logpdf );
+logEachMap( 'x: %0.4f, a: %0.4f, b: %0.4f, ln(f(x;a,b)): %0.4f', x, a, b, logpdf );
 ```
 
 </section>
