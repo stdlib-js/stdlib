@@ -283,7 +283,7 @@ int main( void ) {
 ## See Also
 
 -   <span class="package-name">[`@stdlib/blas/ext/base/dapxsumkbn2`][@stdlib/blas/ext/base/dapxsumkbn2]</span><span class="delimiter">: </span><span class="description">add a scalar constant to each double-precision floating-point strided array element and compute the sum using a second-order iterative Kahan–Babuška algorithm.</span>
--   <span class="package-name">[`@stdlib/blas/ext/base/gapxsumkbn2`][@stdlib/blas/ext/base/gapxsumkbn2]</span><span class="delimiter">: </span><span class="description">add a constant to each strided array element and compute the sum using a second-order iterative Kahan–Babuška algorithm.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/gapxsumkbn2`][@stdlib/blas/ext/base/gapxsumkbn2]</span><span class="delimiter">: </span><span class="description">add a scalar constant to each strided array element and compute the sum using a second-order iterative Kahan–Babuška algorithm.</span>
 -   <span class="package-name">[`@stdlib/blas/ext/base/sapxsum`][@stdlib/blas/ext/base/sapxsum]</span><span class="delimiter">: </span><span class="description">add a constant to each single-precision floating-point strided array element and compute the sum.</span>
 -   <span class="package-name">[`@stdlib/blas/ext/base/ssumkbn2`][@stdlib/blas/ext/base/ssumkbn2]</span><span class="delimiter">: </span><span class="description">calculate the sum of single-precision floating-point strided array elements using a second-order iterative Kahan–Babuška algorithm.</span>
 

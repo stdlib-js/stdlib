@@ -87,17 +87,16 @@ var v = log2( -4.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var log2 = require( '@stdlib/math/base/special/log2' );
 
-var x;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var x = discreteUniform( 100, 0, 100, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    x = round( randu() * 100.0 );
-    console.log( 'log2(%d) = %d', x, log2( x ) );
-}
+logEachMap( 'log2(%0.4f) = %0.4f', x, log2 );
 ```
 
 </section>
