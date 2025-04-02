@@ -23,7 +23,7 @@ import cotd = require( './index' );
 
 // The function returns a number...
 {
-	cotd( 60 ); // $ExpectType number
+	cotd( 60.0 ); // $ExpectType number
 }
 
 // The compiler throws an error if the function is provided a value other than a number...

@@ -83,17 +83,15 @@ v = absf( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var absf = require( '@stdlib/math/base/special/absf' );
 
-var rand;
-var i;
+var x = discreteUniform( 100, -50, 50, {
+    'dtype': 'float32'
+});
 
-for ( i = 0; i < 100; i++ ) {
-    rand = round( randu() * 100.0 ) - 50.0;
-    console.log( 'absf(%d) = %d', rand, absf( rand ) );
-}
+logEachMap( 'absf(%d) = %d', x, absf );
 ```
 
 </section>

@@ -63,15 +63,15 @@ var v = acscf( 0.5 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/base/linspace' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var acscf = require( '@stdlib/math/base/special/acscf' );
 
-var x = linspace( 1.1, 5.1, 100 );
+var x = uniform( 100, 1.1, 5.1, {
+    'dtype': 'float32'
+});
 
-var i;
-for ( i = 0; i < x.length; i++ ) {
-    console.log( acscf( x[ i ] ) );
-}
+logEachMap( 'acscf(%0.4f) = %0.4f', x, acscf );
 ```
 
 </section>
