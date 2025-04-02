@@ -42,7 +42,7 @@ Setting up the stdlib dev container **requires** the following prerequisites:
 
 ### Download
 
-To acquire the source code, first navigate to the parent directory where you want to place the project’s [Git][git] repository.
+To acquire the source code, first navigate to the parent directory where you want to place the project's [Git][git] repository.
 
 <!-- run-disable -->
 
