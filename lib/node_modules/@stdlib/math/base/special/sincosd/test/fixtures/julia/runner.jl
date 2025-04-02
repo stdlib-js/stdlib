@@ -19,31 +19,38 @@
 import JSON
 
 """
-	gen( domain, filepath )
+	gen( domain, name )
 
 Generate fixture data and write to file.
 
 # Arguments
 
 * `domain`: domain
-* `filepath::AbstractString`: filepath of the output file
+* `name::AbstractString`: output filename
 
 # Examples
 
 ``` julia
-julia> x = range( -1000.0, stop = 1000.0, length = 2001 );
-julia> gen( x, \"./data.json\" );
+julia> x = linspace( -1000, 1000, 2001 );
+julia> gen( x, \"data.json\" );
 ```
 """
-function gen( domain, filepath )
+function gen( domain, name )
 	x = collect( domain );
 	s = sind.( x );
 	c = cosd.( x );
+
+	# Store data to be written to file as a collection:
 	data = Dict([
 		("x", x),
 		("sine", s),
 		("cosine", c)
 	]);
+
+	# Based on the script directory, create an output filepath:
+	filepath = joinpath( dir, name );
+
+	# Write the data to the output filepath as JSON:
 	outfile = open( filepath, "w" );
 	write( outfile, JSON.json(data) );
 	write( outfile, "\n" );
@@ -58,30 +65,24 @@ dir = dirname( file );
 
 # Negative medium sized values:
 x = range( -256.0*180.0, stop = 0.0, length = 4000 );
-out = joinpath( dir, "medium_negative.json" );
-gen( x, out );
+gen( x, "medium_negative.json" );
 
 # Positive medium sized values:
 x = range( 0.0, stop = 256.0*180.0, length = 4000 );
-out = joinpath( dir, "medium_positive.json" );
-gen( x, out );
+gen( x, "medium_positive.json" );
 
 # Negative large values:
 x = range( -2.0^20*(180.0/2.0), stop = -2.0^60*(180.0/2.0), length = 4000 );
-out = joinpath( dir, "large_negative.json" );
-gen( x, out );
+gen( x, "large_negative.json" );
 
 # Positive large values:
 x = range( 2.0^20*(180.0/2.0), stop = 2.0^60*(180.0/2.0), length = 4000 );
-out = joinpath( dir, "large_positive.json" );
-gen( x, out );
+gen( x, "large_positive.json" );
 
 # Negative huge values:
 x = range( -2.0^60*(180.0/2.0), stop = -2.0^1000*(180.0/2.0), length = 4000 );
-out = joinpath( dir, "huge_negative.json" );
-gen( x, out );
+gen( x, "huge_negative.json" );
 
 # Positive huge values:
 x = range( 2.0^60*(180.0/2.0), stop = 2.0^1000*(180.0/2.0), length = 4000 );
-out = joinpath( dir, "huge_positive.json" );
-gen( x, out );
+gen( x, "huge_positive.json" );
