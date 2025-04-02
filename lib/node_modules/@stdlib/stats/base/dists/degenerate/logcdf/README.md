@@ -114,6 +114,102 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/degenerate/logcdf.h"
+```
+
+#### stdlib_base_dists_degenerate_logcdf( x, mu )
+
+Evaluates the natural logarithm of the [CDF][cdf] of a [degenerate distribution][degenerate-distribution] centered at `mu`.
+
+```c
+double y = stdlib_base_dists_degenerate_logcdf( 2.0, 3.0 );
+// returns -Infinity
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **mu**: `[in] double` constant value of distribution.
+
+```c
+double stdlib_base_dists_degenerate_logcdf( const double x, const double mu );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/degenerate/logcdf.h"
+#include "stdlib/math/base/special/round.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double mu;
+    double x;
+    double y;
+    int i;
+
+    for ( i = 0; i < 10; i++ ) {
+        x = stdlib_base_round( random_uniform( 0.0, 10.0 ) );
+        mu = stdlib_base_round( random_uniform( 0.0, 10.0 ) );
+        y = stdlib_base_dists_degenerate_logcdf( x, mu );
+        printf( "x: %lf, µ: %lf, ln(F(x;µ)): %lf\n", x, mu, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">

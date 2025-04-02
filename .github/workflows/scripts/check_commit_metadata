@@ -1,0 +1,391 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2025 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Script to check commit metadata for missing YAML blocks or dependencies.
+#
+# Usage: check_commit_metadata <pr_number> <commit_metadata> [--dry-run]
+#
+# Arguments:
+#
+#   pr_number        Pull request number.
+#   commit_metadata  JSON string containing commit metadata.
+#   --dry-run        Optional flag to print comments instead of posting them.
+#
+# Environment variables:
+#
+#   GITHUB_TOKEN   GitHub token for authentication.
+#   DRY_RUN        Set to "1" to enable dry run mode (alternative to --dry-run flag).
+
+# shellcheck disable=SC2153
+
+# Ensure that the exit status of pipelines is non-zero in the event that at least one of the commands in a pipeline fails:
+set -o pipefail
+
+
+# VARIABLES #
+
+# Resolve the pull request number:
+pr_number="$1"
+
+# Get the commit metadata JSON:
+commit_metadata="$2"
+
+# Check for dry run mode:
+dry_run=0
+if [ "$3" = "--dry-run" ] || [ "${DRY_RUN}" = "1" ]; then
+  dry_run=1
+  echo "Running in dry run mode. Comments will be printed but not posted."
+fi
+
+# GitHub API base URL:
+github_api_url="https://api.github.com"
+
+# Repository owner and name:
+repo_owner="stdlib-js"
+repo_name="stdlib"
+
+
+# FUNCTIONS #
+
+# Error handler.
+#
+# $1 - error status
+on_error() {
+	echo 'ERROR: An error was encountered during execution.' >&2
+	exit "$1"
+}
+
+# Prints a success message.
+print_success() {
+	echo 'Success!' >&2
+}
+
+# Performs a GitHub API request.
+#
+# $1 - HTTP method (GET or POST)
+# $2 - API endpoint
+# $3 - data for POST requests
+github_api() {
+	local method="$1"
+	local endpoint="$2"
+	local data="$3"
+
+	# Initialize an array to hold curl headers:
+	local headers=()
+
+	# If GITHUB_TOKEN is set, add the Authorization header:
+	if [ -n "${GITHUB_TOKEN}" ]; then
+		headers+=("-H" "Authorization: token ${GITHUB_TOKEN}")
+	fi
+
+	# Determine the HTTP method and construct the curl command accordingly...
+	case "${method}" in
+		GET)
+			curl -s "${headers[@]}" "${github_api_url}${endpoint}"
+			;;
+		POST)
+			# For POST requests, always set the Content-Type header:
+			headers+=("-H" "Content-Type: application/json")
+
+			# If data is provided, include it in the request:
+			if [ -n "${data}" ]; then
+				curl -s -X POST "${headers[@]}" -d "${data}" "${github_api_url}${endpoint}"
+			else
+				# Handle cases where POST data is required but not provided:
+				echo "ERROR: POST request requires data."
+				on_error 1
+			fi
+			;;
+		*)
+			echo "ERROR: Invalid HTTP method: ${method}."
+			on_error 1
+			;;
+	esac
+}
+
+# Posts a comment about missing YAML blocks.
+post_missing_yaml_comment() {
+	local comment="Hello! 👋
+
+I've noticed that your commit doesn't contain the expected YAML metadata blocks. This typically happens when your development environment isn't properly set up with the stdlib git hooks.
+
+Here's how to fix this:
+
+1. Install project dependencies (run this command in the top-level directory of the project):
+
+   \`\`\`bash
+   make install
+   \`\`\`
+
+2. Initialize the development environment (this sets up the Git hooks among other things):
+
+   \`\`\`bash
+   make init
+   \`\`\`
+
+If you're still having issues, please check our [development guide][development-guide] for more information.
+
+Thank you for your contribution!
+
+[development-guide]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/development.md"
+
+	if [ "${dry_run}" -eq 1 ]; then
+		echo "=== WOULD POST COMMENT (Missing YAML blocks) ==="
+		echo "${comment}"
+		echo "=============================================="
+	else
+		if ! github_api "POST" "/repos/${repo_owner}/${repo_name}/issues/${pr_number}/comments" "{\"body\":$(echo "${comment}" | jq -R -s -c .)}"; then
+			echo "Failed to post comment on PR."
+			on_error 1
+		fi
+	fi
+}
+
+# Posts a comment about missing dependencies.
+#
+# $1 - array of missing dependency names
+post_missing_dependencies_comment() {
+	local install_instructions=""
+	local combined_instructions=""
+	local dep_instructions=""
+	local c_linting_deps=("lint_c_src" "lint_c_examples" "lint_c_benchmarks" "lint_c_tests_fixtures")
+	local missing_deps=("$@")
+	local processed_deps=()
+	local found_c_deps=()
+	local has_c_linting_dep=0
+	local dep_list=""
+	local comment=""
+	local dep=""
+
+	# Identify C linting dependencies:
+	for dep in "${missing_deps[@]}"; do
+		for c_dep in "${c_linting_deps[@]}"; do
+			if [ "${dep}" = "${c_dep}" ]; then
+				found_c_deps+=("${dep}")
+				has_c_linting_dep=1
+			fi
+		done
+	done
+
+	# Process each dependency and build combined instructions:
+	for dep in "${missing_deps[@]}"; do
+		# Skip if we've already processed this dependency type...
+		if [[ " ${processed_deps[*]} " == *" ${dep} "* ]]; then
+			continue
+		fi
+
+		# Special handling for C linting dependencies...
+		if [ "${has_c_linting_dep}" -eq 1 ]; then
+			# Check if this is a C linting dependency...
+			is_c_dep=0
+			for c_dep in "${found_c_deps[@]}"; do
+				if [ "${dep}" = "${c_dep}" ]; then
+					is_c_dep=1
+					break
+				fi
+			done
+
+			if [ "${is_c_dep}" -eq 1 ]; then
+				# If this is the first C linting dependency we're processing...
+				if [ "${#processed_deps[@]}" -eq 0 ] || ! [[ " ${processed_deps[*]} " == *"lint_c_"* ]]; then
+					# Create a list of all C linting dependencies that are missing...
+					dep_list=""
+					for c_dep in "${found_c_deps[@]}"; do
+						if [ -n "$dep_list" ]; then
+							dep_list="${dep_list}, "
+						fi
+						dep_list="${dep_list}\`${c_dep}\`"
+						processed_deps+=("${c_dep}")
+					done
+
+					dep_instructions="To install C linting dependencies for ${dep_list}, run the following command in the top-level directory of the project:
+
+\`\`\`bash
+make deps-install-cppcheck
+\`\`\`"
+
+					# Add to combined instructions:
+					combined_instructions="${combined_instructions}
+
+## For C linting dependencies
+
+${dep_instructions}"
+				fi
+				continue
+			fi
+		fi
+
+		processed_deps+=("${dep}")
+
+		case "${dep}" in
+			"lint_shell")
+				dep_instructions="To install ShellCheck (run this command in the top-level directory of the project):
+
+\`\`\`bash
+make install-deps-shellcheck
+\`\`\`"
+				;;
+			"lint_python")
+				dep_instructions="To install Python linting dependencies, you'll need Python and pip installed on your system.
+
+Run this command in the top-level directory of the project:
+
+\`\`\`bash
+make install-deps-python
+\`\`\`"
+				;;
+			"lint_r")
+				dep_instructions="To install R linting dependencies, you'll need R installed on your system.
+
+Run this command in the top-level directory of the project:
+
+\`\`\`bash
+make install-deps-r
+\`\`\`"
+				;;
+			"run_cpp_benchmarks")
+				dep_instructions=""
+				;;
+			*)
+				dep_instructions=""
+				;;
+		esac
+
+		if [ -n "${dep_instructions}" ]; then
+			combined_instructions="${combined_instructions}
+
+## For dependency: \`${dep}\`
+
+${dep_instructions}"
+		fi
+	done
+
+	# If we have specific instructions for some dependencies, use them
+	if [ -n "${combined_instructions}" ]; then
+		install_instructions="Here are the installation instructions for your missing dependencies:
+${combined_instructions}
+
+If you'd like to see more details about what dependencies are missing for a full local development environment, you can optionally run:
+
+\`\`\`bash
+make deps-diagnostics
+\`\`\`
+
+The diagnostics will show you which dependencies are missing. Follow the instructions in our [development guide][development-guide] to install them as needed.
+
+[development-guide]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/development.md"
+	else
+		install_instructions="Please run the following command in the top-level directory of the project to check which dependencies are missing:
+
+\`\`\`bash
+make deps-diagnostics
+\`\`\`
+
+The diagnostics will show you which dependencies are missing. Follow the instructions in our [development guide][development-guide] to install them as needed.
+
+[development-guide]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/development.md"
+	fi
+
+	comment="Hello! 👋
+
+I've noticed that your commit metadata indicates missing dependencies: \`$(IFS=', '; echo "${missing_deps[*]}")\`.
+
+${install_instructions}
+
+After installing the dependencies, any new commits will automatically include the required metadata.
+
+Thank you for your contribution!"
+
+	if [ "${dry_run}" -eq 1 ]; then
+		echo "=== WOULD POST COMMENT (Missing dependencies) ==="
+		echo "${comment}"
+		echo "=============================================="
+	else
+		if ! github_api "POST" "/repos/${repo_owner}/${repo_name}/issues/${pr_number}/comments" "{\"body\":$(echo "${comment}" | jq -R -s -c .)}"; then
+			echo "Failed to post comment on PR."
+			on_error 1
+		fi
+	fi
+}
+
+# Main execution sequence.
+main() {
+	local missing_deps_string=""
+	local pre_commit_report=""
+	local pre_push_report=""
+	local missing_deps=()
+	local IFS=$'\n'
+
+	if [ -z "${pr_number}" ]; then
+		echo "ERROR: Pull request number is required." >&2
+		on_error 1
+	fi
+
+	if [ -z "${commit_metadata}" ]; then
+		echo "ERROR: Commit metadata is required." >&2
+		on_error 1
+	fi
+
+	echo "Checking commit metadata for PR #${pr_number}..."
+
+	# Check if the commit metadata is valid JSON:
+	if ! echo "${commit_metadata}" | jq . > /dev/null 2>&1; then
+		echo "Invalid JSON metadata."
+		post_missing_yaml_comment
+		exit 1
+	fi
+
+	# Check if the commit metadata contains the expected YAML blocks:
+	pre_commit_report=$(echo "${commit_metadata}" | jq -r '.[] | select(.type == "pre_commit_static_analysis_report") | .report')
+	pre_push_report=$(echo "${commit_metadata}" | jq -r '.[] | select(.type == "pre_push_report") | .report')
+
+	if [ "${pre_commit_report}" == "null" ] || [ -z "${pre_commit_report}" ] || [ "${pre_push_report}" == "null" ] || [ -z "${pre_push_report}" ]; then
+		echo "Missing YAML blocks in commit metadata."
+		post_missing_yaml_comment
+		exit 1
+	fi
+
+	# Check for missing dependencies in the pre-commit report:
+	missing_deps_string=$(echo "${pre_commit_report}" | jq -r '.[] | select(.status == "missing_dependencies") | .task')
+
+	if [ -n "${missing_deps_string}" ] && [ "${missing_deps_string}" != "null" ]; then
+		echo "Found missing dependencies: ${missing_deps_string}"
+		missing_deps=()
+		while IFS= read -r line; do
+			if [ -n "$line" ]; then
+				missing_deps+=("$line")
+			fi
+		done <<< "${missing_deps_string}"
+
+		# Only post a comment if we actually have missing dependencies...
+		if [ ${#missing_deps[@]} -gt 0 ]; then
+			# Post a single comment with all missing dependencies:
+			post_missing_dependencies_comment "${missing_deps[@]}"
+			exit 1
+		else
+			echo "No valid missing dependencies found after parsing."
+		fi
+	fi
+
+	echo "Commit metadata looks good."
+	print_success
+	exit 0
+}
+
+# Run main:
+main

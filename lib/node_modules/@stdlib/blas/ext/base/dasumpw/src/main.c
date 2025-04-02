@@ -55,16 +55,16 @@ double API_SUFFIX(stdlib_strided_dasumpw)( const CBLAS_INT N, const double *X, c
 *
 * @param N        number of indexed elements
 * @param X        input array
-* @param strideX  index increment
+* @param strideX  stride length
 * @param offsetX  starting index
 * @return         output value
 */
 double API_SUFFIX(stdlib_strided_dasumpw_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
-	double sum;
 	CBLAS_INT ix;
 	CBLAS_INT M;
 	CBLAS_INT n;
 	CBLAS_INT i;
+	double sum;
 	double s0;
 	double s1;
 	double s2;
@@ -77,10 +77,10 @@ double API_SUFFIX(stdlib_strided_dasumpw_ndarray)( const CBLAS_INT N, const doub
 	if ( N <= 0 ) {
 		return 0.0;
 	}
-	if ( N == 1 || strideX == 0 ) {
-		return stdlib_base_abs( X[ 0 ] );
-	}
 	ix = offsetX;
+	if ( strideX == 0 ) {
+		return N * stdlib_base_abs( X[ ix ] );
+	}
 	if ( N < 8 ) {
 		// Use simple summation...
 		sum = 0.0;

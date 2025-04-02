@@ -28,7 +28,7 @@ int main( void ) {
 	int i;
 	int j;
 	for ( i = 0; i < 3; i++ ) {
-		for ( j = 0; j < 3; j++ ){
+		for ( j = 0; j < 3; j++ ) {
 			b = stdlib_base_boxcox1p( x[ i ], l[ j ] );
 			printf ( "boxcox1p(%lf, %lf) = %lf\n", x[ i ], l[ j ], b );
 		}

@@ -30,7 +30,7 @@
       "task": "build",
       "wasm": false,
       "src": [
-        "./src/trunc.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -40,14 +40,16 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/napi/unary"
+        "@stdlib/math/base/napi/unary",
+        "@stdlib/math/base/special/floor",
+        "@stdlib/math/base/special/ceil"
       ]
     },
     {
       "task": "benchmark",
       "wasm": false,
       "src": [
-        "./src/trunc.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -56,13 +58,16 @@
         "-lm"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/math/base/special/floor",
+        "@stdlib/math/base/special/ceil"
+      ]
     },
     {
       "task": "examples",
       "wasm": false,
       "src": [
-        "./src/trunc.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -71,13 +76,16 @@
         "-lm"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/math/base/special/floor",
+        "@stdlib/math/base/special/ceil"
+      ]
     },
     {
       "task": "build",
       "wasm": true,
       "src": [
-        "./src/trunc.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -86,7 +94,10 @@
         "-lm"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/math/base/special/floor",
+        "@stdlib/math/base/special/ceil"
+      ]
     }
   ]
 }

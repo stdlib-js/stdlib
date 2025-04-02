@@ -1,0 +1,13 @@
+
+{{alias}}
+    Maximum safe nth Lucas number when stored in single-precision floating-point
+    format.
+
+    Examples
+    --------
+    > {{alias}}
+    34
+
+    See Also
+    --------
+

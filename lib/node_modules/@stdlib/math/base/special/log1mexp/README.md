@@ -150,7 +150,7 @@ int main( void ) {
     double x;
     double v;
     int i;
-    
+
     for ( i = 0; i < 100; i++ ) {
         x = ( ( (double)rand() / (double)RAND_MAX ) * 20.0 ) - 10.0;
         v = stdlib_base_log1mexp( x );

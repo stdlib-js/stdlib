@@ -28,9 +28,9 @@
 * @param X        input array
 * @param strideX  stride length
 */
-void API_SUFFIX(c_dapx)( const CBLAS_INT N, const double alpha, double *X, const CBLAS_INT strideX ) {
+void API_SUFFIX(stdlib_strided_dapx)( const CBLAS_INT N, const double alpha, double *X, const CBLAS_INT strideX ) {
 	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
-	API_SUFFIX(c_dapx_ndarray)( N, alpha, X, strideX, ox );
+	API_SUFFIX(stdlib_strided_dapx_ndarray)( N, alpha, X, strideX, ox );
 }
 
 /**
@@ -42,7 +42,7 @@ void API_SUFFIX(c_dapx)( const CBLAS_INT N, const double alpha, double *X, const
 * @param strideX  stride length
 * @param offsetX  starting index
 */
-void API_SUFFIX(c_dapx_ndarray)( const CBLAS_INT N, const double alpha, double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+void API_SUFFIX(stdlib_strided_dapx_ndarray)( const CBLAS_INT N, const double alpha, double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
 	CBLAS_INT ix;
 	CBLAS_INT m;
 	CBLAS_INT i;

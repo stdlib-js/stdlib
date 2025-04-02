@@ -133,7 +133,7 @@ while ( true ) {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/math/base/special/spence`][@stdlib/math/base/special/spence]</span><span class="delimiter">: </span><span class="description">spence’s function, also known as the dilogarithm.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/spence`][@stdlib/math/base/special/spence]</span><span class="delimiter">: </span><span class="description">spence's function, also known as the dilogarithm.</span>
 
 </section>
 

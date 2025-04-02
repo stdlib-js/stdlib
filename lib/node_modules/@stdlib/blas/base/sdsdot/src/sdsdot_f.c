@@ -17,10 +17,10 @@
 */
 
 /**
- * Compute the dot product of two single-precision floating-point vectors with extended accumulation.
- *
- * @see <a href="http://www.netlib.org/lapack/expolore-html/df/d28/group__single__blas__level1.html">sdsdot</a>
- */
+* Compute the dot product of two single-precision floating-point vectors with extended accumulation.
+*
+* @see <a href="http://www.netlib.org/lapack/expolore-html/df/d28/group__single__blas__level1.html">sdsdot</a>
+*/
 #include "stdlib/blas/base/sdsdot.h"
 #include "stdlib/blas/base/sdsdot_fortran.h"
 #include "stdlib/blas/base/shared.h"

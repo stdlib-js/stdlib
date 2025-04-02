@@ -91,17 +91,20 @@ static double rand_double( void ) {
 */
 static double benchmark( void ) {
 	double elapsed;
-	double delta;
-	double z;
+	double delta[ 100 ];
+	double z[ 100 ];
 	double y;
 	double t;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		z[ i ] = ( rand_double() * 100.0 );
+		delta[ i ] = ( rand_double() * 100.0 );
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		z = ( rand_double() * 100.0 );
-		delta = ( rand_double() * 100.0 );
-		y = stdlib_base_gamma_delta_ratio( z, delta );
+		y = stdlib_base_gamma_delta_ratio( z[ i%100 ], delta[ i%100 ] );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;
