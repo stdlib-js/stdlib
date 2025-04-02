@@ -56,14 +56,10 @@
     "distribution",
     "dist",
     "bradford",
-    "bradford-distribution",
-    "parameter",
-    "shape-parameter",
     "continuous",
     "skewed",
     "median",
     "quantile",
-    "location",
     "percentile"
   ]
 }

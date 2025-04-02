@@ -18,7 +18,6 @@
 
 #include "stdlib/stats/base/dists/uniform/stdev.h"
 #include "stdlib/math/base/assert/is_nan.h"
-#include "stdlib/math/base/special/sqrt.h"
 
 /**
 * Returns the standard deviation of a uniform distribution.
@@ -31,6 +30,9 @@
 * double v = stdev( 4.0, 12.0 );
 * // returns ~2.309
 */
+
+static const double SQRT_ONE_TWELFTH = 0.28867513459481287; // stdlib_base_sqrt( 1.0/12.0 )
+
 double stdlib_base_dists_uniform_stdev( const double a, const double b ) {
 	if (
 		stdlib_base_is_nan( a ) ||
@@ -39,5 +41,5 @@ double stdlib_base_dists_uniform_stdev( const double a, const double b ) {
 	) {
 		return 0.0 / 0.0; // NaN
 	}
-	return stdlib_base_sqrt( 1.0/12.0 ) * ( b-a );
+	return  SQRT_ONE_TWELFTH * ( b-a );
 }
