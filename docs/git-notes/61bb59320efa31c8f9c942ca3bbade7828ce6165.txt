@@ -1,0 +1,10 @@
+---
+type: amend-message
+---
+feat(stats): add C implementation for `stats/base/dists/hypergeometric/skewness`
+
+PR-URL: #4560
+Closes: #3666
+
+Co-authored-by: stdlib-bot <noreply@stdlib.io>
+Reviewed-by: Philipp Burckhardt <pburckhardt@outlook.com>

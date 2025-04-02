@@ -1,0 +1,28 @@
+
+{{alias}}( value, dtype )
+    Returns a boolean indicating whether a scalar value can be safely cast or,
+    for floating-point data types, downcast to specified ndarray data type.
+
+    Parameters
+    ----------
+    value: any
+        Input value.
+
+    dtype: string
+        ndarray data type.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a scalar value can be safely cast.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 3.14, 'float64' )
+    true
+    > bool = {{alias}}( 3.14, 'int32' )
+    false
+
+    See Also
+    --------
+

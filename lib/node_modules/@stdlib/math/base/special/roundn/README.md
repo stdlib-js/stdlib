@@ -78,20 +78,18 @@ v = roundn( 12368.0, 3 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var roundn = require( '@stdlib/math/base/special/roundn' );
 
-var x;
-var n;
-var v;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, -50.0, 50.0, opts );
+var n = discreteUniform( 100, -5, 0, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    x = (randu()*100.0) - 50.0;
-    n = roundn( randu()*5.0, 0 );
-    v = roundn( x, -n );
-    console.log( 'x: %d. Number of decimals: %d. Rounded: %d.', x, n, v );
-}
+logEachMap( 'x: %0.4f. Number of decimals: %d. Rounded: %0.4f.', x, n, roundn );
 ```
 
 </section>
