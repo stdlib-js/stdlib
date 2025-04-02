@@ -2967,7 +2967,7 @@ interface Namespace {
 	* var real = require( '@stdlib/complex/float64/real' );
 	* var imag = require( '@stdlib/complex/float64/imag' );
 	*
-	* var v = cceil( new Complex128( -4.2, 5.5 ) );
+	* var v = ns.csignum( new Complex128( -4.2, 5.5 ) );
 	* // returns <Complex128>
 	*
 	* var re = real( v );
