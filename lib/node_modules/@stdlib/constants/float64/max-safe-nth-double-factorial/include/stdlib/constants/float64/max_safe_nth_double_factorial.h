@@ -22,6 +22,6 @@
 /**
 * Macro for the maximum safe nth double factorial when stored in double-precision floating-point format.
 */
-#define STDLIB_CONSTANT_FLOAT64_MAX_SAFE_NTH_DOUBLE_FACTORIAL 301
+#define STDLIB_CONSTANT_FLOAT64_MAX_SAFE_NTH_DOUBLE_FACTORIAL 300
 
 #endif // !STDLIB_CONSTANTS_FLOAT64_MAX_SAFE_NTH_DOUBLE_FACTORIAL_H

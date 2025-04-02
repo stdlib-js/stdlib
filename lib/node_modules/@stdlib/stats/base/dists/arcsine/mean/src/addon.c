@@ -19,5 +19,4 @@
 #include "stdlib/math/base/napi/binary.h"
 #include "stdlib/stats/base/dists/arcsine/mean.h"
 
-// cppcheck-suppress shadowFunction
 STDLIB_MATH_BASE_NAPI_MODULE_DD_D( stdlib_base_dists_arcsine_mean )
