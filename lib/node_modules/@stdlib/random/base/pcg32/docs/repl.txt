@@ -1,0 +1,188 @@
+
+{{alias}}()
+    Returns a pseudorandom integer on the interval `[1, 2147483646]`.
+
+    This pseudorandom number generator (PRNG) is a linear congruential
+    pseudorandom number generator (LCG) based on Park and Miller.
+
+    The generator has a period of approximately `2.1e9`.
+
+    An LCG is fast and uses little memory. On the other hand, because the
+    generator is a simple LCG, the generator has recognized shortcomings. By
+    today's PRNG standards, the generator's period is relatively short. More
+    importantly, the "randomness quality" of the generator's output is lacking.
+    These defects make the generator unsuitable, for example, in Monte Carlo
+    simulations and in cryptographic applications.
+
+    Returns
+    -------
+    r: integer
+        Pseudorandom number.
+
+    Examples
+    --------
+    > var r = {{alias}}();
+
+
+{{alias}}.normalized()
+    Returns a pseudorandom number on the interval `[0,1)`.
+
+    Returns
+    -------
+    r: number
+        Pseudorandom number.
+
+    Examples
+    --------
+    > var r = {{alias}}.normalized();
+
+
+{{alias}}.factory( [options] )
+    Returns a linear congruential pseudorandom number generator (LCG).
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Options.
+
+    options.seed: integer|ArrayLikeObject<integer> (optional)
+        Pseudorandom number generator seed. The seed may be either a positive
+        signed 32-bit integer on the interval `[1, 2147483646]` or, for
+        arbitrary length seeds, an array-like object containing signed 32-bit
+        integers.
+
+    options.state: Int32Array (optional)
+        Pseudorandom number generator state. If provided, the `seed` option is
+        ignored.
+
+    options.copy: boolean (optional)
+        Boolean indicating whether to copy a provided pseudorandom number
+        generator state. Setting this option to `false` allows sharing state
+        between two or more pseudorandom number generators. Setting this option
+        to `true` ensures that a returned generator has exclusive control over
+        its internal state. Default: true.
+
+    Returns
+    -------
+    rand: Function
+        Pseudorandom number generator (PRNG).
+
+    Examples
+    --------
+    // Basic usage:
+    > var rand = {{alias}}.factory();
+    > r = rand();
+    > r = rand();
+
+    // Provide a seed:
+    > rand = {{alias}}.factory( { 'seed': 1234 } );
+    > r = rand()
+    20739838
+
+
+{{alias}}.NAME
+    Generator name.
+
+    Examples
+    --------
+    > var str = {{alias}}.NAME
+    'minstd'
+
+
+{{alias}}.MIN
+    Minimum possible value.
+
+    Examples
+    --------
+    > var v = {{alias}}.MIN
+    1
+
+
+{{alias}}.MAX
+    Maximum possible value.
+
+    Examples
+    --------
+    > var v = {{alias}}.MAX
+    2147483646
+
+
+{{alias}}.seed
+    Pseudorandom number generator seed.
+
+    Examples
+    --------
+    > var seed = {{alias}}.seed;
+
+
+{{alias}}.seedLength
+    Length of generator seed.
+
+    Examples
+    --------
+    > var len = {{alias}}.seedLength;
+
+
+{{alias}}.state
+    Generator state.
+
+    Examples
+    --------
+    > var r = {{alias}}()
+    <number>
+    > r = {{alias}}()
+    <number>
+    > r = {{alias}}()
+    <number>
+
+    // Get the current state:
+    > var state = {{alias}}.state
+    <Int32Array>
+
+    > r = {{alias}}()
+    <number>
+    > r = {{alias}}()
+    <number>
+
+    // Set the state:
+    > {{alias}}.state = state;
+
+    // Replay the last two pseudorandom numbers:
+    > r = {{alias}}()
+    <number>
+    > r = {{alias}}()
+    <number>
+
+
+{{alias}}.stateLength
+    Length of generator state.
+
+    Examples
+    --------
+    > var len = {{alias}}.stateLength;
+
+
+{{alias}}.byteLength
+    Size (in bytes) of generator state.
+
+    Examples
+    --------
+    > var sz = {{alias}}.byteLength;
+
+
+{{alias}}.toJSON()
+    Serializes the pseudorandom number generator as a JSON object.
+
+    Returns
+    -------
+    out: Object
+        JSON representation.
+
+    Examples
+    --------
+    > var o = {{alias}}.toJSON()
+    { 'type': 'PRNG', 'name': '...', 'state': {...}, 'params': [] }
+
+    See Also
+    --------
+
