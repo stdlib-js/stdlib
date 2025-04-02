@@ -25,7 +25,7 @@
 *
 * @param x       input value
 * @param mu      location parameter
-* @param beta    sclae parameter
+* @param beta    scale parameter
 * @return        evaluated CDF
 *
 * @example

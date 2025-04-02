@@ -97,7 +97,7 @@ jobs:
 
       # Send Slack notification if job fails:
       - name: 'Send notification to Slack in case of failure'
-        uses: 8398a7/action-slack@28ba43ae48961b90635b50953d216767a6bea486 # v3.16.2
+        uses: 8398a7/action-slack@1750b5085f3ec60384090fb7c52965ef822e869e # v3.18.0
         with:
           status: ${{ job.status }}
           channel: '#npm-ci'

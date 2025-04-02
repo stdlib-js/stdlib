@@ -66,20 +66,17 @@ v = logf( 2.0, -4.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/array/discrete-uniform' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var logf = require( '@stdlib/math/base/special/logf' );
 
 var opts = {
     'dtype': 'float32'
 };
+var x = discreteUniform( 100, 0, 100, opts );
+var b = discreteUniform( 100, 0, 5, opts );
 
-var x = randu( 100, 0, 100, opts );
-var b = randu( 100, 0, 5, opts );
-
-var i;
-for ( i = 0; i < 100; i++ ) {
-    console.log( 'logf( %d, %d ) = %d', x[ i ], b[ i ], logf( x[ i ], b[ i ] ) );
-}
+logEachMap( 'logf( %0.4f, %0.4f ) = %0.4f', x, b, logf );
 ```
 
 </section>
