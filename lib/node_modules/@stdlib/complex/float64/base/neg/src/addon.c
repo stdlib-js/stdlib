@@ -19,5 +19,4 @@
 #include "stdlib/complex/float64/base/neg.h"
 #include "stdlib/math/base/napi/unary.h"
 
-// cppcheck-suppress shadowFunction
 STDLIB_MATH_BASE_NAPI_MODULE_Z_Z( stdlib_base_complex128_neg )
