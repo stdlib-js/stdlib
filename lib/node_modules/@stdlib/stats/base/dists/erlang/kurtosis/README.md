@@ -143,6 +143,103 @@ for ( i = 0; i < 10; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/erlang/kurtosis.h"
+```
+
+#### stdlib_base_dists_erlang_kurtosis( k, lambda )
+
+Returns the [excess kurtosis][kurtosis] of an [Erlang][erlang-distribution] distribution with parameters `k` (shape parameter) and `lambda` (rate parameter).
+
+```c
+double y = stdlib_base_dists_erlang_kurtosis( 1.0, 1.0 );
+// returns 6.0
+```
+
+The function accepts the following arguments:
+
+-   **k**: `[in] int32_t` shape parameter.
+-   **lambda**: `[in] double` rate parameter.
+
+```c
+double stdlib_base_dists_erlang_kurtosis( const isnt32_t k, const double lambda );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section`
+element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/erlang/kurtosis.h"
+#include "stdlib/math/base/special/round.h"
+#include "stdlib/constants/float64/eps.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double lambda;
+    int32_t k;
+    double y;
+    int i;
+
+    for ( i = 0; i < 10; i++ ) {
+        k = stdlib_base_round( random_uniform( 0.0, 10.0 ) );
+        lambda = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 10.0 );
+        y = stdlib_base_dists_erlang_kurtosis( k, lambda );
+        printf( "k: %d, λ: %lf, Kurt(X;k,λ): %lf\n", k, lambda, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="references">
