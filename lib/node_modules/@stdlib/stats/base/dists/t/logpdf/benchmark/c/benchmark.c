@@ -16,12 +16,12 @@
 * limitations under the License.
 */
 
-#include <sys/time.h>
 #include "stdlib/stats/base/dists/t/logpdf.h"
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <sys/time.h>
 
 #define NAME "t-logpdf"
 #define ITERATIONS 1000000

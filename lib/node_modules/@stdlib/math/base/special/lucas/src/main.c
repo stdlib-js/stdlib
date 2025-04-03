@@ -114,8 +114,8 @@ static const int64_t lucas_value[ 77 ] = {
 * // returns NaN
 */
 double stdlib_base_lucas( const int32_t n ) {
-    if ( n < 0 || n > STDLIB_CONSTANT_FLOAT64_MAX_SAFE_NTH_LUCAS ) {
-        return 0.0 / 0.0; // NaN
-    }
-    return lucas_value[ n ];
+	if ( n < 0 || n > STDLIB_CONSTANT_FLOAT64_MAX_SAFE_NTH_LUCAS ) {
+		return 0.0 / 0.0; // NaN
+	}
+	return lucas_value[ n ];
 }
