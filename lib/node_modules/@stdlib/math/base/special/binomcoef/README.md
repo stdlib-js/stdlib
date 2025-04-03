@@ -124,19 +124,17 @@ v = binomcoef( 5.5, 2 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var binomcoef = require( '@stdlib/math/base/special/binomcoef' );
 
-var n;
-var k;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var n = discreteUniform( 100, -10, 30, opts );
+var k = discreteUniform( 100, 0, 20, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    n = round( (randu()*30.0) - 10.0 );
-    k = round( randu()*20.0 );
-    console.log( '%d choose %d = %d', n, k, binomcoef( n, k ) );
-}
+logEachMap( '%d choose %d = %d', n, k, binomcoef );
 ```
 
 </section>
