@@ -19,5 +19,4 @@
 #include "stdlib/math/base/special/hyp2f1.h"
 #include "stdlib/math/base/napi/quaternary.h"
 
-// cppcheck-suppress shadowFunction
 STDLIB_MATH_BASE_NAPI_MODULE_DDDD_D( stdlib_base_hyp2f1 )
