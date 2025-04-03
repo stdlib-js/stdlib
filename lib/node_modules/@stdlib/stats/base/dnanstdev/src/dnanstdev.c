@@ -17,7 +17,7 @@
 */
 
 #include "stdlib/stats/base/dnanstdev.h"
-#include "stdlib/stats/base/dnanstdevpn.h"
+#include "stdlib/stats/strided/dnanstdevpn.h"
 #include <stdint.h>
 
 /**
