@@ -78,7 +78,7 @@ y = pdf( 0.0, NaN );
 // returns NaN
 ```
 
-If provided a `x` outside the support `[0,1]`, the function returns `0`.
+If provided an `x` value which is outside the support `[0,1]`, the function returns `0`.
 
 ```javascript
 var y = pdf( 2.0, 1.0 );

@@ -329,13 +329,13 @@ interface Namespace {
 	*
 	* ## Notes
 	*
-	* -   When `val` is a string, the function checks whether the characters of the search string are found in the input string. The search is case-sensitive.
-	* -   When `val` is an array-like object, the function checks whether the input array contains an element strictly equal to the specified search value.
+	* -   When `value` is a string, the function checks whether the characters of the search string are found in the input string. The search is case-sensitive.
+	* -   When `value` is an array-like object, the function checks whether the input array contains an element which is the same as the specified search value.
 	* -   For strings, this function is modeled after `String.prototype.includes`, part of the ECMAScript 6 specification. This function is different from a call to `String.prototype.includes.call` insofar as type-checking is performed for all arguments.
-	* -   The function does not distinguish between positive and negative zero.
+	* -   The function does distinguish between positive and negative zero.
 	* -   If `position < 0`, the search is performed for the entire input array or string.
 	*
-	* @param val - input value
+	* @param value - input value
 	* @param searchValue - search value
 	* @param position - position at which to start searching for `searchValue` (default: 0)
 	* @throws second argument must be a primitive string primitive when the first argument is a string

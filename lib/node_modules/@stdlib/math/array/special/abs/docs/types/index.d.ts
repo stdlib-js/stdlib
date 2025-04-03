@@ -73,6 +73,7 @@ interface Unary {
 	* // returns [ 1.0, 2.0, 3.0 ]
 	*
 	* var bool = ( out === y );
+	* // returns true
 	*/
 	assign<V extends OutputArray<number>>( x: InputArray<number>, out: V ): V;
 }
@@ -95,6 +96,7 @@ interface Unary {
 * // returns [ 1.0, 2.0, 3.0 ]
 *
 * var bool = ( out === y );
+* // returns true
 */
 declare const abs: Unary;
 

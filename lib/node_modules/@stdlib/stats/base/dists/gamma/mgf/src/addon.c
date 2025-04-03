@@ -19,5 +19,4 @@
 #include "stdlib/stats/base/dists/gamma/mgf.h"
 #include "stdlib/math/base/napi/ternary.h"
 
-// cppcheck-suppress shadowFunction
 STDLIB_MATH_BASE_NAPI_MODULE_DDD_D( stdlib_base_dists_gamma_mgf )
