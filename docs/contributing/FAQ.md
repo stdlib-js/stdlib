@@ -27,7 +27,7 @@ limitations under the License.
 -   [How can I set up my development environment to contribute to stdlib?](#setup-dev-environment)
 -   [How can I install cppcheck?](#install-cppcheck)
 -   [I am seeing different return values in the JavaScript and C implementation for the same implementation.](#js-vs-c-return-values)
--   [What should I do if linting on my commits fails because my headings or lines exceed the maximum permissible length?](#markdown-heading-length)
+-   [What should I do if linting on my commits fails because my headings or lines exceed the maximum permissible length?](#max-length)
 -   [What should I do if JavaScript linting on my commits fails because my function exceeds the maximum permissible number of parameters?](#max-params)
 -   [I have opened a pull request, where can I seek feedback?](#pr-feedback)
 -   [I need to generate fixtures for my tests. How can I do that, and what are the best references for inspiration?](#generate-fixtures)
@@ -98,7 +98,7 @@ If they pass, adjust the tolerance and add a note to the C tests indicating that
 - [Reference Discussion][ref-discussion]
 - [Reference Comment][ref-comment]
 
-<a name="markdown-heading-length"></a>
+<a name="max-length"></a>
 
 ## What should I do if linting on my commits fails because my headings or lines exceed the maximum permissible length?
 
@@ -120,7 +120,7 @@ Consider whether the heading/line can be shortened by renaming variables (e.g., 
 
 [Reference Comment][markdown-len-ref]
 
-<a name="markdown-heading-length"></a>
+<a name="max-params"></a>
 
 ## What should I do if JavaScript linting on my commits fails because my function exceeds the maximum permissible number of parameters?
 
