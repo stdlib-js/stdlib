@@ -54,7 +54,7 @@
     // Using ndarrays...
     > var x = {{alias:@stdlib/ndarray/ctor}}( dtype, xbuf, shape, sx, ox, order );
     > var y = {{alias:@stdlib/ndarray/ctor}}( dtype, ybuf, shape, sy, oy, order );
-    > {{alias}}( [ x, y ], {{alias:@stdlib/math/base/special/abs}}, {{alias:@stdlib/math/base/special/identity}} );
+    > {{alias}}( [ x, y ], {{alias:@stdlib/math/base/special/abs}}, {{alias:@stdlib/number/float64/base/identity}} );
     > y.data
     <Float64Array>[ 1.0, 2.0, 3.0, 4.0 ]
 
@@ -75,7 +75,7 @@
     ...     'offset': oy,
     ...     'order': order
     ... };
-    > {{alias}}( [ x, y ], {{alias:@stdlib/math/base/special/abs}}, {{alias:@stdlib/math/base/special/identity}} );
+    > {{alias}}( [ x, y ], {{alias:@stdlib/math/base/special/abs}}, {{alias:@stdlib/number/float64/base/identity}} );
     > y.data
     <Float64Array>[ 1.0, 2.0, 3.0, 4.0 ]
 

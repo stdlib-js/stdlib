@@ -75,13 +75,15 @@ static double tic( void ) {
 }
 
 /**
-* Generates a random number on the interval [0,20).
+* Generates a random number on the interval [min,max).
 *
-* @return random number
+* @param min    minimum value (inclusive)
+* @param max    maximum value (exclusive)
+* @return       random number
 */
-static double rand_double( void ) {
-	int r = rand();
-	return 20.0*(double)r / ( (double)RAND_MAX + 1.0 );
+static double random_uniform( const double min, const double max ) {
+	double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+	return min + ( v*(max-min) );
 }
 
 /**
@@ -98,10 +100,11 @@ static double benchmark( void ) {
 	double t;
 	int i;
 
+	// Generate random parameters for the triangular distribution:
 	for ( i = 0; i < 100; i++ ) {
-		a[ i ] = rand_double() * 20.0;
-		b[ i ] = ( rand_double() * 20.0 ) + a[ i ];
-		c[ i ] = ( rand_double() * ( b[i] - a[i] ) ) + a[i];
+		a[ i ] = random_uniform( 0.0, 20.0 ); // Lower bound
+		b[ i ] = random_uniform( a[i], a[i]+20.0 ); // Upper bound
+		c[ i ] = random_uniform( a[i], b[i] ); // Mode
 	}
 
 	t = tic();

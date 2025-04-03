@@ -36,7 +36,7 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/stats/base/snanmeanpn",
+        "@stdlib/stats/strided/snanmeanpn",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
@@ -57,7 +57,7 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/stats/base/snanmeanpn"
+        "@stdlib/stats/strided/snanmeanpn"
       ]
     },
     {
@@ -73,7 +73,7 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/stats/base/snanmeanpn"
+        "@stdlib/stats/strided/snanmeanpn"
       ]
     }
   ]

@@ -29,7 +29,7 @@
 * @return     median
 *
 * @example
-* double y = stdlib_base_triangular_median( 0.0, 1.0, 0.5 );
+* double y = stdlib_base_dists_triangular_median( 0.0, 1.0, 0.5 );
 * // returns 0.5
 */
 double stdlib_base_dists_triangular_median( const double a, const double b, const double c ) {
