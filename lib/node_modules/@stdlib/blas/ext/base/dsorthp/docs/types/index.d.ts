@@ -28,7 +28,7 @@ interface Routine {
 	* @param N - number of indexed elements
 	* @param order - sort order
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns `x`
 	*
 	* @example
@@ -39,7 +39,7 @@ interface Routine {
 	* dsorthp( x.length, 1, x, 1 );
 	* // x => <Float64Array>[ -4.0, -2.0, 1.0, 3.0 ]
 	*/
-	( N: number, order: number, x: Float64Array, stride: number ): Float64Array;
+	( N: number, order: number, x: Float64Array, strideX: number ): Float64Array;
 
 	/**
 	* Sorts a double-precision floating-point strided array using heapsort and alternative indexing semantics.
@@ -47,8 +47,8 @@ interface Routine {
 	* @param N - number of indexed elements
 	* @param order - sort order
 	* @param x - input array
-	* @param stride - stride length
-	* @param offset - starting index
+	* @param strideX - stride length
+	* @param offsetX - starting index
 	* @returns `x`
 	*
 	* @example
@@ -59,7 +59,7 @@ interface Routine {
 	* dsorthp.ndarray( x.length, 1, x, 1, 0 );
 	* // x => <Float64Array>[ -4.0, -2.0, 1.0, 3.0 ]
 	*/
-	ndarray( N: number, order: number, x: Float64Array, stride: number, offset: number ): Float64Array;
+	ndarray( N: number, order: number, x: Float64Array, strideX: number, offsetX: number ): Float64Array;
 }
 
 /**
@@ -68,7 +68,7 @@ interface Routine {
 * @param N - number of indexed elements
 * @param order - sort order
 * @param x - input array
-* @param stride - stride length
+* @param strideX - stride length
 * @returns `x`
 *
 * @example

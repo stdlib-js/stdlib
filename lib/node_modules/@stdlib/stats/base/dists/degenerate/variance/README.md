@@ -188,7 +188,7 @@ int main( void ) {
     int i;
 
     for ( i = 0; i < 25; i++ ) {
-        mu = random_uniform( 0.0, 100.0 ) - 50.0;
+        mu = random_uniform( -50.0, 50.0 );
         y = stdlib_base_dists_degenerate_variance( mu );
         printf( "µ: %lf, Var(X;µ): %lf\n", mu, y );
     }

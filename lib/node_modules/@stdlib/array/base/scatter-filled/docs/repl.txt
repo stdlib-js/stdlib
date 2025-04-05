@@ -1,0 +1,48 @@
+
+{{alias}}( fill, len, indices, values, mode )
+    Scatters a list of provided values to specified indices in a new filled
+    "generic" array.
+
+    The function supports broadcasting a `values` array containing a single
+    element against an `indices` array containing one or more elements.
+
+    If `indices` is an empty array, the function returns a filled array.
+
+    Parameters
+    ----------
+    fill: any
+        Fill value.
+
+    len: integer
+        Output array length.
+
+    indices: ArrayLikeObject<integer>
+        List of element indices.
+
+    values: ArrayLikeObject
+        Values to scatter. When `indices` contains one or more elements,
+        `values` must be broadcast compatible with `indices` (i.e., must have
+        either one element or the same number of elements as `indices`).
+
+    mode: string
+        Specifies how to handle an index outside the interval [0, max], where
+        `max` is the maximum possible array index. If equal to 'throw', the
+        function throws an error. If equal to 'normalize', the function throws
+        an error if provided an out-of-bounds normalized index. If equal to
+        'wrap', the function wraps around an index using modulo arithmetic. If
+        equal to 'clamp', the function sets an index to either 0 (minimum index)
+        or the maximum index.
+
+    Returns
+    -------
+    out: Array
+        Output array.
+
+    Examples
+    --------
+    > var out = {{alias}}( null, 4, [ 1, 3 ], [ 20, 40 ], 'throw' )
+    [ null, 20, null, 40 ]
+
+    See Also
+    --------
+

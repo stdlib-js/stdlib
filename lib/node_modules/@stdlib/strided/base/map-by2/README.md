@@ -43,7 +43,7 @@ var mapBy2 = require( '@stdlib/strided/base/map-by2' );
 Applies a binary function to each pair of elements retrieved from strided input arrays according to a callback function and assigns results to a strided output array.
 
 ```javascript
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 
 function accessor( values ) {
     values[ 0 ] *= 2.0;
@@ -82,7 +82,7 @@ The invoked callback function is provided four arguments:
 To set the callback execution context, provide a `thisArg`.
 
 ```javascript
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 
 function accessor( values ) {
     this.count += 1;
@@ -109,7 +109,7 @@ var cnt = context.count;
 The `N` and `stride` parameters determine which elements in the strided arrays are accessed at runtime. For example, to index every other value in `x` and to index the first `N` elements of `y` in reverse order,
 
 ```javascript
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 
 function accessor( values ) {
     values[ 0 ] *= 2.0;
@@ -129,7 +129,7 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 
 function accessor( values ) {
     values[ 0 ] *= 2.0;
@@ -156,7 +156,7 @@ mapBy2( 3, x1, -2, y1, 1, z1, 1, add, accessor );
 Applies a binary function to each pair of elements retrieved from strided input arrays according to a callback function and assigns results to a strided output array using alternative indexing semantics.
 
 ```javascript
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 
 function accessor( values ) {
     values[ 0 ] *= 2.0;
@@ -181,7 +181,7 @@ The function accepts the following additional arguments:
 While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the offset parameters support indexing semantics based on starting indices. For example, to index every other value in `x` starting from the second value and to index the last `N` elements in `y` in reverse order,
 
 ```javascript
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 
 function accessor( values ) {
     values[ 0 ] *= 2.0;
@@ -208,7 +208,7 @@ mapBy2.ndarray( 3, x, 2, 1, y, -1, y.length-1, z, 1, 3, add, accessor );
 -   If a provided callback function does not return any value (or equivalently, explicitly returns `undefined`), the value is **ignored**.
 
     ```javascript
-    var add = require( '@stdlib/math/base/ops/add' );
+    var add = require( '@stdlib/number/float64/base/add' );
 
     function accessor() {
         // No-op...
@@ -236,7 +236,7 @@ mapBy2.ndarray( 3, x, 2, 1, y, -1, y.length-1, z, 1, 3, add, accessor );
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var filledarray = require( '@stdlib/array/filled' );
 var filledarrayBy = require( '@stdlib/array/filled-by' );
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 var mapBy2 = require( '@stdlib/strided/base/map-by2' );
 
 function accessor( values, i ) {

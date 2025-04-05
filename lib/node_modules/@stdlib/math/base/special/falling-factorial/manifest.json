@@ -1,0 +1,96 @@
+{
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/napi/binary",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/assert/is-nonnegative-integer",
+        "@stdlib/math/base/assert/is-integer",
+        "@stdlib/math/base/special/gamma-delta-ratio",
+        "@stdlib/math/base/special/floor",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/constants/float64/max",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/constants/float64/max-safe-nth-factorial"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/assert/is-nonnegative-integer",
+        "@stdlib/math/base/assert/is-integer",
+        "@stdlib/math/base/special/gamma-delta-ratio",
+        "@stdlib/math/base/special/floor",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/constants/float64/max",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/constants/float64/max-safe-nth-factorial"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/assert/is-nonnegative-integer",
+        "@stdlib/math/base/assert/is-integer",
+        "@stdlib/math/base/special/gamma-delta-ratio",
+        "@stdlib/math/base/special/floor",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/constants/float64/max",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/constants/float64/max-safe-nth-factorial"
+      ]
+    }
+  ]
+}
