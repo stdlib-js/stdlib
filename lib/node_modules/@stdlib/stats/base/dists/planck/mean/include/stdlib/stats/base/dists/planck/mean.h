@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-*Returns the expected value of a Planck distribution with shape parameter `lambda`.
+* Returns the expected value of a Planck distribution with shape parameter `lambda`.
 */
 double stdlib_base_dists_planck_mean( const double lambda );
 

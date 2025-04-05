@@ -26,8 +26,8 @@ static double random_uniform( const double min, const double max ) {
 }
 
 int main( void ) {
-	double x;
 	double mu;
+	double x;
 	double c;
 	double y;
 	int i;
