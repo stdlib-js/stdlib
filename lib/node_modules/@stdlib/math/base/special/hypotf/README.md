@@ -52,7 +52,7 @@ h = hypotf( -0.0, -0.0 );
 // returns +0.0
 ```
 
-If either argument is `NaN`, the function returns `NaN`.
+If either argument is `NaN` and the other argument is not `+-Infinity`, the function returns `NaN`.
 
 ```javascript
 var h = hypotf( NaN, 12.0 );

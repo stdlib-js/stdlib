@@ -120,6 +120,98 @@ for ( i = 0; i < 10; i++ ) {
 
 <!-- /.references -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/planck/mean.h"
+```
+
+#### stdlib_base_dists_planck_mean( lambda )
+
+Returns the expected value of a Planck distribution with shape parameter `lambda`.
+
+```c
+double out = stdlib_base_dists_planck_mean( 0.1 );
+// returns ~9.5083
+```
+
+The function accepts the following arguments:
+
+-   **lambda**: `[in] double` shape parameter
+
+```c
+double stdlib_base_dists_planck_mean( const double lambda );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/planck/mean.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v * (max - min) );
+}
+
+int main( void ) {
+    double lambda;
+    double y;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        lambda = random_uniform( 0.1, 10.0 );
+        y = stdlib_base_dists_planck_mean( lambda );
+        printf( "λ: %lf, E(X;λ): %lf\n", lambda, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">

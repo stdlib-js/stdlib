@@ -165,7 +165,7 @@ Character codes for data types:
 Function name suffix naming convention:
 
 ```text
-stdlib_ndarray_every_<input_data_type>_<output_data_type>[_as_<callback_arg_data_type>_<callback_return_data_type>]
+stdlib_ndarray_every_<input_data_type>_<output_data_type>
 ```
 
 For example,
