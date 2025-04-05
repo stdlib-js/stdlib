@@ -19,10 +19,10 @@
 #ifndef STDLIB_NDARRAY_BASE_EVERY_MACROS_4D_BLOCKED_H
 #define STDLIB_NDARRAY_BASE_EVERY_MACROS_4D_BLOCKED_H
 
-#include "stdlib/ndarray/base/nullary/macros/constants.h"
-#include "stdlib/ndarray/base/nullary/internal/permute.h"
-#include "stdlib/ndarray/base/nullary/internal/range.h"
-#include "stdlib/ndarray/base/nullary/internal/sort2ins.h"
+#include "stdlib/ndarray/base/every/macros/constants.h"
+#include "stdlib/ndarray/base/every/internal/permute.h"
+#include "stdlib/ndarray/base/every/internal/range.h"
+#include "stdlib/ndarray/base/every/internal/sort2ins.h"
 #include "stdlib/ndarray/base/bytes_per_element.h"
 #include "stdlib/ndarray/ctor.h"
 #include <stdbool.h>
@@ -48,7 +48,7 @@
 #define STDLIB_NDARRAY_EVERY_4D_BLOCKED_LOOP_PREAMBLE                          \
 	const struct ndarray *x1 = arrays[ 0 ];                                    \
 	const struct ndarray *x2 = arrays[ 1 ];                                    \
-	bool *px2 = stdlib_ndarray_data( x2 );                                     \
+	uint8_t *px2 = stdlib_ndarray_data( x2 );                                  \
 	int64_t shape[4];                                                          \
 	int64_t sx1[4];                                                            \
 	int64_t idx[4];                                                            \
@@ -80,11 +80,11 @@
 	/* Copy strides to prevent mutation to the original ndarray: */            \
 	memcpy( sx1, stdlib_ndarray_strides( x1 ), sizeof sx1 );                   \
 	/* Create a loop interchange index array for loop order permutation: */    \
-	stdlib_ndarray_base_nullary_internal_range( 4, idx );                      \
+	stdlib_ndarray_base_every_internal_range( 4, idx );                        \
 	/* Sort the input array strides in increasing order (of magnitude): */     \
-	stdlib_ndarray_base_nullary_internal_sort2ins( 4, sx1, idx );              \
+	stdlib_ndarray_base_every_internal_sort2ins( 4, sx1, idx );                \
 	/* Permute the shape (avoiding mutation) according to loop order: */       \
-	stdlib_ndarray_base_nullary_internal_permute( 4, stdlib_ndarray_shape( x1 ), idx, tmp ); \
+	stdlib_ndarray_base_every_internal_permute( 4, stdlib_ndarray_shape( x1 ), idx, tmp ); \
 	memcpy( shape, tmp, sizeof shape );                                        \
 	/* Determine the block size... */                                          \
 	nbx1 = stdlib_ndarray_bytes_per_element( stdlib_ndarray_dtype( x1 ) );     \
@@ -188,7 +188,7 @@
 		const tin in1 = *(tin *)px1;                                           \
 		if ( !( expr ) ) {                                                     \
 			*px2 = false;                                                      \
-			return;                                                            \
+			return 0;                                                          \
 		}                                                                      \
 	}                                                                          \
 	STDLIB_NDARRAY_EVERY_4D_BLOCKED_LOOP_EPILOGUE
@@ -212,7 +212,7 @@
 		const tin x = *(tin *)px1;                                             \
 		if ( !( f( x ) ) ) {                                                   \
 			*px2 = false;                                                      \
-			return;                                                            \
+			return 0;                                                          \
 		}                                                                      \
 	}                                                                          \
 	STDLIB_NDARRAY_EVERY_4D_BLOCKED_LOOP_EPILOGUE
@@ -238,7 +238,7 @@
 		const tin x = *(tin *)px1;                                             \
 		if ( !( f( (fin)x ) ) ) {                                              \
 			*px2 = false;                                                      \
-			return;                                                            \
+			return 0;                                                          \
 		}                                                                      \
 	}                                                                          \
 	STDLIB_NDARRAY_EVERY_4D_BLOCKED_LOOP_EPILOGUE
@@ -266,7 +266,7 @@
 		const tin x = *(tin *)px1;                                             \
 		if ( !( f( cin( x ) ) ) ) {                                            \
 			*px2 = false;                                                      \
-			return;                                                            \
+			return 0;                                                          \
 		}                                                                      \
 	}                                                                          \
 	STDLIB_NDARRAY_EVERY_4D_BLOCKED_LOOP_EPILOGUE

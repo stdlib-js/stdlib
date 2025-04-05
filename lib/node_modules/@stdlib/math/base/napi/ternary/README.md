@@ -449,6 +449,69 @@ The function accepts the following arguments:
 void stdlib_math_base_napi_fff_f( napi_env env, napi_callback_info info, float (*fcn)( float, float, float ) );
 ```
 
+#### STDLIB_MATH_BASE_NAPI_MODULE_FIF_F( fcn )
+
+Macro for registering a Node-API module exporting an interface for invoking a ternary function accepting a single-precision floating-point number, a signed 32-bit integer, and a single-precision floating-point number and returning a single-precision floating-point number.
+
+```c
+#include <stdint.h>
+
+static float fcn( const float x, const int32_t y, const float z ) {
+    // ...
+}
+
+// ...
+
+// Register a Node-API module:
+STDLIB_MATH_BASE_NAPI_MODULE_FIF_F( fcn );
+```
+
+The macro expects the following arguments:
+
+-   **fcn**: `float (*fcn)( float, int32_t, float )` ternary function.
+
+When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring Node-API module registration.
+
+#### stdlib_math_base_napi_fif_f( env, info, fcn )
+
+Invokes a ternary function accepting a single-precision floating-point number, a signed 32-bit integer, and a single-precision floating-point number and returning a single-precision floating-point number.
+
+```c
+#include <node_api.h>
+#include <stdint.h>
+
+// ...
+
+static float fcn( const float x, const int32_t y, const float z ) {
+    // ...
+}
+
+// ...
+
+/**
+* Receives JavaScript callback invocation data.
+*
+* @param env    environment under which the function is invoked
+* @param info   callback data
+* @return       Node-API value
+*/
+napi_value addon( napi_env env, napi_callback_info info ) {
+    return stdlib_math_base_napi_fif_f( env, info, fcn );
+}
+
+// ...
+```
+
+The function accepts the following arguments:
+
+-   **env**: `[in] napi_env` environment under which the function is invoked.
+-   **info**: `[in] napi_callback_info` callback data.
+-   **fcn**: `[in] float (*fcn)( float, int32_t, float )` ternary function.
+
+```c
+void stdlib_math_base_napi_fif_f( napi_env env, napi_callback_info info, float (*fcn)( float, int32_t, float ) );
+```
+
 #### STDLIB_MATH_BASE_NAPI_MODULE_IID_D( fcn )
 
 Macro for registering a Node-API module exporting an interface for invoking a ternary function accepting two signed 32-bit integers and a double-precision floating-point number and returning a double-precision floating-point number.

@@ -19,10 +19,10 @@
 #ifndef STDLIB_NDARRAY_BASE_EVERY_MACROS_2D_BLOCKED_H
 #define STDLIB_NDARRAY_BASE_EVERY_MACROS_2D_BLOCKED_H
 
-#include "stdlib/ndarray/base/nullary/macros/constants.h"
-#include "stdlib/ndarray/base/nullary/internal/permute.h"
-#include "stdlib/ndarray/base/nullary/internal/range.h"
-#include "stdlib/ndarray/base/nullary/internal/sort2ins.h"
+#include "stdlib/ndarray/base/every/macros/constants.h"
+#include "stdlib/ndarray/base/every/internal/permute.h"
+#include "stdlib/ndarray/base/every/internal/range.h"
+#include "stdlib/ndarray/base/every/internal/sort2ins.h"
 #include "stdlib/ndarray/base/bytes_per_element.h"
 #include "stdlib/ndarray/ctor.h"
 #include <stdbool.h>
@@ -48,12 +48,13 @@
 #define STDLIB_NDARRAY_EVERY_2D_BLOCKED_LOOP_PREAMBLE                          \
 	const struct ndarray *x1 = arrays[ 0 ];                                    \
 	const struct ndarray *x2 = arrays[ 1 ];                                    \
-	bool *px2 = stdlib_ndarray_data( x2 );                                     \
+	uint8_t *px2 = stdlib_ndarray_data( x2 );                                  \
 	int64_t shape[2];                                                          \
 	int64_t sx1[2];                                                            \
 	int64_t idx[2];                                                            \
 	int64_t tmp[2];                                                            \
 	int64_t bsize;                                                             \
+	uint8_t *pbx1;                                                             \
 	uint8_t *px1;                                                              \
 	int64_t d0x1;                                                              \
 	int64_t d1x1;                                                              \
@@ -151,7 +152,7 @@
 		const tin in1 = *(tin *)px1;                                           \
 		if ( !( expr ) ) {                                                     \
 			*px2 = false;                                                      \
-			return;                                                            \
+			return 0;                                                          \
 		}                                                                      \
 	}                                                                          \
 	STDLIB_NDARRAY_EVERY_2D_BLOCKED_LOOP_EPILOGUE
@@ -175,7 +176,7 @@
 		const tin x = *(tin *)px1;                                             \
 		if ( !( f( x ) ) ) {                                                   \
 			*px2 = false;                                                      \
-			return;                                                            \
+			return 0;                                                          \
 		}                                                                      \
 	}                                                                          \
 	STDLIB_NDARRAY_EVERY_2D_BLOCKED_LOOP_EPILOGUE
@@ -201,7 +202,7 @@
 		const tin x = *(tin *)px1;                                             \
 		if ( !( f( (fin)x ) ) ) {                                              \
 			*px2 = false;                                                      \
-			return;                                                            \
+			return 0;                                                          \
 		}                                                                      \
 	}                                                                          \
 	STDLIB_NDARRAY_EVERY_2D_BLOCKED_LOOP_EPILOGUE
@@ -229,7 +230,7 @@
 		const tin x = *(tin *)px1;                                             \
 		if ( !( f( cin( x ) ) ) ) {                                            \
 			*px2 = false;                                                      \
-			return;                                                            \
+			return 0;                                                          \
 		}                                                                      \
 	}                                                                          \
 	STDLIB_NDARRAY_EVERY_2D_BLOCKED_LOOP_EPILOGUE
