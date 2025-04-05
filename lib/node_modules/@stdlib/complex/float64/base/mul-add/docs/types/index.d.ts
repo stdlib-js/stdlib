@@ -93,7 +93,7 @@ interface MulAdd {
 	assign<T extends OutputArray>( ar: number, ai: number, xr: number, xi: number, yr: number, yi: number, out: T, strideOut: number, offsetOut: number ): T;
 
 	/**
-	* Multiplies two double-precision complex floating-point numbers stored in real-valued strided array views and assigns results to a provided strided output array.
+	* Performs a multiply‐add operation involving three double‐precision complex floating‐point numbers stored in real‐valued strided array views and assigns the results to a provided strided output array.
 	*
 	* @param alpha - first complex number view
 	* @param strideA - stride length for `alpha`

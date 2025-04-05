@@ -31,7 +31,7 @@
 * @return     evaluated logCDF
 *
 * @example
-* double y = stdlib_base_arcsine_cdf( 0.5, 1.0, 1.0 );
+* double y = stdlib_base_dists_kumaraswamy_logcdf( 0.5, 1.0, 1.0 );
 * // returns ~-0.693
 */
 double stdlib_base_dists_kumaraswamy_logcdf( const double x, const double a, const double b ) {

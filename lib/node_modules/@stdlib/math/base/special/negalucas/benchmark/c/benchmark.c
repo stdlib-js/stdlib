@@ -107,14 +107,17 @@ int negalucas( int n ) {
 static double benchmark( void ) {
 	double elapsed;
 	double t;
-	int x;
+	int x[ 100 ];
 	int y;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = (int)floor( 40.0*rand_double() );
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = (int)floor( 40.0*rand_double() );
-		y = negalucas( -x );
+		y = negalucas( -x[ i%100 ] );
 		if ( y == -7 ) {
 			printf( "should not return -7\n" );
 			break;

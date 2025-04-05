@@ -28,13 +28,13 @@
 * @return      expected value
 *
 * @example
-* double y = stdlib_base_levy_mean( 0.0, 1.0 );
+* double y = stdlib_base_dists_levy_mean( 0.0, 1.0 );
 * // returns Infinity
 */
 double stdlib_base_dists_levy_mean( const double mu, const double c ) {
 	if (
-		isnan( mu ) ||
-		isnan( c ) ||
+		stdlib_base_is_nan( mu ) ||
+		stdlib_base_is_nan( c ) ||
 		c <= 0.0
 	) {
 		return 0.0/0.0; // NaN

@@ -27,7 +27,7 @@
 * @return         mean
 *
 * @example
-* double y = stdlib_base_rayleigh_mean( 9.0 );
+* double y = stdlib_base_dists_rayleigh_mean( 9.0 );
 * // returns ~11.253
 */
 double stdlib_base_dists_rayleigh_mean( const double sigma ) {

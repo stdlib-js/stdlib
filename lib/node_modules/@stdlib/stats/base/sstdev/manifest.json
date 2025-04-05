@@ -43,7 +43,7 @@
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-float",
         "@stdlib/napi/argv-strided-float32array",
-        "@stdlib/stats/base/sstdevpn",
+        "@stdlib/stats/strided/sstdevpn",
         "@stdlib/napi/create-double"
       ]
     },
@@ -60,7 +60,7 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/stats/base/sstdevpn"
+        "@stdlib/stats/strided/sstdevpn"
       ]
     },
     {
@@ -76,7 +76,7 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/stats/base/sstdevpn"
+        "@stdlib/stats/strided/sstdevpn"
       ]
     }
   ]
