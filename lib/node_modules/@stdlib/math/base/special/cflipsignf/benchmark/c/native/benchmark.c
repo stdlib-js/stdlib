@@ -91,18 +91,21 @@ static float rand_float( void ) {
 * @return elapsed time in seconds
 */
 static double benchmark( void ) {
+	float v[ 100 ];
 	float complex x;
 	float complex y;
 	double elapsed;
 	double t;
-	float v;
 	int i;
+
+	for ( i = 0; i < 100; i++ ) {
+		v[ i ] = ( 1000.0f*rand_float() ) - 500.0f;
+	}
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		v = ( 1000.0f*rand_float() ) - 500.0f;
-		x = v + v*I;
-		y = stdlib_base_cflipsignf( x, -v );
+		x = v[ i%100 ] + v[ i%100 ]*I;
+		y = stdlib_base_cflipsignf( x, -v[ i%100 ] );
 		if ( crealf( y ) != crealf( y ) ) {
 			printf( "unexpected result\n" );
 			break;

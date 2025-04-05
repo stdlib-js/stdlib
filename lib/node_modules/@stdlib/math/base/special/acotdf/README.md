@@ -64,15 +64,15 @@ v = acotdf( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/base/linspace' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var acotdf = require( '@stdlib/math/base/special/acotdf' );
 
-var x = linspace( -1.0, 1.0, 100 );
+var x = uniform( 100, -1.0, 1.0, {
+    'dtype': 'float32'
+});
 
-var i;
-for ( i = 0; i < x.length; i++ ) {
-    console.log( acotdf( x[ i ] ) );
-}
+logEachMap( 'acotdf(%0.4f) = %0.4f', x, acotdf );
 ```
 
 </section>

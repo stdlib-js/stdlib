@@ -73,9 +73,9 @@ static const int32_t negalucasf_value[ 35 ] = {
 * // returns NaN
 */
 float stdlib_base_negalucasf( const int32_t n ) {
-    int32_t an = stdlib_base_labs( n );
-    if ( n > 0 || an > STDLIB_CONSTANT_FLOAT32_MAX_SAFE_NTH_LUCAS ) {
-        return 0.0f / 0.0f; // NaN
-    }
-    return negalucasf_value[ an ];
+	int32_t an = stdlib_base_labs( n );
+	if ( n > 0 || an > STDLIB_CONSTANT_FLOAT32_MAX_SAFE_NTH_LUCAS ) {
+		return 0.0f / 0.0f; // NaN
+	}
+	return negalucasf_value[ an ];
 }
