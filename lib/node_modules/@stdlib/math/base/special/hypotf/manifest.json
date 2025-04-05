@@ -1,84 +1,87 @@
 {
-	"options": {
-		"task": "build"
-	},
-	"fields": [
-		{
-			"field": "src",
-			"resolve": true,
-			"relative": true
-		},
-		{
-			"field": "include",
-			"resolve": true,
-			"relative": true
-		},
-		{
-			"field": "libraries",
-			"resolve": false,
-			"relative": false
-		},
-		{
-			"field": "libpath",
-			"resolve": true,
-			"relative": false
-		}
-	],
-	"confs": [
-		{
-			"task": "build",
-			"src": [
-				"./src/hypotf.c"
-			],
-			"include": [
-				"./include"
-			],
-			"libraries": [
-				"-lm"
-			],
-			"libpath": [],
-			"dependencies": [
-				"@stdlib/math/base/napi/binary",
-				"@stdlib/math/base/assert/is-nanf",
-				"@stdlib/math/base/assert/is-infinitef",
-				"@stdlib/math/base/special/sqrtf"
-			]
-		},
-		{
-			"task": "benchmark",
-			"src": [
-				"./src/hypotf.c"
-			],
-			"include": [
-				"./include"
-			],
-			"libraries": [
-				"-lm"
-			],
-			"libpath": [],
-			"dependencies": [
-				"@stdlib/math/base/assert/is-nanf",
-				"@stdlib/math/base/assert/is-infinitef",
-				"@stdlib/math/base/special/sqrtf"
-			]
-		},
-		{
-			"task": "examples",
-			"src": [
-				"./src/hypotf.c"
-			],
-			"include": [
-				"./include"
-			],
-			"libraries": [
-				"-lm"
-			],
-			"libpath": [],
-			"dependencies": [
-				"@stdlib/math/base/assert/is-nanf",
-				"@stdlib/math/base/assert/is-infinitef",
-				"@stdlib/math/base/special/sqrtf"
-			]
-		}
-	]
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/napi/binary",
+        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/math/base/assert/is-infinitef",
+        "@stdlib/math/base/special/sqrtf",
+        "@stdlib/constants/float32/pinf"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/math/base/assert/is-infinitef",
+        "@stdlib/math/base/special/sqrtf",
+        "@stdlib/constants/float32/pinf"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/math/base/assert/is-infinitef",
+        "@stdlib/math/base/special/sqrtf",
+        "@stdlib/constants/float32/pinf"
+      ]
+    }
+  ]
 }
