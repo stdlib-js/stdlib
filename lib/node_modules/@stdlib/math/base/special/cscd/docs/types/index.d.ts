@@ -25,23 +25,23 @@
 * @returns cosecant
 *
 * @example
-* var v = cscd( 30 );
+* var v = cscd( 30.0 );
 * // returns ~2.0
 *
 * @example
-* var v = cscd( 45 );
+* var v = cscd( 45.0 );
 * // returns ~1.41
 *
 * @example
-* var v = cscd( 60 );
+* var v = cscd( 60.0 );
 * // returns ~1.15
 *
 * @example
-* var v = cscd( 90 );
+* var v = cscd( 90.0 );
 * // returns 1.0
 *
 * @example
-* var v = cscd( 0 );
+* var v = cscd( 0.0 );
 * // returns Infinity
 *
 * @example

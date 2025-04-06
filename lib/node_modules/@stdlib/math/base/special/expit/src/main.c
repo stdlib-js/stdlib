@@ -31,8 +31,8 @@
 * // returns 0.5
 */
 double stdlib_base_expit( const double x ) {
-    if ( stdlib_base_is_nan( x ) ) {
-        return 0.0 / 0.0; // NaN
-    }
-    return 1.0 / ( 1.0 + stdlib_base_exp( -x ) );
+	if ( stdlib_base_is_nan( x ) ) {
+		return 0.0 / 0.0; // NaN
+	}
+	return 1.0 / ( 1.0 + stdlib_base_exp( -x ) );
 }

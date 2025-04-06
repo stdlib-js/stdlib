@@ -30,9 +30,9 @@ limitations under the License.
 var gfill = require( '@stdlib/blas/ext/base/gfill' );
 ```
 
-#### gfill( N, alpha, x, stride )
+#### gfill( N, alpha, x, strideX )
 
-Fills a strided array `x` with a specified scalar constant `alpha`.
+Fills a strided array with a specified scalar constant.
 
 ```javascript
 var x = [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ];
@@ -46,17 +46,14 @@ The function has the following parameters:
 -   **N**: number of indexed elements.
 -   **alpha**: scalar constant.
 -   **x**: input array.
--   **stride**: index increment.
+-   **strideX**: stride length.
 
-The `N` and `stride` parameters determine which elements in `x` are accessed at runtime. For example, to fill every other element
+The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to fill every other element:
 
 ```javascript
-var floor = require( '@stdlib/math/base/special/floor' );
-
 var x = [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ];
-var N = floor( x.length / 2 );
 
-gfill( N, 5.0, x, 2 );
+gfill( 4, 5.0, x, 2 );
 // x => [ 5.0, 1.0, 5.0, -5.0, 5.0, 0.0, 5.0, -3.0 ]
 ```
 
@@ -64,23 +61,21 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 // Initial array...
 var x0 = new Float64Array( [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ] );
 
 // Create an offset view...
 var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
-var N = floor( x0.length/2 );
 
 // Fill every other element...
-gfill( N, 5.0, x1, 2 );
+gfill( 3, 5.0, x1, 2 );
 // x0 => <Float64Array>[ 1.0, 5.0, 3.0, 5.0, 5.0, 5.0 ]
 ```
 
-#### gfill.ndarray( N, alpha, x, stride, offset )
+#### gfill.ndarray( N, alpha, x, strideX, offsetX )
 
-Fills a strided array `x` with a specified scalar constant `alpha` using alternative indexing semantics.
+Fills a strided array with a specified scalar constant using alternative indexing semantics.
 
 ```javascript
 var x = [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ];
@@ -91,9 +86,9 @@ gfill.ndarray( x.length, 5.0, x, 1, 0 );
 
 The function has the following additional parameters:
 
--   **offset**: starting index.
+-   **offsetX**: starting index.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the `offset` parameter supports indexing semantics based on a starting index. For example, to access only the last three elements of `x`
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameter supports indexing semantics based on a starting index. For example, to access only the last three elements:
 
 ```javascript
 var x = [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ];
@@ -125,15 +120,12 @@ gfill.ndarray( 3, 5.0, x, 1, x.length-3 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
-var Float64Array = require( '@stdlib/array/float64' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var gfill = require( '@stdlib/blas/ext/base/gfill' );
 
-var x = new Float64Array( 10 );
-var i;
-for ( i = 0; i < x.length; i++ ) {
-    x[ i ] = discreteUniform( -100, 100 );
-}
+var x = discreteUniform( 10, -100, 100, {
+    'dtype': 'float64'
+});
 console.log( x );
 
 gfill( x.length, 5.0, x, 1 );

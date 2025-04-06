@@ -21,13 +21,13 @@
 #include <stdio.h>
 
 int main( void ) {
-    double x;
-    double v;
-    int i;
+	double x;
+	double v;
+	int i;
 
-    for ( i = 0; i < 100; i++ ) {
-        x = (double)rand() / (double)RAND_MAX;
-        v = stdlib_base_logit( x );
-        printf( "logit(%lf) = %lf\n", x, v );
-    }
+	for ( i = 0; i < 100; i++ ) {
+		x = (double)rand() / (double)RAND_MAX;
+		v = stdlib_base_logit( x );
+		printf( "logit(%lf) = %lf\n", x, v );
+	}
 }

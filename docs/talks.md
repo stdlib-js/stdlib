@@ -24,6 +24,32 @@ limitations under the License.
 
 > Talks featuring stdlib.
 
+## 2025
+
+### Exploring stdlib: JavaScript's Answer to Technical Computing
+
+> [Athan Reines][kgryte], Inspiring Computing, February 2025
+
+<div class="image" align="center">
+    <a title="Exploring stdlib: JavaScript's Answer to Technical Computing" href="https://www.inspiringcomputing.com/2107763/episodes/16662797-exploring-stdlib-javascript-s-answer-to-technical-computing">
+        <img width="480" src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@a8d27ad54095da3af1830454d0abc0de48948d2f/docs/assets/talks/inspiring_computing_2025_athan_reines.png" alt="Exploring stdlib: JavaScript's Answer to Technical Computing">
+    </a>
+    <br>
+</div>
+
+## 2024
+
+### Advanced Mathematics and Data Analysis with JavaScript
+
+> [Gunj Joshi][gunjjoshi], JSNation US, November 2024
+
+<div class="image" align="center">
+    <a title="Advanced Mathematics and Data Analysis with JavaScript" href="https://gitnation.com/contents/advanced-mathematics-and-data-analysis-with-javascript">
+        <img width="480" src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@fa25196d70829930020772d9e8de37a5a000b396/docs/assets/talks/jsnation_us_2024_gunj_joshi.png" alt="Advanced Mathematics and Data Analysis with JavaScript">
+    </a>
+    <br>
+</div>
+
 ## 2019
 
 ### Open Source Directions: stdlib
@@ -170,19 +196,6 @@ limitations under the License.
 <div class="image" align="center">
     <a "Real time machine learning with Node.js" href="https://www.youtube.com/watch?v=fK32__vlVAA">
         <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@5dd2d62d0a53359fe163870da082f0462118d9f5/docs/assets/nodejs_interactive_us_2016_philipp_burckhardt.png" alt="Real Time Machine Learning with Node.js at Node.js Interactive US 2016">
-    </a>
-    <br>
-</div>
-
-## 2024
-
-### Advanced Mathematics and Data Analysis with JavaScript
-
-> [Gunj Joshi][gunjjoshi], JSNation US, November 2024
-
-<div class="image" align="center">
-    <a title="Advanced Mathematics and Data Analysis with JavaScript" href="https://youtu.be/7sejh8DguBU?t=19919">
-        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@fa25196d70829930020772d9e8de37a5a000b396/docs/assets/talks/jsnation_us_2024_gunj_joshi.png" alt="Advanced Mathematics and Data Analysis with JavaScript">
     </a>
     <br>
 </div>

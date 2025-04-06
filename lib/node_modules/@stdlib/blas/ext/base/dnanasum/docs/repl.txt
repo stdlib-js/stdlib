@@ -3,8 +3,8 @@
     Computes the sum of absolute values (L1 norm) of double-precision floating-
     point strided array elements, ignoring `NaN` values.
 
-    The `N` and stride parameters determine which elements in the strided
-    array are accessed at runtime.
+    The `N` and stride parameters determine which elements in the strided array
+    are accessed at runtime.
 
     Indexing is relative to the first index. To introduce an offset, use a typed
     array view.
@@ -20,7 +20,7 @@
         Input array.
 
     strideX: integer
-        Index increment.
+        Stride length.
 
     Returns
     -------
@@ -34,7 +34,7 @@
     > {{alias}}( x.length, x, 1 )
     5.0
 
-    // Using `N` and `stride` parameters:
+    // Using `N` and stride parameters:
     > x = new {{alias:@stdlib/array/float64}}( [ -2.0, 1.0, 1.0, -5.0, 2.0, -1.0, NaN, NaN ] );
     > {{alias}}( 4, x, 2 )
     5.0
@@ -64,7 +64,7 @@
         Input array.
 
     strideX: integer
-        Index increment.
+        Stride length.
 
     offsetX: integer
         Starting index.
