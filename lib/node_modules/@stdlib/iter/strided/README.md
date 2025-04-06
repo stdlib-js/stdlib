@@ -178,7 +178,7 @@ while ( true ) {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/iter/advance`][@stdlib/iter/advance]</span><span class="delimiter">: </span><span class="description">advances an iterator.</span>
+-   <span class="package-name">[`@stdlib/iter/advance`][@stdlib/iter/advance]</span><span class="delimiter">: </span><span class="description">advance an iterator.</span>
 -   <span class="package-name">[`@stdlib/iter/nth`][@stdlib/iter/nth]</span><span class="delimiter">: </span><span class="description">return the nth iterated value.</span>
 -   <span class="package-name">[`@stdlib/iter/strided-by`][@stdlib/iter/strided-by]</span><span class="delimiter">: </span><span class="description">create an iterator which steps according to a provided callback function.</span>
 

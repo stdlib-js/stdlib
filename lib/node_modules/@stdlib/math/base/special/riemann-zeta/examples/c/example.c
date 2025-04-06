@@ -20,12 +20,12 @@
 #include <stdio.h>
 
 int main( void ) {
-    const double s[] = { -50.0, -38.9, -27.8, -16.7, -5.6, 5.6, 16.7, 27.8, 38.9, 50.0 };
+	const double s[] = { -50.0, -38.9, -27.8, -16.7, -5.6, 5.6, 16.7, 27.8, 38.9, 50.0 };
 
-    double v;
-    int i;
-    for ( i = 0; i < 10; i++ ) {
-        v = stdlib_base_zeta( s[ i ] );
-        printf( "zeta(%lf) = %lf\n", s[ i ], v );
-    }
+	double v;
+	int i;
+	for ( i = 0; i < 10; i++ ) {
+		v = stdlib_base_zeta( s[ i ] );
+		printf( "zeta(%lf) = %lf\n", s[ i ], v );
+	}
 }

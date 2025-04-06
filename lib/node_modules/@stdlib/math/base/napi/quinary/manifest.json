@@ -25,7 +25,8 @@
   "confs": [
     {
       "src": [
-        "./src/main.c"
+        "./src/ddddd_d.c",
+        "./src/fffff_f.c"
       ],
       "include": [
         "./include"

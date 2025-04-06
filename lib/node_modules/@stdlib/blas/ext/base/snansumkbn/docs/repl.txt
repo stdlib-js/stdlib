@@ -1,13 +1,13 @@
 
-{{alias}}( N, x, stride )
+{{alias}}( N, x, strideX )
     Computes the sum of single-precision floating-point strided array elements,
     ignoring `NaN` values and using an improved Kahan–Babuška algorithm.
 
-    The `N` and stride parameters determine which elements in the strided 
-    array are accessed at runtime.
+    The `N` and stride parameters determine which elements in the strided array
+    are accessed at runtime.
 
-    Indexing is relative to the first index. To introduce an offset, 
-    use a typed array view. 
+    Indexing is relative to the first index. To introduce an offset, use a typed
+    array view.
 
     If `N <= 0`, the function returns `0.0`.
 
@@ -19,8 +19,8 @@
     x: Float32Array
         Input array.
 
-    stride: integer
-        Index increment.
+    strideX: integer
+        Stride length.
 
     Returns
     -------
@@ -36,26 +36,24 @@
 
     // Using `N` and stride parameters:
     > x = new {{alias:@stdlib/array/float32}}( [ -2.0, 1.0, 1.0, -5.0, 2.0, -1.0, NaN, NaN ] );
-    > var stride = 2;
-    > {{alias}}( 4, x, stride )
+    > {{alias}}( 4, x, 2 )
     1.0
 
     // Using view offsets:
     > var x0 = new {{alias:@stdlib/array/float32}}( [ 1.0, -2.0, 3.0, 2.0, 5.0, -1.0, NaN, NaN ] );
     > var x1 = new {{alias:@stdlib/array/float32}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
-    > stride = 2;
-    > {{alias}}( 4, x1, stride )
+    > {{alias}}( 4, x1, 2 )
     -1.0
 
 
-{{alias}}.ndarray( N, x, stride, offset )
+{{alias}}.ndarray( N, x, strideX, offsetX )
     Computes the sum of single-precision floating-point strided array elements,
     ignoring `NaN` values and using an improved Kahan–Babuška algorithm and
     alternative indexing semantics.
 
     While typed array views mandate a view offset based on the underlying
-    buffer, the `offset` parameter supports indexing semantics based on a
-    starting index.
+    buffer, the offset parameter supports indexing semantics based on a starting
+    index.
 
     Parameters
     ----------
@@ -65,10 +63,10 @@
     x: Float32Array
         Input array.
 
-    stride: integer
-        Index increment.
+    strideX: integer
+        Stride length.
 
-    offset: integer
+    offsetX: integer
         Starting index.
 
     Returns

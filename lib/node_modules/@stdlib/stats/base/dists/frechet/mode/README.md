@@ -137,7 +137,7 @@ var i;
 for ( i = 0; i < 10; i++ ) {
     alpha = ( randu()*20.0 ) + EPS;
     s = ( randu()*20.0 ) + EPS;
-    m = ( randu()*20.0 ) - 40.0;
+    m = ( randu()*40.0 ) - 20.0;
     y = mode( alpha, s, m );
     console.log( 'α: %d, s: %d, m: %d, mode(X;α,s,m): %d', alpha.toFixed( 4 ), s.toFixed( 4 ), m.toFixed( 4 ), y.toFixed( 4 ) );
 }
