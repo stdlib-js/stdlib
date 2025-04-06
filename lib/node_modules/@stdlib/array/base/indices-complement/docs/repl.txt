@@ -1,0 +1,25 @@
+
+{{alias}}( N, indices )
+    Returns the complement of a list of array indices.
+
+    Parameters
+    ----------
+    N: integer
+        Array length.
+
+    indices: Collection<integer>
+        List of indices from which to derive the complement.
+
+    Returns
+    -------
+    out: Array<integer>
+        Indices complement.
+
+    Examples
+    --------
+    > var idx = {{alias}}( 5, [ 1, 3 ] )
+    [ 0, 2, 4 ]
+
+    See Also
+    --------
+

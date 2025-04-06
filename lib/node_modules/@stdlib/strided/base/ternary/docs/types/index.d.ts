@@ -45,7 +45,7 @@ interface Routine {
 	* @param fcn - ternary callback
 	*
 	* @example
-	* var add = require( '@stdlib/math/base/ops/add3' );
+	* var add = require( '@stdlib/number/float64/base/add3' );
 	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
@@ -73,7 +73,7 @@ interface Routine {
 	* @param fcn - ternary callback
 	*
 	* @example
-	* var add = require( '@stdlib/math/base/ops/add3' );
+	* var add = require( '@stdlib/number/float64/base/add3' );
 	* var Float64Array = require( '@stdlib/array/float64' );
 	*
 	* var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
@@ -102,7 +102,7 @@ interface Routine {
 * @param fcn - ternary callback
 *
 * @example
-* var add = require( '@stdlib/math/base/ops/add3' );
+* var add = require( '@stdlib/number/float64/base/add3' );
 * var Float64Array = require( '@stdlib/array/float64' );
 *
 * var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
@@ -119,7 +119,7 @@ interface Routine {
 * // => <Float64Array>[ 3.0, 6.0, 9.0, 12.0, 15.0 ]
 *
 * @example
-* var add = require( '@stdlib/math/base/ops/add3' );
+* var add = require( '@stdlib/number/float64/base/add3' );
 * var Float64Array = require( '@stdlib/array/float64' );
 *
 * var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );

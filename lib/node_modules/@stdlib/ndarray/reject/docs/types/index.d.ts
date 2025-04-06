@@ -78,7 +78,7 @@ interface BaseOptions {
 	*
 	* ## Notes
 	*
-	* -   By default, the function iterates over elements according to the layout order of the provided ndarray. Accordingly, for row-major input ndarrays, the last dimension indices increment fastest. For column-major input ndarrays, the first dimension indices increment fastest. To override the inferred order and ensure that indices increment in a specific manor, regardless of the input ndarray's layout order, explicitly set the iteration order. Note, however, that iterating according to an order which does not match that of the input ndarray may, in some circumstances, result in performance degradation due to cache misses.
+	* -   By default, the function iterates over elements according to the layout order of the provided ndarray. Accordingly, for row-major input ndarrays, the last dimension indices increment fastest. For column-major input ndarrays, the first dimension indices increment fastest. To override the inferred order and ensure that indices increment in a specific manner, regardless of the input ndarray's layout order, explicitly set the iteration order. Note, however, that iterating according to an order which does not match that of the input ndarray may, in some circumstances, result in performance degradation due to cache misses.
 	*/
 	order?: Order;
 }
@@ -92,7 +92,7 @@ interface OrderOptions {
 	*
 	* ## Notes
 	*
-	* -   By default, the function iterates over elements according to the layout order of the provided ndarray. Accordingly, for row-major input ndarrays, the last dimension indices increment fastest. For column-major input ndarrays, the first dimension indices increment fastest. To override the inferred order and ensure that indices increment in a specific manor, regardless of the input ndarray's layout order, explicitly set the iteration order. Note, however, that iterating according to an order which does not match that of the input ndarray may, in some circumstances, result in performance degradation due to cache misses.
+	* -   By default, the function iterates over elements according to the layout order of the provided ndarray. Accordingly, for row-major input ndarrays, the last dimension indices increment fastest. For column-major input ndarrays, the first dimension indices increment fastest. To override the inferred order and ensure that indices increment in a specific manner, regardless of the input ndarray's layout order, explicitly set the iteration order. Note, however, that iterating according to an order which does not match that of the input ndarray may, in some circumstances, result in performance degradation due to cache misses.
 	*/
 	order: Order;
 }

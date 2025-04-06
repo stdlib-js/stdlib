@@ -70,15 +70,15 @@ var v = acosd( -3.14 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/base/linspace' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var acosd = require( '@stdlib/math/base/special/acosd' );
 
-var x = linspace( -1.0, 1.0, 100 );
+var x = uniform( 100, -1.0, 1.0, {
+    'dtype': 'float64'
+});
 
-var i;
-for ( i = 0; i < x.length; i++ ) {
-    console.log( acosd( x[ i ] ) );
-}
+logEachMap( 'acosd(%0.4f) = %0.4f', x, acosd );
 ```
 
 </section>
