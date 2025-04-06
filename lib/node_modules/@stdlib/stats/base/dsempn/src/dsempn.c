@@ -17,7 +17,7 @@
 */
 
 #include "stdlib/stats/base/dsempn.h"
-#include "stdlib/stats/base/dvariancepn.h"
+#include "stdlib/stats/strided/dvariancepn.h"
 #include <stdint.h>
 #include <math.h>
 

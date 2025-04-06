@@ -79,8 +79,8 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 
 A `predicate` function is provided two arguments:
 
--   **a**: a previously identified unique value
--   **b**: the value whose uniqueness is being determined
+-   **a**: a previously identified unique value.
+-   **b**: the value whose uniqueness is being determined.
 
 To set the execution context of the `predicate` function, provide a `thisArg`.
 

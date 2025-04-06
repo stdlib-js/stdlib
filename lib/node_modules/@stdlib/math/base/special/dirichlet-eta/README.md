@@ -102,15 +102,16 @@ v = eta( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/base/linspace' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var eta = require( '@stdlib/math/base/special/dirichlet-eta' );
 
-var s = linspace( -50.0, 50.0, 200 );
+var opts = {
+    'dtype': 'float64'
+};
+var s = uniform( 200, -50.0, 50.0, opts );
 
-var i;
-for ( i = 0; i < s.length; i++ ) {
-    console.log( 's: %d, η(s): %d', s[ i ], eta( s[ i ] ) );
-}
+logEachMap( 's: %0.4f, η(s): %0.4f', s, eta );
 ```
 
 </section>

@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Returns the kurtosis of an exponential distribution.
+* Returns the excess kurtosis of an exponential distribution.
 */
 double stdlib_base_dists_exponential_kurtosis( const double lambda );
 
