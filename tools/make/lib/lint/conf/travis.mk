@@ -37,6 +37,7 @@ LINT_TRAVIS_CONF ?= $(TOOLS_DIR)/lint/travis-conf/lint
 #/
 lint-conf-travis:
 	$(QUIET) $(MAKE_EXECUTABLE) $(LINT_TRAVIS_CONF)
+	$(QUIET) echo "Linting file: $(TRAVIS_CONF)"
 	$(QUIET) $(LINT_TRAVIS_CONF) $(TRAVIS_CONF)
 
 .PHONY: lint-conf-travis

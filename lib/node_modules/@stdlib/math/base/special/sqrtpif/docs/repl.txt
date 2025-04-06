@@ -1,0 +1,32 @@
+
+{{alias}}( x )
+    Computes the principal square root of the product of π and a positive
+    single-precision floating-point number.
+
+    For `x < 0`, the square root is not defined.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    y: number
+        Principal square root of the product of π and the input value.
+
+    Examples
+    --------
+    > var y = {{alias}}( 4.0 )
+    ~3.5449
+    > y = {{alias}}( 10.0 )
+    ~5.60499
+    > y = {{alias}}( 0.0 )
+    0.0
+    > y = {{alias}}( -4.0 )
+    NaN
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------

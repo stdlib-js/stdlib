@@ -14,8 +14,8 @@
       "line": 1
     },
     {
-      "file": "docs/development.md",
-      "description": "To setup your development environment, follow the steps in the `docs/development.md` file or use the VSCode development container.",
+      "file": "docs/contributing/development.md",
+      "description": "To setup your development environment, follow the steps in the `docs/contributing/development.md` file or use the VSCode development container.",
       "line": 21
     },
     {

@@ -22,6 +22,6 @@
 /**
 * Macro for the maximum safe nth Lucas number when stored in single-precision floating-point format.
 */
-#define STDLIB_CONSTANT_FLOAT64_MAX_SAFE_NTH_LUCAS 34
+#define STDLIB_CONSTANT_FLOAT32_MAX_SAFE_NTH_LUCAS 34
 
 #endif // !STDLIB_CONSTANTS_FLOAT32_MAX_SAFE_NTH_LUCAS_H

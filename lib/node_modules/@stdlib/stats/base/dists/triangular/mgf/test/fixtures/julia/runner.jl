@@ -93,3 +93,15 @@ b = ( rand( 1000 ) .* 80.0 ) .+ a;
 c = a .+ ( b .- a ) .* rand();
 x = rand( 1000 );
 gen( x, a, b, c, "large_range.json" );
+
+# Case: a < c < b
+gen( x, a, b, c, "a_less_c_less_b.json" );
+
+# Case: a < c = b
+gen( x, a, b, b, "a_less_c_eq_b.json" );
+
+# Case: a = c < b
+gen( x, a, b, a, "a_eq_c_less_b.json" );
+
+# Case: a = c = b
+gen( x, a, a, a, "a_eq_c_eq_b.json" );

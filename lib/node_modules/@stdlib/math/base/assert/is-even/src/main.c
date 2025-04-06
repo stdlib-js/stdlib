@@ -23,7 +23,7 @@
 * Tests if a finite numeric value is an even number.
 *
 * @param x    input value
-* @return	  output value
+* @return     output value
 *
 * @example
 * #include <stdbool.h>
