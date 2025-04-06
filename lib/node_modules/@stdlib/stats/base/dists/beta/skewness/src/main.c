@@ -27,7 +27,7 @@
 * @return         skewness
 *
 * @example
-* double y = stdlib_base_beta_skewness( 1.0, 1.0 );
+* double y = stdlib_base_dists_beta_skewness( 1.0, 1.0 );
 * // returns 0.0
 */
 double stdlib_base_dists_beta_skewness( const double alpha, const double beta ) {

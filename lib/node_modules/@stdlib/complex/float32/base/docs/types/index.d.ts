@@ -85,6 +85,25 @@ interface Namespace {
 	*
 	* var im = imagf( out );
 	* // returns -1.0
+	*
+	* @example
+	* var Float32Array = require( '@stdlib/array/float32' );
+	*
+	* var out = new Float32Array( 2 );
+	* var v = ns.mul.assign( 5.0, 3.0, -2.0, 1.0, out, 1, 0 );
+	* // returns <Float32Array>[ -13.0, -1.0 ]
+	*
+	* var bool = ( out === v );
+	* // returns true
+	*
+	* @example
+	* var Float32Array = require( '@stdlib/array/float32' );
+	*
+	* var z1 = new Float32Array( [ 5.0, 3.0 ] );
+	* var z2 = new Float32Array( [ -2.0, 1.0 ] );
+	*
+	* var out = ns.mul.strided( z1, 1, 0, z2, 1, 0, new Float32Array( 2 ), 1, 0 );
+	* // returns <Float32Array>[ -13.0, -1.0 ]
 	*/
 	mul: typeof mul;
 }
