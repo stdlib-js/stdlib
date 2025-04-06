@@ -16,6 +16,7 @@
 * limitations under the License.
 */
 
+import AccessorArray = require( '@stdlib/array/base/accessor' );
 import nanvarianceyc = require( './index' );
 
 
@@ -25,7 +26,7 @@ import nanvarianceyc = require( './index' );
 {
 	const x = new Float64Array( 10 );
 
-	nanvarianceyc( x.length, 1, x, 1 ); // $ExpectType number
+	nanvarianceyc( x.length, 1, new AccessorArray( x ), 1 ); // $ExpectType number
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
@@ -100,7 +101,7 @@ import nanvarianceyc = require( './index' );
 {
 	const x = new Float64Array( 10 );
 
-	nanvarianceyc.ndarray( x.length, 1, x, 1, 0 ); // $ExpectType number
+	nanvarianceyc.ndarray( x.length, 1, new AccessorArray( x ), 1, 0 ); // $ExpectType number
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...
