@@ -20,7 +20,7 @@ limitations under the License.
 
 # mskfilterMap
 
-> Apply a mask to a provided input array and return a new array after applying a mapping function.
+> Apply a mask and a callback function to a provided input array.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var mskfilterMap = require( '@stdlib/array/base/mskfilter-map' );
 
 #### mskfilterMap( x, mask, clbk\[, thisArg] )
 
-Applies a mask to a provided input array and returns a new array after applying a mapping function.
+Returns a new array after applying a mask and a callback function to a provided input array.
 
 ```javascript
 function clbk( value ) {
@@ -50,10 +50,10 @@ The function supports the following parameters:
 
 -   **x**: input array.
 -   **mask**: mask array.
--   **clbk**: function to apply.
--   **thisArg**: applied function execution context (_optional_).
+-   **clbk**: callback to apply.
+-   **thisArg**: callback execution context (_optional_).
 
-To set the applied function's execution context, provide a `thisArg`.
+To set the execution context of the callback function, provide a `thisArg`.
 
 <!-- eslint-disable no-invalid-this -->
 
@@ -81,7 +81,7 @@ The function **always** returns a new "generic" array.
 
 #### mskfilterMap.assign( x, mask, out, stride, offset, clbk\[, thisArg] )
 
-Applies a mask and mapping function to a provided input array and assigns results to elements in a provided output array.
+Applies a mask and a callback function to a provided input array and assigns results to elements in a provided output array.
 
 ```javascript
 function clbk( value ) {
@@ -106,8 +106,8 @@ The function supports the following parameters:
 -   **out**: output array.
 -   **stride**: output array stride.
 -   **offset**: output array offset.
--   **clbk**: function to apply.
--   **thisArg**: applied function execution context (_optional_).
+-   **clbk**: callback function.
+-   **thisArg**: callback execution context (_optional_).
 
 </section>
 

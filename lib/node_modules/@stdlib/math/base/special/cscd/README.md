@@ -35,19 +35,19 @@ var cscd = require( '@stdlib/math/base/special/cscd' );
 Computes the [cosecant][cosecant] of `x` (in degrees).
 
 ```javascript
-var v = cscd( 30 );
+var v = cscd( 30.0 );
 // returns ~2.0
 
-v = cscd( 45 );
+v = cscd( 45.0 );
 // returns ~1.41
 
-v = cscd( 60 );
+v = cscd( 60.0 );
 // returns ~1.15
 
-v = cscd( 90 );
+v = cscd( 90.0 );
 // returns 1.0
 
-v = cscd( 0 );
+v = cscd( 0.0 );
 // returns Infinity
 
 v = cscd( NaN );
