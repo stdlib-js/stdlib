@@ -22,7 +22,7 @@ limitations under the License.
 
 > Development utility.
 
-This project uses [`make`][make] as its development utility. For an overview of `make`, see the `make` [manual][make]. 
+This project uses [`make`][make] as its development utility. For an overview of `make`, see the `make` [manual][make].
 
 ## Usage
 
@@ -403,6 +403,12 @@ To generate documentation from [JSDoc][jsdoc] source code comments,
 
 ```bash
 $ make docs-src
+```
+
+sometimes you might get an error `Argument listing too long` then use,
+
+```bash
+$ make src-docs-out
 ```
 
 To view the documentation in a local web browser,
