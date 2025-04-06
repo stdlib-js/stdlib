@@ -32,5 +32,5 @@
 * // returns true
 */
 bool stdlib_base_is_integerf( const float x ) {
-    return ( x == stdlib_base_floorf( x ) );
+	return ( x == stdlib_base_floorf( x ) );
 }

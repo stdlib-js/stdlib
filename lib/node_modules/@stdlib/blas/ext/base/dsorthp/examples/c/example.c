@@ -30,7 +30,7 @@ int main( void ) {
 	int strideX = 1;
 
 	// Sort the array:
-	c_dsorthp( N, 1.0, x, strideX );
+	stdlib_strided_dsorthp( N, 1.0, x, strideX );
 
 	// Print the result:
 	for ( int i = 0; i < 8; i++ ) {

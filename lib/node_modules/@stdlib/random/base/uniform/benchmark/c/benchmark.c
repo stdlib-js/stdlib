@@ -16,15 +16,15 @@
 * limitations under the License.
 */
 
+#include "stdlib/random/base/uniform.h"
+#include "stdlib/random/base/randu.h"
+#include "stdlib/random/base/shared.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdint.h>
 #include <math.h>
 #include <time.h>
 #include <sys/time.h>
-#include "stdlib/random/base.h"
-#include "stdlib/random/base/randu.h"
-#include "stdlib/random/base/uniform.h"
 
 #define NAME "base/uniform"
 #define ITERATIONS 1000000
