@@ -30,9 +30,9 @@ limitations under the License.
 var gfillBy = require( '@stdlib/blas/ext/base/gfill-by' );
 ```
 
-#### gfillBy( N, x, stride, clbk\[, thisArg] )
+#### gfillBy( N, x, strideX, clbk\[, thisArg] )
 
-Fills a strided array `x` according to a provided callback function.
+Fills a strided array according to a provided callback function.
 
 ```javascript
 function fill( v, i ) {
@@ -48,17 +48,17 @@ gfillBy( x.length, x, 1, fill );
 The function has the following parameters:
 
 -   **N**: number of indexed elements.
--   **x**: input array. 
--   **stride**: index increment.
+-   **x**: input array.
+-   **strideX**: stride length.
 -   **clbk**: callback function.
 -   **thisArg**: execution context (_optional_).
 
-The invoked callback is provided four arguments:
+The callback function is provided the following arguments:
 
--   **value**: array element.
+-   **value**: current array element.
 -   **aidx**: array index.
 -   **sidx**: strided index (`offset + aidx*stride`).
--   **array**: input array/collection.
+-   **array**: the input array.
 
 To set the callback execution context, provide a `thisArg`.
 
@@ -81,19 +81,16 @@ var cnt = context.count;
 // returns 8
 ```
 
-The `N` and `stride` parameters determine which elements in `x` are accessed at runtime. For example, to fill every other element
+The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to fill every other element:
 
 ```javascript
-var floor = require( '@stdlib/math/base/special/floor' );
-
 function fill( v, i ) {
     return v * i;
 }
 
 var x = [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ];
-var N = floor( x.length / 2 );
 
-gfillBy( N, x, 2, fill );
+gfillBy( 4, x, 2, fill );
 // x => [ 0.0, 1.0, 3.0, -5.0, 8.0, 0.0, -3.0, -3.0 ]
 ```
 
@@ -101,7 +98,6 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 function fill( v, i ) {
     return v * i;
@@ -112,16 +108,15 @@ var x0 = new Float64Array( [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ] );
 
 // Create an offset view...
 var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
-var N = floor( x0.length/2 );
 
 // Fill every other element...
-gfillBy( N, x1, 2, fill );
+gfillBy( 3, x1, 2, fill );
 // x0 => <Float64Array>[ 1.0, 0.0, 3.0, -4.0, 5.0, -12.0 ]
 ```
 
-#### gfillBy.ndarray( N, x, stride, offset, clbk\[, thisArg] )
+#### gfillBy.ndarray( N, x, strideX, offsetX, clbk\[, thisArg] )
 
-Fills a strided array `x` according to a provided callback function and using alternative indexing semantics.
+Fills a strided array according to a provided callback function and using alternative indexing semantics.
 
 ```javascript
 function fill( v, i ) {
@@ -136,9 +131,9 @@ gfillBy.ndarray( x.length, x, 1, 0, fill );
 
 The function has the following additional parameters:
 
--   **offset**: starting index.
+-   **offsetX**: starting index.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the `offset` parameter supports indexing semantics based on a starting index. For example, to access only the last three elements of `x`
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameter supports indexing semantics based on a starting index. For example, to access only the last three elements:
 
 ```javascript
 function fill( v, i ) {
@@ -174,26 +169,14 @@ gfillBy.ndarray( 3, x, 1, x.length-3, fill );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var round = require( '@stdlib/math/base/special/round' );
-var randu = require( '@stdlib/random/base/randu' );
+var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var Float64Array = require( '@stdlib/array/float64' );
 var gfillBy = require( '@stdlib/blas/ext/base/gfill-by' );
-
-function fill() {
-    var rand = round( randu()*100.0 );
-    var sign = randu();
-    if ( sign < 0.5 ) {
-        sign = -1.0;
-    } else {
-        sign = 1.0;
-    }
-    return sign * rand;
-}
 
 var x = new Float64Array( 10 );
 console.log( x );
 
-gfillBy( x.length, x, 1, fill );
+gfillBy( x.length, x, 1, discreteUniform( -100, 100 ) );
 console.log( x );
 ```
 

@@ -3,8 +3,8 @@
     Simultaneously sorts two single-precision floating-point strided arrays
     based on the sort order of the first array using insertion sort.
 
-    The `N` and stride parameters determine which elements in the strided
-    arrays are accessed at runtime.
+    The `N` and stride parameters determine which elements in the strided arrays
+    are accessed at runtime.
 
     Indexing is relative to the first index. To introduce an offset, use typed
     array views.
@@ -47,13 +47,13 @@
         First input array.
 
     strideX: integer
-        Index increment for `x`.
+        Stride length for `x`.
 
     y: Float32Array
         Second input array.
 
     strideY: integer
-        Index increment for `y`.
+        Stride length for `y`.
 
     Returns
     -------
@@ -97,8 +97,8 @@
     alternative indexing semantics.
 
     While typed array views mandate a view offset based on the underlying
-    buffer, the offset parameter supports indexing semantics based on a
-    starting index.
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
 
     Parameters
     ----------
@@ -113,19 +113,19 @@
         First input array.
 
     strideX: integer
-        Index increment for `x`.
+        Stride length for `x`.
 
     offsetX: integer
-        Starting index of `x`.
+        Starting index for `x`.
 
     y: Float32Array
         Second input array.
 
     strideY: integer
-        Index increment for `y`.
+        Stride length for `y`.
 
     offsetY: integer
-        Starting index of `y`.
+        Starting index for `y`.
 
     Returns
     -------

@@ -1,0 +1,46 @@
+
+{{alias}}( x[, continuity] )
+    Evaluates the Heaviside function for a single-precision floating-point
+    number.
+
+    The `continuity` parameter may be one of the following:
+
+    - 'half-maximum': if `x == 0`, the function returns `0.5`.
+    - 'left-continuous': if `x == 0`, the function returns `0`.
+    - 'right-continuous': if `x == 0`, the function returns `1`.
+
+    By default, if `x == 0`, the function returns `NaN` (i.e., the function is
+    discontinuous).
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    continuity: string (optional)
+        Specifies how to handle `x == 0`. By default, if `x == 0`, the function
+        returns `NaN`.
+
+    Returns
+    -------
+    y: number
+        Function value.
+
+    Examples
+    --------
+    > var y = {{alias}}( 3.14 )
+    1.0
+    > y = {{alias}}( -3.14 )
+    0.0
+    > y = {{alias}}( 0.0 )
+    NaN
+    > y = {{alias}}( 0.0, 'half-maximum' )
+    0.5
+    > y = {{alias}}( 0.0, 'left-continuous' )
+    0.0
+    > y = {{alias}}( 0.0, 'right-continuous' )
+    1.0
+
+    See Also
+    --------
+

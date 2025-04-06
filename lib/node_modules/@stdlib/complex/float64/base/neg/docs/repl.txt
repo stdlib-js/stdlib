@@ -1,0 +1,28 @@
+
+{{alias}}( z )
+    Negates a double-precision complex floating-point number.
+
+    Parameters
+    ----------
+    z: Complex128
+        Complex number.
+
+    Returns
+    -------
+    out: Complex128
+        Result.
+
+    Examples
+    --------
+    > var z = new {{alias:@stdlib/complex/float64/ctor}}( -4.2, 5.5 )
+    <Complex128>
+    > var v = {{alias}}( z )
+    <Complex128>
+    > var re = {{alias:@stdlib/complex/float64/real}}( v )
+    4.2
+    > var im = {{alias:@stdlib/complex/float64/imag}}( v )
+    -5.5
+
+    See Also
+    --------
+
