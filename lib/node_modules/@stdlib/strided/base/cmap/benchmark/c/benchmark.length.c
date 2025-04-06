@@ -103,7 +103,7 @@ static float complex identity( const float complex x ) {
 *
 * @param iterations   number of iterations
 * @param len          array length
-* @return elapsed time in seconds
+* @return             elapsed time in seconds
 */
 static double benchmark( int iterations, int len ) {
 	float complex x[ len ];

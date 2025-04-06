@@ -1,0 +1,26 @@
+
+{{alias}}( λ )
+    Returns the skewness of a Planck distribution with shape parameter `λ`.
+
+    If `λ <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    λ: number
+        Shape parameter.
+
+    Returns
+    -------
+    out: number
+        Skewness.
+
+    Examples
+    --------
+    > var v = {{alias}}( 0.1 )
+    ~2.0025
+    > v = {{alias}}( 1.5 )
+    ~2.5894
+
+    See Also
+    --------
+

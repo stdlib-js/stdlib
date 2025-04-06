@@ -104,7 +104,7 @@ static double benchmark( void ) {
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = v[ i % 100 ]  + v[ i % 100 ] *I;
+		x = v[ i % 100 ] + v[ i % 100 ] *I;
 		y = stdlib_base_ceil( creal( x ) ) + stdlib_base_ceil( cimag( x ) )*I;
 		if ( creal( y ) != creal( y ) ) {
 			printf( "unexpected result\n" );

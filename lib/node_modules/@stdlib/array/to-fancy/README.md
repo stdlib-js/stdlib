@@ -37,7 +37,7 @@ var x = [ 1, 2, 3, 4, 5, 6, 7, 8 ];
 // Turn the plain array into a "fancy" array:
 var y = array2fancy( x );
 
-// Select the first 3 elements:
+// Select the first three elements:
 var v = y[ ':3' ];
 // returns [ 1, 2, 3 ]
 
@@ -45,7 +45,7 @@ var v = y[ ':3' ];
 v = y[ '1::2' ];
 // returns [ 2, 4, 6, 8 ]
 
-// Select every other element, in reverse order, starting with the least element:
+// Select every other element, in reverse order, starting with the last element:
 v = y[ '::-2' ];
 // returns [ 8, 6, 4, 2 ]
 

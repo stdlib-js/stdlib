@@ -28,6 +28,6 @@ int main( void ) {
 	for ( i = 0; i < 10; i++ ) {
 		lambda = 20.0 * (double)rand() / ( (double)RAND_MAX + 1.0 );
 		v = stdlib_base_dists_poisson_mean( lambda );
-		printf( "λ: %lf , E(X;λ): %lf\n", lambda , v );
+		printf( "λ: %lf, E(X;λ): %lf\n", lambda, v );
 	}
 }

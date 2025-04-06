@@ -219,7 +219,7 @@ declare function wrap( fcn: Nullary, nargs: 0, ctor: Constructor ): Nullary;
 *
 * @example
 * var Complex64 = require( '@stdlib/complex/float32/ctor' );
-* var cidentityf = require( '@stdlib/math/base/special/cidentityf' );
+* var cidentityf = require( '@stdlib/complex/float32/base/identity' );
 * var realf = require( '@stdlib/complex/float32/real' );
 * var imagf = require( '@stdlib/complex/float32/imag' );
 *

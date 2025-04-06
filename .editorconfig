@@ -86,7 +86,6 @@ indent_style = tab
 [*.{f,f.txt}]
 indent_style = space
 indent_size = 2
-insert_final_newline = false
 
 # Set properties for shell files:
 [*.{sh,sh.txt}]

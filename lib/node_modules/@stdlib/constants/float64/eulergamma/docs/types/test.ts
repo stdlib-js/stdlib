@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-import GAMMA = require( './index' );
+import EULERGAMMA = require( './index' );
 
 
 // TESTS //
@@ -24,5 +24,5 @@ import GAMMA = require( './index' );
 // The export is a number...
 {
 	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
-	GAMMA; // $ExpectType number
+	EULERGAMMA; // $ExpectType number
 }
